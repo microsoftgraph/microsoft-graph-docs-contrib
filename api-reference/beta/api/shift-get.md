@@ -58,7 +58,7 @@ The following is an example of the request.
   "blockType": "request",
   "name": "shift-get"
 }-->
-```msgraph-interactive
+```http
 GET https://graph.microsoft.com/beta/teams/{teamId}/schedule/shifts/{shiftId}
 ```
 # [C#](#tab/csharp)

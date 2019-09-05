@@ -102,7 +102,7 @@ The following is an example of the request.
   "name": "reportroot_getsharepointsiteusagedetail_csv"
 }-->
 
-```msgraph-interactive
+```http
 GET https://graph.microsoft.com/beta/reports/getSharePointSiteUsageDetail(period='D7')?$format=text/csv
 ```
 # [C#](#tab/csharp)
@@ -162,7 +162,7 @@ The following is an example of the request.
   "name": "reportroot_getsharepointsiteusagedetail_json"
 }-->
 
-```msgraph-interactive
+```http
 GET https://graph.microsoft.com/beta/reports/getSharePointSiteUsageDetail(period='D7')?$format=application/json
 ```
 # [C#](#tab/csharp)

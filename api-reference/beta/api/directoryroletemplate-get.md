@@ -49,7 +49,7 @@ Here is an example of the request.
   "blockType": "request",
   "name": "get_directoryroletemplate"
 }-->
-```msgraph-interactive
+```http
 GET https://graph.microsoft.com/beta/directoryRoleTemplates/{id}
 ```
 # [C#](#tab/csharp)

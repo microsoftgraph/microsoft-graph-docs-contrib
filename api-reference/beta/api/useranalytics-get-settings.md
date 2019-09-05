@@ -61,7 +61,7 @@ The following is an example of the request.
   "name": "get_settings"
 }-->
 
-```msgraph-interactive
+```http
 GET https://graph.microsoft.com/beta/me/analytics/settings
 ```
 # [C#](#tab/csharp)

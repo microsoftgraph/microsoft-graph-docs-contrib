@@ -50,7 +50,7 @@ Here is an example of the request.
   "blockType": "request",
   "name": "list_orgcontact"
 }-->
-```msgraph-interactive
+```http
 GET https://graph.microsoft.com/beta/contacts
 ```
 # [C#](#tab/csharp)

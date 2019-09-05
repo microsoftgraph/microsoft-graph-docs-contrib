@@ -52,7 +52,7 @@ Here is an example of the request.
   "name": "get_riskDetection",
   "sampleKeys": ["c2b6c2b9-dddc-acd0-2b39-d519d803dbc3"]
 }-->
-```msgraph-interactive
+```http
 GET https://graph.microsoft.com/beta/riskDetections/c2b6c2b9-dddc-acd0-2b39-d519d803dbc3
 ```
 # [C#](#tab/csharp)

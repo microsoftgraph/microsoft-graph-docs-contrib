@@ -56,7 +56,7 @@ Here is an example of the request.
   "blockType": "request",
   "name": "range_usedrange"
 }-->
-```msgraph-interactive
+```http
 GET https://graph.microsoft.com/beta/me/drive/items/{id}/workbook/names/{name}/range/UsedRange
 Content-type: application/json
 Content-length: 24

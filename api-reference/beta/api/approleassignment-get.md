@@ -51,7 +51,7 @@ Here is an example of the request.
   "blockType": "request",
   "name": "get_approleassignment"
 }-->
-```msgraph-interactive
+```http
 GET https://graph.microsoft.com/beta/appRoleAssignments/{id}
 ```
 # [C#](#tab/csharp)

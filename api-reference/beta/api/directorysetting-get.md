@@ -54,7 +54,7 @@ Here is an example of the request.
   "blockType": "request",
   "name": "get_directorysetting"
 }-->
-```msgraph-interactive
+```http
 GET https://graph.microsoft.com/beta/settings/{id}
 ```
 # [C#](#tab/csharp)

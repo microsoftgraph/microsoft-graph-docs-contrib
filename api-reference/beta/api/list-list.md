@@ -40,7 +40,7 @@ GET https://graph.microsoft.com/beta/sites/{site-id}/lists
 # [HTTP](#tab/http)
 <!-- { "blockType": "request", "name": "enum-lists", "scopes": "sites.read.all service.sharepoint" } -->
 
-```msgraph-interactive
+```http
 GET https://graph.microsoft.com/beta/sites/{site-id}/lists
 ```
 # [C#](#tab/csharp)

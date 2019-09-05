@@ -57,7 +57,7 @@ If successful, this method returns a `200 OK` response code and collection of [u
   "blockType": "request",
   "name": "get_users"
 }-->
-```msgraph-interactive
+```http
 GET https://graph.microsoft.com/beta/users
 ```
 # [C#](#tab/csharp)

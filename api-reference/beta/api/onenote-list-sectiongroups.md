@@ -57,7 +57,7 @@ Here is an example of the request.
   "blockType": "request",
   "name": "onenote_get_sectiongroups"
 }-->
-```msgraph-interactive
+```http
 GET https://graph.microsoft.com/beta/me/onenote/sectionGroups
 ```
 # [C#](#tab/csharp)

@@ -32,7 +32,7 @@ Additionally, without one of the  **All** permissions, shared items returned fro
 # [HTTP](#tab/http)
 <!-- { "blockType": "request", "name": "shared-with-me", "scopes": "files.read", "target": "action" } -->
 
-```msgraph-interactive
+```http
 GET /me/drive/sharedWithMe
 ```
 # [C#](#tab/csharp)

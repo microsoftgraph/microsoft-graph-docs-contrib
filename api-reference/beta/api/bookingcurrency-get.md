@@ -48,7 +48,7 @@ The following is an example of the request.
   "blockType": "request",
   "name": "get_bookingcurrency"
 }-->
-```msgraph-interactive
+```http
 GET https://graph.microsoft.com/beta/bookingCurrencies/USD
 ```
 # [C#](#tab/csharp)

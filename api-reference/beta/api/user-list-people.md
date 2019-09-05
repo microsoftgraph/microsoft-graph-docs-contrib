@@ -78,7 +78,7 @@ The following is an example of the default request.
   "name": "get_person_collection_beta"
 }-->
 
-```msgraph-interactive
+```http
 GET https://graph.microsoft.com/beta/me/people
 ```
 # [C#](#tab/csharp)

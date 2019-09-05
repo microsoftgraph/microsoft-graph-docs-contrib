@@ -54,7 +54,7 @@ Here is an example of the request.
   "blockType": "request",
   "name": "get_device_memberof"
 }-->
-```msgraph-interactive
+```http
 GET https://graph.microsoft.com/beta/devices/{id}/memberOf
 ```
 # [C#](#tab/csharp)

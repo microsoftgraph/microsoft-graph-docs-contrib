@@ -53,7 +53,7 @@ Here is an example of the request.
   "blockType": "request",
   "name": "get_plans"
 }-->
-```msgraph-interactive
+```http
 GET https://graph.microsoft.com/beta/me/planner/plans
 ```
 # [C#](#tab/csharp)
