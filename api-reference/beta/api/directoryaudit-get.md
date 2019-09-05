@@ -62,7 +62,7 @@ Here is an example of the request.
   "blockType": "request",
   "name": "get_directoryaudit"
 }-->
-```http
+```msgraph-interactive
 GET https://graph.microsoft.com/beta/auditLogs/directoryAudits/{id}
 ```
 # [C#](#tab/csharp)

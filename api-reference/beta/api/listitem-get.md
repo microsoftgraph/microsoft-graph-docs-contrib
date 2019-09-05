@@ -42,7 +42,7 @@ GET https://graph.microsoft.com/beta/sites/{site-id}/lists/{list-id}/items/{item
 # [HTTP](#tab/http)
 <!-- { "blockType": "request", "name": "get-list-item" } -->
 
-```http
+```msgraph-interactive
 GET https://graph.microsoft.com/beta/sites/{site-id}/lists/{list-id}/items/{item-id}?expand=fields
 ```
 # [C#](#tab/csharp)

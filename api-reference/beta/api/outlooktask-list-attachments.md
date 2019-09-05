@@ -62,7 +62,7 @@ Here is an example of the request.
   "name": "outlook_task_get_attachments"
 }-->
 
-```http
+```msgraph-interactive
 GET https://graph.microsoft.com/beta/users/{id}/outlook/tasks/{id}/attachments
 ```
 # [C#](#tab/csharp)

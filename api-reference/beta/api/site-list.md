@@ -50,7 +50,7 @@ GET https://graph.microsoft.com/beta/sites?filter=siteCollection/root ne null
 # [HTTP](#tab/http)
 <!-- { "blockType": "request", "name": "list-sites" } -->
 
-```http
+```msgraph-interactive
 GET https://graph.microsoft.com/beta/sites?select=siteCollection,webUrl&filter=siteCollection/root%20ne%20null
 ```
 # [C#](#tab/csharp)

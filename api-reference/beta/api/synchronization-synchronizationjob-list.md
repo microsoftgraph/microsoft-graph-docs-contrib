@@ -52,7 +52,7 @@ The following is an example of a request.
   "blockType": "request",
   "name": "get_jobs"
 }-->
-```http
+```msgraph-interactive
 GET https://graph.microsoft.com/beta/servicePrincipals/{id}/synchronization/jobs/
 ```
 # [C#](#tab/csharp)
