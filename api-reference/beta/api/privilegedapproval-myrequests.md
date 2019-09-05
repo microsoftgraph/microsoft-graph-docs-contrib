@@ -52,7 +52,7 @@ Here is an example of the request.
   "blockType": "request",
   "name": "privilegedapproval_myrequests"
 }-->
-```http
+```msgraph-interactive
 GET https://graph.microsoft.com/beta/privilegedApproval/myRequests
 ```
 # [C#](#tab/csharp)

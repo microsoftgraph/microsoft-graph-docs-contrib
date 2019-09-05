@@ -54,7 +54,7 @@ The following example shows the request.
   "blockType": "request",
   "name": "get-audioRoutingGroups"
 }-->
-```http
+```msgraph-interactive
 GET https://graph.microsoft.com/beta/app/calls/{id}/audioRoutingGroups
 ```
 # [C#](#tab/csharp)

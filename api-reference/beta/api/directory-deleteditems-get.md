@@ -51,7 +51,7 @@ If successful, this method returns a `200 OK` response code and [directoryObject
   "blockType": "request",
   "name": "get_directory"
 }-->
-```http
+```msgraph-interactive
 GET https://graph.microsoft.com/beta/directory/deleteditems/46cc6179-19d0-473e-97ad-6ff84347bbbb
 ```
 # [C#](#tab/csharp)

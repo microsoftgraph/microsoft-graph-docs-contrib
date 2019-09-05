@@ -74,7 +74,7 @@ The following is an example of the request.
   "name": "get_credentialuserregistrationdetails"
 }-->
 
-```http
+```msgraph-interactive
 GET https://graph.microsoft.com/beta/reports/credentialUserRegistrationDetails
 ```
 # [C#](#tab/csharp)

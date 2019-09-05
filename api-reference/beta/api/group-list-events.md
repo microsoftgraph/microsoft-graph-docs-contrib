@@ -54,7 +54,7 @@ The following is an example of the request.
   "blockType": "request",
   "name": "get_group_events"
 }-->
-```http
+```msgraph-interactive
 GET https://graph.microsoft.com/beta/groups/{id}/events
 ```
 # [C#](#tab/csharp)

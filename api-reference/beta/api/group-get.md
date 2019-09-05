@@ -61,7 +61,7 @@ The following is an example of a GET request.
   "sampleKeys": ["45b7d2e7-b882-4a80-ba97-10b7a63b8fa4"],
   "name": "get_group"
 }-->
-```http
+```msgraph-interactive
 GET https://graph.microsoft.com/beta/groups/45b7d2e7-b882-4a80-ba97-10b7a63b8fa4
 ```
 # [C#](#tab/csharp)
@@ -142,7 +142,7 @@ The following is an example of a GET request.
   "sampleKeys": ["b320ee12-b1cd-4cca-b648-a437be61c5cd"],
   "name": "get_group_non_default"
 }-->
-```http
+```msgraph-interactive
 GET https://graph.microsoft.com/beta/groups/b320ee12-b1cd-4cca-b648-a437be61c5cd?$select=allowExternalSenders,autoSubscribeNewMembers,isSubscribedByMail,unseenCount
 ```
 # [C#](#tab/csharp)
