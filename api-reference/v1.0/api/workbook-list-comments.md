@@ -7,7 +7,7 @@ ms.prod: "excel"
 doc_type: "apiPageType"
 ---
 
-# List comments
+# List workbookComments
 
 Retrieve a list of  [workbookComment](../resources/workbookcomment.md) objects.
 
