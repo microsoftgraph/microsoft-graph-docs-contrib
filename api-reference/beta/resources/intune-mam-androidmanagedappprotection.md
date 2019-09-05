@@ -4,6 +4,7 @@ description: "Policy used to configure detailed management settings targeted to 
 author: "rolyon"
 localization_priority: Normal
 ms.prod: "Intune"
+doc_type: resourcePageType
 ---
 
 # androidManagedAppProtection resource type
@@ -176,8 +177,6 @@ Here is a JSON representation of the resource.
   "customBrowserDisplayName": "String"
 }
 ```
-
-
 
 
 

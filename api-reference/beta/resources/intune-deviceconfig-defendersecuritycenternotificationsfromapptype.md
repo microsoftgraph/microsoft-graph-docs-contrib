@@ -4,6 +4,7 @@ description: "Possible values for defenderSecurityCenterNotificationsFromApp"
 author: "rolyon"
 localization_priority: Normal
 ms.prod: "Intune"
+doc_type: enumPageType
 ---
 
 # defenderSecurityCenterNotificationsFromAppType enum type
@@ -20,8 +21,6 @@ Possible values for defenderSecurityCenterNotificationsFromApp
 |notConfigured|0|Not Configured|
 |blockNoncriticalNotifications|1|Block non-critical notifications|
 |blockAllNotifications|2|Block all notifications|
-
-
 
 
 

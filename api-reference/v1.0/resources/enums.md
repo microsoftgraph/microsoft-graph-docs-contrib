@@ -2,6 +2,9 @@
 title: "Enum values"
 description: "Microsoft Graph enumeration values."
 localization_priority: Normal
+author: ""
+ms.prod: ""
+doc_type: enumPageType
 ---
 
 ### contactRelationship values
@@ -19,7 +22,7 @@ localization_priority: Normal
 
 ### timeZoneStandard values
 
-| Value
+| Member
 |:-----------------
 | windows
 | iana
@@ -39,7 +42,7 @@ localization_priority: Normal
 
 ### attendeeType values
 
-| Value
+| Member
 |:-------------------------
 | required
 | optional
@@ -48,7 +51,7 @@ localization_priority: Normal
 
 ### externalAudienceScope values
 
-| Value
+| Member
 |:-------------------------
 | none
 | contactsOnly
@@ -57,7 +60,7 @@ localization_priority: Normal
 
 ### automaticRepliesStatus values
 
-| Value
+| Member
 |:-------------------------
 | disabled
 | alwaysEnabled
@@ -83,7 +86,7 @@ localization_priority: Normal
 
 ### educationExternalSource values
 
-| Value
+| Member
 |:-------------------------
 | sis
 | manual
@@ -92,7 +95,7 @@ localization_priority: Normal
 
 ### educationGender values
 
-| Value
+| Member
 |:-------------------------
 | female
 | male
@@ -102,7 +105,7 @@ localization_priority: Normal
 
 ### eventType values
 
-| Value
+| Member
 |:-------------------------
 | singleInstance
 | occurrence
@@ -112,7 +115,7 @@ localization_priority: Normal
 
 ### sensitivity values
 
-| Value
+| Member
 |:-------------------------
 | normal
 | personal
@@ -122,7 +125,7 @@ localization_priority: Normal
 
 ### importance values
 
-| Value
+| Member
 |:-------------------------
 | low
 | normal
@@ -130,14 +133,14 @@ localization_priority: Normal
 
 
 ### educationUserRole values
-| Value
+| Member
 |:---------------------
 | student
 | teacher
 
 ### meetingMessageType values
 
-| Value
+| Member
 |:-----------------
 | none
 | meetingRequest
@@ -149,7 +152,7 @@ localization_priority: Normal
 
 ### followupFlagStatus values
 
-| Value
+| Member
 |:-------------------------
 | notFlagged
 | complete
@@ -158,7 +161,7 @@ localization_priority: Normal
 
 ### inferenceClassificationType values
 
-| Value
+| Member
 |:-----------------
 | focused
 | other
@@ -166,7 +169,7 @@ localization_priority: Normal
 
 ### iosNotificationAlertType values
 
-| Value
+| Member
 |:-------------------------
 | deviceDefault
 | banner
@@ -175,7 +178,7 @@ localization_priority: Normal
 
 ### deviceEnrollmentFailureReason values
 
-| Value
+| Member
 |:-------------
 | unknown
 | authentication
@@ -191,7 +194,7 @@ localization_priority: Normal
 
 
 ### bodyType values
-| Value
+| Member
 |:---------
 | text
 | html
@@ -199,7 +202,7 @@ localization_priority: Normal
 
 ### locationType values
 
-| Value
+| Member
 |:-------------------------
 | default
 | conferenceRoom
@@ -214,7 +217,7 @@ localization_priority: Normal
 
 ### locationUniqueIdType values
 
-| Value
+| Member
 |:-------------------------
 | unknown
 | locationStore
@@ -225,7 +228,7 @@ localization_priority: Normal
 
 ### messageActionFlag values
 
-| Value
+| Member
 |:-------------------------
 | any
 | call
@@ -252,7 +255,7 @@ localization_priority: Normal
 
 ### operationStatus values
 
-| Value
+| Member
 |:-----------------
 | NotStarted
 | Running
@@ -262,7 +265,7 @@ localization_priority: Normal
 
 ### onenotePatchActionType values
 
-| Value
+| Member
 |:-------------------------
 | Replace
 | Append
@@ -272,7 +275,7 @@ localization_priority: Normal
 
 ### onenotePatchInsertPosition values
 
-| Value
+| Member
 |:-------------------------
 | After
 | Before
@@ -280,7 +283,7 @@ localization_priority: Normal
 
 ### phoneType values
 
-| Value
+| Member
 |:-------------------------
 | home
 | business
@@ -296,7 +299,7 @@ localization_priority: Normal
 
 ### plannerPreviewType values
 
-| Value
+| Member
 |:-------------------------
 | automatic
 | noPreview
@@ -307,7 +310,7 @@ localization_priority: Normal
 
 ### status values
 
-| Value
+| Member
 |:-----------------
 | active
 | updated
@@ -318,7 +321,7 @@ localization_priority: Normal
 
 ### weekIndex values
 
-| Value
+| Member
 |:-------------------------
 | first
 | second
@@ -329,7 +332,7 @@ localization_priority: Normal
 
 ### dayOfWeek values
 
-| Value
+| Member
 |:-------------------------
 | sunday
 | monday
@@ -341,7 +344,7 @@ localization_priority: Normal
 
 ### recurrencePatternType values
 
-| Value
+| Member
 |:-------------------------
 | daily
 | weekly
@@ -353,7 +356,7 @@ localization_priority: Normal
 
 ### recurrenceRangeType values
 
-| Value
+| Member
 |:-------------------------
 | endDate
 | noEnd
@@ -361,7 +364,7 @@ localization_priority: Normal
 
 
 ### onenoteSourceService values
-| Value
+| Member
 |:---------------------
 | Unknown
 | OneDrive
@@ -371,7 +374,7 @@ localization_priority: Normal
 
 ### responseType values
 
-| Value
+| Member
 |:-------------------------
 | none
 | organizer
@@ -383,7 +386,7 @@ localization_priority: Normal
 
 ### activityDomain values
 
-| Value
+| Member
 |:-------------------------
 | unknown
 | work
@@ -393,7 +396,7 @@ localization_priority: Normal
 
 ### websiteType values
 
-| Value
+| Member
 |:-------------------------
 | other
 | home
@@ -588,7 +591,7 @@ Possible values for the method of user signin.
 
 Possible values for user account types (group membership), per Windows definition.
 
-|Member|Value|Description|
+|Member|Member|Description|
 |:---|:---|:---|
 |unknown|-1|Unknown.|
 |standard|0|Member of Standard Users group.|
@@ -597,7 +600,7 @@ Possible values for user account types (group membership), per Windows definitio
 
 ### riskDetail values
 
-| Value
+| Member
 |:-------------------------
 | adminGeneratedTemporaryPassword
 | userPerformedSecuredPasswordChange
@@ -611,7 +614,7 @@ Possible values for user account types (group membership), per Windows definitio
 
 ### riskEventTypes values
 
-| Value
+| Member
 |:-------------------------
 | unlikelyTravel
 | anonymizedIPAddress
@@ -626,7 +629,7 @@ Possible values for user account types (group membership), per Windows definitio
 
 ### riskLevel values
 
-| Value
+| Member
 |:-------------------------
 | none
 | low
@@ -637,7 +640,7 @@ Possible values for user account types (group membership), per Windows definitio
 
 ### riskState values
 
-| Value
+| Member
 |:-------------------------
 | none
 | confirmedSafe

@@ -4,6 +4,7 @@ description: "Suppoorted platform types for policies."
 author: "rolyon"
 localization_priority: Normal
 ms.prod: "Intune"
+doc_type: enumPageType
 ---
 
 # policyPlatformType enum type
@@ -26,8 +27,6 @@ Suppoorted platform types for policies.
 |windows10AndLater|6|Windows 10 and later.|
 |androidWorkProfile|7|AndroidWorkProfile.|
 |all|100|All platforms.|
-
-
 
 
 

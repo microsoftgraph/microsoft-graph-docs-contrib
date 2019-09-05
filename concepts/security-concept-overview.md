@@ -14,6 +14,8 @@ You can use the Microsoft Graph Security API to connect Microsoft security produ
 
 For information about authorization, see [Authorization and the Microsoft Graph Security API](security-authorization.md). For information about permissions, including delegated and application permissions, see [Permissions](permissions-reference.md#security-permissions).
 
+> [!VIDEO https://www.youtube-nocookie.com/embed/oYXPGwH9Ho0]
+
 ## Why use the Microsoft Graph Security API?
 
 The [Microsoft Graph Security API](/graph/api/resources/security-api-overview?view=graph-rest-1.0) makes it easy to connect with security solutions from Microsoft and partners. It allows you to more readily realize and enrich the value of these solutions. You can connect easily with the Microsoft Graph Security API by using one of the following approaches, depending on your requirements:
@@ -26,7 +28,7 @@ The [Microsoft Graph Security API](/graph/api/resources/security-api-overview?vi
 
 ### Unify and standardize alert tracking
 
-Connect once to integrate alerts from any Microsoft Graph-integrated security solution and keep alert status and assignments in sync across all solutions. You can also stream alerts to security information and event management (SIEM) solutions, such as Splunk and IBM QRadar, via [Azure Monitor](https://docs.microsoft.com/en-us/azure/monitoring-and-diagnostics/monitor-stream-monitoring-data-event-hubs#what-can-i-do-with-the-monitoring-data-being-sent-to-my-event-hub). For details about SIEM integration with the security API entities, see [Integrate with a SIEM](security-siemintegration.md).
+Connect once to integrate alerts from any Microsoft Graph-integrated security solution and keep alert status and assignments in sync across all solutions. You can also stream alerts to security information and event management (SIEM) solutions, such as Splunk using Microsoft Graph Security API connectors. For more info about solution integrations with the security API entities, see [Security solution integrations using the Microsoft Graph Security API](security-integration.md).
 
 ### Correlate security alerts to improve threat protection and response
 
