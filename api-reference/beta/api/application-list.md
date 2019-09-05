@@ -51,7 +51,7 @@ Here is an example of the request.
   "blockType": "request",
   "name": "list_application"
 }-->
-```http
+```msgraph-interactive
 GET https://graph.microsoft.com/beta/applications
 ```
 # [C#](#tab/csharp)

@@ -60,7 +60,7 @@ Here is an example of the request.
   "blockType": "request",
   "name": "get_joinedteams"
 }-->
-```http
+```msgraph-interactive
 GET https://graph.microsoft.com/beta/me/joinedTeams
 ```
 # [C#](#tab/csharp)

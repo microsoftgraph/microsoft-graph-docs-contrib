@@ -62,7 +62,7 @@ The following is an example of a request of all related activity statistics for 
   "name": "get_activitystatistics"
 }-->
 
-```http
+```msgraph-interactive
 GET https://graph.microsoft.com/beta/me/analytics/activitystatistics
 
 ```

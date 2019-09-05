@@ -64,7 +64,7 @@ The following is an example of the request.
   "name": "get_roleAssignments"
 }-->
 
-```http
+```msgraph-interactive
 GET https://graph.microsoft.com/beta/roleManagement/directory/roleAssignments?$filter=roleDefinitionId eq '62e90394-69f5-4237-9190-012177145e10'
 ```
 # [C#](#tab/csharp)
@@ -153,7 +153,7 @@ The following is an example of the request.
   "name": "get_roleAssignments"
 }-->
 
-```http
+```msgraph-interactive
 GET https://graph.microsoft.com/beta/roleManagement/directory/roleAssignments?$filter=principalId eq 'a98eb769-7bd4-4489-86f6-ad96e1d58b62'
 ```
 # [C#](#tab/csharp)
