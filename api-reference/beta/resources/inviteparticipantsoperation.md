@@ -4,6 +4,7 @@ description: "Represents the status of a long-running participant invitation ope
 author: "VinodRavichandran"
 localization_priority: Normal
 ms.prod: "microsoft-teams"
+doc_type: resourcePageType
 ---
 
 # inviteParticipantsOperation resource type
