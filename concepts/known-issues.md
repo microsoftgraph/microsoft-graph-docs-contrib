@@ -125,7 +125,7 @@ GET https://graph.microsoft.com/beta/bookingBusinesses?query=Fabrikam
 When attempting to access events in a calendar that has been shared by another user using the following operation:
 
 ```http
-GET \users('{id}')\calendars('{id}')\events
+GET /users('{id}')/calendars('{id}')/events
 ```
 
 You may get HTTP 500 with the error code `ErrorInternalServerTransientError`. The error occurs because:
@@ -150,7 +150,7 @@ A calendar shared with you in the new approach appears as just another calendar 
 events in the shared calendar, as if it's your own calendar. As an example:
 
 ```http
-GET \me\calendars('{id}')\events
+GET /me/calendars('{id}')/events
 ```
 
 ### Adding and accessing ICS-based calendars in user's mailbox
