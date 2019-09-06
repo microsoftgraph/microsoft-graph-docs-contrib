@@ -62,7 +62,7 @@ Here is an example of the request.
   "name": "get_devices_transitivememberof"
 }-->
 
-```http
+```msgraph-interactive
 GET https://graph.microsoft.com/beta/devices/{id}/transitiveMemberOf
 ```
 # [C#](#tab/csharp)
@@ -75,10 +75,6 @@ GET https://graph.microsoft.com/beta/devices/{id}/transitiveMemberOf
 
 # [Objective-C](#tab/objc)
 [!INCLUDE [sample-code](../includes/snippets/objc/get-devices-transitivememberof-objc-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [Java](#tab/java)
-[!INCLUDE [sample-code](../includes/snippets/java/get-devices-transitivememberof-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

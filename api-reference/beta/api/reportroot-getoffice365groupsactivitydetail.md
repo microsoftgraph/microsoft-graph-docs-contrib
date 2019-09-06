@@ -118,7 +118,7 @@ The following is an example of the request.
   "name": "reportroot_getoffice365groupsactivitydetail_csv"
 }-->
 
-```http
+```msgraph-interactive
 GET https://graph.microsoft.com/beta/reports/getOffice365GroupsActivityDetail(period='D7')?$format=text/csv
 ```
 # [C#](#tab/csharp)
@@ -131,10 +131,6 @@ GET https://graph.microsoft.com/beta/reports/getOffice365GroupsActivityDetail(pe
 
 # [Objective-C](#tab/objc)
 [!INCLUDE [sample-code](../includes/snippets/objc/reportroot-getoffice365groupsactivitydetail-csv-objc-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [Java](#tab/java)
-[!INCLUDE [sample-code](../includes/snippets/java/reportroot-getoffice365groupsactivitydetail-csv-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
@@ -182,7 +178,7 @@ The following is an example of the request.
   "name": "reportroot_getoffice365groupsactivitydetail_json"
 }-->
 
-```http
+```msgraph-interactive
 GET https://graph.microsoft.com/beta/reports/getOffice365GroupsActivityDetail(period='D7')?$format=application/json
 ```
 # [C#](#tab/csharp)
@@ -195,10 +191,6 @@ GET https://graph.microsoft.com/beta/reports/getOffice365GroupsActivityDetail(pe
 
 # [Objective-C](#tab/objc)
 [!INCLUDE [sample-code](../includes/snippets/objc/reportroot-getoffice365groupsactivitydetail-json-objc-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [Java](#tab/java)
-[!INCLUDE [sample-code](../includes/snippets/java/reportroot-getoffice365groupsactivitydetail-json-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

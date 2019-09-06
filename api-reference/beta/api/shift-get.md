@@ -58,7 +58,7 @@ The following is an example of the request.
   "blockType": "request",
   "name": "shift-get"
 }-->
-```http
+```msgraph-interactive
 GET https://graph.microsoft.com/beta/teams/{teamId}/schedule/shifts/{shiftId}
 ```
 # [C#](#tab/csharp)
@@ -71,10 +71,6 @@ GET https://graph.microsoft.com/beta/teams/{teamId}/schedule/shifts/{shiftId}
 
 # [Objective-C](#tab/objc)
 [!INCLUDE [sample-code](../includes/snippets/objc/shift-get-objc-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [Java](#tab/java)
-[!INCLUDE [sample-code](../includes/snippets/java/shift-get-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

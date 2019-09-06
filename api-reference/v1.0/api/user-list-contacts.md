@@ -81,7 +81,7 @@ Here is an example of the request.
   "blockType": "request",
   "name": "user_get_contacts"
 }-->
-```http
+```msgraph-interactive
 GET https://graph.microsoft.com/v1.0/me/contacts
 ```
 # [C#](#tab/csharp)

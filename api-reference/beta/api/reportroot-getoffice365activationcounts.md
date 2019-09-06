@@ -82,7 +82,7 @@ The following is an example of the request.
   "name": "reportroot_getoffice365activationcounts_csv"
 }-->
 
-```http
+```msgraph-interactive
 GET https://graph.microsoft.com/beta/reports/getOffice365ActivationCounts?$format=text/csv
 ```
 # [C#](#tab/csharp)
@@ -95,10 +95,6 @@ GET https://graph.microsoft.com/beta/reports/getOffice365ActivationCounts?$forma
 
 # [Objective-C](#tab/objc)
 [!INCLUDE [sample-code](../includes/snippets/objc/reportroot-getoffice365activationcounts-csv-objc-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [Java](#tab/java)
-[!INCLUDE [sample-code](../includes/snippets/java/reportroot-getoffice365activationcounts-csv-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
@@ -146,7 +142,7 @@ The following example shows the request.
   "name": "reportroot_getoffice365activationcounts_json"
 }-->
 
-```http
+```msgraph-interactive
 GET https://graph.microsoft.com/beta/reports/getOffice365ActivationCounts?$format=application/json
 ```
 # [C#](#tab/csharp)
@@ -159,10 +155,6 @@ GET https://graph.microsoft.com/beta/reports/getOffice365ActivationCounts?$forma
 
 # [Objective-C](#tab/objc)
 [!INCLUDE [sample-code](../includes/snippets/objc/reportroot-getoffice365activationcounts-json-objc-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [Java](#tab/java)
-[!INCLUDE [sample-code](../includes/snippets/java/reportroot-getoffice365activationcounts-json-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

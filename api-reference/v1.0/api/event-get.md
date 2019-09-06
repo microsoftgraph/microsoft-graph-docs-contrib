@@ -97,7 +97,7 @@ The first example gets the specified event. It specifies the following:
   "name": "get_event"
 }-->
 
-```http
+```msgraph-interactive
 GET https://graph.microsoft.com/v1.0/me/events/AAMkAGIAAAoZDOFAAA=?$select=subject,body,bodyPreview,organizer,attendees,start,end,location 
 Prefer: outlook.timezone="Pacific Standard Time"
 ```
@@ -213,7 +213,7 @@ to return specific properties.
   "sampleKeys": ["AAMkADAGAADDdm4NAAA="],
   "name": "get_event_multiple_locations"
 }-->
-```http
+```msgraph-interactive
 GET https://graph.microsoft.com/v1.0/me/events/AAMkADAGAADDdm4NAAA=?$select=subject,body,bodyPreview,organizer,attendees,start,end,location,locations
 ```
 # [C#](#tab/csharp)

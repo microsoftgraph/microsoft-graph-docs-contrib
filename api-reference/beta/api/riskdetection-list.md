@@ -64,7 +64,7 @@ Here is an example of the request.
   "name": "list_riskDetection"
 }-->
 
-```http
+```msgraph-interactive
 GET https://graph.microsoft.com/beta/riskDetections
 ```
 # [C#](#tab/csharp)
@@ -77,10 +77,6 @@ GET https://graph.microsoft.com/beta/riskDetections
 
 # [Objective-C](#tab/objc)
 [!INCLUDE [sample-code](../includes/snippets/objc/list-riskdetection-objc-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [Java](#tab/java)
-[!INCLUDE [sample-code](../includes/snippets/java/list-riskdetection-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
@@ -146,7 +142,7 @@ The following example shows how to use `$filter` to get the collection of risk d
   "name": "list_filter_riskDetections"
 } -->
 
-```http
+```msgraph-interactive
 GET https://graph.microsoft.com/beta/riskDetections?$filter=riskType eq 'unfamiliarFeatures' or riskLevel eq 'medium'
 ```
 # [C#](#tab/csharp)
@@ -159,10 +155,6 @@ GET https://graph.microsoft.com/beta/riskDetections?$filter=riskType eq 'unfamil
 
 # [Objective-C](#tab/objc)
 [!INCLUDE [sample-code](../includes/snippets/objc/list-filter-riskdetections-objc-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [Java](#tab/java)
-[!INCLUDE [sample-code](../includes/snippets/java/list-filter-riskdetections-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

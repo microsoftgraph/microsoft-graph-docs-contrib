@@ -74,7 +74,7 @@ The following is an example of the request.
   "name": "get_alerts"
 }-->
 
-```http
+```msgraph-interactive
 GET https://graph.microsoft.com/v1.0/security/alerts
 ```
 # [C#](#tab/csharp)

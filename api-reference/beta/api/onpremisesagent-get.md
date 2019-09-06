@@ -61,7 +61,7 @@ The following is an example of the request.
   "name": "get_onpremisesagent"
 }-->
 
-```http
+```msgraph-interactive
 GET https://graph.microsoft.com/beta/onPremisesPublishingProfiles/provisioning/agents/1234b780-965f-4149-85c5-a8c73e58b67d/?$expand=agentGroups
 ```
 # [C#](#tab/csharp)
@@ -74,10 +74,6 @@ GET https://graph.microsoft.com/beta/onPremisesPublishingProfiles/provisioning/a
 
 # [Objective-C](#tab/objc)
 [!INCLUDE [sample-code](../includes/snippets/objc/get-onpremisesagent-objc-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [Java](#tab/java)
-[!INCLUDE [sample-code](../includes/snippets/java/get-onpremisesagent-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

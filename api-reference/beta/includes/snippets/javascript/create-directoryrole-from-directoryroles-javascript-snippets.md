@@ -18,6 +18,6 @@ const directoryRole = {
 
 let res = await client.api('/directoryRoles')
 	.version('beta')
-	.post({directoryRole : directoryRole});
+	.post(directoryRole);
 
 ```

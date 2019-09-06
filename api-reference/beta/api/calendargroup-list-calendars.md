@@ -72,7 +72,7 @@ Here is an example of the request.
   "name": "calendargroup_get_calendars"
 }-->
 
-```http
+```msgraph-interactive
 GET https://graph.microsoft.com/beta/me/calendarGroups/{id}/calendars
 ```
 # [C#](#tab/csharp)
@@ -85,10 +85,6 @@ GET https://graph.microsoft.com/beta/me/calendarGroups/{id}/calendars
 
 # [Objective-C](#tab/objc)
 [!INCLUDE [sample-code](../includes/snippets/objc/calendargroup-get-calendars-objc-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [Java](#tab/java)
-[!INCLUDE [sample-code](../includes/snippets/java/calendargroup-get-calendars-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

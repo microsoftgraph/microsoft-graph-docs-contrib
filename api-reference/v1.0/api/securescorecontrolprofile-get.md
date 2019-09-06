@@ -55,7 +55,7 @@ The following is an example of the request.
   "name": "get_securescorecontrolprofile"
 }-->
 
-```http
+```msgraph-interactive
 GET https://graph.microsoft.com/beta/security/secureScoreControlProfiles/{id}
 ```
 # [C#](#tab/csharp)
@@ -68,10 +68,6 @@ GET https://graph.microsoft.com/beta/security/secureScoreControlProfiles/{id}
 
 # [Objective-C](#tab/objc)
 [!INCLUDE [sample-code](../includes/snippets/objc/get-securescorecontrolprofile-objc-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [Java](#tab/java)
-[!INCLUDE [sample-code](../includes/snippets/java/get-securescorecontrolprofile-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

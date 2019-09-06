@@ -37,7 +37,7 @@ If a user's OneDrive is not provisioned but the user has a license to use OneDri
 # [HTTP](#tab/http)
 <!-- { "blockType": "request", "name": "get-drive-default", "scopes": "files.read" } -->
 
-```http
+```msgraph-interactive
 GET /me/drive
 ```
 # [C#](#tab/csharp)
@@ -50,10 +50,6 @@ GET /me/drive
 
 # [Objective-C](#tab/objc)
 [!INCLUDE [sample-code](../includes/snippets/objc/get-drive-default-objc-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [Java](#tab/java)
-[!INCLUDE [sample-code](../includes/snippets/java/get-drive-default-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
@@ -71,7 +67,7 @@ If a user's OneDrive is not provisioned but the user has a license to use OneDri
 # [HTTP](#tab/http)
 <!-- { "blockType": "request", "name": "get-drive-by-user", "scopes": "files.read.all" } -->
 
-```http
+```msgraph-interactive
 GET /users/{idOrUserPrincipalName}/drive
 ```
 # [C#](#tab/csharp)
@@ -84,10 +80,6 @@ GET /users/{idOrUserPrincipalName}/drive
 
 # [Objective-C](#tab/objc)
 [!INCLUDE [sample-code](../includes/snippets/objc/get-drive-by-user-objc-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [Java](#tab/java)
-[!INCLUDE [sample-code](../includes/snippets/java/get-drive-by-user-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
@@ -109,7 +101,7 @@ To access a Group's default document library, your app requests the **drive** re
 # [HTTP](#tab/http)
 <!-- { "blockType": "request", "name": "get-drive-by-group", "scopes": "group.read.all" } -->
 
-```http
+```msgraph-interactive
 GET /groups/{groupId}/drive
 ```
 # [C#](#tab/csharp)
@@ -122,10 +114,6 @@ GET /groups/{groupId}/drive
 
 # [Objective-C](#tab/objc)
 [!INCLUDE [sample-code](../includes/snippets/objc/get-drive-by-group-objc-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [Java](#tab/java)
-[!INCLUDE [sample-code](../includes/snippets/java/get-drive-by-group-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
@@ -147,7 +135,7 @@ To access a [Site's](../resources/site.md) default document library, your app re
 # [HTTP](#tab/http)
 <!-- { "blockType": "request", "name": "get-drive-by-site-id", "scopes": "group.read.all" } -->
 
-```http
+```msgraph-interactive
 GET /sites/{siteId}/drive
 ```
 # [C#](#tab/csharp)
@@ -160,10 +148,6 @@ GET /sites/{siteId}/drive
 
 # [Objective-C](#tab/objc)
 [!INCLUDE [sample-code](../includes/snippets/objc/get-drive-by-site-id-objc-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [Java](#tab/java)
-[!INCLUDE [sample-code](../includes/snippets/java/get-drive-by-site-id-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
@@ -185,7 +169,7 @@ If you have the unique identifier for a drive, you can access it directly from t
 # [HTTP](#tab/http)
 <!-- { "blockType": "request", "name": "get-drive-by-id", "scopes": "files.read" } -->
 
-```http
+```msgraph-interactive
 GET /drives/{driveId}
 ```
 # [C#](#tab/csharp)
@@ -198,10 +182,6 @@ GET /drives/{driveId}
 
 # [Objective-C](#tab/objc)
 [!INCLUDE [sample-code](../includes/snippets/objc/get-drive-by-id-objc-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [Java](#tab/java)
-[!INCLUDE [sample-code](../includes/snippets/java/get-drive-by-id-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

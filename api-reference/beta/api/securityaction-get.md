@@ -61,7 +61,7 @@ The following is an example of the request.
   "name": "get_securityaction"
 }-->
 
-```http
+```msgraph-interactive
 GET https://graph.microsoft.com/beta/security/securityActions/{id}
 ```
 # [C#](#tab/csharp)
@@ -74,10 +74,6 @@ GET https://graph.microsoft.com/beta/security/securityActions/{id}
 
 # [Objective-C](#tab/objc)
 [!INCLUDE [sample-code](../includes/snippets/objc/get-securityaction-objc-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [Java](#tab/java)
-[!INCLUDE [sample-code](../includes/snippets/java/get-securityaction-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

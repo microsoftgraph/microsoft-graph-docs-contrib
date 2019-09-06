@@ -10,13 +10,13 @@ const options = {
 
 const client = Client.init(options);
 
-const CommsOperation = {
+const updateMetadata = {
   metadata: "metadata-value",
   clientContext: "clientContext-value"
 };
 
 let res = await client.api('/app/calls/{id}/updateMetadata')
 	.version('beta')
-	.post(CommsOperation);
+	.post(updateMetadata);
 
 ```

@@ -18,9 +18,9 @@ One of the following permissions is required to call this API. To learn more, in
 
 |Permission type      | Permissions (from least to most privileged)              |
 |:--------------------|:---------------------------------------------------------|
-|Delegated (work or school account) | Not supported.    |
+|Delegated (work or school account) | Group.Read.All and User.ReadBasic.All, Group.Read.All and User.Read.All, Group.Read.All and User.ReadWrite.All    |
 |Delegated (personal Microsoft account) | Not supported.    |
-|Application | Not supported. |
+|Application | Group.Read.All and User.Read.All, Group.Read.All and User.ReadWrite.All |
 
 ## HTTP request
 <!-- { "blockType": "ignored" } -->
@@ -51,7 +51,7 @@ The following is an example of the request.
   "blockType": "request",
   "name": "group_get_owners"
 }-->
-```http
+```msgraph-interactive
 GET https://graph.microsoft.com/beta/groups/{id}/owners
 ```
 # [C#](#tab/csharp)
@@ -64,10 +64,6 @@ GET https://graph.microsoft.com/beta/groups/{id}/owners
 
 # [Objective-C](#tab/objc)
 [!INCLUDE [sample-code](../includes/snippets/objc/group-get-owners-objc-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [Java](#tab/java)
-[!INCLUDE [sample-code](../includes/snippets/java/group-get-owners-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

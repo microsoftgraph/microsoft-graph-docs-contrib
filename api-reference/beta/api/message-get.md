@@ -95,7 +95,7 @@ The first example gets the specified message. It does not specify any header to 
   "sampleKeys": ["AAMkAGI1AAAoZCfHAAA="],
   "name": "get_message"
 }-->
-```http
+```msgraph-interactive
 GET https://graph.microsoft.com/beta/me/messages/AAMkAGI1AAAoZCfHAAA=
 ```
 # [C#](#tab/csharp)
@@ -108,10 +108,6 @@ GET https://graph.microsoft.com/beta/me/messages/AAMkAGI1AAAoZCfHAAA=
 
 # [Objective-C](#tab/objc)
 [!INCLUDE [sample-code](../includes/snippets/objc/get-message-objc-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [Java](#tab/java)
-[!INCLUDE [sample-code](../includes/snippets/java/get-message-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
@@ -155,7 +151,7 @@ In the next example, the signed-in user is Dana Swope. The example shows getting
   "sampleKeys": ["AQMkADJmMTUAAAgVZAAAA"],
   "name": "get_mentions_in_message"
 }-->
-```http
+```msgraph-interactive
 GET https://graph.microsoft.com/beta/me/messages/AQMkADJmMTUAAAgVZAAAA/?$expand=mentions
 ```
 # [C#](#tab/csharp)
@@ -168,10 +164,6 @@ GET https://graph.microsoft.com/beta/me/messages/AQMkADJmMTUAAAgVZAAAA/?$expand=
 
 # [Objective-C](#tab/objc)
 [!INCLUDE [sample-code](../includes/snippets/objc/get-mentions-in-message-objc-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [Java](#tab/java)
-[!INCLUDE [sample-code](../includes/snippets/java/get-mentions-in-message-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
@@ -287,7 +279,7 @@ The third example shows how to use a `Prefer: outlook.body-content-type="text"` 
   "name": "get_message_in_text"
 }-->
 
-```http
+```msgraph-interactive
 GET https://graph.microsoft.com/beta/me/messages/AAMkAGI1AAAoZCfHAAA=/?$select=subject,body,bodyPreview,uniqueBody
 Prefer: outlook.body-content-type="text"
 ```
@@ -301,10 +293,6 @@ Prefer: outlook.body-content-type="text"
 
 # [Objective-C](#tab/objc)
 [!INCLUDE [sample-code](../includes/snippets/objc/get-message-in-text-objc-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [Java](#tab/java)
-[!INCLUDE [sample-code](../includes/snippets/java/get-message-in-text-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
@@ -354,7 +342,7 @@ The fourth example shows how to get the Internet message headers of a specific m
   "name": "get_message_internet_headers"
 }-->
 
-```http
+```msgraph-interactive
 GET https://graph.microsoft.com/beta/me/messages/AAMkAGVmMDEz/?$select=internetMessageHeaders
 ```
 # [C#](#tab/csharp)
@@ -367,10 +355,6 @@ GET https://graph.microsoft.com/beta/me/messages/AAMkAGVmMDEz/?$select=internetM
 
 # [Objective-C](#tab/objc)
 [!INCLUDE [sample-code](../includes/snippets/objc/get-message-internet-headers-objc-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [Java](#tab/java)
-[!INCLUDE [sample-code](../includes/snippets/java/get-message-internet-headers-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

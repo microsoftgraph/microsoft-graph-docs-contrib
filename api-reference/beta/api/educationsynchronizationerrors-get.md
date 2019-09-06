@@ -47,7 +47,7 @@ The following is an example of the request.
   "blockType": "request",
   "name": "get_educationSynchronizationProfile_error"
 }-->
-```http
+```msgraph-interactive
 GET https://graph.microsoft.com/beta/education/synchronizationProfiles/{id}/errors
 ```
 # [C#](#tab/csharp)
@@ -60,10 +60,6 @@ GET https://graph.microsoft.com/beta/education/synchronizationProfiles/{id}/erro
 
 # [Objective-C](#tab/objc)
 [!INCLUDE [sample-code](../includes/snippets/objc/get-educationsynchronizationprofile-error-objc-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [Java](#tab/java)
-[!INCLUDE [sample-code](../includes/snippets/java/get-educationsynchronizationprofile-error-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
@@ -85,7 +81,7 @@ Content-type: application/json
 Content-length: 1568
 
 {
-    "@odata.context": "https://graph.microsoft.com/beta/$metadata#education/synchronizationProfiles('{id}')/errors",
+    "@odata.context": "https://graph.microsoft.com/beta/$metadata#education/synchronizationProfiles/{id}/errors",
     "@odata.count": 14,
     "value": [
         {

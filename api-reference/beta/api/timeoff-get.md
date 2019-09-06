@@ -58,7 +58,7 @@ The following is an example of the request.
   "blockType": "request",
   "name": "timeoff-get"
 }-->
-```http
+```msgraph-interactive
 GET https://graph.microsoft.com/beta/teams/{teamId}/schedule/timesOff/{timeOffId}
 ```
 # [C#](#tab/csharp)
@@ -71,10 +71,6 @@ GET https://graph.microsoft.com/beta/teams/{teamId}/schedule/timesOff/{timeOffId
 
 # [Objective-C](#tab/objc)
 [!INCLUDE [sample-code](../includes/snippets/objc/timeoff-get-objc-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [Java](#tab/java)
-[!INCLUDE [sample-code](../includes/snippets/java/timeoff-get-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

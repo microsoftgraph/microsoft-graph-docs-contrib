@@ -52,7 +52,7 @@ Here is an example of the request.
   "blockType": "request",
   "name": "get_device"
 }-->
-```http
+```msgraph-interactive
 GET https://graph.microsoft.com/beta/devices/{id}
 ```
 # [C#](#tab/csharp)
@@ -65,10 +65,6 @@ GET https://graph.microsoft.com/beta/devices/{id}
 
 # [Objective-C](#tab/objc)
 [!INCLUDE [sample-code](../includes/snippets/objc/get-device-objc-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [Java](#tab/java)
-[!INCLUDE [sample-code](../includes/snippets/java/get-device-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

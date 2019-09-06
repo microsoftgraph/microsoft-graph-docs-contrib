@@ -33,7 +33,7 @@ One of the following permissions is required to call this API. To learn more, in
        "scopes": "files.read",
        "target": "action" } -->
 
-```http
+```msgraph-interactive
 GET /me/drive/recent
 ```
 # [C#](#tab/csharp)
@@ -46,10 +46,6 @@ GET /me/drive/recent
 
 # [Objective-C](#tab/objc)
 [!INCLUDE [sample-code](../includes/snippets/objc/view-recent-files-objc-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [Java](#tab/java)
-[!INCLUDE [sample-code](../includes/snippets/java/view-recent-files-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

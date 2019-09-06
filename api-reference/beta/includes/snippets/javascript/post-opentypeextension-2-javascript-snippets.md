@@ -20,6 +20,6 @@ const extension = {
 
 let res = await client.api('/me/messages/AAMkAGE1M2IyNGNmLTI5MTktNDUyZi1iOTVl===/extensions')
 	.version('beta')
-	.post({extension : extension});
+	.post(extension);
 
 ```

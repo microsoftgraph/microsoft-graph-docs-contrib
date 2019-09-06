@@ -48,7 +48,7 @@ Here is an example of the request.
   "blockType": "request",
   "name": "get_organization"
 }-->
-```http
+```msgraph-interactive
 GET https://graph.microsoft.com/beta/organization
 ```
 # [C#](#tab/csharp)
@@ -61,10 +61,6 @@ GET https://graph.microsoft.com/beta/organization
 
 # [Objective-C](#tab/objc)
 [!INCLUDE [sample-code](../includes/snippets/objc/get-organization-objc-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [Java](#tab/java)
-[!INCLUDE [sample-code](../includes/snippets/java/get-organization-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

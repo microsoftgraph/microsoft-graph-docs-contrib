@@ -51,7 +51,7 @@ Here is an example of the request.
   "blockType": "request",
   "name": "range_entirecolumn"
 }-->
-```http
+```msgraph-interactive
 GET https://graph.microsoft.com/beta/me/drive/items/{id}/workbook/names/{name}/range/EntireColumn
 ```
 # [C#](#tab/csharp)
@@ -64,10 +64,6 @@ GET https://graph.microsoft.com/beta/me/drive/items/{id}/workbook/names/{name}/r
 
 # [Objective-C](#tab/objc)
 [!INCLUDE [sample-code](../includes/snippets/objc/range-entirecolumn-objc-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [Java](#tab/java)
-[!INCLUDE [sample-code](../includes/snippets/java/range-entirecolumn-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

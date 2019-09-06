@@ -88,7 +88,7 @@ The following example shows how to get all the [room](../resources/room.md) obje
   "name": "get_all_rooms"
 }-->
 
-```http
+```msgraph-interactive
 GET https://graph.microsoft.com/beta/places/microsoft.graph.room
 ```
 # [C#](#tab/csharp)
@@ -101,10 +101,6 @@ GET https://graph.microsoft.com/beta/places/microsoft.graph.room
 
 # [Objective-C](#tab/objc)
 [!INCLUDE [sample-code](../includes/snippets/objc/get-all-rooms-objc-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [Java](#tab/java)
-[!INCLUDE [sample-code](../includes/snippets/java/get-all-rooms-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
@@ -210,7 +206,7 @@ The following example shows how to get all the [roomList](../resources/roomlist.
   "name": "get_all_roomlists"
 }-->
 
-```http
+```msgraph-interactive
 GET https://graph.microsoft.com/beta/places/microsoft.graph.roomlist
 ```
 # [C#](#tab/csharp)
@@ -223,10 +219,6 @@ GET https://graph.microsoft.com/beta/places/microsoft.graph.roomlist
 
 # [Objective-C](#tab/objc)
 [!INCLUDE [sample-code](../includes/snippets/objc/get-all-roomlists-objc-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [Java](#tab/java)
-[!INCLUDE [sample-code](../includes/snippets/java/get-all-roomlists-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
@@ -297,7 +289,7 @@ The following example shows how to get a list of [room](../resources/room.md) ob
   "name": "get_rooms_in_roomlist"
 }-->
 
-```http
+```msgraph-interactive
 GET https://graph.microsoft.com/beta/places/bldg2@contoso.com/microsoft.graph.roomlist/rooms
 ```
 # [C#](#tab/csharp)
@@ -310,10 +302,6 @@ GET https://graph.microsoft.com/beta/places/bldg2@contoso.com/microsoft.graph.ro
 
 # [Objective-C](#tab/objc)
 [!INCLUDE [sample-code](../includes/snippets/objc/get-rooms-in-roomlist-objc-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [Java](#tab/java)
-[!INCLUDE [sample-code](../includes/snippets/java/get-rooms-in-roomlist-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

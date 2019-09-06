@@ -47,7 +47,7 @@ The following is an example of the request.
   "blockType": "request",
   "name": "get_bookingservice"
 }-->
-```http
+```msgraph-interactive
 GET https://graph.microsoft.com/beta/bookingBusinesses/Contosolunchdelivery@M365B489948.onmicrosoft.com/services/57da6774-a087-4d69-b0e6-6fb82c339976
 ```
 # [C#](#tab/csharp)
@@ -60,10 +60,6 @@ GET https://graph.microsoft.com/beta/bookingBusinesses/Contosolunchdelivery@M365
 
 # [Objective-C](#tab/objc)
 [!INCLUDE [sample-code](../includes/snippets/objc/get-bookingservice-objc-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [Java](#tab/java)
-[!INCLUDE [sample-code](../includes/snippets/java/get-bookingservice-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

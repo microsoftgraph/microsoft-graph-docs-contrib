@@ -26,7 +26,7 @@ One of the following permissions is required to call this API. To learn more, in
 <!-- { "blockType": "ignored" } -->
 ```http
 GET /me/planner/favoritePlans
-GET /users/<id>/planner/favoritePlans
+GET /users/{id}/planner/favoritePlans
 ```
 ## Optional query parameters
 This method supports the [OData Query Parameters](https://developer.microsoft.com/graph/docs/concepts/query_parameters) to help customize the response.
@@ -49,7 +49,7 @@ The following is an example of the request.
   "blockType": "request",
   "name": "get_favoriteplans"
 }-->
-```http
+```msgraph-interactive
 GET https://graph.microsoft.com/beta/me/planner/favoritePlans
 ```
 # [C#](#tab/csharp)
@@ -62,10 +62,6 @@ GET https://graph.microsoft.com/beta/me/planner/favoritePlans
 
 # [Objective-C](#tab/objc)
 [!INCLUDE [sample-code](../includes/snippets/objc/get-favoriteplans-objc-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [Java](#tab/java)
-[!INCLUDE [sample-code](../includes/snippets/java/get-favoriteplans-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

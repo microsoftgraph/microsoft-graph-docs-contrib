@@ -51,7 +51,7 @@ Here is an example of the request.
   "sampleKeys": ["de912e4d-c790-4da9-949c-ccd933aaa0f7"],
   "name": "get_outlookcategory"
 }-->
-```http
+```msgraph-interactive
 GET https://graph.microsoft.com/v1.0/me/outlook/masterCategories/de912e4d-c790-4da9-949c-ccd933aaa0f7
 ```
 # [C#](#tab/csharp)

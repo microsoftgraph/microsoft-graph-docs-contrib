@@ -84,7 +84,7 @@ Here is an example of the request to retrieve a shared item:
 # [HTTP](#tab/http)
 <!-- { "blockType": "request", "name": "get-shared-root" } -->
 
-```http
+```msgraph-interactive
 GET /shares/{shareIdOrEncodedSharingUrl}
 ```
 # [C#](#tab/csharp)
@@ -97,10 +97,6 @@ GET /shares/{shareIdOrEncodedSharingUrl}
 
 # [Objective-C](#tab/objc)
 [!INCLUDE [sample-code](../includes/snippets/objc/get-shared-root-objc-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [Java](#tab/java)
-[!INCLUDE [sample-code](../includes/snippets/java/get-shared-root-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
@@ -143,7 +139,7 @@ By requesting the **driveItem** relationship, the **DriveItem** that was shared 
 # [HTTP](#tab/http)
 <!-- { "blockType": "request", "name": "get-shared-driveitem" } -->
 
-```http
+```msgraph-interactive
 GET /shares/{shareIdOrUrl}/driveItem
 ```
 # [C#](#tab/csharp)
@@ -156,10 +152,6 @@ GET /shares/{shareIdOrUrl}/driveItem
 
 # [Objective-C](#tab/objc)
 [!INCLUDE [sample-code](../includes/snippets/objc/get-shared-driveitem-objc-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [Java](#tab/java)
-[!INCLUDE [sample-code](../includes/snippets/java/get-shared-driveitem-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
@@ -192,7 +184,7 @@ By requesting the **driveItem** relationship and expanding the **children** coll
 # [HTTP](#tab/http)
 <!-- { "blockType": "request", "name": "get-shared-driveitem-expand-children" } -->
 
-```http
+```msgraph-interactive
 GET /shares/{shareIdOrUrl}/driveItem?$expand=children
 ```
 # [C#](#tab/csharp)
@@ -205,10 +197,6 @@ GET /shares/{shareIdOrUrl}/driveItem?$expand=children
 
 # [Objective-C](#tab/objc)
 [!INCLUDE [sample-code](../includes/snippets/objc/get-shared-driveitem-expand-children-objc-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [Java](#tab/java)
-[!INCLUDE [sample-code](../includes/snippets/java/get-shared-driveitem-expand-children-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

@@ -60,7 +60,7 @@ If successful, this method returns a `200 OK` response code and collection of [p
   "name": "get-participants"
 }-->
 
-```http
+```msgraph-interactive
 GET https://graph.microsoft.com/beta/app/calls/57DAB8B1894C409AB240BD8BEAE78896/participants
 Authorization: Bearer <TOKEN>
 ```
@@ -74,10 +74,6 @@ Authorization: Bearer <TOKEN>
 
 # [Objective-C](#tab/objc)
 [!INCLUDE [sample-code](../includes/snippets/objc/get-participants-objc-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [Java](#tab/java)
-[!INCLUDE [sample-code](../includes/snippets/java/get-participants-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

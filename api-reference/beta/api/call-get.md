@@ -53,9 +53,9 @@ The following call example shows the request for getting the peer to peer call.
   "blockType": "request",
   "name": "get-call"
 }-->
-```http
-GET https://graph.microsoft.com/beta/app/calls/2e1a0b00-2db4-4022-9570-243709c565ab
-Authorization: Bearer <Token>
+
+```msgraph-interactive
+GET https://graph.microsoft.com/beta/app/calls/{id}
 ```
 # [C#](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/get-call-csharp-snippets.md)]
@@ -67,10 +67,6 @@ Authorization: Bearer <Token>
 
 # [Objective-C](#tab/objc)
 [!INCLUDE [sample-code](../includes/snippets/objc/get-call-objc-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [Java](#tab/java)
-[!INCLUDE [sample-code](../includes/snippets/java/get-call-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

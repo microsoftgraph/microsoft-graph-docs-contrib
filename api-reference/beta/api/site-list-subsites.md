@@ -31,7 +31,7 @@ One of the following permissions is required to call this API. To learn more, in
 # [HTTP](#tab/http)
 <!-- { "blockType": "request", "name": "list-subsites", "scopes": "service.sharepoint sites.read.all" } -->
 
-```http
+```msgraph-interactive
 GET https://graph.microsoft.com/beta/sites/{site-id}/sites
 ```
 # [C#](#tab/csharp)
@@ -44,10 +44,6 @@ GET https://graph.microsoft.com/beta/sites/{site-id}/sites
 
 # [Objective-C](#tab/objc)
 [!INCLUDE [sample-code](../includes/snippets/objc/list-subsites-objc-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [Java](#tab/java)
-[!INCLUDE [sample-code](../includes/snippets/java/list-subsites-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

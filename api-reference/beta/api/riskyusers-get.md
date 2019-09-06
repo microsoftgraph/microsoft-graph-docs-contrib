@@ -52,7 +52,7 @@ Here is an example of the request.
   "name": "get_riskyuser",
   "sampleKeys": ["c2b6c2b9-dddc-acd0-2b39-d519d803dbc3"]
 }-->
-```http
+```msgraph-interactive
 GET https://graph.microsoft.com/beta/riskyUsers/c2b6c2b9-dddc-acd0-2b39-d519d803dbc3
 ```
 # [C#](#tab/csharp)
@@ -65,10 +65,6 @@ GET https://graph.microsoft.com/beta/riskyUsers/c2b6c2b9-dddc-acd0-2b39-d519d803
 
 # [Objective-C](#tab/objc)
 [!INCLUDE [sample-code](../includes/snippets/objc/get-riskyuser-objc-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [Java](#tab/java)
-[!INCLUDE [sample-code](../includes/snippets/java/get-riskyuser-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

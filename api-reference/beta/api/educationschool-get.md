@@ -50,7 +50,7 @@ The following is an example of the request.
   "blockType": "request",
   "name": "get_educationschool"
 }-->
-```http
+```msgraph-interactive
 GET https://graph.microsoft.com/beta/education/schools/10001
 ```
 # [C#](#tab/csharp)
@@ -63,10 +63,6 @@ GET https://graph.microsoft.com/beta/education/schools/10001
 
 # [Objective-C](#tab/objc)
 [!INCLUDE [sample-code](../includes/snippets/objc/get-educationschool-objc-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [Java](#tab/java)
-[!INCLUDE [sample-code](../includes/snippets/java/get-educationschool-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

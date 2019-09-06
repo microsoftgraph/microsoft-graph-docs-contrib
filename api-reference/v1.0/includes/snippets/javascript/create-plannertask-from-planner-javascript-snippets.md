@@ -23,6 +23,6 @@ const plannerTask = {
 };
 
 let res = await client.api('/planner/tasks')
-	.post({plannerTask : plannerTask});
+	.post(plannerTask);
 
 ```
