@@ -2,6 +2,9 @@
 title: "callMediaState resource type"
 description: "Represents the media state for a call."
 author: "VinodRavichandran"
+ms.prod: 
+localization_priority: Normal
+doc_type: resourcePageType
 ---
 
 # audioConferencing resource type
