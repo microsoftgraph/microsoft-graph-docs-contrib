@@ -54,7 +54,7 @@ The following is an example of the request.
   "blockType": "request",
   "name": "get_applicationsignindetailedsummary"
 }-->
-```http
+```msgraph-interactive
 GET https://graph.microsoft.com/beta/reports/applicationSignInDetailedSummary/{id}
 ```
 # [C#](#tab/csharp)

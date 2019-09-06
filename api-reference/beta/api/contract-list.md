@@ -60,7 +60,7 @@ If successful, this method returns a `200 OK` response code and a collection of 
   "blockType": "request",
   "name": "get_contract"
 }-->
-```http
+```msgraph-interactive
 GET https://graph.microsoft.com/beta/contracts
 ```
 # [C#](#tab/csharp)

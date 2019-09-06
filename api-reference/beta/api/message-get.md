@@ -97,7 +97,7 @@ The first example gets the specified message. It does not specify any header to 
   "sampleKeys": ["AAMkAGI1AAAoZCfHAAA="],
   "name": "get_message"
 }-->
-```http
+```msgraph-interactive
 GET https://graph.microsoft.com/beta/me/messages/AAMkAGI1AAAoZCfHAAA=
 ```
 # [C#](#tab/csharp)
@@ -155,7 +155,7 @@ In the next example, the signed-in user is Dana Swope. The example shows getting
   "sampleKeys": ["AQMkADJmMTUAAAgVZAAAA"],
   "name": "get_mentions_in_message"
 }-->
-```http
+```msgraph-interactive
 GET https://graph.microsoft.com/beta/me/messages/AQMkADJmMTUAAAgVZAAAA/?$expand=mentions
 ```
 # [C#](#tab/csharp)
@@ -283,7 +283,7 @@ The third example shows how to use a `Prefer: outlook.body-content-type="text"` 
   "name": "get_message_in_text"
 }-->
 
-```http
+```msgraph-interactive
 GET https://graph.microsoft.com/beta/me/messages/AAMkAGI1AAAoZCfHAAA=/?$select=subject,body,bodyPreview,uniqueBody
 Prefer: outlook.body-content-type="text"
 ```
@@ -345,7 +345,7 @@ The fourth example shows how to get the Internet message headers of a specific m
   "name": "get_message_internet_headers"
 }-->
 
-```http
+```msgraph-interactive
 GET https://graph.microsoft.com/beta/me/messages/AAMkAGVmMDEz/?$select=internetMessageHeaders
 ```
 # [C#](#tab/csharp)

@@ -53,7 +53,7 @@ The following example shows how to look among all the accessible extensions for 
   "blockType": "request",
   "name": "get_schemaextensions"
 }-->
-```http
+```msgraph-interactive
 GET https://graph.microsoft.com/beta/schemaExtensions?$filter=id%20eq%20'graphlearn_test'
 ```
 # [C#](#tab/csharp)
