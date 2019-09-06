@@ -4,6 +4,7 @@ description: "The education API in Microsoft Graph enhances Office 365 resources
 author: "mmast-msft"
 localization_priority: Priority
 ms.prod: "education"
+scenarios: "getting-started"
 ---
 
 # Education API overview
