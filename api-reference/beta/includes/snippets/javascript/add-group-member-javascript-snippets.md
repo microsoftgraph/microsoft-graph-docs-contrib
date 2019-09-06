@@ -16,6 +16,6 @@ const directoryObject = {
 
 let res = await client.api('/groups/{id}/members/$ref')
 	.version('beta')
-	.post({directoryObject : directoryObject});
+	.post(directoryObject);
 
 ```

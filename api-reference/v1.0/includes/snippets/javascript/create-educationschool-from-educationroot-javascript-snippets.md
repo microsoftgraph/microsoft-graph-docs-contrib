@@ -34,6 +34,6 @@ const educationSchool = {
 };
 
 let res = await client.api('/education/schools')
-	.post({educationSchool : educationSchool});
+	.post(educationSchool);
 
 ```

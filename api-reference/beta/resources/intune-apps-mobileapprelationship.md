@@ -4,6 +4,7 @@ description: "Describes the relationship for a child mobile app to its parent mo
 author: "rolyon"
 localization_priority: Normal
 ms.prod: "Intune"
+doc_type: resourcePageType
 ---
 
 # mobileAppRelationship resource type
@@ -46,8 +47,6 @@ Here is a JSON representation of the resource.
   "targetDisplayName": "String"
 }
 ```
-
-
 
 
 

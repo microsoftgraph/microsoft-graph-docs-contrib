@@ -4,6 +4,7 @@ description: "The class used to identify the MultiMode app configuration for the
 author: "rolyon"
 localization_priority: Normal
 ms.prod: "Intune"
+doc_type: resourcePageType
 ---
 
 # windowsKioskMultipleApps resource type
@@ -57,8 +58,6 @@ Here is a JSON representation of the resource.
   "startMenuLayoutXml": "binary"
 }
 ```
-
-
 
 
 

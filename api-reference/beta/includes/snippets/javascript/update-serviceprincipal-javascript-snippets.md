@@ -32,6 +32,6 @@ const servicePrincipal = {
 
 let res = await client.api('/servicePrincipals/{id}')
 	.version('beta')
-	.update({servicePrincipal : servicePrincipal});
+	.update(servicePrincipal);
 
 ```

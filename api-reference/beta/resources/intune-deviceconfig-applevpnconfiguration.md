@@ -4,6 +4,7 @@ description: "Apple VPN configuration profile."
 author: "rolyon"
 localization_priority: Normal
 ms.prod: "Intune"
+doc_type: resourcePageType
 ---
 
 # appleVpnConfiguration resource type
@@ -166,8 +167,6 @@ Here is a JSON representation of the resource.
   "optInToDeviceIdSharing": true
 }
 ```
-
-
 
 
 

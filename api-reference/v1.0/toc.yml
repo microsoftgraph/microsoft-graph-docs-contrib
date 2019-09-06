@@ -403,11 +403,11 @@
       - name: Attachment
         href: resources/attachment.md
         items:
-        - name: File attachment resource
+        - name: File attachment type
           href: resources/fileattachment.md
-        - name: Item attachment resource
+        - name: Item attachment type
           href: resources/itemattachment.md
-        - name: Reference attachment resource
+        - name: Reference attachment type
           href: resources/referenceattachment.md
         - name: Get attachment
           href: api/attachment-get.md
@@ -416,6 +416,10 @@
       - name: Calendar
         href: resources/calendar.md
         items:
+        - name: Get calendar
+          href: api/calendar-get.md
+        - name: Update calendar
+          href: api/calendar-update.md
         - name: List events
           href: api/group-list-events.md
         - name: Create event
@@ -616,11 +620,11 @@
       - name: Attachment
         href: resources/attachment.md
         items:
-        - name: File attachment resource
+        - name: File attachment type
           href: resources/fileattachment.md
-        - name: Item attachment resource
+        - name: Item attachment type
           href: resources/itemattachment.md
-        - name: Reference attachment resource
+        - name: Reference attachment type
           href: resources/referenceattachment.md
         - name: Get attachment
           href: api/attachment-get.md
@@ -3398,11 +3402,11 @@
       - name: Attachment
         href: resources/attachment.md
         items:
-        - name: File attachment resource
+        - name: File attachment type
           href: resources/fileattachment.md
-        - name: Item attachment resource
+        - name: Item attachment type
           href: resources/itemattachment.md
-        - name: Reference attachment resource
+        - name: Reference attachment type
           href: resources/referenceattachment.md
         - name: Get attachment
           href: api/attachment-get.md
@@ -4111,10 +4115,14 @@
         items:
         - name: List channels
           href: api/channel-list.md
-        - name: Create channel
-          href: api/channel-post.md
         - name: Get channel
           href: api/channel-get.md
+        - name: Create channel
+          href: api/channel-post.md
+        - name: Update channel
+          href: api/channel-patch.md
+        - name: Delete channel
+          href: api/channel-delete.md
       - name: App Catalog
         href: resources/teamsapp.md
         items:
@@ -4213,6 +4221,19 @@
           href: api/workbook-list-worksheets.md
         - name: List names
           href: api/workbook-list-names.md
+      - name: Workbook comments
+        href: resources/workbookcomment.md
+        items:
+        - name: List
+          href: api/workbook-list-comments.md
+        - name: Get
+          href: api/workbookcomment-get.md
+        - name: List replies
+          href: api/workbookcomment-list-replies.md
+        - name: Create reply
+          href: api/workbookcomment-post-replies.md
+        - name: Get reply
+          href: workbookcommentreply-get.md     
       - name: Worksheet
         href: resources/worksheet.md
         items:

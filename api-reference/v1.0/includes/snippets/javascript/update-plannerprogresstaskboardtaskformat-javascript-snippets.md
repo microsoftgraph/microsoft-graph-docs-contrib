@@ -15,6 +15,6 @@ const plannerProgressTaskBoardTaskFormat = {
 };
 
 let res = await client.api('/planner/tasks/{task-id}/progressTaskBoardFormat')
-	.update({plannerProgressTaskBoardTaskFormat : plannerProgressTaskBoardTaskFormat});
+	.update(plannerProgressTaskBoardTaskFormat);
 
 ```

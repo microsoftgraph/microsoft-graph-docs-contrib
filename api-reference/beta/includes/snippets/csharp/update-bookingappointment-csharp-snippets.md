@@ -18,7 +18,7 @@ var bookingAppointment = new BookingAppointment
 		{
 			{"@odata.type","#microsoft.graph.dateTimeTimeZone"}
 		},
-		DateTime = "2018-05-06T15:30:00+03:00",
+		DateTime = "2018-05-06T12:30:00+00:00",
 		TimeZone = "UTC"
 	},
 	InvoiceDate = new DateTimeTimeZone
@@ -27,7 +27,7 @@ var bookingAppointment = new BookingAppointment
 		{
 			{"@odata.type","#microsoft.graph.dateTimeTimeZone"}
 		},
-		DateTime = "2018-05-06T15:30:00+03:00",
+		DateTime = "2018-05-06T12:30:00+00:00",
 		TimeZone = "UTC"
 	},
 	Start = new DateTimeTimeZone
@@ -36,7 +36,7 @@ var bookingAppointment = new BookingAppointment
 		{
 			{"@odata.type","#microsoft.graph.dateTimeTimeZone"}
 		},
-		DateTime = "2018-05-06T15:00:00+03:00",
+		DateTime = "2018-05-06T12:00:00+00:00",
 		TimeZone = "UTC"
 	}
 };

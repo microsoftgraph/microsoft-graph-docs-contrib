@@ -16,6 +16,6 @@ const calendar = {
 
 let res = await client.api('/me/calendars')
 	.version('beta')
-	.post({calendar : calendar});
+	.post(calendar);
 
 ```

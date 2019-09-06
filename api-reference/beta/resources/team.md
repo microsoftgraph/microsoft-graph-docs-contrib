@@ -2,9 +2,9 @@
 title: "team resource type"
 description: "A team in Microsoft Teams is a collection of channels. "
 author: "clearab"
-doc_type: "resourcePageType"
 localization_priority: Priority
 ms.prod: "microsoft-teams"
+doc_type: resourcePageType
 ---
 
 # team resource type

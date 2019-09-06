@@ -4,6 +4,7 @@ description: "Contains properties and inherited properties for MacOS Volume-Purc
 author: "rolyon"
 localization_priority: Normal
 ms.prod: "Intune"
+doc_type: resourcePageType
 ---
 
 # macOsVppApp resource type
@@ -137,8 +138,6 @@ Here is a JSON representation of the resource.
   ]
 }
 ```
-
-
 
 
 

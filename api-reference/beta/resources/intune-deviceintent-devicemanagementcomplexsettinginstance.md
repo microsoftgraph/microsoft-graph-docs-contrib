@@ -4,6 +4,7 @@ description: "A setting instance representing a complex value"
 author: "rolyon"
 localization_priority: Normal
 ms.prod: "Intune"
+doc_type: resourcePageType
 ---
 
 # deviceManagementComplexSettingInstance resource type
@@ -54,8 +55,6 @@ Here is a JSON representation of the resource.
   "valueJson": "String"
 }
 ```
-
-
 
 
 

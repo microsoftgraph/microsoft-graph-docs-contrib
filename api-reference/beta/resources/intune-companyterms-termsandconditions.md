@@ -4,6 +4,7 @@ description: "A termsAndConditions entity represents the metadata and contents o
 author: "rolyon"
 localization_priority: Normal
 ms.prod: "Intune"
+doc_type: resourcePageType
 ---
 
 # termsAndConditions resource type
@@ -67,8 +68,6 @@ Here is a JSON representation of the resource.
   "version": 1024
 }
 ```
-
-
 
 
 

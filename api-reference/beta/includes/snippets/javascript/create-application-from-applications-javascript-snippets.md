@@ -17,6 +17,6 @@ const application = {
 
 let res = await client.api('/applications')
 	.version('beta')
-	.post({application : application});
+	.post(application);
 
 ```

@@ -7,7 +7,7 @@ description: "Automatically generated file. DO NOT MODIFY"
 GraphServiceClient graphClient = new GraphServiceClient( authProvider );
 
 var getCredentialUsageSummary = await graphClient.Reports
-	.GetCredentialUsageSummary('D30')
+	.GetCredentialUsageSummary("D30")
 	.Request()
 	.Filter("feature eq 'registration'")
 	.GetAsync();

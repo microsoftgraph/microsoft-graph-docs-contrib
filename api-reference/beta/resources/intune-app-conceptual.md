@@ -105,7 +105,6 @@ The following Graph resources are available to manage app protection polices in 
 - [Mobile app content](intune-apps-mobileappcontent.md)
 - [Mobile app content file](intune-apps-mobileappcontentfile.md)
 - [Mobile app content file upload state](intune-apps-mobileappcontentfileuploadstate.md)
-- [Mobile app dependecy type](intune-apps-mobileappdependecytype.md)
 - [Mobile app dependency](intune-apps-mobileappdependency.md)
 - [Mobile app dependency type](intune-apps-mobileappdependencytype.md)
 - [Mobile app install status](intune-apps-mobileappinstallstatus.md)
@@ -171,3 +170,4 @@ The following Graph resources are available to manage app protection polices in 
 - [Windows universal AppX](intune-apps-windowsuniversalappx.md)
 - [Windows universal AppX app assignment settings](intune-apps-windowsuniversalappxappassignmentsettings.md)
 - [Windows universal AppX contained app](intune-apps-windowsuniversalappxcontainedapp.md)
+
