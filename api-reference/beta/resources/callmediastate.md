@@ -2,7 +2,7 @@
 title: "callMediaState resource type"
 description: "Represents the media state for a call."
 author: "VinodRavichandran"
-ms.prod: 
+ms.prod: microsoft-teams
 localization_priority: Normal
 doc_type: resourcePageType
 ---
