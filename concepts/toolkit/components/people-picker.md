@@ -52,7 +52,7 @@ mgt-people-picker {
 
 This component uses the following Microsoft Graph APIs and permissions.
 
-| Resource                                                                                                         | Permission |
+| API                                                                                                         | Permission |
 | ---------------------------------------------------------------------------------------------------------------- | ---------------- |
 | [/me/people](https://docs.microsoft.com/en-us/graph/api/user-list-people?view=graph-rest-1.0)                    | People.Read    |
 | [/groups/\${groupId}/members](https://docs.microsoft.com/en-us/graph/api/group-list-members?view=graph-rest-1.0) | People.Read    |
