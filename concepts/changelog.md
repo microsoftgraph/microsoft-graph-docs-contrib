@@ -11,6 +11,16 @@ This changelog covers what's changed in the Microsoft Graph API, including the v
 
 For details about known issues with Microsoft Graph APIs, see [Known issues](known-issues.md).
 
+## September 2019
+
+### Calendar, mail, groups
+
+| **Change type** | **Version**   | **Description**                          |
+| :-------------- | :------------ | :--------------------------------------- |
+| Addition        | v1.0          | Added the capability to [get the MIME content of a message](outlook-get-mime-message.md). |
+| Addition        | v1.0          | Added the capability to [get the raw contents of a file or item attachment](/graph/api/attachment-get?view=graph-rest-1.0#get-the-raw-contents-of-a-file-or-item-attachment) to an event, message, or group post. | 
+
+
 ## August 2019
 
 ### Devices and apps (Microsoft Intune)
