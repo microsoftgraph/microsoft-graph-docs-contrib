@@ -3,8 +3,8 @@ title: "Get Policy"
 description: "Retrieve the properties of a policy."
 localization_priority: Normal
 doc_type: apiPageType
-ms.prod: ""
-author: ""
+ms.prod: "microsoft-identity-platform"
+author: "davidmu1"
 ---
 
 # Get Policy

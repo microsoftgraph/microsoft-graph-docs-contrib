@@ -1,17 +1,17 @@
 ---
 title: "List Policies assigned to Application or Service Principal"
-description: "Retrieve the policy objects assigned to an application or service principal."
+description: "Get the policy objects assigned to an application or service principal."
 localization_priority: Normal
 doc_type: apiPageType
-ms.prod: ""
-author: ""
+ms.prod: "microsoft-identity-platform"
+author: "davidmu1"
 ---
 
 # List Policies assigned to Application or Service Principal
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Retrieve the [policy](../resources/policy.md) objects assigned to an application or service principal.
+Get the [policy](../resources/policy.md) objects assigned to an application or service principal.
 
 ## Permissions
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
