@@ -72,3 +72,44 @@ Outlook service limits are evaluated for each app ID and mailbox combination. In
 | 10,000 API requests in a 10 minute period                  | Beta and v1.0 Graph endpoints |
 | 4 concurrent requests                                      | Beta Graph endpoint |
 | 15 megabit upload (PATCH, POST, PUT) in a 30 second period | Beta Graph endpoint |
+
+#### Outlook service resources
+
+The following resources are provided by the Outlook service.
+
+##### Calendar API resources
+
+- [event](/graph/api/resources/resources/event)
+- [eventMessage](/graph/api/resources/resources/eventmessage)
+- [calendar](/graph/api/resources/resources/calendar)
+- [calendarGroup](/graph/api/resources/resources/calendargroup)
+- [outlookCategory](/graph/api/resources/resources/outlookcategory)
+- [attachment](/graph/api/resources/resources/attachment)
+- [place](/graph/api/resources/resources/place)
+
+##### Mail API resources
+
+- [message](/graph/api/resources/resources/message)
+- [mailFolder](/graph/api/resources/resources/mailfolder)
+- [mailSearchFolder](/graph/api/resources/resources/mailsearchfolder)
+- [messageRule](/graph/api/resources/resources/messagerule)
+- [outlookCategory](/graph/api/resources/resources/outlookcategory)
+- [attachment](/graph/api/resources/resources/attachment)
+
+##### Personal contacts API resources
+
+- [contact](/graph/api/resources/resources/contact)
+- [contactFolder](/graph/api/resources/resources/contactfolder)
+- [outlookCategory](/graph/api/resources/resources/outlookcategory)
+
+##### Social and workplace intelligence resources
+
+- [person](/graph/api/resources/resources/person)
+
+##### To-do tasks API resources
+
+- [outlookTask](/graph/api/resources/resources/outlooktask)
+- [outlookTaskFolder](/graph/api/resources/resources/outlooktaskfolder)
+- [outlookTaskGroup](/graph/api/resources/resources/outlooktaskgroup)
+- [outlookCategory](/graph/api/resources/resources/outlookcategory)
+- [attachment](/graph/api/resources/resources/attachment)
