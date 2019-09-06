@@ -48,7 +48,7 @@ GET /sites/{site-id}/lists/{list-id}/items/{item-id}/analytics
 # [HTTP](#tab/http)
 <!-- { "blockType": "request", "name": "get-analytics" } -->
 
-```http
+```msgraph-interactive
 GET /drives/{drive-id}/items/{item-id}/analytics
 ```
 # [C#](#tab/csharp)

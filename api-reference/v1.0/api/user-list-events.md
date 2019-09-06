@@ -93,7 +93,7 @@ Here is an example of the request. It specifies the following:
   "blockType": "request",
   "name": "get_events"
 }-->
-```http
+```msgraph-interactive
 GET https://graph.microsoft.com/v1.0/me/events?$select=subject,body,bodyPreview,organizer,attendees,start,end,location
 Prefer: outlook.timezone="Pacific Standard Time"
 ```

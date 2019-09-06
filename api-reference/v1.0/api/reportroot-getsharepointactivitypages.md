@@ -74,7 +74,7 @@ The following is an example of the request.
   "name": "reportroot_getsharepointactivitypages"
 }-->
 
-```http
+```msgraph-interactive
 GET https://graph.microsoft.com/v1.0/reports/getSharePointActivityPages(period='D7')
 ```
 # [C#](#tab/csharp)

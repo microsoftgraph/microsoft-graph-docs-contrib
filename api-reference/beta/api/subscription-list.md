@@ -81,7 +81,7 @@ If successful, this method returns a `200 OK` response code and a list of [subsc
   "name": "get_subscriptions"
 }-->
 
-```http
+```msgraph-interactive
 GET https://graph.microsoft.com/beta/subscriptions
 ```
 # [C#](#tab/csharp)

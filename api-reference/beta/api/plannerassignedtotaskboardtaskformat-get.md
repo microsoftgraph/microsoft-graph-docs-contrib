@@ -49,7 +49,7 @@ Here is an example of the request.
   "blockType": "request",
   "name": "get_plannerassignedtotaskboardtaskformat"
 }-->
-```http
+```msgraph-interactive
 GET https://graph.microsoft.com/beta/planner/tasks/01gzSlKkIUSUl6DF_EilrmQAKDhh/assignedToTaskBoardFormat
 ```
 # [C#](#tab/csharp)

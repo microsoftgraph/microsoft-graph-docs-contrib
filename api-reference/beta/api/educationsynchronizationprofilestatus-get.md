@@ -47,7 +47,7 @@ The following is an example of the request.
   "blockType": "request",
   "name": "get_educationSynchronizationProfile_status"
 }-->
-```http
+```msgraph-interactive
 GET https://graph.microsoft.com/beta/education/synchronizationProfiles/{id}/profileStatus
 ```
 # [C#](#tab/csharp)

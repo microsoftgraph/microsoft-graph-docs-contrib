@@ -90,7 +90,7 @@ The first example gets the default, top 10 messages in the signed-in user's mail
   "blockType": "request",
   "name": "get_messages"
 }-->
-```http
+```msgraph-interactive
 GET https://graph.microsoft.com/beta/me/messages?$select=sender,subject
 ```
 # [C#](#tab/csharp)
@@ -229,7 +229,7 @@ The example also incorporates URL encoding for the space characters in the query
   "blockType": "request",
   "name": "get_messages_with_mentions"
 }-->
-```http
+```msgraph-interactive
 GET https://graph.microsoft.com/beta/me/messages?$filter=MentionsPreview/IsMentioned%20eq%20true&$select=Subject,Sender,ReceivedDateTime,MentionsPreview
 ```
 # [C#](#tab/csharp)
@@ -306,7 +306,7 @@ The third example shows how to use a `Prefer: outlook.body-content-type="text"` 
   "blockType": "request",
   "name": "get_messages_in_text"
 }-->
-```http
+```msgraph-interactive
 GET https://graph.microsoft.com/beta/me/messages?$select=subject,body,bodyPreview,uniqueBody
 Prefer: outlook.body-content-type="text"
 ```

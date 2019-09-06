@@ -161,7 +161,7 @@ Here is an example of the request to get the properties of a file attachment on 
   "sampleKeys": ["AAMkAGUzY5QKjAAA=","AAMkAGUzY5QKjAAABEgAQAMkpJI_X-LBFgvrv1PlZYd8="]
 }-->
 
-```http
+```msgraph-interactive
 GET https://graph.microsoft.com/beta/me/messages/AAMkAGUzY5QKjAAA=/attachments/AAMkAGUzY5QKjAAABEgAQAMkpJI_X-LBFgvrv1PlZYd8=
 ```
 # [C#](#tab/csharp)
@@ -221,7 +221,7 @@ The first example shows how to get an item attachment on a message. The properti
   "sampleKeys": ["AAMkADA1M-zAAA=","AAMkADA1M-CJKtzmnlcqVgqI="]
 }-->
 
-```http
+```msgraph-interactive
 GET https://graph.microsoft.com/beta/me/messages('AAMkADA1M-zAAA=')/attachments('AAMkADA1M-CJKtzmnlcqVgqI=')
 ```
 # [C#](#tab/csharp)
@@ -277,7 +277,7 @@ a message; the properties of that attached message are also returned.
   "sampleKeys": ["AAMkADA1M-zAAA=","AAMkADA1M-CJKtzmnlcqVgqI="]
 }-->
 
-```http
+```msgraph-interactive
 GET https://graph.microsoft.com/beta/me/messages('AAMkADA1M-zAAA=')/attachments('AAMkADA1M-CJKtzmnlcqVgqI=')/?$expand=microsoft.graph.itemattachment/item
 ```
 # [C#](#tab/csharp)
@@ -388,7 +388,7 @@ Here is an example of the request to get a reference attachment on an event.
   "sampleKeys": ["AAMkAGE1M88AADUv0uAAAG=","AAMkAGE1Mg72tgf7hJp0PICVGCc0g="]
 }-->
 
-```http
+```msgraph-interactive
 GET https://graph.microsoft.com/beta/me/events/AAMkAGE1M88AADUv0uAAAG=/attachments/AAMkAGE1Mg72tgf7hJp0PICVGCc0g=
 ```
 # [C#](#tab/csharp)

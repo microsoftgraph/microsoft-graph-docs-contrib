@@ -48,7 +48,7 @@ If successful, this method returns a `200 OK` response code and [groupLifecycleP
   "blockType": "request",
   "name": "get_grouplifecyclepolicy"
 }-->
-```http
+```msgraph-interactive
 GET https://graph.microsoft.com/v1.0/groupLifecyclePolicies/{id}
 ```
 # [C#](#tab/csharp)
