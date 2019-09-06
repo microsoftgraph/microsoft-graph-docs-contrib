@@ -1,17 +1,15 @@
 ---
-title: "People-Picker Component"
-description: "The mgt-people-picker web component can be used to search and hold a requested amount of people from the Graph."
+title: "People-Picker component"
+description: "You can use the mgt-people-picker web component to search for and hold a requested number of people via Microsoft Graph."
 localization_priority: Normal
 author: vogtn
 ---
 
-# People-Picker Component
+# People-Picker component
 
-## Description
+You can use the mgt-people-picker web component to search for and hold a requested number of people via Microsoft Graph. By default, the component will search for all people; you can also define a group property to further filter the results.
 
-The `mgt-people-picker` web component can be used to search and hold a requested amount of people from the Graph. By default, it will search for all people, but a group property may be defined for further filtering.
-
-If there are more people to display than the `show-max` value, the search list will not display that person.
+If the number of people to display exceeds the `show-max` value, not all people returned will be displayed in the search list.
 
 ## Example
 
@@ -25,23 +23,23 @@ If there are more people to display than the `show-max` value, the search list w
 
 ## Properties
 
-By default, the `mgt-people-picker` component fetches events from the `/me/people` endpoint. Use the following attributes to change this behavior:
+By default, the `mgt-people-picker` component fetches events from the `/me/people` endpoint. Use the following attributes to change this behavior.
 
-| property  | attribute  | Description                                                                                                                                                                             |
+| Property  | Attribute  | Description                                                                                                                                                                             |
 | --------- | ---------- | --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| `showMax` | `show-max` | an integer value to indicate the maximum number of people to show - default is 6.                                                                                                       |
-| `people`  | `people`   | an array of people to get or set the list of people rendered by the component - use this property to access the people loaded by the component. Set this value to load your own people. |
-| `group`   | `group`    | a string value which belongs to a Graph defined group for further filtering of search.                                                                                                  |
+| showMax | show-max | An integer value to indicate the maximum number of people to show. the default value is 6.|
+| people  | people   | An array of people to get or set the list of people rendered by the component. Use this property to access the people loaded by the component. Set this value to load your own people. |
+| group   | group    | A string value that belongs to a Microsoft Graph defined group for further filtering of the search results.|
 
-Ex:
+The following is an example.
 
 ```html
 <mgt-people-picker show-max="4"> </mgt-people-picker>
 ```
 
-## CSS Custom properties
+## CSS custom properties
 
-The `mgt-people-picker` component defines these css custom properties
+The `mgt-people-picker` component defines the following CSS custom properties.
 
 ```css
 mgt-people-picker {
@@ -50,15 +48,15 @@ mgt-people-picker {
 }
 ```
 
-## Graph scopes
+## Mcirosoft Graph permissions
 
-This component uses the following Microsoft Graph APIs and permissions:
+This component uses the following Microsoft Graph APIs and permissions.
 
-| resource                                                                                                         | permission/scope |
+| resource                                                                                                         | Permission |
 | ---------------------------------------------------------------------------------------------------------------- | ---------------- |
-| [/me/people](https://docs.microsoft.com/en-us/graph/api/user-list-people?view=graph-rest-1.0)                    | `People.Read`    |
-| [/groups/\${groupId}/members](https://docs.microsoft.com/en-us/graph/api/group-list-members?view=graph-rest-1.0) | `People.Read`    |
+| [/me/people](https://docs.microsoft.com/en-us/graph/api/user-list-people?view=graph-rest-1.0)                    | People.Read    |
+| [/groups/\${groupId}/members](https://docs.microsoft.com/en-us/graph/api/group-list-members?view=graph-rest-1.0) | People.Read    |
 
 ## Authentication
 
-The control leverages the global authentication provider described in the [authentication documentation](./../providers.md).
+The control uses the global authentication provider described in the [authentication documentation](./../providers.md).
