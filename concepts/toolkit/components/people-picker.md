@@ -7,7 +7,7 @@ author: vogtn
 
 # People-Picker component
 
-You can use the mgt-people-picker web component to search for and hold a requested number of people via Microsoft Graph. By default, the component will search for all people; you can also define a group property to further filter the results.
+You can use the `mgt-people-picker` web component to search for and hold a requested number of people via Microsoft Graph. By default, the component will search for all people; you can also define a group property to further filter the results.
 
 If the number of people to display exceeds the `show-max` value, not all people returned will be displayed in the search list.
 
