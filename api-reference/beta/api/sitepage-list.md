@@ -29,7 +29,7 @@ One of the following permissions is required to call this API. To learn more, in
 
 ## HTTP request
 
-```http
+```msgraph-interactive
 GET /sites/{site-id}/pages
 
 ```
@@ -47,7 +47,7 @@ GET /sites/{site-id}/pages
 }
 -->
 
-```http
+```msgraph-interactive
 GET /sites/{site-id}/pages
 ```
 

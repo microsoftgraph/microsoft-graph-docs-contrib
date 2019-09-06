@@ -52,7 +52,7 @@ The following example shows a request to retrieve all the one-time and recurring
   "blockType": "request",
   "name": "get_accessReviews"
 }-->
-```http
+```msgraph-interactive
 GET https://graph.microsoft.com/beta/accessReviews?$filter=businessFlowTemplateId+eq+'6E4F3D20-C5C3-407F-9695-8460952BCC68'
 ```
 # [C#](#tab/csharp)

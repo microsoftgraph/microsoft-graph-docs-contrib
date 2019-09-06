@@ -88,7 +88,7 @@ The following is an example of the request.
   "name": "reportroot_getsharepointactivityfilecounts_csv"
 }-->
 
-```http
+```msgraph-interactive
 GET https://graph.microsoft.com/beta/reports/getSharePointActivityFileCounts(period='D7')?$format=text/csv
 ```
 # [C#](#tab/csharp)
@@ -148,7 +148,7 @@ The following is an example of the request.
   "name": "reportroot_getoffice365activeusercounts_json"
 }-->
 
-```http
+```msgraph-interactive
 GET https://graph.microsoft.com/beta/reports/getOffice365ActiveUserCounts(period='D7')?$format=application/json
 ```
 # [C#](#tab/csharp)

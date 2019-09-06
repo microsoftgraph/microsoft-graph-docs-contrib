@@ -58,7 +58,7 @@ The following example shows the request.
   "blockType": "request",
   "name": "get-onlineMeeting"
 }-->
-```http
+```msgraph-interactive
 GET https://graph.microsoft.com/beta/app/onlineMeetings/{id}
 ```
 # [C#](#tab/csharp)
