@@ -14,7 +14,7 @@ doc_type: "apiPageType"
 Using the metadata that exists on an already-labeled piece of information, resolve the metadata to a specific sensitivity label. The [contentState](..resources/contentstate.md) input is resolved to [informationProtectionContentLabel](../resources/informationprotectioncontentlabel.md).
 
 >[!NOTE]
->InformationProtectionContentLabel represents a sensitivity label that has been applied to a piece of information. InformationProtectionLabel are the abstract labels that are part of the organizational labeling policy that can be applied to information.
+>The **informationProtectionContentLabel** resource represents a sensitivity label that has been applied to a piece of information. InformationProtectionLabel are the abstract labels that are part of the organizational labeling policy that can be applied to information.
 
 ## Permissions
 
@@ -48,15 +48,15 @@ In the request body, provide a JSON object with the following parameters.
 | Parameter    | Type        | Description |
 |:-------------|:------------|:------------|
 |contentInfo| [contentInfo](../resources/contentInfo.md) | Provides details on the [content format](../resources/enums.md#contentFormat), [content state](../resources/enums.md#contentState), and existing [metadata](../resources/keyvaluepair.md) as key/value pairs.  |
-|auditInfo|[auditInfo](../resources/auditInfo.md)|  Metadata pased in to the auditInfo parameter will surface in Azure Information Protection Analytics, surfacing details about the actions taken. |
+|auditInfo|[auditInfo](../resources/auditInfo.md)|  Metadata pased in to the *auditInfo* parameter will surface in Azure Information Protection Analytics details about the actions taken. |
 
 ## Response
 
-If successful, this method returns `200, OK` response code and a new [informationProtectionContentLabel](../resources/informationprotectioncontentlabel.md) object in the response body.
+If successful, this method returns a `200 OK` response code and a new [informationProtectionContentLabel](../resources/informationprotectioncontentlabel.md) object in the response body.
 
 ## Examples
 
-The following is an example of how to call this API.
+The following example shows how to call this API.
 
 ### Request
 
@@ -127,8 +127,7 @@ Content-type: application/json
 
 The following is an example of the response.
 
-> [!NOTE]
-> The response object shown here might be shortened for readability. All the properties will be returned from an actual call.
+> **Note:** The response object shown here might be shortened for readability. All the properties will be returned from an actual call.
 
 <!-- {
   "blockType": "response",
