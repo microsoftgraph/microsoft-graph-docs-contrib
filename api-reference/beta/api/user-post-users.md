@@ -42,7 +42,7 @@ POST /users
 
 In the request body, supply a JSON representation of [user](../resources/user.md) object.
 
-The following table shows the properties that are required when you create a user.
+The following table shows the properties that are required when you create a user.  However, if creating a user with any **identities**, these requirements are relaxed. For a [B2C local account identity](../resources/objectidentity.md), only a password profile is required; for a social identity, none of these properties is required.
 
 | Parameter | Type | Description|
 |:---------------|:--------|:----------|
@@ -58,12 +58,18 @@ Because the **user** resource supports [extensions](/graph/extensibility-overvie
 >[!NOTE]
 >Federated users created using this API will be forced to sign in every 12 hours by default. For more information about how to change this, see [Exceptions for token lifetimes](https://docs.microsoft.com/azure/active-directory/develop/active-directory-configurable-token-lifetimes#exceptions).
 
+>[!NOTE]
+>Adding a [B2C local account](../resources/objectidentity.md) to an existing **user** object is not allowed, unless the **user** object already contains a local account identity.
+
 ## Response
 
 If successful, this method returns a `201 Created` response code and a [user](../resources/user.md) object in the response body.
 
 ## Example
-##### Request
+
+### Example 1: Create a user
+
+#### Request
 Here is an example of the request.
 
 # [HTTP](#tab/http)
@@ -130,6 +136,74 @@ Content-type: application/json
     "preferredLanguage": null,
     "surname": null,
     "userPrincipalName": "upn-value@tenant-value.onmicrosoft.com"
+}
+```
+
+### Example 2: Create a user with social and local account identities
+
+Create a new user, with a local account identity with a sign-in name, and with a social identity. This API is typically used for migration scenarios.
+
+#### Request
+
+<!-- {	
+  "blockType": "request",	
+  "name": "create_user_from_users_identities"	
+}-->
+
+```http
+POST https://graph.microsoft.com/beta/users
+Content-type: application/json
+
+{
+  "displayName": "John Smith",
+  "passwordProfile" : {
+    "forceChangePasswordNextSignIn": true,
+    "password": "password-value"
+  }
+  "identities": [
+    {
+      "signInType":"signInName",
+      "issuer":"contosp.onmicrosoft.com",
+      "issuerAssignedId":"johnsmith"
+    },
+    {
+      "signInType":"federated",
+      "issuer":"facebook.com",
+      "issuerAssignedId":"5eecb0cd"
+    }
+  ]
+}
+```
+
+#### Response
+
+Here is an example of the response. Note: The response object shown here may be truncated for brevity.
+
+<!-- {
+  "blockType": "response",
+  "truncated": true,
+  "@odata.type": "microsoft.graph.user",
+  "isCollection": true
+} -->
+```http
+HTTP/1.1 201 Created
+Content-type: application/json
+
+{
+  "displayName": "John Smith",
+  "id": "4c7be08b-361f-41a8-b1ef-1712f7a3dfb2",
+  "identities": [
+    {
+      "signInType":"signInName",
+      "issuer":"contosp.onmicrosoft.com",
+      "issuerAssignedId":"johnsmith"
+    },
+    {
+      "signInType":"federated",
+      "issuer":"facebook.com",
+      "issuerAssignedId":"5eecb0cd"
+    }
+  ]
 }
 ```
 

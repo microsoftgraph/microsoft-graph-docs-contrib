@@ -49,8 +49,9 @@ If successful, this method returns a `200 OK` response code and collection of [u
 
 ## Example
 
-##### Request
+### Example 1: List all users
 
+#### Request
 
 # [HTTP](#tab/http)
 <!-- {
@@ -106,6 +107,45 @@ Content-length: 608
       "surname": "surname-value",
       "userPrincipalName": "userPrincipalName-value",
       "id": "id-value"
+    }
+  ]
+}
+```
+
+### Example 2: Find a user account using a sign-in name
+
+Find a user account in a B2C tenant, using a sign-in name (also known as a local account). This request could be used by a helpdesk to find a customer's user account, in a B2C tenant (in this example the B2C tenant is contoso.onmicrosoft.com).
+
+#### Request
+
+<!-- {
+  "blockType": "request",
+  "name": "get_signinname_users"
+}-->
+```http
+GET https://graph.microsoft.com/beta/users?$select=displayName,id&$filter=identities/any(c:c/issuerAssignedId eq 'j.smith@yahoo.com' and c/issuer eq 'contoso.onmicrosoft.com')
+```
+
+#### Response
+
+Here is an example of the response. Note: The response object shown here may be truncated for brevity. 
+
+<!-- {
+  "blockType": "response",
+  "truncated": true,
+  "@odata.type": "microsoft.graph.user",
+  "isCollection": true
+} -->
+```http
+HTTP/1.1 200 OK
+Content-type: application/json
+Content-length: 108
+
+{
+  "value": [
+    {
+      "displayName": "John Smith",
+      "id": "4c7be08b-361f-41a8-b1ef-1712f7a3dfb2"
     }
   ]
 }

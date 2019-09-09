@@ -26,6 +26,8 @@ One of the following permissions is required to call this API. To learn more, in
 > - When updating the **passwordProfile** property, the following permission is required: Directory.AccessAsUser.All.
 > - Updating another user's **businessPhones**, **mobilePhone**, or **otherMails** property is only allowed on users who are non-administrators or assigned one of the following roles: Directory Readers, Guest Inviter, Message Center Reader, and Reports Reader. For more details, see Helpdesk (Password) Administrator in [Azure AD available roles](https://docs.microsoft.com/azure/active-directory/users-groups-roles/directory-assign-admin-roles#available-roles).  This is the case for apps granted either the User.ReadWrite.All or Directory.ReadWrite.All delegated or application permissions.
 
+>[!NOTE]
+>Updating the identities property **requires** the *User.ManageIdentities.All* permission. Also, adding** a [B2C local account](../resources/objectidentity.md) to an existing **user** object is not allowed, unless the **user** object already contains a local account identity.
 
 ## HTTP request
 <!-- { "blockType": "ignored" } -->
@@ -56,6 +58,7 @@ In the request body, supply the values for relevant fields that should be update
 |employeeId|String|The employee identifier assigned to the user by the organization.|
 |givenName|String|The given name (first name) of the user.|
 |hireDate|DateTimeOffset|The hire date of the user. The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 would look like this: `'2014-01-01T00:00:00Z'`|
+|identities|[objectIdentity](objectIdentity.md) collection| Represents the identities that can be used to sign in to this user account. An identity can be provided by Microsoft, by organizations, or by social identity providers such as FaceBook, Google, Microsoft Account, and tied to a user account. Any update to **identities** will replace the entire collection.|
 |interests|String collection|A list for the user to describe their interests.|
 |jobTitle|String|The user’s job title.|
 |mailNickname|String|The mail alias for the user. This property must be specified when a user is created.|
