@@ -1178,6 +1178,9 @@ For example, a Range can consist of one or more cells. In cases where the indivi
 }
 ```
 
+Another two cases of returning null value in response:
+(1) If error happens when trying to get a certain property of an object and this property could be set as a null, then it might return a null value in the response.
+(2) For range object, if getting range for entire row or entire column, some properties might return null as response. If the range size exceeds upper limitation (the biggest range size we can support is 5M cells), some properties of getting range will return null as the value.
 
 ### Blank input and output
 
