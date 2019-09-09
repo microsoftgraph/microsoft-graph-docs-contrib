@@ -42,7 +42,7 @@ POST /users
 
 In the request body, supply a JSON representation of [user](../resources/user.md) object.
 
-The following table shows the properties that are required when you create a user.  However, if creating a user with any **identities**, these requirements are relaxed. For a [B2C local account identity](../resources/objectidentity.md), only a password profile is required; for a social identity, none of these properties is required.
+The following table shows the properties that are required when you create a user. If you're including an **identities** property for the user you're creating, not all properties are required. For a [B2C local account identity](../resources/objectidentity.md), only  **passwordProfile** is required. For a social identity, no properties are required.
 
 | Parameter | Type | Description|
 |:---------------|:--------|:----------|
