@@ -31,7 +31,7 @@ GET /users
 
 ## Optional query parameters
 
-This method supports the [OData Query Parameters](https://developer.microsoft.com/graph/docs/concepts/query_parameters) to help customize the response.
+This method supports the [OData query parameters](/graph/query-parameters) to help customize the response.
 
 ## Request headers
 | Header        | Value                      |
@@ -78,7 +78,9 @@ GET https://graph.microsoft.com/beta/users
 
 ##### Response
 
-Here is an example of the response. Note: The response object shown here may be truncated for brevity. 
+Here is an example of the response. 
+
+>**Note:** The response object shown here might be shortened for readability. All hte properties will be returned from an actual call.
 
 <!-- {
   "blockType": "response",
@@ -114,7 +116,7 @@ Content-length: 608
 
 ### Example 2: Find a user account using a sign-in name
 
-Find a user account in a B2C tenant, using a sign-in name (also known as a local account). This request could be used by a helpdesk to find a customer's user account, in a B2C tenant (in this example the B2C tenant is contoso.onmicrosoft.com).
+Find a user account in a B2C tenant, using a sign-in name (also known as a local account). This request can be used by a helpdesk to find a customer's user account, in a B2C tenant (in this example the B2C tenant is contoso.onmicrosoft.com).
 
 #### Request
 
@@ -128,7 +130,9 @@ GET https://graph.microsoft.com/beta/users?$select=displayName,id&$filter=identi
 
 #### Response
 
-Here is an example of the response. Note: The response object shown here may be truncated for brevity. 
+Here is an example of the response. 
+
+> **Note:** The response object shown here might be truncated for brevity. All the properties will be returned from an actual call.
 
 <!-- {
   "blockType": "response",
