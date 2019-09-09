@@ -58,7 +58,7 @@ In the request body, supply the values for relevant fields that should be update
 |employeeId|String|The employee identifier assigned to the user by the organization.|
 |givenName|String|The given name (first name) of the user.|
 |hireDate|DateTimeOffset|The hire date of the user. The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 would look like this: `'2014-01-01T00:00:00Z'`|
-|identities|[objectidentity](../resources/objectidentity.md) collection| Represents the identities that can be used to sign in to this user account. An identity can be provided by Microsoft, by organizations, or by social identity providers such as FaceBook, Google, Microsoft Account, and tied to a user account. Any update to **identities** will replace the entire collection.|
+|identities|[objectIdentity](../resources/objectidentity.md) collection| Represents the identities that can be used to sign in to this user account. An identity can be provided by Microsoft, by organizations, or by social identity providers such as FaceBook, Google, Microsoft Account, and tied to a user account. Any update to **identities** will replace the entire collection.|
 |interests|String collection|A list for the user to describe their interests.|
 |jobTitle|String|The user’s job title.|
 |mailNickname|String|The mail alias for the user. This property must be specified when a user is created.|
