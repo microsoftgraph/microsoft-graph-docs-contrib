@@ -93,7 +93,7 @@ Save the following information:
 - Redirect URL
 - List of required permissions
 
-\* Windows Defender Advanced Threat Protection (WDATP) requires additional [user roles](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/user-roles) than what is required by the Microsoft Graph Security API, thus only the users in both WDATP and Microsoft Graph Security API roles can have access to the WDATP data.  Application-only authentication is not limited by this so it is suggested to use an app-only authentication token.
+\* Windows Defender Advanced Threat Protection (WDATP) requires additional [user roles](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/user-roles) than what is required by the Microsoft Graph Security API; therefore, only the users in both WDATP and Microsoft Graph Security API roles can have access to the WDATP data.  Application-only authentication is not limited by this; therefore, we recommend that you use an app-only authentication token.
 
 For more information, see [Register your app with the Microsoft identity platform](auth-register-app-v2.md).
 
