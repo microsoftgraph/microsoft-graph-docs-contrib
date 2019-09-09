@@ -159,7 +159,7 @@ Content-type: application/json
   "passwordProfile" : {
     "forceChangePasswordNextSignIn": true,
     "password": "password-value"
-  }
+  },
   "identities": [
     {
       "signInType":"signInName",
@@ -192,6 +192,10 @@ Content-type: application/json
 {
   "displayName": "John Smith",
   "id": "4c7be08b-361f-41a8-b1ef-1712f7a3dfb2",
+  "passwordProfile" : {
+    "forceChangePasswordNextSignIn": true,
+    "password": null
+  },
   "identities": [
     {
       "signInType":"signInName",
