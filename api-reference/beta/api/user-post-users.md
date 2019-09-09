@@ -141,7 +141,7 @@ Content-type: application/json
 
 ### Example 2: Create a user with social and local account identities
 
-Create a new user, with a local account identity with a sign-in name, and with a social identity. This API is typically used for migration scenarios.
+Create a new user, with a local account identity with a sign-in name, and with a social identity. This example is typically used for migration scenarios.
 
 #### Request
 
@@ -177,7 +177,9 @@ Content-type: application/json
 
 #### Response
 
-Here is an example of the response. Note: The response object shown here may be truncated for brevity.
+Here is an example of the response. 
+
+> **Note:** The response object shown here might be shortened for readability. All the properties will be returned from an actual call.
 
 <!-- {
   "blockType": "response",
