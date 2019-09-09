@@ -1,6 +1,6 @@
 ---
 title: "objectIdentity resource type"
-description: "Represents an identity used to sign in to a user account,"
+description: "Represents an identity used to sign in to a user account."
 localization_priority: Normal
 doc_type: resourcePageType
 ms.prod: "microsoft-identity-platform"
