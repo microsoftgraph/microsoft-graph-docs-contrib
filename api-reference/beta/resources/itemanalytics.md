@@ -1,12 +1,15 @@
 ---
 author: daspek
-ms.author: dspektor
+description: "The itemAnalytics resource provides analytics about activities that took place on an item. This resource is currently only available on SharePoint and OneDrive for Business."
 ms.date: 09/14/2017
 title: ItemAnalytics
+localization_priority: Normal
+doc_type: resourcePageType
+ms.prod: ""
 ---
 # itemAnalytics resource type
 
-> **Important:** APIs under the /beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported.
+[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 The **itemAnalytics** resource provides analytics about activities that took place on an item. This resource is currently only available on SharePoint and OneDrive for Business.
 
@@ -34,7 +37,7 @@ You can also use the [getActivitiesByInterval][] API to retrieve analytics over 
 
 | Property      | Type                 | Description
 |:--------------|:---------------------|:--------------------------------------
-| allTime       | [itemActivityStat][] | Analytics over the the item's lifespan.
+| allTime       | [itemActivityStat][] | Analytics over the item's lifespan.
 | lastSevenDays | [itemActivityStat][] | Analytics for the last seven days.
 
 [itemActivityStat]: itemactivitystat.md
@@ -42,10 +45,13 @@ You can also use the [getActivitiesByInterval][] API to retrieve analytics over 
 
 [getActivitiesByInterval]: ../api/itemactivity-getbyinterval.md
 
-<!-- {
+<!--
+{
   "type": "#page.annotation",
   "description": "The ItemAnalytics object provides analytics about activities that took place on an item.",
   "keywords": "activities,activity,action,analytics",
   "section": "documentation",
-  "tocPath": "Resources/ItemAnalytics"
-} -->
+  "tocPath": "Resources/ItemAnalytics",
+  "suppressions": []
+}
+-->

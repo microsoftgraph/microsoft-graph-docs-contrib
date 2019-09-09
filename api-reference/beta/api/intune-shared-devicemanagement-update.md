@@ -1,13 +1,17 @@
 ---
 title: "Update deviceManagement"
 description: "Update the properties of a deviceManagement object."
+author: "rolyon"
+localization_priority: Normal
+ms.prod: "intune"
+doc_type: apiPageType
 ---
 
 # Update deviceManagement
 
-> **Important:** APIs under the /beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported.
+> **Important:** APIs under the /beta version in Microsoft Graph are subject to change. Use of these APIs in production applications is not supported.
 
-> **Note:** Using the Microsoft Graph APIs to configure Intune controls and policies still requires that the Intune service is [correctly licensed](https://go.microsoft.com/fwlink/?linkid=839381) by the customer.
+> **Note:** The Microsoft Graph API for Intune requires an [active Intune license](https://go.microsoft.com/fwlink/?linkid=839381) for the tenant.
 
 Update the properties of a [deviceManagement](../resources/intune-shared-devicemanagement.md) object.
 
@@ -24,11 +28,13 @@ Note that the permission vary according to workflow.
 | &nbsp; &nbsp; **Auditing** | DeviceManagementApps.ReadWrite.All |
 | &nbsp; &nbsp; **Company terms** | DeviceManagementServiceConfig.ReadWrite.All |
 | &nbsp; &nbsp; **Device configuration** | DeviceManagementConfiguration.ReadWrite.All |
+| &nbsp; &nbsp; **Device intent** | DeviceManagementConfiguration.ReadWrite.All|
 | &nbsp; &nbsp; **Device management** | DeviceManagementManagedDevices.ReadWrite.All |
 | &nbsp; &nbsp; **Electronic SIM** | DeviceManagementConfiguration.ReadWrite.All |
 | &nbsp; &nbsp; **Enrollment** | DeviceManagementServiceConfig.ReadWrite.All |
 | &nbsp; &nbsp; **Fencing** | DeviceManagementConfiguration.ReadWrite.All |
 | &nbsp; &nbsp; **Notification** | DeviceManagementServiceConfig.ReadWrite.All |
+| &nbsp; &nbsp; **Odj** | DeviceManagementServiceConfig.ReadWrite.All |
 | &nbsp; &nbsp; **Onboarding** | DeviceManagementServiceConfig.ReadWrite.All |
 | &nbsp; &nbsp; **Role-based access control (RBAC)** | DeviceManagementRBAC.ReadWrite.All |
 | &nbsp; &nbsp; **Remote access** | DeviceManagementConfiguration.Read.All |
@@ -156,6 +162,9 @@ Content-Length: 855
   "accountMoveCompletionDateTime": "2017-01-01T00:01:17.9006709-08:00"
 }
 ```
+
+
+
 
 
 

@@ -1,6 +1,10 @@
 ---
 title: "Chart resource type"
 description: "Represents a chart object in a workbook."
+author: "lumine2008"
+localization_priority: Normal
+ms.prod: "excel"
+doc_type: resourcePageType
 ---
 
 # Chart resource type

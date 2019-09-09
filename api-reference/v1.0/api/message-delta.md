@@ -1,6 +1,10 @@
 ---
 title: "message: delta"
 description: "Get a set of messages that have been added, deleted, or updated in a specified folder."
+localization_priority: Priority
+author: "angelgolfer-ms"
+ms.prod: "outlook"
+doc_type: apiPageType
 ---
 
 # message: delta
@@ -75,14 +79,34 @@ To track changes in the messages in a folder, you would make one or more **delta
 of incremental changes since the last delta query. For an example that shows a round of delta query calls, see 
 [Get incremental changes to messages in a folder](/graph/delta-query-messages).
  
+
+# [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "message_delta"
 }-->
-```http
+```msgraph-interactive
 GET https://graph.microsoft.com/v1.0/me/mailFolders/{id}/messages/delta
 Prefer: odata.maxpagesize=2
 ```
+# [C#](#tab/csharp)
+[!INCLUDE [sample-code](../includes/snippets/csharp/message-delta-csharp-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [JavaScript](#tab/javascript)
+[!INCLUDE [sample-code](../includes/snippets/javascript/message-delta-javascript-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Objective-C](#tab/objc)
+[!INCLUDE [sample-code](../includes/snippets/objc/message-delta-objc-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Java](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/message-delta-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+---
+
 
 ##### Response
 If the request is successful, the response would include a state token, which is either a _skipToken_  
@@ -105,7 +129,7 @@ Content-type: application/json
 Content-length: 337
 
 {
-  "@odata.nextLink":"https://graph.microsoft.com/v1.0/me/mailfolders('{id}')/messages/delta?$skiptoken={_skipToken_}",
+  "@odata.nextLink":"https://graph.microsoft.com/v1.0/me/mailfolders/{id}/messages/delta?$skiptoken={_skipToken_}",
   "value": [
     {
       "receivedDateTime": "datetime-value",
@@ -134,5 +158,7 @@ Content-length: 337
   "description": "message: delta",
   "keywords": "",
   "section": "documentation",
-  "tocPath": ""
+  "tocPath": "",
+  "suppressions": [
+  ]
 }-->

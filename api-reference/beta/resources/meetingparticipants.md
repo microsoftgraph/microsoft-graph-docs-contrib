@@ -1,11 +1,17 @@
 ---
 title: "meetingParticipants resource type"
-description: "The following is a JSON representation of the resource."
+description: "Participants in a meeting."
+author: "VinodRavichandran"
+localization_priority: Normal
+ms.prod: "microsoft-teams"
+doc_type: resourcePageType
 ---
 
 # meetingParticipants resource type
 
-> **Important:** APIs under the /beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported.
+[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
+
+Participants in a meeting.
 
 ## Properties
 
@@ -13,6 +19,8 @@ description: "The following is a JSON representation of the resource."
 |:---------------|:--------|:----------|
 | attendees | [meetingParticipantInfo](meetingparticipantinfo.md) collection |  |
 | organizer | [meetingParticipantInfo](meetingparticipantinfo.md) |  |
+| producers | [meetingParticipantInfo](meetingparticipantinfo.md) collection | For broadcast meeting only. |
+| contributors | [meetingParticipantInfo](meetingparticipantinfo.md) collection | For broadcast meeting only. |
 
 ## JSON representation
 
@@ -28,16 +36,21 @@ The following is a JSON representation of the resource.
 ```json
 {
   "attendees": [{"@odata.type": "#microsoft.graph.meetingParticipantInfo"}],
-  "organizer": {"@odata.type": "#microsoft.graph.meetingParticipantInfo"}
+  "organizer": {"@odata.type": "#microsoft.graph.meetingParticipantInfo"},
+  "producers": [{"@odata.type": "#microsoft.graph.meetingParticipantInfo"}],
+  "contributors": [{"@odata.type": "#microsoft.graph.meetingParticipantInfo"}],
 }
 ```
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2015-10-25 14:57:30 UTC -->
-<!-- {
+<!--
+{
   "type": "#page.annotation",
   "description": "meetingParticipants resource",
   "keywords": "",
   "section": "documentation",
-  "tocPath": ""
-}-->
+  "tocPath": "",
+  "suppressions": []
+}
+-->

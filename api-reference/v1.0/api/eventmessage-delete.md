@@ -1,6 +1,10 @@
 ---
 title: "Delete eventMessage"
 description: "Delete eventMessage."
+author: "angelgolfer-ms"
+localization_priority: Normal
+ms.prod: "outlook"
+doc_type: apiPageType
 ---
 
 # Delete eventMessage
@@ -39,6 +43,8 @@ If successful, this method returns `204 No Content` response code. It does not r
 ## Example
 ##### Request
 Here is an example of the request.
+
+# [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "delete_eventmessage"
@@ -46,6 +52,24 @@ Here is an example of the request.
 ```http
 DELETE https://graph.microsoft.com/v1.0/me/messages/{id}
 ```
+# [C#](#tab/csharp)
+[!INCLUDE [sample-code](../includes/snippets/csharp/delete-eventmessage-csharp-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [JavaScript](#tab/javascript)
+[!INCLUDE [sample-code](../includes/snippets/javascript/delete-eventmessage-javascript-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Objective-C](#tab/objc)
+[!INCLUDE [sample-code](../includes/snippets/objc/delete-eventmessage-objc-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Java](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/delete-eventmessage-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+---
+
 ##### Response
 Here is an example of the response. 
 <!-- {
@@ -63,5 +87,7 @@ HTTP/1.1 204 No Content
   "description": "Delete eventMessage",
   "keywords": "",
   "section": "documentation",
-  "tocPath": ""
+  "tocPath": "",
+  "suppressions": [
+  ]
 }-->

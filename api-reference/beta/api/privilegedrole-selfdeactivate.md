@@ -1,11 +1,15 @@
 ---
 title: "privilegedRole: selfDeactivate"
 description: "Deactivate the role that is assigned to the requestor."
+localization_priority: Normal
+doc_type: apiPageType
+ms.prod: ""
+author: ""
 ---
 
 # privilegedRole: selfDeactivate
 
-> **Important:** APIs under the /beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported.
+[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 Deactivate the role that is assigned to the requestor.
 ## Permissions
@@ -25,7 +29,7 @@ The requestor can only call ```selfDeactivate``` for the role that is assigned t
 POST /privilegedRoles/{id}/selfDeactivate
 ```
 
-Note that ``<id>`` is the target role id.
+Note that ``{id}`` is the target role id.
 ## Request headers
 | Name       | Description|
 |:---------------|:----------|
@@ -43,6 +47,8 @@ Note that the tenant needs to be registered to PIM. Otherwise, the HTTP 403 Forb
 Here is an example of how to call this API.
 ##### Request
 Here is an example of the request.
+
+# [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "privilegedrole_selfdeactivate"
@@ -50,6 +56,20 @@ Here is an example of the request.
 ```http
 POST https://graph.microsoft.com/beta/privilegedRoles/{id}/selfDeactivate
 ```
+# [C#](#tab/csharp)
+[!INCLUDE [sample-code](../includes/snippets/csharp/privilegedrole-selfdeactivate-csharp-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [JavaScript](#tab/javascript)
+[!INCLUDE [sample-code](../includes/snippets/javascript/privilegedrole-selfdeactivate-javascript-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Objective-C](#tab/objc)
+[!INCLUDE [sample-code](../includes/snippets/objc/privilegedrole-selfdeactivate-objc-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+---
+
 
 ##### Response
 Here is an example of the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.
@@ -75,10 +95,14 @@ Content-length: 184
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2015-10-25 14:57:30 UTC -->
-<!-- {
+<!--
+{
   "type": "#page.annotation",
   "description": "privilegedRole: selfDeactivate",
   "keywords": "",
   "section": "documentation",
-  "tocPath": ""
-}-->
+  "tocPath": "",
+  "suppressions": [
+  ]
+}
+-->

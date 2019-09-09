@@ -1,6 +1,10 @@
 ---
 title: "Close Session"
 description: "Use this API to close an existing workbook session. "
+author: "lumine2008"
+localization_priority: Normal
+ms.prod: "excel"
+doc_type: apiPageType
 ---
 
 # Close Session
@@ -38,6 +42,8 @@ If successful, this method returns `204 No Content` response code.
 ## Example
 ##### Request
 Here is an example of the request.
+
+# [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "close_excel_session"
@@ -52,6 +58,20 @@ Content-length: 0
 
 }
 ```
+# [C#](#tab/csharp)
+[!INCLUDE [sample-code](../includes/snippets/csharp/close-excel-session-csharp-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [JavaScript](#tab/javascript)
+[!INCLUDE [sample-code](../includes/snippets/javascript/close-excel-session-javascript-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Objective-C](#tab/objc)
+[!INCLUDE [sample-code](../includes/snippets/objc/close-excel-session-objc-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+---
+
 
 Note that workbook-session-id header is required. 
 
@@ -66,3 +86,14 @@ Here is an example of the response.
 ```http
 HTTP/1.1 204 No Content
 ```
+<!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79 
+2015-10-25 14:57:30 UTC -->
+<!-- {
+  "type": "#page.annotation",
+  "description": "Example",
+  "keywords": "",
+  "section": "documentation",
+  "tocPath": "",
+  "suppressions": [
+  ]
+}-->

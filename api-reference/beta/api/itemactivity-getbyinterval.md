@@ -1,12 +1,15 @@
 ---
 author: daspek
-ms.author: dspektor
+description: "Get itemActivityStats for the activities that took place under this resource within the specified time interval."
 ms.date: 10/06/2017
 title: Get item activity stats by interval
+localization_priority: Normal
+doc_type: apiPageType
+ms.prod: ""
 ---
 # Get item activity stats by interval
 
-> **Important:** APIs under the /beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported.
+[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 Get [itemActivityStats][] for the activities that took place under this resource within the specified time interval.
 
@@ -38,7 +41,7 @@ GET /sites/{site-id}/lists/{list-id}/items/{item-id}/getActivitiesByInterval(sta
 
 ## Function parameters
 
-| Name           | Value              | Description
+| Parameter      | Type               | Description
 |:---------------|:-------------------|:---------------------------------------
 | startDateTime  | string (timestamp) | The start time over which to aggregate activities.
 | endDateTime    | string (timestamp) | The end time over which to aggregate activities.
@@ -92,10 +95,13 @@ Content-type: application/json
 }
 ```
 
-<!-- {
+<!--
+{
   "type": "#page.annotation",
   "description": "",
   "keywords": "",
   "section": "documentation",
-  "tocPath": "BaseItem/Get activities by interval"
-} -->
+  "tocPath": "BaseItem/Get activities by interval",
+  "suppressions": []
+}
+-->

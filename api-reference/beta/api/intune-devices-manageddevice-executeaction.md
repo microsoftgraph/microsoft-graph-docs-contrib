@@ -1,15 +1,20 @@
 ---
 title: "executeAction action"
 description: "Not yet documented"
+author: "rolyon"
+localization_priority: Normal
+ms.prod: "Intune"
+doc_type: apiPageType
 ---
 
 # executeAction action
 
-> **Important:** APIs under the /beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported.
+> **Important:** Microsoft Graph APIs under the /beta version are subject to change; production use is not supported.
 
-> **Note:** Using the Microsoft Graph APIs to configure Intune controls and policies still requires that the Intune service is [correctly licensed](https://go.microsoft.com/fwlink/?linkid=839381) by the customer.
+> **Note:** The Microsoft Graph API for Intune requires an [active Intune license](https://go.microsoft.com/fwlink/?linkid=839381) for the tenant.
 
 Not yet documented
+
 ## Prerequisites
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
 
@@ -17,7 +22,7 @@ One of the following permissions is required to call this API. To learn more, in
 |:---|:---|
 |Delegated (work or school account)|DeviceManagementManagedDevices.PriviligedOperation.All|
 |Delegated (personal Microsoft account)|Not supported.|
-|Application|Not supported.|
+|Application|DeviceManagementManagedDevices.PriviligedOperation.All|
 
 ## HTTP Request
 <!-- {
@@ -25,8 +30,8 @@ One of the following permissions is required to call this API. To learn more, in
 }
 -->
 ``` http
-POST /users/{usersId}/managedDevices/executeAction
 POST /deviceManagement/managedDevices/executeAction
+POST /deviceManagement/deviceManagementScripts/{deviceManagementScriptId}/deviceRunStates/{deviceManagementScriptDeviceStateId}/managedDevice/users/{userId}/managedDevices/executeAction
 POST /deviceManagement/deviceManagementScripts/{deviceManagementScriptId}/deviceRunStates/{deviceManagementScriptDeviceStateId}/managedDevice/detectedApps/{detectedAppId}/managedDevices/executeAction
 ```
 
@@ -44,7 +49,11 @@ The following table shows the parameters that can be used with this action.
 |Property|Type|Description|
 |:---|:---|:---|
 |actionName|[managedDeviceRemoteAction](../resources/intune-devices-manageddeviceremoteaction.md)|Not yet documented|
+|keepEnrollmentData|Boolean|Not yet documented|
+|keepUserData|Boolean|Not yet documented|
 |deviceIds|String collection|Not yet documented|
+|notificationTitle|String|Not yet documented|
+|notificationBody|String|Not yet documented|
 
 
 
@@ -52,19 +61,24 @@ The following table shows the parameters that can be used with this action.
 If successful, this action returns a `200 OK` response code and a [bulkManagedDeviceActionResult](../resources/intune-devices-bulkmanageddeviceactionresult.md) in the response body.
 
 ## Example
+
 ### Request
 Here is an example of the request.
 ``` http
-POST https://graph.microsoft.com/beta/users/{usersId}/managedDevices/executeAction
+POST https://graph.microsoft.com/beta/deviceManagement/managedDevices/executeAction
 
 Content-type: application/json
-Content-length: 78
+Content-length: 236
 
 {
   "actionName": "delete",
+  "keepEnrollmentData": true,
+  "keepUserData": true,
   "deviceIds": [
     "Device Ids value"
-  ]
+  ],
+  "notificationTitle": "Notification Title value",
+  "notificationBody": "Notification Body value"
 }
 ```
 
@@ -93,6 +107,7 @@ Content-Length: 385
   }
 }
 ```
+
 
 
 

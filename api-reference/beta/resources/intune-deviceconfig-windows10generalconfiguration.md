@@ -1,15 +1,20 @@
 ---
 title: "windows10GeneralConfiguration resource type"
 description: "This topic provides descriptions of the declared methods, properties and relationships exposed by the windows10GeneralConfiguration resource."
+author: "rolyon"
+localization_priority: Normal
+ms.prod: "Intune"
+doc_type: resourcePageType
 ---
 
 # windows10GeneralConfiguration resource type
 
-> **Important:** APIs under the / beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported.
+> **Important:** Microsoft Graph APIs under the /beta version are subject to change; production use is not supported.
 
-> **Note:** Using the Microsoft Graph APIs to configure Intune controls and policies still requires that the Intune service is [correctly licensed](https://go.microsoft.com/fwlink/?linkid=839381) by the customer.
+> **Note:** The Microsoft Graph API for Intune requires an [active Intune license](https://go.microsoft.com/fwlink/?linkid=839381) for the tenant.
 
 This topic provides descriptions of the declared methods, properties and relationships exposed by the windows10GeneralConfiguration resource.
+
 
 Inherits from [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md)
 
@@ -29,17 +34,30 @@ Inherits from [deviceConfiguration](../resources/intune-deviceconfig-deviceconfi
 |lastModifiedDateTime|DateTimeOffset|DateTime the object was last modified. Inherited from [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md)|
 |roleScopeTagIds|String collection|List of Scope Tags for this Entity instance. Inherited from [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md)|
 |supportsScopeTags|Boolean|Indicates whether or not the underlying Device Configuration supports the assignment of scope tags. Assigning to the ScopeTags property is not allowed when this value is false and entities will not be visible to scoped users. This occurs for Legacy policies created in Silverlight and can be resolved by deleting and recreating the policy in the Azure Portal. This property is read-only. Inherited from [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md)|
+|deviceManagementApplicabilityRuleOsEdition|[deviceManagementApplicabilityRuleOsEdition](../resources/intune-deviceconfig-devicemanagementapplicabilityruleosedition.md)|The OS edition applicability for this Policy. Inherited from [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md)|
+|deviceManagementApplicabilityRuleOsVersion|[deviceManagementApplicabilityRuleOsVersion](../resources/intune-deviceconfig-devicemanagementapplicabilityruleosversion.md)|The OS version applicability rule for this Policy. Inherited from [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md)|
+|deviceManagementApplicabilityRuleDeviceMode|[deviceManagementApplicabilityRuleDeviceMode](../resources/intune-deviceconfig-devicemanagementapplicabilityruledevicemode.md)|The device mode applicability rule for this Policy. Inherited from [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md)|
 |createdDateTime|DateTimeOffset|DateTime the object was created. Inherited from [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md)|
 |description|String|Admin provided description of the Device Configuration. Inherited from [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md)|
 |displayName|String|Admin provided name of the device configuration. Inherited from [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md)|
 |version|Int32|Version of the device configuration. Inherited from [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md)|
+|taskManagerBlockEndTask|Boolean|Specify whether non-administrators can use Task Manager to end tasks.|
+|energySaverOnBatteryThresholdPercentage|Int32|This setting allows you to specify battery charge level at which Energy Saver is turned on. While on battery, Energy Saver is automatically turned on at (and below) the specified battery charge level. Valid input range (0-100). Valid values 0 to 100|
+|energySaverPluggedInThresholdPercentage|Int32|This setting allows you to specify battery charge level at which Energy Saver is turned on. While plugged in, Energy Saver is automatically turned on at (and below) the specified battery charge level. Valid input range (0-100). Valid values 0 to 100|
+|powerLidCloseActionOnBattery|[powerActionType](../resources/intune-deviceconfig-poweractiontype.md)|This setting specifies the action that Windows takes when a user closes the lid on a mobile PC while on battery. Possible values are: `notConfigured`, `noAction`, `sleep`, `hibernate`, `shutdown`.|
+|powerLidCloseActionPluggedIn|[powerActionType](../resources/intune-deviceconfig-poweractiontype.md)|This setting specifies the action that Windows takes when a user closes the lid on a mobile PC while plugged in. Possible values are: `notConfigured`, `noAction`, `sleep`, `hibernate`, `shutdown`.|
+|powerButtonActionOnBattery|[powerActionType](../resources/intune-deviceconfig-poweractiontype.md)|This setting specifies the action that Windows takes when a user presses the Power button while on battery. Possible values are: `notConfigured`, `noAction`, `sleep`, `hibernate`, `shutdown`.|
+|powerButtonActionPluggedIn|[powerActionType](../resources/intune-deviceconfig-poweractiontype.md)|This setting specifies the action that Windows takes when a user presses the Power button while plugged in. Possible values are: `notConfigured`, `noAction`, `sleep`, `hibernate`, `shutdown`.|
+|powerSleepButtonActionOnBattery|[powerActionType](../resources/intune-deviceconfig-poweractiontype.md)|This setting specifies the action that Windows takes when a user presses the Sleep button while on battery. Possible values are: `notConfigured`, `noAction`, `sleep`, `hibernate`, `shutdown`.|
+|powerSleepButtonActionPluggedIn|[powerActionType](../resources/intune-deviceconfig-poweractiontype.md)|This setting specifies the action that Windows takes when a user presses the Sleep button while plugged in. Possible values are: `notConfigured`, `noAction`, `sleep`, `hibernate`, `shutdown`.|
+|powerHybridSleepOnBattery|[enablement](../resources/intune-shared-enablement.md)|This setting allows you to turn off hybrid sleep while on battery. If you set this setting to disable, a hiberfile is not generated when the system transitions to sleep (Stand By). If you set this setting to enable or do not configure this policy setting, users control this setting. Possible values are: `notConfigured`, `enabled`, `disabled`.|
+|powerHybridSleepPluggedIn|[enablement](../resources/intune-shared-enablement.md)|This setting allows you to turn off hybrid sleep while plugged in. If you set this setting to disable, a hiberfile is not generated when the system transitions to sleep (Stand By). If you set this setting to enable or do not configure this policy setting, users control this setting. Possible values are: `notConfigured`, `enabled`, `disabled`.|
 |windows10AppsForceUpdateSchedule|[windows10AppsForceUpdateSchedule](../resources/intune-deviceconfig-windows10appsforceupdateschedule.md)|Windows 10 force update schedule for Apps.|
 |enableAutomaticRedeployment|Boolean|Allow users with administrative rights to delete all user data and settings using CTRL + Win + R at the device lock screen so that the device can be automatically re-configured and re-enrolled into management.|
-|assignedAccessSingleModeUserName|String|This policy setting allows to define the user account that will be locked to Single App Kiosk Mode.|
-|assignedAccessSingleModeAppUserModelId|String|This policy setting allows to define the Application User Model ID (AUMID) that will be locked to Single App Kiosk Mode.|
 |microsoftAccountSignInAssistantSettings|[signInAssistantOptions](../resources/intune-deviceconfig-signinassistantoptions.md)|Controls the Microsoft Account Sign-In Assistant (wlidsvc) NT service. Possible values are: `notConfigured`, `disabled`.|
 |authenticationAllowSecondaryDevice|Boolean|Allows secondary authentication devices to work with Windows.|
-|authenticationAllowFIDODevice|Boolean|Indicates whether or not to allow authentication using FIDO device (https://fidoalliance.org/)|
+|authenticationWebSignIn|[enablement](../resources/intune-shared-enablement.md)|Indicates whether or not Web Credential Provider will be enabled. Possible values are: `notConfigured`, `enabled`, `disabled`.|
+|authenticationPreferredAzureADTenantDomainName|String|Specifies the preferred domain among available domains in the Azure AD tenant.|
 |cryptographyAllowFipsAlgorithmPolicy|Boolean|Specify whether to allow or disallow the Federal Information Processing Standard (FIPS) policy.|
 |displayAppListWithGdiDPIScalingTurnedOn|String collection|List of legacy applications that have GDI DPI Scaling turned on.|
 |displayAppListWithGdiDPIScalingTurnedOff|String collection|List of legacy applications that have GDI DPI Scaling turned off.|
@@ -49,9 +67,10 @@ Inherits from [deviceConfiguration](../resources/intune-deviceconfig-deviceconfi
 |enterpriseCloudPrintResourceIdentifier|String|OAuth resource URI for print service as configured in the Azure portal.|
 |enterpriseCloudPrintDiscoveryMaxLimit|Int32|Maximum number of printers that should be queried from a discovery endpoint. This is a mobile only setting. Valid values 1 to 65535|
 |enterpriseCloudPrintMopriaDiscoveryResourceIdentifier|String|OAuth resource URI for printer discovery service as configured in Azure portal.|
+|experienceDoNotSyncBrowserSettings|[browserSyncSetting](../resources/intune-deviceconfig-browsersyncsetting.md)|Allow or prevent the syncing of Microsoft Edge Browser settings. Option for IT admins to prevent syncing across devices, but allow user override. Possible values are: `notConfigured`, `blockedWithUserOverride`, `blocked`.|
 |messagingBlockSync|Boolean|Indicates whether or not to block text message back up and restore and Messaging Everywhere.|
-|messagingBlockMMS|Boolean|Indicates whether or not to block the the MMS send/receive functionality on the device.|
-|messagingBlockRichCommunicationServices|Boolean|Indicates whether or not to block the the RCS send/receive functionality on the device.|
+|messagingBlockMMS|Boolean|Indicates whether or not to block the MMS send/receive functionality on the device.|
+|messagingBlockRichCommunicationServices|Boolean|Indicates whether or not to block the RCS send/receive functionality on the device.|
 |printerNames|String collection|Automatically provision printers based on their names (network host names).|
 |printerDefaultName|String|Name (network host name) of an installed printer.|
 |printerBlockAddition|Boolean|Prevent user installation of additional printers from printers settings.|
@@ -69,14 +88,17 @@ Inherits from [deviceConfiguration](../resources/intune-deviceconfig-deviceconfi
 |diagnosticsDataSubmissionMode|[diagnosticDataSubmissionMode](../resources/intune-deviceconfig-diagnosticdatasubmissionmode.md)|Gets or sets a value allowing the device to send diagnostic and usage telemetry data, such as Watson. Possible values are: `userDefined`, `none`, `basic`, `enhanced`, `full`.|
 |oneDriveDisableFileSync|Boolean|Gets or sets a value allowing IT admins to prevent apps and features from working with files on OneDrive.|
 |systemTelemetryProxyServer|String|Gets or sets the fully qualified domain name (FQDN) or IP address of a proxy server to forward Connected User Experiences and Telemetry requests.|
+|edgeTelemetryForMicrosoft365Analytics|[edgeTelemetryMode](../resources/intune-deviceconfig-edgetelemetrymode.md)|Specifies what type of telemetry data (none, intranet, internet, both) is sent to Microsoft 365 Analytics. Possible values are: `notConfigured`, `intranet`, `internet`, `intranetAndInternet`.|
 |inkWorkspaceAccess|[inkAccessSetting](../resources/intune-deviceconfig-inkaccesssetting.md)|Controls the user access to the ink workspace, from the desktop and from above the lock screen. Possible values are: `notConfigured`, `enabled`, `disabled`.|
 |inkWorkspaceAccessState|[stateManagementSetting](../resources/intune-deviceconfig-statemanagementsetting.md)|Controls the user access to the ink workspace, from the desktop and from above the lock screen. Possible values are: `notConfigured`, `blocked`, `allowed`.|
 |inkWorkspaceBlockSuggestedApps|Boolean|Specify whether to show recommended app suggestions in the ink workspace.|
-|smartScreenEnableAppInstallControl|Boolean|Allows IT Admins to control whether users are allowed to install apps from places other than the Store.|
+|smartScreenEnableAppInstallControl|Boolean|This property will be deprecated in July 2019 and will be replaced by property SmartScreenAppInstallControl. Allows IT Admins to control whether users are allowed to install apps from places other than the Store.|
+|smartScreenAppInstallControl|[appInstallControlType](../resources/intune-deviceconfig-appinstallcontroltype.md)|Added in Windows 10, version 1703. Allows IT Admins to control whether users are allowed to install apps from places other than the Store. Possible values are: `notConfigured`, `anywhere`, `storeOnly`, `recommendations`, `preferStore`.|
 |personalizationDesktopImageUrl|String|A http or https Url to a jpg, jpeg or png image that needs to be downloaded and used as the Desktop Image or a file Url to a local image on the file system that needs to used as the Desktop Image.|
 |personalizationLockScreenImageUrl|String|A http or https Url to a jpg, jpeg or png image that neeeds to be downloaded and used as the Lock Screen Image or a file Url to a local image on the file system that needs to be used as the Lock Screen Image.|
 |bluetoothAllowedServices|String collection|Specify a list of allowed Bluetooth services and profiles in hex formatted strings.|
 |bluetoothBlockAdvertising|Boolean|Whether or not to Block the user from using bluetooth advertising.|
+|bluetoothBlockPromptedProximalConnections|Boolean|Whether or not to block the users from using Swift Pair and other proximity based scenarios.|
 |bluetoothBlockDiscoverableMode|Boolean|Whether or not to Block the user from using bluetooth discoverable mode.|
 |bluetoothBlockPrePairing|Boolean|Whether or not to block specific bundled Bluetooth peripherals to automatically pair with the host device.|
 |edgeBlockAutofill|Boolean|Indicates whether or not to block auto fill.|
@@ -97,6 +119,23 @@ Inherits from [deviceConfiguration](../resources/intune-deviceconfig-deviceconfi
 |edgeSyncFavoritesWithInternetExplorer|Boolean|Enable favorites sync between Internet Explorer and Microsoft Edge. Additions, deletions, modifications and order changes to favorites are shared between browsers.|
 |edgeFavoritesListLocation|String|The location of the favorites list to provision. Could be a local file, local network or http location.|
 |edgeBlockEditFavorites|Boolean|Indicates whether or not to Block the user from making changes to Favorites.|
+|edgeNewTabPageURL|String|Specify the page opened when new tabs are created.|
+|edgeHomeButtonConfiguration|[edgeHomeButtonConfiguration](../resources/intune-deviceconfig-edgehomebuttonconfiguration.md)|Causes the Home button to either hide, load the default Start page, load a New tab page, or a custom URL|
+|edgeHomeButtonConfigurationEnabled|Boolean|Enable the Home button configuration.|
+|edgeOpensWith|[edgeOpenOptions](../resources/intune-deviceconfig-edgeopenoptions.md)|Specify what kind of pages are open at start. Possible values are: `notConfigured`, `startPage`, `newTabPage`, `previousPages`, `specificPages`.|
+|edgeBlockSideloadingExtensions|Boolean|Indicates whether the user can sideload extensions.|
+|edgeRequiredExtensionPackageFamilyNames|String collection|Specify the list of package family names of browser extensions that are required and cannot be turned off by the user.|
+|edgeBlockPrinting|Boolean|Configure Edge to allow or block printing.|
+|edgeFavoritesBarVisibility|[visibilitySetting](../resources/intune-deviceconfig-visibilitysetting.md)|Get or set a value that specifies whether to set the favorites bar to always be visible or hidden on any page. Possible values are: `notConfigured`, `hide`, `show`.|
+|edgeBlockSavingHistory|Boolean|Configure Edge to allow browsing history to be saved or to never save browsing history.|
+|edgeBlockFullScreenMode|Boolean|Allow or prevent Edge from entering the full screen mode.|
+|edgeBlockWebContentOnNewTabPage|Boolean|Configure to load a blank page in Edge instead of the default New tab page and prevent users from changing it.|
+|edgeBlockTabPreloading|Boolean|Configure whether Edge preloads the new tab page at Windows startup.|
+|edgeBlockPrelaunch|Boolean|Decide whether Microsoft Edge is prelaunched at Windows startup.|
+|edgeShowMessageWhenOpeningInternetExplorerSites|[internetExplorerMessageSetting](../resources/intune-deviceconfig-internetexplorermessagesetting.md)|Controls the message displayed by Edge before switching to Internet Explorer. Possible values are: `notConfigured`, `disabled`, `enabled`, `keepGoing`.|
+|edgePreventCertificateErrorOverride|Boolean|Allow or prevent users from overriding certificate errors.|
+|edgeKioskModeRestriction|[edgeKioskModeRestrictionType](../resources/intune-deviceconfig-edgekioskmoderestrictiontype.md)|Controls how the Microsoft Edge settings are restricted based on the configure kiosk mode. Possible values are: `notConfigured`, `digitalSignage`, `normalMode`, `publicBrowsingSingleApp`, `publicBrowsingMultiApp`.|
+|edgeKioskResetAfterIdleTimeInMinutes|Int32|Specifies the time in minutes from the last user activity before Microsoft Edge kiosk resets.  Valid values are 0-1440. The default is 5. 0 indicates no reset. Valid values 0 to 1440|
 |cellularBlockDataWhenRoaming|Boolean|Whether or not to Block the user from using data over cellular while roaming.|
 |cellularBlockVpn|Boolean|Whether or not to Block the user from using VPN over cellular.|
 |cellularBlockVpnWhenRoaming|Boolean|Whether or not to Block the user from using VPN when roaming over cellular.|
@@ -104,7 +143,7 @@ Inherits from [deviceConfiguration](../resources/intune-deviceconfig-deviceconfi
 |defenderBlockEndUserAccess|Boolean|Whether or not to block end user access to Defender.|
 |defenderDaysBeforeDeletingQuarantinedMalware|Int32|Number of days before deleting quarantined malware. Valid values 0 to 90|
 |defenderDetectedMalwareActions|[defenderDetectedMalwareActions](../resources/intune-deviceconfig-defenderdetectedmalwareactions.md)|Gets or sets Defender’s actions to take on detected Malware per threat level.|
-|defenderSystemScanSchedule|[weeklySchedule](../resources/intune-deviceconfig-weeklyschedule.md)|Defender day of the week for the system scan. Possible values are: `userDefined`, `everyday`, `sunday`, `monday`, `tuesday`, `wednesday`, `thursday`, `friday`, `saturday`.|
+|defenderSystemScanSchedule|[weeklySchedule](../resources/intune-deviceconfig-weeklyschedule.md)|Defender day of the week for the system scan. Possible values are: `userDefined`, `everyday`, `sunday`, `monday`, `tuesday`, `wednesday`, `thursday`, `friday`, `saturday`, `noScheduledScan`.|
 |defenderFilesAndFoldersToExclude|String collection|Files and folder to exclude from scans and real time protection.|
 |defenderFileExtensionsToExclude|String collection|File extensions to exclude from scans and real time protection.|
 |defenderScanMaxCpu|Int32|Max CPU usage percentage during scan. Valid values 0 to 100|
@@ -119,6 +158,9 @@ Inherits from [deviceConfiguration](../resources/intune-deviceconfig-deviceconfi
 |defenderRequireRealTimeMonitoring|Boolean|Indicates whether or not to require real time monitoring.|
 |defenderScanArchiveFiles|Boolean|Indicates whether or not to scan archive files.|
 |defenderScanDownloads|Boolean|Indicates whether or not to scan downloads.|
+|defenderScheduleScanEnableLowCpuPriority|Boolean|When enabled, low CPU priority will be used during scheduled scans.|
+|defenderDisableCatchupQuickScan|Boolean|When blocked, catch-up scans for scheduled quick scans will be turned off.|
+|defenderDisableCatchupFullScan|Boolean|When blocked, catch-up scans for scheduled full scans will be turned off.|
 |defenderScanNetworkFiles|Boolean|Indicates whether or not to scan files opened from a network folder.|
 |defenderScanIncomingMail|Boolean|Indicates whether or not to scan incoming mail messages.|
 |defenderScanMappedNetworkDrivesDuringFullScan|Boolean|Indicates whether or not to scan mapped network drives during full scan.|
@@ -132,13 +174,13 @@ Inherits from [deviceConfiguration](../resources/intune-deviceconfig-deviceconfi
 |defenderCloudExtendedTimeout|Int32|Timeout extension for file scanning by the cloud. Valid values 0 to 50|
 |defenderCloudExtendedTimeoutInSeconds|Int32|Timeout extension for file scanning by the cloud. Valid values 0 to 50|
 |defenderBlockOnAccessProtection|Boolean|Allows or disallows Windows Defender On Access Protection functionality.|
-|defenderScheduleScanDay|[defenderScheduleScanDay](../resources/intune-deviceconfig-defenderschedulescanday.md)|Selects the day that the Windows Defender scan should run. Possible values are: `everyday`, `monday`, `tuesday`, `wednesday`, `thursday`, `friday`, `saturday`, `sunday`, `noScheduledScan`.|
 |defenderSubmitSamplesConsentType|[defenderSubmitSamplesConsentType](../resources/intune-deviceconfig-defendersubmitsamplesconsenttype.md)|Checks for the user consent level in Windows Defender to send data. Possible values are: `sendSafeSamplesAutomatically`, `alwaysPrompt`, `neverSend`, `sendAllSamplesAutomatically`.|
 |lockScreenAllowTimeoutConfiguration|Boolean|Specify whether to show a user-configurable setting to control the screen timeout while on the lock screen of Windows 10 Mobile devices. If this policy is set to Allow, the value set by lockScreenTimeoutInSeconds is ignored.|
 |lockScreenBlockActionCenterNotifications|Boolean|Indicates whether or not to block action center notifications over lock screen.|
 |lockScreenBlockCortana|Boolean|Indicates whether or not the user can interact with Cortana using speech while the system is locked.|
 |lockScreenBlockToastNotifications|Boolean|Indicates whether to allow toast notifications above the device lock screen.|
 |lockScreenTimeoutInSeconds|Int32|Set the duration (in seconds) from the screen locking to the screen turning off for Windows 10 Mobile devices. Supported values are 11-1800. Valid values 11 to 1800|
+|lockScreenActivateAppsWithVoice|[enablement](../resources/intune-shared-enablement.md)|This policy setting specifies whether Windows apps can be activated by voice while the system is locked. Possible values are: `notConfigured`, `enabled`, `disabled`.|
 |passwordBlockSimple|Boolean|Specify whether PINs or passwords such as "1111" or "1234" are allowed. For Windows 10 desktops, it also controls the use of picture passwords.|
 |passwordExpirationDays|Int32|The password expiration in days. Valid values 0 to 730|
 |passwordMinimumLength|Int32|The minimum password length. Valid values 4 to 16|
@@ -152,6 +194,7 @@ Inherits from [deviceConfiguration](../resources/intune-deviceconfig-deviceconfi
 |passwordMinimumAgeInDays|Int32|This security setting determines the period of time (in days) that a password must be used before the user can change it. Valid values 0 to 998|
 |privacyAdvertisingId|[stateManagementSetting](../resources/intune-deviceconfig-statemanagementsetting.md)|Enables or disables the use of advertising ID. Added in Windows 10, version 1607. Possible values are: `notConfigured`, `blocked`, `allowed`.|
 |privacyAutoAcceptPairingAndConsentPrompts|Boolean|Indicates whether or not to allow the automatic acceptance of the pairing and privacy user consent dialog when launching apps.|
+|privacyDisableLaunchExperience|Boolean|This policy prevents the privacy experience from launching during user logon for new and upgraded users.​|
 |privacyBlockInputPersonalization|Boolean|Indicates whether or not to block the usage of cloud based speech services for Cortana, Dictation, or Store applications.|
 |privacyBlockPublishUserActivities|Boolean|Blocks the shared experiences/discovery of recently used resources in task switcher etc.|
 |privacyBlockActivityFeed|Boolean|Blocks the usage of cloud based speech services for Cortana, Dictation, or Store applications.|
@@ -219,8 +262,10 @@ Inherits from [deviceConfiguration](../resources/intune-deviceconfig-deviceconfi
 |deviceManagementBlockManualUnenroll|Boolean|Indicates whether or not to Block the user from doing manual un-enrollment from device management.|
 |safeSearchFilter|[safeSearchFilterType](../resources/intune-deviceconfig-safesearchfiltertype.md)|Specifies what filter level of safe search is required. Possible values are: `userDefined`, `strict`, `moderate`.|
 |edgeBlockPopups|Boolean|Indicates whether or not to block popups.|
-|edgeBlockSearchSuggestions|Boolean|Indicates whether or not to Block the user from using the search suggestions in the address bar.|
-|edgeBlockSendingIntranetTrafficToInternetExplorer|Boolean|Indicates whether or not to Block the user from sending Intranet traffic to Internet Explorer from Edge.|
+|edgeBlockSearchSuggestions|Boolean|Indicates whether or not to block the user from using the search suggestions in the address bar.|
+|edgeBlockSearchEngineCustomization|Boolean|Indicates whether or not to block the user from adding new search engine or changing the default search engine.|
+|edgeBlockSendingIntranetTrafficToInternetExplorer|Boolean|Indicates whether or not to switch the intranet traffic from Edge to Internet Explorer. Note: the name of this property is misleading; the property is obsolete, use EdgeSendIntranetTrafficToInternetExplorer instead.|
+|edgeSendIntranetTrafficToInternetExplorer|Boolean|Indicates whether or not to switch the intranet traffic from Edge to Internet Explorer.|
 |edgeRequireSmartScreen|Boolean|Indicates whether or not to Require the user to use the smart screen filter.|
 |edgeEnterpriseModeSiteListLocation|String|Indicates the enterprise mode site list location. Could be a local file, local network or http location.|
 |edgeFirstRunUrl|String|The first run URL for when Edge browser is opened for the first time.|
@@ -273,6 +318,7 @@ Inherits from [deviceConfiguration](../resources/intune-deviceconfig-deviceconfi
 |appManagementMSIAllowUserControlOverInstall|Boolean|This policy setting permits users to change installation options that typically are available only to system administrators.|
 |appManagementMSIAlwaysInstallWithElevatedPrivileges|Boolean|This policy setting directs Windows Installer to use elevated permissions when it installs any program on the system.|
 |dataProtectionBlockDirectMemoryAccess|Boolean|This policy setting allows you to block direct memory access (DMA) for all hot pluggable PCI downstream ports until a user logs into Windows.|
+|appManagementPackageFamilyNamesToLaunchAfterLogOn|String collection|List of semi-colon delimited Package Family Names of Windows apps. Listed Windows apps are to be launched after logon.​|
 
 ## Relationships
 |Relationship|Type|Description|
@@ -284,7 +330,6 @@ Inherits from [deviceConfiguration](../resources/intune-deviceconfig-deviceconfi
 |deviceStatusOverview|[deviceConfigurationDeviceOverview](../resources/intune-deviceconfig-deviceconfigurationdeviceoverview.md)|Device Configuration devices status overview Inherited from [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md)|
 |userStatusOverview|[deviceConfigurationUserOverview](../resources/intune-deviceconfig-deviceconfigurationuseroverview.md)|Device Configuration users status overview Inherited from [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md)|
 |deviceSettingStateSummaries|[settingStateDeviceSummary](../resources/intune-deviceconfig-settingstatedevicesummary.md) collection|Device Configuration Setting State Device Summary Inherited from [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md)|
-|assignedAccessMultiModeProfiles|[windowsAssignedAccessProfile](../resources/intune-deviceconfig-windowsassignedaccessprofile.md) collection|This policy setting allows to define a list of assigned access profiles for multi app mode.|
 |privacyAccessControls|[windowsPrivacyDataAccessControlItem](../resources/intune-deviceconfig-windowsprivacydataaccesscontrolitem.md) collection|Indicates a list of applications with their access control levels over privacy data categories, and/or the default access levels per category.|
 
 ## JSON Representation
@@ -304,10 +349,42 @@ Here is a JSON representation of the resource.
     "String"
   ],
   "supportsScopeTags": true,
+  "deviceManagementApplicabilityRuleOsEdition": {
+    "@odata.type": "microsoft.graph.deviceManagementApplicabilityRuleOsEdition",
+    "osEditionTypes": [
+      "String"
+    ],
+    "name": "String",
+    "ruleType": "String"
+  },
+  "deviceManagementApplicabilityRuleOsVersion": {
+    "@odata.type": "microsoft.graph.deviceManagementApplicabilityRuleOsVersion",
+    "minOSVersion": "String",
+    "maxOSVersion": "String",
+    "name": "String",
+    "ruleType": "String"
+  },
+  "deviceManagementApplicabilityRuleDeviceMode": {
+    "@odata.type": "microsoft.graph.deviceManagementApplicabilityRuleDeviceMode",
+    "deviceMode": "String",
+    "name": "String",
+    "ruleType": "String"
+  },
   "createdDateTime": "String (timestamp)",
   "description": "String",
   "displayName": "String",
   "version": 1024,
+  "taskManagerBlockEndTask": true,
+  "energySaverOnBatteryThresholdPercentage": 1024,
+  "energySaverPluggedInThresholdPercentage": 1024,
+  "powerLidCloseActionOnBattery": "String",
+  "powerLidCloseActionPluggedIn": "String",
+  "powerButtonActionOnBattery": "String",
+  "powerButtonActionPluggedIn": "String",
+  "powerSleepButtonActionOnBattery": "String",
+  "powerSleepButtonActionPluggedIn": "String",
+  "powerHybridSleepOnBattery": "String",
+  "powerHybridSleepPluggedIn": "String",
   "windows10AppsForceUpdateSchedule": {
     "@odata.type": "microsoft.graph.windows10AppsForceUpdateSchedule",
     "startDateTime": "String (timestamp)",
@@ -315,11 +392,10 @@ Here is a JSON representation of the resource.
     "runImmediatelyIfAfterStartDateTime": true
   },
   "enableAutomaticRedeployment": true,
-  "assignedAccessSingleModeUserName": "String",
-  "assignedAccessSingleModeAppUserModelId": "String",
   "microsoftAccountSignInAssistantSettings": "String",
   "authenticationAllowSecondaryDevice": true,
-  "authenticationAllowFIDODevice": true,
+  "authenticationWebSignIn": "String",
+  "authenticationPreferredAzureADTenantDomainName": "String",
   "cryptographyAllowFipsAlgorithmPolicy": true,
   "displayAppListWithGdiDPIScalingTurnedOn": [
     "String"
@@ -333,6 +409,7 @@ Here is a JSON representation of the resource.
   "enterpriseCloudPrintResourceIdentifier": "String",
   "enterpriseCloudPrintDiscoveryMaxLimit": 1024,
   "enterpriseCloudPrintMopriaDiscoveryResourceIdentifier": "String",
+  "experienceDoNotSyncBrowserSettings": "String",
   "messagingBlockSync": true,
   "messagingBlockMMS": true,
   "messagingBlockRichCommunicationServices": true,
@@ -355,16 +432,19 @@ Here is a JSON representation of the resource.
   "diagnosticsDataSubmissionMode": "String",
   "oneDriveDisableFileSync": true,
   "systemTelemetryProxyServer": "String",
+  "edgeTelemetryForMicrosoft365Analytics": "String",
   "inkWorkspaceAccess": "String",
   "inkWorkspaceAccessState": "String",
   "inkWorkspaceBlockSuggestedApps": true,
   "smartScreenEnableAppInstallControl": true,
+  "smartScreenAppInstallControl": "String",
   "personalizationDesktopImageUrl": "String",
   "personalizationLockScreenImageUrl": "String",
   "bluetoothAllowedServices": [
     "String"
   ],
   "bluetoothBlockAdvertising": true,
+  "bluetoothBlockPromptedProximalConnections": true,
   "bluetoothBlockDiscoverableMode": true,
   "bluetoothBlockPrePairing": true,
   "edgeBlockAutofill": true,
@@ -385,6 +465,27 @@ Here is a JSON representation of the resource.
   "edgeSyncFavoritesWithInternetExplorer": true,
   "edgeFavoritesListLocation": "String",
   "edgeBlockEditFavorites": true,
+  "edgeNewTabPageURL": "String",
+  "edgeHomeButtonConfiguration": {
+    "@odata.type": "microsoft.graph.edgeHomeButtonConfiguration"
+  },
+  "edgeHomeButtonConfigurationEnabled": true,
+  "edgeOpensWith": "String",
+  "edgeBlockSideloadingExtensions": true,
+  "edgeRequiredExtensionPackageFamilyNames": [
+    "String"
+  ],
+  "edgeBlockPrinting": true,
+  "edgeFavoritesBarVisibility": "String",
+  "edgeBlockSavingHistory": true,
+  "edgeBlockFullScreenMode": true,
+  "edgeBlockWebContentOnNewTabPage": true,
+  "edgeBlockTabPreloading": true,
+  "edgeBlockPrelaunch": true,
+  "edgeShowMessageWhenOpeningInternetExplorerSites": "String",
+  "edgePreventCertificateErrorOverride": true,
+  "edgeKioskModeRestriction": "String",
+  "edgeKioskResetAfterIdleTimeInMinutes": 1024,
   "cellularBlockDataWhenRoaming": true,
   "cellularBlockVpn": true,
   "cellularBlockVpnWhenRoaming": true,
@@ -419,6 +520,9 @@ Here is a JSON representation of the resource.
   "defenderRequireRealTimeMonitoring": true,
   "defenderScanArchiveFiles": true,
   "defenderScanDownloads": true,
+  "defenderScheduleScanEnableLowCpuPriority": true,
+  "defenderDisableCatchupQuickScan": true,
+  "defenderDisableCatchupFullScan": true,
   "defenderScanNetworkFiles": true,
   "defenderScanIncomingMail": true,
   "defenderScanMappedNetworkDrivesDuringFullScan": true,
@@ -432,13 +536,13 @@ Here is a JSON representation of the resource.
   "defenderCloudExtendedTimeout": 1024,
   "defenderCloudExtendedTimeoutInSeconds": 1024,
   "defenderBlockOnAccessProtection": true,
-  "defenderScheduleScanDay": "String",
   "defenderSubmitSamplesConsentType": "String",
   "lockScreenAllowTimeoutConfiguration": true,
   "lockScreenBlockActionCenterNotifications": true,
   "lockScreenBlockCortana": true,
   "lockScreenBlockToastNotifications": true,
   "lockScreenTimeoutInSeconds": 1024,
+  "lockScreenActivateAppsWithVoice": "String",
   "passwordBlockSimple": true,
   "passwordExpirationDays": 1024,
   "passwordMinimumLength": 1024,
@@ -452,6 +556,7 @@ Here is a JSON representation of the resource.
   "passwordMinimumAgeInDays": 1024,
   "privacyAdvertisingId": "String",
   "privacyAutoAcceptPairingAndConsentPrompts": true,
+  "privacyDisableLaunchExperience": true,
   "privacyBlockInputPersonalization": true,
   "privacyBlockPublishUserActivities": true,
   "privacyBlockActivityFeed": true,
@@ -527,7 +632,9 @@ Here is a JSON representation of the resource.
   "safeSearchFilter": "String",
   "edgeBlockPopups": true,
   "edgeBlockSearchSuggestions": true,
+  "edgeBlockSearchEngineCustomization": true,
   "edgeBlockSendingIntranetTrafficToInternetExplorer": true,
+  "edgeSendIntranetTrafficToInternetExplorer": true,
   "edgeRequireSmartScreen": true,
   "edgeEnterpriseModeSiteListLocation": "String",
   "edgeFirstRunUrl": "String",
@@ -583,11 +690,12 @@ Here is a JSON representation of the resource.
   "tenantLockdownRequireNetworkDuringOutOfBoxExperience": true,
   "appManagementMSIAllowUserControlOverInstall": true,
   "appManagementMSIAlwaysInstallWithElevatedPrivileges": true,
-  "dataProtectionBlockDirectMemoryAccess": true
+  "dataProtectionBlockDirectMemoryAccess": true,
+  "appManagementPackageFamilyNamesToLaunchAfterLogOn": [
+    "String"
+  ]
 }
 ```
-
-
 
 
 

@@ -1,6 +1,10 @@
 ---
 title: "ChartPointFormat resource type"
 description: "Represents formatting object for chart points."
+author: "lumine2008"
+localization_priority: Normal
+ms.prod: "excel"
+doc_type: resourcePageType
 ---
 
 # ChartPointFormat resource type

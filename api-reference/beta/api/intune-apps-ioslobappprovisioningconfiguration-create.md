@@ -1,15 +1,20 @@
 ---
 title: "Create iosLobAppProvisioningConfiguration"
 description: "Create a new iosLobAppProvisioningConfiguration object."
+author: "rolyon"
+localization_priority: Normal
+ms.prod: "Intune"
+doc_type: apiPageType
 ---
 
 # Create iosLobAppProvisioningConfiguration
 
-> **Important:** APIs under the /beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported.
+> **Important:** Microsoft Graph APIs under the /beta version are subject to change; production use is not supported.
 
-> **Note:** Using the Microsoft Graph APIs to configure Intune controls and policies still requires that the Intune service is [correctly licensed](https://go.microsoft.com/fwlink/?linkid=839381) by the customer.
+> **Note:** The Microsoft Graph API for Intune requires an [active Intune license](https://go.microsoft.com/fwlink/?linkid=839381) for the tenant.
 
 Create a new [iosLobAppProvisioningConfiguration](../resources/intune-apps-ioslobappprovisioningconfiguration.md) object.
+
 ## Prerequisites
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
 
@@ -17,7 +22,7 @@ One of the following permissions is required to call this API. To learn more, in
 |:---|:---|
 |Delegated (work or school account)|DeviceManagementApps.ReadWrite.All|
 |Delegated (personal Microsoft account)|Not supported.|
-|Application|Not supported.|
+|Application|DeviceManagementApps.ReadWrite.All|
 
 ## HTTP Request
 <!-- {
@@ -45,6 +50,7 @@ The following table shows the properties that are required when you create the i
 |expirationDateTime|DateTimeOffset|Optional profile expiration date and time.|
 |payloadFileName|String|Payload file name (*.mobileprovision | *.xml).|
 |payload|Binary|Payload. (UTF8 encoded byte array)|
+|roleScopeTagIds|String collection|List of Scope Tags for this iOS LOB app provisioning configuration entity.|
 |createdDateTime|DateTimeOffset|DateTime the object was created.|
 |description|String|Admin provided description of the Device Configuration.|
 |lastModifiedDateTime|DateTimeOffset|DateTime the object was last modified.|
@@ -57,20 +63,23 @@ The following table shows the properties that are required when you create the i
 If successful, this method returns a `201 Created` response code and a [iosLobAppProvisioningConfiguration](../resources/intune-apps-ioslobappprovisioningconfiguration.md) object in the response body.
 
 ## Example
+
 ### Request
 Here is an example of the request.
 ``` http
 POST https://graph.microsoft.com/beta/deviceAppManagement/iosLobAppProvisioningConfigurations
 Content-type: application/json
-Content-length: 377
+Content-length: 375
 
 {
   "@odata.type": "#microsoft.graph.iosLobAppProvisioningConfiguration",
   "expirationDateTime": "2016-12-31T23:57:57.2481234-08:00",
   "payloadFileName": "Payload File Name value",
   "payload": "cGF5bG9hZA==",
+  "roleScopeTagIds": [
+    "Role Scope Tag Ids value"
+  ],
   "description": "Description value",
-  "lastModifiedDateTime": "2017-01-01T00:00:35.1329464-08:00",
   "displayName": "Display Name value",
   "version": 7
 }
@@ -81,7 +90,7 @@ Here is an example of the response. Note: The response object shown here may be 
 ``` http
 HTTP/1.1 201 Created
 Content-Type: application/json
-Content-Length: 485
+Content-Length: 547
 
 {
   "@odata.type": "#microsoft.graph.iosLobAppProvisioningConfiguration",
@@ -89,6 +98,9 @@ Content-Length: 485
   "expirationDateTime": "2016-12-31T23:57:57.2481234-08:00",
   "payloadFileName": "Payload File Name value",
   "payload": "cGF5bG9hZA==",
+  "roleScopeTagIds": [
+    "Role Scope Tag Ids value"
+  ],
   "createdDateTime": "2017-01-01T00:02:43.5775965-08:00",
   "description": "Description value",
   "lastModifiedDateTime": "2017-01-01T00:00:35.1329464-08:00",
@@ -96,6 +108,7 @@ Content-Length: 485
   "version": 7
 }
 ```
+
 
 
 

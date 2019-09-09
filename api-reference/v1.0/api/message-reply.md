@@ -1,6 +1,10 @@
 ---
 title: "message: reply"
 description: "Reply to the sender of a message. The message is then saved in the Sent Items folder."
+author: "angelgolfer-ms"
+localization_priority: Normal
+ms.prod: "outlook"
+doc_type: apiPageType
 ---
 
 # message: reply
@@ -45,6 +49,8 @@ If successful, this method returns `202 Accepted` response code. It does not ret
 Here is an example of how to call this API.
 ##### Request
 Here is an example of the request.
+
+# [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "message_reply"
@@ -58,6 +64,24 @@ Content-length: 32
   "comment": "comment-value"
 }
 ```
+# [C#](#tab/csharp)
+[!INCLUDE [sample-code](../includes/snippets/csharp/message-reply-csharp-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [JavaScript](#tab/javascript)
+[!INCLUDE [sample-code](../includes/snippets/javascript/message-reply-javascript-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Objective-C](#tab/objc)
+[!INCLUDE [sample-code](../includes/snippets/objc/message-reply-objc-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Java](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/message-reply-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+---
+
 
 ##### Response
 ##### Response
@@ -77,5 +101,7 @@ HTTP/1.1 200 OK
   "description": "message: reply",
   "keywords": "",
   "section": "documentation",
-  "tocPath": ""
+  "tocPath": "",
+  "suppressions": [
+  ]
 }-->

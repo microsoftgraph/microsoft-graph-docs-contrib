@@ -1,11 +1,15 @@
 ---
 title: "List Policies"
 description: "Retrieve all policy objects in the directory."
+localization_priority: Normal
+doc_type: apiPageType
+ms.prod: ""
+author: ""
 ---
 
 # List Policies
 
-> **Important:** APIs under the /beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported.
+[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 Retrieve all [policy](../resources/policy.md) objects in the directory.
 

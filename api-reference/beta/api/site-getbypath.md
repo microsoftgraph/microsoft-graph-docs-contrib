@@ -1,12 +1,15 @@
 ---
-author: rgregg
-ms.author: rgregg
+author: JeremyKelley
+description: "Retrieve properties and relationships for a site resource."
 ms.date: 09/10/2017
 title: Get SharePoint site by path
+localization_priority: Normal
+ms.prod: "sharepoint"
+doc_type: apiPageType
 ---
 # Get a site resource by path
 
-> **Important:** APIs under the /beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported.
+[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 Retrieve properties and relationships for a [site][] resource.
 A **site** resource represents a team site in SharePoint.
@@ -43,7 +46,7 @@ To access the root SharePoint site with a relative path:
 GET /sites/{hostname}:/{relative-path}
 ```
 
-## HTTP Response
+## Response
 
 This method returns a [site][] resource for the site referenced by the unique identifier.
 
@@ -68,10 +71,13 @@ HTTP/1.1 200 OK
 }
 ```
 
-<!-- {
+<!--
+{
   "type": "#page.annotation",
   "description": "",
   "keywords": "",
   "section": "documentation",
-  "tocPath": "Sites/Get by path"
-} -->
+  "tocPath": "Sites/Get by path",
+  "suppressions": []
+}
+-->

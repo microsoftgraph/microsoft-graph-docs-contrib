@@ -1,6 +1,8 @@
 ---
 title: "Microsoft Graph throttling guidance"
 description: "Throttling limits the number of concurrent calls to a service to prevent overuse of resources. Microsoft Graph is designed to handle a high volume of requests. If an overwhelming number of requests occurs, throttling helps maintain optimal performance and reliability of the Microsoft Graph service."
+author: "piotrci"
+localization_priority: Priority
 ---
 
 # Microsoft Graph throttling guidance
@@ -9,6 +11,8 @@ description: "Throttling limits the number of concurrent calls to a service to p
 Throttling limits the number of concurrent calls to a service to prevent overuse of resources. Microsoft Graph is designed to handle a high volume of requests. If an overwhelming number of requests occurs, throttling helps maintain optimal performance and reliability of the Microsoft Graph service.
 
 Throttling limits vary based on the scenario. For example, if you are performing a large volume of writes, the possibility for throttling is higher than if you are only performing reads.
+
+> [!VIDEO https://www.youtube-nocookie.com/embed/J4CFxVuzNMA]
 
 ## What happens when throttling occurs?
 

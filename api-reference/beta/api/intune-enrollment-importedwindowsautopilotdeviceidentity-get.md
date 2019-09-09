@@ -1,15 +1,20 @@
 ---
 title: "Get importedWindowsAutopilotDeviceIdentity"
 description: "Read properties and relationships of the importedWindowsAutopilotDeviceIdentity object."
+author: "rolyon"
+localization_priority: Normal
+ms.prod: "Intune"
+doc_type: apiPageType
 ---
 
 # Get importedWindowsAutopilotDeviceIdentity
 
-> **Important:** APIs under the /beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported.
+> **Important:** Microsoft Graph APIs under the /beta version are subject to change; production use is not supported.
 
-> **Note:** Using the Microsoft Graph APIs to configure Intune controls and policies still requires that the Intune service is [correctly licensed](https://go.microsoft.com/fwlink/?linkid=839381) by the customer.
+> **Note:** The Microsoft Graph API for Intune requires an [active Intune license](https://go.microsoft.com/fwlink/?linkid=839381) for the tenant.
 
 Read properties and relationships of the [importedWindowsAutopilotDeviceIdentity](../resources/intune-enrollment-importedwindowsautopilotdeviceidentity.md) object.
+
 ## Prerequisites
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
 
@@ -17,7 +22,7 @@ One of the following permissions is required to call this API. To learn more, in
 |:---|:---|
 |Delegated (work or school account)|DeviceManagementServiceConfig.ReadWrite.All, DeviceManagementServiceConfig.Read.All|
 |Delegated (personal Microsoft account)|Not supported.|
-|Application|Not supported.|
+|Application|DeviceManagementServiceConfig.ReadWrite.All, DeviceManagementServiceConfig.Read.All|
 
 ## HTTP Request
 <!-- {
@@ -26,11 +31,11 @@ One of the following permissions is required to call this API. To learn more, in
 -->
 ``` http
 GET /deviceManagement/importedWindowsAutopilotDeviceIdentities/{importedWindowsAutopilotDeviceIdentityId}
-GET /deviceManagement/importedWindowsAutopilotDeviceIdentityUploads/{importedWindowsAutopilotDeviceIdentityUploadId}/deviceIdentities/{importedWindowsAutopilotDeviceIdentityId}
 ```
 
 ## Optional query parameters
-This method supports the [OData Query Parameters](https://developer.microsoft.com/graph/docs/concepts/query_parameters) to help customize the response.
+This method supports the [OData Query Parameters](https://docs.microsoft.com/en-us/graph/query-parameters) to help customize the response.
+
 ## Request headers
 |Header|Value|
 |:---|:---|
@@ -44,6 +49,7 @@ Do not supply a request body for this method.
 If successful, this method returns a `200 OK` response code and [importedWindowsAutopilotDeviceIdentity](../resources/intune-enrollment-importedwindowsautopilotdeviceidentity.md) object in the response body.
 
 ## Example
+
 ### Request
 Here is an example of the request.
 ``` http
@@ -55,15 +61,17 @@ Here is an example of the response. Note: The response object shown here may be 
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 635
+Content-Length: 779
 
 {
   "value": {
     "@odata.type": "#microsoft.graph.importedWindowsAutopilotDeviceIdentity",
     "id": "985b4f49-4f49-985b-494f-5b98494f5b98",
     "orderIdentifier": "Order Identifier value",
+    "groupTag": "Group Tag value",
     "serialNumber": "Serial Number value",
     "productKey": "Product Key value",
+    "importId": "Import Id value",
     "hardwareIdentifier": "aGFyZHdhcmVJZGVudGlmaWVy",
     "state": {
       "@odata.type": "microsoft.graph.importedWindowsAutopilotDeviceIdentityState",
@@ -71,10 +79,12 @@ Content-Length: 635
       "deviceRegistrationId": "Device Registration Id value",
       "deviceErrorCode": 15,
       "deviceErrorName": "Device Error Name value"
-    }
+    },
+    "assignedUserPrincipalName": "Assigned User Principal Name value"
   }
 }
 ```
+
 
 
 

@@ -1,6 +1,10 @@
 ---
 title: "Update team"
 description: "Update the properties of the specified team."
+author: "nkramer"
+localization_priority: Normal
+ms.prod: "microsoft-teams"
+doc_type: apiPageType
 ---
 
 # Update team
@@ -19,11 +23,14 @@ One of the following permissions is required to call this API. To learn more, in
 |Delegated (personal Microsoft account) | Not supported.    |
 |Application | Group.Read.All, Group.ReadWrite.All    |
 
+> **Note**: This API supports admin permissions. Global admins and Microsoft Teams service admins can access teams that they are not a member of.
+
 ## HTTP request
 <!-- { "blockType": "ignored" } -->
 ```http
 PATCH /teams/{id}
 ```
+
 ## Request headers
 | Header       | Value |
 |:---------------|:--------|
@@ -40,12 +47,14 @@ If successful, this method returns a `204 No Content` response code.
 ## Example
 #### Request
 The following is an example of the request.
+
+# [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "update_team"
 }-->
 ```http
-PATCH https://graph.microsoft.com/beta/teams/{id}
+PATCH https://graph.microsoft.com/v1.0/teams/{id}
 Content-type: application/json
 Content-length: 211
 
@@ -63,6 +72,24 @@ Content-length: 211
   }
 }
 ```
+# [C#](#tab/csharp)
+[!INCLUDE [sample-code](../includes/snippets/csharp/update-team-csharp-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [JavaScript](#tab/javascript)
+[!INCLUDE [sample-code](../includes/snippets/javascript/update-team-javascript-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Objective-C](#tab/objc)
+[!INCLUDE [sample-code](../includes/snippets/objc/update-team-objc-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Java](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/update-team-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+---
+
 #### Response
 <!-- {
   "blockType": "response",
@@ -80,5 +107,7 @@ HTTP/1.1 204 No Content
   "description": "Update Team",
   "keywords": "",
   "section": "documentation",
-  "tocPath": ""
+  "tocPath": "",
+  "suppressions": [
+  ]
 }-->

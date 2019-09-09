@@ -1,13 +1,18 @@
 ---
 title: "deviceComplianceActionType enum type"
 description: "Scheduled Action Type Enum"
+author: "tfitzmac"
+localization_priority: Normal
+ms.prod: "Intune"
+doc_type: enumPageType
 ---
 
 # deviceComplianceActionType enum type
 
-> **Note:** Using the Microsoft Graph APIs to configure Intune controls and policies still requires that the Intune service is [correctly licensed](https://go.microsoft.com/fwlink/?linkid=839381) by the customer.
+> **Note:** The Microsoft Graph API for Intune requires an [active Intune license](https://go.microsoft.com/fwlink/?linkid=839381) for the tenant.
 
 Scheduled Action Type Enum
+
 ## Members
 |Member|Value|Description|
 |:---|:---|:---|

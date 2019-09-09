@@ -1,13 +1,29 @@
 ---
 title: "Use query parameters to customize responses"
 description: "Microsoft Graph provides optional query parameters that you can use to specify and control the amount of data returned in a response. The following query parameters are supported."
+author: "piotrci"
+localization_priority: Priority
+scenarios: "getting-started"
 ---
 
 # Use query parameters to customize responses
 
-Microsoft Graph provides optional query parameters that you can use to specify and control the amount of data returned in a response. The following query parameters are supported.
+Microsoft Graph supports optional query parameters that you can use to specify and control the amount of data returned in a response. The support for the exact query parameters varies from one API operation to another, and depending on the API, can differ between the v1.0 and beta endpoints. 
 
->**Note:** Click the examples to try them in [Graph Explorer][graph-explorer].
+> [!TIP] 
+> On the beta endpoint, the `$` prefix is optional. For example, instead of `$filter`, you can use `filter`. 
+> On the v1 endpoint, the `$` prefix is optional for only a subset of APIs. For simplicity, always include `$` if using the v1 endpoint.
+
+Query parameters can be OData system query options or other query parameters. 
+
+> [!VIDEO https://www.youtube-nocookie.com/embed/7BuFv3yETi4]
+
+## OData system query options
+A Microsoft Graph API operation might support one or more of the following OData system query options. These query options are compatible with the [OData V4 query language][odata-query].
+
+>**Note:** OData 4.0 supports system query options in only GET operations.
+
+Click the examples to try them in [Graph Explorer][graph-explorer].
 
 | Name                     | Description | Example
 |:-------------------------|:------------|:---------|
@@ -19,14 +35,14 @@ Microsoft Graph provides optional query parameters that you can use to specify a
 | [$search](#search-parameter)       | Returns results based on search criteria. Currently supported on **messages** and **person** collections.|[`/me/messages?$search=pizza`][search-example]
 | [$select](#select-parameter)       | Filters properties (columns).|[`/users?$select=givenName,surname`][select-example]
 | [$skip](#skip-parameter)           | Indexes into a result set. Also used by some APIs to implement paging and can be used together with `$top` to manually page results. | [`/me/messages?$skip=11`][skip-example]
-| [$skipToken](#skiptoken-parameter) | Retrieves the next page of results from result sets that span multiple pages. (Some APIs use `$skip` instead.) | `/users?$skiptoken=X%274453707402000100000017...`|
 | [$top](#top-parameter)             | Sets the page size of results. |[`/users?$top=2`][top-example]
 
 
+## Other query parameters
 
-These parameters are compatible with the [OData V4 query language][odata-query]. Not all parameters are supported across all Microsoft Graph APIs, and support might differ significantly between the `v1.0` and `beta` endpoints. 
-
-> **Note:** On the `beta` and `v1.0` endpoint, the `$` prefix is optional. For example, instead of `$filter`, you can use `filter`. 
+| Name                     | Description | Example
+|:-------------------------|:------------|:---------|
+| [$skipToken](#skiptoken-parameter) | Retrieves the next page of results from result sets that span multiple pages. (Some APIs use `$skip` instead.) | `/users?$skiptoken=X%274453707402000100000017...`|
 
 ## Encoding query parameters
 
@@ -42,6 +58,14 @@ A properly encoded URL looks like this:
 
 ```http
 GET https://graph.microsoft.com/v1.0/users?$filter=startswith(givenName%2C+'J')
+```
+
+### Escaping single quotes
+
+For requests that use single quotes, if any parameter values also contain single quotes, those must be double escaped; otherwise, the request will fail due to invalid syntax. In the example, the string value `let''s meet for lunch?` has the single quote escaped.
+
+```http
+GET https://graph.microsoft.com/v1.0/me/messages?$filter=subject eq 'let''s meet for lunch?'
 ```
 
 ## count parameter

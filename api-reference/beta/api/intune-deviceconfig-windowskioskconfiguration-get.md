@@ -1,15 +1,20 @@
 ---
 title: "Get windowsKioskConfiguration"
 description: "Read properties and relationships of the windowsKioskConfiguration object."
+author: "rolyon"
+localization_priority: Normal
+ms.prod: "Intune"
+doc_type: apiPageType
 ---
 
 # Get windowsKioskConfiguration
 
-> **Important:** APIs under the /beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported.
+> **Important:** Microsoft Graph APIs under the /beta version are subject to change; production use is not supported.
 
-> **Note:** Using the Microsoft Graph APIs to configure Intune controls and policies still requires that the Intune service is [correctly licensed](https://go.microsoft.com/fwlink/?linkid=839381) by the customer.
+> **Note:** The Microsoft Graph API for Intune requires an [active Intune license](https://go.microsoft.com/fwlink/?linkid=839381) for the tenant.
 
 Read properties and relationships of the [windowsKioskConfiguration](../resources/intune-deviceconfig-windowskioskconfiguration.md) object.
+
 ## Prerequisites
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
 
@@ -17,7 +22,7 @@ One of the following permissions is required to call this API. To learn more, in
 |:---|:---|
 |Delegated (work or school account)|DeviceManagementConfiguration.ReadWrite.All, DeviceManagementConfiguration.Read.All|
 |Delegated (personal Microsoft account)|Not supported.|
-|Application|Not supported.|
+|Application|DeviceManagementConfiguration.ReadWrite.All, DeviceManagementConfiguration.Read.All|
 
 ## HTTP Request
 <!-- {
@@ -31,7 +36,8 @@ GET /deviceManagement/deviceConfigurations/{deviceConfigurationId}/microsoft.gra
 ```
 
 ## Optional query parameters
-This method supports the [OData Query Parameters](https://developer.microsoft.com/graph/docs/concepts/query_parameters) to help customize the response.
+This method supports the [OData Query Parameters](https://docs.microsoft.com/en-us/graph/query-parameters) to help customize the response.
+
 ## Request headers
 |Header|Value|
 |:---|:---|
@@ -45,6 +51,7 @@ Do not supply a request body for this method.
 If successful, this method returns a `200 OK` response code and [windowsKioskConfiguration](../resources/intune-deviceconfig-windowskioskconfiguration.md) object in the response body.
 
 ## Example
+
 ### Request
 Here is an example of the request.
 ``` http
@@ -56,7 +63,7 @@ Here is an example of the response. Note: The response object shown here may be 
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 1889
+Content-Length: 3186
 
 {
   "value": {
@@ -67,6 +74,27 @@ Content-Length: 1889
       "Role Scope Tag Ids value"
     ],
     "supportsScopeTags": true,
+    "deviceManagementApplicabilityRuleOsEdition": {
+      "@odata.type": "microsoft.graph.deviceManagementApplicabilityRuleOsEdition",
+      "osEditionTypes": [
+        "windows10EnterpriseN"
+      ],
+      "name": "Name value",
+      "ruleType": "exclude"
+    },
+    "deviceManagementApplicabilityRuleOsVersion": {
+      "@odata.type": "microsoft.graph.deviceManagementApplicabilityRuleOsVersion",
+      "minOSVersion": "Min OSVersion value",
+      "maxOSVersion": "Max OSVersion value",
+      "name": "Name value",
+      "ruleType": "exclude"
+    },
+    "deviceManagementApplicabilityRuleDeviceMode": {
+      "@odata.type": "microsoft.graph.deviceManagementApplicabilityRuleDeviceMode",
+      "deviceMode": "sModeConfiguration",
+      "name": "Name value",
+      "ruleType": "exclude"
+    },
     "createdDateTime": "2017-01-01T00:02:43.5775965-08:00",
     "description": "Description value",
     "displayName": "Display Name value",
@@ -83,12 +111,15 @@ Content-Length: 1889
               "@odata.type": "microsoft.graph.windowsKioskUWPApp",
               "startLayoutTileSize": "small",
               "name": "Name value",
+              "appType": "store",
+              "autoLaunch": true,
               "appUserModelId": "App User Model Id value",
               "appId": "App Id value",
               "containedAppId": "Contained App Id value"
             }
           ],
           "showTaskBar": true,
+          "allowAccessToDownloadsFolder": true,
           "disallowDesktopApps": true,
           "startMenuLayoutXml": "c3RhcnRNZW51TGF5b3V0WG1s"
         },
@@ -109,10 +140,20 @@ Content-Length: 1889
     ],
     "kioskBrowserBlockedUrlExceptions": [
       "Kiosk Browser Blocked Url Exceptions value"
-    ]
+    ],
+    "edgeKioskEnablePublicBrowsing": true,
+    "windowsKioskForceUpdateSchedule": {
+      "@odata.type": "microsoft.graph.windowsKioskForceUpdateSchedule",
+      "startDateTime": "2016-12-31T23:58:46.7156189-08:00",
+      "recurrence": "daily",
+      "dayofWeek": "monday",
+      "dayofMonth": 10,
+      "runImmediatelyIfAfterStartDateTime": true
+    }
   }
 }
 ```
+
 
 
 

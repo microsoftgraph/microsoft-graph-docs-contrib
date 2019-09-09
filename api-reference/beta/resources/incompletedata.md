@@ -1,12 +1,15 @@
-﻿---
+---
 author: daspek
-ms.author: dspektor
+description: "The incompleteData facet indicates that a resource was generated with incomplete data."
 ms.date: 10/06/2017
 title: IncompleteData
+localization_priority: Normal
+doc_type: resourcePageType
+ms.prod: ""
 ---
 # incompleteData resource type
 
- > **Important:** APIs under the /beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported.
+ [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 The **incompleteData** facet indicates that a resource was generated with incomplete data.
 The properties within may provide information about why there is incomplete data.
@@ -29,8 +32,11 @@ The properties within may provide information about why there is incomplete data
 | missingDataBeforeDateTime | DateTimeOffset | The service does not have source data before the specified time.
 | wasThrottled              | Boolean        | Some data was not recorded due to excessive activity.
 
-<!-- {
+<!--
+{
   "type": "#page.annotation",
   "section": "documentation",
-  "tocPath": "Facets/IncompleteData"
-} -->
+  "tocPath": "Facets/IncompleteData",
+  "suppressions": []
+}
+-->

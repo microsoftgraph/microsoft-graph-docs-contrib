@@ -1,11 +1,15 @@
 ---
 title: "Get an educationSynchronizationProfile"
 description: "Retrieve a school data synchronization profile in the tenant based on the identifier."
+author: "mmast-msft"
+localization_priority: Normal
+ms.prod: "education"
+doc_type: apiPageType
 ---
 
 # Get an educationSynchronizationProfile
 
-> **Important:** APIs under the /beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported.
+[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 Retrieve a school data [synchronization profile](../resources/educationsynchronizationprofile.md) in the tenant based on the identifier.
 
@@ -53,7 +57,7 @@ The following is an example of the response.
 <!-- {
   "blockType": "ignored",
   "truncated": true,
-  "@odata.type": "#microsoft.graph.educationSynchronizationProfile",
+  "@odata.type": "microsoft.graph.educationSynchronizationProfile",
 } -->
 ```http
 HTTP/1.1 200 OK
@@ -66,7 +70,7 @@ Content-length: 2487
     "state": "provisioned",
     "id": "86904b1e-c7d0-4ead-b13a-98f11fc400ee",
     "dataProvider": {
-        "@odata.type": "#microsoft.graph.educationCsvDataProvider",
+        "@odata.type": "microsoft.graph.educationCsvDataProvider",
         "customizations": {
             "student": {
                 "optionalPropertiesToSync": [
@@ -106,7 +110,7 @@ Content-length: 2487
         }
     },
     "identitySynchronizationConfiguration": {
-        "@odata.type": "#microsoft.graph.educationIdentityCreationConfiguration",
+        "@odata.type": "microsoft.graph.educationIdentityCreationConfiguration",
         "userDomains": [
             {
                 "appliesTo": "student",
@@ -121,14 +125,14 @@ Content-length: 2487
     "licensesToAssign": 
          [
             {
-                "@odata.type": "#microsoft.graph.educationSynchronizationLicenseAssignment",
+                "@odata.type": "microsoft.graph.educationSynchronizationLicenseAssignment",
                 "appliesTo": "teacher",
                 "skuIds": [
                     "6fd2c87f-b296-42f0-b197-1e91e994b900"
                 ]
             },
             {
-                "@odata.type": "#microsoft.graph.educationSynchronizationLicenseAssignment",
+                "@odata.type": "microsoft.graph.educationSynchronizationLicenseAssignment",
                 "appliesTo": "student",
                 "skuIds": [
                     "6fd2c87f-b296-42f0-b197-1e91e994b900"

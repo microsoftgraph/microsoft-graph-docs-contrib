@@ -1,15 +1,20 @@
 ---
 title: "windowsInformationProtectionDesktopApp resource type"
 description: "Desktop App for Windows information protection"
+author: "rolyon"
+localization_priority: Normal
+ms.prod: "Intune"
+doc_type: resourcePageType
 ---
 
 # windowsInformationProtectionDesktopApp resource type
 
-> **Important:** APIs under the / beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported.
+> **Important:** Microsoft Graph APIs under the /beta version are subject to change; production use is not supported.
 
-> **Note:** Using the Microsoft Graph APIs to configure Intune controls and policies still requires that the Intune service is [correctly licensed](https://go.microsoft.com/fwlink/?linkid=839381) by the customer.
+> **Note:** The Microsoft Graph API for Intune requires an [active Intune license](https://go.microsoft.com/fwlink/?linkid=839381) for the tenant.
 
 Desktop App for Windows information protection
+
 
 Inherits from [windowsInformationProtectionApp](../resources/intune-mam-windowsinformationprotectionapp.md)
 
@@ -27,6 +32,7 @@ Inherits from [windowsInformationProtectionApp](../resources/intune-mam-windowsi
 
 ## Relationships
 None
+
 ## JSON Representation
 Here is a JSON representation of the resource.
 <!-- {
@@ -47,8 +53,6 @@ Here is a JSON representation of the resource.
   "binaryVersionHigh": "String"
 }
 ```
-
-
 
 
 

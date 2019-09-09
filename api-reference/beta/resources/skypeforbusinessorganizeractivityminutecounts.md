@@ -1,6 +1,10 @@
 ---
 title: "skypeForBusinessOrganizerActivityMinuteCounts resource type"
 description: "The following is a JSON representation of the resource."
+localization_priority: Normal
+doc_type: resourcePageType
+ms.prod: ""
+author: ""
 ---
 
 # skypeForBusinessOrganizerActivityMinuteCounts resource type
@@ -10,8 +14,8 @@ description: "The following is a JSON representation of the resource."
 | Property           | Type   |
 | :----------------- | :----- |
 | audioVideo         | Int64  |
-| dialInOut3rdParty  | Int64  |
-| dialInOutMicrosoft | Int64  |
+| dialInMicrosoft    | Int64  |
+| dialOutMicrosoft   | Int64  |
 | reportRefreshDate  | Date   |
 | reportDate         | Date   |
 | reportPeriod       | String |
@@ -27,11 +31,11 @@ The following is a JSON representation of the resource.
 
 ```json
 {
-  "audioVideo": 1024, 
-  "dialInMicrosoft": 1024, 
-  "dialOutMicrosoft": 1024, 
-  "reportRefreshDate": "Date", 
-  "reportDate": "Date", 
+  "audioVideo": 1024,
+  "dialInMicrosoft": 1024,
+  "dialOutMicrosoft": 1024,
+  "reportRefreshDate": "Date",
+  "reportDate": "Date",
   "reportPeriod": "String"
 }
 ```

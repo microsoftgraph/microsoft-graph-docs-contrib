@@ -1,6 +1,10 @@
 ---
 title: "Working with groups in Microsoft Graph"
 description: "Groups are collections of users and other principals who share access to resources in Microsoft services or in your app. Microsoft Graph provides APIs that you can use to create and manage different types of groups and group functionality according to your scenario. All group-related operations in Microsoft Graph require administrator consent."
+author: "dkershaw10"
+localization_priority: Priority
+ms.prod: "groups"
+doc_type: conceptualPageType
 ---
 
 # Working with groups in Microsoft Graph
@@ -9,7 +13,7 @@ Groups are collections of [users](user.md) and other principals who share access
 
 > **Note**: Groups can only be created through work or school accounts. Personal Microsoft accounts don't support groups.
 
-| Type              | Use case | groupType | mail-enabled | security-enabled | Can be created via API? |
+| Type              | Use case | groupType | mail-enabled | security-enabled | Can be created and managed via API? |
 |-------------------|----------|-----------|--------------|------------------|--------------------------------|
 | [Office 365 groups](#office-365-groups) | Facilitating user collaboration with shared Microsoft online resources. | `["Unified"]` | `true` | `false` | Yes |
 | [Security groups](#security-groups-and-mail-enabled-security-groups) | Controlling user access to in-app resources. | `[]` | `false` | `true` | Yes |

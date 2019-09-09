@@ -1,6 +1,10 @@
 ---
 title: "sectionGroup resource type"
 description: "A section group in a OneNote notebook. Section groups can contain sections and section groups."
+localization_priority: Normal
+author: "jewan-microsoft"
+ms.prod: "onenote"
+doc_type: resourcePageType
 ---
 
 # sectionGroup resource type

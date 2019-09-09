@@ -1,6 +1,8 @@
 ---
 title: "Known issues with Microsoft Graph"
 description: "This article describes known issues with Microsoft Graph. For information about the latest updates, see the Microsoft Graph changelog."
+author: ""
+localization_priority: Priority
 ---
 
 # Known issues with Microsoft Graph
@@ -31,29 +33,15 @@ Failure to read or update a photo, in this case, would result in the following e
 
 For known issues using delta query, see the [delta query section](#delta-query) in this article.
 
+### Revoke sign-in sessions returns wrong HTTP code
+
+The [user: revokeSignInSessions API](/graph/api/user-revokesigninsessions?view=graph-rest-1.0) should return a `204 No content` response for successful revocations, and an HTTP error code (4xx or 5xx) if anything goes wrong with the request.  However, due to a service issue, this API returns a `200 OK` and a Boolean parameter that is always true.  Until this is fixed, developers are simply advised to treat any 2xx return code as success for this API.
+
+### Incomplete objects when using getByIds request
+
+Requesting objects using [Get directory objects from a list of IDs](/graph/api/directoryobject-getbyids?view=graph-rest-1.0) should return full objects. However, currently [user](/graph/api/resources/user?view=graph-rest-1.0) objects on the v1.0 endpoint are returned with a limited set of properties. As a temporary workaround, when you use the operation in combination with the `$select` query option, more complete [user](/graph/api/resources/user?view=graph-rest-1.0) objects will be returned. This behavior is not in accordance with the OData specifications. Because this behavior might be updated in the future, use this workaround only when you provide `$select=` with all the properties you are interested in, and only if future breaking changes to this workaround are acceptable.
+
 ## Microsoft Teams
-
-### Application permissions
-
-When making changes to teams and channels using application permissions, 
-Microsoft Teams renders the control message posted to the General channel with a blank name instead of the application name. 
-This will be addressed in a future update. 
-The fix will retroactively update control messages that are already posted.
-
-### Create chat thread API
-
-The current API to [create a chat thread](/graph/api/channel-post-chatthreads?view=graph-rest-beta) 
-will be replaced with a richer API that is consistent with the schema for [listing channel messages](/graph/api/channel-list-messages?view=graph-rest-beta).
-
-### Graph Explorer and v1.0
-
-Graph Explorer sample queries have not been updated for v1.0 yet.
-You can still type v1.0 queries into the text box on the top.
-Make sure you have set up Graph Explorer with the appropriate permissions, such as Group.ReadWrite.All and User.Read.All.
-
-### Graph Explorer and Global Admins
-
-Currently, Graph Explorer allows global admins to manipulate teams they are not an owner or member of, but other apps attempting to make the same API calls will fail if the current user is not a member or owner of the team.
 
 ### GET /teams and POST /teams are not supported
 
@@ -99,12 +87,6 @@ Examples of group features that support only delegated permissions:
 
 Using Microsoft Graph to create and name an Office 365 group bypasses any Office 365 group policies that are configured through Outlook Web App.
 
-### Adding and getting attachments of group posts
-
-[Adding](/graph/api/post-post-attachments?view=graph-rest-1.0) attachments to group posts, [listing](/graph/api/post-list-attachments?view=graph-rest-1.0) and
-getting attachments of group posts currently return the error message "The OData request is not supported." A fix has been rolled out for both the `/v1.0` and `/beta` versions,
-and is expected to be widely available by the end of January 2016.
-
 ### Setting the allowExternalSenders property
 
 There is currently an issue that prevents setting the **allowExternalSenders** property of a group in a POST or PATCH operation, in both `/v1.0` and `/beta`.
@@ -143,7 +125,7 @@ GET https://graph.microsoft.com/beta/bookingBusinesses?query=Fabrikam
 When attempting to access events in a calendar that has been shared by another user using the following operation:
 
 ```http
-GET \users('{id}')\calendars('{id}')\events
+GET /users/{id}/calendars/{id}/events
 ```
 
 You may get HTTP 500 with the error code `ErrorInternalServerTransientError`. The error occurs because:
@@ -168,7 +150,7 @@ A calendar shared with you in the new approach appears as just another calendar 
 events in the shared calendar, as if it's your own calendar. As an example:
 
 ```http
-GET \me\calendars('{id}')\events
+GET /me/calendars/{id}/events
 ```
 
 ### Adding and accessing ICS-based calendars in user's mailbox
@@ -260,7 +242,7 @@ In both the v1 and beta endpoints, the response of `GET /users/id/messages` incl
 
 * Multiple namespaces are not supported.
 * GETs on `$ref` and casting is not supported on users, groups, devices, service principals and applications.
-* `@odata.bind` is not supported.  This means that developers won’t be able to properly set the `Accepted` or `RejectedSenders` on a group.
+* `@odata.bind` is not supported.  This means that developers won’t be able to properly set the **acceptedSenders** or **rejectedSenders** navigation property on a group.
 * `@odata.id` is not present on non-containment navigations (like messages) when using minimal metadata.
 * `$expand`:
   * No support for `nextLink`
@@ -323,7 +305,7 @@ Directory resources, such as **device**, **group** and **user**, currently limit
 
 ### Filtering on schema extension properties not supported on all entity types
 
-Filtering on schema extension properties (using the `$filter` expresssion) is not supported for Outlook entity types - **contact**, **event**, **message**, or **post**.
+Filtering on schema extension properties (using the `$filter` expression) is not supported for Outlook entity types - **contact**, **event**, **message**, or **post**.
 
 ## JSON Batching
 
@@ -392,6 +374,3 @@ In the meantime, to unblock development and testing you can use the following wo
 
 Some functionality is not yet available in Microsoft Graph. If you don't see the functionality you're looking for, you can use the endpoint-specific [Office 365 REST APIs](https://msdn.microsoft.com/office/office365/api/api-catalog). For Azure Active Directory, please refer to the [Microsoft Graph or Azure AD Graph](https://dev.office.com/blogs/microsoft-graph-or-azure-ad-graph) blog post on the features that are only available through Azure AD Graph API.
 
-## Feedback
-
-> Your feedback is important to us. Connect with us on [Stack Overflow](https://stackoverflow.com/questions/tagged/microsoftgraph).

@@ -1,15 +1,20 @@
 ---
 title: "windowsManagedDevice resource type"
 description: "Windows devices that are managed or pre-enrolled through Intune"
+author: "rolyon"
+localization_priority: Normal
+ms.prod: "Intune"
+doc_type: resourcePageType
 ---
 
 # windowsManagedDevice resource type
 
-> **Important:** APIs under the / beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported.
+> **Important:** Microsoft Graph APIs under the /beta version are subject to change; production use is not supported.
 
-> **Note:** Using the Microsoft Graph APIs to configure Intune controls and policies still requires that the Intune service is [correctly licensed](https://go.microsoft.com/fwlink/?linkid=839381) by the customer.
+> **Note:** The Microsoft Graph API for Intune requires an [active Intune license](https://go.microsoft.com/fwlink/?linkid=839381) for the tenant.
 
 Windows devices that are managed or pre-enrolled through Intune
+
 
 Inherits from [managedDevice](../resources/intune-devices-manageddevice.md)
 
@@ -80,6 +85,7 @@ Inherits from [managedDevice](../resources/intune-devices-manageddevice.md)
 |freeStorageSpaceInBytes|Int64|Free Storage in Bytes Inherited from [managedDevice](../resources/intune-devices-manageddevice.md)|
 |managedDeviceName|String|Automatically generated name to identify a device. Can be overwritten to a user friendly name. Inherited from [managedDevice](../resources/intune-devices-manageddevice.md)|
 |partnerReportedThreatState|[managedDevicePartnerReportedHealthState](../resources/intune-devices-manageddevicepartnerreportedhealthstate.md)|Indicates the threat state of a device when a Mobile Threat Defense partner is in use by the account and device. Read Only. Inherited from [managedDevice](../resources/intune-devices-manageddevice.md). Possible values are: `unknown`, `activated`, `deactivated`, `secured`, `lowSeverity`, `mediumSeverity`, `highSeverity`, `unresponsive`, `compromised`, `misconfigured`.|
+|retireAfterDateTime|DateTimeOffset|Indicates the time after when a device will be auto retired because of scheduled action. Inherited from [managedDevice](../resources/intune-devices-manageddevice.md)|
 |usersLoggedOn|[loggedOnUser](../resources/intune-devices-loggedonuser.md) collection|Indicates the last logged on users of a device Inherited from [managedDevice](../resources/intune-devices-manageddevice.md)|
 |preferMdmOverGroupPolicyAppliedDateTime|DateTimeOffset|Reports the DateTime the preferMdmOverGroupPolicy setting was set.  When set, the Intune MDM settings will override Group Policy settings if there is a conflict. Read Only. Inherited from [managedDevice](../resources/intune-devices-manageddevice.md)|
 |autopilotEnrolled|Boolean|Reports if the managed device is enrolled via auto-pilot. Inherited from [managedDevice](../resources/intune-devices-manageddevice.md)|
@@ -92,6 +98,7 @@ Inherits from [managedDevice](../resources/intune-devices-manageddevice.md)
 |windowsRemediatedMalwareCount|Int32|Count of remediated malware for this windows device Inherited from [managedDevice](../resources/intune-devices-manageddevice.md)|
 |notes|String|Notes on the device created by IT Admin Inherited from [managedDevice](../resources/intune-devices-manageddevice.md)|
 |configurationManagerClientHealthState|[configurationManagerClientHealthState](../resources/intune-devices-configurationmanagerclienthealthstate.md)|Configuration manager client health state, valid only for devices managed by MDM/ConfigMgr Agent Inherited from [managedDevice](../resources/intune-devices-manageddevice.md)|
+|configurationManagerClientInformation|[configurationManagerClientInformation](../resources/intune-devices-configurationmanagerclientinformation.md)|Configuration manager client information, valid only for devices managed, duel-managed or tri-managed by ConfigMgr Agent Inherited from [managedDevice](../resources/intune-devices-manageddevice.md)|
 
 ## Relationships
 |Relationship|Type|Description|
@@ -99,6 +106,7 @@ Inherits from [managedDevice](../resources/intune-devices-manageddevice.md)
 |detectedApps|[detectedApp](../resources/intune-devices-detectedapp.md) collection|All applications currently installed on the device Inherited from [managedDevice](../resources/intune-devices-manageddevice.md)|
 |deviceCategory|[deviceCategory](../resources/intune-shared-devicecategory.md)|Device category Inherited from [managedDevice](../resources/intune-devices-manageddevice.md)|
 |windowsProtectionState|[windowsProtectionState](../resources/intune-devices-windowsprotectionstate.md)|The device protection status. Inherited from [managedDevice](../resources/intune-devices-manageddevice.md)|
+|users|[user](../resources/intune-shared-user.md) collection|The primary users associated with the managed device. Inherited from [managedDevice](../resources/intune-devices-manageddevice.md)|
 
 ## JSON Representation
 Here is a JSON representation of the resource.
@@ -145,7 +153,8 @@ Here is a JSON representation of the resource.
     "deviceFullQualifiedDomainName": "String",
     "deviceGuardVirtualizationBasedSecurityHardwareRequirementState": "String",
     "deviceGuardVirtualizationBasedSecurityState": "String",
-    "deviceGuardLocalSystemAuthorityCredentialGuardState": "String"
+    "deviceGuardLocalSystemAuthorityCredentialGuardState": "String",
+    "osBuildNumber": "String"
   },
   "ownerType": "String",
   "managedDeviceOwnerType": "String",
@@ -204,7 +213,9 @@ Here is a JSON representation of the resource.
     "resourceAccess": true,
     "deviceConfiguration": true,
     "compliancePolicy": true,
-    "windowsUpdateForBusiness": true
+    "windowsUpdateForBusiness": true,
+    "endpointProtection": true,
+    "officeApps": true
   },
   "wiFiMacAddress": "String",
   "deviceHealthAttestationState": {
@@ -248,6 +259,7 @@ Here is a JSON representation of the resource.
   "freeStorageSpaceInBytes": 1024,
   "managedDeviceName": "String",
   "partnerReportedThreatState": "String",
+  "retireAfterDateTime": "String (timestamp)",
   "usersLoggedOn": [
     {
       "@odata.type": "microsoft.graph.loggedOnUser",
@@ -272,11 +284,13 @@ Here is a JSON representation of the resource.
     "state": "String",
     "errorCode": 1024,
     "lastSyncDateTime": "String (timestamp)"
+  },
+  "configurationManagerClientInformation": {
+    "@odata.type": "microsoft.graph.configurationManagerClientInformation",
+    "clientIdentifier": "String"
   }
 }
 ```
-
-
 
 
 

@@ -1,11 +1,15 @@
 ---
 title: "workbookRangeView: range"
 description: "Return the range associated with the rangeView resource."
+author: "lumine2008"
+localization_priority: Normal
+ms.prod: "excel"
+doc_type: apiPageType
 ---
 
 # workbookRangeView: range
 
-> **Important:** APIs under the /beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported.
+[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 Return the range associated with the rangeView resource.
 
@@ -35,7 +39,7 @@ GET me/drive/root/workbook/worksheets/{id}/range(addres={address})/visibleView/r
 
 ## Response
 
-If successful, this method returns `200 OK` response code and [workbookRange](../resources/range.md) object in the response body.
+If successful, this method returns `200 OK` response code and [workbookRange](../resources/workbookrange.md) object in the response body.
 
 ## Example
 Here is an example of how to call this API.
@@ -54,7 +58,7 @@ Here is an example of the response. Note: The response object shown here may be 
 <!-- {
   "blockType": "response",
   "truncated": true,
-  "@odata.type": "microsoft.graph.range"
+  "@odata.type": "microsoft.graph.workbookRange"
 } -->
 ```http
 HTTP/1.1 200 OK

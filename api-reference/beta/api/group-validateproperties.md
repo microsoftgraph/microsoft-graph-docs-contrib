@@ -1,6 +1,10 @@
 ---
 title: "group: validateProperties"
 description: "Validate if an Office 365 group's display name or mail nickname complies with naming policies. Clients can use the API to determine if a display name or mail nickname is valid before trying to **update** an Office 365 group. For validating properties before creating a group, use the validateProperties function for directory objects."
+localization_priority: Normal
+author: "dkershaw10"
+ms.prod: "groups"
+doc_type: apiPageType
 ---
 
 # group: validateProperties
@@ -26,7 +30,7 @@ One of the following permissions is required to call this API. To learn more, in
 ## HTTP request
 <!-- { "blockType": "ignored" } -->
 ``` http
-POST /groups/<id>/validateProperties
+POST /groups/{id}/validateProperties
 ```
 
 ## Request headers
@@ -58,6 +62,8 @@ If there is a validation error. The method returns `422 Unprocessable Entity` re
 This is an example of a successful validation request.
 
 ### Request
+
+# [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "group_validateproperties"
@@ -73,6 +79,20 @@ Content-length: 132
   "onBehalfOfUserId": "onBehalfOfUserId-value"
 }
 ```
+# [C#](#tab/csharp)
+[!INCLUDE [sample-code](../includes/snippets/csharp/group-validateproperties-csharp-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [JavaScript](#tab/javascript)
+[!INCLUDE [sample-code](../includes/snippets/javascript/group-validateproperties-javascript-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Objective-C](#tab/objc)
+[!INCLUDE [sample-code](../includes/snippets/objc/group-validateproperties-objc-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+---
+
 
 ### Response
 <!-- {
@@ -129,5 +149,7 @@ Content-length: 223
   "description": "group: validateProperties",
   "keywords": "",
   "section": "documentation",
-  "tocPath": ""
+  "tocPath": "",
+  "suppressions": [
+  ]
 }-->

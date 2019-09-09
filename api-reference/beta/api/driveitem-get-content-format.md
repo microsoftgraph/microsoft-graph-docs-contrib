@@ -1,12 +1,15 @@
 ---
-author: rgregg
-ms.author: rgregg
+author: JeremyKelley
+description: "Use this API to retrieve the contents of an item in a specific format."
 ms.date: 09/10/2017
 title: Convert to other formats
+localization_priority: Normal
+ms.prod: "sharepoint"
+doc_type: apiPageType
 ---
 # Download a file in another format
 
-> **Important:** APIs under the /beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported.
+[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 Use this API to retrieve the contents of an item in a specific format.
 Not all files can be converted into all formats.
@@ -50,11 +53,27 @@ The following values are valid for the **format** parameter:
 
 ## Example
 
+
+# [HTTP](#tab/http)
 <!-- { "blockType": "request", "name": "convert-item-content", "scopes": "files.read" } -->
 
-```http
+```msgraph-interactive
 GET /drive/items/{item-id}/content?format={format}
 ```
+# [C#](#tab/csharp)
+[!INCLUDE [sample-code](../includes/snippets/csharp/convert-item-content-csharp-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [JavaScript](#tab/javascript)
+[!INCLUDE [sample-code](../includes/snippets/javascript/convert-item-content-javascript-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Objective-C](#tab/objc)
+[!INCLUDE [sample-code](../includes/snippets/objc/convert-item-content-objc-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+---
+
 
 ## Response
 
@@ -78,10 +97,14 @@ See [Error Responses][error-response] for more information about how errors are 
 [error-response]: /graph/errors
 [file-facet]: ../resources/file.md
 
-<!-- {
+<!--
+{
   "type": "#page.annotation",
   "description": "Convert the contents of an item in OneDrive to a different format.",
   "keywords": "convert,pdf,convert to pdf",
   "section": "documentation",
-  "tocPath": "Items/Download formats"
-} -->
+  "tocPath": "Items/Download formats",
+  "suppressions": [
+  ]
+}
+-->

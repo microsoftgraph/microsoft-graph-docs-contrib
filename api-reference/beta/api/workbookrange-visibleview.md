@@ -1,11 +1,15 @@
 ---
 title: "workbookRange: visibleView"
 description: "One of the following permissions is required to call this API. To learn more, including how to choose permissions, see Permissions."
+localization_priority: Normal
+author: "lumine2008"
+ms.prod: "excel"
+doc_type: apiPageType
 ---
 
 # workbookRange: visibleView
 
-> **Important:** APIs under the /beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported.
+[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 ## Permissions
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).

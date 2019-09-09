@@ -1,6 +1,10 @@
 ---
 title: "contactFolder resource type"
 description: "A folder that contains contacts."
+author: "angelgolfer-ms"
+localization_priority: Normal
+ms.prod: "outlook"
+doc_type: resourcePageType
 ---
 
 # contactFolder resource type

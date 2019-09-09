@@ -1,11 +1,15 @@
 ---
 title: "privilegedRole: selfActivate"
 description: "Activate the role that is assigned to the requester."
+localization_priority: Normal
+doc_type: apiPageType
+ms.prod: ""
+author: ""
 ---
 
 # privilegedRole: selfActivate
 
->**Important:** APIs under the /beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported.
+[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 Activate the role that is assigned to the requester.
 
@@ -30,7 +34,7 @@ The requestor can only call ```selfActivate``` for the role that is assigned to 
 POST /privilegedRoles/{id}/selfActivate
 ```
 
-Note that ``<id>`` is the target role ID.
+Note that ``{id}`` is the target role ID.
 ## Request headers
 | Name       | Description|
 |:---------------|:----------|
@@ -55,6 +59,8 @@ Note that the tenant needs to be registered to PIM. Otherwise, the HTTP 403 Forb
 The following example shows how to call this API.
 ##### Request
 Here is an example of the request.
+
+# [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "privilegedrole_selfactivate"
@@ -71,6 +77,20 @@ Content-length: 142
   "ticketSystem": "ticketSystem-value"
 }
 ```
+# [C#](#tab/csharp)
+[!INCLUDE [sample-code](../includes/snippets/csharp/privilegedrole-selfactivate-csharp-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [JavaScript](#tab/javascript)
+[!INCLUDE [sample-code](../includes/snippets/javascript/privilegedrole-selfactivate-javascript-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Objective-C](#tab/objc)
+[!INCLUDE [sample-code](../includes/snippets/objc/privilegedrole-selfactivate-objc-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+---
+
 
 ##### Response
 Here is an example of the response. 
@@ -98,10 +118,14 @@ Content-length: 184
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2015-10-25 14:57:30 UTC -->
-<!-- {
+<!--
+{
   "type": "#page.annotation",
   "description": "privilegedRole: selfActivate",
   "keywords": "",
   "section": "documentation",
-  "tocPath": ""
-}-->
+  "tocPath": "",
+  "suppressions": [
+  ]
+}
+-->

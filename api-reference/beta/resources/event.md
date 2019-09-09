@@ -1,13 +1,19 @@
 ---
 title: "event resource type"
 description: "An event in a calendar."
+author: "angelgolfer-ms"
+localization_priority: Priority
+ms.prod: "outlook"
+doc_type: resourcePageType
 ---
 
 # event resource type
 
-> **Important:** APIs under the /beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported.
+[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-An event in a calendar.
+An event in a [user](user.md) calendar, or the default calendar of an Office 365 [group](group.md).
+
+The maximum number of attendees included in an **event**, and the maximum number of reciepients in an [eventMessage](eventmessage.md) sent from an Exchange Online mailbox is 500. For more information, see [sending limits](https://docs.microsoft.com/en-us/office365/servicedescriptions/exchange-online-service-description/exchange-online-limits#sending-limits).
 
 This resource supports:
 
@@ -15,19 +21,26 @@ This resource supports:
 - Subscribing to [change notifications](/graph/webhooks).
 - Using [delta query](/graph/delta-query-overview) to track incremental additions, deletions, and updates, by providing a [delta](../api/event-delta.md) function.
 
+> **Note:** There are a few minor differences in the way you can interact with user calendars, group calendars, and their events:
+
+- You can organize only user calendars in a [calendarGroup](calendargroup.md).
+- Outlook automatically accepts all meeting requests on behalf of groups. You can [accept](../api/event-accept.md), [tentatively accept](../api/event-tentativelyaccept.md), or [decline](../api/event-decline.md)  meeting requests for _user_ calendars only.
+- Outlook doesn't support reminders for group events. You can [snooze](../api/event-snoozereminder.md) or [dismiss](../api/event-dismissreminder.md) a [reminder](reminder.md) for _user_ calendars only.
+
 ## JSON representation
 
 Here is a JSON representation of the resource
 
 <!-- {
   "blockType": "resource",
+   "keyProperty": "id",
   "optionalProperties": [
     "attachments",
     "calendar",
     "extensions",
     "instances",
-    "multiValueExtendedProperties",
-    "singleValueExtendedProperties"
+    "singleValueExtendedProperties",
+    "multiValueExtendedProperties"
   ],
   "@odata.type": "microsoft.graph.event"
 }-->
@@ -42,7 +55,7 @@ Here is a JSON representation of the resource
   "createdDateTime": "String (timestamp)",
   "end": {"@odata.type": "microsoft.graph.dateTimeTimeZone"},
   "hasAttachments": true,
-  "iud": "string",
+  "uid": "string",
   "id": "string (identifier)",
   "importance": "String",
   "isAllDay": true,
@@ -68,13 +81,13 @@ Here is a JSON representation of the resource
   "subject": "string",
   "type": "String",
   "webLink": "string",
-  
+
   "attachments": [ { "@odata.type": "microsoft.graph.attachment" } ],
   "calendar": { "@odata.type": "microsoft.graph.calendar" },
   "extensions": [ { "@odata.type": "microsoft.graph.extension" } ],
   "instances": [ { "@odata.type": "microsoft.graph.event" }],
-  "multiValueExtendedProperties": [ { "@odata.type": "microsoft.graph.multiValueLegacyExtendedProperty" }],
-  "singleValueExtendedProperties": [ { "@odata.type": "microsoft.graph.singleValueLegacyExtendedProperty" }]
+  "singleValueExtendedProperties": [ { "@odata.type": "microsoft.graph.singleValueLegacyExtendedProperty" }],
+  "multiValueExtendedProperties": [ { "@odata.type": "microsoft.graph.multiValueLegacyExtendedProperty" }]
 }
 
 ```
@@ -87,9 +100,9 @@ Here is a JSON representation of the resource
 |categories|String collection|The categories associated with the event. Each category corresponds to the **displayName** property of an [outlookCategory](outlookcategory.md) defined for the user.|
 |changeKey|String|Identifies the version of the event object. Every time the event is changed, ChangeKey changes as well. This allows Exchange to apply changes to the correct version of the object.|
 |createdDateTime|DateTimeOffset|The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 would look like this: `'2014-01-01T00:00:00Z'`|
-|end|[DateTimeTimeZone](datetimetimezone.md)|The date and time that the event ends.|
+|end|[DateTimeTimeZone](datetimetimezone.md)|The date, time, and time zone that the event ends. By default, the end time is in UTC.|
 |hasAttachments|Boolean|Set to true if the event has attachments.|
-|id|String| Read-only.|
+|id|String| Unique identifier for the event. [!INCLUDE [outlook-beta-id](../../includes/outlook-beta-id.md)] Read-only. |
 |importance|String|The importance of the event. Possible values are: `low`, `normal`, `high`.|
 |isAllDay|Boolean|Set to true if the event lasts all day.|
 |isCancelled|Boolean|Set to true if the event has been canceled.|
@@ -110,11 +123,21 @@ Here is a JSON representation of the resource
 |sensitivity|String| Possible values are: `normal`, `personal`, `private`, `confidential`.|
 |seriesMasterId|String|The ID for the recurring series master item, if this event is part of a recurring series.|
 |showAs|String|The status to show. Possible values are: `free`, `tentative`, `busy`, `oof`, `workingElsewhere`, `unknown`.|
-|start|[DateTimeTimeZone](datetimetimezone.md)|The start time of the event.|
+|start|[DateTimeTimeZone](datetimetimezone.md)|The start date, time, and time zone of the event. By default, the start time is in UTC.|
 |subject|String|The text of the event's subject line.|
 |type|String|The event type. Possible values are: `singleInstance`, `occurrence`, `exception`, `seriesMaster`. Read-only|
 |uid|String|A unique identifier that is shared by all instances of an event across different calendars. **Note:** this property serves the same purpose as the `iCalUid` property on the [event resource](/graph/api/resources/event?view=graph-rest-1.0) on the v1.0 endpoint, but is not guaranteed to have the same value.|
-|webLink|String|The URL to open the event in Outlook Web App.<br/><br/>The event will open in the browser if you are logged in to your mailbox via Outlook Web App. You will be prompted to login if you are not already logged in with the browser.<br/><br/>This URL can be accessed from within an iFrame.|
+|webLink|String|The URL to open the event in Outlook on the web.<br/><br/>Outlook on the web opens the event in the browser if you are signed in to your mailbox. Otherwise, Outlook on the web prompts you to sign in.<br/><br/>This URL can be accessed from within an iFrame.|
+
+> [!NOTE]
+> The **webLink** property specifies a URL that opens the event in only earlier versions of Outlook on the web. The following is its URL format, with _{event-id}_ being the URL-encoded value of the **id** property:
+>
+> `https://outlook.office365.com/owa/?itemid={event-id}&exvsurl=1&path=/calendar/item`
+>
+> To open the URL in a current version of Outlook on the web, convert the URL to the following format:
+>
+> `https://outlook.office365.com/calendar/item/{event-id}`
+
 
 ## Relationships
 | Relationship | Type	|Description|
@@ -136,13 +159,13 @@ Here is a JSON representation of the resource
 |[Update](../api/event-update.md) | [event](event.md)	|Update event object. |
 |[Delete](../api/event-delete.md) | None |Delete event object. |
 |[cancel](../api/event-cancel.md) | None | Send cancellation message from the organizer to all the attendees and cancel the specified meeting. |
-|[accept](../api/event-accept.md)|None|Accept the specified event.|
-|[tentativelyAccept](../api/event-tentativelyaccept.md)|None|Tentatively accept the specified event.|
-|[decline](../api/event-decline.md)|None|Decline invitation to the specified event.|
+|[accept](../api/event-accept.md)|None|Accept the specified event in a user calendar.|
+|[tentativelyAccept](../api/event-tentativelyaccept.md)|None|Tentatively accept the specified event in a user calendar.|
+|[decline](../api/event-decline.md)|None|Decline invitation to the specified event in a user calendar.|
 |[forward](../api/event-forward.md)|None|Lets the organizer or attendee of a meeting event forward the meeting request to a new recipient.|
 |[delta](../api/event-delta.md)|[event](event.md) collection|Get a set of events that have been added, deleted, or updated in a **calendarView** (a range of events) of the user's primary calendar.|
-|[dismissReminder](../api/event-dismissreminder.md)|None|Dismiss the reminder for the specified event.|
-|[snoozeReminder](../api/event-snoozereminder.md)|None|Snooze the reminder for the specified event.|
+|[dismissReminder](../api/event-dismissreminder.md)|None|Dismiss the reminder for the specified event in a user calendar.|
+|[snoozeReminder](../api/event-snoozereminder.md)|None|Postpone a reminder for the specified event in a user calendar until a new time.|
 |[List instances](../api/event-list-instances.md) |[Event](event.md) collection| Get a Event object collection.|
 |**Attachments**| | |
 |[List attachments](../api/event-list-attachments.md) |[Attachment](attachment.md) collection| Get all attachments on an event.|
@@ -168,10 +191,13 @@ Here is a JSON representation of the resource
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2015-10-25 14:57:30 UTC -->
-<!-- {
+<!--
+{
   "type": "#page.annotation",
   "description": "event resource",
   "keywords": "",
   "section": "documentation",
-  "tocPath": ""
-}-->
+  "tocPath": "",
+  "suppressions": []
+}
+-->

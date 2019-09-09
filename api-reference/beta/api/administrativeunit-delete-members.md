@@ -1,11 +1,15 @@
 ---
 title: "Remove a member"
 description: "Use this API to remove a member (user or group) from an administrative unit."
+author: "davidmu1"
+localization_priority: Normal
+ms.prod: "microsoft-identity-platform"
+doc_type: apiPageType
 ---
 
 # Remove a member
 
-> **Important:** APIs under the /beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported.
+[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 Use this API to remove a member (user or group) from an administrative unit.
 
@@ -15,9 +19,9 @@ One of the following permissions is required to call this API. To learn more, in
 
 |Permission type      | Permissions (from least to most privileged)              |
 |:--------------------|:---------------------------------------------------------|
-|Delegated (work or school account) | Directory.AccessAsUser.All    |
+|Delegated (work or school account) | AdministrativeUnit.ReadWrite.All, Directory.AccessAsUser.All    |
 |Delegated (personal Microsoft account) | Not supported.    |
-|Application | Not supported. |
+|Application | AdministrativeUnit.ReadWrite.All |
 
 ## HTTP request
 <!-- { "blockType": "ignored" } -->

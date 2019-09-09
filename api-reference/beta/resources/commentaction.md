@@ -1,12 +1,15 @@
 ---
 author: daspek
-ms.author: dspektor
+description: "The CommentAction resource provides information about a comment activity made on an item."
 ms.date: 09/14/2017
 title: CommentAction
+localization_priority: Normal
+doc_type: resourcePageType
+ms.prod: ""
 ---
 # CommentAction resource type
 
-> **Important:** APIs under the /beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported.
+[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 The **CommentAction** resource provides information about a comment [activity][] made on an item.
 
@@ -42,10 +45,13 @@ The **CommentAction** resource provides information about a comment [activity][]
 
 Item activity records are currently only available on SharePoint and OneDrive for Business.
 
-<!-- {
+<!--
+{
   "type": "#page.annotation",
   "description": "The CommentAction object provides information about a comment that was made on an item.",
   "keywords": "activities,activity,action,comment",
   "section": "documentation",
-  "tocPath": "Resources/CommentAction"
-} -->
+  "tocPath": "Resources/CommentAction",
+  "suppressions": []
+}
+-->

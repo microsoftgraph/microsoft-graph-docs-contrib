@@ -1,6 +1,10 @@
 ---
 title: "ChartLegendFormat resource type"
 description: "Encapsulates the format properties of a chart legend."
+author: "lumine2008"
+localization_priority: Normal
+ms.prod: "excel"
+doc_type: resourcePageType
 ---
 
 # ChartLegendFormat resource type

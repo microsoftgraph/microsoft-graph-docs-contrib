@@ -1,11 +1,15 @@
 ---
 title: "Clone a team"
 description: "Create a copy of a team. This operation also creates a copy of the corresponding group."
+author: "nkramer"
+localization_priority: Normal
+ms.prod: "microsoft-teams"
+doc_type: apiPageType
 ---
 
 # Clone a team
 
-> **Important:** APIs under the /beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported.
+[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 Create a copy of a [team](../resources/team.md). This operation also creates a copy of the corresponding [group](../resources/group.md).
 You can specify which parts of the team to clone:
@@ -21,7 +25,8 @@ When tabs are cloned, they are put into an unconfigured state
 (If the person opening the tab does not have permission to configure apps, they will see a message explaining that the tab hasn't been configured.)
 
 Cloning is a long-running operation.
-After the POST clone returns, you need to GET the [operation](../resources/teamsasyncoperation.md) to see if it's "running" or "succeeded" or "failed". 
+After the POST clone returns, you need to GET the [operation](../resources/teamsasyncoperation.md) 
+returned by the Location: header to see if it's "running" or "succeeded" or "failed". 
 You should continue to GET until the status is not "running". 
 The recommended delay between GETs is 5 seconds.
 
@@ -55,7 +60,7 @@ POST /teams/{id}/clone
 |description|String (optional)|An optional description for the group. If this property is not specified, it will be left blank.|
 |displayName|String|The display name for the group. This property is required when a group is created and it cannot be cleared during updates. Supports $filter and $orderby.|
 |mailNickname|String|The mail alias for the group, unique in the organization. This property must be specified when a group is created. Supports $filter. If this property is not specified, it will be computed from the displayName. Known issue: this property is currently ignored.|
-|partsToClone| [clonableTeamParts](../resources/clonableteamparts.md) |A comma-seperated list of the parts to clone. Legal parts are "apps, tabs, settings, channels, members".|
+|partsToClone| [clonableTeamParts](../resources/clonableteamparts.md) |A comma-separated list of the parts to clone. Legal parts are "apps, tabs, settings, channels, members".|
 |visibility|[teamVisibilityType](../resources/teamvisibilitytype.md) (optional)| Specifies the visibility of the group. Possible values are: **Private**, **Public**. If visibility is not specified, the visibility will be copied from the original team/group. If the team being cloned is an **educationClass** team, the visibility parameter is ignored, and the new group's visibility will be set to HiddenMembership.|
 
 ## Response
@@ -92,17 +97,20 @@ The following is an example of the response. Note: The response object shown her
 } -->
 ```http
 HTTP/1.1 202 Accepted
-Location: /teams{id}/operations({opId})
+Location: /teams({id})/operations({opId})
 Content-Type: text/plain
 Content-Length: 0
 ```
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2015-10-25 14:57:30 UTC -->
-<!-- {
+<!--
+{
   "type": "#page.annotation",
   "description": "Create Team",
   "keywords": "",
   "section": "documentation",
-  "tocPath": ""
-}-->
+  "tocPath": "",
+  "suppressions": []
+}
+-->

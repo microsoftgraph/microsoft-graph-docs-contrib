@@ -1,18 +1,25 @@
 ---
 title: "androidManagedStoreAppConfigurationSchemaItem resource type"
 description: "Single configuration item inside an Android application's custom configuration schema."
+author: "rolyon"
+localization_priority: Normal
+ms.prod: "Intune"
+doc_type: resourcePageType
 ---
 
 # androidManagedStoreAppConfigurationSchemaItem resource type
 
-> **Important:** APIs under the / beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported.
+> **Important:** Microsoft Graph APIs under the /beta version are subject to change; production use is not supported.
 
-> **Note:** Using the Microsoft Graph APIs to configure Intune controls and policies still requires that the Intune service is [correctly licensed](https://go.microsoft.com/fwlink/?linkid=839381) by the customer.
+> **Note:** The Microsoft Graph API for Intune requires an [active Intune license](https://go.microsoft.com/fwlink/?linkid=839381) for the tenant.
 
 Single configuration item inside an Android application's custom configuration schema.
+
 ## Properties
 |Property|Type|Description|
 |:---|:---|:---|
+|index|Int32|Unique index the application uses to maintain nested schema items|
+|parentIndex|Int32|Index of parent schema item to track nested schema items|
 |schemaItemKey|String|Unique key the application uses to identify the item|
 |displayName|String|Human readable name|
 |description|String|Description of what the item controls within the application|
@@ -25,6 +32,7 @@ Single configuration item inside an Android application's custom configuration s
 
 ## Relationships
 None
+
 ## JSON Representation
 Here is a JSON representation of the resource.
 <!-- {
@@ -35,6 +43,8 @@ Here is a JSON representation of the resource.
 ``` json
 {
   "@odata.type": "#microsoft.graph.androidManagedStoreAppConfigurationSchemaItem",
+  "index": 1024,
+  "parentIndex": 1024,
   "schemaItemKey": "String",
   "displayName": "String",
   "description": "String",
@@ -54,8 +64,6 @@ Here is a JSON representation of the resource.
   ]
 }
 ```
-
-
 
 
 

@@ -1,6 +1,10 @@
 ---
 title: "responseStatus resource type"
 description: "The response status of a meeting request."
+localization_priority: Normal
+author: ""
+ms.prod: ""
+doc_type: resourcePageType
 ---
 
 # responseStatus resource type

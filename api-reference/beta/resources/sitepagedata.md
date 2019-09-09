@@ -1,12 +1,15 @@
 ---
 author: rahmit
-ms.author: rahmit
+description: "The sitePageData resource represents the properties of a webPart. As these properties vary by web part, this is an OpenType with no fixed properties."
 ms.date: 09/01/2018
 title: SitePageData
+localization_priority: Normal
+ms.prod: "sharepoint"
+doc_type: resourcePageType
 ---
 # sitePageData resource
 
-> **Important:** APIs under the /beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported.
+[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 The **sitePageData** resource represents the properties of a [webPart][]. As these properties vary by web part, this is an OpenType with no fixed properties.
 
@@ -17,7 +20,8 @@ The **sitePageData** resource represents the properties of a [webPart][]. As the
 <!-- {
   "blockType": "resource",
   "optionalProperties": [  ],
-  "@odata.type": "microsoft.graph.sitePageData"
+  "@odata.type": "microsoft.graph.sitePageData",
+   "openType": true
 }-->
 
 ```json
@@ -28,10 +32,13 @@ The **sitePageData** resource represents the properties of a [webPart][]. As the
 ## Properties
 This resource has no fixed properties, but is an OpenType containing all properties necessary to define a web part.
 
-<!-- {
+<!--
+{
   "type": "#page.annotation",
   "description": "Defines the data in a web part",
   "keywords": "",
   "section": "documentation",
-  "tocPath": "Resources/SitePageData"
-} -->
+  "tocPath": "Resources/SitePageData",
+  "suppressions": []
+}
+-->

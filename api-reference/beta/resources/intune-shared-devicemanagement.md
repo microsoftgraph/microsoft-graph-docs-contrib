@@ -1,11 +1,17 @@
 ---
 title: "deviceManagement resource type"
 description: "The deviceManagement resource represents a container whose contents vary according to workflow, including:  "
+localization_priority: Normal
+author: "rolyon"
+ms.prod: "intune"
+doc_type: resourcePageType
 ---
 
 # deviceManagement resource type
 
-> **Note:** Using the Microsoft Graph APIs to configure Intune controls and policies still requires that the Intune service is [correctly licensed](https://go.microsoft.com/fwlink/?linkid=839381) by the customer.
+> **Important:** Microsoft Graph APIs under the /beta version are subject to change; production use is not supported.
+
+> **Note:** The Microsoft Graph API for Intune requires an [active Intune license](https://go.microsoft.com/fwlink/?linkid=839381) for the tenant.
 
 The deviceManagement resource represents a container whose contents vary according to workflow, including:  
 
@@ -14,11 +20,13 @@ The deviceManagement resource represents a container whose contents vary accordi
 - Corporate terms and conditions 
 - Corporate enrollment profiles
 - Device configuration settings
+- Device intent settings
 - Device management
 - Electronic SIM (ESIM)
 - Fencing
 - Notifications
 - Onboarding policies, settings, and details
+- Resource Access Policy
 - Remote access
 - Remote assistance partners
 - Role-based access control (RBAC) policies
@@ -62,6 +70,8 @@ The deviceManagement resource represents a container whose contents vary accordi
 |windowsMalwareOverview|[windowsMalwareOverview](../resources/intune-devices-windowsmalwareoverview.md)|Malware overview for windows devices.|
 |**Onboarding**|
 |intuneBrand|[intuneBrand](../resources/intune-onboarding-intunebrand.md)|intuneBrand contains data which is used in customizing the appearance of the Company Portal applications as well as the end user web portal.|
+|**Odj**|
+|domainJoinConnectors|[deviceManagementDomainJoinConnector](../resources/intune-odj-devicemanagementdomainjoinconnector.md) collection|A list of connector objects.|
 
 ## Relationships
 |Relationship|Type|Description&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;|
@@ -95,6 +105,11 @@ The deviceManagement resource represents a container whose contents vary accordi
 |iosUpdateStatuses|[iosUpdateDeviceStatus](../resources/intune-deviceconfig-iosupdatedevicestatus.md) collection|The IOS software update installation statuses for this account.|
 |ndesConnectors|[ndesConnector](../resources/intune-deviceconfig-ndesconnector.md) collection|The collection of Ndes connectors for this account.|
 |softwareUpdateStatusSummary|[softwareUpdateStatusSummary](../resources/intune-deviceconfig-softwareupdatestatussummary.md)|The software update status summary.|
+|**Device intent**|
+|intents|[deviceManagementIntent](../resources/intune-deviceintent-devicemanagementintent.md) collection|The device management intents|
+|settingDefinitions|[deviceManagementSettingDefinition](../resources/intune-deviceintent-devicemanagementsettingdefinition.md) collection|The device management intent setting definitions|
+|templates|[deviceManagementTemplate](../resources/intune-deviceintent-devicemanagementtemplate.md) collection|The available templates|
+|categories|[deviceManagementSettingCategory](../resources/intune-deviceintent-devicemanagementsettingcategory.md) collection|The available categories|
 |**Device management**|
 |applePushNotificationCertificate|[applePushNotificationCertificate](../resources/intune-devices-applepushnotificationcertificate.md)|Apple push notification certificate.|
 |dataSharingConsents|[dataSharingConsent](../resources/intune-devices-datasharingconsent.md) collection|Data sharing consents.|
@@ -108,7 +123,6 @@ The deviceManagement resource represents a container whose contents vary accordi
 |depOnboardingSettings|[depOnboardingSetting](../resources/intune-enrollment-deponboardingsetting.md) collection|This collections of multiple DEP tokens per-tenant.|
 |importedDeviceIdentities|[importedDeviceIdentity](../resources/intune-enrollment-importeddeviceidentity.md) collection|The imported device identities.|
 |importedWindowsAutopilotDeviceIdentities|[importedWindowsAutopilotDeviceIdentity](../resources/intune-enrollment-importedwindowsautopilotdeviceidentity.md) collection|Collection of imported Windows autopilot devices.|
-|importedWindowsAutopilotDeviceIdentityUploads|[importedWindowsAutopilotDeviceIdentityUpload](../resources/intune-enrollment-importedwindowsautopilotdeviceidentityupload.md) collection|Collection of Windows autopilot devices upload.|
 |windowsAutopilotDeploymentProfiles|[windowsAutopilotDeploymentProfile](../resources/intune-enrollment-windowsautopilotdeploymentprofile.md) collection|Windows auto pilot deployment profiles|
 |windowsAutopilotDeviceIdentities|[windowsAutopilotDeviceIdentity](../resources/intune-enrollment-windowsautopilotdeviceidentity.md) collection|The Windows autopilot device identities contained collection.|
 |windowsAutopilotSettings|[windowsAutopilotSettings](../resources/intune-enrollment-windowsautopilotsettings.md)|The Windows autopilot account settings.|
@@ -128,6 +142,8 @@ The deviceManagement resource represents a container whose contents vary accordi
 |exchangeOnPremisesPolicies|[deviceManagementExchangeOnPremisesPolicy](../resources/intune-onboarding-devicemanagementexchangeonpremisespolicy.md) collection|The list of Exchange On Premisis policies configured by the tenant.|
 |exchangeOnPremisesPolicy|[deviceManagementExchangeOnPremisesPolicy](../resources/intune-onboarding-devicemanagementexchangeonpremisespolicy.md)|The policy which controls mobile device access to Exchange On Premises|
 |mobileThreatDefenseConnectors|[mobileThreatDefenseConnector](../resources/intune-onboarding-mobilethreatdefenseconnector.md) collection|The list of Mobile threat Defense connectors configured by the tenant.|
+|**Resource Access Polcy**|
+|derivedCredentials|[deviceManagementDerivedCredentialSettings](../resources/intune-shared-devicemanagementderivedcredentialsettings.md) collection|Collection of Derived credential settings associated with account.|
 |**Remote access**|
 |userPfxCertificates|[userPFXCertificate](../resources/intune-raimportcerts-userpfxcertificate.md) collection|Collection of PFX certificates associated with a user.|
 |**Remote assistance**|

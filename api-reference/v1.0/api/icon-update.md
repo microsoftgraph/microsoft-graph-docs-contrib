@@ -1,6 +1,10 @@
 ---
 title: "Update icon"
 description: "Update the properties of icon object."
+localization_priority: Normal
+author: ""
+ms.prod: ""
+doc_type: apiPageType
 ---
 
 # Update icon

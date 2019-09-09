@@ -1,11 +1,15 @@
 ---
 title: "List trending"
 description: "Calculated insight that returns the list of items trending around the user."
+author: "simonhult"
+localization_priority: Normal
+ms.prod: "insights"
+doc_type: apiPageType
 ---
 
 # List trending
 
-> **Important:** APIs under the /beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported.
+[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 Calculated insight that returns the list of items trending around the user.
 

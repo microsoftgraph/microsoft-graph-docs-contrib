@@ -1,15 +1,20 @@
 ---
 title: "List iosManagedAppProtections"
 description: "List properties and relationships of the iosManagedAppProtection objects."
+author: "rolyon"
+localization_priority: Normal
+ms.prod: "Intune"
+doc_type: apiPageType
 ---
 
 # List iosManagedAppProtections
 
-> **Important:** APIs under the /beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported.
+> **Important:** Microsoft Graph APIs under the /beta version are subject to change; production use is not supported.
 
-> **Note:** Using the Microsoft Graph APIs to configure Intune controls and policies still requires that the Intune service is [correctly licensed](https://go.microsoft.com/fwlink/?linkid=839381) by the customer.
+> **Note:** The Microsoft Graph API for Intune requires an [active Intune license](https://go.microsoft.com/fwlink/?linkid=839381) for the tenant.
 
 List properties and relationships of the [iosManagedAppProtection](../resources/intune-mam-iosmanagedappprotection.md) objects.
+
 ## Prerequisites
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
 
@@ -17,7 +22,7 @@ One of the following permissions is required to call this API. To learn more, in
 |:---|:---|
 |Delegated (work or school account)|DeviceManagementApps.ReadWrite.All, DeviceManagementApps.Read.All|
 |Delegated (personal Microsoft account)|Not supported.|
-|Application|Not supported.|
+|Application|DeviceManagementApps.ReadWrite.All, DeviceManagementApps.Read.All|
 
 ## HTTP Request
 <!-- {
@@ -41,6 +46,7 @@ Do not supply a request body for this method.
 If successful, this method returns a `200 OK` response code and a collection of [iosManagedAppProtection](../resources/intune-mam-iosmanagedappprotection.md) objects in the response body.
 
 ## Example
+
 ### Request
 Here is an example of the request.
 ``` http
@@ -52,7 +58,7 @@ Here is an example of the response. Note: The response object shown here may be 
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 2870
+Content-Length: 3088
 
 {
   "value": [
@@ -62,6 +68,9 @@ Content-Length: 2870
       "description": "Description value",
       "createdDateTime": "2017-01-01T00:02:43.5775965-08:00",
       "lastModifiedDateTime": "2017-01-01T00:00:35.1329464-08:00",
+      "roleScopeTagIds": [
+        "Role Scope Tag Ids value"
+      ],
       "id": "5bc789cb-89cb-5bc7-cb89-c75bcb89c75b",
       "version": "Version value",
       "periodOfflineBeforeAccessCheck": "-PT17.1357909S",
@@ -97,6 +106,8 @@ Content-Length: 2870
       "appActionIfDeviceComplianceRequired": "wipe",
       "appActionIfMaximumPinRetriesExceeded": "wipe",
       "pinRequiredInsteadOfBiometricTimeout": "-PT3M9.8396734S",
+      "allowedOutboundClipboardSharingExceptionLength": 14,
+      "notificationRestriction": "blockOrganizationalData",
       "isAssigned": true,
       "targetedAppManagementLevels": "unmanaged",
       "appDataEncryptionType": "afterDeviceRestart",
@@ -113,14 +124,15 @@ Content-Length: 2870
       "minimumWipeSdkVersion": "Minimum Wipe Sdk Version value",
       "allowedIosDeviceModels": "Allowed Ios Device Models value",
       "appActionIfIosDeviceModelNotAllowed": "wipe",
-      "thirdPartyKeyboardsBlocked": true,
       "filterOpenInToOnlyManagedApps": true,
       "disableProtectionOfManagedOutboundOpenInData": true,
-      "protectInboundDataFromUnknownSources": true
+      "protectInboundDataFromUnknownSources": true,
+      "customBrowserProtocol": "Custom Browser Protocol value"
     }
   ]
 }
 ```
+
 
 
 

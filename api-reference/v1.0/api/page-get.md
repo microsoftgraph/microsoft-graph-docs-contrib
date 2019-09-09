@@ -1,6 +1,10 @@
 ---
 title: "Get page"
 description: "Retrieve the properties and relationships of a page object."
+localization_priority: Normal
+author: "jewan-microsoft"
+ms.prod: "onenote"
+doc_type: apiPageType
 ---
 
 # Get page

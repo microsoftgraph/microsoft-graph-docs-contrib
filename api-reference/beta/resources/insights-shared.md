@@ -1,16 +1,20 @@
 ---
-title: "shared resource type"
+title: "sharedInsight resource type"
 description: "An insight representing files shared with or by a specific user. The following shared files are supported:"
+author: "simonhult"
+localization_priority: Normal
+ms.prod: "insights"
+doc_type: resourcePageType
 ---
 
-# shared resource type
+# sharedInsight resource type
 
-> **Important:** APIs under the /beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported.
+[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 An insight representing files shared with or by a specific user. The following shared files are supported:
 
 - Files attached directly in an email or a meeting invite.
-- OneDrive for Bussiness and SharePoint modern attachments - files stored in OneDrive for Business and SharePoint that users share as a links in an email.
+- OneDrive for Business and SharePoint modern attachments - files stored in OneDrive for Business and SharePoint that users share as a links in an email.
 
 **Note**: We are currently working on populating the results of the Shared API with data. There may be some data missing in the first weeks after release.
 
@@ -33,11 +37,15 @@ An insight representing files shared with or by a specific user. The following s
 
 | Property      | Type          | Description  |
 | ------------- |---------------| -------------|
-| resource    	| Entity		| Used for navigating to the item that was shared. For file attachments, the type is *fileAttachment*. For linked attachments, the type is *driveItem*. |
+| resource    	| entity collection	| Used for navigating to the item that was shared. For file attachments, the type is *fileAttachment*. For linked attachments, the type is *driveItem*. |
 
 ## JSON representation
 Here is a JSON representation of the resource
-
+<!--{
+  "blockType":"resource",
+  "keyProperty": "id",
+  "@odata.type": "microsoft.graph.sharedInsight"
+}-->
 ```json
 {
   "id": "string",

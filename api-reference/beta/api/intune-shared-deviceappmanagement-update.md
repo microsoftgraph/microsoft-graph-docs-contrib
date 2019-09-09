@@ -1,13 +1,17 @@
 ---
 title: "Update deviceAppManagement"
 description: "Update the properties of a deviceAppManagement object."
+author: "rolyon"
+localization_priority: Normal
+ms.prod: "intune"
+doc_type: apiPageType
 ---
 
 # Update deviceAppManagement
 
-> **Important:** APIs under the /beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported.
+> **Important:** APIs under the /beta version in Microsoft Graph are subject to change. Use of these APIs in production applications is not supported.
 
-> **Note:** Using the Microsoft Graph APIs to configure Intune controls and policies still requires that the Intune service is [correctly licensed](https://go.microsoft.com/fwlink/?linkid=839381) by the customer.
+> **Note:** The Microsoft Graph API for Intune requires an [active Intune license](https://go.microsoft.com/fwlink/?linkid=839381) for the tenant.
 
 Update the properties of a [deviceAppManagement](../resources/intune-shared-deviceappmanagement.md) object.
 ## Prerequisites
@@ -16,7 +20,7 @@ One of the following permissions is required to call this API. To learn more, in
 |Permission type|Permissions (from most to least privileged)|
 |:---|:---|
 | Delegated (work or school account) | |
-| &nbsp; &nbsp; **Apps**, **books**, or **onboarding** | DeviceManagementApps.ReadWrite.All |
+| &nbsp; &nbsp; **Apps**, **books**, **onboarding**, or **Partner Integration** | DeviceManagementApps.ReadWrite.All |
 | &nbsp; &nbsp; **Device management** | DeviceManagementManagedDevices.ReadWrite.All |
 | Delegated (personal Microsoft account) | Not supported. |
 | Application | Not supported. |
@@ -84,6 +88,9 @@ Content-Length: 110
   "id": "bbb801a3-01a3-bbb8-a301-b8bba301b8bb"
 }
 ```
+
+
+
 
 
 

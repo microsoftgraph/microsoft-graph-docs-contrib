@@ -1,12 +1,15 @@
 ---
 author: rahmit
-ms.author: rahmit
+description: "Publish the latest version of a sitePage resource, which makes the version of the page available to all users. If the page is checked out, check in the page and publish it. If the page is checked out to the caller of this API, the page is automatically checked in and then published."
 ms.date: 09/10/2018
 title: Publish Page
+localization_priority: Normal
+ms.prod: "sharepoint"
+doc_type: apiPageType
 ---
 # sitePage: publish
 
-> **Important:** APIs under the /beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported.
+[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 Publish the latest version of a [sitePage][] resource, which makes the version of the page available to all users. If the page is checked out, check in the page and publish it. If the page is checked out to the caller of this API, the page is automatically checked in and then published.
 
@@ -45,10 +48,13 @@ HTTP/1.1 204 No Content
 ```
 
 
-<!-- {
+<!--
+{
   "type": "#page.annotation",
   "description": "Publish a page.",
   "keywords": "publish page",
   "section": "documentation",
-  "tocPath": "Pages/Publish"
-} -->
+  "tocPath": "Pages/Publish",
+  "suppressions": []
+}
+-->

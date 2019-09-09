@@ -1,6 +1,10 @@
 ---
 title: "workingHours resource type"
 description: "Represents the days of the week and hours in a specific time zone that the user works."
+localization_priority: Normal
+author: "angelgolfer-ms"
+ms.prod: "outlook"
+doc_type: resourcePageType
 ---
 
 # workingHours resource type
@@ -41,8 +45,8 @@ Here is a JSON representation of the resource.
 ```json
 {
   "daysOfWeek": ["string"],
-  "startTime": "TimeOfDay",
-  "endTime": "TimeOfDay",
+  "startTime": "String (timeofday)",
+  "endTime": "String (timeofday)",
   "timeZone": {"@odata.type": "microsoft.graph.timeZoneBase"}
 }
 

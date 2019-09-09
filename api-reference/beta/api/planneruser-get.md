@@ -1,11 +1,15 @@
 ---
 title: "Get plannerUser"
 description: "Retrieve the properties and relationships of a plannerUser object. The returned properties include the user's favorite plans and recently viewed plans. "
+localization_priority: Normal
+author: "TarkanSevilmis"
+ms.prod: "planner"
+doc_type: apiPageType
 ---
 
 # Get plannerUser
 
-> **Important:** APIs under the /beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported.
+[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 Retrieve the properties and relationships of a [plannerUser](../resources/planneruser.md) object. The returned properties include the user's favorite plans and recently viewed plans. 
 ## Permissions
@@ -21,7 +25,7 @@ One of the following permissions is required to call this API. To learn more, in
 <!-- { "blockType": "ignored" } -->
 ```http
 GET /me/planner
-GET /users/<id>/planner
+GET /users/{id}/planner
 ```
 
 ## Request headers
@@ -89,10 +93,13 @@ Content-length: 979
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2015-10-25 14:57:30 UTC -->
-<!-- {
+<!--
+{
   "type": "#page.annotation",
   "description": "Get plannerUser",
   "keywords": "",
   "section": "documentation",
-  "tocPath": ""
-}-->
+  "tocPath": "",
+  "suppressions": []
+}
+-->

@@ -1,6 +1,10 @@
 ---
 title: "Working with Excel in Microsoft Graph"
 description: "You can use Microsoft Graph to allow web and mobile applications to read and modify Excel workbooks stored in OneDrive for Business, SharePoint site or Group drive. The `Workbook` (or Excel file) resource contains all the other Excel resources through relationships. You can access a workbook through the Drive API by identifying the location of the file in the URL. For example:"
+localization_priority: Priority
+author: "lumine2008"
+ms.prod: "excel"
+doc_type: conceptualPageType
 ---
 
 # Working with Excel in Microsoft Graph
@@ -85,7 +89,7 @@ authorization: Bearer {access-token}
 workbook-session-id: {session-id}
 ```
 
->Note: If the session id has expired, a `404` HTTP error code is returned on the session. In such a scenarion, you can choose to create a new session and continue. Another approach would be to refresh the session periodically to keep the session alive. Typically the persistent session expires after about 7 minutes of inactivity. Non persistent session expires after about 5 minutes of inactivity. 
+>Note: If the session id has expired, a `404` HTTP error code is returned on the session. In such a scenarion, you can choose to create a new session and continue. Another approach would be to refresh the session periodically to keep the session alive. Typically the persistent session expires after about 5 minutes of inactivity. Non persistent session expires after about 7 minutes of inactivity. 
 
 ## Common Excel scenarios
 

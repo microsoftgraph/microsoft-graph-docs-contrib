@@ -1,10 +1,16 @@
 ---
 title: "Add group owner"
 description: "Add a user to the group's owners. The owners are a set of non-admin users who are allowed to modify the group object."
+localization_priority: Priority
+author: "dkershaw10"
+ms.prod: "groups"
+doc_type: apiPageType
 ---
 
 # Add group owner
 Add a user to the group's owners. The owners are a set of non-admin users who are allowed to modify the group object.
+
+>**Important:** If you update the group owners and you created a team for the group, it can take up to 2 hours for the owners to be synchronized with Microsoft Teams. Also, if you want the owner to be able to make changes in a team - for example, by creating a Planner plan - the owner also needs to be added as a group/team member. 
 
 ## Permissions
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
@@ -34,9 +40,11 @@ If successful, this method returns `204 No Content` response code. It does not r
 ## Example
 #### Request
 The following is an example of the request.
+
+# [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
-  "name": "create_directoryobject_from_group"
+  "name": "create_owner_from_group"
 }-->
 ```http
 POST https://graph.microsoft.com/v1.0/groups/{id}/owners/$ref
@@ -47,6 +55,24 @@ Content-length: 30
   "@odata.id": "https://graph.microsoft.com/v1.0/users/{id}"
 }
 ```
+# [JavaScript](#tab/javascript)
+[!INCLUDE [sample-code](../includes/snippets/javascript/create-owner-from-group-javascript-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Objective-C](#tab/objc)
+[!INCLUDE [sample-code](../includes/snippets/objc/create-owner-from-group-objc-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [C#](#tab/csharp)
+[!INCLUDE [sample-code](../includes/snippets/csharp/create-owner-from-group-csharp-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Java](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/create-owner-from-group-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+---
+
 In the request body, supply a JSON representation of [user](../resources/user.md) object to be added.
 
 #### Response
@@ -68,5 +94,8 @@ HTTP/1.1 204 No Content
   "description": "Create owner",
   "keywords": "",
   "section": "documentation",
-  "tocPath": ""
+  "tocPath": "",
+  "suppressions": [
+  ]
 }-->
+

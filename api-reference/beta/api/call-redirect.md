@@ -1,11 +1,15 @@
 ---
 title: "call: redirect"
 description: "Redirect an incoming call."
+author: "VinodRavichandran"
+localization_priority: Normal
+ms.prod: "microsoft-teams"
+doc_type: apiPageType
 ---
 
 # call: redirect
 
-> **Important:** APIs under the /beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported.
+[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 Redirect an incoming call.
 
@@ -40,6 +44,7 @@ In the request body, provide a JSON object with the following parameters.
 |timeout|Int32|The timeout in seconds for the redirect operation.|
 |maskCallee|Boolean|Indicates whether to mask the callee.|
 |maskCaller|Boolean|Indicates whether to mask the caller.|
+|callbackUri|String|Allows bots to provide a specific callback URI where the result of the Redirect action will be posted. This allows sending the result to the same specific bot instance that triggered the Redirect action. If none is provided, the bot's global callback URI will be used.|
 
 ## Response
 Returns `202 Accepted` response code
@@ -51,9 +56,11 @@ Returns `202 Accepted` response code
 ##### Request
 The following example shows the request.
 
+
+# [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
-  "name": "call_redirect"
+  "name": "call-redirect"
 }-->
 ```http
 POST https://graph.microsoft.com/beta/app/calls/{id}/redirect
@@ -81,6 +88,20 @@ Content-Length: 515
   "maskCaller": false
 }
 ```
+# [C#](#tab/csharp)
+[!INCLUDE [sample-code](../includes/snippets/csharp/call-redirect-csharp-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [JavaScript](#tab/javascript)
+[!INCLUDE [sample-code](../includes/snippets/javascript/call-redirect-javascript-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Objective-C](#tab/objc)
+[!INCLUDE [sample-code](../includes/snippets/objc/call-redirect-objc-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+---
+
 
 ##### Response
 
@@ -252,10 +273,14 @@ Content-Type: application/json
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2015-10-25 14:57:30 UTC -->
-<!-- {
+<!--
+{
   "type": "#page.annotation",
   "description": "call: redirect",
   "keywords": "",
   "section": "documentation",
-  "tocPath": ""
-}-->
+  "tocPath": "",
+  "suppressions": [
+  ]
+}
+-->

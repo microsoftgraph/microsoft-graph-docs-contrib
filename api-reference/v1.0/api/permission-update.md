@@ -1,8 +1,12 @@
 ---
-author: rgregg
-ms.author: rgregg
+author: JeremyKelley
+ms.author: JeremyKelley
 ms.date: 09/10/2017
 title: Change sharing permissions
+localization_priority: Normal
+description: "Update the properties of a sharing permission by patching the permission resource."
+ms.prod: ""
+doc_type: apiPageType
 ---
 # Update sharing permission
 
@@ -57,6 +61,8 @@ If successful, this method returns a `200 OK` response code and updated [permiss
 
 Here is an example of the request that changes the role on the sharing permission to read-only.
 
+
+# [HTTP](#tab/http)
 <!-- { "blockType": "request", "name": "update-permission", "@odata.type": "microsoft.graph.permission", "scopes": "files.readwrite", "tags": "service.graph" } -->
 
 ```http
@@ -67,6 +73,24 @@ Content-type: application/json
   "roles": [ "read" ]
 }
 ```
+# [C#](#tab/csharp)
+[!INCLUDE [sample-code](../includes/snippets/csharp/update-permission-csharp-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [JavaScript](#tab/javascript)
+[!INCLUDE [sample-code](../includes/snippets/javascript/update-permission-javascript-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Objective-C](#tab/objc)
+[!INCLUDE [sample-code](../includes/snippets/objc/update-permission-objc-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Java](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/update-permission-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+---
+
 
 ### Response
 
@@ -102,5 +126,7 @@ how errors are returned.
   "description": "Update an item's sharing permissions",
   "keywords": "permission, permissions, sharing, change permissions, update permission",
   "section": "documentation",
-  "tocPath": "Sharing/Update permission"
+  "tocPath": "Sharing/Update permission",
+  "suppressions": [
+  ]
 } -->

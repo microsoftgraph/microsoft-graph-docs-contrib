@@ -1,6 +1,10 @@
 ---
 title: "securityVendorInformation resource type"
 description: " subProvider=AppLocker)."
+localization_priority: Normal
+author: "preetikr"
+ms.prod: "security"
+doc_type: resourcePageType
 ---
 
 # securityVendorInformation resource type

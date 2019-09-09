@@ -1,9 +1,14 @@
 ---
-author: rgregg
-ms.author: rgregg
+author: JeremyKelley
+ms.author: JeremyKelley
 ms.date: 09/10/2017
 title: Thumbnail
+localization_priority: Normal
+description: "The thumbnail resource type represents a thumbnail for an image, video, document, or any item that has a bitmap representation."
+ms.prod: ""
+doc_type: resourcePageType
 ---
+
 # Thumbnail resource type
 
 The **thumbnail** resource type represents a thumbnail for an image, video, document, or any item that has a bitmap representation.

@@ -1,15 +1,20 @@
 ---
 title: "Get windowsManagedDevice"
 description: "Read properties and relationships of the windowsManagedDevice object."
+author: "rolyon"
+localization_priority: Normal
+ms.prod: "Intune"
+doc_type: apiPageType
 ---
 
 # Get windowsManagedDevice
 
-> **Important:** APIs under the /beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported.
+> **Important:** Microsoft Graph APIs under the /beta version are subject to change; production use is not supported.
 
-> **Note:** Using the Microsoft Graph APIs to configure Intune controls and policies still requires that the Intune service is [correctly licensed](https://go.microsoft.com/fwlink/?linkid=839381) by the customer.
+> **Note:** The Microsoft Graph API for Intune requires an [active Intune license](https://go.microsoft.com/fwlink/?linkid=839381) for the tenant.
 
 Read properties and relationships of the [windowsManagedDevice](../resources/intune-devices-windowsmanageddevice.md) object.
+
 ## Prerequisites
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
 
@@ -17,7 +22,7 @@ One of the following permissions is required to call this API. To learn more, in
 |:---|:---|
 |Delegated (work or school account)|DeviceManagementManagedDevices.ReadWrite.All, DeviceManagementManagedDevices.Read.All|
 |Delegated (personal Microsoft account)|Not supported.|
-|Application|Not supported.|
+|Application|DeviceManagementManagedDevices.ReadWrite.All, DeviceManagementManagedDevices.Read.All|
 
 ## HTTP Request
 <!-- {
@@ -25,14 +30,15 @@ One of the following permissions is required to call this API. To learn more, in
 }
 -->
 ``` http
-GET /users/{usersId}/managedDevices/{managedDeviceId}
 GET /deviceManagement/managedDevices/{managedDeviceId}
 GET /deviceManagement/deviceManagementScripts/{deviceManagementScriptId}/deviceRunStates/{deviceManagementScriptDeviceStateId}/managedDevice
+GET /deviceManagement/deviceManagementScripts/{deviceManagementScriptId}/deviceRunStates/{deviceManagementScriptDeviceStateId}/managedDevice/users/{userId}/managedDevices/{managedDeviceId}
 GET /deviceManagement/deviceManagementScripts/{deviceManagementScriptId}/deviceRunStates/{deviceManagementScriptDeviceStateId}/managedDevice/detectedApps/{detectedAppId}/managedDevices/{managedDeviceId}
 ```
 
 ## Optional query parameters
-This method supports the [OData Query Parameters](https://developer.microsoft.com/graph/docs/concepts/query_parameters) to help customize the response.
+This method supports the [OData Query Parameters](https://docs.microsoft.com/en-us/graph/query-parameters) to help customize the response.
+
 ## Request headers
 |Header|Value|
 |:---|:---|
@@ -46,10 +52,11 @@ Do not supply a request body for this method.
 If successful, this method returns a `200 OK` response code and [windowsManagedDevice](../resources/intune-devices-windowsmanageddevice.md) object in the response body.
 
 ## Example
+
 ### Request
 Here is an example of the request.
 ``` http
-GET https://graph.microsoft.com/beta/users/{usersId}/managedDevices/{managedDeviceId}
+GET https://graph.microsoft.com/beta/deviceManagement/managedDevices/{managedDeviceId}
 ```
 
 ### Response
@@ -57,7 +64,7 @@ Here is an example of the response. Note: The response object shown here may be 
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 7567
+Content-Length: 7930
 
 {
   "value": {
@@ -96,7 +103,8 @@ Content-Length: 7567
       "deviceFullQualifiedDomainName": "Device Full Qualified Domain Name value",
       "deviceGuardVirtualizationBasedSecurityHardwareRequirementState": "secureBootRequired",
       "deviceGuardVirtualizationBasedSecurityState": "rebootRequired",
-      "deviceGuardLocalSystemAuthorityCredentialGuardState": "rebootRequired"
+      "deviceGuardLocalSystemAuthorityCredentialGuardState": "rebootRequired",
+      "osBuildNumber": "Os Build Number value"
     },
     "ownerType": "company",
     "managedDeviceOwnerType": "company",
@@ -155,7 +163,9 @@ Content-Length: 7567
       "resourceAccess": true,
       "deviceConfiguration": true,
       "compliancePolicy": true,
-      "windowsUpdateForBusiness": true
+      "windowsUpdateForBusiness": true,
+      "endpointProtection": true,
+      "officeApps": true
     },
     "wiFiMacAddress": "Wi Fi Mac Address value",
     "deviceHealthAttestationState": {
@@ -199,6 +209,7 @@ Content-Length: 7567
     "freeStorageSpaceInBytes": 7,
     "managedDeviceName": "Managed Device Name value",
     "partnerReportedThreatState": "activated",
+    "retireAfterDateTime": "2016-12-31T23:57:37.576134-08:00",
     "usersLoggedOn": [
       {
         "@odata.type": "microsoft.graph.loggedOnUser",
@@ -223,10 +234,15 @@ Content-Length: 7567
       "state": "installed",
       "errorCode": 9,
       "lastSyncDateTime": "2017-01-01T00:02:49.3205976-08:00"
+    },
+    "configurationManagerClientInformation": {
+      "@odata.type": "microsoft.graph.configurationManagerClientInformation",
+      "clientIdentifier": "Client Identifier value"
     }
   }
 }
 ```
+
 
 
 

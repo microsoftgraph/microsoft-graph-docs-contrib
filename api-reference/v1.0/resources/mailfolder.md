@@ -1,6 +1,10 @@
 ---
 title: "mailFolder resource type"
 description: "A mail folder in a user's mailbox, such as Inbox and Drafts. Mail folders can contain messages, other Outlook items, and child mail folders."
+localization_priority: Priority
+author: "angelgolfer-ms"
+ms.prod: "outlook"
+doc_type: resourcePageType
 ---
 
 # mailFolder resource type

@@ -1,15 +1,20 @@
 ---
 title: "Update windowsAutopilotDeviceIdentity"
 description: "Update the properties of a windowsAutopilotDeviceIdentity object."
+author: "rolyon"
+localization_priority: Normal
+ms.prod: "Intune"
+doc_type: apiPageType
 ---
 
 # Update windowsAutopilotDeviceIdentity
 
-> **Important:** APIs under the /beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported.
+> **Important:** Microsoft Graph APIs under the /beta version are subject to change; production use is not supported.
 
-> **Note:** Using the Microsoft Graph APIs to configure Intune controls and policies still requires that the Intune service is [correctly licensed](https://go.microsoft.com/fwlink/?linkid=839381) by the customer.
+> **Note:** The Microsoft Graph API for Intune requires an [active Intune license](https://go.microsoft.com/fwlink/?linkid=839381) for the tenant.
 
 Update the properties of a [windowsAutopilotDeviceIdentity](../resources/intune-enrollment-windowsautopilotdeviceidentity.md) object.
+
 ## Prerequisites
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
 
@@ -17,7 +22,7 @@ One of the following permissions is required to call this API. To learn more, in
 |:---|:---|
 |Delegated (work or school account)|DeviceManagementServiceConfig.ReadWrite.All|
 |Delegated (personal Microsoft account)|Not supported.|
-|Application|Not supported.|
+|Application|DeviceManagementServiceConfig.ReadWrite.All|
 
 ## HTTP Request
 <!-- {
@@ -46,7 +51,8 @@ The following table shows the properties that are required when you create the [
 |deploymentProfileAssignmentStatus|[windowsAutopilotProfileAssignmentStatus](../resources/intune-enrollment-windowsautopilotprofileassignmentstatus.md)|Profile assignment status of the Windows autopilot device. Possible values are: `unknown`, `assignedInSync`, `assignedOutOfSync`, `assignedUnkownSyncState`, `notAssigned`, `pending`, `failed`.|
 |deploymentProfileAssignmentDetailedStatus|[windowsAutopilotProfileAssignmentDetailedStatus](../resources/intune-enrollment-windowsautopilotprofileassignmentdetailedstatus.md)|Profile assignment detailed status of the Windows autopilot device. Possible values are: `none`, `hardwareRequirementsNotMet`.|
 |deploymentProfileAssignedDateTime|DateTimeOffset|Profile set time of the Windows autopilot device.|
-|orderIdentifier|String|Order Identifier of the Windows autopilot device.|
+|orderIdentifier|String|Order Identifier of the Windows autopilot device - Deprecated|
+|groupTag|String|Group Tag of the Windows autopilot device.|
 |purchaseOrderIdentifier|String|Purchase Order Identifier of the Windows autopilot device.|
 |serialNumber|String|Serial number of the Windows autopilot device.|
 |productKey|String|Product Key of the Windows autopilot device.|
@@ -56,6 +62,11 @@ The following table shows the properties that are required when you create the [
 |lastContactedDateTime|DateTimeOffset|Intune Last Contacted Date Time of the Windows autopilot device.|
 |addressableUserName|String|Addressable user name.|
 |userPrincipalName|String|User Principal Name.|
+|resourceName|String|Resource Name.|
+|skuNumber|String|SKU Number|
+|systemFamily|String|System Family|
+|azureActiveDirectoryDeviceId|String|AAD Device ID|
+|managedDeviceId|String|Managed Device ID|
 
 
 
@@ -63,18 +74,21 @@ The following table shows the properties that are required when you create the [
 If successful, this method returns a `200 OK` response code and an updated [windowsAutopilotDeviceIdentity](../resources/intune-enrollment-windowsautopilotdeviceidentity.md) object in the response body.
 
 ## Example
+
 ### Request
 Here is an example of the request.
 ``` http
 PATCH https://graph.microsoft.com/beta/deviceManagement/windowsAutopilotDeviceIdentities/{windowsAutopilotDeviceIdentityId}
 Content-type: application/json
-Content-length: 686
+Content-length: 1035
 
 {
+  "@odata.type": "#microsoft.graph.windowsAutopilotDeviceIdentity",
   "deploymentProfileAssignmentStatus": "assignedInSync",
   "deploymentProfileAssignmentDetailedStatus": "hardwareRequirementsNotMet",
   "deploymentProfileAssignedDateTime": "2016-12-31T23:58:26.2447023-08:00",
   "orderIdentifier": "Order Identifier value",
+  "groupTag": "Group Tag value",
   "purchaseOrderIdentifier": "Purchase Order Identifier value",
   "serialNumber": "Serial Number value",
   "productKey": "Product Key value",
@@ -83,7 +97,12 @@ Content-length: 686
   "enrollmentState": "enrolled",
   "lastContactedDateTime": "2016-12-31T23:58:44.2908994-08:00",
   "addressableUserName": "Addressable User Name value",
-  "userPrincipalName": "User Principal Name value"
+  "userPrincipalName": "User Principal Name value",
+  "resourceName": "Resource Name value",
+  "skuNumber": "Sku Number value",
+  "systemFamily": "System Family value",
+  "azureActiveDirectoryDeviceId": "Azure Active Directory Device Id value",
+  "managedDeviceId": "Managed Device Id value"
 }
 ```
 
@@ -92,7 +111,7 @@ Here is an example of the response. Note: The response object shown here may be 
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 804
+Content-Length: 1084
 
 {
   "@odata.type": "#microsoft.graph.windowsAutopilotDeviceIdentity",
@@ -101,6 +120,7 @@ Content-Length: 804
   "deploymentProfileAssignmentDetailedStatus": "hardwareRequirementsNotMet",
   "deploymentProfileAssignedDateTime": "2016-12-31T23:58:26.2447023-08:00",
   "orderIdentifier": "Order Identifier value",
+  "groupTag": "Group Tag value",
   "purchaseOrderIdentifier": "Purchase Order Identifier value",
   "serialNumber": "Serial Number value",
   "productKey": "Product Key value",
@@ -109,9 +129,15 @@ Content-Length: 804
   "enrollmentState": "enrolled",
   "lastContactedDateTime": "2016-12-31T23:58:44.2908994-08:00",
   "addressableUserName": "Addressable User Name value",
-  "userPrincipalName": "User Principal Name value"
+  "userPrincipalName": "User Principal Name value",
+  "resourceName": "Resource Name value",
+  "skuNumber": "Sku Number value",
+  "systemFamily": "System Family value",
+  "azureActiveDirectoryDeviceId": "Azure Active Directory Device Id value",
+  "managedDeviceId": "Managed Device Id value"
 }
 ```
+
 
 
 

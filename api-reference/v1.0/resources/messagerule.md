@@ -1,6 +1,10 @@
 ---
 title: "messageRule resource type"
 description: "A rule that applies to messages in the Inbox of a user."
+author: "angelgolfer-ms"
+localization_priority: Normal
+ms.prod: "outlook"
+doc_type: resourcePageType
 ---
 
 # messageRule resource type

@@ -1,15 +1,20 @@
 ---
 title: "Update deviceManagementScriptDeviceState"
 description: "Update the properties of a deviceManagementScriptDeviceState object."
+author: "rolyon"
+localization_priority: Normal
+ms.prod: "Intune"
+doc_type: apiPageType
 ---
 
 # Update deviceManagementScriptDeviceState
 
-> **Important:** APIs under the /beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported.
+> **Important:** Microsoft Graph APIs under the /beta version are subject to change; production use is not supported.
 
-> **Note:** Using the Microsoft Graph APIs to configure Intune controls and policies still requires that the Intune service is [correctly licensed](https://go.microsoft.com/fwlink/?linkid=839381) by the customer.
+> **Note:** The Microsoft Graph API for Intune requires an [active Intune license](https://go.microsoft.com/fwlink/?linkid=839381) for the tenant.
 
 Update the properties of a [deviceManagementScriptDeviceState](../resources/intune-devices-devicemanagementscriptdevicestate.md) object.
+
 ## Prerequisites
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
 
@@ -17,7 +22,7 @@ One of the following permissions is required to call this API. To learn more, in
 |:---|:---|
 |Delegated (work or school account)|DeviceManagementManagedDevices.ReadWrite.All|
 |Delegated (personal Microsoft account)|Not supported.|
-|Application|Not supported.|
+|Application|DeviceManagementManagedDevices.ReadWrite.All|
 
 ## HTTP Request
 <!-- {
@@ -43,11 +48,15 @@ The following table shows the properties that are required when you create the [
 |Property|Type|Description|
 |:---|:---|:---|
 |id|String|Key of the device management script device state entity.|
-|runState|[runState](../resources/intune-shared-runstate.md)|State of latest run of the device management script. Possible values are: `unknown`, `success`, `fail`.|
+|runState|[runState](../resources/intune-shared-runstate.md)|State of latest run of the device management script. Possible values are: `unknown`, `success`, `fail`, `error`, `pending`.|
 |resultMessage|String|Details of execution output.|
 |lastStateUpdateDateTime|DateTimeOffset|Latest time the device management script executes.|
 |errorCode|Int32|Error code corresponding to erroneous execution of the device management script.|
 |errorDescription|String|Error description corresponding to erroneous execution of the device management script.|
+|lastSyncDateTime|DateTimeOffset|The latest time that Intune Managment Extension syncs to Intune.|
+|preRemediationDetectionScriptOutput|String|Output of the detection script before remediation.|
+|remediationScriptError|String|Error output of the remediation script.|
+|postRemediationDetectionScriptOutput|String|Detection script output after remediation.|
 
 
 
@@ -55,19 +64,25 @@ The following table shows the properties that are required when you create the [
 If successful, this method returns a `200 OK` response code and an updated [deviceManagementScriptDeviceState](../resources/intune-devices-devicemanagementscriptdevicestate.md) object in the response body.
 
 ## Example
+
 ### Request
 Here is an example of the request.
 ``` http
 PATCH https://graph.microsoft.com/beta/deviceManagement/deviceManagementScripts/{deviceManagementScriptId}/deviceRunStates/{deviceManagementScriptDeviceStateId}
 Content-type: application/json
-Content-length: 209
+Content-length: 588
 
 {
+  "@odata.type": "#microsoft.graph.deviceManagementScriptDeviceState",
   "runState": "success",
   "resultMessage": "Result Message value",
   "lastStateUpdateDateTime": "2017-01-01T00:02:58.4418045-08:00",
   "errorCode": 9,
-  "errorDescription": "Error Description value"
+  "errorDescription": "Error Description value",
+  "lastSyncDateTime": "2017-01-01T00:02:49.3205976-08:00",
+  "preRemediationDetectionScriptOutput": "Pre Remediation Detection Script Output value",
+  "remediationScriptError": "Remediation Script Error value",
+  "postRemediationDetectionScriptOutput": "Post Remediation Detection Script Output value"
 }
 ```
 
@@ -76,7 +91,7 @@ Here is an example of the response. Note: The response object shown here may be 
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 330
+Content-Length: 637
 
 {
   "@odata.type": "#microsoft.graph.deviceManagementScriptDeviceState",
@@ -85,9 +100,14 @@ Content-Length: 330
   "resultMessage": "Result Message value",
   "lastStateUpdateDateTime": "2017-01-01T00:02:58.4418045-08:00",
   "errorCode": 9,
-  "errorDescription": "Error Description value"
+  "errorDescription": "Error Description value",
+  "lastSyncDateTime": "2017-01-01T00:02:49.3205976-08:00",
+  "preRemediationDetectionScriptOutput": "Pre Remediation Detection Script Output value",
+  "remediationScriptError": "Remediation Script Error value",
+  "postRemediationDetectionScriptOutput": "Post Remediation Detection Script Output value"
 }
 ```
+
 
 
 

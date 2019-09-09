@@ -1,15 +1,20 @@
 ---
 title: "Create iosVppEBook"
 description: "Create a new iosVppEBook object."
+author: "rolyon"
+localization_priority: Normal
+ms.prod: "Intune"
+doc_type: apiPageType
 ---
 
 # Create iosVppEBook
 
-> **Important:** APIs under the /beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported.
+> **Important:** Microsoft Graph APIs under the /beta version are subject to change; production use is not supported.
 
-> **Note:** Using the Microsoft Graph APIs to configure Intune controls and policies still requires that the Intune service is [correctly licensed](https://go.microsoft.com/fwlink/?linkid=839381) by the customer.
+> **Note:** The Microsoft Graph API for Intune requires an [active Intune license](https://go.microsoft.com/fwlink/?linkid=839381) for the tenant.
 
 Create a new [iosVppEBook](../resources/intune-books-iosvppebook.md) object.
+
 ## Prerequisites
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
 
@@ -17,7 +22,7 @@ One of the following permissions is required to call this API. To learn more, in
 |:---|:---|
 |Delegated (work or school account)|DeviceManagementApps.ReadWrite.All|
 |Delegated (personal Microsoft account)|Not supported.|
-|Application|Not supported.|
+|Application|DeviceManagementApps.ReadWrite.All|
 
 ## HTTP Request
 <!-- {
@@ -59,6 +64,7 @@ The following table shows the properties that are required when you create the i
 |seller|String|Seller.|
 |totalLicenseCount|Int32|Total license count.|
 |usedLicenseCount|Int32|Used license count.|
+|roleScopeTagIds|String collection|List of Scope Tags for this Entity instance.|
 
 
 
@@ -66,12 +72,13 @@ The following table shows the properties that are required when you create the i
 If successful, this method returns a `201 Created` response code and a [iosVppEBook](../resources/intune-books-iosvppebook.md) object in the response body.
 
 ## Example
+
 ### Request
 Here is an example of the request.
 ``` http
 POST https://graph.microsoft.com/beta/deviceAppManagement/managedEBooks
 Content-type: application/json
-Content-length: 856
+Content-length: 854
 
 {
   "@odata.type": "#microsoft.graph.iosVppEBook",
@@ -84,7 +91,6 @@ Content-length: 856
     "type": "Type value",
     "value": "dmFsdWU="
   },
-  "lastModifiedDateTime": "2017-01-01T00:00:35.1329464-08:00",
   "informationUrl": "https://example.com/informationUrl/",
   "privacyInformationUrl": "https://example.com/privacyInformationUrl/",
   "vppTokenId": "9148ac60-ac60-9148-60ac-489160ac4891",
@@ -96,7 +102,10 @@ Content-length: 856
   "language": "Language value",
   "seller": "Seller value",
   "totalLicenseCount": 1,
-  "usedLicenseCount": 0
+  "usedLicenseCount": 0,
+  "roleScopeTagIds": [
+    "Role Scope Tag Ids value"
+  ]
 }
 ```
 
@@ -105,7 +114,7 @@ Here is an example of the response. Note: The response object shown here may be 
 ``` http
 HTTP/1.1 201 Created
 Content-Type: application/json
-Content-Length: 964
+Content-Length: 1026
 
 {
   "@odata.type": "#microsoft.graph.iosVppEBook",
@@ -132,9 +141,13 @@ Content-Length: 964
   "language": "Language value",
   "seller": "Seller value",
   "totalLicenseCount": 1,
-  "usedLicenseCount": 0
+  "usedLicenseCount": 0,
+  "roleScopeTagIds": [
+    "Role Scope Tag Ids value"
+  ]
 }
 ```
+
 
 
 

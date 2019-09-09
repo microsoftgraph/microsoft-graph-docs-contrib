@@ -1,6 +1,10 @@
 ---
 title: "Filter resource type"
 description: "Manages the filtering of a table's column."
+localization_priority: Normal
+author: ""
+ms.prod: ""
+doc_type: resourcePageType
 ---
 
 # Filter resource type

@@ -1,11 +1,15 @@
 ---
-title: "used resource type"
-description: "An insight representing documents used by a specific user. The insights returns the most relevant documents that a user viewed or accessed. This includes documents in:"
+title: "usedInsight resource type"
+description: "An insight representing documents used by a specific user. The insights returns the most relevant documents that a user viewed or accessed."
+author: "simonhult"
+localization_priority: Normal
+ms.prod: "insights"
+doc_type: resourcePageType
 ---
 
-# used resource type
+# usedInsight resource type
 
-> **Important:** APIs under the /beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported.
+[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 An insight representing documents used by a specific user. The insights returns the most relevant documents that a user viewed or accessed. This includes documents in:
 
@@ -16,7 +20,7 @@ An insight representing documents used by a specific user. The insights returns 
 
 | Method       | Return Type  |Description|
 |:---------------|:--------|:----------|
-|[List used](../api/insights-list-used.md) |[insights_used](insights-used.md) collection| Get a list of used files.|
+|[List used](../api/insights-list-used.md) |[usedInsight](insights-used.md) collection| Get a list of used files.|
 
 ## Properties
 
@@ -31,18 +35,25 @@ An insight representing documents used by a specific user. The insights returns 
 
 | Property      | Type          | Description  |
 | ------------- |---------------| -------------|
-| resource    	| Entity		| Used for navigating to the item that was used. For file attachments, the type is *fileAttachment*. For linked attachments, the type is *driveItem*. |
+| resource    	| [entity](entity.md) collection	| Used for navigating to the item that was used. For file attachments, the type is *fileAttachment*. For linked attachments, the type is *driveItem*. |
 
 ## JSON representation
 Here is a JSON representation of the resource
+
+<!-- {
+  "blockType": "resource",
+  "keyProperty":"id",
+  "optionalProperties": [
+    "resource"
+  ],
+  "@odata.type": "microsoft.graph.usedInsight"
+}-->
 
 ```json
 {
   "id": "string",
   "lastUsed": "usageDetails",
-  "resourceVisualization": "resourceVisualization",
-  "resourceReference": "resourceReference",
-  
-  "resource": [ { "@odata.type": "microsoft.graph.entity" } ]
+  "resourceVisualization": { "@odata.type": "microsoft.graph.resourceVisualization" },
+  "resourceReference": { "@odata.type": "microsoft.graph.resourceReference" }
 }
 ```

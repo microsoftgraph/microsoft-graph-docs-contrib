@@ -1,6 +1,10 @@
 ---
 title: "emailAppUsageAppsUserCounts resource type"
 description: "The following is a JSON representation of the resource."
+localization_priority: Normal
+author: "angelgolfer-ms"
+ms.prod: "outlook"
+doc_type: resourcePageType
 ---
 
 # emailAppUsageAppsUserCounts resource type

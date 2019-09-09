@@ -1,6 +1,10 @@
 ---
 title: "plannerAssignment resource type"
 description: "The **plannerAssignment** resource represents the assignment of a task to a user. This type is used in the open type plannerAssignments."
+localization_priority: Normal
+author: "TarkanSevilmis"
+ms.prod: "planner"
+doc_type: resourcePageType
 ---
 
 # plannerAssignment resource type

@@ -1,6 +1,10 @@
 ---
 title: "People overview"
 description: "Microsoft Graph provides access to useful people data."
+author: "simonhult"
+localization_priority: Priority
+ms.prod: "insights"
+doc_type: conceptualPageType
 ---
 
 # People overview

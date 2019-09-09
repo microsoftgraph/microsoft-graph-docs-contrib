@@ -1,6 +1,8 @@
 ---
 title: "Add custom data to resources using extensions"
 description: "Microsoft Graph provides a single API endpoint that gives you access to rich people-centric data and insights through a number of resources such as user and message. You can also extend Microsoft Graph with your own application data. You can add custom properties to Microsoft Graph resources without requiring an external data store."
+author: "dkershaw10"
+localization_priority: Priority
 ---
 
 # Add custom data to resources using extensions
@@ -41,6 +43,8 @@ You can use extensions on all these resources when signed in with a work or scho
 [open types](https://www.odata.org/getting-started/advanced-tutorial/#openType) that offer a flexible way to
 add untyped app data directly to a resource instance.
 
+> [!VIDEO https://www.youtube-nocookie.com/embed/ibdlADb8IZc]
+
 Open extensions, together with their custom data, are accessible through the **extensions** navigation property of the resource instance.
 The **extensionName** property is the only _pre-defined_, writable property in an open extension. When creating an open extension, you must assign the **extensionName** property a name that is unique within the tenant.
 
@@ -57,8 +61,12 @@ Open extension example: [Add custom data to users using open extensions](extensi
 
 ## Schema extensions
 
+
 [Schema extensions](/graph/api/resources/schemaextension?view=graph-rest-1.0) allow you to define a schema that you can use to extend a resource type. First, you create your schema extension definition. Then, use it to extend resource instances with strongly-typed custom data. In addition, you can control the [status](#schema-extensions-lifecycle) of your schema extension and let it
 be discoverable by other apps. These apps can in turn use the extension for their data and build further experiences on top of it.
+
+
+> [!VIDEO https://www.youtube-nocookie.com/embed/3MOAlUFNus0]
 
 When creating a schema extension definition, you must provide a unique name for its **id**. There are two naming options:
 

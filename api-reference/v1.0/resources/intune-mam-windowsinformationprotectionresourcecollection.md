@@ -1,13 +1,18 @@
 ---
 title: "windowsInformationProtectionResourceCollection resource type"
 description: "Windows Information Protection Resource Collection"
+author: "tfitzmac"
+localization_priority: Normal
+ms.prod: "Intune"
+doc_type: resourcePageType
 ---
 
 # windowsInformationProtectionResourceCollection resource type
 
-> **Note:** Using the Microsoft Graph APIs to configure Intune controls and policies still requires that the Intune service is [correctly licensed](https://go.microsoft.com/fwlink/?linkid=839381) by the customer.
+> **Note:** The Microsoft Graph API for Intune requires an [active Intune license](https://go.microsoft.com/fwlink/?linkid=839381) for the tenant.
 
 Windows Information Protection Resource Collection
+
 ## Properties
 |Property|Type|Description|
 |:---|:---|:---|
@@ -16,6 +21,7 @@ Windows Information Protection Resource Collection
 
 ## Relationships
 None
+
 ## JSON Representation
 Here is a JSON representation of the resource.
 <!-- {

@@ -1,12 +1,15 @@
 ---
 author: daspek
-ms.author: dspektor
+description: "The contentTypeInfo resource indicates the SharePoint content type of an item."
 ms.date: 09/12/2017
 title: ContentTypeInfo
+localization_priority: Normal
+doc_type: resourcePageType
+ms.prod: ""
 ---
 # ContentTypeInfo resource type
 
-> **Important:** APIs under the /beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported.
+[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 The **contentTypeInfo** resource indicates the SharePoint content type of an item.
 
@@ -29,10 +32,13 @@ Here is a JSON representation of a **contentTypeInfo** resource.
 | **id**         | string  | The id of the content type.
 | **name**       | string  | The name of the content type.
 
-<!-- {
+<!--
+{
   "type": "#page.annotation",
   "description": "",
   "keywords": "",
   "section": "documentation",
-  "tocPath": "Resources/ContentTypeInfo"
-} -->
+  "tocPath": "Resources/ContentTypeInfo",
+  "suppressions": []
+}
+-->

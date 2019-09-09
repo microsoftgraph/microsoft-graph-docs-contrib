@@ -1,15 +1,20 @@
 ---
 title: "List deviceManagementScripts"
 description: "List properties and relationships of the deviceManagementScript objects."
+author: "rolyon"
+localization_priority: Normal
+ms.prod: "Intune"
+doc_type: apiPageType
 ---
 
 # List deviceManagementScripts
 
-> **Important:** APIs under the /beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported.
+> **Important:** Microsoft Graph APIs under the /beta version are subject to change; production use is not supported.
 
-> **Note:** Using the Microsoft Graph APIs to configure Intune controls and policies still requires that the Intune service is [correctly licensed](https://go.microsoft.com/fwlink/?linkid=839381) by the customer.
+> **Note:** The Microsoft Graph API for Intune requires an [active Intune license](https://go.microsoft.com/fwlink/?linkid=839381) for the tenant.
 
 List properties and relationships of the [deviceManagementScript](../resources/intune-devices-devicemanagementscript.md) objects.
+
 ## Prerequisites
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
 
@@ -17,7 +22,7 @@ One of the following permissions is required to call this API. To learn more, in
 |:---|:---|
 |Delegated (work or school account)|DeviceManagementManagedDevices.ReadWrite.All, DeviceManagementManagedDevices.Read.All|
 |Delegated (personal Microsoft account)|Not supported.|
-|Application|Not supported.|
+|Application|DeviceManagementManagedDevices.ReadWrite.All, DeviceManagementManagedDevices.Read.All|
 
 ## HTTP Request
 <!-- {
@@ -41,6 +46,7 @@ Do not supply a request body for this method.
 If successful, this method returns a `200 OK` response code and a collection of [deviceManagementScript](../resources/intune-devices-devicemanagementscript.md) objects in the response body.
 
 ## Example
+
 ### Request
 Here is an example of the request.
 ``` http
@@ -52,7 +58,7 @@ Here is an example of the response. Note: The response object shown here may be 
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 615
+Content-Length: 716
 
 {
   "value": [
@@ -69,11 +75,16 @@ Content-Length: 615
       "lastModifiedDateTime": "2017-01-01T00:00:35.1329464-08:00",
       "runAsAccount": "user",
       "enforceSignatureCheck": true,
-      "fileName": "File Name value"
+      "fileName": "File Name value",
+      "roleScopeTagIds": [
+        "Role Scope Tag Ids value"
+      ],
+      "runAs32Bit": true
     }
   ]
 }
 ```
+
 
 
 

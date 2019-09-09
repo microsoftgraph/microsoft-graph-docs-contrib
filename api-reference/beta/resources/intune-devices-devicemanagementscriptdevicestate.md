@@ -1,15 +1,20 @@
 ---
 title: "deviceManagementScriptDeviceState resource type"
 description: "Contains properties for device run state of the device management script."
+author: "rolyon"
+localization_priority: Normal
+ms.prod: "Intune"
+doc_type: resourcePageType
 ---
 
 # deviceManagementScriptDeviceState resource type
 
-> **Important:** APIs under the / beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported.
+> **Important:** Microsoft Graph APIs under the /beta version are subject to change; production use is not supported.
 
-> **Note:** Using the Microsoft Graph APIs to configure Intune controls and policies still requires that the Intune service is [correctly licensed](https://go.microsoft.com/fwlink/?linkid=839381) by the customer.
+> **Note:** The Microsoft Graph API for Intune requires an [active Intune license](https://go.microsoft.com/fwlink/?linkid=839381) for the tenant.
 
 Contains properties for device run state of the device management script.
+
 ## Methods
 |Method|Return Type|Description|
 |:---|:---|:---|
@@ -23,11 +28,15 @@ Contains properties for device run state of the device management script.
 |Property|Type|Description|
 |:---|:---|:---|
 |id|String|Key of the device management script device state entity.|
-|runState|[runState](../resources/intune-shared-runstate.md)|State of latest run of the device management script. Possible values are: `unknown`, `success`, `fail`.|
+|runState|[runState](../resources/intune-shared-runstate.md)|State of latest run of the device management script. Possible values are: `unknown`, `success`, `fail`, `error`, `pending`.|
 |resultMessage|String|Details of execution output.|
 |lastStateUpdateDateTime|DateTimeOffset|Latest time the device management script executes.|
 |errorCode|Int32|Error code corresponding to erroneous execution of the device management script.|
 |errorDescription|String|Error description corresponding to erroneous execution of the device management script.|
+|lastSyncDateTime|DateTimeOffset|The latest time that Intune Managment Extension syncs to Intune.|
+|preRemediationDetectionScriptOutput|String|Output of the detection script before remediation.|
+|remediationScriptError|String|Error output of the remediation script.|
+|postRemediationDetectionScriptOutput|String|Detection script output after remediation.|
 
 ## Relationships
 |Relationship|Type|Description|
@@ -50,11 +59,13 @@ Here is a JSON representation of the resource.
   "resultMessage": "String",
   "lastStateUpdateDateTime": "String (timestamp)",
   "errorCode": 1024,
-  "errorDescription": "String"
+  "errorDescription": "String",
+  "lastSyncDateTime": "String (timestamp)",
+  "preRemediationDetectionScriptOutput": "String",
+  "remediationScriptError": "String",
+  "postRemediationDetectionScriptOutput": "String"
 }
 ```
-
-
 
 
 

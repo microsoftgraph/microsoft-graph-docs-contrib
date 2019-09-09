@@ -1,6 +1,10 @@
 ---
 title: "pivotTable resource type"
 description: "Represents an Excel PivotTable."
+author: "lumine2008"
+localization_priority: Normal
+ms.prod: "excel"
+doc_type: resourcePageType
 ---
 
 # pivotTable resource type

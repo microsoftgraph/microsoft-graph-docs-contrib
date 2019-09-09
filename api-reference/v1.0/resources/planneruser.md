@@ -1,6 +1,10 @@
 ---
 title: "plannerUser resource type"
 description: "The **plannerUser** resource provide access to Planner resources for a user. It doesn't contain any usable properties."
+localization_priority: Normal
+author: "TarkanSevilmis"
+ms.prod: "planner"
+doc_type: resourcePageType
 ---
 
 # plannerUser resource type

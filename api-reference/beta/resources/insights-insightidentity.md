@@ -1,19 +1,27 @@
 ---
 title: "insightIdentity"
-description: " resource type"
+description: "Complex type containing properties of Shared items."
+author: "simonhult"
+localization_priority: Normal
+ms.prod: "insights"
+doc_type: resourcePageType
 ---
 
 # insightIdentity
 
-> **Important:** APIs under the /beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported.
-
- resource type
+[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 Complex type containing properties of [Shared](insights-shared.md) items. 
 
 ## JSON representation
 Here is a JSON representation of the resource
 
+<!-- {
+  "blockType": "resource",
+  "optionalProperties": [
+  ],
+  "@odata.type": "microsoft.graph.insightIdentity"
+}-->
 ```json
 {
   "displayName": "string",

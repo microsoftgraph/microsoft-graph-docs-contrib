@@ -1,15 +1,20 @@
 ---
 title: "List windows10EndpointProtectionConfigurations"
 description: "List properties and relationships of the windows10EndpointProtectionConfiguration objects."
+author: "rolyon"
+localization_priority: Normal
+ms.prod: "Intune"
+doc_type: apiPageType
 ---
 
 # List windows10EndpointProtectionConfigurations
 
-> **Important:** APIs under the /beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported.
+> **Important:** Microsoft Graph APIs under the /beta version are subject to change; production use is not supported.
 
-> **Note:** Using the Microsoft Graph APIs to configure Intune controls and policies still requires that the Intune service is [correctly licensed](https://go.microsoft.com/fwlink/?linkid=839381) by the customer.
+> **Note:** The Microsoft Graph API for Intune requires an [active Intune license](https://go.microsoft.com/fwlink/?linkid=839381) for the tenant.
 
 List properties and relationships of the [windows10EndpointProtectionConfiguration](../resources/intune-deviceconfig-windows10endpointprotectionconfiguration.md) objects.
+
 ## Prerequisites
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
 
@@ -17,7 +22,7 @@ One of the following permissions is required to call this API. To learn more, in
 |:---|:---|
 |Delegated (work or school account)|DeviceManagementConfiguration.ReadWrite.All, DeviceManagementConfiguration.Read.All|
 |Delegated (personal Microsoft account)|Not supported.|
-|Application|Not supported.|
+|Application|DeviceManagementConfiguration.ReadWrite.All, DeviceManagementConfiguration.Read.All|
 
 ## HTTP Request
 <!-- {
@@ -42,6 +47,7 @@ Do not supply a request body for this method.
 If successful, this method returns a `200 OK` response code and a collection of [windows10EndpointProtectionConfiguration](../resources/intune-deviceconfig-windows10endpointprotectionconfiguration.md) objects in the response body.
 
 ## Example
+
 ### Request
 Here is an example of the request.
 ``` http
@@ -53,7 +59,7 @@ Here is an example of the response. Note: The response object shown here may be 
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 29008
+Content-Length: 31457
 
 {
   "value": [
@@ -65,10 +71,61 @@ Content-Length: 29008
         "Role Scope Tag Ids value"
       ],
       "supportsScopeTags": true,
+      "deviceManagementApplicabilityRuleOsEdition": {
+        "@odata.type": "microsoft.graph.deviceManagementApplicabilityRuleOsEdition",
+        "osEditionTypes": [
+          "windows10EnterpriseN"
+        ],
+        "name": "Name value",
+        "ruleType": "exclude"
+      },
+      "deviceManagementApplicabilityRuleOsVersion": {
+        "@odata.type": "microsoft.graph.deviceManagementApplicabilityRuleOsVersion",
+        "minOSVersion": "Min OSVersion value",
+        "maxOSVersion": "Max OSVersion value",
+        "name": "Name value",
+        "ruleType": "exclude"
+      },
+      "deviceManagementApplicabilityRuleDeviceMode": {
+        "@odata.type": "microsoft.graph.deviceManagementApplicabilityRuleDeviceMode",
+        "deviceMode": "sModeConfiguration",
+        "name": "Name value",
+        "ruleType": "exclude"
+      },
       "createdDateTime": "2017-01-01T00:02:43.5775965-08:00",
       "description": "Description value",
       "displayName": "Display Name value",
       "version": 7,
+      "dmaGuardDeviceEnumerationPolicy": "blockAll",
+      "firewallRules": [
+        {
+          "@odata.type": "microsoft.graph.windowsFirewallRule",
+          "displayName": "Display Name value",
+          "description": "Description value",
+          "packageFamilyName": "Package Family Name value",
+          "filePath": "File Path value",
+          "serviceName": "Service Name value",
+          "protocol": 8,
+          "localPortRanges": [
+            "Local Port Ranges value"
+          ],
+          "remotePortRanges": [
+            "Remote Port Ranges value"
+          ],
+          "localAddressRanges": [
+            "Local Address Ranges value"
+          ],
+          "remoteAddressRanges": [
+            "Remote Address Ranges value"
+          ],
+          "profileTypes": "domain",
+          "action": "blocked",
+          "trafficDirection": "out",
+          "interfaceTypes": "remoteAccess",
+          "edgeTraversal": "blocked",
+          "localUserAuthorizations": "Local User Authorizations value"
+        }
+      ],
       "userRightsAccessCredentialManagerAsTrustedCaller": {
         "@odata.type": "microsoft.graph.deviceManagementUserRightsSetting",
         "state": "blocked",
@@ -118,6 +175,18 @@ Content-Length: 29008
         ]
       },
       "userRightsLocalLogOn": {
+        "@odata.type": "microsoft.graph.deviceManagementUserRightsSetting",
+        "state": "blocked",
+        "localUsersOrGroups": [
+          {
+            "@odata.type": "microsoft.graph.deviceManagementUserRightsLocalUserOrGroup",
+            "name": "Name value",
+            "description": "Description value",
+            "securityIdentifier": "Security Identifier value"
+          }
+        ]
+      },
+      "userRightsDenyLocalLogOn": {
         "@odata.type": "microsoft.graph.deviceManagementUserRightsSetting",
         "state": "blocked",
         "localUsersOrGroups": [
@@ -405,18 +474,6 @@ Content-Length: 29008
           }
         ]
       },
-      "userRightsRegisterProcessAsService": {
-        "@odata.type": "microsoft.graph.deviceManagementUserRightsSetting",
-        "state": "blocked",
-        "localUsersOrGroups": [
-          {
-            "@odata.type": "microsoft.graph.deviceManagementUserRightsLocalUserOrGroup",
-            "name": "Name value",
-            "description": "Description value",
-            "securityIdentifier": "Security Identifier value"
-          }
-        ]
-      },
       "xboxServicesEnableXboxGameSaveTask": true,
       "xboxServicesAccessoryManagementServiceStartupMode": "automatic",
       "xboxServicesLiveAuthManagerServiceStartupMode": "automatic",
@@ -424,9 +481,9 @@ Content-Length: 29008
       "xboxServicesLiveNetworkingServiceStartupMode": "automatic",
       "localSecurityOptionsBlockMicrosoftAccounts": true,
       "localSecurityOptionsBlockRemoteLogonWithBlankPassword": true,
-      "localSecurityOptionsEnableAdministratorAccount": true,
+      "localSecurityOptionsDisableAdministratorAccount": true,
       "localSecurityOptionsAdministratorAccountName": "Local Security Options Administrator Account Name value",
-      "localSecurityOptionsEnableGuestAccount": true,
+      "localSecurityOptionsDisableGuestAccount": true,
       "localSecurityOptionsGuestAccountName": "Local Security Options Guest Account Name value",
       "localSecurityOptionsAllowUndockWithoutHavingToLogon": true,
       "localSecurityOptionsBlockUsersInstallingPrinterDrivers": true,
@@ -445,7 +502,7 @@ Content-Length: 29008
       "localSecurityOptionsMinimumSessionSecurityForNtlmSspBasedClients": "requireNtmlV2SessionSecurity",
       "localSecurityOptionsMinimumSessionSecurityForNtlmSspBasedServers": "requireNtmlV2SessionSecurity",
       "lanManagerAuthenticationLevel": "lmNtlmAndNtlmV2",
-      "lanManagerWorkstationEnableInsecureGuestLogons": true,
+      "lanManagerWorkstationDisableInsecureGuestLogons": true,
       "localSecurityOptionsClearVirtualMemoryPageFile": true,
       "localSecurityOptionsAllowSystemToBeShutDownWithoutHavingToLogOn": true,
       "localSecurityOptionsAllowUIAccessApplicationElevation": true,
@@ -476,16 +533,20 @@ Content-Length: 29008
       "defenderSecurityCenterDisableNetworkUI": true,
       "defenderSecurityCenterDisableVirusUI": true,
       "defenderSecurityCenterDisableAccountUI": true,
+      "defenderSecurityCenterDisableClearTpmUI": true,
       "defenderSecurityCenterDisableHardwareUI": true,
+      "defenderSecurityCenterDisableNotificationAreaUI": true,
       "defenderSecurityCenterDisableRansomwareUI": true,
       "defenderSecurityCenterDisableSecureBootUI": true,
       "defenderSecurityCenterDisableTroubleshootingUI": true,
+      "defenderSecurityCenterDisableVulnerableTpmFirmwareUpdateUI": true,
       "defenderSecurityCenterOrganizationDisplayName": "Defender Security Center Organization Display Name value",
       "defenderSecurityCenterHelpEmail": "Defender Security Center Help Email value",
       "defenderSecurityCenterHelpPhone": "Defender Security Center Help Phone value",
       "defenderSecurityCenterHelpURL": "Defender Security Center Help URL value",
       "defenderSecurityCenterNotificationsFromApp": "blockNoncriticalNotifications",
       "defenderSecurityCenterITContactDisplay": "displayInAppAndInNotifications",
+      "windowsDefenderTamperProtection": "enable",
       "firewallBlockStatefulFTP": true,
       "firewallIdleTimeoutForSecurityAssociationInSeconds": 2,
       "firewallPreSharedKeyEncodingMethod": "none",
@@ -574,11 +635,13 @@ Content-Length: 29008
         "policyRulesFromGroupPolicyMerged": true,
         "policyRulesFromGroupPolicyNotMerged": true
       },
+      "defenderAdobeReaderLaunchChildProcess": "enable",
       "defenderAttackSurfaceReductionExcludedPaths": [
         "Defender Attack Surface Reduction Excluded Paths value"
       ],
       "defenderOfficeAppsOtherProcessInjectionType": "block",
       "defenderOfficeAppsOtherProcessInjection": "enable",
+      "defenderOfficeCommunicationAppsLaunchChildProcess": "enable",
       "defenderOfficeAppsExecutableContentCreationOrLaunchType": "block",
       "defenderOfficeAppsExecutableContentCreationOrLaunch": "enable",
       "defenderOfficeAppsLaunchChildProcessType": "block",
@@ -614,6 +677,8 @@ Content-Length: 29008
       "deviceGuardLocalSystemAuthorityCredentialGuardSettings": "enableWithUEFILock",
       "deviceGuardEnableVirtualizationBasedSecurity": true,
       "deviceGuardEnableSecureBootWithDMA": true,
+      "deviceGuardSecureBootWithDMA": "withoutDMA",
+      "deviceGuardLaunchSystemGuard": "enabled",
       "smartScreenEnableInShell": true,
       "smartScreenBlockOverrideForFiles": true,
       "applicationGuardEnabled": true,
@@ -629,6 +694,7 @@ Content-Length: 29008
       "applicationGuardAllowPrintToNetworkPrinters": true,
       "applicationGuardAllowVirtualGPU": true,
       "applicationGuardAllowFileSaveOnHost": true,
+      "bitLockerAllowStandardUserEncryption": true,
       "bitLockerDisableWarningForOtherDiskEncryption": true,
       "bitLockerEnableStorageCardEncryptionOnMobile": true,
       "bitLockerEncryptDevice": true,
@@ -681,6 +747,7 @@ Content-Length: 29008
   ]
 }
 ```
+
 
 
 

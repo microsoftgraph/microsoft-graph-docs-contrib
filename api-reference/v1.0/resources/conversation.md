@@ -1,6 +1,10 @@
 ---
 title: "conversation resource type"
 description: "A conversation is a collection of threads, and a thread contains posts to that thread. All threads and posts in a conversation share the same subject."
+localization_priority: Normal
+author: "dkershaw10"
+ms.prod: "groups"
+doc_type: resourcePageType
 ---
 
 # conversation resource type
