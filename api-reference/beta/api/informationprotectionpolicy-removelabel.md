@@ -13,7 +13,7 @@ doc_type: "apiPageType"
 
 The `removeLabel` API isn't use to directly remove the label information from content. Rather, it informs the consuming application of specifically what actions it should take to effectively remove the label. 
 
-Given [contentinfo](../resources/contentinfo.md) as an input, which includes existing content metadata [key/value pairs](../resources/keyvaluepair.md), the API returns some combination of one of more of the following: [customAction](../resources/customaction.md), [informationProtectionAction](../resources/informationProtectionAction.md), [justifyAction](./resources/justifyAction.md),[metadataAction](../resources/metadataAction.md), etc.
+Given [contentInfo](../resources/contentinfo.md) as an input, which includes existing content metadata [key/value pairs](../resources/keyvaluepair.md), the API returns some combination of one of more of the following: [customAction](../resources/customaction.md), [informationProtectionAction](../resources/informationProtectionAction.md), [justifyAction](./resources/justifyAction.md),[metadataAction](../resources/metadataAction.md), etc.
 
 ## Permissions
 
@@ -47,16 +47,16 @@ In the request body, provide a JSON object with the following parameters.
 | Parameter    | Type        | Description |
 |:-------------|:------------|:------------|
 | contentInfo     | [contentInfo](../resources/contentInfo.md)         | Provides details on the [content format](../resources/enums.md#contentFormat), [content state](../resources/enums.md#contentState), and existing [metadata](../resources/keyvaluepair.md) as key/value pairs.           |
-|downgradeJustification|downgradeJustification| Justification reason that must be provided by the user or application logic. |
-| auditInfo       | [auditInfo](../resources/auditInfo.md)             | Metadata pased in to the auditInfo parameter will surface in Azure Information Protection Analytics, surfacing details about the actions taken. |
+|downgradeJustification|downgradeJustification| Justification that must be provided by the user or application logic. |
+| auditInfo       | [auditInfo](../resources/auditInfo.md)             | Metadata passed in to the *auditInfo* parameter will surface details about the actions taken in Azure Information Protection Analytics. |
 
 ## Response
 
-If successful, this method returns `200, OK` response code and a new [informationProtectionAction](../resources/informationprotectionaction.md) collection object in the response body. [informationProtectionAction](../resources/informationprotectionaction.md) will contain a [metadataAction](../resources/metadataaction.md) that informs 
+If successful, this method returns a `200 OK` response code and a new [informationProtectionAction](../resources/informationprotectionaction.md) collection object in the response body. The [informationProtectionAction] object (../resources/informationprotectionaction.md) will contain a [metadataAction](../resources/metadataaction.md) object that informs 
 
 ## Examples
 
-The following is an example of how to call this API.
+The following example shows how to call this API.
 
 ### Request
 
@@ -131,8 +131,7 @@ Content-type: application/json
 
 The following is an example of the response.
 
-> [!NOTE]
-> The response object shown here might be shortened for readability. All the properties will be returned from an actual call.
+> **Note:** The response object shown here might be shortened for readability. All the properties will be returned from an actual call.
 
 <!-- {
   "blockType": "response",
