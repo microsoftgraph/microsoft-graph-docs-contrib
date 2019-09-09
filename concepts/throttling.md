@@ -79,37 +79,37 @@ The following resources are provided by the Outlook service.
 
 ##### Calendar API resources
 
-- [event](/graph/api/resources/resources/event)
-- [eventMessage](/graph/api/resources/resources/eventmessage)
-- [calendar](/graph/api/resources/resources/calendar)
-- [calendarGroup](/graph/api/resources/resources/calendargroup)
-- [outlookCategory](/graph/api/resources/resources/outlookcategory)
-- [attachment](/graph/api/resources/resources/attachment)
-- [place](/graph/api/resources/resources/place)
+- [event](/graph/api/resources/event)
+- [eventMessage](/graph/api/resources/eventmessage)
+- [calendar](/graph/api/resources/calendar)
+- [calendarGroup](/graph/api/resources/calendargroup)
+- [outlookCategory](/graph/api/resources/outlookcategory)
+- [attachment](/graph/api/resources/attachment)
+- [place](/graph/api/resources/place)
 
 ##### Mail API resources
 
-- [message](/graph/api/resources/resources/message)
-- [mailFolder](/graph/api/resources/resources/mailfolder)
-- [mailSearchFolder](/graph/api/resources/resources/mailsearchfolder)
-- [messageRule](/graph/api/resources/resources/messagerule)
-- [outlookCategory](/graph/api/resources/resources/outlookcategory)
-- [attachment](/graph/api/resources/resources/attachment)
+- [message](/graph/api/resources/message)
+- [mailFolder](/graph/api/resources/mailfolder)
+- [mailSearchFolder](/graph/api/resources/mailsearchfolder)
+- [messageRule](/graph/api/resources/messagerule)
+- [outlookCategory](/graph/api/resources/outlookcategory)
+- [attachment](/graph/api/resources/attachment)
 
 ##### Personal contacts API resources
 
-- [contact](/graph/api/resources/resources/contact)
-- [contactFolder](/graph/api/resources/resources/contactfolder)
-- [outlookCategory](/graph/api/resources/resources/outlookcategory)
+- [contact](/graph/api/resources/contact)
+- [contactFolder](/graph/api/resources/contactfolder)
+- [outlookCategory](/graph/api/resources/outlookcategory)
 
 ##### Social and workplace intelligence resources
 
-- [person](/graph/api/resources/resources/person)
+- [person](/graph/api/resources/person)
 
 ##### To-do tasks API resources
 
-- [outlookTask](/graph/api/resources/resources/outlooktask)
-- [outlookTaskFolder](/graph/api/resources/resources/outlooktaskfolder)
-- [outlookTaskGroup](/graph/api/resources/resources/outlooktaskgroup)
-- [outlookCategory](/graph/api/resources/resources/outlookcategory)
-- [attachment](/graph/api/resources/resources/attachment)
+- [outlookTask](/graph/api/resources/outlooktask)
+- [outlookTaskFolder](/graph/api/resources/outlooktaskfolder)
+- [outlookTaskGroup](/graph/api/resources/outlooktaskgroup)
+- [outlookCategory](/graph/api/resources/outlookcategory)
+- [attachment](/graph/api/resources/attachment)
