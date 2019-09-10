@@ -145,7 +145,6 @@
         href: /graph/toolkit/style?context=graph/api/beta
       - name: Templating components
         href: /graph/toolkit/templates?context=graph/api/beta
->>>>>>> origin/master
   - name: Resources
     items:
     - name: Best practices

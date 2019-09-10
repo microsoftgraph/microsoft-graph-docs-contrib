@@ -111,7 +111,7 @@
         href: /graph/sdks/create-client?context=graph/api/1.0
       - name: Choose an authentication provider
         href: /graph/sdks/choose-authentication-providers?context=graph/api/1.0
-      - name: Choose an authentication provider
+      - name: Create requests
         href: /graph/sdks/create-requests?context=graph/api/1.0        
   - name: Use the toolkit (preview)
     items:
