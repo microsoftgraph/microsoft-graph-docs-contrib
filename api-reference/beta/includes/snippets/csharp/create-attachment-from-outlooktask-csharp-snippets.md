@@ -8,7 +8,7 @@ GraphServiceClient graphClient = new GraphServiceClient( authProvider );
 
 var attachment = new Attachment
 {
-	LastModifiedDateTime = "datetime-value",
+	LastModifiedDateTime = DateTimeOffset.Parse("datetime-value"),
 	Name = "name-value",
 	ContentType = "contentType-value",
 	Size = 99,

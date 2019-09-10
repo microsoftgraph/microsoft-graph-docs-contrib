@@ -9,7 +9,7 @@ GraphServiceClient graphClient = new GraphServiceClient( authProvider );
 var alert = new Alert
 {
 	AssignedTo = "String",
-	ClosedDateTime = "String (timestamp)",
+	ClosedDateTime = DateTimeOffset.Parse("String (timestamp)"),
 	Comments = new List<String>()
 	{
 		"String"
