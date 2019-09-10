@@ -4,6 +4,7 @@ description: "Used with the **assignments.grading** property. This is a subclass
 localization_priority: Normal
 author: "dipakboyed"
 ms.prod: "education"
+doc_type: resourcePageType
 ---
 
 # educationAssignmentPointsGradeType resource type
@@ -34,7 +35,7 @@ The following is a JSON representation of the resource.
 
 ```json
 {
-  "maxPoints": "Single"
+  "maxPoints": "Double"
 }
 
 ```

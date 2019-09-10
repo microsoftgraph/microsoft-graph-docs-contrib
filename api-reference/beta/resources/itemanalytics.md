@@ -1,9 +1,11 @@
 ---
 author: daspek
-ms.author: dspektor
+description: "The itemAnalytics resource provides analytics about activities that took place on an item. This resource is currently only available on SharePoint and OneDrive for Business."
 ms.date: 09/14/2017
 title: ItemAnalytics
 localization_priority: Normal
+doc_type: resourcePageType
+ms.prod: ""
 ---
 # itemAnalytics resource type
 
@@ -35,7 +37,7 @@ You can also use the [getActivitiesByInterval][] API to retrieve analytics over 
 
 | Property      | Type                 | Description
 |:--------------|:---------------------|:--------------------------------------
-| allTime       | [itemActivityStat][] | Analytics over the the item's lifespan.
+| allTime       | [itemActivityStat][] | Analytics over the item's lifespan.
 | lastSevenDays | [itemActivityStat][] | Analytics for the last seven days.
 
 [itemActivityStat]: itemactivitystat.md

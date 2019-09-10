@@ -4,6 +4,7 @@ description: "Schema describing an Android for Work application's custom configu
 author: "rolyon"
 localization_priority: Normal
 ms.prod: "Intune"
+doc_type: resourcePageType
 ---
 
 # androidForWorkAppConfigurationSchema resource type
@@ -70,8 +71,6 @@ Here is a JSON representation of the resource.
   ]
 }
 ```
-
-
 
 
 

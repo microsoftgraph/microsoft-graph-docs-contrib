@@ -4,6 +4,7 @@ description: "Indicates the type of return code."
 author: "rolyon"
 localization_priority: Normal
 ms.prod: "Intune"
+doc_type: enumPageType
 ---
 
 # win32LobAppReturnCodeType enum type
@@ -22,8 +23,6 @@ Indicates the type of return code.
 |softReboot|2|Soft-reboot is required.|
 |hardReboot|3|Hard-reboot is required.|
 |retry|4|Retry.|
-
-
 
 
 
