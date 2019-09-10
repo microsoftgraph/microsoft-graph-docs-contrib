@@ -109,6 +109,8 @@
         href: /graph/sdks/create-client?toc=./ref/toc.json
       - name: Choose an authentication provider
         href: /graph/sdks/choose-authentication-providers?toc=./ref/toc.json
+      - name: Create requests
+        href: /graph/sdks/create-requests?toc=./ref/toc.json        
   - name: Resources
     items:
     - name: Best practices
