@@ -4,6 +4,7 @@ description: "MacOS endpoint protection configuration profile."
 author: "rolyon"
 localization_priority: Normal
 ms.prod: "Intune"
+doc_type: resourcePageType
 ---
 
 # macOSEndpointProtectionConfiguration resource type
@@ -132,8 +133,6 @@ Here is a JSON representation of the resource.
   "fileVaultPersonalRecoveryKeyRotationInMonths": 1024
 }
 ```
-
-
 
 
 

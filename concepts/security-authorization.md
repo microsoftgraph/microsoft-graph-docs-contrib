@@ -71,7 +71,7 @@ To register your application:
     >**Note**: You don't have to be a tenant admin. You will be redirected to the **My applications** list.
 2. Choose **New registration**.
 3. On the registration page for the new application, enter a value for **Name** and select the account types you wish to support. In the **Redirect URI** field, enter the redirect URL.
-4. Select **Register** to create the app and view its overview page.
+4. Select **Register** to create the app and view its overview page. *
 5. Go to the app's **API permissions** page.
 6. Select **Add a permission** and then choose **Microsoft Graph** in the flyout. Select **Delegated permissions**. Use the search box to find and select the required permissions. For a list of permissions, see [Security permissions](permissions-reference.md#security-permissions).
 
@@ -92,6 +92,8 @@ Save the following information:
 - Application (client) ID
 - Redirect URL
 - List of required permissions
+
+\* Windows Defender Advanced Threat Protection (WDATP) requires additional [user roles](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/user-roles) than what is required by the Microsoft Graph Security API; therefore, only the users in both WDATP and Microsoft Graph Security API roles can have access to the WDATP data.  Application-only authentication is not limited by this; therefore, we recommend that you use an app-only authentication token.
 
 For more information, see [Register your app with the Microsoft identity platform](auth-register-app-v2.md).
 
