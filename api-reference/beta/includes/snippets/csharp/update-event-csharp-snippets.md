@@ -13,7 +13,7 @@ var @event = new Event
 	ResponseStatus = new ResponseStatus
 	{
 		Response = ResponseType.None,
-		Time = "2016-10-19T10:37:00Z"
+		Time = DateTimeOffset.Parse("2016-10-19T10:37:00Z")
 	},
 	Recurrence = null,
 	Uid = "iCalUId-value",
