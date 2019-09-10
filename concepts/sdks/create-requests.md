@@ -27,6 +27,8 @@ To read information from Microsoft Graph, it is first necessary to create a *req
     let user = await client.api("/me").get();
 ```
 
+---
+
 ## Use $select to controlling the properties returned
 
 When retrieving an entity, not all properties are automatically retrieved, sometimes they need to be explicitly selected. Also, there are scenarios where it is not necessary to return all the default set of properties. Selecting just the required properties can improve the performance of the request. The *request* object can be customized to emit the `$select` query parameter with a list of desired properties.
@@ -51,6 +53,8 @@ When retrieving an entity, not all properties are automatically retrieved, somet
         .select("displayName", "jobTitle")
         .get();  // GET https://graph.microsoft.com/v1.0/me?$select=displayName,jobTitle
 ```
+
+---
 
 ## Retrieve lists of entities
 
@@ -82,6 +86,8 @@ Retrieving a list of entities is similar to retrieving a single entity except th
         .get();  
 ```
 
+---
+
 The object returned when retrieving a list of entities is likely to be a paged collection. Refer to the [paging through a collection]() section for details on how to obtain the complete list of entities.
 
 ## Access an item of a collection
@@ -105,6 +111,8 @@ For SDKs that support a *fluent* style, collections of entities can be accessed 
     let messages = await client.api("/me/messages/${messageId}")
         .get();  // GET https://graph.microsoft.com/v1.0/me?$select=displayName,jobTitle
 ```
+
+---
 
 ## Access related entities using $expand
 
@@ -130,6 +138,8 @@ Using the `$expand` capability it is possible to request a related entity, or co
         .get();  // GET https://graph.microsoft.com/v1.0/me/messages?$expand=attachments
 ```
 
+---
+
 ## Delete an entity
 
 To delete an entity, the *request* can be constructed in exactly the same way as when retrieving an entity.  The *delete* method on the *request* object indicates the desire to delete the entity.
@@ -152,6 +162,8 @@ To delete an entity, the *request* can be constructed in exactly the same way as
         .delete();  
     // DELETE https://graph.microsoft.com/v1.0/me/messages/<guid>
 ```
+
+---
 
 ## Make a POST request to create a new entity
 
@@ -188,6 +200,8 @@ Creating a new entity in a collection can be done by calling an `add` or `post` 
     let newCalendar = await client.api('/me/calendars')
     	.post(calendar);
 ```
+
+---
 
 ## Updating an existing entity with PATCH
 
@@ -228,6 +242,8 @@ let events = await client.api('/me/events')
 	.get();
 ```
 
+---
+
 ## Provide custom query parameters
 
 In situations where an API call allows custom query parameters those parameter values can be provided by using a list of `QueryOptions` objects.
@@ -259,3 +275,5 @@ let calendar = await client.api('/me/calendar/calendarView?startDateTime=2017-01
 	.get();
 
 ```
+
+---
