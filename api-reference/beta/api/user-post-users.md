@@ -23,9 +23,9 @@ One of the following permissions is required to call this API. To learn more, in
 
 |Permission type      | Permissions (from least to most privileged)              |
 |:--------------------|:---------------------------------------------------------|
-|Delegated (work or school account) | Directory.ReadWrite.All, Directory.AccessAsUser.All    |
+|Delegated (work or school account) | User.ReadWrite.All, Directory.ReadWrite.All, Directory.AccessAsUser.All    |
 |Delegated (personal Microsoft account) | Not supported.    |
-|Application | Directory.ReadWrite.All |
+|Application | User.ReadWrite.All, Directory.ReadWrite.All |
 
 ## HTTP request
 <!-- { "blockType": "ignored" } -->
@@ -157,14 +157,14 @@ Content-type: application/json
   "displayName": "John Smith",
   "identities": [
     {
-      "signInType":"signInName",
-      "issuer":"contoso.onmicrosoft.com",
-      "issuerAssignedId":"johnsmith"
+      "signInType": "signInName",
+      "issuer": "contoso.onmicrosoft.com",
+      "issuerAssignedId": "johnsmith"
     },
     {
-      "signInType":"federated",
-      "issuer":"facebook.com",
-      "issuerAssignedId":"5eecb0cd"
+      "signInType": "federated",
+      "issuer": "facebook.com",
+      "issuerAssignedId": "5eecb0cd"
     }
   ],
   "passwordProfile" : {
@@ -191,18 +191,19 @@ HTTP/1.1 201 Created
 Content-type: application/json
 
 {
+  "@odata.context": "https://graph.microsoft.com/beta/$metadata#users/$entity",
   "displayName": "John Smith",
   "id": "4c7be08b-361f-41a8-b1ef-1712f7a3dfb2",
   "identities": [
     {
-      "signInType":"signInName",
-      "issuer":"contoso.onmicrosoft.com",
-      "issuerAssignedId":"johnsmith"
+      "signInType": "signInName",
+      "issuer": "contoso.onmicrosoft.com",
+      "issuerAssignedId": "johnsmith"
     },
     {
-      "signInType":"federated",
-      "issuer":"facebook.com",
-      "issuerAssignedId":"5eecb0cd"
+      "signInType": "federated",
+      "issuer": "facebook.com",
+      "issuerAssignedId": "5eecb0cd"
     }
   ],
   "passwordProfile" : {
