@@ -110,8 +110,6 @@ Content-length: 201
 
 #### Request
 
-# [HTTP](#tab/http)
-
 <!-- {
   "blockType": "request",
   "name": "create_channel_from_user"
@@ -136,8 +134,6 @@ Content-type: application/json
      ]
 }
 ```
-
----
 
 #### Response
 
