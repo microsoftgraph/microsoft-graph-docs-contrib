@@ -110,6 +110,8 @@ Content-length: 201
 
 #### Request
 
+Here is an example request that shows how to create a private channel and add a user as an team owner.
+
 <!-- {
   "blockType": "request",
   "name": "create_channel_from_user"
