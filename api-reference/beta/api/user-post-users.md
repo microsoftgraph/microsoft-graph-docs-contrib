@@ -155,14 +155,10 @@ Content-type: application/json
 
 {
   "displayName": "John Smith",
-  "passwordProfile" : {
-    "forceChangePasswordNextSignIn": true,
-    "password": "password-value"
-  },
   "identities": [
     {
       "signInType":"signInName",
-      "issuer":"contosp.onmicrosoft.com",
+      "issuer":"contoso.onmicrosoft.com",
       "issuerAssignedId":"johnsmith"
     },
     {
@@ -170,7 +166,11 @@ Content-type: application/json
       "issuer":"facebook.com",
       "issuerAssignedId":"5eecb0cd"
     }
-  ]
+  ],
+  "passwordProfile" : {
+    "forceChangePasswordNextSignIn": true,
+    "password": "password-value"
+  }
 }
 ```
 
@@ -193,14 +193,10 @@ Content-type: application/json
 {
   "displayName": "John Smith",
   "id": "4c7be08b-361f-41a8-b1ef-1712f7a3dfb2",
-  "passwordProfile" : {
-    "forceChangePasswordNextSignIn": true,
-    "password": null
-  },
   "identities": [
     {
       "signInType":"signInName",
-      "issuer":"contosp.onmicrosoft.com",
+      "issuer":"contoso.onmicrosoft.com",
       "issuerAssignedId":"johnsmith"
     },
     {
@@ -208,7 +204,11 @@ Content-type: application/json
       "issuer":"facebook.com",
       "issuerAssignedId":"5eecb0cd"
     }
-  ]
+  ],
+  "passwordProfile" : {
+    "forceChangePasswordNextSignIn": true,
+    "password": null
+  }
 }
 ```
 
