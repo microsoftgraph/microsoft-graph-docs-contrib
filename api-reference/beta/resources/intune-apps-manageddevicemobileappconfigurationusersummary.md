@@ -4,6 +4,7 @@ description: "Contains properties, inherited properties and actions for an MDM m
 author: "rolyon"
 localization_priority: Normal
 ms.prod: "Intune"
+doc_type: resourcePageType
 ---
 
 # managedDeviceMobileAppConfigurationUserSummary resource type
@@ -58,8 +59,6 @@ Here is a JSON representation of the resource.
   "configurationVersion": 1024
 }
 ```
-
-
 
 
 

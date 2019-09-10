@@ -4,6 +4,7 @@ description: "Represents device registration records for Bring-Your-Own-Device(B
 author: "rolyon"
 localization_priority: Normal
 ms.prod: "Intune"
+doc_type: resourcePageType
 ---
 
 # windowsInformationProtectionDeviceRegistration resource type
@@ -58,8 +59,6 @@ Here is a JSON representation of the resource.
   "lastCheckInDateTime": "String (timestamp)"
 }
 ```
-
-
 
 
 

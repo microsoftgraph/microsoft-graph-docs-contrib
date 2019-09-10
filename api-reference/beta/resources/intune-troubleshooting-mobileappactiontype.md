@@ -4,6 +4,7 @@ description: "Not yet documented"
 author: "rolyon"
 localization_priority: Normal
 ms.prod: "Intune"
+doc_type: enumPageType
 ---
 
 # mobileAppActionType enum type
@@ -22,8 +23,6 @@ Not yet documented
 |installed|3|Application installed.|
 |uninstalled|4|Application uninstalled.|
 |userRequestedInstall|5|User requested installation|
-
-
 
 
 

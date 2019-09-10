@@ -4,6 +4,7 @@ description: "Violation of restricted apps configuration profile per device per 
 author: "rolyon"
 localization_priority: Normal
 ms.prod: "Intune"
+doc_type: resourcePageType
 ---
 
 # restrictedAppsViolation resource type
@@ -68,8 +69,6 @@ Here is a JSON representation of the resource.
   ]
 }
 ```
-
-
 
 
 

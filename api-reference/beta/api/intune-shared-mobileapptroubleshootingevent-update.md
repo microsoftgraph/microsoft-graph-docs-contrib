@@ -4,6 +4,7 @@ description: "Describes the Update mobileAppTroubleshootingEvent method of the M
 localization_priority: Normal
 author: "rolyon"
 ms.prod: "Intune"
+doc_type: apiPageType
 ---
 
 # Update mobileAppTroubleshootingEvent
@@ -89,6 +90,9 @@ Content-Length: 120
   "id": "77943c10-3c10-7794-103c-9477103c9477"
 }
 ```
+
+
+
 
 
 

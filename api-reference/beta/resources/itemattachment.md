@@ -2,6 +2,9 @@
 title: "itemAttachment resource type"
 description: "A contact, event, or message that's attached to another event,"
 localization_priority: Normal
+doc_type: resourcePageType
+ms.prod: "outlook"
+author: "angelgolfer-ms"
 ---
 
 # itemAttachment resource type
@@ -41,6 +44,7 @@ Here is a JSON representation of the resource
 
 <!-- {
   "blockType": "resource",
+  "baseType": "microsoft.graph.attachment",
   "keyProperty":"id",
   "optionalProperties": [
     "item"

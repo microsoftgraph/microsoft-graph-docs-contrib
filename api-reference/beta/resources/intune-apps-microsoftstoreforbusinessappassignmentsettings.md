@@ -4,6 +4,7 @@ description: "Contains properties used to assign an Microsoft Store for Business
 author: "rolyon"
 localization_priority: Normal
 ms.prod: "Intune"
+doc_type: resourcePageType
 ---
 
 # microsoftStoreForBusinessAppAssignmentSettings resource type
@@ -38,8 +39,6 @@ Here is a JSON representation of the resource.
   "useDeviceContext": true
 }
 ```
-
-
 
 
 

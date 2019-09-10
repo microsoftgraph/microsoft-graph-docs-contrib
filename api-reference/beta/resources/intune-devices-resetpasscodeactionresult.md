@@ -4,6 +4,7 @@ description: "Reset passcode action result"
 author: "rolyon"
 localization_priority: Normal
 ms.prod: "Intune"
+doc_type: resourcePageType
 ---
 
 # resetPasscodeActionResult resource type
@@ -46,8 +47,6 @@ Here is a JSON representation of the resource.
   "passcode": "String"
 }
 ```
-
-
 
 
 
