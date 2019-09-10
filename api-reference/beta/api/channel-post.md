@@ -114,7 +114,7 @@ Content-length: 201
 
 <!-- {
   "blockType": "request",
-  "name": "create_channel_from_group"
+  "name": "create_channel_from_user"
 }-->
 
 ```http
@@ -123,9 +123,9 @@ Content-type: application/json
 
 {
   "@odata.type": "#Microsoft.Teams.Core.channel",
-  "membershipType": "Private",
+  "membershipType": "private",
   "displayName": "My First Private Channel",
-  "description": "This is my first private channels"
+  "description": "This is my first private channels",
   "members":
      [
         {
