@@ -4,6 +4,7 @@ description: "Windows Hello for Business settings lets users access their device
 author: "rolyon"
 localization_priority: Normal
 ms.prod: "Intune"
+doc_type: resourcePageType
 ---
 
 # deviceEnrollmentWindowsHelloForBusinessConfiguration resource type
@@ -88,8 +89,6 @@ Here is a JSON representation of the resource.
   "securityKeyForSignIn": "String"
 }
 ```
-
-
 
 
 

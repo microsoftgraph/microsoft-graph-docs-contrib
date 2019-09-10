@@ -94,8 +94,9 @@ Delta query is currently supported for the following resources.
 | Personal contacts in a folder                                  | [delta](/graph/api/contact-delta?view=graph-rest-1.0) function of the [contact](/graph/api/resources/contact?view=graph-rest-1.0) resource                                             |
 | Schools (preview)                                              | [delta](/graph/api/educationschool-delta?view=graph-rest-beta) function of the [School](/graph/api/resources/educationschool?view=graph-rest-beta) resource (preview)                  |
 | Service principals (preview)                                   | [delta](/graph/api/serviceprincipal-delta?view=graph-rest-beta) function of the [servicePrincipal](/graph/api/resources/serviceprincipal?view=graph-rest-beta) resource (preview)      |
-| Users                                                          | [delta](/graph/api/user-delta?view=graph-rest-1.0) function of the [user](/graph/api/resources/user?view=graph-rest-1.0) resource                                                      |
-| Planner items\*\* (preview)                                    | [delta](/graph/api/planneruser-list-delta?view=graph-rest-beta) function of the all segment of [plannerUser](/graph/api/resources/planneruser?view=graph-rest-beta) resource (preview) |
+| Users                                                          | [delta](/graph/api/user-delta?view=graph-rest-1.0) function of the [user](/graph/api/resources/user?view=graph-rest-1.0) resource |
+| Planner items\*\* (preview)                                    | [delta](/graph/api/planneruser-list-delta?view=graph-rest-beta) function of the all segment of [plannerUser](/graph/api/resources/planneruser?view=graph-rest-beta) resource (preview)|
+| chatMessages in a channel (preview)                            | [delta](/graph/api/chatmessage-delta?view=graph-rest-beta) function of the [chatMessage](/graph/api/resources/chatmessage?view=graph-rest-beta) |
 
 > \* The usage pattern for OneDrive resources is similar to the other supported resources with some minor syntax differences. Delta query for drives will be updated in the future to be consistent with other resource types. For more detail about the current syntax, see
 [Track changes for a drive](/graph/api/driveitem-delta?view=graph-rest-1.0).

@@ -4,6 +4,7 @@ description: "Contains properties and inherited properties for Windows Phone 8.1
 author: "rolyon"
 localization_priority: Normal
 ms.prod: "Intune"
+doc_type: resourcePageType
 ---
 
 # windowsPhone81AppX resource type
@@ -129,8 +130,6 @@ Here is a JSON representation of the resource.
   "identityVersion": "String"
 }
 ```
-
-
 
 
 

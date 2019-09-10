@@ -3,6 +3,8 @@ title: "List subscriptions"
 description: "Retrieve the properties and relationships of webhook subscriptions, based on the app ID, the user, and the user's role with a tenant."
 localization_priority: Priority
 author: "piotrci"
+ms.prod: ""
+doc_type: apiPageType
 ---
 
 # List subscriptions
@@ -77,14 +79,14 @@ If successful, this method returns a `200 OK` response code and a list of [subsc
   "name": "get_subscriptions"
 }-->
 
-```http
+```msgraph-interactive
 GET https://graph.microsoft.com/v1.0/subscriptions
 ```
 # [C#](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/get-subscriptions-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# [Javascript](#tab/javascript)
+# [JavaScript](#tab/javascript)
 [!INCLUDE [sample-code](../includes/snippets/javascript/get-subscriptions-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 

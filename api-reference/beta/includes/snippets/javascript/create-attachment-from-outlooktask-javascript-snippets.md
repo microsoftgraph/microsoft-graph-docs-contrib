@@ -20,6 +20,6 @@ const attachment = {
 
 let res = await client.api('/users/{id}/outlook/tasks/{id}/attachments')
 	.version('beta')
-	.post({attachment : attachment});
+	.post(attachment);
 
 ```

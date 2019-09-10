@@ -4,6 +4,7 @@ description: "Not yet documented"
 author: "rolyon"
 localization_priority: Normal
 ms.prod: "Intune"
+doc_type: enumPageType
 ---
 
 # certificateStatus enum type
@@ -19,8 +20,6 @@ Not yet documented
 |:---|:---|:---|
 |notProvisioned|0|Not yet documented|
 |provisioned|1|Not yet documented|
-
-
 
 
 

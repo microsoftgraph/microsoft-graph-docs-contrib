@@ -4,6 +4,7 @@ description: "Contains the properties used to assign an App provisioning configu
 author: "rolyon"
 localization_priority: Normal
 ms.prod: "Intune"
+doc_type: resourcePageType
 ---
 
 # mobileAppProvisioningConfigGroupAssignment resource type
@@ -47,8 +48,6 @@ Here is a JSON representation of the resource.
   "id": "String (identifier)"
 }
 ```
-
-
 
 
 

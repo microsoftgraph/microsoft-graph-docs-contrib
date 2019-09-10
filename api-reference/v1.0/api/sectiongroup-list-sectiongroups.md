@@ -4,6 +4,7 @@ description: "Retrieve a list of section groups from the specified section group
 localization_priority: Normal
 author: "jewan-microsoft"
 ms.prod: "onenote"
+doc_type: apiPageType
 ---
 
 # List sectionGroups
@@ -54,14 +55,14 @@ Here is an example of the request.
   "blockType": "request",
   "name": "get_sectiongroups"
 }-->
-```http
+```msgraph-interactive
 GET https://graph.microsoft.com/v1.0/me/onenote/sectionGroups/{id}/sectionGroups
 ```
 # [C#](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/get-sectiongroups-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# [Javascript](#tab/javascript)
+# [JavaScript](#tab/javascript)
 [!INCLUDE [sample-code](../includes/snippets/javascript/get-sectiongroups-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 

@@ -14,6 +14,6 @@ const Stream = Binary data for the image;
 
 let res = await client.api('/me/photo/$value')
 	.version('beta')
-	.put({Stream : Stream});
+	.put(Stream);
 
 ```

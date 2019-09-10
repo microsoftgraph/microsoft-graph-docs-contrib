@@ -4,6 +4,7 @@ description: "Get a list of the group's direct members. A group can have users, 
 localization_priority: Priority
 author: "dkershaw10"
 ms.prod: "groups"
+doc_type: apiPageType
 ---
 
 # List members
@@ -48,14 +49,14 @@ The following is an example of the request.
   "blockType": "request",
   "name": "get_members"
 }-->
-```http
+```msgraph-interactive
 GET https://graph.microsoft.com/v1.0/groups/{id}/members
 ```
 # [C#](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/get-members-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# [Javascript](#tab/javascript)
+# [JavaScript](#tab/javascript)
 [!INCLUDE [sample-code](../includes/snippets/javascript/get-members-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 

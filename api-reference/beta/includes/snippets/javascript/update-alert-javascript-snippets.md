@@ -26,6 +26,6 @@ const alert = {
 
 let res = await client.api('/security/alerts/{alert_id}')
 	.version('beta')
-	.update({alert : alert});
+	.update(alert);
 
 ```

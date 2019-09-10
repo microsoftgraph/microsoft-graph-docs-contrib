@@ -16,6 +16,6 @@ const educationClass = {
 };
 
 let res = await client.api('/education/classes/{class-id}')
-	.update({educationClass : educationClass});
+	.update(educationClass);
 
 ```

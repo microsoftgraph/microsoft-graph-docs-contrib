@@ -21,6 +21,6 @@ const contact = {
 
 let res = await client.api('/me/contactFolders/{id}/contacts')
 	.version('beta')
-	.post({contact : contact});
+	.post(contact);
 
 ```

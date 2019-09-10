@@ -4,6 +4,7 @@ description: "Delete a registered device."
 author: "davidmu1"
 localization_priority: Normal
 ms.prod: "microsoft-identity-platform"
+doc_type: apiPageType
 ---
 
 # Delete device
@@ -55,7 +56,7 @@ DELETE https://graph.microsoft.com/v1.0/devices/{id}
 [!INCLUDE [sample-code](../includes/snippets/csharp/delete-device-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# [Javascript](#tab/javascript)
+# [JavaScript](#tab/javascript)
 [!INCLUDE [sample-code](../includes/snippets/javascript/delete-device-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
