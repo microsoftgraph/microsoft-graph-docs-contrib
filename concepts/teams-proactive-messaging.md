@@ -1,6 +1,6 @@
 ---
 title: "Proactive messaging using a bot in Microsoft Teams"
-description: ""
+description: "Sending a proactive message to a Microsoft Teams user with a custom app by first installing the bot using Microsoft Graph."
 author: "clearab"
 localization_priority: Normal
 ms.prod: "microsoft-teams"
@@ -9,7 +9,7 @@ ms.prod: "microsoft-teams"
 
 A proactive message is a message sent to a Microsoft Teams user without a user initiating the conversation. Custom apps in Microsoft Teams can send proactive messages to users using a bot. However, to do so the bot needs to be installed either as a personal app, or in a team that the user is a member of. This requirement can be prohibitive in scenarios where you need to proactively message a group of users that may or may not have the Teams app installed.
 
-This article outlines how you can combine the Microsoft Graph with a Microsoft Teams app to install the app for your users so that you can use your Teams app to send them a proactive message without them having to manually install the app.
+This article outlines how you can combine the Microsoft Graph with a Microsoft Teams app to install the app for your users and then use your Teams app to send them a proactive message, without requiring them to manually install the app.
 
 At a high level, you'll need to:
 
@@ -25,7 +25,7 @@ You can also use the [Company Communicator app template](https://github.com/Offi
 
 When creating your app make sure you take note of the `id` you use in your application manifest; you'll need it to install the app in a subsequent step.
 
-If you are doing this for a large organization, the welcome messages from your bot may get throttled. If possible, perform the installations in batches, and implement back-off functionality in your bot. See: 
+If you are doing this for a large organization, the welcome messages from your bot may get throttled. If possible, perform the installations in batches, and implement back-off functionality in your bot. See the article on [handling rate limiting](/microsoftteams/platform/concepts/bots/rate-limit).
 
 ## Deploy your app to your tenant app catalog
 
@@ -43,7 +43,7 @@ First, you'll want to check to see if your Teams app is already installed for th
 GET /users/{user-id}/teamwork/installedApps?$expand=teamsAppDefinition&$filter=teamsAppDefinition/teamsAppId eq '{teamsAppid}'
 ```
 
-Where `{teamsAppId}` is the `id` in the Teams app manifest that you made note of previously. Not that this may be different from your `appid` for Graph calls, and from your `botId`. You may find it useful to install the app for a user and test the call against that user to ensure you've got the correct `id` value.
+Where `{teamsAppId}` is the `id` in the Teams app manifest that you made note of previously. Note that this may be different from your `appid` for Graph calls, and from your `botId`. You may find it useful to manually install the app for a user and test the call against that user to ensure you've got the correct `id` value.
 
 The call will return an empty array if the app is not installed, or an array with a single [teamsAppInstallation](/graph/api/resources/teamsappinstallation?view=graph-rest-beta) if it is already installed.
 
@@ -64,11 +64,9 @@ If the user has Microsoft Teams running, they may or may not see the app install
 
 ## Get the chat thread id
 
-When the app is installed for the user, the bot will get a notification, see https://docs.microsoft.com/en-us/microsoftteams/platform/concepts/bots/bots-notifications
+When the app is installed for the user, the bot will get receive a `conversationUpdate` event that will contain the necessary information for it to send the proactive message. For additional information see the [bot events](/microsoftteams/platform/concepts/bots/bots-notifications) article.
 
-This notification will contain the chatThread id.
-
-If you lose that ID, you can find it again:
+If you lose the `chatThreadId`, you can find it again by calling:
 
 ```http
 GET /users/{user-id}/chats?$filter=installedApps/any(a:a/teamsApp/id eq '{teamsAppid}'
@@ -78,17 +76,9 @@ The id property of the result is the chatThread id.
 
 ## Sending the message
 
-See https://docs.microsoft.com/en-us/microsoftteams/platform/concepts/bots/bot-conversations/bots-conv-proactive
+Now that your bot has the necessary information, you can [send a proactive message](/microsoftteams/platform/concepts/bots/bot-conversations/bots-conv-proactive).
 
 ## C# sample
 
 See https://github.com/microsoftgraph/contoso-airlines-teams-sample/tree/nkramer-promsg (note the branch).
 Interesting code is in InstallAppToAllUsers() in [GraphService.cs](https://github.com/microsoftgraph/contoso-airlines-teams-sample/blob/nkramer-promsg/project/Models/GraphService.cs).
-
-## Installing bots to teams
-
-Chatbots can also send to users that are in a team that have that bot installed. 
-Graph API for that: 
-[install to team](https://docs.microsoft.com/en-us/graph/api/teamsappinstallation-add?view=graph-rest-beta)
-
-Then follow the same steps above to get the chat thread ID and send the 1:1 message.
