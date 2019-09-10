@@ -112,7 +112,7 @@
       - name: Choose an authentication provider
         href: /graph/sdks/choose-authentication-providers?context=graph/api/beta
       - name: Create requests
-        href: /graph/sdks/create-requests?context=graph/api/beta        
+        href: /graph/sdks/create-requests?context=graph/api/beta
   - name: Use the toolkit (preview)
     items:
       - name: Toolkit overview
@@ -145,6 +145,7 @@
         href: /graph/toolkit/style?context=graph/api/beta
       - name: Templating components
         href: /graph/toolkit/templates?context=graph/api/beta
+>>>>>>> origin/master
   - name: Resources
     items:
     - name: Best practices
