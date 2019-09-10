@@ -154,6 +154,8 @@ Content-Type: application/json
 ##### Request
 The following example shows the request.
 
+# [HTTP](#tab/http)
+
 <!-- {
   "blockType": "ignored",
   "name": "call-reject"
