@@ -23,5 +23,3 @@ Restricted apps state
 
 
 
-
-

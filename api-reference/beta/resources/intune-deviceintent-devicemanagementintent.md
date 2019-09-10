@@ -4,6 +4,7 @@ description: "Entity that represents an intent to apply settings to a device"
 author: "rolyon"
 localization_priority: Normal
 ms.prod: "Intune"
+doc_type: resourcePageType
 ---
 
 # deviceManagementIntent resource type
@@ -72,8 +73,6 @@ Here is a JSON representation of the resource.
   ]
 }
 ```
-
-
 
 
 

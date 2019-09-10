@@ -24,8 +24,7 @@ Not yet documented
 |quickScan|3|Not yet documented|
 |signatureUpdate|4|Not yet documented|
 |wipe|5|Not yet documented|
-
-
+|customTextNotification|6|Not yet documented|
 
 
 

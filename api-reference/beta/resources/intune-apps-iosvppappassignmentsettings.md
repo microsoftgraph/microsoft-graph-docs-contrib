@@ -23,6 +23,7 @@ Inherits from [mobileAppAssignmentSettings](../resources/intune-apps-mobileappas
 |:---|:---|:---|
 |useDeviceLicensing|Boolean|Whether or not to use device licensing.|
 |vpnConfigurationId|String|The VPN Configuration Id to apply for this app.|
+|uninstallOnDeviceRemoval|Boolean|Whether or not to uninstall the app when device is removed from Intune.|
 
 ## Relationships
 None
@@ -38,11 +39,10 @@ Here is a JSON representation of the resource.
 {
   "@odata.type": "#microsoft.graph.iosVppAppAssignmentSettings",
   "useDeviceLicensing": true,
-  "vpnConfigurationId": "String"
+  "vpnConfigurationId": "String",
+  "uninstallOnDeviceRemoval": true
 }
 ```
-
-
 
 
 

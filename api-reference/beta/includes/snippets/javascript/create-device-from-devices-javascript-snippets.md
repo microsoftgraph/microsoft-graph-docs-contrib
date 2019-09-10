@@ -27,6 +27,6 @@ const device = {
 
 let res = await client.api('/devices')
 	.version('beta')
-	.post({device : device});
+	.post(device);
 
 ```
