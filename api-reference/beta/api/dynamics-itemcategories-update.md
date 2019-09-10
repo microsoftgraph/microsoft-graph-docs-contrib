@@ -24,7 +24,7 @@ One of the following permissions is required to call this API. To learn more, in
 ## HTTP request
 
 ```
-PATCH /financials/companies('{id}')/itemCategories('{id}')
+PATCH /financials/companies/{id}/itemCategories/{id}
 ```
 
 ## Optional query parameters
@@ -49,7 +49,7 @@ If successful, this method returns a `200 OK` response code and an updated **ite
 
 Here is an example of the request.
 ```json
-PATCH https://graph.microsoft.com/beta/financials/companies('{id}')/itemCategories('{id}')
+PATCH https://graph.microsoft.com/beta/financials/companies/{id}/itemCategories/{id}
 Content-type: application/json
 
 {
