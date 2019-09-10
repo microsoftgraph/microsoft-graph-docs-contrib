@@ -5,7 +5,7 @@ localization_priority: Normal
 author: DarrelMiller
 ---
 
-# Make HTTP requests to Microsoft Graph with the SDKs
+# Make HTTP requests with the SDKs
 
 The Microsoft SDK service libraries provide a root class, referred to as the *client* class that can be used as the starting point for creating all API requests. There are two styles of *client* class, one which uses a "fluent" interface to build up the HTTP request and the other uses a templated path string.
 
@@ -29,7 +29,7 @@ To read information from Microsoft Graph, it is first necessary to create a *req
 
 ---
 
-## Use $select to controlling the properties returned
+## Use $select to control the properties returned
 
 When retrieving an entity, not all properties are automatically retrieved, sometimes they need to be explicitly selected. Also, there are scenarios where it is not necessary to return all the default set of properties. Selecting just the required properties can improve the performance of the request. The *request* object can be customized to emit the `$select` query parameter with a list of desired properties.
 
@@ -56,7 +56,7 @@ When retrieving an entity, not all properties are automatically retrieved, somet
 
 ---
 
-## Retrieve lists of entities
+## Retrieve list of entities
 
 Retrieving a list of entities is similar to retrieving a single entity except there a number of other options for configuring the request. The `$filter` query parameter can be used to reduce the result set to only those rows that match the provided condition.  The `$orderBy` query parameter will request that the server provide the list of entities sorted by the specified properties.
 
@@ -114,7 +114,7 @@ For SDKs that support a *fluent* style, collections of entities can be accessed 
 
 ---
 
-## Access related entities using $expand
+## Use $expand to access related entities
 
 Using the `$expand` capability it is possible to request a related entity, or collection of entities, at the same as requesting the main entity.  The `Expand()` function on the *request* object adds the necessary query parameter.
 
@@ -207,7 +207,7 @@ Creating a new entity in a collection can be done by calling an `add` or `post` 
 
 TBD
 
-## Using HTTP headers to adjust request behavior
+## Use HTTP headers to control request behavior
 
 A `header()` function can be used to attach custom headers to a request. There are a number of situations across Microsoft Graph that use custom header to adjust the behavior of the request being made.
  
