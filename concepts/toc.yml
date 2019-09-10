@@ -250,6 +250,8 @@ items:
             href: teams-configuring-builtin-tabs.md
           - name: Protected APIs
             href: teams-protected-apis.md
+          - name: Send proactive messages with a bot
+            href: teams-proactive-messaging.md
       - name: Workbooks and charts
         displayName: Excel
         items:
