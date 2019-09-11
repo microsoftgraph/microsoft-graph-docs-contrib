@@ -56,7 +56,7 @@ Here is an example of the request.
   "blockType": "request",
   "name": "worksheet_usedrange"
 }-->
-```http
+```msgraph-interactive
 GET https://graph.microsoft.com/beta/me/drive/items/{id}/workbook/worksheets/{id|name}/UsedRange(valuesOnly=true)
 ```
 # [C#](#tab/csharp)

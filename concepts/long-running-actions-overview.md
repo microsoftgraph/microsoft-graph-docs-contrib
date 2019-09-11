@@ -136,7 +136,7 @@ You can address this new item using the resourceId, for example:
   "scopes": "files.readwrite"
 } -->
 
-```http
+```msgraph-interactive
 GET https://graph.microsoft.com/beta/me/drive/items/{item-id}
 ```
 # [C#](#tab/csharp)

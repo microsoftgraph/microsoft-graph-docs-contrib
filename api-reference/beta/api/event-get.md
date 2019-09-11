@@ -96,7 +96,7 @@ The request does not specify any `Prefer: outlook.body-content-type` header to i
   "blockType": "request",
   "name": "get_event"
 }-->
-```http
+```msgraph-interactive
 GET https://graph.microsoft.com/beta/me/events/AAMkAGIAAAoZDOFAAA=/?$select=subject,body,bodyPreview,organizer,attendees,start,end,location 
 Prefer: outlook.timezone="Pacific Standard Time"
 ```
@@ -203,7 +203,7 @@ The request also uses a `$select` query parameter to return specific properties.
   "blockType": "request",
   "name": "get_event_in_text"
 }-->
-```http
+```msgraph-interactive
 GET https://graph.microsoft.com/beta/me/events/AAMkAGI1AAAoZDOFAAA=/?$select=subject,body,bodyPreview
 Prefer: outlook.body-content-type="text"
 ```
@@ -261,7 +261,7 @@ to return specific properties.
   "blockType": "request",
   "name": "get_event_multiple_locations"
 }-->
-```http
+```msgraph-interactive
 GET https://graph.microsoft.com/beta/me/events/AAMkADAGAADDdm4NAAA=/?$select=subject,body,bodyPreview,organizer,attendees,start,end,location,locations
 ```
 # [C#](#tab/csharp)

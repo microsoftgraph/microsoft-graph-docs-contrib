@@ -66,7 +66,7 @@ By default, only a limited set of properties are returned (**businessPhones**, *
   "blockType": "request",
   "name": "get_users"
 }-->
-```http
+```msgraph-interactive
 GET https://graph.microsoft.com/v1.0/users
 ```
 # [C#](#tab/csharp)
@@ -134,7 +134,7 @@ If you need a different property set, you can use the OData `$select` query para
   "blockType": "request",
   "name": "get_users_properties"
 }-->
-```http
+```msgraph-interactive
 GET https://graph.microsoft.com/v1.0/users?$select=displayName,givenName,postalCode
 ```
 # [C#](#tab/csharp)

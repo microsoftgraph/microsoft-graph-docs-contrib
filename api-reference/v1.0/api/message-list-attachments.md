@@ -59,7 +59,7 @@ Here is an example of the request.
   "blockType": "request",
   "name": "message_get_attachments_v1"
 }-->
-```http
+```msgraph-interactive
 GET https://graph.microsoft.com/v1.0/me/messages/{id}/attachments
 ```
 # [C#](#tab/csharp)

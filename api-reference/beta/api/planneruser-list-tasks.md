@@ -52,7 +52,7 @@ Here is an example of the request.
   "blockType": "request",
   "name": "get_tasks"
 }-->
-```http
+```msgraph-interactive
 GET https://graph.microsoft.com/beta/me/planner/tasks
 ```
 # [C#](#tab/csharp)

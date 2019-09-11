@@ -48,7 +48,7 @@ If successful, this method returns a `200 OK` response code and [agreement](../r
   "blockType": "request",
   "name": "get_agreement"
 }-->
-```http
+```msgraph-interactive
 GET https://graph.microsoft.com/beta/agreements/{id}?$expand=files
 ```
 # [C#](#tab/csharp)

@@ -80,7 +80,7 @@ Here is an example of the request.
   "blockType": "request",
   "name": "list_signins"
 }-->
-```http
+```msgraph-interactive
 GET https://graph.microsoft.com/v1.0/auditLogs/signIns
 ```
 # [C#](#tab/csharp)

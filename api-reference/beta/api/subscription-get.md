@@ -77,7 +77,7 @@ Here is an example of the request.
   "name": "get_subscription"
 }-->
 
-```http
+```msgraph-interactive
 GET https://graph.microsoft.com/beta/subscriptions/{id}
 ```
 # [C#](#tab/csharp)

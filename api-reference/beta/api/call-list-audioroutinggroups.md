@@ -26,7 +26,6 @@ One of the following permissions is required to call this API. To learn more, in
 <!-- { "blockType": "ignored" } -->
 ```http
 GET /app/calls/{id}/audioRoutingGroups
-GET /applications/{id}/calls/{id}/audioRoutingGroups
 ```
 
 ## Optional query parameters
@@ -54,7 +53,7 @@ The following example shows the request.
   "blockType": "request",
   "name": "get-audioRoutingGroups"
 }-->
-```http
+```msgraph-interactive
 GET https://graph.microsoft.com/beta/app/calls/{id}/audioRoutingGroups
 ```
 # [C#](#tab/csharp)

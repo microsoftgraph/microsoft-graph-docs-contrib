@@ -47,7 +47,7 @@ var bookingService = new BookingService
 		UniqueId = null,
 		UniqueIdType = null
 	},
-	DefaultPrice = 10.0,
+	DefaultPrice = 10,
 	DefaultPriceType = BookingPriceType.FixedPrice,
 	DefaultReminders = new List<BookingReminder>()
 	{
