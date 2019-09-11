@@ -46,7 +46,7 @@ Note the following regarding optional query parameters:
 
 - `$orderby` is not a supported for delta queries.
      - Do not assume a specific sequence of the responses returned from a delta query. Assume that the same item can show up anywhere in the `nextLink` sequence and handle that in your merge logic.
-- `$top` is not a supported for delta queries, and the number of objects in each page may vary depending on the resource type and the type of changes made to the resource.
+- `$top` is not supported for delta queries, and the number of objects in each page can vary depending on the resource type and the type of changes made to the resource.
 
 For users and groups, the following restrictions apply to using using some query parameters:
 
@@ -55,8 +55,8 @@ For users and groups, there are restrictions on using some query parameters:
 - If a `$select` query parameter is used, the parameter indicates that the client prefers to only track changes on the properties or relationships specified in the `$select` statement. If a change occurs to a property that is not selected, the resource for which that property changed does not appear in the delta response after a subsequent request.
 - `$expand` is only supported for the `manager` and `members` navigational property for users and groups respectively.
 
-- Scoping filters allow you to track changes to one or more specific users or groups by objectId. For example, the following request returns changes for the groups matching the IDs specified in the query filter: 
-```
+- Scoping filters allow you to track changes to one or more specific users or groups by object ID. For example, the following request returns changes for the groups matching the IDs specified in the query filter. 
+```http
 https://graph.microsoft.com/beta/groups/delta/?$filter=id eq '477e9fc6-5de7-4406-bb2a-7e5c83c9ae5f' or id eq '004d6a07-fe70-4b92-add5-e6e37b8acd8e' 
 ```
 
