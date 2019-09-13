@@ -43,7 +43,7 @@ Here is a JSON representation of the resource.
   "id": "string (identifier)",
   "clientState": "string",
   "creatorId": "string",
-  @@@subject to change@@@"includeProperties": true,
+  @@@subject to change@@@"includeProperties": "boolean",
   "encryptionCertificate": "string",
   "encryptionCertificateId": "string",
 }
@@ -55,13 +55,16 @@ Here is a JSON representation of the resource.
 |:---------|:-----|:------------|
 | changeType | string | Required. Indicates the type of change in the subscribed resource that will raise a notification. The supported values are: `created`, `updated`, `deleted`. Multiple values can be combined using a comma-separated list. <br><br>Note: Drive root item notifications support only the `updated` changeType. User and group notifications support `updated` and `deleted` changeType. |
 | notificationUrl | string | Required. The URL of the endpoint that receives the notifications. This URL must make use of the HTTPS protocol. |
-| lifecycleNotificationUrl | string | Optional. The URL of the endpoint that receives lifecycle notifications, including `subscriptionRemoved` and `missed` notifications. If not provided, those notifications will be delivered to **notificationUrl**. [Read more](/graph/webhooks-outlook-authz.md) about how Outlook resources use lifecycle notifications.  This URL must make use of the HTTPS protocol. |
+| lifecycleNotificationUrl | string | Optional. The URL of the endpoint that receives lifecycle notifications, including `subscriptionRemoved` and `missed` notifications. If not provided, those notifications will be delivered to **notificationUrl**. [Read more](/graph/webhooks-outlook-authz) about how Outlook resources use lifecycle notifications.  This URL must make use of the HTTPS protocol. |
 | resource | string | Required. Specifies the resource that will be monitored for changes. Do not include the base URL (`https://graph.microsoft.com/beta/`). |
 | expirationDateTime | DateTimeOffset | Required. Specifies the date and time when the webhook subscription expires. The time is in UTC, and can be an amount of time from subscription creation that varies for the resource subscribed to.  See the table below for maximum supported subscription length of time. |
 | clientState | string | Optional. Specifies the value of the `clientState` property sent by the service in each notification. The maximum length is 255 characters. The client can check that the notification came from the service by comparing the value of the `clientState` property sent with the subscription with the value of the `clientState` property received with each notification. |
 | id | string | Unique identifier for the subscription. Read-only. |
 | applicationId | string | Identifier of the application used to create the subscription. Read-only. |
 | creatorId | string | Identifier of the user or service principal that created the subscription. If the app used delegated permissions to create the subscription, this field contains the id of the signed-in user the app called on behalf of. If the app used application permissions, this field contains the id of the service principal corresponding to the app. Read-only. |
+| @@@includeProperties | boolean | Optional. When set to `true`, change notifications will [include resource data](/graph/webhooks-with-resource-data) (such as content of a Teams message). | 
+| encryptionCertificate | string | Optional. Required when `@@@includeProperties=true`. A base64-encoded representation of a certificate with a public key used to encrypt resource data in notifications. | 
+| encryptionCertificateId | string | Optional. Required when `@@@includeProperties=true`. A custom app provided identifier to help identify the certificate needed to decrypt resource data. |
 
 ## Maximum length of subscription per resource type
 
