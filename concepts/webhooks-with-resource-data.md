@@ -48,8 +48,8 @@ Content-Type: application/json
   "lifecycleNotificationUrl": "https://webhook.azurewebsites.net/api/lifecycleNotifications",
   "resource": "/teams/allMessages,
   @@@subject to change@@@"includeProperties": true,
-  @@@"encryptionCertificate": <base64encodedCertificate>,
-  @@@"encryptionCertificateId": <string>,
+  "encryptionCertificate": <base64encodedCertificate>,
+  "encryptionCertificateId": <customId>,
   "expirationDateTime": "2019-09-19T11:00:00.0000000Z",
   "clientState": "<secretClientState>"
 }
@@ -65,7 +65,7 @@ Content-Type: application/json
   "lifecycleNotificationUrl": "https://webhook.azurewebsites.net/api/lifecycleNotifications",
   "resource": "/teams/allMessages",
   @@@subject to change@@@"includeProperties": true,
-  @@@"encryptionCertificateId": <string>,   
+  "encryptionCertificateId": <customId>,   
   "encryptionCertificateThumbprint": <thumbprintFromTheCertificate>,
   "expirationDateTime": "2019-09-19T11:00:00.0000000Z",
   "clientState": "<secretClientState>"
@@ -284,7 +284,7 @@ It is a recommmended practice to periodically change your assymetric keys to min
 
 1. Obtain a new certificate with a new pair of assymetric keys. Use it for all new subscriptions being created.
 
-1. Update existing subscriptions with the new certificate key; you can do this as part of regular subscription renewal or enumerate all subscriptions and provide the key. The certificate can be updated by providing the **encryptionCertificate** and **encryptionCertificateId** properties in the `PATCH` operation on the subscription. @@@TBD - confirm@@@
+1. Update existing subscriptions with the new certificate key; you can do this as part of regular subscription renewal or enumerate all subscriptions and provide the key. The certificate can be updated by providing the **encryptionCertificate** and **encryptionCertificateId** properties in the `PATCH` operation on the subscription.
 
 1. Some things to keep in mind:
     - For a period of time the old certificate may still be used for encryption. Your app must have access to both old and new certificates to be able to decrypt content.
@@ -321,8 +321,6 @@ The decryption parameters for the AES algorithm are as follows:
 
 #### Sample notification with encrypted resource data
 
-@@@Future payload, soon to go live@@@
-
 ```json
 {
 	"value": [
@@ -351,30 +349,6 @@ The decryption parameters for the AES algorithm are as follows:
 }
 ```
 
-@@@Current payload, subject to change soon@@@
-```json
-{
-	"value": [
-		{
-			"subscriptionId": "76222963-cc7b-42d2-882d-8aaa69cb2ba3",
-			"changeType": "created",
-			...
-			"resource": "teams('d29828b8-c04d-4e2a-b2f6-07da6982f0f0')/channels('19:f127a8c55ad949d1a238464d22f0f99e@thread.skype')/messages('1565045424600')/replies('1565047490246')",
-			"resourceData": {
-				"id": "1565047490246",
-				"encryptedResourceData": "<base64encoded>",
-				"encryptedResourceDataKey": "<base64encoded>",
-				"encryptionCertificateId": "E96149FC-3B4F-4E0B-ACED-E715D29961FD",
-				"@odata.type": "#Microsoft.Graph.ChatMessage",
-				"@odata.id": "teams('d29828b8-c04d-4e2a-b2f6-07da6982f0f0')/channels('19:f127a8c55ad949d1a238464d22f0f99e@thread.skype')/messages('1565045424600')/replies('1565047490246')"
-			}
-		}
-	],
-	"validationTokens": [
-		"eyJ0eXAiOiJKV1QiLCJhbGciOiJSU..."
-	]
-}
-```
 #### Code sample using C# .NET
 
 These are some useful code snippets using C# and .NET for each stage of decryption
@@ -419,7 +393,7 @@ aesProvider.Padding = PaddingMode.PKCS7;
 aesProvider.Mode = CipherMode.CBC;
 
 // obtain the intialization vector from the symmetric key itself
-var vectorSize = @@@add thte value here@@@;
+var vectorSize = @@@add the value here@@@;
 byte[] iv = new byte[vectorSize];
 Array.Copy(decryptedSymmetricKey, iv, vectorSize);
 aesProvider.IV = iv;
@@ -445,11 +419,8 @@ using (var decryptor = aesProvider.CreateDecryptor())
 // decryptedResourceData contains a string json representing the resource
 ```
 
-## Code samples
-
-@@@TBD@@@
 ## See also
 
-- [Subscription resource type](/graph/api/resources/subscription?view=graph-rest-1.0)
+- [Subscription resource type](/graph/api/resources/subscription?view=graph-rest-beta)
 - [Get subscription](/graph/api/subscription-get?view=graph-rest-1.0)
 - [Create subscription](/graph/api/subscription-post-subscriptions?view=graph-rest-1.0)
