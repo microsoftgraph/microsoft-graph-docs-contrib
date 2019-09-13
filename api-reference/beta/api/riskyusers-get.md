@@ -3,6 +3,7 @@ title: "Get riskyUser"
 description: "Retrieve the properties and relationships of a **riskyUser** object."
 localization_priority: Normal
 author: "cloudhandler"
+doc_type: apiPageType
 ms.prod: "microsoft-identity-platform"
 ---
 # Get riskyUser
@@ -51,14 +52,14 @@ Here is an example of the request.
   "name": "get_riskyuser",
   "sampleKeys": ["c2b6c2b9-dddc-acd0-2b39-d519d803dbc3"]
 }-->
-```http
+```msgraph-interactive
 GET https://graph.microsoft.com/beta/riskyUsers/c2b6c2b9-dddc-acd0-2b39-d519d803dbc3
 ```
 # [C#](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/get-riskyuser-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# [Javascript](#tab/javascript)
+# [JavaScript](#tab/javascript)
 [!INCLUDE [sample-code](../includes/snippets/javascript/get-riskyuser-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 

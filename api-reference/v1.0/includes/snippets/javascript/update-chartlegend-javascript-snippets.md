@@ -17,6 +17,6 @@ const workbookChartLegend = {
 };
 
 let res = await client.api('/me/drive/items/{id}/workbook/worksheets/{id|name}/charts/{name}/legend')
-	.update({workbookChartLegend : workbookChartLegend});
+	.update(workbookChartLegend);
 
 ```

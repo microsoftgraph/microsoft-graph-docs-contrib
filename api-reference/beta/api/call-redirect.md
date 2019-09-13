@@ -4,6 +4,7 @@ description: "Redirect an incoming call."
 author: "VinodRavichandran"
 localization_priority: Normal
 ms.prod: "microsoft-teams"
+doc_type: apiPageType
 ---
 
 # call: redirect
@@ -43,6 +44,7 @@ In the request body, provide a JSON object with the following parameters.
 |timeout|Int32|The timeout in seconds for the redirect operation.|
 |maskCallee|Boolean|Indicates whether to mask the callee.|
 |maskCaller|Boolean|Indicates whether to mask the caller.|
+|callbackUri|String|Allows bots to provide a specific callback URI where the result of the Redirect action will be posted. This allows sending the result to the same specific bot instance that triggered the Redirect action. If none is provided, the bot's global callback URI will be used.|
 
 ## Response
 Returns `202 Accepted` response code
@@ -90,7 +92,7 @@ Content-Length: 515
 [!INCLUDE [sample-code](../includes/snippets/csharp/call-redirect-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# [Javascript](#tab/javascript)
+# [JavaScript](#tab/javascript)
 [!INCLUDE [sample-code](../includes/snippets/javascript/call-redirect-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 

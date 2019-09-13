@@ -4,6 +4,7 @@ description: "Network Usage Rules allow enterprises to specify how managed apps 
 author: "rolyon"
 localization_priority: Normal
 ms.prod: "Intune"
+doc_type: resourcePageType
 ---
 
 # iosNetworkUsageRule resource type
@@ -47,8 +48,6 @@ Here is a JSON representation of the resource.
   "cellularDataBlocked": true
 }
 ```
-
-
 
 
 

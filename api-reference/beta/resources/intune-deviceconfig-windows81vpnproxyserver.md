@@ -4,6 +4,7 @@ description: "VPN Proxy Server."
 author: "rolyon"
 localization_priority: Normal
 ms.prod: "Intune"
+doc_type: resourcePageType
 ---
 
 # windows81VpnProxyServer resource type
@@ -46,8 +47,6 @@ Here is a JSON representation of the resource.
   "bypassProxyServerForLocalAddress": true
 }
 ```
-
-
 
 
 

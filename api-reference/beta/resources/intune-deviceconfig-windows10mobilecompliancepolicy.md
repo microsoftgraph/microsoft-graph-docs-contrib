@@ -4,6 +4,7 @@ description: "This class contains compliance settings for Windows 10 Mobile."
 author: "rolyon"
 localization_priority: Normal
 ms.prod: "Intune"
+doc_type: resourcePageType
 ---
 
 # windows10MobileCompliancePolicy resource type
@@ -113,8 +114,6 @@ Here is a JSON representation of the resource.
   ]
 }
 ```
-
-
 
 
 

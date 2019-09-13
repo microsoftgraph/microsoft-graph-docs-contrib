@@ -4,6 +4,7 @@ description: "Retrieve a list of participant objects in the call."
 author: "VinodRavichandran"
 localization_priority: Normal
 ms.prod: "microsoft-teams"
+doc_type: apiPageType
 ---
 
 # List participants
@@ -28,7 +29,6 @@ One of the following permissions is required to call this API. To learn more, in
 
 ```http
 GET /app/calls/{id}/participants
-GET /applications/{id}/calls/{id}/participants
 ```
 
 ## Optional query parameters
@@ -60,7 +60,7 @@ If successful, this method returns a `200 OK` response code and collection of [p
   "name": "get-participants"
 }-->
 
-```http
+```msgraph-interactive
 GET https://graph.microsoft.com/beta/app/calls/57DAB8B1894C409AB240BD8BEAE78896/participants
 Authorization: Bearer <TOKEN>
 ```
@@ -68,7 +68,7 @@ Authorization: Bearer <TOKEN>
 [!INCLUDE [sample-code](../includes/snippets/csharp/get-participants-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# [Javascript](#tab/javascript)
+# [JavaScript](#tab/javascript)
 [!INCLUDE [sample-code](../includes/snippets/javascript/get-participants-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 

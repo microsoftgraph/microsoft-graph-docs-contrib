@@ -17,7 +17,7 @@ The People API is particularly useful for people picking scenarios, such as comp
 To call the People API in Microsoft Graph, your app will need the appropriate permissions:
 
 * People.Read - Use to make general People API calls; for example, `https://graph.microsoft.com/v1.0/me/people/`. People.Read requires end user consent.
-* People.Read.All - Required to retrieve the people most relevant to a specified user in the signed-in user’s organization (`https://graph.microsoft.com/v1.0/users('{id}')/people`) calls. People.Read.All requires admin consent.
+* People.Read.All - Required to retrieve the people most relevant to a specified user in the signed-in user’s organization (`https://graph.microsoft.com/v1.0/users/{id}/people`) calls. People.Read.All requires admin consent.
 
 ## Browse people
 

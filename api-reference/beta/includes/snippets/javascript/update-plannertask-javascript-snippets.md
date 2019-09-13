@@ -25,6 +25,6 @@ const plannerTask = {
 
 let res = await client.api('/planner/tasks/01gzSlKkIUSUl6DF_EilrmQAKDhh')
 	.version('beta')
-	.update({plannerTask : plannerTask});
+	.update(plannerTask);
 
 ```

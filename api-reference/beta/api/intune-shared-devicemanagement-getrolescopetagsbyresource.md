@@ -4,6 +4,7 @@ description: "Not yet documented"
 author: "rolyon"
 localization_priority: Normal
 ms.prod: "intune"
+doc_type: apiPageType
 ---
 
 # getRoleScopeTagsByResource function
@@ -76,6 +77,9 @@ Content-Length: 231
   ]
 }
 ```
+
+
+
 
 
 
