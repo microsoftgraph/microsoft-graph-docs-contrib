@@ -59,7 +59,7 @@ Here is an example of the request.
   "blockType": "request",
   "name": "list_channels"
 }-->
-```http
+```msgraph-interactive
 GET https://graph.microsoft.com/beta/teams/{id}/channels
 ```
 # [C#](#tab/csharp)

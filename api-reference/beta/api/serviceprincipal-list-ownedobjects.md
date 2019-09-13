@@ -50,7 +50,7 @@ Here is an example of the request.
   "blockType": "request",
   "name": "get_ownedobjects"
 }-->
-```http
+```msgraph-interactive
 GET https://graph.microsoft.com/beta/servicePrincipals/{id}/ownedObjects
 ```
 # [C#](#tab/csharp)
