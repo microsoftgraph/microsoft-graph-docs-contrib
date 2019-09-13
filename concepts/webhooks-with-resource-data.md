@@ -31,8 +31,8 @@ To have resource data included in change notifications, you need to provide addi
 
 - @@@Name may change@@@**includeProperties** set to `true` to explicitly request resource data.
 - An optional `$select` operator in the resource path to select the properties to be included.
-- **lifecycleNotificationUrl** - an endpoint to which where lifecycle notifications will be delivered. This can be the same or different as **notificationUrl**. @@@ad inner-link to section@@@
-- **encryptionCertificate** containing only the public key that Microsoft Graph will use to encrypt resource data. You will keep the corresponding private key which will be used to decrypt the content. More details about the specification of the key and the decryption process are described here.@@@add inner link@@@
+- **lifecycleNotificationUrl** - an endpoint to which where [lifecycle notifications](#subscription-lifecycle-notifications) will be delivered. This can be the same or different as **notificationUrl**.
+- **encryptionCertificate** containing only the public key that Microsoft Graph will use to encrypt resource data. You will keep the corresponding private key which will be used to [decrypt the content](#decrypting-resource-data-from-change-notifications).
 - **encryptionCertificateId** your own identifier for the certificate. It will be included in notifications so you can identify which certificate to use for decryption.
 
 > **Important:** The above properties are required to successfully create a subscription for notifications with resource properties.
