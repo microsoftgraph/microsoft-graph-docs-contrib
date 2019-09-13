@@ -43,9 +43,9 @@ Here is a JSON representation of the resource.
   "id": "string (identifier)",
   "clientState": "string",
   "creatorId": "string",
-  @@@subject to change@@@"includeProperties": "bool",
-  @@@"publicEncryptionKey": "string",
-  @@@"publicEncryptionKeyId": "string",
+  @@@subject to change@@@"includeProperties": true,
+  "encryptionCertificate": "string",
+  "encryptionCertificateId": "string",
 }
 ```
 
