@@ -17,7 +17,7 @@ For details about known issues with Microsoft Graph APIs, see [Known issues](kno
 
 |Change type|Version|Description|
 |:---|:---|:---|
-|Addition|v1.0|Added the **v13_0** property to the [iosMinimumOperatingSystem](../resources/intune-apps-iosminimumoperatingsystem) complex type|
+|Addition|v1.0|Added the **v13_0** property to the [iosMinimumOperatingSystem](/graph/api/resources/intune-apps-iosminimumoperatingsystem) complex type|
 
 ### Users | Outlook settings
 
