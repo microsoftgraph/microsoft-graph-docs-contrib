@@ -98,6 +98,7 @@ Inherits from [managedDevice](../resources/intune-devices-manageddevice.md)
 |windowsRemediatedMalwareCount|Int32|Count of remediated malware for this windows device Inherited from [managedDevice](../resources/intune-devices-manageddevice.md)|
 |notes|String|Notes on the device created by IT Admin Inherited from [managedDevice](../resources/intune-devices-manageddevice.md)|
 |configurationManagerClientHealthState|[configurationManagerClientHealthState](../resources/intune-devices-configurationmanagerclienthealthstate.md)|Configuration manager client health state, valid only for devices managed by MDM/ConfigMgr Agent Inherited from [managedDevice](../resources/intune-devices-manageddevice.md)|
+|configurationManagerClientInformation|[configurationManagerClientInformation](../resources/intune-devices-configurationmanagerclientinformation.md)|Configuration manager client information, valid only for devices managed, duel-managed or tri-managed by ConfigMgr Agent Inherited from [managedDevice](../resources/intune-devices-manageddevice.md)|
 
 ## Relationships
 |Relationship|Type|Description|
@@ -152,7 +153,8 @@ Here is a JSON representation of the resource.
     "deviceFullQualifiedDomainName": "String",
     "deviceGuardVirtualizationBasedSecurityHardwareRequirementState": "String",
     "deviceGuardVirtualizationBasedSecurityState": "String",
-    "deviceGuardLocalSystemAuthorityCredentialGuardState": "String"
+    "deviceGuardLocalSystemAuthorityCredentialGuardState": "String",
+    "osBuildNumber": "String"
   },
   "ownerType": "String",
   "managedDeviceOwnerType": "String",
@@ -282,11 +284,13 @@ Here is a JSON representation of the resource.
     "state": "String",
     "errorCode": 1024,
     "lastSyncDateTime": "String (timestamp)"
+  },
+  "configurationManagerClientInformation": {
+    "@odata.type": "microsoft.graph.configurationManagerClientInformation",
+    "clientIdentifier": "String"
   }
 }
 ```
-
-
 
 
 

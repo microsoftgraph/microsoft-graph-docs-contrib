@@ -2,7 +2,7 @@
 title: "Create Channel"
 description: "Create a new channel in a Microsoft Team, as specified in the request body."
 localization_priority: Normal
-author: "nkramer"
+author: "clearab"
 ms.prod: "microsoft-teams"
 doc_type: apiPageType
 ---
@@ -16,8 +16,8 @@ Create a new [channel](../resources/channel.md) in a Microsoft Team, as specifie
 > **Note**: There is a known issue with application permissions and this API. For details, see the [known issues list](/graph/known-issues#application-permissions).
 
 ## Permissions
-One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
 
+One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
 
 |Permission type      | Permissions (from least to most privileged)              |
 |:--------------------|:---------------------------------------------------------|
@@ -32,13 +32,16 @@ One of the following permissions is required to call this API. To learn more, in
 ```http
 POST /teams/{id}/channels
 ```
+
 ## Request headers
+
 | Header       | Value |
 |:---------------|:--------|
 | Authorization  | Bearer {token}. Required.  |
 | Content-Type  | application/json  |
 
 ## Request body
+
 In the request body, supply a JSON representation of [channel](../resources/channel.md) object.
 
 ## Response
@@ -46,7 +49,9 @@ In the request body, supply a JSON representation of [channel](../resources/chan
 If successful, this method returns `201 Created` response code and [channel](../resources/channel.md) object in the response body.
 
 ## Example
-##### Request
+
+### Request
+
 Here is an example of the request.
 
 # [HTTP](#tab/http)
@@ -67,7 +72,7 @@ Content-type: application/json
 [!INCLUDE [sample-code](../includes/snippets/csharp/create-channel-from-group-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# [Javascript](#tab/javascript)
+# [JavaScript](#tab/javascript)
 [!INCLUDE [sample-code](../includes/snippets/javascript/create-channel-from-group-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
@@ -75,14 +80,14 @@ Content-type: application/json
 [!INCLUDE [sample-code](../includes/snippets/objc/create-channel-from-group-objc-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# [Java](#tab/java)
-[!INCLUDE [sample-code](../includes/snippets/java/create-channel-from-group-java-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
 ---
 
-##### Response
-Here is an example of the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.
+### Response
+
+Here is an example of the response.
+
+> **Note:** The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.
+
 <!-- {
   "blockType": "response",
   "truncated": true,

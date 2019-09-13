@@ -49,6 +49,8 @@ This entity contains data which is used in customizing the tenant level appearan
 |lightBackgroundLogo|[mimeContent](../resources/intune-shared-mimecontent.md)|Logo image displayed in Company Portal apps which have a light background behind the logo|
 |landingPageCustomizedImage|[mimeContent](../resources/intune-shared-mimecontent.md)|Customized image displayed in Company Portal apps landing page|
 |customPrivacyMessage|String|Text comments regarding what the admin has access to on the device|
+|isRemoveDeviceDisabled|Boolean|Boolean that represents whether the adminsistrator has disabled the 'Remove Device' action on corporate owned devices.|
+|isFactoryResetDisabled|Boolean|Boolean that represents whether the adminsistrator has disabled the 'Factory Reset' action on corporate owned devices.|
 
 ## Relationships
 |Relationship|Type|Description|
@@ -103,11 +105,11 @@ Here is a JSON representation of the resource.
     "type": "String",
     "value": "binary"
   },
-  "customPrivacyMessage": "String"
+  "customPrivacyMessage": "String",
+  "isRemoveDeviceDisabled": true,
+  "isFactoryResetDisabled": true
 }
 ```
-
-
 
 
 

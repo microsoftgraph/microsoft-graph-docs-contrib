@@ -24,5 +24,3 @@ Possible values for welcome screen meeting information.
 
 
 
-
-

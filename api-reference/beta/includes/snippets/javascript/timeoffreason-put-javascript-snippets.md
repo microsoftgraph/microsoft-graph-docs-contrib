@@ -18,6 +18,6 @@ const timeOffReason = {
 
 let res = await client.api('/teams/{teamId}/schedule/timeOffReasons/{timeOffReasonId}')
 	.version('beta')
-	.put({timeOffReason : timeOffReason});
+	.put(timeOffReason);
 
 ```

@@ -3,8 +3,8 @@ title: "referenceAttachment resource type"
 description: "A link to a folder or file (such as a text file or Word document) on a OneDrive for Business cloud drive, or other supported storage locations, attached to "
 localization_priority: Normal
 doc_type: resourcePageType
-ms.prod: ""
-author: ""
+ms.prod: "outlook"
+author: "angelgolfer-ms"
 ---
 
 # referenceAttachment resource type
@@ -50,6 +50,8 @@ Here is a JSON representation of the resource
 
 <!-- {
   "blockType": "resource",
+  "baseType": "microsoft.graph.attachment",
+  "keyProperty":"id",
   "optionalProperties": [
 
   ],

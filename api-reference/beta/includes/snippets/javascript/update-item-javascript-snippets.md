@@ -16,6 +16,6 @@ const driveItem = {
 
 let res = await client.api('/me/drive/items/{item-id}')
 	.version('beta')
-	.update({driveItem : driveItem});
+	.update(driveItem);
 
 ```

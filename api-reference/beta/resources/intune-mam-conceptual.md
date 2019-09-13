@@ -4,7 +4,6 @@ description: "Lists the Microsoft Graph API for Intune endpoints (REST) related 
 author: "rolyon"
 localization_priority: Normal
 ms.prod: "intune"
-doc_type: conceptualPageType
 ---
 
 # How to protect your company app data with Microsoft Intune
@@ -73,3 +72,4 @@ The following Graph resources are available to manage app protection polices in 
 - [Windows information protection resource collection](intune-mam-windowsinformationprotectionresourcecollection.md)
 - [Windows information protection store app](intune-mam-windowsinformationprotectionstoreapp.md)
 - [Windows information protection wipe action](intune-mam-windowsinformationprotectionwipeaction.md)
+

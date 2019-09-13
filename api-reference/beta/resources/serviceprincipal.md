@@ -3,8 +3,8 @@ title: "servicePrincipal resource type"
 description: "Represents an instance of an application in a directory. Inherits from directoryObject."
 localization_priority: Priority
 doc_type: resourcePageType
-ms.prod: ""
-author: ""
+ms.prod: "microsoft-identity-platform"
+author: "davidmu1"
 ---
 
 # servicePrincipal resource type
@@ -115,9 +115,10 @@ Here is a JSON representation of the resource
 |[List owners](../api/serviceprincipal-list-owners.md) |[directoryObject](directoryobject.md) collection| Get a owner object collection.|
 |[Update](../api/serviceprincipal-update.md) | [servicePrincipal](serviceprincipal.md)  |Update servicePrincipal object. |
 |[Delete](../api/serviceprincipal-delete.md) | None |Delete servicePrincipal object. |
-|[checkMemberGroups](../api/serviceprincipal-checkmembergroups.md)|String collection||
-|[getMemberGroups](../api/serviceprincipal-getmembergroups.md)|String collection||
-|[getMemberObjects](../api/serviceprincipal-getmemberobjects.md)|String collection||
+|[checkMemberGroups](../api/serviceprincipal-checkmembergroups.md)|String collection|Check for membership in a specified list of groups.|
+|[checkMemberObjects](../api/serviceprincipal-checkmemberobjects.md)|String collection|Check for membership in a specified list of group, directory role, or administrative unit objects.|
+|[getMemberGroups](../api/serviceprincipal-getmembergroups.md)|String collection|Get the list of groups that this service principal is a member of.|
+|[getMemberObjects](../api/serviceprincipal-getmemberobjects.md)|String collection|Get the list of groups and directory roles that this service principal is a member of.|
 |[delta](../api/serviceprincipal-delta.md)|servicePrincipal collection| Get incremental changes for service principals. |
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
