@@ -58,14 +58,14 @@ For a broader discussion of throttling on the Microsoft Cloud, see [Throttling P
 
 ## Service-specific limits
 
-The Microsoft Graph allows you to access data in [multiple services](overview-major-services.md), such as Outlook or Azure Active Directory. These services impose their own throttling limits that impact applications that use Microsoft Graph to access them.
+Microsoft Graph allows you to access data in [multiple services](overview-major-services.md), such as Outlook or Azure Active Directory. These services impose their own throttling limits that affect applications that use Microsoft Graph to access them.
 
 > [!NOTE]
 > The specific limits described here are subject to change.
 
 ### Outlook service limits
 
-Outlook service limits are evaluated for each app ID and mailbox combination. In other words, the limits described below apply to a specific app accessing a specific mailbox (user or group). If an application exceeds the limit in one mailbox, it does not impact the ability to access another mailbox.
+Outlook service limits are evaluated for each app ID and mailbox combination. In other words, the limits described apply to a specific app accessing a specific mailbox (user or group). If an application exceeds the limit in one mailbox, it does not affect the ability to access another mailbox.
 
 | Limit                                                      | Applies to      |
 |------------------------------------------------------------|-----------------|
