@@ -69,9 +69,9 @@ Outlook service limits are evaluated for each app ID and mailbox combination. In
 
 | Limit                                                      | Applies to      |
 |------------------------------------------------------------|-----------------|
-| 10,000 API requests in a 10 minute period                  | Beta and v1.0 Graph endpoints |
-| 4 concurrent requests                                      | Beta Graph endpoint |
-| 15 megabit upload (PATCH, POST, PUT) in a 30 second period | Beta Graph endpoint |
+| 10,000 API requests in a 10 minute period                  | v1.0 and beta endpoints |
+| 4 concurrent requests                                      | Beta endpoint   |
+| 15 megabit upload (PATCH, POST, PUT) in a 30 second period | Beta endpoint   |
 
 #### Outlook service resources
 
@@ -85,7 +85,7 @@ The following resources are provided by the Outlook service.
 - [calendarGroup](/graph/api/resources/calendargroup)
 - [outlookCategory](/graph/api/resources/outlookcategory)
 - [attachment](/graph/api/resources/attachment)
-- [place](/graph/api/resources/place)
+- [place (preview)](/graph/api/resources/place)
 
 ##### Mail API resources
 
@@ -106,7 +106,7 @@ The following resources are provided by the Outlook service.
 
 - [person](/graph/api/resources/person)
 
-##### To-do tasks API resources
+##### To-do tasks API (preview) resources
 
 - [outlookTask](/graph/api/resources/outlooktask)
 - [outlookTaskFolder](/graph/api/resources/outlooktaskfolder)
