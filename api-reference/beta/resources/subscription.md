@@ -18,6 +18,7 @@ A subscription allows a client app to receive notifications about changes to dat
 - Content in the hierarchy of a root folder [driveItem][] in OneDrive for Business, or of a root folder or subfolder [driveItem][] in a user's personal OneDrive
 - A [user][] or [group][] in Azure Active Directory
 - An [alert][] from the Microsoft Graph Security API
+- A [chatMessage][] sent via teams or channels in Microsoft Teams
 
 
 ## JSON representation
