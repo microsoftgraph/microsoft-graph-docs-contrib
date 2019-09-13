@@ -31,7 +31,7 @@ You can use the metadata to learn the relationships between entities in Microsof
 > [!NOTE]
 > - Use resource IDs in the same case as they are returned from Microsoft Graph APIs.
 > - Assume resource IDs, values you assign, and other base-64-encoded values are _case-sensitive_.
-> - Assume path URL resource names, query parameters, action and function names, their parameters, including any API property names and values, are _not case-sensitive_.
+> - Assume path URL resource names, query parameters, action and function names, their request body parameters, including any API property names and values, are _not case-sensitive_.
 
 ## View a collection of resources
 
