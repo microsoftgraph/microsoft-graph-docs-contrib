@@ -17,9 +17,9 @@ After Microsoft Graph accepts the subscription request, it pushes notifications 
 > [!div class="nextstepaction"]
 > [Build a webhook app with .NET Core](/graph/tutorials/change-notifications)
 
-By default, change notifications do not contain resource data, other than the `id`. If the app requires resource data, it makes calls to Graph APIs to get the full resource. In this article we use the `user` resource as an example for working with notifications.
+By default, change notifications do not contain resource data, other than the `id`. If the app requires resource data, it makes calls to Microsoft Graph APIs to get the full resource. In this article, we use the **user** resource as an example for working with notifications.
 
-An app can also subscribe to change notifications that include resource data, to avoid having to make additonal API calls to access the data. Such apps will need to implement extra code to handle the requirements of such notifications, specifically: responding to subscription lifecycle notifications, validating the authenticity of notifications, and decrypting the resource data. We are gradually extending support for these notifications to additional resource types. For details on how to work with these notificatios, see [Set up notifications for Teams messages, including message properties](webhooks-with-resource-data.md).
+An app can also subscribe to change notifications that include resource data, to avoid having to make additonal API calls to access the data. Such apps will need to implement extra code to handle the requirements of such notifications, specifically: responding to subscription lifecycle notifications, validating the authenticity of notifications, and decrypting the resource data. We are gradually extending support for these notifications to additional resource types. For details about how to work with these notificatios, see [Set up notifications for Teams messages, including message properties](webhooks-with-resource-data.md).
 
 ## Supported resources
 
