@@ -1,29 +1,29 @@
 ---
 title: "Set up change notifications for Teams messages, including message properties (preview)"
-description: "Microsoft Graph uses a webhook mechanism to deliver change notifications to clients. Notifications can include resource properties. Apps need to implement additional code to handle the requirements related to resource data being included."
+description: "Microsoft Graph uses a webhook mechanism to deliver change notifications to clients. Notifications can include resource properties."
 author: "piotrci"
 localization_priority: Priority
 ---
 
 # Set up change notifications for Teams messages, including message properties (preview)
 
-Microsoft Graph allows apps to subscribe to change notifications for resources via [webhooks](webhooks.md). You can now set up subscriptions to resource data (such as content of a Teams message) to be included in notifications. Your app can then execute its business logic without the need to make additional API calls to fetch the changing resource; as a result, the app makes fewer API calls and improves its performance, which is especially beneficial in large scale scenarios.
+Microsoft Graph allows apps to subscribe to change notifications for resources via [webhooks](webhooks.md). You can now set up subscriptions to resource data (such as the content of a Microsoft Teams message) to be included in notifications. Your app can then run its business logic without the need to make additional API calls to fetch the changing resource. As a result, the app makes fewer API calls and has better performance, which is beneficial in large scale scenarios.
 
-Requesting resource data in notifications requires you to implement additional logic to satisfy data access and security requirements: 
+Requesting resource data in notifications requires you to implement the following additional logic to satisfy data access and security requirements: 
 
 - Handle special subscription lifecycle notifications - `reauthorizationRequired` - to maintain an uninterrupted flow of data.
-- Validate the authenticity of notifications, as having originated from Microsoft Graph.
+- Validate the authenticity of notifications as having originated from Microsoft Graph.
 - Provide a public encryption key and use a private key to decrypt resource data received through notifications.
 
-This article walks through the details, using the Team messages resource as an example.
+This article walks through the details, using the Team **messages** resource as an example.
 
 ## Supported resources
 
-The following resources support change notifications which include resource data:
+The following resources support change notifications that include resource data:
 
 - Teams messages (preview)
-  - new or changed messages in Team channels in the entire organization (tenant): `/teams/allMessages`
-  - new or changed messages in all chats in the entire organization (tenant): `/chats/allMessages`
+  - New or changed messages in Team channels in the entire organization (tenant): `/teams/allMessages`
+  - New or changed messages in all chats in the entire organization (tenant): `/chats/allMessages`
 
 ## Creating a subscription
 
@@ -35,7 +35,7 @@ To have resource data included in change notifications, you need to provide addi
 - **encryptionCertificate** containing only the public key that Microsoft Graph will use to encrypt resource data. You will keep the corresponding private key which will be used to [decrypt the content](#decrypting-resource-data-from-change-notifications).
 - **encryptionCertificateId** your own identifier for the certificate. It will be included in notifications so you can identify which certificate to use for decryption.
 
-> **Important:** The above properties are required to successfully create a subscription for notifications with resource properties.
+> **Important:** These properties are required in order to successfully create a subscription for notifications with resource properties.
 
 #### Subscription request example
 
