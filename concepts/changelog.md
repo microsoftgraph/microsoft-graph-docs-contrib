@@ -500,6 +500,8 @@ Debut of the places API which provides rich details for locations in apps.
 
 ### Identity and access (Azure AD)
 
+| **Change type** | **Version**   | **Description**                          |
+| :-------------- | :------------ | :--------------------------------------- |
 | Addition | v1.0 |  Introduced the new **audit logs APIs for Azure AD** providing activity logs for directory management tasks through [directoryAudit](/graph/api/resources/directoryAudit?view=graph-rest-v1.0) and sign-in activity through [signIns](/graph/api/resources/signIns?view=graph-rest-v1.0).|
 | Addition | beta | Added new application permissions for **access reviews** APIs: AccessReview.Read.All, ProgramControl.Read.All and ProgramControl.ReadWrite.All. For details, see the [access reviews API reference](/graph/api/resources/accessreviews-root?view=graph-rest-beta). |
 | Addition | beta | Add the **signInSessionsValidFromDateTime** property on the [user](/graph/api/resources/user?view=graph-rest-beta) resource. This is a rename of the **refreshTokensValidFromDateTime** properties, but both properties will be supported to allow clients to migrate smoothly. In the next couple months the old property, **refreshTokensValidFromDateTime** will be removed.|
