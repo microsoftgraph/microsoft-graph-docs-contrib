@@ -3,6 +3,7 @@ title: "List riskyUsers"
 description: "Retrieve the properties and relationships of a collection of **riskyUser** objects."
 localization_priority: Normal
 author: "cloudhandler"
+doc_type: apiPageType
 ms.prod: "microsoft-identity-platform"
 ---
 # List riskyUsers
@@ -52,14 +53,14 @@ Here is an example of the request.
   "blockType": "request",
   "name": "list_riskyusers"
 }-->
-```http
+```msgraph-interactive
 GET https://graph.microsoft.com/beta/riskyUsers
 ```
 # [C#](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/list-riskyusers-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# [Javascript](#tab/javascript)
+# [JavaScript](#tab/javascript)
 [!INCLUDE [sample-code](../includes/snippets/javascript/list-riskyusers-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
@@ -109,14 +110,14 @@ The following example shows how to use `$filter` to get the collection of riskyU
   "blockType": "request",
   "name": "list_filter_riskyusers"
 } -->
-```http
+```msgraph-interactive
 GET https://graph.microsoft.com/beta/riskyUsers?$filter=riskLevel eq microsoft.graph.riskLevel'medium'
 ```
 # [C#](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/list-filter-riskyusers-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# [Javascript](#tab/javascript)
+# [JavaScript](#tab/javascript)
 [!INCLUDE [sample-code](../includes/snippets/javascript/list-filter-riskyusers-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 

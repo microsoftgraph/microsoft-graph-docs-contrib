@@ -4,6 +4,7 @@ description: "Not yet documented"
 author: "rolyon"
 localization_priority: Normal
 ms.prod: "Intune"
+doc_type: enumPageType
 ---
 
 # deviceManangementIntentValueType enum type
@@ -23,8 +24,6 @@ Not yet documented
 |complex|3|The setting value is a complex object|
 |collection|4|The setting value is a collection|
 |abstractComplex|5|The setting value is an abstract complex object|
-
-
 
 
 

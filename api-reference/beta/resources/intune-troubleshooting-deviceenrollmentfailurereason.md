@@ -4,6 +4,7 @@ description: "Top level failure categories for enrollment."
 author: "rolyon"
 localization_priority: Normal
 ms.prod: "Intune"
+doc_type: enumPageType
 ---
 
 # deviceEnrollmentFailureReason enum type
@@ -29,8 +30,6 @@ Top level failure categories for enrollment.
 |enrollmentRestrictionsEnforced|9|Enrollment restrictions configured by admin blocked this enrollment.|
 |clientDisconnected|10|Client timed out or enrollment was aborted by enduser.|
 |userAbandonment|11|Enrollment was abandoned by enduser. (Enduser started onboarding but failed to complete it in timely manner)|
-
-
 
 
 

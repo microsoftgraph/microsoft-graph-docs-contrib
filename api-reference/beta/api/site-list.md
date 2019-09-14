@@ -3,6 +3,8 @@ title: "Enumerate sites"
 description: "List the available [sites][] in an organization that match provided filter criteria and query options."
 localization_priority: Normal
 ms.prod: "sharepoint"
+doc_type: apiPageType
+author: ""
 ---
 
 # Enumerate sites
@@ -48,14 +50,14 @@ GET https://graph.microsoft.com/beta/sites?filter=siteCollection/root ne null
 # [HTTP](#tab/http)
 <!-- { "blockType": "request", "name": "list-sites" } -->
 
-```http
+```msgraph-interactive
 GET https://graph.microsoft.com/beta/sites?select=siteCollection,webUrl&filter=siteCollection/root%20ne%20null
 ```
 # [C#](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/list-sites-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# [Javascript](#tab/javascript)
+# [JavaScript](#tab/javascript)
 [!INCLUDE [sample-code](../includes/snippets/javascript/list-sites-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 

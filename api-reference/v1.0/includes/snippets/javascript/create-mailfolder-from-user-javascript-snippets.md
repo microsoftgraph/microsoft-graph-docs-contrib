@@ -15,6 +15,6 @@ const mailFolder = {
 };
 
 let res = await client.api('/me/mailFolders')
-	.post({mailFolder : mailFolder});
+	.post(mailFolder);
 
 ```

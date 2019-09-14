@@ -16,6 +16,6 @@ const outlookCategory = {
 
 let res = await client.api('/me/outlook/masterCategories/bac262b7-485d-4739-b436-e31467d64fac')
 	.version('beta')
-	.update({outlookCategory : outlookCategory});
+	.update(outlookCategory);
 
 ```

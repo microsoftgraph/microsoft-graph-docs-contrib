@@ -4,6 +4,7 @@ description: "Retrieve the list of messages in a chat. "
 localization_priority: Priority
 author: "nkramer"
 ms.prod: "microsoft-teams"
+doc_type: apiPageType
 ---
 
 # List chat messages
@@ -63,14 +64,14 @@ Here is an example of the request.
   "blockType": "request",
   "name": "get_chat_messages"
 }-->
-```http
+```msgraph-interactive
 GET https://graph.microsoft.com/beta/chats/{id}/messages
 ```
 # [C#](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/get-chat-messages-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# [Javascript](#tab/javascript)
+# [JavaScript](#tab/javascript)
 [!INCLUDE [sample-code](../includes/snippets/javascript/get-chat-messages-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 

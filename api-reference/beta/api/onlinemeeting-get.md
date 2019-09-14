@@ -4,6 +4,7 @@ description: "Retrieve the properties and relationships of an **onlineMeeting** 
 author: "VinodRavichandran"
 localization_priority: Normal
 ms.prod: "microsoft-teams"
+doc_type: apiPageType
 ---
 
 # Get Online Meeting
@@ -29,7 +30,6 @@ One of the following permissions is required to call this API. To learn more, in
 <!-- { "blockType": "ignored" } -->
 ```http
 GET /app/onlineMeetings/{id}
-GET /applications/{id}/onlineMeetings/{id}
 ```
 
 ## Optional query parameters
@@ -57,14 +57,14 @@ The following example shows the request.
   "blockType": "request",
   "name": "get-onlineMeeting"
 }-->
-```http
+```msgraph-interactive
 GET https://graph.microsoft.com/beta/app/onlineMeetings/{id}
 ```
 # [C#](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/get-onlinemeeting-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# [Javascript](#tab/javascript)
+# [JavaScript](#tab/javascript)
 [!INCLUDE [sample-code](../includes/snippets/javascript/get-onlinemeeting-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 

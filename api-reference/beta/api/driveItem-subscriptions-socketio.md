@@ -3,6 +3,8 @@ title: "Get websocket endpoint"
 description: "Use of these APIs in production applications is not supported."
 localization_priority: Normal
 ms.prod: "sharepoint"
+doc_type: apiPageType
+author: ""
 ---
 
 # Get websocket endpoint
@@ -45,14 +47,14 @@ GET /sites/{siteId}/lists/{listId}/drive/root/subscriptions/socketIo
 
 # [HTTP](#tab/http)
 <!-- { "blockType": "request", "name": "drive_root_subscriptions_socketIo" } -->
-```http
+```msgraph-interactive
 GET /me/drive/root/subscriptions/socketIo
 ```
 # [C#](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/drive-root-subscriptions-socketio-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# [Javascript](#tab/javascript)
+# [JavaScript](#tab/javascript)
 [!INCLUDE [sample-code](../includes/snippets/javascript/drive-root-subscriptions-socketio-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 

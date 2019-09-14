@@ -4,6 +4,7 @@ description: "MacOS Wi-Fi WPA-Enterprise/WPA2-Enterprise configuration profile."
 author: "rolyon"
 localization_priority: Normal
 ms.prod: "Intune"
+doc_type: resourcePageType
 ---
 
 # macOSEnterpriseWiFiConfiguration resource type
@@ -132,8 +133,6 @@ Here is a JSON representation of the resource.
   "outerIdentityPrivacyTemporaryValue": "String"
 }
 ```
-
-
 
 
 

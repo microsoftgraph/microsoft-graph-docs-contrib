@@ -3,6 +3,8 @@ title: "Delete subscription"
 description: "Delete a subscription."
 localization_priority: Normal
 author: "piotrci"
+doc_type: apiPageType
+ms.prod: ""
 ---
 
 # Delete subscription
@@ -78,7 +80,7 @@ DELETE https://graph.microsoft.com/beta/subscriptions/{id}
 [!INCLUDE [sample-code](../includes/snippets/csharp/delete-subscription-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# [Javascript](#tab/javascript)
+# [JavaScript](#tab/javascript)
 [!INCLUDE [sample-code](../includes/snippets/javascript/delete-subscription-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 

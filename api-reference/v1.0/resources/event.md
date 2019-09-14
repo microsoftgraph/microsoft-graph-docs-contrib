@@ -4,11 +4,14 @@ description: "An event in a calendar."
 author: "angelgolfer-ms"
 localization_priority: Priority
 ms.prod: "outlook"
+doc_type: resourcePageType
 ---
 
 # event resource type
 
 An event in a [user](user.md) calendar, or the default calendar of an Office 365 [group](group.md).
+
+The maximum number of attendees included in an **event**, and the maximum number of reciepients in an [eventMessage](eventmessage.md) sent from an Exchange Online mailbox is 500. For more information, see [sending limits](https://docs.microsoft.com/en-us/office365/servicedescriptions/exchange-online-service-description/exchange-online-limits#sending-limits).
 
 This resource supports:
 
@@ -87,7 +90,17 @@ by providing a [delta](../api/event-delta.md) function.
 |start|[dateTimeTimeZone](datetimetimezone.md)|The date, time, and time zone that the event starts. By default, the start time is in UTC.|
 |subject|String|The text of the event's subject line.|
 |type|eventType|The event type. The possible values are: `singleInstance`, `occurrence`, `exception`, `seriesMaster`. Read-only.|
-|webLink|String|The URL to open the event in Outlook Web App.<br/><br/>The event will open in the browser if you are logged in to your mailbox via Outlook Web App. You will be prompted to login if you are not already logged in with the browser.<br/><br/>This URL can be accessed from within an iFrame.|
+|webLink|String|The URL to open the event in Outlook on the web.<br/><br/>Outlook on the web opens the event in the browser if you are signed in to your mailbox. Otherwise, Outlook on the web prompts you to sign in.<br/><br/>This URL can be accessed from within an iFrame.|
+
+> [!NOTE]
+> The **webLink** property specifies a URL that opens the event in only earlier versions of Outlook on the web. The following is its URL format, with _{event-id}_ being the URL-encoded value of the **id** property:
+>
+> `https://outlook.office365.com/owa/?itemid={event-id}&exvsurl=1&path=/calendar/item`
+>
+> To open the URL in a current version of Outlook on the web, convert the URL to the following format:
+>
+> `https://outlook.office365.com/calendar/item/{event-id}`
+
 
 ## Relationships
 | Relationship | Type	|Description|

@@ -1,5 +1,6 @@
 ---
 title: "Get signIn"
+doc_type: apiPageType
 description: "Retrieve a specific Azure AD user sign-in event for your tenant."
 localization_priority: Normal
 author: "davidmu1"
@@ -65,14 +66,14 @@ Here is an example of the request.
   "blockType": "request",
   "name": "get_signin"
 }-->
-```http
+```msgraph-interactive
 GET https://graph.microsoft.com/beta/auditLogs/signIns/{id}
 ```
 # [C#](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/get-signin-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# [Javascript](#tab/javascript)
+# [JavaScript](#tab/javascript)
 [!INCLUDE [sample-code](../includes/snippets/javascript/get-signin-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 

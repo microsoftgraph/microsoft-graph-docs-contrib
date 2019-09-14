@@ -3,6 +3,8 @@ title: "Get subscription"
 description: "Retrieve the properties and relationships of a subscription."
 localization_priority: Normal
 author: "piotrci"
+doc_type: apiPageType
+ms.prod: ""
 ---
 
 # Get subscription
@@ -75,14 +77,14 @@ Here is an example of the request.
   "name": "get_subscription"
 }-->
 
-```http
+```msgraph-interactive
 GET https://graph.microsoft.com/beta/subscriptions/{id}
 ```
 # [C#](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/get-subscription-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# [Javascript](#tab/javascript)
+# [JavaScript](#tab/javascript)
 [!INCLUDE [sample-code](../includes/snippets/javascript/get-subscription-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 

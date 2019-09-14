@@ -2,6 +2,9 @@
 title: "Get appRoleAssignment"
 description: "Retrieve the properties and relationships of approleassignment object."
 localization_priority: Priority
+doc_type: apiPageType
+ms.prod: ""
+author: ""
 ---
 
 # Get appRoleAssignment
@@ -48,14 +51,14 @@ Here is an example of the request.
   "blockType": "request",
   "name": "get_approleassignment"
 }-->
-```http
+```msgraph-interactive
 GET https://graph.microsoft.com/beta/appRoleAssignments/{id}
 ```
 # [C#](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/get-approleassignment-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# [Javascript](#tab/javascript)
+# [JavaScript](#tab/javascript)
 [!INCLUDE [sample-code](../includes/snippets/javascript/get-approleassignment-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 

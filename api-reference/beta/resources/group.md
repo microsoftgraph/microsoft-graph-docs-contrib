@@ -4,6 +4,7 @@ description: "Represents an Azure Active Directory (Azure AD) group, which can b
 localization_priority: Priority
 author: "dkershaw10"
 ms.prod: "groups"
+doc_type: resourcePageType
 ---
 
 # group resource type
@@ -44,6 +45,7 @@ This resource supports:
 |[List memberOf](../api/group-list-memberof.md) |[directoryObject](directoryobject.md) collection| Get the groups and administrative units that this group is a direct member of from the memberOf navigation property.|
 |[List transitive memberOf](../api/group-list-transitivememberof.md) |[directoryObject](directoryobject.md) collection| List the groups and administrative units that this user is a member of. This operation is transitive and includes the groups that this group is a nested member of. |
 |[checkMemberGroups](../api/group-checkmembergroups.md)|String collection|Check for membership in a list of groups. The function is transitive.|
+|[checkMemberObjects](../api/group-checkmemberobjects.md)|String collection|Check for membership in a list of group, directory role, or administrative unit objects. The function is transitive.|
 |[getMemberGroups](../api/group-getmembergroups.md)|String collection|Return all the groups that the group is a member of. The function is transitive.|
 |[getMemberObjects](../api/group-getmemberobjects.md)|String collection|Return all of the groups and administrative units that the group is a member of. The function is transitive. |
 |[Create setting](../api/directorysetting-post-settings.md) | [directorySetting](directorysetting.md) |Create a setting object based on a directorySettingTemplate. The POST request must provide settingValues for all the settings defined in the template. Only groups specific templates may be used for this operation.|
@@ -130,7 +132,7 @@ This resource supports:
 |unseenConversationsCount|Int32|Count of conversations that have been delivered one or more new posts since the signed-in user's last visit to the group. This property is the same as **unseenCount**. <br><br>Returned only on $select.|
 |unseenCount|Int32|Count of conversations that have received new posts since the signed-in user last visited the group. This property is the same as **unseenConversationsCount**.<br><br>Returned only on $select. |
 |unseenMessagesCount|Int32|Count of new posts that have been delivered to the group's conversations since the signed-in user's last visit to the group. <br><br>Returned only on $select.|
-|visibility|String| Specifies the visibility of an Office 365 group. Possible values are: `private`, `public`, or `hiddenmembership`; blank values are treated as public.  See [group visibility options](#group-visibility-options) to learn more.<br>Visibility can be set only when a group is created; it is not editable.<br>Visibility is supported only for unified groups; it is not supported for security groups. <br><br>Returned by default.|
+|visibility|String| Specifies the visibility of an Office 365 group. Possible values are: `Private`, `Public`, or `Hiddenmembership`; blank values are treated as public.  See [group visibility options](#group-visibility-options) to learn more.<br>Visibility can be set only when a group is created; it is not editable.<br>Visibility is supported only for unified groups; it is not supported for security groups. <br><br>Returned by default.|
 
 ### Group visibility options
 
@@ -138,9 +140,9 @@ Here's what each **visibility** property value means:
  
 |Value|Description|
 |:----|-----------|
-| `public` | Anyone can join the group without needing owner permission.<br>Anyone can view the contents of the group.|
-| `private` | Owner permission is needed to join the group.<br>Non-members cannot view the contents of the group.|
-| `hiddenmembership` | Owner permission is needed to join the group.<br>Non-members cannot view the contents of the group.<br>Non-members cannot see the members of the group.<br>Administrators (global, company, user, and helpdesk) can view the membership of the group.<br>The group appears in the global address book (GAL).|
+| Public | Anyone can join the group without needing owner permission.<br>Anyone can view the contents of the group.|
+| Private | Owner permission is needed to join the group.<br>Non-members cannot view the contents of the group.|
+| Hiddenmembership | Owner permission is needed to join the group.<br>Non-members cannot view the contents of the group.<br>Non-members cannot see the members of the group.<br>Administrators (global, company, user, and helpdesk) can view the membership of the group.<br>The group appears in the global address book (GAL).|
 
 ## Relationships
 | Relationship | Type	|Description|

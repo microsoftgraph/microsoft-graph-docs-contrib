@@ -4,6 +4,7 @@ description: "Get the list of user's registered devices."
 localization_priority: Normal
 author: "dkershaw10"
 ms.prod: "microsoft-identity-platform"
+doc_type: apiPageType
 ---
 
 # List registeredDevices
@@ -48,14 +49,14 @@ Here is an example of the request.
   "blockType": "request",
   "name": "get_registereddevices"
 }-->
-```http
+```msgraph-interactive
 GET https://graph.microsoft.com/beta/me/registeredDevices
 ```
 # [C#](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/get-registereddevices-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# [Javascript](#tab/javascript)
+# [JavaScript](#tab/javascript)
 [!INCLUDE [sample-code](../includes/snippets/javascript/get-registereddevices-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 

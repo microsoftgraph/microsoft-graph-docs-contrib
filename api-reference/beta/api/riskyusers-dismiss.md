@@ -5,6 +5,7 @@ author: cloudhandler
 localization_priority: Normal 
 ms.prod: microsoft-identity-platform
 ms.date: 03/20/2019
+doc_type: apiPageType
 ---
 
 # riskyUser: dismiss
@@ -65,7 +66,7 @@ Content-Type: application/json
 [!INCLUDE [sample-code](../includes/snippets/csharp/dismiss-riskyuser-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# [Javascript](#tab/javascript)
+# [JavaScript](#tab/javascript)
 [!INCLUDE [sample-code](../includes/snippets/javascript/dismiss-riskyuser-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 

@@ -4,6 +4,7 @@ description: "Update the properties of a deviceManagement object."
 author: "rolyon"
 localization_priority: Normal
 ms.prod: "intune"
+doc_type: apiPageType
 ---
 
 # Update deviceManagement
@@ -161,6 +162,9 @@ Content-Length: 855
   "accountMoveCompletionDateTime": "2017-01-01T00:01:17.9006709-08:00"
 }
 ```
+
+
+
 
 
 

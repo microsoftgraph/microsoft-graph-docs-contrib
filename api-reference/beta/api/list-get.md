@@ -1,9 +1,10 @@
 ---
 author: JeremyKelley
 title: Get metadata for a list
-description: Return the metadata for a [list][].
+description: Return the metadata for a list.
 localization_priority: Normal
 ms.prod: "sharepoint"
+doc_type: apiPageType
 ---
 # Get metadata for a list
 
@@ -42,14 +43,14 @@ Do not supply a request body with this method.
 # [HTTP](#tab/http)
 <!-- { "blockType": "request", "name": "get-list" } -->
 
-```http
+```msgraph-interactive
 GET /sites/{site-id}/lists/{list-id}
 ```
 # [C#](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/get-list-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# [Javascript](#tab/javascript)
+# [JavaScript](#tab/javascript)
 [!INCLUDE [sample-code](../includes/snippets/javascript/get-list-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
@@ -88,14 +89,14 @@ With `select` and `expand` statements, you can retrieve list metadata, column de
 # [HTTP](#tab/http)
 <!-- { "blockType": "request", "name": "get-list-multi-expand" } -->
 
-```http
+```msgraph-interactive
 GET /sites/{site-id}/lists/{list-id}?select=name,lastModifiedDateTime&expand=columns(select=name,description),items(expand=fields(select=Name,Color,Quantity))
 ```
 # [C#](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/get-list-multi-expand-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# [Javascript](#tab/javascript)
+# [JavaScript](#tab/javascript)
 [!INCLUDE [sample-code](../includes/snippets/javascript/get-list-multi-expand-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
