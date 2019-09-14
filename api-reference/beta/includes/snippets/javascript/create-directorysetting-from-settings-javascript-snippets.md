@@ -22,6 +22,6 @@ const directorySetting = {
 
 let res = await client.api('/settings')
 	.version('beta')
-	.post({directorySetting : directorySetting});
+	.post(directorySetting);
 
 ```

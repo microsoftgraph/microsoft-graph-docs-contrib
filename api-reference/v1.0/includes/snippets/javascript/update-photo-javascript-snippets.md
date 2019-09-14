@@ -17,6 +17,6 @@ const profilePhoto = {
 };
 
 let res = await client.api('/users/{id|userPrincipalName}/photo')
-	.update({profilePhoto : profilePhoto});
+	.update(profilePhoto);
 
 ```

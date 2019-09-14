@@ -21,6 +21,6 @@ const contact = {
 };
 
 let res = await client.api('/me/contacts/{id}')
-	.update({contact : contact});
+	.update(contact);
 
 ```

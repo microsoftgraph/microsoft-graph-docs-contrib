@@ -13,6 +13,6 @@ const client = Client.init(options);
 const Stream = The contents of the file goes here.;
 
 let res = await client.api('/me/drive/items/{item-id}/content')
-	.put({Stream : Stream});
+	.put(Stream);
 
 ```

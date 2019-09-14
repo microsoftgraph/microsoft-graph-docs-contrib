@@ -22,7 +22,7 @@ One of the following permissions is required to call this API. To learn more, in
 |:---|:---|
 |Delegated (work or school account)|DeviceManagementApps.ReadWrite.All|
 |Delegated (personal Microsoft account)|Not supported.|
-|Application|Not supported.|
+|Application|DeviceManagementApps.ReadWrite.All|
 
 ## HTTP Request
 <!-- {
@@ -322,6 +322,7 @@ Content-Length: 3918
   "customBrowserDisplayName": "Custom Browser Display Name value"
 }
 ```
+
 
 
 

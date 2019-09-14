@@ -416,7 +416,7 @@ using (var decryptor = aesProvider.CreateDecryptor())
   }
 }
 
-// decryptedResourceData contains a string json representing the resource
+// decryptedResourceData now contains a string json representing the resource
 ```
 
 ## See also

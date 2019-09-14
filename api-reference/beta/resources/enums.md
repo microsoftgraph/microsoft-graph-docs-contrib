@@ -7,6 +7,16 @@ ms.prod: ""
 author: ""
 ---
 
+### analyticsActivityType values
+
+| Member
+|:--------------
+| call
+| chat
+| email
+| focus
+| meeting
+
 ### registrationAuthMethod values
 
 |Member|
@@ -32,10 +42,9 @@ author: ""
 |other|6| An unspecified relationship to the user.|
 |unknownFutureValue|7| Marker value for future compatibility.|
 
-
 ### scheduleEntityTheme values
 
-| Value
+| Member
 |:-------------------------
 | white
 | blue
@@ -82,7 +91,7 @@ author: ""
 
 ### timeZoneStandard values
 
-| Value
+| Member
 |:-----------------
 | windows
 | iana
@@ -102,7 +111,7 @@ author: ""
 
 ### physicalAddressType values
 
-| Value
+| Member
 |:-------------------------
 | unknown 
 | home
@@ -112,7 +121,7 @@ author: ""
 
 ### attendeeType values
 
-| Value
+| Member
 |:-------------------------
 | required
 | optional
@@ -121,7 +130,7 @@ author: ""
 
 ### externalAudienceScope values
 
-| Value
+| Member
 |:-------------------------
 | none
 | contactsOnly
@@ -130,7 +139,7 @@ author: ""
 
 ### automaticRepliesStatus values
 
-| Value
+| Member
 |:-------------------------
 | disabled
 | alwaysEnabled
@@ -180,7 +189,7 @@ author: ""
 
 ### educationExternalSource values
 
-| Value
+| Member
 |:-------------------------
 | sis
 | manual
@@ -189,7 +198,7 @@ author: ""
 
 ### educationGender values
 
-| Value
+| Member
 |:-------------------------
 | female
 | male
@@ -199,7 +208,7 @@ author: ""
 
 ### eventType values
 
-| Value
+| Member
 |:-------------------------
 | singleInstance
 | occurrence
@@ -209,7 +218,7 @@ author: ""
 
 ### sensitivity values
 
-| Value
+| Member
 |:-------------------------
 | normal
 | personal
@@ -219,7 +228,7 @@ author: ""
 
 ### importance values
 
-| Value
+| Member
 |:-------------------------
 | low
 | normal
@@ -227,7 +236,7 @@ author: ""
 
 
 ### educationUserRole values
-| Value
+| Member
 |:---------------------
 | student
 | teacher
@@ -236,7 +245,7 @@ author: ""
 
 ### meetingMessageType values
 
-| Value
+| Member
 |:-----------------
 | none
 | meetingRequest
@@ -248,7 +257,7 @@ author: ""
 
 ### followupFlagStatus values
 
-| Value
+| Member
 |:-------------------------
 | notFlagged
 | complete
@@ -257,7 +266,7 @@ author: ""
 
 ### inferenceClassificationType values
 
-| Value
+| Member
 |:-----------------
 | focused
 | other
@@ -265,7 +274,7 @@ author: ""
 
 ### iosNotificationAlertType values
 
-| Value
+| Member
 |:-------------------------
 | deviceDefault
 | banner
@@ -274,7 +283,7 @@ author: ""
 
 ### deviceEnrollmentFailureReason values
 
-| Value
+| Member
 |:-------------
 | unknown
 | authentication
@@ -290,7 +299,7 @@ author: ""
 
 
 ### bodyType values
-| Value
+| Member
 |:---------
 | text
 | html
@@ -298,7 +307,7 @@ author: ""
 
 ### locationType values
 
-| Value
+| Member
 |:-------------------------
 | default
 | conferenceRoom
@@ -313,7 +322,7 @@ author: ""
 
 ### locationUniqueIdType values
 
-| Value
+| Member
 |:-------------------------
 | unknown
 | locationStore
@@ -324,7 +333,7 @@ author: ""
 
 ### messageActionFlag values
 
-| Value
+| Member
 |:-------------------------
 | any
 | call
@@ -351,7 +360,7 @@ author: ""
 
 ### operationStatus values
 
-| Value
+| Member
 |:-----------------
 | NotStarted
 | Running
@@ -361,7 +370,7 @@ author: ""
 
 ### onenotePatchActionType values
 
-| Value
+| Member
 |:-------------------------
 | Replace
 | Append
@@ -371,7 +380,7 @@ author: ""
 
 ### onenotePatchInsertPosition values
 
-| Value
+| Member
 |:-------------------------
 | After
 | Before
@@ -379,7 +388,7 @@ author: ""
 
 ### phoneType values
 
-| Value
+| Member
 |:-------------------------
 | home
 | business
@@ -395,7 +404,7 @@ author: ""
 
 ### plannerPreviewType values
 
-| Value
+| Member
 |:-------------------------
 | automatic
 | noPreview
@@ -406,7 +415,7 @@ author: ""
 
 ### status values
 
-| Value
+| Member
 |:-----------------
 | active
 | updated
@@ -417,7 +426,7 @@ author: ""
 
 ### weekIndex values
 
-| Value
+| Member
 |:-------------------------
 | first
 | second
@@ -428,7 +437,7 @@ author: ""
 
 ### dayOfWeek values
 
-| Value
+| Member
 |:-------------------------
 | sunday
 | monday
@@ -440,7 +449,7 @@ author: ""
 
 ### recurrencePatternType values
 
-| Value
+| Member
 |:-------------------------
 | daily
 | weekly
@@ -452,7 +461,7 @@ author: ""
 
 ### recurrenceRangeType values
 
-| Value
+| Member
 |:-------------------------
 | endDate
 | noEnd
@@ -460,7 +469,7 @@ author: ""
 
 
 ### onenoteSourceService values
-| Value
+| Member
 |:---------------------
 | Unknown
 | OneDrive
@@ -470,7 +479,7 @@ author: ""
 
 ### responseType values
 
-| Value
+| Member
 |:-------------------------
 | none
 | organizer
@@ -482,7 +491,7 @@ author: ""
 
 ### activityDomain values
 
-| Value
+| Member
 |:-------------------------
 | unknown
 | work
@@ -492,7 +501,7 @@ author: ""
 
 ### websiteType values
 
-| Value
+| Member
 |:-------------------------
 | other
 | home
@@ -833,6 +842,14 @@ Possible values for user account types (group membership), per Windows definitio
 |normal|
 |high|
 |urgent|
+
+### channelMembershipType values
+
+|Member  | Value|
+|:-------|:-----|
+|standard| 0    |
+|private | 1    |
+|unknownFutureValue| 2  |
 
 ### stagedFeatureName values
 

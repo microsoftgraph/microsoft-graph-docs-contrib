@@ -21,6 +21,6 @@ const conversationThread = {
 };
 
 let res = await client.api('/groups/{id}/conversations/{id}/threads')
-	.post({conversationThread : conversationThread});
+	.post(conversationThread);
 
 ```

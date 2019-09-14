@@ -12,7 +12,7 @@ var agreement = new Agreement
 	IsViewingBeforeAcceptanceRequired = true
 };
 
-await graphClient.Agreements["'id'"]
+await graphClient.Agreements["{id}"]
 	.Request()
 	.UpdateAsync(agreement);
 

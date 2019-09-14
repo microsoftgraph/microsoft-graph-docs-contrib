@@ -22,6 +22,6 @@ const group = {
 };
 
 let res = await client.api('/groups/{id}')
-	.update({group : group});
+	.update(group);
 
 ```
