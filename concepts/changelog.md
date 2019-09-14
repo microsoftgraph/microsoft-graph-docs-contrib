@@ -19,6 +19,12 @@ For details about known issues with Microsoft Graph APIs, see [Known issues](kno
 |:----------------|:------------|:-----------------------------------------|
 | Addition        | Beta        | The **dateFormat** and **timeFormat** properties to the [mailboxSettings](/graph/api/resources/mailboxsettings?view=graph-rest-beta) resource. The properties represent the user's preferred date and time formats.|
 
+### Teamwork (Microsoft Teams)
+
+| **Change type** | **Version**   | **Description**                          |
+| :-------------- | :------------ | :--------------------------------------- |
+|Addition |beta| Added the **primaryChannel** property to the [team](/graph/api/resources/team?view=graph-rest-beta) resource.|
+
 
 ## August 2019
 
@@ -514,7 +520,6 @@ Debut of the places API which provides rich details for locations in apps.
 | :-------------- | :------------ | :--------------------------------------- |
 |Addition |v1.0 | Added support for application permissions to the [installedApps](/graph/api/resources/teamsappinstallation?view=graph-rest-1.0) resource.|
 |Addition |v1.0| Added the **email** and **webUrl** properties to [channel](/graph/api/resources/channel?view=graph-rest-1.0).|
-|Addition |beta| Added the **primaryChannel** property to the [team](/graph/api/resources/team?view=graph-rest-beta) resource.|
 |Addition | beta | Added the [chat](/api-reference/beta/resources/chat.md) resources and associated methods. |
 |Addition |beta| Added APIs to read [images](/graph/api/resources/chatmessagehostedimage?view=graph-rest-beta) in messages.|
 |Addition | beta | Added the [conversation member](/api-reference/beta/resources/conversationmember.md) resources and associated methods. |
