@@ -274,7 +274,7 @@ The data included in the **resourceData** property of the notification is limite
 
 1. When creating the subscription:
   - Provide the certificate in the **encryptionCertificate** property; use the Base64-encoded content the certificate was exported in.
-  - Provide your own identifier in the **encryptionCertificateId**. It will allow you to match your certificates to notifications you receive and can also be used to retrieve certificates from your certificate store. The limit on the length of this id is @@@add limit@@@.
+  - Provide your own identifier in the **encryptionCertificateId**. It will allow you to match your certificates to notifications you receive and can also be used to retrieve certificates from your certificate store. The length of this id is maximum 128 characters.
 
 1. The private key must be securily held and managed by you. Your notification processing code will need to have access to the private key to decrypt resource data.
 
