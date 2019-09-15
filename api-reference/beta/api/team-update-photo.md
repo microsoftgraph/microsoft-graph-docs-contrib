@@ -64,8 +64,12 @@ Here is an example of the request.
   "name": "update_team_photo"
 }-->
 ```http
-https://graph.microsoft.com/beta/teams/{id}/photo
+PUT https://graph.microsoft.com/beta/teams/{id}/photo
 ```
+
+### Response 
+
+Here is an example of the response.
 
 <!-- {
   "blockType": "response",
