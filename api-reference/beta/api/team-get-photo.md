@@ -70,7 +70,7 @@ Here is an example of the request.
 
 <!-- {
   "blockType": "request",
-  "name": "list_channels"
+  "name": "get_team_photo"
 }-->
 ```http
 GET https://graph.microsoft.com/beta/teams/{id}/photo/240x240
