@@ -73,7 +73,7 @@ Here is an example of the request.
   "name": "list_channels"
 }-->
 ```http
-https://graph.microsoft.com/beta/teams/{id}/photo/240x240
+GET https://graph.microsoft.com/beta/teams/{id}/photo/240x240
 ```
 
 ## Response
