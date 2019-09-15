@@ -60,7 +60,7 @@ If successful, this method returns a `200 OK` response code
 Here is an example of the request.
 
 <!-- {
-  "blockType": "request",
+  "blockType": "ignored",
   "name": "update_team_photo"
 }-->
 ```http
@@ -89,7 +89,6 @@ HTTP/1.1 200 OK
   "keywords": "",
   "section": "documentation",
   "tocPath": "",
-  "suppressions": [
-  ]
+  "suppressions": []
 }
 -->
