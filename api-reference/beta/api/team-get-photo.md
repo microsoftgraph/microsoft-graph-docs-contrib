@@ -32,8 +32,7 @@ One of the following permissions is required to call this API. To learn more, in
 ## HTTP Request
 
 <!-- {
-  "blockType": "request",
-  "name": "get_team_photo"
+  "blockType": "ignored"
 }-->
 
 ```http
