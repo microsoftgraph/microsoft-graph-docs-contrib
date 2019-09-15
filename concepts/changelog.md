@@ -19,6 +19,11 @@ For details about known issues with Microsoft Graph APIs, see [Known issues](kno
 |:----------------|:------------|:-----------------------------------------|
 | Addition        | Beta        | The **dateFormat** and **timeFormat** properties to the [mailboxSettings](/graph/api/resources/mailboxsettings?view=graph-rest-beta) resource. The properties represent the user's preferred date and time formats.|
 
+### Teamwork (Microsoft Teams)
+
+| **Change type** | **Version**   | **Description**                          |
+| :-------------- | :------------ | :--------------------------------------- |
+| Addition | beta | Added ability to get and update team photos. [Get team photo](/graph/api/team-get-photo?view=graph-rest-beta), [Update team photo](/graph/api/team-update-photo?view=graph-rest-beta). |
 
 ## August 2019
 
