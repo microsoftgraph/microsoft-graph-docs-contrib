@@ -37,15 +37,17 @@ One of the following permissions is required to call this API. To learn more, in
 }-->
 
 ```http
-
 GET /beta/teams/{id}/photo
+GET /beta/teams/{id}/photo/{size}
 ```
 
 ## Optional query parameters
 
-This method supports the `$value` query parameter to specifiy the dimensions of the photo to be retreived.
+This method supports an optional query parameter to specifiy the size of the photo to be retreived.
  
-
+|**Parameter**|**Type**|**Description**|
+|:-----|:-----|:-----|
+|size  |String  | A photo size. The supported sizes of HD photos on Office 365 are as follows: 48x48, 64x64, 96x96, 120x120, 240x240, 360x360, 432x432, 504x504, and 648x648. Photos can be any dimension if they are stored in Azure Active Directory. |
 
 ## Request headers
 
@@ -72,7 +74,7 @@ Here is an example of the request.
   "name": "list_channels"
 }-->
 ```http
-https://graph.microsoft.com/beta/teams/{id}/photo
+https://graph.microsoft.com/beta/teams/{id}/photo/240x240
 ```
 
 ## Response
