@@ -69,7 +69,7 @@ If successful, this method returns a `200 OK` response code, metadata about the 
 Here is an example of the request.
 
 <!-- {
-  "blockType": "request",
+  "blockType": "ignored",
   "name": "get_team_photo"
 }-->
 ```http
