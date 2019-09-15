@@ -70,8 +70,7 @@ Here is an example of the request.
 
 <!-- {
   "blockType": "request",
-  "name": "get_team_photo",
-  "@odata.type": "microsoft.graph.team"
+  "name": "get_team_photo"
 }-->
 ```http
 GET https://graph.microsoft.com/beta/teams/{id}/photo/240x240
@@ -86,7 +85,8 @@ Here is an example of the response.
 
 <!-- {
   "blockType": "response",
-  "truncated": true
+  "truncated": true,
+  "@odata.type": "microsoft.graph.none"
 } -->
 
 ```http
