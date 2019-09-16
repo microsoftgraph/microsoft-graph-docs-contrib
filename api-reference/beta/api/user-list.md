@@ -118,6 +118,9 @@ Content-length: 608
 
 Find a user account in a B2C tenant, using a sign-in name (also known as a local account). This request can be used by a helpdesk to find a customer's user account, in a B2C tenant (in this example the B2C tenant is contoso.onmicrosoft.com).
 
+>[!NOTE]
+>When filtering on **identities**, you must supply both **issuer** and **issuerAssignedId**.
+
 #### Request
 
 <!-- {
