@@ -52,7 +52,7 @@ Here is an example of the request.
   "name": "get_riskDetection",
   "sampleKeys": ["c2b6c2b9-dddc-acd0-2b39-d519d803dbc3"]
 }-->
-```http
+```msgraph-interactive
 GET https://graph.microsoft.com/beta/riskDetections/c2b6c2b9-dddc-acd0-2b39-d519d803dbc3
 ```
 # [C#](#tab/csharp)
@@ -65,10 +65,6 @@ GET https://graph.microsoft.com/beta/riskDetections/c2b6c2b9-dddc-acd0-2b39-d519
 
 # [Objective-C](#tab/objc)
 [!INCLUDE [sample-code](../includes/snippets/objc/get-riskdetection-objc-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [Java](#tab/java)
-[!INCLUDE [sample-code](../includes/snippets/java/get-riskdetection-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

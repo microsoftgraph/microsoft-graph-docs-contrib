@@ -57,7 +57,7 @@ This example retrieves a version of a file in the current user's drive.
 # [HTTP](#tab/http)
 <!-- { "blockType": "request", "name": "get-version-contents", "scopes": "files.read", "tags": "service.graph" } -->
 
-```http
+```msgraph-interactive
 GET /me/drive/items/{item-id}/versions/{version-id}/content
 ```
 # [C#](#tab/csharp)
@@ -70,10 +70,6 @@ GET /me/drive/items/{item-id}/versions/{version-id}/content
 
 # [Objective-C](#tab/objc)
 [!INCLUDE [sample-code](../includes/snippets/objc/get-version-contents-objc-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [Java](#tab/java)
-[!INCLUDE [sample-code](../includes/snippets/java/get-version-contents-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

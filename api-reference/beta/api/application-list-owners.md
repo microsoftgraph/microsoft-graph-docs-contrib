@@ -49,7 +49,7 @@ Here is an example of the request.
   "blockType": "request",
   "name": "application_get_owners"
 }-->
-```http
+```msgraph-interactive
 GET https://graph.microsoft.com/beta/applications/{id}/owners
 ```
 # [C#](#tab/csharp)
@@ -62,10 +62,6 @@ GET https://graph.microsoft.com/beta/applications/{id}/owners
 
 # [Objective-C](#tab/objc)
 [!INCLUDE [sample-code](../includes/snippets/objc/application-get-owners-objc-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [Java](#tab/java)
-[!INCLUDE [sample-code](../includes/snippets/java/application-get-owners-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

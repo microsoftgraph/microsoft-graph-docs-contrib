@@ -110,7 +110,7 @@ The following is an example of the request. There is no `$select` parameter, so 
   "name": "user_delta"
 }-->
 
-```http
+```msgraph-interactive
 GET https://graph.microsoft.com/beta/users/delta
 ```
 # [C#](#tab/csharp)
@@ -123,10 +123,6 @@ GET https://graph.microsoft.com/beta/users/delta
 
 # [Objective-C](#tab/objc)
 [!INCLUDE [sample-code](../includes/snippets/objc/user-delta-objc-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [Java](#tab/java)
-[!INCLUDE [sample-code](../includes/snippets/java/user-delta-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
@@ -184,7 +180,7 @@ The next example shows the initial request selecting three properties for change
   "name": "user_delta_select"
 }-->
 
-```http
+```msgraph-interactive
 GET https://graph.microsoft.com/beta/users/delta?$select=displayName,jobTitle,mobilePhone
 ```
 # [C#](#tab/csharp)
@@ -197,10 +193,6 @@ GET https://graph.microsoft.com/beta/users/delta?$select=displayName,jobTitle,mo
 
 # [Objective-C](#tab/objc)
 [!INCLUDE [sample-code](../includes/snippets/objc/user-delta-select-objc-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [Java](#tab/java)
-[!INCLUDE [sample-code](../includes/snippets/java/user-delta-select-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
@@ -246,7 +238,7 @@ The next example shows the initial request selecting three properties for change
   "name": "user_delta_minimal"
 }-->
 
-```http
+```msgraph-interactive
 GET https://graph.microsoft.com/beta/users/delta?$select=displayName,jobTitle,mobilePhone
 Prefer: return=minimal
 ```
@@ -260,10 +252,6 @@ Prefer: return=minimal
 
 # [Objective-C](#tab/objc)
 [!INCLUDE [sample-code](../includes/snippets/objc/user-delta-minimal-objc-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [Java](#tab/java)
-[!INCLUDE [sample-code](../includes/snippets/java/user-delta-minimal-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

@@ -303,13 +303,6 @@
           href: api/user-list-manager.md
         - name: Assign manager
           href: api/user-post-manager.md
-      - name: Outlook tasks
-        href: resources/outlooktask.md
-        items:
-        - name: List tasks
-          href: api/outlookuser-list-tasks.md
-        - name: Create tasks
-          href: api/outlookuser-post-tasks.md
       - name: Outlook settings
         href: resources/outlookuser.md
         items:
@@ -325,6 +318,13 @@
           href: api/outlookuser-list-mastercategories.md
         - name: Create category
           href: api/outlookuser-post-mastercategories.md
+      - name: Outlook tasks
+        href: resources/outlooktask.md
+        items:
+        - name: List tasks
+          href: api/outlookuser-list-tasks.md
+        - name: Create tasks
+          href: api/outlookuser-post-tasks.md
       - name: People
         href: resources/person.md
         items:
@@ -441,11 +441,11 @@
       - name: Attachment
         href: resources/attachment.md
         items:
-        - name: File attachment resource
+        - name: File attachment type
           href: resources/fileattachment.md
-        - name: Item attachment resource
+        - name: Item attachment type
           href: resources/itemattachment.md
-        - name: Reference attachment resource
+        - name: Reference attachment type
           href: resources/referenceattachment.md
         - name: Get attachment
           href: api/attachment-get.md
@@ -682,11 +682,11 @@
       - name: Attachment
         href: resources/attachment.md
         items:
-        - name: File attachment resource
+        - name: File attachment type
           href: resources/fileattachment.md
-        - name: Item attachment resource
+        - name: Item attachment type
           href: resources/itemattachment.md
-        - name: Reference attachment resource
+        - name: Reference attachment type
           href: resources/referenceattachment.md
         - name: Get attachment
           href: api/attachment-get.md
@@ -781,9 +781,9 @@
         items:
           - name: Place
             href: resources/place.md
-          - name: Room resource
+          - name: Room type
             href: resources/room.md
-          - name: Room list resource
+          - name: Room list type
             href: resources/roomlist.md
           - name: List places
             href: api/place-list.md
@@ -7448,8 +7448,15 @@
         - name: Return submission
           href: api/educationsubmission-return.md
       - name: Outcome
-        href: resources/educationoutcome.md
         items:
+        - name: Outcome
+          href: resources/educationoutcome.md
+        - name: Feedback outcome type
+          href: resources/educationfeedbackoutcome.md
+        - name: Points outcome type
+          href: resources/educationpointsoutcome.md
+        - name: Rubric outcome type
+          href: resources/educationrubricoutcome.md
         - name: Update outcome
           href: api/educationoutcome-update.md
       - name: Synchronization profile
@@ -7817,14 +7824,16 @@
         - name: Access review
           href: resources/accessreview.md
           items:
-          - name: Create access review
-            href: api/accessreview-create.md
-          - name: Delete access review
-            href: api/accessreview-delete.md
+          - name: List access reviews
+            href: api/accessreview-list.md
           - name: Get access review
             href: api/accessreview-get.md
+          - name: Create access review
+            href: api/accessreview-create.md
           - name: Update access review
             href: api/accessreview-update.md
+          - name: Delete access review
+            href: api/accessreview-delete.md
           - name: Add reviewer
             href: api/accessreview-addreviewer.md
           - name: List decisions
@@ -7957,8 +7966,19 @@
         - name: Provisioning logs
           href: resources/provisioningobjectsummary.md
           items:
-          - name: List directory provisioning
+          - name: List provisioning
             href: api/provisioningobjectsummary-list.md
+      - name: Certificate-based auth configuration
+        href: resources/certificatebasedauthconfiguration.md
+        items:
+        - name: List
+          href: api/certificatebasedauthconfiguration-list.md
+        - name: Get
+          href: api/certificatebasedauthconfiguration-get.md
+        - name: Create
+          href: api/certificatebasedauthconfiguration-post-certificatebasedauthconfiguration.md
+        - name: Delete
+          href: api/certificatebasedauthconfiguration-delete.md 
       - name: Contracts
         href: resources/contract.md
         items:
@@ -8009,6 +8029,8 @@
           href: api/device-list-memberof.md
         - name: List device transitive groups
           href: api/device-list-transitivememberof.md
+        - name: Check member objects
+          href: api/device-checkmemberobjects.md
       - name: Directory object
         href: resources/directoryobject.md
         items:
@@ -8413,6 +8435,33 @@
               href: api/governanceroleassignmentrequest-update.md
             - name: Cancel
               href: api/governanceroleassignmentrequest-cancel.md
+      - name: Role management
+        href: resources/rolemanagement.md
+        items:
+        - name: Role definition
+          href: resources/unifiedroledefinition.md
+          items:
+          - name: List role definitions
+            href: api/rbacapplication-list-roledefinitions.md
+          - name: Create role definition
+            href: api/rbacapplication-post-roledefinitions.md
+          - name: Get role definition
+            href: api/unifiedroledefinition-get.md
+          - name: Update role definition
+            href: api/unifiedroledefinition-update.md
+          - name: Delete role definition
+            href: api/unifiedroledefinition-delete.md
+        - name: Role assignment
+          href: resources/unifiedroleassignment.md
+          items:
+          - name: List role assignment
+            href: api/rbacapplication-list-roleassignments.md
+          - name: Create role assignment
+            href: api/rbacapplication-post-roleassignments.md
+          - name: Get role assignment
+            href: api/unifiedroleassignment-get.md
+          - name: Delete role assignment
+            href: api/unifiedroleassignment-delete.md
       - name: Service principal
         href: resources/serviceprincipal.md
         items:
@@ -8424,6 +8473,8 @@
           href: api/serviceprincipal-update.md
         - name: Delete service principal
           href: api/serviceprincipal-delete.md
+        - name: Check member objects
+          href: api/serviceprincipal-checkmemberobjects.md
       - name: Subscribed sku
         href: resources/subscribedsku.md
         items:
@@ -8563,11 +8614,11 @@
       - name: Attachment
         href: resources/attachment.md
         items:
-        - name: File attachment resource
+        - name: File attachment type
           href: resources/fileattachment.md
-        - name: Item attachment resource
+        - name: Item attachment type
           href: resources/itemattachment.md
-        - name: Reference attachment resource
+        - name: Reference attachment type
           href: resources/referenceattachment.md
         - name: Get attachment
           href: api/attachment-get.md
@@ -9242,6 +9293,33 @@
           items:
           - name: List shared
             href: api/insights-list-shared.md
+      - name: Analytics
+        href: resources/useranalytics.md
+        items:
+        - name: Settings
+          items:
+          - name: Settings
+            href: resources/settings.md
+          - name: Get settings
+            href: api/useranalytics-get-settings.md
+        - name: Activity statistics
+          items:
+          - name: Activity statistics
+            href: resources/activitystatistics.md
+          - name: Call statistics type
+            href: resources/callactivitystatistics.md
+          - name: Chat statistics type
+            href: resources/chatactivitystatistics.md
+          - name: Email statistics type
+            href: resources/emailactivitystatistics.md
+          - name: Focus statistics type
+            href: resources/focusactivitystatistics.md          
+          - name: Meeting statistics type
+            href: resources/meetingactivitystatistics.md
+          - name: List activity statistics
+            href: api/activitystatistics-list.md 
+          - name: Get activity statistics
+            href: api/activitystatistics-get.md
       - name: Mention
         href: resources/mention.md
     - name: Tasks and plans
@@ -9422,8 +9500,12 @@
           href: api/channel-post.md
         - name: Get channel
           href: api/channel-get.md
+        - name: Update channel
+          href: api/channel-patch.md
         - name: List channel messages
           href: api/channel-list-messages.md
+        - name: Get channel messages delta
+          href: api/chatmessage-delta.md
         - name: Get channel message
           href: api/channel-get-message.md
         - name: List message replies
@@ -9448,7 +9530,13 @@
         - name: Get members in chat
           href: api/conversationmember-list.md
         - name: Get one member in chat
-          href: api/conversationmember-get.md
+          href: api/conversationmember-get.md    
+        - name: Add a member to a chat
+          href: api/conversationmember-add.md
+        - name: Remove a member from a chat
+          href: api/conversationmember-delete.md
+        - name: Update the role of a member in chat
+          href: api/conversationmember-update.md        
       - name: Chat message
         href: resources/chatmessage.md
         items:
@@ -9469,7 +9557,7 @@
           href: api/teamsapp-update.md
         - name: Remove app from catalog
           href: api/teamsapp-delete.md
-      - name: App
+      - name: Apps
         items:
         - name: Installed app
           href: resources/teamsappinstallation.md
@@ -9665,11 +9753,11 @@
       - name: Attachment
         href: resources/attachment.md
         items:
-        - name: File attachment resource
+        - name: File attachment type
           href: resources/fileattachment.md
-        - name: Item attachment resource
+        - name: Item attachment type
           href: resources/itemattachment.md
-        - name: Reference attachment resource
+        - name: Reference attachment type
           href: resources/referenceattachment.md
         - name: Get attachment
           href: api/attachment-get.md
@@ -9725,6 +9813,19 @@
           href: api/workbook-list-worksheets.md
         - name: List names
           href: api/workbook-list-names.md
+      - name: Workbook comments
+        href: resources/workbookcomment.md
+        items:
+          - name: List
+            href: api/workbook-list-comments.md
+          - name: Get
+            href: api/workbookcomment-get.md
+          - name: List replies
+            href: api/workbookcomment-list-replies.md
+          - name: Create reply
+            href: api/workbookcomment-post-replies.md
+          - name: Get reply
+            href: api/workbookcommentreply-get.md
       - name: Worksheet
         href: resources/workbookworksheet.md
         items:

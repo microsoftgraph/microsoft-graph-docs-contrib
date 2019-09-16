@@ -55,7 +55,7 @@ If successful, this method returns a `200 OK` response code and [Contract](../re
   "blockType": "request",
   "name": "get_contract"
 }-->
-```http
+```msgraph-interactive
 GET https://graph.microsoft.com/v1.0/contracts/{id}
 ```
 # [C#](#tab/csharp)

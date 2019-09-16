@@ -96,7 +96,7 @@ The request does not specify any `Prefer: outlook.body-content-type` header to i
   "blockType": "request",
   "name": "get_events"
 }-->
-```http
+```msgraph-interactive
 GET https://graph.microsoft.com/beta/me/events?$select=subject,body,bodyPreview,organizer,attendees,start,end,location
 Prefer: outlook.timezone="Pacific Standard Time"
 ```
@@ -110,10 +110,6 @@ Prefer: outlook.timezone="Pacific Standard Time"
 
 # [Objective-C](#tab/objc)
 [!INCLUDE [sample-code](../includes/snippets/objc/get-events-objc-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [Java](#tab/java)
-[!INCLUDE [sample-code](../includes/snippets/java/get-events-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
@@ -211,7 +207,7 @@ The request also uses a `$select` query parameter to return specific properties.
   "blockType": "request",
   "name": "get_events_in_text"
 }-->
-```http
+```msgraph-interactive
 GET https://graph.microsoft.com/beta/me/events?$select=subject,body,bodyPreview
 Prefer: outlook.body-content-type="text" 
 ```
@@ -225,10 +221,6 @@ Prefer: outlook.body-content-type="text"
 
 # [Objective-C](#tab/objc)
 [!INCLUDE [sample-code](../includes/snippets/objc/get-events-in-text-objc-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [Java](#tab/java)
-[!INCLUDE [sample-code](../includes/snippets/java/get-events-in-text-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

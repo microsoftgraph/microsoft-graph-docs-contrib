@@ -29,7 +29,7 @@ One of the following permissions is required to call this API. To learn more, in
 # [HTTP](#tab/http)
 <!-- { "blockType": "request", "name": "get-followed-items", "scopes": "files.read" } -->
 
-```http
+```msgraph-interactive
 GET /me/drive/following
 ```
 # [C#](#tab/csharp)
@@ -42,10 +42,6 @@ GET /me/drive/following
 
 # [Objective-C](#tab/objc)
 [!INCLUDE [sample-code](../includes/snippets/objc/get-followed-items-objc-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [Java](#tab/java)
-[!INCLUDE [sample-code](../includes/snippets/java/get-followed-items-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

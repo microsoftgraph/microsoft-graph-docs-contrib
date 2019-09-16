@@ -1,6 +1,6 @@
 ---
 title: "Use the Microsoft Graph API to integrate social and workplace intelligence in an app"
-description: "Microsoft Graph supports social gestures in a user's social context, and provides access to useful people and social data."
+description: "Microsoft Graph enables access to useful social and workplace data for people, and supports social gestures in a user's social context."
 localization_priority: Priority
 author: "simonhult"
 ms.prod: "insights"
@@ -11,7 +11,7 @@ doc_type: conceptualPageType
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Microsoft Graph supports social gestures in a user's social context, and provides access to useful people and social data.
+Microsoft Graph enables access to social and workplace data for people, and supports gestures in a user's social context.
 
 ## Aggregate and extract specific information about people
 
@@ -24,11 +24,18 @@ lets you browse, sort, select, filter, or search for persons based on your crite
 
 ## Help users get the most relevant documents for their work
 
-Use the insights API to identify the most relevant documents for a user: 
+Use the insights API to identify the most relevant documents for a user:
 
 - List documents [trending around](../api/insights-list-trending.md) a user
 - List documents [used by](../api/insights-list-used.md) a user
 - List documents [shared with or shared by](../api/insights-list-shared.md) a user
+
+## Help users gain insights into their work patterns
+
+Use the analytics API to get activity statistics and related settings for a user:
+
+- [settings](../resources/settings.md): For the analytics API to return results for a user, the current user analytics settings must show a valid MyAnalytics license, be opted in to using MyAnalytics, and have a cloud-hosted mailbox that’s graph-enabled.
+- [activityStatistics](../resources/activitystatistics.md): Gets data for the last complete week (or the specified time range) for the Office 365 activities that a user spent time on, including the number of hours spent on [calls](callactivitystatistics.md), [chats (instant messages)](chatactivitystatistics.md), [email](emailactivitystatistics.md), and [meetings](meetingactivitystatistics.md) during and outside of working hours and the number of hours available for [focused work](focusactivitystatistics.md).
 
 ## Manage @-Mentions
 
@@ -55,4 +62,3 @@ Include the next sentence when supporting events.
   - [Get details of each mention in a message](../api/message-get.md#request-2)
 
 - [Delete a mention](../api/message-delete.md#request-2) in a message
-

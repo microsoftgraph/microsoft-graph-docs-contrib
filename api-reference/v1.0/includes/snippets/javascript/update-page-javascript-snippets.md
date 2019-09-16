@@ -25,6 +25,6 @@ const Stream = [
 ];
 
 let res = await client.api('/me/onenote/pages/{id}/content')
-	.update({Stream : Stream});
+	.update(Stream);
 
 ```

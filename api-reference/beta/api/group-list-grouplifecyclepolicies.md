@@ -50,7 +50,7 @@ If successful, this method returns a `200 OK` response code and collection of [g
   "blockType": "request",
   "name": "get_grouplifecyclepolicies"
 }-->
-```http
+```msgraph-interactive
 GET https://graph.microsoft.com/beta/groups/{id}/groupLifecyclePolicies
 ```
 # [C#](#tab/csharp)
@@ -63,10 +63,6 @@ GET https://graph.microsoft.com/beta/groups/{id}/groupLifecyclePolicies
 
 # [Objective-C](#tab/objc)
 [!INCLUDE [sample-code](../includes/snippets/objc/get-grouplifecyclepolicies-objc-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [Java](#tab/java)
-[!INCLUDE [sample-code](../includes/snippets/java/get-grouplifecyclepolicies-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

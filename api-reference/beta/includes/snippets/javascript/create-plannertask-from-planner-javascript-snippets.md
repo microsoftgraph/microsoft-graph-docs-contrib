@@ -24,6 +24,6 @@ const plannerTask = {
 
 let res = await client.api('/planner/tasks')
 	.version('beta')
-	.post({plannerTask : plannerTask});
+	.post(plannerTask);
 
 ```

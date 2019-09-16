@@ -57,7 +57,7 @@ The following is an example of the request.
   "name": "securescores_list"
 }-->
 
-```http
+```msgraph-interactive
 GET https://graph.microsoft.com/beta/security/secureScores?$top=1
 ```
 # [C#](#tab/csharp)
@@ -70,10 +70,6 @@ GET https://graph.microsoft.com/beta/security/secureScores?$top=1
 
 # [Objective-C](#tab/objc)
 [!INCLUDE [sample-code](../includes/snippets/objc/securescores-list-objc-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [Java](#tab/java)
-[!INCLUDE [sample-code](../includes/snippets/java/securescores-list-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

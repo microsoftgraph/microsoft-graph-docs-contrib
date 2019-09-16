@@ -49,7 +49,7 @@ Here is an example of the request for photo metadata.
   "blockType": "request",
   "name": "get_photo"
 }-->
-```http
+```msgraph-interactive
 GET https://graph.microsoft.com/v1.0/users/{id|userPrincipalName}/photo
 ```
 # [C#](#tab/csharp)
@@ -96,7 +96,7 @@ Here is an example of the request for the photo bytes.
   "blockType": "request",
   "name": "get_photo_value"
 }-->
-```http
+```msgraph-interactive
 GET https://graph.microsoft.com/v1.0/users/{id|userPrincipalName}/photo/$value
 ```
 # [C#](#tab/csharp)

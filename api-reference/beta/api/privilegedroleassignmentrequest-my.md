@@ -50,7 +50,7 @@ The following is an example of the request.
   "blockType": "request",
   "name": "privilegedroleassignmentrequest_my)"
 }-->
-```http
+```msgraph-interactive
 GET https://graph.microsoft.com/beta/privilegedRoleAssignmentRequests/my
 ```
 # [C#](#tab/csharp)
@@ -63,10 +63,6 @@ GET https://graph.microsoft.com/beta/privilegedRoleAssignmentRequests/my
 
 # [Objective-C](#tab/objc)
 [!INCLUDE [sample-code](../includes/snippets/objc/privilegedroleassignmentrequest-my-objc-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [Java](#tab/java)
-[!INCLUDE [sample-code](../includes/snippets/java/privilegedroleassignmentrequest-my-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

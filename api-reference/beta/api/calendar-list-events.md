@@ -69,7 +69,7 @@ Here is an example of the request.
   "blockType": "request",
   "name": "calendar_get_events"
 }-->
-```http
+```msgraph-interactive
 GET https://graph.microsoft.com/beta/me/calendar/events
 ```
 # [C#](#tab/csharp)
@@ -82,10 +82,6 @@ GET https://graph.microsoft.com/beta/me/calendar/events
 
 # [Objective-C](#tab/objc)
 [!INCLUDE [sample-code](../includes/snippets/objc/calendar-get-events-objc-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [Java](#tab/java)
-[!INCLUDE [sample-code](../includes/snippets/java/calendar-get-events-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

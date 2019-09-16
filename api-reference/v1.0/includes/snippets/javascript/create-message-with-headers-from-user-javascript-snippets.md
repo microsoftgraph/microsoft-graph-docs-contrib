@@ -36,6 +36,6 @@ const message = {
 };
 
 let res = await client.api('/me/messages')
-	.post({message : message});
+	.post(message);
 
 ```

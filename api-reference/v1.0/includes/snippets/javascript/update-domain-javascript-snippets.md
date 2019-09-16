@@ -19,6 +19,6 @@ const domain = {
 };
 
 let res = await client.api('/domains/contoso.com')
-	.update({domain : domain});
+	.update(domain);
 
 ```

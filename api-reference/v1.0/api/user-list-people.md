@@ -73,7 +73,7 @@ The following is an example of the request.
   "name": "get_person_collection"
 }-->
 
-```http
+```msgraph-interactive
 GET https://graph.microsoft.com/v1.0/me/people
 ```
 # [C#](#tab/csharp)

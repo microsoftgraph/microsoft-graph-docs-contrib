@@ -49,7 +49,7 @@ Here is an example of the request.
   "blockType": "request",
   "name": "get_workbookApplication"
 }-->
-```http
+```msgraph-interactive
 GET https://graph.microsoft.com/beta/me/drive/items/{id}/workbook/application
 ```
 # [C#](#tab/csharp)
@@ -62,10 +62,6 @@ GET https://graph.microsoft.com/beta/me/drive/items/{id}/workbook/application
 
 # [Objective-C](#tab/objc)
 [!INCLUDE [sample-code](../includes/snippets/objc/get-workbookapplication-objc-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [Java](#tab/java)
-[!INCLUDE [sample-code](../includes/snippets/java/get-workbookapplication-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

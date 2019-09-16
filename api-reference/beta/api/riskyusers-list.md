@@ -53,7 +53,7 @@ Here is an example of the request.
   "blockType": "request",
   "name": "list_riskyusers"
 }-->
-```http
+```msgraph-interactive
 GET https://graph.microsoft.com/beta/riskyUsers
 ```
 # [C#](#tab/csharp)
@@ -66,10 +66,6 @@ GET https://graph.microsoft.com/beta/riskyUsers
 
 # [Objective-C](#tab/objc)
 [!INCLUDE [sample-code](../includes/snippets/objc/list-riskyusers-objc-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [Java](#tab/java)
-[!INCLUDE [sample-code](../includes/snippets/java/list-riskyusers-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
@@ -114,7 +110,7 @@ The following example shows how to use `$filter` to get the collection of riskyU
   "blockType": "request",
   "name": "list_filter_riskyusers"
 } -->
-```http
+```msgraph-interactive
 GET https://graph.microsoft.com/beta/riskyUsers?$filter=riskLevel eq microsoft.graph.riskLevel'medium'
 ```
 # [C#](#tab/csharp)
@@ -127,10 +123,6 @@ GET https://graph.microsoft.com/beta/riskyUsers?$filter=riskLevel eq microsoft.g
 
 # [Objective-C](#tab/objc)
 [!INCLUDE [sample-code](../includes/snippets/objc/list-filter-riskyusers-objc-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [Java](#tab/java)
-[!INCLUDE [sample-code](../includes/snippets/java/list-filter-riskyusers-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

@@ -34,7 +34,7 @@ The requestor can only call ```selfActivate``` for the role that is assigned to 
 POST /privilegedRoles/{id}/selfActivate
 ```
 
-Note that ``<id>`` is the target role ID.
+Note that ``{id}`` is the target role ID.
 ## Request headers
 | Name       | Description|
 |:---------------|:----------|
@@ -87,10 +87,6 @@ Content-length: 142
 
 # [Objective-C](#tab/objc)
 [!INCLUDE [sample-code](../includes/snippets/objc/privilegedrole-selfactivate-objc-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [Java](#tab/java)
-[!INCLUDE [sample-code](../includes/snippets/java/privilegedrole-selfactivate-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

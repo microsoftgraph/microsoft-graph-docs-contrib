@@ -32,7 +32,7 @@ Additionally, without one of the  **All** permissions, shared items returned fro
 # [HTTP](#tab/http)
 <!-- { "blockType": "request", "name": "shared-with-me", "scopes": "files.read", "target": "action" } -->
 
-```http
+```msgraph-interactive
 GET /me/drive/sharedWithMe
 ```
 # [C#](#tab/csharp)
@@ -45,10 +45,6 @@ GET /me/drive/sharedWithMe
 
 # [Objective-C](#tab/objc)
 [!INCLUDE [sample-code](../includes/snippets/objc/shared-with-me-objc-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [Java](#tab/java)
-[!INCLUDE [sample-code](../includes/snippets/java/shared-with-me-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

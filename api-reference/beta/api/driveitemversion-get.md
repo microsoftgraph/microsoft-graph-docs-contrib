@@ -51,7 +51,7 @@ This example retrieves a version of a file in the current user's drive.
 # [HTTP](#tab/http)
 <!-- { "blockType": "request", "name": "get-single-version", "scopes": "files.read" } -->
 
-```http
+```msgraph-interactive
 GET /me/drive/items/{item-id}/versions/{version-id}
 ```
 # [C#](#tab/csharp)
@@ -64,10 +64,6 @@ GET /me/drive/items/{item-id}/versions/{version-id}
 
 # [Objective-C](#tab/objc)
 [!INCLUDE [sample-code](../includes/snippets/objc/get-single-version-objc-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [Java](#tab/java)
-[!INCLUDE [sample-code](../includes/snippets/java/get-single-version-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

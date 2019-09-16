@@ -16,6 +16,6 @@ const calendar = {
 
 let res = await client.api('/me/calendar')
 	.version('beta')
-	.update({calendar : calendar});
+	.update(calendar);
 
 ```

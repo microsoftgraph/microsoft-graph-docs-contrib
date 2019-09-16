@@ -52,7 +52,7 @@ If successful, this method returns a `200 OK` response code and [Endpoint](../re
   "blockType": "request",
   "name": "get_endpoint"
 }-->
-```http
+```msgraph-interactive
 GET https://graph.microsoft.com/beta/groups/{id}/endpoints/{id}
 ```
 # [C#](#tab/csharp)
@@ -65,10 +65,6 @@ GET https://graph.microsoft.com/beta/groups/{id}/endpoints/{id}
 
 # [Objective-C](#tab/objc)
 [!INCLUDE [sample-code](../includes/snippets/objc/get-endpoint-objc-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [Java](#tab/java)
-[!INCLUDE [sample-code](../includes/snippets/java/get-endpoint-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

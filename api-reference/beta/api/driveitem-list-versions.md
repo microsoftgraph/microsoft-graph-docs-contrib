@@ -54,7 +54,7 @@ This example retrieves the versions of a file in the current user's drive.
 # [HTTP](#tab/http)
 <!-- { "blockType": "request", "name": "get-previous-versions", "scopes": "files.read" } -->
 
-```http
+```msgraph-interactive
 GET /me/drive/items/{item-id}/versions
 ```
 # [C#](#tab/csharp)
@@ -67,10 +67,6 @@ GET /me/drive/items/{item-id}/versions
 
 # [Objective-C](#tab/objc)
 [!INCLUDE [sample-code](../includes/snippets/objc/get-previous-versions-objc-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [Java](#tab/java)
-[!INCLUDE [sample-code](../includes/snippets/java/get-previous-versions-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

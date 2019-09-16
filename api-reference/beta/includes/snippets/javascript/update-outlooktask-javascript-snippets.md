@@ -19,6 +19,6 @@ const outlookTask = {
 
 let res = await client.api('/me/outlook/tasks/AAMkADA1MTHgwAAA=')
 	.version('beta')
-	.update({outlookTask : outlookTask});
+	.update(outlookTask);
 
 ```
