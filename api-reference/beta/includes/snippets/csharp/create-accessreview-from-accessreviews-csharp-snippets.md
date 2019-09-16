@@ -9,8 +9,8 @@ GraphServiceClient graphClient = new GraphServiceClient( authProvider );
 var accessReview = new AccessReview
 {
 	DisplayName = "TestReview",
-	StartDateTime = "2017-02-10T00:35:53.214Z",
-	EndDateTime = "2017-03-12T00:35:53.214Z",
+	StartDateTime = DateTimeOffset.Parse("2017-02-10T00:35:53.214Z"),
+	EndDateTime = DateTimeOffset.Parse("2017-03-12T00:35:53.214Z"),
 	ReviewedEntity = new Identity
 	{
 		Id = "99025615-a0b1-47ec-9117-35377b10998b"

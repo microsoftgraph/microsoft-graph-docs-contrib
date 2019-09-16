@@ -79,7 +79,7 @@ var educationRubric = new EducationRubric
 					}
 				}
 			},
-			Weight = 50.0
+			Weight = 50
 		},
 		new RubricQuality
 		{
@@ -107,7 +107,7 @@ var educationRubric = new EducationRubric
 					}
 				}
 			},
-			Weight = 50.0
+			Weight = 50
 		}
 	},
 	Grading = new EducationAssignmentGradeType

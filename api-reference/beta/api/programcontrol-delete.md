@@ -26,7 +26,7 @@ The signed in user must also be in a directory role that permits them to delete 
 ## HTTP request
 <!-- { "blockType": "ignored" } -->
 ```http
-DELETE /programControls('{id}')
+DELETE /programControls/{id}
 ```
 ## Request headers
 | Name         | Type        | Description |
