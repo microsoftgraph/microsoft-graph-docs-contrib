@@ -4233,7 +4233,7 @@
         - name: Create reply
           href: api/workbookcomment-post-replies.md
         - name: Get reply
-          href: workbookcommentreply-get.md     
+          href: api/workbookcommentreply-get.md     
       - name: Worksheet
         href: resources/worksheet.md
         items:
