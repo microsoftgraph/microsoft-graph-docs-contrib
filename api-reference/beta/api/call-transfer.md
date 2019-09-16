@@ -13,6 +13,10 @@ doc_type: apiPageType
 
 Transfer an active call.
 
+> **Note:** This is only supported for peer-to-peer calls to make transfer.
+> **Note:** This is only supported if both the transferee and transfer target are Microsoft Teams users which belong to same tenant. To learn more about transferor, transferee and transfer target, see [RFC 5589](https://tools.ietf.org/html/rfc5589#section-2).
+
+
 ## Permissions
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
 
@@ -26,7 +30,9 @@ One of the following permissions is required to call this API. To learn more, in
 <!-- { "blockType": "ignored" } -->
 ```http
 POST /app/calls/{id}/transfer
+POST /communications/calls/{id}/transfer
 ```
+> **Note:** API starting with /app will be deprecated and be replaced with API starting with /communications.
 
 ## Request headers
 | Name          | Description               |
@@ -60,7 +66,7 @@ The following example shows the request.
   "name": "call-transfer"
 }-->
 ```http
-POST https://graph.microsoft.com/beta/app/calls/{id}/transfer
+POST https://graph.microsoft.com/beta/communications/calls/{id}/transfer
 Content-Type: application/json
 Content-Length: 430
 
@@ -123,20 +129,50 @@ Content-Type: application/json
 }-->
 ```json
 {
+  "@odata.type": "#microsoft.graph.commsNotifications",
   "value": [
     {
+      "@odata.type": "#microsoft.graph.commsNotification",
       "changeType": "updated",
-      "resource": "/app/calls/57DAB8B1894C409AB240BD8BEAE78896/operations/0FE0623FD62842EDB4BD8AC290072CC5",
+      "resourceUrl": "/communications/calls/341a0500-d4bf-4224-8b19-1581168d328b",
       "resourceData": {
-        "@odata.type": "#microsoft.graph.commsOperation",
-        "@odata.id": "/app/calls/57DAB8B1894C409AB240BD8BEAE78896/operations/0FE0623FD62842EDB4BD8AC290072CC5",
-        "@odata.etag": "W/\"54451\"",
-        "clientContext": "d45324c1-fcb5-430a-902c-f20af696537c",
-        "resultInfo": {
-          "code": "200",
-          "subCode": "transferring"
-        },
-        "status": "running"
+        "@odata.type": "#microsoft.graph.call",
+        "state": "transferring"
+      }
+    }
+  ]
+}
+```
+
+##### Notification - media state audio inactive
+
+> **Note:** In this notification, "state" can be "transferring" or "transferAccepted", depends on whether transfer accepted happens after or before media state audio inactive.
+
+```http
+POST https://bot.contoso.com/api/calls
+Authorization: Bearer <TOKEN>
+Content-Type: application/json
+```
+
+<!-- {
+  "blockType": "example",
+  "@odata.type": "microsoft.graph.commsNotifications"
+}-->
+```json
+{
+  "@odata.type": "#microsoft.graph.commsNotifications",
+  "value": [
+    {
+      "@odata.type": "#microsoft.graph.commsNotification",
+      "changeType": "updated",
+      "resourceUrl": "/communications/calls/341a0500-d4bf-4224-8b19-1581168d328b",
+      "resourceData": {
+        "@odata.type": "#microsoft.graph.call",
+        "state": "transferring",
+        "mediaState": {
+          "@odata.type": "#microsoft.graph.callMediaState",
+          "audio": "inactive"
+        }
       }
     }
   ]
@@ -145,6 +181,8 @@ Content-Type: application/json
 
 ##### Notification - transfer accepted
 
+> **Note:** Transfer accepted may happen after or before media state audio inactive.
+
 ```http
 POST https://bot.contoso.com/api/calls
 Authorization: Bearer <TOKEN>
@@ -157,27 +195,22 @@ Content-Type: application/json
 }-->
 ```json
 {
+  "@odata.type": "#microsoft.graph.commsNotifications",
   "value": [
     {
-      "changeType": "deleted",
-      "resource": "/app/calls/57DAB8B1894C409AB240BD8BEAE78896/operations/0FE0623FD62842EDB4BD8AC290072CC5",
+      "@odata.type": "#microsoft.graph.commsNotification",
+      "changeType": "updated",
+      "resourceUrl": "/communications/calls/341a0500-d4bf-4224-8b19-1581168d328b",
       "resourceData": {
-        "@odata.type": "#microsoft.graph.commsOperation",
-        "@odata.id": "/app/calls/57DAB8B1894C409AB240BD8BEAE78896/operations/0FE0623FD62842EDB4BD8AC290072CC5",
-        "@odata.etag": "W/\"54451\"",
-        "clientContext": "d45324c1-fcb5-430a-902c-f20af696537c",
-        "resultInfo": {
-          "code": "200",
-          "subCode": "transferAccepted"
-        },
-        "status": "completed"
+        "@odata.type": "#microsoft.graph.call",
+        "state": "transferAccepted"
       }
     }
   ]
 }
 ```
 
-##### Notification - terminated
+##### Notification - terminated (call transferred)
 
 ```http
 POST https://bot.contoso.com/api/calls
@@ -191,16 +224,91 @@ Content-Type: application/json
 }-->
 ```json
 {
+  "@odata.type": "#microsoft.graph.commsNotifications",
   "value": [
     {
+      "@odata.type": "#microsoft.graph.commsNotification",
       "changeType": "deleted",
-      "resource": "/app/calls/57DAB8B1894C409AB240BD8BEAE78896",
+      "resourceUrl": "/communications/calls/341a0500-d4bf-4224-8b19-1581168d328b",
       "resourceData": {
         "@odata.type": "#microsoft.graph.call",
-        "@odata.id": "/app/calls/57DAB8B1894C409AB240BD8BEAE78896",
-        "@odata.etag": "W/\"5445\"",
         "state": "terminated",
         "terminationReason": "AppTransferred"
+      }
+    }
+  ]
+}
+```
+
+##### Notification - established (call transfer failed)
+
+> **Note:** When call transfer failed, there will be 2 notifications to indicate call back to established and media back to active.
+
+> **Note:** Call goes back to established may happen before or after media state audio active.
+
+```http
+POST https://bot.contoso.com/api/calls
+Authorization: Bearer <TOKEN>
+Content-Type: application/json
+```
+
+<!-- {
+  "blockType": "example",
+  "@odata.type": "microsoft.graph.commsNotifications"
+}-->
+```json
+{
+  "@odata.type": "#microsoft.graph.commsNotifications",
+  "value": [
+    {
+      "@odata.type": "#microsoft.graph.commsNotification",
+      "changeType": "updated",
+      "resourceUrl": "/communications/calls/341a0500-d4bf-4224-8b19-1581168d328b",
+      "resourceData": {
+        "@odata.type": "#microsoft.graph.call",
+        "state": "established",
+        "resultInfo": {
+          "@odata.type": "#microsoft.graph.resultInfo",
+          "code": 500,
+          "subCode": 1000,
+          "message": "<message>"
+        },
+        "replacesContext": "<replacesContext>"
+      }
+    }
+  ]
+}
+```
+
+##### Notification - media state audio active (call transfer failed)
+
+> **Note:** In this notification, "state" can be "established" or "transferAccepted", depends on whether call back to established happens before or after media state audio active.
+
+```http
+POST https://bot.contoso.com/api/calls
+Authorization: Bearer <TOKEN>
+Content-Type: application/json
+```
+
+<!-- {
+  "blockType": "example",
+  "@odata.type": "microsoft.graph.commsNotifications"
+}-->
+```json
+{
+  "@odata.type": "#microsoft.graph.commsNotifications",
+  "value": [
+    {
+      "@odata.type": "#microsoft.graph.commsNotification",
+      "changeType": "updated",
+      "resourceUrl": "/communications/calls/341a0500-d4bf-4224-8b19-1581168d328b",
+      "resourceData": {
+        "@odata.type": "#microsoft.graph.call",
+        "state": "established",
+        "mediaState": {
+          "@odata.type": "#microsoft.graph.callMediaState",
+          "audio": "active"
+        }
       }
     }
   ]
@@ -210,32 +318,36 @@ Content-Type: application/json
 ### Consultative transfer
 
 ##### Request
+The following example shows the request.
 
-```http
-POST /app/calls/57DAB8B1894C409AB240BD8BEAE78896/transfer
-Authorization: Bearer <TOKEN>
-Content-Type: application/json
-```
 <!-- {
   "blockType": "ignored",
   "@odata.type": "call-transfer"
 }-->
-```json
+
+```http
+POST https://graph.microsoft.com/beta/communications/calls/341a0500-d4bf-4224-8b19-1581168d328b/transfer
+Authorization: Bearer <TOKEN>
+Content-Type: application/json
+
 {
-  "clientContext": "d45324c1-fcb5-430a-902c-f20af696537c",
   "transferTarget": {
+    "@odata.type": "#microsoft.graph.invitationParticipantInfo",
     "endpointType": "default",
     "identity": {
+      "@odata.type": "#microsoft.graph.identitySet",
       "user": {
+        "@odata.type": "#microsoft.graph.identity",
         "id": "550fae72-d251-43ec-868c-373732c2704f",
         "tenantId": "72f988bf-86f1-41af-91ab-2d7cd011db47",
         "displayName": "Heidi Steen"
       }
     },
-    "languageId": "en-US",
-    "region": "westus",
+    "languageId": "en-us",
+    "region": "amer",
     "replacesCallId": "e5d39592-99bd-4db8-bca8-30fb894ec51d"
-  }
+  },
+  "clientContext": "<clientContext-value>"
 }
 ```
 
@@ -261,20 +373,50 @@ Content-Type: application/json
 }-->
 ```json
 {
+  "@odata.type": "#microsoft.graph.commsNotifications",
   "value": [
     {
+      "@odata.type": "#microsoft.graph.commsNotification",
       "changeType": "updated",
-      "resource": "/app/calls/57DAB8B1894C409AB240BD8BEAE78896/operations/0FE0623FD62842EDB4BD8AC290072CC5",
+      "resourceUrl": "/communications/calls/341a0500-d4bf-4224-8b19-1581168d328b",
       "resourceData": {
-        "@odata.type": "#microsoft.graph.commsOperation",
-        "@odata.id": "/app/calls/57DAB8B1894C409AB240BD8BEAE78896/operations/0FE0623FD62842EDB4BD8AC290072CC5",
-        "@odata.etag": "W/\"54451\"",
-        "clientContext": "d45324c1-fcb5-430a-902c-f20af696537c",
-        "resultInfo": {
-          "code": "200",
-          "subCode": "transferring"
-        },
-        "status": "running"
+        "@odata.type": "#microsoft.graph.call",
+        "state": "transferring"
+      }
+    }
+  ]
+}
+```
+
+##### Notification - media state audio inactive
+
+> **Note:** In this notification, "state" can be "transferring" or "transferAccepted", depends on whether transfer accepted happens after or before media state audio inactive.
+
+```http
+POST https://bot.contoso.com/api/calls
+Authorization: Bearer <TOKEN>
+Content-Type: application/json
+```
+
+<!-- {
+  "blockType": "example",
+  "@odata.type": "microsoft.graph.commsNotifications"
+}-->
+```json
+{
+  "@odata.type": "#microsoft.graph.commsNotifications",
+  "value": [
+    {
+      "@odata.type": "#microsoft.graph.commsNotification",
+      "changeType": "updated",
+      "resourceUrl": "/communications/calls/341a0500-d4bf-4224-8b19-1581168d328b",
+      "resourceData": {
+        "@odata.type": "#microsoft.graph.call",
+        "state": "transferring",
+        "mediaState": {
+          "@odata.type": "#microsoft.graph.callMediaState",
+          "audio": "inactive"
+        }
       }
     }
   ]
@@ -283,6 +425,8 @@ Content-Type: application/json
 
 ##### Notification - transfer accepted
 
+> **Note:** Transfer accepted may happen after or before media state audio inactive.
+
 ```http
 POST https://bot.contoso.com/api/calls
 Authorization: Bearer <TOKEN>
@@ -295,27 +439,22 @@ Content-Type: application/json
 }-->
 ```json
 {
+  "@odata.type": "#microsoft.graph.commsNotifications",
   "value": [
     {
-      "changeType": "deleted",
-      "resource": "/app/calls/57DAB8B1894C409AB240BD8BEAE78896/operations/0FE0623FD62842EDB4BD8AC290072CC5",
+      "@odata.type": "#microsoft.graph.commsNotification",
+      "changeType": "updated",
+      "resourceUrl": "/communications/calls/341a0500-d4bf-4224-8b19-1581168d328b",
       "resourceData": {
-        "@odata.type": "#microsoft.graph.commsOperation",
-        "@odata.id": "/app/calls/57DAB8B1894C409AB240BD8BEAE78896/operations/0FE0623FD62842EDB4BD8AC290072CC5",
-        "@odata.etag": "W/\"54451\"",
-        "clientContext": "d45324c1-fcb5-430a-902c-f20af696537c",
-        "resultInfo": {
-          "code": "200",
-          "subCode": "transferAccepted"
-        },
-        "status": "completed"
+        "@odata.type": "#microsoft.graph.call",
+        "state": "transferAccepted"
       }
     }
   ]
 }
 ```
 
-##### Notification - terminated
+##### Notification - terminated (call transferred)
 
 ```http
 POST https://bot.contoso.com/api/calls
@@ -329,16 +468,91 @@ Content-Type: application/json
 }-->
 ```json
 {
+  "@odata.type": "#microsoft.graph.commsNotifications",
   "value": [
     {
+      "@odata.type": "#microsoft.graph.commsNotification",
       "changeType": "deleted",
-      "resource": "/app/calls/57DAB8B1894C409AB240BD8BEAE78896",
+      "resourceUrl": "/communications/calls/341a0500-d4bf-4224-8b19-1581168d328b",
       "resourceData": {
         "@odata.type": "#microsoft.graph.call",
-        "@odata.id": "/app/calls/57DAB8B1894C409AB240BD8BEAE78896",
-        "@odata.etag": "W/\"5445\"",
         "state": "terminated",
         "terminationReason": "AppTransferred"
+      }
+    }
+  ]
+}
+```
+
+##### Notification - established (call transfer failed)
+
+> **Note:** When call transfer failed, there will be 2 notifications to indicate call back to established and media back to active.
+
+> **Note:** Call goes back to established may happen before or after media state audio active.
+
+```http
+POST https://bot.contoso.com/api/calls
+Authorization: Bearer <TOKEN>
+Content-Type: application/json
+```
+
+<!-- {
+  "blockType": "example",
+  "@odata.type": "microsoft.graph.commsNotifications"
+}-->
+```json
+{
+  "@odata.type": "#microsoft.graph.commsNotifications",
+  "value": [
+    {
+      "@odata.type": "#microsoft.graph.commsNotification",
+      "changeType": "updated",
+      "resourceUrl": "/communications/calls/341a0500-d4bf-4224-8b19-1581168d328b",
+      "resourceData": {
+        "@odata.type": "#microsoft.graph.call",
+        "state": "established",
+        "resultInfo": {
+          "@odata.type": "#microsoft.graph.resultInfo",
+          "code": 500,
+          "subCode": 7000,
+          "message": "<message>"
+        },
+        "replacesContext": "<replacesContext>"
+      }
+    }
+  ]
+}
+```
+
+##### Notification - media state audio active (call transfer failed)
+
+> **Note:** In this notification, "state" can be "established" or "transferAccepted", depends on whether call back to established happens before or after media state audio active.
+
+```http
+POST https://bot.contoso.com/api/calls
+Authorization: Bearer <TOKEN>
+Content-Type: application/json
+```
+
+<!-- {
+  "blockType": "example",
+  "@odata.type": "microsoft.graph.commsNotifications"
+}-->
+```json
+{
+  "@odata.type": "#microsoft.graph.commsNotifications",
+  "value": [
+    {
+      "@odata.type": "#microsoft.graph.commsNotification",
+      "changeType": "updated",
+      "resourceUrl": "/communications/calls/341a0500-d4bf-4224-8b19-1581168d328b",
+      "resourceData": {
+        "@odata.type": "#microsoft.graph.call",
+        "state": "established",
+        "mediaState": {
+          "@odata.type": "#microsoft.graph.callMediaState",
+          "audio": "active"
+        }
       }
     }
   ]

@@ -29,7 +29,9 @@ One of the following permissions is required to call this API. To learn more, in
 <!-- { "blockType": "ignored" } -->
 ```http
 POST /app/calls
+POST /communications/calls
 ```
+> **Note:** API starting with /app will be deprecated and be replaced with API starting with /communications.
 
 ## Request headers
 | Name          | Description               |
@@ -59,7 +61,7 @@ The following example shows the request which makes a peer to peer call between 
   "name": "create-call-from-application"
 }-->
 ```http
-POST https://graph.microsoft.com/beta/app/calls
+POST https://graph.microsoft.com/beta/communications/calls
 Content-Type: application/json
 Authorization: Bearer <Token>
 
@@ -113,7 +115,7 @@ Authorization: Bearer <Token>
 } -->
 ```http
 HTTP/1.1 201 Created
-Location: https://graph.microsoft.com/beta/app/calls/2e1a0b00-2db4-4022-9570-243709c565ab
+Location: https://graph.microsoft.com/beta/communications/calls/2e1a0b00-2db4-4022-9570-243709c565ab
 Content-Type: application/json
 
 
@@ -205,7 +207,7 @@ Content-Type: application/json
     {
       "@odata.type": "#microsoft.graph.commsNotification",
       "changeType": "updated",
-      "resource": "/app/calls/2e1a0b00-2db4-4022-9570-243709c565ab",
+      "resourceUrl": "/communications/calls/2e1a0b00-2db4-4022-9570-243709c565ab",
       "callbackUri": "https://bot.contoso.com/callback",
       "resourceData": {
         "@odata.type": "#microsoft.graph.call",
@@ -235,7 +237,7 @@ Content-Type: application/json
     {
       "@odata.type": "#microsoft.graph.commsNotification",
       "changeType": "updated",
-      "resource": "/app/calls/2e1a0b00-b3c5-4b0f-99b3-c133bc1e6116",
+      "resourceUrl": "/communications/calls/2e1a0b00-b3c5-4b0f-99b3-c133bc1e6116",
       "callbackUri": "https://bot.contoso.com/callback",
       "resourceData": {
         "@odata.type": "#microsoft.graph.call",
@@ -257,7 +259,7 @@ Content-Type: application/json
 The following example shows the request which makes a peer to peer call between the bot and the specified user. In this example the media is hosted locally by the application. The values of authorization token, callback url, application id, application name, user id, user name and tenant id must be replaced with actual values to make the example work.
 
 ```http
-POST https://graph.microsoft.com/beta/app/calls
+POST https://graph.microsoft.com/beta/communications/calls
 Content-Type: application/json
 Authorization: Bearer <Token>
 ```
@@ -311,7 +313,7 @@ The values of authorization token, callback url, application id, application nam
 ##### Request
 
 ```http
-POST https://graph.microsoft.com/beta/app/calls
+POST https://graph.microsoft.com/beta/communications/calls
 Content-Type: application/json
 Authorization: Bearer <Token>
 ```
@@ -364,7 +366,7 @@ Authorization: Bearer <Token>
 
 ```http
 HTTP/1.1 201 Created
-Location: https://graph.microsoft.com/beta/app/calls/2f1a1100-b174-40a0-aba7-0b405e01ed92
+Location: https://graph.microsoft.com/beta/communications/calls/2f1a1100-b174-40a0-aba7-0b405e01ed92
 Content-Type: application/json
 ```
 
@@ -465,7 +467,7 @@ Content-Type: application/json
     {
       "@odata.type": "#microsoft.graph.commsNotification",
       "changeType": "updated",
-      "resource": "/app/calls/2f1a1100-b174-40a0-aba7-0b405e01ed92",
+      "resourceUrl": "/communications/calls/2f1a1100-b174-40a0-aba7-0b405e01ed92",
         "callbackUri": "https://bot.contoso.com/callback",
       "resourceData": {
         "@odata.type": "#microsoft.graph.call",
@@ -514,7 +516,7 @@ Content-Type: application/json
     {
       "@odata.type": "#microsoft.graph.commsNotification",
       "changeType": "updated",
-      "resource": "/app/calls/2f1a1100-b174-40a0-aba7-0b405e01ed92",
+      "resourceUrl": "/communications/calls/2f1a1100-b174-40a0-aba7-0b405e01ed92",
       "callbackUri": "https://bot.contoso.com/callback",
       "resourceData": {
         "@odata.type": "#microsoft.graph.call",
@@ -563,7 +565,7 @@ Content-Type: application/json
     {
       "@odata.type": "#microsoft.graph.commsNotification",
       "changeType": "updated",
-      "resource": "/app/calls/2f1a1100-b174-40a0-aba7-0b405e01ed92/participants",
+      "resourceUrl": "/communications/calls/2f1a1100-b174-40a0-aba7-0b405e01ed92/participants",
       "callbackUri": "https://bot.contoso.com/callback",
       "resourceData": [
         {
@@ -645,7 +647,7 @@ Content-Type: application/json
 To join the meeting with application hosted media update the media config with the [AppHostedMediaConfig](../resources/apphostedmediaconfig.md) as shown below, In the sample provided above.
 
 ```http
-POST https://graph.microsoft.com/beta/app/calls
+POST https://graph.microsoft.com/beta/communications/calls
 Content-Type: application/json
 Authorization: Bearer <Token>
 ```
@@ -698,7 +700,7 @@ The values of authorization token, callback url, application id, application nam
 ##### Request
 
 ```http
-POST https://graph.microsoft.com/beta/app/calls
+POST https://graph.microsoft.com/beta/communications/calls
 Content-Type: application/json
 Authorization: Bearer <Token>
 ```
@@ -757,7 +759,7 @@ The display name is the name you want to be displayed in the meeting for your gu
 ##### Request
 
 ```http
-POST https://graph.microsoft.com/beta/app/calls
+POST https://graph.microsoft.com/beta/communications/calls
 Content-Type: application/json
 Authorization: Bearer <Token>
 ```
@@ -839,7 +841,7 @@ Content-Type: application/json
     {
       "@odata.type": "#microsoft.graph.commsNotification",
       "changeType": "updated",
-      "resource": "/app/calls/2f1a1100-726f-4705-a071-30fb8f6b568f/participants",
+      "resourceUrl": "/communications/calls/2f1a1100-726f-4705-a071-30fb8f6b568f/participants",
       "callbackUri": "https://bot.contoso.com/callback",
       "resourceData": [
         {

@@ -1,17 +1,12 @@
 --- 
-title: "inviteParticipantsOperation resource type"
-description: "Represents the status of a long-running participant invitation operation, triggered by a call to the participant-invite API."
+title: "SubscribeToToneOperation resource type"
+description: "The subscribeToTone operation to obtain the result of the subscribeToTone action."
 author: "VinodRavichandran"
-localization_priority: Normal
-ms.prod: "microsoft-teams"
-doc_type: resourcePageType
 ---
 
-# inviteParticipantsOperation resource type
+# SubscribeToToneOperation resource type
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
-
-Represents the status of a long-running participant invitation operation, triggered by a call to the participant-invite API.
 
 ## Properties
 
@@ -19,7 +14,6 @@ Represents the status of a long-running participant invitation operation, trigge
 | :----------------------------- | :---------------------------| :-------------------------------------------------------------------------------------------------------------------------------------------------|
 | clientContext                  | String                      | The client context.                                                                                                                               |
 | id                             | String                      | The server operation id. Read-only. Server generated.                                                                                             |
-| participants | [invitationParticipantInfo](invitationParticipantInfo.md) collection | The participants to invite. |
 | resultInfo                     | [resultInfo](resultinfo.md) | The result information.  Read-only. Server generated.                                                                                             |
 | status                         | String                      | Possible values are: `notStarted`, `running`, `completed`, `failed`. Read-only. Server generated.                                                 |
 
@@ -35,13 +29,12 @@ The following is a JSON representation of the resource.
   "optionalProperties": [
 
   ],
-  "@odata.type": "microsoft.graph.inviteParticipantsOperation"
+  "@odata.type": "microsoft.graph.subscribeToToneOperation"
 }-->
 ```json
 {
   "clientContext": "String",
   "id": "String (identifier)",
-  "participants": [{"@odata.type": "#microsoft.graph.invitationParticipantInfo"}],
   "resultInfo": {"@odata.type": "#microsoft.graph.resultInfo"},
   "status": "notStarted | running | completed | failed"
 }
@@ -51,9 +44,8 @@ The following is a JSON representation of the resource.
 2015-10-25 14:57:30 UTC -->
 <!-- {
   "type": "#page.annotation",
-  "description": "inviteParticipantsOperation resource",
+  "description": "subscribeToToneOperation resource",
   "keywords": "",
   "section": "documentation",
-  "tocPath": "",
-  "suppressions": []
+  "tocPath": ""
 }-->

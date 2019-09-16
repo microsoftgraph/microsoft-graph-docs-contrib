@@ -17,9 +17,9 @@ The resultInfo type.
 
 | Property | Type   | Description          |
 | :------- | :----- | :------------------  |
-| code     | String | The result code.     |
+| code     | Int32 | The result code.     |
 | message  | String | The message.         |
-| subCode  | String | The result sub-code. |
+| subcode  | Int32 | The result sub-code. |
 
 ## JSON representation
 
@@ -34,9 +34,9 @@ The following is a JSON representation of the resource.
 }-->
 ```json
 {
-  "code": "String",
+  "code": 0,
   "message": "String",
-  "subCode": "String"
+  "subcode": 0
 }
 ```
 
@@ -48,9 +48,9 @@ The following is a JSON representation of the resource.
 }-->
 ```json
 {
-  "code": "100",
+  "code": 100,
   "message": "Internal Server Error.",
-  "subCode": "20"
+  "subcode": 20
 }
 ```
 
@@ -62,9 +62,9 @@ The following is a JSON representation of the resource.
 }-->
 ```json
 {
-  "code": "200",
+  "code": 200,
   "message": "",
-  "subCode": "0"
+  "subcode": 0
 }
 ```
 
@@ -76,9 +76,9 @@ The following is a JSON representation of the resource.
 }-->
 ```json
 {
-  "code": "200",
+  "code": 200,
   "message": "",
-  "subCode": "completedSilenceDetected"
+  "subcode": 7000
 }
 ```
 

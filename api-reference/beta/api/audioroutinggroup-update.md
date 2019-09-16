@@ -26,7 +26,9 @@ One of the following permissions is required to call this API. To learn more, in
 <!-- { "blockType": "ignored" } -->
 ```http
 PATCH /app/calls/{id}/audioRoutingGroups/{id}
+PATCH /communications/calls/{id}/audioRoutingGroups/{id}
 ```
+> **Note:** API starting with /app will be deprecated and be replaced with API starting with /communications.
 
 ## Request headers
 | Name          | Description               |
@@ -57,7 +59,7 @@ The following example shows the request.
   "name": "update-audioRoutingGroup"
 }-->
 ```http
-PATCH https://graph.microsoft.com/beta/app/calls/{id}/audioRoutingGroups/{id}
+PATCH https://graph.microsoft.com/beta/communications/calls/{id}/audioRoutingGroups/{id}
 Content-Type: application/json
 Content-Length: 233
 

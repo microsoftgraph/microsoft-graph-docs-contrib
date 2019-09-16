@@ -27,7 +27,9 @@ One of the following permissions is required to call this API. To learn more, in
 <!-- { "blockType": "ignored" } -->
 ```http
 DELETE /app/calls/{id}
+DELETE /communications/calls/{id}
 ```
+> **Note:** API starting with /app will be deprecated and be replaced with API starting with /communications.
 
 ## Request headers
 | Name          | Description               |
@@ -52,7 +54,7 @@ The following example shows the request.
   "name": "delete-call"
 }-->
 ```http
-DELETE https://graph.microsoft.com/beta/app/calls/57dab8b1-894c-409a-b240-bd8beae78896
+DELETE https://graph.microsoft.com/beta/communications/calls/57dab8b1-894c-409a-b240-bd8beae78896
 ```
 # [C#](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/delete-call-csharp-snippets.md)]
@@ -100,7 +102,7 @@ Content-Type: application/json
     {
       "@odata.type": "#microsoft.graph.commsNotification",
       "changeType": "updated",
-      "resource": "/app/calls/57dab8b1-894c-409a-b240-bd8beae78896",
+      "resourceUrl": "/communications/calls/57dab8b1-894c-409a-b240-bd8beae78896",
       "resourceData": {
         "@odata.type": "#microsoft.graph.call",
         "state": "terminating"
@@ -130,7 +132,7 @@ Content-Type: application/json
     {
       "@odata.type": "#microsoft.graph.commsNotification",
       "changeType": "deleted",
-      "resource": "/app/calls/57dab8b1-894c-409a-b240-bd8beae78896",
+      "resourceUrl": "/communications/calls/57dab8b1-894c-409a-b240-bd8beae78896",
       "resourceData": {
         "@odata.type": "#microsoft.graph.call",
         "state": "terminated",

@@ -19,9 +19,7 @@ The recordOperation type
 | :----------------------------- | :---------------------------| :-------------------------------------------------------------------------------------------------------------------------------------------------|
 | clientContext                  | String                      | The client context.                                                                                                                               |
 | completionReason               | String                      | Possible values are: `operationCanceled`, `stopToneDetected`, `maxRecordDurationReached`, `initialSilenceTimeout`, `maxSilenceTimeout`, `playPromptFailed`, `playBeepFailed`, `mediaReceiveTimeout`, `unspecifiedError`, `none`. |
-| createdDateTime                | DateTimeOffset              | The time when the recording was created.                                                                                                          |
 | id                             | String                      | The server operation id. Read-only. Server generated.                                                                                             |
-| lastActionDateTime             | DateTimeOffset              | The time of the last action of the operation.                                                                                                     |
 | recordingAccessToken           | String                      | The access token required to retrieve the recording.                                                                                              |
 | recordingLocation              | String                      | The location where the recording is located.                                                                                                      |
 | resultInfo                     | [resultInfo](resultinfo.md) | The result information.  Read-only. Server generated.                                                                                             |
@@ -45,9 +43,7 @@ The following is a JSON representation of the resource.
 {
   "clientContext": "String",
   "completionReason": "operationCanceled | stopToneDetected | maxRecordDurationReached | initialSilenceTimeout | maxSilenceTimeout | playPromptFailed | playBeepFailed | mediaReceiveTimeout | unspecifiedError | none",
-  "createdDateTime": "String (timestamp)",
   "id": "String (identifier)",
-  "lastActionDateTime": "String (timestamp)",
   "recordingAccessToken": "String",
   "recordingLocation": "String",
   "resultInfo": {"@odata.type": "#microsoft.graph.resultInfo"},

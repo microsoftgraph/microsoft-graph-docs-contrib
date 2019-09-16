@@ -28,7 +28,9 @@ One of the following permissions is required to call this API. To learn more, in
 <!-- { "blockType": "ignored" } -->
 ```http
 POST /app/onlineMeetings
+POST /communications/onlineMeetings
 ```
+> **Note:** API starting with /app will be deprecated and be replaced with API starting with /communications.
 
 ## Request headers
 | Name          | Description               |
@@ -53,12 +55,12 @@ The following example shows the request.
   "name": "create-onlinemeeting-from-application"
 }-->
 ```http
-POST https://graph.microsoft.com/beta/app/onlineMeetings
+POST https://graph.microsoft.com/beta/communications/onlineMeetings
 Content-Type: application/json
 Content-Length: 1553
 
 {
-  "meetingType": "meetNow",
+  "isBroadcast": "false",
   "participants": {
     "organizer": {
       "identity": {
@@ -124,7 +126,7 @@ Content-Length: 1574
   "id": "013448345",
   "isCancelled": false,
   "joinUrl": "https://teams.microsoft.com/l/meetup-join/19%3ameeting_M2IzYzczNTItYmY3OC00MDlmLWJjMzUtYmFiMjNlOTY4MGEz%40thread.skype/0?context=%7b%22Tid%22%3a%2272f988bf-86f1-41af-91ab-2d7cd011db47%22%2c%22Oid%22%3a%22550fae72-d251-43ec-868c-373732c2704f%22%7d",
-  "meetingType": "meetNow",
+  "isBroadcast": false,
   "participants": {
     "organizer": {
       "identity": {

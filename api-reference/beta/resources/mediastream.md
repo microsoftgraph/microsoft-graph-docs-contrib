@@ -30,7 +30,8 @@ The following is a JSON representation of the resource.
 <!-- {
   "blockType": "resource",
   "optionalProperties": [
-    "serverMuted"
+    "serverMuted",
+    "label"
   ],
   "@odata.type": "microsoft.graph.mediaStream"
 }-->

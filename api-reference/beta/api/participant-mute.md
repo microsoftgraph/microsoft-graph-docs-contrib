@@ -26,7 +26,9 @@ One of the following permissions is required to call this API. To learn more, in
 <!-- { "blockType": "ignored" } -->
 ```http
 POST /app/calls/{id}/participants/{id}/mute
+POST /communications/calls/{id}/participants/{id}/mute
 ```
+> **Note:** API starting with /app will be deprecated and be replaced with API starting with /communications.
 
 ## Request headers
 | Name          | Description               |
@@ -43,7 +45,7 @@ In the request body, provide a JSON object with the following parameters.
 ## Response
 If successful, this method returns `200 OK` response code and [commsOperation](../resources/commsoperation.md) object in the response body.
 
-## Example
+## Example - Mute specific participant
 The following example shows how to call this API.
 
 ##### Request
@@ -55,12 +57,12 @@ The following example shows the request.
   "name": "participant-mute"
 }-->
 ```http
-POST https://graph.microsoft.com/beta/app/calls/{id}/participants/{id}/mute
+POST https://graph.microsoft.com/beta/communications/calls/57dab8b1-894c-409a-b240-bd8beae78896/participants/2765eb15-01f8-47c6-b12b-c32111a4a86f/mute
+Authorization: Bearer <TOKEN>
 Content-Type: application/json
-Content-Length: 46
 
 {
-  "clientContext": "clientContext-value"
+  "clientContext": "d45324c1-fcb5-430a-902c-f20af696537c"
 }
 ```
 # [C#](#tab/csharp)
@@ -77,63 +79,33 @@ Content-Length: 46
 
 ---
 
-
 ##### Response
 
-> **Note:** The response object shown here might be shortened for readability. All the properties will be returned from an actual call.
-
-<!-- {
-  "blockType": "response",
-  "@odata.type": "microsoft.graph.commsOperation",
-  "truncated": true
-} -->
+> **Note:** The response object shown here might be shortened for readability. All the properties will be returned from an actual call. 
+ 
+<!-- { 
+  "blockType": "response", 
+  "truncated": true, 
+  "@odata.type": "microsoft.graph.commsOperation" 
+} --> 
 ```http
 HTTP/1.1 200 OK
-Content-Type: application/json
-Content-Length: 259
-
-{
-  "id": "17e3b46c-f61d-4f4d-9635-c626ef18e6ad",
-  "status": "completed",
-  "createdDateTime": "2018-09-06T15:58:41Z",
-  "lastActionDateTime": "2018-09-06T15:58:41Z",
-  "clientContext": "d45324c1-fcb5-430a-902c-f20af696537c"
-}
-```
-
-## Example - Mute specific participant
-
-##### Request
-
-```http
-POST /app/calls/57DAB8B1894C409AB240BD8BEAE78896/participants/0698446E77E24E4D85F80597083CB830/mute
-Authorization: Bearer <TOKEN>
-Content-Type: application/json
-
-{
-  "clientContext": "d45324c1-fcb5-430a-902c-f20af696537c"
-}
-```
-
-##### Response
-
-```http
-HTTP/1.1 200 OK
+Location: https://graph.microsoft.com/beta/communications/calls/57dab8b1-894c-409a-b240-bd8beae78896/operations/17e3b46c-f61d-4f4d-9635-c626ef18e6ad
 Content-Type: application/json
 Content-Length: 259
 ```
 
 <!-- {
   "blockType": "example",
-  "@odata.type": "microsoft.graph.commsOperation",
+  "@odata.type": "microsoft.graph.muteParticipantOperation",
   "truncated": true
 }-->
 ```json
 {
+  "@odata.type": "#microsoft.graph.commsOperation",
+  "@odata.context": "https://graph.microsoft.com/beta/$metadata#commsOperation",
   "id": "17e3b46c-f61d-4f4d-9635-c626ef18e6ad",
   "status": "completed",
-  "createdDateTime": "2018-09-06T15:58:41Z",
-  "lastActionDateTime": "2018-09-06T15:58:41Z",
   "clientContext": "d45324c1-fcb5-430a-902c-f20af696537c"
 }
 ```
@@ -152,19 +124,21 @@ Content-Type: application/json
 }-->
 ```json
 {
+  "@odata.type": "#microsoft.graph.commsNotifications",
   "value": [
     {
+      "@odata.type": "#microsoft.graph.commsNotification",
       "changeType": "updated",
-      "resource": "/app/calls/57DAB8B1894C409AB240BD8BEAE78896/participants",
+      "resourceUrl": "/communications/calls/57dab8b1-894c-409a-b240-bd8beae78896/participants",
       "resourceData": [
         {
           "@odata.type": "#microsoft.graph.participant",
-          "id": "0698446E77E24E4D85F80597083CB830",
+          "id": "2765eb15-01f8-47c6-b12b-c32111a4a86f",
           "info": {
             "identity": {
               "user": {
-                "displayName": "Test User",
-                "id": "8A34A46B-3D17-4ADC-8DCE-DC4E7D572698"
+                "displayName": "Bob",
+                "id": "5810cede-f3cc-42eb-b2c1-e9bd5d53ec96"
               }
             },
             "region": "westus",
@@ -175,35 +149,10 @@ Content-Type: application/json
               "mediaType": "audio",
               "label": "main-audio",
               "sourceId": "1",
-              "direction": "sendReceive",
-              "serverMuted": false
+              "direction": "sendReceive"
             }
           ],
-          "isMuted": true,
-          "isInLobby": false
-        },
-        {
-          "@odata.type": "#microsoft.graph.participant",
-          "id": "123456W77E24E4D85F80597083CB830",
-          "info": {
-            "identity": {
-              "application": {
-                "displayName": "Test Bot",
-                "id": "1234A46B-3D17-4ADC-8DCE-DC4E7D556789"
-              }
-            },
-            "region": "westus",
-            "languageId": "en-US"
-          },
-          "mediaStreams": [
-            {
-              "mediaType": "audio",
-              "label": "main-audio",
-              "sourceId": "2",
-              "direction": "sendReceive",
-              "serverMuted": false
-            }
-          ],
+          "isMuted": true, // will be set to true on mute
           "isInLobby": false
         }
       ]

@@ -26,7 +26,9 @@ One of the following permissions is required to call this API. To learn more, in
 <!-- { "blockType": "ignored" } -->
 ```http
 DELETE /app/calls/{id}/audioRoutingGroups/{id}
+DELETE /communications/calls/{id}/audioRoutingGroups/{id}
 ```
+> **Note:** API starting with /app will be deprecated and be replaced with API starting with /communications.
 
 ## Request headers
 | Name          | Description               |
@@ -51,7 +53,7 @@ The following example shows the request.
   "name": "delete-audioRoutingGroup"
 }-->
 ```http
-DELETE https://graph.microsoft.com/beta/app/calls/{id}/audioRoutingGroups/{id}
+DELETE https://graph.microsoft.com/beta/communications/calls/{id}/audioRoutingGroups/{id}
 ```
 # [C#](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/delete-audioroutinggroup-csharp-snippets.md)]

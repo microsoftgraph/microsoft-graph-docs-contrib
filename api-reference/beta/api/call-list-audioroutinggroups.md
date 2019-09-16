@@ -26,7 +26,9 @@ One of the following permissions is required to call this API. To learn more, in
 <!-- { "blockType": "ignored" } -->
 ```http
 GET /app/calls/{id}/audioRoutingGroups
+GET /communications/calls/{id}/audioRoutingGroups
 ```
+> **Note:** API starting with /app will be deprecated and be replaced with API starting with /communications.
 
 ## Optional query parameters
 This method supports the [OData query parameters](/graph/query-parameters) to help customize the response.
@@ -54,7 +56,7 @@ The following example shows the request.
   "name": "get-audioRoutingGroups"
 }-->
 ```msgraph-interactive
-GET https://graph.microsoft.com/beta/app/calls/{id}/audioRoutingGroups
+GET https://graph.microsoft.com/beta/communications/calls/{id}/audioRoutingGroups
 ```
 # [C#](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/get-audioroutinggroups-csharp-snippets.md)]

@@ -26,7 +26,9 @@ One of the following permissions is required to call this API. To learn more, in
 <!-- { "blockType": "ignored" } -->
 ```http
 GET /app/calls/{id}
+GET /communications/calls/{id}
 ```
+> **Note:** API starting with /app will be deprecated and be replaced with API starting with /communications.
 
 ## Optional query parameters
 This method supports the [OData query parameters](/graph/query-parameters) to help customize the response.
@@ -55,7 +57,7 @@ The following call example shows the request for getting the peer to peer call.
 }-->
 
 ```msgraph-interactive
-GET https://graph.microsoft.com/beta/app/calls/{id}
+GET https://graph.microsoft.com/beta/communications/calls/{id}
 ```
 # [C#](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/get-call-csharp-snippets.md)]
@@ -158,7 +160,7 @@ Content-Type: application/json
   "name": "get-call"
 }-->
 ```http
-GET https://graph.microsoft.com/beta/app/calls/2f1a1100-b174-40a0-aba7-0b405e01ed92
+GET https://graph.microsoft.com/beta/communications/calls/2f1a1100-b174-40a0-aba7-0b405e01ed92
 Authorization: Bearer <Token>
 ```
 

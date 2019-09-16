@@ -26,7 +26,9 @@ One of the following permissions is required to call this API. To learn more, in
 <!-- { "blockType": "ignored" } -->
 ```http
 POST /app/calls/{id}/answer
+POST /communications/calls/{id}/answer
 ```
+> **Note:** API starting with /app will be deprecated and be replaced with API starting with /communications.
 
 ## Request headers
 | Name          | Description               |
@@ -58,7 +60,7 @@ The following example shows the request.
   "name": "call-answer"
 }-->
 ```http
-POST https://graph.microsoft.com/beta/app/calls/{id}/answer
+POST https://graph.microsoft.com/beta/communications/calls/{id}/answer
 Content-Type: application/json
 Content-Length: 211
 
@@ -119,10 +121,10 @@ Content-Type: application/json
   "value": [
     {
       "changeType": "created",
-      "resource": "/app/calls/57DAB8B1894C409AB240BD8BEAE78896",
+      "resourceUrl": "/communications/calls/57DAB8B1894C409AB240BD8BEAE78896",
       "resourceData": {
         "@odata.type": "#microsoft.graph.call",
-        "@odata.id": "/app/calls/57DAB8B1894C409AB240BD8BEAE78896",
+        "@odata.id": "/communications/calls/57DAB8B1894C409AB240BD8BEAE78896",
         "@odata.etag": "W/\"5445\"",
         "state": "incoming",
         "direction": "incoming",
@@ -173,7 +175,7 @@ Content-Type: application/json
 ##### Request
 
 ```http
-POST /app/calls/57DAB8B1894C409AB240BD8BEAE78896/answer
+POST /communications/calls/57DAB8B1894C409AB240BD8BEAE78896/answer
 Authorization: Bearer <TOKEN>
 Content-Type: application/json
 ```
@@ -225,10 +227,10 @@ Content-Type: application/json
   "value": [
     {
       "changeType": "updated",
-      "resource": "/app/calls/57DAB8B1894C409AB240BD8BEAE78896",
+      "resourceUrl": "/communications/calls/57DAB8B1894C409AB240BD8BEAE78896",
       "resourceData": {
         "@odata.type": "#microsoft.graph.call",
-        "@odata.id": "/app/calls/57DAB8B1894C409AB240BD8BEAE78896",
+        "@odata.id": "/communications/calls/57DAB8B1894C409AB240BD8BEAE78896",
         "@odata.etag": "W/\"5445\"",
         "state": "establishing"
       }
@@ -254,10 +256,10 @@ Content-Type: application/json
   "value": [
     {
       "changeType": "updated",
-      "resource": "/app/calls/57DAB8B1894C409AB240BD8BEAE78896",
+      "resourceUrl": "/communications/calls/57DAB8B1894C409AB240BD8BEAE78896",
       "resourceData": {
         "@odata.type": "#microsoft.graph.call",
-        "@odata.id": "/app/calls/57DAB8B1894C409AB240BD8BEAE78896",
+        "@odata.id": "/communications/calls/57DAB8B1894C409AB240BD8BEAE78896",
         "@odata.etag": "W/\"5445\"",
         "state": "established"
       }
@@ -285,10 +287,10 @@ Content-Type: application/json
   "value": [
     {
       "changeType": "created",
-      "resource": "/app/calls/57DAB8B1894C409AB240BD8BEAE78896",
+      "resourceUrl": "/communications/calls/57DAB8B1894C409AB240BD8BEAE78896",
       "resourceData": {
         "@odata.type": "#microsoft.graph.call",
-        "@odata.id": "/app/calls/57DAB8B1894C409AB240BD8BEAE78896",
+        "@odata.id": "/communications/calls/57DAB8B1894C409AB240BD8BEAE78896",
         "@odata.etag": "W/\"5445\"",
         "state": "incoming",
         "direction": "incoming",
@@ -326,7 +328,7 @@ Content-Type: application/json
 ##### Request
 
 ```http
-POST /app/calls/57DAB8B1894C409AB240BD8BEAE78896/answer
+POST /communications/calls/57DAB8B1894C409AB240BD8BEAE78896/answer
 Authorization: Bearer <TOKEN>
 Content-Type: application/json
 ```
@@ -369,10 +371,10 @@ Content-Type: application/json
   "value": [
     {
       "changeType": "updated",
-      "resource": "/app/calls/57DAB8B1894C409AB240BD8BEAE78896",
+      "resourceUrl": "/communications/calls/57DAB8B1894C409AB240BD8BEAE78896",
       "resourceData": {
         "@odata.type": "#microsoft.graph.call",
-        "@odata.id": "/app/calls/57DAB8B1894C409AB240BD8BEAE78896",
+        "@odata.id": "/communications/calls/57DAB8B1894C409AB240BD8BEAE78896",
         "@odata.etag": "W/\"5445\"",
         "state": "establishing"
       }
@@ -398,10 +400,10 @@ Content-Type: application/json
   "value": [
     {
       "changeType": "updated",
-      "resource": "/app/calls/57DAB8B1894C409AB240BD8BEAE78896",
+      "resourceUrl": "/communications/calls/57DAB8B1894C409AB240BD8BEAE78896",
       "resourceData": {
         "@odata.type": "#microsoft.graph.call",
-        "@odata.id": "/app/calls/57DAB8B1894C409AB240BD8BEAE78896",
+        "@odata.id": "/communications/calls/57DAB8B1894C409AB240BD8BEAE78896",
         "@odata.etag": "W/\"5445\"",
         "state": "established"
       }

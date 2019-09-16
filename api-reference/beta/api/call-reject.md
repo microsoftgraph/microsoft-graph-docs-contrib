@@ -30,7 +30,9 @@ One of the following permissions is required to call this API. To learn more, in
 <!-- { "blockType": "ignored" } -->
 ```http
 POST /app/calls/{id}/reject
+POST /communications/calls/{id}/reject
 ```
+> **Note:** API starting with /app will be deprecated and be replaced with API starting with /communications.
 
 ## Request headers
 | Name          | Description               |
@@ -60,7 +62,7 @@ The following example shows the request.
   "name": "call-reject"
 }-->
 ```http
-POST https://graph.microsoft.com/beta/app/calls/57dab8b1-894c-409a-b240-bd8beae78896/reject
+POST https://graph.microsoft.com/beta/communications/calls/57dab8b1-894c-409a-b240-bd8beae78896/reject
 Content-Type: application/json
 Content-Length: 24
 
@@ -116,10 +118,10 @@ Content-Type: application/json
     {
       "@odata.type": "#microsoft.graph.commsNotification",
       "changeType": "created",
-      "resource": "/app/calls/57dab8b1-894c-409a-b240-bd8beae78896",
+      "resourceUrl": "/communications/calls/57dab8b1-894c-409a-b240-bd8beae78896",
       "resourceData": {
         "@odata.type": "#microsoft.graph.call",
-        "@odata.id": "/app/calls/57dab8b1-894c-409a-b240-bd8beae78896",
+        "@odata.id": "/communications/calls/57dab8b1-894c-409a-b240-bd8beae78896",
         "state": "incoming",
         "direction": "incoming",
         "source": {
@@ -161,7 +163,7 @@ The following example shows the request.
   "name": "call-reject"
 }-->
 ```http
-POST https://graph.microsoft.com/beta/app/calls/57dab8b1-894c-409a-b240-bd8beae78896/reject
+POST https://graph.microsoft.com/beta/communications/calls/57dab8b1-894c-409a-b240-bd8beae78896/reject
 Content-Type: application/json
 Content-Length: 24
 
@@ -208,10 +210,10 @@ Content-Type: application/json
     {
       "@odata.type": "#microsoft.graph.commsNotification",
       "changeType": "deleted",
-      "resource": "/app/calls/57dab8b1-894c-409a-b240-bd8beae78896",
+      "resourceUrl": "/communications/calls/57dab8b1-894c-409a-b240-bd8beae78896",
       "resourceData": {
         "@odata.type": "#microsoft.graph.call",
-        "@odata.id": "/app/calls/57dab8b1-894c-409a-b240-bd8beae78896"
+        "@odata.id": "/communications/calls/57dab8b1-894c-409a-b240-bd8beae78896"
       }
     }
   ]

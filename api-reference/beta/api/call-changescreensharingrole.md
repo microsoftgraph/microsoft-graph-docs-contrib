@@ -26,7 +26,9 @@ One of the following permissions is required to call this API. To learn more, in
 <!-- { "blockType": "ignored" } -->
 ```http
 POST /app/calls/{id}/changeScreenSharingRole
+POST /communications/calls/{id}/changeScreenSharingRole
 ```
+> **Note:** API starting with /app will be deprecated and be replaced with API starting with /communications.
 
 ## Request headers
 | Name          | Description               |
@@ -56,7 +58,7 @@ The following example shows the request.
   "name": "call-changeScreenSharingRole"
 }-->
 ```http
-POST https://graph.microsoft.com/beta/app/calls/{id}/changeScreenSharingRole
+POST https://graph.microsoft.com/beta/communications/calls/{id}/changeScreenSharingRole
 Content-Type: application/json
 Content-Length: 24
 
@@ -89,6 +91,57 @@ Here is an example of the response.
 } -->
 ```http
 HTTP/1.1 202 Accepted
+```
+##### Notification - roster updated with participant sending screen sharing video
+Note the `"direction": "sendOnly"` property on the media stream.
+
+```http
+POST https://bot.contoso.com/api/calls
+Authorization: Bearer <TOKEN>
+Content-Type: application/json
+```
+
+<!-- {
+  "blockType": "example",
+  "@odata.type": "microsoft.graph.commsNotifications"
+}-->
+```json
+{
+  "@odata.type": "#microsoft.graph.commsNotifications",
+  "value": [
+    {
+      "@odata.type": "#microsoft.graph.commsNotification",
+      "changeType": "updated",
+      "resourceUrl": "/communications/calls/57dab8b1-894c-409a-b240-bd8beae78896/participants",
+      "resourceData": [
+        {
+          "@odata.type": "#microsoft.graph.participant",
+          "id": "2765eb15-01f8-47c6-b12b-c32111a4a86f",
+          "info": {
+            "identity": {
+              "user": {
+                "displayName": "Bob",
+                "id": "5810cede-f3cc-42eb-b2c1-e9bd5d53ec96"
+              }
+            },
+            "region": "westus",
+            "languageId": "en-US"
+          },
+          "mediaStreams": [
+            {
+              "mediaType": "videoBasedScreenSharing",
+              "label": "applicationsharing-video",
+              "sourceId": "1",
+              "direction": "sendOnly"
+            }
+          ],
+          "isMuted": false,
+          "isInLobby": false
+        }
+      ]
+    }
+  ]
+}
 ```
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
