@@ -19,6 +19,16 @@ For details about known issues with Microsoft Graph APIs, see [Known issues](kno
 |:----------------|:------------|:-----------------------------------------|
 | Addition        | Beta        | The **dateFormat** and **timeFormat** properties to the [mailboxSettings](/graph/api/resources/mailboxsettings?view=graph-rest-beta) resource. The properties represent the user's preferred date and time formats.|
 
+### Calls and onlineMeetings
+| **Change type** | **Version** | **Description**                  |
+|:----------------|:------------|:-----------------------------------------|
+| Addition        | Beta        | Adding /communications/* APIs for all calls and onlineMeetings. API starting with /app will be deprecated and be replaced with API starting with /communications.|
+| Deletion        | Beta        | Removing properties **createdDateTime** and **lastActionDateTime** from [commsOperation](/graph/.api/resource/commsOperation?view=graph-rest-beta) resource.|
+| Deletion        | Beta        | Removing property **meetingType** from [onlineMeeting](/graph/api/resources/onlineMeeting?view=graph-rest-beta) resource. |
+| Addition        | Beta        | Adding property **isBroadcast** to [onlineMeeting](/graph/api/resources/onlineMeeting?view=graph-rest-beta) resource. |
+| Renaming        | Beta        | Renaming property **resource** to **resourceUrl** from [commsNotification](/graph/api/resources/commsNotification?view=graph-rest-beta) resource. |
+| Update          | Beta        | Changing type of properties **code** and **subCode** from String to Int32 in [resultInfo](/graph/api/resources/resultInfo?view=graph-rest-beta) resource. |
+| Renaming        | Beta        | Renaming property **subCode** to **subcode** from [resultInfo](/graph/api/resources/resultInfo?view=graph-rest-beta) resource. | 
 
 ## August 2019
 
