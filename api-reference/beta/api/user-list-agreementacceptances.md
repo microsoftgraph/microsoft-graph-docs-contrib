@@ -4,6 +4,7 @@ description: "Retrieve a list of a user's agreementAcceptance objects."
 localization_priority: Normal
 author: "dkershaw10"
 ms.prod: "microsoft-identity-platform"
+doc_type: apiPageType
 ---
 
 # List agreementAcceptances
@@ -47,14 +48,14 @@ If successful, this method returns a `200 OK` response code and a collection of 
   "blockType": "request",
   "name": "get_agreementacceptances"
 }-->
-```http
+```msgraph-interactive
 GET https://graph.microsoft.com/beta/me/agreementAcceptances
 ```
 # [C#](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/get-agreementacceptances-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# [Javascript](#tab/javascript)
+# [JavaScript](#tab/javascript)
 [!INCLUDE [sample-code](../includes/snippets/javascript/get-agreementacceptances-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 

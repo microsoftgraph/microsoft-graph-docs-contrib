@@ -11,7 +11,6 @@ const options = {
 const client = Client.init(options);
 
 const outlookTask = {
-  assignedTo: "Dana Swope",
   subject: "Shop for children's weekend",
   startDateTime: {
       dateTime: "2016-05-03T09:00:00",
@@ -25,6 +24,6 @@ const outlookTask = {
 
 let res = await client.api('/me/outlook/tasks')
 	.version('beta')
-	.post({outlookTask : outlookTask});
+	.post(outlookTask);
 
 ```

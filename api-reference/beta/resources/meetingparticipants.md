@@ -4,6 +4,7 @@ description: "Participants in a meeting."
 author: "VinodRavichandran"
 localization_priority: Normal
 ms.prod: "microsoft-teams"
+doc_type: resourcePageType
 ---
 
 # meetingParticipants resource type
@@ -18,6 +19,8 @@ Participants in a meeting.
 |:---------------|:--------|:----------|
 | attendees | [meetingParticipantInfo](meetingparticipantinfo.md) collection |  |
 | organizer | [meetingParticipantInfo](meetingparticipantinfo.md) |  |
+| producers | [meetingParticipantInfo](meetingparticipantinfo.md) collection | For broadcast meeting only. |
+| contributors | [meetingParticipantInfo](meetingparticipantinfo.md) collection | For broadcast meeting only. |
 
 ## JSON representation
 
@@ -33,7 +36,9 @@ The following is a JSON representation of the resource.
 ```json
 {
   "attendees": [{"@odata.type": "#microsoft.graph.meetingParticipantInfo"}],
-  "organizer": {"@odata.type": "#microsoft.graph.meetingParticipantInfo"}
+  "organizer": {"@odata.type": "#microsoft.graph.meetingParticipantInfo"},
+  "producers": [{"@odata.type": "#microsoft.graph.meetingParticipantInfo"}],
+  "contributors": [{"@odata.type": "#microsoft.graph.meetingParticipantInfo"}],
 }
 ```
 

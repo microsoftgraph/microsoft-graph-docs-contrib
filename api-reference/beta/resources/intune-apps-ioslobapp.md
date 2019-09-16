@@ -4,6 +4,7 @@ description: "Contains properties and inherited properties for iOS Line Of Busin
 author: "rolyon"
 localization_priority: Normal
 ms.prod: "Intune"
+doc_type: resourcePageType
 ---
 
 # iosLobApp resource type
@@ -127,8 +128,6 @@ Here is a JSON representation of the resource.
   "identityVersion": "String"
 }
 ```
-
-
 
 
 

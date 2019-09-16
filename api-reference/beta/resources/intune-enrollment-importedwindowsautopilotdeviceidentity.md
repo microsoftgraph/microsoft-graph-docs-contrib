@@ -4,6 +4,7 @@ description: "Imported windows autopilot devices."
 author: "rolyon"
 localization_priority: Normal
 ms.prod: "Intune"
+doc_type: resourcePageType
 ---
 
 # importedWindowsAutopilotDeviceIdentity resource type
@@ -68,8 +69,6 @@ Here is a JSON representation of the resource.
   "assignedUserPrincipalName": "String"
 }
 ```
-
-
 
 
 

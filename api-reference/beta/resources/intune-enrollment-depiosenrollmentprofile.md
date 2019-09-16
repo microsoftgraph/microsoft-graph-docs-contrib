@@ -4,6 +4,7 @@ description: "The DepIOSEnrollmentProfile resource represents an Apple Device En
 author: "rolyon"
 localization_priority: Normal
 ms.prod: "Intune"
+doc_type: resourcePageType
 ---
 
 # depIOSEnrollmentProfile resource type
@@ -134,8 +135,6 @@ Here is a JSON representation of the resource.
   "watchMigrationScreenDisabled": true
 }
 ```
-
-
 
 
 

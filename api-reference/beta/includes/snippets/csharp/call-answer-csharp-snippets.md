@@ -10,12 +10,16 @@ var callbackUri = "callbackUri-value";
 
 var mediaConfig = new MediaConfig
 {
+	AdditionalData = new Dictionary<string, object>()
+	{
+		{"@odata.type","#microsoft.graph.appHostedMediaConfig"}
+	},
 	Blob = "<media config blob>"
 };
 
-var acceptedModalities = new List<String>()
+var acceptedModalities = new List<Modality>()
 {
-	"audio"
+	Modality.Audio
 };
 
 await graphClient.App.Calls["{id}"]

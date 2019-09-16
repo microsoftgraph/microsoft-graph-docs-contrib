@@ -4,6 +4,7 @@ description: "iOS Derived Credential profile."
 author: "rolyon"
 localization_priority: Normal
 ms.prod: "Intune"
+doc_type: resourcePageType
 ---
 
 # iosDerivedCredentialAuthenticationConfiguration resource type
@@ -97,8 +98,6 @@ Here is a JSON representation of the resource.
   "version": 1024
 }
 ```
-
-
 
 
 

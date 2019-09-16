@@ -4,6 +4,7 @@ description: "Update multiple threat intelligence (TI) indicators in one request
 localization_priority: Normal
 author: "preetikr"
 ms.prod: "security"
+doc_type: apiPageType
 ---
 
 # tiIndicator: updateTiIndicators
@@ -46,7 +47,7 @@ In the request body, provide a JSON object with the following parameters. For de
 
 ## Response
 
-If successful, this method returns a `200 OK` response code and a collection of [tiIndicator](../resources/tiindicator.md) objects in the response body.
+If successful, this method returns a `200 OK` response code and a collection of [tiIndicator](../resources/tiindicator.md) objects in the response body.  If there is an error, this method returns a `206 Partial Content` response code.  See [Errors](../resources/security-error-codes.md#threat-indicator-bulk-action-errors) for more information.
 
 ## Examples
 
@@ -84,7 +85,7 @@ Content-type: application/json
 [!INCLUDE [sample-code](../includes/snippets/csharp/tiindicator-updatetiindicators-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# [Javascript](#tab/javascript)
+# [JavaScript](#tab/javascript)
 [!INCLUDE [sample-code](../includes/snippets/javascript/tiindicator-updatetiindicators-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 

@@ -4,6 +4,7 @@ description: "Retrieve the list of chats for a user."
 author: "nkramer"
 localization_priority: Normal
 ms.prod: "microsoft-teams"
+doc_type: apiPageType
 ---
 
 # List chats
@@ -18,9 +19,9 @@ One of the following permissions is required to call this API. To learn more, in
 
 |Permission type      | Permissions (from least to most privileged)              |
 |:--------------------|:---------------------------------------------------------|
-|Delegated (work or school account) | Chat.Read   |
+|Delegated (work or school account) | Chat.Read, Chat.ReadWrite    |
 |Delegated (personal Microsoft account) | Not supported.    |
-|Application | Not supported.   |
+|Application | Not supported.   | Chat.Read.All, Chat.ReadWrite.All   |
 
 ## HTTP request
 
@@ -60,14 +61,14 @@ Here is an example of the request.
   "blockType": "request",
   "name": "get_chats"
 }-->
-```http
+```msgraph-interactive
 GET https://graph.microsoft.com/beta/users/{id}/chats
 ```
 # [C#](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/get-chats-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# [Javascript](#tab/javascript)
+# [JavaScript](#tab/javascript)
 [!INCLUDE [sample-code](../includes/snippets/javascript/get-chats-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 

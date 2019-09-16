@@ -13,15 +13,15 @@ NSMutableURLRequest *urlRequest = [NSMutableURLRequest requestWithURL:[NSURL URL
 
 MSGraphBookingAppointment *bookingAppointment = [[MSGraphBookingAppointment alloc] init];
 MSGraphDateTimeTimeZone *end = [[MSGraphDateTimeTimeZone alloc] init];
-[end setDateTime: "2018-05-06T15:30:00+03:00"];
+[end setDateTime: "2018-05-06T12:30:00+00:00"];
 [end setTimeZone:@"UTC"];
 [bookingAppointment setEnd:end];
 MSGraphDateTimeTimeZone *invoiceDate = [[MSGraphDateTimeTimeZone alloc] init];
-[invoiceDate setDateTime: "2018-05-06T15:30:00+03:00"];
+[invoiceDate setDateTime: "2018-05-06T12:30:00+00:00"];
 [invoiceDate setTimeZone:@"UTC"];
 [bookingAppointment setInvoiceDate:invoiceDate];
 MSGraphDateTimeTimeZone *start = [[MSGraphDateTimeTimeZone alloc] init];
-[start setDateTime: "2018-05-06T15:00:00+03:00"];
+[start setDateTime: "2018-05-06T12:00:00+00:00"];
 [start setTimeZone:@"UTC"];
 [bookingAppointment setStart:start];
 

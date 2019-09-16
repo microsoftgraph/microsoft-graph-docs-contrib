@@ -4,6 +4,7 @@ description: "Contains properties used to assign an iOS Store mobile app to a gr
 author: "rolyon"
 localization_priority: Normal
 ms.prod: "Intune"
+doc_type: resourcePageType
 ---
 
 # iosStoreAppAssignmentSettings resource type
@@ -21,6 +22,7 @@ Inherits from [mobileAppAssignmentSettings](../resources/intune-apps-mobileappas
 |Property|Type|Description|
 |:---|:---|:---|
 |vpnConfigurationId|String|The VPN Configuration Id to apply for this app.|
+|uninstallOnDeviceRemoval|Boolean|Whether or not to uninstall the app when device is removed from Intune.|
 
 ## Relationships
 None
@@ -35,11 +37,10 @@ Here is a JSON representation of the resource.
 ``` json
 {
   "@odata.type": "#microsoft.graph.iosStoreAppAssignmentSettings",
-  "vpnConfigurationId": "String"
+  "vpnConfigurationId": "String",
+  "uninstallOnDeviceRemoval": true
 }
 ```
-
-
 
 
 

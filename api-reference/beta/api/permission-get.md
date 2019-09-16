@@ -1,9 +1,11 @@
 ---
 author: JeremyKelley
-ms.author: JeremyKelley
+description: "Return the effective sharing permission for a particular permission resource."
 ms.date: 09/10/2017
 title: Get permissions
 localization_priority: Normal
+doc_type: apiPageType
+ms.prod: ""
 ---
 # Get sharing permission for a file or folder
 
@@ -58,14 +60,14 @@ Here is an example of the request to access a permission on a folder.
 # [HTTP](#tab/http)
 <!-- { "blockType": "request", "name": "get-item-permission", "scopes": "files.read" } -->
 
-```http
+```msgraph-interactive
 GET https://graph.microsoft.com/beta/me/drive/items/{item-id}/permissions/{perm-id}
 ```
 # [C#](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/get-item-permission-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# [Javascript](#tab/javascript)
+# [JavaScript](#tab/javascript)
 [!INCLUDE [sample-code](../includes/snippets/javascript/get-item-permission-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
