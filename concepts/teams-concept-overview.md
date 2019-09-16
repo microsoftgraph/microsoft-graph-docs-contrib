@@ -4,6 +4,7 @@ description: "Microsoft Teams is the ultimate hub for teamwork and intelligent c
 author: "nkramer"
 localization_priority: Priority
 ms.prod: "microsoft-teams"
+scenarios: "getting-started"
 ---
 
 # Microsoft Teams API overview
