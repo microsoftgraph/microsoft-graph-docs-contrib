@@ -9512,12 +9512,12 @@
           href: api/channel-post-messages.md
         - name: Reply to message
           href: api/channel-post-messagereply.md
+        - name: Add a member to a channel
+          href: api/conversationmember-add.md
+        - name: Remove a member from a channel
+          href: api/conversationmember-delete.md
         - name: Update the role of a member in channel
           href: api/conversationmember-update.md
-        - name: Remove a member from a chat
-          href: api/conversationmember-delete.md
-        - name: Add a member to a chat
-          href: api/conversationmember-add.md
       - name: Chat
         href: resources/chat.md
         items:
