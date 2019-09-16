@@ -70,7 +70,7 @@ Here is an example of the request.
   "name": "calendargroup_get_calendars"
 }-->
 
-```http
+```msgraph-interactive
 GET https://graph.microsoft.com/v1.0/me/calendarGroups/{id}/calendars
 ```
 # [C#](#tab/csharp)

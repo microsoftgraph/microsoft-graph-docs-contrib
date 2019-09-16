@@ -65,7 +65,7 @@ Here is an example of the request to the root folder of the user's OneDrive.
 # [HTTP](#tab/http)
 <!-- { "blockType": "request", "name": "get-drive-root", "tags": "service.graph" }-->
 
-```http
+```msgraph-interactive
 GET /me/drive/root
 ```
 # [C#](#tab/csharp)

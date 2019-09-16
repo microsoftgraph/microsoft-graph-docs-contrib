@@ -26,7 +26,6 @@ One of the following permissions is required to call this API. To learn more, in
 <!-- { "blockType": "ignored" } -->
 ```http
 GET /app/calls/{id}/participants/{id}
-GET /applications/{id}/calls/{id}/participants/{id}
 ```
 
 ## Optional query parameters
@@ -53,7 +52,7 @@ The following example shows the request.
   "blockType": "request",
   "name": "get-participant"
 }-->
-```http
+```msgraph-interactive
 GET https://graph.microsoft.com/beta/app/calls/{id}/participants/{id}
 ```
 # [C#](#tab/csharp)

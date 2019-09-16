@@ -37,6 +37,10 @@ For known issues using delta query, see the [delta query section](#delta-query) 
 
 The [user: revokeSignInSessions API](/graph/api/user-revokesigninsessions?view=graph-rest-1.0) should return a `204 No content` response for successful revocations, and an HTTP error code (4xx or 5xx) if anything goes wrong with the request.  However, due to a service issue, this API returns a `200 OK` and a Boolean parameter that is always true.  Until this is fixed, developers are simply advised to treat any 2xx return code as success for this API.
 
+### Incomplete objects when using getByIds request
+
+Requesting objects using [Get directory objects from a list of IDs](/graph/api/directoryobject-getbyids?view=graph-rest-1.0) should return full objects. However, currently [user](/graph/api/resources/user?view=graph-rest-1.0) objects on the v1.0 endpoint are returned with a limited set of properties. As a temporary workaround, when you use the operation in combination with the `$select` query option, more complete [user](/graph/api/resources/user?view=graph-rest-1.0) objects will be returned. This behavior is not in accordance with the OData specifications. Because this behavior might be updated in the future, use this workaround only when you provide `$select=` with all the properties you are interested in, and only if future breaking changes to this workaround are acceptable.
+
 ## Microsoft Teams
 
 ### GET /teams and POST /teams are not supported
@@ -121,7 +125,7 @@ GET https://graph.microsoft.com/beta/bookingBusinesses?query=Fabrikam
 When attempting to access events in a calendar that has been shared by another user using the following operation:
 
 ```http
-GET \users('{id}')\calendars('{id}')\events
+GET /users/{id}/calendars/{id}/events
 ```
 
 You may get HTTP 500 with the error code `ErrorInternalServerTransientError`. The error occurs because:
@@ -146,7 +150,7 @@ A calendar shared with you in the new approach appears as just another calendar 
 events in the shared calendar, as if it's your own calendar. As an example:
 
 ```http
-GET \me\calendars('{id}')\events
+GET /me/calendars/{id}/events
 ```
 
 ### Adding and accessing ICS-based calendars in user's mailbox

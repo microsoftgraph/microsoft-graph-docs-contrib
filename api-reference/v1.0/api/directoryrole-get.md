@@ -48,7 +48,7 @@ If successful, this method returns a `200 OK` response code and [directoryRole](
   "blockType": "request",
   "name": "get_directoryrole"
 }-->
-```http
+```msgraph-interactive
 GET https://graph.microsoft.com/v1.0/directoryRoles/{id}
 ```
 # [C#](#tab/csharp)

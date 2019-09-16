@@ -50,7 +50,7 @@ Here is an example of the request.
   "blockType": "request",
   "name": "get_chartaxistitle"
 }-->
-```http
+```msgraph-interactive
 GET https://graph.microsoft.com/v1.0/me/drive/items/{id}/workbook/worksheets/{id|name}/charts/{name}/axes/valueAxis/title
 ```
 # [C#](#tab/csharp)

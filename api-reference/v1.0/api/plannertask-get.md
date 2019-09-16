@@ -48,7 +48,7 @@ Here is an example of the request.
   "blockType": "request",
   "name": "get_plannertask"
 }-->
-```http
+```msgraph-interactive
 GET https://graph.microsoft.com/v1.0/planner/tasks/{task-id}
 ```
 # [C#](#tab/csharp)

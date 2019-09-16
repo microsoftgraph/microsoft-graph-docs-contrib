@@ -39,7 +39,7 @@ Represents the synchronization status of a school data [synchronization profile]
 
 ```json
 {
-    "@odata.context": "https://graph.microsoft.com/beta/$metadata#education/synchronizationProfiles('{id}')/profileStatus/$entity",
+    "@odata.context": "https://graph.microsoft.com/beta/$metadata#education/synchronizationProfiles/{id}/profileStatus/$entity",
     "status": {"@odata.type":"microsoft.graph.educationSynchronizationStatus"},
     "lastSynchronizationDateTime": "DateTimeOffset"
 }

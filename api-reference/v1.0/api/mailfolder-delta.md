@@ -83,7 +83,7 @@ returning **mailFolder** rather than **message** collections.
   "blockType": "request",
   "name": "mailfolder_delta"
 }-->
-```http
+```msgraph-interactive
 GET https://graph.microsoft.com/v1.0/me/mailFolders/delta
 
 Prefer: odata.maxpagesize=2
