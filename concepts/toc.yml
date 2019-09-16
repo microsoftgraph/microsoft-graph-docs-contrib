@@ -80,7 +80,7 @@ items:
             href: outlook-schedule-recurring-events.md
           - name: Get shared events
             href: outlook-get-shared-events-calendars.md
-          - name: Immutable ID (preview)
+          - name: Immutable ID
             href: outlook-immutable-id.md
       - name: Cross-device experiences
         displayName: Project Rome
@@ -146,7 +146,7 @@ items:
             href: outlook-send-mail-from-other-user.md
           - name: Organize messages
             href: outlook-organize-messages.md
-          - name: Immutable ID (preview)
+          - name: Immutable ID
             href: outlook-immutable-id.md
       - name: Notes
         displayName: OneNote
@@ -190,7 +190,7 @@ items:
             items:
               - name: Overview
                 href: notifications-integration-e2e-overview.md
-              - name: App registraion
+              - name: App registration
                 href: notifications-integration-app-registration.md
               - name: Cross-device onboarding
                 href: notifications-integration-cross-device-experiences-onboarding.md
@@ -209,7 +209,7 @@ items:
             href: outlook-contacts-concept-overview.md
           - name: Get shared contacts
             href: outlook-get-shared-contacts-folders.md
-          - name: Immutable ID (preview)
+          - name: Immutable ID
             href: outlook-immutable-id.md
       - name: Reports
         href: reportroot-concept-overview.md
