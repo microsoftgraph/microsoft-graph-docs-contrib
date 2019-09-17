@@ -29,6 +29,7 @@ None
 |names|[workbookNamedItem](workbooknameditem.md) collection |Represents a collection of workbook scoped named items (named ranges and constants). Read-only.|
 |tables|[workbookTable](workbooktable.md) collection |Represents a collection of tables associated with the workbook. Read-only.|
 |worksheets|[workbookWorksheet](workbookworksheet.md) collection |Represents a collection of worksheets associated with the workbook. Read-only.|
+|workbbookApplication|[workbookApplication](workbookapplication.md) |Represents the Excel workbookApplication that manages the workbook.|
 
 ## Functions
 
