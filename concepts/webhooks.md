@@ -226,9 +226,9 @@ Note the `value` field is an array of objects. When there are many queued notifi
 
 Each notification received by your app should be processed. The following are the minimum tasks that your app must perform to process a notification:
 
-1. Send a `202 - Accepted` status code in your response to Microsoft Graph. If Microsoft Graph doesn't receive a 2xx class code, it will try to publishing the notification a number of times, for a period of about 4 hours; after that the notification will be dropped and won't be delivered.
+1. Send a `202 - Accepted` status code in your response to Microsoft Graph. If Microsoft Graph doesn't receive a 2xx class code, it will try to publishing the notification a number of times, for a period of about 4 hours; after that, the notification will be dropped and won't be delivered.
 
-    > **Note:** You should send a `202 - Accepted` status code as soon as you receive the notification, even before validating its authenticity. You are simply acknowledging the receipt of the notification and preventing unnecessary retries. The current timeout is 30 seconds, but it could be reduced in the future to optimize service performance.
+    > **Note:** Send a `202 - Accepted` status code as soon as you receive the notification, even before validating its authenticity. You are simply acknowledging the receipt of the notification and preventing unnecessary retries. The current timeout is 30 seconds, but it might be reduced in the future to optimize service performance.
 
 1. Validate the `clientState` property. It must match the value originally submitted with the subscription creation request.
 
