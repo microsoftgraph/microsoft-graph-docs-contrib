@@ -232,7 +232,7 @@ Each notification received by your app should be processed. The following are th
 
 1. Update your application based on your business logic.
 
-1. Send a `202 - Accepted` status code in your response to Microsoft Graph. If Microsoft Graph doesn't receive a 2xx class code, it will retry the notification a number of times.
+1. Send a `202 - Accepted` status code in your response to Microsoft Graph. If Microsoft Graph doesn't receive a 2xx class code, it will try to publishing the notification a number of times, for a period of about 4 hours; after that the notification will be dropped and won't be delivered.
 
     > **Note:** You should send a `202 - Accepted` status code even if the `clientState` property doesn't match the one submitted with the subscription request. This is a good practice as it prevents a potential rogue actor from discovering the fact that you may not trust their notifications, and perhaps using that information to guess the value of the `clientState` property.
 
