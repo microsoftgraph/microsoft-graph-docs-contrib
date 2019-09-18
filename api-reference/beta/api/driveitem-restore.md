@@ -112,5 +112,5 @@ This functionality is currently only available for OneDrive Personal.
   "description": "Restore a DriveItem.",
   "keywords": "retore,item,driveitem",
   "section": "documentation",
-  "tocPath": ""
+  "tocPath": "Items/Restore"
 }-->

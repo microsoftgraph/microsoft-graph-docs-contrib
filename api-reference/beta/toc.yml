@@ -7527,6 +7527,8 @@
           href: api/driveitem-update.md
         - name: Delete item
           href: api/driveitem-delete.md
+        - name: Restore item
+          href: api/driveitem-restore.md
         - name: Move item
           href: api/driveitem-move.md
         - name: Copy item
