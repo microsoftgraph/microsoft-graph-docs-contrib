@@ -1,6 +1,6 @@
 ---
 title: "labelDetails resource type"
-description: "Describes the label details of an information protection label."
+description: "Represents the label details of an information protection label."
 localization_priority: Normal
 author: "tommoser"
 ms.prod: "microsoft.informationprotection"
@@ -11,7 +11,7 @@ doc_type: "resourcePageType"
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-labelDetails provides information on a single information protection label. May be returned as part of applyLabel, applyLabelFromClassification, or extractLabel.
+**labelDetails** provides information on a single information protection label. May be returned [evaluateRemoval](../api/informationprotectionlabel-evaluateRemoval.md), [evaluateApplication](../api/informationprotectionlabel-evaluateApplication.md), and [extractLabel](../api/informationprotectionlabel-extractLabel.md)
 
 ## Properties
 

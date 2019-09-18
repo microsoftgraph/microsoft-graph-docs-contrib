@@ -1,6 +1,6 @@
 ---
 title: "metadataAction resource type"
-description: "Describes the metadataAction that contains the metadata to be written or removed from a file."
+description: "Represents the metadata to be written or removed from a file."
 localization_priority: Normal
 author: "tommoser"
 ms.prod: "microsoft.informationprotection"
@@ -11,7 +11,7 @@ doc_type: "resourcePageType"
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-`metadataAction` may be returned by the [evaluateRemoval](../api/informationprotection-evaluateRemoval.md), [evaluateApplication](../api/informationprotection-evaluateApplication.md), and [evaluateClassificationResults](../api/informationprotection-evaluateClassificationResults.md) APIs. The action informs the consuming application of the specific key/value pairs that should be added to the file or the specific metadata keys that should be removed from the file. This metadata is what describes the file or information as being *labeled*.
+**metadataAction** may be returned by the [evaluateRemoval](../api/informationprotection-evaluateRemoval.md), [evaluateApplication](../api/informationprotection-evaluateApplication.md), and [evaluateClassificationResults](../api/informationprotection-evaluateClassificationResults.md) APIs. The action informs the consuming application of the specific key/value pairs that should be added to the file or the specific metadata keys that should be removed from the file. This metadata is what describes the file or information as being *labeled*.
 
 ## Properties
 

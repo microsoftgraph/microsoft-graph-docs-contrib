@@ -11,11 +11,9 @@ doc_type: "apiPageType"
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-To evaluate based on classification results, provide [contentInfo](../resources/labelingOptions.md), which includes existing content metadata [key/value pairs](../resources/keyvaluepair.md), and [classification results](../resources/classificationResult.md). The API returns an [informationProtectionAction](../resources/informationProtectionAction.md) that contains one of more of the following: 
-
 Compute the [information protection label](../resources/informationProtectionLabel.md) that should be applied and return the set of actions that must be taken to correctly label the information. This API is useful when a label should be set manually or explicitly by a user or service, rather than automatically based on file contents. 
 
-Given [contentInfo](../resources/labelingOptions.md), which includes existing content metadata [key/value pairs](../resources/keyvaluepair.md), and [labelingOptions](../resources/labelingOptions.md) as an input, the API returns an [informationProtectionAction](../resources/informationProtectionAction.md) that contains one of more of the following: 
+Given [contentInfo](../resources/contentInfo.md), which includes existing content metadata [key/value pairs](../resources/keyvaluepair.md), and [labelingOptions](../resources/labelingOptions.md) as an input, the API returns an [informationProtectionAction](../resources/informationProtectionAction.md) that contains one of more of the following: 
 
 * [addContentFooterAction](../resources/addContentFooterAction.md)
 * [addContentHeaderAction](../resources/addContentHeaderAction.md)
@@ -53,18 +51,18 @@ POST /informationprotection/core/labels/{id}/evaluateApplication
 
 ## Request headers
 
-| Name          | Description   |
-|:--------------|:--------------|
+| Name          | Description    |
+| :------------ | :------------- |
 | Authorization | Bearer {token} |
 
 ## Request body
 
 In the request body, provide a JSON object with the following parameters.
 
-| Parameter       | Type                                               | Description |
-| :-------------- | :------------------------------------------------- | :---------- |
-| contentInfo     | [contentInfo](../resources/contentInfo.md)         | Provides details on the [content format](../resources/enums.md#contentFormat), [content state](../resources/enums.md#contentState), and existing [metadata](../resources/keyvaluepair.md) as key/value pairs.           |
-| labelingOptions | [labelingOptions](../resources/labelingoptions.md) | Provides details about the desired state of the content.|
+| Parameter       | Type                                               | Description                                                                                                                                                                                                   |
+| :-------------- | :------------------------------------------------- | :------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ |
+| contentInfo     | [contentInfo](../resources/contentInfo.md)         | Provides details on the [content format](../resources/enums.md#contentFormat), [content state](../resources/enums.md#contentState), and existing [metadata](../resources/keyvaluepair.md) as key/value pairs. |
+| labelingOptions | [labelingOptions](../resources/labelingoptions.md) | Provides details about the desired state of the content.                                                                                                                                                      |
 
 ## Response
 

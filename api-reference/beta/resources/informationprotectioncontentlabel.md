@@ -1,9 +1,9 @@
 ---
 title: "informationProtectionContentLabel resource type"
-description: "PROVIDE DESCRIPTION HERE"
+description: "Describes the informationProtectionContentLabel object that defines MIP metadata on an object."
 localization_priority: Normal
-author: ""
-ms.prod: ""
+author: "tommoser"
+ms.prod: "microsoft.informationprotection"
 doc_type: "resourcePageType"
 ---
 
@@ -11,7 +11,7 @@ doc_type: "resourcePageType"
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-PROVIDE DESCRIPTION HERE
+**informationProtectionContentLabel** is returned by the [extractLabel](../api/informationprotectionlabel-extractLabel.md) API resolve to the label that is currently applied to a file. 
 
 ## Properties
 
@@ -19,7 +19,7 @@ PROVIDE DESCRIPTION HERE
 |:-------------|:------------|:------------|
 |assignmentMethod|String| Possible values are: `standard`, `privileged`, `auto`.|
 |creationDateTime|DateTimeOffset|The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 would look like this: `'2014-01-01T00:00:00Z'`|
-|label|[labelDetails](labeldetails.md)||
+|label|[labelDetails](labeldetails.md)| Details on the label that is currently applied to the file. |
 
 ## JSON representation
 

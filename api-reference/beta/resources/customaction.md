@@ -1,6 +1,6 @@
 ---
 title: "customAction resource type"
-description: "Describes custom actions that a label may provide, if configured by the administrator."
+description: "Represents any custom actions that a label may provide, if configured by the administrator."
 localization_priority: Normal
 author: "tommoser"
 ms.prod: "microsoft.informationprotection"

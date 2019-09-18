@@ -2,8 +2,8 @@
 title: "informationProtectionCore resource type"
 description: "PROVIDE DESCRIPTION HERE"
 localization_priority: Normal
-author: ""
-ms.prod: ""
+author: "tommoser"
+ms.prod: "microsoft.informationprotection"
 doc_type: "resourcePageType"
 ---
 

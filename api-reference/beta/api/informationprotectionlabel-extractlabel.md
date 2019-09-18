@@ -20,11 +20,11 @@ Using the metadata that exists on an already-labeled piece of information, resol
 
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
 
-| Permission type                        | Permissions (from least to most privileged)         |
-|:---------------------------------------|:----------------------------------------------------|
-| Delegated (work or school account)     | InformationProtectionPolicy.Read                    |
-| Delegated (personal Microsoft account) | Not supported.                                      |
-| Application                            | InformationProtectionPolicy.Read.All|Not supported. |
+| Permission type                        | Permissions (from least to most privileged) |
+| :------------------------------------- | :------------------------------------------ |
+| Delegated (work or school account)     | InformationProtectionPolicy.Read            |
+| Delegated (personal Microsoft account) | Not supported.                              |
+| Application                            | InformationProtectionPolicy.Read.All        | 
 
 ## HTTP request
 
@@ -37,7 +37,7 @@ POST /informationprotection/core/labels/{id}/extractLabel
 ## Request headers
 
 | Name          | Description    |
-|:--------------|:---------------|
+| :------------ | :------------- |
 | Authorization | Bearer {token} |
 
 ## Request body
@@ -45,7 +45,7 @@ POST /informationprotection/core/labels/{id}/extractLabel
 In the request body, provide a JSON object with the following parameters.
 
 | Parameter   | Type                                       | Description                                                                                                                                                                                                   |
-|:------------|:-------------------------------------------|:--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| :---------- | :----------------------------------------- | :------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ |
 | contentInfo | [contentInfo](../resources/contentInfo.md) | Provides details on the [content format](../resources/enums.md#contentFormat), [content state](../resources/enums.md#contentState), and existing [metadata](../resources/keyvaluepair.md) as key/value pairs. |
 
 ## Response

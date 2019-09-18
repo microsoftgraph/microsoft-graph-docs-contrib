@@ -1,12 +1,18 @@
 # Microsoft Information Protection labeling overview
 
-Microsoft Information Protection labeling helps organizations to classify, label, and protect data based on [sensitivity](https://docs.microsoft.com/Office365/SecurityCompliance/sensitivity-labels). Organizations use labels to aid users in understanding the importance of information that is being handled, aid compliance adminstrators in discovering where sensitive information lives, and to aid security administrators in deploying data access and data loss prevention policies based on more rich label information.
+Microsoft Information Protection labeling helps organizations to classify, label, and protect data based on [sensitivity](https://docs.microsoft.com/Office365/SecurityCompliance/sensitivity-labels). 
+
+Organizations use labels to aid:
+
+* Users in understanding the importance of information that is being handled.
+* Compliance adminstrators in discovering where sensitive information lives. 
+* Security administrators in deploying data access and data loss prevention policies based on more rich label information.
 
 ## Why integrate Microsoft Information Protection? 
 
 ### Integrate with the ubiquitous labeling platform, servicing millions of users and devices
 
-More than a million organizations with tens of millions of users use Microsoft Information Protection to classify, label, and protect data.  In addtion to Office 365, various data loss prevention (DLP) services, business intelligence platforms, and software-as-a-service (SaaS) solutions have embrace Microsoft Information Protection labeling to provide a richer data classification experience. **!!LINK!!**
+More than a million organizations with tens of millions of users use Microsoft Information Protection to classify, label, and protect data.  In addition to Office 365, various data loss prevention (DLP) services, business intelligence platforms, and software-as-a-service (SaaS) solutions have [embraced Microsoft Information Protection](https://www.microsoft.com/en-us/security/technology/information-protection) labeling to provide a richer data classification experience. 
 
 ### Label information in line of business applications
 
@@ -16,15 +22,15 @@ Enterprise developers use Microsoft Information Protection to label and protect 
 
 ### Discover labels available to a user or organization
 
-With Microsoft Graph you can access the [sensitivity labels]() available to a user or the organization. Labels are applied by applications and services to data at rest or in motion, helping users and downstream applications and services to understand the sensitivity of the information they're handling.
+With Microsoft Graph you can access the [sensitivity labels](../resources/informationprotectionlabel.md) available to a user or the organization. Labels are applied by applications and services to data at rest or in motion, helping users and downstream applications and services to understand the sensitivity of the information they're handling.
 
 ### Understand how to apply labels
 
-By providing information on the existing and desired sensitivity label, the REST API can intelligently inform your application of the [actions]() that should be taken to correctly apply the label. This includes actions such as [metadata]() application, [watermark]() generation, [protection](), and more.
+By providing information on the existing and desired sensitivity label, the REST API can intelligently inform your application of the [actions](../resources/informationProtectionActions.md) that should be taken to correctly apply the label. This includes actions such as [metadata](../resources/metadataaction.md) application, [watermark](../resources/addwatermarkaction.md) generation, [protection](../resources/protectByTemplateAction.md), and more.
 
 ### Interpret labels applied to data
 
-Applications consuming information already that already has a [sensitivity label metadata]() applied can use the `extractLabel` API to resolve label metadata to a Microsoft Information Protection [sensitivity label](). Use the label to identify the actions that should be taken by the application when handling or consuming the labeled data. 
+Applications consuming information already that already has [sensitivity label metadata](../resources/metadataaction.md) applied can use the **extractLabel** API to resolve label metadata to a Microsoft Information Protection [sensitivity label](../resources/informationprotectionlabel.md). Use the label to identify the actions that should be taken by the application when handling or consuming the labeled data. 
 
 ## Explore the Microsoft Information Protection APIs
 
@@ -33,15 +39,14 @@ Use the Microsoft Graph Explorer to try out the Microsoft Information Protection
 !TODO!
 To make Microsoft Information Protection API calls from the Graph Explorer, choose Show more samples in the column on the left. Use the menu to toggle OneNote On. You will also need to enable the appropriate permissions. Under your account name in the menu on the left, choose modify permissions. For more information about OneNote permissions, see Notes permissions.
 
-To get started with Microsoft Information Protection APIs in Microsoft Graph, see the Microsoft Information Protection [reference content]().
+To get started with Microsoft Information Protection APIs in Microsoft Graph, see the Microsoft Information Protection reference content.
 
 ## API reference
 
 Looking for the API reference for this service?
 
-- Microsoft Information Protection API in Microsoft Graph v1.0
-- Microsoft Information Protection API in Microsoft Graph beta
+- [Microsoft Information Protection API in Microsoft Graph beta](/graph/api/resources/information-protection-overview?view=graph-rest-beta)
 
 ## Next steps
 
-- Select and try Information Protection labeling sample queries in [Graph Explorer](). Choose **Show more samples** in the column on the left. Use the menu to turn on **Information Protection**.
+- Select and try Information Protection labeling sample queries in [Graph Explorer](https://developer.microsoft.com/graph/graph-explorer). Choose **Show more samples** in the column on the left. Use the menu to turn on **Information Protection**.

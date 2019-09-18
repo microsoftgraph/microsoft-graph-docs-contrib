@@ -1,6 +1,6 @@
 ---
 title: "protectAdhocAction resource type"
-description: "Describes the protectAdhocAction that allows protections to be defined at runtime."
+description: "Informs the application that ad hoc protection should be applied."
 localization_priority: Normal
 author: "tommoser"
 ms.prod: "microsoft.informationprotection
@@ -11,7 +11,7 @@ doc_type: "resourcePageType"
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-The `protectAdhocAction` informs that applications that the label should apply ad hoc protection. Ad hoc protection is defined at runtime by the user or application. The consuming application must use the Microsoft Information Protection SDK to locally apply the protection to the file or data.
+The **protectAdhocAction** informs that applications that the label should apply ad hoc protection. Ad hoc protection is defined at runtime by the user or application. The consuming application must use the Microsoft Information Protection SDK to locally apply the protection to the file or data.
 
 ## Properties
 

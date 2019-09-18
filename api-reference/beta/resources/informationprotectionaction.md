@@ -11,7 +11,7 @@ doc_type: "resourcePageType"
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-The `informationProtectionAction` is an abstract entity that is returned as the result of any of the information protection evaluation APIs. The object contains one or more of the actions below that instruct the application on how to apply, update, or remove the information protection label. 
+The **informationProtectionAction** is an abstract entity that is returned as the result of any of the information protection evaluation APIs. The object contains one or more of the actions below that instruct the application on how to apply, update, or remove the information protection label. 
 
 * [addContentFooterAction](../resources/addContentFooterAction.md)
 * [addContentHeaderAction](../resources/addContentHeaderAction.md)

@@ -1,6 +1,6 @@
 ---
 title: "addContentHeaderAction resource type"
-description: "PROVIDE DESCRIPTION HERE"
+description: "Represents an action that specifies the details on the content header to be added to the information, if applicable."
 localization_priority: Normal
 author: "tommoser"
 ms.prod: "microsoft.informationprotection"
@@ -11,7 +11,7 @@ doc_type: "resourcePageType"
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-The [evaluateApplication]() or [evaluateClassificationResults]()  APIs may return addContentHeaderAction. The action informs the consuming application that a content header is required and of the specific properties of that header.
+The [evaluateApplication](../api/informationprotectionlabel-evaluateApplication.md) or [evaluateClassificationResults](../api/informationprotectionlabel-evaluateClassificationResults.md) APIs may return addContentHeaderAction. The action informs the consuming application that a content header is required and of the specific properties of that header.
 
 ## Properties
 
@@ -21,7 +21,7 @@ The [evaluateApplication]() or [evaluateClassificationResults]()  APIs may retur
 | fontColor     | String | Color of the font to use for the header.                      |
 | fontName      | String | Name of the font to use for the header.                       |
 | fontSize      | Int32  | Font size to use for the header.                              |
-| margin        | Int32  |                                                               |
+| margin        | Int32  | The margin of the header from the top of the document.        |
 | text          | String | The contents of the header itself.                            |
 | uiElementName | String | The name of the UI element where the header should be placed. |
 

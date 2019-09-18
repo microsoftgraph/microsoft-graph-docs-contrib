@@ -1,6 +1,6 @@
 ---
 title: "labelingOptions resource type"
-description: "Describes the labeling options that can be provided to the evaluation APIs."
+description: "Represents the labeling options that can be provided to the evaluation APIs."
 localization_priority: Normal
 author: "tommoser"
 ms.prod: "microsoft.informationprotection""
@@ -11,7 +11,7 @@ doc_type: "resourcePageType"
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-`labelingOptions` must be passed in to the [evaluateApplication](../api/informationprotection-evaluateapplication.md) API to specify details about the label that is to be applied. 
+**labelingOptions** must be passed in to the [evaluateApplication](../api/informationprotectionlabel-evaluateapplication.md) API to specify details about the label that is to be applied. 
 
 ## Properties
 

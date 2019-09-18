@@ -13,7 +13,7 @@ doc_type: "apiPageType"
 
 Using [classification results](../resources/classificationResult.md), compute the [information protection label](../resources/informationProtectionLabel.md) that should be applied and return the set of actions that must be taken to correctly label the information. This API is useful when a label should be set automatically based on classification of the file contents, rather than labeled directly by a user or service. 
 
-To evaluate based on classification results, provide [contentInfo](../resources/labelingOptions.md), which includes existing content metadata [key/value pairs](../resources/keyvaluepair.md), and [classification results](../resources/classificationResult.md). The API returns an [informationProtectionAction](../resources/informationProtectionAction.md) that contains one of more of the following: 
+To evaluate based on classification results, provide [contentInfo](../resources/contentInfo.md), which includes existing content metadata [key/value pairs](../resources/keyvaluepair.md), and [classification results](../resources/classificationResult.md). The API returns an [informationProtectionAction](../resources/informationProtectionAction.md) that contains one of more of the following: 
 
 * [addContentFooterAction](../resources/addContentFooterAction.md)
 * [addContentHeaderAction](../resources/addContentHeaderAction.md)
@@ -59,9 +59,9 @@ POST /informationprotection/core/labels/{id}/evaluateClassificationResults
 
 In the request body, provide a JSON object with the following parameters.
 
-| Parameter             | Type                                       | Description                                                                                                                                                                                                   |
-| :-------------------- | :----------------------------------------- | :------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ |
-| contentInfo           | [contentInfo](../resources/contentInfo.md) | Provides details on the [content format](../resources/enums.md#contentFormat), [content state](../resources/enums.md#contentState), and existing [metadata](../resources/keyvaluepair.md) as key/value pairs. |
+| Parameter             | Type                                                                    | Description                                                                                                                                                                                                                                                                           |
+| :-------------------- | :---------------------------------------------------------------------- | :------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ |
+| contentInfo           | [contentInfo](../resources/contentInfo.md)                              | Provides details on the [content format](../resources/enums.md#contentFormat), [content state](../resources/enums.md#contentState), and existing [metadata](../resources/keyvaluepair.md) as key/value pairs.                                                                         |
 | classificationResults | [classificationResult](../resources/classificationResult.md) collection | Contains the set of classification results returned by the data classification endpoint. Classificaiton information is used to determine the appropriate label based on the Microsoft Information Protection policy label configuration in Office 365 Security and Compliance Center. |
 
 ## Response

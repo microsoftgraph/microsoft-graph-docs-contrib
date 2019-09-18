@@ -1,6 +1,6 @@
 ---
 title: "addContentFooterAction resource type"
-description: "Action specifies the details on the content footer to be added to the information, if applicable."
+description: "Represents an action that specifies the details on the content footer to be added to the information, if applicable."
 localization_priority: Normal
 author: "tommoser"
 ms.prod: "microsoft.informationprotection"
@@ -11,7 +11,7 @@ doc_type: "resourcePageType"
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-The [evaluateApplication]() or [evaluateClassificationResults]()  APIs may return addContentFooterAction. The action informs the consuming application that a content footer is required and of the specific properties of that footer.
+The [evaluateApplication](../api/informationprotectionlabel-evaluateApplication.md) or [evaluateClassificationResults](../api/informationprotectionlabel-evaluateClassificationResults.md) APIs may return addContentFooterAction. The action informs the consuming application that a content footer is required and of the specific properties of that footer.
 
 ## Properties
 
@@ -21,7 +21,7 @@ The [evaluateApplication]() or [evaluateClassificationResults]()  APIs may retur
 | fontColor     | String | Color of the font to use for the footer.                      |
 | fontName      | String | Name of the font to use for the footer.                       |
 | fontSize      | Int32  | Font size to use for the footer.                              |
-| margin        | Int32  |                                                               |
+| margin        | Int32  | The margin of the header from the bottom of the document.     |
 | text          | String | The contents of the footer itself.                            |
 | uiElementName | String | The name of the UI element where the footer should be placed. |
 

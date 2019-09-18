@@ -11,7 +11,7 @@ doc_type: "apiPageType"
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-The `evaluateRemoval` API informs the consuming application of specifically what actions it should take to remove the label.  
+The **evaluateRemoval** API informs the consuming application of specifically what actions it should take to remove the label information.  
 
 Given [contentInfo](../resources/contentinfo.md) as an input, which includes existing content metadata [key/value pairs](../resources/keyvaluepair.md), the API returns an [informationProtectionAction](../resources/informationProtectionAction.md) that contains some combination of one of more of the following: 
 

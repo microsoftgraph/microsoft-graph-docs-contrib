@@ -1,6 +1,6 @@
 ---
 title: "removeContentFooterAction resource type"
-description: "Action specifies the details on the content footer to be removed from the information, if applicable."
+description: "Represents an action that specifies the details on the content footer to be removed from the information, if applicable."
 localization_priority: Normal
 author: "tommoser"
 ms.prod: "microsoft.informationprotection"
@@ -11,13 +11,13 @@ doc_type: "resourcePageType"
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-The applyLabel, applyLabelFromClassification, or removeLabel APIs may return removeContentFooterAction. The action instructs the consuming application to remove the specific UI element that contains the previously-applicable content footer.
+The [evaluateApplication](../api/informationprotectionlabel-evaluateApplication.md), [evaluateClassificationResults](../api/informationprotectionlabel-evaluateClassificationResults.md), or [evaluateRemoval](../api/informationprotectionlabel-evaluateRemoval.md) APIs may return the **removeContentFooterAction** if the footer is to be removed as a result of updating or removing the label. The action instructs the consuming application to remove the specific UI element that contains the previously-applicable content footer.
 
 ## Properties
 
-| Property     | Type        | Description |
-|:-------------|:------------|:------------|
-|uiElementNames|String collection||
+| Property       | Type              | Description                                                |
+| :------------- | :---------------- | :--------------------------------------------------------- |
+| uiElementNames | String collection | The name of the UI element where the footer to be removed. |
 
 ## JSON representation
 
