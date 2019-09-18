@@ -29,7 +29,7 @@ The following resources support change notifications that include resource data:
 
 To have resource data included in change notifications, you need to provide additional properties when creating a subscription:
 
-- @@@Name may change@@@**includeProperties** set to `true` to explicitly request resource data.
+- **includeResourceData** set to `true` to explicitly request resource data.
 - An optional `$select` operator in the resource path to select the properties to be included.
 - **lifecycleNotificationUrl** - an endpoint to which where [lifecycle notifications](#subscription-lifecycle-notifications) will be delivered. This can be the same or different as **notificationUrl**.
 - **encryptionCertificate** containing only the public key that Microsoft Graph will use to encrypt resource data. You will keep the corresponding private key which will be used to [decrypt the content](#decrypting-resource-data-from-change-notifications).
@@ -47,7 +47,7 @@ Content-Type: application/json
   "notificationUrl": "https://webhook.azurewebsites.net/api/resourceNotifications",
   "lifecycleNotificationUrl": "https://webhook.azurewebsites.net/api/lifecycleNotifications",
   "resource": "/teams/allMessages,
-  @@@subject to change@@@"includeProperties": true,
+  "includeResourceData": true,
   "encryptionCertificate": <base64encodedCertificate>,
   "encryptionCertificateId": <customId>,
   "expirationDateTime": "2019-09-19T11:00:00.0000000Z",
@@ -64,7 +64,7 @@ Content-Type: application/json
   "notificationUrl": "https://webhook.azurewebsites.net/api/resourceNotifications",
   "lifecycleNotificationUrl": "https://webhook.azurewebsites.net/api/lifecycleNotifications",
   "resource": "/teams/allMessages",
-  @@@subject to change@@@"includeProperties": true,
+  "includeResourceData": true,
   "encryptionCertificateId": <customId>,   
   "encryptionCertificateThumbprint": <thumbprintFromTheCertificate>,
   "expirationDateTime": "2019-09-19T11:00:00.0000000Z",
@@ -112,17 +112,15 @@ Given an active, non-expired subscription, the flow looks as follows:
     
 #### reauthorizationRequired notification example
 
-@@@confirm the actual shape of the notification
-
 ```json
 {
   "value": [
     {
-      "subscriptionId":"<subscription_guid>",
-      "subscriptionExpirationDateTime":"2019-09-19T11:00:00.0000000Z",
-      "clientState":"<secretClientState>",
-      "resource": "/teams/allMessages?$select=subject,body",
-      "lifecycleEvent": "reauthorizationRequired"
+      "lifecycleEvent": "reauthorizationRequired",
+      "subscriptionId": "e3898f08-5cd0-4a6a-80fc-6addbfb73b7b",
+      "subscriptionExpirationDateTime": "2019-09-18T00:52:45.9696658+00:00",
+      "clientState": "<secretClientState>",
+      "tenantId": "84bd8158-6d4d-4958-8b9f-9d6445542f95"
     }
   ]
 }
