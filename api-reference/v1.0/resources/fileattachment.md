@@ -9,7 +9,8 @@ doc_type: resourcePageType
 
 # fileAttachment resource type
 
-A file (such as a text file or Word document) attached to an event, message or post. The  **contentBytes** 
+A file (such as a text file or Word document) attached to a user [event](../resources/event.md),
+[message](../resources/message.md), or [post](../resources/post.md). The  **contentBytes** 
 property contains the base64-encoded contents of the file.  
 
 When creating a file attachment, include the following in the request body:
@@ -23,7 +24,7 @@ Derived from [attachment](attachment.md).
 
 | Method       | Return Type  |Description|
 |:---------------|:--------|:----------|
-|[Get](../api/attachment-get.md) | [fileAttachment](fileattachment.md) |Read properties and relationships of fileAttachment object.|
+|[Get](../api/attachment-get.md) | [fileAttachment](fileattachment.md) |Read properties, relationships, or raw contents of a fileAttachment object.|
 |[Delete](../api/attachment-delete.md) | None |Delete fileAttachment object. |
 
 ## Properties
