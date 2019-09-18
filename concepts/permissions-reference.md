@@ -3,6 +3,7 @@ title: "Microsoft Graph permissions reference "
 description: "Microsoft Graph exposes granular permissions that control the access that apps have to resources, like users, groups, and mail. As a developer, you decide which permissions for Microsoft Graph your app requests."
 author: "jackson-woods"
 localization_priority: Priority
+scenarios: "getting-started"
 ---
 
 # Microsoft Graph permissions reference
@@ -68,6 +69,31 @@ For an app with delegated permissions to read access reviews of a group or app, 
 For an app with delegated permissions to read access reviews of an Azure AD role, the signed-in user must be a member of one of the following administrator roles: Global Administrator, Security Administrator, Security Reader or Privileged Role Administrator. For an app with delegated permissions to write access reviews of an Azure AD role, the signed-in user must be a member of one of the following administrator roles: Global Administrator or Privileged Role Administrator.
 
 For more information about administrator roles, see [Assigning administrator roles in Azure Active Directory](https://docs.microsoft.com/azure/active-directory/active-directory-assign-admin-roles).
+
+---
+
+## Analytics resource permissions
+
+#### Delegated permissions
+
+|   Permission    |  Display String   |  Description | Admin Consent Required |
+|:-----------------------------|:-----------------------------------------|:-----------------|:-----------------|
+| _Analytics.Read_ |   Read all user activities statistics. | Allows the app to read user activities statistics without a signed-in user. | Yes |
+
+#### Application permissions
+
+None.
+
+### Example usage
+
+#### Delegated
+
+* _Analytics.Read_: [List related settings for a user](/graph/api/useranalytics-get-settings?view=graph-rest-beta) (`GET /beta/me/analytics/settings)
+* _Analytics.Read_: [Get activity statistics for a user](/graph/api/activitystatistics-get?view=graph-rest-beta) (`GET /beta/me/analytics/activitystatistics/{id})
+
+#### Application
+
+None.
 
 ---
 
@@ -958,6 +984,7 @@ With the Azure AD v2.0 endpoint, you specify the _offline\_access_ permission in
 | _Organization.Read.All_ |Read organization information | Allows the app to read the organization and related resources, without a signed-in user. Related resources include things like subscribed SKUs and tenant branding information. | Yes |
 | _Organization.ReadWrite.All_ |Read and write organization information | Allows the app to read and write the organization and related resources, without a signed-in user. Related resources include things like subscribed SKUs and tenant branding information. |Yes |
 
+
 ### Example usage
 
 #### Delegated
@@ -968,6 +995,30 @@ With the Azure AD v2.0 endpoint, you specify the _offline\_access_ permission in
 #### Application
 
 * _Organization.ReadWrite.All_: Update organization information (such as **technicalNotificationMails**) (`PATCH /organization/{id}`).
+
+---
+
+## Organizational contact permissions
+
+#### Delegated permissions
+
+|   Permission    |  Display String   |  Description | Admin Consent Required | Microsoft Account supported |
+|:----------------|:------------------|:-------------|:-----------------------|:--------------|
+| _OrgContact.Read.All_ | Read organizational contacts|Allows the app to read all organizational contacts on behalf of the signed-in user. These contacts are managed by the organization and are different from a user's personal contacts.|Yes | No |
+
+<br/>
+
+#### Application permissions
+
+|Permission    |Display String   |Description |Admin Consent Required |
+|:-----------------------------|:-----------------------------------------|:-----------------|:-----------------|
+| _OrgContact.Read.All_ |Read organizational contacts | Allows the app to read all organizational contacts without a signed-in user.  These contacts are managed by the organization and are different from a user's personal contacts. | Yes |
+
+### Example usage
+
+#### Delegated
+
+* _OrgContact.Read.All_: Get all organizational contacts (`GET /contacts`).
 
 ---
 
@@ -1013,6 +1064,38 @@ For more complex scenarios involving multiple permissions, see [Permission scena
 |   Permission    |  Display String   |  Description | Admin Consent Required |
 |:-----------------------------|:-----------------------------------------|:-----------------|:-----------------|
 | _Place.Read.All_ |   Read all company places | Allows the app to read company places (conference rooms and room lists) for calendar events and other applications.| Yes |
+
+---
+
+## Policy permissions
+
+#### Delegated permissions
+
+|   Permission    |  Display String   |  Description | Admin Consent Required | Microsoft Account supported |
+|:----------------|:------------------|:-------------|:-----------------------|:--------------|
+| _Policy.Read.All_ | Read your organization's policies | Allows the app to read your organization's policies on behalf of the signed-in user. | Yes | No |
+| _Policy.ReadWrite.FeatureRollout_ | Read and write your organization's feature rollout policies | Allows the app to read and write your organization's feature rollout policies on behalf of the signed-in user. Includes abilities to assign and remove users and groups to rollout of a specific feature. | Yes | No |
+| _Policy.ReadWrite.TrustFramework_ | Read and write your organization's trust framework policies | Allows the app to read and write your organization's trust framework policies on behalf of the signed-in user. | Yes | No |
+
+#### Application permissions
+
+|   Permission    |  Display String   |  Description | Admin Consent Required |
+|:-----------------------------|:-----------------------------------------|:-----------------|:-----------------|
+| _Policy.Read.All_ | Read your organization's policies | Allows the app to read all your organization's policies without a signed in user. | Yes |
+| _Policy.Read.FeatureRollout_ | Read and write feature rollout policies | Allows the app to read and write feature rollout policies without a signed-in user. Includes abilities to assign and remove users and groups to rollout of a specific feature. | Yes |
+| _Policy.Read.TrustFramework_ | Read and write your organization's trust framework policies | Allows the app to read and write your organization's trust framework policies without a signed in user. | Yes |
+
+### Example usage
+
+The following usages are valid for both delegated and application permissions:
+
+* _Policy.Read.All_: Read your organization's policies (`GET /policies`)
+* _Policy.Read.All_: Read your organization's trust framework policies (`GET /beta/trustFramework/policies`)
+* _Policy.Read.All_: Read your organization's feature rollout policies (`GET /beta/directory/featureRolloutPolicies`)
+* _Policy.ReadWrite.FeatureRollout_: Read and write your organization's feature rollout policies (`POST /beta/directory/featureRolloutPolicies`)
+* _Policy.ReadWrite.TrustFramework_: Read and write your organization's trust framework policies (`POST /beta/trustFramework/policies`)
+
+For more complex scenarios involving multiple permissions, see [Permission scenarios](#permission-scenarios).
 
 ---
 
@@ -1242,30 +1325,6 @@ For more complex scenarios involving multiple permissions, see [Permission scena
 
 ---
 
-## Trust Framework policy permissions
-
-#### Delegated permissions
-
-|   Permission    |  Display String   |  Description | Admin Consent Required | Microsoft Account supported |
-|:----------------|:------------------|:-------------|:-----------------------|:--------------|
-| _Policy.Read.All_ | Read all trustFramework Policies | Allows the app to read all TrustFramework Policies on behalf of the signed-in user. | Yes | No |
-| _Policy.ReadWrite.TrustFramework_ | Read and write all trustFramework policies | Allows the app to read and write TrustFramework Policies on behalf of the signed-in user. | Yes | No |
-
-### Remarks
-The work or school account must be a global administrator of the tenant.
-
-### Example usage
-
-#### Delegated
-The following usages are valid for both delegated permissions:
-
-* _Policy.Read.All_: Read all trustFramework policies (`GET /beta/trustFramework/policies`)
-* _Policy.ReadWrite.TrustFramework_: Read and write all trustFramework policies (`POST /beta/trustFramework/policies`)
-
-For more complex scenarios involving multiple permissions, see [Permission scenarios](#permission-scenarios).
-
----
-
 ## User permissions
 
 #### Delegated permissions
@@ -1379,33 +1438,6 @@ The *CreatedByApp* constraint associated with this permission indicates the serv
 *	_UserActivity.ReadWrite.CreatedByApp_: Publish or update a history item for a specified user activity in order to represent the period of user engagement. (PUT /me/activities/{id}/historyItems/{id}).
 *	_UserActivity.ReadWrite.CreatedByApp_: Delete a user activity in response to user initiated request or to remove invalid data. (DELETE /me/activities/{id}).
 *	_UserActivity.ReadWrite.CreatedByApp_: Delete a history item in response to user initiated request or to remove invalid data. (DELETE /me/activities/{id}/historyItems/{id}).
-
----
-
-## Feature rollout policy permissions
-
-#### Delegated permissions
-
-|   Permission    |  Display String   |  Description | Admin Consent Required | Microsoft Account supported |
-|:----------------|:------------------|:-------------|:-----------------------|:--------------|
-| _Policy.Read.All_ | Read all feature rollout policies | Allows the app to read all feature rollout policies on behalf of the signed-in user. | Yes | No |
-| _Policy.ReadWrite.FeatureRollout_ | Read and write all feature rollout policies | Allows the app to read and write Feature rollout Policies on behalf of the signed-in user. | Yes | No |
-
-#### Application permissions
-None.
-
-### Remarks
-The work or school account must be a global administrator of the tenant.
-
-### Example usage
-
-#### Delegated
-The following usages are valid for both delegated permissions:
-
-* _Policy.Read.All_: Read all feature rollout policies (`GET /beta/directory/featureRolloutPolicies`)
-* _Policy.ReadWrite.FeatureRollout_: Read and write all feature rollout policies (`POST /beta/directory/featureRolloutPolicies`)
-
-For more complex scenarios involving multiple permissions, see [Permission scenarios](#permission-scenarios).
 
 ---
 

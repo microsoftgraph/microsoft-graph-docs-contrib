@@ -4,6 +4,7 @@ description: "Windows 10 force update schedule for Kiosk devices."
 author: "rolyon"
 localization_priority: Normal
 ms.prod: "Intune"
+doc_type: resourcePageType
 ---
 
 # windowsKioskForceUpdateSchedule resource type
@@ -43,8 +44,6 @@ Here is a JSON representation of the resource.
   "runImmediatelyIfAfterStartDateTime": true
 }
 ```
-
-
 
 
 

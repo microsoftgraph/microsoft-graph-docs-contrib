@@ -16,6 +16,6 @@ const plannerBucket = {
 
 let res = await client.api('/planner/buckets/hsOf2dhOJkqyYYZEtdzDe2QAIUCR')
 	.version('beta')
-	.update({plannerBucket : plannerBucket});
+	.update(plannerBucket);
 
 ```

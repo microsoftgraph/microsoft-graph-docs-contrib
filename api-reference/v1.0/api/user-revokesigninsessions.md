@@ -37,6 +37,7 @@ POST /users/{id | userPrincipalName}/revokeSignInSessions
 | Header       | Value |
 |:---------------|:--------|
 | Authorization  | Bearer {token}. Required.  |
+| Content-Type  | application/json  |
 
 ## Request body
 This operation has no request content.
@@ -44,6 +45,9 @@ This operation has no request content.
 ## Response
 
 If successful, this method returns a `204 No Content` response code.
+
+>[!NOTE]
+>This API has a [known issue](/graph/known-issues#revoke-sign-in-sessions-returns-wrong-HTTP-code). It returns a different HTTP response code.
 
 ## Example
 The following example shows how to call this API.
@@ -62,7 +66,7 @@ POST https://graph.microsoft.com/v1.0/me/revokeSignInSessions
 [!INCLUDE [sample-code](../includes/snippets/csharp/user-revokesigninsessionss-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# [Javascript](#tab/javascript)
+# [JavaScript](#tab/javascript)
 [!INCLUDE [sample-code](../includes/snippets/javascript/user-revokesigninsessionss-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 

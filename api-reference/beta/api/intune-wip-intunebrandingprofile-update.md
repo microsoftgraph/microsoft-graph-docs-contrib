@@ -22,7 +22,7 @@ One of the following permissions is required to call this API. To learn more, in
 |:---|:---|
 |Delegated (work or school account)|DeviceManagementApps.ReadWrite.All|
 |Delegated (personal Microsoft account)|Not supported.|
-|Application|Not supported.|
+|Application|DeviceManagementApps.ReadWrite.All|
 
 ## HTTP Request
 <!-- {
@@ -67,6 +67,8 @@ The following table shows the properties that are required when you create the [
 |lightBackgroundLogo|[mimeContent](../resources/intune-shared-mimecontent.md)|Logo image displayed in Company Portal apps which have a light background behind the logo|
 |landingPageCustomizedImage|[mimeContent](../resources/intune-shared-mimecontent.md)|Customized image displayed in Company Portal apps landing page|
 |customPrivacyMessage|String|Text comments regarding what the admin has access to on the device|
+|isRemoveDeviceDisabled|Boolean|Boolean that represents whether the adminsistrator has disabled the 'Remove Device' action on corporate owned devices.|
+|isFactoryResetDisabled|Boolean|Boolean that represents whether the adminsistrator has disabled the 'Factory Reset' action on corporate owned devices.|
 
 
 
@@ -80,7 +82,7 @@ Here is an example of the request.
 ``` http
 PATCH https://graph.microsoft.com/beta/deviceManagement/intuneBrandingProfiles/{intuneBrandingProfileId}
 Content-type: application/json
-Content-length: 1264
+Content-length: 1334
 
 {
   "@odata.type": "#microsoft.graph.intuneBrandingProfile",
@@ -118,7 +120,9 @@ Content-length: 1264
     "type": "Type value",
     "value": "dmFsdWU="
   },
-  "customPrivacyMessage": "Custom Privacy Message value"
+  "customPrivacyMessage": "Custom Privacy Message value",
+  "isRemoveDeviceDisabled": true,
+  "isFactoryResetDisabled": true
 }
 ```
 
@@ -127,7 +131,7 @@ Here is an example of the response. Note: The response object shown here may be 
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 1436
+Content-Length: 1506
 
 {
   "@odata.type": "#microsoft.graph.intuneBrandingProfile",
@@ -168,9 +172,12 @@ Content-Length: 1436
     "type": "Type value",
     "value": "dmFsdWU="
   },
-  "customPrivacyMessage": "Custom Privacy Message value"
+  "customPrivacyMessage": "Custom Privacy Message value",
+  "isRemoveDeviceDisabled": true,
+  "isFactoryResetDisabled": true
 }
 ```
+
 
 
 

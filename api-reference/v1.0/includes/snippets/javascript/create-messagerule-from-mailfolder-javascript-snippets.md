@@ -33,6 +33,6 @@ const messageRule = {
 };
 
 let res = await client.api('/me/mailFolders/inbox/messageRules')
-	.post({messageRule : messageRule});
+	.post(messageRule);
 
 ```

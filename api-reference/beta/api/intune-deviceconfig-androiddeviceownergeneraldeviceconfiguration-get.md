@@ -22,7 +22,7 @@ One of the following permissions is required to call this API. To learn more, in
 |:---|:---|
 |Delegated (work or school account)|DeviceManagementConfiguration.ReadWrite.All, DeviceManagementConfiguration.Read.All|
 |Delegated (personal Microsoft account)|Not supported.|
-|Application|Not supported.|
+|Application|DeviceManagementConfiguration.ReadWrite.All, DeviceManagementConfiguration.Read.All|
 
 ## HTTP Request
 <!-- {
@@ -63,7 +63,7 @@ Here is an example of the response. Note: The response object shown here may be 
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 4075
+Content-Length: 4536
 
 {
   "value": {
@@ -114,6 +114,11 @@ Content-Length: 4075
       "Factory Reset Device Administrator Emails value"
     ],
     "factoryResetBlocked": true,
+    "kioskModeScreenSaverConfigurationEnabled": true,
+    "kioskModeScreenSaverImageUrl": "https://example.com/kioskModeScreenSaverImageUrl/",
+    "kioskModeScreenSaverDisplayTimeInSeconds": 8,
+    "kioskModeScreenSaverStartDelayInSeconds": 7,
+    "kioskModeScreenSaverDetectMediaDisabled": true,
     "kioskModeApps": [
       {
         "@odata.type": "microsoft.graph.appListItem",
@@ -126,8 +131,11 @@ Content-Length: 4075
     "kioskModeWallpaperUrl": "https://example.com/kioskModeWallpaperUrl/",
     "kioskModeExitCode": "Kiosk Mode Exit Code value",
     "kioskModeVirtualHomeButtonEnabled": true,
+    "kioskModeVirtualHomeButtonType": "swipeUp",
     "kioskModeBluetoothConfigurationEnabled": true,
     "kioskModeWiFiConfigurationEnabled": true,
+    "kioskModeFlashlightConfigurationEnabled": true,
+    "kioskModeMediaVolumeConfigurationEnabled": true,
     "microphoneForceMute": true,
     "networkEscapeHatchAllowed": true,
     "nfcBlockOutgoingBeam": true,
@@ -173,6 +181,7 @@ Content-Length: 4075
   }
 }
 ```
+
 
 
 
