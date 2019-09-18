@@ -78,7 +78,7 @@ Here is a JSON representation of the resource.
 | Group conversations | 4230 minutes (under 3 days)    |
 | Drive root items    | 4230 minutes (under 3 days)    |
 | Security alerts     | 43200 minutes (under 30 days)  |
-| Teams messages (all teams, all channels)     | 60 minutes (1 hour)@@@subject to change  |
+| Teams messages (all teams, all channels)     | 60 minutes (1 hour)  |
 
 > **Note:** Existing applications and new applications should not exceed the supported value. In the future, any requests to create or renew a subscription beyond the maximum value will fail.
 
