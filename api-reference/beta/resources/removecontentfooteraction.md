@@ -9,15 +9,15 @@ doc_type: "resourcePageType"
 
 # removeContentFooterAction resource type
 
-[!INCLUDE beta-disclaimer]
+[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 The applyLabel, applyLabelFromClassification, or removeLabel APIs may return removeContentFooterAction. The action instructs the consuming application to remove the specific UI element that contains the previously-applicable content footer.
 
 ## Properties
 
-| Property       | Type              | Description                           |
-| :------------- | :---------------- | :------------------------------------ |
-| uiElementNames | String collection | The name of the UI element to remove. |
+| Property     | Type        | Description |
+|:-------------|:------------|:------------|
+|uiElementNames|String collection||
 
 ## JSON representation
 

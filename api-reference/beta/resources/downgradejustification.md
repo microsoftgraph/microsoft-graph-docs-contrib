@@ -9,6 +9,8 @@ doc_type: "resourcePageType"
 
 # downgradeJustification resource type
 
+[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
+
 Downgrade justification may be required based on label policy configuration in Office Security and Compliance Center.
 
 ## Properties

@@ -9,9 +9,9 @@ doc_type: "resourcePageType"
 
 # addContentFooterAction resource type
 
-[!INCLUDE beta-disclaimer]
+[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-The applyLabel or applyLabelFromClassification APIs may return addContentFooterAction. The action instructs the consuming application about if a content footer is required and, if so, what are the properties of that footer.
+The [evaluateApplication]() or [evaluateClassificationResults]()  APIs may return addContentFooterAction. The action informs the consuming application that a content footer is required and of the specific properties of that footer.
 
 ## Properties
 

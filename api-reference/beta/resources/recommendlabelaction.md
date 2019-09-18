@@ -1,6 +1,6 @@
 ---
 title: "recommendLabelAction resource type"
-description: "PROVIDE DESCRIPTION HERE"
+description: "Represents a label that should be recommended to the user for application to the file based on sensitive information types. "
 localization_priority: Normal
 author: "tommoser"
 ms.prod: "microsoft.informationprotection"
@@ -9,17 +9,18 @@ doc_type: "resourcePageType"
 
 # recommendLabelAction resource type
 
-[!INCLUDE beta-disclaimer]
+[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-PROVIDE DESCRIPTION HERE
+The [evaluateClassificationResults](../api/informationprotection-evaluateClassificationResults.md) may return a `recommendLabelAction` if the Microsoft Information Protection labeling policy is set to **recommend** and label rather than enforce a label. The user or appliation may choose to ignore or accept the recommendation. 
 
 ## Properties
 
-| Property          | Type                                                                     | Description |
-| :---------------- | :----------------------------------------------------------------------- | :---------- |
-| actions           | [informationProtectionAction](informationprotectionaction.md) collection |             |
-| classificationIds | Guid collection                                                          |             |
-| labelId           | String                                                                   |             |
+| Property                    | Type                                                                     | Description                                                           |
+| :-------------------------- | :----------------------------------------------------------------------- | :-------------------------------------------------------------------- |
+| actionSource                | String                                                                   | Possible values are: `manual`, `automatic`, `recommended`, `default`. |
+| actions                     | [informationProtectionAction](informationprotectionaction.md) collection | Actions to take if the label is accepted by the user.                                                                       |
+| label                       | [labelDetails](labeldetails.md)                                          | The label that is being recommended.                                                                      |
+| responsibleSensitiveTypeIds | Guid collection                                                          | The sensitive information type GUIDs that caused the recommendation to be given.                                                                      |
 
 ## JSON representation
 
@@ -36,9 +37,10 @@ The following is a JSON representation of the resource.
 
 ```json
 {
+  "actionSource": "String",
   "actions": [{"@odata.type": "microsoft.graph.informationProtectionAction"}],
-  "classificationIds": ["Guid"],
-  "labelId": "String"
+  "label": {"@odata.type": "microsoft.graph.labelDetails"},
+  "responsibleSensitiveTypeIds": ["Guid"]
 }
 ```
 

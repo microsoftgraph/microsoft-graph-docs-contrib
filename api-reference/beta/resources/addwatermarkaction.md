@@ -1,17 +1,17 @@
 ---
 title: "addWatermarkAction resource type"
-description: "Action specifies the details on the watermark to be added to the information, if applicable."
+description: "PROVIDE DESCRIPTION HERE"
 localization_priority: Normal
-author: "tommoser"
-ms.prod: "microsoft.informationprotection"
+author: ""
+ms.prod: ""
 doc_type: "resourcePageType"
 ---
 
 # addWatermarkAction resource type
 
-[!INCLUDE beta-disclaimer]
+[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-The applyLabel or applyLabelFromClassification APIs may return addWatermarkAction. The action instructs the consuming application about if a watermark is required and, if so, what are the properties of that watermark.
+The [evaluateApplication]() or [evaluateClassificationResults]()  APIs may return addContentWatermarkAction. The action informs the consuming application that a content watermark is required and of the specific properties of that watermark.
 
 ## Properties
 

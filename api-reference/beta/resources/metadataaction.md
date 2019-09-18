@@ -1,6 +1,6 @@
 ---
 title: "metadataAction resource type"
-description: "Action specifies the metadata that should be added or removed from the information."
+description: "Describes the metadataAction that contains the metadata to be written or removed from a file."
 localization_priority: Normal
 author: "tommoser"
 ms.prod: "microsoft.informationprotection"
@@ -9,18 +9,16 @@ doc_type: "resourcePageType"
 
 # metadataAction resource type
 
-[!INCLUDE beta-disclaimer]
+[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-The applyLabel and applyLabelFromClassification APIs will return metadataAction. The action informs the consuming application to of the specific metadata key/value pairs that should be added to the information or the specific metadata keys that should be removed from the information. 
-
-[Information protection content labels]() are persisted to files and other information via the metadata that is specified by this action.
+`metadataAction` may be returned by the [evaluateRemoval](../api/informationprotection-evaluateRemoval.md), [evaluateApplication](../api/informationprotection-evaluateApplication.md), and [evaluateClassificationResults](../api/informationprotection-evaluateClassificationResults.md) APIs. The action informs the consuming application of the specific key/value pairs that should be added to the file or the specific metadata keys that should be removed from the file. This metadata is what describes the file or information as being *labeled*.
 
 ## Properties
 
-| Property     | Type        | Description |
-|:-------------|:------------|:------------|
-|metadataToAdd|[keyValuePair](keyvaluepair.md) collection||
-|metadataToRemove|String collection||
+| Property         | Type                                       | Description                                                                        |
+| :--------------- | :----------------------------------------- | :--------------------------------------------------------------------------------- |
+| metadataToAdd    | [keyValuePair](keyvaluepair.md) collection | A collection of key value pairs that should be added to the file.                  |
+| metadataToRemove | String collection                          | A collection of strings that indicate which keys to remove from the file metadata. |
 
 ## JSON representation
 

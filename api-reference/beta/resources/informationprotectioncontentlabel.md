@@ -2,24 +2,24 @@
 title: "informationProtectionContentLabel resource type"
 description: "PROVIDE DESCRIPTION HERE"
 localization_priority: Normal
-author: "tommoser"
-ms.prod: "microsoft.informationprotection"
+author: ""
+ms.prod: ""
 doc_type: "resourcePageType"
 ---
 
 # informationProtectionContentLabel resource type
 
-[!INCLUDE beta-disclaimer]
+[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 PROVIDE DESCRIPTION HERE
 
 ## Properties
 
-| Property         | Type                            | Description                                                                                                                                                                                      |
-| :--------------- | :------------------------------ | :----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| assignmentMethod | String                          | Possible values are: `standard`, `privileged`, `auto`.                                                                                                                                           |
-| creationDateTime | DateTimeOffset                  | The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 would look like this: `'2014-01-01T00:00:00Z'` |
-| label            | [labelDetails](labeldetails.md) |                                                                                                                                                                                                  |
+| Property     | Type        | Description |
+|:-------------|:------------|:------------|
+|assignmentMethod|String| Possible values are: `standard`, `privileged`, `auto`.|
+|creationDateTime|DateTimeOffset|The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 would look like this: `'2014-01-01T00:00:00Z'`|
+|label|[labelDetails](labeldetails.md)||
 
 ## JSON representation
 

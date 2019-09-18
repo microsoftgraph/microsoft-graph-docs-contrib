@@ -9,9 +9,9 @@ doc_type: "resourcePageType"
 
 # protectDoNotForwardAction resource type
 
-[!INCLUDE beta-disclaimer]
+[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-protectionDoNotForwardAction may be returned by applyLabel or applyLabelFromClassification when the resultant information protection label has been configured to apply specifically [Do Not Forward protection](https://docs.microsoft.com/en-us/azure/information-protection/configure-usage-rights#do-not-forward-option-for-emails). The consuming application must use a client library to apply protection via Azure Information Protection.
+`protectionDoNotForwardAction` may be returned by [evaluateApplication](../api/informationprotection-evaluateApplication.md) or [evaluateClassificationResults](../api/informationprotection-evaluateClassificationResults.md) if the resulting label has been configured to apply [Do Not Forward protection](https://docs.microsoft.com/en-us/azure/information-protection/configure-usage-rights#do-not-forward-option-for-emails). The consuming application must use a client library to apply protection via Azure Information Protection.
 
 ## Properties
 

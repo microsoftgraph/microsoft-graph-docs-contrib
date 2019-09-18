@@ -1,6 +1,6 @@
 ---
 title: "removeWatermarkAction resource type"
-description: "Action specifies the details on the watermark to be removed from the information, if applicable."
+description: "Represents an action that specifies the details on the content watermark to be removed from the information, if applicable."
 localization_priority: Normal
 author: "tommoser"
 ms.prod: "microsoft.informationprotection"
@@ -9,15 +9,15 @@ doc_type: "resourcePageType"
 
 # removeWatermarkAction resource type
 
-[!INCLUDE beta-disclaimer]
+[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-The applyLabel, applyLabelFromClassification, or removeLabel APIs may return removeWatermarkAction. The action instructs the consuming application to remove the specific UI element that contains the previously-applicable watermark.
+The [evaluateApplication](../api/informationprotectionlabel-evaluateApplication.md), [evaluateClassificationResults](../api/informationprotectionlabel-evaluateClassificationResults.md), or [evaluateRemoval](../api/informationprotectionlabel-evaluateRemoval.md) APIs may return the `removeWatermarkAction` if the watermark is to be removed as a result of updating or removing the label. The action instructs the consuming application to remove the specific UI element that contains the previously-applicable content watermark.
 
 ## Properties
 
 | Property       | Type              | Description                           |
 | :------------- | :---------------- | :------------------------------------ |
-| uiElementNames | String collection | The name of the UI element to remove. |
+| uiElementNames | String collection | The name of the UI element where the footer to be removed. |
 
 ## JSON representation
 

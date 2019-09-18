@@ -1,23 +1,22 @@
 ---
 title: "labelingOptions resource type"
-description: "PROVIDE DESCRIPTION HERE"
+description: "Describes the labeling options that can be provided to the evaluation APIs."
 localization_priority: Normal
 author: "tommoser"
-ms.prod: "microsoft.informationprotection"
+ms.prod: "microsoft.informationprotection""
 doc_type: "resourcePageType"
 ---
 
 # labelingOptions resource type
 
-[!INCLUDE beta-disclaimer]
+[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-labelingOptions must be passed in to applyLabel to specify details on the desired outcome of the operation. 
+`labelingOptions` must be passed in to the [evaluateApplication](../api/informationprotection-evaluateapplication.md) API to specify details about the label that is to be applied. 
 
 ## Properties
 
 | Property               | Type                                                | Description                                                                                                                   |
 | :--------------------- | :-------------------------------------------------- | :---------------------------------------------------------------------------------------------------------------------------- |
-| actionSource           | String                                              | Possible values are: `manual`, `automatic`, `recommended`, `policyDefault`, `mandatory`.                                      |
 | assignmentMethod       | String                                              | Possible values are: `standard`, `privileged`, `auto`.                                                                        |
 | downgradeJustification | [downgradeJustification](downgradejustification.md) | The downgrade justification object that indicates if downgrade was justified and, if so, the reason.                          |
 | extendedProperties     | [keyValuePair](keyvaluepair.md) collection          | Extended properties will be parsed and returned in the standard MIP labeled metadata format as part of the label information. |
@@ -38,7 +37,6 @@ The following is a JSON representation of the resource.
 
 ```json
 {
-  "actionSource": "String",
   "assignmentMethod": "String",
   "downgradeJustification": {"@odata.type": "microsoft.graph.downgradeJustification"},
   "extendedProperties": [{"@odata.type": "microsoft.graph.keyValuePair"}],

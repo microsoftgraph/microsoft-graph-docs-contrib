@@ -1,20 +1,26 @@
 ---
-title: "informationProtectionPolicy: extractLabel"
-description: "PROVIDE DESCRIPTION HERE"
+title: "informationProtectionLabel: evaluateRemoval"
+description: "Evaluate which label to remove and how to remove it based on existing content info."
 localization_priority: Normal
 author: "tommoser"
 ms.prod: "microsoft.informationprotection"
 doc_type: "apiPageType"
 ---
 
-# Extract a label from information
+# informationProtectionLabel: evaluateRemoval
 
-[!INCLUDE beta-disclaimer]
+[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Using the metadata that exists on an already-labeled piece of information, resolve the metadata to a specific sensitivity label. The [contentState](..resources/contentstate.md) input is resolved to [informationProtectionContentLabel](../resources/informationprotectioncontentlabel.md).
+The `evaluateRemoval` API informs the consuming application of specifically what actions it should take to remove the label.  
 
->[!NOTE]
->The **informationProtectionContentLabel** resource represents a sensitivity label that has been applied to a piece of information. InformationProtectionLabel are the abstract labels that are part of the organizational labeling policy that can be applied to information.
+Given [contentInfo](../resources/contentinfo.md) as an input, which includes existing content metadata [key/value pairs](../resources/keyvaluepair.md), the API returns an [informationProtectionAction](../resources/informationProtectionAction.md) that contains some combination of one of more of the following: 
+
+* [justifyAction](../resources/justifyAction.md)
+* [metadataAction](../resources/metadataAction.md)
+* [removeContentFooterAction](../resources/removeContentFooterAction.md)
+* [removeContentHeaderAction](../resources/removeContentHeaderAction.md)
+* [removeProtectionAction](../resources/removeProtectionAction.md)
+* [removeWatermarkAction](../resources/removeWatermarkAction.md)
 
 ## Permissions
 
@@ -31,15 +37,14 @@ One of the following permissions is required to call this API. To learn more, in
 <!-- { "blockType": "ignored" } -->
 
 ```http
-POST /users/{id}/informationProtection/policy/extractLabel
-POST /organization/{id}/informationProtection/policy/extractLabel
+POST /informationprotection/core/labels/{id}/evaluateRemoval
 ```
 
 ## Request headers
 
 | Name          | Description   |
 |:--------------|:--------------|
-| Authorization | Bearer {code} |
+| Authorization | Bearer {token} |
 
 ## Request body
 
@@ -47,27 +52,28 @@ In the request body, provide a JSON object with the following parameters.
 
 | Parameter    | Type        | Description |
 |:-------------|:------------|:------------|
-|contentInfo| [contentInfo](../resources/contentInfo.md) | Provides details on the [content format](../resources/enums.md#contentFormat), [content state](../resources/enums.md#contentState), and existing [metadata](../resources/keyvaluepair.md) as key/value pairs.  |
-|auditInfo|[auditInfo](../resources/auditInfo.md)|  Metadata pased in to the *auditInfo* parameter will surface in Azure Information Protection Analytics details about the actions taken. |
+| contentInfo     | [contentInfo](../resources/contentInfo.md)         | Provides details on the [content format](../resources/enums.md#contentFormat), [content state](../resources/enums.md#contentState), and existing [metadata](../resources/keyvaluepair.md) as key/value pairs.           |
+|downgradeJustification|[downgradeJustification](../resources/downgradeJustification.md)| Justification that must be provided by the user or application logic. |
+
 
 ## Response
 
-If successful, this method returns a `200 OK` response code and a new [informationProtectionContentLabel](../resources/informationprotectioncontentlabel.md) object in the response body.
+If successful, this method returns a `200 OK` response code and a new [informationProtectionAction](../resources/informationprotectionaction.md) collection object in the response body. The [informationProtectionAction object](../resources/informationprotectionaction.md) will contain a [metadataAction](../resources/metadataaction.md) object that informs 
 
 ## Examples
 
-The following example shows how to call this API.
+The following is an example of how to call this API.
 
 ### Request
 
 The following is an example of the request.
 <!-- {
   "blockType": "request",
-  "name": "informationprotectionpolicy_extractlabel"
+  "name": "informationprotectionlabel_evaluateremoval"
 }-->
 
 ```http
-POST https://graph.microsoft.com/beta/users/{id}/informationProtection/policy/extractLabel
+POST https://graph.microsoft.com/beta/informationprotection/core/labels/{id}/evaluateRemoval
 Content-type: application/json
 
 {
@@ -103,7 +109,7 @@ Content-type: application/json
             {
                 "@odata.type": "#microsoft.informationProtection.keyValuePair",
                 "name": "MSIP_Label_3a80e051-487c-40d4-b491-73ad25d997e6_Name",
-                "value": "General"
+                "value": "LabelScopedToBob_Tests"
             },
             {
                 "@odata.type": "#microsoft.informationProtection.keyValuePair",
@@ -117,8 +123,9 @@ Content-type: application/json
             }
         ]
     },
-    "auditInfo": {
-        	"@odata.type": "#microsoft.informationProtection.auditInfo"
+    "downgradeJustification": {
+        "justificationMessage": "The information has be declassified.",
+        "isDowngradeJustified": true
     }
 }
 ```
@@ -132,25 +139,30 @@ The following is an example of the response.
 <!-- {
   "blockType": "response",
   "truncated": true,
-  "@odata.type": "microsoft.graph.informationProtectionContentLabel"
+  "@odata.type": "microsoft.graph.informationProtectionAction",
+  "isCollection": true
 } -->
 
 ```http
 HTTP/1.1 200 OK
 Content-type: application/json
 {
-    "@odata.context": "https://graph.microsoft.com/beta/$metadata#microsoft.graph.informationProtectionContentLabel",
-    "creationDateTime": "1970-01-01T00:00:00Z",
-    "assignmentMethod": "standard",
-    "label": {
-        "id": "3a80e051-487c-40d4-b491-73ad25d997e6",
-        "name": "General",
-        "description": "Consult Contoso data labeling policy for more details.",
-        "color": "",
-        "sensitivity": 1,
-        "tooltip": "Data classified as Contoso General.",
-        "isActive": true
-    }
+    "@odata.context": "https://graph.microsoft.com/beta/$metadata#Collection(microsoft.graph.informationProtectionAction)",
+    "value": [
+        {
+            "@odata.type": "#microsoft.graph.metadataAction",
+            "metadataToRemove": [
+                "MSIP_Label_3a80e051-487c-40d4-b491-73ad25d997e6_Enabled",
+                "MSIP_Label_3a80e051-487c-40d4-b491-73ad25d997e6_Method",
+                "MSIP_Label_3a80e051-487c-40d4-b491-73ad25d997e6_SetDate",
+                "MSIP_Label_3a80e051-487c-40d4-b491-73ad25d997e6_SiteId",
+                "MSIP_Label_3a80e051-487c-40d4-b491-73ad25d997e6_Name",
+                "MSIP_Label_3a80e051-487c-40d4-b491-73ad25d997e6_ContentBits",
+                "MSIP_Label_3a80e051-487c-40d4-b491-73ad25d997e6_ActionId"
+            ],
+            "metadataToAdd": []
+        }
+    ]
 }
 ```
 
@@ -158,7 +170,7 @@ Content-type: application/json
 2019-02-04 14:57:30 UTC -->
 <!-- {
   "type": "#page.annotation",
-  "description": "informationProtectionPolicy: extractLabel",
+  "description": "informationProtectionLabel: evaluateRemoval",
   "keywords": "",
   "section": "documentation",
   "tocPath": ""

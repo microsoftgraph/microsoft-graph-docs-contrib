@@ -1,6 +1,6 @@
 ---
 title: "contentInfo resource type"
-description: "PROVIDE DESCRIPTION HERE"
+description: "contentInfo describes the current state of some information that is to be labeled."
 localization_priority: Normal
 author: "tommoser"
 ms.prod: "microsoft.informationprotection"
@@ -9,17 +9,17 @@ doc_type: "resourcePageType"
 
 # contentInfo resource type
 
-[!INCLUDE beta-disclaimer]
+[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-PROVIDE DESCRIPTION HERE
+`contentInfo` is passed in to the [evaluateRemoval](../api/informationprotection-evaluateRemoval.md), [evaluateApplication](../api/informationprotection-evaluateApplication.md), and [evaluateClassificationResults](../api/informationprotection-evaluateClassificationResults.md) APIs to describe to the API the current state of the information. This `contentInfo` detail drives the results on what metadata, content marking, and protection should be added or removed when the label is applied, updated, or removed. 
 
 ## Properties
 
 | Property   | Type                                       | Description                                   |
 | :--------- | :----------------------------------------- | :-------------------------------------------- |
-| format     | String                                     | Possible values are: `file`, `email`.         |
+| format     | String                                     | Possible values are: `default`, `email`.      |
 | identifier | String                                     |                                               |
-| metadata   | [keyValuePair](keyvaluepair.md) collection |                                               |
+| metadata   | [keyValuePair](keyvaluepair.md) collection | Existing Microsoft Information Protection metadata is passed as key/value pairs, where the key is the MSIP_Label_GUID_PropName.                                              |
 | state      | String                                     | Possible values are: `rest`, `motion`, `use`. |
 
 ## JSON representation

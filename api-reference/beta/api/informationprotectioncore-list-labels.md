@@ -1,17 +1,17 @@
 ---
-title: "List labels"
-description: "Retrieve a list of information protection label objects."
+title: "informationProtectionLabel: listLabels"
+description: "Retrieve a list of information protection labels."
 localization_priority: Normal
 author: "tommoser"
 ms.prod: "microsoft.informationprotection"
 doc_type: "apiPageType"
 ---
 
-# List labels
+# informationProtectionLabel: listLabels
 
-[!INCLUDE beta-disclaimer]
+[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Get a collection of information protection labels available to the user or the to organization.
+Get a collection of [information protection labels](../resources/informationprotectionlabel.md) available to the user or to the organization.
 
 ## Permissions
 
@@ -21,26 +21,27 @@ One of the following permissions is required to call this API. To learn more, in
 | :------------------------------------- | :------------------------------------------ |
 | Delegated (work or school account)     | InformationProtectionPolicy.Read            |
 | Delegated (personal Microsoft account) | Not supported.                              |
-| Application                            | InformationProtectionPolicy.Read.All        |
+| Application                            | InformationProtectionPolicy.Read.All        |                         | Not supported. |
 
 ## HTTP request
 
 <!-- { "blockType": "ignored" } -->
 
 ```http
-GET /users/{id | userPrincipalName}/informationProtection/policy/labels
-GET /organization/{id}/informationProtection/policy/labels
+GET /informationprotection/core/labels
+GET /users/{id | userPrincipalName}/informationProtection/core/labels
+GET /organization/{id}/informationProtection/core/labels
 ```
 
 ## Optional query parameters
 
-This method supports some of the OData query parameters to help customize the response. For general information, see [OData Query Parameters](/graph/query-parameters)
+This method supports some of the OData query parameters to help customize the response. For general information, see [OData query parameters](/graph/query-parameters).
 
 ## Request headers
 
-| Name          | Description               |
-| :------------ | :------------------------ |
-| Authorization | Bearer {token}. Required. |
+| Name      |Description|
+|:----------|:----------|
+| Authorization | Bearer {token} |
 
 ## Request body
 
@@ -61,7 +62,7 @@ The following is an example of the request.
 }-->
 
 ```http
-GET https://graph.microsoft.com/beta/users/{id}/informationProtection/policy/labels
+GET https://graph.microsoft.com/beta/informationprotection/core/labels
 ```
 
 ### Response
@@ -82,7 +83,7 @@ HTTP/1.1 200 OK
 Content-type: application/json
 
 {
-  "@odata.context": "https://graph.microsoft.com/beta/$metadata#users('1e36d926-d716-4197-ba86-a6e18eb910b9')/informationProtection/policy/labels",
+  "@odata.context": "https://graph.microsoft.com/beta/$metadata#users('1e36d926-d716-4197-ba86-a6e18eb910b9')/informationProtection/core/labels",
   "value": [
       {
           "id": "3a80e051-487c-40d4-b491-73ad25d997e6",

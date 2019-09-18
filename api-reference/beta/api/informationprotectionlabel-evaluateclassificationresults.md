@@ -1,19 +1,35 @@
 ---
-title: "Apply label"
-description: "Apply a label."
+title: "informationProtectionLabel: evaluateClassificationResults"
+description: "Evaluate which label to apply based on existing content info and a classification result."
 localization_priority: Normal
 author: "tommoser"
 ms.prod: "microsoft.informationprotection"
 doc_type: "apiPageType"
 ---
 
-# Apply label
+# informationProtectionLabel: evaluateClassificationResults
 
-[!INCLUDE beta-disclaimer]
+[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Compute the sensitivity label that should be applied and return the set of actions that must be taken to correctly label the information.
+Using [classification results](../resources/classificationResult.md), compute the [information protection label](../resources/informationProtectionLabel.md) that should be applied and return the set of actions that must be taken to correctly label the information. This API is useful when a label should be set automatically based on classification of the file contents, rather than labeled directly by a user or service. 
 
-Given [contentInfo]() and [labelingOptions](../resources/labelingOptions.md) as an input, which includes existing content metadata [key/value pairs](../resources/keyvaluepair.md), the API returns some combination of one of more of the following: [customAction](../resources/customaction.md), [informationProtectionAction](../resources/informationProtectionAction.md), [justifyAction](../resources/justifyAction.md),[metadataAction](../resources/metadataAction.md), etc.
+To evaluate based on classification results, provide [contentInfo](../resources/labelingOptions.md), which includes existing content metadata [key/value pairs](../resources/keyvaluepair.md), and [classification results](../resources/classificationResult.md). The API returns an [informationProtectionAction](../resources/informationProtectionAction.md) that contains one of more of the following: 
+
+* [addContentFooterAction](../resources/addContentFooterAction.md)
+* [addContentHeaderAction](../resources/addContentHeaderAction.md)
+* [addWatermarkAction](../resources/addWatermarkAction.md)
+* [applyLabelAction](../resources/applyLabelAction.md)
+* [customAction](../resources/customaction.md)
+* [justifyAction](../resources/justifyAction.md)
+* [metadataAction](../resources/metadataAction.md)
+* [protectAdhocAction](../resources/protectAdhocAction.md)
+* [protectByTemplateAction](../resources/protectByTemplateAction.md)
+* [protectionDoNotForwardAction](../resources/protectDoNotForwardAction.md)
+* [recommendedLabelAction](../resources/recommendedLabelAction.md)
+* [removeContentFooterAction](../resources/removeContentFooterAction.md)
+* [removeContentHeaderAction](../resources/removeContentHeaderAction.md)
+* [removeProtectionAction](../resources/removeProtectionAction.md)
+* [removeWatermarkAction](../resources/removeWatermarkAction.md)
 
 ## Permissions
 
@@ -30,44 +46,42 @@ One of the following permissions is required to call this API. To learn more, in
 <!-- { "blockType": "ignored" } -->
 
 ```http
-POST /users/{id}/informationProtection/policy/applyLabel
-POST /organization/{id}/informationProtection/policy/applyLabel
+POST /informationprotection/core/labels/{id}/evaluateClassificationResults
 ```
 
 ## Request headers
 
-| Name          | Description   |
-| :------------ | :------------ |
-| Authorization | Bearer {code} |
+| Name          | Description    |
+| :------------ | :------------- |
+| Authorization | Bearer {token} |
 
 ## Request body
 
 In the request body, provide a JSON object with the following parameters.
 
-| Parameter       | Type                                               | Description |
-| :-------------- | :------------------------------------------------- | :---------- |
-| contentInfo     | [contentInfo](../resources/contentInfo.md)         | Provides details on the [content format](../resources/enums.md#contentFormat), [content state](../resources/enums.md#contentState), and existing [metadata](../resources/keyvaluepair.md) as key/value pairs.           |
-| labelingOptions | [labelingOptions](../resources/labelingoptions.md) | Provides details about the desired state of the content.|
-| auditInfo       | [auditInfo](../resources/auditInfo.md)             | Metadata pased in to the *auditInfo* parameter will surface in Azure Information Protection Analytics details about the actions taken. |
+| Parameter             | Type                                       | Description                                                                                                                                                                                                   |
+| :-------------------- | :----------------------------------------- | :------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ |
+| contentInfo           | [contentInfo](../resources/contentInfo.md) | Provides details on the [content format](../resources/enums.md#contentFormat), [content state](../resources/enums.md#contentState), and existing [metadata](../resources/keyvaluepair.md) as key/value pairs. |
+| classificationResults | [classificationResult](../resources/classificationResult.md) collection | Contains the set of classification results returned by the data classification endpoint. Classificaiton information is used to determine the appropriate label based on the Microsoft Information Protection policy label configuration in Office 365 Security and Compliance Center. |
 
 ## Response
 
-If successful, this method returns a `200 OK` response code and a new [informationProtectionAction](../resources/informationprotectionaction.md) collection object in the response body.
+If successful, this method returns `200, OK` response code and a new [informationProtectionAction](../resources/informationprotectionaction.md) collection object in the response body.
 
 ## Examples
 
-The following example shows how to call this API.
+The following is an example of how to call this API.
 
 ### Request
 
 The following is an example of the request.
 <!-- {
   "blockType": "request",
-  "name": "informationprotectionpolicy_applylabel"
+  "name": "informationprotectionlabel_evaluateclassificationresults"
 }-->
 
 ```http
-POST https://graph.microsoft.com/beta/users/{id}/informationProtection/policy/applyLabel
+POST https://graph.microsoft.com/beta/informationprotection/core/labels/{id}/evaluateClassificationResults
 Content-type: application/json
 
 {
@@ -117,20 +131,13 @@ Content-type: application/json
             }
         ]
     },
-    "auditInfo": {
-        	"@odata.type": "#microsoft.informationProtection.auditInfo"
-    },
-    "labelingOptions": {
-        "@odata.type": "#microsoft.informationProtection.labelingOptions",
-        "assignmentMethod@odata.type": "#microsoft.informationProtection.assignmentMethod",
-        "assignmentMethod": "standard",
-        "labelId@odata.type": "#Guid",
-        "labelId": "4662f9a3-dd50-4a20-b984-a7be82e0e79c",
-        "downgradeJustification": null,
-        "actionSource": "Manual",
-        "extendedProperties@odata.type": "#Collection(microsoft.informationProtection.keyValuePair)",
-        "extendedProperties": []
+  "classificationResults": [
+    {
+      "sensitiveTypeId": "sensitiveTypeId-value",
+      "count": 99,
+      "confidenceLevel": 99
     }
+  ]
 }
 ```
 
@@ -223,7 +230,7 @@ Content-type: application/json
 2019-02-04 14:57:30 UTC -->
 <!-- {
   "type": "#page.annotation",
-  "description": "informationProtectionPolicy: applyLabel",
+  "description": "informationProtectionLabel: evaluateClassificationResults",
   "keywords": "",
   "section": "documentation",
   "tocPath": ""

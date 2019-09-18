@@ -9,7 +9,7 @@ doc_type: "resourcePageType"
 
 # removeProtectionAction resource type
 
-[!INCLUDE beta-disclaimer]
+[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 removeProtectionAction informs the calling application to remove protection from the information. Protection should be removed only if the calling user has sufficient rights to remove protection.
 

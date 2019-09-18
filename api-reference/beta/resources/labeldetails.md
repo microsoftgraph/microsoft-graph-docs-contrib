@@ -1,6 +1,6 @@
 ---
 title: "labelDetails resource type"
-description: "PROVIDE DESCRIPTION HERE"
+description: "Describes the label details of an information protection label."
 localization_priority: Normal
 author: "tommoser"
 ms.prod: "microsoft.informationprotection"
@@ -9,7 +9,7 @@ doc_type: "resourcePageType"
 
 # labelDetails resource type
 
-[!INCLUDE beta-disclaimer]
+[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 labelDetails provides information on a single information protection label. May be returned as part of applyLabel, applyLabelFromClassification, or extractLabel.
 
@@ -19,7 +19,7 @@ labelDetails provides information on a single information protection label. May 
 | :---------- | :------ | :----------------------------------------------------------------------------------------------------------- |
 | color       | String  | The color that the user interface should display for the label, if configured.                               |
 | description | String  | The admin-defined description for the label.                                                                 |
-| id          | String  | The label ID is a globally unique identifier (GUID)                                                          |
+| id          | String  | The label ID is a globally unique identifier (GUID).                                                          |
 | isActive    | Boolean | Indicates whether the label is active or not. Active labels should be hidden or disabled in user interfaces. |
 | name        | String  | The plaintext name of the label.                                                                             |
 | sensitivity | Int32   | The sensitivity value of the label, where lower is less sensitive.                                           |

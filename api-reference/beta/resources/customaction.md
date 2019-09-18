@@ -1,6 +1,6 @@
 ---
 title: "customAction resource type"
-description: "PROVIDE DESCRIPTION HERE"
+description: "Describes custom actions that a label may provide, if configured by the administrator."
 localization_priority: Normal
 author: "tommoser"
 ms.prod: "microsoft.informationprotection"
@@ -9,16 +9,16 @@ doc_type: "resourcePageType"
 
 # customAction resource type
 
-[!INCLUDE beta-disclaimer]
+[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-PROVIDE DESCRIPTION HERE
+Custom actions may be defined as part of an [informationProtectionLabel](informationProtectionLabel.md) via Office 365 Security and Compliance Center's PowerShell module. The actions must be understood by the consuming application.
 
 ## Properties
 
-| Property     | Type        | Description |
-|:-------------|:------------|:------------|
-|name|String||
-|properties|[keyValuePair](keyvaluepair.md) collection||
+| Property   | Type                                       | Description                                          |
+| :--------- | :----------------------------------------- | :--------------------------------------------------- |
+| name       | String                                     | Name of the custom action.                           |
+| properties | [keyValuePair](keyvaluepair.md) collection | Properties, in key value pair format, of the action. |
 
 ## JSON representation
 

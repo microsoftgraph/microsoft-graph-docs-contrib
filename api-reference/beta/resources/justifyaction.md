@@ -9,7 +9,7 @@ doc_type: "resourcePageType"
 
 # justifyAction resource type
 
-[!INCLUDE beta-disclaimer]
+[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 The applyLabel, applyLabelFromClassification, or removeLabel APIs may return justifyACtion. The action instructs the consuming application that justification is required for the specific operation. Justification is provided via [labelingOptions](../resources/labelingoptions.md). The previous call should be repeated, but with the downgradeJustification property of `labelingOptions` set with a justification message, provided via user input or application logic.
 

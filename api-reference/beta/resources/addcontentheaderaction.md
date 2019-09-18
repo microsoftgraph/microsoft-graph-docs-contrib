@@ -1,6 +1,6 @@
 ---
 title: "addContentHeaderAction resource type"
-description: "Action specifies the details on the content header to be added to the information, if applicable."
+description: "PROVIDE DESCRIPTION HERE"
 localization_priority: Normal
 author: "tommoser"
 ms.prod: "microsoft.informationprotection"
@@ -9,9 +9,9 @@ doc_type: "resourcePageType"
 
 # addContentHeaderAction resource type
 
-[!INCLUDE beta-disclaimer]
+[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-The applyLabel or applyLabelFromClassification APIs may return addContentHeaderAction. The action instructs the consuming application about if a content header is required and, if so, what are the properties of that header.
+The [evaluateApplication]() or [evaluateClassificationResults]()  APIs may return addContentHeaderAction. The action informs the consuming application that a content header is required and of the specific properties of that header.
 
 ## Properties
 
