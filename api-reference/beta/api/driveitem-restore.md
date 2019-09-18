@@ -71,9 +71,9 @@ Content-type: application/json
 
 {
   "parentReference": {
-    "id": "{new-parent-folder-id}",
+    "id": "String",
   },
-  "name": "{new-restored-item-name}"
+  "name": "String"
 }
 ```
 
