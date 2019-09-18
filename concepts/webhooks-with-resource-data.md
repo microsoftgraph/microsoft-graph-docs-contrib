@@ -313,7 +313,7 @@ To decrypt resource data, your app should perform the reverse steps, using the p
 The decryption parameters for the AES algorithm are as follows:
   - Padding: PKCS7
   - Cipher mode: CBC
-  - The "initialization vector" must be set by copying the first @@@how many@@@ bytes of the symmetric key used for decryption
+  - The "initialization vector" must be set by copying the first 16 bytes of the symmetric key used for decryption
 
 1. The decrypted value is a string json representation of the resource included in the notification.
 
@@ -393,7 +393,7 @@ aesProvider.Padding = PaddingMode.PKCS7;
 aesProvider.Mode = CipherMode.CBC;
 
 // obtain the intialization vector from the symmetric key itself
-var vectorSize = @@@add the value here@@@;
+int vectorSize = 16;
 byte[] iv = new byte[vectorSize];
 Array.Copy(decryptedSymmetricKey, iv, vectorSize);
 aesProvider.IV = iv;
