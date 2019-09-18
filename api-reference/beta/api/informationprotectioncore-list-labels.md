@@ -29,8 +29,6 @@ One of the following permissions is required to call this API. To learn more, in
 
 ```http
 GET /informationprotection/core/labels
-GET /users/{id | userPrincipalName}/informationProtection/core/labels
-GET /organization/{id}/informationProtection/core/labels
 ```
 
 ## Optional query parameters
