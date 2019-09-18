@@ -9,8 +9,6 @@ author: "svpsiva"
 
 # convertIdResult resource type
 
-[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
-
 The result of an ID format conversion performed by the [translateExchangeIds](../api/user-translateexchangeids.md) function.
 
 ## Properties
