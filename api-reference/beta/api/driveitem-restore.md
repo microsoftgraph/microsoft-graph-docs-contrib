@@ -92,6 +92,7 @@ The following is an example of the response.
 ```http
 HTTP/1.1 200 OK
 Content-type: application/json
+
 {
   "id": "1312abc!1231",
   "name": "new-restored-item-name.txt",
