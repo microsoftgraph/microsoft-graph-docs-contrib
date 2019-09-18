@@ -48,8 +48,8 @@ Content-Type: application/json
   "lifecycleNotificationUrl": "https://webhook.azurewebsites.net/api/lifecycleNotifications",
   "resource": "/teams/allMessages",
   "includeResourceData": true,
-  "encryptionCertificate": <base64encodedCertificate>,
-  "encryptionCertificateId": <customId>,
+  "encryptionCertificate": "<base64encodedCertificate>",
+  "encryptionCertificateId": "<customId>",
   "expirationDateTime": "2019-09-19T11:00:00.0000000Z",
   "clientState": "<secretClientState>"
 }
@@ -65,8 +65,8 @@ Content-Type: application/json
   "lifecycleNotificationUrl": "https://webhook.azurewebsites.net/api/lifecycleNotifications",
   "resource": "/teams/allMessages",
   "includeResourceData": true,
-  "encryptionCertificateId": <customId>,   
-  "encryptionCertificateThumbprint": <thumbprintFromTheCertificate>,
+  "encryptionCertificateId": "<customId>",   
+  "encryptionCertificateThumbprint": "<thumbprintFromTheCertificate>",
   "expirationDateTime": "2019-09-19T11:00:00.0000000Z",
   "clientState": "<secretClientState>"
 }
@@ -198,7 +198,7 @@ In this example, the notification contains two items for the same app, and for t
       "tenantId": "84bd8158-6d4d-4958-8b9f-9d6445542f95",
 			"changeType": "created",
 			...
-			},
+		  },
       {
 			"subscriptionId": "e990d58f-fd93-40af-acf7-a7c907c5d8ea",
       "tenantId": "46d9e3bd-6309-4177-a016-b256a411e30f",
