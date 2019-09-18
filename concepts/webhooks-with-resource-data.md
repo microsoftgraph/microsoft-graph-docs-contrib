@@ -46,7 +46,7 @@ Content-Type: application/json
   "changeType": "created,updated",
   "notificationUrl": "https://webhook.azurewebsites.net/api/resourceNotifications",
   "lifecycleNotificationUrl": "https://webhook.azurewebsites.net/api/lifecycleNotifications",
-  "resource": "/teams/allMessages,
+  "resource": "/teams/allMessages",
   "includeResourceData": true,
   "encryptionCertificate": <base64encodedCertificate>,
   "encryptionCertificateId": <customId>,
