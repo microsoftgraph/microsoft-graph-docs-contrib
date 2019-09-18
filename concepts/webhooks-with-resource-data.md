@@ -235,8 +235,6 @@ If you are new to token validation, this [blog article](http://www.cloudidentity
 
 This validation should be performed on every JWT token in the **validationTokens** array. If any tokens fail, you should consider the notification suspicious and investigate further.
 
-See here for sample code performing the validation. @@@LINK to sample app@@@ using the [System.IdentityModel.Tokens.Jwt](https://www.nuget.org/packages/System.IdentityModel.Tokens.Jwt/) library for .NET.
-
 #### Sample JWT token
 
 Here is an example of the properties included in the JWT token that are needed for validation:
