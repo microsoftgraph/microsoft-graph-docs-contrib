@@ -1,43 +1,50 @@
 ---
-author: JeremyKelley
+title: "PendingOperations"
 description: "The pendingOperations resource indicates that one or more operations that may affect the state of the driveItem are pending completion."
-ms.date: 08/06/2019
-title: PendingOperations
 localization_priority: Normal
-doc_type: resourcePageType
+author: "JeremyKelley"
+ms.date: 08/06/2019
 ms.prod: ""
+doc_type: "resourcePageType"
 ---
+
 # PendingOperations resource type
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 The **pendingOperations** resource indicates that one or more operations that may affect the state of the DriveItem are pending completion.
 
+## Properties
+
+| Property     | Type        | Description |
+|:-------------|:------------|:------------|
+|pendingContentUpdate|[pendingContentUpdate](pendingcontentupdate.md)||
+
 ## JSON representation
 
-<!-- { "blockType": "resource", "@odata.type": "microsoft.graph.pendingOperations" } -->
+The following is a JSON representation of the resource.
+
+<!-- {
+  "blockType": "resource",
+  "optionalProperties": [
+
+  ],
+  "@odata.type": "microsoft.graph.pendingOperations",
+  "baseType": null
+}-->
+
 ```json
 {
-  "pendingContentUpdate": { "@odata.type": "microsoft.graph.pendingContentUpdate" }
+  "pendingContentUpdate": {"@odata.type": "microsoft.graph.pendingContentUpdate"}
 }
 ```
 
-## Properties
-
-| Property Name       | Type                    | Description                                                                                                 |
-|:--------------------|:------------------------|:------------------------------------------------------------------------------------------------------------|
-| pendingContentUpdate | [pendingContentUpdate][] | A property indicating that an operation that may update the binary content of a file is pending completion. |
-
-## Remarks 
-
-For more information about the facets on a DriveItem, see [DriveItem](driveitem.md).
-
-[pendingContentUpdate]:pendingcontentupdate.md
-
+<!-- uuid: 16cd6b66-4b1a-43a1-adaf-3a886856ed98
+2019-02-04 14:57:30 UTC -->
 <!-- {
   "type": "#page.annotation",
   "description": "The pendingOperations resource indicates that an operation that may affect the state of the DriveItem is pending completion.",
-  "keywords": "pendingoperations, pendingoperations, operation, pendingcontentupdate",
+  "keywords": "pendingoperations,pendingoperations,operation,pendingcontentupdate",
   "section": "documentation",
-  "tocPath": "Facets/PendingOperations"
-} -->
+  "tocPath": ""
+}-->

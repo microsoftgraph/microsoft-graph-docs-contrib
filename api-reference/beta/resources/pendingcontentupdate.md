@@ -1,41 +1,50 @@
 ---
-author: JeremyKelley
+title: "PendingContentUpdate"
 description: "The pendingContentUpdate resource indicates that an operation that may affect the binary content of the driveItem is pending completion."
-ms.date: 08/06/2019
-title: PendingContentUpdate
 localization_priority: Normal
-doc_type: resourcePageType
+author: "JeremyKelley"
+ms.date: 08/06/2019
 ms.prod: ""
+doc_type: "resourcePageType"
 ---
+
 # PendingContentUpdate resource type
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 The **pendingContentUpdate** resource indicates that an operation that may affect the binary content of the DriveItem is pending completion.
 
+## Properties
+
+| Property     | Type         | Description |
+|:-------------|:-------------|:------------|
+|queuedDateTime|DateTimeOffset|Date and time the pending binary operation was queued in UTC time. Read-only.|
+
 ## JSON representation
 
-<!-- { "blockType": "resource", "@odata.type": "microsoft.graph.pendingContentUpdate" } -->
+The following is a JSON representation of the resource.
+
+<!-- {
+  "blockType": "resource",
+  "optionalProperties": [
+
+  ],
+  "@odata.type": "microsoft.graph.pendingContentUpdate",
+  "baseType": null
+}-->
+
 ```json
 {
   "queuedDateTime": "String (timestamp)"
 }
 ```
 
-## Properties
-
-| Property Name  | Type           | Description                                                       |
-|:---------------|:---------------|:------------------------------------------------------------------|
-| queuedDateTime | DateTimeOffset | Date and time the pending binary operation was queued. Read-only. |
-
-## Remarks 
-
-For more information about the facets on a DriveItem, see [DriveItem](driveitem.md).
-
+<!-- uuid: 16cd6b66-4b1a-43a1-adaf-3a886856ed98
+2019-02-04 14:57:30 UTC -->
 <!-- {
   "type": "#page.annotation",
   "description": "The pendingContentUpdate resource indicates that an operation that may affect the binary content of the DriveItem is pending completion.",
-  "keywords": "pendingoperation, operation, pendingcontentupdate",
+  "keywords": "pendingoperation,operation,pendingcontentupdate",
   "section": "documentation",
-  "tocPath": "Facets/PendingContentUpdate"
-} -->
+  "tocPath": ""
+}-->
