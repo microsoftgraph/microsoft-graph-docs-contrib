@@ -1,7 +1,7 @@
 ---
 title: "Known issues with Microsoft Graph"
 description: "This article describes known issues with Microsoft Graph. For information about the latest updates, see the Microsoft Graph changelog."
-author: "jthake-msft"
+author: ""
 localization_priority: Priority
 ---
 
@@ -32,6 +32,14 @@ Failure to read or update a photo, in this case, would result in the following e
 ### Using delta query
 
 For known issues using delta query, see the [delta query section](#delta-query) in this article.
+
+### Revoke sign-in sessions returns wrong HTTP code
+
+The [user: revokeSignInSessions API](/graph/api/user-revokesigninsessions?view=graph-rest-1.0) should return a `204 No content` response for successful revocations, and an HTTP error code (4xx or 5xx) if anything goes wrong with the request.  However, due to a service issue, this API returns a `200 OK` and a Boolean parameter that is always true.  Until this is fixed, developers are simply advised to treat any 2xx return code as success for this API.
+
+### Incomplete objects when using getByIds request
+
+Requesting objects using [Get directory objects from a list of IDs](/graph/api/directoryobject-getbyids?view=graph-rest-1.0) should return full objects. However, currently [user](/graph/api/resources/user?view=graph-rest-1.0) objects on the v1.0 endpoint are returned with a limited set of properties. As a temporary workaround, when you use the operation in combination with the `$select` query option, more complete [user](/graph/api/resources/user?view=graph-rest-1.0) objects will be returned. This behavior is not in accordance with the OData specifications. Because this behavior might be updated in the future, use this workaround only when you provide `$select=` with all the properties you are interested in, and only if future breaking changes to this workaround are acceptable.
 
 ## Microsoft Teams
 
@@ -79,12 +87,6 @@ Examples of group features that support only delegated permissions:
 
 Using Microsoft Graph to create and name an Office 365 group bypasses any Office 365 group policies that are configured through Outlook Web App.
 
-### Adding and getting attachments of group posts
-
-[Adding](/graph/api/post-post-attachments?view=graph-rest-1.0) attachments to group posts, [listing](/graph/api/post-list-attachments?view=graph-rest-1.0) and
-getting attachments of group posts currently return the error message "The OData request is not supported." A fix has been rolled out for both the `/v1.0` and `/beta` versions,
-and is expected to be widely available by the end of January 2016.
-
 ### Setting the allowExternalSenders property
 
 There is currently an issue that prevents setting the **allowExternalSenders** property of a group in a POST or PATCH operation, in both `/v1.0` and `/beta`.
@@ -123,7 +125,7 @@ GET https://graph.microsoft.com/beta/bookingBusinesses?query=Fabrikam
 When attempting to access events in a calendar that has been shared by another user using the following operation:
 
 ```http
-GET \users('{id}')\calendars('{id}')\events
+GET /users/{id}/calendars/{id}/events
 ```
 
 You may get HTTP 500 with the error code `ErrorInternalServerTransientError`. The error occurs because:
@@ -148,7 +150,7 @@ A calendar shared with you in the new approach appears as just another calendar 
 events in the shared calendar, as if it's your own calendar. As an example:
 
 ```http
-GET \me\calendars('{id}')\events
+GET /me/calendars/{id}/events
 ```
 
 ### Adding and accessing ICS-based calendars in user's mailbox

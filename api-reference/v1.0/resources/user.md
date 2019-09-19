@@ -4,6 +4,7 @@ description: "Represents an Azure AD user account. Inherits from directoryObject
 author: "dkershaw10"
 localization_priority: Priority
 ms.prod: "microsoft-identity-platform"
+doc_type: resourcePageType
 ---
 
 # user resource type
@@ -57,6 +58,7 @@ This resource supports:
 |[getMemberObjects](../api/user-getmemberobjects.md)|String collection| Return all of the groups and directory roles that the user is a member of. The check is transitive. |
 |[reminderView](../api/user-reminderview.md)|[Reminder](reminder.md) collection|Return a list of calendar reminders within the start and end times specified.|
 |[revokeSignInSessions](../api/user-revokesigninsessions.md)| None |Revokes all the user's refresh and session tokens issued to applications, by resetting the **signInSessionsValidFromDateTime** user property to the current date-time. This forces the user to sign in to those applications again.|
+|[translateExchangeIds](../api/user-translateexchangeids.md) |[convertIdResult](convertidresult.md) collection| Translate identifiers of Outlook-related resources between formats.|
 |**Open extensions**| | |
 |[Create open extension](../api/opentypeextension-post-opentypeextension.md) |[openTypeExtension](opentypeextension.md)| Create an open extension and add custom properties to a new or existing resource.|
 |[Get open extension](../api/opentypeextension-get.md) |[openTypeExtension](opentypeextension.md) collection| Get an open extension identified by the extension name.|

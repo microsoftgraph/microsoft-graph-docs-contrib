@@ -4,6 +4,7 @@ description: "Windows 8.1 Trusted Certificate configuration profile"
 author: "rolyon"
 localization_priority: Normal
 ms.prod: "Intune"
+doc_type: resourcePageType
 ---
 
 # windows81TrustedRootCertificate resource type
@@ -102,8 +103,6 @@ Here is a JSON representation of the resource.
   "destinationStore": "String"
 }
 ```
-
-
 
 
 

@@ -4,6 +4,7 @@ description: "Contains properties and inherited properties for web apps."
 author: "rolyon"
 localization_priority: Normal
 ms.prod: "Intune"
+doc_type: resourcePageType
 ---
 
 # webApp resource type
@@ -99,8 +100,6 @@ Here is a JSON representation of the resource.
   "useManagedBrowser": true
 }
 ```
-
-
 
 
 

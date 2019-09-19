@@ -4,6 +4,7 @@ description: "Not yet documented"
 author: "rolyon"
 localization_priority: Normal
 ms.prod: "Intune"
+doc_type: enumPageType
 ---
 
 # enrollmentState enum type
@@ -23,8 +24,6 @@ Not yet documented
 |failed|3|Not enrolled and there is enrollment failure record.|
 |notContacted|4|Device is imported but not enrolled.|
 |blocked|5|Device is enrolled as userless, but is blocked from moving to user enrollment because the app failed to install.|
-
-
 
 
 

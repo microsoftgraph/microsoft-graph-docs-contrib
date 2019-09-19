@@ -4,6 +4,7 @@ description: "Read properties and relationships of the windows10EndpointProtecti
 author: "rolyon"
 localization_priority: Normal
 ms.prod: "Intune"
+doc_type: apiPageType
 ---
 
 # Get windows10EndpointProtectionConfiguration
@@ -21,7 +22,7 @@ One of the following permissions is required to call this API. To learn more, in
 |:---|:---|
 |Delegated (work or school account)|DeviceManagementConfiguration.ReadWrite.All, DeviceManagementConfiguration.Read.All|
 |Delegated (personal Microsoft account)|Not supported.|
-|Application|Not supported.|
+|Application|DeviceManagementConfiguration.ReadWrite.All, DeviceManagementConfiguration.Read.All|
 
 ## HTTP Request
 <!-- {
@@ -62,7 +63,7 @@ Here is an example of the response. Note: The response object shown here may be 
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 30008
+Content-Length: 30085
 
 {
   "value": {
@@ -124,6 +125,7 @@ Content-Length: 30008
         "action": "blocked",
         "trafficDirection": "out",
         "interfaceTypes": "remoteAccess",
+        "edgeTraversal": "blocked",
         "localUserAuthorizations": "Local User Authorizations value"
       }
     ],
@@ -176,6 +178,18 @@ Content-Length: 30008
       ]
     },
     "userRightsLocalLogOn": {
+      "@odata.type": "microsoft.graph.deviceManagementUserRightsSetting",
+      "state": "blocked",
+      "localUsersOrGroups": [
+        {
+          "@odata.type": "microsoft.graph.deviceManagementUserRightsLocalUserOrGroup",
+          "name": "Name value",
+          "description": "Description value",
+          "securityIdentifier": "Security Identifier value"
+        }
+      ]
+    },
+    "userRightsDenyLocalLogOn": {
       "@odata.type": "microsoft.graph.deviceManagementUserRightsSetting",
       "state": "blocked",
       "localUsersOrGroups": [
@@ -463,18 +477,6 @@ Content-Length: 30008
         }
       ]
     },
-    "userRightsRegisterProcessAsService": {
-      "@odata.type": "microsoft.graph.deviceManagementUserRightsSetting",
-      "state": "blocked",
-      "localUsersOrGroups": [
-        {
-          "@odata.type": "microsoft.graph.deviceManagementUserRightsLocalUserOrGroup",
-          "name": "Name value",
-          "description": "Description value",
-          "securityIdentifier": "Security Identifier value"
-        }
-      ]
-    },
     "xboxServicesEnableXboxGameSaveTask": true,
     "xboxServicesAccessoryManagementServiceStartupMode": "automatic",
     "xboxServicesLiveAuthManagerServiceStartupMode": "automatic",
@@ -547,6 +549,7 @@ Content-Length: 30008
     "defenderSecurityCenterHelpURL": "Defender Security Center Help URL value",
     "defenderSecurityCenterNotificationsFromApp": "blockNoncriticalNotifications",
     "defenderSecurityCenterITContactDisplay": "displayInAppAndInNotifications",
+    "windowsDefenderTamperProtection": "enable",
     "firewallBlockStatefulFTP": true,
     "firewallIdleTimeoutForSecurityAssociationInSeconds": 2,
     "firewallPreSharedKeyEncodingMethod": "none",
@@ -746,6 +749,7 @@ Content-Length: 30008
   }
 }
 ```
+
 
 
 

@@ -4,6 +4,7 @@ description: "Windows10 Network Boundary Configuration"
 author: "rolyon"
 localization_priority: Normal
 ms.prod: "Intune"
+doc_type: resourcePageType
 ---
 
 # windows10NetworkBoundaryConfiguration resource type
@@ -128,8 +129,6 @@ Here is a JSON representation of the resource.
   }
 }
 ```
-
-
 
 
 

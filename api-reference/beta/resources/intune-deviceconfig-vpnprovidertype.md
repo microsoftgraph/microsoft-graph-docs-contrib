@@ -4,6 +4,7 @@ description: "Provider type for per-app VPN."
 author: "rolyon"
 localization_priority: Normal
 ms.prod: "Intune"
+doc_type: enumPageType
 ---
 
 # vpnProviderType enum type
@@ -20,8 +21,6 @@ Provider type for per-app VPN.
 |notConfigured|0|Tunnel traffic is not explicitly configured.|
 |appProxy|1|Tunnel traffic at the application layer.|
 |packetTunnel|2|Tunnel traffic at the IP layer.|
-
-
 
 
 

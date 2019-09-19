@@ -4,6 +4,7 @@ description: "Contains properties for the minimum operating system required for 
 author: "rolyon"
 localization_priority: Normal
 ms.prod: "Intune"
+doc_type: resourcePageType
 ---
 
 # androidMinimumOperatingSystem resource type
@@ -61,8 +62,6 @@ Here is a JSON representation of the resource.
   "v9_0": true
 }
 ```
-
-
 
 
 

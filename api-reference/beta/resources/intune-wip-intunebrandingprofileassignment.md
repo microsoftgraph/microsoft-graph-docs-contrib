@@ -4,6 +4,7 @@ description: "This entity contains the properties used to assign a branding prof
 author: "rolyon"
 localization_priority: Normal
 ms.prod: "Intune"
+doc_type: resourcePageType
 ---
 
 # intuneBrandingProfileAssignment resource type
@@ -49,8 +50,6 @@ Here is a JSON representation of the resource.
   }
 }
 ```
-
-
 
 
 

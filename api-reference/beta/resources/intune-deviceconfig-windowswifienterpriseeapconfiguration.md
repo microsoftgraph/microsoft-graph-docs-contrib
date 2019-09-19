@@ -4,6 +4,7 @@ description: "This entity provides descriptions of the declared methods, propert
 author: "rolyon"
 localization_priority: Normal
 ms.prod: "Intune"
+doc_type: resourcePageType
 ---
 
 # windowsWifiEnterpriseEAPConfiguration resource type
@@ -152,8 +153,6 @@ Here is a JSON representation of the resource.
   "outerIdentityPrivacyTemporaryValue": "String"
 }
 ```
-
-
 
 
 

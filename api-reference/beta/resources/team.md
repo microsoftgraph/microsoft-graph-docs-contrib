@@ -1,21 +1,19 @@
 ---
 title: "team resource type"
 description: "A team in Microsoft Teams is a collection of channels. "
-author: "nkramer"
+author: "clearab"
 localization_priority: Priority
 ms.prod: "microsoft-teams"
+doc_type: resourcePageType
 ---
 
 # team resource type
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-A team in Microsoft Teams is a collection of [channel](channel.md) objects. 
-A channel represents a topic, and therefore a logical isolation of discussion, within a team.
+A team in Microsoft Teams is a collection of [channel](channel.md) objects. A channel represents a topic, and therefore a logical isolation of discussion, within a team.
 
-Every team is associated with a [group](../resources/group.md).
-The group has the same ID as the team - for example, /groups/{id}/team is the same as /teams/{id}.
-For more information about working with groups and members in teams, see [Use the Microsoft Graph REST API to work with Microsoft Teams](teams-api-overview.md).
+Every team is associated with a [group](../resources/group.md). The group has the same ID as the team - for example, `/groups/{id}/team` is the same as `/teams/{id}`. For more information about working with groups and members in teams, see [Use the Microsoft Graph REST API to work with Microsoft Teams](teams-api-overview.md).
 
 ## Methods
 
@@ -31,7 +29,6 @@ For more information about working with groups and members in teams, see [Use th
 |[Unarchive team](../api/team-unarchive.md) | [teamsAsyncOperation](../resources/teamsasyncoperation.md) |Restore the team to a read-write state. |
 |[List your teams](../api/user-list-joinedteams.md) | [team](team.md) collection | List the teams you are a member of. |
 |[List all teams](/graph/teams-list-all-teams) | [group](group.md) collection | List all groups that have teams. |
-|[Publish apps to your organization](../resources/teamsapp.md)| [teamsApp](../resources/teamsapp.md) | Create Teams apps visible only to your organization. |
 |[Add app to team](../api/teamsappinstallation-add.md) | [teamsAppInstallation](teamsappinstallation.md) | Adds (installs) an app to a team.|
 |[Add tab to channel](../api/teamstab-add.md) | [teamsTab](../resources/teamstab.md) | Adds (installs) a tab to a team's channel.|
 |[List channel messages](../api/channel-list-messages.md)  | [chatMessage](../resources/chatmessage.md) | [Get messages in a channel](../api/channel-list-messages.md) |
@@ -40,7 +37,7 @@ For more information about working with groups and members in teams, see [Use th
 
 ## Properties
 
-| Property | Type	| Description |
+| Property | Type | Description |
 |:---------------|:--------|:----------|
 |displayName|string| The name of the team. |
 |description|string| An optional description for the team. |
@@ -58,16 +55,15 @@ For more information about working with groups and members in teams, see [Use th
 
 ## Relationships
 
-| Relationship | Type	| Description |
+| Relationship | Type | Description |
 |:---------------|:--------|:----------|
-|apps|[teamsApp](teamsapp.md) collection| (Obsolete) The apps installed in this team.|
 |channels|[channel](channel.md) collection|The collection of channels & messages associated with the team.|
 |installedApps|[teamsAppInstallation](teamsappinstallation.md) collection|The apps installed in this team.|
 |owners|[user](user.md)| The list of this team's owners. Currently, when creating a team using application permissions, exactly one owner must be specified. When using user delegated permissions, no owner can be specified (the current user is the owner). Owner must be specified as an object ID (GUID), not a UPN. |
 |operations|[teamsAsyncOperation](teamsasyncoperation.md) collection| The async operations that ran or are running on this team. | 
+|primaryChannel|[channel](channel.md)| The general channel for the team. | 
 |schedule|[schedule](schedule.md)| The schedule of shifts for this team.|
 |template|[teamsTemplate](teamstemplate.md)| The template this team was created from. See [available templates](https://docs.microsoft.com/en-us/MicrosoftTeams/get-started-with-teams-templates). |
-
 
 ## JSON representation
 
@@ -112,5 +108,6 @@ The following is a JSON representation of the resource.
 -->
 
 ## See Also
+
 - [Creating a group with a team](/graph/teams-create-group-and-team)
 - [Teams API Overview](teams-api-overview.md)
