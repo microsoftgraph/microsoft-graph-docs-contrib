@@ -4,6 +4,7 @@ description: "To call Microsoft Graph, your app must acquire an access token fro
 author: "matt-steele"
 localization_priority: Priority
 ms.prod: "microsoft-identity-platform"
+ms.custom: graphiamtop20
 ---
 
 # Authentication and authorization basics for Microsoft Graph
