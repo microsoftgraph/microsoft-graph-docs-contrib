@@ -4,6 +4,7 @@ description: "This topic describes how to enable application access to partner-m
 author: "jackson-woods"
 localization_priority: Priority
 ms.prod: "microsoft-identity-platform"
+ms.custom: graphiamtop20
 ---
 
 # Call Microsoft Graph from a Cloud Solution Provider application
