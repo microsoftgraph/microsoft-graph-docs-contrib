@@ -303,13 +303,6 @@
           href: api/user-list-manager.md
         - name: Assign manager
           href: api/user-post-manager.md
-      - name: Outlook tasks
-        href: resources/outlooktask.md
-        items:
-        - name: List tasks
-          href: api/outlookuser-list-tasks.md
-        - name: Create tasks
-          href: api/outlookuser-post-tasks.md
       - name: Outlook settings
         href: resources/outlookuser.md
         items:
@@ -325,6 +318,13 @@
           href: api/outlookuser-list-mastercategories.md
         - name: Create category
           href: api/outlookuser-post-mastercategories.md
+      - name: Outlook tasks
+        href: resources/outlooktask.md
+        items:
+        - name: List tasks
+          href: api/outlookuser-list-tasks.md
+        - name: Create tasks
+          href: api/outlookuser-post-tasks.md
       - name: People
         href: resources/person.md
         items:
@@ -8029,6 +8029,8 @@
           href: api/device-list-memberof.md
         - name: List device transitive groups
           href: api/device-list-transitivememberof.md
+        - name: Check member objects
+          href: api/device-checkmemberobjects.md
       - name: Directory object
         href: resources/directoryobject.md
         items:
@@ -8471,6 +8473,8 @@
           href: api/serviceprincipal-update.md
         - name: Delete service principal
           href: api/serviceprincipal-delete.md
+        - name: Check member objects
+          href: api/serviceprincipal-checkmemberobjects.md
       - name: Subscribed sku
         href: resources/subscribedsku.md
         items:
@@ -9821,7 +9825,7 @@
           - name: Create reply
             href: api/workbookcomment-post-replies.md
           - name: Get reply
-            href: workbookcommentreply-get.md
+            href: api/workbookcommentreply-get.md
       - name: Worksheet
         href: resources/workbookworksheet.md
         items:

@@ -29,7 +29,7 @@ The following methods apply to any of the derived types of attachments (**fileAt
 
 | Method       | Return Type  |Description|
 |:---------------|:--------|:----------|
-|[Get attachment](../api/attachment-get.md) | [attachment](attachment.md) |Read the properties and relationships of an attachment, attached to a user event, message, Outlook task, or post.|
+|[Get attachment](../api/attachment-get.md) | [attachment](attachment.md) |Read the properties, relationships, or raw contents of an attachment, attached to a user event, message, Outlook task, or post.|
 |[Add attachment to a user event](../api/event-post-attachments.md) | [attachment](attachment.md) |Add a file, item, or link attachment to an event in a user calendar.|
 |[Add attachment to a message](../api/message-post-attachments.md) | [attachment](attachment.md) |Add a file, item, or link attachment to a message.|
 |[Add attachment to an Outlook task](../api/outlooktask-post-attachments.md) | [attachment](attachment.md) |Add a file, item, or link attachment to an Outlook task.|

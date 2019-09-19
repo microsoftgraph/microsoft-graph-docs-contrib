@@ -80,7 +80,7 @@ items:
             href: outlook-schedule-recurring-events.md
           - name: Get shared events
             href: outlook-get-shared-events-calendars.md
-          - name: Immutable ID (preview)
+          - name: Immutable ID
             href: outlook-immutable-id.md
       - name: Cross-device experiences
         displayName: Project Rome
@@ -138,7 +138,7 @@ items:
             href: outlook-mail-concept-overview.md
           - name: Automate messaging
             href: outlook-create-send-messages.md
-          - name: Get MIME content (preview)
+          - name: Get MIME content
             href: outlook-get-mime-message.md
           - name: Get shared messages
             href: outlook-share-messages-folders.md
@@ -146,7 +146,7 @@ items:
             href: outlook-send-mail-from-other-user.md
           - name: Organize messages
             href: outlook-organize-messages.md
-          - name: Immutable ID (preview)
+          - name: Immutable ID
             href: outlook-immutable-id.md
       - name: Notes
         displayName: OneNote
@@ -190,7 +190,7 @@ items:
             items:
               - name: Overview
                 href: notifications-integration-e2e-overview.md
-              - name: App registraion
+              - name: App registration
                 href: notifications-integration-app-registration.md
               - name: Cross-device onboarding
                 href: notifications-integration-cross-device-experiences-onboarding.md
@@ -209,7 +209,7 @@ items:
             href: outlook-contacts-concept-overview.md
           - name: Get shared contacts
             href: outlook-get-shared-contacts-folders.md
-          - name: Immutable ID (preview)
+          - name: Immutable ID
             href: outlook-immutable-id.md
       - name: Reports
         href: reportroot-concept-overview.md
@@ -250,6 +250,8 @@ items:
             href: teams-configuring-builtin-tabs.md
           - name: Protected APIs
             href: teams-protected-apis.md
+          - name: Send proactive messages with a bot
+            href: teams-proactive-messaging.md
       - name: Workbooks and charts
         displayName: Excel
         items:
