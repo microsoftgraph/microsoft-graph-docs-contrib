@@ -216,6 +216,10 @@ items:
       - name: Security
         items:
           - name: Overview
+            href: search-concept-overview.md
+      - name: Security
+        items:
+          - name: Overview
             href: security-concept-overview.md
           - name: Data flow
             href: security-dataflow.md
