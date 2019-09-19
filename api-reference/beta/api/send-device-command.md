@@ -75,7 +75,7 @@ HTTP/1.1 201 OK
   "postBackUri": "postbackURI"
 }
 ```
-## Command properties 
+### Command properties 
 
 |**Name**|**Type**|**Description**|
 |:----|:------|:------|
