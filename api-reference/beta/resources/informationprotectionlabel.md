@@ -11,19 +11,17 @@ doc_type: "resourcePageType"
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-PROVIDE DESCRIPTION HERE
+
 
 ## Methods
 
-| Method       | Return Type | Description |
-|:-------------|:------------|:------------|
-| [Get informationProtectionLabel](../api/informationprotectionlabel-get.md) | [informationProtectionLabel](informationprotectionlabel.md) | Read properties and relationships of informationProtectionLabel object. |
-| [Update](../api/informationprotectionlabel-update.md) | [informationProtectionLabel](informationprotectionlabel.md) | Update informationProtectionLabel object. |
-| [Delete](../api/informationprotectionlabel-delete.md) | None | Delete informationProtectionLabel object. |
-|[Evaluateapplication](../api/informationprotectionlabel-evaluateapplication.md)|[informationProtectionAction](informationprotectionaction.md) collection||
-|[Evaluateclassificationresults](../api/informationprotectionlabel-evaluateclassificationresults.md)|[informationProtectionAction](informationprotectionaction.md) collection||
-|[Evaluateremoval](../api/informationprotectionlabel-evaluateremoval.md)|[informationProtectionAction](informationprotectionaction.md) collection||
-|[Extractlabel](../api/informationprotectionlabel-extractlabel.md)|[informationProtectionContentLabel](informationprotectioncontentlabel.md)||
+| Method                                                                                              | Return Type                                                               | Description                                                             |
+| :-------------------------------------------------------------------------------------------------- | :------------------------------------------------------------------------ | :---------------------------------------------------------------------- |
+| [Get informationProtectionLabel](../api/informationprotectionlabel-get.md)                          | [informationProtectionLabel](informationprotectionlabel.md)               | Read properties and relationships of informationProtectionLabel object. |
+| [Evaluateapplication](../api/informationprotectionlabel-evaluateapplication.md)                     | [informationProtectionAction](informationprotectionaction.md) collection  |                                                                         |
+| [Evaluateclassificationresults](../api/informationprotectionlabel-evaluateclassificationresults.md) | [informationProtectionAction](informationprotectionaction.md) collection  |                                                                         |
+| [Evaluateremoval](../api/informationprotectionlabel-evaluateremoval.md)                             | [informationProtectionAction](informationprotectionaction.md) collection  |                                                                         |
+| [Extractlabel](../api/informationprotectionlabel-extractlabel.md)                                   | [informationProtectionContentLabel](informationprotectioncontentlabel.md) |                                                                         |
 
 ## Properties
 

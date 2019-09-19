@@ -3,7 +3,7 @@ title: "labelingOptions resource type"
 description: "Represents the labeling options that can be provided to the evaluation APIs."
 localization_priority: Normal
 author: "tommoser"
-ms.prod: "microsoft.informationprotection""
+ms.prod: "microsoft.informationprotection"
 doc_type: "resourcePageType"
 ---
 

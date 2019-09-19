@@ -1,3 +1,11 @@
+---
+title: "Microsoft Information Protection labeling overview"
+description: "Microsoft Information Protection labeling helps organizations to classify, label, and protect data based on Office 365 Security and Compliance Center Sensitivity Labels."
+author: "tommoser"
+localization_priority: Normal
+ms.prod: "microsoft.informationprotection"
+---
+
 # Microsoft Information Protection labeling overview
 
 Microsoft Information Protection labeling helps organizations to classify, label, and protect data based on [sensitivity](https://docs.microsoft.com/Office365/SecurityCompliance/sensitivity-labels). 
@@ -22,21 +30,20 @@ Enterprise developers use Microsoft Information Protection to label and protect 
 
 ### Discover labels available to a user or organization
 
-With Microsoft Graph you can access the [sensitivity labels](../resources/informationprotectionlabel.md) available to a user or the organization. Labels are applied by applications and services to data at rest or in motion, helping users and downstream applications and services to understand the sensitivity of the information they're handling.
+With Microsoft Graph you can access the [sensitivity labels](/graph/api/informationprotectionlabel.md?view=graph-rest-beta) available to a user or the organization. Labels are applied by applications and services to data at rest or in motion, helping users and downstream applications and services to understand the sensitivity of the information they're handling.
 
 ### Understand how to apply labels
 
-By providing information on the existing and desired sensitivity label, the REST API can intelligently inform your application of the [actions](../resources/informationProtectionActions.md) that should be taken to correctly apply the label. This includes actions such as [metadata](../resources/metadataaction.md) application, [watermark](../resources/addwatermarkaction.md) generation, [protection](../resources/protectByTemplateAction.md), and more.
+By providing information on the existing and desired sensitivity label, the REST API can intelligently inform your application of the [actions](/graph/api/resources/informationProtectionActions.md?view=graph-rest-beta) that should be taken to correctly apply the label. This includes actions such as [metadata](/graph/api/resources/metadataaction.md?view=graph-rest-beta) application, [watermark](/graph/api/resources/addwatermarkaction.md?view=graph-rest-beta) generation, [protection](/graph/api/resources/protectByTemplateAction.md?view=graph-rest-beta), and more.
 
 ### Interpret labels applied to data
 
-Applications consuming information already that already has [sensitivity label metadata](../resources/metadataaction.md) applied can use the **extractLabel** API to resolve label metadata to a Microsoft Information Protection [sensitivity label](../resources/informationprotectionlabel.md). Use the label to identify the actions that should be taken by the application when handling or consuming the labeled data. 
+Applications consuming information already that already has [sensitivity label metadata](/graph/api/resources/metadataaction.md?view=graph-rest-beta) applied can use the **extractLabel** API to resolve label metadata to a Microsoft Information Protection [sensitivity label](/graph/api/resources/informationprotectionlabel.md?view=graph-rest-beta). Use the label to identify the actions that should be taken by the application when handling or consuming the labeled data. 
 
 ## Explore the Microsoft Information Protection APIs
 
 Use the Microsoft Graph Explorer to try out the Microsoft Information Protection APIs with your own organizational labels.
 
-!TODO!
 To make Microsoft Information Protection API calls from the Graph Explorer, choose Show more samples in the column on the left. Use the menu to toggle OneNote On. You will also need to enable the appropriate permissions. Under your account name in the menu on the left, choose modify permissions. For more information about OneNote permissions, see Notes permissions.
 
 To get started with Microsoft Information Protection APIs in Microsoft Graph, see the Microsoft Information Protection reference content.
