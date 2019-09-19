@@ -11,9 +11,9 @@ Microsoft Graph allows apps to subscribe to change notifications for resources v
 
 Requesting resource data in notifications requires you to implement the following additional logic to satisfy data access and security requirements: 
 
-- Handle special subscription lifecycle notifications - `reauthorizationRequired` - to maintain an uninterrupted flow of data.
-- Validate the authenticity of notifications as having originated from Microsoft Graph.
-- Provide a public encryption key and use a private key to decrypt resource data received through notifications.
+- [Handle](#subscription-lifecycle-notifications) special subscription lifecycle notifications - `reauthorizationRequired` - to maintain an uninterrupted flow of data.
+- [Validate](#validating-the-authenticity-of-notifications) the authenticity of notifications as having originated from Microsoft Graph.
+- [Provide](#decrypting-resource-data-from-change-notifications) a public encryption key and use a private key to decrypt resource data received through notifications.
 
 This article walks through the details, using the Team **messages** resource as an example.
 
