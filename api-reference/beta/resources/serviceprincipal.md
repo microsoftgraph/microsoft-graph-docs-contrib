@@ -120,6 +120,10 @@ Here is a JSON representation of the resource
 |[getMemberGroups](../api/serviceprincipal-getmembergroups.md)|String collection|Get the list of groups that this service principal is a member of.|
 |[getMemberObjects](../api/serviceprincipal-getmemberobjects.md)|String collection|Get the list of groups and directory roles that this service principal is a member of.|
 |[delta](../api/serviceprincipal-delta.md)|servicePrincipal collection| Get incremental changes for service principals. |
+|[Createpasswordsinglesignoncredentials](../api/serviceprincipal-createpasswordsinglesignoncredentials.md)|[passwordSingleSignOnCredentialSet](passwordsinglesignoncredentialset.md)|Creates a credential set for the user or group specified in the body.|
+|[Deletepasswordsinglesignoncredentials](../api/serviceprincipal-deletepasswordsinglesignoncredentials.md)|None|Deletes a credential set for the user or group specified in the body.|
+|[Getpasswordsinglesignoncredentials](../api/serviceprincipal-getpasswordsinglesignoncredentials.md)|[passwordSingleSignOnCredentialSet](passwordsinglesignoncredentialset.md)|Gets a credential set for the user or group specified in the body.|
+|[Updatepasswordsinglesignoncredentials](../api/serviceprincipal-updatepasswordsinglesignoncredentials.md)|None|Updates a credential set for the user or group specified in the body.|
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2015-10-25 14:57:30 UTC -->
