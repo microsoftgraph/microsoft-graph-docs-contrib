@@ -85,7 +85,7 @@ Subscription lifecycle notifications inform you about actions you need to take i
 
 These notifications will be delivered to the **lifecycleNotificationUrl**. You should identify the type of notification, and take the corresponding action to ensure that the change notifications continue to flow.
 
-### Reauthorization challenges
+### Re-authorization challenges
 
 The `reauthorizationRequired` notification informs you that a subscription must be re-authorized to maintain the flow of data. 
 
@@ -97,7 +97,7 @@ You can create a long-lived subscription (e.g. 3 days), and resource data notifi
 Given an active, non-expired subscription, the flow looks as follows:
 
 1. Microsoft Graph decides that a subscription requires re-authorization to maintain the resource notification flow.
-    1. The reasons for this may vary from resource to resource, and may change over time. Your do not need to understand why the re-authorization events occur, you only need to respond to them.
+    1. The reasons for this may vary from resource to resource, and may change over time. You do not need to understand the specific cases in which re-authorization events occur, you only need to respond to them.
 
 2. Microsoft Graph sends an authorization challenge notification to the **lifecycleNotificationUrl**
     1. Note that the flow of resource notifications may continue for a while, giving you extra time to respond. However, eventually resource notification delivery will be paused, until you take the required action.
@@ -106,7 +106,7 @@ Given an active, non-expired subscription, the flow looks as follows:
     1. Re-authorize the subscription; this does not extend the subscription's expiry date.
     2. Renew the subscription; this both re-authorizes and extends the expiry date.
 
-  Note: both actions require you to present a valid authentication token, the same as when creating or renewing a subscription.
+  Note: both actions require you to present a valid authentication token; same as when creating or renewing a subscription.
 
 4. If you successfully re-authorize or renew the subscription, resource notifications will continue. Otherwise, resource notifications will remain paused.
     
@@ -138,8 +138,8 @@ A few things to note about this type of notification:
 3. Ensure the app has a valid access token to take the next step. 
 > **Note:** If you are using one of the [authentication libraries](https://docs.microsoft.com/azure/active-directory/develop/reference-v2-libraries) they will handle this for you by either reusing a valid cached token, or obtaining a new token, including asking the user to login again (e.g. with a new password). Note that obtaining a new token may fail, since the conditions of access may have changed, and the caller may no longer be allowed access to the resource data.
 
-4. Call either of these two APIs - if successful, both will have the affect of resuming the resource notification flow
-    1. To re-authorize the subscription, without extending its expiration date, call the /reauthorize action:
+4. Call either of these two APIs - if successful, both will have the affect of resuming the resource notification flow.
+    1. To re-authorize the subscription, without extending its expiration date, call the `/reauthorize` action:
 ```http
 POST  https://graph.microsoft.com/beta/subscriptions/{id}/reauthorize
 Content-type: application/json
@@ -154,7 +154,7 @@ Content-Type: application/json
 }
 ```
 
-> **Note:** This action may fail, because the authorization checks performed by the system may deny the app or the user access to the resource. It may be necessary for the app to obtain a new access token from the user to successfully reauthorize a subscription. You may retry these actions later, at any time, for example when the conditions of access have change. Any resource changes in the time period from when the lifecycle notification was sent, to when the app re-creates the subscription successfully, will be lost. The app will need to fetch those changes on its own.
+> **Note:** This action may fail, because the authorization checks performed by the system may deny the app or the user access to the resource. It may be necessary for the app to obtain a new access token from the user to successfully reauthorize a subscription. You may retry these actions later, at any time, for example when the conditions of access have changed. Any resource changes in the time period from when the lifecycle notification was sent, to when the app re-creates the subscription successfully, will be lost. The app will need to fetch those changes on its own.
 
 #### Implementation guidelines
 
