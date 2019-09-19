@@ -25,7 +25,7 @@ Given [contentInfo](../resources/contentInfo.md), which includes existing conten
 * [protectAdhocAction](../resources/protectAdhocAction.md)
 * [protectByTemplateAction](../resources/protectByTemplateAction.md)
 * [protectionDoNotForwardAction](../resources/protectDoNotForwardAction.md)
-* [recommendedLabelAction](../resources/recommendedLabelAction.md)
+* [recommendLabelAction](../resources/recommendLabelAction.md)
 * [removeContentFooterAction](../resources/removeContentFooterAction.md)
 * [removeContentHeaderAction](../resources/removeContentHeaderAction.md)
 * [removeProtectionAction](../resources/removeProtectionAction.md)
