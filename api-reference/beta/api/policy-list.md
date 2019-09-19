@@ -20,7 +20,7 @@ One of the following permissions is required to call this API. To learn more, in
 |:--------------------|:---------------------------------------------------------|
 |Delegated (work or school account) | Policy.Read.All, Directory.Read.All, Directory.AccessAsUser.All    |
 |Delegated (personal Microsoft account) | Not supported.    |
-|Application | Policy.Read.All, Directory.Read.All  |
+|Application | Policy.Read.All, Directory.Read.All |
 
 ## HTTP request
 <!-- { "blockType": "ignored" } -->
