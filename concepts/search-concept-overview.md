@@ -39,12 +39,12 @@ Looking for the API reference for this service?
 
 ## Next steps
 
-*Explore the APIs in the [Graph Explorer](https://developer.microsoft.com/graph/graph-explorer).
-*Learn more about a few key use cases TODO : Include the links.
-**Search for Outlook Messages
-**Search for Calendar Events
-**Search for Files
-**Search for Connectors data
+- Explore the APIs in the [Graph Explorer](https://developer.microsoft.com/graph/graph-explorer).
+- Learn more about a few key use cases TODO : Include the links.
+- Search for Outlook Messages
+- Search for Calendar Events
+- Search for Files
+- Search for Connectors data
 
 ## See also
 
