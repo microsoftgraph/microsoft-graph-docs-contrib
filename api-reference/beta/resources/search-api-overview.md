@@ -9,6 +9,10 @@ doc_type: resourcePageType
 
 # TODO Rework Use the Microsoft Graph Security API
 
+
+API-level overviews must include common use cases, and can suggest best practices and preferred usage patterns. If you’re debuting a service or adding a significant API set to a service, make sure you have an API overview describing the use case(s) for the API.
+
+
  [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 The Microsoft Graph Security API provides a unified interface and schema to integrate with security solutions from Microsoft and ecosystem partners. This empowers customers to streamline security operations and better defend against increasing cyber threats. The Microsoft Graph Security API federates queries to all onboarded security providers and aggregates responses. Use the Microsoft Graph Security API to build applications that:
