@@ -70,6 +70,16 @@ When the limits are exceeded, attempts to create a subscription will result in a
 
 - Notification for user entities are not supported for personal Microsoft accounts.
 
+### Outlook resource limitations
+
+When subscribing to Outlook resources such as **messages**, **events** or **contacts**, if you choose to use the *user principal name* UPN in the resource path, the subscription request might fail if the UPN contains an apostrophe. Consider using GUID user IDs instead of UPNs to avoid running into this problem. For example, instead of using resource path:
+
+`/users/sh.o'neal@contoso.com/messages`
+
+Use: 
+
+`/users/{guid-user-id}/messages`
+
 ## Subscription lifetime
 
 Subscriptions have a limited lifetime. Apps need to renew their subscriptions before the expiration time. Otherwise, they need to create a new subscription. For a list of maximum expiration times, see [Maximum length of subscription per resource type](/graph/api/resources/subscription?view=graph-rest-1.0#maximum-length-of-subscription-per-resource-type).
