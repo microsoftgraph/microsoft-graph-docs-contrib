@@ -72,11 +72,11 @@ When the limits are exceeded, attempts to create a subscription will result in a
 
 ### Outlook resource limitations
 
-When subscribing to Outlook resources such as **messages**, **events** or **contacts**, if you choose to use the *user principal name* UPN in the resource path, the subscription request may fail if the UPN contains an apostrophe. Consider using Guid user ids instead of UPNs to avoid running in this problem. For example, instead of using resource path:
+When subscribing to Outlook resources such as **messages**, **events** or **contacts**, if you choose to use the *user principal name* UPN in the resource path, the subscription request might fail if the UPN contains an apostrophe. Consider using GUID user IDs instead of UPNs to avoid running into this problem. For example, instead of using resource path:
 
 `/users/sh.o'neal@contoso.com/messages`
 
-use 
+Use: 
 
 `/users/{guid-user-id}/messages`
 
