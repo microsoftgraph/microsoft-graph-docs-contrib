@@ -9143,6 +9143,15 @@
             href: api/reportroot-getyammergroupsactivitygroupcounts.md
           - name: Get activity counts
             href: api/reportroot-getyammergroupsactivitycounts.md
+    - name: Search
+      displayname: Microsoft Search API
+      items:
+      - name: Overview
+        href: resources/search-api-overview.md
+      - name: Search
+        href: api/search-get.md    
+      - name: Query
+        href: api/search-query.md
     - name: Security
       displayname: Security API, Microsoft Graph Security API
       items:
