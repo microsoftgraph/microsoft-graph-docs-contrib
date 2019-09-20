@@ -1,9 +1,9 @@
 ---
 title: "credential resource type"
-description: "PROVIDE DESCRIPTION HERE"
+description: "Indicates a single credential used for login to an application."
 localization_priority: Normal
-author: "bhhariha"
-ms.prod: ""
+author: "bharathramh92"
+ms.prod: "microsoft-identity-platform"
 doc_type: "resourcePageType"
 ---
 

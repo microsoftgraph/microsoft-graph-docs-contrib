@@ -1,9 +1,9 @@
 ---
 title: "passwordSingleSignOnCredentialSet resource type"
-description: "PROVIDE DESCRIPTION HERE"
+description: "Indicates a set of credentials that completely define a login flow for a user or group to an application."
 localization_priority: Normal
-author: "bhhariha"
-ms.prod: ""
+author: "bharathramh92"
+ms.prod: "microsoft-identity-platform"
 doc_type: "resourcePageType"
 ---
 

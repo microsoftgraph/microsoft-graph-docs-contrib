@@ -1,9 +1,9 @@
 ---
 title: "servicePrincipal: deletePasswordSingleSignOnCredentials"
-description: "PROVIDE DESCRIPTION HERE"
+description: "Delete password single sign on credentials for a user or group by id."
 localization_priority: Normal
-author: "bhhariha"
-ms.prod: ""
+author: "bharathramh92"
+ms.prod: "microsoft-identity-platform"
 doc_type: "apiPageType"
 ---
 
