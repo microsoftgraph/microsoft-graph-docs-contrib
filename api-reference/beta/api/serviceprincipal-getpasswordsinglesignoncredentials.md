@@ -60,7 +60,6 @@ The following is an example of the request.
   "blockType": "request",
   "name": "serviceprincipal_getpasswordsinglesignoncredentials"
 }-->
-
 ```http
 POST https://graph.microsoft.com/beta/servicePrincipals/getPasswordSingleSignOnCredentials
 Content-type: application/json
@@ -81,7 +80,6 @@ The following is an example of the response.
   "truncated": true,
   "@odata.type": "microsoft.graph.passwordSingleSignOnCredentialSet"
 } -->
-
 ```http
 HTTP/1.1 200 OK
 Content-type: application/json
