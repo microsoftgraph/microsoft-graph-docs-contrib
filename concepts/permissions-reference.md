@@ -4,6 +4,7 @@ description: "Microsoft Graph exposes granular permissions that control the acce
 author: "jackson-woods"
 localization_priority: Priority
 scenarios: "getting-started"
+ms.custom: graphiamtop20
 ---
 
 # Microsoft Graph permissions reference

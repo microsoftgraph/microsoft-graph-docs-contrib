@@ -4,6 +4,7 @@ description: "odata.nextLink` property in the response that contains a URL to th
 author: "piotrci"
 localization_priority: Priority
 scenarios: "getting-started"
+ms.custom: graphiamtop20
 ---
 
 # Paging Microsoft Graph data in your app 
