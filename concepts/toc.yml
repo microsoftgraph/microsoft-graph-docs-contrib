@@ -381,6 +381,10 @@ items:
             href: sdks/choose-authentication-providers.md
           - name: Create requests
             href: sdks/create-requests.md
+          - name: Page through a collection
+            href: sdks/paging?context=graph/api/1.0
+          - name: Create a batch request
+            href: sdks/batch-requests?context=graph/api/1.0
       - name: Use the toolkit (preview)
         items:
           - name: Toolkit overview
