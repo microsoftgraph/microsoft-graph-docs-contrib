@@ -106,7 +106,13 @@ Content-length: 2577
         "steadyStateLastAchievedTime": "0001-01-01T00:00:00Z",
         "quarantine": null,
         "troubleshootingUrl": null
-    }
+    },
+    "synchronizationJobSettings": [
+      {
+          "name": "QuarantineTooManyDeletesThreshold",
+          "value": "500"
+      }
+    ]
 }
 ```
 

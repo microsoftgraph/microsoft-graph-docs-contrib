@@ -32,6 +32,8 @@ items:
         items:
           - name: Overview
             href: tutorials.md
+          - name: .NET Core
+            href: /graph/tutorials/dotnet-core
           - name: Android
             href: /graph/tutorials/android
           - name: Angular
@@ -40,6 +42,10 @@ items:
             href: /graph/tutorials/aspnet
           - name: Microsoft Flow
             href: /graph/tutorials/flow
+          - name: iOS Objective-C
+            href: /graph/tutorials/ios-objectivec
+          - name: iOS Swift
+            href: /graph/tutorials/ios-swift
           - name: Java
             href: /graph/tutorials/java
           - name: Node.js
@@ -50,6 +56,8 @@ items:
             href: /graph/tutorials/python
           - name: React
             href: /graph/tutorials/react
+          - name: React Native
+            href: /graph/tutorials/react-native
           - name: Ruby
             href: /graph/tutorials/ruby
           - name: UWP
@@ -124,13 +132,13 @@ items:
             href: education-rubric-overview.md
       - name: Files
         href: onedrive-concept-overview.md
-        displayName: OneDrive, OneDrive for Buisness, OneDrive business, OneDrive personal, SharePoint
+        displayName: OneDrive, OneDrive for Business, OneDrive business, OneDrive personal, SharePoint
       - name: Financials (preview)
         href: dynamics-business-central-concept-overview.md
         displayname: Dynamics, Dynamics 365 Business Central
       - name: Identity and access
         href: azuread-identity-access-management-concept-overview.md
-        displaName: Azure AD, Microsoft identity platform
+        displayName: Azure AD, Microsoft identity platform
       - name: Mail
         displayName: Outlook, Outlook mail
         items:
@@ -227,7 +235,7 @@ items:
             href: security-partner-overview.md
       - name: Sites and lists
         href: sharepoint-concept-overview.md
-        displayName: SharePoint, OneDrive, OneDrive for Buisness, OneDrive business, OneDrive personal
+        displayName: SharePoint, OneDrive, OneDrive for Business, OneDrive business, OneDrive personal
       - name: Social and workplace intelligence
         items:
           - name: Overview
@@ -303,7 +311,7 @@ items:
           - name: Throttling
             href: throttling.md
           - name: Change notifications
-            displayName: Webhooks, Outlook mail, Outlook calendar, Outlook contacts, Outlook contact, OneDrive, OneDrive for Buisness, OneDrive business, OneDrive personal, SharePoint, Security, Users, Groups
+            displayName: Webhooks, Outlook mail, Outlook calendar, Outlook contacts, Outlook contact, OneDrive, OneDrive for Business, OneDrive business, OneDrive personal, SharePoint, Security, Users, Groups
             items:
               - name: Overview
                 href: webhooks.md
