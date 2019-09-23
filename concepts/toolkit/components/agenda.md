@@ -25,11 +25,13 @@ By default, the `mgt-agenda` component fetches events from the `/me/calendarview
 
 | Property | Attribute | Description |
 | --- | --- | --- |
-| `groupByDay` | `group-by-day` | A Boolean value to group events by day - by default events are not grouped. |
 | `date` | `date` | A string that represents the start date of the events to fetch from Microsoft Graph. Value should be in a format that can be parsed by the [Date constructor](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Date) - value has no effect if `event-query` attribute is set. |
 | `days` | `days` | A number of days to fetch from Microsoft Graph - default is 3 - value has no effect if `event-query` attribute is set. |
+| `showMax` | `show-max` | A number to indicate the maximum number of events to show. the default value is not set (no max) |
+| `groupId` | `group-id` | A string id for a group calendar to use instead of the current signed in user's calendar |
 | `eventQuery` | `event-query` | A string that represents an alternative query to be used when fetching events from Microsoft Graph. Optionally, add the delegated scope at the end of the string by delimiting it with `|` (`"/groups/GROUP-ID-GUID/calendar/calendarView | group.read.all"`). |
 | `events` | `events` | An array of events to get or set the list of events rendered by the component - use this property to access the events loaded by the component. Set this value to load your own events - if value is set by developer, the `date`, `days`, or `event-query` attributes have no effect. |
+| `groupByDay` | `group-by-day` | A Boolean value to group events by day - by default events are not grouped. |
 
 The following example changes the behavior of the component to fetch data for a specific date and up to 3 days.
 

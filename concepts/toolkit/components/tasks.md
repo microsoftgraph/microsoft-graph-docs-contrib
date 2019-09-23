@@ -21,12 +21,13 @@ The Tasks component enables the user to view, add, remove, complete, or edit tas
 
 | Property | Attribute | Description |
 | -- | -- | -- |
-| `dataSource` | `data-source="todo/planner"` | Sets the data source for tasks - either Microsoft To-Do, or Microsoft Planner. Default is `planner`. |
-| `readOnly` | `read-only` | Sets the task interface to be read only (no adding or removing tasks). Default is `false`. |
-| `initialId` | `initial-id="planner_id/folder_id"` | Sets the initially displayed planner or folder to the provided ID. |
-| `initialBucketId` | `initial-bucket-id="bucket_id"` | Sets the initially displayed bucket (Planner Data-Source Only) to the provided ID. |
-| `targetId` | `target-id="planner_id/folder_id"` | Locks the tasks interface to the provided planner or folder ID. |
-| `targetBucketId` | `target-bucket-id="bucket_id"` | Locks the tasks interface to the provided bucket ID (Planner Data-Source Only). |
+| `dataSource` | `data-source="todo/planner"` | An enumeration to configure the data source for tasks - either Microsoft To-Do, or Microsoft Planner. Default is `planner`. |
+| `readOnly` | `read-only` | A boolean to set the task interface to be read only (no adding or removing tasks). Default is `false`. |
+| `hideHeader` | `hide-header` | A boolean to show or hide the header of the component. Default is `false`. |
+| `initialId` | `initial-id="planner_id/folder_id"` | A string id to set the initially displayed planner or folder to the provided ID. |
+| `initialBucketId` | `initial-bucket-id="bucket_id"` | A string id to set the initially displayed bucket (Planner Data-Source Only) to the provided ID. |
+| `targetId` | `target-id="planner_id/folder_id"` | A string id to lock the tasks interface to the provided planner or folder ID. |
+| `targetBucketId` | `target-bucket-id="bucket_id"` | A string id to lock the tasks interface to the provided bucket ID (Planner Data-Source Only). |
 
 The following is an example.
 

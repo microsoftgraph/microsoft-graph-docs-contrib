@@ -22,10 +22,17 @@ Initializing the MSAL provider in HTML is the simplest way to create a new provi
 ```html
 <mgt-msal-provider client-id="<YOUR_CLIENT_ID>"
                    login-type="redirect/popup"
+                   scopes="user.read,people.read"
                    authority=""></mgt-msal-provider>
 ```
 
->**Note:** `login-type` and `authority` are optional.
+| Attribute | Description |
+| --- | --- | --- |
+| `client-id`   | **Required** string client ID (see "Creating an app/client ID" below). |
+| `login-type`  | Optional enumeration between `redirect` and `popup` - default value is `redirect` |
+| `scopes`  | Optional comma separated strings for scopes the user must consent on sign in) |
+| `authority`  | Optional authority string - default is the common authority |
+| `depends-on` | Optional element selector string of another higher priority provider component |
 
 ### Initialize in JavaScript
 
