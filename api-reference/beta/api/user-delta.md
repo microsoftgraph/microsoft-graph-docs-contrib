@@ -283,46 +283,6 @@ Content-type: application/json
   ]
 }
 ```
-
-## Limitations
-
-The users resource contains some properties that are stored in data stores external to Azure AD. Currently, those properties are not supported as part of change tracking; a change to one of those properties will not result in the user object showing up in the delta query response. Currently, only the properties stored in Azure AD trigger changes in the delta query.
-
-In order to confirm if a property can be used in delta query, perform the following quick test:
-
-Try to perform a regular `GET` operation on the users collection, and select the property you are interested in. For example, let's try the **skills** property:
-
-```msgraph-interactive
-GET https://graph.microsoft.com/beta/users/?$select=skills
-```
-
-Since the **skills** property is stored outside of Azure AD, the response we get is:
-
-<!-- {
-  "blockType": "response",
-  "truncated": true,
-  "@odata.type": "microsoft.graph.user",
-  "isCollection": true
-} -->
-
-```http
-HTTP/1.1 501 Not Implemented
-Content-type: application/json
-
-{
-    "error": {
-        "code": "NotImplemented",
-        "message": "This operation target is not yet supported.",
-        "innerError": {
-            "request-id": "...",
-            "date": "2019-09-20T21:47:50"
-        }
-    }
-}
-```
-
-This tells you that the **skills** property is not supported for delta query on the users resource.
-
 ## See also
 
 - [Use delta query to track changes in Microsoft Graph data](/graph/delta-query-overview).
