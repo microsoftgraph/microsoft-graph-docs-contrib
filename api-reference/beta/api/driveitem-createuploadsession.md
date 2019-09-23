@@ -86,16 +86,8 @@ The following example controls the behavior if the filename is already taken, an
 
 | Parameter            | Type                          | Description
 |:---------------------|:------------------------------|:---------------------------------
-| item                 | driveItemUploadableProperties | Data about the file being uploaded
+| item                 | [driveItemUploadableProperties](../resources/driveItemUploadableProperties.md) | Data about the file being uploaded
 | deferCommit          | Boolean                       | If set to true, final creation of the file in the destination will require an explicit request. Only on OneDrive for Business.
-
-## DriveItemUploadableProperties properties
-
-| Property             | Type               | Description
-|:---------------------|:-------------------|:---------------------------------
-| description          | String             | Provides a user-visible description of the item. Read-write. Only on OneDrive Personal.
-| fileSize             | Int64              | Provides an expected file size to perform a quota check prior to upload. Only on OneDrive Personal.
-| name                 | String             | The name of the item (filename and extension). Read-write.
 
 ### Request
 
