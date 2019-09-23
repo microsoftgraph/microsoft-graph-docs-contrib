@@ -13,12 +13,42 @@ For details about known issues with Microsoft Graph APIs, see [Known issues](kno
 
 ## September 2019
 
+### Calendar, mail, groups
+
+| **Change type** | **Version**   | **Description**                          |
+| :-------------- | :------------ | :--------------------------------------- |
+| Addition        | v1.0          | Added the capability to [get the raw contents of a file or item attachment](/graph/api/attachment-get?view=graph-rest-1.0#get-the-raw-contents-of-a-file-or-item-attachment) to an event, message, or group post. |
+
+### Identity and access (Azure AD)
+
+| **Change type** | **Version** | **Description**                  |
+|:----------------|:------------|:-----------------------------------------|
+| Addition | Beta | Added **synchronizationJobSettings** property to the [synchronizationJob](/graph/api/resources/synchronization-synchronizationjob?view=graph-rest-beta) resource.|
+| Addition | Beta | Added new possible values for the **reason** property in the [synchronizationQuarantine](/graph/api/resources/synchronization-quarantine?view=graph-rest-beta) resource.|
+
+### Mail (Outlook)
+
+| **Change type** | **Version**   | **Description**                          |
+| :-------------- | :------------ | :--------------------------------------- |
+| Addition        | v1.0          | Added the capability to [get the MIME content of a message](outlook-get-mime-message.md). |
+
+### Users
+
+| **Change type** | **Version**   | **Description**                          |
+| :-------------- | :------------ | :--------------------------------------- |
+| Addition        | v1.0          | Added the [translateExchangeIds](/graph/api/user-translateexchangeids?view=graph-rest-1.0) method.|
+
 ### Users | Outlook settings
 
 | **Change type** | **Version** | **Description**                  |
 |:----------------|:------------|:-----------------------------------------|
 | Addition        | Beta        | The **dateFormat** and **timeFormat** properties to the [mailboxSettings](/graph/api/resources/mailboxsettings?view=graph-rest-beta) resource. The properties represent the user's preferred date and time formats.|
 
+### Teamwork (Microsoft Teams)
+
+| **Change type** | **Version**   | **Description**                          |
+| :-------------- | :------------ | :--------------------------------------- |
+|Addition |beta| Added the **primaryChannel** property to the [team](/graph/api/resources/team?view=graph-rest-beta) resource.|
 
 ## August 2019
 
@@ -90,10 +120,17 @@ For details about known issues with Microsoft Graph APIs, see [Known issues](kno
 | Addition | Beta | Added these operations to support the unifiedRoleDefinition resource: <br><ul><li>[List unifiedRoleDefinitions](/graph/api/rbacapplication-list-roledefinitions?view=graph-rest-beta) - Get a list of unifiedRoleDefinition objects for the provider.</li><li>[Create unifiedRoleDefinition](/graph/api/rbacapplication-post-roledefinitions?view=graph-rest-beta) - Create a new unifiedRoleDefinition object.</li><li>[Get unifiedRoleDefinition](/graph/api/unifiedroledefinition-get?view=graph-rest-beta) - Retrieve the properties and relationships of a unified role definition object.</li><li>[Update unifiedRoleDefinition](/graph/api/unifiedroledefinition-update?view=graph-rest-beta) - Update the properties of a unifiedRoleDefinition object.</li><li>[Delete unifiedRoleDefinition](/graph/api/unifiedroledefinition-delete?view=graph-rest-beta) - Delete a unifiedRoleDefinition object.</li></ul> |
 | Addition | Beta | Added these operations to support the unifiedRoleAssignment resource: <br><ul><li>[List unifiedRoleAssignments](/graph/api/rbacapplication-list-roleassignments?view=graph-rest-beta) - Get a list of unifiedRoleAssignment objects for the provider.</li><li>[Create unifiedRoleAssignment]() - Create a new unifiedRoleAssignment object.</li><li>[Get unifiedRoleAssignment](/graph/api/unifiedroleassignment-get?view=graph-rest-beta) - Retrieve the properties and relationships of a unifiedRoleAssignment object.</li><li>[Delete unifiedRoleAssignment](/graph/api/unifiedroleassignment-delete?view=graph-rest-beta) - Delete a unifiedRoleAssignment object. |
 | Addition | Beta | Added the [List accessReviews](/graph/api/accessreview-list?view=graph-rest-beta) operation. |
+| Addition | Beta | Added the [checkMemberObjects](/graph/api/device-checkmemberobjects?view=graph-rest-beta) operation for the [device](/graph/api/resources/device?view=graph-rest-beta) resource. |
+| Addition | Beta | Added the [checkMemberObjects](/graph/api/directoryobject-checkmemberobjects?view=graph-rest-beta) operation for the [directoryObject](/graph/api/resources/directoryobject?view=graph-rest-beta) resource. |
+| Addition | Beta | Added the [checkMemberObjects](/graph/api/directoryrole-checkmemberobjects?view=graph-rest-beta) operation for the [directoryRole](/graph/api/resources/directoryrole?view=graph-rest-beta) resource. |
+| Addition | Beta | Added the [checkMemberObjects](/graph/api/group-checkmemberobjects?view=graph-rest-beta) operation for the [group](/graph/api/resources/group?view=graph-rest-beta) resource. |
+| Addition | Beta | Added the [checkMemberObjects](/graph/api/serviceprincipal-checkmemberobjects?view=graph-rest-beta) operation for the [servicePrincipal](/graph/api/resources/serviceprinciple?view=graph-rest-beta) resource. |
+| Addition | Beta | Added the [checkMemberObjects](/graph/api/user-checkmemberobjects?view=graph-rest-beta) operation for the [user](/graph/api/resources/user?view=graph-rest-beta) resource. |
 |Addition  | Beta | Added delegated and application [permissions for reading organizational contacts](permissions-reference.md#organizational-contact-permissions): OrgContact.Read.All |
 | Addition | beta | Added new entity [certificateBasedAuthConfiguration](/graph/api/resources/certificatebasedauthconfiguration?view=graph-rest-beta). |
 | Addition | beta | Added new complex type [certificateAuthority](/graph/api/resources/certificateauthority?view=graph-rest-beta). |
 | Addition | beta | Added new relationship for **certificateBasedAuthConfiguration** on the [organization](/graph/api/resources/organization?view=graph-rest-beta) resource. This enables [certificate-based authentication in Azure Active Directory](https://docs.microsoft.com/azure/active-directory/authentication/active-directory-certificate-based-authentication-get-started)|
+
 
 ### Reports
 
@@ -220,7 +257,7 @@ Debut of the places API which provides rich details for locations in apps.
 | Addition | beta | Added the [userTeamwork](/graph/api/resources/userteamwork?view=graph-rest-beta) resource. |
 | Addition | beta | Added new methods to the [user](/graph/api/resources/user?view=graph-rest-beta) resource enabling the following methods with personal apps for users: <br>[List apps installed for user](/graph/api/user-list-teamsappinstallation?view=graph-rest-beta) <br>[Install app for user](/graph/api/user-add-teamsappinstallation?view=graph-rest-beta) <br>[Uninstall app for user](/graph/api/user-delete-teamsappinstallation?view=graph-rest-beta) <br>[Upgrade app installed for user](/graph/api/user-upgrade-teamsappinstallation?view=graph-rest-beta)|
 
-### Calls and online meetings 
+### Calls and online meetings
 
 | **Change type** | **Version** | **Description**                  |
 |:----------------|:------------|:-----------------------------------------|
@@ -738,7 +775,7 @@ Debut of the places API which provides rich details for locations in apps.
 | Addition | v1.0 | Added new properties to [users](/graph/api/resources/user?view=graph-rest-1.0): **employeeId**, **faxNumber**, **onPremisesDistinguishedName**, **showInAddressList** and **otherMails**.|
 | Addition | v1.0 | Added the **forceChangePasswordNextSignInWithMfa** property to the [passwordProfile](/graph/api/resources/passwordprofile?view=graph-rest-v1.0) complex type.|
 | Addition | v1.0 | Added the **licenseAssignmentStates** property to the [User](/graph/api/resources/user?view=graph-rest-1.0) entity for [Group Based Licensing](https://docs.microsoft.com/azure/active-directory/fundamentals/active-directory-licensing-whatis-azure-portal).|
-| Addition | v1.0 | Added the **licenseAssignmentState** resource for [Group Based Licensing](https://docs.microsoft.com/azure/active-directory/fundamentals/active-directory-licensing-whatis-azure-portal).| 
+| Addition | v1.0 | Added the **licenseAssignmentState** resource for [Group Based Licensing](https://docs.microsoft.com/azure/active-directory/fundamentals/active-directory-licensing-whatis-azure-portal).|
 | Addition | v1.0 | Added the **assignedLicenses**, **licenseProcessingState** and **hasMembersWithLicenseErrors** properties and **membersWithLicenseErrors** relationship to [Group](/graph/api/resources/group?view=graph-rest-1.0) entity for [Group Based Licensing](https://docs.microsoft.com/azure/active-directory/fundamentals/active-directory-licensing-whatis-azure-portal).|
 | Addition | beta | Added the **createdDateTime** property to the [user](/graph/api/resources/user?view=graph-rest-beta) resource.|
 
