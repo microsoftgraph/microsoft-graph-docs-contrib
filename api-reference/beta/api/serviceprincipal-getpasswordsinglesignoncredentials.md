@@ -84,6 +84,7 @@ The following is an example of the response.
 ```http
 HTTP/1.1 200 OK
 Content-type: application/json
+
 {
   "id": "00000000-0000-0000-000000000000",
   "credentials": [
