@@ -220,9 +220,9 @@ Content-Type: application/json
 
 If `deferCommit` is false or unset, then the upload is automatically completed when the final byte range of the file is PUT to the upload URL.
 
-If `deferCommit` is true, then there are two supported methods to explicitly complete the upload:
-- After the final byte range of the file is PUT to the upload URL, sending a final POST request to the upload url with zero-length content (currently only supported on OneDrive for Business and SharePoint)
-- After the final byte range of the file is PUT to the upload URL, sending a final PUT request in the same manner that you would [handle upload errors](#handle-upload-errors) (currently only supported on OneDrive Personal)
+If `deferCommit` is true, you can explicitly complete the upload in two ways:
+- After the final byte range of the file is PUT to the upload URL, send a final POST request to the upload URL with zero-length content (currently only supported on OneDrive for Business and SharePoint).
+- After the final byte range of the file is PUT to the upload URL, send a final PUT request in the same way that you would [handle upload errors](#handle-upload-errors) (currently only supported on OneDrive Personal).
 
 
 When the upload is completed, the server will respond to the final request with an `HTTP 201 Created` or `HTTP 200 OK`.
