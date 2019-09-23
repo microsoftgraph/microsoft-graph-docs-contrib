@@ -1,8 +1,8 @@
 ---
-title: "Microsoft Graph Toolkit (preview)"
-description: "The Microsoft Graph Toolkit is a collection of framework-agnostic web components and helpers for accessing and working with Microsoft Graph."
+title: "Microsoft Graph Toolkit"
+description: "The Microsoft Graph Toolkit is a collection of resuable, framework-agnostic web components and helpers for accessing and working with Microsoft Graph."
 localization_priority: Normal
-author: nmetulev
+author: elisenyang
 ---
 
 # Microsoft Graph Toolkit

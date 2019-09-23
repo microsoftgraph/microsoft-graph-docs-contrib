@@ -1,3 +1,10 @@
+---
+title: "Get Started with the Microsoft Graph Toolkit"
+description: "Use the Microsoft Graph Toolkit by referencing the loader directly, or by installing the npm package."
+localization_priority: Normal
+author: nmetulev
+---
+
 # Get started
 
 You can use the components by referencing the loader directly (via unpkg), or by installing the npm package.
