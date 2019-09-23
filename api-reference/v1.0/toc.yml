@@ -33,7 +33,7 @@
     - name: Throttling
       href: /graph/throttling?context=graph/api/1.0
     - name: Change notifications
-      displayname: Webhooks, Outlook mail, Outlook calendar, Outlook contacts, Outlook contact, People, Microsoft Teams, Teams, OneDrive, OneDrive for Buisness, OneDrive business, OneDrive personal, SharePoint, Security, Users, Groups
+      displayname: Webhooks, Outlook mail, Outlook calendar, Outlook contacts, Outlook contact, People, Microsoft Teams, Teams, OneDrive, OneDrive for Business, OneDrive business, OneDrive personal, SharePoint, Security, Users, Groups
       items:
       - name: Overview
         href: /graph/webhooks?context=graph/api/1.0
@@ -3100,7 +3100,7 @@
         - name: Delete user
           href: api/educationuser-delete.md
     - name: Files
-      displayName: OneDrive, OneDrive for Buisness, OneDrive business, OneDrive personal, SharePoint
+      displayName: OneDrive, OneDrive for Business, OneDrive business, OneDrive personal, SharePoint
       items:
       - name: Overview
         href: resources/onedrive.md
@@ -3914,7 +3914,7 @@
       - name: Errors
         href: resources/security-error-codes.md
     - name: Sites and lists
-      displayName: SharePoint, OneDrive, OneDrive for Buisness, OneDrive business, OneDrive personal
+      displayName: SharePoint, OneDrive, OneDrive for Business, OneDrive business, OneDrive personal
       items:
       - name: Overview
         href: resources/sharepoint.md
@@ -4233,7 +4233,7 @@
         - name: Create reply
           href: api/workbookcomment-post-replies.md
         - name: Get reply
-          href: api/workbookcommentreply-get.md     
+          href: api/workbookcommentreply-get.md
       - name: Worksheet
         href: resources/worksheet.md
         items:
@@ -4361,7 +4361,7 @@
         - name: Delete schema extension
           href: api/schemaextension-delete.md
       - name: Change notifications
-        displayName: Webhooks, Outlook mail, Outlook calendar, Outlook contacts, Outlook contact, People, Microsoft Teams, Teams, OneDrive, OneDrive for Buisness, OneDrive business, OneDrive personal, SharePoint, Security, Users, Groups
+        displayName: Webhooks, Outlook mail, Outlook calendar, Outlook contacts, Outlook contact, People, Microsoft Teams, Teams, OneDrive, OneDrive for Business, OneDrive business, OneDrive personal, SharePoint, Security, Users, Groups
         items:
         - name: Overview
           href: resources/webhooks.md
