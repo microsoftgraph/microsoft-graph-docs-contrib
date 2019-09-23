@@ -10,13 +10,15 @@ author: nmetulev
 A Person-Card component is a responsive flyout control to display more information relating to the `mgt-person` component viewed. There are two ways of activating the control:
 * On hover of a `mgt-person` component
 * On click of a `mgt-person` component
+
+See [mgt-person docs](./person.md) for more information on the `mgt-person` component.
   
 ## Example
 
 [jsfiddle example]()
 
 ```html
-    <mgt-person person-query="me" person-card="hover"></mgt-person>
+<mgt-person-card person-details="" person-image=""></mgt-person-card>
 ```
 
 ## Properties
