@@ -21,7 +21,7 @@ One of the following permissions is required to call this API. To learn more, in
 |:--------------------|:---------------------------------------------------------|
 |Delegated (work or school account) | Chat.Read   |
 |Delegated (personal Microsoft account) | Not supported.    |
-|Application | Chat.Read.All   |
+|Application | Not supported.   |
 
 > [!NOTE]
 > Before calling this API with application permissions, you must request access. For details, see [Protected APIs in Microsoft Teams](/graph/teams-protected-apis).
@@ -64,7 +64,7 @@ Here is an example of the request.
   "blockType": "request",
   "name": "get_chat_messages"
 }-->
-```http
+```msgraph-interactive
 GET https://graph.microsoft.com/beta/chats/{id}/messages
 ```
 # [C#](#tab/csharp)

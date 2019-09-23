@@ -68,6 +68,18 @@ This method supports the [OData Query Parameters](https://developer.microsoft.co
 
 You can use the `$filter` query parameter on the **mentionsPreview** property to get those messages that mention the signed-in user.
 
+### Using filter and orderby in the same query
+When using `$filter` and `$orderby` in the same query to get messages, make sure to specify properties in the following ways:
+
+1. Properties that appear in `$orderby` must also appear in `$filter`. 
+2. Properties that appear in `$orderby` are in the same order as in `$filter`.
+3. Properties that are present in `$orderby` appear in `$filter` before any properties that aren't.
+
+Failing to do this results in the following error:
+
+- Error code: `InefficientFilter`
+- Error message: `The restriction or sort order is too complex for this operation.`
+
 ## Request headers
 | Name       | Type | Description|
 |:-----------|:------|:----------|
@@ -90,7 +102,7 @@ The first example gets the default, top 10 messages in the signed-in user's mail
   "blockType": "request",
   "name": "get_messages"
 }-->
-```http
+```msgraph-interactive
 GET https://graph.microsoft.com/beta/me/messages?$select=sender,subject
 ```
 # [C#](#tab/csharp)
@@ -229,7 +241,7 @@ The example also incorporates URL encoding for the space characters in the query
   "blockType": "request",
   "name": "get_messages_with_mentions"
 }-->
-```http
+```msgraph-interactive
 GET https://graph.microsoft.com/beta/me/messages?$filter=MentionsPreview/IsMentioned%20eq%20true&$select=Subject,Sender,ReceivedDateTime,MentionsPreview
 ```
 # [C#](#tab/csharp)
@@ -306,7 +318,7 @@ The third example shows how to use a `Prefer: outlook.body-content-type="text"` 
   "blockType": "request",
   "name": "get_messages_in_text"
 }-->
-```http
+```msgraph-interactive
 GET https://graph.microsoft.com/beta/me/messages?$select=subject,body,bodyPreview,uniqueBody
 Prefer: outlook.body-content-type="text"
 ```

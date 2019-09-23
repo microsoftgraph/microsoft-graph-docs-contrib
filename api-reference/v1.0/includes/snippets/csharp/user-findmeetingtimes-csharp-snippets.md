@@ -21,13 +21,13 @@ var attendees = new List<AttendeeBase>()
 
 var locationConstraint = new LocationConstraint
 {
-	IsRequired = "false",
-	SuggestLocation = "false",
+	IsRequired = false,
+	SuggestLocation = false,
 	Locations = new List<LocationConstraintItem>()
 	{
 		new LocationConstraintItem
 		{
-			ResolveAvailability = "false",
+			ResolveAvailability = false,
 			DisplayName = "Conf room Hood"
 		}
 	}

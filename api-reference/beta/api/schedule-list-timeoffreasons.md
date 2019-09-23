@@ -57,7 +57,7 @@ The following is an example of the request.
   "blockType": "request",
   "name": "schedule-list-timeoffreasons"
 }-->
-```http
+```msgraph-interactive
 GET https://graph.microsoft.com/beta/teams/{teamId}/schedule/timeOffReasons
 ```
 # [C#](#tab/csharp)

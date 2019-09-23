@@ -23,7 +23,7 @@ One of the following permissions is required to call this API. To learn more, in
 
 ## HTTP request
 ```
-PATCH /financials/companies('{id}')/currencies('{id}')
+PATCH /financials/companies/{id}/currencies/{id}
 ```
 
 ## Optional query parameters
@@ -48,7 +48,7 @@ If successful, this method returns a `200 OK` response code and an updated **cur
 
 Here is an example of the request.
 ```json
-PATCH https://graph.microsoft.com/beta/financials/companies('{id}')/currencies('{id}')
+PATCH https://graph.microsoft.com/beta/financials/companies/{id}/currencies/{id}
 Content-type: application/json
 
 {

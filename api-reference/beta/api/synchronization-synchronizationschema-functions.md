@@ -54,7 +54,7 @@ The following is an example of a request.
   "blockType": "request",
   "name": "synchronizationschema_functions"
 }-->
-```http
+```msgraph-interactive
 GET https://graph.microsoft.com/beta/servicePrincipals/{id}/synchronization/jobs/{jobId}/schema/functions
 ```
 # [C#](#tab/csharp)

@@ -3,6 +3,8 @@ title: "Use query parameters to customize responses"
 description: "Microsoft Graph provides optional query parameters that you can use to specify and control the amount of data returned in a response. The following query parameters are supported."
 author: "piotrci"
 localization_priority: Priority
+scenarios: "getting-started"
+ms.custom: graphiamtop20
 ---
 
 # Use query parameters to customize responses
@@ -139,7 +141,11 @@ Support for `$filter` operators varies across Microsoft Graph APIs. The followin
 - or (`or`)
 - not (`not`)
  
-The `startswith` string operator is often supported. The `any` lambda operator is supported for some APIs. For some  usage examples, see the following table. For more details about `$filter` syntax, see the [OData protocol][odata-filter].  
+The `startswith` string operator is often supported. The `any` lambda operator is supported for some APIs. 
+
+> **Note:** You must [specify properties in certain ways](/graph/api/user-list-messages?view=graph-rest-1.0#using-filter-and-orderby-in-the-same-query) when using both `$filter` and `$orderby` in the same query to get messages.
+
+For some  usage examples, see the following table. For more details about `$filter` syntax, see the [OData protocol][odata-filter].  
 
 The following table shows some examples that use the `$filter` query parameter.
 
@@ -198,8 +204,9 @@ GET https://graph.microsoft.com/v1.0/me/mailFolders/Inbox/messages?$orderby=from
 
 [Try in Graph Explorer](https://developer.microsoft.com/graph/graph-explorer?request=me/messages?$orderby=from/emailAddress/name%20desc,subject&method=GET&version=v1.0)
 
-When you specify $filter the server will infer a sort order for the results. If you use both `$orderby` and `$filter`, because the server always infers 
-a sort order for the results of a `$filter`, the properties in the `$filter` must be listed first in the `$orderby` before any other properties, and they must be listed in the order that they appear in the `$filter` parameter. 
+> **Note:** When you specify $filter the server will infer a sort order for the results. If you use both `$orderby` and `$filter` to get messages, because the server always infers 
+a sort order for the results of a `$filter`, you must [specify properties in certain ways](/graph/api/user-list-messages?view=graph-rest-1.0#using-filter-and-orderby-in-the-same-query).
+
 
 The following example shows a query filtered by the **subject** and **importance** properties, and then sorted by the **subject**, **importance**, and 
 **receivedDateTime** properties in descending order.

@@ -4,6 +4,7 @@ description: "This topic describes how to enable application access to partner-m
 author: "jackson-woods"
 localization_priority: Priority
 ms.prod: "microsoft-identity-platform"
+ms.custom: graphiamtop20
 ---
 
 # Call Microsoft Graph from a Cloud Solution Provider application
@@ -79,7 +80,7 @@ This is a standard [authorization code grant flow](https://docs.microsoft.com/en
     GET https://login.microsoftonline.com/customer.com/oauth2/authorize
     ```
 
-2. [Aquire an access token using the authorization code:](https://docs.microsoft.com/en-us/azure/active-directory/develop/active-directory-protocols-oauth-code#use-the-authorization-code-to-request-an-access-token) Your app must use a **customer tenant** as the target tenant, in our example ```customer.com```, when making the request to the ```token``` endpoint:
+2. [Acquire an access token using the authorization code:](https://docs.microsoft.com/en-us/azure/active-directory/develop/active-directory-protocols-oauth-code#use-the-authorization-code-to-request-an-access-token) Your app must use a **customer tenant** as the target tenant, in our example ```customer.com```, when making the request to the ```token``` endpoint:
 
     ```http
     POST https://login.microsoftonline.com/customer.com/oauth2/token

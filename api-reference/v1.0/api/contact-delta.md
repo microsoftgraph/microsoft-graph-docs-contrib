@@ -128,7 +128,7 @@ Content-type: application/json
 Content-length: 337
 
 {
-  "@odata.nextLink":"https://graph.microsoft.com/v1.0/me/contactfolders('{id}')/contacts/delta?$skiptoken={_skipToken_}",
+  "@odata.nextLink":"https://graph.microsoft.com/v1.0/me/contactfolders/{id}/contacts/delta?$skiptoken={_skipToken_}",
   "value": [
     {
       "parentFolderId": "parentFolderId-value",
