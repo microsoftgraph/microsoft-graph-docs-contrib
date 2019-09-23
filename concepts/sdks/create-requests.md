@@ -1,17 +1,17 @@
 ---
 title: "Create API Requests"
-description: "Provides instructions for creating Microsoft Graph HTTP API requests."
+description: "Provides instructions for creating Microsoft Graph HTTP requests."
 localization_priority: Normal
 author: DarrelMiller
 ---
 
-# Make HTTP requests with the SDKs
+# Make API calls with the SDKs
 
-The Microsoft SDK service libraries provide a root class, referred to as the *client* class that can be used as the starting point for creating all API requests. There are two styles of *client* class, one which uses a "fluent" interface to build up the HTTP request and the other uses a templated path string.
+The Microsoft SDK service libraries provide a client class that can be used as the starting point for creating all API requests. There are two styles of client class, one which uses a fluent interface to create the request (e.g. `client.Me.Manager` ) and the other that accepts a path string (e.g. `api("/me/manager")`). Once you have a request object, you can specify a variety of options such as filtering and sorting, and finally, you select the kind of operation you wish to perform.
 
 ## Read information from Microsoft Graph
 
-To read information from Microsoft Graph, it is first necessary to create a *request* object and then execute the *get* method on the request.
+To read information from Microsoft Graph, it is first necessary to create a request object and then execute the get method on the request.
 
 # [C#](#tab/CS)
 
@@ -36,6 +36,8 @@ When retrieving an entity, not all properties are automatically retrieved, somet
 # [C#](#tab/CS)
 
 ```csharp
+    // GET https://graph.microsoft.com/v1.0/me?$select=displayName,jobTitle
+
      User user = await graphClient.Me
                 .Request()
                 .Select(u => new
@@ -43,15 +45,17 @@ When retrieving an entity, not all properties are automatically retrieved, somet
                     u.DisplayName,
                     u.JobTitle
                 })
-                .GetAsync(); // GET https://graph.microsoft.com/v1.0/me?$select=displayName,jobTitle
+                .GetAsync(); 
 ```
 
 # [JavaScript](#tab/JavaScript)
 
 ```JavaScript
+    // GET https://graph.microsoft.com/v1.0/me?$select=displayName,jobTitle
+
     let user = await client.api("/me")
         .select("displayName", "jobTitle")
-        .get();  // GET https://graph.microsoft.com/v1.0/me?$select=displayName,jobTitle
+        .get();  
 ```
 
 ---
@@ -63,22 +67,25 @@ Retrieving a list of entities is similar to retrieving a single entity except th
 # [C#](#tab/CS)
 
 ```csharp
-     IUserMessagesCollectionPage messages = await graphClient.Me.Messages
+    // GET https://graph.microsoft.com/v1.0/me/messages?$select=subject,sender&$filter=<some condition>&orderBy=receivedDateTime
+
+    IUserMessagesCollectionPage messages = await graphClient.Me.Messages
                 .Request()
                 .Select(m => new
                 {
-                    u.Subject,
-                    u.Sender
+                    m.Subject,
+                    m.Sender
                 })
-                .Filter("some condition")
+                .Filter("<filter condition>")
                 .OrderBy("receivedDateTime")
                 .GetAsync();
-// GET https://graph.microsoft.com/v1.0/me/messages?$select=subject,sender&$filter=<some condition>&orderBy=receivedDateTime
 ```
 
 # [JavaScript](#tab/JavaScript)
 
 ```JavaScript
+    // GET https://graph.microsoft.com/v1.0/me/messages?$select=subject,sender&$filter=<some condition>&orderBy=receivedDateTime
+
     let messages = await client.api("/me/messages")
         .select("subject", "sender")
         .filter("some condition")
@@ -88,28 +95,32 @@ Retrieving a list of entities is similar to retrieving a single entity except th
 
 ---
 
-The object returned when retrieving a list of entities is likely to be a paged collection. Refer to the [paging through a collection]() section for details on how to obtain the complete list of entities.
+The object returned when retrieving a list of entities is likely to be a paged collection. Refer to the [paging through a collection](paging) section for details on how to obtain the complete list of entities.
 
 ## Access an item of a collection
 
-For SDKs that support a *fluent* style, collections of entities can be accessed using an array index.  For template based SDKs, it is sufficient to simply embed the item identifier in the path segment following the collection.
+For SDKs that support a fluent style, collections of entities can be accessed using an array index.  For template based SDKs, it is sufficient to simply embed the item identifier in the path segment following the collection.
 
 # [C#](#tab/CS)
 
 ```csharp
+    // GET https://graph.microsoft.com/v1.0/me/messages/<guid>
+
      string messageId = "<guid>";
      Message message = await graphClient.Me.Messages[messageId]
                 .Request()
                 .GetAsync();
-// GET https://graph.microsoft.com/v1.0/me/messages/<guid>
+
 ```
 
 # [JavaScript](#tab/JavaScript)
 
 ```JavaScript
+    // GET https://graph.microsoft.com/v1.0/me/messages/<guid>
+
     let messageId = "<guid>";
     let messages = await client.api("/me/messages/${messageId}")
-        .get();  // GET https://graph.microsoft.com/v1.0/me?$select=displayName,jobTitle
+        .get();  
 ```
 
 ---
@@ -121,21 +132,25 @@ Using the `$expand` capability it is possible to request a related entity, or co
 # [C#](#tab/CS)
 
 ```csharp
+    // GET https://graph.microsoft.com/v1.0/me/messages/<guid>?$expand=attachments
+
      string messageId = "<guid>";
      Message message = await graphClient.Me.Messages[messageId]
                 .Request()
                 .Expand("attachments")
                 .GetAsync();
-// GET https://graph.microsoft.com/v1.0/me/messages/<guid>?$expand=attachments
+
 ```
 
 # [JavaScript](#tab/JavaScript)
 
 ```JavaScript
+    // GET https://graph.microsoft.com/v1.0/me/messages?$expand=attachments
+
     let messageId = "<guid>";
     let message = await client.api("/me/messages/${messageId}")
         .expand("attachments")
-        .get();  // GET https://graph.microsoft.com/v1.0/me/messages?$expand=attachments
+        .get();  
 ```
 
 ---
@@ -147,20 +162,23 @@ To delete an entity, the *request* can be constructed in exactly the same way as
 # [C#](#tab/CS)
 
 ```csharp
+    // DELETE https://graph.microsoft.com/v1.0/me/messages/<guid>
+
      string messageId = "<guid>";
      Message message = await graphClient.Me.Messages[messageId]
                 .Request()
                 .DeleteAsync();
-    // DELETE https://graph.microsoft.com/v1.0/me/messages/<guid>
+
 ```
 
 # [JavaScript](#tab/JavaScript)
 
 ```JavaScript
+    // DELETE https://graph.microsoft.com/v1.0/me/messages/<guid>
+
     let messageId = "<guid>";
     let message = await client.api("/me/messages/${messageId}")
         .delete();  
-    // DELETE https://graph.microsoft.com/v1.0/me/messages/<guid>
 ```
 
 ---
@@ -205,7 +223,39 @@ Creating a new entity in a collection can be done by calling an `add` or `post` 
 
 ## Updating an existing entity with PATCH
 
-TBD
+Most updates in Microsoft Graph are performed using a the `PATCH` method and therefore it is only necessary to include the properties that you wish to change in the object you pass.  
+
+# [C#](#tab/CS)
+```csharp
+GraphServiceClient graphClient = new GraphServiceClient( authProvider );
+
+var team = new Team
+{
+	FunSettings = new TeamFunSettings
+	{
+		AllowGiphy = true,
+		GiphyContentRating = GiphyRatingType.Strict
+	}
+};
+
+await graphClient.Teams["{id}"]
+	.Request()
+	.UpdateAsync(team);
+```
+
+# [JavaScript](#tab/JavaScript)
+
+```js
+const team = {
+  funSettings: {
+    allowGiphy: true,
+    giphyContentRating: "strict"
+  }
+};
+
+let res = await client.api('/teams/{id}')
+	.update(team);
+```
 
 ## Use HTTP headers to control request behavior
 
