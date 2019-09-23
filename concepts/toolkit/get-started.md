@@ -4,7 +4,7 @@ You can use the components by referencing the loader directly (via unpkg), or by
 
 For details about how to get started with the Microsoft Graph Toolkit, see the [Get started video](https://www.youtube.com/watch?v=oZCGb2MMxa0).
 
-### Use via mgt-loader
+## Use via mgt-loader
 
 See the folowing [jsfiddle example](https://jsfiddle.net/metulev/9phqxLd5/).
 
@@ -27,7 +27,7 @@ You can then start using the components in your HTML page. The following is a fu
 
 > **Note:** MSAL requires the page to be hosted in a web server for the authentication redirects. If you're just getting started and want to play around, you can use [live server](https://marketplace.visualstudio.com/items?itemName=ritwickdey.LiveServer) in Visual Studio Code.
 
-### Use via NPM (es6 modules)
+## Use via NPM (es6 modules)
 
 By using the es6 modules, you have full control of the bundling process and you can bundle only the code you need for your site. First, add the npm package:
 
