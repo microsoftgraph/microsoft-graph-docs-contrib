@@ -13,6 +13,12 @@ For details about known issues with Microsoft Graph APIs, see [Known issues](kno
 
 ## September 2019
 
+### Devices and apps (Microsoft Intune)
+
+|Change type|Version|Description|
+|:---|:---|:---|
+| Addition | Beta | Added application permissions support for write operations. |
+
 ### Calendar, mail, groups
 
 | **Change type** | **Version**   | **Description**                          |
