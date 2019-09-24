@@ -886,3 +886,64 @@ Possible values for user account types (group membership), per Windows definitio
 |user|
 |unknownFutureValue|
 
+### conditionalAccessPolicyState
+
+| Member       | Value       |
+|:--------------|:--------------|
+|enabled|0|
+|disabled|1|
+
+### conditionalAccessClientApp
+
+| Member       | Value       |
+|:--------------|:--------------|
+|browser|0|
+|modern|1|
+|easSupported|2|
+|easUnsupported|3|
+|other|4|
+
+### conditionalAccessGrantControl
+
+| Member       | Value       |
+|:--------------|:--------------|
+|block|0|
+|mfa|1|
+|compliantDevice|2|
+|domainJoinedDevice|3|
+|approvedApplication|4|
+|compliantApplication|5|
+
+### cloudAppSecuritySessionControlType
+
+| Member       | Value       |
+|:--------------|:--------------|
+|mcasConfigured|0|
+|monitorOnly|1|
+|blockDownloads|2|
+|protectDownloads|3|
+
+### signinFrequencyType
+
+| Member       | Value       |
+|:--------------|:--------------|
+|days|0|
+|hours|1|
+
+### persistentBrowserSessionMode
+
+| Member       | Value       |
+|:--------------|:--------------|
+|always|0|
+|never|1|
+
+### conditionalAccessDevicePlatform
+
+| Member       | Value       |
+|:--------------|:--------------|
+|android|0|
+|iOS|1|
+|windows|2|
+|windowsPhone|3|
+|macOS|4|
+|all|5|
