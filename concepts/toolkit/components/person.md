@@ -9,7 +9,7 @@ author: nmetulev
 
 The person component is used to display a person or contact by using their photo, name, and/or email address. 
 
-Additionally the person component leverages the use of [mgt-person-card](./person-card.md) to display a flyout card with additional information about the user. See section [Person Card](#-Person-Card) below.
+Additionally the person component leverages the use of [mgt-person-card](./person-card.md) to display a flyout card with additional information about the user. See section [Person Card](#Person-Card) below.
 
 ## Example
 
