@@ -102,7 +102,47 @@ Content-length: 491
 }
 ```
 
+### Example 2: Get the properties of the specified user
 
+#### Request
+
+The following example shows a request.
+
+<!-- {
+  "blockType": "request",
+  "name": "get_other_user"
+}-->
+```http
+GET https://graph.microsoft.com/beta/users/{id}
+Content-type: application/json
+```
+
+#### Response
+
+The following example shows the response.
+<!-- {
+  "blockType": "response",
+  "truncated": true,
+  "@odata.type": "microsoft.graph.user"
+} -->
+```http
+HTTP/1.1 200 OK
+Content-type: application/json
+Content-length: 491
+
+{
+  "displayName": "displayName-value",
+  "givenName": "givenName-value",
+  "jobTitle": "jobTitle-value",
+  "mail": "mail-value",
+  "mobilePhone": "mobilePhone-value",
+  "officeLocation": "officeLocation-value",
+  "preferredLanguage": "preferredLanguage-value",
+  "surname": "surname-value",
+  "userPrincipalName": "userPrincipalName-value",
+  "id": "id-value"
+}
+```
 
 ## See also
 
