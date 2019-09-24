@@ -23,6 +23,13 @@ For details about known issues with Microsoft Graph APIs, see [Known issues](kno
 
 ## September 2019
 
+### Education
+
+| **Change type** | **Version**   | **Description**                          |
+| :-------------- | :------------ | :--------------------------------------- |
+| Addition | beta | Added new property **closeDateTime** to [educationAssignment](/graph/api/resources/educationAssignment?view=graph-rest-beta).|
+| Change | beta | Changed the property names **mkcd** to **projectId** and **url** to **hostWebUrl** in [educationMakeCodeResource](/graph/api/resources/educationMakeCodeResource?view=graph-rest-beta) resource.|
+
 ### Devices and apps (Microsoft Intune)
 
 |Change type|Version|Description|
