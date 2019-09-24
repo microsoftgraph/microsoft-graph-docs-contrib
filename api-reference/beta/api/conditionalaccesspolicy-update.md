@@ -1,6 +1,6 @@
 ---
 title: "Update conditionalaccesspolicy"
-description: "Update the properties of conditionalaccesspolicy object."
+description: "Update the properties of a conditionalaccesspolicy object."
 localization_priority: Normal
 author: ""
 ms.prod: ""
@@ -11,7 +11,7 @@ doc_type: "apiPageType"
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Update the properties of conditionalaccesspolicy object.
+Update the properties of a conditionalaccesspolicy object.
 
 ## Permissions
 
@@ -19,9 +19,9 @@ One of the following permissions is required to call this API. To learn more, in
 
 | Permission type                        | Permissions (from least to most privileged) |
 |:---------------------------------------|:--------------------------------------------|
-| Delegated (work or school account)     | Not supported. |
+| Delegated (work or school account) | Directory.AccessAsUser.All |
 | Delegated (personal Microsoft account) | Not supported. |
-| Application                            | Not supported. |
+| Delegated (work or school account) | Policy.ReadWrite.ConditionalAccess |
 
 ## HTTP request
 
@@ -43,14 +43,15 @@ In the request body, supply the values for relevant fields that should be update
 
 | Property     | Type        | Description |
 |:-------------|:------------|:------------|
-|conditions|conditionalAccessConditions||
-|createdDateTime|DateTimeOffset||
-|description|String||
-|displayName|String||
-|grantControls|conditionalAccessGrantControls||
-|modifiedDateTime|DateTimeOffset||
-|sessionControls|conditionalAccessSessionControls||
-|state|string| Possible values are: `enabled`, `disabled`.|
+| `includeApplications` | String collection | Application IDs in scope of policy unless explicitly excluded. |
+| `excludeApplications` | String collection | Application IDs excluded from scope of policy. |
+| `includeUserActions` | String collection | User actions in scope of the policy, e.g. 'urn:user:registersecurityinfo'. |
+| `includeUsers` | String collection | User IDs in scope of policy unless explicitly excluded, or `ALL` or `GUEST`. |
+| `excludeUsers` | String collection | User IDs excluded from scope of policy and/or `GUEST`. |
+| `includeGroups` | String collection | Group IDs in scope of policy unless explicitly excluded, or `ALL`. |
+| `excludeGroups` | String collection | Group IDs excluded from scope of policy. |
+| `includeRoles` | String collection | Role IDs in scope of policy unless explicitly excluded, or `ALL`. |
+| `excludeRoles` | String collection | Role IDs excluded from scope of policy. |
 
 ## Response
 
@@ -67,15 +68,37 @@ The following is an example of the request.
 }-->
 
 ```http
-PATCH https://graph.microsoft.com/beta/conditionalaccess/policies/{id}
+PATCH https://graph.microsoft.com/beta/conditionalaccess/policies/7960c36c-ee7e-449f-8d1b-aa09046a9bc3
 Content-type: application/json
 
 {
-  "createdDateTime": "datetime-value",
-  "modifiedDateTime": "datetime-value",
-  "displayName": "displayName-value",
-  "description": "description-value",
-  "state": "state-value"
+  "displayName": "Sample - UpdateTest1",
+  "conditions": {
+    "applications": {
+      "includeApplications": [
+        "00000002-0000-0ff1-ce00-000000000000"
+      ],
+      "excludeApplications": [],
+      "includeAuthenticationContext": []
+    },
+    "users": {
+      "includeUsers": [],
+      "excludeUsers": [
+        "Guests"
+      ],
+      "includeGroups": [
+        "796f8da4-21f2-4148-a34b-9735811d5852",
+        "5fad529d-b4a2-4d4d-89c5-e72be11a8ab5"
+      ],
+      "excludeGroups": [
+        "46756a9c-01c0-4526-96e1-5f343c240567"
+      ],
+      "includeRoles": [
+        "cf1c38e5-3621-4004-a7cb-879624dced7c"
+      ],
+      "excludeRoles": []
+    }
+  }
 }
 ```
 

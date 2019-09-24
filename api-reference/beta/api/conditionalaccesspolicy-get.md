@@ -1,6 +1,6 @@
 ---
 title: "Get conditionalAccessPolicy"
-description: "Retrieve the properties and relationships of conditionalaccesspolicy object."
+description: "Retrieve the properties and relationships of a conditionalaccesspolicy object."
 localization_priority: Normal
 author: ""
 ms.prod: ""
@@ -11,7 +11,7 @@ doc_type: "apiPageType"
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Retrieve the properties and relationships of conditionalaccesspolicy object.
+Retrieve the properties and relationships of a conditionalaccesspolicy object.
 
 ## Permissions
 
@@ -19,9 +19,9 @@ One of the following permissions is required to call this API. To learn more, in
 
 | Permission type                        | Permissions (from least to most privileged) |
 |:---------------------------------------|:--------------------------------------------|
-| Delegated (work or school account)     | Not supported. |
+| Delegated (work or school account) | Directory.AccessAsUser.All |
 | Delegated (personal Microsoft account) | Not supported. |
-| Application                            | Not supported. |
+| Delegated (work or school account) | Policy.Read.All or Policy.ReadWrite.ConditionalAccess |
 
 ## HTTP request
 
@@ -60,7 +60,7 @@ The following is an example of the request.
 }-->
 
 ```http
-GET https://graph.microsoft.com/beta/conditionalaccess/policies/{id}
+GET https://graph.microsoft.com/beta/conditionalaccess/policies/7960c36c-ee7e-449f-8d1b-aa09046a9bc3
 ```
 
 ### Response
@@ -80,12 +80,26 @@ HTTP/1.1 200 OK
 Content-type: application/json
 
 {
-  "id": "id-value",
-  "createdDateTime": "datetime-value",
-  "modifiedDateTime": "datetime-value",
-  "displayName": "displayName-value",
-  "description": "description-value",
-  "state": "state-value"
+  "@odata.context": "https://graph.microsoft.com/beta/$metadata#conditionalAccessPolicies/$entity",
+  "id": "94f8bf38-27b1-46d0-a745-9dac7e22c7d1",
+  "displayName": "Test Sample Policy",
+  "createdDateTime": null,
+  "modifiedDateTime": null,
+  "state": "enabled",
+  "conditions": {
+    "signInRiskLevels": [
+      "high",
+      "medium",
+      "low",
+      "none"
+    ],
+    "clientAppTypes": [
+      "browser",
+      "modern",
+      "easSupported",
+      "other"
+    ]
+  }
 }
 ```
 
