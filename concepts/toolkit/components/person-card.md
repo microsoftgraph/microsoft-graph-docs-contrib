@@ -7,9 +7,9 @@ author: vogtn
 
 # Person-Card component in the Microsoft Graph Toolkit
 
-A Person-Card component is a responsive component to display more information relating to a person. It is generally used as a flyout on the `mgt-person` component.
+A Person-Card component is a responsive component to display more information related to a person. It is generally used as a flyout on the `mgt-person` component.
 
-See [mgt-person docs](./person.md) for more information on the `mgt-person` component.
+For more information about the `mgt-person` component, see [mgt-person docs](./person.md).
   
 ## Example
 
@@ -19,12 +19,12 @@ See [mgt-person docs](./person.md) for more information on the `mgt-person` comp
 
 ## Properties
 
-The component utilizes the Microsoft Graph to provide additional details about the user. To define a user, you must utilize the `person-query` property of `mgt-person`.
+The component uses Microsoft Graph to provide additional details about the user. To define a user, you must use the **person-query** property of `mgt-person`.
 
 | Attribute         | type                     | Description                                                                           |
 | ---------------- | -------------------------------- | ------------------------------------------------------------------------------------- |
-| `person-details` | `MicrosoftGraph.User` <br> `MicrosoftGraph.Person` <br> `MicrosoftGraph.Contact` | Person object as defined by Microsoft Graph, containing details relating to the user. |
-| `person-image`   | `png/jpg/svg`                    | Image relating to the person displayed in the card.                                   |
+| person-details | MicrosoftGraph.User <br> MicrosoftGraph.Person <br> MicrosoftGraph.Contact | Person object as defined by Microsoft Graph, containing details related to the user. |
+| person-image   | png/jpg/svg                    | Image related to the person displayed in the card.                                   |
 
 
 
@@ -34,10 +34,10 @@ The Person-Card component utilizes [templates](../templates.md) which allow you 
 
 | Data type | Data context | Description |
 | --- | --- | --- |
-| `default` | `person`: the person details object <br> `personImage`: the url of the image | The default template replaces the entire component with your own. |
-| `additional-details` | `person`: the person details object <br> `personImage`: the url of the image | The template used to add additional content to the card |
+| default | person: The person details object <br> personImage: The URL of the image | The default template replaces the entire component with your own. |
+| additional-details | person: The person details object <br> personImage: the URL of the image | The template used to add additional content to the card. |
 
-For example, you can use a template to customize the component attached to the `mgt-person` component and a template to add additional details in the card: 
+For example, you can use a template to customize the component attached to the `mgt-person` component and a template to add additional details in the card. 
 
 ```html
     <mgt-person person-query="me" show-name show-email person-card="hover">
