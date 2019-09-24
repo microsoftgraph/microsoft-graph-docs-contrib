@@ -1,40 +1,43 @@
 ---
 title: "Person-Card component in the Microsoft Graph Toolkit"
-description: "A Person-Card component is a flyout control to display more information relating to the mgt-person component viewed."
+description: "A Person-Card component is a component to display more information relating to a person."
 localization_priority: Normal
-author: nmetulev
+author: vogtn
 ---
 
 # Person-Card component in the Microsoft Graph Toolkit
 
-A Person-Card component is a responsive flyout control to display more information relating to the `mgt-person` component viewed. There are two ways of activating the control:
-* On hover of a `mgt-person` component
-* On click of a `mgt-person` component
+A Person-Card component is a responsive component to display more information relating to a person. It is generally used as a flyout on the `mgt-person` component.
 
 See [mgt-person docs](./person.md) for more information on the `mgt-person` component.
   
 ## Example
 
-[jsfiddle example]()
-
 ```html
-<mgt-person-card person-details="" person-image=""></mgt-person-card>
+<mgt-person-card person-details="{personObject}" person-image="imgUrl"></mgt-person-card>
 ```
 
 ## Properties
 
 The component utilizes the Microsoft Graph to provide additional details about the user. To define a user, you must utilize the `person-query` property of `mgt-person`.
 
-| Property         | Data context                     | Description                                                                           |
+| Attribute         | type                     | Description                                                                           |
 | ---------------- | -------------------------------- | ------------------------------------------------------------------------------------- |
-| `person-details` | `MicrosoftGraph.Person | object` | Person object as defined by Microsoft Graph, contianing details relating to the user. |
+| `person-details` | `MicrosoftGraph.User` <br> `MicrosoftGraph.Person` <br> `MicrosoftGraph.Contact` | Person object as defined by Microsoft Graph, containing details relating to the user. |
 | `person-image`   | `png/jpg/svg`                    | Image relating to the person displayed in the card.                                   |
 
 
 
-## Tempalates
+## Templates
 
-The Person-Card component utilizes [templates](../templates.md) which allows you to add or replace portions of the component. To specify a template, wrap the mgt-person-card component with `<template>` The component currently supports a customizable additional section: 
+The Person-Card component utilizes [templates](../templates.md) which allow you to add or replace portions of the component. To specify a template, include a `<template>` element inside of a component and set the `data-type` value to one of the following:
+
+| Data type | Data context | Description |
+| --- | --- | --- |
+| `default` | `person`: the person details object <br> `personImage`: the url of the image | The default template replaces the entire component with your own. |
+| `additional-details` | `person`: the person details object <br> `personImage`: the url of the image | The template used to add additional content to the card |
+
+For example, you can use a template to customize the component attached to the `mgt-person` component and a template to add additional details in the card: 
 
 ```html
     <mgt-person person-query="me" show-name show-email person-card="hover">
@@ -54,9 +57,6 @@ The Person-Card component utilizes [templates](../templates.md) which allows you
     </mgt-person>
 
 ```
-
-
-
 
 ## CSS custom properties
 

@@ -44,7 +44,7 @@ You can use three properties to set the person details. Use only one of the foll
 
 ## Changing how the component looks
 
-You can use several propertiesto customize the component.
+You can use several properties customize the component.
 
 | Property    | Attribute    | Description                                                   |
 | ----------- | ------------ | ------------------------------------------------------------- |
@@ -78,9 +78,10 @@ To learn more, see [styling components](../style.md).
 
 The `mgt-person` component supports several [templates](../templates.md) that allow you to replace certain parts of the component. To specify a template, include a `<template>` element inside a component and set the `data-type` value to one of the following:
 
-| Data type | Data context              | Description                                                       |
-| --------- | ------------------------- | ----------------------------------------------------------------- |
-| `default` | `person`: a person object | The default template replaces the entire component with your own. |
+| Data type     | Data context              | Description                                                       |
+| ---------     | ------------------------- | ----------------------------------------------------------------- |
+| `default`     | `person`: the person details object <br> `personImage`: the url of the image | The default template replaces the entire component with your own. |
+| `person-card` | `person`: the person details object <br> `personImage`: the url of the image | The template to update the mgt-person-card displayed on hover or click |
 
 The following example defines a template for the person component:
 
@@ -99,15 +100,16 @@ The following example defines a template for the person component:
 
 ## Person Card
 
-The `mgt-person-card` utilizes all the regular features of `mgt-person`, with additional controls.
+The `mgt-person` component can show an `mgt-person-card` on either hover or click.
 
 ### Add the control to the HTML page
 ```html
 <mgt-person person-query="me" person-card="hover"></mgt-person>
 ```
+
 | Property     | Attribute     | Description                                                                     |
 | ------------ | ------------- | ------------------------------------------------------------------------------- |
-| `personCard` | `person-card` | Determines user action necessary to activate flyout panel - `hover` or `click`. |
+| `personCard` | `person-card` | An enumeration to determine user action necessary to activate flyout panel - `hover` or `click`. Default value is `none` |
 
 
 For more information on templating, styling or attributes, see the [mgt-person-card](./person-card.md) documentation.
