@@ -117,15 +117,13 @@ Delta query is currently supported for the following resources.
 
 Some resources contain properties that are stored outside of the main data store where the resource is mastered. Currently, those properties are not supported as part of change tracking; a change to one of those properties will not result in an object showing up in the delta query response. Currently, only the properties stored in the main data store trigger changes in the delta query.
 
-In order to confirm if a property can be used in delta query, perform the following quick test:
-
-Try to perform a regular `GET` operation on the resource collection, and select the property you are interested in. For example, let's try the **skills** property on the users collection:
+To verify that a property can be used in delta query, try to perform a regular `GET` operation on the resource collection, and select the property you're interested in. For example, you can try the **skills** property on the users collection.
 
 ```msgraph-interactive
 GET https://graph.microsoft.com/v1.0/users/?$select=skills
 ```
 
-Since the **skills** property is stored outside of Azure AD, the response we get is:
+Because the **skills** property is stored outside of Azure AD, the following is the response.
 
 <!-- {
   "blockType": "response",
@@ -150,7 +148,7 @@ Content-type: application/json
 }
 ```
 
-This tells you that the **skills** property is not supported for delta query on the users resource.
+This tells you that the **skills** property is not supported for delta query on the **user** resource.
 
 ## Prerequisites
 
