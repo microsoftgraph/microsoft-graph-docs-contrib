@@ -131,16 +131,20 @@ Content-type: application/json
 Content-length: 491
 
 {
-  "displayName": "displayName-value",
-  "givenName": "givenName-value",
-  "jobTitle": "jobTitle-value",
-  "mail": "mail-value",
-  "mobilePhone": "mobilePhone-value",
-  "officeLocation": "officeLocation-value",
-  "preferredLanguage": "preferredLanguage-value",
-  "surname": "surname-value",
-  "userPrincipalName": "userPrincipalName-value",
-  "id": "id-value"
+  "value": [
+    {
+      "displayName": "displayName-value",
+      "givenName": "givenName-value",
+      "jobTitle": "jobTitle-value",
+      "mail": "mail-value",
+      "mobilePhone": "mobilePhone-value",
+      "officeLocation": "officeLocation-value",
+      "preferredLanguage": "preferredLanguage-value",
+      "surname": "surname-value",
+      "userPrincipalName": "userPrincipalName-value",
+      "id": "id-value"
+    }
+  ]
 }
 ```
 
