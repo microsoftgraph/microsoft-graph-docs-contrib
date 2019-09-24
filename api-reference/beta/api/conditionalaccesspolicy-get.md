@@ -60,7 +60,7 @@ The following is an example of the request.
 }-->
 
 ```http
-GET https://graph.microsoft.com/beta/conditionalaccess/policies/7960c36c-ee7e-449f-8d1b-aa09046a9bc3
+GET https://graph.microsoft.com/beta/conditionalaccess/policies/cfbc9bc8-3d77-4ba4-ad23-926015971fee
 ```
 
 ### Response
@@ -80,25 +80,101 @@ HTTP/1.1 200 OK
 Content-type: application/json
 
 {
-  "@odata.context": "https://graph.microsoft.com/beta/$metadata#conditionalAccessPolicies/$entity",
-  "id": "94f8bf38-27b1-46d0-a745-9dac7e22c7d1",
-  "displayName": "Test Sample Policy",
-  "createdDateTime": null,
+  "@odata.context": "https://graph.microsoft.com/beta/$metadata#conditionalAccessPolicy/$entity",
+  "id": "cfbc9bc8-3d77-4ba4-ad23-926015971fee",
+  "displayName": "Sample for documentation",
+  "createdDateTime": "2019-09-24T22:50:09.7320753Z",
   "modifiedDateTime": null,
-  "state": "enabled",
+  "state": "disabled",
   "conditions": {
+    "userRiskLevels": [],
     "signInRiskLevels": [
       "high",
-      "medium",
-      "low",
-      "none"
+      "medium"
     ],
     "clientAppTypes": [
-      "browser",
       "modern",
       "easSupported",
+      "easUnsupported",
       "other"
-    ]
+    ],
+    "applications": {
+      "includeApplications": [
+        "All"
+      ],
+      "excludeApplications": [],
+      "includeUserActions": []
+    },
+    "users": {
+      "includeUsers": [
+        "a702a13d-a437-4a07-8a7e-8c052de62dfd"
+      ],
+      "excludeUsers": [
+        "124c5b6a-ffa5-483a-9b88-04c3fce5574a",
+        "GuestsOrExternalUsers"
+      ],
+      "includeGroups": [],
+      "excludeGroups": [],
+      "includeRoles": [
+        "9b895d92-2cd3-44c7-9d02-a6ac2d5ea5c3",
+        "cf1c38e5-3621-4004-a7cb-879624dced7c",
+        "c4e39bd9-1100-46d3-8c65-fb160da0071f"
+      ],
+      "excludeRoles": [
+        "b0f54661-2d74-4c50-afa3-1ec803f12efe"
+      ]
+    },
+    "platforms": {
+      "includePlatforms": [
+        "all"
+      ],
+      "excludePlatforms": [
+        "iOS",
+        "windowsPhone"
+      ]
+    },
+    "locations": {
+      "includeLocations": [
+        "AllTrusted"
+      ],
+      "excludeLocations": [
+        "00000000-0000-0000-0000-000000000000",
+        "d2136c9c-b049-47ae-b9cf-316e04ef7198"
+      ]
+    },
+    "deviceStates": {
+      "includeStates": [
+        "All"
+      ],
+      "excludeStates": [
+        "Compliant"
+      ]
+    }
+  },
+  "grantControls": {
+    "operator": "OR",
+    "builtInControls": [
+      "mfa",
+      "compliantDevice",
+      "domainJoinedDevice",
+      "approvedApplication",
+      "compliantApplication"
+    ],
+    "customAuthenticationFactors": [],
+    "termsOfUse": []
+  },
+  "sessionControls": {
+    "applicationEnforcedRestrictions": null,
+    "persistentBrowser": null,
+    "cloudAppSecurity": {
+      "cloudAppSecurityType": "monitorOnly",
+      "isEnabled": true
+    },
+    "signInFrequency": {
+      "value": 8,
+      "type": "hours",
+      "isEnabled": true
+    }
   }
 }
 ```
