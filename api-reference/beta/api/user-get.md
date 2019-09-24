@@ -145,7 +145,7 @@ Content-length: 491
     "userPrincipalName": "userPrincipalName-value",
     "id": "id-value"
   }
-}
+]
 ```
 
 ## See also
