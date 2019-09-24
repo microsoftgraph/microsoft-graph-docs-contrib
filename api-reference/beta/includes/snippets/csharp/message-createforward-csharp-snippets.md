@@ -25,7 +25,7 @@ var message = new Message
 var comment = "Dana, just want to make sure you get this; you'll need this if the project gets approved.";
 
 await graphClient.Me.Messages["AAMkADA1MTAAAH5JaLAAA="]
-	.CreateForward(toRecipients,message,comment)
+	.CreateForward(null,message,comment)
 	.Request()
 	.PostAsync();
 
