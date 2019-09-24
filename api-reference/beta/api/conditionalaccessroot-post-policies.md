@@ -19,9 +19,9 @@ One of the following permissions is required to call this API. To learn more, in
 
 | Permission type                        | Permissions (from least to most privileged) |
 |:---------------------------------------|:--------------------------------------------|
-| Delegated (work or school account)     | Not supported. |
+| Delegated (work or school account) | Directory.AccessAsUser.All |
 | Delegated (personal Microsoft account) | Not supported. |
-| Application                            | Not supported. |
+| Delegated (work or school account) | Policy.ReadWrite.ConditionalAccess |
 
 ## HTTP request
 
@@ -60,11 +60,43 @@ POST https://graph.microsoft.com/beta/conditionalaccess/policies
 Content-type: application/json
 
 {
-  "createdDateTime": "datetime-value",
-  "modifiedDateTime": "datetime-value",
-  "displayName": "displayName-value",
-  "description": "description-value",
-  "state": "state-value"
+  "displayName": "BasicpolicySample",
+  "state": "disabled",
+  "sessionControls": null,
+  "conditions": {
+    "userRiskLevels": [],
+    "signInRiskLevels": [],
+    "clientAppTypes": [],
+    "platforms": null,
+    "locations": null,
+    "times": null,
+    "deviceStates": null,
+    "applications": {
+      "includeApplications": [
+        "None"
+      ],
+      "excludeApplications": [],
+      "includeAuthenticationContext": []
+    },
+    "users": {
+      "includeUsers": [
+        "None"
+      ],
+      "excludeUsers": [],
+      "includeGroups": [],
+      "excludeGroups": [],
+      "includeRoles": [],
+      "excludeRoles": []
+    }
+  },
+  "grantControls": {
+    "operator": "OR",
+    "builtInControls": [
+      "block"
+    ],
+    "customAuthenticationFactors": [],
+    "termsOfUse": []
+  }
 }
 ```
 
