@@ -30,7 +30,7 @@ The component uses Microsoft Graph to provide additional details about the user.
 
 ## Templates
 
-The Person-Card component utilizes [templates](../templates.md) which allow you to add or replace portions of the component. To specify a template, include a `<template>` element inside of a component and set the `data-type` value to one of the following:
+The Person-Card component uses [templates](../templates.md) that allow you to add or replace portions of the component. To specify a template, include a `<template>` element inside of a component and set the `data-type` value to one of the following.
 
 | Data type | Data context | Description |
 | --- | --- | --- |
