@@ -18,6 +18,7 @@ For details about known issues with Microsoft Graph APIs, see [Known issues](kno
 |Change type|Version|Description|
 |:---|:---|:---|
 | Addition | Beta | Added application permissions support for write operations: DeviceManagementConfiguration.ReadWrite.All, DeviceManagementApps.ReadWrite.All, DeviceManagementManagedDevices.ReadWrite.All, DeviceManagementRBAC.ReadWrite.All, DeviceManagementServiceConfig.ReadWrite.All |
+| Addition | v1.0 | Added the **v13_0** property to the [iosMinimumOperatingSystem](/graph/api/resources/intune-apps-iosminimumoperatingsystem) complex type. |
 
 ### Calendar, mail, groups
 
