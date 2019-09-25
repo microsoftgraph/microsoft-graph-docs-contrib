@@ -31,10 +31,10 @@ The following example uses the provider in HTML (via CDN).
 
 | Attribute | Description |
 | --- | --- | --- |
-| `client-id`   | **Required** string client ID (see "Configure your Teams app" below). |
-| `auth-popup-url`  | **Required** absolute or relative path to the page that will handle auth in the popup (see "Create the popup page" below). |
-| `scopes`  | Optional comma separated strings for scopes the user must consent on sign in) |
-| `depends-on` | Optional element selector string of another higher priority provider component |
+| client-id   | String client ID (see Configure your Teams app). Required. |
+| auth-popup-url  | Absolute or relative path to the page that will handle auth in the popup (see Create the popup page). Required. |
+| scopes  | Comma separated strings for scopes the user must consent to on sign in. Optional. |
+| depends-on | Element selector string of another higher-priority provider component. Optional. |
 
 ### via NPM 
 The following example uses the provider in JS modules (via NPM).
