@@ -1,5 +1,5 @@
 ---
-title: "Restore a driveItem"
+title: "driveItem: restore"
 description: "Restore a driveItem that has been deleted and is currently in the recycle bin."
 localization_priority: Normal
 author: "JeremyKelley"
@@ -8,11 +8,11 @@ ms.date: 08/06/2019
 doc_type: "apiPageType"
 ---
 
-# Restore a DriveItem
+# driveItem: restore
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Restore a [driveItem](../resources/driveitem.md) that has been deleted and is currently in the recycle bin.
+Restore a [driveItem](../resources/driveitem.md) that has been deleted and is currently in the recycle bin. **NOTE**: This functionality is currently only available for OneDrive Personal.
 
 ## Permissions
 
@@ -49,11 +49,11 @@ In the request body, provide a JSON object with the following parameters.
 
 ## Response
 
-If successful, this method returns `200, OK` response code and the restored [driveItem](../resources/driveitem.md) object in the response body.
+If successful, this method returns `200 OK` response code and the restored [driveItem](../resources/driveitem.md) object in the response body.
 
 ## Examples
 
-The following is an example of how to call this API.
+The following example shows how to call this API.
 
 ### Request
 
@@ -100,10 +100,6 @@ Content-type: application/json
   "lastModifiedDateTime": "2017-12-12T10:40:59Z"
 }
 ```
-
-## Remarks
-
-This functionality is currently only available for OneDrive Personal.
 
 <!-- uuid: 16cd6b66-4b1a-43a1-adaf-3a886856ed98
 2019-02-04 14:57:30 UTC -->
