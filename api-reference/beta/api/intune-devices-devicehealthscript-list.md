@@ -58,7 +58,7 @@ Here is an example of the response. Note: The response object shown here may be 
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 1050
+Content-Length: 1013
 
 {
   "value": [
@@ -86,14 +86,11 @@ Content-Length: 1050
         "operator": "equal",
         "detectionValue": "Detection Value value"
       },
-      "remediationScriptContent": "cmVtZWRpYXRpb25TY3JpcHRDb250ZW50",
-      "runRemediationScript": true
+      "remediationScriptContent": "cmVtZWRpYXRpb25TY3JpcHRDb250ZW50"
     }
   ]
 }
 ```
-
-
 
 
 
