@@ -33,7 +33,7 @@ All web components support templates based on the `<template>` element. For exam
 
 ## Data-type
 
-Each components can have multiple parts that can be templated. For example, in the `mgt-agenda` component, a developer can template individual events, individual section headers, loading view, no data view, and more. To indicate the template, use the `data-type` attribute on a template. For example, to template each event in the `mgt-agenda`, use the `event` data-type:
+Each component can have multiple parts that can be templated. For example, in the `mgt-agenda` component, you can template individual events, individual section headers, loading view, no data view, and more. To indicate the template, use the `data-type` attribute on a template. For example, to template each event in the `mgt-agenda`, use the `event` data-type, as shown.
 
 ```html
 <mgt-agenda>
@@ -41,11 +41,11 @@ Each components can have multiple parts that can be templated. For example, in t
 </mgt-agenda>
 ```
 
-If no `data-type` is specified, than the entire component will be replaced with the template. You can also use `data-type="default"` for the same purpose.
+If no `data-type` is specified, the entire component will be replaced with the template. You can also use `data-type="default"` for the same purpose.
 
 ## Binding data
 
-Many templates allow binding of data that is passed to the template as data context. For example, the `event` template in the `mgt-agenda` component passes an `{event}` object that can be used directly in the template. To expand an expression, such as `event.subject`, use the double curly brackets:
+Many templates allow binding of data that is passed to the template as data context. For example, the `event` template in the `mgt-agenda` component passes an `{event}` object that can be used directly in the template. To expand an expression, such as `event.subject`, use the double curly brackets.
 
 ```html
 <template data-type="event">
@@ -61,11 +61,11 @@ This format can also be used inside of attributes:
 </template>
 ```
 
-> NOTE: You can also expand objects such as `{{event}}` and they will render as JSON strings. This can be useful while developing the templates
+> **Note:** You can also expand objects such as `{{event}}` and they will render as JSON strings. This can be useful when you're developing the templates.
 
 ## Conditional rendering
 
-You may only want to render elements when a condition is true or false based on the data context. The `data-if` and `data-else` attributes can evaluate an expression and render only if true or false:
+You might only want to render elements when a condition is true or false based on the data context. The `data-if` and `data-else` attributes can evaluate an expression and render only if true or false.
 
 ```html
 <mgt-person person-query="john doe">
@@ -82,7 +82,7 @@ You may only want to render elements when a condition is true or false based on 
 
 ## Looping
 
-There will be cases where the data context object contains loop and you will need to loop over the data. For this scenario, use the `data-for` attribute:
+There will be cases where the data context object contains loop and you will need to loop over the data. For this scenario, use the `data-for` attribute.
 
 ```html
 <template data-type="event">
@@ -96,9 +96,9 @@ There will be cases where the data context object contains loop and you will nee
 
 ## Converters
 
-In many cases, you might want to transform the data before presenting it in the template. For example, you might want to properly format a date before it is rendered. In these cases, you may want to use a template converter.
+In many cases, you might want to transform the data before presenting it in the template. For example, you might want to properly format a date before it is rendered. In these cases, you might want to use a template converter.
 
-To use a template converter, you first need to define a function that will do the conversion. For example, you might define a function to format a date:
+To use a template converter, you first need to define a function that will do the conversion. For example, you might define a function to format a date.
 
 ```ts
 getTimeRange(event) {
@@ -109,14 +109,14 @@ getTimeRange(event) {
 }
 ```
 
-Then define a new converter on the element and name it as you see fit:
+Then define a new converter on the element and name it as you see fit.
 
 ```ts
 let agenda = document.querySelector('mgt-agenda');
 agenda.templateConverters["myConverter"] = getTimeRange;
 ```
 
-To use the converter in your template, use the triple curly brackets:
+To use the converter in your template, use the triple curly brackets.
 
 ```html
 <template data-type="event">
@@ -124,7 +124,7 @@ To use the converter in your template, use the triple curly brackets:
 </template>
 ```
 
-You could also use built in functions without defining template converter:
+You can also use built-in functions without defining template converter.
 
 ```html
 <template data-type="event">
@@ -134,14 +134,14 @@ You could also use built in functions without defining template converter:
 
 ## Template Rendered Event
 
-In certain cases, you might want to get a reference to the rendered element. This can be useful for adding event listeners to elements in the template. In this scenario, you may use the `templateRendered` event:
+In certain cases, you might want to get a reference to the rendered element. This can be useful for adding event listeners to elements in the template. In this scenario, you might use the `templateRendered` event.
 
 ```ts
 let agenda = document.querySelector('mgt-agenda');
 agenda.addEventListener('templateRendered', (e) => { });
 ```
 
-The event details will contain reference to the element that is being rendered, the data context object, and the type of the template:
+The event details will contain reference to the element that is being rendered, the data context object, and the type of the template.
 
 ```ts
 agenda.addEventListener('templateRendered', (e) => { 
