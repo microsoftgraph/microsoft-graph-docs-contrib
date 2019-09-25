@@ -127,12 +127,6 @@ GET https://graph.microsoft.com/v1.0/users/?$select=skills
 
 Because the **skills** property is stored outside of Azure AD, the following is the response.
 
-#### Navigation properties
-
-Navigation properties are not supported. For example, you cannot track changes to the users collection that would include changes to their **photo** property; **photo** is a navigation property stored outside of the user entity, and changes to it do not cause the user object to be included in the delta response.
-
-
-
 <!-- {
   "blockType": "response",
   "truncated": true,
@@ -157,6 +151,10 @@ Content-type: application/json
 ```
 
 This tells you that the **skills** property is not supported for delta query on the **user** resource.
+
+#### Navigation properties
+
+Navigation properties are not supported. For example, you cannot track changes to the users collection that would include changes to their **photo** property; **photo** is a navigation property stored outside of the user entity, and changes to it do not cause the user object to be included in the delta response.
 
 ## Prerequisites
 
