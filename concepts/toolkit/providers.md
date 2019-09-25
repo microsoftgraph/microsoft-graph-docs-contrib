@@ -51,7 +51,7 @@ Read more about each one in the [custom providers](./providers/custom.md) docume
 
 ## Using multiple providers
 
-There are scenarios where your application will run in different environment and require a different provider to be used. For example, the app might run as both a web application and a Microsoft Teams tab and you might need to use the MsalProvider and the TeamsProvider. For this scenario, all provider components have the `depends-on` attribute to create a fallback chain. In this example:
+In some scenarios your application will run in a different environment and require a different provider. For example, the app might run as both a web application and a Microsoft Teams tab and you might need to use the MsalProvider and the TeamsProvider. For this scenario, all provider components have the `depends-on` attribute to create a fallback chain, as shown in the following example.
 
 ```html
 <mgt-teams-provider
@@ -65,7 +65,7 @@ There are scenarios where your application will run in different environment and
 
 In this scenario, the MsalProvider will only be used if the TeamsProvider is not available in the current environment.
 
-To accomplish the same in code, you can use the `isAvailable` property on the provider:
+To accomplish the same in code, you can use the `isAvailable` property on the provider, as shown.
 
 ```ts
 if (TeamsProvider.isAvailable) {
