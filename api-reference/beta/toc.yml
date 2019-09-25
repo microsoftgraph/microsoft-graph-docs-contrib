@@ -33,7 +33,7 @@
     - name: Throttling
       href: /graph/throttling?context=graph/api/beta
     - name: Change notifications
-      displayname: Webhooks, Azure AD, Outlook mail, Outlook calendar, Outlook contacts, Outlook contact, People, Microsoft Teams, Teams, OneDrive, OneDrive for Buisness, OneDrive business, OneDrive personal, SharePoint, Security, Users, Groups
+      displayname: Webhooks, Azure AD, Outlook mail, Outlook calendar, Outlook contacts, Outlook contact, People, Microsoft Teams, Teams, OneDrive, OneDrive for Business, OneDrive business, OneDrive personal, SharePoint, Security, Users, Groups
       items:
       - name: Overview
         href: /graph/webhooks?context=graph/api/beta
@@ -303,13 +303,6 @@
           href: api/user-list-manager.md
         - name: Assign manager
           href: api/user-post-manager.md
-      - name: Outlook tasks
-        href: resources/outlooktask.md
-        items:
-        - name: List tasks
-          href: api/outlookuser-list-tasks.md
-        - name: Create tasks
-          href: api/outlookuser-post-tasks.md
       - name: Outlook settings
         href: resources/outlookuser.md
         items:
@@ -325,6 +318,13 @@
           href: api/outlookuser-list-mastercategories.md
         - name: Create category
           href: api/outlookuser-post-mastercategories.md
+      - name: Outlook tasks
+        href: resources/outlooktask.md
+        items:
+        - name: List tasks
+          href: api/outlookuser-list-tasks.md
+        - name: Create tasks
+          href: api/outlookuser-post-tasks.md
       - name: People
         href: resources/person.md
         items:
@@ -7491,7 +7491,7 @@
         - name: Get sync errors
           href: api/educationsynchronizationerrors-get.md
     - name: Files
-      displayName: OneDrive, OneDrive for Buisness, OneDrive business, OneDrive personal, SharePoint
+      displayName: OneDrive, OneDrive for Business, OneDrive business, OneDrive personal, SharePoint
       items:
       - name: Overview
         href: resources/onedrive.md
@@ -7978,7 +7978,7 @@
         - name: Create
           href: api/certificatebasedauthconfiguration-post-certificatebasedauthconfiguration.md
         - name: Delete
-          href: api/certificatebasedauthconfiguration-delete.md 
+          href: api/certificatebasedauthconfiguration-delete.md
       - name: Contracts
         href: resources/contract.md
         items:
@@ -8123,7 +8123,7 @@
         - name: Create appliesTo
           href: api/featurerolloutpolicy-post-appliesto.md
         - name: Delete appliesTo
-          href: api/featurerolloutpolicy-delete-appliesto.md  
+          href: api/featurerolloutpolicy-delete-appliesto.md
       - name: Identity protection
         href: resources/identityprotection-root.md
         items:
@@ -8255,7 +8255,7 @@
               - name: Assign to agent group
                 href: api/publishedresource-post-agentgroups.md
               - name: Remove from agent group
-                href: api/publishedresource-delete-agentgroups.md    
+                href: api/publishedresource-delete-agentgroups.md
       - name: Organization
         href: resources/organization.md
         items:
@@ -8935,7 +8935,7 @@
               href: api/reportroot-list-credentialuserregistrationdetails.md
           - name: User Credential Usage Details
             href: resources/usercredentialusagedetails.md
-            items: 
+            items:
             - name: List usage details
               href: api/reportroot-list-usercredentialusagedetails.md
           - name: Credential Usage Summary
@@ -9206,7 +9206,7 @@
       - name: Errors
         href: resources/security-error-codes.md
     - name: Sites and lists
-      displayName: SharePoint, OneDrive, OneDrive for Buisness, OneDrive business, OneDrive personal
+      displayName: SharePoint, OneDrive, OneDrive for Business, OneDrive business, OneDrive personal
       items:
       - name: Overview
         href: resources/sharepoint.md
@@ -9313,11 +9313,11 @@
           - name: Email statistics type
             href: resources/emailactivitystatistics.md
           - name: Focus statistics type
-            href: resources/focusactivitystatistics.md          
+            href: resources/focusactivitystatistics.md
           - name: Meeting statistics type
             href: resources/meetingactivitystatistics.md
           - name: List activity statistics
-            href: api/activitystatistics-list.md 
+            href: api/activitystatistics-list.md
           - name: Get activity statistics
             href: api/activitystatistics-get.md
       - name: Mention
@@ -9530,13 +9530,13 @@
         - name: Get members in chat
           href: api/conversationmember-list.md
         - name: Get one member in chat
-          href: api/conversationmember-get.md    
+          href: api/conversationmember-get.md
         - name: Add a member to a chat
           href: api/conversationmember-add.md
         - name: Remove a member from a chat
           href: api/conversationmember-delete.md
         - name: Update the role of a member in chat
-          href: api/conversationmember-update.md        
+          href: api/conversationmember-update.md
       - name: Chat message
         href: resources/chatmessage.md
         items:
@@ -9825,7 +9825,7 @@
           - name: Create reply
             href: api/workbookcomment-post-replies.md
           - name: Get reply
-            href: workbookcommentreply-get.md
+            href: api/workbookcommentreply-get.md
       - name: Worksheet
         href: resources/workbookworksheet.md
         items:
@@ -9953,7 +9953,7 @@
         - name: Delete schema extension
           href: api/schemaextension-delete.md
       - name: Change notifications
-        displayName: Webhooks, Outlook mail, Outlook calendar, Outlook contacts, Outlook contact, People, Microsoft Teams, Teams, OneDrive, OneDrive for Buisness, OneDrive business, OneDrive personal, SharePoint, Security, Users, Groups
+        displayName: Webhooks, Outlook mail, Outlook calendar, Outlook contacts, Outlook contact, People, Microsoft Teams, Teams, OneDrive, OneDrive for Business, OneDrive business, OneDrive personal, SharePoint, Security, Users, Groups
         items:
         - name: Overview
           href: resources/webhooks.md
