@@ -11,10 +11,8 @@ const options = {
 const client = Client.init(options);
 
 const call = {
-  callbackUri: "https://bot.contoso.com/api/calls",
-  mediaConfig: {
-    @odata.type: "#microsoft.graph.serviceHostedMediaConfig"
-  },
+  @odata.type: "#microsoft.graph.call",
+  callbackUri: "https://bot.contoso.com/callback",
   targets: [
     {
       @odata.type: "#microsoft.graph.participantInfo",
@@ -30,7 +28,10 @@ const call = {
   ],
   requestedModalities: [
     "audio"
-  ]
+  ],
+  mediaConfig: {
+    @odata.type: "#microsoft.graph.serviceHostedMediaConfig",
+  }
 };
 
 let res = await client.api('/app/calls')

@@ -13,15 +13,19 @@ Microsoft Graph tutorials are step-by-step training exercises that guide you thr
 
 The following tutorials build an app that authenticates a user and accesses date via the Microsoft Graph.
 
+- [.NET Core](/graph/tutorials/dotnet-core)
 - [Android](/graph/tutorials/android)
 - [Angular](/graph/tutorials/angular)
 - [ASP.NET](/graph/tutorials/aspnet)
 - [Microsoft Flow](/graph/tutorials/flow)
+- [iOS Objective-C](/graph/tutorials/ios-objectivec)
+- [iOS Swift](/graph/tutorials/ios-swift)
 - [Java](/graph/tutorials/java)
 - [Node.js](/graph/tutorials/node)
 - [PHP](/graph/tutorials/php)
 - [Python](/graph/tutorials/python)
 - [React](/graph/tutorials/react)
+- [React Native](/graph/tutorials/react-native)
 - [Ruby](/graph/tutorials/ruby)
 - [UWP](/graph/tutorials/uwp)
 - [Xamarin](/graph/tutorials/xamarin)

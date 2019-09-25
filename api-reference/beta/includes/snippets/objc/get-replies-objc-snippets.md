@@ -7,7 +7,7 @@ description: "Automatically generated file. DO NOT MODIFY"
 MSHTTPClient *httpClient = [MSClientFactory createHTTPClientWithAuthenticationProvider:authenticationProvider];
 
 NSString *MSGraphBaseURL = @"https://graph.microsoft.com/beta/";
-NSMutableURLRequest *urlRequest = [NSMutableURLRequest requestWithURL:[NSURL URLWithString:[MSGraphBaseURL stringByAppendingString:@"/chats/{id}/messages/{id}/replies"]]];
+NSMutableURLRequest *urlRequest = [NSMutableURLRequest requestWithURL:[NSURL URLWithString:[MSGraphBaseURL stringByAppendingString:@"/drive/root/workbook/comments/{id}/replies"]]];
 [urlRequest setHTTPMethod:@"GET"];
 
 MSURLSessionDataTask *meDataTask = [httpClient dataTaskWithRequest:urlRequest 
@@ -15,9 +15,9 @@ MSURLSessionDataTask *meDataTask = [httpClient dataTaskWithRequest:urlRequest
 
 		NSError *jsonError = nil;
 		NSDictionary *jsonFinal = [NSJSONSerialization JSONObjectWithData:data options:0 error:&jsonError];
-		NSMutableArray *chatMessageList = [[NSMutableArray alloc] init];
-		chatMessageList = [jsonFinal valueForKey:@"value"];
-		MSGraphChatMessage *chatMessage = [[MSGraphChatMessage alloc] initWithDictionary:[chatMessageList objectAtIndex: 0] error:&nserror];
+		NSMutableArray *workbookCommentReplyList = [[NSMutableArray alloc] init];
+		workbookCommentReplyList = [jsonFinal valueForKey:@"value"];
+		MSGraphWorkbookCommentReply *workbookCommentReply = [[MSGraphWorkbookCommentReply alloc] initWithDictionary:[workbookCommentReplyList objectAtIndex: 0] error:&nserror];
 
 }];
 
