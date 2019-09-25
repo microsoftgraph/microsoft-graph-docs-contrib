@@ -80,10 +80,10 @@ The `mgt-person` component supports several [templates](../templates.md) that al
 
 | Data type     | Data context              | Description                                                       |
 | ---------     | ------------------------- | ----------------------------------------------------------------- |
-| `default`     | `person`: the person details object <br> `personImage`: the url of the image | The default template replaces the entire component with your own. |
-| `person-card` | `person`: the person details object <br> `personImage`: the url of the image | The template to update the mgt-person-card displayed on hover or click |
+| default     | person: The person details object <br> `personImage`: The URL of the image | The default template replaces the entire component with your own. |
+| person-card | person: The person details object <br> `personImage`: The URL of the image | The template to update the mgt-person-card displayed on hover or click. |
 
-The following example defines a template for the person component:
+The following example defines a template for the person component.
 
 ```html
 <mgt-person>
@@ -109,22 +109,22 @@ The `mgt-person` component can show an `mgt-person-card` on either hover or clic
 
 | Property     | Attribute     | Description                                                                     |
 | ------------ | ------------- | ------------------------------------------------------------------------------- |
-| `personCard` | `person-card` | An enumeration to determine user action necessary to activate flyout panel - `hover` or `click`. Default value is `none` |
+| personCard | person-card | An enumeration to determine user action necessary to activate flyout panel - `hover` or `click`. Default value is `none` |
 
 
-For more information on templating, styling or attributes, see the [mgt-person-card](./person-card.md) documentation.
+For more information about templating, styling, and attributes, see [Person Card component](./person-card.md).
 
 ## Microsoft Graph permissions
 
 This control uses the following Microsoft Graph APIs and permissions.
 
-| Resource                                                                                                    | Permission/scope     |
+| Resource                                                                                                    | Permission     |
 | ----------------------------------------------------------------------------------------------------------- | -------------------- |
-| [/me](https://docs.microsoft.com/en-us/graph/api/user-get?view=graph-rest-1.0)                              | `User.Read`          |
-| [/me/photo/$value](https://docs.microsoft.com/en-us/graph/api/profilephoto-get?view=graph-rest-beta)        | `User.Read`          |
-| [/me/people/?$search=](https://docs.microsoft.com/en-us/graph/api/user-list-people?view=graph-rest-1.0)     | `People.Read`        |
-| [/me/contacts/*](https://docs.microsoft.com/en-us/graph/api/user-list-contacts?view=graph-rest-1.0&tabs=cs) | `Contacts.Read`      |
-| [/users/{id}/photo/$value](https://docs.microsoft.com/en-us/graph/api/user-list-people?view=graph-rest-1.0) | `User.ReadBasic.All` |
+| [/me](https://docs.microsoft.com/en-us/graph/api/user-get?view=graph-rest-1.0)                              | User.Read          |
+| [/me/photo/$value](https://docs.microsoft.com/en-us/graph/api/profilephoto-get?view=graph-rest-beta)        | User.Read          |
+| [/me/people/?$search=](https://docs.microsoft.com/en-us/graph/api/user-list-people?view=graph-rest-1.0)     | People.Read        |
+| [/me/contacts/*](https://docs.microsoft.com/en-us/graph/api/user-list-contacts?view=graph-rest-1.0&tabs=cs) | Contacts.Read      |
+| [/users/{id}/photo/$value](https://docs.microsoft.com/en-us/graph/api/user-list-people?view=graph-rest-1.0) | User.ReadBasic.All |
 
 > **Note:** to access the `*/photo/$value` resources for personal Microsoft accounts, use the Microsoft Graph beta endpoint.
 
