@@ -23,6 +23,7 @@ by providing a [delta](../api/event-delta.md) function.
 > **Note:** There are a few minor differences in the way you can interact with user calendars, group calendars, and their events:
 
 - You can organize only user calendars in a [calendarGroup](calendargroup.md).
+- You can add [attachment](attachment.md) objects to only events in user calendars, but not to events in group calendars.
 - Outlook automatically accepts all meeting requests on behalf of groups. You can [accept](../api/event-accept.md), [tentatively accept](../api/event-tentativelyaccept.md), or [decline](../api/event-decline.md)  meeting requests for _user_ calendars only.
 - Outlook doesn't support reminders for group events. You can [snooze](../api/event-snoozereminder.md) or [dismiss](../api/event-dismissreminder.md) a [reminder](reminder.md) for _user_ calendars only.
 
@@ -93,13 +94,21 @@ by providing a [delta](../api/event-delta.md) function.
 |webLink|String|The URL to open the event in Outlook on the web.<br/><br/>Outlook on the web opens the event in the browser if you are signed in to your mailbox. Otherwise, Outlook on the web prompts you to sign in.<br/><br/>This URL can be accessed from within an iFrame.|
 
 > [!NOTE]
-> The **webLink** property specifies a URL that opens the event in only earlier versions of Outlook on the web. The following is its URL format, with _{event-id}_ being the URL-encoded value of the **id** property:
+> The **webLink** property specifies a URL that opens the event in only earlier versions of Outlook on the web. The following are the URL formats, with _{event-id}_ being the _**URL-encoded**_ value of the **id** property:
 >
+> * For work or school accounts:
 > `https://outlook.office365.com/owa/?itemid={event-id}&exvsurl=1&path=/calendar/item`
 >
-> To open the URL in a current version of Outlook on the web, convert the URL to the following format:
+> * For Microsoft accounts:
+> `https://outlook.live.com/owa/?itemid={event-id}&exvsurl=1&path=/calendar/item`
 >
+> To open the event in a current version of Outlook on the web, convert the URL to one of the following formats, and use that URL to open the event: 
+>
+> * For work or school accounts:
 > `https://outlook.office365.com/calendar/item/{event-id}`
+>
+> * For Microsoft accounts:
+>  `https://outlook.live.com/calendar/item/{event-id}`
 
 
 ## Relationships
