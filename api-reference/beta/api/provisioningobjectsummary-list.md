@@ -28,7 +28,7 @@ One of the following permissions is required to call this API. To learn more, in
 <!-- { "blockType": "ignored" } -->
 
 ```http
-GET /auditLogs/directoryProvisioning
+GET /auditLogs/provisioning
 ```
 
 ## Optional query parameters
@@ -37,7 +37,7 @@ This method supports the following OData query parameter to help customize the r
 
 |Name     |Description                            |Example|
 |:--------------------|----------------|------------------------------------------------------------------------|
-|[$filter](/graph/query-parameters#filter-parameter)|Filters results (rows). |/`auditLogs/directoryProvisioning?$filter=id eq '74c3b0ae-9cc5-850e-e0a5-7r6a4231de87'`
+|[$filter](/graph/query-parameters#filter-parameter)|Filters results (rows). |/`auditLogs/provisioning?$filter=id eq '74c3b0ae-9cc5-850e-e0a5-7r6a4231de87'`
 
 For general information, see [OData query parameters](/graph/query_parameters).
 
@@ -91,8 +91,8 @@ The following is an example of the request.
   "name": "list_provisioningobjectsummary"
 } -->
 
-```http
-GET https://graph.microsoft.com/beta/auditLogs/directoryProvisioning
+```msgraph-interactive
+GET https://graph.microsoft.com/beta/auditLogs/provisioning
 ```
 # [C#](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/list-provisioningobjectsummary-csharp-snippets.md)]
@@ -128,7 +128,7 @@ Content-type: application/json
 
 {
     
-    "@odata.context": "https://graph.microsoft.com/beta/$metadata#auditLogs/directoryProvisioning",
+    "@odata.context": "https://graph.microsoft.com/beta/$metadata#auditLogs/provisioning",
     "value": [
          {
             "id": "75b5b0ae-9fc5-8d0e-e0a9-7y6a4728de56",
@@ -235,8 +235,8 @@ The following is an example of the request.
   "name": "list_provisioningobjectsummary_error"
 } -->
 
-```http
-GET https://graph.microsoft.com/beta/auditLogs/directoryProvisioning
+```msgraph-interactive
+GET https://graph.microsoft.com/beta/auditLogs/provisioning
 ```
 # [C#](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/list-provisioningobjectsummary-error-csharp-snippets.md)]
@@ -271,7 +271,7 @@ HTTP/1.1 200 OK
 Content-type: application/json
 
 {
-    "@odata.context": "https://graph.microsoft.com/beta/$metadata#auditLogs/directoryProvisioning",
+    "@odata.context": "https://graph.microsoft.com/beta/$metadata#auditLogs/provisioning",
     "value": [
         {
             "id": "gc532ff9-r265-ec76-861e-42e2970a8218",

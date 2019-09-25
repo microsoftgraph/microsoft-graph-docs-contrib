@@ -76,7 +76,7 @@ The following is an example of the request.
   "name": "reportroot_getyammergroupsactivitycounts"
 }-->
 
-```http
+```msgraph-interactive
 GET https://graph.microsoft.com/v1.0/reports/getYammerGroupsActivityCounts(period='D7')
 ```
 # [C#](#tab/csharp)

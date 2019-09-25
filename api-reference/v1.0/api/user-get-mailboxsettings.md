@@ -80,7 +80,7 @@ locale (language and country/region), and working hours.
   "blockType": "request",
   "name": "get_mailboxsettings_1"
 }-->
-```http
+```msgraph-interactive
 GET https://graph.microsoft.com/v1.0/me/mailboxSettings
 ```
 # [C#](#tab/csharp)
@@ -160,7 +160,7 @@ The second example gets specifically the automatic replies settings of the signe
   "blockType": "request",
   "name": "get_mailboxsettings_2"
 }-->
-```http
+```msgraph-interactive
 GET https://graph.microsoft.com/v1.0/me/mailboxSettings/automaticRepliesSetting
 ```
 # [C#](#tab/csharp)

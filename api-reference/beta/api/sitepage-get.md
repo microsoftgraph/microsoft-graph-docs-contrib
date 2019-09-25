@@ -41,7 +41,7 @@ GET /sites/{site-id}/pages/{page-id}
 # [HTTP](#tab/http)
 <!-- { "blockType": "request", "name": "get-page", "scopes": "sites.read.all", "tags": "service.sharepoint" } -->
 
-```http
+```msgraph-interactive
 GET /sites/{site-id}/pages/{page-id}
 ```
 # [C#](#tab/csharp)

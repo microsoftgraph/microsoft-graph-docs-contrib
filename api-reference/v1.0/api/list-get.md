@@ -43,7 +43,7 @@ Do not supply a request body with this method.
 # [HTTP](#tab/http)
 <!-- { "blockType": "request", "name": "get-list", "scopes": "sites.read.all" } -->
 
-```http
+```msgraph-interactive
 GET /sites/{site-id}/lists/{list-id}
 ```
 # [C#](#tab/csharp)
@@ -93,7 +93,7 @@ With `select` and `expand` statements, you can retrieve list metadata, column de
 # [HTTP](#tab/http)
 <!-- { "blockType": "request", "name": "get-list-multi-expand", "scopes": "sites.read.all" } -->
 
-```http
+```msgraph-interactive
 GET /sites/{site-id}/lists/{list-id}?select=id,name,lastModifiedDateTime&expand=columns(select=name,description),items(expand=fields(select=Name,Color,Quantity))
 ```
 # [C#](#tab/csharp)

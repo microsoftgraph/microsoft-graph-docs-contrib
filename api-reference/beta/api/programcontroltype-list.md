@@ -48,7 +48,7 @@ If successful, this method returns a `200, OK` response code and an array of [pr
   "blockType": "request",
   "name": "get_programcontroltype"
 }-->
-```http
+```msgraph-interactive
 GET https://graph.microsoft.com/beta/programControlTypes
 ```
 # [C#](#tab/csharp)

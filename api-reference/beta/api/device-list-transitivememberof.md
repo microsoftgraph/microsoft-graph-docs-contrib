@@ -62,7 +62,7 @@ Here is an example of the request.
   "name": "get_devices_transitivememberof"
 }-->
 
-```http
+```msgraph-interactive
 GET https://graph.microsoft.com/beta/devices/{id}/transitiveMemberOf
 ```
 # [C#](#tab/csharp)

@@ -67,7 +67,7 @@ Here is an example of the request.
   "name": "get_outlooktask"
 }-->
 
-```http
+```msgraph-interactive
 GET https://graph.microsoft.com/beta/me/outlook/tasks/AAMkADA1MTrgAAA=
 ```
 # [C#](#tab/csharp)
@@ -149,7 +149,7 @@ This example uses the `Prefer: outlook.timezone` header to specify that the API 
   "name": "get_outlooktask"
 }-->
 
-```http
+```msgraph-interactive
 GET https://graph.microsoft.com/beta/me/outlook/tasks/AAMkADA1MHgwAAA=
 Prefer: outlook.timezone="Pacific Standard Time"
 ```

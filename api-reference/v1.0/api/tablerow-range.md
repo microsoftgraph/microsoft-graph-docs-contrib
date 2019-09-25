@@ -50,7 +50,7 @@ Here is an example of the request.
   "isComposable": true,
   "name": "tablerow_range"
 }-->
-```http
+```msgraph-interactive
 GET https://graph.microsoft.com/v1.0/me/drive/items/{id}/workbook/tables/{id|name}/rows/{index}/range
 ```
 # [C#](#tab/csharp)
