@@ -1,9 +1,9 @@
 ---
 title: "user: translateExchangeIds"
 description: "Translate identifiers of Outlook-related resources between formats."
-author: "dkershaw10"
+author: "svpsiva"
 localization_priority: Normal
-ms.prod: "microsoft-identity-platform"
+ms.prod: "outlook"
 doc_type: apiPageType
 ---
 
@@ -123,7 +123,6 @@ HTTP/1.1 200 OK
 Content-type: application/json
 
 {
-  "@odata.context": "https://graph.microsoft.com/testexchangebeta/$metadata#Collection(microsoft.graph.convertIdResult)",
   "value": [
     {
       "sourceId": "{rest-formatted-id-1}",
@@ -136,7 +135,7 @@ Content-type: application/json
   ]
 }
 ```
-<!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79 
+<!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2015-10-25 14:57:30 UTC -->
 <!-- {
   "type": "#page.annotation",
