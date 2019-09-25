@@ -29,10 +29,10 @@ Initializing the MSAL provider in HTML is the simplest way to create a new provi
 | Attribute | Description |
 | --- | --- | --- |
 | client-id   | String client ID (see Creating an app/client ID). Required.|
-| login-type  | Optional enumeration between `redirect` and `popup` - default value is `redirect`. |
-| scopes  | Optional comma separated strings for scopes the user must consent to on sign in) .|
-| authority  | Optional authority string - default is the common authority. |
-| depends-on | Optional element selector string of another higher priority provider component. |
+| login-type  | Enumeration between `redirect` and `popup` - default value is `redirect`. Optional. |
+| scopes  | Comma separated strings for scopes the user must consent to on sign in. Optional.|
+| authority  | Authority string - default is the common authority. Optional.|
+| depends-on | Element selector string of another higher priority provider component. Optional. |
 
 ### Initialize in JavaScript
 
