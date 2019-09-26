@@ -35,6 +35,7 @@ Performs synchronization by periodically running in the background, polling for 
 |id             |String                     |Unique synchronization job identifier. Read-only.|
 |schedule       |[synchronizationSchedule](synchronization-synchronizationschedule.md)|Schedule used to run the job. Read-only.|
 |status         |[synchronizationStatus](synchronization-synchronizationstatus.md)     |Status of the job, which includes when the job was last run, current job state, and errors.|
+|synchronizationJobSettings   |[keyValuePair](keyvaluepair.md)    |Settings associated with the job. Some settings are inherited from the template.|
 |templateId     |String    |Identifier of the [synchronization template](synchronization-synchronizationtemplate.md) this job is based on.|
 
 ## Relationships
@@ -60,6 +61,7 @@ The following is a JSON representation of the resource.
   "id": "String (identifier)",
   "schedule": {"@odata.type": "microsoft.graph.synchronizationSchedule"},
   "status": {"@odata.type": "microsoft.graph.synchronizationStatus"},
+  "synchronizationJobSettings": {"@odata.type": "microsoft.graph.keyValuePair"},
   "templateId": "String"
 }
 
