@@ -9686,7 +9686,7 @@
         href: resources/chatmessage.md
         items:
         - name: List hosted content
-          href: api/chatmessage-list-chatmessagehostedcontent.md
+          href: api/chatmessage-list-chatmessagehostedcontents.md
         - name: Get hosted content
           href: api/chatmessagehostedcontent-get.md
       - name: App Catalog
