@@ -21,10 +21,10 @@ For details about known issues with Microsoft Graph APIs, see [Known issues](kno
 
 ### Files (OneDrive for Business and OneDrive Personal)
 
-| Addition | beta | Added the [pendingOperations](/graph/api/resources/pendingOperations?view=graph-rest-beta) and [pendingContentUpdate](/graph/api/resources/pendingContentUpdate?view=graph-rest-beta) resources, with pendingOperations applying to the [driveItem](/graph/api/resources/driveItem?view=graph-rest-beta) resource. |
+| Addition | beta | Added the [pendingOperations](/graph/api/resources/pendingOperations?view=graph-rest-beta) and [pendingContentUpdate](/graph/api/resources/pendingContentUpdate?view=graph-rest-beta) resources. The **pendingOperations** resource applies to the [driveItem](/graph/api/resources/driveItem?view=graph-rest-beta) resource. |
 | Addition | beta | Added the [restore](/graph/api/driveitem-restore?view=graph-rest-beta) action to the [driveItem](/graph/api/resources/driveItem?view=graph-rest-beta) resource. |
-| Addition | beta | Added the `orientation` property to the [photo](/graph/api/resources/photo?view=graph-rest-beta) resource. |
-| Addition | beta | Added the `sha256Hash` property to the [hashes](/graph/api/resources/hashes?view=graph-rest-beta) resource. |
+| Addition | beta | Added the **orientation** property to the [photo](/graph/api/resources/photo?view=graph-rest-beta) resource. |
+| Addition | beta | Added the **sha256Hash** property to the [hashes](/graph/api/resources/hashes?view=graph-rest-beta) resource. |
 
 ### Identity and access (Azure AD)
 
