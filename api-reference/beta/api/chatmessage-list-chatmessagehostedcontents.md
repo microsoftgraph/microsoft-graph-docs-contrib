@@ -1,6 +1,6 @@
 ---
 title: "List chatMessageHostedContents"
-description: "Retrieve a list of chatMessageHostedContent objects."
+description: "Retrieve the list of chatMessageHostedContents from a message ."
 localization_priority: Normal
 author: "clearab"
 ms.prod: "microsoft-teams"
@@ -11,7 +11,7 @@ doc_type: "apiPageType"
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Retrieve a list of [chatMessageHostedContent](../resources/chatmessagehostedcontent.md) objects.
+Retrieve the list of [chatMessageHostedContent](../resources/chatmessagehostedcontent.md) from a message.
 
 ## Permissions
 
@@ -30,6 +30,7 @@ One of the following permissions is required to call this API. To learn more, in
 ```http
 GET /chats/{id}/messages/{id}/hostedContents
 GET /users/{id}/chats/{id}/messages/{id}/hostedContents
+GET /teams/{id}/channels/{id}/messages/{id}/hostedContents
 ```
 
 ## Optional query parameters
