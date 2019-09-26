@@ -97,7 +97,7 @@ The following is an example of the response.
 
 <!-- {
   "blockType": "response",
-  "name": "attachment_createuploadsession"
+  "name": "attachment_createuploadsession",
   "truncated": true,
   "@odata.type": "microsoft.graph.uploadSession"
 } -->
