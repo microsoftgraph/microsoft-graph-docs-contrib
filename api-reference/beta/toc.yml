@@ -9680,10 +9680,10 @@
       - name: Chat message
         href: resources/chatmessage.md
         items:
-        - name: List hosted images
-          href: api/chatmessagehostedimage-list-hostedimages.md
-        - name: Get hosted image
-          href: api/chatmessagehostedimage-get.md
+        - name: List hosted content
+          href: api/chatmessage-list-chatmessagehostedcontent.md
+        - name: Get hosted content
+          href: api/chatmessagehostedcontent-get.md
         - name: Get hosted image bytes
           href: api/chatmessagehostedimage-getbytes.md
       - name: App Catalog

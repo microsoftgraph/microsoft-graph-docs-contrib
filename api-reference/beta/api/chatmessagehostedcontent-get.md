@@ -2,7 +2,7 @@
 title: "Get chatMessageHostedContent"
 description: "Retrieve the properties and relationships of chatMessageHostedContent object."
 localization_priority: Normal
-author: "RamjotSingh"
+author: "clearab"
 ms.prod: "microsoft-teams"
 doc_type: "apiPageType"
 ---
@@ -21,7 +21,7 @@ One of the following permissions is required to call this API. To learn more, in
 |:---------------------------------------|:--------------------------------------------|
 | Delegated (work or school account)     | Chat.Read, Chat.ReadWrite |
 | Delegated (personal Microsoft account) | Not supported. |
-| Application                            | Not supported. |
+| Application                            | Chat.Read.All, Chat.ReadWrite.All |
 
 ## HTTP request
 
@@ -78,7 +78,6 @@ GET https://graph.microsoft.com/beta/chats/{id}/messages/{id}/hostedContents/{id
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
-
 
 ### Response
 
