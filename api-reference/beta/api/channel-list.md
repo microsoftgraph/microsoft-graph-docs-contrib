@@ -54,7 +54,7 @@ If successful, this method returns a `200 OK` response code and collection of [C
 
 #### Request
 
-Here is an example of the request to list all channels.
+The following example shows a request to list all channels.
 
 # [HTTP](#tab/http)
 <!-- {
@@ -80,9 +80,9 @@ GET https://graph.microsoft.com/beta/teams/{id}/channels
 
 #### Response
 
-Here is an example of the response.
+The following is the response.
 
-> **Note:** The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.
+> **Note:** The response object shown here might be shortened for readability. All the properties will be returned from an actual call.
 
 <!-- {
   "blockType": "response",
@@ -114,7 +114,7 @@ Content-length: 262
 
 #### Request
 
-Here is an example of the request to list all private channels.
+The following example shows a request to list all private channels.
 
 <!-- {
   "blockType": "request",
@@ -126,9 +126,9 @@ GET https://graph.microsoft.com/beta/teams/{id}/channels?$filter=membershipType 
 
 #### Response
 
-Here is an example of the response.
+The following is an example of the response.
 
-> **Note:** The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.
+> **Note:** The response object shown here might be shortened for readability. All the properties will be returned from an actual call.
 
 <!-- {
   "blockType": "response",
