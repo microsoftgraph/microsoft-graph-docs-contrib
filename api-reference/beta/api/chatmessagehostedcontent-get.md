@@ -30,6 +30,7 @@ One of the following permissions is required to call this API. To learn more, in
 ```http
 GET /chats/{id}/messages/{id}/hostedContents/{id}
 GET /users/{id}/chats/{id}/messages/{id}/hostedContents/{id}
+GET /teams/{id}/channels/{id}/messages/{id}/hostedContents/{id}
 ```
 
 ## Optional query parameters
