@@ -1,6 +1,6 @@
 ---
 title: "pendingContentUpdate"
-description: "The pendingContentUpdate resource indicates that an operation that may affect the binary content of the driveItem is pending completion."
+description: "The pendingContentUpdate resource indicates that an operation that might affect the binary content of the driveItem is pending completion."
 localization_priority: Normal
 author: "JeremyKelley"
 ms.date: 08/06/2019
@@ -12,7 +12,7 @@ doc_type: "resourcePageType"
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Indicates that an operation that might affect the binary content of the driveItem is pending completion.
+Indicates that an operation that might affect the binary content of the **driveItem** is pending completion.
 
 ## Properties
 
