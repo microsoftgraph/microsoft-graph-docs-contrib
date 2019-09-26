@@ -52,7 +52,7 @@ If successful, this method returns `201 Created` response code and [channel](../
 
 #### Request
 
-Here is an example of the request to create a standard channel.
+The following example shows a request to create a standard channel.
 
 # [HTTP](#tab/http)
 <!-- {
@@ -85,9 +85,9 @@ Content-type: application/json
 
 #### Response
 
-Here is an example of the response.
+The following example shows the response.
 
-> **Note:** The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.
+> **Note:** The response object shown here might be shortened for readability. All the properties will be returned from an actual call.
 
 <!-- {
   "blockType": "response",
@@ -110,7 +110,7 @@ Content-length: 201
 
 #### Request
 
-Here is an example request that shows how to create a private channel and add a user as an team owner.
+The following example shows a request to create a private channel and add a user as an team owner.
 
 <!-- {
   "blockType": "request",
@@ -139,7 +139,7 @@ Content-type: application/json
 
 #### Response
 
-Here is an example of the response.
+The following example shows the response.
 
 <!-- {
   "blockType": "response",
