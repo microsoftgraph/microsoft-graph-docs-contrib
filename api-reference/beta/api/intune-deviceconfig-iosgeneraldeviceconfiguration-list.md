@@ -59,7 +59,7 @@ Here is an example of the response. Note: The response object shown here may be 
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 11698
+Content-Length: 11797
 
 {
   "value": [
@@ -204,6 +204,8 @@ Content-Length: 11698
       "kioskModeBlockSleepButton": true,
       "kioskModeAllowTouchscreen": true,
       "kioskModeBlockTouchscreen": true,
+      "kioskModeEnableVoiceControl": true,
+      "kioskModeAllowVoiceControlModification": true,
       "kioskModeAllowVoiceOverSettings": true,
       "kioskModeAllowVolumeButtons": true,
       "kioskModeBlockVolumeButtons": true,
@@ -353,8 +355,6 @@ Content-Length: 11698
   ]
 }
 ```
-
-
 
 
 

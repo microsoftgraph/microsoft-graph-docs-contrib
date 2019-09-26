@@ -24,7 +24,7 @@ Contains properties for the run summary of a device management script.
 ## Properties
 |Property|Type|Description|
 |:---|:---|:---|
-|id|String|Key of the device management script run summary entity.|
+|id|String|Key of the device management script run summary entity. This property is read-only.|
 |successDeviceCount|Int32|Success device count.|
 |errorDeviceCount|Int32|Error device count.|
 |compliantDeviceCount|Int32|Compliant device count.|
