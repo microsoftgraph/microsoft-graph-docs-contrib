@@ -131,8 +131,6 @@ Content-type: application/json
 Content-length: 491
 
 {
-  "value": [
-    {
       "displayName": "displayName-value",
       "givenName": "givenName-value",
       "jobTitle": "jobTitle-value",
@@ -143,8 +141,6 @@ Content-length: 491
       "surname": "surname-value",
       "userPrincipalName": "userPrincipalName-value",
       "id": "id-value"
-    }
-  ]
 }
 ```
 
