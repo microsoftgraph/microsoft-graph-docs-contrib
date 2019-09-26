@@ -14,7 +14,8 @@ doc_type: "resourcePageType"
 
 The **photo** resource provides photo and camera properties, for example, EXIF metadata, on a [driveItem](driveitem.md).
 
-**NOTE**: Currently, only **takenDateTime** is available on OneDrive for Business and SharePoint.
+> [!NOTE]
+> Currently, only **takenDateTime** is available on OneDrive for Business and SharePoint.
 
 ## Properties
 
