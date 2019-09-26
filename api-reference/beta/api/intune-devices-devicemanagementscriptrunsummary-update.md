@@ -46,7 +46,7 @@ The following table shows the properties that are required when you create the [
 
 |Property|Type|Description|
 |:---|:---|:---|
-|id|String|Key of the device management script run summary entity.|
+|id|String|Key of the device management script run summary entity. This property is read-only.|
 |successDeviceCount|Int32|Success device count.|
 |errorDeviceCount|Int32|Error device count.|
 |compliantDeviceCount|Int32|Compliant device count.|
@@ -100,8 +100,6 @@ Content-Length: 319
   "errorUserCount": 14
 }
 ```
-
-
 
 
 
