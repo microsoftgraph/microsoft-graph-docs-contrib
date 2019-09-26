@@ -409,6 +409,8 @@ items:
                 href: toolkit/components/tasks.md
               - name: People-Picker
                 href: toolkit/components/people-picker.md
+              - name: Person-Card
+                href: toolkit/components/person-card.md
           - name: Providers
             items:
               - name: Using the providers

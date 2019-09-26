@@ -47,7 +47,6 @@ The following table shows the properties that are required when you create the u
 |Property|Type|Description|
 |:---|:---|:---|
 |id|String|The unique identifier of the user experience analytics metric.|
-|displayName|String|The name of the user experience analytics metric.|
 |value|Double|The value of the user experience analytics metric.|
 |unit|String|The unit of the user experience analytics metric.|
 
@@ -63,11 +62,10 @@ Here is an example of the request.
 ``` http
 POST https://graph.microsoft.com/beta/deviceManagement/userExperienceAnalyticsBaselines/{userExperienceAnalyticsBaselineId}/deviceBootPerformanceMetrics/metricValues
 Content-type: application/json
-Content-length: 187
+Content-length: 147
 
 {
   "@odata.type": "#microsoft.graph.userExperienceAnalyticsMetric",
-  "displayName": "Display Name value",
   "value": "<Unknown Primitive Type Edm.Double>",
   "unit": "Unit value"
 }
@@ -78,18 +76,15 @@ Here is an example of the response. Note: The response object shown here may be 
 ``` http
 HTTP/1.1 201 Created
 Content-Type: application/json
-Content-Length: 236
+Content-Length: 196
 
 {
   "@odata.type": "#microsoft.graph.userExperienceAnalyticsMetric",
   "id": "1371822e-822e-1371-2e82-71132e827113",
-  "displayName": "Display Name value",
   "value": "<Unknown Primitive Type Edm.Double>",
   "unit": "Unit value"
 }
 ```
-
-
 
 
 

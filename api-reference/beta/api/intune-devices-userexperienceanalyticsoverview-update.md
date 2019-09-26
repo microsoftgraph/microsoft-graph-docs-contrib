@@ -51,6 +51,7 @@ The following table shows the properties that are required when you create the [
 |deviceBootPerformanceOverallScore|Int32|The user experience analytics device boot performance overall score.|
 |bestPracticesOverallScore|Int32|The user experience analytics best practices overall score.|
 |insights|[userExperienceAnalyticsInsight](../resources/intune-devices-userexperienceanalyticsinsight.md) collection|The user experience analytics insights.|
+|state|[userExperienceAnalyticsHealthState](../resources/intune-devices-userexperienceanalyticshealthstate.md)|The current health state of the user experience analytics category. Possible values are: `unknown`, `insufficientData`, `needsAttention`, `meetingGoals`.|
 
 
 
@@ -64,7 +65,7 @@ Here is an example of the request.
 ``` http
 PATCH https://graph.microsoft.com/beta/deviceManagement/userExperienceAnalyticsOverview
 Content-type: application/json
-Content-length: 522
+Content-length: 650
 
 {
   "@odata.type": "#microsoft.graph.userExperienceAnalyticsOverview",
@@ -76,13 +77,16 @@ Content-length: 522
       "@odata.type": "microsoft.graph.userExperienceAnalyticsInsight",
       "userExperienceAnalyticsMetricId": "User Experience Analytics Metric Id value",
       "insightId": "Insight Id value",
-      "value": [
+      "values": [
         {
-          "@odata.type": "microsoft.graph.insightValueDouble"
+          "@odata.type": "microsoft.graph.insightValueDouble",
+          "value": "<Unknown Primitive Type Edm.Double>"
         }
-      ]
+      ],
+      "severity": "informational"
     }
-  ]
+  ],
+  "state": "insufficientData"
 }
 ```
 
@@ -91,7 +95,7 @@ Here is an example of the response. Note: The response object shown here may be 
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 571
+Content-Length: 699
 
 {
   "@odata.type": "#microsoft.graph.userExperienceAnalyticsOverview",
@@ -104,17 +108,18 @@ Content-Length: 571
       "@odata.type": "microsoft.graph.userExperienceAnalyticsInsight",
       "userExperienceAnalyticsMetricId": "User Experience Analytics Metric Id value",
       "insightId": "Insight Id value",
-      "value": [
+      "values": [
         {
-          "@odata.type": "microsoft.graph.insightValueDouble"
+          "@odata.type": "microsoft.graph.insightValueDouble",
+          "value": "<Unknown Primitive Type Edm.Double>"
         }
-      ]
+      ],
+      "severity": "informational"
     }
-  ]
+  ],
+  "state": "insufficientData"
 }
 ```
-
-
 
 
 
