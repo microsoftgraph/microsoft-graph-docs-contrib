@@ -53,7 +53,9 @@ If successful, this method returns a `200 OK` response code and the requested [c
 
 ## Examples
 
-### Request
+### Example 1: Get hosted content
+
+#### Request
 
 The following is an example of the request.
 
@@ -80,7 +82,7 @@ GET https://graph.microsoft.com/beta/chats/{id}/messages/{id}/hostedContents/{id
 
 ---
 
-### Response
+#### Response
 
 The following is an example of the response.
 
@@ -100,6 +102,32 @@ Content-type: application/json
 {
   "id": "id-value"
 }
+```
+
+### Example 2: Get hosted content bytes for an image
+
+#### Request
+
+<!-- {
+  "blockType": "request",
+  "name": "get_chatmessagehostedcontent"
+}-->
+```http
+GET https://graph.microsoft.com/beta/chats/{id}/messages/{id}/hostedContents/{id}/$value
+```
+
+#### Response
+
+<!-- {
+  "blockType": "response",
+  "truncated": true,
+  "@odata.type": "microsoft.graph.chatMessageHostedContent"
+} -->
+
+```http
+HTTP/1.1 200 OK
+Content-type: image/jpeg
+Content-length: 201
 ```
 
 <!-- uuid: 16cd6b66-4b1a-43a1-adaf-3a886856ed98

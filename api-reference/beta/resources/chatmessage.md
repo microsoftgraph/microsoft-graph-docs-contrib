@@ -29,7 +29,6 @@ Represents an individual chat message within a [channel](channel.md) or [chat](c
 |[Get chatMessage in chat](../api/chatmessage-get.md)  | [chatMessage](../resources/chatmessage.md) | Get a single chat message in a chat. |
 |[List all hosted content](../api/chatmessage-list-chatmessagehostedcontent.md) | [chatMessageHostedContent](../resources/chatmessagehostedcontent.md) collection| Get all hosted content in a chat message.|
 |[Get hosted content](../api/chatmessagehostedcontent-get.md) | [chatMessageHostedContent](../resources/chatmessagehostedcontent.md) | Get hosted content from a chat message.|
-|[Get hosted image bytes](../api/chatmessagehostedimage-getbytes.md) | binary image data | Get binary image data of a hosted image from a chat message.|
 
 ## Properties
 
