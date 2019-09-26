@@ -1,17 +1,16 @@
 ---
 author: JeremyKelley
-description: <descrption>
-ms.date: 09/10/2017
-title: UploadSession
+description: "Represents information for an iterative process to upload large files to OneDrive, OneDrive for Business, or SharePoint document libraries, or as file attachments to Outlook message objects."
+title: "uploadSession resource type"
 localization_priority: Normal
-doc_type: resourcePageType
-ms.prod: ""
+doc_type: "resourcePageType"
+ms.prod: "shared"
 ---
-# UploadSession resource
+# uploadSession resource type
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-The **UploadSession** resource provides information about how to upload large files to OneDrive, OneDrive for Business, or SharePoint document libraries.
+Represents information for an iterative process to upload large files to OneDrive, OneDrive for Business, or SharePoint document libraries, or as file attachments to Outlook [message](message.md) objects.
 
 ## JSON representation
 
@@ -20,14 +19,16 @@ Here is a JSON representation of the resource
 <!-- {
   "blockType": "resource",
   "optionalProperties": [ "uploadUrl", "nextExpectedRanges" ],
-  "@odata.type": "microsoft.graph.uploadSession"
+  "@odata.type": "microsoft.graph.uploadSession",
+  "baseType": null
+}-->
 }-->
 
 ```json
 {
-  "uploadUrl": "https://sn3302.up.1drv.com/up/fe6987415ace7X4e1eF866337",
-  "expirationDateTime": "2015-01-29T09:21:55.523Z",
-  "nextExpectedRanges": ["0-"]
+  "uploadUrl": "String",
+  "expirationDateTime": "String (timestamp)",
+  "nextExpectedRanges": ["String"]
 }
 ```
 
