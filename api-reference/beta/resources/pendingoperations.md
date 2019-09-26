@@ -1,6 +1,6 @@
 ---
-title: "PendingOperations"
-description: "The pendingOperations resource indicates that one or more operations that may affect the state of the driveItem are pending completion."
+title: "pendingOperations"
+description: "The pendingOperations resource indicates that one or more operations that might affect the state of the driveItem are pending completion."
 localization_priority: Normal
 author: "JeremyKelley"
 ms.date: 08/06/2019
@@ -8,11 +8,11 @@ ms.prod: ""
 doc_type: "resourcePageType"
 ---
 
-# PendingOperations resource type
+# pendingOperations resource type
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-The **pendingOperations** resource indicates that one or more operations that may affect the state of the DriveItem are pending completion.
+Indicates that one or more operations that might affect the state of the **driveItem** are pending completion.
 
 ## Properties
 
