@@ -2,9 +2,9 @@
 title: "persistentBrowserSessionControl resource type"
 description: "Session control to define whether to persist cookies or not."
 localization_priority: Normal
-author: ""
-ms.prod: ""
-doc_type: "resourcePageType"
+author: "davidmu1"
+ms.prod: "microsoft-identity-platform"
+doc_type: resourcePageType
 ---
 
 # persistentBrowserSessionControl resource type
@@ -17,7 +17,12 @@ Session control to define whether to persist cookies or not.
 
 | Property     | Type        | Description |
 |:-------------|:------------|:------------|
+|isEnabled     |Boolean      | Specifies whether the session control is enabled. Possible values: true, false. |
 |mode|String| Possible values are: `always`, `never`.|
+
+## Relationships
+
+None.
 
 ## JSON representation
 
@@ -29,7 +34,7 @@ The following is a JSON representation of the resource.
 
   ],
   "@odata.type": "microsoft.graph.persistentBrowserSessionControl",
-  "baseType": "self.conditionalAccessSessionControl"
+  "baseType": "microsoft.graph.conditionalAccessSessionControl"
 }-->
 
 ```json
