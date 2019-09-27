@@ -27,7 +27,7 @@ Contains properties used to assign a device management script to a group.
 ## Properties
 |Property|Type|Description|
 |:---|:---|:---|
-|id|String|Key of the device management script group assignment entity.|
+|id|String|Key of the device management script group assignment entity. This property is read-only.|
 |targetGroupId|String|The Id of the Azure Active Directory group we are targeting the script to.|
 
 ## Relationships
