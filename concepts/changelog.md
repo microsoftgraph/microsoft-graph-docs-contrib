@@ -84,6 +84,7 @@ For details about known issues with Microsoft Graph APIs, see [Known issues](kno
 
 | **Change type** | **Version** | **Description**                  |
 |:----------------|:------------|:-----------------------------------------|
+| Addition | Beta | Added the [objectIdentity](/graph/api/resources/objectIdentity?view=graph-rest-beta) resource that represents an identity used to sign in to a user account. |
 | Addition | Beta | Added **synchronizationJobSettings** property to the [synchronizationJob](/graph/api/resources/synchronization-synchronizationjob?view=graph-rest-beta) resource.|
 | Addition | Beta | Added new possible values for the **reason** property in the [synchronizationQuarantine](/graph/api/resources/synchronization-quarantine?view=graph-rest-beta) resource.|
 
@@ -97,6 +98,7 @@ For details about known issues with Microsoft Graph APIs, see [Known issues](kno
 
 | **Change type** | **Version**   | **Description**                          |
 | :-------------- | :------------ | :--------------------------------------- |
+| Addition | Beta | Added the **identities** property to the [user](/graph/api/resources/user?view=graph-rest-beta) resource. This property represents the set of identities that this user can use to sign in with.|
 | Addition        | v1.0          | Added the [translateExchangeIds](/graph/api/user-translateexchangeids?view=graph-rest-1.0) method.|
 
 ### Users | Outlook settings

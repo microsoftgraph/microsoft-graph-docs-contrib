@@ -49,6 +49,32 @@ The toolkit provides two ways to create new providers:
 
 Read more about each one in the [custom providers](./providers/custom.md) documentation.
 
+## Using multiple providers
+
+In some scenarios your application will run in a different environment and require a different provider. For example, the app might run as both a web application and a Microsoft Teams tab and you might need to use the MsalProvider and the TeamsProvider. For this scenario, all provider components have the `depends-on` attribute to create a fallback chain, as shown in the following example.
+
+```html
+<mgt-teams-provider
+  client-id="[CLIENT-ID]"
+  auth-popup-url="auth.html" ></mgt-teams-provider>
+
+<mgt-msal-provider
+  client-id="[CLIENT-ID]"
+  depends-on="mgt-teams-provider" ></mgt-msal-provider>
+```
+
+In this scenario, the MsalProvider will only be used if the TeamsProvider is not available in the current environment.
+
+To accomplish the same in code, you can use the `isAvailable` property on the provider, as shown.
+
+```ts
+if (TeamsProvider.isAvailable) {
+    Providers.globalProvider = new TeamsProvider(teamsConfig);
+} else {
+    Providers.globalProvider = new MsalProvider(msalConfig)
+}
+```
+
 ## Making your own calls to Microsoft Graph
 
 All components can access Microsoft Graph without any customization required as long as you initialize a provider (as described in the previous section). To get a reference to the same Microsoft Graph SDK used by the components, first get a reference to the global IProvider and then use the `Graph` object, as shown.
