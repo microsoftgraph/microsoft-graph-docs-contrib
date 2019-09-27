@@ -288,9 +288,10 @@
           href: api/user-list-manager.md
         - name: Assign manager
           href: api/user-post-manager.md
-      - name: Outlook settings
-        href: resources/outlookuser.md
+      - name: Outlook settings       
         items:
+        - name: Outlook user
+          href: resources/outlookuser.md
         - name: Get language choices
           href: api/outlookuser-supportedlanguages.md
         - name: Get time zone choices
@@ -303,6 +304,8 @@
           href: api/outlookuser-list-mastercategories.md
         - name: Create category
           href: api/outlookuser-post-mastercategories.md
+        - name: Translate IDs
+          href: api/user-translateexchangeids.md
       - name: Photo
         href: resources/profilephoto.md
         items:
