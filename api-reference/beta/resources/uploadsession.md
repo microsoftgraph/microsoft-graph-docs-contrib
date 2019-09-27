@@ -22,7 +22,6 @@ Here is a JSON representation of the resource
   "@odata.type": "microsoft.graph.uploadSession",
   "baseType": null
 }-->
-}-->
 
 ```json
 {
