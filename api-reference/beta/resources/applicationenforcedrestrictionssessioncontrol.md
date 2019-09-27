@@ -2,9 +2,9 @@
 title: "applicationEnforcedRestrictionsSessionControl resource type"
 description: "Session control to enforce application restrictions."
 localization_priority: Normal
-author: ""
-ms.prod: ""
-doc_type: "resourcePageType"
+author: "davidmu1"
+ms.prod: "microsoft-identity-platform"
+doc_type: resourcePageType
 ---
 
 # applicationEnforcedRestrictionsSessionControl resource type
@@ -15,7 +15,13 @@ Session control to enforce application restrictions.
 
 ## Properties
 
-None
+| Property     | Type        | Description |
+|:-------------|:------------|:------------|
+|isEnabled     |Boolean      | Specifies whether the session control is enabled. Possible values: true, false. |
+
+## Relationships
+
+None.
 
 ## JSON representation
 
@@ -27,7 +33,7 @@ The following is a JSON representation of the resource.
 
   ],
   "@odata.type": "microsoft.graph.applicationEnforcedRestrictionsSessionControl",
-  "baseType": "self.conditionalAccessSessionControl"
+  "baseType": "microsoft.graph.conditionalAccessSessionControl"
 }-->
 
 ```json

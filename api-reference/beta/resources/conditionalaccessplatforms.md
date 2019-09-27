@@ -2,9 +2,9 @@
 title: "conditionalAccessPlatforms resource type"
 description: "Platforms included in and excluded from the policy scope."
 localization_priority: Normal
-author: ""
-ms.prod: ""
-doc_type: "resourcePageType"
+author: "davidmu1"
+ms.prod: "microsoft-identity-platform"
+doc_type: resourcePageType
 ---
 
 # conditionalAccessPlatforms resource type
@@ -19,6 +19,10 @@ Platforms included in and excluded from the policy scope.
 |:-------------|:------------|:------------|
 |includePlatforms|String collection| Possible values are: `android`, `iOS`, `windows`, `windowsPhone`, `macOS`, `all`.|
 |excludePlatforms|String collection| Possible values are: `android`, `iOS`, `windows`, `windowsPhone`, `macOS`.|
+
+## Relationships
+
+None.
 
 ## JSON representation
 

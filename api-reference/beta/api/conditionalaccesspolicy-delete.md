@@ -2,9 +2,9 @@
 title: "Delete conditionalAccessPolicy"
 description: "Delete a conditionalAccessPolicy."
 localization_priority: Normal
-author: ""
-ms.prod: ""
-doc_type: "apiPageType"
+author: "davidmu1"
+ms.prod: "microsoft-identity-platform"
+doc_type: apiPageType
 ---
 
 # Delete conditionalAccessPolicy
@@ -17,11 +17,11 @@ Delete a conditionalAccessPolicy.
 
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
 
-| Permission type                        | Permissions (from least to most privileged) |
-|:---------------------------------------|:--------------------------------------------|
-| Delegated (work or school account) | Directory.AccessAsUser.All	|
-| Delegated (personal Microsoft account) | Not supported. |
-| Delegated (work or school account) | Policy.ReadWrite.ConditionalAccess |
+|Permission type                        | Permissions (from least to most privileged)                    |
+|:--------------------------------------|:---------------------------------------------------------------|
+|Delegated (work or school account)     | Policy.ReadWrite.ConditionalAccess, Directory.AccessAsUser.All |
+|Delegated (personal Microsoft account) | Not supported. |
+|Application                            | Not supported. |
 
 ## HTTP request
 
@@ -43,7 +43,7 @@ Do not supply a request body for this method.
 
 ## Response
 
-If successful, this method returns `204, No Content` response code. It does not return anything in the response body.
+If successful, this method returns a `204 No Content` response code. It does not return anything in the response body.
 
 ## Examples
 
@@ -56,7 +56,7 @@ The following is an example of the request.
 }-->
 
 ```http
-DELETE https://graph.microsoft.com/beta/conditionalaccess/policies/7960c36c-ee7e-449f-8d1b-aa09046a9bc3
+DELETE https://graph.microsoft.com/beta/conditionalAccess/policies/7960c36c-ee7e-449f-8d1b-aa09046a9bc3
 ```
 
 ### Response
@@ -65,7 +65,7 @@ The following is an example of the response.
 
 <!-- {
   "blockType": "response",
-  "truncated": true
+  "truncated": false
 } -->
 
 ```http

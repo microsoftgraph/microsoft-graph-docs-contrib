@@ -2,9 +2,9 @@
 title: "cloudAppSecuritySessionControl resource type"
 description: "Session control used to enforce cloud app security checks."
 localization_priority: Normal
-author: ""
-ms.prod: ""
-doc_type: "resourcePageType"
+author: "davidmu1"
+ms.prod: "microsoft-identity-platform"
+doc_type: resourcePageType
 ---
 
 # cloudAppSecuritySessionControl resource type
@@ -17,7 +17,12 @@ Session control used to enforce cloud app security checks.
 
 | Property     | Type        | Description |
 |:-------------|:------------|:------------|
-|cloudAppSecurityType|String| Possible values are: `mcasConfigured`, `monitorOnly`, `blockDownloads`, `protectDownloads`.|
+|isEnabled     |Boolean      | Specifies whether the session control is enabled. Possible values: true, false. |
+|cloudAppSecurityType|String | Possible values are: `mcasConfigured`, `monitorOnly`, `blockDownloads`, `protectDownloads`.|
+
+## Relationships
+
+None.
 
 ## JSON representation
 
@@ -29,7 +34,7 @@ The following is a JSON representation of the resource.
 
   ],
   "@odata.type": "microsoft.graph.cloudAppSecuritySessionControl",
-  "baseType": "self.conditionalAccessSessionControl"
+  "baseType": "microsoft.graph.conditionalAccessSessionControl"
 }-->
 
 ```json

@@ -1,27 +1,27 @@
 ---
 title: "List policies"
-description: "Retrieve a list of conditionalaccesspolicy objects."
+description: "Retrieve a list of conditionalAccessPolicy objects."
 localization_priority: Normal
-author: ""
-ms.prod: ""
-doc_type: "apiPageType"
+author: "davidmu1"
+ms.prod: "microsoft-identity-platform"
+doc_type: apiPageType
 ---
 
 # List policies
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Retrieve a list of conditionalaccesspolicy objects.
+Retrieve a list of [conditionalAccessPolicy](../resources/conditionalaccesspolicy.md) objects.
 
 ## Permissions
 
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
 
-| Permission type                        | Permissions (from least to most privileged) |
-|:---------------------------------------|:--------------------------------------------|
-| Delegated (work or school account) | Directory.AccessAsUser.All	|
-| Delegated (personal Microsoft account) | Not supported. |
-| Delegated (work or school account) | Policy.Read.All or Policy.ReadWrite.ConditionalAccess |
+|Permission type                        | Permissions (from least to most privileged)                                       |
+|:--------------------------------------|:----------------------------------------------------------------------------------|
+|Delegated (work or school account)     | Policy.Read.All or Policy.ReadWrite.ConditionalAccess, Directory.AccessAsUser.All |
+|Delegated (personal Microsoft account) | Not supported. |
+|Application                            | Not supported. |
 
 ## HTTP request
 
@@ -33,7 +33,7 @@ GET /conditionalaccess/policies
 
 ## Optional query parameters
 
-This method supports some of the OData query parameters to help customize the response. For general information, see [OData query parameters](/graph/query-parameters).
+This method supports the `Skip`, `Top`, `Count`, `Filter`, `OrderBy`, and `Select` OData query parameters to help customize the response. For general information, see [OData query parameters](/graph/query-parameters).
 
 ## Request headers
 
@@ -60,7 +60,7 @@ The following is an example of the request.
 }-->
 
 ```http
-GET https://graph.microsoft.com/beta/conditionalaccess/policies
+GET https://graph.microsoft.com/beta/conditionalAccess/policies?$filter=displayName eq 'SimplePolicy1' or displayName eq 'SimplePolicy2'
 ```
 
 ### Response
@@ -71,7 +71,7 @@ The following is an example of the response.
 
 <!-- {
   "blockType": "response",
-  "truncated": true,
+  "truncated": false,
   "@odata.type": "microsoft.graph.conditionalAccessPolicy",
   "isCollection": true
 } -->
@@ -80,17 +80,91 @@ The following is an example of the response.
 HTTP/1.1 200 OK
 Content-type: application/json
 
+
 {
-  "value": [
-    {
-      "id": "id-value",
-      "createdDateTime": "datetime-value",
-      "modifiedDateTime": "datetime-value",
-      "displayName": "displayName-value",
-      "description": "description-value",
-      "state": "state-value"
-    }
-  ]
+    "@odata.context": "https://graph.microsoft.com/beta/$metadata#conditionalAccess/policies",
+    "value": [
+        {
+            "id": "ad8d2b4a-8d30-413f-88b8-144c6c8d98d9",
+            "displayName": "SimplePolicy1",
+            "createdDateTime": null,
+            "modifiedDateTime": null,
+            "state": "disabled",
+            "sessionControls": null,
+            "conditions": {
+                "signInRiskLevels": [],
+                "clientAppTypes": [],
+                "platforms": null,
+                "locations": null,
+                "deviceStates": null,
+                "applications": {
+                    "includeApplications": [
+                        "None"
+                    ],
+                    "excludeApplications": [],
+                    "includeUserActions": []
+                },
+                "users": {
+                    "includeUsers": [
+                        "None"
+                    ],
+                    "excludeUsers": [],
+                    "includeGroups": [],
+                    "excludeGroups": [],
+                    "includeRoles": [],
+                    "excludeRoles": []
+                }
+            },
+            "grantControls": {
+                "operator": "OR",
+                "builtInControls": [
+                    "block"
+                ],
+                "customAuthenticationFactors": [],
+                "termsOfUse": []
+            }
+        },
+        {
+            "id": "c558e346-969d-40a7-a64e-2df6c2c88490",
+            "displayName": "SimplePolicy2",
+            "createdDateTime": null,
+            "modifiedDateTime": null,
+            "state": "disabled",
+            "sessionControls": null,
+            "conditions": {
+                "signInRiskLevels": [],
+                "clientAppTypes": [],
+                "platforms": null,
+                "locations": null,
+                "deviceStates": null,
+                "applications": {
+                    "includeApplications": [
+                        "None"
+                    ],
+                    "excludeApplications": [],
+                    "includeUserActions": []
+                },
+                "users": {
+                    "includeUsers": [
+                        "None"
+                    ],
+                    "excludeUsers": [],
+                    "includeGroups": [],
+                    "excludeGroups": [],
+                    "includeRoles": [],
+                    "excludeRoles": []
+                }
+            },
+            "grantControls": {
+                "operator": "OR",
+                "builtInControls": [
+                    "mfa"
+                ],
+                "customAuthenticationFactors": [],
+                "termsOfUse": []
+            }
+        }
+    ]
 }
 ```
 

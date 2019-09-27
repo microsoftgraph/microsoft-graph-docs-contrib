@@ -2,23 +2,28 @@
 title: "signInFrequencySessionControl resource type"
 description: "Session control to enforce signin frequency."
 localization_priority: Normal
-author: ""
-ms.prod: ""
-doc_type: "resourcePageType"
+author: "davidmu1"
+ms.prod: "microsoft-identity-platform"
+doc_type: resourcePageType
 ---
 
 # signInFrequencySessionControl resource type
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Session control to enforce signin frequency.
+Session control to enforce sign-in frequency.
 
 ## Properties
 
 | Property     | Type        | Description |
 |:-------------|:------------|:------------|
-|type|String| Possible values are: `days`, `hours`.|
-|value|Int32||
+|isEnabled     |Boolean      | Specifies whether the session control is enabled. Possible values: true, false. |
+|type          |String       | Possible values are: `days`, `hours`.|
+|value         |Int32        | The number of `days` or `hours`.|
+
+## Relationships
+
+None.
 
 ## JSON representation
 
@@ -30,7 +35,7 @@ The following is a JSON representation of the resource.
 
   ],
   "@odata.type": "microsoft.graph.signInFrequencySessionControl",
-  "baseType": "self.conditionalAccessSessionControl"
+  "baseType": "microsoft.graph.conditionalAccessSessionControl"
 }-->
 
 ```json

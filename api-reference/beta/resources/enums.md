@@ -888,10 +888,10 @@ Possible values for user account types (group membership), per Windows definitio
 
 ### conditionalAccessPolicyState
 
-| Member       | Value       |
-|:--------------|:--------------|
-|enabled|0|
-|disabled|1|
+|Member|
+|:---|
+|enabled|
+|disabled|
 
 ### conditionalAccessClientApp
 
