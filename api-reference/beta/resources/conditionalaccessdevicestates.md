@@ -2,9 +2,9 @@
 title: "conditionalAccessDeviceStates resource type"
 description: "Represents device states in the policy scope."
 localization_priority: Normal
-author: ""
-ms.prod: ""
-doc_type: "resourcePageType"
+author: "davidmu1"
+ms.prod: "microsoft-identity-platform"
+doc_type: resourcePageType
 ---
 
 # conditionalAccessDeviceStates resource type
@@ -17,8 +17,12 @@ Represents device states in the policy scope.
 
 | Property     | Type        | Description |
 |:-------------|:------------|:------------|
-| `includeStates` | String collection | States in the scope of the policy. `ALL` is the only allowed value. |
-| `excludeStates` | String collection | States excluded from the scope of the policy. Possible values: `Compliant`, `DomainJoined`. |
+| includeStates | String collection | States in the scope of the policy. `All` is the only allowed value. |
+| excludeStates | String collection | States excluded from the scope of the policy. Possible values: `Compliant`, `DomainJoined`. |
+
+## Relationships
+
+None.
 
 ## JSON representation
 

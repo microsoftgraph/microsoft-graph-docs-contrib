@@ -2,9 +2,9 @@
 title: "conditionalAccessSessionControl resource type"
 description: "Session control base type."
 localization_priority: Normal
-author: ""
-ms.prod: ""
-doc_type: "resourcePageType"
+author: "davidmu1"
+ms.prod: "microsoft-identity-platform"
+doc_type: resourcePageType
 ---
 
 # conditionalAccessSessionControl resource type
@@ -17,7 +17,11 @@ Session control base type.
 
 | Property     | Type        | Description |
 |:-------------|:------------|:------------|
-|isEnabled|Boolean||
+|isEnabled     |Boolean      | Specifies whether the session control is enabled. Possible values: true, false. |
+
+## Relationships
+
+None.
 
 ## JSON representation
 

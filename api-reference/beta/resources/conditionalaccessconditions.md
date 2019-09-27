@@ -2,9 +2,9 @@
 title: "conditionalAccessConditions resource type"
 description: "Represents the type of conditions that govern when the policy applies."
 localization_priority: Normal
-author: ""
-ms.prod: ""
-doc_type: "resourcePageType"
+author: "davidmu1"
+ms.prod: "microsoft-identity-platform"
+doc_type: resourcePageType
 ---
 
 # conditionalAccessConditions resource type
@@ -24,6 +24,10 @@ Represents the type of conditions that govern when the policy applies.
 |locations|[conditionalAccessLocations](conditionalaccesslocations.md)| Locations included in and excluded from the policy scope. |
 |platforms|[conditionalAccessPlatforms](conditionalaccessplatforms.md)| Platforms included in and excluded from the policy scope. |
 |signInRiskLevels|String collection| Risk levels included in the policy scope. Possible values are: `low`, `medium`, `high`, `hidden`, `none`, `unknownFutureValue`.|
+
+## Relationships
+
+None.
 
 ## JSON representation
 
@@ -45,12 +49,12 @@ The following is a JSON representation of the resource.
 ```json
 {
   "applications": {"@odata.type": "microsoft.graph.conditionalAccessApplications"},
-  "users": {"@odata.type": "microsoft.graph.conditionalAccessUsers"}
+  "users": {"@odata.type": "microsoft.graph.conditionalAccessUsers"},
   "clientAppTypes": ["String"],
   "deviceStates": {"@odata.type": "microsoft.graph.conditionalAccessDeviceStates"},
   "locations": {"@odata.type": "microsoft.graph.conditionalAccessLocations"},
   "platforms": {"@odata.type": "microsoft.graph.conditionalAccessPlatforms"},
-  "signInRiskLevels": ["String"],
+  "signInRiskLevels": ["String"]
 }
 ```
 

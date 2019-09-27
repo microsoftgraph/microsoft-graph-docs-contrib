@@ -2,9 +2,9 @@
 title: "conditionalAccessApplications resource type"
 description: "Represents applications and user actions included in and excluded from the policy scope."
 localization_priority: Normal
-author: ""
-ms.prod: ""
-doc_type: "resourcePageType"
+author: "davidmu1"
+ms.prod: "microsoft-identity-platform"
+doc_type: resourcePageType
 ---
 
 # conditionalAccessApplications resource type
@@ -17,9 +17,13 @@ Represents applications and user actions included in and excluded from the polic
 
 | Property | Type | Description |
 |:-------- |:---- |:----------- |
-| `includeApplications` | String collection | Application IDs (could be 'All') in scope of policy unless explicitly excluded. |
-| `excludeApplications` | String collection | Application IDs excluded from scope of policy. |
-| `includeUserActions` | String collection | User actions to include (e.g. 'urn:user:registersecurityinfo') |
+| includeApplications | String collection | Application IDs (could be 'All') in scope of policy unless explicitly excluded. |
+| excludeApplications | String collection | Application IDs excluded from scope of policy. |
+| includeUserActions | String collection | User actions to include (e.g. 'urn:user:registersecurityinfo') |
+
+## Relationships
+
+None.
 
 ## JSON representation
 
