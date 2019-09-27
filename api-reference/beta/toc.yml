@@ -319,7 +319,7 @@
           href: api/outlookuser-list-mastercategories.md
         - name: Create category
           href: api/outlookuser-post-mastercategories.md
-        - name: Translate Exchange IDs
+        - name: Translate IDs
           href: api/user-translateexchangeids.md
       - name: Outlook tasks
         href: resources/outlooktask.md
