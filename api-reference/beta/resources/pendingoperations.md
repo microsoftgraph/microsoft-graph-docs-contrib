@@ -18,7 +18,7 @@ Indicates that one or more operations that might affect the state of the **drive
 
 | Property     | Type        | Description |
 |:-------------|:------------|:------------|
-|pendingContentUpdate|[pendingContentUpdate](pendingcontentupdate.md)||
+|pendingContentUpdate|[pendingContentUpdate](pendingcontentupdate.md)|A property indicating that an operation that may update the binary content of a file is pending completion.|
 
 ## JSON representation
 
