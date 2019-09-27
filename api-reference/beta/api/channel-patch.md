@@ -40,6 +40,8 @@ PATCH /teams/{id}/channels/{id}
 
 In the request body, supply a JSON representation of [channel](../resources/channel.md) object.
 
+> Note: You cannot update the `membershipType` value for an existing channel.
+
 ## Response
 
 If successful, this method returns a `204 No Content` response code.
