@@ -4,13 +4,13 @@ description: "Represents information for an iterative process to upload large fi
 title: "uploadSession resource type"
 localization_priority: Normal
 doc_type: "resourcePageType"
-ms.prod: "shared"
+ms.prod: "non-product-specific"
 ---
 # uploadSession resource type
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Represents information for an iterative process to upload large files to OneDrive, OneDrive for Business, or SharePoint document libraries, or as file attachments to Outlook [message](message.md) objects.
+Represents information for an iterative process to upload large files to OneDrive, OneDrive for Business, or SharePoint document libraries, or to Outlook [message](message.md) objects as attachments.
 
 ## JSON representation
 
