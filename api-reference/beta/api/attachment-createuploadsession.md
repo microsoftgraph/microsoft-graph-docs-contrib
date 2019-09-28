@@ -1,6 +1,6 @@
 ---
 title: "attachment: createUploadSession"
-description: "PROVIDE DESCRIPTION HERE"
+description: "Create an upload session that allows an app to iteratively upload ranges of a file so to attach the file to the specified message."
 localization_priority: Normal
 author: "angelgolfer-ms"
 ms.prod: "outlook"
@@ -11,18 +11,20 @@ doc_type: "apiPageType"
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Create an upload session that allows an app to iteratively upload ranges of a file in order to attach the file to the specified [message](../resources/message.md).
+Create an upload session that allows an app to iteratively upload ranges of a file so to attach the file to the specified [message](../resources/message.md).
 
-This action returns as part of the response an upload URL that you can use in subsequent sequential `PUT` queries. Query request headers let you specify the exact range of bytes to be uploaded. This allows the transfer to be resumed if a connection is dropped while the upload is in progress. Files must be between 3 MB and 150 MB in size.
+As part of the response, this action returns an upload URL that you can use in subsequent sequential `PUT` queries. Request headers for each `PUT` operation let you specify the exact range of bytes to be uploaded. This allows the transfer to be resumed if a connection is dropped while the upload is in progress. 
+
+Files must be between 3MB and 150MB in size.
 
 The following are the steps to attach a file using an upload session:
 
 1. Create an upload session
-2. Within that upload session, iteratively upload ranges of bytes (up to 4 MB each time) until all the bytes of the file have been uploaded to be attached to the specified message
-3. Save the URL for the attachment for future access
+2. Within that upload session, iteratively upload ranges of bytes (up to 4 MB each time) until all the bytes of the file have been uploaded, and the file is attached to the specified message
+3. Save the ID for the attachment for future access
 4. Delete the upload session 
 
-For an example, see attach a large file to a message.
+See [attach large files to Outlook messages](/graph/outlook-large-attachments) for an example.
 
 
 ## Permissions
@@ -56,7 +58,7 @@ In the request body, provide a JSON object with the following parameters.
 
 | Parameter    | Type        | Description |
 |:-------------|:------------|:------------|
-|AttachmentItem|[attachmentItem](../resources/attachmentitem.md)|Represents attributes of the item to be uploaded and attached.|
+|AttachmentItem|[attachmentItem](../resources/attachmentitem.md)|Represents attributes of the item to be uploaded and attached. At minimum, specify the attachment type (`file`), a name, and the size of the file.|
 
 ## Response
 
@@ -113,8 +115,8 @@ HTTP/1.1 201 Created
 Content-type: application/json
 
 {
-    "@odata.context": "https://graph.microsoft.com/testcanarybetaExCnyBeta/$metadata#microsoft.graph.uploadSession",
-    "uploadUrl": "https://outlook.office.com/api/beta/Users('cfe8e219-4671-49c1-b72c-62f26fd79c32@72f988bf-86f1-41af-91ab-2d7cd011db47')/Messages('AAMkADI5MAAIT3drCAAA=')/AttachmentSessions('AAMkADI5MAAIT3k0uAAA=')?authtoken=eyJhbGciOiJSUzI1NiIsImtpZCI6IktmYUNIUlN6bllHMmNIdDRobk9JQnpndlU5MD0iLCJ4NXQiOiJKaGg0RkVpMnpsLUlFalBYQUQ1OVRmQzR0S0kiLCJ0eXAiOiJKV1QifQ.eyJvaWQiOiJjZmU4ZTIxOS00NjcxLTQ5YzEtYjcyYy02MmYyNmZkNzljMzIiLCJ2ZXIiOiJSZXNvdXJjZUxvb3BiYWNrLlVzZXIuVjEiLCJzY3AiOiJBdHRhY2htZW50U2Vzc2lvbi5Xcml0ZSIsInJzY29wZWxlbiI6IjQ1OCIsInJlc291cmNlX3Njb3BlIjoie1wiVVJMXCI6XCI3Vkw4MDF5ZDcwNkgrNmJyY2VPbkNZK3dBd1dENUs2NWc1WDk2Q0dCb01jPVwifSIsImNvcnJpZCI6IjNkYTIxMWE2LTBlNmQtNDRkMi1hOWU0LTlmNTBkNjQ2OTRlYSIsImFwcGlkIjoiMDAwMDAwMDMtMDAwMC0wMDAwLWMwMDAtMDAwMDAwMDAwMDAwIiwiYXBwaWRhY3IiOiIwIiwidGlkIjoiNzJmOTg4YmYtODZmMS00MWFmLTkxYWItMmQ3Y2QwMTFkYjQ3IiwiaWF0IjoxNTY5MzY2NTcxLCJuYmYiOjE1NjkzNjY1NzEsImV4cCI6MTU2OTM3NzM3MSwiaXNzIjoiaHR0cHM6Ly9yZXNvdXJjZS5zZWxmLyIsImF1ZCI6Imh0dHBzOi8vb3V0bG9vay5vZmZpY2UuY29tL2FwaS8ifQ.lUpqFwqIXMm0w467OLt4ihtcPCKRhXJnMP4mVCoLDrsj2G45jIMeg-ZLagnWMbohnxivQURQRxCwvOBpNcswH70s9uFROT3k8gaxQl7u9eqV711cmTMS8nabDDZ-cftyvfjdJa2VCgEh9Fs1EvHrUNso9MyMYVRWA8PR4tlgy5pL4JgjZZRg00gcZaAUz76v0GhCeJmW1gt1ZbvHk9EyWN5CCbzsKb2R_jca3ZZqhPcbvjuP8FEU6y8FP7HGnF_lcgb8woBJ5mBCiRH1r7CrG9rgd2OwFMT4yazo0iG8Cr3f3RS7hG_H_gMjQNp0DqOMNrGAHSTqcmt3qKVEztZMKA",
+    "@odata.context": "https://graph.microsoft.com/beta/$metadata#microsoft.graph.uploadSession",
+    "uploadUrl": "https://outlook.office.com/api/beta/Users('a8e8e219-4931-95c1-b73d-62626fd79c32@72aa88bf-76f0-494f-91ab-2d7cd730db47')/Messages('AAMkADI5MAAIT3drCAAA=')/AttachmentSessions('AAMkADI5MAAIT3k0uAAA=')?authtoken=eyJhbGciOiJSUzI1NiIsImtpZCI6IktmYUNIUlN6bllHMmNI",
     "expirationDateTime": "2019-09-25T01:09:30.7671707Z",
     "nextExpectedRanges": [
         "0-"

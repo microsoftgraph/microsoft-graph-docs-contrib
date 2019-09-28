@@ -37,7 +37,7 @@ Here is a JSON representation of the resource
 | Property	     | Type              |Description
 |:-------------------|:------------------|:------------------------------------
 | expirationDateTime | DateTimeOffset    | The date and time in UTC that the upload session will expire. The complete file must be uploaded before this expiration time is reached.
-| nextExpectedRanges | String collection | A collection of byte ranges that the server is missing for the file. These ranges are zero indexed and of the format "start-end" (e.g. "0-26" to indicate the first 27 bytes of the file).
+| nextExpectedRanges | String collection | A collection of byte ranges that the server is missing for the file. These ranges are zero-indexed and of the format, "{start}-{end}" (e.g. "0-26" to indicate the first 27 bytes of the file), or simply, "{start}".
 | uploadUrl          | String            | The URL endpoint that accepts PUT requests for byte ranges of the file.
 
 ## See also
