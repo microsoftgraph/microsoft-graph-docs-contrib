@@ -25,7 +25,7 @@ Events in group calendars do not support attachments.
 >**Note**: Since there is currently a limit of 4MB on the total size of each REST request, in general, this limits the 
 size of the file or item attachment you can add to under 4MB. 
 >
-> However, if you're attaching to a message a file that is between 3MB and 150MB, you can [create an upload session](attachment-createuploadsession.md) and iteratively upload ranges of the file to attach it. See [attach large files to Outlook messages](/graph/outlook-large-attachments) for an example.
+> However, if you're attaching to a message a file that is between 3MB and 150MB, you can [create an upload session](../api/attachment-createuploadsession.md) and iteratively upload ranges of the file to attach it. See [attach large files to Outlook messages](/graph/outlook-large-attachments) for an example.
 
 ## Methods
 
