@@ -15,7 +15,7 @@ The Microsoft Graph Toolkit is a great resource for any developer looking to cre
 
 You can use the components by referencing the loader directly (via unpkg), or by installing the npm package.
 
-![Animated gif that shows referencing the loader to use the toolkit components](/images/get-started.gif)
+![Animated gif that shows referencing the loader to use the toolkit components](images/get-started.gif)
 
 For details about how to get started with the Microsoft Graph Toolkit, see the [Get started video](https://www.youtube.com/watch?v=oZCGb2MMxa0).
 
