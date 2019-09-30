@@ -15,13 +15,13 @@ The Microsoft Graph Toolkit is a great resource for any developer looking to cre
 
 You can use the components by referencing the loader directly (via unpkg), or by installing the npm package.
 
-![Get started](/images/get-started.gif)
+![Animated gif that shows referencing the loader to use the toolkit components](images/get-started.gif)
 
 For details about how to get started with the Microsoft Graph Toolkit, see the [Get started video](https://www.youtube.com/watch?v=oZCGb2MMxa0).
 
 ### Use via mgt-loader
 
-See the folowing [jsfiddle example](https://jsfiddle.net/metulev/9phqxLd5/).
+See the following [jsfiddle example](https://jsfiddle.net/metulev/9phqxLd5/).
 
 ```html
 <script src="https://unpkg.com/@microsoft/mgt/dist/bundle/mgt-loader.js"></script>
@@ -70,7 +70,7 @@ Similarly, to add a provider, you can add it as a component:
 <mgt-msal-provider client-id="[CLIENT-ID]"></mgt-msal-provider>
 ```
 
-or, add it in your code:
+Or, add it in your code:
 
 ```html
 <script type="module">
