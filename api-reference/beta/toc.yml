@@ -9683,12 +9683,10 @@
       - name: Chat message
         href: resources/chatmessage.md
         items:
-        - name: List hosted images
-          href: api/chatmessagehostedimage-list-hostedimages.md
-        - name: Get hosted image
-          href: api/chatmessagehostedimage-get.md
-        - name: Get hosted image bytes
-          href: api/chatmessagehostedimage-getbytes.md
+        - name: List hosted content
+          href: api/chatmessage-list-chatmessagehostedcontents.md
+        - name: Get hosted content
+          href: api/chatmessagehostedcontent-get.md
       - name: App Catalog
         href: resources/teamsapp.md
         items:

@@ -1,8 +1,8 @@
 ---
-title: "List hostedContents"
-description: "Retrieve a list of chatMessageHostedContent objects."
+title: "List chatMessageHostedContents"
+description: "Retrieve the list of chatMessageHostedContent objects from a message."
 localization_priority: Normal
-author: "RamjotSingh"
+author: "clearab"
 ms.prod: "microsoft-teams"
 doc_type: "apiPageType"
 ---
@@ -11,7 +11,7 @@ doc_type: "apiPageType"
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Retrieve a list of [chatMessageHostedContent](../resources/chatmessagehostedcontent.md) objects.
+Retrieve the list of [chatMessageHostedContent](../resources/chatmessagehostedcontent.md) objects from a message.
 
 ## Permissions
 
@@ -19,9 +19,9 @@ One of the following permissions is required to call this API. To learn more, in
 
 | Permission type                        | Permissions (from least to most privileged) |
 |:---------------------------------------|:--------------------------------------------|
-| Delegated (work or school account)     | Chat.Read, Chat.ReadWrite. |
-| Delegated (personal Microsoft account) | Not supported. |
-| Application                            | Not supported. |
+|Delegated (work or school account)|For **user** or **chat** resource:<br/>Chat.Read, Chat.ReadWrite<br/><br/>For **channel** resource:<br/>Group.Read.All, Group.ReadWrite.All|
+|Delegated (personal Microsoft account)|Not supported|
+|Application| For **user** or **chat** resource:<br/>Chat.Read.All, Chat.ReadWrite.All<br/><br/>For **channel** resource:<br/>Group.Read.All, Group.ReadWrite.All |
 
 ## HTTP request
 
@@ -30,6 +30,7 @@ One of the following permissions is required to call this API. To learn more, in
 ```http
 GET /chats/{id}/messages/{id}/hostedContents
 GET /users/{id}/chats/{id}/messages/{id}/hostedContents
+GET /teams/{id}/channels/{id}/messages/{id}/hostedContents
 ```
 
 ## Optional query parameters
