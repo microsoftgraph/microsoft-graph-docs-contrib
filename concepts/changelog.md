@@ -11,6 +11,16 @@ This changelog covers what's changed in the Microsoft Graph API, including the v
 
 For details about known issues with Microsoft Graph APIs, see [Known issues](known-issues.md).
 
+## October 2019
+
+### Conditional Access and Named Locations APIs
+
+|Change type|Version|Description|
+|:---|:---|:---|
+|Addition|beta|Added new entity types:<br/>[namedLocation](/graph/api/resources/namedLocation)<br/>[countryNamedLocation](/graph/api/resources/countryNamedLocation)<br/>[ipNamedLocation](/graph/api/resources/ipNamedLocation)<br/>[conditionalAccessPolicy](/graph/api/resources/conditionalAccessPolicy)<br/>
+|Addition|beta|Added new complex types:<br/>[conditionalAccessSessionControl](/graph/api/resources/conditionalAccessSessionControl)<br/>[applicationEnforcedRestrictionsSessionControl](/graph/api/resources/applicationEnforcedRestrictionsSessionControl)<br/>[cloudAppSecuritySessionControl](/graph/api/resources/cloudAppSecuritySessionControl)<br/>[signInFrequencySessionControl](/graph/api/resources/signInFrequencySessionControl)<br/>[persistentBrowserSessionControl](/graph/api/resources/persistentBrowserSessionControl)<br/>[conditionalAccessSessionControls](/graph/api/resources/conditionalAccessSessionControls)<br/>[ipRange](/graph/api/resources/ipRange)<br/>[iPv4CidrRange](/graph/api/resources/iPv4CidrRange)<br/>[iPv6CidrRange](/graph/api/resources/iPv6CidrRange)<br/>[conditionalAccessApplications](/graph/api/resources/conditionalAccessApplications)<br/>[conditionalAccessUsers](/graph/api/resources/conditionalAccessUsers)<br/>[conditionalAccessPlatforms](/graph/api/resources/conditionalAccessPlatforms)<br/>[conditionalAccessLocations](/graph/api/resources/conditionalAccessLocations)<br/>[conditionalAccessDeviceStates](/graph/api/resources/conditionalAccessDeviceStates)<br/>[conditionalAccessConditions](/graph/api/resources/conditionalAccessConditions)<br/>[conditionalAccessGrantControls](/graph/api/resources/conditionalAccessGrantControls)<br/>
+|Addition|beta|Added new enum types:<br/>[conditionalAccessPolicyState](/graph/api/resources/enums?view=graph-rest-beta#conditionalAccessPolicyState)<br/>[conditionalAccessClientApp](/graph/api/resources/enums?view=graph-rest-beta#conditionalAccessClientApp)<br/>[conditionalAccessGrantControl](/graph/api/resources/enums?view=graph-rest-beta#conditionalAccessGrantControl)<br/>[cloudAppSecuritySessionControlType](/graph/api/resources/enums?view=graph-rest-beta#cloudAppSecuritySessionControlType)<br/>[signinFrequencyType](/graph/api/resources/enums?view=graph-rest-beta#signinFrequencyType)<br/>[persistentBrowserSessionMode](/graph/api/resources/enums?view=graph-rest-beta#persistentBrowserSessionMode)<br/>[conditionalAccessDevicePlatform](/graph/api/resources/enums?view=graph-rest-beta#conditionalAccessDevicePlatform)<br/>
+
 ## September 2019
 
 ### Devices and apps (Microsoft Intune)
