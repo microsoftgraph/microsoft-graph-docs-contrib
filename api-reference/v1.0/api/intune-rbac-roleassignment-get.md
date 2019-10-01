@@ -1,7 +1,7 @@
 ---
 title: "Get roleAssignment"
 description: "Read properties and relationships of the roleAssignment object."
-author: "tfitzmac"
+author: "davidmu1"
 localization_priority: Normal
 ms.prod: "Intune"
 doc_type: apiPageType
@@ -73,6 +73,7 @@ Content-Length: 275
   }
 }
 ```
+
 
 
 
