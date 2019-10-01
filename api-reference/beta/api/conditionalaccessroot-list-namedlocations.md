@@ -145,7 +145,7 @@ The following is an example of the request to get all ipNamedLocations.
 }-->
 
 ```http
-GET https://graph.microsoft.com/beta/conditionalaccess/namedLocations$filter=isof('microsoft.graph.ipNamedLocation')
+GET https://graph.microsoft.com/beta/conditionalaccess/namedLocations?$filter=isof('microsoft.graph.ipNamedLocation')
 ```
 
 ### Response

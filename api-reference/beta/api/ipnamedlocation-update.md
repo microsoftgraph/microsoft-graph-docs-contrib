@@ -44,7 +44,7 @@ In the request body, supply the values for relevant fields that should be update
 | Property     | Type        | Description |
 |:-------------|:------------|:------------|
 |displayName|String|Human-readable name of the location|
-|ipRanges|[ipRange](iprange.md) collection|List of IP address ranges in IPv4 CIDR format (e.g. 1.2.3.4/32) or any allowable IPv6 format from IETF RFC5962|
+|ipRanges|[ipRange](../resources/iprange.md) collection|List of IP address ranges in IPv4 CIDR format (e.g. 1.2.3.4/32) or any allowable IPv6 format from IETF RFC5962|
 |isTrusted|Boolean|True if this location is explicitly trusted|
 
 ## Response
