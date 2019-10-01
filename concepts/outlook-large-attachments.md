@@ -13,17 +13,19 @@ Depending on the size of the file, you can choose one of two ways to attach a fi
 - If the file size is under 4MB, do a single [POST on the attachments navigation property of the message](/graph/api/message-post-attachments?view=graph-rest-beta). The successful `POST` response includes the ID of the file attached to the message.
 - If the file size is between 3MB and 150MB, create an upload session, iteratively use `PUT` to upload ranges of bytes of the file until you have uploaded the entire file. The final successful `PUT` response includes a URL with the attachment ID. 
 
-This article uses an example to illustrate the second approach.
+This article uses an example to illustrate the second approach. The example uses an upload session to add a large file attachment over 3MB (3,483,322 bytes) to a specific message. Upon successfully uploading the entire file, it gets a URL that contains an ID for the file attachment, with which it can do other operations such as getting the file attachment metadata.
 
 ## Step 1: Create an upload session
 
 [Create an upload session](/graph/api/attachment-createuploadsession?view=graph-rest-beta) to attach a file to a message. Specify the file in the input parameter **AttachmentItem**. 
 
-A successful operation returns `HTTP 201 Created` and a new [uploadSession](/graph/api/resources/uploadsession?view=graph-rest-beta) instance, which contains an opague URL that you can use in subsequent `PUT` operations to upload portions of the file. 
+A successful operation returns `HTTP 201 Created` and a new [uploadSession](/graph/api/resources/uploadsession?view=graph-rest-beta) instance, which contains an opaque URL that you can use in subsequent `PUT` operations to upload portions of the file. 
 
-The opague URL, returned in the **uploadUrl** property of the **uploadSession**, is pre-authenticated and contains the appropriate authorization token for subsequent `PUT` queries in the `https://outlook.office.com` domain. That token expires by **expirationDateTime**. Do not customize this URL for the `PUT` operations.
+The opaque URL, returned in the **uploadUrl** property of the **uploadSession**, is pre-authenticated and contains the appropriate authorization token for subsequent `PUT` queries in the `https://outlook.office.com` domain. That token expires by **expirationDateTime**. Do not customize this URL for the `PUT` operations.
 
-The upload session provides a temporary storage location where the bytes of the file are saved until you have uploaded the complete file. 
+The **uploadSession** object in the response also includes the **nextExpectedRanges** property, which indicates the initial upload starting location should be byte 0.
+
+The **uploadSession** provides a temporary storage location where the bytes of the file are saved until you have uploaded the complete file. 
 
 ### Example request: create an upload session
 <!-- {
@@ -72,14 +74,6 @@ To upload the file, or a portion of the file, make a `PUT` request to the **uplo
 
 Specify request headers and request body as described below.
 
-A successful upload returns `HTTP 200 OK` and an **uploadSession** object. Note the following in the response object:
-
-- The **ExpirationDateTime** property remains the same as in the initial **uploadSession** in step 1. 
-- The **NextExpectedRanges** specifies one or more byte ranges, each indicating the starting point of a subsequent `PUT` request:
-
-  - On a successful upload, this property returns the next range to start from, for example, `"NextExpectedRanges":["2097152"]`. 
-  - If a portion of a byte range has not uploaded successfully, this property includes the byte range with the start and end locations, for example, `"NextExpectedRanges":["1998457-2097094"]`.
-
 ### Request headers
 
 | Name       | Type | Description|
@@ -92,7 +86,17 @@ Do not specify an `Authorization` request header. The `PUT` query uses a pre-aut
 
 ### Request body
 
-Specify the actual bytes of the file to be attached, in the location range specified by the `Content-Range` request header.
+Specify the actual bytes of the file to be attached, that are in the location range specified by the `Content-Range` request header.
+
+### Response
+A successful upload returns `HTTP 200 OK` and an **uploadSession** object. Note the following in the response object:
+
+- The **ExpirationDateTime** property remains the same as in the initial **uploadSession** in step 1. 
+- The **NextExpectedRanges** specifies one or more byte ranges, each indicating the starting point of a subsequent `PUT` request:
+
+  - On a successful upload, this property returns the next range to start from, for example, `"NextExpectedRanges":["2097152"]`. 
+  - If a portion of a byte range has not uploaded successfully, this property includes the byte range with the start and end locations, for example, `"NextExpectedRanges":["1998457-2097094"]`.
+- No explicit **uploadUrl** property, because all `PUT` operations of an upload session use the same URL returned when creating the session (step 1).
 
 ### Example request: initial upload
 <!-- {
@@ -188,7 +192,7 @@ HTTP/1.1 204 No content
 
 ## Step 5: Get the file attachment from the message
 
-Using the attachment ID returned in step 4, you can now get the metadata of that file as attached to the message.
+Using the attachment ID returned in step 4, you can now use APIs in the Microsoft Graph domain to get the metadata of that file as attached to the message.
 
 ### Example request: get the file attachment metadata
 
