@@ -1,7 +1,7 @@
 ---
 title: "Create macOSCustomConfiguration"
 description: "Create a new macOSCustomConfiguration object."
-author: "tfitzmac"
+author: "davidmu1"
 localization_priority: Normal
 ms.prod: "Intune"
 doc_type: apiPageType
@@ -99,6 +99,7 @@ Content-Length: 453
   "payload": "cGF5bG9hZA=="
 }
 ```
+
 
 
 

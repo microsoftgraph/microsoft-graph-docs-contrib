@@ -1,7 +1,7 @@
 ---
 title: "managedIOSLobApp resource type"
 description: "Contains properties and inherited properties for Managed iOS Line Of Business apps."
-author: "tfitzmac"
+author: "davidmu1"
 localization_priority: Normal
 ms.prod: "Intune"
 doc_type: resourcePageType
@@ -115,6 +115,7 @@ Here is a JSON representation of the resource.
   "buildNumber": "String"
 }
 ```
+
 
 
 
