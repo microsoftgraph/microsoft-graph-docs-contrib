@@ -1,32 +1,40 @@
 ---
 title: "countryNamedLocation resource type"
-description: "PROVIDE DESCRIPTION HERE"
+description: "Represents an Azure Active Directory named location defined by countries and regions. Named locations are custom rules that define network locations."
 localization_priority: Normal
-author: ""
-ms.prod: ""
-doc_type: "resourcePageType"
+author: "davidmu1"
+ms.prod: "microsoft-identity-platform"
+doc_type: resourcePageType
 ---
 
 # countryNamedLocation resource type
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-PROVIDE DESCRIPTION HERE
+Represents an Azure Active Directory named location defined by countries and regions. Named locations are custom rules that define network locations.
+
+Inherits from [namedLocation](../resources/namedLocation.md)
 
 ## Methods
 
 | Method       | Return Type | Description |
 |:-------------|:------------|:------------|
-| [Get countryNamedLocation](../api/countrynamedlocation-get.md) | [countryNamedLocation](countrynamedlocation.md) | Read properties and relationships of countryNamedLocation object. |
-| [Update](../api/countrynamedlocation-update.md) | [countryNamedLocation](countrynamedlocation.md) | Update countryNamedLocation object. |
-| [Delete](../api/countrynamedlocation-delete.md) | None | Delete countryNamedLocation object. |
+| [List countryNamedLocations](../api/conditionalaccessroot-list-namedlocations.md) | [countryNamedLocation](countryNamedLocation.md) collection | Get all of the countryNamedLocation objects in the organization. |
+| [Get countryNamedLocation](../api/namedlocation-get.md) | [countryNamedLocation](countrynamedlocation.md) | Read properties and relationships of countryNamedLocation object. |
+| [Create countryNamedLocation](../api/conditionalaccessroot-post-namedlocations.md) | [countryNamedLocation](countryNamedLocation.md) | Create a new countryNamedLocation object. |
+| [Update](../api/namedlocation-update.md) | [countryNamedLocation](countrynamedlocation.md) | Update countryNamedLocation object. |
+| [Delete](../api/namedlocation-delete.md) | None | Delete countryNamedLocation object. |
 
 ## Properties
 
 | Property     | Type        | Description |
 |:-------------|:------------|:------------|
-|countriesAndRegions|String collection||
-|includeUnknownCountriesAndRegions|Boolean||
+|countriesAndRegions|String collection|List of countries and/or regions in two-letter format specified by ISO 3166-2|
+|createdDateTime|DateTimeOffset|The Timestamp type represents creation date and time of the location using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 would look like this: `'2014-01-01T00:00:00Z'`|
+|displayName|String|Human-readable name of the location|
+|id|String| Read-only.|
+|includeUnknownCountriesAndRegions|Boolean|True if IP addresses that don't map to a country or region should be included in the named location|
+|modifiedDateTime|DateTimeOffset|The Timestamp type represents last modified date and time of the location using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 would look like this: `'2014-01-01T00:00:00Z'`|
 
 ## Relationships
 
@@ -48,7 +56,11 @@ The following is a JSON representation of the resource.
 ```json
 {
   "countriesAndRegions": ["String"],
-  "includeUnknownCountriesAndRegions": true
+  "createdDateTime": "String (timestamp)",
+  "displayName": "String",
+  "id": "String (identifier)",
+  "includeUnknownCountriesAndRegions": true,
+  "modifiedDateTime": "String (timestamp)"
 }
 ```
 

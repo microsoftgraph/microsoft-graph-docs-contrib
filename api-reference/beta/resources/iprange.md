@@ -1,17 +1,17 @@
 ---
 title: "ipRange resource type"
-description: "PROVIDE DESCRIPTION HERE"
+description: "IP range base class for representing IPV4, IPV6 address ranges"
 localization_priority: Normal
-author: ""
-ms.prod: ""
-doc_type: "resourcePageType"
+author: "davidmu1"
+ms.prod: "microsoft-identity-platform"
+doc_type: resourcePageType
 ---
 
 # ipRange resource type
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-PROVIDE DESCRIPTION HERE
+IP range base class for representing IPV4, IPV6 address ranges
 
 ## Properties
 

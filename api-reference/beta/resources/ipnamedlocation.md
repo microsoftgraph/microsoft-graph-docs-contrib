@@ -1,32 +1,40 @@
 ---
 title: "ipNamedLocation resource type"
-description: "PROVIDE DESCRIPTION HERE"
+description: "Represents an Azure Active Directory named location defined by IP ranges. Named locations are custom rules that define network locations."
 localization_priority: Normal
-author: ""
-ms.prod: ""
-doc_type: "resourcePageType"
+author: "davidmu1"
+ms.prod: "microsoft-identity-platform"
+doc_type: resourcePageType
 ---
 
 # ipNamedLocation resource type
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-PROVIDE DESCRIPTION HERE
+Represents an Azure Active Directory named location defined by IP ranges. Named locations are custom rules that define network locations.
+
+Inherits from [namedLocation](../resources/namedLocation.md)
 
 ## Methods
 
 | Method       | Return Type | Description |
 |:-------------|:------------|:------------|
-| [Get ipNamedLocation](../api/ipnamedlocation-get.md) | [ipNamedLocation](ipnamedlocation.md) | Read properties and relationships of ipNamedLocation object. |
-| [Update](../api/ipnamedlocation-update.md) | [ipNamedLocation](ipnamedlocation.md) | Update ipNamedLocation object. |
-| [Delete](../api/ipnamedlocation-delete.md) | None | Delete ipNamedLocation object. |
+| [List ipNamedLocations](../api/conditionalaccessroot-list-namedlocations.md) | [ipNamedLocation](ipNamedLocation.md) collection | Get all of the ipNamedLocation objects in the organization. |
+| [Get ipNamedLocation](../api/namedlocation-get.md) | [ipNamedLocation](ipnamedlocation.md) | Read properties and relationships of ipNamedLocation object. |
+| [Create ipNamedLocation](../api/conditionalaccessroot-post-namedlocations.md) | [ipNamedLocation](ipNamedLocation.md) | Create a new ipNamedLocation object. |
+| [Update](../api/namedlocation-update.md) | [ipNamedLocation](ipnamedlocation.md) | Update ipNamedLocation object. |
+| [Delete](../api/namedlocation-delete.md) | None | Delete ipNamedLocation object. |
 
 ## Properties
 
 | Property     | Type        | Description |
 |:-------------|:------------|:------------|
-|ipRanges|[ipRange](iprange.md) collection||
-|isTrusted|Boolean||
+|createdDateTime|DateTimeOffset|The Timestamp type represents creation date and time of the location using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 would look like this: `'2014-01-01T00:00:00Z'`|
+|displayName|String|Human-readable name of the location|
+|id|String| Read-only.|
+|ipRanges|[ipRange](iprange.md) collection|List of IP address ranges in IPv4 CIDR format (e.g. 1.2.3.4/32) or any allowable IPv6 format from IETF RFC5962|
+|isTrusted|Boolean|True if this location is explicitly trusted|
+|modifiedDateTime|DateTimeOffset|The Timestamp type represents last modified date and time of the location using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 would look like this: `'2014-01-01T00:00:00Z'`|
 
 ## Relationships
 
@@ -47,8 +55,12 @@ The following is a JSON representation of the resource.
 
 ```json
 {
+  "createdDateTime": "String (timestamp)",
+  "displayName": "String",
+  "id": "String (identifier)",
   "ipRanges": [{"@odata.type": "microsoft.graph.ipRange"}],
-  "isTrusted": true
+  "isTrusted": true,
+  "modifiedDateTime": "String (timestamp)"
 }
 ```
 

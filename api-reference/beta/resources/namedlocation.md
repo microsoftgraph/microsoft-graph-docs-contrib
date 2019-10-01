@@ -1,34 +1,34 @@
 ---
 title: "namedLocation resource type"
-description: "PROVIDE DESCRIPTION HERE"
+description: "Represents an Azure Active Directory named location. Named locations are custom rules that define network locations."
 localization_priority: Normal
-author: ""
-ms.prod: ""
-doc_type: "resourcePageType"
+author: "davidmu1"
+ms.prod: "microsoft-identity-platform"
+doc_type: resourcePageType
 ---
 
 # namedLocation resource type
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-PROVIDE DESCRIPTION HERE
+Represents an Azure Active Directory named location. Named locations are custom rules that define network locations.
 
 ## Methods
 
 | Method       | Return Type | Description |
 |:-------------|:------------|:------------|
+| [List namedLocations](../api/conditionalaccessroot-list-namedlocations.md) | [namedLocation](namedLocation.md) collection | Get all of the namedLocation objects in the organization. |
 | [Get namedLocation](../api/namedlocation-get.md) | [namedLocation](namedlocation.md) | Read properties and relationships of namedLocation object. |
-| [Update](../api/namedlocation-update.md) | [namedLocation](namedlocation.md) | Update namedLocation object. |
 | [Delete](../api/namedlocation-delete.md) | None | Delete namedLocation object. |
 
 ## Properties
 
 | Property     | Type        | Description |
 |:-------------|:------------|:------------|
-|createdDateTime|DateTimeOffset|The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 would look like this: `'2014-01-01T00:00:00Z'`|
-|displayName|String||
-|id|String| Read-only.|
-|modifiedDateTime|DateTimeOffset|The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 would look like this: `'2014-01-01T00:00:00Z'`|
+|createdDateTime|DateTimeOffset|The Timestamp type represents creation date and time of the location using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 would look like this: `'2014-01-01T00:00:00Z'`|
+|displayName|String|Human-readable name of the location|
+|id|String|Read-only.|
+|modifiedDateTime|DateTimeOffset|The Timestamp type represents last modified date and time of the location using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 would look like this: `'2014-01-01T00:00:00Z'`|
 
 ## Relationships
 
