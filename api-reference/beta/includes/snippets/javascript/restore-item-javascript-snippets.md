@@ -10,8 +10,15 @@ const options = {
 
 const client = Client.init(options);
 
-let res = await client.api('/chats/{id}/messages/{id}/hostedContents/{id}/$value')
+const driveItem = {
+  parentReference: {
+    id: "String",
+  },
+  name: "String"
+};
+
+let res = await client.api('/me/drive/items/{item-id}/restore')
 	.version('beta')
-	.get();
+	.post(driveItem);
 
 ```

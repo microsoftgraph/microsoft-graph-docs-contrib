@@ -7,14 +7,21 @@ description: "Automatically generated file. DO NOT MODIFY"
 MSHTTPClient *httpClient = [MSClientFactory createHTTPClientWithAuthenticationProvider:authenticationProvider];
 
 NSString *MSGraphBaseURL = @"https://graph.microsoft.com/beta/";
-NSMutableURLRequest *urlRequest = [NSMutableURLRequest requestWithURL:[NSURL URLWithString:[MSGraphBaseURL stringByAppendingString:@"/teams/{id}/channels"]]];
+NSMutableURLRequest *urlRequest = [NSMutableURLRequest requestWithURL:[NSURL URLWithString:[MSGraphBaseURL stringByAppendingString:@"/teams/{group_id}/channels"]]];
 [urlRequest setHTTPMethod:@"POST"];
 [urlRequest setValue:@"application/json" forHTTPHeaderField:@"Content-Type"];
 
 MSGraphChannel *channel = [[MSGraphChannel alloc] init];
-[channel setDisplayName:@"Architecture Discussion"];
-[channel setDescription:@"This channel is where we debate all future architecture plans"];
-[channel setMembershipType: [MSGraphChannelMembershipType standard]];
+[channel setMembershipType: [MSGraphChannelMembershipType private]];
+[channel setDisplayName:@"My First Private Channel"];
+[channel setDescription:@"This is my first private channels"];
+NSMutableArray *membersList = [[NSMutableArray alloc] init];
+MSGraphConversationMember *members = [[MSGraphConversationMember alloc] init];
+NSMutableArray *rolesList = [[NSMutableArray alloc] init];
+[rolesList addObject: @"owner"];
+[members setRoles:rolesList];
+[membersList addObject: members];
+[channel setMembers:membersList];
 
 NSError *error;
 NSData *channelData = [channel getSerializedDataWithError:&error];
