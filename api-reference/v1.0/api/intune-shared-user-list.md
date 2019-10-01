@@ -1,7 +1,7 @@
 ---
 title: "List users"
 description: "List properties and relationships of the user objects."
-author: "tfitzmac"
+author: "davidmu1"
 localization_priority: Normal
 ms.prod: "intune"
 doc_type: apiPageType
@@ -73,6 +73,7 @@ Content-Length: 136
   ]
 }
 ```
+
 
 
 

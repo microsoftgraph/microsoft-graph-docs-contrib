@@ -1,7 +1,7 @@
 ---
 title: "enablement enum type"
 description: "Not yet documented"
-author: "tfitzmac"
+author: "davidmu1"
 localization_priority: Normal
 ms.prod: "Intune"
 doc_type: enumPageType
@@ -19,6 +19,7 @@ Not yet documented
 |notConfigured|0|Not yet documented|
 |enabled|1|Not yet documented|
 |disabled|2|Not yet documented|
+
 
 
 
