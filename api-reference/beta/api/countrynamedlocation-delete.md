@@ -1,17 +1,17 @@
 ---
-title: "Delete namedLocation"
-description: "Delete namedLocation."
+title: "Delete countryNamedLocation"
+description: "Delete countryNamedLocation."
 localization_priority: Normal
 author: "davidmu1"
 ms.prod: "microsoft-identity-platform"
 doc_type: apiPageType
 ---
 
-# Delete namedLocation
+# Delete countryNamedLocation
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Delete [namedLocation](../resources/namedlocation.md).
+Delete [countryNamedLocation](../resources/countryNamedLocation.md).
 
 ## Permissions
 
@@ -52,11 +52,11 @@ If successful, this method returns `204, No Content` response code. It does not 
 The following is an example of the request.
 <!-- {
   "blockType": "request",
-  "name": "delete_namedlocation"
+  "name": "delete_countrynamedlocation"
 }-->
 
 ```http
-DELETE https://graph.microsoft.com/beta/conditionalaccess/namedLocations/0854951d-5fc0-4eb1-b392-9b2c9d7949c2
+DELETE https://graph.microsoft.com/beta/conditionalaccess/namedLocations/1c4427fd-0885-4a3d-8b23-09a899ffa959
 ```
 
 ### Response
@@ -76,7 +76,7 @@ HTTP/1.1 204 No Content
 2019-02-04 14:57:30 UTC -->
 <!-- {
   "type": "#page.annotation",
-  "description": "Delete namedLocation",
+  "description": "Delete countryNamedLocation",
   "keywords": "",
   "section": "documentation",
   "tocPath": ""

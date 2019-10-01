@@ -1,6 +1,6 @@
 ---
 title: "namedLocation resource type"
-description: "Represents an Azure Active Directory named location. Named locations are custom rules that define network locations."
+description: "This is the base class representing an Azure Active Directory named location. Named locations are custom rules that define network locations."
 localization_priority: Normal
 author: "davidmu1"
 ms.prod: "microsoft-identity-platform"
@@ -11,7 +11,7 @@ doc_type: resourcePageType
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Represents an Azure Active Directory named location. Named locations are custom rules that define network locations.
+This is the base class representing an Azure Active Directory named location. Named locations are custom rules that define network locations.
 
 ## Methods
 
@@ -25,10 +25,10 @@ Represents an Azure Active Directory named location. Named locations are custom 
 
 | Property     | Type        | Description |
 |:-------------|:------------|:------------|
-|createdDateTime|DateTimeOffset|The Timestamp type represents creation date and time of the location using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 would look like this: `'2014-01-01T00:00:00Z'`|
+|createdDateTime|DateTimeOffset|The Timestamp type represents creation date and time of the location using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 would look like this: `'2014-01-01T00:00:00Z'`. Read-only.|
 |displayName|String|Human-readable name of the location|
-|id|String|Read-only.|
-|modifiedDateTime|DateTimeOffset|The Timestamp type represents last modified date and time of the location using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 would look like this: `'2014-01-01T00:00:00Z'`|
+|id|String|Identifier of a namedLocation object. Read-only.|
+|modifiedDateTime|DateTimeOffset|The Timestamp type represents last modified date and time of the location using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 would look like this: `'2014-01-01T00:00:00Z'`. Read-only.|
 
 ## Relationships
 

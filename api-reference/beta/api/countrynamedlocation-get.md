@@ -1,17 +1,17 @@
 ---
-title: "Get namedLocation"
-description: "Retrieve the properties and relationships of namedlocation object."
+title: "Get countryNamedLocation"
+description: "Retrieve the properties and relationships of countrynamedlocation object."
 localization_priority: Normal
 author: "davidmu1"
 ms.prod: "microsoft-identity-platform"
 doc_type: apiPageType
 ---
 
-# Get namedLocation
+# Get countryNamedLocation
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Retrieve the properties and relationships of [namedLocation](../resources/namedlocation.md) object.
+Retrieve the properties and relationships of [countryNamedLocation](../resources/countryNamedLocation.md) object.
 
 ## Permissions
 
@@ -47,7 +47,7 @@ Do not supply a request body for this method.
 
 ## Response
 
-If successful, this method returns a `200 OK` response code and the requested [namedLocation](../resources/namedlocation.md) object in the response body.
+If successful, this method returns a `200 OK` response code and the requested [countryNamedLocation](../resources/countrynamedlocation.md) object in the response body.
 
 ## Examples
 
@@ -56,11 +56,11 @@ If successful, this method returns a `200 OK` response code and the requested [n
 The following is an example of the request.
 <!-- {
   "blockType": "request",
-  "name": "get_namedlocation"
+  "name": "get_countrynamedlocation"
 }-->
 
 ```http
-GET https://graph.microsoft.com/beta/conditionalaccess/namedLocations/0854951d-5fc0-4eb1-b392-9b2c9d7949c2
+GET https://graph.microsoft.com/beta/conditionalaccess/namedLocations/1c4427fd-0885-4a3d-8b23-09a899ffa959
 ```
 
 ### Response
@@ -72,7 +72,7 @@ The following is an example of the response.
 <!-- {
   "blockType": "response",
   "truncated": true,
-  "@odata.type": "microsoft.graph.namedLocation"
+  "@odata.type": "microsoft.graph.countryNamedLocation"
 } -->
 
 ```http
@@ -81,22 +81,16 @@ Content-type: application/json
 
 {
     "@odata.context": "https://graph.microsoft.com/beta/$metadata#namedLocations/$entity",
-    "@odata.type": "#microsoft.graph.ipNamedLocation",
-    "id": "0854951d-5fc0-4eb1-b392-9b2c9d7949c2",
-    "displayName": "Untrusted IP named location",
-    "modifiedDateTime": "2019-09-04T01:11:34.9387578Z",
-    "createdDateTime": "2019-09-04T01:11:34.9387578Z",
-    "isTrusted": false,
-    "ipRanges": [
-        {
-            "@odata.type": "#microsoft.graph.iPv4CidrRange",
-            "cidrAddress": "12.34.221.11/22"
-        },
-        {
-            "@odata.type": "#microsoft.graph.iPv6CidrRange",
-            "cidrAddress": "2001:0:9d38:90d6:0:0:0:0/63"
-        }
-    ]
+    "@odata.type": "#microsoft.graph.countryNamedLocation",
+    "id": "1c4427fd-0885-4a3d-8b23-09a899ffa959",
+    "displayName": "Named location with unknown countries and regions",
+    "modifiedDateTime": "2019-09-04T01:08:02.5249255Z",
+    "createdDateTime": "2019-09-04T01:08:02.5249255Z",
+    "countriesAndRegions": [
+        "US",
+        "GB"
+    ],
+    "includeUnknownCountriesAndRegions": true
 }
 ```
 
@@ -104,7 +98,7 @@ Content-type: application/json
 2019-02-04 14:57:30 UTC -->
 <!-- {
   "type": "#page.annotation",
-  "description": "Get namedLocation",
+  "description": "Get countryNamedLocation",
   "keywords": "",
   "section": "documentation",
   "tocPath": ""

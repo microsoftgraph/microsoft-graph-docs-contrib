@@ -1,17 +1,17 @@
 ---
-title: "Update namedlocation"
-description: "Update the properties of namedlocation object."
+title: "Update countrynamedlocation"
+description: "Update the properties of countrynamedlocation object."
 localization_priority: Normal
 author: "davidmu1"
 ms.prod: "microsoft-identity-platform"
 doc_type: apiPageType
 ---
 
-# Update namedlocation
+# Update countrynamedlocation
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Update the properties of [namedLocation](../resources/namedlocation.md) object.
+Update the properties of [countryNamedLocation](../resources/countryNamedLocation.md) object.
 
 ## Permissions
 
@@ -19,7 +19,7 @@ One of the following permissions is required to call this API. To learn more, in
 
 | Permission type                        | Permissions (from least to most privileged) |
 |:---------------------------------------|:--------------------------------------------|
-| Delegated (work or school account)     | Not supported. |
+| Delegated (work or school account)     | Policy.ReadWrite.ConditionalAccess, Directory.AccessAsUser.All |
 | Delegated (personal Microsoft account) | Not supported. |
 | Application                            | Not supported. |
 
@@ -43,13 +43,13 @@ In the request body, supply the values for relevant fields that should be update
 
 | Property     | Type        | Description |
 |:-------------|:------------|:------------|
-|createdDateTime|DateTimeOffset||
-|displayName|String||
-|modifiedDateTime|DateTimeOffset||
+|countriesAndRegions|String collection|List of countries and/or regions in two-letter format specified by ISO 3166-2|
+|displayName|String|Human-readable name of the location|
+|includeUnknownCountriesAndRegions|Boolean|True if IP addresses that don't map to a country or region should be included in the named location|
 
 ## Response
 
-If successful, this method returns a `200 OK` response code and an updated [namedLocation](../resources/namedlocation.md) object in the response body.
+If successful, this method returns a `204 No Content` response code. It does not return anything in the response body.
 
 ## Examples
 
@@ -58,17 +58,21 @@ If successful, this method returns a `200 OK` response code and an updated [name
 The following is an example of the request.
 <!-- {
   "blockType": "request",
-  "name": "update_namedlocation"
+  "name": "update_countrynamedlocation"
 }-->
 
 ```http
-PATCH https://graph.microsoft.com/beta/conditionalaccess/namedLocations/{id}
+PATCH https://graph.microsoft.com/beta/conditionalaccess/namedLocations/1c4427fd-0885-4a3d-8b23-09a899ffa959
 Content-type: application/json
 
 {
-  "displayName": "displayName-value",
-  "createdDateTime": "datetime-value",
-  "modifiedDateTime": "datetime-value"
+    "@odata.type": "#microsoft.graph.countryNamedLocation",
+    "displayName": "Updated named location without unknown countries and regions",
+    "countriesAndRegions": [
+        "CA",
+        "IN"
+    ],
+    "includeUnknownCountriesAndRegions": false
 }
 ```
 
@@ -81,26 +85,18 @@ The following is an example of the response.
 <!-- {
   "blockType": "response",
   "truncated": true,
-  "@odata.type": "microsoft.graph.namedLocation"
+  "@odata.type": "microsoft.graph.countryNamedLocation"
 } -->
 
 ```http
-HTTP/1.1 200 OK
-Content-type: application/json
-
-{
-  "id": "id-value",
-  "displayName": "displayName-value",
-  "createdDateTime": "datetime-value",
-  "modifiedDateTime": "datetime-value"
-}
+HTTP/1.1 204 No Content
 ```
 
 <!-- uuid: 16cd6b66-4b1a-43a1-adaf-3a886856ed98
 2019-02-04 14:57:30 UTC -->
 <!-- {
   "type": "#page.annotation",
-  "description": "Update namedlocation",
+  "description": "Update countrynamedlocation",
   "keywords": "",
   "section": "documentation",
   "tocPath": ""

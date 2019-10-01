@@ -1,17 +1,17 @@
 ---
-title: "Get namedLocation"
-description: "Retrieve the properties and relationships of namedlocation object."
+title: "Get ipNamedLocation"
+description: "Retrieve the properties and relationships of ipnamedlocation object."
 localization_priority: Normal
 author: "davidmu1"
 ms.prod: "microsoft-identity-platform"
 doc_type: apiPageType
 ---
 
-# Get namedLocation
+# Get ipNamedLocation
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Retrieve the properties and relationships of [namedLocation](../resources/namedlocation.md) object.
+Retrieve the properties and relationships of [ipNamedLocation](../resources/ipNamedLocation.md) object.
 
 ## Permissions
 
@@ -47,7 +47,7 @@ Do not supply a request body for this method.
 
 ## Response
 
-If successful, this method returns a `200 OK` response code and the requested [namedLocation](../resources/namedlocation.md) object in the response body.
+If successful, this method returns a `200 OK` response code and the requested [ipNamedLocation](../resources/ipnamedlocation.md) object in the response body.
 
 ## Examples
 
@@ -56,7 +56,7 @@ If successful, this method returns a `200 OK` response code and the requested [n
 The following is an example of the request.
 <!-- {
   "blockType": "request",
-  "name": "get_namedlocation"
+  "name": "get_ipnamedlocation"
 }-->
 
 ```http
@@ -72,7 +72,7 @@ The following is an example of the response.
 <!-- {
   "blockType": "response",
   "truncated": true,
-  "@odata.type": "microsoft.graph.namedLocation"
+  "@odata.type": "microsoft.graph.ipNamedLocation"
 } -->
 
 ```http
@@ -104,7 +104,7 @@ Content-type: application/json
 2019-02-04 14:57:30 UTC -->
 <!-- {
   "type": "#page.annotation",
-  "description": "Get namedLocation",
+  "description": "Get ipNamedLocation",
   "keywords": "",
   "section": "documentation",
   "tocPath": ""

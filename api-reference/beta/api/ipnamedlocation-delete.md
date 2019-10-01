@@ -1,17 +1,17 @@
 ---
-title: "Delete namedLocation"
-description: "Delete namedLocation."
+title: "Delete ipNamedLocation"
+description: "Delete ipNamedLocation."
 localization_priority: Normal
 author: "davidmu1"
 ms.prod: "microsoft-identity-platform"
 doc_type: apiPageType
 ---
 
-# Delete namedLocation
+# Delete ipNamedLocation
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Delete [namedLocation](../resources/namedlocation.md).
+Delete [ipNamedLocation](../resources/ipNamedLocation.md).
 
 ## Permissions
 
@@ -52,7 +52,7 @@ If successful, this method returns `204, No Content` response code. It does not 
 The following is an example of the request.
 <!-- {
   "blockType": "request",
-  "name": "delete_namedlocation"
+  "name": "delete_ipnamedlocation"
 }-->
 
 ```http
@@ -76,7 +76,7 @@ HTTP/1.1 204 No Content
 2019-02-04 14:57:30 UTC -->
 <!-- {
   "type": "#page.annotation",
-  "description": "Delete namedLocation",
+  "description": "Delete ipNamedLocation",
   "keywords": "",
   "section": "documentation",
   "tocPath": ""
