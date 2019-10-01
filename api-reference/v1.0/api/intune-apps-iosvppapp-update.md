@@ -1,7 +1,7 @@
 ---
 title: "Update iosVppApp"
 description: "Update the properties of a iosVppApp object."
-author: "tfitzmac"
+author: "davidmu1"
 localization_priority: Normal
 ms.prod: "Intune"
 doc_type: apiPageType
@@ -168,6 +168,7 @@ Content-Length: 1394
   "bundleId": "Bundle Id value"
 }
 ```
+
 
 
 
