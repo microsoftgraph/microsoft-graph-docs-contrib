@@ -28,7 +28,7 @@ One of the following permissions is required to call this API. To learn more, in
 <!-- { "blockType": "ignored" } -->
 
 ```http
-GET /informationprotection/core/labels/{id}
+GET /informationprotection/policy/labels/{id}
 ```
 
 ## Optional query parameters
@@ -60,7 +60,7 @@ The following is an example of the request.
 }-->
 
 ```http
-GET https://graph.microsoft.com/beta/informationprotection/core/labels/{id}
+GET https://graph.microsoft.com/beta/me/informationprotection/policy/labels/{id}
 ```
 
 ### Response
@@ -80,7 +80,7 @@ HTTP/1.1 200 OK
 Content-type: application/json
 
 {
-    "@odata.context": "https://graph.microsoft.com/beta/$metadata#users('1e36d926-d716-4197-ba86-a6e18eb910b9')/informationProtection/core/labels/$entity",
+    "@odata.context": "https://graph.microsoft.com/beta/$metadata#users('1e36d926-d716-4197-ba86-a6e18eb910b9')/informationProtection/policy/labels/$entity",
     "id": "4662f9a3-dd50-4a20-b984-a7be82e0e79c",
     "name": "LabelWithFooterAndHeaderActions_Tests",
     "description": "",

@@ -17,7 +17,7 @@ The [evaluateApplication](../api/informationprotectionlabel-evaluateApplication.
 
 | Property       | Type              | Description                           |
 | :------------- | :---------------- | :------------------------------------ |
-| uiElementNames | String collection | The name of the UI element where the footer to be removed. |
+| uiElementNames | String collection | The name of the UI element of footer to be removed. |
 
 ## JSON representation
 

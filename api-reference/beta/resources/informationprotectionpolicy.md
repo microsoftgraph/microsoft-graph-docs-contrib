@@ -1,5 +1,5 @@
 ---
-title: "informationProtectionCore resource type"
+title: "informationProtectionPolicy resource type"
 description: "PROVIDE DESCRIPTION HERE"
 localization_priority: Normal
 author: "tommoser"
@@ -7,7 +7,7 @@ ms.prod: "microsoft.informationprotection"
 doc_type: "resourcePageType"
 ---
 
-# informationProtectionCore resource type
+# informationProtectionPolicy resource type
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
@@ -17,10 +17,9 @@ PROVIDE DESCRIPTION HERE
 
 | Method       | Return Type | Description |
 |:-------------|:------------|:------------|
-| [Get informationProtectionCore](../api/informationprotectioncore-get.md) | [informationProtectionCore](informationprotectioncore.md) | Read properties and relationships of informationProtectionCore object. |
-| [Create informationProtectionLabel](../api/informationprotectioncore-post-labels.md) | [informationProtectionLabel](informationprotectionlabel.md) | Create a new informationProtectionLabel by posting to the labels collection. |
-| [List labels](../api/informationprotectioncore-list-labels.md) | [informationProtectionLabel](informationprotectionlabel.md) collection | Get a informationProtectionLabel object collection. |
-| [Delete](../api/informationprotectioncore-delete.md) | None | Delete informationProtectionCore object. |
+| [Get informationProtectionPolicy](../api/informationProtectionPolicy-get.md) | [informationProtectionPolicy](informationProtectionPolicy.md) | Read properties and relationships of informationProtectionPolicy object. |
+| [Create informationProtectionLabel](../api/informationProtectionPolicy-post-labels.md) | [informationProtectionLabel](informationprotectionlabel.md) | Create a new informationProtectionLabel by posting to the labels collection. |
+| [List labels](../api/informationProtectionPolicy-list-labels.md) | [informationProtectionLabel](informationprotectionlabel.md) collection | Get a informationProtectionLabel object collection. |
 
 ## Properties
 
@@ -43,7 +42,7 @@ The following is a JSON representation of the resource.
   "optionalProperties": [
 
   ],
-  "@odata.type": "microsoft.graph.informationProtectionCore",
+  "@odata.type": "microsoft.graph.informationProtectionPolicy",
   "baseType": "",
   "keyProperty": "id"
 }-->
@@ -58,7 +57,7 @@ The following is a JSON representation of the resource.
 2019-02-04 14:57:30 UTC -->
 <!-- {
   "type": "#page.annotation",
-  "description": "informationProtectionCore resource",
+  "description": "informationProtectionPolicy resource",
   "keywords": "",
   "section": "documentation",
   "tocPath": ""

@@ -28,7 +28,8 @@ One of the following permissions is required to call this API. To learn more, in
 <!-- { "blockType": "ignored" } -->
 
 ```http
-GET /informationprotection/core/labels
+GET me/informationprotection/policy/labels
+GET /informationprotection/policy/labels
 ```
 
 ## Optional query parameters
@@ -60,7 +61,7 @@ The following is an example of the request.
 }-->
 
 ```http
-GET https://graph.microsoft.com/beta/informationprotection/core/labels
+GET https://graph.microsoft.com/beta/me/informationprotection/policy/labels
 ```
 
 ### Response
@@ -81,7 +82,7 @@ HTTP/1.1 200 OK
 Content-type: application/json
 
 {
-  "@odata.context": "https://graph.microsoft.com/beta/$metadata#users('1e36d926-d716-4197-ba86-a6e18eb910b9')/informationProtection/core/labels",
+  "@odata.context": "https://graph.microsoft.com/beta/$metadata#users('1e36d926-d716-4197-ba86-a6e18eb910b9')/informationProtection/policy/labels",
   "value": [
       {
           "id": "3a80e051-487c-40d4-b491-73ad25d997e6",

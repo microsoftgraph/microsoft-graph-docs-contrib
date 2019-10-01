@@ -1,6 +1,6 @@
 ---
 title: "justifyAction resource type"
-description: "Represents that justification is required for the specified operation."
+description: "Indicates that a justification is required for the specified operation."
 localization_priority: Normal
 author: "tommoser"
 ms.prod: "microsoft.informationprotection"

@@ -46,7 +46,7 @@ One of the following permissions is required to call this API. To learn more, in
 <!-- { "blockType": "ignored" } -->
 
 ```http
-POST /informationprotection/core/labels/{id}/evaluateClassificationResults
+POST /informationprotection/policy/labels/{id}/evaluateClassificationResults
 ```
 
 ## Request headers
@@ -81,51 +81,51 @@ The following is an example of the request.
 }-->
 
 ```http
-POST https://graph.microsoft.com/beta/informationprotection/core/labels/{id}/evaluateClassificationResults
+POST https://graph.microsoft.com/beta/informationprotection/policy/labels/{id}/evaluateClassificationResults
 Content-type: application/json
 
 {
     "contentInfo": {
-        "@odata.type": "#microsoft.informationProtection.contentInfo",
-        "format@odata.type": "#microsoft.informationProtection.contentFormat",
+        "@odata.type": "#microsoft.graph.contentInfo",
+        "format@odata.type": "#microsoft.graph.contentFormat",
         "format": "file",
         "identifier": null,
-        "state@odata.type": "#microsoft.informationProtection.contentState",
+        "state@odata.type": "#microsoft.graph.contentState",
         "state": "rest",
-        "metadata@odata.type": "#Collection(microsoft.informationProtection.keyValuePair)",
+        "metadata@odata.type": "#Collection(microsoft.graph.keyValuePair)",
         "metadata": [
             {
-                "@odata.type": "#microsoft.informationProtection.keyValuePair",
+                "@odata.type": "#microsoft.graph.keyValuePair",
                 "name": "MSIP_Label_3a80e051-487c-40d4-b491-73ad25d997e6_Enabled",
                 "value": "True"
             },
             {
-                "@odata.type": "#microsoft.informationProtection.keyValuePair",
+                "@odata.type": "#microsoft.graph.keyValuePair",
                 "name": "MSIP_Label_3a80e051-487c-40d4-b491-73ad25d997e6_Method",
                 "value": "Standard"
             },
             {
-                "@odata.type": "#microsoft.informationProtection.keyValuePair",
+                "@odata.type": "#microsoft.graph.keyValuePair",
                 "name": "MSIP_Label_3a80e051-487c-40d4-b491-73ad25d997e6_SetDate",
                 "value": "1/1/0001 12:00:00 AM"
             },
             {
-                "@odata.type": "#microsoft.informationProtection.keyValuePair",
+                "@odata.type": "#microsoft.graph.keyValuePair",
                 "name": "MSIP_Label_3a80e051-487c-40d4-b491-73ad25d997e6_SiteId",
                 "value": "cfa4cf1d-a337-4481-aa99-19d8f3d63f7c"
             },
             {
-                "@odata.type": "#microsoft.informationProtection.keyValuePair",
+                "@odata.type": "#microsoft.graph.keyValuePair",
                 "name": "MSIP_Label_3a80e051-487c-40d4-b491-73ad25d997e6_Name",
                 "value": "General"
             },
             {
-                "@odata.type": "#microsoft.informationProtection.keyValuePair",
+                "@odata.type": "#microsoft.graph.keyValuePair",
                 "name": "MSIP_Label_3a80e051-487c-40d4-b491-73ad25d997e6_ContentBits",
                 "value": "0"
             },
             {
-                "@odata.type": "#microsoft.informationProtection.keyValuePair",
+                "@odata.type": "#microsoft.graph.keyValuePair",
                 "name": "MSIP_Label_3a80e051-487c-40d4-b491-73ad25d997e6_ActionId",
                 "value": "00000000-0000-0000-0000-000000000000"
             }

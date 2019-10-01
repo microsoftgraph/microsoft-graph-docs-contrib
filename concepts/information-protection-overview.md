@@ -6,9 +6,9 @@ localization_priority: Normal
 ms.prod: "microsoft.informationprotection"
 ---
 
-# Microsoft Information Protection labeling overview
+# Information Protection overview
 
-Microsoft Information Protection labeling helps organizations to classify, label, and protect data based on [sensitivity](https://docs.microsoft.com/Office365/SecurityCompliance/sensitivity-labels). 
+Microsoft Information Protection helps organizations to classify, label, and protect data based on [sensitivity](https://docs.microsoft.com/Office365/SecurityCompliance/sensitivity-labels). 
 
 Organizations use labels to aid:
 
@@ -22,9 +22,9 @@ Organizations use labels to aid:
 
 More than a million organizations with tens of millions of users use Microsoft Information Protection to classify, label, and protect data.  In addition to Office 365, various data loss prevention (DLP) services, business intelligence platforms, and software-as-a-service (SaaS) solutions have [embraced Microsoft Information Protection](https://www.microsoft.com/en-us/security/technology/information-protection) labeling to provide a richer data classification experience. 
 
-### Label information in line of business applications
+### Label information in line-of-business applications
 
-Enterprise developers use Microsoft Information Protection to label and protect sensitive customer information on export from line of business applications to ensure the safety of customer information. Connecting your applications to the Microsoft Information Protection ecosystem enables applications to apply, update, and delete [sensitivity labels](https://docs.microsoft.com/Office365/SecurityCompliance/sensitivity-labels) in your own application data, without the overhead of integrating a full SDK.
+Enterprise developers use Microsoft Information Protection to label and protect sensitive customer information on export from line-of-business applications to ensure the safety of customer information. Connecting your applications to the Microsoft Information Protection ecosystem enables applications to apply, update, and delete [sensitivity labels](https://docs.microsoft.com/Office365/SecurityCompliance/sensitivity-labels) in your own application data, without the overhead of integrating a full SDK.
 
 ## What can I do with Microsoft Information Protection label APIs in Microsoft Graph? 
 
@@ -38,15 +38,7 @@ By providing information on the existing and desired sensitivity label, the REST
 
 ### Interpret labels applied to data
 
-Applications consuming information already that already has [sensitivity label metadata](/graph/api/resources/metadataaction.md?view=graph-rest-beta) applied can use the **extractLabel** API to resolve label metadata to a Microsoft Information Protection [sensitivity label](/graph/api/resources/informationprotectionlabel.md?view=graph-rest-beta). Use the label to identify the actions that should be taken by the application when handling or consuming the labeled data. 
-
-## Explore the Microsoft Information Protection APIs
-
-Use the Microsoft Graph Explorer to try out the Microsoft Information Protection APIs with your own organizational labels.
-
-To make Microsoft Information Protection API calls from the Graph Explorer, choose Show more samples in the column on the left. Use the menu to toggle OneNote On. You will also need to enable the appropriate permissions. Under your account name in the menu on the left, choose modify permissions. For more information about OneNote permissions, see Notes permissions.
-
-To get started with Microsoft Information Protection APIs in Microsoft Graph, see the Microsoft Information Protection reference content.
+Applications consuming information that already has [sensitivity label metadata](/graph/api/resources/metadataaction.md?view=graph-rest-beta) applied can use the **extractLabel** API to resolve label metadata to a Microsoft Information Protection [sensitivity label](/graph/api/resources/informationprotectionlabel.md?view=graph-rest-beta). Use the label to identify the actions that should be taken by the application when handling or consuming the labeled data. 
 
 ## API reference
 
@@ -56,4 +48,4 @@ Looking for the API reference for this service?
 
 ## Next steps
 
-- Select and try Information Protection labeling sample queries in [Graph Explorer](https://developer.microsoft.com/graph/graph-explorer). Choose **Show more samples** in the column on the left. Use the menu to turn on **Information Protection**.
+- Select and try Information Protection labeling sample queries in [Graph Explorer](https://developer.microsoft.com/graph/graph-explorer). Choose **Show more samples** in the column on the left. Use the menu to turn on **Microsoft Information Protection**.
