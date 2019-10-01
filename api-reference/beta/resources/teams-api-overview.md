@@ -89,6 +89,9 @@ Similarly, if the `userId` in the URL or payload is expressed as a UPN rather th
 When the slower path is taken, if a current team member or owner is signed in to the Microsoft Teams application/website, the change will be reflected within an hour.
 If none of those users are signed in to the Microsoft Teams application/website, the change will not be reflected until an hour after one of them signs in.
 
+> [!Note] 
+> Tenant guests are always processed via the slow path.
+
 ## See also
 
 [Microsoft Teams API overview](/graph/teams-concept-overview)
