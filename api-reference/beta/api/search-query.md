@@ -9,7 +9,7 @@ doc_type: "apiPageType"
 
 # search: query
 
-PROVIDE DESCRIPTION HERE
+Executes the query specified in the request body. The search results are provided in the response.
 
 ## Permissions
 
