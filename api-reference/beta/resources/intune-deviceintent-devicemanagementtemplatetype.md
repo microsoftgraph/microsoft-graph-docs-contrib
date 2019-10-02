@@ -23,6 +23,7 @@ Template type
 |advancedThreatProtectionSecurityBaseline|2|Advances Threat Protection security baseline template|
 |deviceConfiguration|3|Device configuration template|
 |custom|4|Custom admin defined template|
+|securityTemplate|5|Templates containing specific security focused settings|
 
 
 

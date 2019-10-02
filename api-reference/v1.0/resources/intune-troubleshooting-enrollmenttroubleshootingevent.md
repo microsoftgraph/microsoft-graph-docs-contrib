@@ -1,7 +1,7 @@
 ---
 title: "enrollmentTroubleshootingEvent resource type"
 description: "Event representing an enrollment failure."
-author: "tfitzmac"
+author: "davidmu1"
 localization_priority: Normal
 ms.prod: "Intune"
 doc_type: resourcePageType
@@ -67,6 +67,7 @@ Here is a JSON representation of the resource.
   "failureReason": "String"
 }
 ```
+
 
 
 
