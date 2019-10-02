@@ -2,6 +2,8 @@
 title: "MuteParticipantOperation resource type"
 description: "The muteParticipant operation to obtain the result of the mute action."
 author: "VinodRavichandran"
+localization_priority: Normal
+doc_type: resourcePageType
 ---
 
 # MuteParticipantOperation resource type

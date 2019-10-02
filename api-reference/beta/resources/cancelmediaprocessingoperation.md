@@ -2,6 +2,8 @@
 title: "CancelMediaProcessingOperation resource type"
 description: "The cancelMediaProcessing operation to obtain the result of the cancelMediaProcessing action."
 author: "VinodRavichandran"
+localization_priority: Normal
+doc_type: resourcePageType
 ---
 
 # CancelMediaProcessingOperation resource type
@@ -14,7 +16,7 @@ author: "VinodRavichandran"
 | :----------------------------- | :---------------------------| :-------------------------------------------------------------------------------------------------------------------------------------------------|
 | all                            | Boolean                     | The flag indicating whether to stop all operations or current.                                                                                    |
 | clientContext                  | String                      | The client context.                                                                                                                               |
-| id                             | String                      | The server operation id. Read-only. Server generated.                                                                                             |
+| id                             | String                      | The server operation ID. Read-only. Server generated.                                                                                             |
 | resultInfo                     | [resultInfo](resultinfo.md) | The result information.  Read-only. Server generated.                                                                                             |
 | status                         | String                      | Possible values are: `notStarted`, `running`, `completed`, `failed`. Read-only. Server generated.                                                 |
 

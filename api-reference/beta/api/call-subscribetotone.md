@@ -31,7 +31,7 @@ One of the following permissions is required to call this API. To learn more, in
 POST /app/calls/{id}/subscribeToTone
 POST /communications/calls/{id}/subscribeToTone
 ```
-> **Note:** API starting with /app will be deprecated and be replaced with API starting with /communications.
+> **Note:** The `/app` path will be deprecated. Going forward, use the `/communications` path.
 
 ## Request headers
 | Name          | Description               |

@@ -13,7 +13,7 @@ doc_type: apiPageType
 
 Invite participants to the active call.
 
-For further information on how to handle operations, see [commsOperation](../resources/commsOperation.md).
+For more information about how to handle operations, see [commsoperation](../resources/commsoperation.md).
 
 >**Note:** This API is only supported for multiparty calls.
 
@@ -32,7 +32,7 @@ One of the following permissions is required to call this API. To learn more, in
 POST /app/calls/{id}/participants/invite
 POST /communications/calls/{id}/participants/invite
 ```
-> **Note:** API starting with /app will be deprecated and be replaced with API starting with /communications.
+> **Note:** The `/app` path will be deprecated. Going forward, use the `/communications` path.
 
 ## Request headers
 | Name          | Description               |

@@ -32,7 +32,7 @@ One of the following permissions is required to call this API. To learn more, in
 POST /app/calls/{id}/reject
 POST /communications/calls/{id}/reject
 ```
-> **Note:** API starting with /app will be deprecated and be replaced with API starting with /communications.
+> **Note:** The `/app` path will be deprecated. Going forward, use the `/communications` path.
 
 ## Request headers
 | Name          | Description               |

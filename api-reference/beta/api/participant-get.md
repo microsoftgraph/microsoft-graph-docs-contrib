@@ -28,7 +28,7 @@ One of the following permissions is required to call this API. To learn more, in
 GET /app/calls/{id}/participants/{id}
 GET /communications/calls/{id}/participants/{id}
 ```
-> **Note:** API starting with /app will be deprecated and be replaced with API starting with /communications.
+> **Note:** The `/app` path will be deprecated. Going forward, use the `/communications` path.
 
 ## Optional query parameters
 This method supports the [OData query parameters](/graph/query-parameters) to help customize the response.

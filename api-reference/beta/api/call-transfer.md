@@ -13,8 +13,7 @@ doc_type: apiPageType
 
 Transfer an active call.
 
-> **Note:** This is only supported for peer-to-peer calls to make transfer.
-> **Note:** This is only supported if both the transferee and transfer target are Microsoft Teams users which belong to same tenant. To learn more about transferor, transferee and transfer target, see [RFC 5589](https://tools.ietf.org/html/rfc5589#section-2).
+> **Note:** This is only supported for peer-to-peer calls to make transfer. This is only supported if both the transferee and transfer target are Microsoft Teams users which belong to same tenant. To learn more about transferor, transferee and transfer target, see [RFC 5589](https://tools.ietf.org/html/rfc5589#section-2).
 
 
 ## Permissions
@@ -32,7 +31,7 @@ One of the following permissions is required to call this API. To learn more, in
 POST /app/calls/{id}/transfer
 POST /communications/calls/{id}/transfer
 ```
-> **Note:** API starting with /app will be deprecated and be replaced with API starting with /communications.
+> **Note:** The `/app` path will be deprecated. Going forward, use the `/communications` path.
 
 ## Request headers
 | Name          | Description               |
@@ -242,9 +241,7 @@ Content-Type: application/json
 
 ##### Notification - established (call transfer failed)
 
-> **Note:** When call transfer failed, there will be 2 notifications to indicate call back to established and media back to active.
-
-> **Note:** Call goes back to established may happen before or after media state audio active.
+> **Note:** When call transfer failed, there will be two notifications to indicate call back to established and media back to active. Call goes back to established may happen before or after media state audio active.
 
 ```http
 POST https://bot.contoso.com/api/calls
@@ -486,9 +483,7 @@ Content-Type: application/json
 
 ##### Notification - established (call transfer failed)
 
-> **Note:** When call transfer failed, there will be 2 notifications to indicate call back to established and media back to active.
-
-> **Note:** Call goes back to established may happen before or after media state audio active.
+> **Note:** When call transfer failed, there will be two notifications to indicate call back to established and media back to active. Call goes back to established may happen before or after media state audio active.
 
 ```http
 POST https://bot.contoso.com/api/calls

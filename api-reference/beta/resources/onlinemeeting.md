@@ -29,7 +29,7 @@ Captures information about the meeting, including the join URL, the attendees li
 | chatInfo                  | [chatInfo](chatinfo.md)                                | The chat related information associated with this meeting. |
 | creationDateTime          | DateTime                                               | Meeting creation time in UTC. Readonly. Server generated. |
 | endDateTime               | DateTime                                               | Meeting end time in UTC, as was set when the meeting was created. |
-| entryExitAnnouncement     | Boolean                                                | The attendance announcements status for the online meeting. When attendance announcements are enabled, the online meeting will announce the names of the participantswho join the meeting through audio. |
+| entryExitAnnouncement     | Boolean                                                | The attendance announcements status for the online meeting. When attendance announcements are enabled, the online meeting will announce the names of the participants who join the meeting through audio. |
 | expirationDateTime        | DateTime                                               | Expiry time of the meeting in UTC after which the online meeting will be deleted automatically.Readonly, Server generated. Current default is 180 days for scheduled meetings. |
 | id                        | String                                                 | The ID associated with the online meeting. Used in a GET HTTP request as the ID. Read-only. Server generated. |
 | isCancelled               | Boolean                                                | Value indicating, Whether the meeting has been canceled. |
@@ -39,7 +39,7 @@ Captures information about the meeting, including the join URL, the attendees li
 | startDateTime             | DateTime                                               | Meeting start time in UTC, as was set when the meeting was created. |
 | subject                   | String                                                 | The subject of the online meeting. |
 | capabilities              | String collection                                      | The list of meeting capabilities. Possible values are: `questionAndAnswer`. |
-| videoTeleconferenceId     | String                                                 | The videio teleconferencing id. |
+| videoTeleconferenceId     | String                                                 | The videio teleconferencing ID. |
 
 
 ## Relationships
