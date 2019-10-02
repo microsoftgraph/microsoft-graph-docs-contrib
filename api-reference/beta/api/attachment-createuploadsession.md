@@ -1,6 +1,6 @@
 ---
 title: "attachment: createUploadSession"
-description: "Create an upload session that allows an app to iteratively upload ranges of a file so to attach the file to the specified message."
+description: "Create an upload session to iteratively upload ranges of a file so as to attach the file to the specified message."
 localization_priority: Normal
 author: "angelgolfer-ms"
 ms.prod: "outlook"
@@ -11,18 +11,18 @@ doc_type: "apiPageType"
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Create an upload session that allows an app to iteratively upload ranges of a file so to attach the file to the specified [message](../resources/message.md).
+Create an upload session that allows an app to iteratively uploade ranges of a file, so as to attach the file to the specified [message](../resources/message.md).
 
-As part of the response, this action returns an upload URL that you can use in subsequent sequential `PUT` queries. Request headers for each `PUT` operation let you specify the exact range of bytes to be uploaded. This allows the transfer to be resumed if a connection is dropped while the upload is in progress. 
+Use this approach to attach files of sizes between 3MB and 150MB to a **message**. To attach files of sizes under 4MB, simply [POST on the attachments navigation property](message-post-attachments.md). 
 
-Files must be between 3MB and 150MB in size.
+As part of the response, this action returns an upload URL that you can use in subsequent sequential `PUT` queries. Request headers for each `PUT` operation let you specify the exact range of bytes to be uploaded. This allows transfer to be resumed, in case the network connection is dropped during upload. 
 
 The following are the steps to attach a file using an upload session:
 
 1. Create an upload session
 2. Within that upload session, iteratively upload ranges of bytes (up to 4 MB each time) until all the bytes of the file have been uploaded, and the file is attached to the specified message
 3. Save the ID for the attachment for future access
-4. Delete the upload session 
+4. Optional: Delete the upload session 
 
 See [attach large files to Outlook messages](/graph/outlook-large-attachments) for an example.
 

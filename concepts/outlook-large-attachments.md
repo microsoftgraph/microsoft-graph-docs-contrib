@@ -6,26 +6,24 @@ localization_priority: Priority
 ms.prod: "outlook"
 ---
 
-# Attach large files to Outlook messages (preview)
+# Attach large files to Outlook messages as attachments (preview)
 
 Depending on the size of the file, you can choose one of two ways to attach a file to a [message](/graph/api/resources/message?view=graph-rest-beta):
 
-- If the file size is under 4MB, do a single [POST on the attachments navigation property of the message](/graph/api/message-post-attachments?view=graph-rest-beta). The successful `POST` response includes the ID of the file attached to the message.
-- If the file size is between 3MB and 150MB, create an upload session, iteratively use `PUT` to upload ranges of bytes of the file until you have uploaded the entire file. The final successful `PUT` response includes a URL with the attachment ID. 
+- If the file size is under 4MB, you can do a single [POST on the attachments navigation property of the message](/graph/api/message-post-attachments?view=graph-rest-beta). The successful `POST` response includes the ID of the file attached to the message.
+- If the file size is between 3MB and 150MB, create an upload session, iteratively use `PUT` to upload ranges of bytes of the file until you have uploaded the entire file. A header in the final successful `PUT` response includes a URL with the attachment ID. 
 
-This article uses an example to illustrate the second approach. The example uses an upload session to add a large file attachment over 3MB (3,483,322 bytes) to a specific message. Upon successfully uploading the entire file, it gets a URL that contains an ID for the file attachment, with which it can do other operations such as getting the file attachment metadata.
+This article uses an example to illustrate the second approach. The example creates and uses an upload session to add a large file attachment (of size over 3MB) to a specific message. Upon successfully uploading the entire file, it gets a URL that contains an ID for the file attachment, with which it can do other operations such as getting the file attachment metadata.
 
 ## Step 1: Create an upload session
 
 [Create an upload session](/graph/api/attachment-createuploadsession?view=graph-rest-beta) to attach a file to a message. Specify the file in the input parameter **AttachmentItem**. 
 
-A successful operation returns `HTTP 201 Created` and a new [uploadSession](/graph/api/resources/uploadsession?view=graph-rest-beta) instance, which contains an opaque URL that you can use in subsequent `PUT` operations to upload portions of the file. 
+A successful operation returns `HTTP 201 Created` and a new [uploadSession](/graph/api/resources/uploadsession?view=graph-rest-beta) instance, which contains an opaque URL that you can use in subsequent `PUT` operations to upload portions of the file. The **uploadSession** provides a temporary storage location where the bytes of the file are saved until you have uploaded the complete file. 
 
 The opaque URL, returned in the **uploadUrl** property of the **uploadSession**, is pre-authenticated and contains the appropriate authorization token for subsequent `PUT` queries in the `https://outlook.office.com` domain. That token expires by **expirationDateTime**. Do not customize this URL for the `PUT` operations.
 
 The **uploadSession** object in the response also includes the **nextExpectedRanges** property, which indicates the initial upload starting location should be byte 0.
-
-The **uploadSession** provides a temporary storage location where the bytes of the file are saved until you have uploaded the complete file. 
 
 ### Example request: create an upload session
 <!-- {
@@ -91,14 +89,14 @@ Specify the actual bytes of the file to be attached, that are in the location ra
 ### Response
 A successful upload returns `HTTP 200 OK` and an **uploadSession** object. Note the following in the response object:
 
-- The **ExpirationDateTime** property remains the same as in the initial **uploadSession** in step 1. 
+- The **ExpirationDateTime** property indicates the expiration date/time for the auth token embedded in the **uploadUrl** property value. This expiration date/time remains the same as returned by the initial **uploadSession** in step 1. 
 - The **NextExpectedRanges** specifies one or more byte ranges, each indicating the starting point of a subsequent `PUT` request:
 
   - On a successful upload, this property returns the next range to start from, for example, `"NextExpectedRanges":["2097152"]`. 
   - If a portion of a byte range has not uploaded successfully, this property includes the byte range with the start and end locations, for example, `"NextExpectedRanges":["1998457-2097094"]`.
-- No explicit **uploadUrl** property, because all `PUT` operations of an upload session use the same URL returned when creating the session (step 1).
+- The **uploadUrl** property is not explicitly returned, because all `PUT` operations of an upload session use the same URL returned when creating the session (step 1).
 
-### Example request: initial upload
+### Example request: first upload
 <!-- {
   "blockType": "ignored"
 }-->
@@ -166,33 +164,11 @@ Location: https://outlook.office.com/api/beta/Users('a8e8e219-4931-95c1-b73d-626
 Content-Length: 0
 ```
 
+## Step 4 (optional): Get the file attachment from the message
 
-## Step 4: Cancel the upload session
+Using the attachment ID returned in step 3, you can now use APIs in the Microsoft Graph domain to get the metadata of that file as attached to the message.
 
-Once you have successfully uploaded the entire file as an attachment as in step 3, you can use the same opaque URL to cancel the upload session. A successful operation returns `HTTP 204 No Content`.
-
-### Example request: cancel an upload session
-
-<!-- {
-  "blockType": "ignored"
-}-->
-```http
-DELETE https://outlook.office.com/api/beta/Users('a8e8e219-4931-95c1-b73d-62626fd79c32@72aa88bf-76f0-494f-91ab-2d7cd730db47')/Messages('AAMkADI5MAAIT3drCAAA=')/AttachmentSessions('AAMkADI5MAAIT3k0tAAA=')?authtoken=eyJhbGciOiJSUzI1NiIsImtpZCI6IktmYUNIUlN6bllHMmNI
-```
-
-### Example response
-
-<!-- {
-  "blockType": "ignored"
-}-->
-```http
-HTTP/1.1 204 No content
-```
-
-
-## Step 5: Get the file attachment from the message
-
-Using the attachment ID returned in step 4, you can now use APIs in the Microsoft Graph domain to get the metadata of that file as attached to the message.
+Note that because of a limit of 4MB on the total size of each REST request, you can [use the GET operation to get attachments](/graph/api/attachment-get?view=graph-rest-beta) only if they are less than 4MB.
 
 ### Example request: get the file attachment metadata
 
@@ -233,5 +209,26 @@ Content-type: application/json
 }
 ```
 
+## Alternative: Cancel the upload session
+
+At any point of time before the upload session expires, if you have to cancel the upload, you can use the same initial opaque URL to delete the upload session. A successful operation returns `HTTP 204 No Content`.
+
+### Example request: cancel an upload session
+
+<!-- {
+  "blockType": "ignored"
+}-->
+```http
+DELETE https://outlook.office.com/api/beta/Users('a8e8e219-4931-95c1-b73d-62626fd79c32@72aa88bf-76f0-494f-91ab-2d7cd730db47')/Messages('AAMkADI5MAAIT3drCAAA=')/AttachmentSessions('AAMkADI5MAAIT3k0tAAA=')?authtoken=eyJhbGciOiJSUzI1NiIsImtpZCI6IktmYUNIUlN6bllHMmNI
+```
+
+### Example response
+
+<!-- {
+  "blockType": "ignored"
+}-->
+```http
+HTTP/1.1 204 No content
+```
 
 
