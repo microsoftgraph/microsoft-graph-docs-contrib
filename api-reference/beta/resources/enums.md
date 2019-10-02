@@ -886,3 +886,17 @@ Possible values for user account types (group membership), per Windows definitio
 |user|
 |unknownFutureValue|
 
+| Member       | Value       |
+|:--------------|:--------------|
+|event|0|
+|message|1|
+|driveItem|2|
+|externalFile|3|
+|externalItem|4|
+
+### termField
+
+| Member       | Value       |
+|:--------------|:--------------|
+|wellKnownFolderName|0|
+|folderId|1|
