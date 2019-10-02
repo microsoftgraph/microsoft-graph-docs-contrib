@@ -9,7 +9,7 @@ doc_type: "resourcePageType"
 
 # rangeFilter resource type
 
-PROVIDE DESCRIPTION HERE
+A filter to scope a field with lower and/or upper bound restrictions. 
 
 ## Properties
 

@@ -9,7 +9,7 @@ doc_type: "resourcePageType"
 
 # searchQuery resource type
 
-PROVIDE DESCRIPTION HERE
+The top level object describing the search query containing the search terms, and some potential additional filters. 
 
 ## Properties
 

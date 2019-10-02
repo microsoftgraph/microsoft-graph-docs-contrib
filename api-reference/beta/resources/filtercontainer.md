@@ -9,7 +9,7 @@ doc_type: "resourcePageType"
 
 # filterContainer resource type
 
-PROVIDE DESCRIPTION HERE
+The filters to be applied on the search results. The filters can be used in a bool query for more flexibility.  
 
 ## Properties
 
