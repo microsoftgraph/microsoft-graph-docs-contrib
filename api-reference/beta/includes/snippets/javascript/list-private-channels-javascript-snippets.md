@@ -10,8 +10,9 @@ const options = {
 
 const client = Client.init(options);
 
-let res = await client.api('/chats/{id}/messages/{id}/hostedContents/{id}/$value')
+let res = await client.api('/teams/{id}/channels')
 	.version('beta')
+	.filter('membershipType eq 'private'')
 	.get();
 
 ```
