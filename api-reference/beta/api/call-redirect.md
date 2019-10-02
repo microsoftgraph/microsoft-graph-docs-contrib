@@ -45,15 +45,15 @@ In the request body, provide a JSON object with the following parameters.
 
 | Parameter      | Type    |Description|
 |:---------------|:--------|:----------|
-|targets|[invitationParticipantInfo](../resources/invitationparticipantinfo.md) collection|The target participants of the redirect operation. If there is only one target provided, it's a forward call. If more than one targets provided, it's a simulring call, which means all the targets will be ringed at the same time and only the first picked up will get connected. We support upto 25 targets for simulring. |
-|targetDisposition|String|(Deprecated) The possible values are: `default` , `simultaneousRing` , `forward` . This is deprecated, we will automatically identify whether it's a forward call or simulring call from the number of targets provided.|
+|targets|[invitationParticipantInfo](../resources/invitationparticipantinfo.md) collection|The target participants of the redirect operation. If only one target is provided, it's a forward call. If more than one target is provided, it's a simulring call, which means all the targets will be called at the same time and only the first to answer will get connected. We support up to 25 targets for simulring. |
+|targetDisposition|String|(Deprecated) The possible values are: `default` , `simultaneousRing` , `forward`. This parameter is deprecated, we will automatically identify whether it's a forward call or simulring call from the number of targets provided.|
 |timeout|Int32|The timeout in seconds for the redirect operation. The minimum timeout is 15 seconds, and the maximum timeout is 90 seconds. For simulring, the defualt timeout is 60 seconds. For forward, the default timeout is 55 seconds. |
-|maskCallee|Boolean|Indicates if the callee is to be hidden from the caller. If true, then the callee identity is the bot identity. Default: false.|
-|maskCaller|Boolean|Indicates if the caller is to be hidden from the callee. If true, then the caller identity is the bot identity. Default: false.|
+|maskCallee|Boolean|Indicates whether the callee is to be hidden from the caller. If true, then the callee identity is the bot identity. Default: false.|
+|maskCaller|Boolean|Indicates whether the caller is to be hidden from the callee. If true, then the caller identity is the bot identity. Default: false.|
 |callbackUri|String|Allows bots to provide a specific callback URI where the result of the Redirect action will be posted. This allows sending the result to the same specific bot instance that triggered the Redirect action. If none is provided, the bot's global callback URI will be used.|
 
 ## Response
-Returns `202 Accepted` response code
+If successful, this method returns a `202 Accepted` response code.
 
 ## Examples
 

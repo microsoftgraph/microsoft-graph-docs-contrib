@@ -93,7 +93,7 @@ Here is an example of the response.
 HTTP/1.1 202 Accepted
 ```
 ##### Notification - roster updated with participant sending screen sharing video
-Note the `"direction": "sendOnly"` property on the media stream.
+Note the `direction: sendOnly` property on the media stream.
 
 ```http
 POST https://bot.contoso.com/api/calls

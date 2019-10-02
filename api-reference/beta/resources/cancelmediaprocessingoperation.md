@@ -1,6 +1,6 @@
 --- 
 title: "CancelMediaProcessingOperation resource type"
-description: "The cancelMediaProcessing operation to obtain the result of the cancelMediaProcessing action."
+description: "A resource type used to capture the response of 'cancel media' operation."
 author: "VinodRavichandran"
 localization_priority: Normal
 doc_type: resourcePageType
