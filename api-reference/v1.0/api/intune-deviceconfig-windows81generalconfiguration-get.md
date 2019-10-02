@@ -1,7 +1,7 @@
 ---
 title: "Get windows81GeneralConfiguration"
 description: "Read properties and relationships of the windows81GeneralConfiguration object."
-author: "tfitzmac"
+author: "davidmu1"
 localization_priority: Normal
 ms.prod: "Intune"
 doc_type: apiPageType
@@ -106,6 +106,7 @@ Content-Length: 1964
   }
 }
 ```
+
 
 
 
