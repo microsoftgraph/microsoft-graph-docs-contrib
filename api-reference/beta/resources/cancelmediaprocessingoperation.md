@@ -1,6 +1,6 @@
 --- 
 title: "CancelMediaProcessingOperation resource type"
-description: "A resource type used to cancel media processing and to capture the status of the operation."
+description: "A resource type used to capture the response of 'cancel media' operation."
 author: "VinodRavichandran"
 ---
 
