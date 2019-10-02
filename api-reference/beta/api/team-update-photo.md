@@ -11,9 +11,10 @@ doc_type: apiPageType
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Update the photo (picture) for a team. The supported sizes of HD photos in Office 365 are as follows: 48x48, 64x64, 96x96, 120x120, 240x240, 360x360, 432x432, 504x504, and 648x648. Photos can be any dimension if they are stored in Azure Active Directory.
+Update the photo (picture) for a team. The following are the supported sizes of HD photos in Office 365: 48x48, 64x64, 96x96, 120x120, 240x240, 360x360, 432x432, 504x504, and 648x648 pixels. Photos can be any dimension if they are stored in Azure Active Directory.
 
-> Note: There is a limit of 4 MB on the total size of the request. This limits the photo size to less than 4 MB.
+> [!Note:]
+> There is a limit of 4 MB on the total size of the request. This limits the photo size to less than 4 MB.
 
 ## Permissions
 
@@ -51,7 +52,7 @@ In the request body, include the binary data of the photo.
 
 ## Response
 
-If successful, this method returns a `200 OK` response code
+If successful, this method returns a `200 OK` response code.
 
 ## Example
 
