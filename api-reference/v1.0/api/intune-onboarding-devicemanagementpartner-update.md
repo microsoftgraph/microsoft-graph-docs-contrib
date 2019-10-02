@@ -1,7 +1,7 @@
 ---
 title: "Update deviceManagementPartner"
 description: "Update the properties of a deviceManagementPartner object."
-author: "tfitzmac"
+author: "davidmu1"
 localization_priority: Normal
 ms.prod: "Intune"
 doc_type: apiPageType
@@ -101,6 +101,7 @@ Content-Length: 551
   "whenPartnerDevicesWillBeMarkedAsNonCompliantDateTime": "2016-12-31T23:58:42.2131231-08:00"
 }
 ```
+
 
 
 

@@ -1,7 +1,7 @@
 ---
 title: "firewallPacketQueueingMethodType enum type"
 description: "Possible values for firewallPacketQueueingMethod"
-author: "tfitzmac"
+author: "davidmu1"
 localization_priority: Normal
 ms.prod: "Intune"
 doc_type: enumPageType
@@ -21,6 +21,7 @@ Possible values for firewallPacketQueueingMethod
 |queueInbound|2|Queue inbound encrypted packets|
 |queueOutbound|3|Queue decrypted outbound packets for forwarding|
 |queueBoth|4|Queue both inbound and outbound packets|
+
 
 
 
