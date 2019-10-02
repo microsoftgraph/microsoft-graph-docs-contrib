@@ -109,7 +109,7 @@ A `header()` function can be used to attach custom headers to a request. There a
 In situations where an API call allows custom query parameters those parameter values can be provided by using a list of `QueryOptions` objects.
 
 # [C#](#tab/CS)
-[!INCLUDE [sample-code](includes/snippets/csharp/create-requests-headers.md)]
+[!INCLUDE [sample-code](includes/snippets/csharp/create-requests-queryparams.md)]
 # [TypeScript](#tab/TypeScript)
-[!INCLUDE [sample-code](includes/snippets/typescript/create-requests-headers.md)]
+[!INCLUDE [sample-code](includes/snippets/typescript/create-requests-queryparams.md)]
 ---
