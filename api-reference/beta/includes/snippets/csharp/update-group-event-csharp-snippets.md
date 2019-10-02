@@ -13,7 +13,7 @@ var @event = new Event
 	ResponseStatus = new ResponseStatus
 	{
 		Response = ResponseType.None,
-		Time = "datetime-value"
+		Time = DateTimeOffset.Parse("datetime-value")
 	},
 	Uid = "iCalUId-value",
 	ReminderMinutesBeforeStart = 99,

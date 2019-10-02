@@ -4,6 +4,7 @@ description: "Microsoft Graph is a RESTful web API that enables you to access Mi
 author: "jackson-woods"
 localization_priority: Priority
 scenarios: "getting-started"
+ms.custom: graphiamtop20
 ---
 
 # Use the Microsoft Graph API
