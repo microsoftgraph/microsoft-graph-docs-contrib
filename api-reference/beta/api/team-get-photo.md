@@ -11,13 +11,14 @@ doc_type: apiPageType
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Get the photo (picture) for a team. The method first attempts to retrieve the specified photo from Office 365. If the photo is not available in Office 365, it attempts to retrieve the photo from Azure Active Directory instead.
+Get the photo (picture) for a team. This method first attempts to retrieve the specified photo from Office 365. If the photo is not available in Office 365, it attempts to retrieve the photo from Azure Active Directory instead.
 
-The supported sizes of HD photos in Office 365 are as follows: 48x48, 64x64, 96x96, 120x120, 240x240, 360x360, 432x432, 504x504, and 648x648. Photos can be any dimension if they are stored in Azure Active Directory.
+The following are the supported sizes of HD photos in Office 365: 48x48, 64x64, 96x96, 120x120, 240x240, 360x360, 432x432, 504x504, and 648x648 pixels. Photos can be any dimension if they are stored in Azure Active Directory.
 
 You can get the metadata of the largest available photo, or optionally specify a size to get the metadata for that photo size. If the size you request is not available, you can still get a smaller size that the user has uploaded and made available. For example, if the user uploads a photo that is 504x504 pixels, all but the 648x648 size of the photo will be available for download. If the specified size is not available in the user's mailbox or in Azure Active Directory, the size 1x1 is returned with the rest of the metadata.
 
-> Note: There is a limit of 4 MB on the total size of the rest request. This limits the photo size to less than 4 MB.
+> [!Note:]
+> There is a limit of 4 MB on the total size of the REST request. This limits the photo size to less than 4 MB.
 
 ## Permissions
 
@@ -60,7 +61,7 @@ Do not supply a body for this request.
 
 ## Response
 
-If successful, this method returns a `200 OK` response code, metadata about the photo,  and the binary data for the photo.
+If successful, this method returns a `200 OK` response code, metadata about the photo, and the binary data for the photo.
 
 ## Example
 
@@ -80,7 +81,7 @@ GET https://graph.microsoft.com/beta/teams/{id}/photo/240x240
 
 Here is an example of the response.
 
-> **Note:** The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.
+> **Note:** The response object shown here might be shortened for readability. All the properties will be returned from an actual call.
 
 
 <!-- {
