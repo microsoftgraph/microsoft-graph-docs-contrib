@@ -67,7 +67,8 @@ Here is an example of the request.
 # [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
-  "name": "message_reply_beta"
+  "name": "message_reply_beta",
+  "sampleKeys": ["AAMkADA1MTAAAAqldOAAA="]
 }-->
 ```http
 POST https://graph.microsoft.com/beta/me/messages/AAMkADA1MTAAAAqldOAAA=/reply
