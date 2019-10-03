@@ -9,7 +9,7 @@ doc_type: "resourcePageType"
 
 # termFilter resource type
 
-PROVIDE DESCRIPTION HERE
+A filter to scope on specific properties. 
 
 ## Properties
 

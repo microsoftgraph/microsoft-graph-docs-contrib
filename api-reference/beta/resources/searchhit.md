@@ -9,7 +9,7 @@ doc_type: "resourcePageType"
 
 # searchHit resource type
 
-PROVIDE DESCRIPTION HERE
+Represent a single result within the list of search results. 
 
 ## Properties
 

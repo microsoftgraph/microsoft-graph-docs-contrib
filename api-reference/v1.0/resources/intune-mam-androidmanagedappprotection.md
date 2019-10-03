@@ -1,7 +1,7 @@
 ---
 title: "androidManagedAppProtection resource type"
 description: "Policy used to configure detailed management settings targeted to specific security groups and for a specified set of apps on an Android device"
-author: "tfitzmac"
+author: "davidmu1"
 localization_priority: Normal
 ms.prod: "Intune"
 doc_type: resourcePageType
@@ -138,5 +138,6 @@ Here is a JSON representation of the resource.
   ],
 }
 -->
+
 
 

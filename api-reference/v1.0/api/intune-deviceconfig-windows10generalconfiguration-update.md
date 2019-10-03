@@ -1,7 +1,7 @@
 ---
 title: "Update windows10GeneralConfiguration"
 description: "Update the properties of a windows10GeneralConfiguration object."
-author: "tfitzmac"
+author: "davidmu1"
 localization_priority: Normal
 ms.prod: "Intune"
 doc_type: apiPageType
@@ -743,6 +743,7 @@ Content-Length: 9994
   "tenantLockdownRequireNetworkDuringOutOfBoxExperience": true
 }
 ```
+
 
 
 

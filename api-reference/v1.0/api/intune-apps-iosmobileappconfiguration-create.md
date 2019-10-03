@@ -1,7 +1,7 @@
 ---
 title: "Create iosMobileAppConfiguration"
 description: "Create a new iosMobileAppConfiguration object."
-author: "tfitzmac"
+author: "davidmu1"
 localization_priority: Normal
 ms.prod: "Intune"
 doc_type: apiPageType
@@ -117,6 +117,7 @@ Content-Length: 706
   ]
 }
 ```
+
 
 
 

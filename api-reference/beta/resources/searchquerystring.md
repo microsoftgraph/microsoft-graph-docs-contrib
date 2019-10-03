@@ -9,7 +9,7 @@ doc_type: "resourcePageType"
 
 # searchQueryString resource type
 
-PROVIDE DESCRIPTION HERE
+The search terms for the query.
 
 ## Properties
 

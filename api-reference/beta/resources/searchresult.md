@@ -9,9 +9,7 @@ ms.prod: ""
 ---
 # SearchResult resource type
 
-[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
-
-The **SearchResult** resource indicates than an item is the response to a search query.
+A top level object satisfying the corresponding SearchRequest. 
 
 ## JSON representation
 

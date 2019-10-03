@@ -9,7 +9,7 @@ doc_type: "resourcePageType"
 
 # searchHitsContainer resource type
 
-PROVIDE DESCRIPTION HERE
+Represent the list of search results. 
 
 ## Properties
 
