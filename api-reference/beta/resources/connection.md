@@ -22,11 +22,11 @@ A connection to Microsoft Search from an external source.
 | [Get connection](../api/connection-get.md)                         | [connection](connection.md)                              | Read properties and relationships of connection object. |
 | [Update](../api/connection-update.md)                              | [connection](connection.md)                              | Update connection object. |
 | [Delete](../api/connection-delete.md)                              | None                                                     | Delete connection object. |
+| [Create schema](../api/connection-post-schema.md) | TODO | Register connection schema. |
+| [Get operation](../api/connectionoperation-get.md) | [connectionOperation](connectionoperation.md) | Get the status of an asynchronous request to create the connection schema. |
 
 | [Create externalItem](../api/connection-post-items.md)             | [externalItem](externalitem.md)                          | Create a new externalItem by posting to the items collection. |
 | [List items](../api/connection-list-items.md)                      | [externalItem](externalitem.md) collection               | Get a externalItem object collection. |
-| [Create connectionOperation](../api/connection-post-operations.md) | [connectionOperation](connectionoperation.md)            | Create a new connectionOperation by posting to the operations collection. |
-| [List operations](../api/connection-list-operations.md)            | [connectionOperation](connectionoperation.md) collection | Get a connectionOperation object collection. |
 
 ## Properties
 
