@@ -113,7 +113,7 @@ Here is an example of the response.
   "truncated": true
 } -->
 ```http
-HTTP/1.1 201 Created
+HTTP/1.1 `202 Accepted`
 ```
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
