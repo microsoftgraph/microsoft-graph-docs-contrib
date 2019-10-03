@@ -30,7 +30,7 @@ An item indexed via a Microsoft Search [connection](connection.md).
 | acl        | [acl](acl.md) collection | An array of access control entries. Each entry specifies the access granted to a user or group. |
 | content    | String                   | A plain-text representation of the contents of the item. |
 | id         | String                   | Developer-provided unique ID  of the item. Required. |
-| properties | object                   | A property bag with the properties of the item. The properties MUST conform to the [schema](schema.md) defined for the [connection](connection.md). |
+| properties | Object                   | A property bag with the properties of the item. The properties MUST conform to the [schema](schema.md) defined for the [connection](connection.md). |
 
 ## Relationships
 
@@ -55,7 +55,7 @@ The following is a JSON representation of the resource.
   "acl": [{"@odata.type": "microsoft.graph.acl"}],
   "content": "String",
   "id": "String (identifier)",
-  "properties": { }
+  "properties": "Object"
 }
 ```
 
@@ -66,5 +66,8 @@ The following is a JSON representation of the resource.
   "description": "externalItem resource",
   "keywords": "",
   "section": "documentation",
-  "tocPath": ""
+  "tocPath": "",
+  "suppressions": [
+    "Error: microsoft.graph.externalItem/properties:\r\n      Referenced type microsoft.graph.object is not defined in the doc set! Potential suggestion: microsoft.graph.directoryObject"
+  ]
 }-->

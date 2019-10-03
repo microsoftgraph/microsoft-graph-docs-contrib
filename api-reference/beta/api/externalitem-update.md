@@ -44,27 +44,27 @@ In the request body, supply the values for relevant fields that should be update
 
 ### externalItem properties
 
-| Property   | Type                     | Description                          |
-|:-----------|:-------------------------|:-------------------------------------|
-| acl        | [acl](acl.md) collection | An array of access control entries. Each entry specifies the access granted to a user or group. |
-| content    | String                   | A plain-text representation of the contents of the item. |
-| properties | object                   | A property bag with the properties of the item. The properties MUST conform to the [schema](schema.md) defined for the [connection](connection.md). |
+| Property   | Type                                  | Description             |
+|:-----------|:--------------------------------------|:------------------------|
+| acl        | [acl](../resources/acl.md) collection | An array of access control entries. Each entry specifies the access granted to a user or group. |
+| content    | String                                | A plain-text representation of the contents of the item. |
+| properties | object                                | A property bag with the properties of the item. The properties MUST conform to the [schema](../resources/schema.md) defined for the [connection](../resources/connection.md). |
 
 ### externalFile properties
 
-| Property         | Type                     | Description                    |
-|:-----------------|:-------------------------|:-------------------------------|
-| acl              | [acl](acl.md) collection | An array of access control entries. Each entry specifies the access granted to a user or group. |
-| content          | String                   | A plain-text representation of the contents of the item. |
-| createdBy        | String                   | The name of the user that created the file. |
-| createdDateTime  | DateTimeOffset           | The date and time that the file was created. The DateTimeOffset type represents date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 would look like this: `'2014-01-01T00:00:00Z'` |
-| extension        | String                   | The file extension.            |
-| lastModifiedBy   | String                   | The name of the user that last modified the file. |
-| modifiedDateTime | DateTimeOffset           | The date and time that the file was last modified. The DateTimeOffset type represents date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 would look like this: `'2014-01-01T00:00:00Z'` |
-| name             | String                   | The file name.                 |
-| size             | Int64                    | The size of the file in bytes. |
-| title            | String                   | The title of the file.         |
-| url              | String                   | The URL to access the file.    |
+| Property         | Type                                  | Description       |
+|:-----------------|:--------------------------------------|:------------------|
+| acl              | [acl](../resources/acl.md) collection | An array of access control entries. Each entry specifies the access granted to a user or group. |
+| content          | String                                | A plain-text representation of the contents of the item. |
+| createdBy        | String                                | The name of the user that created the file. |
+| createdDateTime  | DateTimeOffset                        | The date and time that the file was created. The DateTimeOffset type represents date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 would look like this: `'2014-01-01T00:00:00Z'` |
+| extension        | String                                | The file extension. |
+| lastModifiedBy   | String                                | The name of the user that last modified the file. |
+| modifiedDateTime | DateTimeOffset                        | The date and time that the file was last modified. The DateTimeOffset type represents date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 would look like this: `'2014-01-01T00:00:00Z'` |
+| name             | String                                | The file name.    |
+| size             | Int64                                 | The size of the file in bytes. |
+| title            | String                                | The title of the file. |
+| url              | String                                | The URL to access the file. |
 
 ## Response
 

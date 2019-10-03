@@ -28,7 +28,8 @@ The following is a JSON representation of the resource.
 <!-- {
   "blockType": "resource",
   "optionalProperties": [
-
+    "details",
+    "errorCode"
   ],
   "@odata.type": "microsoft.graph.errorDetail",
   "baseType": null

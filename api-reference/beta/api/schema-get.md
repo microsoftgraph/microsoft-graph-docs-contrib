@@ -85,19 +85,19 @@ Content-type: application/json
     {
       "name": "title",
       "type": "String",
-      "isSearchable": "true",
-      "isRetrievable": "true"
+      "isSearchable": true,
+      "isRetrievable": true
     },
     {
       "name": "priority",
       "type": "String",
-      "isQueryable": "true",
-      "isRetrievable": "true"
+      "isQueryable": true,
+      "isRetrievable": true
     },
     {
       "name": "assignee",
       "type": "String",
-      "isRetrievable": "true"
+      "isRetrievable": true
     }
   ]
 }
