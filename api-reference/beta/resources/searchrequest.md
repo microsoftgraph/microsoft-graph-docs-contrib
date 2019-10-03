@@ -15,11 +15,10 @@ The search request to be sent to the query endpoint. It contains the type of ent
 
 | Property     | Type        | Description |
 |:-------------|:------------|:------------|
-|_sources|String collection||
+|stored_fields|String collection||
 |contentSources|String collection||
 |enableTopResults|Boolean||
-|entityType|String| Possible values are: `event`, `message`, `driveItem`, `externalFile`, `externalItem`.|
-|entityTypes|String collection| Possible values are: `event`, `message`, `driveItem`, `externalFile`, `externalItem`.|
+|entityTypes|String collection| Possible values are: `microsoft.graph.event`, `microsoft.graph.message`, `microsoft.graph.driveItem`, `microsoft.graph.externalFile`, `microsoft.graph.externalItem`.|
 |from|Int32||
 |query|[searchQuery](searchquery.md)||
 |size|Int32||
