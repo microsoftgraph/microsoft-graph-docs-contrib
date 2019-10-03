@@ -1,6 +1,6 @@
 ---
 title: "Create namedLocation"
-description: "Use this API to create a new namedLocation."
+description: "Create a new namedLocation."
 localization_priority: Normal
 author: "davidmu1"
 ms.prod: "microsoft-identity-platform"
@@ -11,7 +11,7 @@ doc_type: apiPageType
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Use this API to create a new [namedLocation](../resources/namedlocation.md).
+Create a new [namedLocation](../resources/namedlocation.md).
 
 ## Permissions
 
@@ -35,7 +35,7 @@ POST /conditionalaccess/namedLocations
 
 | Name          | Description   |
 |:--------------|:--------------|
-| Authorization | Bearer {token} |
+| Authorization | Bearer {token}. Required. |
 | Content-Type  | application/json |
 
 ## Request body
