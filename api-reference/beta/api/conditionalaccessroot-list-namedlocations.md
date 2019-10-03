@@ -39,7 +39,7 @@ This method supports the `Skip`, `Top`, `Count`, `Filter`, `OrderBy`, and `Selec
 
 | Name      |Description|
 |:----------|:----------|
-| Authorization | Bearer {token} |
+| Authorization | Bearer {token}. Required. |
 
 ## Request body
 
