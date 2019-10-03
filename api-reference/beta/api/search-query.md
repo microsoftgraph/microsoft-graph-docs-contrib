@@ -41,7 +41,7 @@ In the request body, provide a JSON object with the following parameters.
 
 | Parameter    | Type        | Description |
 |:-------------|:------------|:------------|
-|requests|searchRequest collection||
+|requests|[searchRequest collection](../resources/searchrequest.md)||
 
 ## Response
 
