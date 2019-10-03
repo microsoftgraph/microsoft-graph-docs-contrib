@@ -17,11 +17,11 @@ A connection to Microsoft Search from an external source.
 
 | Method                                                             | Return Type                                              | Description |
 |:-------------------------------------------------------------------|:---------------------------------------------------------|:--|
-| [Create connections](../api/external-post-connections.md)          | [connections](connections.md)                            | Create a new connections by posting to the connections collection. |
-| [List connections](../api/external-list-connections.md)            | [connections](connections.md) collection                 | Get a connections object collection. |
+| [Create connections](../api/external-post-connections.md)          | [connection](connections.md)                            | Create a new connections by posting to the connections collection. |
+| [List connections](../api/external-list-connections.md)            | [connection](connections.md) collection                 | Get a connections object collection. |
 | [Get connection](../api/connection-get.md)                         | [connection](connection.md)                              | Read properties and relationships of connection object. |
-| [Update](../api/connection-update.md)                              | [connection](connection.md)                              | Update connection object. |
-| [Delete](../api/connection-delete.md)                              | None                                                     | Delete connection object. |
+| [Update connection](../api/connection-update.md)                              | [connection](connection.md)                              | Update connection object. |
+| [Delete connection](../api/connection-delete.md)                              | None                                                     | Delete connection object. |
 | [Create schema](../api/connection-post-schema.md) | TODO | Register connection schema. |
 | [Get operation](../api/connectionoperation-get.md) | [connectionOperation](connectionoperation.md) | Get the status of an asynchronous request to create the connection schema. |
 

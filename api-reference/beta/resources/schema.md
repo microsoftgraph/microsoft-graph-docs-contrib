@@ -24,9 +24,9 @@ Describes the type of content and how to index each property in items in a Micro
 
 | Property   | Type                               | Description                |
 |:-----------|:-----------------------------------|:---------------------------|
-| baseType   | String                             | Must be set to `microsoft.graph.externalItem`. |
+| baseType   | String                             | Possible values are `microsoft.graph.externalItem` and `microsoft.graph.externalFile`. |
 | id         | String                             | Unique identifer for the schema. Read-only.                 |
-| properties | [property](property.md) collection | The properties defined for the items in the connection. |
+| properties | [property](property.md) collection | The properties defined for the items in the connection. Only applicable when `baseType` is set to `microsoft.graph.externalItem`. |
 
 ## Relationships
 

@@ -13,6 +13,8 @@ doc_type: "apiPageType"
 
 Create the schema for a Microsoft Search [connection](../resources/connection.md).
 
+There are two schema types supported: custom items, and files.
+
 ## Permissions
 
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
@@ -43,6 +45,10 @@ POST /external/connections/{id}/schema
 
 In the request body, supply a JSON representation of a [schema](../resources/schema.md) object.
 
+When registering a custom item schema, the `schema` object MUST have the `baseType` property set to `microsoft.graph.externalItem` and MUST contain the `properties` property.
+
+When registering a file schema, the `schema` object MUST have the `baseType` property set to `microsoft.graph.externalFile`.
+
 ## Response
 
 TODO: Get response for sync
@@ -51,7 +57,7 @@ With the `Prefer: respond-async` header included in the request, if successful, 
 
 ## Examples
 
-### Example 1: Register schema asynchronously
+### Example 1: Register custom schema asynchronously
 
 #### Request
 
@@ -107,7 +113,7 @@ HTTP/1.1 202 Accepted
 Location: https://graph.microsoft.com/beta/external/connections/contosohr/operations/616bfeed-666f-4ce0-8cd9-058939010bfc
 ```
 
-### Example 2: Register schema synchronously
+### Example 2: Register file schema synchronously
 
 <!-- markdownlint-disable MD024 -->
 #### Request
@@ -120,30 +126,11 @@ The following is an example of the request.
 }-->
 
 ```http
-POST https://graph.microsoft.com/beta/connections/contosohr/schema
+POST https://graph.microsoft.com/beta/connections/contosofiles/schema
 Content-type: application/json
 
 {
-  "baseType": "microsoft.graph.externalItem",
-  "properties": [
-    {
-      "name": "title",
-      "type": "String",
-      "isSearchable": "true",
-      "isRetrievable": "true"
-    },
-    {
-      "name": "priority",
-      "type": "String",
-      "isQueryable": "true",
-      "isRetrievable": "true"
-    },
-    {
-      "name": "assignee",
-      "type": "String",
-      "isRetrievable": "true"
-    }
-  ]
+  "baseType": "microsoft.graph.externalFile"
 }
 ```
 
@@ -163,7 +150,7 @@ TODO: Get real response
 
 ```http
 HTTP/1.1 202 Accepted
-Location: https://graph.microsoft.com/beta/external/connections/contosohr/operations/616bfeed-666f-4ce0-8cd9-058939010bfc
+Location: https://graph.microsoft.com/beta/external/connections/contosofiles/operations/616bfeed-666f-4ce0-8cd9-058939010bfc
 ```
 
 <!-- uuid: 16cd6b66-4b1a-43a1-adaf-3a886856ed98
