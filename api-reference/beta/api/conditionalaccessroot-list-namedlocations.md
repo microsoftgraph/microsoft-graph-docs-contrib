@@ -11,7 +11,7 @@ doc_type: apiPageType
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Retrieve a list of [namedlocation](../resources/namedlocation.md) objects.
+Retrieve a list of [namedLocation](../resources/namedlocation.md) objects.
 
 ## Permissions
 
@@ -51,9 +51,11 @@ If successful, this method returns a `200 OK` response code and a collection of 
 
 ## Examples
 
-### Request
+### Example 1: List all namedLocations
 
-The following is an example of the request to list all namedLocations.
+#### Request
+
+The following is an example of the request.
 <!-- {
   "blockType": "request",
   "name": "get_namedlocations"
@@ -63,9 +65,9 @@ The following is an example of the request to list all namedLocations.
 GET https://graph.microsoft.com/beta/conditionalaccess/namedLocations
 ```
 
-### Response
+#### Response
 
-The following is an example of the response to list all namedLocations.
+The following is an example of the response.
 
 > **Note:** The response object shown here might be shortened for readability. All the properties will be returned from an actual call.
 
@@ -135,10 +137,11 @@ Content-type: application/json
     ]
 }
 ```
+### Example 2: List all ipNamedLocations
 
-### Request
+#### Request
 
-The following is an example of the request to get all ipNamedLocations.
+The following is an example of the request.
 <!-- {
   "blockType": "request",
   "name": "get_namedlocations"
@@ -148,9 +151,9 @@ The following is an example of the request to get all ipNamedLocations.
 GET https://graph.microsoft.com/beta/conditionalaccess/namedLocations?$filter=isof('microsoft.graph.ipNamedLocation')
 ```
 
-### Response
+#### Response
 
-The following is an example of the response to get all ipNamedLocations.
+The following is an example of the response.
 
 > **Note:** The response object shown here might be shortened for readability. All the properties will be returned from an actual call.
 
@@ -208,10 +211,11 @@ Content-type: application/json
     ]
 }
 ```
+### Example 3: List all countryNamedLocations
 
-### Request
+#### Request
 
-The following is an example of the request to list all countryNamedLocations.
+The following is an example of the request.
 <!-- {
   "blockType": "request",
   "name": "get_namedlocations"
@@ -221,9 +225,9 @@ The following is an example of the request to list all countryNamedLocations.
 GET https://graph.microsoft.com/beta/conditionalaccess/namedLocations?$filter=isof('microsoft.graph.countryNamedLocation')
 ```
 
-### Response
+#### Response
 
-The following is an example of the response to list all countryNamedLocations.
+The following is an example of the response.
 
 > **Note:** The response object shown here might be shortened for readability. All the properties will be returned from an actual call.
 
