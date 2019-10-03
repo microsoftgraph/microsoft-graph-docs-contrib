@@ -61,20 +61,17 @@ Here is an example of the response. Note: The response object shown here may be 
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 265
+Content-Length: 223
 
 {
   "value": {
     "@odata.type": "#microsoft.graph.userExperienceAnalyticsMetric",
     "id": "1371822e-822e-1371-2e82-71132e827113",
-    "displayName": "Display Name value",
     "value": "<Unknown Primitive Type Edm.Double>",
     "unit": "Unit value"
   }
 }
 ```
-
-
 
 
 

@@ -1,7 +1,7 @@
 ---
 title: "Create windowsInformationProtectionNetworkLearningSummary"
 description: "Create a new windowsInformationProtectionNetworkLearningSummary object."
-author: "tfitzmac"
+author: "davidmu1"
 localization_priority: Normal
 ms.prod: "Intune"
 doc_type: apiPageType
@@ -83,6 +83,7 @@ Content-Length: 186
   "deviceCount": 11
 }
 ```
+
 
 
 

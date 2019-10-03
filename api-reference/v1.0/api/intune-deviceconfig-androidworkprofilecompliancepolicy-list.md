@@ -1,7 +1,7 @@
 ---
 title: "List androidWorkProfileCompliancePolicies"
 description: "List properties and relationships of the androidWorkProfileCompliancePolicy objects."
-author: "tfitzmac"
+author: "davidmu1"
 localization_priority: Normal
 ms.prod: "Intune"
 doc_type: apiPageType
@@ -93,6 +93,7 @@ Content-Length: 1487
   ]
 }
 ```
+
 
 
 
