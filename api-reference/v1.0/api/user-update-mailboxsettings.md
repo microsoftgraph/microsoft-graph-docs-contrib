@@ -135,7 +135,7 @@ HTTP/1.1 200 OK
 Content-type: application/json
 
 {
-    "@odata.context": "https://graph.microsoft.com/beta/$metadata#Me/mailboxSettings",
+    "@odata.context": "https://graph.microsoft.com/v1.0/$metadata#Me/mailboxSettings",
     "automaticRepliesSetting": {
         "status": "scheduled",
         "externalAudience": "all",
@@ -163,7 +163,7 @@ to a [custom time zone](../resources/customtimezone.md).
   "name": "update_mailboxsettings_2"
 }-->
 ```http
-PATCH https://graph.microsoft.com/beta/me/mailboxSettings
+PATCH https://graph.microsoft.com/v1.0/me/mailboxSettings
 Content-Type: application/json
 
 {
@@ -213,7 +213,7 @@ HTTP/1.1 200 OK
 Content-type: application/json
 
 {
-    "@odata.context":"https://graph.microsoft.com/beta/$metadata#users('94447c6e-ea4c-494c-a9ed-d905e366c5cb')/mailboxSettings",
+    "@odata.context":"https://graph.microsoft.com/v1.0/$metadata#users('94447c6e-ea4c-494c-a9ed-d905e366c5cb')/mailboxSettings",
     "workingHours":{
         "daysOfWeek":[
             "monday",
