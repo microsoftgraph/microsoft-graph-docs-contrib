@@ -1,17 +1,17 @@
 ---
-title: "Update namedlocation"
-description: "Update the properties of namedlocation object."
+title: "Update namedLocation"
+description: "Update the properties of a namedLocation object."
 localization_priority: Normal
 author: "davidmu1"
 ms.prod: "microsoft-identity-platform"
 doc_type: apiPageType
 ---
 
-# Update namedlocation
+# Update namedLocation
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Update the properties of [namedLocation](../resources/namedlocation.md) object.
+Update the properties of a [namedLocation](../resources/namedlocation.md) object.
 
 ## Permissions
 
@@ -35,7 +35,8 @@ PATCH /conditionalaccess/namedLocations/{id}
 
 | Name       | Description|
 |:-----------|:-----------|
-| Authorization | Bearer {token} |
+| Authorization | Bearer {token}. Required. |
+| Content-type  | application/json. Required. |
 
 ## Request body
 
