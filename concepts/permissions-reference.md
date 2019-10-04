@@ -1469,34 +1469,6 @@ The *CreatedByApp* constraint associated with this permission indicates the serv
 
 ---
 
-## Conditional Access policy permissions
-
-#### Delegated permissions
-
-|   Permission    |  Display String   |  Description | Admin Consent Required | Microsoft Account supported |
-|:----------------|:------------------|:-------------|:-----------------------|:--------------|
-| _Policy.Read.All_ | Read your organization's policies | Allows the app to read your organization's policies on behalf of the signed-in user. | Yes | No |
-| _Policy.ReadWrite.ConditionalAccess_ | Read and write your organization's conditional access policies | Allows the app to read and write your organization's conditional access policies on behalf of the signed-in user. | Yes | No |
-
-#### Application permissions
-None.
-
-### Remarks
-The work or school account must be a global administrator or conditional access administrator of the tenant.
-
-### Example usage
-
-#### Delegated
-The following usages are valid for both delegated permissions:
-
-* _Policy.Read.All_: Read your organization's policies (`GET /beta/conditionalAccess/policies`)
-* _Policy.ReadWrite.ConditionalAccess_: Read and write your organization's conditional access policies (`POST /beta/conditionalAccess/policies`)
-
-For more complex scenarios involving multiple permissions, see [Permission scenarios](#permission-scenarios).
-
----
-
-
 ## Permission scenarios
 
 This section shows some common scenarios that target [user](/graph/api/resources/user?view=graph-rest-1.0) and [group](/graph/api/resources/group?view=graph-rest-1.0) resources in an organization. The tables show the permissions that an app needs to be able to perform specific operations required by the scenario. Note that in some cases the ability of the app to perform specific operations will depend on whether a permission is an application or delegated permission. In the case of delegated permissions, the app's effective permissions will also depend on the privileges of the signed-in user within the organization. For more information, see  [Delegated permissions, Application permissions, and effective permissions](auth/auth-concepts.md#microsoft-graph-permissions).
