@@ -48,9 +48,11 @@ If successful, this method returns a `201 Created`response code and a new [ipNam
 
 ## Examples
 
-### Request
+### Example 1: Create an ipNamedLocation
 
-The following is an example of the request to create an ipNamedLocation.
+#### Request
+
+The following is an example of the request.
 <!-- {
   "blockType": "request",
   "name": "create_namedlocation_from_conditionalaccessroot"
@@ -77,9 +79,9 @@ Content-type: application/json
 }
 ```
 
-### Response
+#### Response
 
-The following is an example of the response to create an ipNamedLocation.
+The following is an example of the response.
 
 > **Note:** The response object shown here might be shortened for readability. All the properties will be returned from an actual call.
 
@@ -113,10 +115,11 @@ Content-type: application/json
     ]
 }
 ```
+### Example 2: Create a countryNamedLocation
 
-### Request
+#### Request
 
-The following is an example of the request to create a countryNamedLocation.
+The following is an example of the request.
 <!-- {
   "blockType": "request",
   "name": "create_namedlocation_from_conditionalaccessroot"
@@ -137,9 +140,9 @@ Content-type: application/json
 }
 ```
 
-### Response
+#### Response
 
-The following is an example of the response to create a countryNamedLocation.
+The following is an example of the response.
 
 > **Note:** The response object shown here might be shortened for readability. All the properties will be returned from an actual call.
 
