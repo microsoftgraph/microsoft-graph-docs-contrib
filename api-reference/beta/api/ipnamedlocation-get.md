@@ -11,7 +11,7 @@ doc_type: apiPageType
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Retrieve the properties and relationships of [ipNamedLocation](../resources/ipNamedLocation.md) object.
+Retrieve the properties and relationships of an [ipNamedLocation](../resources/ipNamedLocation.md) object.
 
 ## Permissions
 
@@ -39,7 +39,7 @@ This method supports the `Select` OData query parameter to help customize the re
 
 | Name      |Description|
 |:----------|:----------|
-| Authorization | Bearer {token} |
+| Authorization | Bearer {token}. Required. |
 
 ## Request body
 
