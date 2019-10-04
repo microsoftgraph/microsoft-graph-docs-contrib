@@ -4,7 +4,7 @@ description: "Represents an application and requested permissions for implicit c
 localization_priority: Normal
 doc_type: resourcePageType
 ms.prod: ""
-author: ""
+author: "sureshja"
 ---
 
 # preAuthorizedApplication resource type
@@ -18,7 +18,7 @@ Represents an application and requested permissions for implicit consent. Requir
 | Property | Type | Description |
 |:---------------|:--------|:----------|
 |appId|String| The unique identifier for the application. |
-|permissionIds|String collection| The unique identifier for either the [publishedPermissionScope](permissionscope.md) or [appRole](approle.md) the application requires. |
+|permissionIds|String collection| The unique identifier for either the [oauth2PermissionScopes](permissionscope.md) or [appRole](approle.md) the application requires. |
 
 ## JSON representation
 Here is a JSON representation of the resource.

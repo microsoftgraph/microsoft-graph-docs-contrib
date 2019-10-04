@@ -80,31 +80,57 @@ Content-type: application/json
 Content-length: 1044
 
 {
-  "api": {
-    "acceptedAccessTokenVersion": 1,
-    "publishedPermissionScopes": [
-      {
-        "adminConsentDescription": "adminConsentDescription-value",
-        "adminConsentDisplayName": "adminConsentDisplayName-value",
-        "id": "id-value",
-        "isEnabled": true,
-        "type": "type-value",
-        "userConsentDescription": "userConsentDescription-value",
-        "userConsentDisplayName": "userConsentDisplayName-value",
-        "value": "value-value"
-      }
-    ]
-  },
-  "allowPublicClient": true,
-  "applicationAliases": [
-    "applicationAliases-value"
-  ],
-  "createdDateTime": "datetime-value",
-  "installedClients": {
-    "redirectUrls": [
-      "redirectUrls-value"
-    ]
-  }
+    "@odata.context": "https://graph.microsoft.com/beta/$metadata#applications/$entity",
+    "id": "03ef14b0-ca33-4840-8f4f-d6e91916010e",
+    "deletedDateTime": null,
+    "isFallbackPublicClient": null,
+    "appId": "631a96bc-a705-4eda-9f99-fdaf9f54f6a2",
+    "applicationTemplateId": null,
+    "identifierUris": [],
+    "createdDateTime": "2019-09-17T19:10:35.2742618Z",
+    "displayName": "Display name",
+    "isDeviceOnlyAuthSupported": null,
+    "groupMembershipClaims": null,
+    "optionalClaims": null,
+    "addIns": [],
+    "publisherDomain": "contoso.onmicrosoft.com",
+    "signInAudience": "AzureADandPersonalMicrosoftAccount",
+    "tags": [],
+    "tokenEncryptionKeyId": null,
+    "api": {
+        "requestedAccessTokenVersion": 2,
+        "acceptMappedClaims": null,
+        "knownClientApplications": [],
+        "oauth2PermissionScopes": [],
+        "preAuthorizedApplications": []
+    },
+    "appRoles": [],
+    "publicClient": {
+        "redirectUris": []
+    },
+    "info": {
+        "termsOfServiceUrl": null,
+        "supportUrl": null,
+        "privacyStatementUrl": null,
+        "marketingUrl": null,
+        "logoUrl": null
+    },
+    "keyCredentials": [],
+    "parentalControlSettings": {
+        "countriesBlockedForMinors": [],
+        "legalAgeGroupRule": "Allow"
+    },
+    "passwordCredentials": [],
+    "requiredResourceAccess": [],
+    "web": {
+        "redirectUris": [],
+        "homePageUrl": null,
+        "logoutUrl": null,
+        "implicitGrantSettings": {
+            "enableIdTokenIssuance": false,
+            "enableAccessTokenIssuance": false
+        }
+    }
 }
 ```
 

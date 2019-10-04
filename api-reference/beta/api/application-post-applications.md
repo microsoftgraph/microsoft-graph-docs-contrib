@@ -56,7 +56,6 @@ Content-type: application/json
 Content-length: 67
 
 {
-  "allowPublicClient": true,
   "displayName": "Display name"
 }
 ```
@@ -89,20 +88,33 @@ Content-length: 1145
 
 {
     "@odata.context": "https://graph.microsoft.com/beta/$metadata#applications/$entity",
-    "id": "b5b2920e-a47c-43b7-91ef-25ae96fddddd",
+    "id": "03ef14b0-ca33-4840-8f4f-d6e91916010e",
     "deletedDateTime": null,
-    "api": {
-        "acceptedAccessTokenVersion": 2,
-        "publishedPermissionScopes": []
-    },
-    "allowPublicClient": true,
-    "applicationAliases": [],
-    "appRoles": [],
-    "createdDateTime": "2017-05-25T16:33:04.3646617Z",
-    "installedClients": {
-        "redirectUrls": []
-    },
+    "isFallbackPublicClient": null,
+    "appId": "631a96bc-a705-4eda-9f99-fdaf9f54f6a2",
+    "applicationTemplateId": null,
+    "identifierUris": [],
+    "createdDateTime": "2019-09-17T19:10:35.2742618Z",
     "displayName": "Display name",
+    "isDeviceOnlyAuthSupported": null,
+    "groupMembershipClaims": null,
+    "optionalClaims": null,
+    "addIns": [],
+    "publisherDomain": "contoso.onmicrosoft.com",
+    "signInAudience": "AzureADandPersonalMicrosoftAccount",
+    "tags": [],
+    "tokenEncryptionKeyId": null,
+    "api": {
+        "requestedAccessTokenVersion": 2,
+        "acceptMappedClaims": null,
+        "knownClientApplications": [],
+        "oauth2PermissionScopes": [],
+        "preAuthorizedApplications": []
+    },
+    "appRoles": [],
+    "publicClient": {
+        "redirectUris": []
+    },
     "info": {
         "termsOfServiceUrl": null,
         "supportUrl": null,
@@ -111,15 +123,20 @@ Content-length: 1145
         "logoUrl": null
     },
     "keyCredentials": [],
-    "orgRestrictions": [],
+    "parentalControlSettings": {
+        "countriesBlockedForMinors": [],
+        "legalAgeGroupRule": "Allow"
+    },
     "passwordCredentials": [],
-    "preAuthorizedApplications": [],
     "requiredResourceAccess": [],
-    "tags": [],
     "web": {
-        "redirectUrls": [],
+        "redirectUris": [],
+        "homePageUrl": null,
         "logoutUrl": null,
-        "oauth2AllowImplicitFlow": null
+        "implicitGrantSettings": {
+            "enableIdTokenIssuance": false,
+            "enableAccessTokenIssuance": false
+        }
     }
 }
 ```

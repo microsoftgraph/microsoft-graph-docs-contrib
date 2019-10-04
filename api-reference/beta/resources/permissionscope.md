@@ -4,7 +4,7 @@ description: "Represents an OAuth 2.0 delegated permission scope. The specified 
 localization_priority: Normal
 doc_type: resourcePageType
 ms.prod: ""
-author: ""
+author: "sureshja"
 ---
 
 # permissionScope resource type

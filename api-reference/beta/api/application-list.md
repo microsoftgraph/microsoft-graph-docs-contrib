@@ -82,35 +82,65 @@ Content-type: application/json
 Content-length: 1229
 
 {
-  "value": [
-    {
-      "api": {
-        "acceptedAccessTokenVersion": 1,
-        "publishedPermissionScopes": [
-          {
-            "adminConsentDescription": "adminConsentDescription-value",
-            "adminConsentDisplayName": "adminConsentDisplayName-value",
-            "id": "id-value",
-            "isEnabled": true,
-            "type": "type-value",
-            "userConsentDescription": "userConsentDescription-value",
-            "userConsentDisplayName": "userConsentDisplayName-value",
-            "value": "value-value"
-          }
-        ]
-      },
-      "allowPublicClient": true,
-      "applicationAliases": [
-        "applicationAliases-value"
-      ],
-      "createdDateTime": "datetime-value",
-      "installedClients": {
-        "redirectUrls": [
-          "redirectUrls-value"
-        ]
-      }
-    }
-  ]
+    "@odata.context": "https://graph.microsoft.com/beta/$metadata#applications",
+    "value": [
+        {
+            "id": "00af5dfb-85da-4b41-a677-0c6b86dd34f8",
+            "deletedDateTime": null,
+            "isFallbackPublicClient": false,
+            "appId": "65415bb1-9267-4313-bbf5-ae259732ee12",
+            "applicationTemplateId": null,
+            "identifierUris": [
+                "http://contoso/a7770d29-4321-41a6-b863-ca11d6639448"
+            ],
+            "createdDateTime": "2019-09-15T05:23:08Z",
+            "displayName": "My app",
+            "isDeviceOnlyAuthSupported": null,
+            "groupMembershipClaims": null,
+            "optionalClaims": null,
+            "orgRestrictions": [],
+            "publisherDomain": "contoso.onmicrosoft.com",
+            "signInAudience": "AzureADMyOrg",
+            "tags": [],
+            "tokenEncryptionKeyId": null,
+            "api": {
+                "requestedAccessTokenVersion": null,
+                "acceptMappedClaims": null,
+                "knownClientApplications": [],
+                "oauth2PermissionScopes": [],
+                "preAuthorizedApplications": []
+            },
+            "appRoles": [],
+            "publicClient": {
+                "redirectUris": []
+            },
+            "info": {
+                "termsOfServiceUrl": null,
+                "supportUrl": null,
+                "privacyStatementUrl": null,
+                "marketingUrl": null,
+                "logoUrl": null
+            },
+            "keyCredentials": [],
+            "parentalControlSettings": {
+                "countriesBlockedForMinors": [],
+                "legalAgeGroupRule": "Allow"
+            },
+            "passwordCredentials": [],
+            "requiredResourceAccess": [],
+            "web": {
+                "redirectUris": [
+                    "https://127.0.0.1:444/applications/default.aspx"
+                ],
+                "homePageUrl": "http://www.contoso.com/landingPage",
+                "logoutUrl": null,
+                "implicitGrantSettings": {
+                    "enableIdTokenIssuance": true,
+                    "enableAccessTokenIssuance": false
+                }
+            }
+        }
+    ]
 }
 ```
 
