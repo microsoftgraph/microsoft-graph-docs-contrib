@@ -1,7 +1,7 @@
 ---
 title: "Get settingStateDeviceSummary"
 description: "Read properties and relationships of the settingStateDeviceSummary object."
-author: "tfitzmac"
+author: "davidmu1"
 localization_priority: Normal
 ms.prod: "Intune"
 doc_type: apiPageType
@@ -78,6 +78,7 @@ Content-Length: 450
   }
 }
 ```
+
 
 
 

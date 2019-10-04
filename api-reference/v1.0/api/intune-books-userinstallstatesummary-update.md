@@ -1,7 +1,7 @@
 ---
 title: "Update userInstallStateSummary"
 description: "Update the properties of a userInstallStateSummary object."
-author: "tfitzmac"
+author: "davidmu1"
 localization_priority: Normal
 ms.prod: "Intune"
 doc_type: apiPageType
@@ -89,6 +89,7 @@ Content-Length: 238
   "notInstalledDeviceCount": 7
 }
 ```
+
 
 
 

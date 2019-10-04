@@ -1,7 +1,7 @@
 ---
 title: "Update windowsInformationProtectionAppLockerFile"
 description: "Update the properties of a windowsInformationProtectionAppLockerFile object."
-author: "tfitzmac"
+author: "davidmu1"
 localization_priority: Normal
 ms.prod: "Intune"
 doc_type: apiPageType
@@ -92,6 +92,7 @@ Content-Length: 260
   "version": "Version value"
 }
 ```
+
 
 
 
