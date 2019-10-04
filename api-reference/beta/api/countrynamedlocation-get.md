@@ -1,6 +1,6 @@
 ---
 title: "Get countryNamedLocation"
-description: "Retrieve the properties and relationships of countrynamedlocation object."
+description: "Retrieve the properties and relationships of countryNamedlocation object."
 localization_priority: Normal
 author: "davidmu1"
 ms.prod: "microsoft-identity-platform"
@@ -11,7 +11,7 @@ doc_type: apiPageType
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Retrieve the properties and relationships of [countryNamedLocation](../resources/countryNamedLocation.md) object.
+Retrieve the properties and relationships of a [countryNamedLocation](../resources/countryNamedLocation.md) object.
 
 ## Permissions
 
@@ -39,7 +39,7 @@ This method supports the `Select` OData query parameter to help customize the re
 
 | Name      |Description|
 |:----------|:----------|
-| Authorization | Bearer {token} |
+| Authorization | Bearer {token}. Required. |
 
 ## Request body
 
