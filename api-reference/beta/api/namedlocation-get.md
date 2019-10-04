@@ -1,6 +1,6 @@
 ---
 title: "Get namedLocation"
-description: "Retrieve the properties and relationships of namedlocation object."
+description: "Retrieve the properties and relationships of a namedlocation object."
 localization_priority: Normal
 author: "davidmu1"
 ms.prod: "microsoft-identity-platform"
@@ -11,7 +11,7 @@ doc_type: apiPageType
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Retrieve the properties and relationships of [namedLocation](../resources/namedlocation.md) object.
+Retrieve the properties and relationships of a [namedLocation](../resources/namedlocation.md) object.
 
 ## Permissions
 
@@ -33,13 +33,13 @@ GET /conditionalaccess/namedLocations/{id}
 
 ## Optional query parameters
 
-This method supports the `Select` OData query parameter to help customize the response. For general information, see [OData query parameters](/graph/query-parameters).
+This method supports the `$select` OData query parameter to help customize the response. For general information, see [OData query parameters](/graph/query-parameters).
 
 ## Request headers
 
 | Name      |Description|
 |:----------|:----------|
-| Authorization | Bearer {token} |
+| Authorization | Bearer {token}. Required. |
 
 ## Request body
 
