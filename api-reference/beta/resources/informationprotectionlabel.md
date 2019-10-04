@@ -1,6 +1,6 @@
 ---
 title: "informationProtectionLabel resource type"
-description: "Describes the information proteciton label that details how to properly apply a sensitivity label to information."
+description: "Describes the information protection label that details how to properly apply a sensitivity label to information."
 localization_priority: Normal
 author: "tommoser"
 ms.prod: "microsoft.informationprotection"
@@ -11,7 +11,7 @@ doc_type: "resourcePageType"
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-The informationProtectionLabel resource describes the configuration of sensitivity labels that apply to a user or tenant.  
+The [informationProtectionLabel](informationprotectionlabel.md) resource describes the configuration of sensitivity labels that apply to a user or tenant.  
 
 ## Methods
 

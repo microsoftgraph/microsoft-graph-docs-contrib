@@ -41,9 +41,6 @@ For details about known issues with Microsoft Graph APIs, see [Known issues](kno
 | Change          | beta          | Change **removeLabel** API to [evaluateRemoval](/graph/api/informationprotectionlabel-evaluateremoval.md?view=graph-rest-beta). |
 | Deletion        | beta          | Removed **auditInfo** from [extractLabel](/graph/api/informationprotectionlabel-extractlabel.md?view=graph-rest-beta). |
 
-
-
-
 ## September 2019
 
 ### Calendar, mail, groups
