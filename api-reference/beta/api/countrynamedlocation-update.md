@@ -1,17 +1,17 @@
 ---
-title: "Update countrynamedlocation"
-description: "Update the properties of countrynamedlocation object."
+title: "Update countryNamedlocation"
+description: "Update the properties of countryNamedLocation object."
 localization_priority: Normal
 author: "davidmu1"
 ms.prod: "microsoft-identity-platform"
 doc_type: apiPageType
 ---
 
-# Update countrynamedlocation
+# Update countryNamedLocation
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Update the properties of [countryNamedLocation](../resources/countryNamedLocation.md) object.
+Update the properties of a [countryNamedLocation](../resources/countryNamedLocation.md) object.
 
 ## Permissions
 
@@ -35,7 +35,8 @@ PATCH /conditionalaccess/namedLocations/{id}
 
 | Name       | Description|
 |:-----------|:-----------|
-| Authorization | Bearer {token} |
+| Authorization | Bearer {token}. Required. |
+| Content-type  | application/json. Required. |
 
 ## Request body
 
@@ -43,9 +44,9 @@ In the request body, supply the values for relevant fields that should be update
 
 | Property     | Type        | Description |
 |:-------------|:------------|:------------|
-|countriesAndRegions|String collection|List of countries and/or regions in two-letter format specified by ISO 3166-2|
-|displayName|String|Human-readable name of the location|
-|includeUnknownCountriesAndRegions|Boolean|True if IP addresses that don't map to a country or region should be included in the named location|
+|countriesAndRegions|String collection|List of countries and/or regions in two-letter format specified by ISO 3166-2.|
+|displayName|String|Human-readable name of the location.|
+|includeUnknownCountriesAndRegions|Boolean|True if IP addresses that don't map to a country or region should be included in the named location,|
 
 ## Response
 
@@ -79,8 +80,6 @@ Content-type: application/json
 ### Response
 
 The following is an example of the response.
-
-> **Note:** The response object shown here might be shortened for readability. All the properties will be returned from an actual call.
 
 <!-- {
   "blockType": "response",
