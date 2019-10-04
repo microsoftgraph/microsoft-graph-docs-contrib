@@ -11,16 +11,16 @@ doc_type: "apiPageType"
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-The **evaluateRemoval** API informs the consuming application of specifically what actions it should take to remove the label information.  
+Indicate to the consuming application what actions it should take to remove the label information.
 
-Given [contentInfo](../resources/contentinfo.md) as an input, which includes existing content metadata [key/value pairs](../resources/keyvaluepair.md), the API returns an [informationProtectionAction](../resources/informationProtectionAction.md) that contains some combination of one of more of the following: 
+Given [contentInfo](../resources/contentinfo.md) as an input, which includes existing content metadata [key/value pairs](../resources/keyvaluepair.md), the API returns an [informationProtectionAction](../resources/informationprotectionaction.md) that contains some combination of one of more of the following: 
 
-* [justifyAction](../resources/justifyAction.md)
-* [metadataAction](../resources/metadataAction.md)
-* [removeContentFooterAction](../resources/removeContentFooterAction.md)
-* [removeContentHeaderAction](../resources/removeContentHeaderAction.md)
-* [removeProtectionAction](../resources/removeProtectionAction.md)
-* [removeWatermarkAction](../resources/removeWatermarkAction.md)
+* [justifyAction](../resources/justifyaction.md)
+* [metadataAction](../resources/metadataaction.md)
+* [removeContentFooterAction](../resources/removecontentfooteraction.md)
+* [removeContentHeaderAction](../resources/removecontentheaderaction.md)
+* [removeProtectionAction](../resources/removeprotectionaction.md)
+* [removeWatermarkAction](../resources/removewatermarkaction.md)
 
 ## Permissions
 
@@ -37,7 +37,7 @@ One of the following permissions is required to call this API. To learn more, in
 <!-- { "blockType": "ignored" } -->
 
 ```http
-POST /informationprotection/policy/labels/{id}/evaluateRemoval
+POST /informationprotection/policy/labels/evaluateRemoval
 ```
 
 ## Request headers
@@ -52,13 +52,13 @@ In the request body, provide a JSON object with the following parameters.
 
 | Parameter    | Type        | Description |
 |:-------------|:------------|:------------|
-| contentInfo     | [contentInfo](../resources/contentInfo.md)         | Provides details on the [content format](../resources/enums.md#contentFormat), [content state](../resources/enums.md#contentState), and existing [metadata](../resources/keyvaluepair.md) as key/value pairs.           |
-|downgradeJustification|[downgradeJustification](../resources/downgradeJustification.md)| Justification that must be provided by the user or application logic. |
+| contentInfo     | [contentInfo](../resources/contentinfo.md)         | Provides details on the [content format](../resources/enums.md#contentformat), [content state](../resources/enums.md#contentstate), and existing [metadata](../resources/keyvaluepair.md) as key/value pairs.           |
+|downgradeJustification|[downgradeJustification](../resources/downgradejustification.md)| Justification that must be provided by the user or application logic. |
 
 
 ## Response
 
-If successful, this method returns a `200 OK` response code and a new [informationProtectionAction](../resources/informationprotectionaction.md) collection object in the response body. The [informationProtectionAction object](../resources/informationprotectionaction.md) will contain a [metadataAction](../resources/metadataaction.md) object that informs 
+If successful, this method returns a `200 OK` response code and a new [informationProtectionAction](../resources/informationprotectionaction.md) collection object in the response body. The [informationProtectionAction object](../resources/informationprotectionaction.md) will contain a [metadataAction](../resources/metadataaction.md) object that informs the application which metadata to remove. 
 
 ## Examples
 
@@ -73,58 +73,58 @@ The following is an example of the request.
 }-->
 
 ```http
-POST https://graph.microsoft.com/beta/informationprotection/policy/labels/{id}/evaluateRemoval
+POST https://graph.microsoft.com/beta/informationprotection/policy/labels/evaluateRemoval
 Content-type: application/json
 
 {
-    "contentInfo": {
-        "@odata.type": "#microsoft.graph.contentInfo",
-        "format@odata.type": "#microsoft.graph.contentFormat",
-        "format": "file",
-        "identifier": null,
-        "state@odata.type": "#microsoft.graph.contentState",
-        "state": "rest",
-        "metadata@odata.type": "#Collection(microsoft.graph.keyValuePair)",
-        "metadata": [
-            {
-                "@odata.type": "#microsoft.graph.keyValuePair",
-                "name": "MSIP_Label_3a80e051-487c-40d4-b491-73ad25d997e6_Enabled",
-                "value": "True"
-            },
-            {
-                "@odata.type": "#microsoft.graph.keyValuePair",
-                "name": "MSIP_Label_3a80e051-487c-40d4-b491-73ad25d997e6_Method",
-                "value": "Standard"
-            },
-            {
-                "@odata.type": "#microsoft.graph.keyValuePair",
-                "name": "MSIP_Label_3a80e051-487c-40d4-b491-73ad25d997e6_SetDate",
-                "value": "1/1/0001 12:00:00 AM"
-            },
-            {
-                "@odata.type": "#microsoft.graph.keyValuePair",
-                "name": "MSIP_Label_3a80e051-487c-40d4-b491-73ad25d997e6_SiteId",
-                "value": "cfa4cf1d-a337-4481-aa99-19d8f3d63f7c"
-            },
-            {
-                "@odata.type": "#microsoft.graph.keyValuePair",
-                "name": "MSIP_Label_3a80e051-487c-40d4-b491-73ad25d997e6_Name",
-                "value": "LabelScopedToBob_Tests"
-            },
-            {
-                "@odata.type": "#microsoft.graph.keyValuePair",
-                "name": "MSIP_Label_3a80e051-487c-40d4-b491-73ad25d997e6_ContentBits",
-                "value": "0"
-            },
-            {
-                "@odata.type": "#microsoft.graph.keyValuePair",
-                "name": "MSIP_Label_3a80e051-487c-40d4-b491-73ad25d997e6_ActionId",
-                "value": "00000000-0000-0000-0000-000000000000"
-            }
-        ]
-    },
-    "downgradeJustification": {
-        "justificationMessage": "The information has be declassified.",
+  "contentInfo": {
+    "@odata.type": "#microsoft.graph.contentInfo",
+    "format@odata.type": "#microsoft.graph.contentFormat",
+    "format": "default",
+    "identifier": null,
+    "state@odata.type": "#microsoft.graph.contentState",
+    "state": "rest",
+    "metadata@odata.type": "#Collection(microsoft.graph.keyValuePair)",
+    "metadata": [
+      {
+        "@odata.type": "#microsoft.graph.keyValuePair",
+        "name": "MSIP_Label_722a5300-ac39-4c9a-88e3-f54c46676417_Enabled",
+        "value": "True"
+      },
+      {
+        "@odata.type": "#microsoft.graph.keyValuePair",
+        "name": "MSIP_Label_722a5300-ac39-4c9a-88e3-f54c46676417_Method",
+        "value": "Standard"
+      },
+      {
+        "@odata.type": "#microsoft.graph.keyValuePair",
+        "name": "MSIP_Label_722a5300-ac39-4c9a-88e3-f54c46676417_SetDate",
+        "value": "1/1/0001 12:00:00 AM"
+      },
+      {
+        "@odata.type": "#microsoft.graph.keyValuePair",
+        "name": "MSIP_Label_722a5300-ac39-4c9a-88e3-f54c46676417_SiteId",
+        "value": "cfa4cf1d-a337-4481-aa99-19d8f3d63f7c"
+      },
+      {
+        "@odata.type": "#microsoft.graph.keyValuePair",
+        "name": "MSIP_Label_722a5300-ac39-4c9a-88e3-f54c46676417_Name",
+        "value": "General"
+      },
+      {
+        "@odata.type": "#microsoft.graph.keyValuePair",
+        "name": "MSIP_Label_722a5300-ac39-4c9a-88e3-f54c46676417_ContentBits",
+        "value": "0"
+      },
+      {
+        "@odata.type": "#microsoft.graph.keyValuePair",
+        "name": "MSIP_Label_722a5300-ac39-4c9a-88e3-f54c46676417_ActionId",
+        "value": "00000000-0000-0000-0000-000000000000"
+      }
+    ]
+  },
+  "downgradeJustification": {
+        "justificationMessage": "The information has been declassified.",
         "isDowngradeJustified": true
     }
 }
@@ -146,19 +146,20 @@ The following is an example of the response.
 ```http
 HTTP/1.1 200 OK
 Content-type: application/json
+
 {
     "@odata.context": "https://graph.microsoft.com/beta/$metadata#Collection(microsoft.graph.informationProtectionAction)",
     "value": [
         {
             "@odata.type": "#microsoft.graph.metadataAction",
             "metadataToRemove": [
-                "MSIP_Label_3a80e051-487c-40d4-b491-73ad25d997e6_Enabled",
-                "MSIP_Label_3a80e051-487c-40d4-b491-73ad25d997e6_Method",
-                "MSIP_Label_3a80e051-487c-40d4-b491-73ad25d997e6_SetDate",
-                "MSIP_Label_3a80e051-487c-40d4-b491-73ad25d997e6_SiteId",
-                "MSIP_Label_3a80e051-487c-40d4-b491-73ad25d997e6_Name",
-                "MSIP_Label_3a80e051-487c-40d4-b491-73ad25d997e6_ContentBits",
-                "MSIP_Label_3a80e051-487c-40d4-b491-73ad25d997e6_ActionId"
+                "MSIP_Label_722a5300-ac39-4c9a-88e3-f54c46676417_Enabled",
+                "MSIP_Label_722a5300-ac39-4c9a-88e3-f54c46676417_Method",
+                "MSIP_Label_722a5300-ac39-4c9a-88e3-f54c46676417_SetDate",
+                "MSIP_Label_722a5300-ac39-4c9a-88e3-f54c46676417_SiteId",
+                "MSIP_Label_722a5300-ac39-4c9a-88e3-f54c46676417_Name",
+                "MSIP_Label_722a5300-ac39-4c9a-88e3-f54c46676417_ContentBits",
+                "MSIP_Label_722a5300-ac39-4c9a-88e3-f54c46676417_ActionId"
             ],
             "metadataToAdd": []
         }

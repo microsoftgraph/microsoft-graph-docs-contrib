@@ -11,7 +11,7 @@ doc_type: "resourcePageType"
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-The [evaluateApplication](../api/informationprotectionlabel-evaluateApplication.md) or [evaluateClassificationResults](../api/informationprotectionlabel-evaluateClassificationResults.md) APIs may return addContentWatermarkAction. The action informs the consuming application that a content watermark is required and of the specific properties of that watermark.
+Represents an action that specifies the details on the content watermark to be added to the information, if applicable.
 
 ## Properties
 
@@ -34,7 +34,7 @@ The following is a JSON representation of the resource.
 
   ],
   "@odata.type": "microsoft.graph.addWatermarkAction",
-  "baseType": "microsoft.informationProtection.informationProtectionAction"
+  "baseType": "microsoft.graph.informationProtectionAction"
 }-->
 
 ```json

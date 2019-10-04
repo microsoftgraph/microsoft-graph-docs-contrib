@@ -14,7 +14,7 @@ doc_type: "apiPageType"
 Using the metadata that exists on an already-labeled piece of information, resolve the metadata to a specific sensitivity label. The [contentInfo](../resources/contentinfo.md) input is resolved to [informationProtectionContentLabel](../resources/informationprotectioncontentlabel.md).
 
 >[!NOTE]
->The **[informationProtectionContentLabel](../resources/informationProtectionContentLabel.md)** resource represents a sensitivity label that has been applied to a piece of information. [informationProtectionLabel](../resources/informationProtectionLabel.md) objects are the abstract labels that are part of the organizational labeling policy and can be applied to information.
+>The **[informationProtectionContentLabel](../resources/informationprotectioncontentlabel.md)** resource represents a sensitivity label that has been applied to a piece of information. [informationProtectionLabel](../resources/informationprotectionlabel.md) objects are the abstract labels that are part of the organizational labeling policy and can be applied to information.
 
 ## Permissions
 
@@ -31,7 +31,7 @@ One of the following permissions is required to call this API. To learn more, in
 <!-- { "blockType": "ignored" } -->
 
 ```http
-POST /informationprotection/policy/labels/{id}/extractLabel
+POST /informationprotection/policy/labels/extractLabel
 ```
 
 ## Request headers
@@ -46,11 +46,11 @@ In the request body, provide a JSON object with the following parameters.
 
 | Parameter   | Type                                       | Description                                                                                                                                                                                                   |
 | :---------- | :----------------------------------------- | :------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ |
-| contentInfo | [contentInfo](../resources/contentInfo.md) | Provides details on the [content format](../resources/enums.md#contentFormat), [content state](../resources/enums.md#contentState), and existing [metadata](../resources/keyvaluepair.md) as key/value pairs. |
+| contentInfo | [contentInfo](../resources/contentinfo.md) | Provides details on the [content format](../resources/enums.md#contentformat), [content state](../resources/enums.md#contentstate), and existing [metadata](../resources/keyvaluepair.md) as key/value pairs. |
 
 ## Response
 
-If successful, this method returns `200, OK` response code and a new [informationProtectionContentLabel](../resources/informationprotectioncontentlabel.md) object in the response body.
+If successful, this method returns `200 OK` response code and a new [informationProtectionContentLabel](../resources/informationprotectioncontentlabel.md) object in the response body.
 
 ## Examples
 
@@ -65,8 +65,9 @@ The following is an example of the request.
 }-->
 
 ```http
-POST https://graph.microsoft.com/beta/informationprotection/policy/labels/{id}/extractLabel
+POST https://graph.microsoft.com/beta/informationprotection/policy/labels/extractLabel
 Content-type: application/json
+
 {
     "contentInfo": {
         "@odata.type": "#microsoft.graph.contentInfo",
@@ -79,37 +80,37 @@ Content-type: application/json
         "metadata": [
             {
                 "@odata.type": "#microsoft.graph.keyValuePair",
-                "name": "MSIP_Label_3a80e051-487c-40d4-b491-73ad25d997e6_Enabled",
+                "name": "MSIP_Label_722a5300-ac39-4c9a-88e3-f54c46676417_Enabled",
                 "value": "True"
             },
             {
                 "@odata.type": "#microsoft.graph.keyValuePair",
-                "name": "MSIP_Label_3a80e051-487c-40d4-b491-73ad25d997e6_Method",
+                "name": "MSIP_Label_722a5300-ac39-4c9a-88e3-f54c46676417_Method",
                 "value": "Standard"
             },
             {
                 "@odata.type": "#microsoft.graph.keyValuePair",
-                "name": "MSIP_Label_3a80e051-487c-40d4-b491-73ad25d997e6_SetDate",
+                "name": "MSIP_Label_722a5300-ac39-4c9a-88e3-f54c46676417_SetDate",
                 "value": "1/1/0001 12:00:00 AM"
             },
             {
                 "@odata.type": "#microsoft.graph.keyValuePair",
-                "name": "MSIP_Label_3a80e051-487c-40d4-b491-73ad25d997e6_SiteId",
+                "name": "MSIP_Label_722a5300-ac39-4c9a-88e3-f54c46676417_SiteId",
                 "value": "cfa4cf1d-a337-4481-aa99-19d8f3d63f7c"
             },
             {
                 "@odata.type": "#microsoft.graph.keyValuePair",
-                "name": "MSIP_Label_3a80e051-487c-40d4-b491-73ad25d997e6_Name",
-                "value": "General"
+                "name": "MSIP_Label_722a5300-ac39-4c9a-88e3-f54c46676417_Name",
+                "value": "Top Secret"
             },
             {
                 "@odata.type": "#microsoft.graph.keyValuePair",
-                "name": "MSIP_Label_3a80e051-487c-40d4-b491-73ad25d997e6_ContentBits",
+                "name": "MSIP_Label_722a5300-ac39-4c9a-88e3-f54c46676417_ContentBits",
                 "value": "0"
             },
             {
                 "@odata.type": "#microsoft.graph.keyValuePair",
-                "name": "MSIP_Label_3a80e051-487c-40d4-b491-73ad25d997e6_ActionId",
+                "name": "MSIP_Label_722a5300-ac39-4c9a-88e3-f54c46676417_ActionId",
                 "value": "00000000-0000-0000-0000-000000000000"
             }
         ]
@@ -132,18 +133,20 @@ The following is an example of the response.
 ```http
 HTTP/1.1 200 OK
 Content-type: application/json
+
 {
-  "creationDateTime": "datetime-value",
-  "assignmentMethod": "assignmentMethod-value",
-  "label": {
-    "id": "id-value",
-    "name": "name-value",
-    "description": "description-value",
-    "color": "color-value",
-    "sensitivity": 99,
-    "tooltip": "tooltip-value",
-    "isActive": true
-  }
+    "@odata.context": "https://graph.microsoft.com/beta/$metadata#microsoft.graph.informationProtectionContentLabel",
+    "creationDateTime": "1970-01-01T00:00:00Z",
+    "assignmentMethod": "standard",
+    "label": {
+        "id": "722a5300-ac39-4c9a-88e3-f54c46676417",
+        "name": "Top Secret",
+        "description": "",
+        "color": "#000000",
+        "sensitivity": 13,
+        "tooltip": "This information is top secret.",
+        "isActive": true
+    }
 }
 ```
 

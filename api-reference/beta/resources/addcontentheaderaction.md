@@ -11,7 +11,7 @@ doc_type: "resourcePageType"
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-The [evaluateApplication](../api/informationprotectionlabel-evaluateApplication.md) or [evaluateClassificationResults](../api/informationprotectionlabel-evaluateClassificationResults.md) APIs may return addContentHeaderAction. The action informs the consuming application that a content header is required and of the specific properties of that header.
+Represents an action that specifies the details on the content header to be added to the information, if applicable.
 
 ## Properties
 
@@ -35,7 +35,7 @@ The following is a JSON representation of the resource.
 
   ],
   "@odata.type": "microsoft.graph.addContentHeaderAction",
-  "baseType": "microsoft.informationProtection.informationProtectionAction"
+  "baseType": "microsoft.graph.informationProtectionAction"
 }-->
 
 ```json

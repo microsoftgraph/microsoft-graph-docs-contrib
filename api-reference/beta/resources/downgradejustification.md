@@ -11,14 +11,14 @@ doc_type: "resourcePageType"
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Downgrade justification may be required based on label policy configuration in Office Security and Compliance Center.
+Downgrade justification might be required based on label policy configuration in Office Security and Compliance Center.
 
 ## Properties
 
 | Property             | Type    | Description                                                                                          |
 | :------------------- | :------ | :--------------------------------------------------------------------------------------------------- |
-| isDowngradeJustified | Boolean | Set to indicate that downgrade is or is not justified.                                               |
-| justificationMessage | String  | Message to provide to API on why downgrade is justified. Message will appear in administrative logs. |
+| isDowngradeJustified | Boolean | Indicates whether the downgrade is or is not justified.                                              |
+| justificationMessage | String  | Message that indicates why a downgrade is justified. The message will appear in administrative logs. |
 
 ## JSON representation
 

@@ -11,7 +11,7 @@ doc_type: "resourcePageType"
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-**protectionByTemplateAction** may be returned by [evaluateApplication](../api/informationprotectionlabel-evaluateApplication.md) or [evaluateClassificationResults](../api/informationprotectionlabel-evaluateClassificationResults.md) if the resulting label has been configured to apply protection. The consuming application must read the templateId from the result and then use a client library, such as the Microsoft Information Protection SDK, to apply protection via Azure Information Protection.
+**protectionByTemplateAction** may be returned by [evaluateApplication](../api/informationprotectionlabel-evaluateapplication.md) or [evaluateClassificationResults](../api/informationprotectionlabel-evaluateclassificationresults.md) if the resulting label has been configured to apply protection. The consuming application must read the templateId from the result and then use a client library, such as the Microsoft Information Protection SDK, to apply protection via Azure Information Protection.
 
 ## Properties
 
@@ -29,7 +29,7 @@ The following is a JSON representation of the resource.
 
   ],
   "@odata.type": "microsoft.graph.protectByTemplateAction",
-  "baseType": "microsoft.informationProtection.informationProtectionAction"
+  "baseType": "microsoft.graph.informationProtectionAction"
 }-->
 
 ```json

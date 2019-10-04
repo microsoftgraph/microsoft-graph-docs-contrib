@@ -11,7 +11,7 @@ doc_type: "resourcePageType"
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Data classification results from Azure Information Protection, Office, and other Microsoft services return a [well-defined set of classification types(https://docs.microsoft.com/en-us/office365/securitycompliance/what-the-sensitive-information-types-look-for)]. These types can be provided to the [evaluateClassificationResults](../api/informationprotectionlabel-evaluateClassificationResults.md) API to resolve a sensitive information to a Microsoft Information Protection label. 
+Represents the result of a classification operation from the Microsoft Classification Engine. Data classification results from Azure Information Protection, Office, and other Microsoft services may return a [well-defined set of classification types](https://docs.microsoft.com/en-us/office365/securitycompliance/what-the-sensitive-information-types-look-for). These types can be provided to the [evaluateClassificationResults](../api/informationprotectionlabel-evaluateclassificationresults.md) API to resolve a sensitive information to a Microsoft Information Protection label. 
 
 ## Properties
 
@@ -19,7 +19,7 @@ Data classification results from Azure Information Protection, Office, and other
 | :-------------- | :---- | :--------------------------------------------------------------------- |
 | confidenceLevel | Int32 | The confidence level, 0 to 100, of the result.                         |
 | count           | Int32 | The number of instances of the specific information type in the input. |
-| sensitiveTypeId | Guid  | The Guid of the discovered sensitive information type.                 |
+| sensitiveTypeId | GUID  | The GUID of the discovered sensitive information type.                 |
 
 ## JSON representation
 

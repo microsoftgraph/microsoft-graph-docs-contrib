@@ -15,12 +15,12 @@ doc_type: "resourcePageType"
 
 ## Properties
 
-| Property   | Type                                       | Description                                   |
-| :--------- | :----------------------------------------- | :-------------------------------------------- |
-| format     | String                                     | Possible values are: `default`, `email`.      |
-| identifier | String                                     | Identifier used for Azure Information Protection Analytics.                                               |
-| metadata   | [keyValuePair](keyvaluepair.md) collection | Existing Microsoft Information Protection metadata is passed as key/value pairs, where the key is the MSIP_Label_GUID_PropName.                                              |
-| state      | String                                     | Possible values are: `rest`, `motion`, `use`. |
+| Property   | Type                                       | Description                                                                                                                     |
+| :--------- | :----------------------------------------- | :------------------------------------------------------------------------------------------------------------------------------ |
+| format     | String                                     | Possible values are: `default`, `email`.                                                                                        |
+| identifier | String                                     | Identifier used for Azure Information Protection Analytics.                                                                     |
+| metadata   | [keyValuePair](keyvaluepair.md) collection | Existing Microsoft Information Protection metadata is passed as key/value pairs, where the key is the MSIP_Label_GUID_PropName. |
+| state      | String                                     | Possible values are: `rest`, `motion`, `use`.                                                                                   |
 
 ## JSON representation
 

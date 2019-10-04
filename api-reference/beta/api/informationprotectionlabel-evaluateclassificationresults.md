@@ -11,25 +11,25 @@ doc_type: "apiPageType"
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Using [classification results](../resources/classificationResult.md), compute the [information protection label](../resources/informationProtectionLabel.md) that should be applied and return the set of actions that must be taken to correctly label the information. This API is useful when a label should be set automatically based on classification of the file contents, rather than labeled directly by a user or service. 
+Using [classification results](../resources/classificationresult.md), compute the [information protection label](../resources/informationprotectionlabel.md) that should be applied and return the set of actions that must be taken to correctly label the information. This API is useful when a label should be set automatically based on classification of the file contents, rather than labeled directly by a user or service. 
 
-To evaluate based on classification results, provide [contentInfo](../resources/contentInfo.md), which includes existing content metadata [key/value pairs](../resources/keyvaluepair.md), and [classification results](../resources/classificationResult.md). The API returns an [informationProtectionAction](../resources/informationProtectionAction.md) that contains one of more of the following: 
+To evaluate based on classification results, provide [contentInfo](../resources/contentinfo.md), which includes existing content metadata [key/value pairs](../resources/keyvaluepair.md), and [classification results](../resources/classificationresult.md). The API returns an [informationProtectionAction](../resources/informationprotectionaction.md) that contains one of more of the following: 
 
-* [addContentFooterAction](../resources/addContentFooterAction.md)
-* [addContentHeaderAction](../resources/addContentHeaderAction.md)
-* [addWatermarkAction](../resources/addWatermarkAction.md)
-* [applyLabelAction](../resources/applyLabelAction.md)
+* [addContentFooterAction](../resources/addcontentfooteraction.md)
+* [addContentHeaderAction](../resources/addcontentheaderaction.md)
+* [addWatermarkAction](../resources/addWatermarkaction.md)
+* [applyLabelAction](../resources/applylabelaction.md)
 * [customAction](../resources/customaction.md)
-* [justifyAction](../resources/justifyAction.md)
-* [metadataAction](../resources/metadataAction.md)
-* [protectAdhocAction](../resources/protectAdhocAction.md)
-* [protectByTemplateAction](../resources/protectByTemplateAction.md)
-* [protectionDoNotForwardAction](../resources/protectDoNotForwardAction.md)
-* [recommendLabelAction](../resources/recommendLabelAction.md)
-* [removeContentFooterAction](../resources/removeContentFooterAction.md)
-* [removeContentHeaderAction](../resources/removeContentHeaderAction.md)
-* [removeProtectionAction](../resources/removeProtectionAction.md)
-* [removeWatermarkAction](../resources/removeWatermarkAction.md)
+* [justifyAction](../resources/justifyaction.md)
+* [metadataAction](../resources/metadataaction.md)
+* [protectAdhocAction](../resources/protectadhocaction.md)
+* [protectByTemplateAction](../resources/protectBytemplateaction.md)
+* [protectionDoNotForwardAction](../resources/protectdonotforwardaction.md)
+* [recommendLabelAction](../resources/recommendlabelaction.md)
+* [removeContentFooterAction](../resources/removecontentfooteraction.md)
+* [removeContentHeaderAction](../resources/removecontentheaderaction.md)
+* [removeProtectionAction](../resources/removeprotectionaction.md)
+* [removeWatermarkAction](../resources/removewatermarkaction.md)
 
 ## Permissions
 
@@ -61,16 +61,16 @@ In the request body, provide a JSON object with the following parameters.
 
 | Parameter             | Type                                                                    | Description                                                                                                                                                                                                                                                                           |
 | :-------------------- | :---------------------------------------------------------------------- | :------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ |
-| contentInfo           | [contentInfo](../resources/contentInfo.md)                              | Provides details on the [content format](../resources/enums.md#contentFormat), [content state](../resources/enums.md#contentState), and existing [metadata](../resources/keyvaluepair.md) as key/value pairs.                                                                         |
-| classificationResults | [classificationResult](../resources/classificationResult.md) collection | Contains the set of classification results returned by the data classification endpoint. Classificaiton information is used to determine the appropriate label based on the Microsoft Information Protection policy label configuration in Office 365 Security and Compliance Center. |
+| contentInfo           | [contentInfo](../resources/contentInfo.md)                              | Provides details on the [content format](../resources/enums.md#contentFormat), [content state](../resources/enums.md#contentstate), and existing [metadata](../resources/keyvaluepair.md) as key/value pairs.                                                                         |
+| classificationResults | [classificationResult](../resources/classificationresult.md) collection | Contains the set of classification results returned by the data classification endpoint. Classificaiton information is used to determine the appropriate label based on the Microsoft Information Protection policy label configuration in Office 365 Security and Compliance Center. |
 
 ## Response
 
-If successful, this method returns `200, OK` response code and a new [informationProtectionAction](../resources/informationprotectionaction.md) collection object in the response body.
+If successful, this method returns `200 OK` response code and a new [informationProtectionAction](../resources/informationprotectionaction.md) collection object in the response body.
 
 ## Examples
 
-The following is an example of how to call this API.
+The following example shows how to call this API.
 
 ### Request
 
@@ -81,63 +81,25 @@ The following is an example of the request.
 }-->
 
 ```http
-POST https://graph.microsoft.com/beta/informationprotection/policy/labels/{id}/evaluateClassificationResults
+POST https://graph.microsoft.com/beta/informationprotection/policy/labels/evaluateClassificationResults
 Content-type: application/json
 
 {
-    "contentInfo": {
-        "@odata.type": "#microsoft.graph.contentInfo",
-        "format@odata.type": "#microsoft.graph.contentFormat",
-        "format": "file",
-        "identifier": null,
-        "state@odata.type": "#microsoft.graph.contentState",
-        "state": "rest",
-        "metadata@odata.type": "#Collection(microsoft.graph.keyValuePair)",
-        "metadata": [
-            {
-                "@odata.type": "#microsoft.graph.keyValuePair",
-                "name": "MSIP_Label_3a80e051-487c-40d4-b491-73ad25d997e6_Enabled",
-                "value": "True"
-            },
-            {
-                "@odata.type": "#microsoft.graph.keyValuePair",
-                "name": "MSIP_Label_3a80e051-487c-40d4-b491-73ad25d997e6_Method",
-                "value": "Standard"
-            },
-            {
-                "@odata.type": "#microsoft.graph.keyValuePair",
-                "name": "MSIP_Label_3a80e051-487c-40d4-b491-73ad25d997e6_SetDate",
-                "value": "1/1/0001 12:00:00 AM"
-            },
-            {
-                "@odata.type": "#microsoft.graph.keyValuePair",
-                "name": "MSIP_Label_3a80e051-487c-40d4-b491-73ad25d997e6_SiteId",
-                "value": "cfa4cf1d-a337-4481-aa99-19d8f3d63f7c"
-            },
-            {
-                "@odata.type": "#microsoft.graph.keyValuePair",
-                "name": "MSIP_Label_3a80e051-487c-40d4-b491-73ad25d997e6_Name",
-                "value": "General"
-            },
-            {
-                "@odata.type": "#microsoft.graph.keyValuePair",
-                "name": "MSIP_Label_3a80e051-487c-40d4-b491-73ad25d997e6_ContentBits",
-                "value": "0"
-            },
-            {
-                "@odata.type": "#microsoft.graph.keyValuePair",
-                "name": "MSIP_Label_3a80e051-487c-40d4-b491-73ad25d997e6_ActionId",
-                "value": "00000000-0000-0000-0000-000000000000"
-            }
-        ]
-    },
+  "contentInfo": {
+    "@odata.type": "#microsoft.graph.contentInfo",
+    "format@odata.type": "#microsoft.graph.contentFormat",
+    "format": "default",
+    "identifier": null,
+    "state@odata.type": "#microsoft.graph.contentState",
+    "state": "rest"
+  },
   "classificationResults": [
     {
-      "sensitiveTypeId": "sensitiveTypeId-value",
-      "count": 99,
-      "confidenceLevel": 99
+      "sensitiveTypeId": "cb353f78-2b72-4c3c-8827-92ebe4f69fdf",
+      "count": 4,
+      "confidenceLevel": 75
     }
-  ]
+   ]
 }
 ```
 
@@ -157,68 +119,63 @@ The following is an example of the response.
 ```http
 HTTP/1.1 200 OK
 Content-type: application/json
+
 {
     "@odata.context": "https://graph.microsoft.com/beta/$metadata#Collection(microsoft.graph.informationProtectionAction)",
     "value": [
         {
-            "@odata.type": "#microsoft.graph.addContentFooterAction",
-            "uiElementName": "MSIPCM_v1_footer",
-            "text": "footerMarking",
-            "fontName": "Calibri",
-            "fontSize": 10,
-            "fontColor": "#000000",
-            "alignment": "left",
-            "margin": 5
-        },
-        {
-            "@odata.type": "#microsoft.graph.addContentHeaderAction",
-            "uiElementName": "MSIPCM_v1_header",
-            "text": "headerMarking",
-            "fontName": "Calibri",
-            "fontSize": 10,
-            "fontColor": "#000000",
-            "alignment": "left",
-            "margin": 5
-        },
-        {
-            "@odata.type": "#microsoft.graph.metadataAction",
-            "metadataToRemove": [
-                "MSIP_Label_3a80e051-487c-40d4-b491-73ad25d997e6_Enabled",
-                "MSIP_Label_3a80e051-487c-40d4-b491-73ad25d997e6_Method",
-                "MSIP_Label_3a80e051-487c-40d4-b491-73ad25d997e6_SetDate",
-                "MSIP_Label_3a80e051-487c-40d4-b491-73ad25d997e6_SiteId",
-                "MSIP_Label_3a80e051-487c-40d4-b491-73ad25d997e6_Name",
-                "MSIP_Label_3a80e051-487c-40d4-b491-73ad25d997e6_ContentBits",
-                "MSIP_Label_3a80e051-487c-40d4-b491-73ad25d997e6_ActionId"
+            "@odata.type": "#microsoft.graph.applyLabelAction",
+            "responsibleSensitiveTypeIds": [
+                "cb353f78-2b72-4c3c-8827-92ebe4f69fdf"
             ],
-            "metadataToAdd": [
+            "actionSource": "automatic",
+            "label": {
+                "id": "722a5300-ac39-4c9a-88e3-f54c46676417",
+                "name": "Top Secret",
+                "description": "",
+                "color": "#000000",
+                "sensitivity": 13,
+                "tooltip": "This information is Top Secret.",
+                "isActive": true
+            },
+            "actions": [
                 {
-                    "name": "MSIP_Label_4662f9a3-dd50-4a20-b984-a7be82e0e79c_Enabled",
-                    "value": "true"
+                    "@odata.type": "#microsoft.graph.protectByTemplateAction",
+                    "templateId": "0e7fea72-7bba-4438-a070-95c292cd6f8c"
                 },
                 {
-                    "name": "MSIP_Label_4662f9a3-dd50-4a20-b984-a7be82e0e79c_SetDate",
-                    "value": "2019-07-03T03:46:37Z"
-                },
-                {
-                    "name": "MSIP_Label_4662f9a3-dd50-4a20-b984-a7be82e0e79c_Method",
-                    "value": "Standard"
-                },
-                {
-                    "name": "MSIP_Label_4662f9a3-dd50-4a20-b984-a7be82e0e79c_Name",
-                    "value": "Confidential"
-                },
-                {
-                    "name": "MSIP_Label_4662f9a3-dd50-4a20-b984-a7be82e0e79c_SiteId",
-                    "value": "cfa4cf1d-a337-4481-aa99-19d8f3d63f7c"
-                },
-                {
-                    "name": "MSIP_Label_4662f9a3-dd50-4a20-b984-a7be82e0e79c_ActionId",
-                    "value": "3a3d0732-aed7-4c70-8e12-000059976a07"
-                },
-                {
-                    "name": "MSIP_Label_4662f9a3-dd50-4a20-b984-a7be82e0e79c_ContentBits",
-                    "value": "3"
+                    "@odata.type": "#microsoft.graph.metadataAction",
+                    "metadataToRemove": [],
+                    "metadataToAdd": [
+                        {
+                            "name": "MSIP_Label_722a5300-ac39-4c9a-88e3-f54c46676417_Enabled",
+                            "value": "true"
+                        },
+                        {
+                            "name": "MSIP_Label_722a5300-ac39-4c9a-88e3-f54c46676417_SetDate",
+                            "value": "2019-10-03T21:50:20Z"
+                        },
+                        {
+                            "name": "MSIP_Label_722a5300-ac39-4c9a-88e3-f54c46676417_Method",
+                            "value": "Standard"
+                        },
+                        {
+                            "name": "MSIP_Label_722a5300-ac39-4c9a-88e3-f54c46676417_Name",
+                            "value": "Top Secret"
+                        },
+                        {
+                            "name": "MSIP_Label_722a5300-ac39-4c9a-88e3-f54c46676417_SiteId",
+                            "value": "cb46c030-1825-4e81-a295-151c039dbf02"
+                        },
+                        {
+                            "name": "MSIP_Label_722a5300-ac39-4c9a-88e3-f54c46676417_ActionId",
+                            "value": "76dc494e-6c59-43e6-88a1-0000edd58fca"
+                        },
+                        {
+                            "name": "MSIP_Label_722a5300-ac39-4c9a-88e3-f54c46676417_ContentBits",
+                            "value": "8"
+                        }
+                    ]
                 }
             ]
         }

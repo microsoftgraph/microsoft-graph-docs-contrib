@@ -11,7 +11,7 @@ doc_type: "resourcePageType"
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-The Information Protection Label 
+The informationProtectionLabel resource describes the configuration of sensitivity labels that apply to a user or tenant.  
 
 ## Methods
 
@@ -20,7 +20,7 @@ The Information Protection Label
 | [Get informationProtectionLabel](../api/informationprotectionlabel-get.md)                          | [informationProtectionLabel](informationprotectionlabel.md)               | Read all configured information protection labels for a user or tenant.                                                                                                |
 | [Evaluateapplication](../api/informationprotectionlabel-evaluateapplication.md)                     | [informationProtectionAction](informationprotectionaction.md) collection  | Given an input of [contentInfo](contentInfo.md) and [labelingOptions](labelingOptions.md), compute the set of actions require to apply the label.                      |
 | [Evaluateclassificationresults](../api/informationprotectionlabel-evaluateclassificationresults.md) | [informationProtectionAction](informationprotectionaction.md) collection  | Given an input of [contentInfo](contentInfo.md) and [classificationResults](), compute the set of actions require to apply the label.                                  |
-| [Evaluateremoval](../api/informationprotectionlabel-evaluateremoval.md)                             | [informationProtectionAction](informationprotectionaction.md) collection  | Given an input of [contentInfo](contentInfo.md) and [downgradeJustification](dow ngradeJustification.md), compute the actions that should be taken to remove the label. |
+| [Evaluateremoval](../api/informationprotectionlabel-evaluateremoval.md)                             | [informationProtectionAction](informationprotectionaction.md) collection  | Given an input of [contentInfo](contentInfo.md) and [downgradeJustification](downgradeJustification.md), compute the actions that should be taken to remove the label. |
 | [Extractlabel](../api/informationprotectionlabel-extractlabel.md)                                   | [informationProtectionContentLabel](informationprotectioncontentlabel.md) | Given an input of [contentInfo](contentInfo.md), return details on the [informationProtectionLabel](informationProtectionLabel.md) that the metadata represents.       |
 
 ## Properties

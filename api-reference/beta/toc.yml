@@ -7813,7 +7813,7 @@
           href: api/dynamics-vendor-update.md
         - name: Delete vendor
           href: api/dynamics-vendor-delete.md
-    - name: Identity and access
+    - name: Identity and access    
       displayName: Azure AD, Microsoft identity platform
       items:
       - name: Overview
@@ -8559,6 +8559,23 @@
           href: api/trustframework-put-trustframeworkpolicy.md
         - name: Delete
           href: api/trustframeworkpolicy-delete.md
+    - name: Information protection
+      displayName: Microsoft Information Protection, Azure Information Protection
+      items:
+      - name: Overview
+        href: resources/informationprotectionlabel.md
+      - name: Labels
+        items:
+        - name: List labels
+          href: api/informationprotectionlabel-get.md
+        - name: Evaluate application
+          href: resources/informationprotectionlabel-evaluateapplication.md
+        - name: Evaluate classification result
+          href: resources/informationprotectionlabel-evaluateclassificationresults.md
+        - name: Evaluate removal
+          href: resources/informationprotectionlabel-evaluateremoval.md
+        - name: Extract label
+          href: resources/informationprotectionlabel-extractlabel.md
     - name: Mail
       displayName: Outlook, Outlook mail
       items:

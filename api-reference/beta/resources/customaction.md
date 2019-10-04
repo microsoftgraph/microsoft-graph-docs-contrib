@@ -11,7 +11,7 @@ doc_type: "resourcePageType"
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Custom actions may be defined as part of an [informationProtectionLabel](informationProtectionLabel.md) via Office 365 Security and Compliance Center's PowerShell module. The actions must be understood by the consuming application.
+Custom actions might be defined as part of an [informationProtectionLabel](informationProtectionLabel.md) via Office 365 Security and Compliance Center's PowerShell module. The actions must be understood by the consuming application.
 
 ## Properties
 
@@ -30,7 +30,7 @@ The following is a JSON representation of the resource.
 
   ],
   "@odata.type": "microsoft.graph.customAction",
-  "baseType": "microsoft.informationProtection.informationProtectionAction"
+  "baseType": "microsoft.graph.informationProtectionAction"
 }-->
 
 ```json

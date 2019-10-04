@@ -11,7 +11,7 @@ doc_type: "apiPageType"
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Retrieve the properties and relationships of informationprotectionlabel object.
+Retrieve the properties and relationships of [informationProtectionLabel](../resources/informationprotectionlabel.md) object.
 
 ## Permissions
 
@@ -29,6 +29,7 @@ One of the following permissions is required to call this API. To learn more, in
 
 ```http
 GET /informationprotection/policy/labels/{id}
+GET /informationprotection/policy/labels
 ```
 
 ## Optional query parameters

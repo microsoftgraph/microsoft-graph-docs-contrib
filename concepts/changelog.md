@@ -11,6 +11,39 @@ This changelog covers what's changed in the Microsoft Graph API, including the v
 
 For details about known issues with Microsoft Graph APIs, see [Known issues](known-issues.md).
 
+## October 2019
+
+### Labels
+
+| **Change type** | **Version**   | **Description**                          |
+| :-------------- | :------------ | :--------------------------------------- |
+| Change          | beta          | Changed **detectedSensitiveContent** entity name to [classificationResult](/graph/api/resources/classificationresult.md?view=graph-rest-beta).  | 
+| Deletion        | beta          | Removed **displayName**, **uniqueCount**, and **matches** properties from [classificationResult](/graph/api/resources/classificationresult.md?view=graph-rest-beta).  | 
+| Change          | beta          | Changed **id** to **sensitiveTypeId** properties of [classificationResult](/graph/api/resources/classificationresult.md?view=graph-rest-beta).   | 
+| Change          | beta          | Changed **confidence** to **confidenceLevel** property of [classificationResult](/graph/api/resources/classificationresult.md?view=graph-rest-beta).   | 
+| Addition        | beta          | Added **count** property to [classificationResult](/graph/api/resources/classificationresult.md?view=graph-rest-beta)/.  | 
+| Deletion        | beta          | Removed **actionSource** property from [labelingOptions](/graph/api/resources/labelingoptions.md?view=graph-rest-beta). | 
+| Deletion        | beta          | Removed **auditInfo** entity. | 
+| Change          | beta          | Changed **protectByDoNotForwardAction** to [protectDoNotForwardAction](/graph/api/resources/protectdonotforwardaction.md?view=graph-rest-beta). | 
+| Addition        | beta          | Added **alignment** property to [addContentHeaderAction](/graph/api/resources/addcontentheaderaction.md?view=graph-rest-beta). | 
+| Change          | beta          | Changed **labelId** property to **label** in [recommendLabelAction](/graph/api/resources/recommendedlabelaction.md?view=graph-rest-beta). |
+| Change          | beta          | Changed **classificationIds** property to **responsibleSensitivityTypeIds** in [recommendLabelAction](/graph/api/resources/recommendedlabelaction.md?view=graph-rest-beta). |
+| Addition        | beta          | Added **actionSource** property to [recommendLabelAction](/graph/api/resources/recommendedlabelaction.md?view=graph-rest-beta). |
+| Change          | beta          | Changed **labelId** property to **label** in [applyLabelAction](/graph/api/resources/applylabelaction.md?view=graph-rest-beta). |
+| Change          | beta          | Changed **classificationIds** property to **responsibleSensitivityTypeIds** in [applyLabelAction](/graph/api/resources/applylabelaction.md?view=graph-rest-beta). |
+| Addition        | beta          | Added **actionSource** property to [applyLabelAction](/graph/api/resources/applylabelaction.md?view=graph-rest-beta). |
+| Change          | beta          | Change [contentFormat](/graph/api/resources/enums.md?view=graph-rest-beta)) enum value **file** to **default**. | 
+| Deletion        | beta          | Removed **mandatory** value from [actionSource](/graph/api/resources/enums.md?view=graph-rest-beta)) enum. |
+| Change          | beta          | Removed [actionSource](/graph/api/resources/enums.md?view=graph-rest-beta)) enum value **policyDefault** to **default**. |
+| Deletion        | beta          | Removed **auditMetadataKey**. |
+| Change          | beta          | Change **applyLabel** API to [evaluateApplication](/graph/api/informationprotectionlabel-evaluateapplication.md?view=graph-rest-beta). |
+| Change          | beta          | Change **applyLabelFromClassification** API to [evaluateClassificationResults](/graph/api/informationprotectionlabel-evaluateclassificationresults.md?view=graph-rest-beta). |
+| Change          | beta          | Change **removeLabel** API to [evaluateRemoval](/graph/api/informationprotectionlabel-evaluateremoval.md?view=graph-rest-beta). |
+| Deletion        | beta          | Removed **auditInfo** from [extractLabel](/graph/api/informationprotectionlabel-extractlabel.md?view=graph-rest-beta). |
+
+
+
+
 ## September 2019
 
 ### Calendar, mail, groups
