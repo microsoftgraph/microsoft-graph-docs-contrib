@@ -19,26 +19,26 @@ Inherits from [namedLocation](../resources/namedLocation.md)
 
 | Method       | Return Type | Description |
 |:-------------|:------------|:------------|
-| [List ipNamedLocations](../api/conditionalaccessroot-list-namedlocations.md) | [ipNamedLocation](ipNamedLocation.md) collection | Get all of the ipNamedLocation objects in the organization. |
-| [Get ipNamedLocation](../api/ipnamedlocation-get.md) | [ipNamedLocation](ipnamedlocation.md) | Read properties and relationships of ipNamedLocation object. |
-| [Create ipNamedLocation](../api/conditionalaccessroot-post-namedlocations.md) | [ipNamedLocation](ipNamedLocation.md) | Create a new ipNamedLocation object. |
-| [Update](../api/ipnamedlocation-update.md) | [ipNamedLocation](ipnamedlocation.md) | Update ipNamedLocation object. |
-| [Delete](../api/ipnamedlocation-delete.md) | None | Delete ipNamedLocation object. |
+| [List ipNamedLocations](../api/conditionalaccessroot-list-namedlocations.md) | [ipNamedLocation](ipNamedLocation.md) collection | Get all the **ipNamedLocation** objects in the organization. |
+| [Create ipNamedLocation](../api/conditionalaccessroot-post-namedlocations.md) | [ipNamedLocation](ipNamedLocation.md) | Create a new **ipNamedLocation** object. |
+| [Get ipNamedLocation](../api/ipnamedlocation-get.md) | [ipNamedLocation](ipnamedlocation.md) | Read the properties and relationships of an **ipNamedLocation** object. |
+| [Update](../api/ipnamedlocation-update.md) | [ipNamedLocation](ipnamedlocation.md) | Update an **ipNamedLocation** object. |
+| [Delete](../api/ipnamedlocation-delete.md) | None | Delete an **ipNamedLocation** object. |
 
 ## Properties
 
 | Property     | Type        | Description |
 |:-------------|:------------|:------------|
-|createdDateTime|DateTimeOffset|The Timestamp type represents creation date and time of the location using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 would look like this: `'2014-01-01T00:00:00Z'`. Read-only. Inherited from [namedLocation](../resources/namedLocation.md)|
-|displayName|String|Human-readable name of the location|
-|id|String|Identifier of a namedLocation object. Read-only. Inherited from [namedLocation](../resources/namedLocation.md)|
-|ipRanges|[ipRange](iprange.md) collection|List of IP address ranges in IPv4 CIDR format (e.g. 1.2.3.4/32) or any allowable IPv6 format from IETF RFC5962|
-|isTrusted|Boolean|True if this location is explicitly trusted|
-|modifiedDateTime|DateTimeOffset|The Timestamp type represents last modified date and time of the location using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 would look like this: `'2014-01-01T00:00:00Z'`. Read-only. Inherited from [namedLocation](../resources/namedLocation.md)|
+|createdDateTime|DateTimeOffset|The Timestamp type represents creation date and time of the location using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 would look like this: `'2014-01-01T00:00:00Z'`. Read-only. Inherited from [namedLocation](../resources/namedLocation.md).|
+|displayName|String|Human-readable name of the location.|
+|id|String|Identifier of a namedLocation object. Read-only. Inherited from [namedLocation](../resources/namedLocation.md).|
+|ipRanges|[ipRange](iprange.md) collection|List of IP address ranges in IPv4 CIDR format (e.g. 1.2.3.4/32) or any allowable IPv6 format from IETF RFC596.|
+|isTrusted|Boolean|True if this location is explicitly trusted.|
+|modifiedDateTime|DateTimeOffset|The Timestamp type represents last modified date and time of the location using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 would look like this: `'2014-01-01T00:00:00Z'`. Read-only. Inherited from [namedLocation](../resources/namedLocation.md).|
 
 ## Relationships
 
-None
+None.
 
 ## JSON representation
 
