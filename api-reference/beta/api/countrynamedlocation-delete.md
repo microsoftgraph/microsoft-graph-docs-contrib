@@ -1,6 +1,6 @@
 ---
 title: "Delete countryNamedLocation"
-description: "Delete countryNamedLocation."
+description: "Delete a **countryNamedLocation** object."
 localization_priority: Normal
 author: "davidmu1"
 ms.prod: "microsoft-identity-platform"
@@ -11,7 +11,7 @@ doc_type: apiPageType
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Delete [countryNamedLocation](../resources/countryNamedLocation.md).
+Delete a [countryNamedLocation](../resources/countryNamedLocation.md) object.
 
 ## Permissions
 
@@ -35,7 +35,7 @@ DELETE /conditionalaccess/namedLocations/{id}
 
 | Name          | Description   |
 |:--------------|:--------------|
-| Authorization | Bearer {token} |
+| Authorization | Bearer {token}. Required. |
 
 ## Request body
 
@@ -43,7 +43,7 @@ Do not supply a request body for this method.
 
 ## Response
 
-If successful, this method returns `204, No Content` response code. It does not return anything in the response body.
+If successful, this method returns a `204 No Content` response code. It does not return anything in the response body.
 
 ## Examples
 
