@@ -90,7 +90,7 @@ Specify the actual bytes of the file to be attached, that are in the location ra
 A successful upload returns `HTTP 200 OK` and an **uploadSession** object. Note the following in the response object:
 
 - The **ExpirationDateTime** property indicates the expiration date/time for the auth token embedded in the **uploadUrl** property value. This expiration date/time remains the same as returned by the initial **uploadSession** in step 1. 
-- The **NextExpectedRanges** specifies the next range to start from, for example, `"NextExpectedRanges":["2097152"]`. You must upload bytes in a file in order.
+- The **NextExpectedRanges** specifies the next byte location to start uploading from, for example, `"NextExpectedRanges":["2097152"]`. You must upload bytes in a file in order.
 <!-- The **NextExpectedRanges** specifies one or more byte ranges, each indicating the starting point of a subsequent `PUT` request:
 
   - On a successful upload, this property returns the next range to start from, for example, `"NextExpectedRanges":["2097152"]`. 
