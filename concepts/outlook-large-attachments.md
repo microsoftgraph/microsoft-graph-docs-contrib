@@ -68,7 +68,7 @@ Content-type: application/json
 
 ## Step 2: Use the upload session to upload a range of bytes of the file
 
-To upload the file, or a portion of the file, make a `PUT` request to the **uploadUrl** property value returned as part of the **uploadSession** in step 1. You can upload the entire file, or split the file into multiple byte ranges, as long as each byte range is less than 4MB. 
+To upload the file, or a portion of the file, make a `PUT` request to the **uploadUrl** property value returned as part of the **uploadSession** in step 1. You can upload the entire file, or split the file into multiple byte ranges. For better performance, keep each byte range less than 4MB. 
 
 Specify request headers and request body as described below.
 
@@ -76,7 +76,7 @@ Specify request headers and request body as described below.
 
 | Name       | Type | Description|
 |:---------------|:--------|:----------|
-| Content-Length | Int32 | The number of bytes being uploaded in this operation. The maximum number of bytes for each `PUT` operation is 4MB. Required. |
+| Content-Length | Int32 | The number of bytes being uploaded in this operation. For better performance, keep the upper limit of the number of bytes for each `PUT` operation to 4MB. Required. |
 | Content-Range | String | The 0-based byte range of the file being uploaded in this operation, expressed in the format `bytes {start}-{end}/{total}`. Required. |
 | Content-Type | String  | The MIME type. Specify `application/octet-stream`. Required. |
 
@@ -90,10 +90,12 @@ Specify the actual bytes of the file to be attached, that are in the location ra
 A successful upload returns `HTTP 200 OK` and an **uploadSession** object. Note the following in the response object:
 
 - The **ExpirationDateTime** property indicates the expiration date/time for the auth token embedded in the **uploadUrl** property value. This expiration date/time remains the same as returned by the initial **uploadSession** in step 1. 
-- The **NextExpectedRanges** specifies one or more byte ranges, each indicating the starting point of a subsequent `PUT` request:
+- The **NextExpectedRanges** specifies the next range to start from, for example, `"NextExpectedRanges":["2097152"]`. You must upload bytes in a file in order.
+<!-- The **NextExpectedRanges** specifies one or more byte ranges, each indicating the starting point of a subsequent `PUT` request:
 
   - On a successful upload, this property returns the next range to start from, for example, `"NextExpectedRanges":["2097152"]`. 
   - If a portion of a byte range has not uploaded successfully, this property includes the byte range with the start and end locations, for example, `"NextExpectedRanges":["1998457-2097094"]`.
+-->
 - The **uploadUrl** property is not explicitly returned, because all `PUT` operations of an upload session use the same URL returned when creating the session (step 1).
 
 ### Example request: first upload
