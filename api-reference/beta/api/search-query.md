@@ -41,7 +41,7 @@ In the request body, provide a JSON object with the following parameters.
 
 | Parameter    | Type        | Description |
 |:-------------|:------------|:------------|
-|requests|[searchRequest collection](../resources/searchrequest.md)||
+|requests|[searchRequest collection](../resources/searchrequest.md)|The search request to be sent to the query endpoint. It contains the type of entities expected in the response, the underlying sources, the paging parameters, the fields request and the actual search query.|
 
 ## Response
 
@@ -66,7 +66,6 @@ Content-type: application/json
 {
   "requests": [
     {
-      "entityType": "entityType-value",
       "entityTypes": [
         "entityTypes-value"
       ],
@@ -76,24 +75,12 @@ Content-type: application/json
       "query": {
         "query_string": {
           "query": "query-value"
-        },
-        "filter": {
-          "bool": [
-
-          ],
-          "should": [
-
-          ],
-          "term": {
-          },
-          "range": {
-          }
         }
       },
       "from": 99,
       "size": 99,
-      "_sources": [
-        "_sources-value"
+      "Stored_fields": [
+        "Stored_fields-value"
       ],
       "enableTopResults": true
     }
