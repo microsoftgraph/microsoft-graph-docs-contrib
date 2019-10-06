@@ -1,7 +1,7 @@
 ---
 title: "androidMinimumOperatingSystem resource type"
 description: "Contains properties for the minimum operating system required for an Android mobile app."
-author: "tfitzmac"
+author: "davidmu1"
 localization_priority: Normal
 ms.prod: "Intune"
 doc_type: resourcePageType
@@ -48,6 +48,7 @@ Here is a JSON representation of the resource.
   "v5_1": true
 }
 ```
+
 
 
 

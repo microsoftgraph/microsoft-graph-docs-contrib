@@ -27,9 +27,8 @@ Represents an individual chat message within a [channel](channel.md) or [chat](c
 |[Create chatMessage in a chat](../api/chat-post-messages.md) | [chatMessage](chatmessage.md)| Send a chat message in an existing 1:1 or group chat conversation.|
 |[List chatMessages in a chat](../api/chatmessage-list.md)  | [chatMessage](../resources/chatmessage.md) | List chat messages in a 1:1 or group chat. |
 |[Get chatMessage in chat](../api/chatmessage-get.md)  | [chatMessage](../resources/chatmessage.md) | Get a single chat message in a chat. |
-|[List all hosted images](../api/chatmessagehostedimage-list-hostedimages.md) | [hostedImage](../resources/chatmessagehostedimage.md) collection| Get all hosted images in a chat message.|
-|[Get hosted image](../api/chatmessagehostedimage-get.md) | [hostedImage](../resources/chatmessagehostedimage.md) | Get a hosted image from a chat message.|
-|[Get hosted image bytes](../api/chatmessagehostedimage-getbytes.md) | binary image data | Get binary image data of a hosted image from a chat message.|
+|[List all hosted content](../api/chatmessage-list-chatmessagehostedcontents.md) | [chatMessageHostedContent](../resources/chatmessagehostedcontent.md) collection| Get all hosted content in a chat message.|
+|[Get hosted content](../api/chatmessagehostedcontent-get.md) | [chatMessageHostedContent](../resources/chatmessagehostedcontent.md) | Get hosted content from a chat message.|
 
 ## Properties
 
