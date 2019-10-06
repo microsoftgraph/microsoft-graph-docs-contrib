@@ -63,7 +63,7 @@ Here is an example of the response. Note: The response object shown here may be 
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 30085
+Content-Length: 30215
 
 {
   "value": {
@@ -638,6 +638,7 @@ Content-Length: 30085
       "policyRulesFromGroupPolicyMerged": true,
       "policyRulesFromGroupPolicyNotMerged": true
     },
+    "attackSurfaceReductionRules": "Attack Surface Reduction Rules value",
     "defenderAdobeReaderLaunchChildProcess": "enable",
     "defenderAttackSurfaceReductionExcludedPaths": [
       "Defender Attack Surface Reduction Excluded Paths value"
@@ -745,12 +746,11 @@ Content-Length: 30085
       "encryptionMethod": "aesCbc256",
       "requireEncryptionForWriteAccess": true,
       "blockCrossOrganizationWriteAccess": true
-    }
+    },
+    "bitLockerRecoveryPasswordRotation": "disabled"
   }
 }
 ```
-
-
 
 
 

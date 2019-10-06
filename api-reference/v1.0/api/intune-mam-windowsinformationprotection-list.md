@@ -1,7 +1,7 @@
 ---
 title: "List windowsInformationProtections"
 description: "List properties and relationships of the windowsInformationProtection objects."
-author: "tfitzmac"
+author: "davidmu1"
 localization_priority: Normal
 ms.prod: "Intune"
 doc_type: apiPageType
@@ -192,6 +192,7 @@ Content-Length: 4601
   ]
 }
 ```
+
 
 
 

@@ -1,7 +1,7 @@
 ---
 title: "List iosCustomConfigurations"
 description: "List properties and relationships of the iosCustomConfiguration objects."
-author: "tfitzmac"
+author: "davidmu1"
 localization_priority: Normal
 ms.prod: "Intune"
 doc_type: apiPageType
@@ -75,6 +75,7 @@ Content-Length: 524
   ]
 }
 ```
+
 
 
 

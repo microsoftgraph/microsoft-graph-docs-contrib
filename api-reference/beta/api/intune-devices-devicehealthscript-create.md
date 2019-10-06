@@ -46,21 +46,20 @@ The following table shows the properties that are required when you create the d
 
 |Property|Type|Description|
 |:---|:---|:---|
-|id|String|Unique Identifier for the device management script. Inherited from [deviceManagementScript](../resources/intune-devices-devicemanagementscript.md)|
-|displayName|String|Name of the device management script. Inherited from [deviceManagementScript](../resources/intune-devices-devicemanagementscript.md)|
-|description|String|Optional description for the device management script. Inherited from [deviceManagementScript](../resources/intune-devices-devicemanagementscript.md)|
-|runSchedule|[runSchedule](../resources/intune-devices-runschedule.md)|The interval for script to run. If not defined the script will run once Inherited from [deviceManagementScript](../resources/intune-devices-devicemanagementscript.md)|
-|scriptContent|Binary|The script content. Inherited from [deviceManagementScript](../resources/intune-devices-devicemanagementscript.md)|
-|createdDateTime|DateTimeOffset|The date and time the device management script was created. Inherited from [deviceManagementScript](../resources/intune-devices-devicemanagementscript.md)|
-|lastModifiedDateTime|DateTimeOffset|The date and time the device management script was last modified. Inherited from [deviceManagementScript](../resources/intune-devices-devicemanagementscript.md)|
-|runAsAccount|[runAsAccountType](../resources/intune-shared-runasaccounttype.md)|Indicates the type of execution context. Inherited from [deviceManagementScript](../resources/intune-devices-devicemanagementscript.md). Possible values are: `system`, `user`.|
-|enforceSignatureCheck|Boolean|Indicate whether the script signature needs be checked. Inherited from [deviceManagementScript](../resources/intune-devices-devicemanagementscript.md)|
-|fileName|String|Script file name. Inherited from [deviceManagementScript](../resources/intune-devices-devicemanagementscript.md)|
-|roleScopeTagIds|String collection|List of Scope Tag IDs for this PowerShellScript instance. Inherited from [deviceManagementScript](../resources/intune-devices-devicemanagementscript.md)|
-|runAs32Bit|Boolean|A value indicating whether the PowerShell script should run as 32-bit Inherited from [deviceManagementScript](../resources/intune-devices-devicemanagementscript.md)|
+|id|String|Unique Identifier for the device management script. Inherited from [deviceManagementScript](../resources/intune-shared-devicemanagementscript.md)|
+|displayName|String|Name of the device management script. Inherited from [deviceManagementScript](../resources/intune-shared-devicemanagementscript.md)|
+|description|String|Optional description for the device management script. Inherited from [deviceManagementScript](../resources/intune-shared-devicemanagementscript.md)|
+|runSchedule|[runSchedule](../resources/intune-devices-runschedule.md)|The interval for script to run. If not defined the script will run once Inherited from [deviceManagementScript](../resources/intune-shared-devicemanagementscript.md)|
+|scriptContent|Binary|The script content. Inherited from [deviceManagementScript](../resources/intune-shared-devicemanagementscript.md)|
+|createdDateTime|DateTimeOffset|The date and time the device management script was created. This property is read-only. Inherited from [deviceManagementScript](../resources/intune-shared-devicemanagementscript.md)|
+|lastModifiedDateTime|DateTimeOffset|The date and time the device management script was last modified. This property is read-only. Inherited from [deviceManagementScript](../resources/intune-shared-devicemanagementscript.md)|
+|runAsAccount|[runAsAccountType](../resources/intune-shared-runasaccounttype.md)|Indicates the type of execution context. Inherited from [deviceManagementScript](../resources/intune-shared-devicemanagementscript.md). Possible values are: `system`, `user`.|
+|enforceSignatureCheck|Boolean|Indicate whether the script signature needs be checked. Inherited from [deviceManagementScript](../resources/intune-shared-devicemanagementscript.md)|
+|fileName|String|Script file name. Inherited from [deviceManagementScript](../resources/intune-shared-devicemanagementscript.md)|
+|roleScopeTagIds|String collection|List of Scope Tag IDs for this PowerShellScript instance. Inherited from [deviceManagementScript](../resources/intune-shared-devicemanagementscript.md)|
+|runAs32Bit|Boolean|A value indicating whether the PowerShell script should run as 32-bit Inherited from [deviceManagementScript](../resources/intune-shared-devicemanagementscript.md)|
 |complianceRule|[deviceHealthScriptComplianceRule](../resources/intune-devices-devicehealthscriptcompliancerule.md)|Not yet documented|
 |remediationScriptContent|Binary|Not yet documented|
-|runRemediationScript|Boolean|Not yet documented|
 
 
 
@@ -74,7 +73,7 @@ Here is an example of the request.
 ``` http
 POST https://graph.microsoft.com/beta/deviceManagement/deviceManagementScripts
 Content-type: application/json
-Content-length: 745
+Content-length: 712
 
 {
   "@odata.type": "#microsoft.graph.deviceHealthScript",
@@ -97,8 +96,7 @@ Content-length: 745
     "operator": "equal",
     "detectionValue": "Detection Value value"
   },
-  "remediationScriptContent": "cmVtZWRpYXRpb25TY3JpcHRDb250ZW50",
-  "runRemediationScript": true
+  "remediationScriptContent": "cmVtZWRpYXRpb25TY3JpcHRDb250ZW50"
 }
 ```
 
@@ -107,7 +105,7 @@ Here is an example of the response. Note: The response object shown here may be 
 ``` http
 HTTP/1.1 201 Created
 Content-Type: application/json
-Content-Length: 917
+Content-Length: 884
 
 {
   "@odata.type": "#microsoft.graph.deviceHealthScript",
@@ -133,12 +131,9 @@ Content-Length: 917
     "operator": "equal",
     "detectionValue": "Detection Value value"
   },
-  "remediationScriptContent": "cmVtZWRpYXRpb25TY3JpcHRDb250ZW50",
-  "runRemediationScript": true
+  "remediationScriptContent": "cmVtZWRpYXRpb25TY3JpcHRDb250ZW50"
 }
 ```
-
-
 
 
 

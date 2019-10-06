@@ -17,9 +17,9 @@ var mediaConfig = new MediaConfig
 	Blob = "<media config blob>"
 };
 
-var acceptedModalities = new List<String>()
+var acceptedModalities = new List<Modality>()
 {
-	"audio"
+	Modality.Audio
 };
 
 await graphClient.App.Calls["{id}"]

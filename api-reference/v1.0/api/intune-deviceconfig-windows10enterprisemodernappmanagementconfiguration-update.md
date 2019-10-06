@@ -1,7 +1,7 @@
 ---
 title: "Update windows10EnterpriseModernAppManagementConfiguration"
 description: "Update the properties of a windows10EnterpriseModernAppManagementConfiguration object."
-author: "tfitzmac"
+author: "davidmu1"
 localization_priority: Normal
 ms.prod: "Intune"
 doc_type: apiPageType
@@ -93,6 +93,7 @@ Content-Length: 394
   "uninstallBuiltInApps": true
 }
 ```
+
 
 
 
