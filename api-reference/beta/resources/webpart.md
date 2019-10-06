@@ -1,10 +1,11 @@
 ---
 author: rahmit
-ms.author: rahmit
+description: "The webPart resource represents type and rendering information for a web part on a sitePage."
 ms.date: 09/01/2018
 title: WebPart
 localization_priority: Normal
 ms.prod: "sharepoint"
+doc_type: resourcePageType
 ---
 # webPart resource
 
@@ -22,10 +23,8 @@ The **webPart** resource represents type and rendering information for a web par
 
 ```json
 {
-  "type": "string (guid)",
-  "data": {
-    "instanceId": "string (guid) (optional)"
-  }
+  "type": "string (identifier)",
+  "data": {"@odata.type":"microsoft.graph.sitePageData"}
 }
 ```
 
@@ -50,8 +49,6 @@ For more information about pages, see [sitePage](sitepage.md).
   "keywords": "",
   "section": "documentation",
   "tocPath": "Control",
-  "suppressions": [
-    "Error: /api-reference/beta/resources/webpart.md:\r\n      Exception processing links.\r\n    System.ArgumentException: Link Definition was null. Link text: !INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)\r\n      at ApiDoctor.Validation.DocFile.get_LinkDestinations()\r\n      at ApiDoctor.Validation.DocSet.ValidateLinks(Boolean includeWarnings, String[] relativePathForFiles, IssueLogger issues, Boolean requireFilenameCaseMatch, Boolean printOrphanedFiles)"
-  ]
+  "suppressions": []
 }
 -->

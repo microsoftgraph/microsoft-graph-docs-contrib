@@ -1,9 +1,10 @@
 ---
 title: "Update mobileThreatDefenseConnector"
 description: "Update the properties of a mobileThreatDefenseConnector object."
-author: "tfitzmac"
+author: "davidmu1"
 localization_priority: Normal
 ms.prod: "Intune"
+doc_type: apiPageType
 ---
 
 # Update mobileThreatDefenseConnector
@@ -100,6 +101,7 @@ Content-Length: 463
   "partnerUnresponsivenessThresholdInDays": 6
 }
 ```
+
 
 
 

@@ -4,6 +4,7 @@ description: "The media information used in actions for prompts."
 author: "VinodRavichandran"
 localization_priority: Normal
 ms.prod: "microsoft-teams"
+doc_type: resourcePageType
 ---
 
 # mediaInfo resource type
@@ -15,8 +16,9 @@ The media information used in actions for prompts.
 ## Properties
 | Property	     | Type	   | Description                      |
 |:---------------|:--------|:---------------------------------|
-| resourceId     | String  | Unique identity of the resource. |
-| uri            | String  | Path to the resource.            |
+| resourceId     | String  | Optional, used to uniquely identity the resource. If passed the prompt uri will be cached against this resourceId as key. |
+| uri            | String  | Path to the prompt to be played. Currently only Wave file (.wav) format, single-channel, 16-bit samples with a 16,000 (16KHz) sampling rate is only supported. |
+
 
 ## JSON representation
 
@@ -45,8 +47,6 @@ The following is a JSON representation of the resource.
   "keywords": "",
   "section": "documentation",
   "tocPath": "",
-  "suppressions": [
-    "Error: /api-reference/beta/resources/mediainfo.md:\r\n      Exception processing links.\r\n    System.ArgumentException: Link Definition was null. Link text: !INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)\r\n      at ApiDoctor.Validation.DocFile.get_LinkDestinations()\r\n      at ApiDoctor.Validation.DocSet.ValidateLinks(Boolean includeWarnings, String[] relativePathForFiles, IssueLogger issues, Boolean requireFilenameCaseMatch, Boolean printOrphanedFiles)"
-  ]
+  "suppressions": []
 }
 -->

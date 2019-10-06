@@ -4,6 +4,7 @@ description: "Update the properties of a tiIndicator object."
 localization_priority: Normal
 author: "preetikr"
 ms.prod: "security"
+doc_type: apiPageType
 ---
 
 # Update tiIndicator
@@ -99,7 +100,7 @@ Every indicator must have a Traffic Light Protocol (tlp) value when it is submit
 
 If successful, this method returns a `204 No Content` response code.
 
-If the optional request header is used, the method returns a `200 OK` response code and the updated [tiIndicator](../resources/tiIndicator.md) object in the response body.
+If the optional request header is used, the method returns a `200 OK` response code and the updated [tiIndicator](../resources/tiindicator.md) object in the response body.
 
 ## Examples
 
@@ -108,6 +109,8 @@ If the optional request header is used, the method returns a `200 OK` response c
 #### Request
 
 The following is an example of the request without the `Prefer` header.
+
+# [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "update_tiIndicator"
@@ -121,6 +124,20 @@ Content-type: application/json
   "description": "description-updated",
 }
 ```
+# [C#](#tab/csharp)
+[!INCLUDE [sample-code](../includes/snippets/csharp/update-tiindicator-csharp-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [JavaScript](#tab/javascript)
+[!INCLUDE [sample-code](../includes/snippets/javascript/update-tiindicator-javascript-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Objective-C](#tab/objc)
+[!INCLUDE [sample-code](../includes/snippets/objc/update-tiindicator-objc-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+---
+
 
 #### Response
 
@@ -195,5 +212,7 @@ Content-type: application/json
   "description": "Update tiIndicator",
   "keywords": "",
   "section": "documentation",
-  "tocPath": ""
+  "tocPath": "",
+  "suppressions": [
+  ]
 }-->

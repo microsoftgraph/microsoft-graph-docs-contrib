@@ -1,9 +1,11 @@
 ---
 author: JeremyKelley
-ms.author: JeremyKelley
+description: "The baseItemVersion resource represents a previous version of an item or entity."
 ms.date: 09/17/2017
 title: BaseItemVersion
 localization_priority: Normal
+doc_type: resourcePageType
+ms.prod: ""
 ---
 # BaseItemVersion resource type
 
@@ -43,8 +45,6 @@ The **baseItemVersion** resource represents a previous version of an item or ent
   "keywords": "version,versions,version-history,history",
   "section": "documentation",
   "tocPath": "Facets/Version",
-  "suppressions": [
-    "Error: /api-reference/beta/resources/baseItemVersion.md:\r\n      Exception processing links.\r\n    System.ArgumentException: Link Definition was null. Link text: !INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)\r\n      at ApiDoctor.Validation.DocFile.get_LinkDestinations()\r\n      at ApiDoctor.Validation.DocSet.ValidateLinks(Boolean includeWarnings, String[] relativePathForFiles, IssueLogger issues, Boolean requireFilenameCaseMatch, Boolean printOrphanedFiles)"
-  ]
+  "suppressions": []
 }
 -->

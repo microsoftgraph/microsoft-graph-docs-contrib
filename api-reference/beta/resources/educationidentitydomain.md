@@ -4,6 +4,7 @@ description: "Represents the mapping between an education user type and the doma
 localization_priority: Normal
 author: "mmast-msft"
 ms.prod: "education"
+doc_type: resourcePageType
 ---
 
 # educationIdentityDomain resource type
@@ -16,7 +17,7 @@ Represents the mapping between an education user type and the domain the user's 
 
 | Property | Type | Description |
 |:-|:-|:-|
-| **appliesTo** | string |  The user role type to assign to license. Possible values are: `student`, `teacher`.      |
+| **appliesTo** | string |  The user role type to assign to the license. Possible values are: `student`, `teacher`, `faculty`.      |
 | **name** | string |  Represents the domain for the user account.         |
 
 ## JSON representation
@@ -34,11 +35,3 @@ Represents the mapping between an education user type and the domain the user's 
     "name": "String"
 }
 ```
-<!--
-{
-  "type": "#page.annotation",
-  "suppressions": [
-    "Error: /api-reference/beta/resources/educationidentitydomain.md:\r\n      Exception processing links.\r\n    System.ArgumentException: Link Definition was null. Link text: !INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)\r\n      at ApiDoctor.Validation.DocFile.get_LinkDestinations()\r\n      at ApiDoctor.Validation.DocSet.ValidateLinks(Boolean includeWarnings, String[] relativePathForFiles, IssueLogger issues, Boolean requireFilenameCaseMatch, Boolean printOrphanedFiles)"
-  ]
-}
--->

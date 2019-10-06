@@ -4,6 +4,7 @@ description: "Represents the protection of a sheet object."
 author: "lumine2008"
 localization_priority: Normal
 ms.prod: "excel"
+doc_type: resourcePageType
 ---
 
 # WorksheetProtection resource type
@@ -22,7 +23,7 @@ Represents the protection of a sheet object.
 ## Properties
 | Property	   | Type	|Description|
 |:---------------|:--------|:----------|
-|options|[WorkbookWorksheetProtectionOptions](worksheetprotectionoptions.md)|Sheet protection options. Read-only.|
+|options|[workbookWorksheetProtectionOptions](worksheetprotectionoptions.md)|Sheet protection options. Read-only.|
 |protected|boolean|Indicates if the worksheet is protected.  Read-only.|
 
 ## JSON representation

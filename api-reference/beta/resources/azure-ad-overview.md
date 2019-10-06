@@ -2,6 +2,9 @@
 title: "Working with Azure Active Directory resources in Microsoft Graph"
 description: "Microsoft Graph for Azure Active Directory (Azure AD) provides REST APIs to help manage your organization, resources, and assets."
 localization_priority: Priority
+doc_type: conceptualPageType
+ms.prod: ""
+author: ""
 ---
 
 # Working with Azure Active Directory resources in Microsoft Graph
@@ -61,11 +64,3 @@ Directory resources and APIs can open up new ways for you to engage with users a
 
 Need more ideas? See [how some of our partners are using Microsoft Graph](https://developer.microsoft.com/graph/graph/examples#partners).
 
-<!--
-{
-  "type": "#page.annotation",
-  "suppressions": [
-    "Error: /api-reference/beta/resources/azure-ad-overview.md:\r\n      Exception processing links.\r\n    System.ArgumentException: Link Definition was null. Link text: !INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)\r\n      at ApiDoctor.Validation.DocFile.get_LinkDestinations()\r\n      at ApiDoctor.Validation.DocSet.ValidateLinks(Boolean includeWarnings, String[] relativePathForFiles, IssueLogger issues, Boolean requireFilenameCaseMatch, Boolean printOrphanedFiles)"
-  ]
-}
--->

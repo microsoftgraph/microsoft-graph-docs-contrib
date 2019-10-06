@@ -1,9 +1,10 @@
 ---
 title: "Create deviceManagementTemplateSettingCategory"
 description: "Create a new deviceManagementTemplateSettingCategory object."
-author: "tfitzmac"
+author: "rolyon"
 localization_priority: Normal
 ms.prod: "Intune"
+doc_type: apiPageType
 ---
 
 # Create deviceManagementTemplateSettingCategory
@@ -21,7 +22,7 @@ One of the following permissions is required to call this API. To learn more, in
 |:---|:---|
 |Delegated (work or school account)|DeviceManagementConfiguration.ReadWrite.All|
 |Delegated (personal Microsoft account)|Not supported.|
-|Application|Not supported.|
+|Application|DeviceManagementConfiguration.ReadWrite.All|
 
 ## HTTP Request
 <!-- {
@@ -81,7 +82,6 @@ Content-Length: 170
   "displayName": "Display Name value"
 }
 ```
-
 
 
 

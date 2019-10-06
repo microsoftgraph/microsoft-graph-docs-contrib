@@ -1,9 +1,10 @@
 ---
 title: "managedAppStatusRaw resource type"
 description: "Represents an un-typed status report about organizations app protection and configuration."
-author: "tfitzmac"
+author: "davidmu1"
 localization_priority: Normal
 ms.prod: "Intune"
+doc_type: resourcePageType
 ---
 
 # managedAppStatusRaw resource type
@@ -51,6 +52,7 @@ Here is a JSON representation of the resource.
   }
 }
 ```
+
 
 
 

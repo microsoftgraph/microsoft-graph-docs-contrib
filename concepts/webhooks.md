@@ -3,13 +3,20 @@ title: "Set up notifications for changes in user data"
 description: "The Microsoft Graph API uses a webhook mechanism to deliver notifications to clients. A client is a web service that configures its own URL to receive notifications. Client apps use notifications to update their state upon changes."
 author: "piotrci"
 localization_priority: Priority
+ms.custom: graphiamtop20
 ---
 
 # Set up notifications for changes in user data
 
 The Microsoft Graph API uses a webhook mechanism to deliver notifications to clients. A client is a web service that configures its own URL to receive notifications. Client apps use notifications to update their state upon changes.
 
-After Microsoft Graph accepts the subscription request, it pushes notifications to the URL specified in the subscription. The app then takes action according to its business logic. For example, it fetches more data, updates its cache and views, etc.
+After Microsoft Graph accepts the subscription request, it pushes notifications to the URL specified in the subscription. The app then takes action according to its business logic. For example, it fetches more data, updates its cache and views, and so on.
+
+
+> [!VIDEO https://www.youtube-nocookie.com/embed/rC1bunenaq4]
+ 
+> [!div class="nextstepaction"]
+> [Build a webhook app with .NET Core](/graph/tutorials/change-notifications)
 
 ## Supported resources
 
@@ -47,7 +54,9 @@ Or to a new [Security API](security-concept-overview.md) alert:
 
 ### Azure AD resource limitations
 
-Certain limits apply to Azure AD based resources (users, groups) and may generate errors when exceeded:
+Certain limits apply to Azure AD based resources (users, groups) and will generate errors when exceeded:
+
+> **Note**: These limits do not apply to resources from services other than Azure AD. For example, an app can create many more subscriptions to `message` or `event` resources, which are supported by the Exchange Online service as part of Microsoft Graph.
 
 - Maximum subscription quotas:
 
@@ -55,9 +64,21 @@ Certain limits apply to Azure AD based resources (users, groups) and may generat
   - Per tenant: 1000 total subscriptions across all apps
   - Per app and tenant combination: 100 total subscriptions
 
+When the limits are exceeded, attempts to create a subscription will result in an [error response](errors.md) - `403 Forbidden`. The `message` property will explain which limit has been exceeded.
+
 - Azure AD B2C tenants are not supported.
 
 - Notification for user entities are not supported for personal Microsoft accounts.
+
+### Outlook resource limitations
+
+When subscribing to Outlook resources such as **messages**, **events** or **contacts**, if you choose to use the *user principal name* UPN in the resource path, the subscription request might fail if the UPN contains an apostrophe. Consider using GUID user IDs instead of UPNs to avoid running into this problem. For example, instead of using resource path:
+
+`/users/sh.o'neal@contoso.com/messages`
+
+Use: 
+
+`/users/{guid-user-id}/messages`
 
 ## Subscription lifetime
 
@@ -216,15 +237,15 @@ Note the `value` field is an array of objects. When there are many queued notifi
 
 Each notification received by your app should be processed. The following are the minimum tasks that your app must perform to process a notification:
 
+1. Send a `202 - Accepted` status code in your response to Microsoft Graph. If Microsoft Graph doesn't receive a 2xx class code, it will try to publishing the notification a number of times, for a period of about 4 hours; after that, the notification will be dropped and won't be delivered.
+
+    > **Note:** Send a `202 - Accepted` status code as soon as you receive the notification, even before validating its authenticity. You are simply acknowledging the receipt of the notification and preventing unnecessary retries. The current timeout is 30 seconds, but it might be reduced in the future to optimize service performance.
+
 1. Validate the `clientState` property. It must match the value originally submitted with the subscription creation request.
 
     > **Note:** If this isn't true, you should not consider this a valid notification. It is possible that the notification has not originated from Microsoft Graph and may have been sent by a rogue actor. You should also investigate where the notification comes from and take appropriate action.
 
 1. Update your application based on your business logic.
-
-1. Send a `202 - Accepted` status code in your response to Microsoft Graph. If Microsoft Graph doesn't receive a 2xx class code, it will retry the notification a number of times.
-
-    > **Note:** You should send a `202 - Accepted` status code even if the `clientState` property doesn't match the one submitted with the subscription request. This is a good practice as it prevents a potential rogue actor from discovering the fact that you may not trust their notifications, and perhaps using that information to guess the value of the `clientState` property.
 
 Repeat for other notifications in the request.
 
@@ -232,6 +253,7 @@ Repeat for other notifications in the request.
 
 The following code samples are available on GitHub.
 
+- [Microsoft Graph Training Module - Using Change Notifications and Track Changes with Microsoft Graph](https://github.com/microsoftgraph/msgraph-training-changenotifications)
 - [Microsoft Graph Webhooks Sample for Node.js](https://github.com/OfficeDev/Microsoft-Graph-Nodejs-Webhooks)
 - [Microsoft Graph Webhooks Sample for ASP.NET](https://github.com/OfficeDev/Microsoft-Graph-ASPNET-Webhooks)
 - [Microsoft Graph User Webhooks Sample using WebJobs SDK](https://github.com/microsoftgraph/webjobs-webhooks-sample)
@@ -241,6 +263,7 @@ The following code samples are available on GitHub.
 - [Subscription resource type](/graph/api/resources/subscription?view=graph-rest-1.0)
 - [Get subscription](/graph/api/subscription-get?view=graph-rest-1.0)
 - [Create subscription](/graph/api/subscription-post-subscriptions?view=graph-rest-1.0)
+- [Change notifications tutorial](/graph/tutorials/change-notifications)
 
 [contact]: /graph/api/resources/contact?view=graph-rest-1.0
 [conversation]: /graph/api/resources/conversation?view=graph-rest-1.0

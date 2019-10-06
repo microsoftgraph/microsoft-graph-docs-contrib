@@ -1,9 +1,10 @@
 ---
 title: "Update macOSGeneralDeviceConfiguration"
 description: "Update the properties of a macOSGeneralDeviceConfiguration object."
-author: "tfitzmac"
+author: "davidmu1"
 localization_priority: Normal
 ms.prod: "Intune"
+doc_type: apiPageType
 ---
 
 # Update macOSGeneralDeviceConfiguration
@@ -145,6 +146,7 @@ Content-Length: 1078
   "passwordRequired": true
 }
 ```
+
 
 
 

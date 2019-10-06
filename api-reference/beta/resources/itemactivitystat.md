@@ -1,9 +1,11 @@
 ---
 author: daspek
-ms.author: dspektor
+description: "The itemActivityStat resource provides information about activities that took place within an interval of time."
 ms.date: 09/14/2017
 title: ItemActivityStat
 localization_priority: Normal
+doc_type: resourcePageType
+ms.prod: ""
 ---
 # itemActivityStat resource type
 
@@ -69,8 +71,6 @@ The **itemActivityStat** resource provides information about activities that too
   "keywords": "activities,activity,action,analytics",
   "section": "documentation",
   "tocPath": "Resources/ItemActivityStat",
-  "suppressions": [
-    "Error: /api-reference/beta/resources/itemactivitystat.md:\r\n      Exception processing links.\r\n    System.ArgumentException: Link Definition was null. Link text: !INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)\r\n      at ApiDoctor.Validation.DocFile.get_LinkDestinations()\r\n      at ApiDoctor.Validation.DocSet.ValidateLinks(Boolean includeWarnings, String[] relativePathForFiles, IssueLogger issues, Boolean requireFilenameCaseMatch, Boolean printOrphanedFiles)"
-  ]
+  "suppressions": []
 }
 -->

@@ -1,9 +1,10 @@
 ---
 title: "deliveryOptimizationGroupIdSource resource type"
 description: "GroupId Support Types"
-author: "tfitzmac"
+author: "rolyon"
 localization_priority: Normal
 ms.prod: "Intune"
+doc_type: resourcePageType
 ---
 
 # deliveryOptimizationGroupIdSource resource type
@@ -33,8 +34,6 @@ Here is a JSON representation of the resource.
   "@odata.type": "#microsoft.graph.deliveryOptimizationGroupIdSource"
 }
 ```
-
-
 
 
 

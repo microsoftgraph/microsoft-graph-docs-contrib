@@ -1,9 +1,10 @@
 ---
 title: "mobileAppTroubleshootingHistoryItem resource type"
 description: "History Item contained in the Mobile App Troubleshooting Event."
-author: "tfitzmac"
+author: "rolyon"
 localization_priority: Normal
 ms.prod: "Intune"
+doc_type: resourcePageType
 ---
 
 # mobileAppTroubleshootingHistoryItem resource type

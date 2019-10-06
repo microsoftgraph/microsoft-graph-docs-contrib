@@ -1,9 +1,10 @@
 ---
 title: "Update deviceAndAppManagementRoleDefinition"
 description: "Update the properties of a deviceAndAppManagementRoleDefinition object."
-author: "tfitzmac"
+author: "davidmu1"
 localization_priority: Normal
 ms.prod: "Intune"
+doc_type: apiPageType
 ---
 
 # Update deviceAndAppManagementRoleDefinition
@@ -119,6 +120,7 @@ Content-Length: 651
   "isBuiltIn": true
 }
 ```
+
 
 
 

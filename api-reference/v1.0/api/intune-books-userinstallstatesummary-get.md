@@ -1,9 +1,10 @@
 ---
 title: "Get userInstallStateSummary"
 description: "Read properties and relationships of the userInstallStateSummary object."
-author: "tfitzmac"
+author: "davidmu1"
 localization_priority: Normal
 ms.prod: "Intune"
+doc_type: apiPageType
 ---
 
 # Get userInstallStateSummary
@@ -71,6 +72,7 @@ Content-Length: 269
   }
 }
 ```
+
 
 
 

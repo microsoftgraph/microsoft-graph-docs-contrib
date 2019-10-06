@@ -2,6 +2,9 @@
 title: "Service root"
 description: "2015-10-25 14:57:30 UTC -->"
 localization_priority: Normal
+doc_type: conceptualPageType
+ms.prod: ""
+author: ""
 ---
 
 # Service root
@@ -40,8 +43,6 @@ localization_priority: Normal
   "keywords": "",
   "section": "documentation",
   "tocPath": "",
-  "suppressions": [
-    "Error: /api-reference/beta/resources/service-root.md:\r\n      Exception processing links.\r\n    System.ArgumentException: Link Definition was null. Link text: !INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)\r\n      at ApiDoctor.Validation.DocFile.get_LinkDestinations()\r\n      at ApiDoctor.Validation.DocSet.ValidateLinks(Boolean includeWarnings, String[] relativePathForFiles, IssueLogger issues, Boolean requireFilenameCaseMatch, Boolean printOrphanedFiles)"
-  ]
+  "suppressions": []
 }
 -->

@@ -4,6 +4,7 @@ description: "You can use Microsoft Graph to build compelling app experiences ba
 localization_priority: Priority
 author: "dkershaw10"
 ms.prod: "microsoft-identity-platform"
+doc_type: conceptualPageType
 ---
 
 # Working with users in Microsoft Graph
@@ -14,10 +15,11 @@ You can use Microsoft Graph to build compelling app experiences based on users, 
 
 You can access users through Microsoft Graph in two ways:
 
-- By their ID, `/users/{id}` 
+- By their ID, `/users/{id}`
 - By using the `/me` alias for the signed-in user, which is the same as `/users/{signed-in user's id}`
 
 ## Authorization
+
 One of the following [permissions](https://developer.microsoft.com/graph/docs/authorization/permission_scopes) is required to access user operations. The first three permissions can be granted to an app by a user. The rest can only be granted to an app by the administrator.
 
 - User.ReadBasic.All
@@ -25,6 +27,7 @@ One of the following [permissions](https://developer.microsoft.com/graph/docs/au
 - User.ReadWrite
 - User.Read.All
 - User.ReadWrite.All
+- User.ManageIdentities.All
 - Directory.Read.All
 - Directory.ReadWrite.All
 - Directory.AccessAsUser.All
@@ -42,6 +45,7 @@ One of the following [permissions](https://developer.microsoft.com/graph/docs/au
 For details and a list of all the properties, see the [user](user.md) object.
 
 ## Common operations
+
 >**Note:** Some of these operations require additional permissions.
 
 | Path    | Description |
@@ -55,11 +59,3 @@ For details and a list of all the properties, see the [user](user.md) object.
 |[`/users/{id}/drive`](../api/drive-get.md)| Gets the user's OneDrive file store. |
 |[`/users/{id}/memberOf`](../api/user-list-memberof.md)| Lists the groups that the user is a member of. |
 |[`/users/{id}/joinedTeams`](../api/user-list-joinedteams.md)| Lists the Microsoft Teams that the user is a member of. |
-<!--
-{
-  "type": "#page.annotation",
-  "suppressions": [
-    "Error: /api-reference/beta/resources/users.md:\r\n      Exception processing links.\r\n    System.ArgumentException: Link Definition was null. Link text: !INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)\r\n      at ApiDoctor.Validation.DocFile.get_LinkDestinations()\r\n      at ApiDoctor.Validation.DocSet.ValidateLinks(Boolean includeWarnings, String[] relativePathForFiles, IssueLogger issues, Boolean requireFilenameCaseMatch, Boolean printOrphanedFiles)"
-  ]
-}
--->

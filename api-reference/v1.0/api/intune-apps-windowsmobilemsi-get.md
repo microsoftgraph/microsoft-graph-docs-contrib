@@ -1,9 +1,10 @@
 ---
 title: "Get windowsMobileMSI"
 description: "Read properties and relationships of the windowsMobileMSI object."
-author: "tfitzmac"
+author: "davidmu1"
 localization_priority: Normal
 ms.prod: "Intune"
+doc_type: apiPageType
 ---
 
 # Get windowsMobileMSI
@@ -91,6 +92,7 @@ Content-Length: 1098
   }
 }
 ```
+
 
 
 

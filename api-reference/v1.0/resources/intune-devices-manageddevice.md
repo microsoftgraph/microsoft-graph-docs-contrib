@@ -1,9 +1,10 @@
 ---
 title: "managedDevice resource type"
 description: "Devices that are managed or pre-enrolled through Intune"
-author: "tfitzmac"
+author: "davidmu1"
 localization_priority: Normal
 ms.prod: "Intune"
+doc_type: resourcePageType
 ---
 
 # managedDevice resource type
@@ -205,6 +206,7 @@ Here is a JSON representation of the resource.
   "partnerReportedThreatState": "String"
 }
 ```
+
 
 
 

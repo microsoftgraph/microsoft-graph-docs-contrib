@@ -1,9 +1,11 @@
 ---
 author: JeremyKelley
-ms.author: JeremyKelley
+description: "The booleanColumn on a columnDefinition resource indicates that the column holds a boolean value."
 ms.date: 09/11/2017
 title: BooleanColumn
 localization_priority: Normal
+doc_type: resourcePageType
+ms.prod: ""
 ---
 # BooleanColumn resource type
 
@@ -32,8 +34,6 @@ The **booleanColumn** resource contains no properties.
   "keywords": "",
   "section": "documentation",
   "tocPath": "Resources/BooleanColumn",
-  "suppressions": [
-    "Error: /api-reference/beta/resources/booleanColumn.md:\r\n      Exception processing links.\r\n    System.ArgumentException: Link Definition was null. Link text: !INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)\r\n      at ApiDoctor.Validation.DocFile.get_LinkDestinations()\r\n      at ApiDoctor.Validation.DocSet.ValidateLinks(Boolean includeWarnings, String[] relativePathForFiles, IssueLogger issues, Boolean requireFilenameCaseMatch, Boolean printOrphanedFiles)"
-  ]
+  "suppressions": []
 }
 -->

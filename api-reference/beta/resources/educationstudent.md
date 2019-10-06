@@ -4,6 +4,7 @@ description: "Additional information added to an educationUser that is present w
 author: "mmast-msft"
 localization_priority: Normal
 ms.prod: "education"
+doc_type: resourcePageType
 ---
 
 # educationStudent resource type
@@ -17,7 +18,7 @@ Additional information added to an [educationUser](educationuser.md) that is pre
 |:---------------|:--------|:----------|
 |birthDate|Date| Birth date of the student.|
 |externalId|String| ID of the student in the source system.|
-|gender|educationGender| Possible values are: `female`, `male`, `other`, `unkownFutureValue`.|
+|gender|educationGender| Possible values are: `female`, `male`, `other`.|
 |grade|String|Current grade level of the student.|
 |graduationYear|String| Year the student is graduating from the school.|
 |studentNumber|String| Student Number.|
@@ -54,8 +55,6 @@ The following is a JSON representation of the resource.
   "keywords": "",
   "section": "documentation",
   "tocPath": "",
-  "suppressions": [
-    "Error: /api-reference/beta/resources/educationstudent.md:\r\n      Exception processing links.\r\n    System.ArgumentException: Link Definition was null. Link text: !INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)\r\n      at ApiDoctor.Validation.DocFile.get_LinkDestinations()\r\n      at ApiDoctor.Validation.DocSet.ValidateLinks(Boolean includeWarnings, String[] relativePathForFiles, IssueLogger issues, Boolean requireFilenameCaseMatch, Boolean printOrphanedFiles)"
-  ]
+  "suppressions": []
 }
 -->

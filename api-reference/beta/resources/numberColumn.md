@@ -1,9 +1,11 @@
 ---
 author: JeremyKelley
-ms.author: JeremyKelley
+description: "The numberColumn on a columnDefinition resource indicates that the column's values are numbers."
 ms.date: 09/11/2017
 title: NumberColumn
 localization_priority: Normal
+doc_type: resourcePageType
+ms.prod: ""
 ---
 # NumberColumn resource type
 
@@ -56,8 +58,6 @@ These properties may be updated.
   "keywords": "",
   "section": "documentation",
   "tocPath": "Resources/NumberColumn",
-  "suppressions": [
-    "Error: /api-reference/beta/resources/numberColumn.md:\r\n      Exception processing links.\r\n    System.ArgumentException: Link Definition was null. Link text: !INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)\r\n      at ApiDoctor.Validation.DocFile.get_LinkDestinations()\r\n      at ApiDoctor.Validation.DocSet.ValidateLinks(Boolean includeWarnings, String[] relativePathForFiles, IssueLogger issues, Boolean requireFilenameCaseMatch, Boolean printOrphanedFiles)"
-  ]
+  "suppressions": []
 }
 -->

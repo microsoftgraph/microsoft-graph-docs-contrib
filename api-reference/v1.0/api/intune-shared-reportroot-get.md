@@ -1,9 +1,10 @@
 ---
 title: "Get reportRoot"
 description: "Read properties and relationships of the reportRoot object."
-author: "tfitzmac"
+author: "davidmu1"
 localization_priority: Normal
 ms.prod: "intune"
+doc_type: apiPageType
 ---
 
 # Get reportRoot
@@ -67,6 +68,7 @@ Content-Length: 124
   }
 }
 ```
+
 
 
 

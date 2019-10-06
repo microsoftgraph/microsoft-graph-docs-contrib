@@ -4,6 +4,7 @@ description: "Types of teamsAsyncOperation. Members will be added here as more a
 author: "nkramer"
 localization_priority: Normal
 ms.prod: "microsoft-teams"
+doc_type: enumPageType
 ---
 
 # teamsAsyncOperationType enum type
@@ -22,11 +23,3 @@ Types of [teamsAsyncOperation](teamsasyncoperation.md). Members will be added he
 |unarchiveTeam|3|Operation to restore an archived team.|
 |createTeam|3|Operation to create a team from scratch.|
 
-<!--
-{
-  "type": "#page.annotation",
-  "suppressions": [
-    "Error: /api-reference/beta/resources/teamsasyncoperationtype.md:\r\n      Exception processing links.\r\n    System.ArgumentException: Link Definition was null. Link text: !INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)\r\n      at ApiDoctor.Validation.DocFile.get_LinkDestinations()\r\n      at ApiDoctor.Validation.DocSet.ValidateLinks(Boolean includeWarnings, String[] relativePathForFiles, IssueLogger issues, Boolean requireFilenameCaseMatch, Boolean printOrphanedFiles)"
-  ]
-}
--->

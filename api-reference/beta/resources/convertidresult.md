@@ -2,6 +2,9 @@
 title: "convertIdResult resource type"
 description: "The result of an ID format conversion performed by the translateExchangeIds function."
 localization_priority: Normal
+doc_type: resourcePageType
+ms.prod: "outlook"
+author: "svpsiva"
 ---
 
 # convertIdResult resource type
@@ -40,11 +43,3 @@ Here is a JSON representation of the resource.
   }
 }
 ```
-<!--
-{
-  "type": "#page.annotation",
-  "suppressions": [
-    "Error: /api-reference/beta/resources/convertidresult.md:\r\n      Exception processing links.\r\n    System.ArgumentException: Link Definition was null. Link text: !INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)\r\n      at ApiDoctor.Validation.DocFile.get_LinkDestinations()\r\n      at ApiDoctor.Validation.DocSet.ValidateLinks(Boolean includeWarnings, String[] relativePathForFiles, IssueLogger issues, Boolean requireFilenameCaseMatch, Boolean printOrphanedFiles)"
-  ]
-}
--->

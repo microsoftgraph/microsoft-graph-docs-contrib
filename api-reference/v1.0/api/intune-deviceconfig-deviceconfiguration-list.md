@@ -1,9 +1,10 @@
 ---
 title: "List deviceConfigurations"
 description: "List properties and relationships of the deviceConfiguration objects."
-author: "tfitzmac"
+author: "davidmu1"
 localization_priority: Normal
 ms.prod: "Intune"
+doc_type: apiPageType
 ---
 
 # List deviceConfigurations
@@ -71,6 +72,7 @@ Content-Length: 390
   ]
 }
 ```
+
 
 
 

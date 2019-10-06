@@ -4,6 +4,7 @@ description: "The Microsoft Graph calls and online meetings API adds a new dimen
 author: "VinodRavichandran"
 localization_priority: Priority
 ms.prod: "microsoft-teams"
+doc_type: conceptualPageType
 ---
 
 # Working with the calls and online meetings API in Microsoft Graph
@@ -96,11 +97,3 @@ The Media SDK allows the bot to send and receive audio, video, and video-based s
 [Calls and online meetings API samples](https://github.com/microsoftgraph/microsoft-graph-comms-samples/)
 
 [Known issues](/graph/known-issues#calls-and-online-meetings)
-<!--
-{
-  "type": "#page.annotation",
-  "suppressions": [
-    "Error: /api-reference/beta/resources/calls-api-overview.md:\r\n      Exception processing links.\r\n    System.ArgumentException: Link Definition was null. Link text: !INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)\r\n      at ApiDoctor.Validation.DocFile.get_LinkDestinations()\r\n      at ApiDoctor.Validation.DocSet.ValidateLinks(Boolean includeWarnings, String[] relativePathForFiles, IssueLogger issues, Boolean requireFilenameCaseMatch, Boolean printOrphanedFiles)"
-  ]
-}
--->

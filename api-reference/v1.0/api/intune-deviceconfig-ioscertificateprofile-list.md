@@ -1,9 +1,10 @@
 ---
 title: "List iosCertificateProfiles"
 description: "List properties and relationships of the iosCertificateProfile objects."
-author: "tfitzmac"
+author: "davidmu1"
 localization_priority: Normal
 ms.prod: "Intune"
+doc_type: apiPageType
 ---
 
 # List iosCertificateProfiles
@@ -71,6 +72,7 @@ Content-Length: 392
   ]
 }
 ```
+
 
 
 

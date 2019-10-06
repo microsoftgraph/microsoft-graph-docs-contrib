@@ -1,9 +1,10 @@
 ---
 title: "groupPolicyDefinition resource type"
 description: "The entity describes all of the information about a single group policy."
-author: "tfitzmac"
+author: "rolyon"
 localization_priority: Normal
 ms.prod: "Intune"
+doc_type: resourcePageType
 ---
 
 # groupPolicyDefinition resource type
@@ -59,8 +60,6 @@ Here is a JSON representation of the resource.
   "lastModifiedDateTime": "String (timestamp)"
 }
 ```
-
-
 
 
 

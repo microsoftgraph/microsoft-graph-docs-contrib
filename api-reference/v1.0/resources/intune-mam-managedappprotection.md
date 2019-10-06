@@ -1,9 +1,10 @@
 ---
 title: "managedAppProtection resource type"
 description: "Policy used to configure detailed management settings for a specified set of apps"
-author: "tfitzmac"
+author: "davidmu1"
 localization_priority: Normal
 ms.prod: "Intune"
+doc_type: resourcePageType
 ---
 
 # managedAppProtection resource type
@@ -118,4 +119,5 @@ Here is a JSON representation of the resource.
   ],
 }
 -->
+
 

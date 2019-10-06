@@ -1,10 +1,13 @@
 ---
 author: JeremyKelley
-ms.author: JeremyKelley
+description: "The remoteItem resource indicates that a driveItem references an item that exists in another drive."
 ms.date: 09/10/2017
 title: RemoteItem
 localization_priority: Normal
+doc_type: resourcePageType
+ms.prod: ""
 ---
+
 # RemoteItem resource type
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
@@ -75,8 +78,6 @@ For more information about the facets on a **driveItem**, see [driveItem](drivei
   "keywords": "quota,available,remaining,used",
   "section": "documentation",
   "tocPath": "Facets/RemoteItem",
-  "suppressions": [
-    "Error: /api-reference/beta/resources/remoteitem.md:\r\n      Exception processing links.\r\n    System.ArgumentException: Link Definition was null. Link text: !INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)\r\n      at ApiDoctor.Validation.DocFile.get_LinkDestinations()\r\n      at ApiDoctor.Validation.DocSet.ValidateLinks(Boolean includeWarnings, String[] relativePathForFiles, IssueLogger issues, Boolean requireFilenameCaseMatch, Boolean printOrphanedFiles)"
-  ]
+  "suppressions": []
 }
 -->

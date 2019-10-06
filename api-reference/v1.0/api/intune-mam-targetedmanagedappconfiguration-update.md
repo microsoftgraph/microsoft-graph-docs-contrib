@@ -1,9 +1,10 @@
 ---
 title: "Update targetedManagedAppConfiguration"
 description: "Update the properties of a targetedManagedAppConfiguration object."
-author: "tfitzmac"
+author: "davidmu1"
 localization_priority: Normal
 ms.prod: "Intune"
+doc_type: apiPageType
 ---
 
 # Update targetedManagedAppConfiguration
@@ -110,6 +111,7 @@ Content-Length: 560
   "isAssigned": true
 }
 ```
+
 
 
 

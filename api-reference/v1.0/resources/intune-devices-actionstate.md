@@ -1,9 +1,10 @@
 ---
 title: "actionState enum type"
 description: "State of the action on the device"
-author: "tfitzmac"
+author: "davidmu1"
 localization_priority: Normal
 ms.prod: "Intune"
+doc_type: enumPageType
 ---
 
 # actionState enum type
@@ -22,6 +23,7 @@ State of the action on the device
 |done|4|Action completed without errors.|
 |failed|5|Action failed|
 |notSupported|6|Action is not supported.|
+
 
 
 

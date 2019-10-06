@@ -4,6 +4,7 @@ description: "This topic describes how to enable application access to partner-m
 author: "jackson-woods"
 localization_priority: Priority
 ms.prod: "microsoft-identity-platform"
+ms.custom: graphiamtop20
 ---
 
 # Call Microsoft Graph from a Cloud Solution Provider application
@@ -79,7 +80,7 @@ This is a standard [authorization code grant flow](https://docs.microsoft.com/en
     GET https://login.microsoftonline.com/customer.com/oauth2/authorize
     ```
 
-2. [Aquire an access token using the authorization code:](https://docs.microsoft.com/en-us/azure/active-directory/develop/active-directory-protocols-oauth-code#use-the-authorization-code-to-request-an-access-token) Your app must use a **customer tenant** as the target tenant, in our example ```customer.com```, when making the request to the ```token``` endpoint:
+2. [Acquire an access token using the authorization code:](https://docs.microsoft.com/en-us/azure/active-directory/develop/active-directory-protocols-oauth-code#use-the-authorization-code-to-request-an-access-token) Your app must use a **customer tenant** as the target tenant, in our example ```customer.com```, when making the request to the ```token``` endpoint:
 
     ```http
     POST https://login.microsoftonline.com/customer.com/oauth2/token
@@ -101,7 +102,7 @@ CSP customer engagement is currently limited to a single region. Partner-managed
 
 When you create a new customer using the [Partner Center API](https://partnercenter.microsoft.com/en-us/partner/developer), a new customer tenant gets created. Additionally, a partner relationship also gets created, which makes you the partner of record for this new customer tenant. This partner relationship can take up to 3 minutes to propagate to the new customer tenant. If your app calls Microsoft Graph straight after creation, your app will likely receive an access denied error. A similar delay may be experienced when an existing customer accepts your invitation. This is because pre-consent relies on the partner relationship being present in the customer tenant.
 
-To avoid this problem, we recommend that your partner app should should wait **three minutes** after customer creation before calling Azure AD to acquire a token (to call Microsoft Graph). This should cover most cases. 
-However, if after waiting three minutes you still recieve an authorization error, please wait an additional 60 seconds and try again.
+To avoid this problem, we recommend that your partner app should wait **three minutes** after customer creation before calling Azure AD to acquire a token (to call Microsoft Graph). This should cover most cases. 
+However, if after waiting three minutes you still receive an authorization error, please wait an additional 60 seconds and try again.
 
 > **Note:** On the retry, you must acquire a new access token from Azure AD, before calling Microsoft Graph.  Calling Microsoft Graph with the access token you already have will not work, because the access token is good for an hour and won’t contain the pre-consented permission claims.

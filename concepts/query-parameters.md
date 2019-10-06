@@ -3,20 +3,28 @@ title: "Use query parameters to customize responses"
 description: "Microsoft Graph provides optional query parameters that you can use to specify and control the amount of data returned in a response. The following query parameters are supported."
 author: "piotrci"
 localization_priority: Priority
+scenarios: "getting-started"
+ms.custom: graphiamtop20
 ---
 
 # Use query parameters to customize responses
 
 Microsoft Graph supports optional query parameters that you can use to specify and control the amount of data returned in a response. The support for the exact query parameters varies from one API operation to another, and depending on the API, can differ between the v1.0 and beta endpoints. 
 
-> **Note:** On the v1.0 and beta endpoints, the `$` prefix is optional. For example, instead of `$filter`, you can use `filter`.
+> [!TIP] 
+> On the beta endpoint, the `$` prefix is optional. For example, instead of `$filter`, you can use `filter`. 
+> On the v1 endpoint, the `$` prefix is optional for only a subset of APIs. For simplicity, always include `$` if using the v1 endpoint.
 
 Query parameters can be OData system query options or other query parameters. 
+
+> [!VIDEO https://www.youtube-nocookie.com/embed/7BuFv3yETi4]
 
 ## OData system query options
 A Microsoft Graph API operation might support one or more of the following OData system query options. These query options are compatible with the [OData V4 query language][odata-query].
 
->**Note:** Click the examples to try them in [Graph Explorer][graph-explorer].
+>**Note:** OData 4.0 supports system query options in only GET operations.
+
+Click the examples to try them in [Graph Explorer][graph-explorer].
 
 | Name                     | Description | Example
 |:-------------------------|:------------|:---------|
@@ -125,7 +133,11 @@ Support for `$filter` operators varies across Microsoft Graph APIs. The followin
 - or (`or`)
 - not (`not`)
  
-The `startswith` string operator is often supported. The `any` lambda operator is supported for some APIs. For some  usage examples, see the following table. For more details about `$filter` syntax, see the [OData protocol][odata-filter].  
+The `startswith` string operator is often supported. The `any` lambda operator is supported for some APIs. 
+
+> **Note:** You must [specify properties in certain ways](/graph/api/user-list-messages?view=graph-rest-1.0#using-filter-and-orderby-in-the-same-query) when using both `$filter` and `$orderby` in the same query to get messages.
+
+For some  usage examples, see the following table. For more details about `$filter` syntax, see the [OData protocol][odata-filter].  
 
 The following table shows some examples that use the `$filter` query parameter.
 
@@ -184,8 +196,9 @@ GET https://graph.microsoft.com/v1.0/me/mailFolders/Inbox/messages?$orderby=from
 
 [Try in Graph Explorer](https://developer.microsoft.com/graph/graph-explorer?request=me/messages?$orderby=from/emailAddress/name%20desc,subject&method=GET&version=v1.0)
 
-When you specify $filter the server will infer a sort order for the results. If you use both `$orderby` and `$filter`, because the server always infers 
-a sort order for the results of a `$filter`, the properties in the `$filter` must be listed first in the `$orderby` before any other properties, and they must be listed in the order that they appear in the `$filter` parameter. 
+> **Note:** When you specify $filter the server will infer a sort order for the results. If you use both `$orderby` and `$filter` to get messages, because the server always infers 
+a sort order for the results of a `$filter`, you must [specify properties in certain ways](/graph/api/user-list-messages?view=graph-rest-1.0#using-filter-and-orderby-in-the-same-query).
+
 
 The following example shows a query filtered by the **subject** and **importance** properties, and then sorted by the **subject**, **importance**, and 
 **receivedDateTime** properties in descending order.

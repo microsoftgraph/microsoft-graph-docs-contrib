@@ -3,6 +3,8 @@ title: "subscription resource type"
 description: "A subscription allows a client app to receive notifications about changes to data in Microsoft Graph. Currently, subscriptions are enabled for the following resources:"
 localization_priority: Priority
 author: "piotrci"
+ms.prod: ""
+doc_type: resourcePageType
 ---
 
 # subscription resource type
@@ -70,6 +72,7 @@ Here is a JSON representation of the resource.
 
 | Resource            | Maximum Expiration Time  |
 |:--------------------|:-------------------------|
+| User, group, other directory resources   | 4230 minutes (under 3 days)    |
 | Mail                | 4230 minutes (under 3 days)    |
 | Calendar            | 4230 minutes (under 3 days)    |
 | Contacts            | 4230 minutes (under 3 days)    |

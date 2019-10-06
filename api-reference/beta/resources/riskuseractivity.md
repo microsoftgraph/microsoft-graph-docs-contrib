@@ -1,9 +1,10 @@
 ---
 title: "riskUserActivity resource type"
-description: ""
+description: author
 author: ""
 localization_priority: Normal
 ms.prod: "microsoft-identity-platform"
+doc_type: resourcePageType
 ---
 
 # riskUserActivity resource type
@@ -26,7 +27,7 @@ ms.prod: "microsoft-identity-platform"
 }-->
 ```json
 {
-    "eventTypes": [{"@odata.type":"microsoft.graph.riskEventType"}],
+    "eventTypes": ["String"],
     "detail": "string"
 }
 ```

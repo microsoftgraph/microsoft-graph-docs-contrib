@@ -4,6 +4,7 @@ description: "Archive the specified team. "
 author: "nkramer"
 localization_priority: Priority
 ms.prod: "microsoft-teams"
+doc_type: apiPageType
 ---
 
 # Archive team
@@ -68,7 +69,7 @@ POST https://graph.microsoft.com/v1.0/teams/{id}/archive
 The following is an example of a response.
 ```http
 HTTP/1.1 202 Accepted
-Location: /teams{id}/operations({opId})
+Location: /teams({id})/operations({opId})
 Content-Type: text/plain
 Content-Length: 0
 ```

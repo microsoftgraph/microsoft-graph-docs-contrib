@@ -1,9 +1,11 @@
 ---
 author: daspek
-ms.author: dspektor
+description: "The itemActionStat resource provides aggregate details about an action over a period of time."
 ms.date: 09/14/2017
 title: ItemActionStat
 localization_priority: Normal
+doc_type: resourcePageType
+ms.prod: ""
 ---
 # itemActionStat resource type
 
@@ -40,8 +42,6 @@ The **itemActionStat** resource provides aggregate details about an action over 
   "keywords": "activities,activity,action,analytics",
   "section": "documentation",
   "tocPath": "Resources/ItemActionStat",
-  "suppressions": [
-    "Error: /api-reference/beta/resources/itemactionstat.md:\r\n      Exception processing links.\r\n    System.ArgumentException: Link Definition was null. Link text: !INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)\r\n      at ApiDoctor.Validation.DocFile.get_LinkDestinations()\r\n      at ApiDoctor.Validation.DocSet.ValidateLinks(Boolean includeWarnings, String[] relativePathForFiles, IssueLogger issues, Boolean requireFilenameCaseMatch, Boolean printOrphanedFiles)"
-  ]
+  "suppressions": []
 }
 -->

@@ -1,9 +1,10 @@
 ---
 title: "Update deviceComplianceActionItem"
 description: "Update the properties of a deviceComplianceActionItem object."
-author: "tfitzmac"
+author: "davidmu1"
 localization_priority: Normal
 ms.prod: "Intune"
+doc_type: apiPageType
 ---
 
 # Update deviceComplianceActionItem
@@ -92,6 +93,7 @@ Content-Length: 320
   ]
 }
 ```
+
 
 
 

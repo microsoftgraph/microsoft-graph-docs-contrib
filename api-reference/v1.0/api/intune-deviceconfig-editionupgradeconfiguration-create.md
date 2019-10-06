@@ -1,9 +1,10 @@
 ---
 title: "Create editionUpgradeConfiguration"
 description: "Create a new editionUpgradeConfiguration object."
-author: "tfitzmac"
+author: "davidmu1"
 localization_priority: Normal
 ms.prod: "Intune"
+doc_type: apiPageType
 ---
 
 # Create editionUpgradeConfiguration
@@ -101,6 +102,7 @@ Content-Length: 483
   "productKey": "Product Key value"
 }
 ```
+
 
 
 

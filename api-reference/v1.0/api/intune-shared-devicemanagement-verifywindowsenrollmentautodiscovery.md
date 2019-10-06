@@ -1,9 +1,10 @@
 ---
 title: "verifyWindowsEnrollmentAutoDiscovery function"
 description: "Not yet documented"
-author: "tfitzmac"
+author: "davidmu1"
 localization_priority: Normal
 ms.prod: "intune"
+doc_type: apiPageType
 ---
 
 # verifyWindowsEnrollmentAutoDiscovery function
@@ -66,6 +67,7 @@ Content-Length: 21
   "value": true
 }
 ```
+
 
 
 

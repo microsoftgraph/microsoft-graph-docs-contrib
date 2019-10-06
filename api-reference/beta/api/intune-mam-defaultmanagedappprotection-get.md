@@ -1,9 +1,10 @@
 ---
 title: "Get defaultManagedAppProtection"
 description: "Read properties and relationships of the defaultManagedAppProtection object."
-author: "tfitzmac"
+author: "rolyon"
 localization_priority: Normal
 ms.prod: "Intune"
+doc_type: apiPageType
 ---
 
 # Get defaultManagedAppProtection
@@ -21,7 +22,7 @@ One of the following permissions is required to call this API. To learn more, in
 |:---|:---|
 |Delegated (work or school account)|DeviceManagementApps.ReadWrite.All, DeviceManagementApps.Read.All|
 |Delegated (personal Microsoft account)|Not supported.|
-|Application|Not supported.|
+|Application|DeviceManagementApps.ReadWrite.All, DeviceManagementApps.Read.All|
 
 ## HTTP Request
 <!-- {
@@ -60,7 +61,7 @@ Here is an example of the response. Note: The response object shown here may be 
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 3902
+Content-Length: 4119
 
 {
   "value": {
@@ -108,6 +109,7 @@ Content-Length: 3902
     "appActionIfMaximumPinRetriesExceeded": "wipe",
     "pinRequiredInsteadOfBiometricTimeout": "-PT3M9.8396734S",
     "allowedOutboundClipboardSharingExceptionLength": 14,
+    "notificationRestriction": "blockOrganizationalData",
     "appDataEncryptionType": "afterDeviceRestart",
     "screenCaptureBlocked": true,
     "encryptAppData": true,
@@ -144,18 +146,19 @@ Content-Length: 3902
     "appActionIfIosDeviceModelNotAllowed": "wipe",
     "allowedAndroidDeviceManufacturers": "Allowed Android Device Manufacturers value",
     "appActionIfAndroidDeviceManufacturerNotAllowed": "wipe",
-    "thirdPartyKeyboardsBlocked": true,
     "filterOpenInToOnlyManagedApps": true,
     "disableProtectionOfManagedOutboundOpenInData": true,
     "protectInboundDataFromUnknownSources": true,
     "requiredAndroidSafetyNetDeviceAttestationType": "basicIntegrity",
     "appActionIfAndroidSafetyNetDeviceAttestationFailed": "wipe",
     "requiredAndroidSafetyNetAppsVerificationType": "enabled",
-    "appActionIfAndroidSafetyNetAppsVerificationFailed": "wipe"
+    "appActionIfAndroidSafetyNetAppsVerificationFailed": "wipe",
+    "customBrowserProtocol": "Custom Browser Protocol value",
+    "customBrowserPackageId": "Custom Browser Package Id value",
+    "customBrowserDisplayName": "Custom Browser Display Name value"
   }
 }
 ```
-
 
 
 

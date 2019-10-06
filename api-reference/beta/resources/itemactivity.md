@@ -1,9 +1,11 @@
 ---
 author: daspek
-ms.author: dspektor
+description: "The ItemActivity resource provides information about activities that took place on an item or within a container."
 ms.date: 09/14/2017
 title: ItemActivity
 localization_priority: Normal
+doc_type: resourcePageType
+ms.prod: ""
 ---
 # ItemActivity resource type
 
@@ -103,8 +105,6 @@ New actions may get logged in the future, so make sure your app is tolerant of h
   "keywords": "activities,activity,action",
   "section": "documentation",
   "tocPath": "Resources/ItemActivity",
-  "suppressions": [
-    "Error: /api-reference/beta/resources/itemactivity.md:\r\n      Exception processing links.\r\n    System.ArgumentException: Link Definition was null. Link text: !INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)\r\n      at ApiDoctor.Validation.DocFile.get_LinkDestinations()\r\n      at ApiDoctor.Validation.DocSet.ValidateLinks(Boolean includeWarnings, String[] relativePathForFiles, IssueLogger issues, Boolean requireFilenameCaseMatch, Boolean printOrphanedFiles)"
-  ]
+  "suppressions": []
 }
 -->

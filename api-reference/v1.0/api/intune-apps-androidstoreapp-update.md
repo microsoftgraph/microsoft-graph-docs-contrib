@@ -1,9 +1,10 @@
 ---
 title: "Update androidStoreApp"
 description: "Update the properties of a androidStoreApp object."
-author: "tfitzmac"
+author: "davidmu1"
 localization_priority: Normal
 ms.prod: "Intune"
+doc_type: apiPageType
 ---
 
 # Update androidStoreApp
@@ -150,6 +151,7 @@ Content-Length: 1110
   }
 }
 ```
+
 
 
 

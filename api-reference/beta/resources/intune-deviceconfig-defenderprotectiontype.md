@@ -1,9 +1,10 @@
 ---
 title: "defenderProtectionType enum type"
 description: "Possible values of Defender Protection"
-author: "tfitzmac"
+author: "rolyon"
 localization_priority: Normal
 ms.prod: "Intune"
+doc_type: enumPageType
 ---
 
 # defenderProtectionType enum type
@@ -20,8 +21,6 @@ Possible values of Defender Protection
 |userDefined|0|Device default value, no intent.|
 |enable|1|Block functionality.|
 |auditMode|2|Allow functionality but generate logs.|
-
-
 
 
 

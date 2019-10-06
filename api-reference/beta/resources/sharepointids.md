@@ -1,10 +1,11 @@
 ---
 author: JeremyKelley
-ms.author: JeremyKelley
+description: "The SharePointIds resource groups the various identifiers for an item stored in a SharePoint site or OneDrive for Business into a single structure."
 ms.date: 09/10/2017
 title: SharePointIds
 localization_priority: Normal
 ms.prod: "sharepoint"
+doc_type: resourcePageType
 ---
 # SharePointIds resource type
 
@@ -63,8 +64,6 @@ For more information about the facets on a **driveItem**, see [**driveItem**](dr
   "keywords": "item, unique, id, csom, facet",
   "section": "documentation",
   "tocPath": "Facets/SharepointIds",
-  "suppressions": [
-    "Error: /api-reference/beta/resources/sharepointids.md:\r\n      Exception processing links.\r\n    System.ArgumentException: Link Definition was null. Link text: !INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)\r\n      at ApiDoctor.Validation.DocFile.get_LinkDestinations()\r\n      at ApiDoctor.Validation.DocSet.ValidateLinks(Boolean includeWarnings, String[] relativePathForFiles, IssueLogger issues, Boolean requireFilenameCaseMatch, Boolean printOrphanedFiles)"
-  ]
+  "suppressions": []
 }
 -->

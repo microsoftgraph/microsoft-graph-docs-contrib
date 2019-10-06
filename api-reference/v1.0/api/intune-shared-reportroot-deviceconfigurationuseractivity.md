@@ -1,9 +1,10 @@
 ---
 title: "deviceConfigurationUserActivity function"
 description: "Metadata for the device configuration user activity report"
-author: "tfitzmac"
+author: "davidmu1"
 localization_priority: Normal
 ms.prod: "intune"
+doc_type: apiPageType
 ---
 
 # deviceConfigurationUserActivity function
@@ -64,6 +65,7 @@ Content-Length: 123
   }
 }
 ```
+
 
 
 

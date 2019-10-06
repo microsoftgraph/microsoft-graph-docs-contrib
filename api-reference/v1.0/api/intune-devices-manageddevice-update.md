@@ -1,9 +1,10 @@
 ---
 title: "Update managedDevice"
 description: "Update the properties of a managedDevice object."
-author: "tfitzmac"
+author: "davidmu1"
 localization_priority: Normal
 ms.prod: "Intune"
+doc_type: apiPageType
 ---
 
 # Update managedDevice
@@ -316,6 +317,7 @@ Content-Length: 4705
   "partnerReportedThreatState": "activated"
 }
 ```
+
 
 
 

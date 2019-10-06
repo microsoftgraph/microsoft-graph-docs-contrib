@@ -1,9 +1,10 @@
 ---
 title: "Get managedDeviceOverview"
 description: "Read properties and relationships of the managedDeviceOverview object."
-author: "tfitzmac"
+author: "davidmu1"
 localization_priority: Normal
 ms.prod: "Intune"
+doc_type: apiPageType
 ---
 
 # Get managedDeviceOverview
@@ -87,6 +88,7 @@ Content-Length: 797
   }
 }
 ```
+
 
 
 

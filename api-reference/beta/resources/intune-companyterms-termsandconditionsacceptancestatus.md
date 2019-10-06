@@ -1,9 +1,10 @@
 ---
 title: "termsAndConditionsAcceptanceStatus resource type"
 description: "A termsAndConditionsAcceptanceStatus entity represents the acceptance status of a given Terms and Conditions (T&C) policy by a given user. Users must accept the most up-to-date version of the terms in order to retain access to the Company Portal."
-author: "tfitzmac"
+author: "rolyon"
 localization_priority: Normal
 ms.prod: "Intune"
+doc_type: resourcePageType
 ---
 
 # termsAndConditionsAcceptanceStatus resource type
@@ -53,8 +54,6 @@ Here is a JSON representation of the resource.
   "acceptedDateTime": "String (timestamp)"
 }
 ```
-
-
 
 
 

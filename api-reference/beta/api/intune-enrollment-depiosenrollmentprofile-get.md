@@ -1,9 +1,10 @@
 ---
 title: "Get depIOSEnrollmentProfile"
 description: "Read properties and relationships of the depIOSEnrollmentProfile object."
-author: "tfitzmac"
+author: "rolyon"
 localization_priority: Normal
 ms.prod: "Intune"
+doc_type: apiPageType
 ---
 
 # Get depIOSEnrollmentProfile
@@ -21,7 +22,7 @@ One of the following permissions is required to call this API. To learn more, in
 |:---|:---|
 |Delegated (work or school account)|DeviceManagementServiceConfig.ReadWrite.All, DeviceManagementServiceConfig.Read.All|
 |Delegated (personal Microsoft account)|Not supported.|
-|Application|Not supported.|
+|Application|DeviceManagementServiceConfig.ReadWrite.All, DeviceManagementServiceConfig.Read.All|
 
 ## HTTP Request
 <!-- {
@@ -60,7 +61,7 @@ Here is an example of the response. Note: The response object shown here may be 
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 1955
+Content-Length: 2166
 
 {
   "value": {
@@ -90,6 +91,7 @@ Content-Length: 1955
     "diagnosticsDisabled": true,
     "displayToneSetupDisabled": true,
     "privacyPaneDisabled": true,
+    "screenTimeScreenDisabled": true,
     "deviceNameTemplate": "Device Name Template value",
     "iTunesPairingMode": "allow",
     "managementCertificates": [
@@ -108,14 +110,17 @@ Content-Length: 1955
     "homeButtonScreenDisabled": true,
     "iMessageAndFaceTimeScreenDisabled": true,
     "onBoardingScreenDisabled": true,
-    "screenTimeScreenDisabled": true,
     "simSetupScreenDisabled": true,
     "softwareUpdateScreenDisabled": true,
-    "watchMigrationScreenDisabled": true
+    "watchMigrationScreenDisabled": true,
+    "appearanceScreenDisabled": true,
+    "expressLanguageScreenDisabled": true,
+    "preferredLanguageScreenDisabled": true,
+    "deviceToDeviceMigrationDisabled": true,
+    "welcomeScreenDisabled": true
   }
 }
 ```
-
 
 
 

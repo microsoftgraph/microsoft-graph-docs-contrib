@@ -1,10 +1,13 @@
 ---
 author: daspek
-ms.author: dspektor
+description: "The ShareAction resource provides information about an activity that shared an item."
 ms.date: 09/14/2017
 title: ShareAction
 localization_priority: Normal
+doc_type: resourcePageType
+ms.prod: ""
 ---
+
 # ShareAction resource type
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
@@ -46,8 +49,6 @@ Item activity records are currently only available on SharePoint and OneDrive fo
   "keywords": "activities,activity,action,mention",
   "section": "documentation",
   "tocPath": "Resources/ShareAction",
-  "suppressions": [
-    "Error: /api-reference/beta/resources/shareaction.md:\r\n      Exception processing links.\r\n    System.ArgumentException: Link Definition was null. Link text: !INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)\r\n      at ApiDoctor.Validation.DocFile.get_LinkDestinations()\r\n      at ApiDoctor.Validation.DocSet.ValidateLinks(Boolean includeWarnings, String[] relativePathForFiles, IssueLogger issues, Boolean requireFilenameCaseMatch, Boolean printOrphanedFiles)"
-  ]
+  "suppressions": []
 }
 -->

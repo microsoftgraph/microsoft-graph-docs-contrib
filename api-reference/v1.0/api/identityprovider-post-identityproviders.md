@@ -4,6 +4,7 @@ description: "Create a new identityProvider"
 localization_priority: Priority
 author: "valnav"
 ms.prod: "microsoft-identity-platform"
+doc_type: apiPageType
 ---
 
 # Create identityProvider
@@ -38,7 +39,7 @@ POST /identityProviders
 
 ## Request body
 
-In the request body, provide a JSON representation of [identityProvider](../resources/identityProvider.md) object. All the properties listed in the following table are required.
+In the request body, provide a JSON representation of [identityProvider](../resources/identityprovider.md) object. All the properties listed in the following table are required.
 
 |Property|Type|Description|
 |:---------------|:--------|:----------|
@@ -49,7 +50,7 @@ In the request body, provide a JSON representation of [identityProvider](../reso
 
 ## Response
 
-If successful, this method returns `201 Created` response code and [identityProvider](../resources/identityProvider.md) object in the response body. If unsuccessful, a `4xx` error will be returned with specific details.
+If successful, this method returns `201 Created` response code and [identityProvider](../resources/identityprovider.md) object in the response body. If unsuccessful, a `4xx` error will be returned with specific details.
 
 ## Example
 

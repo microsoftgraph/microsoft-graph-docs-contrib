@@ -1,9 +1,10 @@
 ---
 title: "savedUIStateGenerationOptions enum type"
 description: "Not yet documented"
-author: "tfitzmac"
+author: "davidmu1"
 localization_priority: Normal
 ms.prod: "Intune"
+doc_type: enumPageType
 ---
 
 # savedUIStateGenerationOptions enum type
@@ -17,6 +18,7 @@ Not yet documented
 |:---|:---|:---|
 |none|0|Not yet documented|
 |omitSilverlightPolicyReferences|1|Not yet documented|
+
 
 
 

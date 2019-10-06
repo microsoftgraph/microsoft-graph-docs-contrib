@@ -1,9 +1,11 @@
 ---
 author: JeremyKelley
-ms.author: JeremyKelley
+description: "The Shared resource indicates a DriveItem has been shared with others."
 ms.date: 09/10/2017
 title: Shared
 localization_priority: Normal
+doc_type: resourcePageType
+ms.prod: ""
 ---
 # Shared resource type
 
@@ -59,8 +61,6 @@ For more information about the facets on a **driveItem**, see [**driveItem**](dr
   "keywords": "shared,share,item,facet,onedrive",
   "section": "documentation",
   "tocPath": "Facets/Shared",
-  "suppressions": [
-    "Error: /api-reference/beta/resources/shared.md:\r\n      Exception processing links.\r\n    System.ArgumentException: Link Definition was null. Link text: !INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)\r\n      at ApiDoctor.Validation.DocFile.get_LinkDestinations()\r\n      at ApiDoctor.Validation.DocSet.ValidateLinks(Boolean includeWarnings, String[] relativePathForFiles, IssueLogger issues, Boolean requireFilenameCaseMatch, Boolean printOrphanedFiles)"
-  ]
+  "suppressions": []
 }
 -->

@@ -1,9 +1,11 @@
 ---
 author: JeremyKelley
-ms.author: JeremyKelley
+description: "The Root facet indicates that an object is the top-most one in its hierarchy."
 ms.date: 09/10/2017
 title: Root
 localization_priority: Normal
+doc_type: resourcePageType
+ms.prod: ""
 ---
 # Root resource type
 
@@ -34,8 +36,6 @@ The **Root** resource has no properties.
   "type": "#page.annotation",
   "section": "documentation",
   "tocPath": "Facets/Root",
-  "suppressions": [
-    "Error: /api-reference/beta/resources/root.md:\r\n      Exception processing links.\r\n    System.ArgumentException: Link Definition was null. Link text: !INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)\r\n      at ApiDoctor.Validation.DocFile.get_LinkDestinations()\r\n      at ApiDoctor.Validation.DocSet.ValidateLinks(Boolean includeWarnings, String[] relativePathForFiles, IssueLogger issues, Boolean requireFilenameCaseMatch, Boolean printOrphanedFiles)"
-  ]
+  "suppressions": []
 }
 -->

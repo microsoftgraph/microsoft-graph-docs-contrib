@@ -4,6 +4,7 @@ description: "Restore an archived team. This restores users' ability to send mes
 localization_priority: Normal
 author: "nkramer"
 ms.prod: "microsoft-teams"
+doc_type: apiPageType
 ---
 
 # Unarchive team
@@ -58,7 +59,7 @@ POST https://graph.microsoft.com/v1.0/teams/{id}/unarchive
 The following is an example of a response.
 ```http
 HTTP/1.1 202 Accepted
-Location: /teams{id}/operations({opId})
+Location: /teams({id})/operations({opId})
 Content-Type: text/plain
 Content-Length: 0
 ```

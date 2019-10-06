@@ -1,9 +1,11 @@
 ---
 author: JeremyKelley
-ms.author: JeremyKelley
+description: "The Identity resource represents an identity of an actor."
 ms.date: 09/14/2017
 title: Identity
 localization_priority: Normal
+doc_type: resourcePageType
+ms.prod: ""
 ---
 # identity resource type
 
@@ -47,8 +49,6 @@ In this case, the **displayName** property for the identity will be returned, bu
   "keywords": "identity,owner,modifier,app,user,group",
   "section": "documentation",
   "tocPath": "Resources/Identity",
-  "suppressions": [
-    "Error: /api-reference/beta/resources/identity.md:\r\n      Exception processing links.\r\n    System.ArgumentException: Link Definition was null. Link text: !INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)\r\n      at ApiDoctor.Validation.DocFile.get_LinkDestinations()\r\n      at ApiDoctor.Validation.DocSet.ValidateLinks(Boolean includeWarnings, String[] relativePathForFiles, IssueLogger issues, Boolean requireFilenameCaseMatch, Boolean printOrphanedFiles)"
-  ]
+  "suppressions": []
 }
 -->

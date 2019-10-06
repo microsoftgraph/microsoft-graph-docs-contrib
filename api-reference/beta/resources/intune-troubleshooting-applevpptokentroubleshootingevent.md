@@ -1,9 +1,10 @@
 ---
 title: "appleVppTokenTroubleshootingEvent resource type"
 description: "Event representing an Apple Vpp Token Troubleshooting Event."
-author: "tfitzmac"
+author: "rolyon"
 localization_priority: Normal
 ms.prod: "Intune"
+doc_type: resourcePageType
 ---
 
 # appleVppTokenTroubleshootingEvent resource type

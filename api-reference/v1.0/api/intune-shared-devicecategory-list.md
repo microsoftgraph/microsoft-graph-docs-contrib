@@ -1,9 +1,10 @@
 ---
 title: "List deviceCategories"
 description: "List properties and relationships of the deviceCategory objects."
-author: "tfitzmac"
+author: "davidmu1"
 localization_priority: Normal
 ms.prod: "intune"
+doc_type: apiPageType
 ---
 
 # List deviceCategories
@@ -68,6 +69,7 @@ Content-Length: 233
   ]
 }
 ```
+
 
 
 

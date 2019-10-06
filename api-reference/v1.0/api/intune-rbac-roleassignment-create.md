@@ -1,9 +1,10 @@
 ---
 title: "Create roleAssignment"
 description: "Create a new roleAssignment object."
-author: "tfitzmac"
+author: "davidmu1"
 localization_priority: Normal
 ms.prod: "Intune"
+doc_type: apiPageType
 ---
 
 # Create roleAssignment
@@ -89,6 +90,7 @@ Content-Length: 242
   ]
 }
 ```
+
 
 
 

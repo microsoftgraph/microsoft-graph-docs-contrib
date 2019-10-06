@@ -1,9 +1,10 @@
 ---
 title: "Create windows10CompliancePolicy"
 description: "Create a new windows10CompliancePolicy object."
-author: "tfitzmac"
+author: "davidmu1"
 localization_priority: Normal
 ms.prod: "Intune"
+doc_type: apiPageType
 ---
 
 # Create windows10CompliancePolicy
@@ -146,6 +147,7 @@ Content-Length: 1126
   "storageRequireEncryption": true
 }
 ```
+
 
 
 

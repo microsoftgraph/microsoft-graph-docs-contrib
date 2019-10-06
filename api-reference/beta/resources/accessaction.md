@@ -1,9 +1,11 @@
 ---
 author: daspek
-ms.author: dspektor
+description: "The presence of the accessAction resource on an itemActivity indicates that the activity accessed an item."
 ms.date: 09/12/2018
 title: AccessAction
 localization_priority: Normal
+doc_type: resourcePageType
+ms.prod: "microsoft-identity-platform"
 ---
 # accessAction resource type
 
@@ -40,8 +42,6 @@ This resource type has no properties.
   "keywords": "activities,activity,action,access",
   "section": "documentation",
   "tocPath": "Resources/AccessAction",
-  "suppressions": [
-    "Error: /api-reference/beta/resources/accessaction.md:\r\n      Exception processing links.\r\n    System.ArgumentException: Link Definition was null. Link text: !INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)\r\n      at ApiDoctor.Validation.DocFile.get_LinkDestinations()\r\n      at ApiDoctor.Validation.DocSet.ValidateLinks(Boolean includeWarnings, String[] relativePathForFiles, IssueLogger issues, Boolean requireFilenameCaseMatch, Boolean printOrphanedFiles)"
-  ]
+  "suppressions": []
 }
 -->

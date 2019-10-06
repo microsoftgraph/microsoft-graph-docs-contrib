@@ -2,6 +2,9 @@
 title: "programControl resource type"
 description: "In the Azure AD access reviews feature, the program control object represents a control, linking an access review to a program."
 localization_priority: Normal
+doc_type: resourcePageType
+ms.prod: ""
+author: ""
 ---
 
 # programControl resource type
@@ -18,14 +21,6 @@ In the Azure AD [access reviews](accessreviews-root.md) feature, the program con
 |[Create programControl](../api/programcontrol-create.md) |		[programControl](programcontrol.md)	|	Add a programControl to a program.|
 |[Delete programControl](../api/programcontrol-delete.md) |		None.	|	Remove a programControl from a program.|
 |[List programControls](../api/programcontrol-list.md) | [programControl](programcontrol.md) collection| List controls across all programs in the tenant.|
-
-## Permissions
-
-|Permission type                        | Permissions (from least to most privileged)              |
-|:--------------------------------------|:---------------------------------------------------------|
-|Delegated (work or school account)     | ProgramControl.Read.All, ProgramControl.ReadWrite.All |
-|Delegated (personal Microsoft account) | Not supported. |
-|Application                            | Not supported. |
 
 ## Properties
 | Property	   | Type	|Description|
@@ -73,8 +68,8 @@ Here is a JSON representation of the resource.
  "displayName": "string",
  "status": "string",
  "createdDateTime": "string (timestamp)",
- "owner": "microsoft.graph.userIdentity",
- "resource":"microsoft.graph.programResource"
+ "owner": {"@odata.type":"microsoft.graph.userIdentity"},
+ "resource":{"@odata.type":"microsoft.graph.programResource"}
 }
 
 ```
@@ -89,7 +84,24 @@ This type inherits from `microsoft.graph.identity` and has one additional proper
 |:---------------|:--------|:----------|
 | `type`               |`String`  | Type of the resource, indicating whether it is a group or an app. |     
 
+## JSON representation
 
+Here is a JSON representation of the resource.
+
+<!-- {
+  "blockType": "resource",
+  "optionalProperties": [
+
+  ],
+  "@odata.type": "microsoft.graph.programResource"
+}-->
+
+```json
+{
+ "type": "string"
+}
+
+```
 <!--
 {
   "type": "#page.annotation",
@@ -97,8 +109,6 @@ This type inherits from `microsoft.graph.identity` and has one additional proper
   "keywords": "",
   "section": "documentation",
   "tocPath": "",
-  "suppressions": [
-    "Error: /api-reference/beta/resources/programcontrol.md:\r\n      Exception processing links.\r\n    System.ArgumentException: Link Definition was null. Link text: !INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)\r\n      at ApiDoctor.Validation.DocFile.get_LinkDestinations()\r\n      at ApiDoctor.Validation.DocSet.ValidateLinks(Boolean includeWarnings, String[] relativePathForFiles, IssueLogger issues, Boolean requireFilenameCaseMatch, Boolean printOrphanedFiles)"
-  ]
+  "suppressions": []
 }
 -->

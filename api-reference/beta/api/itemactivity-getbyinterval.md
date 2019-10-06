@@ -1,9 +1,11 @@
 ---
 author: daspek
-ms.author: dspektor
+description: "Get itemActivityStats for the activities that took place under this resource within the specified time interval."
 ms.date: 10/06/2017
 title: Get item activity stats by interval
 localization_priority: Normal
+doc_type: apiPageType
+ms.prod: ""
 ---
 # Get item activity stats by interval
 
@@ -100,8 +102,6 @@ Content-type: application/json
   "keywords": "",
   "section": "documentation",
   "tocPath": "BaseItem/Get activities by interval",
-  "suppressions": [
-    "Error: /api-reference/beta/api/itemactivity-getbyinterval.md:\r\n      Exception processing links.\r\n    System.ArgumentException: Link Definition was null. Link text: !INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)\r\n      at ApiDoctor.Validation.DocFile.get_LinkDestinations()\r\n      at ApiDoctor.Validation.DocSet.ValidateLinks(Boolean includeWarnings, String[] relativePathForFiles, IssueLogger issues, Boolean requireFilenameCaseMatch, Boolean printOrphanedFiles)"
-  ]
+  "suppressions": []
 }
 -->

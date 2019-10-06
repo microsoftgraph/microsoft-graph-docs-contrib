@@ -2,13 +2,16 @@
 title: "itemAttachment resource type"
 description: "A contact, event, or message that's attached to another event,"
 localization_priority: Normal
+doc_type: resourcePageType
+ms.prod: "outlook"
+author: "angelgolfer-ms"
 ---
 
 # itemAttachment resource type
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-A contact, event, or message that's attached to another [event](../resources/event.md),
+A contact, event, or message that's attached to a user [event](../resources/event.md),
 [message](../resources/message.md), [Outlook task](../resources/outlooktask.md), or [post](../resources/post.md).  
 
 Derived from [attachment](attachment.md).
@@ -17,7 +20,7 @@ Derived from [attachment](attachment.md).
 
 | Method       | Return Type  |Description|
 |:---------------|:--------|:----------|
-|[Get](../api/attachment-get.md) | [itemAttachment](itemattachment.md) |Read properties and relationships of itemAttachment object.|
+|[Get](../api/attachment-get.md) | [itemAttachment](itemattachment.md) |Read the properties, relationships, or raw contents of an itemAttachment object.|
 |[Delete](../api/attachment-delete.md) | None |Delete itemAttachment object. |
 
 ## Properties
@@ -41,6 +44,8 @@ Here is a JSON representation of the resource
 
 <!-- {
   "blockType": "resource",
+  "baseType": "microsoft.graph.attachment",
+  "keyProperty":"id",
   "optionalProperties": [
     "item"
   ],
@@ -67,8 +72,6 @@ Here is a JSON representation of the resource
   "keywords": "",
   "section": "documentation",
   "tocPath": "",
-  "suppressions": [
-    "Error: /api-reference/beta/resources/itemattachment.md:\r\n      Exception processing links.\r\n    System.ArgumentException: Link Definition was null. Link text: !INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)\r\n      at ApiDoctor.Validation.DocFile.get_LinkDestinations()\r\n      at ApiDoctor.Validation.DocSet.ValidateLinks(Boolean includeWarnings, String[] relativePathForFiles, IssueLogger issues, Boolean requireFilenameCaseMatch, Boolean printOrphanedFiles)"
-  ]
+  "suppressions": []
 }
 -->

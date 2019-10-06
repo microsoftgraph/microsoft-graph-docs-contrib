@@ -1,9 +1,11 @@
 ---
 author: daspek
-ms.author: dspektor
+description: "The contentTypeInfo resource indicates the SharePoint content type of an item."
 ms.date: 09/12/2017
 title: ContentTypeInfo
 localization_priority: Normal
+doc_type: resourcePageType
+ms.prod: ""
 ---
 # ContentTypeInfo resource type
 
@@ -37,8 +39,6 @@ Here is a JSON representation of a **contentTypeInfo** resource.
   "keywords": "",
   "section": "documentation",
   "tocPath": "Resources/ContentTypeInfo",
-  "suppressions": [
-    "Error: /api-reference/beta/resources/contenttypeinfo.md:\r\n      Exception processing links.\r\n    System.ArgumentException: Link Definition was null. Link text: !INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)\r\n      at ApiDoctor.Validation.DocFile.get_LinkDestinations()\r\n      at ApiDoctor.Validation.DocSet.ValidateLinks(Boolean includeWarnings, String[] relativePathForFiles, IssueLogger issues, Boolean requireFilenameCaseMatch, Boolean printOrphanedFiles)"
-  ]
+  "suppressions": []
 }
 -->

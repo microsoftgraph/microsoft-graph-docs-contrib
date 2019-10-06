@@ -1,9 +1,10 @@
 ---
 title: "List microsoftStoreForBusinessApps"
 description: "List properties and relationships of the microsoftStoreForBusinessApp objects."
-author: "tfitzmac"
+author: "davidmu1"
 localization_priority: Normal
 ms.prod: "Intune"
+doc_type: apiPageType
 ---
 
 # List microsoftStoreForBusinessApps
@@ -88,6 +89,7 @@ Content-Length: 1070
   ]
 }
 ```
+
 
 
 

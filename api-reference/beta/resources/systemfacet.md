@@ -1,9 +1,11 @@
 ---
 author: daspek
-ms.author: dspektor
+description: <descripton>
 ms.date: 09/12/2017
 title: SystemFacet
 localization_priority: Normal
+doc_type: resourcePageType
+ms.prod: ""
 ---
 # System facet
 
@@ -32,8 +34,6 @@ None. This facet is a null or not-null value and contains no properties.
   "type": "#page.annotation",
   "section": "documentation",
   "tocPath": "Facets/System",
-  "suppressions": [
-    "Error: /api-reference/beta/resources/systemfacet.md:\r\n      Exception processing links.\r\n    System.ArgumentException: Link Definition was null. Link text: !INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)\r\n      at ApiDoctor.Validation.DocFile.get_LinkDestinations()\r\n      at ApiDoctor.Validation.DocSet.ValidateLinks(Boolean includeWarnings, String[] relativePathForFiles, IssueLogger issues, Boolean requireFilenameCaseMatch, Boolean printOrphanedFiles)"
-  ]
+  "suppressions": []
 }
 -->

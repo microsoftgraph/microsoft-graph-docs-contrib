@@ -4,6 +4,7 @@ description: "Used to set up the school data synchronization profile when PowerS
 author: "mmast-msft"
 localization_priority: Normal
 ms.prod: "education"
+doc_type: resourcePageType
 ---
 
 # educationPowerSchoolDataProvider resource
@@ -37,21 +38,13 @@ Derived from [educationSynchronizationDataProvider](educationsynchronizationdata
 
 ```json
 {
-    "@odata.type": "microsoft.graph.educationPowerSchoolDataProvider",
-    "connectionUrl": "String",
-    "clientId": "String",
-    "clientSecret": "String",
-    "schoolsids": ["String"],
-    "schoolYear": "String",
-    "allowTeachersInMultipleSchools": "Boolean",
-    "customizations": { "@odata.type": "microsoft.graph.educationSynchronizationCustomizations" }
+  "@odata.type": "microsoft.graph.educationPowerSchoolDataProvider",
+  "connectionUrl": "String",
+  "clientId": "String",
+  "clientSecret": "String",
+  "schoolsIds": ["String"],
+  "schoolYear": "String",
+  "allowTeachersInMultipleSchools": "Boolean",
+  "customizations": {"@odata.type": "microsoft.graph.educationSynchronizationCustomizations"}
 }
 ```
-<!--
-{
-  "type": "#page.annotation",
-  "suppressions": [
-    "Error: /api-reference/beta/resources/educationpowerschooldataprovider.md:\r\n      Exception processing links.\r\n    System.ArgumentException: Link Definition was null. Link text: !INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)\r\n      at ApiDoctor.Validation.DocFile.get_LinkDestinations()\r\n      at ApiDoctor.Validation.DocSet.ValidateLinks(Boolean includeWarnings, String[] relativePathForFiles, IssueLogger issues, Boolean requireFilenameCaseMatch, Boolean printOrphanedFiles)"
-  ]
-}
--->

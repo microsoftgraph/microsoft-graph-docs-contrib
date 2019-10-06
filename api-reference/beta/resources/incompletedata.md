@@ -1,9 +1,11 @@
 ---
 author: daspek
-ms.author: dspektor
+description: "The incompleteData facet indicates that a resource was generated with incomplete data."
 ms.date: 10/06/2017
 title: IncompleteData
 localization_priority: Normal
+doc_type: resourcePageType
+ms.prod: ""
 ---
 # incompleteData resource type
 
@@ -35,8 +37,6 @@ The properties within may provide information about why there is incomplete data
   "type": "#page.annotation",
   "section": "documentation",
   "tocPath": "Facets/IncompleteData",
-  "suppressions": [
-    "Error: /api-reference/beta/resources/incompletedata.md:\r\n      Exception processing links.\r\n    System.ArgumentException: Link Definition was null. Link text: !INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)\r\n      at ApiDoctor.Validation.DocFile.get_LinkDestinations()\r\n      at ApiDoctor.Validation.DocSet.ValidateLinks(Boolean includeWarnings, String[] relativePathForFiles, IssueLogger issues, Boolean requireFilenameCaseMatch, Boolean printOrphanedFiles)"
-  ]
+  "suppressions": []
 }
 -->

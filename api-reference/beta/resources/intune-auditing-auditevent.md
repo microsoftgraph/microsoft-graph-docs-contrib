@@ -1,9 +1,10 @@
 ---
 title: "auditEvent resource type"
 description: "A class containing the properties for Audit Event."
-author: "tfitzmac"
+author: "rolyon"
 localization_priority: Normal
 ms.prod: "Intune"
+doc_type: resourcePageType
 ---
 
 # auditEvent resource type
@@ -96,8 +97,6 @@ Here is a JSON representation of the resource.
   "category": "String"
 }
 ```
-
-
 
 
 

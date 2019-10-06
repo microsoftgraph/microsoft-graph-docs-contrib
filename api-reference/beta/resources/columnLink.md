@@ -1,9 +1,11 @@
 ---
 author: daspek
-ms.author: dspektor
+description: "A columnLink on a contentType attaches a site columnDefinition to that content type."
 ms.date: 09/12/2017
 title: ColumnLink
 localization_priority: Normal
+doc_type: resourcePageType
+ms.prod: ""
 ---
 # ColumnLink resource type
 
@@ -39,8 +41,6 @@ Here is a JSON representation of a **columnLink** resource.
   "keywords": "",
   "section": "documentation",
   "tocPath": "Resources/ColumnLink",
-  "suppressions": [
-    "Error: /api-reference/beta/resources/columnLink.md:\r\n      Exception processing links.\r\n    System.ArgumentException: Link Definition was null. Link text: !INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)\r\n      at ApiDoctor.Validation.DocFile.get_LinkDestinations()\r\n      at ApiDoctor.Validation.DocSet.ValidateLinks(Boolean includeWarnings, String[] relativePathForFiles, IssueLogger issues, Boolean requireFilenameCaseMatch, Boolean printOrphanedFiles)"
-  ]
+  "suppressions": []
 }
 -->

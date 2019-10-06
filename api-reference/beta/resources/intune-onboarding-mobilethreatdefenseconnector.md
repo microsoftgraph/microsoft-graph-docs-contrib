@@ -1,9 +1,10 @@
 ---
 title: "mobileThreatDefenseConnector resource type"
 description: "Entity which represents a connection to Mobile threat defense partner."
-author: "tfitzmac"
+author: "rolyon"
 localization_priority: Normal
 ms.prod: "Intune"
+doc_type: resourcePageType
 ---
 
 # mobileThreatDefenseConnector resource type
@@ -71,8 +72,6 @@ Here is a JSON representation of the resource.
   "allowPartnerToCollectIOSApplicationMetadata": true
 }
 ```
-
-
 
 
 

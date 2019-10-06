@@ -1,9 +1,11 @@
 ---
 author: psampath
-ms.author: psampath
+description: "The storagePlanInformation resource provides information about the drive's storage quota plans."
 ms.date: 06/20/2018
 title: StoragePlanInformation
 localization_priority: Normal
+doc_type: resourcePageType
+ms.prod: ""
 ---
 # storagePlanInformation resource type
 
@@ -39,9 +41,7 @@ The **storagePlanInformation** resource provides information about the drive's s
   "keywords": "quota,plans,upgradeAvailable",
   "section": "documentation",
   "tocPath": "Resources/StoragePlanInformation",
-  "suppressions": [
-    "Error: /api-reference/beta/resources/storageplaninformation.md:\r\n      Exception processing links.\r\n    System.ArgumentException: Link Definition was null. Link text: !INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)\r\n      at ApiDoctor.Validation.DocFile.get_LinkDestinations()\r\n      at ApiDoctor.Validation.DocSet.ValidateLinks(Boolean includeWarnings, String[] relativePathForFiles, IssueLogger issues, Boolean requireFilenameCaseMatch, Boolean printOrphanedFiles)"
-  ]
+  "suppressions": []
 }
 -->
 

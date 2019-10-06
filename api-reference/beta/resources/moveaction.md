@@ -1,9 +1,11 @@
 ---
 author: daspek
-ms.author: dspektor
+description: "The presence of the MoveAction resource on an itemActivity indicates that the activity moved an item."
 ms.date: 09/14/2017
 title: MoveAction
 localization_priority: Normal
+doc_type: resourcePageType
+ms.prod: ""
 ---
 # MoveAction resource type
 
@@ -46,8 +48,6 @@ Item activity records are currently only available on SharePoint and OneDrive fo
   "keywords": "activities,activity,action,move,moved",
   "section": "documentation",
   "tocPath": "Resources/MoveAction",
-  "suppressions": [
-    "Error: /api-reference/beta/resources/moveaction.md:\r\n      Exception processing links.\r\n    System.ArgumentException: Link Definition was null. Link text: !INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)\r\n      at ApiDoctor.Validation.DocFile.get_LinkDestinations()\r\n      at ApiDoctor.Validation.DocSet.ValidateLinks(Boolean includeWarnings, String[] relativePathForFiles, IssueLogger issues, Boolean requireFilenameCaseMatch, Boolean printOrphanedFiles)"
-  ]
+  "suppressions": []
 }
 -->

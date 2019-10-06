@@ -4,19 +4,20 @@ description: "The following is a JSON representation of the resource."
 localization_priority: Normal
 ms.prod: "reports"
 author: "pranoychaudhuri"
+doc_type: resourcePageType
 ---
 
 # yammerGroupsActivityGroupCounts resource type
 
 ## Properties
 
-| Property          | Type   |
-| :---------------- | :----- |
-| reportRefreshDate | Date   |
-| total             | Int64  |
-| active            | Int64  |
-| reportDate        | Date   |
-| reportPeriod      | String |
+| Property          | Type   | Description |
+| :---------------- | :----- | :---------- |
+| reportRefreshDate | Date   |             |
+| total             | Int64  |             |
+| active            | Int64  |             |
+| reportDate        | Date   |             |
+| reportPeriod      | String |             |
 
 ## JSON representation
 
@@ -29,10 +30,10 @@ The following is a JSON representation of the resource.
 
 ```json
 {
-  "reportRefreshDate": "Date", 
+  "reportRefreshDate": "String", 
   "total": 1024, 
   "active": 1024, 
-  "reportDate": "Date", 
+  "reportDate": "String", 
   "reportPeriod": "String"
 }
 ```

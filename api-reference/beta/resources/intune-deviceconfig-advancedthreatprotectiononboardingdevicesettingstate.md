@@ -1,9 +1,10 @@
 ---
 title: "advancedThreatProtectionOnboardingDeviceSettingState resource type"
 description: "ATP onboarding State for a given device."
-author: "tfitzmac"
+author: "rolyon"
 localization_priority: Normal
 ms.prod: "Intune"
+doc_type: resourcePageType
 ---
 
 # advancedThreatProtectionOnboardingDeviceSettingState resource type
@@ -69,8 +70,6 @@ Here is a JSON representation of the resource.
   "complianceGracePeriodExpirationDateTime": "String (timestamp)"
 }
 ```
-
-
 
 
 

@@ -1,10 +1,11 @@
 ---
 author: daspek
-ms.author: dspektor
+description: "The MentionAction resource provides information about an activity that mentioned people."
 ms.date: 09/14/2017
 title: MentionAction
 localization_priority: Normal
 ms.prod: "insights"
+doc_type: resourcePageType
 ---
 # MentionAction resource type
 
@@ -47,8 +48,6 @@ Item activity records are currently only available on SharePoint and OneDrive fo
   "keywords": "activities,activity,action,mention",
   "section": "documentation",
   "tocPath": "Resources/MentionAction",
-  "suppressions": [
-    "Error: /api-reference/beta/resources/mentionaction.md:\r\n      Exception processing links.\r\n    System.ArgumentException: Link Definition was null. Link text: !INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)\r\n      at ApiDoctor.Validation.DocFile.get_LinkDestinations()\r\n      at ApiDoctor.Validation.DocSet.ValidateLinks(Boolean includeWarnings, String[] relativePathForFiles, IssueLogger issues, Boolean requireFilenameCaseMatch, Boolean printOrphanedFiles)"
-  ]
+  "suppressions": []
 }
 -->

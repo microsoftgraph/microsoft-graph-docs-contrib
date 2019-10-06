@@ -1,9 +1,10 @@
 ---
 title: "List iosManagedAppRegistrations"
 description: "List properties and relationships of the iosManagedAppRegistration objects."
-author: "tfitzmac"
+author: "davidmu1"
 localization_priority: Normal
 ms.prod: "Intune"
+doc_type: apiPageType
 ---
 
 # List iosManagedAppRegistrations
@@ -83,6 +84,7 @@ Content-Length: 852
   ]
 }
 ```
+
 
 
 

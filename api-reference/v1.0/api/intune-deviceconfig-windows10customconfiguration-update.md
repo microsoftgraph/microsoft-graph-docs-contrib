@@ -1,9 +1,10 @@
 ---
 title: "Update windows10CustomConfiguration"
 description: "Update the properties of a windows10CustomConfiguration object."
-author: "tfitzmac"
+author: "davidmu1"
 localization_priority: Normal
 ms.prod: "Intune"
+doc_type: apiPageType
 ---
 
 # Update windows10CustomConfiguration
@@ -108,6 +109,7 @@ Content-Length: 576
   ]
 }
 ```
+
 
 
 

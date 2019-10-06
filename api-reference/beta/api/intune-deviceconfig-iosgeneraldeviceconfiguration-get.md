@@ -1,9 +1,10 @@
 ---
 title: "Get iosGeneralDeviceConfiguration"
 description: "Read properties and relationships of the iosGeneralDeviceConfiguration object."
-author: "tfitzmac"
+author: "rolyon"
 localization_priority: Normal
 ms.prod: "Intune"
+doc_type: apiPageType
 ---
 
 # Get iosGeneralDeviceConfiguration
@@ -21,7 +22,7 @@ One of the following permissions is required to call this API. To learn more, in
 |:---|:---|
 |Delegated (work or school account)|DeviceManagementConfiguration.ReadWrite.All, DeviceManagementConfiguration.Read.All|
 |Delegated (personal Microsoft account)|Not supported.|
-|Application|Not supported.|
+|Application|DeviceManagementConfiguration.ReadWrite.All, DeviceManagementConfiguration.Read.All|
 
 ## HTTP Request
 <!-- {
@@ -62,7 +63,7 @@ Here is an example of the response. Note: The response object shown here may be 
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 9800
+Content-Length: 11209
 
 {
   "value": {
@@ -73,6 +74,27 @@ Content-Length: 9800
       "Role Scope Tag Ids value"
     ],
     "supportsScopeTags": true,
+    "deviceManagementApplicabilityRuleOsEdition": {
+      "@odata.type": "microsoft.graph.deviceManagementApplicabilityRuleOsEdition",
+      "osEditionTypes": [
+        "windows10EnterpriseN"
+      ],
+      "name": "Name value",
+      "ruleType": "exclude"
+    },
+    "deviceManagementApplicabilityRuleOsVersion": {
+      "@odata.type": "microsoft.graph.deviceManagementApplicabilityRuleOsVersion",
+      "minOSVersion": "Min OSVersion value",
+      "maxOSVersion": "Max OSVersion value",
+      "name": "Name value",
+      "ruleType": "exclude"
+    },
+    "deviceManagementApplicabilityRuleDeviceMode": {
+      "@odata.type": "microsoft.graph.deviceManagementApplicabilityRuleDeviceMode",
+      "deviceMode": "sModeConfiguration",
+      "name": "Name value",
+      "ruleType": "exclude"
+    },
     "createdDateTime": "2017-01-01T00:02:43.5775965-08:00",
     "description": "Description value",
     "displayName": "Display Name value",
@@ -175,11 +197,18 @@ Content-Length: 9800
     "kioskModeAllowAssistiveSpeak": true,
     "kioskModeAllowAssistiveTouchSettings": true,
     "kioskModeAllowAutoLock": true,
+    "kioskModeBlockAutoLock": true,
     "kioskModeAllowColorInversionSettings": true,
     "kioskModeAllowRingerSwitch": true,
+    "kioskModeBlockRingerSwitch": true,
     "kioskModeAllowScreenRotation": true,
+    "kioskModeBlockScreenRotation": true,
     "kioskModeAllowSleepButton": true,
+    "kioskModeBlockSleepButton": true,
     "kioskModeAllowTouchscreen": true,
+    "kioskModeBlockTouchscreen": true,
+    "kioskModeEnableVoiceControl": true,
+    "kioskModeAllowVoiceControlModification": true,
     "kioskModeAllowVoiceOverSettings": true,
     "kioskModeAllowVolumeButtons": true,
     "kioskModeBlockVolumeButtons": true,
@@ -317,11 +346,17 @@ Content-Length: 9800
     "passwordBlockAirDropSharing": true,
     "dateAndTimeForceSetAutomatically": true,
     "contactsAllowManagedToUnmanagedWrite": true,
-    "contactsAllowUnmanagedToManagedRead": true
+    "contactsAllowUnmanagedToManagedRead": true,
+    "cellularBlockPersonalHotspotModification": true,
+    "siriDisableServerLogging": true,
+    "continuousPathKeyboardBlocked": true,
+    "findMyDeviceInFindMyAppBlocked": true,
+    "findMyFriendsInFindMyAppBlocked": true,
+    "wiFiBlockPowerModification": true,
+    "iTunesBlocked": true
   }
 }
 ```
-
 
 
 

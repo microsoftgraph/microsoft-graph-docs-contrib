@@ -1,9 +1,10 @@
 ---
 title: "managedDeviceOverview resource type"
 description: "Summary data for managed devices"
-author: "tfitzmac"
+author: "rolyon"
 localization_priority: Normal
 ms.prod: "Intune"
+doc_type: resourcePageType
 ---
 
 # managedDeviceOverview resource type
@@ -79,8 +80,6 @@ Here is a JSON representation of the resource.
   "lastModifiedDateTime": "String (timestamp)"
 }
 ```
-
-
 
 
 

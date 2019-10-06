@@ -1,9 +1,11 @@
 ---
 author: JeremyKelley
-ms.author: JeremyKelley
+description: "The lookupColumn on a columnDefinition resource indicates that the column's values are looked up from another source in the site."
 ms.date: 09/11/2017
 title: LookupColumn
 localization_priority: Normal
+doc_type: resourcePageType
+ms.prod: ""
 ---
 # LookupColumn resource type
 
@@ -43,8 +45,6 @@ Here is a JSON representation of a **lookupColumn** resource.
   "keywords": "",
   "section": "documentation",
   "tocPath": "Resources/LookupColumn",
-  "suppressions": [
-    "Error: /api-reference/beta/resources/lookupColumn.md:\r\n      Exception processing links.\r\n    System.ArgumentException: Link Definition was null. Link text: !INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)\r\n      at ApiDoctor.Validation.DocFile.get_LinkDestinations()\r\n      at ApiDoctor.Validation.DocSet.ValidateLinks(Boolean includeWarnings, String[] relativePathForFiles, IssueLogger issues, Boolean requireFilenameCaseMatch, Boolean printOrphanedFiles)"
-  ]
+  "suppressions": []
 }
 -->

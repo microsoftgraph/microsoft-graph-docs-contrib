@@ -1,9 +1,11 @@
 ---
 author: JeremyKelley
-ms.author: JeremyKelley
+description: "The quota resource provides details about space constrains on a drive resource."
 ms.date: 09/10/2017
 title: Quota
 localization_priority: Normal
+doc_type: resourcePageType
+ms.prod: ""
 ---
 # quota resource type
 
@@ -61,8 +63,6 @@ Here is a JSON representation of the resource.
   "keywords": "quota,available,remaining,used",
   "section": "documentation",
   "tocPath": "Facets/Quota",
-  "suppressions": [
-    "Error: /api-reference/beta/resources/quota.md:\r\n      Exception processing links.\r\n    System.ArgumentException: Link Definition was null. Link text: !INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)\r\n      at ApiDoctor.Validation.DocFile.get_LinkDestinations()\r\n      at ApiDoctor.Validation.DocSet.ValidateLinks(Boolean includeWarnings, String[] relativePathForFiles, IssueLogger issues, Boolean requireFilenameCaseMatch, Boolean printOrphanedFiles)"
-  ]
+  "suppressions": []
 }
 -->

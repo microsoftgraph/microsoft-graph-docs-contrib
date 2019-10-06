@@ -3,6 +3,8 @@ title: "Use the activity feed REST API"
 description: "You can use the activity feed API in Microsoft Graph to resume a user's activity across devices and platforms. Activity feed API requests are performed on behalf of a user via delegated permissions and the user activity permission, which can be used with either personal or work and school accounts. "
 localization_priority: Normal
 ms.prod: "project-rome"
+doc_type: conceptualPageType
+author: ""
 ---
 
 # Use the activity feed REST API
@@ -71,11 +73,3 @@ The user activities that you create will vary based on the interaction pattern o
 
 - See [how Microsoft experiences are using activities](https://channel9.msdn.com/events/Build/2017/B8108).
 - Learn about [the activity feed API and pick up where I left off](https://channel9.msdn.com/Events/Windows/Windows-Developer-Day-Fall-Creators-Update/WinDev011).
-<!--
-{
-  "type": "#page.annotation",
-  "suppressions": [
-    "Error: /api-reference/beta/resources/activity-feed-api-overview.md:\r\n      Exception processing links.\r\n    System.ArgumentException: Link Definition was null. Link text: !INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)\r\n      at ApiDoctor.Validation.DocFile.get_LinkDestinations()\r\n      at ApiDoctor.Validation.DocSet.ValidateLinks(Boolean includeWarnings, String[] relativePathForFiles, IssueLogger issues, Boolean requireFilenameCaseMatch, Boolean printOrphanedFiles)"
-  ]
-}
--->

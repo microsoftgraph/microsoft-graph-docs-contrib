@@ -1917,12 +1917,12 @@
         },
         {
             "source_path": "api-reference\\beta\\api\\excelapplication_calculate.md",
-            "redirect_url": "/graph/api/excelapplication-calculate?view=graph-rest-beta",
+            "redirect_url": "/graph/api/workbookapplication-calculate?view=graph-rest-beta",
             "redirect_document_id": true
         },
         {
             "source_path": "api-reference\\beta\\api\\excelapplication_get.md",
-            "redirect_url": "/graph/api/excelapplication-get?view=graph-rest-beta",
+            "redirect_url": "/graph/api/workbookapplication-get?view=graph-rest-beta",
             "redirect_document_id": true
         },
         {
@@ -26596,6 +26596,11 @@
             "redirect_document_id": true
         },
         {
+            "source_path": "concepts\\auth-overview.md",
+            "redirect_url": "/graph/auth/",
+            "redirect_document_id": true
+        },
+        {
             "source_path": "concepts\\auth_register_app_v2.md",
             "redirect_url": "/graph/auth-register-app-v2",
             "redirect_document_id": true
@@ -26729,6 +26734,21 @@
             "source_path": "concepts\\permissions_reference.md",
             "redirect_url": "/graph/permissions-reference",
             "redirect_document_id": true
+        },
+        {
+            "source_path": "concepts/security-siemintegration.md",
+            "redirect_url": "/graph/security-integration",
+            "redirect_document_id": true
+        },
+        {
+            "source_path": "concepts/security-splunk-siemintegration.md",
+            "redirect_url": "/graph/security-integration",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "concepts/security-qradar-siemintegration.md",
+            "redirect_url": "/graph/security-integration",
+            "redirect_document_id": false
         },
         {
             "source_path": "concepts\\query_parameters.md",

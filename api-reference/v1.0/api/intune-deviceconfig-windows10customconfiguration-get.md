@@ -1,9 +1,10 @@
 ---
 title: "Get windows10CustomConfiguration"
 description: "Read properties and relationships of the windows10CustomConfiguration object."
-author: "tfitzmac"
+author: "davidmu1"
 localization_priority: Normal
 ms.prod: "Intune"
+doc_type: apiPageType
 ---
 
 # Get windows10CustomConfiguration
@@ -81,6 +82,7 @@ Content-Length: 627
   }
 }
 ```
+
 
 
 

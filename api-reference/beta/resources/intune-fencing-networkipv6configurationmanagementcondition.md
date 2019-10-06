@@ -2,9 +2,10 @@
 title: "networkIPv6ConfigurationManagementCondition resource type"
 description: "IPv6 configuration-based management conditions may be defined that will trigger when a device detects certain IP network settings. An IP config management condition will only be considered TRUE when the network connection is active.
 IPv6 DHCP server addresses may not be matched. This is because Windows(circa Redstone) does not expose this information to the Natural Authentication service."
-author: "tfitzmac"
+author: "rolyon"
 localization_priority: Normal
 ms.prod: "Intune"
+doc_type: resourcePageType
 ---
 
 # networkIPv6ConfigurationManagementCondition resource type
@@ -80,8 +81,6 @@ Here is a JSON representation of the resource.
   ]
 }
 ```
-
-
 
 
 

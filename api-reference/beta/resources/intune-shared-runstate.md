@@ -1,9 +1,10 @@
 ---
 title: "runState enum type"
 description: "Indicates the type of execution status of the device management script."
-author: "tfitzmac"
+author: "rolyon"
 localization_priority: Normal
 ms.prod: "Intune"
+doc_type: enumPageType
 ---
 
 # runState enum type
@@ -20,7 +21,8 @@ Indicates the type of execution status of the device management script.
 |unknown|0|Unknown result.|
 |success|1|Script is run successfully.|
 |fail|2|Script failed to run.|
-
+|error|3|Discovery script hits error.|
+|pending|4|Script is pending to execute.|
 
 
 

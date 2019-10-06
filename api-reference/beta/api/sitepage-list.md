@@ -1,16 +1,17 @@
 ---
 author: rahmit
-ms.author: rahmit
+description: "Get the collection of sitePage objects from the site pages [list] in a site. All pages in the site are returned (with pagination)."
 ms.date: 03/15/2018
 title: List the pages in a site
 localization_priority: Normal
 ms.prod: "sharepoint"
+doc_type: apiPageType
 ---
 # List the pages in the site pages list of a site
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Get the collection of [sitePages][] from the site pages [list][] in a site [site][]. All pages in the site are returned (with pagination).
+Get the collection of [sitePage][] objects from the site pages [list][] in a site [site][]. All pages in the site are returned (with pagination).
 
 [sitePage]: ../resources/sitepage.md
 [list]: ../resources/list.md
@@ -28,7 +29,7 @@ One of the following permissions is required to call this API. To learn more, in
 
 ## HTTP request
 
-```http
+```msgraph-interactive
 GET /sites/{site-id}/pages
 
 ```
@@ -37,15 +38,29 @@ GET /sites/{site-id}/pages
 
 #### Request
 
-<!-- { "blockType": "request", "name": "get-pages", "scopes": "sites.read.all", "tags": "service.sharepoint" } -->
+<!-- 
+{ 
+	"blockType": "request",
+	"name": "get-pages",
+	"scopes": "sites.read.all", 
+	"tags": "service.sharepoint"
+}
+-->
 
-```http
+```msgraph-interactive
 GET /sites/{site-id}/pages
 ```
 
 #### Response
 
-<!-- { "blockType": "response", "@odata.type": "Collection(microsoft.graph.sitePage)", "truncated": true } -->
+<!-- 
+{ 
+    "blockType": "response",
+    "@odata.type": "microsoft.graph.sitePage",
+    "truncated": true,
+    "isCollection":true
+} 
+-->
 
 ```json
 HTTP/1.1 200 OK
@@ -55,7 +70,7 @@ Content-type: application/json
     "value": [
         {
             "id": "5",
-            "eTag": "{8BEE5ABE-49B9-431B-AEBA-C96D6DEF44E3},4",
+            "eTag": "\"{8BEE5ABE-49B9-431B-AEBA-C96D6DEF44E3},4\"",
             "lastModifiedDateTime": "2018-08-15T19:20:20Z",
             "name": "EventInstructions.aspx",
             "webUrl": "SitePages/EventInstructions.aspx",
@@ -112,12 +127,12 @@ Content-type: application/json
                         "properties": {
                             "webId": "4a15f359-257c-4f31-8350-5025104e30d5",
                             "siteId": "00c6b6c6-c466-4e64-a370-2b6ddb7cdfe3",
-                            "query": { ... },
+                            "query": {  },
                             "templateId": 1,
                             "maxItemsPerPage": 10,
                             "hideWebPartWhenEmpty": false,
                             "kqlQueryTemplate": "...",
-                            "displayMaps": { ... },
+                            "displayMaps": {  },
                             "sites": [],
                             "layoutId": "Card",
                             "dataProviderId": "Search"
@@ -127,8 +142,8 @@ Content-type: application/json
             ]
         },
         {
-            "id": 2,
-            "eTag": "75bc70e2-6587-45be-8493-c99a956b2e05,7",
+            "id": "2",
+            "eTag": "\"{75bc70e2-6587-45be-8493-c99a956b2e05},7\"",
             "createdDateTime": "2016-12-06T20:04:40Z",
             "lastModifiedDateTime": "2016-12-06T20:05:09Z",
             "webUrl": "https://www.contoso.com/sites/Engineering/SitePages/Events.aspx",
@@ -219,7 +234,6 @@ Content-type: application/json
   "section": "documentation",
   "tocPath": "Pages/Enumerate",
   "suppressions": [
-    "Error: /api-reference/beta/api/sitepage-list.md:\r\n      Exception processing links.\r\n    System.ArgumentException: Link Definition was null. Link text: !INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)\r\n      at ApiDoctor.Validation.DocFile.get_LinkDestinations()\r\n      at ApiDoctor.Validation.DocSet.ValidateLinks(Boolean includeWarnings, String[] relativePathForFiles, IssueLogger issues, Boolean requireFilenameCaseMatch, Boolean printOrphanedFiles)"
   ]
 }
 -->
