@@ -34,9 +34,6 @@ One of the following permissions is required to call this API. To learn more, in
 
 ```http
 PUT /beta/teams/{id}/photo
-content-type: image/jpeg
-
-Binary data for the image
 ```
 
 ## Request headers
@@ -58,7 +55,7 @@ If successful, this method returns a `200 OK` response code.
 
 ### Request
 
-Here is an example of the request.
+Here is an example of the request to update a team photo.
 
 <!-- {
   "blockType": "ignored",
@@ -66,6 +63,9 @@ Here is an example of the request.
 }-->
 ```http
 PUT https://graph.microsoft.com/beta/teams/{id}/photo
+Content-type: image/jpeg
+
+Binary data for the image
 ```
 
 ### Response 
