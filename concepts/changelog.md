@@ -17,7 +17,7 @@ For details about known issues with Microsoft Graph APIs, see [Known issues](kno
 
 | **Change type** | **Version** | **Description**                  |
 |:----------------|:------------|:-----------------------------------------|
-| Addition | Beta | Added the **mdmAppId** and **securityIdentifier** properties to the [group](/graph/api/resources/group?view=graph-rest-beta) resource that represents an identity used to sign in to a user account. |
+| Addition | Beta | Added the **mdmAppId** and **securityIdentifier** properties to the [group](/graph/api/resources/group?view=graph-rest-beta) resource. |
 
 ### Mail (Outlook)
 
