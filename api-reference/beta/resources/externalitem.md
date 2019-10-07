@@ -1,6 +1,6 @@
 ---
 title: "externalItem resource type"
-description: description: "An item indexed via a Microsoft Search connection."
+description: "An item indexed via a Microsoft Search connection."
 localization_priority: Normal
 author: "snlraju-msft"
 ms.prod: ""
