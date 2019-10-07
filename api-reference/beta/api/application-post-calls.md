@@ -48,17 +48,19 @@ If successful, this method returns a `201 Created` response code and a [call](..
 
 ## Examples
 
-### Create peer to peer VOIP call with service hosted media
+### Example 1: Create peer-to-peer VoIP call with service hosted media
 
 > **Note:** This call needs the Calls.Initiate.All permission.
 
 ##### Request
-The following example shows the request which makes a peer to peer call between the bot and the specified user. In this example the media is hosted by the service. The values of authorization token, callback url, application id, application name, user id, user name and tenant id must be replaced with actual values to make the example work.
+The following example shows the request which makes a peer-to-peer call between the bot and the specified user. In this example the media is hosted by the service. The values of authorization token, callback url, application id, application name, user id, user name and tenant id must be replaced with actual values to make the example work.
+
 
 # [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
-  "name": "create-call-from-application"
+  "name": "create-call-service-hosted-media"
+  "@odata.type": "microsoft.graph.call"
 }-->
 ```http
 POST https://graph.microsoft.com/beta/communications/calls
@@ -251,27 +253,39 @@ Content-Type: application/json
 }
 ```
 
-### Create peer to peer VOIP call with application hosted media
+### Example 2: Create peer-to-peer VoIP call with application hosted media
 
-> Note: Needs Calls.Initiate.All and Calls.AccessMedia.All permission.
+> **Note**: This example needs `Calls.Initiate.All` and `Calls.AccessMedia.All` permissions.
 
 ##### Request
-The following example shows the request which makes a peer to peer call between the bot and the specified user. In this example the media is hosted locally by the application. The values of authorization token, callback url, application id, application name, user id, user name and tenant id must be replaced with actual values to make the example work.
+The following example shows the request which makes a peer-to-peer call between the bot and the specified user. In this example the media is hosted locally by the application. The values of authorization token, callback url, application id, application name, user id, user name and tenant id must be replaced with actual values to make the example work.
 
+<!-- {
+  "blockType": "request",
+  "name": "create-call-app-hosted-media"
+  "@odata.type": "microsoft.graph.call"
+}-->
 ```http
 POST https://graph.microsoft.com/beta/communications/calls
 Content-Type: application/json
 Authorization: Bearer <Token>
-```
 
-<!-- {
-  "blockType": "example",
-  "@odata.type": "microsoft.graph.call"
-}-->
-```json
 {
   "@odata.type": "#microsoft.graph.call",
   "callbackUri": "https://bot.contoso.com/callback",
+  "source": {
+    "@odata.type": "#microsoft.graph.participantInfo",
+    "identity": {
+      "@odata.type": "#microsoft.graph.identitySet",
+      "application": {
+        "@odata.type": "#microsoft.graph.identity",
+        "displayName": "Calling Bot",
+        "id": "2891555a-92ff-42e6-80fa-6e1300c6b5c6",
+      }
+    },
+    "region": null,
+    "languageId": null
+  },
   "targets": [
     {
       "@odata.type": "#microsoft.graph.participantInfo",
@@ -301,9 +315,81 @@ Sample audio media session blob is shown below
 {\"mpUri\":\"net.tcp://bot.contoso.com:18732/MediaProcessor\",\"audioRenderContexts\":[\"14778cc4-f54c-43c7-989f-9092e34ef784\"],\"videoRenderContexts\":[],\"audioSourceContexts\":[\"a5dcfc9b-5a54-48ef-86f5-1fdd8508741a\"],\"videoSourceContexts\":[],\"dataRenderContexts\":null,\"dataSourceContexts\":null,\"supportedAudioFormat\":\"Pcm16K\",\"videoSinkEncodingFormats\":[],\"mpMediaSessionId\":\"2379cf46-acf3-4fef-a914-be9627075320\",\"regionAffinity\":null,\"skypeMediaBotsVersion\":\"1.11.1.0086\",\"mediaStackVersion\":\"2018.53.1.1\",\"mpVersion\":\"7.2.0.3881\",\"callId\":\"1b69b141-7f1a-4033-9c34-202737190a20\"}
 ```
 
->**Note:** For peer to peer calls, the expected notifications are for call state changes only.
+>**Note:** For peer-to-peer calls, the expected notifications are for call state changes only.
 
-### Join scheduled meeting with service hosted media
+##### Response
+
+> **Note:** The response object shown here might be shortened for readability. All the properties will be returned from an actual call.
+
+<!-- {
+  "blockType": "response",
+  "truncated": true,
+  "@odata.type": "microsoft.graph.call"
+} -->
+```http
+HTTP/1.1 201 Created
+Location: https://graph.microsoft.com/beta/communications/calls/2e1a0b00-2db4-4022-9570-243709c565ab
+Content-Type: application/json
+
+{
+  "@odata.type": "#microsoft.graph.call",
+  "state": "establishing",
+  "direction": "outgoing",
+  "callbackUri": "https://bot.contoso.com/callback",
+  "callRoutes": [],
+  "source": {
+    "@odata.type": "#microsoft.graph.participantInfo",
+    "identity": {
+      "@odata.type": "#microsoft.graph.identitySet",
+      "application": {
+        "@odata.type": "#microsoft.graph.identity",
+        "displayName": "Calling Bot",
+        "id": "2891555a-92ff-42e6-80fa-6e1300c6b5c6",
+      }
+    },
+    "region": null,
+    "languageId": null
+  },
+  "targets": [
+    {
+      "@odata.type": "#microsoft.graph.participantInfo",
+      "identity": {
+        "@odata.type": "#microsoft.graph.identitySet",
+        "user": {
+          "@odata.type": "#microsoft.graph.identity",
+          "displayName": "John",
+          "id": "112f7296-5fa4-42ca-bae8-6a692b15d4b8"
+        }
+      }
+    }
+  ],
+  "requestedModalities": [
+    "audio"
+  ],
+  "activeModalities": [],
+  "mediaConfig": {
+    "@odata.type": "#microsoft.graph.appHostedMediaConfig",
+    "blob": "<Media Session Configuration>",
+  }
+  "routingPolicies": [],
+  "tenantId": "aa67bd4c-8475-432d-bd41-39f255720e0a",
+  "myParticipantId": "499ff390-7a72-40e8-83a0-8fac6295ae7e",
+  "id": "2e1a0b00-2db4-4022-9570-243709c565ab",
+  "@odata.context": "https://graph.microsoft.com/beta/$metadata#app/calls/$entity",
+  "subject": null,
+  "terminationReason": null,
+  "ringingTimeoutInSeconds": null,
+  "mediaState": null,
+  "resultInfo": null,
+  "answeredBy": null,
+  "chatInfo": null,
+  "meetingInfo": null,
+  "meetingCapability": null,
+  "toneInfo": null
+}
+```
+
+### Example 3: Join scheduled meeting with service hosted media
 To join the scheduled meeting we will need to get the thread id, message id, organizer id and the tenant id in which the meeting is scheduled.
 This information can be obtained from [Get Online Meetings API](../api/onlinemeeting-get.md).
 
@@ -312,17 +398,16 @@ The values of authorization token, callback url, application id, application nam
 
 ##### Request
 
+<!-- {
+  "blockType": "request",
+  "name": "join-meeting-service-hosted-media",
+  "@odata.type": "microsoft.graph.call"
+}-->
 ```http
 POST https://graph.microsoft.com/beta/communications/calls
 Content-Type: application/json
 Authorization: Bearer <Token>
-```
 
-<!-- {
-  "blockType": "example",
-  "@odata.type": "microsoft.graph.call"
-}-->
-```json
 {
   "@odata.type": "#microsoft.graph.call",
   "callbackUri": "https://bot.contoso.com/callback",
@@ -364,18 +449,16 @@ Authorization: Bearer <Token>
 ```
 ##### Response
 
+<!-- {
+  "blockType": "response",
+  "truncated": "true",
+  "@odata.type": "microsoft.graph.call"
+}-->
 ```http
 HTTP/1.1 201 Created
 Location: https://graph.microsoft.com/beta/communications/calls/2f1a1100-b174-40a0-aba7-0b405e01ed92
 Content-Type: application/json
-```
 
-<!-- {
-  "blockType": "example",
-  "truncated": "true",
-  "@odata.type": "microsoft.graph.call"
-}-->
-```json
 {
   "@odata.type": "#microsoft.graph.call",
   "state": "establishing",
@@ -643,19 +726,19 @@ Content-Type: application/json
 
 >**Note:** For join meeting scenarios apart from call state notifications, we receive roster notifications.
 
-### Join scheduled meeting with app hosted media
+### Example 4: Join scheduled meeting with app hosted media
 To join the meeting with application hosted media update the media config with the [AppHostedMediaConfig](../resources/apphostedmediaconfig.md) as shown below, In the sample provided above.
 
+<!-- {
+  "blockType": "request",
+  "name": "join-meeting-app-hosted-media"
+  "@odata.type": "microsoft.graph.call"
+}-->
 ```http
 POST https://graph.microsoft.com/beta/communications/calls
 Content-Type: application/json
 Authorization: Bearer <Token>
-```
-<!-- {
-  "blockType": "example",
-  "@odata.type": "microsoft.graph.call"
-}-->
-```json
+
 {
   "@odata.type": "#microsoft.graph.call",
   "direction": "outgoing",
@@ -690,7 +773,7 @@ Authorization: Bearer <Token>
 ```
 
 
-### Join channel meeting with service hosted media
+### Example 5: Join channel meeting with service hosted media
 Meeting inside a channel requires specific details like thread id, messageid, and organizer details that can be obtained using the [Get Online Meetings API](../api/onlinemeeting-get.md).
 
 The values of authorization token, callback url, application id, application name, user id, user name and tenant id must be replaced along with the details obtained from  [Get Online Meetings API](../api/onlinemeeting-get.md) with actual values to make the example work.
@@ -699,17 +782,16 @@ The values of authorization token, callback url, application id, application nam
 
 ##### Request
 
+<!-- {
+  "blockType": "request",
+  "name": "join-channel-meeting-service-hosted-media",
+  "@odata.type": "microsoft.graph.call"
+}-->
 ```http
 POST https://graph.microsoft.com/beta/communications/calls
 Content-Type: application/json
 Authorization: Bearer <Token>
-```
 
-<!-- {
-  "blockType": "example",
-  "@odata.type": "microsoft.graph.call"
-}-->
-```json
 {
   "@odata.type": "#microsoft.graph.call",
   "callbackUri": "https://bot.contoso.com/callback",
@@ -758,17 +840,16 @@ The display name is the name you want to be displayed in the meeting for your gu
 
 ##### Request
 
+<!-- {
+  "blockType": "request",
+  "name": "join-channel-meeting-as-guest-service-hosted-media",
+  "@odata.type": "microsoft.graph.call"
+}-->
 ```http
 POST https://graph.microsoft.com/beta/communications/calls
 Content-Type: application/json
 Authorization: Bearer <Token>
-```
 
-<!-- {
-  "blockType": "example",
-  "@odata.type": "microsoft.graph.call"
-}-->
-```json
 {
   "@odata.type": "#microsoft.graph.call",
   "callbackUri": "https://bot.contoso.com/callback",
@@ -876,6 +957,7 @@ Content-Type: application/json
 }
 ```
 > **Note:** The application will not receive the roster for participants in the meeting until its admitted from lobby
+
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2015-10-25 14:57:30 UTC -->
 <!--

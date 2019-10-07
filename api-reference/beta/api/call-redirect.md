@@ -11,7 +11,9 @@ doc_type: apiPageType
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Redirect an incoming call.
+Redirect an incoming call that hasn't been [answered](./call-answer.md) or [rejected](./call-reject.md) yet. The terms "redirecting" and "forwarding" a call are used interchangeably.
+
+The bot is expected to redirect the call before the call times out. The current timeout value is 15 seconds.
 
 ## Permissions
 
@@ -45,86 +47,24 @@ In the request body, provide a JSON object with the following parameters.
 
 | Parameter      | Type    |Description|
 |:---------------|:--------|:----------|
-|targets|[invitationParticipantInfo](../resources/invitationparticipantinfo.md) collection|The target participants of the redirect operation. If only one target is provided, it's a forward call. If more than one target is provided, it's a simulring call, which means all the targets will be called at the same time and only the first to answer will get connected. We support up to 25 targets for simulring. |
+|targets|[invitationParticipantInfo](../resources/invitationparticipantinfo.md) collection|The target participants of the redirect operation. If more than one target is specified, it's a simulring call. This means that all of the targets will be rang at the same time and only the first target that picks up will be connected. We support up to 25 targets for simulring.
 |targetDisposition|String|(Deprecated) The possible values are: `default` , `simultaneousRing` , `forward`. This parameter is deprecated, we will automatically identify whether it's a forward call or simulring call from the number of targets provided.|
-|timeout|Int32|The timeout in seconds for the redirect operation. The minimum timeout is 15 seconds, and the maximum timeout is 90 seconds. For simulring, the defualt timeout is 60 seconds. For forward, the default timeout is 55 seconds. |
+|timeout|Int32|The timeout (in seconds) for the redirect operation. The range of the timeout value is between 15 and 90 seconds inclusive. The default timeout value is 55 seconds for one target and 60 seconds for multiple targets (subject to change). |
 |maskCallee|Boolean|Indicates whether the callee is to be hidden from the caller. If true, then the callee identity is the bot identity. Default: false.|
 |maskCaller|Boolean|Indicates whether the caller is to be hidden from the callee. If true, then the caller identity is the bot identity. Default: false.|
-|callbackUri|String|Allows bots to provide a specific callback URI where the result of the Redirect action will be posted. This allows sending the result to the same specific bot instance that triggered the Redirect action. If none is provided, the bot's global callback URI will be used.|
+|callbackUri|String|This allows bots to provide a specific callback URI for the current call to receive later notifications. If this property has not been set, the bot's global callback URI will be used instead. This must be `https`.|
 
 ## Response
 If successful, this method returns a `202 Accepted` response code.
 
 ## Examples
+These examples will cover a workflow of an incoming call notification and how that call will be redirected.
 
-### Redirect a call
+> **Note:** The response objects shown here might be shortened for readability. All the properties will be returned from an actual call.
 
-##### Request
-The following example shows the request.
+### Example 1: Forward a Call to a Target
 
-
-# [HTTP](#tab/http)
-<!-- {
-  "blockType": "request",
-  "name": "call-redirect"
-}-->
-```http
-POST https://graph.microsoft.com/beta/communications/calls/{id}/redirect
-Content-Type: application/json
-Content-Length: 515
-
-{
-  "targets": [
-    {
-      "endpointType": "default",
-      "identity": {
-        "user": {
-          "id": "550fae72-d251-43ec-868c-373732c2704f",
-          "tenantId": "72f988bf-86f1-41af-91ab-2d7cd011db47",
-          "displayName": "Heidi Steen"
-        }
-      },
-      "languageId": "en-US",
-      "region": "westus"
-    }
-  ],
-  "targetDisposition": "default",
-  "timeout": 99,
-  "maskCallee": false,
-  "maskCaller": false
-  "callbackUri": "https://bot.contoso.com/api/calls"
-}
-```
-# [C#](#tab/csharp)
-[!INCLUDE [sample-code](../includes/snippets/csharp/call-redirect-csharp-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [JavaScript](#tab/javascript)
-[!INCLUDE [sample-code](../includes/snippets/javascript/call-redirect-javascript-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [Objective-C](#tab/objc)
-[!INCLUDE [sample-code](../includes/snippets/objc/call-redirect-objc-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
----
-
-
-##### Response
-
-> **Note:** The response object shown here might be shortened for readability. All the properties will be returned from an actual call.
-
-<!-- {
-  "blockType": "response",
-  "@odata.type": "microsoft.graph.None"
-} -->
-
-```http
-HTTP/1.1 202 Accepted
-```
-
-### Forward a call to a target
-
+##### Notification - incoming
 <!-- {
   "blockType": "example", 
   "@odata.type": "microsoft.graph.commsNotifications"
@@ -178,8 +118,9 @@ HTTP/1.1 202 Accepted
 
 ##### Request
 
+# [HTTP](#tab/http)
 <!-- {
-  "blockType": "ignored", 
+  "blockType": "request", 
   "name": "call-redirect"
 } -->
 ``` http
@@ -204,11 +145,24 @@ Content-Type: application/json
   "callbackUri": "https://bot.contoso.com/api/calls/24701998-1a73-4d42-8085-bf46ed0ae039"
 }
 ```
+# [C#](#tab/csharp)
+[!INCLUDE [sample-code](../includes/snippets/csharp/call-redirect-csharp-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [JavaScript](#tab/javascript)
+[!INCLUDE [sample-code](../includes/snippets/javascript/call-redirect-javascript-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Objective-C](#tab/objc)
+[!INCLUDE [sample-code](../includes/snippets/objc/call-redirect-objc-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+---
 
 ##### Response
 
 <!-- {
-  "blockType": "ignored", 
+  "blockType": "response", 
   "@odata.type": "microsoft.graph.None"
 } -->
 ```http
@@ -277,7 +231,7 @@ Content-Type: application/json
 }
 ```
 
-### Forward a call to multiple targets with simultaneous ring
+### Example 2: Forward a call to multiple targets with simultaneous ring
 
 ##### Notification - incoming
 
@@ -345,8 +299,8 @@ Content-Type: application/json
 ##### Request
 
 <!-- {
-  "blockType": "ignored", 
-  "name": "call-redirect"
+  "blockType": "request", 
+  "name": "call-redirect-simuring"
 } -->
 
 ``` http
@@ -389,7 +343,7 @@ Content-Type: application/json
 ##### Response
 
 <!-- {
-  "blockType": "ignored", 
+  "blockType": "response", 
   "@odata.type": "microsoft.graph.None"
 } -->
 
@@ -400,20 +354,15 @@ HTTP/1.1 202 Accepted
 ##### Notification - terminated
 
 <!-- {
-  "blockType": "ignored", 
-  "name": "call-redirect"
+  "blockType": "example", 
+  "@odata.type": "microsoft.graph.commsNotifications"
 } -->
+
 ``` http
 POST https://bot.contoso.com/api/calls/24701998-1a73-4d42-8085-bf46ed0ae039
 Authorization: Bearer <TOKEN>
 Content-Type: application/json
-```
 
-<!-- {
-  "blockType": "example", 
-  "@odata.type": "microsoft.graph.commsNotifications"
-} -->
-``` json
 {
   "@odata.type": "#microsoft.graph.commsNotifications",
   "value": [

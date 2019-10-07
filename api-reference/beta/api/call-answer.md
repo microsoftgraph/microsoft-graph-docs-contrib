@@ -11,16 +11,22 @@ doc_type: apiPageType
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Answer an incoming call.
+This enables a bot to answer an incoming [call](../resources/call.md). The incoming call request can be an invite from a participant in a group call or a peer-to-peer call. If an invite to a group call is received, the notification will contain the [chatInfo](../resources/chatinfo.md) and [meetingInfo](../resources/meetinginfo.md) parameters.
+
+The bot is expected to Answer or [Reject](./call-reject.md) the call before the call times out. The current timeout value is 15 seconds.
+
+> **Note:** The bot can only be reached by VoIP. PSTN calling isn't supported.
 
 ## Permissions
-One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
+You do not need any permissions to answer a peer-to-peer call. You need one of the following permissions to join a group call. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
 
 | Permission type | Permissions (from least to most privileged)                 |
 | :-------------- | :-----------------------------------------------------------|
 | Delegated (work or school account)     | Not Supported                        |
 | Delegated (personal Microsoft account) | Not Supported                        |
-| Application     | None                                                        |
+| Application     | Calls.JoinGroupCalls.All or Calls.JoinGroupCallsasGuest.All                                                         |
+
+> **Note:** For a call that uses application-hosted media, you also need the `Calls.AccessMedia.All` permission.                                                   |
 
 ## HTTP request
 <!-- { "blockType": "ignored" } -->
@@ -40,9 +46,9 @@ In the request body, provide a JSON object with the following parameters.
 
 | Parameter        | Type                                     |Description                                                                                                                                    |
 |:-----------------|:-----------------------------------------|:----------------------------------------------------------------------------------------------------------------------------------------------|
-|callbackUri       |String                                    |The callback or subscription ID on which callbacks will be delivered. (Required)                                                               |
-|acceptedModalities|String collection                         |The list of accept modalities. Possible value are: `unknown`, `audio`, `video`, `screenSharing`, `videoBasedScreenSharing`, `data`. (Required) |
-|mediaConfig       |[mediaConfig](../resources/mediaconfig.md)|The media configuration. (Required)                                                                                                            |
+|callbackUri       |String                                    |This allows bots to provide a specific callback URI for the current call to receive later notifications. If this property has not been set, the bot's global callback URI will be used instead. This must be `https`.    |
+|acceptedModalities|String collection                         |The list of accept modalities. Possible value are: `audio`, `video`, `videoBasedScreenSharing`. Required for answering a call. |
+|mediaConfig       | [appHostedMediaConfig](../resources/apphostedmediaconfig.md) or [serviceHostedMediaConfig](../resources/servicehostedmediaconfig.md) |The media configuration. (Required)                                                                                                            |
 
 ## Response
 This method returns `202 Accepted` response code.
@@ -68,13 +74,15 @@ Content-Length: 211
   "callbackUri": "callbackUri-value",
   "mediaConfig": {
     "@odata.type": "#microsoft.graph.appHostedMediaConfig",
-    "blob": "<media config blob>"
+    "blob": "<Media Session Configuration Blob>"
   },
   "acceptedModalities": [
     "audio"
   ]
 }
 ```
+This blob is the serialized configuration for media sessions which is generated from the media SDK.
+
 # [C#](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/call-answer-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
@@ -102,7 +110,7 @@ Here is an example of the response.
 HTTP/1.1 202 Accepted
 ```
 
-### Answer VOIP call with service hosted media
+### Example 1: Answer a Peer-to-Peer VoIP Call with Service-Hosted Media
 
 ##### Notification - incoming
 
@@ -174,17 +182,15 @@ Content-Type: application/json
 
 ##### Request
 
+<!-- {
+  "blockType": "request",
+  "name": "call-answer-service-hosted-media"
+}-->
 ```http
 POST /communications/calls/57DAB8B1894C409AB240BD8BEAE78896/answer
 Authorization: Bearer <TOKEN>
 Content-Type: application/json
-```
 
-<!-- {
-  "blockType": "ignored",
-  "name": "call-answer"
-}-->
-```json
 {
   "callbackUri": "https://bot.contoso.com/api/calls",
   "acceptedModalities": [ "audio" ],
@@ -205,7 +211,11 @@ Content-Type: application/json
 ```
 
 ##### Response
-
+<!-- {
+  "blockType": "response",
+  "truncated": true,
+  "@odata.type": "microsoft.graph.None"
+} -->
 ```http
 HTTP/1.1 202 Accepted
 ```
@@ -268,7 +278,7 @@ Content-Type: application/json
 }
 ```
 
-### Answer VOIP call with application hosted media
+### Example 2: Answer VOIP call with application hosted media
 
 ##### Notification - incoming
 
@@ -327,29 +337,32 @@ Content-Type: application/json
 
 ##### Request
 
+<!-- {
+  "blockType": "request",
+  "name": "call-answer-app-hosted-media"
+}-->
 ```http
 POST /communications/calls/57DAB8B1894C409AB240BD8BEAE78896/answer
 Authorization: Bearer <TOKEN>
 Content-Type: application/json
-```
 
-<!-- {
-  "blockType": "ignored",
-  "name": "call-answer"
-}-->
-```json
 {
   "callbackUri": "https://bot.contoso.com/api/calls",
   "acceptedModalities": [ "audio" ],
   "mediaConfig": {
     "@odata.type": "#microsoft.graph.appHostedMediaConfig",
-    "blob": "<media config blob>"
+    "blob": "<Media Session Configuration Blob>"
   }
 }
 ```
 
 ##### Response
 
+<!-- {
+  "blockType": "response",
+  "truncated": true,
+  "@odata.type": "microsoft.graph.None"
+} -->
 ```http
 HTTP/1.1 202 Accepted
 ```

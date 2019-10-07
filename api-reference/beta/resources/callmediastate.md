@@ -7,11 +7,11 @@ localization_priority: Normal
 doc_type: resourcePageType
 ---
 
-# audioConferencing resource type
+# callMediaState resource type
 
-> **Important:** APIs under the /beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported.
+[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Represents the media state for a call [call](call.md).
+Represents the media state for a [call](call.md).
 
 ## Properties
 

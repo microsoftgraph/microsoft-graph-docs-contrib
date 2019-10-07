@@ -13,8 +13,13 @@ doc_type: apiPageType
 
 Mute a specific participant in the call.
 
+This is a server mute, meaning that the server will drop all audio packets for this participant, even if the participant continues to stream audio.
+
+For more information about how to handle operations, please review [commsOperation](../resources/commsOperation.md)
+
+> **Note:** This is only supported for group calls.
+
 ## Permissions
-One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
 
 | Permission type | Permissions (from least to most privileged) |
 | :-------------- | :------------------------------------------ |
@@ -40,10 +45,12 @@ In the request body, provide a JSON object with the following parameters.
 
 | Parameter      | Type    |Description|
 |:---------------|:--------|:----------|
-|clientContext|String|The client context.|
+|clientContext|String|Unique Client Context string. Max limit is 256 chars.|
 
 ## Response
 If successful, this method returns `200 OK` response code and [commsOperation](../resources/commsoperation.md) object in the response body.
+
+>**Note:** Once this returns a successful response, all participants will receive a roster update.
 
 ## Example - Mute specific participant
 The following example shows how to call this API.

@@ -44,11 +44,11 @@ Do not supply a request body for this method.
 ## Response
 If successful, this method returns a `200 OK` response code and a [call](../resources/call.md) object in the response body.
 
-## Example
+## Examples
+
+### Example 1: Getting a Peer-to-Peer Call
 
 ##### Request
-The following call example shows the request for getting the peer to peer call.
-
 
 # [HTTP](#tab/http)
 <!-- {
@@ -154,9 +154,11 @@ Content-Type: application/json
   "toneInfo": null
 }
 ```
+### Example 2: Getting a Group Call
 
+##### Request
 <!-- {
-  "blockType": "example",
+  "blockType": "request",
   "name": "get-call"
 }-->
 ```http
@@ -172,7 +174,7 @@ Content-Type: application/json
 ```
 
 <!-- {
-  "blockType": "example",
+  "blockType": "response",
   "truncated": "true",
   "@odata.type": "microsoft.graph.call"
 }-->

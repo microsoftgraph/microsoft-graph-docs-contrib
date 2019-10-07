@@ -11,11 +11,13 @@ doc_type: apiPageType
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Enables the bot to reject an incoming [call](../resources/call.md). The incoming call request can be an invite to a meeting or a peer to peer call. The incoming call request times out after 15 seconds. If no response is sent during this time, the call is automatically rejected.
+This enables a bot to reject an incoming call. The incoming call request can be an invite from a participant in a group call or a peer-to-peer call. If an invite to a group call is received, the notification will contain the chatInfo and meetingInfo parameters.
 
-Once the bot is registered with a valid callback URL in the Azure portal, the incoming call is delivered as a [commsNotification](../resources/commsnotification.md) with `changeType` set to `created`. The bot is expected to `Answer` or `Reject` the call before it times out.
+The bot is expected to Answer or Reject the call before the call times out. The current timeout value is 15 seconds.
 
-> **Note:** This API is only used to reject incoming calls. To terminate existing calls, [Delete Call](../api/call-delete.md) should be used instead.
+This API does not terminate existing calls that have already been answered. To do so, please view [Delete Call](../api/call-delete.md).
+
+> **Note:** The bot can only be reached through VoIP. PSTN calling to bot is not yet supported.
 
 ## Permissions
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
@@ -45,7 +47,7 @@ In the request body, provide a JSON object with the following parameters.
 | Parameter      | Type    |Description|
 |:---------------|:--------|:----------|
 |reason|String|The rejection reason. Possible values are `None`, `Busy` and `Forbidden` |
-|callbackUri|String|Allows bots to provide a specific callback URI where the result of the Reject action will be posted. This allows sending the result to the same specific bot instance that triggered the Reject action. If none is provided, the bot's global callback URI will be used.|
+|callbackUri|String|This allows bots to provide a specific callback URI for the current call to receive later notifications. If this property has not been set, the bot's global callback URI will be used instead. This must be `https`.|
 
 ## Response
 If successful, this method returns `202 Accepted` response code. It does not return anything in the response body.
@@ -53,8 +55,8 @@ If successful, this method returns `202 Accepted` response code. It does not ret
 ## Examples
 The following examples shows how to call this API.
 
+### Example 1: Reject an incoming call with 'Busy' reason
 #### Request
-The following example shows the request.
 
 # [HTTP](#tab/http)
 <!-- {
@@ -86,7 +88,6 @@ Content-Length: 24
 
 
 ##### Response
-Here is an example of the response. 
 
 <!-- {
   "blockType": "response",
@@ -97,7 +98,7 @@ Here is an example of the response.
 HTTP/1.1 202 Accepted
 ```
 
-### Reject an incoming call with 'None' reason
+### Example 2: Reject an incoming call with 'None' reason
 
 ##### Notification - incoming
 
@@ -154,13 +155,10 @@ Content-Type: application/json
 ```
 
 ##### Request
-The following example shows the request.
-
-# [HTTP](#tab/http)
 
 <!-- {
-  "blockType": "ignored",
-  "name": "call-reject"
+  "blockType": "request",
+  "name": "call-reject-none-reason"
 }-->
 ```http
 POST https://graph.microsoft.com/beta/communications/calls/57dab8b1-894c-409a-b240-bd8beae78896/reject
@@ -171,22 +169,13 @@ Content-Length: 24
   "reason": "none"
 }
 ```
-# [C#](#tab/csharp)
-[!INCLUDE [sample-code](../includes/snippets/csharp/call-reject-csharp-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [JavaScript](#tab/javascript)
-[!INCLUDE [sample-code](../includes/snippets/javascript/call-reject-javascript-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [Objective-C](#tab/objc)
-[!INCLUDE [sample-code](../includes/snippets/objc/call-reject-objc-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
----
 
 ##### Response
-
+<!-- {
+  "blockType": "response",
+  "truncated": true,
+  "@odata.type": "microsoft.graph.None"
+} -->
 ```http
 HTTP/1.1 202 Accepted
 ```

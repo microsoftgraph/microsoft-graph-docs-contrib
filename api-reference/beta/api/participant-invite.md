@@ -15,7 +15,7 @@ Invite participants to the active call.
 
 For more information about how to handle operations, see [commsoperation](../resources/commsoperation.md).
 
->**Note:** This API is only supported for multiparty calls.
+>**Note:** This API is only supported for group calls.
 
 ## Permissions
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
@@ -44,11 +44,14 @@ In the request body, provide a JSON object with the following parameters.
 
 | Parameter      | Type    |Description|
 |:---------------|:--------|:----------|
-|participants|[invitationParticipantInfo](../resources/invitationparticipantinfo.md) collection| The participants to invite.|
-|clientContext|String|The client context.|
+|participants|[invitationParticipantInfo](../resources/invitationparticipantinfo.md) collection| The participants to be invited.|
+|clientContext|String|Unique Client Context string. Max limit is 256 chars.|
 
 ## Response
-If successful, this API returns a `202 Accepted` response code and a Location header with a URI to the [inviteParticipantsOperation](../resources/inviteparticipantsoperation.md) object created for this request. The body of the response contains the [inviteParticipantsOperation](../resources/inviteparticipantsoperation.md) created.
+Returns `200 OK` response code and a Location header with a uri to the [inviteParticipantsOperation](../resources/inviteParticipantsOperation.md) created for this request.  The body of the response contains the [inviteParticipantsOperation](../resources/inviteParticipantsOperation.md) created.
+
+>**Note:** Once this returns a successful response, all participants will receive a roster update.
+
 
 ## Examples
 The following examples shows how to call this API.

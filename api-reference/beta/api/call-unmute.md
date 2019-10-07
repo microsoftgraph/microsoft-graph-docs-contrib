@@ -13,8 +13,13 @@ doc_type: apiPageType
 
 Allows the application to unmute itself.
 
+This is a server unmute, meaning that the server will start sending audio packets for this participant to other participants again.
+
+For further information on how to handle operations, please review [commsOperation](../resources/commsOperation.md)
+
+> **Note:** This is only supported for group calls.
+
 ## Permissions
-One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
 
 | Permission type                        | Permissions (from least to most privileged) |
 |:---------------------------------------|:--------------------------------------------|
@@ -45,12 +50,11 @@ In the request body, provide a JSON object with the following parameters.
 ## Response
 If successful, this method returns `200 OK` response code and [commsOperation](../resources/commsoperation.md) object in the response body.
 
+>**Note:** Once this returns a successful response, all participants will receive a roster update.
+
 ## Example
-The following example shows how to call this API.
 
 ##### Request
-The following example shows the request.
-
 
 # [HTTP](#tab/http)
 <!-- {

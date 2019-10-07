@@ -74,7 +74,7 @@ Although the same identity cannot be invited multiple times, it is possible for 
 | terminationReason   | String                                                                                                 | Read-only. Server generated.                                                                                                                                                                        |
 | toneInfo            | [toneInfo](toneinfo.md)                                                                                | Read-only. Server generated.                                                                                                                                                                        |
 
-> Note: Properties marked as `Server generated` are ignored when processing `POST` on `app/calls`.
+> **Note**: Properties marked as `Server generated` are ignored when processing `POST` on `communications/calls`.
 
 ## Relationships
 

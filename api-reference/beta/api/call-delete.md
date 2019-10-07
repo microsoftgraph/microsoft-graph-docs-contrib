@@ -11,11 +11,9 @@ doc_type: apiPageType
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Delete or hang up an active call. For multiparty calls, this will only delete your call leg; the underlying multiparty call will still continue.
+Delete or hang up an active call. For group calls, this will only delete your call leg and the underlying group call will still continue.
 
 ## Permissions
-
-One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
 
 | Permission type | Permissions (from least to most privileged)                  |
 | :-------------- | :----------------------------------------------------------- |

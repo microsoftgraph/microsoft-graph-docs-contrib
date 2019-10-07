@@ -1,6 +1,6 @@
 --- 
 title: "SubscribeToToneOperation resource type"
-description: "The subscribeToTone operation to obtain the result of the subscribeToTone action."
+description: "This resource type is used to describe the response format of creation of subscription to receive DTMF tones."
 author: "VinodRavichandran"
 localization_priority: Normal
 doc_type: resourcePageType
