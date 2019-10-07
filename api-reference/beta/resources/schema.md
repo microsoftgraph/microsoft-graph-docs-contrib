@@ -15,10 +15,10 @@ Describes the type of content and how to index each property in items in a Micro
 
 ## Methods
 
-| Method                                            | Return Type         | Description |
-|:--------------------------------------------------|:--------------------|:---|
-| [Create schema](../api/connection-post-schema.md) | TODO                | Register connection schema. |
-| [Get schema](../api/schema-get.md)                | [schema](schema.md) | Read properties of a schema object. |
+| Method                                            | Return Type                   | Description |
+|:--------------------------------------------------|:------------------------------|:--|
+| [Create schema](../api/connection-post-schema.md) | None *or* [schema](schema.md) | Register connection schema. |
+| [Get schema](../api/schema-get.md)                | [schema](schema.md)           | Read properties of a schema object. |
 
 ## Properties
 

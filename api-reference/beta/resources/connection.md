@@ -22,9 +22,9 @@ A connection to Microsoft Search from an external source.
 | [Get connection](../api/connection-get.md)                | connection                                    | Read properties and relationships of connection object. |
 | [Update connection](../api/connection-update.md)          | connection                                    | Update connection object. |
 | [Delete connection](../api/connection-delete.md)          | None                                          | Delete connection object. |
-| [Create schema](../api/connection-post-schema.md)         | TODO                                          | Register connection schema. |
+| [Create schema](../api/connection-post-schema.md)         | None *or* [schema](schema.md)                 | Register connection schema. |
 | [Get operation](../api/connectionoperation-get.md)        | [connectionOperation](connectionoperation.md) | Get the status of an asynchronous request to create the connection schema. |
-| [Create externalItem](../api/connection-put-items.md)    | [externalItem](externalitem.md)               | Create a new externalItem by posting to the items collection. |
+| [Create externalItem](../api/connection-put-items.md)     | [externalItem](externalitem.md)               | Create a new externalItem by posting to the items collection. |
 
 ## Properties
 

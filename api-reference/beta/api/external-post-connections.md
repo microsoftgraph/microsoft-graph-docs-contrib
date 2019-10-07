@@ -44,7 +44,7 @@ In the request body, supply a JSON representation of a [connection](../resources
 
 ## Response
 
-If successful, this method returns `201, Created` response code and a new [connection](../resources/connection.md) object in the response body.
+If successful, this method returns `201 Created` response code and a new [connection](../resources/connection.md) object in the response body.
 
 ## Examples
 

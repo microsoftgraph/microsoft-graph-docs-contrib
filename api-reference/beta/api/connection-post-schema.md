@@ -51,9 +51,12 @@ When registering a file schema, the `schema` object MUST have the `baseType` pro
 
 ## Response
 
-TODO: Get response for sync
-
 With the `Prefer: respond-async` header included in the request, if successful, this method returns a `202 Accepted` response code and a URL in the `Location` response header that can be used to [get the operation status](../api/connectionoperation-get.md).
+
+Without the `Prefer: respond-async` header included in the request, if successful, this method returns a `201 Created` response code and a new [schema](../resources/schema.md) object in the response body.
+
+> [!NOTE]
+> Creating a schema is a long-running process prone to gateway timeouts. Using the `Prefer: respond-async` is recommended to avoid timeout errors.
 
 ## Examples
 
@@ -146,11 +149,12 @@ The following is an example of the response.
   "@odata.type": "microsoft.graph.externalItem"
 } -->
 
-TODO: Get real response
-
 ```http
-HTTP/1.1 202 Accepted
-Location: https://graph.microsoft.com/beta/external/connections/contosofiles/operations/616bfeed-666f-4ce0-8cd9-058939010bfc
+HTTP/1.1 201 Created
+
+{
+  "baseType": "microsoft.graph.externalFile"
+}
 ```
 
 <!-- uuid: 16cd6b66-4b1a-43a1-adaf-3a886856ed98
