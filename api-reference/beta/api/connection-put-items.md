@@ -1,17 +1,19 @@
 ---
-title: "Get externalItem"
-description: "Retrieve the properties of an externalItem or externalFile."
+title: "Create externalItem"
+description: "Create a new externalItem."
 localization_priority: Normal
 author: "snlraju-msft"
 ms.prod: ""
 doc_type: "apiPageType"
 ---
 
-# Get externalItem
+# Create externalItem
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Retrieve the properties of an [externalItem](../resources/externalitem.md) or [externalFile](../resources/externalfile.md).
+Create a new [externalItem](../resources/externalitem.md).
+
+This API can be used to create a custom item or a file. Specify the type you are creating by including the `@odata.type` property in the JSON body. The containing [connection](../resources/connection.md) must have a [schema](../resources/schema.md) registered of the corresponding type.
 
 ## Permissions
 
@@ -19,7 +21,7 @@ One of the following permissions is required to call this API. To learn more, in
 
 | Permission type                        | Permissions (from least to most privileged) |
 |:---------------------------------------|:--------------------------------------------|
-| Delegated (work or school account)     | ExternalItem.Read.All |
+| Delegated (work or school account)     | Not supported. |
 | Delegated (personal Microsoft account) | Not supported. |
 | Application                            | ExternalItem.ReadWrite.All |
 
@@ -28,61 +30,42 @@ One of the following permissions is required to call this API. To learn more, in
 <!-- { "blockType": "ignored" } -->
 
 ```http
-GET /external/connections/{connection-id}/items/{item-id}
+PUT /external/connections/{connection-id}/items/{item-id}
 ```
-
-## Optional query parameters
-
-This method supports the [OData query parameters](/graph/query-parameters) to help customize the response.
 
 ## Request headers
 
-| Name          | Description               |
-|:--------------|:--------------------------|
-| Authorization | Bearer {token}. Required. |
+| Name          | Description                 |
+|:--------------|:----------------------------|
+| Authorization | Bearer {token}. Required.   |
+| Content-Type  | application/json. Required. |
 
 ## Request body
 
-Do not supply a request body for this method.
+In the request body, supply a JSON representation of an [externalItem](../resources/externalitem.md) object.
 
 ## Response
 
-If successful, this method returns a `200 OK` response code and the requested [externalItem](../resources/externalitem.md) or [externalFile](../resources/externalfile.md) object in the response body.
+If successful, this method returns `200 OK` response code.
 
 ## Examples
 
-### Example 1: Get an externalItem
+### Example 1: Create a custom item
 
 #### Request
 
 The following is an example of the request.
 <!-- {
   "blockType": "request",
-  "name": "get_externalitem"
+  "name": "create_externalitem_from_connections"
 }-->
 
 ```http
-GET https://graph.microsoft.com/beta/connections/contosohr/items/TSP-228082938
-```
-
-<!-- markdownlint-disable MD024 -->
-#### Response
-<!-- markdownlint-enable MD024 -->
-
-The following is an example of the response.
-
-<!-- {
-  "blockType": "response",
-  "truncated": true,
-  "@odata.type": "microsoft.graph.externalItem"
-} -->
-
-```http
-HTTP/1.1 200 OK
+POST https://graph.microsoft.com/beta/connections/contosohr/items/TSP-228082938
 Content-type: application/json
 
 {
-  "id": "TSP-228082938",
+  "@odata.type": "microsoft.graph.externalItem",
   "acl": [
     {
       "type": "user",
@@ -100,22 +83,6 @@ Content-type: application/json
 }
 ```
 
-### Example 2: Get an externalFile
-
-<!-- markdownlint-disable MD024 -->
-#### Request
-<!-- markdownlint-enable MD024 -->
-
-The following is an example of the request.
-<!-- {
-  "blockType": "request",
-  "name": "get_externalfile"
-}-->
-
-```http
-GET https://graph.microsoft.com/beta/connections/contosofiles/items/myFile01
-```
-
 <!-- markdownlint-disable MD024 -->
 #### Response
 <!-- markdownlint-enable MD024 -->
@@ -125,15 +92,31 @@ The following is an example of the response.
 <!-- {
   "blockType": "response",
   "truncated": true,
-  "@odata.type": "microsoft.graph.externalFile"
+  "@odata.type": "microsoft.graph.externalItem"
 } -->
 
 ```http
 HTTP/1.1 200 OK
+```
+
+### Example 2: Create a file
+
+<!-- markdownlint-disable MD024 -->
+#### Request
+<!-- markdownlint-enable MD024 -->
+
+The following is an example of the request.
+<!-- {
+  "blockType": "request",
+  "name": "create_externalfile_from_connections"
+}-->
+
+```http
+PUT https://graph.microsoft.com/beta/connections/contosofiles/items/myFile01
 Content-type: application/json
 
 {
-  "id": "myFile01",
+  "@odata.type": "microsoft.graph.externalFile",
   "acl": [
     {
       "type": "user",
@@ -155,11 +138,27 @@ Content-type: application/json
 }
 ```
 
+<!-- markdownlint-disable MD024 -->
+#### Response
+<!-- markdownlint-enable MD024 -->
+
+The following is an example of the response.
+
+<!-- {
+  "blockType": "response",
+  "truncated": true,
+  "@odata.type": "microsoft.graph.externalItem"
+} -->
+
+```http
+HTTP/1.1 200 OK
+```
+
 <!-- uuid: 16cd6b66-4b1a-43a1-adaf-3a886856ed98
 2019-02-04 14:57:30 UTC -->
 <!-- {
   "type": "#page.annotation",
-  "description": "Get externalItem",
+  "description": "Create externalItem",
   "keywords": "",
   "section": "documentation",
   "tocPath": ""

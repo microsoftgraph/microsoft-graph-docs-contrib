@@ -24,8 +24,7 @@ A connection to Microsoft Search from an external source.
 | [Delete connection](../api/connection-delete.md)          | None                                          | Delete connection object. |
 | [Create schema](../api/connection-post-schema.md)         | TODO                                          | Register connection schema. |
 | [Get operation](../api/connectionoperation-get.md)        | [connectionOperation](connectionoperation.md) | Get the status of an asynchronous request to create the connection schema. |
-| [Create externalItem](../api/connection-post-items.md)    | [externalItem](externalitem.md)               | Create a new externalItem by posting to the items collection. |
-| [List items](../api/connection-list-items.md)             | [externalItem](externalitem.md) collection    | Get a externalItem object collection. |
+| [Create externalItem](../api/connection-put-items.md)    | [externalItem](externalitem.md)               | Create a new externalItem by posting to the items collection. |
 
 ## Properties
 

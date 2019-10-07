@@ -15,13 +15,11 @@ An item indexed via a Microsoft Search [connection](connection.md). This type de
 
 ## Methods
 
-| Method                                                 | Return Type             | Description |
-|:-------------------------------------------------------|:------------------------|:--|
-| [Create externalFile](../api/connection-post-items.md) | externalFile            | Create an externalFile. |
-| [List externalFile](../api/connection-list-items.md)   | externalFile collection | List externalFiles |
-| [Get externalFile](../api/externalitem-get.md)         | externalFile            | Read properties of an externalFile. |
-| [Update externalFile](../api/externalitem-update.md)   | externalFile            | Update an externalFile. |
-| [Delete](../api/externalitem-delete.md)                | None                    | Delete an externalFile. |
+| Method                                                | Return Type  | Description |
+|:------------------------------------------------------|:-------------|:------|
+| [Create externalFile](../api/connection-put-items.md) | externalFile | Create an externalFile. |
+| [Update externalFile](../api/externalitem-update.md)  | externalFile | Update an externalFile. |
+| [Delete](../api/externalitem-delete.md)               | None         | Delete an externalFile. | |
 
 ## Properties
 

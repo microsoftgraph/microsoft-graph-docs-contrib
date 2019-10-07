@@ -17,9 +17,7 @@ An item indexed via a Microsoft Search [connection](connection.md).
 
 | Method                                                 | Return Type                                | Description |
 |:-------------------------------------------------------|:-------------------------------------------|:--|
-| [Create externalItem](../api/connection-post-items.md) | [externalItem](externalitem.md)            | Create an externalItem. |
-| [List externalItems](../api/connection-list-items.md)  | [externalItem](externalitem.md) collection | List externalItems |
-| [Get externalItem](../api/externalitem-get.md)         | [externalItem](externalitem.md)            | Read properties of an externalItem. |
+| [Create externalItem](../api/connection-put-items.md) | [externalItem](externalitem.md)            | Create an externalItem. |
 | [Update externalItem](../api/externalitem-update.md)   | [externalItem](externalitem.md)            | Update an externalItem. |
 | [Delete externalItem](../api/externalitem-delete.md)   | None                                       | Delete an externalItem. |
 
