@@ -30,12 +30,47 @@ By default, the `mgt-people-picker` component fetches events from the `/me/peopl
 | showMax  | show-max  | A number value to indicate the maximum number of people to show. the default value is 6.                                                                                             |
 | people   | people    | An array of people to get or set the list of people rendered by the component. Use this property to access the people loaded by the component. Set this value to load your own people. |
 | group    | group     | A string value that belongs to a Microsoft Graph defined group for further filtering of the search results.                                                                            |
+| selectedPeople    | selected-people    | An array of type " `person`", representing people selected in the component. Set this value to choose selected people by default.|
 
-The following is an example.
+The following is a `show-max` example.
 
 ```html
 <mgt-people-picker show-max="4"> </mgt-people-picker>
 ```
+
+## Selected People
+
+The selected people section of the component renders each person chosen by developer or user. 
+
+![mgt-people-picker](./images/selected-people.png)
+
+Selected People data is accessible to populate via the following methods:
+
+1. Giving an array of `person` object to the `selected-people` property. 
+
+      * Example
+    ```html
+    <mgt-people>
+      <template>
+        <ul>
+          <li data-for="person in people">
+            <mgt-people-picker selected-people="[{{ person }}]"></mgt-people-picker>
+            <h3>{{ person.displayName }}</h3>
+          </li>
+        </ul>
+      </template>
+    </mgt-people>
+    ```
+
+
+2. Using the method `selectUsersById()` which accepts an array of Microsoft graph [user id](https://docs.microsoft.com/en-us/graph/api/resources/users?view=graph-rest-1.0) to find associated user details for selection.
+
+      * Example
+    ```javascript
+    // id = Mirosoft graph User "id"
+    document.querySelector('mgt-people-picker').selectUsersById(["id","id"])
+    ```
+
 
 ## CSS custom properties
 
