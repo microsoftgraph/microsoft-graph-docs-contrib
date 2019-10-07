@@ -30,6 +30,18 @@ The indexing API provides methods to create and configure a connection to the Mi
 | Add, update or delete a custom item in the index | [externalItem](externalitem.md) | [Methods of externalItem](externalItem.md#methods) |
 | Add, update or delete a file in the index | [externalFile](externalfile.md) | [Methods of externalFile](externalfile.md#methods) |
 
+## Known limitations
+
+The indexing API has the following limitations during the preview.
+
+- Organizations are limited to a maximum of 10 connections.
+- No support for custom properties when indexing files using the `externalFile` resource.
+- Only Azure Active Directory identities are supported.
+- Creating `externalItem` or `externalFile` resources is limited to 4 items per second.
+- Connections have a capacity limit of 1 million items or ~70 GB of data.
+- No support for refining and sorting results.
+- Result ranking is best effort.
+
 ## Next steps
 
 The indexing API can open up new ways for you to engage with users:
