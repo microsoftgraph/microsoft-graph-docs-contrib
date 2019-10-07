@@ -17,13 +17,45 @@ The Microsoft Graph team regularly evaluates customer needs and releases new fea
 
 Below, see highlights of what's new in Microsoft Graph, and how you can [share your ideas](#want-to-stay-in-the-loop). For details of API updates, see the [September](changelog.md#september-2019) and [August](changelog.md#august-2019) sections of the API changelog. 
 
+## September 2019: New and generally available
+
+### Calendar, mail, and group
+[Get the raw content of a file, or the MIME content of an item](/graph/api/attachment-get?view=graph-rest-1.0#get-the-raw-contents-of-a-file-or-item-attachment) that has been added as an [attachment](/graph/api/resources/attachment?view=graph-rest-1.0) to an [event](/graph/api/resources/event?view=graph-rest-1.0), [message](/graph/api/resources/message?view=graph-rest-1.0), or group [post](/graph/api/resources/post?view=graph-rest-1.0).
+
+### Calendar, mail, Outlook task, personal contact
+Use the [translateExchangeId](/graph/api/user-translateexchangeids?view=graph-rest-1.0) function to convert an Outlook item ID between supported [formats](/graph/api/user-translateexchangeids?view=graph-rest-1.0#exchangeidformat-values), including the Microsoft Graph default ID format and immutable ID format. 
+
+The following resources support ID format conversion:
+
+- [attachment](/graph/api/resources/attachment?view=graph-rest-1.0)
+- [contact](/graph/api/resources/contact?view=graph-rest-1.0)
+- [event](/graph/api/resources/event?view=graph-rest-1.0)
+- [eventMessage](/graph/api/resources/eventmessage?view=graph-rest-1.0)
+- [message](/graph/api/resources/message?view=graph-rest-1.0)
+- [outlookTask](/graph/api/resources/outlooktask?view=graph-rest-1.0)
+
+### Mail
+[Get the MIME content of a message](outlook-get-mime-message.md).
 
 ## September 2019: New in preview
 
 > [!IMPORTANT]
 > Features, including APIs and tools, in _preview_ status may change without notice, and some may never be promoted to GA status. Do not use them in production apps.
 
+### Devices and apps
+Intune [September](changelog.md#september-2019) updates
+
+### Identity and access
+Incremental enhancements for [synchronizing identities](/graph/api/resources/synchronization-overview?view=graph-rest-beta) in a cloud application for a tenant:
+
+- To store settings for a [synchronization job](/graph/api/resources/synchronization-synchronizationjob?view=graph-rest-beta)
+- To specify a reason to impose [quarantine](/graph/api/resources/synchronization-quarantine?view=graph-rest-beta) on a synchronization job
+
+### Teamwork
+Programmatic support for the **General** channel of a [team](/graph/api/resources/team?view=graph-rest-beta), and for customizing [member settings](/graph/api/resources/teammembersettings?view=graph-rest-beta) to let team members create private channels in the **team**.
+
 ### Users
+- Get or update the identities with which a [user](/graph/api/resources/user?view=graph-rest-beta) can sign in to an account. These identities can be provided by business organizations, or by social identity providers such as Facebook, Google, and Microsoft.
 - Get or update a user's preferred date and time format [settings for the mailbox](/graph/api/resources/mailboxsettings?view=graph-rest-beta).
 
 ## August 2019: New and generally available 

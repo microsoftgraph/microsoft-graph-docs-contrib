@@ -1,7 +1,7 @@
 ---
 title: "webBrowserCookieSettings enum type"
 description: "Web Browser Cookie Settings."
-author: "tfitzmac"
+author: "davidmu1"
 localization_priority: Normal
 ms.prod: "Intune"
 doc_type: enumPageType
@@ -21,6 +21,7 @@ Web Browser Cookie Settings.
 |allowCurrentWebSite|2|Allow cookies from current Web site.|
 |allowFromWebsitesVisited|3|Allow Cookies from websites visited.|
 |allowAlways|4|Always allow cookies.|
+
 
 
 

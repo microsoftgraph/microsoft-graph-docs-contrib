@@ -30,7 +30,7 @@ A class containing the properties used for Group Assignment of a Mobile App.
 |id|String|Key of the entity.|
 |intent|[installIntent](../resources/intune-shared-installintent.md)|The install intent defined by the admin. Possible values are: `available`, `required`, `uninstall`, `availableWithoutEnrollment`.|
 |target|[deviceAndAppManagementAssignmentTarget](../resources/intune-shared-deviceandappmanagementassignmenttarget.md)|The target group assignment defined by the admin.|
-|settings|[mobileAppAssignmentSettings](../resources/intune-apps-mobileappassignmentsettings.md)|The settings for target assignment defined by the admin.|
+|settings|[mobileAppAssignmentSettings](../resources/intune-shared-mobileappassignmentsettings.md)|The settings for target assignment defined by the admin.|
 
 ## Relationships
 None
