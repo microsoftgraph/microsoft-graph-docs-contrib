@@ -71,10 +71,10 @@ sections:
       columns:
         - image:
             src: ./images/index/logo_NETcore.svg
-          title: .NET Core
+          title: .NET
         - image:
             src: ./images/index/logo_NET.svg
-          title: .NET Framework
+          title: .NET
         - image:
             src: ./images/index/logo_android.svg
           title: Android
