@@ -31,10 +31,6 @@ One of the following permissions is required to call this API. To learn more, in
 GET /search
 ```
 
-## Optional query parameters
-
-This method supports some of the OData query parameters to help customize the response. For general information, see [OData query parameters](/graph/query-parameters).
-
 ## Request headers
 
 | Name      |Description|
@@ -47,41 +43,9 @@ Do not supply a request body for this method.
 
 ## Response
 
-If successful, this method returns a `200 OK` response code and the requested [search](../resources/search.md) object in the response body.
+This resource is not expected to be called as such. Any request on the resource will incur a Bad Request.
 
-## Examples
 
-### Request
-
-The following is an example of the request.
-<!-- {
-  "blockType": "request",
-  "name": "get_search"
-}-->
-
-```http
-GET https://graph.microsoft.com/beta/search
-```
-
-### Response
-
-The following is an example of the response.
-
-> **Note:** The response object shown here might be shortened for readability. All the properties will be returned from an actual call.
-
-<!-- {
-  "blockType": "response",
-  "truncated": true,
-  "@odata.type": "microsoft.graph.search"
-} -->
-
-```http
-HTTP/1.1 200 OK
-Content-type: application/json
-
-{
-}
-```
 
 <!-- uuid: 16cd6b66-4b1a-43a1-adaf-3a886856ed98
 2019-02-04 14:57:30 UTC -->
