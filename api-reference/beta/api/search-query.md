@@ -79,8 +79,8 @@ Content-type: application/json
       },
       "from": 99,
       "size": 99,
-      "Stored_fields": [
-        "Stored_fields-value"
+      "stored_fields": [
+        "stored_fields-value"
       ],
       "enableTopResults": true
     }
