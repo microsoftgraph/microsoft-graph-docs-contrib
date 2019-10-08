@@ -65,7 +65,9 @@ Here is an example of the request to update a team photo.
 PUT https://graph.microsoft.com/beta/teams/{id}/photo
 Content-type: image/jpeg
 
-Binary data for the image
+{
+  <Binary data for the image>
+}
 ```
 
 ### Response 
