@@ -94,7 +94,6 @@ If successful, this method returns a `200 OK` response code and one of the follo
 The first example gets all the mailbox settings of the signed-in user's mailbox, which include settings for automatic replies, date format, 
 locale (language and country/region), time format, time zone, and working hours.
 
-# [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "get_mailboxsettings_1"
