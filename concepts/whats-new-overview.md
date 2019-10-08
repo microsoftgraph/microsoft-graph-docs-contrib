@@ -25,7 +25,7 @@ Use the new **message** parameter to update any writeable [message](/graph/api/r
 ?view=graph-rest-1.0).
 
 ### Users
-[Get](/graph/api/user-get-mailboxsettings?view=graph-rest-1.0) or [set](/graph/api/user-update-mailboxsettings?view=graph-rest-1.0) a user's preferred date and time formats for the user's mailbox. 
+[Get](/graph/api/user-get-mailboxsettings?view=graph-rest-1.0) or [set](/graph/api/user-update-mailboxsettings?view=graph-rest-1.0) a user's preferred date and time format [settings for the user's mailbox](/graph/api/resources/mailboxsettings?view=graph-rest-1.0). 
 
 ## October 2019: New in preview
 
