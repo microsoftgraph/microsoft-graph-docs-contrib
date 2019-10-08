@@ -1,15 +1,17 @@
 ---
-title: "Get search"
-description: "Retrieve the properties and relationships of search object."
+title: "Search"
+description: "Retrieve the search resource used to execute queries"
 localization_priority: Normal
-author: ""
+author: "nmoreau"
 ms.prod: ""
 doc_type: "apiPageType"
 ---
 
-# Get search
+# Search
 
-Retrieve the properties and relationships of search object.
+[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
+
+The search resource is the top level object representing the search endpoint. It does not behave as any other resource in Graph, but serves as an anchor to Search actions (Query). It has no resource representation in graph.
 
 ## Permissions
 
@@ -58,7 +60,7 @@ The following is an example of the request.
 }-->
 
 ```http
-GET https://graph.microsoft.com/v1.0/search
+GET https://graph.microsoft.com/beta/search
 ```
 
 ### Response
