@@ -46,7 +46,7 @@ The selected people section of the component renders each person chosen by devel
 
 Selected People data is accessible to populate via the following methods:
 
-***If no user is found for the provided `id`, no data will be rendered for that specific id**
+***If no user is found for the provided `id`, no data will be rendered for that specific `id`**
 
 1. Giving an array of `person` object to the `selected-people` property. 
 
