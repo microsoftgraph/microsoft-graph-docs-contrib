@@ -2,8 +2,8 @@
 title: "application: removePassword"
 description: "Removes a password from an application"
 localization_priority: Normal
-author: "sureshja"
-ms.prod: ""
+author: "davidmu1"
+ms.prod: "microsoft-identity-platform"
 doc_type: "apiPageType"
 ---
 
@@ -33,21 +33,20 @@ POST /applications/{id}/removePassword
 
 ## Request headers
 
-| Name           | Type   | Description                |
-|:---------------|:-------|:---------------------------|
-| Authorization  | string | Bearer {token}. Required.  |
+| Name           | Description                |
+|:---------------|:---------------------------|
+| Authorization  | Bearer {token}. Required.  |
+| Content-type   | application/json           |
 
 ## Request body
 
-The following parameter is required to call this API. 
-
-| Property	   | Type	|Description|
-|:---------------|:--------|:----------|
-| keyId | Guid | The unique identifier (GUID) for the password |
+| Property	| Type | Description|
+|:----------|:-----|:-----------|
+| keyId     | Guid | The unique identifier for the password. Required. |
 
 ## Response
 
-If successful, this method returns `204, No content` response code.
+If successful, this method returns `204 No content` response code.
 
 ## Examples
 

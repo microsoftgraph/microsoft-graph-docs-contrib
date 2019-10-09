@@ -2,8 +2,8 @@
 title: "servicePrincipal: removePassword"
 description: "Removes a password from a servicePrincipal"
 localization_priority: Normal
-author: "sureshja"
-ms.prod: ""
+author: "davidmu1"
+ms.prod: "microsoft-identity-platform"
 doc_type: "apiPageType"
 ---
 
@@ -11,7 +11,7 @@ doc_type: "apiPageType"
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Removes a password from a servicePrincipal.
+Removes a password from a [servicePrincipal](../resources/serviceprincipal.md) object.
 
 ## Permissions
 
@@ -33,17 +33,16 @@ POST /servicePrincipals/{id}/removePassword
 
 ## Request headers
 
-| Name           | Type   | Description                |
-|:---------------|:-------|:---------------------------|
-| Authorization  | string | Bearer {token}. Required.  |
+| Name           | Description                |
+|:---------------|:---------------------------|
+| Authorization  | Bearer {token}. Required.  |
+| Content-type   | application/json           |
 
 ## Request body
 
-The following parameter is required to call this API. 
-
 | Property	   | Type	|Description|
 |:---------------|:--------|:----------|
-| keyId | Guid | The unique identifier (GUID) for the password |
+| keyId | Guid | The unique identifier for the password. Required. |
 
 ## Response
 
