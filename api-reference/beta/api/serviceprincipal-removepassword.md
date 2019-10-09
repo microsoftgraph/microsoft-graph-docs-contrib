@@ -1,6 +1,6 @@
 ---
 title: "servicePrincipal: removePassword"
-description: "Removes a password from a servicePrincipal"
+description: "Remove a password from a servicePrincipal"
 localization_priority: Normal
 author: "davidmu1"
 ms.prod: "microsoft-identity-platform"
@@ -11,7 +11,7 @@ doc_type: "apiPageType"
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Removes a password from a [servicePrincipal](../resources/serviceprincipal.md) object.
+Remove a password from a [servicePrincipal](../resources/serviceprincipal.md) object.
 
 ## Permissions
 
@@ -36,21 +36,21 @@ POST /servicePrincipals/{id}/removePassword
 | Name           | Description                |
 |:---------------|:---------------------------|
 | Authorization  | Bearer {token}. Required.  |
-| Content-type   | application/json           |
+| Content-type   | application/json. Required.|
 
 ## Request body
 
 | Property	   | Type	|Description|
 |:---------------|:--------|:----------|
-| keyId | Guid | The unique identifier for the password. Required. |
+| keyId | GUID | The unique identifier for the password. Required. |
 
 ## Response
 
-If successful, this method returns `204, No content` response code.
+If successful, this method returns a `204 No content` response code.
 
 ## Examples
 
-The following is an example of how to call this API.
+The following example shows how to call this API.
 
 ### Request
 
