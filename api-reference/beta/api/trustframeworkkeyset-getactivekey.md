@@ -1,6 +1,6 @@
 ---
 title: "trustFrameworkKeySet: getActiveKey"
-description: "PROVIDE DESCRIPTION HERE"
+description: "Get active key in the key set"
 localization_priority: Normal
 author: "valnav"
 ms.prod: "microsoft-identity-platform"
@@ -11,7 +11,8 @@ doc_type: "apiPageType"
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-PROVIDE DESCRIPTION HERE
+Returns the currently active key in a TrustFrameworkKeySet. There would be at most only one active key in the key set at a moment.
+
 
 ## Permissions
 
@@ -19,9 +20,9 @@ One of the following permissions is required to call this API. To learn more, in
 
 | Permission type                        | Permissions (from least to most privileged) |
 |:---------------------------------------|:--------------------------------------------|
-| Delegated (work or school account)     | Not supported. |
+| Delegated (work or school account)     | TrustFrameworkKeySet.Read.All, TrustFrameworkKeySet.ReadWrite.All. |
 | Delegated (personal Microsoft account) | Not supported. |
-| Application                            | Not supported. |
+| Application                            | TrustFrameworkKeySet.Read.All, TrustFrameworkKeySet.ReadWrite.All. |
 
 ## HTTP request
 
