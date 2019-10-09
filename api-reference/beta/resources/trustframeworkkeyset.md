@@ -11,7 +11,7 @@ doc_type: "resourcePageType"
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-PROVIDE DESCRIPTION HERE
+Identity Experience framework stores the secrets which can be used in the policies. The secrets can be passwords, certificates and other files. Identity Experience framework leverages the JSON Web Key (JWK) standard for the Key Sets. This entity follows the format specified in RFC 7517 Section 5 (https://tools.ietf.org/html/rfc7517#section-5).
 
 ## Methods
 

@@ -11,7 +11,7 @@ doc_type: "apiPageType"
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Use this API to create a new trustFrameworkKeySet.
+Use this API to create a new trustFrameworkKeySet.The id of the trustFrameworkKeySet is expected in the create request. However it can be modified by the service. The modified id will be available in the response and in the location header.
 
 ## Permissions
 
@@ -19,9 +19,9 @@ One of the following permissions is required to call this API. To learn more, in
 
 | Permission type                        | Permissions (from least to most privileged) |
 |:---------------------------------------|:--------------------------------------------|
-| Delegated (work or school account)     | Not supported. |
+| Delegated (work or school account)     | TrustFrameworkKeySet.ReadWrite.All	|
 | Delegated (personal Microsoft account) | Not supported. |
-| Application                            | Not supported. |
+| Application                            | TrustFrameworkKeySet.ReadWrite.All	 |
 
 ## HTTP request
 
@@ -43,13 +43,58 @@ In the request body, supply a JSON representation of [trustFrameworkKeySet](../r
 
 ## Response
 
-If successful, this method returns `201, Created` response code and a new [trustFrameworkKeySet](../resources/trustframeworkkeyset.md) object in the response body.
+If successful, this method returns `201, Created` response code, a `location header` for newly created object and a new [trustFrameworkKeySet](../resources/trustframeworkkeyset.md) object in the response body.
 
-## Examples
+## Example : Create an empty key set
+This pattern will suffice for most of the scenarios. Creating an enpty key set and then generarting a key, uploading a manual secret, uploading a certificate or a PKCS12 key will meet your requirement. 
 
 ### Request
 
-The following is an example of the request.
+The following is an example of a request.
+<!-- {
+  "blockType": "request",
+  "name": "create_trustframeworkkeyset_from_trustframework1"
+}-->
+
+```http
+POST https://graph.microsoft.com/beta/trustFramework/keySets
+Content-type: application/json
+
+{
+  "id": "keyset1"  
+}
+```
+
+### Response
+
+The following is an example of the response.
+
+> **Note:** The response object shown here might be shortened for readability. All the properties will be returned from an actual call.
+
+<!-- {
+  "blockType": "response",
+  "truncated": true,
+  "@odata.type": "microsoft.graph.trustFrameworkKeySet"
+} -->
+
+```http
+HTTP/1.1 201 Created
+Content-type: application/json
+Location : /trustFramework/keySets('B2C_1A_keyset1')
+
+{
+  "id": "B2C_1A_keyset1",
+  "keys": []
+}
+```
+
+## Example : Create a key set with a key
+
+This is an advanced scenario where you need to know the [RFC 7517](https://tools.ietf.org/html/rfc7517#section-5) compliant Json Web Key format of the key.
+
+### Request
+
+The following is an example of a request.
 <!-- {
   "blockType": "request",
   "name": "create_trustframeworkkeyset_from_trustframework"
@@ -60,6 +105,7 @@ POST https://graph.microsoft.com/beta/trustFramework/keySets
 Content-type: application/json
 
 {
+  "id": "keyset1"
   "keys": [
     {
       "k": "k-value",
@@ -100,9 +146,10 @@ The following is an example of the response.
 ```http
 HTTP/1.1 201 Created
 Content-type: application/json
+Location : /trustFramework/keySets('B2C_1A_keyset1')
 
 {
-  "id": "id-value",
+  "id": "B2C_1A_keyset1",
   "keys": [
     {
       "k": "k-value",
