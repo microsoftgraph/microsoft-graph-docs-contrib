@@ -1,6 +1,6 @@
 ---
 title: "trustFrameworkKeySet: generateKey"
-description: "PROVIDE DESCRIPTION HERE"
+description: "Generate a key"
 localization_priority: Normal
 author: "valnav"
 ms.prod: "microsoft-identity-platform"
@@ -11,7 +11,7 @@ doc_type: "apiPageType"
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-PROVIDE DESCRIPTION HERE
+This api can be used to generate a key and a secret automatically in the keyset. Caller doesn't have to provide a secret here.
 
 ## Permissions
 
@@ -19,9 +19,9 @@ One of the following permissions is required to call this API. To learn more, in
 
 | Permission type                        | Permissions (from least to most privileged) |
 |:---------------------------------------|:--------------------------------------------|
-| Delegated (work or school account)     | Not supported. |
+| Delegated (work or school account)     | TrustFrameworkKeySet.ReadWrite.All |
 | Delegated (personal Microsoft account) | Not supported. |
-| Application                            | Not supported. |
+| Application                            | TrustFrameworkKeySet.ReadWrite.All |
 
 ## HTTP request
 
@@ -43,10 +43,10 @@ In the request body, provide a JSON object with the following parameters.
 
 | Parameter    | Type        | Description |
 |:-------------|:------------|:------------|
-|use|String||
-|kty|String||
-|nbf|Int64||
-|exp|Int64||
+| `use` | string | Similar to 'use' property of trustFrameworkKey. |
+| `kty` | string | Similar to 'kty' property of trustFrameworkKey. |
+| `nbf` | int | Similar to 'nbf' property of trustFrameworkKey. |
+| `exp` | int | Similar to 'exp' property of trustFrameworkKey. |
 
 ## Response
 
@@ -69,10 +69,10 @@ POST https://graph.microsoft.com/beta/trustFramework/keySets/{id}/generateKey
 Content-type: application/json
 
 {
-  "use": "use-value",
-  "kty": "kty-value",
-  "nbf": 99,
-  "exp": 99
+  "use": "sig",
+  "kty": "RSA",
+  "nbf": 1508969811,
+  "exp": 1508969811
 }
 ```
 
@@ -92,14 +92,16 @@ The following is an example of the response.
 HTTP/1.1 200 OK
 Content-type: application/json
 {
-  "k": "k-value",
-  "x5c": [
-    "x5c-value"
-  ],
-  "x5t": "x5t-value",
-  "kty": "kty-value",
-  "use": "use-value",
-  "exp": 99
+    "@odata.context": "https://graph.microsoft.com/beta/$metadata#microsoft.graph.trustFrameworkKey",
+    "k": null,
+    "x5c": [],
+    "kty": "RSA",
+    "use": "sig",
+    "exp": 1908969811,
+    "nbf": 1908969811,
+    "kid": "Gaid7K8sO8RavMX9fzHir_Wg0femGhbY9b-B4rVIxbE",
+    "e": "AQAB",
+    "n": "rd54s6",
 }
 ```
 
