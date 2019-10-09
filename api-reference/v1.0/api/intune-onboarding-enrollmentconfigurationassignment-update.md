@@ -1,7 +1,7 @@
 ---
 title: "Update enrollmentConfigurationAssignment"
 description: "Update the properties of a enrollmentConfigurationAssignment object."
-author: "tfitzmac"
+author: "davidmu1"
 localization_priority: Normal
 ms.prod: "Intune"
 doc_type: apiPageType
@@ -84,6 +84,7 @@ Content-Length: 222
   }
 }
 ```
+
 
 
 

@@ -59,6 +59,7 @@ For example, the `item` property allows setting the following parameters:
 {
   "@microsoft.graph.conflictBehavior": "rename | fail | overwrite",
   "description": "description",
+  "fileSize": 1234,
   "name": "filename.txt"
 }
 ```
@@ -85,15 +86,8 @@ The following example controls the behavior if the filename is already taken, an
 
 | Parameter            | Type                          | Description
 |:---------------------|:------------------------------|:---------------------------------
-| item                 | driveItemUploadableProperties | Data about the file being uploaded
+| item                 | [driveItemUploadableProperties](../resources/driveItemUploadableProperties.md) | Data about the file being uploaded
 | deferCommit          | Boolean                       | If set to true, final creation of the file in the destination will require an explicit request. Only on OneDrive for Business.
-
-## Item properties
-
-| Property             | Type               | Description
-|:---------------------|:-------------------|:---------------------------------
-| description          | String             | Provides a user-visible description of the item. Read-write. Only on OneDrive Personal.
-| name                 | String             | The name of the item (filename and extension). Read-write.
 
 ### Request
 
@@ -119,6 +113,8 @@ Content-Type: application/json
 The response to this request, if successful, will provide the details for where the remainder of the requests should be sent as an [UploadSession](../resources/uploadsession.md) resource.
 
 This resource provides details about where the byte range of the file should be uploaded and when the upload session expires.
+
+If the `fileSize` parameter is specified and exceeds the available quota, a `507 Insufficent Storage` response will be returned and the upload session will not be created.
 
 <!-- { "blockType": "response", "@odata.type": "microsoft.graph.uploadSession",
        "optionalProperties": [ "nextExpectedRanges" ]  } -->
@@ -215,7 +211,11 @@ Content-Type: application/json
 ## Completing a file
 
 If `deferCommit` is false or unset, then the upload is automatically completed when the final byte range of the file is PUT to the upload URL.
-If `deferCommit` is true, then after the final byte range of the file is PUT to the upload URL, the upload should be explicitly completed by a final POST request to the upload url with zero-length content.
+
+If `deferCommit` is true, you can explicitly complete the upload in two ways:
+- After the final byte range of the file is PUT to the upload URL, send a final POST request to the upload URL with zero-length content (currently only supported on OneDrive for Business and SharePoint).
+- After the final byte range of the file is PUT to the upload URL, send a final PUT request in the same way that you would [handle upload errors](#handle-upload-errors) (currently only supported on OneDrive Personal).
+
 
 When the upload is completed, the server will respond to the final request with an `HTTP 201 Created` or `HTTP 200 OK`.
 The response body will also include the default property set for the **driveItem** representing the completed file.
@@ -360,7 +360,7 @@ To indicate that your app is committing an existing upload session, the PUT requ
 <!-- { "blockType": "ignored", "name": "explicit-upload-commit", "scopes": "files.readwrite", "tags": "service.graph" } -->
 
 ```http
-PUT /me/drive/root:/{path_to_parent}
+PUT /me/drive/root:/{path_to_file}
 Content-Type: application/json
 If-Match: {etag or ctag}
 

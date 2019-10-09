@@ -27,7 +27,7 @@ Contains properties for device run state of the device management script.
 ## Properties
 |Property|Type|Description|
 |:---|:---|:---|
-|id|String|Key of the device management script device state entity.|
+|id|String|Key of the device management script device state entity. This property is read-only.|
 |runState|[runState](../resources/intune-shared-runstate.md)|State of latest run of the device management script. Possible values are: `unknown`, `success`, `fail`, `error`, `pending`.|
 |resultMessage|String|Details of execution output.|
 |lastStateUpdateDateTime|DateTimeOffset|Latest time the device management script executes.|

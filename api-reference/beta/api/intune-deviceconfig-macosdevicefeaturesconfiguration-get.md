@@ -63,7 +63,7 @@ Here is an example of the response. Note: The response object shown here may be 
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 2428
+Content-Length: 2703
 
 {
   "value": {
@@ -131,12 +131,20 @@ Content-Length: 2428
     "restartDisabledWhileLoggedIn": true,
     "powerOffDisabledWhileLoggedIn": true,
     "logOutDisabledWhileLoggedIn": true,
-    "screenLockDisableImmediate": true
+    "screenLockDisableImmediate": true,
+    "associatedDomains": [
+      {
+        "@odata.type": "microsoft.graph.keyValuePair",
+        "name": "Name value",
+        "value": "Value value"
+      }
+    ],
+    "singleSignOnExtension": {
+      "@odata.type": "microsoft.graph.singleSignOnExtension"
+    }
   }
 }
 ```
-
-
 
 
 

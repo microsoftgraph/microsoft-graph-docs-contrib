@@ -16,7 +16,7 @@ doc_type: resourcePageType
 Intune will provide customer the ability to run their Powershell scripts on the enrolled windows 10 Azure Active Directory joined devices. The script can be run once or periodically.
 
 
-Inherits from [deviceManagementScript](../resources/intune-devices-devicemanagementscript.md)
+Inherits from [deviceManagementScript](../resources/intune-shared-devicemanagementscript.md)
 
 ## Methods
 |Method|Return Type|Description|
@@ -30,30 +30,29 @@ Inherits from [deviceManagementScript](../resources/intune-devices-devicemanagem
 ## Properties
 |Property|Type|Description|
 |:---|:---|:---|
-|id|String|Unique Identifier for the device management script. Inherited from [deviceManagementScript](../resources/intune-devices-devicemanagementscript.md)|
-|displayName|String|Name of the device management script. Inherited from [deviceManagementScript](../resources/intune-devices-devicemanagementscript.md)|
-|description|String|Optional description for the device management script. Inherited from [deviceManagementScript](../resources/intune-devices-devicemanagementscript.md)|
-|runSchedule|[runSchedule](../resources/intune-devices-runschedule.md)|The interval for script to run. If not defined the script will run once Inherited from [deviceManagementScript](../resources/intune-devices-devicemanagementscript.md)|
-|scriptContent|Binary|The script content. Inherited from [deviceManagementScript](../resources/intune-devices-devicemanagementscript.md)|
-|createdDateTime|DateTimeOffset|The date and time the device management script was created. Inherited from [deviceManagementScript](../resources/intune-devices-devicemanagementscript.md)|
-|lastModifiedDateTime|DateTimeOffset|The date and time the device management script was last modified. Inherited from [deviceManagementScript](../resources/intune-devices-devicemanagementscript.md)|
-|runAsAccount|[runAsAccountType](../resources/intune-shared-runasaccounttype.md)|Indicates the type of execution context. Inherited from [deviceManagementScript](../resources/intune-devices-devicemanagementscript.md). Possible values are: `system`, `user`.|
-|enforceSignatureCheck|Boolean|Indicate whether the script signature needs be checked. Inherited from [deviceManagementScript](../resources/intune-devices-devicemanagementscript.md)|
-|fileName|String|Script file name. Inherited from [deviceManagementScript](../resources/intune-devices-devicemanagementscript.md)|
-|roleScopeTagIds|String collection|List of Scope Tag IDs for this PowerShellScript instance. Inherited from [deviceManagementScript](../resources/intune-devices-devicemanagementscript.md)|
-|runAs32Bit|Boolean|A value indicating whether the PowerShell script should run as 32-bit Inherited from [deviceManagementScript](../resources/intune-devices-devicemanagementscript.md)|
+|id|String|Unique Identifier for the device management script. Inherited from [deviceManagementScript](../resources/intune-shared-devicemanagementscript.md)|
+|displayName|String|Name of the device management script. Inherited from [deviceManagementScript](../resources/intune-shared-devicemanagementscript.md)|
+|description|String|Optional description for the device management script. Inherited from [deviceManagementScript](../resources/intune-shared-devicemanagementscript.md)|
+|runSchedule|[runSchedule](../resources/intune-devices-runschedule.md)|The interval for script to run. If not defined the script will run once Inherited from [deviceManagementScript](../resources/intune-shared-devicemanagementscript.md)|
+|scriptContent|Binary|The script content. Inherited from [deviceManagementScript](../resources/intune-shared-devicemanagementscript.md)|
+|createdDateTime|DateTimeOffset|The date and time the device management script was created. This property is read-only. Inherited from [deviceManagementScript](../resources/intune-shared-devicemanagementscript.md)|
+|lastModifiedDateTime|DateTimeOffset|The date and time the device management script was last modified. This property is read-only. Inherited from [deviceManagementScript](../resources/intune-shared-devicemanagementscript.md)|
+|runAsAccount|[runAsAccountType](../resources/intune-shared-runasaccounttype.md)|Indicates the type of execution context. Inherited from [deviceManagementScript](../resources/intune-shared-devicemanagementscript.md). Possible values are: `system`, `user`.|
+|enforceSignatureCheck|Boolean|Indicate whether the script signature needs be checked. Inherited from [deviceManagementScript](../resources/intune-shared-devicemanagementscript.md)|
+|fileName|String|Script file name. Inherited from [deviceManagementScript](../resources/intune-shared-devicemanagementscript.md)|
+|roleScopeTagIds|String collection|List of Scope Tag IDs for this PowerShellScript instance. Inherited from [deviceManagementScript](../resources/intune-shared-devicemanagementscript.md)|
+|runAs32Bit|Boolean|A value indicating whether the PowerShell script should run as 32-bit Inherited from [deviceManagementScript](../resources/intune-shared-devicemanagementscript.md)|
 |complianceRule|[deviceHealthScriptComplianceRule](../resources/intune-devices-devicehealthscriptcompliancerule.md)|Not yet documented|
 |remediationScriptContent|Binary|Not yet documented|
-|runRemediationScript|Boolean|Not yet documented|
 
 ## Relationships
 |Relationship|Type|Description|
 |:---|:---|:---|
-|groupAssignments|[deviceManagementScriptGroupAssignment](../resources/intune-devices-devicemanagementscriptgroupassignment.md) collection|The list of group assignments for the device management script. Inherited from [deviceManagementScript](../resources/intune-devices-devicemanagementscript.md)|
-|assignments|[deviceManagementScriptAssignment](../resources/intune-devices-devicemanagementscriptassignment.md) collection|The list of group assignments for the device management script. Inherited from [deviceManagementScript](../resources/intune-devices-devicemanagementscript.md)|
-|runSummary|[deviceManagementScriptRunSummary](../resources/intune-devices-devicemanagementscriptrunsummary.md)|Run summary for device management script. Inherited from [deviceManagementScript](../resources/intune-devices-devicemanagementscript.md)|
-|deviceRunStates|[deviceManagementScriptDeviceState](../resources/intune-devices-devicemanagementscriptdevicestate.md) collection|List of run states for this script across all devices. Inherited from [deviceManagementScript](../resources/intune-devices-devicemanagementscript.md)|
-|userRunStates|[deviceManagementScriptUserState](../resources/intune-devices-devicemanagementscriptuserstate.md) collection|List of run states for this script across all users. Inherited from [deviceManagementScript](../resources/intune-devices-devicemanagementscript.md)|
+|groupAssignments|[deviceManagementScriptGroupAssignment](../resources/intune-devices-devicemanagementscriptgroupassignment.md) collection|The list of group assignments for the device management script. Inherited from [deviceManagementScript](../resources/intune-shared-devicemanagementscript.md)|
+|assignments|[deviceManagementScriptAssignment](../resources/intune-devices-devicemanagementscriptassignment.md) collection|The list of group assignments for the device management script. Inherited from [deviceManagementScript](../resources/intune-shared-devicemanagementscript.md)|
+|runSummary|[deviceManagementScriptRunSummary](../resources/intune-devices-devicemanagementscriptrunsummary.md)|Run summary for device management script. Inherited from [deviceManagementScript](../resources/intune-shared-devicemanagementscript.md)|
+|deviceRunStates|[deviceManagementScriptDeviceState](../resources/intune-devices-devicemanagementscriptdevicestate.md) collection|List of run states for this script across all devices. Inherited from [deviceManagementScript](../resources/intune-shared-devicemanagementscript.md)|
+|userRunStates|[deviceManagementScriptUserState](../resources/intune-devices-devicemanagementscriptuserstate.md) collection|List of run states for this script across all users. Inherited from [deviceManagementScript](../resources/intune-shared-devicemanagementscript.md)|
 
 ## JSON Representation
 Here is a JSON representation of the resource.
@@ -88,8 +87,7 @@ Here is a JSON representation of the resource.
     "operator": "String",
     "detectionValue": "String"
   },
-  "remediationScriptContent": "binary",
-  "runRemediationScript": true
+  "remediationScriptContent": "binary"
 }
 ```
 
