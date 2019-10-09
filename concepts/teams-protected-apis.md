@@ -13,6 +13,7 @@ These APIs require that you have additional validation, beyond permissions and c
 
 The following APIs are currently protected:
 * [List channel messages](/graph/api/channel-list-messages?view=graph-rest-beta) using [application permissions](auth/auth-concepts.md#microsoft-graph-permissions)
+* [Get chatMessages in a channel delta](../api/chatmessage-delta.md) using [application permissions](auth/auth-concepts.md#microsoft-graph-permissions)
 * [Get channel message](/graph/api/channel-get-message?view=graph-rest-beta) using [application permissions](auth/auth-concepts.md#microsoft-graph-permissions)
 * [List replies to a message](/graph/api/channel-list-messagereplies?view=graph-rest-beta) using [application permissions](auth/auth-concepts.md#microsoft-graph-permissions)
 * [Get a reply to a message](/graph/api/channel-get-messagereply?view=graph-rest-beta) using [application permissions](auth/auth-concepts.md#microsoft-graph-permissions)
