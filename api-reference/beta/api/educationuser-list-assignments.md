@@ -88,6 +88,7 @@ Content-length: 344
       "assignTo": {"@odata.type": "microsoft.graph.educationAssignmentRecipient"},
       "assignedDateTime": "2014-01-01T00:00:00Z",
       "classId": "11010",
+      "closeDateTime": "2014-01-11T00:00:00Z",
       "createdBy": {
         "user": {
             "displayName": "Susana Rocha",
