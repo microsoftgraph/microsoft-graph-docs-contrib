@@ -28,7 +28,7 @@ This resource supports:
 |[List applications](../api/application-list.md) | application | Retrieve the list of applications in the organization. |
 |[Update application](../api/application-update.md) | application |Update application object. |
 |[Delete application](../api/application-delete.md) | None |Delete application object. |
-|[List deleted applications](../api/directory-deleteditems-list.md) | application | Retrieve of a list of recently deleted applications. |
+|[List deleted applications](../api/directory-deleteditems-list.md) | application | Retrieve a list of recently deleted applications. |
 |[Get deleted application](../api/directory-deleteditems-get.md) | application | Retrieve the properties of a recently deleted application. |
 |[Permanently delete application](../api/directory-deleteditems-delete.md) | application | Permanently delete an applications. |
 |[Restore deleted application](../api/directory-deleteditems-restore.md) | application | Restore a recently deleted application. |
