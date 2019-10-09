@@ -17,8 +17,8 @@ For details about known issues with Microsoft Graph APIs, see [Known issues](kno
 
 | **Change type** | **Version** | **Description**                  |
 |:----------------|:------------|:-----------------------------------------|
-| Addition | Beta | Added the **securityIdentifier** property to the [group](/graph/api/resources/group?view=graph-rest-beta) resource. |
-| Addition | Beta | Added the **mdmAppId** property to the [device](/graph/api/resources/group?view=graph-rest-beta) resource. |
+| Addition | beta and v1.0 | Added the **securityIdentifier** property to the [group](/graph/api/resources/group?view=graph-rest-1.0) resource. |
+| Addition | beta and v1.0 | Added the **mdmAppId** property to the [device](/graph/api/resources/group?view=graph-rest-1.0) resource. |
 
 ### Mail (Outlook)
 
