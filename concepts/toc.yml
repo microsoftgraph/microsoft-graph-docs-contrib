@@ -391,7 +391,7 @@ items:
             href: sdks/create-client.md
           - name: Choose an authentication provider
             href: sdks/choose-authentication-providers.md
-      - name: Use the toolkit (preview)
+      - name: Use the toolkit
         items:
           - name: Toolkit overview
             href: toolkit/overview.md

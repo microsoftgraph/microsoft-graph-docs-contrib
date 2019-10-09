@@ -45,6 +45,7 @@ The assignment APIs are exposed in the class namespace.
 |assignTo|[educationAssignmentRecipient](educationassignmentrecipient.md)| Which users, or whole class should receive a submission object once the assignment is published. |
 |assignedDateTime|DateTimeOffset|The moment that the assignment was published to students and the assignment shows up on the students timeline.  The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 would look like this: `'2014-01-01T00:00:00Z'`|
 |classId|String| Class which this assignment belongs. |
+|closeDateTime|DateTimeOffset| Date when the assignment will be closed for submissions. This is an optional field that can be null if the assignment does not allowLateSubmissions or when the closeDateTime is the same as the dueDateTime. But if specified, then the closeDateTime must be greater than or equal to the dueDateTime. The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 would look like this: `'2014-01-01T00:00:00Z'`|
 |createdBy|[identitySet](identityset.md)| Who created the assignment. |
 |createdDateTime|DateTimeOffset|Moment when the assignment was created.  The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 would look like this: `'2014-01-01T00:00:00Z'`|
 |displayName|String|Name of the assignment.|
@@ -53,7 +54,7 @@ The assignment APIs are exposed in the class namespace.
 |instructions|[itemBody](itembody.md)| Instructions for the assignment.  This along with the display name tell the student what to do. |
 |lastModifiedBy|[identitySet](identityset.md)| Who last modified the assignment. |
 |lastModifiedDateTime|DateTimeOffset|Moment when the assignment was last modified.  The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 would look like this: `'2014-01-01T00:00:00Z'`|
-|status|string| Status of the **Assignment**.  You can not PATCH this value.  Possible values are: `draft`, `published`, `assigned`.|
+|status|string| Status of the **Assignment**.  You can not PATCH this value.  Possible values are: `draft`, `scheduled`, `published`, `assigned`.|
 
 ## Relationships
 | Relationship | Type	|Description|
@@ -85,6 +86,7 @@ The following is a JSON representation of the resource.
   "assignTo": {"@odata.type": "microsoft.graph.educationAssignmentRecipient"},
   "assignedDateTime": "String (timestamp)",
   "classId": "String",
+  "closeDateTime": "String (timestamp)",
   "createdBy": {"@odata.type": "microsoft.graph.identitySet"},
   "createdDateTime": "String (timestamp)",
   "displayName": "String",
