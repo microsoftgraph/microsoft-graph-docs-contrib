@@ -13,24 +13,36 @@ doc_type: "resourcePageType"
 
 In Azure AD Entitlement Management, an access package assignment policy specifies the policy by which subjects may request or be assigned an access package via an access package assignment.  An access package can have zero or more policies.  When a request from a subject is received, the subject is matched against each policy to find the policy (if any) for that subject.   The policy then determines whether the request requires approval, and the duration of the access package assignment.
 
-
 ## Methods
 
 | Method       | Return Type | Description |
 |:-------------|:------------|:------------|
 | [Get accessPackageAssignmentPolicy](../api/accesspackageassignmentpolicy-get.md) | [accessPackageAssignmentPolicy](accesspackageassignmentpolicy.md) | Read properties and relationships of an accessPackageAssignmentPolicy object. |
+| [List accessPackageAssignmentPolicies](../api/accesspackageassignmentpolicy-list.md) | [accessPackageAssignmentPolicy](accesspackageassignmentpolicy.md) collection | Retrieve a list of accessPackageAssignmentPolicy objects. |
 
 ## Properties
 
 | Property     | Type        | Description |
 |:-------------|:------------|:------------|
-
+|accessPackageId|String|Id of the access package.|
+|canExtend|Boolean|Whether a user can extend the access package assignment duration after approval.|
+|createdBy|String|Read-only.|
+|createdDateTime|DateTimeOffset|The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 would look like this: `'2014-01-01T00:00:00Z'`|
+|description|String|The description of the policy.|
+|displayName|String|The display name of the policy.|
+|durationInDays|Int32|The number of days in which assignments from this policy last until they are expired.|
+|expirationDateTime|DateTimeOffset|The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 would look like this: `'2014-01-01T00:00:00Z'`|
+|id|String| Read-only.|
+|isEnabled|Boolean|Can this policy be used for new requests.|
+|isRequestorJustificationRequired|Boolean|Is the requestor required to provide a justification.|
+|modifiedBy|String|Read-only.|
+|modifiedDateTime|DateTimeOffset|The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 would look like this: `'2014-01-01T00:00:00Z'`|
 
 ## Relationships
 
 | Relationship | Type        | Description |
 |:-------------|:------------|:------------|
-
+|accessPackage|[accessPackage](accesspackage.md)| The access package with this policy. Read-only. Nullable.|
 
 ## JSON representation
 
@@ -48,7 +60,13 @@ The following is a JSON representation of the resource.
 
 ```json
 {
-
+    "id": "b2eba9a1-b357-42ee-83a8-336522ed6cbf",
+    "accessPackageId": "1b153a13-76da-4d07-9afa-c6c2b1f2e824",
+    "displayName": "All Users",
+    "description": "All users can request for access to the directory.",
+    "isEnabled": false,
+    "canExtend": false,
+    "durationInDays": 365
 }
 ```
 

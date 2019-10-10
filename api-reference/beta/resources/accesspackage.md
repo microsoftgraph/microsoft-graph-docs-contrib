@@ -19,14 +19,14 @@ In Azure AD Entitlement Management, an access package defines the collections of
 | Method       | Return Type | Description |
 |:-------------|:------------|:------------|
 | [Get accessPackage](../api/accesspackage-get.md) | [accessPackage](accesspackage.md) | Read properties and relationships of an accessPackage object. |
-
+| [List accessPackages](../api/accesspackage-list.md) | [accessPackage](accesspackage.md) collection | Retrieve a list of accesspackage objects. |
 
 ## Properties
 
 | Property     | Type        | Description |
 |:-------------|:------------|:------------|
-|catalogId|String|ID of the access package catalog. Read-only.|
-|createdBy|String|UPN of the user who created this resource. Read-only.|
+|catalogId|String|ID of the access package catalog containing this access package. Read-only.|
+|createdBy|String|UPN of the user or identity of the subject who created this resource. Read-only.|
 |createdDateTime|DateTimeOffset|The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 would look like this: `'2014-01-01T00:00:00Z'`. Read-only.|
 |description|String|The description of the access package.|
 |displayName|String|The display name of the access package.|

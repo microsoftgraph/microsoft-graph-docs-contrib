@@ -23,12 +23,19 @@ In Azure AD Entitlement Management, an access package assignment resource role i
 
 | Property     | Type        | Description |
 |:-------------|:------------|:------------|
-
+|id|String| Read-only.|
+|originId|String|A unique identifier relative to the origin system. |
+|originSystem|String|The system where the role assignment is to be created for an access package assignment.|
+|status|String|The value is `Fulfilled` when the access package assignment has been delivered to the origin system.|
 
 ## Relationships
 
 | Relationship | Type        | Description |
 |:-------------|:------------|:------------|
+|accessPackageAssignments|[accessPackageAssignment](accesspackageassignment.md) collection| The access package assignments resulting in this role assignment. Read-only. Nullable.|
+|accessPackageResourceRole|[accessPackageResourceRole](accesspackageresourcerole.md)| Read-only. Nullable.|
+|accessPackageResourceScope|[accessPackageResourceScope](accesspackageresourcescope.md)| Read-only. Nullable.|
+|accessPackageSubject|[accessPackageSubject](accesspackagesubject.md)| Read-only. Nullable.|
 
 
 ## JSON representation
@@ -47,7 +54,10 @@ The following is a JSON representation of the resource.
 
 ```json
 {
-
+  "id": "String (identifier)",
+  "originId": "String",
+  "originSystem": "String",
+  "status": "String"
 }
 ```
 

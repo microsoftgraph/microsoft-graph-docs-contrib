@@ -11,7 +11,7 @@ doc_type: "apiPageType"
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Retrieve the properties and relationships of an accesspackageassignmentpolicy object.
+Retrieve the properties and relationships of an accessPackageAssignmentPolicy object.
 
 ## Permissions
 
@@ -82,12 +82,13 @@ HTTP/1.1 200 OK
 Content-type: application/json
 
 {
-  "id": "id-value",
-  "userType": "userType-value",
-  "accessPackageId": "accessPackageId-value",
-  "displayName": "displayName-value",
-  "description": "description-value",
-  "isEnabled": true
+  "id": "b2eba9a1-b357-42ee-83a8-336522ed6cbf",
+  "accessPackageId": "1b153a13-76da-4d07-9afa-c6c2b1f2e824",
+  "displayName": "All Users",
+  "description": "All users can request for access to the directory.",
+  "isEnabled": false,
+  "canExtend": false,
+  "durationInDays": 365
 }
 ```
 

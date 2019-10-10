@@ -8113,6 +8113,8 @@
           items:
           - name: Get accessPackage
             href: api/accesspackage-get.md
+          - name: List accessPackages
+            href: api/accesspackage-list.md
         - name: Access package assignment
           href: resources/accesspackageassignment.md
         - name: Access package assignment policy
@@ -8120,11 +8122,15 @@
           items:
           - name: Get accessPackageAssignmentPolicy
             href: api/accesspackageassignmentpolicy-get.md
+          - name: List accessPackageAssignmentPolicies
+            href: api/accesspackageassignmentpolicy-list.md
         - name: Access package assignment request
           href: resources/accesspackageassignmentrequest.md
           items:
           - name: Get accessPackageAssignmentRequest
             href: api/accesspackageassignmentrequest-get.md
+          - name: List accessPackageAssignmentRequests
+            href: api/accesspackageassignmentrequest-list.md
         - name: Access package assignement resource role
           href: resources/accesspackageassignmentresourcerole.md
         - name: Access package catalog
@@ -8132,6 +8138,8 @@
           items:
           - name: Get accessPackageCatalog
             href: api/accesspackagecatalog-get.md
+          - name: List accessPackageCatalogs
+            href: api/accesspackagecatalog-list.md
       - name: Feature rollout policy
         href: resources/featurerolloutpolicy.md
         items:

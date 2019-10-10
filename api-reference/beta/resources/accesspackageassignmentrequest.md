@@ -19,17 +19,28 @@ In Azure AD Entitlement Management, an access package assignment request is crea
 | Method       | Return Type | Description |
 |:-------------|:------------|:------------|
 | [Get accessPackageAssignmentRequest](../api/accesspackageassignmentrequest-get.md) | [accessPackageAssignmentRequest](accesspackageassignmentrequest.md) | Read properties and relationships of an accessPackageAssignmentRequest object. |
+| [List accessPackageAssignmentRequests](../api/accesspackageassignmentrequest-list.md) | [accessPackageAssignmentRequest](accesspackageassignmentrequest.md) collection | Retrieve a list of accesspackageassignmentrequest objects. |
 
 ## Properties
 
 | Property     | Type        | Description |
 |:-------------|:------------|:------------|
+|completedDate|DateTimeOffset|The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 would look like this: `'2014-01-01T00:00:00Z'`|
+|createdDateTime|DateTimeOffset|The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 would look like this: `'2014-01-01T00:00:00Z'`|
+|expirationDateTime|DateTimeOffset|The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 would look like this: `'2014-01-01T00:00:00Z'`|
+|id|String| Read-only.|
+|isValidationOnly|Boolean||
+|justification|String|The requestor's supplied justification.|
+|requestState|String||
+|requestStatus|String||
+|requestType|String||
 
 
 ## Relationships
 
 | Relationship | Type        | Description |
 |:-------------|:------------|:------------|
+|requestor|[accessPackageSubject](accesspackagesubject.md)| The subject who requested or, if a direct assignment, was assigned. Read-only. Nullable.|
 
 
 ## JSON representation

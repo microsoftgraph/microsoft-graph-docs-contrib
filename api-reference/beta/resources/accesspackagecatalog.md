@@ -19,6 +19,7 @@ In Azure AD Entitlement Management, an access package catalog is a container for
 | Method       | Return Type | Description |
 |:-------------|:------------|:------------|
 | [Get accessPackageCatalog](../api/accesspackagecatalog-get.md) | [accessPackageCatalog](accesspackagecatalog.md) | Read properties and relationships of an accessPackageCatalog object. |
+| [List accessPackageCatalogs](../api/accesspackagecatalog-list.md) | [accessPackageCatalog](accesspackagecatalog.md) collection | Retrieve a list of accesspackagecatalog objects. |
 
 ## Properties
 
@@ -40,7 +41,8 @@ In Azure AD Entitlement Management, an access package catalog is a container for
 
 | Relationship | Type        | Description |
 |:-------------|:------------|:------------|
-|accessPackages|[accessPackage](accesspackage.md) collection| Read-only. Nullable.|
+|accessPackages|[accessPackage](accesspackage.md) collection| The access packages in this catalog. Read-only. Nullable.|
+|accessPackageResources|[accessPackageResource](accesspackageresource.md) collection| Read-only. Nullable.|
 
 ## JSON representation
 
