@@ -1,6 +1,6 @@
 ---
 title: "accessPackageResourceRoleScope resource type"
-description: "PROVIDE DESCRIPTION HERE"
+description: "an access package resource role scope is a reference to both a scope within a resource, and a role in that resource"
 localization_priority: Normal
 author: "markwahl-msft"
 ms.prod: "microsoft-identity-platform"
@@ -11,13 +11,7 @@ doc_type: "resourcePageType"
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-In Azure AD Entitlement Management, a access package resource role scope is a reference to a scope within a resource, and a role in that resource.
-
-## Methods
-
-| Method       | Return Type | Description |
-|:-------------|:------------|:------------|
-
+In Azure AD Entitlement Management, an access package resource role scope is a reference to both a scope within a resource, and a role in that resource.
 
 ## Properties
 
