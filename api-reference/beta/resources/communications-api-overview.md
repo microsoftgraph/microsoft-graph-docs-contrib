@@ -14,13 +14,13 @@ localization_priority: Priority
 The Microsoft Graph communications API adds a new dimension to how you or your organization can interact with other users by enabling core communication capabilities and features in your apps and services. You can use this API to create and receive calls, create and retrieve meeting coordinates, and check users' presence.
 
 You can use the communications API to build service applications (bots) that act like participants in a call, and that create and retrieve meetings on behalf of users. <!-- and to check presence availability and activity of users. -->
-These APIs provide calling functionality as well as the ability to create and retrieve online meetings. You can use service applications (bots) with these APIs, where the bot can act as a participant in your VoIP calls or Microsoft Teams meetings, for example.
+This API provides calling functionality as well as the ability to create and retrieve online meetings. You can use service applications (bots) with this API, where the bot can act as a participant in your VoIP calls or Microsoft Teams meetings, for example.
 
 ## Authorization
 
-One of the following [permissions](https://docs.microsoft.com/en-us/graph/permissions-reference#calls-permissions) is required to access Communication APIs. These permissions need to be granted by the administrator
+One of the following [permissions](https://docs.microsoft.com/en-us/graph/permissions-reference#calls-permissions) is required to access the communications API. These permissions need to be granted by the administrator
 
-| Type of permission                  | Permissions                                  |
+| Scenario                 | Permissions                                  |
 |:------------------------------------|:---------------------------------------------|
 | Calling                 | Calls.JoinGroupCallsasGuest.All, Calls.JoinGroupCalls.All, Calls.Initiate.All, Calls.InitiateGroupCalls.All, Calls.AccessMedia.All |
 | Meetings                 | OnlineMeetings.ReadWrite.All, OnlineMeetings.Read.All |
@@ -36,18 +36,16 @@ The following table lists some of the common uses for the communications API.
 | Call controls (participant) | [Participant](https://docs.microsoft.com/en-us/graph/api/resources/participant?view=graph-rest-beta)   ||
 |Meetings|[onlineMeeting](https://docs.microsoft.com/en-us/graph/api/resources/onlinemeeting?view=graph-rest-beta)| [Methods for Meetings](https://docs.microsoft.com/en-us/graph/api/resources/onlinemeeting?view=graph-rest-beta#methods)|
 
-## Common Properties
+## Common properties
 
-| Types of properties                 | REST resources                             |
+| Resource                | Properties                             |
 |:------------------------------------|:---------------------------------------------|
-| Calls                               | [Call property](https://docs.microsoft.com/en-us/graph/api/resources/call?view=graph-rest-beta#properties)  |
-| Participant                         | [Participant property](https://docs.microsoft.com/en-us/graph/api/resources/participant?view=graph-rest-beta#properties) |
-| Meetings                            | [Meeting property](https://docs.microsoft.com/en-us/graph/api/resources/onlinemeeting?view=graph-rest-beta#properties)                     |
+| call                               | [Call properties](https://docs.microsoft.com/en-us/graph/api/resources/call?view=graph-rest-beta#properties)  |
+| participant                         | [Participant properties](https://docs.microsoft.com/en-us/graph/api/resources/participant?view=graph-rest-beta#properties) |
+| onlineMeeting                            | [onlineMeeting properties](https://docs.microsoft.com/en-us/graph/api/resources/onlinemeeting?view=graph-rest-beta#properties)                     |
 
 ## See also
 
-[Communications API samples](https://github.com/microsoftgraph/microsoft-graph-comms-samples/)
-
-[Communication Signaling SDK](https://www.nuget.org/packages/Microsoft.Graph.Communications.Calls/1.0.0-prerelease.494)
-
-[Communication Media SDK](https://www.nuget.org/packages/Microsoft.Graph.Communications.Calls.Media/1.0.0-prerelease.494)
+- [Communications API samples](https://github.com/microsoftgraph/microsoft-graph-comms-samples/)
+- [Communication Signaling SDK](https://www.nuget.org/packages/Microsoft.Graph.Communications.Calls/1.0.0-prerelease.494)
+- [Communication Media SDK](https://www.nuget.org/packages/Microsoft.Graph.Communications.Calls.Media/1.0.0-prerelease.494)
