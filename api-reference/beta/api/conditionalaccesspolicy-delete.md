@@ -28,7 +28,7 @@ One of the following permissions is required to call this API. To learn more, in
 <!-- { "blockType": "ignored" } -->
 
 ```http
-DELETE /conditionalaccess/policies/{id}
+DELETE /conditionalAccess/policies/{id}
 ```
 
 ## Request headers
@@ -56,7 +56,7 @@ The following is an example of the request.
 }-->
 
 ```http
-DELETE https://graph.microsoft.com/beta/conditionalAccess/policies/7960c36c-ee7e-449f-8d1b-aa09046a9bc3
+DELETE https://graph.microsoft.com/beta/conditionalAccess/policies/{id}
 ```
 
 ### Response

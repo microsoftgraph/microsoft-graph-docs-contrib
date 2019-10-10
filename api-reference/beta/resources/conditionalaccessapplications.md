@@ -11,14 +11,14 @@ doc_type: resourcePageType
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Represents applications and user actions included in and excluded from the policy scope.
+Represents the applications and user actions included in and excluded from the policy.
 
 ## Properties
 
 | Property | Type | Description |
 |:-------- |:---- |:----------- |
-| includeApplications | String collection | Application IDs (could be 'All') in scope of policy unless explicitly excluded. |
-| excludeApplications | String collection | Application IDs excluded from scope of policy. |
+| includeApplications | String collection | The list of application IDs the policy applies to, unless explicitly excluded (in excludeApplications). Can also be set to 'All'. |
+| excludeApplications | String collection | The list of application IDs explicitly excluded from the policy. |
 | includeUserActions | String collection | User actions to include (e.g. 'urn:user:registersecurityinfo') |
 
 ## Relationships

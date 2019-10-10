@@ -921,7 +921,6 @@ Possible values for user account types (group membership), per Windows definitio
 |mcasConfigured|0|
 |monitorOnly|1|
 |blockDownloads|2|
-|protectDownloads|3|
 
 ### signinFrequencyType
 
