@@ -44,7 +44,6 @@ The following table lists some of the common operations in the Communications AP
 
 ## See also
 
-Learn about Communications APIs
 
 [Communication API samples](https://github.com/microsoftgraph/microsoft-graph-comms-samples/)
 
