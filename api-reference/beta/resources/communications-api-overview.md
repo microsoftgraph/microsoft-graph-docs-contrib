@@ -18,7 +18,7 @@ These APIs provide calling functionality as well as the ability to create and re
 
 One of the following [permissions](https://docs.microsoft.com/en-us/graph/permissions-reference#calls-permissions) is required to access Communication APIs. These permissions need to be granted by the administrator
 
-| Type of Permission                  | Permissions                                  |
+| Type of permission                  | Permissions                                  |
 |:------------------------------------|:---------------------------------------------|
 | Calling Permissions                 | Calls.JoinGroupCallsasGuest.All, Calls.JoinGroupCalls.All, Calls.Initiate.All, Calls.InitiateGroupCalls.All, Calls.AccessMedia.All |
 | Meetings Permissions                | OnlineMeetings.ReadWrite.All, OnlineMeetings.Read.All |
