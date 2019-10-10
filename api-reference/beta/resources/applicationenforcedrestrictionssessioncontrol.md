@@ -17,7 +17,7 @@ Session control to enforce application restrictions.
 
 | Property     | Type        | Description |
 |:-------------|:------------|:------------|
-|isEnabled     |Boolean      | Specifies whether the session control is enabled. Possible values: true, false. |
+|isEnabled     |Boolean      | Specifies whether the session control is enabled or not. |
 
 ## Relationships
 

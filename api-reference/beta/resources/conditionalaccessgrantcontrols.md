@@ -20,7 +20,7 @@ Represents grant controls that must be fulfilled to pass the policy.
 | operator | String | Defines the relationship of the grant controls. Possible values: `AND`, `OR`. |
 | builtInControls | String collection | List of values of built-in controls specified by the policy. Possible values: `Block`, `Mfa`, `CompliantDevice`, `DomainJoinedDevice`, `ApprovedApplication`, `CompliantApplication` |
 | customAuthenticationFactors | String collection | List of custom controls IDs specified by the policy. |
-| termsOfUse | String collection | List of terms of use specified by the policy. |
+| termsOfUse | String collection | List of terms of use IDs specified by the policy. [Terms of use reference](agreement.md). |
 
 ## Relationships
 

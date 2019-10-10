@@ -17,13 +17,13 @@ Represents the type of conditions that govern when the policy applies.
 
 | Property     | Type        | Description |
 |:-------------|:------------|:------------|
-|applications|[conditionalAccessApplications](conditionalaccessapplications.md)| Applications and user actions included in and excluded from the policy scope. Required. |
-|users|[conditionalAccessUsers](conditionalaccessusers.md)| Users, groups, and roles included in and excluded from the policy scope. Required. |
-|clientAppTypes|String collection| Client application types included in the policy scope. Possible values are: `browser`, `modern`, `easSupported`, `easUnsupported`, `other`.|
-|deviceStates|[conditionalAccessDeviceStates](conditionalaccessdevicestates.md)| Device states in the policy scope. |
-|locations|[conditionalAccessLocations](conditionalaccesslocations.md)| Locations included in and excluded from the policy scope. |
-|platforms|[conditionalAccessPlatforms](conditionalaccessplatforms.md)| Platforms included in and excluded from the policy scope. |
-|signInRiskLevels|String collection| Risk levels included in the policy scope. Possible values are: `low`, `medium`, `high`, `hidden`, `none`, `unknownFutureValue`.|
+|applications|[conditionalAccessApplications](conditionalaccessapplications.md)| Applications and user actions included in and excluded from the policy. Required. |
+|users|[conditionalAccessUsers](conditionalaccessusers.md)| Users, groups, and roles included in and excluded from the policy. Required. |
+|clientAppTypes|String collection| Client application types included in the policy. Possible values are: `browser`, `modern`, `easSupported`, `easUnsupported`, `other`.|
+|deviceStates|[conditionalAccessDeviceStates](conditionalaccessdevicestates.md)| Device states in the policy. |
+|locations|[conditionalAccessLocations](conditionalaccesslocations.md)| Locations included in and excluded from the policy. |
+|platforms|[conditionalAccessPlatforms](conditionalaccessplatforms.md)| Platforms included in and excluded from the policy. |
+|signInRiskLevels|String collection| Risk levels included in the policy. Possible values are: `low`, `medium`, `high`, `hidden`, `none`, `unknownFutureValue`.|
 
 ## Relationships
 

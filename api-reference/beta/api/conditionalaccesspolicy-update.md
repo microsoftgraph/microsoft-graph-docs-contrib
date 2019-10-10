@@ -28,7 +28,7 @@ One of the following permissions is required to call this API. To learn more, in
 <!-- { "blockType": "ignored" } -->
 
 ```http
-PATCH /conditionalaccess/policies/{id}
+PATCH /conditionalAccess/policies/{id}
 ```
 
 ## Request headers
@@ -59,7 +59,7 @@ The following is an example of the request.
 }-->
 
 ```http
-PATCH https://graph.microsoft.com/beta/conditionalAccess/policies/6b5e999b-0ba8-4186-a106-e0296c1c4358
+PATCH https://graph.microsoft.com/beta/conditionalAccess/policies/{id}
 Content-type: application/json
 
 {

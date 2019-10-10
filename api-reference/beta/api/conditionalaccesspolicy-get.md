@@ -28,7 +28,7 @@ One of the following permissions is required to call this API. To learn more, in
 <!-- { "blockType": "ignored" } -->
 
 ```http
-GET /conditionalaccess/policies/{id}
+GET /conditionalAccess/policies/{id}
 ```
 
 ## Optional query parameters
@@ -60,7 +60,7 @@ The following is an example of the request.
 }-->
 
 ```http
-GET https://graph.microsoft.com/beta/conditionalAccess/policies/6b5e999b-0ba8-4186-a106-e0296c1c4358
+GET https://graph.microsoft.com/beta/conditionalAccess/policies/{id}
 ```
 
 ### Response
