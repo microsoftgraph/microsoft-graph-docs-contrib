@@ -18,7 +18,7 @@ Currently, deleted items functionality is only supported for the [application](.
 ## Permissions
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
 
-* For applications: Application.ReadWrite.OwnedBy, Application.ReadWrite.All, Directory.ReadWrite.All, Directory.AccessAsUser.All
+* For applications: Application.ReadWrite.OwnedBy, Application.ReadWrite.All, Directory.AccessAsUser.All
 * For users: User.ReadWrite.All, Directory.AccessAsUser.All
 * For groups: Group.ReadWrite.All, Directory.AccessAsUser.All
 

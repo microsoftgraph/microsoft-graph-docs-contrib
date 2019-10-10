@@ -35,7 +35,7 @@ POST /applications
 | Authorization  | string  | Bearer {token}. Required. |
 
 ## Request body
-In the request body, supply a JSON representation of [application](../resources/application.md) object.
+In the request body, supply a JSON representation of [application](../resources/application.md) object. The request body must contain at least `displayName` which is a required property.
 
 ## Response
 

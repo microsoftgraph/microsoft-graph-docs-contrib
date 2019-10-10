@@ -4,7 +4,7 @@ description: "Specifies settings for non Web App or Web Api. (e.g. Mobile or oth
 localization_priority: Normal
 doc_type: resourcePageType
 ms.prod: ""
-author: ""
+author: "davidmu1"
 ---
 
 # publicClientApplication resource type
@@ -17,7 +17,7 @@ Specifies settings for non Web App or Web Api. (e.g. Mobile or other public clie
 
 | Property | Type | Description |
 |:---------------|:--------|:----------|
-|redirectUris|String collection| Specifies the URLs that user tokens are sent to for sign in, or the redirect URIs that OAuth 2.0 authorization codes and access tokens are sent to. |
+|redirectUris|String collection| Specifies the URLs where user tokens are sent for sign-in, or the redirect URIs where OAuth 2.0 authorization codes and access tokens are sent. |
 
 ## JSON representation
 Here is a JSON representation of the resource.
