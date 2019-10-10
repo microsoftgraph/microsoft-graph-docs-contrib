@@ -7,7 +7,7 @@ ms.prod: "microsoft-identity-platform"
 doc_type: "apiPageType"
 ---
 
-# appliservicePrincipalcation: removePassword
+# servicePrincipal: removePassword
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
