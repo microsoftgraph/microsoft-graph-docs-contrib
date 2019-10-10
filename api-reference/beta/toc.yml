@@ -8127,6 +8127,8 @@
         - name: Access package assignment request
           href: resources/accesspackageassignmentrequest.md
           items:
+          - name: Create accessPackageAssignmentRequest
+            href: api/accesspackageassignmentrequest-post.md
           - name: Get accessPackageAssignmentRequest
             href: api/accesspackageassignmentrequest-get.md
           - name: List accessPackageAssignmentRequests
