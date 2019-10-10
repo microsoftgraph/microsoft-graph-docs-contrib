@@ -792,8 +792,8 @@
             href: api/place-list.md
           - name: Get place
             href: api/place-get.md
-    - name: Cloud Communications
-      displayName: Cloud Communications
+    - name: Cloud communications
+      displayName: Cloud communications
       items:
       - name: Overview
         href: resources/communications-api-overview.md
