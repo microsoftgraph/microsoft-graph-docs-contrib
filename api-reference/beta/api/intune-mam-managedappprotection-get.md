@@ -16,7 +16,7 @@ doc_type: apiPageType
 Read properties and relationships of the [managedAppProtection](../resources/intune-mam-managedappprotection.md) object.
 
 ## Prerequisites
-One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
+One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference.md).
 
 |Permission type|Permissions (from most to least privileged)|
 |:---|:---|
@@ -63,7 +63,7 @@ Here is an example of the response. Note: The response object shown here may be 
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 2112
+Content-Length: 2249
 
 {
   "value": {
@@ -111,10 +111,14 @@ Content-Length: 2112
     "appActionIfMaximumPinRetriesExceeded": "wipe",
     "pinRequiredInsteadOfBiometricTimeout": "-PT3M9.8396734S",
     "allowedOutboundClipboardSharingExceptionLength": 14,
-    "notificationRestriction": "blockOrganizationalData"
+    "notificationRestriction": "blockOrganizationalData",
+    "previousPinBlockCount": 5,
+    "maximumAllowedDeviceThreatLevel": "secured",
+    "mobileThreatDefenseRemediationAction": "wipe"
   }
 }
 ```
+
 
 
 

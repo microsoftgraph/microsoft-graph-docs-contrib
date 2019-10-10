@@ -16,7 +16,7 @@ doc_type: apiPageType
 List properties and relationships of the [iosGeneralDeviceConfiguration](../resources/intune-deviceconfig-iosgeneraldeviceconfiguration.md) objects.
 
 ## Prerequisites
-One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
+One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference.md).
 
 |Permission type|Permissions (from most to least privileged)|
 |:---|:---|
@@ -59,7 +59,7 @@ Here is an example of the response. Note: The response object shown here may be 
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 11797
+Content-Length: 11878
 
 {
   "value": [
@@ -334,6 +334,9 @@ Content-Length: 11797
       "airPrintBlockCredentialsStorage": true,
       "airPrintForceTrustedTLS": true,
       "airPrintBlockiBeaconDiscovery": true,
+      "filesNetworkDriveAccessBlocked": true,
+      "filesUsbDriveAccessBlocked": true,
+      "wifiPowerOnForced": true,
       "blockSystemAppRemoval": true,
       "vpnBlockCreation": true,
       "appRemovalBlocked": true,
@@ -349,12 +352,12 @@ Content-Length: 11797
       "continuousPathKeyboardBlocked": true,
       "findMyDeviceInFindMyAppBlocked": true,
       "findMyFriendsInFindMyAppBlocked": true,
-      "wiFiBlockPowerModification": true,
       "iTunesBlocked": true
     }
   ]
 }
 ```
+
 
 
 

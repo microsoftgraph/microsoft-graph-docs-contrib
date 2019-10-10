@@ -16,7 +16,7 @@ doc_type: apiPageType
 Not yet documented
 
 ## Prerequisites
-One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
+One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference.md).
 
 |Permission type|Permissions (from most to least privileged)|
 |:---|:---|
@@ -54,6 +54,7 @@ The following table shows the parameters that can be used with this action.
 |deviceIds|String collection|Not yet documented|
 |notificationTitle|String|Not yet documented|
 |notificationBody|String|Not yet documented|
+|deviceName|String|Not yet documented|
 
 
 
@@ -68,7 +69,7 @@ Here is an example of the request.
 POST https://graph.microsoft.com/beta/deviceManagement/managedDevices/executeAction
 
 Content-type: application/json
-Content-length: 236
+Content-length: 274
 
 {
   "actionName": "delete",
@@ -78,7 +79,8 @@ Content-length: 236
     "Device Ids value"
   ],
   "notificationTitle": "Notification Title value",
-  "notificationBody": "Notification Body value"
+  "notificationBody": "Notification Body value",
+  "deviceName": "Device Name value"
 }
 ```
 
@@ -107,6 +109,7 @@ Content-Length: 385
   }
 }
 ```
+
 
 
 

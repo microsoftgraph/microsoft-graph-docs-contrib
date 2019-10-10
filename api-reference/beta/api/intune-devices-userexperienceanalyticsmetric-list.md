@@ -16,7 +16,7 @@ doc_type: apiPageType
 List properties and relationships of the [userExperienceAnalyticsMetric](../resources/intune-devices-userexperienceanalyticsmetric.md) objects.
 
 ## Prerequisites
-One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
+One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference.md).
 
 |Permission type|Permissions (from most to least privileged)|
 |:---|:---|
@@ -30,6 +30,9 @@ One of the following permissions is required to call this API. To learn more, in
 }
 -->
 ``` http
+GET /deviceManagement/userExperienceAnalyticsRegressionSummary/modelRegression
+GET /deviceManagement/userExperienceAnalyticsRegressionSummary/manufacturerRegression
+GET /deviceManagement/userExperienceAnalyticsRegressionSummary/operatingSystemRegression
 GET /deviceManagement/userExperienceAnalyticsBaselines/{userExperienceAnalyticsBaselineId}/deviceBootPerformanceMetrics/metricValues
 ```
 
@@ -50,7 +53,7 @@ If successful, this method returns a `200 OK` response code and a collection of 
 ### Request
 Here is an example of the request.
 ``` http
-GET https://graph.microsoft.com/beta/deviceManagement/userExperienceAnalyticsBaselines/{userExperienceAnalyticsBaselineId}/deviceBootPerformanceMetrics/metricValues
+GET https://graph.microsoft.com/beta/deviceManagement/userExperienceAnalyticsRegressionSummary/modelRegression
 ```
 
 ### Response
@@ -71,6 +74,7 @@ Content-Length: 245
   ]
 }
 ```
+
 
 
 

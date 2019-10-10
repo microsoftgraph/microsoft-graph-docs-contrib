@@ -16,7 +16,7 @@ doc_type: apiPageType
 Read properties and relationships of the [securityBaselineTemplate](../resources/intune-deviceintent-securitybaselinetemplate.md) object.
 
 ## Prerequisites
-One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
+One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference.md).
 
 |Permission type|Permissions (from most to least privileged)|
 |:---|:---|
@@ -62,7 +62,7 @@ Here is an example of the response. Note: The response object shown here may be 
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 420
+Content-Length: 459
 
 {
   "value": {
@@ -74,10 +74,12 @@ Content-Length: 420
     "isDeprecated": true,
     "intentCount": 11,
     "templateType": "specializedDevices",
+    "platformType": "androidForWork",
     "publishedDateTime": "2016-12-31T23:58:16.1180489-08:00"
   }
 }
 ```
+
 
 
 

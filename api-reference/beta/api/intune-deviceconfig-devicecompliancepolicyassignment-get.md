@@ -16,7 +16,7 @@ doc_type: apiPageType
 Read properties and relationships of the [deviceCompliancePolicyAssignment](../resources/intune-deviceconfig-devicecompliancepolicyassignment.md) object.
 
 ## Prerequisites
-One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
+One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference.md).
 
 |Permission type|Permissions (from most to least privileged)|
 |:---|:---|
@@ -61,7 +61,7 @@ Here is an example of the response. Note: The response object shown here may be 
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 250
+Content-Length: 315
 
 {
   "value": {
@@ -69,10 +69,13 @@ Content-Length: 250
     "id": "92dc3fef-3fef-92dc-ef3f-dc92ef3fdc92",
     "target": {
       "@odata.type": "microsoft.graph.deviceAndAppManagementAssignmentTarget"
-    }
+    },
+    "source": "policySets",
+    "sourceId": "Source Id value"
   }
 }
 ```
+
 
 
 

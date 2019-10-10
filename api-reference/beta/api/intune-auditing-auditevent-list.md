@@ -16,7 +16,7 @@ doc_type: apiPageType
 List properties and relationships of the [auditEvent](../resources/intune-auditing-auditevent.md) objects.
 
 ## Prerequisites
-One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
+One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference.md).
 
 |Permission type|Permissions (from most to least privileged)|
 |:---|:---|
@@ -58,7 +58,7 @@ Here is an example of the response. Note: The response object shown here may be 
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 1632
+Content-Length: 1855
 
 {
   "value": [
@@ -78,7 +78,14 @@ Content-Length: 1632
         "userPrincipalName": "User Principal Name value",
         "servicePrincipalName": "Service Principal Name value",
         "ipAddress": "Ip Address value",
-        "userId": "User Id value"
+        "userId": "User Id value",
+        "scopeTags": [
+          {
+            "@odata.type": "microsoft.graph.scopeTagInfo",
+            "scopeTagName": "Scope Tag Name value",
+            "scopeTagId": "Scope Tag Id value"
+          }
+        ]
       },
       "activity": "Activity value",
       "activityDateTime": "2016-12-31T23:59:51.6363086-08:00",
@@ -107,6 +114,7 @@ Content-Length: 1632
   ]
 }
 ```
+
 
 
 

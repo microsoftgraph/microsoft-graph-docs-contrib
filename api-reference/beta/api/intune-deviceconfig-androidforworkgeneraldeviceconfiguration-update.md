@@ -16,7 +16,7 @@ doc_type: apiPageType
 Update the properties of a [androidForWorkGeneralDeviceConfiguration](../resources/intune-deviceconfig-androidforworkgeneraldeviceconfiguration.md) object.
 
 ## Prerequisites
-One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
+One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference.md).
 
 |Permission type|Permissions (from most to least privileged)|
 |:---|:---|
@@ -96,6 +96,7 @@ The following table shows the properties that are required when you create the [
 |vpnAlwaysOnPackageIdentifier|String|Enable lockdown mode for always-on VPN.|
 |vpnEnableAlwaysOnLockdownMode|Boolean|Enable lockdown mode for always-on VPN.|
 |workProfileAllowWidgets|Boolean|Allow widgets from work profile apps.|
+|workProfileBlockPersonalAppInstallsFromUnknownSources|Boolean|Prevent app installations from unknown sources in the personal profile.|
 
 
 
@@ -109,7 +110,7 @@ Here is an example of the request.
 ``` http
 PATCH https://graph.microsoft.com/beta/deviceManagement/deviceConfigurations/{deviceConfigurationId}
 Content-type: application/json
-Content-length: 2847
+Content-length: 2913
 
 {
   "@odata.type": "#microsoft.graph.androidForWorkGeneralDeviceConfiguration",
@@ -177,7 +178,8 @@ Content-length: 2847
   "securityRequireVerifyApps": true,
   "vpnAlwaysOnPackageIdentifier": "Vpn Always On Package Identifier value",
   "vpnEnableAlwaysOnLockdownMode": true,
-  "workProfileAllowWidgets": true
+  "workProfileAllowWidgets": true,
+  "workProfileBlockPersonalAppInstallsFromUnknownSources": true
 }
 ```
 
@@ -186,7 +188,7 @@ Here is an example of the response. Note: The response object shown here may be 
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 3019
+Content-Length: 3085
 
 {
   "@odata.type": "#microsoft.graph.androidForWorkGeneralDeviceConfiguration",
@@ -257,9 +259,11 @@ Content-Length: 3019
   "securityRequireVerifyApps": true,
   "vpnAlwaysOnPackageIdentifier": "Vpn Always On Package Identifier value",
   "vpnEnableAlwaysOnLockdownMode": true,
-  "workProfileAllowWidgets": true
+  "workProfileAllowWidgets": true,
+  "workProfileBlockPersonalAppInstallsFromUnknownSources": true
 }
 ```
+
 
 
 

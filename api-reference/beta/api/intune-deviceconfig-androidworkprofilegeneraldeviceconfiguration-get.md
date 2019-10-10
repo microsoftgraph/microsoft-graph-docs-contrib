@@ -16,7 +16,7 @@ doc_type: apiPageType
 Read properties and relationships of the [androidWorkProfileGeneralDeviceConfiguration](../resources/intune-deviceconfig-androidworkprofilegeneraldeviceconfiguration.md) object.
 
 ## Prerequisites
-One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
+One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference.md).
 
 |Permission type|Permissions (from most to least privileged)|
 |:---|:---|
@@ -63,7 +63,7 @@ Here is an example of the response. Note: The response object shown here may be 
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 3180
+Content-Length: 3248
 
 {
   "value": {
@@ -135,10 +135,12 @@ Content-Length: 3180
     "securityRequireVerifyApps": true,
     "vpnAlwaysOnPackageIdentifier": "Vpn Always On Package Identifier value",
     "vpnEnableAlwaysOnLockdownMode": true,
-    "workProfileAllowWidgets": true
+    "workProfileAllowWidgets": true,
+    "workProfileBlockPersonalAppInstallsFromUnknownSources": true
   }
 }
 ```
+
 
 
 

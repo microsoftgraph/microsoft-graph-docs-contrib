@@ -16,7 +16,7 @@ doc_type: apiPageType
 Read properties and relationships of the [androidDeviceOwnerGeneralDeviceConfiguration](../resources/intune-deviceconfig-androiddeviceownergeneraldeviceconfiguration.md) object.
 
 ## Prerequisites
-One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
+One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference.md).
 
 |Permission type|Permissions (from most to least privileged)|
 |:---|:---|
@@ -63,7 +63,7 @@ Here is an example of the response. Note: The response object shown here may be 
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 4536
+Content-Length: 4706
 
 {
   "value": {
@@ -114,6 +114,10 @@ Content-Length: 4536
       "Factory Reset Device Administrator Emails value"
     ],
     "factoryResetBlocked": true,
+    "globalProxy": {
+      "@odata.type": "microsoft.graph.androidDeviceOwnerGlobalProxyAutoConfig",
+      "proxyAutoConfigURL": "Proxy Auto Config URL value"
+    },
     "kioskModeScreenSaverConfigurationEnabled": true,
     "kioskModeScreenSaverImageUrl": "https://example.com/kioskModeScreenSaverImageUrl/",
     "kioskModeScreenSaverDisplayTimeInSeconds": 8,
@@ -181,6 +185,7 @@ Content-Length: 4536
   }
 }
 ```
+
 
 
 

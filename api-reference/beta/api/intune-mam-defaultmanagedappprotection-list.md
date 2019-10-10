@@ -16,7 +16,7 @@ doc_type: apiPageType
 List properties and relationships of the [defaultManagedAppProtection](../resources/intune-mam-defaultmanagedappprotection.md) objects.
 
 ## Prerequisites
-One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
+One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference.md).
 
 |Permission type|Permissions (from most to least privileged)|
 |:---|:---|
@@ -58,7 +58,7 @@ Here is an example of the response. Note: The response object shown here may be 
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 4315
+Content-Length: 4733
 
 {
   "value": [
@@ -108,6 +108,9 @@ Content-Length: 4315
       "pinRequiredInsteadOfBiometricTimeout": "-PT3M9.8396734S",
       "allowedOutboundClipboardSharingExceptionLength": 14,
       "notificationRestriction": "blockOrganizationalData",
+      "previousPinBlockCount": 5,
+      "maximumAllowedDeviceThreatLevel": "secured",
+      "mobileThreatDefenseRemediationAction": "wipe",
       "appDataEncryptionType": "afterDeviceRestart",
       "screenCaptureBlocked": true,
       "encryptAppData": true,
@@ -153,11 +156,15 @@ Content-Length: 4315
       "appActionIfAndroidSafetyNetAppsVerificationFailed": "wipe",
       "customBrowserProtocol": "Custom Browser Protocol value",
       "customBrowserPackageId": "Custom Browser Package Id value",
-      "customBrowserDisplayName": "Custom Browser Display Name value"
+      "customBrowserDisplayName": "Custom Browser Display Name value",
+      "minimumRequiredCompanyPortalVersion": "Minimum Required Company Portal Version value",
+      "minimumWarningCompanyPortalVersion": "Minimum Warning Company Portal Version value",
+      "minimumWipeCompanyPortalVersion": "Minimum Wipe Company Portal Version value"
     }
   ]
 }
 ```
+
 
 
 

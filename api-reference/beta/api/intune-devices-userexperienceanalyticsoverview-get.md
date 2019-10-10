@@ -16,7 +16,7 @@ doc_type: apiPageType
 Read properties and relationships of the [userExperienceAnalyticsOverview](../resources/intune-devices-userexperienceanalyticsoverview.md) object.
 
 ## Prerequisites
-One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
+One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference.md).
 
 |Permission type|Permissions (from most to least privileged)|
 |:---|:---|
@@ -61,7 +61,7 @@ Here is an example of the response. Note: The response object shown here may be 
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 758
+Content-Length: 872
 
 {
   "value": {
@@ -84,10 +84,13 @@ Content-Length: 758
         "severity": "informational"
       }
     ],
-    "state": "insufficientData"
+    "state": "insufficientData",
+    "deviceBootPerformanceHealthState": "insufficientData",
+    "bestPracticesHealthState": "insufficientData"
   }
 }
 ```
+
 
 
 

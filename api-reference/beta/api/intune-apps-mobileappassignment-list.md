@@ -16,7 +16,7 @@ doc_type: apiPageType
 List properties and relationships of the [mobileAppAssignment](../resources/intune-apps-mobileappassignment.md) objects.
 
 ## Prerequisites
-One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
+One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference.md).
 
 |Permission type|Permissions (from most to least privileged)|
 |:---|:---|
@@ -58,7 +58,7 @@ Here is an example of the response. Note: The response object shown here may be 
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 391
+Content-Length: 460
 
 {
   "value": [
@@ -71,11 +71,14 @@ Content-Length: 391
       },
       "settings": {
         "@odata.type": "microsoft.graph.mobileAppAssignmentSettings"
-      }
+      },
+      "source": "policySets",
+      "sourceId": "Source Id value"
     }
   ]
 }
 ```
+
 
 
 

@@ -16,7 +16,7 @@ doc_type: apiPageType
 List properties and relationships of the [targetedManagedAppProtection](../resources/intune-mam-targetedmanagedappprotection.md) objects.
 
 ## Prerequisites
-One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
+One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference.md).
 
 |Permission type|Permissions (from most to least privileged)|
 |:---|:---|
@@ -60,7 +60,7 @@ Here is an example of the response. Note: The response object shown here may be 
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 2302
+Content-Length: 2445
 
 {
   "value": [
@@ -110,12 +110,16 @@ Content-Length: 2302
       "pinRequiredInsteadOfBiometricTimeout": "-PT3M9.8396734S",
       "allowedOutboundClipboardSharingExceptionLength": 14,
       "notificationRestriction": "blockOrganizationalData",
+      "previousPinBlockCount": 5,
+      "maximumAllowedDeviceThreatLevel": "secured",
+      "mobileThreatDefenseRemediationAction": "wipe",
       "isAssigned": true,
       "targetedAppManagementLevels": "unmanaged"
     }
   ]
 }
 ```
+
 
 
 
