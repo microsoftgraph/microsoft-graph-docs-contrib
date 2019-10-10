@@ -52,4 +52,4 @@ Learn about Communications APIs
 
 [Communication Media SDK](https://www.nuget.org/packages/Microsoft.Graph.Communications.Calls.Media/1.0.0-prerelease.494)
 
-[Known issues](../../../concepts/known_issues.md#Calls-and-online-meetings)
+[Known issues](../../../concepts/known_issues.md#calls-and-online-meetings)
