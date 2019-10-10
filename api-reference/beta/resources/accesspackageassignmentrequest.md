@@ -32,9 +32,9 @@ In Azure AD Entitlement Management, an access package assignment request is crea
 |id|String| Read-only.|
 |isValidationOnly|Boolean||
 |justification|String|The requestor's supplied justification.|
-|requestState|String||
-|requestStatus|String||
-|requestType|String||
+|requestState|String|One of `Denied`, `Delivered`, `PartiallyDelivered`. Read-only.|
+|requestStatus|String|More information on the request processing status. Read-only.|
+|requestType|String|One of `UserAdd` or `UserRemove`. Read-only.|
 
 
 ## Relationships

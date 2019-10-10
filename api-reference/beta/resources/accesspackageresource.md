@@ -17,7 +17,7 @@ In Azure AD Entitlement Management, a access package resource is a reference to 
 
 | Method       | Return Type | Description |
 |:-------------|:------------|:------------|
-
+| [List accessPackageCatalog resources](../api/accesspackagecatalog-list-accesspackagecatalogresources.md) | [accessPackageResource](accesspackageresource.md) collection | Retrieve a list of accesspackageresource objects. |
 
 ## Properties
 

@@ -13,12 +13,13 @@ doc_type: "resourcePageType"
 
 In Azure AD Entitlement Management, an access package assignment is an assignment of an access package to a particular subject, for a period of time.  For example, an access package assignment could state that user 'Alice' has the been assigned access via the access package 'Sales' for the period January 2019 through July 2019.
 
-
 ## Methods
 
 | Method       | Return Type | Description |
 |:-------------|:------------|:------------|
 | [List accessPackageAssignments](../api/accesspackageassignment-list.md) | [accessPackageAssignment](accesspackageassignment.md) collection | Retrieve a list of accesspackageassignment objects. |
+
+There is no method to create an access package assignment.  Instead, a client that wishes to request an access package assignment for a user can [create an accessPackageAssignmentRequest](../api/accesspackageassignmentrequest-post.md).
 
 ## Properties
 
