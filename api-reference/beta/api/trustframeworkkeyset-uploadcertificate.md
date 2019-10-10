@@ -43,7 +43,7 @@ In the request body, provide a JSON object with the following parameters.
 
 | Parameter    | Type        | Description |
 |:-------------|:------------|:------------|
-|key|String| This is the field for sending certificate content. **The value should be base-64 encoded version of the actual value.** |
+|key|String| This is the field for sending certificate content. **The value should be base-64 encoded version of the actual certificate content.** |
 
 ## Response
 
