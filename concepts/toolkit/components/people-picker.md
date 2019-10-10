@@ -48,21 +48,14 @@ Selected People data is accessible to populate via the following methods:
 
 ***If no user is found for the provided `id`, no data will be rendered for that specific `id`**
 
-1. Giving an array of `person` object to the `selected-people` property. 
+1. Setting the `selectedPeople` property directly:  
 
       * Example
-    ```html
-    <mgt-people>
-      <template>
-        <ul>
-          <li data-for="person in people">
-            <mgt-people-picker selected-people="[{{ person }}]"></mgt-people-picker>
-            <h3>{{ person.displayName }}</h3>
-          </li>
-        </ul>
-      </template>
-    </mgt-people>
+    ```javascript
+    // personObject = User or Person from Microsoft Graph
+    document.querySelector('mgt-people-picker').selectedPeople = personObject;
     ```
+
 
 
 2. Using the method `selectUsersById()` which accepts an array of Microsoft graph [user id](https://docs.microsoft.com/en-us/graph/api/resources/users?view=graph-rest-1.0) to find associated user details for selection.
