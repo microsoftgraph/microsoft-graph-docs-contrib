@@ -16,7 +16,7 @@ doc_type: apiPageType
 Update the properties of a [iosLobApp](../resources/intune-apps-ioslobapp.md) object.
 
 ## Prerequisites
-One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference.md).
+One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
 
 |Permission type|Permissions (from most to least privileged)|
 |:---|:---|
@@ -196,6 +196,7 @@ Content-Length: 1583
   "identityVersion": "Identity Version value"
 }
 ```
+
 
 
 

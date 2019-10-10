@@ -16,7 +16,7 @@ doc_type: apiPageType
 Update the properties of a [deviceManagementTemplate](../resources/intune-deviceintent-devicemanagementtemplate.md) object.
 
 ## Prerequisites
-One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference.md).
+One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
 
 |Permission type|Permissions (from most to least privileged)|
 |:---|:---|
@@ -104,6 +104,7 @@ Content-Length: 420
   "publishedDateTime": "2016-12-31T23:58:16.1180489-08:00"
 }
 ```
+
 
 
 

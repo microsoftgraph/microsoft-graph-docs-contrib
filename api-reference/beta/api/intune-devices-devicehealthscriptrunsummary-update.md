@@ -16,7 +16,7 @@ doc_type: apiPageType
 Update the properties of a [deviceHealthScriptRunSummary](../resources/intune-devices-devicehealthscriptrunsummary.md) object.
 
 ## Prerequisites
-One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference.md).
+One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
 
 |Permission type|Permissions (from most to least privileged)|
 |:---|:---|
@@ -106,6 +106,7 @@ Content-Length: 497
   "lastScriptRunDateTime": "2017-01-01T00:01:17.4310553-08:00"
 }
 ```
+
 
 
 

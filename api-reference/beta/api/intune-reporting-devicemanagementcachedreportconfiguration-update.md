@@ -16,7 +16,7 @@ doc_type: apiPageType
 Update the properties of a [deviceManagementCachedReportConfiguration](../resources/intune-reporting-devicemanagementcachedreportconfiguration.md) object.
 
 ## Prerequisites
-One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference.md).
+One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
 
 |Permission type|Permissions (from most to least privileged)|
 |:---|:---|
@@ -108,6 +108,7 @@ Content-Length: 434
   "expirationDateTime": "2016-12-31T23:57:57.2481234-08:00"
 }
 ```
+
 
 
 
