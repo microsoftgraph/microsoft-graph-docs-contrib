@@ -1,7 +1,7 @@
 ---
 title: "Working with the Communications API in Microsoft Graph"
 description: "The Microsoft Graph Communications API adds a new dimension to how your apps and services can interact with users by enabling voice and video features. This API enables applications to be a part of 1-1 or Group Calls, create and retreive Online meetings and integration User presence in business workflows"
-author: "Vinod Ravichandran"
+author: "VinodRavichandran"
 doc_type: conceptualPageType
 localization_priority: Priority
 ---
