@@ -51,5 +51,3 @@ Learn about Communications APIs
 [Communication Signaling SDK](https://www.nuget.org/packages/Microsoft.Graph.Communications.Calls/1.0.0-prerelease.494)
 
 [Communication Media SDK](https://www.nuget.org/packages/Microsoft.Graph.Communications.Calls.Media/1.0.0-prerelease.494)
-
-[Known issues](../../../concepts/known_issues.md#calls-and-online-meetings)
