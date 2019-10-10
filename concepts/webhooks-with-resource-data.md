@@ -22,9 +22,8 @@ This article walks through the details, using the Team **messages** resource as 
 The following resources support change notifications that include resource data:
 
 - Teams messages (preview)
-  - New or changed messages in Team channels in the entire organization (tenant): `/teams/allMessages`
-  - New or changed messages in all chats in the entire organization (tenant): `/chats/allMessages`
-
+  - New or changed messages in a specific Team channel: `/teams/{id}/channels/{id}/messages`
+  
 ## Creating a subscription
 
 To have resource data included in change notifications, you need to provide additional properties when creating a subscription:
