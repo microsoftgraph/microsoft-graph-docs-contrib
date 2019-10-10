@@ -9593,6 +9593,10 @@
           href: api/user-list-joinedteams.md
         - name: List all teams
           href: /graph/teams-list-all-teams?context=graph/api/beta
+        - name: Get team photo
+          href: api/team-get-photo.md
+        - name: Update team photo
+          href: api/team-update-photo.md
       - name: Group (team)
         href: resources/group.md
         items:
