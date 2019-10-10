@@ -11,7 +11,7 @@ doc_type: "apiPageType"
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Adds a strong password to an application.
+Adds a strong password to an [application](../resources/application.md).
 
 ## Permissions
 

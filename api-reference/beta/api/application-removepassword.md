@@ -11,7 +11,7 @@ doc_type: "apiPageType"
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Removes a password from an application.
+Removes a password from an [application](../resources/application.md).
 
 ## Permissions
 
