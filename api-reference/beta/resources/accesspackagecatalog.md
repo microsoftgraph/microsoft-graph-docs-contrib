@@ -20,6 +20,9 @@ In Azure AD Entitlement Management, an access package catalog is a container for
 |:-------------|:------------|:------------|
 | [Get accessPackageCatalog](../api/accesspackagecatalog-get.md) | [accessPackageCatalog](accesspackagecatalog.md) | Read properties and relationships of an accessPackageCatalog object. |
 | [List accessPackageCatalogs](../api/accesspackagecatalog-list.md) | [accessPackageCatalog](accesspackagecatalog.md) collection | Retrieve a list of accesspackagecatalog objects. |
+| [Create accessPackageCatalog](../api/accesspackagecatalog-post.md) | [accessPackageCatalog](accesspackagecatalog.md) | Create a new accessPackageCatalog object. |
+| [Delete accessPackageCatalog](../api/accesspackagecatalog-delete.md) | | Delete accessPackageCatalog. |
+| [Update accessPackageCatalog](../api/accesspackagecatalog-update.md) | | Update the properties of an accessPackageCatalog. |
 
 ## Properties
 

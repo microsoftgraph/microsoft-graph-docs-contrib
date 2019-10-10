@@ -8111,15 +8111,25 @@
         - name: Access package
           href: resources/accesspackage.md
           items:
+          - name: Create accessPackage
+            href: api/accesspackage-post.md
+          - name: Delete accessPackage
+            href: api/accesspackage-delete.md
           - name: Get accessPackage
             href: api/accesspackage-get.md
           - name: List accessPackages
             href: api/accesspackage-list.md
+          - name: Update accessPackage
+            href: api/accesspackage-update.md
         - name: Access package assignment
           href: resources/accesspackageassignment.md
         - name: Access package assignment policy
           href: resources/accesspackageassignmentpolicy.md
           items:
+          - name: Create accessPackageAssignmentPolicy
+            href: api/accesspackageassignmentpolicy-post.md
+          - name: Delete accessPackageAssignmentPolicy
+            href: api/accesspackageassignmentpolicy-delete.md
           - name: Get accessPackageAssignmentPolicy
             href: api/accesspackageassignmentpolicy-get.md
           - name: List accessPackageAssignmentPolicies
@@ -8138,10 +8148,16 @@
         - name: Access package catalog
           href: resources/accesspackagecatalog.md
           items:
+          - name: Create accessPackageCatalog
+            href: api/accesspackagecatalog-post.md
+          - name: Delete accessPackageCatalog
+            href: api/accesspackagecatalog-delete.md
           - name: Get accessPackageCatalog
             href: api/accesspackagecatalog-get.md
           - name: List accessPackageCatalogs
             href: api/accesspackagecatalog-list.md
+          - name: Update accessPackageCatalog
+            href: api/accesspackagecatalog-update.md
       - name: Feature rollout policy
         href: resources/featurerolloutpolicy.md
         items:

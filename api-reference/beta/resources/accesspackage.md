@@ -20,6 +20,9 @@ In Azure AD Entitlement Management, an access package defines the collections of
 |:-------------|:------------|:------------|
 | [Get accessPackage](../api/accesspackage-get.md) | [accessPackage](accesspackage.md) | Read properties and relationships of an accessPackage object. |
 | [List accessPackages](../api/accesspackage-list.md) | [accessPackage](accesspackage.md) collection | Retrieve a list of accesspackage objects. |
+| [Create accessPackage](../api/accesspackage-post.md) | [accessPackage](accesspackage.md) | Create a new accessPackage object. |
+| [Delete accessPackage](../api/accesspackage-delete.md) | | Delete accessPackage. |
+| [Update accessPackage](../api/accesspackage-update.md) | | Update the properties of an accessPackage. |
 
 ## Properties
 
@@ -43,6 +46,7 @@ In Azure AD Entitlement Management, an access package defines the collections of
 |:-------------|:------------|:------------|
 |accessPackageAssignmentPolicies|[accessPackageAssignmentPolicy](accesspackageassignmentpolicy.md) collection| Read-only. Nullable.|
 |accessPackageCatalog|[accessPackageCatalog](accesspackagecatalog.md)| Read-only. Nullable.|
+|accessPackageResourceRoleScopes|[accessPackageResourceRoleScope](accesspackageresourcerolescope.md) collection| Nullable.|
 
 ## JSON representation
 
