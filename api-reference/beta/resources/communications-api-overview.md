@@ -1,6 +1,6 @@
 ---
 title: "Working with the communications API in Microsoft Graph"
-description: "The Microsoft Graph Communications API adds a new dimension to how your apps and services can interact with users by enabling voice and video features."
+description: "The Microsoft Graph communications API adds a new dimension to how your apps and services can interact with users by enabling voice and video features."
 author: "VinodRavichandran"
 doc_type: conceptualPageType
 localization_priority: Priority
@@ -21,16 +21,16 @@ One of the following [permissions](https://docs.microsoft.com/en-us/graph/permis
 
 | Type of permission                  | Permissions                                  |
 |:------------------------------------|:---------------------------------------------|
-| Calling Permissions                 | Calls.JoinGroupCallsasGuest.All, Calls.JoinGroupCalls.All, Calls.Initiate.All, Calls.InitiateGroupCalls.All, Calls.AccessMedia.All |
-| Meetings Permissions                | OnlineMeetings.ReadWrite.All, OnlineMeetings.Read.All |
+| Calling                 | Calls.JoinGroupCallsasGuest.All, Calls.JoinGroupCalls.All, Calls.Initiate.All, Calls.InitiateGroupCalls.All, Calls.AccessMedia.All |
+| Meetings                 | OnlineMeetings.ReadWrite.All, OnlineMeetings.Read.All |
 
-## Common Use Cases
+## Common use cases
 
-The following table lists some of the common operations in the Communications APIs
+The following table lists some of the common uses for the communications API.
 
 | Use cases                         | REST resources                                 | See also  |
 |:------------------------------------|:---------------------------------------------|:----------|
-| Creating and joining 1-1 and Group calls   | [Call](https://docs.microsoft.com/en-us/graph/api/resources/call?view=graph-rest-beta)| [Methods for Calls](https://docs.microsoft.com/en-us/graph/api/resources/call?view=graph-rest-beta#methods)| 
+| Creating and joining 1-1 and group calls   | [Call](https://docs.microsoft.com/en-us/graph/api/resources/call?view=graph-rest-beta)| [Methods for Calls](https://docs.microsoft.com/en-us/graph/api/resources/call?view=graph-rest-beta#methods)| 
 |IVR calls   |     | [Methods for IVR](https://docs.microsoft.com/en-us/graph/api/resources/calls-api-ivr-overview?view=graph-rest-beta)
 | Call controls (participant) | [Participant](https://docs.microsoft.com/en-us/graph/api/resources/participant?view=graph-rest-beta)   ||
 |Meetings|[onlineMeeting](https://docs.microsoft.com/en-us/graph/api/resources/onlinemeeting?view=graph-rest-beta)| [Methods for Meetings](https://docs.microsoft.com/en-us/graph/api/resources/onlinemeeting?view=graph-rest-beta#methods)|
