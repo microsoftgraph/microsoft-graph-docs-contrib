@@ -18,7 +18,7 @@ In Azure AD Entitlement Management, an access package assignment is an assignmen
 
 | Method       | Return Type | Description |
 |:-------------|:------------|:------------|
-
+| [List accessPackageAssignments](../api/accesspackageassignment-list.md) | [accessPackageAssignment](accesspackageassignment.md) collection | Retrieve a list of accesspackageassignment objects. |
 
 ## Properties
 

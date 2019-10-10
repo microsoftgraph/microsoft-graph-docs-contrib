@@ -8123,6 +8123,9 @@
             href: api/accesspackage-update.md
         - name: Access package assignment
           href: resources/accesspackageassignment.md
+          items:
+          - name: List accessPackageAssignments
+            href: api/accesspackageassignment-list.md
         - name: Access package assignment policy
           href: resources/accesspackageassignmentpolicy.md
           items:
