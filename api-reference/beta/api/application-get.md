@@ -1,6 +1,6 @@
 ---
 title: "Get application"
-description: "Retrieve the properties and relationships of application object."
+description: "Get the properties and relationships of an application object."
 author: "davidmu1"
 localization_priority: Priority
 ms.prod: "microsoft-identity-platform"
@@ -11,7 +11,7 @@ doc_type: apiPageType
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Retrieve the properties and relationships of an [application](../resources/application.md) object.
+Get the properties and relationships of an [application](../resources/application.md) object.
 
 ## Permissions
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
