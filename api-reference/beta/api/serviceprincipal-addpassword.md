@@ -88,6 +88,7 @@ The following is an example of the response.
 ```http
 HTTP/1.1 200 OK
 Content-type: application/json
+
 {
     "customKeyIdentifier": null,
     "endDateTime": "2021-09-09T19:50:29.3086381Z",
