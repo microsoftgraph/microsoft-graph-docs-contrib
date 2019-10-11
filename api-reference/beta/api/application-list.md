@@ -1,6 +1,6 @@
 ---
 title: "List applications"
-description: "Retrieve the list of applications in this organization."
+description: "Get the list of applications in this organization."
 author: "davidmu1"
 localization_priority: Priority
 ms.prod: "microsoft-identity-platform"
@@ -11,7 +11,7 @@ doc_type: apiPageType
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Retrieve the list of applications in this organization.
+Get the list of [applications](../resources/application.md) in this organization.
 
 ## Permissions
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
@@ -29,12 +29,13 @@ One of the following permissions is required to call this API. To learn more, in
 GET /applications
 ```
 ## Optional query parameters
-This method supports the [OData Query Parameters](https://developer.microsoft.com/graph/docs/concepts/query_parameters) to help customize the response.
+This method supports the [OData query parameters]/graph/query-parameters) to help customize the response.
 
 ## Request headers
 | Name       | Type | Description|
 |:-----------|:------|:----------|
 | Authorization  | string  | Bearer {token}. Required.  |
+| Content-type   | application/json. Required. |
 
 ## Request body
 Do not supply a request body for this method.
@@ -42,8 +43,8 @@ Do not supply a request body for this method.
 ## Response
 
 If successful, this method returns a `200 OK` response code and a collection of [application](../resources/application.md) objects in the response body.
-## Example
-##### Request
+## Examples
+### Request
 Here is an example of the request.
 
 # [HTTP](#tab/http)
@@ -68,8 +69,10 @@ GET https://graph.microsoft.com/beta/applications
 
 ---
 
-##### Response
-Here is an example of the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.
+### Response
+Here is an example of the response. 
+
+> **Note:** The response object shown here might be shortened for readability. All the properties will be returned from an actual call.
 <!-- {
   "blockType": "response",
   "truncated": true,
