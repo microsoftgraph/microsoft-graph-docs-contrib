@@ -7277,8 +7277,6 @@
             href: api/intune-shared-devicemanagementderivedcredentialsettings-update.md
           - name: List
             href: api/intune-shared-devicemanagementderivedcredentialsettings-list.md
-          - name: Create
-            href: api/intune-shared-devicemanagementderivedcredentialsettings-create.md
           - name: Delete
             href: api/intune-shared-devicemanagementderivedcredentialsettings-delete.md
         - name: Device management script
