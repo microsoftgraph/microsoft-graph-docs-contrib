@@ -1,6 +1,6 @@
 ---
 title: "Create Application"
-description: "Use this API to create a new application."
+description: "Create a new application."
 author: "davidmu1"
 localization_priority: Priority
 doc_type: apiPageType
@@ -11,7 +11,7 @@ ms.prod: "microsoft-identity-platform"
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Use this API to create a new application.
+Create a new [application](../resources/application.md).
 
 ## Permissions
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
@@ -35,14 +35,14 @@ POST /applications
 | Authorization  | string  | Bearer {token}. Required. |
 
 ## Request body
-In the request body, supply a JSON representation of [application](../resources/application.md) object. The request body must contain at least `displayName` which is a required property.
+In the request body, supply a JSON representation of [application](../resources/application.md) object. The request body must contain  **displayName**, which is a required property.
 
 ## Response
 
-If successful, this method returns `201 Created` response code and [application](../resources/application.md) object in the response body.
+If successful, this method returns `201 Created` response code and an [application](../resources/application.md) object in the response body.
 
-## Example
-##### Request
+## Examples
+### Request
 Here is an example of the request.
 
 # [HTTP](#tab/http)
@@ -73,9 +73,10 @@ Content-length: 67
 
 ---
 
-In the request body, supply a JSON representation of [application](../resources/application.md) object.
-##### Response
-Here is an example of the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.
+### Response
+Here is an example of the response. 
+
+> **Note:** The response object shown here might be shortened for readability. All the properties will be returned from an actual call.
 <!-- {
   "blockType": "response",
   "truncated": true,
