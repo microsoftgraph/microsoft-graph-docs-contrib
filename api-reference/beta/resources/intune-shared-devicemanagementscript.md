@@ -47,11 +47,11 @@ Intune will provide customer the ability to run their Powershell scripts on the 
 |Relationship|Type|Description|
 |:---|:---|:---|
 |**Device management**|
-|groupAssignments|[deviceManagementScriptGroupAssignment](../resources/intune-shared-devicemanagementscriptgroupassignment.md) collection|The list of group assignments for the device management script.|
-|assignments|[deviceManagementScriptAssignment](../resources/intune-shared-devicemanagementscriptassignment.md) collection|The list of group assignments for the device management script.|
-|runSummary|[deviceManagementScriptRunSummary](../resources/intune-shared-devicemanagementscriptrunsummary.md)|Run summary for device management script.|
-|deviceRunStates|[deviceManagementScriptDeviceState](../resources/intune-shared-devicemanagementscriptdevicestate.md) collection|List of run states for this script across all devices.|
-|userRunStates|[deviceManagementScriptUserState](../resources/intune-shared-devicemanagementscriptuserstate.md) collection|List of run states for this script across all users.|
+|groupAssignments|[deviceManagementScriptGroupAssignment](../resources/intune-devices-devicemanagementscriptgroupassignment.md) collection|The list of group assignments for the device management script.|
+|assignments|[deviceManagementScriptAssignment](../resources/intune-devices-devicemanagementscriptassignment.md) collection|The list of group assignments for the device management script.|
+|runSummary|[deviceManagementScriptRunSummary](../resources/intune-devices-devicemanagementscriptrunsummary.md)|Run summary for device management script.|
+|deviceRunStates|[deviceManagementScriptDeviceState](../resources/intune-devices-devicemanagementscriptdevicestate.md) collection|List of run states for this script across all devices.|
+|userRunStates|[deviceManagementScriptUserState](../resources/intune-devices-devicemanagementscriptuserstate.md) collection|List of run states for this script across all users.|
 
 ## JSON Representation
 Here is a JSON representation of the resource.
