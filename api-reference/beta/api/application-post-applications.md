@@ -1,5 +1,5 @@
 ---
-title: "Create Application"
+title: "Create application"
 description: "Create a new application."
 author: "davidmu1"
 localization_priority: Priority
@@ -7,11 +7,11 @@ doc_type: apiPageType
 ms.prod: "microsoft-identity-platform"
 ---
 
-# Create Application
+# Create application
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Create a new [application](../resources/application.md).
+Create a new [application](../resources/application.md) object.
 
 ## Permissions
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
