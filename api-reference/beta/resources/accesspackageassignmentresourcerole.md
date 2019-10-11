@@ -17,7 +17,7 @@ In Azure AD Entitlement Management, an access package assignment resource role i
 
 | Method       | Return Type | Description |
 |:-------------|:------------|:------------|
-| [List accessPackageAssignmentResourceRoles](../api/accesspackageassignmentresourcerole-list.md) | [accessPackageAssignmentResourceRole](accesspackageassignmentassignmentresourcerole.md) collection | Retrieve a list of accessPackageAssignmentResourceRole objects. |
+| [List accessPackageAssignmentResourceRoles](../api/accesspackageassignmentresourcerole-list.md) | [accessPackageAssignmentResourceRole](accesspackageassignmentresourcerole.md) collection | Retrieve a list of accessPackageAssignmentResourceRole objects. |
 
 ## Properties
 
