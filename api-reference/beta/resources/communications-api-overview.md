@@ -31,17 +31,17 @@ The following table lists some of the common uses for the communications API.
 
 | Use cases                         | REST resources                                 | See also  |
 |:------------------------------------|:---------------------------------------------|:----------|
-| Creating and joining 1-1 and group calls   | [Call](https://docs.microsoft.com/en-us/graph/api/resources/call?view=graph-rest-beta)| [Methods for Calls](https://docs.microsoft.com/en-us/graph/api/resources/call?view=graph-rest-beta#methods)| 
+| Creating and joining 1-1 and group calls   | [Call](https://docs.microsoft.com/en-us/graph/api/resources/call?view=graph-rest-beta)| [Methods for calls](https://docs.microsoft.com/en-us/graph/api/resources/call?view=graph-rest-beta#methods)| 
 |IVR calls   |     | [Methods for IVR](https://docs.microsoft.com/en-us/graph/api/resources/calls-api-ivr-overview?view=graph-rest-beta)
 | Call controls (participant) | [Participant](https://docs.microsoft.com/en-us/graph/api/resources/participant?view=graph-rest-beta)   ||
-|Meetings|[onlineMeeting](https://docs.microsoft.com/en-us/graph/api/resources/onlinemeeting?view=graph-rest-beta)| [Methods for Meetings](https://docs.microsoft.com/en-us/graph/api/resources/onlinemeeting?view=graph-rest-beta#methods)|
+|Meetings|[onlineMeeting](https://docs.microsoft.com/en-us/graph/api/resources/onlinemeeting?view=graph-rest-beta)| [Methods for meetings](https://docs.microsoft.com/en-us/graph/api/resources/onlinemeeting?view=graph-rest-beta#methods)|
 
 ## Common properties
 
 | Resource                | Properties                             |
 |:------------------------------------|:---------------------------------------------|
-| call                               | [Call properties](https://docs.microsoft.com/en-us/graph/api/resources/call?view=graph-rest-beta#properties)  |
-| participant                         | [Participant properties](https://docs.microsoft.com/en-us/graph/api/resources/participant?view=graph-rest-beta#properties) |
+| call                               | [call properties](https://docs.microsoft.com/en-us/graph/api/resources/call?view=graph-rest-beta#properties)  |
+| participant                         | [participant properties](https://docs.microsoft.com/en-us/graph/api/resources/participant?view=graph-rest-beta#properties) |
 | onlineMeeting                            | [onlineMeeting properties](https://docs.microsoft.com/en-us/graph/api/resources/onlinemeeting?view=graph-rest-beta#properties)                     |
 
 ## See also
