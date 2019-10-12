@@ -792,11 +792,11 @@
             href: api/place-list.md
           - name: Get place
             href: api/place-get.md
-    - name: Calls and online meetings
-      displayName: Microsoft Teams
+    - name: Cloud communications
+      displayName: Cloud communications
       items:
       - name: Overview
-        href: resources/calls-api-overview.md
+        href: resources/communications-api-overview.md
       - name: Call
         href: resources/call.md
         items:
