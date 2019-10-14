@@ -33,7 +33,7 @@ POST /groups/{id}/assignLicense
 | Header       | Value |
 |:---------------|:--------|
 | Authorization  | Bearer {token}. Required.  |
-| Content-Type  | application/json  |
+| Content-Type  | application/json. Required.  |
 
 ## Request body
 In the request body, provide a JSON object with the following parameters.
@@ -45,7 +45,7 @@ In the request body, provide a JSON object with the following parameters.
 
 ## Response
 
-If successful, this method returns `202 Accepted` response code and target [group](../resources/group.md) object in the response body.
+If successful, this method returns a `202 Accepted` response code and a target [group](../resources/group.md) object in the response body.
 
 ## Examples
 
