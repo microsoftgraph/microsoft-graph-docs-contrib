@@ -28,7 +28,7 @@ One of the following permissions is required to call this API. To learn more, in
 <!-- { "blockType": "ignored" } -->
 
 ```http
-GET /conditionalaccess/namedLocations/{id}
+GET /conditionalAccess/namedLocations/{id}
 ```
 
 ## Optional query parameters
@@ -60,7 +60,7 @@ The following is an example of the request.
 }-->
 
 ```http
-GET https://graph.microsoft.com/beta/conditionalaccess/namedLocations/0854951d-5fc0-4eb1-b392-9b2c9d7949c2
+GET https://graph.microsoft.com/beta/conditionalAccess/namedLocations/0854951d-5fc0-4eb1-b392-9b2c9d7949c2
 ```
 
 ### Response

@@ -28,7 +28,7 @@ One of the following permissions is required to call this API. To learn more, in
 <!-- { "blockType": "ignored" } -->
 
 ```http
-GET /conditionalaccess/namedLocations
+GET /conditionalAccess/namedLocations
 ```
 
 ## Optional query parameters
@@ -62,7 +62,7 @@ The following is an example of the request.
 }-->
 
 ```http
-GET https://graph.microsoft.com/beta/conditionalaccess/namedLocations
+GET https://graph.microsoft.com/beta/conditionalAccess/namedLocations
 ```
 
 #### Response
@@ -148,7 +148,7 @@ The following is an example of the request.
 }-->
 
 ```http
-GET https://graph.microsoft.com/beta/conditionalaccess/namedLocations?$filter=isof('microsoft.graph.ipNamedLocation')
+GET https://graph.microsoft.com/beta/conditionalAccess/namedLocations?$filter=isof('microsoft.graph.ipNamedLocation')
 ```
 
 #### Response
@@ -222,7 +222,7 @@ The following is an example of the request.
 }-->
 
 ```http
-GET https://graph.microsoft.com/beta/conditionalaccess/namedLocations?$filter=isof('microsoft.graph.countryNamedLocation')
+GET https://graph.microsoft.com/beta/conditionalAccess/namedLocations?$filter=isof('microsoft.graph.countryNamedLocation')
 ```
 
 #### Response

@@ -28,7 +28,7 @@ One of the following permissions is required to call this API. To learn more, in
 <!-- { "blockType": "ignored" } -->
 
 ```http
-POST /conditionalaccess/namedLocations
+POST /conditionalAccess/namedLocations
 ```
 
 ## Request headers
@@ -59,7 +59,7 @@ The following is an example of the request.
 }-->
 
 ```http
-POST https://graph.microsoft.com/beta/conditionalaccess/namedLocations
+POST https://graph.microsoft.com/beta/conditionalAccess/namedLocations
 Content-type: application/json
 
 {
@@ -126,7 +126,7 @@ The following is an example of the request.
 }-->
 
 ```http
-POST https://graph.microsoft.com/beta/conditionalaccess/namedLocations
+POST https://graph.microsoft.com/beta/conditionalAccess/namedLocations
 Content-type: application/json
 
 {
