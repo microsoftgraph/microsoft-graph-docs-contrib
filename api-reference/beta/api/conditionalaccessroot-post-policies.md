@@ -42,6 +42,8 @@ POST /conditionalAccess/policies
 
 In the request body, supply a JSON representation of [conditionalAccessPolicy](../resources/conditionalaccesspolicy.md) object.
 
+A valid policy should contain at least one [application](../resources/conditionalaccessapplications.md) rule, e.g. `'includeApplications': 'none'`, and one [user](../resources/conditionalaccessusers.md) rule, e.g. `'includeUsers': 'none'`, and at least one [grant](../resources/conditionalaccessgrantcontrols.md)/[session](../resources/conditionalaccesssessioncontrols.md) control.
+
 ## Response
 
 If successful, this method returns a `201 Created` response code and a new [conditionalAccessPolicy](../resources/conditionalaccesspolicy.md) object in the response body.
