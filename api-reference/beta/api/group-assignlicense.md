@@ -52,8 +52,6 @@ If successful, this method returns a `202 Accepted` response code and a target [
 ### Example 1: Add licenses to the group
 The following example adds licenses to the group.
 #### Request
-
-# [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "group_assignlicense"
@@ -81,7 +79,7 @@ Content-type: application/json
 #### Response
 The response is the updated group object.
 
->**Note:** The response object shown here might be shortened for readability. All the properties will be returned from an actual call..
+>**Note:** The response object shown here might be shortened for readability. All the properties will be returned from an actual call.
 <!-- {
   "blockType": "response",
   "truncated": true,
@@ -106,8 +104,6 @@ location: https://graph.microsoft.com/v2/d056d009-17b3-4106-8173-cd3978ada898/di
 The following example removes licenses from the group.
 
 #### Request
-
-# [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "group_removelicense"
