@@ -232,7 +232,7 @@
         - name: Assign license
           href: api/user-assignlicense.md
         - name: Reprocess license assignment
-          href: api/user-reprocesslicense.md          
+          href: api/user-reprocesslicenseassignment.md          
         - name: Get member objects
           href: api/user-getmemberobjects.md
         - name: Get member groups
