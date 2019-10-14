@@ -19,7 +19,7 @@ var bookingStaffMember = new BookingStaffMember
 				{"@odata.type","#microsoft.graph.bookingWorkHours"}
 			},
 			Day = DayOfWeek.Monday,
-			TimeSlots = new List<String>()
+			TimeSlots = new List<BookingWorkTimeSlot>()
 			{
 			}
 		},

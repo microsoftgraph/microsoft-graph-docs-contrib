@@ -1,7 +1,7 @@
 ---
 title: "List windowsMobileMSIs"
 description: "List properties and relationships of the windowsMobileMSI objects."
-author: "tfitzmac"
+author: "davidmu1"
 localization_priority: Normal
 ms.prod: "Intune"
 doc_type: apiPageType
@@ -91,6 +91,7 @@ Content-Length: 1164
   ]
 }
 ```
+
 
 
 

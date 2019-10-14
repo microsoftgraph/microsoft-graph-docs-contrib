@@ -1,7 +1,7 @@
 ---
 title: "iosVppEBook resource type"
 description: "A class containing the properties for iOS Vpp eBook."
-author: "tfitzmac"
+author: "davidmu1"
 localization_priority: Normal
 ms.prod: "Intune"
 doc_type: resourcePageType
@@ -92,6 +92,7 @@ Here is a JSON representation of the resource.
   "usedLicenseCount": 1024
 }
 ```
+
 
 
 

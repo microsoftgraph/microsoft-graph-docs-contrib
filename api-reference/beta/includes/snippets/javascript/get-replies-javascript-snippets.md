@@ -10,7 +10,7 @@ const options = {
 
 const client = Client.init(options);
 
-let res = await client.api('/chats/{id}/messages/{id}/replies')
+let res = await client.api('/drive/root/workbook/comments/{id}/replies')
 	.version('beta')
 	.get();
 
