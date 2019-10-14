@@ -231,6 +231,8 @@
           href: api/user-list-createdobjects.md
         - name: Assign license
           href: api/user-assignlicense.md
+        - name: Reprocess license assignment
+          href: api/user-reprocesslicenseassignment.md          
         - name: Get member objects
           href: api/user-getmemberobjects.md
         - name: Get member groups
@@ -385,6 +387,8 @@
           href: api/group-post-members.md
         - name: Add owner
           href: api/group-post-owners.md
+        - name: Assign license
+          href: api/group-assignlicense.md
         - name: Check member groups
           href: api/group-checkmembergroups.md
         - name: Create group
@@ -792,11 +796,11 @@
             href: api/place-list.md
           - name: Get place
             href: api/place-get.md
-    - name: Calls and online meetings
-      displayName: Microsoft Teams
+    - name: Cloud communications
+      displayName: Cloud communications
       items:
       - name: Overview
-        href: resources/calls-api-overview.md
+        href: resources/communications-api-overview.md
       - name: Call
         href: resources/call.md
         items:
