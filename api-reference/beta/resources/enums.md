@@ -895,54 +895,54 @@ Possible values for user account types (group membership), per Windows definitio
 
 ### conditionalAccessClientApp
 
-| Member       | Value       |
-|:--------------|:--------------|
-|browser|0|
-|modern|1|
-|easSupported|2|
-|easUnsupported|3|
-|other|4|
+| Member       |
+|:--------------|
+|browser|
+|modern|
+|easSupported|
+|easUnsupported|
+|other|
 
 ### conditionalAccessGrantControl
 
-| Member       | Value       |
-|:--------------|:--------------|
-|block|0|
-|mfa|1|
-|compliantDevice|2|
-|domainJoinedDevice|3|
-|approvedApplication|4|
-|compliantApplication|5|
+| Member       |
+|:--------------|
+|block|
+|mfa|
+|compliantDevice|
+|domainJoinedDevice|
+|approvedApplication|
+|compliantApplication|
 
 ### cloudAppSecuritySessionControlType
 
-| Member       | Value       |
-|:--------------|:--------------|
-|mcasConfigured|0|
-|monitorOnly|1|
-|blockDownloads|2|
+| Member       |
+|:--------------|
+|mcasConfigured|
+|monitorOnly|
+|blockDownloads|
 
 ### signinFrequencyType
 
-| Member       | Value       |
-|:--------------|:--------------|
-|days|0|
-|hours|1|
+| Member       |
+|:--------------|
+|days|
+|hours|
 
 ### persistentBrowserSessionMode
 
-| Member       | Value       |
-|:--------------|:--------------|
-|always|0|
-|never|1|
+| Member       |
+|:--------------|
+|always|
+|never|
 
 ### conditionalAccessDevicePlatform
 
-| Member       | Value       |
-|:--------------|:--------------|
-|android|0|
-|iOS|1|
-|windows|2|
-|windowsPhone|3|
-|macOS|4|
-|all|5|
+| Member       |
+|:--------------|
+|android|
+|iOS|
+|windows|
+|windowsPhone|
+|macOS|
+|all|

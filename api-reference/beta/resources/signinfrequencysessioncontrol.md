@@ -11,7 +11,7 @@ doc_type: resourcePageType
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Session control to enforce sign-in frequency.
+Session control to enforce sign-in frequency. Inehrits from [Conditional Access Session Control](conditionalaccesssessioncontrol.md).
 
 ## Properties
 

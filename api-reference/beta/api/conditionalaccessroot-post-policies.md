@@ -48,9 +48,104 @@ If successful, this method returns a `201 Created` response code and a new [cond
 
 ## Examples
 
-### Request
+### Request to require MFA to access Exchange Online outside of trusted locations.
 
-The following is an example of the request.
+The following is an example of a common configuration: Access to Exchange Online from browser or modern auth clients require Multi-factor authentication outside of trusted locations for a particular group.
+Please make sure you setup your trusted locations first.
+
+<!-- {
+  "blockType": "request",
+  "name": "create_conditionalaccesspolicy_from_conditionalaccessroot"
+}-->
+
+```http
+POST https://graph.microsoft.com/beta/conditionalAccess/policies
+Content-type: application/json
+
+{
+    "displayName": "Access to EXO requires MFA",
+    "state": "enabled",
+    "conditions": {
+        "clientAppTypes": [
+            "modern",
+            "browser"
+        ],
+        "applications": {
+            "includeApplications": [
+                "00000002-0000-0ff1-ce00-000000000000"
+            ]
+        },
+        "users": {
+            "includeGroups": ["ba8e7ded-8b0f-4836-ba06-8ff1ecc5c8ba"],
+        },
+        "locations": {
+            "includeLocations": [
+                "All"
+            ],
+            "excludeLocations": [
+                "AllTrusted"
+            ]
+        }
+    },
+    "grantControls": {
+        "operator": "OR",
+        "builtInControls": [
+            "mfa"
+        ]
+    }
+}
+```
+
+### Request to block access to Exchange Online from non-trusted regions.
+
+The following is an example of a common configuration: Block access to Exchange Online from non-trusted/unknown regions.
+This example assumes the named location with id = 198ad66e-87b3-4157-85a3-8a7b51794ee9 corresponds to a list of non-trusted/unknown regions.
+
+<!-- {
+  "blockType": "request",
+  "name": "create_conditionalaccesspolicy_from_conditionalaccessroot"
+}-->
+
+```http
+POST https://graph.microsoft.com/beta/conditionalAccess/policies
+Content-type: application/json
+
+{
+    "displayName": "Block access to EXO non-trusted regions.",
+    "state": "enabled",
+    "conditions": {
+        "clientAppTypes": [
+            "modern",
+            "browser",
+            "easSupported",
+            "easUnsupported",
+            "other"
+        ],
+        "applications": {
+            "includeApplications": [
+                "00000002-0000-0ff1-ce00-000000000000"
+            ]
+        },
+        "users": {
+            "includeGroups": ["ba8e7ded-8b0f-4836-ba06-8ff1ecc5c8ba"],
+        },
+        "locations": {
+            "includeLocations": [
+                "198ad66e-87b3-4157-85a3-8a7b51794ee9"
+            ]
+        }
+    },
+    "grantControls": {
+        "operator": "OR",
+        "builtInControls": [
+            "block"
+        ]
+    }
+}
+```
+### Request showing usage of all conditions/controls.
+
+The following is an example of the request showing the usage of all the conditions/controls.
 <!-- {
   "blockType": "request",
   "name": "create_conditionalaccesspolicy_from_conditionalaccessroot"
@@ -169,8 +264,6 @@ Content-type: application/json
 ### Response
 
 The following is an example of the response.
-
-> **Note:** The response object shown here might be shortened for readability. All the properties will be returned from an actual call.
 
 <!-- {
   "blockType": "response",
