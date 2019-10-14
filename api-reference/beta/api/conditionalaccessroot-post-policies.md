@@ -98,6 +98,73 @@ Content-type: application/json
 }
 ```
 
+### Response
+
+The following is an example of the response.
+
+<!-- {
+  "blockType": "response",
+  "truncated": false,
+  "@odata.type": "microsoft.graph.conditionalAccessPolicy"
+} -->
+
+```http
+HTTP/1.1 201 Created
+Content-type: application/json
+
+{
+    "@odata.context": "https://graph.microsoft.com/beta/$metadata#conditionalAccess/policies/$entity",
+    "id": "7359d0e0-d8a9-4afa-8a93-e23e099d7be8",
+    "displayName": "Access to EXO requires MFA",
+    "createdDateTime": "2019-10-14T19:52:00.050958Z",
+    "modifiedDateTime": null,
+    "state": "enabled",
+    "sessionControls": null,
+    "conditions": {
+        "signInRiskLevels": [],
+        "clientAppTypes": [
+            "modern",
+            "browser"
+        ],
+        "platforms": null,
+        "deviceStates": null,
+        "applications": {
+            "includeApplications": [
+                "00000002-0000-0ff1-ce00-000000000000"
+            ],
+            "excludeApplications": [],
+            "includeUserActions": []
+        },
+        "users": {
+            "includeUsers": [],
+            "excludeUsers": [],
+            "includeGroups": [
+                "ba8e7ded-8b0f-4836-ba06-8ff1ecc5c8ba"
+            ],
+            "excludeGroups": [],
+            "includeRoles": [],
+            "excludeRoles": []
+        },
+        "locations": {
+            "includeLocations": [
+                "All"
+            ],
+            "excludeLocations": [
+                "AllTrusted"
+            ]
+        }
+    },
+    "grantControls": {
+        "operator": "OR",
+        "builtInControls": [
+            "mfa"
+        ],
+        "customAuthenticationFactors": [],
+        "termsOfUse": []
+    }
+}
+```
+
 ### Request to block access to Exchange Online from non-trusted regions.
 
 The following is an example of a common configuration: Block access to Exchange Online from non-trusted/unknown regions.
@@ -145,6 +212,75 @@ Content-type: application/json
     }
 }
 ```
+
+### Response
+
+The following is an example of the response.
+
+<!-- {
+  "blockType": "response",
+  "truncated": false,
+  "@odata.type": "microsoft.graph.conditionalAccessPolicy"
+} -->
+
+```http
+HTTP/1.1 201 Created
+Content-type: application/json
+
+{
+    "@odata.context": "https://canary.graph.microsoft.com/testprodbetaconditionalAccessBetaDocs/$metadata#conditionalAccess/policies/$entity",
+    "id": "c98e6c3d-f6ca-42ea-a927-773b6f12a0c2",
+    "displayName": "Block access to EXO non-trusted regions.",
+    "createdDateTime": "2019-10-14T19:53:11.3705634Z",
+    "modifiedDateTime": null,
+    "state": "enabled",
+    "sessionControls": null,
+    "conditions": {
+        "signInRiskLevels": [],
+        "clientAppTypes": [
+            "modern",
+            "browser",
+            "easSupported",
+            "easUnsupported",
+            "other"
+        ],
+        "platforms": null,
+        "deviceStates": null,
+        "applications": {
+            "includeApplications": [
+                "00000002-0000-0ff1-ce00-000000000000"
+            ],
+            "excludeApplications": [],
+            "includeUserActions": []
+        },
+        "users": {
+            "includeUsers": [],
+            "excludeUsers": [],
+            "includeGroups": [
+                "ba8e7ded-8b0f-4836-ba06-8ff1ecc5c8ba"
+            ],
+            "excludeGroups": [],
+            "includeRoles": [],
+            "excludeRoles": []
+        },
+        "locations": {
+            "includeLocations": [
+                "198ad66e-87b3-4157-85a3-8a7b51794ee9"
+            ],
+            "excludeLocations": []
+        }
+    },
+    "grantControls": {
+        "operator": "OR",
+        "builtInControls": [
+            "block"
+        ],
+        "customAuthenticationFactors": [],
+        "termsOfUse": []
+    }
+}
+```
+
 ### Request showing usage of all conditions/controls.
 
 The following is an example of the request showing the usage of all the conditions/controls.
