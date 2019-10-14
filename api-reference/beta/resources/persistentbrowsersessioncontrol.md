@@ -17,7 +17,7 @@ Session control to define whether to persist cookies or not. Inehrits from [Cond
 
 | Property     | Type        | Description |
 |:-------------|:------------|:------------|
-|isEnabled     |Boolean      | Specifies whether the session control is enabled. Possible values: true, false. |
+|isEnabled     |Boolean      | Specifies whether the session control is enabled. |
 |mode|String| Possible values are: `always`, `never`.|
 
 ## Relationships

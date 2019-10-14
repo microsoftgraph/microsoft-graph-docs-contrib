@@ -17,7 +17,7 @@ Session control to enforce sign-in frequency. Inehrits from [Conditional Access 
 
 | Property     | Type        | Description |
 |:-------------|:------------|:------------|
-|isEnabled     |Boolean      | Specifies whether the session control is enabled. Possible values: true, false. |
+|isEnabled     |Boolean      | Specifies whether the session control is enabled. |
 |type          |String       | Possible values are: `days`, `hours`.|
 |value         |Int32        | The number of `days` or `hours`.|
 

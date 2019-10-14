@@ -11,7 +11,8 @@ doc_type: resourcePageType
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Represents a complex type of session controls that is enforced after sign-in.
+Represents session controls that are enforced after sign-in.
+All the session controls inherit from [conditionalAccessSessionControl](conditionalaccesssessioncontrol.md).
 
 ## Properties
 
