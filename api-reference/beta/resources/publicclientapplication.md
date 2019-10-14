@@ -3,7 +3,7 @@ title: "publicClientApplication resource type"
 description: "Specifies settings for non Web App or Web Api. (e.g. Mobile or other public client such as an installed application running on a desktop device)"
 localization_priority: Normal
 doc_type: resourcePageType
-ms.prod: ""
+ms.prod: "microsoft-identity-platform"
 author: "davidmu1"
 ---
 
@@ -11,7 +11,7 @@ author: "davidmu1"
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Specifies settings for non Web App or Web Api. (e.g. Mobile or other public client such as an installed application running on a desktop device)
+Specifies settings for non-web app or non-web API (for example, mobile or other public clients such as an installed application running on a desktop device).
 
 ## Properties
 
