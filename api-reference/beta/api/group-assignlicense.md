@@ -85,12 +85,12 @@ The response is the updated group object.
 <!-- {
   "blockType": "response",
   "truncated": true,
-  "@odata.type": "microsoft.graph.user"
+  "@odata.type": "microsoft.graph.group"
 } -->
 ```http
 HTTP/1.1 202 Accepted
 Content-type: application/json
-
+location: https://graph.microsoft.com/v2/d056d009-17b3-4106-8173-cd3978ada898/directoryObjects/1ad75eeb-7e5a-4367-a493-9214d90d54d0/Microsoft.DirectoryServices.Group
 
 {
   "id": "1ad75eeb-7e5a-4367-a493-9214d90d54d0",
@@ -131,11 +131,12 @@ The response is the updated group object.
 <!-- {
   "blockType": "response",
   "truncated": true,
-  "@odata.type": "microsoft.graph.user"
+  "@odata.type": "microsoft.graph.group"
 } -->
 ```http
 HTTP/1.1 202 Accepted
 Content-type: application/json
+location: https://graph.microsoft.com/v2/d056d009-17b3-4106-8173-cd3978ada898/directoryObjects/1ad75eeb-7e5a-4367-a493-9214d90d54d0/Microsoft.DirectoryServices.Group
 
 
 {
