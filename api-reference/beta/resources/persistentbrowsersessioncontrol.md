@@ -11,7 +11,7 @@ doc_type: resourcePageType
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Session control to define whether to persist cookies or not.
+Session control to define whether to persist cookies or not. Inehrits from [Conditional Access Session Control](conditionalaccesssessioncontrol.md).
 
 ## Properties
 
