@@ -10,7 +10,7 @@ const options = {
 
 const client = Client.init(options);
 
-const String = {
+const string = {
   ids: [
     "80a963dd-84af-4eb8-b2a6-781e444d4fb0",
     "62e90394-69f5-4237-9190-012177145e10",
@@ -21,6 +21,6 @@ const String = {
 
 let res = await client.api('/groups/{id}/checkMemberObjects')
 	.version('beta')
-	.post(String);
+	.post(string);
 
 ```
