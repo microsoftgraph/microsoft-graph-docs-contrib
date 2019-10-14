@@ -131,6 +131,9 @@ items:
       - name: Identity and access
         href: azuread-identity-access-management-concept-overview.md
         displaName: Azure AD, Microsoft identity platform
+        items:
+          - name: Information Protection        
+            href: information-protection-overview.md
       - name: Mail
         displayName: Outlook, Outlook mail
         items:
