@@ -21,23 +21,29 @@ For details about known issues with Microsoft Graph APIs, see [Known issues](kno
 |Addition|beta|Added new complex types:<br/>[conditionalAccessSessionControl](/graph/api/resources/conditionalAccessSessionControl)<br/>[applicationEnforcedRestrictionsSessionControl](/graph/api/resources/applicationEnforcedRestrictionsSessionControl)<br/>[cloudAppSecuritySessionControl](/graph/api/resources/cloudAppSecuritySessionControl)<br/>[signInFrequencySessionControl](/graph/api/resources/signInFrequencySessionControl)<br/>[persistentBrowserSessionControl](/graph/api/resources/persistentBrowserSessionControl)<br/>[conditionalAccessSessionControls](/graph/api/resources/conditionalAccessSessionControls)<br/>[conditionalAccessApplications](/graph/api/resources/conditionalAccessApplications)<br/>[conditionalAccessUsers](/graph/api/resources/conditionalAccessUsers)<br/>[conditionalAccessPlatforms](/graph/api/resources/conditionalAccessPlatforms)<br/>[conditionalAccessLocations](/graph/api/resources/conditionalAccessLocations)<br/>[conditionalAccessDeviceStates](/graph/api/resources/conditionalAccessDeviceStates)<br/>[conditionalAccessConditionSet](/graph/api/resources/conditionalAccessConditionSet)<br/>[conditionalAccessGrantControls](/graph/api/resources/conditionalAccessGrantControls)<br/>
 |Addition|beta|Added new enum types:<br/>[conditionalAccessPolicyState](/graph/api/resources/enums?view=graph-rest-beta#conditionalAccessPolicyState)<br/>[conditionalAccessClientApp](/graph/api/resources/enums?view=graph-rest-beta#conditionalAccessClientApp)<br/>[conditionalAccessGrantControl](/graph/api/resources/enums?view=graph-rest-beta#conditionalAccessGrantControl)<br/>[cloudAppSecuritySessionControlType](/graph/api/resources/enums?view=graph-rest-beta#cloudAppSecuritySessionControlType)<br/>[signinFrequencyType](/graph/api/resources/enums?view=graph-rest-beta#signinFrequencyType)<br/>[persistentBrowserSessionMode](/graph/api/resources/enums?view=graph-rest-beta#persistentBrowserSessionMode)<br/>[conditionalAccessDevicePlatform](/graph/api/resources/enums?view=graph-rest-beta#conditionalAccessDevicePlatform)<br/>
 
-### Teamwork (Microsoft Teams)
-
-| **Change type** | **Version**   | **Description**                          |
-| :-------------- | :------------ | :--------------------------------------- |
-| Addition | Beta | Added the [Get team photo](/graph/api/team-get-photo?view=graph-rest-beta) and [Update team photo](/graph/api/team-update-photo?view=graph-rest-beta) methods. |
-
 ### Groups
 
 | **Change type** | **Version**   | **Description**                          |
 | :-------------- | :------------ | :--------------------------------------- |
 | Addition        | Beta          |Added the **hideFromAddressLists** and **hideFromOutlookClients** properties to the [group](/graph/api/resources/group?view=graph-rest-beta) entity, to control the visibility of a group in the Outlook user interface.|
+| Addition | Beta | Added the [group: assignLicense API](../api-reference/beta/api/group-assignlicense.md), which can be used to assign license to a [group](../api-reference/beta/resources/group.md). |
 
 ### Mail (Outlook)
 
 | **Change type** | **Version**   | **Description**                          |
 | :-------------- | :------------ | :--------------------------------------- |
 | Addition        | v1.0          | Added the **message** parameter to the method for [replying a message on the fly](/graph/api/message-reply?view=graph-rest-1.0). |
+
+### Teamwork (Microsoft Teams)
+
+| **Change type** | **Version**   | **Description**                          |
+| :-------------- | :------------ | :--------------------------------------- |
+| Addition | Beta | Added the [Get team photo](/graph/api/team-get-photo?view=graph-rest-beta) and [Update team photo](/graph/api/team-update-photo?view=graph-rest-beta) methods. |
+
+### Users
+| **Change type** | **Version** | **Description**                          |
+| :-------------- | :---------- | :--------------------------------------- |
+| Addition | beta | Added the [user: reprocessLicenseAssignment API](../api-reference/beta/api/user-reprocesslicense.md), which can be used to reprocess all group-based license assignments for the [user](../api-reference/beta/resources/user.md). |
 
 ### Users | Outlook settings
 

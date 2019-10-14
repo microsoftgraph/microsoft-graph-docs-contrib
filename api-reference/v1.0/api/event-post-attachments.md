@@ -146,7 +146,7 @@ Content-type: application/json
 Here is an example which attaches an event with another event as an item attachment.
 
 <!-- {
-  "blockType": "request",
+  "blockType": "ignored",
   "name": "create_item_attachment_from_event"
 }-->
 
