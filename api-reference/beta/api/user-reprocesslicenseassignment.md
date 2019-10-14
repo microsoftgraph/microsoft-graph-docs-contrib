@@ -29,6 +29,10 @@ One of the following permissions is required to call this API. To learn more, in
 POST /users/{id}/reprocessLicenseAssignment
 
 ```
+## Request headers
+| Header       | Value |
+|:---------------|:--------|
+| Authorization  | Bearer {token}. Required.  |
 
 ## Response
 
