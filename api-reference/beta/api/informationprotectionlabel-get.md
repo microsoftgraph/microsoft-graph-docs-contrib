@@ -3,7 +3,7 @@ title: "Get informationProtectionLabel"
 description: "Retrieve the properties and relationships of the specified informationprotectionlabel object."
 localization_priority: Normal
 author: "tommoser"
-ms.prod: "microsoft.informationprotection"
+ms.prod: "microsoft-identity-platform"
 doc_type: "apiPageType"
 ---
 
@@ -21,7 +21,7 @@ One of the following permissions is required to call this API. To learn more, in
 | :------------------------------------- | :------------------------------------------ |
 | Delegated (work or school account)     | InformationProtectionPolicy.Read            |
 | Delegated (personal Microsoft account) | Not supported.                              |
-| Application                            | InformationProtectionPolicy.Read.All        | 
+| Application                            | InformationProtectionPolicy.Read.All        |
 
 ## HTTP request
 
@@ -38,9 +38,10 @@ This method supports some of the OData query parameters to help customize the re
 
 ## Request headers
 
-| Name          | Description    |
-| :------------ | :------------- |
-| Authorization | Bearer {token} |
+| Name          | Description                 |
+| :------------ | :-------------------------- |
+| Authorization | Bearer {token}; Required.   |
+| Content-type  | application/json; Required. |
 
 ## Request body
 

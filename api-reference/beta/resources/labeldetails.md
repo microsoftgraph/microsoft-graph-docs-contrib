@@ -3,7 +3,7 @@ title: "labelDetails resource type"
 description: "Represents the label details of an information protection label."
 localization_priority: Normal
 author: "tommoser"
-ms.prod: "microsoft.informationprotection"
+ms.prod: "microsoft-identity-platform"
 doc_type: "resourcePageType"
 ---
 
@@ -11,7 +11,7 @@ doc_type: "resourcePageType"
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-**labelDetails** provides information on a single information protection label. May be returned [evaluateRemoval](../api/informationprotectionlabel-evaluateremoval.md), [evaluateApplication](../api/informationprotectionlabel-evaluateapplication.md), and [extractLabel](../api/informationprotectionlabel-extractLabel.md)
+Represents the label details of an information protection label. **labelDetails** provides information about a single information protection label. Can be returned by [evaluateRemoval](../api/informationprotectionlabel-evaluateremoval.md), [evaluateApplication](../api/informationprotectionlabel-evaluateapplication.md), and [extractLabel](../api/informationprotectionlabel-extractLabel.md)
 
 ## Properties
 

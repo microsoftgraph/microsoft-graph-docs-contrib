@@ -3,7 +3,7 @@ title: "informationProtectionAction resource type"
 description: "Describes the abtract informationProtectionAction entity."
 localization_priority: Normal
 author: "tommoser"
-ms.prod: "microsoft.informationprotection"
+ms.prod: "microsoft-identity-platform"
 doc_type: "resourcePageType"
 ---
 

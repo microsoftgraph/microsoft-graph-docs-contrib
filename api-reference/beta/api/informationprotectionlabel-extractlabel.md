@@ -3,7 +3,7 @@ title: "informationProtectionLabel: extractLabel"
 description: "Retrieve informationProtectionContentLabel using metadata from a labeled object."
 localization_priority: Normal
 author: "tommoser"
-ms.prod: "microsoft.informationprotection"
+ms.prod: "microsoft-identity-platform"
 doc_type: "apiPageType"
 ---
 
@@ -24,7 +24,7 @@ One of the following permissions is required to call this API. To learn more, in
 | :------------------------------------- | :------------------------------------------ |
 | Delegated (work or school account)     | InformationProtectionPolicy.Read            |
 | Delegated (personal Microsoft account) | Not supported.                              |
-| Application                            | InformationProtectionPolicy.Read.All        | 
+| Application                            | InformationProtectionPolicy.Read.All        |
 
 ## HTTP request
 
@@ -36,9 +36,10 @@ POST /informationprotection/policy/labels/extractLabel
 
 ## Request headers
 
-| Name          | Description    |
-| :------------ | :------------- |
-| Authorization | Bearer {token} |
+| Name          | Description                    |
+| :------------ | :----------------------------- |
+| Authorization | Bearer {token}                 |
+| Content-type  | Content-type: application/json |
 
 ## Request body
 

@@ -1,9 +1,9 @@
 ---
 title: "downgradeJustification resource type"
-description: "User input on why downgrade was performed."
+description: "Represents user input on why downgrade was performed."
 localization_priority: Normal
 author: "tommoser"
-ms.prod: "microsoft.informationprotection"
+ms.prod: "microsoft-identity-platform"
 doc_type: "resourcePageType"
 ---
 
@@ -11,7 +11,7 @@ doc_type: "resourcePageType"
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Downgrade justification might be required based on label policy configuration in Office Security and Compliance Center.
+Represents user input on why downgrade was performed. Downgrade justification might be required based on label policy configuration in Office Security and Compliance Center.
 
 ## Properties
 

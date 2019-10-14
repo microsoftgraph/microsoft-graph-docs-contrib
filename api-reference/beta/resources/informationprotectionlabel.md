@@ -3,7 +3,7 @@ title: "informationProtectionLabel resource type"
 description: "Describes the information protection label that details how to properly apply a sensitivity label to information."
 localization_priority: Normal
 author: "tommoser"
-ms.prod: "microsoft.informationprotection"
+ms.prod: "microsoft-identity-platform"
 doc_type: "resourcePageType"
 ---
 
@@ -11,17 +11,18 @@ doc_type: "resourcePageType"
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-The [informationProtectionLabel](informationprotectionlabel.md) resource describes the configuration of sensitivity labels that apply to a user or tenant.  
+Describes the information protection label that details how to properly apply a sensitivity label to information. The [informationProtectionLabel](informationprotectionlabel.md) resource describes the configuration of sensitivity labels that apply to a user or tenant.  
 
 ## Methods
 
 | Method                                                                                              | Return Type                                                               | Description                                                                                                                                                            |
 | :-------------------------------------------------------------------------------------------------- | :------------------------------------------------------------------------ | :--------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| [Get informationProtectionLabel](../api/informationprotectionlabel-get.md)                          | [informationProtectionLabel](informationprotectionlabel.md)               | Read all configured information protection labels for a user or tenant.                                                                                                |
-| [Evaluateapplication](../api/informationprotectionlabel-evaluateapplication.md)                     | [informationProtectionAction](informationprotectionaction.md) collection  | Given an input of [contentInfo](contentInfo.md) and [labelingOptions](labelingOptions.md), compute the set of actions require to apply the label.                      |
-| [Evaluateclassificationresults](../api/informationprotectionlabel-evaluateclassificationresults.md) | [informationProtectionAction](informationprotectionaction.md) collection  | Given an input of [contentInfo](contentInfo.md) and [classificationResults](), compute the set of actions require to apply the label.                                  |
-| [Evaluateremoval](../api/informationprotectionlabel-evaluateremoval.md)                             | [informationProtectionAction](informationprotectionaction.md) collection  | Given an input of [contentInfo](contentInfo.md) and [downgradeJustification](downgradeJustification.md), compute the actions that should be taken to remove the label. |
-| [Extractlabel](../api/informationprotectionlabel-extractlabel.md)                                   | [informationProtectionContentLabel](informationprotectioncontentlabel.md) | Given an input of [contentInfo](contentInfo.md), return details on the [informationProtectionLabel](informationProtectionLabel.md) that the metadata represents.       |
+| [Get informationProtectionLabel](../api/informationprotectionlabel-get.md)                          | [informationProtectionLabel](informationprotectionlabel.md)               | Given a specific label ID, return the **informationProtectionLabel**                                                                                                   |
+| [evaluateapplication](../api/informationprotectionlabel-evaluateapplication.md)                     | [informationProtectionAction](informationprotectionaction.md) collection  | Given an input of [contentInfo](contentInfo.md) and [labelingOptions](labelingOptions.md), compute the set of actions require to apply the label.                      |
+| [evaluateClassificationResults](../api/informationprotectionlabel-evaluateclassificationresults.md) | [informationProtectionAction](informationprotectionaction.md) collection  | Given an input of [contentInfo](contentInfo.md) and [classificationResults](), compute the set of actions require to apply the label.                                  |
+| [evaluateRemoval](../api/informationprotectionlabel-evaluateremoval.md)                             | [informationProtectionAction](informationprotectionaction.md) collection  | Given an input of [contentInfo](contentInfo.md) and [downgradeJustification](downgradeJustification.md), compute the actions that should be taken to remove the label. |
+| [extractLabel](../api/informationprotectionlabel-extractlabel.md)                                   | [informationProtectionContentLabel](informationprotectioncontentlabel.md) | Given an input of [contentInfo](contentInfo.md), return details on the [informationProtectionLabel](informationProtectionLabel.md) that the metadata represents.       |
+| [List informationProtectionLabel](../api/informationprotectionpolicy-list-labels.md)                | [informationProtectionLabel](informationprotectionlabel.md) collection | List all configured information protection labels for a user or tenant.                                                                                                |
 
 ## Properties
 

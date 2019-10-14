@@ -3,7 +3,7 @@ title: "customAction resource type"
 description: "Represents any custom actions that a label may provide, if configured by the administrator."
 localization_priority: Normal
 author: "tommoser"
-ms.prod: "microsoft.informationprotection"
+ms.prod: "microsoft-identity-platform"
 doc_type: "resourcePageType"
 ---
 
@@ -11,7 +11,7 @@ doc_type: "resourcePageType"
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Custom actions might be defined as part of an [informationProtectionLabel](informationProtectionLabel.md) via Office 365 Security and Compliance Center's PowerShell module. The actions must be understood by the consuming application.
+Represents any custom actions that a label may provide, if configured by the administrator. Custom actions might be defined as part of an [informationProtectionLabel](informationProtectionLabel.md) via Office 365 Security and Compliance Center's PowerShell module. The actions must be understood by the consuming application.
 
 ## Properties
 

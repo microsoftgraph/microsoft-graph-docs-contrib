@@ -3,7 +3,7 @@ title: "informationProtectionLabel: evaluateClassificationResults"
 description: "Evaluate which label to apply based on existing content info and a classification result."
 localization_priority: Normal
 author: "tommoser"
-ms.prod: "microsoft.informationprotection"
+ms.prod: "microsoft-identity-platform"
 doc_type: "apiPageType"
 ---
 
@@ -51,9 +51,10 @@ POST /informationprotection/policy/labels/{id}/evaluateClassificationResults
 
 ## Request headers
 
-| Name          | Description    |
-| :------------ | :------------- |
-| Authorization | Bearer {token} |
+| Name          | Description                 |
+| :------------ | :-------------------------- |
+| Authorization | Bearer {token}; Required.   |
+| Content-type  | application/json; Required. |
 
 ## Request body
 
