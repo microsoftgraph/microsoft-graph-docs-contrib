@@ -56,17 +56,17 @@ var bookingAppointment = new BookingAppointment
 		{
 			{"@odata.type","#microsoft.graph.dateTimeTimeZone"}
 		},
-		DateTime = "2018-05-01T15:30:00+03:00",
+		DateTime = "2018-05-01T12:30:00+00:00",
 		TimeZone = "UTC"
 	},
-	InvoiceAmount = 10.0,
+	InvoiceAmount = 10,
 	InvoiceDate = new DateTimeTimeZone
 	{
 		AdditionalData = new Dictionary<string, object>()
 		{
 			{"@odata.type","#microsoft.graph.dateTimeTimeZone"}
 		},
-		DateTime = "2018-05-01T15:30:00+03:00",
+		DateTime = "2018-05-01T12:30:00+00:00",
 		TimeZone = "UTC"
 	},
 	InvoiceId = "1001",
@@ -75,7 +75,7 @@ var bookingAppointment = new BookingAppointment
 	OptOutOfCustomerEmail = false,
 	PostBuffer = "PT10M",
 	PreBuffer = "PT5M",
-	Price = 10.0,
+	Price = 10,
 	PriceType = BookingPriceType.FixedPrice,
 	Reminders = new List<BookingReminder>()
 	{
@@ -153,7 +153,7 @@ var bookingAppointment = new BookingAppointment
 		{
 			{"@odata.type","#microsoft.graph.dateTimeTimeZone"}
 		},
-		DateTime = "2018-05-01T15:00:00+03:00",
+		DateTime = "2018-05-01T12:00:00+00:00",
 		TimeZone = "UTC"
 	}
 };

@@ -1,9 +1,10 @@
 ---
 title: "iosUpdatesInstallStatus enum type"
 description: "Not yet documented"
-author: "tfitzmac"
+author: "davidmu1"
 localization_priority: Normal
 ms.prod: "Intune"
+doc_type: enumPageType
 ---
 
 # iosUpdatesInstallStatus enum type
@@ -32,6 +33,7 @@ Not yet documented
 |installFailed|-2016330702|Not yet documented|
 |notSupportedOperation|-2016330701|Not yet documented|
 |sharedDeviceUserLoggedInError|-2016330699|Not yet documented|
+
 
 
 

@@ -1,9 +1,10 @@
 ---
 title: "Update windowsInformationProtectionPolicy"
 description: "Update the properties of a windowsInformationProtectionPolicy object."
-author: "tfitzmac"
+author: "davidmu1"
 localization_priority: Normal
 ms.prod: "Intune"
+doc_type: apiPageType
 ---
 
 # Update windowsInformationProtectionPolicy
@@ -383,6 +384,7 @@ Content-Length: 4577
   "daysWithoutContactBeforeUnenroll": 0
 }
 ```
+
 
 
 

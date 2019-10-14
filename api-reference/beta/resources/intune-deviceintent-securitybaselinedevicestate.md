@@ -4,6 +4,7 @@ description: "The security baseline compliance state summary of the security bas
 author: "rolyon"
 localization_priority: Normal
 ms.prod: "Intune"
+doc_type: resourcePageType
 ---
 
 # securityBaselineDeviceState resource type
@@ -55,8 +56,6 @@ Here is a JSON representation of the resource.
   "lastReportedDateTime": "String (timestamp)"
 }
 ```
-
-
 
 
 

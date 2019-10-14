@@ -4,6 +4,7 @@ description: "Entity that represents a defined collection of device settings"
 author: "rolyon"
 localization_priority: Normal
 ms.prod: "Intune"
+doc_type: resourcePageType
 ---
 
 # deviceManagementTemplate resource type
@@ -34,7 +35,7 @@ Entity that represents a defined collection of device settings
 |versionInfo|String|The template's version information|
 |isDeprecated|Boolean|The template is deprecated or not. Intents cannot be created from a deprecated template.|
 |intentCount|Int32|Number of Intents created from this template.|
-|templateType|[deviceManagementTemplateType](../resources/intune-deviceintent-devicemanagementtemplatetype.md)|The template's type. Possible values are: `securityBaseline`, `specializedDevices`, `advancedThreatProtectionSecurityBaseline`, `deviceConfiguration`, `custom`.|
+|templateType|[deviceManagementTemplateType](../resources/intune-deviceintent-devicemanagementtemplatetype.md)|The template's type. Possible values are: `securityBaseline`, `specializedDevices`, `advancedThreatProtectionSecurityBaseline`, `deviceConfiguration`, `custom`, `securityTemplate`.|
 |publishedDateTime|DateTimeOffset|When the template was published|
 
 ## Relationships
@@ -65,8 +66,6 @@ Here is a JSON representation of the resource.
   "publishedDateTime": "String (timestamp)"
 }
 ```
-
-
 
 
 

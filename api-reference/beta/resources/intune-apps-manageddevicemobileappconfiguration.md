@@ -4,6 +4,7 @@ description: "An abstract class for Mobile app configuration for enrolled device
 author: "rolyon"
 localization_priority: Normal
 ms.prod: "Intune"
+doc_type: resourcePageType
 ---
 
 # managedDeviceMobileAppConfiguration resource type
@@ -67,8 +68,6 @@ Here is a JSON representation of the resource.
   "version": 1024
 }
 ```
-
-
 
 
 

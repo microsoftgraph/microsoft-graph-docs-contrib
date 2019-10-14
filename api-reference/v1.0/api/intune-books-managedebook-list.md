@@ -1,9 +1,10 @@
 ---
 title: "List managedEBooks"
 description: "List properties and relationships of the managedEBook objects."
-author: "tfitzmac"
+author: "davidmu1"
 localization_priority: Normal
 ms.prod: "Intune"
+doc_type: apiPageType
 ---
 
 # List managedEBooks
@@ -79,6 +80,7 @@ Content-Length: 756
   ]
 }
 ```
+
 
 
 

@@ -4,6 +4,7 @@ description: "Retrieve the properties and relationships of the message object."
 author: "angelgolfer-ms"
 localization_priority: Normal
 ms.prod: "outlook"
+doc_type: apiPageType
 ---
 
 # Get message
@@ -84,8 +85,10 @@ Do not supply a request body for this method.
 ## Response
 
 If successful, this method returns a `200 OK` response code and [message](../resources/message.md) object in the response body.
-## Example
-##### Request 1
+
+## Examples
+### Example 1
+#### Request
 The first example gets the specified message. It does not specify any header to indicate the desired format of the body to be returned.
 
 # [HTTP](#tab/http)
@@ -94,14 +97,14 @@ The first example gets the specified message. It does not specify any header to 
   "sampleKeys": ["AAMkAGI1AAAoZCfHAAA="],
   "name": "get_message"
 }-->
-```http
+```msgraph-interactive
 GET https://graph.microsoft.com/beta/me/messages/AAMkAGI1AAAoZCfHAAA=
 ```
 # [C#](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/get-message-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# [Javascript](#tab/javascript)
+# [JavaScript](#tab/javascript)
 [!INCLUDE [sample-code](../includes/snippets/javascript/get-message-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
@@ -109,13 +112,9 @@ GET https://graph.microsoft.com/beta/me/messages/AAMkAGI1AAAoZCfHAAA=
 [!INCLUDE [sample-code](../includes/snippets/objc/get-message-objc-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# [Java](#tab/java)
-[!INCLUDE [sample-code](../includes/snippets/java/get-message-java-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
 ---
 
-##### Response 1
+#### Response
 Here is an example of the response. The **body** and **uniqueBody** properties are returned in the default HTML format.
 Note: The response object shown here is truncated for brevity. All of the properties will be returned from an actual call.
 <!-- {
@@ -145,7 +144,9 @@ Content-length: 523
 }
 ```
 
-##### Request 2
+
+### Example 2
+#### Request
 In the next example, the signed-in user is Dana Swope. The example shows getting the details of all the mentions in the specified message in Dana's mailbox.
 
 # [HTTP](#tab/http)
@@ -154,14 +155,14 @@ In the next example, the signed-in user is Dana Swope. The example shows getting
   "sampleKeys": ["AQMkADJmMTUAAAgVZAAAA"],
   "name": "get_mentions_in_message"
 }-->
-```http
+```msgraph-interactive
 GET https://graph.microsoft.com/beta/me/messages/AQMkADJmMTUAAAgVZAAAA/?$expand=mentions
 ```
 # [C#](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/get-mentions-in-message-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# [Javascript](#tab/javascript)
+# [JavaScript](#tab/javascript)
 [!INCLUDE [sample-code](../includes/snippets/javascript/get-mentions-in-message-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
@@ -169,13 +170,9 @@ GET https://graph.microsoft.com/beta/me/messages/AQMkADJmMTUAAAgVZAAAA/?$expand=
 [!INCLUDE [sample-code](../includes/snippets/objc/get-mentions-in-message-objc-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# [Java](#tab/java)
-[!INCLUDE [sample-code](../includes/snippets/java/get-mentions-in-message-java-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
 ---
 
-##### Response 2
+#### Response
 Here is an example of the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.
 <!-- {
   "blockType": "response",
@@ -273,8 +270,8 @@ Content-length: 2248
 }
 ```
 
-
-##### Request 3
+### Example 3
+#### Request
 
 The third example shows how to use a `Prefer: outlook.body-content-type="text"` header to get the **body** and **uniqueBody** of the specified message in text format.
 
@@ -286,7 +283,7 @@ The third example shows how to use a `Prefer: outlook.body-content-type="text"` 
   "name": "get_message_in_text"
 }-->
 
-```http
+```msgraph-interactive
 GET https://graph.microsoft.com/beta/me/messages/AAMkAGI1AAAoZCfHAAA=/?$select=subject,body,bodyPreview,uniqueBody
 Prefer: outlook.body-content-type="text"
 ```
@@ -294,7 +291,7 @@ Prefer: outlook.body-content-type="text"
 [!INCLUDE [sample-code](../includes/snippets/csharp/get-message-in-text-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# [Javascript](#tab/javascript)
+# [JavaScript](#tab/javascript)
 [!INCLUDE [sample-code](../includes/snippets/javascript/get-message-in-text-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
@@ -302,14 +299,10 @@ Prefer: outlook.body-content-type="text"
 [!INCLUDE [sample-code](../includes/snippets/objc/get-message-in-text-objc-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# [Java](#tab/java)
-[!INCLUDE [sample-code](../includes/snippets/java/get-message-in-text-java-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
 ---
 
 
-##### Response 3
+#### Response
 
 Here is an example of the response. 
 Note: The response includes a `Preference-Applied: outlook.body-content-type` header to acknowledge the `Prefer: outlook.body-content-type` request header.
@@ -322,7 +315,6 @@ Note: The response includes a `Preference-Applied: outlook.body-content-type` he
 HTTP/1.1 200 OK
 Content-type: application/json
 Preference-Applied: outlook.body-content-type="text"
-Content-length: 1550
 
 {
     "@odata.context":"https://graph.microsoft.com/beta/$metadata#users('cd209b0b-3f83-4c35-82d2-d88a61820480')/messages(subject,body,bodyPreview,uniqueBody)/$entity",
@@ -340,8 +332,8 @@ Content-length: 1550
     }
 }
 ```
-
-##### Request 4
+### Example 4
+#### Request
 
 The fourth example shows how to get the Internet message headers of a specific message.  
 
@@ -353,14 +345,14 @@ The fourth example shows how to get the Internet message headers of a specific m
   "name": "get_message_internet_headers"
 }-->
 
-```http
+```msgraph-interactive
 GET https://graph.microsoft.com/beta/me/messages/AAMkAGVmMDEz/?$select=internetMessageHeaders
 ```
 # [C#](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/get-message-internet-headers-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# [Javascript](#tab/javascript)
+# [JavaScript](#tab/javascript)
 [!INCLUDE [sample-code](../includes/snippets/javascript/get-message-internet-headers-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
@@ -368,14 +360,10 @@ GET https://graph.microsoft.com/beta/me/messages/AAMkAGVmMDEz/?$select=internetM
 [!INCLUDE [sample-code](../includes/snippets/objc/get-message-internet-headers-objc-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# [Java](#tab/java)
-[!INCLUDE [sample-code](../includes/snippets/java/get-message-internet-headers-java-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
 ---
 
 
-##### Response 4
+#### Response
 
 Here is an example of the response. Note: The number of Internet message headers in the response object has been reduced for brevity.
 
@@ -421,8 +409,8 @@ Content-type: application/json
 ## See also
 
 - [Add custom data to resources using extensions](/graph/extensibility-overview)
-- [Add custom data to users using open extensions (preview)](/graph/extensibility-open-users)
-- [Add custom data to groups using schema extensions (preview)](/graph/extensibility-schema-groups)
+- [Add custom data to users using open extensions](/graph/extensibility-open-users)
+- [Add custom data to groups using schema extensions](/graph/extensibility-schema-groups)
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2015-10-25 14:57:30 UTC -->

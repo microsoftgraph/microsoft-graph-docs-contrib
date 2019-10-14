@@ -1,9 +1,10 @@
 ---
 title: "cleanWindowsDevice action"
 description: "Clean Windows device"
-author: "tfitzmac"
+author: "davidmu1"
 localization_priority: Normal
 ms.prod: "Intune"
+doc_type: apiPageType
 ---
 
 # cleanWindowsDevice action
@@ -72,6 +73,7 @@ Here is an example of the response. Note: The response object shown here may be 
 ``` http
 HTTP/1.1 204 No Content
 ```
+
 
 
 

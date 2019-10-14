@@ -7,7 +7,7 @@ description: "Automatically generated file. DO NOT MODIFY"
 GraphServiceClient graphClient = new GraphServiceClient( authProvider );
 
 var getYammerActivityUserCounts = await graphClient.Reports
-	.GetYammerActivityUserCounts('D7')
+	.GetYammerActivityUserCounts("D7")
 	.Request()
 	.GetAsync();
 

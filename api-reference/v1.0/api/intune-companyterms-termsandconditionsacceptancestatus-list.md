@@ -1,9 +1,10 @@
 ---
 title: "List termsAndConditionsAcceptanceStatuses"
 description: "List properties and relationships of the termsAndConditionsAcceptanceStatus objects."
-author: "tfitzmac"
+author: "davidmu1"
 localization_priority: Normal
 ms.prod: "Intune"
+doc_type: apiPageType
 ---
 
 # List termsAndConditionsAcceptanceStatuses
@@ -69,6 +70,7 @@ Content-Length: 313
   ]
 }
 ```
+
 
 
 

@@ -4,6 +4,7 @@ description: "List properties and relationships of the windows10EndpointProtecti
 author: "rolyon"
 localization_priority: Normal
 ms.prod: "Intune"
+doc_type: apiPageType
 ---
 
 # List windows10EndpointProtectionConfigurations
@@ -21,7 +22,7 @@ One of the following permissions is required to call this API. To learn more, in
 |:---|:---|
 |Delegated (work or school account)|DeviceManagementConfiguration.ReadWrite.All, DeviceManagementConfiguration.Read.All|
 |Delegated (personal Microsoft account)|Not supported.|
-|Application|Not supported.|
+|Application|DeviceManagementConfiguration.ReadWrite.All, DeviceManagementConfiguration.Read.All|
 
 ## HTTP Request
 <!-- {
@@ -58,7 +59,7 @@ Here is an example of the response. Note: The response object shown here may be 
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 31927
+Content-Length: 31591
 
 {
   "value": [
@@ -473,18 +474,6 @@ Content-Length: 31927
           }
         ]
       },
-      "userRightsRegisterProcessAsService": {
-        "@odata.type": "microsoft.graph.deviceManagementUserRightsSetting",
-        "state": "blocked",
-        "localUsersOrGroups": [
-          {
-            "@odata.type": "microsoft.graph.deviceManagementUserRightsLocalUserOrGroup",
-            "name": "Name value",
-            "description": "Description value",
-            "securityIdentifier": "Security Identifier value"
-          }
-        ]
-      },
       "xboxServicesEnableXboxGameSaveTask": true,
       "xboxServicesAccessoryManagementServiceStartupMode": "automatic",
       "xboxServicesLiveAuthManagerServiceStartupMode": "automatic",
@@ -646,6 +635,7 @@ Content-Length: 31927
         "policyRulesFromGroupPolicyMerged": true,
         "policyRulesFromGroupPolicyNotMerged": true
       },
+      "attackSurfaceReductionRules": "Attack Surface Reduction Rules value",
       "defenderAdobeReaderLaunchChildProcess": "enable",
       "defenderAttackSurfaceReductionExcludedPaths": [
         "Defender Attack Surface Reduction Excluded Paths value"
@@ -753,12 +743,12 @@ Content-Length: 31927
         "encryptionMethod": "aesCbc256",
         "requireEncryptionForWriteAccess": true,
         "blockCrossOrganizationWriteAccess": true
-      }
+      },
+      "bitLockerRecoveryPasswordRotation": "disabled"
     }
   ]
 }
 ```
-
 
 
 

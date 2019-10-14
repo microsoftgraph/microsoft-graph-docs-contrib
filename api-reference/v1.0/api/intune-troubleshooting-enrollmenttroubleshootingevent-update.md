@@ -1,9 +1,10 @@
 ---
 title: "Update enrollmentTroubleshootingEvent"
 description: "Update the properties of a enrollmentTroubleshootingEvent object."
-author: "tfitzmac"
+author: "davidmu1"
 localization_priority: Normal
 ms.prod: "Intune"
+doc_type: apiPageType
 ---
 
 # Update enrollmentTroubleshootingEvent
@@ -106,6 +107,7 @@ Content-Length: 558
   "failureReason": "Failure Reason value"
 }
 ```
+
 
 
 

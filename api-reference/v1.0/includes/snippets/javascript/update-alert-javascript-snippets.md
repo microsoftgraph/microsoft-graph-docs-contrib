@@ -28,6 +28,6 @@ const alert = {
 };
 
 let res = await client.api('/security/alerts/{alert_id}')
-	.update({alert : alert});
+	.update(alert);
 
 ```

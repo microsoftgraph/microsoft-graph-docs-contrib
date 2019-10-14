@@ -4,6 +4,7 @@ description: "Retrieves the assigned role definitions and role assignments of th
 author: "rolyon"
 localization_priority: Normal
 ms.prod: "intune"
+doc_type: apiPageType
 ---
 
 # getAssignedRoleIdsForLoggedInUser function
@@ -21,8 +22,8 @@ One of the following permissions is required to call this API. To learn more, in
 |Delegated (work or school account)||
 | &nbsp; &nbsp; **Role-based access control (RBAC)** | DeviceManagementRBAC.ReadWrite.All, DeviceManagementRBAC.Read.All|
 |Delegated (personal Microsoft account)|Not supported.|
-|Application|Not supported.|
-
+|Application||
+| &nbsp; &nbsp; **Role-based access control (RBAC)** | DeviceManagementRBAC.ReadWrite.All, DeviceManagementRBAC.Read.All|
 ## HTTP Request
 <!-- {
   "blockType": "ignored"
@@ -70,6 +71,10 @@ Content-Length: 263
   }
 }
 ```
+
+
+
+
 
 
 

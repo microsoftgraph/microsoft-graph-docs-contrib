@@ -1,9 +1,10 @@
 ---
 title: "Update managedAndroidLobApp"
 description: "Update the properties of a managedAndroidLobApp object."
-author: "tfitzmac"
+author: "davidmu1"
 localization_priority: Normal
 ms.prod: "Intune"
+doc_type: apiPageType
 ---
 
 # Update managedAndroidLobApp
@@ -168,6 +169,7 @@ Content-Length: 1325
   "versionCode": "Version Code value"
 }
 ```
+
 
 
 

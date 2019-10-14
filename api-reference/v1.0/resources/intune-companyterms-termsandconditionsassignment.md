@@ -1,9 +1,10 @@
 ---
 title: "termsAndConditionsAssignment resource type"
 description: "A termsAndConditionsAssignment entity represents the assignment of a given Terms and Conditions (T&C) policy to a given group. Users in the group will be required to accept the terms in order to have devices enrolled into Intune."
-author: "tfitzmac"
+author: "davidmu1"
 localization_priority: Normal
 ms.prod: "Intune"
+doc_type: resourcePageType
 ---
 
 # termsAndConditionsAssignment resource type
@@ -47,6 +48,7 @@ Here is a JSON representation of the resource.
   }
 }
 ```
+
 
 
 

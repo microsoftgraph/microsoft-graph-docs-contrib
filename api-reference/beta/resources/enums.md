@@ -1,7 +1,21 @@
 ---
 title: "Enum values"
 description: "Microsoft Graph enumeration values"
+doc_type: enumPageType
+localization_priority: Normal
+ms.prod: ""
+author: ""
 ---
+
+### analyticsActivityType values
+
+| Member
+|:--------------
+| call
+| chat
+| email
+| focus
+| meeting
 
 ### registrationAuthMethod values
 
@@ -28,10 +42,9 @@ description: "Microsoft Graph enumeration values"
 |other|6| An unspecified relationship to the user.|
 |unknownFutureValue|7| Marker value for future compatibility.|
 
-
 ### scheduleEntityTheme values
 
-| Value
+| Member
 |:-------------------------
 | white
 | blue
@@ -78,7 +91,7 @@ description: "Microsoft Graph enumeration values"
 
 ### timeZoneStandard values
 
-| Value
+| Member
 |:-----------------
 | windows
 | iana
@@ -98,7 +111,7 @@ description: "Microsoft Graph enumeration values"
 
 ### physicalAddressType values
 
-| Value
+| Member
 |:-------------------------
 | unknown 
 | home
@@ -108,7 +121,7 @@ description: "Microsoft Graph enumeration values"
 
 ### attendeeType values
 
-| Value
+| Member
 |:-------------------------
 | required
 | optional
@@ -117,7 +130,7 @@ description: "Microsoft Graph enumeration values"
 
 ### externalAudienceScope values
 
-| Value
+| Member
 |:-------------------------
 | none
 | contactsOnly
@@ -126,7 +139,7 @@ description: "Microsoft Graph enumeration values"
 
 ### automaticRepliesStatus values
 
-| Value
+| Member
 |:-------------------------
 | disabled
 | alwaysEnabled
@@ -176,7 +189,7 @@ description: "Microsoft Graph enumeration values"
 
 ### educationExternalSource values
 
-| Value
+| Member
 |:-------------------------
 | sis
 | manual
@@ -185,7 +198,7 @@ description: "Microsoft Graph enumeration values"
 
 ### educationGender values
 
-| Value
+| Member
 |:-------------------------
 | female
 | male
@@ -195,7 +208,7 @@ description: "Microsoft Graph enumeration values"
 
 ### eventType values
 
-| Value
+| Member
 |:-------------------------
 | singleInstance
 | occurrence
@@ -205,7 +218,7 @@ description: "Microsoft Graph enumeration values"
 
 ### sensitivity values
 
-| Value
+| Member
 |:-------------------------
 | normal
 | personal
@@ -215,7 +228,7 @@ description: "Microsoft Graph enumeration values"
 
 ### importance values
 
-| Value
+| Member
 |:-------------------------
 | low
 | normal
@@ -223,7 +236,7 @@ description: "Microsoft Graph enumeration values"
 
 
 ### educationUserRole values
-| Value
+| Member
 |:---------------------
 | student
 | teacher
@@ -232,7 +245,7 @@ description: "Microsoft Graph enumeration values"
 
 ### meetingMessageType values
 
-| Value
+| Member
 |:-----------------
 | none
 | meetingRequest
@@ -244,7 +257,7 @@ description: "Microsoft Graph enumeration values"
 
 ### followupFlagStatus values
 
-| Value
+| Member
 |:-------------------------
 | notFlagged
 | complete
@@ -253,7 +266,7 @@ description: "Microsoft Graph enumeration values"
 
 ### inferenceClassificationType values
 
-| Value
+| Member
 |:-----------------
 | focused
 | other
@@ -261,7 +274,7 @@ description: "Microsoft Graph enumeration values"
 
 ### iosNotificationAlertType values
 
-| Value
+| Member
 |:-------------------------
 | deviceDefault
 | banner
@@ -270,7 +283,7 @@ description: "Microsoft Graph enumeration values"
 
 ### deviceEnrollmentFailureReason values
 
-| Value
+| Member
 |:-------------
 | unknown
 | authentication
@@ -286,7 +299,7 @@ description: "Microsoft Graph enumeration values"
 
 
 ### bodyType values
-| Value
+| Member
 |:---------
 | text
 | html
@@ -294,7 +307,7 @@ description: "Microsoft Graph enumeration values"
 
 ### locationType values
 
-| Value
+| Member
 |:-------------------------
 | default
 | conferenceRoom
@@ -309,7 +322,7 @@ description: "Microsoft Graph enumeration values"
 
 ### locationUniqueIdType values
 
-| Value
+| Member
 |:-------------------------
 | unknown
 | locationStore
@@ -320,7 +333,7 @@ description: "Microsoft Graph enumeration values"
 
 ### messageActionFlag values
 
-| Value
+| Member
 |:-------------------------
 | any
 | call
@@ -347,7 +360,7 @@ description: "Microsoft Graph enumeration values"
 
 ### operationStatus values
 
-| Value
+| Member
 |:-----------------
 | NotStarted
 | Running
@@ -357,7 +370,7 @@ description: "Microsoft Graph enumeration values"
 
 ### onenotePatchActionType values
 
-| Value
+| Member
 |:-------------------------
 | Replace
 | Append
@@ -367,7 +380,7 @@ description: "Microsoft Graph enumeration values"
 
 ### onenotePatchInsertPosition values
 
-| Value
+| Member
 |:-------------------------
 | After
 | Before
@@ -375,7 +388,7 @@ description: "Microsoft Graph enumeration values"
 
 ### phoneType values
 
-| Value
+| Member
 |:-------------------------
 | home
 | business
@@ -391,7 +404,7 @@ description: "Microsoft Graph enumeration values"
 
 ### plannerPreviewType values
 
-| Value
+| Member
 |:-------------------------
 | automatic
 | noPreview
@@ -402,7 +415,7 @@ description: "Microsoft Graph enumeration values"
 
 ### status values
 
-| Value
+| Member
 |:-----------------
 | active
 | updated
@@ -413,7 +426,7 @@ description: "Microsoft Graph enumeration values"
 
 ### weekIndex values
 
-| Value
+| Member
 |:-------------------------
 | first
 | second
@@ -424,7 +437,7 @@ description: "Microsoft Graph enumeration values"
 
 ### dayOfWeek values
 
-| Value
+| Member
 |:-------------------------
 | sunday
 | monday
@@ -436,7 +449,7 @@ description: "Microsoft Graph enumeration values"
 
 ### recurrencePatternType values
 
-| Value
+| Member
 |:-------------------------
 | daily
 | weekly
@@ -448,7 +461,7 @@ description: "Microsoft Graph enumeration values"
 
 ### recurrenceRangeType values
 
-| Value
+| Member
 |:-------------------------
 | endDate
 | noEnd
@@ -456,7 +469,7 @@ description: "Microsoft Graph enumeration values"
 
 
 ### onenoteSourceService values
-| Value
+| Member
 |:---------------------
 | Unknown
 | OneDrive
@@ -466,7 +479,7 @@ description: "Microsoft Graph enumeration values"
 
 ### responseType values
 
-| Value
+| Member
 |:-------------------------
 | none
 | organizer
@@ -478,7 +491,7 @@ description: "Microsoft Graph enumeration values"
 
 ### activityDomain values
 
-| Value
+| Member
 |:-------------------------
 | unknown
 | work
@@ -488,7 +501,7 @@ description: "Microsoft Graph enumeration values"
 
 ### websiteType values
 
-| Value
+| Member
 |:-------------------------
 | other
 | home
@@ -830,6 +843,22 @@ Possible values for user account types (group membership), per Windows definitio
 |high|
 |urgent|
 
+### channelMembershipType values
+
+|Member  | Value|
+|:-------|:-----|
+|standard| 0    |
+|private | 1    |
+|unknownFutureValue| 2  |
+
+### stagedFeatureName values
+
+|Member|Description|
+|:---|:---|
+|passthroughAuthentication|Passthrough Authentication|
+|seamlessSso|Seamless Single Sign-on|
+|passwordHashSync|Password Hash Synchronization|
+
 ### tokenIssuerType values
 
 |Member|
@@ -856,3 +885,4 @@ Possible values for user account types (group membership), per Windows definitio
 |signin|
 |user|
 |unknownFutureValue|
+

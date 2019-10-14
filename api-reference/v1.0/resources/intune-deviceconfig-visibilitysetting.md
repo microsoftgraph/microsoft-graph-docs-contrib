@@ -1,9 +1,10 @@
 ---
 title: "visibilitySetting enum type"
 description: "Generic visibility state."
-author: "tfitzmac"
+author: "davidmu1"
 localization_priority: Normal
 ms.prod: "Intune"
+doc_type: enumPageType
 ---
 
 # visibilitySetting enum type
@@ -18,6 +19,7 @@ Generic visibility state.
 |notConfigured|0|Not configured.|
 |hide|1|Hide.|
 |show|2|Show.|
+
 
 
 

@@ -4,6 +4,7 @@ description: "Represents an Azure AD user account. Inherits from directoryObject
 author: "dkershaw10"
 localization_priority: Priority
 ms.prod: "microsoft-identity-platform"
+doc_type: resourcePageType
 ---
 
 # user resource type
@@ -47,7 +48,7 @@ This resource supports:
 |[List manager](../api/user-list-manager.md) |[directoryObject](directoryobject.md) | Get the user or contact that is this user's manager from the manager navigation property.|
 |[List memberOf](../api/user-list-memberof.md) |[directoryObject](directoryobject.md) collection| Get the groups, directory roles, and administrative units that the user is a direct member of from the memberOf navigation property.|
 |[List transitive memberOf](../api/user-list-transitivememberof.md) |[directoryObject](directoryobject.md) collection| List the groups, directory roles, and administrative units that the user is a member of. This operation is transitive and includes the groups that the user is a nested member of. |
-|[List joinedTeams](../api/user-list-joinedteams.md) |[groups](group.md) collection| Get the Microsoft Teams that the user is a direct member of from the joinedTeams navigation property.|
+|[List joinedTeams](../api/user-list-joinedteams.md) |[team](team.md) collection| Get the Microsoft Teams teams that the user is a direct member of from the joinedTeams navigation property.|
 |[List ownedDevices](../api/user-list-owneddevices.md) |[directoryObject](directoryobject.md) collection| Get the devices that are owned by the user from the ownedDevices navigation property.|
 |[List ownedObjects](../api/user-list-ownedobjects.md) |[directoryObject](directoryobject.md) collection| Get the directory objects that are owned by the user from the ownedObjects navigation property.|
 |[List plannerTasks](../api/planneruser-list-tasks.md) |[plannerTask](plannertask.md) collection| Get plannerTasks assigned to the user.|
@@ -59,6 +60,7 @@ This resource supports:
 |[reprocessLicense](../api/user-reprocesslicense.md) |[user](user.md)| Reprocess subscription assignments for the user.|
 |[List licenseDetails](../api/user-list-licensedetails.md) |[licenseDetails](licensedetails.md) collection| Get a licenseDetails object collection.|
 |[checkMemberGroups](../api/user-checkmembergroups.md)|String collection|Check for membership in a list of groups. The check is transitive.|
+|[checkMemberObjects](../api/user-checkmemberobjects.md)|String collection|Check for membership in a list of group, directory role, or administrative unit objects. The check is transitive.|
 |[delta](../api/user-delta.md)|user collection| Get incremental changes for users. |
 |[findMeetingTimes](../api/user-findmeetingtimes.md)|[meetingTimeSuggestionsResult](meetingtimesuggestionsresult.md)|Find time and locations to meet based on attendee availability, location, or time constraints.|
 |[findRoomLists](../api/user-findroomlists.md)|[emailaddress.md](emailaddress.md) collection | Get the room lists defined in a tenant.|
@@ -102,9 +104,11 @@ This resource supports:
 |givenName|String|The given name (first name) of the user. Supports $filter.|
 |hireDate|DateTimeOffset|The hire date of the user. The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 would look like this: `'2014-01-01T00:00:00Z'`|
 |id|String|The unique identifier for the user. Inherited from [directoryObject](directoryobject.md). Key. Not nullable. Read-only.|
+|identities|[objectIdentity](objectIdentity.md) collection| Represents the identities that can be used to sign in to this user account. An identity can be provided by Microsoft, by organizations, or by social identity providers such as Facebook, Google, and Microsoft, and tied to a user account. Supports $filter.|
 |interests|String collection|A list for the user to describe their interests.|
 |isResourceAccount|Boolean| **true** if the user is a resource account; otherwise, **false**. Null value should be considered **false**.|
 |jobTitle|String|The user’s job title. Supports $filter.|
+|lastPasswordChangeDateTime|DateTimeOffset| The time when this Azure AD user last changed their password. The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 would look like this: `'2014-01-01T00:00:00Z'`|
 |legalAgeGroupClassification|String| Used by enterprise applications to determine the legal age group of the user. This property is read-only and calculated based on `ageGroup` and `consentProvidedForMinor` properties. Allowed values: `null`, `minorWithOutParentalConsent`, `minorWithParentalConsent`, `minorNoParentalConsentRequired`, `notAdult` and `adult`. Refer to the [legal age group property definitions](#legal-age-group-property-definitions) for further information.)|
 |licenseAssignmentStates|[licenseAssignmentState](licenseassignmentstate.md) collection|State of license assignments for this user. Read-only.|
 |mail|String|The SMTP address for the user, for example, "jeff@contoso.onmicrosoft.com". Read-Only. Supports $filter.|
@@ -210,7 +214,8 @@ The age group and minor consent properties are optional properties used by Azure
 |mailFolders|[mailFolder](mailfolder.md) collection| The user's mail folders. Read-only. Nullable.|
 |manager|[directoryObject](directoryobject.md)|The user or contact that is this user’s manager. Read-only. (HTTP Methods: GET, PUT, DELETE.)|
 |memberOf|[directoryObject](directoryobject.md) collection|The groups, directory roles and administrative units that the user is a member of. Read-only. Nullable.|
-|joinedTeams|[group](group.md) collection|The Microsoft Teams that the user is a member of. Read-only. Nullable.|
+|joinedTeams|[team](team.md) collection|The Microsoft Teams teams that the user is a member of. Read-only. Nullable.|
+|teamwork|[userTeamwork](userteamwork.md)| A container for Microsoft Teams features available for the user. Read-only. Nullable.|
 |messages|[message](message.md) collection|The messages in a mailbox or folder. Read-only. Nullable.|
 |onenote|[onenote](onenote.md)| Read-only.|
 |outlook|[outlookUser](outlookuser.md)| Selective Outlook services available to the user. Read-only. Nullable.|
@@ -249,6 +254,7 @@ Here is a JSON representation of the resource
     "manager",
     "memberOf",
     "joinedTeams",
+    "teamwork",
     "messages",
     "onenote",
     "oauth2PermissionGrants",
@@ -286,6 +292,7 @@ Here is a JSON representation of the resource
   "givenName": "string",
   "hireDate": "String (timestamp)",
   "id": "string (identifier)",
+  "identities": [{"@odata.type": "microsoft.graph.objectIdentity"}],
   "interests": ["string"],
   "isResourceAccount": false,
   "jobTitle": "string",
@@ -348,6 +355,7 @@ Here is a JSON representation of the resource
   "manager": {"@odata.type": "microsoft.graph.directoryObject"},
   "memberOf": [{"@odata.type": "microsoft.graph.directoryObject"}],
   "joinedTeams": [{"@odata.type": "microsoft.graph.group"}],
+  "teamwork": {"@odata.type": "microsoft.graph.teamwork"},
   "messages": [{ "@odata.type": "microsoft.graph.message"}],
   "outlook": {"@odata.type": "microsoft.graph.outlookUser"},
   "ownedDevices": [{"@odata.type": "microsoft.graph.directoryObject"}],

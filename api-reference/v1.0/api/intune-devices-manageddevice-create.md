@@ -1,9 +1,10 @@
 ---
 title: "Create managedDevice"
 description: "Create a new managedDevice object."
-author: "tfitzmac"
+author: "davidmu1"
 localization_priority: Normal
 ms.prod: "Intune"
+doc_type: apiPageType
 ---
 
 # Create managedDevice
@@ -316,6 +317,7 @@ Content-Length: 4705
   "partnerReportedThreatState": "activated"
 }
 ```
+
 
 
 

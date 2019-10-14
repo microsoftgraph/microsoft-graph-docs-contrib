@@ -4,6 +4,7 @@ description: "Read properties and relationships of the managedIOSStoreApp object
 author: "rolyon"
 localization_priority: Normal
 ms.prod: "Intune"
+doc_type: apiPageType
 ---
 
 # Get managedIOSStoreApp
@@ -21,7 +22,7 @@ One of the following permissions is required to call this API. To learn more, in
 |:---|:---|
 |Delegated (work or school account)|DeviceManagementApps.ReadWrite.All, DeviceManagementApps.Read.All|
 |Delegated (personal Microsoft account)|Not supported.|
-|Application|Not supported.|
+|Application|DeviceManagementApps.ReadWrite.All, DeviceManagementApps.Read.All|
 
 ## HTTP Request
 <!-- {
@@ -62,7 +63,7 @@ Here is an example of the response. Note: The response object shown here may be 
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 1493
+Content-Length: 1515
 
 {
   "value": {
@@ -106,12 +107,12 @@ Content-Length: 1493
       "v9_0": true,
       "v10_0": true,
       "v11_0": true,
-      "v12_0": true
+      "v12_0": true,
+      "v13_0": true
     }
   }
 }
 ```
-
 
 
 

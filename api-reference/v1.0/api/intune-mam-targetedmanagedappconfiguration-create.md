@@ -1,9 +1,10 @@
 ---
 title: "Create targetedManagedAppConfiguration"
 description: "Create a new targetedManagedAppConfiguration object."
-author: "tfitzmac"
+author: "davidmu1"
 localization_priority: Normal
 ms.prod: "Intune"
+doc_type: apiPageType
 ---
 
 # Create targetedManagedAppConfiguration
@@ -110,6 +111,7 @@ Content-Length: 560
   "isAssigned": true
 }
 ```
+
 
 
 

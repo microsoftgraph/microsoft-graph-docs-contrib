@@ -4,6 +4,7 @@ description: "Update the properties of a mobileAppAssignment object."
 author: "rolyon"
 localization_priority: Normal
 ms.prod: "Intune"
+doc_type: apiPageType
 ---
 
 # Update mobileAppAssignment
@@ -21,7 +22,7 @@ One of the following permissions is required to call this API. To learn more, in
 |:---|:---|
 |Delegated (work or school account)|DeviceManagementApps.ReadWrite.All|
 |Delegated (personal Microsoft account)|Not supported.|
-|Application|Not supported.|
+|Application|DeviceManagementApps.ReadWrite.All|
 
 ## HTTP Request
 <!-- {
@@ -48,7 +49,7 @@ The following table shows the properties that are required when you create the [
 |id|String|Key of the entity.|
 |intent|[installIntent](../resources/intune-shared-installintent.md)|The install intent defined by the admin. Possible values are: `available`, `required`, `uninstall`, `availableWithoutEnrollment`.|
 |target|[deviceAndAppManagementAssignmentTarget](../resources/intune-shared-deviceandappmanagementassignmenttarget.md)|The target group assignment defined by the admin.|
-|settings|[mobileAppAssignmentSettings](../resources/intune-apps-mobileappassignmentsettings.md)|The settings for target assignment defined by the admin.|
+|settings|[mobileAppAssignmentSettings](../resources/intune-shared-mobileappassignmentsettings.md)|The settings for target assignment defined by the admin.|
 
 
 
@@ -95,7 +96,6 @@ Content-Length: 322
   }
 }
 ```
-
 
 
 

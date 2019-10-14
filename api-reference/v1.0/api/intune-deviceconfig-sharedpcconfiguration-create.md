@@ -1,9 +1,10 @@
 ---
 title: "Create sharedPCConfiguration"
 description: "Create a new sharedPCConfiguration object."
-author: "tfitzmac"
+author: "davidmu1"
 localization_priority: Normal
 ms.prod: "Intune"
+doc_type: apiPageType
 ---
 
 # Create sharedPCConfiguration
@@ -137,6 +138,7 @@ Content-Length: 1032
   "maintenanceStartTime": "11:59:24.7240000"
 }
 ```
+
 
 
 

@@ -1,9 +1,10 @@
 ---
 title: "Create microsoftStoreForBusinessApp"
 description: "Create a new microsoftStoreForBusinessApp object."
-author: "tfitzmac"
+author: "davidmu1"
 localization_priority: Normal
 ms.prod: "Intune"
+doc_type: apiPageType
 ---
 
 # Create microsoftStoreForBusinessApp
@@ -136,6 +137,7 @@ Content-Length: 941
   "packageIdentityName": "Package Identity Name value"
 }
 ```
+
 
 
 

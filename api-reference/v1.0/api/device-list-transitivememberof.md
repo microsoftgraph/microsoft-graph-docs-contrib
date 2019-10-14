@@ -4,6 +4,7 @@ description: "Get groups that the device is a member of. This API request is tra
 author: "anchanda"
 localization_priority: Normal
 ms.prod: "groups"
+doc_type: apiPageType
 ---
 
 # List device transitive groups
@@ -59,14 +60,14 @@ Here is an example of the request.
   "name": "get_devices_transitivememberof"
 }-->
 
-```http
+```msgraph-interactive
 GET https://graph.microsoft.com/v1.0/devices/{id}/transitiveMemberOf
 ```
 # [C#](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/get-devices-transitivememberof-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# [Javascript](#tab/javascript)
+# [JavaScript](#tab/javascript)
 [!INCLUDE [sample-code](../includes/snippets/javascript/get-devices-transitivememberof-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 

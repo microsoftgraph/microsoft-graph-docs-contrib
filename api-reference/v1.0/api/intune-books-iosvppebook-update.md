@@ -1,9 +1,10 @@
 ---
 title: "Update iosVppEBook"
 description: "Update the properties of a iosVppEBook object."
-author: "tfitzmac"
+author: "davidmu1"
 localization_priority: Normal
 ms.prod: "Intune"
+doc_type: apiPageType
 ---
 
 # Update iosVppEBook
@@ -137,6 +138,7 @@ Content-Length: 964
   "usedLicenseCount": 0
 }
 ```
+
 
 
 

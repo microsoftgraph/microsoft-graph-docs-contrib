@@ -1,9 +1,10 @@
 ---
 title: "List windowsInformationProtectionNetworkLearningSummaries"
 description: "List properties and relationships of the windowsInformationProtectionNetworkLearningSummary objects."
-author: "tfitzmac"
+author: "davidmu1"
 localization_priority: Normal
 ms.prod: "Intune"
+doc_type: apiPageType
 ---
 
 # List windowsInformationProtectionNetworkLearningSummaries
@@ -68,6 +69,7 @@ Content-Length: 235
   ]
 }
 ```
+
 
 
 

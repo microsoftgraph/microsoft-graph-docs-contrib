@@ -1,9 +1,10 @@
 ---
 title: "Create iosCustomConfiguration"
 description: "Create a new iosCustomConfiguration object."
-author: "tfitzmac"
+author: "davidmu1"
 localization_priority: Normal
 ms.prod: "Intune"
+doc_type: apiPageType
 ---
 
 # Create iosCustomConfiguration
@@ -98,6 +99,7 @@ Content-Length: 451
   "payload": "cGF5bG9hZA=="
 }
 ```
+
 
 
 

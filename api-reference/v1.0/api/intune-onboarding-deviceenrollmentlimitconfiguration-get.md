@@ -1,9 +1,10 @@
 ---
 title: "Get deviceEnrollmentLimitConfiguration"
 description: "Read properties and relationships of the deviceEnrollmentLimitConfiguration object."
-author: "tfitzmac"
+author: "davidmu1"
 localization_priority: Normal
 ms.prod: "Intune"
+doc_type: apiPageType
 ---
 
 # Get deviceEnrollmentLimitConfiguration
@@ -74,6 +75,7 @@ Content-Length: 414
   }
 }
 ```
+
 
 
 

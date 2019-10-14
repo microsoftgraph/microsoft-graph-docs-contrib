@@ -12,11 +12,12 @@ const client = Client.init(options);
 
 const channel = {
   displayName: "Architecture Discussion",
-  description: "This channel is where we debate all future architecture plans"
+  description: "This channel is where we debate all future architecture plans",
+  membershipType: "standard"
 };
 
 let res = await client.api('/teams/{id}/channels')
 	.version('beta')
-	.post({channel : channel});
+	.post(channel);
 
 ```

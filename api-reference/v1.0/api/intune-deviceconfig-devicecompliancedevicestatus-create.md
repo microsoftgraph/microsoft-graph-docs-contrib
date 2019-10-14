@@ -1,9 +1,10 @@
 ---
 title: "Create deviceComplianceDeviceStatus"
 description: "Create a new deviceComplianceDeviceStatus object."
-author: "tfitzmac"
+author: "davidmu1"
 localization_priority: Normal
 ms.prod: "Intune"
+doc_type: apiPageType
 ---
 
 # Create deviceComplianceDeviceStatus
@@ -97,6 +98,7 @@ Content-Length: 475
   "userPrincipalName": "User Principal Name value"
 }
 ```
+
 
 
 

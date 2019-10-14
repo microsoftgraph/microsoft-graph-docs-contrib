@@ -1,9 +1,10 @@
 ---
 title: "Create windowsDefenderAdvancedThreatProtectionConfiguration"
 description: "Create a new windowsDefenderAdvancedThreatProtectionConfiguration object."
-author: "tfitzmac"
+author: "davidmu1"
 localization_priority: Normal
 ms.prod: "Intune"
+doc_type: apiPageType
 ---
 
 # Create windowsDefenderAdvancedThreatProtectionConfiguration
@@ -95,6 +96,7 @@ Content-Length: 439
   "enableExpeditedTelemetryReporting": true
 }
 ```
+
 
 
 

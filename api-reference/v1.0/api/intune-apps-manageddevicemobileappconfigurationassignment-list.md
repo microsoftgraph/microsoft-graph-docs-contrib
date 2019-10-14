@@ -1,9 +1,10 @@
 ---
 title: "List managedDeviceMobileAppConfigurationAssignments"
 description: "List properties and relationships of the managedDeviceMobileAppConfigurationAssignment objects."
-author: "tfitzmac"
+author: "davidmu1"
 localization_priority: Normal
 ms.prod: "Intune"
+doc_type: apiPageType
 ---
 
 # List managedDeviceMobileAppConfigurationAssignments
@@ -69,6 +70,7 @@ Content-Length: 287
   ]
 }
 ```
+
 
 
 

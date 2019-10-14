@@ -1,9 +1,10 @@
 ---
 title: "Get androidLobApp"
 description: "Read properties and relationships of the androidLobApp object."
-author: "tfitzmac"
+author: "davidmu1"
 localization_priority: Normal
 ms.prod: "Intune"
+doc_type: apiPageType
 ---
 
 # Get androidLobApp
@@ -101,6 +102,7 @@ Content-Length: 1338
   }
 }
 ```
+
 
 
 

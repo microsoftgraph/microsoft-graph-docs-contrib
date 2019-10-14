@@ -1,9 +1,10 @@
 ---
 title: "Get windowsDefenderAdvancedThreatProtectionConfiguration"
 description: "Read properties and relationships of the windowsDefenderAdvancedThreatProtectionConfiguration object."
-author: "tfitzmac"
+author: "davidmu1"
 localization_priority: Normal
 ms.prod: "Intune"
+doc_type: apiPageType
 ---
 
 # Get windowsDefenderAdvancedThreatProtectionConfiguration
@@ -74,6 +75,7 @@ Content-Length: 476
   }
 }
 ```
+
 
 
 

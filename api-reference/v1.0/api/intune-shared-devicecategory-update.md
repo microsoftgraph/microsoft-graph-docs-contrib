@@ -1,9 +1,10 @@
 ---
 title: "Update deviceCategory"
 description: "Update the properties of a deviceCategory object."
-author: "tfitzmac"
+author: "davidmu1"
 localization_priority: Normal
 ms.prod: "intune"
+doc_type: apiPageType
 ---
 
 # Update deviceCategory
@@ -85,6 +86,7 @@ Content-Length: 184
   "description": "Description value"
 }
 ```
+
 
 
 

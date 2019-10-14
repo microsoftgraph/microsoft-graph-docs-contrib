@@ -1,9 +1,10 @@
 ---
 title: "Get windowsInformationProtectionAppLockerFile"
 description: "Read properties and relationships of the windowsInformationProtectionAppLockerFile object."
-author: "tfitzmac"
+author: "davidmu1"
 localization_priority: Normal
 ms.prod: "Intune"
+doc_type: apiPageType
 ---
 
 # Get windowsInformationProtectionAppLockerFile
@@ -74,6 +75,7 @@ Content-Length: 291
   }
 }
 ```
+
 
 
 

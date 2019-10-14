@@ -4,6 +4,7 @@ description: "Retrieve the list of messages in a chat. "
 localization_priority: Priority
 author: "nkramer"
 ms.prod: "microsoft-teams"
+doc_type: apiPageType
 ---
 
 # List chat messages
@@ -20,7 +21,7 @@ One of the following permissions is required to call this API. To learn more, in
 |:--------------------|:---------------------------------------------------------|
 |Delegated (work or school account) | Chat.Read   |
 |Delegated (personal Microsoft account) | Not supported.    |
-|Application | Chat.Read.All   |
+|Application | Not supported.   |
 
 > [!NOTE]
 > Before calling this API with application permissions, you must request access. For details, see [Protected APIs in Microsoft Teams](/graph/teams-protected-apis).
@@ -63,23 +64,19 @@ Here is an example of the request.
   "blockType": "request",
   "name": "get_chat_messages"
 }-->
-```http
+```msgraph-interactive
 GET https://graph.microsoft.com/beta/chats/{id}/messages
 ```
 # [C#](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/get-chat-messages-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# [Javascript](#tab/javascript)
+# [JavaScript](#tab/javascript)
 [!INCLUDE [sample-code](../includes/snippets/javascript/get-chat-messages-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Objective-C](#tab/objc)
 [!INCLUDE [sample-code](../includes/snippets/objc/get-chat-messages-objc-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [Java](#tab/java)
-[!INCLUDE [sample-code](../includes/snippets/java/get-chat-messages-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

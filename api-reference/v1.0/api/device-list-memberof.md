@@ -4,6 +4,7 @@ description: "Get groups that this device is a direct member of. This operation 
 author: "davidmu1"
 localization_priority: Normal
 ms.prod: "microsoft-identity-platform"
+doc_type: apiPageType
 ---
 
 # List device groups
@@ -51,14 +52,14 @@ Here is an example of the request.
   "blockType": "request",
   "name": "get_device_memberof"
 }-->
-```http
+```msgraph-interactive
 GET https://graph.microsoft.com/v1.0/devices/{id}/memberOf
 ```
 # [C#](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/get-device-memberof-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# [Javascript](#tab/javascript)
+# [JavaScript](#tab/javascript)
 [!INCLUDE [sample-code](../includes/snippets/javascript/get-device-memberof-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 

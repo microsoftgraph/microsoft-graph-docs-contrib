@@ -1,9 +1,10 @@
 ---
 title: "List androidGeneralDeviceConfigurations"
 description: "List properties and relationships of the androidGeneralDeviceConfiguration objects."
-author: "tfitzmac"
+author: "davidmu1"
 localization_priority: Normal
 ms.prod: "Intune"
+doc_type: apiPageType
 ---
 
 # List androidGeneralDeviceConfigurations
@@ -159,6 +160,7 @@ Content-Length: 3618
   ]
 }
 ```
+
 
 
 
