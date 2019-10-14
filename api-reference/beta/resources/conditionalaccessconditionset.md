@@ -1,5 +1,5 @@
 ---
-title: "conditionalAccessConditions resource type"
+title: "conditionalAccessConditionSet resource type"
 description: "Represents the type of conditions that govern when the policy applies."
 localization_priority: Normal
 author: "davidmu1"
@@ -7,7 +7,7 @@ ms.prod: "microsoft-identity-platform"
 doc_type: resourcePageType
 ---
 
-# conditionalAccessConditions resource type
+# conditionalAccessConditionSet resource type
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
@@ -23,7 +23,7 @@ Represents the type of conditions that govern when the policy applies.
 |deviceStates|[conditionalAccessDeviceStates](conditionalaccessdevicestates.md)| Device states in the policy. |
 |locations|[conditionalAccessLocations](conditionalaccesslocations.md)| Locations included in and excluded from the policy. |
 |platforms|[conditionalAccessPlatforms](conditionalaccessplatforms.md)| Platforms included in and excluded from the policy. |
-|signInRiskLevels|String collection| Risk levels included in the policy. Possible values are: `low`, `medium`, `high`, `hidden`, `none`, `unknownFutureValue`.|
+|signInRiskLevels|String collection| Risk levels included in the policy. Possible values are: `low`, `medium`, `high`, `none`.|
 
 ## Relationships
 
@@ -42,7 +42,7 @@ The following is a JSON representation of the resource.
     "platforms",
     "signInRiskLevels"
   ],
-  "@odata.type": "microsoft.graph.conditionalAccessConditions",
+  "@odata.type": "microsoft.graph.conditionalAccessConditionSet",
   "baseType": null
 }-->
 
@@ -62,7 +62,7 @@ The following is a JSON representation of the resource.
 2019-02-04 14:57:30 UTC -->
 <!-- {
   "type": "#page.annotation",
-  "description": "conditionalAccessConditions resource",
+  "description": "conditionalAccessConditionset resource",
   "keywords": "",
   "section": "documentation",
   "tocPath": ""

@@ -18,9 +18,9 @@ Represents grant controls that must be fulfilled to pass the policy.
 | Property | Type | Description |
 |:-------- |:---- |:----------- |
 | operator | String | Defines the relationship of the grant controls. Possible values: `AND`, `OR`. |
-| builtInControls | String collection | List of values of built-in controls specified by the policy. Possible values: `Block`, `Mfa`, `CompliantDevice`, `DomainJoinedDevice`, `ApprovedApplication`, `CompliantApplication` |
-| customAuthenticationFactors | String collection | List of custom controls IDs specified by the policy. |
-| termsOfUse | String collection | List of terms of use IDs specified by the policy. [Terms of use reference](agreement.md). |
+| builtInControls | String collection | List of values of built-in controls required by the policy. Possible values: `Block`, `Mfa`, `CompliantDevice`, `DomainJoinedDevice`, `ApprovedApplication`, `CompliantApplication` |
+| customAuthenticationFactors | String collection | List of custom controls IDs required by the policy. Learn more about custom controls here: https://docs.microsoft.com/azure/active-directory/conditional-access/controls#custom-controls-preview |
+| termsOfUse | String collection | List of [terms of use](agreement.md) IDs required by the policy. |
 
 ## Relationships
 

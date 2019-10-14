@@ -18,7 +18,7 @@ Session control used to enforce cloud app security checks.
 | Property     | Type        | Description |
 |:-------------|:------------|:------------|
 |isEnabled     |Boolean      | Specifies whether the session control is enabled. Possible values: true, false. |
-|cloudAppSecurityType|String | Possible values are: `mcasConfigured`, `monitorOnly`, `blockDownloads`. Learn more about these values here: https://docs.microsoft.com/en-us/cloud-app-security/proxy-deployment-aad#step-1-create-an-azure-ad-conditional-access-test-policy- |
+|cloudAppSecurityType|String | Possible values are: `mcasConfigured`, `monitorOnly`, `blockDownloads`. Learn more about these values here: https://docs.microsoft.com/cloud-app-security/proxy-deployment-aad#step-1-create-an-azure-ad-conditional-access-test-policy- |
 
 ## Relationships
 
