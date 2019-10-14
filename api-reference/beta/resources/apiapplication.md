@@ -11,7 +11,7 @@ author: "davidmu1"
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Specifies settings for a Web API application.
+Specifies settings for an application that implements a web API.
 
 ## Properties
 

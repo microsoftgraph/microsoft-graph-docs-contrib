@@ -45,7 +45,7 @@ This resource supports:
 
 | Property | Type | Description |
 |:---------------|:--------|:----------|
-| `api` | [apiApplication](apiapplication.md) | Specifies settings for an API application. |
+| `api` | [apiApplication](apiapplication.md) | Specifies settings for an application that implements a web API. |
 | `appId` | String | The unique identifier for the application that is assigned to an application by Azure AD. Not nullable. Read-only. |
 | `appRoles` | [appRole](approle.md) collection | The collection of application roles that an application may declare. These roles can be assigned to users, groups, or service principals. Not nullable. |
 | `createdDateTime` | DateTimeOffset | The date and time the application was registered. Read-only. |
@@ -59,13 +59,13 @@ This resource supports:
 | `keyCredentials` | [keyCredential](keycredential.md) collection | The collection of key credentials associated with the application Not nullable. |
 | `logo` | Stream | The main logo for the application. Not nullable. |
 | `optionalClaims` | optionalClaims | Application developers can configure optional claims in their Azure AD apps to specify which claims they want in tokens sent to their application by the Microsoft security token service. See [optional claims](https://docs.microsoft.com/en-us/azure/active-directory/develop/active-directory-optional-claims). for more information. |
-| `parentalControlSettings` | [parentalControlSettings](parentalcontrolsettings.md) collection |Specifies parental control settings for an application. |
+| `parentalControlSettings` | [parentalControlSettings](parentalcontrolsettings.md) |Specifies parental control settings for an application. |
 | `passwordCredentials` | [passwordCredential](passwordcredential.md) collection|The collection of password credentials associated with the application. Not nullable.|
 | `publicClient` | [publicClientApplication](publicclientapplication.md) | Specifies settings for installed clients such as desktop or mobile devices. |
 | `publisherDomain` | String | The verified publisher domain for the application. Read-only.|
 | `requiredResourceAccess` |[requiredResourceAccess](requiredresourceaccess.md) collection|Specifies resources that this application requires access to and the set of OAuth permission scopes and application roles that it needs under each of those resources. This pre-configuration of required resource access drives the consent experience. Not nullable.|
 | `signInAudience` | String | Specifies what Microsoft accounts are supported for the current application. Supported values are:<ul><li>`AzureADMyOrg`: Users with a Microsoft work or school account in my organization’s Azure AD tenant (i.e. single tenant)</li><li>`AzureADMultipleOrgs`: Users with a Microsoft work or school account in any organization’s Azure AD tenant (i.e. multi-tenant)</li> <li>`AzureADandPersonalMicrosoftAccount`: Users with a personal Microsoft account, or a work or school account in any organization’s Azure AD tenant</li></ul> | `AzureADandPersonalMicrosoftAccount` |
-| `tags` |String collection| Custom strings that can be used to categorize and identify the application. |
+| `tags` |String collection| Custom strings that can be used to categorize and identify the application. Not nullable.|
 | `tokenEncryptionKeyId` |String|Specifies the keyId of a public key from the keyCredentials collection. When configured, Azure AD encrypts all the tokens it emits by using the key this property points to. The application code that receives the encrypted token must use the matching private key to decrypt the token before it can be used for the signed-in user.|
 | `web` |[webApplication](webapplication.md)| Specifies settings for a web application. |
 
