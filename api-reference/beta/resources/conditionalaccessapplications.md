@@ -17,9 +17,9 @@ Represents the applications and user actions included in and excluded from the p
 
 | Property | Type | Description |
 |:-------- |:---- |:----------- |
-| includeApplications | String collection | The list of application IDs the policy applies to, unless explicitly excluded (in excludeApplications). Can also be set to 'All'. |
+| includeApplications | String collection | The list of application IDs the policy applies to, unless explicitly excluded (in excludeApplications). Can also be set to `All`. |
 | excludeApplications | String collection | The list of application IDs explicitly excluded from the policy. |
-| includeUserActions | String collection | User actions to include (e.g. 'urn:user:registersecurityinfo') |
+| includeUserActions | String collection | User actions to include (e.g. `urn:user:registersecurityinfo`) |
 
 ## Relationships
 

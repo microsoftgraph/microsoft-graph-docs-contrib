@@ -27,13 +27,13 @@ Represents an Azure Active Directory conditional access policy. Conditional acce
 
 | Property     | Type        | Description |
 |:-------------|:------------|:------------|
-|conditions|[conditionalAccessConditions](conditionalaccessconditions.md)| Specifies the conditions that govern when the policy applies. Required. |
-|createdDateTime|DateTimeOffset|The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 would look like this: `'2014-01-01T00:00:00Z'`|
+|conditions|[conditionalAccessConditionSet](conditionalaccessconditionset.md)| Specifies the rules that must be met for the policy to apply. Required. |
+|createdDateTime|DateTimeOffset| The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 would look like this: `'2014-01-01T00:00:00Z'`. Readonly. |
 |description|String| Not used. |
 |displayName|String| Specifies a display name for the conditionalAccessPolicy object. |
 |grantControls|[conditionalAccessGrantControls](conditionalaccessgrantcontrols.md)| Specifies the grant controls that must be fulfilled to pass the policy. |
 |id|String| Specifies the identifier of a conditionalAccessPolicy object. Read-only.|
-|modifiedDateTime|DateTimeOffset|The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 would look like this: `'2014-01-01T00:00:00Z'`|
+|modifiedDateTime| DateTimeOffset|The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 would look like this: `'2014-01-01T00:00:00Z'`. Readonly. |
 |sessionControls|[conditionalAccessSessionControls](conditionalaccesssessioncontrols.md)| Specifies the session controls that are enforced after sign-in. |
 |state|string| Specifies the state of the conditionalAccessPolicy object. Possible values are: `enabled`, `disabled`. Required. |
 
@@ -60,7 +60,7 @@ The following is a JSON representation of the resource.
 
 ```json
 {
-  "conditions": {"@odata.type": "microsoft.graph.conditionalAccessConditions"},
+  "conditions": {"@odata.type": "microsoft.graph.conditionalAccessConditionSet"},
   "createdDateTime": "String (timestamp)",
   "description": "String",
   "displayName": "String",
