@@ -21,6 +21,16 @@ For details about known issues with Microsoft Graph APIs, see [Known issues](kno
 |Addition|beta|Added new complex types:<br/>[conditionalAccessSessionControl](/graph/api/resources/conditionalAccessSessionControl)<br/>[applicationEnforcedRestrictionsSessionControl](/graph/api/resources/applicationEnforcedRestrictionsSessionControl)<br/>[cloudAppSecuritySessionControl](/graph/api/resources/cloudAppSecuritySessionControl)<br/>[signInFrequencySessionControl](/graph/api/resources/signInFrequencySessionControl)<br/>[persistentBrowserSessionControl](/graph/api/resources/persistentBrowserSessionControl)<br/>[conditionalAccessSessionControls](/graph/api/resources/conditionalAccessSessionControls)<br/>[conditionalAccessApplications](/graph/api/resources/conditionalAccessApplications)<br/>[conditionalAccessUsers](/graph/api/resources/conditionalAccessUsers)<br/>[conditionalAccessPlatforms](/graph/api/resources/conditionalAccessPlatforms)<br/>[conditionalAccessLocations](/graph/api/resources/conditionalAccessLocations)<br/>[conditionalAccessDeviceStates](/graph/api/resources/conditionalAccessDeviceStates)<br/>[conditionalAccessConditionSet](/graph/api/resources/conditionalAccessConditionSet)<br/>[conditionalAccessGrantControls](/graph/api/resources/conditionalAccessGrantControls)<br/>
 |Addition|beta|Added new enum types:<br/>[conditionalAccessPolicyState](/graph/api/resources/enums?view=graph-rest-beta#conditionalAccessPolicyState)<br/>[conditionalAccessClientApp](/graph/api/resources/enums?view=graph-rest-beta#conditionalAccessClientApp)<br/>[conditionalAccessGrantControl](/graph/api/resources/enums?view=graph-rest-beta#conditionalAccessGrantControl)<br/>[cloudAppSecuritySessionControlType](/graph/api/resources/enums?view=graph-rest-beta#cloudAppSecuritySessionControlType)<br/>[signinFrequencyType](/graph/api/resources/enums?view=graph-rest-beta#signinFrequencyType)<br/>[persistentBrowserSessionMode](/graph/api/resources/enums?view=graph-rest-beta#persistentBrowserSessionMode)<br/>[conditionalAccessDevicePlatform](/graph/api/resources/enums?view=graph-rest-beta#conditionalAccessDevicePlatform)<br/>
 
+### Identity and access (Azure AD)
+
+| **Change type** | **Version** | **Description**                  |
+|:----------------|:------------|:-----------------------------------------|
+| Addition | beta and v1.0 | Added the **securityIdentifier** property to the [group](/graph/api/resources/group?view=graph-rest-1.0) resource. |
+| Addition | beta and v1.0 | Added the **mdmAppId** property to the [device](/graph/api/resources/group?view=graph-rest-1.0) resource. |
+| Addition | v1.0 | Added new entity [certificateBasedAuthConfiguration](/graph/api/resources/certificatebasedauthconfiguration?view=graph-rest-v1.0). |
+| Addition | v1.0 | Added new complex type [certificateAuthority](/graph/api/resources/certificateauthority?view=graph-rest-v1.0). |
+| Addition | v1.0 | Added new relationship for **certificateBasedAuthConfiguration** on the [organization](/graph/api/resources/organization?view=graph-rest-v1.0) resource. This enables [certificate-based authentication in Azure Active Directory](https://docs.microsoft.com/azure/active-directory/authentication/active-directory-certificate-based-authentication-get-started).|
+
 ### Devices and apps (Microsoft Intune)
 
 |Change type|Version|Description|
