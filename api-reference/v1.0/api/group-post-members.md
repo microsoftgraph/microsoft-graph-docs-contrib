@@ -10,7 +10,7 @@ doc_type: apiPageType
 # Add member
 Add a member to an Office 365 group or a security group through the **members** navigation property.
 
-You can add users or other groups. 
+You can add users, organizational contacts or other groups. 
 
 > [!IMPORTANT]
 > You can add only users to Office 365 groups.
@@ -36,7 +36,7 @@ POST /groups/{id}/members/$ref
 | Authorization  | string  | Bearer {token}. Required. |
 
 ## Request body
-In the request body, supply a JSON representation of a [directoryObject](../resources/directoryobject.md), [user](../resources/user.md) or [group](../resources/group.md) object to be added.
+In the request body, supply a JSON representation of a [directoryObject](../resources/directoryobject.md), [user](../resources/user.md), [group](../resources/group.md) or [organizational contact](../resources/orgcontact.md) object to be added.
 
 ## Response
 If successful, this method returns a `204 No Content` response code. It does not return anything in the response body.

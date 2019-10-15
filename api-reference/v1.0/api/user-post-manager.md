@@ -32,7 +32,7 @@ PUT /users/{id}/manager/$ref
 | Authorization  | string  | Bearer {token}. Required. |
 
 ## Request body
-In the request body, supply a JSON representation of [directoryObject](../resources/directoryobject.md) or [user](../resources/user.md) object to be added.
+In the request body, supply a JSON representation of [directoryObject](../resources/directoryobject.md), [user](../resources/user.md) or [organizational contact](../resources/orgcontact.md) object to be added.
 
 ## Response
 

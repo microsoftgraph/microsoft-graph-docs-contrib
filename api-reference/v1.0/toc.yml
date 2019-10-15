@@ -3347,6 +3347,19 @@
           href: api/organization-get.md
         - name: Update org details
           href: api/organization-update.md
+      - name: Organizational contacts
+        href: resources/orgcontact.md
+        items:
+        - name: Get org contact
+          href: api/orgcontact-get.md
+        - name: List org contacts
+          href: api/orgcontact-list.md
+        - name: List direct reports
+          href: api/orgcontact-get-directreports.md  
+        - name: List memberOf
+          href: api/orgcontact-list-memberof.md
+        - name: Get manager
+          href: api/orgcontact-get-manager.md
       - name: Subscribed SKU
         href: resources/subscribedsku.md
         items:

@@ -43,7 +43,8 @@ This resource supports:
 |[List contactFolders](../api/user-list-contactfolders.md) |[contactFolder](contactfolder.md) collection| Get the contact folder collection in the default Contacts folder of the signed-in user.|
 |[Create contactFolder](../api/user-post-contactfolders.md) |[contactFolder](contactfolder.md)| Create a new ContactFolder by posting to the contactFolders collection.|
 |[List directReports](../api/user-list-directreports.md) |[directoryObject](directoryobject.md) collection| Get the users and contacts that report to the user from the directReports navigation property.|
-|[List manager](../api/user-list-manager.md) |[directoryObject](directoryobject.md) | Get the user or contact that is this user's manager from the manager navigation property.|
+|[List manager](../api/user-list-manager.md) |[directoryObject](directoryobject.md) | Get the user or organizational contact that is this user's manager from the manager navigation property.|
+|[Assign manager](../api/user-post-manager.md) |[directoryObject](directoryobject.md) | Assign a user or an organizational contact as this user's manager.|
 |[List memberOf](../api/user-list-memberof.md) |[directoryObject](directoryobject.md) collection| Get the groups and directory roles that the user is a direct member of from the memberOf navigation property.|
 |[List transitive memberOf](../api/user-list-transitivememberof.md) |[directoryObject](directoryobject.md) collection| List the groups and directory roles that the user is a member of. This operation is transitive and includes the groups that the user is a nested member of. |
 |[List ownedDevices](../api/user-list-owneddevices.md) |[directoryObject](directoryobject.md) collection| Get the devices that are owned by the user from the ownedDevices navigation property.|

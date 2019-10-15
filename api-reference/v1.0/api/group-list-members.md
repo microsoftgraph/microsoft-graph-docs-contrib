@@ -8,7 +8,7 @@ doc_type: apiPageType
 ---
 
 # List members
-Get a list of the group's direct members. A group can have users, contacts, and other groups as members.
+Get a list of the group's direct members. A group can have users, organizational contacts, and other groups as members.
 This operation is not transitive.
 
 ## Permissions
