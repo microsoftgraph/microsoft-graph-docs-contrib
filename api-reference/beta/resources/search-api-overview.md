@@ -91,11 +91,14 @@ Microsoft Search returns error responses as defined by [OData error object defin
 
 The query API has the following limitations during the preview
 
-- The service support sending only a single searchRequest eventhough the API support passing a collection of searchRequest <!--todo nmoreauteam Fix the link to searchRequest--->
+- The service support sending only a single searchRequest eventhough the API support passing a collection of searchRequest
+<!--todo nmoreauteam Fix the link to searchRequest--->
 
-- A given searchRequest supports passing multiple entityTypes. Currently the only supported combination is driveItem and externalFiles. Other combinations are invalid. <!--todo nmoreauteam Fix the link to searchRequest--->
+- A given searchRequest supports passing multiple entityTypes. Currently the only supported combination is driveItem and externalFiles. Other combinations are invalid. 
+<!--todo nmoreauteam Fix the link to searchRequest--->
 
-- ContentSource is currently only applicable when entityType = ExternalItem to define the connection to use. <!--todo nmoreauteam Fix the link to ContentSource--->
+- ContentSource is currently only applicable when entityType = ExternalItem to define the connection to use. 
+<!--todo nmoreauteam Fix the link to ContentSource--->
 
 - Sorting : the API currently does not expose different ways to sort results.  
 
