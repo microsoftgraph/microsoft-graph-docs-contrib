@@ -11,7 +11,7 @@ doc_type: "apiPageType"
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Update password single sign on credentials for a user or group by id.
+Update password single sign on credentials.
 
 ## Permissions
 
@@ -19,7 +19,7 @@ One of the following permissions is required to call this API. To learn more, in
 
 | Permission type                        | Permissions (from least to most privileged) |
 |:---------------------------------------|:--------------------------------------------|
-| Delegated (work or school account)     | Users can update their own credentials. Service Principal Owners and admins with the following roles will be able to update any user or group credentials: GlobalAdministrator, ApplicationAdministrator, CloudApplicationAdministrator. Anyone with microsoft.directory/servicePrincipals/managePasswordSingleSignOnCredentials RBAC role will be able to update the credentials for any user or group.|
+| Delegated (work or school account)     | Application.ReadWrite.All, Directory.AccessAsUser.All, Directory.ReadWrite.All |
 | Delegated (personal Microsoft account) | Not supported. |
 | Application                            | Application.ReadWrite.All, Directory.AccessAsUser.All, Directory.ReadWrite.All |
 
@@ -28,7 +28,7 @@ One of the following permissions is required to call this API. To learn more, in
 <!-- { "blockType": "ignored" } -->
 
 ```http
-POST /servicePrincipals/updatePasswordSingleSignOnCredentials
+POST /servicePrincipals/{id}/updatePasswordSingleSignOnCredentials
 ```
 
 ## Request headers
@@ -44,11 +44,11 @@ In the request body, provide a JSON object with the following parameters.
 | Parameter    | Type        | Description |
 |:-------------|:------------|:------------|
 |id|String|The id of the user or group this credential set belongs to.|
-|credentials|credential collection|A list of credential objects that define the complete login flow.|
+|credentials|[credential](../resources/credential.md) collection|A list of credential objects that define the complete login flow.|
 
 ## Response
 
-If successful, this method returns `200, OK` response code. It does not return anything in the response body.
+If successful, this method returns `200 OK` response code. It does not return anything in the response body.
 
 ## Examples
 
@@ -67,7 +67,7 @@ POST https://graph.microsoft.com/beta/servicePrincipals/updatePasswordSingleSign
 Content-type: application/json
 
 {
-  "id": "00000000-0000-0000-000000000000",
+  "id": "5793aa3b-cca9-4794-679a240f8b58",
   "credentials": [
     {
       "fieldId": "param_username",
