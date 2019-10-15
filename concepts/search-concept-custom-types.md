@@ -1,119 +1,25 @@
 ---
-title: "Search custom types"
-description: "Search custom types ingested via Connectors."
+title: "Search Custom types"
+description: "The query API lets you search accross Custom types ingested via the Connectors Indexing API."
 author: "nmoreau"
 localization_priority: Normal
 ms.prod: "search"
 ---
 
-# Search messages
+# Search custom types (ExternalItem)
+Connectors (Beta) let you import external data into the Microsoft Search index. Ingested content will be surfaced in some Microsoft Search experiences. The Microsoft Search query API lets you run search queries on this ingested content.
 
-People gather and store a lot information in their email conversation. It is very common that some critical and relevance piece of information is embedded in the body of an email, or in an attachment. Microsoft Graph application can use search to pull information form the user’s own mailbox and render this in a dedicated search experience.
+## Search custom types
 
-Moreover, the query API now let developers retrieve email ranked by relevance.
+To search for custom types you will need to provide :
 
-Message search only applies to your personal email. You currently cannot search shared mailboxes using the Microsoft Search query API.
+- The Connectionid which has been assigned during the Connector setup
 
-## Search messages and events
-You can build a search request to query emails in your mailbox, return the first 25 results. 
+- Specify the entityType as externalItem
 
-Results will be ordered by datetime desc.
+- Specify the fields you want to retrieve in the Stored_field property
 
-The search term can include any existing know [filtering capability](Include other examples from https://support.office.com/en-us/article/learn-to-narrow-your-search-criteria-for-better-searches-in-outlook-d824d1e9-a255-4c8a-8553-276fb895a8da) users can enter into the searchbox.
-
-Request
-```HTTP 
-POST /search/query 
-Content-Type: application/json 
-Authorization: Bearer AAD_TOKEN 
-```
-
-```json
-{
-  "requests": [{
-      "entityTypes": ["microsoft.graph.message"],
-      "query": {
-        "query_string": {
-          "query": "contoso"
-        }
-      },
-      "from": 0,
-      "size": 25
-    }
-  ]
-}
-```
-
-Response 
-
-Here is an example of the response.
-
-Note: The response object shown here might be shortened for readability. All the properties will be returned from an actual call. 
-
-```json
-{
-    "@odata.context": "https://graph.microsoft.com/beta/$metadata#search",
-    "value": [
-        {
-            "searchTerms": [
-                "contoso"
-            ],
-            "hitsContainers": [
-                {
-                    "total": 2,
-                    "moreResultsAvailable": false,
-                    "hits": [
-                        {
-                            "_id": "ptWLQ4o6HYpQg8xmAAATzOzRAAA=",
-                            "_score": 1,
-                            "_sortField": "DateTime",
-                            "_summary": "Here is a summary of your messages from last week",
-                            "_source": {
-                                "@odata.type": "#microsoft.graph.message",
-                                "createdDateTime": "2019-10-07T10:00:08Z",
-                                "lastModifiedDateTime": "2019-10-07T10:00:11Z",
-                                "receivedDateTime": "2019-10-07T10:00:09Z",
-                                "sentDateTime": "2019-10-07T09:59:52Z",
-                                "hasAttachments": false,
-                                "subject": "Weekly digest: Office 365 changes",
-                                "bodyPreview": "Here is a summary of your messages from last week -   New Feature: Live captions in English-US a",
-                                "importance": "normal",
-                                "replyTo": [
-                                    {
-                                        "emailAddress": {
-                                            "name": "GCS3 Test"
-                                        }
-                                    }
-                                ],
-                                "sender": {
-                                    "emailAddress": {
-                                        "name": "Office365 Message Center",
-                                        "address": "o365mc@microsoft.com"
-                                    }
-                                },
-                                "from": {
-                                    "emailAddress": {
-                                        "name": "Office365 Message Center",
-                                        "address": "o365mc@microsoft.com",
-                                    }
-                                }
-                            }
-                        },
-                        {
-                            //here another search result
-                        }
-                    ]
-                }
-            ]
-        }
-    ]
-}
-```
-
-## Search top results messages
-You can build a search request to retrieve emails sorted by relevance . 
-
-Request
+Request  
 
 ```HTTP
 POST /search/query
@@ -121,27 +27,43 @@ Content-Type: application/json
 Authorization: Bearer AAD_TOKEN
 ```
 
-```json
+```Json
 {
-    "requests": [{
-        "entityTypes": ["microsoft.graph.message"],
-        "query": {
-            "query_string": {
-                "query": "contoso"
-            }
-        },
-        "from": 0,
-        "size": 15,
-        "enableTopResults": true
-    }]
+  "requests": [
+    {
+       "entityTypes": ["microsoft.graph.externalItem"],
+       "contentSources": ["/external/connections/jirabugs"],
+       "query": {
+        "query_string": {
+          "query": "contoso"
+        }
+      },
+      "from": 0,
+      "size": 25,
+    "stored_fields": [
+        "title",
+        "priority",
+        "description"
+       ]
+    }
+  ]
 }
+```
+
+Response
+<!---TODO nmoreau team Include one example of externalItem response.--> 
+```Json
+{
+  
+}
+
 ```
 
 ## Known limitations
 
-- You can only access user’s own mailbox. Searching delegated mailbox is not supported 
+- Custom Types don’t support searching across multiple contentSources. You can only search one ConnectionId at the time.
 
-- For Messages, Total in the [searchHitsContainer](../api-reference/beta/resources/searchhitscontainer.md) contains the number of result in the Page, not the number of matching results
+- Stored_fields have to be specified, otherwise search results won’t be returned.
 
 ## Next steps
 
