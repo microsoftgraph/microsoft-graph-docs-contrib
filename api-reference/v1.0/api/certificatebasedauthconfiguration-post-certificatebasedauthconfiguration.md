@@ -37,7 +37,7 @@ POST /organization/{id}/certificateBasedAuthConfiguration
 | Name          | Description   |
 |:--------------|:--------------|
 | Authorization | Bearer {token}. Required. |
-| Content-Type | application/json |
+| Content-Type | application/json. Required. |
 
 ## Request body
 
