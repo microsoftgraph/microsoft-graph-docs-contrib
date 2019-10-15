@@ -30,7 +30,7 @@ Learn more about [certificate-based authentication in Azure Active Directory](ht
 | [Delete certificateBasedAuthConfiguration](../api/certificatebasedauthconfiguration-delete.md) | None | Delete a **certificateBasedAuthConfiguration** object. |
 
 >[!NOTE]
->Updating cerficateBasedAuthConfiguration is not supported. To change a cerficateBasedAuthConfiguration, first delete and then create a new cerficateBasedAuthConfiguration.
+>Updating **cerficateBasedAuthConfiguration** is not supported. To change a **cerficateBasedAuthConfiguration**, first delete and then create a new **cerficateBasedAuthConfiguration**.
 
 ## Properties
 
