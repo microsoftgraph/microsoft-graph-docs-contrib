@@ -92,6 +92,12 @@ For details about known issues with Microsoft Graph APIs, see [Known issues](kno
 | :-------------- | :------------ | :--------------------------------------- |
 | Addition        | v1.0          | Added the **message** parameter to the method for [replying a message on the fly](/graph/api/message-reply?view=graph-rest-1.0). |
 
+### Search
+
+| **Change type** | **Version**   | **Description**                          |
+| :-------------- | :------------ | :--------------------------------------- |
+| Addition        | beta          | Added the [Indexing API](/graph/api/resources/indexing-api-overview?view=graph-rest-beta) |
+
 ### Teamwork (Microsoft Teams)
 
 | **Change type** | **Version**   | **Description**                          |
