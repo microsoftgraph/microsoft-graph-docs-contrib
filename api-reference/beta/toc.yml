@@ -8250,9 +8250,9 @@
         items:
         - name: Policies
           items:
-          - name: Conditional Access
+          - name: Conditional Access policy
             href: resources/conditionalaccesspolicy.md
-          - name: List existing conditional access policies
+          - name: List conditional access policies
             href: api/conditionalaccessroot-list-policies.md
           - name: Get a conditional access policy
             href: api/conditionalaccesspolicy-get.md
