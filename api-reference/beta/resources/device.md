@@ -102,6 +102,7 @@ The following is a JSON representation of the resource.
   "id": "string (identifier)",
   "isCompliant": true,
   "isManaged": true,
+  "mdmAppId": string,
   "onPremisesLastSyncDateTime": "String (timestamp)",
   "onPremisesSyncEnabled": true,
   "operatingSystem": "string",
