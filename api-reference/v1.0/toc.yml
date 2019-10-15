@@ -3355,7 +3355,7 @@
         - name: List org contacts
           href: api/orgcontact-list.md
         - name: List direct reports
-          href: api/orgcontact-get-directreports.md  
+          href: api/orgcontact-list-directreports.md  
         - name: List memberOf
           href: api/orgcontact-list-memberof.md
         - name: Get manager
