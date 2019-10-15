@@ -23,6 +23,8 @@ One of the following permissions is required to call this API. To learn more, in
 | Delegated (personal Microsoft account) | Not supported. |
 | Application                            | Application.ReadWrite.All, Directory.AccessAsUser.All, Directory.ReadWrite.All |
 
+Please note, users can create credentials for themselves. Service Principal Owners and admins with the following roles will be able to create credentials for any user or group: GlobalAdministrator, ApplicationAdministrator, CloudApplicationAdministrator.
+
 ## HTTP request
 
 <!-- { "blockType": "ignored" } -->
