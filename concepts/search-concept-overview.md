@@ -9,8 +9,6 @@ scenarios: "getting-started"
 
 # Microsoft Search query API overview (preview)
 
-[!INCLUDE [beta-disclaimer](../includes/beta-disclaimer.md)]
-
 Microsoft Search has introduced new organizational search experiences into the applications customers use every day.
 The vision is to harness the collective knowledge of your organization in Search and surface relevant content to keep end users up to date and leverage the work of others.  Search is available in the different experiences such as in Office, SharePoint, Delve, Windows and Bing.
 
