@@ -1,8 +1,8 @@
 ---
 title: "searchQueryString resource type"
-description: "PROVIDE DESCRIPTION HERE"
+description: "searchQueryString"
 localization_priority: Normal
-author: ""
+author: "nmoreau"
 ms.prod: ""
 doc_type: "resourcePageType"
 ---
@@ -15,7 +15,7 @@ The search terms for the query.
 
 | Property     | Type        | Description |
 |:-------------|:------------|:------------|
-|query|String||
+|query|String|Contains the actual search terms of the request|
 
 ## JSON representation
 

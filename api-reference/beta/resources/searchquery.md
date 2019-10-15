@@ -1,21 +1,20 @@
 ---
 title: "searchQuery resource type"
-description: "PROVIDE DESCRIPTION HERE"
+description: "searchQuery"
 localization_priority: Normal
-author: ""
-ms.prod: ""
+author: "nmoreau"
+ms.prod: "search"
 doc_type: "resourcePageType"
 ---
 
 # searchQuery resource type
 
-The top level object describing the search query containing the search terms, and some potential additional filters. 
+The top level object describing the search query containing the search terms, and some potential additional filters.
 
 ## Properties
 
 | Property     | Type        | Description |
 |:-------------|:------------|:------------|
-|filter|[filterContainer](filtercontainer.md)||
 |query_string|[searchQueryString](searchquerystring.md)||
 
 ## JSON representation
@@ -33,7 +32,6 @@ The following is a JSON representation of the resource.
 
 ```json
 {
-  "filter": {"@odata.type": "microsoft.graph.filterContainer"},
   "query_string": {"@odata.type": "microsoft.graph.searchQueryString"}
 }
 ```

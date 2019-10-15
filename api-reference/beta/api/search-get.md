@@ -3,7 +3,7 @@ title: "Search"
 description: "Retrieve the search resource used to execute queries"
 localization_priority: Normal
 author: "nmoreau"
-ms.prod: ""
+ms.prod: "search"
 doc_type: "apiPageType"
 ---
 
@@ -19,7 +19,7 @@ One of the following permissions is required to call this API. To learn more, in
 
 | Permission type                        | Permissions (from least to most privileged) |
 |:---------------------------------------|:--------------------------------------------|
-| Delegated (work or school account)     | Not supported. |
+| Delegated (work or school account)     | Mail.Read, Files.Read.All, Calendars.Read, ExternalItem.Read.All |
 | Delegated (personal Microsoft account) | Not supported. |
 | Application                            | Not supported. |
 
@@ -45,6 +45,9 @@ Do not supply a request body for this method.
 
 This resource is not expected to be called as such. Any request on the resource will incur a Bad Request.
 
+## Next steps
+
+- Explore the [/query](search-query.md) action on Search.
 
 
 <!-- uuid: 16cd6b66-4b1a-43a1-adaf-3a886856ed98

@@ -1,36 +1,59 @@
 ---
-title: "search resource type"
-description: "PROVIDE DESCRIPTION HERE"
+title: "Search"
+description: "Retrieve the search resource used to execute queries"
 localization_priority: Normal
-author: ""
-ms.prod: ""
-doc_type: "resourcePageType"
+author: "nmoreau"
+ms.prod: "search"
+doc_type: "apiPageType"
 ---
 
-# search resource type
+# Search
 
-PROVIDE DESCRIPTION HERE
+[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-## Methods
+The search resource is the top level object representing the search endpoint. It does not behave as any other resource in Graph, but serves as an anchor to Search actions (Query). It has no resource representation in graph.
 
-| Method       | Return Type | Description |
-|:-------------|:------------|:------------|
-| [Delete](../api/search-delete.md) | None | Delete search object. |
-|[Query](../api/search-query.md)|[searchResponse](searchresponse.md) collection||
+## Permissions
 
-## Properties
+One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
 
-None
+| Permission type                        | Permissions (from least to most privileged) |
+|:---------------------------------------|:--------------------------------------------|
+| Delegated (work or school account)     | Mail.Read, Files.Read.All, Calendars.Read, ExternalItem.Read.All |
+| Delegated (personal Microsoft account) | Not supported. |
+| Application                            | Not supported. |
 
-## Relationships
+## HTTP request
 
-None
+<!-- { "blockType": "ignored" } -->
+
+```http
+GET /search
+```
+
+## Request headers
+
+| Name      |Description|
+|:----------|:----------|
+| Authorization | Bearer {token} |
+
+## Request body
+
+Do not supply a request body for this method.
+
+## Response
+
+This resource is not expected to be called as such. Any request on the resource will incur a Bad Request.
+
+## Next steps
+
+- Explore the [/query](search-query.md) action on Search.
 
 <!-- uuid: 16cd6b66-4b1a-43a1-adaf-3a886856ed98
 2019-02-04 14:57:30 UTC -->
 <!-- {
   "type": "#page.annotation",
-  "description": "search resource",
+  "description": "Get search",
   "keywords": "",
   "section": "documentation",
   "tocPath": ""

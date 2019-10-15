@@ -11,7 +11,7 @@ doc_type: "apiPageType"
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Executes the query specified in the request body. The search results are provided in the response.
+Executes the query specified in the request body. Search results are provided in the response.
 
 ## Permissions
 
@@ -24,8 +24,6 @@ One of the following permissions is required to call this API. To learn more, in
 | Application                            | Not supported. |
 
 ## HTTP request
-
-<!-- { "blockType": "ignored" } -->
 
 ```http
 POST /search/query
@@ -47,18 +45,16 @@ In the request body, provide a JSON object with the following parameters.
 
 ## Response
 
-If successful, this method returns `200, OK` response code and a new [searchResponse](../resources/searchresponse.md) collection object in the response body.
+If successful, this method returns `200, OK` response code and a [searchResponse](../resources/searchresponse.md) collection object in the response body.
 
 ## Common use cases 
 
-- Search mail messages
-- Search calendar events
-- Search files
-- Search connectors data
+- Search [mail messages](/concepts/search-concept-messages.md)
+- Search [calendar events](/concepts/search-concept-events.md)
+- Search [files](/concepts/search-concept-files.md)
+- Search [custom types (Connectors)](/concepts/search-concept-custom-types.md) data
 
 ## Examples
-
-The following is an example of a simple API call.
 
 ### Request
 
