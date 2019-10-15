@@ -11,7 +11,7 @@ doc_type: "apiPageType"
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Create password single sign on credentials by ID.
+Create password single sign on credentials.
 
 ## Permissions
 
