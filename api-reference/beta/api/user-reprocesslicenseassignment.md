@@ -46,8 +46,6 @@ The following example shows how to reprocess license assignments for the user.
 ### Request
 
 # [HTTP](#tab/http)
-
-# [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "user_reprocessLicenseAssignment"
