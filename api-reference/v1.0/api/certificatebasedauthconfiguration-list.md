@@ -60,7 +60,7 @@ The following is an example of the request.
 }-->
 
 ```msgraph-interactive
-GET https://graph.microsoft.com/beta/organization/{id}/certificateBasedAuthConfiguration
+GET https://graph.microsoft.com/v1.0/organization/{id}/certificateBasedAuthConfiguration
 ```
 
 ---

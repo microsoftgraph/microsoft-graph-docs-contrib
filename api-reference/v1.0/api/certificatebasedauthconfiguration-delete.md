@@ -57,7 +57,7 @@ The following is an example of the request.
 }-->
 
 ```http
-DELETE https://graph.microsoft.com/beta/organization/{id}/certificateBasedAuthConfiguration/{id}
+DELETE https://graph.microsoft.com/v1.0/organization/{id}/certificateBasedAuthConfiguration/{id}
 ```
 ---
 
