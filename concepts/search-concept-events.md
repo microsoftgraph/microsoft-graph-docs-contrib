@@ -7,49 +7,44 @@ ms.prod: "search"
 ---
 
 # Search Calendar Events
+
 You are able to search in user’s own calendar.
 
 ## Search calendar events
+
 Request
-```http 
-POST https://graph.microsoft.com/beta/search/query 
 
-Content-Type: application/json 
+```HTTP
+POST /search/query
+Content-Type: application/json
+Authorization: Bearer AAD_TOKEN
+```
 
-Authorization: Bearer AAD_TOKEN 
-``` 
-``` 
-{ 
+Response
 
-  "requests": [ 
-
-    { 
-
-      "entityType": "microsoft.graph.event",        
-
-       "query": { 
-
-        "query_string": { 
-
-          "query": "contoso" 
-
-        } 
-
-      }, 
-
-      "from": 0, 
-
-      "size": 25 
-
-    } 
-
-  ] 
-
+```json
+{
+  "requests": [
+    {
+       "entityTypes": ["microsoft.graph.event"],
+       "query": {
+        "query_string": {
+          "query": "contoso"
+        }
+      },
+      "from": 0,
+      "size": 25
+    }
+  ]
 }
-``` 
+```
+
 ## Known limitations
+
 - You can only access user’s own calendar. Shared or delegated access is not supported.
 
 ## Next steps
-Find out more about
-- The Microsoft Search query API in Microsoft Graph beta
+
+Find out more about:
+
+- The Microsoft Search [Query API](../api-reference/beta/api/search-query.md)

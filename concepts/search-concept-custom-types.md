@@ -1,7 +1,7 @@
 ---
-title: "Search messages"
-description: "People gather and store a lot information in their email conversation. It is very common that a piece of information is embedded in the body of an email, or in an attachment. Microsoft Graph application can use search to pull information form the user’s own mailbox and render this in a dedicated search experience."
-author: "knightsu"
+title: "Search custom types"
+description: "Search custom types ingested via Connectors."
+author: "nmoreau"
 localization_priority: Normal
 ms.prod: "search"
 ---
@@ -14,19 +14,18 @@ Moreover, the query API now let developers retrieve email ranked by relevance.
 
 Message search only applies to your personal email. You currently cannot search shared mailboxes using the Microsoft Search query API.
 
-## Search messages
+## Search messages and events
 You can build a search request to query emails in your mailbox, return the first 25 results. 
 
 Results will be ordered by datetime desc.
 
-The search term can include any existing know [filtering capability](https://support.office.com/en-us/article/learn-to-narrow-your-search-criteria-for-better-searches-in-outlook-d824d1e9-a255-4c8a-8553-276fb895a8da) users can enter into the search box in Outlook.
+The search term can include any existing know [filtering capability](Include other examples from https://support.office.com/en-us/article/learn-to-narrow-your-search-criteria-for-better-searches-in-outlook-d824d1e9-a255-4c8a-8553-276fb895a8da) users can enter into the searchbox.
 
 Request
-
-```HTTP
-POST /search/query
-Content-Type: application/json
-Authorization: Bearer AAD_TOKEN
+```HTTP 
+POST /search/query 
+Content-Type: application/json 
+Authorization: Bearer AAD_TOKEN 
 ```
 
 ```json
@@ -47,7 +46,7 @@ Authorization: Bearer AAD_TOKEN
 
 Response 
 
-Here is an example of the response. 
+Here is an example of the response.
 
 Note: The response object shown here might be shortened for readability. All the properties will be returned from an actual call. 
 
