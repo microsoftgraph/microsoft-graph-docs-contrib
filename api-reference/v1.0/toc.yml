@@ -3203,10 +3203,10 @@
         items:
         - name: List
           href: api/certificatebasedauthconfiguration-list.md
-        - name: Get
-          href: api/certificatebasedauthconfiguration-get.md
         - name: Create
           href: api/certificatebasedauthconfiguration-post-certificatebasedauthconfiguration.md
+        - name: Get
+          href: api/certificatebasedauthconfiguration-get.md
         - name: Delete
           href: api/certificatebasedauthconfiguration-delete.md
       - name: Contracts
