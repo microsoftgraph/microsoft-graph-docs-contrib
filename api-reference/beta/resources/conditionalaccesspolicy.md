@@ -11,7 +11,7 @@ doc_type: resourcePageType
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Represents an Azure Active Directory conditional access policy. Conditional access policies are custom rules that define an access scenario.
+Represents an Azure Active Directory conditional access policy. Conditional access policies are custom rules that define an access scenario. Learn more about conditional access: https://docs.microsoft.com/azure/active-directory/conditional-access/
 
 ## Methods
 

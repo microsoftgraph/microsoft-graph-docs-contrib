@@ -50,9 +50,9 @@ If successful, this method returns a `201 Created` response code and a new [cond
 
 ## Examples
 
-### Request to require MFA to access Exchange Online outside of trusted locations.
+### Example 1: Request to require MFA to access Exchange Online outside of trusted locations.
 
-The following is an example of a common configuration: Access to Exchange Online from browser or modern auth clients require Multi-factor authentication outside of trusted locations for a particular group.
+The following is an example of a common configuration: Access to Exchange Online from browser or modern auth clients require multi-factor authentication outside of trusted locations for a particular group.
 Please make sure you setup your trusted locations first.
 
 <!-- {
@@ -165,7 +165,7 @@ Content-type: application/json
 }
 ```
 
-### Request to block access to Exchange Online from non-trusted regions.
+### Example 2: Request to block access to Exchange Online from non-trusted regions.
 
 The following is an example of a common configuration: Block access to Exchange Online from non-trusted/unknown regions.
 This example assumes the named location with id = 198ad66e-87b3-4157-85a3-8a7b51794ee9 corresponds to a list of non-trusted/unknown regions.
@@ -281,7 +281,7 @@ Content-type: application/json
 }
 ```
 
-### Request showing usage of all conditions/controls.
+### Example 3: Request showing usage of all conditions/controls.
 
 The following is an example of the request showing the usage of all the conditions/controls.
 <!-- {
