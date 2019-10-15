@@ -47,6 +47,61 @@ In the request body, provide a JSON object with the following parameters.
 
 If successful, this method returns `200, OK` response code and a new [searchResponse](../resources/searchresponse.md) collection object in the response body.
 
+## Search capabilities and limitations 
+
+### Paging
+
+Pagination is exposed through following two fields in the API:
+- from: To indicate the start point; takes an integer value 
+- size: To indicate the total number of results to be returned in the response; takes an integer value
+- Defaults: from: 0 – size: 25
+- Max page sizes:
+  - Maximum results per page:
+    - Event and message: 200 
+    - DriveItem:
+    - ExternalFile: 
+    - ExternalItem: 
+  - Maximum number of items which can be retrieved by paginating: 
+    - Event and message: 1000 
+    - DriveItem: 
+    - ExternalFile: 
+    - ExternalItem:
+  - Going beyond the limits doesn’t end up in BadRequest, the service returns best effort response in such cases. 
+- Ideal use-case: 
+  - Request for a smaller first page as the first request, eg: from: 0 and size: 25 
+  - Paginate for subsequent pages by just updating the from and size attributes, fine with increasing the page size in each subsequent request, ex: 
+    - Page 1: from – 0 and size – 25 
+    - Page 2: from – 25 and size – 50
+    - Page 3: from – 75 and size – 75
+    - Page 4: from – 150 and size – 100
+- Error cases: 
+  - It’s a 400 BadRequest error if the first page request comes with a non-zero offset for message/event 
+  
+### Stored_Fields
+
+This allows to specify which fields should be returned part of the response. The names to be used should the name of the retrievable Managed Property configured for the connection.  This is only applicable to ExternalItems. 
+
+### Keyword Query Language (KQL)support
+
+The API lets you specify a KQL clause in the query terms which lets you specify free text keywords, operators (AND, OR,…) and property restriction. The syntax and command you will be using will depend on the entityType you target in the searchRequest. 
+
+Depending on the entityType, the searchable property vary:  
+  - [message properties](https://docs.microsoft.com/en-us/microsoft-365/compliance/keyword-queries-and-search-conditions#searchable-site-properties)
+  - [driveItem properties](https://docs.microsoft.com/en-us/microsoft-365/compliance/keyword-queries-and-search-conditions#searchable-site-properties)
+  
+### Error Handling 
+
+Microsoft Search returns error responses as defined by [OData error object definition](http://docs.oasis-open.org/odata/odata-json-format/v4.01/cs01/odata-json-format-v4.01-cs01.html#sec_ErrorResponse), which will contains a JSON object containing a code and a message. 
+        
+Describe the know errors : bad requests.
+
+## Common use cases 
+
+- Search mail messages 
+- Search calendar events 
+- Search files
+- Search connectors data 
+
 ## Examples
 
 The following is an example of how to call this API.
