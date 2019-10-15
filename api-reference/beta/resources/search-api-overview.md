@@ -34,7 +34,12 @@ Search requests are executed on behalf of user. Search results are trimmed down 
 ### Entity scoping
 
 The scope of the search request is defined in the entityTypes field in the Json request.
-The possible values are availabl
+ Possible values are: 
+ - `microsoft.graph.event`, 
+ - `microsoft.graph.message`, 
+ - `microsoft.graph.driveItem`, 
+ - `microsoft.graph.externalFile`, 
+ - `microsoft.graph.externalItem`.
 
 ### Paging
 
