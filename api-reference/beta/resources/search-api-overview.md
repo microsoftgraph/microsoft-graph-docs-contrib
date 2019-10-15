@@ -13,7 +13,7 @@ doc_type: resourcePageType
 
 With Microsoft Search API in Graph, developers can search data in Office 365 within their Apps, in the context of the end user.
 
-## Common use cases 
+## Common use cases
 
 The Search query API provides a method (/query) to search across your data in Microsoft Search.
 
@@ -26,7 +26,7 @@ Search requests are executed on behalf of user. Search results are trimmed down 
 |[Search for a specific entityType](#Entity-scoping)| <p align="center">/search/query </p> | <p align="center">EntityTypes</p> |
 |[Page results](#Paging) | <p align="center">/search/query</p> | <p align="center">From and Size</p> |
 |[Get the most relevant emails](#Most-relevant-emails) | <p align="center">/search/query</p> | <p align="center">EnableTopResults</p> |
-|[Retrieve selected properties](#Stored_Fields) | <p align="center">/search/query</p> | <p align="center">stored_fieds</p> | <p align="center"> [File issue](https://github.com/microsoftgraph/security-api-solutions/issues/new) </p> |
+|[Retrieve selected properties](#Stored_Fields) | <p align="center">/search/query</p> | <p align="center">stored_fieds</p> | <p align="center">  </p> |
 |[Use KQL in query terms](#Keyword-Query-Language-(KQL)-support)| <p align="center">/search/query</p> | <p align="center">searchQueryString</p> |
 |[Search external Files](https://fixme.org)| <p align="center">/search/query</p> | <p align="center">EntityTypes</p> | <!---TODO nmoreauteam Fix the links to the sample page --->
 |[Search within a specific contentSource (Indexing API)](https://fixme.org)| <p align="center">/search/query</p> | <p align="center">contentSources</p> | <!---TODO nmoreauteam Fix the links to the sample page --->
@@ -34,7 +34,7 @@ Search requests are executed on behalf of user. Search results are trimmed down 
 ### Entity scoping
 
 The scope of the search request is defined in the entityTypes field in the Json request.
-The possible values are 
+The possible values are availabl
 
 ### Paging
 
