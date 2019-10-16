@@ -64,8 +64,8 @@ Here is a JSON representation of the resource.
 | applicationId | string | Identifier of the application used to create the subscription. Read-only. |
 | creatorId | string | Identifier of the user or service principal that created the subscription. If the app used delegated permissions to create the subscription, this field contains the id of the signed-in user the app called on behalf of. If the app used application permissions, this field contains the id of the service principal corresponding to the app. Read-only. |
 | includeResourceData | boolean | Optional. When set to `true`, change notifications will [include resource data](/graph/webhooks-with-resource-data) (such as content of a Teams message). | 
-| encryptionCertificate | string | Optional. Required when `includeResourceData=true`. A base64-encoded representation of a certificate with a public key used to encrypt resource data in notifications. | 
-| encryptionCertificateId | string | Optional. Required when `includeResourceData=true`. A custom app provided identifier to help identify the certificate needed to decrypt resource data. |
+| encryptionCertificate | string | Optional. Required when **includeResourceData** is true. A base64-encoded representation of a certificate with a public key used to encrypt resource data in notifications. | 
+| encryptionCertificateId | string | Optional. Required when **includeResourceData** is true. A custom app provided identifier to help identify the certificate needed to decrypt resource data. |
 
 ## Maximum length of subscription per resource type
 
