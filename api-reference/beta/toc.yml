@@ -8131,6 +8131,60 @@
           href: api/contract-get.md
         - name: List contracts
           href: api/contract-list.md
+      - name: Conditional Access
+        items:
+        - name: Policies
+          items:
+          - name: Conditional access policy
+            href: resources/conditionalaccesspolicy.md
+          - name: List conditional access policies
+            href: api/conditionalaccessroot-list-policies.md
+          - name: Get a conditional access policy
+            href: api/conditionalaccesspolicy-get.md
+          - name: Create a conditional access policy
+            href: api/conditionalaccessroot-post-policies.md
+          - name: Update a conditional access policy
+            href: api/conditionalaccesspolicy-update.md
+          - name: Delete a conditional access policy
+            href: api/conditionalaccesspolicy-delete.md
+        - name: Named locations
+          items:
+          - name: Named location
+            items:
+            - name: Named location
+              href: resources/namedlocation.md
+            - name: List named locations
+              href: api/conditionalaccessroot-list-namedlocations.md
+            - name: Create a named location
+              href: api/conditionalaccessroot-list-namedlocations.md
+          - name: Country named location
+            items:
+            - name: Country named location
+              href: resources/countrynamedlocation.md
+            - name: Get country named location
+              href: api/countrynamedlocation-get.md
+            - name: Update country named location
+              href: api/countrynamedlocation-update.md
+            - name: Delete country named lcoation
+              href: api/countrynamedlocation-delete.md
+          - name: IP named location
+            items:
+            - name: IP named location
+              href: resources/ipnamedlocation.md
+            - name: Get IP named location
+              href: api/ipnamedlocation-get.md
+            - name: Update IP named location
+              href: api/ipnamedlocation-update.md
+            - name: Delete IP named lcoation
+              href: api/ipnamedlocation-delete.md
+          - name: IP range
+            items:
+            - name: IP range
+              href: resources/iprange.md
+            - name: IPv4 CIDR range
+              href: resources/ipv4cidrrange.md
+            - name: IPv6 CIDR range
+              href: resources/ipv6cidrrange.md
       - name: Data policy operation
         href: resources/datapolicyoperation.md
         items:
