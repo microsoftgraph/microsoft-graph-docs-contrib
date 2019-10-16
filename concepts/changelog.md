@@ -93,7 +93,7 @@ For details about known issues with Microsoft Graph APIs, see [Known issues](kno
 
 | **Change type** | **Version**   | **Description**                          |
 | :-------------- | :------------ | :--------------------------------------- |
-| Deletion | beta | Removed [previously announced](https://developer.microsoft.com/en-us/onenote/blogs/breaking-change-education-api-updates-in-microsoft-graph-beta) deprecated properties **grade** and **feedback** from [educationSubmission](/graph/api/resources/educationsubmission?view=graph-rest-beta). Access to grades and feedback is now available through [educationOutcome](graph/api/educationsubmission-list-outcomes?view=graph-rest-beta)|
+| Deletion | beta | Removed [previously announced](https://developer.microsoft.com/en-us/onenote/blogs/breaking-change-education-api-updates-in-microsoft-graph-beta) deprecated properties **grade** and **feedback** from [educationSubmission](/graph/api/resources/educationsubmission?view=graph-rest-beta). Access to grades and feedback is now available through [educationOutcome](graph/api/resources/educationoutcome?view=graph-rest-beta)|
 
 ### Groups
 
