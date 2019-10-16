@@ -90,3 +90,34 @@ The following is a JSON representation of the resource when you publish a raw da
   }
 }
 ```
+The following is a JSON representation of the resource when you publish a raw data notification with guaranteed delivery (fallback) for iOS.
+```json
+{	
+  "targetHostName": "String",
+  "appNotificationId": "String",
+  "expirationDateTime": "DateTimeOffset",
+  "payload":  
+  {
+    "rawContent": "String"
+  },
+  "displayTimeToLive": "Int",
+  "priority": "Enum",
+  "groupName": "String",
+  "targetPolicy":
+  {
+    "platformTypes": [ 
+      "Enum"
+    ]
+  }
+  "FallbackPolicy": 
+  {    
+    "EndpointFallback": { 
+      "platformTypes": "iOS",
+      "fallbackDelayInSeconds":60,
+      "visualContent": {            
+        "title":"Guaranteed Delivery",
+        "body":"Notification fallback message."
+      },
+    }
+}
+```
