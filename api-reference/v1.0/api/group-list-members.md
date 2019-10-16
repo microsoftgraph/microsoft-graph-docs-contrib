@@ -16,9 +16,9 @@ One of the following permissions is required to call this API. To learn more, in
 
 |Permission type      | Permissions (from least to most privileged)              |
 |:--------------------|:---------------------------------------------------------|
-|Delegated (work or school account) | User.ReadBasic.All, User.Read.All, Directory.Read.All, Directory.AccessAsUser.All   |
+|Delegated (work or school account) | User.ReadBasic.All, User.Read.All, Group.Read.All, Directory.Read.All  |
 |Delegated (personal Microsoft account) | Not supported.    |
-|Application | User.Read.All, Directory.Read.All |
+|Application | User.Read.All, Group.Read.All, Directory.Read.All |
 
 ## HTTP request
 <!-- { "blockType": "ignored" } -->
@@ -49,7 +49,7 @@ The following is an example of the request.
   "blockType": "request",
   "name": "get_members"
 }-->
-```http
+```msgraph-interactive
 GET https://graph.microsoft.com/v1.0/groups/{id}/members
 ```
 # [C#](#tab/csharp)

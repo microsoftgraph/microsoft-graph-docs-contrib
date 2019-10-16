@@ -30,7 +30,7 @@ The signed in user must also be in a directory role that permits them to create 
 ## HTTP request
 <!-- { "blockType": "ignored" } -->
 ```http
-DELETE /programs('{id}')
+DELETE /programs/{id}
 ```
 ## Request headers
 | Name         | Type        | Description |

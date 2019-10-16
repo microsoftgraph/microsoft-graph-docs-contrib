@@ -61,7 +61,7 @@ Here is an example of the response. Note: The response object shown here may be 
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 810
+Content-Length: 915
 
 {
   "value": {
@@ -82,7 +82,9 @@ Content-Length: 810
     "allowDeviceUseOnInstallFailure": true,
     "selectedMobileAppIds": [
       "Selected Mobile App Ids value"
-    ]
+    ],
+    "trackInstallProgressForAutopilotOnly": true,
+    "disableUserStatusTrackingAfterFirstUser": true
   }
 }
 ```

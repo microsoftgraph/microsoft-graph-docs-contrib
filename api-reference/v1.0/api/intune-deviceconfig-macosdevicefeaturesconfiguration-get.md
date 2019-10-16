@@ -1,7 +1,7 @@
 ---
 title: "Get macOSDeviceFeaturesConfiguration"
 description: "Read properties and relationships of the macOSDeviceFeaturesConfiguration object."
-author: "tfitzmac"
+author: "davidmu1"
 localization_priority: Normal
 ms.prod: "Intune"
 doc_type: apiPageType
@@ -73,6 +73,7 @@ Content-Length: 375
   }
 }
 ```
+
 
 
 

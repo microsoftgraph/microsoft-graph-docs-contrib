@@ -21,6 +21,7 @@ Inherits from [userExperienceAnalyticsInsightValue](../resources/intune-devices-
 ## Properties
 |Property|Type|Description|
 |:---|:---|:---|
+|value|Int32|Not yet documented|
 
 ## Relationships
 None
@@ -34,7 +35,8 @@ Here is a JSON representation of the resource.
 -->
 ``` json
 {
-  "@odata.type": "#microsoft.graph.insightValueInt"
+  "@odata.type": "#microsoft.graph.insightValueInt",
+  "value": 1024
 }
 ```
 

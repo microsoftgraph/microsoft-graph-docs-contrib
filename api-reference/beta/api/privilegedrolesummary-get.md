@@ -52,7 +52,7 @@ Here is an example of the request.
   "blockType": "request",
   "name": "get_privilegedrolesummary"
 }-->
-```http
+```msgraph-interactive
 GET https://graph.microsoft.com/beta/privilegedRoles/{id}/summary
 ```
 # [C#](#tab/csharp)

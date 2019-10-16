@@ -4,6 +4,7 @@ description: "The hundreds of millions of users of Microsoft 365 cloud services 
 author: "simonhult"
 localization_priority: Priority
 ms.prod: "insights"
+scenarios: "getting-started"
 ---
 
 # Overview of social and workplace intelligence in Microsoft Graph

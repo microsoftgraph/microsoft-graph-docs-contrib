@@ -50,7 +50,7 @@ Here is an example of the request.
   "blockType": "request",
   "name": "get_worksheetcollection"
 }-->
-```http
+```msgraph-interactive
 GET https://graph.microsoft.com/beta/me/drive/items/{id}/workbook/worksheets
 ```
 # [C#](#tab/csharp)

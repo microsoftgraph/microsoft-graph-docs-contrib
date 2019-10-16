@@ -47,7 +47,10 @@ If successful, this method returns a `200 OK` response code and [user](../resour
 This method returns `202 Accepted` when the request has been processed successfully but the server requires more time to complete related background operations.
 
 ## Example
-##### Request
+
+### Example 1: Get the properties of the signed-in user
+
+#### Request
 
 
 # [HTTP](#tab/http)
@@ -55,7 +58,7 @@ This method returns `202 Accepted` when the request has been processed successfu
   "blockType": "request",
   "name": "get_user"
 }-->
-```http
+```msgraph-interactive
 GET https://graph.microsoft.com/beta/me
 ```
 # [C#](#tab/csharp)
@@ -86,9 +89,6 @@ Content-type: application/json
 Content-length: 491
 
 {
-  "businessPhones": [
-       "businessPhones-value"
-   ],
    "displayName": "displayName-value",
    "givenName": "givenName-value",
    "jobTitle": "jobTitle-value",
@@ -99,6 +99,63 @@ Content-length: 491
    "surname": "surname-value",
    "userPrincipalName": "userPrincipalName-value",
    "id": "id-value"
+}
+```
+
+### Example 2: Get the properties of the specified user
+
+#### Request
+
+The following example shows a request.
+
+
+# [HTTP](#tab/http)
+<!-- {
+  "blockType": "request",
+  "name": "get_other_user"
+}-->
+```msgraph-interactive
+GET https://graph.microsoft.com/beta/users/{id}
+```
+# [C#](#tab/csharp)
+[!INCLUDE [sample-code](../includes/snippets/csharp/get-other-user-csharp-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [JavaScript](#tab/javascript)
+[!INCLUDE [sample-code](../includes/snippets/javascript/get-other-user-javascript-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Objective-C](#tab/objc)
+[!INCLUDE [sample-code](../includes/snippets/objc/get-other-user-objc-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+---
+
+
+#### Response
+
+The following example shows the response.
+<!-- {
+  "blockType": "response",
+  "truncated": true,
+  "@odata.type": "microsoft.graph.user"
+} -->
+```http
+HTTP/1.1 200 OK
+Content-type: application/json
+Content-length: 491
+
+{
+      "displayName": "displayName-value",
+      "givenName": "givenName-value",
+      "jobTitle": "jobTitle-value",
+      "mail": "mail-value",
+      "mobilePhone": "mobilePhone-value",
+      "officeLocation": "officeLocation-value",
+      "preferredLanguage": "preferredLanguage-value",
+      "surname": "surname-value",
+      "userPrincipalName": "userPrincipalName-value",
+      "id": "id-value"
 }
 ```
 

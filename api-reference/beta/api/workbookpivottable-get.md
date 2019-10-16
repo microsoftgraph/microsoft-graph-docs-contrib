@@ -52,7 +52,7 @@ Here is an example of the request.
   "blockType": "request",
   "name": "get_workbookpivottable"
 }-->
-```http
+```msgraph-interactive
 GET https://graph.microsoft.com/beta/drive/root/workbook/worksheets/{id}/pivotTables/{id}
 ```
 # [C#](#tab/csharp)

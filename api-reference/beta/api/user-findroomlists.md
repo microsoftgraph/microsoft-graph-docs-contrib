@@ -62,7 +62,7 @@ Here is an example of the request.
   "blockType": "request",
   "name": "user_get_room_lists"
 }-->
-```http
+```msgraph-interactive
 GET https://graph.microsoft.com/beta/me/findRoomLists
 ```
 # [C#](#tab/csharp)

@@ -11,7 +11,7 @@ doc_type: apiPageType
 
 Retrieve the properties and relationships of a [message](../resources/message.md) object.
 
-Currently, this operation returns message bodies in only HTML format.
+You can use the `$value` parameter to [get the MIME content of a message](/graph/outlook-get-mime-message).
 
 There are two scenarios where an app can get a message in another user's mail folder:
 
@@ -52,8 +52,11 @@ Do not supply a request body for this method.
 ## Response
 
 If successful, this method returns a `200 OK` response code and [message](../resources/message.md) object in the response body.
-## Example
-##### Request 1
+
+
+## Examples
+### Example 1
+#### Request
 Here is an example of the request.
 
 # [HTTP](#tab/http)
@@ -62,7 +65,7 @@ Here is an example of the request.
   "sampleKeys": ["AAMkADhMGAAA="],
   "name": "get_message"
 }-->
-```http
+```msgraph-interactive
 GET https://graph.microsoft.com/v1.0/me/messages/AAMkADhMGAAA=
 ```
 # [C#](#tab/csharp)
@@ -83,7 +86,7 @@ GET https://graph.microsoft.com/v1.0/me/messages/AAMkADhMGAAA=
 
 ---
 
-##### Response 1
+#### Response
 Here is an example of the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.
 <!-- {
   "blockType": "response",
@@ -158,7 +161,8 @@ Content-type: application/json
 }
 ```
 
-##### Request 2
+### Example 2
+#### Request
 The next example uses a `$select` query parameter to get the Internet message headers of a message. 
 
 # [HTTP](#tab/http)
@@ -167,7 +171,7 @@ The next example uses a `$select` query parameter to get the Internet message he
   "sampleKeys": ["AAMkADhAAAW-VPeAAA="],
   "name": "get_message_headers"
 }-->
-```http
+```msgraph-interactive
 GET https://graph.microsoft.com/v1.0/me/messages/AAMkADhAAAW-VPeAAA=/?$select=internetMessageHeaders
 ```
 # [C#](#tab/csharp)
@@ -188,7 +192,7 @@ GET https://graph.microsoft.com/v1.0/me/messages/AAMkADhAAAW-VPeAAA=/?$select=in
 
 ---
 
-##### Response 2
+#### Response
 Here is an example of the response. Note: The set of message headers in the response object is truncated for brevity. All of the headers will be returned from an actual call.
 <!-- {
   "blockType": "response",
@@ -224,13 +228,78 @@ Content-type: application/json
 }
 ```
 
+### Example 3
+#### Request
+
+The third example shows how to use a `Prefer: outlook.body-content-type="text"` header to get the **body** and **uniqueBody** of the specified message in text format.
+
+
+# [HTTP](#tab/http)
+<!-- {
+  "blockType": "request",
+  "sampleKeys": ["AAMkAGI1AAAoZCfHAAA="],
+  "name": "get_message_in_text"
+}-->
+```msgraph-interactive
+GET https://graph.microsoft.com/v1.0/me/messages/AAMkAGI1AAAoZCfHAAA=/?$select=subject,body,bodyPreview,uniqueBody
+Prefer: outlook.body-content-type="text"
+```
+# [C#](#tab/csharp)
+[!INCLUDE [sample-code](../includes/snippets/csharp/get-message-in-text-csharp-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [JavaScript](#tab/javascript)
+[!INCLUDE [sample-code](../includes/snippets/javascript/get-message-in-text-javascript-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Objective-C](#tab/objc)
+[!INCLUDE [sample-code](../includes/snippets/objc/get-message-in-text-objc-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Java](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/get-message-in-text-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+---
+
+
+#### Response
+
+Here is an example of the response. 
+Note: The response includes a `Preference-Applied: outlook.body-content-type` header to acknowledge the `Prefer: outlook.body-content-type` request header.
+<!-- {
+  "blockType": "response",
+  "truncated": true,
+  "@odata.type": "microsoft.graph.message"
+} -->
+```http
+HTTP/1.1 200 OK
+Content-type: application/json
+Preference-Applied: outlook.body-content-type="text"
+
+{
+    "@odata.context":"https://graph.microsoft.com/v1.0/$metadata#users('cd209b0b-3f83-4c35-82d2-d88a61820480')/messages(subject,body,bodyPreview,uniqueBody)/$entity",
+    "@odata.etag":"W/\"CQAAABYAAABmWdbhEgBXTophjCWt81m9AAAoZYj4\"",
+    "id":"AAMkAGI1AAAoZCfHAAA=",
+    "subject":"Welcome to our group!",
+    "bodyPreview":"Welcome to our group, Dana! Hope you will enjoy working with us !\r\n\r\nWould you like to choose a day for our orientation from the available times below:\r\n\r\n\r\nDate\r\n        Time\r\n\r\nApril 14, 2017\r\n        1-3pm\r\n\r\nApril 21, 2017\r\n        10-12noon\r\n\r\n\r\n\r\nTh",
+    "body":{
+        "contentType":"text",
+        "content":"Welcome to our group, Dana! Hope you will enjoy working with us [\ud83d\ude0a] [\ud83d\ude0a] [\ud83d\ude0a] [\ud83d\ude0a] [\ud83d\ude0a] !\r\n\r\nWould you like to choose a day for our orientation from the available times below:\r\n\r\n\r\nDate\r\n        Time\r\n\r\nApril 14, 2017\r\n        1-3pm\r\n\r\nApril 21, 2017\r\n        10-12noon\r\n\r\n\r\n\r\nThanks!\r\n\r\n"
+    },
+    "uniqueBody":{
+        "contentType":"text",
+        "content":"Welcome to our group, Dana! Hope you will enjoy working with us [\ud83d\ude0a] [\ud83d\ude0a] [\ud83d\ude0a] [\ud83d\ude0a] [\ud83d\ude0a] !\r\nWould you like to choose a day for our orientation from the available times below:\r\n\r\nDate\r\n        Time\r\n\r\nApril 14, 2017\r\n        1-3pm\r\n\r\nApril 21, 2017\r\n        10-12noon\r\n\r\n\r\nThanks!\r\n"
+    }
+}
+```
 
 ## See also
 
 - [Add custom data to resources using extensions](/graph/extensibility-overview)
-- [Add custom data to users using open extensions (preview)](/graph/extensibility-open-users)
+- [Add custom data to users using open extensions](/graph/extensibility-open-users)
 <!--
-- [Add custom data to groups using schema extensions (preview)](/graph/extensibility-schema-groups)
+- [Add custom data to groups using schema extensions](/graph/extensibility-schema-groups)
 -->
 
 

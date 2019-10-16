@@ -30,7 +30,6 @@ One of the following permissions is required to call this API. To learn more, in
 <!-- { "blockType": "ignored" } -->
 ```http
 GET /app/onlineMeetings/{id}
-GET /applications/{id}/onlineMeetings/{id}
 ```
 
 ## Optional query parameters
@@ -58,7 +57,7 @@ The following example shows the request.
   "blockType": "request",
   "name": "get-onlineMeeting"
 }-->
-```http
+```msgraph-interactive
 GET https://graph.microsoft.com/beta/app/onlineMeetings/{id}
 ```
 # [C#](#tab/csharp)

@@ -23,6 +23,9 @@ One of the following permissions is required to call this API. To learn more, in
 |Delegated (personal Microsoft account)|Not supported|
 |Application| For **user** or **chat** resource:<br/>Chat.Read.All, Chat.ReadWrite.All<br/><br/>For **channel** resource:<br/>Group.Read.All, Group.ReadWrite.All |
 
+> [!NOTE]
+> Before calling this API with application permissions, you must request access. For details, see [Protected APIs in Microsoft Teams](/graph/teams-protected-apis).
+
 ## HTTP request
 <!-- { "blockType": "ignored" } -->
 ```http
@@ -60,7 +63,7 @@ Here is an example of the request.
   "blockType": "request",
   "name": "get_conversation_member"
 }-->
-```http
+```msgraph-interactive
 GET https://graph.microsoft.com/beta/chats/{id}/members/{id}
 ```
 # [C#](#tab/csharp)

@@ -1,7 +1,7 @@
 ---
 title: "targetedManagedAppProtection resource type"
 description: "Policy used to configure detailed management settings targeted to specific security groups"
-author: "tfitzmac"
+author: "davidmu1"
 localization_priority: Normal
 ms.prod: "Intune"
 doc_type: resourcePageType
@@ -122,5 +122,6 @@ Here is a JSON representation of the resource.
   ],
 }
 -->
+
 
 

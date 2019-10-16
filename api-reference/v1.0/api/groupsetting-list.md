@@ -57,7 +57,7 @@ If successful, this method returns a `200 OK` response code and collection of [g
   "blockType": "request",
   "name": "get_groupsettings"
 }-->
-```http
+```msgraph-interactive
 GET https://graph.microsoft.com/v1.0/groupSettings
 ```
 # [C#](#tab/csharp)
