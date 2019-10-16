@@ -11,7 +11,7 @@ doc_type: "apiPageType"
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Update the properties of accesspackagecatalog object.
+Update the properties of [accessPackageCatalog](../resources/accesspackagecatalog.md) object.
 
 ## Permissions
 

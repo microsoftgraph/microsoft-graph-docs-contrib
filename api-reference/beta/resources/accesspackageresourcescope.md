@@ -11,26 +11,20 @@ doc_type: "resourcePageType"
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-In Azure AD Entitlement Management, a access package resource scope is a reference to a scope within a resource, for those resources which have multiple scopes.
-
-## Methods
-
-| Method       | Return Type | Description |
-|:-------------|:------------|:------------|
-
+In [Azure AD Entitlement Management](entitlementmanagement-root.md), a access package resource scope is a reference to a scope within a resource, for those resources which have multiple scopes.
 
 ## Properties
 
 | Property     | Type        | Description |
 |:-------------|:------------|:------------|
-|description|String||
-|displayName|String||
+|description|String|The description of the scope.|
+|displayName|String|The display name of the scope.|
 |id|String| Read-only.|
-|isRootScope|Boolean||
-|originId|String||
-|originSystem|String||
+|isRootScope|Boolean|True if the scopes are arranged in a hierarchy and this is the top or root scope of the resource.|
+|originId|String|The unique identifier for the scope in the resource as defined in the origin system.|
+|originSystem|String|The origin system for the scope.|
 |roleOriginId|String||
-|url|String||
+|url|String|A resource locator for the scope.|
 
 ## Relationships
 

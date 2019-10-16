@@ -11,7 +11,7 @@ doc_type: "apiPageType"
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Retrieve the properties and relationships of an accesspackagecatalog object.
+Retrieve the properties and relationships of an [accessPackageCatalog](../resources/accesspackagecatalog.md) object.
 
 ## Permissions
 

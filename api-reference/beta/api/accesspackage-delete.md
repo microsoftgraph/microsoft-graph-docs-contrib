@@ -11,7 +11,7 @@ doc_type: "apiPageType"
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Delete accessPackage.
+Delete an [accessPackage](../resources/accesspackage.md) object.
 
 ## Permissions
 

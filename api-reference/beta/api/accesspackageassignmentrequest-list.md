@@ -11,7 +11,7 @@ doc_type: "apiPageType"
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Retrieve a list of accesspackageassignmentrequest objects.
+Retrieve a list of [accessPackageAssignmentRequest](../resources/accesspackageassignmentrequest.md) objects.
 
 ## Permissions
 

@@ -11,7 +11,7 @@ doc_type: "apiPageType"
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Use this API to create a new accessPackageCatalog.
+Use this API to create a new [accessPackageCatalog](../resources/accesspackagecatalog.md) object.
 
 ## Permissions
 

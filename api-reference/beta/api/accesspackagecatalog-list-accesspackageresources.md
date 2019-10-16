@@ -11,7 +11,7 @@ doc_type: "apiPageType"
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Retrieve a list of accessPackageResource objects in an accessPackageCatalog.
+Retrieve a list of [accessPackageResource](../resources/accesspackageresource.md) objects in an [accessPackageCatalog](../resources/accesspackagecatalog.md).
 
 ## Permissions
 
@@ -29,8 +29,6 @@ One of the following permissions is required to call this API. To learn more, in
 
 ```http
 GET /accessPackageCatalogs/{id}/accessPackageResources
-GET /accessPackages/{id}/accessPackageCatalog/accessPackageResources
-GET /accessPackageAssignmentPolicies/{id}/accessPackageCatalog/accessPackageResources
 ```
 
 ## Optional query parameters

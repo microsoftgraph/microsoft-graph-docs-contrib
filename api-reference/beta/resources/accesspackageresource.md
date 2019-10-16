@@ -11,7 +11,7 @@ doc_type: "resourcePageType"
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-In Azure AD Entitlement Management, a access package resource is a reference to a resource associated with a catalog whose roles can be used in one or more access packages.
+In [Azure AD Entitlement Management](entitlementmanagement-root.md), a access package resource is a reference to a resource associated with a catalog whose roles can be used in one or more access packages.
 
 ## Methods
 
@@ -25,14 +25,14 @@ In Azure AD Entitlement Management, a access package resource is a reference to 
 |:-------------|:------------|:------------|
 |addedBy|String|Read-only.|
 |addedOn|DateTimeOffset|The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 would look like this: `'2014-01-01T00:00:00Z'`|
-|description|String||
-|displayName|String||
+|description|String|A description for the resource.|
+|displayName|String|The display name of the resource, such as the application name, group name or site name.|
 |id|String| Read-only.|
-|isPendingOnboarding|Boolean||
-|originId|String||
-|originSystem|String||
-|resourceType|String||
-|url|String||
+|isPendingOnboarding|Boolean|True if the resource is not yet available for assignment.|
+|originId|String|The unique identifier of the resource in the origin system. |
+|originSystem|String|The type of the resource in the origin system.|
+|resourceType|String|The type of the resource, such as "Application" if it is an Azure AD connected application.|
+|url|String|A unique resource locator for the resource, such as the URL for signing a user into an application.|
 
 ## Relationships
 

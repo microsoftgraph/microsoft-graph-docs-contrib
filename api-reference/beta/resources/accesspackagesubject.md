@@ -11,7 +11,7 @@ doc_type: "resourcePageType"
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-In Azure AD Entitlement Management, an access package subject is a user, service principal or other entity that could be configured to request or be assigned an access package.
+In [Azure AD Entitlement Management](entitlementmanagement-root.md), an access package subject is a user, service principal or other entity that could be configured to request or be assigned an access package.
 
 ## Properties
 

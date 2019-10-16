@@ -11,7 +11,7 @@ doc_type: "apiPageType"
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Update the properties of an accesspackage object.
+Update the properties of an [accessPackage](../resources/accesspackage.md) object.
 
 ## Permissions
 
@@ -44,8 +44,8 @@ In the request body, supply the values for relevant fields that should be update
 
 | Property     | Type        | Description |
 |:-------------|:------------|:------------|
-|description|String||
-|displayName|String||
+|description|String|The new description of the access package.|
+|displayName|String|The new display name of the access package.|
 |isHidden|Boolean||
 
 ## Response

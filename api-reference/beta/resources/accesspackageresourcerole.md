@@ -11,7 +11,7 @@ doc_type: "resourcePageType"
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-In Azure AD Entitlement Management, a access package resource role is a reference to a role defined in a resource, that can be used in an access package.
+In [Azure AD Entitlement Management](entitlementmanagement-root.md), a access package resource role is a reference to a role defined in a resource, that can be used in an access package.
 
 ## Methods
 
@@ -22,11 +22,11 @@ In Azure AD Entitlement Management, a access package resource role is a referenc
 
 | Property     | Type        | Description |
 |:-------------|:------------|:------------|
-|description|String||
-|displayName|String||
+|description|String|A description for the resource role.|
+|displayName|String|The display name of the resource role such as the role defined by the application.|
 |id|String| Read-only.|
-|originId|String||
-|originSystem|String||
+|originId|String|The unique identifier of the resource role in the origin system. |
+|originSystem|String|The type of the resource in the origin system.|
 
 ## Relationships
 

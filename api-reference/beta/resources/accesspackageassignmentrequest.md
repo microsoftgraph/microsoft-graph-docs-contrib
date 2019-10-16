@@ -11,7 +11,7 @@ doc_type: "resourcePageType"
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-In Azure AD Entitlement Management, an access package assignment request is created by a user who wishes to obtain an access package assignment.  If the request is successful, with any necessary approvals, the user receives an access package assignment, and is the subject of that resulting access package assignment.
+In [Azure AD Entitlement Management](entitlementmanagement-root.md), an access package assignment request is created by a user who wishes to obtain an access package assignment.  If the request is successful, with any necessary approvals, the user receives an access package assignment, and is the subject of that resulting access package assignment.
 
 
 ## Methods
@@ -30,7 +30,7 @@ In Azure AD Entitlement Management, an access package assignment request is crea
 |createdDateTime|DateTimeOffset|The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 would look like this: `'2014-01-01T00:00:00Z'`|
 |expirationDateTime|DateTimeOffset|The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 would look like this: `'2014-01-01T00:00:00Z'`|
 |id|String| Read-only.|
-|isValidationOnly|Boolean||
+|isValidationOnly|Boolean|True if the request is not to be processed for assignment.|
 |justification|String|The requestor's supplied justification.|
 |requestState|String|One of `Denied`, `Delivered`, `PartiallyDelivered`. Read-only.|
 |requestStatus|String|More information on the request processing status. Read-only.|

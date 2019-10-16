@@ -11,7 +11,8 @@ doc_type: "apiPageType"
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Retrieve the properties and relationships of an accessPackageAssignmentPolicy object.
+In [Azure AD entitlement management](../resources/entitlementmanagement-root.md), retrieve the properties and relationships of an
+ [accessPackageAssignmentPolicy](../resources/accesspackageassignmentpolicy.md) object.
 
 ## Permissions
 
@@ -29,8 +30,6 @@ One of the following permissions is required to call this API. To learn more, in
 
 ```http
 GET /accessPackageAssignmentPolicies/{id}
-GET /accessPackages/{id}/accessPackageAssignmentPolicies/{id}
-GET /accessPackageAssignments/{id}/accessPackageAssignmentPolicy
 ```
 
 ## Optional query parameters

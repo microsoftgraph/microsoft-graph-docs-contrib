@@ -11,7 +11,7 @@ doc_type: "resourcePageType"
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-In Azure AD Entitlement Management, an access package defines the collections of resource roles and the policies for how one or more users may obtain access to those resources.  Each access package is contained within an access package catalog, and has links to the resources via the resource-specific role scopes which define the access the package provides.  An access package links to the access package assignment policies, each of which define who can request or be assigned an access package assignment.
+In [Azure AD Entitlement Management](entitlementmanagement-root.md), an access package defines the collections of resource roles and the policies for how one or more users may obtain access to those resources.  Each access package is contained within an access package catalog, and has links to the resources via the resource-specific role scopes which define the access the package provides.  An access package also links to the access package assignment policies, each of which define who can request or be assigned an access package assignment.
 
 
 ## Methods
@@ -38,7 +38,6 @@ In Azure AD Entitlement Management, an access package defines the collections of
 |isRoleScopesVisible|Boolean|Whether role scopes are visible.|
 |modifiedBy|String|The UPN of the user who last modified this resource. Read-only.|
 |modifiedDateTime|DateTimeOffset|The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 would look like this: `'2014-01-01T00:00:00Z'`. Read-only. |
-
 
 ## Relationships
 

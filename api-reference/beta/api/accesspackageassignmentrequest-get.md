@@ -11,7 +11,7 @@ doc_type: "apiPageType"
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Retrieve the properties and relationships of an accesspackageassignmentrequest object.
+Retrieve the properties and relationships of an  [accessPackageAssignmentRequest](../resources/accesspackageassignmentrequest.md) object.
 
 ## Permissions
 
@@ -29,8 +29,6 @@ One of the following permissions is required to call this API. To learn more, in
 
 ```http
 GET /accessPackageAssignmentRequests/{id}
-GET /accessPackageAssignments/{id}/accessPackageAssignmentRequests/{id}
-GET /accessPackageAssignmentResourceRoles/{id}/accessPackageAssignments/{id}/accessPackageAssignmentRequests/{id}
 ```
 
 ## Optional query parameters

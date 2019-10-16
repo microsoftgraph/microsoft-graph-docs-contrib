@@ -11,7 +11,7 @@ doc_type: "apiPageType"
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Retrieve the properties and relationships of an accesspackage object.
+Retrieve the properties and relationships of an [accessPackage](../resources/accesspackage.md) object.
 
 ## Permissions
 
@@ -29,8 +29,6 @@ One of the following permissions is required to call this API. To learn more, in
 
 ```http
 GET /accessPackages/{id}
-GET /accessPackageAssignments/{id}/accessPackage
-GET /accessPackageCatalogs/{id}/accessPackages/{id}
 ```
 
 ## Optional query parameters
