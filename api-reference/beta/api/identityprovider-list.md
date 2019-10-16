@@ -3,8 +3,8 @@ title: "List identityProviders"
 description: "Retrieve all identityProviders in the directory."
 localization_priority: Normal
 doc_type: apiPageType
-author: ""
-ms.prod: ""
+author: "valnav"
+ms.prod: "microsoft-identity-platform"
 ---
 
 # List identityProviders
