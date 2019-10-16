@@ -1,13 +1,13 @@
 ---
-title: "Set up change notifications for Teams messages, including message properties (preview)"
+title: "Set up change notifications for chat messages, including message properties (preview)"
 description: "Microsoft Graph uses a webhook mechanism to deliver change notifications to clients. Notifications can include resource properties."
 author: "piotrci"
 localization_priority: Priority
 ---
 
-# Set up change notifications for Teams messages, including message properties (preview)
+# Set up change notifications for chat messages, including message properties (preview)
 
-Microsoft Graph allows apps to subscribe to change notifications for resources via [webhooks](webhooks.md). You can now set up subscriptions to resource data (such as the content of a Microsoft Teams message) to be included in notifications. Your app can then run its business logic without the need to make additional API calls to fetch the changing resource. As a result, the app makes fewer API calls and has better performance, which is beneficial in large scale scenarios.
+Microsoft Graph allows apps to subscribe to change notifications for resources via [webhooks](webhooks.md). You can now set up subscriptions to resource data (such as the content of a Microsoft Teams chat message) to be included in notifications. Your app can then run its business logic without the need to make additional API calls to fetch the changing resource. As a result, the app makes fewer API calls and has better performance, which is beneficial in large scale scenarios.
 
 Requesting resource data in notifications requires you to implement the following additional logic to satisfy data access and security requirements: 
 
@@ -21,7 +21,7 @@ This article walks through the details, using the Team **messages** resource as 
 
 The following resources support change notifications that include resource data:
 
-- Teams messages (preview)
+- Chat messages (preview)
   - New or changed messages in a specific Teams channel: `/teams/{id}/channels/{id}/messages`
   - New or changed messages in a specific Teams chat: `/chats/{id}/messages`
   

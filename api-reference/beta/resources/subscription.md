@@ -63,7 +63,7 @@ Here is a JSON representation of the resource.
 | id | string | Unique identifier for the subscription. Read-only. |
 | applicationId | string | Identifier of the application used to create the subscription. Read-only. |
 | creatorId | string | Identifier of the user or service principal that created the subscription. If the app used delegated permissions to create the subscription, this field contains the id of the signed-in user the app called on behalf of. If the app used application permissions, this field contains the id of the service principal corresponding to the app. Read-only. |
-| includeResourceData | boolean | Optional. When set to `true`, change notifications will [include resource data](/graph/webhooks-with-resource-data) (such as content of a Teams message). | 
+| includeResourceData | boolean | Optional. When set to `true`, change notifications will [include resource data](/graph/webhooks-with-resource-data) (such as content of a chat message). | 
 | encryptionCertificate | string | Optional. Required when **includeResourceData** is true. A base64-encoded representation of a certificate with a public key used to encrypt resource data in notifications. | 
 | encryptionCertificateId | string | Optional. Required when **includeResourceData** is true. A custom app provided identifier to help identify the certificate needed to decrypt resource data. |
 
@@ -78,7 +78,7 @@ Here is a JSON representation of the resource.
 | Group conversations | 4230 minutes (under 3 days)    |
 | Drive root items    | 4230 minutes (under 3 days)    |
 | Security alerts     | 43200 minutes (under 30 days)  |
-| Teams messages (all teams, all channels)     | 60 minutes (1 hour)  |
+| Chat messages (from all teams, all channels)     | 60 minutes (1 hour)  |
 
 > **Note:** Existing applications and new applications should not exceed the supported value. In the future, any requests to create or renew a subscription beyond the maximum value will fail.
 

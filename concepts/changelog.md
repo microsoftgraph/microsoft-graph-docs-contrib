@@ -17,7 +17,7 @@ For details about known issues with Microsoft Graph APIs, see [Known issues](kno
 
 | **Change type** | **Version**   | **Description**                          |
 | :-------------- | :------------ | :--------------------------------------- |
-| Addition | beta | Added support for subscribing to notifications that include resource data. Currenttly supported resources are Teams messages in channels and chats. Subscribing apps will have to implement additional authorization and decryption code to benefit from this feature. For more details, see [Set up change notifications for Teams messages, including message properties (preview)](webhooks-with-resource-data.md).|
+| Addition | beta | Added support for subscribing to notifications that include resource data. Currenttly supported resources are chat messages in channels and chats. Subscribing apps will have to implement additional authorization and decryption code to benefit from this feature. For more details, see [Set up change notifications for chat messages, including message properties (preview)](webhooks-with-resource-data.md).|
 
 ### Identity and access (Azure AD)
 
