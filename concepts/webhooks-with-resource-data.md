@@ -27,15 +27,13 @@ The following resources support change notifications that include resource data:
   
 ## Creating a subscription
 
-To have resource data included in change notifications, you need to provide additional properties when creating a subscription:
+To have resource data included in change notifications, you **must** specify the following properties, in addition to those that are usually specified when creating a [subscription](webhooks.md):
 
 - **includeResourceData** set to `true` to explicitly request resource data.
 - An optional `$select` operator in the resource path to select the properties to be included.
 - **lifecycleNotificationUrl** - an endpoint to which where [lifecycle notifications](#subscription-lifecycle-notifications) will be delivered. This can be the same or different as **notificationUrl**.
 - **encryptionCertificate** containing only the public key that Microsoft Graph will use to encrypt resource data. You will keep the corresponding private key which will be used to [decrypt the content](#decrypting-resource-data-from-change-notifications).
 - **encryptionCertificateId** your own identifier for the certificate. It will be included in notifications so you can identify which certificate to use for decryption.
-
-> **Important:** These properties are required in order to successfully create a subscription for notifications with resource data.
 
 #### Subscription request example
 
