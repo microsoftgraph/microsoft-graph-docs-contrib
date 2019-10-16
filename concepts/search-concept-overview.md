@@ -37,8 +37,8 @@ You can use data sets listed in the following table.
 |Outlook|[Messages](/graph/api/resources/message?view=graph-rest-1.0)<br/>[Events](graph/api/resources/event?view=graph-rest-1.0)<br/>|
 |Sharepoint |[Files](/graph/api/resources/driveitem?view=graph-rest-1.0)|
 |OneDrive Business |[Files](/graph/api/resources/driveitem?view=graph-rest-1.0)|
-|Connectors |User defined types [externalItems](/graph/api/resources/driveitem?view=graph-rest-1.0) <!--todo nmoreauteam fix the link to Connectors page-->|
-|Connectors |Well known types [externalFiles](/graph/api/resources/driveitem?view=graph-rest-1.0) <!--todo nmoreauteam fix the link to Connectors page-->|
+|Connectors |User defined types [externalItems](/graph/api/resources/driveitem?view=graph-rest-1.0) <!--todo nmoreau fix the link to Connectors page-->|
+|Connectors |Well known types [externalFiles](/graph/api/resources/driveitem?view=graph-rest-1.0) <!--todo nmoreau fix the link to Connectors page-->|
 
 ## API reference
 
@@ -46,7 +46,7 @@ Looking for the API reference for this service?
 
 - [Microsoft Search query API in Microsoft Graph Beta](/graph/api/resources/search-api-overview)
 - [Microsoft Search indexing API in Microsoft Graph Beta](/graph/api/resources/search-api-overview) 
-<!--TODO nmoreauteam Fix the link to indexing API--->
+<!--TODO nmoreau Fix the link to indexing API--->
 
 ## Next steps
 
