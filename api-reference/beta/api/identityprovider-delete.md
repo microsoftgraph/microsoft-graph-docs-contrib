@@ -4,7 +4,7 @@ description: "Delete an existing identityProvider."
 localization_priority: Normal
 doc_type: apiPageType
 author: "valnav"
-ms.prod: ""
+ms.prod: "microsoft-identity-platform"
 ---
 
 # Delete identityProvider
