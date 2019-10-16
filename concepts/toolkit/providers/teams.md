@@ -15,6 +15,7 @@ To learn more, see [providers](../providers.md).
 
 Before using the Teams provider, you will need to make sure you have referenced the [Microsoft Teams SDK](https://docs.microsoft.com/en-us/javascript/api/overview/msteams-client?view=msteams-client-js-latest#using-the-sdk) in your page.
 
+### via script tag
 The following example uses the provider in HTML (via CDN).
 
 ```html
@@ -28,6 +29,14 @@ The following example uses the provider in HTML (via CDN).
 ></mgt-teams-provider>
 ```
 
+| Attribute | Description |
+| --- | --- | --- |
+| client-id   | String client ID (see Configure your Teams app). Required. |
+| auth-popup-url  | Absolute or relative path to the page that will handle auth in the popup (see Create the popup page). Required. |
+| scopes  | Comma separated strings for scopes the user must consent to on sign in. Optional. |
+| depends-on | Element selector string of another higher-priority provider component. Optional. |
+
+### via NPM 
 The following example uses the provider in JS modules (via NPM).
 
 Make sure to install both the toolkit and the Microsoft Teams SDK.
@@ -53,6 +62,16 @@ export interface TeamsConfig {
   scopes?: string[];
   msalOptions?: Configuration;
 }
+```
+
+Alternatively, you might need to set the reference to the Microsoft Teams Library. Here is an example:
+
+```ts
+import * as MicrosoftTeams from "@microsoft/teams-js/dist/MicrosoftTeams";
+import {Providers, TeamsProvider} from '@microsoft/mgt'; 
+
+TeamsProvider.microsoftTeamsLib = MicrosoftTeams;
+Providers.globalProvider = new TeamsProvider(config);
 ```
 
 For a complete example, see [Microsoft Teams tab sample](https://github.com/microsoftgraph/microsoft-graph-toolkit/tree/master/samples/teams-tab).
@@ -86,6 +105,16 @@ In order to sign in with your Teams credentials, you need to provide a URL that 
 <script>	    
   mgt.TeamsProvider.handleAuth();
 </script>
+```
+
+or via a module referenced in your auth popup page:
+
+```ts
+import * as MicrosoftTeams from "@microsoft/teams-js/dist/MicrosoftTeams";
+import {Providers, TeamsProvider} from '@microsoft/mgt'; 
+
+TeamsProvider.microsoftTeamsLib = MicrosoftTeams;
+TeamsProvider.handleAuth();
 ```
 
 ### Configure redirect URIs

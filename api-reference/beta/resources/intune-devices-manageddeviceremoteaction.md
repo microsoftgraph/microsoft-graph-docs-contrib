@@ -25,6 +25,8 @@ Not yet documented
 |signatureUpdate|4|Not yet documented|
 |wipe|5|Not yet documented|
 |customTextNotification|6|Not yet documented|
+|rebootNow|7|Not yet documented|
+|setDeviceName|8|Not yet documented|
 
 
 

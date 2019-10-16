@@ -29,7 +29,6 @@ One of the following permissions is required to call this API. To learn more, in
 
 ```http
 POST /chats/{id}/messages/{id}/replies
-POST /users/{id}/chats/{id}/messages/{id}/replies
 ```
 
 ## Request headers

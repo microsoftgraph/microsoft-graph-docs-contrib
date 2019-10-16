@@ -18,7 +18,6 @@ The following Graph resources are available to manage enrollment in Intune:
 
 - [Certificate connector setting](intune-onboarding-certificateconnectorsetting.md)
 - [Device and app management data](intune-onboarding-deviceandappmanagementdata.md)
-- [Device enrollment configuration](intune-onboarding-deviceenrollmentconfiguration.md)
 - [Device enrollment limit configuration](intune-onboarding-deviceenrollmentlimitconfiguration.md)
 - [Device enrollment platform restriction](intune-onboarding-deviceenrollmentplatformrestriction.md)
 - [Device enrollment platform restrictions configuration](intune-onboarding-deviceenrollmentplatformrestrictionsconfiguration.md)

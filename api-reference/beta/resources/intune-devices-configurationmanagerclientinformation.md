@@ -1,6 +1,6 @@
 ---
 title: "configurationManagerClientInformation resource type"
-description: "Configuration manager client information synced from SCCM"
+description: "Configuration Manager client information synced from SCCM"
 author: "rolyon"
 localization_priority: Normal
 ms.prod: "Intune"
@@ -13,7 +13,7 @@ doc_type: resourcePageType
 
 > **Note:** The Microsoft Graph API for Intune requires an [active Intune license](https://go.microsoft.com/fwlink/?linkid=839381) for the tenant.
 
-Configuration manager client information synced from SCCM
+Configuration Manager client information synced from SCCM
 
 ## Properties
 |Property|Type|Description|
