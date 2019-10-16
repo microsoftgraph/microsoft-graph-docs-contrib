@@ -171,12 +171,6 @@ Content-length: 211
           "authenticationStepRequirement":"MFA"
         }
       ],
-      "authenticationRequirementPolicies": [
-        {
-          "requirementProvider":"CA",
-          "details":MFA policy"
-        }
-      ],
       "correlationId":"65dd87ce-2183-419e-81a9-d6e20379bcc2",
       "conditionalAccessStatus":"applied",
       "isInteractive":true,
@@ -287,7 +281,6 @@ Content-length: 211
           "authenticationStepRequirement":"Primary authentication"
         }
       ],
-      "authenticationRequirementPolicies":[]
       "correlationId":"65dd87ce-2183-419e-81a9-d6e20379bcc2",
       "conditionalAccessStatus":"applied",
       "isInteractive":true,

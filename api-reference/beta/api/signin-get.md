@@ -129,12 +129,6 @@ Content-length: 211
           "authenticationStepRequirement":"MFA"
         }
       ],
-      "authenticationRequirementPolicies": [
-        {
-          "requirementProvider":"CA",
-          "details":MFA policy"
-        }
-      ],
       "correlationId":"65dd87ce-2183-419e-81a9-d6e20379bcc2",
       "conditionalAccessStatus":"applied",
       "isInteractive":true,
@@ -224,80 +218,83 @@ Content-type: application/json
 Content-length: 211
 
 {
-    "@odata.context": "https://graph.microsoft.com/beta/$metadata#auditLogs/signIns",
-    "value": [{
-        "id":"b01b1726-0147-425e-a7f7-21f252050400",
-        "createdDateTime":"2018-11-06T18:48:33.8527147Z",
-        "userDisplayName":"Jon Doe",
-        "userPrincipalName":"jdoe@www.contoso.com",
-        "userId":"d7cc485d-2c1b-422c-98fd-5ce52859a4a3",
-        "appId":"c44b4083-3bb0-49c1-b47d-974e53cbdf3c",
-        "appDisplayName":"Azure Portal",
-        "ipAddress":"207.254.19.10",
-        "clientAppUsed":"Browser",
-        "authenticationDetails":[{
-            "authenticationStepDateTime":"2018-11-06T18:48:03.8313489Z",
-            "authenticationMethod":"Password",
-            "authenticationMethodDetail":"Cloud password",
-            "succeeded":true,
-            "authenticationStepResultDetail":"methodSucceeded",
-            "authenticationStepRequirement":"Primary authentication"
-        }],
-        "authenticationRequirementPolicies":[]
-        "correlationId":"65dd87ce-2183-419e-81a9-d6e20379bcc2",
-        "conditionalAccessStatus":"applied",
-        "isInteractive":true,
-        "tokenIssuerName":null,
-        "tokenIssuerType":"AzureAD",
-        "processingTimeInMilliseconds":100,
-        "riskDetail":"none",
-        "riskLevelAggregated":"none",
-        "riskLevelDuringsignIn":"none",
-        "riskState":"none",
-        "riskEventTypes":[],
-        "resourceDisplayName":"windows azure service management api",
-        "resourceId":"797f4846-ba00-4fd7-ba43-dac1f8f63013",
-        "status":{},
-        "deviceDetail":{
-            "deviceId":null,
-            "displayName":null,
-            "operatingSystem":"Windows 7",
-            "browser":"Chrome 63.0.3239",
-            "isCompliant":null,
-            "isManaged":null,
-            "trustType":null
+  "@odata.context": "https://graph.microsoft.com/beta/$metadata#auditLogs/signIns",
+  "value": [
+    {
+      "id":"b01b1726-0147-425e-a7f7-21f252050400",
+      "createdDateTime":"2018-11-06T18:48:33.8527147Z",
+      "userDisplayName":"Jon Doe",
+      "userPrincipalName":"jdoe@www.contoso.com",
+      "userId":"d7cc485d-2c1b-422c-98fd-5ce52859a4a3",
+      "appId":"c44b4083-3bb0-49c1-b47d-974e53cbdf3c",
+      "appDisplayName":"Azure Portal",
+      "ipAddress":"207.254.19.10",
+      "clientAppUsed":"Browser",
+      "authenticationDetails": [
+        {
+          "authenticationStepDateTime":"2018-11-06T18:48:03.8313489Z",
+          "authenticationMethod":"Password",
+          "authenticationMethodDetail":"Cloud password",
+          "succeeded":true,
+          "authenticationStepResultDetail":"methodSucceeded",
+          "authenticationStepRequirement":"Primary authentication"
+        }
+      ],
+      "correlationId":"65dd87ce-2183-419e-81a9-d6e20379bcc2",
+      "conditionalAccessStatus":"applied",
+      "isInteractive":true,
+      "tokenIssuerName":null,
+      "tokenIssuerType":"AzureAD",
+      "processingTimeInMilliseconds":100,
+      "riskDetail":"none",
+      "riskLevelAggregated":"none",
+      "riskLevelDuringsignIn":"none",
+      "riskState":"none",
+      "riskEventTypes":[],
+      "resourceDisplayName":"windows azure service management api",
+      "resourceId":"797f4846-ba00-4fd7-ba43-dac1f8f63013",
+      "status":{},
+      "deviceDetail": {
+        "deviceId":null,
+        "displayName":null,
+        "operatingSystem":"Windows 7",
+        "browser":"Chrome 63.0.3239",
+        "isCompliant":null,
+        "isManaged":null,
+        "trustType":null
+      },
+      "location": {
+        "city":"Lithia Springs",
+        "state":"Georgia",
+        "countryOrRegion":"US",
+        "geoCoordinates": {
+          "altitude":null,
+          "latitude":33.7930908203125,
+          "longitude":-84.445358276367188
+        }
+      },
+      "appliedConditionalAccessPolicies": [
+        {
+          "id":"6551c58c-e5da-4036-a6ea-c2c3fad264f1",
+          "displayName":"MFA policy",
+          "enforcedGrantControls": [
+            "Mfa",
+            "RequireCompliantDevice"
+          ],
+          "enforcedSessionControls":[],
+          "result":"notApplied"
         },
-        "location":{
-            "city":"Lithia Springs",
-            "state":"Georgia",
-            "countryOrRegion":"US",
-            "geoCoordinates":{
-                "altitude":null,
-                "latitude":33.7930908203125,
-                "longitude":-84.445358276367188
-            }
-        },
-        "appliedConditionalAccessPolicies":[
-            {
-                "id":"6551c58c-e5da-4036-a6ea-c2c3fad264f1",
-                "displayName":"MFA policy",
-                "enforcedGrantControls":[
-                    "Mfa",
-                    "RequireCompliantDevice"
-                ],
-                "enforcedSessionControls":[],
-                "result":"notApplied"
-            },
-            {
-               "id":"b645a140-20fe-4ce0-a724-18ab201e9026",
-               "displayName":"PipelineTest4",
-               "enforcedGrantControls":[],
-               "enforcedSessionControls":[],
-               "result":"notEnabled"
-            }
-        ],
-        "authenticationProcessingDetails":[],
-        "networkLocationDetails":[]
-    }]
+        {
+          "id":"b645a140-20fe-4ce0-a724-18ab201e9026",
+          "displayName":"PipelineTest4",
+          "enforcedGrantControls":[],
+          "enforcedSessionControls":[],
+          "result":"notEnabled"
+        }
+      ],
+      "authenticationProcessingDetails":[],
+      "networkLocationDetails":[]
+    }
+  ]
 }
 ```

@@ -55,7 +55,6 @@ Provides details about user or application sign-in activity in your directory.
 |authenticationDetails|[authenticationDetail](authenticationdetail.md) collection|The result of the authentication attempt and additional details on the authentication method.|
 |authenticationMethodsUsed|String collection|The authentication methods used. Possible values: `SMS`, `Authenticator App`, `App Verification code`, `Password`, `FIDO`, `PTA`, or `PHS`.|
 |authenticationProcessingDetails|[keyValue](keyvalue.md) collection|Additional authentication processing details, such as the agent name in case of PTA/PHS or Server/farm name in case of federated authentication.|
-|authenticationRequirementPolicies|[authenticationRequirementPolicy](authenticationrequirementpolicy.md) collection|The CA policy that was required during authentication.|
 |networkLocationDetails|[networkLocationDetail](networklocationdetail.md) collection|The network location details, such as IP address, location of the sign-in, the type of network used, and its names. Possible values: `Named Netowrk`, `Extranet`, `Intranet`, or `Trusted Network`.|
 |servicePrincipalId|String|The application identifier used for sign-in. This field is populated when you are signing in using an application.|
 |servicePrincipalName|String|The application name used for sign-in. This field is populated when you are signing in using an application.|
