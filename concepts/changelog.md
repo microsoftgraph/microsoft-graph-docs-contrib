@@ -17,6 +17,9 @@ For details about known issues with Microsoft Graph APIs, see [Known issues](kno
 
 | **Change type** | **Version** | **Description**                  |
 |:----------------|:------------|:-----------------------------------------|
+| Addition | beta | Added new entities: <br/>[authenticationDetail](/graph/api/authenticationDetail.md?view=graph-rest-beta)<br/>[keyValue](/graph/api/keyValue.md?view=graph-rest-beta)<br/>[networkLocationDetail](/graph/api/networkLocationDetail.md?view=graph-rest-beta)|
+| Addition | beta | Added the **alternateSignInName**, **ServicePrincipalId**, **ServicePrincipalName**, and **authenticationProcessingDetails** properties to the [signIn](/graph/api/resources/signin?view=graph-rest-beta) resource. |
+| Deletion | beta | Moved the reference to [mfaDetail](/graph/api/resources/mfadetail?view=graph-rest-beta) from [signIn](/graph/api/resources/signin?view=graph-rest-beta) to [authenticationDetail](/graph/api/authenticationDetail.md?view=graph-rest-beta). |
 | Addition | beta and v1.0 | Added the **securityIdentifier** property to the [group](/graph/api/resources/group?view=graph-rest-1.0) resource. |
 | Addition | beta and v1.0 | Added the **mdmAppId** property to the [device](/graph/api/resources/group?view=graph-rest-1.0) resource. |
 | Addition | v1.0 | Added new entity [certificateBasedAuthConfiguration](/graph/api/resources/certificatebasedauthconfiguration?view=graph-rest-v1.0). |
