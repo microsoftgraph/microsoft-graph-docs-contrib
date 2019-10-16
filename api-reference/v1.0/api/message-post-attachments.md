@@ -140,7 +140,7 @@ Content-length: 202
 Here is an example of the request.
 
 <!-- {
-  "blockType": "request",
+  "blockType": "ignored",
   "name": "create_item_attachment_from_message_v1"
 }-->
 
