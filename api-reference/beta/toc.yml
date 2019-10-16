@@ -8133,20 +8133,6 @@
           href: api/contract-list.md
       - name: Conditional Access
         items:
-        - name: Policies
-          items:
-          - name: Conditional access policy
-            href: resources/conditionalaccesspolicy.md
-          - name: List conditional access policies
-            href: api/conditionalaccessroot-list-policies.md
-          - name: Get a conditional access policy
-            href: api/conditionalaccesspolicy-get.md
-          - name: Create a conditional access policy
-            href: api/conditionalaccessroot-post-policies.md
-          - name: Update a conditional access policy
-            href: api/conditionalaccesspolicy-update.md
-          - name: Delete a conditional access policy
-            href: api/conditionalaccesspolicy-delete.md
         - name: Named locations
           items:
           - name: Named location
@@ -8156,7 +8142,7 @@
             - name: List named locations
               href: api/conditionalaccessroot-list-namedlocations.md
             - name: Create a named location
-              href: api/conditionalaccessroot-list-namedlocations.md
+              href: api/conditionalaccessroot-post-namedlocations.md
           - name: Country named location
             items:
             - name: Country named location
