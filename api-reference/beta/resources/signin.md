@@ -87,7 +87,6 @@ Here is a JSON representation of the resource.
   "authenticationDetails": [{"@odata.type": "microsoft.graph.authenticationDetail"}],
   "authenticationMethodsUsed": ["String"],
   "authenticationProcessingDetails": [{"@odata.type": "microsoft.graph.keyValue"}],
-  "authenticationRequirementPolicies": [{"@odata.type": "microsoft.graph.authenticationRequirementPolicy"}],
   "clientAppUsed": "String",
   "conditionalAccessStatus": "string",
   "correlationId": "String",
