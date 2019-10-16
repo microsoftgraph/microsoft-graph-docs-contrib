@@ -59,7 +59,7 @@ Here is an example of the response. Note: The response object shown here may be 
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 31457
+Content-Length: 31513
 
 {
   "value": [
@@ -742,7 +742,8 @@ Content-Length: 31457
         "encryptionMethod": "aesCbc256",
         "requireEncryptionForWriteAccess": true,
         "blockCrossOrganizationWriteAccess": true
-      }
+      },
+      "bitLockerRecoveryPasswordRotation": "disabled"
     }
   ]
 }

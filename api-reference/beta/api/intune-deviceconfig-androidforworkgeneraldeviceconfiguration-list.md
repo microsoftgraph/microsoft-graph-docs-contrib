@@ -59,7 +59,7 @@ Here is an example of the response. Note: The response object shown here may be 
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 3288
+Content-Length: 3398
 
 {
   "value": [
@@ -131,7 +131,9 @@ Content-Length: 3288
       "workProfileRequirePassword": true,
       "securityRequireVerifyApps": true,
       "vpnAlwaysOnPackageIdentifier": "Vpn Always On Package Identifier value",
-      "vpnEnableAlwaysOnLockdownMode": true
+      "vpnEnableAlwaysOnLockdownMode": true,
+      "workProfileAllowWidgets": true,
+      "workProfileBlockPersonalAppInstallsFromUnknownSources": true
     }
   ]
 }

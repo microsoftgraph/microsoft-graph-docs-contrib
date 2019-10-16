@@ -1,7 +1,7 @@
 ---
 title: "getEffectivePermissions function"
 description: "Retrieves the effective permissions of the currently authenticated user"
-author: "tfitzmac"
+author: "davidmu1"
 localization_priority: Normal
 ms.prod: "intune"
 doc_type: apiPageType
@@ -86,6 +86,7 @@ Content-Length: 471
   ]
 }
 ```
+
 
 
 

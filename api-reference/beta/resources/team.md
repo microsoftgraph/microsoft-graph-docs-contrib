@@ -29,6 +29,8 @@ Every team is associated with a [group](../resources/group.md). The group has th
 |[Unarchive team](../api/team-unarchive.md) | [teamsAsyncOperation](../resources/teamsasyncoperation.md) |Restore the team to a read-write state. |
 |[List your teams](../api/user-list-joinedteams.md) | [team](team.md) collection | List the teams you are a member of. |
 |[List all teams](/graph/teams-list-all-teams) | [group](group.md) collection | List all groups that have teams. |
+|[Get team photo](../api/team-get-photo.md) | Binary data | Get the photo (picture) for a team. |
+|[Update team photo](../api/team-update-photo.md) | None | Update the photo (picture) for a team. |
 |[Publish apps to your organization](../resources/teamsapp.md)| [teamsApp](../resources/teamsapp.md) | Create Teams apps visible only to your organization. |
 |[Add app to team](../api/teamsappinstallation-add.md) | [teamsAppInstallation](teamsappinstallation.md) | Adds (installs) an app to a team.|
 |[Add tab to channel](../api/teamstab-add.md) | [teamsTab](../resources/teamstab.md) | Adds (installs) a tab to a team's channel.|
@@ -58,12 +60,11 @@ Every team is associated with a [group](../resources/group.md). The group has th
 
 | Relationship | Type | Description |
 |:---------------|:--------|:----------|
-|apps|[teamsApp](teamsapp.md) collection| (Obsolete) The apps installed in this team.|
 |channels|[channel](channel.md) collection|The collection of channels & messages associated with the team.|
 |installedApps|[teamsAppInstallation](teamsappinstallation.md) collection|The apps installed in this team.|
 |owners|[user](user.md)| The list of this team's owners. Currently, when creating a team using application permissions, exactly one owner must be specified. When using user delegated permissions, no owner can be specified (the current user is the owner). Owner must be specified as an object ID (GUID), not a UPN. |
 |operations|[teamsAsyncOperation](teamsasyncoperation.md) collection| The async operations that ran or are running on this team. | 
-|primaryChannel|[channel](channel.md)|The primary channel associated with the team.|
+|primaryChannel|[channel](channel.md)| The general channel for the team. | 
 |schedule|[schedule](schedule.md)| The schedule of shifts for this team.|
 |template|[teamsTemplate](teamstemplate.md)| The template this team was created from. See [available templates](https://docs.microsoft.com/en-us/MicrosoftTeams/get-started-with-teams-templates). |
 

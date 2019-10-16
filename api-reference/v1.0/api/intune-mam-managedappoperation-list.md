@@ -1,7 +1,7 @@
 ---
 title: "List managedAppOperations"
 description: "List properties and relationships of the managedAppOperation objects."
-author: "tfitzmac"
+author: "davidmu1"
 localization_priority: Normal
 ms.prod: "Intune"
 doc_type: apiPageType
@@ -71,6 +71,7 @@ Content-Length: 329
   ]
 }
 ```
+
 
 
 
