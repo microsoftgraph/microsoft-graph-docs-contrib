@@ -49,10 +49,10 @@ If successful, this method returns `200, OK` response code and a [searchResponse
 
 ## Common use cases 
 
-- Search [mail messages](/concepts/search-concept-messages.md)
-- Search [calendar events](/concepts/search-concept-events.md)
-- Search [files](/concepts/search-concept-files.md)
-- Search [custom types (Connectors)](/concepts/search-concept-custom-types.md) data
+- Search [mail messages](../../../concepts/search-concept-messages.md)
+- Search [calendar events](../../../concepts/search-concept-events.md)
+- Search [files](../../../concepts/search-concept-files.md)
+- Search [custom types (Connectors)](../../../concepts/search-concept-custom-types.md) data
 
 ## Examples
 
