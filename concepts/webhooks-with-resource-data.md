@@ -69,13 +69,12 @@ Content-Type: application/json
   "clientState": "<secretClientState>"
 }
 ```
- 
-> **Important:** Use the same hostname for both notifications URLs.
 
-> **Note:** You need to validate both notification endpoints as described in [the generic notification article](webhooks.md#managing-subscriptions).
+> **Note:** 
+> - Use the same hostname for both notifications URLs.
+> - You need to validate both notification endpoints as described in [the generic notification article](webhooks.md#managing-subscriptions).
 If you choose to use the same URL for both endpoints you will receive and respond to two validation requests.
-
-> **Note:** You cannot update (`PATCH`) the existing subscriptions to add the **lifecycleNotificationUrl** property. You should remove such existing subscriptions, and create new subscriptions and specify the **lifecycleNotificationUrl** property.
+> - You cannot update (`PATCH`) the existing subscriptions to add the **lifecycleNotificationUrl** property. You should remove such existing subscriptions, and create new subscriptions and specify the **lifecycleNotificationUrl** property.
 
 ## Subscription lifecycle notifications
 
