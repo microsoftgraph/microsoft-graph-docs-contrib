@@ -1,11 +1,11 @@
 ---
-title: "Set up change notifications for chat messages, including message properties (preview)"
+title: "Set up change notifications that include resource data (preview)"
 description: "Microsoft Graph uses a webhook mechanism to deliver change notifications to clients. Notifications can include resource properties."
 author: "piotrci"
 localization_priority: Priority
 ---
 
-# Set up change notifications for chat messages, including message properties (preview)
+# Set up change notifications that include resource data (preview)
 
 Microsoft Graph allows apps to subscribe to change notifications for resources via [webhooks](webhooks.md). You can now set up subscriptions to resource data (such as the content of a Microsoft Teams chat message) to be included in notifications. Your app can then run its business logic without the need to make additional API calls to fetch the changing resource. As a result, the app makes fewer API calls and has better performance, which is beneficial in large scale scenarios.
 
