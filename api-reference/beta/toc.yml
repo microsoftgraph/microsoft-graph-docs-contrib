@@ -7708,8 +7708,6 @@
           href: api/educationsubmission-list-outcomes.md
         - name: Get submitted resource
           href: api/educationsubmittedsubmissionresource-get.md
-        - name: Grade submission
-          href: api/educationsubmission-update.md
         - name: Return submission
           href: api/educationsubmission-return.md
       - name: Outcome
