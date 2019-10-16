@@ -15,7 +15,7 @@ Requesting resource data in notifications requires you to implement the followin
 - [Validate](#validating-the-authenticity-of-notifications) the authenticity of notifications as having originated from Microsoft Graph.
 - [Provide](#decrypting-resource-data-from-change-notifications) a public encryption key and use a private key to decrypt resource data received through notifications.
 
-This article walks through the details, using the Team **messages** resource as an example.
+This article walks through the details, using the **chatMessage** resource as an example.
 
 ## Supported resources
 
