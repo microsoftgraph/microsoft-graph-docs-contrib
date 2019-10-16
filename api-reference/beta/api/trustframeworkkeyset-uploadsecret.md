@@ -1,6 +1,6 @@
 ---
 title: "trustFrameworkKeySet: uploadSecret"
-description: "PROVIDE DESCRIPTION HERE"
+description: "This action can be used to upload a secret to a key set."
 localization_priority: Normal
 author: "valnav"
 ms.prod: "microsoft-identity-platform"
@@ -11,7 +11,7 @@ doc_type: "apiPageType"
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-PROVIDE DESCRIPTION HERE
+This action can be used to upload a plain text secret to a key set. Example of a secret will be an application secret in AAD, Google, Facebook or any other identity prvovider.
 
 ## Permissions
 
@@ -19,9 +19,9 @@ One of the following permissions is required to call this API. To learn more, in
 
 | Permission type                        | Permissions (from least to most privileged) |
 |:---------------------------------------|:--------------------------------------------|
-| Delegated (work or school account)     | Not supported. |
+| Delegated (work or school account)     | TrustFrameworkKeySet.ReadWrite.All |
 | Delegated (personal Microsoft account) | Not supported. |
-| Application                            | Not supported. |
+| Application                            | TrustFrameworkKeySet.ReadWrite.All |
 
 ## HTTP request
 
@@ -43,10 +43,10 @@ In the request body, provide a JSON object with the following parameters.
 
 | Parameter    | Type        | Description |
 |:-------------|:------------|:------------|
-|use|String||
-|k|String||
-|nbf|Int64||
-|exp|Int64||
+|use|String|Similar to 'use' property of trustFrameworkKey|
+|k|String|Similar to 'k' property of trustFrameworkKey. This is the field which is used  to send `secret`|
+|nbf|Int64|Similar to 'nbf' property of trustFrameworkKey|
+|exp|Int64|Similar to 'exp' property of trustFrameworkKey|
 
 ## Response
 
@@ -70,9 +70,9 @@ Content-type: application/json
 
 {
   "use": "use-value",
-  "k": "k-value",
-  "nbf": 99,
-  "exp": 99
+  "k": "application-secret-to-be-uploaded",
+  "nbf": 1508969811,
+  "exp": 1508973711
 }
 ```
 
@@ -92,14 +92,11 @@ The following is an example of the response.
 HTTP/1.1 200 OK
 Content-type: application/json
 {
-  "k": "k-value",
-  "x5c": [
-    "x5c-value"
-  ],
-  "x5t": "x5t-value",
-  "kty": "kty-value",
-  "use": "use-value",
-  "exp": 99
+	"kid": "kid-value",
+	"use": "use-value",
+	"kty": "OCT",
+	"nbf": "1508969811",
+	"exp": "1508973711"
 }
 ```
 

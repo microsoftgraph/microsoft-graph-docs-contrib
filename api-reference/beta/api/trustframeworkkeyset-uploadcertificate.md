@@ -1,6 +1,6 @@
 ---
 title: "trustFrameworkKeySet: uploadCertificate"
-description: "PROVIDE DESCRIPTION HERE"
+description: "This action can be used to upload a certificate to a key set."
 localization_priority: Normal
 author: "valnav"
 ms.prod: "microsoft-identity-platform"
@@ -11,7 +11,7 @@ doc_type: "apiPageType"
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-PROVIDE DESCRIPTION HERE
+This action can be used to upload a certificate to a key set. The input to the api is a base-64 encoded value of the certificate contents.
 
 ## Permissions
 
@@ -19,9 +19,9 @@ One of the following permissions is required to call this API. To learn more, in
 
 | Permission type                        | Permissions (from least to most privileged) |
 |:---------------------------------------|:--------------------------------------------|
-| Delegated (work or school account)     | Not supported. |
+| Delegated (work or school account)     | TrustFrameworkKeySet.ReadWrite.All |
 | Delegated (personal Microsoft account) | Not supported. |
-| Application                            | Not supported. |
+| Application                            | TrustFrameworkKeySet.ReadWrite.All |
 
 ## HTTP request
 
@@ -43,7 +43,7 @@ In the request body, provide a JSON object with the following parameters.
 
 | Parameter    | Type        | Description |
 |:-------------|:------------|:------------|
-|key|String||
+|key|String| This is the field for sending certificate content. **The value should be base-64 encoded version of the actual certificate content.** |
 
 ## Response
 
@@ -86,14 +86,11 @@ The following is an example of the response.
 HTTP/1.1 200 OK
 Content-type: application/json
 {
-  "k": "k-value",
-  "x5c": [
-    "x5c-value"
-  ],
-  "x5t": "x5t-value",
-  "kty": "kty-value",
-  "use": "use-value",
-  "exp": 99
+	"kid": "kid-value",
+	"use": "sig",
+	"kty": "oct",
+	"nbf": 1508969811,
+	"exp": 1508973711
 }
 ```
 

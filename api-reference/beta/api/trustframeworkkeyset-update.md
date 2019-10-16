@@ -11,7 +11,8 @@ doc_type: "apiPageType"
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Update the properties of trustframeworkkeyset object.
+ The operation will replace the content of an existing key set.  Specifying id in the request payload is optional.
+
 
 ## Permissions
 
@@ -19,16 +20,16 @@ One of the following permissions is required to call this API. To learn more, in
 
 | Permission type                        | Permissions (from least to most privileged) |
 |:---------------------------------------|:--------------------------------------------|
-| Delegated (work or school account)     | Not supported. |
+| Delegated (work or school account)     | TrustFrameworkKeySet.ReadWrite.All |
 | Delegated (personal Microsoft account) | Not supported. |
-| Application                            | Not supported. |
+| Application                            | TrustFrameworkKeySet.ReadWrite.All |
 
 ## HTTP request
 
 <!-- { "blockType": "ignored" } -->
 
 ```http
-PATCH /trustFramework/keySets/{id}
+PUT /trustFramework/keySets/{id}
 ```
 
 ## Request headers
@@ -39,7 +40,6 @@ PATCH /trustFramework/keySets/{id}
 
 ## Request body
 
-In the request body, supply the values for relevant fields that should be updated. Existing properties that are not included in the request body will maintain their previous values or be recalculated based on changes to other property values. For best performance, don't include existing values that haven't changed.
 
 | Property     | Type        | Description |
 |:-------------|:------------|:------------|
@@ -60,7 +60,7 @@ The following is an example of the request.
 }-->
 
 ```http
-PATCH https://graph.microsoft.com/beta/trustFramework/keySets/{id}
+PUT https://graph.microsoft.com/beta/trustFramework/keySets/{id}
 Content-type: application/json
 
 {
