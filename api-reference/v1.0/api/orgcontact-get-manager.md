@@ -1,6 +1,6 @@
 ---
 title: "orgContact: Get manager"
-description: "Get the contact's manager"
+description: "Get the organizational contact's manager"
 localization_priority: Normal
 author: "davidmu1"
 ms.prod: "microsoft-identity-platform"
@@ -32,9 +32,9 @@ GET /contacts/{id}/manager
 This method supports the [OData Query Parameters](https://developer.microsoft.com/graph/docs/concepts/query_parameters) `$select` to help customize the response.
 
 ## Request headers
-| Name       | Type | Description|
-|:-----------|:------|:----------|
-| Authorization  | string  | Bearer {token}. Required. |
+| Header       | Value |
+|:-----------|:----------|
+| Authorization  | Bearer {token}. Required. |
 
 ## Request body
 Do not supply a request body for this method.

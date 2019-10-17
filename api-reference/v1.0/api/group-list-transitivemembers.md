@@ -9,7 +9,7 @@ doc_type: apiPageType
 
 # List group transitive members
 
-Get a list of the group's members. A group can have users, devices and other groups as members. This operation is transitive and will also return a flat list of all nested members.
+Get a list of the group's members. A group can have users, devices and other groups as members. This operation is transitive and returns a flat list of all nested members.
 
 ## Permissions
 
@@ -37,9 +37,9 @@ This method supports the [OData Query Parameters](/graph/query-parameters) to he
 
 ## Request headers
 
-| Name       | Type | Description|
-|:-----------|:------|:----------|
-| Authorization  | string  | Bearer {token}. Required. |
+| Header       | Value |
+|:-----------|:----------|
+| Authorization  | Bearer {token}. Required. |
 
 ## Request body
 

@@ -30,9 +30,9 @@ GET /groups/{id}/members
 This method supports the [OData Query Parameters](/graph/query-parameters) to help customize the response.
 
 ## Request headers
-| Name       | Type | Description|
-|:-----------|:------|:----------|
-| Authorization  | string  | Bearer {token}. Required. |
+| Header       | Value |
+|:-----------|:----------|
+| Authorization  | Bearer {token}. Required. |
 
 ## Request body
 Do not supply a request body for this method.

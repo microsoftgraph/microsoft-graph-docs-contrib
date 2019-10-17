@@ -29,9 +29,9 @@ GET /contacts/{id}/directReports
 This method supports the [OData Query Parameters](https://developer.microsoft.com/graph/docs/concepts/query_parameters) `$select` to help customize the response.
 
 ## Request headers
-| Name       | Type | Description|
-|:-----------|:------|:----------|
-| Authorization  | string  | Bearer {token}. Required. |
+| Header       | Value |
+|:-----------|:----------|
+| Authorization  | Bearer {token}. Required. |
 
 ## Request body
 Do not supply a request body for this method.
@@ -41,7 +41,7 @@ Do not supply a request body for this method.
 If successful, this method returns a `200 OK` response code and collection of [directoryObject](../resources/directoryobject.md) objects in the response body.
 ## Example
 ##### Request
-Here is an example of the request.
+The following is an example of the request.
 
 <!-- {
   "blockType": "request",

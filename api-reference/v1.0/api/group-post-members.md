@@ -31,9 +31,9 @@ POST /groups/{id}/members/$ref
 ```
 
 ## Request headers
-| Name       | Type | Description|
-|:---------------|:--------|:----------|
-| Authorization  | string  | Bearer {token}. Required. |
+| Header       | Value |
+|:---------------|:----------|
+| Authorization  | Bearer {token}. Required. |
 
 ## Request body
 In the request body, supply a JSON representation of a [directoryObject](../resources/directoryobject.md), [user](../resources/user.md), [group](../resources/group.md) or [organizational contact](../resources/orgcontact.md) object to be added.

@@ -11,7 +11,8 @@ doc_type: apiPageType
 
 Return all the groups that the [organizational contact](../resources/orgcontact.md) is a member of. The check is transitive, unlike reading the memberOf navigation property, which returns only the groups that the user is a direct member of.
 
-This function supports Office 365 and other types of groups provisioned in Azure AD. The maximum number of groups each request can return is 2046. Note that Office 365 Groups cannot contain groups. So membership in an Office 365 Group is always direct.
+This function supports Office 365 and other types of groups provisioned in Azure Active Directory (Azure AD). The maximum number of groups each request can return is 2046. 
+>**Note**: Office 365 Groups cannot contain groups. So membership in an Office 365 Group is always direct.
 
 ## Permissions
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
@@ -29,9 +30,9 @@ POST /contacts/{id}/getMemberGroups
 
 ```
 ## Request headers
-| Name       | Type | Description|
-|:---------------|:--------|:----------|
-| Authorization  | string  | Bearer {token}. Required. |
+| Header       | Value |
+|:---------------|:----------|
+| Authorization  |  Bearer {token}. Required. |
 
 ## Request body
 In the request body, provide a JSON object with the following parameters.
@@ -45,9 +46,9 @@ In the request body, provide a JSON object with the following parameters.
 If successful, this method returns `200 OK` response code and String collection object in the response body.
 
 ## Example
-Here is an example of how to call this API.
+
 ##### Request
-Here is an example of the request.
+The following is an example of the request.
 
 <!-- {
   "blockType": "request",
@@ -64,7 +65,8 @@ Content-length: 33
 ```
 
 ##### Response
-Here is an example of the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.
+The following is an example of the response.
+> **Note**: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.
 <!-- {
   "blockType": "response",
   "truncated": true,

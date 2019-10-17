@@ -9,7 +9,7 @@ doc_type: apiPageType
 
 # List organizational contact transitive memberOf
 
-Get groups that this [organizational contact](../resources/orgcontact.md) is a member of. This API request is transitive, and will also return all groups the organizational contact is a nested member of.
+Get groups that this [organizational contact](../resources/orgcontact.md) is a member of. The API request is transitive, and returns all groups the organizational contact is a nested member of.
 
 ## Permissions
 
@@ -52,7 +52,7 @@ If successful, this method returns a `200 OK` response code and collection of [d
 
 ### Request
 
-Here is an example of the request.
+The following is an example of the request.
 
 # [HTTP](#tab/http)
 <!-- {

@@ -1,6 +1,6 @@
 ---
 title: "orgContact: checkMemberGroups"
-description: "One of the following permissions is required to call this API. To learn more, including how to choose permissions, see Permissions."
+description: "Check for membership in the specified list of groups. Returns from the list those group IDs of which the organizational contact has a direct or transitive membership."
 localization_priority: Normal
 author: "davidmu1"
 ms.prod: "microsoft-identity-platform"
@@ -11,7 +11,9 @@ doc_type: apiPageType
 
 Check for membership in the specified list of groups. Returns from the list those group IDs of which the [organizational contact](../resources/orgcontact.md) has a direct or transitive membership.
 
-You can check up to a maximum of 20 groups per request. This function supports Office 365 and other types of groups provisioned in Azure AD. Note that Office 365 Groups cannot contain groups. So membership in an Office 365 Group is always direct.
+You can check up to a maximum of 20 groups per request. This function supports Office 365 and other types of groups provisioned in Azure Active Directory (Azure AD).
+>**Note**: Office 365 Groups cannot contain groups. So membership in an Office 365 Group is always direct.
+
 
 ## Permissions
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
@@ -29,9 +31,9 @@ POST /contacts/{id}/checkMemberGroups
 
 ```
 ## Request headers
-| Name       | Type | Description|
-|:---------------|:--------|:----------|
-| Authorization  | string  | Bearer {token}. Required. |
+| Header       | Value |
+|:---------------|:----------|
+| Authorization  | Bearer {token}. Required. |
 
 ## Request body
 In the request body, provide a JSON object with the following parameters.
@@ -42,12 +44,12 @@ In the request body, provide a JSON object with the following parameters.
 
 ## Response
 
-If successful, this method returns `200 OK` response code and String collection object in the response body.
+If successful, this method returns `200 OK` response code and a String collection object in the response body.
 
 ## Example
-Here is an example of how to call this API.
+
 ##### Request
-Here is an example of the request.
+The following is an example of the request.
 
 <!-- {
   "blockType": "request",
@@ -66,7 +68,8 @@ Content-length: 44
 ```
 
 ##### Response
-Here is an example of the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.
+The following is an example of the response.
+> **Note**: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.
 <!-- {
   "blockType": "response",
   "truncated": true,

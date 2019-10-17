@@ -29,9 +29,9 @@ GET /contacts
 This method supports the [OData Query Parameters](https://developer.microsoft.com/graph/docs/concepts/query_parameters) `$expand`, `$filter`, `$select`, and `$top` to help customize the response.
 
 ## Request headers
-| Name       | Type | Description|
-|:-----------|:------|:----------|
-| Authorization  | string  | Bearer {token}. Required. |
+| Header       | Value |
+|:-----------|:----------|
+| Authorization  |Bearer {token}. Required. |
 
 ## Request body
 Do not supply a request body for this method.
@@ -41,7 +41,7 @@ Do not supply a request body for this method.
 If successful, this method returns a `200 OK` response code and a collection of [orgContact](../resources/orgcontact.md) objects in the response body.
 ## Example
 ##### Request
-Here is an example of the request.
+The following is an example of the request.
 
 <!-- {
   "blockType": "request",
@@ -52,7 +52,8 @@ GET https://graph.microsoft.com/v1.0/contacts
 ```
 
 ##### Response
-Here is an example of the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.
+The following is an example of the response.
+> **Note**: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.
 <!-- {
   "blockType": "response",
   "truncated": true,

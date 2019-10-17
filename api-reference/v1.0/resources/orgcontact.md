@@ -54,6 +54,7 @@ Inherits from [directoryObject](directoryobject.md).
 |directReports|[directoryObject](directoryobject.md) collection| The contact's direct reports. (The users and contacts that have their manager property set to this contact.)  Read-only. Nullable.|
 |manager|[directoryObject](directoryobject.md)| The user or contact that is this contact's manager. Read-only.|
 |memberOf|[directoryObject](directoryobject.md) collection| Groups that this contact is a member of. Read-only. Nullable.|
+|transitiveMemberOf|[directoryObject](directoryobject.md) collection| Groups that this contact is a member of, including groups that the contact is nested under.|. Read-only. Nullable.|
 
 ## JSON representation
 
