@@ -3,7 +3,7 @@ title: "call: answer"
 description: "Answer an incoming call."
 author: "VinodRavichandran"
 localization_priority: Normal
-ms.prod: "microsoft-teams"
+ms.prod: "cloud-communications"
 doc_type: apiPageType
 ---
 
@@ -29,7 +29,7 @@ You do not need any permissions to answer a peer-to-peer call. You need one of t
 > **Note:** For a call that uses application-hosted media, you also need the `Calls.AccessMedia.All` permission.                                                   |
 
 ## HTTP request
-<!-- { "blockType": "ignored" } -->
+<!-- {"blockType": "ignored" } -->
 ```http
 POST /app/calls/{id}/answer
 POST /communications/calls/{id}/answer

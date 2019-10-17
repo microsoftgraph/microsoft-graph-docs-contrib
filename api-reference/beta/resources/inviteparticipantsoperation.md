@@ -3,7 +3,7 @@ title: "inviteParticipantsOperation resource type"
 description: "Represents the status of a long-running participant invitation operation, triggered by a call to the participant-invite API."
 author: "VinodRavichandran"
 localization_priority: Normal
-ms.prod: "microsoft-teams"
+ms.prod: "cloud-communications"
 doc_type: resourcePageType
 ---
 
@@ -18,13 +18,10 @@ Represents the status of a long-running participant invitation operation, trigge
 | Property                       | Type                        | Description                                                                                                                                       |
 | :----------------------------- | :---------------------------| :-------------------------------------------------------------------------------------------------------------------------------------------------|
 | clientContext                  | String                      | The client context.                                                                                                                               |
-| id                             | String                      | The server operation id. Read-only. Server generated.                                                                                             |
+| id                             | String                      | The server operation id. Read-only.                                                                                              |
 | participants | [invitationParticipantInfo](invitationParticipantInfo.md) collection | The participants to invite. |
-| resultInfo                     | [resultInfo](resultinfo.md) | The result information.  Read-only. Server generated.                                                                                             |
-| status                         | String                      | Possible values are: `notStarted`, `running`, `completed`, `failed`. Read-only. Server generated.                                                 |
-
-## Relationships
-None
+| resultInfo                     | [resultInfo](resultinfo.md) | The result information.  Read-only.                                                                                             |
+| status                         | String                      | Possible values are: `notStarted`, `running`, `completed`, `failed`. Read-only.                                                  |
 
 ## JSON representation
 

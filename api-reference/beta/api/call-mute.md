@@ -3,7 +3,7 @@ title: "call: mute"
 description: "Allows the application to mute itself."
 author: "VinodRavichandran"
 localization_priority: Normal
-ms.prod: "microsoft-teams"
+ms.prod: "cloud-communications"
 doc_type: apiPageType
 ---
 

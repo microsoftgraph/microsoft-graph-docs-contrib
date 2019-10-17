@@ -3,7 +3,7 @@ title: "call: transfer"
 description: "Transfer an active peer-to-peer call."
 author: "VinodRavichandran"
 localization_priority: Normal
-ms.prod: "microsoft-teams"
+ms.prod: "cloud-communications"
 doc_type: apiPageType
 ---
 

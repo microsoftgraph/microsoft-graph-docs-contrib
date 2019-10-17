@@ -3,7 +3,7 @@ title: "Create call"
 description: "Create a new call."
 author: "VinodRavichandran"
 localization_priority: Normal
-ms.prod: "microsoft-teams"
+ms.prod: "cloud-communications"
 doc_type: apiPageType
 ---
 
@@ -11,8 +11,9 @@ doc_type: apiPageType
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Create [call](../resources/call.md) enables your bot to create a new outgoing call or join an existing meeting. You will need to [register the calling bot](https://docs.microsoft.com/en-us/microsoftteams/platform/concepts/calls-and-meetings/registering-calling-bot) and go through the list of permissions needed as mentioned below.
+This enables your bot to create a new outgoing call or join an existing group call. If an existing group call has the necessary meeting related properties attached to it, you're essentially joining a meeting that's already been created. See the meeting related examples below for more details.
 
+> **Note:** Currently, only VoIP calls are supported. 
 
 ## Permissions
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](https://docs.microsoft.com/en-us/microsoftteams/platform/concepts/calls-and-meetings/registering-calling-bot#add-microsoft-graph-permissions).
@@ -23,7 +24,7 @@ One of the following permissions is required to call this API. To learn more, in
 | Delegated (personal Microsoft account) | Not Supported                                                                           |
 | Application                            | Calls.JoinGroupCallsasGuest.All, Calls.JoinGroupCalls.All, Calls.Initiate.All, Calls.InitiateGroupCalls.All |
 
-> **Note:** In addition, for a call with app hosted media, you need the Calls.AccessMedia.All permission.
+> **Note:** For a call with app-hosted media, you need the `Calls.AccessMedia.All` permission with one of the permissions listed in the previous table.
 
 ## HTTP request
 <!-- { "blockType": "ignored" } -->
@@ -40,8 +41,6 @@ POST /communications/calls
 
 ## Request body
 In the request body, supply a JSON representation of a [call](../resources/call.md) object.
-
-> **Note:** Properties marked as `Server generated` are ignored when processing `POST` on `app/calls`.
 
 ## Response
 If successful, this method returns a `201 Created` response code and a [call](../resources/call.md) object in the response body.
@@ -832,7 +831,7 @@ Authorization: Bearer <Token>
 }
 ```
 
-### Join channel meeting as a guest with service hosted media
+### Example 6: Join channel meeting as a guest with service hosted media
 For joining a channel meeting as a guest you will need to create a guest [identity](../resources/identityset.md) and add it as the call source in the join meeting request.
 The display name is the name you want to be displayed in the meeting for your guest identity. The id may be a unique id identifying the guest identity.
 

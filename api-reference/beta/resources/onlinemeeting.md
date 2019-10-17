@@ -3,7 +3,7 @@ title: "onlineMeeting resource type"
 description: "Captures information about the meeting, including the join URL, the attendees list, and the description."
 author: "VinodRavichandran"
 localization_priority: Normal
-ms.prod: "microsoft-teams"
+ms.prod: "cloud-communications"
 doc_type: resourcePageType
 ---
 
@@ -27,11 +27,11 @@ Captures information about the meeting, including the join URL, the attendees li
 | audioConferencing         | [audioConferencing](audioconferencing.md)              | Represents phone access information for an onlineMeeting. |
 | canceledDateTime          | DateTime                                               | The time in UTC when the meeting was canceled. |
 | chatInfo                  | [chatInfo](chatinfo.md)                                | The chat related information associated with this meeting. |
-| creationDateTime          | DateTime                                               | Meeting creation time in UTC. Readonly. Server generated. |
+| creationDateTime          | DateTime                                               | Meeting creation time in UTC. Read-only.  |
 | endDateTime               | DateTime                                               | Meeting end time in UTC, as was set when the meeting was created. |
 | entryExitAnnouncement     | Boolean                                                | The attendance announcements status for the online meeting. When attendance announcements are enabled, the online meeting will announce the names of the participants who join the meeting through audio. |
-| expirationDateTime        | DateTime                                               | Expiry time of the meeting in UTC after which the online meeting will be deleted automatically.Readonly, Server generated. Current default is 180 days for scheduled meetings. |
-| id                        | String                                                 | The ID associated with the online meeting. Used in a GET HTTP request as the ID. Read-only. Server generated. |
+| expirationDateTime        | DateTime                                               | Expiry time of the meeting in UTC after which the online meeting will be deleted automatically.Read-only. Current default is 180 days for scheduled meetings. |
+| id                        | String                                                 | The ID associated with the online meeting. Used in a GET HTTP request as the ID. Read-only. |
 | isCancelled               | Boolean                                                | Value indicating, Whether the meeting has been canceled. |
 | joinUrl                   | String                                                 | The URL that is used when the online meeting is joined from the web. |
 | isBroadcast               | Boolean                                                | The flag to determine whether it's a broadcast meeting. |

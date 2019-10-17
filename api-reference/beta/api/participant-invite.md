@@ -3,7 +3,7 @@ title: "participant: invite"
 description: "Invite participants to the active call."
 author: "VinodRavichandran"
 localization_priority: Normal
-ms.prod: "microsoft-teams"
+ms.prod: "cloud-communications"
 doc_type: apiPageType
 ---
 
@@ -56,8 +56,11 @@ Returns `200 OK` response code and a Location header with a uri to the [invitePa
 ## Examples
 The following examples shows how to call this API.
 
+> **Note:** The response objects might be shortened for readability. All the properties will be returned from an actual call.
+
+### Example 1: Invite One Participant to an Existing Group Call
+
 ##### Request
-The following example shows the request.
 
 # [HTTP](#tab/http)
 <!-- {
@@ -72,20 +75,19 @@ Content-Length: 464
 {
   "participants": [
     {
-      "endpointType": "default",
+      "@odata.type": "#microsoft.graph.invitationParticipantInfo",
+      "replacesCallId": "a7ebfb2d-871e-419c-87af-27290b22e8db",
       "identity": {
+        "@odata.type": "#microsoft.graph.identitySet",
         "user": {
-          "id": "550fae72-d251-43ec-868c-373732c2704f",
-          "tenantId": "72f988bf-86f1-41af-91ab-2d7cd011db47",
-          "displayName": "Heidi Steen"
+          "@odata.type": "#microsoft.graph.identity",
+          "id": "278405a3-f568-4b3e-b684-009193463064",
+          "identityProvider": "AAD"
         }
-      },
-      "languageId": "languageId-value",
-      "region": "region-value",
-      "replacesCallId": "replacesCallId-value"
+      }
     }
   ],
-  "clientContext": "clientContext-value"
+  "clientContext": "f2fa86af-3c51-4bc2-8fc0-475452d9764f"
 }
 ```
 # [C#](#tab/csharp)
@@ -114,56 +116,31 @@ Content-Length: 464
 } -->
 ```http
 HTTP/1.1 200 OK
-Location: https://graph.microsoft.com/beta/communications/calls/57dab8b1-894c-409a-b240-bd8beae78896/operations/17e3b46c-f61d-4f4d-9635-c626ef18e6ad
-Content-Type: application/json
-Content-Length: 259
-
-{
-  "id": "17e3b46c-f61d-4f4d-9635-c626ef18e6ad",
-  "status": "running",
-  "clientContext": "d45324c1-fcb5-430a-902c-f20af696537c"
-}
-```
-<br/>
-
-## Example - Invite one participant to an existing multiparty call
-
-##### Request
-
-```http
-POST /communications/calls/57DAB8B1894C409AB240BD8BEAE78896/participants/invite
 Content-Type: application/json
 
 {
+  "id": "eec3812a-fdc3-4fb4-825c-a06c9f35414e",
+  "status": "Running",
+  "clientContext": "f2fa86af-3c51-4bc2-8fc0-475452d9764f",
+  "resultInfo": null,
   "participants": [
     {
-      "endpointType": "default",
+      "endpointType": null,
+      "id": null,
+      "replacesCallId": "a7ebfb2d-871e-419c-87af-27290b22e8db",
       "identity": {
         "user": {
-          "id": "550fae72-d251-43ec-868c-373732c2704f",
-          "tenantId": "72f988bf-86f1-41af-91ab-2d7cd011db47",
-          "displayName": "Heidi Steen"
-        }
-      },
-      "languageId": "en-US",
-      "region": "westus"
+          "id": "278405a3-f568-4b3e-b684-009193463064",
+          "displayName": "Participant",
+          "identityProvider": "AAD",
+          "tenantId": "72f988bf-86f1-41af-91ab-2d7cd011db47"
+        },
+        "application": null,
+        "device": null,
+        "phone": null
+      }
     }
-  ],
-  "clientContext": "d45324c1-fcb5-430a-902c-f20af696537c"
-}
-```
-
-##### Response
-
-```http
-HTTP/1.1 200 OK
-Content-Type: application/json
-Content-Length: 259
-
-{
-  "id": "17e3b46c-f61d-4f4d-9635-c626ef18e6ad",
-  "status": "running",
-  "clientContext": "d45324c1-fcb5-430a-902c-f20af696537c"
+  ]
 }
 ```
 
@@ -181,18 +158,25 @@ Content-Type: application/json
 }-->
 ```json
 {
-  "@odata.type": "microsoft.graph.commsNotifications",
-  "value": [
+  "id": "790d8c45-7a74-46dd-90cd-4549b0634fa6",
+  "status": "Running",
+  "clientContext": "f2fa86af-3c51-4bc2-8fc0-475452d9764f",
+  "resultInfo": null,
+  "participants": [
     {
-      "@odata.type": "microsoft.graph.commsNotification",
-      "changeType": "deleted",
-      "resourceUrl": "/communications/calls/57DAB8B1894C409AB240BD8BEAE78896/operations/0FE0623FD62842EDB4BD8AC290072CC5",
-      "resourceData": {
-        "@odata.type": "#microsoft.graph.inviteParticipantsOperation",
-        "@odata.id": "/communications/calls/57DAB8B1894C409AB240BD8BEAE78896/operations/0FE0623FD62842EDB4BD8AC290072CC5",
-        "@odata.etag": "W/\"51\"",
-        "clientContext": "d45324c1-fcb5-430a-902c-f20af696537c",
-        "status": "completed"
+      "endpointType": null,
+      "id": null,
+      "replacesCallId": "a7ebfb2d-871e-419c-87af-27290b22e8db",
+      "identity": {
+        "user": {
+          "id": "278405a3-f568-4b3e-b684-009193463064",
+          "displayName": "Participant",
+          "identityProvider": "AAD",
+          "tenantId": "72f988bf-86f1-41af-91ab-2d7cd011db47"
+        },
+        "application": null,
+        "device": null,
+        "phone": null
       }
     }
   ]
@@ -213,173 +197,229 @@ Content-Type: application/json
 }-->
 ```json
 {
-  "@odata.type": "microsoft.graph.commsNotifications",
-  "value": [
-    {
-      "@odata.type": "microsoft.graph.commsNotification",
-      "changeType": "updated",
-      "resourceUrl": "/communications/calls/57DAB8B1894C409AB240BD8BEAE78896/participants",
-      "resourceData": [
-        {
-          "@odata.type": "#microsoft.graph.participant",
-          "@odata.id": "/communications/calls/57DAB8B1894C409AB240BD8BEAE78896/participants/8A34A46B3D174ADC8DCEDC4E7D572698",
-          "@odata.etag": "W/\"51\"",
-          "info": {
-            "identity": {
-              "user": {
-                "displayName": "Test User",
-                "id": "8A34A46B-3D17-4ADC-8DCE-DC4E7D572698"
-              }
-            },
-            "region": "westus",
-            "languageId": "en-US"
-          },
-          "mediaStreams": [
+   "@odata.type":"#microsoft.graph.commsNotifications",
+   "value":[
+      {
+         "@odata.type":"#microsoft.graph.commsNotification",
+         "changeType":"updated",
+         "resource":"/app/calls/7531d31f-d10d-44de-802f-c569dbca451c/participants",
+         "resourceUrl":"/communications/calls/7531d31f-d10d-44de-802f-c569dbca451c/participants",
+         "resourceData":[
             {
-              "mediaType": "audio",
-              "label": "main-audio",
-              "sourceId": "1",
-              "direction": "sendReceive",
-              "serverMuted": false
+               "@odata.type":"#microsoft.graph.participant",
+               "info":{
+                  "@odata.type":"#microsoft.graph.participantInfo",
+                  "identity":{
+                     "@odata.type":"#microsoft.graph.identitySet",
+                     "application":{
+                        "@odata.type":"#microsoft.graph.identity",
+                        "displayName":"Participant",
+                        "id":"278405a3-f568-4b3e-b684-009193463064",
+                        "tenantId":"72f988bf-86f1-41af-91ab-2d7cd011db47"
+                     }
+                  },
+                  "endpointType":"default"
+               },
+               "mediaStreams":[
+                  {
+                     "@odata.type":"#microsoft.graph.mediaStream",
+                     "mediaType":"audio",
+                     "sourceId":"1",
+                     "direction":"sendReceive",
+                     "serverMuted":false
+                  }
+               ],
+               "isMuted":false,
+               "isInLobby":false,
+               "id":null
             }
-          ]
-        },
-        {
-          "@odata.type": "#microsoft.graph.participant",
-          "@odata.id": "/communications/calls/57DAB8B1894C409AB240BD8BEAE78896/participants/123456W77E24E4D85F80597083CB830",
-          "@odata.etag": "W/\"55\"",
-          "info": {
-            "identity": {
-              "application": {
-                "displayName": "Test Bot",
-                "id": "1234A46B-3D17-4ADC-8DCE-DC4E7D556789"
-              }
-            },
-            "region": "westus",
-            "languageId": "en-US"
-          },
-          "mediaStreams": [
-            {
-              "mediaType": "audio",
-              "label": "main-audio",
-              "sourceId": "2",
-              "direction": "sendReceive",
-              "serverMuted": false
-            }
-          ]
-        }
-      ]
-    }
-  ]
+         ]
+      }
+   ]
 }
+
 ```
 
-## Example - Invite multiple participants to an existing multiparty call
+### Example 2: Invite multiple participants to an existing group call
 
-> **Note**: the existing multipparty call must have a valid [chatInfo](../resources/chatInfo.md). We support inviting upto 5 participants.
+> **Note**: the existing group call must have a valid [chatInfo](../resources/chatInfo.md). We support inviting upto 5 participants.
+
 ##### Request
 
 ```http
-POST /communications/calls/57DAB8B1894C409AB240BD8BEAE78896/participants/invite
+POST /communications/calls/7531d31f-d10d-44de-802f-c569dbca451c/participants/invite
 Content-Type: application/json
+```
 
+<!-- {
+  "blockType": "request",
+  "name": "participant-invite-multiple"
+}-->
+
+```json
 {
   "participants": [
     {
-      "endpointType": "default",
+      "@odata.type": "#microsoft.graph.invitationParticipantInfo",
+      "replacesCallId": "a7ebfb2d-871e-419c-87af-27290b22e8db",
       "identity": {
+        "@odata.type": "#microsoft.graph.identitySet",
         "user": {
-          "id": "550fae72-d251-43ec-868c-373732c2704f",
-          "tenantId": "72f988bf-86f1-41af-91ab-2d7cd011db47",
-          "displayName": "Heidi Steen"
+          "@odata.type": "#microsoft.graph.identity",
+          "id": "7e1b4346-85a6-4bdd-abe3-d11c5d420efe",
+          "identityProvider": "AAD"
         }
-      },
-      "languageId": "en-US",
-      "region": "westus"
+      }
     },
     {
-      "endpointType": "default",
+      "@odata.type": "#microsoft.graph.invitationParticipantInfo",
+      "replacesCallId": "a7ebfb2d-871e-419c-87af-27290b22e8db",
       "identity": {
+        "@odata.type": "#microsoft.graph.identitySet",
         "user": {
-          "id": "98da8a1a-1b87-452c-a713-65d3f10b1253",
-          "tenantId": "72f988bf-86f1-41af-91ab-2d7cd011db47",
-          "displayName": "Clark Kent"
+          "@odata.type": "#microsoft.graph.identity",
+          "id": "1e126418-44a0-4a94-a6f8-0efe1ad71acb",
+          "identityProvider": "AAD"
         }
-      },
-      "languageId": "en-US",
-      "region": "westus"
+      }
     }
   ],
-  "clientContext": "d45324c1-fcb5-430a-902c-f20af696537c"
+  "clientContext": "f2fa86af-3c51-4bc2-8fc0-475452d9764f"
 }
 ```
-
 ##### Response
-
 ```http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 259
-
-{
-  "id": "0b8a18aa-26d4-4e1b-bf3f-d54c5f6ca6b8",
-  "status": "running",
-  "clientContext": "d45324c1-fcb5-430a-902c-f20af696537c"
-}
-```
-
-##### Notification - operation completed
-
-```http
-POST https://bot.contoso.com/api/calls
-Authorization: Bearer <TOKEN>
-Content-Type: application/json
 ```
 
 <!-- {
-  "blockType": "example",
-  "@odata.type": "microsoft.graph.commsNotifications"
-}-->
+  "blockType": "response",
+  "truncated": true,
+  "@odata.type": "microsoft.graph.inviteParticipantsOperation"
+} -->
+
 ```json
 {
-  "@odata.type": "microsoft.graph.commsNotifications",
-  "value": [
-    {
-      "@odata.type": "microsoft.graph.commsNotification",
-      "changeType": "deleted",
-      "resourceUrl": "/communications/calls/57DAB8B1894C409AB240BD8BEAE78896/operations/0FE0623FD62842EDB4BD8AC290072CC5",
-      "resourceData": {
-        "@odata.type": "#microsoft.graph.inviteParticipantsOperation",
-        "@odata.id": "/communications/calls/57DAB8B1894C409AB240BD8BEAE78896/operations/0FE0623FD62842EDB4BD8AC290072CC5",
-        "@odata.etag": "W/\"51\"",
-        "clientContext": "d45324c1-fcb5-430a-902c-f20af696537c",
-        "status": "completed"
+   "id":"eec3812a-fdc3-4fb4-825c-a06c9f35414e",
+   "status":"Running",
+   "clientContext":"f2fa86af-3c51-4bc2-8fc0-475452d9764f",
+   "resultInfo":null,
+   "participants":[
+      {
+         "endpointType":null,
+         "id":null,
+         "replacesCallId":null,
+         "identity":{
+            "user":{
+               "id":"7e1b4346-85a6-4bdd-abe3-d11c5d420efe",
+               "displayName":"Participant1",
+               "identityProvider":"AAD",
+               "tenantId":"72f988bf-86f1-41af-91ab-2d7cd011db47"
+            },
+            "application":null,
+            "device":null,
+            "phone":null
+         }
+      },
+      {
+         "endpointType":null,
+         "id":null,
+         "replacesCallId":null,
+         "identity":{
+            "user":{
+               "id":"1e126418-44a0-4a94-a6f8-0efe1ad71acb",
+               "displayName":"Participant2",
+               "identityProvider":"AAD",
+               "tenantId":"72f988bf-86f1-41af-91ab-2d7cd011db47"
+            },
+            "application":null,
+            "device":null,
+            "phone":null
+         }
       }
-    }
-  ]
+   ]
 }
+
 ```
-
-##### Notification - roster updated with participants added
-
+##### Notification - operation completed
 ```http
 POST https://bot.contoso.com/api/calls
 Authorization: Bearer <TOKEN>
 Content-Type: application/json
 ```
-
 <!-- {
   "blockType": "example",
+  "truncated": "true",
   "@odata.type": "microsoft.graph.commsNotifications"
 }-->
 ```json
+HTTP/1.1 200 OK
+Content-Type: application/json
+
 {
   "@odata.type": "#microsoft.graph.commsNotifications",
   "value": [
     {
       "@odata.type": "#microsoft.graph.commsNotification",
+      "changeType": "deleted",
+      "resource": "/communications/calls/7531d31f-d10d-44de-802f-c569dbca451c/operations/participants",
+      "resourceUrl": "/communications/calls/7531d31f-d10d-44de-802f-c569dbca451c/operations/participants",
+      "resourceData": {
+        "@odata.type": "#microsoft.graph.inviteParticipantsOperation",
+        "participants": [
+          {
+            "@odata.type": "#microsoft.graph.invitationParticipantInfo",
+            "identity": {
+              "@odata.type": "#microsoft.graph.identitySet",
+              "application": {
+                "@odata.type": "#microsoft.graph.identity",
+                "id": "7e1b4346-85a6-4bdd-abe3-d11c5d420efe"
+              }
+            }
+          },
+          {
+            "@odata.type": "#microsoft.graph.invitationParticipantInfo",
+            "identity": {
+              "@odata.type": "#microsoft.graph.identitySet",
+              "application": {
+                "@odata.type": "#microsoft.graph.identity",
+                "id": "1e126418-44a0-4a94-a6f8-0efe1ad71acb"
+              }
+            }
+          }
+        ],
+        "status": "completed",
+        "clientContext": "f2fa86af-3c51-4bc2-8fc0-475452d9764f",
+        "id": null
+      }
+    }
+  ]
+}
+
+```
+##### Notification - roster updated with participants added
+```http
+POST https://bot.contoso.com/api/calls
+Authorization: Bearer <TOKEN>
+Content-Type: application/json
+```
+
+<!-- {
+  "blockType": "example",
+  "@odata.type": "microsoft.graph.commsNotifications"
+}-->
+
+```json
+
+{
+  "@odata.type": "#microsoft.graph.commsNotifications",
+  "value": [
+    {
+     "@odata.type": "#microsoft.graph.commsNotification",
       "changeType": "updated",
-      "resourceUrl": "/communications/calls/57DAB8B1894C409AB240BD8BEAE78896/participants",
+      "resource": "/app/calls/7531d31f-d10d-44de-802f-c569dbca451c/operations/participants",
+      "resourceUrl": "/communications/calls/7531d31f-d10d-44de-802f-c569dbca451c/operations/participants",
       "resourceData": [
         {
           "@odata.type": "#microsoft.graph.participant",
@@ -387,20 +427,19 @@ Content-Type: application/json
             "@odata.type": "#microsoft.graph.participantInfo",
             "identity": {
               "@odata.type": "#microsoft.graph.identitySet",
-              "user": {
+              "application": {
                 "@odata.type": "#microsoft.graph.identity",
-                "id": "550fae72-d251-43ec-868c-373732c2704f",
-                "tenantId": "72f988bf-86f1-41af-91ab-2d7cd011db47",
-                "displayName": "Heidi Steen"
-              },
-              "region": "westus",
-              "languageId": "en-US"
-            }
+                "displayName": "Participant1",
+                "id": "7e1b4346-85a6-4bdd-abe3-d11c5d420efe",
+                "tenantId": "72f988bf-86f1-41af-91ab-2d7cd011db47"
+              }
+            },
+            "endpointType": "default"
           },
           "mediaStreams": [
             {
               "@odata.type": "#microsoft.graph.mediaStream",
-              "mediaType": "audio",
+                "mediaType": "audio",
               "sourceId": "1",
               "direction": "sendReceive",
               "serverMuted": false
@@ -408,22 +447,20 @@ Content-Type: application/json
           ],
           "isMuted": false,
           "isInLobby": false,
-          "id": "d556b432-3091-42c8-9902-c528a7abfe67"
+          "id": null
         },
         {
           "@odata.type": "#microsoft.graph.participant",
           "info": {
             "@odata.type": "#microsoft.graph.participantInfo",
             "identity": {
-              "user": {
+              "@odata.type": "#microsoft.graph.identitySet",
+              "application": {
                 "@odata.type": "#microsoft.graph.identity",
-                "id": "98da8a1a-1b87-452c-a713-65d3f10b1253",
-                "tenantId": "72f988bf-86f1-41af-91ab-2d7cd011db47",
-                "displayName": "Clark Kent"
-              },
-              "region": "westus",
-              "languageId": "en-US"
-            }
+                "id": "1e126418-44a0-4a94-a6f8-0efe1ad71acb"
+              }
+            },
+            "endpointType": "default"
           },
           "mediaStreams": [
             {
@@ -436,348 +473,56 @@ Content-Type: application/json
           ],
           "isMuted": false,
           "isInLobby": false,
-          "id": "e63a436a-6932-4b6f-bba3-5ee0002f9543"
+          "id": null
         }
       ]
     }
   ]
 }
+
+
 ```
 
-## Example - Invite participants to a new multiparty call, replacing an existing peer-to-peer call
+### Example 3: Invite Participants to a an Existing Group Call, Replacing an Existing Peer-to-Peer Call
 
-This example shows a complete end-to-end flow for creating a meeting and inviting a participant to join.
 
-> **Note:** The invite API supports only one participant when replacing an existing peer-to-peer call. When multiple participants are provided in the request body, only the first participant will be read and the rest of the participants will be ignored.
+The invite API supports only one participant when replacing an existing peer-to-peer call. 
+When multiple participants are provided in the request body, only the first participant 
+will be read and the rest of the participants will be ignored.
 
-##### Step 1 - Answer incoming peer-to-peer call with service hosted media
 
-##### Notification - Incoming
+> **Note:** The invite API supports only one participant when `replacesCallId` is provided. 
+> For more details on using `replacesCallId` to replace an existing peer-to-peer call, 
+> see [Invitation Participant Info](../resources/invitationparticipantinfo.md).
+
 
 ``` http
-POST https://bot.contoso.com/api/calls
-Authorization: Bearer <TOKEN>
-Content-Type: application/json
-```
-
-<!--{
-  "blockType": "example",
-  "@odata.type": "microsoft.graph.commsNotifications"
-}-->
-```json
-{
-  "@odata.type": "microsoft.graph.commsNotifications",
-  "value": [
-    {
-      "@odata.type": "microsoft.graph.commsNotification",
-      "changeType": "created",
-      "resourceUrl": "/communications/calls/57DAB8B1894C409AB240BD8BEAE78896",
-      "resourceData": {
-        "@odata.type": "#microsoft.graph.call",
-        "@odata.id": "/communications/calls/57DAB8B1894C409AB240BD8BEAE78896",
-        "@odata.etag": "W/\"5445\"",
-        "state": "incoming",
-        "direction": "incoming",
-        "source": {
-          "@odata.type": "#microsoft.graph.participantInfo",
-          "identity": {
-            "user": {
-              "displayName": "Test User",
-              "language": "en-US",
-              "id": "8A34A46B-3D17-4ADC-8DCE-DC4E7D572698"
-            }
-          }
-        },
-        "targets": [
-          {
-            "@odata.type": "#microsoft.graph.participantInfo",
-            "identity": {
-              "application": {
-                "displayName": "Test BOT",
-                "language": "en-US",
-                "id": "8A34A46B-3D17-4ADC-8DCE-DC4E7D572698"
-              }
-            }
-          }
-        ],
-        "requestedModalities": [ "audio", "video" ]
-      }
-    }
-  ]
-}
-```
-
-##### Request
-
-``` http
-POST /communications/calls/57DAB8B1894C409AB240BD8BEAE78896/answer
-Authorization: Bearer <TOKEN>
-Content-Type: application/json
-
-{
-  "callback": "https://bot.contoso.com/api/calls",
-  "acceptModalities": [ "audio", "video" ],
-  "mediaConfig": {
-    "@odata.type": "#microsoft.graph.serviceHostedMediaConfig",
-    "preFetchMedia": [
-     {
-       "uri": "https://cdn.contoso.com/beep.wav",
-       "resourceId": "f8971b04-b53e-418c-9222-c82ce681a582"
-     },
-     {
-       "uri": "https://cdn.contoso.com/cool.wav",
-       "resourceId": "86dc814b-c172-4428-9112-60f8ecae1edb"
-     }
-    ]
-  }
-}
-```
-
-##### Response
-
-``` http
-HTTP/1.1 200 OK
-Content-Type: application/json
-Content-Length: 306
-
-{
-  "clientContext": "clientContext-value",
-  "id": "id-value",
-  "status": "Running"
-}
-```
-
-##### Notification - Establishing
-
-``` http
-POST https://bot.contoso.com/api/calls
-Authorization: Bearer <TOKEN>
+POST /communications/calls/ab6233a5-20b7-4c5e-bea2-ce56c9776429/participants/invite
 Content-Type: application/json
 ```
 
 <!-- {
-  "blockType": "example",
-  "@odata.type": "microsoft.graph.commsNotifications"
+  "blockType": "request",
+  "name": "participant-invite-existing"
 }-->
-``` json
-{
-  "@odata.type": "microsoft.graph.commsNotifications",
-  "value": [
-    {
-      "@odata.type": "microsoft.graph.commsNotification",
-      "changeType": "updated",
-      "resourceUrl": "/communications/calls/57DAB8B1894C409AB240BD8BEAE78896",
-      "resourceData": {
-        "@odata.type": "#microsoft.graph.call",
-        "@odata.id": "/communications/calls/57DAB8B1894C409AB240BD8BEAE78896",
-        "@odata.etag": "W/\"5445\"",
-        "state": "establishing"
-      }
-    }
-  ]
-}
-```
-
-##### Notification - Established
-
-``` http
-POST https://bot.contoso.com/api/calls
-Authorization: Bearer <TOKEN>
-Content-Type: application/json
-```
-
-<!-- {
-  "blockType": "example",
-  "@odata.type": "microsoft.graph.commsNotifications"
-}-->
-``` json
-{
-  "@odata.type": "microsoft.graph.commsNotifications",
-  "value": [
-    {
-      "@odata.type": "microsoft.graph.commsNotification",
-      "changeType": "updated",
-      "resourceUrl": "/communications/calls/57DAB8B1894C409AB240BD8BEAE78896",
-      "resourceData": {
-        "@odata.type": "#microsoft.graph.call",
-        "@odata.id": "/communications/calls/57DAB8B1894C409AB240BD8BEAE78896",
-        "@odata.etag": "W/\"5445\"",
-        "state": "established",
-        "activeModalities": [ "audio", "video" ],
-        "requestedModalities": []
-      }
-    }
-  ]
-}
-```
-
-##### Step 2 - Create and join multiparty call without media
-
-> **IMPORTANT**: If the bot instance is joining only for the purpose of facilitating the transfer, it should avoid media negotiations.  Therefore, it is best to add it without any `requestedModalities` or `mediaConfig`.
-
-##### Request
-
-``` http
-POST /communications/calls
-Content-Type: application/json
-
-{
-  "subject": "Test Call",
-  "callback": "https://bot.contoso.com/api/calls",
-  "source": {
-    "@odata.type": "#microsoft.graph.participantInfo",
-    "identity": {
-      "application": {
-        "id": "8A34A46B-3D17-4ADC-8DCE-DC4E7D572698"
-      }
-    }
-  },
-  "targetDisposition": "default",
-  "requestedModalities": [],
-  "chatInfo": {
-    "threadId": "90ED37DC-D8E3-4E11-9DE3-30A955DDA06F",
-    "messageId": "1507228578052",
-    "replyChainMessageId": "1507228578052"
-  },
-  "meetingInfo": {
-    "@odata.type": "#microsoft.graph.organizerMeetingInfo",
-    "organizer": {
-      "user": {
-        "id": "90ED37DC-D8E3-4E11-9DE3-30A955DDA06F",
-        "tenantId": "49BFC225-8482-4AB8-94E7-76B48FDB9849"
-      }
-    }
-  }
-}
-```
-
-##### Response
-
-``` http
-HTTP/1.1 201 Created
-Location: https://graph.microsoft.com/beta/communications/calls/90ED37DCD8E34E119DE330A955DDA06F
-Content-Type: application/json
-```
 
 ```json
-{
-  "id": "90ED37DCD8E34E119DE330A955DDA06F",
-  "subject": "Test Call",
-  "callback": "https://bot.contoso.com/api/calls",
-  "source": {
-    "@odata.type": "#microsoft.graph.participantInfo",
-    "identity": {
-      "application": {
-        "id": "8A34A46B-3D17-4ADC-8DCE-DC4E7D572698"
-      }
-    }
-  },
-  "targetDisposition": "default",
-  "requestedModalities": [],
-  "chatInfo": {
-    "threadId": "90ED37DC-D8E3-4E11-9DE3-30A955DDA06F",
-    "messageId": "1507228578052",
-    "replyChainMessageId": "1507228578052"
-  },
-  "meetingInfo": {
-    "@odata.type": "#microsoft.graph.organizerMeetingInfo",
-    "organizer": {
-      "user": {
-        "id": "90ED37DC-D8E3-4E11-9DE3-30A955DDA06F",
-        "tenantId": "49BFC225-8482-4AB8-94E7-76B48FDB9849"
-      }
-    }
-  }
-}
-```
-
-##### Notification - Establishing
-
-``` http
-POST https://bot.contoso.com/api/calls
-Authorization: Bearer <TOKEN>
-Content-Type: application/json
-```
-
-<!-- {
-  "blockType": "example",
-  "@odata.type": "microsoft.graph.commsNotifications"
-}-->
-``` json
-{
-  "@odata.type": "microsoft.graph.commsNotifications",
-  "value": [
-    {
-      "@odata.type": "microsoft.graph.commsNotification",
-      "changeType": "updated",
-      "resourceUrl": "/communications/calls/90ED37DCD8E34E119DE330A955DDA06F",
-      "resourceData": {
-        "@odata.type": "#microsoft.graph.call",
-        "@odata.id": "/communications/calls/90ED37DCD8E34E119DE330A955DDA06F",
-        "@odata.etag": "W/\"5445\"",
-        "state": "establishing",
-        "direction": "outgoing"
-      }
-    }
-  ]
-}
-```
-
-##### Notification - Established
-
-``` http
-POST https://bot.contoso.com/api/calls
-Authorization: Bearer <TOKEN>
-Content-Type: application/json
-```
-
-<!-- {
-  "blockType": "example",
-  "@odata.type": "microsoft.graph.commsNotifications"
-}-->
-``` json
-{
-  "@odata.type": "microsoft.graph.commsNotifications",
-  "value": [
-    {
-      "@odata.type": "microsoft.graph.commsNotification",
-      "changeType": "updated",
-      "resourceUrl": "/communications/calls/90ED37DCD8E34E119DE330A955DDA06F",
-      "resourceData": {
-        "@odata.type": "#microsoft.graph.call",
-        "@odata.id": "/communications/calls/90ED37DCD8E34E119DE330A955DDA06F",
-        "@odata.etag": "W/\"5445\"",
-        "state": "established",
-        "activeModalities": []
-      }
-    }
-  ]
-}
-```
-
-##### Step 3 - Invite participant to multiparty call, replacing the existing peer-to-peer call
-
-For details on using `replacesCallId` to replace an existing peer-to-peer call, see [Invitation Participant](../resources/invitationparticipantinfo.md).
-
-> **Note:** The invite API supports only one participant when replacesCallId is provided. When multiple participants are provided in the request body, only the first participant will be read and the rest of the participants will be ignored.
-
-``` http
-POST /communications/calls/90ED37DCD8E34E119DE330A955DDA06F/participants/invite
-Authorization: Bearer <TOKEN>
-Content-Type: application/json
-
 {
   "participants": [
     {
       "@odata.type": "#microsoft.graph.invitationParticipantInfo",
+      "replacesCallId": "a7ebfb2d-871e-419c-87af-27290b22e8db",
       "identity": {
+        "@odata.type": "#microsoft.graph.identitySet",
         "user": {
-          "id": "8A34A46B-3D17-4ADC-8DCE-DC4E7D572698"
+          "@odata.type": "#microsoft.graph.identity",
+          "id": "7e1b4346-85a6-4bdd-abe3-d11c5d420efe",
+          "identityProvider": "AAD"
         }
-      },
-      "replacesCallId": "/communications/calls/57DAB8B1894C409AB240BD8BEAE78896"
+      }
     }
-  ]
+  ],
+  "clientContext": "f2fa86af-3c51-4bc2-8fc0-475452d9764f"
 }
 ```
 
@@ -785,14 +530,38 @@ Content-Type: application/json
 
 ``` http
 HTTP/1.1 200 OK
-Location: https://graph.microsoft.com/beta/communications/calls/90ED37DCD8E34E119DE330A955DDA06F/operations/0FE0623FD62842EDB4BD8AC290072CC5
 Content-Type: application/json
-Content-Length: 306
+```
+<!-- {
+  "blockType": "example",
+  "truncated": "true",
+  "@odata.type": "microsoft.graph.commsNotifications"
+}-->
 
+```json
 {
-  "clientContext": "clientContext-value",
-  "id": "id-value",
-  "status": "Running"
+  "id": "278405a3-f568-4b3e-b684-009193463064",
+  "status": "Running",
+  "clientContext": "f2fa86af-3c51-4bc2-8fc0-475452d9764f",
+  "resultInfo": null,
+  "participants": [
+    {
+      "endpointType": null,
+      "id": null,
+      "replacesCallId": "a7ebfb2d-871e-419c-87af-27290b22e8db",
+      "identity": {
+        "user": {
+          "id": "7e1b4346-85a6-4bdd-abe3-d11c5d420efe",
+          "displayName": "Participant",
+          "identityProvider": "AAD",
+          "tenantId": "72f988bf-86f1-41af-91ab-2d7cd011db47"
+        },
+        "application": null,
+        "device": null,
+        "phone": null
+      }
+    }
+  ]
 }
 ```
 
@@ -808,20 +577,30 @@ Content-Type: application/json
   "blockType": "example",
   "@odata.type": "microsoft.graph.commsNotifications"
 }-->
-``` json
+
+```json
+HTTP/1.1 200 OK
+Content-Type: application/json
 {
-  "@odata.type": "microsoft.graph.commsNotifications",
-  "value": [
+  "id": "eec3812a-fdc3-4fb4-825c-a06c9f35414e",
+  "status": "Completed",
+  "clientContext": "f2fa86af-3c51-4bc2-8fc0-475452d9764f",
+  "resultInfo": null,
+  "participants": [
     {
-      "@odata.type": "microsoft.graph.commsNotification",
-      "changeType": "deleted",
-      "resourceUrl": "/communications/calls/90ED37DCD8E34E119DE330A955DDA06F/operations/0FE0623FD62842EDB4BD8AC290072CC5",
-      "resourceData": {
-        "@odata.type": "#microsoft.graph.inviteParticipantsOperation",
-        "@odata.id": "/communications/calls/90ED37DCD8E34E119DE330A955DDA06F/operations/0FE0623FD62842EDB4BD8AC290072CC5",
-        "@odata.etag": "W/\"51\"",
-        "clientContext": "A904FBD5A31041E881E861877A3DE3CD",
-        "status": "completed"
+      "endpointType": null,
+      "id": null,
+      "replacesCallId": "a7ebfb2d-871e-419c-87af-27290b22e8db",
+      "identity": {
+        "user": {
+          "id": "7e1b4346-85a6-4bdd-abe3-d11c5d420efe",
+          "displayName": "Participant",
+          "identityProvider": "AAD",
+          "tenantId": "72f988bf-86f1-41af-91ab-2d7cd011db47"
+        },
+        "application": null,
+        "device": null,
+        "phone": null
       }
     }
   ]
@@ -830,7 +609,7 @@ Content-Type: application/json
 
 ##### Notification - Roster updated with participant added
 
-``` http
+```http
 POST https://bot.contoso.com/api/calls
 Authorization: Bearer <TOKEN>
 Content-Type: application/json
@@ -840,130 +619,52 @@ Content-Type: application/json
   "blockType": "example",
   "@odata.type": "microsoft.graph.commsNotifications"
 }-->
-``` json
+
+```json
 {
-  "@odata.type": "microsoft.graph.commsNotifications",
-  "value": [
-    {
-      "@odata.type": "microsoft.graph.commsNotification",
-      "changeType": "updated",
-      "resourceUrl": "/communications/calls/57DAB8B1894C409AB240BD8BEAE78896/participants",
-      "resourceData": [
-        {
-          "@odata.type": "#microsoft.graph.participant",
-          "@odata.id": "/communications/calls/57DAB8B1894C409AB240BD8BEAE78896/participants/8A34A46B3D174ADC8DCEDC4E7D572698",
-          "@odata.etag": "W/\"51\"",
-          "info": {
-            "@odata.type": "#microsoft.graph.participantInfo",
-            "identity": {
-              "user": {
-                "region": "westus",
-                "languageId": "en-US",
-                "displayName": "Test User",
-                "id": "8A34A46B-3D17-4ADC-8DCE-DC4E7D572698"
-              }
-            }
-          },
-          "mediaStreams": [
+   "@odata.type":"#microsoft.graph.commsNotifications",
+   "value":[
+      {
+         "@odata.type":"#microsoft.graph.commsNotification",
+         "changeType":"updated",
+         "resource":"/communications/calls/a7ebfb2d-871e-419c-87af-27290b22e8db/participants",
+         "resourceUrl":"/communications/calls/a7ebfb2d-871e-419c-87af-27290b22e8db/participants",
+         "resourceData":[
             {
-              "mediaType": "audio",
-              "label": "main-audio",
-              "sourceId": "1",
-              "direction": "sendReceive"
+               "@odata.type":"#microsoft.graph.participant",
+               "info":{
+                  "@odata.type":"#microsoft.graph.participantInfo",
+                  "identity":{
+                     "@odata.type":"#microsoft.graph.identitySet",
+                     "application":{
+                        "@odata.type":"#microsoft.graph.identity",
+                        "displayName":"Participant",
+                        "id":"7e1b4346-85a6-4bdd-abe3-d11c5d420efe",
+                        "tenantId":"72f988bf-86f1-41af-91ab-2d7cd011db47"
+                     }
+                  },
+                  "endpointType":"default"
+               },
+               "mediaStreams":[
+                  {
+                     "@odata.type":"#microsoft.graph.mediaStream",
+                     "mediaType":"audio",
+                     "sourceId":"1",
+                     "direction":"sendReceive",
+                     "serverMuted":false
+                  }
+               ],
+               "isMuted":false,
+               "isInLobby":false,
+               "id":null
             }
-          ]
-        },
-        {
-          "@odata.type": "#microsoft.graph.participant",
-          "@odata.id": "/communications/calls/57DAB8B1894C409AB240BD8BEAE78896/participants/123456W77E24E4D85F80597083CB830",
-          "@odata.etag": "W/\"55\"",
-          "info": {
-            "@odata.type": "#microsoft.graph.participantInfo",
-            "identity": {
-              "application": {
-                "region": "westus",
-                "languageId": "en-US",
-                "displayName": "Test Bot",
-                "id": "1234A46B-3D17-4ADC-8DCE-DC4E7D556789"
-              }
-            }
-          },
-          "mediaStreams": [
-            {
-              "mediaType": "audio",
-              "label": "main-audio",
-              "sourceId": "2",
-              "direction": "sendReceive"
-            }
-          ]
-        }
-      ]
-    }
-  ]
-}
-```
-
-##### Notification - Terminated the original peer-to-peer call
-
-``` http
-POST https://bot.contoso.com/api/calls
-Authorization: Bearer <TOKEN>
-Content-Type: application/json
-```
-
-<!-- {
-  "blockType": "example",
-  "@odata.type": "microsoft.graph.commsNotifications"
-}-->
-``` json
-{
-  "@odata.type": "microsoft.graph.commsNotifications",
-  "value": [
-    {
-      "@odata.type": "microsoft.graph.commsNotification",
-      "changeType": "updated",
-      "resourceUrl": "/communications/calls/57DAB8B1894C409AB240BD8BEAE78896",
-      "resourceData": {
-        "@odata.type": "#microsoft.graph.call",
-        "@odata.id": "/communications/calls/57DAB8B1894C409AB240BD8BEAE78896",
-        "@odata.etag": "W/\"5445\"",
-        "state": "terminated",
-        "terminationReason": "AppInitiated"
+         ]
       }
-    }
-  ]
+   ]
 }
 ```
 
-##### Notification - Deleted the original peer-to-peer call
-
-``` http
-POST https://bot.contoso.com/api/calls
-Authorization: Bearer <TOKEN>
-Content-Type: application/json
-```
-
-<!-- {
-  "blockType": "example",
-  "@odata.type": "microsoft.graph.commsNotifications"
-}-->
-``` json
-{
-  "@odata.type": "microsoft.graph.commsNotifications",
-  "value": [
-    {
-      "@odata.type": "microsoft.graph.commsNotification",
-      "changeType": "deleted",
-      "resourceUrl": "/communications/calls/57DAB8B1894C409AB240BD8BEAE78896",
-      "resourceData": {
-        "@odata.type": "#microsoft.graph.call",
-        "@odata.id": "/communications/calls/57DAB8B1894C409AB240BD8BEAE78896",
-        "@odata.etag": "W/\"5445\""
-      }
-    }
-  ]
-}
-```
+>**Note:** With a "completed" status, you can expect to receive notifications on how your original peer-to-peer call has been terminated and deleted.
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2015-10-25 14:57:30 UTC -->

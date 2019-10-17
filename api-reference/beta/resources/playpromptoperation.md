@@ -3,7 +3,7 @@ title: "playPromptOperation resource type"
 description: "The playPrompt operation to obtain the result of the playPrompt action."
 author: "VinodRavichandran"
 localization_priority: Normal
-ms.prod: "microsoft-teams"
+ms.prod: "cloud-communications"
 doc_type: resourcePageType
 ---
 
@@ -17,10 +17,10 @@ The playPrompt operation to obtain the result of the playPrompt action.
 
 | Property            | Type                        | Description|
 |:--------------------|:----------------------------|:-----------------------------------------------------------------------------------|
-| clientContext       | String                      | The client context.                                                                |
+| clientContext       | String                      | Unique Client Context string. Max limit is 256 chars.                              |
 | completionReason    | String                      | Possible values are: `unknown`, `completedSuccessfully`, `mediaOperationCanceled`. |
 | id                  | String                      | Read-only.                                                                         |
-| resultInfo          | [resultInfo](resultinfo.md) | The result information. Read-only. Server generated.                               |
+| resultInfo          | [resultInfo](resultinfo.md) | The result information. Read-only.                                |
 | status              | String                      | Possible values are: `notStarted`, `running`, `completed`, `failed`.               |
 
 ## Relationships

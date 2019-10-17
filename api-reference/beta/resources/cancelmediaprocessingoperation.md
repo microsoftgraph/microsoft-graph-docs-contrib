@@ -3,6 +3,7 @@ title: "CancelMediaProcessingOperation resource type"
 description: "This resource type is used to describe the response format of Media processing cancel operation."
 author: "VinodRavichandran"
 localization_priority: Normal
+ms.prod: "cloud-communications"
 doc_type: resourcePageType
 ---
 
@@ -16,9 +17,9 @@ doc_type: resourcePageType
 | :----------------------------- | :---------------------------| :-------------------------------------------------------------------------------------------------------------------------------------------------|
 | all                            | Boolean                     | The flag indicating whether to stop all operations or current.                                                                                    |
 | clientContext                  | String                      | The client context.                                                                                                                               |
-| id                             | String                      | The server operation ID. Read-only. Server generated.                                                                                             |
-| resultInfo                     | [resultInfo](resultinfo.md) | The result information.  Read-only. Server generated.                                                                                             |
-| status                         | String                      | Possible values are: `notStarted`, `running`, `completed`, `failed`. Read-only. Server generated.                                                 |
+| id                             | String                      | The server operation ID. Read-only.                                                                                              |
+| resultInfo                     | [resultInfo](resultinfo.md) | The result information.  Read-only.                                                                                              |
+| status                         | String                      | Possible values are: `notStarted`, `running`, `completed`, `failed`. Read-only.                                                  |
 
 ## Relationships
 None

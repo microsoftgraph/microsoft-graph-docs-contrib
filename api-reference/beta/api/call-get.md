@@ -3,7 +3,7 @@ title: "Get call"
 description: "Retrieve the properties and relationships of a call object."
 author: "VinodRavichandran"
 localization_priority: Normal
-ms.prod: "microsoft-teams"
+ms.prod: "cloud-communications"
 doc_type: apiPageType
 ---
 

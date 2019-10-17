@@ -3,8 +3,8 @@ title: "resultInfo resource type"
 description: "The resultInfo type."
 author: "VinodRavichandran"
 localization_priority: Normal
+ms.prod: "cloud-communications"
 doc_type: resourcePageType
-ms.prod: ""
 ---
 
 # resultInfo resource type
@@ -37,48 +37,6 @@ The following is a JSON representation of the resource.
   "code": 0,
   "message": "String",
   "subcode": 0
-}
-```
-
-## Example Error result
-
-<!-- {
-  "blockType": "example",
-  "@odata.type": "microsoft.graph.resultInfo"
-}-->
-```json
-{
-  "code": 100,
-  "message": "Internal Server Error.",
-  "subcode": 20
-}
-```
-
-## Example Generic success result
-
-<!-- {
-  "blockType": "example",
-  "@odata.type": "microsoft.graph.resultInfo"
-}-->
-```json
-{
-  "code": 200,
-  "message": "",
-  "subcode": 0
-}
-```
-
-## Example Record Success result
-
-<!-- {
-  "blockType": "example",
-  "@odata.type": "microsoft.graph.resultInfo"
-}-->
-```json
-{
-  "code": 200,
-  "message": "",
-  "subcode": 7000
 }
 ```
 

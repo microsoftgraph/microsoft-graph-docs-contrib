@@ -3,7 +3,7 @@ title: "call: redirect"
 description: "Redirect an incoming call."
 author: "VinodRavichandran"
 localization_priority: Normal
-ms.prod: "microsoft-teams"
+ms.prod: "cloud-communications"
 doc_type: apiPageType
 ---
 
@@ -171,7 +171,7 @@ HTTP/1.1 202 Accepted
 ##### Notification - terminated
 
 <!-- {
-  "blockType": "ignored", 
+  "blockType": "example", 
   "name": "call-redirect"
 } -->
 ``` http
@@ -236,7 +236,7 @@ Content-Type: application/json
 ##### Notification - incoming
 
 <!-- {
-  "blockType": "ignored", 
+  "blockType": "example", 
   "name": "call-redirect"
 } -->
 ``` http

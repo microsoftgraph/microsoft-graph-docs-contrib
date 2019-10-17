@@ -3,7 +3,7 @@ title: "call: changeScreenSharingRole"
 description: "This API is used to allow applications to share screen content with the participants of a group call."
 author: "VinodRavichandran"
 localization_priority: Normal
-ms.prod: "microsoft-teams"
+ms.prod: "cloud-communications"
 doc_type: apiPageType
 ---
 
