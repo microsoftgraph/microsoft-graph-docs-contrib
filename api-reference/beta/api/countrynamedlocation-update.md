@@ -46,7 +46,7 @@ In the request body, supply the values for relevant fields that should be update
 |:-------------|:------------|:------------|
 |countriesAndRegions|String collection|List of countries and/or regions in two-letter format specified by ISO 3166-2.|
 |displayName|String|Human-readable name of the location.|
-|includeUnknownCountriesAndRegions|Boolean|True if IP addresses that don't map to a country or region should be included in the named location,|
+|includeUnknownCountriesAndRegions|Boolean|True if IP addresses that don't map to a country or region should be included in the named location.|
 
 ## Response
 
