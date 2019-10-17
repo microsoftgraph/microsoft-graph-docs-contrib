@@ -24,8 +24,9 @@ This header only applies to the request it is included with. If you want to alwa
 
 An item's immutable ID will not change so long as the item stays in the same mailbox. That means that immutable ID will NOT change if the item is moved to a different folder in the mailbox. However, the immutable ID will change if:
 
-- The user moves the item to an archive mailbox
-- The user exports the item (to a PST, as an MSG file, etc.) and re-imports it into their mailbox
+- The user moves the item to an archive mailbox.
+- The user exports the item (to a PST, as an MSG file, etc.) and re-imports it into their mailbox.
+- The user sends a draft message. The immutable ID of the copy in Sent Items will not be the same immutable ID of the draft message.
 
 ## Items that support immutable ID
 
