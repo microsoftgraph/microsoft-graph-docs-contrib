@@ -1,54 +1,65 @@
 ---
-title: "Microsoft Search API overview"
-description: "Microsoft Search API in Graph enables developers to search their data within Office 365 in a unified way"
+title: "Microsoft Search query API overview (preview)"
+description: "Microsoft Search query API in Graph enables developers to search their data within Office 365 in a unified way"
 localization_priority: Priority
 ms.prod: "search"
 author: "nmoreau"
 scenarios: "getting-started"
 ---
 
-# Microsoft Search API overview
+# Microsoft Search query API overview (preview)
 
-TODO :  These overviews describe the value and capabilities of a service
-
-With Microsoft Search, we’ve introduced new organizational search experiences into the apps customers use every day. Our vision is to harness the collective knowledge of your organization in Search and surface relevant content to keep you up to date and leverage the work of others.
-This experience is available in the different experiences for our product suite, such as in Office, Sharepoint, Delve, Windows and Bing.
-We want to bring this knowledge to third party developers who want to build solution on top of the data in Office 365.
-Microsoft Search API in Graph provides a unified search endpoint to search accross your data.
+Microsoft Search has introduced new organizational search experiences into the applications customers use every day.
+The vision is to harness the collective knowledge of your organization in Search and surface relevant content to keep end users up to date and leverage the work of others.  Search is available in the different experiences such as in Office, SharePoint, Delve, Windows and Bing.
 
 ## Why use the Microsoft Search API?
 
-TODO 
+Microsoft Search query API in Graph provides a unified search endpoint to search across your data. It brings search features to app developers, enabling them to build custom search experience.
+
+### Relevance powered by the Microsoft Graph
+
+With Microsoft Search, you benefit from the latest improvements on relevance. The Search query API will expose this relevance in your own app, and therefore make it consistent with how search results show up in Office applications.
+
+### Access new data types from your app
+
+New data types are being introduced in graph (in particular with Connectors) <!---Link Todo link to Connectors Concept )--> . The universal search query endpoint will expose these new data types.
+
+### Where innovation happens
+
+As Microsoft Search expands, the query API will be where new innovations will surface: new relevance models, cross entity ranking, new search features…
 
 ## What data can I access by using the reports API?
 
-You can use the reports API to access the data sets listed in the following table.
+You can use data sets listed in the following table.
 
 |Office 365 app|Data set|
 |:--------|:--------|
 |Outlook|[Messages](/graph/api/resources/message?view=graph-rest-1.0)<br/>[Events](graph/api/resources/event?view=graph-rest-1.0)<br/>|
-|Sharepoint |[Files](graph/api/resources/driveitem?view=graph-rest-1.0)<br/>|
-|OneDrive Business |[Files](graph/api/resources/driveitem?view=graph-rest-1.0)<br/>|
-|OneDrive Business |[Files](graph/api/resources/driveitem?view=graph-rest-1.0)<br/>|
+|Sharepoint |[Files](/graph/api/resources/driveitem?view=graph-rest-1.0)|
+|OneDrive Business |[Files](/graph/api/resources/driveitem?view=graph-rest-1.0)|
+|Connectors |User defined types [externalItems](/graph/api/resources/driveitem?view=graph-rest-1.0) <!--todo nmoreauteam fix the link to Connectors page-->|
+|Connectors |Well known types [externalFiles](/graph/api/resources/driveitem?view=graph-rest-1.0) <!--todo nmoreauteam fix the link to Connectors page-->|
 
 ## API reference
 
 Looking for the API reference for this service?
 
-- [Microsoft Search API in Microsoft Graph v1.0](graph/api/resources/search-api-overview?view=graph-rest-1.0)
+- [Microsoft Search query API in Microsoft Graph Beta](/graph/api/resources/search-api-overview)
+- [Microsoft Search indexing API in Microsoft Graph Beta](/graph/api/resources/search-api-overview) 
+<!--TODO nmoreauteam Fix the link to indexing API--->
 
 ## Next steps
 
 - Explore the APIs in the [Graph Explorer](https://developer.microsoft.com/graph/graph-explorer).
-- Learn more about a few key use cases TODO : Include the links.
-- Search for Outlook Messages
-- Search for Calendar Events
-- Search for Files
-- Search for Connectors data
+- Learn more about a few key use cases <!--- TODO nmoreauteam: Fix the links.--->
+  - Search for Outlook Messages
+  - Search for Calendar Events
+  - Search for Files
+  - Search for Connectors User defined types
+  - Search for Connectors Well known types (files)
 
 ## See also
 
 Engage with the community:
 
-- [Join the tech community](https://aka.ms/graphsecuritycommunity)
-- [Discuss on StackOverflow](https://stackoverflow.com/questions/tagged/microsoft-graph-security)
+- [Discuss on StackOverflow](https://stackoverflow.com/questions/tagged/microsoft-search)

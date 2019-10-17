@@ -2,23 +2,24 @@
 title: "searchHit resource type"
 description: "PROVIDE DESCRIPTION HERE"
 localization_priority: Normal
-author: ""
-ms.prod: ""
+author: "nmoreau"
+ms.prod: "search"
 doc_type: "resourcePageType"
 ---
 
 # searchHit resource type
 
-PROVIDE DESCRIPTION HERE
+Represent a single result within the list of search results. 
 
 ## Properties
 
 | Property     | Type        | Description |
 |:-------------|:------------|:------------|
-|_id|String||
-|_score|Int32||
-|_sortField|String||
-|_summary|String||
+|_id|String|The internal identifier for the item|
+|_score|Int32|The score or the order of the result|
+|_sortField|String|The sort order used. It can be DateTime or Relevance|
+|_summary|String|A summary of the result (if summary is available)|
+|_source|OpenType|The underlying Graph representation of the search result|
 
 ## JSON representation
 

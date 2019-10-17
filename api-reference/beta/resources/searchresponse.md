@@ -2,21 +2,21 @@
 title: "searchResponse resource type"
 description: "PROVIDE DESCRIPTION HERE"
 localization_priority: Normal
-author: ""
-ms.prod: ""
+author: "nmoreau"
+ms.prod: "search"
 doc_type: "resourcePageType"
 ---
 
 # searchResponse resource type
 
-PROVIDE DESCRIPTION HERE
+The searchResponse contains the results from the search query.
 
 ## Properties
 
 | Property     | Type        | Description |
 |:-------------|:------------|:------------|
-|hitsContainers|[searchHitsContainer](searchhitscontainer.md) collection||
-|searchTerms|String collection||
+|hitsContainers|[searchHitsContainer](searchhitscontainer.md) collection|Contains a collection of hits container which encapsulate the actual results |
+|searchTerms|String collection|Contains the search terms sent in the initial search query|
 
 ## JSON representation
 

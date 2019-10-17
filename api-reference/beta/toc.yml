@@ -9414,9 +9414,7 @@
       displayname: Microsoft Search API
       items:
       - name: Overview
-        href: resources/search-api-overview.md
-      - name: Search
-        href: api/search-get.md    
+        href: resources/search-api-overview.md    
       - name: Query
         href: api/search-query.md
     - name: Security

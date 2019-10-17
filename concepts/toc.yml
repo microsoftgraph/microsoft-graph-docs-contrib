@@ -232,7 +232,7 @@ items:
           - name: Search Files
             href: search-concept-files.md                      
           - name: Search Connectors
-            href: search-concept-connectors.md          
+            href: search-concept-custom-types.md          
       - name: Security
         items:
           - name: Overview

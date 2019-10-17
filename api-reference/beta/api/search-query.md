@@ -2,14 +2,16 @@
 title: "search: query"
 description: "PROVIDE DESCRIPTION HERE"
 localization_priority: Normal
-author: ""
-ms.prod: ""
+author: "nmoreau"
+ms.prod: "search"
 doc_type: "apiPageType"
 ---
 
-# search: query
+# Query
 
-Executes the query specified in the request body. The search results are provided in the response.
+[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
+
+Executes the query specified in the request body. Search results are provided in the response.
 
 ## Permissions
 
@@ -17,13 +19,11 @@ One of the following permissions is required to call this API. To learn more, in
 
 | Permission type                        | Permissions (from least to most privileged) |
 |:---------------------------------------|:--------------------------------------------|
-| Delegated (work or school account)     | Not supported. |
+| Delegated (work or school account)     | Mail.Read, Files.Read.All, Calendars.Read, ExternalItem.Read.All |
 | Delegated (personal Microsoft account) | Not supported. |
 | Application                            | Not supported. |
 
 ## HTTP request
-
-<!-- { "blockType": "ignored" } -->
 
 ```http
 POST /search/query
@@ -41,15 +41,20 @@ In the request body, provide a JSON object with the following parameters.
 
 | Parameter    | Type        | Description |
 |:-------------|:------------|:------------|
-|requests|searchRequest collection||
+|requests|[searchRequest collection](../resources/searchrequest.md)|The search request to be sent to the query endpoint formatted in a Json blob. It contains the type of entities expected in the response, the underlying sources, the paging parameters, the fields request and the actual search query.|
 
 ## Response
 
-If successful, this method returns `200, OK` response code and a new [searchResponse](../resources/searchresponse.md) collection object in the response body.
+If successful, this method returns `200, OK` response code and a [searchResponse](../resources/searchresponse.md) collection object in the response body.
+
+## Common use cases 
+
+- Search [mail messages](../../../concepts/search-concept-messages.md)
+- Search [calendar events](../../../concepts/search-concept-events.md)
+- Search [files](../../../concepts/search-concept-files.md)
+- Search [custom types (Connectors)](../../../concepts/search-concept-custom-types.md) data
 
 ## Examples
-
-The following is an example of how to call this API.
 
 ### Request
 
@@ -60,13 +65,13 @@ The following is an example of the request.
 }-->
 
 ```http
-POST https://graph.microsoft.com/v1.0/search/query
+POST https://graph.microsoft.com/beta/search/query
 Content-type: application/json
-
+```
+```
 {
   "requests": [
     {
-      "entityType": "entityType-value",
       "entityTypes": [
         "entityTypes-value"
       ],
@@ -76,26 +81,13 @@ Content-type: application/json
       "query": {
         "query_string": {
           "query": "query-value"
-        },
-        "filter": {
-          "bool": [
-
-          ],
-          "should": [
-
-          ],
-          "term": {
-          },
-          "range": {
-          }
         }
       },
       "from": 99,
       "size": 99,
-      "_sources": [
-        "_sources-value"
-      ],
-      "enableTopResults": true
+      "stored_fields": [
+        "stored_fields-value"
+      ]
     }
   ]
 }
@@ -131,6 +123,9 @@ Content-type: application/json
               "_score": 99,
               "_sortField": "_sortField-value",
               "_summary": "_summary-value"
+              "_source": {
+                //The source field will contain the underlying graph entity part of the response
+              }
             }
           ],
           "total": 99,

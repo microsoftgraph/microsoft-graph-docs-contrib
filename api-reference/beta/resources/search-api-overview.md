@@ -1,128 +1,112 @@
 ---
-title: "Use the Microsoft Graph Security API"
-description: " > **Important:** APIs under the /beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported."
+title: "Use the Microsoft Search query API (preview)"
+description: "Microsoft Search query API in Graph enables developers to search their data within Office 365 in a unified way"
 localization_priority: Priority
-author: "preetikr"
-ms.prod: "security"
+author: "nmoreau"
+ms.prod: "search"
 doc_type: resourcePageType
 ---
 
-# TODO Rework Use the Microsoft Graph Security API
+# Use the Microsoft Search query API (preview)
 
+[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-API-level overviews must include common use cases, and can suggest best practices and preferred usage patterns. If you’re debuting a service or adding a significant API set to a service, make sure you have an API overview describing the use case(s) for the API.
-
-
- [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
-
-The Microsoft Graph Security API provides a unified interface and schema to integrate with security solutions from Microsoft and ecosystem partners. This empowers customers to streamline security operations and better defend against increasing cyber threats. The Microsoft Graph Security API federates queries to all onboarded security providers and aggregates responses. Use the Microsoft Graph Security API to build applications that:
-
-- Consolidate and correlate security alerts from multiple sources
-- Unlock contextual data to inform investigations
-- Automate security tasks, business processes, workflows, and reporting
-- Send threat indicators to Microsoft products for customized detections
-- Invoke actions to in response to new threats
-- Provide visibility into security data to enable proactive risk management
-
-The Microsoft Graph Security API includes the following key entities.
-
-## Alerts
-
-Alerts are potential security issues within a customer's tenant that Microsoft or partner security solutions have identified and flagged for action or notification. With the Microsoft Graph Security [alerts](alert.md) entity, you can unify and streamline management of security issues across all integrated solutions. This also enables applications to correlate alerts and context to improve threat protection and response. With the alert update capability, you can sync the status of specific alerts across different security products and services that are integrated with the Microsoft Graph Security API by updating your [alerts](alert.md) entity.
-
-Alerts from the following providers are available via the Microsoft Graph Security API. Support for GET alerts, PATCH alerts (updates are available via the Microsoft Graph Security API but might not be exposed in the provider’s management experience), and Subscribe (via webhooks) is indicated in the following table.
-
-| Security provider | <p align="center">GET alert</p>| <p align="center">PATCH alert</p>| <p align="center">Subscribe to alert</p>|
-|:------------------|:---------|:-----------|:------------------|
-|[Azure Security Center](https://docs.microsoft.com/azure/security-center/security-center-alerts-type)| <p align="center">&#x2713;</p> | <p align="center">&#x2713;</p> | <p align="center">&#x2713;</p> |
-|[Azure Active Directory Identity Protection](https://docs.microsoft.com/azure/active-directory/identity-protection/playbook) | <p align="center">&#x2713;</p> | <p align="center">&#x2713;</p> | <p align="center">&#x2713;</p> |
-| [Microsoft Cloud App Security](https://docs.microsoft.com/cloud-app-security/monitor-alerts) | <p align="center">&#x2713;</p> | <p align="center">&#x2713;</p> | <p align="center">&#x2713;</p> |
-|[Microsoft Defender Advanced Threat Protection](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/attack-simulations) *| <p align="center">&#x2713;</p> | <p align="center">&#x2713;</p> | <p align="center"> [File issue](https://github.com/microsoftgraph/security-api-solutions/issues/new) </p> |
-|[Azure Advanced Threat Protection](https://docs.microsoft.com/azure-advanced-threat-protection/understanding-security-alerts#security-alert-categories) **| <p align="center">&#x2713;</p> | <p align="center">&#x2713;</p> | <p align="center">&#x2713;</p> |
-|Office 365 <ul><li> [Default](https://docs.microsoft.com/en-us/office365/securitycompliance/alert-policies#default-alert-policies)</li> <li>[Cloud App Security](https://docs.microsoft.com/en-us/office365/securitycompliance/anomaly-detection-policies-in-ocas)</li></ul> | <p align="center">&#x2713;</p> | <p align="center"> [File issue](https://github.com/microsoftgraph/security-api-solutions/issues/new) </p> | <p align="center"> [File issue](https://github.com/microsoftgraph/security-api-solutions/issues/new) </p> |
-|[Azure Information Protection](https://docs.microsoft.com/azure/information-protection/faqs#i-see-azure-information-protection-is-listed-as-a-security-provider-for-microsoft-graph-securityhow-does-this-work-and-what-alerts-will-i-receive) **(preview)**| <p align="center">&#x2713;</p> | <p align="center">&#x2713;</p> | <p align="center">&#x2713;</p> |
-|[Azure Sentinel](https://docs.microsoft.com/azure/sentinel/quickstart-get-visibility) **(preview)**| <p align="center">&#x2713;</p> | <p align="center">&#x2713;</p> | <p align="center">&#x2713;</p> |
-|[Palo Alto Networks](https://docs.paloaltonetworks.com/pan-os/9-0/pan-os-web-interface-help/monitor/monitor-logs/log-types.html)| <p align="center">&#x2713;</p> | <p align="center"> [File issue](https://github.com/microsoftgraph/security-api-solutions/issues/new) </p> | <p align="center"> [File issue](https://github.com/microsoftgraph/security-api-solutions/issues/new) </p> |
-> **Note:** New providers are continuously onboarding to the Microsoft Graph Security ecosystem. To request new providers or for extended support from existing providers, [file an issue in the Microsoft Graph Security GitHub repo](https://github.com/microsoftgraph/security-api-solutions/issues/new).
-
-\* Microsoft Defender Advanced Threat Protection requires additional [user roles](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/user-roles) to those required by the Microsoft Graph Security API. Only the users in both Microsoft Defender Advanced Threat Protection and Microsoft Graph Security API roles can have access to the Microsoft Defender Advanced Threat Protection data. Because application-only authentication is not limited by this, we recommend that you use an application-only authentication token.
-
-\*\* Azure Advanced Threat Protection alerts are available via the Microsoft Cloud App Security integration. This means you will get Azure Advanced Threat Protection alerts only if you have joined the [Unified SecOps preview program](https://techcommunity.microsoft.com/t5/Enterprise-Mobility-Security/Unified-SecOps-Investigation-for-Hybrid-Environments/ba-p/360850) and connected Azure Advanced Threat Protection into Microsoft Cloud App Security.
-
-## Threat indicators (preview)
-
-Threat indicators, also referred to as indicators of compromise (IoCs), represent data about known threats, such as malicious files, URLs, domains, and IP addresses. Customers can generate indicators through internal threat intelligence gathering or acquire indicators from threat intelligence communities, licensed feeds, and other sources. These indicators are then used in various security tools to defend against related threats.
-
-The Microsoft Graph Security [tiIndicators](tiindicator.md) entity allows customers to feed threat indicators to Microsoft security solutions to enable block and alert actions on malicious activity or allow, which suppresses actions for indicators determined not to be relevant to an organization. When sending indicators, both the Microsoft solution that will utilize the indicator and the action to be taken on that indicator are specified.
-
-You can integrate the [tiIndicator](tiindicator.md) entity into your application or use one of the following integrated threat intelligence platforms (TIP):
-
-- [Palo Alto Networks MineMeld Threat Intelligence Sharing](https://www.paloaltonetworks.com/products/secure-the-network/subscriptions/minemeld)
-- [MISP Open Source Threat Intelligence Platform](http://www.misp-project.org/) available through the [TI sample](https://aka.ms/tipmispsample)
-
-Threat indicators sent via the Microsoft Graph Security API are available today in [Azure Sentinel](https://docs.microsoft.com/azure/sentinel/overview) (preview), enabling you to correlate threat indicators with log data to get alerts on malicious activity. Support in other Microsoft security services, in including Azure Firewall, will be available soon.
-
-## Security Actions (preview)
-
-Take immediate action to defend against threats using the Microsoft Graph Security [securityAction](securityaction.md) entity. When a security analyst discovers a new indicator, such as a malicious file, URL, domain, or IP address, protection can be instantly enabled in your Microsoft security solutions. Invoke an action for a specific provider, see all actions taken, and cancel an action if needed. Try security actions with [Microsoft Defender Advanced Threat Protection](https://docs.microsoft.com/windows/security/threat-protection/windows-defender-atp/windows-defender-advanced-threat-protection) to block malicious activity on your Windows endpoints using properties seen in alerts or identified during investigations.
-
-  > **Note:** Currently security actions only support application permissions.
-
-## Secure Score
-
-[Microsoft Secure Score](https://techcommunity.microsoft.com/t5/Security-Privacy-and-Compliance/Office-365-Secure-Score-is-now-Microsoft-Secure-Score/ba-p/182358) is a security analytics solution that gives you visibility into your security portfolio and how to improve it. With a single score, you can better understand what you have done to reduce your risk in Microsoft solutions. You can also compare your score with other organizations and see how your score has been trending over time. The Microsoft Graph Security [secureScore](securescores.md) and [secureScoreControlProfile](securescorecontrolprofiles.md) entities help you balance your organization's security and productivity needs while enabling the appropriate mix of security features. You can also project what your score would be after you adopt security features.
+With Microsoft Search API in Graph, developers can search data in Office 365 within their Apps, in the context of the end user.
 
 ## Common use cases
 
-The following are some of the most popular requests for working with the Microsoft Graph Security API.
+The Search query API provides a method (/query) to search across your data in Microsoft Search.
 
-| **Use cases**   | **REST resources** | **Try it in Graph Explorer** |
-|:---------------|:--------|:----------|
-| List alerts | [List alerts](../api/alert-list.md) | [https://graph.microsoft.com/beta/security/alerts](https://developer.microsoft.com/graph/graph-explorer?request=security/alerts&method=GET&version=beta&GraphUrl=https://graph.microsoft.com) |
-| Update alerts | [Update alert](../api/alert-update.md) </br> [Update multiple alerts](../api/alert-updatealerts.md) | [https://graph.microsoft.com/beta/security/alerts/{alert-id}](https://developer.microsoft.com/graph/graph-explorer?request=security/alerts/{alert-id}&method=PATCH&version=beta&GraphUrl=https://graph.microsoft.com) </br> [https://graph.microsoft.com/beta/security/alerts/updateAlerts](https://developer.microsoft.com/graph/graph-explorer?request=security/alerts/updateAlerts&method=POST&version=beta&GraphUrl=https://graph.microsoft.com) |
-| Get security action | [Get security action](../api/securityaction-get.md) (preview)|[https://graph.microsoft.com/beta/security/securityActions/{id}](https://developer.microsoft.com/graph/graph-explorer?request=security/securityActions/{id}&method=GET&version=beta&GraphUrl=https://graph.microsoft.com)|
-|List security actions| [List security actions](../api/securityactions-list.md) (preview)|[https://graph.microsoft.com/beta/security/securityActions](https://developer.microsoft.com/graph/graph-explorer?request=security/securityActions&method=GET&version=beta&GraphUrl=https://graph.microsoft.com)|
-|Create security actions|[Create security actions](../api/securityactions-post.md) (preview)|[https://graph.microsoft.com/beta/security/securityActions](https://developer.microsoft.com/graph/graph-explorer?request=security/securityActions&method=POST&version=beta&GraphUrl=https://graph.microsoft.com)|
-|Cancel security action|[Cancel security actions](../api/securityaction-cancelsecurityaction.md) (preview)| [https://graph.microsoft.com/beta/security/securityActions/{id}/cancelSecurityAction](https://developer.microsoft.com/graph/graph-explorer?request=security/securityActions/{id}/cancelSecurityAction&method=POST&version=beta&GraphUrl=https://graph.microsoft.com) |
-|Get TI indicator|[Get tiIndicator](../api/tiindicator-get.md) (preview)| [https://graph.microsoft.com/beta/security/tiIndicators/{id}](https://developer.microsoft.com/graph/graph-explorer?request=security/tiIndicators/{id}&method=GET&version=beta&GraphUrl=https://graph.microsoft.com)|
-|List TI Indicators | [List tiIndicators](../api/tiindicators-list.md) (preview) | [https://graph.microsoft.com/beta/security/tiIndicators](https://developer.microsoft.com/graph/graph-explorer?request=security/tiIndicators&method=GET&version=beta&GraphUrl=https://graph.microsoft.com)|
-|Create TI Indicator|[Create tiIndicator](../api/tiindicators-post.md) (preview)|[https://graph.microsoft.com/beta/security/tiIndicators](https://developer.microsoft.com/graph/graph-explorer?request=security/tiIndicators&method=POST&version=beta&GraphUrl=https://graph.microsoft.com)|
-|Submit TI Indicators|[Submit tiIndicators](../api/tiindicator-submittiindicators.md) (preview)| [https://graph.microsoft.com/beta/security/tiIndicators/submitTiIndicators](https://developer.microsoft.com/graph/graph-explorer?request=security/tiIndicators/submitTiIndicators&method=POST&version=beta&GraphUrl=https://graph.microsoft.com) |
-|Update TI Indicators|[Update tiIndicator](../api/tiindicator-update.md) (preview) </br>[Update multiple tiIndicators](../api/tiindicator-updatetiindicators.md) (preview)| [https://graph.microsoft.com/beta/security/tiIndicators/{id}](https://developer.microsoft.com/graph/graph-explorer?request=security/tiIndicators/{id}&method=POST&version=beta&GraphUrl=https://graph.microsoft.com) </br>[https://graph.microsoft.com/beta/security/tiIndicators/updateTiIndicators](https://developer.microsoft.com/graph/graph-explorer?request=security/tiIndicators/updateTiIndicators&method=POST&version=beta&GraphUrl=https://graph.microsoft.com)|
-|Delete TI Indicators|[Delete tiIndicator](../api/tiindicator-delete.md) (preview) </br>[Delete multiple tiIndicators](../api/tiindicator-deletetiindicators.md) (preview) </br>[Delete tiIndicator by externalId](../api/tiindicator-deletetiindicatorsbyexternalid.md) (preview)| DELETE </br>[https://graph.microsoft.com/beta/security/tiIndicators/{id}](https://developer.microsoft.com/graph/graph-explorer?request=security/tiIndicators/{id}&method=DELETE&version=beta&GraphUrl=https://graph.microsoft.com) </br>POST</br>[https://graph.microsoft.com/beta/security/tiIndicators/deleteTiIndicators](https://developer.microsoft.com/graph/graph-explorer?request=security/tiIndicators/deleteTiIndicators&method=POST&version=beta&GraphUrl=https://graph.microsoft.com)</br>POST</br>[https://graph.microsoft.com/beta/security/tiIndicators/deleteTiIndicatorsByExternalId](https://developer.microsoft.com/graph/graph-explorer?request=security/tiIndicators/deleteTiIndicatorsByExternalId&method=POST&version=beta&GraphUrl=https://graph.microsoft.com)|
-|List secure scores|[List secureScores](../api/securescores-list.md)|[https://graph.microsoft.com/beta/security/secureScores](https://developer.microsoft.com/graph/graph-explorer?request=security/secureScores&method=GET&version=beta&GraphUrl=https://graph.microsoft.com)|
-|List secure score control profiles|[List secureScoreControlProfiles](../api/securescorecontrolprofiles-list.md)|[https://graph.microsoft.com/beta/security/secureScoreControlProfiles](https://developer.microsoft.com/graph/graph-explorer?request=security/secureScoreControlProfiles&method=GET&version=beta&GraphUrl=https://graph.microsoft.com)|
-|Update secure score control profiles|[Update secureScoreControlProfiles](../api/securescorecontrolprofiles-update.md)|[https://graph.microsoft.com/beta/security/secureScoreControlProfiles/{id}](https://developer.microsoft.com/graph/graph-explorer?request=security/secureScoreControlProfiles/{id}&method=PATCH&version=beta&GraphUrl=https://graph.microsoft.com)|
+Search requests are executed on behalf of user. Search results are trimmed down to enforce any ACL applied to the items.  
 
-You can use Microsoft Graph [webhooks](/graph/webhooks) to subscribe to and receive notifications about updates to Microsoft Graph Security API entities.
+<!---TODO nmoreauteam Fix the links below to the See also + to the /search/query-->
 
-## Next steps
+| Use Cases | <p align="center">Rest resource and action</p>| <p align="center">See also</p>|
+|:------------------|:---------|:-----------|
+|[Search for a specific entityType](#Entity-scoping)| <p align="center">/search/query </p> | <p align="center">EntityTypes</p> |
+|[Page results](#Paging) | <p align="center">/search/query</p> | <p align="center">From and Size</p> |
+|[Get the most relevant emails](#Most-relevant-emails) | <p align="center">/search/query</p> | <p align="center">EnableTopResults</p> |
+|[Retrieve selected properties](#Stored_Fields) | <p align="center">/search/query</p> | <p align="center">stored_fieds</p> | <p align="center">  </p> |
+|[Use KQL in query terms](#Keyword-Query-Language-(KQL)-support)| <p align="center">/search/query</p> | <p align="center">searchQueryString</p> |
+|[Search external Files](https://fixme.org)| <p align="center">/search/query</p> | <p align="center">EntityTypes</p> | <!---TODO nmoreauteam Fix the links to the sample page --->
+|[Search within a specific contentSource (Indexing API)](https://fixme.org)| <p align="center">/search/query</p> | <p align="center">contentSources</p> | <!---TODO nmoreauteam Fix the links to the sample page --->
 
-The Microsoft Graph Security API can open up new ways for you to engage with different security solutions from Microsoft and partners. Follow these steps to get started:
+### Entity scoping
 
-- Drill down into [alerts](alert.md), [tiIndicator](tiindicator.md) (preview), [securityAction](securityaction.md) (preview), [secureScore](securescores.md), and [secureScoreControlProfiles](securescorecontrolprofiles.md).
-- Try the API in the [Graph Explorer](https://developer.microsoft.com/graph/graph-explorer). Under **Sample Queries**, choose **show more samples** and set the Security category to **on**.
-- Try [subscribing to and receiving notifications](/graph/webhooks) on entity changes.
+The scope of the search request is defined in the entityTypes field in the Json request.
+ Possible values are: 
+ - `microsoft.graph.event`, 
+ - `microsoft.graph.message`, 
+ - `microsoft.graph.driveItem`, 
+ - `microsoft.graph.externalFile`, 
+ - `microsoft.graph.externalItem`.
 
-Need more ideas? See [how some of our partners are using Microsoft Graph](https://developer.microsoft.com/graph/graph/examples#partners).
+### Paging
 
-## See also
+Pagination is exposed through following two fields in the API:
 
-[Code and contribute](https://github.com/microsoftgraph/security-api-solutions/blob/master/CONTRIBUTING.md) to these Microsoft Graph Security API samples:
+- from: To indicate the start point; takes an integer value
 
-- [ASP.NET (C#) sample](https://github.com/microsoftgraph/aspnet-security-api-sample)
-- [Python sample](https://github.com/microsoftgraph/python-security-rest-sample)
-- [Node.js (JavaScript) sample](https://github.com/microsoftgraph/nodejs-security-sample)
-- [PowerShell sample](https://aka.ms/graphsecuritypowershellsample)
-- [Other samples or contribute a new sample](https://aka.ms/graphsecurityapicode)
+- size: To indicate the total number of results to be returned in the response; takes an integer value
 
-Explore other options to connect with the Microsoft Graph Security API:
+- Defaults: from: 0 – size: 25
 
-- [Microsoft Graph Security connectors for Logic Apps, Flow and PowerApps](https://aka.ms/graphsecurityconnectors)
-- [Microsoft Graph Security connector for Power BI](https://aka.ms/graphsecuritypowerbiconnectordoc)
-- [Jupyter notebook samples](https://aka.ms/graphsecurityjupyternotebooks)
+- Max page sizes:
+  - Maximum results per page:
+    - Event and message: 200
+  - Maximum number of items which can be retrieved by paginating:
+    - Event and message: 1000
+  - Going beyond the limits doesn’t end up in BadRequest, the service returns best effort response in such cases.
+- Ideal use-case:
+  - Request for a smaller first page as the first request, eg: from: 0 and size: 25
+  - Paginate for subsequent pages by just updating the from and size attributes, fine with increasing the page size in each subsequent request, ex:
+    - Page 1: from – 0 and size – 25 
+    - Page 2: from – 25 and size – 50
+    - Page 3: from – 75 and size – 75
+    - Page 4: from – 150 and size – 100
+- Error cases:
+  - It’s a 400 BadRequest error if the first page request comes with a non-zero offset for message/event 
 
-Engage with the community:
+### Most relevant emails
 
-- [Join the tech community](https://aka.ms/graphsecuritycommunity)
-- [Discuss on StackOverflow](https://stackoverflow.com/questions/tagged/microsoft-graph-security)
+The search request lets you specify for message "EnableTopResults" which will returned a relevance sorted list of search results for your emails.
+
+### Stored_Fields
+
+This property is only applicable to externalItems.
+This allows to specify which fields should be returned part of the response.
+The names to be used should the name of the retrievable Managed Property configured for the connection.  
+
+### Keyword Query Language (KQL) support
+
+The API lets you specify a KQL clause in the query terms which lets you specify free text keywords, operators (AND, OR,…) and property restriction. The syntax and command you will be using will depend on the entityType you target in the searchRequest.
+
+Depending on the entityType, the searchable property vary:  
+  - [message properties](https://docs.microsoft.com/en-us/microsoft-365/compliance/keyword-queries-and-search-conditions#searchable-site-properties)
+  - [driveItem properties](https://docs.microsoft.com/en-us/microsoft-365/compliance/keyword-queries-and-search-conditions#searchable-site-properties)
+  
+### Error Handling 
+
+Microsoft Search returns error responses as defined by [OData error object definition](http://docs.oasis-open.org/odata/odata-json-format/v4.01/cs01/odata-json-format-v4.01-cs01.html#sec_ErrorResponse), which will contains a JSON object containing a code and a message.
+
+<!---TODO Describe the know errors : bad requests.--->
+
+
+## Known limitations
+
+The query API has the following limitations during the preview
+
+- The service support sending only a single searchRequest eventhough the API support passing a collection of searchRequest
+<!--todo nmoreauteam Fix the link to searchRequest--->
+
+- A given searchRequest supports passing multiple entityTypes. Currently the only supported combination is driveItem and externalFiles. Other combinations are invalid. 
+<!--todo nmoreauteam Fix the link to searchRequest--->
+
+- ContentSource is currently only applicable when entityType = ExternalItem to define the connection to use. 
+<!--todo nmoreauteam Fix the link to ContentSource--->
+
+- Sorting : the API currently does not expose different ways to sort results.  
+
+  - Message and Event are sorted by date.  
+
+  - DriveItems, ExternalFiles, and ExternalItems are sorted by relevance

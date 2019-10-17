@@ -886,6 +886,8 @@ Possible values for user account types (group membership), per Windows definitio
 |user|
 |unknownFutureValue|
 
+### entityType values
+
 | Member       | Value       |
 |:--------------|:--------------|
 |event|0|
@@ -893,10 +895,3 @@ Possible values for user account types (group membership), per Windows definitio
 |driveItem|2|
 |externalFile|3|
 |externalItem|4|
-
-### termField
-
-| Member       | Value       |
-|:--------------|:--------------|
-|wellKnownFolderName|0|
-|folderId|1|
