@@ -8252,15 +8252,15 @@
           items:
           - name: Conditional Access policy
             href: resources/conditionalaccesspolicy.md
-          - name: List conditional access policies
+          - name: List
             href: api/conditionalaccessroot-list-policies.md
-          - name: Get a conditional access policy
+          - name: Get
             href: api/conditionalaccesspolicy-get.md
-          - name: Create a conditional access policy
+          - name: Create
             href: api/conditionalaccessroot-post-policies.md
-          - name: Update a conditional access policy
+          - name: Update
             href: api/conditionalaccesspolicy-update.md
-          - name: Delete a conditional access policy
+          - name: Delete
             href: api/conditionalaccesspolicy-delete.md
       - name: Contracts
         href: resources/contract.md
