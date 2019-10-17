@@ -101,6 +101,7 @@ For details about known issues with Microsoft Graph APIs, see [Known issues](kno
 ### Users
 | **Change type** | **Version** | **Description**                          |
 | :-------------- | :---------- | :--------------------------------------- |
+| Addition | v1.0 | Added the new **lastPasswordChangeDateTime** property to the [user](/graph/api/resources/mailboxsettings?view=graph-rest-v1.0) resource. |
 | Addition | beta | Added the [user: reprocessLicenseAssignment API](/graph/api-reference/beta/api/user-reprocesslicense?view=graph-rest-beta), which can be used to reprocess all group-based license assignments for the [user](/graph/api/resources/mailboxsettings?view=graph-rest-beta). |
 
 ### Users | Outlook settings
