@@ -11,7 +11,7 @@ doc_type: apiPageType
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Create a new [namedLocation](../resources/namedlocation.md).
+Create a new [namedLocation](../resources/namedlocation.md) object.
 
 ## Permissions
 
