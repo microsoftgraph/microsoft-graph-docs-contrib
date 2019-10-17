@@ -88,6 +88,42 @@ author: ""
 |sunny|
 |unknownFutureValue|
 
+### scheduleChangeState values
+
+| Member
+|:----------------------------
+|pending
+|approved
+|declined
+|unknownFutureValue
+
+### scheduleChangeRequestActor values
+
+| Member
+|:----------------------------
+|sender
+|recipient
+|manager
+|system
+|unknownFutureValue
+
+### workforceIntegrationEncryptionProtocol values
+
+| Member
+|:----------------------------
+|sharedSecret
+|unknownFutureValue
+
+### workforceIntegrationSupportedEntities values
+
+| Member
+|:----------------------------
+|none
+|shift
+|swapRequest
+|openShift
+|openShiftRequest
+|userShiftPreferences
 
 ### timeZoneStandard values
 
