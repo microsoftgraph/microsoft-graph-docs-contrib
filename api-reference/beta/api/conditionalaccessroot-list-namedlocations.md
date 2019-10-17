@@ -33,7 +33,7 @@ GET /conditionalAccess/namedLocations
 
 ## Optional query parameters
 
-This method supports the `skip`, `stop`, `count`, `filter`, `orderBy`, and `select` OData query parameters to help customize the response. For general information, see [OData query parameters](/graph/query-parameters).
+This method supports the `$count`, `$filter`, `$orderBy`, `$select`, `$skip`, and `$top` OData query parameters to help customize the response. For general information, see [OData query parameters](/graph/query-parameters).
 
 ## Request headers
 
@@ -211,7 +211,7 @@ Content-type: application/json
     ]
 }
 ```
-### Example 3: List all countryNamedLocations
+### Example 3: List all namedLocations created after a certain date
 
 #### Request
 
@@ -222,7 +222,63 @@ The following is an example of the request.
 }-->
 
 ```http
-GET https://graph.microsoft.com/beta/conditionalAccess/namedLocations?$filter=isof('microsoft.graph.countryNamedLocation')
+GET https://graph.microsoft.com/beta/conditionalAccess/namedLocations?$filter=createdDateTime ge 2019-09-01T00:00:00Z
+```
+
+#### Response
+
+The following is an example of the response.
+
+> **Note:** The response object shown here might be shortened for readability. All the properties will be returned from an actual call.
+
+<!-- {
+  "blockType": "response",
+  "truncated": true,
+  "@odata.type": "microsoft.graph.namedLocation",
+  "isCollection": true
+} -->
+
+```http
+HTTP/1.1 200 OK
+Content-type: application/json
+
+
+{
+    "@odata.context": "https://graph.microsoft.com/beta/$metadata#conditionalAccess/namedLocations",
+    "value": [
+        {
+            "@odata.type": "#microsoft.graph.ipNamedLocation",
+            "id": "05239353-9117-4d29-a6a1-89724cb61b8c",
+            "displayName": "Trusted IPv6 named location",
+            "modifiedDateTime": "2019-09-16T00:47:36.4967092Z",
+            "createdDateTime": "2019-09-15T21:53:34.5001162Z",
+            "isTrusted": true,
+            "ipRanges": [
+                {
+                    "@odata.type": "#microsoft.graph.iPv6CidrRange",
+                    "cidrAddress": "2001:4898:80e8:7:d92a:7695:fda1:9d62/48"
+                },
+                {
+                    "@odata.type": "#microsoft.graph.iPv6CidrRange",
+                    "cidrAddress": "2001:4898:80d8:7:d92a:7695:fda1:9d62/48"
+                }
+            ]
+        }
+    ]
+}
+```
+### Example 4: List all countryNamedLocations containing a certain country or region
+
+#### Request
+
+The following is an example of the request.
+<!-- {
+  "blockType": "request",
+  "name": "get_namedlocations"
+}-->
+
+```http
+GET https://graph.microsoft.com/beta/conditionalAccess/namedLocations?$filter=microsoft.graph.countryNamedLocation/countriesAndRegions/any(c: c eq 'CA')
 ```
 
 #### Response
