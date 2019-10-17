@@ -1,6 +1,6 @@
 ---
 title: "orgContact: getMemberObjects"
-description: "Return all of the groups that this organizational contact is a member of. The check is transitive."
+description: "Return all the groups that this organizational contact is a member of. The check is transitive."
 localization_priority: Normal
 author: "davidmu1"
 ms.prod: "microsoft-identity-platform"
@@ -9,7 +9,7 @@ doc_type: apiPageType
 
 # orgContact: getMemberObjects
 
-Return all of the groups that this [organizational contact](../resources/orgcontact.md) is a member of. The check is transitive. Organizational contacts cannot be members of directory roles. No directory roles will be returned.
+Return all the groups that this [organizational contact](../resources/orgcontact.md) is a member of. The check is transitive. Organizational contacts cannot be members of directory roles. No directory roles will be returned.
 
 ## Permissions
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
@@ -30,6 +30,7 @@ POST /contacts/{id}/getMemberObjects
 | Header       | Value |
 |:---------------|:----------|
 | Authorization  | Bearer {token}. Required. |
+| Content-type   | application/json. Required.|
 
 ## Request body
 In the request body, provide a JSON object with the following parameters.
@@ -40,7 +41,7 @@ In the request body, provide a JSON object with the following parameters.
 
 ## Response
 
-If successful, this method returns `200 OK` response code and a String collection object in the response body.
+If successful, this method returns a `200 OK` response code and a String collection object in the response body.
 
 ## Example
 
@@ -63,7 +64,7 @@ Content-length: 33
 
 ##### Response
 The following is an example of the response.
->**Note**: The response object shown here might be shortened for readability. All the properties will be returned from an actual call.
+>**Note**: The response object shown here might be shortened for readability. 
 <!-- {
   "blockType": "response",
   "truncated": true,
