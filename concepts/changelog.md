@@ -18,7 +18,7 @@ For details about known issues with Microsoft Graph APIs, see [Known issues](kno
 | **Change type** | **Version** | **Description**                  |
 |:----------------|:------------|:-----------------------------------------|
 | Addition | v1.0 | Added new [orgContact](/graph/api/resources/orgcontact?view=graph-rest-1.0) resource. These contacts are managed by the organization, and are different from [personal contacts](graph/outlook-contacts-concept-overview)|
-| Addition | v1.0 | Added new [](/graph/api/resources/physicalOfficeAddress?view=graph-rest-1.0) resource. |
+| Addition | v1.0 | Added new [physicalOfficeAddress](/graph/api/resources/physicalOfficeAddress?view=graph-rest-1.0) resource. |
 
 ### Mail (Outlook)
 
