@@ -49,6 +49,9 @@
       "toc_preview": true
     },
     "fileMetadata": {
+      "**/*.md": [
+        "enable_tutorial_feedback"
+      ],
       "ms.technology": {
         "**/*.md": "microsoft-graph"
       },
