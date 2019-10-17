@@ -22,8 +22,8 @@ Inherits from [namedLocation](../resources/namedLocation.md)
 | [List ipNamedLocations](../api/conditionalaccessroot-list-namedlocations.md) | [ipNamedLocation](ipNamedLocation.md) collection | Get all the **ipNamedLocation** objects in the organization. |
 | [Create ipNamedLocation](../api/conditionalaccessroot-post-namedlocations.md) | [ipNamedLocation](ipNamedLocation.md) | Create a new **ipNamedLocation** object. |
 | [Get ipNamedLocation](../api/ipnamedlocation-get.md) | [ipNamedLocation](ipnamedlocation.md) | Read the properties and relationships of an **ipNamedLocation** object. |
-| [Update](../api/ipnamedlocation-update.md) | [ipNamedLocation](ipnamedlocation.md) | Update an **ipNamedLocation** object. |
-| [Delete](../api/ipnamedlocation-delete.md) | None | Delete an **ipNamedLocation** object. |
+| [Update ipNamedLocations](../api/ipnamedlocation-update.md) | [ipNamedLocation](ipnamedlocation.md) | Update an **ipNamedLocation** object. |
+| [Delete ipNamedLocations](../api/ipnamedlocation-delete.md) | None | Delete an **ipNamedLocation** object. |
 
 ## Properties
 
