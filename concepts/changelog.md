@@ -13,6 +13,13 @@ For details about known issues with Microsoft Graph APIs, see [Known issues](kno
 
 ## October 2019
 
+### Identity and access (Azure AD)
+
+| **Change type** | **Version** | **Description**                  |
+|:----------------|:------------|:-----------------------------------------|
+| Addition | v1.0 | Added new [orgContact](/graph/api/resources/orgcontact?view=graph-rest-1.0) resource. These contacts are managed by the organization, and are different from [personal contacts](graph/outlook-contacts-concept-overview)|
+| Addition | v1.0 | Added new [](/graph/api/resources/physicalOfficeAddress?view=graph-rest-1.0) resource. |
+
 ### Mail (Outlook)
 
 | **Change type** | **Version**   | **Description**                          |

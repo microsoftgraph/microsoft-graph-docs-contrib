@@ -9,7 +9,7 @@ doc_type: apiPageType
 
 # orgContact: getMemberGroups
 
-Return all the groups that the organizational contact is a member of. The check is transitive, unlike reading the memberOf navigation property, which returns only the groups that the user is a direct member of.
+Return all the groups that the [organizational contact](../resources/orgcontact.md) is a member of. The check is transitive, unlike reading the memberOf navigation property, which returns only the groups that the user is a direct member of.
 
 This function supports Office 365 and other types of groups provisioned in Azure AD. The maximum number of groups each request can return is 2046. Note that Office 365 Groups cannot contain groups. So membership in an Office 365 Group is always direct.
 

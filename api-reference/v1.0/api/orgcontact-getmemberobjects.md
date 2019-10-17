@@ -9,7 +9,7 @@ doc_type: apiPageType
 
 # orgContact: getMemberObjects
 
-Return all of the groups that this organizational contact is a member of. The check is transitive. Note: Organizational contacts cannot be members of directory roles, so no directory roles will be returned.
+Return all of the groups that this [organizational contact](../resources/orgcontact.md) is a member of. The check is transitive. Note: Organizational contacts cannot be members of directory roles, so no directory roles will be returned.
 
 ## Permissions
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).

@@ -9,7 +9,7 @@ doc_type: apiPageType
 
 # Get orgContact
 
-Get the properties and relationships of an organizational contact object.
+Get the properties and relationships of an [organizational contact](../resources/orgcontact.md).
 
 ## Permissions
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
@@ -48,7 +48,7 @@ Here is an example of the request.
   "name": "get_orgcontact"
 }-->
 ```http
-GET https://graph.microsoft.com/beta/contacts/{id}
+GET https://graph.microsoft.com/v1.0/contacts/{id}
 ```
 
 ##### Response

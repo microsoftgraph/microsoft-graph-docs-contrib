@@ -9,7 +9,7 @@ doc_type: apiPageType
 
 # orgContact: List directReports
 
-Get this organizational contact's direct reports.
+Get the direct reports for this [organizational contact](../resources/orgcontact.md).
 
 ## Permissions
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
