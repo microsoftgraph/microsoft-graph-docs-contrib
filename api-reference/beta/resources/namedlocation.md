@@ -1,6 +1,6 @@
 ---
 title: "namedLocation resource type"
-description: "This is the base class representing an Azure Active Directory named location. Named locations are custom rules that define network locations which can then be used in a Conditional Access policy."
+description: "This is the base class that represents an Azure Active Directory named location. Named locations are custom rules that define network locations which can then be used in a Conditional Access policy."
 localization_priority: Normal
 author: "davidmu1"
 ms.prod: "microsoft-identity-platform"
@@ -11,7 +11,7 @@ doc_type: resourcePageType
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-This is the base class representing an Azure Active Directory named location. Named locations are custom rules that define network locations which can then be used in a Conditional Access policy.
+This is the base class that represents an Azure Active Directory named location. Named locations are custom rules that define network locations which can then be used in a Conditional Access policy.
 
 ## Methods
 
