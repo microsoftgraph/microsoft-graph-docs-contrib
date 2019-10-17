@@ -9,10 +9,12 @@ doc_type: apiPageType
 
 # orgContact: getMemberGroups
 
-Return all the groups that the [organizational contact](../resources/orgcontact.md) is a member of. The check is transitive, unlike reading the memberOf navigation property, which returns only the groups that the user is a direct member of.
+Return all the groups that the [organizational contact](../resources/orgcontact.md) is a member of. The check is transitive, unlike reading the **memberOf** navigation property, which returns only the groups that the user is a direct member of.
 
 This function supports Office 365 and other types of groups provisioned in Azure Active Directory (Azure AD). The maximum number of groups each request can return is 2046. 
->**Note**: Office 365 Groups cannot contain groups. So membership in an Office 365 Group is always direct.
+
+>[!NOTE]
+>Office 365 groups cannot contain groups. Membership in an Office 365 group is always direct.
 
 ## Permissions
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
@@ -33,6 +35,7 @@ POST /contacts/{id}/getMemberGroups
 | Header       | Value |
 |:---------------|:----------|
 | Authorization  |  Bearer {token}. Required. |
+| Content-type   | application/json. Required. |
 
 ## Request body
 In the request body, provide a JSON object with the following parameters.
@@ -43,7 +46,7 @@ In the request body, provide a JSON object with the following parameters.
 
 ## Response
 
-If successful, this method returns `200 OK` response code and String collection object in the response body.
+If successful, this method returns a `200 OK` response code and a String collection object in the response body.
 
 ## Example
 
@@ -66,7 +69,7 @@ Content-length: 33
 
 ##### Response
 The following is an example of the response.
->**Note**: The response object shown here might be shortened for readability. All the properties will be returned from an actual call.
+>**Note**: The response object shown here might be shortened for readability. 
 <!-- {
   "blockType": "response",
   "truncated": true,
