@@ -28,8 +28,6 @@ Extensions can be added to [user](user.md), [group](group.md), [organization](or
 | [Create extension](../api/application-post-extensionproperty.md) | extensionProperty | Create an extension property on an application object. |
 | [List extensions](../api/application-list-extensionproperty.md) | extensionProperty collection | List extension properties on an application object. |
 | [Delete extension](../api/application-delete-extensionproperty.md) | None | Delete an extension property from an application object. |
-| [Write extension value](../api/application-post-extensionpropertyvalue.md) | None | Assign a value to an extension property of an application object. |
-| [Read extension value](../api/application-get-extensionpropertyvalue.md) | application | Read the value of an extension property on an application object. |
 
 Extensions created using [Create extension](../api/application-post-extensionproperty.md) can be seen on the application object by calling [Get application](../api/application-get.md) method.
 
