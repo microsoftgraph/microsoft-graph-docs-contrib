@@ -1,5 +1,5 @@
 ---
-title: "orgContact: Get manager"
+title: "Get manager"
 description: "Get this organizational contact's manager."
 localization_priority: Normal
 author: "davidmu1"
@@ -7,7 +7,7 @@ ms.prod: "microsoft-identity-platform"
 doc_type: apiPageType
 ---
 
-# orgContact: Get manager
+# Get manager
 
 Get this organizational contact's manager.
 
