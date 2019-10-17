@@ -1,6 +1,6 @@
 ---
 title: "List members"
-description: "Get a list of the group's direct members. A group can have users, contacts, and other groups as members."
+description: "Get a list of the group's direct members. A group can have users, organizational contacts, and other groups as members."
 localization_priority: Priority
 author: "dkershaw10"
 ms.prod: "groups"
@@ -27,7 +27,7 @@ GET /groups/{id}/members
 ```
 
 ## Optional query parameters
-This method supports the [OData Query Parameters](/graph/query-parameters) to help customize the response.
+This method supports the [OData query parameters](/graph/query-parameters) to help customize the response.
 
 ## Request headers
 | Header       | Value |
@@ -38,7 +38,7 @@ This method supports the [OData Query Parameters](/graph/query-parameters) to he
 Do not supply a request body for this method.
 
 ## Response
-If successful, this method returns a `200 OK` response code and collection of [directoryObject](../resources/directoryobject.md) objects in the response body.
+If successful, this method returns a `200 OK` response code and a collection of [directoryObject](../resources/directoryobject.md) objects in the response body.
 
 ## Example
 #### Request
@@ -73,7 +73,7 @@ GET https://graph.microsoft.com/v1.0/groups/{id}/members
 
 #### Response
 The following is an example of the response.
->**Note:** The response object shown here might be shortened for readability. All the properties will be returned from an actual call.
+>**Note:** The response object shown here might be shortened for readability. 
 <!-- {
   "blockType": "response",
   "truncated": true,
