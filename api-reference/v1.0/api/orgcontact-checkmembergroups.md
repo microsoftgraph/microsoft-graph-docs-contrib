@@ -14,7 +14,7 @@ Check for membership in the specified list of groups. Returns from the list thos
 You can check up to a maximum of 20 groups per request. This function supports Office 365 and other types of groups provisioned in Azure Active Directory (Azure AD).
 
 >[!NOTE]
->Office 365 Groups cannot contain groups. Membership in an Office 365 Group is always direct.
+>Office 365 groups cannot contain groups. Membership in an Office 365 group is always direct.
 
 
 ## Permissions
