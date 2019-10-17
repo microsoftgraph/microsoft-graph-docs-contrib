@@ -12,7 +12,9 @@ doc_type: apiPageType
 Check for membership in the specified list of groups. Returns from the list those group IDs of which the [organizational contact](../resources/orgcontact.md) has a direct or transitive membership.
 
 You can check up to a maximum of 20 groups per request. This function supports Office 365 and other types of groups provisioned in Azure Active Directory (Azure AD).
->**Note**: Office 365 Groups cannot contain groups. So membership in an Office 365 Group is always direct.
+
+>[!NOTE]
+>Office 365 Groups cannot contain groups. Membership in an Office 365 Group is always direct.
 
 
 ## Permissions
@@ -34,6 +36,7 @@ POST /contacts/{id}/checkMemberGroups
 | Header       | Value |
 |:---------------|:----------|
 | Authorization  | Bearer {token}. Required. |
+| Content-type   | application/json. Required. |
 
 ## Request body
 In the request body, provide a JSON object with the following parameters.
@@ -44,7 +47,7 @@ In the request body, provide a JSON object with the following parameters.
 
 ## Response
 
-If successful, this method returns `200 OK` response code and a String collection object in the response body.
+If successful, this method returns a `200 OK` response code and a String collection object in the response body.
 
 ## Example
 
@@ -69,7 +72,7 @@ Content-length: 44
 
 ##### Response
 The following is an example of the response.
->**Note**: The response object shown here might be shortened for readability. All the properties will be returned from an actual call.
+>**Note**: The response object shown here might be shortened for readability. 
 <!-- {
   "blockType": "response",
   "truncated": true,
