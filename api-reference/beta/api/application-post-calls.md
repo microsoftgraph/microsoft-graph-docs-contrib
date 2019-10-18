@@ -108,7 +108,7 @@ Authorization: Bearer <Token>
 
 ##### Response
 
-> **Note:** The response object shown here might be shortened for readability. All the properties will be returned from an actual call.
+> **Note:** The response object shown here might be shortened for readability. 
 
 <!-- {
   "blockType": "response",
@@ -232,7 +232,7 @@ Content-Type: application/json
   "blockType": "example",
   "@odata.type": "microsoft.graph.commsNotifications"
 }-->
-```json
+```jsonF
 {
   "@odata.type": "#microsoft.graph.commsNotifications",
   "value": [
@@ -255,7 +255,7 @@ Content-Type: application/json
 
 ### Example 2: Create peer-to-peer VoIP call with application hosted media
 
-> **Note**: This example needs `Calls.Initiate.All` and `Calls.AccessMedia.All` permissions.
+> **Note**: This example needs Calls.Initiate.All and Calls.AccessMedia.All permissions.
 
 ##### Request
 The following example shows the request which makes a peer-to-peer call between the bot and the specified user. In this example the media is hosted locally by the application. The values of authorization token, callback url, application id, application name, user id, user name and tenant id must be replaced with actual values to make the example work.
