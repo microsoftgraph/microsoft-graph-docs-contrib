@@ -8159,7 +8159,6 @@
               href: api/countrynamedlocation-update.md
             - name: Delete
               href: api/countrynamedlocation-delete.md
-            - name: 
           - name: IP named location
             items:
             - name: IP named location
