@@ -1,5 +1,5 @@
 ---
-title: "orgContact: List memberOf"
+title: "List memberOf"
 description: "List the groups that this organizaitonal contact is a member of."
 localization_priority: Normal
 author: "davidmu1"
@@ -7,7 +7,7 @@ ms.prod: "microsoft-identity-platform"
 doc_type: apiPageType
 ---
 
-# orgContact: List memberOf
+# List memberOf
 
 List the groups that this [organizational contact](../resources/orgcontact.md) is a member of.
 
