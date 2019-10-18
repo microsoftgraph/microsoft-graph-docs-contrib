@@ -1,5 +1,5 @@
 ---
-title: "orgContact: List directReports"
+title: "List directReports"
 description: "Get the contact's direct reports."
 localization_priority: Normal
 author: "davidmu1"
@@ -7,7 +7,7 @@ ms.prod: "microsoft-identity-platform"
 doc_type: apiPageType
 ---
 
-# orgContact: List directReports
+# List directReports
 
 Get the direct reports for this [organizational contact](../resources/orgcontact.md).
 
