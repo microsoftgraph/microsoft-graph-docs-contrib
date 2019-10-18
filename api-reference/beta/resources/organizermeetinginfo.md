@@ -1,6 +1,6 @@
 ---
 title: "organizerMeetingInfo resource type"
-description: "Meeting information containing the organizer of the meeting."
+description: "Contains details about the meeting organizer. "
 author: "VinodRavichandran"
 localization_priority: Normal
 ms.prod: "cloud-communications"
@@ -11,7 +11,7 @@ doc_type: resourcePageType
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-This contains details about the meeting organizer. 
+Contains details about the meeting organizer. 
 
 To join an existing meeting, you must either provide a combination of the organizerMeetingInfo 
 and the [chatInfo](./chatinfo.md) resource types, or the [tokenMeetingInfo](./tokenmeetinginfo.md) resource type by itself.
