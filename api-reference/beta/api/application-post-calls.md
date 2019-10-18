@@ -232,7 +232,7 @@ Content-Type: application/json
   "blockType": "example",
   "@odata.type": "microsoft.graph.commsNotifications"
 }-->
-```jsonF
+```json
 {
   "@odata.type": "#microsoft.graph.commsNotifications",
   "value": [
