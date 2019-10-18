@@ -1,6 +1,6 @@
 ---
 title: "ipNamedLocation resource type"
-description: "Represents an Azure Active Directory named location defined by IP ranges. Named locations are custom rules that define network locations which can then be used in a Conditional Access policy."
+description: "Represents an Azure Active Directory named location defined by IP ranges. Named locations are custom rules that define network locations which can then be used in a conditional access policy."
 localization_priority: Normal
 author: "davidmu1"
 ms.prod: "microsoft-identity-platform"
@@ -11,7 +11,7 @@ doc_type: resourcePageType
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Represents an Azure Active Directory named location defined by IP ranges. Named locations are custom rules that define network locations which can then be used in a Conditional Access policy.
+Represents an Azure Active Directory named location defined by IP ranges. Named locations are custom rules that define network locations which can then be used in a conditional access policy.
 
 Inherits from [namedLocation](../resources/namedLocation.md)
 
@@ -22,8 +22,8 @@ Inherits from [namedLocation](../resources/namedLocation.md)
 | [List ipNamedLocations](../api/conditionalaccessroot-list-namedlocations.md) | [ipNamedLocation](ipNamedLocation.md) collection | Get all the **ipNamedLocation** objects in the organization. |
 | [Create ipNamedLocation](../api/conditionalaccessroot-post-namedlocations.md) | [ipNamedLocation](ipNamedLocation.md) | Create a new **ipNamedLocation** object. |
 | [Get ipNamedLocation](../api/ipnamedlocation-get.md) | [ipNamedLocation](ipnamedlocation.md) | Read the properties and relationships of an **ipNamedLocation** object. |
-| [Update ipNamedLocations](../api/ipnamedlocation-update.md) | [ipNamedLocation](ipnamedlocation.md) | Update an **ipNamedLocation** object. |
-| [Delete ipNamedLocations](../api/ipnamedlocation-delete.md) | None | Delete an **ipNamedLocation** object. |
+| [Update ipNamedLocation](../api/ipnamedlocation-update.md) | [ipNamedLocation](ipnamedlocation.md) | Update an **ipNamedLocation** object. |
+| [Delete ipNamedLocation](../api/ipnamedlocation-delete.md) | None | Delete an **ipNamedLocation** object. |
 
 ## Properties
 

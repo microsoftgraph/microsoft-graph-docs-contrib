@@ -19,7 +19,7 @@ One of the following permissions is required to call this API. To learn more, in
 
 | Permission type                        | Permissions (from least to most privileged) |
 |:---------------------------------------|:--------------------------------------------|
-| Delegated (work or school account)     | Policy.ReadWrite.ConditionalAccess, Directory.AccessAsUser.All |
+| Delegated (work or school account)     | Policy.ReadWrite.ConditionalAccess and Directory.AccessAsUser.All |
 | Delegated (personal Microsoft account) | Not supported. |
 | Application                            | Not supported. |
 
@@ -46,7 +46,7 @@ In the request body, supply the values for relevant fields that should be update
 |:-------------|:------------|:------------|
 |displayName|String|Human-readable name of the location.|
 |ipRanges|[ipRange](../resources/iprange.md) collection|List of IP address ranges in IPv4 CIDR format (1.2.3.4/32) or any allowable IPv6 format from IETF RFC5962.|
-|isTrusted|Boolean|True if this location is explicitly trusted.|
+|isTrusted|Boolean|The value is `true` if this location is explicitly trusted.|
 
 ## Response
 

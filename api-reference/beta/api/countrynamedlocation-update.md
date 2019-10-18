@@ -1,6 +1,6 @@
 ---
 title: "Update countryNamedlocation"
-description: "Update the properties of countryNamedLocation object."
+description: "Update the properties of a countryNamedLocation object."
 localization_priority: Normal
 author: "davidmu1"
 ms.prod: "microsoft-identity-platform"
@@ -19,7 +19,7 @@ One of the following permissions is required to call this API. To learn more, in
 
 | Permission type                        | Permissions (from least to most privileged) |
 |:---------------------------------------|:--------------------------------------------|
-| Delegated (work or school account)     | Policy.ReadWrite.ConditionalAccess, Directory.AccessAsUser.All |
+| Delegated (work or school account)     | Policy.ReadWrite.ConditionalAccess and Directory.AccessAsUser.All |
 | Delegated (personal Microsoft account) | Not supported. |
 | Application                            | Not supported. |
 
@@ -46,7 +46,7 @@ In the request body, supply the values for relevant fields that should be update
 |:-------------|:------------|:------------|
 |countriesAndRegions|String collection|List of countries and/or regions in two-letter format specified by ISO 3166-2.|
 |displayName|String|Human-readable name of the location.|
-|includeUnknownCountriesAndRegions|Boolean|True if IP addresses that don't map to a country or region should be included in the named location.|
+|includeUnknownCountriesAndRegions|Boolean|The value is `true` if IP addresses that don't map to a country or region should be included in the named location.|
 
 ## Response
 

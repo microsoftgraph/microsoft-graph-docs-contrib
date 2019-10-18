@@ -19,7 +19,7 @@ This is the base class that represents an Azure Active Directory named location.
 |:-------------|:------------|:------------|
 | [List namedLocations](../api/conditionalaccessroot-list-namedlocations.md) | [namedLocation](namedLocation.md) collection | Get all the **namedLocation** objects in the organization. |
 | [Get namedLocation](../api/namedlocation-get.md) | [namedLocation](namedlocation.md) | Read the properties and relationships of a **namedLocation** object. |
-| [Delete](../api/namedlocation-delete.md) | None | Delete a **namedLocation** object. |
+| [Delete namedLocation](../api/namedlocation-delete.md) | None | Delete a **namedLocation** object. |
 
 ## Properties
 

@@ -1,6 +1,6 @@
 ---
 title: "Get countryNamedLocation"
-description: "Retrieve the properties and relationships of countryNamedlocation object."
+description: "Retrieve the properties and relationships of a countryNamedlocation object."
 localization_priority: Normal
 author: "davidmu1"
 ms.prod: "microsoft-identity-platform"
@@ -19,7 +19,7 @@ One of the following permissions is required to call this API. To learn more, in
 
 | Permission type                        | Permissions (from least to most privileged) |
 |:---------------------------------------|:--------------------------------------------|
-| Delegated (work or school account)     | Policy.Read.All or Policy.ReadWrite.ConditionalAccess, Directory.AccessAsUser.All |
+| Delegated (work or school account)     | Policy.Read.All |
 | Delegated (personal Microsoft account) | Not supported. |
 | Application                            | Not supported. |
 
