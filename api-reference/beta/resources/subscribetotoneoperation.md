@@ -1,6 +1,6 @@
 --- 
 title: "SubscribeToToneOperation resource type"
-description: "This resource type is used to describe the response format of creation of subscription to receive DTMF tones."
+description: "Describes the response format of creation of subscription to receive DTMF tones."
 author: "VinodRavichandran"
 localization_priority: Normal
 ms.prod: "cloud-communications"
@@ -10,6 +10,8 @@ doc_type: resourcePageType
 # SubscribeToToneOperation resource type
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
+
+Describes the response format of creation of subscription to receive DTMF tones.
 
 ## Properties
 
