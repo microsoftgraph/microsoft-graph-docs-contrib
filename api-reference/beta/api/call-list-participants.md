@@ -15,8 +15,6 @@ Retrieve a list of participant objects in the call.
 
 ## Permissions
 
-One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
-
 | Permission type | Permissions (from least to most privileged) |
 | :-------------- | :------------------------------------------ |
 | Delegated (work or school account)     | Not Supported        |
@@ -61,7 +59,7 @@ If successful, this method returns a `200 OK` response code and collection of [p
   "name": "get-participants"
 }-->
 
-```msgraph-interactive
+```http
 GET https://graph.microsoft.com/beta/communications/calls/7531d31f-d10d-44de-802f-c569dbca451c/participants
 Authorization: Bearer <TOKEN>
 ```
@@ -105,14 +103,14 @@ Content-Type: application/json
                "@odata.type":"#microsoft.graph.identitySet",
                "application":{
                   "@odata.type":"#microsoft.graph.identity",
-                  "id":"278405a3-f568-4b3e-b684-009193463064",
+                  "id":"f2fa86af-3c51-4bc2-8fc0-475452d9764f",
                   "displayName":null
                },
                "user":null,
                "device":null,
                "phone":null
             },
-            "id":null
+            "id":"eec3812a-fdc3-4fb4-825c-a06c9f35414e"
          },
          "mediaStreams":[
             {
@@ -146,7 +144,7 @@ Content-Type: application/json
                "device":null,
                "phone":null
             },
-            "id":null
+            "id":"278405a3-f568-4b3e-b684-009193463064"
          },
          "mediaStreams":[
             {
@@ -160,16 +158,15 @@ Content-Type: application/json
          ],
          "isMuted":false,
          "isInLobby":false,
-         "id":"23d0d3b5-63c0-458e-82d2-c7727064bae7",
+         "id":"1e126418-44a0-4a94-a6f8-0efe1ad71acb",
          "metadata":null,
          "recordingInfo":null
       }
    ],
-   "@odata.context":"https://graph.microsoft.com/beta/$metadata#communications/calls('7531d31f-d10d-44de-802f-c569dbca451c')/participants"
+   "@odata.context":"https://graph.microsoft.com/v1.0/$metadata#communications/calls('7531d31f-d10d-44de-802f-c569dbca451c')/participants"
 }
 
 ```
-
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2015-10-25 14:57:30 UTC -->
 <!--
