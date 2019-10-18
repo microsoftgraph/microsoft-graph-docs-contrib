@@ -197,16 +197,17 @@ For details about known issues with Microsoft Graph APIs, see [Known issues](kno
 | :-------------- | :------------ | :--------------------------------------- |
 | Addition        | v1.0          | Added the capability to [get the raw contents of a file or item attachment](/graph/api/attachment-get?view=graph-rest-1.0#get-the-raw-contents-of-a-file-or-item-attachment) to an event, message, or group post. |
 
-### Calls and onlineMeetings
+### Cloud communications (Calls and online meetings)
+
 | **Change type** | **Version** | **Description**                  |
 |:----------------|:------------|:-----------------------------------------|
-| Addition        | Beta        | Added /communications/* APIs for all calls and onlineMeetings. The `/app` path will be deprecated. Going forward, use the `/communications` path.|
-| Deletion        | Beta        | Removed properties **createdDateTime** and **lastActionDateTime** from [commsOperation](/graph/.api/resource/commsOperation?view=graph-rest-beta) resource.|
-| Deletion        | Beta        | Removed property **meetingType** from [onlineMeeting](/graph/api/resources/onlineMeeting?view=graph-rest-beta) resource. |
-| Addition        | Beta        | Added property **isBroadcast** to [onlineMeeting](/graph/api/resources/onlineMeeting?view=graph-rest-beta) resource. |
-| Change        | Beta        | Renamed property **resource** to **resourceUrl** from [commsNotification](/graph/api/resources/commsNotification?view=graph-rest-beta) resource. |
-| Change          | Beta        | Changed type of properties **code** and **subCode** from String to Int32 in [resultInfo](/graph/api/resources/resultInfo?view=graph-rest-beta) resource. |
-| Change        | Beta        | Renamed property **subCode** to **subcode** from [resultInfo](/graph/api/resources/resultInfo?view=graph-rest-beta) resource. | 
+| Addition        | Beta        | Added /communications/* APIs for all calls and online meetings. The `/app` path will be deprecated. Going forward, use the `/communications` path.|
+| Deletion        | Beta        | Removed the properties **createdDateTime** and **lastActionDateTime** from the [commsOperation](/graph/.api/resource/commsOperation?view=graph-rest-beta) resource.|
+| Deletion        | Beta        | Removed the property **meetingType** from the [onlineMeeting](/graph/api/resources/onlineMeeting?view=graph-rest-beta) resource. |
+| Addition        | Beta        | Added the property **isBroadcast** to the [onlineMeeting](/graph/api/resources/onlineMeeting?view=graph-rest-beta) resource. |
+| Change        | Beta        | Renamed the **resource** property to **resourceUrl** on the [commsNotification](/graph/api/resources/commsNotification?view=graph-rest-beta) resource. |
+| Change          | Beta        | Changed the type of the **code** and **subCode** properties from string to Int32 on the [resultInfo](/graph/api/resources/resultInfo?view=graph-rest-beta) resource. |
+| Change        | Beta        | Renamed the **subcode** property to **subCode** on the [resultInfo](/graph/api/resources/resultInfo?view=graph-rest-beta) resource. | 
 
 ### Files (OneDrive for Business and OneDrive Personal)
 
