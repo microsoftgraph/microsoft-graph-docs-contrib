@@ -1,6 +1,6 @@
 ---
 title: "call: reject"
-description: "Reject an incoming call."
+description: "Enable a bot to reject an incoming call."
 author: "VinodRavichandran"
 localization_priority: Normal
 ms.prod: "cloud-communications"
@@ -11,11 +11,11 @@ doc_type: apiPageType
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-This enables a bot to reject an incoming call. The incoming call request can be an invite from a participant in a group call or a peer-to-peer call. If an invite to a group call is received, the notification will contain the chatInfo and meetingInfo parameters.
+Enable a bot to reject an incoming call. The incoming call request can be an invite from a participant in a group call or a peer-to-peer call. If an invite to a group call is received, the notification will contain the **chatInfo** and **meetingInfo** parameters.
 
-The bot is expected to Answer or Reject the call before the call times out. The current timeout value is 15 seconds.
+The bot is expected to answer or reject the call before the call times out. The current timeout value is 15 seconds.
 
-This API does not terminate existing calls that have already been answered. To do so, please view [Delete Call](../api/call-delete.md).
+This API does not end existing calls that have already been answered. Use [delete call](../api/call-delete.md) to end a call.
 
 > **Note:** The bot can only be reached through VoIP. PSTN calling to bot is not yet supported.
 
@@ -40,6 +40,7 @@ POST /communications/calls/{id}/reject
 | Name          | Description               |
 |:--------------|:--------------------------|
 | Authorization | Bearer {token}. Required. |
+| Content-type  | application/json. Required.|
 
 ## Request body
 In the request body, provide a JSON object with the following parameters.
@@ -50,10 +51,10 @@ In the request body, provide a JSON object with the following parameters.
 |callbackUri|String|This allows bots to provide a specific callback URI for the current call to receive later notifications. If this property has not been set, the bot's global callback URI will be used instead. This must be `https`.|
 
 ## Response
-If successful, this method returns `202 Accepted` response code. It does not return anything in the response body.
+If successful, this method returns a `202 Accepted` response code. It does not return anything in the response body.
 
 ## Examples
-The following examples shows how to call this API.
+The following examples show how to call this API.
 
 ### Example 1: Reject an incoming call with 'Busy' reason
 #### Request
