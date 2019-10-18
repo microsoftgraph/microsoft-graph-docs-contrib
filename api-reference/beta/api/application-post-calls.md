@@ -11,7 +11,7 @@ doc_type: apiPageType
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-This enables your bot to create a new outgoing call or join an existing group call. If an existing group call has the necessary meeting related properties attached to it, you're essentially joining a meeting that's already been created. See the meeting related examples below for more details.
+Create a new [call](../resources/call.md). This API enables your bot to create a new outgoing call or join an existing group call. If an existing group call has the necessary meeting-related properties attached to it, the bot essentially joins a meeting that's already been created. 
 
 > **Note:** Currently, only VoIP calls are supported. 
 
@@ -38,6 +38,7 @@ POST /communications/calls
 | Name          | Description               |
 |:--------------|:--------------------------|
 | Authorization | Bearer {token}. Required. |
+| Content-type  | application/json. Required.|
 
 ## Request body
 In the request body, supply a JSON representation of a [call](../resources/call.md) object.
@@ -52,7 +53,7 @@ If successful, this method returns a `201 Created` response code and a [call](..
 > **Note:** This call needs the Calls.Initiate.All permission.
 
 ##### Request
-The following example shows the request which makes a peer-to-peer call between the bot and the specified user. In this example the media is hosted by the service. The values of authorization token, callback url, application id, application name, user id, user name and tenant id must be replaced with actual values to make the example work.
+The following example shows the request which makes a peer-to-peer call between the bot and the specified user. In this example, the media is hosted by the service. The values of authorization token, callback URL, application ID, application name, user ID, user name, and tenant ID must be replaced with actual values to make the example work.
 
 
 # [HTTP](#tab/http)
