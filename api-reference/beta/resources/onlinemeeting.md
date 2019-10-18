@@ -2,20 +2,23 @@
 title: "onlineMeeting resource type"
 description: "Captures information about the meeting, including the join URL, the attendees list, and the description."
 author: "VinodRavichandran"
+localization_priority: Normal
+ms.prod: "microsoft-teams"
+doc_type: resourcePageType
 ---
 
 # onlineMeeting resource type
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-This contains information about the meeting, including the join URL, the attendees list, and the description.
+Contains information about the meeting, including the join URL, the attendees list, and the description.
 
 ## Methods
 
 | Method         | Return Type | Description |
 |:---------------|:--------|:----------|
 | [Get onlineMeeting](../api/onlinemeeting-get.md) | [onlineMeeting](onlinemeeting.md) | Read properties and relationships of online meeting object. |
-| [POST onlineMeeting](../api/application-post-onlineMeetings.md) | [onlineMeeting](onlinemeeting.md) | Creates an online meeting. |
+| [Create onlineMeeting](../api/application-post-onlineMeetings.md) | [onlineMeeting](onlinemeeting.md) | Creates an online meeting. |
 
 ## Properties
 
