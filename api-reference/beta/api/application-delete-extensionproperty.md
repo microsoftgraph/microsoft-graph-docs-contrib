@@ -11,7 +11,7 @@ doc_type: "apiPageType"
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Delete an extensionProperty.
+Delete an [extensionProperty](extensionProperty.md).
 
 ## Permissions
 
@@ -33,11 +33,9 @@ DELETE /applications/{id}/extensionProperties/{id}
 
 ## Request headers
 
-| Name       | Type | Description|
-|:-----------|:------|:----------|
-| Authorization  | string  | Bearer {token}. Required.  |
-| Content-type   | application/json. Required. |
-
+| Name       | Description|
+|:-----------|:----------|
+| Authorization  | Bearer {token}. Required.  |
 
 ## Request body
 
@@ -45,7 +43,7 @@ Do not supply a request body for this method.
 
 ## Response
 
-If successful, this method returns `204, No Content` response code. It does not return anything in the response body.
+If successful, this method returns `204 No Content` response code. It does not return anything in the response body.
 
 ## Examples
 
