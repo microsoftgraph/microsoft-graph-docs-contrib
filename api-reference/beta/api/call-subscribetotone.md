@@ -107,7 +107,7 @@ Content-Length: 259
 ```
 
 
-##### Notification - Tone notification
+##### Notification - tone notification
 
 The notification contain information of the tone pressed in the [toneinfo](../resources/toneinfo.md) resource.
 

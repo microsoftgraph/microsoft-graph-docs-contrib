@@ -53,7 +53,7 @@ Returns `202 Accepted` response code.
 ## Examples
 These examples show the flow of an incoming call all the way to the different types of transfer notifications.
 
-### Example 1: Call Transfer
+### Example 1: Call transfer
 
 ##### Request
 The following example shows the request.

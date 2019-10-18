@@ -22,7 +22,7 @@ and the [chatInfo](./chatinfo.md) resource types, or the [tokenMeetingInfo](./to
 | :--------------------------- | :---------------------------- | :-----------------------------------------------|
 | organizer                    | [identitySet](identityset.md) | The organizer Azure Active Directory identity.  |
 
-## JSON Representation
+## JSON representation
 
 The following is a JSON representation of the resource.
 

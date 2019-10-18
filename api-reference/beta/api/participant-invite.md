@@ -58,7 +58,7 @@ The following examples shows how to call this API.
 
 > **Note:** The response objects might be shortened for readability. All the properties will be returned from an actual call.
 
-### Example 1: Invite One Participant to an Existing Group Call
+### Example 1: Invite one participant to an existing group call
 
 ##### Request
 
@@ -483,7 +483,7 @@ Content-Type: application/json
 
 ```
 
-### Example 3: Invite Participants to a an Existing Group Call, Replacing an Existing Peer-to-Peer Call
+### Example 3: Invite participants to a an existing group call, replacing an existing Peer-to-Peer call
 
 
 The invite API supports only one participant when replacing an existing peer-to-peer call. 
@@ -565,7 +565,7 @@ Content-Type: application/json
 }
 ```
 
-##### Notification - Operation completed
+##### Notification - operation completed
 
 ``` http
 POST https://bot.contoso.com/api/calls
@@ -607,7 +607,7 @@ Content-Type: application/json
 }
 ```
 
-##### Notification - Roster updated with participant added
+##### Notification - roster updated with participant added
 
 ```http
 POST https://bot.contoso.com/api/calls

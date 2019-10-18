@@ -46,7 +46,7 @@ If successful, this method returns a `200 OK` response code and a [call](../reso
 
 ## Examples
 
-### Example 1: Getting a Peer-to-Peer Call
+### Example 1: Getting a Peer-to-Peer call
 
 ##### Request
 
@@ -154,7 +154,7 @@ Content-Type: application/json
   "toneInfo": null
 }
 ```
-### Example 2: Getting a Group Call
+### Example 2: Getting a group call
 
 ##### Request
 <!-- {

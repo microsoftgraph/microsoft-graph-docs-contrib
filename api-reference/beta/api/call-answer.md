@@ -110,7 +110,7 @@ Here is an example of the response.
 HTTP/1.1 202 Accepted
 ```
 
-### Example 1: Answer a Peer-to-Peer VoIP Call with Service-Hosted Media
+### Example 1: Answer a Peer-to-Peer VoIP call with service hosted media
 
 ##### Notification - incoming
 

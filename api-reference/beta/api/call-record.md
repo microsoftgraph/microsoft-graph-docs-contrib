@@ -39,12 +39,12 @@ POST /communications/calls/{id}/record
 ```
 > **Note:** The `/app` path will be deprecated. Going forward, use the `/communications` path.
 
-## Request Header
+## Request headers
 | Name          | Description               |
 |:--------------|:--------------------------|
 | Authorization | Bearer {token}. Required. |
 
-## Request Body
+## Request body
 In the request body, provide a JSON object with the following parameters.
 
 | Parameter      | Type    |Description|
@@ -64,7 +64,7 @@ This method returns a `200 OK` response code and a Location header with a URI to
 ## Example
 The following example shows how to call this API.
 
-### Example 1: record a short audio clip from a call
+### Example 1: Record a short audio clip from a call
 
 ##### Request
 The following example shows the request.
@@ -164,7 +164,7 @@ Content-Type: application/json
 }
 ```
 
-### Example 2: retrieving the recording file
+### Example 2: Retrieving the recording file
 
 > **Note:** While you're able to fetch the recording and process it, you **must** delete it afterwards. Media cannot be persisted.
 ##### Request

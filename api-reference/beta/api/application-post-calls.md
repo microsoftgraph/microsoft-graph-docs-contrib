@@ -627,7 +627,7 @@ Content-Type: application/json
   ]
 }
 ```
-##### Notification - Roster
+##### Notification - roster
 
 ```http
 POST https://bot.contoso.com/callback
@@ -901,7 +901,7 @@ Authorization: Bearer <Token>
 ```
 > **Note:** The guest join depends on the tenant settings for meeting. The application might be put in lobby waiting to be admitted by a user. This is defined by the `isInLobby` property
 
-##### Notification - Roster
+##### Notification - roster
 
 ```http
 POST https://bot.contoso.com/callback
