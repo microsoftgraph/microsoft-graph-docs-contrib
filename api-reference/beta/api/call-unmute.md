@@ -1,6 +1,6 @@
 ---
 title: "call: unmute"
-description: "Allows the application to unmute itself."
+description: "Allow the application to unmute itself."
 author: "VinodRavichandran"
 localization_priority: Normal
 ms.prod: "cloud-communications"
@@ -11,11 +11,11 @@ doc_type: apiPageType
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Allows the application to unmute itself.
+Allow the application to unmute itself.
 
 This is a server unmute, meaning that the server will start sending audio packets for this participant to other participants again.
 
-For further information on how to handle operations, please review [commsOperation](../resources/commsOperation.md)
+For more information about how to handle operations, see [commsOperation](../resources/commsOperation.md).
 
 > **Note:** This is only supported for group calls.
 
@@ -39,6 +39,7 @@ POST /communications/calls/{id}/unmute
 | Name          | Description               |
 |:--------------|:--------------------------|
 | Authorization | Bearer {token}. Required. |
+| Content-type | application/json. Required.|
 
 ## Request body
 In the request body, provide a JSON object with the following parameters.
@@ -48,9 +49,9 @@ In the request body, provide a JSON object with the following parameters.
 |clientContext|String|The client context.|
 
 ## Response
-If successful, this method returns `200 OK` response code and [commsOperation](../resources/commsoperation.md) object in the response body.
+If successful, this method returns a `200 OK` response code and a [commsOperation](../resources/commsoperation.md) object in the response body.
 
->**Note:** Once this returns a successful response, all participants will receive a roster update.
+>**Note:** When this API returns a successful response, all participants will receive a roster update.
 
 ## Example
 
