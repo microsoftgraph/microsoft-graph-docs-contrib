@@ -1,6 +1,6 @@
 --- 
 title: "MuteParticipantOperation resource type"
-description: "This resource type is used to describe the response format of call participant mute operation."
+description: "Describes the response format of a call participant mute operation."
 author: "VinodRavichandran"
 localization_priority: Normal
 ms.prod: "cloud-communications"
@@ -10,6 +10,8 @@ doc_type: resourcePageType
 # MuteParticipantOperation resource type
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
+
+Describes the response format of a call participant mute operation.
 
 ## Properties
 
