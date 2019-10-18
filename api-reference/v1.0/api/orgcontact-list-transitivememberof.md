@@ -1,5 +1,5 @@
 ---
-title: "List orgContact transitive memberOf"
+title: "List transitiveMemberOf"
 description: "Get groups that the organziational contact is a member of. This API request is transitive, and will also return all groups the user is a nested member of."
 author: "anchanda"
 localization_priority: Normal
@@ -7,7 +7,7 @@ ms.prod: "groups"
 doc_type: apiPageType
 ---
 
-# List organizational contact transitive memberOf
+# List transitiveMemberOf
 
 Get groups that this [organizational contact](../resources/orgcontact.md) is a member of. The API request is transitive, and returns all groups the organizational contact is a nested member of.
 
@@ -31,7 +31,7 @@ GET /contacts/{id}/transitiveMemberOf
 
 ## Optional query parameters
 
-This method supports the [OData Query Parameters](https://developer.microsoft.com/graph/docs/concepts/query_parameters) `$select` to help customize the response.
+This method supports the `$select` [OData query parameters](/graph/query-parameters) to help customize the response.
 
 ## Request headers
 
@@ -46,7 +46,7 @@ Do not supply a request body for this method.
 
 ## Response
 
-If successful, this method returns a `200 OK` response code and collection of [directoryObject](../resources/directoryobject.md) objects in the response body.
+If successful, this method returns a `200 OK` response code and a collection of [directoryObject](../resources/directoryobject.md) objects in the response body.
 
 ## Example
 
@@ -85,7 +85,7 @@ GET https://graph.microsoft.com/v1.0/me/transitiveMemberOf
 ### Response
 
 The following is an example of the response.
->**Note**: The response object shown here might be shortened for readability. All the properties will be returned from an actual call.
+>**Note**: The response object shown here might be shortened for readability. 
 
 <!-- {
   "blockType": "response",
