@@ -13,7 +13,7 @@ doc_type: apiPageType
 
 Transfer an active peer-to-peer call.
 
-> **Note:** This is only supported if both the transferee and transfer target are Microsoft Teams users which belong to the same tenant. Transfer to PSTN number is not supported. To learn more about transferor, transferee and transfer target, see [RFC 5589](https://tools.ietf.org/html/rfc5589#section-2).
+> **Note:** This is only supported if both the transferee and transfer target are Microsoft Teams users that belong to the same tenant. Transfer to PSTN number is not supported. To learn more about transferor, transferee and transfer target, see [RFC 5589](https://tools.ietf.org/html/rfc5589#section-2).
 
 A consultative transfer means that the transferor can inform the person they want to transfer the call to (the transferee), before the transfer is made. This is opposed to transfering the call directly.
 
@@ -38,6 +38,7 @@ POST /communications/calls/{id}/transfer
 | Name          | Description               |
 |:--------------|:--------------------------|
 | Authorization | Bearer {token}. Required. |
+| Content-type  | application/json. Required.|
 
 ## Request body
 In the request body, provide a JSON object with the following parameters.
@@ -48,7 +49,7 @@ In the request body, provide a JSON object with the following parameters.
 |clientContext|String|Unique Client Context string. Max limit is 256 chars.|
 
 ## Response
-Returns `202 Accepted` response code.
+If successful, this method returns a `202 Accepted` response code.
 
 ## Examples
 These examples show the flow of an incoming call all the way to the different types of transfer notifications.
