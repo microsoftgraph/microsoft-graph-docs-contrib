@@ -11,11 +11,13 @@ doc_type: resourcePageType
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
+Describes the response format of media processing cancel operation.
+
 ## Properties
 
 | Property                       | Type                        | Description                                                                                                                                       |
 | :----------------------------- | :---------------------------| :-------------------------------------------------------------------------------------------------------------------------------------------------|
-| all                            | Boolean                     | The flag indicating whether to stop all operations or current.                                                                                    |
+| all                            | Boolean                     | Indicates whether to stop all operations or current.                                                                                    |
 | clientContext                  | String                      | The client context.                                                                                                                               |
 | id                             | String                      | The server operation ID. Read-only.                                                                                              |
 | resultInfo                     | [resultInfo](resultinfo.md) | The result information.  Read-only.                                                                                              |
