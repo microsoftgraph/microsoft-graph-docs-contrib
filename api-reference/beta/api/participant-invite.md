@@ -38,6 +38,7 @@ POST /communications/calls/{id}/participants/invite
 | Name          | Description               |
 |:--------------|:--------------------------|
 | Authorization | Bearer {token}. Required. |
+| Content-type  | application/json. Required.|
 
 ## Request body
 In the request body, provide a JSON object with the following parameters.
@@ -48,9 +49,9 @@ In the request body, provide a JSON object with the following parameters.
 |clientContext|String|Unique Client Context string. Max limit is 256 chars.|
 
 ## Response
-Returns `200 OK` response code and a Location header with a uri to the [inviteParticipantsOperation](../resources/inviteParticipantsOperation.md) created for this request.  The body of the response contains the [inviteParticipantsOperation](../resources/inviteParticipantsOperation.md) created.
+If succsessful, this method returns a `200 OK` response code and a Location header with a URI to the [inviteParticipantsOperation](../resources/inviteParticipantsOperation.md) created for this request. The body of the response contains the [inviteParticipantsOperation](../resources/inviteParticipantsOperation.md) created.
 
->**Note:** Once this returns a successful response, all participants will receive a roster update.
+>**Note:** When this API returns a successful response, all participants will receive a roster update.
 
 
 ## Examples
