@@ -11,8 +11,10 @@ doc_type: "resourcePageType"
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-In [Azure AD Entitlement Management](entitlementmanagement-root.md), an access package defines the collections of resource roles and the policies for how one or more users may obtain access to those resources.  Each access package is contained within an access package catalog, and has links to the resources via the resource-specific role scopes which define the access the package provides.  An access package also links to the access package assignment policies, each of which define who can request or be assigned an access package assignment.
+In [Azure AD Entitlement Management](entitlementmanagement-root.md), an access package defines the collections of resource roles and the policies for how one or more users may obtain access to those resources.  
+Each access package is referenced by a single access package catalog, and has links to the resources from that catalog via the resource-specific role scopes which define the access the package provides.  An access package also links to the access package assignment policies, each of which define who can request or be assigned an access package assignment.
 
+To assign a user to an access package, [create an accessPackageAssignmentRequest](../api/accesspackageassignmentrequest-post.md) which references the access package and access package assignment policy.
 
 ## Methods
 
@@ -22,13 +24,12 @@ In [Azure AD Entitlement Management](entitlementmanagement-root.md), an access p
 | [List accessPackages](../api/accesspackage-list.md) | [accessPackage](accesspackage.md) collection | Retrieve a list of accesspackage objects. |
 | [Create accessPackage](../api/accesspackage-post.md) | [accessPackage](accesspackage.md) | Create a new accessPackage object. |
 | [Delete accessPackage](../api/accesspackage-delete.md) | | Delete accessPackage. |
-| [Update accessPackage](../api/accesspackage-update.md) | | Update the properties of an accessPackage. |
 
 ## Properties
 
 | Property     | Type        | Description |
 |:-------------|:------------|:------------|
-|catalogId|String|ID of the access package catalog containing this access package. Read-only.|
+|catalogId|String|ID of the access package catalog referencing this access package. Read-only.|
 |createdBy|String|UPN of the user or identity of the subject who created this resource. Read-only.|
 |createdDateTime|DateTimeOffset|The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 would look like this: `'2014-01-01T00:00:00Z'`. Read-only.|
 |description|String|The description of the access package.|

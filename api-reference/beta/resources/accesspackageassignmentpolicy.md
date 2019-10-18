@@ -13,6 +13,9 @@ doc_type: "resourcePageType"
 
 In [Azure AD Entitlement Management](entitlementmanagement-root.md), an access package assignment policy specifies the policy by which subjects may request or be assigned an access package via an access package assignment.  An access package can have zero or more policies.  When a request from a subject is received, the subject is matched against each policy to find the policy (if any) for that subject.   The policy then determines whether the request requires approval, and the duration of the access package assignment.
 
+To assign a user to an access package, [create an accessPackageAssignmentRequest](../api/accesspackageassignmentrequest-post.md) which references the access package and access package assignment policy.
+
+
 ## Methods
 
 | Method       | Return Type | Description |
