@@ -2,8 +2,8 @@
 title: "Update room"
 description: "Update the properties of room object."
 localization_priority: Normal
-author: ""
-ms.prod: ""
+author: "vrod9429"
+ms.prod: "Outlook"
 doc_type: "apiPageType"
 ---
 
@@ -17,7 +17,7 @@ One of the following permissions is required to call this API. To learn more, in
 
 | Permission type                        | Permissions (from least to most privileged) |
 |:---------------------------------------|:--------------------------------------------|
-| Delegated (work or school account)     | Not supported. |
+| Delegated (work or school account)     | Place.ReadWrite.All. |
 | Delegated (personal Microsoft account) | Not supported. |
 | Application                            | Not supported. |
 
@@ -26,7 +26,7 @@ One of the following permissions is required to call this API. To learn more, in
 <!-- { "blockType": "ignored" } -->
 
 ```http
-JSON2MD ERROR: COULD NOT DETERMINE API PATH
+PATCH /places/{id}
 ```
 
 ## Request headers
