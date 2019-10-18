@@ -11,7 +11,7 @@ doc_type: "apiPageType"
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Use this API to create a new extensionProperty. Extensions created using this API can be seen on the application object by calling [Get application](../api/application-get.md) method. Please use [Update application](../api/application-update.md) method to assign a value to an extension property.
+Use this API to create a new [extensionProperty](../resources/extensionproperty.md) definition. This can be used to add a custom property value to the targeted object type defined in the extensionProperty, using standard creation and update requests to the target object.
 
 ## Permissions
 
@@ -32,10 +32,9 @@ POST /applications/{id}/extensionProperties
 ```
 
 ## Request headers
-| Name       | Type | Description|
-|:-----------|:------|:----------|
-| Authorization  | string  | Bearer {token}. Required.  |
-| Content-type   | application/json. Required. |
+| Name       | Description|
+|:-----------|:----------|
+| Authorization  | Bearer {token}. Required.  |
 
 ## Request body
 
