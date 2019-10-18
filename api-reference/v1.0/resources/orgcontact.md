@@ -17,8 +17,8 @@ Inherits from [directoryObject](directoryobject.md).
 
 | Method		   | Return Type	|Description|
 |:---------------|:--------|:----------|
-|[Get organizationl contact](../api/orgcontact-get.md) | [orgContact](orgcontact.md) |Read properties and relationships of an organizational contact.|
 |[List organizationl contacts](../api/orgcontact-list.md) | [orgContact](orgcontact.md) |List properties of organizational contacts.|
+|[Get organizationl contact](../api/orgcontact-get.md) | [orgContact](orgcontact.md) |Read properties and relationships of an organizational contact.|
 |[Get manager](../api/orgcontact-get-manager.md) |[directoryObject](directoryobject.md)| Get the organizational contact's manager.|
 |[List directReports](../api/orgcontact-list-directreports.md) |[directoryObject](directoryobject.md) collection| List the organizational contact's direct reports.|
 |[List memberOf](../api/orgcontact-list-memberof.md) |[directoryObject](directoryobject.md) collection| List the groups an organizational contact is a member of.|
