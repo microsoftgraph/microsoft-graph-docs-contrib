@@ -1,16 +1,17 @@
 ---
-title: "Assign a manager"
-description: "Use this API to assign a user's manager."
+title: "Assign manager"
+description: "Assign a user's manager."
 localization_priority: Normal
 author: "dkershaw10"
 ms.prod: "microsoft-identity-platform"
 doc_type: apiPageType
 ---
 
-# Assign a manager
+# Assign manager
 
-Use this API to assign a user's manager.
-> Note: You cannot assign direct reports - instead use this API.
+Assign a user's manager.
+> [!NOTE]
+> You cannot assign direct reports; instead, use this API.
 
 ## Permissions
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
@@ -30,9 +31,10 @@ PUT /users/{id}/manager/$ref
 | Header       | Value |
 |:---------------|:----------|
 | Authorization  | Bearer {token}. Required. |
+| Content-type   | application/json. Required.|
 
 ## Request body
-In the request body, supply a JSON representation of [directoryObject](../resources/directoryobject.md), [user](../resources/user.md) or [organizational contact](../resources/orgcontact.md) object to be added.
+In the request body, supply a JSON representation of a [directoryObject](../resources/directoryobject.md), [user](../resources/user.md), or [organizational contact](../resources/orgcontact.md) object to be added.
 
 ## Response
 
@@ -76,7 +78,7 @@ Content-length: xxx
 
 ##### Response
 The following is an example of the response.
->**Note**: The response object shown here might be shortened for readability. All the properties will be returned from an actual call.
+>**Note**: The response object shown here might be shortened for readability. 
 <!-- {
   "blockType": "response",
   "truncated": true,
