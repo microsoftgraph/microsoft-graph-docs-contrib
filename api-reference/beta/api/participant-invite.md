@@ -55,7 +55,7 @@ If succsessful, this method returns a `200 OK` response code and a Location head
 
 
 ## Examples
-The following examples shows how to call this API.
+The following examples show how to call this API.
 
 > **Note:** The response objects might be shortened for readability. All the properties will be returned from an actual call.
 
@@ -243,7 +243,7 @@ Content-Type: application/json
 
 ### Example 2: Invite multiple participants to an existing group call
 
-> **Note**: the existing group call must have a valid [chatInfo](../resources/chatInfo.md). We support inviting upto 5 participants.
+> **Note**: The existing group call must have a valid [chatInfo](../resources/chatInfo.md). Inviting up to 5 participants is supported.
 
 ##### Request
 
@@ -493,8 +493,8 @@ will be read and the rest of the participants will be ignored.
 
 
 > **Note:** The invite API supports only one participant when `replacesCallId` is provided. 
-> For more details on using `replacesCallId` to replace an existing peer-to-peer call, 
-> see [Invitation Participant Info](../resources/invitationparticipantinfo.md).
+> For  details about using `replacesCallId` to replace an existing peer-to-peer call, 
+> see [invitationParticipantInfo](../resources/invitationparticipantinfo.md).
 
 
 ``` http
