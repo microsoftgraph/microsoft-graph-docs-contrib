@@ -393,6 +393,7 @@ Here is a JSON representation of the resource
   "jobTitle": "string",
   "legalAgeGroupClassification": "string",
   "licenseAssignmentStates": [{"@odata.type": "microsoft.graph.licenseAssignmentState"}],
+  "lastPasswordChangeDateTime": "String (timestamp)",
   "mail": "string",
   "mailboxSettings": {"@odata.type": "microsoft.graph.mailboxSettings"},
   "mailNickname": "string",
