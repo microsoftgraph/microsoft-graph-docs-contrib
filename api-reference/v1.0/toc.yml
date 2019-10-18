@@ -3361,10 +3361,10 @@
       - name: Organizational contacts
         href: resources/orgcontact.md
         items:
-        - name: Get org contact
-          href: api/orgcontact-get.md
         - name: List org contacts
           href: api/orgcontact-list.md
+        - name: Get org contact
+          href: api/orgcontact-get.md
         - name: List direct reports
           href: api/orgcontact-list-directreports.md  
         - name: List memberOf
