@@ -26,12 +26,11 @@ GET /me/manager
 GET /users/{id | userPrincipalName}/manager
 ```
 ## Optional query parameters
-This method supports the [OData Query Parameters](https://developer.microsoft.com/graph/docs/concepts/query_parameters) to help customize the response.
+This method supports the [OData query parameters](/graph/query-parameters) to help customize the response.
 ## Request headers
 | Header       | Value|
 |:-----------|:------|
 | Authorization  | Bearer {token}. Required.  |
-| Content-Type   | application/json  |
 
 ## Request body
 Do not supply a request body for this method.
@@ -71,7 +70,7 @@ GET https://graph.microsoft.com/v1.0/users/{id|userPrincipalName}/manager
 
 ##### Response
 The following is an example of the response.
->**Note**: The response object shown here might be shortened for readability. All the properties will be returned from an actual call.
+>**Note**: The response object shown here might be shortened for readability. 
 <!-- {
   "blockType": "response",
   "truncated": false,
