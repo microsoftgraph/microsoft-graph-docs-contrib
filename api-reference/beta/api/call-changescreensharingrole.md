@@ -1,6 +1,6 @@
 ---
 title: "call: changeScreenSharingRole"
-description: "This API is used to allow applications to share screen content with the participants of a group call."
+description: "Allow applications to share screen content with the participants of a group call."
 author: "VinodRavichandran"
 localization_priority: Normal
 ms.prod: "cloud-communications"
@@ -11,7 +11,7 @@ doc_type: apiPageType
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-This API is used to allow applications to share screen content with the participants of a group call.
+Allow applications to share screen content with the participants of a group call.
 
 > **Note:** This is only supported for group calls that use App-Hosted Media.
 
@@ -36,6 +36,7 @@ POST /communications/calls/{id}/changeScreenSharingRole
 | Name          | Description               |
 |:--------------|:--------------------------|
 | Authorization | Bearer {token}. Required. |
+| Content-type  | application/json. Required.|
 
 ## Request body
 In the request body, provide a JSON object with the following parameters.
@@ -45,9 +46,7 @@ In the request body, provide a JSON object with the following parameters.
 |role|String|Possible values are: 'viewer', 'sharer'|
 
 ## Response
-Returns `202 Accepted` response code.
-
->**Note** Once this returns a successful response, all participants will receive a roster update
+If successful, this method returns a `202 Accepted` response code, and all participants will receive a roster update.
 
 ## Example
 
