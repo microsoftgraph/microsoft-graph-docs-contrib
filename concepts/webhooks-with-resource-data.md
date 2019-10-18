@@ -15,7 +15,14 @@ Requesting resource data in notifications requires you to implement the followin
 - [Validate](#validating-the-authenticity-of-notifications) the authenticity of notifications as having originated from Microsoft Graph.
 - [Provide](#decrypting-resource-data-from-change-notifications) a public encryption key and use a private key to decrypt resource data received through notifications.
 
-This article walks through the details, using the **chatMessage** resource as an example.
+## Resource data in notification payload
+
+In general, this type of change notifications include the following resource data in the payload:
+
+- ID and type of the resource instance, returned in the **resourceData** property.
+- All the property values of that resource instance, encrypted as specified in the subscription, returned in the **encryptedContent** property.
+- Or, depending on the resource, specific properties returned in the **resourceData** property. To get only specific properties, specify them as part of the **resource** URL in the subscription, using a `$select` parameter.  
+
 
 ## Supported resources
 
@@ -24,7 +31,9 @@ The following resources support change notifications that include resource data:
 - Chat messages (preview)
   - New or changed messages in a specific Teams channel: `/teams/{id}/channels/{id}/messages`
   - New or changed messages in a specific Teams chat: `/chats/{id}/messages`
-  
+
+This article walks through the details, using the **chatMessage** resource as an example.
+
 ## Creating a subscription
 
 To have resource data included in change notifications, you **must** specify the following properties, in addition to those that are usually specified when creating a [subscription](webhooks.md):
@@ -35,7 +44,9 @@ To have resource data included in change notifications, you **must** specify the
 - **encryptionCertificate** containing only the public key that Microsoft Graph will use to encrypt resource data. You will keep the corresponding private key which will be used to [decrypt the content](#decrypting-resource-data-from-change-notifications).
 - **encryptionCertificateId** your own identifier for the certificate. It will be included in notifications so you can identify which certificate to use for decryption.
 
-#### Subscription request example
+### Subscription request example
+
+The following example subscribes to resource changes - channel messages being created or updated in Microsoft Teams. It also subscribes to life cycle events that can affect the flow of change notifications; find more details on life cycle notifications in the next section.
 
 ```http
 POST https://graph.microsoft.com/beta/subscriptions
@@ -46,14 +57,14 @@ Content-Type: application/json
   "lifecycleNotificationUrl": "https://webhook.azurewebsites.net/api/lifecycleNotifications",
   "resource": "/teams/{id}/channels/{id}/messages",
   "includeResourceData": true,
-  "encryptionCertificate": "<base64encodedCertificate>",
-  "encryptionCertificateId": "<customId>",
+  "encryptionCertificate": "{base64encodedCertificate}",
+  "encryptionCertificateId": "{customId}",
   "expirationDateTime": "2019-09-19T11:00:00.0000000Z",
-  "clientState": "<secretClientState>"
+  "clientState": "{secretClientState}"
 }
 ```
 
-#### Subscription response
+### Subscription response
 ```http
 POST https://graph.microsoft.com/beta/subscriptions
 Content-Type: application/json
@@ -63,10 +74,10 @@ Content-Type: application/json
   "lifecycleNotificationUrl": "https://webhook.azurewebsites.net/api/lifecycleNotifications",
   "resource": "/teams/{id}/channels/{id}/messages",
   "includeResourceData": true,
-  "encryptionCertificateId": "<customId>",   
-  "encryptionCertificateThumbprint": "<thumbprintFromTheCertificate>",
+  "encryptionCertificateId": "{customId}",   
+  "encryptionCertificateThumbprint": "{thumbprintFromTheCertificate}",
   "expirationDateTime": "2019-09-19T11:00:00.0000000Z",
-  "clientState": "<secretClientState>"
+  "clientState": "{secretClientState}"
 }
 ```
 
@@ -83,12 +94,12 @@ These notifications will be delivered to the **lifecycleNotificationUrl**. You s
 
 ### Re-authorization challenges
 
-The `reauthorizationRequired` notification informs you that a subscription must be re-authorized to maintain the flow of data. 
+When the **lifecycleEvent** property in a notification indicates `reauthorizationRequired`, you must re-authorize the subscription to maintain the data flow.
 
-You can create a long-lived subscription (e.g. 3 days), and resource data notifications will start flowing to the **notificationUrl**. However, at any point in time, Microsoft Graph may require that you re-authorize the subscription to prove that you still have access to resource data in case the conditions of access have changed since the subscription was created. Some examples of changes that may impact your apps access to data are:
+When you create a long-lived subscription (for example, one that lasts for 3 days), resource data notifications flows to the location indicated in **notificationUrl**. However, at any point in time, Microsoft Graph may require that you re-authorize the subscription to prove that you still have access to resource data, in case the conditions of access have changed since the subscription was created. The following are examples of changes that affect your access to data:
 
-- a tenant admin may revoke your app's permissions to read the resource
-- the user providing the authentication token to your app (interactive scenarios) may be subject to dynamic policies based on their location, device state, risk assesment, etc. - see this article for more information on [Azure AD conditional access policies](https://docs.microsoft.com/en-us/azure/active-directory/conditional-access/overview). For example, if the user changes their physical location, they may no longer be allowed to access the data, and your app will not be able to re-authorize the subscription.
+- A tenant admin may revoke your app's permissions to read the resource
+- The user who provides the authentication token to your app (interactive scenarios) may be subject to dynamic policies based on factors including their location, device state, or risk assesment. For example, if the user changes their physical location, they may no longer be allowed to access the data, and your app will not be able to re-authorize the subscription. For more information on dynamic policies that control access, see [Azure AD conditional access policies](https://docs.microsoft.com/en-us/azure/active-directory/conditional-access/overview). 
 
 Given an active, non-expired subscription, the flow looks as follows:
 
