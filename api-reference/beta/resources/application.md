@@ -22,9 +22,9 @@ This resource supports using [delta query](/graph/delta-query-overview) to track
 
 | Method | Return Type | Description |
 |:---------------|:--------|:----------|
-|[Get application](../api/application-get.md) | application |Read properties and relationships of application object.|
-|[Create application](../api/application-post-applications.md) | application | Creates (registers) a new application.|
 |[List applications](../api/application-list.md) | application | Retrieve the list of applications in the organization. |
+|[Create application](../api/application-post-applications.md) | application | Creates (registers) a new application.|
+|[Get application](../api/application-get.md) | application |Read properties and relationships of application object.|
 |[Update application](../api/application-update.md) | application |Update application object. |
 |[Delete application](../api/application-delete.md) | None |Delete application object. |
 |[List deleted applications](../api/directory-deleteditems-list.md) | application | Retrieve a list of recently deleted applications. |
@@ -33,6 +33,9 @@ This resource supports using [delta query](/graph/delta-query-overview) to track
 |[Restore deleted application](../api/directory-deleteditems-restore.md) | application | Restore a recently deleted application. |
 |[Add password](../api/application-addpassword.md)|[passwordCredential](passwordcredential.md)|Add a strong password to an application.|
 |[Remove password](../api/application-removepassword.md)|[passwordCredential](passwordcredential.md)|Remove a password from an application.|
+| [Create extension](../api/application-post-extensionproperty.md) | [extensionProperty](extensionProperty.md) | Create an extension property on an application object. |
+| [List extensions](../api/application-list-extensionproperty.md) | [extensionProperty](extensionProperty.md) collection | List extension properties on an application object. |
+| [Delete extension](../api/application-delete-extensionproperty.md) | None | Delete an extension property from an application object. |
 |[List assigned policies](../api/policy-list-assigned.md)| [policy](policy.md) collection| Get all policies assigned to this object.|
 |[Create owner](../api/application-post-owners.md) |[directoryObject](directoryobject.md)| Create a new owner by posting to the owners collection.|
 |[List owners](../api/application-list-owners.md) |[directoryObject](directoryobject.md) collection| Get an owner object collection.|
@@ -44,6 +47,7 @@ This resource supports using [delta query](/graph/delta-query-overview) to track
 
 | Property | Type | Description |
 |:---------------|:--------|:----------|
+| addIns | [addIn](addin.md) | Defines custom behavior that a consuming service can use to call an app in specific contexts. For example, applications that can render file streams [may set the addIns property](https://docs.microsoft.com/en-us/onedrive/developer/file-handlers/?view=odsp-graph-online) for its "FileHandler" functionality. This will let services like Office 365 call the application in the context of a document the user is working on. |
 | api | [apiApplication](apiapplication.md) | Specifies settings for an application that implements a web API. |
 | appId | String | The unique identifier for the application that is assigned to an application by Azure AD. Not nullable. Read-only. |
 | appRoles | [appRole](approle.md) collection | The collection of application roles that an application may declare. These roles can be assigned to users, groups, or service principals. Not nullable. |
@@ -75,6 +79,7 @@ This resource supports using [delta query](/graph/delta-query-overview) to track
 |calls           |[call](call.md) collection                  |Read-only. Nullable.|
 |connectorGroup|[connectorGroup](connectorgroup.md)| The connectorGroup the application is using with Azure AD Application Proxy. Nullable.|
 |createdOnBehalfOf|[directoryObject](directoryobject.md)| Read-only.|
+|extensionProperties|[extensionProperty](extensionproperty.md) collection| Read-only. Nullable.|
 |onlineMeetings  |[onlineMeeting](onlinemeeting.md) collection|Read-only. Nullable.|
 |owners|[directoryObject](directoryobject.md) collection|Directory objects that are owners of the application. The owners are a set of non-admin users who are allowed to modify this object. Requires version 2013-11-08 or newer. Read-only. Nullable.|
 |policy|[policy](policy.md) collection|The policies assigned to this application.|
@@ -95,6 +100,7 @@ The following is a JSON representation of the resource.
 
 ```json
 {
+  "addIns": {"@odata.type": "microsoft.graph.addIn"},
   "api": {"@odata.type": "microsoft.graph.apiApplication"},
   "appId": "String",
   "appRoles": [{"@odata.type": "microsoft.graph.appRole"}],
@@ -116,6 +122,7 @@ The following is a JSON representation of the resource.
   "requiredResourceAccess": [{"@odata.type": "microsoft.graph.requiredResourceAccess"}],
   "signInAudience": "String",
   "tags": ["String"],
+  "tokenEncryptionKeyId": "String",
   "web": {"@odata.type": "microsoft.graph.webApplication"}
 }
 ```

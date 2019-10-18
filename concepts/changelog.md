@@ -13,6 +13,19 @@ For details about known issues with Microsoft Graph APIs, see [Known issues](kno
 
 ## October 2019
 
+### Applications
+
+| **Change type** | **Version**   | **Description**                          |
+| :-------------- | :------------ | :--------------------------------------- |
+| Addition | Beta | Added [removePassword](../api-reference/beta/api/application-removepassword.md) method. |
+| Addition | Beta | Added **addIns** property. |
+
+### ServicePrincipals
+
+| **Change type** | **Version**   | **Description**                          |
+| :-------------- | :------------ | :--------------------------------------- |
+| Addition | Beta | Added [addPassword](../api-reference/beta/api/serviceprincipal-addpassword.md) and [removePassword](../api-reference/beta/api/serviceprincipal-removepassword.md) methods. |
+
 ### Teamwork (Microsoft Teams)
 
 | **Change type** | **Version**   | **Description**                          |

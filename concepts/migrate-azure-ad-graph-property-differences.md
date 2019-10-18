@@ -60,7 +60,6 @@ Because user and group are so frequently used, these resources appear first.  Ot
 |Azure AD Graph <br>(v1.6) property |Microsoft Graph<br> property|Comments|
 |---|---|---|
 | **acceptMappedClaims**  | beta &nbsp;-&nbsp;**api/acceptMappedClaims** <br> v1.0 &nbsp;-&nbsp; _Not yet available_ | acceptMappedClaims is now part of the new api resource. |
-| **addIns** | beta  &nbsp;-&nbsp; _Not yet available_ <br> v1.0  &nbsp;-&nbsp; _Not yet available_  | |
 | **applicationTemplateId** | beta  &nbsp;-&nbsp; _Not yet available_ <br> v1.0  &nbsp;-&nbsp; _Not yet available_ | |
 | **availableToOtherTenants** | beta &nbsp;-&nbsp; **signInAudience** <br> v1.0 &nbsp;-&nbsp; _Not yet available_ | |
 | **errorUrl**| beta &nbsp;-&nbsp;_not available_ <br> v1.0 &nbsp;-&nbsp;  _not available_ | This property is deprecated.|
@@ -69,9 +68,9 @@ Because user and group are so frequently used, these resources appear first.  Ot
 | **knownClientApplications**| beta&nbsp;-&nbsp;**api/knownClientApplications** <br> v1.0 &nbsp;-&nbsp; _Not yet available_ | knownClientApplications is now part of the new api resource. |
 | **logoutUrl**| beta &nbsp;-&nbsp;**web/logoutUrl** <br> v1.0 &nbsp;-&nbsp; _Not yet available_ | logoutUrl is now part of the web resource. |
 | **logoUrl**| beta &nbsp;-&nbsp;**info/logoUrl** <br> v1.0 &nbsp;-&nbsp; _Not yet available_ | logoUrl is now part of the new info resource. |
-| **mainLogo**| beta &nbsp;-&nbsp;_not available_ <br> v1.0 &nbsp;-&nbsp;  _not available_ | This property is deprecated.|
+| **mainLogo**| beta &nbsp;-&nbsp;**logo** <br> v1.0 &nbsp;-&nbsp;  _not available_ | |
 | **oauth2AllowIdTokenImplicitFlow** | beta&nbsp;-&nbsp;**web/implicitGrantSettings/enableIdTokenIssuance**<br>v1.0 &nbsp;-&nbsp; _Not yet available_ | Renamed, and now part of the new implicitGrantSettings resource. |
-| **oauth2AllowImplicitFlow**| beta&nbsp;-&nbsp;**web/oauth2AllowImplicitFlow**<br>v1.0 &nbsp;-&nbsp; _Not yet available_ | oauth2AllowImplicitFlow is now part of the new web resource. |
+| **oauth2AllowImplicitFlow**| beta&nbsp;-&nbsp;**web/implicitGrantSettings/enableAccessTokenIssuance**<br>v1.0 &nbsp;-&nbsp; _Not yet available_ | Renamed, and now part of the new implicitGrantSettings resource. |
 | **oauth2AllowUrlPathMatching**| beta &nbsp;-&nbsp;_not available_ <br> v1.0 &nbsp;-&nbsp;  _not available_ | This property is deprecated.|
 | **oauth2Permissions**| beta&nbsp;-&nbsp;**api/oauth2PermissionScopes**<br> v1.0 &nbsp;-&nbsp; _Not yet available_ | Renamed and now part of the new api resource. |
 | **oauth2RequirePostResponse**| beta &nbsp;-&nbsp;_not available_ <br> v1.0 &nbsp;-&nbsp;  _not available_ | This property is deprecated.|

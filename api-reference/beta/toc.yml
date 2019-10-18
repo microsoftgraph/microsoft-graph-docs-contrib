@@ -8090,6 +8090,12 @@
           href: api/application-addpassword.md
         - name: Remove password
           href: api/application-removepassword.md
+        - name: Create extension
+          href: api/application-post-extensionproperty.md
+        - name: List extensions
+          href: api/application-list-extensionproperty.md
+        - name: Delete extension
+          href: api/application-delete-extensionproperty.md
         - name: List owners
           href: api/application-list-owners.md
         - name: Assign owner
