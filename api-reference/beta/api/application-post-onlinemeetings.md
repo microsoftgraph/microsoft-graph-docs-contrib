@@ -1,6 +1,6 @@
 ---
 title: "Create online meeting"
-description: "Creates an online meeting on behalf of a user specified in the request body."
+description: "Create an online meeting on behalf of a user specified in the request body."
 author: "VinodRavichandran"
 localization_priority: Priority
 ms.prod: "cloud-communications"
@@ -11,7 +11,7 @@ doc_type: apiPageType
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Creates an online meeting on behalf of a user specified in the request body.
+Create an online meeting on behalf of a user specified in the request body.
 
 > **Note**: The meeting does not show up on the user's calendar.
 
@@ -37,12 +37,13 @@ POST /me/onlineMeetings
 | Name          | Description               |
 |:--------------|:--------------------------|
 | Authorization | Bearer {token}. Required. |
+| Content-type  | application/json. Required. |
 
 ## Request body
 In the request body, supply a JSON representation of an [onlineMeeting](../resources/onlinemeeting.md) object.
 
 ## Response
-If successful, this method returns `201 Created` response code and an [onlineMeeting](../resources/onlinemeeting.md) object in the response body.
+If successful, this method returns a `201 Created` response code and an [onlineMeeting](../resources/onlinemeeting.md) object in the response body.
 
 ## Example
 
@@ -50,7 +51,7 @@ If successful, this method returns `201 Created` response code and an [onlineMee
 
 #### Request
 
->**Note:** Online meeting creation using application token will be deprecated, please use /me path with user token to create online meetings going forward.
+>**Note:** Online meeting creation using the application token will be deprecated. Use the /me path with a user token to create online meetings going forward.
 
 # [HTTP](#tab/http)
 <!-- {
@@ -167,7 +168,7 @@ Authorization: Bearer eyJ0eXAiOi
 ```
 
 #### Response
->**Note:** The response object shown here might be shortened for readability. All the properties will be returned from an actual call.
+>**Note:** The response object shown here might be shortened for readability. 
 
 <!-- {
   "blockType": "response",
@@ -223,7 +224,7 @@ Content-Length: 1574
 ### Example 3: Create an online meeting in a Microsoft Teams Channel with a user token
 
 #### Request
->**Note:** The Object ID of the user token passed, should be an member of the channel represented by threadid in the payload.
+>**Note:** The Object ID of the user token passed should be a member of the channel represented by threadid in the payload.
 
 ```http
 POST https://graph.microsoft.com/beta/me/onlineMeetings
@@ -241,7 +242,7 @@ Authorization: Bearer eyJ0eXAiOi
 ```
 #### Response
 
->**Note:** The response object shown here might be shortened for readability. All the properties will be returned from an actual call.
+>**Note:** The response object shown here might be shortened for readability.
 
 <!-- {
   "blockType": "example",
