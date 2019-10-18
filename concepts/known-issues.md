@@ -165,11 +165,9 @@ Currently, there is partial support for a calendar based on an Internet Calendar
 
 Currently, the **onlineMeetingUrl** property of a Skype meeting [event](/graph/api/resources/event?view=graph-rest-1.0) would indicate the online meeting URL. However, that property for a Microsoft Teams meeting event is set to null.
 
-## Communications
+## Cloud communications (preview)
 
-> **Note** Communications are currently in preview and are available only in the Microsoft Graph beta endpoint.
-
-- Microsoft Teams Client does not show "View Meeting details" menu for channel meetings created via online meeting's API.
+The Microsoft Teams client does not show the **View Meeting details**  menu for channel meetings created via the cloud communications API.
 
 ## Contacts
 
