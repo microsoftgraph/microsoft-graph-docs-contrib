@@ -1,6 +1,6 @@
 ---
 title: "Get accessPackage"
-description: "Retrieve the properties and relationships of accesspackage object."
+description: "Retrieve the properties and relationships of an accessPackage object."
 localization_priority: Normal
 author: "markwahl-msft"
 ms.prod: "microsoft-identity-platform"

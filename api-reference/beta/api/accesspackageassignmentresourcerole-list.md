@@ -1,6 +1,6 @@
 ---
 title: "List accessPackageAssignmentResourceRoles"
-description: "Retrieve a list of accesspackageassignmentresourcerole objects."
+description: "Retrieve a list of accessPackageAssignmentResourceRrole objects."
 localization_priority: Normal
 author: "markwahl-msft"
 ms.prod: "microsoft-identity-platform"
@@ -11,7 +11,7 @@ doc_type: "apiPageType"
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Retrieve a list of [accessPackageAssignmentResourceRole](../resources/accesspackageassignmentresourcerole.md) objects.
+Retrieve a list of [accessPackageAssignmentResourceRole](../resources/accesspackageassignmentresourcerole.md) objects.  The resulting list includes all the resource roles of all assignments which the caller has access to read, across all catalogs and access packages.
 
 ## Permissions
 

@@ -11,7 +11,7 @@ doc_type: "apiPageType"
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Use this API to create a new [accessPackageAssignmentRequest](../resources/accesspackageassignmentrequest.md) object.
+In [Azure AD entitlement management](../resources/entitlementmanagement-root.md), use this API to create a new [accessPackageAssignmentRequest](../resources/accesspackageassignmentrequest.md) object.
 
 ## Permissions
 
@@ -43,7 +43,7 @@ In the request body, supply a JSON representation of [accessPackageAssignmentReq
 
 ## Response
 
-If successful, this method returns `201, Created` response code and a new [accessPackageAssignmentRequest](../resources/accesspackageassignmentrequest.md) object in the response body.
+If successful, this method returns a 200-series response code and a new [accessPackageAssignmentRequest](../resources/accesspackageassignmentrequest.md) object in the response body.
 
 ## Examples
 

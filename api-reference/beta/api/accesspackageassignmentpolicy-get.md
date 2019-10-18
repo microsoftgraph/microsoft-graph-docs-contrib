@@ -1,6 +1,6 @@
 ---
 title: "Get accessPackageAssignmentPolicy"
-description: "Retrieve the properties and relationships of accesspackageassignmentpolicy object."
+description: "Retrieve the properties and relationships of an accessPackageAassignmentPolicy object."
 localization_priority: Normal
 author: "markwahl-msft"
 ms.prod: "microsoft-identity-platform"

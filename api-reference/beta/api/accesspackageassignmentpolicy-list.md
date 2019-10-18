@@ -1,6 +1,6 @@
 ---
 title: "List accessPackageAssignmentPolicies"
-description: "Retrieve a list of accesspackageassignmentpolicy objects."
+description: "Retrieve a list of accessPackagAassignmentPolicy objects."
 localization_priority: Normal
 author: "markwahl-msft"
 ms.prod: "microsoft-identity-platform"
@@ -11,7 +11,7 @@ doc_type: "apiPageType"
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-In [Azure AD entitlement management](../resources/entitlementmanagement-root.md), retrieve a list of [accessPackageAssignmentPolicy](../resources/accesspackageassignmentpolicy.md) objects.
+In [Azure AD entitlement management](../resources/entitlementmanagement-root.md), retrieve a list of [accessPackageAssignmentPolicy](../resources/accesspackageassignmentpolicy.md) objects.   The resulting list includes all the assignment policies which the caller has access to read, across all catalogs and access packages.
 
 ## Permissions
 

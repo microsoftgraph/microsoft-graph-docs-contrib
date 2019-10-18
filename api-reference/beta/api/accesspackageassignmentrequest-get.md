@@ -1,6 +1,6 @@
 ---
 title: "Get accessPackageAssignmentRequest"
-description: "Retrieve the properties and relationships of accesspackageassignmentrequest object."
+description: "Retrieve the properties and relationships of an accessPackageAssignmentRequest object."
 localization_priority: Normal
 author: "markwahl-msft"
 ms.prod: "microsoft-identity-platform"
@@ -11,7 +11,7 @@ doc_type: "apiPageType"
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Retrieve the properties and relationships of an  [accessPackageAssignmentRequest](../resources/accesspackageassignmentrequest.md) object.
+In [Azure AD entitlement management](../resources/entitlementmanagement-root.md), retrieve the properties and relationships of an  [accessPackageAssignmentRequest](../resources/accesspackageassignmentrequest.md) object.
 
 ## Permissions
 

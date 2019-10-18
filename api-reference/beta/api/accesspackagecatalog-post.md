@@ -43,7 +43,7 @@ In the request body, supply a JSON representation of [accessPackageCatalog](../r
 
 ## Response
 
-If successful, this method returns `201, Created` response code and a new [accessPackageCatalog](../resources/accesspackagecatalog.md) object in the response body.
+If successful, this method returns a 200-series response code and a new [accessPackageCatalog](../resources/accesspackagecatalog.md) object in the response body.
 
 ## Examples
 

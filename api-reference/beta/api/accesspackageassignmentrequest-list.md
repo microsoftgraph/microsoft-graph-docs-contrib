@@ -1,6 +1,6 @@
 ---
 title: "List accessPackageAssignmentRequests"
-description: "Retrieve a list of accesspackageassignmentrequest objects."
+description: "Retrieve a list of accessPackageAssignmentRequest objects."
 localization_priority: Normal
 author: "markwahl-msft"
 ms.prod: "microsoft-identity-platform"
@@ -11,7 +11,7 @@ doc_type: "apiPageType"
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Retrieve a list of [accessPackageAssignmentRequest](../resources/accesspackageassignmentrequest.md) objects.
+In [Azure AD entitlement management](../resources/entitlementmanagement-root.md), retrieve a list of [accessPackageAssignmentRequest](../resources/accesspackageassignmentrequest.md) objects.  The resulting list includes all the assignment requests, current and well as expired, which the caller has access to read, across all catalogs and access packages.
 
 ## Permissions
 

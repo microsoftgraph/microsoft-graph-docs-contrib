@@ -11,7 +11,7 @@ doc_type: "apiPageType"
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Retrieve an access package with a list of [accessPackageResourceRoleScope](../resources/accesspackageresourcerolescope.md) objects.  Each object links to a [accessPackageResourceRole](../accesspackageresourcerole.md) and a [accessPackageResourceScope](../accesspackageresourcescope.md).
+Retrieve an access package with a list of [accessPackageResourceRoleScope](../resources/accesspackageresourcerolescope.md) objects.  Each object links to a [accessPackageResourceRole](../resources/accesspackageresourcerole.md) and a [accessPackageResourceScope](../resources/accesspackageresourcescope.md).
 
 ## Permissions
 

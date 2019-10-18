@@ -8119,8 +8119,6 @@
             href: api/accesspackage-get.md
           - name: List accessPackages
             href: api/accesspackage-list.md
-          - name: Update accessPackage
-            href: api/accesspackage-update.md
         - name: Access package assignment
           href: resources/accesspackageassignment.md
           items:
@@ -8161,8 +8159,6 @@
             href: api/accesspackagecatalog-list.md
           - name: List resources
             href: api/accesspackagecatalog-list-accesspackageresources.md
-          - name: Update accessPackageCatalog
-            href: api/accesspackagecatalog-update.md
       - name: Feature rollout policy
         href: resources/featurerolloutpolicy.md
         items:

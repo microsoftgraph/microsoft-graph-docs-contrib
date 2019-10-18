@@ -36,7 +36,6 @@ The following table lists the methods that you can use to interact with entitlem
 | [List accessPackages](../api/accesspackage-list.md) | [accessPackage](accesspackage.md) collection | Retrieve a list of accesspackage objects. |
 | [Create accessPackage](../api/accesspackage-post.md) | [accessPackage](accesspackage.md) | Create a new accessPackage object. |
 | [Delete accessPackage](../api/accesspackage-delete.md) | | Delete accessPackage. |
-| [Update accessPackage](../api/accesspackage-update.md) | | Update the properties of an accessPackage. |
 | [Get accessPackageAssignmentPolicy](../api/accesspackageassignmentpolicy-get.md) | [accessPackageAssignmentPolicy](accesspackageassignmentpolicy.md) | Read properties and relationships of an accessPackageAssignmentPolicy object. |
 | [List accessPackageAssignmentPolicies](../api/accesspackageassignmentpolicy-list.md) | [accessPackageAssignmentPolicy](accesspackageassignmentpolicy.md) collection | Retrieve a list of accessPackageAssignmentPolicy objects. |
 | [Create accessPackageAssignmentPolicy](../api/accesspackageassignmentpolicy-post.md) | [accessPackageAssignmentPolicy](accesspackageassignmentpolicy.md) | Create a new accessPackageAssignmentPolicy object. |
@@ -50,7 +49,6 @@ The following table lists the methods that you can use to interact with entitlem
 | [List accessPackageCatalogs](../api/accesspackagecatalog-list.md) | [accessPackageCatalog](accesspackagecatalog.md) collection | Retrieve a list of accesspackagecatalog objects. |
 | [Create accessPackageCatalog](../api/accesspackagecatalog-post.md) | [accessPackageCatalog](accesspackagecatalog.md) | Create a new accessPackageCatalog object. |
 | [Delete accessPackageCatalog](../api/accesspackagecatalog-delete.md) | | Delete accessPackageCatalog. |
-| [Update accessPackageCatalog](../api/accesspackagecatalog-update.md) | | Update the properties of an accessPackageCatalog. |
 | [List accessPackageCatalog resources](../api/accesspackagecatalog-list-accesspackageresources.md) | [accessPackageResource](accesspackageresource.md) collection | Retrieve a list of accessPackageResource objects. |
 
 ## See also

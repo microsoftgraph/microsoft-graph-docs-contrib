@@ -33,7 +33,7 @@ In [Azure AD Entitlement Management](entitlementmanagement-root.md), an access p
 |description|String|The description of the policy.|
 |displayName|String|The display name of the policy.|
 |durationInDays|Int32|The number of days in which assignments from this policy last until they are expired.|
-|expirationDateTime|DateTimeOffset|The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 would look like this: `'2014-01-01T00:00:00Z'`|
+|expirationDateTime|DateTimeOffset|The expiration date for assignments created in this policy. The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 would look like this: `'2014-01-01T00:00:00Z'`|
 |id|String| Read-only.|
 |isEnabled|Boolean|Can this policy be used for new requests.|
 |isRequestorJustificationRequired|Boolean|Is the requestor required to provide a justification.|
