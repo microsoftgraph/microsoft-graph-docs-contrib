@@ -36,13 +36,13 @@ This article walks through the details, using the **chatMessage** resource as an
 
 ## Creating a subscription
 
-To have resource data included in change notifications, you **must** specify the following properties, in addition to those that are usually specified when creating a [subscription](webhooks.md):
+To have resource data included in change notifications, you **must** specify the following properties, in addition to those that are usually specified when [creating a subscription](webhooks.md#creating-a-subscription):
 
 - **includeResourceData** set to `true` to explicitly request resource data.
-- An optional `$select` operator in the resource path to select the properties to be included.
-- **lifecycleNotificationUrl** - an endpoint to which where [lifecycle notifications](#subscription-lifecycle-notifications) will be delivered. This can be the same or different as **notificationUrl**.
-- **encryptionCertificate** containing only the public key that Microsoft Graph will use to encrypt resource data. You will keep the corresponding private key which will be used to [decrypt the content](#decrypting-resource-data-from-change-notifications).
-- **encryptionCertificateId** your own identifier for the certificate. It will be included in notifications so you can identify which certificate to use for decryption.
+- In the URL specified by **resource**, an optional `$select` parameter, to select the properties to be included.
+- **lifecycleNotificationUrl** which is an endpoint where [lifecycle notifications](#subscription-lifecycle-notifications) are delivered. This can be the same or different as **notificationUrl**.
+- **encryptionCertificate** which contains only the public key that Microsoft Graph uses to encrypt resource data. Keep the corresponding private key to [decrypt the content](#decrypting-resource-data-from-change-notifications).
+- **encryptionCertificateId** which is your own identifier for the certificate. Use this ID to match in each notification, which certificate to use for decryption.
 
 ### Subscription request example
 
@@ -82,15 +82,14 @@ Content-Type: application/json
 ```
 
 > **Note:** 
-> - Use the same hostname for both notifications URLs.
-> - You need to validate both notification endpoints as described in [here](webhooks.md#managing-subscriptions). If you choose to use the same URL for both endpoints you will receive and respond to two validation requests.
-> - You cannot update (`PATCH`) the existing subscriptions to add the **lifecycleNotificationUrl** property. You should remove such existing subscriptions, and create new subscriptions and specify the **lifecycleNotificationUrl** property.
+> - Use the same host name for both notifications URLs.
+> - You need to validate both notification endpoints as described [here](webhooks.md#notification-endpoint-validation). If you choose to use the same URL for both endpoints you will receive and respond to two validation requests.
+> - You cannot update (`PATCH`) an existing subscription to add the **lifecycleNotificationUrl** property. You should remove the existing subscription, and create a new subscription to include the **lifecycleNotificationUrl** property.
 
 ## Subscription lifecycle notifications
 
-Subscription lifecycle notifications inform you about actions you need to take in order to maintain an uninterrupted flow of notifications. Unlike resource change notifications, which inform about an instance of a resource changing, these notifications tell you about the subscription itself, and its current state in the lifecycle.
-
-These notifications will be delivered to the **lifecycleNotificationUrl**. You should identify the type of notification, and take the corresponding action to ensure that the change notifications continue to flow.
+Certain events can interfere with normal notification flow in an existing subscription. Subscription _lifecycle notifications_ inform you actions to take in order to maintain an uninterrupted flow. Unlike a resource change notification which informs a change to a resource instance, a lifecycle notification is about the subscription itself, and its current state in the lifecycle. 
+Lifecycle notifications are delivered to the **lifecycleNotificationUrl**. 
 
 ### Re-authorization challenges
 
