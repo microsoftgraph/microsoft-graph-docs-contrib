@@ -61,7 +61,7 @@ The following is an example of the request.
 }-->
 
 ```http
-GET https://graph.microsoft.com/Beta/me/profile/languages
+GET https://graph.microsoft.com/Beta/me/profile/languages/{id}
 ```
 
 ### Response

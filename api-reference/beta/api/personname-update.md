@@ -11,7 +11,7 @@ doc_type: "apiPageType"
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Update the properties of personname object.
+Update the properties of a personname object in a users profile.
 
 ## Permissions
 
@@ -19,9 +19,9 @@ One of the following permissions is required to call this API. To learn more, in
 
 | Permission type                        | Permissions (from least to most privileged) |
 |:---------------------------------------|:--------------------------------------------|
-| Delegated (work or school account)     | Not supported. |
-| Delegated (personal Microsoft account) | Not supported. |
-| Application                            | Not supported. |
+| Delegated (work or school account)     | User.ReadWrite, User.ReadWrite.All |
+| Delegated (personal Microsoft account) | User.ReadWrite, User.ReadWrite.All |
+| Application                            | User.ReadWrite.All |
 
 ## HTTP request
 
@@ -33,9 +33,10 @@ JSON2MD ERROR: COULD NOT DETERMINE API PATH
 
 ## Request headers
 
-| Name       | Description|
-|:-----------|:-----------|
-| Authorization | Bearer {token} |
+| Name      |Description|
+|:----------|:----------|
+| Authorization  | Bearer {token}. Required.|
+| Content-Type   | application/json |
 
 ## Request body
 
