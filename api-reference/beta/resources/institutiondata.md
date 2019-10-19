@@ -11,16 +11,16 @@ doc_type: "resourcePageType"
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-PROVIDE DESCRIPTION HERE
+The 'institutionData' resource type provides detailed information about the institute a user undertook an undergraduate, graduate, postgraduate degree or other program at.
 
 ## Properties
 
-| Property     | Type        | Description |
-|:-------------|:------------|:------------|
-|description|String||
-|displayName|String||
-|location|[physicalAddress](physicaladdress.md)||
-|webUrl|String||
+| Property     | Type                                 | Description                                              |
+|:-------------|:-------------------------------------|:---------------------------------------------------------|
+|description   |String                                |Short description of the institution the user studied at. |
+|displayName   |String                                |Name of the institution the user studied at.              |
+|location      |[physicalAddress](physicaladdress.md) |Address or location of the institute.                     |
+|webUrl        |String                                |Link to the institution or department homepage.           |
 
 ## JSON representation
 

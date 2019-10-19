@@ -11,21 +11,21 @@ doc_type: "resourcePageType"
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-PROVIDE DESCRIPTION HERE
+The educationalActivityDetail resource type provides additional detail about an undergraduate, graduate, postgraduate degree or other educational activity that a user has undertaken.
 
 ## Properties
 
-| Property     | Type        | Description |
-|:-------------|:------------|:------------|
-|abbreviation|String||
-|activities|String||
-|awards|String||
-|description|String||
-|displayName|String||
-|fieldsOfStudy|String||
-|grade|String||
-|notes|String||
-|webUrl|String||
+| Property     | Type        | Description                                                   |
+|:-------------|:------------|:--------------------------------------------------------------|
+|abbreviation  |String       |Shortened name of the degree or program (example: PhD, MBA)    |
+|activities    |String       |Extracurricular activities undertaken alongside the program.   |
+|awards        |String       |Any awards or honors associated with the program.              |
+|description   |String       |Short description of the program provided by the user.         |
+|displayName   |String       |Long-form name of the program that the user has provided.      |
+|fieldsOfStudy |String       |Majors and minors associated with the program. (if applicable) |
+|grade         |String       |The final grade, class, GPA or score.                          |
+|notes         |String       |Additional notes the user has provided.                        |
+|webUrl        |String       |Link to the degree or program page.                            |
 
 ## JSON representation
 

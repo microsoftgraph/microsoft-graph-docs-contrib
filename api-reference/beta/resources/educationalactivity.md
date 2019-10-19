@@ -11,25 +11,27 @@ doc_type: "resourcePageType"
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-PROVIDE DESCRIPTION HERE
+The 'educationalActivity' resource type represents data that a user has supplied related to undergraduate, graduate, postgraduate or other educational activities.
+
+Inherits metadata properties from [itemFacet](itemfacet.md).
 
 ## Methods
 
-| Method       | Return Type | Description |
-|:-------------|:------------|:------------|
+| Method                                                       | Return Type                                   | Description                                                      |
+|:-------------------------------------------------------------|:----------------------------------------------|:-----------------------------------------------------------------|
 | [Get educationalActivity](../api/educationalactivity-get.md) | [educationalActivity](educationalactivity.md) | Read properties and relationships of educationalActivity object. |
-| [Update](../api/educationalactivity-update.md) | [educationalActivity](educationalactivity.md) | Update educationalActivity object. |
-| [Delete](../api/educationalactivity-delete.md) | None | Delete educationalActivity object. |
+| [Update](../api/educationalactivity-update.md)               | [educationalActivity](educationalactivity.md) | Update educationalActivity object.                               |
+| [Delete](../api/educationalactivity-delete.md)               | None                                          | Delete educationalActivity object.                               |
 
 ## Properties
 
-| Property     | Type        | Description |
-|:-------------|:------------|:------------|
-|completionMonthYear|Date||
-|endMonthYear|Date||
-|institution|[institutionData](institutiondata.md)||
-|program|[educationalActivityDetail](educationalactivitydetail.md)||
-|startMonthYear|Date||
+| Property           | Type                                                      | Description                                                                |
+|:-------------------|:----------------------------------------------------------|:---------------------------------------------------------------------------|
+|completionMonthYear |Date                                                       |The month and year the user graduated or completed the activity.            |
+|endMonthYear        |Date                                                       |The month and year the user completed the educational activity referenced.  |
+|institution         |[institutionData](institutiondata.md)                      |Contains details of the institution studied at.                             |
+|program             |[educationalActivityDetail](educationalactivitydetail.md)  |Contains extended information about the program or course.                  |
+|startMonthYear      |Date                                                       |The month and year the user commenced the activity referenced.              |
 
 ## Relationships
 
