@@ -11,23 +11,23 @@ doc_type: "resourcePageType"
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-PROVIDE DESCRIPTION HERE
+The itemEmail resource type provides detailed information about email addresses associated with the user.
 
 ## Methods
 
-| Method       | Return Type | Description |
-|:-------------|:------------|:------------|
+| Method                                   | Return Type               | Description                                            |
+|:-----------------------------------------|:--------------------------|:-------------------------------------------------------|
 | [Get itemEmail](../api/itememail-get.md) | [itemEmail](itememail.md) | Read properties and relationships of itemEmail object. |
-| [Update](../api/itememail-update.md) | [itemEmail](itememail.md) | Update itemEmail object. |
-| [Delete](../api/itememail-delete.md) | None | Delete itemEmail object. |
+| [Update](../api/itememail-update.md)     | [itemEmail](itememail.md) | Update itemEmail object.                               |
+| [Delete](../api/itememail-delete.md)     | None                      | Delete itemEmail object.                               |
 
 ## Properties
 
-| Property     | Type        | Description |
-|:-------------|:------------|:------------|
-|address|String||
-|displayName|String||
-|type|string| Possible values are: `unknown`, `work`, `personal`, `main`, `other`.|
+| Property     | Type        | Description                                                               |
+|:-------------|:------------|:--------------------------------------------------------------------------|
+|address       |String       | The email address itself.                                                 |
+|displayName   |String       | The name or label a user has associated with a particular email address.  |
+|type          |string       | Possible values are: `unknown`, `work`, `personal`, `main`, `other`.      |
 
 ## Relationships
 

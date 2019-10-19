@@ -11,7 +11,7 @@ doc_type: "resourcePageType"
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-PROVIDE DESCRIPTION HERE
+The languageProficiency resource type provides detailed information about the languages the user has associated with themselves in various services or experiences.
 
 ## Methods
 

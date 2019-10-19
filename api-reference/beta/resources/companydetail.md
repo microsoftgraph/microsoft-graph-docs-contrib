@@ -11,18 +11,18 @@ doc_type: "resourcePageType"
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-PROVIDE DESCRIPTION HERE
+The companyDetail resource type provides a mechanism for a user to store information about companies related to entities within their profiles and contacts.
 
 ## Properties
 
-| Property     | Type        | Description |
-|:-------------|:------------|:------------|
-|address|[physicalAddress](physicaladdress.md)||
-|department|String||
-|displayName|String||
-|officeLocation|String||
-|pronunciation|String||
-|webUrl|String||
+| Property       | Type                                | Description                                 |
+|:---------------|:------------------------------------|:--------------------------------------------|
+|address         |[physicalAddress](physicaladdress.md)| Address of the company.                     |
+|department      |String                               | Department Name within a company.           |
+|displayName     |String                               | Company name.                               |
+|officeLocation  |String                               | Office Location of the person referred to.  |
+|pronunciation   |String                               | Pronunciation guide for the company name.   |
+|webUrl          |String                               | Link to the company home page.              |
 
 ## JSON representation
 

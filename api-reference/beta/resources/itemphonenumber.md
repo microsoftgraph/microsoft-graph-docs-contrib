@@ -11,23 +11,23 @@ doc_type: "resourcePageType"
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-PROVIDE DESCRIPTION HERE
+The itemPhone resource type provides detailed information about phone numbers the user has associated in various services.
 
 ## Methods
 
-| Method       | Return Type | Description |
-|:-------------|:------------|:------------|
+| Method                                               | Return Type                           | Description                                                  |
+|:-----------------------------------------------------|:--------------------------------------|:-------------------------------------------------------------|
 | [Get itemPhoneNumber](../api/itemphonenumber-get.md) | [itemPhoneNumber](itemphonenumber.md) | Read properties and relationships of itemPhoneNumber object. |
-| [Update](../api/itemphonenumber-update.md) | [itemPhoneNumber](itemphonenumber.md) | Update itemPhoneNumber object. |
-| [Delete](../api/itemphonenumber-delete.md) | None | Delete itemPhoneNumber object. |
+| [Update](../api/itemphonenumber-update.md)           | [itemPhoneNumber](itemphonenumber.md) | Update itemPhoneNumber object.                               |
+| [Delete](../api/itemphonenumber-delete.md)           | None                                  | Delete itemPhoneNumber object.                               |
 
 ## Properties
 
-| Property     | Type        | Description |
-|:-------------|:------------|:------------|
-|displayName|String||
-|number|String||
-|type|string| Possible values are: `home`, `business`, `mobile`, `other`, `assistant`, `homeFax`, `businessFax`, `otherFax`, `pager`, `radio`.|
+| Property     | Type        | Description                                                                                                                     |
+|:-------------|:------------|:--------------------------------------------------------------------------------------------------------------------------------|
+|displayName   |String       | Contains a friendly name for the phone number.                                                                                  |
+|number        |String       | Contains the phone number                                                                                                       |
+|type          |string       | Possible values are: `home`, `business`, `mobile`, `other`, `assistant`, `homeFax`, `businessFax`, `otherFax`, `pager`, `radio`.|
 
 ## Relationships
 
