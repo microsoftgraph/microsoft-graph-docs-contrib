@@ -3,7 +3,7 @@ title: "Update useraccountinformation"
 description: "Update the properties of useraccountinformation object."
 localization_priority: Normal
 author: "kevinbellinger"
-ms.prod: "People"
+ms.prod: "Profile"
 doc_type: "apiPageType"
 ---
 
@@ -19,16 +19,16 @@ One of the following permissions is required to call this API. To learn more, in
 
 | Permission type                        | Permissions (from least to most privileged) |
 |:---------------------------------------|:--------------------------------------------|
-| Delegated (work or school account)     | Not supported. |
-| Delegated (personal Microsoft account) | Not supported. |
-| Application                            | Not supported. |
+| Delegated (work or school account)     | User.ReadWrite, User.ReadWrite.All |
+| Delegated (personal Microsoft account) | User.ReadWrite, User.ReadWrite.All |
+| Application                            | User.ReadWrite.All |
 
 ## HTTP request
 
 <!-- { "blockType": "ignored" } -->
 
 ```http
-PATCH /user/profile/account
+PATCH https://graph.microsoft.com/Beta/me/profile/account
 ```
 
 ## Request headers
@@ -63,7 +63,7 @@ The following is an example of the request.
 }-->
 
 ```http
-PATCH https://graph.microsoft.com/Beta/user/profile/account
+PATCH https://graph.microsoft.com/Beta/me/profile/account
 Content-type: application/json
 
 {
