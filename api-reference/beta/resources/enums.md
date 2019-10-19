@@ -886,3 +886,21 @@ Possible values for user account types (group membership), per Windows definitio
 |user|
 |unknownFutureValue|
 
+
+### onlineMeetingProviderType values
+
+|Member|
+|:---|
+|unknown|0|
+|skypeForBusiness|1|
+|skypeForConsumer|2|
+|teamsForBusiness|3|
+
+
+### delegateMeetingMessageDeliveryOptions values
+
+|Member|
+|:---|
+|sendToDelegateAndInformationToPrincipal|0|
+|sendToDelegateAndPrincipal|1|
+|sendToDelegateOnly|2|
