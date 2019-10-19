@@ -19,16 +19,16 @@ One of the following permissions is required to call this API. To learn more, in
 
 | Permission type                        | Permissions (from least to most privileged) |
 |:---------------------------------------|:--------------------------------------------|
-| Delegated (work or school account)     | Not supported. |
-| Delegated (personal Microsoft account) | Not supported. |
-| Application                            | Not supported. |
+| Delegated (work or school account)     | User.Read, User.ReadWrite, User.ReadBasic.All, User.Read.All, User.ReadWrite.All |
+| Delegated (personal Microsoft account) | User.Read, User.ReadWrite, User.ReadBasic.All, User.Read.All, User.ReadWrite.All |
+| Application                            | User.ReadBasic.All, User.Read.All, User.ReadWrite.All |
 
 ## HTTP request
 
 <!-- { "blockType": "ignored" } -->
 
 ```http
-GET /user/profile/positions
+GET /me/profile/positions/{id}
 ```
 
 ## Optional query parameters
@@ -39,7 +39,9 @@ This method supports some of the OData query parameters to help customize the re
 
 | Name      |Description|
 |:----------|:----------|
-| Authorization | Bearer {token} |
+| Authorization  | Bearer {token}. Required.|
+| Content-Type   | application/json |
+
 
 ## Request body
 
@@ -60,7 +62,7 @@ The following is an example of the request.
 }-->
 
 ```http
-GET https://graph.microsoft.com/Beta/user/profile/positions
+GET https://graph.microsoft.com/Beta/me/profile/positions/{id}
 ```
 
 ### Response
