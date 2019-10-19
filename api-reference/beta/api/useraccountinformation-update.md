@@ -28,14 +28,15 @@ One of the following permissions is required to call this API. To learn more, in
 <!-- { "blockType": "ignored" } -->
 
 ```http
-PATCH https://graph.microsoft.com/Beta/me/profile/account
+PATCH /me/profile/account/{id}
 ```
 
 ## Request headers
 
-| Name       | Description|
-|:-----------|:-----------|
-| Authorization | Bearer {token} |
+| Name      |Description|
+|:----------|:----------|
+| Authorization  | Bearer {token}. Required.|
+| Content-Type   | application/json |
 
 ## Request body
 
@@ -63,7 +64,7 @@ The following is an example of the request.
 }-->
 
 ```http
-PATCH https://graph.microsoft.com/Beta/me/profile/account
+PATCH https://graph.microsoft.com/Beta/me/profile/account/{id}
 Content-type: application/json
 
 {

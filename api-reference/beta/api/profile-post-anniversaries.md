@@ -11,7 +11,7 @@ doc_type: "apiPageType"
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Use this API to create a new personAnniversary.
+Use this API to create a new personAnniversary object in a users profile.
 
 ## Permissions
 
@@ -19,23 +19,24 @@ One of the following permissions is required to call this API. To learn more, in
 
 | Permission type                        | Permissions (from least to most privileged) |
 |:---------------------------------------|:--------------------------------------------|
-| Delegated (work or school account)     | Not supported. |
-| Delegated (personal Microsoft account) | Not supported. |
-| Application                            | Not supported. |
+| Delegated (work or school account)     | User.ReadWrite, User.ReadWrite.All |
+| Delegated (personal Microsoft account) | User.ReadWrite, User.ReadWrite.All |
+| Application                            | User.ReadWrite.All |
 
 ## HTTP request
 
 <!-- { "blockType": "ignored" } -->
 
 ```http
-POST /user/profile/anniversaries
+POST /me/profile/anniversaries 
 ```
 
 ## Request headers
 
-| Name          | Description   |
-|:--------------|:--------------|
-| Authorization | Bearer {token} |
+| Name      |Description|
+|:----------|:----------|
+| Authorization  | Bearer {token}. Required.|
+| Content-Type   | application/json |
 
 ## Request body
 
@@ -56,7 +57,7 @@ The following is an example of the request.
 }-->
 
 ```http
-POST https://graph.microsoft.com/Beta/user/profile/anniversaries
+POST https://graph.microsoft.com/Beta/me/profile/anniversaries
 Content-type: application/json
 
 {

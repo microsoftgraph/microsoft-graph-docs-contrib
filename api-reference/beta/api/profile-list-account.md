@@ -28,7 +28,7 @@ One of the following permissions is required to call this API. To learn more, in
 <!-- { "blockType": "ignored" } -->
 
 ```http
-GET https://graph.microsoft.com/Beta/me/profile/account
+GET h/user/profile/account
 ```
 
 ## Optional query parameters
@@ -61,7 +61,7 @@ The following is an example of the request.
 }-->
 
 ```http
-GET https://graph.microsoft.com/Beta/user/profile/account
+GET https://graph.microsoft.com/Beta/me/profile/account
 ```
 
 ### Response

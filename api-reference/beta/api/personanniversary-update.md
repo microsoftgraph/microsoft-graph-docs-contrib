@@ -11,7 +11,7 @@ doc_type: "apiPageType"
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Update the properties of personanniversary object.
+Update the properties of personanniversary object in a users profile.
 
 ## Permissions
 
@@ -28,14 +28,15 @@ One of the following permissions is required to call this API. To learn more, in
 <!-- { "blockType": "ignored" } -->
 
 ```http
-PATCH /user/profile/anniversaries
+PATCH /me/profile/anniversaries/{id} 
 ```
 
 ## Request headers
 
-| Name       | Description|
-|:-----------|:-----------|
-| Authorization | Bearer {token} |
+| Name      |Description|
+|:----------|:----------|
+| Authorization  | Bearer {token}. Required.|
+| Content-Type   | application/json |
 
 ## Request body
 
@@ -61,7 +62,7 @@ The following is an example of the request.
 }-->
 
 ```http
-PATCH https://graph.microsoft.com/Beta/user/profile/anniversaries
+PATCH https://graph.microsoft.com/Beta/me/profile/anniversaries/{id}
 Content-type: application/json
 
 {
