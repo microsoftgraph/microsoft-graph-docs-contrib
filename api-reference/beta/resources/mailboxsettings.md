@@ -45,6 +45,7 @@ Here is a JSON representation of the resource.
   "archiveFolder": "string",
   "automaticRepliesSetting": {"@odata.type": "microsoft.graph.automaticRepliesSetting"},
   "dateFormat": "string",
+  "delegateMeetingMessageDeliveryOptions": "String",
   "language": {"@odata.type": "microsoft.graph.localeInfo"},
   "timeFormat": "string",
   "timeZone": "string",
