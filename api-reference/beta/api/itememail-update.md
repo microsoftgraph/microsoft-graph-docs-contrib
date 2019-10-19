@@ -11,7 +11,7 @@ doc_type: "apiPageType"
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Update the properties of itememail object.
+Update the properties of itememail object in a users profile.
 
 ## Permissions
 
@@ -19,23 +19,24 @@ One of the following permissions is required to call this API. To learn more, in
 
 | Permission type                        | Permissions (from least to most privileged) |
 |:---------------------------------------|:--------------------------------------------|
-| Delegated (work or school account)     | Not supported. |
-| Delegated (personal Microsoft account) | Not supported. |
-| Application                            | Not supported. |
+| Delegated (work or school account)     | User.ReadWrite, User.ReadWrite.All |
+| Delegated (personal Microsoft account) | User.ReadWrite, User.ReadWrite.All |
+| Application                            | User.ReadWrite.All |
 
 ## HTTP request
 
 <!-- { "blockType": "ignored" } -->
 
 ```http
-PATCH /user/profile/emails
+PATCH /me/profile/emails/{id} 
 ```
 
 ## Request headers
 
-| Name       | Description|
-|:-----------|:-----------|
-| Authorization | Bearer {token} |
+| Name      |Description|
+|:----------|:----------|
+| Authorization  | Bearer {token}. Required.|
+| Content-Type   | application/json |
 
 ## Request body
 
@@ -62,7 +63,7 @@ The following is an example of the request.
 }-->
 
 ```http
-PATCH https://graph.microsoft.com/Beta/user/profile/emails
+PATCH https://graph.microsoft.com/Beta/me/profile/emails/{id}
 Content-type: application/json
 
 {
