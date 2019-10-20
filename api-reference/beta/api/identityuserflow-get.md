@@ -19,9 +19,9 @@ One of the following permissions is required to call this API. To learn more, in
 
 | Permission type                        | Permissions (from least to most privileged) |
 |:---------------------------------------|:--------------------------------------------|
-| Delegated (work or school account)     | Not supported. |
+| Delegated (work or school account)     | IdentityUserFlow.Read.All, IdentityUserFlow.ReadWrite.All |
 | Delegated (personal Microsoft account) | Not supported. |
-| Application                            | Not supported. |
+| Application                            | IdentityUserFlow.Read.All, IdentityUserFlow.ReadWrite.All |
 
 ## HTTP request
 
@@ -30,10 +30,6 @@ One of the following permissions is required to call this API. To learn more, in
 ```http
 GET /identity/userFlows/{id}
 ```
-
-## Optional query parameters
-
-This method supports some of the OData query parameters to help customize the response. For general information, see [OData query parameters](/graph/query-parameters).
 
 ## Request headers
 
@@ -60,7 +56,7 @@ The following is an example of the request.
 }-->
 
 ```http
-GET https://graph.microsoft.com/beta/identity/userFlows/{id}
+GET https://graph.microsoft.com/beta/identity/userFlows/B2C_1_Pol1
 ```
 
 ### Response
@@ -80,9 +76,9 @@ HTTP/1.1 200 OK
 Content-type: application/json
 
 {
-  "id": "id-value",
-  "userFlowType": "userFlowType-value",
-  "userFlowTypeVersion": "userFlowTypeVersion-value"
+    "id": "B2C_1_Pol1",
+    "userFlowType": "signUpOrSignIn",
+    "userFlowTypeVersion": 1
 }
 ```
 
