@@ -19,9 +19,9 @@ One of the following permissions is required to call this API. To learn more, in
 
 | Permission type                        | Permissions (from least to most privileged) |
 |:---------------------------------------|:--------------------------------------------|
-| Delegated (work or school account)     | Not supported. |
+| Delegated (work or school account)     | IdentityUserFlow.ReadWrite.All |
 | Delegated (personal Microsoft account) | Not supported. |
-| Application                            | Not supported. |
+| Application                            | IdentityUserFlow.ReadWrite.All |
 
 ## HTTP request
 
@@ -60,8 +60,8 @@ POST https://graph.microsoft.com/beta/identity/userFlows
 Content-type: application/json
 
 {
-  "userFlowType": "userFlowType-value",
-  "userFlowTypeVersion": "userFlowTypeVersion-value"
+  "userFlowType": "signUpOrSignIn",
+  "userFlowTypeVersion": 1
 }
 ```
 
@@ -82,9 +82,9 @@ HTTP/1.1 201 Created
 Content-type: application/json
 
 {
-  "id": "id-value",
-  "userFlowType": "userFlowType-value",
-  "userFlowTypeVersion": "userFlowTypeVersion-value"
+    "id": "B2C_1_Pol1",
+    "userFlowType": "signUpOrSignIn",
+    "userFlowTypeVersion": 1
 }
 ```
 
