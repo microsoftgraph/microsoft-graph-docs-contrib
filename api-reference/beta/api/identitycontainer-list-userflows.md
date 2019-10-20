@@ -19,9 +19,9 @@ One of the following permissions is required to call this API. To learn more, in
 
 | Permission type                        | Permissions (from least to most privileged) |
 |:---------------------------------------|:--------------------------------------------|
-| Delegated (work or school account)     | Not supported. |
+| Delegated (work or school account)     | IdentityUserFlow.Read.All, IdentityUserFlow.ReadWrite.All  |
 | Delegated (personal Microsoft account) | Not supported. |
-| Application                            | Not supported. |
+| Application                            | IdentityUserFlow.Read.All, IdentityUserFlow.ReadWrite.All |
 
 ## HTTP request
 
@@ -83,9 +83,9 @@ Content-type: application/json
 {
   "value": [
     {
-      "id": "id-value",
-      "userFlowType": "userFlowType-value",
-      "userFlowTypeVersion": "userFlowTypeVersion-value"
+      "id": "B2C_1_UserFlow1",
+      "userFlowType": "signUpOrSignIn",
+      "userFlowTypeVersion": 1
     }
   ]
 }
