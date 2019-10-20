@@ -11,7 +11,9 @@ doc_type: "resourcePageType"
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-PROVIDE DESCRIPTION HERE
+The webAccount resource type represents web accounts the user has indicated they use or have added to their user profile or for one of their contacts.
+
+Inherits from [itemFacet](itemFacet.md).
 
 ## Methods
 
@@ -25,11 +27,11 @@ PROVIDE DESCRIPTION HERE
 
 | Property     | Type        | Description |
 |:-------------|:------------|:------------|
-|description|String||
-|service|[serviceInformation](serviceinformation.md)||
-|statusMessage|String||
-|userId|String||
-|webUrl|String||
+|description|String| Contains the description the user has provided for the account on the service being referenced.|
+|service|[serviceInformation](serviceinformation.md)| Contains basic detail about the service that is being associated. |
+|statusMessage|String| Contains a status message from the cloud service if provided or synchronized.|
+|userId|String| |The user name  displayed for the webaccount (ie: @kevinb)|
+|webUrl|String| Contains a link to the users profile on the cloud service if one exists.|
 
 ## Relationships
 

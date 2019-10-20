@@ -11,17 +11,17 @@ doc_type: "resourcePageType"
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-PROVIDE DESCRIPTION HERE
+The 'yomiPersonName' resource type provides a mechanism for a user to store information about how to pronounce a name for non-native speakers.
 
 ## Properties
 
-| Property     | Type        | Description |
-|:-------------|:------------|:------------|
-|displayName|String||
-|first|String||
-|last|String||
-|maiden|String||
-|middle|String||
+| Property     | Type        | Description                                             |
+|:-------------|:------------|:--------------------------------------------------------|
+|displayName   |String       | Composite of first and last name pronunciation guides.  |
+|first         |String       | Pronunciation guide for the first name of the user.     |
+|last          |String       | Pronunciation guide for the last name of the user.      |
+|maiden        |String       | Pronunciation guide for the maiden name of the user.    |
+|middle        |String       | Pronunciation guide for the middle name of the user.    |
 
 ## JSON representation
 

@@ -11,22 +11,24 @@ doc_type: "resourcePageType"
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-PROVIDE DESCRIPTION HERE
+The workPosition resource type provides detailed information about positions the user has associated with them.
+
+Inherits from [itemFacet](itemFacet.md).
 
 ## Methods
 
-| Method       | Return Type | Description |
-|:-------------|:------------|:------------|
+| Method                                         | Return Type                     | Description                                               |
+|:-----------------------------------------------|:--------------------------------|:----------------------------------------------------------|
 | [Get workPosition](../api/workposition-get.md) | [workPosition](workposition.md) | Read properties and relationships of workPosition object. |
-| [Update](../api/workposition-update.md) | [workPosition](workposition.md) | Update workPosition object. |
-| [Delete](../api/workposition-delete.md) | None | Delete workPosition object. |
+| [Update](../api/workposition-update.md)        | [workPosition](workposition.md) | Update workPosition object.                               |
+| [Delete](../api/workposition-delete.md)        | None                            | Delete workPosition object.                               |
 
 ## Properties
 
-| Property     | Type        | Description |
-|:-------------|:------------|:------------|
-|categories|String collection||
-|detail|[positionDetail](positiondetail.md)||
+| Property             | Type                               | Description                                                                                                |
+|:---------------------|:-----------------------------------|:-----------------------------------------------------------------------------------------------------------|
+|categories            |String collection                   | Contains categories a user has associated with the position (eg: digital transformation, ms graph, people) |
+|detail                |[positionDetail](positiondetail.md) | Contains detail about the users current and previous employment positions.                                 |
 
 ## Relationships
 

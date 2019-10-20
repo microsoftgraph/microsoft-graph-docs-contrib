@@ -11,31 +11,33 @@ doc_type: "resourcePageType"
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-PROVIDE DESCRIPTION HERE
+The 'personName' resource type provides extended name information provided by the user or which they have associated with their account.
+
+Inherits from [itemFacet](itemFacet.md).
 
 ## Methods
 
-| Method       | Return Type | Description |
-|:-------------|:------------|:------------|
+| Method                                     | Return Type                 | Description                                             |
+|:-------------------------------------------|:----------------------------|:--------------------------------------------------------|
 | [Get personName](../api/personname-get.md) | [personName](personname.md) | Read properties and relationships of personName object. |
-| [Update](../api/personname-update.md) | [personName](personname.md) | Update personName object. |
-| [Delete](../api/personname-delete.md) | None | Delete personName object. |
+| [Update](../api/personname-update.md)      | [personName](personname.md) | Update personName object.                               |
+| [Delete](../api/personname-delete.md)      | None                        | Delete personName object.                               |
 
 ## Properties
 
-| Property     | Type        | Description |
-|:-------------|:------------|:------------|
-|displayName|String||
-|first|String||
-|initials|String||
-|languageTag|String||
-|last|String||
-|maiden|String||
-|middle|String||
-|nickname|String||
-|pronunciation|[yomiPersonName](yomipersonname.md)||
-|suffix|String||
-|title|String||
+| Property     | Type                              | Description |
+|:-------------|:----------------------------------|:------------|
+|displayName   |String                             | Provides an ordered rendering of firstName and lastName depending on the locale of the user or their device. |
+|first         |String                             | First Name of the user.                                                                                      |
+|initials      |String                             | Initials of the user.                                                                                        |
+|languageTag   |String                             | Contains the name for the language (en-US, no-NB, en-AU) following IETF BCP47 format.                        |
+|last          |String                             | Last Name of the user.                                                                                       |
+|maiden        |String                             | Maiden Name of the user.                                                                                     |
+|middle        |String                             | Middlie Name of the user.                                                                                    | 
+|nickname      |String                             | Nickname of the user.                                                                                        |
+|pronunciation |[yomiPersonName](yomipersonname.md)| Guidance on how to pronounce the users name.                                                                 |
+|suffix        |String                             | Designators used after the users name (eg: PhD.)                                                             |
+|title         |String                             | Honorifics used to prefix a users name (eg: Dr, Sir, Madam, Mrs.)                                            |
 
 ## Relationships
 

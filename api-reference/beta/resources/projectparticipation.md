@@ -11,26 +11,28 @@ doc_type: "resourcePageType"
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-PROVIDE DESCRIPTION HERE
+The projectParticipation resource type provides detailed information about projects the user has associated with them.
+
+Inherits from [itemFacet](itemFacet.md).
 
 ## Methods
 
-| Method       | Return Type | Description |
-|:-------------|:------------|:------------|
+| Method                                                         | Return Type                                     | Description                                                       |
+|:---------------------------------------------------------------|:------------------------------------------------|:------------------------------------------------------------------|
 | [Get projectParticipation](../api/projectparticipation-get.md) | [projectParticipation](projectparticipation.md) | Read properties and relationships of projectParticipation object. |
-| [Update](../api/projectparticipation-update.md) | [projectParticipation](projectparticipation.md) | Update projectParticipation object. |
-| [Delete](../api/projectparticipation-delete.md) | None | Delete projectParticipation object. |
+| [Update](../api/projectparticipation-update.md)                | [projectParticipation](projectparticipation.md) | Update projectParticipation object.                               |
+| [Delete](../api/projectparticipation-delete.md)                | None                                            | Delete projectParticipation object.                               |
 
 ## Properties
 
-| Property     | Type        | Description |
-|:-------------|:------------|:------------|
-|categories|String collection||
-|client|[companyDetail](companydetail.md)||
-|colleagues|[relatedPerson](relatedperson.md) collection||
-|detail|[positionDetail](positiondetail.md)||
-|displayName|String||
-|sponsors|[relatedPerson](relatedperson.md) collection||
+| Property     | Type                                        | Description                                                                                      |
+|:-------------|:--------------------------------------------|:-------------------------------------------------------------------------------------------------|
+|categories    | String collection                           | Contains categories a user has associated with the project (eg: digital transformation, oil rig) |
+|client        |[companyDetail](companydetail.md)            | Contains detailed information about the client the project was for.                              |
+|colleagues    |[relatedPerson](relatedperson.md) collection | People that also worked on the project.                                                          |
+|detail        |[positionDetail](positiondetail.md)          | Contains detail about the users role on the project.                                             |
+|displayName   |String                                       |Contains a friendly name for the project.                                                         |
+|sponsors      |[relatedPerson](relatedperson.md) collection |Person(People) who sponsored the project.                                                         |
 
 ## Relationships
 

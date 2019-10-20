@@ -11,14 +11,14 @@ doc_type: "resourcePageType"
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-PROVIDE DESCRIPTION HERE
+The 'serviceInformation' resource type represents basic descriptive data about cloud services that a user has chosen to refer to from their account.
 
 ## Properties
 
-| Property     | Type        | Description |
-|:-------------|:------------|:------------|
-|name|String||
-|webUrl|String||
+| Property     | Type        | Description                                            |
+|:-------------|:------------|:-------------------------------------------------------|
+|name          | String      | The name of the cloud service (ie: Twitter, Instagram) |
+|webUrl        | String      | Contains the URL for the service being referenced.     |
 
 ## JSON representation
 

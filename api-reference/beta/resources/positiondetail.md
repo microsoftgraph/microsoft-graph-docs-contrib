@@ -11,19 +11,19 @@ doc_type: "resourcePageType"
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-PROVIDE DESCRIPTION HERE
+The 'positionDetail' resource type provides a mechanism for a user to store information about positions related to entities within their profiles and contacts.
 
 ## Properties
 
-| Property     | Type        | Description |
-|:-------------|:------------|:------------|
-|company|[companyDetail](companydetail.md)||
-|description|String||
-|endMonthYear|Date||
-|jobTitle|String||
-|role|String||
-|startMonthYear|Date||
-|summary|String||
+| Property       | Type                             | Description                                            |
+|:---------------|:---------------------------------|:-------------------------------------------------------|
+|company         |[companyDetail](companydetail.md) | Detail about the company or employer.                  |
+|description     |String                            | Description of the position in question.               |
+|endMonthYear    |Date                              | When the position ended.                               |
+|jobTitle        |String                            | The title held when in that position.                  |
+|role            |String                            | The role the position entailed.                        |
+|startMonthYear  |Date                              | The start month and year of the position.              |
+|summary         |String                            |Short summary of the position.                          |
 
 ## JSON representation
 
