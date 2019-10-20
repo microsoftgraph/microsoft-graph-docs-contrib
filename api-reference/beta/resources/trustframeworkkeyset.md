@@ -1,6 +1,6 @@
 ---
 title: "trustFrameworkKeySet resource type"
-description: "PROVIDE DESCRIPTION HERE"
+description: "Defines a trust framework key set / Policy Keys"
 localization_priority: Normal
 author: "valnav"
 ms.prod: "microsoft-identity-platform"
@@ -11,7 +11,7 @@ doc_type: "resourcePageType"
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Identity Experience framework stores the secrets which can be used in the policies. The secrets can be passwords, certificates and other files. Identity Experience framework leverages the JSON Web Key (JWK) standard for the Key Sets. This entity follows the format specified in RFC 7517 Section 5 (https://tools.ietf.org/html/rfc7517#section-5).
+Identity Experience framework stores the secrets which can be used in the policies. The secrets can be passwords, certificates and other files. In the Portal, these entities are shown as `Policy keys`. Identity Experience framework leverages the JSON Web Key (JWK) standard for the Key Sets. This entity follows the format specified in RFC 7517 Section 5 (https://tools.ietf.org/html/rfc7517#section-5).
 
 ## Methods
 
@@ -30,8 +30,8 @@ Identity Experience framework stores the secrets which can be used in the polici
 
 | Property     | Type        | Description |
 |:-------------|:------------|:------------|
-|id|String| Read-only.|
-|keys|[trustFrameworkKey](trustframeworkkey.md) collection||
+|id|String| Unique identifier of the trustframework keyset |
+|keys|[trustFrameworkKey](trustframeworkkey.md) collection| A collection of the keys. |
 
 ## Relationships
 
