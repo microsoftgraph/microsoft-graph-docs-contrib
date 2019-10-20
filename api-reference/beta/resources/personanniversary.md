@@ -11,22 +11,24 @@ doc_type: "resourcePageType"
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-PROVIDE DESCRIPTION HERE
+The personAnniversary resource type provides the ability to store detail of meaningful dates associated with a person in a profile or contact object.
+
+Inherits from [itemFacet](itemFacet.md).
 
 ## Methods
 
-| Method       | Return Type | Description |
-|:-------------|:------------|:------------|
+| Method                                                   | Return Type                               | Description                                                    |
+|:---------------------------------------------------------|:------------------------------------------|:---------------------------------------------------------------|
 | [Get personAnniversary](../api/personanniversary-get.md) | [personAnniversary](personanniversary.md) | Read properties and relationships of personAnniversary object. |
-| [Update](../api/personanniversary-update.md) | [personAnniversary](personanniversary.md) | Update personAnniversary object. |
-| [Delete](../api/personanniversary-delete.md) | None | Delete personAnniversary object. |
+| [Update](../api/personanniversary-update.md)             | [personAnniversary](personanniversary.md) | Update personAnniversary object.                               |
+| [Delete](../api/personanniversary-delete.md)             | None                                      | Delete personAnniversary object.                               |
 
 ## Properties
 
-| Property     | Type        | Description |
-|:-------------|:------------|:------------|
-|date|Date||
-|type|string| Possible values are: `birthday`, `wedding`, `unknownFutureValue`.|
+| Property     | Type        | Description                                                      |
+|:-------------|:------------|:-----------------------------------------------------------------|
+|date          |Date         | Containes the date associated with the anniversary type.         |
+|type          |string       | Possible values are: `birthday`, `wedding`, `unknownFutureValue`.|
 
 ## Relationships
 
@@ -34,7 +36,7 @@ None
 
 ## JSON representation
 
-The following is a JSON representation of the resource.
+The following is a JSON representation of the resource. 
 
 <!-- {
   "blockType": "resource",

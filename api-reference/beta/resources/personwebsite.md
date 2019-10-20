@@ -11,24 +11,26 @@ doc_type: "resourcePageType"
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-PROVIDE DESCRIPTION HERE
+The personWebsite resource type provides detailed information about websites the user has associated with themselves in various services.
+
+Inherits from [itemFacet](itemFacet.md).
 
 ## Methods
 
-| Method       | Return Type | Description |
-|:-------------|:------------|:------------|
+| Method                                           | Return Type                       | Description                                                |
+|:-------------------------------------------------|:----------------------------------|:-----------------------------------------------------------|
 | [Get personWebsite](../api/personwebsite-get.md) | [personWebsite](personwebsite.md) | Read properties and relationships of personWebsite object. |
-| [Update](../api/personwebsite-update.md) | [personWebsite](personwebsite.md) | Update personWebsite object. |
-| [Delete](../api/personwebsite-delete.md) | None | Delete personWebsite object. |
+| [Update](../api/personwebsite-update.md)         | [personWebsite](personwebsite.md) | Update personWebsite object.                               |
+| [Delete](../api/personwebsite-delete.md)         | None                              | Delete personWebsite object.                               |
 
 ## Properties
 
-| Property     | Type        | Description |
-|:-------------|:------------|:------------|
-|categories|String collection||
-|description|String||
-|displayName|String||
-|webUrl|String||
+| Property     | Type              | Description                                                                         |
+|:-------------|:------------------|:------------------------------------------------------------------------------------|
+|categories    |String collection  | Contains categories a user has associated with the website (eg: personal, recipes)  |
+|description   |String             | Contains a description of the website.                                              |
+|displayName   |String             | Contains a friendly name for the website.                                           |
+|webUrl        |String             | Contains a link to the website itself.                                              |
 
 ## Relationships
 
@@ -36,7 +38,7 @@ None
 
 ## JSON representation
 
-The following is a JSON representation of the resource.
+The following is a JSON representation of the resource. 
 
 <!-- {
   "blockType": "resource",
