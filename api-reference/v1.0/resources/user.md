@@ -93,6 +93,7 @@ This resource supports:
 |interests|String collection|A list for the user to describe their interests.|
 |isResourceAccount|Boolean| **true** if the user is a resource account; otherwise, **false**. Null value should be considered **false**.|
 |jobTitle|String|The user’s job title. Supports $filter.|
+|lastPasswordChangeDateTime| DateTimeOffset | The time when this Azure AD user last changed their password. The date and time information uses ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 would look like this: '2014-01-01T00:00:00Z'|
 |legalAgeGroupClassification|String| Used by enterprise applications to determine the legal age group of the user. This property is read-only and calculated based on `ageGroup` and `consentProvidedForMinor` properties. Allowed values: `null`, `minorWithOutParentalConsent`, `minorWithParentalConsent`, `minorNoParentalConsentRequired`, `notAdult` and `adult`. Refer to the [legal age group property definitions](#legal-age-group-property-definitions) for further information.)|
 |licenseAssignmentStates|[licenseAssignmentState](licenseassignmentstate.md) collection|State of license assignments for this user. Read-only.|
 |mail|String|The SMTP address for the user, for example, "jeff@contoso.onmicrosoft.com". Read-Only. Supports $filter.|
@@ -393,6 +394,7 @@ Here is a JSON representation of the resource
   "jobTitle": "string",
   "legalAgeGroupClassification": "string",
   "licenseAssignmentStates": [{"@odata.type": "microsoft.graph.licenseAssignmentState"}],
+  "lastPasswordChangeDateTime": "String (timestamp)",
   "mail": "string",
   "mailboxSettings": {"@odata.type": "microsoft.graph.mailboxSettings"},
   "mailNickname": "string",
