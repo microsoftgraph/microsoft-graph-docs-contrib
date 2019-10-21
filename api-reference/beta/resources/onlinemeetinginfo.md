@@ -28,11 +28,7 @@ The following is a JSON representation of the resource.
 
 <!-- {
   "blockType": "resource",
-  "optionalProperties": [
-
-  ],
-  "@odata.type": "microsoft.graph.onlineMeetingInfo",
-  "baseType": null
+  "@odata.type": "microsoft.graph.onlineMeetingInfo"
 }-->
 
 ```json

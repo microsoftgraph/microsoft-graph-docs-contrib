@@ -30,21 +30,13 @@ The permissions of the users with whom the calendar is shared.
 |isRemovable|Boolean| `True` if the user can be removed from the list of sharees for the specified calendar, `false` otherwise. The “My organization” user determines the permissions other people within your organization have to the given calendar. You cannot remove  “My organization” as a sharee to a calendar.|
 |role|calendarRoleType| Current permission level of the calendar sharee. Possible values are: `none`, `freeBusyRead`, `limitedRead`, `read`, `write`, `delegateWithoutPrivateEventAccess`, `delegateWithPrivateEventAccess`, `custom`.|
 
-## Relationships
-
-None
-
 ## JSON representation
 
 The following is a JSON representation of the resource.
 
 <!-- {
   "blockType": "resource",
-  "optionalProperties": [
-
-  ],
   "@odata.type": "microsoft.graph.calendarPermission",
-  "baseType": "",
   "keyProperty": "id"
 }-->
 
