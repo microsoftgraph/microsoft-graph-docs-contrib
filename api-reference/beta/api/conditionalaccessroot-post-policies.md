@@ -1,6 +1,6 @@
 ---
 title: "Create conditionalAccessPolicy"
-description: "Use this API to create a new conditionalAccessPolicy."
+description: "Create a new conditionalAccessPolicy."
 localization_priority: Normal
 author: "davidmu1"
 ms.prod: "microsoft-identity-platform"
@@ -11,7 +11,7 @@ doc_type: apiPageType
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Use this API to create a new [conditionalAccessPolicy](../resources/conditionalaccesspolicy.md).
+Create a new [conditionalAccessPolicy](../resources/conditionalaccesspolicy.md).
 
 ## Permissions
 
@@ -24,7 +24,7 @@ One of the following permissions is required to call this API. To learn more, in
 |Application                            | Not supported. |
 
 >[!NOTE]
->This API has a [known issue](/graph/known-issues#conditional-access-policies-and-named-locations): It requires multiple scopes.
+>This API requires multiple permissions. For details, see [Known issues](/graph/known-issues#conditional-access-policies-and-named-locations).
 
 ## HTTP request
 
@@ -38,14 +38,14 @@ POST /conditionalAccess/policies
 
 | Name          | Description      |
 |:--------------|:-----------------|
-| Authorization | Bearer {token}   |
-| Content-Type  | application/json |
+| Authorization | Bearer {token}. Required.   |
+| Content-Type  | application/json. Required. |
 
 ## Request body
 
-In the request body, supply a JSON representation of [conditionalAccessPolicy](../resources/conditionalaccesspolicy.md) object.
+In the request body, supply a JSON representation of a [conditionalAccessPolicy](../resources/conditionalaccesspolicy.md) object.
 
-A valid policy should contain at least one [application](../resources/conditionalaccessapplications.md) rule, e.g. `'includeApplications': 'none'`, and one [user](../resources/conditionalaccessusers.md) rule, e.g. `'includeUsers': 'none'`, and at least one [grant](../resources/conditionalaccessgrantcontrols.md)/[session](../resources/conditionalaccesssessioncontrols.md) control.
+A valid policy should contain at least one [application](../resources/conditionalaccessapplications.md) rule - for example, `'includeApplications': 'none'`, one [user](../resources/conditionalaccessusers.md) rule - for example, `'includeUsers': 'none'`, and at least one [grant](../resources/conditionalaccessgrantcontrols.md)/[session](../resources/conditionalaccesssessioncontrols.md) control.
 
 ## Response
 
@@ -53,10 +53,12 @@ If successful, this method returns a `201 Created` response code and a new [cond
 
 ## Examples
 
-### Example 1: Request to require MFA to access Exchange Online outside of trusted locations.
+### Example 1: Require MFA to access Exchange Online outside of trusted locations
 
-The following is an example of a common configuration: Access to Exchange Online from browser or modern auth clients require multi-factor authentication outside of trusted locations for a particular group.
-Please make sure you setup your trusted locations first.
+#### Request
+The following example shows a common request to require multi-factor authentication for access to Exchange Online from a browser or modern auth client outside of trusted locations for a particular group.
+
+>**Note:** You must set up your trusted locations before using this operation.
 
 <!-- {
   "blockType": "request",
@@ -101,7 +103,7 @@ Content-type: application/json
 }
 ```
 
-### Response
+#### Response
 
 The following is an example of the response.
 
@@ -168,10 +170,11 @@ Content-type: application/json
 }
 ```
 
-### Example 2: Request to block access to Exchange Online from non-trusted regions.
+### Example 2: Block access to Exchange Online from non-trusted regions
 
-The following is an example of a common configuration: Block access to Exchange Online from non-trusted/unknown regions.
-This example assumes the named location with id = 198ad66e-87b3-4157-85a3-8a7b51794ee9 corresponds to a list of non-trusted/unknown regions.
+#### Request
+The following example shows a request to block access to Exchange Online from non-trusted/unknown regions.
+This example assumes that the named location with id = 198ad66e-87b3-4157-85a3-8a7b51794ee9 corresponds to a list of non-trusted/unknown regions.
 
 <!-- {
   "blockType": "request",
@@ -216,7 +219,7 @@ Content-type: application/json
 }
 ```
 
-### Response
+#### Response
 
 The following is an example of the response.
 
@@ -284,9 +287,10 @@ Content-type: application/json
 }
 ```
 
-### Example 3: Request showing usage of all conditions/controls.
+### Example 3: Use all conditions/controls
 
-The following is an example of the request showing the usage of all the conditions/controls.
+#### Request
+The following is an example of the request to use all the conditions/controls.
 <!-- {
   "blockType": "request",
   "name": "create_conditionalaccesspolicy_from_conditionalaccessroot"
@@ -402,7 +406,7 @@ Content-type: application/json
 }
 ```
 
-### Response
+#### Response
 
 The following is an example of the response.
 
