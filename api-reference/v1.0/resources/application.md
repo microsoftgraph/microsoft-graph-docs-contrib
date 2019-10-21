@@ -18,22 +18,23 @@ Represents an application. Any application that outsources authentication to Azu
 
 | Method | Return Type | Description |
 |:---------------|:--------|:----------|
-|[List applications](../api/application-list.md) | application | Retrieve the list of applications in the organization. |
-|[Create application](../api/application-post-applications.md) | application | Creates (registers) a new application.|
-|[Get application](../api/application-get.md) | application |Read properties and relationships of application object.|
-|[Update application](../api/application-update.md) | application |Update application object. |
+|[List applications](../api/application-list.md) | [application](application.md) collection | Retrieve the list of applications in the organization. |
+|[Create application](../api/application-post-applications.md) | [application](application.md) | Creates (registers) a new application.|
+|[Get application](../api/application-get.md) | [application](application.md) |Read properties and relationships of application object.|
+|[Update application](../api/application-update.md) | [application](application.md) |Update application object. |
 |[Delete application](../api/application-delete.md) | None |Delete application object. |
-|[List deleted applications](../api/directory-deleteditems-list.md) | application | Retrieve a list of recently deleted applications. |
-|[Get deleted application](../api/directory-deleteditems-get.md) | application | Retrieve the properties of a recently deleted application. |
-|[Permanently delete application](../api/directory-deleteditems-delete.md) | application | Permanently delete an applications. |
-|[Restore deleted application](../api/directory-deleteditems-restore.md) | application | Restore a recently deleted application. |
+|[List deleted applications](../api/directory-deleteditems-list.md) | [directoryObject](directoryobject.md) collection | Retrieve a list of recently deleted applications. |
+|[Get deleted application](../api/directory-deleteditems-get.md) | [directoryObject](directoryobject.md) | Retrieve the properties of a recently deleted application. |
+|[Permanently delete application](../api/directory-deleteditems-delete.md) | None | Permanently delete an applications. |
+|[Restore deleted application](../api/directory-deleteditems-restore.md) | [directoryObject](directoryobject.md) | Restore a recently deleted application. |
 |[Add password](../api/application-addpassword.md)|[passwordCredential](passwordcredential.md)|Add a strong password to an application.|
 |[Remove password](../api/application-removepassword.md)|[passwordCredential](passwordcredential.md)|Remove a password from an application.|
 | [Create extension](../api/application-post-extensionproperty.md) | [extensionProperty](extensionProperty.md) | Create an extension property on an application object. |
 | [List extensions](../api/application-list-extensionproperty.md) | [extensionProperty](extensionProperty.md) collection | List extension properties on an application object. |
 | [Delete extension](../api/application-delete-extensionproperty.md) | None | Delete an extension property from an application object. |
-|[Create owner](../api/application-post-owners.md) |[directoryObject](directoryobject.md)| Create a new owner by posting to the owners collection.|
+|[Add owner](../api/application-post-owners.md) |[directoryObject](directoryobject.md)| Create a new owner by posting to the owners collection.|
 |[List owners](../api/application-list-owners.md) |[directoryObject](directoryobject.md) collection| Get an owner object collection.|
+|[Remove owners](../api/application-delete-owners.md) |None| Remove an owner from an application.|
 
 ## Properties
 
@@ -103,7 +104,7 @@ The following is a JSON representation of the resource.
   "keyCredentials": [{"@odata.type": "microsoft.graph.keyCredential"}],
   "logo": "Stream",
   "optionalClaims": {"@odata.type": "microsoft.graph.optionalClaims"},
-  "parentalControlSettings": [{"@odata.type": "microsoft.graph.parentalControlSettings"}],
+  "parentalControlSettings": {"@odata.type": "microsoft.graph.parentalControlSettings"},
   "passwordCredentials": [{"@odata.type": "microsoft.graph.passwordCredential"}],
   "publicClient": {"@odata.type": "microsoft.graph.publicClientApplication"},
   "publisherDomain": "String",
