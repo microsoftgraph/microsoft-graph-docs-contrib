@@ -23,6 +23,9 @@ For details about known issues with Microsoft Graph APIs, see [Known issues](kno
 | Addition | v1.0 | Added new entity [certificateBasedAuthConfiguration](/graph/api/resources/certificatebasedauthconfiguration?view=graph-rest-v1.0). |
 | Addition | v1.0 | Added new complex type [certificateAuthority](/graph/api/resources/certificateauthority?view=graph-rest-v1.0). |
 | Addition | v1.0 | Added new relationship for **certificateBasedAuthConfiguration** on the [organization](/graph/api/resources/organization?view=graph-rest-v1.0) resource. This enables [certificate-based authentication in Azure Active Directory](https://docs.microsoft.com/azure/active-directory/authentication/active-directory-certificate-based-authentication-get-started).|
+| Addition | Beta | Added [removePassword](../api-reference/beta/api/application-removepassword.md) method to the [application](/graph/api/resources/application?view=graph-rest-beta) resource. |
+| Addition | Beta | Added **addIns** property to the [application](/graph/api/resources/application?view=graph-rest-beta). |
+| Addition | Beta | Added [addPassword](../api-reference/beta/api/serviceprincipal-addpassword.md) and [removePassword](../api-reference/beta/api/serviceprincipal-removepassword.md) methods to the [serviceprincipal](/graph/api/resources/serviceprincipal?view=graph-rest-beta) resource. |
 
 ### Devices and apps (Microsoft Intune)
 
