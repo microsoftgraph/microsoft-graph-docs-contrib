@@ -11,7 +11,7 @@ doc_type: apiPageType
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Delete a conditionalAccessPolicy.
+Delete a [conditionalAccessPolicy](../resources/conditionalaccesspolicy.md) object.
 
 ## Permissions
 
@@ -24,7 +24,7 @@ One of the following permissions is required to call this API. To learn more, in
 |Application                            | Not supported. |
 
 >[!NOTE]
->This API has a [known issue](/graph/known-issues#conditional-access-policies-and-named-locations): It requires multiple scopes.
+>This API requires multiple permissions. For details, see [Known issues](/graph/known-issues#conditional-access-policies-and-named-locations).
 
 ## HTTP request
 
@@ -38,7 +38,7 @@ DELETE /conditionalAccess/policies/{id}
 
 | Name          | Description   |
 |:--------------|:--------------|
-| Authorization | Bearer {token} |
+| Authorization | Bearer {token}. Required. |
 
 ## Request body
 
