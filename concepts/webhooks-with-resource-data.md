@@ -11,7 +11,7 @@ Microsoft Graph allows apps to subscribe to change notifications for resources v
 
 Requesting resource data in notifications requires you to implement the following additional logic to satisfy data access and security requirements: 
 
-- [Handle](#subscription-lifecycle-notifications) special subscription life cycle notifications - `reauthorizationRequired` - to maintain an uninterrupted flow of data.
+- [Handle](#subscription-life-cycle-notifications) special subscription life cycle notifications - `reauthorizationRequired` - to maintain an uninterrupted flow of data.
 - [Validate](#validating-the-authenticity-of-notifications) the authenticity of notifications as having originated from Microsoft Graph.
 - [Provide](#decrypting-resource-data-from-change-notifications) a public encryption key and use a private key to decrypt resource data received through notifications.
 
@@ -40,13 +40,13 @@ This article walks through an example of subscribing to change notifications of 
 To have resource data included in change notifications, you **must** specify the following properties, in addition to those that are usually specified when [creating a subscription](webhooks.md#creating-a-subscription):
 
 - **includeResourceData** which should be set to `true` to explicitly request resource data.
-- **lifecycleNotificationUrl** which is an endpoint where [life cycle notifications](#subscription-lifecycle-notifications) are delivered. This can be the same or different as **notificationUrl**.
+- **lifecycleNotificationUrl** which is an endpoint where [life cycle notifications](#subscription-life-cycle-notifications) are delivered. This can be the same or different as **notificationUrl**.
 - **encryptionCertificate** which contains only the public key that Microsoft Graph uses to encrypt resource data. Keep the corresponding private key to [decrypt the content](#decrypting-resource-data-from-change-notifications).
 - **encryptionCertificateId** which is your own identifier for the certificate. Use this ID to match in each notification, which certificate to use for decryption.
 
 ### Subscription request example
 
-The following example subscribes to resource changes - channel messages being created or updated in Microsoft Teams. It also subscribes to life cycle events that can affect the flow of change notifications. See more details on life cycle notifications in the [next section](#subscription-lifecycle-notifications).
+The following example subscribes to resource changes - channel messages being created or updated in Microsoft Teams. It also subscribes to life cycle events that can affect the flow of change notifications. See more details on life cycle notifications in the [next section](#subscription-life-cycle-notifications).
 
 ```http
 POST https://graph.microsoft.com/beta/subscriptions
@@ -74,10 +74,10 @@ Content-Type: application/json
   "lifecycleNotificationUrl": "https://webhook.azurewebsites.net/api/lifecycleNotifications",
   "resource": "/teams/{id}/channels/{id}/messages",
   "includeResourceData": true,
-  "encryptionCertificateId": "{customId}",   
-  "encryptionCertificateThumbprint": "{thumbprintFromTheCertificate}",
+  "encryptionCertificateId": "{custom ID}",
+  "encryptionCertificateThumbprint": "{thumbprint from the certificate}",
   "expirationDateTime": "2019-09-19T11:00:00.0000000Z",
-  "clientState": "{secretClientState}"
+  "clientState": "{secret client state}"
 }
 ```
 
@@ -92,33 +92,36 @@ Certain events can interfere with normal notification flow in an existing subscr
 
 Life cycle notifications are delivered to the **lifecycleNotificationUrl**. 
 
-### Life cycle notification to re-authorize
+### Life cycle notification that challenges subscription authorization
 
-When the **lifecycleEvent** property in a notification indicates `reauthorizationRequired`, you must re-authorize the subscription to maintain the data flow.
+One type of life cycle notifications challenges the authorized state of an active subscription. When the **lifecycleEvent** property in a notification indicates `reauthorizationRequired`, you must re-authorize the subscription to maintain the data flow.
 
 When you create a long-lived subscription (for example, one that lasts for 3 days), resource data notifications flows to the location indicated in **notificationUrl**. However, at any point in time, Microsoft Graph may require that you re-authorize the subscription to prove that you still have access to resource data, in case the conditions of access have changed since the subscription was created. The following are examples of changes that affect your access to data:
 
 - A tenant administrator may revoke your app's permissions to read a resource
 - In an interactive scenario, the user who provides the authentication token to your app may be subject to dynamic policies based on various factors, such as their location, device state, or risk assesment. For example, if the user changes their physical location, the user may no longer be allowed to access the data, and your app will not be able to re-authorize the subscription. For more information on dynamic policies that control access, see [Azure AD conditional access policies](https://docs.microsoft.com/en-us/azure/active-directory/conditional-access/overview). 
 
-Given an active, non-expired subscription, the flow looks as follows:
+The flow of an authorization challenge for an active, non-expired subscription looks as follows:
 
 1. Microsoft Graph requires a subscription to be re-authorized
     
     The reasons for this may vary from resource to resource, and may change over time. You do not need to understand the specific cases in which re-authorization events occur, you only need to respond to them.
 
 2. Microsoft Graph sends an authorization challenge notification to the **lifecycleNotificationUrl**
-    1. Note that the flow of resource notifications may continue for a while, giving you extra time to respond. However, eventually resource notification delivery will pause, until you take the required action.
 
-3. You can respond to this notification in two ways:
-    1. Re-authorize the subscription; this does not extend the expiry date of the subscription.
-    2. Renew the subscription; this both re-authorizes and extends the expiry date.
+    Note that the flow of resource notifications may continue for a while, giving you extra time to respond. However, eventually resource notification delivery will pause, until you take the required action.
 
-  Note: both actions require you to present a valid authentication token; same as when creating or renewing a subscription.
+3. Respond to this notification in one of two ways:
+    1. Re-authorize the subscription. This does not extend the expiry date of the subscription.
+    2. Renew the subscription. This both re-authorizes and extends the expiry date.
 
-4. If you successfully re-authorize or renew the subscription, resource notifications will continue. Otherwise, resource notifications will remain paused.
+    Note: Both actions require you to present a valid authentication token, similar to [creating a new subscription](webhooks.md#creating-a-subscription) or [renewing a subscription before its expiry](webhooks.md#renewing-a-subscription).
+
+4. If you successfully re-authorize or renew the subscription, resource notifications continue. Otherwise, resource notifications remain paused.
     
-#### reauthorizationRequired notification example
+#### Example authorization challenge
+
+The following is an example life cycle notification that requests re-authorizing a subscription. 
 
 ```json
 {
@@ -127,54 +130,62 @@ Given an active, non-expired subscription, the flow looks as follows:
       "lifecycleEvent": "reauthorizationRequired",
       "subscriptionId": "e3898f08-5cd0-4a6a-80fc-6addbfb73b7b",
       "subscriptionExpirationDateTime": "2019-09-18T00:52:45.9696658+00:00",
-      "clientState": "<secretClientState>",
+      "clientState": "{secret client state}",
       "tenantId": "84bd8158-6d4d-4958-8b9f-9d6445542f95"
     }
   ]
 }
 ```
 
-A few things to note about this type of notification:
-- The `"lifecycleEvent": "reauthorizationRequired"` field designates this notification as an authorization challenge.
-- The notification does not contain any information about a specific resource, because it is not related to a resource change, but to the subscription state change.
-- Similar to resource notifications, life cycle notifications may be batched together (in the **value** array), each with a possibly different **lifecycleEvent** value. Process each notification in the batch accordingly.
+> **Note:** 
+> - The `"lifecycleEvent": "reauthorizationRequired"` field identifies this notification as an authorization challenge.
+> - The notification does not contain any information about a specific resource, because it is not related to a resource change, but to the subscription state change.
+> - Similar to resource notifications, life cycle notifications may be batched together (in the **value** collection), each with a possibly different **lifecycleEvent** value. Process each notification in the batch accordingly.
 
-#### Actions to take
+#### Responding to an authorization challenge
 
-1. [Acknowledge](webhooks.md#notifications) the receipt of the notification, by responding to the POST call with `202 - Accepted`.
-2. [Validate](webhooks.md#notifications) the authenticity of the notification.
+Take the following steps to process an authorization challenge life cycle notification. The first two steps of acknowledging and validating the life cycle notification is similar to [responding to a resource change notification](webhooks.md#processing-the-notification).
+
+1. Acknowledge the receipt of the notification, by responding to the POST call with `202 - Accepted`.
+2. Validate the authenticity of the notification. Further details [below](#validating-the-authenticity-of-notifications).
 3. Ensure the app has a valid access token to take the next step. 
-> **Note:** If you are using one of the [authentication libraries](https://docs.microsoft.com/azure/active-directory/develop/reference-v2-libraries) they will handle this for you by either reusing a valid cached token, or obtaining a new token, including asking the user to login again (e.g. with a new password). Note that obtaining a new token may fail, since the conditions of access may have changed, and the caller may no longer be allowed access to the resource data.
 
-4. Call either of these two APIs - if successful, both will have the affect of resuming the resource notification flow.
-    1. To re-authorize the subscription, without extending its expiration date, call the `/reauthorize` action:
-```http
-POST  https://graph.microsoft.com/beta/subscriptions/{id}/reauthorize
-Content-type: application/json
-```
-  2. To re-authorize and renew the subscription at the same time, perform a regular renew action:
-```http
-PATCH https://graph.microsoft.com/beta/subscriptions/{id}
-Content-Type: application/json
+    If you are using one of the [authentication libraries](https://docs.microsoft.com/azure/active-directory/develop/reference-v2-libraries), the library handles this for you by either reusing a valid cached token, or obtaining a new token from prompting the user to log in again with a new password. However, obtaining a new token may fail, since the conditions of access may have changed, and the user may no longer be allowed access to the resource data.
 
-{
-  "expirationDateTime": "2019-09-21T11:00:00.0000000Z",
-}
-```
+4. Call either of the following two APIs. If the API call succeeds, the resource notification flow resumes.
 
-> **Note:** This action may fail, because the authorization checks performed by the system may deny the app or the user access to the resource. It may be necessary for the app to obtain a new access token from the user to successfully reauthorize a subscription. You may retry these actions later, at any time, for example when the conditions of access have changed. Any resource changes in the time period from when the life cycle notification was sent, to when the app re-creates the subscription successfully, will be lost. The app will need to fetch those changes on its own.
+    - Call the `/reauthorize` action to re-authorize the subscription without extending its expiration date:
+        ```http
+        POST  https://graph.microsoft.com/beta/subscriptions/{id}/reauthorize
+        Content-type: application/json
+        ```
+    - Perform a regular renew action to re-authorize and renew the subscription at the same time:
+        ```http
+        PATCH https://graph.microsoft.com/beta/subscriptions/{id}
+        Content-Type: application/json
 
-#### Implementation guidelines
+        {
+           "expirationDateTime": "2019-09-21T11:00:00.0000000Z"
+        }
+        ```
+
+      Renewing may fail, because the authorization checks performed by the system may deny the app or the user access to the resource. It may be necessary for the app to obtain a new access token from the user to successfully re-authorize a subscription. 
+      
+      You may retry these actions later, at any time, and succeed if the conditions of access change. Any notifications about resource changes that happen between the time the life cycle notification was sent, and the time when the app eventually re-creates the subscription successfully, would be lost. In such cases, the app should separately fetch those changes.
+
+#### Tips
 
 Keep the following things in mind:
 
-1. Authorization challenges do not replace the need for you to renew your subscriptions before they expire. While you can choose to renew subscriptions as a response to challenges, the challenges may not be generated by the system for all of your subscriptions. For example, subscriptions that do not have any activity - no resource notifications pending delivery - may not signal any re-authorization challenges to your app. Continue to renew your subscriptions, as described [here](webhooks.md#managing-subscriptions).
+1. Authorization challenges do not replace the need to renew the resource change subscription before it expires. 
 
-2. Do not make assumptions about the frequency at which you may see challenges for your subscriptions, it is subject to change. The main reason for these signals is for you, the app developer, not to have to know all the cases in which re-authorization of your subscription is required; instead, Microsoft Graph tells you when you need to take action. Your app should be ready to handle these challenges anywhere from once every few minutes per each subscription to very rarely, only for some subscriptions.
+    While you can choose to renew a subscription when you receive an authorization challenge, Microsoft Graph may not challenge all of your subscriptions. For example, a subscription that does not have any activity and has no resource notifications pending delivery may not signal any re-authorization challenges to your app. Make sure to [renew subscriptions](webhooks.md#renewing-a-subscription) before they expire.
 
-### Future-proof your code
+2. Do not make assumptions about the frequency of authorization challenges for your subscriptions, as this is subject to change. The purpose of authorization challenge notifications is so you do not have to track which subscriptions require re-authorization. Instead, Microsoft Graph tells you when to take action. Your app should be ready to handle these challenges anywhere from once every few minutes for each subscription, to very rarely, only for some subscriptions.
 
-In the future Microsoft Graph will add more types of subscription life cycle notifications. They will be posted to the same endpoint: **lifecycleNotificationUrl**, but they will have a different value under **lifecycleEvent** and may contain a slightly different schema and properties, specific to the scenario for which they will be issued.
+### Future-proof your code for other types of life cycle notifications
+
+In the future, Microsoft Graph will add more types of subscription life cycle notifications. They will be posted to the same endpoint: **lifecycleNotificationUrl**, but they will have a different value under **lifecycleEvent** and may contain a slightly different schema and properties, specific to the scenario for which they will be issued.
 
 You should implement your code in a future-proof way so it does not break when Microsoft Graph introduces new types of life cycle notifications. We recommend the following approach:
 
