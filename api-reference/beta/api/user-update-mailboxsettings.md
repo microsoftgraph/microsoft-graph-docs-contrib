@@ -19,6 +19,7 @@ Enable, configure, or disable one or more of the following settings as part of a
 - timeFormat
 - time zone
 - [working hours](../resources/workinghours.md)
+- delegateMeetingMessageDeliveryOptions
 
 When updating the preferred date or time format for a user, specify it in respectively, the [short date](https://docs.microsoft.com/en-us/dotnet/standard/base-types/standard-date-and-time-format-strings#ShortDate) or [short time](https://docs.microsoft.com/en-us/dotnet/standard/base-types/standard-date-and-time-format-strings#ShortTime) format. 
 
@@ -62,6 +63,7 @@ shouldn't include existing values that haven't changed. The following are the wr
 |timeFormat|string|The time format for the user's mailbox.|
 |timeZone|string|The default time zone for the user's mailbox.|
 |workingHours|[workingHours](../resources/workinghours.md)|The hours, days of a week, and time zone that the user works.|
+|delegateMeetingMessageDeliveryOptions|delegateMeetingMessageDeliveryOptions| If the user has a calendar delegate, this specifies whether the delegate, mailbox owner, or both receive meeting messages and meeting responses. Possible values are: `sendToDelegateAndInformationToPrincipal`, `sendToDelegateAndPrincipal`, `sendToDelegateOnly`.|
 
 ## Response
 
@@ -250,8 +252,39 @@ Content-type: application/json
     }
 }
 ```
+### Example 3
+#### Request
+The third example sets the DelegateMeetingMessageDeliveryOptions for the signed-in user, by setting the **delegateMeetingMessageDeliveryOptions** property. Possible values are: `sendToDelegateAndInformationToPrincipal`, `sendToDelegateAndPrincipal`, `sendToDelegateOnly`.
 
+<!-- {
+  "blockType": "ignored",
+  "name": "update_mailboxsettings_2"
+}-->
+```http
+PATCH https://graph.microsoft.com/beta/me/mailboxSettings
+Content-Type: application/json
 
+{
+  "delegateMeetingMessageDeliveryOptions": "sendToDelegateOnly"
+} 
+```
+#### Response
+Here is an example of the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.
+<!-- {
+  "blockType": "ignored",
+  "name": "update_mailboxsettings_3",
+  "truncated": true,
+  "@odata.type": "microsoft.graph.mailboxSettings"
+} -->
+```http
+HTTP/1.1 200 OK
+Content-type: application/json
+
+{
+    "@odata.context":"https://graph.microsoft.com/beta/$metadata#users('94447c6e-ea4c-494c-a9ed-d905e366c5cb')/mailboxSettings",
+    "delegateMeetingMessageDeliveryOptions":"sendToDelegateOnly"
+}
+```
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2015-10-25 14:57:30 UTC -->
 <!--

@@ -22,6 +22,7 @@ receipt of their email)
 - time format
 - time zone
 - [working hours](../resources/workinghours.md)
+- delegateMeetingMessageDeliveryOptions
 
 Users can set their preferred date and time formats using Outlook on the web. Users can choose one of the supported [short date](https://docs.microsoft.com/en-us/dotnet/standard/base-types/standard-date-and-time-format-strings#ShortDate) or [short time](https://docs.microsoft.com/en-us/dotnet/standard/base-types/standard-date-and-time-format-strings#ShortTime) formats. This `GET` operation returns the format the user has chosen.
 
@@ -88,6 +89,7 @@ If successful, this method returns a `200 OK` response code and one of the follo
 - string (for **timeFormat**)
 - string (for **timeZone**)
 - [workingHours](../resources/workinghours.md)
+- string (for **delegateMeetingMessageDeliveryOptions**)
 
 ## Examples
 
@@ -167,7 +169,8 @@ Content-type: application/json
         }
     },
     "dateFormat": "MM/dd/yyyy",
-    "timeFormat": "hh:mm tt"
+    "timeFormat": "hh:mm tt",
+    "delegateMeetingMessageDeliveryOptions": "sendToDelegateOnly"
 }
 ```
 
