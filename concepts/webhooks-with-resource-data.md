@@ -177,31 +177,35 @@ Take the following steps to process an authorization challenge life cycle notifi
 
 Keep the following things in mind:
 
-1. Authorization challenges do not replace the need to renew the resource change subscription before it expires. 
+1. Authorization challenges do not replace the need to renew a resource change subscription before it expires. 
 
     While you can choose to renew a subscription when you receive an authorization challenge, Microsoft Graph may not challenge all of your subscriptions. For example, a subscription that does not have any activity and has no resource notifications pending delivery may not signal any re-authorization challenges to your app. Make sure to [renew subscriptions](webhooks.md#renewing-a-subscription) before they expire.
 
-2. Do not make assumptions about the frequency of authorization challenges for your subscriptions, as this is subject to change. The purpose of authorization challenge notifications is so you do not have to track which subscriptions require re-authorization. Instead, Microsoft Graph tells you when to take action. Your app should be ready to handle these challenges anywhere from once every few minutes for each subscription, to very rarely, only for some subscriptions.
+2. The frequency of authorization challenges is subject to change.
+
+    Do not make assumptions about the frequency of authorization challenges. These notifications tell you when to take actions, saving you from having to track which subscriptions require re-authorization. Be ready to handle authorization challenges anywhere from once a few minutes for every subscription, to rarely for only some of your subscriptions.
 
 ### Future-proof your code for other types of life cycle notifications
 
-In the future, Microsoft Graph will add more types of subscription life cycle notifications. They will be posted to the same endpoint: **lifecycleNotificationUrl**, but they will have a different value under **lifecycleEvent** and may contain a slightly different schema and properties, specific to the scenario for which they will be issued.
+Expect subscription life cycle notifications to be posted to the same endpoint specified by **lifecycleNotificationUrl**. They differentiate by the **lifecycleEvent** property and may contain slightly different schema and properties to serve the scenarios they address.
 
-You should implement your code in a future-proof way so it does not break when Microsoft Graph introduces new types of life cycle notifications. We recommend the following approach:
+Implement your code in anticipation of new types of life cycle notifications:
 
-1. Explicitly identify each notification as an event that you support, using the **lifecycleEvent** property. For example, look for the `"lifecycleEvent": "reauthorizationRequired"` property to identify a specific event, and handle it.
+1. Use the **lifecycleEvent** property to determine the appropriate response for each notification. For example, look for the `"lifecycleEvent": "reauthorizationRequired"` property to identify a specific event, and handle it.
 
-1. In your app, ignore any life cycle events that the app does not recognize, and log them to gain awareness.
+1. Log any life cycle events that your app does not recognize to gain awareness.
 
-1. Watch for announcements of notifications for new scenarios, as there may be more types of life cycle notifications in the future.
+1. Subscribe to the [Microsoft Graph Developer Blog](https://developer.microsoft.com/en-us/graph/blogs/) to watch for announcements of life cycle notifications for new scenarios.
 
-1. At your discretion, look up the related documentation for new life cycle notifications and implement support for them as appropriate.
+1. Look up related documentation for new life cycle notifications and implement support for them as appropriate.
 
 ## Validating the authenticity of notifications
 
-When you receive notifications with resource data you will likely execute some business logic based on that data. It is important that you first verify the authenticity of each notification; otherwise a 3rd party could spoof your app with false notifications and make it execute its business logic incorrectly, which could result in a security incident.
+After receiving notifications with resource data, often you would execute some business logic based on that data. First verifying the authenticity of each notification is important. Otherwise, a third party could spoof your app with false notifications, make it execute its business logic incorrectly, and lead to a security incident.
 
-For basic notifications, which do not contain resource data, this validation can be simplified and based on the **clientState** value, as described [here](webhooks.md#notifications). That is acceptable, because you rely on additional trusted Microsoft Graph calls to get access to resource data, and therefore the impact of any spoofing attempts is limited. A more thorough validation is recommended before you process resource data delivered via notifications.
+For basic notifications which do not contain resource data,  validation can be simplified and based on the **clientState** value as described [here](webhooks.md#processing-the-notification). That is acceptable, because you rely on additional trusted Microsoft Graph calls to get access to resource data, and therefore the impact of any spoofing attempts is limited. 
+
+For notifications that deliver resource data, perform a more thorough validation before processing the data
 
 ### Validation tokens in the notification
 
