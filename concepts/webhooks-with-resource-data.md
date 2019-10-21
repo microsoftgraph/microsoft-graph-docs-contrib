@@ -205,7 +205,7 @@ After receiving notifications with resource data, often you would execute some b
 
 For basic notifications which do not contain resource data,  validation can be simplified and based on the **clientState** value as described [here](webhooks.md#processing-the-notification). That is acceptable, because you rely on additional trusted Microsoft Graph calls to get access to resource data, and therefore the impact of any spoofing attempts is limited. 
 
-For notifications that deliver resource data, perform a more thorough validation before processing the data
+For notifications that deliver resource data, perform a more thorough validation before processing the data.
 
 ### Validation tokens in the notification
 
