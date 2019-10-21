@@ -374,7 +374,7 @@ In the meantime, to unblock development and testing you can use the following wo
 
 ### Conditional access policies and named locations
 
-Write operations in the conditional access policies and named locations APIs require 2 scopes: `Policy.ReadWrite.ConditionalAccess` and `Directory.AccessAsUser.All`. Only one of them should be enough, being `Policy.ReadWrite.ConditionalAccess` the least privileged one. Until this is fixed, developers are simply advised to acquire a token with both of these scopes.
+Write operations for the conditional access policies and named locations APIs require two permissions: `Policy.ReadWrite.ConditionalAccess` and `Directory.AccessAsUser.All`. Generally, the least privileged permission,  `Policy.ReadWrite.ConditionalAccess`, should be sufficient. At this time, you should acquire a token with both of these permissions.
 
 ## Functionality available only in Office 365 REST or Azure AD Graph APIs
 
