@@ -17,8 +17,11 @@ For details about known issues with Microsoft Graph APIs, see [Known issues](kno
 
 | **Change type** | **Version** | **Description**                  |
 |:----------------|:------------|:-----------------------------------------|
+
 | Addition | Beta | Added the **Trustframeworkkeyset** property to the [Trustframeworkkeyset](/graph/api/resources/trustframeworkkeyset?view=graph-rest-beta) resource. |
 | Addition | Beta | Added the **Userflow** property to the [Identityuserflow](/graph/api/resources/identityuserflow?view=graph-rest-beta) resource. |
+| Addition | v1.0 | Added new [orgContact](/graph/api/resources/orgcontact?view=graph-rest-1.0) resource. These contacts are managed by the organization, and are different from [personal contacts](outlook-contacts-concept-overview.md)|
+| Addition | v1.0 | Added new [physicalOfficeAddress](/graph/api/resources/physicalOfficeAddress?view=graph-rest-1.0) resource. |
 | Addition | beta and v1.0 | Added the **securityIdentifier** property to the [group](/graph/api/resources/group?view=graph-rest-1.0) resource. |
 | Addition | beta and v1.0 | Added the **mdmAppId** property to the [device](/graph/api/resources/group?view=graph-rest-1.0) resource. |
 | Addition | Beta | Added the **manufacturer** and **model** properties to the [device](/graph/api/resources/device?view=graph-rest-beta) entity. |
