@@ -60,6 +60,7 @@ In the request body, supply the values for relevant fields that should be update
 | end|DateTimeTimeZone|The date, time, and time zone that the event ends. |
 | importance|String|The importance of the event. Possible values are: `low`, `normal`, `high`.|
 | isAllDay|Boolean|Set to true if the event lasts all day.|
+|isOnlineMeeting|Boolean| `True` if this event has online meeting information, `false` otherwise. Default is false. Optional.|
 | isReminderOn|Boolean|Set to true if an alert is set to remind the user of the event.|
 | location|Location|The location of the event.|
 |locations|[Location](../resources/location.md) collection|The locations where the event is held or attended from. The **location** and **locations** properties always correspond with each other. If you update the **location** property, any prior locations in the **locations** collection would be removed and replaced by the new **location** value. |
@@ -108,6 +109,7 @@ Content-length: 285
   "recurrence": null,
   "uid": "iCalUId-value",
   "reminderMinutesBeforeStart": 99,
+  "isOnlineMeeting": true,
   "isReminderOn": true
 }
 ```
@@ -144,6 +146,7 @@ Content-length: 285
   "recurrence": null,
   "uid": "iCalUId-value",
   "reminderMinutesBeforeStart": 99,
+  "isOnlineMeeting": true,
   "isReminderOn": true
 }
 ```
