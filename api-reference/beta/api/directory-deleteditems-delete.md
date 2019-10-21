@@ -1,6 +1,6 @@
 ---
 title: "Permanently delete item"
-description: "Permanently deletes an item from deleted items."
+description: "Permanently delete an item from deleted items."
 author: "davidmu1"
 localization_priority: Normal
 ms.prod: "microsoft-identity-platform"
@@ -11,13 +11,14 @@ doc_type: apiPageType
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Permanently deletes an item from [deleted items](../resources/directory.md).
+Permanently delete an item from [deleted items](../resources/directory.md).
 
-Currently, deleted items functionality is only supported for the [group](../resources/group.md) and [user](../resources/user.md) resources. You can permanently delete an item from deleted items. But, once an item is permanently deleted, it **cannot** be restored.
+Currently, deleted items functionality is only supported for the [application](../resources/application.md), [group](../resources/group.md) and [user](../resources/user.md) resources. You can permanently delete an item from deleted items. But, once an item is permanently deleted, it **cannot** be restored.
 
 ## Permissions
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
 
+* For applications: Application.ReadWrite.OwnedBy, Application.ReadWrite.All, Directory.AccessAsUser.All
 * For users: User.ReadWrite.All, Directory.AccessAsUser.All
 * For groups: Group.ReadWrite.All, Directory.AccessAsUser.All
 
