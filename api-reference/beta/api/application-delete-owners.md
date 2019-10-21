@@ -1,15 +1,17 @@
 ---
-title: "Delete application"
-description: "Deletes an application."
+title: "Remove owner"
+description: "Use this API to remove an owner from an application."
 author: "davidmu1"
 localization_priority: Normal
 ms.prod: "microsoft-identity-platform"
 doc_type: apiPageType
 ---
 
-# Delete application
+# Remove owner
 
-Deletes an application.
+[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
+
+Use this API to remove an owner from an application.
 
 ## Permissions
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
@@ -23,39 +25,52 @@ One of the following permissions is required to call this API. To learn more, in
 ## HTTP request
 <!-- { "blockType": "ignored" } -->
 ```http
-DELETE /applications/{id}
-```
+POST /applications/{id}/owners/{id}/$ref
 
+```
 ## Request headers
-| Name       | Type | Description|
-|:---------------|:--------|:----------|
-| Authorization  | string  | Bearer {token}. Required. |
+| Name | Description|
+|:---- |:---------- |
+| Authorization | Bearer {token}. Required.  |
 
 ## Request body
-Do not supply a request body for this method.
+In the request body, supply the identifier of the directory object to be assigned as owner.
 
 ## Response
 
-If successful, this method returns `204 No Content` response code. It does not return anything in the response body.
+If successful, this method returns a `204 No Content` response code.
 
 ## Example
-##### Request
-Here is an example of the request.
 
-# [HTTP](#tab/http)
+### Request
+
+The following example shows the request.
 <!-- {
   "blockType": "request",
-  "name": "delete_application"
+  "name": "application_delete_owners"
 }-->
+
 ```http
-DELETE https://graph.microsoft.com/v1.0/applications/{id}
+DELETE https://graph.microsoft.com/v1.0/applications/{id}/owners/{id}/$ref
+Content-type: application/json
+Content-length: 30
+
+{
+"@odata.id": "https://graph.microsoft.com/v1.0/directoryObjects/{id}"
+}
+
 ```
 
-##### Response
-Here is an example of the response. 
+### Response
+
+The following is an example of the response.
+
+>**Note:** The response object shown here might be shortened for readability. All the properties will be returned from an actual call.
+
 <!-- {
   "blockType": "response",
-  "truncated": true
+  "truncated": true,
+  "@odata.type": "microsoft.graph.directoryObject"
 } -->
 ```http
 HTTP/1.1 204 No Content
@@ -66,7 +81,7 @@ HTTP/1.1 204 No Content
 <!--
 {
   "type": "#page.annotation",
-  "description": "Delete application",
+  "description": "Remove owner",
   "keywords": "",
   "section": "documentation",
   "tocPath": "",

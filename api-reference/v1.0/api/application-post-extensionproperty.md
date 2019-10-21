@@ -63,6 +63,7 @@ The following is an example of the request.
 ```http
 POST https://graph.microsoft.com/v1.0/applications/{id}/extensionProperties
 Content-type: application/json
+
 {
     "name": "extensionName",
     "dataType": "string",
