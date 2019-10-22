@@ -1,8 +1,8 @@
 ---
 title: "Working with Excel in Microsoft Graph"
-description: "You can use Microsoft Graph to allow web and mobile applications to read and modify Excel workbooks stored in OneDrive, SharePoint, or other supported storage platforms. The `Workbook` (or Excel file) resource contains all the other Excel resources through relationships. You can access a workbook through the Drive API by identifying the location of the file in the URL. For example:"
+description: "You can use Microsoft Graph to allow web and mobile applications to read and modify Excel workbooks stored in OneDrive, SharePoint, or other supported storage platforms."
 localization_priority: Normal
-author: "lumine2008"
+author: "grangery"
 ms.prod: "excel"
 doc_type: conceptualPageType
 ---
@@ -1175,6 +1175,9 @@ For example, a Range can consist of one or more cells. In cases where the indivi
 }
 ```
 
+A null value is also returned in the response in the following cases:
+- If an error occurs when trying to get a certain property of an object and this property can be set as a null, the property might return a null value in the response.
+- For a range object, when getting a range for entire row or entire column, some properties might return null as the response. If the range size exceeds the upper limitation (5M cells), some properties will return null as the value.
 
 ### Blank input and output
 

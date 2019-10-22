@@ -81,7 +81,7 @@ Content-type: application/json
 Content-length: 1568
 
 {
-    "@odata.context": "https://graph.microsoft.com/beta/$metadata#education/synchronizationProfiles('{id}')/errors",
+    "@odata.context": "https://graph.microsoft.com/beta/$metadata#education/synchronizationProfiles/{id}/errors",
     "@odata.count": 14,
     "value": [
         {

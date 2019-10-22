@@ -59,7 +59,7 @@ Here is an example of the response. Note: The response object shown here may be 
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 5210
+Content-Length: 6400
 
 {
   "value": [
@@ -207,6 +207,35 @@ Content-Length: 5210
         "@odata.type": "microsoft.graph.mimeContent",
         "type": "Type value",
         "value": "dmFsdWU="
+      },
+      "singleSignOnExtension": {
+        "@odata.type": "microsoft.graph.iosKerberosSingleSignOnExtension",
+        "realm": "Realm value",
+        "domains": [
+          "Domains value"
+        ],
+        "blockAutomaticLogin": true,
+        "cacheName": "Cache Name value",
+        "credentialBundleIdAccessControlList": [
+          "Credential Bundle Id Access Control List value"
+        ],
+        "domainRealms": [
+          "Domain Realms value"
+        ],
+        "isDefaultRealm": true,
+        "passwordBlockModification": true,
+        "passwordExpirationDays": 6,
+        "passwordExpirationNotificationDays": 2,
+        "userPrincipalName": "User Principal Name value",
+        "passwordRequireActiveDirectoryComplexity": true,
+        "passwordPreviousPasswordBlockCount": 2,
+        "passwordMinimumLength": 5,
+        "passwordMinimumAgeDays": 6,
+        "passwordRequirementsDescription": "Password Requirements Description value",
+        "requireUserPresence": true,
+        "activeDirectorySiteCode": "Active Directory Site Code value",
+        "passwordEnableLocalSync": true,
+        "blockActiveDirectorySiteAutoDiscovery": true
       }
     }
   ]

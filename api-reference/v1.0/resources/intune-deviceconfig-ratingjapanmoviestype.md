@@ -1,7 +1,7 @@
 ---
 title: "ratingJapanMoviesType enum type"
 description: "Movies rating labels in Japan"
-author: "tfitzmac"
+author: "davidmu1"
 localization_priority: Normal
 ms.prod: "Intune"
 doc_type: enumPageType
@@ -22,6 +22,7 @@ Movies rating labels in Japan
 |parentalGuidance|3|The PG-12 classification requests parental guidance for young people under 12|
 |agesAbove15|4|The R15+ classification is suitable for viewers of 15 or older|
 |agesAbove18|5|The R18+ classification is suitable for viewers of 18 or older|
+
 
 
 

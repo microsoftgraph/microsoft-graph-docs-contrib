@@ -4,6 +4,7 @@ description: "To use Microsoft Graph to read and write resources on behalf of a 
 author: "jackson-woods"
 localization_priority: Priority
 ms.prod: "microsoft-identity-platform"
+ms.custom: graphiamtop20
 ---
 
 # Get access on behalf of a user
@@ -102,7 +103,7 @@ Your app uses the authorization `code` received in the previous step to request 
 ```
 // Line breaks for legibility only
 
-POST /common/oauth2/v2.0/token HTTP/1.1
+POST /{tenant}/oauth2/v2.0/token HTTP/1.1
 Host: https://login.microsoftonline.com
 Content-Type: application/x-www-form-urlencoded
 
@@ -271,3 +272,4 @@ For more information about getting access to Microsoft Graph on behalf of a user
 
 - For information about using the Microsoft identity platform endpoint with different kinds of apps, see the **Get Started** links in the [Microsoft identity platform developer documentation](https://docs.microsoft.com/azure/active-directory/develop/active-directory-developers-guide). The documentation contains links to overview topics, quickstarts, tutorials, code samples and protocol documentation for different kinds of apps supported by the Microsoft identity platform endpoint.
 - For information about the Microsoft Authentication Library (MSAL) and server middleware available for use with the Microsoft identity platform endpoint, see [Microsoft Authentication Libraries](https://docs.microsoft.com/azure/active-directory/develop/msal-overview).
+
