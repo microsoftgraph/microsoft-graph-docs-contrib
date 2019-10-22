@@ -47,14 +47,14 @@ A calendar which is a container for events. It can be a calendar for a [user](us
 |canViewPrivateItems |Boolean |True if the user can read calendar items that have been marked private, false otherwise. |
 |changeKey|String|Identifies the version of the calendar object. Every time the calendar is changed, changeKey changes as well. This allows Exchange to apply changes to the correct version of the object. Read-only.|
 |color|String|Specifies the color theme to distinguish the calendar from other calendars in a UI. The property values are: LightBlue=0, LightGreen=1, LightOrange=2, LightGray=3, LightYellow=4, LightTeal=5, LightPink=6, LightBrown=7, LightRed=8, MaxColor=9, Auto=-1|
-|defaultOnlineMeetingProvider|onlineMeetingProviderType| The default online meeting provider for meetings sent from this calendar. Possible values are: `unknown`, `skypeForBusiness`, `skypeForConsumer`, `teamsForBusiness`.|
+|defaultOnlineMeetingProvider|onlineMeetingProviderType|The default online meeting provider for meetings sent from this calendar. Possible values are: `unknown`, `skypeForBusiness`, `skypeForConsumer`, `teamsForBusiness`.|
 |hexColor|String|The calendar color, expressed in a hex color code of three hexidecimal values, each ranging from 00 to FF and representing the red, green, or blue components of the color in the RGB color space. If the user has never explicitly set a color for the calendar, this property is  empty. |
 |id|String|The group's unique identifier. Read-only.|
-|isDefaultCalendar|Boolean|True if this calendar is the user's default calendar, false otherwise.|
+|isDefaultCalendar|Boolean|True if this is the default calendar where new events are created by default, false otherwise.|
 |isRemovable|Boolean| Indicates whether this user calendar can be deleted from the user mailbox.|
 |isShared |Boolean |True if the user has shared the calendar with other users, false otherwise. Since only the user who created the calendar can share it, **isShared** and **isSharedWithMe** cannot be true for the same user. |
 |isSharedWithMe |Boolean |True if the user has been shared this calendar, false otherwise. This property is always false for a calendar owner.  |
-|isTallyingResponses|Boolean| Indicates whether this user calendar supports tracking of meeting responses. Only meeting invites sent from users' primary calendars support tracking of meeting responses.|
+|isTallyingResponses|Boolean|Indicates whether this user calendar supports tracking of meeting responses. Only meeting invites sent from users' primary calendars support tracking of meeting responses.|
 |name|String|The calendar name.|
 |owner |[emailAddress](emailaddress.md) | If set, this represents the user who created or added the calendar. For a calendar that the user created or added, the **owner** property is set to the user. For a calendar shared with the user, the **owner** property is set to the person who shared that calendar with the user. |
 
@@ -65,6 +65,7 @@ A calendar which is a container for events. It can be a calendar for a [user](us
 |events|[event](event.md) collection|The events in the calendar. Navigation property. Read-only.|
 |multiValueExtendedProperties|[multiValueLegacyExtendedProperty](multivaluelegacyextendedproperty.md) collection| The collection of multi-value extended properties defined for the calendar. Read-only. Nullable.|
 |singleValueExtendedProperties|[singleValueLegacyExtendedProperty](singlevaluelegacyextendedproperty.md) collection| The collection of single-value extended properties defined for the calendar. Read-only. Nullable.|
+|calendarPermission|[calendarPermission](calendarpermission.md)| The permissions of the users with whom the calendar is shared.|
 
 ## JSON representation
 
