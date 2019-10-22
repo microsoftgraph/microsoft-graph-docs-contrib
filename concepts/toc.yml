@@ -154,6 +154,8 @@ items:
             href: outlook-share-messages-folders.md
           - name: Send mail from another user
             href: outlook-send-mail-from-other-user.md
+          - name: Attach large files (preview)
+            href: outlook-large-attachments.md
           - name: Organize messages
             href: outlook-organize-messages.md
           - name: Immutable ID

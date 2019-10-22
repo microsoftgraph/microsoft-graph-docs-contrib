@@ -7,6 +7,14 @@ ms.prod: ""
 author: ""
 ---
 
+### attachmentType values
+
+| Member
+|:--------------
+| file
+| item
+| reference
+
 ### analyticsActivityType values
 
 | Member
