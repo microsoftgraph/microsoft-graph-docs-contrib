@@ -30,7 +30,7 @@ One of the following permissions is required to call this API. To learn more, in
 POST /app/calls/{id}/changeScreenSharingRole
 POST /communications/calls/{id}/changeScreenSharingRole
 ```
-> **Note:** The `/app` path will be deprecated. Going forward, use the `/communications` path.
+> **Note:** The `/app` path is deprecated. Going forward, use the `/communications` path.
 
 ## Request headers
 | Name          | Description               |
@@ -99,7 +99,6 @@ Note the `direction: sendOnly` property on the media stream.
 
 ```http
 POST https://bot.contoso.com/api/calls
-Authorization: Bearer <TOKEN>
 Content-Type: application/json
 ```
 

@@ -29,7 +29,7 @@ Retrieve a list of participant objects in the call.
 GET /app/calls/{id}/participants
 GET /communications/calls/{id}/participants
 ```
-> **Note:** The `/app` path will be deprecated. Going forward, use the `/communications` path.
+> **Note:** The `/app` path is deprecated. Going forward, use the `/communications` path.
 
 ## Optional query parameters
 
@@ -61,7 +61,6 @@ If successful, this method returns a `200 OK` response code and collection of [p
 
 ```http
 GET https://graph.microsoft.com/beta/communications/calls/7531d31f-d10d-44de-802f-c569dbca451c/participants
-Authorization: Bearer <TOKEN>
 ```
 # [C#](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/get-participants-csharp-snippets.md)]

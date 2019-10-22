@@ -32,7 +32,7 @@ One of the following permissions is required to call this API. To learn more, in
 POST /app/calls/{id}/participants/invite
 POST /communications/calls/{id}/participants/invite
 ```
-> **Note:** The `/app` path will be deprecated. Going forward, use the `/communications` path.
+> **Note:** The `/app` path is deprecated. Going forward, use the `/communications` path.
 
 ## Request headers
 | Name          | Description               |
@@ -149,7 +149,6 @@ Content-Type: application/json
 
 ```http
 POST https://bot.contoso.com/api/calls
-Authorization: Bearer <TOKEN>
 Content-Type: application/json
 ```
 
@@ -188,7 +187,6 @@ Content-Type: application/json
 
 ```http
 POST https://bot.contoso.com/api/calls
-Authorization: Bearer <TOKEN>
 Content-Type: application/json
 ```
 
@@ -346,7 +344,6 @@ Content-Type: application/json
 ##### Notification - operation completed
 ```http
 POST https://bot.contoso.com/api/calls
-Authorization: Bearer <TOKEN>
 Content-Type: application/json
 ```
 <!-- {
@@ -402,7 +399,6 @@ Content-Type: application/json
 ##### Notification - roster updated with participants added
 ```http
 POST https://bot.contoso.com/api/calls
-Authorization: Bearer <TOKEN>
 Content-Type: application/json
 ```
 
@@ -570,7 +566,6 @@ Content-Type: application/json
 
 ``` http
 POST https://bot.contoso.com/api/calls
-Authorization: Bearer <TOKEN>
 Content-Type: application/json
 ```
 
@@ -612,7 +607,6 @@ Content-Type: application/json
 
 ```http
 POST https://bot.contoso.com/api/calls
-Authorization: Bearer <TOKEN>
 Content-Type: application/json
 ```
 

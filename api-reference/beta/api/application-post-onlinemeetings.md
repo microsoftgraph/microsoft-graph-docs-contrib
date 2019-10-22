@@ -31,7 +31,7 @@ POST /app/onlineMeetings
 POST /communications/onlineMeetings
 POST /me/onlineMeetings
 ```
-> **Note:** The `/app` path will be deprecated. Going forward, use the `/communications` path.
+> **Note:** The `/app` path is deprecated. Going forward, use the `/communications` path.
 
 ## Request headers
 | Name          | Description               |
@@ -61,7 +61,6 @@ If successful, this method returns a `201 Created` response code and an [onlineM
 ```http
 POST https://graph.microsoft.com/beta/communications/onlineMeetings
 Content-Type: application/json
-Content-Length: 1553
 
 {
   "isBroadcast": "false",
@@ -109,7 +108,6 @@ In the request body, supply a JSON representation of the [onlineMeeting](../reso
 ```http
 HTTP/1.1 201 Created
 Content-Type: application/json
-Content-Length: 1574
 
 {
   "autoAdmittedUsers": "everyone",
@@ -158,7 +156,6 @@ Content-Length: 1574
 ```http
 POST https://graph.microsoft.com/beta/me/onlineMeetings
 Content-Type: application/json
-Authorization: Bearer eyJ0eXAiOi
 
 {
   "startDateTime":"2019-07-12T14:30:34.2444915-07:00",
@@ -179,7 +176,6 @@ Authorization: Bearer eyJ0eXAiOi
 ```http
 HTTP/1.1 201 Created
 Content-Type: application/json
-Content-Length: 1574
 
 {
   @odata.context=https://graph.microsoft.com/beta/$metadata#users('f4053f86-17cc-42e7-85f4-f0389ac980d6')/onlineMeetings/$entity
@@ -229,7 +225,6 @@ Content-Length: 1574
 ```http
 POST https://graph.microsoft.com/beta/me/onlineMeetings
 Content-Type: application/json
-Authorization: Bearer eyJ0eXAiOi
 
 {
   "startDateTime":"2019-07-12T14:30:34.2444915-07:00",
@@ -253,7 +248,6 @@ Authorization: Bearer eyJ0eXAiOi
 ```http
 HTTP/1.1 201 Created
 Content-Type: application/json
-Content-Length: 1574
 
 {
   @odata.context=https://graph.microsoft.com/beta/$metadata#users('f4053f86-17cc-42e7-85f4-f0389ac980d6')/onlineMeetings/$entity

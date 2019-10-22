@@ -32,7 +32,7 @@ One of the following permissions is required to call this API. To learn more, in
 POST /app/calls
 POST /communications/calls
 ```
-> **Note:** The `/app` path will be deprecated. Going forward, use the `/communications` path.
+> **Note:** The `/app` path is deprecated. Going forward, use the `/communications` path.
 
 ## Request headers
 | Name          | Description               |
@@ -65,7 +65,6 @@ The following example shows the request which makes a peer-to-peer call between 
 ```http
 POST https://graph.microsoft.com/beta/communications/calls
 Content-Type: application/json
-Authorization: Bearer <Token>
 
 {
   "@odata.type": "#microsoft.graph.call",
@@ -119,7 +118,6 @@ Authorization: Bearer <Token>
 HTTP/1.1 201 Created
 Location: https://graph.microsoft.com/beta/communications/calls/2e1a0b00-2db4-4022-9570-243709c565ab
 Content-Type: application/json
-
 
 {
   "@odata.type": "#microsoft.graph.call",
@@ -194,7 +192,6 @@ Content-Type: application/json
 
 ```http
 POST https://bot.contoso.com/callback
-Authorization: Bearer <TOKEN>
 Content-Type: application/json
 ```
 
@@ -224,7 +221,6 @@ Content-Type: application/json
 
 ```http
 POST https://bot.contoso.com/callback
-Authorization: Bearer <TOKEN>
 Content-Type: application/json
 ```
 
@@ -268,7 +264,6 @@ The following example shows the request which makes a peer-to-peer call between 
 ```http
 POST https://graph.microsoft.com/beta/communications/calls
 Content-Type: application/json
-Authorization: Bearer <Token>
 
 {
   "@odata.type": "#microsoft.graph.call",
@@ -406,7 +401,6 @@ The values of authorization token, callback url, application id, application nam
 ```http
 POST https://graph.microsoft.com/beta/communications/calls
 Content-Type: application/json
-Authorization: Bearer <Token>
 
 {
   "@odata.type": "#microsoft.graph.call",
@@ -535,7 +529,6 @@ Content-Type: application/json
 
 ```http
 POST https://bot.contoso.com/callback
-Authorization: Bearer <TOKEN>
 Content-Type: application/json
 ```
 
@@ -584,7 +577,6 @@ Content-Type: application/json
 
 ```http
 POST https://bot.contoso.com/callback
-Authorization: Bearer <TOKEN>
 Content-Type: application/json
 ```
 
@@ -632,7 +624,6 @@ Content-Type: application/json
 
 ```http
 POST https://bot.contoso.com/callback
-Authorization: Bearer <TOKEN>
 Content-Type: application/json
 ```
 
@@ -737,7 +728,6 @@ To join the meeting with application hosted media update the media config with t
 ```http
 POST https://graph.microsoft.com/beta/communications/calls
 Content-Type: application/json
-Authorization: Bearer <Token>
 
 {
   "@odata.type": "#microsoft.graph.call",
@@ -790,7 +780,6 @@ The values of authorization token, callback url, application id, application nam
 ```http
 POST https://graph.microsoft.com/beta/communications/calls
 Content-Type: application/json
-Authorization: Bearer <Token>
 
 {
   "@odata.type": "#microsoft.graph.call",
@@ -848,7 +837,6 @@ The display name is the name you want to be displayed in the meeting for your gu
 ```http
 POST https://graph.microsoft.com/beta/communications/calls
 Content-Type: application/json
-Authorization: Bearer <Token>
 
 {
   "@odata.type": "#microsoft.graph.call",
@@ -906,7 +894,6 @@ Authorization: Bearer <Token>
 
 ```http
 POST https://bot.contoso.com/callback
-Authorization: Bearer <TOKEN>
 Content-Type: application/json
 ```
 

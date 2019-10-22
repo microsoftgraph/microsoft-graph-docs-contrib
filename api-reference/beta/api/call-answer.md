@@ -34,7 +34,7 @@ You do not need any permissions to answer a peer-to-peer call. You need one of t
 POST /app/calls/{id}/answer
 POST /communications/calls/{id}/answer
 ```
-> **Note:** The `/app` path will be deprecated. Going forward, use the `/communications` path.
+> **Note:** The `/app` path is deprecated. Going forward, use the `/communications` path.
 
 ## Request headers
 | Name          | Description               |
@@ -117,7 +117,6 @@ HTTP/1.1 202 Accepted
 
 ```http
 POST https://bot.contoso.com/api/calls
-Authorization: Bearer <TOKEN>
 Content-Type: application/json
 ```
 
@@ -189,7 +188,6 @@ Content-Type: application/json
 }-->
 ```http
 POST /communications/calls/57DAB8B1894C409AB240BD8BEAE78896/answer
-Authorization: Bearer <TOKEN>
 Content-Type: application/json
 
 {
@@ -225,7 +223,6 @@ HTTP/1.1 202 Accepted
 
 ```http
 POST https://bot.contoso.com/api/calls
-Authorization: Bearer <TOKEN>
 Content-Type: application/json
 ```
 
@@ -254,7 +251,6 @@ Content-Type: application/json
 
 ```http
 POST https://bot.contoso.com/api/calls
-Authorization: Bearer <TOKEN>
 Content-Type: application/json
 ```
 
@@ -285,7 +281,6 @@ Content-Type: application/json
 
 ```http
 POST https://bot.contoso.com/api/calls
-Authorization: Bearer <TOKEN>
 Content-Type: application/json
 ```
 
@@ -344,7 +339,6 @@ Content-Type: application/json
 }-->
 ```http
 POST /communications/calls/57DAB8B1894C409AB240BD8BEAE78896/answer
-Authorization: Bearer <TOKEN>
 Content-Type: application/json
 
 {
@@ -372,7 +366,6 @@ HTTP/1.1 202 Accepted
 
 ```http
 POST https://bot.contoso.com/api/calls
-Authorization: Bearer <TOKEN>
 Content-Type: application/json
 ```
 
@@ -401,7 +394,6 @@ Content-Type: application/json
 
 ```http
 POST https://bot.contoso.com/api/calls
-Authorization: Bearer <TOKEN>
 Content-Type: application/json
 ```
 

@@ -27,7 +27,7 @@ Delete or hang up an active call. For group calls, this will only delete your ca
 DELETE /app/calls/{id}
 DELETE /communications/calls/{id}
 ```
-> **Note:** The `/app` path will be deprecated. Going forward, use the `/communications` path.
+> **Note:** The `/app` path is deprecated. Going forward, use the `/communications` path.
 
 ## Request headers
 | Name          | Description               |
@@ -85,7 +85,6 @@ HTTP/1.1 204 No Content
 
 ```http
 POST https://bot.contoso.com/api/calls
-Authorization: Bearer <TOKEN>
 Content-Type: application/json
 ```
 
@@ -115,7 +114,6 @@ Content-Type: application/json
 
 ```http
 POST https://bot.contoso.com/api/calls
-Authorization: Bearer <TOKEN>
 Content-Type: application/json
 ```
 

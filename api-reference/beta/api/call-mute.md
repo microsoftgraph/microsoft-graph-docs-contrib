@@ -28,7 +28,7 @@ One of the following permissions is required to call this API. To learn more, in
 POST /app/calls/{id}/mute
 POST /communications/calls/{id}/mute
 ```
-> **Note:** The `/app` path will be deprecated. Going forward, use the `/communications` path.
+> **Note:** The `/app` path is deprecated. Going forward, use the `/communications` path.
 
 ## Request headers
 | Name          | Description               |
@@ -59,7 +59,6 @@ The following example shows the request.
 }-->
 ```http
 POST https://graph.microsoft.com/beta/communications/calls/57dab8b1-894c-409a-b240-bd8beae78896/mute
-Authorization: Bearer <TOKEN>
 Content-Type: application/json
 
 {
@@ -117,7 +116,6 @@ Content-Length: 259
 
 ```http
 POST https://bot.contoso.com/api/calls
-Authorization: Bearer <TOKEN>
 Content-Type: application/json
 ```
 

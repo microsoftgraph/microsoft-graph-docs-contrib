@@ -33,7 +33,7 @@ For more information about how to handle operations, see [commsOperation](../res
 POST /app/calls/{id}/participants/{id}/mute
 POST /communications/calls/{id}/participants/{id}/mute
 ```
-> **Note:** The `/app` path will be deprecated. Going forward, use the `/communications` path.
+> **Note:** The `/app` path is deprecated. Going forward, use the `/communications` path.
 
 ## Request headers
 | Name          | Description               |
@@ -66,7 +66,6 @@ The following example shows the request.
 }-->
 ```http
 POST https://graph.microsoft.com/beta/communications/calls/57dab8b1-894c-409a-b240-bd8beae78896/participants/2765eb15-01f8-47c6-b12b-c32111a4a86f/mute
-Authorization: Bearer <TOKEN>
 Content-Type: application/json
 
 {
@@ -122,7 +121,6 @@ Content-Length: 259
 
 ```http
 POST https://bot.contoso.com/api/calls
-Authorization: Bearer <TOKEN>
 Content-Type: application/json
 ```
 

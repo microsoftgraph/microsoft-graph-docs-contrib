@@ -27,7 +27,7 @@ Retrieve the properties and relationships of a **participant** object.
 GET /app/calls/{id}/participants/{id}
 GET /communications/calls/{id}/participants/{id}
 ```
-> **Note:** The `/app` path will be deprecated. Going forward, use the `/communications` path.
+> **Note:** The `/app` path is deprecated. Going forward, use the `/communications` path.
 
 ## Optional query parameters
 This method supports the [OData query parameters](/graph/query-parameters) to help customize the response.

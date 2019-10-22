@@ -37,7 +37,7 @@ One of the following permissions is required to call this API. To learn more, in
 POST /app/calls/{id}/record
 POST /communications/calls/{id}/record
 ```
-> **Note:** The `/app` path will be deprecated. Going forward, use the `/communications` path.
+> **Note:** The `/app` path is deprecated. Going forward, use the `/communications` path.
 
 ## Request headers
 | Name          | Description               |
@@ -135,7 +135,6 @@ Location: https://graph.microsoft.com/beta/communications/calls/57dab8b1-894c-40
 
 ```http
 POST https://bot.contoso.com/api/calls
-Authorization: Bearer <TOKEN>
 Content-Type: application/json
 ```
 
@@ -176,7 +175,6 @@ The following example shows the request to get the content of the recording.
 }-->
 ```http
 GET https://file.location/17e3b46c-f61d-4f4d-9635-c626ef18e6ad
-Authorization: Bearer <recordingAccessToken>
 ```
 
 ##### Response

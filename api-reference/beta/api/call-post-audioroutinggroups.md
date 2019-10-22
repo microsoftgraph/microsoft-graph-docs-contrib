@@ -28,7 +28,7 @@ One of the following permissions is required to call this API. To learn more, in
 POST /app/calls/{id}/audioRoutingGroups
 POST /communications/calls/{id}/audioRoutingGroups
 ```
-> **Note:** The `/app` path will be deprecated. Going forward, use the `/communications` path.
+> **Note:** The `/app` path is deprecated. Going forward, use the `/communications` path.
 
 ## Request headers
 | Name          | Description               |

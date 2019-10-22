@@ -31,7 +31,7 @@ One of the following permissions is required to call this API. To learn more, in
 POST /app/calls/{id}/subscribeToTone
 POST /communications/calls/{id}/subscribeToTone
 ```
-> **Note:** The `/app` path will be deprecated. Going forward, use the `/communications` path.
+> **Note:** The `/app` path is deprecated. Going forward, use the `/communications` path.
 
 ## Request headers
 | Name          | Description               |
@@ -113,7 +113,6 @@ The notification contain information of the tone pressed in the [toneinfo](../re
 
 ```http
 POST https://bot.contoso.com/api/calls
-Authorization: Bearer <TOKEN>
 Content-Type: application/json
 ```
 

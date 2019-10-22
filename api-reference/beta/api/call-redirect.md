@@ -33,7 +33,7 @@ One of the following permissions is required to call this API. To learn more, in
 POST /app/calls/{id}/redirect
 POST /communications/calls/{id}/redirect
 ```
-> **Note:** The `/app` path will be deprecated. Going forward, use the `/communications` path.
+> **Note:** The `/app` path is deprecated. Going forward, use the `/communications` path.
 
 ## Request headers
 
@@ -125,7 +125,6 @@ These examples will cover a workflow of an incoming call notification and how th
 } -->
 ``` http
 POST https://graph.microsoft.com/beta/communications/calls/491f0b00-ffff-4bc9-a43e-b226498ec22a/redirect
-Authorization: Bearer <TOKEN>
 Content-Type: application/json
 
 {
@@ -176,7 +175,6 @@ HTTP/1.1 202 Accepted
 } -->
 ``` http
 POST https://bot.contoso.com/api/calls/24701998-1a73-4d42-8085-bf46ed0ae039
-Authorization: Bearer <TOKEN>
 Content-Type: application/json
 ```
 
@@ -241,7 +239,6 @@ Content-Type: application/json
 } -->
 ``` http
 POST https://bot.contoso.com/api/calls
-Authorization: Bearer <TOKEN>
 Content-Type: application/json
 ```
 
@@ -305,7 +302,6 @@ Content-Type: application/json
 
 ``` http
 POST https://graph.microsoft.com/beta/communications/calls/481f0b00-ffff-4ca1-8c67-a5f1e31e8e82/redirect
-Authorization: Bearer <TOKEN>
 Content-Type: application/json
 
 {
@@ -360,7 +356,6 @@ HTTP/1.1 202 Accepted
 
 ``` http
 POST https://bot.contoso.com/api/calls/24701998-1a73-4d42-8085-bf46ed0ae039
-Authorization: Bearer <TOKEN>
 Content-Type: application/json
 
 {

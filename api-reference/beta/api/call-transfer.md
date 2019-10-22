@@ -32,7 +32,7 @@ One of the following permissions is required to call this API. To learn more, in
 POST /app/calls/{id}/transfer
 POST /communications/calls/{id}/transfer
 ```
-> **Note:** The `/app` path will be deprecated. Going forward, use the `/communications` path.
+> **Note:** The `/app` path is deprecated. Going forward, use the `/communications` path.
 
 ## Request headers
 | Name          | Description               |
@@ -119,7 +119,6 @@ HTTP/1.1 202 Accepted
 
 ```http
 POST https://bot.contoso.com/api/calls
-Authorization: Bearer <TOKEN>
 Content-Type: application/json
 ```
 
@@ -150,7 +149,6 @@ Content-Type: application/json
 
 ```http
 POST https://bot.contoso.com/api/calls
-Authorization: Bearer <TOKEN>
 Content-Type: application/json
 ```
 
@@ -179,7 +177,6 @@ Content-Type: application/json
 
 ```http
 POST https://bot.contoso.com/api/calls
-Authorization: Bearer <TOKEN>
 Content-Type: application/json
 ```
 
@@ -216,7 +213,6 @@ Content-Type: application/json
 
 ```http
 POST https://bot.contoso.com/api/calls
-Authorization: Bearer <TOKEN>
 Content-Type: application/json
 ```
 
@@ -260,7 +256,6 @@ The following example shows the request.
 
 ```http
 POST https://graph.microsoft.com/beta/communications/calls/341a0500-d4bf-4224-8b19-1581168d328b/transfer
-Authorization: Bearer <TOKEN>
 Content-Type: application/json
 
 {
@@ -301,7 +296,6 @@ HTTP/1.1 202 Accepted
 
 ```http
 POST https://bot.contoso.com/api/calls
-Authorization: Bearer <TOKEN>
 Content-Type: application/json
 ```
 
@@ -332,7 +326,6 @@ Content-Type: application/json
 
 ```http
 POST https://bot.contoso.com/api/calls
-Authorization: Bearer <TOKEN>
 Content-Type: application/json
 ```
 
@@ -361,7 +354,6 @@ Content-Type: application/json
 
 ```http
 POST https://bot.contoso.com/api/calls
-Authorization: Bearer <TOKEN>
 Content-Type: application/json
 ```
 
@@ -393,7 +385,6 @@ Content-Type: application/json
 
 ```http
 POST https://bot.contoso.com/api/calls
-Authorization: Bearer <TOKEN>
 Content-Type: application/json
 ```
 

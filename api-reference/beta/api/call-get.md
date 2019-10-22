@@ -28,7 +28,7 @@ One of the following permissions is required to call this API. To learn more, in
 GET /app/calls/{id}
 GET /communications/calls/{id}
 ```
-> **Note:** The `/app` path will be deprecated. Going forward, use the `/communications` path.
+> **Note:** The `/app` path is deprecated. Going forward, use the `/communications` path.
 
 ## Optional query parameters
 This method supports the [OData query parameters](/graph/query-parameters) to help customize the response.
@@ -163,7 +163,6 @@ Content-Type: application/json
 }-->
 ```http
 GET https://graph.microsoft.com/beta/communications/calls/2f1a1100-b174-40a0-aba7-0b405e01ed92
-Authorization: Bearer <Token>
 ```
 
 ##### Response

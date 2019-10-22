@@ -28,7 +28,7 @@ One of the following permissions is required to call this API. To learn more, in
 PATCH /app/calls/{id}/audioRoutingGroups/{id}
 PATCH /communications/calls/{id}/audioRoutingGroups/{id}
 ```
-> **Note:** The `/app` path will be deprecated. Going forward, use the `/communications` path.
+> **Note:** The `/app` path is deprecated. Going forward, use the `/communications` path.
 
 ## Request headers
 | Name          | Description               |
@@ -61,7 +61,6 @@ The following example shows the request.
 ```http
 PATCH https://graph.microsoft.com/beta/communications/calls/{id}/audioRoutingGroups/{id}
 Content-Type: application/json
-Content-Length: 233
 
 {
   "id": "oneToOne",
@@ -101,7 +100,6 @@ Content-Length: 233
 ```http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 233
 
 {
   "id": "oneToOne",
