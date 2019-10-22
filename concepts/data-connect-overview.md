@@ -4,6 +4,7 @@ description: "Microsoft Graph data connect brings Office 365 data and Microsoft 
 author: "ajacks-msft"
 localization_priority: Priority
 ms.prod: "data-connect"
+scenarios: "getting-started"
 ---
 
 # Microsoft Graph data connect

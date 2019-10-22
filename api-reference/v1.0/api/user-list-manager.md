@@ -9,7 +9,7 @@ doc_type: apiPageType
 
 # List manager
 
-Get user's manager. Returns the user or contact assigned as the user's manager.
+Get user's manager. Returns the user or organizational contact assigned as the user's manager.
 ## Permissions
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
 
@@ -26,12 +26,11 @@ GET /me/manager
 GET /users/{id | userPrincipalName}/manager
 ```
 ## Optional query parameters
-This method supports the [OData Query Parameters](https://developer.microsoft.com/graph/docs/concepts/query_parameters) to help customize the response.
+This method supports the [OData query parameters](/graph/query-parameters) to help customize the response.
 ## Request headers
 | Header       | Value|
 |:-----------|:------|
 | Authorization  | Bearer {token}. Required.  |
-| Content-Type   | application/json  |
 
 ## Request body
 Do not supply a request body for this method.
@@ -41,14 +40,14 @@ Do not supply a request body for this method.
 If successful, this method returns a `200 OK` response code and a [directoryObject](../resources/directoryobject.md) object in the response body.
 ## Example
 ##### Request
-Here is an example of the request.
+The following is an example of the request.
 
 # [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "get_manager"
 }-->
-```http
+```msgraph-interactive
 GET https://graph.microsoft.com/v1.0/users/{id|userPrincipalName}/manager
 ```
 # [C#](#tab/csharp)
@@ -70,7 +69,8 @@ GET https://graph.microsoft.com/v1.0/users/{id|userPrincipalName}/manager
 ---
 
 ##### Response
-Here is an example of the response.
+The following is an example of the response.
+>**Note**: The response object shown here might be shortened for readability. 
 <!-- {
   "blockType": "response",
   "truncated": false,

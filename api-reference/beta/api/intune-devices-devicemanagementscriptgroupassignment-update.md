@@ -46,7 +46,7 @@ The following table shows the properties that are required when you create the [
 
 |Property|Type|Description|
 |:---|:---|:---|
-|id|String|Key of the device management script group assignment entity.|
+|id|String|Key of the device management script group assignment entity. This property is read-only.|
 |targetGroupId|String|The Id of the Azure Active Directory group we are targeting the script to.|
 
 

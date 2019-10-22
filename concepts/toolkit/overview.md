@@ -1,26 +1,27 @@
 ---
-title: "Microsoft Graph Toolkit (preview)"
-description: "The Microsoft Graph Toolkit is a collection of framework-agnostic web components and helpers for accessing and working with Microsoft Graph."
+title: "Microsoft Graph Toolkit"
+description: "The Microsoft Graph Toolkit is a collection of resuable, framework-agnostic web components and helpers for accessing and working with Microsoft Graph."
 localization_priority: Normal
-author: nmetulev
+author: elisenyang
 ---
 
-# Microsoft Graph Toolkit (preview)
+# Microsoft Graph Toolkit
 
-The Microsoft Graph Toolkit is a collection of framework-agnostic web components and helpers for accessing and working with Microsoft Graph. All components can access Microsoft Graph without any customization required.
+The Microsoft Graph Toolkit is a collection of reusable, framework-agnostic web components and helpers for accessing and working with Microsoft Graph. All components can access Microsoft Graph without any customization required.
 
-> [!NOTE]
-> This library is in preview and is in early development. We expect to make changes and improvements to all components and APIs based on feedback from the community.
+The Microsoft Graph Toolkit is a great resource for any developer looking to create a web app, Microsoft Teams tab, or SharePoint web part that makes calls to Microsoft Graph. By providing UI components that are designed to look and feel like Microsoft 365 experiences, the Toolkit reduces your time and cost to integrate with the platform. All the UI components authenticate with and access data from Microsoft Graph. The components are fully customizable using CSS and templating so you can match your unique branding and control the content displayed in the components.
 
 ## Get started
 
 You can use the components by referencing the loader directly (via unpkg), or by installing the npm package.
 
+![Animated gif that shows referencing the loader to use the toolkit components](images/get-started.gif)
+
 For details about how to get started with the Microsoft Graph Toolkit, see the [Get started video](https://www.youtube.com/watch?v=oZCGb2MMxa0).
 
 ### Use via mgt-loader
 
-See the folowing [jsfiddle example](https://jsfiddle.net/metulev/9phqxLd5/).
+See the following [jsfiddle example](https://jsfiddle.net/metulev/9phqxLd5/).
 
 ```html
 <script src="https://unpkg.com/@microsoft/mgt/dist/bundle/mgt-loader.js"></script>
@@ -69,7 +70,7 @@ Similarly, to add a provider, you can add it as a component:
 <mgt-msal-provider client-id="[CLIENT-ID]"></mgt-msal-provider>
 ```
 
-or, add it in your code:
+Or, add it in your code:
 
 ```html
 <script type="module">

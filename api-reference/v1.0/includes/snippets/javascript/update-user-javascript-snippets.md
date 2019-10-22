@@ -18,6 +18,6 @@ const user = {
 };
 
 let res = await client.api('/me')
-	.update({user : user});
+	.update(user);
 
 ```

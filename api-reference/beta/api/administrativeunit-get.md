@@ -53,7 +53,7 @@ Here is an example of the request.
   "blockType": "request",
   "name": "get_administrativeunit"
 }-->
-```http
+```msgraph-interactive
 GET https://graph.microsoft.com/beta/administrativeUnits/{id}
 ```
 # [C#](#tab/csharp)

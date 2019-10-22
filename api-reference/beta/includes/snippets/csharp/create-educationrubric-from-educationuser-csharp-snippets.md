@@ -24,12 +24,8 @@ var educationRubric = new EducationRubric
 				Content = "",
 				ContentType = BodyType.Text
 			},
-			Grading = new EducationAssignmentGradeType
+			Grading = new EducationAssignmentPointsGradeType
 			{
-				AdditionalData = new Dictionary<string, object>()
-				{
-					{"@odata.type","#microsoft.graph.educationAssignmentPointsGradeType"}
-				},
 				MaxPoints = 2
 			}
 		},
@@ -41,12 +37,8 @@ var educationRubric = new EducationRubric
 				Content = "",
 				ContentType = BodyType.Text
 			},
-			Grading = new EducationAssignmentGradeType
+			Grading = new EducationAssignmentPointsGradeType
 			{
-				AdditionalData = new Dictionary<string, object>()
-				{
-					{"@odata.type","#microsoft.graph.educationAssignmentPointsGradeType"}
-				},
 				MaxPoints = 1
 			}
 		}
@@ -79,7 +71,7 @@ var educationRubric = new EducationRubric
 					}
 				}
 			},
-			Weight = 50.0
+			Weight = 50
 		},
 		new RubricQuality
 		{
@@ -107,15 +99,11 @@ var educationRubric = new EducationRubric
 					}
 				}
 			},
-			Weight = 50.0
+			Weight = 50
 		}
 	},
-	Grading = new EducationAssignmentGradeType
+	Grading = new EducationAssignmentPointsGradeType
 	{
-		AdditionalData = new Dictionary<string, object>()
-		{
-			{"@odata.type","#microsoft.graph.educationAssignmentPointsGradeType"}
-		}
 	}
 };
 

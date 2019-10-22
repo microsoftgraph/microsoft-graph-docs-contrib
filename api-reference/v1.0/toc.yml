@@ -33,7 +33,7 @@
     - name: Throttling
       href: /graph/throttling?context=graph/api/1.0
     - name: Change notifications
-      displayname: Webhooks, Outlook mail, Outlook calendar, Outlook contacts, Outlook contact, People, Microsoft Teams, Teams, OneDrive, OneDrive for Buisness, OneDrive business, OneDrive personal, SharePoint, Security, Users, Groups
+      displayname: Webhooks, Outlook mail, Outlook calendar, Outlook contacts, Outlook contact, People, Microsoft Teams, Teams, OneDrive, OneDrive for Business, OneDrive business, OneDrive personal, SharePoint, Security, Users, Groups
       items:
       - name: Overview
         href: /graph/webhooks?context=graph/api/1.0
@@ -266,10 +266,6 @@
           href: api/user-post-mailfolders.md
         - name: Send mail
           href: api/user-sendmail.md
-        - name: Get mailbox settings
-          href: api/user-get-mailboxsettings.md
-        - name: Update mailbox settings
-          href: api/user-update-mailboxsettings.md
         - name: List rules
           href: api/mailfolder-list-messagerules.md
         - name: Create rule
@@ -283,17 +279,6 @@
           href: api/onenote-list-notebooks.md
         - name: Create notebook
           href: api/onenote-post-notebooks.md
-      - name: Outlook settings
-        href: resources/outlookuser.md
-        items:
-        - name: Get language choices
-          href: api/outlookuser-supportedlanguages.md
-        - name: Get time zone choices
-          href: api/outlookuser-supportedtimezones.md
-        - name: List categories
-          href: api/outlookuser-list-mastercategories.md
-        - name: Create category
-          href: api/outlookuser-post-mastercategories.md
       - name: Org hierarchy
         href: resources/organization.md
         items:
@@ -303,6 +288,24 @@
           href: api/user-list-manager.md
         - name: Assign manager
           href: api/user-post-manager.md
+      - name: Outlook settings       
+        items:
+        - name: Outlook user
+          href: resources/outlookuser.md
+        - name: Get language choices
+          href: api/outlookuser-supportedlanguages.md
+        - name: Get time zone choices
+          href: api/outlookuser-supportedtimezones.md
+        - name: Get mailbox settings
+          href: api/user-get-mailboxsettings.md
+        - name: Update mailbox settings
+          href: api/user-update-mailboxsettings.md
+        - name: List categories
+          href: api/outlookuser-list-mastercategories.md
+        - name: Create category
+          href: api/outlookuser-post-mastercategories.md
+        - name: Translate IDs
+          href: api/user-translateexchangeids.md
       - name: Photo
         href: resources/profilephoto.md
         items:
@@ -562,11 +565,11 @@
           href: api/event-delete.md
         - name: Get delta
           href: api/event-delta.md
-        - name: Accept events
+        - name: Accept event
           href: api/event-accept.md
         - name: Tentatively accept
           href: api/event-tentativelyaccept.md
-        - name: Decline events
+        - name: Decline event
           href: api/event-decline.md
         - name: Dismiss reminder
           href: api/event-dismissreminder.md
@@ -3100,7 +3103,7 @@
         - name: Delete user
           href: api/educationuser-delete.md
     - name: Files
-      displayName: OneDrive, OneDrive for Buisness, OneDrive business, OneDrive personal, SharePoint
+      displayName: OneDrive, OneDrive for Business, OneDrive business, OneDrive personal, SharePoint
       items:
       - name: Overview
         href: resources/onedrive.md
@@ -3195,6 +3198,17 @@
             href: api/signin-list.md
           - name: Get sign-in
             href: api/signin-get.md
+      - name: Certificate-based auth configuration
+        href: resources/certificatebasedauthconfiguration.md
+        items:
+        - name: List
+          href: api/certificatebasedauthconfiguration-list.md
+        - name: Create
+          href: api/certificatebasedauthconfiguration-post-certificatebasedauthconfiguration.md
+        - name: Get
+          href: api/certificatebasedauthconfiguration-get.md
+        - name: Delete
+          href: api/certificatebasedauthconfiguration-delete.md
       - name: Contracts
         href: resources/contract.md
         items:
@@ -3344,6 +3358,19 @@
           href: api/organization-get.md
         - name: Update org details
           href: api/organization-update.md
+      - name: Organizational contacts
+        href: resources/orgcontact.md
+        items:
+        - name: List org contacts
+          href: api/orgcontact-list.md
+        - name: Get org contact
+          href: api/orgcontact-get.md
+        - name: List direct reports
+          href: api/orgcontact-list-directreports.md  
+        - name: List memberOf
+          href: api/orgcontact-list-memberof.md
+        - name: Get manager
+          href: api/orgcontact-get-manager.md
       - name: Subscribed SKU
         href: resources/subscribedsku.md
         items:
@@ -3914,7 +3941,7 @@
       - name: Errors
         href: resources/security-error-codes.md
     - name: Sites and lists
-      displayName: SharePoint, OneDrive, OneDrive for Buisness, OneDrive business, OneDrive personal
+      displayName: SharePoint, OneDrive, OneDrive for Business, OneDrive business, OneDrive personal
       items:
       - name: Overview
         href: resources/sharepoint.md
@@ -4115,10 +4142,14 @@
         items:
         - name: List channels
           href: api/channel-list.md
-        - name: Create channel
-          href: api/channel-post.md
         - name: Get channel
           href: api/channel-get.md
+        - name: Create channel
+          href: api/channel-post.md
+        - name: Update channel
+          href: api/channel-patch.md
+        - name: Delete channel
+          href: api/channel-delete.md
       - name: App Catalog
         href: resources/teamsapp.md
         items:
@@ -4217,6 +4248,19 @@
           href: api/workbook-list-worksheets.md
         - name: List names
           href: api/workbook-list-names.md
+      - name: Workbook comments
+        href: resources/workbookcomment.md
+        items:
+        - name: List
+          href: api/workbook-list-comments.md
+        - name: Get
+          href: api/workbookcomment-get.md
+        - name: List replies
+          href: api/workbookcomment-list-replies.md
+        - name: Create reply
+          href: api/workbookcomment-post-replies.md
+        - name: Get reply
+          href: api/workbookcommentreply-get.md
       - name: Worksheet
         href: resources/worksheet.md
         items:
@@ -4344,7 +4388,7 @@
         - name: Delete schema extension
           href: api/schemaextension-delete.md
       - name: Change notifications
-        displayName: Webhooks, Outlook mail, Outlook calendar, Outlook contacts, Outlook contact, People, Microsoft Teams, Teams, OneDrive, OneDrive for Buisness, OneDrive business, OneDrive personal, SharePoint, Security, Users, Groups
+        displayName: Webhooks, Outlook mail, Outlook calendar, Outlook contacts, Outlook contact, People, Microsoft Teams, Teams, OneDrive, OneDrive for Business, OneDrive business, OneDrive personal, SharePoint, Security, Users, Groups
         items:
         - name: Overview
           href: resources/webhooks.md

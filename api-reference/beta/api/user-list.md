@@ -31,7 +31,7 @@ GET /users
 
 ## Optional query parameters
 
-This method supports the [OData Query Parameters](https://developer.microsoft.com/graph/docs/concepts/query_parameters) to help customize the response.
+This method supports the [OData query parameters](/graph/query-parameters) to help customize the response.
 
 ## Request headers
 | Header        | Value                      |
@@ -49,15 +49,16 @@ If successful, this method returns a `200 OK` response code and collection of [u
 
 ## Example
 
-##### Request
+### Example 1: List all users
 
+#### Request
 
 # [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "get_users"
 }-->
-```http
+```msgraph-interactive
 GET https://graph.microsoft.com/beta/users
 ```
 # [C#](#tab/csharp)
@@ -77,7 +78,9 @@ GET https://graph.microsoft.com/beta/users
 
 ##### Response
 
-Here is an example of the response. Note: The response object shown here may be truncated for brevity. 
+Here is an example of the response. 
+
+>**Note:** The response object shown here might be shortened for readability. All the properties will be returned from an actual call.
 
 <!-- {
   "blockType": "response",
@@ -106,6 +109,66 @@ Content-length: 608
       "surname": "surname-value",
       "userPrincipalName": "userPrincipalName-value",
       "id": "id-value"
+    }
+  ]
+}
+```
+
+### Example 2: Find a user account using a sign-in name
+
+Find a user account in a B2C tenant, using a sign-in name (also known as a local account). This request can be used by a helpdesk to find a customer's user account, in a B2C tenant (in this example the B2C tenant is contoso.onmicrosoft.com).
+
+>[!NOTE]
+>When filtering on **identities**, you must supply both **issuer** and **issuerAssignedId**.
+
+#### Request
+
+
+# [HTTP](#tab/http)
+<!-- {
+  "blockType": "request",
+  "name": "get_signinname_users"
+}-->
+```msgraph-interactive
+GET https://graph.microsoft.com/beta/users?$select=displayName,id&$filter=identities/any(c:c/issuerAssignedId eq 'j.smith@yahoo.com' and c/issuer eq 'contoso.onmicrosoft.com')
+```
+# [C#](#tab/csharp)
+[!INCLUDE [sample-code](../includes/snippets/csharp/get-signinname-users-csharp-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [JavaScript](#tab/javascript)
+[!INCLUDE [sample-code](../includes/snippets/javascript/get-signinname-users-javascript-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Objective-C](#tab/objc)
+[!INCLUDE [sample-code](../includes/snippets/objc/get-signinname-users-objc-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+---
+
+
+#### Response
+
+Here is an example of the response. 
+
+> **Note:** The response object shown here might be shortened for readability. All the properties will be returned from an actual call.
+
+<!-- {
+  "blockType": "response",
+  "truncated": true,
+  "@odata.type": "microsoft.graph.user",
+  "isCollection": true
+} -->
+```http
+HTTP/1.1 200 OK
+Content-type: application/json
+Content-length: 108
+
+{
+  "value": [
+    {
+      "displayName": "John Smith",
+      "id": "4c7be08b-361f-41a8-b1ef-1712f7a3dfb2"
     }
   ]
 }

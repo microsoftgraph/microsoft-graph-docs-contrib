@@ -52,7 +52,7 @@ Here is an example of the request.
   "blockType": "request",
   "name": "get_resource"
 }-->
-```http
+```msgraph-interactive
 GET https://graph.microsoft.com/beta/me/onenote/resources/{id}/content
 ```
 # [C#](#tab/csharp)

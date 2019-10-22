@@ -50,7 +50,7 @@ Here is an example of the request.
   "blockType": "request",
   "name": "get_buckets"
 }-->
-```http
+```msgraph-interactive
 GET https://graph.microsoft.com/v1.0/planner/buckets
 ```
 # [C#](#tab/csharp)

@@ -51,6 +51,19 @@ GET /users/{id | userPrincipalName}/mailFolders/{id}/messages
 
 ## Optional query parameters
 This method supports the [OData Query Parameters](https://developer.microsoft.com/graph/docs/concepts/query_parameters) to help customize the response.
+
+### Using filter and orderby in the same query
+When using `$filter` and `$orderby` in the same query to get messages, make sure to specify properties in the following ways:
+
+1. Properties that appear in `$orderby` must also appear in `$filter`. 
+2. Properties that appear in `$orderby` are in the same order as in `$filter`.
+3. Properties that are present in `$orderby` appear in `$filter` before any properties that aren't.
+
+Failing to do this results in the following error:
+
+- Error code: `InefficientFilter`
+- Error message: `The restriction or sort order is too complex for this operation.`
+
 ## Request headers
 | Name       | Type | Description|
 |:-----------|:------|:----------|
@@ -74,7 +87,7 @@ This example gets the default, top 10 messages in the signed-in user's mailbox. 
   "blockType": "request",
   "name": "get_messages"
 }-->
-```http
+```msgraph-interactive
 GET https://graph.microsoft.com/v1.0/me/messages?$select=sender,subject
 ```
 # [C#](#tab/csharp)

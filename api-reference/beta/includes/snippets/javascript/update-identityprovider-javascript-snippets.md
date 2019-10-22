@@ -16,6 +16,6 @@ const identityProvider = {
 
 let res = await client.api('/identityProviders/Amazon-OAuth')
 	.version('beta')
-	.update({identityProvider : identityProvider});
+	.update(identityProvider);
 
 ```

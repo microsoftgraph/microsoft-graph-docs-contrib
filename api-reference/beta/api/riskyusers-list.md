@@ -53,7 +53,7 @@ Here is an example of the request.
   "blockType": "request",
   "name": "list_riskyusers"
 }-->
-```http
+```msgraph-interactive
 GET https://graph.microsoft.com/beta/riskyUsers
 ```
 # [C#](#tab/csharp)
@@ -110,7 +110,7 @@ The following example shows how to use `$filter` to get the collection of riskyU
   "blockType": "request",
   "name": "list_filter_riskyusers"
 } -->
-```http
+```msgraph-interactive
 GET https://graph.microsoft.com/beta/riskyUsers?$filter=riskLevel eq microsoft.graph.riskLevel'medium'
 ```
 # [C#](#tab/csharp)

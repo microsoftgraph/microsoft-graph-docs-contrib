@@ -13,6 +13,8 @@ ms.prod: "outlook"
 
 Create an [event](../resources/event.md) in the user's default calendar or specified calendar.
 
+By default, the **allowNewTimeProposals** property is set to true when an event is created, which means invitees can propose a different date/time for the event. See [Propose new meeting times](/graph/outlook-calendar-meeting-proposals) for more information on how to propose a time, and how to receive and accept a new time proposal.
+
 You can specify the time zone for each of the start and end times of the event as part of their values, because the 
 **start** and **end** properties are of [dateTimeTimeZone](../resources/datetimetimezone.md) type. First [find the supported time zones](outlookuser-supportedtimezones.md) to make sure you set only time zones that have been configured for the user's mailbox server. 
 
@@ -91,13 +93,12 @@ times in the response.
 POST https://graph.microsoft.com/beta/me/events
 Prefer: outlook.timezone="Pacific Standard Time"
 Content-type: application/json
-Content-length: 600
 
 {
   "subject": "Let's go for lunch",
   "body": {
     "contentType": "HTML",
-    "content": "Does late morning work for you?"
+    "content": "Does noon work for you?"
   },
   "start": {
       "dateTime": "2017-04-15T12:00:00",
@@ -118,7 +119,8 @@ Content-length: 600
       },
       "type": "required"
     }
-  ]
+  ],
+  "allowNewTimeProposals": true
 }
 ```
 # [C#](#tab/csharp)
@@ -167,7 +169,7 @@ Content-length: 2197
     "isReminderOn":true,
     "hasAttachments":false,
     "subject":"Let's go brunch",
-    "bodyPreview":"Does late morning work for you?",
+    "bodyPreview":"Does noon work for you?",
     "importance":"normal",
     "sensitivity":"normal",
     "isAllDay":false,
@@ -179,6 +181,7 @@ Content-length: 2197
     "type":"singleInstance",
     "webLink":"https://outlook.office365.com/owa/?itemid=AAMkAGI1AAAt9AHjAAA%3D&exvsurl=1&path=/calendar/item",
     "onlineMeetingUrl":null,
+    "allowNewTimeProposals": true,
     "responseStatus":{
         "response":"organizer",
         "time":"0001-01-01T00:00:00Z"
@@ -303,8 +306,8 @@ Content-length: 1390
     {
       "displayName": "Home Office"
     }
-  ]
-
+  ],
+  "allowNewTimeProposals": true
 }
 ```
 # [C#](#tab/csharp)
@@ -366,6 +369,7 @@ Content-length: 2985
   "type":"singleInstance",
   "webLink":"https://outlook.office365.com/owa/?itemid=AAMkADAGAADDdm4NAAA%3D&exvsurl=1&path=/calendar/item",
   "onlineMeetingUrl":null,
+  "allowNewTimeProposals": true,
   "responseStatus":{
     "response":"organizer",
     "time":"0001-01-01T00:00:00Z"
@@ -562,6 +566,7 @@ Content-type: application/json
     "type":"seriesMaster",
     "webLink":"https://outlook.office365.com/owa/?itemid=AAMkADQwMD&exvsurl=1&path=/calendar/item",
     "onlineMeetingUrl":null,
+    "allowNewTimeProposals": true,
     "responseStatus":{
         "response":"organizer",
         "time":"0001-01-01T00:00:00Z"

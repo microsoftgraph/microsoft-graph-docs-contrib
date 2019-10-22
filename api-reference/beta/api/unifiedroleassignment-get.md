@@ -61,7 +61,7 @@ The following is an example of the request.
   "name": "get_unifiedroleassignment"
 }-->
 
-```http
+```msgraph-interactive
 GET https://graph.microsoft.com/beta/roleManagement/directory/roleAssignments/lAPpYvVpN0KRkAEhdxReEJC2sEqbR_9Hr48lds9SGHI-1
 ```
 # [C#](#tab/csharp)

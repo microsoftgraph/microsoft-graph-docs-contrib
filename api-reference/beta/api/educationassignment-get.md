@@ -80,6 +80,7 @@ Content-length: 279
       "id": "14012",
     }
   },
+  "closeDateTime": "2014-01-11T00:00:00Z",
   "createdDateTime": "2014-01-01T00:00:00Z",
   "displayName": "Mid term exam",
   "dueDateTime": "2014-01-11T00:00:00Z",
