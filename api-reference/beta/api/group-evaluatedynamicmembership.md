@@ -12,8 +12,8 @@ doc_type: apiPageType
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 Evaluate whether a user or device is a member of a dynamic group. The membership rule is returned along with other details that were used to evaluate the user or device. You can complete this operation in the following ways: 
-- Evaluate whether a member ID (user or device) is part of the specified group.  
-- Evaluate whether a member ID (user or device) is part of the specified group based on member ID and membership rule.
+- Evaluate whether a user or device is a member of the specified group.  
+- Evaluate whether a user or device is a member of the specified group based on member ID and membership rule.
 
 ## Permissions
 
@@ -23,7 +23,7 @@ One of the following permissions is required to call this API. To learn more, in
 
 | Permission type | Permissions (from least to most privileged) |
 | :-------------- | :------------------------------------------ |
-| Delegated (work or school account) | For user: Group.Read.All and User.Read.All, Directory.Read.All<br><br>For device: Group.Read.All and Device.Read.All, Directory.Read.All |
+| Delegated (work or school account) | For user: Group.Read.All and User.Read.All, Directory.Read.All<br>For device: Group.Read.All and Device.Read.All, Directory.Read.All |
 | Delegated (personal Microsoft account) | Not supported. |
 | Application                            | Not supported. |
 
@@ -31,7 +31,7 @@ One of the following permissions is required to call this API. To learn more, in
 
 | Permission type | Permissions (from least to most privileged) |
 | :-------------- | :------------------------------------------ |
-| Delegated (work or school account) | For user: User.Read.All, Directory.Read.All<br><br>For device: Device.Read.All, Directory.Read.All |
+| Delegated (work or school account) | For user: User.Read.All, Directory.Read.All<br>For device: Device.Read.All, Directory.Read.All |
 | Delegated (personal Microsoft account) | Not supported. |
 | Application                            | Not supported. |
 
@@ -53,15 +53,22 @@ POST /groups/evaluateDynamicMembership
 
 ## Request body
 
-In the request body, supply a value for the **memberId** property, or the **memberId** and **membershipRule** properties.
+In the request body, supply the required properties.
+
+The following table lists the properties that are required when you evaluate group membership.
+
+| Parameter | Type | Description |
+| :-------- | :--- | :---------- |
+| memberId | String | The membership identifier. |
+| membershipRule | String | The rule that is used for membership evaluation. |
 
 ## Response
 
-If successful, this method returns a `200 OK` response code and the result and details of membership evaluation.
+If successful, this method returns a `200 OK` response code and an evaluateDynamicMembershipResult object.
 
 ## Examples
 
-### Example 1: Evaluate membership using member ID and group ID
+### Example 1: Evaluate if a user or device is a member of an existing group
 
 #### Request
 
@@ -113,7 +120,7 @@ Content-type: application/json
 
 ```
 
-### Example 2: Evaluate membership using member ID and membership rule
+### Example 2: Evaluate if a user or device would be a member of a group based on a membership rule
 
 #### Request
 
