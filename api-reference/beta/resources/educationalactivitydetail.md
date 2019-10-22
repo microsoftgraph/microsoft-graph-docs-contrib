@@ -1,9 +1,9 @@
 ---
 title: "educationalActivityDetail resource type"
-description: "PROVIDE DESCRIPTION HERE"
+description: "educationalActivityDetail resource type"
 localization_priority: Normal
 author: "kevinbellinger"
-ms.prod: "People"
+ms.prod: "people"
 doc_type: "resourcePageType"
 ---
 
@@ -11,7 +11,7 @@ doc_type: "resourcePageType"
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-The educationalActivityDetail resource type provides additional detail about an undergraduate, graduate, postgraduate degree or other educational activity that a user has undertaken.
+The [educationalActivityDetail](educationalactivitydetail.md) resource type provides additional detail about an undergraduate, graduate, postgraduate degree or other educational activity that a user has undertaken and is used within an [educationalActivity](educationalActivity.md) resource.
 
 ## Properties
 

@@ -1,9 +1,9 @@
 ---
 title: "relatedPerson resource type"
-description: "PROVIDE DESCRIPTION HERE"
+description: "relatedPerson resource type"
 localization_priority: Normal
 author: "kevinbellinger"
-ms.prod: "People"
+ms.prod: "people"
 doc_type: "resourcePageType"
 ---
 
@@ -11,13 +11,13 @@ doc_type: "resourcePageType"
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-The relatedPerson complex type provides a mechanism for a user to store information about people related to information within a given entity in a profile or contact item.
+The [relatedPerson](relatedperson.md) resource type provides a mechanism for a user to store information about people related to information within a given entity in a [profile](profile.md) for a user.
 
 ## Properties
 
 | Property        | Type        | Description                                               |
 |:----------------|:------------|:----------------------------------------------------------|
-|displayName      |String       |Name of the person.                                        |
+|displayName      |String       | Name of the person.                                        |
 |relationship     |String       | Possible values are: `manager`, `colleague`, `directReport`, `dotLineReport`, `assistant`, `dotLineManager`, `alternateContact`, `friend`, `spouse`, `sibling`, `child`, `parent`, `sponsor`, `emergencyContact`, `other`, `unknownFutureValue`.|
 |userPrincipalName|String       | Email address or reference to person within organization. |
 

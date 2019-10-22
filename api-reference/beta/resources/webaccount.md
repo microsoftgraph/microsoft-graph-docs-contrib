@@ -1,9 +1,9 @@
 ---
 title: "webAccount resource type"
-description: "PROVIDE DESCRIPTION HERE"
+description: "webAccount resource type"
 localization_priority: Normal
 author: "kevinbellinger"
-ms.prod: "People"
+ms.prod: "people"
 doc_type: "resourcePageType"
 ---
 
@@ -11,27 +11,27 @@ doc_type: "resourcePageType"
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-The webAccount resource type represents web accounts the user has indicated they use or have added to their user profile or for one of their contacts.
+The [webAccount](webaccount.md) resource type represents web accounts the user has indicated they use or have added to their user [profile](profile.md).
 
-Inherits from [itemFacet](itemFacet.md).
+This resource type inherits from [itemFacet](itemfacet.md).
 
 ## Methods
 
-| Method       | Return Type | Description |
-|:-------------|:------------|:------------|
+| Method                                     | Return Type                 | Description                                             |
+|:-------------------------------------------|:----------------------------|:--------------------------------------------------------|
 | [Get webAccount](../api/webaccount-get.md) | [webAccount](webaccount.md) | Read properties and relationships of webAccount object. |
-| [Update](../api/webaccount-update.md) | [webAccount](webaccount.md) | Update webAccount object. |
-| [Delete](../api/webaccount-delete.md) | None | Delete webAccount object. |
+| [Update](../api/webaccount-update.md)      | [webAccount](webaccount.md) | Update webAccount object.                               |
+| [Delete](../api/webaccount-delete.md)      | None                        | Delete webAccount object.                               |
 
 ## Properties
 
-| Property     | Type        | Description |
-|:-------------|:------------|:------------|
-|description|String| Contains the description the user has provided for the account on the service being referenced.|
-|service|[serviceInformation](serviceinformation.md)| Contains basic detail about the service that is being associated. |
-|statusMessage|String| Contains a status message from the cloud service if provided or synchronized.|
-|userId|String| |The user name  displayed for the webaccount (ie: @kevinb)|
-|webUrl|String| Contains a link to the users profile on the cloud service if one exists.|
+| Property     | Type                                      | Description                                                                                    |
+|:-------------|:------------------------------------------|:-----------------------------------------------------------------------------------------------|
+|description   |String                                     | Contains the description the user has provided for the account on the service being referenced.|
+|service       |[serviceInformation](serviceinformation.md)| Contains basic detail about the service that is being associated.                              |
+|statusMessage |String                                     | Contains a status message from the cloud service if provided or synchronized.                  |
+|userId        |String                                     | The user name  displayed for the webaccount (ie: @kevinb)                                      |
+|webUrl        |String                                     | Contains a link to the users profile on the cloud service if one exists.                       |
 
 ## Relationships
 

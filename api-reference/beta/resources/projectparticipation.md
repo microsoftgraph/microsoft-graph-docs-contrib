@@ -1,9 +1,9 @@
 ---
 title: "projectParticipation resource type"
-description: "PROVIDE DESCRIPTION HERE"
+description: "projectParticipation resource type"
 localization_priority: Normal
 author: "kevinbellinger"
-ms.prod: "People"
+ms.prod: "people"
 doc_type: "resourcePageType"
 ---
 
@@ -11,9 +11,9 @@ doc_type: "resourcePageType"
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-The projectParticipation resource type provides detailed information about projects the user has associated with them.
+The [projectParticipation](projectparticipation.md) resource type provides detailed information about projects the user has associated with them.
 
-Inherits from [itemFacet](itemFacet.md).
+Inherits from [itemFacet](itemfacet.md).
 
 ## Methods
 

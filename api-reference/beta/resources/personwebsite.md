@@ -1,9 +1,9 @@
 ---
 title: "personWebsite resource type"
-description: "PROVIDE DESCRIPTION HERE"
+description: "personWebsite resource type"
 localization_priority: Normal
 author: "kevinbellinger"
-ms.prod: "People"
+ms.prod: "people"
 doc_type: "resourcePageType"
 ---
 
@@ -11,9 +11,9 @@ doc_type: "resourcePageType"
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-The personWebsite resource type provides detailed information about websites the user has associated with themselves in various services.
+The [personWebsite](personwebsite.md) resource type provides detailed information about websites the user has associated with themselves in various services.
 
-Inherits from [itemFacet](itemFacet.md).
+Inherits from [itemFacet](itemfacet.md).
 
 ## Methods
 

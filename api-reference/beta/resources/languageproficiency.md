@@ -1,9 +1,9 @@
 ---
 title: "languageProficiency resource type"
-description: "PROVIDE DESCRIPTION HERE"
+description: "languageProficiency resource type"
 localization_priority: Normal
 author: "kevinbellinger"
-ms.prod: "People"
+ms.prod: "people"
 doc_type: "resourcePageType"
 ---
 
@@ -11,7 +11,7 @@ doc_type: "resourcePageType"
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-The languageProficiency resource type provides detailed information about the languages the user has associated with themselves in various services or experiences.
+The [languageProficiency](languageproficiency.md) resource type provides detailed information about the languages a user has added to their [profile](profile.md).
 
 Inherits from [itemFacet](itemFacet.md).
 

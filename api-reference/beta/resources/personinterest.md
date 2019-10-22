@@ -1,9 +1,9 @@
 ---
 title: "personInterest resource type"
-description: "PROVIDE DESCRIPTION HERE"
+description: "personInterest resource type"
 localization_priority: Normal
 author: "kevinbellinger"
-ms.prod: "People"
+ms.prod: "people"
 doc_type: "resourcePageType"
 ---
 
@@ -11,9 +11,9 @@ doc_type: "resourcePageType"
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-The personInterest resource type provides detailed information about interests the user has associated with themselves in various services.
+The [personInterest](personinterest.md) resource type provides detailed information about interests the user has associated with themselves in various services.
 
-Inherits from [itemFacet](itemFacet.md).
+Inherits from [itemFacet](itemfacet.md).
 
 ## Methods
 

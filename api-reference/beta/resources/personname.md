@@ -1,9 +1,9 @@
 ---
 title: "personName resource type"
-description: "PROVIDE DESCRIPTION HERE"
+description: "personName resource type"
 localization_priority: Normal
 author: "kevinbellinger"
-ms.prod: "People"
+ms.prod: "people"
 doc_type: "resourcePageType"
 ---
 
@@ -11,9 +11,9 @@ doc_type: "resourcePageType"
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-The 'personName' resource type provides extended name information provided by the user or which they have associated with their account.
+The [personName](personname.md) resource type provides extended name information provided by the user or which they have associated with their account.
 
-Inherits from [itemFacet](itemFacet.md).
+Inherits from [itemFacet](itemfacet.md).
 
 ## Methods
 

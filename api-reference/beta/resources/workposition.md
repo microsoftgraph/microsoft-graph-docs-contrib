@@ -1,9 +1,9 @@
 ---
 title: "workPosition resource type"
-description: "PROVIDE DESCRIPTION HERE"
+description: "workPosition resource type"
 localization_priority: Normal
 author: "kevinbellinger"
-ms.prod: "People"
+ms.prod: "people"
 doc_type: "resourcePageType"
 ---
 
@@ -11,9 +11,9 @@ doc_type: "resourcePageType"
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-The workPosition resource type provides detailed information about positions the user has associated with them.
+The [workPosition](workposition.md) resource type provides detailed information about positions the user has entered into their [profile](profile.md).
 
-Inherits from [itemFacet](itemFacet.md).
+This resource type inherits from [itemFacet](itemfacet.md).
 
 ## Methods
 

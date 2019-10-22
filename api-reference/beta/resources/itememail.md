@@ -1,9 +1,9 @@
 ---
 title: "itemEmail resource type"
-description: "PROVIDE DESCRIPTION HERE"
+description: "itemEmail resource type"
 localization_priority: Normal
 author: "kevinbellinger"
-ms.prod: "People"
+ms.prod: "people"
 doc_type: "resourcePageType"
 ---
 
@@ -11,7 +11,7 @@ doc_type: "resourcePageType"
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-The itemEmail resource type provides detailed information about email addresses associated with the user.
+The [itemEmail](itememail.md) resource type provides detailed information about email addresses associated with the user.
 
 ## Methods
 

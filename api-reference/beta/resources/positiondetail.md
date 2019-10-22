@@ -1,9 +1,9 @@
 ---
 title: "positionDetail resource type"
-description: "PROVIDE DESCRIPTION HERE"
+description: "positionDetail resource type"
 localization_priority: Normal
 author: "kevinbellinger"
-ms.prod: "People"
+ms.prod: "people"
 doc_type: "resourcePageType"
 ---
 
@@ -11,7 +11,7 @@ doc_type: "resourcePageType"
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-The 'positionDetail' resource type provides a mechanism for a user to store information about positions related to entities within their profiles and contacts.
+The [positionDetail](positiondetail.md) resource type provides a mechanism for a user to store information about positions related to entities within their [profile].
 
 ## Properties
 

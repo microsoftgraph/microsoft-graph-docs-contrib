@@ -1,9 +1,9 @@
 ---
 title: "educationalActivity resource type"
-description: "PROVIDE DESCRIPTION HERE"
+description: "educationalActivity resource type"
 localization_priority: Normal
 author: "kevinbellinger"
-ms.prod: "People"
+ms.prod: "people"
 doc_type: "resourcePageType"
 ---
 
@@ -11,7 +11,7 @@ doc_type: "resourcePageType"
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-The 'educationalActivity' resource type represents data that a user has supplied related to undergraduate, graduate, postgraduate or other educational activities.
+The [educationalActivity](educationalactivity.md) resource type represents data that a user has supplied related to undergraduate, graduate, postgraduate or other educational activities.
 
 Inherits metadata properties from [itemFacet](itemfacet.md).
 

@@ -1,9 +1,9 @@
 ---
 title: "personAnniversary resource type"
-description: "PROVIDE DESCRIPTION HERE"
+description: "personAnniversary resource type"
 localization_priority: Normal
 author: "kevinbellinger"
-ms.prod: "People"
+ms.prod: "people"
 doc_type: "resourcePageType"
 ---
 
@@ -11,7 +11,7 @@ doc_type: "resourcePageType"
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-The personAnniversary resource type provides the ability to store detail of meaningful dates associated with a person in a profile or contact object.
+The [personAnniversary](personanniversary.md) resource type provides the ability to store detail of meaningful dates associated with a person in a user's [profile](profile.md).
 
 Inherits from [itemFacet](itemFacet.md).
 

@@ -1,9 +1,9 @@
 ---
 title: "institutionData resource type"
-description: "PROVIDE DESCRIPTION HERE"
+description: "institutionData resource type"
 localization_priority: Normal
 author: "kevinbellinger"
-ms.prod: "People"
+ms.prod: "people"
 doc_type: "resourcePageType"
 ---
 
@@ -11,7 +11,7 @@ doc_type: "resourcePageType"
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-The 'institutionData' resource type provides detailed information about the institute a user undertook an undergraduate, graduate, postgraduate degree or other program at.
+The [institutionData](institutiondata.md) resource type provides additional detail about an undergraduate, graduate, postgraduate degree or other educational activity that a user has undertaken and is used within an [educationalActivity](educationalActivity.md) resource.
 
 ## Properties
 

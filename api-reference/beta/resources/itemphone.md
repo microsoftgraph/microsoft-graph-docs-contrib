@@ -1,25 +1,25 @@
 ---
-title: "itemPhoneNumber resource type"
-description: "PROVIDE DESCRIPTION HERE"
+title: "itemPhone resource type"
+description: "itemPhone resource type"
 localization_priority: Normal
 author: "kevinbellinger"
-ms.prod: "People"
+ms.prod: "people"
 doc_type: "resourcePageType"
 ---
 
-# itemPhoneNumber resource type
+# itemPhone resource type
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-The itemPhone resource type provides detailed information about phone numbers the user has associated in various services.
+The [itemPhone](itemphone.md) resource type provides detailed information about phone numbers the user has associated in various services.
 
 ## Methods
 
-| Method                                               | Return Type                           | Description                                                  |
-|:-----------------------------------------------------|:--------------------------------------|:-------------------------------------------------------------|
-| [Get itemPhoneNumber](../api/itemphonenumber-get.md) | [itemPhoneNumber](itemphonenumber.md) | Read properties and relationships of itemPhoneNumber object. |
-| [Update](../api/itemphonenumber-update.md)           | [itemPhoneNumber](itemphonenumber.md) | Update itemPhoneNumber object.                               |
-| [Delete](../api/itemphonenumber-delete.md)           | None                                  | Delete itemPhoneNumber object.                               |
+| Method                                     | Return Type               | Description                                            |
+|:-------------------------------------------|:--------------------------|:-------------------------------------------------------|
+| [Get itemPhone](../api/itemphone-get.md)   | [itemPhone](itemphone.md) | Read properties and relationships of itemPhone object. |
+| [Update](../api/itemphone-update.md)       | [itemPhone](itemphone.md) | Update itemPhone object.                               |
+| [Delete](../api/itemphone-delete.md)       | None                      | Delete itemPhone object.                               |
 
 ## Properties
 
@@ -42,7 +42,7 @@ The following is a JSON representation of the resource.
   "optionalProperties": [
 
   ],
-  "@odata.type": "microsoft.graph.itemPhoneNumber",
+  "@odata.type": "microsoft.graph.itemPhone",
   "baseType": ""
 }-->
 
@@ -58,7 +58,7 @@ The following is a JSON representation of the resource.
 2019-02-04 14:57:30 UTC -->
 <!-- {
   "type": "#page.annotation",
-  "description": "itemPhoneNumber resource",
+  "description": "itemPhone resource",
   "keywords": "",
   "section": "documentation",
   "tocPath": ""

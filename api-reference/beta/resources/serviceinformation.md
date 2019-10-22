@@ -1,9 +1,9 @@
 ---
 title: "serviceInformation resource type"
-description: "PROVIDE DESCRIPTION HERE"
+description: "serviceInformation resource type"
 localization_priority: Normal
 author: "kevinbellinger"
-ms.prod: "People"
+ms.prod: "people"
 doc_type: "resourcePageType"
 ---
 
@@ -11,7 +11,7 @@ doc_type: "resourcePageType"
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-The 'serviceInformation' resource type represents basic descriptive data about cloud services that a user has chosen to refer to from their account.
+The [serviceInformation](serviceinformation.md) resource type represents basic descriptive data about cloud services that a user has chosen to refer to from their account.
 
 ## Properties
 
