@@ -52,7 +52,7 @@ Threat indicators uploaded via **tiIndicators** will be used in conjunction with
 |passiveOnly|Boolean |Determines if the indicator should trigger an event that is visible to an end-user. When set to ‘true,’ security tools will not notify the end user that a ‘hit’ has occurred. This is most often treated as audit or silent mode by security products where they will simply log that a match occurred but will not perform the action. Default value is false. |
 |severity|Int32| An integer representing the severity of the malicious behavior identified by the data within the indicator. Acceptable values are 0 – 5 where 5 is the most severe and zero is not severe at all. Default value is 3. |
 |tags|String collection|A JSON array of strings that stores arbitrary tags/keywords. |
-|targetProduct|String|A string value representing a single security product to which the indicator should be applied. Acceptable values are: `Azure Sentinel`. **Required**|
+|targetProduct|String|A string value representing a single security product to which the indicator should be applied. Acceptable values are: `Azure Sentinel`, `Microsoft Defender ATP`. **Required**|
 |threatType|[threatType](#threattype-values)| Each indicator must have a valid Indicator Threat Type. Possible values are: `Botnet`, `C2`, `CryptoMining`, `Darknet`, `DDoS`, `MaliciousUrl`, `Malware`, `Phishing`, `Proxy`, `PUA`, `WatchList`. **Required.** |
 |tlpLevel|[tlpLevel](#tlplevel-values)| Traffic Light Protocol value for the indicator. Possible values are: `unknown`, `white`, `green`, `amber`, `red`. **Required.**|
 
