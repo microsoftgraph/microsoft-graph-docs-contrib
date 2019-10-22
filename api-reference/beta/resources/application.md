@@ -22,24 +22,25 @@ This resource supports using [delta query](/graph/delta-query-overview) to track
 
 | Method | Return Type | Description |
 |:---------------|:--------|:----------|
-|[List applications](../api/application-list.md) | application | Retrieve the list of applications in the organization. |
-|[Create application](../api/application-post-applications.md) | application | Creates (registers) a new application.|
-|[Get application](../api/application-get.md) | application |Read properties and relationships of application object.|
-|[Update application](../api/application-update.md) | application |Update application object. |
+|[List applications](../api/application-list.md) | [application](application.md) collection | Retrieve the list of applications in the organization. |
+|[Create application](../api/application-post-applications.md) | [application](application.md) | Creates (registers) a new application.|
+|[Get application](../api/application-get.md) | [application](application.md) |Read properties and relationships of application object.|
+|[Update application](../api/application-update.md) | [application](application.md) |Update application object. |
 |[Delete application](../api/application-delete.md) | None |Delete application object. |
-|[List deleted applications](../api/directory-deleteditems-list.md) | application | Retrieve a list of recently deleted applications. |
-|[Get deleted application](../api/directory-deleteditems-get.md) | application | Retrieve the properties of a recently deleted application. |
-|[Permanently delete application](../api/directory-deleteditems-delete.md) | application | Permanently delete an applications. |
-|[Restore deleted application](../api/directory-deleteditems-restore.md) | application | Restore a recently deleted application. |
+|[List deleted applications](../api/directory-deleteditems-list.md) | [directoryObject](directoryobject.md) collection | Retrieve a list of recently deleted applications. |
+|[Get deleted application](../api/directory-deleteditems-get.md) | [directoryObject](directoryobject.md) | Retrieve the properties of a recently deleted application. |
+|[Permanently delete application](../api/directory-deleteditems-delete.md) | None | Permanently delete an applications. |
+|[Restore deleted application](../api/directory-deleteditems-restore.md) | [directoryObject](directoryobject.md) | Restore a recently deleted application. |
 |[Add password](../api/application-addpassword.md)|[passwordCredential](passwordcredential.md)|Add a strong password to an application.|
 |[Remove password](../api/application-removepassword.md)|[passwordCredential](passwordcredential.md)|Remove a password from an application.|
 | [Create extension](../api/application-post-extensionproperty.md) | [extensionProperty](extensionProperty.md) | Create an extension property on an application object. |
 | [List extensions](../api/application-list-extensionproperty.md) | [extensionProperty](extensionProperty.md) collection | List extension properties on an application object. |
 | [Delete extension](../api/application-delete-extensionproperty.md) | None | Delete an extension property from an application object. |
 |[List assigned policies](../api/policy-list-assigned.md)| [policy](policy.md) collection| Get all policies assigned to this object.|
-|[Create owner](../api/application-post-owners.md) |[directoryObject](directoryobject.md)| Create a new owner by posting to the owners collection.|
 |[List owners](../api/application-list-owners.md) |[directoryObject](directoryobject.md) collection| Get an owner object collection.|
-|[delta](../api/application-delta.md)|application collection| Get incremental changes for applications. |
+|[Add owner](../api/application-post-owners.md) |[directoryObject](directoryobject.md)| Add an owner by posting to the owners collection.|
+|[Remove owner](../api/application-delete-owners.md) |None| Remove an owner from an application.|
+|[delta](../api/application-delta.md)|[application](application.md) collection| Get incremental changes for applications. |
 |[Create call](../api/application-post-calls.md)|[call](call.md)|Create a new call by posting to the calls collection.|
 |[Create online meeting](../api/application-post-onlinemeetings.md)|[onlineMeeting](onlinemeeting.md)|Create a new online meeting by posting to the onlineMeetings collection.|
 
@@ -61,7 +62,8 @@ This resource supports using [delta query](/graph/delta-query-overview) to track
 | isFallbackPublicClient | Boolean | Specifies the fallback application type as public client, such as an installed application running on a mobile device. The default value is `false` which means the fallback application type is confidential client such as web app. There are certain scenarios where Azure AD cannot determine the client application type (e.g. [ROPC](https://tools.ietf.org/html/rfc6749#section-4.3) flow where it is configured without specifying a redirect URI). In those cases Azure AD will interpret the application type based on the value of this property.|
 | keyCredentials | [keyCredential](keycredential.md) collection | The collection of key credentials associated with the application Not nullable. |
 | logo | Stream | The main logo for the application. Not nullable. |
-| optionalClaims | optionalClaims | Application developers can configure optional claims in their Azure AD apps to specify which claims they want in tokens sent to their application by the Microsoft security token service. See [optional claims](https://docs.microsoft.com/en-us/azure/active-directory/develop/active-directory-optional-claims). for more information. |
+| oauth2RequiredPostResponse | Boolean | Specifies whether, as part of OAuth 2.0 token requests, Azure AD will allow POST requests, as opposed to GET requests. The default is false, which specifies that only GET requests will be allowed. |
+| optionalClaims | [optionalClaims](optionalclaims.md) | Application developers can configure optional claims in their Azure AD apps to specify which claims they want in tokens sent to their application by the Microsoft security token service. See [provide optional claims to your Azure AD app](https://docs.microsoft.com/en-us/azure/active-directory/develop/active-directory-optional-claims) for more information.|
 | parentalControlSettings | [parentalControlSettings](parentalcontrolsettings.md) |Specifies parental control settings for an application. |
 | passwordCredentials | [passwordCredential](passwordcredential.md) collection|The collection of password credentials associated with the application. Not nullable.|
 | publicClient | [publicClientApplication](publicclientapplication.md) | Specifies settings for installed clients such as desktop or mobile devices. |
@@ -70,7 +72,7 @@ This resource supports using [delta query](/graph/delta-query-overview) to track
 | signInAudience | String | Specifies what Microsoft accounts are supported for the current application. Supported values are:<ul><li>`AzureADMyOrg`: Users with a Microsoft work or school account in my organization’s Azure AD tenant (i.e. single tenant)</li><li>`AzureADMultipleOrgs`: Users with a Microsoft work or school account in any organization’s Azure AD tenant (i.e. multi-tenant)</li> <li>`AzureADandPersonalMicrosoftAccount`: Users with a personal Microsoft account, or a work or school account in any organization’s Azure AD tenant</li></ul> | `AzureADandPersonalMicrosoftAccount` |
 | tags |String collection| Custom strings that can be used to categorize and identify the application. Not nullable.|
 | tokenEncryptionKeyId |String|Specifies the keyId of a public key from the keyCredentials collection. When configured, Azure AD encrypts all the tokens it emits by using the key this property points to. The application code that receives the encrypted token must use the matching private key to decrypt the token before it can be used for the signed-in user.|
-| web |[webApplication](webApplication.md)| Specifies settings for a web application. |
+| web |[webApplication](webapplication.md)| Specifies settings for a web application. |
 
 ## Relationships
 
@@ -111,11 +113,12 @@ The following is a JSON representation of the resource.
   "id": "String (identifier)",
   "identifierUris": ["String"],
   "info": {"@odata.type": "microsoft.graph.informationalUrl"},
-  "isFallbackPublicClient": true,
+  "isFallbackPublicClient": false,
   "keyCredentials": [{"@odata.type": "microsoft.graph.keyCredential"}],
   "logo": "Stream",
+  "oauth2RequiredPostResponse": false,
   "optionalClaims": {"@odata.type": "microsoft.graph.optionalClaims"},
-  "parentalControlSettings": [{"@odata.type": "microsoft.graph.parentalControlSettings"}],
+  "parentalControlSettings": {"@odata.type": "microsoft.graph.parentalControlSettings"},
   "passwordCredentials": [{"@odata.type": "microsoft.graph.passwordCredential"}],
   "publicClient": {"@odata.type": "microsoft.graph.publicClientApplication"},
   "publisherDomain": "String",

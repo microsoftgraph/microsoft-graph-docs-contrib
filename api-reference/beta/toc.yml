@@ -8220,8 +8220,10 @@
           href: api/application-delete-extensionproperty.md
         - name: List owners
           href: api/application-list-owners.md
-        - name: Assign owner
+        - name: Add owner
           href: api/application-post-owners.md
+        - name: Remove owner
+          href: api/application-delete-owners.md
         - name: Application template
           href: resources/applicationtemplate.md
           items:
