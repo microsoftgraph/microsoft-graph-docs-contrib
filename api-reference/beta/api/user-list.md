@@ -201,9 +201,12 @@ The following is an example of the response.
   "isCollection": true
 } -->
 ```http
+HTTP/1.1 200 OK
+Content-type: application/json
+
 {
   "@odata.context": "https://graph.microsoft.com/beta/$metadata#users(displayName,userPrincipalName,signInActivity)",
-  "values": [
+  "value": [
     {
       "displayName": "Adele Vance",
       "userPrincipalName": "AdeleV@contoso.com",
@@ -250,6 +253,9 @@ The following is an example of the response.
   "isCollection": true
 } -->
 ```http
+HTTP/1.1 200 OK
+Content-type: application/json
+
 {
   "@odata.context": "https://graph.microsoft.com/beta/$metadata#users(displayName,userPrincipalName,signInActivity)",
   "value": [
