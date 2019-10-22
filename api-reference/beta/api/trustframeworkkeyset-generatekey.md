@@ -54,8 +54,6 @@ If successful, this method returns `200, OK` response code and a new [trustFrame
 
 ## Examples
 
-The following is an example of how to call this API.
-
 ### Request
 
 The following is an example of the request.
