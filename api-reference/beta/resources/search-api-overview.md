@@ -26,7 +26,7 @@ Search requests are executed on behalf of user. Search results are trimmed down 
 |[Page results](#paging) | <p align="center">/search/query</p> | <p align="center">From and Size</p> |
 |[Get the most relevant emails](#most-relevant-emails) | <p align="center">/search/query</p> | <p align="center">EnableTopResults</p> |
 |[Retrieve selected properties](#stored_fields) | <p align="center">/search/query</p> | <p align="center">stored_fieds</p> | <p align="center">  </p> |
-|[Use KQL in query terms](#keyword-Query-Language-(kql)-support) | <p align="center">/search/query</p> | <p align="center">searchQueryString</p> |
+|[Use KQL in query terms](#keyword-query-language-kql-support) | <p align="center">/search/query</p> | <p align="center">searchQueryString</p> |
 |[Search external Files](/graph/search-concept-files)| <p align="center">/search/query</p> | <p align="center">EntityTypes</p> | 
 |[Search within a specific contentSource (Indexing API)](/graph/search-concept-custom-types)| <p align="center">/search/query</p> | <p align="center">contentSources</p> |
 

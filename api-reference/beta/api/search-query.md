@@ -122,10 +122,8 @@ Content-type: application/json
               "_id": "_id-value",
               "_score": 99,
               "_sortField": "_sortField-value",
-              "_summary": "_summary-value"
-              "_source": {
-                //The source field will contain the underlying graph entity part of the response
-              }
+              "_summary": "_summary-value",
+              "_source": "The source field will contain the underlying graph entity part of the response"
             }
           ],
           "total": 99,

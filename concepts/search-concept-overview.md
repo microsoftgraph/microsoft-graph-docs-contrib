@@ -44,8 +44,8 @@ You can use data sets listed in the following table.
 
 Looking for the API reference for this service?
 
-- [Microsoft Search query API in Microsoft Graph Beta](../api-reference/beta/resources/search-api-overview.md)
-- [Microsoft Search indexing API in Microsoft Graph Beta](../api-reference/beta/resources/search-api-overview.md) 
+- [Microsoft Search query API in Microsoft Graph Beta](/graph/api/resources/search-api-overview?view=graph-rest-beta)
+- [Microsoft Search indexing API in Microsoft Graph Beta](/graph/api/resources/search-api-overview?view=graph-rest-beta) 
 
 ## Next steps
 
