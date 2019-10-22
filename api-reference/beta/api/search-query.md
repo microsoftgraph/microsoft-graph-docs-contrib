@@ -49,10 +49,10 @@ If successful, this method returns `200, OK` response code and a [searchResponse
 
 ## Common use cases 
 
-- Search [mail messages](../../../concepts/search-concept-messages.md)
-- Search [calendar events](../../../concepts/search-concept-events.md)
-- Search [files](../../../concepts/search-concept-files.md)
-- Search [custom types (Connectors)](../../../concepts/search-concept-custom-types.md) data
+- Search [mail messages](/graph/search-concept-messages)
+- Search [calendar events](/graph/search-concept-events)
+- Search [files](/graph/search-concept-files)
+- Search [custom types (Connectors)](/graph/search-concept-custom-types) data
 
 ## Examples
 
@@ -67,8 +67,7 @@ The following is an example of the request.
 ```http
 POST https://graph.microsoft.com/beta/search/query
 Content-type: application/json
-```
-```
+
 {
   "requests": [
     {
@@ -109,6 +108,7 @@ The following is an example of the response.
 ```http
 HTTP/1.1 200 OK
 Content-type: application/json
+
 {
   "value": [
     {
@@ -122,10 +122,8 @@ Content-type: application/json
               "_id": "_id-value",
               "_score": 99,
               "_sortField": "_sortField-value",
-              "_summary": "_summary-value"
-              "_source": {
-                //The source field will contain the underlying graph entity part of the response
-              }
+              "_summary": "_summary-value",
+              "_source": "The source field will contain the underlying graph entity part of the response"
             }
           ],
           "total": 99,

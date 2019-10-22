@@ -25,10 +25,10 @@ Search requests are executed on behalf of user. Search results are trimmed down 
 |[Search for a specific entityType](#entity-scoping)| <p align="center">/search/query </p> | <p align="center">EntityTypes</p> |
 |[Page results](#paging) | <p align="center">/search/query</p> | <p align="center">From and Size</p> |
 |[Get the most relevant emails](#most-relevant-emails) | <p align="center">/search/query</p> | <p align="center">EnableTopResults</p> |
-|[Retrieve selected properties](#stored_Fields) | <p align="center">/search/query</p> | <p align="center">stored_fieds</p> | <p align="center">  </p> |
-|[Use KQL in query terms](#keyword-Query-Language-(KQL)-support) | <p align="center">/search/query</p> | <p align="center">searchQueryString</p> |
-|[Search external Files](../../../concepts/search-concept-files.md)| <p align="center">/search/query</p> | <p align="center">EntityTypes</p> | 
-|[Search within a specific contentSource (Indexing API)](../../../concepts/search-concept-custom-types.md)| <p align="center">/search/query</p> | <p align="center">contentSources</p> |
+|[Retrieve selected properties](#stored_fields) | <p align="center">/search/query</p> | <p align="center">stored_fieds</p> | <p align="center">  </p> |
+|[Use KQL in query terms](#keyword-query-language-kql-support) | <p align="center">/search/query</p> | <p align="center">searchQueryString</p> |
+|[Search external Files](/graph/search-concept-files)| <p align="center">/search/query</p> | <p align="center">EntityTypes</p> | 
+|[Search within a specific contentSource (Indexing API)](/graph/search-concept-custom-types)| <p align="center">/search/query</p> | <p align="center">contentSources</p> |
 
 ### Entity scoping
 
