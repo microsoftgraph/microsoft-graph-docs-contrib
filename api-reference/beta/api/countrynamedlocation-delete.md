@@ -23,8 +23,8 @@ One of the following permissions is required to call this API. To learn more, in
 | Delegated (personal Microsoft account) | Not supported. |
 | Application                            | Not supported. |
 
-[!NOTE]
-This API has a [known issue](/graph/known-issues#conditional-access-policies-and-named-locations): It requires multiple scopes.
+>[!NOTE]
+>This API requires multiple permissions. For details, see [Known issues](/graph/known-issues#conditional-access-policies-and-named-locations).
 
 ## HTTP request
 
