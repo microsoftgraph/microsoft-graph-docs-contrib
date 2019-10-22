@@ -46,7 +46,7 @@ Here is an example of the request.
 # [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
-  "name": "get_tasks"
+  "name": "plannerplan_get_tasks"
 }-->
 ```msgraph-interactive
 GET https://graph.microsoft.com/v1.0/planner/plans/{plan-id}/tasks
