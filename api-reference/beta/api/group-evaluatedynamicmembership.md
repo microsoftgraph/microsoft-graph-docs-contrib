@@ -84,6 +84,7 @@ The following is an example of the request.
 ```http
 POST https://graph.microsoft.com/beta/groups/{id}/evaluateDynamicMembership 
 Content-type: application/json
+
 { 
   "memberId": [
     "memberId-value"
@@ -105,6 +106,7 @@ The following is an example of the response.
 ```http
 HTTP/1.1 200 OK
 Content-type: application/json
+
 {
   "membershipRule": "membershipRule-value",
   "membershipRuleEvaluationResult": true,
@@ -135,6 +137,7 @@ The following is an example of the request.
 ```http
 POST https://graph.microsoft.com/beta/groups/evaluateDynamicMembership 
 Content-type: application/json
+
 { 
   "memberId": [
     "memberIds-value"
@@ -159,6 +162,7 @@ The following is an example of the response.
 ```http
 HTTP/1.1 200 OK
 Content-type: application/json
+
 {
   "membershipRule": "membershipRule-value",
   "membershipRuleEvaluationResult": true,
