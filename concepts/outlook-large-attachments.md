@@ -10,7 +10,7 @@ ms.prod: "outlook"
 
 Depending on the size of the file, you can choose one of two ways to attach a file to a [message](/graph/api/resources/message?view=graph-rest-beta):
 
-- If the file size is under 4MB, you can do a single [POST on the attachments navigation property of the message](/graph/api/message-post-attachments?view=graph-rest-beta). The successful `POST` response includes the ID of the file attached to the message.
+- If the file size is under 4 MB, you can do a single [POST on the attachments navigation property of the message](/graph/api/message-post-attachments?view=graph-rest-beta). The successful `POST` response includes the ID of the file attached to the message.
 - If the file size is between 3MB and 150MB, create an upload session, and iteratively use `PUT` to upload ranges of bytes of the file until you have uploaded the entire file. A header in the final successful `PUT` response includes a URL with the attachment ID. 
 
 This article uses an example to illustrate the second approach. The example creates and uses an upload session to add a large file attachment (of size over 3MB) to a specific message. Upon successfully uploading the entire file, it gets a URL that contains an ID for the file attachment, with which it can do other operations such as getting the file attachment metadata.
@@ -26,6 +26,8 @@ The opaque URL, returned in the **uploadUrl** property of the **uploadSession**,
 The **uploadSession** object in the response also includes the **nextExpectedRanges** property, which indicates the initial upload starting location should be byte 0.
 
 ### Example request: create an upload session
+
+# [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "walkthrough_create_uploadsession",
@@ -43,6 +45,20 @@ Content-type: application/json
   }
 }
 ```
+# [C#](#tab/csharp)
+[!INCLUDE [sample-code](../includes/snippets/csharp/walkthrough-create-uploadsession-csharp-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [JavaScript](#tab/javascript)
+[!INCLUDE [sample-code](../includes/snippets/javascript/walkthrough-create-uploadsession-javascript-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Objective-C](#tab/objc)
+[!INCLUDE [sample-code](../includes/snippets/objc/walkthrough-create-uploadsession-objc-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+---
+
 
 ### Example response: get an uploadSession object
 <!-- {
@@ -68,7 +84,7 @@ Content-type: application/json
 
 ## Step 2: Use the upload session to upload a range of bytes of the file
 
-To upload the file, or a portion of the file, make a `PUT` request to the **uploadUrl** property value returned as part of the **uploadSession** in step 1. You can upload the entire file, or split the file into multiple byte ranges. For better performance, keep each byte range less than 4MB. 
+To upload the file, or a portion of the file, make a `PUT` request to the **uploadUrl** property value returned as part of the **uploadSession** in step 1. You can upload the entire file, or split the file into multiple byte ranges. For better performance, keep each byte range less than 4 MB. 
 
 Specify request headers and request body as described below.
 
@@ -76,7 +92,7 @@ Specify request headers and request body as described below.
 
 | Name       | Type | Description|
 |:---------------|:--------|:----------|
-| Content-Length | Int32 | The number of bytes being uploaded in this operation. For better performance, keep the upper limit of the number of bytes for each `PUT` operation to 4MB. Required. |
+| Content-Length | Int32 | The number of bytes being uploaded in this operation. For better performance, keep the upper limit of the number of bytes for each `PUT` operation to 4 MB. Required. |
 | Content-Range | String | The 0-based byte range of the file being uploaded in this operation, expressed in the format `bytes {start}-{end}/{total}`. Required. |
 | Content-Type | String  | The MIME type. Specify `application/octet-stream`. Required. |
 
@@ -168,11 +184,11 @@ Content-Length: 0
 
 ## Step 4 (optional): Get the file attachment from the message
 
-Using the attachment ID returned in step 3, you can now use APIs in the Microsoft Graph domain to get the metadata of that file as attached to the message.
-
-Note that because of a limit of 4MB on the total size of each REST request, you can [use the GET operation to get attachments](/graph/api/attachment-get?view=graph-rest-beta) only if they are less than 4MB.
+As always, regardless of the attachment size, the sender or recipients of the message can [use the GET operation to get attachments](/graph/api/attachment-get?view=graph-rest-beta), including the attachment metadata or raw contents.
 
 ### Example request: get the file attachment metadata
+
+The following example shows the sender getting the metadata of the file attachment on the message.
 
 <!-- {
   "blockType": "request",
