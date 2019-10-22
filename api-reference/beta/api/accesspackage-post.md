@@ -28,7 +28,7 @@ One of the following permissions is required to call this API. To learn more, in
 <!-- { "blockType": "ignored" } -->
 
 ```http
-POST /accessPackages
+POST /identityGovernance/entitlementManagement/accessPackages
 ```
 
 ## Request headers
@@ -56,7 +56,7 @@ The following is an example of the request.
 }-->
 
 ```http
-POST https://graph.microsoft.com/beta/accessPackages
+POST https://graph.microsoft.com/beta/identityGovernance/entitlementManagement/accessPackages
 Content-type: application/json
 
 {

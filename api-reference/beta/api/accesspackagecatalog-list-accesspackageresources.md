@@ -28,7 +28,7 @@ One of the following permissions is required to call this API. To learn more, in
 <!-- { "blockType": "ignored" } -->
 
 ```http
-GET /accessPackageCatalogs/{id}/accessPackageResources
+GET /identityGovernance/entitlementManagement/accessPackageCatalogs/{id}/accessPackageResources
 ```
 
 ## Optional query parameters
@@ -60,7 +60,7 @@ The following is an example of the request.
 }-->
 
 ```http
-GET https://graph.microsoft.com/beta/accessPackageCatalogs/{id}/accessPackageResources
+GET https://graph.microsoft.com/beta/identityGovernance/entitlementManagement/accessPackageCatalogs/{id}/accessPackageResources
 ```
 
 ### Response

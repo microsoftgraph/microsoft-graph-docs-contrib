@@ -28,7 +28,7 @@ One of the following permissions is required to call this API. To learn more, in
 <!-- { "blockType": "ignored" } -->
 
 ```http
-POST /accessPackageAssignmentRequests
+POST /identityGovernance/entitlementManagement/accessPackageAssignmentRequests
 ```
 
 ## Request headers
@@ -57,7 +57,7 @@ The following is an example of the request for a direct assignment.  The value o
 }-->
 
 ```http
-POST https://graph.microsoft.com/beta/accessPackageAssignmentRequests
+POST https://graph.microsoft.com/beta/identityGovernance/entitlementManagement/accessPackageAssignmentRequests
 Content-type: application/json
 
 {

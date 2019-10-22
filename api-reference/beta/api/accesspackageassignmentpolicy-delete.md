@@ -28,7 +28,7 @@ One of the following permissions is required to call this API. To learn more, in
 <!-- { "blockType": "ignored" } -->
 
 ```http
-DELETE /accessPackageAssignmentPolicies/{id}
+DELETE /identityGovernance/entitlementManagement/accessPackageAssignmentPolicies/{id}
 ```
 
 ## Request headers
@@ -56,7 +56,7 @@ The following is an example of the request.
 }-->
 
 ```http
-DELETE https://graph.microsoft.com/beta/accessPackageAssignmentPolicies/{id}
+DELETE https://graph.microsoft.com/beta/identityGovernance/entitlementManagement/accessPackageAssignmentPolicies/{id}
 ```
 
 ### Response
