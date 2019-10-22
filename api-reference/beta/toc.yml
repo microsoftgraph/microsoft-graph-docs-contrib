@@ -9084,7 +9084,7 @@
         items:
         - name: Get resource
           href: api/resource-get.md
-    - name: Notifications
+    - name: Notifications Overview
       href: resources/notifications-api-overview.md
       items:
       - name: Notification

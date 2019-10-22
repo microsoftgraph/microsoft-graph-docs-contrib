@@ -7,12 +7,15 @@ ms.prod: notifications"
 
 # Onboarding to cross-device experiences for Microsoft Graph notifications
 
-In addition to [app registration on Azure Portal](notifications-integration-app-registration.md), your application needs to register cross-device information such as cross-platform application id and cross-platform push credentials in order to authorizes Microsoft Graph to send notifications via native push notification services that correspond to each operating system: Windows, iOS, and Android. This is done through [Partner Center dashboard (formerly Windows Dev Center dashboard)](https://partner.microsoft.com/dashboard/). 
+>[!NOTE]
+>If you're only targeting web endpoints, you can skip the section below and go to the next section to learn more about setting up your [App Service](notifications-integrating-app-server.md) to send notifications.
+
+In addition to [app registration on Azure Portal](notifications-integration-app-registration.md), your application needs to register cross-device information such as cross-platform application id and cross-platform push credentials in order to authorize Microsoft Graph to send notifications via native push notification services that correspond to each operating system: Windows, iOS, and Android. This is done through the [Partner Center dashboard (formerly Windows Dev Center dashboard)](https://partner.microsoft.com/dashboard/). 
 
 > [!NOTE]
-> If you don’t already have a Windows developer account, you’ll need to create one. For details, see [Opening a developer account](https://docs.microsoft.com/en-us/windows/uwp/publish/opening-a-developer-account). You need to do this even if you don’t plan to build a Windows UWP application. If you’re building a school or work application as part of an enterprise, you can associate your developer account with the appropriate Azure AD account that is used for managing your enterprise submissions. For details, see [Associate Azure Active Directory with your Partner Center account](https://docs.microsoft.com/en-us/windows/uwp/publish/associate-azure-ad-with-partner-center).
+> You'll need a Windows developer account to complete the steps outlined below, even if you don’t plan to build a Windows UWP application. If you don’t already have a Windows developer account, you can create one via [Opening a developer account](https://docs.microsoft.com/en-us/windows/uwp/publish/opening-a-developer-account). Alternatively, if you prefer not to enroll as a Windows developer, you can reach out to us via email at gnsengage@microsoft.com. If you create a Windows developer account and are building a school or work application as part of an enterprise, you can associate your developer account with the appropriate Azure AD account that is used for managing your enterprise submissions. For details, see [Associate Azure Active Directory with your Partner Center account](https://docs.microsoft.com/en-us/windows/uwp/publish/associate-azure-ad-with-partner-center).
 
-To get started, sign in to the [Partner Center dashboard](https://partner.microsoft.com/en-us/dashboard) using your Windows developer account (you cannot use an Azure AD account):
+To get started, sign in to the [Partner Center dashboard](https://partner.microsoft.com/en-us/dashboard) using your Windows developer account:
 
 1.  On the left menu, go to **Cross-Device Experiences**, select **Configuring a new cross-device app**, and provide your app name, as shown in the following screenshot.
 
@@ -44,4 +47,4 @@ To get started, sign in to the [Partner Center dashboard](https://partner.micros
     
     ![Verify domain](images/notifications-crossdevice-domain-verify.png)
 
-That’s it! You've now registered your applications to receive notifications. Next, add the [Microsoft Graph notifications SDK](https://github.com/microsoft/project-rome) to your project on your platform of choice and start integrating. 
+That’s it! You've now registered your applications to receive notifications. Next, learn how to set up your [App Service](notifications-integrating-app-server.md) and start sending notifications.

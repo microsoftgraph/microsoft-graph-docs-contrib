@@ -14,25 +14,29 @@ Notifications are one of the most effective ways to reengage with your applicati
 
 Today, users can access your applications and services via a wide variety of platforms and form factors. This mix of devices requires that you understand and support multiplatform notification systems, map users to endpoints, and maintain notification state across devices. 
 
-Most other notification systems eliminate the need to understand and target platform-specific push notification systems, but are still  designed to target each device. Microsoft Graph notifications provide a human-centric approach that gives you the ability to target your  users across any and all device endpoints.
+Most other notification systems eliminate the need to understand and target platform-specific push notification systems, but are still  designed to target each device. Microsoft Graph notifications platform provides a human-centric approach that gives you the ability to target your users across any and all device endpoints.
 
 ![An image that shows an app service communicating with Microsoft Graph to send notifications to multiple endpoints](images/notifications-flow-overview.png)
 
 ## Why integrate with Microsoft Graph notifications?
 
-Microsoft Graph notifications provide a user-centric notification platform that brings four key benefits to your applications.
+Microsoft Graph notifications platform provides a user-centric notification offering that brings five key benefits to your applications.
 
 ### Effortlessly target your user for notification delivery across different endpoints
 
-You can use the notifications API to target a personal Microsoft account or a work or school Azure Active Directory (Azure AD) account to deliver notifications. The platform distributes this notification to all user endpoints running your application or service, including Windows UWP, Android, and iOS. This capability helps maximize outreach by ensuring appropriate notifications can reach your target, wherever they are.
+You can use the notifications API to target a personal Microsoft account or a work or school Azure Active Directory (Azure AD) account to deliver notifications. The platform distributes this notification to all user endpoints running your application or service, including Windows UWP, iOS, Android and Web endpoints. This capability helps maximize outreach by ensuring appropriate notifications can reach your target, wherever they are.
 
 ### Easily manage notifications across endpoints
 
-Using the [Microsoft Graph notifications client SDK](https://github.com/microsoft/project-rome) within your client application, you can update the state of a notification and sync that state across all endpoints. For example, when a user acts on a notification on one device, you can update the state of this notification (such as marking it as read or dismissed), and the same state change will be distributed to all other endpoints. The Microsoft Graph notifications API tracks the state of your user’s notifications in a centralized way, making it easy for you to ensure that your notifications are handled once, and dismissed everywhere, thereby minimizing redundancy and ensuring a great customer experience.
+Using the new and improved [Microsoft Graph notifications client SDK](https://aka.ms/GNSDK) within your client application, you can update the state of a notification and sync that state across all endpoints. For example, when a user acts on a notification on one device, you can update the state of this notification (such as marking it as read or dismissed), and the same state change will be distributed to all other endpoints. The Microsoft Graph notifications API tracks the state of your user’s notifications in a centralized way, making it easy for you to ensure that your notifications are handled once, and dismissed everywhere, thereby minimizing redundancy and ensuring a great customer experience.
 
 ### Retrieve notification state and history
 
 You can use the notifications API to retrieve notification history based on an expiration time you define (up to 30 days). Notifications that are marked as read or dismissed are still retrievable from the history, enabling in-app views of notification history as well as enabling you to build on insights and intelligence.
+
+### Guaranteed delivery for high-priority notifications
+
+On platforms like iOS, under certain power conditions, raw data notifications might be delayed in delivery due to batching, or not reach the target endpoint at all. For high-priority notifications, the Microsoft Graph notifications platform allows you to specify a raw-to-visual toast notification "fallback" option that automatically sends a visual toast notification to the target device, thereby ensuring your user gets notified near real-time.   
 
 ### Privacy and compliance
 
