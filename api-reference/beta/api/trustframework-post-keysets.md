@@ -1,6 +1,6 @@
 ---
 title: "Create trustFrameworkKeySet"
-description: "Use this API to create a new trustFrameworkKeySet."
+description: "Create a new **trustFrameworkKeySet** object."
 localization_priority: Normal
 author: "valnav"
 ms.prod: "microsoft-identity-platform"
@@ -11,7 +11,7 @@ doc_type: "apiPageType"
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Use this API to create a new trustFrameworkKeySet.The id of the trustFrameworkKeySet is expected in the create request. However it can be modified by the service. The modified id will be available in the response and in the location header.
+Create a new [trustFrameworkKeySet](../resources/trustframeworkkeyset.md). The ID of the **trustFrameworkKeySet** is expected in the create request; however, it can be modified by the service. The modified ID will be available in the response and in the location header.
 
 ## Permissions
 
@@ -39,18 +39,20 @@ POST /trustFramework/keySets
 
 ## Request body
 
-In the request body, supply a JSON representation of [trustFrameworkKeySet](../resources/trustframeworkkeyset.md) object.
+In the request body, supply a JSON representation of a [trustFrameworkKeySet](../resources/trustframeworkkeyset.md) object.
 
 ## Response
 
-If successful, this method returns `201, Created` response code, a `location header` for newly created object and a new [trustFrameworkKeySet](../resources/trustframeworkkeyset.md) object in the response body.
+If successful, this method returns a `201 Created` response code, a location header for the newly created object, and a new [trustFrameworkKeySet](../resources/trustframeworkkeyset.md) object in the response body.
 
-## Example : Create an empty key set
-This pattern will suffice for most of the scenarios. Creating an enpty key set and then generarting a key, uploading a manual secret, uploading a certificate or a PKCS12 key will meet your requirement. 
+## Examples
 
-### Request
+### Example 1: Create an empty key set
+This pattern to create an enpty key set and then generarte a key, upload a manual secret, and upload a certificate or a PKCS12 key is sufficient for most scenarios. 
 
-The following is an example of a request.
+#### Request
+
+The following example shows the request.
 <!-- {
   "blockType": "request",
   "name": "create_trustframeworkkeyset_from_trustframework1"
@@ -65,9 +67,9 @@ Content-type: application/json
 }
 ```
 
-### Response
+#### Response
 
-The following is an example of the response.
+The following example shows the response.
 
 > **Note:** The response object shown here might be shortened for readability. All the properties will be returned from an actual call.
 
@@ -88,13 +90,13 @@ Location : /trustFramework/keySets('B2C_1A_keyset1')
 }
 ```
 
-## Example : Create a key set with a key
+### Example 2: Create a key set with a key
 
-This is an advanced scenario where you need to know the [RFC 7517](https://tools.ietf.org/html/rfc7517#section-5) compliant Json Web Key format of the key.
+This is an advanced scenario where you need to know the [RFC 7517](https://tools.ietf.org/html/rfc7517#section-5) compliant JSON Web Key format of the key.
 
-### Request
+#### Request
 
-The following is an example of a request.
+The following example shows the request.
 <!-- {
   "blockType": "request",
   "name": "create_trustframeworkkeyset_from_trustframework"
@@ -131,9 +133,9 @@ Content-type: application/json
 }
 ```
 
-### Response
+#### Response
 
-The following is an example of the response.
+The following example shows the response.
 
 > **Note:** The response object shown here might be shortened for readability. All the properties will be returned from an actual call.
 
