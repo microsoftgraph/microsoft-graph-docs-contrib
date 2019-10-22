@@ -59,8 +59,8 @@ The following table lists the properties that are required when you evaluate gro
 
 | Parameter | Type | Description |
 | :-------- | :--- | :---------- |
-| memberId | String | The membership identifier. |
-| membershipRule | String | The rule that is used for membership evaluation. |
+| memberId | String collection | The membership identifier. |
+| membershipRule | String collection | The rule that is used for membership evaluation. |
 
 ## Response
 
