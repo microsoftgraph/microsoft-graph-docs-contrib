@@ -11,7 +11,7 @@ doc_type: "apiPageType"
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Create an upload session that allows an app to iteratively uploade ranges of a file, so as to attach the file to the specified [message](../resources/message.md).
+Create an upload session that allows an app to iteratively upload ranges of a file, so as to attach the file to the specified [message](../resources/message.md).
 
 Use this approach to attach files of sizes between 3MB and 150MB to a **message**. To attach files of sizes under 4MB, simply [POST on the attachments navigation property](message-post-attachments.md). 
 

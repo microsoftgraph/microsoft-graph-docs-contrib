@@ -8752,7 +8752,7 @@
           href: api/message-list-attachments.md
         - name: Add attachment
           href: api/message-post-attachments.md
-        - name: Create session to attach file (preview)
+        - name: Create session to attach large file (preview)
           href: api/attachment-createuploadsession.md
         - name: Create open extension
           href: api/opentypeextension-post-opentypeextension.md
@@ -8767,6 +8767,8 @@
           href: resources/itemattachment.md
         - name: Reference attachment type
           href: resources/referenceattachment.md
+        - name: Create session to attach large file (preview)
+          href: api/attachment-createuploadsession.md
         - name: Get attachment
           href: api/attachment-get.md
         - name: Delete attachment

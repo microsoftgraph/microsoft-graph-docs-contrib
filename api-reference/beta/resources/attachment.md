@@ -36,7 +36,7 @@ The following methods apply to any of the derived types of attachments (**fileAt
 |[Get attachment](../api/attachment-get.md) | [attachment](attachment.md) |Read the properties, relationships, or raw contents of an attachment, attached to a user event, message, Outlook task, or post.|
 |[Add attachment to a user event](../api/event-post-attachments.md) | [attachment](attachment.md) |Add a file, item, or link attachment to an event in a user calendar.|
 |[Add attachment to a message](../api/message-post-attachments.md) | [attachment](attachment.md) |Add a file, item, or link attachment to a message. If attaching a file, the file size must be less than 4MB.|
-|[Create session to attach file](../api/attachment-createuploadsession.md)| [uploadSession](uploadsession.md) | Create an upload session that allows an app to iteratively upload ranges of a file, so as to attach the file to the specified **message**. The file size must be between 3MB and 150MB.|
+|[Create session to attach large file](../api/attachment-createuploadsession.md)| [uploadSession](uploadsession.md) | Create an upload session that allows an app to iteratively upload ranges of a file, so as to attach the file to the specified **message**. The file size must be between 3MB and 150MB.|
 |[Add attachment to an Outlook task](../api/outlooktask-post-attachments.md) | [attachment](attachment.md) |Add a file, item, or link attachment to an Outlook task.|
 |[Add attachment to a post](../api/post-post-attachments.md) | [attachment](attachment.md) |Add a file, item, or link attachment to a post.|
 |[List attachments of a user event](../api/event-list-attachments.md) | [attachment](attachment.md) collection | Get a list of attachments for an event in a user calendar. |
