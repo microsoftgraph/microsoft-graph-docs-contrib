@@ -13,7 +13,7 @@ doc_type: "apiPageType"
 
 Create a new [externalItem](../resources/externalitem.md) or [externalFile](../resources/externalfile.md).
 
-This API can be used to create a custom item or a file. Specify the type you are creating by including the `@odata.type` property in the JSON body. The containing [connection](../resources/connection.md) must have a [schema](../resources/schema.md) registered of the corresponding type.
+This API can be used to create a custom item or a file. Specify the type you are creating by including the `@odata.type` property in the JSON body. The containing [externalConnection](../resources/externalconnection.md) must have a [schema](../resources/schema.md) registered of the corresponding type.
 
 ## Permissions
 

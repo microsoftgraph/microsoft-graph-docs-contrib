@@ -18,13 +18,13 @@ A connection to Microsoft Search from an external source.
 | Method                                                           | Return Type                                   | Description |
 |:-----------------------------------------------------------------|:----------------------------------------------|:--|
 | [Create externalConnection](../api/external-post-connections.md) | externalConnection                            | Create a new externalConnection by posting to the connections collection. |
-| [List externalConnections](../api/connection-list.md)            | externalConnection collection                 | Get a externalConnection object collection. |
-| [Get externalConnection](../api/connection-get.md)               | externalConnection                            | Read properties and relationships of a externalConnection object. |
-| [Update externalConnection](../api/connection-update.md)         | externalConnection                            | Update a externalConnection object. |
-| [Delete externalConnection](../api/connection-delete.md)         | None                                          | Delete a externalConnection object. |
-| [Create schema](../api/connection-post-schema.md)                | None *or* [schema](schema.md)                 | Register connection schema. |
+| [List externalConnections](../api/externalconnection-list.md)    | externalConnection collection                 | Get a externalConnection object collection. |
+| [Get externalConnection](../api/externalconnection-get.md)       | externalConnection                            | Read properties and relationships of a externalConnection object. |
+| [Update externalConnection](../api/externalconnection-update.md) | externalConnection                            | Update a externalConnection object. |
+| [Delete externalConnection](../api/externalconnection-delete.md) | None                                          | Delete a externalConnection object. |
+| [Create schema](../api/externalconnection-post-schema.md)        | None *or* [schema](schema.md)                 | Register connection schema. |
 | [Get operation](../api/connectionoperation-get.md)               | [connectionOperation](connectionoperation.md) | Get the status of an asynchronous request to create the connection schema. |
-| [Create externalItem](../api/connection-put-items.md)            | [externalItem](externalitem.md)               | Create a new externalItem by posting to the items collection. |
+| [Create externalItem](../api/externalconnection-put-items.md)    | [externalItem](externalitem.md)               | Create a new externalItem by posting to the items collection. |
 
 ## Properties
 
