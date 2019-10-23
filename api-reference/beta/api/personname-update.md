@@ -1,9 +1,9 @@
 ---
-title: "Update personname"
+title: "Update personName"
 description: "Update the properties of personname object."
 localization_priority: Normal
 author: "kevinbellinger"
-ms.prod: "People"
+ms.prod: "people"
 doc_type: "apiPageType"
 ---
 
@@ -11,7 +11,7 @@ doc_type: "apiPageType"
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Update the properties of a personname object in a users profile.
+Update the properties of a [personName](../resources/personname.md) object in a user's [profile](../resources/profile.md).
 
 ## Permissions
 
@@ -19,42 +19,42 @@ One of the following permissions is required to call this API. To learn more, in
 
 | Permission type                        | Permissions (from least to most privileged) |
 |:---------------------------------------|:--------------------------------------------|
-| Delegated (work or school account)     | User.ReadWrite, User.ReadWrite.All |
-| Delegated (personal Microsoft account) | User.ReadWrite, User.ReadWrite.All |
-| Application                            | User.ReadWrite.All |
+| Delegated (work or school account)     | User.ReadWrite, User.ReadWrite.All          |
+| Delegated (personal Microsoft account) | User.ReadWrite, User.ReadWrite.All          |
+| Application                            | User.ReadWrite.All                          |
 
 ## HTTP request
 
 <!-- { "blockType": "ignored" } -->
 
 ```http
-JSON2MD ERROR: COULD NOT DETERMINE API PATH
+PATCH /me/profile/names/{id}
 ```
 
 ## Request headers
 
-| Name      |Description|
-|:----------|:----------|
-| Authorization  | Bearer {token}. Required.|
-| Content-Type   | application/json |
+| Name           |Description                  |
+|:---------------|:----------------------------|
+| Authorization  | Bearer {token}. Required.   |
+| Content-Type   | application/json. Required. |
 
 ## Request body
 
 In the request body, supply the values for relevant fields that should be updated. Existing properties that are not included in the request body will maintain their previous values or be recalculated based on changes to other property values. For best performance, don't include existing values that haven't changed.
 
-| Property     | Type        | Description |
-|:-------------|:------------|:------------|
-|displayName|String||
-|first|String||
-|initials|String||
-|languageTag|String||
-|last|String||
-|maiden|String||
-|middle|String||
-|nickname|String||
-|pronunciation|yomiPersonName||
-|suffix|String||
-|title|String||
+| Property     | Type                                            | Description                                                                             | 
+|:-------------|:------------------------------------------------|:----------------------------------------------------------------------------------------|
+|displayName   |String                                           | Provides an ordered rendering of first name and last name.                              |
+|first         |String                                           | First Name of the user.                                                                 |
+|initials      |String                                           | Initials of the user.                                                                   |
+|languageTag   |String                                           | Contains the name for the language (en-US, no-NB, en-AU) following IETF BCP47 format.   |
+|last          |String                                           | Last name of the user.                                                                  |
+|maiden        |String                                           | User's pre-marriage last name.                                                          |
+|middle        |String                                           | User's middle name.                                                                     |
+|nickname      |String                                           | User's nickname.                                                                        |
+|pronunciation |[yomiPersonName](../resources/yomipersonname.md) | Contains details about pronunciation of the users name.                                 |
+|suffix        |String                                           | Designators used after the users name. (eg: PhD.)                                       |
+|title         |String                                           | Honorifics used to prefix a users name. (eg: Dr, Sir, Madam, Mrs.)                      |
 
 ## Response
 
@@ -71,7 +71,7 @@ The following is an example of the request.
 }-->
 
 ```http
-JSON2MD ERROR: COULD NOT DETERMINE API PATH
+PATCH https://graph.microsoft.com/beta/me/profile/names/{id}
 Content-type: application/json
 
 {

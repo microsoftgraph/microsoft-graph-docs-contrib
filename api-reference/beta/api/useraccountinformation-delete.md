@@ -1,17 +1,17 @@
 ---
-title: "Delete workPosition"
-description: "Delete a workPosition object from a user's profile."
+title: "Delete userAccountInformation"
+description: "Delete userAccountInformation object."
 localization_priority: Normal
 author: "kevinbellinger"
 ms.prod: "people"
 doc_type: "apiPageType"
 ---
 
-# Delete workPosition
+# Delete userAccountInformation
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Delete a specific [workPosition](../resources/workposition.md) object from a user's [profile](../resources/profile.md).
+Delete [userAccountInformation](../resources/useraccountinformation.md) object from a user's [profile](../resources/profile.md).
 
 ## Permissions
 
@@ -19,25 +19,24 @@ One of the following permissions is required to call this API. To learn more, in
 
 | Permission type                        | Permissions (from least to most privileged) |
 |:---------------------------------------|:--------------------------------------------|
-| Delegated (work or school account)     | User.ReadWrite, User.ReadWrite.All          |
-| Delegated (personal Microsoft account) | User.ReadWrite, User.ReadWrite.All          |
-| Application                            | User.ReadWrite.All                          |
+| Delegated (work or school account)     | Not supported.                              |
+| Delegated (personal Microsoft account) | Not supported.                              |
+| Application                            | Not supported.                              |
 
 ## HTTP request
 
 <!-- { "blockType": "ignored" } -->
 
 ```http
-DELETE /me/profile/positions/{id}
+DELETE /user/profile/account{id}
 ```
 
 ## Request headers
 
-| Name           |Description                  |
-|:---------------|:----------------------------|
-| Authorization  | Bearer {token}. Required.   |
-| Content-Type   | application/json. Required. |
-
+| Name           |Description                 |
+|:---------------|:---------------------------|
+| Authorization  | Bearer {token}. Required.  |
+| Content-Type   | application/json. Required |
 
 ## Request body
 
@@ -54,11 +53,11 @@ If successful, this method returns `204 No Content` response code. It does not r
 The following is an example of the request.
 <!-- {
   "blockType": "request",
-  "name": "delete_workposition"
+  "name": "delete_useraccountinformation"
 }-->
 
 ```http
-DELETE https://graph.microsoft.com/beta/me/profile/positions/{id}
+DELETE https://graph.microsoft.com/beta/user/profile/account/{id}
 ```
 
 ### Response
@@ -78,7 +77,7 @@ HTTP/1.1 204 No Content
 2019-02-04 14:57:30 UTC -->
 <!-- {
   "type": "#page.annotation",
-  "description": "Delete workPosition",
+  "description": "Delete userAccountInformation",
   "keywords": "",
   "section": "documentation",
   "tocPath": ""

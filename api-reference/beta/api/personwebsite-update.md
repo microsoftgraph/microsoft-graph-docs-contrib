@@ -1,9 +1,9 @@
 ---
-title: "Update personwebsite"
-description: "Update the properties of personwebsite object."
+title: "Update personWebsite"
+description: "Update the properties of a personWebsite object in a user's profile."
 localization_priority: Normal
 author: "kevinbellinger"
-ms.prod: "People"
+ms.prod: "people"
 doc_type: "apiPageType"
 ---
 
@@ -11,7 +11,7 @@ doc_type: "apiPageType"
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Update the properties of personwebsite object in a users profile.
+Update the properties of [personWebsite](../resources/personwebsite.md) object in a user's [profile](../resources/profile.md).
 
 ## Permissions
 
@@ -19,9 +19,9 @@ One of the following permissions is required to call this API. To learn more, in
 
 | Permission type                        | Permissions (from least to most privileged) |
 |:---------------------------------------|:--------------------------------------------|
-| Delegated (work or school account)     | User.ReadWrite, User.ReadWrite.All |
-| Delegated (personal Microsoft account) | User.ReadWrite, User.ReadWrite.All |
-| Application                            | User.ReadWrite.All |
+| Delegated (work or school account)     | User.ReadWrite, User.ReadWrite.All          |
+| Delegated (personal Microsoft account) | User.ReadWrite, User.ReadWrite.All          |
+| Application                            | User.ReadWrite.All                          |
 
 ## HTTP request
 
@@ -33,21 +33,21 @@ PATCH /me/profile/websites/{id}
 
 ## Request headers
 
-| Name      |Description|
-|:----------|:----------|
-| Authorization  | Bearer {token}. Required.|
-| Content-Type   | application/json |
+| Name           |Description                  |
+|:---------------|:----------------------------|
+| Authorization  | Bearer {token}. Required.   |
+| Content-Type   | application/json. Required. |
 
 ## Request body
 
 In the request body, supply the values for relevant fields that should be updated. Existing properties that are not included in the request body will maintain their previous values or be recalculated based on changes to other property values. For best performance, don't include existing values that haven't changed.
 
-| Property     | Type        | Description |
-|:-------------|:------------|:------------|
-|categories|String collection||
-|description|String||
-|displayName|String||
-|webUrl|String||
+| Property     | Type            | Description                                                                         |
+|:-------------|:----------------|:------------------------------------------------------------------------------------|
+|categories    |String collection| Contains categories a user has associated with the website (eg: personal, recipes)  |
+|description   |String           | Contains a description of the website.                                              |
+|displayName   |String           | Contains a friendly name for the website.                                           |
+|webUrl        |String           | Contains a link to the website itself.                                              |
 
 ## Response
 

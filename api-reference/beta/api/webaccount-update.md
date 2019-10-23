@@ -1,9 +1,9 @@
 ---
-title: "Update webaccount"
-description: "Update the properties of webaccount object."
+title: "Update webAccount"
+description: "Update the properties of webAccount object."
 localization_priority: Normal
 author: "kevinbellinger"
-ms.prod: "People"
+ms.prod: "people"
 doc_type: "apiPageType"
 ---
 
@@ -11,7 +11,7 @@ doc_type: "apiPageType"
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Update the properties of webaccount object.
+Update the properties of [webAccount](../resources/webaccount.md) object in a user's [profile](../resources/profile.md).
 
 ## Permissions
 
@@ -19,9 +19,9 @@ One of the following permissions is required to call this API. To learn more, in
 
 | Permission type                        | Permissions (from least to most privileged) |
 |:---------------------------------------|:--------------------------------------------|
-| Delegated (work or school account)     | User.ReadWrite, User.ReadWrite.All |
-| Delegated (personal Microsoft account) | User.ReadWrite, User.ReadWrite.All |
-| Application                            | User.ReadWrite.All |
+| Delegated (work or school account)     | User.ReadWrite, User.ReadWrite.All          |
+| Delegated (personal Microsoft account) | User.ReadWrite, User.ReadWrite.All          |
+| Application                            | User.ReadWrite.All                          |
 
 ## HTTP request
 
@@ -33,23 +33,23 @@ PATCH /me/profile/webAccounts/{id}
 
 ## Request headers
 
-| Name      |Description|
-|:----------|:----------|
-| Authorization  | Bearer {token}. Required.|
-| Content-Type   | application/json |
+| Name           |Description                  |
+|:---------------|:----------------------------|
+| Authorization  | Bearer {token}. Required.   |
+| Content-Type   | application/json. Required. |
 
 
 ## Request body
 
 In the request body, supply the values for relevant fields that should be updated. Existing properties that are not included in the request body will maintain their previous values or be recalculated based on changes to other property values. For best performance, don't include existing values that haven't changed.
 
-| Property     | Type        | Description |
-|:-------------|:------------|:------------|
-|description|String||
-|service|serviceInformation||
-|statusMessage|String||
-|userId|String||
-|webUrl|String||
+| Property     | Type                                                    | Description                                                                                     |
+|:-------------|:--------------------------------------------------------|:------------------------------------------------------------------------------------------------|
+|description   |String                                                   | Contains the description the user has provided for the account on the service being referenced. |
+|service       |[serviceInformation](../resources/serviceinformation.md) | Represents the basic descriptive data about cloud service provided by a user.                   |
+|statusMessage |String                                                   | Contains a status message from the cloud service if provided or synchronized.                   |
+|userId        |String                                                   | The user name  displayed for the webaccount (ie: @kevinb)                                       |
+|webUrl        |String                                                   | Contains a link to the users profile on the cloud service if one exists.                        |
 
 ## Response
 
@@ -66,7 +66,7 @@ The following is an example of the request.
 }-->
 
 ```http
-PATCH https://graph.microsoft.com/Beta/me/profile/webAccounts{id}
+PATCH https://graph.microsoft.com/beta/me/profile/webAccounts/{id}
 Content-type: application/json
 
 {

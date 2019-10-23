@@ -1,9 +1,9 @@
 ---
 title: "Delete webAccount"
-description: "Delete webAccount."
+description: "Delete a webAccount object from a user's profile."
 localization_priority: Normal
 author: "kevinbellinger"
-ms.prod: "People"
+ms.prod: "people"
 doc_type: "apiPageType"
 ---
 
@@ -11,7 +11,7 @@ doc_type: "apiPageType"
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Delete webAccount object from the users profile.
+Delete webAccount object from the user's profile.
 
 ## Permissions
 
@@ -19,9 +19,9 @@ One of the following permissions is required to call this API. To learn more, in
 
 | Permission type                        | Permissions (from least to most privileged) |
 |:---------------------------------------|:--------------------------------------------|
-| Delegated (work or school account)     | User.ReadWrite, User.ReadWrite.All |
-| Delegated (personal Microsoft account) | User.ReadWrite, User.ReadWrite.All |
-| Application                            | User.ReadWrite.All |
+| Delegated (work or school account)     | User.ReadWrite, User.ReadWrite.All          |
+| Delegated (personal Microsoft account) | User.ReadWrite, User.ReadWrite.All          |
+| Application                            | User.ReadWrite.All                          |
 
 ## HTTP request
 
@@ -33,10 +33,10 @@ DELETE /me/profile/webAccounts/{id}
 
 ## Request headers
 
-| Name      |Description|
-|:----------|:----------|
-| Authorization  | Bearer {token}. Required.|
-| Content-Type   | application/json |
+| Name           |Description                 |
+|:---------------|:---------------------------|
+| Authorization  | Bearer {token}. Required.  | 
+| Content-Type   | application/json. Required |
 
 
 ## Request body
@@ -45,7 +45,7 @@ Do not supply a request body for this method.
 
 ## Response
 
-If successful, this method returns `204, No Content` response code. It does not return anything in the response body.
+If successful, this method returns `204 No Content` response code. It does not return anything in the response body.
 
 ## Examples
 
@@ -58,7 +58,7 @@ The following is an example of the request.
 }-->
 
 ```http
-DELETE https://graph.microsoft.com/Beta/me/profile/webAccounts/{id}
+DELETE https://graph.microsoft.com/beta/me/profile/webAccounts/{id}
 ```
 
 ### Response

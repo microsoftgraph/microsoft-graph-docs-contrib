@@ -1,9 +1,9 @@
 ---
-title: "Update skillproficiency"
-description: "Update the properties of skillproficiency object."
+title: "Update skillProficiency"
+description: "Update the properties of skillProficiency object in a user's profile."
 localization_priority: Normal
 author: "kevinbellinger"
-ms.prod: "People"
+ms.prod: "people"
 doc_type: "apiPageType"
 ---
 
@@ -11,7 +11,7 @@ doc_type: "apiPageType"
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Update the properties of skillproficiency object.
+Update the properties of a [skillProficiency](../resources/skillproficiency.md) object in a user's [profile](../resources/profile.md).
 
 ## Permissions
 
@@ -19,9 +19,9 @@ One of the following permissions is required to call this API. To learn more, in
 
 | Permission type                        | Permissions (from least to most privileged) |
 |:---------------------------------------|:--------------------------------------------|
-| Delegated (work or school account)     | User.ReadWrite, User.ReadWrite.All |
-| Delegated (personal Microsoft account) | User.ReadWrite, User.ReadWrite.All |
-| Application                            | User.ReadWrite.All |
+| Delegated (work or school account)     | User.ReadWrite, User.ReadWrite.All          |
+| Delegated (personal Microsoft account) | User.ReadWrite, User.ReadWrite.All          |
+| Application                            | User.ReadWrite.All                          |
 
 ## HTTP request
 
@@ -33,22 +33,22 @@ PATCH /me/profile/skills/{id}
 
 ## Request headers
 
-| Name      |Description|
-|:----------|:----------|
-| Authorization  | Bearer {token}. Required.|
-| Content-Type   | application/json |
+| Name           |Description                  |
+|:---------------|:----------------------------|
+| Authorization  | Bearer {token}. Required.   |
+| Content-Type   | application/json. Required. |
 
 
 ## Request body
 
 In the request body, supply the values for relevant fields that should be updated. Existing properties that are not included in the request body will maintain their previous values or be recalculated based on changes to other property values. For best performance, don't include existing values that haven't changed.
 
-| Property     | Type        | Description |
-|:-------------|:------------|:------------|
-|categories|String collection||
-|displayName|String||
-|proficiency|string| Possible values are: `elementary`, `limitedWorking`, `generalProfessional`, `advancedProfessional`, `expert`, `unknownFutureValue`.|
-|webUrl|String||
+| Property     | Type            | Description                                                                                                                        |
+|:-------------|:----------------|:-----------------------------------------------------------------------------------------------------------------------------------|
+|categories    |String collection| Contains categories a user has associated with the skill (eg: personal, professional, hobby)                                       |
+|displayName   |String           | Contains a friendly name for the skill.                                                                                            | 
+|proficiency   |string           | Possible values are: `elementary`, `limitedWorking`, `generalProfessional`, `advancedProfessional`, `expert`, `unknownFutureValue`.|
+|webUrl        |String           | Contains a link to an information source about the skill.                                                                          |
 
 ## Response
 
@@ -65,7 +65,7 @@ The following is an example of the request.
 }-->
 
 ```http
-PATCH https://graph.microsoft.com/Beta/me/profile/skills/{id}
+PATCH https://graph.microsoft.com/beta/me/profile/skills/{id}
 Content-type: application/json
 
 {

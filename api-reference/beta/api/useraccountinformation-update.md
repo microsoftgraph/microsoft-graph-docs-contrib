@@ -1,9 +1,9 @@
 ---
-title: "Update useraccountinformation"
-description: "Update the properties of useraccountinformation object."
+title: "Update userAccountInformation"
+description: "Update the properties of userAccountInformation object."
 localization_priority: Normal
 author: "kevinbellinger"
-ms.prod: "Profile"
+ms.prod: "people"
 doc_type: "apiPageType"
 ---
 
@@ -11,7 +11,7 @@ doc_type: "apiPageType"
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Update the properties of useraccountinformation object.
+Update the properties of [userAccountInformation](../resources/useraccountinformation.md) object in a user's [profile](../resources/profile.md).
 
 ## Permissions
 
@@ -19,9 +19,9 @@ One of the following permissions is required to call this API. To learn more, in
 
 | Permission type                        | Permissions (from least to most privileged) |
 |:---------------------------------------|:--------------------------------------------|
-| Delegated (work or school account)     | User.ReadWrite, User.ReadWrite.All |
-| Delegated (personal Microsoft account) | User.ReadWrite, User.ReadWrite.All |
-| Application                            | User.ReadWrite.All |
+| Delegated (work or school account)     | User.ReadWrite, User.ReadWrite.All          |
+| Delegated (personal Microsoft account) | User.ReadWrite, User.ReadWrite.All          |
+| Application                            | User.ReadWrite.All                          |
 
 ## HTTP request
 
@@ -33,21 +33,21 @@ PATCH /me/profile/account/{id}
 
 ## Request headers
 
-| Name      |Description|
-|:----------|:----------|
-| Authorization  | Bearer {token}. Required.|
-| Content-Type   | application/json |
+| Name           |Description                 |
+|:---------------|:---------------------------|
+| Authorization  | Bearer {token}. Required.  |
+| Content-Type   | application/json. Required |
 
 ## Request body
 
 In the request body, supply the values for relevant fields that should be updated. Existing properties that are not included in the request body will maintain their previous values or be recalculated based on changes to other property values. For best performance, don't include existing values that haven't changed.
 
-| Property     | Type        | Description |
-|:-------------|:------------|:------------|
-|ageGroup|String||
-|countryCode|String||
-|preferredLanguageTag|localeInfo||
-|userPrincipalName|String||
+| Property            | Type                                    | Description                                                                                    |
+|:--------------------|:----------------------------------------|:-----------------------------------------------------------------------------------------------|
+|ageGroup             |String                                   |Shows the age group of user. Allowed values `null`, `minor`, `notAdult` and `adult`. Read Only. |
+|countryCode          |String                                   |Contains the two-character countryCode associated with the users account.                       |
+|preferredLanguageTag |[localeInfo](../resources/localeinfo.md) |Contains the language the user has associated as preferred for the account.                     |
+|userPrincipalName    |String                                   |The user principal name (UPN) of the user associated with the account.                          |
 
 ## Response
 
@@ -64,7 +64,7 @@ The following is an example of the request.
 }-->
 
 ```http
-PATCH https://graph.microsoft.com/Beta/me/profile/account/{id}
+PATCH https://graph.microsoft.com/beta/me/profile/account/{id}
 Content-type: application/json
 
 {
