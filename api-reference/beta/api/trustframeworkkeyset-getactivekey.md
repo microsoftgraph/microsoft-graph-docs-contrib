@@ -1,6 +1,6 @@
 ---
 title: "trustFrameworkKeySet: getActiveKey"
-description: "Get active key in the key set"
+description: "Get the active key in the key set."
 localization_priority: Normal
 author: "valnav"
 ms.prod: "microsoft-identity-platform"
@@ -11,7 +11,7 @@ doc_type: "apiPageType"
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Returns the currently active key in a TrustFrameworkKeySet. There would be at most only one active key in the key set at a moment.
+Get the currently active key in a [trustFrameworkKeySet](../resources/trustframeworkkeyset.md). Only one key is active in the key set at a time.
 
 
 ## Permissions
@@ -44,11 +44,9 @@ Do not supply a request body for this method.
 
 ## Response
 
-If successful, this method returns `200, OK` response code and a new [trustFrameworkKey](../resources/trustframeworkkey.md) object in the response body.
+If successful, this method returns a `200 OK` response code and a new [trustFrameworkKey](../resources/trustframeworkkey.md) object in the response body.
 
 ## Examples
-
-The following is an example of how to call this API.
 
 ### Request
 
