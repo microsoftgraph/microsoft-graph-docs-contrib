@@ -1,6 +1,6 @@
 ---
 title: "trustFrameworkKeySet: uploadPkcs12"
-description: "This action can be used to upload a PKCS 12 format key (PFX) to a key set."
+description: "Upload a PKCS 12 format key (PFX) to a key set."
 localization_priority: Normal
 author: "valnav"
 ms.prod: "microsoft-identity-platform"
@@ -11,7 +11,7 @@ doc_type: "apiPageType"
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-This action can be used to upload a PKCS 12 format key (PFX) to a key set. The input to the api is a base-64 encoded value of the Pfx certificate contents.
+Upload a PKCS 12 format key (PFX) to a key set. The input is a base-64 encoded value of the Pfx certificate contents.
 
 ## Permissions
 
@@ -35,7 +35,8 @@ POST /trustFramework/keySets/{id}/uploadPkcs12
 
 | Name          | Description   |
 |:--------------|:--------------|
-| Authorization | Bearer {token} |
+| Authorization | Bearer {token}. Required. |
+| Content-type  | application/json. Required. |
 
 ## Request body
 
@@ -43,16 +44,14 @@ In the request body, provide a JSON object with the following parameters.
 
 | Parameter    | Type        | Description |
 |:-------------|:------------|:------------|
-|key|String|This is the field for sending pfx content. **The value should be base-64 encoded version of the actual certificate content.**|
-|password|String|This is the field for sending password to pfx content.|
+|key|String|This is the field for sending pfx content. The value should be a base-64 encoded version of the actual certificate content.|
+|password|String|This is the field for sending the password to PFX content.|
 
 ## Response
 
-If successful, this method returns `200, OK` response code and a new [trustFrameworkKey](../resources/trustframeworkkey.md) object in the response body.
+If successful, this method returns a `200 OK` response code and a new [trustFrameworkKey](../resources/trustframeworkkey.md) object in the response body.
 
 ## Examples
-
-The following is an example of how to call this API.
 
 ### Request
 
