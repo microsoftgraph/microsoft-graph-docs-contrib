@@ -1,9 +1,9 @@
 ---
-title: "Update itemphonenumber"
-description: "Update the properties of itemphonenumber object."
+title: "Update itemphone"
+description: "Update the properties of itemphone object."
 localization_priority: Normal
 author: "kevinbellinger"
-ms.prod: "People"
+ms.prod: "people"
 doc_type: "apiPageType"
 ---
 
@@ -11,7 +11,7 @@ doc_type: "apiPageType"
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Update the properties of itemphonenumber object in a users profile.
+Update the properties of an [itemPhone](../resources/itemphone.md) object in a user's [profile](../resources/profile.md).
 
 ## Permissions
 
@@ -19,9 +19,9 @@ One of the following permissions is required to call this API. To learn more, in
 
 | Permission type                        | Permissions (from least to most privileged) |
 |:---------------------------------------|:--------------------------------------------|
-| Delegated (work or school account)     | User.ReadWrite, User.ReadWrite.All |
-| Delegated (personal Microsoft account) | User.ReadWrite, User.ReadWrite.All |
-| Application                            | User.ReadWrite.All |
+| Delegated (work or school account)     | User.ReadWrite, User.ReadWrite.All          |
+| Delegated (personal Microsoft account) | User.ReadWrite, User.ReadWrite.All          |
+| Application                            | User.ReadWrite.All                          |
 
 ## HTTP request
 
@@ -33,10 +33,10 @@ PATCH /me/profile/phones/{id}
 
 ## Request headers
 
-| Name      |Description|
-|:----------|:----------|
-| Authorization  | Bearer {token}. Required.|
-| Content-Type   | application/json |
+| Name           |Description                  |
+|:---------------|:----------------------------|
+| Authorization  | Bearer {token}. Required.   |
+| Content-Type   | application/json. Required. |
 
 ## Request body
 
@@ -44,13 +44,13 @@ In the request body, supply the values for relevant fields that should be update
 
 | Property     | Type        | Description |
 |:-------------|:------------|:------------|
-|displayName|String||
-|number|String||
-|type|string| Possible values are: `home`, `business`, `mobile`, `other`, `assistant`, `homeFax`, `businessFax`, `otherFax`, `pager`, `radio`.|
+|displayName   |String       ||
+|number        |String       ||
+|type          |string       | Possible values are: `home`, `business`, `mobile`, `other`, `assistant`, `homeFax`, `businessFax`, `otherFax`, `pager`, `radio`.|
 
 ## Response
 
-If successful, this method returns a `200 OK` response code and an updated [itemPhoneNumber](../resources/itemphonenumber.md) object in the response body.
+If successful, this method returns a `200 OK` response code and an updated [itemPhone](../resources/itemphone.md) object in the response body.
 
 ## Examples
 
@@ -59,11 +59,11 @@ If successful, this method returns a `200 OK` response code and an updated [item
 The following is an example of the request.
 <!-- {
   "blockType": "request",
-  "name": "update_itemphonenumber"
+  "name": "update_itemphone"
 }-->
 
 ```http
-PATCH https://graph.microsoft.com/Beta/me/profile/phones/{id}
+PATCH https://graph.microsoft.com/beta/me/profile/phones/{id}
 Content-type: application/json
 
 {
@@ -82,7 +82,7 @@ The following is an example of the response.
 <!-- {
   "blockType": "response",
   "truncated": true,
-  "@odata.type": "microsoft.graph.itemPhoneNumber"
+  "@odata.type": "microsoft.graph.itemPhone"
 } -->
 
 ```http
@@ -100,7 +100,7 @@ Content-type: application/json
 2019-02-04 14:57:30 UTC -->
 <!-- {
   "type": "#page.annotation",
-  "description": "Update itemphonenumber",
+  "description": "Update itemphone",
   "keywords": "",
   "section": "documentation",
   "tocPath": ""

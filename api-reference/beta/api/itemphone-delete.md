@@ -1,9 +1,9 @@
 ---
-title: "Delete itemPhoneNumber"
-description: "Delete itemPhoneNumber."
+title: "Delete itemPhone"
+description: "Delete itemPhone."
 localization_priority: Normal
 author: "kevinbellinger"
-ms.prod: "People"
+ms.prod: "people"
 doc_type: "apiPageType"
 ---
 
@@ -11,7 +11,7 @@ doc_type: "apiPageType"
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Delete itemPhoneNumber object from the users profile.
+Delete an [itemPhone](../resources/itemphone.md) object from the user's [profile](../resources/profile.md).
 
 ## Permissions
 
@@ -19,9 +19,9 @@ One of the following permissions is required to call this API. To learn more, in
 
 | Permission type                        | Permissions (from least to most privileged) |
 |:---------------------------------------|:--------------------------------------------|
-| Delegated (work or school account)     | User.ReadWrite, User.ReadWrite.All |
-| Delegated (personal Microsoft account) | User.ReadWrite, User.ReadWrite.All |
-| Application                            | User.ReadWrite.All |
+| Delegated (work or school account)     | User.ReadWrite, User.ReadWrite.All          |
+| Delegated (personal Microsoft account) | User.ReadWrite, User.ReadWrite.All          |
+| Application                            | User.ReadWrite.All                          |
 
 ## HTTP request
 
@@ -33,10 +33,10 @@ DELETE /me/profile/phones/{id}
 
 ## Request headers
 
-| Name      |Description|
-|:----------|:----------|
-| Authorization  | Bearer {token}. Required.|
-| Content-Type   | application/json |
+| Name           |Description                  |
+|:---------------|:----------------------------|
+| Authorization  | Bearer {token}. Required.   |
+| Content-Type   | application/json. Required. |
 
 ## Request body
 
@@ -44,7 +44,7 @@ Do not supply a request body for this method.
 
 ## Response
 
-If successful, this method returns `204, No Content` response code. It does not return anything in the response body.
+If successful, this method returns `204 No Content` response code. It does not return anything in the response body.
 
 ## Examples
 
@@ -53,11 +53,11 @@ If successful, this method returns `204, No Content` response code. It does not 
 The following is an example of the request.
 <!-- {
   "blockType": "request",
-  "name": "delete_itemphonenumber"
+  "name": "delete_itemphone"
 }-->
 
 ```http
-DELETE https://graph.microsoft.com/Beta/me/profile/phones/{id}
+DELETE https://graph.microsoft.com/beta/me/profile/phones/{id}
 ```
 
 ### Response
@@ -77,7 +77,7 @@ HTTP/1.1 204 No Content
 2019-02-04 14:57:30 UTC -->
 <!-- {
   "type": "#page.annotation",
-  "description": "Delete itemPhoneNumber",
+  "description": "Delete itemPhone",
   "keywords": "",
   "section": "documentation",
   "tocPath": ""

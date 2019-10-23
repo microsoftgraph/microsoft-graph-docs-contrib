@@ -3,7 +3,7 @@ title: "Update personanniversary"
 description: "Update the properties of personanniversary object."
 localization_priority: Normal
 author: "kevinbellinger"
-ms.prod: "People"
+ms.prod: "people"
 doc_type: "apiPageType"
 ---
 
@@ -11,7 +11,7 @@ doc_type: "apiPageType"
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Update the properties of personanniversary object in a users profile.
+Update the properties of [personanniversary](../resources/personanniversary.md) object in a user's [profile](../resources/profile.md).
 
 ## Permissions
 
@@ -19,9 +19,9 @@ One of the following permissions is required to call this API. To learn more, in
 
 | Permission type                        | Permissions (from least to most privileged) |
 |:---------------------------------------|:--------------------------------------------|
-| Delegated (work or school account)     | Not supported. |
-| Delegated (personal Microsoft account) | Not supported. |
-| Application                            | Not supported. |
+| Delegated (work or school account)     | User.ReadWrite, User.ReadWrite.All          |
+| Delegated (personal Microsoft account) | User.ReadWrite, User.ReadWrite.All          |
+| Application                            | User.ReadWrite.All                          |
 
 ## HTTP request
 
@@ -33,19 +33,19 @@ PATCH /me/profile/anniversaries/{id}
 
 ## Request headers
 
-| Name      |Description|
-|:----------|:----------|
-| Authorization  | Bearer {token}. Required.|
-| Content-Type   | application/json |
+| Name           |Description                  |
+|:---------------|:----------------------------|
+| Authorization  | Bearer {token}. Required.   |
+| Content-Type   | application/json. Required. |
 
 ## Request body
 
 In the request body, supply the values for relevant fields that should be updated. Existing properties that are not included in the request body will maintain their previous values or be recalculated based on changes to other property values. For best performance, don't include existing values that haven't changed.
 
-| Property     | Type        | Description |
-|:-------------|:------------|:------------|
-|date|Date||
-|type|string| Possible values are: `birthday`, `wedding`, `unknownFutureValue`.|
+| Property     | Type        | Description                                                      |
+|:-------------|:------------|:-----------------------------------------------------------------|
+|date          |Date         | Contains the date associated with the anniversary type.          |
+|type          |string       | Possible values are: `birthday`, `wedding`, `unknownFutureValue`.|
 
 ## Response
 
@@ -62,7 +62,7 @@ The following is an example of the request.
 }-->
 
 ```http
-PATCH https://graph.microsoft.com/Beta/me/profile/anniversaries/{id}
+PATCH https://graph.microsoft.com/beta/me/profile/anniversaries/{id}
 Content-type: application/json
 
 {
