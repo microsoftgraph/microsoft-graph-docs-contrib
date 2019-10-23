@@ -1,9 +1,9 @@
 ---
 title: "Update educationalactivity"
-description: "Update the properties of educationalactivity object."
+description: "Update the properties of an educationalactivity object."
 localization_priority: Normal
 author: "kevinbellinger"
-ms.prod: "People"
+ms.prod: "people"
 doc_type: "apiPageType"
 ---
 
@@ -11,7 +11,7 @@ doc_type: "apiPageType"
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Update the properties of educationalactivity object within the users profile.
+Update the properties of an [educationalActivity](../resources/educationalactivity.md) object within a user's [profile](../resources/profile.md).
 
 ## Permissions
 
@@ -19,9 +19,9 @@ One of the following permissions is required to call this API. To learn more, in
 
 | Permission type                        | Permissions (from least to most privileged) |
 |:---------------------------------------|:--------------------------------------------|
-| Delegated (work or school account)     | User.ReadWrite, User.ReadWrite.All |
-| Delegated (personal Microsoft account) | User.ReadWrite, User.ReadWrite.All |
-| Application                            | User.ReadWrite.All |
+| Delegated (work or school account)     | User.ReadWrite, User.ReadWrite.All          |
+| Delegated (personal Microsoft account) | User.ReadWrite, User.ReadWrite.All          |
+| Application                            | User.ReadWrite.All                          |
 
 ## HTTP request
 
@@ -33,22 +33,22 @@ PATCH /me/profile/educationalActivities/{id}
 
 ## Request headers
 
-| Name      |Description|
-|:----------|:----------|
-| Authorization  | Bearer {token}. Required.|
-| Content-Type   | application/json |
+| Name           |Description                  |
+|:---------------|:----------------------------|
+| Authorization  | Bearer {token}. Required.   |
+| Content-Type   | application/json. Required. |
 
 ## Request body
 
 In the request body, supply the values for relevant fields that should be updated. Existing properties that are not included in the request body will maintain their previous values or be recalculated based on changes to other property values. For best performance, don't include existing values that haven't changed.
 
-| Property     | Type        | Description |
-|:-------------|:------------|:------------|
-|completionMonthYear|Date||
-|endMonthYear|Date||
-|institution|institutionData||
-|program|educationalActivityDetail||
-|startMonthYear|Date||
+| Property           | Type                                                                  | Description                                                                |
+|:-------------------|:----------------------------------------------------------------------|:---------------------------------------------------------------------------|
+|completionMonthYear |Date                                                                   | The month and year the user graduated or completed the activity.           |
+|endMonthYear        |Date                                                                   | The month and year the user completed the educational activity referenced. |
+|institution         |[institutionData](../resources/institutiondata.md)                     | Contains details of the institution studied at.                            |
+|program             |[educationalActivityDetail](../resources/educationalactivitydetail.md) | Contains extended information about the program or course.                 |
+|startMonthYear      |Date                                                                   | The month and year the user commenced the activity referenced.             |
 
 ## Response
 
@@ -65,7 +65,7 @@ The following is an example of the request.
 }-->
 
 ```http
-PATCH https://graph.microsoft.com/Beta/me/profile/educationalActivities/{id}
+PATCH https://graph.microsoft.com/beta/me/profile/educationalActivities/{id}
 Content-type: application/json
 
 {

@@ -3,7 +3,7 @@ title: "Delete itemEmail"
 description: "Delete itemEmail."
 localization_priority: Normal
 author: "kevinbellinger"
-ms.prod: "People"
+ms.prod: "people"
 doc_type: "apiPageType"
 ---
 
