@@ -3,7 +3,7 @@ title: "List emails"
 description: "Retrieve a list of itememail objects."
 localization_priority: Normal
 author: "kevinbellinger"
-ms.prod: "People"
+ms.prod: "people"
 doc_type: "apiPageType"
 ---
 
@@ -11,7 +11,7 @@ doc_type: "apiPageType"
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Retrieves a list of itememail objects from a users profile.
+Retrieves a list of [itememail](../resources/itememail.md) objects from a user's [profile](../resources/profile.md).
 
 ## Permissions
 
@@ -37,10 +37,10 @@ This method supports some of the OData query parameters to help customize the re
 
 ## Request headers
 
-| Name      |Description|
-|:----------|:----------|
-| Authorization  | Bearer {token}. Required.|
-| Content-Type   | application/json |
+| Name           |Description                  |
+|:---------------|:----------------------------|
+| Authorization  | Bearer {token}. Required.   |
+| Content-Type   | application/json. Required. |
 
 ## Request body
 
@@ -61,7 +61,7 @@ The following is an example of the request.
 }-->
 
 ```http
-GET https://graph.microsoft.com/Beta/user/profile/emails
+GET https://graph.microsoft.com/beta/me/profile/emails
 ```
 
 ### Response
