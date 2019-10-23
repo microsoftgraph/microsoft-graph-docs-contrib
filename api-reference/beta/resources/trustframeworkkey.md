@@ -1,6 +1,6 @@
 ---
 title: "trustFrameworkKey resource type"
-description: "A trustFrameworkKey is equivalent to a JWK(JSON Web Key). TrustFrameworkKey is a JavaScript Object Notation (JSON) data structure that represents a cryptographic key. TrustFrameworkKey structure follows the format defined in RFC 7517 Section 4"
+description: "Represents a JWK (JSON Web Key). TrustFrameworkKey is a JSON data structure that represents a cryptographic key. The structure of this resource follows the format defined in RFC 7517 Section 4."
 localization_priority: Normal
 author: "valnav"
 ms.prod: "microsoft-identity-platform"
@@ -11,7 +11,7 @@ doc_type: "resourcePageType"
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-A trustFrameworkKey is equivalent to a JWK(JSON Web Key). TrustFrameworkKey is a JavaScript Object Notation (JSON) data structure that represents a cryptographic key. TrustFrameworkKey structure follows the format defined in [RFC 7517 Section 4](https://tools.ietf.org/html/rfc7517#section-4)
+Represents a JWK (JSON Web Key). TrustFrameworkKey is a JSON data structure that represents a cryptographic key. The structure of this resource follows the format defined in [RFC 7517 Section 4](https://tools.ietf.org/html/rfc7517#section-4)
 
 ## Properties
 
