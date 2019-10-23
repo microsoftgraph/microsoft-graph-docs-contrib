@@ -9,7 +9,7 @@ doc_type: "apiPageType"
 
 # List extensionProperties
 
-Retrieve the list of [extensionProperty](extensionProperty.md) objects on an application.
+Retrieve the list of [extensionProperty](../resources/extensionproperty.md) objects on an application.
 
 ## Permissions
 
