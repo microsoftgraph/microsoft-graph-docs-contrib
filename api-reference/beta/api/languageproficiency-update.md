@@ -1,6 +1,6 @@
 ---
 title: "Update languageproficiency"
-description: "Update the properties of languageproficiency object."
+description: "Update the properties of a languageproficiency object in a user's profile."
 localization_priority: Normal
 author: "kevinbellinger"
 ms.prod: "people"

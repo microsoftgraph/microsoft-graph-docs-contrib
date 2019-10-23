@@ -1,6 +1,6 @@
 ---
 title: "Delete itemEmail"
-description: "Delete itemEmail."
+description: "Delete an itemEmail object from a users profile."
 localization_priority: Normal
 author: "kevinbellinger"
 ms.prod: "people"

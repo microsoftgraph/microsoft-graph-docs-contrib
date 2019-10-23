@@ -64,7 +64,7 @@ The following is an example of the request.
 }-->
 
 ```http
-PATCH https://graph.microsoft.com/Beta/user/profile/websites/{id}
+PATCH https://graph.microsoft.com/beta/user/profile/websites/{id}
 Content-type: application/json
 
 {

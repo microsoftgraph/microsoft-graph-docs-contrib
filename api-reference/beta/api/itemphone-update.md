@@ -1,6 +1,6 @@
 ---
 title: "Update itemphone"
-description: "Update the properties of itemphone object."
+description: "Update the properties of an itemphone object."
 localization_priority: Normal
 author: "kevinbellinger"
 ms.prod: "people"
@@ -42,10 +42,10 @@ PATCH /me/profile/phones/{id}
 
 In the request body, supply the values for relevant fields that should be updated. Existing properties that are not included in the request body will maintain their previous values or be recalculated based on changes to other property values. For best performance, don't include existing values that haven't changed.
 
-| Property     | Type        | Description |
-|:-------------|:------------|:------------|
-|displayName   |String       ||
-|number        |String       ||
+| Property     | Type        | Description                                                                                                                     |
+|:-------------|:------------|:--------------------------------------------------------------------------------------------------------------------------------|
+|displayName   |String       | Contains a friendly name for the phone number.                                                                                  |
+|number        |String       | Contains the phone number.                                                                                                      |
 |type          |string       | Possible values are: `home`, `business`, `mobile`, `other`, `assistant`, `homeFax`, `businessFax`, `otherFax`, `pager`, `radio`.|
 
 ## Response

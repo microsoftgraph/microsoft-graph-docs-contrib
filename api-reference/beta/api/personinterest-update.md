@@ -11,7 +11,7 @@ doc_type: "apiPageType"
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Update the properties of [personInterest](../resources/personinterest.md) object in a user's [profile](../resources/profile.md).
+Update the properties of a [personInterest](../resources/personinterest.md) object in a user's [profile](../resources/profile.md).
 
 ## Permissions
 

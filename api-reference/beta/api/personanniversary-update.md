@@ -11,7 +11,7 @@ doc_type: "apiPageType"
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Update the properties of [personanniversary](../resources/personanniversary.md) object in a user's [profile](../resources/profile.md).
+Update the properties of a [personanniversary](../resources/personanniversary.md) object in a user's [profile](../resources/profile.md).
 
 ## Permissions
 

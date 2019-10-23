@@ -11,7 +11,7 @@ doc_type: "apiPageType"
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Delete [projectParticipation](../resources/projectparticipation.md) object from a user's [profile](../resources/profile.md).
+Delete a [projectParticipation](../resources/projectparticipation.md) object from a user's [profile](../resources/profile.md).
 
 ## Permissions
 

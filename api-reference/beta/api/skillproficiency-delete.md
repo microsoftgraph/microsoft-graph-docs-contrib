@@ -11,7 +11,7 @@ doc_type: "apiPageType"
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Delete [skillProficiency](../resources/skillproficiency.md) object from a user's [profile](../resources/profile.md).
+Delete a [skillProficiency](../resources/skillproficiency.md) object from a user's [profile](../resources/profile.md).
 
 ## Permissions
 

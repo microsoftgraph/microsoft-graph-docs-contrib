@@ -1,9 +1,9 @@
 ---
 title: "Get personAnniversary"
-description: "Retrieve the properties and relationships of personanniversary object."
+description: "Retrieve the properties and relationships of a personanniversary object."
 localization_priority: Normal
 author: "kevinbellinger"
-ms.prod: "Profile"
+ms.prod: "people"
 doc_type: "apiPageType"
 ---
 
@@ -11,35 +11,44 @@ doc_type: "apiPageType"
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Retrieve the properties and relationships of personanniversary object.
+Retrieve the properties and relationships of a [personanniversary](../resources/personanniversary.md) object in a user's [profile](../resources/profile.md).
 
 ## Permissions
 
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
 
-| Permission type                        | Permissions (from least to most privileged) |
-|:---------------------------------------|:--------------------------------------------|
-| Delegated (work or school account)     | Not supported. |
-| Delegated (personal Microsoft account) | Not supported. |
-| Application                            | Not supported. |
+| Permission type                        | Permissions (from least to most privileged)                                      |
+|:---------------------------------------|:---------------------------------------------------------------------------------|
+| Delegated (work or school account)     | User.Read, User.ReadWrite, User.ReadBasic.All, User.Read.All, User.ReadWrite.All |
+| Delegated (personal Microsoft account) | User.Read, User.ReadWrite, User.ReadBasic.All, User.Read.All, User.ReadWrite.All |
+| Application                            | User.ReadBasic.All, User.Read.All, User.ReadWrite.All                            |
 
 ## HTTP request
 
 <!-- { "blockType": "ignored" } -->
 
 ```http
-GET /user/profile/anniversaries
+GET /user/profile/anniversaries/{id}
 ```
 
 ## Optional query parameters
 
-This method supports some of the OData query parameters to help customize the response. For general information, see [OData query parameters](/graph/query-parameters).
+This method supports the following OData query parameters to help customize the response. For general information, see [OData query parameters](/graph/query-parameters).
+
+|Name            |Value    |Description                                                                                                                                                                 |
+|:---------------|:--------|:---------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+|$filter         |string   |Limits the response to only those objects which contain the specified criteria.                                                                                             |
+|$orderby        |string   |By default the objects in the response are sorted by their createdDateTime value in a query. You can change the order of the of the response using the *$orderby* parameter.|
+|$select         |string   |Comma-separated list of properties to include in the response. For optimal performance, only select the subset of properties needed.                                        |
+|$skip           |int      |Skip the first n results, useful for paging.                                                                                                                                |
+|$top            |int      |Number of results to be returned.                                                                                                                                           |
 
 ## Request headers
 
-| Name      |Description|
-|:----------|:----------|
-| Authorization | Bearer {token} |
+| Name           |Description                  |
+|:---------------|:----------------------------|
+| Authorization  | Bearer {token}. Required.   |
+| Content-Type   | application/json. Required. |
 
 ## Request body
 
@@ -60,7 +69,7 @@ The following is an example of the request.
 }-->
 
 ```http
-GET https://graph.microsoft.com/Beta/user/profile/anniversaries
+GET https://graph.microsoft.com/beta/me/profile/anniversaries/{id}
 ```
 
 ### Response

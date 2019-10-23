@@ -1,6 +1,6 @@
 ---
 title: "Delete personAnniversary"
-description: "Delete personAnniversary."
+description: "Delete a personAnniversary object from a user's profile."
 localization_priority: Normal
 author: "kevinbellinger"
 ms.prod: "people"

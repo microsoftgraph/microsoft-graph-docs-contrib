@@ -11,7 +11,7 @@ doc_type: "apiPageType"
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Delete [personInterest](../resources/personinterest.md) object from the user's [profile](../resources/profile.md).
+Deletes a [personInterest](../resources/personinterest.md) object from the user's [profile](../resources/profile.md).
 
 ## Permissions
 

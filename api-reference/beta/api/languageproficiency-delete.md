@@ -1,6 +1,6 @@
 ---
 title: "Delete languageProficiency"
-description: "Delete languageProficiency."
+description: "Delete a languageProficiency object from a user's profile."
 localization_priority: Normal
 author: "kevinbellinger"
 ms.prod: "people"
