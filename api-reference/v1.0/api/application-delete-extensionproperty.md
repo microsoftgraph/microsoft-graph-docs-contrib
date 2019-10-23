@@ -9,7 +9,7 @@ doc_type: "apiPageType"
 
 # Delete extensionProperty
 
-Delete an [extensionProperty](../resources/extensionProperty.md).
+Delete an [extensionProperty](../resources/extensionproperty.md).
 
 ## Permissions
 
