@@ -12,7 +12,7 @@ Microsoft Graph allows apps to subscribe to change notifications for resources v
 
 Including resource data as part of notifications requires you to implement the following additional logic to satisfy data access and security requirements: 
 
-- [Handle](#subscription-life-cycle-notifications) special subscription _life cycle_ notifications to maintain an uninterrupted flow of data. Microsoft Graph sends life cycle notifications from time to time to require an app to re-authorize, to make sure access issues have not unexpectedly cropped up for including changed resource data as part of notifications.
+- [Handle](#subscription-life-cycle-notifications) special subscription _life cycle_ notifications to maintain an uninterrupted flow of data. Microsoft Graph sends life cycle notifications from time to time to require an app to re-authorize, to make sure access issues have not unexpectedly cropped up for including resource data in notifications.
 - [Validate](#validating-the-authenticity-of-notifications) the authenticity of notifications as having originated from Microsoft Graph.
 - [Provide](#decrypting-resource-data-from-change-notifications) a public encryption key and use a private key to decrypt resource data received through notifications.
 
@@ -32,7 +32,7 @@ Currently, the Microsoft Teams [chatMessage](/graph/api/resources/chatmessage?vi
 - New or changed messages in a specific Teams channel: `/teams/{id}/channels/{id}/messages`
 - New or changed messages in a specific Teams chat: `/chats/{id}/messages`
 
-The **chatMessage** resource supports including all the properties of a changed instance in a notification; it does not support returning only selective properties of the instance. 
+The **chatMessage** resource supports including all the properties of a changed instance in a notification. It does not support returning only selective properties of the instance. 
 
 This article walks through an example of subscribing to change notifications of messages in a Teams channel, with each notification including the full resource data of the changed **chatMessage** instance.
 
