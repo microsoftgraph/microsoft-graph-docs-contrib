@@ -631,11 +631,11 @@
           href: api/event-delta.md
         - name: Cancel event
           href: api/event-cancel.md
-        - name: Accept events
+        - name: Accept event
           href: api/event-accept.md
         - name: Tentatively accept
           href: api/event-tentativelyaccept.md
-        - name: Decline events
+        - name: Decline event
           href: api/event-decline.md
         - name: Dismiss reminder
           href: api/event-dismissreminder.md
@@ -8246,6 +8246,22 @@
           href: api/certificatebasedauthconfiguration-post-certificatebasedauthconfiguration.md
         - name: Delete
           href: api/certificatebasedauthconfiguration-delete.md
+      - name: Conditional Access
+        items:
+        - name: Policies
+          items:
+          - name: Conditional Access policy
+            href: resources/conditionalaccesspolicy.md
+          - name: List
+            href: api/conditionalaccessroot-list-policies.md
+          - name: Create
+            href: api/conditionalaccessroot-post-policies.md
+          - name: Get
+            href: api/conditionalaccesspolicy-get.md
+          - name: Update
+            href: api/conditionalaccesspolicy-update.md
+          - name: Delete
+            href: api/conditionalaccesspolicy-delete.md
       - name: Contracts
         href: resources/contract.md
         items:
@@ -8874,6 +8890,8 @@
           href: api/message-list-attachments.md
         - name: Add attachment
           href: api/message-post-attachments.md
+        - name: Create session to attach large file (preview)
+          href: api/attachment-createuploadsession.md
         - name: Create open extension
           href: api/opentypeextension-post-opentypeextension.md
         - name: Get open extension
@@ -8887,6 +8905,8 @@
           href: resources/itemattachment.md
         - name: Reference attachment type
           href: resources/referenceattachment.md
+        - name: Create session to attach large file (preview)
+          href: api/attachment-createuploadsession.md
         - name: Get attachment
           href: api/attachment-get.md
         - name: Delete attachment

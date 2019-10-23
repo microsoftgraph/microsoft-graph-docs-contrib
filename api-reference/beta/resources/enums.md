@@ -7,6 +7,14 @@ ms.prod: ""
 author: ""
 ---
 
+### attachmentType values
+
+| Member
+|:--------------
+| file
+| item
+| reference
+
 ### analyticsActivityType values
 
 | Member
@@ -877,7 +885,6 @@ Possible values for user account types (group membership), per Windows definitio
 |offline|
 |unknownFutureValue|
 
-
 ### activityType values
 
 |Member|
@@ -885,7 +892,6 @@ Possible values for user account types (group membership), per Windows definitio
 |signin|
 |user|
 |unknownFutureValue|
-
 
 ### onlineMeetingProviderType values
 
@@ -896,7 +902,6 @@ Possible values for user account types (group membership), per Windows definitio
 |skypeForConsumer|2|
 |teamsForBusiness|3|
 
-
 ### delegateMeetingMessageDeliveryOptions values
 
 |Member|
@@ -904,7 +909,6 @@ Possible values for user account types (group membership), per Windows definitio
 |sendToDelegateAndInformationToPrincipal|0|
 |sendToDelegateAndPrincipal|1|
 |sendToDelegateOnly|2|
-
 
 ### calendarRoleType
 
@@ -918,3 +922,64 @@ Possible values for user account types (group membership), per Windows definitio
 |delegateWithoutPrivateEventAccess|5|
 |delegateWithPrivateEventAccess|6|
 |custom|7|
+
+### conditionalAccessPolicyState
+
+|Member|
+|:---|
+|enabled|
+|disabled|
+
+### conditionalAccessClientApp
+
+| Member       |
+|:--------------|
+|browser|
+|modern|
+|easSupported|
+|easUnsupported|
+|other|
+
+### conditionalAccessGrantControl
+
+| Member       |
+|:--------------|
+|block|
+|mfa|
+|compliantDevice|
+|domainJoinedDevice|
+|approvedApplication|
+|compliantApplication|
+
+### cloudAppSecuritySessionControlType
+
+| Member       |
+|:--------------|
+|mcasConfigured|
+|monitorOnly|
+|blockDownloads|
+
+### signinFrequencyType
+
+| Member       |
+|:--------------|
+|days|
+|hours|
+
+### persistentBrowserSessionMode
+
+| Member       |
+|:--------------|
+|always|
+|never|
+
+### conditionalAccessDevicePlatform
+
+| Member       |
+|:--------------|
+|android|
+|iOS|
+|windows|
+|windowsPhone|
+|macOS|
+|all|
