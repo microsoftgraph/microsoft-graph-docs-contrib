@@ -2,14 +2,16 @@
 title: "Update roomlist"
 description: "Update the properties of roomlist object."
 localization_priority: Normal
-author: ""
-ms.prod: ""
+author: "vrod9429"
+ms.prod: "Outlook"
 doc_type: "apiPageType"
 ---
 
 # Update roomlist
 
-Update the properties of roomlist object.
+[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
+
+Update the properties of [roomlist](../resources/roomlist.md) object.
 
 ## Permissions
 
@@ -17,31 +19,36 @@ One of the following permissions is required to call this API. To learn more, in
 
 | Permission type                        | Permissions (from least to most privileged) |
 |:---------------------------------------|:--------------------------------------------|
-| Delegated (work or school account)     | Not supported. |
+| Delegated (work or school account)     | Place.ReadWrite.All. |
 | Delegated (personal Microsoft account) | Not supported. |
-| Application                            | Not supported. |
+| Application                            | Place.ReadWrite.All. |
 
 ## HTTP request
 
 <!-- { "blockType": "ignored" } -->
 
 ```http
-JSON2MD ERROR: COULD NOT DETERMINE API PATH
+PATCH /places/{id}
 ```
 
 ## Request headers
 
-| Name       | Description|
-|:-----------|:-----------|
-| Authorization | Bearer {code} |
+| Name       | Type | Description|
+|:-----------|:------|:----------|
+| Authorization  | string  | Bearer {token}. Required. |
 
 ## Request body
 
 In the request body, supply the values for relevant fields that should be updated. Existing properties that are not included in the request body will maintain their previous values or be recalculated based on changes to other property values. For best performance, don't include existing values that haven't changed.
 
-| Property     | Type        | Description |
-|:-------------|:------------|:------------|
-|emailAddress|String||
+| Property       | Type                                              | Description |
+|:---------------|:--------------------------------------------------|:--------|
+| address        | [physicalAddress](physicaladdress.md)             | The street address of the room list. |
+| displayName    | String                                            | The name associated with the room list. |
+| emailAddress   | String                                            | The email address of the room list. |
+| geoCoordinates | [outlookGeoCoordinates](outlookgeocoordinates.md) | Specifies the roomlist location in latitude, longitude and (optionally) altitude coordinates. |
+| id             | String                                            | Unique identifier for the room list. Read-only. |
+| phone          | String                                            | The phone number of the room list. |
 
 ## Response
 
@@ -52,17 +59,20 @@ If successful, this method returns a `200 OK` response code and an updated [room
 ### Request
 
 The following is an example of the request.
+
+# [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "update_roomlist"
 }-->
-
 ```http
-JSON2MD ERROR: COULD NOT DETERMINE API PATH
+PATCH https://graph.microsoft.com/beta/places/{id}
 Content-type: application/json
+Content-length: 285
 
 {
-  "emailAddress": "emailAddress-value"
+  "building": "Building 1",
+  "phone":"1234567899"
 }
 ```
 
@@ -84,7 +94,20 @@ HTTP/1.1 200 OK
 Content-type: application/json
 
 {
-  "emailAddress": "emailAddress-value"
+  "@odata.context": "https://graph.microsoft.com/beta/$metadata#places/$entity",
+  "@odata.type": "#microsoft.graph.roomList",
+  "id": "DC404124-302A-92AA-F98D-7B4DEB0C1705",
+  "displayName": "Building 1",
+  "address": {
+    "street": "4567 Main Street",
+    "city": "Buffalo",
+    "state": "NY",
+    "postalCode": "98052",
+    "countryOrRegion": "USA"
+  },
+  "geocoordinates": null,
+  "phone": 1234567899,
+  "emailAddress": "bldg1@contoso.com"
 }
 ```
 
