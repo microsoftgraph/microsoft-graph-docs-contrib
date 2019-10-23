@@ -24,7 +24,7 @@ One of the following permissions is required to call this API. To learn more, in
 |Application                            | Not supported. |
 
 >[!NOTE]
->This API has a [known issue](/graph/known-issues#conditional-access-policies-and-named-locations): It requires multiple scopes.
+>This API requires multiple permissions. For details, see [Known issues](/graph/known-issues#conditional-access-policies-and-named-locations).
 
 ## HTTP request
 
@@ -38,14 +38,14 @@ PATCH /conditionalAccess/policies/{id}
 
 | Name          | Description      |
 |:--------------|:-----------------|
-| Authorization | Bearer {token}   |
-| Content-Type  | application/json |
+| Authorization | Bearer {token}. Required.   |
+| Content-Type  | application/json. Required. |
 
 ## Request body
 
 In the request body, supply the values for relevant fields that should be updated. Existing properties that are not included in the request body will maintain their previous values or be recalculated based on changes to other property values. For best performance, don't include existing values that haven't changed.
 
-See properties in the [conditionalAccessPolicy](../resources/conditionalaccesspolicy.md) object.
+For the list of properties, see [conditionalAccessPolicy](../resources/conditionalaccesspolicy.md).
 
 ## Response
 
