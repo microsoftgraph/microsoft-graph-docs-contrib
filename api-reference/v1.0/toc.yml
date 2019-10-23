@@ -565,11 +565,11 @@
           href: api/event-delete.md
         - name: Get delta
           href: api/event-delta.md
-        - name: Accept events
+        - name: Accept event
           href: api/event-accept.md
         - name: Tentatively accept
           href: api/event-tentativelyaccept.md
-        - name: Decline events
+        - name: Decline event
           href: api/event-decline.md
         - name: Dismiss reminder
           href: api/event-dismissreminder.md
@@ -3198,6 +3198,17 @@
             href: api/signin-list.md
           - name: Get sign-in
             href: api/signin-get.md
+      - name: Certificate-based auth configuration
+        href: resources/certificatebasedauthconfiguration.md
+        items:
+        - name: List
+          href: api/certificatebasedauthconfiguration-list.md
+        - name: Create
+          href: api/certificatebasedauthconfiguration-post-certificatebasedauthconfiguration.md
+        - name: Get
+          href: api/certificatebasedauthconfiguration-get.md
+        - name: Delete
+          href: api/certificatebasedauthconfiguration-delete.md
       - name: Contracts
         href: resources/contract.md
         items:
@@ -3347,6 +3358,19 @@
           href: api/organization-get.md
         - name: Update org details
           href: api/organization-update.md
+      - name: Organizational contacts
+        href: resources/orgcontact.md
+        items:
+        - name: List org contacts
+          href: api/orgcontact-list.md
+        - name: Get org contact
+          href: api/orgcontact-get.md
+        - name: List direct reports
+          href: api/orgcontact-list-directreports.md  
+        - name: List memberOf
+          href: api/orgcontact-list-memberof.md
+        - name: Get manager
+          href: api/orgcontact-get-manager.md
       - name: Subscribed SKU
         href: resources/subscribedsku.md
         items:
