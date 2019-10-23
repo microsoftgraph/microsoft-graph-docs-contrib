@@ -35,7 +35,7 @@ POST /trustFramework/keySets/{id}/uploadCertificate
 
 | Name          | Description   |
 |:--------------|:--------------|
-| Authorization | Bearer {token} |
+| Authorization | Bearer {token}. Required. |
 
 ## Request body
 
@@ -83,6 +83,7 @@ The following is an example of the response.
 ```http
 HTTP/1.1 200 OK
 Content-type: application/json
+
 {
 	"kid": "kid-value",
 	"use": "sig",
