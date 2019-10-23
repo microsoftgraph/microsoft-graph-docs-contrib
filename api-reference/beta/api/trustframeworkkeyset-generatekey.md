@@ -1,6 +1,6 @@
 ---
 title: "trustFrameworkKeySet: generateKey"
-description: "Generate a key"
+description: "Generate a key and a secret automatically in the keyset."
 localization_priority: Normal
 author: "valnav"
 ms.prod: "microsoft-identity-platform"
@@ -11,7 +11,7 @@ doc_type: "apiPageType"
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-This api can be used to generate a key and a secret automatically in the keyset. Caller doesn't have to provide a secret here.
+Generate a key and a secret automatically in the keyset. The caller doesn't have to provide a secret.
 
 ## Permissions
 
@@ -44,14 +44,14 @@ In the request body, provide a JSON object with the following parameters.
 
 | Parameter    | Type        | Description |
 |:-------------|:------------|:------------|
-| `use` | string | Similar to 'use' property of trustFrameworkKey. |
-| `kty` | string | Similar to 'kty' property of trustFrameworkKey. |
-| `nbf` | int | Similar to 'nbf' property of trustFrameworkKey. |
-| `exp` | int | Similar to 'exp' property of trustFrameworkKey. |
+| use | string | Similar to the **use** property of **trustFrameworkKey**. |
+| kty | string | Similar to **kty** property of **trustFrameworkKey**. |
+| nbf | int | Similar to **nbf** property of **trustFrameworkKey**. |
+| exp | int | Similar to **exp** property of **trustFrameworkKey**. |
 
 ## Response
 
-If successful, this method returns `200, OK` response code and a new [trustFrameworkKey](../resources/trustframeworkkey.md) object in the response body.
+If successful, this method returns a `200 OK` response code and a new [trustFrameworkKey](../resources/trustframeworkkey.md) object in the response body.
 
 ## Examples
 
