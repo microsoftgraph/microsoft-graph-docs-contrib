@@ -9,7 +9,9 @@ doc_type: "apiPageType"
 
 # Update room
 
-Update the properties of room object.
+[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
+
+Update the properties of [place](../resources/place.md) object.
 
 ## Permissions
 
@@ -19,7 +21,7 @@ One of the following permissions is required to call this API. To learn more, in
 |:---------------------------------------|:--------------------------------------------|
 | Delegated (work or school account)     | Place.ReadWrite.All. |
 | Delegated (personal Microsoft account) | Not supported. |
-| Application                            | Not supported. |
+| Application                            | Place.ReadWrite.All. |
 
 ## HTTP request
 
@@ -31,54 +33,69 @@ PATCH /places/{id}
 
 ## Request headers
 
-| Name       | Description|
-|:-----------|:-----------|
-| Authorization | Bearer {code} |
+| Name       | Type | Description|
+|:-----------|:------|:----------|
+| Authorization  | string  | Bearer {token}. Required. |
 
 ## Request body
 
 In the request body, supply the values for relevant fields that should be updated. Existing properties that are not included in the request body will maintain their previous values or be recalculated based on changes to other property values. For best performance, don't include existing values that haven't changed.
 
-| Property     | Type        | Description |
-|:-------------|:------------|:------------|
-|audioDeviceName|String||
-|bookingType|outlookbookingType||
-|building|String||
-|capacity|String||
-|displayDeviceName|String||
-|emailAddress|String||
-|floorNumber|Int32||
-|isWheelchairAccessible|Boolean||
-|label|String||
-|nickname|String||
-|tags|String||
-|videoDeviceName|String||
+| Property               | Type                                              | Description |
+|:-----------------------|:--------------------------------------------------|:--|
+| address                | [physicalAddress](physicaladdress.md)             | The street address of the room. |
+| audioDeviceName        | String                                            | Specifies the name of the audio device in the room. |
+| bookingType            | [bookingType](#bookingtype-values)                | Type of room. Possible values are `standard`, `managed`, and `reserved`. |
+| building               | String                                            | Specifies the building name or building number that the room is in. |
+| capacity               | String                                            | Specifies the capacity of the room. |
+| displayName            | String                                            | The name associated with the room. |
+| displayDeviceName      | String                                            | Specifies the name of the display device in the room. |
+| emailAddress           | String                                            | Email address of the room. |
+| floorNumber            | Int32                                             | Specifies the floor number that the room is on. |
+| geoCoordinates         | [outlookGeoCoordinates](outlookgeocoordinates.md) | Specifies the room location in latitude, longitude and optionally, altitude coordinates. |
+| id                     | String                                            | Unique identifier for the room. Read-only. |
+| isWheelchairAccessible | Boolean                                           | Specifies whether the room is wheelchair accessible. |
+| label                  | String                                            | Specifies a descriptive label for the room, for example, a number or name. |
+| nickname               | String                                            | Specifies a nickname for the room, for example, "conf room". |
+| phone                  | String                                            | The phone number of the room. |
+| tags                   | String collection                                 | Specifies additional features of the room, for example, details like the type of view or furniture type. |
+| videoDeviceName        | String                                            | Specifies the name of the video device in the room. |
+
+### bookingType values
+
+| Value    | Description                                               |
+|:---------|:----------------------------------------------------------|
+| standard | The room can be reserved based on the other settings in this cmdlet. This is the default value. |
+| managed  | The room is managed by a delegate                         |
+| reserved | The room is available only on a first come, first served basis. It cannot be reserved.|
 
 ## Response
 
-If successful, this method returns a `200 OK` response code and an updated [room](../resources/room.md) object in the response body.
+If successful, this method returns a `200 OK` response code and an updated [place](../resources/place.md) object in the response body.
 
 ## Examples
 
 ### Request
 
 The following is an example of the request.
+
+# [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "update_room"
 }-->
-
 ```http
-JSON2MD ERROR: COULD NOT DETERMINE API PATH
+PATCH https://graph.microsoft.com/beta/places/{id}
 Content-type: application/json
+Content-length: 285
 
 {
-  "nickname": "nickname-value",
-  "building": "building-value",
-  "label": "label-value",
+  "nickname": "Conf room",
+  "building": "1",
+  "label": "12",
   "bookingType": {
   },
-  "capacity": "capacity-value",
+  "capacity": "2",
   "isWheelchairAccessible": true
 }
 ```
