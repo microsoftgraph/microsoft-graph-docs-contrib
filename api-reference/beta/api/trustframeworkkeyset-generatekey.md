@@ -36,6 +36,7 @@ POST /trustFramework/keySets/{id}/generateKey
 | Name          | Description   |
 |:--------------|:--------------|
 | Authorization | Bearer {token} |
+| Content-type  | application/json. Required. |
 
 ## Request body
 

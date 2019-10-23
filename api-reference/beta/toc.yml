@@ -8863,6 +8863,9 @@
           href: api/trustframeworkkeyset-uploadcertificate.md
         - name: Upload private key
           href: api/trustframeworkkeyset-uploadpkcs12.md
+        - name: Upload secret
+          href: api/trustframeworkkeyset-uploadsecret.md
+
       - name: User flows
         href: resources/identityuserflow.md 
         items:

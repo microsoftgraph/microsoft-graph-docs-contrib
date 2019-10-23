@@ -11,7 +11,7 @@ doc_type: "apiPageType"
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Update the properties of a **trustFrameworkKeySet** object. This operation will replace the content of an existing key set. Specifying the ID in the request payload is optional.
+Update the properties of a **trustFrameworkKeySet** object. This operation will replace the content of an existing keyset. Specifying the ID in the request payload is optional.
 
 ## Permissions
 
@@ -43,7 +43,7 @@ PUT /trustFramework/keySets/{id}
 
 | Property     | Type        | Description |
 |:-------------|:------------|:------------|
-|keys|trustFrameworkKey collection||
+|keys|[trustFrameworkKey](../resources/trustframeworkkey.md) collection| updates a collection of Trustframeworkkeys|
 
 ## Response
 

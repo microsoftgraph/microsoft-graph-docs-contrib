@@ -47,8 +47,8 @@ If successful, this method returns a `201 Created` response code, a location hea
 
 ## Examples
 
-### Example 1: Create an empty key set
-This pattern to create an enpty key set and then generarte a key, upload a manual secret, and upload a certificate or a PKCS12 key is sufficient for most scenarios. 
+### Example 1: Create an empty keyset
+This pattern to create an enpty keyset and then generate a key, upload a manual secret, and upload a certificate or a PKCS12 key is sufficient for most scenarios. 
 
 #### Request
 
@@ -90,7 +90,7 @@ Location : /trustFramework/keySets('B2C_1A_keyset1')
 }
 ```
 
-### Example 2: Create a key set with a key
+### Example 2: Create a keyset with a key
 
 This is an advanced scenario where you need to know the [RFC 7517](https://tools.ietf.org/html/rfc7517#section-5) compliant JSON Web Key format of the key.
 

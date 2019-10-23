@@ -1,6 +1,6 @@
 ---
 title: "trustFrameworkKeySet: getActiveKey"
-description: "Get the active key in the key set."
+description: "Get the active key in the keyset."
 localization_priority: Normal
 author: "valnav"
 ms.prod: "microsoft-identity-platform"
@@ -11,7 +11,7 @@ doc_type: "apiPageType"
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Get the currently active key in a [trustFrameworkKeySet](../resources/trustframeworkkeyset.md). Only one key is active in the key set at a time.
+Get the currently active key in a [trustFrameworkKeySet](../resources/trustframeworkkeyset.md). Only one key is active in the keyset at a time.
 
 
 ## Permissions

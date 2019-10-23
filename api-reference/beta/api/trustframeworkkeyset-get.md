@@ -11,7 +11,7 @@ doc_type: "apiPageType"
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Retrieve the properties and relationships of trustframeworkkeyset object.
+Retrieve the properties and relationships of a [Trustframeworkkeyset](../resources/trustframeworkkeyset.md) object.
 
 ## Permissions
 

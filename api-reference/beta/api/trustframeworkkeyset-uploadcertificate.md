@@ -1,6 +1,6 @@
 ---
 title: "trustFrameworkKeySet: uploadCertificate"
-description: "Upload a certificate to a key set."
+description: "Upload a certificate to a keyset."
 localization_priority: Normal
 author: "valnav"
 ms.prod: "microsoft-identity-platform"
@@ -11,7 +11,7 @@ doc_type: "apiPageType"
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Upload a certificate to a key set. The input is a base-64 encoded value of the certificate contents.
+Upload a certificate to a keyset. The input is a base-64 encoded value of the certificate contents.
 
 ## Permissions
 

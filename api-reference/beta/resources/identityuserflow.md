@@ -1,6 +1,6 @@
 ---
 title: "UserFlow resource type"
-description: "PROVIDE DESCRIPTION HERE"
+description: "Identity user flows are built-in authentication journeys"
 localization_priority: Normal
 author: "valnav"
 ms.prod: "microsoft-identity-platform"
@@ -11,7 +11,7 @@ doc_type: "resourcePageType"
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-PROVIDE DESCRIPTION HERE
+User Flows enable you to define predefined, configurable policies for sign in, sign up, combined sign up and sign in, password reset and profile update.
 
 ## Methods
 

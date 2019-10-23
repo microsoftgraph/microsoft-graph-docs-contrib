@@ -1,6 +1,6 @@
 ---
 title: "trustFrameworkKeySet: uploadSecret"
-description: "Upload a secret to a key set."
+description: "Upload a secret to a keyset."
 localization_priority: Normal
 author: "valnav"
 ms.prod: "microsoft-identity-platform"
@@ -11,7 +11,7 @@ doc_type: "apiPageType"
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Upload a plain text secret to a key set. Examples of secrets are application secrets in Azure Active Directory, Google, Facebook, or any other identity prvovider.
+Upload a plain text secret to a keyset. Examples of secrets are application secrets in Azure Active Directory, Google, Facebook, or any other identity provider.
 
 ## Permissions
 
