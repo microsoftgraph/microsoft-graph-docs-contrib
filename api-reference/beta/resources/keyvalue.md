@@ -11,6 +11,15 @@ author: ""
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
+Represents a key-value pair.
+
+## Properties
+
+| Property	   | Type	|Description|
+|:---------------|:--------|:----------|
+|key|string| Key for the key-value pair. |
+|value|string| Value for the key-value pair.|
+
 ## JSON representation
 
 Here is a JSON representation of the resource.
@@ -30,11 +39,6 @@ Here is a JSON representation of the resource.
 }
 
 ```
-## Properties
-| Property	   | Type	|Description|
-|:---------------|:--------|:----------|
-|key|string||
-|value|string||
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2015-10-25 14:57:30 UTC -->
@@ -48,3 +52,4 @@ Here is a JSON representation of the resource.
   "suppressions": []
 }
 -->
+
