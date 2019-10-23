@@ -1,6 +1,6 @@
 ---
 title: "Get calendarPermission"
-description: "Retrieve the properties and relationships of calendarpermission object."
+description: "Get the properties and relationships of calendarpermission object."
 localization_priority: Normal
 author: ""
 ms.prod: ""
@@ -9,17 +9,16 @@ doc_type: "apiPageType"
 
 # Get calendarPermission
 
-Retrieve the properties and relationships of calendarpermission object.
+Get the properties and relationships of calendarpermission object.
 
 ## Permissions
 
-One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
+Depending on the type of calendar that the event is in and the permission type (delegated or application) requested, one of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
 
-| Permission type                        | Permissions (from least to most privileged) |
-|:---------------------------------------|:--------------------------------------------|
-| Delegated (work or school account)     | Not supported. |
-| Delegated (personal Microsoft account) | Not supported. |
-| Application                            | Not supported. |
+| Calendar | Delegated (work or school account) | Delegated (personal Microsoft account) | Application |
+|:-----|:-----|:-----|:-----|
+| user calendar | Calendars.Read, Calendars.ReadWrite | Calendars.Read, Calendars.ReadWrite | Calendars.Read, Calendars.ReadWrite |
+| group calendar | Group.Read.All, Group.ReadWrite.All | Not supported. | Not supported. |
 
 ## HTTP request
 
@@ -81,16 +80,19 @@ Content-type: application/json
 
 {
   "emailAddress": {
-    "name": "name-value",
-    "address": "address-value"
+    "name": "My Organization",
   },
   "isRemovable": true,
   "isInsideOrganization": true,
-  "role": "role-value",
+  "role": "write",
   "allowedRoles": [
-    "allowedRoles-value"
+    "none",
+    "freeBusyRead",
+    "limitedRead",
+    "read",
+    "write"
   ],
-  "id": "id-value"
+  "id": "RGVmYXVsdA=="
 }
 ```
 

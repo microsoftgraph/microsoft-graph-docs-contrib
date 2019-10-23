@@ -13,13 +13,12 @@ Update the properties of calendarpermission object.
 
 ## Permissions
 
-One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
+Depending on the type of calendar that the event is in and the permission type (delegated or application) requested, one of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
 
-| Permission type                        | Permissions (from least to most privileged) |
-|:---------------------------------------|:--------------------------------------------|
-| Delegated (work or school account)     | Not supported. |
-| Delegated (personal Microsoft account) | Not supported. |
-| Application                            | Not supported. |
+| Calendar | Delegated (work or school account) | Delegated (personal Microsoft account) | Application |
+|:-----|:-----|:-----|:-----|
+| user calendar | Calendars.ReadWrite | Calendars.ReadWrite | Calendars.ReadWrite |
+| group calendar | Group.ReadWrite.All | Not supported. | Not supported. |
 
 ## HTTP request
 
@@ -43,11 +42,12 @@ In the request body, supply the values for relevant fields that should be update
 
 | Property     | Type        | Description |
 |:-------------|:------------|:------------|
-|allowedRoles|string collection| Possible values are: `none`, `freeBusyRead`, `limitedRead`, `read`, `write`, `delegateWithoutPrivateEventAccess`, `delegateWithPrivateEventAccess`, `custom`.|
-|emailAddress|emailAddress||
-|isInsideOrganization|Boolean||
-|isRemovable|Boolean||
-|role|string| Possible values are: `none`, `freeBusyRead`, `limitedRead`, `read`, `write`, `delegateWithoutPrivateEventAccess`, `delegateWithPrivateEventAccess`, `custom`.|
+|allowedRoles|calendarRoleType| List of allowed sharing permission levels for the calendar. Possible values are: `none`, `freeBusyRead`, `limitedRead`, `read`, `write`, `delegateWithoutPrivateEventAccess`, `delegateWithPrivateEventAccess`, `custom`.|
+|emailAddress|[emailAddress](emailaddress.md)| Represents a sharee who has access to the calendar. For the "My Organization" sharee, the **address** property is null. |
+|id|String| The unique identifier of the user (sharee) with whom the calendar has been shared. Read-only.|
+|isInsideOrganization|Boolean| True if the user in context (sharee) is inside the same organization as the calendar owner.|
+|isRemovable|Boolean| `True` if the user can be removed from the list of sharees for the specified calendar, `false` otherwise. The “My organization” user determines the permissions other people within your organization have to the given calendar. You cannot remove  “My organization” as a sharee to a calendar.|
+|role|calendarRoleType| Current permission level of the calendar sharee. Possible values are: `none`, `freeBusyRead`, `limitedRead`, `read`, `write`, `delegateWithoutPrivateEventAccess`, `delegateWithPrivateEventAccess`, `custom`.|
 
 ## Response
 
@@ -69,15 +69,19 @@ Content-type: application/json
 
 {
   "emailAddress": {
-    "name": "name-value",
-    "address": "address-value"
+    "name": "My Organization",
   },
   "isRemovable": true,
   "isInsideOrganization": true,
-  "role": "role-value",
+  "role": "write",
   "allowedRoles": [
-    "allowedRoles-value"
-  ]
+    "none",
+    "freeBusyRead",
+    "limitedRead",
+    "read",
+    "write"
+  ],
+  "id": "RGVmYXVsdA=="
 }
 ```
 
@@ -99,16 +103,19 @@ Content-type: application/json
 
 {
   "emailAddress": {
-    "name": "name-value",
-    "address": "address-value"
+    "name": "My Organization",
   },
   "isRemovable": true,
   "isInsideOrganization": true,
-  "role": "role-value",
+  "role": "write",
   "allowedRoles": [
-    "allowedRoles-value"
+    "none",
+    "freeBusyRead",
+    "limitedRead",
+    "read",
+    "write"
   ],
-  "id": "id-value"
+  "id": "RGVmYXVsdA=="
 }
 ```
 
