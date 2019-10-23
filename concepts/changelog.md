@@ -97,6 +97,14 @@ Meeting organizers can allow meeting time proposals, and invitees can suggest al
 | Addition        | Beta          |Added the **hideFromAddressLists** and **hideFromOutlookClients** properties to the [group](/graph/api/resources/group?view=graph-rest-beta) entity, to control the visibility of a group in the Outlook user interface.|
 | Addition | Beta | Added the [group: assignLicense API](/graph/api/group-assignlicense?view=graph-rest-beta), which can be used to assign license to a [group](/graph/api/resources/group?view=graph-rest-beta). |
 
+### Identity and access (Azure AD) | Applications, ServicePrincipals
+
+| **Change type** | **Version**   | **Description**                          |
+| :-------------- | :------------ | :--------------------------------------- |
+| Addition | Beta | Added [removePassword](/graph/api/application-removepassword?view=graph-rest-beta) method to the [application](/graph/resources/application?view=graph-rest-beta) resource. |
+| Addition | Beta | Added **addIns** property to the [application](/graph/resources/application?view=graph-rest-beta). |
+| Addition | Beta | Added [addPassword](/graph/api/serviceprincipal-addpassword?view=graph-rest-beta) and [removePassword](/graph/api/serviceprincipal-removepassword?view=graph-rest-beta) methods to the [serviceprincipal](/graph/resources/serviceprincipal?view=graph-rest-beta) resource. |
+
 ### Identity and access (Azure AD) | Conditional Access
 
 | **Change type** | **Version** | **Description**                  |
@@ -107,9 +115,6 @@ Meeting organizers can allow meeting time proposals, and invitees can suggest al
 | Addition | v1.0 | Added new entity [certificateBasedAuthConfiguration](/graph/api/resources/certificatebasedauthconfiguration?view=graph-rest-v1.0). |
 | Addition | v1.0 | Added new complex type [certificateAuthority](/graph/api/resources/certificateauthority?view=graph-rest-v1.0). |
 | Addition | v1.0 | Added new relationship for **certificateBasedAuthConfiguration** on the [organization](/graph/api/resources/organization?view=graph-rest-v1.0) resource. This enables [certificate-based authentication in Azure Active Directory](https://docs.microsoft.com/azure/active-directory/authentication/active-directory-certificate-based-authentication-get-started).|
-| Addition | Beta | Added [removePassword](../api-reference/beta/api/application-removepassword.md) method to the [application](/graph/api/resources/application?view=graph-rest-beta) resource. |
-| Addition | Beta | Added **addIns** property to the [application](/graph/api/resources/application?view=graph-rest-beta). |
-| Addition | Beta | Added [addPassword](../api-reference/beta/api/serviceprincipal-addpassword.md) and [removePassword](../api-reference/beta/api/serviceprincipal-removepassword.md) methods to the [serviceprincipal](/graph/api/resources/serviceprincipal?view=graph-rest-beta) resource. |
 |Addition  | Beta |Added new entity types:<br/>[conditionalAccessPolicy](/graph/api/resources/conditionalAccessPolicy)<br/>
 |Addition  | Beta |Added new complex types:<br/>[conditionalAccessSessionControl](/graph/api/resources/conditionalAccessSessionControl)<br/>[applicationEnforcedRestrictionsSessionControl](/graph/api/resources/applicationEnforcedRestrictionsSessionControl)<br/>[cloudAppSecuritySessionControl](/graph/api/resources/cloudAppSecuritySessionControl)<br/>[signInFrequencySessionControl](/graph/api/resources/signInFrequencySessionControl)<br/>[persistentBrowserSessionControl](/graph/api/resources/persistentBrowserSessionControl)<br/>[conditionalAccessSessionControls](/graph/api/resources/conditionalAccessSessionControls)<br/>[conditionalAccessApplications](/graph/api/resources/conditionalAccessApplications)<br/>[conditionalAccessUsers](/graph/api/resources/conditionalAccessUsers)<br/>[conditionalAccessPlatforms](/graph/api/resources/conditionalAccessPlatforms)<br/>[conditionalAccessLocations](/graph/api/resources/conditionalAccessLocations)<br/>[conditionalAccessDeviceStates](/graph/api/resources/conditionalAccessDeviceStates)<br/>[conditionalAccessConditionSet](/graph/api/resources/conditionalAccessConditionSet)<br/>[conditionalAccessGrantControls](/graph/api/resources/conditionalAccessGrantControls)<br/>
 | Addition | v1.0 | Added new [orgContact](/graph/api/resources/orgcontact?view=graph-rest-1.0) resource. These contacts are managed by the organization, and are different from [personal contacts](outlook-contacts-concept-overview.md)|
