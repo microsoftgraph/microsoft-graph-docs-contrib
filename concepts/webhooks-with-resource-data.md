@@ -105,7 +105,7 @@ In this section:
 - [Example authorization challenge](#example-authorization-challenge)
 - [Responding to an authorization challenge](#responding-to-an-authorization-challenge)
 - [Tips](#tips)
-- [Future-proof your code to handle other types of life cycle notifications](#futureproof-your-code-to-handle-other-types-of-life-cycle-notifications)
+- [Future-proof your code to handle other types of life cycle notifications](#future-proof-your-code-to-handle-other-types-of-life-cycle-notifications)
 
 ### Life cycle notification that challenges subscription authorization
 
