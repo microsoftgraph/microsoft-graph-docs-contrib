@@ -1,6 +1,6 @@
 ---
 title: "trustFrameworkKeySet resource type"
-description: "Represents a trust framework key set/policy keys."
+description: "Represents a trust framework keyset/policy keys."
 localization_priority: Normal
 author: "valnav"
 ms.prod: "microsoft-identity-platform"
