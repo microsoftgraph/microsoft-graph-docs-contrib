@@ -1,18 +1,17 @@
 ---
-title: "Update trustframeworkkeyset"
-description: "Update the properties of trustframeworkkeyset object."
+title: "Update trustFrameworkKeySet"
+description: "Update the properties of a **trustFrameworkKeySet** object."
 localization_priority: Normal
 author: "valnav"
 ms.prod: "microsoft-identity-platform"
 doc_type: "apiPageType"
 ---
 
-# Update trustframeworkkeyset
+# Update trustFrameworkKeySet
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
- The operation will replace the content of an existing key set.  Specifying id in the request payload is optional.
-
+Update the properties of a **trustFrameworkKeySet** object. This operation will replace the content of an existing key set. Specifying the ID in the request payload is optional.
 
 ## Permissions
 
@@ -36,7 +35,8 @@ PUT /trustFramework/keySets/{id}
 
 | Name       | Description|
 |:-----------|:-----------|
-| Authorization | Bearer {token} |
+| Authorization | Bearer {token}. Required. |
+| Content-type  | application/json. Required.|
 
 ## Request body
 
