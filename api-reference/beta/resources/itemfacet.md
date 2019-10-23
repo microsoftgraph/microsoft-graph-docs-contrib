@@ -13,14 +13,6 @@ doc_type: "resourcePageType"
 
 The [itemFacet](itemfacet.md) resource type is the abstract base type that all resource types in the [profile](profile.md) entityset inherit from.
 
-## Methods
-
-| Method                                   | Return Type               | Description                                            |
-|:-----------------------------------------|:--------------------------|:-------------------------------------------------------|
-| [Get itemFacet](../api/itemfacet-get.md) | [itemFacet](itemfacet.md) | Read properties and relationships of itemFacet object. |
-| [Update](../api/itemfacet-update.md)     | [itemFacet](itemfacet.md) | Update itemFacet object.                               |
-| [Delete](../api/itemfacet-delete.md)     | None                      | Delete itemFacet object.                               |
-
 ## Properties
 
 | Property             | Type                            | Description |
