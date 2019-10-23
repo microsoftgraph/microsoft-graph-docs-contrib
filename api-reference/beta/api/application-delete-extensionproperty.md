@@ -11,7 +11,7 @@ doc_type: "apiPageType"
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Delete an [extensionProperty](extensionProperty.md).
+Delete an [extensionProperty](../resources/extensionproperty.md).
 
 ## Permissions
 
