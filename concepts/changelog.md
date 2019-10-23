@@ -13,6 +13,15 @@ For details about known issues with Microsoft Graph APIs, see [Known issues](kno
 
 ## October 2019
 
+### Cloud Communications | Recording
+
+|Change type|Version|Description|
+|:---|:---|:---|
+|Addition|beta|Added new complex types:<br/>incomingContext<br/>
+|Addition|beta|Added new enum values:<br/>recordingStatus<br/>
+|Addition|beta|Added new actions:<br/>updateRecordingState<br/>
+
+
 ### Identity and access (Azure AD) | Conditional Access
 
 |Change type|Version|Description|
