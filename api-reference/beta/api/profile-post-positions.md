@@ -3,7 +3,7 @@ title: "Create workPosition"
 description: "Use this API to create a new workPosition."
 localization_priority: Normal
 author: "kevinbellinger"
-ms.prod: "People"
+ms.prod: "people"
 doc_type: "apiPageType"
 ---
 
@@ -11,7 +11,7 @@ doc_type: "apiPageType"
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Use this API to create a new workPosition in a users profile.
+Use this API to create a new [workPosition](../resources/workposition.md) in a user's [profile](../resources/profile.md).
 
 ## Permissions
 
@@ -36,7 +36,7 @@ POST /me/profile/positions
 | Name      |Description|
 |:----------|:----------|
 | Authorization  | Bearer {token}. Required.|
-| Content-Type   | application/json |
+| Content-Type   | application/json. Required. |
 
 ## Request body
 

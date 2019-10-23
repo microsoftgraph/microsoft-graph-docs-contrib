@@ -3,7 +3,7 @@ title: "Create webAccount"
 description: "Use this API to create a new webAccount."
 localization_priority: Normal
 author: "kevinbellinger"
-ms.prod: "People"
+ms.prod: "people"
 doc_type: "apiPageType"
 ---
 
@@ -11,7 +11,7 @@ doc_type: "apiPageType"
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Use this API to create a new webAccount.
+Use this API to create a new [webAccount](../resources/webaccount.md) object in a user's [profile](../resources/profile.md).
 
 ## Permissions
 
@@ -36,7 +36,7 @@ POST /me/profile/webAccounts
 | Name      |Description|
 |:----------|:----------|
 | Authorization  | Bearer {token}. Required.|
-| Content-Type   | application/json |
+| Content-Type   | application/json. Required. |
 
 ## Request body
 
@@ -57,7 +57,7 @@ The following is an example of the request.
 }-->
 
 ```http
-POST https://graph.microsoft.com/Beta/me/profile/webAccounts
+POST https://graph.microsoft.com/beta/me/profile/webAccounts
 Content-type: application/json
 
 {

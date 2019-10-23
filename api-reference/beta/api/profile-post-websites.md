@@ -3,7 +3,7 @@ title: "Create personWebsite"
 description: "Use this API to create a new personWebsite."
 localization_priority: Normal
 author: "kevinbellinger"
-ms.prod: "People"
+ms.prod: "people"
 doc_type: "apiPageType"
 ---
 
@@ -11,7 +11,7 @@ doc_type: "apiPageType"
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Use this API to create a new personWebsite.
+Use this API to create a new [personWebsite](../resources/personwebsite.md) object in a user's [profile](../resources/profile.md).
 
 ## Permissions
 
@@ -28,14 +28,15 @@ One of the following permissions is required to call this API. To learn more, in
 <!-- { "blockType": "ignored" } -->
 
 ```http
-POST /user/profile/websites
+POST /me/profile/websites
 ```
 
 ## Request headers
 
-| Name          | Description   |
-|:--------------|:--------------|
-| Authorization | Bearer {token} |
+| Name      |Description|
+|:----------|:----------|
+| Authorization  | Bearer {token}. Required.|
+| Content-Type   | application/json. Required. |
 
 ## Request body
 
@@ -56,7 +57,7 @@ The following is an example of the request.
 }-->
 
 ```http
-POST https://graph.microsoft.com/Beta/user/profile/websites
+POST https://graph.microsoft.com/beta/me/profile/websites
 Content-type: application/json
 
 {

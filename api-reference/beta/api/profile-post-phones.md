@@ -1,9 +1,9 @@
 ---
-title: "Create itemPhoneNumber"
-description: "Use this API to create a new itemPhoneNumber."
+title: "Create itemPhone"
+description: "Use this API to create a new itemPhone."
 localization_priority: Normal
 author: "kevinbellinger"
-ms.prod: "People"
+ms.prod: "people"
 doc_type: "apiPageType"
 ---
 
@@ -11,7 +11,7 @@ doc_type: "apiPageType"
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Use this API to create a new itemPhoneNumber.
+Use this API to create a new [itemPhone](../resources/itemphone.md) object.
 
 ## Permissions
 
@@ -19,31 +19,32 @@ One of the following permissions is required to call this API. To learn more, in
 
 | Permission type                        | Permissions (from least to most privileged) |
 |:---------------------------------------|:--------------------------------------------|
-| Delegated (work or school account)     | Not supported. |
-| Delegated (personal Microsoft account) | Not supported. |
-| Application                            | Not supported. |
+| Delegated (work or school account)     | User.ReadWrite, User.ReadWrite.All |
+| Delegated (personal Microsoft account) | User.ReadWrite, User.ReadWrite.All |
+| Application                            | User.ReadWrite.All |
 
 ## HTTP request
 
 <!-- { "blockType": "ignored" } -->
 
 ```http
-POST /user/profile/phones
+POST /me/profile/phones
 ```
 
 ## Request headers
 
-| Name          | Description   |
-|:--------------|:--------------|
-| Authorization | Bearer {token} |
+| Name      |Description|
+|:----------|:----------|
+| Authorization  | Bearer {token}. Required.|
+| Content-Type   | application/json. Required. |
 
 ## Request body
 
-In the request body, supply a JSON representation of [itemPhoneNumber](../resources/itemphonenumber.md) object.
+In the request body, supply a JSON representation of [itemPhone](../resources/itemphone.md) object.
 
 ## Response
 
-If successful, this method returns `201, Created` response code and a new [itemPhoneNumber](../resources/itemphonenumber.md) object in the response body.
+If successful, this method returns `201, Created` response code and a new [itemPhone](../resources/itemphone.md) object in the response body.
 
 ## Examples
 
@@ -52,11 +53,11 @@ If successful, this method returns `201, Created` response code and a new [itemP
 The following is an example of the request.
 <!-- {
   "blockType": "request",
-  "name": "create_itemphonenumber_from_profile"
+  "name": "create_itemphone_from_profile"
 }-->
 
 ```http
-POST https://graph.microsoft.com/Beta/user/profile/phones
+POST https://graph.microsoft.com/beta/me/profile/phones
 Content-type: application/json
 
 {
@@ -75,7 +76,7 @@ The following is an example of the response.
 <!-- {
   "blockType": "response",
   "truncated": true,
-  "@odata.type": "microsoft.graph.itemPhoneNumber"
+  "@odata.type": "microsoft.graph.itemPhone"
 } -->
 
 ```http
@@ -93,7 +94,7 @@ Content-type: application/json
 2019-02-04 14:57:30 UTC -->
 <!-- {
   "type": "#page.annotation",
-  "description": "Create itemPhoneNumber",
+  "description": "Create itemPhone",
   "keywords": "",
   "section": "documentation",
   "tocPath": ""
