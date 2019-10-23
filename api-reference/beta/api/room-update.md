@@ -11,7 +11,7 @@ doc_type: "apiPageType"
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Update the properties of [place](../resources/place.md) object.
+Update the properties of [room](../resources/room.md) object.
 
 ## Permissions
 
@@ -71,7 +71,7 @@ In the request body, supply the values for relevant fields that should be update
 
 ## Response
 
-If successful, this method returns a `200 OK` response code and an updated [place](../resources/place.md) object in the response body.
+If successful, this method returns a `200 OK` response code and an updated [room](../resources/room.md) object in the response body.
 
 ## Examples
 
