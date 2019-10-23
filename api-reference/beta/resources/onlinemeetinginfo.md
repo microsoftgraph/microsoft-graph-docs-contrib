@@ -9,7 +9,7 @@ doc_type: "resourcePageType"
 
 # onlineMeetingInfo resource type
 
-Online meeting information of a user calendar.
+Details for an attendee to join the meeting online.
 
 ## Properties
 
@@ -17,7 +17,7 @@ Online meeting information of a user calendar.
 |:-------------|:------------|:------------|
 |conferenceId|String| The ID of the conference.|
 |joinUrl|String| The external link that launches the online meeting. This is a URL that clients will launch into a browser and will redirect the user to join the meeting.|
-|phones|[phone](phone.md) collection||
+|phones|[phone](phone.md) collection| All of the phone numbers associated with this conference.|
 |quickDial|String| The pre-formatted quickdial for this call.|
 |tollFreeNumbers|String collection| The toll free numbers that can be used to join the conference.|
 |tollNumber|String| The toll number that can be used to join the conference.|
