@@ -30,6 +30,21 @@ Meeting organizers can allow meeting time proposals, and invitees can suggest al
 | Addition | Beta | Added the **proposedNewTime** optional parameter to the [tentativelyAccept](/graph/api/event-tentativelyaccept?view=graph-rest-beta) and [decline](/graph/api/event-decline?view=graph-rest-beta) methods of **event**. |
 | Addition | Beta | Added the [eventMessageResponse](/graph/api/resources/eventmessageresponse?view=graph-rest-beta) entity that is based on [eventMessage](/graph/api/resources/eventmessage?view=graph-rest-beta), and in addition, includes the **proposedNewTime** and **responseType** properties. |
 | Addition | Beta | Added the **proposedNewTime** property to the [attendee](/graph/api/resources/attendee?view=graph-rest-beta) complex type. |
+|Addition | Beta | Added new entity [calendarPermission](/graph/api/resources/calendarpermission?view=graph-rest-beta). |
+|Addition | Beta | Added new complex type [onlineMeetingInfo](/graph/api/resources/onlinemeetinginfo?view=graph-rest-beta). |
+|Addition | Beta | Added APIs to manage [calendarPermission](/graph/api/resources/calendarpermission?view=graph-rest-beta) resources on [calendar](/graph/api/resources/calendar?view=graph-rest-beta). |
+| Addition | Beta | Added the **isOnlineMeeting** property to the [event](/graph/api/resources/event?view=graph-rest-beta) entity. |
+| Addition | Beta | Added the **onlineMeetingProvider** property to the [event](/graph/api/resources/event?view=graph-rest-beta) entity. |
+| Addition | Beta | Added the **onlineMeeting** property to the [event](/graph/api/resources/event?view=graph-rest-beta) entity. |
+|Addition | Beta | Added the **isOnlineMeeting** optional parameter to the [post](/graph/api/user-post-events?view=graph-rest-beta) and [patch](/graph/api/event-update?view=graph-rest-beta) methods of **event**. |
+|Addition | Beta | Added the **onlineMeetingProvider** optional parameter to the [post](/graph/api/user-post-events?view=graph-rest-beta) and [patch](/graph/api/event-update?view=graph-rest-beta) methods of **event**. |
+| Addition | Beta | Added the **isTallyingResponses** property to the [calendar](/graph/api/resources/calendar?view=graph-rest-beta) entity. |
+| Addition | Beta | Added the **isRemovable** property to the [calendar](/graph/api/resources/calendar?view=graph-rest-beta) entity. |
+| Addition | Beta | Added the **defaultOnlineMeetingProviders** property to the [calendar](/graph/api/resources/calendar?view=graph-rest-beta) entity. |
+| Addition | Beta | Added the **allowedOnlineMeetingProviders** property to the [calendar](/graph/api/resources/calendar?view=graph-rest-beta) entity. |
+| Addition | Beta | Added the **delegateMeetingMessageDeliveryOptions** property to the [mailboxSettings](/graph/api/resources/mailboxSettings?view=graph-rest-beta) entity. |
+
+
 
 ### Devices and apps (Microsoft Intune)
 
