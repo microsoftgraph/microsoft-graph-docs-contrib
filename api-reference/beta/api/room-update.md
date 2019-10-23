@@ -48,12 +48,9 @@ In the request body, supply the values for relevant fields that should be update
 | bookingType            | [bookingType](#bookingtype-values)                | Type of room. Possible values are `standard`, `managed`, and `reserved`. |
 | building               | String                                            | Specifies the building name or building number that the room is in. |
 | capacity               | String                                            | Specifies the capacity of the room. |
-| displayName            | String                                            | The name associated with the room. |
 | displayDeviceName      | String                                            | Specifies the name of the display device in the room. |
-| emailAddress           | String                                            | Email address of the room. |
 | floorNumber            | Int32                                             | Specifies the floor number that the room is on. |
 | geoCoordinates         | [outlookGeoCoordinates](outlookgeocoordinates.md) | Specifies the room location in latitude, longitude and optionally, altitude coordinates. |
-| id                     | String                                            | Unique identifier for the room. Read-only. |
 | isWheelchairAccessible | Boolean                                           | Specifies whether the room is wheelchair accessible. |
 | label                  | String                                            | Specifies a descriptive label for the room, for example, a number or name. |
 | nickname               | String                                            | Specifies a nickname for the room, for example, "conf room". |
