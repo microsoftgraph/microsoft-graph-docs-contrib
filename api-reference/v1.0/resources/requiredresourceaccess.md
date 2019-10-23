@@ -3,8 +3,8 @@ title: "requiredResourceAccess resource type"
 description: "Specifies the set of OAuth 2.0 permission scopes and app roles."
 localization_priority: Normal
 doc_type: resourcePageType
-ms.prod: ""
-author: ""
+ms.prod: "microsoft-identity-platform"
+author: "davidmu1"
 ---
 
 # requiredResourceAccess resource type
