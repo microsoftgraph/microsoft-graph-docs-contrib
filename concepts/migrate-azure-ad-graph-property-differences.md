@@ -93,17 +93,17 @@ The Azure AD Graph Contact resource has been renamed to orgContact in Microsoft 
 
 |Azure AD Graph <br>(v1.6) property |Microsoft Graph<br> property|Comments|
 |---|---|---|
-| **city** | beta&nbsp;-&nbsp;**addresses (city)** <br> v1.0 &nbsp;-&nbsp; _Not yet available_  | The city property is part of the addresses resource collection. |
-| **country** | beta&nbsp;-&nbsp;**addresses**&nbsp;**(countryOrRegion)**<br> v1.0 &nbsp;-&nbsp; _Not yet available_  | The countryOrRegion property is part of the addresses resource collection. |
-| **dirSyncEnabled** | beta &nbsp;-&nbsp;**onPremisesSyncEnabled** <br> v1.0 &nbsp;-&nbsp; _Not yet available_  | |
-| **facsimileTelephoneNumber** | beta&nbsp;-&nbsp;**phones**&nbsp;**(businessFax)** <br> v1.0 &nbsp;-&nbsp; _Not yet available_ | Now part of the phones collection, which supports mobile, business, and businessFax. |
+| **city** | beta&nbsp;-&nbsp;**addresses (city)** <br> v1.0 &nbsp;-&nbsp; **addresses (city)**  | The city property is part of the addresses resource collection. |
+| **country** | beta&nbsp;-&nbsp;**addresses**&nbsp;**(countryOrRegion)**<br> v1.0&nbsp;-&nbsp;**addresses**&nbsp;**(countryOrRegion)**  | The countryOrRegion property is part of the addresses resource collection. |
+| **dirSyncEnabled** | beta &nbsp;-&nbsp;**onPremisesSyncEnabled** <br> v1.0 &nbsp;-&nbsp;**onPremisesSyncEnabled**   | |
+| **facsimileTelephoneNumber** | beta&nbsp;-&nbsp;**phones**&nbsp;**(businessFax)** <br> v1.0 &nbsp;-&nbsp;**phones**&nbsp;**(businessFax)** | Now part of the phones collection, which supports mobile, business, and businessFax. |
 | **physicalDeliveryOfficeName** | beta &nbsp;-&nbsp;**officeLocation** <br> v1.0 &nbsp;-&nbsp; **officeLocation** | |
-| **postalCode** | beta&nbsp;-&nbsp;**addresses**&nbsp;**(postalCode)**<br> v1.0 &nbsp;-&nbsp; _Not yet available_  | The postalCode property is part of the addresses resource collection. |
+| **postalCode** | beta&nbsp;-&nbsp;**addresses**&nbsp;**(postalCode)**<br> v1.0 &nbsp;-&nbsp;**addresses**&nbsp;**(postalCode)** | The postalCode property is part of the addresses resource collection. |
 | **provisioningErrors** | beta &nbsp;-&nbsp; not available <br> v1.0 &nbsp;-&nbsp; not available | This property and its information is deprecated.  However, a new property describing any AD Connect related provisioning errors can be found in **onPremisesProvisioningErrors**. Currently this is only available in beta. |
-| **sipProxyAddress** |  beta &nbsp;-&nbsp;**imAddresses**<br> v1.0 &nbsp;-&nbsp; _Not yet available_  | |
-| **state** | beta &nbsp;-&nbsp;**addresses**&nbsp;**(state)**<br> v1.0 &nbsp;-&nbsp; _Not yet available_  | The state property is part of the addresses resource collection. |
-| **streetAddress** | beta &nbsp;-&nbsp;**addresses**&nbsp;**(street)**<br> v1.0 &nbsp;-&nbsp; _Not yet available_  | The street property is part of the addresses resource collection. |
-| **telephoneNumber** | beta&nbsp;-&nbsp;**phones**&nbsp;**(business)** <br> v1.0 &nbsp;-&nbsp; _Not yet available_ | Now part of the phones collection, which supports mobile, business, and businessFax. |
+| **sipProxyAddress** |  beta &nbsp;-&nbsp;**imAddresses**<br> v1.0 &nbsp;-&nbsp;**imAddresses**  | |
+| **state** | beta &nbsp;-&nbsp;**addresses**&nbsp;**(state)**<br> v1.0 &nbsp;-&nbsp; **addresses**&nbsp;**(state)**  | The state property is part of the addresses resource collection. |
+| **streetAddress** | beta &nbsp;-&nbsp;**addresses**&nbsp;**(street)**<br> v1.0 &nbsp;-&nbsp;**addresses**&nbsp;**(street)**  | The street property is part of the addresses resource collection. |
+| **telephoneNumber** | beta&nbsp;-&nbsp;**phones**&nbsp;**(business)** <br> v1.0 &nbsp;-&nbsp;**phones**&nbsp;**(business)** | Now part of the phones collection, which supports mobile, business, and businessFax. |
 | **thumbnailPhoto** | beta &nbsp;-&nbsp;_Not&nbsp;yet&nbsp;available_&nbsp;<br> v1.0 &nbsp;-&nbsp; _Not yet available_ | |
 
 ## Contract property differences
