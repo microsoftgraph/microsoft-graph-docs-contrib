@@ -11,7 +11,7 @@ doc_type: "resourcePageType"
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-A [schema](schema.md) property definition for a Microsoft Search [connection](connection.md).
+A [schema](schema.md) property definition for a Microsoft Search [connection](externalconnection.md).
 
 ## Properties
 

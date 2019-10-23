@@ -20,7 +20,7 @@ The `externalFile` resource represents a file in an external system.
 
 ## Add an item or file
 
-You can add items or files to the index using the [create externalItem API](/graph/api/connection-put-items?view=graph-rest-beta). When you create an item, you assign a unique identifier in the URL.
+You can add items or files to the index using the [create externalItem API](/graph/api/externalconnection-put-items?view=graph-rest-beta). When you create an item, you assign a unique identifier in the URL.
 
 For example, your application may index helpdesk tickets using the ticket number. If a ticket has the ticket number `SR00145`, the request may look like the following.
 

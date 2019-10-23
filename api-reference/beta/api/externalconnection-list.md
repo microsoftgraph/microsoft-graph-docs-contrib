@@ -1,6 +1,6 @@
 ---
 title: "List connections"
-description: "Retrieve a list of connections."
+description: "Retrieve a list of externalConnections."
 localization_priority: Normal
 author: "snlraju-msft"
 ms.prod: ""
@@ -11,7 +11,7 @@ doc_type: "apiPageType"
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Retrieve a list of [connections](../resources/connection.md).
+Retrieve a list of [externalConnections](../resources/externalconnection.md).
 
 ## Permissions
 
@@ -72,7 +72,7 @@ The following is an example of the response.
 <!-- {
   "blockType": "response",
   "truncated": true,
-  "@odata.type": "microsoft.graph.connection",
+  "@odata.type": "microsoft.graph.externalConnection",
   "isCollection": true
 } -->
 

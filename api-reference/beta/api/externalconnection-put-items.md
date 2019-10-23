@@ -11,7 +11,7 @@ doc_type: "apiPageType"
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Create a new [externalItem](../resources/externalitem.md).
+Create a new [externalItem](../resources/externalitem.md) or [externalFile](../resources/externalfile.md).
 
 This API can be used to create a custom item or a file. Specify the type you are creating by including the `@odata.type` property in the JSON body. The containing [connection](../resources/connection.md) must have a [schema](../resources/schema.md) registered of the corresponding type.
 
@@ -42,7 +42,7 @@ PUT /external/connections/{connection-id}/items/{item-id}
 
 ## Request body
 
-In the request body, supply a JSON representation of an [externalItem](../resources/externalitem.md) object.
+In the request body, supply a JSON representation of an [externalItem](../resources/externalitem.md) or [externalFile](../resources/externalfile.md) object.
 
 ## Response
 
@@ -91,8 +91,7 @@ The following is an example of the response.
 
 <!-- {
   "blockType": "response",
-  "truncated": true,
-  "@odata.type": "microsoft.graph.externalItem"
+  "truncated": true
 } -->
 
 ```http
@@ -146,8 +145,7 @@ The following is an example of the response.
 
 <!-- {
   "blockType": "response",
-  "truncated": true,
-  "@odata.type": "microsoft.graph.externalItem"
+  "truncated": true
 } -->
 
 ```http

@@ -1,17 +1,17 @@
 ---
-title: "Delete connection"
-description: "Delete a connection."
+title: "Get connection"
+description: "Retrieve the properties and relationships of an externalConnection."
 localization_priority: Normal
 author: "snlraju-msft"
 ms.prod: ""
 doc_type: "apiPageType"
 ---
 
-# Delete connection
+# Get connection
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Delete a [connection](../resources/connection.md).
+Retrieve the properties and relationships of an [externalConnection](../resources/externalconnection.md).
 
 ## Permissions
 
@@ -28,8 +28,12 @@ One of the following permissions is required to call this API. To learn more, in
 <!-- { "blockType": "ignored" } -->
 
 ```http
-DELETE /external/connections/{id}
+GET /external/connections/{id}
 ```
+
+## Optional query parameters
+
+This method supports the [OData query parameters](/graph/query-parameters) to help customize the response.
 
 ## Request headers
 
@@ -43,7 +47,7 @@ Do not supply a request body for this method.
 
 ## Response
 
-If successful, this method returns `204 No Content` response code. It does not return anything in the response body.
+If successful, this method returns a `200 OK` response code and the requested [connection](../resources/connection.md) object in the response body.
 
 ## Examples
 
@@ -52,11 +56,11 @@ If successful, this method returns `204 No Content` response code. It does not r
 The following is an example of the request.
 <!-- {
   "blockType": "request",
-  "name": "delete_connection"
+  "name": "get_connection"
 }-->
 
 ```http
-DELETE https://graph.microsoft.com/beta/connections/contosohr
+GET https://graph.microsoft.com/beta/connections/contosohr
 ```
 
 <!-- markdownlint-disable MD024 -->
@@ -67,18 +71,31 @@ The following is an example of the response.
 
 <!-- {
   "blockType": "response",
-  "truncated": true
+  "truncated": true,
+  "@odata.type": "microsoft.graph.externalConnection"
 } -->
 
 ```http
-HTTP/1.1 204 No Content
+HTTP/1.1 200 OK
+Content-type: application/json
+
+{
+  "id": "contosohr",
+  "name": "Contoso HR",
+  "description": "Connection to index Contoso HR system",
+  "configuration": {
+    "authorizedApps": [
+      "d310d35d-72ec-47dd-92f2-fb9c40936555"
+    ]
+  }
+}
 ```
 
 <!-- uuid: 16cd6b66-4b1a-43a1-adaf-3a886856ed98
 2019-02-04 14:57:30 UTC -->
 <!-- {
   "type": "#page.annotation",
-  "description": "Delete connection",
+  "description": "Get connection",
   "keywords": "",
   "section": "documentation",
   "tocPath": ""

@@ -9,16 +9,16 @@ doc_type: conceptualPageType
 
 # Create, update, and delete connections to the Microsoft Search service
 
-Connections from external services to the Microsoft Search service are represented by the [connection](/graph/api/resources/connection?view=graph-rest-beta) resource in Microsoft Graph.
+Connections from external services to the Microsoft Search service are represented by the [externalConnection](/graph/api/resources/externalconnection?view=graph-rest-beta) resource in Microsoft Graph.
 
-A connection allows your application to [define a schema](/graph/api/connection-post-schema?view=graph-rest-beta) for items that will be indexed, and provides an endpoint for your service to [add, update, or delete items from the index](search-index-manage-items.md). Creating a connection is the first step for an application to add items to the search index.
+A connection allows your application to [define a schema](/graph/api/externalconnection-post-schema?view=graph-rest-beta) for items that will be indexed, and provides an endpoint for your service to [add, update, or delete items from the index](search-index-manage-items.md). Creating a connection is the first step for an application to add items to the search index.
 
 ## Create a connection
 
 Before an application can add items to the search index, it must create and configure a connection using the following steps.
 
 - [Create a connection](/graph/api/external-post-connections?view=graph-rest-beta) with a unique ID, display name, and description.
-- [Registering a schema](/graph/api/connection-post-schema?view=graph-rest-beta).
+- [Registering a schema](/graph/api/externalconnection-post-schema?view=graph-rest-beta).
   - For custom items (such as heldesk tickets or inventory database entries, etc.), define the fields that will be included in the index.
   - For external files, specify the `microsoft.graph.externalFile` type.
 
@@ -27,11 +27,11 @@ Before an application can add items to the search index, it must create and conf
 
 ## Update a connection
 
-You can change the display name or description of an existing connection using the [update connection API](/graph/api/connection-update?view=graph-rest-beta).
+You can change the display name or description of an existing connection using the [update connection API](/graph/api/externalconnection-update?view=graph-rest-beta).
 
 ## Delete a connection
 
-You can delete a connection using the [delete connection API](/graph/api/connection-delete?view=graph-rest-beta). Deleting a connection removes all items that were indexed via that connection.
+You can delete a connection using the [delete connection API](/graph/api/externalconnection-delete?view=graph-rest-beta). Deleting a connection removes all items that were indexed via that connection.
 
 ## Next steps
 

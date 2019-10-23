@@ -1,6 +1,6 @@
 ---
 title: "Create connection"
-description: "Use this API to create a new connection."
+description: "Use this API to create a new externalConnection."
 localization_priority: Normal
 author: "snlraju-msft"
 ms.prod: ""
@@ -11,7 +11,7 @@ doc_type: "apiPageType"
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Create a new [connection](../resources/connection.md).
+Create a new [externalConnection](../resources/externalconnection.md).
 
 ## Permissions
 
@@ -40,11 +40,11 @@ POST /external/connections
 
 ## Request body
 
-In the request body, supply a JSON representation of a [connection](../resources/connection.md) object.
+In the request body, supply a JSON representation of a [externalConnection](../resources/externalconnection.md) object.
 
 ## Response
 
-If successful, this method returns `201 Created` response code and a new [connection](../resources/connection.md) object in the response body.
+If successful, this method returns `201 Created` response code and a new [externalConnection](../resources/externalconnection.md) object in the response body.
 
 ## Examples
 
@@ -76,7 +76,7 @@ The following is an example of the response.
 <!-- {
   "blockType": "response",
   "truncated": true,
-  "@odata.type": "microsoft.graph.connection"
+  "@odata.type": "microsoft.graph.externalConnection"
 } -->
 
 ```http

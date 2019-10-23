@@ -1,6 +1,6 @@
 ---
-title: "Update connection"
-description: "Update the properties of a connection."
+title: "Update externalConnection"
+description: "Update the properties of an externalConnection."
 localization_priority: Normal
 author: "snlraju-msft"
 ms.prod: ""
@@ -11,7 +11,7 @@ doc_type: "apiPageType"
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Update the properties of a [connection](../resources/connection.md).
+Update the properties of an [externalConnection](../resources/externalconnection.md).
 
 ## Permissions
 
@@ -80,8 +80,7 @@ The following is an example of the response.
 
 <!-- {
   "blockType": "response",
-  "truncated": true,
-  "@odata.type": "microsoft.graph.connection"
+  "truncated": true
 } -->
 
 ```http

@@ -21,14 +21,14 @@ Indexing API requests are performed on behalf of an application using an [applic
 
 The indexing API provides methods to create and configure a connection to the Microsoft Search service, which allows your app to define a schema for the items that will be indexed by that connection. The API also provides methods to add, update, and delete items in the index.
 
-| Use cases | REST resources | See also |
-|:----------|:---------------|:---------|
-| **Configuration actions** | | |
-| Create, update, or delete a connection | [connection](connection.md) | [Methods of connection](connection.md#methods) |
-| Register a schema | [schema](schema.md) | [Methods of schema](schema.md#methods) |
-| **Indexing actions** | | |
-| Add, update or delete a custom item in the index | [externalItem](externalitem.md) | [Methods of externalItem](externalItem.md#methods) |
-| Add, update or delete a file in the index | [externalFile](externalfile.md) | [Methods of externalFile](externalfile.md#methods) |
+| Use cases                                        | REST resources                              | See also |
+|:-------------------------------------------------|:--------------------------------------------|:--|
+| **Configuration actions**                        |                                             |   |
+| Create, update, or delete a connection           | [externalConnection](externalconnection.md) | [Methods of externalConnection](externalconnection.md#methods) |
+| Register a schema                                | [schema](schema.md)                         | [Methods of schema](schema.md#methods) |
+| **Indexing actions**                             |                                             |   |
+| Add, update or delete a custom item in the index | [externalItem](externalitem.md)             | [Methods of externalItem](externalItem.md#methods) |
+| Add, update or delete a file in the index        | [externalFile](externalfile.md)             | [Methods of externalFile](externalfile.md#methods) |
 
 ## Known limitations
 
@@ -47,4 +47,4 @@ The indexing API has the following limitations during the preview.
 The indexing API can open up new ways for you to engage with users:
 
 - [Microsoft Search indexing API overview](/graph/search-index-overview)
-- Drill down on the methods, properties, and relationships of the [connection](connection.md), [schema](schema.md), [externalItem](externalitem.md), and [externalFile](externalfile.md) resources.
+- Drill down on the methods, properties, and relationships of the [externalConnection](externalconnection.md), [schema](schema.md), [externalItem](externalitem.md), and [externalFile](externalfile.md) resources.

@@ -11,14 +11,14 @@ doc_type: "resourcePageType"
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Describes the type of content and how to index each property in items in a Microsoft Search [connection](../resources/connection.md).
+Describes the type of content and how to index each property in items in a Microsoft Search [connection](externalconnection.md).
 
 ## Methods
 
-| Method                                            | Return Type                   | Description |
-|:--------------------------------------------------|:------------------------------|:--|
-| [Create schema](../api/connection-post-schema.md) | None *or* [schema](schema.md) | Register connection schema. |
-| [Get schema](../api/schema-get.md)                | [schema](schema.md)           | Read properties of a schema object. |
+| Method                                                    | Return Type                   | Description |
+|:----------------------------------------------------------|:------------------------------|:--|
+| [Create schema](../api/externalconnection-post-schema.md) | None *or* [schema](schema.md) | Register connection schema. |
+| [Get schema](../api/schema-get.md)                        | [schema](schema.md)           | Read properties of a schema object. |
 
 ## Properties
 

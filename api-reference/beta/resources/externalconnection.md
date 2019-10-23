@@ -1,5 +1,5 @@
 ---
-title: "connection resource type"
+title: "externalConnection resource type"
 description: "A connection to Microsoft Search from an external source."
 localization_priority: Normal
 author: "snlraju-msft"
@@ -7,7 +7,7 @@ ms.prod: ""
 doc_type: "resourcePageType"
 ---
 
-# connection resource type
+# externalConnection resource type
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
@@ -15,16 +15,16 @@ A connection to Microsoft Search from an external source.
 
 ## Methods
 
-| Method                                                    | Return Type                                   | Description |
-|:----------------------------------------------------------|:----------------------------------------------|:--|
-| [Create connections](../api/external-post-connections.md) | connection                                    | Create a new connections by posting to the connections collection. |
-| [List connections](../api/connection-list.md)             | connection collection                         | Get a connections object collection. |
-| [Get connection](../api/connection-get.md)                | connection                                    | Read properties and relationships of connection object. |
-| [Update connection](../api/connection-update.md)          | connection                                    | Update connection object. |
-| [Delete connection](../api/connection-delete.md)          | None                                          | Delete connection object. |
-| [Create schema](../api/connection-post-schema.md)         | None *or* [schema](schema.md)                 | Register connection schema. |
-| [Get operation](../api/connectionoperation-get.md)        | [connectionOperation](connectionoperation.md) | Get the status of an asynchronous request to create the connection schema. |
-| [Create externalItem](../api/connection-put-items.md)     | [externalItem](externalitem.md)               | Create a new externalItem by posting to the items collection. |
+| Method                                                           | Return Type                                   | Description |
+|:-----------------------------------------------------------------|:----------------------------------------------|:--|
+| [Create externalConnection](../api/external-post-connections.md) | externalConnection                            | Create a new externalConnection by posting to the connections collection. |
+| [List externalConnections](../api/connection-list.md)            | externalConnection collection                 | Get a externalConnection object collection. |
+| [Get externalConnection](../api/connection-get.md)               | externalConnection                            | Read properties and relationships of a externalConnection object. |
+| [Update externalConnection](../api/connection-update.md)         | externalConnection                            | Update a externalConnection object. |
+| [Delete externalConnection](../api/connection-delete.md)         | None                                          | Delete a externalConnection object. |
+| [Create schema](../api/connection-post-schema.md)                | None *or* [schema](schema.md)                 | Register connection schema. |
+| [Get operation](../api/connectionoperation-get.md)               | [connectionOperation](connectionoperation.md) | Get the status of an asynchronous request to create the connection schema. |
+| [Create externalItem](../api/connection-put-items.md)            | [externalItem](externalitem.md)               | Create a new externalItem by posting to the items collection. |
 
 ## Properties
 
@@ -52,7 +52,7 @@ The following is a JSON representation of the resource.
   "optionalProperties": [
 
   ],
-  "@odata.type": "microsoft.graph.connection",
+  "@odata.type": "microsoft.graph.externalConnection",
   "baseType": "",
   "keyProperty": "id"
 }-->

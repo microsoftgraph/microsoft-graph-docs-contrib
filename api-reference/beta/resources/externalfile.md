@@ -11,15 +11,15 @@ doc_type: "resourcePageType"
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-An item indexed via a Microsoft Search [connection](connection.md). This type derives from the [externalItem](externalitem.md) type.
+An item indexed via a Microsoft Search [connection](externalconnection.md). This type derives from the [externalItem](externalitem.md) type.
 
 ## Methods
 
-| Method                                                | Return Type  | Description |
-|:------------------------------------------------------|:-------------|:------|
-| [Create externalFile](../api/connection-put-items.md) | externalFile | Create an externalFile. |
-| [Update externalFile](../api/externalitem-update.md)  | externalFile | Update an externalFile. |
-| [Delete](../api/externalitem-delete.md)               | None         | Delete an externalFile. | |
+| Method                                                        | Return Type  | Description |
+|:--------------------------------------------------------------|:-------------|:--|
+| [Create externalFile](../api/externalconnection-put-items.md) | externalFile | Create an externalFile. |
+| [Update externalFile](../api/externalitem-update.md)          | externalFile | Update an externalFile. |
+| [Delete](../api/externalitem-delete.md)                       | None         | Delete an externalFile. |
 
 ## Properties
 

@@ -1,6 +1,6 @@
 ---
 title: "configuration resource type"
-description: "Specifies additional application IDs that are allowed to manage the connection and to index content in a connection."
+description: "Specifies additional application IDs that are allowed to manage the externalConnection and to index content in a externalConnection."
 localization_priority: Normal
 author: "snlraju-msft"
 ms.prod: ""
@@ -11,13 +11,13 @@ doc_type: "resourcePageType"
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Specifies additional application IDs that are allowed to manage the connection and to index content in a [connection](../resources/connection.md).
+Specifies additional application IDs that are allowed to manage the externalConnection and to index content in a [externalConnection](../resources/externalconnection.md).
 
 ## Properties
 
 | Property       | Type              | Description |
 |:---------------|:------------------|:------------|
-| authorizedApps | String collection | A collection of application IDs for registered Azure Active Directory apps that are allowed to manage the connection and to index content in the connection. |
+| authorizedApps | String collection | A collection of application IDs for registered Azure Active Directory apps that are allowed to manage the externalConnection and to index content in the externalConnection. |
 
 ## JSON representation
 

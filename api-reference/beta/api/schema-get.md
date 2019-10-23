@@ -1,6 +1,6 @@
 ---
 title: "Get schema"
-description: "Retrieve the properties of a schema."
+description: "Retrieve the properties of a schema for an externalConnection."
 localization_priority: Normal
 author: "snlraju-msft"
 ms.prod: ""
@@ -11,7 +11,7 @@ doc_type: "apiPageType"
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Retrieve the properties of a [schema](../resources/schema.md).
+Retrieve the properties of a [schema](../resources/schema.md) for an [externalConnection](../resources/externalconnection.md).
 
 ## Permissions
 

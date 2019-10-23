@@ -11,7 +11,7 @@ doc_type: "apiPageType"
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Create the schema for a Microsoft Search [connection](../resources/connection.md).
+Create the schema for a Microsoft Search [connection](../resources/externalconnection.md).
 
 There are two schema types supported: custom items, and files.
 
@@ -107,8 +107,7 @@ The following is an example of the response.
 
 <!-- {
   "blockType": "response",
-  "truncated": true,
-  "@odata.type": "microsoft.graph.externalItem"
+  "truncated": true
 } -->
 
 ```http
@@ -146,7 +145,7 @@ The following is an example of the response.
 <!-- {
   "blockType": "response",
   "truncated": true,
-  "@odata.type": "microsoft.graph.externalItem"
+  "@odata.type": "microsoft.graph.schema"
 } -->
 
 ```http

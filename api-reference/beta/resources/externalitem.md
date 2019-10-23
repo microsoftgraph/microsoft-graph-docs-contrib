@@ -11,15 +11,15 @@ doc_type: "resourcePageType"
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-An item indexed via a Microsoft Search [connection](connection.md).
+An item indexed via a Microsoft Search [connection](externalconnection.md).
 
 ## Methods
 
-| Method                                                 | Return Type                                | Description |
-|:-------------------------------------------------------|:-------------------------------------------|:--|
-| [Create externalItem](../api/connection-put-items.md) | [externalItem](externalitem.md)            | Create an externalItem. |
-| [Update externalItem](../api/externalitem-update.md)   | [externalItem](externalitem.md)            | Update an externalItem. |
-| [Delete externalItem](../api/externalitem-delete.md)   | None                                       | Delete an externalItem. |
+| Method                                                        | Return Type                     | Description |
+|:--------------------------------------------------------------|:--------------------------------|:--|
+| [Create externalItem](../api/externalconnection-put-items.md) | [externalItem](externalitem.md) | Create an externalItem. |
+| [Update externalItem](../api/externalitem-update.md)          | [externalItem](externalitem.md) | Update an externalItem. |
+| [Delete externalItem](../api/externalitem-delete.md)          | None                            | Delete an externalItem. |
 
 ## Properties
 
@@ -28,7 +28,7 @@ An item indexed via a Microsoft Search [connection](connection.md).
 | acl        | [acl](acl.md) collection | An array of access control entries. Each entry specifies the access granted to a user or group. Required. |
 | content    | String                   | A plain-text representation of the contents of the item. The text in this property is full-text indexed. Optional. |
 | id         | String                   | Developer-provided unique ID  of the item. Required. |
-| properties | Object                   | A property bag with the properties of the item. The properties MUST conform to the [schema](schema.md) defined for the [connection](connection.md). Optional. |
+| properties | Object                   | A property bag with the properties of the item. The properties MUST conform to the [schema](schema.md) defined for the [externalConnection](externalconnection.md). Optional. |
 
 ## Relationships
 
