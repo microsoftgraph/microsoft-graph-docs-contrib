@@ -8,11 +8,11 @@ localization_priority: Priority
 
 # Set up change notifications that include resource data (preview)
 
-Microsoft Graph allows apps to subscribe to change notifications for resources via [webhooks](webhooks.md). You can now set up subscriptions to include the changed resource data (such as the content of a Microsoft Teams chat message) in notifications. Your app can then run its business logic without the need to make subsequent API calls to fetch the changed resource. As a result, the app performs better by making fewer API calls, which is beneficial in large scale scenarios.
+Microsoft Graph allows apps to subscribe to change notifications for resources via [webhooks](webhooks.md). You can now set up subscriptions to include the changed resource data (such as the content of a Microsoft Teams chat message) in notifications. Your app can then run its business logic without having to make a separate API call to fetch the changed resource. As a result, the app performs better by making fewer API calls, which is beneficial in large scale scenarios.
 
 Requesting resource data in notifications requires you to implement the following additional logic to satisfy data access and security requirements: 
 
-- [Handle](#subscription-life-cycle-notifications) special subscription life cycle notifications - `reauthorizationRequired` - to maintain an uninterrupted flow of data.
+- [Handle](#subscription-life-cycle-notifications) special subscription _life cycle_ notifications to maintain an uninterrupted flow of data. Microsoft Graph sends such notifications from time to time to require an app to re-authorize to make sure the conditions for data access haven't changed.
 - [Validate](#validating-the-authenticity-of-notifications) the authenticity of notifications as having originated from Microsoft Graph.
 - [Provide](#decrypting-resource-data-from-change-notifications) a public encryption key and use a private key to decrypt resource data received through notifications.
 
@@ -47,7 +47,7 @@ To have resource data included in change notifications, you **must** specify the
 
 ### Subscription request example
 
-The following example subscribes to resource changes - channel messages being created or updated in Microsoft Teams. It also subscribes to life cycle events that can affect the flow of change notifications. See more details on life cycle notifications in the [next section](#subscription-life-cycle-notifications).
+The following example subscribes to resource changes - channel messages being created or updated in Microsoft Teams. It also subscribes to life cycle events that can affect the flow of change notifications. See more details about life cycle notifications in the [next section](#subscription-life-cycle-notifications).
 
 ```http
 POST https://graph.microsoft.com/beta/subscriptions
@@ -67,8 +67,9 @@ Content-Type: application/json
 
 ### Subscription response
 ```http
-POST https://graph.microsoft.com/beta/subscriptions
+HTTP/1.1 201 Created
 Content-Type: application/json
+
 {
   "changeType": "created,updated",
   "notificationUrl": "https://webhook.azurewebsites.net/api/resourceNotifications",
@@ -99,7 +100,7 @@ One type of life cycle notifications challenges the authorized state of an activ
 
 When you create a long-lived subscription (for example, one that lasts for 3 days), resource data notifications flows to the location indicated in **notificationUrl**. However, at any point in time, Microsoft Graph may require that you re-authorize the subscription to prove that you still have access to resource data, in case the conditions of access have changed since the subscription was created. The following are examples of changes that affect your access to data:
 
-- A tenant administrator may revoke your app's permissions to read a resource
+- A tenant administrator may revoke your app's permissions to read a resource.
 - In an interactive scenario, the user who provides the authentication token to your app may be subject to dynamic policies based on various factors, such as their location, device state, or risk assesment. For example, if the user changes their physical location, the user may no longer be allowed to access the data, and your app will not be able to re-authorize the subscription. For more information on dynamic policies that control access, see [Azure AD conditional access policies](https://docs.microsoft.com/en-us/azure/active-directory/conditional-access/overview). 
 
 The flow of an authorization challenge for an active, non-expired subscription looks as follows:
@@ -147,7 +148,7 @@ The following is an example life cycle notification that requests re-authorizing
 
 Take the following steps to process an authorization challenge life cycle notification. The first two steps of acknowledging and validating the life cycle notification is similar to [responding to a resource change notification](webhooks.md#processing-the-notification).
 
-1. Acknowledge the receipt of the notification, by responding to the POST call with `202 - Accepted`.
+1. Acknowledge the receipt of the notification, by responding to the POST call with `HTTP 202 Accepted`.
 2. Validate the authenticity of the notification. Further details [below](#validating-the-authenticity-of-notifications).
 3. Ensure the app has a valid access token to take the next step. 
 
@@ -204,7 +205,7 @@ Implement your code in anticipation of new types of life cycle notifications:
 
 Apps often execute business logic based on resource data included in notifications. Having first verified the authenticity of each notification is important. Otherwise, a third party could spoof your app with false notifications, make it execute its business logic incorrectly, and lead to a security incident.
 
-For basic notifications which do not contain resource data, simply validate based on the **clientState** value as described [here](webhooks.md#processing-the-notification). This is acceptable, as you can make subsequent trusted Microsoft Graph calls to get access to resource data, and therefore the impact of any spoofing attempts is limited. 
+For basic notifications which do not contain resource data, simply validate them based on the **clientState** value as described [here](webhooks.md#processing-the-notification). This is acceptable, as you can make subsequent trusted Microsoft Graph calls to get access to resource data, and therefore the impact of any spoofing attempts is limited. 
 
 For notifications that deliver resource data, perform a more thorough validation before processing the data.
 
@@ -241,7 +242,7 @@ In the following example, the notification contains two items for the same app, 
 If you are new to token validation, refer to this [blog article](http://www.cloudidentity.com/blog/2014/03/03/principles-of-token-validation/) for a useful overview. Use an SDK, such as Microsoft's [System.IdentityModel.Tokens.Jwt](https://www.nuget.org/packages/System.IdentityModel.Tokens.Jwt/) library for .NET, or a third party library for a different platform.
 
 > **Note:** 
-> - Make sure to always send a `HTTP 202 Accepted` status code as part of the response to the notification. 
+> - Make sure to always send an `HTTP 202 Accepted` status code as part of the response to the notification. 
 > - Do that before validating the notification (for example, if you store notifications in queues for later processing) or after (if you process them on the fly), even if validation failed.
 > - Accepting a notification prevents unnecessary delivery retries and it also prevents any potential rogue actors from finding out if they passed or failed validation. You can always choose to ignore an invalid notification after you have accepted it.
 
@@ -271,21 +272,21 @@ Use the following steps to validate tokens and apps that generate tokens:
     - This ensures that notifications are not sent by a different app that is not Microsoft Graph.
 
 
-#### Sample JWT token
+#### Example JWT token
 
 Here is an example of the properties included in the JWT token that are needed for validation:
 
 ```json
 {
-  <!-- aud is your app's id -->
+  // aud is your app's id 
   "aud": "8e460676-ae3f-4b1e-8790-ee0fb5d6148f",                           
   "iss": "https://sts.windows.net/84bd8158-6d4d-4958-8b9f-9d6445542f95/",
   "iat": 1565046813,
   "nbf": 1565046813,
-  <!--  Expiration date -->
+  // Expiration date 
   "exp": 1565075913,                                                        
   "aio": "42FgYKhZ+uOZrHa7p+7tfruauq1HAA==",
-  <-- appid represents the notification publisher and must always be the same value of 0bf30f3b-4a52-48df-9a82-234910c4a086 -->
+  // appid represents the notification publisher and must always be the same value of 0bf30f3b-4a52-48df-9a82-234910c4a086 
   "appid": "0bf30f3b-4a52-48df-9a82-234910c4a086",                          
   "appidacr": "2",
   "idp": "https://sts.windows.net/84bd8158-6d4d-4958-8b9f-9d6445542f95/",
@@ -299,12 +300,12 @@ Here is an example of the properties included in the JWT token that are needed f
 
 The **resourceData** property of a notification includes only the basic ID and type information of a resource instance. The **encryptedData** property contains the full resource data, encrypted by Microsoft Graph using the public key provided in the subscription. The property also contains values required for verification and decryption. This is done to increase the security of customer data accessed via notifications. It is your responsibility to secure the private key to ensure that customer data cannot be decrypted by a third party, even if they manage to intercept the original notifications.
 
-### Managing encryption keys
+### Manage encryption keys
 
 1. Obtain a certificate with a pair of asymmetric keys.
 
     - You can self-sign the certificate, since Microsoft Graph does not verify the certificate issuer, and uses the public key for only encryption. 
-    - Use [Azure Key Vault](https://docs.microsoft.com/azure/key-vault/key-vault-whatis) as the solution to create, rotate, and securily manage certificates. Make sure the keys satisfy the following criteria:
+    - Use [Azure Key Vault](https://docs.microsoft.com/azure/key-vault/key-vault-whatis) as the solution to create, rotate, and securely manage certificates. Make sure the keys satisfy the following criteria:
 
         - The key must be of type `RSA`
         - The key size must be between 2048 and 4096 bits
@@ -313,7 +314,7 @@ The **resourceData** property of a notification includes only the basic ID and t
 
 3. When creating a subscription:
 
-    - Provide the certificate in the **encryptionCertificate** property, using the base64-encoded content the certificate was exported in.
+    - Provide the certificate in the **encryptionCertificate** property, using the base64-encoded content that the certificate was exported in.
     - Provide your own identifier in the **encryptionCertificateId** property. 
   
         This identifier allows you to match your certificates to the notifications you receive, and to retrieve certificates from your certificate store. The identifier can be up to 128 characters.
@@ -322,14 +323,14 @@ The **resourceData** property of a notification includes only the basic ID and t
 
 #### Rotate keys
 
-To minimize the risk of a private key becoming compromised, periodically change your assymetric keys. Follow these steps to introduce a new pair of keys:
+To minimize the risk of a private key becoming compromised, periodically change your asymmetric keys. Follow these steps to introduce a new pair of keys:
 
-1. Obtain a new certificate with a new pair of assymetric keys. Use it for all new subscriptions being created.
+1. Obtain a new certificate with a new pair of asymmetric keys. Use it for all new subscriptions being created.
 
 2. Update existing subscriptions with the new certificate key.
 
     - Do this as part of regular subscription renewal. 
-    - Or, enumerate all subscriptions and provide the key. Use the `PATCH` operation on the subscription and update the **encryptionCertificate** and **encryptionCertificateId** properties.
+    - Or, enumerate all subscriptions and provide the key. Use the [PATCH operation on the subscription](/graph/api/subscription-update?view=graph-rest-1.0) and update the **encryptionCertificate** and **encryptionCertificateId** properties.
 
 3. Keep in mind the following:
     - For a period of time, the old certificate may still be used for encryption. Your app must have access to both old and new certificates to be able to decrypt content.
@@ -340,7 +341,7 @@ To minimize the risk of a private key becoming compromised, periodically change 
 
 To optimize performance, Microsoft Graph uses a two-step encryption process:
   - It generates a single use symmetric key, and uses it to encrypt resource data.
-  - It uses the public assymetric key (that you provided when subscribing) to encrypt the symmetric key and includes it in each notification of that subscription.
+  - It uses the public asymmetric key (that you provided when subscribing) to encrypt the symmetric key and includes it in each notification of that subscription.
 
 Always assume that the symmetric key is different for each item in the notification.
 
@@ -369,7 +370,7 @@ To decrypt resource data, your app should perform the reverse steps, using the p
 6. The decrypted value is a JSON string that represents the resource instance in the notification.
 
 
-#### Sample notification with encrypted resource data
+#### Example notification with encrypted resource data
 
 The following is an example notification that includes encrypted property values of a **chatMessage** instance in a channel message. The instance is specified by the `@odata.id` value.
 
@@ -379,7 +380,7 @@ The following is an example notification that includes encrypted property values
 		{
 			"subscriptionId": "76222963-cc7b-42d2-882d-8aaa69cb2ba3",
 			"changeType": "created",
-			...
+			// Other properties typical in a resource change notification
 			"resource": "teams('d29828b8-c04d-4e2a-b2f6-07da6982f0f0')/channels('19:f127a8c55ad949d1a238464d22f0f99e@thread.skype')/messages('1565045424600')/replies('1565047490246')",
 			"resourceData": {
 				"id": "1565293727947",
@@ -477,6 +478,8 @@ using (var decryptor = aesProvider.CreateDecryptor())
 
 ## See also
 
+- [Set up notifications for changes in user data](webhooks.md)
 - [Subscription resource type](/graph/api/resources/subscription?view=graph-rest-beta)
 - [Get subscription](/graph/api/subscription-get?view=graph-rest-1.0)
 - [Create subscription](/graph/api/subscription-post-subscriptions?view=graph-rest-1.0)
+- [Update subscription](/graph/api/subscription-update?view=graph-rest-1.0)
