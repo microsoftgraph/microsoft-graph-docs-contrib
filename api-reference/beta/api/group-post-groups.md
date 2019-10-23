@@ -329,6 +329,7 @@ The following is an example of the response. It includes only default properties
 ``` http
 HTTP/1.1 201 Created
 Content-type: application/json
+
 {
   "@odata.context": "https://graph.microsoft.com/beta/$metadata#groups/$entity",
   "id": "502df398-d59c-469d-944f-34a50e60db3f",
