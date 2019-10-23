@@ -19,5 +19,5 @@ doc_type: conceptualPageType
 
 ## See also
 
-- [Use the Microsoft Graph API to enable cross-device experiences](cross-device-reference-overview.md)
+- [Use the Microsoft Graph API to enable cross-device experiences](project-remove-overview.md)
 - [Use the activity feed API to resume a user's activity across devices](activity-feed-api-overview.md)
