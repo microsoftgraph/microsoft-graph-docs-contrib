@@ -1,6 +1,6 @@
 ---
 title: "trustFrameworkKeySet: uploadCertificate"
-description: "This action can be used to upload a certificate to a key set."
+description: "Upload a certificate to a key set."
 localization_priority: Normal
 author: "valnav"
 ms.prod: "microsoft-identity-platform"
@@ -11,7 +11,7 @@ doc_type: "apiPageType"
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-This action can be used to upload a certificate to a key set. The input to the api is a base-64 encoded value of the certificate contents.
+Upload a certificate to a key set. The input is a base-64 encoded value of the certificate contents.
 
 ## Permissions
 
@@ -43,15 +43,13 @@ In the request body, provide a JSON object with the following parameters.
 
 | Parameter    | Type        | Description |
 |:-------------|:------------|:------------|
-|key|String| This is the field for sending certificate content. **The value should be base-64 encoded version of the actual certificate content.** |
+|key|String| This is the field for sending certificate content. The value should be a base-64 encoded version of the actual certificate content. |
 
 ## Response
 
-If successful, this method returns `200, OK` response code and a new [trustFrameworkKey](../resources/trustframeworkkey.md) object in the response body.
+If successful, this method returns a `200 OK` response code and a new [trustFrameworkKey](../resources/trustframeworkkey.md) object in the response body.
 
 ## Examples
-
-The following is an example of how to call this API.
 
 ### Request
 
