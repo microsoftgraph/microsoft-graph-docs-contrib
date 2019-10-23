@@ -2,8 +2,8 @@
 title: "calendarPermission resource type"
 description: "PROVIDE DESCRIPTION HERE"
 localization_priority: Normal
-author: ""
-ms.prod: ""
+author: "sochowdh"
+ms.prod: "outlook"
 doc_type: "resourcePageType"
 ---
 
