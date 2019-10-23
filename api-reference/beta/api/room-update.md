@@ -81,7 +81,7 @@ The following is an example of the request.
   "name": "update_room"
 }-->
 ```http
-PATCH https://graph.microsoft.com/beta/places/{id}
+PATCH https://graph.microsoft.com/beta/places/cf100@contoso.com
 Content-type: application/json
 Content-length: 285
 
