@@ -95,7 +95,7 @@ Content-Length: 1574
   "audioConferencing": {
     "tollNumber": "+12525634478",
     "tollFreeNumber": "+18666390588",
-    ConferenceId": "9999999",
+    "ConferenceId": "9999999",
     "dialinUrl": "https://dialin.teams.microsoft.com/6787A136-B9B8-4D39-846C-C0F1FF937F10?id=xxxxxxx"
   },
   "canceledDateTime": "0001-01-01T08:00:00Z",

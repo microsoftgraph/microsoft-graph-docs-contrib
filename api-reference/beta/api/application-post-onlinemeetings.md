@@ -75,8 +75,7 @@ Content-Type: application/json
         }
       }
     }
-  },
-  "subject": "subject-value"
+  }
 }
 ```
 # [C#](#tab/csharp)
@@ -178,7 +177,7 @@ HTTP/1.1 201 Created
 Content-Type: application/json
 
 {
-  @odata.context=https://graph.microsoft.com/beta/$metadata#users('f4053f86-17cc-42e7-85f4-f0389ac980d6')/onlineMeetings/$entity
+  "@odata.context": "https://graph.microsoft.com/beta/$metadata#users('f4053f86-17cc-42e7-85f4-f0389ac980d6')/onlineMeetings/$entity",
   "accessLevel": "everyone",
   "audioConferencing": {
     "tollNumber": "+12525634478",
@@ -250,7 +249,7 @@ HTTP/1.1 201 Created
 Content-Type: application/json
 
 {
-  @odata.context=https://graph.microsoft.com/beta/$metadata#users('f4053f86-17cc-42e7-85f4-f0389ac980d6')/onlineMeetings/$entity
+  "@odata.context": "https://graph.microsoft.com/beta/$metadata#users('f4053f86-17cc-42e7-85f4-f0389ac980d6')/onlineMeetings/$entity",
   "accessLevel": "everyone",
   "audioConferencing": {
     "tollNumber": "+12525634478",

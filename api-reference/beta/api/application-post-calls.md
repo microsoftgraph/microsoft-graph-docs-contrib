@@ -59,7 +59,7 @@ The following example shows the request which makes a peer-to-peer call between 
 # [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
-  "name": "create-call-service-hosted-media"
+  "name": "create-call-service-hosted-media",
   "@odata.type": "microsoft.graph.call"
 }-->
 ```http
@@ -258,7 +258,7 @@ The following example shows the request which makes a peer-to-peer call between 
 
 <!-- {
   "blockType": "request",
-  "name": "create-call-app-hosted-media"
+  "name": "create-call-app-hosted-media",
   "@odata.type": "microsoft.graph.call"
 }-->
 ```http
@@ -722,7 +722,7 @@ To join the meeting with application hosted media update the media config with t
 
 <!-- {
   "blockType": "request",
-  "name": "join-meeting-app-hosted-media"
+  "name": "join-meeting-app-hosted-media",
   "@odata.type": "microsoft.graph.call"
 }-->
 ```http
