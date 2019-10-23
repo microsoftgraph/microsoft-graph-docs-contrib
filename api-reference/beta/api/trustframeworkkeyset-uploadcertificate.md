@@ -11,7 +11,7 @@ doc_type: "apiPageType"
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Upload a certificate to a keyset. The input is a base-64 encoded value of the certificate contents.
+Upload a certificate to a [trustFrameworkKeyset](../resources/trustframeworkkeyset.md). The input is a base-64 encoded value of the certificate contents. This method returns [trustFrameworkKey](../resources/trustframeworkkey.md).
 
 ## Permissions
 
@@ -36,6 +36,7 @@ POST /trustFramework/keySets/{id}/uploadCertificate
 | Name          | Description   |
 |:--------------|:--------------|
 | Authorization | Bearer {token}. Required. |
+|Content-type | application/json. Required. |
 
 ## Request body
 

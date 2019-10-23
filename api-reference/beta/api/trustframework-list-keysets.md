@@ -11,7 +11,7 @@ doc_type: "apiPageType"
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Retrieve a list of trustframeworkkeyset objects.
+Retrieve a list of [trustFrameworkKeySets](../resources/trustframeworkkeyset.md).
 
 ## Permissions
 
@@ -35,7 +35,7 @@ GET /trustFramework/keySets
 
 | Name      |Description|
 |:----------|:----------|
-| Authorization | Bearer {token} |
+| Authorization | Bearer {token}. Required. |
 
 ## Request body
 

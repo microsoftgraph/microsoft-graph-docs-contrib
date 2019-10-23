@@ -11,7 +11,7 @@ doc_type: "apiPageType"
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Delete a [trustFrameworkKeySet](../resources/trustframeworkkeyset.md) object.
+Delete a [trustFrameworkKeySet](../resources/trustframeworkkeyset.md).
 
 ## Permissions
 
@@ -35,7 +35,7 @@ DELETE /trustFramework/keySets/{id}
 
 | Name          | Description   |
 |:--------------|:--------------|
-| Authorization | Bearer {token} |
+| Authorization | Bearer {token}. Required. |
 
 ## Request body
 

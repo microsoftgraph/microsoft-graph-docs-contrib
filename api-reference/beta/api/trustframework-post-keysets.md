@@ -35,7 +35,8 @@ POST /trustFramework/keySets
 
 | Name          | Description   |
 |:--------------|:--------------|
-| Authorization | Bearer {token} |
+| Authorization | Bearer {token}. Required. |
+|Content-type | application/json. Required. |
 
 ## Request body
 

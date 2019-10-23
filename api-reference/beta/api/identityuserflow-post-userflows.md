@@ -1,17 +1,17 @@
 ---
-title: "Create UserFlow"
-description: "Use this API to create a new UserFlow."
+title: "Create userFlow"
+description: "Use this API to create a new userFlow."
 localization_priority: Normal
 author: "valnav"
 ms.prod: "microsoft-identity-platform"
 doc_type: "apiPageType"
 ---
 
-# Create UserFlow
+# Create userFlow
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Use this API to create a new UserFlow.
+Create a new [userFlow](../resources/identityuserflow.md) object.
 
 ## Permissions
 
@@ -35,15 +35,16 @@ POST /identity/userFlows
 
 | Name          | Description   |
 |:--------------|:--------------|
-| Authorization | Bearer {token} |
+| Authorization | Bearer {token}. Required. |
+|Content-type | application/json. Required. |
 
 ## Request body
 
-In the request body, supply a JSON representation of [UserFlow](../resources/identityuserflow.md) object.
+In the request body, supply a JSON representation of [userFlow](../resources/identityuserflow.md) object.
 
 ## Response
 
-If successful, this method returns `201, Created` response code and a new [UserFlow](../resources/identityuserflow.md) object in the response body.
+If successful, this method returns a `201 Created` response code and a new [userFlow](../resources/identityuserflow.md) object in the response body.
 
 ## Examples
 

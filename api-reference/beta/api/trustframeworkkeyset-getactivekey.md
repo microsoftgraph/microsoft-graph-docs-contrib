@@ -11,7 +11,7 @@ doc_type: "apiPageType"
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Get the currently active key in a [trustFrameworkKeySet](../resources/trustframeworkkeyset.md). Only one key is active in the keyset at a time.
+Get the currently active [trustFrameworkKey](../resources/trustframeworkkey.md) in a [trustFrameworkKeySet](../resources/trustframeworkkeyset.md). Only one key is active in the keyset at a time.
 
 
 ## Permissions

@@ -1,17 +1,17 @@
 ---
-title: "Delete UserFlow"
-description: "Delete UserFlow."
+title: "Delete userFlow"
+description: "Delete userFlow."
 localization_priority: Normal
 author: "valnav"
 ms.prod: "microsoft-identity-platform"
 doc_type: "apiPageType"
 ---
 
-# Delete UserFlow
+# Delete userFlow
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Delete UserFlow.
+Delete an existing [userFlow](../resources/identityuserflow.md) object.
 
 ## Permissions
 
@@ -35,7 +35,7 @@ DELETE /identity/userFlows/{id}
 
 | Name          | Description   |
 |:--------------|:--------------|
-| Authorization | Bearer {token} |
+| Authorization | Bearer {token}. Required. |
 
 ## Request body
 
@@ -43,7 +43,7 @@ Do not supply a request body for this method.
 
 ## Response
 
-If successful, this method returns `204, No Content` response code. It does not return anything in the response body.
+If successful, this method returns a `204 No Content` response code. It does not return anything in the response body.
 
 ## Examples
 
@@ -76,7 +76,7 @@ HTTP/1.1 204 No Content
 2019-02-04 14:57:30 UTC -->
 <!-- {
   "type": "#page.annotation",
-  "description": "Delete UserFlow",
+  "description": "Delete userFlow",
   "keywords": "",
   "section": "documentation",
   "tocPath": ""

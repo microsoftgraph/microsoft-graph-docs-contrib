@@ -1,17 +1,17 @@
 ---
-title: "Get UserFlow"
-description: "Retrieve the properties and relationships of identityuserflow object."
+title: "Get userFlow"
+description: "Retrieve the properties and relationships of userflow object."
 localization_priority: Normal
 author: "valnav"
 ms.prod: "microsoft-identity-platform"
 doc_type: "apiPageType"
 ---
 
-# Get UserFlow
+# Get userFlow
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Retrieve the properties and relationships of Userflow object.
+Retrieve the properties and associations for an [userFlow](../resources/identityuserflow.md) object.
 
 ## Permissions
 
@@ -35,7 +35,7 @@ GET /identity/userFlows/{id}
 
 | Name      |Description|
 |:----------|:----------|
-| Authorization | Bearer {token} |
+| Authorization | Bearer {token}. Required. |
 
 ## Request body
 
@@ -43,7 +43,7 @@ Do not supply a request body for this method.
 
 ## Response
 
-If successful, this method returns a `200 OK` response code and the requested [UserFlow](../resources/identityuserflow.md) object in the response body.
+If successful, this method returns a `200 OK` response code and the requested [userFlow](../resources/identityuserflow.md) object in the response body.
 
 ## Examples
 

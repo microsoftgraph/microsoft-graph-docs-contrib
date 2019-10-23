@@ -11,7 +11,7 @@ doc_type: "apiPageType"
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Generate a key and a secret automatically in the keyset. The caller doesn't have to provide a secret.
+Generate a [trustFrameworkKey](../resources/trustFrameworkKey.md) and a secret automatically in the [trustFrameworkKeyset](../resources/trustframeworkkeyset.md). The caller doesn't have to provide a secret.
 
 ## Permissions
 
@@ -35,7 +35,7 @@ POST /trustFramework/keySets/{id}/generateKey
 
 | Name          | Description   |
 |:--------------|:--------------|
-| Authorization | Bearer {token} |
+| Authorization | Bearer {token}. Required. |
 | Content-type  | application/json. Required. |
 
 ## Request body

@@ -1,17 +1,17 @@
 ---
 title: "List userFlows"
-description: "Retrieve a list of UserFlow objects."
+description: "Retrieve a list of userFlow objects."
 localization_priority: Normal
 author: "valnav"
 ms.prod: "microsoft-identity-platform"
 doc_type: "apiPageType"
 ---
 
-# List UserFlows
+# List userFlows
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Retrieve a list of UserFlow objects.
+Retrieve a list of [userflows](../resources/identityuserflow.md).
 
 ## Permissions
 
@@ -35,7 +35,7 @@ GET /identity/userFlows
 
 | Name      |Description|
 |:----------|:----------|
-| Authorization | Bearer {token} |
+| Authorization | Bearer {token}. Required. |
 
 ## Request body
 
@@ -43,7 +43,7 @@ Do not supply a request body for this method.
 
 ## Response
 
-If successful, this method returns a `200 OK` response code and a collection of [UserFlow](../resources/identityuserflow.md) objects in the response body.
+If successful, this method returns a `200 OK` response code and a collection of [userFlow](../resources/identityuserflow.md) objects in the response body.
 
 ## Examples
 

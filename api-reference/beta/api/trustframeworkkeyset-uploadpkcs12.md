@@ -11,7 +11,7 @@ doc_type: "apiPageType"
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Upload a PKCS 12 format key (PFX) to a keyset. The input is a base-64 encoded value of the Pfx certificate contents.
+Upload a PKCS12 format key (PFX) to a [trustFrameworkKeyset](../resources/trustframeworkkeyset.md). The input is a base-64 encoded value of the Pfx certificate contents. This method returns [trustFrameworkKey](../resources/trustframeworkkey.md).
 
 ## Permissions
 
