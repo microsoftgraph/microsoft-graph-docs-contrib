@@ -7,7 +7,7 @@ author: DarrelMiller
 
 # Make API calls using the Microsoft Graph SDKs
 
-The Microsoft Graph SDK service libraries provide a client class that can be used as the starting point for creating all API requests. There are two styles of client class: one uses a fluent interface to create the request (for example, `client.Me.Manager`) and the other  accepts a path string (for example, `api("/me/manager")`). When you have a request object, you can specify a variety of options such as filtering and sorting, and finally, you select the type of operation you want to perform.
+The Microsoft Graph SDK service libraries provide a client class that you can use as the starting point for creating all API requests. There are two styles of client class: one uses a fluent interface to create the request (for example, `client.Me.Manager`) and the other  accepts a path string (for example, `api("/me/manager")`). When you have a request object, you can specify a variety of options such as filtering and sorting, and finally, you select the type of operation you want to perform.
 
 ## Read information from Microsoft Graph
 
