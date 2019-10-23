@@ -90,13 +90,11 @@ Content-type: application/json
 Content-length: 285
 
 {
-  "nickname": "Conf room",
+  "nickname": "Conf Room",
   "building": "1",
-  "label": "12",
-  "bookingType": {
-  },
-  "capacity": "2",
-  "isWheelchairAccessible": true
+  "label": "100",
+  "capacity": "50",
+  "isWheelchairAccessible": false
 }
 ```
 
@@ -118,13 +116,37 @@ HTTP/1.1 200 OK
 Content-type: application/json
 
 {
-  "nickname": "nickname-value",
-  "building": "building-value",
-  "label": "label-value",
-  "bookingType": {
-  },
-  "capacity": "capacity-value",
-  "isWheelchairAccessible": true
+    "@odata.context": "https://graph.microsoft.com/beta/$metadata#places/$entity",
+    "@odata.type": "#microsoft.graph.room",
+    "id": "3162F1E1-C4C0-604B-51D8-91DA78989EB1",
+    "emailAddress": "cf100@contoso.com",
+    "displayName": "Conf Room 100",
+    "address": {
+      "street": "4567 Main Street",
+      "city": "Buffalo",
+      "state": "NY",
+      "postalCode": "98052",
+      "countryOrRegion": "USA"
+    },
+    "geoCoordinates": {
+      "latitude": 47.640568390488626,
+      "longitude": -122.1293731033803
+    },
+    "phone": "000-000-0000",
+    "nickname": "Conf Room",
+    "label": "100",
+    "capacity": "50",
+    "building": "1",
+    "floorNumber": 1,
+    "isManaged": true,
+    "isWheelchairAccessible": false,
+    "bookingType": "standard",
+    "tags": [
+      "bean bags"
+    ],
+    "audioDeviceName": null,
+    "videoDeviceName": null,
+    "displayDevice": "surface hub"
 }
 ```
 
