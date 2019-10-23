@@ -1,6 +1,6 @@
 ---
 title: "trustFrameworkKeySet: uploadSecret"
-description: "This action can be used to upload a secret to a key set."
+description: "Upload a secret to a key set."
 localization_priority: Normal
 author: "valnav"
 ms.prod: "microsoft-identity-platform"
@@ -11,7 +11,7 @@ doc_type: "apiPageType"
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-This action can be used to upload a plain text secret to a key set. Example of a secret will be an application secret in AAD, Google, Facebook or any other identity prvovider.
+Upload a plain text secret to a key set. Examples of secrets are application secrets in Azure Active Directory, Google, Facebook, or any other identity prvovider.
 
 ## Permissions
 
@@ -35,7 +35,8 @@ POST /trustFramework/keySets/{id}/uploadSecret
 
 | Name          | Description   |
 |:--------------|:--------------|
-| Authorization | Bearer {token} |
+| Authorization | Bearer {token}. Required. |
+| Content-type  | application/json. Required. |
 
 ## Request body
 
@@ -43,18 +44,16 @@ In the request body, provide a JSON object with the following parameters.
 
 | Parameter    | Type        | Description |
 |:-------------|:------------|:------------|
-|use|String|Similar to 'use' property of trustFrameworkKey|
-|k|String|Similar to 'k' property of trustFrameworkKey. This is the field which is used  to send `secret`|
-|nbf|Int64|Similar to 'nbf' property of trustFrameworkKey|
-|exp|Int64|Similar to 'exp' property of trustFrameworkKey|
+|use|String|Similar to the **use** property of **trustFrameworkKey**.|
+|k|String|Similar to the **k** property of **trustFrameworkKey**. This is the field that is used to send the secret.|
+|nbf|Int64|Similar to the **nbf** property of **trustFrameworkKey**.|
+|exp|Int64|Similar to the **exp** property of **trustFrameworkKey**.|
 
 ## Response
 
-If successful, this method returns `200, OK` response code and a new [trustFrameworkKey](../resources/trustframeworkkey.md) object in the response body.
+If successful, this method returns a `200 OK` response code and a new [trustFrameworkKey](../resources/trustframeworkkey.md) object in the response body.
 
 ## Examples
-
-The following is an example of how to call this API.
 
 ### Request
 
