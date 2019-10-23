@@ -18,8 +18,8 @@ PROVIDE DESCRIPTION HERE
 | Method       | Return Type | Description |
 |:-------------|:------------|:------------|
 | [List](../api/identityuserflow-list.md) | [UserFlow](identityuserflow.md) | List UserFlows. |
-| [Get](../api/identityuserflow-get.md) | [UserFlow](identityuserflow.md) | Read properties and relationships of UserFlow object. |
 | [Create](../api/identityuserflow-post-userflows.md) | None | Create UserFlow object. |
+| [Get](../api/identityuserflow-get.md) | [UserFlow](identityuserflow.md) | Read properties and relationships of UserFlow object. |
 | [Delete](../api/identityuserflow-delete.md) | None | Delete UserFlow object. |
 
 ## Properties
