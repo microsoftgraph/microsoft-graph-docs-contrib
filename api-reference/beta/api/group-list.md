@@ -119,6 +119,7 @@ Content-type: application/json
             "groupTypes": [
                 "Unified"
             ],
+            "isAssignableToRole": null,
             "mail": "golfassist@contoso.com",
             "mailEnabled": true,
             "mailNickname": "golfassist",
@@ -150,6 +151,7 @@ Content-type: application/json
             "displayName": "Golf Discussion",
             "expirationDateTime": null,
             "groupTypes": [],
+            "isAssignableToRole": null,
             "mail": "golftalk@contoso.com",
             "mailEnabled": true,
             "mailNickname": "golftalk",

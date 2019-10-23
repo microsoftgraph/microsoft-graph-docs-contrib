@@ -104,6 +104,7 @@ Content-type: application/json
   "groupTypes": [
       "Unified"
   ],
+  "isAssignableToRole": null,
   "mail": "golfassist@contoso.com",
   "mailEnabled": true,
   "mailNickname": "golfassist",

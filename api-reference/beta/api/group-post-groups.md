@@ -49,6 +49,7 @@ The following table shows the properties of the [group](../resources/group.md) r
 | Property | Type | Description|
 |:---------------|:--------|:----------|
 | displayName | string | The name to display in the address book for the group. Required. |
+| isAssignableToRole | Boolean | Set to **true** to enable the group to be assigned to an Azure AD role. Only Privileged Role Administrator and Global Administrator can set the value of this property. Optional. |
 | mailEnabled | boolean | Set to **true** for mail-enabled groups. Required. |
 | mailNickname | string | The mail alias for the group. Required. |
 | securityEnabled | boolean | Set to **true** for security-enabled groups, including Office 365 groups. Required. |
@@ -138,6 +139,7 @@ HTTP/1.1 201 Created
 Content-type: application/json
 
 {
+   "@odata.context": "https://graph.microsoft.com/beta/$metadata#groups/$entity",
 	 "id": "45b7d2e7-b882-4a80-ba97-10b7a63b8fa4",
 	 "deletedDateTime": null,
 	 "classification": null,
@@ -145,14 +147,19 @@ Content-type: application/json
 	 "description": "Self help community for golf",
 	 "displayName": "Golf Assist",
 	 "expirationDateTime": null,
+   "externalGroupIds": [],
+   "externalGroupProviderId": null,
+   "externalGroupState": null,
 	 "groupTypes": [
 	     "Unified"
 	 ],
+   "isAssignableToRole": null,
 	 "mail": "golfassist@contoso.com",
 	 "mailEnabled": true,
 	 "mailNickname": "golfassist",
 	 "membershipRule": null,
 	 "membershipRuleProcessingState": null,
+   "membershipTypes": [],
 	 "onPremisesLastSyncDateTime": null,
 	 "onPremisesSecurityIdentifier": null,
 	 "onPremisesSyncEnabled": null,
@@ -165,6 +172,7 @@ Content-type: application/json
 	 "resourceBehaviorOptions": [],
 	 "resourceProvisioningOptions": [],
 	 "securityEnabled": false,
+   "securityIdentifier": "S-1-12-1-1753967289-1089268234-832641959-555555555",
 	 "theme": null,
 	 "visibility": "Public",
 	 "onPremisesProvisioningErrors": []
@@ -242,15 +250,22 @@ Content-type: application/json
     "deletedDateTime": null,
     "classification": null,
     "createdDateTime": "2018-12-27T22:17:07Z",
-    "creationOptions": [],
     "description": "Group with designated owner and members",
     "displayName": "Operations group",
+    "expirationDateTime": null,
+    "externalGroupIds": [],
+    "externalGroupProviderId": null,
+    "externalGroupState": null,
     "groupTypes": [
         "Unified"
     ],
+    "isAssignableToRole": null,
     "mail": "operations2019@contoso.com",
     "mailEnabled": true,
     "mailNickname": "operations2019",
+    "membershipRule": null,
+    "membershipRuleProcessingState": null,
+    "membershipTypes": [],
     "onPremisesLastSyncDateTime": null,
     "onPremisesSecurityIdentifier": null,
     "onPremisesSyncEnabled": null,
@@ -262,6 +277,8 @@ Content-type: application/json
     "resourceBehaviorOptions": [],
     "resourceProvisioningOptions": [],
     "securityEnabled": false,
+    "securityIdentifier": "S-1-12-1-1905728287-1207447622-870010782-555555555",
+    "theme": null,
     "visibility": "Public",
     "onPremisesProvisioningErrors": []
 }
