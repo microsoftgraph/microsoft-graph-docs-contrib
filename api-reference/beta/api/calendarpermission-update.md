@@ -42,7 +42,7 @@ In the request body, supply the values for relevant fields that should be update
 
 | Property     | Type        | Description |
 |:-------------|:------------|:------------|
-|allowedRoles|calendarRoleType| List of allowed sharing permission levels for the calendar. Possible values are: `none`, `freeBusyRead`, `limitedRead`, `read`, `write`, `delegateWithoutPrivateEventAccess`, `delegateWithPrivateEventAccess`, `custom`.|
+|allowedRoles|string collection| List of allowed sharing permission levels for the calendar. Possible values are: `none`, `freeBusyRead`, `limitedRead`, `read`, `write`, `delegateWithoutPrivateEventAccess`, `delegateWithPrivateEventAccess`, `custom`.|
 |emailAddress|[emailAddress](../resources/email.md)| Represents a sharee who has access to the calendar. For the "My Organization" sharee, the **address** property is null. |
 |id|String| The unique identifier of the user (sharee) with whom the calendar has been shared. Read-only.|
 |isInsideOrganization|Boolean| True if the user in context (sharee) is inside the same organization as the calendar owner.|

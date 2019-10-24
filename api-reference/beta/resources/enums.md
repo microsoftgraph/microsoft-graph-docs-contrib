@@ -897,31 +897,31 @@ Possible values for user account types (group membership), per Windows definitio
 
 |Member|
 |:---|
-|unknown|0|
-|skypeForBusiness|1|
-|skypeForConsumer|2|
-|teamsForBusiness|3|
+|unknown|
+|skypeForBusiness|
+|skypeForConsumer|
+|teamsForBusiness|
 
 ### delegateMeetingMessageDeliveryOptions values
 
 |Member|
 |:---|
-|sendToDelegateAndInformationToPrincipal|0|
-|sendToDelegateAndPrincipal|1|
-|sendToDelegateOnly|2|
+|sendToDelegateAndInformationToPrincipal|
+|sendToDelegateAndPrincipal|
+|sendToDelegateOnly|
 
 ### calendarRoleType
 
 | Member       | Value       |
 |:--------------|:--------------|
-|none|0|
-|freeBusyRead|1|
-|limitedRead|2|
-|read|3|
-|write|4|
-|delegateWithoutPrivateEventAccess|5|
-|delegateWithPrivateEventAccess|6|
-|custom|7|
+|none|
+|freeBusyRead|
+|limitedRead|
+|read|
+|write|
+|delegateWithoutPrivateEventAccess|
+|delegateWithPrivateEventAccess|
+|custom|
 
 ### conditionalAccessPolicyState
 

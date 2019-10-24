@@ -85,7 +85,6 @@ Here is a JSON representation of the resource
   "start": {"@odata.type": "microsoft.graph.dateTimeTimeZone"},
   "subject": "string",
   "type": "String",
-  "uid": "String",
   "webLink": "string",
 
   "attachments": [ { "@odata.type": "microsoft.graph.attachment" } ],
