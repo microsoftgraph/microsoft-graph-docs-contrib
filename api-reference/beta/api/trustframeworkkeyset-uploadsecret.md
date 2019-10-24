@@ -95,8 +95,8 @@ Content-type: application/json
 	"kid": "kid-value",
 	"use": "use-value",
 	"kty": "OCT",
-	"nbf": "1508969811",
-	"exp": "1508973711"
+	"nbf": 1508969811,
+	"exp": 1508973711
 }
 ```
 
