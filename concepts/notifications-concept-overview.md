@@ -28,7 +28,7 @@ You can use the notifications API to target a personal Microsoft account or a wo
 
 ### Easily manage notifications across endpoints
 
-Using the new and improved [Microsoft Graph notifications client SDK](https://aka.ms/GNSDK) within your client application, you can update the state of a notification and sync that state across all endpoints. For example, when a user acts on a notification on one device, you can update the state of this notification (such as marking it as read or dismissed), and the same state change will be distributed to all other endpoints. The Microsoft Graph notifications API tracks the state of your user’s notifications in a centralized way, making it easy for you to ensure that your notifications are handled once, and dismissed everywhere, thereby minimizing redundancy and ensuring a great customer experience.
+Using the new and improved [notifications client SDK](https://aka.ms/GNSDK) within your client application, you can update the state of a notification and sync that state across all endpoints. For example, when a user acts on a notification on one device, you can update the state of this notification (such as marking it as read or dismissed), and the same state change will be distributed to all other endpoints. The Microsoft Graph notifications API tracks the state of your user’s notifications in a centralized way, making it easy for you to ensure that your notifications are handled once, and dismissed everywhere, thereby minimizing redundancy and ensuring a great customer experience.
 
 ### Retrieve notification state and history
 
@@ -36,11 +36,11 @@ You can use the notifications API to retrieve notification history based on an e
 
 ### Guaranteed delivery for high-priority notifications
 
-On platforms like iOS, under certain power conditions, raw data notifications might be delayed in delivery due to batching, or not reach the target endpoint at all. For high-priority notifications, the Microsoft Graph notifications platform allows you to specify a raw-to-visual toast notification "fallback" option that automatically sends a visual toast notification to the target device, thereby ensuring your user gets notified near real-time.   
+On platforms like iOS, under certain power conditions, raw data notifications might be delayed in delivery due to batching, or not reach the target endpoint at all. For high-priority notifications being delivered to users on iOS, the Microsoft Graph notifications platform allows you to specify a raw-to-visual toast notification "fallback" option that automatically sends a visual toast notification to the target iOS device, thereby ensuring your user gets notified near real-time.   
 
 ### Privacy and compliance
 
-Microsoft Graph notifications meet most enterprise compliance requirements, including ISO 27001, ISO 27018, EUMC, HIPAA, SOC 1, SOC 2, and of course GDPR.
+Our push-to-pull model ensures that notifications never leave trusted boundaries. Platform-specific push services are used to send a shoulder-tap to your user's device and from there, the client SDK securely fetches the corresponding payload from the Microsoft Graph notifications service. We meet most enterprise compliance requirements, including ISO 27001, ISO 27018, EUMC, HIPAA, FERPA, SOC 1, SOC 2, and of course GDPR.
 
 ## How do I get started?
 
