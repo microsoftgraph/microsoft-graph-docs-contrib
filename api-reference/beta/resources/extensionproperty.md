@@ -25,8 +25,8 @@ Extensions can be added to [user](user.md), [group](group.md), [organization](or
 
 | Method       | Return Type | Description |
 |:-------------|:------------|:------------|
-| [Create extension](../api/application-post-extensionproperty.md) | [extensionProperty](extensionProperty.md) | Create an extension property on an application object. |
 | [List extensions](../api/application-list-extensionproperty.md) | [extensionProperty](extensionProperty.md) collection | List extension properties on an application object. |
+| [Create extension](../api/application-post-extensionproperty.md) | [extensionProperty](extensionProperty.md) | Create an extension property on an application object. |
 | [Delete extension](../api/application-delete-extensionproperty.md) | None | Delete an extension property from an application object. |
 
 ## Properties
