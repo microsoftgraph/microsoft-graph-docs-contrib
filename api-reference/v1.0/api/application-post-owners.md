@@ -1,6 +1,6 @@
 ---
 title: "Add owner"
-description: "Use this API to create a new owner."
+description: "Create a new owner."
 author: "davidmu1"
 localization_priority: Normal
 ms.prod: "microsoft-identity-platform"
@@ -9,7 +9,7 @@ doc_type: apiPageType
 
 # Add owner
 
-Use this API to add an owner to an application by posting to the owners collection.
+Add an owner to an application by posting to the owners collection.
 
 ## Permissions
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
