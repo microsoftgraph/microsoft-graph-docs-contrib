@@ -1,6 +1,6 @@
 ---
 title: "Remove owner"
-description: "Use this API to remove an owner from an application."
+description: "Remove an owner from an application."
 author: "davidmu1"
 localization_priority: Normal
 ms.prod: "microsoft-identity-platform"
@@ -9,7 +9,7 @@ doc_type: apiPageType
 
 # Remove owner
 
-Use this API to remove an owner from an [application](../resources/application.md).
+Remove an owner from an [application](../resources/application.md).
 
 ## Permissions
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
