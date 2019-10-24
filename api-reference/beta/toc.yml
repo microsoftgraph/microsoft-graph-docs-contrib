@@ -8248,11 +8248,11 @@
           href: api/certificatebasedauthconfiguration-post-certificatebasedauthconfiguration.md
         - name: Delete
           href: api/certificatebasedauthconfiguration-delete.md
-      - name: Conditional Access
+      - name: Conditional access
         items:
         - name: Policies
           items:
-          - name: Conditional Access policy
+          - name: Conditional access policy
             href: resources/conditionalaccesspolicy.md
           - name: List
             href: api/conditionalaccessroot-list-policies.md
@@ -8264,15 +8264,6 @@
             href: api/conditionalaccesspolicy-update.md
           - name: Delete
             href: api/conditionalaccesspolicy-delete.md
-      - name: Contracts
-        href: resources/contract.md
-        items:
-        - name: Get contract
-          href: api/contract-get.md
-        - name: List contracts
-          href: api/contract-list.md
-      - name: Conditional Access
-        items:
         - name: Named locations
           items:
           - name: Named location
@@ -8313,6 +8304,13 @@
               href: api/ipnamedlocation-update.md
             - name: Delete
               href: api/ipnamedlocation-delete.md
+      - name: Contracts
+        href: resources/contract.md
+        items:
+        - name: Get contract
+          href: api/contract-get.md
+        - name: List contracts
+          href: api/contract-list.md        
       - name: Data policy operation
         href: resources/datapolicyoperation.md
         items:
