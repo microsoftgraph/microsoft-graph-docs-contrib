@@ -4,7 +4,7 @@ description: "Create and send a notification targeting a user through Microsoft 
 localization_priority: Normal
 ms.prod: "project-rome"
 doc_type: apiPageType
-author: ""
+author: "merzink"
 ---
 
 # Create and send a notification
@@ -34,7 +34,7 @@ POST /me/notifications/
 |Name | Type | Description|
 |:----|:-----|:-----------|
 |Authorization | string |The authorization header is used to pass the credentials of the calling party. Bearer {token}. Required. |
-|X-UNS-ID | string |The UserNotificationSubscriptionId that is returned by the client after creating a subscription and is used to target the specific user. Required. |
+|X-UNS-ID | string |The UserNotificationSubscriptionId that is returned by the Microsoft Graph notification service after creating a subscription and is used to target the specific user. Required. |
 
 ## Request body
 In the request body, supply a JSON representation of a [notification](../resources/projectrome-notification.md) object.
