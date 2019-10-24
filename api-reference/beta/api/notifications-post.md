@@ -15,7 +15,7 @@ Create and send a notification targeting a user through Microsoft Graph. The not
 ## Permissions
 If you're using the new, lightweight [notification SDK](http://aka.ms/GNSDK), your application service does not require any additional permissions to post notifications to your targeted user.  
 
-However, if your client apps are leveraging the cross-device [Project Rome SDK APIs](https://github.com/microsoft/project-rome), then notifications must be posted on behalf of a user via delegated permissions. In this case, one of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
+However, if your client apps are using the cross-device [Project Rome SDK APIs](https://github.com/microsoft/project-rome), then notifications must be posted on behalf of a user via delegated permissions. In this case, one of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
 
 |Permission type      | Permissions (from least to most privileged)              |
 |:--------------------|:---------------------------------------------------------|
@@ -49,6 +49,7 @@ The following is an example of a request.
 ```http
 POST https://graph.microsoft.com/beta/me/notifications/
 Content-type: application/json
+
 {
     "targetHostName": "graphnotifications.sample.windows.com",
     "appNotificationId": "testDirectToastNotification",
