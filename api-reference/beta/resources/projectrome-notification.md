@@ -4,7 +4,7 @@ description: "Represents a notification that is published by an app server that 
 localization_priority: Normal
 ms.prod: "project-rome"
 doc_type: resourcePageType
-author: ""
+author: "merzink"
 ---
 
 # notification resource type
@@ -12,9 +12,9 @@ author: ""
 
 Represents a notification that is published by an app server that targets a specified user. The notification is stored in Microsoft Graph and is distributed to different device endpoints owned by the user. 
 
-A notification can be a visual notification payload that can be interpreted by the operating system, including Windows, Android, and iOS platforms. It can also be a data payload (rawContent) that's delivered to and handled by app clients (including web), which then determine the corresponding user experience on each device.  This is usually a visual notification UI, generated locally, that corresponds to the content in the original data payload. 
+A notification can be a visual notification payload that can be interpreted by the operating system (Windows, Android, and iOS platforms). It can also be a data payload (rawContent) that's delivered to and handled by app clients (including web), which then determine the corresponding user experience on each device.  This is usually a visual notification UI, generated locally, that corresponds to the content in the original data payload. 
 
-When a user acts on a visual notification, the app client can then use client-side notification SDK to update the state of the corresponding notification feed in Microsoft Graph - for example, by marking a notification as dismissed. The update will then be distributed to all other app client endpoints, and the clients handle the change accordingly, for example by dismissing the notification to prevent the user from seeing redundant information. App clients can access the same notification resource at a later time before it expires (even after it is marked as dismissed), as notification history, via the [notification SDK](https://aka.ms/GNSDK). 
+When a user acts on a visual notification, the app client can then use client-side notifications SDK to update the state of the corresponding notification feed in the Microsoft Graph - for example, by marking a notification as dismissed. The update will then be distributed to all other app client endpoints, and the clients handle the change accordingly, for example by dismissing the notification to prevent the user from seeing redundant information. App clients can access the same notification resource at a later time before it expires (even after it is marked as dismissed), as notification history, via the [notification SDK](https://aka.ms/GNSDK). 
 
 > [!NOTE]
 > Notification state updates, such as read or dismissed, will not be fanned out to web endpoints.  This is because webpush across various browsers require visual toast notifications to be displayed to a user.  Since state changes have no corresponding visual content, state changes will only be fanned-out for notifications targeted to the Windows, iOS or Android platforms.
@@ -28,7 +28,7 @@ When a user acts on a visual notification, the app client can then use client-si
 ## Properties
 |Name | Type | Description|
 |:----|:-----|:-----------|
-| targetHostName | String | Represents the host name of the app to which the calling service wants to post the notification, for the given user. If targeting web endpoints only (see targetPolicy.platformTypes below), targetHostName can be set to empty string. |
+| targetHostName | String | Represents the host name of the app to which the calling service wants to post the notification, for the given user. If targeting web endpoints only (see targetPolicy.platformTypes below), targetHostName can simply be set to "webApp". |
 | appNotificationId | String | The unique id set by the app server of a notification that is used to identify and target an individual notification. |
 | expirationDateTime | DateTimeOffset | Sets a UTC expiration time on a user notification - when time is up, the notification is removed from the Microsoft Graph notification feed store completely and is no longer part of notification history. Max value is 30 days. |
 | payload | Edm.ComplexType, JSON object | This is the data content of a raw or visual user notification that will be delivered to and consumed by the app client receiving this notification. |
