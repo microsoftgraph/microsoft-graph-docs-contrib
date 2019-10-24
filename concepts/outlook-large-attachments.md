@@ -189,11 +189,11 @@ As always, [getting an attachment](/graph/api/attachment-get?view=graph-rest-bet
 However, getting a large file attachment in base64-encoded format affects API performance. If you expect a large attachment:
  
 - As an alternative to getting the attachment content in base64 format, you can [get the raw data of the file attachment](/graph/api/attachment-get#example-5-get-the-raw-contents-of-a-file-attachment-on-a-message?view=graph-rest-1.0).
-- To [get the metadata of the file attachment](/graph/api/attachment-get#example-1-get-the-properties-of-a-file-attachment?view=graph-rest-beta), append a `$select` parameter to include only those metadata properties you want, excluding the **contentBytes** property which returns the file attachment in base64 format.
+- To [get the metadata of the file attachment](/graph/api/attachment-get?view=graph-rest-beta#example-1-get-the-properties-of-a-file-attachment), append a `$select` parameter to include only those metadata properties you want, excluding the **contentBytes** property which returns the file attachment in base64 format.
 
 ### Example request: get the file attachment metadata
 
-The following example shows the sender uses a `$select` parameter to get all the metadata of a file attachment on a message, except **contentBytes**.
+The following example shows the sender using a `$select` parameter to get all the metadata of a file attachment on a message, except **contentBytes**.
 
 <!-- {
   "blockType": "request",
