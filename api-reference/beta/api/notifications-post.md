@@ -13,14 +13,15 @@ author: "merzink"
 Create and send a notification targeting a user through Microsoft Graph. The notification is stored in the Microsoft Graph notification feed store, and is sent to all app clients on all device endpoints that the user is signed in to.  
 
 ## Permissions
-If you're using the new, lightweight [notification SDK](http://aka.ms/GNSDK), your application service does not require any additional permissions to post notifications to your targeted user.  
+Your application service does not require any additional permissions to post notifications to your targeted user.  
 
-However, if your client apps are using the cross-device [Project Rome SDK APIs](https://github.com/microsoft/project-rome), then notifications must be posted on behalf of a user via delegated permissions. In this case, one of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
+> [!NOTE]
+> If you choose to post notifications on behalf of a user via delegated permissions instead, one of the following permissions is required to call this API. We don't recommend this option for posting notifications but if you'd like to learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
 
-|Permission type      | Permissions (from least to most privileged)              |
-|:--------------------|:---------------------------------------------------------|
-|Delegated (work or school account) | Notifications.ReadWrite.CreatedByApp    |
-|Delegated (personal Microsoft account) | Notifications.ReadWrite.CreatedByApp    |
+> |Permission type      | Permissions (from least to most privileged)              |
+> |:--------------------|:---------------------------------------------------------|
+> |Delegated (work or school account) | Notifications.ReadWrite.CreatedByApp    |
+> |Delegated (personal Microsoft account) | Notifications.ReadWrite.CreatedByApp    |
 
 
 ## HTTP request
