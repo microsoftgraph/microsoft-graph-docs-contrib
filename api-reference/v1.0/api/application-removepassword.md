@@ -9,7 +9,7 @@ doc_type: "apiPageType"
 
 # application: removePassword
 
-Removes a password from an [application](../resources/application.md).
+Remove a password from an [application](../resources/application.md).
 
 ## Permissions
 
