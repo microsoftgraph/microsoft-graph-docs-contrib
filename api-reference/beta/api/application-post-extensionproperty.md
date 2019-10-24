@@ -11,7 +11,7 @@ doc_type: "apiPageType"
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Use this API to create a new [extensionProperty](../resources/extensionproperty.md) definition. This can be used to add a custom property value to the targeted object type defined in the extensionProperty, using standard creation and update requests to the target object.
+Create a new [extensionProperty](../resources/extensionproperty.md) definition. You can use this operation to add a custom property value to the targeted object type defined in the extensionProperty, using standard creation and update requests to the target object.
 
 ## Permissions
 
@@ -35,6 +35,7 @@ POST /applications/{id}/extensionProperties
 | Name       | Description|
 |:-----------|:----------|
 | Authorization  | Bearer {token}. Required.  |
+| Content-type | application/json. Required. |
 
 ## Request body
 
@@ -77,7 +78,7 @@ Content-type: application/json
 
 ### Response
 
-If successful, this method returns `201 Created` response code and [extensionProperty](../resources/extensionProperty.md) object in the response body.
+If successful, this method returns a `201 Created` response code and an [extensionProperty](../resources/extensionProperty.md) object in the response body.
 
 <!-- {
   "blockType": "response",
