@@ -86,7 +86,6 @@ The following is an example of the response.
 
 ```http
 HTTP/1.1 200 OK
-GET https://graph.microsoft.com/beta/me/profile/names/{id}
 Content-type: application/json
 
 {

@@ -11,7 +11,7 @@ doc_type: "resourcePageType"
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-The [positionDetail](positiondetail.md) resource type enables a user to store information about positions related to entities within their [profile].
+The [positionDetail](positiondetail.md) resource type enables a user to store information about positions related to entities within their [profile](profile.md).
 
 ## Properties
 
