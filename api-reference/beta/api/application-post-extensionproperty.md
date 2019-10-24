@@ -65,6 +65,7 @@ The following is an example of the request.
 ```http
 POST https://graph.microsoft.com/beta/applications/{id}/extensionProperties
 Content-type: application/json
+
 {
     "name": "extensionName",
     "dataType": "string",
@@ -87,6 +88,7 @@ If successful, this method returns `201 Created` response code and [extensionPro
 ```http
 HTTP/1.1 201 Created
 Content-type: application/json
+
 {
     "id": "a2c459db-f5dc-4328-ae9b-118e88d04d19",
     "deletedDateTime": null,
