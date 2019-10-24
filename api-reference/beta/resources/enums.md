@@ -910,7 +910,7 @@ Possible values for user account types (group membership), per Windows definitio
 |sendToDelegateAndPrincipal|
 |sendToDelegateOnly|
 
-### calendarRoleType
+### calendarRoleType values
 
 | Member       | Value       |
 |:--------------|:--------------|
