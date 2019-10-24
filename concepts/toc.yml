@@ -393,6 +393,8 @@ items:
             href: sdks/create-client.md
           - name: Choose an authentication provider
             href: sdks/choose-authentication-providers.md
+          - name: Create requests
+            href: sdks/create-requests.md
       - name: Use the toolkit
         items:
           - name: Toolkit overview
