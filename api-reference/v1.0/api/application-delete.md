@@ -1,6 +1,6 @@
 ---
 title: "Delete application"
-description: "Deletes an application."
+description: "Delete an application object."
 author: "davidmu1"
 localization_priority: Normal
 ms.prod: "microsoft-identity-platform"
@@ -9,7 +9,7 @@ doc_type: apiPageType
 
 # Delete application
 
-Deletes an application.
+Delete an [application](../resources/application.md) object.
 
 ## Permissions
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
@@ -36,7 +36,7 @@ Do not supply a request body for this method.
 
 ## Response
 
-If successful, this method returns `204 No Content` response code. It does not return anything in the response body.
+If successful, this method returns a `204 No Content` response code. It does not return anything in the response body.
 
 ## Example
 ##### Request
