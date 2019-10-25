@@ -3,6 +3,7 @@ title: "Onboarding to cross-device experiences for Microsoft Graph notifications
 description: "Register your application on the Windows Dev Center to enable your app clients to receive cross-device notifications sent through Microsoft Graph."
 localization_priority: Priority
 ms.prod: notifications"
+author: "merzink"
 ---
 
 # Onboarding to cross-device experiences for Microsoft Graph notifications
