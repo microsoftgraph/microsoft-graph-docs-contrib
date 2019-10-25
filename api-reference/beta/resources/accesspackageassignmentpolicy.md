@@ -39,7 +39,6 @@ To assign a user to an access package, [create an accessPackageAssignmentRequest
 |expirationDateTime|DateTimeOffset|The expiration date for assignments created in this policy. The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 would look like this: `'2014-01-01T00:00:00Z'`|
 |id|String| Read-only.|
 |isEnabled|Boolean|Can this policy be used for new requests.|
-|isRequestorJustificationRequired|Boolean|Is the requestor required to provide a justification.|
 |modifiedBy|String|Read-only.|
 |modifiedDateTime|DateTimeOffset|The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 would look like this: `'2014-01-01T00:00:00Z'`|
 
