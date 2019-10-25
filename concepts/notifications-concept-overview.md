@@ -1,6 +1,6 @@
 ---
 title: "Enabling human-centric notification experiences using Microsoft Graph notifications "
-description: "Notifications are one of the most effective ways to re-engage with users of your application. A great notification experience can help open a near real-time communication channel between you and your application users, that in turn can increase app engagement at the right time, assist users with being more productive and alert them of important events or timely actions that may be required. "
+description: "The Microsoft Graph notifications platform provides a human-centric approach that gives you the ability to target your users across any and all device endpoints."
 localization_priority: Priority
 ms.prod: "notifications"
 scenarios: "getting-started"
@@ -24,7 +24,7 @@ The Microsoft Graph notifications platform provides a user-centric notification 
 
 ### Effortlessly target your user for notification delivery across different endpoints
 
-You can use the notifications API to target a personal Microsoft account or a work or school Azure Active Directory (Azure AD) account to deliver notifications. The platform distributes this notification to all user endpoints running your application or service, including Windows UWP, iOS, Android and Web endpoints. This capability helps maximize outreach by ensuring appropriate notifications can reach your target, wherever they are.
+You can use the notifications API to target a personal Microsoft account or a work or school Azure Active Directory (Azure AD) account to deliver notifications. The platform distributes this notification to all user endpoints running your application or service, including Windows UWP, iOS, Android, and web endpoints. This capability helps maximize outreach by ensuring appropriate notifications can reach your target, wherever they are.
 
 ### Easily manage notifications across endpoints
 
@@ -45,3 +45,8 @@ Our push-to-pull model ensures that notifications never leave trusted boundaries
 ## How do I get started?
 
 To get started, see the [integration overview](notifications-integration-e2e-overview.md) section to learn how you can integrate user-centric notifications within your application.
+
+## API reference
+Looking for the API reference for this service?
+
+- [Use the notifications REST API in Microsoft Graph](/graph/api/resources/notifications-api-overview?view=graph-rest-beta)
