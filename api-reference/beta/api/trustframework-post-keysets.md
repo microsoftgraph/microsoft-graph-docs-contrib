@@ -83,7 +83,7 @@ The following example shows the response.
 ```http
 HTTP/1.1 201 Created
 Content-type: application/json
-Location : /trustFramework/keySets('B2C_1A_keyset1')
+Location: /trustFramework/keySets('B2C_1A_keyset1')
 
 {
   "id": "B2C_1A_keyset1",
