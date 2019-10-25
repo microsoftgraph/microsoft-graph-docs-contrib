@@ -1,5 +1,5 @@
 ---
-title: "Permanently delete item"
+title: "Permanently delete an item from deleted items"
 description: "Permanently deletes an item from deleted items."
 author: "davidmu1"
 localization_priority: Normal

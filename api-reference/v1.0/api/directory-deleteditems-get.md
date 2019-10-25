@@ -1,5 +1,5 @@
 ---
-title: "Get deleted item"
+title: "Retrieve the properties of a recently deleted item"
 description: "Retrieve the properties of a recently deleted item in deleted items."
 author: "davidmu1"
 localization_priority: Normal
