@@ -1,8 +1,8 @@
 ---
 title: "Create and send a notification"
-description: "Create and send a notification targeting a user through Microsoft Graph. The notification is stored in the Microsoft Graph notification feed store, and is sent to all app clients on all device endpoints that the user is signed in to.  "
+description: "Create and send a notification targeting a user through Microsoft Graph."
 localization_priority: Normal
-ms.prod: "project-rome"
+ms.prod: "notifications"
 doc_type: apiPageType
 author: "merzink"
 ---
@@ -44,7 +44,7 @@ In the request body, supply a JSON representation of a [notification](../resourc
 If successful, this method returns a `201 Created` response code that indicates that the notification was successfully created and stored. The notification will be subsequently fanned-out to all specified endpoints with a valid subscription. 
 
 ## Example
-#### Request
+### Request
 The following is an example of a request.
 
 ```http
@@ -74,7 +74,7 @@ Content-type: application/json
 }
 ```
 
-#### Response
+### Response
 The following is an example of the corresponding response.
 
 ```http
