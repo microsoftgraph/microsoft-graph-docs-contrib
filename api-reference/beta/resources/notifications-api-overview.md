@@ -2,7 +2,7 @@
 title: "Use the notifications REST API in Microsoft Graph"
 description: "You can use the notifications API in Microsoft Graph to send push notifications to a user. ."
 localization_priority: Priority
-ms.prod: "project-rome"
+ms.prod: "notifications"
 doc_type: conceptualPageType
 author: "merzink"
 ---
