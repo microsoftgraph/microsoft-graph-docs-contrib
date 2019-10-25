@@ -50,7 +50,7 @@
     },
     "fileMetadata": {
       "featureFlags": {
-        "tutorial/*.md": [
+        "**/*.yml": [
           "enable_tutorial_feedback"
         ]
       },
