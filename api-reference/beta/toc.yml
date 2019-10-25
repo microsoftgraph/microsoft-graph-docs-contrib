@@ -9084,9 +9084,10 @@
         items:
         - name: Get resource
           href: api/resource-get.md
-    - name: Notifications Overview
-      href: resources/notifications-api-overview.md
+    - name: Notifications
       items:
+      - name: Overview
+        href: resources/notifications-api-overview.md
       - name: Notification
         href: resources/projectrome-notification.md
         items:
