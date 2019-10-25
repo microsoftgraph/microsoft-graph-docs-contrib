@@ -14,13 +14,13 @@ Notifications are one of the most effective ways to reengage with your applicati
 
 Today, users can access your applications and services via a wide variety of platforms and form factors. This mix of devices requires that you understand and support multiplatform notification systems, map users to endpoints, and maintain notification state across devices. 
 
-Most other notification systems eliminate the need to understand and target platform-specific push notification systems, but are still  designed to target each device. Microsoft Graph notifications platform provides a human-centric approach that gives you the ability to target your users across any and all device endpoints.
+Most other notification systems eliminate the need to understand and target platform-specific push notification systems, but are still  designed to target each device. The Microsoft Graph notifications platform provides a human-centric approach that gives you the ability to target your users across any and all device endpoints.
 
 ![An image that shows an app service communicating with Microsoft Graph to send notifications to multiple endpoints](images/notifications-flow-overview.png)
 
 ## Why integrate with Microsoft Graph notifications?
 
-Microsoft Graph notifications platform provides a user-centric notification offering that brings five key benefits to your applications.
+The Microsoft Graph notifications platform provides a user-centric notification offering that brings five key benefits to your applications.
 
 ### Effortlessly target your user for notification delivery across different endpoints
 
