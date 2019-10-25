@@ -15,6 +15,25 @@ Threat intelligence (TI) indicators represent data used to identify malicious ac
 
 Threat indicators uploaded via **tiIndicators** will be used in conjunction with Microsoft threat intelligence to provide a customized security solution for your organization. When using the **tiIndicators** entity, you specify the Microsoft security solution you want to utilize the indicators for via the **targetProduct** property and you specify the action (allow, block, or alert) to which the security solution should apply the indicators via the **action** property.
 
+Current **targetProduct** support includes the following:
+
+- **Azure Sentinel** – supports all documented tiIndicators Methods listed in the section below. 
+- **Microsoft Defender ATP (Microsoft Defender Advanced Threat Protection)** – supports the following tiIndicators Methods out of the ones listed in the section below. Support for the bulk methods is coming soon.
+     - [Get tiIndicator](https://docs.microsoft.com/en-us/graph/api/tiindicator-get?view=graph-rest-beta&tabs=http)
+     - [Create tiIndicator](https://docs.microsoft.com/en-us/graph/api/tiindicators-post?view=graph-rest-beta&tabs=http)
+     - [List tiIndicators](https://docs.microsoft.com/en-us/graph/api/tiindicators-list?view=graph-rest-beta&tabs=http)
+     - [Update](https://docs.microsoft.com/en-us/graph/api/tiindicator-update?view=graph-rest-beta&tabs=http)
+     - [Delete](https://docs.microsoft.com/en-us/graph/api/tiindicator-delete?view=graph-rest-beta&tabs=http)
+  
+  > **Note**: The following indicator types are supported by Microsoft Defender ATP targetProduct:
+  > - Files
+  > - IP addresses: Microsoft Defender ATP supports destination IPv4/IPv6 only – set property in networkDestinationIPv4 or    networkDestinationIPv6 properties in Microsoft Graph Security API **tiIndicator**.
+  > - URLs/domains
+
+   There is a limit of 5000 indicators per tenant for Microsoft Defender ATP.
+   
+   Check the [Microsoft Defender ATP ‘Manage indicators’ documentation](https://docs.microsoft.com/en-us/windows/security/threat-protection/microsoft-defender-atp/manage-indicators) for further details on types of indicators supported and limits on indicator counts per tenant.
+
 ## Methods
 
 | Method       | Return Type | Description |
