@@ -56,7 +56,13 @@ You can integrate the [tiIndicator](tiindicator.md) entity into your application
 - [Palo Alto Networks MineMeld Threat Intelligence Sharing](https://www.paloaltonetworks.com/products/secure-the-network/subscriptions/minemeld)
 - [MISP Open Source Threat Intelligence Platform](http://www.misp-project.org/) available through the [TI sample](https://aka.ms/tipmispsample)
 
-Threat indicators sent via the Microsoft Graph Security API are available today in [Azure Sentinel](https://docs.microsoft.com/azure/sentinel/overview) (preview), enabling you to correlate threat indicators with log data to get alerts on malicious activity. Support in other Microsoft security services, in including Azure Firewall, will be available soon.
+Threat indicators sent via the Microsoft Graph Security API are available today in the following products:
+
+- [Azure Sentinel](https://docs.microsoft.com/en-us/azure/sentinel/overview): Enables you to correlate threat indicators with log data to get alerts on malicious activity.
+- [Microsoft Defender ATP(Microsoft Defender Advanced Threat Protection)](https://docs.microsoft.com/en-us/windows/security/threat-protection/microsoft-defender-atp/microsoft-defender-advanced-threat-protection): Enables you to alert and/or block on threat indicators associated with malicious activity. You can also allow an indicator for ignoring the indicator from automated investigations. Check the [Microsoft Defender ATP ‘Manage indicators’ documentation](https://docs.microsoft.com/en-us/windows/security/threat-protection/microsoft-defender-atp/manage-indicators) for details on types of indicators supported and limits on indicator counts per tenant.
+
+Support in other Microsoft security services, will be available soon.
+
 
 ## Security Actions (preview)
 
