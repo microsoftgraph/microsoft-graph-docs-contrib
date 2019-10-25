@@ -46,7 +46,7 @@ Add the following permissions:
 
 Learn more about [permissions and consent](https://docs.microsoft.com/en-us/azure/active-directory/develop/v2-permissions-and-consent) or see the Microsoft Graph [permissions reference](https://docs.microsoft.com/en-us/graph/permissions-reference).
 
-Now that you’ve registered your app, visit [Partner Center](https://partner.microsoft.com/) to set up your application and target your corresponding app platforms (Windows, iOS or Android) for notifications sent via Microsoft Graph. For details, see [Onboarding to cross-device experiences](notifications-integration-cross-device-experiences-onboarding.md). 
+Now that you’ve registered your app, visit [Partner Center](https://partner.microsoft.com/) to set up your application and target your corresponding app platforms (Windows, iOS, or Android) for notifications sent via Microsoft Graph. For details, see [Onboarding to cross-device experiences](notifications-integration-cross-device-experiences-onboarding.md). 
 
 >[!NOTE]
->If you're only targeting web endpoints, you can skip Partner Center registration and go to the next section to learn more about setting up your [App Service](notifications-integrating-app-server.md) to send notifications.
+>If you're only targeting web endpoints, you can skip Partner Center registration and learn how to set up your [app service](notifications-integrating-app-server.md) to send notifications.
