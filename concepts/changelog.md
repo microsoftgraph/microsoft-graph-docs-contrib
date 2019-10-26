@@ -13,7 +13,7 @@ For details about known issues with Microsoft Graph APIs, see [Known issues](kno
 
 ## October 2019
 
-### Identity and access (Azure AD) | Conditional Access
+### Identity and access (Azure AD) | Conditional access
 
 | **Change type** | **Version** | **Description**                  |
 |:----------------|:------------|:-----------------------------------------|
