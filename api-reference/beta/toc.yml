@@ -8865,7 +8865,6 @@
           href: api/trustframeworkkeyset-uploadpkcs12.md
         - name: Upload secret
           href: api/trustframeworkkeyset-uploadsecret.md
-
       - name: User flows
         href: resources/identityuserflow.md 
         items:
@@ -8877,7 +8876,7 @@
           href: api/identityuserflow-get.md
         - name: Delete
           href: api/identityuserflow-delete.md
-      - name: Mail
+    - name: Mail
       displayName: Outlook, Outlook mail
       items:
       - name: Overview
