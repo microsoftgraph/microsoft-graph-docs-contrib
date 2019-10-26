@@ -13,7 +13,7 @@ doc_type: apiPageType
 
 Create an online meeting on behalf of a user specified in the request body.
 
-> **Note**: The meeting does not show up on the user's calendar.
+> **Note**: The meeting does not show on the user's calendar.
 
 ## Permissions
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
@@ -51,7 +51,7 @@ If successful, this method returns a `201 Created` response code and an [onlineM
 
 #### Request
 
->**Note:** Online meeting creation using the application token will be deprecated. Use the /me path with a user token to create online meetings going forward.
+>**Note:** Online meeting creation using the application token is deprecated. Use the /me path with a user token to create online meetings going forward.
 
 # [HTTP](#tab/http)
 <!-- {
