@@ -62,7 +62,7 @@ Content-type: application/json
 
 {
   "userFlowType": "signUpOrSignIn",
-  "userFlowTypeVersion": 1.0
+  "userFlowTypeVersion": 1
 }
 ```
 
