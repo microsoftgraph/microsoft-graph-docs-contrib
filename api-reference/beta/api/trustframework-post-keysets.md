@@ -108,7 +108,7 @@ POST https://graph.microsoft.com/beta/trustFramework/keySets
 Content-type: application/json
 
 {
-  "id": "keyset1"
+  "id": "keyset1",
   "keys": [
     {
       "k": "k-value",
