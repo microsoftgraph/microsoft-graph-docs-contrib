@@ -8885,6 +8885,8 @@
       - name: Trust Framework Keyset
         href: resources/trustframeworkkeyset.md
         items:
+        - name: trustframework key
+          href: resources/trustframeworkkey.md
         - name: List
           href: api/trustframework-list-keysets.md
         - name: Create
