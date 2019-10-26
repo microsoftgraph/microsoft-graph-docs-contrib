@@ -1,6 +1,6 @@
 ---
 title: "List names"
-description: "Retrieve a list of personname objects from a user profile."
+description: "Retrieve a list of personname objects from a user's profile."
 localization_priority: Normal
 author: "kevinbellinger"
 ms.prod: "people"
