@@ -89,5 +89,8 @@ Content-type: application/json
   "description": "Get UserFlow",
   "keywords": "",
   "section": "documentation",
-  "tocPath": ""
+  "tocPath": "",
+   "suppressions": [
+    Error: get_identityuserflow/userFlowTypeVersion:\r\n      Expected type Single but actual was Int64. Property: userFlowTypeVersion, actual value: '1'
+  ]
 }-->
