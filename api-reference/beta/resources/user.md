@@ -52,7 +52,7 @@ This resource supports:
 |[List ownedDevices](../api/user-list-owneddevices.md) |[directoryObject](directoryobject.md) collection| Get the devices that are owned by the user from the ownedDevices navigation property.|
 |[List ownedObjects](../api/user-list-ownedobjects.md) |[directoryObject](directoryobject.md) collection| Get the directory objects that are owned by the user from the ownedObjects navigation property.|
 |[List plannerTasks](../api/planneruser-list-tasks.md) |[plannerTask](plannertask.md) collection| Get plannerTasks assigned to the user.|
-|[List profile](../api/profile-list.md) |[profile](profile.md) | Get user profile.|
+|[Get profile](../api/profile-get.md) |[profile](profile.md) | Get user profile.|
 |[List registeredDevices](../api/user-list-registereddevices.md) |[directoryObject](directoryobject.md) collection| Get the devices that are registered for the user from the registeredDevices navigation property.|
 |[List scoped-role memberships](../api/user-list-scopedrolememberof.md) |[scopedRoleMembership](scopedrolemembership.md) collection| Get the scoped-role administrative units memberships for this user.|
 |[List createdObjects](../api/user-list-createdobjects.md) |[directoryObject](directoryobject.md) collection| Get the directory objects created by the user from the createdObjects navigation property.|
