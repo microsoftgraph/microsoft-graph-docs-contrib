@@ -17,14 +17,16 @@ Represents a trust framework keyset/policy keys. The Identity Experience framewo
 
 | Method       | Return Type | Description |
 |:-------------|:------------|:------------|
+| [List](../api/trustframework-list-keyset.md) | [trustFrameworkKeySet](trustframeworkkeyset.md) Collection | List trustFrameworkKeySets. |
+| [Create](../api/trustframework-post-keyset.md) | [trustFrameworkKeySet](trustframeworkkeyset.md) | Create  trustFrameworkKeySet. |
 | [Get](../api/trustframeworkkeyset-get.md) | [trustFrameworkKeySet](trustframeworkkeyset.md) | Read properties and relationships of trustFrameworkKeySet object. |
 | [Update](../api/trustframeworkkeyset-update.md) | [trustFrameworkKeySet](trustframeworkkeyset.md) | Update trustFrameworkKeySet object. |
 | [Delete](../api/trustframeworkkeyset-delete.md) | None | Delete trustFrameworkKeySet object. |
-|[Generatekey](../api/trustframeworkkeyset-generatekey.md)|[trustFrameworkKey](trustframeworkkey.md)| Generate a key in keyset. |
-|[Getactivekey](../api/trustframeworkkeyset-getactivekey.md)|[trustFrameworkKey](trustframeworkkey.md)| Get currently active key in the keyset. |
-|[Uploadcertificate](../api/trustframeworkkeyset-uploadcertificate.md)|[trustFrameworkKey](trustframeworkkey.md)| Upload a X.509 certificate. |
-|[Uploadpkcs12](../api/trustframeworkkeyset-uploadpkcs12.md)|[trustFrameworkKey](trustframeworkkey.md)| Upload a PKCS12 format certificate. |
-|[Uploadsecret](../api/trustframeworkkeyset-uploadsecret.md)|[trustFrameworkKey](trustframeworkkey.md)| Upload a string based secret. |
+|[GenerateKey](../api/trustframeworkkeyset-generatekey.md)|[trustFrameworkKey](trustframeworkkey.md)| Generate a key in keyset. |
+|[GetActiveKey](../api/trustframeworkkeyset-getactivekey.md)|[trustFrameworkKey](trustframeworkkey.md)| Get currently active key in the keyset. |
+|[UploadCertificate](../api/trustframeworkkeyset-uploadcertificate.md)|[trustFrameworkKey](trustframeworkkey.md)| Upload a X.509 certificate. |
+|[UploadPkcs12](../api/trustframeworkkeyset-uploadpkcs12.md)|[trustFrameworkKey](trustframeworkkey.md)| Upload a PKCS12 format certificate. |
+|[UploadSecret](../api/trustframeworkkeyset-uploadsecret.md)|[trustFrameworkKey](trustframeworkkey.md)| Upload a string based secret. |
 
 ## Properties
 

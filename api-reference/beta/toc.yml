@@ -8901,7 +8901,7 @@
           href: api/trustframeworkkeyset-getactivekey.md
         - name: Upload certificate
           href: api/trustframeworkkeyset-uploadcertificate.md
-        - name: Upload private key
+        - name: Upload PKCS12 Certificate
           href: api/trustframeworkkeyset-uploadpkcs12.md
         - name: Upload secret
           href: api/trustframeworkkeyset-uploadsecret.md
