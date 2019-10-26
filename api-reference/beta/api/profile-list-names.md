@@ -2,7 +2,7 @@
 title: "List names"
 description: "Retrieve a list of personname objects from a user profile."
 localization_priority: Normal
-author: "kevinbellingerr"
+author: "kevinbellinger"
 ms.prod: "people"
 doc_type: "apiPageType"
 ---

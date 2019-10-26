@@ -90,7 +90,7 @@ For details about known issues with Microsoft Graph APIs, see [Known issues](kno
 |Deletion|beta|Removed the **error** member from the [runState](/graph/api/resources/intune-shared-runstate?view=graph-rest-beta) enum type|
 |Addition|beta|Added the **userExperienceAnalytics** member to the [windowsHealthMonitoringScope](/graph/api/resources/intune-deviceconfig-windowshealthmonitoringscope?view=graph-rest-beta) enum type|
 
-### Groups
+### Groups 
 
 | **Change type** | **Version**   | **Description**                          |
 | :-------------- | :------------ | :--------------------------------------- |
@@ -103,6 +103,13 @@ For details about known issues with Microsoft Graph APIs, see [Known issues](kno
 | :-------------- | :------------ | :--------------------------------------- |
 | Addition        | v1.0          | Added the **message** parameter to the method for [replying a message on the fly](/graph/api/message-reply?view=graph-rest-1.0). |
 
+### People
+| **Change type** | **Version** | **Description**                          |
+| :-------------- | :---------- | :--------------------------------------- |
+|Addition         |beta         | Added new entities:<br/>[userAccountInformation](/graph/api/resources/useraccountinformation.md?view=graph-rest-beta)<br/>[personAnniversary](/graph/api/resources/personanniversary.md?view=graph-rest-beta)<br/>[educationalActivity](/graph/api/resources/educationalactivity.md?view=graph-rest-beta)<br/>[itemEmail](/graph/api/resources/itememail.md?view=graph-rest-beta)<br/>[personInterest](/graph/api/resources/personinterest.md?view=graph-rest-beta)<br/>[languageProficiency](/graph/api/resources/languageproficiency.md?view=graph-rest-beta)<br/>[personWebsite](/graph/api/resources/personwebsite.md?view=graph-rest-beta)<br/>[itemPhone](/graph/api/resources/itemphone.md?view=graph-rest-beta)<br/>[workPosition](/graph/api/resources/workposition.md?view=graph-rest-beta)<br/>[projectParticipation](/graph/api/resources/projectparticipation.md?view=graph-rest-beta)<br/>[skillProficiency](/graph/api/resources/skillproficiency.md?view=graph-rest-beta)<br/>[webAccount](/graph/api/resources/webaccount.md?view=graph-rest-beta)<br/>[personWebsite](/graph/api/resources/personwebsite.md?view=graph-rest-beta)<br/>|
+|Addition|beta|Added new complex types:<br/><br/>|
+|Addition|beta|Added new enum types:<br/><br/>|
+
 ### Teamwork (Microsoft Teams)
 
 | **Change type** | **Version**   | **Description**                          |
@@ -114,6 +121,7 @@ For details about known issues with Microsoft Graph APIs, see [Known issues](kno
 | **Change type** | **Version** | **Description**                          |
 | :-------------- | :---------- | :--------------------------------------- |
 | Addition | beta | Added the [user: reprocessLicenseAssignment API](/graph/api/user-reprocesslicenseassignment?view=graph-rest-beta), which can be used to reprocess all group-based license assignments for the [user](/graph/api/resources/mailboxsettings?view=graph-rest-beta). |
+| Addition | beta | Added the [user: profile API](/graph/api/profile-list?view=graph-rest-beta) navigation property which can be used retrieve the [profile](/graph/api/resources/profile?view=graph-rest-beta) for a user. |
 
 ### Users | Outlook settings
 
