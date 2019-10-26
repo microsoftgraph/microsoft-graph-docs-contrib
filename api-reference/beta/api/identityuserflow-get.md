@@ -78,7 +78,7 @@ Content-type: application/json
 {
     "id": "B2C_1_Pol1",
     "userFlowType": "signUpOrSignIn",
-    "userFlowTypeVersion": 1.0
+    "userFlowTypeVersion": 1
 }
 ```
 
