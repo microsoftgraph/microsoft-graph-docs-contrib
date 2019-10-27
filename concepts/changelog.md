@@ -90,13 +90,7 @@ For details about known issues with Microsoft Graph APIs, see [Known issues](kno
 |Deletion|beta|Removed the **error** member from the [runState](/graph/api/resources/intune-shared-runstate?view=graph-rest-beta) enum type|
 |Addition|beta|Added the **userExperienceAnalytics** member to the [windowsHealthMonitoringScope](/graph/api/resources/intune-deviceconfig-windowshealthmonitoringscope?view=graph-rest-beta) enum type|
 
-### Education
-
-| **Change type** | **Version**   | **Description**                          |
-| :-------------- | :------------ | :--------------------------------------- |
-| Deletion | beta | Removed [previously announced](https://developer.microsoft.com/onenote/blogs/breaking-change-education-api-updates-in-microsoft-graph-beta) deprecated properties **grade** and **feedback** from [educationSubmission](/graph/api/resources/educationsubmission?view=graph-rest-beta). Access to grades and feedback is now available through [educationOutcome](/graph/api/educationsubmission-list-outcome?view=graph-rest-beta)|
-
-### Groups 
+### Groups
 
 | **Change type** | **Version**   | **Description**                          |
 | :-------------- | :------------ | :--------------------------------------- |
@@ -119,8 +113,7 @@ For details about known issues with Microsoft Graph APIs, see [Known issues](kno
 ### Users
 | **Change type** | **Version** | **Description**                          |
 | :-------------- | :---------- | :--------------------------------------- |
-| Addition | v1.0 | Added the new **lastPasswordChangeDateTime** property to the [user](/graph/api/resources/user?view=graph-rest-v1.0) resource. |
-| Addition | beta | Added the [user: reprocessLicenseAssignment API](/graph/api-reference/beta/api/user-reprocesslicense?view=graph-rest-beta), which can be used to reprocess all group-based license assignments for the [user](/graph/api/resources/user?view=graph-rest-beta). |
+| Addition | beta | Added the [user: reprocessLicenseAssignment API](/graph/api/user-reprocesslicenseassignment?view=graph-rest-beta), which can be used to reprocess all group-based license assignments for the [user](/graph/api/resources/mailboxsettings?view=graph-rest-beta). |
 | Addition | beta | Added the [user: profile API](/graph/api/profile-list?view=graph-rest-beta) navigation property which can be used retrieve the [profile](/graph/api/resources/profile?view=graph-rest-beta) for a user. |
 
 ### Users | Outlook settings
