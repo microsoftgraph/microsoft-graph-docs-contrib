@@ -17,8 +17,8 @@ Represents a trust framework keyset/policy keys. The Identity Experience framewo
 
 | Method       | Return Type | Description |
 |:-------------|:------------|:------------|
-| [List](../api/trustframework-list-keyset.md) | [trustFrameworkKeySet](trustframeworkkeyset.md) Collection | List trustFrameworkKeySets. |
-| [Create](../api/trustframework-post-keyset.md) | [trustFrameworkKeySet](trustframeworkkeyset.md) | Create  trustFrameworkKeySet. |
+| [List](../api/trustframework-list-keysets.md) | [trustFrameworkKeySet](trustframeworkkeyset.md) Collection | List trustFrameworkKeySets. |
+| [Create](../api/trustframework-post-keysets.md) | [trustFrameworkKeySet](trustframeworkkeyset.md) | Create  trustFrameworkKeySet. |
 | [Get](../api/trustframeworkkeyset-get.md) | [trustFrameworkKeySet](trustframeworkkeyset.md) | Read properties and relationships of trustFrameworkKeySet object. |
 | [Update](../api/trustframeworkkeyset-update.md) | [trustFrameworkKeySet](trustframeworkkeyset.md) | Update trustFrameworkKeySet object. |
 | [Delete](../api/trustframeworkkeyset-delete.md) | None | Delete trustFrameworkKeySet object. |
