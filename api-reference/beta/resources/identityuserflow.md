@@ -17,8 +17,8 @@ User Flows enable you to define predefined, configurable policies for sign in, s
 
 | Method       | Return Type | Description |
 |:-------------|:------------|:------------|
-| [List](../api/identityuserflow-list.md) | [UserFlow](identityuserflow.md) | List UserFlows. |
-| [Create](../api/identityuserflow-post-userflows.md) | None | Create UserFlow object. |
+| [List](../api/identityuserflow-list.md) | [UserFlow](identityuserflow.md) collection | List UserFlows. |
+| [Create](../api/identityuserflow-post-userflows.md) | [UserFlow](identityuserflow.md) | Create UserFlow object. |
 | [Get](../api/identityuserflow-get.md) | [UserFlow](identityuserflow.md) | Read properties and relationships of UserFlow object. |
 | [Delete](../api/identityuserflow-delete.md) | None | Delete UserFlow object. |
 

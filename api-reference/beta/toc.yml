@@ -8885,6 +8885,8 @@
       - name: Trust Framework Keyset
         href: resources/trustframeworkkeyset.md
         items:
+        - name: Trust framework key
+          href: resources/trustframeworkkey.md
         - name: List
           href: api/trustframework-list-keysets.md
         - name: Create
@@ -8901,7 +8903,7 @@
           href: api/trustframeworkkeyset-getactivekey.md
         - name: Upload certificate
           href: api/trustframeworkkeyset-uploadcertificate.md
-        - name: Upload private key
+        - name: Upload PKCS12 certificate
           href: api/trustframeworkkeyset-uploadpkcs12.md
         - name: Upload secret
           href: api/trustframeworkkeyset-uploadsecret.md
