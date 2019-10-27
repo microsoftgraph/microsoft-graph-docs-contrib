@@ -49,7 +49,7 @@ If successful, this method returns a `201 Created` response code, a location hea
 ## Examples
 
 ### Example 1: Create an empty keyset
-This is one of the most useful operations. We first create an empty keyset. Then in the new keyset, we can generate a key, upload a manual secret, upload a certificate or a PKCS12 key. 
+This is one of the most useful operations. First, you create an empty keyset. Then, in the new keyset, you can generate a key, upload a manual secret, and upload a certificate or a PKCS12 key. 
 
 #### Request
 
