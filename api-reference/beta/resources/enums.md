@@ -7,6 +7,14 @@ ms.prod: ""
 author: ""
 ---
 
+### attachmentType values
+
+| Member
+|:--------------
+| file
+| item
+| reference
+
 ### analyticsActivityType values
 
 | Member
@@ -888,10 +896,71 @@ Possible values for user account types (group membership), per Windows definitio
 
 ### entityType values
 
-| Member       | Value       |
-|:--------------|:--------------|
+| Member       | 
+|:--------------|
 |event|
 |message|
 |driveItem|
 |externalFile|
 |externalItem|
+
+### conditionalAccessPolicyState
+
+|Member|
+|:---|
+|enabled|
+|disabled|
+
+### conditionalAccessClientApp
+
+| Member       |
+|:--------------|
+|browser|
+|modern|
+|easSupported|
+|easUnsupported|
+|other|
+
+### conditionalAccessGrantControl
+
+| Member       |
+|:--------------|
+|block|
+|mfa|
+|compliantDevice|
+|domainJoinedDevice|
+|approvedApplication|
+|compliantApplication|
+
+### cloudAppSecuritySessionControlType
+
+| Member       |
+|:--------------|
+|mcasConfigured|
+|monitorOnly|
+|blockDownloads|
+
+### signinFrequencyType
+
+| Member       |
+|:--------------|
+|days|
+|hours|
+
+### persistentBrowserSessionMode
+
+| Member       |
+|:--------------|
+|always|
+|never|
+
+### conditionalAccessDevicePlatform
+
+| Member       |
+|:--------------|
+|android|
+|iOS|
+|windows|
+|windowsPhone|
+|macOS|
+|all
