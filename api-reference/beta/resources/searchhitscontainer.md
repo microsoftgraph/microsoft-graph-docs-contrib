@@ -2,7 +2,7 @@
 title: "searchHitsContainer resource type"
 description: "PROVIDE DESCRIPTION HERE"
 localization_priority: Normal
-author: ""
+author: "nmoreau"
 ms.prod: ""
 doc_type: "resourcePageType"
 ---
