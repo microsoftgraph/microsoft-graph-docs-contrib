@@ -11,7 +11,7 @@ doc_type: "resourcePageType"
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-In [Azure AD Entitlement Management](entitlementmanagement-root.md), an access package catalog is a container for zero or more access packages.  An access package catalog might also have linked resources that are used in those access packages to provide access.
+In [Azure AD entitlement management](entitlementmanagement-root.md), an access package catalog is a container for zero or more access packages.  An access package catalog might also have linked resources that are used in those access packages to provide access.
 
 
 ## Methods

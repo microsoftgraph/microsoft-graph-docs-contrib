@@ -19,7 +19,7 @@ One of the following permissions is required to call this API. To learn more, in
 
 | Permission type                        | Permissions (from least to most privileged) |
 |:---------------------------------------|:--------------------------------------------|
-| Delegated (work or school account)     |  `EntitlementManagement.ReadWrite.All`. |
+| Delegated (work or school account)     |  EntitlementManagement.ReadWrite.All |
 | Delegated (personal Microsoft account) | Not supported. |
 | Application                            | Not supported. |
 
@@ -39,7 +39,7 @@ This method supports some of the OData query parameters to help customize the re
 
 | Name      |Description|
 |:----------|:----------|
-| Authorization | Bearer {token} |
+| Authorization | Bearer \{token\}. Required. |
 
 ## Request body
 
@@ -83,12 +83,12 @@ Content-type: application/json
 {
   "value": [
     {
-      "id": "id-value",
-      "displayName": "displayName-value",
-      "description": "description-value",
-      "url": "url-value",
-      "resourceType": "resourceType-value",
-      "originId": "originId-value"
+      "id": "400279ff-8e85-4dcf-b1d6-d3a6be372951",
+      "displayName": "Faculty cafeteria ordering",
+      "description": "Example application",
+      "url": "https://myapps.microsoft.com/example.com/signin/Faculty%20cafeteria%20ordering/f1e3b407-942d-4934-9a3f-cef1975cb988/",
+      "resourceType": "Application",
+      "originId": "2f1099a6-d4fc-4cc9-a0ef-ddd3f1bf0b7e"
     }
   ]
 }

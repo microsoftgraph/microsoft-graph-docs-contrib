@@ -1,6 +1,6 @@
 ---
 title: "Create accessPackageCatalog"
-description: "Use this API to create a new accessPackageCatalog."
+description: "Create a new accessPackageCatalog."
 localization_priority: Normal
 author: "markwahl-msft"
 ms.prod: "microsoft-identity-platform"
@@ -11,7 +11,7 @@ doc_type: "apiPageType"
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Use this API to create a new [accessPackageCatalog](../resources/accesspackagecatalog.md) object.
+Create a new [accessPackageCatalog](../resources/accesspackagecatalog.md) object.
 
 ## Permissions
 
@@ -19,7 +19,7 @@ One of the following permissions is required to call this API. To learn more, in
 
 | Permission type                        | Permissions (from least to most privileged) |
 |:---------------------------------------|:--------------------------------------------|
-| Delegated (work or school account)     | `EntitlementManagement.ReadWrite.All`. |
+| Delegated (work or school account)     | EntitlementManagement.ReadWrite.All |
 | Delegated (personal Microsoft account) | Not supported. |
 | Application                            | Not supported. |
 
@@ -35,7 +35,8 @@ POST /identityGovernance/entitlementManagement/accessPackageCatalogs
 
 | Name          | Description   |
 |:--------------|:--------------|
-| Authorization | Bearer {token} |
+| Authorization | Bearer \{token\}. Required. |
+| Content-Type  | application/json  |
 
 ## Request body
 
@@ -60,8 +61,8 @@ POST https://graph.microsoft.com/beta/identityGovernance/entitlementManagement/a
 Content-type: application/json
 
 {
-  "displayName": "displayName-value",
-  "description": "description-value",
+  "displayName": "sales",
+  "description": "for employees working with sales and outside sales partners",
   "isExternallyVisible": true
 }
 ```
@@ -83,9 +84,9 @@ HTTP/1.1 201 Created
 Content-type: application/json
 
 {
-  "id": "id-value",
-  "displayName": "displayName-value",
-  "description": "description-value",
+  "id": "cc30dc98-6d3c-4fa0-bed8-fd76d0efd993",
+  "displayName": "sales",
+  "description": "for employees working with sales and outside sales partners",
   "catalogType": "UserManaged",
   "catalogStatus": "Published",
   "isExternallyVisible": true

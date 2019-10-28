@@ -1,6 +1,6 @@
 ---
 title: "Create accessPackage"
-description: "Use this API to create a new accessPackage."
+description: "Create a new accessPackage."
 localization_priority: Normal
 author: "markwahl-msft"
 ms.prod: "microsoft-identity-platform"
@@ -11,7 +11,7 @@ doc_type: "apiPageType"
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Use this API to create a new [accessPackage](../resources/accesspackage.md) object.
+Create a new [accessPackage](../resources/accesspackage.md) object.
 
 ## Permissions
 
@@ -19,7 +19,7 @@ One of the following permissions is required to call this API. To learn more, in
 
 | Permission type                        | Permissions (from least to most privileged) |
 |:---------------------------------------|:--------------------------------------------|
-| Delegated (work or school account)     | `EntitlementManagement.ReadWrite.All`. |
+| Delegated (work or school account)     | EntitlementManagement.ReadWrite.All |
 | Delegated (personal Microsoft account) | Not supported. |
 | Application                            | Not supported. |
 
@@ -35,7 +35,8 @@ POST /identityGovernance/entitlementManagement/accessPackages
 
 | Name          | Description   |
 |:--------------|:--------------|
-| Authorization | Bearer {token} |
+| Authorization | Bearer \{token\}. Required. |
+| Content-Type  | application/json  |
 
 ## Request body
 
@@ -43,7 +44,7 @@ In the request body, supply a JSON representation of [accessPackage](../resource
 
 ## Response
 
-If successful, this method returns `201, Created` response code and a new [accessPackage](../resources/accesspackage.md) object in the response body.
+If successful, this method returns a 201 Created response code and a new [accessPackage](../resources/accesspackage.md) object in the response body.
 
 ## Examples
 
@@ -61,8 +62,8 @@ Content-type: application/json
 
 {
   "catalogId": "aa2f6514-3232-46e7-a08a-2411ad8d7128",
-  "displayName": "displayName-value",
-  "description": "description-value"
+  "displayName": "sales reps",
+  "description": "outside sales representatives"
 }
 ```
 
@@ -83,10 +84,10 @@ HTTP/1.1 201 Created
 Content-type: application/json
 
 {
-  "id": "id-value",
+  "id": "56ff43fd-6b05-48df-9634-956a777fce6d",
   "catalogId": "aa2f6514-3232-46e7-a08a-2411ad8d7128",
-  "displayName": "displayName-value",
-  "description": "description-value",
+  "displayName": "sales reps",
+  "description": "outside sales representatives",
   "isHidden": false,
   "isRoleScopesVisible": false
 }

@@ -1,6 +1,6 @@
 ---
 title: "accessPackageResourceScope resource type"
-description: "In Azure AD Entitlement Management, an access package resource scope is a reference to a scope within a resource."
+description: "In Azure AD entitlement management, an access package resource scope is a reference to a scope within a resource."
 localization_priority: Normal
 author: "markwahl-msft"
 ms.prod: "microsoft-identity-platform"
@@ -11,7 +11,7 @@ doc_type: "resourcePageType"
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-In [Azure AD Entitlement Management](entitlementmanagement-root.md), an access package resource scope is a reference to a scope within a resource, for those resources that have multiple scopes.
+In [Azure AD entitlement management](entitlementmanagement-root.md), an access package resource scope is a reference to a scope within a resource, for those resources that have multiple scopes.
 
 ## Properties
 

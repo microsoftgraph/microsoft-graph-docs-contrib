@@ -11,7 +11,7 @@ doc_type: "apiPageType"
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-In [Azure AD entitlement management](../resources/entitlementmanagement-root.md), retrieve a list of [accessPackageAssignmentRequest](../resources/accesspackageassignmentrequest.md) objects.  The resulting list includes all the assignment requests, current and well as expired, which the caller has access to read, across all catalogs and access packages.
+In [Azure AD entitlement management](../resources/entitlementmanagement-root.md), retrieve a list of [accessPackageAssignmentRequest](../resources/accesspackageassignmentrequest.md) objects.  The resulting list includes all the assignment requests, current and well as expired, that the caller has access to read, across all catalogs and access packages.
 
 ## Permissions
 
@@ -19,7 +19,7 @@ One of the following permissions is required to call this API. To learn more, in
 
 | Permission type                        | Permissions (from least to most privileged) |
 |:---------------------------------------|:--------------------------------------------|
-| Delegated (work or school account)     | `EntitlementManagement.ReadWrite.All`. |
+| Delegated (work or school account)     | EntitlementManagement.ReadWrite.All |
 | Delegated (personal Microsoft account) | Not supported. |
 | Application                            | Not supported. |
 
@@ -39,7 +39,7 @@ This method supports some of the OData query parameters to help customize the re
 
 | Name      |Description|
 |:----------|:----------|
-| Authorization | Bearer {token} |
+| Authorization | Bearer \{token\}. Required. |
 
 ## Request body
 
@@ -83,12 +83,12 @@ Content-type: application/json
 {
   "value": [
     {
-      "id": "id-value",
-      "requestType": "requestType-value",
-      "requestState": "requestState-value",
-      "requestStatus": "requestStatus-value",
-      "isValidationOnly": true,
-      "createdDateTime": "datetime-value"
+      "id": "433dafca-5047-4614-95f7-a03510b1ded3",
+      "requestType": "AdminAdd",
+      "requestState": "Delivered",
+      "requestStatus": "Fulfilled",
+      "isValidationOnly": false,
+      "createdDateTime": "2019-10-25T22:55:11.623Z"
     }
   ]
 }
