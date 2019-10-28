@@ -45,7 +45,7 @@ In the request body, supply the values for relevant fields that should be update
 |:-----------------------|:--------------------------------------------------|:--|
 | address                | [physicalAddress](physicaladdress.md)             | The street address of the room. |
 | audioDeviceName        | String                                            | Specifies the name of the audio device in the room. |
-| bookingType            | [bookingType](#bookingtype-values)                | Type of room. Possible values are `Standard` and `Reserved`. |
+| bookingType            | [bookingType](room.md)                            | Type of room. Possible values are `Standard` and `Reserved`. |
 | building               | String                                            | Specifies the building name or building number that the room is in. |
 | capacity               | String                                            | Specifies the capacity of the room. |
 | displayDeviceName      | String                                            | Specifies the name of the display device in the room. |
@@ -57,13 +57,6 @@ In the request body, supply the values for relevant fields that should be update
 | phone                  | String                                            | The phone number of the room. |
 | tags                   | String collection                                 | Specifies additional features of the room, for example, details like the type of view or furniture type. |
 | videoDeviceName        | String                                            | Specifies the name of the video device in the room. |
-
-### bookingType values
-
-| Value    | Description                                               |
-|:---------|:----------------------------------------------------------|
-| Standard | The room can be reserved based on the other settings in this cmdlet. This is the default value. |                        |
-| Reserved | The room is available only on a first come, first served basis. It cannot be reserved.|
 
 ## Response
 
