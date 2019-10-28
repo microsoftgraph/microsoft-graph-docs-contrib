@@ -7,7 +7,7 @@ author: "nmoreau"
 scenarios: "getting-started"
 ---
 
-# Microsoft Search query API overview (preview)
+# Microsoft Search query API overview (preview) 
 
 Microsoft Search has introduced new organizational search experiences into the applications customers use every day.
 The vision is to harness the collective knowledge of your organization in Search and surface relevant content to keep end users up to date and leverage the work of others.  Search is available in the different experiences such as in Office, SharePoint, Delve, Windows and Bing.
@@ -37,15 +37,16 @@ You can use data sets listed in the following table.
 |Outlook|[Messages](/graph/api/resources/message?view=graph-rest-1.0)<br/>[Events](graph/api/resources/event?view=graph-rest-1.0)<br/>|
 |Sharepoint |[Files](/graph/api/resources/driveitem?view=graph-rest-1.0)|
 |OneDrive Business |[Files](/graph/api/resources/driveitem?view=graph-rest-1.0)|
-|Connectors |User defined types [externalItems](./search-concept-custom-types.md)|
-|Connectors |Well known types [externalFiles](./search-concept-custom-types.md) |
+|Connectors |User defined types [externalItems](/graph/api/resources/driveitem?view=graph-rest-1.0) <!--todo nmoreau fix the link to Connectors page-->|
+|Connectors |Well known types [externalFiles](/graph/api/resources/driveitem?view=graph-rest-1.0) <!--todo nmoreau fix the link to Connectors page-->|
 
 ## API reference
 
 Looking for the API reference for this service?
 
-- [Microsoft Search query API in Microsoft Graph Beta](/graph/api/resources/search-api-overview?view=graph-rest-beta)
-- [Microsoft Search indexing API in Microsoft Graph Beta](/graph/api/resources/search-api-overview?view=graph-rest-beta) 
+- [Microsoft Search query API in Microsoft Graph Beta](/graph/api/resources/search-api-overview)
+- [Microsoft Search indexing API in Microsoft Graph Beta](/graph/api/resources/search-api-overview) 
+<!--TODO nmoreau Fix the link to indexing API--->
 
 ## Next steps
 
