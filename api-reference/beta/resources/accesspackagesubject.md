@@ -1,6 +1,6 @@
 ---
 title: "accessPackageSubject resource type"
-description: "In Azure AD entitlement management, a subject of an access package assignment"
+description: "In Azure AD entitlement management, a subject of an access package assignment."
 localization_priority: Normal
 author: "markwahl-msft"
 ms.prod: "microsoft-identity-platform"
@@ -11,7 +11,7 @@ doc_type: "resourcePageType"
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-In [Azure AD Entitlement Management](entitlementmanagement-root.md), an access package subject is a user, service principal or other entity that could be configured to request or be assigned an access package.
+In [Azure AD Entitlement Management](entitlementmanagement-root.md), an access package subject is a user, service principal, or other entity that can be configured to request or be assigned an access package.
 
 ## Properties
 
@@ -26,7 +26,7 @@ In [Azure AD Entitlement Management](entitlementmanagement-root.md), an access p
 
 ## Relationships
 
-None
+None.
 
 ## JSON representation
 
