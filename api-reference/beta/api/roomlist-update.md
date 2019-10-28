@@ -73,7 +73,7 @@ Content-length: 285
 {
   "@odata.type": "microsoft.graph.roomlist"
   "building": "Building 1",
-  "phone":"1234567899"
+  "phone":"555-555-0100"
 }
 ```
 
@@ -107,7 +107,7 @@ Content-type: application/json
     "countryOrRegion": "USA"
   },
   "geocoordinates": null,
-  "phone": 1234567899,
+  "phone": 555-555-0100,
   "emailAddress": "bldg1@contoso.com"
 }
 ```
