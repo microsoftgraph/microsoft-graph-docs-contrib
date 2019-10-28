@@ -17,8 +17,8 @@ A resource representing a [MakeCode](https://www.microsoft.com/en-us/makecode) p
 
 | Property     | Type        | Description |
 |:-------------|:------------|:------------|
-|mkcd|String|ID of the MakeCode project|
-|url|String|Host for the type of MakeCode resource (for example, arcade, microbit)|
+|projectId|String|ID of the MakeCode project|
+|hostWebUrl|String|Host for the type of MakeCode resource (for example, arcade, microbit)|
 
 ## JSON representation
 
@@ -35,8 +35,8 @@ The following is a JSON representation of the resource.
 
 ```json
 {
-  "mkcd": "String",
-  "url": "String"
+  "projectId": "String",
+  "hostWebUrl": "String"
 }
 ```
 

@@ -142,10 +142,10 @@ Authorization: Bearer AAD_TOKEN
 
 - You can only access user’s own mailbox. Searching delegated mailbox is not supported 
 
-- For Messages, Total in the [searchHitsContainer](../api-reference/beta/resources/searchhitscontainer.md) contains the number of result in the Page, not the number of matching results
+- For Messages, Total in the [searchHitsContainer](/graph/api/resources/searchhitscontainer?view=graph-rest-beta) contains the number of result in the Page, not the number of matching results
 
 ## Next steps
 
 Find out more about:
 
-- The Microsoft Search [Query API](../api-reference/beta/api/search-query.md)
+- The Microsoft Search [Query API](/graph/api/search-query?view=graph-rest-beta)

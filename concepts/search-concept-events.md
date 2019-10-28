@@ -47,4 +47,4 @@ Response
 
 Find out more about:
 
-- The Microsoft Search [Query API](../api-reference/beta/api/search-query.md)
+- The Microsoft Search [Query API](/graph/api/resources/search-query?view=graph-rest-beta)

@@ -19,17 +19,16 @@ The Search query API provides a method (/query) to search across your data in Mi
 
 Search requests are executed on behalf of user. Search results are trimmed down to enforce any ACL applied to the items.  
 
-<!---TODO nmoreauteam Fix the links below to the See also + to the /search/query-->
 
 | Use Cases | <p align="center">Rest resource and action</p>| <p align="center">See also</p>|
 |:------------------|:---------|:-----------|
-|[Search for a specific entityType](#Entity-scoping)| <p align="center">/search/query </p> | <p align="center">EntityTypes</p> |
-|[Page results](#Paging) | <p align="center">/search/query</p> | <p align="center">From and Size</p> |
-|[Get the most relevant emails](#Most-relevant-emails) | <p align="center">/search/query</p> | <p align="center">EnableTopResults</p> |
-|[Retrieve selected properties](#Stored_Fields) | <p align="center">/search/query</p> | <p align="center">stored_fieds</p> | <p align="center">  </p> |
-|[Use KQL in query terms](#Keyword-Query-Language-(KQL)-support)| <p align="center">/search/query</p> | <p align="center">searchQueryString</p> |
-|[Search external Files](https://fixme.org)| <p align="center">/search/query</p> | <p align="center">EntityTypes</p> | <!---TODO nmoreauteam Fix the links to the sample page --->
-|[Search within a specific contentSource (Indexing API)](https://fixme.org)| <p align="center">/search/query</p> | <p align="center">contentSources</p> | <!---TODO nmoreauteam Fix the links to the sample page --->
+|[Search for a specific entityType](#entity-scoping)| <p align="center">/search/query </p> | <p align="center">EntityTypes</p> |
+|[Page results](#paging) | <p align="center">/search/query</p> | <p align="center">From and Size</p> |
+|[Get the most relevant emails](#most-relevant-emails) | <p align="center">/search/query</p> | <p align="center">EnableTopResults</p> |
+|[Retrieve selected properties](#stored_fields) | <p align="center">/search/query</p> | <p align="center">stored_fieds</p> | <p align="center">  </p> |
+|[Use KQL in query terms](#keyword-query-language-kql-support) | <p align="center">/search/query</p> | <p align="center">searchQueryString</p> |
+|[Search external Files](/graph/search-concept-files)| <p align="center">/search/query</p> | <p align="center">EntityTypes</p> | 
+|[Search within a specific contentSource (Indexing API)](/graph/search-concept-custom-types)| <p align="center">/search/query</p> | <p align="center">contentSources</p> |
 
 ### Entity scoping
 
@@ -96,14 +95,12 @@ Microsoft Search returns error responses as defined by [OData error object defin
 
 The query API has the following limitations during the preview
 
-- The service support sending only a single searchRequest eventhough the API support passing a collection of searchRequest
-<!--todo nmoreauteam Fix the link to searchRequest--->
+- The service support sending only a single [searchRequest](./searchrequest.md) eventhough the API support passing a collection of searchRequest
 
-- A given searchRequest supports passing multiple entityTypes. Currently the only supported combination is driveItem and externalFiles. Other combinations are invalid. 
-<!--todo nmoreauteam Fix the link to searchRequest--->
+- A given [searchRequest](./searchrequest.md) supports passing multiple entityTypes. Currently the only supported combination is driveItem and externalFiles. Other combinations are invalid. 
 
 - ContentSource is currently only applicable when entityType = ExternalItem to define the connection to use. 
-<!--todo nmoreauteam Fix the link to ContentSource--->
+<!--todo nmoreauteam Fix the link to ContentSource  pls provide the content source url--->
 
 - Sorting : the API currently does not expose different ways to sort results.  
 

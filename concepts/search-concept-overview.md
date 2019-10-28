@@ -51,12 +51,12 @@ Looking for the API reference for this service?
 ## Next steps
 
 - Explore the APIs in the [Graph Explorer](https://developer.microsoft.com/graph/graph-explorer).
-- Learn more about a few key use cases <!--- TODO nmoreauteam: Fix the links.--->
-  - Search for Outlook Messages
-  - Search for Calendar Events
-  - Search for Files
-  - Search for Connectors User defined types
-  - Search for Connectors Well known types (files)
+- Learn more about a few key use cases 
+  - [Search for Outlook Messages](./search-concept-messages.md)
+  - [Search for Calendar Events](./search-concept-events.md)
+  - [Search for Files](./search-concept-files.md)
+  - [Search for Connectors User defined types](./search-concept-custom-types.md)
+  - [Search for Connectors Well known types (files)](./search-concept-custom-types.md)
 
 ## See also
 

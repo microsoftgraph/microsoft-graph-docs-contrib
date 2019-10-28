@@ -176,7 +176,7 @@ Results are sorted by relevance.
 
 You can search all files in the tenant, including driveItem and all external files by specifying two entityTypes in the request.
 
-The response will provide a blend of driveItem and externalItems in the _sources field of each [searchHit](../api-reference/beta/resources/searchhit.md).
+The response will provide a blend of driveItem and externalItems in the _sources field of each [searchHit](/graph/api/resources/searchhit?view=graph-rest-beta).
 
 
 Request  
@@ -217,4 +217,4 @@ Results are sorted by relevance.
 
 Find out more about:
 
-- The Microsoft Search [Query API](../api-reference/beta/api/search-query.md)
+- The Microsoft Search [Query API](/graph/api/search-query?view=graph-rest-beta)
