@@ -1,6 +1,6 @@
 ---
 title: "accessPackageResourceRoleScope resource type"
-description: "an access package resource role scope is a reference to both a scope within a resource, and a role in that resource"
+description: "An access package resource role scope is a reference to both a scope within a resource, and a role in that resource."
 localization_priority: Normal
 author: "markwahl-msft"
 ms.prod: "microsoft-identity-platform"
