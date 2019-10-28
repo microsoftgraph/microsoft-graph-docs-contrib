@@ -17,9 +17,9 @@ In [Azure AD Entitlement Management](entitlementmanagement-root.md), an access p
 
 | Method       | Return Type | Description |
 |:-------------|:------------|:------------|
-| [List accessPackageAssignments](../api/accesspackageassignment-list.md) | [accessPackageAssignment](accesspackageassignment.md) collection | Retrieve a list of accesspackageassignment objects. |
+| [List accessPackageAssignments](../api/accesspackageassignment-list.md) | [accessPackageAssignment](accesspackageassignment.md) collection | Retrieve a list of **accesspackageassignment** objects. |
 
-There is no method to create an access package assignment.  Instead, a client that wishes to request an access package assignment for a user can [create an accessPackageAssignmentRequest](../api/accesspackageassignmentrequest-post.md).
+You can't use a method to create an access package assignment. Instead, a client that wants to request an access package assignment for a user can [create an accessPackageAssignmentRequest](../api/accesspackageassignmentrequest-post.md).
 
 ## Properties
 
@@ -32,8 +32,8 @@ There is no method to create an access package assignment.  Instead, a client th
 |catalogId|String|The identifier of the catalog containing the access package. Read-only.|
 |expiredDateTime|DateTimeOffset|The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 would look like this: `'2014-01-01T00:00:00Z'`|
 |id|String| Read-only.|
-|isExtended|Boolean|Whether the access package assignment is extended. Read-only.|
-|targetId|String| The id of the subject with the assignment. Read-only.|
+|isExtended|Boolean|Indicates whether the access package assignment is extended. Read-only.|
+|targetId|String| The ID of the subject with the assignment. Read-only.|
 
 ## Relationships
 
