@@ -1,10 +1,10 @@
 ---
 title: "Create and send a notification"
-description: "Create and send a notification targeting a user through Microsoft Graph. The notification is stored in the Microsoft Graph notification feed store, and is sent to all app clients on all device endpoints that the user is signed in to.  "
+description: "Create and send a notification targeting a user through Microsoft Graph."
 localization_priority: Normal
-ms.prod: "project-rome"
+ms.prod: "notifications"
 doc_type: apiPageType
-author: ""
+author: "merzink"
 ---
 
 # Create and send a notification
@@ -13,14 +13,15 @@ author: ""
 Create and send a notification targeting a user through Microsoft Graph. The notification is stored in the Microsoft Graph notification feed store, and is sent to all app clients on all device endpoints that the user is signed in to.  
 
 ## Permissions
-If you're using the new, lightweight [notification SDK](http://aka.ms/GNSDK), your application service does not require any additional permissions to post notifications to your targeted user.  
+Your application service does not require any additional permissions to post notifications to your targeted user.  
 
-However, if your client apps are leveraging the cross-device [Project Rome SDK APIs](https://github.com/microsoft/project-rome), then notifications must be posted on behalf of a user via delegated permissions. In this case, one of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
+> [!NOTE]
+> If you choose to post notifications on behalf of a user via delegated permissions instead, one of the following permissions is required to call this API. We don't recommend this option for posting notifications but if you'd like to learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
 
-|Permission type      | Permissions (from least to most privileged)              |
-|:--------------------|:---------------------------------------------------------|
-|Delegated (work or school account) | Notifications.ReadWrite.CreatedByApp    |
-|Delegated (personal Microsoft account) | Notifications.ReadWrite.CreatedByApp    |
+> |Permission type      | Permissions (from least to most privileged)              |
+> |:--------------------|:---------------------------------------------------------|
+> |Delegated (work or school account) | Notifications.ReadWrite.CreatedByApp    |
+> |Delegated (personal Microsoft account) | Notifications.ReadWrite.CreatedByApp    |
 
 
 ## HTTP request
@@ -34,7 +35,7 @@ POST /me/notifications/
 |Name | Type | Description|
 |:----|:-----|:-----------|
 |Authorization | string |The authorization header is used to pass the credentials of the calling party. Bearer {token}. Required. |
-|X-UNS-ID | string |The UserNotificationSubscriptionId that is returned by the client after creating a subscription and is used to target the specific user. Required. |
+|X-UNS-ID | string |The UserNotificationSubscriptionId that is returned by the Microsoft Graph notification service after creating a subscription and is used to target the specific user. Required. |
 
 ## Request body
 In the request body, supply a JSON representation of a [notification](../resources/projectrome-notification.md) object.
@@ -43,12 +44,13 @@ In the request body, supply a JSON representation of a [notification](../resourc
 If successful, this method returns a `201 Created` response code that indicates that the notification was successfully created and stored. The notification will be subsequently fanned-out to all specified endpoints with a valid subscription. 
 
 ## Example
-#### Request
+### Request
 The following is an example of a request.
 
 ```http
 POST https://graph.microsoft.com/beta/me/notifications/
 Content-type: application/json
+
 {
     "targetHostName": "graphnotifications.sample.windows.com",
     "appNotificationId": "testDirectToastNotification",
@@ -72,7 +74,7 @@ Content-type: application/json
 }
 ```
 
-#### Response
+### Response
 The following is an example of the corresponding response.
 
 ```http
