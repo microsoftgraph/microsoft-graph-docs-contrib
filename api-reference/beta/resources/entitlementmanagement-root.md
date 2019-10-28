@@ -1,6 +1,6 @@
 ---
 title: "Entitlement management"
-description: "Govern access to resources including groups, apps and sites through Azure AD Identity Governance entitlement management"
+description: "Govern access to resources including groups, apps and sites through Azure AD entitlement management"
 localization_priority: Normal
 author: "markwahl-msft"
 ms.prod: "microsoft-identity-platform"
@@ -53,7 +53,7 @@ The following table lists the methods that you can use to interact with entitlem
 
 ## See also
 
- - [What is Azure AD entitlement management?](https://docs.microsoft.com/en-us/azure/active-directory/governance/entitlement-management-overview)
+ - [What is Azure AD entitlement management?](https://docs.microsoft.com/azure/active-directory/governance/entitlement-management-overview)
 
 
 
