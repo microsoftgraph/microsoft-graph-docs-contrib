@@ -71,6 +71,7 @@ Content-type: application/json
 Content-length: 285
 
 {
+  "@odata.type": "microsoft.graph.roomlist"
   "building": "Building 1",
   "phone":"1234567899"
 }
