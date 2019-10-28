@@ -122,7 +122,7 @@ Content-type: application/json
       "latitude": 47.640568390488626,
       "longitude": -122.1293731033803
     },
-    "phone": "000-000-0000",
+    "phone": "555-555-0100",
     "nickname": "Conf Room",
     "label": "100",
     "capacity": "50",
