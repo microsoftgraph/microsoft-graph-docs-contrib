@@ -1,5 +1,5 @@
 ---
-title: "Entitlement management"
+title: "Working with the Azure AD entitlement management API"
 description: "Govern access to resources including groups, apps and sites through Azure AD entitlement management"
 localization_priority: Normal
 author: "markwahl-msft"
@@ -7,24 +7,24 @@ ms.prod: "microsoft-identity-platform"
 doc_type: "resourcePageType"
 ---
 
-# Azure AD Entitlement Management
+# Working with the Azure AD entitlement management API
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Azure Active Directory (Azure AD) entitlement management can help you manage access to groups, applications, and SharePoint Online sites for internal users and also users outside your organization.
+Azure Active Directory (Azure AD) entitlement management can help you manage access to groups, applications, and SharePoint Online sites for internal users as well as users outside your organization.
 
 By creating access packages with the roles users need to have across those resources, and defining policies for who can request an access package and how long they can have an assignment to an access package, you can govern the lifecycle of access for both internal and external users.
 
 The entitlement management resource types include:
 
-- [accessPackage](accesspackage.md): an access package defines the collections of resource roles and the policies for how one or more users may obtain access to those resources.
-- [accessPackageAssignmentPolicy](accesspackageassignmentpolicy.md): an access package assignment policy specifies the policy by which subjects may request or be assigned an access package via an access package assignment.
-- [accessPackageAssignmentRequest](accesspackageassignmentrequest.md): an access package assignment request is created by a user who wishes to obtain an access package assignment.
-- [accessPackageAssignment](accesspackageassignment.md): an access package assignment is an assignment of an access package to a particular subject, for a period of time.
-- [accessPackageAssignmentResourceRole](accesspackageassignmentresourcerole.md): an access package assignment resource role indicates the resource-specific role which a subject has been assigned through an access package assignment.
-- [accessPackageCatalog](accesspackagecatalog.md): an access package catalog is a container for access packages.
+- [accessPackage](accesspackage.md): Defines the collections of resource roles and the policies for how one or more users may obtain access to those resources.
+- [accessPackageAssignmentPolicy](accesspackageassignmentpolicy.md): Specifies the policy by which subjects may request or be assigned an access package via an access package assignment.
+- [accessPackageAssignmentRequest](accesspackageassignmentrequest.md): Created by a user who wishes to obtain an access package assignment.
+- [accessPackageAssignment](accesspackageassignment.md): An assignment of an access package to a particular subject, for a period of time.
+- [accessPackageAssignmentResourceRole](accesspackageassignmentresourcerole.md): Indicates the resource-specific role which a subject has been assigned through an access package assignment.
+- [accessPackageCatalog](accesspackagecatalog.md): A container for access packages.
 
-Note that the entitlement management feature, including the API, is included in Azure AD Premium P2.  The tenant where entitlement management is being used must have a valid purchased or trial Azure AD Premium P2 or EMS E5 subscription.
+Note that the entitlement management feature, including the API, is included in Azure AD Premium P2. The tenant where entitlement management is being used must have a valid purchased or trial Azure AD Premium P2 or EMS E5 subscription.
 
 ## Methods
 
@@ -32,22 +32,24 @@ The following table lists the methods that you can use to interact with entitlem
 
 | Method		   | Return type	|Description|
 |:---------------|:--------|:----------|
-| [Get accessPackage](../api/accesspackage-get.md) | [accessPackage](accesspackage.md) | Read properties and relationships of an accessPackage object. |
 | [List accessPackages](../api/accesspackage-list.md) | [accessPackage](accesspackage.md) collection | Retrieve a list of accesspackage objects. |
 | [Create accessPackage](../api/accesspackage-post.md) | [accessPackage](accesspackage.md) | Create a new accessPackage object. |
+| [Get accessPackage](../api/accesspackage-get.md) | [accessPackage](accesspackage.md) | Read properties and relationships of an accessPackage object. |
 | [Delete accessPackage](../api/accesspackage-delete.md) | | Delete accessPackage. |
-| [Get accessPackageAssignmentPolicy](../api/accesspackageassignmentpolicy-get.md) | [accessPackageAssignmentPolicy](accesspackageassignmentpolicy.md) | Read properties and relationships of an accessPackageAssignmentPolicy object. |
 | [List accessPackageAssignmentPolicies](../api/accesspackageassignmentpolicy-list.md) | [accessPackageAssignmentPolicy](accesspackageassignmentpolicy.md) collection | Retrieve a list of accessPackageAssignmentPolicy objects. |
-| [Create accessPackageAssignmentPolicy](../api/accesspackageassignmentpolicy-post.md) | [accessPackageAssignmentPolicy](accesspackageassignmentpolicy.md) | Create a new accessPackageAssignmentPolicy object. |
+| [Create accessPackageAssignmentPolicy](../api/accesspackageassignmentpolicy-post.md) | [accessPackageAssignmentPolicy]
+| [Get accessPackageAssignmentPolicy](../api/accesspackageassignmentpolicy-get.md) | [accessPackageAssignmentPolicy](accesspackageassignmentpolicy.md) | Read properties and relationships of an accessPackageAssignmentPolicy object. |
+(accesspackageassignmentpolicy.md) | Create a new accessPackageAssignmentPolicy object. |
 | [Delete accessPackageAssignmentPolicy](../api/accesspackageassignmentpolicy-delete.md) | | Delete an accessPackageAssignmentPolicy. |
-| [Get accessPackageAssignmentRequest](../api/accesspackageassignmentrequest-get.md) | [accessPackageAssignmentRequest](accesspackageassignmentrequest.md) | Read properties and relationships of an accessPackageAssignmentRequest object. |
 | [List accessPackageAssignmentRequests](../api/accesspackageassignmentrequest-list.md) | [accessPackageAssignmentRequest](accesspackageassignmentrequest.md) collection | Retrieve a list of accesspackageassignmentrequest objects. |
-| [Create accessPackageAssignmentRequest](../api/accesspackageassignmentrequest-post.md) | [accessPackageAssignmentRequest](accesspackageassignmentrequest.md) | Create a new accessPackageAssignmentRequest. |
+| [Create accessPackageAssignmentRequest](../api/accesspackageassignmentrequest-post.md) | [accessPackageAssignmentRequest]
+| [Get accessPackageAssignmentRequest](../api/accesspackageassignmentrequest-get.md) | [accessPackageAssignmentRequest](accesspackageassignmentrequest.md) | Read properties and relationships of an accessPackageAssignmentRequest object. |
+(accesspackageassignmentrequest.md) | Create a new accessPackageAssignmentRequest. |
 | [List accessPackageAssignments](../api/accesspackageassignment-list.md) | [accessPackageAssignment](accesspackageassignment.md) collection | Retrieve a list of accessPackageAssignment objects. |
 | [List accessPackageAssignmentResourceRoles](../api/accesspackageassignmentresourcerole-list.md) | [accessPackageAssignmentResourceRole](accesspackageassignmentresourcerole.md) collection | Retrieve a list of accessPackageAssignmentResourceRole objects. |
-| [Get accessPackageCatalog](../api/accesspackagecatalog-get.md) | [accessPackageCatalog](accesspackagecatalog.md) | Read properties and relationships of an accessPackageCatalog object. |
 | [List accessPackageCatalogs](../api/accesspackagecatalog-list.md) | [accessPackageCatalog](accesspackagecatalog.md) collection | Retrieve a list of accesspackagecatalog objects. |
 | [Create accessPackageCatalog](../api/accesspackagecatalog-post.md) | [accessPackageCatalog](accesspackagecatalog.md) | Create a new accessPackageCatalog object. |
+| [Get accessPackageCatalog](../api/accesspackagecatalog-get.md) | [accessPackageCatalog](accesspackagecatalog.md) | Read properties and relationships of an accessPackageCatalog object. |
 | [Delete accessPackageCatalog](../api/accesspackagecatalog-delete.md) | | Delete accessPackageCatalog. |
 | [List accessPackageCatalog resources](../api/accesspackagecatalog-list-accesspackageresources.md) | [accessPackageResource](accesspackageresource.md) collection | Retrieve a list of accessPackageResource objects. |
 
