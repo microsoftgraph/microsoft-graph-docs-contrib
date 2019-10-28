@@ -39,7 +39,7 @@ POST /identityGovernance/entitlementManagement/accessPackageCatalogs
 
 ## Request body
 
-In the request body, supply a JSON representation of [accessPackageCatalog](../resources/accesspackagecatalog.md) object.  Include the `displayname`, `description` and `isExternallyVisible` properties.
+In the request body, supply a JSON representation of an [accessPackageCatalog](../resources/accesspackagecatalog.md) object.  Include the **displayname**, **description**, and **isExternallyVisible** properties.
 
 ## Response
 
