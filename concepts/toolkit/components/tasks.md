@@ -28,6 +28,7 @@ The Tasks component enables the user to view, add, remove, complete, or edit tas
 | initialBucketId | initial-bucket-id="bucket_id" | A string id to set the initially displayed bucket (Planner Data-Source Only) to the provided ID. |
 | targetId | target-id="planner_id/folder_id" | A string id to lock the tasks interface to the provided planner or folder ID. |
 | targetBucketId | target-bucket-id="bucket_id" | A string ID to lock the tasks interface to the provided bucket ID (Planner Data-Source Only). |
+| groupId | group-id | A string ID to lock the tasks interface to the group ID (Planner Data-Source Only). |
 
 The following is an example.
 
@@ -100,6 +101,7 @@ This control uses the following Microsoft Graph APIs and permissions.
 | /me/outlook/taskGroups | Tasks.Read |
 | /me/outlook/taskFolders | Tasks.Read, Tasks.ReadWrite |
 | /me/outlook/tasks | Tasks.ReadWrite |
+| /groups/${group-id}/planner/plans | Group.Read.All, Group.ReadWrite.All |
 
 For the Microsoft Planner data source, fetching and reading tasks requires the Groups.Read.All permission. Adding, updating, or removing tasks requires the Groups.ReadWrite.All permission.
 
