@@ -1,6 +1,6 @@
 ---
 title: "accessPackageAssignmentRequest resource type"
-description: "An access package assignment request is created by a user who wishes to obtain an access package assignment."
+description: "An access package assignment request is created by a user who wants to obtain an access package assignment."
 localization_priority: Normal
 author: "markwahl-msft"
 ms.prod: "microsoft-identity-platform"
@@ -11,16 +11,16 @@ doc_type: "resourcePageType"
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-In [Azure AD Entitlement Management](entitlementmanagement-root.md), an access package assignment request is created by a user who wishes to obtain an access package assignment.  If the request is successful, with any necessary approvals, the user receives an access package assignment, and is the subject of that resulting access package assignment.
+In [Azure AD Entitlement Management](entitlementmanagement-root.md), an access package assignment request is created by a user who wants to obtain an access package assignment. If the request is successful, with any necessary approvals, the user receives an access package assignment, and is the subject of that resulting access package assignment.
 
 
 ## Methods
 
 | Method       | Return Type | Description |
 |:-------------|:------------|:------------|
-| [Get accessPackageAssignmentRequest](../api/accesspackageassignmentrequest-get.md) | [accessPackageAssignmentRequest](accesspackageassignmentrequest.md) | Read properties and relationships of an accessPackageAssignmentRequest object. |
 | [List accessPackageAssignmentRequests](../api/accesspackageassignmentrequest-list.md) | [accessPackageAssignmentRequest](accesspackageassignmentrequest.md) collection | Retrieve a list of accesspackageassignmentrequest objects. |
 | [Create accessPackageAssignmentRequest](../api/accesspackageassignmentrequest-post.md) | [accessPackageAssignmentRequest](accesspackageassignmentrequest.md) | Create a new accessPackageAssignmentRequest. |
+| [Get accessPackageAssignmentRequest](../api/accesspackageassignmentrequest-get.md) | [accessPackageAssignmentRequest](accesspackageassignmentrequest.md) | Read properties and relationships of an accessPackageAssignmentRequest object. |
 
 ## Properties
 
