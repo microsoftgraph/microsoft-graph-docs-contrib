@@ -72,7 +72,7 @@ Content-length: 285
 
 {
   "@odata.type": "microsoft.graph.roomlist"
-  "building": "Building 1",
+  "displayName": "Building 1",
   "phone":"555-555-0100"
 }
 ```
