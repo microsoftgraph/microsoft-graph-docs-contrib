@@ -21,7 +21,7 @@ One of the following permissions is required to call this API. To learn more, in
 |:---------------------------------------|:--------------------------------------------|
 | Delegated (work or school account)     | Place.ReadWrite.All. |
 | Delegated (personal Microsoft account) | Not supported. |
-| Application                            | Place.ReadWrite.All. |
+| Application                            | Not supported. |
 
 ## HTTP request
 
@@ -66,7 +66,7 @@ The following is an example of the request.
   "name": "update_roomlist"
 }-->
 ```http
-PATCH https://graph.microsoft.com/beta/places/{id}
+PATCH https://graph.microsoft.com/beta/places/Building1RroomList@contoso.onmicrosoft.com
 Content-type: application/json
 Content-length: 285
 
