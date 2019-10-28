@@ -28,7 +28,7 @@ Search requests are executed on behalf of user. Search results are trimmed down 
 |[Get selected properties](#get-selected-properties) | **stored_fields** |
 |[Use KQL in query terms](#keyword-query-language-kql-support) | **query** |
 |[Search external Files](/graph/search-concept-files)| **entityTypes** | 
-|[Search within a specific contentSource (Indexing API)](/graph/search-concept-custom-types)| **contentSources** |
+|[Search within a specific contentSource (indexing API)](/graph/search-concept-custom-types)| **contentSources** |
 
 ### Scope search based on entity types
 
@@ -53,8 +53,8 @@ Note the following limits if you're searching the **event** or **message** entit
 
 - **from** must start at zero in the first page request, otherwise the request results in HTTP 400 `Bad request`.
 - The maximum results per page (**size**) is 200.
-- The maximum number of items that can be returned by paginating is 1000.
-- Going beyond the limits returns best effort response. The request does not result in HTTP 400.
+- The maximum total number of items that can be returned by paginating is 1000.
+- Going beyond the limits returns a best effort response. The request does not result in HTTP 400.
 
 Best practices:
 
