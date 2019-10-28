@@ -19,7 +19,7 @@ In [Azure AD Entitlement Management](entitlementmanagement-root.md), an access p
 |:-------------|:------------|:------------|
 | [List accessPackageAssignments](../api/accesspackageassignment-list.md) | [accessPackageAssignment](accesspackageassignment.md) collection | Retrieve a list of **accesspackageassignment** objects. |
 
-You can't use a method to create an access package assignment. Instead, a client that wants to request an access package assignment for a user can [create an accessPackageAssignmentRequest](../api/accesspackageassignmentrequest-post.md).
+>**Note:** You can't use a method to create an access package assignment. Instead, a client that wants to request an access package assignment for a user can [create an accessPackageAssignmentRequest](../api/accesspackageassignmentrequest-post.md).
 
 ## Properties
 
