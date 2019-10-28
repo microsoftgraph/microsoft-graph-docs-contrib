@@ -1,6 +1,6 @@
 ---
 title: "accessPackage resource type"
-description: "An access package defines the collections of resource roles and the policies for how one or more users may obtain access to those resources."
+description: "An access package defines the collections of resource roles and the policies for how one or more users can get access to those resources."
 localization_priority: Normal
 author: "markwahl-msft"
 ms.prod: "microsoft-identity-platform"
@@ -11,19 +11,19 @@ doc_type: "resourcePageType"
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-In [Azure AD Entitlement Management](entitlementmanagement-root.md), an access package defines the collections of resource roles and the policies for how one or more users may obtain access to those resources.  
-Each access package is referenced by a single access package catalog, and has links to the resources from that catalog via the resource-specific role scopes which define the access the package provides.  An access package also links to the access package assignment policies, each of which define who can request or be assigned an access package assignment.
+In [Azure AD Entitlement Management](entitlementmanagement-root.md), an access package defines the collections of resource roles and the policies for how one or more users can get access to those resources.  
+Each access package is referenced by a single access package catalog, and has links to the resources from that catalog via the resource-specific role scopes that define the access the package provides.  An access package also links to the access package assignment policies, each of which define who can request or be assigned an access package assignment.
 
-To assign a user to an access package, [create an accessPackageAssignmentRequest](../api/accesspackageassignmentrequest-post.md) which references the access package and access package assignment policy.
+To assign a user to an access package, [create an accessPackageAssignmentRequest](../api/accesspackageassignmentrequest-post.md) that references the access package and access package assignment policy.
 
 ## Methods
 
 | Method       | Return Type | Description |
 |:-------------|:------------|:------------|
-| [Get accessPackage](../api/accesspackage-get.md) | [accessPackage](accesspackage.md) | Read properties and relationships of an accessPackage object. |
-| [List accessPackages](../api/accesspackage-list.md) | [accessPackage](accesspackage.md) collection | Retrieve a list of accesspackage objects. |
-| [Create accessPackage](../api/accesspackage-post.md) | [accessPackage](accesspackage.md) | Create a new accessPackage object. |
-| [Delete accessPackage](../api/accesspackage-delete.md) | | Delete accessPackage. |
+| [List accessPackages](../api/accesspackage-list.md) | [accessPackage](accesspackage.md) collection | Retrieve a list of **accesspackage** objects. |
+| [Create accessPackage](../api/accesspackage-post.md) | [accessPackage](accesspackage.md) | Create a new **accesspackage** object. |
+| [Get accessPackage](../api/accesspackage-get.md) | [accessPackage](accesspackage.md) | Read properties and relationships of an **accesspackage** object. |
+| [Delete accessPackage](../api/accesspackage-delete.md) | | Delete an **accesspackage**. |
 
 ## Properties
 
@@ -36,7 +36,7 @@ To assign a user to an access package, [create an accessPackageAssignmentRequest
 |displayName|String|The display name of the access package.|
 |id|String| Read-only.|
 |isHidden|Boolean|Whether the access package is hidden from the requestor.|
-|isRoleScopesVisible|Boolean|Whether role scopes are visible.|
+|isRoleScopesVisible|Boolean|Indicates whether role scopes are visible.|
 |modifiedBy|String|The UPN of the user who last modified this resource. Read-only.|
 |modifiedDateTime|DateTimeOffset|The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 would look like this: `'2014-01-01T00:00:00Z'`. Read-only. |
 
