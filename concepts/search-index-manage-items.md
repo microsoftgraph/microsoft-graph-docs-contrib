@@ -60,7 +60,7 @@ DELETE /external/connections/contosohelpdesk/items/SR00145
 
 - [Why integrate with Microsoft Search indexing](search-index-overview.md)
 - [Using the indexing API](/graph/api/resources/indexing-api-overview?view=graph-rest-beta)
-- [Search for externalItems](TBD)
-- [Search for externalFiles](TBD)
+- [Search for externalItems](search-concept-custom-types.md)
+- [Search for externalFiles](search-concept-files.md)
 - Download the indexing API Postman collection to try out the API.
 - Download the indexing API sample from GitHub.
