@@ -7710,8 +7710,6 @@
           href: api/educationsubmission-list-outcomes.md
         - name: Get submitted resource
           href: api/educationsubmittedsubmissionresource-get.md
-        - name: Grade submission
-          href: api/educationsubmission-update.md
         - name: Return submission
           href: api/educationsubmission-return.md
       - name: Outcome
@@ -8248,11 +8246,11 @@
           href: api/certificatebasedauthconfiguration-post-certificatebasedauthconfiguration.md
         - name: Delete
           href: api/certificatebasedauthconfiguration-delete.md
-      - name: Conditional Access
+      - name: Conditional access
         items:
         - name: Policies
           items:
-          - name: Conditional Access policy
+          - name: Conditional access policy
             href: resources/conditionalaccesspolicy.md
           - name: List
             href: api/conditionalaccessroot-list-policies.md
@@ -8264,15 +8262,6 @@
             href: api/conditionalaccesspolicy-update.md
           - name: Delete
             href: api/conditionalaccesspolicy-delete.md
-      - name: Contracts
-        href: resources/contract.md
-        items:
-        - name: Get contract
-          href: api/contract-get.md
-        - name: List contracts
-          href: api/contract-list.md
-      - name: Conditional Access
-        items:
         - name: Named locations
           items:
           - name: Named location
@@ -8313,6 +8302,13 @@
               href: api/ipnamedlocation-update.md
             - name: Delete
               href: api/ipnamedlocation-delete.md
+      - name: Contracts
+        href: resources/contract.md
+        items:
+        - name: Get contract
+          href: api/contract-get.md
+        - name: List contracts
+          href: api/contract-list.md        
       - name: Data policy operation
         href: resources/datapolicyoperation.md
         items:
@@ -8886,6 +8882,42 @@
           href: api/trustframework-put-trustframeworkpolicy.md
         - name: Delete
           href: api/trustframeworkpolicy-delete.md
+      - name: Trust Framework Keyset
+        href: resources/trustframeworkkeyset.md
+        items:
+        - name: Trust framework key
+          href: resources/trustframeworkkey.md
+        - name: List
+          href: api/trustframework-list-keysets.md
+        - name: Create
+          href: api/trustframework-post-keysets.md
+        - name: Get
+          href: api/trustframeworkkeyset-get.md
+        - name: Update
+          href: api/trustframeworkkeyset-update.md
+        - name: Delete
+          href: api/trustframeworkkeyset-delete.md
+        - name: Generate key
+          href: api/trustframeworkkeyset-generatekey.md
+        - name: Get active key
+          href: api/trustframeworkkeyset-getactivekey.md
+        - name: Upload certificate
+          href: api/trustframeworkkeyset-uploadcertificate.md
+        - name: Upload PKCS12 certificate
+          href: api/trustframeworkkeyset-uploadpkcs12.md
+        - name: Upload secret
+          href: api/trustframeworkkeyset-uploadsecret.md
+      - name: User flows
+        href: resources/identityuserflow.md 
+        items:
+        - name: List
+          href: api/identityuserflow-list.md
+        - name: Create
+          href: api/identityuserflow-post-userflows.md
+        - name: Get
+          href: api/identityuserflow-get.md
+        - name: Delete
+          href: api/identityuserflow-delete.md
     - name: Mail
       displayName: Outlook, Outlook mail
       items:

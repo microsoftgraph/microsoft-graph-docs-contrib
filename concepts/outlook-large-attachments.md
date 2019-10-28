@@ -184,11 +184,16 @@ Content-Length: 0
 
 ## Step 4 (optional): Get the file attachment from the message
 
-As always, regardless of the attachment size, the sender or recipients of the message can [use the GET operation to get attachments](/graph/api/attachment-get?view=graph-rest-beta), including the attachment metadata or raw contents.
+As always, [getting an attachment](/graph/api/attachment-get?view=graph-rest-beta) from a message is not technically limited by attachment size. 
+
+However, getting a large file attachment in base64-encoded format affects API performance. If you expect a large attachment:
+ 
+- As an alternative to getting the attachment content in base64 format, you can [get the raw data of the file attachment](/graph/api/attachment-get#example-5-get-the-raw-contents-of-a-file-attachment-on-a-message?view=graph-rest-1.0).
+- To [get the metadata of the file attachment](/graph/api/attachment-get?view=graph-rest-beta#example-1-get-the-properties-of-a-file-attachment), append a `$select` parameter to include only those metadata properties you want, excluding the **contentBytes** property which returns the file attachment in base64 format.
 
 ### Example request: get the file attachment metadata
 
-The following example shows the sender getting the metadata of the file attachment on the message.
+The following example shows the sender using a `$select` parameter to get all the metadata of a file attachment on a message, except **contentBytes**.
 
 <!-- {
   "blockType": "request",
@@ -196,7 +201,7 @@ The following example shows the sender getting the metadata of the file attachme
   "sampleKeys": ["a8e8e219-4931-95c1-b73d-62626fd79c32@72aa88bf-76f0-494f-91ab-2d7cd730db47", "AAMkADI5MAAIT3drCAAA=", "AAMkADI5MAAIT3drCAAABEgAQANAqbAe7qaROhYdTnUQwXm0="]
 }-->
 ```http
-GET https://graph.microsoft.com/api/beta/Users('a8e8e219-4931-95c1-b73d-62626fd79c32@72aa88bf-76f0-494f-91ab-2d7cd730db47')/Messages('AAMkADI5MAAIT3drCAAA=')/Attachments('AAMkADI5MAAIT3drCAAABEgAQANAqbAe7qaROhYdTnUQwXm0=')
+GET https://graph.microsoft.com/api/v1.0/Users('a8e8e219-4931-95c1-b73d-62626fd79c32@72aa88bf-76f0-494f-91ab-2d7cd730db47')/Messages('AAMkADI5MAAIT3drCAAA=')/Attachments('AAMkADI5MAAIT3drCAAABEgAQANAqbAe7qaROhYdTnUQwXm0=')?$select=lastModifiedDateTime,name,contentType,size,isInline,contentId,contentLocation
 ```
 
 ### Example response
@@ -212,7 +217,7 @@ HTTP/1.1 200 OK
 Content-type: application/json
 
 {
-    "@odata.context": "https://graph.microsoft.com/beta/$metadata#users('a8e8e219-4931-95c1-b73d-62626fd79c32%4072aa88bf-76f0-494f-91ab-2d7cd730db47')/messages('AAMkADI5MAAIT3drCAAA%3D')/attachments/$entity",
+    "@odata.context": "https://graph.microsoft.com/v1.0/$metadata#users('a8e8e219-4931-95c1-b73d-62626fd79c32%4072aa88bf-76f0-494f-91ab-2d7cd730db47')/messages('AAMkADI5MAAIT3drCAAA%3D')/attachments/$entity",
     "@odata.type": "#microsoft.graph.fileAttachment",
     "@odata.mediaContentType": "image/jpeg",
     "id": "AAMkADI5MAAIT3drCAAABEgAQANAqbAe7qaROhYdTnUQwXm0=",
@@ -222,8 +227,7 @@ Content-type: application/json
     "size": 3640066,
     "isInline": false,
     "contentId": null,
-    "contentLocation": null,
-    "contentBytes": "{bytes of entire attachment}"
+    "contentLocation": null
 }
 ```
 
