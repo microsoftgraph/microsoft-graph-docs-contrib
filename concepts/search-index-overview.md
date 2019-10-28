@@ -27,7 +27,7 @@ Microsoft Search by default includes files inside the Microsoft 365 ecosystem, i
 
 Looking for the API reference for this service?
 
-- [Search indexing API in Microsoft Graph beta](/graph/api/resources/indexing-api-overview?view=graph-rest-beta)
+- [Search indexing API (preview)](/graph/api/resources/indexing-api-overview?view=graph-rest-beta)
 
 ## Next steps
 
