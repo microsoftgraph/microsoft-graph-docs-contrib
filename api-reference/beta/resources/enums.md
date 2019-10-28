@@ -890,8 +890,8 @@ Possible values for user account types (group membership), per Windows definitio
 
 | Member       | Value       |
 |:--------------|:--------------|
-|event|0|
-|message|1|
-|driveItem|2|
-|externalFile|3|
-|externalItem|4|
+|event|
+|message|
+|driveItem|
+|externalFile|
+|externalItem|
