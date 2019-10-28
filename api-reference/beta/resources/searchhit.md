@@ -19,7 +19,7 @@ Represent a single result within the list of search results.
 |_score|Int32|The score or the order of the result|
 |_sortField|String|The sort order used. It can be DateTime or Relevance|
 |_summary|String|A summary of the result (if summary is available)|
-|_source|Object|The underlying Graph representation of the search result|
+|_source|[entity](entity.md)|The underlying Graph representation of the search result|
 
 ## JSON representation
 
@@ -39,7 +39,8 @@ The following is a JSON representation of the resource.
   "_id": "String",
   "_score": 1024,
   "_sortField": "String",
-  "_summary": "String"
+  "_summary": "String",
+  "_source": { "@odata.type": "microsoft.graph.entity" }
 }
 ```
 
