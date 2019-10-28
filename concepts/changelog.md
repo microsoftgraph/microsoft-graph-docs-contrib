@@ -159,6 +159,8 @@ Meeting organizers can allow meeting time proposals, and invitees can suggest al
 | :-------------- | :---------- | :--------------------------------------- |
 | Addition | v1.0 | Added the new **lastPasswordChangeDateTime** property to the [user](/graph/api/resources/user?view=graph-rest-v1.0) resource. |
 | Addition | beta | Added the [user: reprocessLicenseAssignment API](/graph/api-reference/beta/api/user-reprocesslicense?view=graph-rest-beta), which can be used to reprocess all group-based license assignments for the [user](/graph/api/resources/user?view=graph-rest-beta). |
+| Addition | beta | Added the [user: profile API](/graph/api/profile-list?view=graph-rest-beta) navigation property which can be used retrieve the [profile](/graph/api/resources/profile?view=graph-rest-beta) for a user. |
+
 
 ### Users | Outlook settings
 
@@ -171,6 +173,14 @@ Meeting organizers can allow meeting time proposals, and invitees can suggest al
 | **Change type** | **Version** | **Description**                  |
 |:----------------|:------------|:-----------------------------------------|
 | Addition | beta | Added the [namedLocation API](/graph/api/resources/namedLocation?view=graph-rest-beta), which represents named locations in Azure AD Conditional Access. |
+
+### People
+
+| **Change type** | **Version** | **Description**                          |
+| :-------------- | :---------- | :--------------------------------------- |
+|Addition         |beta         | Added new entities:<br/>[userAccountInformation](/graph/api/resources/useraccountinformation.md?view=graph-rest-beta)<br/>[personAnniversary](/graph/api/resources/personanniversary.md?view=graph-rest-beta)<br/>[educationalActivity](/graph/api/resources/educationalactivity.md?view=graph-rest-beta)<br/>[itemEmail](/graph/api/resources/itememail.md?view=graph-rest-beta)<br/>[personInterest](/graph/api/resources/personinterest.md?view=graph-rest-beta)<br/>[languageProficiency](/graph/api/resources/languageproficiency.md?view=graph-rest-beta)<br/>[personWebsite](/graph/api/resources/personwebsite.md?view=graph-rest-beta)<br/>[itemPhone](/graph/api/resources/itemphone.md?view=graph-rest-beta)<br/>[workPosition](/graph/api/resources/workposition.md?view=graph-rest-beta)<br/>[projectParticipation](/graph/api/resources/projectparticipation.md?view=graph-rest-beta)<br/>[skillProficiency](/graph/api/resources/skillproficiency.md?view=graph-rest-beta)<br/>[webAccount](/graph/api/resources/webaccount.md?view=graph-rest-beta)<br/>[personWebsite](/graph/api/resources/personwebsite.md?view=graph-rest-beta)<br/>|
+|Addition|beta|Added new complex types:<br/><br/>|
+|Addition|beta|Added new enum types:<br/><br/>|
 
 ## September 2019
 
