@@ -28,7 +28,8 @@ The following is a JSON representation of the resource.
 <!-- {
   "blockType": "resource",
   "optionalProperties": [
-
+    "endpointType",
+    "replacesCallId"
   ],
   "@odata.type": "microsoft.graph.invitationParticipantInfo"
 }-->
