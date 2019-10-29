@@ -1,6 +1,6 @@
 ---
 title: "List phones"
-description: "Retrieve a list of itemphone objects."
+description: "Retrieve a list of itemPhone objects."
 localization_priority: Normal
 author: "kevinbellinger"
 ms.prod: "people"
@@ -11,7 +11,7 @@ doc_type: "apiPageType"
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Retrieve a list of [itemphone](../resources/itemphone.md) objects from the user's [profile](../resources/profile.md).
+Retrieve a list of [itemPhone](../resources/itemphone.md) objects from the user's [profile](../resources/profile.md).
 
 ## Permissions
 
@@ -48,7 +48,6 @@ This method supports the following OData query parameters to help customize the 
 | Name           |Description                  |
 |:---------------|:----------------------------|
 | Authorization  | Bearer {token}. Required.   |
-| Content-Type   | application/json. Required. |
 
 ## Request body
 
