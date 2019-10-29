@@ -1,6 +1,6 @@
 ---
 title: "Use the Microsoft Search query API (preview)"
-description: "Microsoft Search query API in Graph enables developers to search their data within Office 365 in a unified way"
+description: "Microsoft Search query API enables developers to search their data within Office 365 in a unified way"
 localization_priority: Priority
 author: "nmoreau"
 ms.prod: "search"
@@ -11,11 +11,11 @@ doc_type: resourcePageType
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-With Microsoft Search API in Graph, developers can search data in Office 365 within their Apps, in the context of the end user.
+With the search API, developers can search data in Office 365 within their Apps, in the context of the end user.
 
 ## Common use cases
 
-The Search query API provides a [query](../api/search-query.md) method to search across your data in Microsoft Search. This section lists the common use cases, based on the properties you set in the **query** request body.
+The search API provides a [query](../api/search-query.md) method to search across your data in Microsoft Search. This section lists the common use cases, based on the properties you set in the **query** request body.
 
 Search requests are executed on behalf of user. Search results are trimmed down to enforce any ACL applied to the items.  
 
@@ -87,12 +87,11 @@ Depending on the entity type, the searchable properties vary:
   - [message properties](https://docs.microsoft.com/en-us/microsoft-365/compliance/keyword-queries-and-search-conditions#searchable-email-properties)
   - [driveItem properties](https://docs.microsoft.com/en-us/microsoft-365/compliance/keyword-queries-and-search-conditions#searchable-site-properties)
   
-## Error handling 
+## Error handling
 
-Microsoft Search returns error responses as defined by [OData error object definition](http://docs.oasis-open.org/odata/odata-json-format/v4.01/cs01/odata-json-format-v4.01-cs01.html#sec_ErrorResponse), each of which is a JSON object containing a code and a message.
+The search API returns error responses as defined by [OData error object definition](http://docs.oasis-open.org/odata/odata-json-format/v4.01/cs01/odata-json-format-v4.01-cs01.html#sec_ErrorResponse), each of which is a JSON object containing a code and a message.
 
 <!---TODO Describe the know errors : bad requests.--->
-
 
 ## Known limitations
 
@@ -102,7 +101,7 @@ The search API has the following limitations:
 
 - The [searchRequest](./searchrequest.md) resource supports passing multiple types of entities at a time. However, currently the only supported combination is **driveItem** and **externalFile**. Other combinations are invalid. 
 
-- The **contentSource** property, which defines the connection to use, is only applicable when **entityType** is specified as `externalItem`. 
+- The **contentSource** property, which defines the connection to use, is only applicable when **entityType** is specified as `externalItem`.
 <!--todo nmoreauteam Fix the link to ContentSource  pls provide the content source url--->
 
 - The search API does not support custom sort and always sorts results in the following ways:

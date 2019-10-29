@@ -10,13 +10,12 @@ ms.prod: "search"
 
 People gather and store a lot information in their email conversation. It is very common that some critical and relevance piece of information is embedded in the body of an email, or in an attachment. Microsoft Graph application can use search to pull information form the user’s own mailbox and render this in a dedicated search experience.
 
-Moreover, the query API now let developers retrieve email ranked by relevance.
+Moreover, the search API now let developers retrieve email ranked by relevance.
 
-Message search only applies to your personal email. You currently cannot search shared mailboxes using the Microsoft Search query API.
+Message search only applies to your personal email. You currently cannot search shared mailboxes using the search API.
 
 ## Search messages
-You can build a search request to query emails in your mailbox, return the first 25 results. 
-
+You can build a search request to query emails in your mailbox, return the first 25 results.
 Results will be ordered by datetime desc.
 
 The search term can include any existing know [filtering capability](https://support.office.com/en-us/article/learn-to-narrow-your-search-criteria-for-better-searches-in-outlook-d824d1e9-a255-4c8a-8553-276fb895a8da) users can enter into the search box in Outlook.
@@ -49,7 +48,7 @@ Response
 
 Here is an example of the response. 
 
-Note: The response object shown here might be shortened for readability. All the properties will be returned from an actual call. 
+Note: The response object shown here might be shortened for readability. All the properties will be returned from an actual call.
 
 ```json
 {
@@ -112,7 +111,7 @@ Note: The response object shown here might be shortened for readability. All t
 ```
 
 ## Search top results messages
-You can build a search request to retrieve emails sorted by relevance . 
+You can build a search request to retrieve emails sorted by relevance.
 
 Request
 
@@ -140,12 +139,12 @@ Authorization: Bearer AAD_TOKEN
 
 ## Known limitations
 
-- You can only access user’s own mailbox. Searching delegated mailbox is not supported 
+- You can only access user’s own mailbox. Searching delegated mailbox is not supported.
 
-- For Messages, Total in the [searchHitsContainer](/graph/api/resources/searchhitscontainer?view=graph-rest-beta) contains the number of result in the Page, not the number of matching results
+- For Messages, Total in the [searchHitsContainer](/graph/api/resources/searchhitscontainer?view=graph-rest-beta) contains the number of result in the Page, not the number of matching results.
 
 ## Next steps
 
 Find out more about:
 
-- The Microsoft Search [Query API](/graph/api/search-query?view=graph-rest-beta)
+- The [search API](/graph/api/search-query?view=graph-rest-beta)

@@ -1,6 +1,6 @@
 ---
 title: "Search Custom types"
-description: "The query API lets you search accross Custom types ingested via the Connectors Indexing API."
+description: "The query API lets you search accross Custom types ingested via the indexing API."
 author: "nmoreau"
 localization_priority: Normal
 ms.prod: "search"
@@ -8,7 +8,7 @@ ms.prod: "search"
 
 # Search custom types (ExternalItem)
 
-Connectors (Beta) let you import external data into the Microsoft Search index. Ingested content will be surfaced in some Microsoft Search experiences. The Microsoft Search query API lets you run search queries on this ingested content.
+Connectors (Beta) let you import external data into Microsoft Search. Ingested content will be surfaced in some Microsoft Search experiences. The search API lets you run search queries on this ingested content.
 
 ## Search custom types
 
@@ -51,14 +51,16 @@ Authorization: Bearer AAD_TOKEN
 }
 ```
 
+<!--
 Response
-<!---TODO nmoreau team Include one example of externalItem response.--> 
+-TODO nmoreau team Include one example of externalItem response. 
 ```Json
 {
   
 }
 
 ```
+-->
 
 ## Known limitations
 
@@ -70,4 +72,4 @@ Response
 
 Find out more about:
 
-- The Microsoft Search [Query API](/graph/api/search-query?view=graph-rest-beta)
+- The [search API](/graph/api/search-query?view=graph-rest-beta)

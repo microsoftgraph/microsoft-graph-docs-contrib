@@ -17,7 +17,7 @@ The search terms for the query.
 
 | Property     | Type        | Description |
 |:-------------|:------------|:------------|
-|query|String|Contains the actual search terms of the request|
+|query|String|Contains the actual search terms of the request.|
 
 ## JSON representation
 
