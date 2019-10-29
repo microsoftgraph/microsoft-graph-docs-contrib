@@ -50,6 +50,7 @@ Looking for the API reference for this service?
 
 ## Next steps
 
+- Learn more about [Microsoft Search](https://docs.microsoft.com/en-us/microsoftsearch/).
 - Explore the search APIs in the [Graph Explorer](https://developer.microsoft.com/graph/graph-explorer).
 - Learn more about a few key use cases 
   - [Search for Outlook Messages](./search-concept-messages.md)
