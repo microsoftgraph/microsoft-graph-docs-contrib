@@ -364,6 +364,7 @@ Here is a JSON representation of the resource
   "photo": {"@odata.type": "microsoft.graph.profilePhoto"},
   "registeredDevices": [{"@odata.type": "microsoft.graph.directoryObject"}],
   "signInActivity": {"@odata.type": "microsoft.graph.signInActivity"}
+}
 ```
 
 ## See also
