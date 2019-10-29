@@ -11,14 +11,14 @@ doc_type: "resourcePageType"
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-PROVIDE DESCRIPTION HERE
+Provides the last signed-in date for a specific user.
 
 ## Properties
 
 | Property     | Type        | Description |
 |:-------------|:------------|:------------|
-|lastSignInDateTime|DateTimeOffset|The last sign-in date for a specific user. You can use this field to calculate the last time a user signed in to the directory by joining it with the users resource in Microsoft Graph. This field can be used to build reports, such as inactive users. The timestamp represents date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 would look like this: `'2014-01-01T00:00:00Z'`.|
-|lastSignInRequestId|String|Request Id of the last sign-in performed by this user.|
+|lastSignInDateTime|DateTimeOffset|The last sign-in date for a specific user. You can use this field to calculate the last time a user signed in to the directory. This field can be used to build reports, such as inactive users. The timestamp represents date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 would look like this: `'2014-01-01T00:00:00Z'`.|
+|lastSignInRequestId|String|Request ID of the last sign-in performed by this user.|
 
 ## JSON representation
 

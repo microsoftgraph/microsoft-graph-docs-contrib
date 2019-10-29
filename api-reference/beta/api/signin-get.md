@@ -41,7 +41,6 @@ This method supports OData query parameters to help customize the response. For 
 | Name      |Description|
 |:----------|:----------|
 | Authorization | Bearer {token} |
-| Content-type | application/json |
 
 ## Request body
 

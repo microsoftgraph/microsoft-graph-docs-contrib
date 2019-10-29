@@ -23,7 +23,7 @@ One of the following permissions is required to call this API. To learn more, in
 | Delegated (personal Microsoft account) | Not supported |
 | Application | AuditLog.Read.All, Directory.Read.All | 
 
-In addition, apps must be [properly registered](https://docs.microsoft.com/azure/active-directory/active-directory-reporting-api-prerequisites-azure-portal) to Azure Active Directory.
+In addition, apps must be properly registered to Azure Active Directory.
 
 ## HTTP request
 <!-- { "blockType": "ignored" } -->
@@ -85,7 +85,6 @@ This method supports the following OData Query Parameters to help customize the 
 | Name      |Description|
 |:----------|:----------|
 | Authorization | Bearer {token} |
-| Content-type | application/json |
 
 ## Request body
 
@@ -240,7 +239,7 @@ The following is an example of the request.
   "name": "get_signins_2"
 }-->
 ```msgraph-interactive
-GET https://graph.microsoft.com/beta/auditLogs/signIns/{id}
+GET https://graph.microsoft.com/beta/auditLogs/signIns
 ```
 
 #### Response
