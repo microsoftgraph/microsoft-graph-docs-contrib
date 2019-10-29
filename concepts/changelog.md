@@ -151,17 +151,14 @@ Meeting organizers can allow meeting time proposals, and invitees can suggest al
 
 Microsoft Search is now exposing a way to search and index data in the Microsoft Graph.
 
-| **Change type** | **Version**   | **Description**                          |
-| :-------------- | :------------ | :--------------------------------------- |
-| Addition | Beta | Added the [search-concept-overview](search-concept-overview.md?view=graph-rest-beta) and the [search-api-overview](/graph/api/resources/search-api-overview?view=graph-rest-beta)|
-| Addition | Beta | Added the [search](/graph/api/search-get?view=graph-rest-beta) resource and the [query](/graph/api/search-query?view=graph-rest-beta) action|
-| Addition | Beta | Added the new [searchRequest] (/graph/api/resource/searchrequest?view=graph-rest-beta) entity |
-| Addition | Beta | Added the new [searchQuery] (/graph/api/resource/searchquery?view=graph-rest-beta) entity |
-| Addition | Beta | Added the new [searchQueryString] (/graph/api/resource/searchquerystring?view=graph-rest-beta) entity |
-| Addition | Beta | Added the new [searchResponse] (/graph/api/resource/searchresponse?view=graph-rest-beta) entity |
-| Addition | Beta | Added the new [searchHitsContainer] (/graph/api/resource/searchhitscontainer?view=graph-rest-beta) entity |
-| Addition | Beta | Added the new [searchHit] (/graph/api/resource/searchhit?view=graph-rest-beta) entity |
-<!---todo nmoreau/raju add the indexing API pages-->
+| **Change type** | **Version** | **Description**                              |
+|:----------------|:------------|:---------------------------------------------|
+| Addition        | beta        | Added the [Search API](search-concept-overview.md) |
+| Addition        | beta        | Added the [Search API](search-concept-overview.md) |
+| Addition        | beta        | Added the [query](/graph/api/search-query?view=graph-rest-beta) action |
+| Addition        | beta        | Added the [searchRequest] (/graph/api/resource/searchrequest?view=graph-rest-beta), [searchQuery] (/graph/api/resource/searchquery?view=graph-rest-beta), [searchQueryString] (/graph/api/resource/searchquerystring?view=graph-rest-beta),[searchResponse] (/graph/api/resource/searchresponse?view=graph-rest-beta), [searchHitsContainer] (/graph/api/resource/searchhitscontainer?view=graph-rest-beta), and [searchHit] (/graph/api/resource/searchhit?view=graph-rest-beta) entities |
+| Addition        | beta        | Added the [Indexing API](search-index-overview.md) |
+| Addition        | beta        | Added the [externalConnection](/graph/api/resource/externalconnection?view=graph-rest-beta), [schema](/graph/api/resource/schema?view=graph-rest-beta), [externalItem](/graph/api/resource/externalitem?view=graph-rest-beta), and [externalFile](/graph/api/resource/externalfile?view=graph-rest-beta) entities |
 
 ### Teamwork (Microsoft Teams)
 

@@ -228,15 +228,27 @@ items:
       - name: Search
         items:
           - name: Overview
-            href: search-concept-overview.md
-          - name: Search messages
-            href: search-concept-messages.md
-          - name: Search events
-            href: search-concept-events.md
-          - name: Search files
-            href: search-concept-files.md                      
-          - name: Search connectors
-            href: search-concept-custom-types.md          
+            href: TODO
+          - name: Query
+            items:
+              - name: Overview
+                href: search-concept-overview.md
+              - name: Search messages
+                href: search-concept-messages.md
+              - name: Search events
+                href: search-concept-events.md
+              - name: Search files
+                href: search-concept-files.md
+              - name: Search connectors
+                href: search-concept-custom-types.md
+          - name: Index
+            items:
+              - name: Overview
+                href: search-index-overview.md
+              - name: Manage connections
+                href: search-index-manage-connections.md
+              - name: Manage items
+                href: search-index-manage-items.md
       - name: Security
         items:
           - name: Overview
