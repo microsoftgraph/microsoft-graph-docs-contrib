@@ -49,6 +49,7 @@ In the request body, supply the values for relevant fields that should be update
 | building               | String                                            | Specifies the building name or building number that the room is in. |
 | capacity               | String                                            | Specifies the capacity of the room. |
 | displayDeviceName      | String                                            | Specifies the name of the display device in the room. |
+| floorLabel             | String                                            | Specifies the floor letter that the room is on. |
 | floorNumber            | Int32                                             | Specifies the floor number that the room is on. |
 | geoCoordinates         | [outlookGeoCoordinates](outlookgeocoordinates.md) | Specifies the room location in latitude, longitude and optionally, altitude coordinates. |
 | isWheelchairAccessible | Boolean                                           | Specifies whether the room is wheelchair accessible. |
@@ -127,6 +128,7 @@ Content-type: application/json
     "label": "100",
     "capacity": "50",
     "building": "1",
+    "floorLabel": "1P",
     "floorNumber": 1,
     "isManaged": true,
     "isWheelchairAccessible": false,
