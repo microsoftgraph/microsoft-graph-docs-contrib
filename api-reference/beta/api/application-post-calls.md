@@ -149,7 +149,7 @@ Content-Type: application/json
           "id": "112f7296-5fa4-42ca-bae8-6a692b15d4b8"
         }
       },
-      "endpointType", null,
+      "endpointType": null,
       "region": null,
       "replacesCallId": null,
       "languageId": null
