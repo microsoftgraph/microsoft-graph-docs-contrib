@@ -8,7 +8,7 @@ ms.prod: "search"
 
 # Search custom types (ExternalItem)
 
-Connectors (Beta) let you import external data into Microsoft Search. Ingested content will be surfaced in some Microsoft Search experiences. The search API lets you run search queries on this ingested content.
+Indexing API (preview) let you import external data into Microsoft Search. Ingested content will be surfaced in some Microsoft Search experiences. The search API lets you run search queries on this external content.
 
 ## Search custom types
 
@@ -64,7 +64,7 @@ Response
 
 ## Known limitations
 
-- Custom Types don’t support searching across multiple contentSources. You can only search one ConnectionId at the time.
+- Custom types don’t support searching across multiple contentSources. You can only search one '''connectionId at the time.
 
 - Stored_fields have to be specified, otherwise search results won’t be returned.
 
