@@ -42,7 +42,7 @@ In the request body, provide a JSON object with the following parameters.
 |clientContext|String|The client context.|
 
 ## Response
-This method returns a `200 OK` response code and a Location header with a URI to the [updateRecordingStatus](../resources/updaterecordingstatus.md) created for this request.
+This method returns a `200 OK` response code and a Location header with a URI to the [updateRecordingStatusOperation](../resources/updaterecordingstatusoperation.md) created for this request.
 
 ## Example
 The following example shows how to call this API.
