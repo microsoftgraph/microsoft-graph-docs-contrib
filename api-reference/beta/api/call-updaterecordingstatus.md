@@ -42,7 +42,7 @@ In the request body, provide a JSON object with the following parameters.
 |clientContext|String|The client context.|
 
 ## Response
-Returns `202 Accepted` response code and a Location header with a uri to the [commsOperation](../resources/commsoperation.md) created for this request.
+This method returns a `200 OK` response code and a Location header with a URI to the [updateRecordingStatus](../resources/updaterecordingstatus.md) created for this request.
 
 ## Example
 The following example shows how to call this API.
@@ -80,8 +80,16 @@ Content-Length: 79
   "@odata.type": "microsoft.graph.updateRecordingStatusOperation"
 } -->
 ```http
-HTTP/1.1 202 Accepted
+HTTP/1.1 200 OK
 Location: https://graph.microsoft.com/beta/app/calls/57dab8b1-894c-409a-b240-bd8beae78896/operations/0fe0623f-d628-42ed-b4bd-8ac290072cc5
+
+{
+  "@odata.type": "#microsoft.graph.updateRecordingStatusOperation",
+  "clientContext": "clientContext-value"
+  "id": "0fe0623f-d628-42ed-b4bd-8ac290072cc5",
+  "resultInfo": null,
+  "status": "completed",
+}
 ```
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79

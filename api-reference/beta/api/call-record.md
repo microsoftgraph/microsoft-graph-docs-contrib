@@ -113,6 +113,7 @@ Location: https://graph.microsoft.com/beta/app/calls/57dab8b1-894c-409a-b240-bd8
 
 {
   "@odata.type": "#microsoft.graph.recordOperation",
+  "id": "0fe0623f-d628-42ed-b4bd-8ac290072cc5",
   "status": "running",
   "createdDateTime": "2018-09-06T15:58:41Z",
   "lastActionDateTime": "2018-09-06T15:58:41Z",
@@ -121,7 +122,6 @@ Location: https://graph.microsoft.com/beta/app/calls/57dab8b1-894c-409a-b240-bd8
   "recordingLocation": null,
   "clientContext": "d45324c1-fcb5-430a-902c-f20af696537c"
 }
-
 ```
 
 ##### Notification - operation completed
@@ -146,6 +146,7 @@ Content-Type: application/json
         "@odata.type": "#microsoft.graph.recordOperation",
         "@odata.id": "/app/calls/57DAB8B1894C409AB240BD8BEAE78896/operations/0FE0623FD62842EDB4BD8AC290072CC5",
         "@odata.etag": "W/\"54451\"",
+        "id": "0fe0623f-d628-42ed-b4bd-8ac290072cc5",
         "clientContext": "d45324c1-fcb5-430a-902c-f20af696537c",
         "status": "completed",
         "recordingLocation": "https://file.location/17e3b46c-f61d-4f4d-9635-c626ef18e6ad",
