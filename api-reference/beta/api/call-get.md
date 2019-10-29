@@ -167,17 +167,15 @@ GET https://graph.microsoft.com/beta/communications/calls/2f1a1100-b174-40a0-aba
 
 ##### Response
 
-```http
-HTTP/1.1 200 OK
-Content-Type: application/json
-```
-
 <!-- {
   "blockType": "response",
   "truncated": "true",
   "@odata.type": "microsoft.graph.call"
 }-->
-```json
+```http
+HTTP/1.1 200 OK
+Content-Type: application/json
+
 {
   "@odata.type": "#microsoft.graph.call",
   "state": "established",

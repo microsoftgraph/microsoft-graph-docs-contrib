@@ -126,8 +126,10 @@ Content-Type: application/json
 }-->
 ```json
 {
+  "@odata.type": "#microsoft.graph.commsNotifications",
   "value": [
     {
+      "@odata.type": "#microsoft.graph.commsNotification",
       "changeType": "created",
       "resourceUrl": "/communications/calls/57DAB8B1894C409AB240BD8BEAE78896",
       "resourceData": {
@@ -232,8 +234,10 @@ Content-Type: application/json
 }-->
 ```json
 {
+  "@odata.type": "#microsoft.graph.commsNotifications",
   "value": [
     {
+      "@odata.type": "#microsoft.graph.commsNotification",
       "changeType": "updated",
       "resourceUrl": "/communications/calls/57DAB8B1894C409AB240BD8BEAE78896",
       "resourceData": {
@@ -260,8 +264,10 @@ Content-Type: application/json
 }-->
 ```json
 {
+  "@odata.type": "#microsoft.graph.commsNotifications",
   "value": [
     {
+      "@odata.type": "#microsoft.graph.commsNotification",
       "changeType": "updated",
       "resourceUrl": "/communications/calls/57DAB8B1894C409AB240BD8BEAE78896",
       "resourceData": {
@@ -290,8 +296,10 @@ Content-Type: application/json
 }-->
 ```json
 {
+  "@odata.type": "#microsoft.graph.commsNotifications",
   "value": [
     {
+      "@odata.type": "#microsoft.graph.commsNotification",
       "changeType": "created",
       "resourceUrl": "/communications/calls/57DAB8B1894C409AB240BD8BEAE78896",
       "resourceData": {
@@ -375,8 +383,10 @@ Content-Type: application/json
 }-->
 ```json
 {
+  "@odata.type": "#microsoft.graph.commsNotifications",
   "value": [
     {
+      "@odata.type": "#microsoft.graph.commsNotification",
       "changeType": "updated",
       "resourceUrl": "/communications/calls/57DAB8B1894C409AB240BD8BEAE78896",
       "resourceData": {
@@ -403,8 +413,10 @@ Content-Type: application/json
 }-->
 ```json
 {
+  "@odata.type": "#microsoft.graph.commsNotifications",
   "value": [
     {
+      "@odata.type": "#microsoft.graph.commsNotification",
       "changeType": "updated",
       "resourceUrl": "/communications/calls/57DAB8B1894C409AB240BD8BEAE78896",
       "resourceData": {

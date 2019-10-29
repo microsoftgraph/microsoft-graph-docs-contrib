@@ -299,7 +299,7 @@ Content-Type: application/json
   ],
  "mediaConfig": {
     "@odata.type": "#microsoft.graph.appHostedMediaConfig",
-    "blob": "<Media Session Configuration>",
+    "blob": "<Media Session Configuration>"
   }
 }
 ```

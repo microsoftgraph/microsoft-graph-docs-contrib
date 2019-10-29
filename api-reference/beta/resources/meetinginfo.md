@@ -13,9 +13,9 @@ doc_type: resourcePageType
 
 This is an abstract class that contains meeting specific information.
  
-To join an existing meeting, you must either specify the [organizerMeetingInfo](organizerMeetingInfo.md) 
+To join an existing meeting, you must either specify the [organizerMeetingInfo](organizermeetinginfo.md) 
 in combination with the [chatInfo](./chatinfo.md), or just the
-the [tokenMeetingInfo](tokenMeetingInfo.md).
+the [tokenMeetingInfo](tokenmeetinginfo.md).
 
 
 ## Relationships

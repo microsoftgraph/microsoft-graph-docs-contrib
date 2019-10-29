@@ -122,8 +122,10 @@ Content-Type: application/json
 }-->
 ```json
 {
+  "@odata.type": "#microsoft.graph.commsNotifications",
   "value": [
     {
+      "@odata.type": "#microsoft.graph.commsNotification",
       "changeType": "updated",
       "resourceUrl": "/communications/calls/421f1100-411f-4a29-8514-dbbb9caff45",
       "resourceData": {
