@@ -22,8 +22,8 @@ the [tokenMeetingInfo](tokenmeetinginfo.md).
 
 | Relationship        | Type                                                 | Description                                                         |
 |:--------------------|:-----------------------------------------------------|:--------------------------------------------------------------------|
-| Organizer          | [organizerMeetingInfo](./organizermeetinginfo.md)       | Details about the organizer of the meeting                                              |
-| Token       | [tokenMeetingInfo](tokenmeetinginfo.md)         | An encrypted token that contains the information about the meeting
+| Organizer          | [organizerMeetingInfo](./organizermeetinginfo.md)       | Details about the organizer of the meeting                        |
+| Token       | [tokenMeetingInfo](tokenmeetinginfo.md)         | An encrypted token that contains the information about the meeting               |
 
 ## JSON representation
 
