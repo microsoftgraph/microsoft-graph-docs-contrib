@@ -1,23 +1,23 @@
 ---
-title: "Use the Microsoft Search query API (preview)"
-description: "Microsoft Search query API enables developers to search their data within Office 365 in a unified way"
+title: "Use the search API"
+description: "Using the search API, apps can search Office 365 data in the context of the authenticated user"
 localization_priority: Priority
 author: "nmoreau"
 ms.prod: "search"
 doc_type: resourcePageType
 ---
 
-# Use the Microsoft Search query API (preview)
+# Use the search API
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-With the search API, developers can search data in Office 365 within their Apps, in the context of the end user.
+Using the search API, apps can search Office 365 data in the context of the authenticated user.
 
 ## Common use cases
 
 The search API provides a [query](../api/search-query.md) method to search across your data in Microsoft Search. This section lists the common use cases, based on the properties you set in the **query** request body.
 
-Search requests are executed on behalf of user. Search results are trimmed down to enforce any ACL applied to the items.  
+Search requests are executed on behalf of user. Search results are trimmed down to enforce any access control applied to the items.  For example, in the context of files, permissions on the files will be evaluated part of the search request. Users cannot access more items in search than they would be able to from the enumeration API.
 
 
 | Use cases | Properties to define in the query request body |
@@ -33,7 +33,7 @@ Search requests are executed on behalf of user. Search results are trimmed down 
 ### Scope search based on entity types
 
 Define the scope of the search request using the **entityTypes** property in the **query** request payload.
-The following are the supported entity types: 
+The following are the supported entity types:
 
  - [event](event.md)
  - [message](message.md)

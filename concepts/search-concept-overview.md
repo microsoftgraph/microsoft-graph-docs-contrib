@@ -7,28 +7,28 @@ author: "nmoreau"
 scenarios: "getting-started"
 ---
 
-# Search API overview (preview) 
+# Search API overview
 
 Microsoft Search has introduced new organizational search experiences into the applications customers use every day.
 The vision is to harness the collective knowledge of your organization in Search and surface relevant content to keep end users up to date and leverage the work of others.  Search is available in the different experiences such as in Office, SharePoint, Delve, Windows and Bing.
 
-## Why use the Microsoft Search API?
+## Why use the Microsoft Search and the search API?
 
-The search API in Graph provides a unified search endpoint to access your data. It brings search features to app developers, enabling them to build custom search experience.
+The search API in the Microsoft Graph provides a unified search endpoint to access your data. It brings search features to app developers, enabling them to build custom search experience.
 
-### Relevance powered by the Microsoft Graph
+### Relevance powered by the the Microsoft Graph
 
 With the search API, you benefit from the latest improvements on relevance. It will expose this relevance in your own app, and therefore make it consistent with how search results show up in Office applications.
 
 ### Access new data types from your app
 
-New data types are being introduced in graph (in particular with Connectors) <!---Link Todo link to Connectors Concept )--> . The search API will expose these new data types.
+New data types are being introduced in the Microsoft Graph (in particular with Connectors) <!---Link Todo link to Connectors Concept )--> . The search API will expose these new data types.
 
 ### Where innovation happens for search
 
 As Microsoft Search expands, the search API will surface these inovations: new relevance models, cross entity ranking, new search features…
 
-## What data can I access by using the query API?
+## What data can I access by using the query API? 
 
 You can search across the following data .
 
@@ -44,8 +44,8 @@ You can search across the following data .
 
 Looking for the API reference for this service?
 
-- [Microsoft Search query API in Microsoft Graph Beta](/graph/api/resources/search-api-overview)
-- [Microsoft Search indexing API in Microsoft Graph Beta](/graph/api/resources/search-api-overview) 
+- [Search API in Microsoft Graph Beta](/graph/api/resources/search-api-overview)
+- [Indexing API in Microsoft Graph Beta](/graph/api/resources/search-api-overview) 
 <!--TODO nmoreau Fix the link to indexing API--->
 
 ## Next steps
@@ -55,8 +55,8 @@ Looking for the API reference for this service?
   - [Search for Outlook Messages](./search-concept-messages.md)
   - [Search for Calendar Events](./search-concept-events.md)
   - [Search for Files](./search-concept-files.md)
-  - [Search for Connectors User defined types](./search-concept-custom-types.md)
-  - [Search for Connectors Well known types (files)](./search-concept-custom-types.md)
+  - [Search for Connectors User defined types (preview)](./search-concept-custom-types.md)
+  - [Search for Connectors Well known types : files (preview)](./search-concept-custom-types.md)
 
 ## See also
 

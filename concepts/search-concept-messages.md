@@ -1,6 +1,6 @@
 ---
 title: "Search messages"
-description: "People gather and store a lot information in their email conversation. It is very common that a piece of information is embedded in the body of an email, or in an attachment. Microsoft Graph application can use search to pull information form the user’s own mailbox and render this in a dedicated search experience."
+description: "An application can use the search API to retrieve information from the user’s own mailbox and render this in a dedicated search experience"
 author: "knightsu"
 localization_priority: Normal
 ms.prod: "search"
@@ -8,11 +8,11 @@ ms.prod: "search"
 
 # Search messages
 
-People gather and store a lot information in their email conversation. It is very common that some critical and relevance piece of information is embedded in the body of an email, or in an attachment. Microsoft Graph application can use search to pull information form the user’s own mailbox and render this in a dedicated search experience.
+People gather and store a lot information in their email conversation. It is very common that some critical and relevance piece of information is embedded in the body of an email, or in an attachment. An application can use the search API to retrieve information from the user’s own mailbox and render this in a dedicated search experience.
 
 Moreover, the search API now let developers retrieve email ranked by relevance.
 
-Message search only applies to your personal email. You currently cannot search shared mailboxes using the search API.
+Message search only applies to user's personal email. You currently cannot search shared or delegated mailboxes using the search API.
 
 ## Search messages
 You can build a search request to query emails in your mailbox, return the first 25 results.
