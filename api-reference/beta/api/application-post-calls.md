@@ -133,8 +133,8 @@ Content-Type: application/json
         "id": "2891555a-92ff-42e6-80fa-6e1300c6b5c6",
       }
     },
-    "countryCode", null,
-    "endpointType", null,
+    "countryCode": null,
+    "endpointType": null,
     "region": null,
     "languageId": null
   },
