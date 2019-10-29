@@ -9516,7 +9516,7 @@
       - name: Index
         items:
         - name: Overview
-          href: indexing-api-overview.md
+          href: resources/indexing-api-overview.md
         - name: External connection
           items:
           - name: External connection
@@ -9534,7 +9534,7 @@
           - name: Create schema
             href: api/externalconnection-post-schema.md
           - name: Get operation
-            href: api/connection-operation-get.md
+            href: api/connectionoperation-get.md
           - name: Create external item
             href: api/externalconnection-put-items.md
         - name: Schema
