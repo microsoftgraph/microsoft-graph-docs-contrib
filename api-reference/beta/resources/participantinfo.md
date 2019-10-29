@@ -17,9 +17,11 @@ Contains additional properties about the participant identity
 
 | Property       | Type                          | Description  |
 |:---------------|:------------------------------|:-------------|
-| identity       | [identitySet](identityset.md) | The [identitySet](identityset.md) associated with this participant. |
-| languageId     | String                        | The language culture string. |
-| region         | String                        | Region of the participant. |
+| identity       | [identitySet](identityset.md) | The [identitySet](identityset.md) associated with this participant. Read-only. Server generated. |
+| endpointType   | String                        | The type of endpoint the participant is using. Possible values are: `default`, `voicemail`, `skypeForBusiness`, or `skypeForBusinessVoipPhone`. Read-only. Server generated. |
+| languageId     | String                        | The language culture string. Read-only. Server generated. |
+| region         | String                        | Region of the participant. Read-only. Server generated. |
+| countryCode    | String                        | The ISO 3166-1 Alpha-2 country code of the participant. Read-only. Server generated. |
 
 ## JSON representation
 
@@ -28,13 +30,18 @@ The following is a JSON representation of the resource.
 <!-- {
   "blockType": "resource",
   "optionalProperties": [
-    "languageId", "region"
+    "countryCode",
+    "endpointType",
+    "languageId",
+    "region"
   ],
   "@odata.type": "microsoft.graph.participantInfo"
 }-->
 ```json
 {
+  "countryCode": "String",
   "identity": { "@odata.type": "#microsoft.graph.identitySet" },
+  "endpointType": "String",
   "languageId": "String",
   "region": "String"
 }

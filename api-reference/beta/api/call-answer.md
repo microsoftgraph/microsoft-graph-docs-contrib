@@ -305,7 +305,7 @@ Content-Type: application/json
         },
         "targets": [
           {
-            "@odata.type": "#microsoft.graph.participantInfo",
+            "@odata.type": "#microsoft.graph.invitationParticipantInfo",
             "identity": {
               "application": {
                 "displayName": "Test BOT",

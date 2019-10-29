@@ -45,6 +45,8 @@ Although the same identity cannot be invited multiple times, it is possible for 
 | [Mute](../api/call-mute.md)                                       | [commsOperation](commsoperation.md)               | Mute self in the call.                       |
 | [Unmute](../api/call-unmute.md)                                   | [commsOperation](commsoperation.md)               | Unmute self in the call.                     |
 | [ChangeScreenSharingRole](../api/call-changescreensharingrole.md) |                                                   | Start and stop sharing screen in the call.   |
+| **Recording Operations**                                   |                                                   |                                              |
+| [UpdateRecordingStatus](../api/call-updaterecordingstatus.md)                                       | [updateRecordingStatusOperation](updateRecordingStatusOperation.md)               | Updates the recording status.                      |
 
 ## Properties
 
@@ -57,6 +59,7 @@ Although the same identity cannot be invited multiple times, it is possible for 
 | chatInfo            | [chatInfo](chatinfo.md)                                                                                | The chat information. Required information for meeting scenarios.                                                                                                                                |
 | direction           | String                                                                                                 | The direction of the call. The possible value are `incoming` or `outgoing`. Read-only. Server generated.                                                                                            |
 | id                  | String                                                                                                 | The call id. Read-only. Server generated.                                                                                                                                                                        |
+| incomingContext     | [incomingContext](incomingcontext.md)                                                                  | The context associated with an incoming call. Read-only. Server generated.                                                                                                                                |
 | mediaConfig         | [appHostedMediaConfig](apphostedmediaconfig.md) or [serviceHostedMediaConfig](servicehostedmediaconfig.md) | The media configuration. Required information for creating peer to peer calls or joining meetings.                                                                        |
 | mediaState          | [callMediaState](callmediastate.md)                                                                    | Read-only. Server generated. The call media state. |
 | meetingCapability   | [meetingCapability](meetingcapability.md)                                                              | Contains the capabilities of a meeting. Read-only. Server generated.                                                                                                        |
@@ -69,7 +72,7 @@ Although the same identity cannot be invited multiple times, it is possible for 
 | source              | [participantInfo](participantinfo.md)                                                                  | The originator of the call.                                                                                                                                                                         |
 | state               | String                                                                                                 | The call state. Possible values are: `incoming`, `establishing`, `ringing`, `established`, `hold`, `transferring`, `transferAccepted`, `redirecting`, `terminating`, `terminated`. Read-only. Server generated.                         |
 | subject             | String                                                                                                 | The subject of the conversation.                                                                                                                                                                    |
-| targets             | [participantInfo](participantinfo.md) collection                                                       | The targets of the call. Required information for creating peer to peer call.                                                                                                            |
+| targets             | [invitationParticipantInfo](invitationparticipantinfo.md) collection                                                       | The targets of the call. Required information for creating peer to peer call.                                                                                                            |
 | tenantId            | String                                                                                                 | Read-only. Server generated. `tenantId` in Azure Active Directory.                                                                                                                        |
 | terminationReason   | String                                                                                                 | Read-only. Server generated.                                                                                                                                                                        |
 | toneInfo            | [toneInfo](toneinfo.md)                                                                                | Read-only. Server generated.                                                                                                                                                                        |
@@ -97,6 +100,7 @@ The following is a JSON representation of the resource.
     "chatInfo",
     "direction",
     "id",
+    "incomingContext",
     "mediaState",
     "meetingCapability",
     "meetingInfo",
@@ -125,6 +129,7 @@ The following is a JSON representation of the resource.
   "chatInfo": {"@odata.type": "#microsoft.graph.chatInfo"},
   "direction": "incoming | outgoing",
   "id": "String (identifier)",
+  "incomingContext": {"@odata.type": "#microsoft.graph.incomingContext"},
   "mediaConfig": {"@odata.type": "#microsoft.graph.mediaConfig"},
   "mediaState": {"@odata.type": "#microsoft.graph.callMediaState"},
   "meetingCapability": {"@odata.type": "#microsoft.graph.meetingCapability"},
@@ -138,7 +143,7 @@ The following is a JSON representation of the resource.
   "source": {"@odata.type": "#microsoft.graph.participantInfo"},
   "state": "incoming | establishing | ringing | established | hold | transferring | transferAccepted | redirecting | terminating | terminated",
   "subject": "String",
-  "targets": [{"@odata.type": "#microsoft.graph.participantInfo"}],
+  "targets": [{"@odata.type": "#microsoft.graph.invitationParticipantInfo"}],
   "tenantId": "String",
   "terminationReason": "String",
   "toneInfo": {"@odata.type": "#microsoft.graph.toneInfo"}
