@@ -1,23 +1,23 @@
 ---
-title: "Use the Microsoft Search query API (preview)"
-description: "Microsoft Search query API in Graph enables developers to search their data within Office 365 in a unified way"
+title: "Use the search API"
+description: "Using the search API, apps can search Office 365 data in the context of the authenticated user"
 localization_priority: Priority
 author: "nmoreau"
 ms.prod: "search"
 doc_type: resourcePageType
 ---
 
-# Use the Microsoft Search query API (preview)
+# Use the search API
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-With Microsoft Search API in Graph, developers can search data in Office 365 within their Apps, in the context of the end user.
+Using the search API, apps can search Office 365 data in the context of the authenticated user.
 
 ## Common use cases
 
-The Search query API provides a [query](../api/search-query.md) method to search across your data in Microsoft Search. This section lists the common use cases, based on the properties you set in the **query** request body.
+The search API provides a [query](../api/search-query.md) method to search across your data in Microsoft Search. This section lists the common use cases, based on the properties you set in the **query** request body.
 
-Search requests are executed on behalf of user. Search results are trimmed down to enforce any ACL applied to the items.  
+Search requests are executed on behalf of user. Search results are trimmed down to enforce any access control applied to the items.  For example, in the context of files, permissions on the files will be evaluated part of the search request. Users cannot access more items in search than they would be able to from the enumeration API.
 
 
 | Use cases | Properties to define in the query request body |
@@ -33,7 +33,7 @@ Search requests are executed on behalf of user. Search results are trimmed down 
 ### Scope search based on entity types
 
 Define the scope of the search request using the **entityTypes** property in the **query** request payload.
-The following are the supported entity types: 
+The following are the supported entity types:
 
  - [event](event.md)
  - [message](message.md)
@@ -87,12 +87,11 @@ Depending on the entity type, the searchable properties vary:
   - [message properties](https://docs.microsoft.com/en-us/microsoft-365/compliance/keyword-queries-and-search-conditions#searchable-email-properties)
   - [driveItem properties](https://docs.microsoft.com/en-us/microsoft-365/compliance/keyword-queries-and-search-conditions#searchable-site-properties)
   
-## Error handling 
+## Error handling
 
-Microsoft Search returns error responses as defined by [OData error object definition](http://docs.oasis-open.org/odata/odata-json-format/v4.01/cs01/odata-json-format-v4.01-cs01.html#sec_ErrorResponse), each of which is a JSON object containing a code and a message.
+The search API returns error responses as defined by [OData error object definition](http://docs.oasis-open.org/odata/odata-json-format/v4.01/cs01/odata-json-format-v4.01-cs01.html#sec_ErrorResponse), each of which is a JSON object containing a code and a message.
 
 <!---TODO Describe the know errors : bad requests.--->
-
 
 ## Known limitations
 
@@ -102,7 +101,7 @@ The search API has the following limitations:
 
 - The [searchRequest](./searchrequest.md) resource supports passing multiple types of entities at a time. However, currently the only supported combination is **driveItem** and **externalFile**. Other combinations are invalid. 
 
-- The **contentSource** property, which defines the connection to use, is only applicable when **entityType** is specified as `externalItem`. 
+- The **contentSource** property, which defines the connection to use, is only applicable when **entityType** is specified as `externalItem`.
 <!--todo nmoreauteam Fix the link to ContentSource  pls provide the content source url--->
 
 - The search API does not support custom sort and always sorts results in the following ways:

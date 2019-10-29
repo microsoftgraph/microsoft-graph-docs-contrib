@@ -8,7 +8,7 @@ doc_type: resourcePageType
 ms.prod: ""
 ---
 # SearchResult resource type
-
+[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 A top level object satisfying the corresponding SearchRequest. 
 
 ## JSON representation

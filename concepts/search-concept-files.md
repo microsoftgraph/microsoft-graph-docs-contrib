@@ -1,18 +1,19 @@
 ---
 title: "Search Custom types"
-description: "The query API lets you search accross Custom types ingested via the Connectors Indexing API."
+description: "The query API lets you search accross files (DriveItem or External files)."
 author: "nmoreau"
 localization_priority: Normal
 ms.prod: "search"
 ---
 
 # Search files
-The Microsoft Search query API lets you search files stored in SharePoint or OneDrive.
+
+The search API lets you search files stored in SharePoint or OneDrive.
 
 The relevance model exposed using signals from the Microsoft Graph to promote content users care about based on their relations, and activities.
 
-With the files query API you are able build an experience consistent with the the Sharepoint Search result files tab.
-The query API is also able to surface external files ingested in Microsoft Search with the Index API.
+With the files search API you are able build an experience consistent with the the Sharepoint Search result files tab.
+The search API is also able to surface external files ingested in via the indexing API.
 
 
 ## Search OneDrive or SharePoint files
@@ -29,7 +30,7 @@ Authorization: Bearer AAD_TOKEN
 {
   "requests": [
     {
-       "entityTypes": ["microsoft.graph.driveItem"],       
+       "entityTypes": ["microsoft.graph.driveItem"],
        "query": {
         "query_string": {
           "query": "contoso"
@@ -97,12 +98,12 @@ Note: The response object shown here might be shortened for readability. All the
 
 Queries against SharePoint and OneDrive can use KQL in the search terms to scope the queries.
 -	“query” : “contoso filetype:docx OR filetype:doc” will scope the queries to word documents
--	"query": "test path:\\"https://contoso.sharepoint.com/sites/Team Site/Documents/Project\\""will scope the query to a particular folder within a site. 
+-	"query": "test path:\\"https://contoso.sharepoint.com/sites/Team Site/Documents/Project\\""will scope the query to a particular folder within a site.
 In order to be valid, properties restriction should specify a valid Queryable managed property name in the condition.
 
-## Search External Files (Well known types)
+## Search External Files (well-known types)
 
-The Ingestion API lets you use an build in Connector for external file shares. You can use the query API to query all external files.
+The indexing API lets you use an build in Connector for external file shares. You can use the query API to query all external files.
 
 Request  
 
@@ -172,7 +173,7 @@ This query will return all configured externalFile Connector for the tenant.
 
 Results are sorted by relevance.
 
-## Search all files (including External)
+## Search all files (including externalFiles)
 
 You can search all files in the tenant, including driveItem and all external files by specifying two entityTypes in the request.
 
@@ -204,7 +205,7 @@ Authorization: Bearer AAD_TOKEN
 }
 ```
 
-This query will return all configured externalFile Connector and driveItems for the tenant.
+This query will return all configured externalFile Connector and driveItems for the tenant satisfying the search terms.
 
 Results are sorted by relevance.
 
@@ -217,4 +218,4 @@ Results are sorted by relevance.
 
 Find out more about:
 
-- The Microsoft Search [Query API](/graph/api/search-query?view=graph-rest-beta)
+- The [search API](/graph/api/search-query?view=graph-rest-beta)

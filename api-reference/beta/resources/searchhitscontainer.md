@@ -9,7 +9,9 @@ doc_type: "resourcePageType"
 
 # searchHitsContainer resource type
 
-Represent the list of search results. 
+[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
+
+Represent the list of search results.
 
 ## Properties
 
