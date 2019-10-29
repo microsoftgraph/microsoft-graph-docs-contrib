@@ -245,17 +245,15 @@ Content-Type: application/json
 
 ##### Request
 
-```http
-POST /communications/calls/7531d31f-d10d-44de-802f-c569dbca451c/participants/invite
-Content-Type: application/json
-```
-
 <!-- {
   "blockType": "request",
   "name": "participant-invite-multiple"
 }-->
 
-```json
+```http
+POST /communications/calls/7531d31f-d10d-44de-802f-c569dbca451c/participants/invite
+Content-Type: application/json
+
 {
   "participants": [
     {
@@ -489,18 +487,15 @@ will be read and the rest of the participants will be ignored.
 > For  details about using `replacesCallId` to replace an existing peer-to-peer call, 
 > see [invitationParticipantInfo](../resources/invitationparticipantinfo.md).
 
-
-``` http
-POST /communications/calls/ab6233a5-20b7-4c5e-bea2-ce56c9776429/participants/invite
-Content-Type: application/json
-```
-
 <!-- {
   "blockType": "request",
   "name": "participant-invite-existing"
 }-->
 
-```json
+```http
+POST /communications/calls/ab6233a5-20b7-4c5e-bea2-ce56c9776429/participants/invite
+Content-Type: application/json
+
 {
   "participants": [
     {
