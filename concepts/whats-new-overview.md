@@ -44,7 +44,7 @@ Use the **hideFromAddressLists** and **hideFromOutlookClients** properties to co
 
 ### Search
 
-With [Microsoft Search](search-concept-overview.md) becoming available to all Office 365 users, use the [search API](/graph/api/resource/search-api-overview.md) to query your data. The indexing API (preview) <!-- todo nmoreau : add link to the indexing API-->also provides a wait to ingest data into Microsoft Search.
+With [Microsoft Search](search-concept-overview.md) becoming available to all Office 365 users, use the [search API](/graph/api/resource/search-api-overview?view=graph-rest-beta) to query your data. The [indexing API](/graph/api/resource/indexing-api-overview?view=graph-rest-beta) also provides a way to ingest external data into Microsoft Search.
 
 ## September 2019: New and generally available
 

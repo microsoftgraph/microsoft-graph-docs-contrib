@@ -9509,10 +9509,12 @@
     - name: Search
       displayname: Microsoft Search API
       items:
-      - name: Overview
-        href: resources/search-api-overview.md
       - name: Query
-        href: api/search-query.md
+        items:
+        - name: Overview
+          href: resources/search-api-overview.md
+        - name: Query data
+          href: api/search-query.md
       - name: Index
         items:
         - name: Overview

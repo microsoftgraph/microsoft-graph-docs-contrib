@@ -7,7 +7,7 @@ ms.prod: "search"
 doc_type: "apiPageType"
 ---
 
-# Query
+# search: query
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
