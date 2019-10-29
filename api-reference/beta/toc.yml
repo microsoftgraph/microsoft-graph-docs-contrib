@@ -9180,7 +9180,7 @@
         items:
         - name: Get resource
           href: api/resource-get.md
-    - name: Notifications
+    - name: Notifications (preview)
       href: resources/notifications-api-overview.md
       items:
       - name: Notification
@@ -9506,7 +9506,7 @@
             href: api/reportroot-getyammergroupsactivitygroupcounts.md
           - name: Get activity counts
             href: api/reportroot-getyammergroupsactivitycounts.md
-    - name: Search
+    - name: Search (preview)
       displayname: Microsoft Search API
       items:
       - name: Query
