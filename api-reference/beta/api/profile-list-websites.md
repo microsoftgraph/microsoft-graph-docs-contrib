@@ -1,6 +1,6 @@
 ---
 title: "List websites"
-description: "Retrieve a list of personwebsite objects."
+description: "Retrieve a list of personWebsite objects."
 localization_priority: Normal
 author: "kevinbellinger"
 ms.prod: "people"
@@ -11,7 +11,7 @@ doc_type: "apiPageType"
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Retrieve a list of [personwebsite](../resources/personwebsite.md) objects from a user's [profile](../resources/profile.md).
+Retrieve a list of [personWebsite](../resources/personwebsite.md) objects from a user's [profile](../resources/profile.md).
 
 ## Permissions
 
@@ -38,7 +38,7 @@ This method supports the following OData query parameters to help customize the 
 |Name            |Value    |Description                                                                                                                                                                 |
 |:---------------|:--------|:---------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 |$filter         |string   |Limits the response to only those objects which contain the specified criteria.                                                                                             |
-|$orderby        |string   |By default the objects in the response are sorted by their createdDateTime value in a query. You can change the order of the of the response using the *$orderby* parameter.|
+|$orderby        |string   |By default, the objects in the response are sorted by their **createdDateTime** value in a query. You can change the order of the of the response using the `$orderby` parameter.|
 |$select         |string   |Comma-separated list of properties to include in the response. For optimal performance, only select the subset of properties needed.                                        |
 |$skip           |int      |Skip the first n results, useful for paging.                                                                                                                                |
 |$top            |int      |Number of results to be returned.                                                                                                                                           |
@@ -48,7 +48,6 @@ This method supports the following OData query parameters to help customize the 
 | Name           |Description                  |
 |:---------------|:----------------------------| 
 | Authorization  | Bearer {token}. Required.   |
-| Content-Type   | application/json. Required. |
 
 ## Request body
 
