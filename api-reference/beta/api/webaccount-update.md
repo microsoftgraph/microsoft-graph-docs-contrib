@@ -1,6 +1,6 @@
 ---
 title: "Update webAccount"
-description: "Update the properties of webAccount object."
+description: "Update the properties of a webAccount object."
 localization_priority: Normal
 author: "kevinbellinger"
 ms.prod: "people"
@@ -11,7 +11,7 @@ doc_type: "apiPageType"
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Update the properties of [webAccount](../resources/webaccount.md) object in a user's [profile](../resources/profile.md).
+Update the properties of a [webAccount](../resources/webaccount.md) object in a user's [profile](../resources/profile.md).
 
 ## Permissions
 
