@@ -21,4 +21,4 @@ You can integrate your apps with Microsoft Graph notifications with a few simple
 4.  [Integrate](notifications-integrating-with-windows.md) the new [notifications client SDK](https://aka.ms/GNSDK) into your Windows, iOS, Android, or web clients to receive and manage notifications.
 
 > [!NOTE]
-> We recommend using the new and improved, lightweight [notification SDK](http://aka.ms/GNSDK) instead of the cross-device [Project Rome SDK](https://github.com/microsoft/project-rome).
+> We recommend using the new and improved, lightweight [notification SDK](https://aka.ms/GNSDK) instead of the cross-device [Project Rome SDK](https://github.com/microsoft/project-rome).
