@@ -11,7 +11,7 @@ doc_type: "apiPageType"
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Retrieves a list of the [personanniversary](../resources/personanniversary.md) objects for the given user from their [profile](../resources/profile.md).
+Retrieves a list of the [personAnniversary](../resources/personanniversary.md) objects for the given user from their [profile](../resources/profile.md).
 
 ## Permissions
 
@@ -48,7 +48,6 @@ This method supports the following OData query parameters to help customize the 
 | Name           |Description                  |
 |:---------------|:----------------------------|
 | Authorization  | Bearer {token}. Required.   |
-| Content-Type   | application/json. Required. |
 
 ## Request body
 
