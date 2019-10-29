@@ -62,8 +62,8 @@ Content-Type: application/json
 Content-Length: 79
 
 {
-  "clientContext": "clientContext-value"
-  "status": "recording",
+  "clientContext": "clientContext-value",
+  "status": "recording"
 }
 ```
 
