@@ -17,7 +17,7 @@ The [serviceInformation](serviceinformation.md) resource type represents basic d
 
 | Property     | Type        | Description                                            |
 |:-------------|:------------|:-------------------------------------------------------|
-|name          | String      | The name of the cloud service (ie: Twitter, Instagram) |
+|name          | String      | The name of the cloud service (for example, Twitter, Instagram). |
 |webUrl        | String      | Contains the URL for the service being referenced.     |
 
 ## JSON representation
