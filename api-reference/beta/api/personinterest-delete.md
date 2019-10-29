@@ -11,7 +11,7 @@ doc_type: "apiPageType"
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Deletes a [personInterest](../resources/personinterest.md) object from the user's [profile](../resources/profile.md).
+Delete a [personInterest](../resources/personinterest.md) object from the user's [profile](../resources/profile.md).
 
 ## Permissions
 
@@ -36,7 +36,6 @@ DELETE /me/profile/interests/{id}
 | Name           |Description                  |
 |:---------------|:----------------------------|
 | Authorization  | Bearer {token}. Required.   |
-| Content-Type   | application/json. Required. |
 
 ## Request body
 
@@ -44,7 +43,7 @@ Do not supply a request body for this method.
 
 ## Response
 
-If successful, this method returns `204 No Content` response code. It does not return anything in the response body.
+If successful, this method returns a `204 No Content` response code. It does not return anything in the response body.
 
 ## Examples
 
