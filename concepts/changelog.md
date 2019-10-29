@@ -153,7 +153,7 @@ Microsoft Search is now exposing a way to search and index data in the Microsoft
 
 | **Change type** | **Version**   | **Description**                          |
 | :-------------- | :------------ | :--------------------------------------- |
-| Addition | Beta | Added the [search-concept-overview](seach-concept-overview.md?view=graph-rest-beta) and the [search-api-overview](/graph/api/resources/search-api-overview?view=graph-rest-beta)|
+| Addition | Beta | Added the [search-concept-overview](search-concept-overview.md?view=graph-rest-beta) and the [search-api-overview](/graph/api/resources/search-api-overview?view=graph-rest-beta)|
 | Addition | Beta | Added the [search](/graph/api/search-get?view=graph-rest-beta) resource and the [query](/graph/api/search-query?view=graph-rest-beta) action|
 | Addition | Beta | Added the new [searchRequest] (/graph/api/resource/searchrequest?view=graph-rest-beta) entity |
 | Addition | Beta | Added the new [searchQuery] (/graph/api/resource/searchquery?view=graph-rest-beta) entity |
