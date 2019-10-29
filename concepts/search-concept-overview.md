@@ -34,7 +34,7 @@ You can search across the following data .
 
 |Office 365 app|Data set|
 |:--------|:--------|
-|Outlook|[Messages](/graph/api/resources/message?view=graph-rest-1.0)<br/>[Events](graph/api/resources/event?view=graph-rest-1.0)<br/>|
+|Outlook|[Messages](/graph/api/resources/message?view=graph-rest-1.0)<br/>[Events](/graph/api/resources/event?view=graph-rest-1.0)<br/>|
 |Sharepoint |[Files](/graph/api/resources/driveitem?view=graph-rest-1.0)|
 |OneDrive Business |[Files](/graph/api/resources/driveitem?view=graph-rest-1.0)|
 |Connectors |User defined types [externalItems](/graph/api/resources/driveitem?view=graph-rest-1.0) <!--todo nmoreau fix the link to Connectors page-->|
