@@ -275,7 +275,7 @@ Content-Type: application/json
       "application": {
         "@odata.type": "#microsoft.graph.identity",
         "displayName": "Calling Bot",
-        "id": "2891555a-92ff-42e6-80fa-6e1300c6b5c6",
+        "id": "2891555a-92ff-42e6-80fa-6e1300c6b5c6"
       }
     },
     "region": null,
@@ -339,7 +339,7 @@ Content-Type: application/json
       "application": {
         "@odata.type": "#microsoft.graph.identity",
         "displayName": "Calling Bot",
-        "id": "2891555a-92ff-42e6-80fa-6e1300c6b5c6",
+        "id": "2891555a-92ff-42e6-80fa-6e1300c6b5c6"
       }
     },
     "region": null,
@@ -466,7 +466,7 @@ Content-Type: application/json
       "application": {
         "@odata.type": "#microsoft.graph.identity",
         "displayName": "Calling Bot",
-        "id": "2891555a-92ff-42e6-80fa-6e1300c6b5c6",
+        "id": "2891555a-92ff-42e6-80fa-6e1300c6b5c6"
       }
     },
     "region": null,
