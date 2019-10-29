@@ -11,7 +11,7 @@ doc_type: "apiPageType"
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Deletes a [personAnniversary](../resources/personanniversary.md) object from the user's [profile](../resources/profile.md).
+Delete a [personAnniversary](../resources/personanniversary.md) object from the user's [profile](../resources/profile.md).
 
 ## Permissions
 
@@ -36,7 +36,6 @@ DELETE /me/profile/anniversaries/{id}
 | Name           |Description                  |
 |:---------------|:----------------------------|
 | Authorization  | Bearer {token}. Required.   |
-| Content-Type   | application/json. Required. |
 
 ## Request body
 
