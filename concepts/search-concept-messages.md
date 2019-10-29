@@ -148,4 +148,4 @@ Authorization: Bearer AAD_TOKEN
 
 Find out more about:
 
-- The Microsoft Search [Query API](/graph/api/search-query?view=graph-rest-betasear)
+- The Microsoft Search [Query API](/graph/api/search-query?view=graph-rest-beta)
