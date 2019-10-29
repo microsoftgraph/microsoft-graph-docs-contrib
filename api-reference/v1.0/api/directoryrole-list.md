@@ -11,9 +11,9 @@ doc_type: apiPageType
 
 List the directory roles that are activated in the tenant.
 
-*GET /directoryRoles* only returns roles that have been activated. A role becomes activated when an admin activates the role using the [Activate directoryRole](https://docs.microsoft.com/en-us/graph/api/directoryrole-post-directoryroles?view=graph-rest-1.0&tabs=http) API. We do not activate all built-in roles to start with. 
+This operation only returns roles that have been activated. A role becomes activated when an admin activates the role using the [Activate directoryRole](directoryrole-post-directoryroles.md) API. Not all built-in roles are initially activated. 
 
-When assigning a role using Azure portal, role activation step is implicitly done by portal on admin's behalf. To get the full list of roles available in Azure AD, use [List directoryRoleTemplates](https://docs.microsoft.com/en-us/graph/api/directoryroletemplate-list?view=graph-rest-1.0&tabs=http).
+When assigning a role using the Azure portal, the role activation step is implicitly done on the admin's behalf. To get the full list of roles that are available in Azure AD, use [List directoryRoleTemplates](directoryroletemplate-list.md).
 
 ## Permissions
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
@@ -33,16 +33,16 @@ GET /directoryRoles
 This method does **not** support the [OData Query Parameters](https://developer.microsoft.com/graph/docs/concepts/query_parameters) to help customize the response (e.g. $filter is not supported here).
 
 ## Request headers
-| Name       | Type | Description|
-|:-----------|:------|:----------|
-| Authorization  | string  | Bearer {token}. Required. |
+| Name       | Description|
+|:-----------|:----------|
+| Authorization  | Bearer {token}. Required. |
 
 ## Request body
 Do not supply a request body for this method.
 
 ## Response
 
-If successful, this method returns a `200 OK` response code and collection of [directoryRole](../resources/directoryrole.md) objects in the response body.
+If successful, this method returns a `200 OK` response code and a collection of [directoryRole](../resources/directoryrole.md) objects in the response body.
 ## Example
 ##### Request
 
