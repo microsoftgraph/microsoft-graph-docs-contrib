@@ -133,6 +133,8 @@ Content-Type: application/json
         "id": "2891555a-92ff-42e6-80fa-6e1300c6b5c6",
       }
     },
+    "countryCode", null,
+    "endpointType", null,
     "region": null,
     "languageId": null
   },
@@ -147,7 +149,9 @@ Content-Type: application/json
           "id": "112f7296-5fa4-42ca-bae8-6a692b15d4b8"
         }
       },
+      "endpointType", null,
       "region": null,
+      "replacesCallId": null,
       "languageId": null
     }
   ],
