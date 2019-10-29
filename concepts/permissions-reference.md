@@ -459,6 +459,15 @@ For more complex scenarios involving multiple permissions, see [Permission scena
 
 ---
 
+## Domain permissions
+
+#### Application permissions
+
+|   Permission    |  Display String   |  Description | Admin Consent Required |
+|:-----------------------------|:-----------------------------------------|:-----------------|:-----------------|
+| _Domain.ReadWrite.All_ | Read and write domains | Allows the app to read and write domains without a signed-in user. | Yes |
+
+
 ## Education permissions
 
 #### Delegated permissions
