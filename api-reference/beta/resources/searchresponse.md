@@ -5,7 +5,7 @@ localization_priority: Normal
 author: "nmoreau"
 ms.prod: "search"
 doc_type: "resourcePageType"
----
+---   
 
 # searchResponse resource type
 
@@ -17,8 +17,8 @@ The searchResponse contains the results from the search query.
 
 | Property     | Type        | Description |
 |:-------------|:------------|:------------|
-|hitsContainers|[searchHitsContainer](searchhitscontainer.md) collection|Contains a collection of hits container which encapsulate the actual results |
-|searchTerms|String collection|Contains the search terms sent in the initial search query|
+|hitsContainers|[searchHitsContainer](searchhitscontainer.md) collection|A collection of search results.|
+|searchTerms|String collection|Contains the search terms sent in the initial search query.|
 
 ## JSON representation
 

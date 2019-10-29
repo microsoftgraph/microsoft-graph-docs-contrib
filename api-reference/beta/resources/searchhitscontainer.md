@@ -17,9 +17,9 @@ Represent the list of search results.
 
 | Property     | Type        | Description |
 |:-------------|:------------|:------------|
-|hits|[searchHit](searchhit.md) collection||
-|moreResultsAvailable|Boolean||
-|total|Int32||
+|hits|[searchHit](searchhit.md) collection|Encasulate the Search results.|
+|moreResultsAvailable|Boolean|Provides information if more results are available. In that case you can increase the "from" and "to" offset.|
+|total|Int32|The total number of results. Note this is not the number on results in the page, but the total number of results satisfying the query.|
 
 ## JSON representation
 
