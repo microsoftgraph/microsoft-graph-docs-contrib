@@ -147,6 +147,22 @@ Meeting organizers can allow meeting time proposals, and invitees can suggest al
 | Changed         | Beta          | Extended the existing [uploadSession](/graph/api/resources/uploadsession?view=graph-rest-beta) entity that has been used by [driveItem](/graph/api/resources/driveitem?view=graph-rest-beta) to apply to **attachment** as well. |
 | Addition        | v1.0          | Added the **message** parameter to the method for [replying a message on the fly](/graph/api/message-reply?view=graph-rest-1.0). |
 
+### Search
+
+Microsoft Search is now exposing a way to search and index data in the Microsoft Graph.
+
+| **Change type** | **Version**   | **Description**                          |
+| :-------------- | :------------ | :--------------------------------------- |
+| Addition | Beta | Added the [search-concept-overview](seach-concept-overview.md?view=graph-rest-beta) and the [search-api-overview](/graph/api/resources/search-api-overview?view=graph-rest-beta)|
+| Addition | Beta | Added the [search](/graph/api/search-get?view=graph-rest-beta) resource and the [query](/graph/api/search-query?view=graph-rest-beta) action|
+| Addition | Beta | Added the new [searchRequest] (/graph/api/resource/searchrequest?view=graph-rest-beta) entity |
+| Addition | Beta | Added the new [searchQuery] (/graph/api/resource/searchquery?view=graph-rest-beta) entity |
+| Addition | Beta | Added the new [searchQueryString] (/graph/api/resource/searchquerystring?view=graph-rest-beta) entity |
+| Addition | Beta | Added the new [searchResponse] (/graph/api/resource/searchresponse?view=graph-rest-beta) entity |
+| Addition | Beta | Added the new [searchHitsContainer] (/graph/api/resource/searchhitscontainer?view=graph-rest-beta) entity |
+| Addition | Beta | Added the new [searchHit] (/graph/api/resource/searchhit?view=graph-rest-beta) entity |
+<!---todo nmoreau/raju add the indexing API pages-->
+
 ### Teamwork (Microsoft Teams)
 
 | **Change type** | **Version**   | **Description**                          |
