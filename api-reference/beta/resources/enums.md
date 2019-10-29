@@ -886,3 +886,12 @@ Possible values for user account types (group membership), per Windows definitio
 |user|
 |unknownFutureValue|
 
+
+### priority values
+
+|Member|Value|
+|:---|:---|
+|None|0|
+|High|1|
+|Low|2|
+
