@@ -49,7 +49,7 @@ In the request body, provide a JSON object with the following parameters.
 |clientContext|String|Unique Client Context string. Max limit is 256 chars.|
 
 ## Response
-If succsessful, this method returns a `200 OK` response code and a Location header with a URI to the [inviteParticipantsOperation](../resources/inviteParticipantsOperation.md) created for this request. The body of the response contains the [inviteParticipantsOperation](../resources/inviteParticipantsOperation.md) created.
+If succsessful, this method returns a `200 OK` response code and a Location header with a URI to the [inviteParticipantsOperation](../resources/inviteparticipantsoperation.md) created for this request. The body of the response contains the [inviteParticipantsOperation](../resources/inviteparticipantsoperation.md) created.
 
 >**Note:** When this API returns a successful response, all participants will receive a roster update.
 
