@@ -1,6 +1,6 @@
 ---
 title: "Delete educationalActivity"
-description: "Delete educationalActivity object from a user profile."
+description: "Delete an educationalActivity object from a user profile."
 localization_priority: Normal
 author: "kevinbellinger"
 ms.prod: "people"
@@ -11,7 +11,7 @@ doc_type: "apiPageType"
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Deletes an [educationalActivity](../resources/educationalactivity.md) object from a user's [profile](../resources/profile.md).
+Delete an [educationalActivity](../resources/educationalactivity.md) object from a user's [profile](../resources/profile.md).
 
 ## Permissions
 
@@ -36,7 +36,6 @@ DELETE /me/profile/educationalActivities/{id}
 | Name           |Description                  |
 |:---------------|:----------------------------|
 | Authorization  | Bearer {token}. Required.   |
-| Content-Type   | application/json. Required. |
 
 ## Request body
 
@@ -44,7 +43,7 @@ Do not supply a request body for this method.
 
 ## Response
 
-If successful, this method returns `204 No Content` response code. It does not return anything in the response body.
+If successful, this method returns a `204 No Content` response code. It does not return anything in the response body.
 
 ## Examples
 
