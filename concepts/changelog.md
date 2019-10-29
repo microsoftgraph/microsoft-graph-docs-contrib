@@ -13,28 +13,6 @@ For details about known issues with Microsoft Graph APIs, see [Known issues](kno
 
 ## October 2019
 
-### Identity and access (Azure AD) | Conditional access
-
-| **Change type** | **Version** | **Description**                  |
-|:----------------|:------------|:-----------------------------------------|
-| Addition | beta | Added new entity types:<br/>[conditionalAccessPolicy](/graph/api/resources/conditionalAccessPolicy)<br/>
-| Addition | beta | Added new complex types:<br/>[conditionalAccessSessionControl](/graph/api/resources/conditionalAccessSessionControl)<br/>[applicationEnforcedRestrictionsSessionControl](/graph/api/resources/applicationEnforcedRestrictionsSessionControl)<br/>[cloudAppSecuritySessionControl](/graph/api/resources/cloudAppSecuritySessionControl)<br/>[signInFrequencySessionControl](/graph/api/resources/signInFrequencySessionControl)<br/>[persistentBrowserSessionControl](/graph/api/resources/persistentBrowserSessionControl)<br/>[conditionalAccessSessionControls](/graph/api/resources/conditionalAccessSessionControls)<br/>[conditionalAccessApplications](/graph/api/resources/conditionalAccessApplications)<br/>[conditionalAccessUsers](/graph/api/resources/conditionalAccessUsers)<br/>[conditionalAccessPlatforms](/graph/api/resources/conditionalAccessPlatforms)<br/>[conditionalAccessLocations](/graph/api/resources/conditionalAccessLocations)<br/>[conditionalAccessDeviceStates](/graph/api/resources/conditionalAccessDeviceStates)<br/>[conditionalAccessConditionSet](/graph/api/resources/conditionalAccessConditionSet)<br/>[conditionalAccessGrantControls](/graph/api/resources/conditionalAccessGrantControls)<br/>
-
-### Identity and access (Azure AD)
-
-| **Change type** | **Version** | **Description**                  |
-|:----------------|:------------|:-----------------------------------------|
-| Addition | Beta | Added a new entity type: [Trustframeworkkeyset](/graph/api/resources/trustframeworkkeyset?view=graph-rest-beta) |
-| Addition | Beta | Added new entity type: [Identityuserflow](/graph/api/resources/identityuserflow?view=graph-rest-beta |
-| Addition | v1.0 | Added new [orgContact](/graph/api/resources/orgcontact?view=graph-rest-1.0) resource. These contacts are managed by the organization, and are different from [personal contacts](outlook-contacts-concept-overview.md)|
-| Addition | v1.0 | Added new [physicalOfficeAddress](/graph/api/resources/physicalOfficeAddress?view=graph-rest-1.0) resource. |
-| Addition | beta and v1.0 | Added the **securityIdentifier** property to the [group](/graph/api/resources/group?view=graph-rest-1.0) resource. |
-| Addition | beta and v1.0 | Added the **mdmAppId** property to the [device](/graph/api/resources/group?view=graph-rest-1.0) resource. |
-| Addition | Beta | Added the **manufacturer** and **model** properties to the [device](/graph/api/resources/device?view=graph-rest-beta) entity. |
-| Addition | v1.0 | Added new entity [certificateBasedAuthConfiguration](/graph/api/resources/certificatebasedauthconfiguration?view=graph-rest-v1.0). |
-| Addition | v1.0 | Added new complex type [certificateAuthority](/graph/api/resources/certificateauthority?view=graph-rest-v1.0). |
-| Addition | v1.0 | Added new relationship for **certificateBasedAuthConfiguration** on the [organization](/graph/api/resources/organization?view=graph-rest-v1.0) resource. This enables [certificate-based authentication in Azure Active Directory](https://docs.microsoft.com/azure/active-directory/authentication/active-directory-certificate-based-authentication-get-started).|
-
 ### Calendar
 
 Meeting organizers can allow meeting time proposals, and invitees can suggest alternative meeting times.
@@ -129,14 +107,24 @@ Meeting organizers can allow meeting time proposals, and invitees can suggest al
 
 | **Change type** | **Version** | **Description**                  |
 |:----------------|:------------|:-----------------------------------------|
+| Addition | Beta | Added a new entity type: [Trustframeworkkeyset](/graph/api/resources/trustframeworkkeyset?view=graph-rest-beta) |
+| Addition | Beta | Added new entity type: [Identityuserflow](/graph/api/resources/identityuserflow?view=graph-rest-beta |
 | Addition | v1.0 | Added new [orgContact](/graph/api/resources/orgcontact?view=graph-rest-1.0) resource. These contacts are managed by the organization, and are different from [personal contacts](outlook-contacts-concept-overview.md)|
 | Addition | v1.0 | Added new [physicalOfficeAddress](/graph/api/resources/physicalOfficeAddress?view=graph-rest-1.0) resource. |
 | Addition | beta and v1.0 | Added the **securityIdentifier** property to the [group](/graph/api/resources/group?view=graph-rest-1.0) resource. |
 | Addition | beta and v1.0 | Added the **mdmAppId** property to the [device](/graph/api/resources/group?view=graph-rest-1.0) resource. |
-| Addition | Beta | Added the **manufacturer** and **model** properties to the [device](/graph/api/resources/device?view=graph-rest-beta) entity. |
+| Addition | beta and v1.0 | Added the **manufacturer** and **model** properties to the [device](/graph/api/resources/device?view=graph-rest-1.0) entity. |
 | Addition | v1.0 | Added new entity [certificateBasedAuthConfiguration](/graph/api/resources/certificatebasedauthconfiguration?view=graph-rest-v1.0). |
 | Addition | v1.0 | Added new complex type [certificateAuthority](/graph/api/resources/certificateauthority?view=graph-rest-v1.0). |
 | Addition | v1.0 | Added new relationship for **certificateBasedAuthConfiguration** on the [organization](/graph/api/resources/organization?view=graph-rest-v1.0) resource. This enables [certificate-based authentication in Azure Active Directory](https://docs.microsoft.com/azure/active-directory/authentication/active-directory-certificate-based-authentication-get-started).|
+| Addition | Beta | Added the [namedLocation API](/graph/api/resources/namedLocation?view=graph-rest-beta), which represents named locations in Azure AD conditional access. |
+
+### Identity and access (Azure AD) | Conditional access
+
+| **Change type** | **Version** | **Description**                  |
+|:----------------|:------------|:-----------------------------------------|
+| Addition | beta | Added new entity types:<br/>[conditionalAccessPolicy](/graph/api/resources/conditionalAccessPolicy)<br/>
+| Addition | beta | Added new complex types:<br/>[conditionalAccessSessionControl](/graph/api/resources/conditionalAccessSessionControl)<br/>[applicationEnforcedRestrictionsSessionControl](/graph/api/resources/applicationEnforcedRestrictionsSessionControl)<br/>[cloudAppSecuritySessionControl](/graph/api/resources/cloudAppSecuritySessionControl)<br/>[signInFrequencySessionControl](/graph/api/resources/signInFrequencySessionControl)<br/>[persistentBrowserSessionControl](/graph/api/resources/persistentBrowserSessionControl)<br/>[conditionalAccessSessionControls](/graph/api/resources/conditionalAccessSessionControls)<br/>[conditionalAccessApplications](/graph/api/resources/conditionalAccessApplications)<br/>[conditionalAccessUsers](/graph/api/resources/conditionalAccessUsers)<br/>[conditionalAccessPlatforms](/graph/api/resources/conditionalAccessPlatforms)<br/>[conditionalAccessLocations](/graph/api/resources/conditionalAccessLocations)<br/>[conditionalAccessDeviceStates](/graph/api/resources/conditionalAccessDeviceStates)<br/>[conditionalAccessConditionSet](/graph/api/resources/conditionalAccessConditionSet)<br/>[conditionalAccessGrantControls](/graph/api/resources/conditionalAccessGrantControls)<br/>
 
 ### Mail (Outlook)
 
@@ -147,6 +135,14 @@ Meeting organizers can allow meeting time proposals, and invitees can suggest al
 | Changed         | Beta          | Extended the existing [uploadSession](/graph/api/resources/uploadsession?view=graph-rest-beta) entity that has been used by [driveItem](/graph/api/resources/driveitem?view=graph-rest-beta) to apply to **attachment** as well. |
 | Addition        | v1.0          | Added the **message** parameter to the method for [replying a message on the fly](/graph/api/message-reply?view=graph-rest-1.0). |
 
+### People
+
+| **Change type** | **Version** | **Description**                          |
+| :-------------- | :---------- | :--------------------------------------- |
+|Addition         |Beta         | Added new entities:<br/>[userAccountInformation](/graph/api/resources/useraccountinformation.md?view=graph-rest-beta)<br/>[personAnniversary](/graph/api/resources/personanniversary.md?view=graph-rest-beta)<br/>[educationalActivity](/graph/api/resources/educationalactivity.md?view=graph-rest-beta)<br/>[itemEmail](/graph/api/resources/itememail.md?view=graph-rest-beta)<br/>[personInterest](/graph/api/resources/personinterest.md?view=graph-rest-beta)<br/>[languageProficiency](/graph/api/resources/languageproficiency.md?view=graph-rest-beta)<br/>[personWebsite](/graph/api/resources/personwebsite.md?view=graph-rest-beta)<br/>[itemPhone](/graph/api/resources/itemphone.md?view=graph-rest-beta)<br/>[workPosition](/graph/api/resources/workposition.md?view=graph-rest-beta)<br/>[projectParticipation](/graph/api/resources/projectparticipation.md?view=graph-rest-beta)<br/>[skillProficiency](/graph/api/resources/skillproficiency.md?view=graph-rest-beta)<br/>[webAccount](/graph/api/resources/webaccount.md?view=graph-rest-beta)<br/>[personWebsite](/graph/api/resources/personwebsite.md?view=graph-rest-beta)<br/>|
+|Addition|Beta|Added new complex types:<br/>[companyDetail](/graph/api/resources/companyDetail.md?view=graph-rest-beta)<br/>[educationalActivityDetail](/graph/api/resources/educationalActivityDetail.md?view=graph-rest-beta)<br/>[inferenceData](/graph/api/resources/inferenceData.md?view=graph-rest-beta)<br/>[instituionData](/graph/api/resources/institutiondata.md?view=graph-rest-beta)<br/>[positionDetail](/graph/api/resources/positionDetail.md?view=graph-rest-beta)<br/>[relatedPerson](/graph/api/resources/relatedperson.md?view=graph-rest-beta)<br/>[serviceInformation](/graph/api/resources/serviceinformation.md?view=graph-rest-beta)<br/>[yomiPersonName](/graph/api/resources/yomipersonname.md?view=graph-rest-beta)<br/>|
+|Addition|Beta|Added new enum types:<br/><br/>|
+
 ### Teamwork (Microsoft Teams)
 
 | **Change type** | **Version**   | **Description**                          |
@@ -155,32 +151,18 @@ Meeting organizers can allow meeting time proposals, and invitees can suggest al
 | Addition | Beta | [Reading images in messages](/graph/api/chatmessagehostedcontent-get?view=graph-rest-beta) now support application permissions. |
 
 ### Users
+
 | **Change type** | **Version** | **Description**                          |
 | :-------------- | :---------- | :--------------------------------------- |
 | Addition | v1.0 | Added the new **lastPasswordChangeDateTime** property to the [user](/graph/api/resources/user?view=graph-rest-v1.0) resource. |
-| Addition | beta | Added the [user: reprocessLicenseAssignment API](/graph/api-reference/beta/api/user-reprocesslicense?view=graph-rest-beta), which can be used to reprocess all group-based license assignments for the [user](/graph/api/resources/user?view=graph-rest-beta). |
-| Addition | beta | Added the [user: profile API](/graph/api/profile-list?view=graph-rest-beta) navigation property which can be used retrieve the [profile](/graph/api/resources/profile?view=graph-rest-beta) for a user. |
-
+| Addition | Beta | Added the [user: reprocessLicenseAssignment API](/graph/api-reference/beta/api/user-reprocesslicense?view=graph-rest-beta), which can be used to reprocess all group-based license assignments for the [user](/graph/api/resources/user?view=graph-rest-beta). |
+| Addition | Beta | Added the [user: profile API](/graph/api/profile-list?view=graph-rest-beta) navigation property, which can be used to retrieve the [profile](/graph/api/resources/profile?view=graph-rest-beta) for a user. |
 
 ### Users | Outlook settings
 
 | **Change type** | **Version** | **Description**                  |
 |:----------------|:------------|:-----------------------------------------|
 | Addition        | V1.0        | The **dateFormat** and **timeFormat** properties to the [mailboxSettings](/graph/api/resources/mailboxsettings?view=graph-rest-1.0) resource. The properties represent the user's preferred date and time formats.|
-
-### Identity and access (Azure AD)
-
-| **Change type** | **Version** | **Description**                  |
-|:----------------|:------------|:-----------------------------------------|
-| Addition | beta | Added the [namedLocation API](/graph/api/resources/namedLocation?view=graph-rest-beta), which represents named locations in Azure AD Conditional Access. |
-
-### People
-
-| **Change type** | **Version** | **Description**                          |
-| :-------------- | :---------- | :--------------------------------------- |
-|Addition         |beta         | Added new entities:<br/>[userAccountInformation](/graph/api/resources/useraccountinformation.md?view=graph-rest-beta)<br/>[personAnniversary](/graph/api/resources/personanniversary.md?view=graph-rest-beta)<br/>[educationalActivity](/graph/api/resources/educationalactivity.md?view=graph-rest-beta)<br/>[itemEmail](/graph/api/resources/itememail.md?view=graph-rest-beta)<br/>[personInterest](/graph/api/resources/personinterest.md?view=graph-rest-beta)<br/>[languageProficiency](/graph/api/resources/languageproficiency.md?view=graph-rest-beta)<br/>[personWebsite](/graph/api/resources/personwebsite.md?view=graph-rest-beta)<br/>[itemPhone](/graph/api/resources/itemphone.md?view=graph-rest-beta)<br/>[workPosition](/graph/api/resources/workposition.md?view=graph-rest-beta)<br/>[projectParticipation](/graph/api/resources/projectparticipation.md?view=graph-rest-beta)<br/>[skillProficiency](/graph/api/resources/skillproficiency.md?view=graph-rest-beta)<br/>[webAccount](/graph/api/resources/webaccount.md?view=graph-rest-beta)<br/>[personWebsite](/graph/api/resources/personwebsite.md?view=graph-rest-beta)<br/>|
-|Addition|beta|Added new complex types:<br/>[companyDetail](/graph/api/resources/companyDetail.md?view=graph-rest-beta)<br/>[educationalActivityDetail](/graph/api/resources/educationalActivityDetail.md?view=graph-rest-beta)<br/>[inferenceData](/graph/api/resources/inferenceData.md?view=graph-rest-beta)<br/>[instituionData](/graph/api/resources/institutiondata.md?view=graph-rest-beta)<br/>[positionDetail](/graph/api/resources/positionDetail.md?view=graph-rest-beta)<br/>[relatedPerson](/graph/api/resources/relatedperson.md?view=graph-rest-beta)<br/>[serviceInformation](/graph/api/resources/serviceinformation.md?view=graph-rest-beta)<br/>[yomiPersonName](/graph/api/resources/yomipersonname.md?view=graph-rest-beta)<br/>|
-|Addition|beta|Added new enum types:<br/><br/>|
 
 ## September 2019
 

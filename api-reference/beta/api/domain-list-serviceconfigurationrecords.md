@@ -29,7 +29,7 @@ One of the following permissions is required to call this API. To learn more, in
 ## HTTP request
 <!-- { "blockType": "ignored" } -->
 ```http
-GET /domains/contoso.com/serviceConfigurationRecords
+GET /domains/{id}/serviceConfigurationRecords
 ```
 
 ## Optional query parameters

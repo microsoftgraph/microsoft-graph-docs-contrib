@@ -28,7 +28,7 @@ One of the following permissions is required to call this API. To learn more, in
 <!-- { "blockType": "ignored" } -->
 
 ```http
-POST ~/onPremisesPublishingProfiles/{publishingType}/agents/{id1}/agentGroups/$ref
+POST /onPremisesPublishingProfiles/{publishingType}/agents/{id1}/agentGroups/$ref
 ```
 
 ## Request headers
