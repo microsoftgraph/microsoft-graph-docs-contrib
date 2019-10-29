@@ -7,6 +7,7 @@ ms.prod: "search"
 ---
 
 # Search files
+
 The Microsoft Search query API lets you search files stored in SharePoint or OneDrive.
 
 The relevance model exposed using signals from the Microsoft Graph to promote content users care about based on their relations, and activities.

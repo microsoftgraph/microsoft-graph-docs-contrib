@@ -37,6 +37,16 @@ author: ""
 |appCode|
 |alternateMobilePhone|
 
+### entityTypes values
+
+|Member|
+|:---|
+|microsoft.graph.event|
+|microsoft.graph.message|
+|microsoft.graph.driveItem|
+|microsoft.graph.externalFile|
+|microsoft.graph.externalItem|
+
 ### contactRelationship values
 
 |Member|Value|Description|
