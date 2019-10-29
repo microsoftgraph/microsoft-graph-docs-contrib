@@ -1,5 +1,5 @@
 ---
-title: "Update workposition"
+title: "Update workPosition"
 description: "Update the properties of a workPosition object in a user's profile."
 localization_priority: Normal
 author: "kevinbellinger"
@@ -7,11 +7,11 @@ ms.prod: "people"
 doc_type: "apiPageType"
 ---
 
-# Update workposition
+# Update workPosition
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Update the properties of a [workposition](../resources/workposition.md) object in a user's [profile](../resources/profile.md).
+Update the properties of a [workPosition](../resources/workposition.md) object in a user's [profile](../resources/profile.md).
 
 ## Permissions
 
