@@ -23,7 +23,7 @@ In [Azure AD entitlement management](entitlementmanagement-root.md), an access p
 |isRootScope|Boolean|True if the scopes are arranged in a hierarchy and this is the top or root scope of the resource.|
 |originId|String|The unique identifier for the scope in the resource as defined in the origin system.|
 |originSystem|String|The origin system for the scope.|
-|roleOriginId|String||
+|roleOriginId|String|The origin system for the role, if different.|
 |url|String|A resource locator for the scope.|
 
 ## Relationships

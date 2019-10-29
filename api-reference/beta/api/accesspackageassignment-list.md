@@ -33,7 +33,8 @@ GET /identityGovernance/entitlementManagement/accessPackageAssignments
 
 ## Optional query parameters
 
-This method supports some of the OData query parameters to help customize the response. For general information, see [OData query parameters](/graph/query-parameters).
+This method supports some of the OData query parameters to help customize the response. For example, to retrieve only Delivered assignments, you can include a query `$filter=assignmentState eq 'Delivered'`.
+For general information, see [OData query parameters](/graph/query-parameters).
 
 ## Request headers
 

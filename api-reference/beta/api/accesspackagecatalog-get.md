@@ -33,7 +33,7 @@ GET /identityGovernance/entitlementManagement/accessPackageCatalogs/{id}
 
 ## Optional query parameters
 
-This method supports some of the OData query parameters to help customize the response. For general information, see [OData query parameters](/graph/query-parameters).
+This method supports some of the OData query parameters to help customize the response. For example, to retrieve the access packages in a catalog, include `$expand=accessPackages` in the query. For general information, see [OData query parameters](/graph/query-parameters).
 
 ## Request headers
 
