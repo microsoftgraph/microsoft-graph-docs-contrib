@@ -1,6 +1,6 @@
 ---
 title: "Search messages"
-description: "An application can use the search API to retrieve information from the user’s own mailbox and render this in a dedicated search experience"
+description: "The Microsoft Search API lets apps search for information in email messages, return messages ranked by relevance, and render a dedicated search experience."
 author: "knightsu"
 localization_priority: Normal
 ms.prod: "search"
@@ -8,24 +8,24 @@ ms.prod: "search"
 
 # Search messages
 
-People gather and store a lot information in their email conversation. It is very common that some critical and relevance piece of information is embedded in the body of an email, or in an attachment. An application can use the search API to retrieve information from the user’s own mailbox and render this in a dedicated search experience.
+The Microsoft Search API lets apps search for information in email messages, return messages ranked by relevance, and render a dedicated search experience. The search applies to the body and attachments of messages in the user's own mailbox. 
 
-Moreover, the search API now let developers retrieve email ranked by relevance.
+A search query can include [filters](https://support.office.com/en-us/article/learn-to-narrow-your-search-criteria-for-better-searches-in-outlook-d824d1e9-a255-4c8a-8553-276fb895a8da) that end users enter in the **Search** text box in Outlook.
 
-Message search only applies to user's personal email. You currently cannot search shared or delegated mailboxes using the search API.
+Message search results are sorted by **receivedDateTime** in descending order.
 
-## Search messages
-You can build a search request to query emails in your mailbox, return the first 25 results.
-Results will be ordered by datetime desc.
+Currently, message search applies to only users' own personal accounts, but not work or school accounts, and not in delegated mailboxes. See further [known limitations](#known-limitations) below.
 
-The search term can include any existing know [filtering capability](https://support.office.com/en-us/article/learn-to-narrow-your-search-criteria-for-better-searches-in-outlook-d824d1e9-a255-4c8a-8553-276fb895a8da) users can enter into the search box in Outlook.
+## Examples
 
-Request
+### Example 1
+The following example queries messages in the signed-in user's mailbox that contain the string "contoso" in the sender name, subject, message body, or any attachments. The query returns the first 25 results. 
+
+#### Request
 
 ```HTTP
-POST /search/query
+POST https://graph.microsoft.com/search/query
 Content-Type: application/json
-Authorization: Bearer AAD_TOKEN
 ```
 
 ```json
@@ -44,11 +44,9 @@ Authorization: Bearer AAD_TOKEN
 }
 ```
 
-Response 
+#### Response 
 
-Here is an example of the response. 
-
-Note: The response object shown here might be shortened for readability. All the properties will be returned from an actual call.
+The following is an example of the response which contains one message that matches the search criterion. 
 
 ```json
 {
@@ -60,7 +58,7 @@ Note: The response object shown here might be shortened for readability. All t
             ],
             "hitsContainers": [
                 {
-                    "total": 2,
+                    "total": 1,
                     "moreResultsAvailable": false,
                     "hits": [
                         {
@@ -88,19 +86,16 @@ Note: The response object shown here might be shortened for readability. All t
                                 "sender": {
                                     "emailAddress": {
                                         "name": "Office365 Message Center",
-                                        "address": "o365mc@microsoft.com"
+                                        "address": "o365mc@contoso.com"
                                     }
                                 },
                                 "from": {
                                     "emailAddress": {
                                         "name": "Office365 Message Center",
-                                        "address": "o365mc@microsoft.com",
+                                        "address": "o365mc@contoso.com",
                                     }
                                 }
                             }
-                        },
-                        {
-                            //here another search result
                         }
                     ]
                 }
@@ -110,15 +105,14 @@ Note: The response object shown here might be shortened for readability. All t
 }
 ```
 
-## Search top results messages
-You can build a search request to retrieve emails sorted by relevance.
+### Example 2 Search top results messages
+The following example uses the same search query as [example 1](#example-1), and sorts the results by relevance. 
 
-Request
+#### Request
 
 ```HTTP
 POST /search/query
 Content-Type: application/json
-Authorization: Bearer AAD_TOKEN
 ```
 
 ```json
@@ -139,12 +133,12 @@ Authorization: Bearer AAD_TOKEN
 
 ## Known limitations
 
-- You can only access user’s own mailbox. Searching delegated mailbox is not supported.
+- You can only access a user’s own mailbox. Searching delegated mailbox is not supported 
 
-- For Messages, Total in the [searchHitsContainer](/graph/api/resources/searchhitscontainer?view=graph-rest-beta) contains the number of result in the Page, not the number of matching results.
+- For messages, the **total** property of the [searchHitsContainer](/graph/api/resources/searchhitscontainer?view=graph-rest-beta) type contains the number of results on the page, not the total number of matching results.
 
 ## Next steps
 
 Find out more about:
 
-- The [search API](/graph/api/search-query?view=graph-rest-beta)
+- [Use the search API](/graph/api/resources/search-api-overview?view=graph-rest-beta)
