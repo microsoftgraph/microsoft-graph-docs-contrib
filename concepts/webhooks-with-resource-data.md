@@ -29,7 +29,9 @@ In general, this type of change notifications include the following resource dat
 
 Currently, the Microsoft Teams [chatMessage](/graph/api/resources/chatmessage?view=graph-rest-beta) (preview) resource supports change notifications that include resource data. Specifically, you can set up a subscription that applies to one of the following:
 
+- New or changed messages in all Teams channels in the entire organization (tenant): `/teams/allMessages`	  - New or changed messages in a specific Team channel: `/teams/{id}/channels/{id}/messages`
 - New or changed messages in a specific Teams channel: `/teams/{id}/channels/{id}/messages`
+- New or changed messages in all chats in the entire organization (tenant): `/chats/allMessages`
 - New or changed messages in a specific Teams chat: `/chats/{id}/messages`
 
 The **chatMessage** resource supports including all the properties of a changed instance in a notification. It does not support returning only selective properties of the instance. 
