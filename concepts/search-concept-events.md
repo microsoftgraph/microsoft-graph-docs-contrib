@@ -6,21 +6,20 @@ localization_priority: Normal
 ms.prod: "search"
 ---
 
-# Search Calendar Events
+# Search calendar events
 
-You are able to search in user’s own calendar.
+You can search in a user’s own primary calendar.
 
-## Search calendar events
+## Example
 
-Request
+### Request
 
 ```HTTP
-POST /search/query
+POST https://graph.microsoft.com/search/query
 Content-Type: application/json
-Authorization: Bearer AAD_TOKEN
 ```
 
-Response
+### Response
 
 ```json
 {
@@ -47,4 +46,4 @@ Response
 
 Find out more about:
 
-- The [search API](/graph/api/search-query?view=graph-rest-beta)
+- [Use the search API](/graph/api/resources/search-api-overview?view=graph-rest-beta)
