@@ -8,22 +8,28 @@ ms.prod: "search"
 
 # Search files
 
-The search API lets you search files stored in SharePoint or OneDrive.
+The search API lets you search files stored in SharePoint or OneDrive. It uses a relevance model which makes use of signals from Microsoft Graph about users' relations and activities. This allows returning and promoting content that users care about.
 
-The relevance model exposed using signals from the Microsoft Graph to promote content users care about based on their relations, and activities.
-
-With the files search API you are able build an experience consistent with the the Sharepoint Search result files tab.
-The search API is also able to surface external files ingested in via the indexing API.
+The search API lets you build a file search experience that is consistent with the **Files** tab that lists search results in SharePoint. It 
+can surface external files exposed via the indexing API.
 
 
-## Search OneDrive or SharePoint files
+## Search SharePoint or OneDrive files
 
-Request  
+You can use KQL in search terms of queries for SharePoint and OneDrive. For example:
+
+- "query" : "contoso filetype:docx OR filetype:doc" scopes queries to Word documents
+- "query": "test path:\\"https://contoso.sharepoint.com/sites/Team Site/Documents/Project\\"" scopes the query to a particular folder within a site.
+
+In order to be valid, properties restriction should specify a valid Queryable managed property name in the condition.
+
+### Example
+
+#### Request  
 
 ```HTTP
 POST /search/query
 Content-Type: application/json
-Authorization: Bearer AAD_TOKEN
 ```
 
 ```Json
@@ -43,11 +49,9 @@ Authorization: Bearer AAD_TOKEN
 }
 ```
 
-Response
+#### Response
 
 Here is an example of the response.
-
-Note: The response object shown here might be shortened for readability. All the properties will be returned from an actual call.
 
 <!---TODO nmoreau team Include one example of externalItem response.--> 
 ```Json
@@ -96,24 +100,23 @@ Note: The response object shown here might be shortened for readability. All the
 }
 ```
 
-Queries against SharePoint and OneDrive can use KQL in the search terms to scope the queries.
--	“query” : “contoso filetype:docx OR filetype:doc” will scope the queries to word documents
--	"query": "test path:\\"https://contoso.sharepoint.com/sites/Team Site/Documents/Project\\""will scope the query to a particular folder within a site.
-In order to be valid, properties restriction should specify a valid Queryable managed property name in the condition.
 
-## Search External Files (well-known types)
+
+## Search external files (well-known types)
 
 The indexing API lets you use an build in Connector for external file shares. You can use the query API to query all external files.
 
-Request  
+### Example
+The following example returns all configured externalFile Connector for the tenant, and sorts the results by relevance.
+
+#### Request  
 
 ```HTTP
 POST /search/query
 Content-Type: application/json
-Authorization: Bearer AAD_TOKEN
 ```
 
-```Json
+```json
 {
   "requests": [
     {
@@ -130,9 +133,9 @@ Authorization: Bearer AAD_TOKEN
 }
 ```
 
-Response
+#### Response
 
-```Json
+```json
 {
     "@odata.context": "https://graph.microsoft.com/beta/$metadata#search",
     "value": [{
@@ -169,26 +172,23 @@ Response
 }
 ```
 
-This query will return all configured externalFile Connector for the tenant.
+## Search all files (including externalFile instances)
 
-Results are sorted by relevance.
+You can search all the files in a tenant, including [driveItem](/graph/api/resources/driveitem?view=graph-rest-beta) and all external files, by specifying two entity types in the search request.
 
-## Search all files (including externalFiles)
+The response provide a mix of **driveItem** and externalItem instances in the `_sources` field of each [searchHit](/graph/api/resources/searchhit?view=graph-rest-beta) object.
 
-You can search all files in the tenant, including driveItem and all external files by specifying two entityTypes in the request.
+### Example
+The following example returns all configured **externalFile** connector and **driveItem** objects of the tenant's that satisfy the search terms. It sorts the results by relevance.
 
-The response will provide a blend of driveItem and externalItems in the _sources field of each [searchHit](/graph/api/resources/searchhit?view=graph-rest-beta).
-
-
-Request  
+### Request  
 
 ```HTTP
-POST /search/query
+POST https://graph.microsoft.com/beta/search/query
 Content-Type: application/json
-Authorization: Bearer AAD_TOKEN
 ```
 
-```Json
+```json
 {
   "requests": [
     {
@@ -205,17 +205,13 @@ Authorization: Bearer AAD_TOKEN
 }
 ```
 
-This query will return all configured externalFile Connector and driveItems for the tenant satisfying the search terms.
-
-Results are sorted by relevance.
-
 ## Known limitations
 
-- You cannot scope a query to a particular ConnectionId
+You cannot scope a query to a particular ConnectionId.
 
 
 ## Next steps
 
 Find out more about:
 
-- The [search API](/graph/api/search-query?view=graph-rest-beta)
+- [Use the search API](/graph/api/resources/search-api-overview?view=graph-rest-beta)

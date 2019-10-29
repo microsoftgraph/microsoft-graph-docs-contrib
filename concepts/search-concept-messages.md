@@ -24,7 +24,7 @@ The following example queries messages in the signed-in user's mailbox that cont
 #### Request
 
 ```HTTP
-POST https://graph.microsoft.com/search/query
+POST https://graph.microsoft.com/beta/search/query
 Content-Type: application/json
 ```
 
@@ -111,7 +111,7 @@ The following example uses the same search query as [example 1](#example-1), and
 #### Request
 
 ```HTTP
-POST /search/query
+POST https://graph.microsoft.com/beta/search/query
 Content-Type: application/json
 ```
 

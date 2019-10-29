@@ -15,7 +15,7 @@ You can search in a user’s own primary calendar.
 ### Request
 
 ```HTTP
-POST https://graph.microsoft.com/search/query
+POST https://graph.microsoft.com/beta/search/query
 Content-Type: application/json
 ```
 
@@ -40,7 +40,7 @@ Content-Type: application/json
 
 ## Known limitations
 
-- You can only access user’s own calendar. Shared or delegated access is not supported.
+You can only access user’s own calendar. Shared or delegated access is not supported.
 
 ## Next steps
 

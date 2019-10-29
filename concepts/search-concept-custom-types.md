@@ -6,29 +6,28 @@ localization_priority: Normal
 ms.prod: "search"
 ---
 
-# Search custom types (ExternalItem)
+# Search custom types (externalItem)
 
-Indexing API (preview) let you import external data into Microsoft Search. Ingested content will be surfaced in some Microsoft Search experiences. The search API lets you run search queries on this external content.
+The indexing API (preview) lets you import external data into Microsoft Search. The ingested content is surfaced in some Microsoft Search experiences. The search API lets you run search queries on this external content.
 
-## Search custom types
+To search for custom types, specify the following in the [query](/graph/api/search-query?view=graph-rest-beta) method request body:
 
-To search for custom types you will need to provide :
+- The **contentSources** property to include the connection ID which is assigned during the connector setup
 
-- The Connectionid which has been assigned during the Connector setup
+- The **entityType** property as `externalItem`
 
-- Specify the entityType as externalItem
+- The **stored_fields** property to include the fields in the external item you want to retrieve 
 
-- Specify the fields you want to retrieve in the Stored_field property
+## Example
 
-Request  
+### Request  
 
 ```HTTP
-POST /search/query
+POST https://graph.microsoft.com/beta/search/query
 Content-Type: application/json
-Authorization: Bearer AAD_TOKEN
 ```
 
-```Json
+```json
 {
   "requests": [
     {
@@ -64,12 +63,12 @@ Response
 
 ## Known limitations
 
-- Custom types don’t support searching across multiple contentSources. You can only search one '''connectionId at the time.
+- Custom types don’t support searching across multiple sources (specified in **contentSources**). You can only search one '''connectionId at the time.
 
-- Stored_fields have to be specified, otherwise search results won’t be returned.
+- You must specify the **stored_fields** property, otherwise search results are not returned.
 
 ## Next steps
 
 Find out more about:
 
-- The [search API](/graph/api/search-query?view=graph-rest-beta)
+- [Use the search API](/graph/api/resources/search-api-overview?view=graph-rest-beta)
