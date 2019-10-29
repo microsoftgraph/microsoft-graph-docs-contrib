@@ -225,6 +225,18 @@ items:
             href: outlook-immutable-id.md
       - name: Reports
         href: reportroot-concept-overview.md
+      - name: Search
+        items:
+          - name: Overview
+            href: search-concept-overview.md
+          - name: Search messages
+            href: search-concept-messages.md
+          - name: Search events
+            href: search-concept-events.md
+          - name: Search files
+            href: search-concept-files.md                      
+          - name: Search connectors
+            href: search-concept-custom-types.md          
       - name: Security
         items:
           - name: Overview

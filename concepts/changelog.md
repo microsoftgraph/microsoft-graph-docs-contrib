@@ -30,7 +30,7 @@ For details about known issues with Microsoft Graph APIs, see [Known issues](kno
 | Addition | v1.0 | Added new [physicalOfficeAddress](/graph/api/resources/physicalOfficeAddress?view=graph-rest-1.0) resource. |
 | Addition | beta and v1.0 | Added the **securityIdentifier** property to the [group](/graph/api/resources/group?view=graph-rest-1.0) resource. |
 | Addition | beta and v1.0 | Added the **mdmAppId** property to the [device](/graph/api/resources/group?view=graph-rest-1.0) resource. |
-| Addition | Beta | Added the **manufacturer** and **model** properties to the [device](/graph/api/resources/device?view=graph-rest-beta) entity. |
+| Addition | beta and v1.0 | Added the **manufacturer** and **model** properties to the [device](/graph/api/resources/device?view=graph-rest-1.0) entity. |
 | Addition | v1.0 | Added new entity [certificateBasedAuthConfiguration](/graph/api/resources/certificatebasedauthconfiguration?view=graph-rest-v1.0). |
 | Addition | v1.0 | Added new complex type [certificateAuthority](/graph/api/resources/certificateauthority?view=graph-rest-v1.0). |
 | Addition | v1.0 | Added new relationship for **certificateBasedAuthConfiguration** on the [organization](/graph/api/resources/organization?view=graph-rest-v1.0) resource. This enables [certificate-based authentication in Azure Active Directory](https://docs.microsoft.com/azure/active-directory/authentication/active-directory-certificate-based-authentication-get-started).|
@@ -149,8 +149,18 @@ Meeting organizers can allow meeting time proposals, and invitees can suggest al
 
 ### Search
 
+Microsoft Search is now exposing a way to search and index data in the Microsoft Graph.
+
 | **Change type** | **Version**   | **Description**                          |
 | :-------------- | :------------ | :--------------------------------------- |
+| Addition | Beta | Added the [search-concept-overview](search-concept-overview.md?view=graph-rest-beta) and the [search-api-overview](/graph/api/resources/search-api-overview?view=graph-rest-beta)|
+| Addition | Beta | Added the [search](/graph/api/search-get?view=graph-rest-beta) resource and the [query](/graph/api/search-query?view=graph-rest-beta) action|
+| Addition | Beta | Added the new [searchRequest] (/graph/api/resource/searchrequest?view=graph-rest-beta) entity |
+| Addition | Beta | Added the new [searchQuery] (/graph/api/resource/searchquery?view=graph-rest-beta) entity |
+| Addition | Beta | Added the new [searchQueryString] (/graph/api/resource/searchquerystring?view=graph-rest-beta) entity |
+| Addition | Beta | Added the new [searchResponse] (/graph/api/resource/searchresponse?view=graph-rest-beta) entity |
+| Addition | Beta | Added the new [searchHitsContainer] (/graph/api/resource/searchhitscontainer?view=graph-rest-beta) entity |
+| Addition | Beta | Added the new [searchHit] (/graph/api/resource/searchhit?view=graph-rest-beta) entity |
 | Addition        | beta          | Added the [Indexing API](/graph/api/resources/indexing-api-overview?view=graph-rest-beta) |
 
 ### Teamwork (Microsoft Teams)

@@ -37,6 +37,16 @@ author: ""
 |appCode|
 |alternateMobilePhone|
 
+### entityTypes values
+
+|Member|
+|:---|
+|microsoft.graph.event|
+|microsoft.graph.message|
+|microsoft.graph.driveItem|
+|microsoft.graph.externalFile|
+|microsoft.graph.externalItem|
+
 ### contactRelationship values
 
 |Member|Value|Description|
@@ -894,6 +904,16 @@ Possible values for user account types (group membership), per Windows definitio
 |user|
 |unknownFutureValue|
 
+### entityType values
+
+| Member       | 
+|:--------------|
+|event|
+|message|
+|driveItem|
+|externalFile|
+|externalItem|
+
 ### conditionalAccessPolicyState
 
 |Member|
@@ -953,4 +973,4 @@ Possible values for user account types (group membership), per Windows definitio
 |windows|
 |windowsPhone|
 |macOS|
-|all|
+|all
