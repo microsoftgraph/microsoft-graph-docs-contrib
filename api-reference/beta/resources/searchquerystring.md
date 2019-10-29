@@ -9,6 +9,8 @@ doc_type: "resourcePageType"
 
 # searchQueryString resource type
 
+[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
+
 The search terms for the query.
 
 ## Properties

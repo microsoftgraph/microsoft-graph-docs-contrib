@@ -9,13 +9,15 @@ doc_type: "resourcePageType"
 
 # searchQuery resource type
 
+[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
+
 The top level object describing the search query containing the search terms, and some potential additional filters.
 
 ## Properties
 
 | Property     | Type        | Description |
 |:-------------|:------------|:------------|
-|query_string|[searchQueryString](searchquerystring.md)||
+|query_string|[searchQueryString](searchquerystring.md)|The search query containing the search terms.|
 
 ## JSON representation
 

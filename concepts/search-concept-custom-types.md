@@ -7,6 +7,7 @@ ms.prod: "search"
 ---
 
 # Search custom types (ExternalItem)
+
 Connectors (Beta) let you import external data into the Microsoft Search index. Ingested content will be surfaced in some Microsoft Search experiences. The Microsoft Search query API lets you run search queries on this ingested content.
 
 ## Search custom types
@@ -69,4 +70,4 @@ Response
 
 Find out more about:
 
-- The Microsoft Search [Query API](/graph/api/resources/search-query?view=graph-rest-beta)
+- The Microsoft Search [Query API](/graph/api/search-query?view=graph-rest-beta)
