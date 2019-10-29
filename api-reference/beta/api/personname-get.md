@@ -28,7 +28,7 @@ One of the following permissions is required to call this API. To learn more, in
 <!-- { "blockType": "ignored" } -->
 
 ```http
-JSON2MD ERROR: COULD NOT DETERMINE API PATH
+GET /me/profile/names/{id}
 ```
 
 ## Optional query parameters
@@ -69,7 +69,7 @@ The following is an example of the request.
 }-->
 
 ```http
-GET /me/profile/names/{id}
+GET https://graph.microsoft.com/beta/me/profile/names/{id}
 ```
 
 ### Response
