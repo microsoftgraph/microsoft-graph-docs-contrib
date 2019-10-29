@@ -352,9 +352,6 @@ Content-Type: application/json
   "@odata.type": "microsoft.graph.commsNotifications"
 }-->
 ```json
-HTTP/1.1 200 OK
-Content-Type: application/json
-
 {
   "@odata.type": "#microsoft.graph.commsNotifications",
   "value": [
@@ -575,8 +572,6 @@ Content-Type: application/json
 }-->
 
 ```json
-HTTP/1.1 200 OK
-Content-Type: application/json
 {
   "id": "eec3812a-fdc3-4fb4-825c-a06c9f35414e",
   "status": "Completed",
