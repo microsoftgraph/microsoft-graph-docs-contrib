@@ -62,5 +62,4 @@ DELETE /external/connections/contosohelpdesk/items/SR00145
 - [Using the indexing API](/graph/api/resources/indexing-api-overview?view=graph-rest-beta)
 - [Search for externalItems](search-concept-custom-types.md)
 - [Search for externalFiles](search-concept-files.md)
-- Download the indexing API Postman collection to try out the API.
-- Download the indexing API sample from GitHub.
+- Download the [sample search connector](https://github.com/microsoftgraph/msgraph-search-connector-sample) from GitHub

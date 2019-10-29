@@ -34,5 +34,4 @@ Looking for the API reference for this service?
 - Learn about:
   - [Managing connections to the Microsoft Search service](search-index-manage-connections.md)
   - [Managing items in the index](search-index-manage-items.md)
-- Download the indexing API Postman collection to try out the API.
-- Download the indexing API sample from GitHub
+- Download the [sample search connector](https://github.com/microsoftgraph/msgraph-search-connector-sample) from GitHub

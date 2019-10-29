@@ -38,5 +38,4 @@ You can delete a connection using the [delete connection API](/graph/api/externa
 - [Why integrate with Microsoft Search indexing](search-index-overview.md)
 - [Using the indexing API](/graph/api/resources/indexing-api-overview?view=graph-rest-beta)
 - [Overview for Microsoft Graph Connectors](/microsoftsearch/connectors-overview)
-- Download the indexing API Postman collection to try out the API.
-- Download the indexing API sample from GitHub.
+- Download the [sample search connector](https://github.com/microsoftgraph/msgraph-search-connector-sample) from GitHub
