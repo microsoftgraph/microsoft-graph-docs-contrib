@@ -80,7 +80,7 @@ The names to be used should the name of the retrievable Managed Property configu
 
 The API lets you specify a KQL clause in the query terms which lets you specify free text keywords, operators (AND, OR,…) and property restriction. The syntax and command you will be using will depend on the entityType you target in the searchRequest.
 
-Depending on the entityType, the searchable property vary:  
+Depending on the entityType, the searchable properties vary:  
   - [message properties](https://docs.microsoft.com/en-us/microsoft-365/compliance/keyword-queries-and-search-conditions#searchable-email-properties)
   - [driveItem properties](https://docs.microsoft.com/en-us/microsoft-365/compliance/keyword-queries-and-search-conditions#searchable-site-properties)
   

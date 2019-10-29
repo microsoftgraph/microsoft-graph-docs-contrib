@@ -22,7 +22,7 @@ The search request to be sent to the query endpoint. It contains the type of ent
 |enableTopResults|Boolean|This will trigger relevance sorting for messages <br> This is only applicable for entityType=`microsoft.graph.message`|
 |entityTypes|entityTypes| Possible values are: `microsoft.graph.event`, `microsoft.graph.message`, `microsoft.graph.driveItem`, `microsoft.graph.externalFile`, `microsoft.graph.externalItem`.|
 |from|Int32|Specifies the offset for the search results. Offset 0 will returm the very first result|
-|query|[searchQuery](searchquery.md)|contains the query terms|
+|query|[searchQuery](searchquery.md)|Contains the query terms|
 |size|Int32|The size of the page to be retrieved.|
 
 ## JSON representation
