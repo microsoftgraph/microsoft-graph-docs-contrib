@@ -60,13 +60,13 @@ Content-type: application/json
 {
   "notification": {
     "targetHostName": "targetHostName-value",
-    "appNotificationId": "appNotificationID-value"
+    "appNotificationId": "appNotificationID-value",
     "expirationDateTime": "datetime-value",
     "targetPolicy": {
 	  "platformTypes": [
 		"platformTypes-value"
 		]
-      } 
+      }, 
     "payload": {
       "rawContent": "rawContent-value",
       "visualContent": {
