@@ -120,6 +120,7 @@ HTTP/1.1 200 OK
 Content-Type: application/json
 
 {
+  "@odata.type": "#microsoft.graph.inviteParticipantsOperation",
   "id": "eec3812a-fdc3-4fb4-825c-a06c9f35414e",
   "status": "Running",
   "clientContext": "f2fa86af-3c51-4bc2-8fc0-475452d9764f",
@@ -132,7 +133,6 @@ Content-Type: application/json
       "identity": {
         "user": {
           "id": "278405a3-f568-4b3e-b684-009193463064",
-          "displayName": "Participant",
           "identityProvider": "AAD",
           "tenantId": "72f988bf-86f1-41af-91ab-2d7cd011db47"
         },
@@ -157,29 +157,36 @@ Content-Type: application/json
   "@odata.type": "microsoft.graph.commsNotifications"
 }-->
 ```json
-{
-  "id": "790d8c45-7a74-46dd-90cd-4549b0634fa6",
-  "status": "Running",
-  "clientContext": "f2fa86af-3c51-4bc2-8fc0-475452d9764f",
-  "resultInfo": null,
-  "participants": [
-    {
-      "endpointType": null,
-      "id": null,
-      "replacesCallId": "a7ebfb2d-871e-419c-87af-27290b22e8db",
-      "identity": {
-        "user": {
-          "id": "278405a3-f568-4b3e-b684-009193463064",
-          "displayName": "Participant",
-          "identityProvider": "AAD",
-          "tenantId": "72f988bf-86f1-41af-91ab-2d7cd011db47"
-        },
-        "application": null,
-        "device": null,
-        "phone": null
+{ 
+   "@odata.type":"#microsoft.graph.commsNotifications",
+   "value":[ 
+      { 
+         "@odata.type":"#microsoft.graph.commsNotification",
+         "changeType":"deleted",
+         "resource":"/app/calls/ab6233a5-20b7-4c5e-bea2-ce56c9776429/operations/eec3812a-fdc3-4fb4-825c-a06c9f35414e",
+         "resourceUrl":"/communications/calls/ab6233a5-20b7-4c5e-bea2-ce56c9776429/operations/eec3812a-fdc3-4fb4-825c-a06c9f35414e",
+         "resourceData":{ 
+            "@odata.type":"#microsoft.graph.inviteParticipantsOperation",
+            "participants":[ 
+               { 
+                  "@odata.type":"#microsoft.graph.invitationParticipantInfo",
+                  "identity":{ 
+                     "@odata.type":"#microsoft.graph.identitySet",
+                     "user":{ 
+                        "@odata.type":"#microsoft.graph.identity",
+                        "id":"278405a3-f568-4b3e-b684-009193463064",
+                        "identityProvider":"AAD",
+                        "tenantId":"72f988bf-86f1-41af-91ab-2d7cd011db47"
+                     }
+                  }
+               }
+            ],
+            "status":"completed",
+            "clientContext":"f2fa86af-3c51-4bc2-8fc0-475452d9764f",
+            "id":"eec3812a-fdc3-4fb4-825c-a06c9f35414e"
+         }
       }
-    }
-  ]
+   ]
 }
 ```
 
@@ -201,8 +208,8 @@ Content-Type: application/json
       {
          "@odata.type":"#microsoft.graph.commsNotification",
          "changeType":"updated",
-         "resource":"/app/calls/7531d31f-d10d-44de-802f-c569dbca451c/participants",
-         "resourceUrl":"/communications/calls/7531d31f-d10d-44de-802f-c569dbca451c/participants",
+         "resource":"/app/calls/ab6233a5-20b7-4c5e-bea2-ce56c9776429/participants",
+         "resourceUrl":"/communications/calls/ab6233a5-20b7-4c5e-bea2-ce56c9776429/participants",
          "resourceData":[
             {
                "@odata.type":"#microsoft.graph.participant",
@@ -212,7 +219,6 @@ Content-Type: application/json
                      "@odata.type":"#microsoft.graph.identitySet",
                      "application":{
                         "@odata.type":"#microsoft.graph.identity",
-                        "displayName":"Participant",
                         "id":"278405a3-f568-4b3e-b684-009193463064",
                         "tenantId":"72f988bf-86f1-41af-91ab-2d7cd011db47"
                      }
@@ -285,10 +291,6 @@ Content-Type: application/json
 }
 ```
 ##### Response
-```http
-HTTP/1.1 200 OK
-Content-Type: application/json
-```
 
 <!-- {
   "blockType": "response",
@@ -296,8 +298,12 @@ Content-Type: application/json
   "@odata.type": "microsoft.graph.inviteParticipantsOperation"
 } -->
 
-```json
+```http
+HTTP/1.1 200 OK
+Content-Type: application/json
+
 {
+   "@odata.type": "#microsoft.graph.inviteParticipantsOperation",
    "id":"eec3812a-fdc3-4fb4-825c-a06c9f35414e",
    "status":"Running",
    "clientContext":"f2fa86af-3c51-4bc2-8fc0-475452d9764f",
@@ -310,7 +316,6 @@ Content-Type: application/json
          "identity":{
             "user":{
                "id":"7e1b4346-85a6-4bdd-abe3-d11c5d420efe",
-               "displayName":"Participant1",
                "identityProvider":"AAD",
                "tenantId":"72f988bf-86f1-41af-91ab-2d7cd011db47"
             },
@@ -326,7 +331,6 @@ Content-Type: application/json
          "identity":{
             "user":{
                "id":"1e126418-44a0-4a94-a6f8-0efe1ad71acb",
-               "displayName":"Participant2",
                "identityProvider":"AAD",
                "tenantId":"72f988bf-86f1-41af-91ab-2d7cd011db47"
             },
@@ -365,9 +369,10 @@ Content-Type: application/json
             "@odata.type": "#microsoft.graph.invitationParticipantInfo",
             "identity": {
               "@odata.type": "#microsoft.graph.identitySet",
-              "application": {
-                "@odata.type": "#microsoft.graph.identity",
-                "id": "7e1b4346-85a6-4bdd-abe3-d11c5d420efe"
+              "user":{
+                "id":"7e1b4346-85a6-4bdd-abe3-d11c5d420efe",
+                "identityProvider":"AAD",
+                "tenantId":"72f988bf-86f1-41af-91ab-2d7cd011db47"
               }
             }
           },
@@ -375,9 +380,10 @@ Content-Type: application/json
             "@odata.type": "#microsoft.graph.invitationParticipantInfo",
             "identity": {
               "@odata.type": "#microsoft.graph.identitySet",
-              "application": {
-                "@odata.type": "#microsoft.graph.identity",
-                "id": "1e126418-44a0-4a94-a6f8-0efe1ad71acb"
+              "user":{
+                "id":"1e126418-44a0-4a94-a6f8-0efe1ad71acb",
+                "identityProvider":"AAD",
+                "tenantId":"72f988bf-86f1-41af-91ab-2d7cd011db47"
               }
             }
           }
@@ -421,7 +427,6 @@ Content-Type: application/json
               "@odata.type": "#microsoft.graph.identitySet",
               "application": {
                 "@odata.type": "#microsoft.graph.identity",
-                "displayName": "Participant1",
                 "id": "7e1b4346-85a6-4bdd-abe3-d11c5d420efe",
                 "tenantId": "72f988bf-86f1-41af-91ab-2d7cd011db47"
               }
@@ -447,10 +452,11 @@ Content-Type: application/json
             "@odata.type": "#microsoft.graph.participantInfo",
             "identity": {
               "@odata.type": "#microsoft.graph.identitySet",
-              "application": {
-                "@odata.type": "#microsoft.graph.identity",
-                "id": "1e126418-44a0-4a94-a6f8-0efe1ad71acb"
-              }
+              "user":{
+                "id":"1e126418-44a0-4a94-a6f8-0efe1ad71acb",
+                "identityProvider":"AAD",
+                "tenantId":"72f988bf-86f1-41af-91ab-2d7cd011db47"
+             }
             },
             "endpointType": "default"
           },
@@ -487,6 +493,7 @@ will be read and the rest of the participants will be ignored.
 > For  details about using `replacesCallId` to replace an existing peer-to-peer call, 
 > see [invitationParticipantInfo](../resources/invitationparticipantinfo.md).
 
+##### Request
 <!-- {
   "blockType": "request",
   "name": "participant-invite-existing"
@@ -517,18 +524,18 @@ Content-Type: application/json
 
 ##### Response
 
+<!-- {
+  "blockType": "response",
+  "truncated": "true",
+  "@odata.type": "microsoft.graph.inviteParticipantsOperation"
+}-->
+
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
-```
-<!-- {
-  "blockType": "example",
-  "truncated": "true",
-  "@odata.type": "microsoft.graph.commsNotifications"
-}-->
 
-```json
 {
+  "@odata.type": "#microsoft.graph.inviteParticipantsOperation",
   "id": "278405a3-f568-4b3e-b684-009193463064",
   "status": "Running",
   "clientContext": "f2fa86af-3c51-4bc2-8fc0-475452d9764f",
@@ -567,29 +574,36 @@ Content-Type: application/json
 }-->
 
 ```json
-{
-  "id": "eec3812a-fdc3-4fb4-825c-a06c9f35414e",
-  "status": "Completed",
-  "clientContext": "f2fa86af-3c51-4bc2-8fc0-475452d9764f",
-  "resultInfo": null,
-  "participants": [
-    {
-      "endpointType": null,
-      "id": null,
-      "replacesCallId": "a7ebfb2d-871e-419c-87af-27290b22e8db",
-      "identity": {
-        "user": {
-          "id": "7e1b4346-85a6-4bdd-abe3-d11c5d420efe",
-          "displayName": "Participant",
-          "identityProvider": "AAD",
-          "tenantId": "72f988bf-86f1-41af-91ab-2d7cd011db47"
-        },
-        "application": null,
-        "device": null,
-        "phone": null
+{ 
+   "@odata.type":"#microsoft.graph.commsNotifications",
+   "value":[ 
+      { 
+         "@odata.type":"#microsoft.graph.commsNotification",
+         "changeType":"deleted",
+         "resource":"/app/calls/ab6233a5-20b7-4c5e-bea2-ce56c9776429/operations/278405a3-f568-4b3e-b684-009193463064",
+         "resourceUrl":"/communications/calls/ab6233a5-20b7-4c5e-bea2-ce56c9776429/operations/278405a3-f568-4b3e-b684-009193463064",
+         "resourceData":{ 
+            "@odata.type":"#microsoft.graph.inviteParticipantsOperation",
+            "participants":[ 
+               { 
+                  "@odata.type":"#microsoft.graph.invitationParticipantInfo",
+                  "identity":{ 
+                     "@odata.type":"#microsoft.graph.identitySet",
+                     "user":{ 
+                        "@odata.type":"#microsoft.graph.identity",
+                        "id":"7e1b4346-85a6-4bdd-abe3-d11c5d420efe",
+                        "identityProvider":"AAD",
+                        "tenantId":"72f988bf-86f1-41af-91ab-2d7cd011db47"
+                     }
+                  }
+               }
+            ],
+            "status":"completed",
+            "clientContext":"f2fa86af-3c51-4bc2-8fc0-475452d9764f",
+            "id":"278405a3-f568-4b3e-b684-009193463064"
+         }
       }
-    }
-  ]
+   ]
 }
 ```
 
@@ -621,10 +635,10 @@ Content-Type: application/json
                   "@odata.type":"#microsoft.graph.participantInfo",
                   "identity":{
                      "@odata.type":"#microsoft.graph.identitySet",
-                     "application":{
+                     "user":{ 
                         "@odata.type":"#microsoft.graph.identity",
-                        "displayName":"Participant",
                         "id":"7e1b4346-85a6-4bdd-abe3-d11c5d420efe",
+                        "identityProvider":"AAD",
                         "tenantId":"72f988bf-86f1-41af-91ab-2d7cd011db47"
                      }
                   },

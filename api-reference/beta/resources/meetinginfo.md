@@ -25,6 +25,22 @@ the [tokenMeetingInfo](tokenmeetinginfo.md).
 | Organizer          | [organizerMeetingInfo](./organizermeetinginfo.md)       | Details about the organizer of the meeting                                              |
 | Token       | [tokenMeetingInfo](tokenmeetinginfo.md)         | An encrypted token that contains the information about the meeting
 
+## JSON representation
+
+The following is a JSON representation of the resource.
+
+<!-- {
+  "blockType": "resource",
+  "optionalProperties": [
+
+  ],
+  "@odata.type": "microsoft.graph.meetingInfo"
+}-->
+```json
+{
+}
+```
+
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2015-10-25 14:57:30 UTC -->
 <!--
