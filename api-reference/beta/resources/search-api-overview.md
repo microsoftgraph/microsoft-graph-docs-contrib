@@ -13,6 +13,8 @@ doc_type: resourcePageType
 
 Using the Microsoft Search API, apps can query Office 365 data in the context of the authenticated user.
 
+Requests to index data are performed on behalf of an application using a [token](/graph/auth-v2-service.md) with delegated permissions.
+
 ## Common use cases
 
 The search API provides a [query](../api/search-query.md) method to search across your data in Microsoft Search. This section lists the common use cases, based on the properties you set in the **query** request body.

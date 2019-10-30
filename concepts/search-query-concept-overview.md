@@ -44,9 +44,8 @@ You can search across the following data .
 
 Looking for the API reference for this service?
 
-- [Search API in Microsoft Graph](/graph/api/resources/search-api-overview)
-- [Indexing API in Microsoft Graph (preview)](/graph/api/resources/search-api-overview) 
-<!--TODO nmoreau Fix the link to indexing API--->
+- [Search API in Microsoft Graph](/graph/api/resources/search-api-overview.md)
+- [Indexing API in Microsoft Graph (preview)](/graph/api/resources/indexing-api-overview.md)
 
 ## Next steps
 
