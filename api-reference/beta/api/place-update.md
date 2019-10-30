@@ -71,7 +71,7 @@ If successful, this method returns a `200 OK` response code and an updated [plac
 
 The following is an example of the request.
 
-# [HTTP](#tab/http)
+### [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "update_room"
@@ -143,6 +143,54 @@ Content-type: application/json
     "displayDevice": "surface hub"
 }
 ```
+
+### Example 2: Update a roomlist
+
+### Request
+
+The following is an example of the request.
+<!-- {
+  "blockType": "request",
+  "name": "get_roomlist"
+}-->
+
+```http
+GET https://graph.microsoft.com/beta/places/microsoft.graph.roomlist
+```
+
+### Response
+
+The following is an example of the response.
+
+> [!NOTE]
+> The response object shown here might be shortened for readability. All the properties will be returned from an actual call.
+
+<!-- {
+  "blockType": "response",
+  "truncated": true,
+  "@odata.type": "microsoft.graph.roomList"
+} -->
+
+```http
+HTTP/1.1 200 OK
+Content-type: application/json
+
+{
+  "id": "DC404124-302A-92AA-F98D-7B4DEB0C1705",
+  "displayName": "Building 12",
+  "address": {
+       "street": "123 Contoso Way",
+       "city": "Redmond",
+       "state": "WA",
+       "postalCode": "98052",
+       "countryOrRegion": "USA",
+       },
+  "geocoordinates": null,
+  "phone": null,
+  "emailAddress": "bldg12@contoso.com"
+}
+```
+
 
 <!-- uuid: 16cd6b66-4b1a-43a1-adaf-3a886856ed98
 2019-02-04 14:57:30 UTC -->
