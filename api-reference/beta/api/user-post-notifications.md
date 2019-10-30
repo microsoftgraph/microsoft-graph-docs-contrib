@@ -15,14 +15,14 @@ Create and send a notification targeting a user through Microsoft Graph. The not
 ## Permissions
 Your application service does not require any additional permissions to post notifications to your targeted user.  
 
-> [!NOTE]
+> [!IMPORTANT]
 > If you choose to post notifications on behalf of a user via delegated permissions instead, one of the following permissions is required to call this API. We don't recommend this option for posting notifications but if you'd like to learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
 
-> |Permission type      | Permissions (from least to most privileged)              |
-> |:--------------------|:---------------------------------------------------------|
-> |Delegated (work or school account) | Notifications.ReadWrite.CreatedByApp    |
-> |Delegated (personal Microsoft account) | Notifications.ReadWrite.CreatedByApp    |
-> | Application                           | Not supported. |
+|Permission type      | Permissions (from least to most privileged)              |
+|:--------------------|:---------------------------------------------------------|
+|Delegated (work or school account) | Notifications.ReadWrite.CreatedByApp    |
+|Delegated (personal Microsoft account) | Notifications.ReadWrite.CreatedByApp    |
+| Application                           | Not supported. |
 
 
 ## HTTP request
