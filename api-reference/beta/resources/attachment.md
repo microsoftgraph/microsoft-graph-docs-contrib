@@ -22,8 +22,7 @@ Events in group calendars do not support attachments.
 * An item (contact, event or message, represented by an [itemAttachment](../resources/itemattachment.md) resource)
 * A link to a file ([referenceAttachment](../resources/referenceattachment.md) resource)
 
->**Note**: Since there is currently a limit of 4MB on the total size of each REST request, in general, this limits the 
-size of the file or item attachment you can add to under 4MB. 
+>**Note**: There is a limit to the size of the file or item attachment you can add to under 4 MB. 
 >
 > However, if you're attaching to a message a file that is between 3MB and 150MB, you can [create an upload session](../api/attachment-createuploadsession.md) and iteratively upload ranges of the file to attach it. See [attach large files to Outlook messages](/graph/outlook-large-attachments) for an example.
 
@@ -35,7 +34,7 @@ The following methods apply to any of the derived types of attachments (**fileAt
 |:---------------|:--------|:----------|
 |[Get attachment](../api/attachment-get.md) | [attachment](attachment.md) |Read the properties, relationships, or raw contents of an attachment, attached to a user event, message, Outlook task, or post.|
 |[Add attachment to a user event](../api/event-post-attachments.md) | [attachment](attachment.md) |Add a file, item, or link attachment to an event in a user calendar.|
-|[Add attachment to a message](../api/message-post-attachments.md) | [attachment](attachment.md) |Add a file, item, or link attachment to a message. If attaching a file, the file size must be less than 4MB.|
+|[Add attachment to a message](../api/message-post-attachments.md) | [attachment](attachment.md) |Add a file, item, or link attachment to a message. This operation limits the size of the attachment you can add to under 4 MB.|
 |[Create session to attach large file](../api/attachment-createuploadsession.md)| [uploadSession](uploadsession.md) | Create an upload session that allows an app to iteratively upload ranges of a file, so as to attach the file to the specified **message**. The file size must be between 3MB and 150MB.|
 |[Add attachment to an Outlook task](../api/outlooktask-post-attachments.md) | [attachment](attachment.md) |Add a file, item, or link attachment to an Outlook task.|
 |[Add attachment to a post](../api/post-post-attachments.md) | [attachment](attachment.md) |Add a file, item, or link attachment to a post.|
