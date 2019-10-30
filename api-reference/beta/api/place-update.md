@@ -149,13 +149,22 @@ Content-type: application/json
 ### Request
 
 The following is an example of the request.
+
+# [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
-  "name": "get_roomlist"
+  "name": "update_roomlist"
 }-->
-
 ```http
-GET https://graph.microsoft.com/beta/places/microsoft.graph.roomlist
+PATCH https://graph.microsoft.com/beta/places/Building1RroomList@contoso.onmicrosoft.com
+Content-type: application/json
+Content-length: 285
+
+{
+  "@odata.type": "microsoft.graph.roomlist"
+  "displayName": "Building 1",
+  "phone":"555-555-0100"
+}
 ```
 
 ### Response
@@ -176,18 +185,20 @@ HTTP/1.1 200 OK
 Content-type: application/json
 
 {
+  "@odata.context": "https://graph.microsoft.com/beta/$metadata#places/$entity",
+  "@odata.type": "#microsoft.graph.roomList",
   "id": "DC404124-302A-92AA-F98D-7B4DEB0C1705",
-  "displayName": "Building 12",
+  "displayName": "Building 1",
   "address": {
-       "street": "123 Contoso Way",
-       "city": "Redmond",
-       "state": "WA",
-       "postalCode": "98052",
-       "countryOrRegion": "USA",
-       },
+    "street": "4567 Main Street",
+    "city": "Buffalo",
+    "state": "NY",
+    "postalCode": "98052",
+    "countryOrRegion": "USA"
+  },
   "geocoordinates": null,
-  "phone": null,
-  "emailAddress": "bldg12@contoso.com"
+  "phone": 555-555-0100,
+  "emailAddress": "bldg1@contoso.com"
 }
 ```
 
