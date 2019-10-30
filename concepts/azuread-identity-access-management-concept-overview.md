@@ -4,7 +4,7 @@ description: "Azure Active Directory (Azure AD) helps centralize identity and ac
 author: "jackson-woods"
 localization_priority: Priority
 ms.prod: "microsoft-identity-platform"
-scenarios: "getting-started"
+ms.custom: scenarios:getting-started
 ---
 
 # Azure AD identity and access management API overview
