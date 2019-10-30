@@ -1234,13 +1234,13 @@ For more complex scenarios involving multiple permissions, see [Permission scena
 
 ## Search permissions
 
-#### Delegated permissions
+#### Application permissions
 
 |   Permission    |  Display String   |  Description | Admin Consent Required | Microsoft Account supported |
 |:----------------|:------------------|:-------------|:-----------------------|:--------------|
 | _ExternalItem.ReadWrite.All_ | Read and Write external data | Allows an app to write external data into the indexing API. | Yes | No |
 
-#### Application permissions
+#### Delegated permissions
 
 |   Permission    |  Display String   |  Description | Admin Consent Required | Microsoft Account supported |
 |:----------------|:------------------|:-------------|:-----------------------|:-----------------------|
