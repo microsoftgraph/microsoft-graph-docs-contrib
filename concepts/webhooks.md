@@ -22,15 +22,19 @@ After Microsoft Graph accepts the subscription request, it pushes notifications 
 
 Using the Microsoft Graph API, an app can subscribe to changes on the following resources:
 
-- Outlook [message][]
-- Outlook [event][]
-- Outlook personal [contact][]
-- [user][]
-- [group][]
-- Office 365 group [conversation][]
-- Content within the hierarchy of _any folder_ [driveItem][] on a user's personal OneDrive
-- Content within the hierarchy of the _root folder_ [driveItem][] on OneDrive for Business
-- Security [alert][]
+| **Resource** | **Supported resource paths** | **Supports including resource data**                  |
+|:----------------|:------------|:-----------------------------------------|
+| Outlook [message][] | `/users/{id}/messages`<br>`/users/{id}/mailFolders('inbox')/messages` | No |
+| Outlook [event][] | `/users/{id}/events` | No |
+| Outlook personal [contact][] | `/users/{id}/contacts` | No |
+| [user][] | `/users` | No |
+| [group][] | `/groups` | No |
+| Office 365 group [conversation][] | ... | No |
+| Content within the hierarchy of _any folder_ [driveItem][] on a user's personal OneDrive | ... | No |
+| Content within the hierarchy of the _root folder_ [driveItem][] on OneDrive for Business | ... | No |
+| Security [alert][] | ... | No |
+
+> **Note**: Any resource path that begins with `/users/{id}` can also accept `/me` to reference the signed-in user.
 
 You can create a subscription to a specific Outlook folder such as the Inbox:
 `me/mailFolders('inbox')/messages`
