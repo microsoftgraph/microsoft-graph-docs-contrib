@@ -17,10 +17,10 @@ The search request to be sent to the query endpoint. It contains the type of ent
 
 | Property     | Type        | Description |
 |:-------------|:------------|:------------|
-|stored_fields|String collection |Contains the fields to be returned for earch _so urces object. Note this is only applicable when entityType=`microsoft.graph.externalItem` is specified in the response.|
-|contentSources|String collection|Contains the connection to be targeted. <br>Respect the following format : `/external/connections/connectionid` where `connectionid` is the ConnectionId been defined in the Connectors Administration <br> Note contentSource is only applicable when entityType=`microsoft.graph.externalItem`. |
-|enableTopResults|Boolean|This triggers relevance sorting for messages <br> This is only applicable for entityType=`microsoft.graph.message`.|
-|entityTypes|`entityType` collection| Possible values are: `microsoft.graph.event`, `microsoft.graph.message`, `microsoft.graph.driveItem`, `microsoft.graph.externalFile`, `microsoft.graph.externalItem`.|
+|stored_fields|String collection |Contains the fields to be returned for earch _so urces object. Note this is only applicable when entityType=`externalItem` is specified in the response.|
+|contentSources|String collection|Contains the connection to be targeted. <br>Respect the following format : `/external/connections/connectionid` where `connectionid` is the ConnectionId been defined in the Connectors Administration <br> Note contentSource is only applicable when entityType=`externalItem`. |
+|enableTopResults|Boolean|This triggers relevance sorting for messages <br> This is only applicable for entityType=`message`.|
+|entityTypes|`entityType` collection| Possible values are: `event`, `message`, `driveItem`, `externalFile`, `externalItem`.|
 |from|Int32|Specifies the offset for the search results. Offset 0 returns the very first result.|
 |query|[searchQuery](searchquery.md)|Contains the query terms.|
 |size|Int32|The size of the page to be retrieved.|
