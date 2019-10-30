@@ -15,13 +15,15 @@ Create and send a notification targeting a user through Microsoft Graph. The not
 ## Permissions
 Your application service does not require any additional permissions to post notifications to your targeted user.  
 
-> [!NOTE]
-> If you choose to post notifications on behalf of a user via delegated permissions instead, one of the following permissions is required to call this API. We don't recommend this option for posting notifications but if you'd like to learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
+> [!IMPORTANT]
+> If you choose to post notifications on behalf of a user via delegated permissions instead, one of the following permissions is required to call this API. We don't recommend this option for creating notifications. If you'd like to learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
 
-> |Permission type      | Permissions (from least to most privileged)              |
-> |:--------------------|:---------------------------------------------------------|
-> |Delegated (work or school account) | Notifications.ReadWrite.CreatedByApp    |
-> |Delegated (personal Microsoft account) | Notifications.ReadWrite.CreatedByApp    |
+|Permission type      | Permissions (from least to most privileged)              |
+|:--------------------|:---------------------------------------------------------|
+|Delegated (work or school account) | Notifications.ReadWrite.CreatedByApp    |
+|Delegated (personal Microsoft account) | Notifications.ReadWrite.CreatedByApp    |
+|Application | Not supported.|
+
 
 
 ## HTTP request
@@ -36,6 +38,7 @@ POST /me/notifications/
 |:----|:-----|:-----------|
 |Authorization | string |The authorization header is used to pass the credentials of the calling party. Bearer {token}. Required. |
 |X-UNS-ID | string |The UserNotificationSubscriptionId that is returned by the Microsoft Graph notification service after creating a subscription and is used to target the specific user. Required. |
+|Content-type | appliation/json. Required.|
 
 ## Request body
 In the request body, supply a JSON representation of a [notification](../resources/projectrome-notification.md) object.
