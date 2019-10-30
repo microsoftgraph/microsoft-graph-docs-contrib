@@ -299,7 +299,7 @@ Content-Type: application/json
   ],
  "mediaConfig": {
     "@odata.type": "#microsoft.graph.appHostedMediaConfig",
-    "blob": "Media Session Configuration"
+    "blob": "<Media Session Configuration>"
   }
 }
 ```
@@ -364,8 +364,8 @@ Content-Type: application/json
   "activeModalities": [],
   "mediaConfig": {
     "@odata.type": "#microsoft.graph.appHostedMediaConfig",
-    "blob": "Media Session Configuration",
-  }
+    "blob": "<Media Session Configuration>",
+  },
   "routingPolicies": [],
   "tenantId": "aa67bd4c-8475-432d-bd41-39f255720e0a",
   "myParticipantId": "499ff390-7a72-40e8-83a0-8fac6295ae7e",
@@ -738,7 +738,7 @@ Content-Type: application/json
   ],
   "mediaConfig": {
     "@odata.type": "#microsoft.graph.appHostedMediaConfig",
-    "blob": "Media Session Configuration",
+    "blob": "<Media Session Configuration>",
   },
   "chatInfo": {
     "@odata.type": "#microsoft.graph.chatInfo",
