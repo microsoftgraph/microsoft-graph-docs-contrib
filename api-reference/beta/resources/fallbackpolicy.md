@@ -35,7 +35,7 @@ The following is a JSON representation of the resource.
 
 ```json
 {
-  "endpointFallback": {"@odata.type": "microsoft.graph.fallbackPolicyProperties"}
+  "endpointFallback": {"@odata.type": "microsoft.graph.fallbackpolicyProperties"}
 }
 ```
 
