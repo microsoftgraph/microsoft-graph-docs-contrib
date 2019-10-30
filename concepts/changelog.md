@@ -151,9 +151,9 @@ Meeting organizers can allow meeting time proposals, and invitees can suggest al
 
 | **Change type** | **Version**   | **Description**                          |
 | :-------------- | :------------ | :--------------------------------------- |
-| Addition		| Beta			|Target users without managing the on-behalf-of tokens and instead using [X-UNS-ID](/graph/api/user-post-notifications?view=graph-rest-beta) in the header. | 
-| Addition        | Beta          | Web endpoints can now be targeted via WebPush by specifying [targetPolicy](/graph/api/resources/projectrome-notification?view=graph-rest-beta). |
-| Addition		| Beta			| Enabled guaranteed delivery on iOS for high-priority notifications via [fallback](/graph/api/resources/projectrome-notification?view=graph-rest-beta) policy. | 
+| Addition		| Beta			|Added the [Create and send notifications](/graph/api/user-post-notifications?view=graph-rest-beta) API to enable targeting users without managing the on-behalf-of tokens. | 
+| Addition        | Beta          | Introduced the **targetPolicy** property on the [notification](/graph/api/resources/projectrome-notification?view=graph-rest-beta) resource to enable web endpoints to be targeted via webpush. |
+| Addition		| Beta			|  Added the **fallbackPolicy** property on the [notification](/graph/api/resources/projectrome-notification?view=graph-rest-beta) resource to enable guaranteed delivery on iOS for high-priority notifications. | 
 
 
 ### Teamwork (Microsoft Teams)
