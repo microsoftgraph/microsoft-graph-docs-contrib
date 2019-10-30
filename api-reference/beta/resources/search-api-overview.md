@@ -60,7 +60,7 @@ Best practices:
 
 - Specify a smaller first page in the initial request. For example, specify **from** as 0, **size** as 25.
 - Paginate subsequent pages by updating the **from** and **size** properties. You can increase the page size in each subsequent request. The following table shows an example.
-    
+
     | Page | from | size |
     |:-----|:-----|:-----|
     | 1    | 0 | 25 |
@@ -75,9 +75,9 @@ When searching the **message** entity, specifying **enableTopResults** as `true`
 
 ### Get selected properties
 
-When searching the **externalItem** entity, use the **stored_fields** property to specify the fields to return as part of the response.
+When searching an **externalItem** entity, use the **stored_fields** property to specify the fields to be returned in the response.
 
-The names to be used should the name of the retrievable Managed Property configured for the connection.  
+The names specified in **stored_fields** should be the retrievable Managed Property. These property names have been configured for the connection in the  tenant administration of Microsoft Search.
 
 ### Keyword Query Language (KQL) support
 

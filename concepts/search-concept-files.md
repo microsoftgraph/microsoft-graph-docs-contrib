@@ -72,16 +72,16 @@ Here is an example of the response.
                           "_id": "FlULeN/ui/1GjLx1rUfio5UAAEl",
                           "_score": 1,
                           "_sortField": "Relevance",
-                          "_summary": "<c0>test</c0>_long Notebook<ddd/>",
+                          "_summary": "<c0>Contoso</c0> Detailed Design <ddd/>",
                           "_source": {
                               "@odata.type": "#microsoft.graph.driveItem",
                               "createdDateTime": "2019-06-10T06:37:43Z",
                               "lastModifiedDateTime": "2019-06-10T06:37:43Z",
                               "name": "web_part_test_long Notebook",
-                              "webUrl": "https://contoso.sharepoint.com/sites/NewFeatureE2E201906100220/web_part_test_long/SiteAssets/web_part_test_long Notebook",
+                              "webUrl": "https://contoso.sharepoint.com/sites/contoso-team/contoso-designs.docx",
                               "lastModifiedBy": {
                                   "user": {
-                                      "displayName": "TEST_TEST_SPOProvHeartbeat_E3_15_1906092200_405"
+                                      "displayName": "Richard Mayer"
                                   }
                               },
                               "fileSystemInfo": {
@@ -100,14 +100,12 @@ Here is an example of the response.
 }
 ```
 
-
-
 ## Search external files (well-known types)
 
-The indexing API lets you use an build in Connector for external file shares. You can use the query API to query all external files.
+[File share connector](https://docs.microsoft.com/en-us/MicrosoftSearch/file-share-connector) is an "out of the box" connector available in Microsoft Search. It enables you to index files available on a file share. You can use the query API to query all external files.
 
 ### Example
-The following example returns all configured externalFile Connector for the tenant, and sorts the results by relevance.
+The following example returns all configured externalFile connector for the tenant, and sorts the results by relevance.
 
 #### Request  
 
@@ -157,7 +155,7 @@ Content-Type: application/json
                             "extension": "pptx",
                             "name": "Contoso-Overview.pptx",
                             "lastModifiedTime": "2018-05-09T04:01:14Z",
-                            "modifiedBy": "Sean Smith",
+                            "modifiedBy": "Baala Vedantam",
                             "title": "Contoso Overview 2018",
                             "url": "file://fileshare01/External Presentations/Contoso-Overview.pptx",
                             }
@@ -179,9 +177,10 @@ You can search all the files in a tenant, including [driveItem](/graph/api/resou
 The response provide a mix of **driveItem** and externalItem instances in the `_sources` field of each [searchHit](/graph/api/resources/searchhit?view=graph-rest-beta) object.
 
 ### Example
+
 The following example returns all configured **externalFile** connector and **driveItem** objects of the tenant's that satisfy the search terms. It sorts the results by relevance.
 
-### Request  
+### Request
 
 ```HTTP
 POST https://graph.microsoft.com/beta/search/query
@@ -208,7 +207,6 @@ Content-Type: application/json
 ## Known limitations
 
 You cannot scope a query to a particular connectionId.
-
 
 ## Next steps
 

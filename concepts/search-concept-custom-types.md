@@ -16,7 +16,7 @@ To search for custom types, specify the following in the [query](/graph/api/sear
 
 - The **entityType** property as `externalItem`
 
-- The **stored_fields** property to include the fields in the external item you want to retrieve 
+- The **stored_fields** property to include the fields in the external item you want to retrieve
 
 ## Example
 
@@ -32,10 +32,10 @@ Content-Type: application/json
   "requests": [
     {
        "entityTypes": ["microsoft.graph.externalItem"],
-       "contentSources": ["/external/connections/jirabugs"],
+       "contentSources": ["/external/connections/servicenow-connector-contoso"],
        "query": {
         "query_string": {
-          "query": "contoso"
+          "query": "contoso tickets"
         }
       },
       "from": 0,
@@ -49,17 +49,58 @@ Content-Type: application/json
   ]
 }
 ```
+### Response
 
-<!--
 Response
--TODO nmoreau team Include one example of externalItem response. 
+
 ```Json
 {
-  
+    "@odata.context": "https://graph.microsoft.com/beta/$metadata#Collection(microsoft.graph.searchResponse)",
+    "value": [
+        {
+            "hitsContainers": [
+                {
+                    "total": 2,
+                    "moreResultsAvailable": false,
+                    "hits": [
+                        {
+                            "_id": "AAMkADc0NDNlNTE0",
+                            "_score": 1,
+                            "_sortField": "Relevance",
+                            "_source": {
+                                "@odata.type": "#microsoft.graph.externalItem",
+                                "properties": {
+                                    "number": "KB0010025",
+                                    "shortdescription": "Contoso maintenance guidelines",
+                                    "syscreatedon": "2019-10-14T22:45:02Z",
+                                    "accessurl": "https://contoso.service-now.com/kb_view.do?sys_kb_id=6b5465781ba000104793877ddc4bcb81",
+                                    "previewContent": "Contoso maintenance guidelines"
+                                }
+                            }
+                        },
+                        {
+                            "_id": "MG+1glPAAAAAAl3AAA=",
+                            "_score": 2,
+                            "_sortField": "Relevance",
+                            "_source": {
+                                "@odata.type": "#microsoft.graph.externalItem",
+                                "properties": {
+                                    "number": "KB0054396",
+                                    "shortdescription": "Contoso : Setting Office for the first time.",
+                                    "syscreatedon": "2019-08-09T01:53:26Z",
+                                    "accessurl": "https://contoso.service-now.com/kb_view.do?sys_kb_id=004d8d931b0733004793877ddc4bcb29",
+                                    "previewContent": "Description:  Setting Office for the first time.  Resolution:    To setup any Office app for the first time, tap any Office app like Word to launch it.    Tap Sign in if you already have a Microsoft Account or an Office 365 work or school account."
+                                }
+                            }
+                        }
+                    ]
+                }
+            ]
+        }
+    ]
 }
-
 ```
--->
+
 
 ## Known limitations
 

@@ -41,13 +41,13 @@ In the request body, provide a JSON object with the following parameters.
 
 | Parameter    | Type        | Description |
 |:-------------|:------------|:------------|
-|requests|[searchRequest collection](../resources/searchrequest.md)|The search request to be sent to the query endpoint formatted in a Json blob. It contains the type of entities expected in the response, the underlying sources, the paging parameters, the fields request and the actual search query.|
+|requests|[searchRequest](../resources/searchrequest.md) Collection|The search request to be sent to the query endpoint formatted in a JSON blob. It contains the type of entities expected in the response, the underlying sources, the paging parameters, the requested fields, and the actual search query.|
 
 ## Response
 
-If successful, this method returns `200, OK` response code and a [searchResponse](../resources/searchresponse.md) collection object in the response body.
+If successful, this method returns `HTTP 200 OK` response code and a [searchResponse](../resources/searchresponse.md) collection object in the response body.
 
-## Common use cases 
+## Common use cases
 
 - Search [mail messages](/graph/search-concept-messages)
 - Search [calendar events](/graph/search-concept-events)
@@ -67,25 +67,25 @@ The following is an example of the request.
 ```http
 POST https://graph.microsoft.com/beta/search/query
 Content-type: application/json
+```
 
+```json
 {
   "requests": [
     {
-      "entityTypes": [
-        "entityTypes-value"
-      ],
-      "contentSources": [
-        "contentSources-value"
+      "entityTypes": ["microsoft.graph.externalItem"],
+      "contentSources": ["/external/connections/connectionfriendlyname"],"
       ],
       "query": {
         "query_string": {
-          "query": "query-value"
+          "query": "contoso product"
         }
       },
-      "from": 99,
-      "size": 99,
+      "from": 0,
+      "size": 25,
       "stored_fields": [
-        "stored_fields-value"
+        "title",
+        "description
       ]
     }
   ]
@@ -108,7 +108,9 @@ The following is an example of the response.
 ```http
 HTTP/1.1 200 OK
 Content-type: application/json
+```
 
+```json
 {
   "value": [
     {
@@ -119,14 +121,14 @@ Content-type: application/json
         {
           "hits": [
             {
-              "_id": "_id-value",
-              "_score": 99,
-              "_sortField": "_sortField-value",
+              "_id": "1",
+              "_score": 1,
+              "_sortField": "Relevance",
               "_summary": "_summary-value",
               "_source": "The source field will contain the underlying graph entity part of the response"
             }
           ],
-          "total": 99,
+          "total": 47,
           "moreResultsAvailable": true
         }
       ]

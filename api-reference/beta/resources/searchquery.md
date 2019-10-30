@@ -11,7 +11,7 @@ doc_type: "resourcePageType"
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-The top level object describing the search query containing the search terms, and some potential additional filters.
+Represents a search query that contains search terms and optional filters.
 
 ## Properties
 

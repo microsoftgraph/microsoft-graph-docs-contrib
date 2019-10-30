@@ -19,7 +19,8 @@ Currently, message search applies to only users' own personal accounts, but not 
 ## Examples
 
 ### Example 1
-The following example queries messages in the signed-in user's mailbox that contain the string "contoso" in the sender name, subject, message body, or any attachments. The query returns the first 25 results. 
+
+The following example queries messages in the signed-in user's mailbox that contain the string "contoso" in any part of the message (the sender name, subject, message body, or any attachments). The query returns the first 25 results. The search results are ordered by Datetime descending.
 
 #### Request
 
@@ -79,20 +80,20 @@ The following is an example of the response which contains one message that matc
                                 "replyTo": [
                                     {
                                         "emailAddress": {
-                                            "name": "GCS3 Test"
+                                            "name": "Goncalo Torres"
                                         }
                                     }
                                 ],
                                 "sender": {
                                     "emailAddress": {
                                         "name": "Office365 Message Center",
-                                        "address": "o365mc@contoso.com"
+                                        "address": "gtorres@contoso.com"
                                     }
                                 },
                                 "from": {
                                     "emailAddress": {
                                         "name": "Office365 Message Center",
-                                        "address": "o365mc@contoso.com",
+                                        "address": "gtorres@contoso.com",
                                     }
                                 }
                             }
