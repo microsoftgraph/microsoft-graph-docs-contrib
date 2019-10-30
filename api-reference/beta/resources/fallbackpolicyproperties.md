@@ -17,7 +17,7 @@ Allows fallback policy to be specified for high-priority raw notifications on iO
 
 | Property     | Type        | Description |
 |:-------------|:------------|:------------|
-| platformTypes | String | Specifies the platforms that a developer wants to enable raw-to-visual toast notification fallback on. Currently, if **fallbackPolicy** is specified, **targetPolicy.platformTypes** must include `iOS` and optionally other platforms. In addition, **fallbackPolicy.endpointFallback.platformTypes** is required and the only supported platform is currently `iOS`. |
+| platformTypes | String collection | Specifies the platforms that a developer wants to enable raw-to-visual toast notification fallback on. Currently, if **fallbackPolicy** is specified, **targetPolicy.platformTypes** must include `iOS` and optionally other platforms. In addition, **fallbackPolicy.endpointFallback.platformTypes** is required and the only supported platform is currently `iOS`. |
 | fallbackDelayInSeconds | Int32 | This delay represents the amount of time that will pass (in seconds) before a direct toast notification will be sent as a fallback to each users’ iOS device subscription that does not fetch the raw notification. The value must be between 60 and 600. |
 | visualContent | [visualProperties](visualproperties.md)|The visual content of a fallback initiated, raw-to-visual user notification on iOS. |
  
