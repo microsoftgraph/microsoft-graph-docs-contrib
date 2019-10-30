@@ -7,7 +7,7 @@ ms.prod: ""
 doc_type: conceptualPageType
 ---
 
-# Use the Microsoft Search API to index data (preview)
+# Use the Microsoft Search API to index data
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
