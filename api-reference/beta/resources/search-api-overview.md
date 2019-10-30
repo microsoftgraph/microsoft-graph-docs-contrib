@@ -38,8 +38,8 @@ The following are the supported entity types:
  - [event](event.md)
  - [message](message.md)
  - [driveItem](driveitem.md)
- - externalFile
- - externalItem
+ - [externalFile](externalfile.md)
+ - [externalItem](externalitem.md)
 
 ### Page search results
 

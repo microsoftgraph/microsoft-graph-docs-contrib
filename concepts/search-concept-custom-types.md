@@ -8,7 +8,7 @@ ms.prod: "search"
 
 # Search custom types (externalItem)
 
-The indexing API (preview) lets you import external data into Microsoft Search. The ingested content is surfaced in some Microsoft Search experiences. The search API lets you run search queries on this external content.
+The [indexing API (preview)](search-index-overview.md) lets you import external data into Microsoft Search. The ingested content is surfaced in some Microsoft Search experiences. The search API lets you run search queries on this external content.
 
 To search for custom types, specify the following in the [query](/graph/api/search-query?view=graph-rest-beta) method request body:
 
@@ -63,7 +63,7 @@ Response
 
 ## Known limitations
 
-- Custom types don’t support searching across multiple sources (specified in **contentSources**). You can only search one '''connectionId at the time.
+- Custom types don’t support searching across multiple sources (specified in **contentSources**). You can search only one connection at a time.
 
 - You must specify the **stored_fields** property, otherwise search results are not returned.
 
