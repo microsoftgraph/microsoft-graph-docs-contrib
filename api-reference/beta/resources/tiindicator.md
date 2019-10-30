@@ -1,6 +1,6 @@
 ---
 title: "tiIndicator resource type"
-description: "Threat intelligence (TI) indicators represent data used to identify malicious activities. If your organization works with threat indicators, either by generating your own, obtaining from open source feeds, sharing with partner organizations or communities, or by purchasing feeds of data, then you often wish to use these indicators in various security tools for matching with log data. The Graph Security tiIndicators entity allows you to upload your threat indicators to Microsoft security tools for the actions of Allow, Block, or Alert."
+description: "Threat intelligence (TI) indicators represent data used to identify malicious activities."
 localization_priority: Normal
 author: "preetikr"
 ms.prod: "security"
@@ -17,22 +17,24 @@ Threat indicators uploaded via **tiIndicators** will be used in conjunction with
 
 Current **targetProduct** support includes the following:
 
-- **Azure Sentinel** – supports all documented tiIndicators Methods listed in the section below. 
-- **Microsoft Defender ATP (Microsoft Defender Advanced Threat Protection)** – supports the following tiIndicators Methods out of the ones listed in the section below. Support for the bulk methods is coming soon.
-     - [Get tiIndicator](https://docs.microsoft.com/en-us/graph/api/tiindicator-get?view=graph-rest-beta&tabs=http)
-     - [Create tiIndicator](https://docs.microsoft.com/en-us/graph/api/tiindicators-post?view=graph-rest-beta&tabs=http)
-     - [List tiIndicators](https://docs.microsoft.com/en-us/graph/api/tiindicators-list?view=graph-rest-beta&tabs=http)
-     - [Update](https://docs.microsoft.com/en-us/graph/api/tiindicator-update?view=graph-rest-beta&tabs=http)
-     - [Delete](https://docs.microsoft.com/en-us/graph/api/tiindicator-delete?view=graph-rest-beta&tabs=http)
-  
-  > **Note**: The following indicator types are supported by Microsoft Defender ATP targetProduct:
+- **Azure Sentinel** – Supports all documented **tiIndicators** methods listed in the following section. 
+- **Microsoft Defender ATP (Microsoft Defender Advanced Threat Protection)** – Supports the following **tiIndicators** methods: 
+     - [Get tiIndicator](../api/tiindicator-get.md)
+     - [Create tiIndicator](../api/tiindicators-post.md)
+     - [List tiIndicators](../api/tiindicators-list.md)
+     - [Update](../api/tiindicator-update.md)
+     - [Delete](../api/tiindicator-delete.md)
+     Support for the bulk methods is coming soon.
+     
+  > [!NOTE]
+  >The following indicator types are supported by Microsoft Defender ATP targetProduct:
   > - Files
-  > - IP addresses: Microsoft Defender ATP supports destination IPv4/IPv6 only – set property in networkDestinationIPv4 or    networkDestinationIPv6 properties in Microsoft Graph Security API **tiIndicator**.
+  > - IP addresses: Microsoft Defender ATP supports destination IPv4/IPv6 only – set property in networkDestinationIPv4 or    networkDestinationIPv6 properties in Microsoft Graph security API **tiIndicator**.
   > - URLs/domains
 
    There is a limit of 5000 indicators per tenant for Microsoft Defender ATP.
    
-   Check the [Microsoft Defender ATP ‘Manage indicators’ documentation](https://docs.microsoft.com/en-us/windows/security/threat-protection/microsoft-defender-atp/manage-indicators) for further details on types of indicators supported and limits on indicator counts per tenant.
+For details about the types of indicators supported and limits on indicator counts per tenant, see [Manage indicators](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/manage-indicators).
 
 ## Methods
 
