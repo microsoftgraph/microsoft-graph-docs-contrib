@@ -52,6 +52,7 @@ This resource supports:
 |[List ownedDevices](../api/user-list-owneddevices.md) |[directoryObject](directoryobject.md) collection| Get the devices that are owned by the user from the ownedDevices navigation property.|
 |[List ownedObjects](../api/user-list-ownedobjects.md) |[directoryObject](directoryobject.md) collection| Get the directory objects that are owned by the user from the ownedObjects navigation property.|
 |[List plannerTasks](../api/planneruser-list-tasks.md) |[plannerTask](plannertask.md) collection| Get plannerTasks assigned to the user.|
+|[Get profile](../api/profile-get.md) |[profile](profile.md) | Get user profile.|
 |[List registeredDevices](../api/user-list-registereddevices.md) |[directoryObject](directoryobject.md) collection| Get the devices that are registered for the user from the registeredDevices navigation property.|
 |[List scoped-role memberships](../api/user-list-scopedrolememberof.md) |[scopedRoleMembership](scopedrolemembership.md) collection| Get the scoped-role administrative units memberships for this user.|
 |[List createdObjects](../api/user-list-createdobjects.md) |[directoryObject](directoryobject.md) collection| Get the directory objects created by the user from the createdObjects navigation property.|
@@ -221,6 +222,7 @@ The age group and minor consent properties are optional properties used by Azure
 |outlook|[outlookUser](outlookuser.md)| Selective Outlook services available to the user. Read-only. Nullable.|
 |ownedDevices|[directoryObject](directoryobject.md) collection|Devices that are owned by the user. Read-only. Nullable.|
 |ownedObjects|[directoryObject](directoryobject.md) collection|Directory objects that are owned by the user. Read-only. Nullable.|
+|profile|[profile](profile.md) |Contains the user's profile and associated entities.|
 |people|[person](person.md) collection| Read-only. The most relevant people to the user. The collection is ordered by their relevance to the user, which is determined by the user's communication, collaboration and business relationships. A person is an aggregation of information from across mail, contacts and social networks.|
 |photo|[profilePhoto](profilephoto.md)| The user's profile photo. Read-only.|
 |photos|[photo](photo.md) collection| Read-only. Nullable.|
