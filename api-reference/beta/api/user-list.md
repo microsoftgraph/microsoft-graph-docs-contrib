@@ -227,52 +227,6 @@ Content-type: application/json
 }
 ```
 
-### Example 4: List all users that last signed in on or before a particular date
-
-#### Request
-
-The following is an example of the request.
-
-<!-- {
-  "blockType": "request",
-  "name": "get_signin_date"
-}-->
-```msgraph-interactive
-GET https://graph.microsoft.com/beta/users?$filter=signInActivity/lastSignInDateTime le '2019-06-01T00:00:00Z'&$select=userPrincipalName, displayName
-```
-
-#### Response
-
-The following is an example of the response. 
-> **Note:** The response object shown here might be shortened for readability. All the properties will be returned from an actual call.
-
-<!-- {
-  "blockType": "response",
-  "truncated": true,
-  "@odata.type": "microsoft.graph.user",
-  "isCollection": true
-} -->
-```http
-HTTP/1.1 200 OK
-Content-type: application/json
-
-{
-  "@odata.context": "https://graph.microsoft.com/beta/$metadata#users(displayName,userPrincipalName,signInActivity)",
-  "value": [
-    {
-      "displayName": "User name",
-      "userPrincipalName": "username@contoso.com",
-      "signInActivity": [
-        {
-          "lastSignInDateTime": "2017-09-04T15:35:02Z",
-          "lastSignInRequestId": "c7df2760-2c81-4ef7-b578-5b5392b571df"
-        }
-      ]
-    }
-  ]
-}
-```
-
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2015-10-25 14:57:30 UTC -->
 <!--
