@@ -27,12 +27,12 @@ Using the Microsoft Graph API, an app can subscribe to changes on the following 
 | Outlook [message][] | `/users/{id}/messages`<br>`/users/{id}/mailFolders('inbox')/messages` | No |
 | Outlook [event][] | `/users/{id}/events` | No |
 | Outlook personal [contact][] | `/users/{id}/contacts` | No |
-| [user][] | `/users` | No |
-| [group][] | `/groups` | No |
-| Office 365 group [conversation][] | ... | No |
-| Content within the hierarchy of _any folder_ [driveItem][] on a user's personal OneDrive | ... | No |
-| Content within the hierarchy of the _root folder_ [driveItem][] on OneDrive for Business | ... | No |
-| Security [alert][] | ... | No |
+| [user][] | `/users` (changes to all users)<br>`/users/{id}` (changes to a specific user) | No |
+| [group][] | `/groups` (changes to all groups)<br>`/groups/{id}` (changes to a specific group) | No |
+| Office 365 group [conversation][] | `groups/{id}/conversations` | No |
+| Content within the hierarchy of _any folder_ [driveItem][] on a user's personal OneDrive | <TBD> | No |
+| Content within the hierarchy of the _root folder_ [driveItem][] on OneDrive for Business | <TBD> | No |
+| Security [alert][] | <TBD> | No |
 
 > **Note**: Any resource path that begins with `/users/{id}` can also accept `/me` to reference the signed-in user.
 
