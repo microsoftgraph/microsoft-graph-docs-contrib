@@ -19,6 +19,8 @@ A subscription allows a client app to receive notifications about changes to dat
 - A [user][] or [group][] in Azure Active Directory
 - An [alert][] from the Microsoft Graph Security API
 
+The resource path expressions supported for each resource - that can be used in the **resource** property of the subscription - are documented in [the overview article](webhooks.md).
+
 
 ## JSON representation
 
