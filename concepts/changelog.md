@@ -102,6 +102,15 @@ For details about known issues with Microsoft Graph APIs, see [Known issues](kno
 | :-------------- | :------------ | :--------------------------------------- |
 | Addition        | v1.0          | Added the **message** parameter to the method for [replying a message on the fly](/graph/api/message-reply?view=graph-rest-1.0). |
 
+### Notifications
+
+| **Change type** | **Version**   | **Description**                          |
+| :-------------- | :------------ | :--------------------------------------- |
+| Addition		| Beta			|Target users without managing the on-behalf-of tokens and instead using [X-UNS-ID](/graph/api/user-post-notifications?view=graph-rest-beta) in the header. | 
+| Addition        | Beta          | Web endpoints can now be targeted via WebPush by specifying [targetPolicy](/graph/api/resources/projectrome-notification?view=graph-rest-beta). |
+| Addition		| Beta			| Enabled guaranteed delivery on iOS for high-priority notifications via [fallback](/graph/api/resources/projectrome-notification?view=graph-rest-beta) policy. | 
+
+
 ### Teamwork (Microsoft Teams)
 
 | **Change type** | **Version**   | **Description**                          |
