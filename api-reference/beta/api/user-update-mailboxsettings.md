@@ -15,11 +15,11 @@ Enable, configure, or disable one or more of the following settings as part of a
 
 - [automatic replies](../resources/automaticrepliessetting.md) (notify people automatically upon receipt of their email)
 - dateFormat
+- delegateMeetingMessageDeliveryOptions
 - [locale](../resources/localeinfo.md) (language and country/region)
 - timeFormat
 - time zone
 - [working hours](../resources/workinghours.md)
-- delegateMeetingMessageDeliveryOptions
 
 When updating the preferred date or time format for a user, specify it in respectively, the [short date](https://docs.microsoft.com/en-us/dotnet/standard/base-types/standard-date-and-time-format-strings#ShortDate) or [short time](https://docs.microsoft.com/en-us/dotnet/standard/base-types/standard-date-and-time-format-strings#ShortTime) format. 
 
