@@ -4,7 +4,7 @@ description: "Microsoft Bookings provides online and mobile apps that make appoi
 author: "angelgolfer-ms"
 localization_priority: Priority
 ms.prod: "bookings"
-scenarios: "getting-started"
+ms.custom: scenarios:getting-started
 ---
 
 # Microsoft Bookings API overview (preview)
