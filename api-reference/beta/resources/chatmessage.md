@@ -19,6 +19,7 @@ Represents an individual chat message within a [channel](channel.md) or [chat](c
 |:---------------|:--------|:----------|
 |[List channel chatMessage](../api/channel-list-messages.md) | [chatMessage](chatmessage.md) collection | List of all root chat messages in a channel.|
 |[Get chatMessages in a channel delta](../api/chatmessage-delta.md)  | [chatMessage](../resources/chatmessage.md) | Get incremental chat messages in a channel. |
+|[Create subscription for new channel messages](../api/subscription-post-subscriptions.md) | [chatMessage](chatmessage.md) | Listen for new and edited channel messages, and reactions to them. |
 |[Get channel chatMessage](../api/channel-get-message.md) | [chatMessage](chatmessage.md) | Get a single root chat message from a channel.|
 |[List replies to a chatMessage](../api/channel-list-messagereplies.md) | [chatMessage](chatmessage.md) collection| List of all replies to a chat message in channel.|
 |[Get a reply to a chatMessage](../api/channel-get-messagereply.md) | [chatMessage](chatmessage.md)| Get a single reply to a chat message in a channel.|
