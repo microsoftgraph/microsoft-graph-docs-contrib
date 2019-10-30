@@ -1,17 +1,17 @@
 ---
-title: "Update languageproficiency"
-description: "Update the properties of a languageproficiency object in a user's profile."
+title: "Update languageProficiency"
+description: "Update the properties of a languageProficiency object in a user's profile."
 localization_priority: Normal
 author: "kevinbellinger"
 ms.prod: "people"
 doc_type: "apiPageType"
 ---
 
-# Update languageproficiency
+# Update languageProficiency
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Update the properties of a [languageproficiency](../resources/languageproficiency.md) object in a user's [profile](../resources/profile.md).
+Update the properties of a [languageProficiency](../resources/languageproficiency.md) object in a user's [profile](../resources/profile.md).
 
 ## Permissions
 

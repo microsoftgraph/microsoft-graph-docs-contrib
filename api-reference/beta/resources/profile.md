@@ -1,6 +1,6 @@
 ---
 title: "profile resource type"
-description: "The user profile resource type aggregates information about a user in a convenient group of entities and collections."
+description: "Represents properties that are descriptive of a user and that are surfaced in shared people experiences across Microsoft 365 and third-party services and experiences via Microsoft Graph."
 localization_priority: Normal
 author: "kevinbellinger"
 ms.prod: "people"
@@ -11,7 +11,7 @@ doc_type: "resourcePageType"
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-The [profile](profile.md) entityset represents properties about a user that are descriptive of the user and which are surfaced in shared people experiences across Microsoft 365 and 3rd party services and experiences through Microsoft Graph. 
+Represents properties about a user that are descriptive of the user and that are surfaced in shared people experiences across Microsoft 365 and third-party services and experiences via Microsoft Graph. 
 
 ## Methods
 

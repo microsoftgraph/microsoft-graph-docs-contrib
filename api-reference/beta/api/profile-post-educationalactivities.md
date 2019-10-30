@@ -1,6 +1,6 @@
 ---
 title: "Create educationalActivity"
-description: "Use this API to create a new educationalActivity."
+description: "Create a new educationalActivity."
 localization_priority: Normal
 author: "kevinbellinger"
 ms.prod: "people"
@@ -11,7 +11,7 @@ doc_type: "apiPageType"
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Use this API to create a new [educationalActivity](../resources/educationalactivity.md) in a user's [profile](../resources/profile.md).
+Create a new [educationalActivity](../resources/educationalactivity.md) in a user's [profile](../resources/profile.md).
 
 ## Permissions
 
@@ -40,11 +40,11 @@ POST /user/profile/educationalActivities
 
 ## Request body
 
-In the request body, supply a JSON representation of [educationalActivity](../resources/educationalactivity.md) object.
+In the request body, supply a JSON representation of an [educationalActivity](../resources/educationalactivity.md) object.
 
 ## Response
 
-If successful, this method returns `201, Created` response code and a new [educationalActivity](../resources/educationalactivity.md) object in the response body.
+If successful, this method returns a `201 Created` response code and a new [educationalActivity](../resources/educationalactivity.md) object in the response body.
 
 ## Examples
 

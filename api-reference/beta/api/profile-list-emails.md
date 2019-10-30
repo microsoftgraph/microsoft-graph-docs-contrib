@@ -1,6 +1,6 @@
 ---
 title: "List emails"
-description: "Retrieve a list of itememail objects."
+description: "Retrieve a list of itemEmail objects."
 localization_priority: Normal
 author: "kevinbellinger"
 ms.prod: "people"
@@ -11,7 +11,7 @@ doc_type: "apiPageType"
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Retrieves a list of [itememail](../resources/itememail.md) objects from a user's [profile](../resources/profile.md).
+Retrieves a list of [itemEmail](../resources/itememail.md) objects from a user's [profile](../resources/profile.md).
 
 ## Permissions
 
@@ -48,7 +48,7 @@ This method supports the following OData query parameters to help customize the 
 | Name           |Description                  |
 |:---------------|:----------------------------|
 | Authorization  | Bearer {token}. Required.   |
-| Content-Type   | application/json. Required. |
+
 
 ## Request body
 

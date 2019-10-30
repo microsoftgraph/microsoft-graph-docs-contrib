@@ -1,6 +1,6 @@
 ---
 title: "Get personName"
-description: "Retrieve the properties and relationships of a personname object."
+description: "Retrieve the properties and relationships of a personName object."
 localization_priority: Normal
 author: "kevinbellinger"
 ms.prod: "people"
@@ -11,7 +11,7 @@ doc_type: "apiPageType"
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Retrieve the properties and relationships of a [personname](../resources/personname.md) object in a user's [profile](../resources/profile.md).
+Retrieve the properties and relationships of a [personName](../resources/personname.md) object in a user's [profile](../resources/profile.md).
 
 ## Permissions
 

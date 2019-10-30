@@ -11,15 +11,15 @@ doc_type: "resourcePageType"
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-The [itemEmail](itememail.md) resource type provides detailed information about email addresses associated with the user.
+Provides detailed information about email addresses associated with the user.
 
 ## Methods
 
 | Method                                   | Return Type               | Description                                            |
 |:-----------------------------------------|:--------------------------|:-------------------------------------------------------|
-| [Get itemEmail](../api/itememail-get.md) | [itemEmail](itememail.md) | Read properties and relationships of itemEmail object. |
-| [Update](../api/itememail-update.md)     | [itemEmail](itememail.md) | Update itemEmail object.                               |
-| [Delete](../api/itememail-delete.md)     | None                      | Delete itemEmail object.                               |
+| [Get](../api/itememail-get.md) | [itemEmail](itememail.md) | Read properties and relationships of an **itemEmail** object. |
+| [Update](../api/itememail-update.md)     | [itemEmail](itememail.md) | Update an **itemEmail** object.                               |
+| [Delete](../api/itememail-delete.md)     | None                      | Delete an **itemEmail** object.                               |
 
 ## Properties
 

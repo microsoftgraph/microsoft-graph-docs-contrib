@@ -1,17 +1,17 @@
 ---
 title: "Update webAccount"
-description: "Update the properties of webAccount object."
+description: "Update the properties of a webAccount object."
 localization_priority: Normal
 author: "kevinbellinger"
 ms.prod: "people"
 doc_type: "apiPageType"
 ---
 
-# Update webaccount
+# Update webAccount
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Update the properties of [webAccount](../resources/webaccount.md) object in a user's [profile](../resources/profile.md).
+Update the properties of a [webAccount](../resources/webaccount.md) object in a user's [profile](../resources/profile.md).
 
 ## Permissions
 
@@ -48,7 +48,7 @@ In the request body, supply the values for relevant fields that should be update
 |description   |String                                                   | Contains the description the user has provided for the account on the service being referenced. |
 |service       |[serviceInformation](../resources/serviceinformation.md) | Represents the basic descriptive data about cloud service provided by a user.                   |
 |statusMessage |String                                                   | Contains a status message from the cloud service if provided or synchronized.                   |
-|userId        |String                                                   | The user name  displayed for the webaccount (ie: @kevinb)                                       |
+|userId        |String                                                   | The user name  displayed for the webaccount (for example, @kevinb).                                       |
 |webUrl        |String                                                   | Contains a link to the users profile on the cloud service if one exists.                        |
 
 ## Response

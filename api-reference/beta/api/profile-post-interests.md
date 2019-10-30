@@ -1,6 +1,6 @@
 ---
 title: "Create personInterest"
-description: "Use this API to create a new personInterest."
+description: "Create a new personInterest."
 localization_priority: Normal
 author: "kevinbellinger"
 ms.prod: "People"
@@ -11,7 +11,7 @@ doc_type: "apiPageType"
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Use this API to create a new [personInterest](../resources/personinterest.md].
+Create a new [personInterest](../resources/personinterest.md].
 
 ## Permissions
 
@@ -43,7 +43,7 @@ In the request body, supply a JSON representation of [personInterest](../resourc
 
 ## Response
 
-If successful, this method returns `201, Created` response code and a new [personInterest](../resources/personinterest.md) object in the response body.
+If successful, this method returns a `201 Created` response code and a new [personInterest](../resources/personinterest.md) object in the response body.
 
 ## Examples
 

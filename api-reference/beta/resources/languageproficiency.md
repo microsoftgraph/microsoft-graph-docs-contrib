@@ -19,17 +19,17 @@ Inherits from [itemFacet](itemFacet.md).
 
 | Method                                                       | Return Type                                   | Description                                                      | 
 |:-------------------------------------------------------------|:----------------------------------------------|:-----------------------------------------------------------------|
-| [Get languageProficiency](../api/languageproficiency-get.md) | [languageProficiency](languageproficiency.md) | Read properties and relationships of languageProficiency object. |
-| [Update](../api/languageproficiency-update.md)               | [languageProficiency](languageproficiency.md) | Update languageProficiency object.                               |
-| [Delete](../api/languageproficiency-delete.md)               | None                                          | Delete languageProficiency object.                               |
+| [Get languageProficiency](../api/languageproficiency-get.md) | [languageProficiency](languageproficiency.md) | Read the properties and relationships of a **languageProficiency** object. |
+| [Update languageProficiency](../api/languageproficiency-update.md)               | [languageProficiency](languageproficiency.md) | Update a **languageProficiency** object.                               |
+| [Delete languageProficiency](../api/languageproficiency-delete.md)               | None                                          | Delete a **languageProficiency** object.                               |
 
 ## Properties
 
 | Property     | Type        | Description                                                                                                                                                 |
 |:-------------|:------------|:------------------------------------------------------------------------------------------------------------------------------------------------------------|
-|displayName   |String       | Contains the long-form name for the language in question.                                                                                                   |
+|displayName   |String       | Contains the long-form name for the language.                                                                                                   |
 |proficiency   |string       | Possible values are: `elementary`, `conversational`, `limitedWorking`, `professionalWorking`, `fullProfessional`, `nativeOrBilingual`, `unknownFutureValue`.|
-|tag           |String       | Contains the 4 character BCP47 name for the language (en-US, no-NB, en-AU)                                                                                  |
+|tag           |String       | Contains the four-character BCP47 name for the language (en-US, no-NB, en-AU).                                                                                  |
 
 ## Relationships
 

@@ -11,7 +11,7 @@ doc_type: apiPageType
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Use this API to add an [attachment](../resources/attachment.md) to an event. Since there is currently a limit of 4MB on the total size of each REST request, this limits the size of the attachment you can add to under 4MB.
+Use this API to add an [attachment](../resources/attachment.md) to an event. This operation limits the size of the attachment you can add to under 4 MB.
 
 ## Permissions
 

@@ -1,5 +1,5 @@
 ---
-title: "Update personanniversary"
+title: "Update personAnniversary"
 description: "Update the properties of personanniversary object."
 localization_priority: Normal
 author: "kevinbellinger"
@@ -7,11 +7,11 @@ ms.prod: "people"
 doc_type: "apiPageType"
 ---
 
-# Update personanniversary
+# Update personAnniversary
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Update the properties of a [personanniversary](../resources/personanniversary.md) object in a user's [profile](../resources/profile.md).
+Update the properties of a [personAnniversary](../resources/personanniversary.md) object in a user's [profile](../resources/profile.md).
 
 ## Permissions
 
