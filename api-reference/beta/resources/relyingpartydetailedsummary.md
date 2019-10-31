@@ -11,7 +11,7 @@ doc_type: "resourcePageType"
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Represents a relying party configured in Active Directory Federation Services (AD FS)
+Represents a relying party configured with Active Directory Federation Services (AD FS), its aggregated usage and whether the relying party configuration can be migrated to Azure Active Directory.
 
 ## Methods
 
