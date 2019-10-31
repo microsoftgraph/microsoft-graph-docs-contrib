@@ -160,7 +160,7 @@ PATCH https://graph.microsoft.com/beta/places/Building1RroomList@contoso.onmicro
 Content-type: application/json
 
 {
-  "@odata.type": "microsoft.graph.roomlist"
+  "@odata.type": "microsoft.graph.roomlist",
   "displayName": "Building 1",
   "phone":"555-555-0100"
 }
