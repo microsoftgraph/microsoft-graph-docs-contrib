@@ -41,7 +41,7 @@ In the request body, provide a JSON object with the following parameters.
 
 | Parameter    | Type        | Description |
 |:-------------|:------------|:------------|
-|requests|[searchRequest](../resources/searchrequest.md) Collection|The search request to be sent to the query endpoint formatted in a JSON blob. It contains the type of entities expected in the response, the underlying sources, the paging parameters, the requested fields, and the actual search query.|
+|requests|[searchRequest](../resources/searchrequest.md) collection|The search request to be sent to the query endpoint formatted in a JSON blob. It contains the type of entities expected in the response, the underlying sources, the paging parameters, the requested fields, and the actual search query.|
 
 ## Response
 
