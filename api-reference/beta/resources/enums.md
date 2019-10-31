@@ -912,8 +912,8 @@ Possible values for user account types (group membership), per Windows definitio
 
 ### calendarRoleType values
 
-| Member       | Value       |
-|:--------------|:--------------|
+|Member|
+|:---|
 |none|
 |freeBusyRead|
 |limitedRead|

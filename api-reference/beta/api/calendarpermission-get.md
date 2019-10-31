@@ -9,7 +9,7 @@ doc_type: "apiPageType"
 
 # Get calendarPermission
 
-Get the properties and relationships of calendarpermission object.
+Get the specified permissions object of a user or group calendar that has been shared.
 
 ## Permissions
 
@@ -23,10 +23,16 @@ Depending on the type of calendar that the event is in and the permission type (
 ## HTTP request
 
 <!-- { "blockType": "ignored" } -->
-
+Get the specified permissions of a user's primary calendar.
 ```http
 GET /users/{id}/calendar/calendarPermissions/{id}
+```
+Get the specified permissions of a group calendar.
+```http
 GET /groups/{id}/calendar/calendarPermissions/{id}
+```
+Get the specified permissions of the user calendar that contains the identified event.
+```http
 GET /users/{id}/events/{id}/calendar/calendarPermissions/{id}
 ```
 
@@ -59,7 +65,7 @@ The following is an example of the request.
 }-->
 
 ```http
-GET https://graph.microsoft.com/v1.0/users/{id}/calendar/calendarPermissions/{id}
+GET https://graph.microsoft.com/beta/users/{id}/calendar/calendarPermissions/{id}
 ```
 
 ### Response

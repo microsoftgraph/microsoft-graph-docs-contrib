@@ -118,7 +118,7 @@ Here is a JSON representation of the resource
 |lastModifiedDateTime|DateTimeOffset|The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 would look like this: `'2014-01-01T00:00:00Z'`|
 |location|[Location](location.md)|The location of the event.|
 |locations|[Location](location.md) collection|The locations where the event is held or attended from. The **location** and **locations** properties always correspond with each other. If you update the **location** property, any prior locations in the **locations** collection would be removed and replaced by the new **location** value. |
-|onlineMeeting|[OnlineMeetingInfo](onlinemeetinginfo.md)| Details for an attendee to join the meeting online.|
+|onlineMeeting|[OnlineMeetingInfo](onlinemeetinginfo.md)| Details for an attendee to join the meeting online. Read-only.|
 |onlineMeetingProvider|onlineMeetingProviderType| Represents the online meeting service provider. The possible values are `teamsForBusiness`, `skypeForBusiness`, and `skypeForConsumer`. Optional. |
 |onlineMeetingUrl|String|A URL for an online meeting. The property is set only when an organizer specifies an event as an online meeting such as Skype. Read-only.|
 |organizer|[Recipient](recipient.md)|The organizer of the event.|

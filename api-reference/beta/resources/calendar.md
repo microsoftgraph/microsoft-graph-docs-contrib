@@ -61,11 +61,11 @@ A calendar which is a container for events. It can be a calendar for a [user](us
 ## Relationships
 | Relationship | Type	|Description|
 |:---------------|:--------|:----------|
+|calendarPermissions|[calendarPermission](calendarpermission.md) collection| The permissions of the users with whom the calendar is shared.|
 |calendarView|[event](event.md) collection|The calendar view for the calendar. Navigation property. Read-only.|
 |events|[event](event.md) collection|The events in the calendar. Navigation property. Read-only.|
 |multiValueExtendedProperties|[multiValueLegacyExtendedProperty](multivaluelegacyextendedproperty.md) collection| The collection of multi-value extended properties defined for the calendar. Read-only. Nullable.|
 |singleValueExtendedProperties|[singleValueLegacyExtendedProperty](singlevaluelegacyextendedproperty.md) collection| The collection of single-value extended properties defined for the calendar. Read-only. Nullable.|
-|calendarPermission|[calendarPermission](calendarpermission.md)| The permissions of the users with whom the calendar is shared.|
 
 ## JSON representation
 

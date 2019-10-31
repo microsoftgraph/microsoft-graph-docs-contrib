@@ -153,9 +153,9 @@ Content-type: application/json
     "type": "singleInstance",
     "webLink": "https://outlook.office365.com/owa/?itemid=AAMkAGViNDU7zAAAAA7zAAAZe6CkAAA%3D&exvsurl=1&path=/calendar/item",
     "onlineMeetingUrl": null,
-    "isOnlineMeeting":true,
-    "onlineMeetingProvider":"unknown",
-    "onlineMeeting":null,
+    "isOnlineMeeting": false,
+    "onlineMeetingProvider": "unknown",
+    "onlineMeeting": null,
     "recurrence": null,
     "responseStatus": {
         "response": "organizer",

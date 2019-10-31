@@ -27,7 +27,7 @@ The permissions of the users with whom the calendar is shared.
 |emailAddress|[emailAddress](emailaddress.md)| Represents a sharee who has access to the calendar. For the "My Organization" sharee, the **address** property is null. |
 |id|String| The unique identifier of the user (sharee) with whom the calendar has been shared. Read-only.|
 |isInsideOrganization|Boolean| True if the user in context (sharee) is inside the same organization as the calendar owner.|
-|isRemovable|Boolean| `True` if the user can be removed from the list of sharees for the specified calendar, `false` otherwise. The “My organization” user determines the permissions other people within your organization have to the given calendar. You cannot remove  “My organization” as a sharee to a calendar.|
+|isRemovable|Boolean| `True` if the user can be removed from the list of sharees for the specified calendar, `false` otherwise. The "My organization" user determines the permissions other people within your organization have to the given calendar. You cannot remove "My organization" as a sharee to a calendar.|
 |role|calendarRoleType| Current permission level of the calendar sharee. Possible values are: `none`, `freeBusyRead`, `limitedRead`, `read`, `write`, `delegateWithoutPrivateEventAccess`, `delegateWithPrivateEventAccess`, `custom`.|
 
 ## JSON representation

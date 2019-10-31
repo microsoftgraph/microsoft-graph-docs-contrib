@@ -55,7 +55,7 @@ The following is an example of the request.
 }-->
 
 ```http
-DELETE https://graph.microsoft.com/v1.0/users/{id}/calendar/calendarPermissions/{id}
+DELETE https://graph.microsoft.com/beta/users/{id}/calendar/calendarPermissions/{id}
 ```
 
 ### Response

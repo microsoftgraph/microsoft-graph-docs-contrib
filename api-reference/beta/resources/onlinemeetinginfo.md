@@ -2,8 +2,8 @@
 title: "onlineMeetingInfo resource type"
 description: "Details for an attendee to join the meeting online."
 localization_priority: Normal
-author: "sochowdh"
-ms.prod: "outlook"
+author: ""
+ms.prod: ""
 doc_type: "resourcePageType"
 ---
 
