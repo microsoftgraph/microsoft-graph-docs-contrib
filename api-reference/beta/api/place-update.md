@@ -82,7 +82,7 @@ Content-type: application/json
 Content-length: 285
 
 {
-  "@odata.type": "microsoft.graph.room"
+  "@odata.type": "microsoft.graph.room",
   "nickname": "Conf Room",
   "building": "1",
   "label": "100",
