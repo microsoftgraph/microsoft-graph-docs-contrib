@@ -111,7 +111,7 @@ Content-length: 285
   "uid": "iCalUId-value",
   "reminderMinutesBeforeStart": 99,
   "isOnlineMeeting": true,
-  "onlineMeetingProvider": "teamsForBusiness"
+  "onlineMeetingProvider": "teamsForBusiness",
   "isReminderOn": true
 }
 ```
