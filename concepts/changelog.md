@@ -13,11 +13,11 @@ For details about known issues with Microsoft Graph APIs, see [Known issues](kno
 
 ## November 2019
 
+### Identity and access (Azure AD)
+
 | **Change type** | **Version** | **Description**                  |
 |:----------------|:------------|:-----------------------------------------|
 | Addition | v1.0 | Added new entity type: [application](/graph/resources/application?view=graph-rest-v1.0).
-
-### Identity and access (Azure AD)
 
 ## October 2019
 
