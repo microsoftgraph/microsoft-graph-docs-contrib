@@ -25,7 +25,7 @@ One of the following permissions is required to call this API. To learn more, in
 
 ## HTTP request
 
-```http
+```HTTP
 POST /search/query
 ```
 
@@ -64,7 +64,7 @@ The following is an example of the request.
   "name": "search_query"
 }-->
 
-```http
+```HTTP
 POST https://graph.microsoft.com/beta/search/query
 Content-type: application/json
 ```
@@ -108,7 +108,7 @@ The following is an example of the response.
   "isCollection": true
 } -->
 
-```http
+```HTTP
 HTTP/1.1 200 OK
 Content-type: application/json
 ```
