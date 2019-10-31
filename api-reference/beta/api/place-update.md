@@ -11,7 +11,7 @@ doc_type: "apiPageType"
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Update the properties of [place](../resources/place.md) object.
+Update the properties of [place](../resources/place.md) object, which can be a [room] (../resources/place.md) or [roomList] (../resources/place.md). Identify the room or roomList by specifying the id or emailAddress property.
 
 ## Permissions
 
@@ -43,7 +43,7 @@ In the request body, supply the values for relevant fields that should be update
 
 | Property               | Type                                              | Description |
 |:-----------------------|:--------------------------------------------------|:--|
-| address                | [physicalAddress](physicaladdress.md)             | The street address of the room. |
+| address                | [physicalAddress](physicaladdress.md)             | The street address of the room or roomlist. |
 | audioDeviceName        | String                                            | Specifies the name of the audio device in the room. |
 | bookingType            | [bookingType](room.md)                            | Type of room. Possible values are `Standard` and `Reserved`. |
 | building               | String                                            | Specifies the building name or building number that the room is in. |
@@ -51,11 +51,11 @@ In the request body, supply the values for relevant fields that should be update
 | displayDeviceName      | String                                            | Specifies the name of the display device in the room. |
 | floorLabel             | String                                            | Specifies the floor letter that the room is on. |
 | floorNumber            | Int32                                             | Specifies the floor number that the room is on. |
-| geoCoordinates         | [outlookGeoCoordinates](outlookgeocoordinates.md) | Specifies the room location in latitude, longitude and optionally, altitude coordinates. |
+| geoCoordinates         | [outlookGeoCoordinates](outlookgeocoordinates.md) | Specifies the room or roomlist location in latitude, longitude and optionally, altitude coordinates. |
 | isWheelchairAccessible | Boolean                                           | Specifies whether the room is wheelchair accessible. |
 | label                  | String                                            | Specifies a descriptive label for the room, for example, a number or name. |
 | nickname               | String                                            | Specifies a nickname for the room, for example, "conf room". |
-| phone                  | String                                            | The phone number of the room. |
+| phone                  | String                                            | The phone number of the room or roomlist. |
 | tags                   | String collection                                 | Specifies additional features of the room, for example, details like the type of view or furniture type. |
 | videoDeviceName        | String                                            | Specifies the name of the video device in the room. |
 
@@ -158,7 +158,6 @@ The following is an example of the request.
 ```http
 PATCH https://graph.microsoft.com/beta/places/Building1RroomList@contoso.onmicrosoft.com
 Content-type: application/json
-Content-length: 285
 
 {
   "@odata.type": "microsoft.graph.roomlist"
