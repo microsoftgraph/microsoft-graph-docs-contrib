@@ -67,9 +67,7 @@ The following is an example of the request.
 ```HTTP
 POST https://graph.microsoft.com/beta/search/query
 Content-type: application/json
-```
 
-```json
 {
   "requests": [
     {
