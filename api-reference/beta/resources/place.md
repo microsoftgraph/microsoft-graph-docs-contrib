@@ -27,6 +27,7 @@ The [findRooms](../api/user-findrooms.md) and [findRoomLists](../api/user-findro
 |Supports [getting an individual room or room list](../api/place-get.md) in a tenant | Does not support getting an individual room or room list in a tenant
 |Defines the specific entities of [room](room.md) and [roomList](roomlist.md) which specify a richer property set, in addition to the display name and SMTP address. | Each room and room list is of a lighter weight [emailAddress](emailaddress.md) type which specifies only the display name and SMTP address|
 |Supports only organizational scenarios with delegated (work or school accounts) or application permissions | Similar support for only organizational scenarios with delegated or application permissions|
+|Supports [updating an individual room or room list](../api/place-update.md) in a tenant | Does not support updating an individual room or room list in a tenant
 
 ## Methods
 
@@ -34,6 +35,7 @@ The [findRooms](../api/user-findrooms.md) and [findRoomLists](../api/user-findro
 |:------------------------------------|:-----------------------------|:--------|
 | [List places](../api/place-list.md) | A collection of the requested, derived type of [place](place.md) | Get a collection of the specified type of **place** objects defined in the tenant. |
 | [Get place](../api/place-get.md)    | The requested, derived type of [place](place.md)            | Get the properties and relationships of a specified **place** object. |
+| [Update place](../api/place-update.md)    | The requested, derived type of [place](place.md)            | Update the properties and relationships of a specified **place** object. |
 
 ## Properties
 
