@@ -9181,13 +9181,14 @@
         - name: Get resource
           href: api/resource-get.md
     - name: Notifications
-      href: resources/notifications-api-overview.md
       items:
+      - name: Overview
+        href: resources/notifications-api-overview.md
       - name: Notification
         href: resources/projectrome-notification.md
         items:
         - name: Create and send a notification
-          href: api/notifications-post.md
+          href: api/user-post-notifications.md
     - name: Personal contacts
       href: resources/contact.md
       displayName: Outlook, Outlook contacts, Outlook contact, People

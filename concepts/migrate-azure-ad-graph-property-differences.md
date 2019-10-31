@@ -50,9 +50,9 @@ Because user and group are so frequently used, these resources appear first.  Ot
 | **dirSyncEnabled** | beta &nbsp;-&nbsp;**onPremisesSyncEnabled** <br> v1.0 &nbsp;-&nbsp; **onPremisesSyncEnabled** | |
 | **immutableId** | beta &nbsp;-&nbsp;**onPremisesImmutableId** <br> v1.0 &nbsp;-&nbsp; **onPremisesImmutableId** | |
 | **lastDirSyncDateTime** | beta&nbsp;-&nbsp;**onPremisesLastSyncDateTime**<br>v1.0 &nbsp;-&nbsp; **onPremisesLastSyncDateTime** | |
-| **onPremisesDomainName** | beta &nbsp;-&nbsp; _Not yet available_ <br> v1.0 &nbsp;-&nbsp; _Not yet available_ | Planned, but not yet available. |
-| **onPremisesNetBiosName** | beta &nbsp;-&nbsp; _Not yet available_ <br> v1.0 &nbsp;-&nbsp; _Not yet available_ | Planned, but not yet available. |
-| **onPremisesSamAccountName** | beta &nbsp;-&nbsp; _Not yet available_ <br> v1.0 &nbsp;-&nbsp; _Not yet available_ | Planned, but not yet available. |
+| **onPremisesDomainName** | beta &nbsp;-&nbsp; onPremisesDomainName <br> v1.0 &nbsp;-&nbsp; onPremisesDomainName | |
+| **onPremisesNetBiosName** | beta &nbsp;-&nbsp; onPremisesNetBiosName <br> v1.0 &nbsp;-&nbsp; onPremisesNetBiosName | |
+| **onPremisesSamAccountName** | beta &nbsp;-&nbsp; onPremisesSamAccountName <br> v1.0 &nbsp;-&nbsp; onPremisesSamAccountName |  |
 | **provisioningErrors** | beta &nbsp;-&nbsp; _Not available_ <br> v1.0 &nbsp;-&nbsp; _Not available_ | This property and its information is deprecated.  However, a new property describing any AD Connect related provisioning errors can be found in **onPremisesProvisioningErrors** |
 
 ## Application property differences
