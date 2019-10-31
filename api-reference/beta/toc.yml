@@ -8436,54 +8436,54 @@
         - name: Access package
           href: resources/accesspackage.md
           items:
-          - name: List accessPackages
+          - name: List
             href: api/accesspackage-list.md
-          - name: Create accessPackage
+          - name: Create
             href: api/accesspackage-post.md
-          - name: Get accessPackage
+          - name: Get
             href: api/accesspackage-get.md
-          - name: Delete accessPackage
+          - name: Delete
             href: api/accesspackage-delete.md
         - name: Access package assignment
           href: resources/accesspackageassignment.md
           items:
-          - name: List accessPackageAssignments
+          - name: List 
             href: api/accesspackageassignment-list.md
         - name: Access package assignment policy
           href: resources/accesspackageassignmentpolicy.md
           items:
-          - name: List accessPackageAssignmentPolicies
+          - name: List
             href: api/accesspackageassignmentpolicy-list.md
-          - name: Create accessPackageAssignmentPolicy
+          - name: Create
             href: api/accesspackageassignmentpolicy-post.md
-          - name: Get accessPackageAssignmentPolicy
+          - name: Get 
             href: api/accesspackageassignmentpolicy-get.md
-          - name: Delete accessPackageAssignmentPolicy
+          - name: Delete
             href: api/accesspackageassignmentpolicy-delete.md
         - name: Access package assignment request
           href: resources/accesspackageassignmentrequest.md
           items:
-          - name: List accessPackageAssignmentRequests
+          - name: List
             href: api/accesspackageassignmentrequest-list.md
-          - name: Create accessPackageAssignmentRequest
+          - name: Create
             href: api/accesspackageassignmentrequest-post.md
-          - name: Get accessPackageAssignmentRequest
+          - name: Get
             href: api/accesspackageassignmentrequest-get.md
         - name: Access package assignement resource role
           href: resources/accesspackageassignmentresourcerole.md
         - name: Access package catalog
           href: resources/accesspackagecatalog.md
           items:
-          - name: List accessPackageCatalogs
+          - name: List
             href: api/accesspackagecatalog-list.md
+          - name: Create
+            href: api/accesspackagecatalog-post.md
+          - name: Get
+            href: api/accesspackagecatalog-get.md
+          - name: Delete
+            href: api/accesspackagecatalog-delete.md
           - name: List resources
             href: api/accesspackagecatalog-list-accesspackageresources.md
-          - name: Create accessPackageCatalog
-            href: api/accesspackagecatalog-post.md
-          - name: Get accessPackageCatalog
-            href: api/accesspackagecatalog-get.md
-          - name: Delete accessPackageCatalog
-            href: api/accesspackagecatalog-delete.md
       - name: Feature rollout policy
         href: resources/featurerolloutpolicy.md
         items:
