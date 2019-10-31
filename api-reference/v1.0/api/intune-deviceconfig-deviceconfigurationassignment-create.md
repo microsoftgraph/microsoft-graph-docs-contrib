@@ -1,9 +1,10 @@
 ---
 title: "Create deviceConfigurationAssignment"
 description: "Create a new deviceConfigurationAssignment object."
-author: "tfitzmac"
+author: "davidmu1"
 localization_priority: Normal
 ms.prod: "Intune"
+doc_type: apiPageType
 ---
 
 # Create deviceConfigurationAssignment
@@ -83,6 +84,7 @@ Content-Length: 218
   }
 }
 ```
+
 
 
 

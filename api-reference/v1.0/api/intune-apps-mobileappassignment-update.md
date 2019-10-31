@@ -1,9 +1,10 @@
 ---
 title: "Update mobileAppAssignment"
 description: "Update the properties of a mobileAppAssignment object."
-author: "tfitzmac"
+author: "davidmu1"
 localization_priority: Normal
 ms.prod: "Intune"
+doc_type: apiPageType
 ---
 
 # Update mobileAppAssignment
@@ -93,6 +94,7 @@ Content-Length: 322
   }
 }
 ```
+
 
 
 

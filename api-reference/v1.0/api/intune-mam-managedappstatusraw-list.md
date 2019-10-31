@@ -1,9 +1,10 @@
 ---
 title: "List managedAppStatusRaws"
 description: "List properties and relationships of the managedAppStatusRaw objects."
-author: "tfitzmac"
+author: "davidmu1"
 localization_priority: Normal
 ms.prod: "Intune"
+doc_type: apiPageType
 ---
 
 # List managedAppStatusRaws
@@ -71,6 +72,7 @@ Content-Length: 307
   ]
 }
 ```
+
 
 
 

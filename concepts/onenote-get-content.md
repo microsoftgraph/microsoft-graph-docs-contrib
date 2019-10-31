@@ -138,7 +138,7 @@ The JSON response contains the preview content, which you can use to help users 
 
 The **previewText** property contains a text snippet from the page. Microsoft Graph returns complete phrases, up to a maximum of 300 characters. 
 
-If the page has an image that can be used to build a preview UI, the **href** property in the **previewImageUrl** object contains a link to a public, pre-authenticated [image resource](#image-or-other-file-resource). You can use this link in HTML. Otherwise, **href** returns null.
+If the page has an image that can be used to build a preview UI, the **href** property in the **previewImageUrl** object contains a link to a public [image resource](#image-or-other-file-resource). You can use this link in HTML. Otherwise, **href** returns null.
 
 #### Example 
 
@@ -542,7 +542,7 @@ Get pages 51 to 100. The API returns 20 entries by default with a maximum of 100
 ```
 
 > **Note:**
-> GET requests for pages that retrieve the default number of entries (that is, they don't specify a **top** expression) return an **@odata.nextLink** link in the response that you can use to get the next 20 entries.
+> GET requests for pages that retrieve the default number of entries (that is, they don't specify a **top** expression) return an **\@odata.nextLink** link in the response that you can use to get the next 20 entries.
  
 
 <a name="supported-odata-query-string-options"></a>

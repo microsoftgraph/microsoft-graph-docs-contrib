@@ -4,6 +4,7 @@ description: "Redirect an incoming call."
 author: "VinodRavichandran"
 localization_priority: Normal
 ms.prod: "microsoft-teams"
+doc_type: apiPageType
 ---
 
 # call: redirect
@@ -43,6 +44,7 @@ In the request body, provide a JSON object with the following parameters.
 |timeout|Int32|The timeout in seconds for the redirect operation.|
 |maskCallee|Boolean|Indicates whether to mask the callee.|
 |maskCaller|Boolean|Indicates whether to mask the caller.|
+|callbackUri|String|Allows bots to provide a specific callback URI where the result of the Redirect action will be posted. This allows sending the result to the same specific bot instance that triggered the Redirect action. If none is provided, the bot's global callback URI will be used.|
 
 ## Response
 Returns `202 Accepted` response code
@@ -54,6 +56,8 @@ Returns `202 Accepted` response code
 ##### Request
 The following example shows the request.
 
+
+# [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "call-redirect"
@@ -84,6 +88,20 @@ Content-Length: 515
   "maskCaller": false
 }
 ```
+# [C#](#tab/csharp)
+[!INCLUDE [sample-code](../includes/snippets/csharp/call-redirect-csharp-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [JavaScript](#tab/javascript)
+[!INCLUDE [sample-code](../includes/snippets/javascript/call-redirect-javascript-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Objective-C](#tab/objc)
+[!INCLUDE [sample-code](../includes/snippets/objc/call-redirect-objc-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+---
+
 
 ##### Response
 
@@ -97,16 +115,6 @@ Content-Length: 515
 ```http
 HTTP/1.1 202 Accepted
 ```
-#### SDK sample code
-# [C#](#tab/cs)
-[!INCLUDE [sample-code](../includes/call-redirect-Cs-snippets.md)]
-
-# [Javascript](#tab/javascript)
-[!INCLUDE [sample-code](../includes/call-redirect-Javascript-snippets.md)]
-
----
-
-[!INCLUDE [sdk-documentation](../includes/snippets_sdk_documentation_link.md)]
 
 ### Forward a call
 
@@ -273,8 +281,6 @@ Content-Type: application/json
   "section": "documentation",
   "tocPath": "",
   "suppressions": [
-    "Error: /api-reference/beta/api/call-redirect.md:\r\n      BookmarkMissing: '[#tab/cs](C#)'. Did you mean: #c (score: 5)",
-    "Error: /api-reference/beta/api/call-redirect.md:\r\n      BookmarkMissing: '[#tab/javascript](Javascript)'. Did you mean: #javascript (score: 4)"
   ]
 }
 -->

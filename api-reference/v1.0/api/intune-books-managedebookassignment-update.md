@@ -1,9 +1,10 @@
 ---
 title: "Update managedEBookAssignment"
 description: "Update the properties of a managedEBookAssignment object."
-author: "tfitzmac"
+author: "davidmu1"
 localization_priority: Normal
 ms.prod: "Intune"
+doc_type: apiPageType
 ---
 
 # Update managedEBookAssignment
@@ -86,6 +87,7 @@ Content-Length: 243
   "installIntent": "required"
 }
 ```
+
 
 
 

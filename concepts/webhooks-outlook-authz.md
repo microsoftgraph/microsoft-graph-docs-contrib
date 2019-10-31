@@ -3,6 +3,7 @@ title: "Reduce missing subscriptions and notifications for Outlook resources (pr
 description: "Outlook may suspend delivery of change notifications due to security events such as user's password reset. Special lifecycle events - `subscriptionRemoved` and `missed` - need to be handled to ensure uninterrupted delivery of notifications."
 author: "piotrci"
 localization_priority: Priority
+ms.custom: graphiamtop20
 ---
 
 # Reduce missing subscriptions and notifications for Outlook resources (preview) 
@@ -133,7 +134,7 @@ A few things to note about this type of notification:
 ### Actions to take
 
 1. [Acknowledge](webhooks.md#notifications) the receipt of the notification, by responding to the POST call with `202 - Accepted`.
-  - If you ignore these, signals, do nothing else. Otherwise:
+    - If you ignore these, signals, do nothing else. Otherwise:
 2. [Validate](webhooks.md#notifications) the authenticity of the notification.
 3. Perform a full data resync of the resource to identify the changes that were not delivered as notifications. 
 

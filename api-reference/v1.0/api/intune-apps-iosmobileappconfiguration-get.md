@@ -1,9 +1,10 @@
 ---
 title: "Get iosMobileAppConfiguration"
 description: "Read properties and relationships of the iosMobileAppConfiguration object."
-author: "tfitzmac"
+author: "davidmu1"
 localization_priority: Normal
 ms.prod: "Intune"
+doc_type: apiPageType
 ---
 
 # Get iosMobileAppConfiguration
@@ -84,6 +85,7 @@ Content-Length: 763
   }
 }
 ```
+
 
 
 

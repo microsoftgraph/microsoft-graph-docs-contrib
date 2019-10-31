@@ -1,9 +1,10 @@
 ---
 title: "Get deviceAndAppManagementRoleAssignment"
 description: "Read properties and relationships of the deviceAndAppManagementRoleAssignment object."
-author: "tfitzmac"
+author: "davidmu1"
 localization_priority: Normal
 ms.prod: "Intune"
+doc_type: apiPageType
 ---
 
 # Get deviceAndAppManagementRoleAssignment
@@ -75,6 +76,7 @@ Content-Length: 346
   }
 }
 ```
+
 
 
 

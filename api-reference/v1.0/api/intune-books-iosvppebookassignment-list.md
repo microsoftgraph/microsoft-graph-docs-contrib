@@ -1,9 +1,10 @@
 ---
 title: "List iosVppEBookAssignments"
 description: "List properties and relationships of the iosVppEBookAssignment objects."
-author: "tfitzmac"
+author: "davidmu1"
 localization_priority: Normal
 ms.prod: "Intune"
+doc_type: apiPageType
 ---
 
 # List iosVppEBookAssignments
@@ -70,6 +71,7 @@ Content-Length: 299
   ]
 }
 ```
+
 
 
 

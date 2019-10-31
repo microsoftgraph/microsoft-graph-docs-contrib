@@ -1,9 +1,10 @@
 ---
 title: "deviceManagementTroubleshootingEvent resource type"
 description: "Event representing an general failure."
-author: "tfitzmac"
+author: "davidmu1"
 localization_priority: Normal
 ms.prod: "Intune"
+doc_type: resourcePageType
 ---
 
 # deviceManagementTroubleshootingEvent resource type
@@ -47,6 +48,7 @@ Here is a JSON representation of the resource.
   "correlationId": "String"
 }
 ```
+
 
 
 

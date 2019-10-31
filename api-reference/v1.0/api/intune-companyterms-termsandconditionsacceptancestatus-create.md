@@ -1,9 +1,10 @@
 ---
 title: "Create termsAndConditionsAcceptanceStatus"
 description: "Create a new termsAndConditionsAcceptanceStatus object."
-author: "tfitzmac"
+author: "davidmu1"
 localization_priority: Normal
 ms.prod: "Intune"
+doc_type: apiPageType
 ---
 
 # Create termsAndConditionsAcceptanceStatus
@@ -85,6 +86,7 @@ Content-Length: 260
   "acceptedDateTime": "2016-12-31T23:57:43.6165506-08:00"
 }
 ```
+
 
 
 

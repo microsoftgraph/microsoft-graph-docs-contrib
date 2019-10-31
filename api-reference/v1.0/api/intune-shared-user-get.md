@@ -1,9 +1,10 @@
 ---
 title: "Get user"
 description: "Read properties and relationships of the user object."
-author: "tfitzmac"
+author: "davidmu1"
 localization_priority: Normal
 ms.prod: "intune"
+doc_type: apiPageType
 ---
 
 # Get user
@@ -72,6 +73,7 @@ Content-Length: 118
   }
 }
 ```
+
 
 
 

@@ -1,9 +1,10 @@
 ---
 title: "Get androidWorkProfileCompliancePolicy"
 description: "Read properties and relationships of the androidWorkProfileCompliancePolicy object."
-author: "tfitzmac"
+author: "davidmu1"
 localization_priority: Normal
 ms.prod: "Intune"
+doc_type: apiPageType
 ---
 
 # Get androidWorkProfileCompliancePolicy
@@ -93,6 +94,7 @@ Content-Length: 1417
   }
 }
 ```
+
 
 
 

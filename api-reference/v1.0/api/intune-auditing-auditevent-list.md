@@ -1,9 +1,10 @@
 ---
 title: "List auditEvents"
 description: "List properties and relationships of the auditEvent objects."
-author: "tfitzmac"
+author: "davidmu1"
 localization_priority: Normal
 ms.prod: "Intune"
+doc_type: apiPageType
 ---
 
 # List auditEvents
@@ -104,6 +105,7 @@ Content-Length: 1632
   ]
 }
 ```
+
 
 
 

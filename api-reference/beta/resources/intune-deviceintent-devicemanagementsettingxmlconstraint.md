@@ -4,6 +4,7 @@ description: "Constraint enforcing the setting is well formed XML"
 author: "rolyon"
 localization_priority: Normal
 ms.prod: "Intune"
+doc_type: resourcePageType
 ---
 
 # deviceManagementSettingXmlConstraint resource type
@@ -36,8 +37,6 @@ Here is a JSON representation of the resource.
   "@odata.type": "#microsoft.graph.deviceManagementSettingXmlConstraint"
 }
 ```
-
-
 
 
 

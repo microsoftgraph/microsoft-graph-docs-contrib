@@ -1,9 +1,10 @@
 ---
 title: "Update eBookInstallSummary"
 description: "Update the properties of a eBookInstallSummary object."
-author: "tfitzmac"
+author: "davidmu1"
 localization_priority: Normal
 ms.prod: "Intune"
+doc_type: apiPageType
 ---
 
 # Update eBookInstallSummary
@@ -94,6 +95,7 @@ Content-Length: 285
   "notInstalledUserCount": 5
 }
 ```
+
 
 
 

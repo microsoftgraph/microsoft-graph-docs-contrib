@@ -1,9 +1,10 @@
 ---
 title: "Get deviceComplianceScheduledActionForRule"
 description: "Read properties and relationships of the deviceComplianceScheduledActionForRule object."
-author: "tfitzmac"
+author: "davidmu1"
 localization_priority: Normal
 ms.prod: "Intune"
+doc_type: apiPageType
 ---
 
 # Get deviceComplianceScheduledActionForRule
@@ -68,6 +69,7 @@ Content-Length: 188
   }
 }
 ```
+
 
 
 

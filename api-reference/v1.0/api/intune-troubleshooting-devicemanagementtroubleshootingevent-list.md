@@ -1,9 +1,10 @@
 ---
 title: "List deviceManagementTroubleshootingEvents"
 description: "List properties and relationships of the deviceManagementTroubleshootingEvent objects."
-author: "tfitzmac"
+author: "davidmu1"
 localization_priority: Normal
 ms.prod: "Intune"
+doc_type: apiPageType
 ---
 
 # List deviceManagementTroubleshootingEvents
@@ -68,6 +69,7 @@ Content-Length: 277
   ]
 }
 ```
+
 
 
 

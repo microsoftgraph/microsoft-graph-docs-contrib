@@ -1,9 +1,10 @@
 ---
 title: "Get windows10CompliancePolicy"
 description: "Read properties and relationships of the windows10CompliancePolicy object."
-author: "tfitzmac"
+author: "davidmu1"
 localization_priority: Normal
 ms.prod: "Intune"
+doc_type: apiPageType
 ---
 
 # Get windows10CompliancePolicy
@@ -91,6 +92,7 @@ Content-Length: 1197
   }
 }
 ```
+
 
 
 

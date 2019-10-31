@@ -4,6 +4,7 @@ description: "Read properties and relationships of the auditEvent object."
 author: "rolyon"
 localization_priority: Normal
 ms.prod: "Intune"
+doc_type: apiPageType
 ---
 
 # Get auditEvent
@@ -21,7 +22,7 @@ One of the following permissions is required to call this API. To learn more, in
 |:---|:---|
 |Delegated (work or school account)|DeviceManagementApps.ReadWrite.All, DeviceManagementApps.Read.All|
 |Delegated (personal Microsoft account)|Not supported.|
-|Application|Not supported.|
+|Application|DeviceManagementApps.ReadWrite.All, DeviceManagementApps.Read.All|
 
 ## HTTP Request
 <!-- {
@@ -60,7 +61,7 @@ Here is an example of the response. Note: The response object shown here may be 
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 1538
+Content-Length: 1747
 
 {
   "value": {
@@ -79,7 +80,14 @@ Content-Length: 1538
       "userPrincipalName": "User Principal Name value",
       "servicePrincipalName": "Service Principal Name value",
       "ipAddress": "Ip Address value",
-      "userId": "User Id value"
+      "userId": "User Id value",
+      "scopeTags": [
+        {
+          "@odata.type": "microsoft.graph.scopeTagInfo",
+          "scopeTagName": "Scope Tag Name value",
+          "scopeTagId": "Scope Tag Id value"
+        }
+      ]
     },
     "activity": "Activity value",
     "activityDateTime": "2016-12-31T23:59:51.6363086-08:00",
@@ -107,6 +115,7 @@ Content-Length: 1538
   }
 }
 ```
+
 
 
 

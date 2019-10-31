@@ -1,9 +1,10 @@
 ---
 title: "Get windowsPhone81GeneralConfiguration"
 description: "Read properties and relationships of the windowsPhone81GeneralConfiguration object."
-author: "tfitzmac"
+author: "davidmu1"
 localization_priority: Normal
 ms.prod: "Intune"
+doc_type: apiPageType
 ---
 
 # Get windowsPhone81GeneralConfiguration
@@ -109,6 +110,7 @@ Content-Length: 1740
   }
 }
 ```
+
 
 
 

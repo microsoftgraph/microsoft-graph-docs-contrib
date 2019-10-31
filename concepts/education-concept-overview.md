@@ -4,15 +4,14 @@ description: "The education API in Microsoft Graph enhances Office 365 resources
 author: "mmast-msft"
 localization_priority: Priority
 ms.prod: "education"
+scenarios: "getting-started"
 ---
 
 # Education API overview
 
 The education API in Microsoft Graph enhances Office 365 resources with information that is relevant for education scenarios, including information about schools, classes, users (students and teachers), assignments, and submissions. This makes it easy for you to build solutions that integrate with educational resources for various school and classroom scenarios.
 
-The education API in Microsoft Graph provides access to classes, schools, users, assignments, submissions and more.
-
-![EDU Graph Overview](images/edugraph.png)
+> [!VIDEO https://www.youtube-nocookie.com/embed/EnDM7KMTEqQ]
 
 ## Why integrate with education scenarios?
 
@@ -45,7 +44,7 @@ With the assignment API, your app can interact with the assignment service outsi
 The following are examples of a few scenarios enabled by the assignments API:
 
 - [Add an assignment that links to your application](/graph/api/educationclass-post-assignments?view=graph-rest-beta) 
-- [Assign grades to individual students for assignments linked to your application](/graph/api/educationsubmission-update?view=graph-rest-beta)
+- [Assign outcomes like grades to individual students for assignments linked to your application](/graph/api/educationoutcome-update?view=graph-rest-beta)
 - [Create a student dashboard to show which assignments are due by when](/graph/api/educationclass-list-assignments?view=graph-rest-beta)
 
 
@@ -68,16 +67,16 @@ Looking for the API reference for this service?
 ## Next Steps
 
 - To start using the education APIs, see:
-    - [Use the roster APIs](/graph/api/resources/education-overview?view=graph-rest-1.0)
-    - [Use the assignment APIs](/graph/api/resources/educationassignment?view=graph-rest-beta)
-    - [Use the SDS management APIs](/graph/api/resources/educationsynchronizationprofile?view=graph-rest-beta)
+  - [Use the roster APIs](/graph/api/resources/education-overview?view=graph-rest-1.0)
+  - [Use the assignment APIs](/graph/api/resources/educationassignment?view=graph-rest-beta)
+  - [Use the SDS management APIs](/graph/api/resources/educationsynchronizationprofile?view=graph-rest-beta)
 - Try the education APIs in [Graph Explorer](https://developer.microsoft.com/graph/graph-explorer).
 - Explore the following education-related samples:
-    - [.NET sample for SSO & Rostering](https://github.com/OfficeDev/O365-EDU-AspNetMVC-Samples)
-    - [Angular Node sample for SSO & Rostering](https://github.com/OfficeDev/O365-EDU-AngularNodeJS-Samples)   
-    - [Python sample for SSO & Rostering](https://github.com/OfficeDev/O365-EDU-Python-Samples)
-    - [PHP sample for for SSO & Rostering](https://github.com/OfficeDev/O365-EDU-PHP-Samples)
-    - [Sample for profile management APIs](https://github.com/OfficeDev/O365-EDU-SDS-AspNetMVC-Samples) 
+  - [.NET sample for SSO & Rostering](https://github.com/OfficeDev/O365-EDU-AspNetMVC-Samples)
+  - [Angular Node sample for SSO & Rostering](https://github.com/OfficeDev/O365-EDU-AngularNodeJS-Samples)   
+  - [Python sample for SSO & Rostering](https://github.com/OfficeDev/O365-EDU-Python-Samples)
+  - [PHP sample for SSO & Rostering](https://github.com/OfficeDev/O365-EDU-PHP-Samples)
+  - [Sample for profile management APIs](https://github.com/OfficeDev/O365-EDU-SDS-AspNetMVC-Samples) 
 
 
 

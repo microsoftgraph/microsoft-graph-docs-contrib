@@ -4,6 +4,7 @@ description: "Not yet documented"
 author: "rolyon"
 localization_priority: Normal
 ms.prod: "intune"
+doc_type: apiPageType
 ---
 
 # getEffectivePermissions function
@@ -21,7 +22,8 @@ One of the following permissions is required to call this API. To learn more, in
 |Delegated (work or school account)||
 | &nbsp; &nbsp; **Role-based access control (RBAC)** | DeviceManagementRBAC.ReadWrite.All, DeviceManagementRBAC.Read.All|
 |Delegated (personal Microsoft account)|Not supported.|
-|Application|Not supported.|
+|Application||
+| &nbsp; &nbsp; **Role-based access control (RBAC)** | DeviceManagementRBAC.ReadWrite.All, DeviceManagementRBAC.Read.All|
 
 ## HTTP Request
 <!-- {
@@ -87,6 +89,12 @@ Content-Length: 471
   ]
 }
 ```
+
+
+
+
+
+
 
 
 

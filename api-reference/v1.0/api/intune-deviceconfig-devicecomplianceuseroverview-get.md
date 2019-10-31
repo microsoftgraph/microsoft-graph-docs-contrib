@@ -1,9 +1,10 @@
 ---
 title: "Get deviceComplianceUserOverview"
 description: "Read properties and relationships of the deviceComplianceUserOverview object."
-author: "tfitzmac"
+author: "davidmu1"
 localization_priority: Normal
 ms.prod: "Intune"
+doc_type: apiPageType
 ---
 
 # Get deviceComplianceUserOverview
@@ -74,6 +75,7 @@ Content-Length: 365
   }
 }
 ```
+
 
 
 

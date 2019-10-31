@@ -4,6 +4,7 @@ description: "Update the properties of a defaultManagedAppProtection object."
 author: "rolyon"
 localization_priority: Normal
 ms.prod: "Intune"
+doc_type: apiPageType
 ---
 
 # Update defaultManagedAppProtection
@@ -21,7 +22,7 @@ One of the following permissions is required to call this API. To learn more, in
 |:---|:---|
 |Delegated (work or school account)|DeviceManagementApps.ReadWrite.All|
 |Delegated (personal Microsoft account)|Not supported.|
-|Application|Not supported.|
+|Application|DeviceManagementApps.ReadWrite.All|
 
 ## HTTP Request
 <!-- {
@@ -85,6 +86,9 @@ The following table shows the properties that are required when you create the [
 |pinRequiredInsteadOfBiometricTimeout|Duration|Timeout in minutes for an app pin instead of non biometrics passcode Inherited from [managedAppProtection](../resources/intune-mam-managedappprotection.md)|
 |allowedOutboundClipboardSharingExceptionLength|Int32|Specify the number of characters that may be cut or copied from Org data and accounts to any application. This setting overrides the AllowedOutboundClipboardSharingLevel restriction. Default value of '0' means no exception is allowed. Inherited from [managedAppProtection](../resources/intune-mam-managedappprotection.md)|
 |notificationRestriction|[managedAppNotificationRestriction](../resources/intune-mam-managedappnotificationrestriction.md)|Specify app notification restriction Inherited from [managedAppProtection](../resources/intune-mam-managedappprotection.md). Possible values are: `allow`, `blockOrganizationalData`, `block`.|
+|previousPinBlockCount|Int32|Requires a pin to be unique from the number specified in this property. Inherited from [managedAppProtection](../resources/intune-mam-managedappprotection.md)|
+|maximumAllowedDeviceThreatLevel|[managedAppDeviceThreatLevel](../resources/intune-mam-managedappdevicethreatlevel.md)|Maximum allowed device threat level, as reported by the MTD app Inherited from [managedAppProtection](../resources/intune-mam-managedappprotection.md). Possible values are: `notConfigured`, `secured`, `low`, `medium`, `high`.|
+|mobileThreatDefenseRemediationAction|[managedAppRemediationAction](../resources/intune-mam-managedappremediationaction.md)|Determines what action to take if the mobile threat defense threat threshold isn't met. Warn isn't a supported value for this property Inherited from [managedAppProtection](../resources/intune-mam-managedappprotection.md). Possible values are: `block`, `wipe`, `warn`.|
 |appDataEncryptionType|[managedAppDataEncryptionType](../resources/intune-mam-managedappdataencryptiontype.md)|Type of encryption which should be used for data in a managed app. (iOS Only). Possible values are: `useDeviceSettings`, `afterDeviceRestart`, `whenDeviceLockedExceptOpenFiles`, `whenDeviceLocked`.|
 |screenCaptureBlocked|Boolean|Indicates whether screen capture is blocked. (Android only)|
 |encryptAppData|Boolean|Indicates whether managed-app data should be encrypted. (Android only)|
@@ -113,6 +117,9 @@ The following table shows the properties that are required when you create the [
 |customBrowserProtocol|String|A custom browser protocol to open weblink on iOS. (iOS only)|
 |customBrowserPackageId|String|Unique identifier of a custom browser to open weblink on Android. (Android only)|
 |customBrowserDisplayName|String|Friendly name of the preferred custom browser to open weblink on Android. (Android only)|
+|minimumRequiredCompanyPortalVersion|String|Minimum version of the Company portal that must be installed on the device or app access will be blocked|
+|minimumWarningCompanyPortalVersion|String|Minimum version of the Company portal that must be installed on the device or the user will receive a warning|
+|minimumWipeCompanyPortalVersion|String|Minimum version of the Company portal that must be installed on the device or the company data on the app will be wiped|
 
 
 
@@ -126,7 +133,7 @@ Here is an example of the request.
 ``` http
 PATCH https://graph.microsoft.com/beta/deviceAppManagement/defaultManagedAppProtections/{defaultManagedAppProtectionId}
 Content-type: application/json
-Content-length: 3746
+Content-length: 4140
 
 {
   "@odata.type": "#microsoft.graph.defaultManagedAppProtection",
@@ -171,6 +178,9 @@ Content-length: 3746
   "pinRequiredInsteadOfBiometricTimeout": "-PT3M9.8396734S",
   "allowedOutboundClipboardSharingExceptionLength": 14,
   "notificationRestriction": "blockOrganizationalData",
+  "previousPinBlockCount": 5,
+  "maximumAllowedDeviceThreatLevel": "secured",
+  "mobileThreatDefenseRemediationAction": "wipe",
   "appDataEncryptionType": "afterDeviceRestart",
   "screenCaptureBlocked": true,
   "encryptAppData": true,
@@ -216,7 +226,10 @@ Content-length: 3746
   "appActionIfAndroidSafetyNetAppsVerificationFailed": "wipe",
   "customBrowserProtocol": "Custom Browser Protocol value",
   "customBrowserPackageId": "Custom Browser Package Id value",
-  "customBrowserDisplayName": "Custom Browser Display Name value"
+  "customBrowserDisplayName": "Custom Browser Display Name value",
+  "minimumRequiredCompanyPortalVersion": "Minimum Required Company Portal Version value",
+  "minimumWarningCompanyPortalVersion": "Minimum Warning Company Portal Version value",
+  "minimumWipeCompanyPortalVersion": "Minimum Wipe Company Portal Version value"
 }
 ```
 
@@ -225,7 +238,7 @@ Here is an example of the response. Note: The response object shown here may be 
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 3918
+Content-Length: 4312
 
 {
   "@odata.type": "#microsoft.graph.defaultManagedAppProtection",
@@ -273,6 +286,9 @@ Content-Length: 3918
   "pinRequiredInsteadOfBiometricTimeout": "-PT3M9.8396734S",
   "allowedOutboundClipboardSharingExceptionLength": 14,
   "notificationRestriction": "blockOrganizationalData",
+  "previousPinBlockCount": 5,
+  "maximumAllowedDeviceThreatLevel": "secured",
+  "mobileThreatDefenseRemediationAction": "wipe",
   "appDataEncryptionType": "afterDeviceRestart",
   "screenCaptureBlocked": true,
   "encryptAppData": true,
@@ -318,9 +334,13 @@ Content-Length: 3918
   "appActionIfAndroidSafetyNetAppsVerificationFailed": "wipe",
   "customBrowserProtocol": "Custom Browser Protocol value",
   "customBrowserPackageId": "Custom Browser Package Id value",
-  "customBrowserDisplayName": "Custom Browser Display Name value"
+  "customBrowserDisplayName": "Custom Browser Display Name value",
+  "minimumRequiredCompanyPortalVersion": "Minimum Required Company Portal Version value",
+  "minimumWarningCompanyPortalVersion": "Minimum Warning Company Portal Version value",
+  "minimumWipeCompanyPortalVersion": "Minimum Wipe Company Portal Version value"
 }
 ```
+
 
 
 

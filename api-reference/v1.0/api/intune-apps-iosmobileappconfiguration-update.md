@@ -1,9 +1,10 @@
 ---
 title: "Update iosMobileAppConfiguration"
 description: "Update the properties of a iosMobileAppConfiguration object."
-author: "tfitzmac"
+author: "davidmu1"
 localization_priority: Normal
 ms.prod: "Intune"
+doc_type: apiPageType
 ---
 
 # Update iosMobileAppConfiguration
@@ -116,6 +117,7 @@ Content-Length: 706
   ]
 }
 ```
+
 
 
 

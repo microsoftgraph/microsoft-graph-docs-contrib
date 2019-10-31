@@ -4,6 +4,7 @@ description: "Constraint enforcing the permitted value range for an integer sett
 author: "rolyon"
 localization_priority: Normal
 ms.prod: "Intune"
+doc_type: resourcePageType
 ---
 
 # deviceManagementSettingIntegerConstraint resource type
@@ -40,8 +41,6 @@ Here is a JSON representation of the resource.
   "maximumValue": 1024
 }
 ```
-
-
 
 
 

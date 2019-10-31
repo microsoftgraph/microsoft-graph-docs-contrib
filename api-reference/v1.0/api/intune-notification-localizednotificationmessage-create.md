@@ -1,9 +1,10 @@
 ---
 title: "Create localizedNotificationMessage"
 description: "Create a new localizedNotificationMessage object."
-author: "tfitzmac"
+author: "davidmu1"
 localization_priority: Normal
 ms.prod: "Intune"
+doc_type: apiPageType
 ---
 
 # Create localizedNotificationMessage
@@ -90,6 +91,7 @@ Content-Length: 313
   "isDefault": true
 }
 ```
+
 
 
 

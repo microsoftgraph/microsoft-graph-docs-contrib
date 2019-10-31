@@ -1,9 +1,10 @@
 ---
 title: "Create windows10GeneralConfiguration"
 description: "Create a new windows10GeneralConfiguration object."
-author: "tfitzmac"
+author: "davidmu1"
 localization_priority: Normal
 ms.prod: "Intune"
+doc_type: apiPageType
 ---
 
 # Create windows10GeneralConfiguration
@@ -742,6 +743,7 @@ Content-Length: 9994
   "tenantLockdownRequireNetworkDuringOutOfBoxExperience": true
 }
 ```
+
 
 
 

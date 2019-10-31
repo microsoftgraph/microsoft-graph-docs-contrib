@@ -1,9 +1,10 @@
 ---
 title: "Get managedAppProtection"
 description: "Read properties and relationships of the managedAppProtection object."
-author: "tfitzmac"
+author: "davidmu1"
 localization_priority: Normal
 ms.prod: "Intune"
+doc_type: apiPageType
 ---
 
 # Get managedAppProtection
@@ -102,6 +103,7 @@ Content-Length: 1631
   }
 }
 ```
+
 
 
 
