@@ -973,4 +973,12 @@ Possible values for user account types (group membership), per Windows definitio
 |windows|
 |windowsPhone|
 |macOS|
-|all
+|all|
+
+### priority values
+
+|Member|Value|
+|:---|:---|
+|None|0|
+|High|1|
+|Low|2|
