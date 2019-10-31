@@ -11,9 +11,9 @@ doc_type: resourcePageType
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Using the Microsoft Search API, apps can query Office 365 data in the context of the authenticated user.
+Using the Microsoft Search API, apps can query Office 365 data.
 
-Requests to index data are performed on behalf of an application using a [token](/graph/auth-v2-service.md) with delegated permissions.
+Search requests are executed in the context of the user, using a [token](/graph/auth-v2-service.md) with delegated permissions.
 
 ## Common use cases
 
@@ -73,7 +73,7 @@ Best practices:
 
 ### Get the most relevant emails
 
-When searching the **message** entity, specifying **enableTopResults** as `true` returns a list of messages sorted by relevance.
+When searching the **message** entity, specifying **enableTopResults** as `true` returns a hybrid list of messages : the first 3 messages in the response are sorted by relevance, the remaining messages are sorted by date.
 
 ### Get selected properties
 
