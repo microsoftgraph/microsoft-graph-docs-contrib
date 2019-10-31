@@ -196,7 +196,7 @@ Content-type: application/json
     "countryOrRegion": "USA"
   },
   "geocoordinates": null,
-  "phone": 555-555-0100,
+  "phone": "555-555-0100",
   "emailAddress": "bldg1@contoso.com"
 }
 ```
