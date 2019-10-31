@@ -8489,11 +8489,11 @@
             href: api/accesspackageassignmentrequest-post.md
           - name: Get
             href: api/accesspackageassignmentrequest-get.md
-        - name: Access package assignement resource role
+        - name: Access package assignment resource role
           href: resources/accesspackageassignmentresourcerole.md
           items:
-            - name: List
-              href: api/accesspackageassignmentresourcerole-list.md
+          - name: List
+            href: api/accesspackageassignmentresourcerole-list.md
         - name: Access package catalog
           href: resources/accesspackagecatalog.md
           items:
