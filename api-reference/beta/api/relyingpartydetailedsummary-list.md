@@ -1,6 +1,6 @@
 ---
 title: "List relyingPartyDetailedSummary"
-description: "Retrieve the properties and relationships of relyingpartydetailedsummary object."
+description: "Retrieve the properties and relationships of a relyingPartyDetailedSummary object."
 localization_priority: Normal
 author: "davidmu1"
 ms.prod: "microsoft-identity-platform"
@@ -11,7 +11,7 @@ doc_type: "apiPageType"
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Retrieve the properties and relationships of [relyingPartyDetailedSummary](../resources/relyingpartydetailedsummary.md) object.
+Retrieve the properties and relationships of a [relyingPartyDetailedSummary](../resources/relyingpartydetailedsummary.md) object.
 
 ## Permissions
 
@@ -41,7 +41,7 @@ GET /reports/relyingPartyDetailedSummary
 This method supports some of the OData query parameters to help customize the response. 
 
 - You can use the `$filter` parameter to filter by relyingPartyId, migrationStatus and other attributes. For example, $filter= relyingPartyId eq 'identifier'.
-- You can use $orderby, $top, and $skip query parameters in any GET request.
+- You can use `$orderby`, `$top`, and `$skip` query parameters in any GET request.
 
 For general information, see [OData query parameters](/graph/query-parameters).
 
@@ -50,7 +50,7 @@ For general information, see [OData query parameters](/graph/query-parameters).
 
 | Name      |Description|
 |:----------|:----------|
-| Authorization | Bearer {code} |
+| Authorization | Bearer {code}. Required. |
 
 ## Request body
 

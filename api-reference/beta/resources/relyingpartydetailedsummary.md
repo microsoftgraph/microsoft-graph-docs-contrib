@@ -17,7 +17,7 @@ Represents a relying party configured with Active Directory Federation Services 
 
 | Method       | Return Type | Description |
 |:-------------|:------------|:------------|
-| [List relyingPartyDetailedSummary](../api/relyingpartydetailedsummary-list.md) | [relyingPartyDetailedSummary](relyingpartydetailedsummary.md) | Read properties and relationships of relyingPartyDetailedSummary object. |
+| [List relyingPartyDetailedSummary](../api/relyingpartydetailedsummary-list.md) | [relyingPartyDetailedSummary](relyingpartydetailedsummary.md) | Read the properties and relationships of a **relyingPartyDetailedSummary** object. |
 
 
 ## Properties
@@ -30,16 +30,16 @@ Represents a relying party configured with Active Directory Federation Services 
 |migrationStatus|string| Indication of whether the application can be moved to Azure AD or require more investigation. Possible values are: `ready`, `needsReview`, `additionalStepsRequired`.|
 |migrationValidationDetails|[keyValuePair](keyvaluepair.md) collection|Specifies all the validations check done on applications configuration details to evaluate if the application is ready to be moved to Azure AD.|
 |relyingPartyName|String|Name of application or other entity on the internet that uses an identity provider to authenticate a user who wants to log in.|
-|failedSignInCount|Int64| # of failed sign in on Active Directory Federation Service in the period specified. |
+|failedSignInCount|Int64| Number of failed sign in on Active Directory Federation Service in the period specified. |
 |replyUrls|String collection|Specifies where the relying party expects to receive the token.|
-|signInSuccessRate|Double|# of successful / (# Successful + #failed sign ins) on Active Directory Federation Service in the period specified.|
-|successfulSignInCount|Int64|# of successful sign ins on Active Directory Federation Service.|
-|totalSignInCount|Int64|# of successful + failed sign ins failed sign ins on Active Directory Federation Service in the period specified.|
-|uniqueUserCount|Int64|# of unique users that have signed into the application.|
+|signInSuccessRate|Double|Number of successful / (number of successful + number of failed sign ins) on Active Directory Federation Service in the period specified.|
+|successfulSignInCount|Int64|Number of successful sign ins on Active Directory Federation Service.|
+|totalSignInCount|Int64|Number of successful + failed sign ins failed sign ins on Active Directory Federation Service in the period specified.|
+|uniqueUserCount|Int64|Number of unique users that have signed into the application.|
 
 ## Relationships
 
-None
+None.
 
 ## JSON representation
 
