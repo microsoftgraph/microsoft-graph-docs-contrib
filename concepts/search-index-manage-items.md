@@ -58,7 +58,7 @@ DELETE /external/connections/contosohelpdesk/items/SR00145
 
 ## Next steps
 
-- [Why integrate with Microsoft Search indexing](search-index-overview.md)
+- [Why use the indexing API?](search-concept-overview.md#why-use-the-indexing-api)
 - [Using the indexing API](/graph/api/resources/indexing-api-overview?view=graph-rest-beta)
 - [Search for externalItems](search-concept-custom-types.md)
 - [Search for externalFiles](search-concept-files.md)

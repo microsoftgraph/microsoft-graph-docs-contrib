@@ -29,7 +29,7 @@ Search requests are executed on behalf of user. Search results are trimmed down 
 |[Get the most relevant emails](#get-the-most-relevant-emails) | **enableTopResults** |
 |[Get selected properties](#get-selected-properties) | **stored_fields** |
 |[Use KQL in query terms](#keyword-query-language-kql-support) | **query** |
-|[Search external Files](/graph/search-concept-files)| **entityTypes** | 
+|[Search external Files](/graph/search-concept-files)| **entityTypes** |
 |[Search within a specific contentSource (indexing API)](/graph/search-concept-custom-types)| **contentSources** |
 
 ### Scope search based on entity types
@@ -85,10 +85,11 @@ The names specified in **stored_fields** should be the retrievable Managed Prope
 
 Specify free text keywords, operators (such as `AND`, `OR`), and property restrictions in KQL syntax in the actual search query string (**query** property of the **query** request body). The syntax and command depend on the entity types (in the **entityTypes** property) you target in the same **query** request body.
 
-Depending on the entity type, the searchable properties vary:  
-  - [message properties](https://docs.microsoft.com/en-us/microsoft-365/compliance/keyword-queries-and-search-conditions#searchable-email-properties)
-  - [driveItem properties](https://docs.microsoft.com/en-us/microsoft-365/compliance/keyword-queries-and-search-conditions#searchable-site-properties)
-  
+Depending on the entity type, the searchable properties vary:
+
+- [message properties](/microsoft-365/compliance/keyword-queries-and-search-conditions#searchable-email-properties)
+- [driveItem properties](/microsoft-365/compliance/keyword-queries-and-search-conditions#searchable-site-properties)
+
 ## Error handling
 
 The search API returns error responses as defined by [OData error object definition](http://docs.oasis-open.org/odata/odata-json-format/v4.01/cs01/odata-json-format-v4.01-cs01.html#sec_ErrorResponse), each of which is a JSON object containing a code and a message.
@@ -101,13 +102,13 @@ The search API has the following limitations:
 
 - The **query** method is defined to allow passing a collection of one or more **searchRequest** instances at once. However, the service currently supports only a single [searchRequest](./searchrequest.md) at a time.
 
-- The [searchRequest](./searchrequest.md) resource supports passing multiple types of entities at a time. However, currently the only supported combination is **driveItem** and **externalFile**. Other combinations are invalid. 
+- The [searchRequest](./searchrequest.md) resource supports passing multiple types of entities at a time. However, currently the only supported combination is **driveItem** and **externalFile**. Other combinations are invalid.
 
 - The **contentSource** property, which defines the connection to use, is only applicable when **entityType** is specified as `externalItem`.
 <!--todo nmoreauteam Fix the link to ContentSource  pls provide the content source url--->
 
 - The search API does not support custom sort and always sorts results in the following ways:
 
-  - Sort **message** or **event** type results by date.  
+  - Sort **message** or **event** type results by date.
 
   - Sort **driveItem**, **externalFile**, or **externalItem** type results by relevance.

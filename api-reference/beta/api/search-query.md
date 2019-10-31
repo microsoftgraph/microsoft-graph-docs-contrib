@@ -67,14 +67,15 @@ The following is an example of the request.
 ```http
 POST https://graph.microsoft.com/beta/search/query
 Content-type: application/json
-```
 
-```json
 {
   "requests": [
     {
-      "entityTypes": ["microsoft.graph.externalItem"],
-      "contentSources": ["/external/connections/connectionfriendlyname"],"
+      "entityTypes": [
+        "microsoft.graph.externalItem"
+      ],
+      "contentSources": [
+        "/external/connections/connectionfriendlyname"
       ],
       "query": {
         "query_string": {
@@ -85,7 +86,7 @@ Content-type: application/json
       "size": 25,
       "stored_fields": [
         "title",
-        "description
+        "description"
       ]
     }
   ]

@@ -10,7 +10,7 @@ ms.prod: "search"
 
 The search API lets you search files stored in SharePoint or OneDrive. It uses a relevance model which makes use of signals from Microsoft Graph about users' relations and activities. This allows returning and promoting content that users care about.
 
-The search API lets you build a file search experience that is consistent with the **Files** tab that lists search results in SharePoint. It 
+The search API lets you build a file search experience that is consistent with the **Files** tab that lists search results in SharePoint. It
 can surface external files exposed via the indexing API.
 
 
@@ -25,7 +25,7 @@ In order to be valid, properties restriction should specify a valid Queryable ma
 
 ### Example
 
-#### Request  
+#### Request
 
 ```HTTP
 POST /search/query
@@ -53,10 +53,10 @@ Content-Type: application/json
 
 Here is an example of the response.
 
-<!---TODO nmoreau team Include one example of externalItem response.--> 
+<!---TODO nmoreau team Include one example of externalItem response.-->
 ```Json
 {
-  
+
   "@odata.context": "https://graph.microsoft.com/beta/$metadata#search",
   "value": [
       {
@@ -102,12 +102,12 @@ Here is an example of the response.
 
 ## Search external files (well-known types)
 
-[File share connector](https://docs.microsoft.com/en-us/MicrosoftSearch/file-share-connector) is an "out of the box" connector available in Microsoft Search. It enables you to index files available on a file share. You can use the query API to query all external files.
+[File share connector](/MicrosoftSearch/file-share-connector) is an "out of the box" connector available in Microsoft Search. It enables you to index files available on a file share. You can use the query API to query all external files.
 
 ### Example
 The following example returns all configured externalFile connector for the tenant, and sorts the results by relevance.
 
-#### Request  
+#### Request
 
 ```HTTP
 POST /search/query
@@ -149,7 +149,7 @@ Content-Type: application/json
                      "_id": "FsHvoeTuRRVLnuEZLEVBfSQAAWTp",
                      "_score": 1,
                      "_sortField": "Relevance",
-                     "_source": { 
+                     "_source": {
                             "@odata.type": "#microsoft.graph.externalFile",
                             "id": "FsHvoeTuRRVLnuEZLEVBfSQAAWTp",
                             "extension": "pptx",

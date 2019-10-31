@@ -33,7 +33,7 @@ Looking for the API reference for this service?
 
 ## Next steps
 
-- Learn more about [Microsoft Search](https://docs.microsoft.com/en-us/microsoftsearch/).
+- Learn more about [Microsoft Search](/microsoftsearch/).
 - Learn more about a few key use cases:
   - [Search for Outlook messages](search-concept-messages.md)
   - [Search for calendar events](search-concept-events.md)
