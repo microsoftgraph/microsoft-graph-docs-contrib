@@ -954,3 +954,11 @@ Possible values for user account types (group membership), per Windows definitio
 |windowsPhone|
 |macOS|
 |all|
+
+### priority values
+
+|Member|Value|
+|:---|:---|
+|None|0|
+|High|1|
+|Low|2|
