@@ -1,9 +1,9 @@
 ---
 title: "call: updateRecordingStatus"
-description: "Update the appliation's recording status associated with a call."
+description: "Update the application's recording status associated with a call."
 author: "VinodRavichandran"
 localization_priority: Normal
-ms.prod: "microsoft-teams"
+ms.prod: "cloud-communications"
 doc_type: apiPageType
 ---
 
@@ -11,16 +11,16 @@ doc_type: apiPageType
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Update the appliation's recording status associated with a call.
+Update the application's recording status associated with a call.
 
 ## Permissions
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
 
-| Permission type                        | Permissions (from least to most privileged) |
-|:---------------------------------------|:--------------------------------------------|
-| Delegated (work or school account)     | Not Supported                               |
-| Delegated (personal Microsoft account) | Not Supported                               |
-| Application     | Calls.JoinGroupCalls.All, Calls.AccessMedia.All |
+| Permission type                        | Permissions (from least to most privileged)      |
+|:---------------------------------------|:-------------------------------------------------|
+| Delegated (work or school account)     | Not Supported                                    |
+| Delegated (personal Microsoft account) | Not Supported                                    |
+| Application                            | Calls.JoinGroupCalls.All, Calls.AccessMedia.All  |
 
 ## HTTP request
 <!-- { "blockType": "ignored" } -->
@@ -36,10 +36,10 @@ POST /app/calls/{id}/updateRecordingStatus
 ## Request body
 In the request body, provide a JSON object with the following parameters.
 
-| Parameter      | Type    |Description|
-|:---------------|:--------|:----------|
-|metadata|String|A blob of data provided by the participant in the roster.|
-|clientContext|String|The client context.|
+| Parameter       | Type    | Description                                                                           |
+|:----------------|:--------|:--------------------------------------------------------------------------------------|
+| clientContext   | String  | Unique Client Context string. Max limit is 256 chars.                                 |
+| status          | String  | The recording status. Possible values are: `notRecording`, `recording`, or `failed`.  |
 
 ## Response
 This method returns a `200 OK` response code and a Location header with a URI to the [updateRecordingStatusOperation](../resources/updaterecordingstatusoperation.md) created for this request.
@@ -63,7 +63,7 @@ Content-Length: 79
 
 {
   "clientContext": "clientContext-value",
-  "status": "recording"
+  "status": "notRecording | recording | failed"
 }
 ```
 

@@ -3,7 +3,7 @@ title: "incomingContext resource type"
 description: "The context associated with an incoming call."
 author: "VinodRavichandran"
 localization_priority: Normal
-ms.prod: "microsoft-teams"
+ms.prod: "cloud-communications"
 doc_type: resourcePageType
 ---
 
@@ -15,12 +15,12 @@ The context associated with an incoming call.
 
 ## Properties
 
-| Property              | Type                          | Description|
-|:----------------------|:------------------------------|:----------|
-| observedParticipantId | String                        | The id of the participant that is being observed. Read-only. Server generated.  |
-| onBehalfOf            | [identitySet](identityset.md) | The identity that the call is happening on behalf of. |
-| sourceParticipantId   | String                        | The id of the participant that triggered the incoming call. Read-only. Server generated.  |
-| transferor            | [identitySet](identityset.md) | The identity that tranfered the call. |
+| Property              | Type                          | Description                                                             |
+|:----------------------|:------------------------------|:------------------------------------------------------------------------|
+| observedParticipantId | String                        | The id of the participant that is being observed. Read-only.            |
+| onBehalfOf            | [identitySet](identityset.md) | The identity that the call is happening on behalf of.                   |
+| sourceParticipantId   | String                        | The id of the participant that triggered the incoming call. Read-only.  |
+| transferor            | [identitySet](identityset.md) | The identity that transferred the call.                                 |
 
 ## JSON representation
 

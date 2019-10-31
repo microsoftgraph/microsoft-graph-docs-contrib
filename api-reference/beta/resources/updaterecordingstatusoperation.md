@@ -3,7 +3,7 @@ title: "updateRecordingStatusOperation resource type"
 description: "The updateRecordingStatus operation to obtain the result of the updateRecordingStatus action."
 author: "VinodRavichandran"
 localization_priority: Normal
-ms.prod: "microsoft-teams"
+ms.prod: "cloud-communications"
 doc_type: resourcePageType
 ---
 
@@ -11,15 +11,15 @@ doc_type: resourcePageType
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-The updateRecordingStatus operation to obtain the result of the updateRecordingStatus action.
+This resource type is used to describe the response format for the [updateRecordingStatus](../api/call-updaterecordingstatus.md) API.
 
 ## Properties
 
 | Property            | Type                        | Description|
 |:--------------------|:----------------------------|:-----------------------------------------------------------------------------------|
-| clientContext       | String                      | The client context.                                                                |
+| clientContext       | String                      | Unique Client Context string. Max limit is 256 chars.                              |
 | id                  | String                      | Read-only.                                                                         |
-| resultInfo          | [resultInfo](resultinfo.md) | The result information. Read-only. Server generated.                               |
+| resultInfo          | [resultInfo](resultinfo.md) | The result information. Read-only.                                                 |
 | status              | String                      | Possible values are: `notStarted`, `running`, `completed`, `failed`.               |
 
 ## Relationships

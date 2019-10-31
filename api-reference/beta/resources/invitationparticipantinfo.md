@@ -3,7 +3,7 @@ title: "invitationParticipantInfo resource type"
 description: "The **InvitationParticipant** is used to represent a set of identities associated with a conversation invitation, and provides additional invitation parameters."
 author: "VinodRavichandran"
 localization_priority: Normal
-ms.prod: "microsoft-teams"
+ms.prod: "cloud-communications"
 doc_type: resourcePageType
 ---
 
@@ -15,10 +15,10 @@ The **InvitationParticipant** is used to represent a set of identities associate
 
 ## Properties
 
-| Property                           | Type                          | Description                                                                          |
-| :--------------------------------- | :---------------------------- | :----------------------------------------------------------------------------------- |
-| endpointType                       | String                        | Possible values are: `default`, `voicemail`. |
-| identity                           | [identitySet](identityset.md) | The [identitySet](identityset.md) associated with this invitation.                   |
+| Property                           | Type                          | Description                                                                                                                  |
+| :--------------------------------- | :---------------------------- | :--------------------------------------------------------------------------------------------------------------------------- |
+| endpointType                       | String                        | Possible values are: `default`, `voicemail`.                                                                                 |
+| identity                           | [identitySet](identityset.md) | The [identitySet](identityset.md) associated with this invitation.                                                           |
 | replacesCallId                     | String                        | Optional. The call which the target idenity is currently a part of. This call will be dropped once the participant is added. |
 
 ## JSON representation
