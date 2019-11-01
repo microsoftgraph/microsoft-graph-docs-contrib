@@ -11,7 +11,7 @@ doc_type: "resourcePageType"
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Represents basic descriptive data about cloud services that a user has chosen to refer to from their account.
+The [serviceInformation](serviceinformation.md) resource type represents basic descriptive data about cloud services that a user has chosen to refer to from their account.
 
 ## Properties
 

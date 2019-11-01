@@ -11,7 +11,7 @@ doc_type: "resourcePageType"
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Represents detailed information about skills the user has associated with themselves in various services.
+The [skillProficiency](skillproficiency.md) resource type provides detailed information about skills the user has associated with themselves in various services.
 
 Inherits from [itemFacet](itemfacet.md).
 

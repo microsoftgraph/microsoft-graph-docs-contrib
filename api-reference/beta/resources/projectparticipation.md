@@ -11,7 +11,7 @@ doc_type: "resourcePageType"
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Represents detailed information about projects the user has associated with them.
+The [projectParticipation](projectparticipation.md) resource type provides detailed information about projects the user has associated with them.
 
 Inherits from [itemFacet](itemfacet.md).
 
