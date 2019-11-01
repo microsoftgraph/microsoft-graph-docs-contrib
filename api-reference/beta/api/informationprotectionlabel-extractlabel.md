@@ -38,8 +38,8 @@ POST /informationprotection/policy/labels/extractLabel
 
 | Name          | Description                    |
 | :------------ | :----------------------------- |
-| Authorization | Bearer {token}                 |
-| Content-type  | Content-type: application/json |
+| Authorization | Bearer {token}. Required.                 |
+| Content-type  | Content-type: application/json. Required. |
 
 ## Request body
 
@@ -47,11 +47,11 @@ In the request body, provide a JSON object with the following parameters.
 
 | Parameter   | Type                                       | Description                                                                                                                                                                                                   |
 | :---------- | :----------------------------------------- | :------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ |
-| contentInfo | [contentInfo](../resources/contentinfo.md) | Provides details on the [content format](../resources/enums.md#contentformat), [content state](../resources/enums.md#contentstate), and existing [metadata](../resources/keyvaluepair.md) as key/value pairs. |
+| contentInfo | [contentInfo](../resources/contentinfo.md) | Provides details about the [content format](../resources/enums.md#contentformat), [content state](../resources/enums.md#contentstate), and existing [metadata](../resources/keyvaluepair.md) as key/value pairs. |
 
 ## Response
 
-If successful, this method returns `200 OK` response code and a new [informationProtectionContentLabel](../resources/informationprotectioncontentlabel.md) object in the response body.
+If successful, this method returns a `200 OK` response code and a new [informationProtectionContentLabel](../resources/informationprotectioncontentlabel.md) object in the response body.
 
 ## Examples
 
