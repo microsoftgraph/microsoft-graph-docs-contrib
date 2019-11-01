@@ -1,49 +1,59 @@
 ---
-title: "companyDetail resource type"
-description: "companyDetail resource type"
+title: "personInterest resource type"
+description: "personInterest resource type"
 localization_priority: Normal
 author: "kevinbellinger"
 ms.prod: "people"
 doc_type: "resourcePageType"
 ---
 
-# companyDetail resource type
+# personInterest resource type
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Represents information about companies related to entities within their [profile](profile.md).
+The [personInterest](personinterest.md) resource type provides detailed information about interests the user has associated with themselves in various services.
+
+Inherits from [itemFacet](itemfacet.md).
+
+## Methods
+
+| Method       | Return Type | Description |
+|:---------------------------------------------------|:------------------------------------|:------------------------------------------------------------|
+| [Get personInterest](../api/personinterest-get.md) | [personInterest](personinterest.md) | Read properties and relationships of personInterest object. |
+| [Update](../api/personinterest-update.md)          | [personInterest](personinterest.md) | Update personInterest object.                               |
+| [Delete](../api/personinterest-delete.md)          | None                                | Delete personInterest object.                               |
 
 ## Properties
 
-| Property       | Type                                | Description                                 |
-|:---------------|:------------------------------------|:--------------------------------------------|
-|address         |[physicalAddress](physicaladdress.md)| Address of the company.                     |
-|department      |String                               | Department Name within a company.           |
-|displayName     |String                               | Company name.                               |
-|officeLocation  |String                               | Office Location of the person referred to.  |
-|pronunciation   |String                               | Pronunciation guide for the company name.   |
-|webUrl          |String                               | Link to the company home page.              |
+| Property     | Type             | Description                                                                          |
+|:-------------|:-----------------|:-------------------------------------------------------------------------------------|
+|categories    |String collection | Contains categories a user has associated with the interest (eg: personal, recipies) |
+|description   |String            | Contains a description of the interest.                                              |
+|displayName   |String            | Contains a friendly name for the interest.                                           |
+|webUrl        |String            | Contains a link to a webpage or resource about the interest.                         |
+
+## Relationships
+
+None
 
 ## JSON representation
 
-The following is a JSON representation of the resource.
+The following is a JSON representation of the resource. 
 
 <!-- {
   "blockType": "resource",
   "optionalProperties": [
 
   ],
-  "@odata.type": "microsoft.graph.companyDetail",
-  "baseType": null
+  "@odata.type": "microsoft.graph.personInterest",
+  "baseType": ""
 }-->
 
 ```json
 {
-  "address": {"@odata.type": "microsoft.graph.physicalAddress"},
-  "department": "String",
+  "categories": ["String"],
+  "description": "String",
   "displayName": "String",
-  "officeLocation": "String",
-  "pronunciation": "String",
   "webUrl": "String"
 }
 ```
@@ -52,7 +62,7 @@ The following is a JSON representation of the resource.
 2019-02-04 14:57:30 UTC -->
 <!-- {
   "type": "#page.annotation",
-  "description": "companyDetail resource",
+  "description": "personInterest resource",
   "keywords": "",
   "section": "documentation",
   "tocPath": ""
