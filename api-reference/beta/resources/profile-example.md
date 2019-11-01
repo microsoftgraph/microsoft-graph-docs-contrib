@@ -4,9 +4,10 @@ description: "Microsoft Graph applications can use the Profile API to retrieve t
 author: "kevinbellinger"
 localization_priority: Priority
 ms.prod: "people"
+doc_type: "conceptualPageType"
 ---
 
-# Use the Profile API in Microsoft Graph to retrieve information about yourself or another user. 
+# Use the Profile API in Microsoft Graph to retrieve information about yourself or another user 
 
 Microsoft Graph applications can use the Profile API to retrieve the profile of the signed-in user or another user with a valid Azure AD or Microsoft account. This information can be used in applications to assist in contextualizing another user, providing a richer experience for the user within the application or as a mechanism for storing extended information about the user which can also be used within Microsoft 365. 
 
