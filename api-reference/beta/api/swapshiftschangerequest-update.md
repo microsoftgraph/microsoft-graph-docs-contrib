@@ -1,17 +1,17 @@
 ---
-title: "Update swapshiftschangerequest"
-description: "Update the properties of swapshiftschangerequest object."
+title: "Update swapShiftsChangeRequest"
+description: "Update the properties of a swapShiftsChangeRequest object."
 localization_priority: Normal
 author: "akumar39"
 ms.prod: "Microsoft-Teams"
 doc_type: "apiPageType"
 ---
 
-# Update swapshiftschangerequest
+# Update swapShiftsChangeRequest
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Update the properties of swapshiftschangerequest object.
+Update the properties of a [swapShiftsChangeRequest](../resources/swapshiftschangerequest.md) object.
 
 ## Permissions
 
@@ -35,7 +35,8 @@ PATCH /teams/{id}/schedule/swapShiftsChangeRequests
 
 | Name       | Description|
 |:-----------|:-----------|
-| Authorization | Bearer {token} |
+| Authorization | Bearer {token}. Required. |
+| Content-type | application/json. Required. |
 
 ## Request body
 
