@@ -798,6 +798,8 @@
             href: api/place-list.md
           - name: Get place
             href: api/place-get.md
+          - name: Update place
+            href: api/place-update.md
     - name: Cloud communications
       displayName: Cloud communications
       items:
