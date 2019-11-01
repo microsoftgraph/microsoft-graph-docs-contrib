@@ -1,9 +1,9 @@
 ---
 title: "Get openShiftChangeRequest"
-description: "Retrieve the properties and relationships of openShiftChangeRequest object."
+description: "Retrieve the properties and relationships of an openShiftChangeRequest object."
 localization_priority: Normal
 author: "akumar39"
-ms.prod: "Microsoft-Teams"
+ms.prod: "microsoft-teams"
 doc_type: "apiPageType"
 ---
 
