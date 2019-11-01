@@ -11,7 +11,7 @@ doc_type: "resourcePageType"
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-The [personAnniversary](personanniversary.md) resource type provides the ability to store detail of meaningful dates associated with a person in a user's [profile](profile.md).
+Represents detail of meaningful dates associated with a person in a user's [profile](profile.md).
 
 Inherits from [itemFacet](itemFacet.md).
 

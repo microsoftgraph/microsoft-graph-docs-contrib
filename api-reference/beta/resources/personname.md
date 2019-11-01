@@ -11,7 +11,7 @@ doc_type: "resourcePageType"
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-The [personName](personname.md) resource type provides extended name information provided by the user or which they have associated with their account.
+Represents extended name information provided by the user or which they have associated with their account.
 
 Inherits from [itemFacet](itemfacet.md).
 
