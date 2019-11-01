@@ -1,9 +1,9 @@
 ---
 title: "List workforceIntegrations"
-description: "Retrieve a list of workforceintegration objects."
+description: "Retrieve a list of workforceIntegration objects."
 localization_priority: Normal
 author: "akumar39"
-ms.prod: "Microsoft-Teams"
+ms.prod: "microsoft-teams"
 doc_type: "apiPageType"
 ---
 
@@ -11,7 +11,7 @@ doc_type: "apiPageType"
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Retrieve a list of workforceintegration objects.
+Retrieve a list of [workforceIntegration](../resources/workforceintegration.md) objects.
 
 ## Permissions
 
@@ -39,7 +39,7 @@ This method supports some of the OData query parameters to help customize the re
 
 | Name      |Description|
 |:----------|:----------|
-| Authorization | Bearer {token} |
+| Authorization | Bearer {token}. Required. |
 
 ## Request body
 
