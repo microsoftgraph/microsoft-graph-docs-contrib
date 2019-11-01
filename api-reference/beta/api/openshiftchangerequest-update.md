@@ -1,6 +1,6 @@
 ---
-title: "Update openshiftchangerequest"
-description: "Update the properties of openshiftchangerequest object."
+title: "Update openShiftChangeRequest"
+description: "Update the properties of an openShiftChangeRequest object."
 localization_priority: Normal
 author: "akumar39"
 ms.prod: "Microsoft-Teams"
@@ -11,7 +11,7 @@ doc_type: "apiPageType"
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Update the properties of openshiftchangerequest object.
+Update the properties of an [openShiftChangeRequest](../resources/openshiftchangerequest.md) object.
 
 ## Permissions
 
@@ -35,7 +35,7 @@ PATCH /teams/{id}/schedule/openShiftsChangeRequests
 
 | Name       | Description|
 |:-----------|:-----------|
-| Authorization | Bearer {token} |
+| Authorization | Bearer {token}. Required. |
 
 ## Request body
 
