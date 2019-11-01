@@ -70,11 +70,11 @@ GET /users/{id | userPrincipalName}/events/{id}/attachments/{id}/$value
 Attachments for an [event](../resources/event.md) in the specified user [calendar](../resources/calendar.md).
 <!-- { "blockType": "ignored" } -->
 ```http
-GET /me/calendar/{id}/events/{id}/attachments/{id}
-GET /users/{id | userPrincipalName}/calendar/events/{id}/attachments/{id}
+GET /me/calendars/{id}/events/{id}/attachments/{id}
+GET /users/{id | userPrincipalName}/calendars/{id}/events/{id}/attachments/{id}
 
-GET /me/calendar/{id}/events/{id}/attachments/{id}/$value
-GET /users/{id | userPrincipalName}/calendar/events/{id}/attachments/{id}/$value
+GET /me/calendars/{id}/events/{id}/attachments/{id}/$value
+GET /users/{id | userPrincipalName}/calendars/{id}/events/{id}/attachments/{id}/$value
 ```
 
 <!--
@@ -85,12 +85,6 @@ GET /groups/{id}/calendar/events/{id}/attachments/{id}
 Attachments for an [event](../resources/event.md) in a [calendar](../resources/calendar.md) belonging to the user's default [calendarGroup](../resources/calendargroup.md).
 <!-- { "blockType": "ignored" } -->
 ```http
-GET /me/calendars/{id}/events/{id}/attachments/{id}
-GET /users/{id | userPrincipalName}/calendars/{id}/events/{id}/attachments/{id}
-
-GET /me/calendars/{id}/events/{id}/attachments/{id}/$value
-GET /users/{id | userPrincipalName}/calendars/{id}/events/{id}/attachments/{id}/$value
-
 GET /me/calendargroup/calendars/{id}/events/{id}/attachments/{id}
 GET /users/{id | userPrincipalName}/calendargroup/calendars/{id}/events/{id}/attachments/{id}
 

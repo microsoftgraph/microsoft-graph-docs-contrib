@@ -32,6 +32,8 @@ items:
         items:
           - name: Overview
             href: tutorials.md
+          - name: .NET Core
+            href: /graph/tutorials/dotnet-core
           - name: Android
             href: /graph/tutorials/android
           - name: Angular
@@ -40,6 +42,10 @@ items:
             href: /graph/tutorials/aspnet
           - name: Microsoft Flow
             href: /graph/tutorials/flow
+          - name: iOS Objective-C
+            href: /graph/tutorials/ios-objectivec
+          - name: iOS Swift
+            href: /graph/tutorials/ios-swift
           - name: Java
             href: /graph/tutorials/java
           - name: Node.js
@@ -50,6 +56,8 @@ items:
             href: /graph/tutorials/python
           - name: React
             href: /graph/tutorials/react
+          - name: React Native
+            href: /graph/tutorials/react-native
           - name: Ruby
             href: /graph/tutorials/ruby
           - name: UWP
@@ -76,6 +84,8 @@ items:
             href: findmeetingtimes-example.md
           - name: Get free/busy schedule
             href: outlook-get-free-busy-schedule.md
+          - name: Propose new meeting times (preview)
+            href: outlook-calendar-meeting-proposals.md
           - name: Schedule recurring events
             href: outlook-schedule-recurring-events.md
           - name: Get shared events
@@ -124,7 +134,7 @@ items:
             href: education-rubric-overview.md
       - name: Files
         href: onedrive-concept-overview.md
-        displayName: OneDrive, OneDrive for Buisness, OneDrive business, OneDrive personal, SharePoint
+        displayName: OneDrive, OneDrive for Business, OneDrive business, OneDrive personal, SharePoint
       - name: Financials (preview)
         href: dynamics-business-central-concept-overview.md
         displayname: Dynamics, Dynamics 365 Business Central
@@ -147,6 +157,8 @@ items:
             href: outlook-share-messages-folders.md
           - name: Send mail from another user
             href: outlook-send-mail-from-other-user.md
+          - name: Attach large files (preview)
+            href: outlook-large-attachments.md
           - name: Organize messages
             href: outlook-organize-messages.md
           - name: Immutable ID
@@ -230,7 +242,7 @@ items:
             href: security-partner-overview.md
       - name: Sites and lists
         href: sharepoint-concept-overview.md
-        displayName: SharePoint, OneDrive, OneDrive for Buisness, OneDrive business, OneDrive personal
+        displayName: SharePoint, OneDrive, OneDrive for Business, OneDrive business, OneDrive personal
       - name: Social and workplace intelligence
         items:
           - name: Overview
@@ -306,7 +318,7 @@ items:
           - name: Throttling
             href: throttling.md
           - name: Change notifications
-            displayName: Webhooks, Outlook mail, Outlook calendar, Outlook contacts, Outlook contact, OneDrive, OneDrive for Buisness, OneDrive business, OneDrive personal, SharePoint, Security, Users, Groups
+            displayName: Webhooks, Outlook mail, Outlook calendar, Outlook contacts, Outlook contact, OneDrive, OneDrive for Business, OneDrive business, OneDrive personal, SharePoint, Security, Users, Groups
             items:
               - name: Overview
                 href: webhooks.md
@@ -384,7 +396,9 @@ items:
             href: sdks/create-client.md
           - name: Choose an authentication provider
             href: sdks/choose-authentication-providers.md
-      - name: Use the toolkit (preview)
+          - name: Create requests
+            href: sdks/create-requests.md
+      - name: Use the toolkit
         items:
           - name: Toolkit overview
             href: toolkit/overview.md
@@ -402,6 +416,8 @@ items:
                 href: toolkit/components/tasks.md
               - name: People-Picker
                 href: toolkit/components/people-picker.md
+              - name: Person-Card
+                href: toolkit/components/person-card.md
           - name: Providers
             items:
               - name: Using the providers

@@ -61,7 +61,7 @@ Here is an example of the response. Note: The response object shown here may be 
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 624
+Content-Length: 872
 
 {
   "value": {
@@ -75,13 +75,18 @@ Content-Length: 624
         "@odata.type": "microsoft.graph.userExperienceAnalyticsInsight",
         "userExperienceAnalyticsMetricId": "User Experience Analytics Metric Id value",
         "insightId": "Insight Id value",
-        "value": [
+        "values": [
           {
-            "@odata.type": "microsoft.graph.insightValueDouble"
+            "@odata.type": "microsoft.graph.insightValueDouble",
+            "value": "<Unknown Primitive Type Edm.Double>"
           }
-        ]
+        ],
+        "severity": "informational"
       }
-    ]
+    ],
+    "state": "insufficientData",
+    "deviceBootPerformanceHealthState": "insufficientData",
+    "bestPracticesHealthState": "insufficientData"
   }
 }
 ```

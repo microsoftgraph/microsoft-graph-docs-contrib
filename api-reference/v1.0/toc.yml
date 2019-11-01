@@ -33,7 +33,7 @@
     - name: Throttling
       href: /graph/throttling?context=graph/api/1.0
     - name: Change notifications
-      displayname: Webhooks, Outlook mail, Outlook calendar, Outlook contacts, Outlook contact, People, Microsoft Teams, Teams, OneDrive, OneDrive for Buisness, OneDrive business, OneDrive personal, SharePoint, Security, Users, Groups
+      displayname: Webhooks, Outlook mail, Outlook calendar, Outlook contacts, Outlook contact, People, Microsoft Teams, Teams, OneDrive, OneDrive for Business, OneDrive business, OneDrive personal, SharePoint, Security, Users, Groups
       items:
       - name: Overview
         href: /graph/webhooks?context=graph/api/1.0
@@ -111,6 +111,8 @@
         href: /graph/sdks/create-client?context=graph/api/1.0
       - name: Choose an authentication provider
         href: /graph/sdks/choose-authentication-providers?context=graph/api/1.0
+      - name: Create requests
+        href: /graph/sdks/create-requests?context=graph/api/1.0        
   - name: Use the toolkit (preview)
     items:
       - name: Toolkit overview
@@ -288,9 +290,10 @@
           href: api/user-list-manager.md
         - name: Assign manager
           href: api/user-post-manager.md
-      - name: Outlook settings
-        href: resources/outlookuser.md
+      - name: Outlook settings       
         items:
+        - name: Outlook user
+          href: resources/outlookuser.md
         - name: Get language choices
           href: api/outlookuser-supportedlanguages.md
         - name: Get time zone choices
@@ -303,6 +306,8 @@
           href: api/outlookuser-list-mastercategories.md
         - name: Create category
           href: api/outlookuser-post-mastercategories.md
+        - name: Translate IDs
+          href: api/user-translateexchangeids.md
       - name: Photo
         href: resources/profilephoto.md
         items:
@@ -562,11 +567,11 @@
           href: api/event-delete.md
         - name: Get delta
           href: api/event-delta.md
-        - name: Accept events
+        - name: Accept event
           href: api/event-accept.md
         - name: Tentatively accept
           href: api/event-tentativelyaccept.md
-        - name: Decline events
+        - name: Decline event
           href: api/event-decline.md
         - name: Dismiss reminder
           href: api/event-dismissreminder.md
@@ -3100,7 +3105,7 @@
         - name: Delete user
           href: api/educationuser-delete.md
     - name: Files
-      displayName: OneDrive, OneDrive for Buisness, OneDrive business, OneDrive personal, SharePoint
+      displayName: OneDrive, OneDrive for Business, OneDrive business, OneDrive personal, SharePoint
       items:
       - name: Overview
         href: resources/onedrive.md
@@ -3178,6 +3183,43 @@
       items:
       - name: Overview
         href: resources/azure-ad-overview.md
+      - name: Application
+        href: resources/application.md
+        items:
+        - name: List applications
+          href: api/application-list.md
+        - name: Create application
+          href: api/application-post-applications.md
+        - name: Get application
+          href: api/application-get.md
+        - name: Update application
+          href: api/application-update.md
+        - name: Delete application
+          href: api/application-delete.md
+        - name: List deleted applications
+          href: api/directory-deleteditems-list.md
+        - name: Get deleted application
+          href: api/directory-deleteditems-get.md
+        - name: Permanently delete application
+          href: api/directory-deleteditems-delete.md
+        - name: Restore deleted application
+          href: api/directory-deleteditems-restore.md
+        - name: Add password
+          href: api/application-addpassword.md
+        - name: Remove password
+          href: api/application-removepassword.md
+        - name: Create extension
+          href: api/application-post-extensionproperty.md
+        - name: List extensions
+          href: api/application-list-extensionproperty.md
+        - name: Delete extension
+          href: api/application-delete-extensionproperty.md
+        - name: List owners
+          href: api/application-list-owners.md
+        - name: Add owner
+          href: api/application-post-owners.md
+        - name: Remove owner
+          href: api/application-delete-owners.md
       - name: Audit logs
         href: resources/azure-ad-auditlog-overview.md
         items:
@@ -3195,6 +3237,17 @@
             href: api/signin-list.md
           - name: Get sign-in
             href: api/signin-get.md
+      - name: Certificate-based auth configuration
+        href: resources/certificatebasedauthconfiguration.md
+        items:
+        - name: List
+          href: api/certificatebasedauthconfiguration-list.md
+        - name: Create
+          href: api/certificatebasedauthconfiguration-post-certificatebasedauthconfiguration.md
+        - name: Get
+          href: api/certificatebasedauthconfiguration-get.md
+        - name: Delete
+          href: api/certificatebasedauthconfiguration-delete.md
       - name: Contracts
         href: resources/contract.md
         items:
@@ -3344,6 +3397,19 @@
           href: api/organization-get.md
         - name: Update org details
           href: api/organization-update.md
+      - name: Organizational contacts
+        href: resources/orgcontact.md
+        items:
+        - name: List org contacts
+          href: api/orgcontact-list.md
+        - name: Get org contact
+          href: api/orgcontact-get.md
+        - name: List direct reports
+          href: api/orgcontact-list-directreports.md  
+        - name: List memberOf
+          href: api/orgcontact-list-memberof.md
+        - name: Get manager
+          href: api/orgcontact-get-manager.md
       - name: Subscribed SKU
         href: resources/subscribedsku.md
         items:
@@ -3914,7 +3980,7 @@
       - name: Errors
         href: resources/security-error-codes.md
     - name: Sites and lists
-      displayName: SharePoint, OneDrive, OneDrive for Buisness, OneDrive business, OneDrive personal
+      displayName: SharePoint, OneDrive, OneDrive for Business, OneDrive business, OneDrive personal
       items:
       - name: Overview
         href: resources/sharepoint.md
@@ -4233,7 +4299,7 @@
         - name: Create reply
           href: api/workbookcomment-post-replies.md
         - name: Get reply
-          href: api/workbookcommentreply-get.md     
+          href: api/workbookcommentreply-get.md
       - name: Worksheet
         href: resources/worksheet.md
         items:
@@ -4361,7 +4427,7 @@
         - name: Delete schema extension
           href: api/schemaextension-delete.md
       - name: Change notifications
-        displayName: Webhooks, Outlook mail, Outlook calendar, Outlook contacts, Outlook contact, People, Microsoft Teams, Teams, OneDrive, OneDrive for Buisness, OneDrive business, OneDrive personal, SharePoint, Security, Users, Groups
+        displayName: Webhooks, Outlook mail, Outlook calendar, Outlook contacts, Outlook contact, People, Microsoft Teams, Teams, OneDrive, OneDrive for Business, OneDrive business, OneDrive personal, SharePoint, Security, Users, Groups
         items:
         - name: Overview
           href: resources/webhooks.md

@@ -1,7 +1,7 @@
 ---
 title: "Update deviceConfigurationDeviceStatus"
 description: "Update the properties of a deviceConfigurationDeviceStatus object."
-author: "tfitzmac"
+author: "davidmu1"
 localization_priority: Normal
 ms.prod: "Intune"
 doc_type: apiPageType
@@ -98,6 +98,7 @@ Content-Length: 478
   "userPrincipalName": "User Principal Name value"
 }
 ```
+
 
 
 

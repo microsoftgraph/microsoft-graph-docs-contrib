@@ -27,7 +27,7 @@ Windows management app health state entity.
 ## Properties
 |Property|Type|Description|
 |:---|:---|:---|
-|id|String|Unique Identifier for the Windows management app health state|
+|id|String|Unique Identifier for the Windows management app health state. This property is read-only.|
 |healthState|[healthState](../resources/intune-devices-healthstate.md)|Windows management app health state. Possible values are: `unknown`, `healthy`, `unhealthy`.|
 |installedVersion|String|Windows management app installed version.|
 |lastCheckInDateTime|DateTimeOffset|Windows management app last check-in time.|

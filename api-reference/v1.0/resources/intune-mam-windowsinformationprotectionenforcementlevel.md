@@ -1,7 +1,7 @@
 ---
 title: "windowsInformationProtectionEnforcementLevel enum type"
 description: "Possible values for WIP Protection enforcement levels"
-author: "tfitzmac"
+author: "davidmu1"
 localization_priority: Normal
 ms.prod: "Intune"
 doc_type: enumPageType
@@ -20,6 +20,7 @@ Possible values for WIP Protection enforcement levels
 |encryptAndAuditOnly|1|Encrypt and Audit only|
 |encryptAuditAndPrompt|2|Encrypt, Audit and Prompt|
 |encryptAuditAndBlock|3|Encrypt, Audit and Block|
+
 
 
 

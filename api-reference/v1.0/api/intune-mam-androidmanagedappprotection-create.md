@@ -1,7 +1,7 @@
 ---
 title: "Create androidManagedAppProtection"
 description: "Create a new androidManagedAppProtection object."
-author: "tfitzmac"
+author: "davidmu1"
 localization_priority: Normal
 ms.prod: "Intune"
 doc_type: apiPageType
@@ -193,6 +193,7 @@ Content-Length: 1864
   "minimumWarningPatchVersion": "Minimum Warning Patch Version value"
 }
 ```
+
 
 
 

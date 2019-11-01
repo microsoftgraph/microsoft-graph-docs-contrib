@@ -9,9 +9,7 @@ doc_type: apiPageType
 
 # Add attachment
 
-Use this API to add an [attachment](../resources/attachment.md) to an event. Since there
-is currently a limit of 4MB on the total size of each REST request, this limits the size of the attachment
-you can add to under 4MB.
+Use this API to add an [attachment](../resources/attachment.md) to an event. This operation limits the size of the attachment you can add to under 4 MB.
 ## Permissions
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
 
@@ -146,7 +144,7 @@ Content-type: application/json
 Here is an example which attaches an event with another event as an item attachment.
 
 <!-- {
-  "blockType": "request",
+  "blockType": "ignored",
   "name": "create_item_attachment_from_event"
 }-->
 

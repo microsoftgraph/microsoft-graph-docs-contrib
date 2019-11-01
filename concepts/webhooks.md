@@ -3,6 +3,7 @@ title: "Set up notifications for changes in user data"
 description: "The Microsoft Graph API uses a webhook mechanism to deliver notifications to clients. A client is a web service that configures its own URL to receive notifications. Client apps use notifications to update their state upon changes."
 author: "piotrci"
 localization_priority: Priority
+ms.custom: graphiamtop20
 ---
 
 # Set up notifications for changes in user data
@@ -68,6 +69,16 @@ When the limits are exceeded, attempts to create a subscription will result in a
 - Azure AD B2C tenants are not supported.
 
 - Notification for user entities are not supported for personal Microsoft accounts.
+
+### Outlook resource limitations
+
+When subscribing to Outlook resources such as **messages**, **events** or **contacts**, if you choose to use the *user principal name* UPN in the resource path, the subscription request might fail if the UPN contains an apostrophe. Consider using GUID user IDs instead of UPNs to avoid running into this problem. For example, instead of using resource path:
+
+`/users/sh.o'neal@contoso.com/messages`
+
+Use: 
+
+`/users/{guid-user-id}/messages`
 
 ## Subscription lifetime
 

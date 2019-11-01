@@ -1,7 +1,7 @@
 ---
 title: "Update organization"
 description: "Update the properties of a organization object."
-author: "tfitzmac"
+author: "davidmu1"
 localization_priority: Normal
 ms.prod: "Intune"
 doc_type: apiPageType
@@ -80,6 +80,7 @@ Content-Length: 151
   "mobileDeviceManagementAuthority": "intune"
 }
 ```
+
 
 
 
