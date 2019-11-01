@@ -1,17 +1,17 @@
 ---
-title: "Use the Microsoft Graph API to integrate social and workplace intelligence in an app"
-description: "Microsoft Graph enables access to useful social and workplace data for people, and supports social gestures in a user's social context."
+title: "Use the Microsoft Graph API to integrate people and workplace intelligence in an app"
+description: "Microsoft Graph enables access to useful people and workplace data and supports social gestures in a user's social context."
 localization_priority: Priority
 author: "simonhult"
 ms.prod: "insights"
 doc_type: conceptualPageType
 ---
 
-# Use the Microsoft Graph API to integrate social and workplace intelligence in an app
+# Use the Microsoft Graph API to integrate people and workplace intelligence in an app
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Microsoft Graph enables access to social and workplace data for people, and supports gestures in a user's social context.
+Microsoft Graph enables access to people and workplace data for people, and supports gestures in a user's social context.
 
 ## Aggregate and extract specific information about people
 
@@ -62,3 +62,9 @@ Include the next sentence when supporting events.
   - [Get details of each mention in a message](../api/message-get.md#request-2)
 
 - [Delete a mention](../api/message-delete.md#request-2) in a message
+
+## Help users contextualize others in their organization
+
+Viewing a users profile or profile card is a common action taken by user's when seeking to contextualize others within their organization. 
+
+The [profile](../resources/profile.md) resource is a rich source of information about users within your organization and provides a light-weight mechanism for storing and retrieving information about a user within your organization.
