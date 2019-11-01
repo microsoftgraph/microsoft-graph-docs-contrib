@@ -53,8 +53,8 @@ POST /informationprotection/policy/labels/{id}/evaluateClassificationResults
 
 | Name          | Description                 |
 | :------------ | :-------------------------- |
-| Authorization | Bearer {token}; Required.   |
-| Content-type  | application/json; Required. |
+| Authorization | Bearer {token}. Required.   |
+| Content-type  | application/json. Required. |
 
 ## Request body
 
@@ -62,12 +62,12 @@ In the request body, provide a JSON object with the following parameters.
 
 | Parameter             | Type                                                                    | Description                                                                                                                                                                                                                                                                           |
 | :-------------------- | :---------------------------------------------------------------------- | :------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ |
-| contentInfo           | [contentInfo](../resources/contentInfo.md)                              | Provides details on the [content format](../resources/enums.md#contentFormat), [content state](../resources/enums.md#contentstate), and existing [metadata](../resources/keyvaluepair.md) as key/value pairs.                                                                         |
+| contentInfo           | [contentInfo](../resources/contentInfo.md)                              | Provides details about the [content format](../resources/enums.md#contentFormat), [content state](../resources/enums.md#contentstate), and existing [metadata](../resources/keyvaluepair.md) as key/value pairs.                                                                         |
 | classificationResults | [classificationResult](../resources/classificationresult.md) collection | Contains the set of classification results returned by the data classification endpoint. Classificaiton information is used to determine the appropriate label based on the Microsoft Information Protection policy label configuration in Office 365 Security and Compliance Center. |
 
 ## Response
 
-If successful, this method returns `200 OK` response code and a new [informationProtectionAction](../resources/informationprotectionaction.md) collection object in the response body.
+If successful, this method returns a `200 OK` response code and a new [informationProtectionAction](../resources/informationprotectionaction.md) collection object in the response body.
 
 ## Examples
 
