@@ -9728,7 +9728,7 @@
           href: api/sitepage-delete.md
         - name: Publish page
           href: api/sitepage-publish.md
-    - name: Social and workplace intelligence
+    - name: People and workplace intelligence
       items:
       - name: Overview
         href: resources/social-overview.md
@@ -9784,6 +9784,8 @@
             href: api/activitystatistics-get.md
       - name: Mention
         href: resources/mention.md
+      - name: Profile
+        href: resources/profile.md
     - name: Tasks and plans
       displayName: Planner
       items:
