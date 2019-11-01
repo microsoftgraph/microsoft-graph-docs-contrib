@@ -79,7 +79,7 @@ The following is a JSON representation of the resource.
   "displayName": "String",
   "displayDeviceName": "String",
   "emailAddress": "String",
-  "floorLabel": "P",
+  "floorLabel": "String",
   "floorNumber": 1024,
   "geoCoordinates": {"@odata.type": "microsoft.graph.outlookGeoCoordinates"},
   "id": "String (identifier)",
