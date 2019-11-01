@@ -17,12 +17,12 @@ Describes the information protection label that details how to properly apply a 
 
 | Method                                                                                              | Return Type                                                               | Description                                                                                                                                                            |
 | :-------------------------------------------------------------------------------------------------- | :------------------------------------------------------------------------ | :--------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| [Get informationProtectionLabel](../api/informationprotectionlabel-get.md)                          | [informationProtectionLabel](informationprotectionlabel.md)               | Given a specific label ID, return the **informationProtectionLabel**                                                                                                   |
+| [List informationProtectionLabel](../api/informationprotectionpolicy-list-labels.md)                | [informationProtectionLabel](informationprotectionlabel.md) collection | List all configured information protection labels for a user or tenant.                                                                                                |
+| [Get informationProtectionLabel](../api/informationprotectionlabel-get.md)                          | [informationProtectionLabel](informationprotectionlabel.md)               | Given a specific label ID, return the **informationProtectionLabel**.                                                                                                  |
 | [evaluateapplication](../api/informationprotectionlabel-evaluateapplication.md)                     | [informationProtectionAction](informationprotectionaction.md) collection  | Given an input of [contentInfo](contentInfo.md) and [labelingOptions](labelingOptions.md), compute the set of actions require to apply the label.                      |
 | [evaluateClassificationResults](../api/informationprotectionlabel-evaluateclassificationresults.md) | [informationProtectionAction](informationprotectionaction.md) collection  | Given an input of [contentInfo](contentInfo.md) and [classificationResults](), compute the set of actions require to apply the label.                                  |
 | [evaluateRemoval](../api/informationprotectionlabel-evaluateremoval.md)                             | [informationProtectionAction](informationprotectionaction.md) collection  | Given an input of [contentInfo](contentInfo.md) and [downgradeJustification](downgradeJustification.md), compute the actions that should be taken to remove the label. |
 | [extractLabel](../api/informationprotectionlabel-extractlabel.md)                                   | [informationProtectionContentLabel](informationprotectioncontentlabel.md) | Given an input of [contentInfo](contentInfo.md), return details on the [informationProtectionLabel](informationProtectionLabel.md) that the metadata represents.       |
-| [List informationProtectionLabel](../api/informationprotectionpolicy-list-labels.md)                | [informationProtectionLabel](informationprotectionlabel.md) collection | List all configured information protection labels for a user or tenant.                                                                                                |
 
 ## Properties
 
@@ -38,7 +38,7 @@ Describes the information protection label that details how to properly apply a 
 
 ## Relationships
 
-None
+None.
 
 ## JSON representation
 
