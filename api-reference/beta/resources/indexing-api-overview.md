@@ -13,7 +13,7 @@ doc_type: conceptualPageType
 
 Microsoft Graph lets your app add custom items or external files into search results in the [Microsoft Search](/microsoftsearch/overview-microsoft-search) experience.
 
-Requests to index data are performed on behalf of an application using an [application token](/graph/auth-v2-service).
+Requests to index data are performed on behalf of an application without the presence of a signed-in user, identified using an [access token with application permission](/graph/auth-v2-service).
 
 ## Common use cases
 

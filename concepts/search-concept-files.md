@@ -1,17 +1,16 @@
 ---
-title: "Search Custom types"
+title: "Search files (including externalFile)"
 description: "The query API lets you search accross files (DriveItem or External files)."
 author: "nmoreau"
 localization_priority: Normal
 ms.prod: "search"
 ---
 
-# Search files
+# Search files (including externalFile)
 
-The search API lets you search files stored in SharePoint or OneDrive. It uses a relevance model which makes use of signals from Microsoft Graph about users' relations and activities. This allows returning and promoting content that users care about.
+The Microsoft Search API lets you search files stored in SharePoint or OneDrive. It uses a relevance model which makes use of signals from Microsoft Graph about users' relations and activities. This allows returning and promoting content that users care about, in a file search experience that is consistent with the **Files** tab that lists search results in SharePoint. 
 
-The search API lets you build a file search experience that is consistent with the **Files** tab that lists search results in SharePoint. It
-can surface external files exposed via the indexing API.
+In addition, the API can surface external files exposed via the [externalFile](/graph/api/resources/externalfile?view=graph-rest-beta) resource.
 
 
 ## Search SharePoint or OneDrive files

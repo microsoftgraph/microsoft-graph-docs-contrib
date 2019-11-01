@@ -27,15 +27,15 @@ Before an application can add items to the search index, it must create and conf
 
 ## Update a connection
 
-You can change the display name or description of an existing connection using the [update connection API](/graph/api/externalconnection-update?view=graph-rest-beta).
+You can change the display name or description of an existing connection by [updating the connection](/graph/api/externalconnection-update?view=graph-rest-beta).
 
 ## Delete a connection
 
-You can delete a connection using the [delete connection API](/graph/api/externalconnection-delete?view=graph-rest-beta). Deleting a connection removes all items that were indexed via that connection.
+You can [delete a connection](/graph/api/externalconnection-delete?view=graph-rest-beta), and remove all items that were indexed via that connection.
 
 ## Next steps
 
-- [Why use the indexing API?](search-concept-overview.md#why-use-the-indexing-api)
-- [Using the indexing API](/graph/api/resources/indexing-api-overview?view=graph-rest-beta)
+- [Why use the Microsoft Search API?](search-concept-overview.md#why-use-the-microsoft-search-api)
+- [Use the Microsoft Search API to index data](/graph/api/resources/indexing-api-overview?view=graph-rest-beta)
 - [Overview for Microsoft Graph Connectors](/microsoftsearch/connectors-overview)
 - Download the [sample search connector](https://github.com/microsoftgraph/msgraph-search-connector-sample) from GitHub

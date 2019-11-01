@@ -7,7 +7,7 @@ ms.prod: ""
 doc_type: "apiPageType"
 ---
 
-# Create externalItem
+# Create schema
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 

@@ -8,7 +8,7 @@ ms.prod: "search"
 
 # Search custom types (externalItem)
 
-The [indexing API (preview)](/graph/resources/indexing-api-overview?view=graph-rest-beta) lets you import external data into Microsoft Search. The ingested content is surfaced in some Microsoft Search experiences. The search API lets you run search queries on this external content.
+The Microsoft Search API lets you import external data via the [externalItem](/graph/api/resources/externalitem?view=graph-rest-beta) resource, and run search queries on this external content.
 
 To search for custom types, specify the following in the [query](/graph/api/search-query?view=graph-rest-beta) method request body:
 

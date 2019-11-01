@@ -7,41 +7,50 @@ author: "snlraju-msft"
 scenarios: "getting-started"
 ---
 
-# Search overview (preview)
+# Overview for extending the Microsoft Search experience for apps on Microsoft Graph (preview)
 
-Microsoft Search is an enterprise search engine that delivers productivity gains and relevant search results for your organization. Microsoft Search's vision is to harness the collective knowledge of your organization in Search and surface relevant content to keep end users up to date and leverage the work of others. Search is available in the different experiences such as in Office, SharePoint, Delve, Windows and Bing.
+Microsoft Search is an enterprise search engine that delivers productivity gains and relevant search results for your organization. It harnesses the collective knowledge and productivity of an organization, and surfaces relevant content to keep end users up to date. Microsoft Search is available in various experiences including Office, SharePoint, Delve, Windows, and Bing.
 
 <!-- markdownlint-disable MD026 -->
-## Why use the search API?
+## Why use the Microsoft Search API?
 
-The search API in the Microsoft Graph provides a unified search endpoint to access your data. It brings search features to app developers, enabling them to build custom search experiences. With the search API, your apps would benefit from the latest improvements in relevance powered by the Microsoft Graph that will let search in your apps be consistent with search in Office applications.
+### One unified search endpoint for Microsoft 365 cloud data
+The Microsoft Search API provides one unified search endpoint to let developers query data in the Microsoft 365 cloud - messages and events in Outlook mailboxes, and files on OneDrive and SharePoint - data that Microsoft Search already indexes.
 
-## Why use the indexing API?
+### Include custom external data in search experience
+Customers who want to include data outside of the Microsoft 365 cloud in their search experience can connect to a specific data source such as an organization's Human Resources database or product catalog, index external custom items and files, and query the specific data source as well.
 
-Microsoft Search already indexes your content in the Microsoft 365 cloud (such as files in your SharePoint and OneDrive and messages and events in Exchange). You can extend Microsoft Search to index your own data sources (such as an internal Human Resources application, or a catalog of products) by adding your external content on [Microsoft Graph](overview.md). This allows users to search for items inside those different systems from within the Microsoft Search experience.
+### Consistent, up-to-date search experience
+Using the Microsoft Search API, customers benefit from getting more personalized relevant results powered by Microsoft Graph. This also makes search in your apps return results consistent with search in Office applications.
 
 ## What data can I add or access by using these APIs?
 
-You can index external content: [externalItems](/graph/api/resources/driveitem?view=graph-rest-beta) (custom type) and [externalFiles](/graph/api/resources/driveitem?view=graph-rest-beta) (well-known type) using the indexing API. You can search for content from Outlook ([messages](/graph/api/resources/message?view=graph-rest-beta), [events](/graph/api/resources/event?view=graph-rest-beta)), SharePoint and OneDrive ([files](/graph/api/resources/driveitem?view=graph-rest-beta)) in addition to external content using the search API.
+Microsoft Search supports searching content in the Microsoft 365 cloud:
+
+- Outlook [message](/graph/api/resources/message?view=graph-rest-beta) and [event](/graph/api/resources/event?view=graph-rest-beta) objects
+- SharePoint and OneDrive [driveItem](/graph/api/resources/driveitem?view=graph-rest-beta) file objects
+
+In addition, you can index and search external content:
+  - [externalItem](/graph/api/resources/externalitem?view=graph-rest-beta) objects which are of custom types
+  - [externalFile](/graph/api/resources/externalfile?view=graph-rest-beta) objects which are of well-known types
 
 ## API reference
 
 Looking for the API reference for this service?
 
-- [Search API in Microsoft Graph (preview)](/graph/api/resources/search-api-overview?view=graph-rest-beta)
-- [Indexing API in Microsoft Graph (preview)](/graph/api/resources/indexing-api-overview?view=graph-rest-beta)
+- [Use the Microsoft Search API to query data](/graph/api/resources/search-api-overview?view=graph-rest-beta)
+- [Use the Microsoft Search API to index data](/graph/api/resources/indexing-api-overview?view=graph-rest-beta)
 
 ## Next steps
 
 - Learn more about [Microsoft Search](/microsoftsearch/).
 - Learn more about a few key use cases:
-  - [Search for Outlook messages](search-concept-messages.md)
-  - [Search for calendar events](search-concept-events.md)
-  - [Search for files](search-concept-files.md)
-  - [Manage connections to index external content (preview)](search-index-manage-connections.md)
-  - [Index external content (preview)](search-index-manage-items.md)
-  - [Search for indexed content: externalItems (preview)](search-concept-custom-types.md)
-  - [Search for indexed content : externalFiles (preview)](search-concept-custom-types.md)
+  - [Search Outlook messages](search-concept-messages.md)
+  - [Search calendar events](search-concept-events.md)
+  - [Manage connections to index external content](search-index-manage-connections.md)
+  - [Index external content](search-index-manage-items.md)
+  - [Search custom types (externalItem)](search-concept-custom-types.md)
+  - [Search files (including externalFile)](search-concept-files.md)
 - Explore the search APIs in the [Graph Explorer](https://developer.microsoft.com/graph/graph-explorer).
 - Download the [sample search connector](https://github.com/microsoftgraph/msgraph-search-connector-sample) from GitHub.
 

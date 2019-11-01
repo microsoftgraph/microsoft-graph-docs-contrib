@@ -13,7 +13,7 @@ doc_type: resourcePageType
 
 Using the Microsoft Search API, apps can query Office 365 data.
 
-Search requests are executed in the context of the user, using a [token](/graph/auth-v2-service.md) with delegated permissions.
+Search requests are executed in the context of the signed-in user, identified using an [access token with delegated permissions](/graph/auth-v2-user).
 
 ## Common use cases
 
