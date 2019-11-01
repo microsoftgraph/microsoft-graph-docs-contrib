@@ -36,6 +36,7 @@ PATCH /teams/{id}/schedule/openShiftsChangeRequests
 | Name       | Description|
 |:-----------|:-----------|
 | Authorization | Bearer {token}. Required. |
+| Content-type | application/json. Required. |
 
 ## Request body
 
