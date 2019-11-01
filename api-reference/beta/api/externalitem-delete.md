@@ -31,6 +31,13 @@ One of the following permissions is required to call this API. To learn more, in
 DELETE /external/connections/{connection-id}/items/{item-id}
 ```
 
+## Path parameters
+
+| Parameter     | Type   | Description                                         |
+|:--------------|:-------|:----------------------------------------------------|
+| connection-id | string | The `id` property of the containing [externalConnection](../resources/externalconnection.md) |
+| item-id       | string | The developer-provided `id` property of the [externalItem](../resources/externalitem.md) or [externalFile](../resources/externalfile.md). |
+
 ## Request headers
 
 | Name          | Description               |
@@ -56,7 +63,7 @@ The following is an example of the request.
 }-->
 
 ```http
-PATCH https://graph.microsoft.com/beta/connections/contosohr/items/TSP-228082938
+PATCH https://graph.microsoft.com/beta/connections/contosohr/items/TSP228082938
 ```
 
 <!-- markdownlint-disable MD024 -->

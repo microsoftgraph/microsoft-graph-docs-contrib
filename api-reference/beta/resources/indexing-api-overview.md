@@ -36,7 +36,9 @@ Note the following limitations during preview.
 - No support for custom properties when indexing files using the `externalFile` resource.
 - Only Azure Active Directory identities are supported.
 - Creating `externalItem` or `externalFile` resources is limited to 4 items per second.
-- Connections have a capacity limit of 1 million items or ~70 GB of data.
+- An application is limited to 4 concurrent operations on a connection.
+- Connections have a capacity limit of 700,000 items or ~70 GB of data.
+- Maximum size of an `externalItem` or `externalFile` entity is 4 MB.
 - No support for refining and sorting results.
 - Result ranking is best effort.
 

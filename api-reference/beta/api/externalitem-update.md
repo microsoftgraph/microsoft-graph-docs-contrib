@@ -31,6 +31,13 @@ One of the following permissions is required to call this API. To learn more, in
 PATCH /external/connections/{connection-id}/items/{item-id}
 ```
 
+## Path parameters
+
+| Parameter     | Type   | Description                                         |
+|:--------------|:-------|:----------------------------------------------------|
+| connection-id | string | The `id` property of the containing [externalConnection](../resources/externalconnection.md) |
+| item-id       | string | The developer-provided `id` property of the [externalItem](../resources/externalitem.md) or [externalFile](../resources/externalfile.md). |
+
 ## Request headers
 
 | Name          | Description                 |
@@ -42,29 +49,20 @@ PATCH /external/connections/{connection-id}/items/{item-id}
 
 In the request body, supply the values for relevant fields that should be updated. Existing properties that are not included in the request body will maintain their previous values or be recalculated based on changes to other property values. For best performance, don't include existing values that haven't changed. The following properties can be updated.
 
+> [!NOTE]
+> During the preview only the `acl` property can be updated via PATCH. In order to update other properties, use a [PUT to overwrite the existing item with a new item](externalconnection-put-items.md).
+
 ### externalItem properties
 
-| Property   | Type                                  | Description             |
-|:-----------|:--------------------------------------|:------------------------|
-| acl        | [acl](../resources/acl.md) collection | An array of access control entries. Each entry specifies the access granted to a user or group. |
-| content    | String                                | A plain-text representation of the contents of the item. |
-| properties | object                                | A property bag with the properties of the item. The properties MUST conform to the [schema](../resources/schema.md) defined for the [externalConnection](../resources/externalconnection.md). |
+| Property | Type                                  | Description               |
+|:---------|:--------------------------------------|:--------------------------|
+| acl      | [acl](../resources/acl.md) collection | An array of access control entries. Each entry specifies the access granted to a user or group. |
 
 ### externalFile properties
 
-| Property         | Type                                  | Description       |
-|:-----------------|:--------------------------------------|:------------------|
-| acl              | [acl](../resources/acl.md) collection | An array of access control entries. Each entry specifies the access granted to a user or group. |
-| content          | String                                | A plain-text representation of the contents of the item. |
-| createdBy        | String                                | The name of the user that created the file. |
-| createdDateTime  | DateTimeOffset                        | The date and time that the file was created. The DateTimeOffset type represents date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 would look like this: `'2014-01-01T00:00:00Z'` |
-| extension        | String                                | The file extension. |
-| lastModifiedBy   | String                                | The name of the user that last modified the file. |
-| modifiedDateTime | DateTimeOffset                        | The date and time that the file was last modified. The DateTimeOffset type represents date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 would look like this: `'2014-01-01T00:00:00Z'` |
-| name             | String                                | The file name.    |
-| size             | Int64                                 | The size of the file in bytes. |
-| title            | String                                | The title of the file. |
-| url              | String                                | The URL to access the file. |
+| Property | Type                                  | Description               |
+|:---------|:--------------------------------------|:--------------------------|
+| acl      | [acl](../resources/acl.md) collection | An array of access control entries. Each entry specifies the access granted to a user or group. |
 
 ## Response
 
@@ -81,7 +79,7 @@ The following is an example of the request.
 }-->
 
 ```http
-PATCH https://graph.microsoft.com/beta/connections/contosohr/items/TSP-228082938
+PATCH https://graph.microsoft.com/beta/connections/contosohr/items/TSP228082938
 Content-type: application/json
 
 {
@@ -113,7 +111,7 @@ HTTP/1.1 200 OK
 Content-type: application/json
 
 {
-  "id": "TSP-228082938",
+  "id": "TSP228082938",
   "acl": [
     {
       "type": "user",

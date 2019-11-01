@@ -33,6 +33,13 @@ One of the following permissions is required to call this API. To learn more, in
 PUT /external/connections/{connection-id}/items/{item-id}
 ```
 
+## Path parameters
+
+| Parameter     | Type   | Description                                         |
+|:--------------|:-------|:----------------------------------------------------|
+| connection-id | string | The `id` property of the containing [externalConnection](../resources/externalconnection.md) |
+| item-id       | string | The developer-provided `id` property of the [externalItem](../resources/externalitem.md) or [externalFile](../resources/externalfile.md). If no item already exists with this `id`, a new item is created. If an item already exists with this `id`, it is overwritten by the object sent in the body. |
+
 ## Request headers
 
 | Name          | Description                 |
@@ -42,7 +49,39 @@ PUT /external/connections/{connection-id}/items/{item-id}
 
 ## Request body
 
-In the request body, supply a JSON representation of an [externalItem](../resources/externalitem.md) or [externalFile](../resources/externalfile.md) object.
+In the request body, supply a JSON representation of an [externalItem](../resources/externalitem.md) or [externalFile](../resources/externalfile.md) object. The payload is limited to 4 MB.
+
+### Creating an externalItem
+
+When creating an `externalItem`, the following fields are required: `@odata.type`, `acl`, and `properties`. The `properties` object must contain at least one property.
+
+All `DateTime` type properties must be in ISO 8601 format.
+
+Properties on an `externalItem` should use type specifiers in the payload in the following scenarios:
+
+- For `String` type properties, if the value contains non-ASCII characters.
+
+    ```json
+    "description@odata.type": "String",
+    "description": "Kandierte Äpfel"
+    ```
+
+- For all collection types.
+
+    ```json
+    "categories@odata.type": "Collection(String)"
+    "categories": [
+      "red",
+      "blue"
+    ]
+    ```
+
+    > [!IMPORTANT]
+    > When including a property of type `Collection(DateTime)`, you must use the type specifier `Collection(DateTimeOffset)`.
+
+### Creating an externalFile
+
+When creating an `externalFile`, the following fields are required: `@odata.type`, `acl`, `name`, and `url`.
 
 ## Response
 
@@ -61,7 +100,7 @@ The following is an example of the request.
 }-->
 
 ```http
-POST https://graph.microsoft.com/beta/connections/contosohr/items/TSP-228082938
+PUT https://graph.microsoft.com/beta/connections/contosohr/items/TSP228082938
 Content-type: application/json
 
 {

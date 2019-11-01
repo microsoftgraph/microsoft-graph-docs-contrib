@@ -15,12 +15,15 @@ Microsoft Search is an enterprise search engine that delivers productivity gains
 ## Why use the Microsoft Search API?
 
 ### One unified search endpoint for Microsoft 365 cloud data
+
 The Microsoft Search API provides one unified search endpoint to let developers query data in the Microsoft 365 cloud - messages and events in Outlook mailboxes, and files on OneDrive and SharePoint - data that Microsoft Search already indexes.
 
 ### Include custom external data in search experience
-Customers who want to include data outside of the Microsoft 365 cloud in their search experience can connect to a specific data source such as an organization's Human Resources database or product catalog, index external custom items and files, and query the specific data source as well.
+
+Customers who want to include data outside of the Microsoft 365 cloud in their search experience can use the Indexing API to [build connectors](/microsoftsearch/connectors-overview) to connect to a specific data source such as an organization's human resources database or product catalog, index external custom items and files, and query the specific data source as well.
 
 ### Consistent, up-to-date search experience
+
 Using the Microsoft Search API, customers benefit from getting more personalized relevant results powered by Microsoft Graph. This also makes search in your apps return results consistent with search in Office applications.
 
 ## What data can I add or access by using these APIs?
@@ -31,8 +34,9 @@ Microsoft Search supports searching content in the Microsoft 365 cloud:
 - SharePoint and OneDrive [driveItem](/graph/api/resources/driveitem?view=graph-rest-beta) file objects
 
 In addition, you can index and search external content:
-  - [externalItem](/graph/api/resources/externalitem?view=graph-rest-beta) objects which are of custom types
-  - [externalFile](/graph/api/resources/externalfile?view=graph-rest-beta) objects which are of well-known types
+
+- [externalItem](/graph/api/resources/externalitem?view=graph-rest-beta) objects which are of custom types
+- [externalFile](/graph/api/resources/externalfile?view=graph-rest-beta) objects which are of well-known types
 
 ## API reference
 
