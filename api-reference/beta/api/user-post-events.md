@@ -708,7 +708,7 @@ Content-type: application/json
 ---
 
 In the request body, supply a JSON representation of [event](../resources/event.md) object.
-##### Response 1
+##### Response 4
 Here is an example of the response, which shows the **start** and **end** properties use the time zone specified in the `Prefer: outlook.timezone` header.
 Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.
 <!-- {
@@ -807,7 +807,7 @@ Content-length: 2197
     "onlineMeeting": {
         "joinUrl": "https://teams.microsoft.com/l/meetup-join/19%3ameeting_NzIyNzhlMGEtM2YyZC00ZmY0LTlhNzUtZmZjNWFmZGNlNzE2%40thread.v2/0?context=%7b%22Tid%22%3a%2272f988bf-86f1-41af-91ab-2d7cd011db47%22%2c%22Oid%22%3a%22bc55b173-cff6-457d-b7a1-64bda7d7581a%22%7d",
         "conferenceId": "177513992",
-        "tollNumber": "+91 22 6241 6885"
+        "tollNumber": "555 0123"
     }
 }
 ```
