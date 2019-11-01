@@ -11,7 +11,7 @@ doc_type: "resourcePageType"
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-The [companyDetail](companydetail.md) resource type provides a mechanism for a user to store information about companies related to entities within their [profile](profile.md).
+Represents information about companies related to entities within their [profile](profile.md).
 
 ## Properties
 

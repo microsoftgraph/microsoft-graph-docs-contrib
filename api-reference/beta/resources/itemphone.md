@@ -11,7 +11,7 @@ doc_type: "resourcePageType"
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-The [itemPhone](itemphone.md) resource type provides detailed information about phone numbers the user has associated in various services.
+Represents detailed information about phone numbers the user has associated in various services.
 
 ## Methods
 

@@ -11,7 +11,7 @@ doc_type: "resourcePageType"
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Provides detailed information about email addresses associated with the user.
+Represents detailed information about email addresses associated with the user.
 
 ## Methods
 

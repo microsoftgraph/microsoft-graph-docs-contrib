@@ -11,7 +11,7 @@ doc_type: "resourcePageType"
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-The [itemFacet](itemfacet.md) resource type is the abstract base type that all resource types in the [profile](profile.md) entityset inherit from.
+Represents the abstract base type that all resource types in the [profile](profile.md) entityset inherit from.
 
 ## Properties
 

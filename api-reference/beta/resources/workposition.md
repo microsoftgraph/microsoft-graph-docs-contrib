@@ -11,7 +11,7 @@ doc_type: "resourcePageType"
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-The [workPosition](workposition.md) resource type provides detailed information about positions the user has entered into their [profile](profile.md).
+Represents detailed information about positions the user has entered into their [profile](profile.md).
 
 This resource type inherits from [itemFacet](itemfacet.md).
 

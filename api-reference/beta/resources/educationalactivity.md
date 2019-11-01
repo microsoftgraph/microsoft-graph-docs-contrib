@@ -11,7 +11,7 @@ doc_type: "resourcePageType"
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-The [educationalActivity](educationalactivity.md) resource type represents data that a user has supplied related to undergraduate, graduate, postgraduate or other educational activities.
+Represents data that a user has supplied related to undergraduate, graduate, postgraduate or other educational activities.
 
 Inherits metadata properties from [itemFacet](itemfacet.md).
 

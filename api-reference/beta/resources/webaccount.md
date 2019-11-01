@@ -11,7 +11,7 @@ doc_type: "resourcePageType"
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-The [webAccount](webaccount.md) resource type represents web accounts the user has indicated they use or have added to their user [profile](profile.md).
+Represents web accounts the user has indicated they use or have added to their user [profile](profile.md).
 
 This resource type inherits from [itemFacet](itemfacet.md).
 

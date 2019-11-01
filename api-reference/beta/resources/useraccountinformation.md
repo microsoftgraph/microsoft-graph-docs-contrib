@@ -11,7 +11,7 @@ doc_type: "resourcePageType"
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-The [userAccountInformation](useraccountinformation.md) resource type represents information specifically tied to a users account, whether that is as an Azure AD account or Microsoft account. The entity identifier is set to the corresponding Azure AD guid or Microsoft Account CID respectively. These fields are read-only through Microsoft Graph and must be edited through a users profile or by a Tenant Administrator on a corresponding experience.
+Represents information specifically tied to a users account, whether that is as an Azure AD account or Microsoft account. The entity identifier is set to the corresponding Azure AD guid or Microsoft Account CID respectively. These fields are read-only through Microsoft Graph and must be edited through a users profile or by a Tenant Administrator on a corresponding experience.
 
 Inherits from [itemFacet](itemfacet.md).
 

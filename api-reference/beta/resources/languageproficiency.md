@@ -11,7 +11,7 @@ doc_type: "resourcePageType"
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-The [languageProficiency](languageproficiency.md) resource type provides detailed information about the languages a user has added to their [profile](profile.md).
+Represents detailed information about a languages a user has added to their [profile](profile.md).
 
 Inherits from [itemFacet](itemFacet.md).
 
