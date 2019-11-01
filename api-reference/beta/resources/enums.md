@@ -3,8 +3,8 @@ title: "Enum values"
 description: "Microsoft Graph enumeration values"
 doc_type: enumPageType
 localization_priority: Normal
-ms.prod: ""
-author: ""
+ms.prod: "non-product-specific"
+author: "MSGraphDocsvTeam"
 ---
 
 ### attachmentType values
@@ -605,7 +605,7 @@ Possible feedback values on the alert provided by an analyst.
 
 ### registryHive values
 
-Enum for registry hives as defined by [https://docs.microsoft.com/en-us/windows/desktop/sysinfo/registry-hives](https://docs.microsoft.com/en-us/windows/desktop/sysinfo/registry-hives).
+Enum for registry hives as defined by [https://docs.microsoft.com/windows/desktop/sysinfo/registry-hives](https://docs.microsoft.com/windows/desktop/sysinfo/registry-hives).
 
 | Member                  | Value | Description                       |
 | :---------------------- | :---- | :-------------------------------- |
@@ -630,7 +630,7 @@ Operation that changed the registry key name and/or value.
 
 ### registryValueType values
 
-Enum for registry value types as defined by [https://docs.microsoft.com/en-us/windows/desktop/sysinfo/registry-value-types](https://docs.microsoft.com/en-us/windows/desktop/sysinfo/registry-value-types).
+Enum for registry value types as defined by [Registry value types](https://docs.microsoft.com/windows/desktop/sysinfo/registry-value-types).
 
 | Member            | Value | Description                                  |
 | :---------------- | :---- | :------------------------------------------- |
