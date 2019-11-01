@@ -54,8 +54,8 @@ POST /users/{id}/informationProtection/policy/labels/evaluateApplication
 
 | Name          | Description                 |
 | :------------ | :-------------------------- |
-| Authorization | Bearer {token}; Required.   |
-| Content-type  | application/json; Required. |
+| Authorization | Bearer {token}. Required.   |
+| Content-type  | application/json. Required. |
 
 ## Request body
 
@@ -68,7 +68,7 @@ In the request body, provide a JSON object with the following parameters.
 
 ## Response
 
-If successful, this method returns `200 OK` response code and a new [informationProtectionAction](../resources/informationprotectionaction.md) collection object in the response body.
+If successful, this method returns a `200 OK` response code and a new [informationProtectionAction](../resources/informationprotectionaction.md) collection object in the response body.
 
 ## Examples
 
