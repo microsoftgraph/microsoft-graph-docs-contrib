@@ -63,7 +63,7 @@ In the request body, provide a JSON object with the following parameters.
 
 | Parameter       | Type                                               | Description                                                                                                                                                                                                   |
 | :-------------- | :------------------------------------------------- | :------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ |
-| contentInfo     | [contentInfo](../resources/contentinfo.md)         | Provides details on the [content format](../resources/enums.md#contentformat), [content state](../resources/enums.md#contentstate), and existing [metadata](../resources/keyvaluepair.md) as key/value pairs. |
+| contentInfo     | [contentInfo](../resources/contentinfo.md)         | Provides details on the content format, content state, and existing [metadata](../resources/keyvaluepair.md) as key/value pairs. |
 | labelingOptions | [labelingOptions](../resources/labelingoptions.md) | Provides details about the desired state of the content.                                                                                                                                                      |
 
 ## Response
