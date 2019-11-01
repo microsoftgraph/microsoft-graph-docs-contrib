@@ -56,8 +56,11 @@ In the request body, supply a JSON representation of [event](../resources/event.
 
 If successful, this method returns `201 Created` response code and [event](../resources/event.md) object in the response body.
 
-## Example
-##### Request 1
+## Examples
+
+### Example 1 : Create an event in the specified calendar of the signed-in user's.
+
+##### Request
 The following example creates an event in the specified calendar of the signed-in user's.
 
 In the request body, supply a JSON representation of [event](../resources/event.md) object.
@@ -209,7 +212,9 @@ Content-type: application/json
 }
 ```
 
-##### Request 2
+### Example 2 : Create an event in the specified calendar of the signed-in user's and enable it as an online meeting.
+
+##### Request
 The following example creates an event in the specified calendar of the signed-in user's and enables it as an online meeting.
 
 In the request body, supply a JSON representation of [event](../resources/event.md) object.
@@ -363,7 +368,7 @@ Content-type: application/json
     "onlineMeeting": {
         "joinUrl": "https://teams.microsoft.com/l/meetup-join/19%3ameeting_NzIyNzhlMGEtM2YyZC00ZmY0LTlhNzUtZmZjNWFmZGNlNzE2%40thread.v2/0?context=%7b%22Tid%22%3a%2272f988bf-86f1-41af-91ab-2d7cd011db47%22%2c%22Oid%22%3a%22bc55b173-cff6-457d-b7a1-64bda7d7581a%22%7d",
         "conferenceId": "177513992",
-        "tollNumber": "555 0123"
+        "tollNumber": "+1 42 5555 0123"
     }
 }
 ```
