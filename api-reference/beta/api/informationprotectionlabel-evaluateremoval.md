@@ -44,8 +44,8 @@ POST /informationprotection/policy/labels/evaluateRemoval
 
 | Name          | Description                 |
 | :------------ | :-------------------------- |
-| Authorization | Bearer {token}; Required.   |
-| Content-type  | application/json; Required. |
+| Authorization | Bearer {token}. Required.   |
+| Content-type  | application/json. Required. |
 
 ## Request body
 
@@ -53,7 +53,7 @@ In the request body, provide a JSON object with the following parameters.
 
 | Parameter              | Type                                                             | Description                                                                                                                                                                                                   |
 | :--------------------- | :--------------------------------------------------------------- | :------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ |
-| contentInfo            | [contentInfo](../resources/contentinfo.md)                       | Provides details on the [content format](../resources/enums.md#contentformat), [content state](../resources/enums.md#contentstate), and existing [metadata](../resources/keyvaluepair.md) as key/value pairs. |
+| contentInfo            | [contentInfo](../resources/contentinfo.md)                       | Provides details about the [content format](../resources/enums.md#contentformat), [content state](../resources/enums.md#contentstate), and existing [metadata](../resources/keyvaluepair.md) as key/value pairs. |
 | downgradeJustification | [downgradeJustification](../resources/downgradejustification.md) | Justification that must be provided by the user or application logic.                                                                                                                                         |
 
 
