@@ -35,7 +35,7 @@ POST /teams/{id}/schedule/openShiftsChangeRequests/decline
 
 | Name          | Description   |
 |:--------------|:--------------|
-| Authorization | Bearer {token} |
+| Authorization | Bearer {token}. Required. |
 
 ## Request body
 
@@ -47,11 +47,11 @@ In the request body, provide a JSON object with the following parameters.
 
 ## Response
 
-If successful, this method returns `200, OK` response code. It does not return anything in the response body.
+If successful, this method returns a `200 OK` response code. It does not return anything in the response body.
 
 ## Examples
 
-The following is an example of how to call this API.
+The following example shows how to call this API.
 
 ### Request
 
