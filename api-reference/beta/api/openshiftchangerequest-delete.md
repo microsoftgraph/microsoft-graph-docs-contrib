@@ -1,6 +1,6 @@
 ---
 title: "Delete openShiftChangeRequest"
-description: "Delete openShiftChangeRequest."
+description: "Delete an openShiftChangeRequest object."
 localization_priority: Normal
 author: "akumar39"
 ms.prod: "Microsoft-Teams"
@@ -11,7 +11,7 @@ doc_type: "apiPageType"
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Delete openShiftChangeRequest.
+Delete an [openShiftChangeRequest](../resources/openshifchangerequest.md).
 
 ## Permissions
 
@@ -35,7 +35,7 @@ DELETE /teams/{id}/schedule/openShiftsChangeRequests
 
 | Name          | Description   |
 |:--------------|:--------------|
-| Authorization | Bearer {token} |
+| Authorization | Bearer {token}. Required. |
 
 ## Request body
 
@@ -43,7 +43,7 @@ Do not supply a request body for this method.
 
 ## Response
 
-If successful, this method returns `204, No Content` response code. It does not return anything in the response body.
+If successful, this method returns a `204 No Content` response code. It does not return anything in the response body.
 
 ## Examples
 
