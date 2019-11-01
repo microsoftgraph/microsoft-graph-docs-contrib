@@ -84,6 +84,8 @@ items:
             href: findmeetingtimes-example.md
           - name: Get free/busy schedule
             href: outlook-get-free-busy-schedule.md
+          - name: Propose new meeting times (preview)
+            href: outlook-calendar-meeting-proposals.md
           - name: Schedule recurring events
             href: outlook-schedule-recurring-events.md
           - name: Get shared events
@@ -138,7 +140,10 @@ items:
         displayname: Dynamics, Dynamics 365 Business Central
       - name: Identity and access
         href: azuread-identity-access-management-concept-overview.md
-        displayName: Azure AD, Microsoft identity platform
+        displaName: Azure AD, Microsoft identity platform
+        items:
+          - name: Information Protection        
+            href: information-protection-overview.md
       - name: Mail
         displayName: Outlook, Outlook mail
         items:
@@ -152,6 +157,8 @@ items:
             href: outlook-share-messages-folders.md
           - name: Send mail from another user
             href: outlook-send-mail-from-other-user.md
+          - name: Attach large files (preview)
+            href: outlook-large-attachments.md
           - name: Organize messages
             href: outlook-organize-messages.md
           - name: Immutable ID
@@ -389,6 +396,8 @@ items:
             href: sdks/create-client.md
           - name: Choose an authentication provider
             href: sdks/choose-authentication-providers.md
+          - name: Create requests
+            href: sdks/create-requests.md
       - name: Use the toolkit
         items:
           - name: Toolkit overview

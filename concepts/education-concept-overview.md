@@ -44,7 +44,7 @@ With the assignment API, your app can interact with the assignment service outsi
 The following are examples of a few scenarios enabled by the assignments API:
 
 - [Add an assignment that links to your application](/graph/api/educationclass-post-assignments?view=graph-rest-beta) 
-- [Assign grades to individual students for assignments linked to your application](/graph/api/educationsubmission-update?view=graph-rest-beta)
+- [Assign outcomes like grades to individual students for assignments linked to your application](/graph/api/educationoutcome-update?view=graph-rest-beta)
 - [Create a student dashboard to show which assignments are due by when](/graph/api/educationclass-list-assignments?view=graph-rest-beta)
 
 
