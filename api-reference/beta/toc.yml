@@ -9374,7 +9374,7 @@
           - name: Relying party detailed summary
             href: resources/relyingpartydetailedsummary.md
             items:
-            - name: List Relying party detailed summary
+            - name: List
               href: api/relyingpartydetailedsummary-list.md
         - name: Application sign-in
           items:
