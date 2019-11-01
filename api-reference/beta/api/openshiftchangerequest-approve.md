@@ -52,7 +52,7 @@ If successful, this method returns a `200 OK` response code. It does not return 
 
 ## Examples
 
-The following examples shows how to call this API.
+The following example shows how to call this API.
 
 ### Request
 
