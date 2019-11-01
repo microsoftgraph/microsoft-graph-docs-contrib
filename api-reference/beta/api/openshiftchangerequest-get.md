@@ -1,6 +1,6 @@
 ---
 title: "Get openShiftChangeRequest"
-description: "Retrieve the properties and relationships of openshiftchangerequest object."
+description: "Retrieve the properties and relationships of openShiftChangeRequest object."
 localization_priority: Normal
 author: "akumar39"
 ms.prod: "Microsoft-Teams"
@@ -11,7 +11,7 @@ doc_type: "apiPageType"
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Retrieve the properties and relationships of openshiftchangerequest object.
+Retrieve the properties and relationships of an [openShiftChangeRequest](../resources/openshiftchangerequest.md) object.
 
 ## Permissions
 
@@ -39,7 +39,7 @@ This method supports some of the OData query parameters to help customize the re
 
 | Name      |Description|
 |:----------|:----------|
-| Authorization | Bearer {token} |
+| Authorization | Bearer {token}. Required. |
 
 ## Request body
 
