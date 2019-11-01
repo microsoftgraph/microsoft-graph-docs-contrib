@@ -1,6 +1,6 @@
 ---
 title: "Get informationProtectionLabel"
-description: "Retrieve the properties and relationships of the specified informationprotectionlabel object."
+description: "Retrieve the properties and relationships of the specified informationProtectionLabel object."
 localization_priority: Normal
 author: "tommoser"
 ms.prod: "microsoft-identity-platform"
@@ -11,7 +11,7 @@ doc_type: "apiPageType"
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Retrieve the properties and relationships of [informationProtectionLabel](../resources/informationprotectionlabel.md) object.
+Retrieve the properties and relationships of an [informationProtectionLabel](../resources/informationprotectionlabel.md) object.
 
 ## Permissions
 
@@ -40,8 +40,7 @@ This method supports some of the OData query parameters to help customize the re
 
 | Name          | Description                 |
 | :------------ | :-------------------------- |
-| Authorization | Bearer {token}; Required.   |
-| Content-type  | application/json; Required. |
+| Authorization | Bearer {token}. Required.   |
 
 ## Request body
 
