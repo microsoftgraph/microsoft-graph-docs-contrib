@@ -40,8 +40,7 @@ This method supports some of the OData query parameters to help customize the re
 
 | Name          | Description                 |
 | :------------ | :-------------------------- |
-| Authorization | Bearer {token}; Required.   |
-| Content-type  | application/json; Required. |
+| Authorization | Bearer {token}. Required.   |
 
 ## Request body
 
