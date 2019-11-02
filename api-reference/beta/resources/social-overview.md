@@ -67,4 +67,4 @@ Include the next sentence when supporting events.
 
 People who seek to contextualize others within their organization commonly view a person's profile or profile card. 
 
-The [profile](../resources/profile.md) resource is a rich source of information about people within a tenant and provides a lightweight mechanism for storing and retrieving information about a person.
+The [profile](../resources/profile.md) resource is a rich source of information about people within a tenant and provides a lightweight mechanism for storing and retrieving information about a person. 
