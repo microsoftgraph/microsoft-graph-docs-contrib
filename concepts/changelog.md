@@ -25,6 +25,12 @@ For details about known issues with Microsoft Graph APIs, see [Known issues](kno
 |:----------------|:------------|:-----------------------------------------|
 | Addition | v1.0 | Added new entity type: [application](/graph/resources/application?view=graph-rest-v1.0).
 
+### People and workplace intelligence
+
+| **Change type** | **Version** | **Description**                  |
+|:----------------|:------------|:-----------------------------------------|
+| Addition | Beta | Added the [profile API](/graph/api/resources/profile?view=graph-rest-beta) and associated methods. |
+
 ## October 2019
 
 ### Calendar
@@ -43,8 +49,6 @@ For details about known issues with Microsoft Graph APIs, see [Known issues](kno
 | Addition | Beta | Added the **isTallyingResponses** property to the [calendar](/graph/api/resources/calendar?view=graph-rest-beta) entity. |
 | Addition | Beta | Added the **isRemovable** property to the [calendar](/graph/api/resources/calendar?view=graph-rest-beta) entity. |
 | Addition | Beta | Added the **delegateMeetingMessageDeliveryOptions** property to the [mailboxSettings](/graph/api/resources/mailboxSettings?view=graph-rest-beta) entity. |
-
-
 
 ### Devices and apps (Microsoft Intune)
 
