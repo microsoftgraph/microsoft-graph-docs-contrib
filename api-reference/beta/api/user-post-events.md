@@ -664,7 +664,7 @@ times in the response.
 # [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
-  "name": "create_event_from_user_with_online_meetings"
+  "name": "create_event_from_user_with_online_meeting"
 }-->
 ```http
 POST https://graph.microsoft.com/beta/me/events
@@ -722,7 +722,7 @@ Here is an example of the response, which shows the **start** and **end** proper
 Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.
 <!-- {
   "blockType": "response",
-  "name": "create_event_from_user",
+  "name": "create_event_from_user_with_online_meeting",
   "truncated": true,
   "@odata.type": "microsoft.graph.event"
 } -->
@@ -734,7 +734,7 @@ Content-length: 2197
 {
     "@odata.context":"https://graph.microsoft.com/beta/$metadata#users('cd209b0b-3f83-4c35-82d2-d88a61820480')/events/$entity",
     "@odata.etag":"W/\"ZlnW4RIAV06KYYwlrfNZvQAALfZeRQ==\"",
-    "id":"AAMkAGI1AAAt9AHjAAA=",
+    "id":"AAMkAGI1AAAt8AHjAAA=",
     "createdDateTime":"2017-04-15T03:00:50.7579581Z",
     "lastModifiedDateTime":"2017-04-15T03:00:51.245372Z",
     "changeKey":"ZlnW4RIAV06KYYwlrfNZvQAALfZeRQ==",
