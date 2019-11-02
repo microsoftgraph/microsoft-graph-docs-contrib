@@ -4019,7 +4019,7 @@
           href: api/listitem-list-versions.md
         - name: Get item analytics
           href: api/itemanalytics-get.md
-    - name: 'Social intelligence: People'
+    - name: 'People and workplace intelligence'
       items:
       - name: Overview
         href: resources/social-overview.md
