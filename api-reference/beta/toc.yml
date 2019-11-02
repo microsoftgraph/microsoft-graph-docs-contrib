@@ -9786,6 +9786,63 @@
         href: resources/mention.md
       - name: Profile
         href: resources/profile.md
+        items:
+        - name: Get profile
+          href: api/profile-get.md
+        - name: Delete profile
+          href: api/profile-delete.md
+        - name: List account
+          href: api/profile-list-account.md
+        - name: List anniversariles
+          href: api/profile-post-anniversaries.md
+        - name: Create anniversary
+          href: api/profile-post-anniversaries.md
+        - name: List educational activities
+          href: api/profile-list-educationalactivities.md
+        - name: Create educational activity
+          href: api/profile-post-educationalactivities.md
+        - name: Create email
+          href: api/profile-post-emails.md
+        - name: List emails
+          href: api/profile-list-emails.md
+        - name: Create interests
+          href: api/profile-post-interests.md
+        - name: List interests
+          href: api/profile-list-interests.md
+        - name: Create language
+          href: api/profile-post-languages.md
+        - name: List languages
+          href: api/profile-list-languages.md
+        - name: Create name
+          href: api/profile-post-names.md
+        - name: List names
+          href: api/profile-list-names.md
+        - name: List websites
+          href: api/profile-list-websites.md
+        - name: Create phone
+          href: api/profile-post-phones.md
+        - name: List phones
+          href: api/profile-list-phones.md
+        - name: Create position
+          href: api/profile-post-positions.md
+        - name: List positions
+          href: api/profile-list-positions.md
+        - name: Create project
+          href: api/profile-post-projects.md
+        - name: List projects
+          href: api/profile-list-projects.md
+        - name: Create skill
+          href: api/profile-post-skills.md
+        - name: List skills
+          href: api/profile-list-skills.md
+        - name: Create web account
+          href: api/profile-post-webaccounts.md
+        - name: List web accounts
+          href: api/profile-list-webaccounts.md
+        - name: Create website
+          href: api/profile-post-websites.md
+        - name: List websites
+          href: api/profile-list-websites.md
     - name: Tasks and plans
       displayName: Planner
       items:
