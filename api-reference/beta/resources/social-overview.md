@@ -65,6 +65,6 @@ Include the next sentence when supporting events.
 
 ## Help users contextualize others in their organization
 
-Viewing a users profile or profile card is a common action taken by user's when seeking to contextualize others within their organization. 
+Users who seek to contextualize others within their organization commonly view a user's profile or profile card. 
 
-The [profile](../resources/profile.md) resource is a rich source of information about users within your organization and provides a light-weight mechanism for storing and retrieving information about a user within your organization.
+The [profile](../resources/profile.md) resource is a rich source of information about users within your organization and provides a lightweight mechanism for storing and retrieving information about a user.
