@@ -22,11 +22,21 @@ Depending on the type of calendar that the event is in and the permission type (
 
 ## HTTP request
 
+Update the specified permissions of a user's primary calendar:
 <!-- { "blockType": "ignored" } -->
-
 ```http
 PATCH /users/{id}/calendar/calendarPermissions/{id}
+```
+
+Update the specified permissions of a group calendar:
+<!-- { "blockType": "ignored" } -->
+```http
 PATCH /groups/{id}/calendar/calendarPermissions/{id}
+```
+
+Update the specified permissions of the user calendar that contains the identified event:
+<!-- { "blockType": "ignored" } -->
+```http
 PATCH /users/{id}/events/{id}/calendar/calendarPermissions/{id}
 ```
 

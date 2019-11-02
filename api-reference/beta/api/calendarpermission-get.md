@@ -22,16 +22,20 @@ Depending on the type of calendar that the event is in and the permission type (
 
 ## HTTP request
 
+Get the specified permissions of a user's primary calendar:
 <!-- { "blockType": "ignored" } -->
-Get the specified permissions of a user's primary calendar.
 ```http
 GET /users/{id}/calendar/calendarPermissions/{id}
 ```
-Get the specified permissions of a group calendar.
+
+Get the specified permissions of a group calendar:
+<!-- { "blockType": "ignored" } -->
 ```http
 GET /groups/{id}/calendar/calendarPermissions/{id}
 ```
-Get the specified permissions of the user calendar that contains the identified event.
+
+Get the specified permissions of the user calendar that contains the identified event:
+<!-- { "blockType": "ignored" } -->
 ```http
 GET /users/{id}/events/{id}/calendar/calendarPermissions/{id}
 ```
