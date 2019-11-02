@@ -234,7 +234,7 @@
         - name: Assign license
           href: api/user-assignlicense.md
         - name: Reprocess license assignment
-          href: api/user-reprocesslicenseassignment.md          
+          href: api/user-reprocesslicenseassignment.md
         - name: Get member objects
           href: api/user-getmemberobjects.md
         - name: Get member groups
@@ -747,6 +747,15 @@
           href: api/calendargroup-list-calendars.md
         - name: Create calendar in calendar group
           href: api/calendargroup-post-calendars.md
+      - name: Calendar permission
+        href: resources/calendarpermission.md
+        items:
+        - name: Get calendar permission
+          href: api/calendarpermission-get.md
+        - name: Update calendar permission
+          href: api/calendarpermission-update.md
+        - name: Delete calendar permission
+          href: api/calendarpermission-delete.md
       - name: Calendar view
         href: api/calendar-list-calendarview.md
         items:
@@ -798,6 +807,8 @@
             href: api/place-list.md
           - name: Get place
             href: api/place-get.md
+          - name: Update place
+            href: api/place-update.md
     - name: Cloud communications
       displayName: Cloud communications
       items:
@@ -8080,7 +8091,7 @@
           href: api/dynamics-vendor-update.md
         - name: Delete vendor
           href: api/dynamics-vendor-delete.md
-    - name: Identity and access
+    - name: Identity and access    
       displayName: Azure AD, Microsoft identity platform
       items:
       - name: Overview
@@ -8200,10 +8211,30 @@
           href: api/application-update.md
         - name: Delete application
           href: api/application-delete.md
+        - name: List deleted applications
+          href: api/directory-deleteditems-list.md
+        - name: Get deleted application
+          href: api/directory-deleteditems-get.md
+        - name: Permanently delete application
+          href: api/directory-deleteditems-delete.md
+        - name: Restore deleted application
+          href: api/directory-deleteditems-restore.md
+        - name: Add password
+          href: api/application-addpassword.md
+        - name: Remove password
+          href: api/application-removepassword.md
+        - name: Create extension
+          href: api/application-post-extensionproperty.md
+        - name: List extensions
+          href: api/application-list-extensionproperty.md
+        - name: Delete extension
+          href: api/application-delete-extensionproperty.md
         - name: List owners
           href: api/application-list-owners.md
-        - name: Assign owner
+        - name: Add owner
           href: api/application-post-owners.md
+        - name: Remove owner
+          href: api/application-delete-owners.md
         - name: Application template
           href: resources/applicationtemplate.md
           items:
@@ -8308,7 +8339,7 @@
         - name: Get contract
           href: api/contract-get.md
         - name: List contracts
-          href: api/contract-list.md        
+          href: api/contract-list.md
       - name: Data policy operation
         href: resources/datapolicyoperation.md
         items:
@@ -8430,6 +8461,63 @@
           href: api/domain-update.md
         - name: Verify domain
           href: api/domain-verify.md
+      - name: Entitlement management
+        href: resources/entitlementmanagement-root.md
+        items:
+        - name: Access package
+          href: resources/accesspackage.md
+          items:
+          - name: List
+            href: api/accesspackage-list.md
+          - name: Create
+            href: api/accesspackage-post.md
+          - name: Get
+            href: api/accesspackage-get.md
+          - name: Delete
+            href: api/accesspackage-delete.md
+        - name: Access package assignment
+          href: resources/accesspackageassignment.md
+          items:
+          - name: List 
+            href: api/accesspackageassignment-list.md
+        - name: Access package assignment policy
+          href: resources/accesspackageassignmentpolicy.md
+          items:
+          - name: List
+            href: api/accesspackageassignmentpolicy-list.md
+          - name: Create
+            href: api/accesspackageassignmentpolicy-post.md
+          - name: Get 
+            href: api/accesspackageassignmentpolicy-get.md
+          - name: Delete
+            href: api/accesspackageassignmentpolicy-delete.md
+        - name: Access package assignment request
+          href: resources/accesspackageassignmentrequest.md
+          items:
+          - name: List
+            href: api/accesspackageassignmentrequest-list.md
+          - name: Create
+            href: api/accesspackageassignmentrequest-post.md
+          - name: Get
+            href: api/accesspackageassignmentrequest-get.md
+        - name: Access package assignment resource role
+          href: resources/accesspackageassignmentresourcerole.md
+          items:
+          - name: List
+            href: api/accesspackageassignmentresourcerole-list.md
+        - name: Access package catalog
+          href: resources/accesspackagecatalog.md
+          items:
+          - name: List
+            href: api/accesspackagecatalog-list.md
+          - name: Create
+            href: api/accesspackagecatalog-post.md
+          - name: Get
+            href: api/accesspackagecatalog-get.md
+          - name: Delete
+            href: api/accesspackagecatalog-delete.md
+          - name: List resources
+            href: api/accesspackagecatalog-list-accesspackageresources.md
       - name: Feature rollout policy
         href: resources/featurerolloutpolicy.md
         items:
@@ -8514,6 +8602,23 @@
           href: api/identityprovider-update.md
         - name: Delete identity provider
           href: api/identityprovider-delete.md
+      - name: Information protection          
+        items:       
+        - name: Labels
+          href: resources/informationprotectionlabel.md
+          items:
+          - name: List labels
+            href: api/informationprotectionpolicy-list-labels.md
+          - name: Get label
+            href: api/informationprotectionlabel-get.md
+          - name: Evaluate application
+            href: api/informationprotectionlabel-evaluateapplication.md
+          - name: Evaluate classification result
+            href: api/informationprotectionlabel-evaluateclassificationresults.md
+          - name: Evaluate removal
+            href: api/informationprotectionlabel-evaluateremoval.md
+          - name: Extract label
+            href: api/informationprotectionlabel-extractlabel.md
       - name: Invitation manager
         href: resources/invitation.md
         items:
@@ -8796,6 +8901,10 @@
           href: api/serviceprincipal-update.md
         - name: Delete service principal
           href: api/serviceprincipal-delete.md
+        - name: Add password
+          href: api/serviceprincipal-addpassword.md
+        - name: Remove password
+          href: api/serviceprincipal-removepassword.md
         - name: Check member objects
           href: api/serviceprincipal-checkmemberobjects.md
       - name: Subscribed sku
@@ -8908,7 +9017,7 @@
         - name: Upload secret
           href: api/trustframeworkkeyset-uploadsecret.md
       - name: User flows
-        href: resources/identityuserflow.md 
+        href: resources/identityuserflow.md
         items:
         - name: List
           href: api/identityuserflow-list.md
@@ -9181,13 +9290,14 @@
         - name: Get resource
           href: api/resource-get.md
     - name: Notifications
-      href: resources/notifications-api-overview.md
       items:
+      - name: Overview
+        href: resources/notifications-api-overview.md
       - name: Notification
         href: resources/projectrome-notification.md
         items:
         - name: Create and send a notification
-          href: api/notifications-post.md
+          href: api/user-post-notifications.md
     - name: Personal contacts
       href: resources/contact.md
       displayName: Outlook, Outlook contacts, Outlook contact, People
@@ -9506,6 +9616,67 @@
             href: api/reportroot-getyammergroupsactivitygroupcounts.md
           - name: Get activity counts
             href: api/reportroot-getyammergroupsactivitycounts.md
+    - name: Search (preview)
+      displayname: Microsoft Search API
+      items:
+      - name: Query
+        items:
+        - name: Overview
+          href: resources/search-api-overview.md
+        - name: Query data
+          href: api/search-query.md
+      - name: Index
+        items:
+        - name: Overview
+          href: resources/indexing-api-overview.md
+        - name: External connection
+          items:
+          - name: External connection
+            href: resources/externalconnection.md
+          - name: List external connections
+            href: api/externalconnection-list.md
+          - name: Get external connection
+            href: api/externalconnection-get.md
+          - name: Create external connection
+            href: api/external-post-connections.md
+          - name: Update external connection
+            href: api/externalconnection-update.md
+          - name: Delete external connection
+            href: api/externalconnection-delete.md
+          - name: Create schema
+            href: api/externalconnection-post-schema.md
+          - name: Get operation
+            href: api/connectionoperation-get.md
+          - name: Create external item
+            href: api/externalconnection-put-items.md
+        - name: Schema
+          items:
+          - name: Schema
+            href: resources/schema.md
+          - name: Get schema
+            href: api/schema-get.md
+          - name: Create schema
+            href: api/externalconnection-post-schema.md
+        - name: External item
+          items:
+          - name: External item
+            href: resources/externalitem.md
+          - name: Create external item
+            href: api/externalconnection-put-items.md
+          - name: Update external item
+            href: api/externalitem-update.md
+          - name: Delete external item
+            href: api/externalitem-delete.md
+        - name: External file
+          items:
+          - name: External file
+            href: resources/externalfile.md
+          - name: Create external file
+            href: api/externalconnection-put-items.md
+          - name: Update external file
+            href: api/externalitem-update.md
+          - name: Delete external file
+            href: api/externalitem-delete.md
     - name: Security
       displayname: Security API, Microsoft Graph Security API
       items:
@@ -9629,7 +9800,7 @@
           href: api/sitepage-delete.md
         - name: Publish page
           href: api/sitepage-publish.md
-    - name: Social and workplace intelligence
+    - name: People and workplace intelligence
       items:
       - name: Overview
         href: resources/social-overview.md
@@ -9685,6 +9856,65 @@
             href: api/activitystatistics-get.md
       - name: Mention
         href: resources/mention.md
+      - name: Profile
+        href: resources/profile.md
+        items:
+        - name: Get profile
+          href: api/profile-get.md
+        - name: Delete profile
+          href: api/profile-delete.md
+        - name: List account
+          href: api/profile-list-account.md
+        - name: List anniversariles
+          href: api/profile-list-anniversaries.md
+        - name: Create anniversary
+          href: api/profile-post-anniversaries.md
+        - name: List educational activities
+          href: api/profile-list-educationalactivities.md
+        - name: Create educational activity
+          href: api/profile-post-educationalactivities.md
+        - name: Create email address
+          href: api/profile-post-emails.md
+        - name: List email addresses
+          href: api/profile-list-emails.md
+        - name: Create interest
+          href: api/profile-post-interests.md
+        - name: List interests
+          href: api/profile-list-interests.md
+        - name: Create language
+          href: api/profile-post-languages.md
+        - name: List languages
+          href: api/profile-list-languages.md
+        - name: Create name
+          href: api/profile-post-names.md
+        - name: List names
+          href: api/profile-list-names.md
+        - name: List websites
+          href: api/profile-list-websites.md
+        - name: Create phone number
+          href: api/profile-post-phones.md
+        - name: List phone numbers
+          href: api/profile-list-phones.md
+        - name: Create position
+          href: api/profile-post-positions.md
+        - name: List positions
+          href: api/profile-list-positions.md
+        - name: Create project
+          href: api/profile-post-projects.md
+        - name: List projects
+          href: api/profile-list-projects.md
+        - name: Create skill
+          href: api/profile-post-skills.md
+        - name: List skills
+          href: api/profile-list-skills.md
+        - name: Create web account
+          href: api/profile-post-webaccounts.md
+        - name: List web accounts
+          href: api/profile-list-webaccounts.md
+        - name: Create website
+          href: api/profile-post-websites.md
+        - name: List websites
+          href: api/profile-list-websites.md
     - name: Tasks and plans
       displayName: Planner
       items:
