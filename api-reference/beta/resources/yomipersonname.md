@@ -11,7 +11,7 @@ doc_type: "resourcePageType"
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-The [yomiPersonName](yomipersonname.md) resource type provides a mechanism for a user to store information about how to pronounce a name for non-native speakers of the language that the [personName](personName.md) resource is represented in.
+Provides a mechanism for a user to store information about how to pronounce a name for non-native speakers of the language that the [personName](personname.md) resource is represented in.
 
 ## Properties
 
