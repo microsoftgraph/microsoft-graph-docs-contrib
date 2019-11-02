@@ -1,9 +1,9 @@
 ---
 title: "Delete timeOffRequest"
-description: "Delete timeOffRequest."
+description: "Delete a timeOffRequest object."
 localization_priority: Normal
 author: "akumar39"
-ms.prod: "Microsoft-Teams"
+ms.prod: "microsoft-teams"
 doc_type: "apiPageType"
 ---
 
@@ -11,7 +11,7 @@ doc_type: "apiPageType"
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Delete timeOffRequest.
+Delete a [timeOffRequest](../resources/timeoffrequest.md) object.
 
 ## Permissions
 
@@ -35,7 +35,7 @@ DELETE /teams/{id}/schedule/timeOffRequests
 
 | Name          | Description   |
 |:--------------|:--------------|
-| Authorization | Bearer {token} |
+| Authorization | Bearer {token}. Required. |
 
 ## Request body
 
@@ -43,7 +43,7 @@ Do not supply a request body for this method.
 
 ## Response
 
-If successful, this method returns `204, No Content` response code. It does not return anything in the response body.
+If successful, this method returns a `204 No Content` response code. It does not return anything in the response body.
 
 ## Examples
 
