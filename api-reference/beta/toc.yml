@@ -747,6 +747,15 @@
           href: api/calendargroup-list-calendars.md
         - name: Create calendar in calendar group
           href: api/calendargroup-post-calendars.md
+      - name: Calendar permission
+        href: resources/calendarpermission.md
+        items:
+        - name: Get calendar permission
+          href: api/calendarpermission-get.md
+        - name: Update calendar permission
+          href: api/calendarpermission-update.md
+        - name: Delete calendar permission
+          href: api/calendarpermission-delete.md
       - name: Calendar view
         href: api/calendar-list-calendarview.md
         items:
@@ -798,6 +807,8 @@
             href: api/place-list.md
           - name: Get place
             href: api/place-get.md
+          - name: Update place
+            href: api/place-update.md
     - name: Cloud communications
       displayName: Cloud communications
       items:
@@ -8080,7 +8091,7 @@
           href: api/dynamics-vendor-update.md
         - name: Delete vendor
           href: api/dynamics-vendor-delete.md
-    - name: Identity and access
+    - name: Identity and access    
       displayName: Azure AD, Microsoft identity platform
       items:
       - name: Overview
@@ -8591,6 +8602,23 @@
           href: api/identityprovider-update.md
         - name: Delete identity provider
           href: api/identityprovider-delete.md
+      - name: Information protection          
+        items:       
+        - name: Labels
+          href: resources/informationprotectionlabel.md
+          items:
+          - name: List labels
+            href: api/informationprotectionpolicy-list-labels.md
+          - name: Get label
+            href: api/informationprotectionlabel-get.md
+          - name: Evaluate application
+            href: api/informationprotectionlabel-evaluateapplication.md
+          - name: Evaluate classification result
+            href: api/informationprotectionlabel-evaluateclassificationresults.md
+          - name: Evaluate removal
+            href: api/informationprotectionlabel-evaluateremoval.md
+          - name: Extract label
+            href: api/informationprotectionlabel-extractlabel.md
       - name: Invitation manager
         href: resources/invitation.md
         items:
@@ -9711,7 +9739,7 @@
           href: api/sitepage-delete.md
         - name: Publish page
           href: api/sitepage-publish.md
-    - name: Social and workplace intelligence
+    - name: People and workplace intelligence
       items:
       - name: Overview
         href: resources/social-overview.md
@@ -9767,6 +9795,65 @@
             href: api/activitystatistics-get.md
       - name: Mention
         href: resources/mention.md
+      - name: Profile
+        href: resources/profile.md
+        items:
+        - name: Get profile
+          href: api/profile-get.md
+        - name: Delete profile
+          href: api/profile-delete.md
+        - name: List account
+          href: api/profile-list-account.md
+        - name: List anniversariles
+          href: api/profile-list-anniversaries.md
+        - name: Create anniversary
+          href: api/profile-post-anniversaries.md
+        - name: List educational activities
+          href: api/profile-list-educationalactivities.md
+        - name: Create educational activity
+          href: api/profile-post-educationalactivities.md
+        - name: Create email address
+          href: api/profile-post-emails.md
+        - name: List email addresses
+          href: api/profile-list-emails.md
+        - name: Create interest
+          href: api/profile-post-interests.md
+        - name: List interests
+          href: api/profile-list-interests.md
+        - name: Create language
+          href: api/profile-post-languages.md
+        - name: List languages
+          href: api/profile-list-languages.md
+        - name: Create name
+          href: api/profile-post-names.md
+        - name: List names
+          href: api/profile-list-names.md
+        - name: List websites
+          href: api/profile-list-websites.md
+        - name: Create phone number
+          href: api/profile-post-phones.md
+        - name: List phone numbers
+          href: api/profile-list-phones.md
+        - name: Create position
+          href: api/profile-post-positions.md
+        - name: List positions
+          href: api/profile-list-positions.md
+        - name: Create project
+          href: api/profile-post-projects.md
+        - name: List projects
+          href: api/profile-list-projects.md
+        - name: Create skill
+          href: api/profile-post-skills.md
+        - name: List skills
+          href: api/profile-list-skills.md
+        - name: Create web account
+          href: api/profile-post-webaccounts.md
+        - name: List web accounts
+          href: api/profile-list-webaccounts.md
+        - name: Create website
+          href: api/profile-post-websites.md
+        - name: List websites
+          href: api/profile-list-websites.md
     - name: Tasks and plans
       displayName: Planner
       items:
