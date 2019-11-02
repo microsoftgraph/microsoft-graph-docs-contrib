@@ -747,6 +747,15 @@
           href: api/calendargroup-list-calendars.md
         - name: Create calendar in calendar group
           href: api/calendargroup-post-calendars.md
+      - name: Calendar permission
+        href: resources/calendarpermission.md
+        items:
+        - name: Get calendar permission
+          href: api/calendarpermission-get.md
+        - name: Update calendar permission
+          href: api/calendarpermission-update.md
+        - name: Delete calendar permission
+          href: api/calendarpermission-delete.md
       - name: Calendar view
         href: api/calendar-list-calendarview.md
         items:
