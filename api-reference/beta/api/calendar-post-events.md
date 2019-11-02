@@ -58,7 +58,7 @@ If successful, this method returns `201 Created` response code and [event](../re
 
 ## Examples
 
-### Example 1 : Create an event in the specified calendar of the signed-in user's.
+### Example 1: Create an event in the specified calendar of the signed-in user's.
 
 ##### Request
 The following example creates an event in the specified calendar of the signed-in user's.
@@ -212,7 +212,7 @@ Content-type: application/json
 }
 ```
 
-### Example 2 : Create an event in the specified calendar of the signed-in user's and enable it as an online meeting.
+### Example 2: Create an event in the specified calendar of the signed-in user's and enable it as an online meeting.
 
 ##### Request
 The following example creates an event in the specified calendar of the signed-in user's and enables it as an online meeting.
