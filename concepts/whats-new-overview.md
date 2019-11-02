@@ -42,6 +42,10 @@ Use the **hideFromAddressLists** and **hideFromOutlookClients** properties to co
 
 [Attach large files up to 150MB](outlook-large-attachments.md) to a [message](/graph/api/resources/message?view=graph-rest-beta) instance, by creating an [upload session](/graph/api/resources/uploadsession?view=graph-rest-beta), and iteratively uploading ranges of the file until all the bytes of the file have been uploaded. 
 
+### Search
+
+With [Microsoft Search](search-concept-overview.md) becoming available to all Office 365 users, use the [search API](/graph/api/resource/search-api-overview?view=graph-rest-beta) to query your data. The [indexing API](/graph/api/resource/indexing-api-overview?view=graph-rest-beta) also provides a way to ingest external data into Microsoft Search.
+
 ## September 2019: New and generally available
 
 ### Calendar, mail, and group
