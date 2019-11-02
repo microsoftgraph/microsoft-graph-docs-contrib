@@ -897,7 +897,6 @@ Possible values for user account types (group membership), per Windows definitio
 |offline|
 |unknownFutureValue|
 
-
 ### activityType values
 
 |Member|
@@ -915,6 +914,36 @@ Possible values for user account types (group membership), per Windows definitio
 |driveItem|
 |externalFile|
 |externalItem|
+
+### onlineMeetingProviderType values
+
+|Member|
+|:---|
+|unknown|
+|skypeForBusiness|
+|skypeForConsumer|
+|teamsForBusiness|
+
+### delegateMeetingMessageDeliveryOptions values
+
+|Member|
+|:---|
+|sendToDelegateAndInformationToPrincipal|
+|sendToDelegateAndPrincipal|
+|sendToDelegateOnly|
+
+### calendarRoleType values
+
+|Member|
+|:---|
+|none|
+|freeBusyRead|
+|limitedRead|
+|read|
+|write|
+|delegateWithoutPrivateEventAccess|
+|delegateWithPrivateEventAccess|
+|custom|
 
 ### contentFormat values
 

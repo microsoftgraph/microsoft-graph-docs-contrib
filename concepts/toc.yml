@@ -263,7 +263,7 @@ items:
       - name: Sites and lists
         href: sharepoint-concept-overview.md
         displayName: SharePoint, OneDrive, OneDrive for Business, OneDrive business, OneDrive personal
-      - name: Social and workplace intelligence
+      - name: People and workplace intelligence
         items:
           - name: Overview
             href: social-intel-concept-overview.md
