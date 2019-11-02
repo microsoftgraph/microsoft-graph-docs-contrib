@@ -241,7 +241,7 @@ Content-length: 2197
 ```
 
 
-### Example 2: Create an event that occurs in multiple locations.
+### Example 2: Create an event that occurs in multiple locations
 
 ##### Request
 The next example request specifies 3 locations where the organizer and attendees can attend the meeting from.
@@ -655,7 +655,7 @@ Content-type: application/json
 }
 ```
 
-#### Example 4: Create an event and enable it as an online meeting
+#### Example 4: Create and enable an event as an online meeting
 
 ##### Request
 Here is an example of a request which creates an event and enables it as an online meeting. It uses the `Prefer: outlook.timezone` request header to specify the time zone for the **start** and **end**
