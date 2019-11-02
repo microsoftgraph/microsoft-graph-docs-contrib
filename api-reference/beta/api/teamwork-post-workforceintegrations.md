@@ -1,9 +1,9 @@
 ---
 title: "Create workforceIntegration"
-description: "Use this API to create a new workforceIntegration."
+description: "Create a new workforceIntegration object."
 localization_priority: Normal
 author: "akumar39"
-ms.prod: "Microsoft-Teams"
+ms.prod: "microsoft-teams"
 doc_type: "apiPageType"
 ---
 
@@ -11,7 +11,7 @@ doc_type: "apiPageType"
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Use this API to create a new workforceIntegration.
+Create a new [workforceIntegration](../resources/workforceintegration.md) object.
 
 ## Permissions
 
@@ -35,15 +35,16 @@ POST /teamwork/workforceIntegrations
 
 | Name          | Description   |
 |:--------------|:--------------|
-| Authorization | Bearer {token} |
+| Authorization | Bearer {token}. Required. |
+| Content-type | application/json. Required. |
 
 ## Request body
 
-In the request body, supply a JSON representation of [workforceIntegration](../resources/workforceintegration.md) object.
+In the request body, supply a JSON representation of a [workforceIntegration](../resources/workforceintegration.md) object.
 
 ## Response
 
-If successful, this method returns `201, Created` response code and a new [workforceIntegration](../resources/workforceintegration.md) object in the response body.
+If successful, this method returns a `201 Created` response code and a new [workforceIntegration](../resources/workforceintegration.md) object in the response body.
 
 ## Examples
 
