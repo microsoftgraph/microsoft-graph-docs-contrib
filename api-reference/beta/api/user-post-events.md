@@ -762,7 +762,6 @@ Content-length: 2197
     "onlineMeetingUrl":null,
     "isOnlineMeeting": true,
     "onlineMeetingProvider": "teamsForBusiness",
-    "onlineMeeting":null,
     "allowNewTimeProposals": true,
     "responseStatus":{
         "response":"organizer",

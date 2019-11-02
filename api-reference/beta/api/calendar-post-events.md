@@ -314,7 +314,6 @@ Content-type: application/json
     "onlineMeetingUrl": null,
     "isOnlineMeeting": true,
     "onlineMeetingProvider": "teamsForBusiness",
-    "onlineMeeting": null,
     "recurrence": null,
     "responseStatus": {
         "response": "organizer",
