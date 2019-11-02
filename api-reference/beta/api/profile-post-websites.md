@@ -1,6 +1,6 @@
 ---
 title: "Create personWebsite"
-description: "Use this API to create a new personWebsite."
+description: "Create a new personWebsite."
 localization_priority: Normal
 author: "kevinbellinger"
 ms.prod: "people"
@@ -11,7 +11,7 @@ doc_type: "apiPageType"
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Use this API to create a new [personWebsite](../resources/personwebsite.md) object in a user's [profile](../resources/profile.md).
+Create a new [personWebsite](../resources/personwebsite.md) object in a user's [profile](../resources/profile.md).
 
 ## Permissions
 
