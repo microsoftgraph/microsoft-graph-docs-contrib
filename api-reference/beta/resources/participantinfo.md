@@ -41,7 +41,7 @@ The following is a JSON representation of the resource.
 {
   "countryCode": "String",
   "identity": { "@odata.type": "#microsoft.graph.identitySet" },
-  "endpointType": "default | voicemail | skypeForBusiness | skypeForBusinessVoipPhone",
+  "endpointType": "default | skypeForBusiness | skypeForBusinessVoipPhone",
   "languageId": "String",
   "region": "String"
 }
