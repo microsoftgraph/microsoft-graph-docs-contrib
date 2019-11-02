@@ -11,7 +11,7 @@ doc_type: "resourcePageType"
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Represrnts a information about people related to information within a given entity in a [profile](profile.md) for a user.
+Represents information about people related to information within a given entity in a [profile](profile.md) for a user.
 
 ## Properties
 
