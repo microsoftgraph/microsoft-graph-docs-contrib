@@ -1,6 +1,6 @@
 ---
 title: "Create webAccount"
-description: "Use this API to create a new webAccount."
+description: "Create a new webAccount object."
 localization_priority: Normal
 author: "kevinbellinger"
 ms.prod: "people"
@@ -11,7 +11,7 @@ doc_type: "apiPageType"
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Use this API to create a new [webAccount](../resources/webaccount.md) object in a user's [profile](../resources/profile.md).
+Create a new [webAccount](../resources/webaccount.md) object in a user's [profile](../resources/profile.md).
 
 ## Permissions
 
