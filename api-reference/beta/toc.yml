@@ -9794,18 +9794,18 @@
         - name: List account
           href: api/profile-list-account.md
         - name: List anniversariles
-          href: api/profile-post-anniversaries.md
+          href: api/profile-list-anniversaries.md
         - name: Create anniversary
           href: api/profile-post-anniversaries.md
         - name: List educational activities
           href: api/profile-list-educationalactivities.md
         - name: Create educational activity
           href: api/profile-post-educationalactivities.md
-        - name: Create email
+        - name: Create email address
           href: api/profile-post-emails.md
-        - name: List emails
+        - name: List email addresses
           href: api/profile-list-emails.md
-        - name: Create interests
+        - name: Create interest
           href: api/profile-post-interests.md
         - name: List interests
           href: api/profile-list-interests.md
@@ -9819,9 +9819,9 @@
           href: api/profile-list-names.md
         - name: List websites
           href: api/profile-list-websites.md
-        - name: Create phone
+        - name: Create phone number
           href: api/profile-post-phones.md
-        - name: List phones
+        - name: List phone numbers
           href: api/profile-list-phones.md
         - name: Create position
           href: api/profile-post-positions.md
