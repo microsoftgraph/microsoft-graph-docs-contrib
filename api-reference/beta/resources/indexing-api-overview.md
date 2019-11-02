@@ -17,13 +17,17 @@ Requests to index data are performed on behalf of an application without the pre
 
 ## Common use cases
 
-You can create and configure a connection to the Microsoft Search service, which allows your app to define a schema for the items that will be indexed by that connection. You can also add, update, and delete items in the index.
+The use cases for the APIs in this section center around building [Microsoft Graph connectors](/microsoftsearch/connectors-overview), which involves the main steps of:
+
+1. [Creating a connection](../api/external-post-connections.md) to an external data source
+2. [Creating and registering a schema](../api/externalconnection-post-schema.md) that describes the type and how to index the external data
+3. [Indexing the data](../api/externalconnection-put-items.md) as an external item or external file
 
 | Use cases                                        | REST resources                              | See also |
 |:-------------------------------------------------|:--------------------------------------------|:--|
 | **Configuration actions**                        |                                             |   |
 | Create, update, or delete a connection           | [externalConnection](externalconnection.md) | [Methods of externalConnection](externalconnection.md#methods) |
-| Register a schema                                | [schema](schema.md)                         | [Methods of schema](schema.md#methods) |
+| Register a schema for the external data          | [schema](schema.md)                         | [Methods of schema](schema.md#methods) |
 | **Indexing actions**                             |                                             |   |
 | Add, update or delete a custom item in the index | [externalItem](externalitem.md)             | [Methods of externalItem](externalItem.md#methods) |
 | Add, update or delete a file in the index        | [externalFile](externalfile.md)             | [Methods of externalFile](externalfile.md#methods) |

@@ -1,6 +1,6 @@
 ---
 title: "Search API overview (preview)"
-description: "Learn about using the indexing API to index content and the search API to add search across your Office 365 & indexed content into your apps."
+description: "Learn about using the Microsoft Search API to index content and add search across your Office & indexed content into your apps."
 localization_priority: Priority
 ms.prod: "search"
 author: "snlraju-msft"
@@ -14,13 +14,13 @@ Microsoft Search is an enterprise search engine that delivers productivity gains
 <!-- markdownlint-disable MD026 -->
 ## Why use the Microsoft Search API?
 
-### One unified search endpoint for Microsoft 365 cloud data
+### One unified search endpoint for Microsoft cloud data
 
-The Microsoft Search API provides one unified search endpoint to let developers query data in the Microsoft 365 cloud - messages and events in Outlook mailboxes, and files on OneDrive and SharePoint - data that Microsoft Search already indexes.
+The Microsoft Search API provides one unified search endpoint to let developers [query](/graph/api/search-query?view=graph-rest-beta) data in the Microsoft cloud - messages and events in Outlook mailboxes, and files on OneDrive and SharePoint - data that Microsoft Search already indexes.
 
 ### Include custom external data in search experience
 
-Customers who want to include data outside of the Microsoft 365 cloud in their search experience can use the Indexing API to [build connectors](/microsoftsearch/connectors-overview) to connect to a specific data source such as an organization's human resources database or product catalog, index external custom items and files, and query the specific data source as well.
+Customers who want to include data outside of the Microsoft cloud in their search experience can use the Indexing API to [build connectors](/microsoftsearch/connectors-overview) to connect to a specific data source such as an organization's human resources database or product catalog, index external custom items and files, and query the specific data source as well.
 
 ### Consistent, up-to-date search experience
 
@@ -28,7 +28,7 @@ Using the Microsoft Search API, customers benefit from getting more personalized
 
 ## What data can I add or access by using these APIs?
 
-Microsoft Search supports searching content in the Microsoft 365 cloud:
+Microsoft Search supports searching content in the Microsoft cloud:
 
 - Outlook [message](/graph/api/resources/message?view=graph-rest-beta) and [event](/graph/api/resources/event?view=graph-rest-beta) objects
 - SharePoint and OneDrive [driveItem](/graph/api/resources/driveitem?view=graph-rest-beta) file objects
