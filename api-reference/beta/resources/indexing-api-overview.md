@@ -50,3 +50,4 @@ Note the following limitations during preview.
 
 - [Microsoft Search API overview](/graph/search-concept-overview)
 - Drill down on the methods, properties, and relationships of the [externalConnection](externalconnection.md), [schema](schema.md), [externalItem](externalitem.md), and [externalFile](externalfile.md) resources.
+- Check out the [sample search connector](https://github.com/microsoftgraph/msgraph-search-connector-sample) from GitHub.
