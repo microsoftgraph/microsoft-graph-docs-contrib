@@ -138,7 +138,7 @@ Microsoft Search is now exposing a way to search and index data in Microsoft Gra
 | **Change type** | **Version**   | **Description**                          |
 | :-------------- | :------------ | :--------------------------------------- |
 | Addition        | Beta          |Added the **hideFromAddressLists** and **hideFromOutlookClients** properties to the [group](/graph/api/resources/group?view=graph-rest-beta) entity, to control the visibility of a group in the Outlook user interface.|
-| Addition | Beta | Added the [group: assignLicense API](/graph/api/group-assignlicense?view=graph-rest-beta), which can be used to assign license to a [group](/graph/api/resources/group?view=graph-rest-beta). |
+| Addition | Beta | Added the [assignLicense](/graph/api/group-assignlicense?view=graph-rest-beta) method which can be used to add or remove licenses on users in a [group](/graph/api/resources/group?view=graph-rest-beta). |
 
 ### Identity and access (Azure AD)
 
