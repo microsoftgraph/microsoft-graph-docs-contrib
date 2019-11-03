@@ -22,7 +22,7 @@ Below, see highlights of what's new in Microsoft Graph, and how you can [share y
 
 ### Identity and access
 
-- Register [applications](/graph/api/resources/message?view=graph-rest-1.0) that authenticate with Azure Active Directory (Azure AD).
+Register [applications](/graph/api/resources/message?view=graph-rest-1.0) that authenticate with Azure Active Directory (Azure AD).
 
 
 ## November 2019: New in preview
@@ -32,7 +32,7 @@ Below, see highlights of what's new in Microsoft Graph, and how you can [share y
 
 ### Calendar
 
-- [Set properties](/graph/api/place-update?view=graph-rest-beta) for the rich location types of [room](/graph/api/resources/room?view=graph-rest-beta) and [room list](/graph/api/resources/roomlist?view=graph-rest-beta).
+[Set properties](/graph/api/place-update?view=graph-rest-beta) for the rich location types of [room](/graph/api/resources/room?view=graph-rest-beta) and [room list](/graph/api/resources/roomlist?view=graph-rest-beta).
 
 
 ### People and workplace intelligence
@@ -41,9 +41,7 @@ Debut of the [profile](/graph/api/resources/profile?view=graph-rest-beta) resour
 
 
 ### Search
-
-Debut of the Microsoft Search API which allows app users to get more up-to-date, personalized, and relevant search results powered by Microsoft Graph. Use the default [query](/graph/api/search-query?view=graph-rest-beta) capability that searches Outlook messages and events, and OneDrive and SharePoint files in the Microsoft cloud. Use [connectors](/microsoftsearch/connectors-overview) from the [Microsoft Graph connectors gallery](/microsoftsearch/connectors-gallery) to include search data outside of the Microsoft cloud. Alternatively, [build your own connectors](/graph/api/resources/indexing-api-overview?view=graph-rest-beta#common-use-cases), index external custom items and files, and query specific external data sources.
-
+Debut of the Microsoft Search API which allows app users to get more up-to-date, personalized, and relevant search results powered by Microsoft Graph. Use the default [query](/graph/api/search-query?view=graph-rest-beta) capability that searches Outlook messages and events, and OneDrive and SharePoint files in the Microsoft cloud. Use [connectors](/microsoftsearch/connectors-overview), available in the [Microsoft Graph connectors gallery](/microsoftsearch/connectors-gallery), to include search data outside of the Microsoft cloud. Alternatively, [build your own connectors](/graph/api/resources/indexing-api-overview?view=graph-rest-beta#common-use-cases), index external custom items and files, and query specific external data sources.
 
 
 ## October 2019: New and generally available
@@ -58,7 +56,7 @@ Use the new **message** parameter to update any writeable [message](/graph/api/r
 
 ### Users
 - [Get](/graph/api/user-get-mailboxsettings?view=graph-rest-1.0) or [set](/graph/api/user-update-mailboxsettings?view=graph-rest-1.0) a user's preferred date and time format [settings for the user's mailbox](/graph/api/resources/mailboxsettings?view=graph-rest-1.0). 
-- Track a property on the [user](/graph/api/resources/user?view=graph-rest-1.0) for the date/time of the last password change.
+- Track the date/time of the last password change on a [user](/graph/api/resources/user?view=graph-rest-1.0).
 
 ## October 2019: New in preview
 
@@ -75,12 +73,12 @@ Use the new **message** parameter to update any writeable [message](/graph/api/r
   - Create or update an [event](/graph/api/resources/event?view=graph-rest-beta) to be available online, and provide details for attendees to join the meeting online. 
   - In particular, use the new **onlineMeetingProvider** and **onlineMeeting** properties of **event** to set or identify Microsoft Teams as an online meeting provider, a workaround for a [known issue](known-issues.md#onlinemeetingurl-property-support-for-microsoft-teams) with the **onlineMeetingUrl** property.
 
+### Devices and apps
+Intune [October](changelog.md#october-2019) updates access rules for specific scenarios
+
 ### Groups
 - Use the **hideFromAddressLists** and **hideFromOutlookClients** properties to control the visibility of a [group](/graph/api/resources/group?view=graph-rest-beta) in certain parts of the Outlook user interface or in an Outlook client.
 - [Assign](/graph/api/group-assignlicense?view=graph-rest-beta) or remove licenses on users in a [group](/graph/api/resources/group?view=graph-rest-beta).
-
-### Devices and apps
-Intune [October](changelog.md#october-2019) updates access rules for specific scenarios
 
 ### Identity and access
 - Use [conditional access policies](/graph/api/resources/conditionalaccesspolicy?view=graph-rest-beta) to customize access rules for an organization. These rules consider signals about a user or a device identity, such as user or group membership, IP location, and behaviors such as attempts to access specific applications, and risky sign-in behaviors.
@@ -92,10 +90,6 @@ Intune [October](changelog.md#october-2019) updates access rules for specific sc
 ### Mail
 
 [Attach large files up to 150MB](outlook-large-attachments.md) to a [message](/graph/api/resources/message?view=graph-rest-beta) instance, by creating an [upload session](/graph/api/resources/uploadsession?view=graph-rest-beta), and iteratively uploading ranges of the file until all the bytes of the file have been uploaded. 
-
-### Search
-
-With [Microsoft Search](search-concept-overview.md) becoming available to all Office 365 users, use the [search API](/graph/api/resource/search-api-overview?view=graph-rest-beta) to query your data. The [indexing API](/graph/api/resource/indexing-api-overview?view=graph-rest-beta) also provides a way to ingest external data into Microsoft Search.
 
 
 ## Want to stay in the loop?
