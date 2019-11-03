@@ -18,6 +18,39 @@ The Microsoft Graph team regularly evaluates customer needs and releases new fea
 Below, see highlights of what's new in Microsoft Graph, and how you can [share your ideas](#want-to-stay-in-the-loop). For details of API updates, see the [September](changelog.md#september-2019) and [August](changelog.md#august-2019) sections of the API changelog. 
 
 
+## November 2019: New and generally available
+
+
+
+## November 2019: New in preview
+
+> [!IMPORTANT]
+> Features, including APIs and tools, in _preview_ status may change without notice, and some may never be promoted to GA status. Do not use them in production apps.
+
+### Calendar
+
+- Programmatic calendar sharing is in closer parity with the Outlook user experience, in addition to tracking just the current user's permissions and sharing status with a calendar:
+  - For each [calendar](/graph/api/resources/calendar?view=graph-rest-beta), manage the [permissions](/graph/api/resources/calendarpermission?view=graph-rest-beta) of each user with whom the calendar is shared. 
+  - For each [mailbox](/graph/api/resources/mailboxsettings?view=graph-rest-beta), specify whether a delegate, mailbox owner, or both receive meeting messages and meeting responses. 
+- Additional online meeting support:
+  - For each **calendar**, specify the allowed and the default online meeting providers.
+  - Create or update an [event](/graph/api/resources/event?view=graph-rest-beta) to be available online, providing details for attendees to join the meeting online. 
+  - In particular, the new **onlineMeetingProvider** and **onlineMeeting** properties of **event** provide better support for Microsoft Teams as an online meeting provider, a workaround for known issues with the **onlineMeetingUrl** property.
+- [Set rich properties](/graph/api/place-update?view=graph-rest-beta) that represent a [room](/graph/api/resources/room?view=graph-rest-beta) or [room list](/graph/api/resources/roomlist?view=graph-rest-beta).
+
+
+### People and workplace intelligence
+
+Debut of the [profile](/graph/api/resources/profile?view=graph-rest-beta) resource which is a rich representation of the next generation of people entities in Microsoft services. This resource relate to common and practical people attributes, including information for any tenant [account](/graph/api/resources/useraccountinformation?view=graph-rest-beta), [meaningful dates](/graph/api/resources/personanniversary?view=graph-rest-beta), [education](/graph/api/resources/educationalactivity?view=graph-rest-beta), [employment positions](/graph/api/resources/workposition?view=graph-rest-beta), [interests](/graph/api/resources/personinterest?view=graph-rest-beta), [language](/graph/api/resources/languageproficiency?view=graph-rest-beta) and [skill](/graph/api/resources/skillproficiency?view=graph-rest-beta) proficiencies, [project participation](/graph/api/resources/projectparticipation?view=graph-rest-beta), [web site association](/graph/api/resources/personwebsite?view=graph-rest-beta), and other contact information.
+
+
+### Search
+
+Debut of the Microsoft Search API which allows app users to get more up-to-date, personalized, and relevant search results powered by Microsoft Graph. By default, the [query](/graph/api/search-query?view=graph-rest-beta) capability searches Outlook messages and events, and OneDrive and SharePoint files in the Microsoft cloud. Apps can use [connectors](/microsoftsearch/connectors-overview) to include data outside of the Microsoft cloud, such as an organization's human resources database or product catalog, and seamlessly [query](/graph/api/search-query?view=graph-rest-beta) the external data. The [Microsoft Graph connectors gallery](/microsoftsearch/connectors-gallery) lists a number of ready-to-use connectors. Alternatively, you can [build connectors](/graph/api/resources/indexing-api-overview?view=graph-rest-beta#common-use-cases), index external custom items and files, and query the specific external data source as well.
+
+
+(/graph/api/resources/?view=graph-rest-beta)
+
 ## October 2019: New and generally available
 
 ### Mail
@@ -45,59 +78,6 @@ Use the **hideFromAddressLists** and **hideFromOutlookClients** properties to co
 ### Search
 
 With [Microsoft Search](search-concept-overview.md) becoming available to all Office 365 users, use the [search API](/graph/api/resource/search-api-overview?view=graph-rest-beta) to query your data. The [indexing API](/graph/api/resource/indexing-api-overview?view=graph-rest-beta) also provides a way to ingest external data into Microsoft Search.
-
-## September 2019: New and generally available
-
-### Calendar, mail, and group
-[Get the raw content of a file, or the MIME content of an item](/graph/api/attachment-get?view=graph-rest-1.0#get-the-raw-contents-of-a-file-or-item-attachment) that has been added as an [attachment](/graph/api/resources/attachment?view=graph-rest-1.0) to an [event](/graph/api/resources/event?view=graph-rest-1.0), [message](/graph/api/resources/message?view=graph-rest-1.0), or group [post](/graph/api/resources/post?view=graph-rest-1.0).
-
-### Calendar, mail, Outlook task, personal contact
-Use the [translateExchangeId](/graph/api/user-translateexchangeids?view=graph-rest-1.0) function to convert an Outlook item ID between supported [formats](/graph/api/user-translateexchangeids?view=graph-rest-1.0#exchangeidformat-values), including the Microsoft Graph default ID format and immutable ID format. 
-
-The following resources support ID format conversion:
-
-- [attachment](/graph/api/resources/attachment?view=graph-rest-1.0)
-- [contact](/graph/api/resources/contact?view=graph-rest-1.0)
-- [event](/graph/api/resources/event?view=graph-rest-1.0)
-- [eventMessage](/graph/api/resources/eventmessage?view=graph-rest-1.0)
-- [message](/graph/api/resources/message?view=graph-rest-1.0)
-- [outlookTask](/graph/api/resources/outlooktask?view=graph-rest-1.0)
-
-### Mail
-[Get the MIME content of a message](outlook-get-mime-message.md).
-
-### Microsoft Graph Toolkit
-Use the [Microsoft Graph Toolkit](toolkit/overview.md) to develop production apps that offer a consistent Microsoft 365 look-and-feel, and save time in authenticating and accessing data from Microsoft Graph.
-
-## September 2019: New in preview
-
-> [!IMPORTANT]
-> Features, including APIs and tools, in _preview_ status may change without notice, and some may never be promoted to GA status. Do not use them in production apps.
-
-### Devices and apps
-Intune [September](changelog.md#september-2019) updates
-
-### Files
-- Enhanced synchronization support:
-
-  - Use the new **pendingOperations** property to identify operations that may affect the binary content of a [driveItem](/graph/api/resources/driveitem?view=graph-rest-beta).
-  - [Restore](/graph/api/driveitem-restore?view=graph-rest-beta) a deleted **driveItem**. 
-- Use Secure Hash Algorithm (SHA-256) to enhance [file](/graph/api/resources/file?view=graph-rest-beta) data security and integrity.
-- Get or set the orientation of a [photo](/graph/api/resources/photo?view=graph-rest-beta). Setting is supported on OneDrive Personal.
-
-### Identity and access
-- Use the new **identities** property and get the identities that a [user](/graph/api/resources/user?view=graph-rest-beta) can use to sign in to an account. Identities can be provided by organizations, or social identity providers such as Facebook, Google, and Microsoft.
-- Incremental enhancements for [synchronizing identities](/graph/api/resources/synchronization-overview?view=graph-rest-beta) in a cloud application for a tenant:
-
-  - Store settings for a [synchronization job](/graph/api/resources/synchronization-synchronizationjob?view=graph-rest-beta)
-  - Specify a reason to impose [quarantine](/graph/api/resources/synchronization-quarantine?view=graph-rest-beta) on a synchronization job
-
-### Teamwork
-Use the **General** channel of a [team](/graph/api/resources/team?view=graph-rest-beta), or customize [member settings](/graph/api/resources/teammembersettings?view=graph-rest-beta) to let team members create private channels in the **team**.
-
-### Users
-- Get or update the identities with which a [user](/graph/api/resources/user?view=graph-rest-beta) can sign in to an account. These identities can be provided by business organizations, or by social identity providers such as Facebook, Google, and Microsoft.
-- Get or update a user's preferred date and time format [settings for the mailbox](/graph/api/resources/mailboxsettings?view=graph-rest-beta).
 
 
 ## Want to stay in the loop?
