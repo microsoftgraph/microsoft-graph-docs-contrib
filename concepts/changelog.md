@@ -23,7 +23,9 @@ For details about known issues with Microsoft Graph APIs, see [Known issues](kno
 
 | **Change type** | **Version** | **Description**                  |
 |:----------------|:------------|:-----------------------------------------|
-| Addition | v1.0 | Added new entity type: [application](/graph/resources/application?view=graph-rest-v1.0).
+| Addition | v1.0 | Added new entity type: [application](/graph/resources/application?view=graph-rest-v1.0).|
+| Addition | v1.0 | Added new delegated permissions [Application.Read.All](/graph/permissions-reference#application-resource-permissions), [Application.ReadWrite.All](/graph/permissions-reference#application-resource-permissions).|
+| Addition | v1.0 | Added new application permission [Application.Read.All](/graph/permissions-reference#application-resource-permissions).|
 
 ### People and workplace intelligence
 
