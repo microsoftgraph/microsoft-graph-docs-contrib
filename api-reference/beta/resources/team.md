@@ -49,7 +49,7 @@ Every team is associated with a [group](../resources/group.md). The group has th
 |visibility|[teamVisibilityType](teamvisibilitytype.md)| The visibility of a the group and team. Defaults to Public. |
 |funSettings|[teamFunSettings](teamfunsettings.md) |Settings to configure use of Giphy, memes, and stickers in the team.|
 |guestSettings|[teamGuestSettings](teamguestsettings.md) |Settings to configure whether guests can create, update, or delete channels in the team.|
-|internalId | string | A unique ID for the team that has been used in a few places such as the audit log/[Office 365 Management Activity API](https://docs.microsoft.com/en-us/office/office-365-management-api/office-365-management-activity-api-reference). |
+|internalId | string | A unique ID for the team that has been used in a few places such as the audit log/[Office 365 Management Activity API](https://docs.microsoft.com/office/office-365-management-api/office-365-management-activity-api-reference). |
 |isArchived|Boolean|Whether this team is in read-only mode. |
 |memberSettings|[teamMemberSettings](teammembersettings.md) |Settings to configure whether members can perform certain actions, for example, create channels and add bots, in the team.|
 |messagingSettings|[teamMessagingSettings](teammessagingsettings.md) |Settings to configure messaging and mentions in the team.|
@@ -67,7 +67,7 @@ Every team is associated with a [group](../resources/group.md). The group has th
 |operations|[teamsAsyncOperation](teamsasyncoperation.md) collection| The async operations that ran or are running on this team. | 
 |primaryChannel|[channel](channel.md)| The general channel for the team. | 
 |schedule|[schedule](schedule.md)| The schedule of shifts for this team.|
-|template|[teamsTemplate](teamstemplate.md)| The template this team was created from. See [available templates](https://docs.microsoft.com/en-us/MicrosoftTeams/get-started-with-teams-templates). |
+|template|[teamsTemplate](teamstemplate.md)| The template this team was created from. See [available templates](https://docs.microsoft.com/MicrosoftTeams/get-started-with-teams-templates). |
 
 ## JSON representation
 
