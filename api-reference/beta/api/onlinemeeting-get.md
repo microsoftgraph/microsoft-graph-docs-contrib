@@ -21,7 +21,7 @@ One of the following permissions is required to call this API. To learn more, in
 
 | Permission type                        | Permissions (from least to most privileged)           |
 |:---------------------------------------|:------------------------------------------------------|
-| Delegated (work or school account)     | OnlineMeetings.Read, OnlineMeetings.ReadWrite         |
+| Delegated (work or school account)     | Not Supported.                                        |
 | Delegated (personal Microsoft account) | Not Supported.                                        |
 | Application                            | OnlineMeetings.Read.All, OnlineMeetings.ReadWrite.All |
 
