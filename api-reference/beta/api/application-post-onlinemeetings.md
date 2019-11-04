@@ -11,7 +11,7 @@ doc_type: apiPageType
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Create an online meeting on behalf of a user by using the object id in the user token.
+Create an online meeting on behalf of a user by using the Object Id (oid) in the user token.
 
 > **Note**: The meeting does not show up on the user's calendar.
 
