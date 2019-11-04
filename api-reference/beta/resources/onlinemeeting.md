@@ -17,40 +17,40 @@ Contains information about the meeting, including the join URL, the attendees li
 
 | Method         | Return Type | Description |
 |:---------------|:--------|:----------|
-| [Get onlineMeeting](../api/onlinemeeting-get.md) | [onlineMeeting](onlinemeeting.md) | Read properties and relationships of online meeting object. |
-| [Create onlineMeeting](../api/application-post-onlineMeetings.md) | [onlineMeeting](onlinemeeting.md) | Creates an online meeting. |
+| [Create onlineMeeting](../api/application-post-onlineMeetings.md) | [onlineMeeting](onlinemeeting.md) | Create an online meeting. |
+| [Get onlineMeeting](../api/onlinemeeting-get.md) | [onlineMeeting](onlinemeeting.md) | Read the properties and relationships of an **onlineMeeting** object. |
 
 ## Properties
 
 | Property                  | Type                                                   | Description                                                                                                                |
 | :------------------------ | :----------------------------------------------------- | :------------------------------------------------------------------------------------------------------------------------- |
-| autoAdmittedUsers         | String                                                 | The setting which specifies the type of participants that will automatically be allowed into the online meeting. Read-only. Possible values are: `everyone`, `everyoneInSameAndFederatedCompany`, `everyoneInCompany`, `invitedUsersInCompany`, `organizer`|
+| autoAdmittedUsers         | String                                                 | The setting that specifies the type of participants that will automatically be allowed into the online meeting. Read-only. Possible values are: `everyone`, `everyoneInSameAndFederatedCompany`, `everyoneInCompany`, `invitedUsersInCompany`, `organizer`|
 | audioConferencing         | [audioConferencing](audioconferencing.md)              | The phone access (dial-in) information for an online meeting. Read-only. |
 | canceledDateTime          | DateTime                                               | The time in UTC when the meeting was canceled. Read-only. |
 | chatInfo                  | [chatInfo](chatinfo.md)                                | The chat information associated with this online meeting. |
-| creationDateTime          | DateTime                                               | The Meeting creation time in UTC. Read-only. |
-| startDateTime             | DateTime                                               | The Meeting start time in UTC. |
-| endDateTime               | DateTime                                               | The Meeting end time in UTC. |
-| id                        | String                                                 | The default id associated with the online meeting. Read-only. |
-| isCanceled                | Boolean                                                | The value indicating if the meeting has been canceled. Read-only. |
+| creationDateTime          | DateTime                                               | The meeting creation time in UTC. Read-only. |
+| startDateTime             | DateTime                                               | The meeting start time in UTC. |
+| endDateTime               | DateTime                                               | The meeting end time in UTC. |
+| id                        | String                                                 | The default ID associated with the online meeting. Read-only. |
+| isCanceled                | Boolean                                                | Indicates whether the meeting has been canceled. Read-only. |
 | joinUrl                   | String                                                 | The join URL of the online meeting. Read-only.|
 | isBroadcast               | Boolean                                                | The flag to determine whether it's a broadcast meeting. |
 | participants              | [meetingParticipants](meetingparticipants.md)          | The participants associated with the online meeting.  This includes the organizer and the attendees. |
 | subject                   | String                                                 | The subject of the online meeting. |
 | capabilities              | String collection                                      | The list of meeting capabilities. Possible values are: `questionAndAnswer`. |
-| videoTeleconferenceId     | String                                                 | The videio teleconferencing id. Read-only. |
+| videoTeleconferenceId     | String                                                 | The videio teleconferencing ID. Read-only. |
 
-### autoAdmittedUsers
+### autoAdmittedUsers values
 | Value | Description  |
 | :------------------------ | :----------------------------------------------------- | :------------------------------------------------------------------------------------------------------------------------- |
-| organizer | This means only the meeting organizer is admitted directly.  Everyone else waits in the lobby, until admitted by the organizer  |
-| invitedUsersInCompany | This means the meeting organizer and the users in the same company invited by the organizer join the meeting directly.  Everyone else waits in lobby until admitted.  |
-| everyoneInCompany | This means everyone in the same company as the organizer join the meeting directly.  Federated, anonymous users wait in lobby until admitted.  |
-| everyoneInSameAndFederatedCompany |  This means everyone in same company as the organizer and federated companies join the meeting directly.  Anonymous users wait in lobby until admitted.  |
-| everyone | Any user is allowed, this means everyone (including anonymous users) can join the meeting directly without waiting in lobby.  |
+| organizer | Only the meeting organizer is admitted directly.  Everyone else waits in the lobby, until admitted by the organizer.  |
+| invitedUsersInCompany | The meeting organizer and the users in the same company invited by the organizer join the meeting directly.  Everyone else waits in lobby until admitted.  |
+| everyoneInCompany | Everyone in the same company as the organizer join the meeting directly. Federated, anonymous users wait in lobby until admitted.  |
+| everyoneInSameAndFederatedCompany |  Everyone in same company as the organizer and federated companies join the meeting directly.  Anonymous users wait in lobby until admitted.  |
+| everyone | Any user is allowed. Everyone (including anonymous users) can join the meeting directly without waiting in lobby.  |
 
 ## Relationships
-None
+None.
 
 ## JSON representation
 
