@@ -228,7 +228,7 @@ Content-Type: application/json
 {
   "startDateTime":"2019-07-12T14:30:34.2444915-07:00",
   "endDateTime":"2019-07-12T15:00:34.2464912-07:00",
-  "subject":"User meeting in Microsoft Teams channel."
+  "subject":"User meeting in Microsoft Teams channel.",
   "chatInfo": {
     "threadId":"19%3A3b52398f3c524556894b776357c1dd79%40thread.skype"
   }
@@ -262,7 +262,7 @@ Content-Type: application/json
     "threadId": "19%3A3b52398f3c524556894b776357c1dd79%40thread.skype",
     "messageId": "1563302249053",
     "replyChainMessageId": null
-  }
+  },
   "creationDateTime": "2019-07-11T02:17:17.6491364Z",
   "startDateTime": "2019-07-11T02:17:17.6491364Z",
   "endDateTime": "2019-07-11T02:47:17.651138Z",
