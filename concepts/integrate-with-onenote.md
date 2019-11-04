@@ -4,7 +4,7 @@ description: "OneNote is a digital notebook that lets customers track ideas and 
 author: "Jewan-microsoft"
 localization_priority: Priority
 ms.prod: "onenote"
-scenarios: "getting-started"
+ms.custom: scenarios:getting-started
 ---
 
 # OneNote API overview
