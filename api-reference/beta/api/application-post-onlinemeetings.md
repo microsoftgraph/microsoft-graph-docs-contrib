@@ -11,9 +11,9 @@ doc_type: apiPageType
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Create an online meeting on behalf of a user specified in the request body.
+Create an online meeting on behalf of a user by using the object id in the user token.
 
-> **Note**: The meeting does not show on the user's calendar.
+> **Note**: The meeting does not show up on the user's calendar.
 
 ## Permissions
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
