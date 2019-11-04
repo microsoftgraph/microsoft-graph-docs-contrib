@@ -1,83 +1,103 @@
 ---
-title: "Get Online Meeting"
-description: "Retrieve the properties and relationships of an **onlineMeeting** object."
+title: "Create online meeting"
+description: "Create an online meeting on behalf of a user specified in the request body."
 author: "VinodRavichandran"
-localization_priority: Normal
-ms.prod: "microsoft-teams"
+localization_priority: Priority
+ms.prod: "cloud-communications"
 doc_type: apiPageType
 ---
 
-# Get Online Meeting
+# Create online meeting
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Retrieve the properties and relationships of an **onlineMeeting** object.
+Create an online meeting on behalf of a user specified in the request body.
 
-> **Note:** The `GET` method is limited to a [VTC conference id](https://docs.microsoft.com/microsoftteams/cloud-video-interop-for-teams-set-up). These IDs are generated for Cloud-Video-Interop licensed users and this method is used to get the details to join the meeting.
-> For regular flows, the bot can use the `joinURL` to join a meeting and no lookup is necessary.
+> **Note**: The meeting does not show on the user's calendar.
 
 ## Permissions
-
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
 
-| Permission type                        | Permissions (from least to most privileged)           |
-|:---------------------------------------|:------------------------------------------------------|
-| Delegated (work or school account)     | Not Supported.                                        |
-| Delegated (personal Microsoft account) | Not Supported.                                        |
-| Application                            | OnlineMeetings.Read.All, OnlineMeetings.ReadWrite.All |
+| Permission type                        | Permissions (from least to most privileged) |
+|:---------------------------------------|:--------------------------------------------|
+| Delegated (work or school account)     | OnlineMeetings.Read, OnlineMeetings.ReadWrite |
+| Delegated (personal Microsoft account) | Not Supported                               |
+| Application                            | OnlineMeetings.ReadWrite.All                |
 
 ## HTTP request
 <!-- { "blockType": "ignored" } -->
 ```http
-GET /app/onlineMeetings/{id}
+POST /app/onlineMeetings
+POST /communications/onlineMeetings
+POST /me/onlineMeetings
 ```
-
-## Optional query parameters
-This method supports the [OData query parameters](/graph/query-parameters) to help customize the response.
+> **Note:** The `/app` path is deprecated. Going forward, use the `/communications` path.
 
 ## Request headers
 | Name          | Description               |
 |:--------------|:--------------------------|
 | Authorization | Bearer {token}. Required. |
+| Content-type  | application/json. Required. |
 
 ## Request body
-Do not supply a request body for this method.
+In the request body, supply a JSON representation of an [onlineMeeting](../resources/onlinemeeting.md) object.
 
 ## Response
-If successful, this method returns a `200 OK` response code and [onlineMeeting](../resources/onlinemeeting.md) object in the response body.
+If successful, this method returns a `201 Created` response code and an [onlineMeeting](../resources/onlinemeeting.md) object in the response body.
 
 ## Example
 
-##### Request
-The following example shows the request.
+### Example 1: Create an online meeting with application token
 
+#### Request
+
+>**Note:** Online meeting creation using the application token is deprecated. Use the /me path with a user token to create online meetings going forward.
 
 # [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
-  "name": "get-onlineMeeting"
+  "name": "create-onlinemeeting-app-token"
 }-->
-```msgraph-interactive
-GET https://graph.microsoft.com/beta/app/onlineMeetings/{id}
+```http
+POST https://graph.microsoft.com/beta/communications/onlineMeetings
+Content-Type: application/json
+
+{
+  "isBroadcast": "false",
+  "startDateTime":"2019-09-09T14:33:30.8546353-07:00",
+  "endDateTime":"2019-09-09T15:03:30.8566356-07:00",
+  "subject":"Application Token Meeting",
+  "participants": {
+    "organizer": {
+      "identity": {
+        "user": {
+          "id": "550fae72-d251-43ec-868c-373732c2704f"
+        }
+      }
+    }
+  }
+}
 ```
 # [C#](#tab/csharp)
-[!INCLUDE [sample-code](../includes/snippets/csharp/get-onlinemeeting-csharp-snippets.md)]
+[!INCLUDE [sample-code](../includes/snippets/csharp/create-onlinemeeting-from-application-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [JavaScript](#tab/javascript)
-[!INCLUDE [sample-code](../includes/snippets/javascript/get-onlinemeeting-javascript-snippets.md)]
+[!INCLUDE [sample-code](../includes/snippets/javascript/create-onlinemeeting-from-application-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Objective-C](#tab/objc)
-[!INCLUDE [sample-code](../includes/snippets/objc/get-onlinemeeting-objc-snippets.md)]
+[!INCLUDE [sample-code](../includes/snippets/objc/create-onlinemeeting-from-application-objc-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
 
 
-##### Response
+In the request body, supply a JSON representation of the [onlineMeeting](../resources/onlinemeeting.md) object.
 
-> **Note:** The response object shown here might be shortened for readability. All the properties will be returned from an actual call.
+#### Response
+
+>**Note:** The response object shown here might be shortened for readability. All the properties will be returned from an actual call.
 
 <!-- {
   "blockType": "response",
@@ -85,46 +105,31 @@ GET https://graph.microsoft.com/beta/app/onlineMeetings/{id}
   "@odata.type": "microsoft.graph.onlineMeeting"
 } -->
 ```http
-HTTP/1.1 200 OK
+HTTP/1.1 201 Created
 Content-Type: application/json
-Content-Length: 1574
 
 {
-  "accessLevel": "everyone",
+  "autoAdmittedUsers": "everyone",
   "audioConferencing": {
     "tollNumber": "+12525634478",
     "tollFreeNumber": "+18666390588",
-    "participantPasscode": "2425999",
-    "leaderPasscode": null,
+    "ConferenceId": "2425999",
     "dialinUrl": "https://dialin.teams.microsoft.com/22f12fa0-499f-435b-bc69-b8de580ba330?id=2425999"
   },
-  "canceledDateTime": "2018-03-19T09:46:02Z",
+  "canceledDateTime": null,
   "chatInfo": {
     "threadId": "19:meeting_M2IzYzczNTItYmY3OC00MDlmLWJjMzUtYmFiMjNlOTY4MGEz@thread.skype",
     "messageId": "0",
     "replyChainMessageId": "0"
   },
-  "creationDateTime": "2018-03-19T09:46:02Z",
-  "endDateTime": "2018-03-19T09:46:02Z",
-  "entryExitAnnouncement": true,
-  "expirationDateTime": "2018-03-19T09:46:02Z",
-  "id": "013448345",
-  "isCancelled": false,
+  "creationDateTime": "2019-07-11T02:17:17.6491364Z",
+  "startDateTime": "2019-07-11T02:17:17.6491364Z",
+  "endDateTime": "2019-07-11T02:47:17.651138Z",
+  "id": "550fae72-d251-43ec-868c-373732c2704f_19:meeting_M2IzYzczNTItYmY3OC00MDlmLWJjMzUtYmFiMjNlOTY4MGEz@thread.skype",
+  "isCanceled": false,
   "joinUrl": "https://teams.microsoft.com/l/meetup-join/19%3ameeting_M2IzYzczNTItYmY3OC00MDlmLWJjMzUtYmFiMjNlOTY4MGEz%40thread.skype/0?context=%7b%22Tid%22%3a%2272f988bf-86f1-41af-91ab-2d7cd011db47%22%2c%22Oid%22%3a%22550fae72-d251-43ec-868c-373732c2704f%22%7d",
-  "meetingType": "scheduled",
+  "isBroadcast": false,
   "participants": {
-    "attendees": [
-      {
-        "identity": {
-          "user": {
-            "id": "550fae72-d251-43ec-868c-373732c2704f",
-            "tenantId": "72f988bf-86f1-41af-91ab-2d7cd011db47",
-            "displayName": "Heidi Steen"
-          }
-        },
-        "upn": "upn-value"
-      }
-    ],
     "organizer": {
       "identity": {
         "user": {
@@ -136,8 +141,78 @@ Content-Length: 1574
       "upn": "upn-value"
     }
   },
-  "startDateTime": "2018-03-19T09:46:02Z",
-  "subject": "Quarterly sales numbers"
+  "subject": "Application Token Meeting"
+}
+```
+
+### Example 2: Create an online meeting with user token
+
+#### Request
+<!-- {
+  "blockType": "request",
+  "name": "create-onlinemeeting-user-token"
+}-->
+```http
+POST https://graph.microsoft.com/beta/me/onlineMeetings
+Content-Type: application/json
+
+{
+  "startDateTime":"2019-07-12T14:30:34.2444915-07:00",
+  "endDateTime":"2019-07-12T15:00:34.2464912-07:00",
+  "subject":"User Token Meeting"
+}
+```
+
+#### Response
+>**Note:** The response object shown here might be shortened for readability. 
+
+<!-- {
+  "blockType": "response",
+  "truncated": true,
+  "@odata.type": "microsoft.graph.onlineMeeting"
+} -->
+
+```http
+HTTP/1.1 201 Created
+Content-Type: application/json
+
+{
+  "@odata.context": "https://graph.microsoft.com/beta/$metadata#users('f4053f86-17cc-42e7-85f4-f0389ac980d6')/onlineMeetings/$entity",
+  "accessLevel": "everyone",
+  "audioConferencing": {
+    "tollNumber": "+12525634478",
+    "tollFreeNumber": "+18666390588",
+    "ConferenceId": "2425999",
+    "dialinUrl": "https://dialin.teams.microsoft.com/22f12fa0-499f-435b-bc69-b8de580ba330?id=2425999"
+  },
+  "canceledDateTime": null,
+  "chatInfo": {
+    "threadId": "19:meeting_M2IzYzczNTItYmY3OC00MDlmLWJjMzUtYmFiMjNlOTY4MGEz@thread.skype",
+    "messageId": "0",
+    "replyChainMessageId": "0"
+  },
+  "creationDateTime": "2019-07-11T02:17:17.6491364Z",
+  "startDateTime": "2019-07-11T02:17:17.6491364Z",
+  "endDateTime": "2019-07-11T02:47:17.651138Z",
+  "entryExitAnnouncement": true,
+  "expirationDateTime": "2019-09-14T18:37:29.1973954Z",
+  "id": "550fae72-d251-43ec-868c-373732c2704f_19:meeting_M2IzYzczNTItYmY3OC00MDlmLWJjMzUtYmFiMjNlOTY4MGEz@thread.skype",
+  "isCanceled": false,
+  "joinUrl": "https://teams.microsoft.com/l/meetup-join/19%3ameeting_M2IzYzczNTItYmY3OC00MDlmLWJjMzUtYmFiMjNlOTY4MGEz%40thread.skype/0?context=%7b%22Tid%22%3a%2272f988bf-86f1-41af-91ab-2d7cd011db47%22%2c%22Oid%22%3a%22550fae72-d251-43ec-868c-373732c2704f%22%7d",
+  "isBroadcast": false,
+  "participants": {
+    "organizer": {
+      "identity": {
+        "user": {
+          "id": "550fae72-d251-43ec-868c-373732c2704f",
+          "tenantId": "72f988bf-86f1-41af-91ab-2d7cd011db47",
+          "displayName": "Heidi Steen"
+        }
+      },
+      "upn": "upn-value"
+    }
+  },
+  "subject": "User Token Meeting"
 }
 ```
 
@@ -146,7 +221,7 @@ Content-Length: 1574
 <!--
 {
   "type": "#page.annotation",
-  "description": "Get onlineMeeting",
+  "description": "Create onlineMeeting",
   "keywords": "",
   "section": "documentation",
   "tocPath": "",
