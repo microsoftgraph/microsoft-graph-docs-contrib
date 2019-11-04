@@ -1,6 +1,6 @@
 ---
 title: "calendarPermission resource type"
-description: "PROVIDE DESCRIPTION HERE"
+description: "The permissions of a user with whom the calendar is shared."
 localization_priority: Normal
 author: "sochowdh"
 ms.prod: "outlook"
@@ -9,7 +9,7 @@ doc_type: "resourcePageType"
 
 # calendarPermission resource type
 
-The permissions of the users with whom the calendar is shared. 
+The permissions of a user with whom the calendar is shared. 
 
 ## Methods
 
