@@ -1,23 +1,26 @@
 ---
-title: "Create Online Meeting"
-description: "Creates an online meeting on behalf of a user specified in the request body."
-author: "Vinod Ravichandran"
-localization_priority: Normal
+title: "Create online meeting"
+description: "Create an online meeting on behalf of a user specified in the request body."
+author: "VinodRavichandran"
+localization_priority: Priority
+ms.prod: "cloud-communications"
 doc_type: apiPageType
 ---
 
 # Create online meeting
 
-Creates an online meeting on behalf of a user specified in the request body.
+[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-> **Note**: The meeting does not show up on the user's calendar.
+Create an online meeting on behalf of a user specified in the request body.
+
+> **Note**: The meeting does not show on the user's calendar.
 
 ## Permissions
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
 
 | Permission type                        | Permissions (from least to most privileged) |
 |:---------------------------------------|:--------------------------------------------|
-| Delegated (work or school account)     | OnlineMeetings.ReadWrite                               |
+| Delegated (work or school account)     | OnlineMeetings.ReadWrite                    |
 | Delegated (personal Microsoft account) | Not Supported                               |
 | Application                            | OnlineMeetings.ReadWrite.All                |
 
@@ -28,36 +31,39 @@ POST /app/onlineMeetings
 POST /communications/onlineMeetings
 POST /me/onlineMeetings
 ```
+> **Note:** The `/app` path is deprecated. Going forward, use the `/communications` path.
 
 ## Request headers
 | Name          | Description               |
 |:--------------|:--------------------------|
-| Authorization | Bearer {token} Required. |
+| Authorization | Bearer {token}. Required. |
+| Content-type  | application/json. Required. |
 
 ## Request body
 In the request body, supply a JSON representation of an [onlineMeeting](../resources/onlinemeeting.md) object.
 
 ## Response
-If successful, this method returns `201 Created` response code and an [onlineMeeting](../resources/onlinemeeting.md) object in the response body.
+If successful, this method returns a `201 Created` response code and an [onlineMeeting](../resources/onlinemeeting.md) object in the response body.
 
-## Examples
+## Example
 
-#### Example 1: Creating a Meeting with an Application Token
+### Example 1: Create an online meeting with application token
 
-##### Request
->**Note:** Online meeting creation using application token will be deprecated, please use /me path with user token to create online meetings going forward.
+#### Request
 
+>**Note:** Online meeting creation using the application token is deprecated. Use the /me path with a user token to create online meetings going forward.
+
+# [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
-  "name": "create-onlinemeeting-from-application"
+  "name": "create-onlinemeeting-app-token"
 }-->
 ```http
-POST https://graph.microsoft.com/v1.0/communications/onlineMeetings
+POST https://graph.microsoft.com/beta/communications/onlineMeetings
 Content-Type: application/json
-Content-Length: 1553
 
 {
-  "isBroadcast": false,
+  "isBroadcast": "false",
   "startDateTime":"2019-09-09T14:33:30.8546353-07:00",
   "endDateTime":"2019-09-09T15:03:30.8566356-07:00",
   "subject":"Application Token Meeting",
@@ -69,13 +75,27 @@ Content-Length: 1553
         }
       }
     }
-  },
+  }
 }
 ```
+# [C#](#tab/csharp)
+[!INCLUDE [sample-code](../includes/snippets/csharp/create-onlinemeeting-from-application-csharp-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [JavaScript](#tab/javascript)
+[!INCLUDE [sample-code](../includes/snippets/javascript/create-onlinemeeting-from-application-javascript-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Objective-C](#tab/objc)
+[!INCLUDE [sample-code](../includes/snippets/objc/create-onlinemeeting-from-application-objc-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+---
+
 
 In the request body, supply a JSON representation of the [onlineMeeting](../resources/onlinemeeting.md) object.
 
-##### Response
+#### Response
 
 >**Note:** The response object shown here might be shortened for readability. All the properties will be returned from an actual call.
 
@@ -87,7 +107,6 @@ In the request body, supply a JSON representation of the [onlineMeeting](../reso
 ```http
 HTTP/1.1 201 Created
 Content-Type: application/json
-Content-Length: 1574
 
 {
   "autoAdmittedUsers": "everyone",
@@ -126,15 +145,16 @@ Content-Length: 1574
 }
 ```
 
-#### Example 2: Creating a Meeting with a User Token
+### Example 2: Create an online meeting with user token
 
-##### Request
-The following example shows the request to create an online meeting with user token.
-
+#### Request
+<!-- {
+  "blockType": "request",
+  "name": "create-onlinemeeting-user-token"
+}-->
 ```http
-POST https://graph.microsoft.com/v1.0/me/onlineMeetings
+POST https://graph.microsoft.com/beta/me/onlineMeetings
 Content-Type: application/json
-Authorization: Bearer eyJ0eXAiOi
 
 {
   "startDateTime":"2019-07-12T14:30:34.2444915-07:00",
@@ -143,27 +163,21 @@ Authorization: Bearer eyJ0eXAiOi
 }
 ```
 
-In the request body, supply a JSON representation of the [onlineMeeting](../resources/onlinemeeting.md) object.
+#### Response
+>**Note:** The response object shown here might be shortened for readability. 
 
-##### Response
-
->**Note:** The response object shown here might be shortened for readability. All the properties will be returned from an actual call.
-
-
-```http
-HTTP/1.1 201 Created
-Content-Type: application/json
-Content-Length: 1574
-```
 <!-- {
-  "blockType": "example",
+  "blockType": "response",
   "truncated": true,
   "@odata.type": "microsoft.graph.onlineMeeting"
 } -->
 
-```json
+```http
+HTTP/1.1 201 Created
+Content-Type: application/json
+
 {
-  @odata.context=https://graph.microsoft.com/v1.0/$metadata#users('f4053f86-17cc-42e7-85f4-f0389ac980d6')/onlineMeetings/$entity
+  "@odata.context": "https://graph.microsoft.com/beta/$metadata#users('f4053f86-17cc-42e7-85f4-f0389ac980d6')/onlineMeetings/$entity",
   "accessLevel": "everyone",
   "audioConferencing": {
     "tollNumber": "+12525634478",
@@ -204,10 +218,14 @@ Content-Length: 1574
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2015-10-25 14:57:30 UTC -->
-<!-- {
+<!--
+{
   "type": "#page.annotation",
-  "description": "Create Online Meeting",
+  "description": "Create onlineMeeting",
   "keywords": "",
   "section": "documentation",
-  "tocPath": ""
-}-->
+  "tocPath": "",
+  "suppressions": [
+  ]
+}
+-->
