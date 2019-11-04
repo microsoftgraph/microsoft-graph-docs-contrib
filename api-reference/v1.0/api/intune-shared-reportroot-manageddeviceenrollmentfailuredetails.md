@@ -1,9 +1,10 @@
 ---
 title: "managedDeviceEnrollmentFailureDetails function"
 description: "Not yet documented"
-author: "tfitzmac"
+author: "davidmu1"
 localization_priority: Normal
 ms.prod: "intune"
+doc_type: apiPageType
 ---
 
 # managedDeviceEnrollmentFailureDetails function
@@ -75,6 +76,7 @@ Content-Length: 123
   }
 }
 ```
+
 
 
 

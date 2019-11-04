@@ -1,9 +1,10 @@
 ---
 title: "Update windowsDefenderAdvancedThreatProtectionConfiguration"
 description: "Update the properties of a windowsDefenderAdvancedThreatProtectionConfiguration object."
-author: "tfitzmac"
+author: "davidmu1"
 localization_priority: Normal
 ms.prod: "Intune"
+doc_type: apiPageType
 ---
 
 # Update windowsDefenderAdvancedThreatProtectionConfiguration
@@ -95,6 +96,7 @@ Content-Length: 439
   "enableExpeditedTelemetryReporting": true
 }
 ```
+
 
 
 

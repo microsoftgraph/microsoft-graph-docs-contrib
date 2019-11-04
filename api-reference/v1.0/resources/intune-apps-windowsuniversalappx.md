@@ -1,9 +1,10 @@
 ---
 title: "windowsUniversalAppX resource type"
 description: "Contains properties and inherited properties for Windows Universal AppX Line Of Business apps."
-author: "tfitzmac"
+author: "davidmu1"
 localization_priority: Normal
 ms.prod: "Intune"
+doc_type: resourcePageType
 ---
 
 # windowsUniversalAppX resource type
@@ -107,6 +108,7 @@ Here is a JSON representation of the resource.
   "identityVersion": "String"
 }
 ```
+
 
 
 

@@ -1,9 +1,10 @@
 ---
 title: "Create termsAndConditionsAssignment"
 description: "Create a new termsAndConditionsAssignment object."
-author: "tfitzmac"
+author: "davidmu1"
 localization_priority: Normal
 ms.prod: "Intune"
+doc_type: apiPageType
 ---
 
 # Create termsAndConditionsAssignment
@@ -83,6 +84,7 @@ Content-Length: 217
   }
 }
 ```
+
 
 
 

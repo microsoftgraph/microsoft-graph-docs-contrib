@@ -1,9 +1,10 @@
 ---
 title: "Update managedDeviceMobileAppConfigurationAssignment"
 description: "Update the properties of a managedDeviceMobileAppConfigurationAssignment object."
-author: "tfitzmac"
+author: "davidmu1"
 localization_priority: Normal
 ms.prod: "Intune"
+doc_type: apiPageType
 ---
 
 # Update managedDeviceMobileAppConfigurationAssignment
@@ -83,6 +84,7 @@ Content-Length: 234
   }
 }
 ```
+
 
 
 

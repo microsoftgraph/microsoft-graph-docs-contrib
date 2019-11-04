@@ -1,9 +1,10 @@
 ---
 title: "Create user"
 description: "Create a new user object."
-author: "tfitzmac"
+author: "davidmu1"
 localization_priority: Normal
 ms.prod: "intune"
+doc_type: apiPageType
 ---
 
 # Create user
@@ -84,6 +85,7 @@ Content-Length: 95
   "id": "d36894ae-94ae-d368-ae94-68d3ae9468d3"
 }
 ```
+
 
 
 

@@ -1,10 +1,11 @@
 ---
 author: JeremyKelley
-ms.author: JeremyKelley
+description: "Update the properties on a listItem."
 ms.date: 09/11/2017
 title: Update a record in a SharePoint list
 localization_priority: Normal
 ms.prod: "sharepoint"
+doc_type: apiPageType
 ---
 # Update an item in a list
 
@@ -27,7 +28,7 @@ One of the following permissions is required to call this API. To learn more, in
 <!-- { "blockType": "ignored" } -->
 
 ```http
-PATCH https://graph.microsoft.com/beta/sites/{site-id}/lists/{list-id}/items/{item-id}/fields
+PATCH /sites/{site-id}/lists/{list-id}/items/{item-id}/fields
 ```
 
 ## Optional request headers
@@ -46,6 +47,8 @@ In the request body, supply a JSON representation of a [fieldValueSet][] specify
 Here is an example that updates the Color and Quantity fields of the list item with new values.
 All other values on the listItem are left alone. 
 
+
+# [HTTP](#tab/http)
 <!-- { "blockType": "request", "name": "create-listitem", "scopes": "sites.readwrite.all" } -->
 
 ```json
@@ -57,6 +60,20 @@ Content-Type: application/json
     "Quantity": 934
 }
 ```
+# [C#](#tab/csharp)
+[!INCLUDE [sample-code](../includes/snippets/csharp/create-listitem-csharp-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [JavaScript](#tab/javascript)
+[!INCLUDE [sample-code](../includes/snippets/javascript/create-listitem-javascript-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Objective-C](#tab/objc)
+[!INCLUDE [sample-code](../includes/snippets/objc/create-listitem-objc-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+---
+
 
 ## Response
 
@@ -74,18 +91,6 @@ Content-type: application/json
   "Quantity": 934
 }
 ```
-#### SDK sample code
-# [C#](#tab/cs)
-[!INCLUDE [sample-code](../includes/create-listitem-Cs-snippets.md)]
-
-# [Javascript](#tab/javascript)
-[!INCLUDE [sample-code](../includes/create-listitem-Javascript-snippets.md)]
-
-# [Objective-C](#tab/objective-c)
-[!INCLUDE [sample-code](../includes/create-listitem-Objective-C-snippets.md)]
----
-
-[!INCLUDE [sdk-documentation](../includes/snippets_sdk_documentation_link.md)]
 
 [fieldValueSet]: ../resources/fieldvalueset.md
 [listItem]: ../resources/listitem.md
@@ -98,9 +103,6 @@ Content-type: application/json
   "section": "documentation",
   "tocPath": "ListItem/Update",
   "suppressions": [
-    "Error: /api-reference/beta/api/listitem-update.md:\r\n      BookmarkMissing: '[#tab/objective-c](Objective-C)'. Did you mean: #objective-c (score: 4)",
-    "Error: /api-reference/beta/api/listitem-update.md:\r\n      BookmarkMissing: '[#tab/cs](C#)'. Did you mean: #c (score: 5)",
-    "Error: /api-reference/beta/api/listitem-update.md:\r\n      BookmarkMissing: '[#tab/javascript](Javascript)'. Did you mean: #javascript (score: 4)"
   ]
 }
 -->

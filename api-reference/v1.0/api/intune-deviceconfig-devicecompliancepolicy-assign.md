@@ -1,9 +1,10 @@
 ---
 title: "assign action"
 description: "Not yet documented"
-author: "tfitzmac"
+author: "davidmu1"
 localization_priority: Normal
 ms.prod: "Intune"
+doc_type: apiPageType
 ---
 
 # assign action
@@ -92,6 +93,7 @@ Content-Length: 274
   ]
 }
 ```
+
 
 
 

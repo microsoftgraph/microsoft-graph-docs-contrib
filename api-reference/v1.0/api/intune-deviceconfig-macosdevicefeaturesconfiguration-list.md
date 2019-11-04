@@ -1,9 +1,10 @@
 ---
 title: "List macOSDeviceFeaturesConfigurations"
 description: "List properties and relationships of the macOSDeviceFeaturesConfiguration objects."
-author: "tfitzmac"
+author: "davidmu1"
 localization_priority: Normal
 ms.prod: "Intune"
+doc_type: apiPageType
 ---
 
 # List macOSDeviceFeaturesConfigurations
@@ -71,6 +72,7 @@ Content-Length: 403
   ]
 }
 ```
+
 
 
 

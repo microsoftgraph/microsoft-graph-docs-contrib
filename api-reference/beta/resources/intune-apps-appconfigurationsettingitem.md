@@ -4,6 +4,7 @@ description: "Contains properties for App configuration setting item."
 author: "rolyon"
 localization_priority: Normal
 ms.prod: "Intune"
+doc_type: resourcePageType
 ---
 
 # appConfigurationSettingItem resource type
@@ -39,8 +40,6 @@ Here is a JSON representation of the resource.
   "appConfigKeyValue": "String"
 }
 ```
-
-
 
 
 

@@ -4,6 +4,7 @@ description: "Contains properties for the installation state of a mobile app for
 author: "rolyon"
 localization_priority: Normal
 ms.prod: "Intune"
+doc_type: resourcePageType
 ---
 
 # mobileAppInstallStatus resource type
@@ -43,7 +44,7 @@ Contains properties for the installation state of a mobile app for a device.
 ## Relationships
 |Relationship|Type|Description|
 |:---|:---|:---|
-|app|[mobileApp](../resources/intune-apps-mobileapp.md)|The navigation link to the mobile app.|
+|app|[mobileApp](../resources/intune-shared-mobileapp.md)|The navigation link to the mobile app.|
 
 ## JSON Representation
 Here is a JSON representation of the resource.
@@ -71,8 +72,6 @@ Here is a JSON representation of the resource.
   "displayVersion": "String"
 }
 ```
-
-
 
 
 

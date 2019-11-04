@@ -1711,11 +1711,6 @@
             "redirect_document_id": true
         },
         {
-            "source_path": "api-reference\\beta\\api\\educationsubmission_update.md",
-            "redirect_url": "/graph/api/educationsubmission-update?view=graph-rest-beta",
-            "redirect_document_id": true
-        },
-        {
             "source_path": "api-reference\\beta\\api\\educationsubmittedsubmissionresource_get.md",
             "redirect_url": "/graph/api/educationsubmittedsubmissionresource-get?view=graph-rest-beta",
             "redirect_document_id": true
@@ -26734,6 +26729,21 @@
             "source_path": "concepts\\permissions_reference.md",
             "redirect_url": "/graph/permissions-reference",
             "redirect_document_id": true
+        },
+        {
+            "source_path": "concepts/security-siemintegration.md",
+            "redirect_url": "/graph/security-integration",
+            "redirect_document_id": true
+        },
+        {
+            "source_path": "concepts/security-splunk-siemintegration.md",
+            "redirect_url": "/graph/security-integration",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "concepts/security-qradar-siemintegration.md",
+            "redirect_url": "/graph/security-integration",
+            "redirect_document_id": false
         },
         {
             "source_path": "concepts\\query_parameters.md",

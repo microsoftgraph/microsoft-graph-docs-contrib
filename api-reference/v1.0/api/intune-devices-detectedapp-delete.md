@@ -1,9 +1,10 @@
 ---
 title: "Delete detectedApp"
 description: "Deletes a detectedApp."
-author: "tfitzmac"
+author: "davidmu1"
 localization_priority: Normal
 ms.prod: "Intune"
+doc_type: apiPageType
 ---
 
 # Delete detectedApp
@@ -55,6 +56,7 @@ Here is an example of the response. Note: The response object shown here may be 
 ``` http
 HTTP/1.1 204 No Content
 ```
+
 
 
 

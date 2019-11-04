@@ -1,9 +1,10 @@
 ---
 title: "Update mobileAppCategory"
 description: "Update the properties of a mobileAppCategory object."
-author: "tfitzmac"
+author: "davidmu1"
 localization_priority: Normal
 ms.prod: "Intune"
+doc_type: apiPageType
 ---
 
 # Update mobileAppCategory
@@ -82,6 +83,7 @@ Content-Length: 212
   "lastModifiedDateTime": "2017-01-01T00:00:35.1329464-08:00"
 }
 ```
+
 
 
 

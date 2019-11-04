@@ -1,9 +1,10 @@
 ---
 title: "windows10TeamGeneralConfiguration resource type"
 description: "This topic provides descriptions of the declared methods, properties and relationships exposed by the windows10TeamGeneralConfiguration resource."
-author: "tfitzmac"
+author: "davidmu1"
 localization_priority: Normal
 ms.prod: "Intune"
+doc_type: resourcePageType
 ---
 
 # windows10TeamGeneralConfiguration resource type
@@ -103,6 +104,7 @@ Here is a JSON representation of the resource.
   "welcomeScreenMeetingInformation": "String"
 }
 ```
+
 
 
 

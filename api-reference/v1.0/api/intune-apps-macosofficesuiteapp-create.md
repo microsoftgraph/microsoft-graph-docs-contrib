@@ -1,9 +1,10 @@
 ---
 title: "Create macOSOfficeSuiteApp"
 description: "Create a new macOSOfficeSuiteApp object."
-author: "tfitzmac"
+author: "davidmu1"
 localization_priority: Normal
 ms.prod: "Intune"
+doc_type: apiPageType
 ---
 
 # Create macOSOfficeSuiteApp
@@ -121,6 +122,7 @@ Content-Length: 756
   "publishingState": "processing"
 }
 ```
+
 
 
 

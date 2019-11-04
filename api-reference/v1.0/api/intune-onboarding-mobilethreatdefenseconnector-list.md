@@ -1,9 +1,10 @@
 ---
 title: "List mobileThreatDefenseConnectors"
 description: "List properties and relationships of the mobileThreatDefenseConnector objects."
-author: "tfitzmac"
+author: "davidmu1"
 localization_priority: Normal
 ms.prod: "Intune"
+doc_type: apiPageType
 ---
 
 # List mobileThreatDefenseConnectors
@@ -74,6 +75,7 @@ Content-Length: 536
   ]
 }
 ```
+
 
 
 

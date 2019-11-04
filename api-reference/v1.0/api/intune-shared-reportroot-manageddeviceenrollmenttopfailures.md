@@ -1,9 +1,10 @@
 ---
 title: "managedDeviceEnrollmentTopFailures function"
 description: "Not yet documented"
-author: "tfitzmac"
+author: "davidmu1"
 localization_priority: Normal
 ms.prod: "intune"
+doc_type: apiPageType
 ---
 
 # managedDeviceEnrollmentTopFailures function
@@ -71,6 +72,7 @@ Content-Length: 123
   }
 }
 ```
+
 
 
 

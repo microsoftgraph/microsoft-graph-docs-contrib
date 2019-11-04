@@ -1,9 +1,10 @@
 ---
 title: "Get managedApp"
 description: "Read properties and relationships of the managedApp object."
-author: "tfitzmac"
+author: "davidmu1"
 localization_priority: Normal
 ms.prod: "Intune"
+doc_type: apiPageType
 ---
 
 # Get managedApp
@@ -86,6 +87,7 @@ Content-Length: 879
   }
 }
 ```
+
 
 
 

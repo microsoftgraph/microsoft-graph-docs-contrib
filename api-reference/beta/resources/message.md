@@ -4,6 +4,7 @@ description: "A message in a mailbox folder."
 author: "angelgolfer-ms"
 localization_priority: Priority
 ms.prod: "outlook"
+doc_type: resourcePageType
 ---
 
 # message resource type
@@ -11,6 +12,8 @@ ms.prod: "outlook"
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 A message in a mailbox folder.
+
+The maximum total number of recipients included in the **toRecipients**, **ccRecipients**, and **bccRecipients** properties for a single email message sent from an Exchange Online mailbox is 500. For more information, see [sending limits](https://docs.microsoft.com/en-us/office365/servicedescriptions/exchange-online-service-description/exchange-online-limits#sending-limits).
 
 This resource supports:
 
@@ -48,7 +51,7 @@ Here is a JSON representation of the resource
   "ccRecipients": [{"@odata.type": "microsoft.graph.recipient"}],
   "changeKey": "string",
   "conversationId": "string",
-  "conversationIndex": "string (binary)",
+  "conversationIndex": "String (binary)",
   "createdDateTime": "String (timestamp)",
   "flag": {"@odata.type": "microsoft.graph.followupFlag"},
   "from": {"@odata.type": "microsoft.graph.recipient"},
@@ -96,7 +99,7 @@ Here is a JSON representation of the resource
 |ccRecipients|[recipient](recipient.md) collection|The Cc: recipients for the message.|
 |changeKey|String|The version of the message.|
 |conversationId|String|The ID of the conversation the email belongs to.|
-|conversationIndex|Binary|The Index of the conversation the email belongs to.|
+|conversationIndex|Edm.Binary|The Index of the conversation the email belongs to.|
 |createdDateTime|DateTimeOffset|The date and time the message was created.|
 |flag|[followupFlag](followupflag.md)|The flag value that indicates the status, start date, due date, or completion date for the message.|
 |from|[recipient](recipient.md)|The mailbox owner and sender of the message. The value must correspond to the actual mailbox used. Find out more about [setting the from and sender properties](/graph/outlook-create-send-messages#setting-the-from-and-sender-properties) of a message.|

@@ -1,9 +1,10 @@
 ---
 title: "Update deviceEnrollmentLimitConfiguration"
 description: "Update the properties of a deviceEnrollmentLimitConfiguration object."
-author: "tfitzmac"
+author: "davidmu1"
 localization_priority: Normal
 ms.prod: "Intune"
+doc_type: apiPageType
 ---
 
 # Update deviceEnrollmentLimitConfiguration
@@ -95,6 +96,7 @@ Content-Length: 377
   "limit": 5
 }
 ```
+
 
 
 

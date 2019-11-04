@@ -4,6 +4,7 @@ description: "Invalidates all the user's refresh tokens issued to applications (
 localization_priority: Normal
 author: "dkershaw10"
 ms.prod: "microsoft-identity-platform"
+doc_type: apiPageType
 ---
 
 # user: revokeSignInSessions
@@ -36,6 +37,7 @@ POST /users/{id | userPrincipalName}/revokeSignInSessions
 | Header       | Value |
 |:---------------|:--------|
 | Authorization  | Bearer {token}. Required.  |
+| Content-Type  | application/json  |
 
 ## Request body
 This operation has no request content.
@@ -44,10 +46,15 @@ This operation has no request content.
 
 If successful, this method returns a `204 No Content` response code.
 
+>[!NOTE]
+>This API has a [known issue](/graph/known-issues#revoke-sign-in-sessions-returns-wrong-HTTP-code). It returns a different HTTP response code.
+
 ## Example
 The following example shows how to call this API.
 
 ##### Request
+
+# [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "user_revokesigninsessionss"
@@ -55,6 +62,24 @@ The following example shows how to call this API.
 ```http
 POST https://graph.microsoft.com/v1.0/me/revokeSignInSessions
 ```
+# [C#](#tab/csharp)
+[!INCLUDE [sample-code](../includes/snippets/csharp/user-revokesigninsessionss-csharp-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [JavaScript](#tab/javascript)
+[!INCLUDE [sample-code](../includes/snippets/javascript/user-revokesigninsessionss-javascript-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Objective-C](#tab/objc)
+[!INCLUDE [sample-code](../includes/snippets/objc/user-revokesigninsessionss-objc-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Java](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/user-revokesigninsessionss-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+---
+
 
 ##### Response
 <!-- {
@@ -75,8 +100,6 @@ HTTP/1.1 204 No Content
   "section": "documentation",
   "tocPath": "",
   "suppressions": [
-    "Error: /api-reference/beta/api/user-revokesigninsessions.md:\r\n      BookmarkMissing: '[#tab/cs](C#)'. Did you mean: #c (score: 5)",
-    "Error: /api-reference/beta/api/user-revokesigninsessions.md:\r\n      BookmarkMissing: '[#tab/javascript](Javascript)'. Did you mean: #javascript (score: 4)"
   ]
 }
 -->

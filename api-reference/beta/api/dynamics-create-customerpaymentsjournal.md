@@ -6,6 +6,7 @@ documentationcenter: ''
 author: SusanneWindfeldPedersen
 localization_priority: Normal
 ms.prod: "dynamics-365-business-central"
+doc_type: apiPageType
 ---
 
 # Create customerPaymentJournals
@@ -23,7 +24,7 @@ One of the following permissions is required to call this API. To learn more, in
 ## HTTP request
 
 ```
-POST /financials/companies('{id}')/customerPaymentJournals('{id}')
+POST /financials/companies/{id}/customerPaymentJournals/{id}
 ```
 
 ## Optional query parameters
@@ -48,7 +49,7 @@ If successful, this method returns ```201 Created``` response code and a **custo
 Here is an example of a request.
 
 ```json
-POST https://graph.microsoft.com/beta/financials/companies('{id}')/customerPaymentJournals
+POST https://graph.microsoft.com/beta/financials/companies/{id}/customerPaymentJournals
 Content-type: application/json
 
 ```json

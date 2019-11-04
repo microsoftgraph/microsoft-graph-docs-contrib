@@ -32,13 +32,13 @@ You can create a provider at any time. We recommend that you create the provider
 
 The `Providers` global variable exposes the following properties and functions
 
-   - `globalProvider : IProvider`
+- `globalProvider : IProvider`
 
 Set this property to a provider that you want to use globally. All components use this property to get a reference to the provider. Setting this property will fire the `onProvidersChanged` event.
 
-   - `function onProviderUpdated(callbackFunction)`
+- `function onProviderUpdated(callbackFunction)`
 
- The `callbackFunction` function will be called when a provider is changed or when the state of a provider changes. A `ProvidersChangedState` enum value will be passed to the function to indicate what updated.
+The `callbackFunction` function will be called when a provider is changed or when the state of a provider changes. A `ProvidersChangedState` enum value will be passed to the function to indicate what updated.
 
 ## Implement your own provider
 
@@ -48,6 +48,32 @@ The toolkit provides two ways to create new providers:
 - Extend the `IProvider` abstract class
 
 Read more about each one in the [custom providers](./providers/custom.md) documentation.
+
+## Using multiple providers
+
+In some scenarios your application will run in a different environment and require a different provider. For example, the app might run as both a web application and a Microsoft Teams tab and you might need to use the MsalProvider and the TeamsProvider. For this scenario, all provider components have the `depends-on` attribute to create a fallback chain, as shown in the following example.
+
+```html
+<mgt-teams-provider
+  client-id="[CLIENT-ID]"
+  auth-popup-url="auth.html" ></mgt-teams-provider>
+
+<mgt-msal-provider
+  client-id="[CLIENT-ID]"
+  depends-on="mgt-teams-provider" ></mgt-msal-provider>
+```
+
+In this scenario, the MsalProvider will only be used if the TeamsProvider is not available in the current environment.
+
+To accomplish the same in code, you can use the `isAvailable` property on the provider, as shown.
+
+```ts
+if (TeamsProvider.isAvailable) {
+    Providers.globalProvider = new TeamsProvider(teamsConfig);
+} else {
+    Providers.globalProvider = new MsalProvider(msalConfig)
+}
+```
 
 ## Making your own calls to Microsoft Graph
 

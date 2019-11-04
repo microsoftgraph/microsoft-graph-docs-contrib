@@ -1,9 +1,10 @@
 ---
 title: "Update iosUpdateConfiguration"
 description: "Update the properties of a iosUpdateConfiguration object."
-author: "tfitzmac"
+author: "davidmu1"
 localization_priority: Normal
 ms.prod: "Intune"
+doc_type: apiPageType
 ---
 
 # Update iosUpdateConfiguration
@@ -105,6 +106,7 @@ Content-Length: 497
   "utcTimeOffsetInMinutes": 6
 }
 ```
+
 
 
 

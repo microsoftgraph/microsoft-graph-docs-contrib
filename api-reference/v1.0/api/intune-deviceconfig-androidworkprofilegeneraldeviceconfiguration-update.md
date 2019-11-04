@@ -1,9 +1,10 @@
 ---
 title: "Update androidWorkProfileGeneralDeviceConfiguration"
 description: "Update the properties of a androidWorkProfileGeneralDeviceConfiguration object."
-author: "tfitzmac"
+author: "davidmu1"
 localization_priority: Normal
 ms.prod: "Intune"
+doc_type: apiPageType
 ---
 
 # Update androidWorkProfileGeneralDeviceConfiguration
@@ -191,6 +192,7 @@ Content-Length: 2003
   "securityRequireVerifyApps": true
 }
 ```
+
 
 
 

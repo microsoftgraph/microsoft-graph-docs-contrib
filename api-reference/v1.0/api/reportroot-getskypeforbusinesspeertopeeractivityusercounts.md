@@ -4,13 +4,14 @@ description: "Get usage trends on the number of unique users and type of peer-to
 localization_priority: Normal
 ms.prod: "reports"
 author: "pranoychaudhuri"
+doc_type: apiPageType
 ---
 
 # reportRoot: getSkypeForBusinessPeerToPeerActivityUserCounts
 
 Get usage trends on the number of unique users and type of peer-to-peer sessions held in your organization. Types of sessions include IM, audio, video, application sharing, and file transfers in peer-to-peer sessions.
 
-> **Note:** For details about different report views and names, see [Office 365 Reports - Skype for Business peer-to-peer activity](https://support.office.com/client/Skype-for-Business-Online-peertopeer-activity-d3b2d569-4ee9-44b8-92bf-d518142f0713).
+> **Note:** For details about different report views and names, see [Office 365 Reports - Skype for Business peer-to-peer activity](https://docs.microsoft.com/skypeforbusiness/skype-for-business-online-reporting/peer-to-peer-activity-report).
 
 ## Permissions
 
@@ -23,6 +24,7 @@ One of the following permissions is required to call this API. To learn more, in
 | Application                            | Reports.Read.All                         |
 
 ## HTTP request
+
 
 <!-- { "blockType": "ignored" } --> 
 
@@ -68,15 +70,35 @@ The CSV file has the following headers for columns.
 
 The following is an example of the request.
 
+
+# [HTTP](#tab/http)
 <!--{
   "blockType": "request",
   "isComposable": true,
   "name": "reportroot_getskypeforbusinesspeertopeeractivityusercounts"
 }-->
 
-```http
+```msgraph-interactive
 GET https://graph.microsoft.com/v1.0/reports/getSkypeForBusinessPeerToPeerActivityUserCounts(period='D7')
 ```
+# [C#](#tab/csharp)
+[!INCLUDE [sample-code](../includes/snippets/csharp/reportroot-getskypeforbusinesspeertopeeractivityusercounts-csharp-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [JavaScript](#tab/javascript)
+[!INCLUDE [sample-code](../includes/snippets/javascript/reportroot-getskypeforbusinesspeertopeeractivityusercounts-javascript-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Objective-C](#tab/objc)
+[!INCLUDE [sample-code](../includes/snippets/objc/reportroot-getskypeforbusinesspeertopeeractivityusercounts-objc-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Java](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/reportroot-getskypeforbusinesspeertopeeractivityusercounts-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+---
+
 
 #### Response
 
@@ -93,18 +115,6 @@ HTTP/1.1 302 Found
 Content-Type: text/plain
 Location: https://reports.office.com/data/download/JDFKdf2_eJXKS034dbc7e0t__XDe
 ```
-#### SDK sample code
-# [C#](#tab/cs)
-[!INCLUDE [sample-code](../includes/reportroot_getskypeforbusinesspeertopeeractivityusercounts-Cs-snippets.md)]
-
-# [Javascript](#tab/javascript)
-[!INCLUDE [sample-code](../includes/reportroot_getskypeforbusinesspeertopeeractivityusercounts-Javascript-snippets.md)]
-
-# [Objective-C](#tab/objective-c)
-[!INCLUDE [sample-code](../includes/reportroot_getskypeforbusinesspeertopeeractivityusercounts-Objective-C-snippets.md)]
----
-
-[!INCLUDE [sdk-documentation](../includes/snippets_sdk_documentation_link.md)]
 
 Follow the 302 redirection and the CSV file that downloads will have the following schema.
 
@@ -125,8 +135,5 @@ Report Refresh Date,Report Date,Report Period,IM,Audio,Video,App Sharing,File Tr
   "section": "documentation",
   "tocPath": "",
   "suppressions": [
-    "Error: /api-reference/v1.0/api/reportroot-getskypeforbusinesspeertopeeractivityusercounts.md:\r\n      BookmarkMissing: '[#tab/objective-c](Objective-C)'. Did you mean: #objective-c (score: 4)",
-    "Error: /api-reference/v1.0/api/reportroot-getskypeforbusinesspeertopeeractivityusercounts.md:\r\n      BookmarkMissing: '[#tab/cs](C#)'. Did you mean: #c (score: 5)",
-    "Error: /api-reference/v1.0/api/reportroot-getskypeforbusinesspeertopeeractivityusercounts.md:\r\n      BookmarkMissing: '[#tab/javascript](Javascript)'. Did you mean: #javascript (score: 4)"
   ]
 }-->

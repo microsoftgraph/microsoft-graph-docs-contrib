@@ -1,9 +1,10 @@
 ---
 title: "deviceConfiguration resource type"
 description: "Device Configuration."
-author: "tfitzmac"
+author: "davidmu1"
 localization_priority: Normal
 ms.prod: "Intune"
+doc_type: resourcePageType
 ---
 
 # deviceConfiguration resource type
@@ -58,6 +59,7 @@ Here is a JSON representation of the resource.
   "version": 1024
 }
 ```
+
 
 
 

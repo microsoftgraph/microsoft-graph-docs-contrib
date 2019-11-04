@@ -7,86 +7,125 @@ localization_priority: Priority
 
 # What's new in Microsoft Graph
 
-Did you know that some new features in Microsoft Graph originate as popular requests from the developer community? 
+Did you know some new features in Microsoft Graph originate as popular requests from the developer community? 
 
-Let's walk through the typical life cycle of a new feature, what's currently new in Microsoft Graph, and how you can [share your ideas](#want-to-stay-in-the-loop).
+The Microsoft Graph team regularly evaluates customer needs and releases new features in the following order:
 
-## Life cycle of a feature
+1. Debut in **_preview_** status. Any related REST API updates are in the beta endpoint (`https://graph.microsoft.com/beta`).  
 
-Microsoft Graph service owners periodically evaluate feature ideas and customer needs, and select new scenarios to support. To build a new feature, they may add or update REST APIs. They may keep the same API syntax and extend feature behavior. Or, they may offer a better learnng or development experience.
+2. Promoted to **_general availability_ (GA)** status, if sufficient feedback indicates viability. Any related REST API updates are added to the v1.0 endpoint (`https://graph.microsoft.com/v1.0`). 
 
-In most cases, service owners release new features in the following order:
-
-1. Debut in **_preview_** status, which means the feature behavior may change without notice. The owner exposes any related REST API additions or updates in the beta endpoint (`https://graph.microsoft.com/beta`). Do not use preview features, including their APIs, in production apps.
-
-2. If a service owner receives sufficient feedback and considers the feature viable, the owner promotes the feature to **_general availability_ (GA)** status. The owner adds any related API additions or updates to the v1.0 endpoint (`https://graph.microsoft.com/v1.0`) as well. You can use the feature (including its APIs) in GA status in production apps.
-
-The following sections highlight what's new in May and June, 2019. For details of API updates, see the [May](changelog.md#may-2019) and [June](changelog.md#june-2019) sections of the changelog. 
-
-## New and generally available (released May - June, 2019)
-
-### Calendar, mail, and personal contacts
-Exchange administrators can grant application permissions to an app and [limit the app to access only a subset of mailboxes in an ](auth-limit-mailbox-access.md), instead of the default which is access to all mailboxes in the organization. Such restricted access would apply to any application permissions granted to the app for [calendars](permissions-reference.md#calendars-permissions), [contacts](permissions-reference.md#contacts-permissions), and [mail and mailbox settings](permissions-reference.md#mail-permissions). See related [blog announcement](https://developer.microsoft.com/en-us/graph/blogs/scoping-microsoft-graph-application-permissions-to-specific-exchange-online-mailboxes/).
-
-### Example code snippets
-In addition to C# and JavaScript, there are now Objective-C code snippets in all API topics in the v1.0 and beta references. See the Objective-C example for [getting an event](/graph/api/event-get?view=graph-rest-1.0&tabs=objective-c#example).
-
-### Mail
-Use [mail search folders](/graph/api/resources/mailsearchfolder?view=graph-rest-1.0) API to search messages and access Outlook email search results. See related [blog announcement](https://developer.microsoft.com/en-us/graph/blogs/mail-search-folder-support-for-microsoft-graph-apis/).
-
-### Postman
-As an alternative to Graph Explorer, try the Microsoft Graph API on the [Microsoft Graph Postman collection](use-postman.md) to learn the API behavior and speed up app development.
-
-### Tutorials
-Try the new [tutorial to build a Java console app](/graph/tutorials/java) to get information about a user calendar.
-
-### User
-Administrators or users can [revoke](/graph/api/user-revokesigninsessions?view=graph-rest-1.0) all issued refresh tokens for a user. This is usually used to prevent apps on a lost or stolen device from accessing an organization's data.
+Below, see highlights of what's new in Microsoft Graph, and how you can [share your ideas](#want-to-stay-in-the-loop). For a complete list of API updates, see the [November](changelog.md#november-2019) and [October](changelog.md#october-2019) sections of the API changelog. 
 
 
-## New in preview (released May - June, 2019)
+## November 2019: New and generally available
+
+### Identity and access
+
+Register [applications](/graph/api/resources/application?view=graph-rest-1.0) that authenticate with Azure Active Directory (Azure AD).
+
+
+## November 2019: New in preview
 
 > [!IMPORTANT]
 > Features, including APIs and tools, in _preview_ status may change without notice, and some may never be promoted to GA status. Do not use them in production apps.
 
-### Devices and apps
-- Intune [May](changelog.md#may-2019) updates 
-- Intune [June](changelog.md#june-2019) updates
+### Calendar
 
-### Education
-- Delta query for [educationSchool](/graph/api/resources/educationschool?view=graph-rest-beta).
-- Delta query and property additions for [educationClass](/graph/api/resources/educationclass?view=graph-rest-beta) and [educationUser](/graph/api/resources/educationuser?view=graph-rest-beta).
+[Set properties](/graph/api/place-update?view=graph-rest-beta) for the rich location types of [room](/graph/api/resources/room?view=graph-rest-beta) and [room list](/graph/api/resources/roomlist?view=graph-rest-beta).
 
-### Group
-Get [sensitivity labels](/graph/api/resources/assignedlabel?view=graph-rest-beta) to help protect sensitive data of an Office 365 group and meet compliance policies. These labels are [assignedLabel](/graph/api/resources/assignedlabel?view=graph-rest-beta) objects, published by administrators in Microsoft 365 Security & Compliance Center, as part of Microsoft Information Protection capabilities. 
+
+### People and workplace intelligence
+
+Debut of the [profile](/graph/api/resources/profile?view=graph-rest-beta) resource which is a rich representation of the next generation of people entities in Microsoft services. This resource relates to common and practical people attributes, including information for any meaningful dates such as [anniversaries](/graph/api/resources/personanniversary?view=graph-rest-beta), [education](/graph/api/resources/educationalactivity?view=graph-rest-beta), [employment positions](/graph/api/resources/workposition?view=graph-rest-beta), [interests](/graph/api/resources/personinterest?view=graph-rest-beta), [language](/graph/api/resources/languageproficiency?view=graph-rest-beta) and [skill](/graph/api/resources/skillproficiency?view=graph-rest-beta) proficiencies, [project participation](/graph/api/resources/projectparticipation?view=graph-rest-beta), [web site association](/graph/api/resources/personwebsite?view=graph-rest-beta), and other [account](/graph/api/resources/useraccountinformation?view=graph-rest-beta) and contact information.
+
+
+### Search
+Debut of the [Microsoft Search API](search-concept-overview.md) which allows app users to get more up-to-date, personalized, and relevant search results powered by Microsoft Graph. Use the [query](/graph/api/search-query?view=graph-rest-beta) capability that by default, searches Outlook messages and events, and OneDrive and SharePoint files in the Microsoft cloud. Use [connectors](/microsoftsearch/connectors-overview), available in the [Microsoft Graph connectors gallery](/microsoftsearch/connectors-gallery), to include search data outside of the Microsoft cloud. Alternatively, [build your own connectors](/graph/api/resources/indexing-api-overview?view=graph-rest-beta#common-use-cases), index external custom items and files, and query specific external data sources.
+
+
+## October 2019: New and generally available
 
 ### Identity and access
-- Get an instance of an [application](/graph/api/resources/applicationtemplate?view=graph-rest-beta), or add an instance from the Azure AD application gallery into your directory as a template.
-- Get a list of all [provisioning events](/graph/api/resources/provisioningobjectsummary?view=graph-rest-beta) in a tenant.
-- Get information about [detected user or sign-in risks](/graph/api/resources/riskdetection?view=graph-rest-beta) in an Azure AD environment. This risk detection functionality is part of Azure AD Identity Protection.
+- Use [organization contacts](/graph/api/resources/orgcontact?view=graph-rest-1.0) in production apps. Organization contacts are managed by organization administrators, synchronized either from an on-premises Active Directory or from Exchange Online.
+- Configure [certificate-based authentication](https://docs.microsoft.com/azure/active-directory/authentication/active-directory-certificate-based-authentication-get-started) in an [organization](/graph/api/resources/organization?view=graph-rest-1.0).
+- Add and remove [password credentials](/graph/api/resources/passwordcredential?view=graph-rest-1.0) for [applications](/graph/api/resources/application?view=graph-rest-1.0).
 
 ### Mail
-Use [Mail.ReadBasic permission](permissions-reference.md#mail-permissions) in [mailFolder](/graph/api/resources/mailfolder?view=graph-rest-beta) API, and in [change notifications](webhooks.md) for [message](/graph/api/resources/message?view=graph-rest-beta) and **mailFolder**.
+Use the new **message** parameter to update any writeable [message](/graph/api/resources/message?view=graph-rest-1.0) properties when [replying](/graph/api/message-reply?view=graph-rest-1.0) to a message, for example, [adding a recipient to the reply](/graph/api/message-reply#example?view=graph-rest-1.0).
 
-### Microsoft Graph toolkit
-The [Microsoft Graph toolkit](/graph/toolkit/overview) is a set of framework-agnostic web components and helpers that provides convenience to authenticate and access data in Microsoft Graph. Because the Microsoft Graph toolkit is in preview status, use toolkit providers and components in only non-production apps.
+### Microsoft Graph data connect
+Developers and data scientists can now use [tools to translate Office 365 data into Common Data Model format](https://github.com/OfficeDev/MS-Graph-Data-Connect/blob/master/Common-Data-Model/README.md), making it schematically consistent with other Open Data Initiative (ODI)-ready datasets. 
 
-### Sites
-Let users [follow](/graph/api/site-follow?view=graph-rest-beta) or [unfollow](/graph/api/site-unfollow?view=graph-rest-beta) SharePoint sites.
 
-### Teamwork
-Host [images](/graph/api/resources/chatmessagehostedimage?view=graph-rest-beta) in Microsoft Teams [chat messages](/graph/api/resources/chatmessage?view=graph-rest-beta).
-Support [configuring](/graph/api/resources/teamdiscoverysettings?view=graph-rest-beta) how a private team can be discovered.
+### Microsoft Graph SDKs
+- Use chaos handlers in the JavaScript SDK to verify if an app is resilient to server failures that are tricky to initiate.
+- Read about [making API calls using the SDKs](/graph/sdks/create-requests).
 
+### Users
+- [Get](/graph/api/user-get-mailboxsettings?view=graph-rest-1.0) or [set](/graph/api/user-update-mailboxsettings?view=graph-rest-1.0) a user's preferred date and time format [settings for the user's mailbox](/graph/api/resources/mailboxsettings?view=graph-rest-1.0). 
+- Track the date/time of the last password change on a [user](/graph/api/resources/user?view=graph-rest-1.0).
+
+## October 2019: New in preview
+
+> [!IMPORTANT]
+> Features, including APIs and tools, in _preview_ status may change without notice, and some may never be promoted to GA status. Do not use them in production apps.
+
+### Calendar
+- Meeting organizers can [allow invitees to propose alternate meeting times](outlook-calendar-meeting-proposals.md). When receiving a meeting response that includes a proposed alternate time, the organizer can decide to accept the proposal and [update](/graph/api/event-update?view=graph-rest-beta) the meeting time.
+- Programmatic calendar sharing is in closer parity with the Outlook user experience. In addition to tracking the current user's permissions and sharing status for a calendar:
+  - For each [calendar](/graph/api/resources/calendar?view=graph-rest-beta), you can now manage the [permissions](/graph/api/resources/calendarpermission?view=graph-rest-beta) of each user with whom the calendar is shared. 
+  - For each [mailbox](/graph/api/resources/mailboxsettings?view=graph-rest-beta), you can now specify whether a delegate, mailbox owner, or both receive meeting messages and meeting responses. 
+- Additional online meeting support:
+  - For each **calendar**, specify the allowed and the default online meeting providers.
+  - Create or update an [event](/graph/api/resources/event?view=graph-rest-beta) to be available online, and provide details for attendees to join the meeting online. 
+  - In particular, use the new **onlineMeetingProvider** and **onlineMeeting** properties of **event** to set or identify Microsoft Teams as an online meeting provider, a workaround for a [known issue](known-issues.md#onlinemeetingurl-property-support-for-microsoft-teams) with the **onlineMeetingUrl** property.
+
+### Devices and apps
+Intune [October](changelog.md#october-2019) updates access rules for specific scenarios
+
+### Graph Explorer
+Try the [next version of Graph Explorer](https://developer.microsoft.com/graph/graph-explorer/preview) and see handy contextual information such as permissions, access tokens, and SDK code snippets in the new **Permissions**, **Auth**, and **Snippets** tabs. Use the **Preview** slider to switch between the [production](https://developer.microsoft.com/graph/graph-explorer) and new preview version of Graph Explorer.
+
+### Groups
+- Use the **hideFromAddressLists** and **hideFromOutlookClients** properties to control the visibility of a [group](/graph/api/resources/group?view=graph-rest-beta) in certain parts of the Outlook user interface or in an Outlook client.
+- [Assign](/graph/api/group-assignlicense?view=graph-rest-beta) or remove licenses on users in a [group](/graph/api/resources/group?view=graph-rest-beta).
+
+### Identity and access
+- Use [conditional access policies](/graph/api/resources/conditionalaccesspolicy?view=graph-rest-beta) to customize access rules for an organization. These rules consider signals about a user or a device identity, such as user or group membership, IP location, and behaviors such as attempts to access specific applications, and risky sign-in behaviors.
+- Use [entitlement management](/graph/api/resources/entitlementmanagement-root?view=graph-rest-beta) to manage access to groups, applications, and SharePoint Online sites for users in and outside of an organization.
+- Add and remove [password credentials](/graph/api/resources/passwordcredential?view=graph-rest-beta) for [applications](/graph/api/resources/application?view=graph-rest-beta) and [service principals](/graph/api/resources/serviceprincipal?view=graph-rest-beta).
+- Manage Azure AD B2C [trust framework policy keys](/graph/api/resources/trustframeworkkeyset?view=graph-rest-beta).
+- Define Azure AD B2C [user flow](/graph/api/resources/identityuserflow?view=graph-rest-beta) policies for sign in, sign up, combined sign up and sign in, password reset, and profile update.
+- Configure [information protection labels](/graph/api/resources/informationprotectionlabel?view=graph-rest-beta) to classify sensitivity for a user or tenant.
+- Existing apps using APIs for [identity risk events](/graph/api/resources/identityriskevent?view=graph-rest-beta) should transition to those for [risk detection](/graph/api/resources/riskdetection?view=graph-rest-beta) in Azure AD Identity Protection. See the related [blog post](https://developer.microsoft.com/graph/blogs/deprecatation-of-the-identityriskevents-api/) for more details and deprecation timeline.
+
+
+### Mail
+[Attach large files up to 150MB](outlook-large-attachments.md) to a [message](/graph/api/resources/message?view=graph-rest-beta) instance, by creating an [upload session](/graph/api/resources/uploadsession?view=graph-rest-beta), and iteratively uploading ranges of the file until all the bytes of the file have been uploaded. 
+
+### Microsoft Graph Security API
+- Preview integration with RSA NetWitness, ServiceNow, and Splunk, to correlate and synchronize [alerts](/graph/api/resources/security-api-overview?view=graph-rest-beta#alerts), and improve threat protection and response.
+- New triggers added to the [Microsoft Graph security connector](https://docs.microsoft.com/connectors/microsoftgraphsecurity/) and [playbooks](https://docs.microsoft.com/azure/security-center/security-center-playbooks) for Logic Apps and Flow. See [playbook examples](https://github.com/microsoftgraph/security-api-solutions/tree/master/Playbooks).
+- Support for sending [threat indicators](/graph/api/resources/security-api-overview?view=graph-rest-beta#threat-indicators-preview) to Microsoft Defender ATP to block or alert on threats using their own intelligence sources. Integrations with partners like ThreatConnect enable customers to send indicators directly from threat intelligence and automation solutions. 
+
+### Notifications
+- [Create and send notifications](/graph/api/user-post-notifications?view=graph-rest-beta) to all app clients on all device endpoints that a user is signed in to, without having to manage user-delegated permissions.
+- Use [target policy endpoints](/graph/api/resources/targetpolicyendpoints?view=graph-rest-beta) on user [notifications](/graph/api/resources/notification?view=graph-rest-beta) to specifically target notifications for the Windows, iOS, Android, or WebPush platform.
+- Specify a [fall back policy](/graph/api/resources/fallbackpolicy?view=graph-rest-beta) on notifications for iOS endpoints, to send high-priority raw notifications that might not be delivered to devices otherwise due to platform specific restrictions, such as battery saver mode.
+- Use the new light-weight notification SDKs for Windows, iOS, Android, and JavaScript, in place of the [Project Rome SDK](https://github.com/Microsoft/project-rome), to take advantage of an improved authentication model and support for web apps using web push.
+ 
+### PowerShell SDK 
+Developers and IT professionals can note the coming of the [Microsoft Graph Powershell SDK](https://github.com/microsoftgraph/msgraph-sdk-powershell), which will generate modules that contain cmdlets to make Microsoft Graph REST API requests.
 
 ## Want to stay in the loop?
 - Are there scenarios you'd like Microsoft Graph to support? Suggest and vote for new features at [Microsoft Graph User Voice](https://microsoftgraph.uservoice.com/forums/920506-microsoft-graph-feature-requests).
 - Be an active member in the Microsoft Graph community! [Join](https://aka.ms/microsoftgraphcall) the monthly Microsoft Graph community call.
-- Sign up for the [Office 365 developer program](https://developer.microsoft.com/en-us/office/dev-program), get a free Office 365 subscription, and start developing!
+- Sign up for the [Office 365 developer program](https://developer.microsoft.com/office/dev-program), get a free Office 365 subscription, and start developing!
 
 
 ## See also
-- Check out the [Microsoft Graph developer blog](https://developer.microsoft.com/en-us/graph/blogs/) periodically for release announcements and helpful resources.
+- Check out the [Microsoft Graph developer blog](https://developer.microsoft.com/graph/blogs/) periodically for release announcements and helpful resources.
 - Browse details of Microsoft Graph API additions, and API behavior updates in the [changelog](changelog.md).
 - Find [highlights of earlier releases](whats-new-earlier.md).
 - Learn more about [versioning, support, and breaking change policies for Microsoft Graph](versioning-and-support.md).

@@ -1,9 +1,10 @@
 ---
 title: "Get managedAppStatus"
 description: "Read properties and relationships of the managedAppStatus object."
-author: "tfitzmac"
+author: "davidmu1"
 localization_priority: Normal
 ms.prod: "Intune"
+doc_type: apiPageType
 ---
 
 # Get managedAppStatus
@@ -69,6 +70,7 @@ Content-Length: 205
   }
 }
 ```
+
 
 
 

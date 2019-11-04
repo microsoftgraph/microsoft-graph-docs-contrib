@@ -1,9 +1,10 @@
 ---
 title: "Create settingStateDeviceSummary"
 description: "Create a new settingStateDeviceSummary object."
-author: "tfitzmac"
+author: "davidmu1"
 localization_priority: Normal
 ms.prod: "Intune"
+doc_type: apiPageType
 ---
 
 # Create settingStateDeviceSummary
@@ -104,6 +105,7 @@ Content-Length: 409
   "conflictDeviceCount": 3
 }
 ```
+
 
 
 

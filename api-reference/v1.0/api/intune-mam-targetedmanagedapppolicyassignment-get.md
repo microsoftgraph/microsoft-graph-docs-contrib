@@ -1,9 +1,10 @@
 ---
 title: "Get targetedManagedAppPolicyAssignment"
 description: "Read properties and relationships of the targetedManagedAppPolicyAssignment object."
-author: "tfitzmac"
+author: "davidmu1"
 localization_priority: Normal
 ms.prod: "Intune"
+doc_type: apiPageType
 ---
 
 # Get targetedManagedAppPolicyAssignment
@@ -74,6 +75,7 @@ Content-Length: 252
   }
 }
 ```
+
 
 
 

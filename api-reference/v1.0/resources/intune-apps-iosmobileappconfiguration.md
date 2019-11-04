@@ -1,9 +1,10 @@
 ---
 title: "iosMobileAppConfiguration resource type"
 description: "Contains properties, inherited properties and actions for iOS mobile app configurations."
-author: "tfitzmac"
+author: "davidmu1"
 localization_priority: Normal
 ms.prod: "Intune"
+doc_type: resourcePageType
 ---
 
 # iosMobileAppConfiguration resource type
@@ -77,6 +78,7 @@ Here is a JSON representation of the resource.
   ]
 }
 ```
+
 
 
 

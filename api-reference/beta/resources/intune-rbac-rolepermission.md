@@ -4,6 +4,7 @@ description: "Contains the set of ResourceActions determining the allowed and no
 author: "rolyon"
 localization_priority: Normal
 ms.prod: "Intune"
+doc_type: resourcePageType
 ---
 
 # rolePermission resource type
@@ -49,8 +50,6 @@ Here is a JSON representation of the resource.
   ]
 }
 ```
-
-
 
 
 

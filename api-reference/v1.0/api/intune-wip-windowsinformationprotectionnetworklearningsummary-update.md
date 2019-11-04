@@ -1,9 +1,10 @@
 ---
 title: "Update windowsInformationProtectionNetworkLearningSummary"
 description: "Update the properties of a windowsInformationProtectionNetworkLearningSummary object."
-author: "tfitzmac"
+author: "davidmu1"
 localization_priority: Normal
 ms.prod: "Intune"
+doc_type: apiPageType
 ---
 
 # Update windowsInformationProtectionNetworkLearningSummary
@@ -82,6 +83,7 @@ Content-Length: 186
   "deviceCount": 11
 }
 ```
+
 
 
 

@@ -1,9 +1,10 @@
 ---
 title: "deviceComplianceSettingState resource type"
 description: "Device compliance setting State for a given device."
-author: "tfitzmac"
+author: "davidmu1"
 localization_priority: Normal
 ms.prod: "Intune"
+doc_type: resourcePageType
 ---
 
 # deviceComplianceSettingState resource type
@@ -65,6 +66,7 @@ Here is a JSON representation of the resource.
   "complianceGracePeriodExpirationDateTime": "String (timestamp)"
 }
 ```
+
 
 
 

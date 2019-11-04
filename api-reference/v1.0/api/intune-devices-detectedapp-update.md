@@ -1,9 +1,10 @@
 ---
 title: "Update detectedApp"
 description: "Update the properties of a detectedApp object."
-author: "tfitzmac"
+author: "davidmu1"
 localization_priority: Normal
 ms.prod: "Intune"
+doc_type: apiPageType
 ---
 
 # Update detectedApp
@@ -88,6 +89,7 @@ Content-Length: 216
   "deviceCount": 11
 }
 ```
+
 
 
 

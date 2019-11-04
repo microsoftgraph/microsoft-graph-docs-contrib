@@ -4,6 +4,7 @@ description: "Update the properties of a androidDeviceOwnerCompliancePolicy obje
 author: "rolyon"
 localization_priority: Normal
 ms.prod: "Intune"
+doc_type: apiPageType
 ---
 
 # Update androidDeviceOwnerCompliancePolicy
@@ -21,7 +22,7 @@ One of the following permissions is required to call this API. To learn more, in
 |:---|:---|
 |Delegated (work or school account)|DeviceManagementConfiguration.ReadWrite.All|
 |Delegated (personal Microsoft account)|Not supported.|
-|Application|Not supported.|
+|Application|DeviceManagementConfiguration.ReadWrite.All|
 
 ## HTTP Request
 <!-- {
@@ -45,13 +46,17 @@ The following table shows the properties that are required when you create the [
 
 |Property|Type|Description|
 |:---|:---|:---|
-|roleScopeTagIds|String collection|List of Scope Tags for this Entity instance. Inherited from [deviceCompliancePolicy](../resources/intune-deviceconfig-devicecompliancepolicy.md)|
-|id|String|Key of the entity. Inherited from [deviceCompliancePolicy](../resources/intune-deviceconfig-devicecompliancepolicy.md)|
-|createdDateTime|DateTimeOffset|DateTime the object was created. Inherited from [deviceCompliancePolicy](../resources/intune-deviceconfig-devicecompliancepolicy.md)|
-|description|String|Admin provided description of the Device Configuration. Inherited from [deviceCompliancePolicy](../resources/intune-deviceconfig-devicecompliancepolicy.md)|
-|lastModifiedDateTime|DateTimeOffset|DateTime the object was last modified. Inherited from [deviceCompliancePolicy](../resources/intune-deviceconfig-devicecompliancepolicy.md)|
-|displayName|String|Admin provided name of the device configuration. Inherited from [deviceCompliancePolicy](../resources/intune-deviceconfig-devicecompliancepolicy.md)|
-|version|Int32|Version of the device configuration. Inherited from [deviceCompliancePolicy](../resources/intune-deviceconfig-devicecompliancepolicy.md)|
+|roleScopeTagIds|String collection|List of Scope Tags for this Entity instance. Inherited from [deviceCompliancePolicy](../resources/intune-shared-devicecompliancepolicy.md)|
+|id|String|Key of the entity. Inherited from [deviceCompliancePolicy](../resources/intune-shared-devicecompliancepolicy.md)|
+|createdDateTime|DateTimeOffset|DateTime the object was created. Inherited from [deviceCompliancePolicy](../resources/intune-shared-devicecompliancepolicy.md)|
+|description|String|Admin provided description of the Device Configuration. Inherited from [deviceCompliancePolicy](../resources/intune-shared-devicecompliancepolicy.md)|
+|lastModifiedDateTime|DateTimeOffset|DateTime the object was last modified. Inherited from [deviceCompliancePolicy](../resources/intune-shared-devicecompliancepolicy.md)|
+|displayName|String|Admin provided name of the device configuration. Inherited from [deviceCompliancePolicy](../resources/intune-shared-devicecompliancepolicy.md)|
+|version|Int32|Version of the device configuration. Inherited from [deviceCompliancePolicy](../resources/intune-shared-devicecompliancepolicy.md)|
+|deviceThreatProtectionEnabled|Boolean|Require that devices have enabled device threat protection.|
+|deviceThreatProtectionRequiredSecurityLevel|[deviceThreatProtectionLevel](../resources/intune-deviceconfig-devicethreatprotectionlevel.md)|Require Mobile Threat Protection minimum risk level to report noncompliance. Possible values are: `unavailable`, `secured`, `low`, `medium`, `high`, `notSet`.|
+|securityRequireSafetyNetAttestationBasicIntegrity|Boolean|Require the device to pass the SafetyNet basic integrity check.|
+|securityRequireSafetyNetAttestationCertifiedDevice|Boolean|Require the device to pass the SafetyNet certified device check.|
 |osMinimumVersion|String|Minimum Android version.|
 |osMaximumVersion|String|Maximum Android version.|
 |minAndroidSecurityPatchLevel|String|Minimum Android security patch level.|
@@ -63,7 +68,7 @@ The following table shows the properties that are required when you create the [
 |passwordMinimumNumericCharacters|Int32|Indicates the minimum number of numeric characters required for device password. Valid values 1 to 16|
 |passwordMinimumSymbolCharacters|Int32|Indicates the minimum number of symbol characters required for device password. Valid values 1 to 16|
 |passwordMinimumUpperCaseCharacters|Int32|Indicates the minimum number of upper case letter characters required for device password. Valid values 1 to 16|
-|passwordRequiredType|[androidDeviceOwnerRequiredPasswordType](../resources/intune-deviceconfig-androiddeviceownerrequiredpasswordtype.md)|Type of characters in password. Possible values are: `deviceDefault`, `required`, `numeric`, `numericComplex`, `alphabetic`, `alphanumeric`, `alphanumericWithSymbols`, `lowSecurityBiometric`.|
+|passwordRequiredType|[androidDeviceOwnerRequiredPasswordType](../resources/intune-deviceconfig-androiddeviceownerrequiredpasswordtype.md)|Type of characters in password. Possible values are: `deviceDefault`, `required`, `numeric`, `numericComplex`, `alphabetic`, `alphanumeric`, `alphanumericWithSymbols`, `lowSecurityBiometric`, `customPassword`.|
 |passwordMinutesOfInactivityBeforeLock|Int32|Minutes of inactivity before a password is required.|
 |passwordExpirationDays|Int32|Number of days before the password expires. Valid values 1 to 365|
 |passwordPreviousPasswordCountToBlock|Int32|Number of previous passwords to block. Valid values 1 to 24|
@@ -81,7 +86,7 @@ Here is an example of the request.
 ``` http
 PATCH https://graph.microsoft.com/beta/deviceManagement/deviceCompliancePolicies/{deviceCompliancePolicyId}
 Content-type: application/json
-Content-length: 932
+Content-length: 1160
 
 {
   "@odata.type": "#microsoft.graph.androidDeviceOwnerCompliancePolicy",
@@ -91,6 +96,10 @@ Content-length: 932
   "description": "Description value",
   "displayName": "Display Name value",
   "version": 7,
+  "deviceThreatProtectionEnabled": true,
+  "deviceThreatProtectionRequiredSecurityLevel": "secured",
+  "securityRequireSafetyNetAttestationBasicIntegrity": true,
+  "securityRequireSafetyNetAttestationCertifiedDevice": true,
   "osMinimumVersion": "Os Minimum Version value",
   "osMaximumVersion": "Os Maximum Version value",
   "minAndroidSecurityPatchLevel": "Min Android Security Patch Level value",
@@ -115,7 +124,7 @@ Here is an example of the response. Note: The response object shown here may be 
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 1104
+Content-Length: 1332
 
 {
   "@odata.type": "#microsoft.graph.androidDeviceOwnerCompliancePolicy",
@@ -128,6 +137,10 @@ Content-Length: 1104
   "lastModifiedDateTime": "2017-01-01T00:00:35.1329464-08:00",
   "displayName": "Display Name value",
   "version": 7,
+  "deviceThreatProtectionEnabled": true,
+  "deviceThreatProtectionRequiredSecurityLevel": "secured",
+  "securityRequireSafetyNetAttestationBasicIntegrity": true,
+  "securityRequireSafetyNetAttestationCertifiedDevice": true,
   "osMinimumVersion": "Os Minimum Version value",
   "osMaximumVersion": "Os Maximum Version value",
   "minAndroidSecurityPatchLevel": "Min Android Security Patch Level value",
@@ -146,6 +159,7 @@ Content-Length: 1104
   "storageRequireEncryption": true
 }
 ```
+
 
 
 

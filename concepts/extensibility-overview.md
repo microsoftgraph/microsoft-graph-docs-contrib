@@ -3,6 +3,7 @@ title: "Add custom data to resources using extensions"
 description: "Microsoft Graph provides a single API endpoint that gives you access to rich people-centric data and insights through a number of resources such as user and message. You can also extend Microsoft Graph with your own application data. You can add custom properties to Microsoft Graph resources without requiring an external data store."
 author: "dkershaw10"
 localization_priority: Priority
+ms.custom: graphiamtop20
 ---
 
 # Add custom data to resources using extensions
@@ -153,6 +154,6 @@ For known limitations using extensions, see the [extensions section](known-issue
 
 ## See also
 
-- [Office 365 domains](https://technet.microsoft.com/en-us/library/office-365-domains.aspx)
+- [Office 365 domains](https://technet.microsoft.com/library/office-365-domains.aspx)
 
 - [Adding and verifying a domain for an Office 365 tenant](https://office365support.ca/adding-and-verifying-a-domain-for-the-new-office-365/)

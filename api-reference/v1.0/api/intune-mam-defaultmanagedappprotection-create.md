@@ -1,9 +1,10 @@
 ---
 title: "Create defaultManagedAppProtection"
 description: "Create a new defaultManagedAppProtection object."
-author: "tfitzmac"
+author: "davidmu1"
 localization_priority: Normal
 ms.prod: "Intune"
+doc_type: apiPageType
 ---
 
 # Create defaultManagedAppProtection
@@ -213,6 +214,7 @@ Content-Length: 2143
   "faceIdBlocked": true
 }
 ```
+
 
 
 

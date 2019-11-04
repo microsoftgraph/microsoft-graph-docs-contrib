@@ -4,6 +4,7 @@ description: "Read properties and relationships of the termsAndConditions object
 author: "rolyon"
 localization_priority: Normal
 ms.prod: "Intune"
+doc_type: apiPageType
 ---
 
 # Get termsAndConditions
@@ -21,7 +22,7 @@ One of the following permissions is required to call this API. To learn more, in
 |:---|:---|
 |Delegated (work or school account)|DeviceManagementServiceConfig.ReadWrite.All, DeviceManagementServiceConfig.Read.All|
 |Delegated (personal Microsoft account)|Not supported.|
-|Application|Not supported.|
+|Application|DeviceManagementServiceConfig.ReadWrite.All, DeviceManagementServiceConfig.Read.All|
 
 ## HTTP Request
 <!-- {
@@ -62,7 +63,7 @@ Here is an example of the response. Note: The response object shown here may be 
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 546
+Content-Length: 614
 
 {
   "value": {
@@ -76,10 +77,14 @@ Content-Length: 546
     "title": "Title value",
     "bodyText": "Body Text value",
     "acceptanceStatement": "Acceptance Statement value",
-    "version": 7
+    "version": 7,
+    "roleScopeTagIds": [
+      "Role Scope Tag Ids value"
+    ]
   }
 }
 ```
+
 
 
 

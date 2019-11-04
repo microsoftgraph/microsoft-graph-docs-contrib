@@ -1,9 +1,10 @@
 ---
 title: "omaSetting resource type"
 description: "OMA Settings definition."
-author: "tfitzmac"
+author: "davidmu1"
 localization_priority: Normal
 ms.prod: "Intune"
+doc_type: resourcePageType
 ---
 
 # omaSetting resource type
@@ -37,6 +38,7 @@ Here is a JSON representation of the resource.
   "omaUri": "String"
 }
 ```
+
 
 
 

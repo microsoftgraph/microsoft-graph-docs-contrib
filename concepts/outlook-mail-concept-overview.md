@@ -4,6 +4,7 @@ description: "Outlook is a messaging communication hub in Office 365. It also le
 author: "angelgolfer-ms"
 localization_priority: Priority
 ms.prod: "outlook"
+ms.custom: scenarios:getting-started
 ---
 
 # Outlook mail API overview

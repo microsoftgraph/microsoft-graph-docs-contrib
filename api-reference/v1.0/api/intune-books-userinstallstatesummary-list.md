@@ -1,9 +1,10 @@
 ---
 title: "List userInstallStateSummaries"
 description: "List properties and relationships of the userInstallStateSummary objects."
-author: "tfitzmac"
+author: "davidmu1"
 localization_priority: Normal
 ms.prod: "Intune"
+doc_type: apiPageType
 ---
 
 # List userInstallStateSummaries
@@ -70,6 +71,7 @@ Content-Length: 295
   ]
 }
 ```
+
 
 
 

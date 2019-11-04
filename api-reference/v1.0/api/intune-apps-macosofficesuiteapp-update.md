@@ -1,9 +1,10 @@
 ---
 title: "Update macOSOfficeSuiteApp"
 description: "Update the properties of a macOSOfficeSuiteApp object."
-author: "tfitzmac"
+author: "davidmu1"
 localization_priority: Normal
 ms.prod: "Intune"
+doc_type: apiPageType
 ---
 
 # Update macOSOfficeSuiteApp
@@ -121,6 +122,7 @@ Content-Length: 756
   "publishingState": "processing"
 }
 ```
+
 
 
 

@@ -1,9 +1,10 @@
 ---
 title: "List deviceAndAppManagementRoleDefinitions"
 description: "List properties and relationships of the deviceAndAppManagementRoleDefinition objects."
-author: "tfitzmac"
+author: "davidmu1"
 localization_priority: Normal
 ms.prod: "Intune"
+doc_type: apiPageType
 ---
 
 # List deviceAndAppManagementRoleDefinitions
@@ -85,6 +86,7 @@ Content-Length: 768
   ]
 }
 ```
+
 
 
 
