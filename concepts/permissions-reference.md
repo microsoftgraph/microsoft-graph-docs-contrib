@@ -167,12 +167,16 @@ None.
 
 #### Delegated permissions
 
-None.
+|   Permission    |  Display String   |  Description | Admin Consent Required |
+|:-----------------------------|:-----------------------------------------|:-----------------|:-----------------|
+| _Application.Read.All_ | Read applications | Allows the app to read applications and service principals on behalf of the signed-in user. | Yes |
+| _Application.ReadWrite.All_ | Read and write all apps |  Allows the app to create, read, update and delete applications and service principals on behalf of the signed-in user. | Yes |
 
 #### Application permissions
 
 |   Permission    |  Display String   |  Description | Admin Consent Required |
 |:-----------------------------|:-----------------------------------------|:-----------------|:-----------------|
+| _Application.Read.All_ | Read applications | Allows the app to read applications and service principals without a signed-in user. | Yes |
 | _Application.ReadWrite.All_ | Read and write all apps | Allows the calling app to create, and manage (read, update, update application secrets and delete) applications and service principals without a signed-in user.  Does not allow management of consent grants or application assignments to users or groups. | Yes |
 | _Application.ReadWrite.OwnedBy_ | Manage apps that this app creates or owns | Allows the calling app to create other applications and service principals, and fully manage those applications and service principals (read, update, update application secrets and delete), without a signed-in user.  It cannot update any applications that it is not an owner of. Does not allow management of consent grants or application assignments to users or groups. | Yes |
 
@@ -185,11 +189,12 @@ The _Application.ReadWrite.OwnedBy_ permission allows the same operations as _Ap
 
 #### Delegated
 
-None.
+* _Application.Read.All_: List all applications (`GET /beta/applications`)
+* _Application.ReadWrite.All_: Update a service principal (`PATCH /beta/servicePrincipals/{id}`)
 
 #### Application
 
-* _Application.ReadWrite.All_: List all applications (`GET /beta/applications`)
+* _Application.Read.All_: List all applications (`GET /beta/applications`)
 * _Application.ReadWrite.All_: Delete a service principal (`DELETE /beta/servicePrincipals/{id}`)
 * _Application.ReadWrite.OwnedBy_: Create an application (`POST /beta/applications`)
 * _Application.ReadWrite.OwnedBy_: List all applications owned by the calling application (`GET /beta/servicePrincipals/{id}/ownedObjects`)
