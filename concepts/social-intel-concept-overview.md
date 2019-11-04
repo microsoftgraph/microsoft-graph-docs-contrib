@@ -100,7 +100,7 @@ The [profile](/graph/api/resources/profile?view=graph-rest-beta) API represents 
 Looking for the API reference for these services?
 
 - [People API](/graph/api/resources/social-overview?view=graph-rest-1.0)
-- [People and workplace intelligence](preview)](/graph/api/resources/social-overview?view=graph-rest-beta)
+- [People and workplace intelligence(preview)](/graph/api/resources/social-overview?view=graph-rest-beta)
 - [Profile API (preview)](/graph/api/resources/profile?view=graph-rest-beta).
 
 ## Next steps
