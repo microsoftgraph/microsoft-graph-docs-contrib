@@ -216,6 +216,78 @@ Content-Type: application/json
 }
 ```
 
+### Example 3: Create an online meeting in a Microsoft Teams Channel with a user token
+
+#### Request
+>**Note:** The Object ID of the user token passed should be a member of the channel represented by threadid in the payload.
+
+```http
+POST https://graph.microsoft.com/beta/me/onlineMeetings
+Content-Type: application/json
+
+{
+  "startDateTime":"2019-07-12T14:30:34.2444915-07:00",
+  "endDateTime":"2019-07-12T15:00:34.2464912-07:00",
+  "subject":"User meeting in Microsoft Teams channel."
+  "chatInfo": {
+    "threadId":"19%3A3b52398f3c524556894b776357c1dd79%40thread.skype"
+  }
+}
+```
+#### Response
+
+>**Note:** The response object shown here might be shortened for readability.
+
+<!-- {
+  "blockType": "example",
+  "truncated": true,
+  "@odata.type": "microsoft.graph.onlineMeeting"
+} -->
+
+```http
+HTTP/1.1 201 Created
+Content-Type: application/json
+
+{
+  "@odata.context": "https://graph.microsoft.com/beta/$metadata#users('f4053f86-17cc-42e7-85f4-f0389ac980d6')/onlineMeetings/$entity",
+  "accessLevel": "everyone",
+  "audioConferencing": {
+    "tollNumber": "+12525634478",
+    "tollFreeNumber": "+18666390588",
+    "ConferenceId": "2425999",
+    "dialinUrl": "https://dialin.teams.microsoft.com/22f12fa0-499f-435b-bc69-b8de580ba330?id=2425999"
+  },
+  "canceledDateTime": null,
+  "chatInfo": {
+    "threadId": "19%3A3b52398f3c524556894b776357c1dd79%40thread.skype",
+    "messageId": "1563302249053",
+    "replyChainMessageId": null
+  }
+  "creationDateTime": "2019-07-11T02:17:17.6491364Z",
+  "startDateTime": "2019-07-11T02:17:17.6491364Z",
+  "endDateTime": "2019-07-11T02:47:17.651138Z",
+  "entryExitAnnouncement": true,
+  "expirationDateTime": "2018-03-19T09:46:02Z",
+  "id": "550fae72-d251-43ec-868c-373732c2704f_19%3A3b52398f3c524556894b776357c1dd79%40thread.skype",
+  "isCanceled": false,
+  "joinUrl": "https://teams.microsoft.com/l/meetup-join/19%3ameeting_M2IzYzczNTItYmY3OC00MDlmLWJjMzUtYmFiMjNlOTY4MGEz%40thread.skype/0?context=%7b%22Tid%22%3a%2272f988bf-86f1-41af-91ab-2d7cd011db47%22%2c%22Oid%22%3a%22550fae72-d251-43ec-868c-373732c2704f%22%7d",
+  "isBroadcast": false,
+  "participants": {
+    "organizer": {
+      "identity": {
+        "user": {
+          "id": "550fae72-d251-43ec-868c-373732c2704f",
+          "tenantId": "72f988bf-86f1-41af-91ab-2d7cd011db47",
+          "displayName": "Heidi Steen"
+        }
+      },
+      "upn": "upn-value"
+    }
+  },
+  "subject": "User meeting in Microsoft Teams channel."
+}
+```
+
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2015-10-25 14:57:30 UTC -->
 <!--
