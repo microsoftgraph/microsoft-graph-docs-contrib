@@ -12,13 +12,13 @@ author: "davidmu1"
 Represents a password credential associated with an application or a service principal. The **passwordCredentials** property of the [application](application.md) <!--and [servicePrincipal](serviceprincipal.md) entitites--> entity is a collection of **passwordCredential** objects.
 
 > [!IMPORTANT]
-> Using POST or PATCH to set passwordCredentials is not supported. Use use the addPassword and removePassword methods to update the password for an application <!--or a servicePrincipal-->.
+> Using POST or PATCH to set **passwordCredential** is not supported. Use the addPassword and removePassword methods to update the password for an application<!--or a servicePrincipal-->:
 >
-> - application - [addPassword](../api/application-addpassword.md)
-> - application - [removePassword](../api/application-removepassword.md)
+> - [application: addPassword](../api/application-addpassword.md)
+> - [application: removePassword](../api/application-removepassword.md)
 <!--
-> - servicePrincipal - [addPassword](../api/serviceprincipal-addpassword.md)
-> - servicePrincipal - [removePassword](../api/serviceprincipal-removepassword.md)
+> - [servicePrincipal: addPassword](../api/serviceprincipal-addpassword.md)
+> - [servicePrincipal: removePassword](../api/serviceprincipal-removepassword.md)
 -->
 
 ## Properties
