@@ -11,12 +11,12 @@ doc_type: resourcePageType
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Configure *Class*-specific properties of a [team](team.md). Available only when the team represents a *Class*.
+Represents *Class*-specific properties of a [team](team.md). Available only when the team represents a *Class*.
 
 ## Properties
 | Property	   | Type	|Description|
 |:---------------|:--------|:----------|
-|notifyGuardiansAboutAssignments|Boolean|If set to true, enables sending of weekly Assignments digest emails to parents/guardians, provided the tenant admin has enabled the setting globally.|
+|notifyGuardiansAboutAssignments|Boolean|If set to `true`, enables sending of weekly assignments digest emails to parents/guardians, provided the tenant admin has enabled the setting globally.|
 
 ## JSON representation
 
