@@ -4,7 +4,7 @@ description: "Retrieve the properties and relationships of an **online meeting**
 author: "VinodRavichandran"
 localization_priority: Normal
 ms.prod: "cloud-communications"
-doc_type: apiPageType
+doc_type: "resourcePageType"
 ---
 
 # Get Online Meeting

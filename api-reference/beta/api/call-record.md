@@ -184,7 +184,6 @@ Here is an example of the response.
 
 <!-- {
   "blockType": "response",
-  "name": "download_recorded_file",
   "truncated": true
 }-->
 ```http
