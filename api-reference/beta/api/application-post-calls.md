@@ -721,7 +721,7 @@ Content-Type: application/json
 To join the meeting with application hosted media update the media config with the [AppHostedMediaConfig](../resources/apphostedmediaconfig.md) as shown below, In the sample provided above.
 
 <!-- {
-  "blockType": "request",
+  "blockType": "example",
   "name": "join-meeting-app-hosted-media",
   "@odata.type": "microsoft.graph.call"
 }-->
@@ -773,7 +773,7 @@ The values of authorization token, callback url, application id, application nam
 ##### Request
 
 <!-- {
-  "blockType": "request",
+  "blockType": "example",
   "name": "join-channel-meeting-service-hosted-media",
   "@odata.type": "microsoft.graph.call"
 }-->
@@ -830,7 +830,7 @@ The display name is the name you want to be displayed in the meeting for your gu
 ##### Request
 
 <!-- {
-  "blockType": "request",
+  "blockType": "example",
   "name": "join-channel-meeting-as-guest-service-hosted-media",
   "@odata.type": "microsoft.graph.call"
 }-->

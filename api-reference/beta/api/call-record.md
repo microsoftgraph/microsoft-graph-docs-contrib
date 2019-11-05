@@ -173,7 +173,7 @@ The following example shows the request to get the content of the recording.
 
 <!-- {
   "blockType": "request",
-  "name": "download_recorded_file_request",
+  "name": "download_recorded_file",
 }-->
 ```http
 GET https://file.location/17e3b46c-f61d-4f4d-9635-c626ef18e6ad
@@ -184,11 +184,11 @@ Here is an example of the response.
 
 <!-- {
   "blockType": "response",
-  "name": "download_recorded_file_response",
+  "name": "download_recorded_file",
   "truncated": true
 }-->
 ```http
-GET https://file.location/17e3b46c-f61d-4f4d-9635-c626ef18e6ad
+HTTP/1.1 200 OK
 Transfer-Encoding: chunked
 Date: Thu, 17 Jan 2019 01:46:37 GMT
 Content-Type: application/octet-stream
