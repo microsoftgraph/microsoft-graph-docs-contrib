@@ -11,14 +11,14 @@ doc_type: apiPageType
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Record a short audio clip from a call. 
+Record a short audio clip from a call.
 A bot can utilize this to capture a voice response from a caller after they are prompted for a response.
 
 For further information on how to handle operations, please review [commsOperation](../resources/commsOperation.md)
 
 >**Note:** This is only supported for [calls](../resources/call.md) which are initiated with [serviceHostedMediaConfig](../resources/servicehostedmediaconfig.md).
 
-This action is not intended to record the entire call. The maximum length of recording is 5 minutes. The recording is not saved permamently by the by the Cloud Communications Platform and is discarded shortly after the call ends. The bot must download the recording promptly (using the recordingLocation value given in the completed notification) after the recording operation finishes.
+This action is not intended to record the entire call. The maximum length of recording is 5 minutes. The recording is not saved permanently by the by the Cloud Communications Platform and is discarded shortly after the call ends. The bot must download the recording promptly after the recording operation finishes by using the recordingLocation value that's given in the completed notification.
 
 >**Note:** Any media collected may **not** be persisted. Make sure you are compliant with the laws and regulations of your area when it comes to call recording. Please consult with a legal counsel for more information.
 
@@ -168,24 +168,23 @@ Content-Type: application/json
 ### Example 2: Retrieving the recording file
 
 > **Note:** While you're able to fetch the recording and process it, you **must** delete it afterwards. Media cannot be persisted.
+
 ##### Request
-The following example shows the request to get the content of the recording.
 
 <!-- {
-  "blockType": "request",
-  "name": "download_recorded_file"
+  "blockType": "ignored"
 }-->
 ```http
 GET https://file.location/17e3b46c-f61d-4f4d-9635-c626ef18e6ad
+Authorization: Bearer <recordingAccessToken>
 ```
 
 ##### Response
-Here is an example of the response. 
 
 <!-- {
-  "blockType": "response",
-  "truncated": true
+  "blockType": "ignored"
 }-->
+
 ```http
 HTTP/1.1 200 OK
 Transfer-Encoding: chunked
