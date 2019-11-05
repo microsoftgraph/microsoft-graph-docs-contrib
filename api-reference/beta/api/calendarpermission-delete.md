@@ -22,11 +22,21 @@ One of the following permissions is required to call this API. To learn more, in
 |Application | Calendars.ReadWrite |
 ## HTTP request
 
+Delete the specified permissions of a user's primary calendar:
 <!-- { "blockType": "ignored" } -->
-
 ```http
 DELETE /users/{id}/calendar/calendarPermissions/{id}
+```
+
+Delete the specified permissions of a group calendar:
+<!-- { "blockType": "ignored" } -->
+```http
 DELETE /groups/{id}/calendar/calendarPermissions/{id}
+```
+
+Delete the specified permissions of the user calendar that contains the identified event:
+<!-- { "blockType": "ignored" } -->
+```http
 DELETE /users/{id}/events/{id}/calendar/calendarPermissions/{id}
 ```
 
@@ -49,6 +59,8 @@ If successful, this method returns `204, No Content` response code. It does not 
 ### Request
 
 The following is an example of the request.
+
+# [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "delete_calendarpermission"
@@ -57,6 +69,20 @@ The following is an example of the request.
 ```http
 DELETE https://graph.microsoft.com/beta/users/{id}/calendar/calendarPermissions/{id}
 ```
+# [C#](#tab/csharp)
+[!INCLUDE [sample-code](../includes/snippets/csharp/delete-calendarpermission-csharp-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [JavaScript](#tab/javascript)
+[!INCLUDE [sample-code](../includes/snippets/javascript/delete-calendarpermission-javascript-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Objective-C](#tab/objc)
+[!INCLUDE [sample-code](../includes/snippets/objc/delete-calendarpermission-objc-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+---
+
 
 ### Response
 
