@@ -73,7 +73,7 @@ Every team is associated with a [group](../resources/group.md). The group has th
 
 The following is a JSON representation of the resource.
 
->**Note:** If the team is of type *Class*, there is a **classSettings** property on the team.
+>**Note:** If the team is of type *Class*, a **classSettings** property is applied on the team.
 
 <!-- {
   "blockType": "resource",
