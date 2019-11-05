@@ -13,17 +13,17 @@ For details about known issues with Microsoft Graph APIs, see [Known issues](kno
 
 ## November 2019
 
-### Education
-
-| **Change type** | **Version**   | **Description**                          |
-| :-------------- | :------------ | :--------------------------------------- |
-| Addition | beta | Added [classSettings](/api-reference/beta/resources/teamclasssettings.md) property to [Team](/api-reference/beta/resources/team.md) resource that allows callers to get settings specific to a Team of type Class.|
-
 ### Calendar | Place
 
 | **Change type** | **Version** | **Description**                  |
 |:----------------|:------------|:-----------------------------------------|
 | Addition        | Beta  | Added the ability to [update a room or roomlist](/graph/api/resources/place-get?view=graph-rest-beta).|
+
+### Education
+
+| **Change type** | **Version**   | **Description**                          |
+| :-------------- | :------------ | :--------------------------------------- |
+| Addition | beta | Added the [classSettings](/api-reference/beta/resources/teamclasssettings.md) property to the [team](/api-reference/beta/resources/team.md) resource to allow callers to get settings specific to a team of type Class.|
 
 ### Identity and access (Azure AD)
 
