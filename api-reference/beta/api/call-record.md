@@ -173,7 +173,7 @@ The following example shows the request to get the content of the recording.
 
 <!-- {
   "blockType": "request",
-  "name": "download_recorded_file",
+  "name": "download_recorded_file"
 }-->
 ```http
 GET https://file.location/17e3b46c-f61d-4f4d-9635-c626ef18e6ad
