@@ -1,159 +1,90 @@
 ---
-title: "Get Online Meeting"
-description: "Retrieve the properties and relationships of an **online meeting** object."
+title: "onlineMeeting resource type"
+description: "Captures information about the meeting, including the join URL, the attendees list, and the description."
 author: "VinodRavichandran"
 localization_priority: Normal
+doc_type: resourcePageType
 ms.prod: "cloud-communications"
-doc_type: "resourcePageType"
 ---
 
-# Get Online Meeting
+# onlineMeeting resource type
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Retrieve the properties and relationships of an [onlineMeeting](../resources/onlinemeeting.md) object.
+This contains information about the meeting, including the URL used to join a meeting, the attendees list, and the description.
 
-> **Note:** The `GET` method is currently only supported for a [VTC conference id](https://docs.microsoft.com/microsoftteams/cloud-video-interop-for-teams-set-up). These IDs are generated for Cloud-Video-Interop licensed users and this method is used to get the details to join the meeting.
+## Methods
 
-## Permissions
+| Method         | Return Type | Description |
+|:---------------|:--------|:----------|
+| [Create onlineMeeting](../api/application-post-onlineMeetings.md) | [onlineMeeting](onlinemeeting.md) | Creates an online meeting. |
+| [Get onlineMeeting](../api/onlinemeeting-get.md) | [onlineMeeting](onlinemeeting.md) | Read properties and relationships of online meeting object. |
 
-One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
+## Properties
 
-| Permission type                        | Permissions (from least to most privileged)           |
-|:---------------------------------------|:------------------------------------------------------|
-| Delegated (work or school account)     | Not Supported.                                        |
-| Delegated (personal Microsoft account) | Not Supported.                                        |
-| Application                            | OnlineMeetings.Read.All, OnlineMeetings.ReadWrite.All |
+| Property                  | Type                                                   | Description                                                                                                                |
+| :------------------------ | :----------------------------------------------------- | :------------------------------------------------------------------------------------------------------------------------- |
+| autoAdmittedUsers         | String                                                 | The setting which specifies the type of participants that will automatically be allowed into the online meeting. Read-only. Possible values are: `everyone`, `everyoneInSameAndFederatedCompany`, `everyoneInCompany`, `invitedUsersInCompany`, `organizer`|
+| audioConferencing         | [audioConferencing](audioconferencing.md)              | The phone access (dial-in) information for an online meeting. Read-only. |
+| canceledDateTime          | DateTime                                               | The time in UTC when the meeting was canceled. Read-only. |
+| chatInfo                  | [chatInfo](chatinfo.md)                                | The chat information associated with this online meeting. |
+| creationDateTime          | DateTime                                               | The Meeting creation time in UTC. Read-only. |
+| startDateTime             | DateTime                                               | The Meeting start time in UTC. |
+| endDateTime               | DateTime                                               | The Meeting end time in UTC. |
+| id                        | String                                                 | The default id associated with the online meeting. Read-only. |
+| isCanceled                | Boolean                                                | The value indicating if the meeting has been canceled. Read-only. |
+| joinUrl                   | String                                                 | The join URL of the online meeting. Read-only.|
+| isBroadcast               | Boolean                                                | The flag to determine whether it's a broadcast meeting. |
+| participants              | [meetingParticipants](meetingparticipants.md)          | The participants associated with the online meeting.  This includes the organizer and the attendees. |
+| subject                   | String                                                 | The subject of the online meeting. |
+| capabilities              | String collection                                      | The list of meeting capabilities. Possible values are: `questionAndAnswer`. |
+| videoTeleconferenceId     | String                                                 | The videio teleconferencing id. Read-only. |
 
-## HTTP request
-<!-- { "blockType": "ignored" } -->
-```http
-GET /app/onlineMeetings/?$filter=VideoTeleconferenceId%20eq%20'{id}'
-GET /communications/onlineMeetings/?$filter=VideoTeleconferenceId%20eq%20'{id}'
-```
-> **Note:** The `/app` path is deprecated. Going forward, use the `/communications` path.
-
-## Optional query parameters
-This method supports the [OData query parameters](/graph/query-parameters) to help customize the response.
-
-## Request headers
-| Name          | Description               |
-|:--------------|:--------------------------|
-| Authorization | Bearer {token}. Required. |
-
-## Request body
-Do not supply a request body for this method.
-
-## Response
-If successful, this method returns a `200 OK` response code and [onlineMeeting](../resources/onlinemeeting.md) object in the response body.
-
-## Example
-
-##### Request
-The following example shows the request.
+### Values for autoAdmittedUsers
+| Value | Description  |
+| :------------------------ | :----------------------------------------------------- | :------------------------------------------------------------------------------------------------------------------------- |
+| organizer | Only the meeting organizer is admitted directly.  Everyone else waits in the lobby, until admitted by the organizer  |
+| invitedUsersInCompany | The meeting organizer and the users in the same company invited by the organizer join the meeting directly.  Everyone else waits in lobby until admitted.  |
+| everyoneInCompany | Everyone in the same company as the organizer join the meeting directly.  Federated, anonymous users wait in lobby until admitted.  |
+| everyoneInSameAndFederatedCompany |  Everyone in same company as the organizer and federated companies join the meeting directly.  Anonymous users wait in lobby until admitted.  |
+| everyone | Any user is allowed, which means that everyone (including anonymous users) can join the meeting directly without waiting in lobby.  |
 
 
-# [HTTP](#tab/http)
-<!-- {
-  "blockType": "request",
-  "name": "get-onlineMeeting"
-}-->
-```msgraph-interactive
-GET https://graph.microsoft.com/beta/communications/onlineMeetings/?$filter=VideoTeleconferenceId%20eq%20'123456789'
-```
-# [C#](#tab/csharp)
-[!INCLUDE [sample-code](../includes/snippets/csharp/get-onlinemeeting-csharp-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [JavaScript](#tab/javascript)
-[!INCLUDE [sample-code](../includes/snippets/javascript/get-onlinemeeting-javascript-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [Objective-C](#tab/objc)
-[!INCLUDE [sample-code](../includes/snippets/objc/get-onlinemeeting-objc-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
----
-
-
-##### Response
-
-> **Note:** The response object shown here might be shortened for readability. All the properties will be returned from an actual call.
+## JSON representation
 
 <!-- {
-  "blockType": "response",
-  "truncated": true,
+  "blockType": "resource",
+  "optionalProperties": [
+
+  ],
   "@odata.type": "microsoft.graph.onlineMeeting"
-} -->
-```http
-HTTP/1.1 200 OK
-Content-Type: application/json
-Content-Length: 1574
-
+}-->
+```json
 {
-  "autoAdmittedUsers": "everyone",
-  "audioConferencing": {
-    "tollNumber": "+12525634478",
-    "tollFreeNumber": "+18666390588",
-    "ConferenceId": "9999999",
-    "dialinUrl": "https://dialin.teams.microsoft.com/6787A136-B9B8-4D39-846C-C0F1FF937F10?id=xxxxxxx"
-  },
-  "canceledDateTime": "0001-01-01T08:00:00Z",
-  "chatInfo": {
-    "@odata.type": "#microsoft.graph.chatInfo",
-    "threadId": "19:cbee7c1c860e465f8258e3cebf7bee0d@thread.skype",
-    "messageId": "1533758867081"
-  },
-  "creationDateTime": "2018-05-30T00:12:19.0726086Z",
-  "endDateTime": "2018-05-30T01:00:00Z",
-  "id": "112f7296-5fa4-42ca-bae8-6a692b15d4b8_19:cbee7c1c860e465f8258e3cebf7bee0d@thread.skype",
+  "autoAdmittedUsers": "everyone | everyoneInSameAndFederatedCompany | everyoneInCompany | invitedUsersInCompany | organizer",
+  "audioConferencing": {"@odata.type": "#microsoft.graph.audioConferencing"},
+  "canceledDateTime": "String (timestamp)",
+  "chatInfo": {"@odata.type": "#microsoft.graph.chatInfo"},
+  "creationDateTime": "String (timestamp)",
+  "endDateTime": "String (timestamp)",
+  "id": "String (identifier)",
   "isCanceled": false,
-  "joinUrl": "https://teams.microsoft.com/l/meetup-join/19%3a:meeting_NTg0NmQ3NTctZDVkZC00YzRhLThmNmEtOGQ3M2E0ODdmZDZk@thread.v2/0?context=%7b%22Tid%22%3a%aa67bd4c-8475-432d-bd41-39f255720e0a%22%2c%22Oid%22%3a%22112f7296-5fa4-42ca-bae8-6a692b15d4b8%22%7d",
+  "joinUrl": "String",
   "isBroadcast": false,
-  "participants": {
-    "attendees": [
-      {
-        "@odata.type": "#microsoft.graph.identitySet",
-        "identity": {
-          "user": {
-            "@odata.type": "#microsoft.graph.identity",
-            "id": "112f7296-5fa4-42ca-bae8-6a692b15d4b8",
-            "tenantId": "aa67bd4c-8475-432d-bd41-39f255720e0a",
-            "displayName": "John"
-          }
-        },
-        "upn": "upn-value"
-      }
-    ],
-    "organizer": {
-      "@odata.type": "#microsoft.graph.identitySet",
-      "identity": {
-        "user": {
-          "@odata.type": "#microsoft.graph.identity",
-          "id": "5810cede-f3cc-42eb-b2c1-e9bd5d53ec96",
-          "tenantId": "aa67bd4c-8475-432d-bd41-39f255720e0a",
-          "displayName": "Bob"
-        }
-      },
-      "upn": "upn-value"
-    }
-  },
-  "startDateTime": "2018-05-30T00:30:00Z",
-  "subject": "Test Meeting.",
-  "videoTeleconferenceId": "123456789"
+  "participants": {"@odata.type": "#microsoft.graph.meetingParticipants"},
+  "startDateTime": "String (timestamp)",
+  "subject": "String",
+  "capabilities": [ "questionAndAnswer" ],
+  "videoTeleconferenceId": "String"
 }
 ```
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2015-10-25 14:57:30 UTC -->
-<!--
-{
+<!-- {
   "type": "#page.annotation",
-  "description": "Get onlineMeeting",
+  "description": "onlineMeeting resource",
   "keywords": "",
   "section": "documentation",
-  "tocPath": "",
-  "suppressions": [
-  ]
-}
--->
+  "tocPath": ""
+}-->
