@@ -385,7 +385,140 @@ Content-Type: application/json
 }
 ```
 
-### Example 3: Join scheduled meeting with service hosted media
+### Example 3: Create a group call with service hosted media
+
+This supports up to 5 VoIP users. The example shows how to create a group call with two VoIP users.
+> **Note:** This example call needs the `Calls.InitiateGroupCalls.All` permission. The group call created doesn't support chat or recording.
+
+##### Request
+```http
+POST https://graph.microsoft.com/beta/communications/calls
+Content-Type: application/json
+```
+<!-- {
+  "blockType": "example",
+  "@odata.type": "microsoft.graph.call"
+}-->
+```json
+{
+  "@odata.type": "#microsoft.graph.call",
+  "direction": "outgoing",
+  "subject": "Create a group call with service hosted media",
+  "callbackUri": "https://bot.contoso.com/callback",
+  "source": {
+    "@odata.type": "#microsoft.graph.participantInfo",
+    "identity": {
+      "@odata.type": "#microsoft.graph.identitySet",
+      "application": {
+        "@odata.type": "#microsoft.graph.identity",
+        "displayName": "TestBot",
+        "id": "dd3885da-f9ab-486b-bfae-85de3d445555"
+      }
+    }
+  },
+  "targets": [
+    {
+      "@odata.type": "#microsoft.graph.participantInfo",
+      "identity": {
+        "@odata.type": "#microsoft.graph.identitySet",
+        "user": {
+          "@odata.type": "#microsoft.graph.identity",
+          "displayName": "user1",
+          "id": "98da8a1a-1b87-452c-a713-65d3f10b5555"
+        }
+      }
+    },
+    {
+      "@odata.type": "#microsoft.graph.participantInfo",
+      "identity": {
+        "@odata.type": "#microsoft.graph.identitySet",
+        "user": {
+          "@odata.type": "#microsoft.graph.identity",
+          "displayName": "user2",
+          "id": "bf5aae9a-d11d-47a8-93b1-782504c95555"
+        }
+      }
+    }
+  ],
+  "requestedModalities": [
+    "audio"
+  ],
+  "mediaConfig": {
+    "@odata.type": "#microsoft.graph.serviceHostedMediaConfig",
+    "removeFromDefaultAudioGroup": false
+  },
+  "tenantId": "aa67bd4c-8475-432d-bd41-39f255720e0a"
+}
+```
+
+### Example 4: Create a group call with application hosted media
+
+This supports up to 5 VoIP users. The example shows how to create a group call with two VoIP users.
+> **Note:** This example call needs the `Calls.InitiateGroupCalls.All` permission. The group call created doesn't support chat or recording.
+
+##### Request
+```http
+POST https://graph.microsoft.com/beta/communications/calls
+Content-Type: application/json
+```
+<!-- {
+  "blockType": "example",
+  "@odata.type": "microsoft.graph.call"
+}-->
+```json
+{
+  "@odata.type": "#microsoft.graph.call",
+  "direction": "outgoing",
+  "subject": "Create a group call with service hosted media",
+  "callbackUri": "https://bot.contoso.com/callback",
+  "source": {
+    "@odata.type": "#microsoft.graph.participantInfo",
+    "identity": {
+      "@odata.type": "#microsoft.graph.identitySet",
+      "application": {
+        "@odata.type": "#microsoft.graph.identity",
+        "displayName": "TestBot",
+        "id": "dd3885da-f9ab-486b-bfae-85de3d445555"
+      }
+    }
+  },
+  "targets": [
+    {
+      "@odata.type": "#microsoft.graph.participantInfo",
+      "identity": {
+        "@odata.type": "#microsoft.graph.identitySet",
+        "user": {
+          "@odata.type": "#microsoft.graph.identity",
+          "displayName": "user1",
+          "id": "98da8a1a-1b87-452c-a713-65d3f10b5555"
+        }
+      }
+    },
+    {
+      "@odata.type": "#microsoft.graph.participantInfo",
+      "identity": {
+        "@odata.type": "#microsoft.graph.identitySet",
+        "user": {
+          "@odata.type": "#microsoft.graph.identity",
+          "displayName": "user2",
+          "id": "bf5aae9a-d11d-47a8-93b1-782504c95555"
+        }
+      }
+    }
+  ],
+  "requestedModalities": [
+    "audio"
+  ],
+  "mediaConfig": {
+    "@odata.type": "#microsoft.graph.appHostedMediaConfig",
+    "blob": "<Media Session Configuration>",
+    "removeFromDefaultAudioGroup": false
+  },
+  "tenantId": "aa67bd4c-8475-432d-bd41-39f255720e0a"
+}
+```
+
+### Example 5: Join scheduled meeting with service hosted media
 To join the scheduled meeting we will need to get the thread id, message id, organizer id and the tenant id in which the meeting is scheduled.
 This information can be obtained from [Get Online Meetings API](../api/onlinemeeting-get.md).
 
@@ -718,7 +851,7 @@ Content-Type: application/json
 
 >**Note:** For join meeting scenarios apart from call state notifications, we receive roster notifications.
 
-### Example 4: Join scheduled meeting with app hosted media
+### Example 6: Join scheduled meeting with app hosted media
 To join the meeting with application hosted media update the media config with the [AppHostedMediaConfig](../resources/apphostedmediaconfig.md) as shown below, In the sample provided above.
 
 <!-- {
@@ -764,7 +897,7 @@ Content-Type: application/json
 ```
 
 
-### Example 5: Join channel meeting with service hosted media
+### Example 7: Join channel meeting with service hosted media
 Meeting inside a channel requires specific details like thread id, messageid, and organizer details that can be obtained using the [Get Online Meetings API](../api/onlinemeeting-get.md).
 
 The values of authorization token, callback url, application id, application name, user id, user name and tenant id must be replaced along with the details obtained from  [Get Online Meetings API](../api/onlinemeeting-get.md) with actual values to make the example work.
@@ -822,7 +955,7 @@ Content-Type: application/json
 }
 ```
 
-### Example 6: Join channel meeting as a guest with service hosted media
+### Example 8: Join channel meeting as a guest with service hosted media
 For joining a channel meeting as a guest you will need to create a guest [identity](../resources/identityset.md) and add it as the call source in the join meeting request.
 The display name is the name you want to be displayed in the meeting for your guest identity. The id may be a unique id identifying the guest identity.
 

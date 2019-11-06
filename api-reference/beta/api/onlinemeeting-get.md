@@ -91,6 +91,7 @@ Content-Type: application/json
 Content-Length: 1574
 
 {
+  "@odata.type": "#microsoft.graph.onlineMeeting",
   "autoAdmittedUsers": "everyone",
   "audioConferencing": {
     "tollNumber": "+12525634478",
