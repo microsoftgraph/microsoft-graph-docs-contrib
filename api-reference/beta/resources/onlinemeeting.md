@@ -1,6 +1,6 @@
 ---
 title: "onlineMeeting resource type"
-description: "Captures information about the meeting, including the join URL, the attendees list, and the description."
+description: "Contains information about the meeting, including the join URL, the attendees list, and the description."
 author: "VinodRavichandran"
 localization_priority: Normal
 doc_type: resourcePageType
@@ -11,36 +11,36 @@ ms.prod: "cloud-communications"
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-This contains information about the meeting, including the URL used to join a meeting, the attendees list, and the description.
+Contains information about the meeting, including the URL used to join a meeting, the attendees list, and the description.
 
 ## Methods
 
 | Method         | Return Type | Description |
 |:---------------|:--------|:----------|
-| [Create onlineMeeting](../api/application-post-onlineMeetings.md) | [onlineMeeting](onlinemeeting.md) | Creates an online meeting. |
-| [Get onlineMeeting](../api/onlinemeeting-get.md) | [onlineMeeting](onlinemeeting.md) | Read properties and relationships of online meeting object. |
+| [Create onlineMeeting](../api/application-post-onlineMeetings.md) | [onlineMeeting](onlinemeeting.md) | Create an online meeting. |
+| [Get onlineMeeting](../api/onlinemeeting-get.md) | [onlineMeeting](onlinemeeting.md) | Read the properties and relationships of an **onlineMeeting** object. |
 
 ## Properties
 
 | Property                  | Type                                                   | Description                                                                                                                |
 | :------------------------ | :----------------------------------------------------- | :------------------------------------------------------------------------------------------------------------------------- |
-| autoAdmittedUsers         | String                                                 | The setting which specifies the type of participants that will automatically be allowed into the online meeting. Read-only. Possible values are: `everyone`, `everyoneInSameAndFederatedCompany`, `everyoneInCompany`, `invitedUsersInCompany`, `organizer`|
+| autoAdmittedUsers         | String                                                 | The setting that specifies the type of participants that will automatically be allowed into the online meeting. Read-only. Possible values are: `everyone`, `everyoneInSameAndFederatedCompany`, `everyoneInCompany`, `invitedUsersInCompany`, `organizer`|
 | audioConferencing         | [audioConferencing](audioconferencing.md)              | The phone access (dial-in) information for an online meeting. Read-only. |
 | canceledDateTime          | DateTime                                               | The time in UTC when the meeting was canceled. Read-only. |
 | chatInfo                  | [chatInfo](chatinfo.md)                                | The chat information associated with this online meeting. |
-| creationDateTime          | DateTime                                               | The Meeting creation time in UTC. Read-only. |
-| startDateTime             | DateTime                                               | The Meeting start time in UTC. |
-| endDateTime               | DateTime                                               | The Meeting end time in UTC. |
-| id                        | String                                                 | The default id associated with the online meeting. Read-only. |
-| isCanceled                | Boolean                                                | The value indicating if the meeting has been canceled. Read-only. |
+| creationDateTime          | DateTime                                               | The meeting creation time in UTC. Read-only. |
+| startDateTime             | DateTime                                               | The meeting start time in UTC. |
+| endDateTime               | DateTime                                               | The meeting end time in UTC. |
+| id                        | String                                                 | The default ID associated with the online meeting. Read-only. |
+| isCanceled                | Boolean                                                | Indicates whether the meeting has been canceled. Read-only. |
 | joinUrl                   | String                                                 | The join URL of the online meeting. Read-only.|
-| isBroadcast               | Boolean                                                | The flag to determine whether it's a broadcast meeting. |
+| isBroadcast               | Boolean                                                | Indicates whether the meeting is a broadcast meeting. |
 | participants              | [meetingParticipants](meetingparticipants.md)          | The participants associated with the online meeting.  This includes the organizer and the attendees. |
 | subject                   | String                                                 | The subject of the online meeting. |
 | capabilities              | String collection                                      | The list of meeting capabilities. Possible values are: `questionAndAnswer`. |
-| videoTeleconferenceId     | String                                                 | The videio teleconferencing id. Read-only. |
+| videoTeleconferenceId     | String                                                 | The videio teleconferencing ID. Read-only. |
 
-### Values for autoAdmittedUsers
+### autoAdmittedUsers values
 | Value | Description  |
 | :------------------------ | :----------------------------------------------------- | :------------------------------------------------------------------------------------------------------------------------- |
 | organizer | Only the meeting organizer is admitted directly.  Everyone else waits in the lobby, until admitted by the organizer  |
