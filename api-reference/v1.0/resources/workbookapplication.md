@@ -1,15 +1,13 @@
 ---
 title: "workbookApplication resource type"
-description: "Represents the Excel workbookApplication that manages the workbook."
+description: "Represents the Excel application that manages the workbook."
 localization_priority: Normal
-author: "lumine2008"
+author: "grangeryy"
 ms.prod: "excel"
 doc_type: resourcePageType
 ---
 
 # workbookApplication resource type
-
-[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 Represents the Excel application that manages the workbook.
 
@@ -31,7 +29,6 @@ None.
 
 
 ## JSON representation
-
 
 <!-- {
   "blockType": "resource",
