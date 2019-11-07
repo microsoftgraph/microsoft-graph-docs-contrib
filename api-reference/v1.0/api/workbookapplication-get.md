@@ -1,6 +1,6 @@
 ---
 title: "Get workbookApplication"
-description: "Retrieve the properties and relationships of workbookApplication object."
+description: "Retrieve the properties and relationships of a workbookApplication object."
 localization_priority: Normal
 author: "grangeryy"
 ms.prod: "excel"
@@ -9,7 +9,7 @@ doc_type: apiPageType
 
 # Get workbookApplication
 
-Retrieve the properties and relationships of workbookApplication object.
+Retrieve the properties and relationships of a [workbookApplication](../resources/workbookapplication.md) object.
 
 ## Permissions
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
@@ -36,10 +36,10 @@ Do not supply a request body for this method.
 
 ## Response
 
-If successful, this method returns a `200 OK` response code and [workbookApplication](../resources/workbookapplication.md) object in the response body.
+If successful, this method returns a `200 OK` response code and a [workbookApplication](../resources/workbookapplication.md) object in the response body.
 ## Example
-##### Request
-Here is an example of the request.
+### Request
+Here is an example of a request.
 
 # [HTTP](#tab/http)
 <!-- {
@@ -63,8 +63,10 @@ GET https://graph.microsoft.com/v1.0/me/drive/items/{id}/workbook/application
 
 ---
 
-##### Response
-Here is an example of the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.
+### Response
+Here is an example of the response. 
+
+> **Note:** The response object shown here might be shortened for readability. All the properties will be returned from an actual call.
 <!-- {
   "blockType": "response",
   "truncated": true,

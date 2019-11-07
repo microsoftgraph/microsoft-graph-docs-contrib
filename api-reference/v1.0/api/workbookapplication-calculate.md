@@ -30,6 +30,7 @@ POST /workbook/application/calculate
 | Name       | Description|
 |:---------------|:----------|
 | Authorization  | Bearer {token}. Required. |
+| Content-type | application/json. Required. |
 
 ## Request body
 In the request body, provide a JSON object with the following parameters.
@@ -40,11 +41,11 @@ In the request body, provide a JSON object with the following parameters.
 
 ## Response
 
-If successful, this method returns `200 OK` response code. It does not return anything in the response body.
+If successful, this method returns a `200 OK` response code. It does not return anything in the response body.
 
 ## Example
 Here is an example of how to call this API.
-##### Request
+### Request
 Here is an example of the request.
 
 # [HTTP](#tab/http)
@@ -76,7 +77,7 @@ Content-length: 48
 ---
 
 
-##### Response
+### Response
 Here is an example of the response. 
 <!-- {
   "blockType": "response",

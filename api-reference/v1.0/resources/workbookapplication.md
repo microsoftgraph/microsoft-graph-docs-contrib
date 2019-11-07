@@ -1,6 +1,6 @@
 ---
 title: "workbookApplication resource type"
-description: "Represents the Excel workbookApplication that manages the workbook."
+description: "Represents the Excel application that manages the workbook."
 localization_priority: Normal
 author: "grangeryy"
 ms.prod: "excel"
@@ -25,12 +25,10 @@ Represents the Excel application that manages the workbook.
 |calculationMode|string|Returns the calculation mode used in the workbook. Possible values are: `Automatic`, `AutomaticExceptTables`, `Manual`.|
 
 ## Relationships
-None
+None.
 
 
 ## JSON representation
-
-Here is a JSON representation of the resource.
 
 <!-- {
   "blockType": "resource",
