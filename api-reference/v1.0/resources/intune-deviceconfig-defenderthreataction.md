@@ -1,7 +1,7 @@
 ---
 title: "defenderThreatAction enum type"
 description: "Defender’s default action to take on detected Malware threats."
-author: "tfitzmac"
+author: "davidmu1"
 localization_priority: Normal
 ms.prod: "Intune"
 doc_type: enumPageType
@@ -23,6 +23,7 @@ Defender’s default action to take on detected Malware threats.
 |allow|4|Allow the detected threat.|
 |userDefined|5|Allow the user to determine the action to take with the detected threat.|
 |block|6|Block the detected threat.|
+
 
 
 

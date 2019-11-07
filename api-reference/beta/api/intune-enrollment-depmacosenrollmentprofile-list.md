@@ -58,7 +58,7 @@ Here is an example of the response. Note: The response object shown here may be 
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 1401
+Content-Length: 1478
 
 {
   "value": [
@@ -89,7 +89,9 @@ Content-Length: 1401
       "diagnosticsDisabled": true,
       "displayToneSetupDisabled": true,
       "privacyPaneDisabled": true,
+      "screenTimeScreenDisabled": true,
       "deviceNameTemplate": "Device Name Template value",
+      "configurationWebUrl": true,
       "registrationDisabled": true,
       "fileVaultDisabled": true,
       "iCloudDiagnosticsDisabled": true,

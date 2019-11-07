@@ -30,10 +30,8 @@ One of the following permissions is required to call this API. To learn more, in
 <!-- { "blockType": "ignored" }  -->
 
 ```http
-GET https://graph.microsoft.com/beta/me/analytics/activitystatistics/{id}
-
-GET https://graph.microsoft.com/beta/users/{id|userPrincipalName}/analytics/activitystatistics/{id}
-
+GET /me/analytics/activitystatistics/{id}
+GET /users/{id|userPrincipalName}/analytics/activitystatistics/{id}
 ```
 
 ## Optional query parameters
