@@ -1,27 +1,30 @@
 --- 
-title: "inviteParticipantsOperation resource type"
-description: "Represents the status of a long-running participant invitation operation, triggered by a call to the participant-invite API."
+title: "CancelMediaProcessingOperation resource type"
+description: "This resource type is used to describe the response format of Media processing cancel operation."
 author: "VinodRavichandran"
 localization_priority: Normal
 ms.prod: "cloud-communications"
 doc_type: resourcePageType
 ---
 
-# inviteParticipantsOperation resource type
+# CancelMediaProcessingOperation resource type
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Represents the status of a long-running participant invitation operation, triggered by a call to the participant-invite API.
+Describes the response format of media processing cancel operation.
 
 ## Properties
 
 | Property                       | Type                        | Description                                                                                                                                       |
 | :----------------------------- | :---------------------------| :-------------------------------------------------------------------------------------------------------------------------------------------------|
+| all                            | Boolean                     | Indicates whether to stop all operations or current.                                                                                    |
 | clientContext                  | String                      | The client context.                                                                                                                               |
-| id                             | String                      | The server operation id. Read-only.                                                                                              |
-| participants | [invitationParticipantInfo](invitationParticipantInfo.md) collection | The participants to invite. |
-| resultInfo                     | [resultInfo](resultinfo.md) | The result information.  Read-only.                                                                                             |
+| id                             | String                      | The server operation ID. Read-only.                                                                                              |
+| resultInfo                     | [resultInfo](resultinfo.md) | The result information.  Read-only.                                                                                              |
 | status                         | String                      | Possible values are: `notStarted`, `running`, `completed`, `failed`. Read-only.                                                  |
+
+## Relationships
+None
 
 ## JSON representation
 
@@ -32,13 +35,13 @@ The following is a JSON representation of the resource.
   "optionalProperties": [
 
   ],
-  "@odata.type": "microsoft.graph.inviteParticipantsOperation"
+  "@odata.type": "microsoft.graph.cancelMediaProcessingOperation"
 }-->
 ```json
 {
+  "all": true,
   "clientContext": "String",
   "id": "String (identifier)",
-  "participants": [{"@odata.type": "#microsoft.graph.invitationParticipantInfo"}],
   "resultInfo": {"@odata.type": "#microsoft.graph.resultInfo"},
   "status": "notStarted | running | completed | failed"
 }
@@ -48,9 +51,8 @@ The following is a JSON representation of the resource.
 2015-10-25 14:57:30 UTC -->
 <!-- {
   "type": "#page.annotation",
-  "description": "inviteParticipantsOperation resource",
+  "description": "cancelMediaProcessingOperation resource",
   "keywords": "",
   "section": "documentation",
-  "tocPath": "",
-  "suppressions": []
+  "tocPath": ""
 }-->

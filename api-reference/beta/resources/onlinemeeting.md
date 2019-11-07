@@ -1,17 +1,17 @@
 ---
 title: "onlineMeeting resource type"
-description: "Captures information about the meeting, including the join URL, the attendees list, and the description."
+description: "Contains information about the meeting, including the join URL, the attendees list, and the description."
 author: "VinodRavichandran"
 localization_priority: Normal
-ms.prod: "microsoft-cloud communications"
 doc_type: resourcePageType
+ms.prod: "cloud-communications"
 ---
 
 # onlineMeeting resource type
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Contains information about the meeting, including the join URL, the attendees list, and the description.
+Contains information about the meeting, including the URL used to join a meeting, the attendees list, and the description.
 
 ## Methods
 
@@ -34,7 +34,7 @@ Contains information about the meeting, including the join URL, the attendees li
 | id                        | String                                                 | The default ID associated with the online meeting. Read-only. |
 | isCanceled                | Boolean                                                | Indicates whether the meeting has been canceled. Read-only. |
 | joinUrl                   | String                                                 | The join URL of the online meeting. Read-only.|
-| isBroadcast               | Boolean                                                | The flag to determine whether it's a broadcast meeting. |
+| isBroadcast               | Boolean                                                | Indicates whether the meeting is a broadcast meeting. |
 | participants              | [meetingParticipants](meetingparticipants.md)          | The participants associated with the online meeting.  This includes the organizer and the attendees. |
 | subject                   | String                                                 | The subject of the online meeting. |
 | capabilities              | String collection                                      | The list of meeting capabilities. Possible values are: `questionAndAnswer`. |
@@ -43,18 +43,14 @@ Contains information about the meeting, including the join URL, the attendees li
 ### autoAdmittedUsers values
 | Value | Description  |
 | :------------------------ | :----------------------------------------------------- | :------------------------------------------------------------------------------------------------------------------------- |
-| organizer | Only the meeting organizer is admitted directly.  Everyone else waits in the lobby, until admitted by the organizer.  |
+| organizer | Only the meeting organizer is admitted directly.  Everyone else waits in the lobby, until admitted by the organizer  |
 | invitedUsersInCompany | The meeting organizer and the users in the same company invited by the organizer join the meeting directly.  Everyone else waits in lobby until admitted.  |
-| everyoneInCompany | Everyone in the same company as the organizer join the meeting directly. Federated, anonymous users wait in lobby until admitted.  |
+| everyoneInCompany | Everyone in the same company as the organizer join the meeting directly.  Federated, anonymous users wait in lobby until admitted.  |
 | everyoneInSameAndFederatedCompany |  Everyone in same company as the organizer and federated companies join the meeting directly.  Anonymous users wait in lobby until admitted.  |
-| everyone | Any user is allowed. Everyone (including anonymous users) can join the meeting directly without waiting in lobby.  |
+| everyone | Any user is allowed, which means that everyone (including anonymous users) can join the meeting directly without waiting in lobby.  |
 
-## Relationships
-None.
 
 ## JSON representation
-
-The following is a JSON representation of the resource.
 
 <!-- {
   "blockType": "resource",
