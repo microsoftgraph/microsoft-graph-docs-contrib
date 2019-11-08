@@ -2,7 +2,7 @@
     "redirections": [
         {
             "source_path": "concepts\\associate-account.md",
-            "redirect_url": "/graph/auth",
+            "redirect_url": "/graph/auth/",
             "redirect_document_id": true
         },
         {
