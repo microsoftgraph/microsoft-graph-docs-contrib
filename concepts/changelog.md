@@ -69,6 +69,14 @@ For details about known issues with Microsoft Graph APIs, see [Known issues](kno
 | Addition | v1.0 | Added new delegated permissions [Application.Read.All](/graph/permissions-reference#application-resource-permissions), [Application.ReadWrite.All](/graph/permissions-reference#application-resource-permissions).|
 | Addition | v1.0 | Added new application permission [Application.Read.All](/graph/permissions-reference#application-resource-permissions).|
 
+
+### Mail (Outlook)
+
+| **Change type** | **Version** | **Description**                  |
+|:----------------|:------------|:-----------------------------------------|
+| Addition | v1.0 | Added the **conversationIndex** property to [message](/graph/resources/message?view=graph-rest-v1.0) and its derived type [eventMessage](/graph/resources/eventmessage?view=graph-rest-v1.0).|
+
+
 ### People and workplace intelligence
 
 | **Change type** | **Version** | **Description**                  |
