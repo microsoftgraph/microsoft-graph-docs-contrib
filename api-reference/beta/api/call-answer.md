@@ -18,15 +18,15 @@ The bot is expected to answer or [reject](./call-reject.md) the call before the 
 > **Note:** The bot can only be reached by VoIP. PSTN calling isn't supported.
 
 ## Permissions
-You do not need any permissions to answer a peer-to-peer call. You need one of the following permissions to join a group call. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
+You do not need any permissions to answer a peer-to-peer call (see note below). You need one of the following permissions to join a group call. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
 
 | Permission type | Permissions (from least to most privileged)                 |
 | :-------------- | :-----------------------------------------------------------|
 | Delegated (work or school account)     | Not Supported                        |
 | Delegated (personal Microsoft account) | Not Supported                        |
-| Application     | Calls.JoinGroupCalls.All or Calls.JoinGroupCallsasGuest.All                                                         |
+| Application     | Calls.JoinGroupCalls.All or Calls.JoinGroupCallsasGuest.All |
 
-> **Note:** For a call that uses application-hosted media, you also need the Calls.AccessMedia.All permission.                                                   |
+> **Note:** For a call that uses application-hosted media, you also need the `Calls.AccessMedia.All` permission.
 
 ## HTTP request
 <!-- {"blockType": "ignored" } -->
