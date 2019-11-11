@@ -11,7 +11,7 @@ doc_type: "apiPageType"
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Get a list of [directoryObject](../api/directoryObject.md) objects that this policy has been applied to. The tokenLifetimePolicy can only be applied to [application](../resources/application.md) and [servicePrincipal](../resources/serviceprincipal.md) resources, and this operation can only be done via those resources.
+Get a list of [directoryObject](../resources/directoryObject.md) objects that this policy has been applied to. The tokenLifetimePolicy can only be applied to [application](../resources/application.md) and [servicePrincipal](../resources/serviceprincipal.md) resources, and this operation can only be done via those resources.
 
 ## Permissions
 

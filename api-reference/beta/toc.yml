@@ -8801,24 +8801,23 @@
           - name: Get member objects
             href: api/orgcontact-getmemberobjects.md
       - name: Policies
-        href: resources/policy.md
+        href: resources/policy-overview.md
         items:
-        - name: List policies
-          href: api/policy-list.md
-        - name: Create policy
-          href: api/policy-post.md
-        - name: Get policy
-          href: api/policy-get.md
-        - name: Update policy
-          href: api/policy-update.md
-        - name: Delete policy
-          href: api/policy-delete.md
-        - name: Assign policy
-          href: api/policy-assign.md
-        - name: List assigned policies
-          href: api/policy-list-assigned.md
-        - name: List applied to applications
-          href: api/policy-list-appliesto.md
+        - name: Token lifetime policy
+          href: resources/tokenlifetimepolicy.md
+          items:
+          - name: Create
+            href: api/tokenlifetimepolicy-post-tokenlifetimepolicies.md
+          - name: List
+            href: api/tokenlifetimepolicy-list.md
+          - name: Get
+            href: api/tokenlifetimepolicy-get.md
+          - name: Update
+            href: api/tokenlifetimepolicy-update.md
+          - name: Delete
+            href: api/tokenlifetimepolicy-delete.md
+          - name: List applied to applications
+            href: api/tokenlifetimepolicy-list-appliesto.md
       - name: Privileged Identity Management
         items:
         - name: Privileged Identity Management
