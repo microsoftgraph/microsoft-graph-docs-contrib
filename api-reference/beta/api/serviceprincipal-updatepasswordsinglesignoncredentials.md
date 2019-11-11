@@ -1,6 +1,6 @@
 ---
 title: "servicePrincipal: updatePasswordSingleSignOnCredentials"
-description: "Update password single sign on credentials for a user or group by id."
+description: "Update single sign-on credentials using a password for a user or group."
 localization_priority: Normal
 author: "bharathramh92"
 ms.prod: "microsoft-identity-platform"
@@ -11,7 +11,7 @@ doc_type: "apiPageType"
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Update password single sign on credentials.
+Update single sign-on credentials using a password for a user or group.
 
 ## Permissions
 
@@ -23,7 +23,7 @@ One of the following permissions is required to call this API. To learn more, in
 | Delegated (personal Microsoft account) | Not supported. |
 | Application                            | Application.ReadWrite.All, Directory.AccessAsUser.All, Directory.ReadWrite.All |
 
-Please note, users can update credentials for themselves. Service Principal Owners and admins with the following roles will be able to update credentials for any user or group: GlobalAdministrator, ApplicationAdministrator, CloudApplicationAdministrator.
+Please note, users can update credentials for themselves. Service Principal Owners and admins with the following roles will be able to update credentials for any user or group: GlobalAdministrator, ApplicationAdministrator, CloudApplicationAdministrator. To learn more, see [Directory Roles](https://docs.microsoft.com/azure/active-directory/users-groups-roles/directory-assign-admin-roles#available-roles).
 
 ## HTTP request
 
@@ -50,7 +50,7 @@ In the request body, provide a JSON object with the following parameters.
 
 ## Response
 
-If successful, this method returns `200 OK` response code. It does not return anything in the response body.
+If successful, this method returns `204` response code. It does not return anything in the response body.
 
 ## Examples
 
@@ -65,7 +65,7 @@ The following is an example of the request.
 }-->
 
 ```http
-POST https://graph.microsoft.com/beta/servicePrincipals/updatePasswordSingleSignOnCredentials
+POST https://graph.microsoft.com/beta/servicePrincipals/{id}/updatePasswordSingleSignOnCredentials
 Content-type: application/json
 
 {
@@ -95,7 +95,7 @@ The following is an example of the response.
 } -->
 
 ```http
-HTTP/1.1 200 OK
+HTTP/1.1 204
 ```
 
 <!-- uuid: 16cd6b66-4b1a-43a1-adaf-3a886856ed98
