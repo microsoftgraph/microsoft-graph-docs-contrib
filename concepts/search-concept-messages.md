@@ -14,7 +14,11 @@ A search query can include [filters](https://support.office.com/article/learn-to
 
 Message search results are sorted by **receivedDateTime** in descending order.
 
-Currently, message search applies to only users' own personal accounts, but not work or school accounts, and not in delegated mailboxes. See further [known limitations](#known-limitations) below.
+Message search applies to work or school accounts. Users can search their own mailbox, but not in delegated mailboxes. See further [known limitations](#known-limitations) below.
+
+Message search will also look for attachments. The list [file types supported for attachments](https://docs.microsoft.com/en-us/SharePoint/technical-reference/default-crawled-file-name-extensions-and-parsed-file-types) is the same as the for SharePoint Online.
+
+
 
 ## Examples
 
