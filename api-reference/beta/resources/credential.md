@@ -18,8 +18,8 @@ Indicates a single credential used for login to an application. For example, use
 | Property     | Type        | Description |
 |:-------------|:------------|:------------|
 |fieldId|String|The name of the field for this credential. e.g, username or password or phoneNumber. This is defined by the application. Must match what is in the html field on singleSignOnSettings/password object.|
-|type|String|The value for this credential. e.g, mysuperhiddenpassword.|
-|value|String|The type for this credential. Valid values: username, password, or other.|
+|type|String|The type for this credential. Valid values: username, password, or other.|
+|value|String|The value for this credential. e.g, mysuperhiddenpassword. Note the value for passwords is write-only, the value can never be read back.|
 
 ## JSON representation
 
