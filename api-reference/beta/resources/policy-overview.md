@@ -25,9 +25,9 @@ Azure Active Directory (Azure AD) uses policies to control Azure AD feature beha
 
 | Use case    | Resource      | See also |
 |:-------------|:------------|:------------|
-|Create a policy allowing end users to consent to permissions classified as low risk.| [authorizationPolicy](authorizationpolicy.md) and [permissionGrantPolicies](permissiongrantpolicy.md) | [Create permissionsGrantPolicy](../api/permissionsgrantpolicy-post-permissionsgrantpolicy.md) and add policy to [roleDefinition](unfiedroledefinition.md)
+|Create a policy allowing end users to consent to permissions classified as low risk.| [authorizationPolicy](authorizationpolicy.md) and [permissionGrantPolicies](permissiongrantpolicy.md) | [Create permissionsGrantPolicy](../api/permissionsgrantpolicy-post-permissionsgrantpolicy.md) and add policy to [roleDefinition](unifiedroledefinition.md)
 
 ## Next steps
 
-Review the different policy resouce types listed above and their various methods
-Try the API in the [Graph Explorer](https://developer.microsoft.com/graph/graph-explorer).
+* Review the different policy resouce types listed above and their various methods.
+* Try the API in the [Graph Explorer](https://developer.microsoft.com/graph/graph-explorer).*

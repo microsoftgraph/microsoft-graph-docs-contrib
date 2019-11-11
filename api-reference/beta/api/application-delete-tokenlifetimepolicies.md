@@ -11,7 +11,7 @@ doc_type: "apiPageType"
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Remove a tokenLifetimePolicy from an [application](../api/application.md) or [servicePrincipal](../api/servicePrincipal.md).
+Remove a tokenLifetimePolicy from an [application](../resources/application.md) or [servicePrincipal](../resources/servicePrincipal.md).
 
 ## Permissions
 

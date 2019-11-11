@@ -11,7 +11,7 @@ doc_type: "resourcePageType"
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Represents a policy that can control the lifetime of an access or ID token issued by Azure Active Directory (Azure AD). You can set token lifetimes for all apps in your organization, for a multi-tenant (multi-organization) application, or for a specific service principal in your organization.  For more scenario details see [Configurable token lifetimes in Azure Active Directory](https://docs.microsoft.com/en-us/azure/active-directory/develop/active-directory-configurable-token-lifetimes).
+Represents a policy that can control the lifetime of an access or ID token issued by Azure Active Directory (Azure AD). You can set token lifetimes for all apps in your organization, for a multi-tenant (multi-organization) application, or for a specific service principal in your organization.  For more scenario details see [Configurable token lifetimes in Azure Active Directory](https://docs.microsoft.com/azure/active-directory/develop/active-directory-configurable-token-lifetimes).
 
 - **Access Token** contains information about the identity and privileges associated with a user account that is used by clients to access protected resources like applications.
 - **ID Token** behaves like an access token, but obtained through the browser.
@@ -24,7 +24,7 @@ Inherits from [policyBase](policyBase.md).
 
 | Method       | Return Type | Description |
 |:-------------|:------------|:------------|
-| [Create tokenLifetimePolicy](../api/tokenlifetimepolicy-post-tokenlifetimepolicy.md) | [tokenLifetimePolicy](tokenlifetimepolicy.md) | Create a tokenLifetimePolicy object. |
+| [Create tokenLifetimePolicy](../api/tokenlifetimepolicy-post-tokenlifetimepolicies.md) | [tokenLifetimePolicy](tokenlifetimepolicy.md) | Create a tokenLifetimePolicy object. |
 | [Get tokenLifetimePolicy](../api/tokenlifetimepolicy-get.md) | [tokenLifetimePolicy](tokenlifetimepolicy.md) | Read properties and relationships of a tokenLifetimePolicy object. |
 | [List tokenLifetimePolicies](../api/tokenlifetimepolicy-list.md) | [tokenLifetimePolicy](tokenlifetimepolicy.md) | Read properties and relationships of tokenLifetimePolicies objects. |
 | [Update tokenLifetimePolicy](../api/tokenlifetimepolicy-update.md) | [tokenLifetimePolicy](tokenlifetimepolicy.md) | Update a tokenLifetimePolicy object. |
