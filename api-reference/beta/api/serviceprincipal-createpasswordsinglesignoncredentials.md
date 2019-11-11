@@ -1,6 +1,6 @@
 ---
 title: "servicePrincipal: createPasswordSingleSignOnCredentials"
-description: "Create password single sign on credentials for a user or group by id."
+description: "Create single sign-on credentials using a password for a user or group."
 localization_priority: Normal
 author: "bharathramh92"
 ms.prod: "microsoft-identity-platform"
@@ -11,7 +11,7 @@ doc_type: "apiPageType"
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Create password single sign on credentials.
+Create single sign-on credentials using a password for a user or group.
 
 ## Permissions
 
@@ -23,7 +23,7 @@ One of the following permissions is required to call this API. To learn more, in
 | Delegated (personal Microsoft account) | Not supported. |
 | Application                            | Application.ReadWrite.All, Directory.AccessAsUser.All, Directory.ReadWrite.All |
 
-Please note, users can create credentials for themselves. Service Principal Owners and admins with the following roles will be able to create credentials for any user or group: GlobalAdministrator, ApplicationAdministrator, CloudApplicationAdministrator.
+Please note, users can create credentials for themselves. Service Principal Owners and admins with the following roles will be able to create credentials for any user or group: GlobalAdministrator, ApplicationAdministrator, CloudApplicationAdministrator. To learn more, see [Directory Roles](https://docs.microsoft.com/azure/active-directory/users-groups-roles/directory-assign-admin-roles#available-roles).
 
 ## HTTP request
 
@@ -65,7 +65,7 @@ The following is an example of the request.
 }-->
 
 ```http
-POST https://graph.microsoft.com/beta/servicePrincipals/createPasswordSingleSignOnCredentials
+POST https://graph.microsoft.com/beta/servicePrincipals/{id}/createPasswordSingleSignOnCredentials
 Content-type: application/json
 
 {
@@ -111,7 +111,7 @@ Content-type: application/json
     },
     {
       "fieldId": "param_password",
-      "value": "pa$$w0rd",
+      "value": null,
       "type": "password"
     }
   ]
