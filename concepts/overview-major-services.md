@@ -3,7 +3,7 @@ title: "Major services and features in Microsoft Graph"
 description: "Microsoft Graph enables you to integrate with the best of Office 365, Windows 10, and Enterprise Mobility and Security services in Microsoft 365, using REST APIs and client libraries. Additionally, it offers security and social intelligence that can boost user productivity, creativity, and team collaboration, and protect business resources and users' data. "
 author: "angelgolfer-ms"
 localization_priority: Priority
-scenarios: "getting-started"
+ms.custom: scenarios:getting-started
 ---
 
 # Major services and features in Microsoft Graph
@@ -71,7 +71,7 @@ Some services in Microsoft Graph make their debut there, others have been well-k
 | People | Azure AD, Outlook, SharePoint, and more | Gets information about persons as ordered by their relevance to a user, determined by the user's communication and collaboration patterns, and business relationships.  | [People and workplace intelligence in Microsoft Graph](social-intel-concept-overview.md) |
 | Document insights (preview) | Delve, OneDrive, Outlook, SharePoint | Uses advanced analytics and machine learning techniques to get documents trending around, viewed, modified, or shared by a user.  | [People and workplace intelligence in Microsoft Graph](social-intel-concept-overview.md)  |
 | Analytics (preview) | MyAnalytics | Uses advanced analytics and machine-learning techniques to provide insights into how people spend their time and who they spend it with. This data can help people plan their day, gain insights into their different work patterns, and help them balance work and life.  | [People and workplace intelligence in Microsoft Graph](social-intel-concept-overview.md) |
-| Profile cards (preview) | Profile | Provides a lightweight mechanism for storing and retrieving information about users within an organization. | [People and workplace intelligence in Microsoft Graph](social-intel-concept-overview.md) |
+| Profile cards (preview) | Profile | Provides a lightweight mechanism for storing and retrieving information about people within a tenant. | [People and workplace intelligence in Microsoft Graph](social-intel-concept-overview.md) |
 
 
 ## Device management
