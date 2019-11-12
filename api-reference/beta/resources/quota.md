@@ -1,12 +1,15 @@
 ---
-author: rgregg
-ms.author: rgregg
+author: JeremyKelley
+description: "The quota resource provides details about space constrains on a drive resource."
 ms.date: 09/10/2017
 title: Quota
+localization_priority: Normal
+doc_type: resourcePageType
+ms.prod: ""
 ---
 # quota resource type
 
-> **Important:** APIs under the /beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported.
+[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 The **quota** resource provides details about space constrains on a [drive](drive.md) resource.
 
@@ -42,7 +45,7 @@ Here is a JSON representation of the resource.
 | remaining     | Int64  | Total space remaining before reaching the quota limit, in bytes. Read-only. |
 | deleted       | Int64  | Total space consumed by files in the recycle bin, in bytes. Read-only.      |
 | state         | string | Enumeration value that indicates the state of the storage space. Read-only. |
-| storagePlanInformation  | [storagePlanInformation](storagePlanInformation.md) | Information about the drive's storage quota plans. Only in Personal OneDrive.|
+| storagePlanInformation  | [storagePlanInformation](storageplaninformation.md) | Information about the drive's storage quota plans. Only in Personal OneDrive.|
 
 ### State enumeration values
 
@@ -53,10 +56,13 @@ Here is a JSON representation of the resource.
 | `critical` | Remaining quota is less than 1% of total quota space.                                                                                                                       |
 | `exceeded` | The used quota has exceeded the total quota. New files or folders cannot be added to the drive until it is under the total quota amount or more storage space is purchased. |
 
-<!-- {
+<!--
+{
   "type": "#page.annotation",
   "description": "The quota facet provides information about how much space the OneDrive has available.",
   "keywords": "quota,available,remaining,used",
   "section": "documentation",
-  "tocPath": "Facets/Quota"
-} -->
+  "tocPath": "Facets/Quota",
+  "suppressions": []
+}
+-->

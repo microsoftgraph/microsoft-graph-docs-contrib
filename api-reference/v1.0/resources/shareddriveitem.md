@@ -1,12 +1,17 @@
 ---
-author: rgregg
-ms.author: rgregg
+author: JeremyKelley
+ms.author: JeremyKelley
 ms.date: 09/10/2017
 title: SharedDriveItem
+localization_priority: Normal
+description: "The sharedDriveItem resource is returned when using the Shares API to access a shared driveItem."
+ms.prod: ""
+doc_type: resourcePageType
 ---
+
 # SharedDriveItem resource type
 
-The **sharedDriveItem** resource is returned when using the [Shares](../api/shares_get.md) API to access a shared [driveItem](driveitem.md).
+The **sharedDriveItem** resource is returned when using the [Shares](../api/shares-get.md) API to access a shared [driveItem](driveitem.md).
 
 ## JSON representation
 
@@ -60,16 +65,16 @@ Alternatively, for **driveItems** shared from personal OneDrive accounts, the fo
 | **items**         | [**driveItem**][driveItem] collection | All driveItems contained in the sharing root. This collection cannot be enumerated.
 | **root**          | [**driveItem**][driveItem]   | Used to access the underlying **driveItem**. Deprecated -- use `driveItem` instead.
 
-[driveItem]: driveItem.md
+[driveItem]: driveitem.md
 [list]: list.md
-[listItem]: listItem.md
+[listItem]: listitem.md
 [site]: site.md
 
 ## Methods
 
 | Method                                  | REST Path                |
 | :-------------------------------------- | :----------------------- |
-| [Get shared item](../api/shares_get.md) | `GET /shares/{share-id}` |
+| [Get shared item](../api/shares-get.md) | `GET /shares/{share-id}` |
 
 ## Remarks
 

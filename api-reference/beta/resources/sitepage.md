@@ -1,12 +1,16 @@
 ---
 author: rahmit
-ms.author: rahmit
+description: "This resource represents a page in the SitePages list."
 ms.date: 03/15/2018
 title: SitePage
+localization_priority: Normal
+ms.prod: "sharepoint"
+doc_type: resourcePageType
 ---
+
 # sitePage resource
 
-> **Important:** APIs under the /beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported.
+[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 This resource represents a page in the SitePages [list][].
 It contains the title, layout, and a collection of [webPart][]s.
@@ -24,11 +28,11 @@ All examples below are relative to a [site][], eg: `https://graph.microsoft.com/
 | [Delete][]                      | DELETE /pages/{page-id}
 | [Publish][]                     | POST /pages/{page-id}/publish
 
-[List pages]: ../api/sitepage_list.md
-[Get page]: ../api/sitepage_get.md
-[Create]: ../api/sitepage_create.md
-[Delete]: ../api/sitepage_delete.md
-[Publish]: ../api/sitepage_publish.md
+[List pages]: ../api/sitepage-list.md
+[Get page]: ../api/sitepage-get.md
+[Create]: ../api/sitepage-create.md
+[Delete]: ../api/sitepage-delete.md
+[Publish]: ../api/sitepage-publish.md
 
 ## JSON representation
 
@@ -38,7 +42,8 @@ Here is a JSON representation of a **sitePage** resource.
   "blockType": "resource",
   "keyProperty": "id",
   "baseType": "microsoft.graph.baseItem",
-  "@odata.type": "microsoft.graph.sitePage"
+  "@odata.type": "microsoft.graph.sitePage",
+  "openType": true
 }-->
 
 ```json
@@ -47,19 +52,21 @@ Here is a JSON representation of a **sitePage** resource.
 
   /* page content */
   "title": "string",
-  "pageLayout": "Article",
-  "webParts": [{ "@odata.type": "microsoft.graph.sitePageWebParts" }],
+  "pageLayoutType": "String",
+  "webParts": [{ "@odata.type": "microsoft.graph.webPart" }],
 
   /* authoring metadata */
   "publishingState": { "@odata.type": "microsoft.graph.publicationFacet" },
 
-  /* inherited from baseItem */
-  "id": "string",
-  "name": "string",
+   /* inherited from baseItem */
+  "id": "string (identifier)",
   "createdBy": { "@odata.type": "microsoft.graph.identitySet" },
+  "createdDateTime": "String (timestamp)",
+  "description": "string",
   "eTag": "string",
   "lastModifiedBy": { "@odata.type": "microsoft.graph.identitySet" },
-  "lastModifiedDateTime": "datetime",
+  "lastModifiedDateTime": "String (timestamp)",
+  "name": "string",
   "parentReference": { "@odata.type": "microsoft.graph.itemReference" },
   "webUrl": "url"
 }
@@ -108,19 +115,20 @@ The following properties are inherited from **[baseItem][]**.
 
 The **sitePage** resource does not have relationships to other resources.
 
-[baseItem]: baseItem.md
-[contentTypeInfo]: contentTypeInfo.md
-[columnDefinition]: columnDefinition.md
-[identitySet]: identitySet.md
-[itemReference]: itemReference.md
+[baseItem]: baseitem.md
+[contentTypeInfo]: contenttypeinfo.md
+[columnDefinition]: columndefinition.md
+[identitySet]: identityset.md
+[itemReference]: itemreference.md
 [list]: list.md
-[listInfo]: listInfo.md
-[listItem]: listItem.md
-[publicationFacet]: publicationFacet.md
+[listInfo]: listinfo.md
+[listItem]: listitem.md
+[publicationFacet]: publicationfacet.md
 [site]: site.md
-[webPart]: webPart.md
+[webPart]: webpart.md
 
-<!-- {
+<!--
+{
   "type": "#page.annotation",
   "description": "",
   "keywords": "",
@@ -128,8 +136,10 @@ The **sitePage** resource does not have relationships to other resources.
   "tocPath": "Resources/Page",
   "tocBookmarks": {
     "Page": "#"
-  }
-} -->
+  },
+  "suppressions": []
+}
+-->
 
 <!--
 TODO:

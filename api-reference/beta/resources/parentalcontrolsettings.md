@@ -1,6 +1,15 @@
+---
+title: "parentalControlSettings resource type"
+description: "Specifies parental control settings for an application. These settings control the consent experience."
+localization_priority: Normal
+doc_type: resourcePageType
+ms.prod: "microsoft-identity-platform"
+author: "davidmu1"
+---
+
 # parentalControlSettings resource type
 
-> **Important:** APIs under the /beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported.
+[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 Specifies parental control settings for an application. These settings control the consent experience.
 
@@ -14,6 +23,10 @@ Specifies parental control settings for an application. These settings control t
 ## JSON representation
 Here is a JSON representation of the resource.
 
+<!--{
+  "blockType": "resource",
+  "@odata.type": "microsoft.graph.parentalControlSettings"
+}-->
 ```json
 {
   "countriesBlockedForMinors": [ "String" ],

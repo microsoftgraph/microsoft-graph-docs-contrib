@@ -1,3 +1,12 @@
+---
+title: "ChartAxisFormat resource type"
+description: "Encapsulates the format properties for the chart axis."
+author: "lumine2008"
+localization_priority: Normal
+ms.prod: "excel"
+doc_type: resourcePageType
+---
+
 # ChartAxisFormat resource type
 
 Encapsulates the format properties for the chart axis.

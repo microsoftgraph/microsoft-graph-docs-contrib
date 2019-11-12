@@ -1,3 +1,12 @@
+---
+title: "WorksheetProtectionOptions resource type"
+description: "Represents the options in sheet protection."
+author: "lumine2008"
+localization_priority: Normal
+ms.prod: "excel"
+doc_type: resourcePageType
+---
+
 # WorksheetProtectionOptions resource type
 
 Represents the options in sheet protection.

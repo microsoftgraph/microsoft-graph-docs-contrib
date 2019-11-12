@@ -1,6 +1,15 @@
+---
+title: "operation resource type"
+description: "The status of a long-running operation."
+localization_priority: Normal
+doc_type: resourcePageType
+ms.prod: ""
+author: ""
+---
+
 # operation resource type
 
-> **Important:** APIs under the /beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported.
+[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 The status of a long-running operation.
 
@@ -23,7 +32,7 @@ None
 
 ## JSON representation
 
-Here is a JSON representation of the resource.
+The following is a JSON representation of the resource.
 
 <!--{
   "blockType": "resource",
@@ -57,10 +66,13 @@ Here is a JSON representation of the resource.
 
 <!-- uuid: 13fa92b1-3b41-498b-aab1-f943464a124f
 2018-03-30 10:29:30 UTC -->
-<!-- {
+<!--
+{
   "type": "#page.annotation",
   "description": "operation resource",
   "keywords": "",
   "section": "documentation",
-  "tocPath": ""
-}-->
+  "tocPath": "",
+  "suppressions": []
+}
+-->

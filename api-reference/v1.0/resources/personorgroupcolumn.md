@@ -1,12 +1,16 @@
 ---
-author: rgregg
-ms.author: rgregg
+author: "simonhult"
 ms.date: 09/11/2017
 title: PersonOrGroupColumn
+localization_priority: Normal
+ms.prod: "insights"
+description: "The personOrGroupColumn on a columnDefinition resource indicates that the column's values represent a person or group chosen from the directory."
+doc_type: resourcePageType
 ---
+
 # PersonOrGroupColumn resource type
 
-The **personOrGroupColumn** on a [columnDefinition](columnDefinition.md) resource indicates that the column's values represent a person or group chosen from the directory.
+The **personOrGroupColumn** on a [columnDefinition](columndefinition.md) resource indicates that the column's values represent a person or group chosen from the directory.
 
 ## JSON representation
 

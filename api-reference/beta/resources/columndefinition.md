@@ -1,12 +1,15 @@
 ---
-author: rgregg
-ms.author: rgregg
+author: JeremyKelley
+description: "Here is a JSON representation of a columnDefinition resource."
 ms.date: 09/11/2017
 title: ColumnDefinition
+localization_priority: Normal
+doc_type: resourcePageType
+ms.prod: ""
 ---
 # columnDefinition resource type
 
-> **Important:** APIs under the /beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported.
+[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 ## JSON representation
 
@@ -86,27 +89,30 @@ ColumnDefinitions and field values for `hidden` columns are not shown by default
 To see them when listing **columnDefinitions**, include `hidden` in your `$select` statement.
 To see them when showing **field** values on [listItems][listItem], include the desired columns by name in your `$select` statement.
 
-[booleanColumn]: booleanColumn.md
-[calculatedColumn]: calculatedColumn.md
-[choiceColumn]: choiceColumn.md
-[currencyColumn]: currencyColumn.md
-[dateTimeColumn]: dateTimeColumn.md
-[defaultColumnValue]: defaultColumnValue.md
-[geolocationColumn]: geolocationColumn.md
-[lookupColumn]: lookupColumn.md
-[numberColumn]: numberColumn.md
-[personOrGroupColumn]: personOrGroupColumn.md
-[textColumn]: textColumn.md
-[fieldValueSet]: fieldValueSet.md
+[booleanColumn]: booleancolumn.md
+[calculatedColumn]: calculatedcolumn.md
+[choiceColumn]: choicecolumn.md
+[currencyColumn]: currencycolumn.md
+[dateTimeColumn]: datetimecolumn.md
+[defaultColumnValue]: defaultcolumnvalue.md
+[geolocationColumn]: geolocationcolumn.md
+[lookupColumn]: lookupcolumn.md
+[numberColumn]: numbercolumn.md
+[personOrGroupColumn]: personorgroupcolumn.md
+[textColumn]: textcolumn.md
+[fieldValueSet]: fieldvalueset.md
 [fields]: fieldvalueset.md
 [listItem]: listitem.md
 
 [SPFieldType]: https://msdn.microsoft.com/library/microsoft.sharepoint.spfieldtype.aspx
 
-<!-- {
+<!--
+{
   "type": "#page.annotation",
   "description": "",
   "keywords": "",
   "section": "documentation",
-  "tocPath": "Resources/ColumnDefinition"
-} -->
+  "tocPath": "Resources/ColumnDefinition",
+  "suppressions": []
+}
+-->

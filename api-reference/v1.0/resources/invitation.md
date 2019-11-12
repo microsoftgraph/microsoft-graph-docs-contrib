@@ -1,6 +1,15 @@
-# invitation manager
+---
+title: "invitation resource type"
+description: "Represents an invitation that is used to add external users to an organization."
+localization_priority: Priority
+author: "davidmu1"
+ms.prod: "microsoft-identity-platform"
+doc_type: resourcePageType
+---
 
-Use the invitation manager to create an invite, in order to add an external user to the organization. 
+# invitation resource type
+
+Represents an invitation that is used to add external users to an organization. 
 
 The invitation process uses the following flow:
 
@@ -15,7 +24,7 @@ Creating an invitation will return a redemption URL in the response (*inviteRede
 ## Methods
 | Method       | Return Type  |Description|
 |:---------------|:--------|:----------|
-|[Create invitation](../api/invitation_post.md) | invitation | Write properties and relationships of invitation object.|
+|[Create invitation](../api/invitation-post.md) | invitation | Write properties and relationships of invitation object.|
 
 ## Properties
 | Property	   | Type	|Description|

@@ -1,12 +1,16 @@
 ---
-author: rgregg
-ms.author: rgregg
+author: JeremyKelley
+ms.author: JeremyKelley
 ms.date: 09/11/2017
 title: CalculatedColumn
+localization_priority: Normal
+description: "The calculatedColumn on a columnDefinition resource indicates that the column's data is calculated based on other columns in the site."
+ms.prod: ""
+doc_type: resourcePageType
 ---
 # CalculatedColumn resource type
 
-The **calculatedColumn** on a [columnDefinition](columnDefinition.md) resource indicates that the column's data is calculated based on other columns in the site.
+The **calculatedColumn** on a [columnDefinition](columndefinition.md) resource indicates that the column's data is calculated based on other columns in the site.
 
 ## JSON representation
 

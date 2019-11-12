@@ -1,3 +1,12 @@
+---
+title: "fileHash resource type"
+description: "Contains stateful information about file hashes (cryptographic and location-sensitive)."
+localization_priority: Normal
+doc_type: resourcePageType
+ms.prod: ""
+author: ""
+---
+
 # fileHash resource type
 
 Contains stateful information about file hashes (cryptographic and location-sensitive).

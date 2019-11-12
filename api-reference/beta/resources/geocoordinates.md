@@ -1,15 +1,29 @@
 ---
-author: rgregg
-ms.author: rgregg
+author: JeremyKelley
+description: "The geoCoordinates resource provides geographic coordinates and elevation of a location based on metadata contained within the file."
 ms.date: 09/10/2017
 title: GeoCoordinates
+localization_priority: Normal
+doc_type: resourcePageType
+ms.prod: ""
 ---
-# GeoCoordinates resource type
+# geoCoordinates resource type
 
-> **Important:** APIs under the /beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported.
+[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-The **GeoCoordinates** resource provides geographic coordinates and elevation of a location based on metadata contained within the file.
-If a [**DriveItem**](driveitem.md) has a non-null **location** facet, the item represents a file with a known location assocaited with it.
+Provides geographic coordinates and elevation of a location based on metadata contained within the file.
+If a [**driveItem**](driveitem.md) has a non-null **location** facet, the item represents a file with a known location assocaited with it.
+
+> [!NOTE]
+> When updating the latitude and longitude of a photo, a [photo](photo.md) resource (empty or otherwise) must be provided.
+
+## Properties
+
+| Property  | Type   | Description
+|:----------|:-------|:--------------------------------------------------------
+| altitude  | Double | Optional. The altitude (height), in feet,  above sea level for the item. Read-only.
+| latitude  | Double | Optional. The latitude, in decimal, for the item. Writable on OneDrive Personal.
+| longitude | Double | Optional. The longitude, in decimal, for the item. Writable on OneDrive Personal.
 
 ## JSON representation
 
@@ -31,22 +45,13 @@ Here is a JSON representation of the resource
 }
 ```
 
-## Properties
-
-| Property  | Type   | Description
-|:----------|:-------|:--------------------------------------------------------
-| altitude  | Double | Optional. The altitude (height), in feet,  above sea level for the item. Read-only.
-| latitude  | Double | Optional. The latitude, in decimal, for the item. Read-only.
-| longitude | Double | Optional. The longitude, in decimal, for the item. Read-only.
-
-## Remarks
-
-For more information about the facets on a DriveItem, see [DriveItem](driveitem.md).
-
-<!-- {
+<!--
+{
   "type": "#page.annotation",
   "description": "The location facet provides geographic location related properties for an item",
   "keywords": "location,geographic,item,onedrive",
   "section": "documentation",
-  "tocPath": "Facets/Location"
-} -->
+  "tocPath": "Facets/Location",
+  "suppressions": []
+}
+-->

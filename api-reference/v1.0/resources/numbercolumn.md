@@ -1,12 +1,17 @@
 ---
-author: rgregg
-ms.author: rgregg
+author: JeremyKelley
+ms.author: JeremyKelley
 ms.date: 09/11/2017
 title: NumberColumn
+localization_priority: Normal
+description: "The numberColumn on a columnDefinition resource indicates that the column's values are numbers."
+ms.prod: ""
+doc_type: resourcePageType
 ---
+
 # NumberColumn resource type
 
-The **numberColumn** on a [columnDefinition](columnDefinition.md) resource indicates that the column's values are numbers.
+The **numberColumn** on a [columnDefinition](columndefinition.md) resource indicates that the column's values are numbers.
 
 ## JSON representation
 

@@ -1,3 +1,12 @@
+---
+title: "fileSecurityState resource type"
+description: "Contains information about the file (not process) related to the alert."
+localization_priority: Normal
+author: ""
+ms.prod: ""
+doc_type: resourcePageType
+---
+
 # fileSecurityState resource type
 
 Contains information about the file (not process) related to the alert.

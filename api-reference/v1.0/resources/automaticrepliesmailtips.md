@@ -1,3 +1,12 @@
+---
+title: "automaticRepliesMailTips resource type"
+description: "MailTips about any automatic replies that have been set up on a mailbox."
+localization_priority: Normal
+author: ""
+ms.prod: ""
+doc_type: resourcePageType
+---
+
 # automaticRepliesMailTips resource type
 
 

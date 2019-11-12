@@ -1,3 +1,12 @@
+---
+title: " controlScore resource type"
+description: "This resource contains a tenant score and description for an individual control."
+localization_priority: Normal
+doc_type: resourcePageType
+ms.prod: ""
+author: ""
+---
+
 #  controlScore resource type
 
 This resource contains a tenant score and description for an individual control.
@@ -24,7 +33,7 @@ The following is a JSON representation of the resource.
 ```json
 {
   "controlName": "String",
-  "score": "String",
+  "score": "Double",
   "controlCategory": "String",
   "description": "String"
 }

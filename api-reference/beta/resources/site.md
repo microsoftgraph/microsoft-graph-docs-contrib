@@ -1,12 +1,15 @@
 ---
-author: rgregg
-ms.author: rgregg
+author: JeremyKelley
+description: "The site resource provides metadata and relationships for a SharePoint site."
 ms.date: 09/10/2017
 title: Site
+localization_priority: Priority
+ms.prod: "sharepoint"
+doc_type: resourcePageType
 ---
 # site resource type
 
-> **Important:** APIs under the /beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported.
+[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 The **site** resource provides metadata and relationships for a SharePoint site.
 
@@ -23,23 +26,27 @@ The **site** resource provides metadata and relationships for a SharePoint site.
 | [List pages][]                 | GET /sites/{site-id}/pages
 | [List root sites][]            | GET /sites?filter=root ne null&select=siteCollection,webUrl
 | [Search for sites][]           | GET /sites?search={query}
+| [Follow Site][]                | POST /users/{user-id}/followedSites/add
+| [Unfollow Site][]              | POST /users/{user-id}/followedSites/remove
 
-[Get site]: ../api/site_get.md
-[Get root site]: ../api/site_get.md
-[Get site by path]: ../api/site_getbypath.md
-[Get site for a group]: ../api/site_get.md
-[Get analytics]: ../api/itemAnalytics_get.md
-[Get activities by interval]: ../api/itemActivity_getByInterval.md
-[List pages]: ../api/sitepage_list.md
-[List root sites]: ../api/site_list.md
-[Search for sites]: ../api/site_search.md
+[Get site]: ../api/site-get.md
+[Get root site]: ../api/site-get.md
+[Get site by path]: ../api/site-getbypath.md
+[Get site for a group]: ../api/site-get.md
+[Get analytics]: ../api/itemanalytics-get.md
+[Get activities by interval]: ../api/itemactivity-getbyinterval.md
+[List pages]: ../api/sitepage-list.md
+[List root sites]: ../api/site-list.md
+[Search for sites]: ../api/site-search.md
+[Follow site]: ../api/site-follow.md
+[Unfollow site]: ../api/site-unfollow.md
 
 
 ## Properties
 
 | Property name            | Type               | Description
 |:-------------------------|:-------------------|:-----------------------------
-| **id**                   | string             | The unique identifier of the item. Read-only.
+| **id**                   | string             | The [unique identifier](#id-property) of the item. Read-only.
 | **createdDateTime**      | DateTimeOffset     | The date and time the item was created. Read-only.
 | **description**          | string             | The descriptive text for the site.
 | **eTag**                 | string             | ETag for the item. Read-only.                                                                  |
@@ -50,6 +57,17 @@ The **site** resource provides metadata and relationships for a SharePoint site.
 | **sharepointIds**        | [sharepointIds][]  | Returns identifiers useful for SharePoint REST compatibility. Read-only.
 | **siteCollection**       | [siteCollection][] | Provides details about the site's site collection. Available only on the root site. Read-only.
 | **webUrl**               | string (url)       | URL that displays the item in the browser. Read-only.
+
+### id property
+A **site** is identified by a unique ID that is a composite of the following values:
+* Site collection hostname (contoso.sharepoint.com)
+* Site collection unique ID (GUID)
+* Site unique ID (GUID)
+  
+The `root` identifier always references the root site for a given target, as follows:
+
+* `/sites/root`: The tenant root site.
+* `/groups/{group-id}/sites/root`: The group's team site.
 
 ## Relationships
 
@@ -67,16 +85,16 @@ The **site** resource provides metadata and relationships for a SharePoint site.
 
 [columnDefinition]: columndefinition.md
 [baseItem]: baseitem.md
-[contentType]: contentType.md
+[contentType]: contenttype.md
 [drive]: drive.md
 [identitySet]: identityset.md
-[itemAnalytics]: itemAnalytics.md
+[itemAnalytics]: itemanalytics.md
 [list]: list.md
-[sitePage]: sitePage.md
+[sitePage]: sitepage.md
 [root]: root.md
 [site]: site.md
-[sharepointIds]: sharepointIds.md
-[siteCollection]: siteCollection.md
+[sharepointIds]: sharepointids.md
+[siteCollection]: sitecollection.md
 
 ## JSON representation
 
@@ -127,11 +145,16 @@ The **site** resource is derived from [**baseItem**](baseitem.md) and inherits p
 }
 ```
 
-<!-- {
+<!--
+{
   "type": "#page.annotation",
   "description": "",
   "keywords": "",
   "section": "documentation",
   "tocPath": "Sites",
-  "tocBookmarks": { "Resources/Site": "#" }
-} -->
+  "tocBookmarks": {
+    "Resources/Site": "#"
+  },
+  "suppressions": []
+}
+-->

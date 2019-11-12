@@ -1,12 +1,15 @@
 ---
 author: daspek
-ms.author: dspektor
+description: "The itemActionStat resource provides aggregate details about an action over a period of time."
 ms.date: 09/14/2017
 title: ItemActionStat
+localization_priority: Normal
+doc_type: resourcePageType
+ms.prod: ""
 ---
 # itemActionStat resource type
 
-> **Important:** APIs under the /beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported.
+[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 The **itemActionStat** resource provides aggregate details about an action over a period of time.
 
@@ -32,10 +35,13 @@ The **itemActionStat** resource provides aggregate details about an action over 
 | actionCount | Int32 | The number of times the action took place. Read-only.
 | actorCount  | Int32 | The number of distinct actors that performed the action. Read-only.
 
-<!-- {
+<!--
+{
   "type": "#page.annotation",
   "description": "The ItemActionStat object provides aggregate details about an action over a period of time.",
   "keywords": "activities,activity,action,analytics",
   "section": "documentation",
-  "tocPath": "Resources/ItemActionStat"
-} -->
+  "tocPath": "Resources/ItemActionStat",
+  "suppressions": []
+}
+-->

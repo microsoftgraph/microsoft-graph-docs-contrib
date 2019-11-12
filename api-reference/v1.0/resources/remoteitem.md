@@ -1,9 +1,14 @@
 ---
-author: rgregg
-ms.author: rgregg
+author: JeremyKelley
+ms.author: JeremyKelley
 ms.date: 09/10/2017
 title: RemoteItem
+localization_priority: Normal
+description: "The remoteItem resource indicates that a driveItem references an item that exists in another drive."
+ms.prod: ""
+doc_type: resourcePageType
 ---
+
 # RemoteItem resource type
 
 The **remoteItem** resource indicates that a [**driveItem**](driveitem.md) references an item that exists in another drive.
@@ -63,7 +68,7 @@ This resource provides the unique IDs of the source drive and target item.
 | webDavUrl            | Url                                 | DAV compatible URL for the item.                                                                                                                                  |
 | webUrl               | Url                                 | URL that displays the resource in the browser. Read-only.                                                                                                         |
 
-[specialFolder]: specialFolder.md
+[specialFolder]: specialfolder.md
 
 ## Remarks
 

@@ -1,3 +1,12 @@
+---
+title: "process resource type"
+description: "Contains stateful information about the process related to the alert."
+localization_priority: Normal
+author: ""
+ms.prod: ""
+doc_type: resourcePageType
+---
+
 # process resource type
 
 Contains stateful information about the process related to the alert.

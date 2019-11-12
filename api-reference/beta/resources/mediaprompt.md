@@ -1,6 +1,15 @@
+---
+title: "mediaPrompt resource type"
+description: "The mediaPrompt type."
+author: "VinodRavichandran"
+localization_priority: Normal
+ms.prod: "cloud-communications"
+doc_type: resourcePageType
+---
+
 # mediaPrompt resource type
 
-> **Important:** APIs under the /beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported.
+[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 The mediaPrompt type.
 
@@ -8,12 +17,11 @@ The mediaPrompt type.
 
 | Property    | Type                      | Description                                                                     |
 | :---------- | :------------------------ | :------------------------------------------------------------------------------ |
-| loop        | Int32                     | The loop count. 0 value indicates to loop infinitely. The default value is `1`. |
 | mediaInfo   | [mediaInfo](mediainfo.md) | The media information                                                           |
 
 ## JSON representation
 
-Here is a JSON representation of the resource.
+The following is a JSON representation of the resource.
 
 <!-- {
   "blockType": "resource",
@@ -25,7 +33,6 @@ Here is a JSON representation of the resource.
 
 ```json
 {
-  "loop": 1024,
   "mediaInfo": { "@odata.type": "#microsoft.graph.mediaInfo" }
 }
 ```
@@ -38,20 +45,24 @@ Here is a JSON representation of the resource.
 }-->
 ```json
 {
+  "@odata.type": "#microsoft.graph.mediaPrompt",
   "mediaInfo": {
+    "@odata.type": "#microsoft.graph.mediaInfo",
     "uri": "https://cdn.contoso.com/beep.wav",
-    "resourceId": "1D6DE2D4-CD51-4309-8DAA-70768651088E",
-  },
-  "loop": 5
+    "resourceId": "1D6DE2D4-CD51-4309-8DAA-70768651088E"
+  }
 }
 ```
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2015-10-25 14:57:30 UTC -->
-<!-- {
+<!--
+{
   "type": "#page.annotation",
   "description": "mediaPrompt resource",
   "keywords": "",
   "section": "documentation",
-  "tocPath": ""
-}-->
+  "tocPath": "",
+  "suppressions": []
+}
+-->

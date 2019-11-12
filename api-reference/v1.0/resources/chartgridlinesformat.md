@@ -1,3 +1,12 @@
+---
+title: "ChartGridlinesFormat resource type"
+description: "Encapsulates the format properties for chart gridlines."
+author: "lumine2008"
+localization_priority: Normal
+ms.prod: "excel"
+doc_type: resourcePageType
+---
+
 # ChartGridlinesFormat resource type
 
 Encapsulates the format properties for chart gridlines.
