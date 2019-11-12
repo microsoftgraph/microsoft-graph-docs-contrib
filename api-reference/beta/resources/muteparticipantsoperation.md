@@ -1,26 +1,28 @@
 --- 
-title: "UnmuteParticipantOperation resource type"
-description: "Describes the response format of a call participant unmute operation."
+title: "MuteParticipantsOperation resource type"
+description: "The muteParticipants operation to obtain the result of the muteAll action."
 author: "VinodRavichandran"
 localization_priority: Normal
 ms.prod: "cloud-communications"
 doc_type: resourcePageType
 ---
 
-# UnmuteParticipantOperation resource type
+
+# MuteParticipantsOperation resource type
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Describes the response format of a call participant unmute operation.
+Describes the response format of a call participant muteAll operation.
 
 ## Properties
 
 | Property                       | Type                        | Description                                                                                                                                       |
 | :----------------------------- | :---------------------------| :-------------------------------------------------------------------------------------------------------------------------------------------------|
 | clientContext                  | String                      | Unique client context string. Can have a maximum of 256 characters.                                                                               |
-| id                             | String                      | The server operation ID. Read-only.                                                                                            |
-| resultInfo                     | [resultInfo](resultinfo.md) | The result information.  Read-only.                                                                                            |
-| status                         | String                      | Possible values are: `notStarted`, `running`, `completed`, `failed`. Read-only.                                                 |
+| id                             | String                      | The server operation id. Read-only. Server generated.                                                                                             |
+| participants                   | String collection           | The participants to be muted.                                                                                                                     |
+| resultInfo                     | [resultInfo](resultinfo.md) | The result information.  Read-only. Server generated.                                                                                             |
+| status                         | String                      | Possible values are: `notStarted`, `running`, `completed`, `failed`. Read-only. Server generated.                                                 |
 
 ## Relationships
 None
@@ -34,12 +36,13 @@ The following is a JSON representation of the resource.
   "optionalProperties": [
 
   ],
-  "@odata.type": "microsoft.graph.unmuteParticipantOperation"
+  "@odata.type": "microsoft.graph.muteParticipantsOperation"
 }-->
 ```json
 {
   "clientContext": "String",
   "id": "String (identifier)",
+  "participants": ["String"],
   "resultInfo": {"@odata.type": "#microsoft.graph.resultInfo"},
   "status": "notStarted | running | completed | failed"
 }
@@ -49,7 +52,7 @@ The following is a JSON representation of the resource.
 2015-10-25 14:57:30 UTC -->
 <!-- {
   "type": "#page.annotation",
-  "description": "unmuteParticipantOperation resource",
+  "description": "muteParticipantsOperation resource",
   "keywords": "",
   "section": "documentation",
   "tocPath": ""
