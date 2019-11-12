@@ -49,7 +49,7 @@ In the request body, provide a JSON object with the following parameters.
 |clientContext|String|Unique Client Context string. Max limit is 256 chars.|
 
 ## Response
-If successful, this method returns a `200 OK` response code and a [commsOperation](../resources/commsoperation.md) object in the response body.
+If successful, this method returns a `200 OK` response code and a [muteParticipantOperation](../resources/muteParticipantOperation.md) object in the response body.
 
 >**Note:** Whem this API returns a successful response, all participants will receive a roster update.
 

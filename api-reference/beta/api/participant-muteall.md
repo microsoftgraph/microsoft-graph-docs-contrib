@@ -44,7 +44,7 @@ In the request body, provide a JSON object with the following parameters.
 |clientContext|String|The client context.|
 
 ## Response
-If successful, this method returns `200 OK` response code and [commsOperation](../resources/commsoperation.md) object in the response body.
+If successful, this method returns a `200 OK` response code and a [muteParticipantsOperation](../resources/muteParticipantsOperation.md) object in the response body.
 
 ## Example
 The following example shows how to call this API.

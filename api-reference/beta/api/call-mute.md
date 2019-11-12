@@ -13,6 +13,12 @@ doc_type: apiPageType
 
 Allows the application to mute itself.
 
+This is a server mute, meaning that the server will drop all audio packets for this participant, even if the participant continues to stream audio.
+
+For further information on how to handle operations, please review [commsOperation](../resources/commsOperation.md)
+
+> **Note:** This is only supported for group calls.
+
 ## Permissions
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
 
@@ -43,7 +49,9 @@ In the request body, provide a JSON object with the following parameters.
 |clientContext|String|The client context.|
 
 ## Response
-If successful, this method returns `200 OK` response code and a [commsOperation](../resources/commsoperation.md) object in the response body.
+If successful, this method returns `200 OK` response code and a [muteParticipantOperation](../resources/muteParticipantOperation.md) object in the response body.
+
+> **Note:** Once this operation returns a successful response, all participants will receive a roster update
 
 ## Example
 The following example shows how to call this API.
