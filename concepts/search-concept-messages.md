@@ -8,7 +8,7 @@ ms.prod: "search"
 
 # Search messages
 
-The Microsoft Search API lets apps search for information in email messages, return messages ranked by relevance, and render a dedicated search experience. The search applies to the body and attachments of messages in the user's own mailbox. 
+The Microsoft Search API lets apps search for information in email messages, return messages ranked by relevance, and render a dedicated search experience. The search applies to the body and attachments of messages in the user's own mailbox.
 
 A search query can include [filters](https://support.office.com/article/learn-to-narrow-your-search-criteria-for-better-searches-in-outlook-d824d1e9-a255-4c8a-8553-276fb895a8da) that end users enter in the **Search** text box in Outlook.
 
@@ -16,9 +16,7 @@ Message search results are sorted by **receivedDateTime** in descending order.
 
 Message search applies to work or school accounts. Users can search their own mailbox, but not in delegated mailboxes. See further [known limitations](#known-limitations) below.
 
-Message search will also look for attachments. The list [file types supported for attachments](https://docs.microsoft.com/en-us/SharePoint/technical-reference/default-crawled-file-name-extensions-and-parsed-file-types) is the same as the for SharePoint Online.
-
-
+Message search also looks for attachments. The [file types supported for attachments](https://docs.microsoft.com/SharePoint/technical-reference/default-crawled-file-name-extensions-and-parsed-file-types) is the same as that for SharePoint Online.
 
 ## Examples
 
