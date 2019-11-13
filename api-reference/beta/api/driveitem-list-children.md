@@ -58,7 +58,7 @@ To retrieve files in the root of the drive, use the `root` relationship on the d
 # [HTTP](#tab/http)
 <!-- { "blockType": "request", "name": "list-children-root", "scopes": "files.read" } -->
 
-```http
+```msgraph-interactive
 GET /me/drive/root/children
 ```
 # [C#](#tab/csharp)
@@ -85,7 +85,7 @@ To retrieve files in the root of the drive, use the `root` relationship on the d
 # [HTTP](#tab/http)
 <!-- { "blockType": "request", "name": "list-children", "scopes": "files.read" } -->
 
-```http
+```msgraph-interactive
 GET /drives/{drive-id}/items/{item-id}/children
 ```
 # [C#](#tab/csharp)
@@ -136,7 +136,7 @@ Content-type: application/json
 }
 ```
 
-**Note:** If a collection exceeds the default page size (200 items), the **@odata.nextLink** property is returned in the response to indicate more items are available and provide the request URL for the next page of items.
+**Note:** If a collection exceeds the default page size (200 items), the **\@odata.nextLink** property is returned in the response to indicate more items are available and provide the request URL for the next page of items.
 
 You can control the page size through [optional query string parameters](https://developer.microsoft.com/graph/docs/concepts/query_parameters)
 

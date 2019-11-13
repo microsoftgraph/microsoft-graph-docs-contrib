@@ -70,7 +70,7 @@ Here is an example of the request.
   "blockType": "request",
   "name": "get_contact"
 }-->
-```http
+```msgraph-interactive
 GET https://graph.microsoft.com/v1.0/me/contacts/{id}
 ```
 # [C#](#tab/csharp)

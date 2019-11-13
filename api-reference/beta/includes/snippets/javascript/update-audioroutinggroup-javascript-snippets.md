@@ -22,8 +22,8 @@ const audioRoutingGroup = {
   ]
 };
 
-let res = await client.api('/app/calls/{id}/audioRoutingGroups/{id}')
+let res = await client.api('/communications/calls/{id}/audioRoutingGroups/{id}')
 	.version('beta')
-	.update({audioRoutingGroup : audioRoutingGroup});
+	.update(audioRoutingGroup);
 
 ```

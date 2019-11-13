@@ -73,7 +73,7 @@ The following example gets the signed-in user's default calendar.
   "blockType": "request",
   "name": "get_calendar"
 }-->
-```http
+```msgraph-interactive
 GET https://graph.microsoft.com/beta/me/calendar
 ```
 # [C#](#tab/csharp)
@@ -116,6 +116,12 @@ Content-type: application/json
     "isShared":false,
     "isSharedWithMe":false,
     "canEdit":true,
+    "allowedOnlineMeetingProviders": [
+                "teamsForBusiness"
+            ],
+    "defaultOnlineMeetingProvider": "teamsForBusiness",
+    "isTallyingResponses": true,
+    "isRemovable": false,
     "owner":{
         "name":"Samantha Booth",
         "address":"samanthab@adatum.onmicrosoft.com"

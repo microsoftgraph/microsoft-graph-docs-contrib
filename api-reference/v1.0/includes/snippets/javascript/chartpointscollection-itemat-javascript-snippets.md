@@ -15,6 +15,6 @@ const workbookChartPoint = {
 };
 
 let res = await client.api('/me/drive/items/{id}/workbook/worksheets/{id|name}/charts/{name}/series/{series-id}/points/itemAt')
-	.post({workbookChartPoint : workbookChartPoint});
+	.post(workbookChartPoint);
 
 ```

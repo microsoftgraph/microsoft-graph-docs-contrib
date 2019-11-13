@@ -13,7 +13,7 @@ doc_type: apiPageType
 Retrieve the properties of a collection of **riskDetection** objects.
 
 >[!NOTE]
->You must have an Azure AD Premium P2 license to use the risk detection API.
+>You must have an Azure AD Premium P1 or P2 license to use the risk detection API.
 
 ## Permissions
 
@@ -64,7 +64,7 @@ Here is an example of the request.
   "name": "list_riskDetection"
 }-->
 
-```http
+```msgraph-interactive
 GET https://graph.microsoft.com/beta/riskDetections
 ```
 # [C#](#tab/csharp)
@@ -142,7 +142,7 @@ The following example shows how to use `$filter` to get the collection of risk d
   "name": "list_filter_riskDetections"
 } -->
 
-```http
+```msgraph-interactive
 GET https://graph.microsoft.com/beta/riskDetections?$filter=riskType eq 'unfamiliarFeatures' or riskLevel eq 'medium'
 ```
 # [C#](#tab/csharp)

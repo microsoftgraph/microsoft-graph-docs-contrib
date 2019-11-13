@@ -4,6 +4,7 @@ description: "Outlook contacts lets you store personal contacts' data, and is pa
 author: "angelgolfer-ms"
 localization_priority: Priority
 ms.prod: "outlook"
+ms.custom: scenarios:getting-started
 ---
 
 # Outlook personal contacts API overview

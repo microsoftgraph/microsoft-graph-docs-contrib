@@ -19,6 +19,6 @@ const identityProvider = {
 
 let res = await client.api('/identityProviders')
 	.version('beta')
-	.post({identityProvider : identityProvider});
+	.post(identityProvider);
 
 ```

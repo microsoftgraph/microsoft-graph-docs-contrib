@@ -26,13 +26,15 @@ One of the following permissions is required to call this API. To learn more, in
 |Application                            | Sites.Read.All, Sites.ReadWrite.All
 
 ## HTTP request
-
+```http
+GET /sites?$search={query}
+```
 
 # [HTTP](#tab/http)
 <!-- { "blockType": "request", "name": "search-sites", "scopes": "service.sharepoint sites.readwrite.all" } -->
 
-```http
-GET https://graph.microsoft.com/beta/sites?search={query}
+```msgraph-interactive
+GET https://graph.microsoft.com/beta/sites?$search={query}
 ```
 # [C#](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/search-sites-csharp-snippets.md)]

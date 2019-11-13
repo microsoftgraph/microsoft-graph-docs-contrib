@@ -24,7 +24,9 @@ One of the following permissions is required to call this API. To learn more, in
 |&nbsp; &nbsp; **Device management**|DeviceManagementManagedDevices.ReadWrite.All|
 |&nbsp; &nbsp; **Troubleshooting**|DeviceManagementManagedDevices.ReadWrite.All|
 |Delegated (personal Microsoft account)|Not supported.|
-|Application|Not supported.|
+|Application||
+|&nbsp; &nbsp; **Device management**|DeviceManagementManagedDevices.ReadWrite.All|
+|&nbsp; &nbsp; **Troubleshooting**|DeviceManagementManagedDevices.ReadWrite.All|
 
 ## HTTP Request
 <!-- {
@@ -90,6 +92,12 @@ Content-Length: 120
   "id": "77943c10-3c10-7794-103c-9477103c9477"
 }
 ```
+
+
+
+
+
+
 
 
 

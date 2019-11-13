@@ -22,6 +22,6 @@ const groupSetting = {
 };
 
 let res = await client.api('/groupSettings')
-	.post({groupSetting : groupSetting});
+	.post(groupSetting);
 
 ```

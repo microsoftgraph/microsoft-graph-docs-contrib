@@ -70,7 +70,14 @@ Here is a JSON representation of the resource.
     "userPrincipalName": "String",
     "servicePrincipalName": "String",
     "ipAddress": "String",
-    "userId": "String"
+    "userId": "String",
+    "userRoleScopeTags": [
+      {
+        "@odata.type": "microsoft.graph.roleScopeTagInfo",
+        "displayName": "String",
+        "roleScopeTagId": "String"
+      }
+    ]
   },
   "activity": "String",
   "activityDateTime": "String (timestamp)",

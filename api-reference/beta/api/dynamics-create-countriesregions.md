@@ -23,7 +23,7 @@ One of the following permissions is required to call this API. To learn more, in
 
 ## HTTP request
 ```
-POST /financials/companies('{id}')/countriesRegions
+POST /financials/companies/{id}/countriesRegions
 ```
 
 ## Optional query parameters
@@ -48,7 +48,7 @@ If successful, this method returns ```201 Created``` response code and a **count
 Here is an example of a request.
 
 ```json
-POST https://graph.microsoft.com/beta/financials/companies('{id}')/countriesRegions
+POST https://graph.microsoft.com/beta/financials/companies/{id}/countriesRegions
 Content-type: application/json
 
 {

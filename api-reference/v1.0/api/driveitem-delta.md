@@ -64,8 +64,8 @@ In addition to the collection of DriveItems, the response will also include one 
 
 | Name                 | Value  | Description                                                                                                                                      |
 |:---------------------|:-------|:-------------------------------------------------------------------------------------------------------------------------------------------------|
-| **@odata.nextLink**  | url    | A URL to retrieve the next available page of changes, if there are additional changes in the current set.                                        |
-| **@odata.deltaLink** | url    | A URL returned instead of **@odata.nextLink** after all current changes have been returned. Used to read the next set of changes in the future.  |
+| **\@odata.nextLink**  | url    | A URL to retrieve the next available page of changes, if there are additional changes in the current set.                                        |
+| **\@odata.deltaLink** | url    | A URL returned instead of **\@odata.nextLink** after all current changes have been returned. Used to read the next set of changes in the future.  |
 
 ## Example (Initial Request)
 
@@ -79,7 +79,7 @@ Here is an example of the initial request.
 # [HTTP](#tab/http)
 <!-- { "blockType": "request", "name": "get_item_delta_first", "tags": "service.graph" } -->
 
-```http
+```msgraph-interactive
 GET https://graph.microsoft.com/v1.0/me/drive/root/delta
 ```
 # [C#](#tab/csharp)
@@ -133,8 +133,8 @@ Content-type: application/json
 }
 ```
 
-This response includes the first page of changes, and the **@odata.nextLink** property indicates that there are more items available in the current set of items.
-Your app should continue to request the URL value of **@odata.nextLink** until all pages of items have been retrieved.
+This response includes the first page of changes, and the **\@odata.nextLink** property indicates that there are more items available in the current set of items.
+Your app should continue to request the URL value of **\@odata.nextLink** until all pages of items have been retrieved.
 
 ## Example (Last page in a set)
 
@@ -148,7 +148,7 @@ Here is an example request after the initial request.
 # [HTTP](#tab/http)
 <!-- { "blockType": "request", "name": "get-item-delta-last", "tags": "service.graph" }-->
 
-```http
+```msgraph-interactive
 GET https://graph.microsoft.com/v1.0/me/drive/root/delta(token='1230919asd190410jlka')
 ```
 # [C#](#tab/csharp)
@@ -200,7 +200,7 @@ Content-type: application/json
 
 This response indicates that the item named `folder2` was deleted and the item `file.txt` was either added or modified between the initial request and this request to update the local state.
 
-The final page of items will include the **@odata.deltaLink** property, which provides the URL that can be used later to retrieve changes since the current set of items.
+The final page of items will include the **\@odata.deltaLink** property, which provides the URL that can be used later to retrieve changes since the current set of items.
 
 There may be cases when the service can't provide a list of changes for a given token (for example, if a client tries to reuse an old token after being disconnected for a long time, or if server state has changed and a new token is required).
 In these cases the service will return an `HTTP 410 Gone` error with an error response containing one of the error codes below, and a `Location` header containing a new nextLink that starts a fresh delta enumeration from scratch.
@@ -228,7 +228,7 @@ Using `delta` is the only way to guarantee that you've read all of the data you 
 # [HTTP](#tab/http)
 <!-- { "blockType": "request", "name": "get-delta-latest", "scopes": "files.read", "tags": "service.graph", "target": "action" } -->
 
-```http
+```msgraph-interactive
 GET /me/drive/root/delta?token=latest
 ```
 # [C#](#tab/csharp)

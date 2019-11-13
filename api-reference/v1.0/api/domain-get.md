@@ -58,7 +58,7 @@ If successful, this method returns a `200 OK` response code and [domain](../reso
   "sampleKeys": ["contoso.com"],
   "name": "get_domain"
 }-->
-```http
+```msgraph-interactive
 GET https://graph.microsoft.com/v1.0/domains/contoso.com
 ```
 # [C#](#tab/csharp)

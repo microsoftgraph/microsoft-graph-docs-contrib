@@ -2,6 +2,7 @@
 title: "Access data and methods by navigating Microsoft Graph"
 description: "In addition to using the Microsoft Graph API to read and write data, you can use a number of request patterns to traverse through the resources in Microsoft Graph. The metadata document also helps you to understand the data model of the resources and relationships in Microsoft Graph."
 localization_priority: Priority
+ms.custom: graphiamtop20, scenarios:getting-started
 ---
 
 # Access data and methods by navigating Microsoft Graph
@@ -30,7 +31,7 @@ You can use the metadata to learn the relationships between entities in Microsof
 > [!NOTE]
 > - Use resource IDs in the same case as they are returned from Microsoft Graph APIs.
 > - Assume resource IDs, values you assign, and other base-64-encoded values are _case-sensitive_.
-> - Assume path URL resource names, query parameters, and action parameters and values are _not case-sensitive_.
+> - Assume path URL resource names, query parameters, action and function names, their request body parameters, including any API property names and values, are _not case-sensitive_.
 
 ## View a collection of resources
 

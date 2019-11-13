@@ -11,12 +11,11 @@ const options = {
 const client = Client.init(options);
 
 const application = {
-  allowPublicClient: true,
   displayName: "Display name"
 };
 
 let res = await client.api('/applications')
 	.version('beta')
-	.post({application : application});
+	.post(application);
 
 ```

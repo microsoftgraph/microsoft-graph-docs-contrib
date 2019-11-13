@@ -43,7 +43,7 @@ If successful, this method returns a `200 OK` response code and [dataPolicyOpera
   "blockType": "request",
   "name": "get_datapolicyoperation"
 }-->
-```http
+```msgraph-interactive
 GET https://graph.microsoft.com/beta/dataPolicyOperations/{id}
 ```
 # [C#](#tab/csharp)

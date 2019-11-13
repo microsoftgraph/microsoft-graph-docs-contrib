@@ -24,7 +24,7 @@ Microsoft Teams is a chat-based workspace in Office 365 that provides built-in a
 |[teamsApp](../resources/teamsapp.md)|[List](../api/teamsapp-list.md), [publish](../api/teamsapp-publish.md), [update](../api/teamsapp-update.md), [remove](../api/teamsapp-delete.md)|
 |[teamsAppInstallation](../resources/teamsappinstallation.md)| [List](../api/teamsappinstallation-list.md), [install](../api/teamsappinstallation-add.md), [upgrade](../api/teamsappinstallation-delete.md), [remove](../api/teamsappinstallation-delete.md) |
 |[chatMessage](../resources/chatmessage.md) (preview)| [List](../api/channel-list-messages.md), [send](../api/channel-post-messages.md), [read](/graph/api/channel-get-message?view=graph-rest-beta) |
-|[call](/graph/api/resources/call?view=graph-rest-beta) (preview) | [Answer](/graph/api/call-answer?view=graph-rest-beta), [reject](/graph/api/call-reject?view=graph-rest-beta), [redirect](/graph/api/call-redirect?view=graph-rest-beta), [mute](/graph/api/call-mute?view=graph-rest-beta), [unmute](/graph/api/call-unmute?view=graph-rest-beta), [update metadata](/graph/api/call-updatemetadata?view=graph-rest-beta), [change screen sharing role](/graph/api/call-changescreensharingrole?view=graph-rest-beta), [list participants](/graph/api/call-list-participants?view=graph-rest-beta), [invite participants](/graph/api/participant-invite?view=graph-rest-beta), [mute all participants](/graph/api/participant-muteall?view=graph-rest-beta) |
+|[call](/graph/api/resources/communications-api-overview.md) (preview) | [Answer](/graph/api/call-answer?view=graph-rest-beta), [reject](/graph/api/call-reject?view=graph-rest-beta), [redirect](/graph/api/call-redirect?view=graph-rest-beta), [mute](/graph/api/call-mute?view=graph-rest-beta), [unmute](/graph/api/call-unmute?view=graph-rest-beta), [update metadata](/graph/api/call-updatemetadata?view=graph-rest-beta), [change screen sharing role](/graph/api/call-changescreensharingrole?view=graph-rest-beta), [list participants](/graph/api/call-list-participants?view=graph-rest-beta), [invite participants](/graph/api/participant-invite?view=graph-rest-beta), [mute all participants](/graph/api/participant-muteall?view=graph-rest-beta) |
 |[schedule](/graph/api/resources/schedule?view=graph-rest-beta) (preview)| [Create or replace](/graph/api/team-put-schedule?view=graph-rest-beta), [get](/graph/api/schedule-get?view=graph-rest-beta), [share](/graph/api/schedule-share?view=graph-rest-beta) |
 |[schedulingGroup](/graph/api/resources/schedulinggroup?view=graph-rest-beta) (preview)| [Create](/graph/api/schedule-post-schedulinggroups?view=graph-rest-beta), [List](/graph/api/schedule-list-schedulinggroups?view=graph-rest-beta), [Get](/graph/api/schedulinggroup-get?view=graph-rest-beta), [Replace](/graph/api/schedulinggroup-put?view=graph-rest-beta), [Delete](/graph/api/schedulinggroup-delete?view=graph-rest-beta) |
 |[shift](/graph/api/resources/shift?view=graph-rest-beta) (preview)| [Create](/graph/api/schedule-post-shifts?view=graph-rest-beta), [List](/graph/api/schedule-list-shifts?view=graph-rest-beta), [Get](/graph/api/shift-get?view=graph-rest-beta), [Replace](/graph/api/shift-put?view=graph-rest-beta), [Delete](/graph/api/shift-delete?view=graph-rest-beta) |
@@ -47,7 +47,7 @@ The following are the differences at the API level between teams and groups:
 - Persistent chat is available only to Microsoft Teams. This feature is hierarchically represented by the [channel](../resources/channel.md) and [chatMessage](../resources/chatmessage.md) resources.
 - Group conversations are available only to Office 365 groups. This feature is hierarchically represented by the [conversation](../resources/conversation.md), [conversationThread](../resources/conversationthread.md), and [post](../resources/post.md) resources. 
 - The [List joined teams](../api/user-list-joinedteams.md) method applies only to Microsoft Teams.
-- [Calling and online meeting APIs](./calls-api-overview.md) apply only to Microsoft Teams.
+- [Calling and online meeting APIs](./communications-api-overview.md) apply only to Microsoft Teams.
 - See also the [known issues](/graph/known-issues) for these APIs.
 
 >**Note:** If you use the groups API in a [Microsoft Teams app](https://docs.microsoft.com/en-us/microsoftteams/platform/#apps-in-microsoft-teams) rather than in a standalone app - for example as part of a tab or bot running in Microsoft Teams - follow the guidance in the article [Using Microsoft Graph in your Microsoft Teams pages](https://docs.microsoft.com/en-us/microsoftteams/platform/resources/microsoft-graph).
@@ -88,6 +88,9 @@ Similarly, if the `userId` in the URL or payload is expressed as a UPN rather th
 
 When the slower path is taken, if a current team member or owner is signed in to the Microsoft Teams application/website, the change will be reflected within an hour.
 If none of those users are signed in to the Microsoft Teams application/website, the change will not be reflected until an hour after one of them signs in.
+
+> [!Note] 
+> Tenant guests are always processed via the slow path.
 
 ## See also
 

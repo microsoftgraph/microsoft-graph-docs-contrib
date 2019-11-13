@@ -28,8 +28,8 @@ One of the following permissions is required to call this API. To learn more, in
 <!-- { "blockType": "ignored" } -->
 
 ```http
-GET  https://graph.microsoft.com/beta/me/analytics/activitystatistics 
-GET https://graph.microsoft.com/beta/users/{id|userPrincipalName}/analytics/activitystatistics/{id}
+GET /me/analytics/activitystatistics 
+GET /users/{id|userPrincipalName}/analytics/activitystatistics/{id}
 ```
 
 ## Optional query parameters
@@ -62,7 +62,7 @@ The following is an example of a request of all related activity statistics for 
   "name": "get_activitystatistics"
 }-->
 
-```http
+```msgraph-interactive
 GET https://graph.microsoft.com/beta/me/analytics/activitystatistics
 
 ```

@@ -1,6 +1,6 @@
 ---
 title: "List group transitive members"
-description: "Get a list of the group's members. A group can have users, devices and other groups as members. This operation is transitive and will also return a flat list of all nested members."
+description: "Get a list of the group's members. A group can have users, devices, organizational contacts, and other groups as members. This operation is transitive and returns a flat list of all nested members."
 author: "anchanda"
 localization_priority: Normal
 ms.prod: "groups"
@@ -9,7 +9,7 @@ doc_type: apiPageType
 
 # List group transitive members
 
-Get a list of the group's members. A group can have users, devices and other groups as members. This operation is transitive and will also return a flat list of all nested members.
+Get a list of the group's members. A group can have users, devices, organizational contacts, and other groups as members. This operation is transitive and returns a flat list of all nested members.
 
 ## Permissions
 
@@ -33,13 +33,13 @@ GET /groups/{id}/transitiveMembers
 
 ## Optional query parameters
 
-This method supports the [OData Query Parameters](/graph/query-parameters) to help customize the response.
+This method supports the [OData query parameters](/graph/query-parameters) to help customize the response.
 
 ## Request headers
 
-| Name       | Type | Description|
-|:-----------|:------|:----------|
-| Authorization  | string  | Bearer {token}. Required. |
+| Header       | Value |
+|:-----------|:----------|
+| Authorization  | Bearer {token}. Required. |
 
 ## Request body
 
@@ -47,7 +47,7 @@ Do not supply a request body for this method.
 
 ## Response
 
-If successful, this method returns a `200 OK` response code and collection of [directoryObject](../resources/directoryobject.md) objects in the response body.
+If successful, this method returns a `200 OK` response code and a collection of [directoryObject](../resources/directoryobject.md) objects in the response body.
 
 ## Example
 
@@ -61,7 +61,7 @@ The following is an example of the request.
   "name": "get_group_transitivemembers"
 }-->
 
-```http
+```msgraph-interactive
 GET https://graph.microsoft.com/v1.0/groups/{id}/transitiveMembers
 ```
 # [C#](#tab/csharp)
@@ -86,7 +86,7 @@ GET https://graph.microsoft.com/v1.0/groups/{id}/transitiveMembers
 ### Response
 
 The following is an example of the response.
->**Note:** The response object shown here might be shortened for readability. All the properties will be returned from an actual call.
+>**Note**: The response object shown here might be shortened for readability. 
 <!-- {
   "blockType": "response",
   "truncated": true,

@@ -30,7 +30,7 @@ One of the following permissions is required to call this API. To learn more, in
 # [HTTP](#tab/http)
 <!-- { "blockType": "request", "name": "search-sites", "scopes": "sites.readwrite.all", "tags": "service.sharepoint" } -->
 
-```http
+```msgraph-interactive
 GET /sites?search={query}
 ```
 # [C#](#tab/csharp)

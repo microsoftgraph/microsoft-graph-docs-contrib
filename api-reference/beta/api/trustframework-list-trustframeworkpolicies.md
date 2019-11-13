@@ -18,9 +18,9 @@ One of the following permissions is required to call this API. To learn more, in
 
 |Permission type      | Permissions (from least to most privileged)              |
 |:--------------------|:---------------------------------------------------------|
-|Delegated (work or school account)|Policy.Read.TrustFramework, Policy.Read.All|
+|Delegated (work or school account)|Policy.Read.All, Policy.ReadWrite.TrustFramework|
 |Delegated (personal Microsoft account)| Not supported.|
-|Application|Not supported.|
+|Application|Policy.Read.All, Policy.ReadWrite.TrustFramework|
 
 The work or school account must be a global administrator of the tenant.
 
@@ -60,7 +60,7 @@ The following example retrieves all **trustFrameworkPolicies**.
   "blockType": "request",
   "name": "get_trustFrameworks"
 }-->
-```http
+```msgraph-interactive
 GET https://graph.microsoft.com/beta/trustFramework/policies
 ```
 # [C#](#tab/csharp)

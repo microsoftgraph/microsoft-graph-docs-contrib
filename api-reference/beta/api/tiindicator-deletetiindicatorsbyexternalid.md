@@ -47,7 +47,7 @@ In the request body, provide a JSON object with the following parameters.
 
 ## Response
 
-If successful, this method returns `200 OK` response code and a [resultInfo](../resources/resultinfo.md) collection object in the response body.
+If successful, this method returns `200, OK` response code and a [resultInfo](../resources/resultinfo.md) collection object in the response body. If there is an error, this method returns a `206 Partial Content` response code.  See [Errors](../resources/security-error-codes.md#threat-indicator-bulk-action-errors) for more information.
 
 ## Examples
 
@@ -111,7 +111,7 @@ Content-type: application/json
 {
   "value": [
     {
-      "code": "code-value",
+      "code": 0,
       "message": "message-value",
       "subCode": "subCode-value"
     }
