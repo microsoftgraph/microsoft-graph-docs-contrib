@@ -1200,7 +1200,7 @@ For an app with delegated permissions to read programs and program controls, the
 | _Reports.Read.All_ | Read all usage reports | Allows an app to read all service usage reports without a signed-in user. Services that provide usage reports include Office 365 and Azure Active Directory. | Yes |
 
 ### Remarks
-Reports permissions are only valid for work or school accounts. For delegated permissions to allow apps to read service usage reports on behalf of a user, the user must have been assigned an Azure AD Limited Admin role. For more details, see [Authorization and the Microsoft Graph reports API](/reportroot-authorization.md).
+Reports permissions are only valid for work or school accounts. For delegated permissions to allow apps to read service usage reports on behalf of a user, the user must have been assigned an Azure AD Limited Admin role. For more details, see [Authorization and the Microsoft Graph reports API](reportroot-authorization.md).
 
 ### Example usage
 
