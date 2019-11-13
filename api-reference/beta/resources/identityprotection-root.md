@@ -24,7 +24,7 @@ Identity Protection is a tool that allows organizations to accomplish three key 
 >[!NOTE]
 >The identityRiskEvents API will be deprecated for the .com endpoint on January 10, 2020. [Learn more here](https://developer.microsoft.com/office/blogs/deprecatation-of-the-identityriskevents-api/).
 
-# See also
+## See also
 
 * [About Azure Active Directory Identity Protection](https://docs.microsoft.com/azure/active-directory/identity-protection/overview-identity-protection)
 * [Get started with Azure Active Directory identity protection and Microsoft Graph](https://docs.microsoft.com/azure/active-directory/identity-protection/howto-identity-protection-graph-api)
