@@ -20,11 +20,13 @@ const event = {
   recurrence: null,
   uid: "iCalUId-value",
   reminderMinutesBeforeStart: 99,
+  isOnlineMeeting: true,
+  onlineMeetingProvider: "teamsForBusiness",
   isReminderOn: true
 };
 
 let res = await client.api('/me/events/{id}')
 	.version('beta')
-	.update({event : event});
+	.update(event);
 
 ```

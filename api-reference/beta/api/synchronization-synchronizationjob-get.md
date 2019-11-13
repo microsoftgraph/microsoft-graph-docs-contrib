@@ -52,7 +52,7 @@ The following is an example of a request.
   "blockType": "request",
   "name": "get_synchronizationjob"
 }-->
-```http
+```msgraph-interactive
 GET https://graph.microsoft.com/beta/servicePrincipals/{id}/synchronization/jobs/{jobId}/
 ```
 # [C#](#tab/csharp)
@@ -106,7 +106,13 @@ Content-length: 2577
         "steadyStateLastAchievedTime": "0001-01-01T00:00:00Z",
         "quarantine": null,
         "troubleshootingUrl": null
-    }
+    },
+    "synchronizationJobSettings": [
+      {
+          "name": "QuarantineTooManyDeletesThreshold",
+          "value": "500"
+      }
+    ]
 }
 ```
 

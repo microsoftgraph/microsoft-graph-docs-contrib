@@ -19,9 +19,9 @@ Only the following query options are currently supported:
 |:-----------------------------|:------------------------|:--------------------
 |`siteCollection/root ne null` | `siteCollection,webUrl` | Lists all root-level site collections in the organization. Useful for discovering the home site for each geography.
 
-In addition, you may use a **[search][]** query against the '/sites' collection to find sites matching given keywords.
+In addition, you may use a **[$search][]** query against the '/sites' collection to find sites matching given keywords.
 
-[search]: site-search.md
+[$search]: site-search.md
 [sites]: ../resources/site.md
 
 ## Permissions
@@ -39,7 +39,7 @@ One of the following permissions is required to call this API. To learn more, in
 <!-- { "blockType": "ignored" } -->
 
 ```http
-GET https://graph.microsoft.com/beta/sites?filter=siteCollection/root ne null
+GET /sites?$filter=siteCollection/root ne null
 ```
 
 ## Example
@@ -50,8 +50,8 @@ GET https://graph.microsoft.com/beta/sites?filter=siteCollection/root ne null
 # [HTTP](#tab/http)
 <!-- { "blockType": "request", "name": "list-sites" } -->
 
-```http
-GET https://graph.microsoft.com/beta/sites?select=siteCollection,webUrl&filter=siteCollection/root%20ne%20null
+```msgraph-interactive
+GET https://graph.microsoft.com/beta/sites?$select=siteCollection,webUrl&$filter=siteCollection/root%20ne%20null
 ```
 # [C#](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/list-sites-csharp-snippets.md)]

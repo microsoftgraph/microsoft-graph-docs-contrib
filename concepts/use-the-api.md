@@ -3,6 +3,7 @@ title: "Use the Microsoft Graph API"
 description: "Microsoft Graph is a RESTful web API that enables you to access Microsoft Cloud service resources. After you register your app and get authentication tokens for a user or service, you can make requests to the Microsoft Graph API."
 author: "jackson-woods"
 localization_priority: Priority
+ms.custom: graphiamtop20, scenarios:getting-started
 ---
 
 # Use the Microsoft Graph API
@@ -25,7 +26,7 @@ The components of a request include:
 * [{HTTP method}](#http-methods) - The HTTP method used on the request to Microsoft Graph.
 * [{version}](#version) - The version of the Microsoft Graph API your application is using.
 * [{resource}](#resource) - The resource in Microsoft Graph that you're referencing. 
-* [{query-parameters}](#query-parameters-optional) - Optional OData query options or REST method parameters that customize the response.
+* [{query-parameters}](#query-parameters) - Optional OData query options or REST method parameters that customize the response.
 
 After you make a request, a response is returned that includes: 
 

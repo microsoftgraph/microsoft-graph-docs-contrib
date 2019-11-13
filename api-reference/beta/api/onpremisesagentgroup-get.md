@@ -61,7 +61,7 @@ The following is an example of the request.
   "name": "get_onpremisesagentgroup"
 }-->
 
-```http
+```msgraph-interactive
 GET https://graph.microsoft.com/beta/onPremisesPublishingProfiles/provisioning/agentGroups/2d55ed41-1619-4848-92bb-0576d3038682/?$expand=publishedResources,agents
 ```
 # [C#](#tab/csharp)

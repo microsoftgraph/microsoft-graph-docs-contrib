@@ -1,7 +1,7 @@
 ---
 title: "Known issues with Microsoft Graph"
 description: "This article describes known issues with Microsoft Graph. For information about the latest updates, see the Microsoft Graph changelog."
-author: ""
+author: "MSGraphDocsVTeam"
 localization_priority: Priority
 ---
 
@@ -36,6 +36,10 @@ For known issues using delta query, see the [delta query section](#delta-query) 
 ### Revoke sign-in sessions returns wrong HTTP code
 
 The [user: revokeSignInSessions API](/graph/api/user-revokesigninsessions?view=graph-rest-1.0) should return a `204 No content` response for successful revocations, and an HTTP error code (4xx or 5xx) if anything goes wrong with the request.  However, due to a service issue, this API returns a `200 OK` and a Boolean parameter that is always true.  Until this is fixed, developers are simply advised to treat any 2xx return code as success for this API.
+
+### Incomplete objects when using getByIds request
+
+Requesting objects using [Get directory objects from a list of IDs](/graph/api/directoryobject-getbyids?view=graph-rest-1.0) should return full objects. However, currently [user](/graph/api/resources/user?view=graph-rest-1.0) objects on the v1.0 endpoint are returned with a limited set of properties. As a temporary workaround, when you use the operation in combination with the `$select` query option, more complete [user](/graph/api/resources/user?view=graph-rest-1.0) objects will be returned. This behavior is not in accordance with the OData specifications. Because this behavior might be updated in the future, use this workaround only when you provide `$select=` with all the properties you are interested in, and only if future breaking changes to this workaround are acceptable.
 
 ## Microsoft Teams
 
@@ -83,12 +87,6 @@ Examples of group features that support only delegated permissions:
 
 Using Microsoft Graph to create and name an Office 365 group bypasses any Office 365 group policies that are configured through Outlook Web App.
 
-### Adding and getting attachments of group posts
-
-[Adding](/graph/api/post-post-attachments?view=graph-rest-1.0) attachments to group posts, [listing](/graph/api/post-list-attachments?view=graph-rest-1.0) and
-getting attachments of group posts currently return the error message "The OData request is not supported." A fix has been rolled out for both the `/v1.0` and `/beta` versions,
-and is expected to be widely available by the end of January 2016.
-
 ### Setting the allowExternalSenders property
 
 There is currently an issue that prevents setting the **allowExternalSenders** property of a group in a POST or PATCH operation, in both `/v1.0` and `/beta`.
@@ -127,7 +125,7 @@ GET https://graph.microsoft.com/beta/bookingBusinesses?query=Fabrikam
 When attempting to access events in a calendar that has been shared by another user using the following operation:
 
 ```http
-GET \users('{id}')\calendars('{id}')\events
+GET /users/{id}/calendars/{id}/events
 ```
 
 You may get HTTP 500 with the error code `ErrorInternalServerTransientError`. The error occurs because:
@@ -152,7 +150,7 @@ A calendar shared with you in the new approach appears as just another calendar 
 events in the shared calendar, as if it's your own calendar. As an example:
 
 ```http
-GET \me\calendars('{id}')\events
+GET /me/calendars/{id}/events
 ```
 
 ### Adding and accessing ICS-based calendars in user's mailbox
@@ -167,11 +165,12 @@ Currently, there is partial support for a calendar based on an Internet Calendar
 
 Currently, the **onlineMeetingUrl** property of a Skype meeting [event](/graph/api/resources/event?view=graph-rest-1.0) would indicate the online meeting URL. However, that property for a Microsoft Teams meeting event is set to null.
 
-## Calls and online meetings
+The beta version offers a workaround, where you can use the **onlineMeetingProvider** property of an [event](/graph/api/resources/event?view=graph-rest-beta) to verify if the provider is Microsoft Teams. Through the **onlineMeeting** property of the **event**, you can access the **joinUrl**.
 
-> **Note** Calling and online meetings are currently in preview and are available only in the Microsoft Graph beta endpoint.
+## Cloud communications (preview)
 
-- Navigation path `/applications/{id}` is not supported. Navigating through the global applications node to the application, even your own, is not allowed. Please use the `/app` navigation only.
+> **Note** Cloud communications are currently in preview and are available only in the Microsoft Graph beta endpoint.
+The Microsoft Teams client does not show the **View Meeting details**  menu for channel meetings created via the cloud communications API.
 
 ## Contacts
 
@@ -371,6 +370,12 @@ In the meantime, to unblock development and testing you can use the following wo
     ```PowerShell
     New-AzureADServicePrincipal -AppId 00000003-0000-0000-c000-000000000000
     ```
+
+## Identity and access
+
+### Conditional access policies and named locations
+
+Write operations for the conditional access policies and named locations APIs require two permissions: Policy.ReadWrite.ConditionalAccess and Directory.AccessAsUser.All. Generally, the least privileged permission,  Policy.ReadWrite.ConditionalAccess, should be sufficient. At this time, you should acquire a token with both of these permissions.
 
 ## Functionality available only in Office 365 REST or Azure AD Graph APIs
 

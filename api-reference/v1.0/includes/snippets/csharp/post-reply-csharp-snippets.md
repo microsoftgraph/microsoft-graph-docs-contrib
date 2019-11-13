@@ -13,7 +13,7 @@ var post = new Post
 		ContentType = BodyType.Text,
 		Content = "content-value"
 	},
-	ReceivedDateTime = "datetime-value",
+	ReceivedDateTime = DateTimeOffset.Parse("datetime-value"),
 	HasAttachments = true,
 	From = new Recipient
 	{
@@ -44,8 +44,8 @@ var post = new Post
 		}
 	},
 	ConversationId = "conversationId-value",
-	CreatedDateTime = "datetime-value",
-	LastModifiedDateTime = "datetime-value",
+	CreatedDateTime = DateTimeOffset.Parse("datetime-value"),
+	LastModifiedDateTime = DateTimeOffset.Parse("datetime-value"),
 	ChangeKey = "changeKey-value",
 	Categories = new List<String>()
 	{
@@ -59,7 +59,7 @@ var post = new Post
 	{
 		new Attachment
 		{
-			LastModifiedDateTime = "datetime-value",
+			LastModifiedDateTime = DateTimeOffset.Parse("datetime-value"),
 			Name = "name-value",
 			ContentType = "contentType-value",
 			Size = 99,

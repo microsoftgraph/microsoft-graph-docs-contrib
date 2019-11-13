@@ -26,7 +26,7 @@ A number of these services are designed to enable rich scenarios around a [user]
 3. [Access Lisa's files on OneDrive for Business](./api/driveitem-list-children.md), find the [identity](./resources/identityset.md) of the last person who modified a [file](./resources/driveitem.md) there, and navigate to that person's profile.
 4. [Access Lisa's calendar](./api/calendar-get.md) on Exchange Online and [determine the best time for Lisa to meet with her team](./api/user-findmeetingtimes.md) in the next two weeks.
 5. [Subscribe to](./api/subscription-post-subscriptions.md) and [track changes](./api/event-delta.md) in Lisa's calendar, tell Lisa when she is spending more than 80% of her time in meetings.
-6. [Set automatic replies](./api/user-update-mailboxsettings.md#example) when Lisa is away from the office.
+6. [Set automatic replies](./api/user-update-mailboxsettings.md#example-1) when Lisa is away from the office.
 7. [Get the people who are most relevant to Lisa](./api/user-list-people.md), based on communication, collaboration, and business relationships.
 8. Get the latest sales projection from a [chart](./resources/chart.md) in an Excel file in Lisa's OneDrive for Business.
 9. [Find the tasks assigned to Lisa in Planner](./api/planneruser-list-tasks.md).

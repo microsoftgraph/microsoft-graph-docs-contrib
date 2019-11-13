@@ -75,7 +75,7 @@ HTTP/1.1 201 OK
   "postBackUri": "postbackURI"
 }
 ```
-## Command properties 
+### Command properties 
 
 |**Name**|**Type**|**Description**|
 |:----|:------|:------|
@@ -89,13 +89,13 @@ HTTP/1.1 201 OK
 |actionStatus | String | The [status](get-device-command-status.md) of a command. |
 |error| String| Any errors associated with the request from the target application. |
 
-## Launch URI example
+## Examples
 
-Here is an example of a LaunchURI request; it will launch a URI or an application on the target device. To launch a URI or an app, issue a POST using the ID of the device (obtained from doing a GET call on `me/devices`). Set the *Type* parameters to *LaunchURI* and provide a URI value such as https://bing.com.
+### Example 1: Launch URI 
+
+The following is an example of a LaunchURI request; it will launch a URI or an application on the target device. To launch a URI or an app, issue a POST using the ID of the device (obtained from doing a GET call on `me/devices`). Set the *Type* parameters to *LaunchURI* and provide a URI value such as https://bing.com.
 
 #### Request
-
-The following is an example of the request.
 
 <!-- {
   "blockType": "ignored",
@@ -111,10 +111,7 @@ Content-Type: application/json; charset=utf-8
 { "type" : "LaunchUri", "payload" : {"uri":"https://bing.com"}}
 
 ```
-
 #### Response 
-
-The following is an example of the response.
 
 <!-- {
   "blockType": "ignored",
@@ -143,9 +140,9 @@ HTTP/1.1 201 OK
 ```
 
 
-## App service example
+### Example 2: App service
 
-Here is an example of querying an app service on a device. To use an app service you must do a POST call using the id of the device (obtained from doing a GET call on `me/devices`). To use the following example, you must install the [Rome app](https://aka.ms/romanapp) on your target device.
+The following example shows how to query an app service on a device. To use an app service, you must do a POST call using the ID of the device (obtained from doing a GET call on `me/devices`). To use the following example, you must install the [Rome app](https://aka.ms/romanapp) on your target device.
 
 Several additional properties must be set in the call. *Type* must be set to *AppService*, *AppServiceName* must be set to the name of the app service defined in the application, *PackageFamilyName* must be set to the package family name defined in the app manifest, and *Payload* holds the keys and values for the service you are calling within the target application.
 
@@ -172,8 +169,6 @@ Content-Type: application/json; charset=utf-8
 ```
 
 #### Response
-
-The following is an example of the response.
 
 <!-- {
   "blockType": "ignored",

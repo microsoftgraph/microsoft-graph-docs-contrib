@@ -4,6 +4,7 @@ description: "Outlook calendar is part of the Outlook messaging hub in Office 36
 author: "angelgolfer-ms"
 localization_priority: Priority
 ms.prod: "outlook"
+ms.custom: scenarios:getting-started
 ---
 
 # Outlook calendar API overview
@@ -100,6 +101,7 @@ Looking for the API reference for this service?
   - [Finding possible meeting times on the Outlook calendar](findmeetingtimes-example.md)
   - [Getting the free/busy schedule for users and resources](outlook-get-free-busy-schedule.md)
   - [Scheduling repeating appointments as recurring events in Outlook](outlook-schedule-recurring-events.md)
+  - [Propose meeting times in an Outlook calendar](outlook-calendar-meeting-proposals.md)
   - [Getting shared events](outlook-get-shared-events-calendars.md)
   - [Getting immutable identifiers for Outlook resources](outlook-immutable-id.md)
 - Take a look at the Outlook [calendar API](/graph/api/resources/calendar?view=graph-rest-1.0) reference.

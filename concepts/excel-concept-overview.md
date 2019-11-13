@@ -4,6 +4,7 @@ description: "Excel is an indispensable productivity tool. Users across all indu
 localization_priority: Priority
 author: "lumine2008"
 ms.prod: "excel"
+ms.custom: scenarios:getting-started
 ---
 
 # Excel workbooks and charts API overview

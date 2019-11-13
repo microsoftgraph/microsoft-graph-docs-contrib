@@ -11,7 +11,7 @@ var subscription = new Subscription
 	ChangeType = "created,updated",
 	NotificationUrl = "https://webhook.azurewebsites.net/api/send/myNotifyClient",
 	Resource = "me/mailFolders('Inbox')/messages",
-	ExpirationDateTime = "2016-11-20T18:23:45.9356913Z",
+	ExpirationDateTime = DateTimeOffset.Parse("2016-11-20T18:23:45.9356913Z"),
 	ClientState = "secretClientValue"
 };
 

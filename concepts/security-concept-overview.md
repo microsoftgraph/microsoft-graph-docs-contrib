@@ -4,6 +4,7 @@ description: "You can use the Microsoft Graph Security API to connect Microsoft 
 author: "preetikr"
 localization_priority: Priority
 ms.prod: "security"
+ms.custom: scenarios:getting-started
 ---
 
 # Microsoft Graph Security API overview

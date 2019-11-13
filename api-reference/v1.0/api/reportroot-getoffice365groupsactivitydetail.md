@@ -93,7 +93,7 @@ The following is an example of the request.
   "name": "reportroot_getoffice365groupsactivityuserdetail"
 }-->
 
-```http
+```msgraph-interactive
 GET https://graph.microsoft.com/v1.0/reports/getOffice365GroupsActivityDetail(period='D7')
 ```
 # [C#](#tab/csharp)

@@ -28,7 +28,7 @@ One of the following permissions is required to call this API. To learn more, in
 <!-- { "blockType": "ignored" }-->
 
 ```http
-GET https://graph.microsoft.com/beta/me/analytics/settings
+GET /me/analytics/settings
 ```
 
 ## Optional query parameters
@@ -61,7 +61,7 @@ The following is an example of the request.
   "name": "get_settings"
 }-->
 
-```http
+```msgraph-interactive
 GET https://graph.microsoft.com/beta/me/analytics/settings
 ```
 # [C#](#tab/csharp)

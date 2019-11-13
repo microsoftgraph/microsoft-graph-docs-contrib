@@ -18,6 +18,6 @@ const plannerBucket = {
 
 let res = await client.api('/planner/buckets')
 	.version('beta')
-	.post({plannerBucket : plannerBucket});
+	.post(plannerBucket);
 
 ```
