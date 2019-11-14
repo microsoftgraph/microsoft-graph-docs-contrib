@@ -8,13 +8,9 @@ GraphServiceClient graphClient = new GraphServiceClient( authProvider );
 
 var callbackUri = "callbackUri-value";
 
-var mediaConfig = new MediaConfig
+var mediaConfig = new AppHostedMediaConfig
 {
-	AdditionalData = new Dictionary<string, object>()
-	{
-		{"@odata.type","#microsoft.graph.appHostedMediaConfig"}
-	},
-	Blob = "<media config blob>"
+	Blob = "<Media Session Configuration Blob>"
 };
 
 var acceptedModalities = new List<Modality>()
@@ -22,7 +18,7 @@ var acceptedModalities = new List<Modality>()
 	Modality.Audio
 };
 
-await graphClient.App.Calls["{id}"]
+await graphClient.Communications.Calls["{id}"]
 	.Answer(callbackUri,mediaConfig,acceptedModalities)
 	.Request()
 	.PostAsync();

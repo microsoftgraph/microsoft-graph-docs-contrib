@@ -1,7 +1,7 @@
 ---
 title: "Create windows10MobileCompliancePolicy"
 description: "Create a new windows10MobileCompliancePolicy object."
-author: "tfitzmac"
+author: "davidmu1"
 localization_priority: Normal
 ms.prod: "Intune"
 doc_type: apiPageType
@@ -138,6 +138,7 @@ Content-Length: 964
   "storageRequireEncryption": true
 }
 ```
+
 
 
 
