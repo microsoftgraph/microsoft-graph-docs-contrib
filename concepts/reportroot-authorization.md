@@ -22,22 +22,21 @@ If you're calling the Microsoft Graph reports API from Graph Explorer:
 
 >**Note**: Graph Explorer does not support application-level authorization.
 
-If you're calling the Microsoft Graph reports API from a custom or your own application:
+If you're calling the Microsoft Graph reports API from an application:
 
 - The Azure AD tenant admin must explicitly grant consent to your application. This is required both for application-level authorization and user delegated authorization.
 - If you're using user delegated authorization, the signed-in user must be a member of a Limited Admin role in Azure AD as listed above.
 
 ## Assign Azure AD roles to users
 
-After an application is granted permissions, everyone with access to the application (that is, members of the Azure AD tenant) will receive the granted permissions. To further protect sensitive reports data, the Microsoft Graph reports API also requires users to be assigned the required Azure AD role. For details, see [Administrator role permissions in Azure Active Directory](https://docs.microsoft.com/azure/active-directory/active-directory-assign-admin-roles-azure-portal) and [Assign administrator and non-administrator roles to users with Azure Active Directory](https://docs.microsoft.com/azure/active-directory/active-directory-users-assign-role-azure-portal).
+After an application is granted permissions, everyone with access to the application (that is, members of the Azure AD tenant) will receive the granted permissions. To further protect sensitive reports data, users must be assigned the appropriate Azure AD roles. For details, see [Administrator role permissions in Azure Active Directory](https://docs.microsoft.com/azure/active-directory/active-directory-assign-admin-roles-azure-portal) and [Assign administrator and non-administrator roles to users with Azure Active Directory](https://docs.microsoft.com/azure/active-directory/active-directory-users-assign-role-azure-portal).
 
 >**Note:** You must be a tenant admin to perform this step.
 
-To assign roles to users:
+To assign a role to a user:
 
 1. Sign in to the [Azure portal](https://portal.azure.com) (https://portal.azure.com).
 2. Click the icon in the top left to expand the Azure portal menu. Select **Azure Active Directory** > **Users**.
-3. Select the name of the user.
-4. On the user's Profile page, select **Assigned roles**.
-5. Select **Add assignment**, and choose the specific role check box on the Directory roles page.
-6. Choose **Add**.
+3. Click the name of the user.
+4. Choose **Assigned roles**, and then **Add assignment**.
+5. Select the appropriate role, and click **Add**.
