@@ -13,6 +13,12 @@ For details about known issues with Microsoft Graph APIs, see [Known issues](kno
 
 ## November 2019
 
+### Identity and access (Azure AD) | Conditional access
+
+| **Change type** | **Version** | **Description**                  |
+|:----------------|:------------|:-----------------------------------------|
+| Addition | beta | Added application-level `Policy.Read.All` permission for read operations in both conditional access policies and named locations.|
+
 ### Calendar | Place
 
 | **Change type** | **Version** | **Description**                  |
