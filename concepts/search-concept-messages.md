@@ -1,6 +1,6 @@
 ---
 title: "Use the Microsoft Search API in Microsoft Graph to search messages"
-description: "The Microsoft Search API lets apps search for information in email messages, return messages ranked by relevance, and render a dedicated search experience."
+description: "You can use the Microsoft Search API to search for information in email messages, return messages ranked by relevance, and render a dedicated search experience."
 author: "knightsu"
 localization_priority: Normal
 ms.prod: "search"
