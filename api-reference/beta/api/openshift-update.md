@@ -3,7 +3,7 @@ title: "Update openShift"
 description: "Update the properties of an openShift object."
 localization_priority: Normal
 author: "akumar39"
-ms.prod: "Microsoft-Teams"
+ms.prod: "microsoft-teams"
 doc_type: "apiPageType"
 ---
 
@@ -19,7 +19,7 @@ One of the following permissions is required to call this API. To learn more, in
 
 | Permission type                        | Permissions (from least to most privileged) |
 |:---------------------------------------|:--------------------------------------------|
-| Delegated (work or school account)     | Not supported. |
+| Delegated (work or school account)     | Group.ReadWrite.All |
 | Delegated (personal Microsoft account) | Not supported. |
 | Application                            | Not supported. |
 
@@ -44,9 +44,9 @@ In the request body, supply the values for relevant fields that should be update
 
 | Property     | Type        | Description |
 |:-------------|:------------|:------------|
-|draftOpenShift|openShiftItem||
-|schedulingGroupId|String||
-|sharedOpenShift|openShiftItem||
+|draftOpenShift|openShiftItem|An unpublished open shift.|
+|schedulingGroupId|String| Scheduling group id. |
+|sharedOpenShift|openShiftItem|A published open shift.|
 
 ## Response
 
@@ -73,7 +73,7 @@ Content-type: application/json
   "draftOpenShift": {
     "openSlotCount": 99
   },
-  "schedulingGroupId": "schedulingGroupId-value"
+  "schedulingGroupId": "TAG_f914d037-00a3-4ba4-b712-ef178cbea263"
 }
 ```
 

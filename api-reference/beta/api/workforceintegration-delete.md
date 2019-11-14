@@ -1,9 +1,9 @@
 ---
 title: "Delete workforceIntegration"
-description: "Delete workforceIntegration."
+description: "Delete an instance of a workforceIntegration."
 localization_priority: Normal
 author: "akumar39"
-ms.prod: "Microsoft-Teams"
+ms.prod: "microsoft-teams"
 doc_type: "apiPageType"
 ---
 
@@ -11,7 +11,7 @@ doc_type: "apiPageType"
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Delete workforceIntegration.
+Delete an instance of a [workforceIntegration](../resources/workforceintegration.md).
 
 ## Permissions
 
@@ -19,7 +19,7 @@ One of the following permissions is required to call this API. To learn more, in
 
 | Permission type                        | Permissions (from least to most privileged) |
 |:---------------------------------------|:--------------------------------------------|
-| Delegated (work or school account)     | Not supported. |
+| Delegated (work or school account)     | WorkforceIntegration.ReadWrite.All |
 | Delegated (personal Microsoft account) | Not supported. |
 | Application                            | Not supported. |
 

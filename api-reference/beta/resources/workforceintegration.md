@@ -1,9 +1,9 @@
 ---
 title: "workforceIntegration resource type"
-description: "PROVIDE DESCRIPTION HERE"
+description: "An instance of a workforce integration with Shifts"
 localization_priority: Normal
 author: "akumar39"
-ms.prod: "Microsoft-Teams"
+ms.prod: "microsoft-teams"
 doc_type: "resourcePageType"
 ---
 
@@ -11,7 +11,7 @@ doc_type: "resourcePageType"
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-PROVIDE DESCRIPTION HERE
+An instance of a workforceforce integration with Shifts.
 
 ## Methods
 
@@ -25,12 +25,12 @@ PROVIDE DESCRIPTION HERE
 
 | Property     | Type        | Description |
 |:-------------|:------------|:------------|
-|apiVersion|Int32||
-|displayName|String||
-|encryption|[workforceIntegrationEncryption](workforceintegrationencryption.md)||
+|apiVersion|Int32|API version for the call back url. Start with 1.|
+|displayName|String|Name of the workforce integration.|
+|encryption|[workforceIntegrationEncryption](workforceintegrationencryption.md)|The workforce integration encryption resource.|
 |isActive|Boolean||
-|supports|string| Possible values are: `none`, `shift`, `swapRequest`.|
-|url|String||
+|supports|string| Possible values are: `none`, `shift`, `swapRequest`, `openshift`, `openShiftRequest`, `userShiftPreferences`|
+|url|String| Workforce Integration url for callbacks from the Shift service.|
 
 ## Relationships
 

@@ -38,7 +38,11 @@ A collection of [schedulingGroup](schedulinggroup.md) objects, [shift](shift.md)
 | timesOff   |`collection(timeOff)`  | The instances of times off in the schedule. |
 | timeOffReasons   |`collection(timeOffReason)`  | The set of reasons for a time off in the schedule. |
 | schedulingGroups   |`collection(schedulingGroup)`  | The logical grouping of users in the schedule (usually by role). |
-
+| openshifts   |`collection(openshift)`  | The set of open shifts in a scheduling group in the schedule. |
+| workforceintegrations   |`collection(workforceintegration)`  | An instance of a workforce integration per team with outbound data flow on synchronous change notifications (for supported entities). |
+| swapshiftchangerequests   |`collection(swapshiftchangerequest)`  | The swap requests for shifts in the schedule. |
+| openshiftchangerequests   |`collection(openshiftchangerequest)`  | The open shift requests in the schedule. |
+| timeoffrequest   |`collection(timeoffrequest)`  | The time off requests in the schedule. |
 
 ## JSON representation
 

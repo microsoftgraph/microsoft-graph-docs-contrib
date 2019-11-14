@@ -3,7 +3,7 @@ title: "Update workforceintegration"
 description: "Update the properties of workforceintegration object."
 localization_priority: Normal
 author: "akumar39"
-ms.prod: "Microsoft-Teams"
+ms.prod: "microsoft-teams"
 doc_type: "apiPageType"
 ---
 
@@ -11,7 +11,7 @@ doc_type: "apiPageType"
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Update the properties of workforceintegration object.
+Update the properties of [workforceintegration](../resources/workforceintegration.md) object.
 
 ## Permissions
 
@@ -19,7 +19,7 @@ One of the following permissions is required to call this API. To learn more, in
 
 | Permission type                        | Permissions (from least to most privileged) |
 |:---------------------------------------|:--------------------------------------------|
-| Delegated (work or school account)     | Not supported. |
+| Delegated (work or school account)     |WorkforceIntegration.ReadWrite.All |
 | Delegated (personal Microsoft account) | Not supported. |
 | Application                            | Not supported. |
 
@@ -43,12 +43,12 @@ In the request body, supply the values for relevant fields that should be update
 
 | Property     | Type        | Description |
 |:-------------|:------------|:------------|
-|apiVersion|Int32||
-|displayName|String||
-|encryption|workforceIntegrationEncryption||
+|apiVersion|Int32|API version for the call back url. Start with 1.|
+|displayName|String|Name of the workforce integration.|
+|encryption|workforceIntegrationEncryption|The workforce integration encryption resource. |
 |isActive|Boolean||
-|supports|string| Possible values are: `none`, `shift`, `swapRequest`.|
-|url|String||
+|supports|string| `none`, `shift`, `swapRequest`, `openshift`, `openShiftRequest`, `userShiftPreferences`. If selecting more than one value, all values must start with the first letter in uppercase.|
+|url|String| Workforce Integration url for callbacks from the Shift service. |
 
 ## Response
 

@@ -1,9 +1,9 @@
 ---
 title: "swapShiftsChangeRequest resource type"
-description: "PROVIDE DESCRIPTION HERE"
+description: "A type of shift request to swap a shift with another user in the team."
 localization_priority: Normal
 author: "akumar39"
-ms.prod: "Microsoft-Teams"
+ms.prod: "microsoft-teams"
 doc_type: "resourcePageType"
 ---
 
@@ -11,7 +11,7 @@ doc_type: "resourcePageType"
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-PROVIDE DESCRIPTION HERE
+A type of shift request to swap a [shift](../resources/shift.md) with another user in the [team](../resources/team.md).
 
 ## Methods
 
@@ -25,7 +25,7 @@ PROVIDE DESCRIPTION HERE
 
 | Property     | Type        | Description |
 |:-------------|:------------|:------------|
-|recipientShiftId|String||
+|recipientShiftId|String|ID of the recipient of the swap request. This is the user who is requested to swap with.|
 
 ## Relationships
 

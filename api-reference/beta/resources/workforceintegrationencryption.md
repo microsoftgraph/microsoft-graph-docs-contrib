@@ -1,9 +1,9 @@
 ---
 title: "workforceIntegrationEncryption resource type"
-description: "PROVIDE DESCRIPTION HERE"
+description: "An encryption entity defining the protocol and secret for a workforce integration."
 localization_priority: Normal
 author: "akumar39"
-ms.prod: "Microsoft-Teams"
+ms.prod: "microsoft-teams"
 doc_type: "resourcePageType"
 ---
 
@@ -11,14 +11,14 @@ doc_type: "resourcePageType"
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-PROVIDE DESCRIPTION HERE
+An encryption entity defining the protocol and secret for a [workforceinteration](../resources/workforceinteration.md).
 
 ## Properties
 
 | Property     | Type        | Description |
 |:-------------|:------------|:------------|
 |protocol|String| Possible values are: `sharedSecret`, `unknownFutureValue`.|
-|secret|String||
+|secret|String|Encryption shared secret.|
 
 ## JSON representation
 

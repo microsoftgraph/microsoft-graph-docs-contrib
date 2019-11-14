@@ -1,9 +1,9 @@
 ---
 title: "openShiftChangeRequest resource type"
-description: "PROVIDE DESCRIPTION HERE"
+description: "A type of shift request to claim an open shift in a schedule."
 localization_priority: Normal
 author: "akumar39"
-ms.prod: "Microsoft-Teams"
+ms.prod: "microsoft-teams"
 doc_type: "resourcePageType"
 ---
 
@@ -11,7 +11,7 @@ doc_type: "resourcePageType"
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-PROVIDE DESCRIPTION HERE
+A type of shift request to claim an [openshift](../resources/openshift.md) in a [schedule](../resources/schedule.md).
 
 ## Methods
 
@@ -20,14 +20,14 @@ PROVIDE DESCRIPTION HERE
 | [Get openShiftChangeRequest](../api/openshiftchangerequest-get.md) | [openShiftChangeRequest](openshiftchangerequest.md) | Read properties and relationships of openShiftChangeRequest object. |
 | [Update](../api/openshiftchangerequest-update.md) | [openShiftChangeRequest](openshiftchangerequest.md) | Update openShiftChangeRequest object. |
 | [Delete](../api/openshiftchangerequest-delete.md) | None | Delete openShiftChangeRequest object. |
-|[Approve](../api/openshiftchangerequest-approve.md)|None||
-|[Decline](../api/openshiftchangerequest-decline.md)|None||
+|[Approve](../api/openshiftchangerequest-approve.md)|None|Approve  openShiftChangeRequest object.|
+|[Decline](../api/openshiftchangerequest-decline.md)|None| Decline openShiftChangeRequest object.|
 
 ## Properties
 
 | Property     | Type        | Description |
 |:-------------|:------------|:------------|
-|openShiftId|String||
+|openShiftId|String| ID for the open shift.|
 
 ## Relationships
 

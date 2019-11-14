@@ -1,9 +1,9 @@
 ---
 title: "openShiftItem resource type"
-description: "PROVIDE DESCRIPTION HERE"
+description: "A single count of an open shift."
 localization_priority: Normal
 author: "akumar39"
-ms.prod: "Microsoft-Teams"
+ms.prod: "microsoft-teams"
 doc_type: "resourcePageType"
 ---
 
@@ -11,13 +11,13 @@ doc_type: "resourcePageType"
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-PROVIDE DESCRIPTION HERE
+A single count of an [openshift](../resources/openshift.md).
 
 ## Properties
 
 | Property     | Type        | Description |
 |:-------------|:------------|:------------|
-|openSlotCount|Int32||
+|openSlotCount|Int32| Count of the number of slots for the given open shift.|
 
 ## JSON representation
 

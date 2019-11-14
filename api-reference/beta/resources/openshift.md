@@ -1,9 +1,9 @@
 ---
 title: "openShift resource type"
-description: "PROVIDE DESCRIPTION HERE"
+description: "An unassigned open shift in a schedule."
 localization_priority: Normal
 author: "akumar39"
-ms.prod: "Microsoft-Teams"
+ms.prod: "microsoft-teams"
 doc_type: "resourcePageType"
 ---
 
@@ -11,7 +11,7 @@ doc_type: "resourcePageType"
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-PROVIDE DESCRIPTION HERE
+An unassigned, open shift in a [schedule](../resources/schedule.md).
 
 ## Methods
 
@@ -25,9 +25,9 @@ PROVIDE DESCRIPTION HERE
 
 | Property     | Type        | Description |
 |:-------------|:------------|:------------|
-|draftOpenShift|[openShiftItem](openshiftitem.md)||
-|schedulingGroupId|String||
-|sharedOpenShift|[openShiftItem](openshiftitem.md)||
+|draftOpenShift|[openShiftItem](openshiftitem.md)|An unpublished open shift.|
+|schedulingGroupId|String|ID for the scheduling group that the open shift belongs to.|
+|sharedOpenShift|[openShiftItem](openshiftitem.md)|A published open shift.|
 
 ## Relationships
 
