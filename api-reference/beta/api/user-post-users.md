@@ -169,7 +169,7 @@ Content-type: application/json
     {
       "signInType": "emailAddress",
       "issuer": "contoso.onmicrosoft.com",
-      "issuerAssignedId": "jsmith@gmail.com"
+      "issuerAssignedId": "jsmith@yahoo.com"
     },
     {
       "signInType": "federated",
@@ -226,7 +226,7 @@ Content-type: application/json
     {
       "signInType": "emailAddress",
       "issuer": "contoso.onmicrosoft.com",
-      "issuerAssignedId": "jsmith@gmail.com"
+      "issuerAssignedId": "jsmith@yahoo.com"
     },
     {
       "signInType": "federated",
