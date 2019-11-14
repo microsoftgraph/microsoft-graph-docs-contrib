@@ -21,7 +21,7 @@ One of the following permissions is required to call this API. To learn more, in
 |:---------------------------------------|:--------------------------------------------|
 | Delegated (work or school account)     | Application.ReadWrite.All (also needs Directory.Read.All), Directory.AccessAsUser.All, Directory.ReadWrite.All |
 | Delegated (personal Microsoft account) | Not supported. |
-| Application                            | Application.ReadWrite.All (also needs Directory.Read.All), Directory.AccessAsUser.All, Directory.ReadWrite.All |
+| Application                            | Application.ReadWrite.All (also needs Directory.Read.All), Directory.ReadWrite.All |
 
 Please note, users can delete their own credentials. Service Principal Owners and admins with the following roles will be able to delete credentials for any user or group: GlobalAdministrator, ApplicationAdministrator, CloudApplicationAdministrator. To learn more, see [Directory Roles](https://docs.microsoft.com/azure/active-directory/users-groups-roles/directory-assign-admin-roles#available-roles).
 
@@ -38,6 +38,7 @@ POST /servicePrincipals/{id}/deletePasswordSingleSignOnCredentials
 | Name          | Description   |
 |:--------------|:--------------|
 | Authorization | Bearer {token} |
+| Content-Type | application/json |
 
 ## Request body
 
@@ -49,7 +50,7 @@ In the request body, provide a JSON object with the following parameters.
 
 ## Response
 
-If successful, this method returns `204` response code. It does not return anything in the response body.
+If successful, this method returns `204 No Content` response code. It does not return anything in the response body.
 
 ## Examples
 
@@ -82,7 +83,7 @@ The following is an example of the response.
 } -->
 
 ```http
-HTTP/1.1 204
+HTTP/1.1 204 No Content
 ```
 
 <!-- uuid: 16cd6b66-4b1a-43a1-adaf-3a886856ed98
