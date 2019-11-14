@@ -36,9 +36,9 @@ The following is a JSON representation of the resource.
 
 ```json
 {
-  "fieldId": "String",
-  "type": "String",
-  "value": "String"
+  "fieldId": "param_username",
+  "value": "myusername",
+  "type": "username"
 }
 ```
 
