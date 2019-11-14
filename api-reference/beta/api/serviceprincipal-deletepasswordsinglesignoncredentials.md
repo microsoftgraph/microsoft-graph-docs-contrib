@@ -23,7 +23,8 @@ One of the following permissions is required to call this API. To learn more, in
 | Delegated (personal Microsoft account) | Not supported. |
 | Application                            | Application.ReadWrite.All (also needs Directory.Read.All), Directory.ReadWrite.All |
 
-Please note, users can delete their own credentials. Service Principal Owners and admins with the following roles will be able to delete credentials for any user or group: GlobalAdministrator, ApplicationAdministrator, CloudApplicationAdministrator. To learn more, see [Directory Roles](https://docs.microsoft.com/azure/active-directory/users-groups-roles/directory-assign-admin-roles#available-roles).
+> [!NOTE]
+> Users can create credentials for themselves. Service principal owners and admins with the following rolescan create credentials for any user or group: GlobalAdministrator, ApplicationAdministrator, CloudApplicationAdministrator. To learn more, see [Directory roles](https://docs.microsoft.com/azure/active-directory/users-groups-roles/directory-assign-admin-roles#available-roles).
 
 ## HTTP request
 
@@ -37,7 +38,7 @@ POST /servicePrincipals/{id}/deletePasswordSingleSignOnCredentials
 
 | Name          | Description   |
 |:--------------|:--------------|
-| Authorization | Bearer {token} |
+| Authorization | Bearer {token}. Required. |
 | Content-Type  | application/json. Required.  |
 
 ## Request body
@@ -46,19 +47,17 @@ In the request body, provide a JSON object with the following parameters.
 
 | Parameter    | Type        | Description |
 |:-------------|:------------|:------------|
-|id|String|The id of the user or group this credential set belongs to.|
+|id|String|The ID of the user or group this credential set belongs to.|
 
 ## Response
 
-If successful, this method returns `204 No Content` response code. It does not return anything in the response body.
+If successful, this method returns a `204 No Content` response code. It does not return anything in the response body.
 
 ## Examples
 
-The following is an example of how to call this API.
-
 ### Request
 
-The following is an example of the request.
+The following is an example of a request.
 <!-- {
   "blockType": "request",
   "name": "serviceprincipal_deletepasswordsinglesignoncredentials"
