@@ -68,6 +68,8 @@ For details about known issues with Microsoft Graph APIs, see [Known issues](kno
 | Addition | v1.0 | Added new entity type: [application](/graph/resources/application?view=graph-rest-v1.0).|
 | Addition | v1.0 | Added new delegated permissions [Application.Read.All](/graph/permissions-reference#application-resource-permissions), [Application.ReadWrite.All](/graph/permissions-reference#application-resource-permissions).|
 | Addition | v1.0 | Added new application permission [Application.Read.All](/graph/permissions-reference#application-resource-permissions).|
+| Addition | v1.0 | Added new delegated and application permissions [GroupMember.Read.All](https://docs.microsoft.com/graph/permissions-reference#group-permissions) and [GroupMember.ReadWrite.All](https://docs.microsoft.com/graph/permissions-reference#group-permissions) to get and update the [group API](https://docs.microsoft.com/graph/api/resources/group?view=graph-rest-1.0) resource.
+| Addition | v1.0 | Added new application permission [Group.Create](https://docs.microsoft.com/graph/permissions-reference#group-permissions) to create the [group API](https://docs.microsoft.com/graph/api/resources/group?view=graph-rest-1.0) resource.
 | Addition | beta and v1.0 | Added the **creationType** property to the [user](/graph/resources/user?view=graph-rest-v1.0) resource.|
 
 ### People and workplace intelligence
