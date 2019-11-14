@@ -38,7 +38,7 @@ POST /servicePrincipals/{id}/deletePasswordSingleSignOnCredentials
 | Name          | Description   |
 |:--------------|:--------------|
 | Authorization | Bearer {token} |
-| Content-Type | application/json |
+| Content-Type  | application/json. Required.  |
 
 ## Request body
 
