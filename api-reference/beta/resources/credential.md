@@ -1,6 +1,6 @@
 ---
 title: "credential resource type"
-description: "Indicates a single credential used for login to an application."
+description: "Indicates a single credential used for sign-in to an application."
 localization_priority: Normal
 author: "bharathramh92"
 ms.prod: "microsoft-identity-platform"
@@ -11,7 +11,7 @@ doc_type: "resourcePageType"
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Indicates a single credential used for login to an application. For example, username is one credential, password is another credential.
+Indicates a single credential used for sign-in to an application. For example, username is one credential, password is another credential.
 
 ## Properties
 
