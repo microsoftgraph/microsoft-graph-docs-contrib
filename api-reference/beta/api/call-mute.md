@@ -15,7 +15,7 @@ Allows the application to mute itself.
 
 This is a server mute, meaning that the server will drop all audio packets for this participant, even if the participant continues to stream audio.
 
-For further information on how to handle operations, please review [commsOperation](../resources/commsOperation.md)
+For further information on how to handle operations, please review [muteParticipantOperation](../resources/muteparticipantOperation.md)
 
 > **Note:** This is only supported for group calls.
 
@@ -96,7 +96,7 @@ Content-Type: application/json
 <!-- { 
   "blockType": "response", 
   "truncated": true, 
-  "@odata.type": "microsoft.graph.commsOperation" 
+  "@odata.type": "microsoft.graph.muteParticipantOperation" 
 } --> 
 ```http
 HTTP/1.1 200 OK
@@ -107,13 +107,13 @@ Content-Length: 259
 
 <!-- {
   "blockType": "example",
-  "@odata.type": "microsoft.graph.commsOperation",
+  "@odata.type": "microsoft.graph.muteParticipantOperation",
   "truncated": true
 }-->
 ```json
 {
-  "@odata.type": "#microsoft.graph.commsOperation",
-  "@odata.context": "https://graph.microsoft.com/beta/$metadata#commsOperation",
+  "@odata.type": "#microsoft.graph.muteParticipantOperation",
+  "@odata.context": "https://graph.microsoft.com/beta/$metadata#muteParticipantOperation",
   "id": "17e3b46c-f61d-4f4d-9635-c626ef18e6ad",
   "status": "completed",
   "clientContext": "clientContext-value"

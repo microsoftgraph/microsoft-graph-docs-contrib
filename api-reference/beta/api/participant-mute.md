@@ -15,7 +15,7 @@ Mute a specific participant in the call.
 
 This is a server mute, meaning that the server will drop all audio packets for this participant, even if the participant continues to stream audio.
 
-For more information about how to handle operations, see [commsOperation](../resources/commsOperation.md).
+For more information about how to handle operations, see [muteParticipantOperation](../resources/muteParticipantOperation.md).
 
 > **Note:** This is only supported for group calls.
 

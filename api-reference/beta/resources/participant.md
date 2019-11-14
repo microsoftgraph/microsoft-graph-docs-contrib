@@ -21,7 +21,7 @@ The participant type.
 | [ConfigureMixer](../api/participant-configuremixer.md) | [commsOperation](commsoperation.md)                         | Configure the participant audio mixer.         |
 | [Invite](../api/participant-invite.md)                 | [commsOperation](commsoperation.md)                         | Invite a participant to the call.              |
 | [Mute participant](../api/participant-mute.md)         | [muteParticipantOperation](muteparticipantoperation.md)     | Mute a participant in a call.                  |
-| [Mute all participants](../api/participant-muteall.md) | [unmuteParticipantOperation](unmuteparticipantoperation.md) | Mute all the participants in the meeting.      |
+| [Mute all participants](../api/participant-muteall.md) | [commsOperation](commsOperation.md) | Mute all the participants in the meeting.      |
 
 ## Properties
 
