@@ -1,6 +1,6 @@
 ---
 title: "passwordSingleSignOnCredentialSet resource type"
-description: "Indicates a set of credentials that completely define a login flow for a user or group to an application."
+description: "Indicates a set of credentials that completely define a sign in flow for a user or group to an application."
 localization_priority: Normal
 author: "bharathramh92"
 ms.prod: "microsoft-identity-platform"
@@ -11,14 +11,14 @@ doc_type: "resourcePageType"
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Indicates a set of credentials that completely define a login flow for a user or group to an application.
+Indicates a set of credentials that completely define a sign in flow for a user or group to an application.
 
 ## Properties
 
 | Property     | Type        | Description |
 |:-------------|:------------|:------------|
-|credentials|[credential](credential.md) collection|A list of credential objects that define the complete login flow.|
-|id|String|The id of the user or group this credential set belongs to.|
+|credentials|[credential](credential.md) collection|A list of credential objects that define the complete sign in flow.|
+|id|String|The ID of the user or group this credential set belongs to.|
 
 ## JSON representation
 
