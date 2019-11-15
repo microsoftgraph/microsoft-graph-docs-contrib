@@ -71,6 +71,20 @@ For details about known issues with Microsoft Graph APIs, see [Known issues](kno
 | Addition | v1.0 | Added new delegated permissions [Application.Read.All](/graph/permissions-reference#application-resource-permissions), [Application.ReadWrite.All](/graph/permissions-reference#application-resource-permissions).|
 | Addition | v1.0 | Added new application permission [Application.Read.All](/graph/permissions-reference#application-resource-permissions).|
 
+### Mail (Outlook)
+
+| **Change type** | **Version**   | **Description**                          |
+| :-------------- | :------------ | :--------------------------------------- |
+| Addition | v1.0 | Added support for the [Mail.ReadBasic](/graph/permissions-reference#mail-permissions) delegated permissions and [Mail.ReadBasic.All](/graph/permissions-reference#mail-permissions) application permission for:
+ [List Messages](/graph/api/user-list-messages?view=graph-rest-v1.0)<br />
+ [Get Message](/graph/api/message-get?view=graph-rest-v1.0) <br />
+ [list mailfolders](/graph/api/user-list-mailfolders?view=graph-rest-v1.0)<br />
+  [get a mailfolder](/graph/api/mailfolder-get?view=graph-rest-v1.0)<br />
+  [list child folders](/graph/api/mailfolder-list-childfolders?view=graph-rest-v1.0)<br />
+  [list messages in a mail folder](/graph/api/mailfolder-list-childfolders?view=graph-rest-v1.0)<br />
+  [delta query for message](/graph/api/message-delta?view=graph-rest-v1.0)<br />
+  [delta query for mailFolder](/graph/api/mailfolder-delta?view=graph-rest-v1.0) |
+
 ### People and workplace intelligence
 
 | **Change type** | **Version** | **Description**                  |
@@ -253,16 +267,6 @@ Microsoft Search is now exposing a way to search and index data in Microsoft Gra
 | Addition        | Beta          | [Adding file attachments up to 150MB](outlook-large-attachments.md) to a [message](/graph/api/resources/message?view=graph-rest-beta) instance. |
 | Addition        | Beta          | The [attachmentItem](/graph/api/resources/attachmentitem?view=graph-rest-beta) complex type, [createUploadSession](/graph/api/attachment-createuploadsession?view=graph-rest-beta) action for the [attachment](/graph/api/resources/attachment?view=graph-rest-beta) entity, and the **attachmentType** enumeration. |
 | Changed         | Beta          | Extended the existing [uploadSession](/graph/api/resources/uploadsession?view=graph-rest-beta) entity that has been used by [driveItem](/graph/api/resources/driveitem?view=graph-rest-beta) to apply to **attachment** as well. |
-| Addition        | v1.0          | Added the **message** parameter to the method for [replying a message on the fly](/graph/api/message-reply?view=graph-rest-1.0). |
-| Addition | v1.0 | Added support for the [Mail.ReadBasic](/graph/permissions-reference#mail-permissions) delegated permissions and [Mail.ReadBasic.All](/graph/permissions-reference#mail-permissions) application permission for:
- [List Messages](/graph/api/user-list-messages?view=graph-rest-v1.0)<br />
- [Get Message](/graph/api/message-get?view=graph-rest-v1.0) <br />
- [list mailfolders](/graph/api/user-list-mailfolders?view=graph-rest-v1.0)<br />
-  [get a mailfolder](/graph/api/mailfolder-get?view=graph-rest-v1.0)<br />
-  [list child folders](/graph/api/mailfolder-list-childfolders?view=graph-rest-v1.0)<br />
-  [list messages in a mail folder](/graph/api/mailfolder-list-childfolders?view=graph-rest-v1.0)<br />
-  [delta query for message](/graph/api/message-delta?view=graph-rest-v1.0)<br />
-  [delta query for mailFolder](/graph/api/mailfolder-delta?view=graph-rest-v1.0)
 
 ### Notifications
 
