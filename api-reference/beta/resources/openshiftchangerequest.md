@@ -1,6 +1,6 @@
 ---
 title: "openShiftChangeRequest resource type"
-description: "A type of shift request to claim an open shift in a schedule."
+description: "Represents a type of shift request to claim an open shift in a schedule."
 localization_priority: Normal
 author: "akumar39"
 ms.prod: "microsoft-teams"
@@ -11,7 +11,7 @@ doc_type: "resourcePageType"
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-A type of shift request to claim an [openshift](../resources/openshift.md) in a [schedule](../resources/schedule.md).
+Represents a type of shift request to claim an [openshift](../resources/openshift.md) in a [schedule](../resources/schedule.md).
 
 ## Methods
 
