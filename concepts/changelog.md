@@ -272,6 +272,7 @@ Microsoft Search is now exposing a way to search and index data in Microsoft Gra
 | Addition | Beta | Added the [Get team photo](/graph/api/team-get-photo?view=graph-rest-beta) and [Update team photo](/graph/api/team-update-photo?view=graph-rest-beta) methods. |
 | Addition | Beta | [Reading images in messages](/graph/api/chatmessagehostedcontent-get?view=graph-rest-beta) now support application permissions. |
 | Addition | Beta | Added the [openshift](/api-reference/beta/resources/openshift?view=graph-rest-beta), [openshiftChangeRequest](/api-reference/beta/resources/openshiftChangeRequest?view=graph-rest-beta), [swapShiftChangeRequest](/api-reference/beta/resources/swapShiftChangeRequest?view=graph-rest-beta), [timeoffrequest](/api-reference/beta/resources/timeoffrequest?view=graph-rest-beta) |
+| Addition | Beta | Added the **timeClockEnabled**, **openShiftsEnabled**, **swapShiftsRequestsEnabled**, **offerShiftRequestsEnabled**,  **timeOffRequestsEnabled** members to the [schedule] (/api-reference/beta/resources/schedule?view=graph-rest-beta) resource|
 | Addition | Beta | Added the **swapRequest**, **openShift**, **openShiftRequest** and **userShiftPreferences**  members to the [workforceIntegrationSupportedEntities] enum in [enums](/api-reference/beta/resources/enums?view=graph-rest-beta)|
 
 
