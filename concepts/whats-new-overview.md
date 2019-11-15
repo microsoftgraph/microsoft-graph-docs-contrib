@@ -30,7 +30,7 @@ Register [applications](/graph/api/resources/application?view=graph-rest-1.0) th
 Intune [November](changelog.md#november-2019) updates
 
 ### Notifications
-Use the new light-weight notification [web SDK](https://aka.ms/GNSDK) in place of the [Project Rome SDK](https://github.com/Microsoft/project-rome), to take advantage of an improved authentication model and support for web apps using web push. 
+Use the new light-weight notifications [web SDK](https://aka.ms/GNSDK) in place of the [Project Rome SDK](https://github.com/Microsoft/project-rome), to take advantage of an improved authentication model and support for web apps using web push. 
 
 ### People and workplace intelligence
 
