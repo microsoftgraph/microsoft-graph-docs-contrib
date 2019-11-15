@@ -13,12 +13,6 @@ For details about known issues with Microsoft Graph APIs, see [Known issues](kno
 
 ## November 2019
 
-### Identity and access (Azure AD) | Conditional access
-
-| **Change type** | **Version** | **Description**                  |
-|:----------------|:------------|:-----------------------------------------|
-| Addition | beta | Added application-level `Policy.Read.All` permission for read operations in both conditional access policies and named locations.|
-
 ### Calendar | Place
 
 | **Change type** | **Version** | **Description**                  |
@@ -76,6 +70,12 @@ For details about known issues with Microsoft Graph APIs, see [Known issues](kno
 | Addition | v1.0 | Added new entity type: [application](/graph/resources/application?view=graph-rest-v1.0).|
 | Addition | v1.0 | Added new delegated permissions [Application.Read.All](/graph/permissions-reference#application-resource-permissions), [Application.ReadWrite.All](/graph/permissions-reference#application-resource-permissions).|
 | Addition | v1.0 | Added new application permission [Application.Read.All](/graph/permissions-reference#application-resource-permissions).|
+
+### Identity and access (Azure AD) | Conditional access
+
+| **Change type** | **Version** | **Description**                  |
+|:----------------|:------------|:-----------------------------------------|
+| Addition | beta | Added application-level Policy.Read.All permission for read operations in both conditional access policies and named locations.|
 
 ### People and workplace intelligence
 
