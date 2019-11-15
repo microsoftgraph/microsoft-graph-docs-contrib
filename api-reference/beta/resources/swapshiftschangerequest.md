@@ -19,13 +19,13 @@ Represents a type of shift request to swap a [shift](../resources/shift.md) with
 |:-------------|:------------|:------------|
 | [Get](../api/swapshiftschangerequest-get.md) | [swapShiftsChangeRequest](swapshiftschangerequest.md) | Read the properties and relationships of a **swapShiftsChangeRequest** object. |
 | [Update](../api/swapshiftschangerequest-update.md) | [swapShiftsChangeRequest](swapshiftschangerequest.md) | Update a **swapShiftsChangeRequest** object. |
-| [Delete](../api/swapshiftschangerequest-delete.md) | None | Delete  **swapShiftsChangeRequest** object. |
+| [Delete](../api/swapshiftschangerequest-delete.md) | None | Delete a **swapShiftsChangeRequest** object. |
 
 ## Properties
 
 | Property     | Type        | Description |
 |:-------------|:------------|:------------|
-|recipientShiftId|String|ID of the recipient of the swap request. This is the user whom the request is to swap with.|
+|recipientShiftId|String|ID of the recipient of the swap request. This is the user with whom the request is to swap.|
 
 ## Relationships
 
