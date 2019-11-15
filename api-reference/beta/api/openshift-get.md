@@ -11,7 +11,7 @@ doc_type: "apiPageType"
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Retrieve the properties and relationships of an [openshift](../resources/openshif.md) object.
+Retrieve the properties and relationships of an [openshift](../resources/openshift.md) object.
 
 ## Permissions
 

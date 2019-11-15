@@ -11,7 +11,7 @@ doc_type: "resourcePageType"
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-An encryption entity defining the protocol and secret for a [workforceinteration](../resources/workforceinteration.md).
+An encryption entity defining the protocol and secret for a [workforceintegration](../resources/workforceinteration.md).
 
 ## Properties
 
