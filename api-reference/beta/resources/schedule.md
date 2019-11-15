@@ -29,6 +29,12 @@ A collection of [schedulingGroup](schedulinggroup.md) objects, [shift](shift.md)
 | timeZone 		        |`string`  | Indicates the time zone of the schedule team using tz database format. Required.|
 | provisionStatus       |`operationStatus`    | The status of the schedule provisioning. The possible values are `notStarted`, `running`, `completed`, `failed`. |
 | provisionStatusCode   |`string`  | Additional information about why schedule provisioning failed. |
+| timeClockEnabled			        |`bool`  | Indicates if time clock is enabled for the `schedule`.             |
+| openShiftsEnabled			        |`bool`  | Indicates if open shifts are enabled for the `schedule`.             | 
+| swapShiftsRequestsEnabled			        |`bool`  | Indicates if swap shifts requests are enabled for the `schedule`.             |
+| offerShiftRequestsEnabled			        |`bool`  | Indicates if offer shift requests are enabled for the `schedule`.             | 
+| timeOffRequestsEnabled			        |`bool`  | Indicates if time off requests are enabled for the `schedule`.             | 
+
 
 
 ## Relationships
