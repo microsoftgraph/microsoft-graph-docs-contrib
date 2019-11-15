@@ -202,7 +202,7 @@ Content-Type: application/json
 
 ## Known limitations
 
-You cannot scope a query to a particular connectionId.
+You cannot scope a query to a particular connection ID.
 
 ## Next steps
 
