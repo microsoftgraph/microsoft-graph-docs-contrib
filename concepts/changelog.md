@@ -19,7 +19,6 @@ For details about known issues with Microsoft Graph APIs, see [Known issues](kno
 |:----------------|:------------|:-----------------------------------------|
 | Addition        | Beta  | Added the ability to [update a room or roomlist](/graph/api/resources/place-get?view=graph-rest-beta).|
 
-
 ### Devices and apps (Microsoft Intune)
 
 |Change type|Version|Description|
@@ -56,7 +55,6 @@ For details about known issues with Microsoft Graph APIs, see [Known issues](kno
 |Change|beta|Changed the following properties on the [credentialSingleSignOnExtension](/graph/api/resources/intune-deviceconfig-credentialsinglesignonextension?view=graph-rest-beta) complex type:<br/>**teamIdentifier** from required to optional<br/>|
 |Addition|beta|Added the **companyPortalBlockedActions**, **showAzureADEnterpriseApps** and **showOfficeWebApps** properties to the [intuneBrand](/graph/api/resources/intune-onboarding-intunebrand?view=graph-rest-beta) complex type|
 
-
 ### Education
 
 | **Change type** | **Version**   | **Description**                          |
@@ -70,6 +68,9 @@ For details about known issues with Microsoft Graph APIs, see [Known issues](kno
 | Addition | v1.0 | Added new entity type: [application](/graph/resources/application?view=graph-rest-v1.0).|
 | Addition | v1.0 | Added new delegated permissions [Application.Read.All](/graph/permissions-reference#application-resource-permissions), [Application.ReadWrite.All](/graph/permissions-reference#application-resource-permissions).|
 | Addition | v1.0 | Added new application permission [Application.Read.All](/graph/permissions-reference#application-resource-permissions).|
+| Addition | v1.0 | Added new delegated and application permissions [GroupMember.Read.All](https://docs.microsoft.com/graph/permissions-reference#group-permissions) and [GroupMember.ReadWrite.All](https://docs.microsoft.com/graph/permissions-reference#group-permissions) to get and update the [group API](https://docs.microsoft.com/graph/api/resources/group?view=graph-rest-1.0) resource.
+| Addition | v1.0 | Added new application permission [Group.Create](https://docs.microsoft.com/graph/permissions-reference#group-permissions) to create the [group API](https://docs.microsoft.com/graph/api/resources/group?view=graph-rest-1.0) resource.
+| Addition | beta and v1.0 | Added the **creationType** property to the [user](/graph/resources/user?view=graph-rest-v1.0) resource.|
 
 ### People and workplace intelligence
 
@@ -388,6 +389,7 @@ Microsoft Search is now exposing a way to search and index data in Microsoft Gra
 | Addition | Beta | Added the [objectIdentity](/graph/api/resources/objectIdentity?view=graph-rest-beta) resource that represents an identity used to sign in to a user account. |
 | Addition | Beta | Added **synchronizationJobSettings** property to the [synchronizationJob](/graph/api/resources/synchronization-synchronizationjob?view=graph-rest-beta) resource.|
 | Addition | Beta | Added new possible values for the **reason** property in the [synchronizationQuarantine](/graph/api/resources/synchronization-quarantine?view=graph-rest-beta) resource.|
+| Addition | Beta | Added the capability to manage password single sign on credentials on the [servicePrincipal object](/graph/api/resources/serviceprincipal?view=graph-rest-beta). |
 
 ### Mail (Outlook)
 
