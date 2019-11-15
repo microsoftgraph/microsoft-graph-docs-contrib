@@ -7,7 +7,7 @@ author: nmetulev
 
 # Person component in the Microsoft Graph Toolkit
 
-The person component is used to display a person or contact by using their photo, name, and/or email address. 
+The person component is used to display a person or contact by using their photo, name, and/or email address.
 
 The person component also uses the [mgt-person-card](./person-card.md) to display a flyout card with additional information about the user. For details, see the [Person Card](#person-card) section.
 
@@ -24,7 +24,7 @@ The person component also uses the [mgt-person-card](./person-card.md) to displa
 
 You can use three properties to set the person details. Use only one of the following properties per instance:
 
-* Set the `user-id` attribute or `userId` property to fetch the user from Microsoft Graph by using their ID.  
+* Set the `user-id` attribute or `userId` property to fetch the user from Microsoft Graph by using their ID.
 
 * Set the `person-query` attribute or `personQuery` property to search Microsoft Graph for a given person. It will choose the first person available and fetch the person details. An email works best to ensure the right person is queried, but a name works as well.
 
@@ -120,11 +120,11 @@ This control uses the following Microsoft Graph APIs and permissions.
 
 | Resource                                                                                                    | Permission     |
 | ----------------------------------------------------------------------------------------------------------- | -------------------- |
-| [/me](https://docs.microsoft.com/en-us/graph/api/user-get?view=graph-rest-1.0)                              | User.Read          |
-| [/me/photo/$value](https://docs.microsoft.com/en-us/graph/api/profilephoto-get?view=graph-rest-beta)        | User.Read          |
-| [/me/people/?$search=](https://docs.microsoft.com/en-us/graph/api/user-list-people?view=graph-rest-1.0)     | People.Read        |
-| [/me/contacts/*](https://docs.microsoft.com/en-us/graph/api/user-list-contacts?view=graph-rest-1.0&tabs=cs) | Contacts.Read      |
-| [/users/{id}/photo/$value](https://docs.microsoft.com/en-us/graph/api/user-list-people?view=graph-rest-1.0) | User.ReadBasic.All |
+| [/me](/graph/api/user-get?view=graph-rest-1.0)                              | User.Read          |
+| [/me/photo/$value](/graph/api/profilephoto-get?view=graph-rest-beta)        | User.Read          |
+| [/me/people/?$search=](/graph/api/user-list-people?view=graph-rest-1.0)     | People.Read        |
+| [/me/contacts/*](/graph/api/user-list-contacts?view=graph-rest-1.0&tabs=cs) | Contacts.Read      |
+| [/users/{id}/photo/$value](/graph/api/user-list-people?view=graph-rest-1.0) | User.ReadBasic.All |
 
 > **Note:** to access the `*/photo/$value` resources for personal Microsoft accounts, use the Microsoft Graph beta endpoint.
 
