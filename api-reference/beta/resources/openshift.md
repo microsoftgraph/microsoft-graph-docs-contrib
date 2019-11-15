@@ -1,6 +1,6 @@
 ---
 title: "openShift resource type"
-description: "An unassigned open shift in a schedule."
+description: "Represents an unassigned open shift in a schedule."
 localization_priority: Normal
 author: "akumar39"
 ms.prod: "microsoft-teams"
@@ -11,13 +11,13 @@ doc_type: "resourcePageType"
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-An unassigned, open shift in a [schedule](../resources/schedule.md).
+Represents an unassigned, open shift in a [schedule](../resources/schedule.md).
 
 ## Methods
 
 | Method       | Return Type | Description |
 |:-------------|:------------|:------------|
-| [Get openShift](../api/openshift-get.md) | [openShift](openshift.md) | Read properties and relationships of openShift object. |
+| [Get](../api/openshift-get.md) | [openShift](openshift.md) | Read properties and relationships of openShift object. |
 | [Update](../api/openshift-update.md) | [openShift](openshift.md) | Update openShift object. |
 | [Delete](../api/openshift-delete.md) | None | Delete openShift object. |
 
@@ -31,7 +31,7 @@ An unassigned, open shift in a [schedule](../resources/schedule.md).
 
 ## Relationships
 
-None
+None.
 
 ## JSON representation
 
