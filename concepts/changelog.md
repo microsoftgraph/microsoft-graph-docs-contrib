@@ -59,24 +59,25 @@ For details about known issues with Microsoft Graph APIs, see [Known issues](kno
 
 | **Change type** | **Version**   | **Description**                          |
 | :-------------- | :------------ | :--------------------------------------- |
-| Addition | beta | Added the [classSettings](/api-reference/beta/resources/teamclasssettings.md) property to the [team](/api-reference/beta/resources/team.md) resource to allow callers to get settings specific to a team of type Class.|
+| Addition | beta | Added the [classSettings](/graph/api/resources/teamclasssettings?view=graph-rest-beta) property to the [team](/graph/api/resources/team?view=graph-rest-beta) resource to allow callers to get settings specific to a team of type Class.|
 
 ### Identity and access (Azure AD)
 
 | **Change type** | **Version** | **Description**                  |
 |:----------------|:------------|:-----------------------------------------|
-| Addition | v1.0 | Added new entity type: [application](/graph/resources/application?view=graph-rest-v1.0).|
+| Addition | v1.0 | Added new entity type: [application](/graph/api/resources/application?view=graph-rest-v1.0).|
 | Addition | v1.0 | Added new delegated permissions [Application.Read.All](/graph/permissions-reference#application-resource-permissions), [Application.ReadWrite.All](/graph/permissions-reference#application-resource-permissions).|
 | Addition | v1.0 | Added new application permission [Application.Read.All](/graph/permissions-reference#application-resource-permissions).|
-| Addition | v1.0 | Added new delegated and application permissions [GroupMember.Read.All](https://docs.microsoft.com/graph/permissions-reference#group-permissions) and [GroupMember.ReadWrite.All](https://docs.microsoft.com/graph/permissions-reference#group-permissions) to get and update the [group API](https://docs.microsoft.com/graph/api/resources/group?view=graph-rest-1.0) resource.
-| Addition | v1.0 | Added new application permission [Group.Create](https://docs.microsoft.com/graph/permissions-reference#group-permissions) to create the [group API](https://docs.microsoft.com/graph/api/resources/group?view=graph-rest-1.0) resource.
-| Addition | beta and v1.0 | Added the **creationType** property to the [user](/graph/resources/user?view=graph-rest-v1.0) resource.|
+| Addition | v1.0 | Added new delegated and application permissions [GroupMember.Read.All](permissions-reference.md#group-permissions) and [GroupMember.ReadWrite.All](permissions-reference.md#group-permissions) to get and update the [group](/graph/api/resources/group?view=graph-rest-1.0) resource.
+| Addition | v1.0 | Added new application permission [Group.Create](permissions-reference.md#group-permissions) to create the **group** resource.
+| Addition | beta and v1.0 | Added the **creationType** property to the [user](/graph/api/resources/user?view=graph-rest-v1.0) resource.|
 
 ### Mail (Outlook)
 
 | **Change type** | **Version**   | **Description**                          |
 | :-------------- | :------------ | :--------------------------------------- |
-| Addition | v1.0 | Added support for the [Mail.ReadBasic](/graph/permissions-reference#mail-permissions) delegated permissions and [Mail.ReadBasic.All](/graph/permissions-reference#mail-permissions) application permission for:<br /> [List Messages](/graph/api/user-list-messages?view=graph-rest-v1.0)<br /> [Get Message](/graph/api/message-get?view=graph-rest-v1.0) <br /> [list mailfolders](/graph/api/user-list-mailfolders?view=graph-rest-v1.0)<br />  [get a mailfolder](/graph/api/mailfolder-get?view=graph-rest-v1.0)<br />  [list child folders](/graph/api/mailfolder-list-childfolders?view=graph-rest-v1.0)<br />  [list messages in a mail folder](/graph/api/mailfolder-list-childfolders?view=graph-rest-v1.0)<br />  [delta query for message](/graph/api/message-delta?view=graph-rest-v1.0)<br />  [delta query for mailFolder](/graph/api/mailfolder-delta?view=graph-rest-v1.0).|
+| Addition | Beta | Added support for the [Mail.ReadBasic](/graph/permissions-reference#mail-permissions) delegated permission and [Mail.ReadBasic.All](/graph/permissions-reference#mail-permissions) application permission to [create](/graph/api/subscription-post-subscriptions?view=graph-rest-beta), [get](/graph/api/subscription-get?view=graph-rest-beta), [update](/graph/api/subscription-update?view=graph-rest-beta), and [delete](/graph/api/subscription-delete?view=graph-rest-beta) subscriptions for change notifications on message. |
+| Addition | v1.0 | Added support for the Mail.ReadBasic delegated permission and Mail.ReadBasic.All application permission to:<br />- [List messages](/graph/api/user-list-messages?view=graph-rest-v1.0)<br />- [Get message](/graph/api/message-get?view=graph-rest-v1.0) <br />- [List mail folders](/graph/api/user-list-mailfolders?view=graph-rest-v1.0)<br />- [Get mail folder](/graph/api/mailfolder-get?view=graph-rest-v1.0)<br />- [List child folders](/graph/api/mailfolder-list-childfolders?view=graph-rest-v1.0)<br />- [List messages in folder](/graph/api/mailfolder-list-childfolders?view=graph-rest-v1.0)<br />- [Get message delta](/graph/api/message-delta?view=graph-rest-v1.0)<br />- [Get mail folder delta](/graph/api/mailfolder-delta?view=graph-rest-v1.0) <br />- [Create](/graph/api/subscription-post-subscriptions?view=graph-rest-v1.0), [get](/graph/api/subscription-get?view=graph-rest-v1.0), [update](/graph/api/subscription-update?view=graph-rest-v1.0), and [delete](/graph/api/subscription-delete?view=graph-rest-v1.0) subscriptions for change notifications on message|
 
 ### People and workplace intelligence
 
