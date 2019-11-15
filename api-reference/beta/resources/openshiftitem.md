@@ -1,6 +1,6 @@
 ---
 title: "openShiftItem resource type"
-description: "A single count of an open shift."
+description: "Represents a single count of an open shift."
 localization_priority: Normal
 author: "akumar39"
 ms.prod: "microsoft-teams"
@@ -11,7 +11,7 @@ doc_type: "resourcePageType"
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-A single count of an [openshift](../resources/openshift.md).
+Represents a single count of an [openshift](../resources/openshift.md).
 
 ## Properties
 
