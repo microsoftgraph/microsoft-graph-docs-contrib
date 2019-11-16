@@ -219,7 +219,7 @@ Content-type: application/json
   "id": "4c7be08b-361f-41a8-b1ef-1712f7a3dfb2",
   "identities": [
     {
-      "signInType": "signInName",
+      "signInType": "userName",
       "issuer": "contoso.onmicrosoft.com",
       "issuerAssignedId": "johnsmith"
     },
