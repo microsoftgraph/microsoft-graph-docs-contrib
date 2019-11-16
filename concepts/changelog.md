@@ -89,6 +89,13 @@ Microsoft Search is now exposing a way to search and index data in Microsoft Gra
 | Addition        | beta        | Added the [searchRequest](/graph/api/resource/searchrequest?view=graph-rest-beta), [searchQuery](/graph/api/resource/searchquery?view=graph-rest-beta), [searchQueryString](/graph/api/resource/searchquerystring?view=graph-rest-beta),[searchResponse](/graph/api/resource/searchresponse?view=graph-rest-beta), [searchHitsContainer](/graph/api/resource/searchhitscontainer?view=graph-rest-beta), and [searchHit](/graph/api/resource/searchhit?view=graph-rest-beta) complex types. |
 | Addition        | beta        | Added the [externalConnection](/graph/api/resource/externalconnection?view=graph-rest-beta), [schema](/graph/api/resource/schema?view=graph-rest-beta), [externalItem](/graph/api/resource/externalitem?view=graph-rest-beta), and [externalFile](/graph/api/resource/externalfile?view=graph-rest-beta) entities, and methods exposed by these entities. |
 
+### Teamwork (Microsoft Teams)
+
+| **Change type** | **Version**   | **Description**                          |
+| :-------------- | :------------ | :--------------------------------------- |
+| Addition | Beta | Added the [openshift](/graph/api/beta/resources/openshift?view=graph-rest-beta), [openshiftChangeRequest](/graph/api/beta/resources/openshiftChangeRequest?view=graph-rest-beta), [swapShiftChangeRequest](/graph/api/beta/resources/swapShiftChangeRequest?view=graph-rest-beta), and [timeoffrequest](/graph/api/beta/resources/timeoffrequest?view=graph-rest-beta) resources and associated APIs.|
+| Addition | Beta | Added the **timeClockEnabled**, **openShiftsEnabled**, **swapShiftsRequestsEnabled**, **offerShiftRequestsEnabled**,  **timeOffRequestsEnabled** properties to the [schedule](/graph/api/beta/resources/schedule?view=graph-rest-beta) resource.|
+
 ## October 2019
 
 ### Calendar
@@ -271,10 +278,6 @@ Microsoft Search is now exposing a way to search and index data in Microsoft Gra
 | :-------------- | :------------ | :--------------------------------------- |
 | Addition | Beta | Added the [Get team photo](/graph/api/team-get-photo?view=graph-rest-beta) and [Update team photo](/graph/api/team-update-photo?view=graph-rest-beta) methods. |
 | Addition | Beta | [Reading images in messages](/graph/api/chatmessagehostedcontent-get?view=graph-rest-beta) now support application permissions. |
-| Addition | Beta | Added the [openshift](/api-reference/beta/resources/openshift?view=graph-rest-beta), [openshiftChangeRequest](/api-reference/beta/resources/openshiftChangeRequest?view=graph-rest-beta), [swapShiftChangeRequest](/api-reference/beta/resources/swapShiftChangeRequest?view=graph-rest-beta), [timeoffrequest](/api-reference/beta/resources/timeoffrequest?view=graph-rest-beta) |
-| Addition | Beta | Added the **timeClockEnabled**, **openShiftsEnabled**, **swapShiftsRequestsEnabled**, **offerShiftRequestsEnabled**,  **timeOffRequestsEnabled** members to the [schedule] (/api-reference/beta/resources/schedule?view=graph-rest-beta) resource|
-| Addition | Beta | Added the **swapRequest**, **openShift**, **openShiftRequest** and **userShiftPreferences**  members to the [workforceIntegrationSupportedEntities] enum in [enums](/api-reference/beta/resources/enums?view=graph-rest-beta)|
-
 
 ### Users
 | **Change type** | **Version** | **Description**                          |
