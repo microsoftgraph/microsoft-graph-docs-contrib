@@ -18,7 +18,7 @@ The bot is expected to answer or [reject](./call-reject.md) the call before the 
 > **Note:** The bot can only be reached by VoIP. PSTN calling isn't supported.
 
 ## Permissions
-You do not need any permissions to answer a peer-to-peer call (see note below). You need one of the following permissions to join a group call. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
+You do not need any permissions to answer a peer-to-peer call. You need one of the following permissions to join a group call. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
 
 | Permission type | Permissions (from least to most privileged)                 |
 | :-------------- | :-----------------------------------------------------------|
@@ -26,7 +26,7 @@ You do not need any permissions to answer a peer-to-peer call (see note below). 
 | Delegated (personal Microsoft account) | Not Supported                        |
 | Application     | Calls.JoinGroupCalls.All or Calls.JoinGroupCallsasGuest.All |
 
-> **Note:** For a call that uses application-hosted media, you also need the `Calls.AccessMedia.All` permission. If you don't have any permissions, the `source` in the incoming call notification will be encrypted. To get decrypted `source` in the incoming call notification, you need at least one of the following permissions: `Calls.AccessMedia.All`, `Calls.Initiate.All`, `Calls.InitiateGroupCall.All`, `Calls.JoinGroupCall.All`, `Calls.JoinGroupCallAsGuest.All`.
+> **Note:** For a call that uses application-hosted media, you also need the Calls.AccessMedia.All permission. If you don't have any permissions, the `source` in the incoming call notification will be encrypted. To get decrypted `source` in the incoming call notification, you need at least one of the following permissions: Calls.AccessMedia.All, Calls.Initiate.All, Calls.InitiateGroupCall.All, Calls.JoinGroupCall.All, or Calls.JoinGroupCallAsGuest.All.
 
 ## HTTP request
 <!-- {"blockType": "ignored" } -->
