@@ -10,7 +10,7 @@ doc_type: apiPageType
 # participant: muteAll
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
-> **Note:** This API is in the process of being deprecated and will be removed by March 15th, 2020. To mute a single participant, please see [Mute Participant](/participant-mute.md).
+> **Note:** This API is in the process of being deprecated and will be removed by March 15th, 2020. To mute a single participant, please see [Mute Participant](participant-mute.md).
 
 Mute all participants in the call.
 
