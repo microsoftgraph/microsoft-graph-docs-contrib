@@ -1,6 +1,6 @@
 ---
 title: "timeOffRequest: approve"
-description: Approve a timeoffrequest object."
+description: Approve a timeoffrequest."
 localization_priority: Normal
 author: "akumar39"
 ms.prod: "microsoft-teams"
@@ -11,7 +11,7 @@ doc_type: "apiPageType"
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Approve a [timeoffrequest].
+Approve a [timeoffrequest](../resources/timeoffrequest.md).
 
 ## Permissions
 
