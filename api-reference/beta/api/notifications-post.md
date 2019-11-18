@@ -5,6 +5,7 @@ localization_priority: Normal
 ms.prod: "notifications"
 doc_type: apiPageType
 author: "merzink"
+updates made by: "mariahhart"
 ---
 
 # Create and send a notification
@@ -70,7 +71,7 @@ Content-type: application/json
 	"ios",
 	"android"
         ]
-    },
+ Not supported.    },
     "priority": "High",
     "groupName": "TestGroup",
     "displayTimeToLive": "60"
@@ -103,3 +104,21 @@ request-id: 71e62feb-8d72-4912-8b2c-4cee9d89e781
     }
 }
 ```
+
+## Error Codes
+The following are error descriptions with context.
+
+|Error Code/Description              | Explanation of Code               		         |
+|:-----------------------------------|:----------------------------------------------------------|
+|HttpStatusCode.BadRequest           | If body is an array (multiple notifications not supported)|
+|HttpStatusCode.BadRequest           | Body doesn't match the contract for the API               |
+|HttpStatusCode.Forbidden            | If caller is in the blocked list                          |
+|HttpStatusCode.MethodNotAllowed     | The http method used is not supported                     |
+|HttpStatusCode.BadRequest           | If Unsupported headers are present in the request. There are two unsupported headers: 1."If-Modified-Since" 2. "If-Range" |                    
+|HttpStatusCode.UnsupportedMediaType | If the header "Content-Encoding" is present and has compression algorithm values other than Deflate or Gzip  |
+|HttpStatusCode.BadRequest           | Invalid Payload                                           |
+|HttpStatusCode.Forbidden            | Caller is not authorized to act on behalf of the user or send notification to the user                         |
+|HttpStatusCode.Unauthorized         |	Request body contains invalid activity data types        |
+|HttpStatusCode.OK                   | 	Activity successfully created                            |
+|HttpStatusCode.NotAcceptable        |	Your request has been throttled or the server is busy    |
+
