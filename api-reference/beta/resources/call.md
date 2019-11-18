@@ -21,7 +21,7 @@ Although the same identity cannot be invited multiple times, it is possible for 
 
 | Method                                                             | Return Type                                                 | Description                                                                     |
 |:-------------------------------------------------------------------|:------------------------------------------------------------|:--------------------------------------------------------------------------------|
-| [Get call](../api/call-get.md)                                     | [call](call.md)                                             | Read properties of the **call** object.                                         |
+| [Get](../api/call-get.md)                                     | [call](call.md)                                             | Read properties of the **call** object.                                         |
 | [Delete](../api/call-delete.md)                                    |                                                             | Delete or Hang-up an active **call**.                                           |
 | **Call Handling**                                                  |                                                             |                                                                                 |
 | [Answer](../api/call-answer.md)                                    |                                                             | Answer an incoming call.                                                        |
@@ -30,10 +30,10 @@ Although the same identity cannot be invited multiple times, it is possible for 
 | [Transfer](../api/call-transfer.md)                                |                                                             | Transfer a call                                                                 |
 | **Group Calls**                                                    |                                                             |                                                                                 |
 | [List participants](../api/call-list-participants.md)              | [participant](participant.md) collection                    | Get a participant object collection.                                            |
-| [Invite Participants](../api/participant-invite.md)                | [commsOperation](commsoperation.md)                         | Invite participants to the active call.                                         |
-| [Mute All Participants](../api/participant-muteall.md)             | [commsOperation](commsoperation.md)                         | Mute all participants in the call.                                              |
-| [Mute Participant](../api/participant-mute.md)                     | [muteParticipantOperation](muteparticipantoperation.md)     | Mute a participant in the group call.                                           |
-| [Configure Audio Mixer](../api/participant-configuremixer.md)      | [commsOperation](commsoperation.md)                         | Configure audio in multiparty conversation.                                     |
+| [Invite participants](../api/participant-invite.md)                | [commsOperation](commsoperation.md)                         | Invite participants to the active call.                                         |
+| [Mute all participants](../api/participant-muteall.md)             | [commsOperation](commsoperation.md)                         | Mute all participants in the call.                                              |
+| [Mute participant](../api/participant-mute.md)                     | [muteParticipantOperation](muteparticipantoperation.md)     | Mute a participant in the group call.                                           |
+| [Configure audio mixer](../api/participant-configuremixer.md)      | [commsOperation](commsoperation.md)                         | Configure audio in multiparty conversation.                                     |
 | [Create audioRoutingGroup](../api/call-post-audioroutinggroups.md) | [audioRoutingGroup](audioroutinggroup.md)                   | Create a new audioRoutingGroup by posting to the audioRoutingGroups collection. |
 | [List audioRoutingGroups](../api/call-list-audioroutinggroups.md)  | [audioRoutingGroup](audioroutinggroup.md) collection        | Get a audioRoutingGroup object collection.                                      |
 | **Interactive-Voice-Response**                                     |                                                             |                                                                                 |
