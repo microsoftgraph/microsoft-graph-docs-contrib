@@ -1,5 +1,5 @@
 --- 
-title: "UnmuteParticipantOperation resource type"
+title: "unmuteParticipantOperation resource type"
 description: "Describes the response format of a call participant unmute operation."
 author: "VinodRavichandran"
 localization_priority: Normal
@@ -7,7 +7,7 @@ ms.prod: "cloud-communications"
 doc_type: resourcePageType
 ---
 
-# UnmuteParticipantOperation resource type
+# unmuteParticipantOperation resource type
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
@@ -23,7 +23,7 @@ Describes the response format of a call participant unmute operation.
 | status                         | String                      | Possible values are: `notStarted`, `running`, `completed`, `failed`. Read-only.                                                 |
 
 ## Relationships
-None
+None.
 
 ## JSON representation
 
