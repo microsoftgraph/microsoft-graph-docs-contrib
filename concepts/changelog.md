@@ -19,6 +19,12 @@ For details about known issues with Microsoft Graph APIs, see [Known issues](kno
 |:----------------|:------------|:-----------------------------------------|
 | Addition        | Beta  | Added the ability to [update a room or roomlist](/graph/api/resources/place-get?view=graph-rest-beta).|
 
+### Cloud communications (Calls and online meetings)
+
+| **Change type** | **Version** | **Description**                  |
+|:----------------|:------------|:-----------------------------------------|
+| Change        | Beta        | Change return type for [Mute](/graph/api/call-mute?view=graph-rest-beta) and [Mute participant](/graph/api/participant-mute?view=graph-rest-beta) from [commsOperation](/graph/api/resources/commsOperation?view=graph-rest-beta) to [muteParticipantOperation](/graph/api/resources/muteParticipantoperation?view=graph-rest-beta). | 
+| Change        | Beta        | Change return type for [Unmute](/graph/api/call-unmute?view=graph-rest-beta) from [commsOperation](/graph/api/resources/commsOperation?view=graph-rest-beta) to [unmuteParticipantOperation](/graph/api/resources/unmuteParticipantoperation?view=graph-rest-beta). | 
 
 ### Devices and apps (Microsoft Intune)
 
