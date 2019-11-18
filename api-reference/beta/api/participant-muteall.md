@@ -10,9 +10,11 @@ doc_type: apiPageType
 # participant: muteAll
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
-> **Note:** This API is in the process of being deprecated and will be removed by March 15th, 2020. To mute a single participant, please see [Mute Participant](participant-mute.md).
 
 Mute all participants in the call.
+
+> **Note:** This API is deprecated and will be removed by March 15th, 2020. To mute a single participant, see [participant: mute](participant-mute.md).
+
 
 ## Permissions
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
@@ -35,6 +37,7 @@ POST /communications/calls/{id}/participants/muteAll
 | Name          | Description               |
 |:--------------|:--------------------------|
 | Authorization | Bearer {token}. Required. |
+| Content-type | application/json. Required. |
 
 ## Request body
 In the request body, provide a JSON object with the following parameters.
