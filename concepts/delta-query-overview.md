@@ -54,7 +54,7 @@ For users and groups, the following restrictions apply to using using some query
 For users and groups, there are restrictions on using some query parameters:
 
 - If a `$select` query parameter is used, the parameter indicates that the client prefers to only track changes on the properties or relationships specified in the `$select` statement. If a change occurs to a property that is not selected, the resource for which that property changed does not appear in the delta response after a subsequent request.
-- `$expand` is only supported for the `manager` and `members` navigational property for users and groups respectively.
+- `$select` also supports `manager` and `members` navigational property for users and groups respectively. Selecting those properties allows tracking of changes to user's manager and group memberships.
 
 - Scoping filters allow you to track changes to one or more specific users or groups by object ID. For example, the following request returns changes for the groups matching the IDs specified in the query filter. 
 
