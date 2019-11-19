@@ -36,11 +36,11 @@ To begin tracking changes in the group resource, you make a request including th
 Note the following:
 
 - The optional `$select` query parameter is included in the request to demonstrate how query parameters are automatically included in future requests.
-- The optional `$expand` query parameter is included to show how group members can be retrieved together with group objects. This allows tracking of membership changes, such as when users are added or removed from groups.
+- The optional `$select` query parameter is also used to show how group members can be retrieved together with group objects. This allows tracking of membership changes, such as when users are added or removed from groups.
 - The initial request does not include a state token. State tokens will be used in subsequent requests.
 
 ``` http
-GET https://graph.microsoft.com/v1.0/groups/delta?$select=displayName,description&$expand=members
+GET https://graph.microsoft.com/v1.0/groups/delta?$select=displayName,description,members
 ```
 
 ## Initial response
