@@ -18,7 +18,7 @@ An organization that supports any of the following online meeting providers can 
 - Skype
 - Skype for Business
 
-Look for the **allowedOnlineMeetingProviders** and **defaultOnlineMeetingProvider** to verify if an Outlook [calendar](/graph/api/resources/calendar?view=graph-rest-beta) supports any online meeting providers. The following example shows the signed-in user's default calendar supports two providers, Microsoft Teams and Skype for Business, and uses Microsoft Teams as the default online meeting provider. 
+Look for the **allowedOnlineMeetingProviders** and **defaultOnlineMeetingProvider** properties to verify if an Outlook [calendar](/graph/api/resources/calendar?view=graph-rest-beta) supports any online meeting providers. The following example shows the signed-in user's default calendar supports two providers, Microsoft Teams and Skype for Business, and uses Microsoft Teams as the default online meeting provider. 
 
 ### Example: Find whether a calendar supports any online meeting provider
 
@@ -73,6 +73,9 @@ Content-type: application/json
 ## Create and enable a meeting online
 
 You can create a meeting and allow attendees to join the meeting online, by setting **isOnlineMeeting** to `true`, and **onlineMeetingProvider** to one of the providers supported by the parent calendar. The following example creates a meeting in the signed-in user's default calendar, and enables attendees to join the meeting via Microsoft Teams. The response includes an **event** with online meeting information specified in the **onlineMeeting** property.
+
+> [!NOTE]
+> Once you enable a meeting online, Microsoft Graph sets the meeting information in **onlineMeeting**. Subsequently, you cannot change the **onlineMeetingProvider** property, nor set **isOnlineMeeting** to `false` to disable the meeting online.
 
 ### Example: Create and make meeting available as an online meeting
 
@@ -220,9 +223,10 @@ Content-type: application/json
 
 ## Get information to join meeting online
 
-Attendees and organizers can use the **isOnlineMeeting** property to verify if an [event](/graph/api/resources/event?view=graph-rest-beta) is enabled for online participation. They can use the **onlineMeetingProvider** property to determine the meeting provider, and the **onlineMeeting** property for connection information including the **joinUrl**. 
+Attendees and organizers can use the **isOnlineMeeting** property to verify if an [event](/graph/api/resources/event?view=graph-rest-beta) is enabled for online participation. They can use the **onlineMeetingProvider** property to determine the meeting provider, and the **onlineMeeting** property for connection information including **joinUrl**. 
 
-> **Note**: Use the **joinUrl** property instead of **onlineMeetingUrl**, as there is a known issue with the latter not supporting Microsoft Teams.
+> [!IMPORTANT]
+> Access the URL to join a meeting using **joinUrl**, available via the **onlineMeeting** property of the **event**. Do not use the **onlineMeetingUrl** property of the **event** because **onlineMeetingUrl** will soon be deprecated.
 
 ### Example: Get online meeting information
 
@@ -263,7 +267,10 @@ Content-type: application/json
 
 
 ## Update a meeting to enable it online
-You can change an existing **event** to make it available as an online meeting, by setting **isOnlineMeeting** to `true`, and **onlineMeetingProvider** to one of the online meeting providers supported by the parent calendar. The response includes the updated **event** with online meeting information specified in the **onlineMeeting** property.
+You can change an existing **event** to make it available as an online meeting, by setting **isOnlineMeeting** to `true`, and **onlineMeetingProvider** to one of the online meeting providers supported by the parent calendar. The response includes the updated **event** with the corresponding online meeting information specified in the **onlineMeeting** property.
+
+> [!NOTE]
+> Once you enable a meeting online, Microsoft Graph sets the meeting information in **onlineMeeting**. Subsequently, you cannot change the **onlineMeetingProvider** property, nor set **isOnlineMeeting** to `false` to disable the meeting online.
 
 ### Example: Update a meeting to make it available as an online meeting
 
