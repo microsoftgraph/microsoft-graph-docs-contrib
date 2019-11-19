@@ -24,9 +24,9 @@ You do not need any permissions to answer a peer-to-peer call. You need one of t
 | :-------------- | :-----------------------------------------------------------|
 | Delegated (work or school account)     | Not Supported                        |
 | Delegated (personal Microsoft account) | Not Supported                        |
-| Application     | Calls.JoinGroupCalls.All or Calls.JoinGroupCallsasGuest.All                                                         |
+| Application     | Calls.JoinGroupCalls.All or Calls.JoinGroupCallsasGuest.All |
 
-> **Note:** For a call that uses application-hosted media, you also need the Calls.AccessMedia.All permission.                                                   |
+> **Note:** For a call that uses application-hosted media, you also need the Calls.AccessMedia.All permission. You must have at least one of the following permissions to ensure that the `source` in the incoming call notification is decrypted: Calls.AccessMedia.All, Calls.Initiate.All, Calls.InitiateGroupCall.All, Calls.JoinGroupCall.All, Calls.JoinGroupCallAsGuest.All. The `source` is the caller info in the incoming call notification. Without at least one of these permissions, the `source` will remain encrypted.
 
 ## HTTP request
 <!-- {"blockType": "ignored" } -->
@@ -47,12 +47,12 @@ In the request body, provide a JSON object with the following parameters.
 
 | Parameter        | Type                                     |Description                                                                                                                                    |
 |:-----------------|:-----------------------------------------|:----------------------------------------------------------------------------------------------------------------------------------------------|
-|callbackUri       |String                                    |This allows bots to provide a specific callback URI for the current call to receive later notifications. If this property has not been set, the bot's global callback URI will be used instead. This must be `https`.    |
+|callbackUri       |String                                    |Allows bots to provide a specific callback URI for the current call to receive later notifications. If this property has not been set, the bot's global callback URI will be used instead. This must be `https`.    |
 |acceptedModalities|String collection                         |The list of accept modalities. Possible value are: `audio`, `video`, `videoBasedScreenSharing`. Required for answering a call. |
 |mediaConfig       | [appHostedMediaConfig](../resources/apphostedmediaconfig.md) or [serviceHostedMediaConfig](../resources/servicehostedmediaconfig.md) |The media configuration. (Required)                                                                                                            |
 
 ## Response
-This method returns `202 Accepted` response code.
+This method returns a `202 Accepted` response code.
 
 ## Examples
 The following example shows how to call this API.
