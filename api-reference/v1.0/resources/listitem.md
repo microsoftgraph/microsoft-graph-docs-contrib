@@ -10,7 +10,7 @@ doc_type: resourcePageType
 
 # listItem resource
 
-Rrepresents an item in a SharePoint **[list][]**.
+Represents an item in a SharePoint **[list][]**.
 Column values in the list are available through the `fieldValueSet` dictionary.
 
 ## Methods
