@@ -22,8 +22,8 @@ One of the following permissions is required to call this API. To learn more, in
 |Delegated (work or school account)||
 | &nbsp; &nbsp; **Device management** | DeviceManagementManagedDevices.ReadWrite.All|
 |Delegated (personal Microsoft account)|Not supported.|
-|Application|Not supported.|
-
+|Application||
+| &nbsp; &nbsp; **Device management** | DeviceManagementManagedDevices.ReadWrite.All|
 ## HTTP Request
 <!-- {
   "blockType": "ignored"
@@ -78,6 +78,12 @@ Here is an example of the response. Note: The response object shown here may be 
 ``` http
 HTTP/1.1 204 No Content
 ```
+
+
+
+
+
+
 
 
 

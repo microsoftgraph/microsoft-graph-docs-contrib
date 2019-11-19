@@ -1,7 +1,7 @@
 ---
 title: "deviceCompliancePolicyAssignment resource type"
 description: "Device compliance policy assignment."
-author: "tfitzmac"
+author: "davidmu1"
 localization_priority: Normal
 ms.prod: "Intune"
 doc_type: resourcePageType
@@ -48,6 +48,7 @@ Here is a JSON representation of the resource.
   }
 }
 ```
+
 
 
 

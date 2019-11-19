@@ -59,7 +59,7 @@ Here is an example of the response. Note: The response object shown here may be 
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 11698
+Content-Length: 11837
 
 {
   "value": [
@@ -204,6 +204,8 @@ Content-Length: 11698
       "kioskModeBlockSleepButton": true,
       "kioskModeAllowTouchscreen": true,
       "kioskModeBlockTouchscreen": true,
+      "kioskModeEnableVoiceControl": true,
+      "kioskModeAllowVoiceControlModification": true,
       "kioskModeAllowVoiceOverSettings": true,
       "kioskModeAllowVolumeButtons": true,
       "kioskModeBlockVolumeButtons": true,
@@ -332,6 +334,9 @@ Content-Length: 11698
       "airPrintBlockCredentialsStorage": true,
       "airPrintForceTrustedTLS": true,
       "airPrintBlockiBeaconDiscovery": true,
+      "filesNetworkDriveAccessBlocked": true,
+      "filesUsbDriveAccessBlocked": true,
+      "wifiPowerOnForced": true,
       "blockSystemAppRemoval": true,
       "vpnBlockCreation": true,
       "appRemovalBlocked": true,
@@ -343,11 +348,9 @@ Content-Length: 11698
       "contactsAllowManagedToUnmanagedWrite": true,
       "contactsAllowUnmanagedToManagedRead": true,
       "cellularBlockPersonalHotspotModification": true,
-      "siriDisableServerLogging": true,
       "continuousPathKeyboardBlocked": true,
       "findMyDeviceInFindMyAppBlocked": true,
       "findMyFriendsInFindMyAppBlocked": true,
-      "wiFiBlockPowerModification": true,
       "iTunesBlocked": true
     }
   ]

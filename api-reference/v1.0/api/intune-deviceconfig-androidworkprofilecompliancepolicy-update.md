@@ -1,7 +1,7 @@
 ---
 title: "Update androidWorkProfileCompliancePolicy"
 description: "Update the properties of a androidWorkProfileCompliancePolicy object."
-author: "tfitzmac"
+author: "davidmu1"
 localization_priority: Normal
 ms.prod: "Intune"
 doc_type: apiPageType
@@ -153,6 +153,7 @@ Content-Length: 1342
   "securityRequireCompanyPortalAppIntegrity": true
 }
 ```
+
 
 
 

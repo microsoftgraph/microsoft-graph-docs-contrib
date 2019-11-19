@@ -3,6 +3,7 @@ title: "Use delta query to track changes in Microsoft Graph data"
 description: "Delta query enables applications to discover newly created, updated, or deleted entities without performing a full read of the target resource with every request. Microsoft Graph applications can use delta query to efficiently synchronize changes with a local data store."
 author: "piotrci"
 localization_priority: Priority
+ms.custom: graphiamtop20
 ---
 
 # Use delta query to track changes in Microsoft Graph data
@@ -111,6 +112,49 @@ Delta query is currently supported for the following resources.
 [Track changes for a drive](/graph/api/driveitem-delta?view=graph-rest-1.0).
 
 > \*\* The usage pattern for Planner resources is similar to other supported resources with a few differences.  For details, see [Track changes for Planner](/graph/api/planneruser-list-delta?view=graph-rest-beta).
+
+### Limitations
+
+#### Properties stored outside of the main data store
+
+Some resources contain properties that are stored outside of the main data store for the resource (for example, the user resource is mostly stored in the Azure AD system, while some properties, like **skills**, are stored in SharePoint Online). Currently, those properties are not supported as part of change tracking; a change to one of those properties will not result in an object showing up in the delta query response. Currently, only the properties stored in the main data store trigger changes in the delta query.
+
+To verify that a property can be used in delta query, try to perform a regular `GET` operation on the resource collection, and select the property you're interested in. For example, you can try the **skills** property on the users collection.
+
+```msgraph-interactive
+GET https://graph.microsoft.com/v1.0/users/?$select=skills
+```
+
+Because the **skills** property is stored outside of Azure AD, the following is the response.
+
+<!-- {
+  "blockType": "response",
+  "truncated": true,
+  "@odata.type": "microsoft.graph.user",
+  "isCollection": true
+} -->
+
+```http
+HTTP/1.1 501 Not Implemented
+Content-type: application/json
+
+{
+    "error": {
+        "code": "NotImplemented",
+        "message": "This operation target is not yet supported.",
+        "innerError": {
+            "request-id": "...",
+            "date": "2019-09-20T21:47:50"
+        }
+    }
+}
+```
+
+This tells you that the **skills** property is not supported for delta query on the **user** resource.
+
+#### Navigation properties
+
+Navigation properties are not supported. For example, you cannot track changes to the users collection that would include changes to their **photo** property; **photo** is a navigation property stored outside of the user entity, and changes to it do not cause the user object to be included in the delta response.
 
 ## Prerequisites
 

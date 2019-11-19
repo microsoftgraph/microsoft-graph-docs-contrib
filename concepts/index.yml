@@ -70,14 +70,17 @@ sections:
       style: dataMatrix
       columns:
         - image:
+            src: ./images/index/logo_NETcore.svg
+          title: .NET
+        - image:
+            src: ./images/index/logo_NET.svg
+          title: .NET
+        - image:
             src: ./images/index/logo_android.svg
           title: Android
         - image:
             src: ./images/index/angular.svg
           title: Angular
-        - image:
-            src: ./images/index/logo_NET.svg
-          title: ASP.NET
         - image:
             src: ./images/index/logo_ios.svg
           title: iOS
@@ -108,9 +111,10 @@ sections:
       rows:
         - title: Quickstart
           values:
+          - href: 
+          - href: https://developer.microsoft.com/graph/quick-start?platform=option-dotnet
           - href: https://developer.microsoft.com/graph/quick-start?platform=option-android
           - href: https://developer.microsoft.com/graph/quick-start?platform=option-angular
-          - href: https://developer.microsoft.com/graph/quick-start?platform=option-dotnet
           - href: https://developer.microsoft.com/graph/quick-start?platform=option-ios-swift
           - href:
           - href:
@@ -122,9 +126,10 @@ sections:
           - href: https://developer.microsoft.com/graph/quick-start?platform=option-xamarin
         - title: Tutorial
           values:
+          - href: /graph/tutorials/aspnet
+          - href: /graph/tutorials/aspnet
           - href: /graph/tutorials/android
           - href: /graph/tutorials/angular
-          - href: /graph/tutorials/aspnet
           - href:
           - href:
           - href:
@@ -136,9 +141,10 @@ sections:
           - href: /graph/tutorials/xamarin
         - title: SDK
           values:
+          - href: https://www.nuget.org/packages/Microsoft.Graph
+          - href: https://www.nuget.org/packages/Microsoft.Graph
           - href: https://github.com/microsoftgraph/msgraph-sdk-android
           - href: https://github.com/microsoftgraph/msgraph-sdk-javascript
-          - href: https://www.nuget.org/packages/Microsoft.Graph
           - href: https://github.com/microsoftgraph/msgraph-sdk-objc
           - href: https://github.com/microsoftgraph/msgraph-sdk-java
           - href: https://github.com/microsoftgraph/msgraph-sdk-javascript
