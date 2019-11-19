@@ -22,12 +22,12 @@ Although the same identity cannot be invited multiple times, it is possible for 
 | Method                                                             | Return Type                                                 | Description                                                                     |
 |:-------------------------------------------------------------------|:------------------------------------------------------------|:--------------------------------------------------------------------------------|
 | [Get](../api/call-get.md)                                     | [call](call.md)                                             | Read properties of the **call** object.                                         |
-| [Delete](../api/call-delete.md)                                    |                                                             | Delete or Hang-up an active **call**.                                           |
-| **Call Handling**                                                  |                                                             |                                                                                 |
-| [Answer](../api/call-answer.md)                                    |                                                             | Answer an incoming call.                                                        |
-| [Reject](../api/call-reject.md)                                    |                                                             | Reject an incoming call.                                                        |
-| [Redirect](../api/call-redirect.md)                                |                                                             | Redirect an incoming call.                                                      |
-| [Transfer](../api/call-transfer.md)                                |                                                             | Transfer a call                                                                 |
+| [Delete](../api/call-delete.md)                                    | None                                                            | Delete or Hang-up an active **call**.                                           |
+| **Call Handling**                                                  | None                                                        |                                                                                 |
+| [Answer](../api/call-answer.md)                                    | None                                                            | Answer an incoming call.                                                        |
+| [Reject](../api/call-reject.md)                                    | None                                                            | Reject an incoming call.                                                        |
+| [Redirect](../api/call-redirect.md)                                | None                                                            | Redirect an incoming call.                                                      |
+| [Transfer](../api/call-transfer.md)                                | None                                                            | Transfer a call                                                                 |
 | **Group Calls**                                                    |                                                             |                                                                                 |
 | [List participants](../api/call-list-participants.md)              | [participant](participant.md) collection                    | Get a participant object collection.                                            |
 | [Invite participants](../api/participant-invite.md)                | [commsOperation](commsoperation.md)                         | Invite participants to the active call.                                         |
@@ -44,7 +44,7 @@ Although the same identity cannot be invited multiple times, it is possible for 
 | **Self Participant Operations**                                    |                                                             |                                                                                 |
 | [Mute](../api/call-mute.md)                                        | [muteParticipantOperation](muteparticipantoperation.md)     | Mute self in the call.                                                          |
 | [Unmute](../api/call-unmute.md)                                    | [unmuteParticipantOperation](unmuteparticipantoperation.md) | Unmute self in the call.                                                        |
-| [ChangeScreenSharingRole](../api/call-changescreensharingrole.md)  |                                                             | Start and stop sharing screen in the call.                                      |
+| [ChangeScreenSharingRole](../api/call-changescreensharingrole.md)  | None                                                            | Start and stop sharing screen in the call.                                      |
 
 ## Properties
 
