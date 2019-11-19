@@ -13,6 +13,9 @@ doc_type: apiPageType
 
 Mute all participants in the call.
 
+> **Note:** This API is deprecated and will be removed by March 15th, 2020. To mute a single participant, see [participant: mute](participant-mute.md).
+
+
 ## Permissions
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
 
@@ -34,6 +37,7 @@ POST /communications/calls/{id}/participants/muteAll
 | Name          | Description               |
 |:--------------|:--------------------------|
 | Authorization | Bearer {token}. Required. |
+| Content-type | application/json. Required. |
 
 ## Request body
 In the request body, provide a JSON object with the following parameters.
@@ -44,7 +48,7 @@ In the request body, provide a JSON object with the following parameters.
 |clientContext|String|The client context.|
 
 ## Response
-If successful, this method returns `200 OK` response code and [commsOperation](../resources/commsoperation.md) object in the response body.
+If successful, this method returns a `200 OK` response code and a [commsOperation](../resources/commsoperation.md) object in the response body.
 
 ## Example
 The following example shows how to call this API.
