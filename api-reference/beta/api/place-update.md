@@ -28,14 +28,15 @@ One of the following permissions is required to call this API. To learn more, in
 <!-- { "blockType": "ignored" } -->
 
 ```http
-PATCH /places/{id}
+PATCH /places/{id | emailAddress}
 ```
 
 ## Request headers
 
-| Name       | Type | Description|
-|:-----------|:------|:----------|
-| Authorization  | string  | Bearer {token}. Required. |
+| Name       | Value|
+|:-----------|:------|
+| Authorization  | Bearer {token}. Required. |
+| Content-Type | application/json |
 
 ## Request body
 
@@ -180,7 +181,21 @@ Content-type: application/json
 {
   "@odata.type": "microsoft.graph.roomlist",
   "displayName": "Building 1",
-  "phone":"555-555-0100"
+  "phone":"555-555-0100",
+  "address": {
+    "street": "4567 Main Street",
+    "city": "Buffalo",
+    "state": "NY",
+    "postalCode": "98052",
+    "countryOrRegion": "USA"
+  },
+  "geoCoordinates": {
+    "altitude": null,
+    "latitude": 47,
+    "longitude": -120,
+    "accuracy": null,
+    "altitudeAccuracy": null
+ }
 }
 ```
 # [C#](#tab/csharp)
@@ -227,7 +242,13 @@ Content-type: application/json
     "postalCode": "98052",
     "countryOrRegion": "USA"
   },
-  "geocoordinates": null,
+  "geoCoordinates": {
+    "altitude": null,
+    "latitude": 47,
+    "longitude": -120,
+    "accuracy": null,
+    "altitudeAccuracy": null
+ },
   "phone": "555-555-0100",
   "emailAddress": "bldg1@contoso.com"
 }
