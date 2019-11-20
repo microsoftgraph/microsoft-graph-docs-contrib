@@ -83,7 +83,7 @@ For details about known issues with Microsoft Graph APIs, see [Known issues](kno
 
 | **Change type** | **Version** | **Description**              |
 | :-------------- | :---------- | :--------------------------------------- |
-| Addition        | beta        | Added new delegated and application permissions [_ThreatAssessment.ReadWrite.All_](permissions-reference.md#threat-assessment-permissions) and [_ThreatAssessment.Read.All_](permissions-reference.md#threat-assessment-permissions) to Read and write threat assessment requests |
+| Addition        | beta        | Added new delegated and application permissions [ThreatAssessment.ReadWrite.All](permissions-reference.md#threat-assessment-permissions) and [ThreatAssessment.Read.All](permissions-reference.md#threat-assessment-permissions) to Read and write threat assessment requests |
 
 ### Mail (Outlook)
 
