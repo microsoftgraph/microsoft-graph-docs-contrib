@@ -25,7 +25,7 @@ The component uses Microsoft Graph to provide additional details about the user.
 | ---------------- | -------------------------------- | ------------------------------------------------------------------------------------- |
 | person-details | MicrosoftGraph.User <br> MicrosoftGraph.Person <br> MicrosoftGraph.Contact | Person object as defined by Microsoft Graph, containing details related to the user. |
 | person-image   | png/jpg/svg                    | Image related to the person displayed in the card.                                   |
-
+| inherit-details   | none                  | Allows person-card to walk parent tree for `mgt-person` component to use the same `person-details` and `person-image` data.                      |
 
 
 ## Templates
@@ -42,8 +42,7 @@ For example, you can use a template to customize the component attached to the `
 ```html
     <mgt-person person-query="me" show-name show-email person-card="hover">
       <template data-type="person-card">
-        <mgt-person-card person-details="{{person}}" 
-            person-image="{{personImage}}">
+        <mgt-person-card inherit-details>
           <template data-type="additional-details">
             <h3>Stuffed Animal Friends:</h3>
             <ul>
