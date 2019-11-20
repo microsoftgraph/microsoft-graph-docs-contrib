@@ -8,7 +8,7 @@ ms.prod: "outlook"
 
 # Use Outlook to organize or attend meetings online (preview)
 
-In an organization that supports online meeting providers, Outlook calendars can be set up to support meetings that use these providers, with one of them being the default provider. You can [create](#create-and-enable-a-meeting-online) or [update](#update-a-meeting-to-enable-it-online) an [event](/graph/api/resources/event?view=graph-rest-beta) in Outlook and allow attendees to join the meeting online using a supported provider. You can conveniently [get the online meeting information](#get-information-to-join-meeting-online) of the **event**, including the URL to join the meeting. 
+In an organization that supports online meeting providers, administrators can set up Outlook calendars to support meetings that use these providers, with one of these providers being the default provider. You can [create](#create-and-enable-a-meeting-online) or [update](#update-a-meeting-to-enable-it-online) an [event](/graph/api/resources/event?view=graph-rest-beta) in Outlook and allow attendees to join the meeting online using a supported provider. You can conveniently [get the online meeting information](#get-information-to-join-meeting-online) of the **event**, including the URL to join the meeting. 
 
 ## Calendars and online meeting providers
 
@@ -422,6 +422,7 @@ Content-type: application/json
 
 
 ## See also
+- For information on Microsoft Teams interoperability with Office 365, see [coexistence and upgrade settings](https://docs.microsoft.com/microsoftteams/setting-your-coexistence-and-upgrade-settings).
 - [Finding possible meeting times on the Outlook calendar](findmeetingtimes-example.md)
 - [Getting the free/busy schedule for users and resources](outlook-get-free-busy-schedule.md)
 - [Propose meeting times in an Outlook calendar (preview)](outlook-calendar-meeting-proposals.md)
