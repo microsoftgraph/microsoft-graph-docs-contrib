@@ -29,6 +29,7 @@ By default, the `mgt-people` component fetches events from the `/me/people` endp
 | --- | --- | --- |
 | `showMax` | `show-max` | Indicate the maximum number of people to show. Default value is 3. |
 | `people` | `people` | An array of people to get or set the list of people rendered by the component. Use this property to access the people loaded by the component. Set this value to load your own people. |
+| `group-id` | `id` | retrieves people from a specific Microsoft Graph from the respective id. |
 
 The following example sets the maximum number of people to show.
 
