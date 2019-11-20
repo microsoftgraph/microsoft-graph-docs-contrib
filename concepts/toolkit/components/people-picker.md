@@ -81,6 +81,25 @@ mgt-people-picker {
 }
 ```
 
+## Templates
+
+ `mgt-people-picker` supports several [templates](../templates.md) that you can use to replace certain parts of the component. To specify a template, include a `<template>` element inside a component and set the `data-type` value to one of the following.
+
+| Data type | Data context | Description |
+| --- | --- | --- |
+| `loading` | `null`: no data | The template used to render the state of picker while request to graph is being made. |
+| `error` | `null`: no data| The template used if user search returns no users |
+
+The following examples shows how to use the `error` template.
+
+```html
+<mgt-people-picker>
+  <template data-type="error">
+    <p>Sorry, no people were found</p>
+  </template>
+</mgt-people-picker>
+```
+
 ## Microsoft Graph permissions
 
 This component uses the following Microsoft Graph APIs and permissions.
