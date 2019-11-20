@@ -6,10 +6,10 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 GraphServiceClient graphClient = new GraphServiceClient( authProvider );
 
-var persistChanges = true;
+var id = "5793aa3b-cca9-4794-679a240f8b58";
 
-await graphClient.Me.Drive.Items["{id}"].Workbook
-	.CreateSession(persistChanges,null,null)
+await graphClient.ServicePrincipals["{id}"]
+	.DeletePasswordSingleSignOnCredentials(id)
 	.Request()
 	.PostAsync();
 
