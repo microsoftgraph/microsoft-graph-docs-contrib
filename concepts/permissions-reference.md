@@ -287,7 +287,7 @@ None.
 |_Calls.JoinGroupCallasGuest.All_|Join group calls and meetings as a guest (preview)|Allows the app to anonymously join group calls and scheduled meetings in your organization, without a signed-in user. The app will be joined as a guest to meetings in your tenant.|Yes|
 |_Calls.AccessMedia.All_\*|Access media streams in a call as an app (preview)|Allows the app to get direct access to media streams in a call, without a signed-in user.|Yes|
 
-> \***Important:** You cannot use the Microsoft.Graph.Calls.Media API to record or otherwise persist media content from calls or meetings that your bot accesses.
+> \***Important:** You may NOT use the Microsoft.Graph.Communications.Calls.Media or Microsoft.Skype.Bots.Media APIs to record or otherwise persist media content from calls or meetings that your application accesses, or data derived from that media content. Make sure you are compliant with the laws and regulations of your area regarding data protection and confidentiality of communications. Please see the [Terms of Use](https://docs.microsoft.com/en-us/legal/microsoft-apis/terms-of-use) and consult with your legal counsel for more information.
 
 <br/>
 
@@ -968,7 +968,6 @@ The *CreatedByApp* constraint associated with this permission indicates that the
 |Permission    |Display String   |Description |Admin Consent Required |
 |:-----------------------------|:-----------------------------------------|:-----------------|:-----------------|
 |_OnlineMeetings.Read.All_|Read Online Meeting details from the app (preview)|Allows the app to read VTC associated online meeting details in your organization, without a signed-in user.|Yes|
-|_OnlineMeetings.ReadWrite.All_|Read and Create Online Meetings from the app (deprecated) on behalf of a user|Allows the app to create Online Meetings in your organization on behalf of a user, without a signed-in user.|Yes|
 
 <br/>
 
