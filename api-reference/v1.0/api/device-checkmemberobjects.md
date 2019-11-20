@@ -33,8 +33,8 @@ POST /devices/{id}/checkMemberObjects
 
 | Name          | Description   |
 |:--------------|:--------------|
-| Authorization | Bearer {token} |
-| Content-Type  | application/json |
+| Authorization | Bearer {token}. Required. |
+| Content-Type  | application/json. Required. |
 
 ## Request body
 
@@ -42,7 +42,7 @@ In the request body, provide a JSON object with the following parameters.
 
 | Parameter    | Type        | Description |
 |:-------------|:------------|:------------|
-| ids | String collection | A collection that contains the object IDs of the groups, directory roles, or roleTemplate IDs of directory roles, in which to check membership. Up to 20 objects may be specified. |
+| ids | String collection | A collection that contains the object IDs of the groups, directory roles, or roleTemplate IDs of directory roles, in which to check membership. You can specify up to 20 objects. |
 
 ## Response
 
