@@ -1420,6 +1420,36 @@ For more complex scenarios involving multiple permissions, see [Permission scena
 
 ---
 
+## Threat assessment permissions
+
+#### Delegated permissions
+
+|   Permission    |  Display String   |  Description | Admin Consent Required | Microsoft Account supported |
+|:----------------|:------------------|:-------------|:-----------------------|:--------------|
+| _ThreatAssessment.ReadWrite.All_ | Read and write threat assessment requests | Allows an app to read your organization's threat assessment requests on behalf of the signed-in user. Also allows the app to create new requests to assess threats received by your organization on behalf of the signed-in user. | Yes | No |
+
+#### Application permissions
+
+|   Permission    |  Display String   |  Description | Admin Consent Required |
+|:----------------|:------------------|:-------------|:-----------------------|
+| _ThreatAssessment.Read.All_ | Read threat assessment requests | Allows an app to read your organization's threat assessment requests, without a signed-in user. | Yes |
+
+### Remarks
+
+Threat assessment permissions are valid only on work or school accounts.
+
+### Example usage
+
+#### Delegated
+
+* _ThreatAssessment.ReadWrite.All_: Read and write threat assessment requests (`POST /informationProtection/threatAssessmentRequests`)
+
+#### Application
+
+* _ThreatAssessment.Read.All_: Read threat assessment requests (`GET /informationProtection/threatAssessmentRequests`)
+
+---
+
 ## User permissions
 
 #### Delegated permissions
