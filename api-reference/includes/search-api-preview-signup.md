@@ -7,4 +7,4 @@ ms.date: 11/15/2019
 <!-- markdownlint-disable MD041-->
 
 > [!IMPORTANT]
-> Microsoft Graph connectors and Microsoft Search APIs (indexing and search) are currently in preview. To learn more about the preview, see [Microsoft Graph connectors preview](/microsoftsearch/connectors-overview). To particpate in the preview, you must first submit the [Microsoft Graph connectors preview sign-up form](https://forms.office.com/Pages/ResponsePage.aspx?id=v4j5cvGGr0GRqy180BHbRxWYgu82J_RFnMMATAS6_chUNVYwNU1CMDNZUDBSSDZKWVo2RDJDRjRLQi4u).
+> Microsoft Graph connectors and Microsoft Search APIs (query and index) are currently in preview status. To use connectors with Microsoft Search or to build connectors, you must sign up for the [connectors preview program](/microsoftsearch/connectors-overview). To join the preview program, submit the [Microsoft Graph connectors preview sign-up form](https://forms.office.com/Pages/ResponsePage.aspx?id=v4j5cvGGr0GRqy180BHbRxWYgu82J_RFnMMATAS6_chUNVYwNU1CMDNZUDBSSDZKWVo2RDJDRjRLQi4u).
