@@ -117,6 +117,15 @@ The following examples illustrates how to use the `event` template:
 
 To learn more, see [templates](../templates.md).
 
+## Events
+
+The following events are fired from the control.
+
+| Event | Description |
+| --- | --- |
+| `eventClick` | The user clicks or taps on an event.|
+
+
 ## Graph scopes
 
 This component uses the following Microsoft Graph APIs and permissions:
