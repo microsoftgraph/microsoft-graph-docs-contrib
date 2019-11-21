@@ -14,6 +14,9 @@ Retrieve a list of recently deleted items from [deleted items](../resources/dire
 Currently, deleted items functionality is only supported for the [application](../resources/application.md), [group](../resources/group.md) and [user](../resources/user.md) resources.
 
 ## Permissions
+
+When an application queries the membership of a container object and does not have permission to read a certain type, [limited information is returned for inaccessible member objects](/graph/permissions-reference#limited-information-returned-for-inaccessible-member-objects).
+
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
 
 ### For applications:
