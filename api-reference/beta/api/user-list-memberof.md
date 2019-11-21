@@ -17,6 +17,8 @@ Get groups, directory roles and administrative units that the user is a direct m
 
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
 
+When an application queries the membership of a container object and does not have permission to read a certain type, [limited information is returned for inaccessible member objects](/graph/permissions-reference#limited-information-returned-for-inaccessible-member-objects).
+
 |Permission type      | Permissions (from least to most privileged)              |
 |:--------------------|:---------------------------------------------------------|
 |Delegated (work or school account) | Directory.Read.All, Directory.ReadWrite.All, Directory.AccessAsUser.All    |
