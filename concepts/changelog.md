@@ -113,7 +113,7 @@ Microsoft Search is now exposing a way to search and index data in Microsoft Gra
 
 | **Change type** | **Version**   | **Description**                          |
 | :-------------- | :------------ | :--------------------------------------- |
-| Addition        | beta          | Added an additional route to retrieve a [driveItem] using a Team and channel Id. [Get driveItem](/graph/api/driveitem-get?view=graph-rest-beta). |
+| Addition        | beta          | Added an additional route to retrieve a [driveItem] using a team and channel ID, [get driveItem](/graph/api/driveitem-get?view=graph-rest-beta). |
 
 ## October 2019
 
