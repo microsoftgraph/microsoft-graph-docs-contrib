@@ -1,17 +1,17 @@
 ---
-title: "call: record"
-description: "Record a short audio clip from the call. This is useful if the bot wishes to capture a voice response from the caller following a prompt."
+title: "call: recordResponse"
+description: "Records a short audio response from the caller. This is useful if the bot wishes to capture a voice response from the caller following a prompt."
 author: "VinodRavichandran"
 localization_priority: Normal
 ms.prod: "cloud-communications"
 doc_type: apiPageType
 ---
 
-# call: record
+# call: recordResponse
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Record a short audio clip from a call.
+Records a short audio response from the caller.
 A bot can utilize this to capture a voice response from a caller after they are prompted for a response.
 
 For further information on how to handle operations, please review [commsOperation](../resources/commsOperation.md)
@@ -34,8 +34,8 @@ One of the following permissions is required to call this API. To learn more, in
 ## HTTP request
 <!-- { "blockType": "ignored" } -->
 ```http
-POST /app/calls/{id}/record
-POST /communications/calls/{id}/record
+POST /app/calls/{id}/recordResponse
+POST /communications/calls/{id}/recordResponse
 ```
 > **Note:** The `/app` path is deprecated. Going forward, use the `/communications` path.
 
@@ -49,11 +49,11 @@ In the request body, provide a JSON object with the following parameters.
 
 | Parameter      | Type    |Description|
 |:---------------|:--------|:----------|
-|prompts|[MediaPrompt](../resources/mediaprompt.md) collection | The prompts to be played. The maximum supported mediaPrompt collection size is 1.|
-|bargeInAllowed|Boolean| If true, this record request will barge into other existing queued-up/currently-processing record/playprompt requests. Default = false. |
-|initialSilenceTimeoutInSeconds | Int32| Maximum initial silence (user silence) allowed from the time we start the record operation before we timeout and fail the operation. If we are playing a prompt, then this timer starts after prompt finishes. Default = 5 seconds, Min = 1 second, Max = 120 seconds |
-|maxSilenceTimeoutInSeconds|Int32| Maximum silence (pause) time allowed after a user has started speaking. Default = 5 seconds, Min = 1 second, Max = 120 seconds.|
-|maxRecordDurationInSeconds|Int32| Max duration for a record operation before stopping recording. Default = 5 seconds, Min = 1 second, Max = 120 seconds.|
+|prompts|[mediaPrompt](../resources/mediaprompt.md) collection | Collection of prompts to play (if any) before recording starts. Customers can choose to specify "playPrompt" action separately or specify as part of "record" - mostly all records are preceeded by a prompt. Current support is only for a single prompt as part of the collection. |
+|bargeInAllowed|Boolean| If true, the recordResponse request will barge into other existing queued-up/currently-processing record/playprompt requests. Default = false. |
+|initialSilenceTimeoutInSeconds | Int32| Maximum initial silence (user silence) allowed from the time we start the record response operation before we timeout and fail the operation. If we are playing a prompt, then this timer starts after prompt finishes. Default = 5 seconds, Min = 1 second, Max = 300 seconds |
+|maxSilenceTimeoutInSeconds|Int32| Maximum silence (pause) time allowed after a user has started speaking. Default = 5 seconds, Min = 1 second, Max = 300 seconds.|
+|maxRecordDurationInSeconds|Int32| Max duration for the recordResponse operation before stopping recording. Default = 5 seconds, Min = 1 second, Max = 300 seconds.|
 |playBeep|Boolean| If true, plays a beep to indicate to the user that they can start recording their message. Default = true.|
 |stopTones|String collection|Stop tones specified to end recording.|
 |clientContext|String|Unique Client Context string. Max limit is 256 chars.|
@@ -66,7 +66,7 @@ This method returns a `200 OK` response code and a Location header with a URI to
 ## Example
 The following example shows how to call this API.
 
-### Example 1: Record a short audio clip from a call
+### Example 1: Records a short audio response from the caller
 
 ##### Request
 The following example shows the request.
@@ -75,10 +75,10 @@ The following example shows the request.
 # [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
-  "name": "call-record"
+  "name": "call-recordResponse"
 }-->
 ```http
-POST https://graph.microsoft.com/beta/communications/calls/{id}/record
+POST https://graph.microsoft.com/beta/communications/calls/{id}/recordResponse
 Content-Type: application/json
 Content-Length: 394
 
@@ -204,7 +204,7 @@ Content-Type: application/octet-stream
 <!--
 {
   "type": "#page.annotation",
-  "description": "call: record",
+  "description": "call: recordResponse",
   "keywords": "",
   "section": "documentation",
   "tocPath": "",
