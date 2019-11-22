@@ -33,7 +33,7 @@ Contains information about the meeting, including the URL used to join a meeting
 | endDateTime               | DateTime                                               | The meeting end time in UTC. |
 | id                        | String                                                 | The default ID associated with the online meeting. Read-only. |
 | isCanceled                | Boolean                                                | Indicates whether the meeting has been canceled. Read-only. |
-| joinUrl                   | String                                                 | The join URL of the online meeting. Read-only.|
+| joinWebUrl                   | String                                                 | The join URL of the online meeting. Read-only.|
 | isBroadcast               | Boolean                                                | Indicates whether the meeting is a broadcast meeting. |
 | participants              | [meetingParticipants](meetingparticipants.md)          | The participants associated with the online meeting.  This includes the organizer and the attendees. |
 | subject                   | String                                                 | The subject of the online meeting. |
@@ -69,7 +69,7 @@ Contains information about the meeting, including the URL used to join a meeting
   "endDateTime": "String (timestamp)",
   "id": "String (identifier)",
   "isCanceled": false,
-  "joinUrl": "String",
+  "joinWebUrl": "String",
   "isBroadcast": false,
   "participants": {"@odata.type": "#microsoft.graph.meetingParticipants"},
   "startDateTime": "String (timestamp)",
