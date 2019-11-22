@@ -32,6 +32,7 @@ POST /app/calls/{id}/updateRecordingStatus
 | Name          | Description               |
 |:--------------|:--------------------------|
 | Authorization | Bearer {token}. Required. |
+| Content-type | application/json. Required. |
 
 ## Request body
 In the request body, provide a JSON object with the following parameters.
@@ -42,12 +43,12 @@ In the request body, provide a JSON object with the following parameters.
 | status          | String  | The recording status. Possible values are: `notRecording`, `recording`, or `failed`.  |
 
 ## Response
-This method returns a `200 OK` response code and a Location header with a URI to the [updateRecordingStatusOperation](../resources/updaterecordingstatusoperation.md) created for this request.
+This method returns a `200 OK` response code and a Location header with a URI to the [updateRecordingStatusOperation](../resources/updaterecordingstatusoperation.md) object created for this request.
 
 ## Example
 The following example shows how to call this API.
 
-##### Request
+### Request
 The following example shows the request.
 
 
@@ -70,7 +71,7 @@ Content-Length: 79
 ---
 
 
-##### Response
+### Response
 
 > **Note:** The response object shown here might be shortened for readability. All the properties will be returned from an actual call.
 
