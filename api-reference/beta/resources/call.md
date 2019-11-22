@@ -23,6 +23,7 @@ Although the same identity cannot be invited multiple times, it is possible for 
 |:-------------------------------------------------------------------|:------------------------------------------------------------|:--------------------------------------------------------------------------------|
 | [Get](../api/call-get.md)                                     | [call](call.md)                                             | Read properties of the **call** object.                                         |
 | [Delete](../api/call-delete.md)                                    | None                                                            | Delete or Hang-up an active **call**.                                           |
+| [KeepAlive](../api/call-keepalive.md)                             | None                                                  | Keep the call alive.
 | **Call Handling**                                                  |                                                        |                                                                                 |
 | [Answer](../api/call-answer.md)                                    | None                                                            | Answer an incoming call.                                                        |
 | [Reject](../api/call-reject.md)                                    | None                                                            | Reject an incoming call.                                                        |
