@@ -7,7 +7,9 @@ author: benotter
 
 # Tasks component in the Microsoft Graph Toolkit
 
-The Tasks component enables the user to view, add, remove, complete, or edit tasks. It works with tasks in Microsoft Planner or Microsoft To-Do.
+The Tasks component enables the user to view, add, remove, complete, or edit tasks. It works with tasks in Microsoft Planner or Microsoft To-Do.  
+
+Additionally, a user is able to assign singular or multiple Microsoft Graph users to a task. For more details on Microsoft Graph assignments, visit: [plannerAssignments](https://docs.microsoft.com/en-us/graph/api/resources/plannerassignments?view=graph-rest-1.0) 
 
 ## Example
 
@@ -88,6 +90,35 @@ mgt-tasks {
 --task-complete-detail-icon-color
 }
 ````
+
+#### Events
+| Event | Detail | Description |
+| --- | --- | --- |
+| `taskClick` | The detail contains the respective `task` object | Fired when the user interacts via `click` on a task. |
+
+## Templates
+
+The `tasks` component supports several [templates](../templates.md) that allow you to replace certain parts of the component. To specify a template, include a `<template>` element inside a component and set the `data-type` value to one of the following:
+
+| Data type     | Data context              | Description                                                       |
+| ---------     | ------------------------- | ----------------------------------------------------------------- |
+| task     | task: contains all details pertaining to task | replaces the whole default task. |
+| task-details | task: contains all details pertaining to task | template replaces the details section of the task. |
+
+The following example defines a template for the tasks component.
+
+```html
+    <mgt-tasks data-source="todo">
+      <template data-type="task-details">
+        <div>
+          Owner: {{task.owner}}
+        </div>
+        <div>
+          Importance Level: {{task.importance}}
+        </div>
+      </template>
+    </mgt-tasks>
+```
 
 ## Microsoft Graph permissions
 
