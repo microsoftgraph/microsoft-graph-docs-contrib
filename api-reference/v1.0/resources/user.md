@@ -73,7 +73,7 @@ This resource supports:
 | [List mailFolders](../api/user-list-mailfolders.md) | [mailFolder](mailfolder.md) collection| Get the mail folder collection under the root folder of the signed-in user. |
 | [List messages](../api/user-list-messages.md) | [message](message.md) collection | Get all the messages in the signed-in user's mailbox. |
 | [List overrides](../api/inferenceclassification-list-overrides.md) | [inferenceClassificationOverride](inferenceclassificationoverride.md) collection | Get the Focused Inbox overrides that a user has set up to always classify messages from certain senders in specific ways. |
-| [List rules](../api/mailfolder-list-messagerules) | [messageRule](messagerule.md) collection | Get all the messageRule objects defined for the user's inbox. |
+| [List rules](../api/mailfolder-list-messagerules.md) | [messageRule](messagerule.md) collection | Get all the messageRule objects defined for the user's inbox. |
 | [Send mail](../api/user-sendmail.md) | None| Send the message specified in the request body. |
 | **Notes** |||
 | [Create notebook](../api/onenote-post-notebooks.md) | [notebook](notebook.md) | Create a new OneNote notebook. |

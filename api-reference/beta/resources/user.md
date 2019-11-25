@@ -73,7 +73,7 @@ This resource supports:
 | **Insights** |||
 | [List shared](../api/insights-list-shared.md) | [sharedInsight](insights-shared.md) collection | Calculated insight that returns the list of files shared with a user. |
 | [List trending](../api/insights-list-trending.md) | [trending](insights-trending.md) collection | Calculated insight that returns the list of items trending around the user. |
-| [List used](../api/insights-list-used.md) | [usedInsight](insights-used) collection | Calculated insight that returns the list of files used with a user. |
+| [List used](../api/insights-list-used.md) | [usedInsight](insights-used.md) collection | Calculated insight that returns the list of files used with a user. |
 | **Mail** |||
 | [Create inferenceClassificationOverride](../api/inferenceclassification-post-overrides.md) | Create a Focused Inbox override for a sender identified by an SMTP address. |
 | [Create mailFolder](../api/user-post-mailfolders.md) | [mailFolder](mailfolder.md) | Create a new mailFolder by posting to the mailFolders collection. |
@@ -83,7 +83,7 @@ This resource supports:
 | [List mailFolders](../api/user-list-mailfolders.md) | [mailFolder](mailfolder.md) collection | Get the mail folder collection under the root folder of the signed-in user. |
 | [List messages](../api/user-list-messages.md) | [message](message.md) collection| Get all the messages in the signed-in user's mailbox. |
 | [List overrides](../api/inferenceclassification-list-overrides.md) | [inferenceClassificationOverride](inferenceclassificationoverride.md) collection | Get the Focused Inbox overrides that a user has set up to always classify messages from certain senders in specific ways. |
-| [List rules](../api/mailfolder-list-messagerules) | [messageRule](messagerule.md) collection | Get all the messageRule objects defined for the user's inbox. |
+| [List rules](../api/mailfolder-list-messagerules.md) | [messageRule](messagerule.md) collection | Get all the messageRule objects defined for the user's inbox. |
 | [Send mail](../api/user-sendmail.md) | None | Send the message specified in the request body. |
 | **Notes** |||
 | [Create notebook](../api/onenote-post-notebooks.md) | [notebook](notebook.md) | Create a new OneNote notebook. |
