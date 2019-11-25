@@ -119,7 +119,7 @@ This resource supports:
 | [Update plannerUser](../api/planneruser-update.md) | None | Update the properties of a plannerUser object. |
 | **Profile** |||
 | [Get profile](../api/profile-get.md) | [profile](profile.md) | Retrieve the properties and relationships of a profile object for a given user. |
-| [Delete profile](profile-delete.md) | None | Delete profile object from a user's account. |
+| [Delete profile](../api/profile-delete.md) | None | Delete profile object from a user's account. |
 | **Schema extensions** | | |
 | [Add schema extension values](/graph/extensibility-schema-groups) | None | Create a schema extension definition and then use it to add custom typed data to a resource.|
 | **Teamwork** |||
