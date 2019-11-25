@@ -32,14 +32,16 @@ POST /administrativeUnits
 | Name      |Description|
 |:----------|:----------|
 | Authorization  | Bearer {token}. Required. |
-## Request body
-In the request body, supply a JSON representation of [administrativeUnit](../resources/administrativeunit.md) object.
+| Content-type | application/json. Required. |
 
-Since the **administrativeUnit** resource supports [extensions](/graph/extensibility-overview), you can use the `POST` operation and add custom properties with your own data to the administrative unit while creating it.
+## Request body
+In the request body, supply a JSON representation of an [administrativeUnit](../resources/administrativeunit.md) object.
+
+Because the **administrativeUnit** resource supports [extensions](/graph/extensibility-overview), you can use the `POST` operation and add custom properties with your own data to the administrative unit while creating it.
 
 ## Response
 
-If successful, this method returns `201 Created` response code and [administrativeUnit](../resources/administrativeunit.md) object in the response body.
+If successful, this method returns a `201 Created` response code and an [administrativeUnit](../resources/administrativeunit.md) object in the response body.
 
 ## Example
 
@@ -77,12 +79,12 @@ Content-length: 150
 
 ---
 
-In the request body, supply a JSON representation of [administrativeUnit](../resources/administrativeunit.md) object.
+In the request body, supply a JSON representation of an [administrativeUnit](../resources/administrativeunit.md) object.
 
 ### Response
 
 The following is an example of the response. 
-> Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.
+> Note: The response object shown here might be shortened for readability. All the properties will be returned from an actual call.
 <!-- {
   "blockType": "response",
   "truncated": true,
