@@ -42,8 +42,10 @@ Since the **administrativeUnit** resource supports [extensions](/graph/extensibi
 If successful, this method returns `201 Created` response code and [administrativeUnit](../resources/administrativeunit.md) object in the response body.
 
 ## Example
-##### Request
-Here is an example of the request.
+
+### Request
+
+The following is an example of the request.
 
 # [HTTP](#tab/http)
 <!-- {
@@ -58,7 +60,7 @@ Content-length: 150
 {
     "displayName": "Seattle District Technical Schools",
     "description": "Seattle district technical schools administration",
-    "visibility": "true"
+    "visibility": "HiddenMembership"
 }
 ```
 # [C#](#tab/csharp)
@@ -76,8 +78,11 @@ Content-length: 150
 ---
 
 In the request body, supply a JSON representation of [administrativeUnit](../resources/administrativeunit.md) object.
-##### Response
-Here is an example of the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.
+
+### Response
+
+The following is an example of the response. 
+> Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.
 <!-- {
   "blockType": "response",
   "truncated": true,
@@ -89,12 +94,12 @@ Content-type: application/json
 Content-length: 172
 
 {
-  "administrativeUnit": {
+    "@odata.context": "https://graph.microsoft.com/beta/$metadata#administrativeUnits/$entity",
+    "id": "7a3dc8f3-b3a0-4164-9a99-ed36f3af039f"
+    "deletedDateTime": null,
     "displayName": "Seattle District Technical Schools",
     "description": "Seattle district technical schools administration",
-    "visibility": "true",
-    "id": "7a3dc8f3-b3a0-4164-9a99-ed36f3af039f"
-  }
+    "visibility": "HiddenMembership"
 }
 ```
 
