@@ -55,9 +55,9 @@ Bulk actions (create, update, delete) can generate two different potential error
 
 ## Constraints
 
-The `$top` OData query parameter has a limit of 1000 alerts. It’s recommended to include only `$top` and not include `$skip` in your first Get query, as you can use `@odata.nextLink` for pagination. However, if you need to use `$skip`, there is a limit of 500 alerts for this. For example, `/security/alerts?$top=10&$skip=500` will return a `200 OK` response code, but `/security/alerts?$top=10&$skip=501` will return a `400 Bad Request` response code. For more information, see [Microsoft Graph Security API error responses](../resources/security-error-codes.md).
+The `$top` OData query parameter has a limit of 1000 alerts. We recommend that you include only `$top` and not `$skip` in your first GET query. You can use `@odata.nextLink` for pagination. If you need to use `$skip`, it has a limit of 500 alerts. For example, `/security/alerts?$top=10&$skip=500` will return a `200 OK` response code, but `/security/alerts?$top=10&$skip=501` will return a `400 Bad Request` response code. For more information, see [Microsoft Graph Security API error responses](../resources/security-error-codes.md).
 
-A work-round for this limit is to use the `$filter` OData query parameter with the `eventDateTime` of the alert entity from the Microsoft Graph Security API, using `?$filter=eventDateTime gt {YYYY-MM-DDT00:00:00.000Z}` and replacing the dateTime value with the last (1500th) alert. You can also set a range for the `eventDateTime`; for example, `alerts?$filter=eventDateTime **gt** 2018-11-**11**T00:00:00.000Z&eventDateTime **lt** 2018-11-**12**T00:00:00.000Z`.
+A workaround for this limit is to use the `$filter` OData query parameter with the `eventDateTime` of the alert entity from the Microsoft Graph Security API, using `?$filter=eventDateTime gt {YYYY-MM-DDT00:00:00.000Z}` and replacing the dateTime value with the last (1500th) alert. You can also set a range for the `eventDateTime`; for example, `alerts?$filter=eventDateTime **gt** 2018-11-**11**T00:00:00.000Z&eventDateTime **lt** 2018-11-**12**T00:00:00.000Z`.
 
 ## See also
 
