@@ -46,7 +46,7 @@ This method supports the following [OData query parameters](/graph/query-paramet
 
 To return an alternative property set, use the OData `$select` query parameter to specify the set of **alert** properties that you want.  For example, to return the **assignedTo**, **category**, and **severity** properties, add the following to your query: `$select=assignedTo,category,severity`.
 
-> **Note:** `$top` has a limit of 1000 alerts, and a combination of `$top` + `$skip` cannot exceed 6000 alerts. For example, `/security/alerts?$top=10&$skip=5990` will return a `200 OK` response code, but `/security/alerts?$top=10&$skip=5991` will return a `400 Bad Request` response code.  For more information, see [Microsoft Graph Security API error responses](../resources/security-error-codes.md).
+> **Note:** The `$top` OData query parameter has a limit of 1000 alerts. It’s recommended to include only `$top` and not include `$skip` in your first Get query, as you can use `@odata.nextLink` for pagination. However, if you need to use `$skip`, there is a limit of 500 alerts for this. For example, `/security/alerts?$top=10&$skip=500` will return a `200 OK` response code, but `/security/alerts?$top=10&$skip=501` will return a `400 Bad Request` response code. For more information, see [Microsoft Graph Security API error responses](../resources/security-error-codes.md).
 
 ## Request headers
 
