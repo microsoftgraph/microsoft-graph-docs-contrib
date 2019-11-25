@@ -117,6 +117,9 @@ This resource supports:
 | [List recentPlans](../api/planneruser-list-recentplans.md) | [plannerPlan](plannerplan.md) collection | Retrieve a list of plannerPlans recently viewed by a user. |
 | [List tasks](../api/planneruser-list-tasks.md) | [plannerTask](plannertask.md) collection | Get plannerTasks assigned to the user. |
 | [Update plannerUser](../api/planneruser-update.md) | None | Update the properties of a plannerUser object. |
+| **Profile** |||
+| [Get profile](../api/profile-get.md) | [profile](profile.md) | Retrieve the properties and relationships of a profile object for a given user. |
+| [Delete profile](profile-delete.md) | None | Delete profile object from a user's account. |
 | **Schema extensions** | | |
 | [Add schema extension values](/graph/extensibility-schema-groups) | None | Create a schema extension definition and then use it to add custom typed data to a resource.|
 | **Teamwork** |||
