@@ -95,7 +95,7 @@ Content-length: 172
 
 {
     "@odata.context": "https://graph.microsoft.com/beta/$metadata#administrativeUnits/$entity",
-    "id": "7a3dc8f3-b3a0-4164-9a99-ed36f3af039f"
+    "id": "7a3dc8f3-b3a0-4164-9a99-ed36f3af039f",
     "deletedDateTime": null,
     "displayName": "Seattle District Technical Schools",
     "description": "Seattle district technical schools administration",
