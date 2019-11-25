@@ -63,6 +63,30 @@ This format can also be used inside of attributes:
 
 > **Note:** You can also expand objects such as `{{event}}` and they will render as JSON strings. This can be useful when you're developing the templates.
 
+**Context**
+
+There are also accessible properties when binding, for template context. 
+
+| Property |  Description |
+| --- | --- | --- |
+| `$index` | numerical index of item being rendered while being looped with `data-for` |
+| `$parent` | If a template is rendered inside of another template, the user is able to find data context of the parent within the child template. |
+
+```html
+<mgt-person>
+  <mgt-person-card>
+    <template data-type="$parent">
+      <div data-if="person.image">
+        <img src="{{person.image}}" />
+      </div>
+      <div data-else>
+        {{person.displayName}}
+      </div>
+    </template>
+  </mgt-person-card>
+</mgt-person>
+```
+
 ## Conditional rendering
 
 You might only want to render elements when a condition is true or false based on the data context. The `data-if` and `data-else` attributes can evaluate an expression and render only if true or false.
