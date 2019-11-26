@@ -1,6 +1,6 @@
 ---
 title: "search: query"
-description: "PROVIDE DESCRIPTION HERE"
+description: "Runs the query specified in the request body. Search results are provided in the response."
 localization_priority: Normal
 author: "nmoreau"
 ms.prod: "search"
@@ -11,7 +11,7 @@ doc_type: "apiPageType"
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Executes the query specified in the request body. Search results are provided in the response.
+Runs the query specified in the request body. Search results are provided in the response.
 
 ## Permissions
 
@@ -33,7 +33,8 @@ POST /search/query
 
 | Name          | Description   |
 |:--------------|:--------------|
-| Authorization | Bearer {token} |
+| Authorization | Bearer {token}. Required. |
+| Content-type | application/json. Required. |
 
 ## Request body
 
