@@ -5,6 +5,13 @@ localization_priority: Normal
 author: nmetulev
 ---
 
+
+# Proxy Provider
+
+Use the Proxy Provider to reroute server side authetication, to power the components with Microsoft Graph access.
+
+To learn more, see [providers](../providers.md).
+
 ## Get started
 
 You can initialize the Proxy provider in HTML or JavaScript.

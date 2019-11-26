@@ -58,7 +58,7 @@ Selected People data is accessible to populate via the following methods:
 
 
 
-2. Using the method `selectUsersById()` which accepts an array of Microsoft graph [user id](https://docs.microsoft.com/en-us/graph/api/resources/users?view=graph-rest-1.0) to find associated user details for selection.
+2. Using the method `selectUsersById()` which accepts an array of Microsoft graph [user id](https://docs.microsoft.com/graph/api/resources/users?view=graph-rest-1.0) to find associated user details for selection.
 
 ***If no user is found for the provided `id`, no data will be rendered for that specific `id`**
 
@@ -106,8 +106,8 @@ This component uses the following Microsoft Graph APIs and permissions.
 
 | API                                                                                                              | Permission  |
 | ---------------------------------------------------------------------------------------------------------------- | ----------- |
-| [/me/people](https://docs.microsoft.com/en-us/graph/api/user-list-people?view=graph-rest-1.0)                    | People.Read |
-| [/groups/\${groupId}/members](https://docs.microsoft.com/en-us/graph/api/group-list-members?view=graph-rest-1.0) | People.Read |
+| [/me/people](https://docs.microsoft.com/graph/api/user-list-people?view=graph-rest-1.0)                    | People.Read |
+| [/groups/\${groupId}/members](https://docs.microsoft.com/graph/api/group-list-members?view=graph-rest-1.0) | People.Read |
 
 ## Authentication
 

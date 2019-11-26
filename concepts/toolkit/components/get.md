@@ -58,9 +58,9 @@ Example:
 
 | Resource                                                                                                    | Permission     |
 | ----------------------------------------------------------------------------------------------------------- | -------------------- |
-| [/me/messages](https://docs.microsoft.com/en-us/graph/api/user-list-messages?view=graph-rest-1.0&tabs=http)                              | mail.read          |
+| [/me/messages](https://docs.microsoft.com/graph/api/user-list-messages?view=graph-rest-1.0&tabs=http)                              | mail.read          |
 
-For more information Permissions, see the Microsoft Graph documentation specific to the requested [resource](https://docs.microsoft.com/en-us/graph/api/overview?view=graph-rest-1.0). 
+For more information Permissions, see the Microsoft Graph documentation specific to the requested [resource](https://docs.microsoft.com/graph/api/overview?view=graph-rest-1.0). 
 
 ## Authentication
 
