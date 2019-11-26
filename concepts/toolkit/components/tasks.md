@@ -9,7 +9,7 @@ author: benotter
 
 The Tasks component enables the user to view, add, remove, complete, or edit tasks. It works with tasks in Microsoft Planner or Microsoft To-Do.  
 
-Additionally, a user is able to assign singular or multiple Microsoft Graph users to a task. For more details on Microsoft Graph assignments, visit: [plannerAssignments](https://docs.microsoft.com/en-us/graph/api/resources/plannerassignments?view=graph-rest-1.0) 
+Additionally, a user is able to assign singular or multiple Microsoft Graph users to a task. For more details on Microsoft Graph assignments, visit: [plannerAssignments](https://docs.microsoft.com/graph/api/resources/plannerassignments?view=graph-rest-1.0) 
 
 ## Example
 
