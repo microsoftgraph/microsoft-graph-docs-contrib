@@ -26,6 +26,7 @@ One of the following permissions is required to call this API. To learn more, in
 <!-- { "blockType": "ignored" } -->
 ```http
 POST /app/calls/{id}/updateRecordingStatus
+POST /communications/calls/{id}/updateRecordingStatus
 ```
 
 ## Request headers
@@ -58,7 +59,7 @@ The following example shows the request.
   "name": "call-updateRecordingStatus"
 }-->
 ```http
-POST https://graph.microsoft.com/beta/app/calls/{id}/updateRecordingStatus
+POST https://graph.microsoft.com/beta/communications/calls/{id}/updateRecordingStatus
 Content-Type: application/json
 Content-Length: 79
 
@@ -82,7 +83,7 @@ Content-Length: 79
 } -->
 ```http
 HTTP/1.1 200 OK
-Location: https://graph.microsoft.com/beta/app/calls/57dab8b1-894c-409a-b240-bd8beae78896/operations/0fe0623f-d628-42ed-b4bd-8ac290072cc5
+Location: https://graph.microsoft.com/beta/communications/calls/57dab8b1-894c-409a-b240-bd8beae78896/operations/0fe0623f-d628-42ed-b4bd-8ac290072cc5
 
 {
   "@odata.type": "#microsoft.graph.updateRecordingStatusOperation",
