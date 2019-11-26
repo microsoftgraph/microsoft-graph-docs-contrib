@@ -9,34 +9,26 @@ author: "davidmu1"
 
 # servicePrincipal resource type
 
-[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
-
 Represents an instance of an application in a directory. Inherits from [directoryObject](directoryobject.md).
-
-This resource supports:
-
-- Using [delta query](/graph/delta-query-overview) to track incremental additions, deletions, and updates, by providing a [delta](../api/serviceprincipal-delta.md) function.
 
 ## Methods
 
 | Method       | Return Type  |Description|
 |:---------------|:--------|:----------|
-|[List servicePrincipals](../api/serviceprincipal-list.md) | [servicePrincipal](serviceprincipal.md) collection | Retrieve a list of servicePrincipal objects. |
 |[Get servicePrincipal](../api/serviceprincipal-get.md) | [servicePrincipal](serviceprincipal.md) |Read properties and relationships of servicePrincipal object.|
-|[Update servicePrincipal](../api/serviceprincipal-update.md) | [servicePrincipal](serviceprincipal.md)  |Update servicePrincipal object. |
-|[Delete servicePrincipal](../api/serviceprincipal-delete.md) | None |Delete servicePrincipal object.|
-|[Add password](../api/serviceprincipal-addpassword.md)|[passwordCredential](passwordcredential.md)|Add a strong password to a servicePrincipal.|
-|[Remove password](../api/serviceprincipal-removepassword.md)|[passwordCredential](passwordcredential.md)|Remove a password from a servicePrincipal.|
-|[List appRoleAssignments](../api/serviceprincipal-list-approleassignments.md) |[appRoleAssignment](approleassignment.md) collection| Get a appRoleAssignment object collection.|
+|[List servicePrincipals](../api/serviceprincipal-list.md) | [servicePrincipal](serviceprincipal.md) collection | Retrieve a list of servicePrincipal objects. |
 |[Create appRoleAssignment](../api/serviceprincipal-post-approleassignments.md) |[appRoleAssignment](approleassignment.md)| Create a new appRoleAssignment by posting to the appRoleAssignments collection.|
+|[List appRoleAssignments](../api/serviceprincipal-list-approleassignments.md) |[appRoleAssignment](approleassignment.md) collection| Get a appRoleAssignment object collection.|
 |[List createdObjects](../api/serviceprincipal-list-createdobjects.md) |[directoryObject](directoryobject.md) collection| Get a createdObject object collection.|
 |[List memberOf](../api/serviceprincipal-list-memberof.md) |[directoryObject](directoryobject.md) collection| Get the groups that this service principal is a direct member of from the memberOf navigation property.|
 |[List transitive memberOf](../api/serviceprincipal-list-transitivememberof.md) |[directoryObject](directoryobject.md) collection| List the groups that this service principal is a member of. This operation is transitive and includes the groups that this service principal is a nested member of. |
 |[List assigned policies](../api/policy-list-assigned.md)| [policy](policy.md) collection| Get all policies assigned to this object.|
 |[List oauth2PermissionGrants](../api/serviceprincipal-list-oauth2permissiongrants.md) |[oAuth2PermissionGrant](oauth2permissiongrant.md) collection| Get a oAuth2PermissionGrant object collection.|
 |[List ownedObjects](../api/serviceprincipal-list-ownedobjects.md) |[directoryObject](directoryobject.md) collection| Get a ownedObject object collection.|
-|[List owners](../api/serviceprincipal-list-owners.md) |[directoryObject](directoryobject.md) collection| Get a owner object collection.|
 |[Add owner](../api/serviceprincipal-post-owners.md) |[directoryObject](directoryobject.md)| Create a new owner by posting to the owners collection.|
+|[List owners](../api/serviceprincipal-list-owners.md) |[directoryObject](directoryobject.md) collection| Get a owner object collection.|
+|[Update](../api/serviceprincipal-update.md) | [servicePrincipal](serviceprincipal.md)  |Update servicePrincipal object. |
+|[Delete](../api/serviceprincipal-delete.md) | None |Delete servicePrincipal object. |
 |[checkMemberGroups](../api/serviceprincipal-checkmembergroups.md)|String collection|Check for membership in a specified list of groups.|
 |[checkMemberObjects](../api/serviceprincipal-checkmemberobjects.md)|String collection|Check for membership in a specified list of group, directory role, or administrative unit objects.|
 |[getMemberGroups](../api/serviceprincipal-getmembergroups.md)|String collection|Get the list of groups that this service principal is a member of.|
@@ -48,37 +40,26 @@ This resource supports:
 |:---------------|:--------|:----------|
 |accountEnabled|Boolean| **true** if the service principal account is enabled; otherwise, **false**.|
 | addIns | [addIn](addin.md) | Defines custom behavior that a consuming service can use to call an app in specific contexts. For example, applications that can render file streams [may set the addIns property](https://docs.microsoft.com/onedrive/developer/file-handlers/?view=odsp-graph-online) for its "FileHandler" functionality. This will let services like Office 365 call the application in the context of a document the user is working on.|
-|alternativeNames|String collection| Used for Managed Identities. Learn more about [managed identities](https://aka.ms/azuremanagedidentity).|
+|alternativeNames|String collection| |
 |appDisplayName|String|The display name exposed by the associated application.|
 |appId|String|The unique identifier for the associated application (its **appId** property).|
-|applicationTemplateId|String|Represents an application in the [Azure AD application gallery](https://docs.microsoft.com/azure/active-directory/saas-apps/tutorial-list).|
-|appOwnerOrganizationId|String|Contains the tenant id where the application is registered. This is applicable only to service principals backed by applications.|
 |appRoleAssignmentRequired|Boolean|Specifies whether an **appRoleAssignment** to a user or group is required before Azure AD will issue a user or access token to the application. Not nullable. |
 |appRoles|[appRole](approle.md) collection|The application roles exposed by the associated application. For more information see the **appRoles** property definition on the [application](application.md) entity. Not nullable. |
 |displayName|String|The display name for the service principal.|
-|errorUrl|String|Deprecated. Don't use.|
 |homepage|String|Home page or landing page of the application.|
-| id | String | The unique identifier for the service principal. Inherited from [directoryObject](directoryobject.md). Key. Not nullable. Read-only. |
-| info | [informationalUrl](informationalurl.md) | Basic profile information of the acquired application such as app's marketing, support, terms of service and privacy statement URLs. The terms of service and privacy statement are surfaced to users through the user consent experience. For more info, see How to: [Add Terms of service and privacy statement for registered Azure AD apps](https://docs.microsoft.com/en-us/azure/active-directory/develop/howto-add-terms-of-service-privacy-statement). |
 |keyCredentials|[keyCredential](keycredential.md) collection|The collection of key credentials associated with the service principal. Not nullable.            |
-|loginUrl|String||
-|logoutUrl|String| Specifies the URL that will be used by Microsoft's authorization service to logout an user using [front-channel](https://openid.net/specs/openid-connect-frontchannel-1_0.html), [back-channel](https://openid.net/specs/openid-connect-backchannel-1_0.html) or SAML logout protocols.|
-|notificationEmailAddresses|String collection|Email addresses where Microsoft can send important communications related to the application (e.g. expiring certificates).|
-|publishedPermissionScopes|[permissionScope](permissionScope.md) collection|The OAuth 2.0 permissions exposed by the associated application. For more information see the **oauth2Permissions** property definition on the [application](application.md) entity. Not nullable.            |
+|logoutUrl|String| Specifies the URL that will be used by Microsoft's authorization service to logout an user using [front-channel](https://openid.net/specs/openid-connect-frontchannel-1_0.html), [back-channel](https://openid.net/specs/openid-connect-backchannel-1_0.html) or SAML logout protocols.  |
+|oauth2Permissions|[oAuth2Permission](oauth2permission.md) collection|The OAuth 2.0 permissions exposed by the associated application. For more information see the **oauth2Permissions** property definition on the [application](application.md) entity. Not nullable.            |
+|id|String|The unique identifier for the service principal. Inherited from [directoryObject](directoryobject.md). Key. Not nullable. Read-only.|
 |passwordCredentials|[passwordCredential](passwordcredential.md) collection|The collection of password credentials associated with the service principal. Not nullable. |
-|preferredSingleSignOnMode|string||
-|preferredTokenSigningKeyEndDateTime|DateTimeOffset||
 |preferredTokenSigningKeyThumbprint|String|Reserved for internal use only. Do not write or otherwise rely on this property. May be removed in future versions. |
 |publisherName|String|The display name of the tenant in which the associated application is specified.|
 |replyUrls|String collection|The URLs that user tokens are sent to for sign in with the associated application, or the redirect URIs that OAuth 2.0 authorization codes and access tokens are sent to for the associated application. Not nullable. |
-|samlMetadataUrl|String|The url where the service exposes SAML metadata for federation.|
-|samlSingleSignOnSettings||
-|serviceEndpoints|[endPoint](endpoint.md)|A collection of user defined service endpoints for discovering the capabilities of the application.|
-|servicePrincipalNames|String collection|The URIs that identify the associated application. For more information see, [Application Objects and Service Principal Objects](https://msdn.microsoft.com/library/azure/dn132633.aspx). The **any** operator is required for filter expressions on multi-valued properties.  Not nullable. |
-|servicePrincipalType|String|Contains the value that indicates whether the service principal is backed by an application, or a legacy standalone one, MSI or a SocialIDP. Read-only.|
+|samlMetadataUrl|String| |
+|servicePrincipalNames|String collection|The URIs that identify the associated application. For more information see, [Application Objects and Service Principal Objects](https://msdn.microsoft.com/library/azure/dn132633.aspx).The **any** operator is required for filter expressions on multi-valued properties.  Not nullable. |
+|servicePrincipalType|String| |
 |tags|String collection| Not nullable. |
-|tokenEncryptionKeyId|String|Specifies the keyId of a public key from the keyCredentials collection. When configured, Azure AD encrypts all the tokens it emits by using the key this property points to. The application code that receives the encrypted token must use the matching private key to decrypt the token before it can be used for the signed-in user.|
-|useCustomTokenSigningKey|Boolean|Specifies if a custom token signing key can be used. The default value is false.|
+| tokenEncryptionKeyId |String|Specifies the keyId of a public key from the keyCredentials collection. When configured, Azure AD encrypts all the tokens it emits by using the key this property points to. The application code that receives the encrypted token must use the matching private key to decrypt the token before it can be used for the signed-in user.|
 
 ## Relationships
 | Relationship | Type |Description|
@@ -115,41 +96,31 @@ Here is a JSON representation of the resource
 {
   "accountEnabled": true,
   "addIns": [{"@odata.type": "microsoft.graph.addIn"}],
-  "alternativeNames": ,
+  "alternativeNames": ["string"] ,
   "appDisplayName": "string",
   "appId": "string",
   "appOwnerOrganizationId": "guid",
-  "applicationTemplateId": "string",
   "appRoleAssignedTo": [{"@odata.type": "microsoft.graph.appRoleAssignment"}],
   "appRoleAssignments": [{"@odata.type": "microsoft.graph.appRoleAssignment"}],
   "appRoleAssignmentRequired": true,
   "appRoles": [{"@odata.type": "microsoft.graph.appRole"}],
   "displayName": "string",
-  "errorUrl": "string",
   "homepage": "string",
   "info": {"@odata.type": "microsoft.graph.informationalUrl"},
   "id": "string (identifier)",
   "keyCredentials": [{"@odata.type": "microsoft.graph.keyCredential"}],
-  "loginUrl": "string",
   "logoutUrl": "string",
-  "notificationEmailAddresses": ["string"],
+  "oauth2PermissionScopes": [{"@odata.type": "microsoft.graph.permissionScope"}],
   "oauth2PermissionGrants": [{"@odata.type": "microsoft.graph.oAuth2PermissionGrant"}],
-  "publishedPermissionScopes": [{"@odata.type": "microsoft.graph.permissionScope"}],
   "passwordCredentials": [{"@odata.type": "microsoft.graph.passwordCredential"}],
-  "preferredSingleSignOnMode": "string",
-  "preferredTokenSigningKeyEndDateTime": "DateTime",
   "preferredTokenSigningKeyThumbprint": "string",
   "publisherName": "string",
   "replyUrls": ["string"],
-  "samlMetadataUrl": "string",
-  "samlSingleSignOnSettings": "microsoft.DirectoryServices.SamlSingleSignOnSettings",
   "serviceEndpoints": [{"@odata.type": "microsoft.graph.endPoint"}],
   "servicePrincipalNames": ["string"],
   "servicePrincipalType": "string",
-  "signInAudience": "String",
   "tags": ["string"],
-  "tokenEncryptionKeyId": "String",
-  "useCustomTokenSigningKey": false 
+  "tokenEncryptionKeyId": "String"
 }
 ```
 
