@@ -100,6 +100,7 @@ For details about known issues with Microsoft Graph APIs, see [Known issues](kno
 | **Change type** | **Version** | **Description**                  |
 |:----------------|:------------|:-----------------------------------------|
 | Addition | beta | Added application-level Policy.Read.All permission for read operations in both conditional access policies and named locations.|
+| Change | beta | Updated the permissions required to perform write operations for both conditional access policies and named locations.|
 
 ### People and workplace intelligence
 
