@@ -94,7 +94,7 @@ Content-Length: 81
 
 <!-- {
   "blockType": "response",
-  "name": "participant-muteAll"
+  "name": "participant-muteAll",
   "truncated": true,
   "@odata.type": "microsoft.graph.muteParticipantsOperation"
 } -->

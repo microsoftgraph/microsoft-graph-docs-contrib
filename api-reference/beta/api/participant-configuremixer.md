@@ -107,7 +107,7 @@ Content-Length: 501
 
 <!-- {
   "blockType": "response",
-  "name": "participant-configureMixer"
+  "name": "participant-configureMixer",
   "truncated": true,
   "@odata.type": "microsoft.graph.configureMixerOperation"
 } -->

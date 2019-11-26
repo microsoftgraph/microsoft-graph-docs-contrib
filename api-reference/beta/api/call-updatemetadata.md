@@ -88,7 +88,7 @@ Content-Length: 79
 
 <!-- {
   "blockType": "response",
-  "name": "call-updateMetadata"
+  "name": "call-updateMetadata",
   "truncated": true,
   "@odata.type": "microsoft.graph.updateMetadataOperation"
 } -->
