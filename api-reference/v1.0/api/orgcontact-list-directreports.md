@@ -20,7 +20,7 @@ One of the following permissions is required to call this API. To learn more, in
 |Delegated (personal Microsoft account) | Not supported.    |
 |Application | OrgContact.Read.All and Group.Read.All, Directory.Read.All |
 
-When an application queries the membership of a container object and does not have permission to read a certain type, [limited information is returned for inaccessible member objects](/graph/permissions-reference#limited-information-returned-for-inaccessible-member-objects).
+[!INCLUDE [limited info](../../includes/limited_info.md)]
 
 ## HTTP request
 <!-- { "blockType": "ignored" } -->

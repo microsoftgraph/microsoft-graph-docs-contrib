@@ -23,7 +23,7 @@ One of the following permissions is required to call this API. To learn more, in
 
 >**Note:** To list the members of a hidden membership group, the Member.Read.Hidden permission is required.
 
-When an application queries the membership of a container object and does not have permission to read a certain type, [limited information is returned for inaccessible member objects](/graph/permissions-reference#limited-information-returned-for-inaccessible-member-objects).
+[!INCLUDE [limited info](../../includes/limited_info.md)]
 
 ## HTTP request
 

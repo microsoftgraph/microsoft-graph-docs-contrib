@@ -17,7 +17,7 @@ Currently, deleted items functionality is only supported for the [application](.
 
 ## Permissions
 
-When an application queries the membership of a container object and does not have permission to read a certain type, [limited information is returned for inaccessible member objects](/graph/permissions-reference#limited-information-returned-for-inaccessible-member-objects).
+[!INCLUDE [limited info](../../includes/limited_info.md)]
 
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
 
