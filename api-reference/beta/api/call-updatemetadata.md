@@ -90,14 +90,14 @@ Content-Length: 79
   "blockType": "response",
   "name": "call-updateMetadata",
   "truncated": true,
-  "@odata.type": "microsoft.graph.updateMetadataOperation"
+  "@odata.type": "microsoft.graph.commsOperation"
 } -->
 ```http
 HTTP/1.1 200 OK
 Location: https://graph.microsoft.com/beta/communications/calls/57dab8b1-894c-409a-b240-bd8beae78896/operations/0fe0623f-d628-42ed-b4bd-8ac290072cc5
 
 {
-  "@odata.type": "#microsoft.graph.updateMetadataOperation",
+  "@odata.type": "#microsoft.graph.commsOperation",
   "clientContext": "clientContext-value",
   "id": "0fe0623f-d628-42ed-b4bd-8ac290072cc5",
   "resultInfo": null,
