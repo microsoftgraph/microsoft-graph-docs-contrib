@@ -78,6 +78,7 @@ Content-Length: 79
 
 <!-- {
   "blockType": "response",
+  "name": "call-updateRecordingStatus"
   "truncated": true,
   "@odata.type": "microsoft.graph.updateRecordingStatusOperation"
 } -->
