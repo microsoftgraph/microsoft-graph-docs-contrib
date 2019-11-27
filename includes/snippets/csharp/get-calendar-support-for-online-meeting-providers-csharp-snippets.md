@@ -6,11 +6,8 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 GraphServiceClient graphClient = new GraphServiceClient( authProvider );
 
-var persistChanges = true;
-
-await graphClient.Me.Drive.Items["{id}"].Workbook
-	.CreateSession(persistChanges)
+var calendar = await graphClient.Me.Calendar
 	.Request()
-	.PostAsync();
+	.GetAsync();
 
 ```
