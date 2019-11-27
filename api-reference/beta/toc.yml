@@ -365,6 +365,13 @@
           href: api/planneruser-list-recentplans.md
         - name: List user's assigned tasks
           href: api/planneruser-list-tasks.md
+      - name: Profile
+        href: resources/profile.md
+        items:
+        - name: Get user's profile
+          href: api/profile-get.md
+        - name: Delete user's profile
+          href: api/profile-delete.md
       - name: Teamwork
         items:
         - name: Installed app
@@ -873,6 +880,8 @@
           href: api/call-mute.md
         - name: Update metadata
           href: api/call-updatemetadata.md
+        - name: Update recording status
+          href: api/call-updaterecordingstatus.md
         - name: Audio routing group
           href: resources/audioroutinggroup.md
           items:
@@ -9893,6 +9902,176 @@
         items:
         - name: List people
           href: api/user-list-people.md
+      - name: Profile (preview)
+        href: resources/profile.md
+        items:
+        - name: Get user's profile
+          href: api/profile-get.md
+        - name: Delete user's profile
+          href: api/profile-delete.md
+        - name: Account information
+          href: resources/useraccountinformation.md
+          items:
+          - name: List
+            href: api/profile-list-account.md
+          - name: Get
+            href: api/useraccountinformation-get.md
+        - name: Anniversary
+          href: resources/personanniversary.md
+          items:
+          - name: List
+            href: api/profile-list-anniversaries.md
+          - name: Create
+            href: api/profile-post-anniversaries.md
+          - name: Get
+            href: api/personanniversary-get.md
+          - name: Update
+            href: api/personanniversary-update.md
+          - name: Delete
+            href: api/personanniversary-delete.md
+        - name: Educational activity
+          href: resources/educationalactivity.md
+          items:
+          - name: List
+            href: api/profile-list-educationalactivities.md
+          - name: Create
+            href: api/profile-post-educationalactivities.md
+          - name: Get
+            href: api/educationalactivity-get.md
+          - name: Update
+            href: api/educationalactivity-update.md
+          - name: Delete
+            href: api/educationalactivity-delete.md
+        - name: Email address
+          href: resources/itememail.md
+          items:
+          - name: List
+            href: api/profile-list-emails.md
+          - name: Create
+            href: api/profile-post-emails.md
+          - name: Get
+            href: api/itememail-get.md
+          - name: Update
+            href: api/itememail-update.md
+          - name: Delete
+            href: api/itememail-delete.md
+        - name: Interests
+          href: resources/personinterest.md
+          items:
+          - name: List
+            href: api/profile-list-interests.md
+          - name: Create
+            href: api/profile-post-interests.md
+          - name: Get
+            href: api/personinterest-get.md
+          - name: Update
+            href: api/personinterest-update.md
+          - name: Delete
+            href: api/personinterest-delete.md
+        - name: Languages
+          href: resources/languageproficiency.md
+          items:
+          - name: List
+            href: api/profile-list-languages.md
+          - name: Create
+            href: api/profile-post-languages.md
+          - name: Get
+            href: api/languageproficiency-get.md
+          - name: Update
+            href: api/languageproficiency-update.md
+          - name: Delete
+            href: api/languageproficiency-delete.md
+        - name: Names
+          href: resources/personname.md
+          items:
+          - name: List
+            href: api/profile-list-names.md
+          - name: Create
+            href: api/profile-post-names.md
+          - name: Get
+            href: api/personname-get.md
+          - name: Update
+            href: api/personname-update.md
+          - name: Delete
+            href: api/personname-delete.md
+        - name: Phones
+          href: resources/itemphone.md
+          items:
+          - name: List
+            href: api/profile-list-phones.md
+          - name: Create
+            href: api/profile-post-phones.md
+          - name: Get
+            href: api/itemphone-get.md
+          - name: Update
+            href: api/itemphone-update.md
+          - name: Delete
+            href: api/itemphone-delete.md
+        - name: Positions
+          href: resources/workposition.md
+          items:
+          - name: List
+            href: api/profile-list-positions.md
+          - name: Create
+            href: api/profile-post-positions.md
+          - name: Get
+            href: api/workposition-get.md
+          - name: Update
+            href: api/workposition-update.md
+          - name: Delete
+            href: api/workposition-delete.md
+        - name: Projects
+          href: resources/projectparticipation.md
+          items:
+          - name: List
+            href: api/profile-list-projects.md
+          - name: Create
+            href: api/profile-post-projects.md
+          - name: Get
+            href: api/projectparticipation-get.md
+          - name: Update
+            href: api/projectparticipation-update.md
+          - name: Delete
+            href: api/projectparticipation-delete.md
+        - name: Skills
+          href: resources/skillproficiency.md
+          items:
+          - name: List
+            href: api/profile-list-skills.md
+          - name: Create
+            href: api/profile-post-skills.md
+          - name: Get
+            href: api/skillproficiency-get.md
+          - name: Update
+            href: api/skillproficiency-update.md
+          - name: Delete
+            href: api/skillproficiency-delete.md
+        - name: Web accounts
+          href: resources/webaccount.md
+          items:
+          - name: List
+            href: api/profile-list-webaccounts.md
+          - name: Create
+            href: api/profile-post-webaccounts.md
+          - name: Get
+            href: api/webaccount-get.md
+          - name: Update
+            href: api/webaccount-update.md
+          - name: Delete
+            href: api/webaccount-delete.md
+        - name: Websites
+          href: resources/personwebsite.md
+          items:
+          - name: List
+            href: api/profile-list-websites.md
+          - name: Create
+            href: api/profile-post-websites.md
+          - name: Get
+            href: api/personwebsite-get.md
+          - name: Update
+            href: api/personwebsite-update.md
+          - name: Delete
+            href: api/personwebsite-delete.md
       - name: Insights
         href: resources/officegraphinsights.md
         items:
@@ -9911,7 +10090,9 @@
           items:
           - name: List shared
             href: api/insights-list-shared.md
-      - name: Analytics
+      - name: Mention (preview)
+        href: resources/mention.md
+      - name: Analytics (preview)
         href: resources/useranalytics.md
         items:
         - name: Settings
@@ -9938,171 +10119,6 @@
             href: api/activitystatistics-list.md
           - name: Get activity statistics
             href: api/activitystatistics-get.md
-      - name: Mention
-        href: resources/mention.md
-      - name: Profile
-        href: resources/profile.md
-        items:
-        - name: Get profile
-          href: api/profile-get.md
-        - name: Delete profile
-          href: api/profile-delete.md
-        - name: List account
-          href: api/profile-list-account.md
-        - name: List anniversariles
-          href: api/profile-list-anniversaries.md
-        - name: Create anniversary
-          href: api/profile-post-anniversaries.md
-        - name: List educational activities
-          href: api/profile-list-educationalactivities.md
-        - name: Create educational activity
-          href: api/profile-post-educationalactivities.md
-        - name: Create email address
-          href: api/profile-post-emails.md
-        - name: List email addresses
-          href: api/profile-list-emails.md
-        - name: Create interest
-          href: api/profile-post-interests.md
-        - name: List interests
-          href: api/profile-list-interests.md
-        - name: Create language
-          href: api/profile-post-languages.md
-        - name: List languages
-          href: api/profile-list-languages.md
-        - name: Create name
-          href: api/profile-post-names.md
-        - name: List names
-          href: api/profile-list-names.md
-        - name: List websites
-          href: api/profile-list-websites.md
-        - name: Create phone number
-          href: api/profile-post-phones.md
-        - name: List phone numbers
-          href: api/profile-list-phones.md
-        - name: Create position
-          href: api/profile-post-positions.md
-        - name: List positions
-          href: api/profile-list-positions.md
-        - name: Create project
-          href: api/profile-post-projects.md
-        - name: List projects
-          href: api/profile-list-projects.md
-        - name: Create skill
-          href: api/profile-post-skills.md
-        - name: List skills
-          href: api/profile-list-skills.md
-        - name: Create web account
-          href: api/profile-post-webaccounts.md
-        - name: List web accounts
-          href: api/profile-list-webaccounts.md
-        - name: Create website
-          href: api/profile-post-websites.md
-        - name: List websites
-          href: api/profile-list-websites.md
-        - name: Account information
-          href: resources/useraccountinformation.md
-          items:
-          - name: Get
-            href: api/useraccountinformation-get.md
-        - name: Anniversary
-          href: resources/personanniversary.md
-          items:
-          - name: Get
-            href: api/personanniversary-get.md
-          - name: Update
-            href: api/personanniversary-update.md
-          - name: Delete
-            href: api/personanniversary-delete.md
-        - name: Educational activity
-          href: resources/educationalactivity.md
-          items:
-          - name: Get
-            href: api/educationalactivity-get.md
-          - name: Update
-            href: api/educationalactivity-update.md
-          - name: Delete
-            href: api/educationalactivity-delete.md
-        - name: Email address
-          href: resources/itememail.md
-          items:
-          - name: Get
-            href: api/itememail-get.md
-          - name: Update
-            href: api/itememail-update.md
-          - name: Delete
-            href: api/itememail-delete.md
-        - name: Interests
-          href: resources/personinterest.md
-          items:
-          - name: Get
-            href: api/personinterest-get.md
-          - name: Update
-            href: api/personinterest-update.md
-          - name: Delete
-            href: api/personinterest-delete.md
-        - name: Languages
-          href: resources/languageproficiency.md
-          items:
-          - name: Get
-            href: api/languageproficiency-get.md
-          - name: Update
-            href: api/languageproficiency-update.md
-          - name: Delete
-            href: api/languageproficiency-delete.md
-        - name: Phones
-          href: resources/itemphone.md
-          items:
-          - name: Get
-            href: api/itemphone-get.md
-          - name: Update
-            href: api/itemphone-update.md
-          - name: Delete
-            href: api/itemphone-delete.md
-        - name: Positions
-          href: resources/workposition.md
-          items:
-          - name: Get
-            href: api/workposition-get.md
-          - name: Update
-            href: api/workposition-update.md
-          - name: Delete
-            href: api/workposition-delete.md
-        - name: Projects
-          href: resources/projectparticipation.md
-          items:
-          - name: Get
-            href: api/projectparticipation-get.md
-          - name: Update
-            href: api/projectparticipation-update.md
-          - name: Delete
-            href: api/projectparticipation-delete.md
-        - name: Skills
-          href: resources/skillproficiency.md
-          items:
-          - name: Get
-            href: api/skillproficiency-get.md
-          - name: Update
-            href: api/skillproficiency-update.md
-          - name: Delete
-            href: api/skillproficiency-delete.md
-        - name: Web accounts
-          href: resources/webaccount.md
-          items:
-          - name: Get
-            href: api/webaccount-get.md
-          - name: Update
-            href: api/webaccount-update.md
-          - name: Delete
-            href: api/webaccount-delete.md
-        - name: Websites
-          href: resources/personwebsite.md
-          items:
-          - name: Get
-            href: api/personwebsite-get.md
-          - name: Update
-            href: api/personwebsite-update.md
-          - name: Delete
-            href: api/personwebsite-delete.md
     - name: Tasks and plans
       displayName: Planner
       items:
