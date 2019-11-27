@@ -17,7 +17,7 @@ The context associated with an incoming call.
 
 | Property              | Type                          | Description                                                             |
 |:----------------------|:------------------------------|:------------------------------------------------------------------------|
-| observedParticipantId | String                        | The id of the participant that is being observed. Read-only.            |
+| observedParticipantId | String                        | The id of the participant that is under observation. Read-only.         |
 | onBehalfOf            | [identitySet](identityset.md) | The identity that the call is happening on behalf of.                   |
 | sourceParticipantId   | String                        | The id of the participant that triggered the incoming call. Read-only.  |
 | transferor            | [identitySet](identityset.md) | The identity that transferred the call.                                 |

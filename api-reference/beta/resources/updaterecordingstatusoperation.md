@@ -1,6 +1,6 @@
 ---
 title: "updateRecordingStatusOperation resource type"
-description: "The updateRecordingStatus operation to obtain the result of the updateRecordingStatus action."
+description: "Describes the response format of an update recording status action."
 author: "VinodRavichandran"
 localization_priority: Normal
 ms.prod: "cloud-communications"
@@ -11,7 +11,7 @@ doc_type: resourcePageType
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-This resource type is used to describe the response format for the [updateRecordingStatus](../api/call-updaterecordingstatus.md) API.
+Describes the response format of an update recording status action.
 
 ## Properties
 
