@@ -89,6 +89,7 @@ mgt-people-picker {
 | --- | --- | --- |
 | `loading` | `null`: no data | The template used to render the state of picker while request to graph is being made. |
 | `error` | `null`: no data| The template used if user search returns no users |
+| `selected-user` | `person`: Microsoft graph user| The template used if user search returns no users |
 
 The following examples shows how to use the `error` template.
 
