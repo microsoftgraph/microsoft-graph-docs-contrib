@@ -3,7 +3,7 @@ title: "Create connection"
 description: "Use this API to create a new externalConnection."
 localization_priority: Normal
 author: "snlraju-msft"
-ms.prod: ""
+ms.prod: "search"
 doc_type: "apiPageType"
 ---
 
