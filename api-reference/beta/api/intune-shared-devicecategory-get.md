@@ -25,7 +25,9 @@ One of the following permissions is required to call this API. To learn more, in
 | &nbsp; &nbsp; **Device management** | DeviceManagementManagedDevices.ReadWrite.All, DeviceManagementManagedDevices.Read.All|
 | &nbsp; &nbsp; **Onboarding** | DeviceManagementManagedDevices.ReadWrite.All, DeviceManagementManagedDevices.Read.All|
 |Delegated (personal Microsoft account)|Not supported.|
-|Application|Not supported.|
+|Application||
+| &nbsp; &nbsp; **Device management** | DeviceManagementManagedDevices.ReadWrite.All, DeviceManagementManagedDevices.Read.All|
+| &nbsp; &nbsp; **Onboarding** | DeviceManagementManagedDevices.ReadWrite.All, DeviceManagementManagedDevices.Read.All|
 
 ## HTTP Request
 
@@ -97,6 +99,12 @@ Content-Length: 211
   }
 }
 ```
+
+
+
+
+
+
 
 
 

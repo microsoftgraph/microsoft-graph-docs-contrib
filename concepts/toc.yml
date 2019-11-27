@@ -13,6 +13,7 @@ items:
       - name: Services in Microsoft Graph
         href: overview-major-services.md
       - name: What's new
+        expanded: true
         items:
           - name: What's new highlights
             href: whats-new-overview.md
@@ -84,6 +85,10 @@ items:
             href: findmeetingtimes-example.md
           - name: Get free/busy schedule
             href: outlook-get-free-busy-schedule.md
+          - name: Propose new meeting times (preview)
+            href: outlook-calendar-meeting-proposals.md
+          - name: Organize or attend online meetings (preview)
+            href: outlook-calendar-online-meetings.md
           - name: Schedule recurring events
             href: outlook-schedule-recurring-events.md
           - name: Get shared events
@@ -138,7 +143,10 @@ items:
         displayname: Dynamics, Dynamics 365 Business Central
       - name: Identity and access
         href: azuread-identity-access-management-concept-overview.md
-        displayName: Azure AD, Microsoft identity platform
+        displaName: Azure AD, Microsoft identity platform
+        items:
+          - name: Information Protection        
+            href: information-protection-overview.md
       - name: Mail
         displayName: Outlook, Outlook mail
         items:
@@ -152,6 +160,8 @@ items:
             href: outlook-share-messages-folders.md
           - name: Send mail from another user
             href: outlook-send-mail-from-other-user.md
+          - name: Attach large files (preview)
+            href: outlook-large-attachments.md
           - name: Organize messages
             href: outlook-organize-messages.md
           - name: Immutable ID
@@ -221,6 +231,26 @@ items:
             href: outlook-immutable-id.md
       - name: Reports
         href: reportroot-concept-overview.md
+      - name: Search (preview)
+        items:
+          - name: Overview
+            href: search-concept-overview.md
+          - name: Query
+            items:
+              - name: Search messages
+                href: search-concept-messages.md
+              - name: Search events
+                href: search-concept-events.md
+              - name: Search files
+                href: search-concept-files.md
+              - name: Search connectors
+                href: search-concept-custom-types.md
+          - name: Index
+            items:
+              - name: Manage connections
+                href: search-index-manage-connections.md
+              - name: Manage items
+                href: search-index-manage-items.md
       - name: Security
         items:
           - name: Overview
@@ -236,7 +266,7 @@ items:
       - name: Sites and lists
         href: sharepoint-concept-overview.md
         displayName: SharePoint, OneDrive, OneDrive for Business, OneDrive business, OneDrive personal
-      - name: Social and workplace intelligence
+      - name: People and workplace intelligence
         items:
           - name: Overview
             href: social-intel-concept-overview.md
@@ -389,7 +419,9 @@ items:
             href: sdks/create-client.md
           - name: Choose an authentication provider
             href: sdks/choose-authentication-providers.md
-      - name: Use the toolkit (preview)
+          - name: Create requests
+            href: sdks/create-requests.md
+      - name: Use the toolkit
         items:
           - name: Toolkit overview
             href: toolkit/overview.md
@@ -407,6 +439,8 @@ items:
                 href: toolkit/components/tasks.md
               - name: People-Picker
                 href: toolkit/components/people-picker.md
+              - name: Person-Card
+                href: toolkit/components/person-card.md
           - name: Providers
             items:
               - name: Using the providers

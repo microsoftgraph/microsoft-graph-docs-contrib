@@ -43,7 +43,8 @@ This resource supports:
 |[List contactFolders](../api/user-list-contactfolders.md) |[contactFolder](contactfolder.md) collection| Get the contact folder collection in the default Contacts folder of the signed-in user.|
 |[Create contactFolder](../api/user-post-contactfolders.md) |[contactFolder](contactfolder.md)| Create a new ContactFolder by posting to the contactFolders collection.|
 |[List directReports](../api/user-list-directreports.md) |[directoryObject](directoryobject.md) collection| Get the users and contacts that report to the user from the directReports navigation property.|
-|[List manager](../api/user-list-manager.md) |[directoryObject](directoryobject.md) | Get the user or contact that is this user's manager from the manager navigation property.|
+|[List manager](../api/user-list-manager.md) |[directoryObject](directoryobject.md) | Get the user or organizational contact that is this user's manager from the manager navigation property.|
+|[Assign manager](../api/user-post-manager.md) |[directoryObject](directoryobject.md) | Assign a user or an organizational contact as this user's manager.|
 |[List memberOf](../api/user-list-memberof.md) |[directoryObject](directoryobject.md) collection| Get the groups and directory roles that the user is a direct member of from the memberOf navigation property.|
 |[List transitive memberOf](../api/user-list-transitivememberof.md) |[directoryObject](directoryobject.md) collection| List the groups and directory roles that the user is a member of. This operation is transitive and includes the groups that the user is a nested member of. |
 |[List ownedDevices](../api/user-list-owneddevices.md) |[directoryObject](directoryobject.md) collection| Get the devices that are owned by the user from the ownedDevices navigation property.|
@@ -53,6 +54,7 @@ This resource supports:
 |[assignLicense](../api/user-assignlicense.md)|[user](user.md)|Add or remove subscriptions for the user. You can also enable and disable specific plans associated with a subscription.|
 |[List licenseDetails](../api/user-list-licensedetails.md) |[licenseDetails](licensedetails.md) collection| Get a licenseDetails object collection.|
 |[checkMemberGroups](../api/user-checkmembergroups.md)|String collection|Check for membership in a list of groups. The check is transitive.|
+|[checkMemberObjects](../api/user-checkmemberobjects.md)|String collection|Check for membership in a list of group, directory role, or administrative unit objects. The function is transitive.|
 |[delta](../api/user-delta.md)|user collection| Get incremental changes for users. |
 |[getMemberGroups](../api/user-getmembergroups.md)|String collection|Return all the groups that the user is a member of. The check is transitive.|
 |[getMemberObjects](../api/user-getmemberobjects.md)|String collection| Return all of the groups and directory roles that the user is a member of. The check is transitive. |
@@ -92,6 +94,7 @@ This resource supports:
 |interests|String collection|A list for the user to describe their interests.|
 |isResourceAccount|Boolean| **true** if the user is a resource account; otherwise, **false**. Null value should be considered **false**.|
 |jobTitle|String|The user’s job title. Supports $filter.|
+|lastPasswordChangeDateTime| DateTimeOffset | The time when this Azure AD user last changed their password. The date and time information uses ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 would look like this: '2014-01-01T00:00:00Z'|
 |legalAgeGroupClassification|String| Used by enterprise applications to determine the legal age group of the user. This property is read-only and calculated based on `ageGroup` and `consentProvidedForMinor` properties. Allowed values: `null`, `minorWithOutParentalConsent`, `minorWithParentalConsent`, `minorNoParentalConsentRequired`, `notAdult` and `adult`. Refer to the [legal age group property definitions](#legal-age-group-property-definitions) for further information.)|
 |licenseAssignmentStates|[licenseAssignmentState](licenseassignmentstate.md) collection|State of license assignments for this user. Read-only.|
 |mail|String|The SMTP address for the user, for example, "jeff@contoso.onmicrosoft.com". Read-Only. Supports $filter.|
@@ -392,6 +395,7 @@ Here is a JSON representation of the resource
   "jobTitle": "string",
   "legalAgeGroupClassification": "string",
   "licenseAssignmentStates": [{"@odata.type": "microsoft.graph.licenseAssignmentState"}],
+  "lastPasswordChangeDateTime": "String (timestamp)",
   "mail": "string",
   "mailboxSettings": {"@odata.type": "microsoft.graph.mailboxSettings"},
   "mailNickname": "string",

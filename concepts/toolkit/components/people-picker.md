@@ -27,7 +27,7 @@ By default, the `mgt-people-picker` component fetches events from the `/me/peopl
 
 | Property | Attribute | Description                                                                                                                                                                            |
 | -------- | --------- | -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| showMax  | show-max  | An integer value to indicate the maximum number of people to show. the default value is 6.                                                                                             |
+| showMax  | show-max  | A number value to indicate the maximum number of people to show. the default value is 6.                                                                                             |
 | people   | people    | An array of people to get or set the list of people rendered by the component. Use this property to access the people loaded by the component. Set this value to load your own people. |
 | group    | group     | A string value that belongs to a Microsoft Graph defined group for further filtering of the search results.                                                                            |
 

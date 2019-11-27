@@ -1,7 +1,7 @@
 ---
 title: "Create userInstallStateSummary"
 description: "Create a new userInstallStateSummary object."
-author: "tfitzmac"
+author: "davidmu1"
 localization_priority: Normal
 ms.prod: "Intune"
 doc_type: apiPageType
@@ -89,6 +89,7 @@ Content-Length: 238
   "notInstalledDeviceCount": 7
 }
 ```
+
 
 
 
