@@ -10,6 +10,8 @@ ms.prod: "search"
 
 You can use the Microsoft Search API to search files stored in SharePoint or OneDrive. The Microsoft Search API uses a relevance model that makes use of signals from Microsoft Graph about users' relationships and activities. This enables you to return and promote the content that users care about, in a file search experience that is consistent with the **Files** tab that lists search results in SharePoint. 
 
+[!INCLUDE [search-api-preview-signup](../includes/search-api-preview-signup.md)]
+
 The API can also surface external files exposed via the [externalFile](/graph/api/resources/externalfile?view=graph-rest-beta) resource.
 
 ## Search SharePoint or OneDrive files
@@ -26,72 +28,71 @@ In order to be valid, properties restriction should specify a valid, queryable m
 #### Request
 
 ```HTTP
-POST /search/query
-Content-Type: application/json
+POST /search/query
+Content-Type: application/json
 ```
 
-```Json
+```json
 {
-  "requests": [
-    {
-       "entityTypes": ["microsoft.graph.driveItem"],
-       "query": {
-        "query_string": {
-          "query": "contoso"
-        }
-      },
-      "from": 0,
-      "size": 25,
-    }
-  ]
+  "requests": [
+    {
+      "entityTypes": [
+        "microsoft.graph.driveItem"
+      ],
+      "query": {
+        "query_string": {
+          "query": "contoso"
+        }
+      },
+      "from": 0,
+      "size": 25
+    }
+  ]
 }
 ```
 
 #### Response
 
 <!---TODO nmoreau team Include one example of externalItem response.-->
-```Json
+```json
 {
-
   "@odata.context": "https://graph.microsoft.com/beta/$metadata#search",
   "value": [
-      {
-          "searchTerms": [
-              "test"
-          ],
-          "hitsContainers": [
-              {
-                  "total": 350,
-                  "moreResultsAvailable": true,
-                  "hits": [
-                      {
-                          "_id": "FlULeN/ui/1GjLx1rUfio5UAAEl",
-                          "_score": 1,
-                          "_sortField": "Relevance",
-                          "_summary": "<c0>Contoso</c0> Detailed Design <ddd/>",
-                          "_source": {
-                              "@odata.type": "#microsoft.graph.driveItem",
-                              "createdDateTime": "2019-06-10T06:37:43Z",
-                              "lastModifiedDateTime": "2019-06-10T06:37:43Z",
-                              "name": "web_part_test_long Notebook",
-                              "webUrl": "https://contoso.sharepoint.com/sites/contoso-team/contoso-designs.docx",
-                              "lastModifiedBy": {
-                                  "user": {
-                                      "displayName": "Richard Mayer"
-                                  }
-                              },
-                              "fileSystemInfo": {
-                                  "createdDateTime": "2019-06-10T06:37:43Z",
-                                  "lastModifiedDateTime": "2019-06-10T06:37:43Z"
-                              }
-                          }
-                      },
-                      {
-                      }
-                  ]
+    {
+      "searchTerms": [
+        "test"
+      ],
+      "hitsContainers": [
+        {
+          "total": 350,
+          "moreResultsAvailable": true,
+          "hits": [
+            {
+              "_id": "FlULeN/ui/1GjLx1rUfio5UAAEl",
+              "_score": 1,
+              "_sortField": "Relevance",
+              "_summary": "<c0>Contoso</c0> Detailed Design <ddd/>",
+              "_source": {
+                "@odata.type": "#microsoft.graph.driveItem",
+                "createdDateTime": "2019-06-10T06:37:43Z",
+                "lastModifiedDateTime": "2019-06-10T06:37:43Z",
+                "name": "web_part_test_long Notebook",
+                "webUrl": "https://contoso.sharepoint.com/sites/contoso-team/contoso-designs.docx",
+                "lastModifiedBy": {
+                  "user": {
+                    "displayName": "Richard Mayer"
+                  }
+                },
+                "fileSystemInfo": {
+                  "createdDateTime": "2019-06-10T06:37:43Z",
+                  "lastModifiedDateTime": "2019-06-10T06:37:43Z"
+                }
               }
+            }
           ]
-      }
+        }
+      ]
+    }
   ]
 }
 ```
@@ -100,30 +101,34 @@ Content-Type: application/json
 
 The [file share connector](/MicrosoftSearch/file-share-connector) is available in Microsoft Search by default. You can use it to index files available on a file share. You can use the query API to query all external files.
 
+<!-- markdownlint-disable MD024 -->
 ### Example
+
 The following example returns all configured external files for the tenant, and sorts the results by relevance.
 
 #### Request
 
 ```HTTP
-POST /search/query
-Content-Type: application/json
+POST /search/query
+Content-Type: application/json
 ```
 
 ```json
 {
-  "requests": [
-    {
-       "entityTypes": ["microsoft.graph.externalFile"],
-       "query": {
-        "query_string": {
-          "query": "contoso"
-        }
-      },
-      "from": 0,
-      "size": 25,
-    }
-  ]
+  "requests": [
+    {
+      "entityTypes": [
+        "microsoft.graph.externalFile"
+      ],
+      "query": {
+        "query_string": {
+          "query": "contoso"
+        }
+      },
+      "from": 0,
+      "size": 25
+    }
+  ]
 }
 ```
 
@@ -131,38 +136,41 @@ Content-Type: application/json
 
 ```json
 {
-    "@odata.context": "https://graph.microsoft.com/beta/$metadata#search",
-    "value": [{
-        "searchTerms": [
-            "contoso"
-        ],
-        "hitsContainers": [{
-            "total": 4,
-            "moreResultsAvailable": true,
-            // Hits represent the search results
-            "hits": [
-                     {
-                     "_id": "FsHvoeTuRRVLnuEZLEVBfSQAAWTp",
-                     "_score": 1,
-                     "_sortField": "Relevance",
-                     "_source": {
-                            "@odata.type": "#microsoft.graph.externalFile",
-                            "id": "FsHvoeTuRRVLnuEZLEVBfSQAAWTp",
-                            "extension": "pptx",
-                            "name": "Contoso-Overview.pptx",
-                            "lastModifiedTime": "2018-05-09T04:01:14Z",
-                            "modifiedBy": "Baala Vedantam",
-                            "title": "Contoso Overview 2018",
-                            "url": "file://fileshare01/External Presentations/Contoso-Overview.pptx",
-                            }
-                     }
-                     ,
-                     {
-                            ///Another searchHit
-                     }
-            ]
-        }]
-    }]
+  "@odata.context": "https://graph.microsoft.com/beta/$metadata#search",
+  "value": [
+    {
+      "searchTerms": [
+        "contoso"
+      ],
+      "hitsContainers": [
+        {
+          "total": 4,
+          "moreResultsAvailable": true,
+          // Hits represent the search results
+          "hits": [
+            {
+              "_id": "FsHvoeTuRRVLnuEZLEVBfSQAAWTp",
+              "_score": 1,
+              "_sortField": "Relevance",
+              "_source": {
+                "@odata.type": "#microsoft.graph.externalFile",
+                "id": "FsHvoeTuRRVLnuEZLEVBfSQAAWTp",
+                "extension": "pptx",
+                "name": "Contoso-Overview.pptx",
+                "lastModifiedTime": "2018-05-09T04:01:14Z",
+                "modifiedBy": "Baala Vedantam",
+                "title": "Contoso Overview 2018",
+                "url": "file://fileshare01/External Presentations/Contoso-Overview.pptx"
+              }
+            },
+            {
+              //Another searchHit
+            }
+          ]
+        }
+      ]
+    }
+  ]
 }
 ```
 
@@ -179,24 +187,27 @@ The following example returns all configured **externalFile** and **driveItem** 
 ### Request
 
 ```HTTP
-POST https://graph.microsoft.com/beta/search/query
-Content-Type: application/json
+POST https://graph.microsoft.com/beta/search/query
+Content-Type: application/json
 ```
 
 ```json
 {
-  "requests": [
-    {
-       "entityTypes": ["microsoft.graph.driveItem","microsoft.graph.externalFile"],
-       "query": {
-        "query_string": {
-          "query": "contoso"
-        }
-      },
-      "from": 0,
-      "size": 25,
-    }
-  ]
+  "requests": [
+    {
+      "entityTypes": [
+        "microsoft.graph.driveItem",
+        "microsoft.graph.externalFile"
+      ],
+      "query": {
+        "query_string": {
+          "query": "contoso"
+        }
+      },
+      "from": 0,
+      "size": 25
+    }
+  ]
 }
 ```
 
@@ -207,3 +218,4 @@ You cannot scope a query to a particular connection ID.
 ## Next steps
 
 - [Use the Microsoft Search API to query data](/graph/api/resources/search-api-overview?view=graph-rest-beta)
+

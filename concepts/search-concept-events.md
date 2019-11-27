@@ -10,6 +10,8 @@ ms.prod: "search"
 
 You can use the Microsoft Search API to search for events in a user’s primary calendar. The user identity for the search is based on the auth token.
 
+[!INCLUDE [search-api-preview-signup](../includes/search-api-preview-signup.md)]
+
 ## Example
 
 ### Request
@@ -18,23 +20,25 @@ This example searches in the user's calendar for the keyword "contoso", and will
 
 ```HTTP
 POST https://graph.microsoft.com/beta/search/query
-Content-Type: application/json
+Content-Type: application/json
 ```
 
 ```json
 {
-  "requests": [
-    {
-       "entityTypes": ["microsoft.graph.event"],
-       "query": {
-        "query_string": {
-          "query": "contoso"
-        }
-      },
-      "from": 0,
-      "size": 25
-    }
-  ]
+  "requests": [
+    {
+      "entityTypes": [
+        "microsoft.graph.event"
+      ],
+      "query": {
+        "query_string": {
+          "query": "contoso"
+        }
+      },
+      "from": 0,
+      "size": 25
+    }
+  ]
 }
 ```
 
