@@ -40,7 +40,7 @@ POST /external/connections
 
 ## Request body
 
-In the request body, supply a JSON representation of a [externalConnection](../resources/externalconnection.md) object.
+In the request body, supply a JSON representation of an [externalConnection](../resources/externalconnection.md) object.
 
 ## Response
 
