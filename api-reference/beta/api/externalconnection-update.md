@@ -3,7 +3,7 @@ title: "Update externalConnection"
 description: "Update the properties of an externalConnection."
 localization_priority: Normal
 author: "snlraju-msft"
-ms.prod: ""
+ms.prod: "search"
 doc_type: "apiPageType"
 ---
 
