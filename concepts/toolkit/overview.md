@@ -196,3 +196,9 @@ Finally, use the component as you normally would in your template.
 ```html
 <mgt-person [personDetails]="person" show-name></mgt-person>
 ```
+## Browser Support
+
+
+| ![IE/ Edge](images/edgeIcon.png)<br>IE / Edge | ![Firefox](images/firefoxIcon.png)<br>Firefox | ![Chrome](images/chromeIcon.png)<br>Chrome | ![Opera](images/operaIcon.png)<br>Opera |
+| --------- | --------- | --------- | --------- | --------- | --------- | --------- |
+| Edge, Dev|  Latest Version| Latest Version| Lastest Version|
