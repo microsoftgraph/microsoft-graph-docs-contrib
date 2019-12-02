@@ -29,7 +29,13 @@ For details about known issues with Microsoft Graph APIs, see [Known issues](kno
  
 | **Change type** | **Version**   | **Description**                          |
 | :-------------- | :------------ | :--------------------------------------- |
-| Addition | beta | Added [notifications](/graph/api/subscription-post-subscriptions) for new and edited channel messages, and new and edited chat messages.
+| Addition | beta | Added [notifications](/graph/api/subscription-post-subscriptions) for new and edited channel messages, and new and edited chat messages. |
+
+### Identity and access (Azure AD) | Information protection
+
+| **Change type** | **Version** | **Description**              |
+| :-------------- | :---------- | :--------------------------------------- |
+| Addition        | beta        | Added [create](/graph/api/informationprotection-post-threatassessmentrequests?view=graph-rest-beta), [get](/graph/api/threatassessmentrequest-get?view=graph-rest-beta) and [list](/graph/api/informationprotection-list-threatassessmentrequests?view=graph-rest-beta) APIs to manage [threatAssessmentRequest](/graph/api/resources/threatAssessmentRequest?view=graph-rest-beta) resources. |
 
 ## November 2019
 
