@@ -75,7 +75,7 @@ The following properties can also be used with the data context object in your t
 ```html
 <mgt-person>
   <mgt-person-card>
-    <template data-type="$parent">
+    <template data-type="additional-details">
       <span data-for="language in languages">
         {{ language.displayName }}<span data-if="$index < languages.length - 1">, </span>
       </span>
