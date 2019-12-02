@@ -36,9 +36,12 @@ POST /communications/calls/{id}/keepAlive
 Do not supply a request body for this method.
 
 ## Response
-This method returns `200 OK` response code.
+This method returns a `200 OK` HTTP response code.
 
-###### Request
+## Examples
+
+### Request
+The following is an example of a request.
 
 <!-- {
   "blockType": "request",
@@ -50,8 +53,8 @@ POST https://graph.microsoft.com/beta/communications/calls/2e1a0b00-2db4-4022-95
 Authorization: Bearer <Token>
 ```
 
-###### Response
-
+### Response
+The following example shows the response.
 <!-- {
   "blockType": "response",
   "name": "keep-alive",
