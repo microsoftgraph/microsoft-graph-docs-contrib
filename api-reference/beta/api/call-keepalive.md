@@ -9,7 +9,7 @@ doc_type: apiPageType
 
 # call: keepAlive
 
-Make a request to this API every 15 minutes to ensure that an ongoing call stays alive. A call that has not received this request within this time interval will be considered to be inactive and then subsequently ended.
+A call that does not receive this request within the time interval (15 minutes) is considered inactive and will be subsequently ended.
 
 ## Permissions
 One of the following permissions may be required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
@@ -50,7 +50,6 @@ The following is an example of a request.
 
 ```http
 POST https://graph.microsoft.com/beta/communications/calls/2e1a0b00-2db4-4022-9570-243709c565ab/keepAlive
-Authorization: Bearer <Token>
 ```
 
 ### Response
