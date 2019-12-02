@@ -25,12 +25,12 @@ If the number of people to display exceeds the `show-max` value, not all people 
 
 By default, the `mgt-people-picker` component fetches events from the `/me/people` endpoint. Use the following attributes to change this behavior.
 
-| Property | Attribute | Description                                                                                                                                                                            |
+| Attribute | Property | Description                                                                                                                                                                            |
 | -------- | --------- | -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| showMax  | show-max  | A number value to indicate the maximum number of people to show. the default value is 6.                                                                                             |
+| show-max | showMax   | A number value to indicate the maximum number of people to show. the default value is 6.                                                                                             |
 | people   | people    | An array of people to get or set the list of people rendered by the component. Use this property to access the people loaded by the component. Set this value to load your own people. |
 | group    | group     | A string value that belongs to a Microsoft Graph defined group for further filtering of the search results.                                                                            |
-| selectedPeople    | selected-people    | An array of type  `person`, representing people selected in the component. Set this value to choose selected people by default.|
+|  selected-people  | selectedPeople     | An array of type  `person`, representing people selected in the component. Set this value to choose selected people by default.|
 
 The following is a `show-max` example.
 
