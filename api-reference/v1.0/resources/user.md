@@ -21,12 +21,12 @@ This resource supports:
 
 | Method       | Return Type  |Description|
 |:---------------|:--------|:----------|
-| [Create user](../api/user-post-users.md) | [user](user.md) | Create a new user object. |
-| [Delete user](../api/user-delete.md) | None | Delete user object. |
-| [Get delta](../api/user-delta.md) | [user](user.md) collection | Get incremental changes for users. |
-| [Get user](../api/user-get.md) | [user](user.md) | Read properties and relationships of user object. |
 | [List users](../api/user-list.md) | [user](user.md) collection | Get a list of user objects. |
+| [Create user](../api/user-post-users.md) | [user](user.md) | Create a new user object. |
+| [Get user](../api/user-get.md) | [user](user.md) | Read properties and relationships of user object. |
+| [Delete user](../api/user-delete.md) | None | Delete user object. |
 | [Update user](../api/user-update.md) | [user](user.md) | Update user object. |
+| [Get delta](../api/user-delta.md) | [user](user.md) collection | Get incremental changes for users. |
 | **Calendar** |||
 | [Create calendar](../api/user-post-calendars.md) | [calendar](calendar.md) | Create a new Calendar by posting to the calendars collection. |
 | [Create calendarGroup](../api/user-post-calendargroups.md) | [calendarGroup](calendargroup.md) | Create a new CalendarGroup by posting to the calendarGroups collection. |
