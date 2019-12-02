@@ -18,7 +18,7 @@ This contains information regarding a user's presence including their availabili
 | Method                                                            | Return Type                                       | Description                                  |
 |:------------------------------------------------------------------|:--------------------------------------------------|:---------------------------------------------|
 | [Get presence](../api/get-presence.md)     | [presence](../resources/presence.md)     | Get a user's presence information
-| [Get presence for multiple users](../api/get-presence-multiple-users.md)    |  [presence](../resources/presence.md) collection     |  Get the presence information for multiple users.      |
+| [Get presence of multiple users](../api/get-presence-multiple-users.md)    |  [presence](../resources/presence.md) collection     |  Get the presence information of multiple users.      |
 
 
 ## Properties
