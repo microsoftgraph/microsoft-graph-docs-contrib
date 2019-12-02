@@ -441,6 +441,8 @@ items:
                 href: toolkit/components/people-picker.md
               - name: Person-Card
                 href: toolkit/components/person-card.md
+              - name: Get
+                href: toolkit/components/get.md
           - name: Providers
             items:
               - name: Using the providers

@@ -25,12 +25,12 @@ If the number of people to display exceeds the `show-max` value, not all people 
 
 By default, the `mgt-people-picker` component fetches events from the `/me/people` endpoint. Use the following attributes to change this behavior.
 
-| Property | Attribute | Description                                                                                                                                                                            |
+| Attribute | Property | Description                                                                                                                                                                            |
 | -------- | --------- | -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| showMax  | show-max  | A number value to indicate the maximum number of people to show. the default value is 6.                                                                                             |
+| show-max | showMax   | A number value to indicate the maximum number of people to show. the default value is 6.                                                                                             |
 | people   | people    | An array of people to get or set the list of people rendered by the component. Use this property to access the people loaded by the component. Set this value to load your own people. |
 | group    | group     | A string value that belongs to a Microsoft Graph defined group for further filtering of the search results.                                                                            |
-| selectedPeople    | selected-people    | An array of type  `person`, representing people selected in the component. Set this value to choose selected people by default.|
+|  selected-people  | selectedPeople     | An array of type  `person`, representing people selected in the component. Set this value to choose selected people by default.|
 
 The following is a `show-max` example.
 
@@ -58,7 +58,7 @@ Selected People data is accessible to populate via the following methods:
 
 
 
-2. Using the method `selectUsersById()` which accepts an array of Microsoft graph [user id](https://docs.microsoft.com/en-us/graph/api/resources/users?view=graph-rest-1.0) to find associated user details for selection.
+2. Using the method `selectUsersById()` which accepts an array of Microsoft graph [user id](https://docs.microsoft.com/graph/api/resources/users?view=graph-rest-1.0) to find associated user details for selection.
 
 ***If no user is found for the provided `id`, no data will be rendered for that specific `id`**
 
@@ -81,14 +81,35 @@ mgt-people-picker {
 }
 ```
 
+## Templates
+
+ `mgt-people-picker` supports several [templates](../templates.md) that you can use to replace certain parts of the component. To specify a template, include a `<template>` element inside a component and set the `data-type` value to one of the following.
+
+| Data type | Data context | Description |
+| --- | --- | --- |
+| `loading` | `null`: no data | The template used to render the state of picker while request to graph is being made. |
+| `error` | `null`: no data| The template used if user search returns no users. |
+| `selected-person` | `person`: The person details object| The template to render selected people. |
+| `person` | `person`: The person details object| The template to render people in the dropdown. |
+
+The following examples shows how to use the `error` template.
+
+```html
+<mgt-people-picker>
+  <template data-type="error">
+    <p>Sorry, no people were found</p>
+  </template>
+</mgt-people-picker>
+```
+
 ## Microsoft Graph permissions
 
 This component uses the following Microsoft Graph APIs and permissions.
 
 | API                                                                                                              | Permission  |
 | ---------------------------------------------------------------------------------------------------------------- | ----------- |
-| [/me/people](https://docs.microsoft.com/en-us/graph/api/user-list-people?view=graph-rest-1.0)                    | People.Read |
-| [/groups/\${groupId}/members](https://docs.microsoft.com/en-us/graph/api/group-list-members?view=graph-rest-1.0) | People.Read |
+| [/me/people](https://docs.microsoft.com/graph/api/user-list-people?view=graph-rest-1.0)                    | People.Read |
+| [/groups/\${groupId}/members](https://docs.microsoft.com/graph/api/group-list-members?view=graph-rest-1.0) | People.Read |
 
 ## Authentication
 
