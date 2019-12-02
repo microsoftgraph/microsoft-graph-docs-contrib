@@ -31,6 +31,7 @@ Additionally, a user is able to assign singular or multiple Microsoft Graph user
 | target-id="planner_id/folder_id"| targetId | A string id to lock the tasks interface to the provided planner or folder ID. |
 | target-bucket-id="bucket_id" |targetBucketId  | A string ID to lock the tasks interface to the provided bucket ID (Planner Data-Source Only). |
 | group-id | groupId  | A string ID to lock the tasks interface to the group ID (Planner Data-Source Only). |
+| N/A | isNewTaskVisible  | Determines if new task view is visible at render. |
 
 The following is an example.
 
@@ -102,8 +103,8 @@ The `tasks` component supports several [templates](../templates.md) that allow y
 
 | Data type     | Data context              | Description                                                       |
 | ---------     | ------------------------- | ----------------------------------------------------------------- |
-| task     | task: contains all details pertaining to task | replaces the whole default task. |
-| task-details | task: contains all details pertaining to task | template replaces the details section of the task. |
+| task     | task: a planner or to-do task object | replaces the whole default task. |
+| task-details | task: a planner or to-do task object | template replaces the details section of the task. |
 
 The following example defines a template for the tasks component.
 

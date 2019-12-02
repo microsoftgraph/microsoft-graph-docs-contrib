@@ -30,6 +30,7 @@ By default, the `mgt-people` component fetches events from the `/me/people` endp
 | `show-max` | `showMax` | Indicate the maximum number of people to show. Default value is 3. |
 | `people` | `people` | An array of people to get or set the list of people rendered by the component. Use this property to access the people loaded by the component. Set this value to load your own people. |
 | `group-id` | `id` | retrieves people from a specific Microsoft Graph from the respective id. |
+| `user-ids` | `id` | given an array of Microsoft Graph user `ids`, the component will render these users.  |
 
 The following example sets the maximum number of people to show.
 
@@ -52,14 +53,15 @@ mgt-people {
 
 ## Templates
 
-The `mgt-people` supports several [templates](../templates.md) that you can use to replace certain parts of the component. To specify a template, include a `<template>` element inside a component and set the `data-type` value to one of the following.
+The `mgt-people` supports several [templates](../templates.md) that you can use to replace certain parts of the component. To specify a template, include a `<template>` element inside a component and set the `data-type` vue to one of the following.
 
 | Data type | Data context | Description |
 | --- | --- | --- |
 | `default` | `people`: list of person objects | The default template replaces the entire component with your own. |
 | `person` | `person`: person object | The template used to render each person. |
 | `overflow` | `people`: list of person objects <br> `max`: number of shown people <br> `extra`: number of extra people | The template used to render the number beyond the max to the right of the list of people. |
-| `no-data` | No data context is passed | The template used when no people are available. |
+| `no-people` | No data context is passed | The template used when no people are available from the given request. |
+| `no-data` | No data context is passed | The template used when no data is available. |
 
 The following examples shows how to use the `person` template.
 
