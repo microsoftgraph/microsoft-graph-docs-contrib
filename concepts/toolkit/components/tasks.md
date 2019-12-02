@@ -32,12 +32,20 @@ Additionally, a user is able to assign singular or multiple Microsoft Graph user
 | target-bucket-id="bucket_id" |targetBucketId  | A string ID to lock the tasks interface to the provided bucket ID (Planner Data-Source Only). |
 | group-id | groupId  | A string ID to lock the tasks interface to the group ID (Planner Data-Source Only). |
 | N/A | isNewTaskVisible  | Determines if new task view is visible at render. |
+| N/A | taskFilter  | An optional function to filter which tasks are shown to the user |
 
-The following is an example.
+The following is an example of only showing tasks from planner with id *12345* and not allowing the user to create new tasks:
 
-````html
+```html
 <mgt-tasks read-only initial-id="12345"></mgt-tasks>
-````
+```
+
+The following is an example of filtering tasks that only have *category3* set:
+
+```js
+let taskView = document.querySelector('mgt-tasks');
+taskView.taskFilter = task => task.appliedCategories.category3 === true;
+```
 
 ## Custom CSS variables
 

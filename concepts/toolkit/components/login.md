@@ -54,10 +54,12 @@ mgt-login {
   --margin: 0;
   --padding: 12px 20px;
   --color: #201f1e;
+  --color-hover: var(--theme-primary-color);
   --background-color: transparent;
   --background-color--hover: #edebe9;
   --popup-content-background-color: white;
-  --popup-command-font-size: 12px; }
+  --popup-command-font-size: 12px;
+  --popup-color: #201f1e;
 }
 ```
 
