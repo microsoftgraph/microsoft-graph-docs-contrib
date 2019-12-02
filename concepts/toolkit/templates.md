@@ -72,6 +72,8 @@ The following properties can also be used with the data context object in your t
 | `$index` | numerical index of item being rendered while being looped with `data-for` |
 | `$parent` | If a template is rendered inside of another template, `$parent` property allows the developer to access the parent data context. |
 
+This is an example of using the `$index` property in a data-for loop
+
 ```html
 <mgt-person>
   <mgt-person-card>
