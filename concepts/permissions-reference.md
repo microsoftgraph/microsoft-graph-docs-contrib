@@ -1178,7 +1178,7 @@ For more complex scenarios involving multiple permissions, see [Permission scena
 
 * _Presence.Read_: If you're signed in, retrieve your own presence information (`GET /me/presence`)
 * _Presence.Read.All_: Retrieve the presence information of another user (`GET /users/{id}/presence`)
-* _Presence.Read.All_: Retrieve the presence information for multiple users (`POST /communications/getPresencesByUserId`)
+* _Presence.Read.All_: Retrieve the presence information of multiple users (`POST /communications/getPresencesByUserId`)
 
 ---
 
