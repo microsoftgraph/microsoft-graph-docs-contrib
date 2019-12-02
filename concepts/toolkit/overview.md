@@ -199,6 +199,6 @@ Finally, use the component as you normally would in your template.
 ## Browser Support
 
 
-| ![IE/ Edge](images/edgeIcon.png)<br>IE / Edge | ![Firefox](images/firefoxIcon.png)<br>Firefox | ![Chrome](images/chromeIcon.png)<br>Chrome | ![Opera](images/operaIcon.png)<br>Opera |
+| ![ Edge](images/edgeIcon.png)<br>Edge | ![Internet Explorer 11](images/internetExplorerIcon.png)<br>IE 11 | ![Firefox](images/firefoxIcon.png)<br>Firefox | ![Chrome](images/chromeIcon.png)<br>Chrome | ![Chrome](images/safariIcon.png)<br>Safari | ![Opera](images/operaIcon.png)<br>Opera | ![Samsung Internet](images/samsungInternetIcon.png)<br> Samsung |
 | --------- | --------- | --------- | --------- | --------- | --------- | --------- |
-| Edge, Dev|  Latest Version| Latest Version| Lastest Version|
+| Edge, Dev| Latest Version| Latest Version| Mobile, Lastest Version| Lastest Version | Lastest Version | Lastest Version |
