@@ -23,7 +23,7 @@ One of the following permissions is required to call this API. To learn more, in
 
 >**Note:** To list the members of a hidden membership group, the Member.Read.Hidden permission is required.
 
-[!INCLUDE [limited info](../../includes/limited_info.md)]
+[!INCLUDE [limited info](../../includes/limited-info.md)]
 
 ## HTTP request
 
