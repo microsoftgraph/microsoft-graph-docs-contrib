@@ -89,7 +89,8 @@ mgt-people-picker {
 | --- | --- | --- |
 | `loading` | `null`: no data | The template used to render the state of picker while request to graph is being made. |
 | `error` | `null`: no data| The template used if user search returns no users. |
-| `selected-user` | `person`: The person details object| template to affect the user selected people.|
+| `selected-person` | `person`: The person details object| The template to render selected people. |
+| `person` | `person`: The person details object| The template to render people in the dropdown. |
 
 The following examples shows how to use the `error` template.
 

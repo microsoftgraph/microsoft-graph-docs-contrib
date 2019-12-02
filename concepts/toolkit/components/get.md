@@ -24,7 +24,7 @@ author: nmetulev
 
 #### Properties and Attributes
 
-The only required attribute is `resource`. However, you can use several properties to change the behavior.
+Developers can use several attributes to change the behavior of the component. The only required attribute is `resource`.
 
 | Attribute | Property  | Description |
 | --- | --- | --- |

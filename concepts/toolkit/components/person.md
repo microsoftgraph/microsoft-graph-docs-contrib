@@ -46,10 +46,10 @@ You can use three properties to set the person details. Use only one of the foll
 
 You can use several properties to customize the component.
 
-| Property    | Attribute    | Description                                                   |
-| ----------- | ------------ | ------------------------------------------------------------- |
-| showName  | show-name  | Set flag to display person display name - default is `false`. |
-| showEmail | show-email | Set flag to display person email - default is `false`.        |
+| Attribute    | Property   | Description                                                   |
+| -----------  | ---------- | ------------------------------------------------------------- |
+| show-name    | showName   | Set flag to display person display name - default is `false`. |
+| show-email   | showEmail  | Set flag to display person email - default is `false`.        |
 
 ## CSS custom properties
 
