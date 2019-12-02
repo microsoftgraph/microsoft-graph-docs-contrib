@@ -173,10 +173,10 @@
           href: api/user-post-users.md
         - name: Get user
           href: api/user-get.md
-        - name: Delete user
-          href: api/user-delete.md
         - name: Update user
           href: api/user-update.md
+        - name: Delete user
+          href: api/user-delete.md
         - name: Get delta
           href: api/user-delta.md
       - name: Calendar
