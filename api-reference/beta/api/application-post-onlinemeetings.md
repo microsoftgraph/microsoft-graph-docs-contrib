@@ -51,7 +51,8 @@ If successful, this method returns a `201 Created` response code and an [onlineM
 
 #### Request
 
->**Note:** Online meeting creation using the application token is deprecated. Use the /me path with a user token to create online meetings going forward.
+> [!Note]
+> Online meeting creation using the application token is deprecated. Use the /me path with a user token to create online meetings going forward.
 
 # [HTTP](#tab/http)
 <!-- {
