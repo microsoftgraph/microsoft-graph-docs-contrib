@@ -25,9 +25,9 @@ This component uses multiple [mgt-person](./person.md) controls, but it can be b
 
 By default, the `mgt-people` component fetches events from the `/me/people` endpoint with the `personType/class eq 'Person'` filter to display frequently contacted users. You can use several properties to change this behavior.
 
-| Property | Attribute | Description |
+| Attribute | Property | Description |
 | --- | --- | --- |
-| `showMax` | `show-max` | Indicate the maximum number of people to show. Default value is 3. |
+| `show-max` | `showMax` | Indicate the maximum number of people to show. Default value is 3. |
 | `people` | `people` | An array of people to get or set the list of people rendered by the component. Use this property to access the people loaded by the component. Set this value to load your own people. |
 | `group-id` | `id` | retrieves people from a specific Microsoft Graph from the respective id. |
 

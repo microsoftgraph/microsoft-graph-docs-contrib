@@ -21,16 +21,16 @@ Additionally, a user is able to assign singular or multiple Microsoft Graph user
 
 ## Properties
 
-| Property | Attribute | Description |
+| Attribute | Property | Description |
 | -- | -- | -- |
-| dataSource | data-source="todo/planner" | An enumeration to configure the data source for tasks - either Microsoft To-Do, or Microsoft Planner. Default is `planner`. |
-| readOnly | read-only | A boolean to set the task interface to be read only (no adding or removing tasks). Default is `false`. |
-| hideHeader | hide-header | A boolean to show or hide the header of the component. Default is `false`. |
-| initialId | initial-id="planner_id/folder_id" | A string id to set the initially displayed planner or folder to the provided ID. |
-| initialBucketId | initial-bucket-id="bucket_id" | A string id to set the initially displayed bucket (Planner Data-Source Only) to the provided ID. |
-| targetId | target-id="planner_id/folder_id" | A string id to lock the tasks interface to the provided planner or folder ID. |
-| targetBucketId | target-bucket-id="bucket_id" | A string ID to lock the tasks interface to the provided bucket ID (Planner Data-Source Only). |
-| groupId | group-id | A string ID to lock the tasks interface to the group ID (Planner Data-Source Only). |
+| data-source="todo/planner" | dataSource | An enumeration to configure the data source for tasks - either Microsoft To-Do, or Microsoft Planner. Default is `planner`. |
+| read-only | readOnly | A boolean to set the task interface to be read only (no adding or removing tasks). Default is `false`. |
+| hide-header | hideHeader | A boolean to show or hide the header of the component. Default is `false`. |
+| initial-id="planner_id/folder_id" | initialId | A string id to set the initially displayed planner or folder to the provided ID. |
+| initial-bucket-id="bucket_id" | initialBucketId | A string id to set the initially displayed bucket (Planner Data-Source Only) to the provided ID. |
+| target-id="planner_id/folder_id"| targetId | A string id to lock the tasks interface to the provided planner or folder ID. |
+| target-bucket-id="bucket_id" |targetBucketId  | A string ID to lock the tasks interface to the provided bucket ID (Planner Data-Source Only). |
+| group-id | groupId  | A string ID to lock the tasks interface to the group ID (Planner Data-Source Only). |
 
 The following is an example.
 
@@ -94,7 +94,7 @@ mgt-tasks {
 #### Events
 | Event | Detail | Description |
 | --- | --- | --- |
-| `taskClick` | The detail contains the respective `task` object | Fired when the user interacts via `click` on a task. |
+| `taskClick` | The detail contains the respective `task` object | Fired when the user clicks or taps on a task. |
 
 ## Templates
 

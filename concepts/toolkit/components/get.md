@@ -5,7 +5,7 @@ localization_priority: Normal
 author: nmetulev
 ---
 
-# Login component in the Microsoft Graph Toolkit
+# Get component in the Microsoft Graph Toolkit
 
 `mgt-get` allows you to make any GET query from Microsoft Graph directly in your HTML. The component does not provide a default UI and requires the developer to write a template.
 
@@ -26,14 +26,14 @@ author: nmetulev
 
 The only required attribute is `resource`. However, you can use several properties to change the behavior.
 
-| Property | Attribute | Description |
+| Attribute | Property  | Description |
 | --- | --- | --- |
 | `resource` | `resource` | The resource to get from Microsoft Graph (ex: `/me`) |
 | `scopes` | `scopes` | Optional array of strings if using the property or a comma delimited scopes if using the attribute. The component will use these scopes (with a supported provider) to ensure the user has  consented to the right permission |
 | `version` | `version` | Optional API version to use when making the GET request. Default is `v1.0`.  |
-| `maxPages` | `max-pages` | Optional number of pages (for resources that support paging). Default is 3. Setting this value to 0 will GET all pages  |
-| `response` | N/A | The raw response from Microsoft Graph  |
-| `error` | N/A | The raw error from Microsoft Graph  |
+| `max-pages` | `maxPages` | Optional number of pages (for resources that support paging). Default is 3. Setting this value to 0 will GET all pages  |
+| N/A | `response` | Read only response from Microsoft Graph  |
+| N/A |`error`| Read only error from Microsoft Graph if request was not successful |
 
 #### Events
 | Event | Detail | Description |
@@ -46,21 +46,14 @@ The `mgt-get` component supports several [templates](../templates.md) that you c
 
 | Data type | Data context | Description |
 | --- | --- | --- |
-| `default` | a raw response from Microsoft Graph | The default template is required to render the data coming from Microsoft Graph  |
-| `error` | the raw error from Microsoft Graph | This template will be used if there is an error making the request |
+| `default` | the raw response from Microsoft Graph | The default template is required to render the data coming from Microsoft Graph  |
+| `error` | the error from Microsoft Graph | This template will be used if there is an error making the request |
 | `loading` | N/A | This template is used while the request is being made |
 
 ## Microsoft Graph permissions
 
-This control will require Microsoft Graph APIs and permissions based on the `resource` given.
 
-Example:
-
-| Resource                                                                                                    | Permission     |
-| ----------------------------------------------------------------------------------------------------------- | -------------------- |
-| [/me/messages](https://docs.microsoft.com/graph/api/user-list-messages?view=graph-rest-1.0&tabs=http)                              | mail.read          |
-
-For more information Permissions, see the Microsoft Graph documentation specific to the requested [resource](https://docs.microsoft.com/graph/api/overview?view=graph-rest-1.0). 
+For more information regarding Permissions, see the Microsoft Graph [Permissions Reference](https://docs.microsoft.com/en-us/graph/permissions-reference). 
 
 ## Authentication
 

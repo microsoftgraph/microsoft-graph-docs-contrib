@@ -63,25 +63,22 @@ This format can also be used inside of attributes:
 
 > **Note:** You can also expand objects such as `{{event}}` and they will render as JSON strings. This can be useful when you're developing the templates.
 
-**Context**
+## Data Context helper properties
 
-There are also accessible properties when binding, for template context. 
+The following properties can also be used with the data context object in your templates.
 
 | Property |  Description |
 | --- | --- | --- |
 | `$index` | numerical index of item being rendered while being looped with `data-for` |
-| `$parent` | If a template is rendered inside of another template, the user is able to find data context of the parent within the child template. |
+| `$parent` | If a template is rendered inside of another template, `$parent` property allows the developer to access the parent data context. |
 
 ```html
 <mgt-person>
   <mgt-person-card>
     <template data-type="$parent">
-      <div data-if="person.image">
-        <img src="{{person.image}}" />
-      </div>
-      <div data-else>
-        {{person.displayName}}
-      </div>
+      <span data-for="language in languages">
+        {{ language.displayName }}<span data-if="$index < languages.length - 1">, </span>
+      </span>
     </template>
   </mgt-person-card>
 </mgt-person>
