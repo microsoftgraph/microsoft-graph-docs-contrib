@@ -77,7 +77,7 @@ Content-Length: 1574
 }
 ```
 
-### Example 2: Get the presence information for another user
+### Example 2: Get the presence information of another user
 
 >**Note:** This needs the Presence.Read.All permission
 
