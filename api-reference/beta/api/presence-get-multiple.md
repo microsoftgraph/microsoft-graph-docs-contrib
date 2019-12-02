@@ -1,17 +1,17 @@
 ---
-title: "Get Presence for Multiple Users"
-description: "Get the presence information for multiple users."
+title: "Get Presence of Multiple Users"
+description: "Get the presence information of multiple users."
 author: "VinodRavichandran"
 localization_priority: Normal
 doc_type: apiPageType
 ms.prod: "cloud-communications"
 ---
 
-# Get Presence for Multiple Users
+# Get Presence of Multiple Users
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Get the presence information for multiple users.
+Get the presence information of multiple users.
 
 ## Permissions
 One of the following permissions is required to call these APIs. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
