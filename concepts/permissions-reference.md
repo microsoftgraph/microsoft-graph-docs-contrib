@@ -1165,6 +1165,23 @@ For more complex scenarios involving multiple permissions, see [Permission scena
 
 ---
 
+## Presence permissions
+
+#### Application permissions
+
+|   Permission    |  Display String   |  Description | Admin Consent Required |
+|:-----------------------------|:-----------------------------------------|:-----------------|:-----------------|
+| _Presence.Read_ | Read user's presence information | Allows the app to read presence information on behalf of the signed-in user. Presence information includes activity, availability, status note, calendar out-of-office message, timezone and location. | Yes |
+| _Presence.Read.All_ |   Read presence information of all users in your organization | Allows the app to read presence information of all users in the directory on behalf of the signed-in user. Presence information includes activity, availability, status note, calendar out-of-office message, timezone and location. | Yes |
+
+### Example usage
+
+* _Presence.Read_: If you're signed in, retrieve your own presence information (`GET /me/presence`)
+* _Presence.Read.All_: Retrieve the presence information of another user (`GET /users/{id}/presence`)
+* _Presence.Read.All_: Retrieve the presence information for multiple users (`POST /communications/getPresencesByUserId`)
+
+---
+
 ## Programs and program controls permissions
 
 #### Delegated permissions
