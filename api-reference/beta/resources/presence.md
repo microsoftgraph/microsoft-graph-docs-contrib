@@ -30,7 +30,7 @@ This contains information regarding a user's presence including their availabili
 |activity    |  string collection      | 	The supplemental information to a user's availability. Possible values are `Available`, `Away`, `BeRightBack`,`Busy`, `DoNotDisturb`, `InACall`, `InAConferenceCall`, `Inactive`,`InAMeeting`, `Offline`, `OffWork`,`OutOfOffice`, `PresenceUnknown`,`Presenting`, `UrgentInterruptionsOnly`,       |
 
 >**Note:** New values may be added to availability and activity in the future. To learn more about the different presence states, please view
->[User Presence in Teams](https://docs.microsoft.com/en-us/microsoftteams/presence-admins). 
+>[User Presence in Teams](https://docs.microsoft.com/microsoftteams/presence-admins). 
 
 ## Relationships
 
