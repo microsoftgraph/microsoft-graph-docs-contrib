@@ -900,6 +900,13 @@
           href: api/application-post-onlinemeetings.md
         - name: Get online meeting
           href: api/onlinemeeting-get.md
+      - name: Presence
+        href: resources/presence.md
+        items:
+        - name: Get presence
+          href: api/get-presence.md
+        - name: Get presence of multiple users
+          href: api/get-presence-multiple-users.md
     - name: Cross-device experiences
       displayName: Project Rome
       items:
