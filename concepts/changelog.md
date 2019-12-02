@@ -11,6 +11,14 @@ This changelog covers what's changed in the Microsoft Graph API, including the v
 
 For details about known issues with Microsoft Graph APIs, see [Known issues](known-issues.md).
 
+## December 2019
+
+### Teamwork (Microsoft Teams)
+
+| **Change type** | **Version**   | **Description**                          |
+| :-------------- | :------------ | :--------------------------------------- |
+| Addition | beta | Added [notifications](/graph/api/subscription-post-subscriptions) for new and edited channel messages, and new and edited chat messages.
+
 ## October 2019
 
 ### Identity and access (Azure AD) | Conditional access
