@@ -169,10 +169,10 @@
         items:
         - name: List users
           href: api/user-list.md
-        - name: Get user
-          href: api/user-get.md
         - name: Create user
           href: api/user-post-users.md
+        - name: Get user
+          href: api/user-get.md
         - name: Update user
           href: api/user-update.md
         - name: Delete user
@@ -183,60 +183,66 @@
         href: resources/calendar.md
         displayName: Outlook, Outlook calendar
         items:
-        - name: List events
-          href: api/user-list-events.md
-        - name: Create event
-          href: api/user-post-events.md
-        - name: List calendars
-          href: api/user-list-calendars.md
         - name: Create calendar
           href: api/user-post-calendars.md
-        - name: List calendar groups
-          href: api/user-list-calendargroups.md
         - name: Create calendar group
           href: api/user-post-calendargroups.md
-        - name: List calendar view
-          href: api/user-list-calendarview.md
-        - name: Reminder view
-          href: api/user-reminderview.md
-        - name: Get free/busy schedule
-          href: api/calendar-getschedule.md
+        - name: Create event
+          href: api/user-post-events.md
         - name: Find meeting times
           href: api/user-findmeetingtimes.md
+        - name: Get free/busy schedule
+          href: api/calendar-getschedule.md
+        - name: List calendars
+          href: api/user-list-calendars.md
+        - name: List calendar groups
+          href: api/user-list-calendargroups.md
+        - name: List calendar view
+          href: api/user-list-calendarview.md
+        - name: List events
+          href: api/user-list-events.md
+        - name: Reminder view
+          href: api/user-reminderview.md
       - name: Contacts
         href: resources/contact.md
         items:
-        - name: List contacts
-          href: api/user-list-contacts.md
         - name: Create contact
           href: api/user-post-contacts.md
-        - name: List contact folders
-          href: api/user-list-contactfolders.md
         - name: Create contact folder
           href: api/user-post-contactfolders.md
+        - name: List contacts
+          href: api/user-list-contacts.md
+        - name: List contact folders
+          href: api/user-list-contactfolders.md      
       - name: Directory objects
         href: resources/directoryobject.md
         items:
-        - name: List owned devices
-          href: api/user-list-owneddevices.md
-        - name: List registered devices
-          href: api/user-list-registereddevices.md
-        - name: List owned objects
-          href: api/user-list-ownedobjects.md
-        - name: List created objects
-          href: api/user-list-createdobjects.md
         - name: Assign license
           href: api/user-assignlicense.md
+        - name: Check member groups
+          href: api/user-checkmembergroups.md
+        - name: Check member objects
+          href: api/user-checkmemberobjects.md
+        - name: Export personal data
+          href: api/user-exportpersonaldata.md
         - name: Get member objects
           href: api/user-getmemberobjects.md
         - name: Get member groups
           href: api/user-getmembergroups.md
-        - name: Check member groups
-          href: api/user-checkmembergroups.md
         - name: Get objects by IDs
           href: api/directoryobject-getbyids.md
-        - name: Export personal data
-          href: api/user-exportpersonaldata.md
+        - name: List created objects
+          href: api/user-list-createdobjects.md
+        - name: List license details
+          href: api/user-list-licensedetails.md 
+        - name: List owned devices
+          href: api/user-list-owneddevices.md
+        - name: List owned objects
+          href: api/user-list-ownedobjects.md
+        - name: List registered devices
+          href: api/user-list-registereddevices.md
+        - name: Revoke sign-in session
+          href: api/user-revokesigninsessions.md  
       - name: Drive
         href: resources/drive.md
         items:
@@ -247,6 +253,8 @@
       - name: Groups
         href: resources/group.md
         items:
+        - name: List joined teams
+          href: api/user-list-joinedteams.md
         - name: List member of
           href: api/user-list-memberof.md
         - name: List transitive member of
@@ -254,33 +262,33 @@
       - name: Mail
         href: resources/message.md
         items:
-        - name: List messages
-          href: api/user-list-messages.md
-        - name: Create message
-          href: api/user-post-messages.md
-        - name: List Overrides
-          href: api/inferenceclassification-list-overrides.md
-        - name: Create Override
-          href: api/inferenceclassification-post-overrides.md
-        - name: List mail folders
-          href: api/user-list-mailfolders.md
         - name: Create mail folder
           href: api/user-post-mailfolders.md
-        - name: Send mail
-          href: api/user-sendmail.md
+        - name: Create message
+          href: api/user-post-messages.md
+        - name: Create message rule
+          href: api/mailfolder-post-messagerules.md
+        - name: Create override
+          href: api/inferenceclassification-post-overrides.md
+        - name: Get mail tips
+          href: api/user-getmailtips.md
+        - name: List mail folders
+          href: api/user-list-mailfolders.md 
+        - name: List messages
+          href: api/user-list-messages.md
+        - name: List overrides
+          href: api/inferenceclassification-list-overrides.md
         - name: List rules
           href: api/mailfolder-list-messagerules.md
-        - name: Create rule
-          href: api/mailfolder-post-messagerules.md
-        - name: Get MailTips
-          href: api/user-getmailtips.md
+        - name: Send mail
+          href: api/user-sendmail.md 
       - name: Notes
         href: resources/onenote.md
         items:
-        - name: List notebooks
-          href: api/onenote-list-notebooks.md
         - name: Create notebook
           href: api/onenote-post-notebooks.md
+        - name: List notebooks
+          href: api/onenote-list-notebooks.md  
       - name: Org hierarchy
         href: resources/organization.md
         items:
@@ -290,22 +298,30 @@
           href: api/user-list-manager.md
         - name: Assign manager
           href: api/user-post-manager.md
-      - name: Outlook settings       
+      - name: Outlook settings
         items:
-        - name: Outlook user
-          href: resources/outlookuser.md
-        - name: Get language choices
-          href: api/outlookuser-supportedlanguages.md
-        - name: Get time zone choices
-          href: api/outlookuser-supportedtimezones.md
-        - name: Get mailbox settings
-          href: api/user-get-mailboxsettings.md
-        - name: Update mailbox settings
-          href: api/user-update-mailboxsettings.md
-        - name: List categories
-          href: api/outlookuser-list-mastercategories.md
-        - name: Create category
-          href: api/outlookuser-post-mastercategories.md
+        - name: Mailbox settings
+          expanded: true
+          items:
+          - name: Mailbox settings
+            href: resources/mailboxsettings.md
+          - name: Get mailbox settings
+            href: api/user-get-mailboxsettings.md
+          - name: Update mailbox settings
+            href: api/user-update-mailboxsettings.md
+        - name: Outlook user services
+          expanded: true
+          items:
+          - name: Outlook user
+            href: resources/outlookuser.md
+          - name: Create category
+            href: api/outlookuser-post-mastercategories.md
+          - name: Get language choices
+            href: api/outlookuser-supportedlanguages.md
+          - name: Get time zone choices
+            href: api/outlookuser-supportedtimezones.md
+          - name: List categories
+            href: api/outlookuser-list-mastercategories.md
         - name: Translate IDs
           href: api/user-translateexchangeids.md
       - name: Photo
@@ -342,6 +358,8 @@
           href: api/group-post-owners.md
         - name: Check member groups
           href: api/group-checkmembergroups.md
+        - name: Check member objects
+          href: api/group-checkmemberobjects.md
         - name: Create group
           href: api/group-post-groups.md
         - name: Delete group
@@ -3183,6 +3201,43 @@
       items:
       - name: Overview
         href: resources/azure-ad-overview.md
+      - name: Application
+        href: resources/application.md
+        items:
+        - name: List applications
+          href: api/application-list.md
+        - name: Create application
+          href: api/application-post-applications.md
+        - name: Get application
+          href: api/application-get.md
+        - name: Update application
+          href: api/application-update.md
+        - name: Delete application
+          href: api/application-delete.md
+        - name: List deleted applications
+          href: api/directory-deleteditems-list.md
+        - name: Get deleted application
+          href: api/directory-deleteditems-get.md
+        - name: Permanently delete application
+          href: api/directory-deleteditems-delete.md
+        - name: Restore deleted application
+          href: api/directory-deleteditems-restore.md
+        - name: Add password
+          href: api/application-addpassword.md
+        - name: Remove password
+          href: api/application-removepassword.md
+        - name: Create extension
+          href: api/application-post-extensionproperty.md
+        - name: List extensions
+          href: api/application-list-extensionproperty.md
+        - name: Delete extension
+          href: api/application-delete-extensionproperty.md
+        - name: List owners
+          href: api/application-list-owners.md
+        - name: Add owner
+          href: api/application-post-owners.md
+        - name: Remove owner
+          href: api/application-delete-owners.md
       - name: Audit logs
         href: resources/azure-ad-auditlog-overview.md
         items:
@@ -3249,10 +3304,8 @@
           href: api/device-update.md
         - name: Delete device
           href: api/device-delete.md
-        - name: List registered owners
-          href: api/device-list-registeredowners.md
-        - name: List registered users
-          href: api/device-list-registeredusers.md
+        - name: Check member objects
+          href: api/device-checkmemberobjects.md
         - name: Create registered owner
           href: api/device-post-registeredowners.md
         - name: Create registered user
@@ -3261,6 +3314,10 @@
           href: api/device-list-memberof.md
         - name: List device transitive groups
           href: api/device-list-transitivememberof.md
+        - name: List registered owners
+          href: api/device-list-registeredowners.md
+        - name: List registered users
+          href: api/device-list-registeredusers.md
       - name: Directory object
         href: resources/directoryobject.md
         items:
@@ -3982,7 +4039,7 @@
           href: api/listitem-list-versions.md
         - name: Get item analytics
           href: api/itemanalytics-get.md
-    - name: 'Social intelligence: People'
+    - name: 'People and workplace intelligence'
       items:
       - name: Overview
         href: resources/social-overview.md
@@ -4250,6 +4307,13 @@
           href: api/workbook-list-worksheets.md
         - name: List names
           href: api/workbook-list-names.md
+      - name: Workbook application
+        href: resources/workbookapplication.md
+        items:
+          - name: Get
+            href: api/workbookapplication-get.md
+          - name: Calculate
+            href: api/workbookapplication-calculate.md
       - name: Workbook comments
         href: resources/workbookcomment.md
         items:
