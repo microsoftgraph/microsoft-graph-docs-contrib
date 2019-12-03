@@ -169,10 +169,10 @@
         items:
         - name: List users
           href: api/user-list.md
-        - name: Get user
-          href: api/user-get.md
         - name: Create user
           href: api/user-post-users.md
+        - name: Get user
+          href: api/user-get.md
         - name: Update user
           href: api/user-update.md
         - name: Delete user
@@ -183,66 +183,74 @@
         href: resources/calendar.md
         displayName: Outlook, Outlook calendar
         items:
-        - name: List events
-          href: api/user-list-events.md
-        - name: Create event
-          href: api/user-post-events.md
-        - name: List calendars
-          href: api/user-list-calendars.md
         - name: Create calendar
           href: api/user-post-calendars.md
-        - name: List calendar groups
-          href: api/user-list-calendargroups.md
         - name: Create calendar group
           href: api/user-post-calendargroups.md
-        - name: List calendar view
-          href: api/user-list-calendarview.md
-        - name: Reminder view
-          href: api/user-reminderview.md
-        - name: Get free/busy schedule
-          href: api/calendar-getschedule.md
+        - name: Create event
+          href: api/user-post-events.md
         - name: Find meeting times
           href: api/user-findmeetingtimes.md
-        - name: Find room lists
-          href: api/user-findroomlists.md
         - name: Find rooms
           href: api/user-findrooms.md
+        - name: Find room lists
+          href: api/user-findroomlists.md
+        - name: Get free/busy schedule
+          href: api/calendar-getschedule.md
+        - name: List calendars
+          href: api/user-list-calendars.md
+        - name: List calendar groups
+          href: api/user-list-calendargroups.md
+        - name: List calendar view
+          href: api/user-list-calendarview.md
+        - name: List events
+          href: api/user-list-events.md
+        - name: Reminder view
+          href: api/user-reminderview.md
       - name: Contacts
         href: resources/contact.md
         items:
-        - name: List contacts
-          href: api/user-list-contacts.md
         - name: Create contact
           href: api/user-post-contacts.md
-        - name: List contact folders
-          href: api/user-list-contactfolders.md
         - name: Create contact folder
           href: api/user-post-contactfolders.md
+        - name: List contacts
+          href: api/user-list-contacts.md
+        - name: List contact folders
+          href: api/user-list-contactfolders.md
       - name: Directory objects
         href: resources/directoryobject.md
         items:
-        - name: List owned devices
-          href: api/user-list-owneddevices.md
-        - name: List registered devices
-          href: api/user-list-registereddevices.md
-        - name: List owned objects
-          href: api/user-list-ownedobjects.md
-        - name: List scoped administrator memberships
-          href: api/user-list-scopedrolememberof.md
-        - name: List created objects
-          href: api/user-list-createdobjects.md
         - name: Assign license
           href: api/user-assignlicense.md
-        - name: Reprocess license assignment
-          href: api/user-reprocesslicenseassignment.md
-        - name: Get member objects
-          href: api/user-getmemberobjects.md
-        - name: Get member groups
-          href: api/user-getmembergroups.md
         - name: Check member groups
           href: api/user-checkmembergroups.md
+        - name: Check member objects
+          href: api/user-checkmemberobjects.md
+        - name: Export personal data
+          href: api/user-exportpersonaldata.md
+        - name: Get member groups
+          href: api/user-getmembergroups.md
+        - name: Get member objects
+          href: api/user-getmemberobjects.md
         - name: Get objects by IDs
           href: api/directoryobject-getbyids.md
+        - name: List created objects
+          href: api/user-list-createdobjects.md
+        - name: List license details
+          href: api/user-list-licensedetails.md 
+        - name: List owned devices
+          href: api/user-list-owneddevices.md
+        - name: List owned objects
+          href: api/user-list-ownedobjects.md
+        - name: List registered devices
+          href: api/user-list-registereddevices.md
+        - name: List scoped administrator memberships
+          href: api/user-list-scopedrolememberof.md
+        - name: Reprocess license assignment
+          href: api/user-reprocesslicenseassignment.md
+        - name: Revoke sign-in session
+          href: api/user-revokesigninsessions.md
       - name: Drive
         href: resources/drive.md
         items:
@@ -262,51 +270,51 @@
       - name: Insights
         href: resources/officegraphinsights.md
         items:
+        - name: List shared
+          href: api/insights-list-shared.md
         - name: List trending
           href: api/insights-list-trending.md
         - name: List used
-          href: api/insights-list-used.md
-        - name: List shared
-          href: api/insights-list-shared.md
+          href: api/insights-list-used.md     
       - name: Mail
         href: resources/message.md
         items:
-        - name: List messages
-          href: api/user-list-messages.md
-        - name: Create message
-          href: api/user-post-messages.md
-        - name: List Overrides
-          href: api/inferenceclassification-list-overrides.md
-        - name: Create Override
-          href: api/inferenceclassification-post-overrides.md
-        - name: List mail folders
-          href: api/user-list-mailfolders.md
         - name: Create mail folder
           href: api/user-post-mailfolders.md
-        - name: Send mail
-          href: api/user-sendmail.md
+        - name: Create message
+          href: api/user-post-messages.md
+        - name: Create message rule
+          href: api/mailfolder-post-messagerules.md
+        - name: Create override
+          href: api/inferenceclassification-post-overrides.md
+        - name: Get mail tips
+          href: api/user-getmailtips.md
+        - name: List mail folders
+          href: api/user-list-mailfolders.md
+        - name: List messages
+          href: api/user-list-messages.md
+        - name: List overrides
+          href: api/inferenceclassification-list-overrides.md
         - name: List rules
           href: api/mailfolder-list-messagerules.md
-        - name: Create rules
-          href: api/mailfolder-post-messagerules.md
-        - name: Get MailTips
-          href: api/user-getmailtips.md
+        - name: Send mail
+          href: api/user-sendmail.md
       - name: Notes
         href: resources/onenote.md
         items:
-        - name: List notebooks
-          href: api/onenote-list-notebooks.md
         - name: Create notebook
           href: api/onenote-post-notebooks.md
+        - name: List notebooks
+          href: api/onenote-list-notebooks.md   
       - name: Org hierarchy
         href: resources/organization.md
         items:
-        - name: List direct reports
-          href: api/user-list-directreports.md
-        - name: Get manager
-          href: api/user-list-manager.md
         - name: Assign manager
           href: api/user-post-manager.md
+        - name: Get manager
+          href: api/user-list-manager.md
+        - name: List direct reports
+          href: api/user-list-directreports.md
       - name: Outlook settings
         items:
         - name: Mailbox settings
@@ -323,23 +331,23 @@
           items:
           - name: Outlook user
             href: resources/outlookuser.md
+          - name: Create category
+            href: api/outlookuser-post-mastercategories.md
           - name: Get language choices
             href: api/outlookuser-supportedlanguages.md
           - name: Get time zone choices
             href: api/outlookuser-supportedtimezones.md
           - name: List categories
             href: api/outlookuser-list-mastercategories.md
-          - name: Create category
-            href: api/outlookuser-post-mastercategories.md
         - name: Translate IDs
           href: api/user-translateexchangeids.md
       - name: Outlook tasks
         href: resources/outlooktask.md
         items:
-        - name: List tasks
-          href: api/outlookuser-list-tasks.md
         - name: Create tasks
           href: api/outlookuser-post-tasks.md
+        - name: List tasks
+          href: api/outlookuser-list-tasks.md
       - name: People
         href: resources/person.md
         items:
@@ -355,16 +363,16 @@
       - name: Planner
         href: resources/planneruser.md
         items:
-        - name: Get user's settings
+        - name: Get plans
           href: api/planneruser-get.md
-        - name: Update user's settings
-          href: api/planneruser-update.md
-        - name: List user's favorite plans
+        - name: List favorite plans
           href: api/planneruser-list-favoriteplans.md
-        - name: List user's recent plans
+        - name: List recent plans
           href: api/planneruser-list-recentplans.md
-        - name: List user's assigned tasks
+        - name: List tasks
           href: api/planneruser-list-tasks.md
+        - name: Update settings
+          href: api/planneruser-update.md
       - name: Profile
         href: resources/profile.md
         items:
@@ -376,14 +384,14 @@
         items:
         - name: Installed app
           href: resources/teamsappinstallation.md
-        - name: List apps for user
-          href: api/user-list-teamsappinstallation.md
-        - name: Add app for user
+        - name: Install app
           href: api/user-add-teamsappinstallation.md
-        - name: Remove app for user
-          href: api/user-delete-teamsappinstallation.md
-        - name: Upgrade installed app for user
+        - name: List installed apps
+          href: api/user-list-teamsappinstallation.md  
+        - name: Upgrade app
           href: api/user-upgrade-teamsappinstallation.md
+        - name: Uninstall app
+          href: api/user-delete-teamsappinstallation.md
       - name: User settings
         href: resources/user-settings.md
         items:
