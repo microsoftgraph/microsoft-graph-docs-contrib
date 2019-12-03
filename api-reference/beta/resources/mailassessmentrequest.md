@@ -13,7 +13,7 @@ doc_type: "resourcePageType"
 
 A resource type used to create and retrieve mail assessment, derived from [threatAssessmentRequest](threatAssessmentRequest.md).
 
-The mail should be received by the user specified in `recipientEmail`.
+When you creat a mail assessment request, the mail should be received by the user specified in `recipientEmail`. And delegated [Mail permissions](/graph/permissions-reference#mail-permissions) (Mail.Read or Mail.Read.Shared) are requried to access the mail received by yourself or shared by someone else.
 
 ## Methods
 
