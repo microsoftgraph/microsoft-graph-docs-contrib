@@ -9,7 +9,11 @@ author: nmetulev
 
 The ProxyProvider allows you to use your backend authentication (such as Auth2.0 On-Behalf-Of (OBO) flow) to power the Microsoft Graph Toolkit by routing all calls to the Microsoft Graph through your own backend.
 
-Your backend service must expose an api that will be called for every call to the Microsoft Graph. For example, when a component attempts to get a resource from the graph, the ProxyProvider will instead call your base api and append the graph resource (ex: https://graph.microsoft.com/`v1.0/me` => https://myurl.com/api/GraphProxy/`v1.0/me`). Your api implementation should then call the Microsoft Graph on the behalf of the user and return the result back to the component.
+Your backend service must expose an api that will be called for every call to the Microsoft Graph. For example, when a component attempts to get a resource from the graph, the ProxyProvider will instead call your base api and append the graph resource.
+
+<pre>https://graph.microsoft.com/v1.0/me => https://myurl.com/api/GraphProxy/v1.0/me</pre> 
+
+Your api implementation should then call the Microsoft Graph on the behalf of the user and return the result back to the component.
 
 See the [ASP.NET MVC sample](https://github.com/microsoftgraph/microsoft-graph-toolkit/tree/master/samples/proxy-provider-asp-net-mvc) for a reference implementation. 
 
