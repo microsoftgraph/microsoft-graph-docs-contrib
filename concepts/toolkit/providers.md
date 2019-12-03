@@ -24,13 +24,14 @@ The toolkit implements the following providers:
 - [MsalProvider](./providers/msal.md)
 - [SharePointProvider](./providers/sharepoint.md)
 - [TeamsProvider](./providers/teams.md)
-- Office Add-ins provider (coming soon)
-
-## Get started
+- [ProxyProvider](./providers/proxy.md)
+- [SimpleProvider](./providers/custom.md)
 
 You can create a provider at any time. We recommend that you create the provider before you use any of the components. This section describes how to initialize a provider.
 
-The `Providers` global variable exposes the following properties and functions
+## The "Providers" namespace
+
+The `Providers` namespace exposes the following properties and functions
 
 - `globalProvider : IProvider`
 
@@ -65,7 +66,7 @@ In some scenarios your application will run in a different environment and requi
 
 In this scenario, the MsalProvider will only be used if the TeamsProvider is not available in the current environment.
 
-To accomplish the same in code, you can use the `isAvailable` property on the provider, as shown.
+To accomplish the same in code, you can use the `isAvailable` property on the provider, as shown:
 
 ```ts
 if (TeamsProvider.isAvailable) {
@@ -77,7 +78,7 @@ if (TeamsProvider.isAvailable) {
 
 ## Making your own calls to Microsoft Graph
 
-All components can access Microsoft Graph without any customization required as long as you initialize a provider (as described in the previous section). To get a reference to the same Microsoft Graph SDK used by the components, first get a reference to the global IProvider and then use the `Graph` object, as shown.
+All components can access Microsoft Graph without any customization required as long as you initialize a provider (as described in the previous section). To get a reference to the same Microsoft Graph SDK used by the components, first get a reference to the global IProvider and then use the `Graph` object, as shown:
 
 ```js
 import { Providers } from '@microsoft/mgt';
