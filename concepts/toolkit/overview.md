@@ -84,7 +84,7 @@ Or, add it in your code:
 
 The components work best when used with a [provider](./providers.md). The provider exposes authentication and APIs that the components use to call Microsoft Graph.
 
-The toolkit contains providers for [MSAL](./providers/msal.md), [SharePoint](./providers/sharepoint.md), and [Teams](./providers/teams.md). You can also use your own authentication logic by creating a [custom provider](./provider/custom.md), or using the [ProxyProvider](./provider/proxy) with your own backend authentication. 
+The toolkit contains providers for [MSAL](./providers/msal.md), [SharePoint](./providers/sharepoint.md), and [Teams](./providers/teams.md). You can also use your own authentication logic by creating a [custom provider](./providers/custom.md), or using the [ProxyProvider](./providers/proxy.md) with your own backend authentication. 
 
 ## Polyfills
 
