@@ -128,8 +128,8 @@ This resource supports:
 | [Upgrade app](../api/user-upgrade-teamsappinstallation.md) | None | Upgrade an app installation in the personal scope of the specified user to the latest version of the app.
 | [Uninstall app for user](../api/user-delete-teamsappinstallation.md) | None | Uninstall an app from the personal scope of the specified user. |
 | **User settings** |||
-| [Get settings](../api/user-get-settings.md) | [settings](user-settings.md) | Read the user and organization settings object. |
-| [Update settings](../api/user-update-settings.md) | [settings](user-settings.md) | Update the properties of the settings object. |
+| [Get settings](../api/usersettings-get.md) | [userSettings](usersettings.md) | Read the user and organization settings object. |
+| [Update settings](../api/usersettings-update.md) | [userSettings](usersettings.md) | Update the properties of the settings object. |
 
 ## Properties
 
@@ -282,7 +282,7 @@ The age group and minor consent properties are optional properties used by Azure
 |photos|[photo](photo.md) collection| Read-only. Nullable.|
 |planner|[plannerUser](planneruser.md)| Selective Planner services available to the user. Read-only. Nullable. |
 |scopedRoleMemberOf|[scopedRoleMembership](scopedrolemembership.md) collection| The scoped-role administrative unit memberships for this user. Read-only. Nullable.|
-|settings|[userSettings](user-settings.md) | Read-only. Nullable.|
+|settings|[userSettings](usersettings.md) | Read-only. Nullable.|
 |registeredDevices|[directoryObject](directoryobject.md) collection|Devices that are registered for the user. Read-only. Nullable.|
 
 ## JSON representation

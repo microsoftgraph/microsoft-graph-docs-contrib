@@ -9,7 +9,7 @@ doc_type: resourcePageType
 
 # resourceVisualization resource type
 
-Complex type containing properties of [insights](officegraphinsights.md).
+Complex type containing properties of [officeGraphInsights](officegraphinsights.md).
 
 ## JSON representation
 
