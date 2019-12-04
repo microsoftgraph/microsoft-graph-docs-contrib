@@ -2,15 +2,17 @@
 title: "Get settings"
 description: "Read the user and organization settings object."
 author: "dkershaw10"
-localization_priority: Priority
+localization_priority: Normal
 ms.prod: "microsoft-identity-platform"
 doc_type: apiPageType
 ---
 
 # Get settings
 
-Read the user and organization [settings](../resources/user-settings.md) object.
-To learn how to update the properties of the [settings](../resources/user-settings.md) object, see [update user settings](user-update-settings.md).
+[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
+
+Read the user and organization [userSettings](../resources/usersettings.md) object.
+To learn how to update the properties of the [userSettings](../resources/usersettings.md) object, see [update user settings](usersettings-update.md).
 
 ## Permissions
 
@@ -40,14 +42,14 @@ Do not supply a request body for this method.
 
 ## Response
 
-If successful, this method returns a `200 OK` response code and [user settings](../resources/user-settings.md) object in the response body.
+If successful, this method returns a `200 OK` response code and [userSettings](../resources/usersettings.md) object in the response body.
 
 ## Example
 
 ##### Request
 
 ```http
-GET https://graph.microsoft.com/v1.0/me/settings
+GET https://graph.microsoft.com/beta/me/settings
 ```
 
 ##### Response
@@ -64,4 +66,3 @@ Content-length: 72
   "contributionToContentDiscoveryDisabled": false
 }
 ```
-

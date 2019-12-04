@@ -9,8 +9,6 @@ doc_type: apiPageType
 
 # List used
 
-[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
-
 Calculated insight that includes a list of documents the user has modified.
 
 ## Permissions
@@ -43,17 +41,16 @@ GET /me/insights/used/{id}/resource
 GET /users/{id | userPrincipalName}/insights/used/{id}/resource
 ```
 
-
 ## Optional query parameters
 This method supports the [OData Query Parameters](https://developer.microsoft.com/graph/docs/concepts/query_parameters) to help customize the response.
 
 You can use the `$filter` query parameter to filter used items. For example, based on **type**:
 
-`https://graph.microsoft.com/beta/me/insights/used?$filter=ResourceVisualization/Type eq 'PowerPoint'`
+`https://graph.microsoft.com/v1.0/me/insights/used?$filter=ResourceVisualization/Type eq 'PowerPoint'`
 
 Or based on **containerType**:
 
-`https://graph.microsoft.com/beta/me/insights/used?$filter=ResourceVisualization/containerType eq 'OneDriveBusiness'`
+`https://graph.microsoft.com/v1.0/me/insights/used?$filter=ResourceVisualization/containerType eq 'OneDriveBusiness'`
 
 See the available container types and types you can filter by in [resourceVisualization](../resources/insights-resourcevisualization.md).
 
@@ -76,7 +73,7 @@ If successful, this method returns a `200 OK` response code and a list of [used]
 
 Here is an example of the request.
 ```http
-GET https://graph.microsoft.com/beta/me/insights/used
+GET https://graph.microsoft.com/v1.0/me/insights/used
 ```
 
 ##### Response
@@ -110,4 +107,5 @@ Here is an example of the response. Note: The response object shown here may be 
     ]
 }
 ```
+
 

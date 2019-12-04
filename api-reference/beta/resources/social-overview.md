@@ -1,6 +1,6 @@
 ---
 title: "Use the Microsoft Graph API to integrate people and workplace intelligence in an app"
-description: "Microsoft Graph enables access to useful people and workplace data and supports social gestures in a user's social context."
+description: "Microsoft Graph enables access to useful data about people, their profile, documents they interact with, and work patterns, and supports gestures in a user's social context."
 localization_priority: Priority
 author: "simonhult"
 ms.prod: "insights"
@@ -11,7 +11,7 @@ doc_type: conceptualPageType
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Microsoft Graph enables access to people and workplace data for people, and supports gestures in a user's social context.
+Microsoft Graph enables access to useful data about people, their profile, documents they interact with, and work patterns, and supports gestures in a user's social context.
 
 ## Aggregate and extract specific information about people
 
