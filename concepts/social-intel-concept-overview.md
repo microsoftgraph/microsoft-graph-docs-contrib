@@ -100,13 +100,13 @@ The [profile](/graph/api/resources/profile?view=graph-rest-beta) API represents 
 Looking for the API reference for these services?
 
 - [People API](/graph/api/resources/social-overview?view=graph-rest-1.0)
-- [People and workplace intelligence(preview)](/graph/api/resources/social-overview?view=graph-rest-beta)
+- [People and workplace intelligence](/graph/api/resources/social-overview?view=graph-rest-1.0)
 - [Profile API (preview)](/graph/api/resources/profile?view=graph-rest-beta).
 
 ## Next steps
 
 * Use the [Graph Explorer](https://developer.microsoft.com/graph/graph-explorer) to try out the people, insights, and analytics APIs with your own files. Sign in, and choose **Show more samples** in the column on the left. Use the menu to turn on **People**, **Insights**, and **Analytics**.
 * Find more about the [people API](people-example.md) and the [person](/graph/api/resources/person?view=graph-rest-1.0) entity.
-* To get started with insights API, see [Use the insights API](/graph/api/resources/office-graph-insights?view=graph-rest-1.0).
+* To get started with insights API, see [Office Graph insights](/graph/api/resources/officegraphinsights?view=graph-rest-1.0).
 * Find more about the [analytics API](/graph/api/resources/social-overview?view=graph-rest-beta#help-users-balance-work-and-life).
 * Find more about the [profile API](/graph/api/resources/profile?view=graph-rest-beta).

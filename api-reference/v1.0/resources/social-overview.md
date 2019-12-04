@@ -1,15 +1,19 @@
 ---
-title: "People overview"
-description: "Microsoft Graph provides access to useful people data."
+title: "Use the Microsoft Graph API to integrate people intelligence in an app"
+description: "Microsoft Graph enables access to useful data about people and documents they interact with."
 author: "simonhult"
 localization_priority: Priority
 ms.prod: "insights"
 doc_type: conceptualPageType
 ---
 
-# People overview
+# Use the Microsoft Graph API to integrate people intelligence in an app
 
-Microsoft Graph provides access to useful people data.
+Microsoft Graph enables access to useful data about people and documents they interact with.
+
+## Aggregate and extract specific information about people
+
+Feature: People
 
 You can use the [person](../resources/person.md) resource and the People API to aggregate information
 about a person from across mail, contacts, and social networks. The results are ordered by their
