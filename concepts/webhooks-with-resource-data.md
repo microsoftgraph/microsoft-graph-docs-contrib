@@ -116,7 +116,7 @@ One type of life cycle notifications challenges the authorized state of an activ
 When you create a long-lived subscription (for example, one that lasts for 3 days), resource data notifications flows to the location indicated in **notificationUrl**. However, at any point in time, Microsoft Graph may require that you re-authorize the subscription to prove that you still have access to resource data, in case the conditions of access have changed since the subscription was created. The following are examples of changes that affect your access to data:
 
 - A tenant administrator may revoke your app's permissions to read a resource.
-- In an interactive scenario, the user who provides the authentication token to your app may be subject to dynamic policies based on various factors, such as their location, device state, or risk assesment. For example, if the user changes their physical location, the user may no longer be allowed to access the data, and your app will not be able to re-authorize the subscription. For more information on dynamic policies that control access, see [Azure AD conditional access policies](https://docs.microsoft.com/en-us/azure/active-directory/conditional-access/overview). 
+- In an interactive scenario, the user who provides the authentication token to your app may be subject to dynamic policies based on various factors, such as their location, device state, or risk assesment. For example, if the user changes their physical location, the user may no longer be allowed to access the data, and your app will not be able to re-authorize the subscription. For more information on dynamic policies that control access, see [Azure AD conditional access policies](https://docs.microsoft.com/azure/active-directory/conditional-access/overview). 
 
 ### Authorization challenge flow
 
@@ -380,7 +380,7 @@ To decrypt resource data, your app should perform the reverse steps, using the p
 
 1. Use the **encryptionCertificateId** property to identify the certificate to use.
 
-2. Initialize an RSA cryptographic component (such as the .NET [RSACryptoServiceProvider](https://docs.microsoft.com/en-us/dotnet/api/system.security.cryptography.rsacryptoserviceprovider.decrypt?view=netframework-4.8)) with the private key.
+2. Initialize an RSA cryptographic component (such as the .NET [RSACryptoServiceProvider](https://docs.microsoft.com/dotnet/api/system.security.cryptography.rsacryptoserviceprovider.decrypt?view=netframework-4.8)) with the private key.
 
 3. Decrypt the symmetric key delivered in the **dataKey** property of each item in the notification.
 
@@ -390,7 +390,7 @@ To decrypt resource data, your app should perform the reverse steps, using the p
   
     Compare it to the value in **dataSignature**. If they do not match, assume the payload has been tampered with and do not decrypt it.
 
-5. Use the symmetric key with an Advanced Encryption Standard (AES) (such as the .NET [AesCryptoServiceProvider](https://docs.microsoft.com/en-us/dotnet/api/system.security.cryptography.aescryptoserviceprovider?view=netframework-4.8)) to decrypt the content in **data**.
+5. Use the symmetric key with an Advanced Encryption Standard (AES) (such as the .NET [AesCryptoServiceProvider](https://docs.microsoft.com/dotnet/api/system.security.cryptography.aescryptoserviceprovider?view=netframework-4.8)) to decrypt the content in **data**.
 
     - Use the following decryption parameters for the AES algorithm:
 
