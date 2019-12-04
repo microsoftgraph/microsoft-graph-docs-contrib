@@ -1,6 +1,6 @@
 ---
 title: "cloudCommunications: getPresencesByUserId"
-description: "Get the presence information of multiple users."
+description: "Get the presence information for multiple users."
 author: "VinodRavichandran"
 localization_priority: Normal
 doc_type: apiPageType
@@ -11,7 +11,7 @@ ms.prod: "cloud-communications"
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Get the [presence](../resources/presence.md) information of multiple users.
+Get the [presence](../resources/presence.md) information for multiple users.
 
 ## Permissions
 One of the following permissions is required to call these APIs. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
