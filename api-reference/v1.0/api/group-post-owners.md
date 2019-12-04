@@ -30,6 +30,7 @@ POST /groups/{id}/owners/$ref
 | Name       | Type | Description|
 |:---------------|:--------|:----------|
 | Authorization  | string  | Bearer {token}. Required. |
+| Content-Type | string | application/json |
 
 ## Request body
 In the request body, supply a JSON representation of [user](../resources/user.md) object to be added.
