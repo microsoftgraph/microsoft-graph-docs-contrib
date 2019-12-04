@@ -1,5 +1,5 @@
 ---
-title: "Get Presence"
+title: "Get presence"
 description: "Get a user's presence information."
 author: "VinodRavichandran"
 localization_priority: Normal
@@ -7,11 +7,11 @@ doc_type: apiPageType
 ms.prod: "cloud-communications"
 ---
 
-# Get Presence
+# Get presence
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Get a user's presence information.
+Get a user's [presence](../resources/presence.md) information.
 
 ## Permissions
 One of the following permissions is required to call these APIs. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
@@ -45,8 +45,10 @@ If successful, this method returns a `200 OK` response code and a [presence](../
 ## Examples
 
 ### Example 1: Get your own presence information
->**Note:** This needs the Presence.Read permission
-##### Request
+
+The following example shows how to get your own presence information. This operation requires the Presence.Read permission.
+
+#### Request
 
 <!-- {
   "blockType": "request",
@@ -57,7 +59,7 @@ If successful, this method returns a `200 OK` response code and a [presence](../
 GET https://graph.microsoft.com/beta/me/presence
 ```
 
-##### Response
+#### Response
 
 <!-- {
   "blockType": "response",
@@ -79,9 +81,9 @@ Content-Length: 1574
 
 ### Example 2: Get the presence information of another user
 
->**Note:** This needs the Presence.Read.All permission
+The following example shows how to get the presence information for another user. This operation requires the Presence.Read.All permission.
 
-##### Request
+#### Request
 <!-- {
   "blockType": "request",
   "name": "get-user-presence"
@@ -90,7 +92,7 @@ Content-Length: 1574
 GET https://graph.microsoft.com/beta/users/66825e03-7ef5-42da-9069-724602c31f6b/presence
 ```
 
-##### Response
+#### Response
 
 <!-- {
   "blockType": "response",
