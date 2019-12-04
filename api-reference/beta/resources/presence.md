@@ -17,7 +17,7 @@ Contains information about a user's presence, including their availability and u
 
 | Method                                                            | Return Type                                       | Description                                  |
 |:------------------------------------------------------------------|:--------------------------------------------------|:---------------------------------------------|
-| [Get presence](../api/get-presence.md)     | [presence](../resources/presence.md)     | Get a user's presence information.
+| [Get presence](../api/presence-get.md)     | [presence](../resources/presence.md)     | Get a user's presence information.
 | [Get presence of multiple users](../api/cloudcommunications-getpresencesbyuserid.md)    |  [presence](../resources/presence.md) collection     |  Get the presence information for multiple users.      |
 
 
