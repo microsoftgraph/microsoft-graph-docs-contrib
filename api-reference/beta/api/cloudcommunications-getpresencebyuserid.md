@@ -1,5 +1,5 @@
 ---
-title: "Get Presence of Multiple Users"
+title: "cloudCommunications: getPresencesByUserId"
 description: "Get the presence information of multiple users."
 author: "VinodRavichandran"
 localization_priority: Normal
@@ -7,7 +7,7 @@ doc_type: apiPageType
 ms.prod: "cloud-communications"
 ---
 
-# Get Presence of Multiple Users
+# cloudCommunications: getPresencesByUserId
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
