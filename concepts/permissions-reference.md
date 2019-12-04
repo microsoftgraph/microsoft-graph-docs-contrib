@@ -40,7 +40,7 @@ If the signed-in user is a guest user, depending on the permissions an app has b
 With the appropriate permissions, the app can read the profiles of users or groups that it obtains by following links in navigation properties; for example, `/users/{id}/directReports` or `/groups/{id}/members`.
 
 ## Limited information returned for inaccessible member objects
-Container objects such as groups support members of various types, for example users and device. When an application queries the membership of a container object and does not have permission to read a certain type, members of that type are returned but with limited information.  The application receives a 200 response and a collection of objects.  Complete information is returned for the object types that the application has permissions to read.  For the object types which the application does not have permission to read, only the the object type and ID are returned.
+Container objects such as groups support members of various types, for example users and devices. When an application queries the membership of a container object and does not have permission to read a certain type, members of that type are returned but with limited information.  The application receives a 200 response and a collection of objects.  Complete information is returned for the object types that the application has permissions to read.  For the object types which the application does not have permission to read, only the the object type and ID are returned.
 
 This is applied to all relationships that are of [directoryObject](/graph/api/resources/directoryobject) type (not just member links). Examples include `/groups/{id}/members`, `/users/{id}/memberOf` or `me/ownedObjects`.
 
