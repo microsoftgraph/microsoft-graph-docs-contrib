@@ -9,8 +9,6 @@ doc_type: apiPageType
 
 # List trending
 
-[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
-
 Calculated insight that includes a list of documents trending around the user.
 
 ## Permissions
@@ -69,7 +67,7 @@ If successful, this method returns a `200 OK` response code and a list of [trend
 #### Request
 Here is an example of the request.
 ```http
-GET https://graph.microsoft.com/beta/me/insights/trending
+GET https://graph.microsoft.com/v1.0/me/insights/trending
 ```
 #### Response
 Here is an example of the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call. See an example un-truncated response at the bottom of the page.

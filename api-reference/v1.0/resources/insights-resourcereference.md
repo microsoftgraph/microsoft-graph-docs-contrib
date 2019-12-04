@@ -9,8 +9,6 @@ doc_type: resourcePageType
 
 # resourceReference resource type
 
-[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
-
 Complex type containing properties of [officeGraphInsights](officegraphinsights.md).
 
 ## JSON representation
