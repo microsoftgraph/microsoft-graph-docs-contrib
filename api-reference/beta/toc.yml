@@ -914,7 +914,7 @@
         href: resources/presence.md
         items:
         - name: Get presence
-          href: api/get-presence.md
+          href: api/presence-get.md
         - name: Get presence for multiple users
           href: api/cloudcommunications-getpresencesbyuserid.md
     - name: Cross-device experiences
