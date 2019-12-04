@@ -1,6 +1,6 @@
 ---
 title: "presence resource type"
-description: "This contains information regarding a user's presence including their availability and user activity."
+description: "Contains information about a user's presence, including their availability and user activity."
 author: "VinodRavichandran"
 localization_priority: Normal
 doc_type: resourcePageType
@@ -9,16 +9,16 @@ ms.prod: "cloud-communications"
 
 # presence resource type
 
-This contains information regarding a user's presence including their availability and user activity.
+Contains information about a user's presence, including their availability and user activity.
 
-> **Note:** This is currently only supported for Microsoft Teams users.
+> **Note:** This resource is currently only supported for Microsoft Teams users.
 
 ## Methods
 
 | Method                                                            | Return Type                                       | Description                                  |
 |:------------------------------------------------------------------|:--------------------------------------------------|:---------------------------------------------|
-| [Get presence](../api/get-presence.md)     | [presence](../resources/presence.md)     | Get a user's presence information
-| [Get presence of multiple users](../api/get-presence-multiple-users.md)    |  [presence](../resources/presence.md) collection     |  Get the presence information of multiple users.      |
+| [Get presence](../api/get-presence.md)     | [presence](../resources/presence.md)     | Get a user's presence information.
+| [Get presence of multiple users](../api/get-presence-multiple-users.md)    |  [presence](../resources/presence.md) collection     |  Get the presence information for multiple users.      |
 
 
 ## Properties
@@ -26,15 +26,14 @@ This contains information regarding a user's presence including their availabili
 | Relationship        | Type                                                 | Description                                                         |
 |:--------------------|:-----------------------------------------------------|:--------------------------------------------------------------------|
 |id    |  string     | 	The user object id   |
-|availability    |  string collection   | 	The base presence information of a user. Possible values are `Available`, `AvailableIdle`,  `Away`, `BeRightBack`, `Busy`, `BusyIdle`, `DoNotDisturb`, `Offline`, `PresenceUnknown`  |
-|activity    |  string collection      | 	The supplemental information to a user's availability. Possible values are `Available`, `Away`, `BeRightBack`,`Busy`, `DoNotDisturb`, `InACall`, `InAConferenceCall`, `Inactive`,`InAMeeting`, `Offline`, `OffWork`,`OutOfOffice`, `PresenceUnknown`,`Presenting`, `UrgentInterruptionsOnly`,       |
+|availability    |  string collection   | 	The base presence information for a user. Possible values are `Available`, `AvailableIdle`,  `Away`, `BeRightBack`, `Busy`, `BusyIdle`, `DoNotDisturb`, `Offline`, `PresenceUnknown`  |
+|activity    |  string collection      | 	The supplemental information to a user's availability. Possible values are `Available`, `Away`, `BeRightBack`,`Busy`, `DoNotDisturb`, `InACall`, `InAConferenceCall`, `Inactive`,`InAMeeting`, `Offline`, `OffWork`,`OutOfOffice`, `PresenceUnknown`,`Presenting`, `UrgentInterruptionsOnly`.       |
 
->**Note:** New values may be added to availability and activity in the future. To learn more about the different presence states, please view
->[User Presence in Teams](https://docs.microsoft.com/microsoftteams/presence-admins). 
+>**Note:** To learn more about the different presence states, see [User presence in Teams](https://docs.microsoft.com/microsoftteams/presence-admins). 
 
 ## Relationships
 
-None
+None.
 
 ## JSON representation
 
