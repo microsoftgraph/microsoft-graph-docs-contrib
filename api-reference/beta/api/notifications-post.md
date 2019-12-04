@@ -5,7 +5,6 @@ localization_priority: Normal
 ms.prod: "notifications"
 doc_type: apiPageType
 author: "merzink"
-updates made by: "mariahhart"
 ---
 
 # Create and send a notification
@@ -88,7 +87,7 @@ Content-type: application/json
 	"ios",
 	"android"
         ]
- Not supported.    },
+	},
     "priority": "High",
     "groupName": "TestGroup",
     "displayTimeToLive": "60"
