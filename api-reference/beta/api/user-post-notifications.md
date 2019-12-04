@@ -34,11 +34,11 @@ Your application service does not require any additional permissions to post not
 POST /me/notifications/
 ```
 ## Request headers
-|Name | Type | Description|
-|:----|:-----|:-----------|
-|Authorization | string |The authorization header is used to pass the credentials of the calling party. Bearer {token}. Required. |
-|X-UNS-ID | string |The UserNotificationSubscriptionId that is returned by the Microsoft Graph notification service after creating a subscription and is used to target the specific user. Required. |
-|Content-type | appliation/json. Required.|
+|Name | Description|
+|:----|:-----------|
+|Authorization | The authorization header is used to pass the credentials of the calling party. Bearer {token}. Required. |
+|X-UNS-ID | The UserNotificationSubscriptionId that is returned by the Microsoft Graph notification service after creating a subscription and is used to target the specific user. Required. |
+|Content-type | application/json. Required.|
 
 ## Request body
 In the request body, supply a JSON representation of a [notification](../resources/projectrome-notification.md) object.
