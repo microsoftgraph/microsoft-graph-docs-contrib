@@ -139,8 +139,8 @@ Content-type: application/json
       "countryOrRegion": "USA"
     },
     "geoCoordinates": {
-      "latitude": 47.640568390488626,
-      "longitude": -122.1293731033803
+      "latitude": 47.0,
+      "longitude": -122.0
     },
     "phone": "555-555-0100",
     "nickname": "Conf Room",
@@ -191,8 +191,8 @@ Content-type: application/json
   },
   "geoCoordinates": {
     "altitude": null,
-    "latitude": 47.640568390488626,
-    "longitude": -122.1293731033803,
+    "latitude": 47.0,
+    "longitude": -122.0,
     "accuracy": null,
     "altitudeAccuracy": null
  }
