@@ -191,8 +191,8 @@ Content-type: application/json
   },
   "geoCoordinates": {
     "altitude": null,
-    "latitude": 47,
-    "longitude": -120,
+    "latitude": 47.640568390488626,
+    "longitude": -122.1293731033803,
     "accuracy": null,
     "altitudeAccuracy": null
  }
