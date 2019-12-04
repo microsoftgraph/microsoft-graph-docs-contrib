@@ -11,7 +11,7 @@ ms.prod: "cloud-communications"
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Get the presence information of multiple users.
+Get the [presence](../resources/presence.md) information of multiple users.
 
 ## Permissions
 One of the following permissions is required to call these APIs. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
@@ -32,6 +32,7 @@ POST /communications/getPresencesByUserId
 | Name          | Description               |
 |:--------------|:--------------------------|
 | Authorization | Bearer {token}. Required. |
+|Content-type | application/json. Required. |
 
 
 ## Request body
@@ -40,20 +41,23 @@ In the request body, provide a JSON object with the following parameter.
 
 | Parameter      | Type    |Description|
 |:---------------|:--------|:----------|
-|ids|String collection|The user object ids|
+|ids|String collection|The user object IDs.|
 
 ## Response
 
 If successful, this method returns a `200 OK` response code and a collection of [presence](../resources/presence.md) objects in the response body.
 
 
-## Example
+## Examples
 
-##### Request
+### Request
+The following example shows a request.
+
 <!-- {
   "blockType": "request",
   "name": "get-presence-multiple-users"
 }-->
+
 ```http
 POST https://graph.microsoft.com/beta/communications/getPresencesByUserId
 Content-Type: application/json
@@ -62,7 +66,9 @@ Content-Type: application/json
 	"ids": ["fa8bf3dc-eca7-46b7-bad1-db199b62afc3", "66825e03-7ef5-42da-9069-724602c31f6b"]
 }
 ```
-##### Response
+### Response
+The following example shows the response.
+
 > **Note:** The response objects might be shortened for readability. All the properties will be returned from an actual call.
 
 <!-- {
