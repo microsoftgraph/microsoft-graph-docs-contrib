@@ -1,6 +1,6 @@
 ---
 title: "Use the Microsoft Graph API to integrate people intelligence in an app"
-description: "Microsoft Graph enables access to useful data about people and documents they interact with, and supports gestures in a user's social context."
+description: "Microsoft Graph enables access to useful data about people and documents they interact with."
 author: "simonhult"
 localization_priority: Priority
 ms.prod: "insights"
@@ -9,7 +9,7 @@ doc_type: conceptualPageType
 
 # Use the Microsoft Graph API to integrate people intelligence in an app
 
-Microsoft Graph enables access to useful data about people and documents they interact with, and supports gestures in a user's social context.
+Microsoft Graph enables access to useful data about people and documents they interact with.
 
 ## Aggregate and extract specific information about people
 
