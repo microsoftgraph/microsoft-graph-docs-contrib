@@ -29,7 +29,7 @@ The following is a JSON representation of the resource.
 
   ],
   "@odata.type": "microsoft.graph.openShiftItem",
-  "baseType": "self.shiftItem"
+  "baseType": "microsoft.graph.shiftItem""
 }-->
 
 ```json
