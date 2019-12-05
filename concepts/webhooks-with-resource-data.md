@@ -215,7 +215,7 @@ Implement your code in anticipation of new types of life cycle notifications:
 
 1. Log any life cycle events that your app does not recognize to gain awareness.
 
-1. Subscribe to the [Microsoft Graph Developer Blog](https://developer.microsoft.com/en-us/graph/blogs/) to watch for announcements of life cycle notifications for new scenarios.
+1. Subscribe to the [Microsoft Graph Developer Blog](https://developer.microsoft.com/graph/blogs/) to watch for announcements of life cycle notifications for new scenarios.
 
 1. Look up related documentation for new life cycle notifications and implement support for them as appropriate.
 
