@@ -268,14 +268,23 @@
         - name: List transitive member of
           href: api/user-list-transitivememberof.md
       - name: Insights
-        href: resources/officegraphinsights.md
         items:
-        - name: List shared
-          href: api/insights-list-shared.md
-        - name: List trending
-          href: api/insights-list-trending.md
-        - name: List used
-          href: api/insights-list-used.md     
+        - name: Office Graph insights
+          href: resources/officegraphinsights.md
+          items:
+          - name: List shared
+            href: api/insights-list-shared.md
+          - name: List trending
+            href: api/insights-list-trending.md
+          - name: List used
+            href: api/insights-list-used.md
+        - name: Content discovery user settings
+          href: resources/usersettings.md
+          items:
+          - name: Get settings
+            href: api/usersettings-get.md
+          - name: Update settings
+            href: api/usersettings-update.md
       - name: Mail
         href: resources/message.md
         items:
@@ -392,13 +401,6 @@
           href: api/user-upgrade-teamsappinstallation.md
         - name: Uninstall app
           href: api/user-delete-teamsappinstallation.md
-      - name: User settings
-        href: resources/user-settings.md
-        items:
-        - name: Get settings
-          href: api/user-get-settings.md
-        - name: Update settings
-          href: api/user-update-settings.md
     - name: Groups
       items:
       - name: Overview
@@ -908,6 +910,13 @@
           href: api/application-post-onlinemeetings.md
         - name: Get online meeting
           href: api/onlinemeeting-get.md
+      - name: Presence
+        href: resources/presence.md
+        items:
+        - name: Get presence
+          href: api/presence-get.md
+        - name: Get presence for multiple users
+          href: api/cloudcommunications-getpresencesbyuserid.md
     - name: Cross-device experiences
       displayName: Project Rome
       items:
