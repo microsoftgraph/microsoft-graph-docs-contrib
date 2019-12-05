@@ -1,6 +1,6 @@
 ---
 title: "Update workforceintegration"
-description: "Update the properties of workforceintegration object."
+description: "Update the properties of a workforceintegration object."
 localization_priority: Normal
 author: "akumar39"
 ms.prod: "microsoft-teams"
@@ -11,7 +11,7 @@ doc_type: "apiPageType"
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Update the properties of [workforceintegration](../resources/workforceintegration.md) object.
+Update the properties of a [workforceintegration](../resources/workforceintegration.md) object.
 
 ## Permissions
 
