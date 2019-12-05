@@ -44,7 +44,7 @@ In the request body, provide a JSON object with the following parameters.
 
 | Parameter    | Type        | Description |
 |:-------------|:------------|:------------|
-|message|String|An custom approval message.|
+|message|String|A custom approval message.|
 
 ## Response
 
