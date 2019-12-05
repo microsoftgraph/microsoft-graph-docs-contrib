@@ -278,9 +278,10 @@
             href: api/insights-list-trending.md
           - name: List used
             href: api/insights-list-used.md
-        - name: Content discovery user settings
-          href: resources/usersettings.md
+        - name: Content discovery settings
           items:
+          - name: User settings
+            href: resources/usersettings.md
           - name: Get settings
             href: api/usersettings-get.md
           - name: Update settings
