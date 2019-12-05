@@ -60,7 +60,7 @@ The following is an example of the request.
 }-->
 
 ```http
-GET https://graph.microsoft.com/beta/teamwork/workforceIntegrations
+GET https://graph.microsoft.com/beta/teamwork/workforceIntegrations/{workforceintegrationid}
 ```
 
 ### Response
@@ -80,15 +80,16 @@ HTTP/1.1 200 OK
 Content-type: application/json
 
 {
-  "displayName": "displayName-value",
-  "apiVersion": 99,
-  "encryption": {
-    "protocol": "protocol-value",
-    "secret": "secret-value"
-  },
+  "id": "c5d0c76b-80c4-481c-be50-923cd8d680a1",
+  "displayName": "KronosWorkforceIntegration",
+  "apiVersion": 1,
   "isActive": true,
-  "url": "url-value",
-  "supports": "supports-value"
+  "encryption": {
+    "protocol": "sharedSecret",
+    "secret": null
+  },
+  "url": "https://contosoWorkforceIntegration.com/Contoso/",
+  "supports": "shift"
 }
 ```
 
