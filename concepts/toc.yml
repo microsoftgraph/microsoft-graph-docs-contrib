@@ -13,6 +13,7 @@ items:
       - name: Services in Microsoft Graph
         href: overview-major-services.md
       - name: What's new
+        expanded: true
         items:
           - name: What's new highlights
             href: whats-new-overview.md
@@ -86,6 +87,8 @@ items:
             href: outlook-get-free-busy-schedule.md
           - name: Propose new meeting times (preview)
             href: outlook-calendar-meeting-proposals.md
+          - name: Organize or attend online meetings (preview)
+            href: outlook-calendar-online-meetings.md
           - name: Schedule recurring events
             href: outlook-schedule-recurring-events.md
           - name: Get shared events
@@ -346,6 +349,8 @@ items:
                 href: /graph/tutorials/change-notifications
               - name: Missing Outlook notifications (preview)
                 href: webhooks-outlook-authz.md
+              - name: Notifications with resource data (preview)
+                href: webhooks-with-resource-data.md
           - name: Track changes
             displayName: Delta query, Outlook calendar, Groups, Outlook mail, Users
             items:
