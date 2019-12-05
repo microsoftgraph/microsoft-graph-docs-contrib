@@ -28,7 +28,7 @@ An instance of a workforceforce integration with shifts.
 |apiVersion|Int32|API version for the call back URL. Start with 1.|
 |displayName|String|Name of the workforce integration.|
 |encryption|[workforceIntegrationEncryption](workforceintegrationencryption.md)|The workforce integration encryption resource.|
-|isActive|Boolean||
+|isActive|Boolean|Indicates whether this workforce integration is currently active and available.|
 |supports|string| Possible values are: `none`, `shift`, `swapRequest`, `openshift`, `openShiftRequest`, `userShiftPreferences`|
 |url|String| Workforce Integration URL for callbacks from the shift service.|
 
