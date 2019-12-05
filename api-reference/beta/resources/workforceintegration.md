@@ -1,6 +1,6 @@
 ---
 title: "workforceIntegration resource type"
-description: "An instance of a workforce integration with Shifts"
+description: "An instance of a workforce integration with shifts."
 localization_priority: Normal
 author: "akumar39"
 ms.prod: "microsoft-teams"
@@ -11,30 +11,30 @@ doc_type: "resourcePageType"
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-An instance of a workforceforce integration with Shifts.
+An instance of a workforceforce integration with shifts.
 
 ## Methods
 
 | Method       | Return Type | Description |
 |:-------------|:------------|:------------|
-| [Get workforceIntegration](../api/workforceintegration-get.md) | [workforceIntegration](workforceintegration.md) | Read properties and relationships of workforceIntegration object. |
-| [Update](../api/workforceintegration-update.md) | [workforceIntegration](workforceintegration.md) | Update workforceIntegration object. |
-| [Delete](../api/workforceintegration-delete.md) | None | Delete workforceIntegration object. |
+| [Get](../api/workforceintegration-get.md) | [workforceIntegration](workforceintegration.md) | Read the properties and relationships of a **workforceIntegration** object. |
+| [Update](../api/workforceintegration-update.md) | [workforceIntegration](workforceintegration.md) | Update a **workforceIntegration** object. |
+| [Delete](../api/workforceintegration-delete.md) | None | Delete a **workforceIntegration** object. |
 
 ## Properties
 
 | Property     | Type        | Description |
 |:-------------|:------------|:------------|
-|apiVersion|Int32|API version for the call back url. Start with 1.|
+|apiVersion|Int32|API version for the call back URL. Start with 1.|
 |displayName|String|Name of the workforce integration.|
 |encryption|[workforceIntegrationEncryption](workforceintegrationencryption.md)|The workforce integration encryption resource.|
 |isActive|Boolean||
 |supports|string| Possible values are: `none`, `shift`, `swapRequest`, `openshift`, `openShiftRequest`, `userShiftPreferences`|
-|url|String| Workforce Integration url for callbacks from the Shift service.|
+|url|String| Workforce Integration URL for callbacks from the shift service.|
 
 ## Relationships
 
-None
+None.
 
 ## JSON representation
 

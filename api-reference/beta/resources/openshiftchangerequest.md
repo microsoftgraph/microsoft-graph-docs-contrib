@@ -1,6 +1,6 @@
 ---
 title: "openShiftChangeRequest resource type"
-description: "A type of shift request to claim an open shift in a schedule."
+description: "Represents a type of shift request to claim an open shift in a schedule."
 localization_priority: Normal
 author: "akumar39"
 ms.prod: "microsoft-teams"
@@ -11,17 +11,17 @@ doc_type: "resourcePageType"
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-A type of shift request to claim an [openshift](../resources/openshift.md) in a [schedule](../resources/schedule.md).
+Represents a type of shift request to claim an [openshift](../resources/openshift.md) in a [schedule](../resources/schedule.md).
 
 ## Methods
 
 | Method       | Return Type | Description |
 |:-------------|:------------|:------------|
-| [Get openShiftChangeRequest](../api/openshiftchangerequest-get.md) | [openShiftChangeRequest](openshiftchangerequest.md) | Read properties and relationships of openShiftChangeRequest object. |
-| [Update](../api/openshiftchangerequest-update.md) | [openShiftChangeRequest](openshiftchangerequest.md) | Update openShiftChangeRequest object. |
-| [Delete](../api/openshiftchangerequest-delete.md) | None | Delete openShiftChangeRequest object. |
-|[Approve](../api/openshiftchangerequest-approve.md)|None|Approve  openShiftChangeRequest object.|
-|[Decline](../api/openshiftchangerequest-decline.md)|None| Decline openShiftChangeRequest object.|
+| [Get](../api/openshiftchangerequest-get.md) | [openShiftChangeRequest](openshiftchangerequest.md) | Read the properties and relationships of an **openShiftChangeRequest** object. |
+| [Update](../api/openshiftchangerequest-update.md) | [openShiftChangeRequest](openshiftchangerequest.md) | Update an **openShiftChangeRequest** object. |
+| [Delete](../api/openshiftchangerequest-delete.md) | None | Delete an **openShiftChangeRequest** object. |
+|[Approve](../api/openshiftchangerequest-approve.md)|None|Approve an open shift change request.|
+|[Decline](../api/openshiftchangerequest-decline.md)|None| Decline an open shift change request.|
 
 ## Properties
 
@@ -31,7 +31,7 @@ A type of shift request to claim an [openshift](../resources/openshift.md) in a 
 
 ## Relationships
 
-None
+None.
 
 ## JSON representation
 

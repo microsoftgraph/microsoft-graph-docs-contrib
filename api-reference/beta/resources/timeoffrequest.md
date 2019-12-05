@@ -1,6 +1,6 @@
 ---
 title: "timeOffRequest resource type"
-description: "A type of shift request to take timeoff."
+description: "Represents a type of shift request to take timeoff."
 localization_priority: Normal
 author: "akumar39"
 ms.prod: "microsoft-teams"
@@ -11,17 +11,17 @@ doc_type: "resourcePageType"
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-A type of shift request to take [timeoff](../resources/timeoff.md).
+Represents a type of shift request to take [timeoff](../resources/timeoff.md).
 
 ## Methods
 
 | Method       | Return Type | Description |
 |:-------------|:------------|:------------|
-| [Get timeOffRequest](../api/timeoffrequest-get.md) | [timeOffRequest](timeoffrequest.md) | Read properties and relationships of timeOffRequest object. |
-| [Update](../api/timeoffrequest-update.md) | [timeOffRequest](timeoffrequest.md) | Update timeOffRequest object. |
-| [Delete](../api/timeoffrequest-delete.md) | None | Delete timeOffRequest object. |
-|[Approve](../api/timeoffrequest-approve.md)|None||
-|[Decline](../api/timeoffrequest-decline.md)|None||
+| [Get](../api/timeoffrequest-get.md) | [timeOffRequest](timeoffrequest.md) | Read the properties and relationships of a **timeOffRequest** object. |
+| [Update](../api/timeoffrequest-update.md) | [timeOffRequest](timeoffrequest.md) | Update a **timeOffRequest** object. |
+| [Delete](../api/timeoffrequest-delete.md) | None | Delete a **timeOffRequest** object. |
+|[Approve](../api/timeoffrequest-approve.md)|None|Approve a time off request.|
+|[Decline](../api/timeoffrequest-decline.md)|None|Decline a time off request.|
 
 ## Properties
 
@@ -33,7 +33,7 @@ A type of shift request to take [timeoff](../resources/timeoff.md).
 
 ## Relationships
 
-None
+None.
 
 ## JSON representation
 

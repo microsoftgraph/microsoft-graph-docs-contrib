@@ -1,6 +1,6 @@
 ---
 title: "swapShiftsChangeRequest resource type"
-description: "A type of shift request to swap a shift with another user in the team."
+description: "Represents type of shift request to swap a shift with another user in the team."
 localization_priority: Normal
 author: "akumar39"
 ms.prod: "microsoft-teams"
@@ -11,25 +11,25 @@ doc_type: "resourcePageType"
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-A type of shift request to swap a [shift](../resources/shift.md) with another user in the [team](../resources/team.md).
+Represents a type of shift request to swap a [shift](../resources/shift.md) with another user in the [team](../resources/team.md).
 
 ## Methods
 
 | Method       | Return Type | Description |
 |:-------------|:------------|:------------|
-| [Get swapShiftsChangeRequest](../api/swapshiftschangerequest-get.md) | [swapShiftsChangeRequest](swapshiftschangerequest.md) | Read properties and relationships of swapShiftsChangeRequest object. |
-| [Update](../api/swapshiftschangerequest-update.md) | [swapShiftsChangeRequest](swapshiftschangerequest.md) | Update swapShiftsChangeRequest object. |
-| [Delete](../api/swapshiftschangerequest-delete.md) | None | Delete swapShiftsChangeRequest object. |
+| [Get](../api/swapshiftschangerequest-get.md) | [swapShiftsChangeRequest](swapshiftschangerequest.md) | Read the properties and relationships of a **swapShiftsChangeRequest** object. |
+| [Update](../api/swapshiftschangerequest-update.md) | [swapShiftsChangeRequest](swapshiftschangerequest.md) | Update a **swapShiftsChangeRequest** object. |
+| [Delete](../api/swapshiftschangerequest-delete.md) | None | Delete a **swapShiftsChangeRequest** object. |
 
 ## Properties
 
 | Property     | Type        | Description |
 |:-------------|:------------|:------------|
-|recipientShiftId|String|ID of the recipient of the swap request. This is the user who is requested to swap with.|
+|recipientShiftId|String|ID of the recipient of the swap request. This is the user with whom the request is to swap.|
 
 ## Relationships
 
-None
+None.
 
 ## JSON representation
 
