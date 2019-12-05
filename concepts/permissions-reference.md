@@ -1121,7 +1121,8 @@ For more complex scenarios involving multiple permissions, see [Permission scena
 
 |   Permission    |  Display String   |  Description | Admin Consent Required | Microsoft Account supported |
 |:----------------|:------------------|:-------------|:-----------------------|:--------------|
-| _Place.Read.All_ |Read all company places |Allows the app to read company places (conference rooms and room lists) for calendar events and other applications. |No | No |
+| _Place.Read.All_ |Allows the app to read company places (conference rooms and room lists) set up in Exchange Online for the tenant. |Yes | No |
+| _Place.ReadWrite.All_ |Allows the app to read and write company places (conference rooms and room lists) set up in Exchange Online for the tenant. |Yes | No |
 
 #### Application permissions
 
@@ -1162,6 +1163,23 @@ The following usages are valid for both delegated and application permissions:
 * _Policy.ReadWrite.TrustFramework_: Read and write your organization's trust framework policies (`POST /beta/trustFramework/policies`)
 
 For more complex scenarios involving multiple permissions, see [Permission scenarios](#permission-scenarios).
+
+---
+
+## Presence permissions
+
+#### Application permissions
+
+|   Permission    |  Display String   |  Description | Admin Consent Required |
+|:-----------------------------|:-----------------------------------------|:-----------------|:-----------------|
+| _Presence.Read_ | Read user's presence information | Allows the app to read presence information on behalf of the signed-in user. Presence information includes activity, availability, status note, calendar out-of-office message, timezone and location. | Yes |
+| _Presence.Read.All_ |   Read presence information of all users in your organization | Allows the app to read presence information of all users in the directory on behalf of the signed-in user. Presence information includes activity, availability, status note, calendar out-of-office message, timezone and location. | Yes |
+
+### Example usage
+
+* _Presence.Read_: If you're signed in, retrieve your own presence information (`GET /me/presence`)
+* _Presence.Read.All_: Retrieve the presence information of another user (`GET /users/{id}/presence`)
+* _Presence.Read.All_: Retrieve the presence information of multiple users (`POST /communications/getPresencesByUserId`)
 
 ---
 

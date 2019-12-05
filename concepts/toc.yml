@@ -349,6 +349,8 @@ items:
                 href: /graph/tutorials/change-notifications
               - name: Missing Outlook notifications (preview)
                 href: webhooks-outlook-authz.md
+              - name: Notifications with resource data (preview)
+                href: webhooks-with-resource-data.md
           - name: Track changes
             displayName: Delta query, Outlook calendar, Groups, Outlook mail, Users
             items:
