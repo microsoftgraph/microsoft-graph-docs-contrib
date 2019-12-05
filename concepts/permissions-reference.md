@@ -1207,7 +1207,7 @@ For an app with delegated permissions to read programs and program controls, the
 
 ### Remarks
 - Reports permissions are only valid for work or school accounts.
-- For delegated permissions to allow apps to read service usage reports on behalf of a user, the user must have been assigned an Azure AD Limited Admin role. For more details, see [Authorization and the Microsoft Graph reports API](reportroot-authorization.md).
+- For delegated permissions to allow apps to read service usage reports on behalf of a user, the tenant administrator must have assigned the user an Azure AD limited administrator role. For more details, see [Authorization for APIs to read Office 365 usage reports](reportroot-authorization.md).
 
 ### Example usage
 
