@@ -9,8 +9,6 @@ doc_type: resourcePageType
 
 # insightIdentity
 
-[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
-
 Complex type containing properties of [sharedInsight](insights-shared.md) items. 
 
 ## JSON representation

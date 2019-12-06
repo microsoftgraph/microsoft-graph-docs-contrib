@@ -9,8 +9,6 @@ doc_type: apiPageType
 
 # List shared
 
-[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
-
 Calculated insight that includes the list of documents shared with a user.
 
 ## Permissions
@@ -42,13 +40,13 @@ This method supports the [OData Query Parameters](https://developer.microsoft.co
 
 You can use the `$filter` query parameter to filter shared items. For example, based on **type**:
 
-`https://graph.microsoft.com/beta/me/insights/shared?$filter=ResourceVisualization/Type eq 'PowerPoint'`
+`https://graph.microsoft.com/v1.0/me/insights/shared?$filter=ResourceVisualization/Type eq 'PowerPoint'`
 
 See the available container types and types you can filter by in [resourceVisualization](../resources/insights-resourcevisualization.md).
 
 You can also retrieve files shared by a specific user. For example, by specifying the `lastshared/sharedby/address` property:
 
-`https://graph.microsoft.com/beta/me/insights/shared?$filter=lastshared/sharedby/address eq 'kellygraham@contoso.com'`
+`https://graph.microsoft.com/v1.0/me/insights/shared?$filter=lastshared/sharedby/address eq 'kellygraham@contoso.com'`
 
 See the [sharingDetail](../resources/insights-sharingdetail.md) complex type.
 
@@ -71,7 +69,7 @@ If successful, this method returns a `200 OK` response code and a list of [share
 
 Here is an example of the request.
 ```http
-GET https://graph.microsoft.com/beta/me/insights/shared
+GET https://graph.microsoft.com/v1.0/me/insights/shared
 ```
 
 ##### Response

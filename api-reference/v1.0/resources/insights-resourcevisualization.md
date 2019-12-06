@@ -9,8 +9,6 @@ doc_type: resourcePageType
 
 # resourceVisualization resource type
 
-[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
-
 Complex type containing properties of [officeGraphInsights](officegraphinsights.md).
 
 ## JSON representation
@@ -77,7 +75,7 @@ Here is a JSON representation of the resource
 -	Other
 
 Example query:
-`https://graph.microsoft.com/beta/me/insights/trending?$filter=ResourceVisualization/Type eq 'PowerPoint'`
+`https://graph.microsoft.com/v1.0/me/insights/trending?$filter=ResourceVisualization/Type eq 'PowerPoint'`
 
 ## containerType property values
 The supported types can differ based on containers from which [officeGraphInsights](officegraphinsights.md) returns files. For example, only the [sharedInsight](insights-shared.md) insight returns files from 'DropBox', 'Box', and 'GDrive'.
@@ -90,4 +88,4 @@ The supported types can differ based on containers from which [officeGraphInsigh
 -	GDrive
 
 Example query:
-`https://graph.microsoft.com/beta/me/insights/trending?$filter=ResourceVisualization/containerType eq 'OneDriveBusiness'`
+`https://graph.microsoft.com/v1.0/me/insights/trending?$filter=ResourceVisualization/containerType eq 'OneDriveBusiness'`
