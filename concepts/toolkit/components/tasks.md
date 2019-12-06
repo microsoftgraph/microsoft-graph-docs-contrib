@@ -24,23 +24,23 @@ Additionally, a user is able to assign singular or multiple Microsoft Graph user
 | Attribute | Property | Description |
 | -- | -- | -- |
 | data-source="todo/planner" | dataSource | An enumeration to configure the data source for tasks - either Microsoft To-Do, or Microsoft Planner. Default is `planner`. |
-| read-only | readOnly | A boolean to set the task interface to be read only (no adding or removing tasks). Default is `false`. |
-| hide-header | hideHeader | A boolean to show or hide the header of the component. Default is `false`. |
-| initial-id="planner_id/folder_id" | initialId | A string id to set the initially displayed planner or folder to the provided ID. |
-| initial-bucket-id="bucket_id" | initialBucketId | A string id to set the initially displayed bucket (Planner Data-Source Only) to the provided ID. |
-| target-id="planner_id/folder_id"| targetId | A string id to lock the tasks interface to the provided planner or folder ID. |
+| read-only | readOnly | A Boolean to set the task interface to be read only (no adding or removing tasks). Default is `false`. |
+| hide-header | hideHeader | A Boolean to show or hide the header of the component. Default is `false`. |
+| initial-id="planner_id/folder_id" | initialId | A string ID to set the initially displayed planner or folder to the provided ID. |
+| initial-bucket-id="bucket_id" | initialBucketId | A string ID to set the initially displayed bucket (Planner Data-Source Only) to the provided ID. |
+| target-id="planner_id/folder_id"| targetId | A string ID to lock the tasks interface to the provided planner or folder ID. |
 | target-bucket-id="bucket_id" |targetBucketId  | A string ID to lock the tasks interface to the provided bucket ID (Planner Data-Source Only). |
 | group-id | groupId  | A string ID to lock the tasks interface to the group ID (Planner Data-Source Only). |
-| N/A | isNewTaskVisible  | Determines if new task view is visible at render. |
-| N/A | taskFilter  | An optional function to filter which tasks are shown to the user |
+| N/A | isNewTaskVisible  | Determines whether new task view is visible at render. |
+| N/A | taskFilter  | An optional function to filter which tasks are shown to the user. |
 
-The following is an example of only showing tasks from planner with id *12345* and not allowing the user to create new tasks:
+The following example shows only tasks from Planner with ID *12345* and does not allow the user to create new tasks.
 
 ```html
 <mgt-tasks read-only initial-id="12345"></mgt-tasks>
 ```
 
-The following is an example of filtering tasks that only have *category3* set:
+The following example shows how to filter tasks that only have *category3* set.
 
 ```js
 let taskView = document.querySelector('mgt-tasks');
@@ -100,10 +100,10 @@ mgt-tasks {
 }
 ````
 
-#### Events
+## Events
 | Event | Detail | Description |
 | --- | --- | --- |
-| `taskClick` | The detail contains the respective `task` object | Fired when the user clicks or taps on a task. |
+| taskClick | The detail contains the respective `task` object | Fired when the user clicks or taps on a task. |
 
 ## Templates
 
