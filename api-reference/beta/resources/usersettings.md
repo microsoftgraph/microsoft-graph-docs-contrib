@@ -1,18 +1,18 @@
 ---
-title: "settings resource type"
-description: "The current user settings. "
+title: "userSettings resource type"
+description: "The current user settings for content discovery. "
 author: "dkershaw10"
 localization_priority: Normal
 ms.prod: "microsoft-identity-platform"
 doc_type: resourcePageType
 ---
 
-# settings resource type
+# userSettings resource type
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-The current user settings. 
-To learn how to get or update user settings, see [Get settings](../api/user-get-settings.md) and [Update settings](../api/user-update-settings.md).
+The current user settings for content discovery. 
+To learn how to get or update user settings, see [Get settings](../api/usersettings-get.md) and [Update settings](../api/usersettings-update.md).
 
 This resource supports:
 
@@ -22,8 +22,8 @@ This resource supports:
 ## Methods
 | Method       | Return Type  |Description|
 |:---------------|:--------|:----------|
-|[Get user settings](../api/user-get-settings.md) |[settings](../resources/user-settings.md)| Get the user and organization settings. |
-|[Update user settings](../api/user-update-settings.md) |[settings](../resources/user-settings.md)| Update the user current settings. |
+|[Get user settings](../api/usersettings-get.md) |[userSettings](../resources/usersettings.md)| Get the user and organization settings. |
+|[Update user settings](../api/usersettings-update.md) |[userSettings](../resources/usersettings.md)| Update the user current settings. |
 
 ## Properties
 
