@@ -29,9 +29,9 @@ The toolkit implements the following providers:
 
 You can create a provider at any time. We recommend that you create the provider before you use any of the components. This section describes how to initialize a provider.
 
-## The "Providers" namespace
+## Providers namespace
 
-The `Providers` namespace exposes the following properties and functions
+The `Providers` namespace exposes the following properties and functions:
 
 - `globalProvider : IProvider`
 
@@ -45,14 +45,14 @@ The `callbackFunction` function will be called when a provider is changed or whe
 
 The toolkit provides two ways to create new providers:
 
-- Create a new `SimpleProvider` by passing in a function for getting an access token
-- Extend the `IProvider` abstract class
+- Create a new `SimpleProvider` by passing in a function for getting an access token.
+- Extend the `IProvider` abstract class.
 
-Read more about each one in the [custom providers](./providers/custom.md) documentation.
+For more details about each one, see [custom providers](./providers/custom.md).
 
 ## Using multiple providers
 
-In some scenarios your application will run in a different environment and require a different provider. For example, the app might run as both a web application and a Microsoft Teams tab and you might need to use the MsalProvider and the TeamsProvider. For this scenario, all provider components have the `depends-on` attribute to create a fallback chain, as shown in the following example.
+In some scenarios, your application will run in a different environment and require a different provider. For example, the app might run as both a web application and a Microsoft Teams tab and you might need to use the MsalProvider and the TeamsProvider. For this scenario, all provider components have the `depends-on` attribute to create a fallback chain, as shown in the following example.
 
 ```html
 <mgt-teams-provider
@@ -66,7 +66,7 @@ In some scenarios your application will run in a different environment and requi
 
 In this scenario, the MsalProvider will only be used if the TeamsProvider is not available in the current environment.
 
-To accomplish the same in code, you can use the `isAvailable` property on the provider, as shown:
+To accomplish the same in code, you can use the `isAvailable` property on the provider, as shown.
 
 ```ts
 if (TeamsProvider.isAvailable) {
