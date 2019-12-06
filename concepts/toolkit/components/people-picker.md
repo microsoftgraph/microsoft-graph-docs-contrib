@@ -38,7 +38,7 @@ The following is a `show-max` example.
 <mgt-people-picker show-max="4"> </mgt-people-picker>
 ```
 
-## Selected People
+## Selected people
 
 The selected people section of the component renders each person chosen by developer or user. 
 
