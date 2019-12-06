@@ -29,7 +29,7 @@ For details about known issues with Microsoft Graph APIs, see [Known issues](kno
  
 | **Change type** | **Version**   | **Description**                          |
 | :-------------- | :------------ | :--------------------------------------- |
-| Addition | beta | Added [notifications](/graph/api/subscription-post-subscriptions) for new and edited channel messages, and new and edited chat messages.
+| Addition | beta | Added [notifications](/graph/api/subscription-post-subscriptions?view=graph-rest-beta) for new and edited channel messages, and new and edited chat messages.
 
 ## November 2019
 
