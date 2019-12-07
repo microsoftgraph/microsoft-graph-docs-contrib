@@ -41,7 +41,7 @@ public render(): void {
 
 ## Sample
 
-The [sample](https://github.com/microsoftgraph/microsoft-graph-toolkit/tree/master/samples/sp-webpart) in the Microsoft Graph Toolkit repository is a great example of how to use the various components in your SharePoint web parts.
+For an example that shows you how to use the various components in your SharePoint web parts, see the [SharePoint webpart sample](https://github.com/microsoftgraph/microsoft-graph-toolkit/tree/master/samples/sp-webpart) in the Microsoft Graph Toolkit repository.
 
 ## Test in the workbench
 
