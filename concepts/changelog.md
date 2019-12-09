@@ -166,19 +166,19 @@ Microsoft Search is now exposing a way to search and index data in Microsoft Gra
 
 | **Change type** | **Version**   | **Description**                          |
 | :-------------- | :------------ | :--------------------------------------- |
-| Addition        | 1.1          | Added [mgt-get](https://docs.microsoft.com/graph/toolkit/components/get) component. |
-| Addition        | 1.1          | Added [Proxy Provider](https://docs.microsoft.com/graph/toolkit/providers/proxy). |
-| Addition        | 1.1          | Added `inherit-details` attribute to the [person card component](https://docs.microsoft.com/graph/toolkit/components/person). |
-| Addition        | 1.1          | Added `selectedPeople` property to the [people picker component](https://docs.microsoft.com/graph/toolkit/components/people-picker). |
-| Addition        | 1.1          | Added `loading` and `error` templates to the [people picker component](https://docs.microsoft.com/graph/toolkit/components/people-picker). |
-| Addition        | 1.1          | Added `task` and `task-details` templates to the [tasks component](https://docs.microsoft.com/graph/toolkit/components/tasks). |
-| Addition        | 1.1          | Added `isNewTaskVisible` property to the [tasks component](https://docs.microsoft.com/graph/toolkit/components/tasks). |
-| Addition        | 1.1          | Added `taskClick` event to the [tasks component](https://docs.microsoft.com/graph/toolkit/components/tasks). |
-| Addition        | 1.1          | Added `group-id` attribute to the [tasks component](https://docs.microsoft.com/graph/toolkit/components/tasks). |
-| Addition        | 1.1          | Added `taskFilter` property to the [tasks component](https://docs.microsoft.com/graph/toolkit/components/tasks). |
-| Addition        | 1.1          | Added `eventClick` event to the [agenda component](https://docs.microsoft.com/graph/toolkit/components/agenda). |
-| Addition        | 1.1          | Added `person-card` attribute to the [people component](https://docs.microsoft.com/graph/toolkit/components/people). |
-| Addition        | 1.1          | Added `user-ids` attribute to the [people component](https://docs.microsoft.com/graph/toolkit/components/people). |
+| Addition        | 1.1          | Added [mgt-get](/graph/toolkit/components/get) component. |
+| Addition        | 1.1          | Added [Proxy Provider](/graph/toolkit/providers/proxy). |
+| Addition        | 1.1          | Added `inherit-details` attribute to the [person card component](/graph/toolkit/components/person). |
+| Addition        | 1.1          | Added `selectedPeople` property to the [people picker component](/graph/toolkit/components/people-picker). |
+| Addition        | 1.1          | Added `loading` and `error` templates to the [people picker component](/graph/toolkit/components/people-picker). |
+| Addition        | 1.1          | Added `task` and `task-details` templates to the [tasks component](/graph/toolkit/components/tasks). |
+| Addition        | 1.1          | Added `isNewTaskVisible` property to the [tasks component](/graph/toolkit/components/tasks). |
+| Addition        | 1.1          | Added `taskClick` event to the [tasks component](/graph/toolkit/components/tasks). |
+| Addition        | 1.1          | Added `group-id` attribute to the [tasks component](/graph/toolkit/components/tasks). |
+| Addition        | 1.1          | Added `taskFilter` property to the [tasks component](/graph/toolkit/components/tasks). |
+| Addition        | 1.1          | Added `eventClick` event to the [agenda component](/graph/toolkit/components/agenda). |
+| Addition        | 1.1          | Added `person-card` attribute to the [people component](/graph/toolkit/components/people). |
+| Addition        | 1.1          | Added `user-ids` attribute to the [people component](/graph/toolkit/components/people). |
 | Fixes        | 1.1          | [Bug fixes and improvements](https://github.com/microsoftgraph/microsoft-graph-toolkit/releases/tag/v1.1.0). |
 
 ## October 2019
