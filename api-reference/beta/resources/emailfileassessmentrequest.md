@@ -19,7 +19,8 @@ The email file can be an .eml file type.
 
 | Method       | Return Type | Description |
 |:-------------|:------------|:------------|
-| [Create emailFileAssessmentRequest](../api/informationprotection-post-threatassessmentrequests.md) | [emailFileAssessmentRequest](emailFileAssessmentRequest.md) | Create a new email file assessment request by posting an **emailFileAssessmentRequest** object. || [Get emailFileAssessmentRequest](../api/threatassessmentrequest-get.md) | [emailFileAssessmentRequest](emailfileassessmentrequest.md) | Read the properties and relationships of an **emailFileAssessmentRequest** object. |
+| [Create emailFileAssessmentRequest](../api/informationprotection-post-threatassessmentrequests.md) | [emailFileAssessmentRequest](emailFileAssessmentRequest.md) | Create a new email file assessment request by posting an **emailFileAssessmentRequest** object. |
+| [Get emailFileAssessmentRequest](../api/threatassessmentrequest-get.md) | [emailFileAssessmentRequest](emailfileassessmentrequest.md) | Read the properties and relationships of an **emailFileAssessmentRequest** object. |
 
 ## Properties
 
