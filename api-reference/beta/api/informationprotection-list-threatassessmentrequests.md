@@ -15,10 +15,10 @@ Retrieve a list of [threatAssessmentRequest](../resources/threatassessmentreques
 
 A threat assessment request can be one of the following types:
 
-* A mail assessment request ([mailAssessmentRequest](../resources/mailAssessmentRequest.md) resource)
-* An email file assessment request ([emailFileAssessmentRequest](../resources/emailFileAssessmentRequest.md) resource)
-* A file assessment request ([fileAssessmentRequest](../resources/fileAssessmentRequest.md) resource)
-* An url assessment request ([urlAssessmentRequest](../resources/urlAssessmentRequest.md) resource)
+* [Mail](../resources/mailAssessmentRequest.md)
+* [Email file](../resources/emailFileAssessmentRequest.md)
+* [File](../resources/fileAssessmentRequest.md)
+* [URL](../resources/urlAssessmentRequest.md)
 
 ## Permissions
 
@@ -46,7 +46,7 @@ This method supports some of the OData query parameters to help customize the re
 
 | Name      |Description|
 |:----------|:----------|
-| Authorization | Bearer {token} |
+| Authorization | Bearer {token}. Required. |
 
 ## Request body
 
