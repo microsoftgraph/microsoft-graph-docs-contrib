@@ -1,6 +1,6 @@
 ---
 title: "Create threatAssessmentRequest"
-description: "Use this API to create a new threat assessment request."
+description: "Create a new threat assessment request."
 localization_priority: Normal
 author: "hafen-ms"
 ms.prod: "microsoft-identity-platform"
@@ -11,14 +11,14 @@ doc_type: "apiPageType"
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Use this API to create a new threat assessment request.
+Create a new threat assessment request.
 
 A threat assessment request can be one of the following types:
 
-* A mail assessment request ([mailAssessmentRequest](../resources/mailAssessmentRequest.md) resource)
-* An email file assessment request ([emailFileAssessmentRequest](../resources/emailFileAssessmentRequest.md) resource)
-* A file assessment request ([fileAssessmentRequest](../resources/fileAssessmentRequest.md) resource)
-* An url assessment request ([urlAssessmentRequest](../resources/urlAssessmentRequest.md) resource)
+* [Mail](../resources/mailAssessmentRequest.md)
+* [Email file](../resources/emailFileAssessmentRequest.md)
+* [File](../resources/fileAssessmentRequest.md)
+* [URL](../resources/urlAssessmentRequest.md)
 
 ## Permissions
 
@@ -42,7 +42,7 @@ POST /informationProtection/threatAssessmentRequests
 
 | Name          | Description   |
 |:--------------|:--------------|
-| Authorization | Bearer {token} |
+| Authorization | Bearer {token}. Required. |
 
 ## Request body
 
@@ -50,7 +50,7 @@ In the request body, supply a JSON representation of [threatAssessmentRequest](.
 
 ## Response
 
-If successful, this method returns `201, Created` response code and a new [threatAssessmentRequest](../resources/threatassessmentrequest.md) object in the response body.
+If successful, this method returns a `201, Created` response code and a new [threatAssessmentRequest](../resources/threatassessmentrequest.md) object in the response body.
 
 ## Examples
 
