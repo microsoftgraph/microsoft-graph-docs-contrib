@@ -1,6 +1,6 @@
 ---
 title: "fileAssessmentRequest resource type"
-description: "A resource type used to create and retrieve file assessment."
+description: "Used to create and retrieve file assessment."
 localization_priority: Normal
 author: "hafen-ms"
 ms.prod: "microsoft-identity-platform"
@@ -11,7 +11,7 @@ doc_type: "resourcePageType"
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-A resource type used to create and retrieve file assessment, derived from [threatAssessmentRequest](threatAssessmentRequest.md).
+Used to create and retrieve file assessment, derived from [threatAssessmentRequest](threatAssessmentRequest.md).
 
 The file can be a text file or word document or binary file received in email attachment.
 
@@ -19,14 +19,15 @@ The file can be a text file or word document or binary file received in email at
 
 | Method       | Return Type | Description |
 |:-------------|:------------|:------------|
-| [Get fileAssessmentRequest](../api/threatassessmentrequest-get.md) | [fileAssessmentRequest](fileassessmentrequest.md) | Read properties and relationships of fileAssessmentRequest object. |
 | [Create fileAssessmentRequest](../api/informationprotection-post-threatassessmentrequests.md) | [fileAssessmentRequest](fileAssessmentRequest.md) | Create a new file assessment request by posting a **fileAssessmentRequest** object. |
+| [Get fileAssessmentRequest](../api/threatassessmentrequest-get.md) | [fileAssessmentRequest](fileassessmentrequest.md) | Read the properties and relationships of a **fileAssessmentRequest** object. |
+
 
 ## Properties
 
 | Property     | Type        | Description |
 |:-------------|:------------|:------------|
-|contentData|String|Base64 encoded file content. The file content cannot fetch back as we won't store it.|
+|contentData|String|Base64 encoded file content. The file content cannot fetch back because it isn't stored.|
 |fileName|String|The file name.|
 |category|[threatCategory](enums.md#threatcategory-values)|The threat category. Possible values are: `spam`, `phishing`, `malware`.|
 |contentType|[threatAssessmentContentType](enums.md#threatassessmentcontenttype-values)|The content type of threat assessment. Possible values are: `mail`, `url`, `file`.|
