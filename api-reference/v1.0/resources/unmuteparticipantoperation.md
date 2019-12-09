@@ -1,15 +1,15 @@
 --- 
-title: "MuteParticipantOperation resource type"
-description: "Describes the response format of a call participant mute operation."
+title: "unmuteParticipantOperation resource type"
+description: "Describes the response format of a call participant unmute operation."
 author: "VinodRavichandran"
 localization_priority: Normal
 ms.prod: "cloud-communications"
 doc_type: resourcePageType
 ---
 
-# MuteParticipantOperation resource type
+# unmuteParticipantOperation resource type
 
-Describes the response format of a call participant mute operation.
+Describes the response format of a call participant unmute operation.
 
 ## Properties
 
@@ -32,7 +32,7 @@ The following is a JSON representation of the resource.
   "optionalProperties": [
 
   ],
-  "@odata.type": "microsoft.graph.muteParticipantOperation"
+  "@odata.type": "microsoft.graph.unmuteParticipantOperation"
 }-->
 ```json
 {
@@ -47,7 +47,7 @@ The following is a JSON representation of the resource.
 2015-10-25 14:57:30 UTC -->
 <!-- {
   "type": "#page.annotation",
-  "description": "muteParticipantOperation resource",
+  "description": "unmuteParticipantOperation resource",
   "keywords": "",
   "section": "documentation",
   "tocPath": ""

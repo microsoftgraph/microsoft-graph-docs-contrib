@@ -9,16 +9,16 @@ doc_type: resourcePageType
 
 # participantInfo resource type
 
+[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 Contains additional properties about the participant identity
 
 ## Properties
 
-| Property       | Type                          | Description  |
-|:---------------|:------------------------------|:-------------|
-| identity       | [identitySet](identityset.md) | The [identitySet](identityset.md) associated with this participant. |
-| languageId     | String                        | The language culture string. |
-| region         | String                        | Region of the participant. |
+| Property       | Type                          | Description                                                                                                                                                |
+|:---------------|:------------------------------|:-----------------------------------------------------------------------------------------------------------------------------------------------------------|
+| endpointType   | String                        | The type of endpoint the participant is using. Possible values are: `default`, `skypeForBusiness`, or `skypeForBusinessVoipPhone`. Read-only.              |
+| identity       | [identitySet](identityset.md) | The [identitySet](identityset.md) associated with this participant. Read-only.                                                                             |
 
 ## JSON representation
 
@@ -27,15 +27,14 @@ The following is a JSON representation of the resource.
 <!-- {
   "blockType": "resource",
   "optionalProperties": [
-    "languageId", "region"
+    "endpointType",
   ],
   "@odata.type": "microsoft.graph.participantInfo"
 }-->
 ```json
 {
   "identity": { "@odata.type": "#microsoft.graph.identitySet" },
-  "languageId": "String",
-  "region": "String"
+  "endpointType": "default | skypeForBusiness | skypeForBusinessVoipPhone"
 }
 ```
 

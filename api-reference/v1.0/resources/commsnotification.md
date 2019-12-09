@@ -9,7 +9,6 @@ doc_type: resourcePageType
 
 # commsNotification resource type
 
-
 Communications notification base type that is published by Communications servers to notify changes.
 
 ## Properties

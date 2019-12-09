@@ -1,27 +1,27 @@
 --- 
-title: "MuteParticipantOperation resource type"
-description: "Describes the response format of a call participant mute operation."
+title: "SubscribeToToneOperation resource type"
+description: "Describes the response format of creation of subscription to receive DTMF tones."
 author: "VinodRavichandran"
 localization_priority: Normal
 ms.prod: "cloud-communications"
 doc_type: resourcePageType
 ---
 
-# MuteParticipantOperation resource type
+# SubscribeToToneOperation resource type
 
-Describes the response format of a call participant mute operation.
+Describes the response format of creation of subscription to receive DTMF tones.
 
 ## Properties
 
 | Property                       | Type                        | Description                                                                                                                                       |
 | :----------------------------- | :---------------------------| :-------------------------------------------------------------------------------------------------------------------------------------------------|
-| clientContext                  | String                      | Unique client context string. Can have a maximum of 256 characters.                                                                               |
-| id                             | String                      | The server operation ID. Read-only.                                                                                            |
-| resultInfo                     | [resultInfo](resultinfo.md) | The result information.  Read-only.                                                                                            |
+| clientContext                  | String                      | The client context.                                                                                                                               |
+| id                             | String                      | The server operation ID. Read-only.                                                                                             |
+| resultInfo                     | [resultInfo](resultinfo.md) | The result information.  Read-only.                                                                                             |
 | status                         | String                      | Possible values are: `notStarted`, `running`, `completed`, `failed`. Read-only.                                                 |
 
 ## Relationships
-None.
+None
 
 ## JSON representation
 
@@ -32,7 +32,7 @@ The following is a JSON representation of the resource.
   "optionalProperties": [
 
   ],
-  "@odata.type": "microsoft.graph.muteParticipantOperation"
+  "@odata.type": "microsoft.graph.subscribeToToneOperation"
 }-->
 ```json
 {
@@ -47,7 +47,7 @@ The following is a JSON representation of the resource.
 2015-10-25 14:57:30 UTC -->
 <!-- {
   "type": "#page.annotation",
-  "description": "muteParticipantOperation resource",
+  "description": "subscribeToToneOperation resource",
   "keywords": "",
   "section": "documentation",
   "tocPath": ""

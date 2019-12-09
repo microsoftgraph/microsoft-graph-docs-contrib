@@ -13,26 +13,25 @@ The participant type.
 
 ## Methods
 
-| Method                                                          | Return Type                              | Description                                       |
-|:----------------------------------------------------------------|:-----------------------------------------|:--------------------------------------------------|
-| [Get participant](../api/participant-get.md)                    | [participant](participant.md)            | Read properties of the **participant** object.    |
-| [Invite](../api/participant-invite.md)                          | [commsOperation](commsoperation.md)      | Invite a participant to the call.                 |
-| [Mute participant](../api/participant-mute.md)                  | [muteParticipantOperation](muteParticipantOperation.md)      | Mute a participant in a call.                     |
+| Method                                                 | Return Type                                                 | Description                                    |
+|:-------------------------------------------------------|:------------------------------------------------------------|:-----------------------------------------------|
+| [Get participant](../api/participant-get.md)           | [participant](participant.md)                               | Read properties of the **participant** object. |
+| [Invite](../api/participant-invite.md)                 | [commsOperation](commsoperation.md)                         | Invite a participant to the call.              |
+| [Mute participant](../api/participant-mute.md)         | [muteParticipantOperation](muteparticipantoperation.md)     | Mute a participant in a call.                  |
 
 ## Properties
 
 | Property             | Type                                     | Description                                                  |
 | :------------------- | :--------------------------------------- | :------------------------------------------------------------|
-| id                   | String                                   | The participant id.                                          |
+| id                   | String                                   | The participant ID.                                          |
 | info                 | [participantInfo](participantinfo.md)    | The participant of the participant.                          |
-| isInLobby            | boolean                                  | true if the participant is in lobby                          |
-| isMuted              | boolean                                  | true if the participant is muted (client or server muted)    |
+| isInLobby            | Boolean                                  | `true` if the participant is in lobby.                          |
+| isMuted              | Boolean                                  | `true` if the participant is muted (client or server muted).    |
 | mediaStreams         | [mediaStream](mediastream.md) collection | The list of media streams.                                   |
-| metadata             | String                                   | A blob of data provided by the participant in the roster     |
-| recordingInfo        | [recordingInfo](recordinginfo.md)        | Information on whether the participant has recording capability. |
+| metadata             | String                                   | A blob of data provided by the participant in the roster.     |
 
 ## Relationships
-None
+None.
 
 ## JSON representation
 
@@ -52,8 +51,7 @@ The following is a JSON representation of the resource.
   "isInLobby": true,
   "isMuted": true,
   "mediaStreams": [ { "@odata.type": "#microsoft.graph.mediaStream" } ],
-  "metadata": "String",
-  "recordingInfo": { "@odata.type": "#microsoft.graph.recordingInfo" }
+  "metadata": "String"
 }
 ```
 

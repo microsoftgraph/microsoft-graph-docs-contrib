@@ -159,7 +159,7 @@ Content-Type: application/json
       { 
          "@odata.type":"#microsoft.graph.commsNotification",
          "changeType":"deleted",
-         "resource":"/communications/calls/ab6233a5-20b7-4c5e-bea2-ce56c9776429/operations/eec3812a-fdc3-4fb4-825c-a06c9f35414e",
+         "resource":"/app/calls/ab6233a5-20b7-4c5e-bea2-ce56c9776429/operations/eec3812a-fdc3-4fb4-825c-a06c9f35414e",
          "resourceUrl":"/communications/calls/ab6233a5-20b7-4c5e-bea2-ce56c9776429/operations/eec3812a-fdc3-4fb4-825c-a06c9f35414e",
          "resourceData":{ 
             "@odata.type":"#microsoft.graph.inviteParticipantsOperation",
@@ -204,7 +204,7 @@ Content-Type: application/json
       {
          "@odata.type":"#microsoft.graph.commsNotification",
          "changeType":"updated",
-         "resource":"/communications/calls/ab6233a5-20b7-4c5e-bea2-ce56c9776429/participants",
+         "resource":"/app/calls/ab6233a5-20b7-4c5e-bea2-ce56c9776429/participants",
          "resourceUrl":"/communications/calls/ab6233a5-20b7-4c5e-bea2-ce56c9776429/participants",
          "resourceData":[
             {
@@ -247,6 +247,8 @@ Content-Type: application/json
 
 ##### Request
 
+
+# [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "participant-invite-multiple"
@@ -286,6 +288,20 @@ Content-Type: application/json
   "clientContext": "f2fa86af-3c51-4bc2-8fc0-475452d9764f"
 }
 ```
+# [C#](#tab/csharp)
+[!INCLUDE [sample-code](../includes/snippets/csharp/participant-invite-multiple-csharp-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [JavaScript](#tab/javascript)
+[!INCLUDE [sample-code](../includes/snippets/javascript/participant-invite-multiple-javascript-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Objective-C](#tab/objc)
+[!INCLUDE [sample-code](../includes/snippets/objc/participant-invite-multiple-objc-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+---
+
 ##### Response
 
 <!-- {
@@ -412,7 +428,7 @@ Content-Type: application/json
     {
      "@odata.type": "#microsoft.graph.commsNotification",
       "changeType": "updated",
-      "resource": "/communications/calls/7531d31f-d10d-44de-802f-c569dbca451c/operations/participants",
+      "resource": "/app/calls/7531d31f-d10d-44de-802f-c569dbca451c/operations/participants",
       "resourceUrl": "/communications/calls/7531d31f-d10d-44de-802f-c569dbca451c/operations/participants",
       "resourceData": [
         {
@@ -490,6 +506,8 @@ will be read and the rest of the participants will be ignored.
 > see [invitationParticipantInfo](../resources/invitationparticipantinfo.md).
 
 ##### Request
+
+# [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "participant-invite-existing"
@@ -517,6 +535,20 @@ Content-Type: application/json
   "clientContext": "f2fa86af-3c51-4bc2-8fc0-475452d9764f"
 }
 ```
+# [C#](#tab/csharp)
+[!INCLUDE [sample-code](../includes/snippets/csharp/participant-invite-existing-csharp-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [JavaScript](#tab/javascript)
+[!INCLUDE [sample-code](../includes/snippets/javascript/participant-invite-existing-javascript-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Objective-C](#tab/objc)
+[!INCLUDE [sample-code](../includes/snippets/objc/participant-invite-existing-objc-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+---
+
 
 ##### Response
 
@@ -576,7 +608,7 @@ Content-Type: application/json
       { 
          "@odata.type":"#microsoft.graph.commsNotification",
          "changeType":"deleted",
-         "resource":"/communications/calls/ab6233a5-20b7-4c5e-bea2-ce56c9776429/operations/278405a3-f568-4b3e-b684-009193463064",
+         "resource":"/app/calls/ab6233a5-20b7-4c5e-bea2-ce56c9776429/operations/278405a3-f568-4b3e-b684-009193463064",
          "resourceUrl":"/communications/calls/ab6233a5-20b7-4c5e-bea2-ce56c9776429/operations/278405a3-f568-4b3e-b684-009193463064",
          "resourceData":{ 
             "@odata.type":"#microsoft.graph.inviteParticipantsOperation",

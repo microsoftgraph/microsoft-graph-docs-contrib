@@ -9,7 +9,6 @@ doc_type: apiPageType
 
 # call: reject
 
-
 Enable a bot to reject an incoming call. The incoming call request can be an invite from a participant in a group call or a peer-to-peer call. If an invite to a group call is received, the notification will contain the **chatInfo** and **meetingInfo** parameters.
 
 The bot is expected to answer or reject the call before the call times out. The current timeout value is 15 seconds.
@@ -107,6 +106,7 @@ Content-Type: application/json
 
 <!-- {
   "blockType": "example",
+  "name": "call-reject-none",
   "@odata.type": "microsoft.graph.commsNotifications"
 }-->
 ```json
@@ -153,6 +153,8 @@ Content-Type: application/json
 
 ##### Request
 
+
+# [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "call-reject-none-reason"
@@ -166,6 +168,20 @@ Content-Length: 24
   "reason": "none"
 }
 ```
+# [C#](#tab/csharp)
+[!INCLUDE [sample-code](../includes/snippets/csharp/call-reject-none-reason-csharp-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [JavaScript](#tab/javascript)
+[!INCLUDE [sample-code](../includes/snippets/javascript/call-reject-none-reason-javascript-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Objective-C](#tab/objc)
+[!INCLUDE [sample-code](../includes/snippets/objc/call-reject-none-reason-objc-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+---
+
 
 ##### Response
 <!-- {

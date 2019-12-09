@@ -104,7 +104,7 @@ Content-Type: application/json
   },
   "targets": [
     {
-      "@odata.type": "#microsoft.graph.participantInfo",
+      "@odata.type": "#microsoft.graph.invitationParticipantInfo",
       "identity": {
         "@odata.type": "#microsoft.graph.identitySet",
         "user": {
@@ -138,7 +138,7 @@ Content-Type: application/json
   "tenantId": "aa67bd4c-8475-432d-bd41-39f255720e0a",
   "myParticipantId": "499ff390-7a72-40e8-83a0-8fac6295ae7e",
   "id": "2e1a0b00-2db4-4022-9570-243709c565ab",
-  "@odata.context": "https://graph.microsoft.com/v1.0/$metadata#app/calls/$entity",
+  "@odata.context": "https://graph.microsoft.com/v1.0/$metadata#communications/calls/$entity",
   "subject": null,
   "terminationReason": null,
   "ringingTimeoutInSeconds": null,
@@ -153,13 +153,29 @@ Content-Type: application/json
 ### Example 2: Getting a group call
 
 ##### Request
+
+# [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "get-call"
 }-->
-```http
+```msgraph-interactive
 GET https://graph.microsoft.com/v1.0/communications/calls/2f1a1100-b174-40a0-aba7-0b405e01ed92
 ```
+# [C#](#tab/csharp)
+[!INCLUDE [sample-code](../includes/snippets/csharp/get-call-csharp-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [JavaScript](#tab/javascript)
+[!INCLUDE [sample-code](../includes/snippets/javascript/get-call-javascript-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Objective-C](#tab/objc)
+[!INCLUDE [sample-code](../includes/snippets/objc/get-call-objc-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+---
+
 
 ##### Response
 
@@ -232,7 +248,7 @@ Content-Type: application/json
   "tenantId": "aa67bd4c-8475-432d-bd41-39f255720e0a",
   "myParticipantId": "05491616-385f-44a8-9974-18cc5f9933c1",
   "id": "2f1a1100-b174-40a0-aba7-0b405e01ed92",
-  "@odata.context": "https://graph.microsoft.com/v1.0/$metadata#app/calls/$entity",
+  "@odata.context": "https://graph.microsoft.com/v1.0/$metadata#communications/calls/$entity",
   "terminationReason": null,
   "ringingTimeoutInSeconds": null,
   "subject": null,

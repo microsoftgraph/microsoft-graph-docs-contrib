@@ -9,9 +9,13 @@ doc_type: apiPageType
 
 # call: mute
 
-[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
-
 Allows the application to mute itself.
+
+This is a server mute, meaning that the server will drop all audio packets for this participant, even if the participant continues to stream audio.
+
+For more details about how to handle mute operations, see [muteParticipantOperation](../resources/muteparticipantoperation.md)
+
+> **Note:** This method is only supported for group calls.
 
 ## Permissions
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
@@ -32,6 +36,7 @@ POST /communications/calls/{id}/mute
 | Name          | Description               |
 |:--------------|:--------------------------|
 | Authorization | Bearer {token}. Required. |
+| Content-type | application/json. Required. |
 
 ## Request body
 In the request body, provide a JSON object with the following parameters.
@@ -41,7 +46,9 @@ In the request body, provide a JSON object with the following parameters.
 |clientContext|String|The client context.|
 
 ## Response
-If successful, this method returns `200 OK` response code and a [muteOperation](../resources/muteOperation.md) object in the response body.
+If successful, this method returns a `200 OK` response code and a [muteParticipantOperation](../resources/muteParticipantoperation.md) object in the response body.
+
+> **Note:** After this operation returns a successful response, all participants will receive a roster update
 
 ## Example
 The following example shows how to call this API.
@@ -86,7 +93,7 @@ Content-Type: application/json
 <!-- { 
   "blockType": "response", 
   "truncated": true, 
-  "@odata.type": "microsoft.graph.muteOperation" 
+  "@odata.type": "microsoft.graph.muteParticipantOperation" 
 } --> 
 ```http
 HTTP/1.1 200 OK
@@ -97,13 +104,13 @@ Content-Length: 259
 
 <!-- {
   "blockType": "example",
-  "@odata.type": "microsoft.graph.muteOperation",
+  "@odata.type": "microsoft.graph.muteParticipantOperation",
   "truncated": true
 }-->
 ```json
 {
-  "@odata.type": "#microsoft.graph.muteOperation",
-  "@odata.context": "https://graph.microsoft.com/v1.0/$metadata#muteOperation",
+  "@odata.type": "#microsoft.graph.muteParticipantOperation",
+  "@odata.context": "https://graph.microsoft.com/v1.0/$metadata#muteParticipantOperation",
   "id": "17e3b46c-f61d-4f4d-9635-c626ef18e6ad",
   "status": "completed",
   "clientContext": "clientContext-value"
