@@ -1,6 +1,6 @@
 ---
 title: "mailAssessmentRequest resource type"
-description: "A resource type used to create and retrieve mail assessment."
+description: "Used to create and retrieve mail assessment."
 localization_priority: Normal
 author: "hafen-ms"
 ms.prod: "microsoft-identity-platform"
@@ -11,23 +11,24 @@ doc_type: "resourcePageType"
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-A resource type used to create and retrieve mail assessment, derived from [threatAssessmentRequest](threatAssessmentRequest.md).
+Used to create and retrieve mail assessment, derived from [threatAssessmentRequest](threatAssessmentRequest.md).
 
-When you creat a mail assessment request, the mail should be received by the user specified in `recipientEmail`. And delegated [Mail permissions](/graph/permissions-reference#mail-permissions) (Mail.Read or Mail.Read.Shared) are requried to access the mail received by yourself or shared by someone else.
+When you creat a mail assessment request, the mail should be received by the user specified in `recipientEmail`. Delegated [Mail permissions](/graph/permissions-reference#mail-permissions) (Mail.Read or Mail.Read.Shared) are requried to access the mail received or shared by someone else.
 
 ## Methods
 
 | Method       | Return Type | Description |
 |:-------------|:------------|:------------|
-| [Get mailAssessmentRequest](../api/threatassessmentrequest-get.md) | [mailAssessmentRequest](mailassessmentrequest.md) | Read properties and relationships of mailAssessmentRequest object. |
 | [Create mailAssessmentRequest](../api/informationprotection-post-threatassessmentrequests.md) | [mailAssessmentRequest](mailAssessmentRequest.md) | Create a new mail assessment request by posting a **mailAssessmentRequest** object. |
+| [Get mailAssessmentRequest](../api/threatassessmentrequest-get.md) | [mailAssessmentRequest](mailassessmentrequest.md) | Read the properties and relationships of a **mailAssessmentRequest** object. |
+
 
 ## Properties
 
 | Property     | Type        | Description |
 |:-------------|:------------|:------------|
 |destinationRoutingReason|[mailDestinationRoutingReason](enums.md#maildestinationroutingreason-values)|The reason for mail routed to its destination. Possible values are: `none`, `mailFlowRule`, `safeSender`, `blockedSender`, `advancedSpamFiltering`, `domainAllowList`, `domainBlockList`, `notInAddressBook`, `firstTimeSender`, `autoPurgeToInbox`, `autoPurgeToJunk`, `autoPurgeToDeleted`, `outbound`, `notJunk`, `junk`.|
-|messageUri|String|The graph resource URI of the mail message for assessment.|
+|messageUri|String|The resource URI of the mail message for assessment.|
 |recipientEmail|String|The mail recipient whose policies are used to assess the mail.|
 |category|[threatCategory](enums.md#threatcategory-values)|The threat category. Possible values are: `spam`, `phishing`, `malware`.|
 |contentType|[threatAssessmentContentType](enums.md#threatassessmentcontenttype-values)|The content type of threat assessment. Possible values are: `mail`, `url`, `file`.|
