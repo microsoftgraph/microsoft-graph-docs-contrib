@@ -1,6 +1,6 @@
 ---
 title: "emailFileAssessmentRequest resource type"
-description: "A resource type used to create and retrieve email file assessment."
+description: "Used to create and retrieve email file assessment."
 localization_priority: Normal
 author: "hafen-ms"
 ms.prod: "microsoft-identity-platform"
@@ -11,22 +11,21 @@ doc_type: "resourcePageType"
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-A resource type used to create and retrieve email file assessment, derived from [threatAssessmentRequest](threatAssessmentRequest.md).
+Used to create and retrieve email file assessment, derived from [threatAssessmentRequest](threatAssessmentRequest.md).
 
-The email file can be a `.eml` type file.
+The email file can be an .eml file type.
 
 ## Methods
 
 | Method       | Return Type | Description |
 |:-------------|:------------|:------------|
-| [Get emailFileAssessmentRequest](../api/threatassessmentrequest-get.md) | [emailFileAssessmentRequest](emailfileassessmentrequest.md) | Read properties and relationships of emailFileAssessmentRequest object. |
-| [Create emailFileAssessmentRequest](../api/informationprotection-post-threatassessmentrequests.md) | [emailFileAssessmentRequest](emailFileAssessmentRequest.md) | Create a new email file assessment request by posting an **emailFileAssessmentRequest** object. |
+| [Create emailFileAssessmentRequest](../api/informationprotection-post-threatassessmentrequests.md) | [emailFileAssessmentRequest](emailFileAssessmentRequest.md) | Create a new email file assessment request by posting an **emailFileAssessmentRequest** object. || [Get emailFileAssessmentRequest](../api/threatassessmentrequest-get.md) | [emailFileAssessmentRequest](emailfileassessmentrequest.md) | Read the properties and relationships of an **emailFileAssessmentRequest** object. |
 
 ## Properties
 
 | Property     | Type        | Description |
 |:-------------|:------------|:------------|
-|contentData|String|Base64 encoded `.eml` email file content. The file content cannot fetch back as we won't store it.|
+|contentData|String|Base64 encoded .eml email file content. The file content cannot fetch back because it isn't stored.|
 |destinationRoutingReason|[mailDestinationRoutingReason](enums.md#maildestinationroutingreason-values)|The reason for mail routed to its destination. Possible values are: `none`, `mailFlowRule`, `safeSender`, `blockedSender`, `advancedSpamFiltering`, `domainAllowList`, `domainBlockList`, `notInAddressBook`, `firstTimeSender`, `autoPurgeToInbox`, `autoPurgeToJunk`, `autoPurgeToDeleted`, `outbound`, `notJunk`, `junk`.|
 |recipientEmail|String|The mail recipient whose policies are used to assess the mail.|
 |category|[threatCategory](enums.md#threatcategory-values)|The threat category. Possible values are: `spam`, `phishing`, `malware`.|
