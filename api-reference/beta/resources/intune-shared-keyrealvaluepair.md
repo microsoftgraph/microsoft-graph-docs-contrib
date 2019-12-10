@@ -16,12 +16,12 @@ doc_type: resourcePageType
 A key-value pair with a string key and a real (floating-point) value.
 
 
-Inherits from [keyTypedValuePair](../resources/intune-deviceconfig-keytypedvaluepair.md)
+Inherits from [keyTypedValuePair](../resources/intune-shared-keytypedvaluepair.md)
 
 ## Properties
 |Property|Type|Description|
 |:---|:---|:---|
-|key|String|The string key of the key-value pair. Inherited from [keyTypedValuePair](../resources/intune-deviceconfig-keytypedvaluepair.md)|
+|key|String|The string key of the key-value pair. Inherited from [keyTypedValuePair](../resources/intune-shared-keytypedvaluepair.md)|
 |value|Double|The real (floating-point) value of the key-value pair.|
 
 ## Relationships
