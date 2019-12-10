@@ -10536,11 +10536,11 @@
           href: resources/swapshiftchangerequest.md
           items:
           - name: Get
-            href: api/swapshiftchangerquest-get.md
+            href: api/swapshiftchangerequest-get.md
           - name: Update
-            href: api/swapshiftchangerquest-update.md
+            href: api/swapshiftchangerequest-update.md
           - name: Delete
-            href: api/swapshiftchangerquest-delete.md
+            href: api/swapshiftchangerequest-delete.md
         - name: Time off
           href: resources/timeoff.md
           items:
