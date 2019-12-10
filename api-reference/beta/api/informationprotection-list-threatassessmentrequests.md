@@ -40,7 +40,14 @@ GET /informationProtection/threatAssessmentRequests
 
 ## Optional query parameters
 
-This method supports some of the OData query parameters to help customize the response. For general information, see [OData query parameters](/graph/query-parameters).
+This method supports the following OData query parameters to help customize the response. For general information, see [OData query parameters](/graph/query-parameters).
+
+|Name            |Value    |Description                                                                                                                                                                 |
+|:---------------|:--------|:---------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+|$filter         |string   |Limits the response to only those objects which contain the specified criteria.                                                                                             |
+|$orderby        |string   |By default, the objects in the response are descending ordered by their **createdDateTime** value.                                                                          |
+|$select         |string   |Comma-separated list of properties to include in the response. For optimal performance, only select the subset of properties needed.                                        |
+|$skipToken      |string   |Retrieves the next page of results from result sets that span multiple pages.                                                                                               |
 
 ## Request headers
 

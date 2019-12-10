@@ -40,7 +40,12 @@ GET /informationProtection/threatAssessmentRequests/{id}
 
 ## Optional query parameters
 
-This method supports some of the OData query parameters to help customize the response. For example, to retrieve the threat assessment result for each request, include `$expand=results` in the query. For general information, see [OData query parameters](/graph/query-parameters).
+This method supports the following OData query parameters to help customize the response. For general information, see [OData query parameters](/graph/query-parameters).
+
+|Name            |Value    |Description                                                                                                                                                                 |
+|:---------------|:--------|:---------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+|$expand         |string   |Using `$expand=results` in the query to retrieve the threat assessment result.                                                                                              |
+|$select         |string   |Comma-separated list of properties to include in the response. For optimal performance, only select the subset of properties needed.                                        |
 
 ## Request headers
 
