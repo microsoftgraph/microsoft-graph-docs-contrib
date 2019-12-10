@@ -55,7 +55,7 @@ POST /informationprotection/policy/labels/{id}/evaluateClassificationResults
 | :------------ | :-------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
 | Authorization | Bearer {token}. Required.                                                                                                                                             |
 | Content-type  | application/json. Required.                                                                                                                                           |
-| User-Agent    | Describes the name of the calling application. Details will surface in Azure Information Protection Analytics. Suggested format is ApplicationName/Version. Optional. |
+| User-Agent    | Describes the name and version of the calling application. Details will surface in Azure Information Protection Analytics. Suggested format is ApplicationName/Version. Optional. |
 
 ## Request body
 
