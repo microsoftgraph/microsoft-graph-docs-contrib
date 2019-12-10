@@ -52,6 +52,27 @@ For details about known issues with Microsoft Graph APIs, see [Known issues](kno
 | :-------------- | :------------ | :--------------------------------------- |
 | Addition | beta | Added support for subscribing to notifications that include resource data. Currently supported resources are [chatMessage](/graph/api/resources/chatmessage?view=graph-rest-beta) resources in Microsoft Teams channels and chats. Subscribing apps will have to implement additional authorization and decryption code to benefit from this feature. For more details, see [Set up change notifications for chat messages, including message properties (preview)](webhooks-with-resource-data.md).|
 
+### Microsoft Graph Toolkit
+
+Introduced version 1.1 of the Microsoft Graph Toolkit.
+
+| **Change type** | **Version**   | **Description**                          |
+| :-------------- | :------------ | :--------------------------------------- |
+| Addition        | NA         | Added the [mgt-get](/graph/toolkit/components/get) component. |
+| Addition        | NA         | Added [Proxy provider](/graph/toolkit/providers/proxy). |
+| Addition        | NA          | Added the `inherit-details` attribute to the [person card component](/graph/toolkit/components/person). |
+| Addition        | NA         | Added the `selectedPeople` property to the [people picker component](/graph/toolkit/components/people-picker). |
+| Addition        | NA        | Added the `loading` and `error` templates to the [people picker component](/graph/toolkit/components/people-picker). |
+| Addition        | NA        | Added the `task` and `task-details` templates to the [tasks component](/graph/toolkit/components/tasks). |
+| Addition        | NA          | Added the `isNewTaskVisible` property to the [tasks component](/graph/toolkit/components/tasks). |
+| Addition        | NA        | Added the `group-id` attribute to the [tasks component](/graph/toolkit/components/tasks). |
+| Addition        | NA          | Added the `taskFilter` property to the [tasks component](/graph/toolkit/components/tasks). |
+| Addition        | NA         | Added the `eventClick` event to the [agenda component](/graph/toolkit/components/agenda). |
+| Addition        | NA          | Added the `person-card` attribute to the [people component](/graph/toolkit/components/people). |
+| Addition        | NA          | Added the `user-ids` attribute to the [people component](/graph/toolkit/components/people). |
+| Fixes        | NA         | [Bug fixes and improvements](https://github.com/microsoftgraph/microsoft-graph-toolkit/releases/tag/v1.1.0). |
+
+
 ### People intelligence | Insights
 
 | **Change type** | **Version**   | **Description**                          |
