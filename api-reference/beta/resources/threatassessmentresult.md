@@ -1,6 +1,6 @@
 ---
 title: "threatAssessmentResult resource type"
-description: "A resouce type used to represent a threat assessment result item."
+description: "Represents a threat assessment result item."
 localization_priority: Normal
 author: "hafen-ms"
 ms.prod: "microsoft-identity-platform"
@@ -11,7 +11,7 @@ doc_type: "resourcePageType"
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-A resouce type used to represent a threat assessment result item.
+Represents a threat assessment result item.
 
 ## Properties
 
