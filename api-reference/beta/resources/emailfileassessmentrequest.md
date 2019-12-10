@@ -1,6 +1,6 @@
 ---
 title: "emailFileAssessmentRequest resource type"
-description: "Used to create and retrieve email file assessment."
+description: "Used to create and retrieve an email file threat assessment."
 localization_priority: Normal
 author: "hafen-ms"
 ms.prod: "microsoft-identity-platform"
@@ -11,7 +11,7 @@ doc_type: "resourcePageType"
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Used to create and retrieve email file assessment, derived from [threatAssessmentRequest](threatAssessmentRequest.md).
+Used to create and retrieve an email file threat assessment, derived from [threatAssessmentRequest](threatAssessmentRequest.md).
 
 The email file can be an .eml file type.
 
