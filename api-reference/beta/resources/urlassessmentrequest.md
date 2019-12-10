@@ -17,8 +17,8 @@ Used to create and retrieve a URL threat assessment, derived from [threatAssessm
 
 | Method       | Return Type | Description |
 |:-------------|:------------|:------------|
-| [Create urlAssessmentRequest](../api/informationprotection-post-threatassessmentrequests.md) | [urlAssessmentRequest](urlAssessmentRequest.md) | Create a new URL assessment request by posting an **urlAssessmentRequest** object. |
-| [Get urlAssessmentRequest](../api/threatassessmentrequest-get.md) | [urlAssessmentRequest](urlassessmentrequest.md) | Read the properties and relationships of a **urlAssessmentRequest** object. |
+| [Create threatAssessmentRequest](../api/informationprotection-post-threatassessmentrequests.md) | [urlAssessmentRequest](urlAssessmentRequest.md) | Create a new URL assessment request by posting an **urlAssessmentRequest** object. |
+| [Get threatAssessmentRequest](../api/threatassessmentrequest-get.md) | [urlAssessmentRequest](urlassessmentrequest.md) | Read the properties and relationships of a **urlAssessmentRequest** object. |
 
 ## Properties
 
