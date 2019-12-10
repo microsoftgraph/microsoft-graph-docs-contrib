@@ -1,10 +1,10 @@
 ---
 title: "List servicePrincipals"
 description: "Retrieve a list of servicePrincipal objects."
-localization_priority: Normal
+author: "davidmu1"
+localization_priority: Priority
+ms.prod: "microsoft-identity-platform"
 doc_type: apiPageType
-ms.prod: ""
-author: ""
 ---
 
 # List servicePrincipals
@@ -14,7 +14,6 @@ Retrieve a list of servicePrincipal objects.
 ## Permissions
 
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
-
 
 |Permission type      | Permissions (from least to most privileged)              |
 |:--------------------|:---------------------------------------------------------|
@@ -33,9 +32,10 @@ GET /servicePrincipals
 This method supports the [OData Query Parameters](https://developer.microsoft.com/graph/docs/concepts/query_parameters) to help customize the response.
 
 ## Request headers
-| Name | Description |
-|:----------|:----------|
-| Authorization  | string  | Bearer {token}. Required. |
+| Name       | Type | Description|
+|:-----------|:------|:----------|
+| Authorization  | string  | Bearer {token}. Required.  |
+| Content-type   | application/json. Required. |
 
 ## Request body
 
@@ -45,69 +45,65 @@ Do not supply a request body for this method.
 
 If successful, this method returns a `200 OK` response code and collection of [servicePrincipal](../resources/serviceprincipal.md) objects in the response body.
 
-## Example
+## Examples
+### Request
+Here is an example of the request.
 
-##### Request
-
-
-# [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
-  "name": "get_serviceprincipals"
+  "name": "list_serviceprincipal"
 }-->
-```msgraph-interactive
-GET https://graph.microsoft.com/beta/servicePrincipals
+
+```http
+GET https://graph.microsoft.com/v1.0/serviceprincipals
 ```
-# [C#](#tab/csharp)
-[!INCLUDE [sample-code](../includes/snippets/csharp/get-serviceprincipals-csharp-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# [JavaScript](#tab/javascript)
-[!INCLUDE [sample-code](../includes/snippets/javascript/get-serviceprincipals-javascript-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+### Response
+Here is an example of the response. 
 
-# [Objective-C](#tab/objc)
-[!INCLUDE [sample-code](../includes/snippets/objc/get-serviceprincipals-objc-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
----
-
-##### Response
-
-Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.
+> **Note:** The response object shown here might be shortened for readability. All the properties will be returned from an actual call.
 <!-- {
   "blockType": "response",
   "truncated": true,
   "@odata.type": "microsoft.graph.servicePrincipal",
   "isCollection": true
 } -->
+
 ```http
 HTTP/1.1 200 OK
 Content-type: application/json
-Content-length: 488
 
 {
-  "value": [
-    {
+    "value": [{
       "accountEnabled": true,
-      "addIns": [
-        {
-          "id": "id-value",
-          "type": "type-value",
-          "properties": [
-            {
-              "key": "key-value",
-              "value": "value-value"
-            }
-          ]
-        }
-      ],
-      "appDisplayName": "appDisplayName-value",
+      "addIns": [],
+      "alternativeNames": ["http://contoso/a7770d29-4321-41a6-b863-ca11d6639448"],
+      "appDisplayName": "My app",
       "appId": "appId-value",
-      "appOwnerOrganizationId": "appOwnerOrganizationId-value",
-      "appRoleAssignmentRequired": true
-    }
-  ]
+      "appOwnerOrganizationId": "65415bb1-9267-4313-bbf5-ae259732ee12",
+      "appRoleAssignmentRequired": true "appRoles": [],
+      "displayName": "My app instance in tenant",
+      "endpoints": [],
+      "homepage": null,
+      "id": "00af5dfb-85da-4b41-a677-0c6b86dd34f8",
+      "info": {
+          "termsOfServiceUrl": null,
+          "supportUrl": null,
+          "privacyStatementUrl": null,
+          "marketingUrl": null,
+          "logoUrl": null
+      },
+      "keyCredentials": [],
+      "logoutUrl": null,
+      "oauth2PermissionScopes": [],
+      "passwordCredentials": [],
+      "publisherName": null,
+      "replyUrls": [],
+      "servicePrincipalNames": [],
+      "servicePrincipalType": null,
+      "tags": [],
+      "tokenEncryptionKeyId": null
+    }]
 }
 ```
 

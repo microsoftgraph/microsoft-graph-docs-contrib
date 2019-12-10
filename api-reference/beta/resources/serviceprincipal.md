@@ -48,7 +48,8 @@ This resource supports:
 |:---------------|:--------|:----------|
 |accountEnabled|Boolean| **true** if the service principal account is enabled; otherwise, **false**.|
 | addIns | [addIn](addin.md) | Defines custom behavior that a consuming service can use to call an app in specific contexts. For example, applications that can render file streams [may set the addIns property](https://docs.microsoft.com/onedrive/developer/file-handlers/?view=odsp-graph-online) for its "FileHandler" functionality. This will let services like Office 365 call the application in the context of a document the user is working on.|
-|alternativeNames|String collection| Used for Managed Identities. Learn more about [managed identities](https://aka.ms/azuremanagedidentity).|
+|alternativeNames|String collection| Used to retrieve service principals by subscription, identify resource group and full resource ids for [managed identities](https://aka.ms/azuremanagedidentity).|
+| api | [apiApplication](apiserviceprincipal.md) |  |
 |appDisplayName|String|The display name exposed by the associated application.|
 |appId|String|The unique identifier for the associated application (its **appId** property).|
 |applicationTemplateId|String|Represents an application in the [Azure AD application gallery](https://docs.microsoft.com/azure/active-directory/saas-apps/tutorial-list).|
@@ -56,6 +57,7 @@ This resource supports:
 |appRoleAssignmentRequired|Boolean|Specifies whether an **appRoleAssignment** to a user or group is required before Azure AD will issue a user or access token to the application. Not nullable. |
 |appRoles|[appRole](approle.md) collection|The application roles exposed by the associated application. For more information see the **appRoles** property definition on the [application](application.md) entity. Not nullable. |
 |displayName|String|The display name for the service principal.|
+|endpoints|[endPoint](endpoint.md) collection|Endpoints available for discovery. Services like Sharepoint populates this property with tenant specific endpoints that other services can discover and use. This is a contained entity type collection.|
 |errorUrl|String|Deprecated. Don't use.|
 |homepage|String|Home page or landing page of the application.|
 | id | String | The unique identifier for the service principal. Inherited from [directoryObject](directoryobject.md). Key. Not nullable. Read-only. |
@@ -64,7 +66,7 @@ This resource supports:
 |loginUrl|String||
 |logoutUrl|String| Specifies the URL that will be used by Microsoft's authorization service to logout an user using [front-channel](https://openid.net/specs/openid-connect-frontchannel-1_0.html), [back-channel](https://openid.net/specs/openid-connect-backchannel-1_0.html) or SAML logout protocols.|
 |notificationEmailAddresses|String collection|Email addresses where Microsoft can send important communications related to the application (e.g. expiring certificates).|
-|publishedPermissionScopes|[permissionScope](permissionScope.md) collection|The OAuth 2.0 permissions exposed by the associated application. For more information see the **oauth2Permissions** property definition on the [application](application.md) entity. Not nullable.            |
+|publishedPermissionScopes|[permissionScope](permissionScope.md) collection|The OAuth 2.0 permissions exposed by the associated application. For more information see the **oauth2PermissionScopes** property definition on the [application](application.md) entity. Not nullable.            |
 |passwordCredentials|[passwordCredential](passwordcredential.md) collection|The collection of password credentials associated with the service principal. Not nullable. |
 |preferredSingleSignOnMode|string||
 |preferredTokenSigningKeyEndDateTime|DateTimeOffset||
@@ -74,8 +76,8 @@ This resource supports:
 |samlMetadataUrl|String|The url where the service exposes SAML metadata for federation.|
 |samlSingleSignOnSettings||
 |serviceEndpoints|[endPoint](endpoint.md)|A collection of user defined service endpoints for discovering the capabilities of the application.|
-|servicePrincipalNames|String collection|The URIs that identify the associated application. For more information see, [Application Objects and Service Principal Objects](https://msdn.microsoft.com/library/azure/dn132633.aspx). The **any** operator is required for filter expressions on multi-valued properties.  Not nullable. |
-|servicePrincipalType|String|Contains the value that indicates whether the service principal is backed by an application, or a legacy standalone one, MSI or a SocialIDP. Read-only.|
+|servicePrincipalNames|String collection|Contains the list of **identifiersUris**, copied over from the associated [application](application.md). Additional values can be added to hybrid applications. These values can be used to identify the permissions exposed by this app within Azure AD. For example,<ul><li>Client apps requesting permissions to this resource can use these URIs to specify needed permissions in the **requiredResourceAccess** property of their application manifest, or in the "API permissions" blade on the App registrations experience.</li><li>Client apps can specify a resource URI which is based on the values of this property to acquire an access token, which is the URI returned in the “aud” claim.</li></ul><br>The any operator is required for filter expressions on multi-valued properties. Not nullable.|
+|servicePrincipalType|String|Identifies if the service principal represents an app or a managed identity. Read-only.|
 |tags|String collection| Not nullable. |
 |tokenEncryptionKeyId|String|Specifies the keyId of a public key from the keyCredentials collection. When configured, Azure AD encrypts all the tokens it emits by using the key this property points to. The application code that receives the encrypted token must use the matching private key to decrypt the token before it can be used for the signed-in user.|
 |useCustomTokenSigningKey|Boolean|Specifies if a custom token signing key can be used. The default value is false.|
@@ -120,20 +122,18 @@ Here is a JSON representation of the resource
   "appId": "string",
   "appOwnerOrganizationId": "guid",
   "applicationTemplateId": "string",
-  "appRoleAssignedTo": [{"@odata.type": "microsoft.graph.appRoleAssignment"}],
-  "appRoleAssignments": [{"@odata.type": "microsoft.graph.appRoleAssignment"}],
   "appRoleAssignmentRequired": true,
   "appRoles": [{"@odata.type": "microsoft.graph.appRole"}],
   "displayName": "string",
+  "endpoints": [{"@odata.type": "microsoft.graph.endPoint"}],
   "errorUrl": "string",
   "homepage": "string",
-  "info": {"@odata.type": "microsoft.graph.informationalUrl"},
   "id": "string (identifier)",
+  "info": {"@odata.type": "microsoft.graph.informationalUrl"},
   "keyCredentials": [{"@odata.type": "microsoft.graph.keyCredential"}],
   "loginUrl": "string",
   "logoutUrl": "string",
   "notificationEmailAddresses": ["string"],
-  "oauth2PermissionGrants": [{"@odata.type": "microsoft.graph.oAuth2PermissionGrant"}],
   "publishedPermissionScopes": [{"@odata.type": "microsoft.graph.permissionScope"}],
   "passwordCredentials": [{"@odata.type": "microsoft.graph.passwordCredential"}],
   "preferredSingleSignOnMode": "string",
@@ -143,13 +143,12 @@ Here is a JSON representation of the resource
   "replyUrls": ["string"],
   "samlMetadataUrl": "string",
   "samlSingleSignOnSettings": "microsoft.DirectoryServices.SamlSingleSignOnSettings",
-  "serviceEndpoints": [{"@odata.type": "microsoft.graph.endPoint"}],
   "servicePrincipalNames": ["string"],
   "servicePrincipalType": "string",
   "signInAudience": "String",
   "tags": ["string"],
   "tokenEncryptionKeyId": "String",
-  "useCustomTokenSigningKey": false 
+  "useCustomTokenSigningKey": false
 }
 ```
 
