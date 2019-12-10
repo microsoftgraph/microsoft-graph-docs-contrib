@@ -11,7 +11,7 @@ doc_type: resourcePageType
 
 The **call** resource is created when there is an incoming call for the application or the application creates a new outgoing call via a `POST` on `app/calls`.
 
-Calls can be set up as a peer-to-peer or as a multiparty call. For creating or joining a multiparty call, supply the `chatInfo` and `meetingInfo`. If these are not supplied, a new ad hoc meeting is created automatically. For an incoming call, record these values in a highly available store, so that your application to rejoin the call in the event your application crashes.
+Calls can be set up as a peer-to-peer or as a group call. For creating or joining a group call, supply the `chatInfo` and `meetingInfo`. If these are not supplied, a new ad hoc meeting is created automatically. For an incoming call, record these values in a highly available store, so that your application to rejoin the call in the event your application crashes.
 
 Although the same identity cannot be invited multiple times, it is possible for an application to join the same meeting multiple times. Each time the application joins, a distinct call `id` is provided for that call to the meeting. We recommend that you use separate identities to join the meeting in order for the clients to display them as different participants.
 
@@ -56,7 +56,6 @@ Although the same identity cannot be invited multiple times, it is possible for 
 | requestedModalities | String collection                                                                                      | The list of requested modalities. | Possible values are: `unknown`, `audio`, `video`, `videoBasedScreenSharing`, `data`.                                                                            |
 | resultInfo          | [resultInfo](resultinfo.md)                                                                            | The result information. For example can hold termination reason. Read-only.                                                                                                        |
 | ringingTimeoutInSeconds | Int32                                                                                              | Ringing timeout in seconds for outgoing peer to peer calls. The max value for this attribute is 115 seconds.                                                                                        |
-| routingPolicies     | String collection                                                                                      | This property is applicable for peer to peer calls only. Possible values are: `none`, `noMissedCall`, `disableForwardingExceptPhone`, `disableForwarding`, `preferSkypeForBusiness`.                                                                                                   |
 | source              | [participantInfo](participantinfo.md)                                                                  | The originator of the call.                                                                                                                                                                         |
 | state               | String                                                                                                 | The call state. Possible values are: `incoming`, `establishing`, `ringing`, `established`, `hold`, `transferring`, `transferAccepted`, `redirecting`, `terminating`, `terminated`. Read-only.                          |
 | subject             | String                                                                                                 | The subject of the conversation.                                                                                                                                                                    |
@@ -89,7 +88,6 @@ The following is a JSON representation of the resource.
     "replacesContext",
     "resultInfo",
     "ringingTimeoutInSeconds",
-    "routingPolicies",
     "state",
     "source",
     "subject",
@@ -116,7 +114,6 @@ The following is a JSON representation of the resource.
   "requestedModalities": ["unknown | audio | video | videoBasedScreenSharing | data"],
   "resultInfo": {"@odata.type": "#microsoft.graph.resultInfo"},
   "ringingTimeoutInSeconds": 99,
-  "routingPolicies": ["none | noMissedCall | disableForwardingExceptPhone | disableForwarding | preferSkypeForBusiness"],
   "source": {"@odata.type": "#microsoft.graph.participantInfo"},
   "state": "incoming | establishing | ringing | established | hold | transferring | transferAccepted | redirecting | terminating | terminated",
   "subject": "String",
