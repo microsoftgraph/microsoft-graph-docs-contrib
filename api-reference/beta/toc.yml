@@ -10473,28 +10473,6 @@
           href: api/opentypeextension-post-opentypeextension.md
         - name: Get open extension
           href: api/opentypeextension-get.md
-      - name: Schedule
-        href: resources/schedule.md
-        items:
-        - name: Create or replace
-          href: api/team-put-schedule.md
-        - name: Get
-          href: api/schedule-get.md
-        - name: Share
-          href: api/schedule-share.md
-      - name: Scheduling group
-        href: resources/schedulinggroup.md
-        items:
-        - name: Create
-          href: api/schedule-post-schedulinggroups.md
-        - name: List
-          href: api/schedule-list-schedulinggroups.md
-        - name: Get
-          href: api/schedulinggroup-get.md
-        - name: Replace
-          href: api/schedulinggroup-put.md
-        - name: Delete
-          href: api/schedulinggroup-delete.md
       - name: Shifts
         items:
         - name: Open shift
@@ -10519,6 +10497,28 @@
               href: api/openshiftchangerequest-approve.md
             - name: Decline
               href: api/openshiftchangerequest-decline.md
+        - name: Schedule
+          href: resources/schedule.md
+          items:
+          - name: Create or replace
+            href: api/team-put-schedule.md
+          - name: Get
+            href: api/schedule-get.md
+          - name: Share
+            href: api/schedule-share.md
+        - name: Scheduling group
+          href: resources/schedulinggroup.md
+          items:
+          - name: Create
+            href: api/schedule-post-schedulinggroups.md
+          - name: List
+            href: api/schedule-list-schedulinggroups.md
+          - name: Get
+            href: api/schedulinggroup-get.md
+          - name: Replace
+            href: api/schedulinggroup-put.md
+          - name: Delete
+            href: api/schedulinggroup-delete.md
         - name: Shift
           href: resources/shift.md
           items:
