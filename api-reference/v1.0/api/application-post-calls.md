@@ -407,16 +407,17 @@ This supports up to 5 VoIP users. The example shows how to create a group call w
 > **Note:** This example call needs the `Calls.InitiateGroupCalls.All` permission. The group call created doesn't support chat or recording.
 
 ##### Request
-```http
-POST https://graph.microsoft.com/v1.0/communications/calls
-Content-Type: application/json
-```
+
 <!-- {
   "blockType": "request",
   "name": "create-group-call-service-hosted-media",
   "@odata.type": "microsoft.graph.call"
 }-->
-```json
+
+```http
+POST https://graph.microsoft.com/v1.0/communications/calls
+Content-Type: application/json
+
 {
   "@odata.type": "#microsoft.graph.call",
   "direction": "outgoing",
@@ -474,20 +475,21 @@ This supports up to 5 VoIP users. The example shows how to create a group call w
 > **Note:** This example call needs the `Calls.InitiateGroupCalls.All` permission. The group call created doesn't support chat or recording.
 
 ##### Request
-```http
-POST https://graph.microsoft.com/v1.0/communications/calls
-Content-Type: application/json
-```
+
 <!-- {
   "blockType": "request",
   "name": "create-group-call-app-hosted-media",
   "@odata.type": "microsoft.graph.call"
 }-->
-```json
+
+```http
+POST https://graph.microsoft.com/v1.0/communications/calls
+Content-Type: application/json
+
 {
   "@odata.type": "#microsoft.graph.call",
   "direction": "outgoing",
-  "subject": "Create a group call with service hosted media",
+  "subject": "Create a group call with application hosted media",
   "callbackUri": "https://bot.contoso.com/callback",
   "source": {
     "@odata.type": "#microsoft.graph.participantInfo",
