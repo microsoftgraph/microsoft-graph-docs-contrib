@@ -42,19 +42,20 @@ POST /informationprotection/policy/labels/evaluateRemoval
 
 ## Request headers
 
-| Name          | Description                 |
-| :------------ | :-------------------------- |
-| Authorization | Bearer {token}. Required.   |
-| Content-type  | application/json. Required. |
+| Name          | Description                                                                                                                                                           |
+| :------------ | :-------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| Authorization | Bearer {token}. Required.                                                                                                                                             |
+| Content-type  | application/json. Required.                                                                                                                                           |
+| User-Agent    | Describes the name of the calling application. Details will surface in Azure Information Protection Analytics. Suggested format is ApplicationName/Version. Optional. |
 
 ## Request body
 
 In the request body, provide a JSON object with the following parameters.
 
-| Parameter              | Type                                                             | Description                                                                                                                                                                                                   |
-| :--------------------- | :--------------------------------------------------------------- | :------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ |
+| Parameter              | Type                                                             | Description                                                                                                                         |
+| :--------------------- | :--------------------------------------------------------------- | :---------------------------------------------------------------------------------------------------------------------------------- |
 | contentInfo            | [contentInfo](../resources/contentinfo.md)                       | Provides details about the content format, content state, and existing [metadata](../resources/keyvaluepair.md) as key/value pairs. |
-| downgradeJustification | [downgradeJustification](../resources/downgradejustification.md) | Justification that must be provided by the user or application logic.                                                                                                                                         |
+| downgradeJustification | [downgradeJustification](../resources/downgradejustification.md) | Justification that must be provided by the user or application logic.                                                               |
 
 
 ## Response

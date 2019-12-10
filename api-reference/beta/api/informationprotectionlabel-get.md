@@ -38,9 +38,10 @@ This method supports some of the OData query parameters to help customize the re
 
 ## Request headers
 
-| Name          | Description                 |
-| :------------ | :-------------------------- |
-| Authorization | Bearer {token}. Required.   |
+| Name          | Description                                                                                                                                                           |
+| :------------ | :-------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| Authorization | Bearer {token}. Required.                                                                                                                                             |
+| User-Agent    | Describes the name of the calling application. Details will surface in Azure Information Protection Analytics. Suggested format is ApplicationName/Version. Optional. |
 
 ## Request body
 

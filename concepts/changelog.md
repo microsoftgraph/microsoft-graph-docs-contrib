@@ -11,6 +11,14 @@ This changelog covers what's changed in the Microsoft Graph API, including the v
 
 For details about known issues with Microsoft Graph APIs, see [Known issues](known-issues.md).
 
+## December 2019
+
+### Identity and access | Information protection
+
+| **Change type** | **Version**   | **Description**                          |
+| :-------------- | :------------ | :--------------------------------------- |
+| Addition          | Beta          | Added optional request header, User-Agent, to [evaluate application](informationprotectionlabel-evaluateapplication?view=graph-rest-beta), [evaluate classification](informationprotectionlabel-evaluateclassificationresults?view=graph-rest-beta), [evaluate removal](informationprotectionlabel-evaluateremoval?view=graph-rest-beta), [extract label](informationprotectionlabel-extractlabel?view=graph-rest-beta), [list label](informationprotectionlabel-list-labels?view=graph-rest-beta), and [get label](informationprotectionlabel-get?view=graph-rest-beta)
+
 ## November 2019
 
 ### Calendar | Place

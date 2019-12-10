@@ -51,10 +51,11 @@ POST /informationprotection/policy/labels/{id}/evaluateClassificationResults
 
 ## Request headers
 
-| Name          | Description                 |
-| :------------ | :-------------------------- |
-| Authorization | Bearer {token}. Required.   |
-| Content-type  | application/json. Required. |
+| Name          | Description                                                                                                                                                           |
+| :------------ | :-------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| Authorization | Bearer {token}. Required.                                                                                                                                             |
+| Content-type  | application/json. Required.                                                                                                                                           |
+| User-Agent    | Describes the name of the calling application. Details will surface in Azure Information Protection Analytics. Suggested format is ApplicationName/Version. Optional. |
 
 ## Request body
 
@@ -62,7 +63,7 @@ In the request body, provide a JSON object with the following parameters.
 
 | Parameter             | Type                                                                    | Description                                                                                                                                                                                                                                                                           |
 | :-------------------- | :---------------------------------------------------------------------- | :------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ |
-| contentInfo           | [contentInfo](../resources/contentInfo.md)                              | Provides details about the content format, content state, and existing [metadata](../resources/keyvaluepair.md) as key/value pairs.                                                                         |
+| contentInfo           | [contentInfo](../resources/contentInfo.md)                              | Provides details about the content format, content state, and existing [metadata](../resources/keyvaluepair.md) as key/value pairs.                                                                                                                                                   |
 | classificationResults | [classificationResult](../resources/classificationresult.md) collection | Contains the set of classification results returned by the data classification endpoint. Classificaiton information is used to determine the appropriate label based on the Microsoft Information Protection policy label configuration in Office 365 Security and Compliance Center. |
 
 ## Response
