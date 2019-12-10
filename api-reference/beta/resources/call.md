@@ -13,7 +13,7 @@ doc_type: resourcePageType
 
 The **call** resource is created when there is an incoming call for the application or the application creates a new outgoing call via a `POST` on `app/calls`.
 
-Calls can be set up as a peer-to-peer or as a multiparty call. For creating or joining a multiparty call, supply the `chatInfo` and `meetingInfo`. If these are not supplied, a new ad hoc meeting is created automatically. For an incoming call, record these values in a highly available store, so that your application to rejoin the call in the event your application crashes.
+Calls can be set up as a peer-to-peer or as a group call. For creating or joining a group call, supply the `chatInfo` and `meetingInfo`. If these are not supplied, a new ad hoc meeting is created automatically. For an incoming call, record these values in a highly available store, so that your application to rejoin the call in the event your application crashes.
 
 Although the same identity cannot be invited multiple times, it is possible for an application to join the same meeting multiple times. Each time the application joins, a distinct call `id` is provided for that call to the meeting. We recommend that you use separate identities to join the meeting in order for the clients to display them as different participants.
 
