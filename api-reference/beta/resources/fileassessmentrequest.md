@@ -1,6 +1,6 @@
 ---
 title: "fileAssessmentRequest resource type"
-description: "Used to create and retrieve file assessment."
+description: "Used to create and retrieve a file threat assessment."
 localization_priority: Normal
 author: "hafen-ms"
 ms.prod: "microsoft-identity-platform"
@@ -11,9 +11,9 @@ doc_type: "resourcePageType"
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Used to create and retrieve file assessment, derived from [threatAssessmentRequest](threatAssessmentRequest.md).
+Used to create and retrieve a file threat assessment, derived from [threatAssessmentRequest](threatAssessmentRequest.md).
 
-The file can be a text file or word document or binary file received in email attachment.
+The file can be a text file or Word document or binary file received in an email attachment.
 
 ## Methods
 
