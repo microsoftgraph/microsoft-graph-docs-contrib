@@ -13,6 +13,12 @@ For details about known issues with Microsoft Graph APIs, see [Known issues](kno
 
 ## December 2019
 
+### Identity and access (Azure AD)
+| **Change type** | **Version**   | **Description**                          |
+|:---|:---|:---|
+|Addition|beta, v1.0|Added support for returning a limited amount of information when your application does not have access to some of the types in a response's collection. When an application does not have access to a type of resource, a 403 error is no longer returned when instances of that resource are members of groups, roles, etc. Instead, the data type and ID is returned and all other properties will have a null value. Applications will not be able to use the ID to get the actual resource unless they have the necessary permission to read that resource’s type.  For more details, see [Limited information returned for inaccessible member objects](permissions-reference.md#limited-information-returned-for-inaccessible-member-objects).<br/>|
+
+
 ### Devices and apps (Microsoft Intune)
 
 | **Change type** | **Version**   | **Description**                          |
