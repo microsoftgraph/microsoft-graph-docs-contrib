@@ -13,7 +13,7 @@ doc_type: "resourcePageType"
 
 An abstract resouce type used to represent a threat assessment request item.
 
-A threat assessment can be one of the following types:
+A threat assessment request can be one of the following types:
 
 * Mail ([mailAssessmentRequest](mailAssessmentRequest.md) resource)
 * Email file ([emailFileAssessmentRequest](emailFileAssessmentRequest.md) resource)
