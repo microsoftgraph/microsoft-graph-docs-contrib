@@ -25,7 +25,7 @@ Using the Microsoft Graph API, an app can subscribe to changes on the following 
 | Office 365 group [conversation][] | `groups/{id}/conversations` | No |
 | Content within the hierarchy of _any folder_ [driveItem][] on a user's personal OneDrive | **TBD** | No |
 | Content within the hierarchy of the _root folder_ [driveItem][] on OneDrive for Business | **TBD** | No |
-| Security [alert][] | **TBD** | No |
+| Security [alert][] | `/security/alerts/{id}` (changes to a specific alert) <br> `/security/alerts/?$filter` (changes to filtered alerts)| No |
 | Teams [chatmessage](/graph/api/resources/subscription?view=graph-rest-beta) | `/teams/allMessages` (messages in all channels in all teams)<br>`/teams/{id}/channels/{id}/messages` (messages in a specific channel)<br>`/chats/allMessages` (messages in all chats)<br>`/chats/{id}/messages` (messages in a specific chat) | Yes |
 
 > **Note**: Any resource path that begins with `/users/{id}` can also accept `/me` to reference the signed-in user.
