@@ -24,7 +24,7 @@ var call = new Call
 	},
 	Targets = new List<InvitationParticipantInfo>()
 	{
-		new ParticipantInfo
+		new InvitationParticipantInfo
 		{
 			Identity = new IdentitySet
 			{
