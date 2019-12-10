@@ -10495,45 +10495,104 @@
           href: api/schedulinggroup-put.md
         - name: Delete
           href: api/schedulinggroup-delete.md
-      - name: Shift
-        href: resources/shift.md
+      - name: Shifts
         items:
-          - name: Create
-            href: api/schedule-post-shifts.md
-          - name: List
-            href: api/schedule-list-shifts.md
+        - name: Open shift
+          href: resources/openshift.md
+          items:
+            - name: Get
+              href: api/openshift-get.md
+            - name: Update
+              href: api/openshift-update.md
+            - name: Delete
+              href: api/openshift-delete.md
+        - name: Open shift change request
+          href: resources/openshiftchangerequest.md
+          items:
+            - name: Get
+              href: api/openshiftchangerequest-get.md
+            - name: Update
+              href: api/openshiftchangerequest-update.md
+            - name: Delete
+              href: api/openshiftchangerequest-delete.md
+            - name: Approve
+              href: api/openshiftchangerequest-approve.md
+            - name: Decline
+              href: api/openshiftchangerequest-decline.md
+        - name: Shift
+          href: resources/shift.md
+          items:
+            - name: Create
+              href: api/schedule-post-shifts.md
+            - name: List
+              href: api/schedule-list-shifts.md
+            - name: Get
+              href: api/shift-get.md
+            - name: Replace
+              href: api/shift-put.md
+            - name: Delete
+              href: api/shift-delete.md
+        - name: Swap shift change request
+          href: resources/swapshiftchangerequest.md
+          items:
           - name: Get
-            href: api/shift-get.md
-          - name: Replace
-            href: api/shift-put.md
+            href: api/swapshiftchangerquest-get.md
+          - name: Update
+            href: api/swapshiftchangerquest-update.md
           - name: Delete
-            href: api/shift-delete.md
-      - name: Time off
-        href: resources/timeoff.md
-        items:
-          - name: Create
-            href: api/schedule-post-timesoff.md
-          - name: List
-            href: api/schedule-list-timesoff.md
-          - name: Get
-            href: api/timeoff-get.md
-          - name: Replace
-            href: api/timeoff-put.md
-          - name: Delete
-            href: api/timeoff-delete.md
-      - name: Time off reason
-        href: resources/timeoffreason.md
-        items:
-          - name: Create
-            href: api/schedule-post-timeoffreasons.md
-          - name: List
-            href: api/schedule-list-timeoffreasons.md
-          - name: Get
-            href: api/timeoffreason-get.md
-          - name: Replace
-            href: api/timeoffreason-put.md
-          - name: Delete
-            href: api/timeoffreason-delete.md
+            href: api/swapshiftchangerquest-delete.md
+        - name: Time off
+          href: resources/timeoff.md
+          items:
+            - name: Create
+              href: api/schedule-post-timesoff.md
+            - name: List
+              href: api/schedule-list-timesoff.md
+            - name: Get
+              href: api/timeoff-get.md
+            - name: Replace
+              href: api/timeoff-put.md
+            - name: Delete
+              href: api/timeoff-delete.md
+        - name: Time off reason
+          href: resources/timeoffreason.md
+          items:
+            - name: Create
+              href: api/schedule-post-timeoffreasons.md
+            - name: List
+              href: api/schedule-list-timeoffreasons.md
+            - name: Get
+              href: api/timeoffreason-get.md
+            - name: Replace
+              href: api/timeoffreason-put.md
+            - name: Delete
+              href: api/timeoffreason-delete.md
+        - name: Time off request
+          href: resources/timeoffrequest.md
+          items:
+            - name: Get
+              href: api/timeoffrequest-get.md
+            - name: Update
+              href: api/timeoffrequest-update.md
+            - name: Delete
+              href: api/timeoffrequest-delete.md
+            - name: Approve
+              href: api/timeoffrequest-approve.md
+            - name: Decline
+              href: api/timeoffrequest-decline.md
+        - name: Workforce integration
+          href: resources/workforceintegration.md
+          items:
+            - name: List
+              href: api/workforceintegration-list.md
+            - name: Create
+              href: api/workforceintegration-post.md
+            - name: Get
+              href: api/workforceintegration-get.md
+            - name: Update
+              href: api/workforceintegration-update.md
+            - name: Delete
+              href: api/workforceintegration-delete.md
       - name: Drive
         href: resources/drive.md
         items:
