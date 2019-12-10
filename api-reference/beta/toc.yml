@@ -3229,8 +3229,6 @@
           href: resources/intune-deviceconfig-bitlockerrecoveryinformationtype.md
         - name: BitLocker recovery options
           href: resources/intune-deviceconfig-bitlockerrecoveryoptions.md
-        - name: BitLocker recovery password rotation type
-          href: resources/intune-deviceconfig-bitlockerrecoverypasswordrotationtype.md
         - name: BitLocker removable drive policy
           href: resources/intune-deviceconfig-bitlockerremovabledrivepolicy.md
         - name: BitLocker system drive policy
@@ -3297,6 +3295,8 @@
           href: resources/intune-deviceconfig-defenderpromptforsamplesubmission.md
         - name: Defender protection type
           href: resources/intune-deviceconfig-defenderprotectiontype.md
+        - name: Defender realtime scan direction
+          href: resources/intune-deviceconfig-defenderrealtimescandirection.md
         - name: Defender scan type
           href: resources/intune-deviceconfig-defenderscantype.md
         - name: Defender security center IT contact display type
@@ -4230,20 +4230,10 @@
             href: api/intune-deviceconfig-iosikev2vpnconfiguration-update.md
         - name: Kerberos single sign on extension
           href: resources/intune-deviceconfig-kerberossinglesignonextension.md
-        - name: Key boolean value pair
-          href: resources/intune-deviceconfig-keybooleanvaluepair.md
-        - name: Key integer value pair
-          href: resources/intune-deviceconfig-keyintegervaluepair.md
-        - name: Key real value pair
-          href: resources/intune-deviceconfig-keyrealvaluepair.md
         - name: Key size
           href: resources/intune-deviceconfig-keysize.md
         - name: Key storage provider option
           href: resources/intune-deviceconfig-keystorageprovideroption.md
-        - name: Key string value pair
-          href: resources/intune-deviceconfig-keystringvaluepair.md
-        - name: Key typed value pair
-          href: resources/intune-deviceconfig-keytypedvaluepair.md
         - name: Key usages
           href: resources/intune-deviceconfig-keyusages.md
         - name: Key value
@@ -4624,6 +4614,8 @@
           href: resources/intune-deviceconfig-ratingunitedstatesmoviestype.md
         - name: Rating United States television type
           href: resources/intune-deviceconfig-ratingunitedstatestelevisiontype.md
+        - name: Redirect single sign on extension
+          href: resources/intune-deviceconfig-redirectsinglesignonextension.md
         - name: Required password type
           href: resources/intune-deviceconfig-requiredpasswordtype.md
         - name: Restricted apps state
@@ -4641,8 +4633,12 @@
             href: api/intune-deviceconfig-restrictedappsviolation-delete.md
           - name: Update
             href: api/intune-deviceconfig-restrictedappsviolation-update.md
+        - name: Retire scheduled managed device
+          href: resources/intune-deviceconfig-retirescheduledmanageddevice.md
         - name: Safe search filter type
           href: resources/intune-deviceconfig-safesearchfiltertype.md
+        - name: Scheduled retire state
+          href: resources/intune-deviceconfig-scheduledretirestate.md
         - name: Secure assessment account type
           href: resources/intune-deviceconfig-secureassessmentaccounttype.md
         - name: Secure boot with d m a type
@@ -5956,6 +5952,8 @@
             href: api/intune-deviceintent-devicemanagementsettingdefinition-update.md
         - name: Device management setting dependency
           href: resources/intune-deviceintent-devicemanagementsettingdependency.md
+        - name: Device management setting file constraint
+          href: resources/intune-deviceintent-devicemanagementsettingfileconstraint.md
         - name: Device management setting instance
           href: resources/intune-deviceintent-devicemanagementsettinginstance.md
           items:
@@ -5965,6 +5963,8 @@
             href: api/intune-deviceintent-devicemanagementsettinginstance-get.md
         - name: Device management setting integer constraint
           href: resources/intune-deviceintent-devicemanagementsettingintegerconstraint.md
+        - name: Device management setting profile constraint
+          href: resources/intune-deviceintent-devicemanagementsettingprofileconstraint.md
         - name: Device management setting regex constraint
           href: resources/intune-deviceintent-devicemanagementsettingregexconstraint.md
         - name: Device management setting string length constraint
@@ -6043,6 +6043,19 @@
           href: resources/intune-devices-deviceprotectionoverview.md
         - name: Device registration state
           href: resources/intune-devices-deviceregistrationstate.md
+        - name: Device shell script
+          href: resources/intune-devices-deviceshellscript.md
+          items:
+          - name: List
+            href: api/intune-devices-deviceshellscript-list.md
+          - name: Get
+            href: api/intune-devices-deviceshellscript-get.md
+          - name: Create
+            href: api/intune-devices-deviceshellscript-create.md
+          - name: Delete
+            href: api/intune-devices-deviceshellscript-delete.md
+          - name: Update
+            href: api/intune-devices-deviceshellscript-update.md
         - name: Disk type
           href: resources/intune-devices-disktype.md
         - name: Embedded SIM activation code
@@ -6202,6 +6215,8 @@
             href: api/intune-devices-manageddevice-sendcustomnotificationtocompanyportal.md
           - name: triggerConfigurationManagerAction action
             href: api/intune-devices-manageddevice-triggerconfigurationmanageraction.md
+        - name: Managed device architecture
+          href: resources/intune-devices-manageddevicearchitecture.md
         - name: Managed device cleanup settings
           href: resources/intune-devices-manageddevicecleanupsettings.md
         - name: Managed device models and manufacturers
@@ -6217,8 +6232,6 @@
           href: resources/intune-devices-manageddevicepartnerreportedhealthstate.md
         - name: Managed device remote action
           href: resources/intune-devices-manageddeviceremoteaction.md
-        - name: Management agent type
-          href: resources/intune-devices-managementagenttype.md
         - name: Management condition
           href: resources/intune-fencing-managementcondition.md
           items:
@@ -6714,6 +6727,8 @@
             href: api/intune-mam-managedappconfiguration-get.md
         - name: Managed app data encryption type
           href: resources/intune-mam-managedappdataencryptiontype.md
+        - name: Managed app data ingestion location
+          href: resources/intune-mam-managedappdataingestionlocation.md
         - name: Managed app data storage location
           href: resources/intune-mam-managedappdatastoragelocation.md
         - name: Managed app data transfer level
@@ -7193,6 +7208,13 @@
             href: api/intune-rbac-deviceandappmanagementroledefinition-delete.md
           - name: Update
             href: api/intune-rbac-deviceandappmanagementroledefinition-update.md
+        - name: Rbac application multiple
+          href: resources/intune-rbac-rbacapplicationmultiple.md
+          items:
+          - name: Get
+            href: api/intune-rbac-rbacapplicationmultiple-get.md
+          - name: Update
+            href: api/intune-rbac-rbacapplicationmultiple-update.md
         - name: Resource action
           href: resources/intune-rbac-resourceaction.md
         - name: Resource operation
@@ -7236,6 +7258,13 @@
             href: api/intune-rbac-roledefinition-delete.md
           - name: Update
             href: api/intune-rbac-roledefinition-update.md
+        - name: Role management
+          href: resources/intune-rbac-rolemanagement.md
+          items:
+          - name: Get
+            href: api/intune-rbac-rolemanagement-get.md
+          - name: Update
+            href: api/intune-rbac-rolemanagement-update.md
         - name: Role permission
           href: resources/intune-rbac-rolepermission.md
         - name: Role scope tag
@@ -7294,6 +7323,8 @@
             href: api/intune-shared-androidmanagedappprotection-update.md
           - name: hasPayloadLinks action
             href: api/intune-shared-androidmanagedappprotection-haspayloadlinks.md
+        - name: BitLocker recovery password rotation type
+          href: resources/intune-shared-bitlockerrecoverypasswordrotationtype.md
         - name: Company portal action
           href: resources/intune-shared-companyportalaction.md
         - name: Company portal blocked action
@@ -7472,12 +7503,24 @@
           href: resources/intune-shared-ipv4range.md
         - name: IPv6 range
           href: resources/intune-shared-ipv6range.md
+        - name: Key boolean value pair
+          href: resources/intune-shared-keybooleanvaluepair.md
+        - name: Key integer value pair
+          href: resources/intune-shared-keyintegervaluepair.md
+        - name: Key real value pair
+          href: resources/intune-shared-keyrealvaluepair.md
+        - name: Key string value pair
+          href: resources/intune-shared-keystringvaluepair.md
+        - name: Key typed value pair
+          href: resources/intune-shared-keytypedvaluepair.md
         - name: Key/value pair
           href: resources/intune-shared-keyvaluepair.md
         - name: macOS VPP app assignment settings
           href: resources/intune-shared-macosvppappassignmentsettings.md
         - name: Managed device owner type
           href: resources/intune-shared-manageddeviceownertype.md
+        - name: Management agent type
+          href: resources/intune-shared-managementagenttype.md
         - name: MDM windows information protection policy
           href: resources/intune-shared-mdmwindowsinformationprotectionpolicy.md
           items:
