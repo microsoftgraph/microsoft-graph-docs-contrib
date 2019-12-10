@@ -10533,14 +10533,14 @@
             - name: Delete
               href: api/shift-delete.md
         - name: Swap shift change request
-          href: resources/swapshiftchangerequest.md
+          href: resources/swapshiftschangerequest.md
           items:
           - name: Get
-            href: api/swapshiftchangerequest-get.md
+            href: api/swapshiftschangerequest-get.md
           - name: Update
-            href: api/swapshiftchangerequest-update.md
+            href: api/swapshiftschangerequest-update.md
           - name: Delete
-            href: api/swapshiftchangerequest-delete.md
+            href: api/swapshiftschangerequest-delete.md
         - name: Time off
           href: resources/timeoff.md
           items:
