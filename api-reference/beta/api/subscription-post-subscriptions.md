@@ -81,7 +81,7 @@ POST https://graph.microsoft.com/beta/subscriptions
 Content-type: application/json
 
 {
-   "changeType": "created,updated",
+   "changeType": "updated",
    "notificationUrl": "https://webhook.azurewebsites.net/api/send/myNotifyClient",
    "resource": "me/mailFolders('Inbox')/messages",
    "expirationDateTime":"2016-11-20T18:23:45.9356913Z",
