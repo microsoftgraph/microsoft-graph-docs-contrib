@@ -9,7 +9,7 @@ doc_type: apiPageType
 
 # Create call
 
-Create [call](../resources/call.md) enables your bot to create a new outgoing call or join an existing meeting. You will need to [register the calling bot](https://docs.microsoft.com/microsoftteams/platform/concepts/calls-and-meetings/registering-calling-bot) and go through the list of permissions needed as mentioned below.
+Create [call](../resources/call.md) enables your bot to create a new outgoing peer-to-peer or group call, or join an existing meeting. You will need to [register the calling bot](https://docs.microsoft.com/microsoftteams/platform/concepts/calls-and-meetings/registering-calling-bot) and go through the list of permissions needed as mentioned below.
 
 > **Note:** Currently, only VoIP calls are supported. 
 
@@ -23,7 +23,7 @@ One of the following permissions is required to call this API. To learn more, in
 | Delegated (personal Microsoft account) | Not Supported                                                                           |
 | Application                            | Calls.JoinGroupCallsasGuest.All, Calls.JoinGroupCalls.All, Calls.Initiate.All, Calls.InitiateGroupCalls.All |
 
-> **Note:** For a call with app-hosted media, you need the Calls.AccessMedia.All permission with one of the permissions listed in the previous table.
+> **Note:** For a call with app-hosted media, you need the Calls.AccessMedia.All permission in addition to one of the permissions listed in the table above.
 
 ## HTTP request
 <!-- { "blockType": "ignored" } -->
@@ -328,13 +328,6 @@ Content-Type: application/json
 
 ---
 
-`<Media Session Configuration>` is the serialized media session configuration which contains the session information of the media stack. Specific information about audio, video, VBSS ssession information should be passed here.
-
-Sample audio media session blob is shown below
-```json
-{\"mpUri\":\"net.tcp://bot.contoso.com:18732/MediaProcessor\",\"audioRenderContexts\":[\"14778cc4-f54c-43c7-989f-9092e34ef784\"],\"videoRenderContexts\":[],\"audioSourceContexts\":[\"a5dcfc9b-5a54-48ef-86f5-1fdd8508741a\"],\"videoSourceContexts\":[],\"dataRenderContexts\":null,\"dataSourceContexts\":null,\"supportedAudioFormat\":\"Pcm16K\",\"videoSinkEncodingFormats\":[],\"mpMediaSessionId\":\"2379cf46-acf3-4fef-a914-be9627075320\",\"regionAffinity\":null,\"skypeMediaBotsVersion\":\"1.11.1.0086\",\"mediaStackVersion\":\"2018.53.1.1\",\"mpVersion\":\"7.2.0.3881\",\"callId\":\"1b69b141-7f1a-4033-9c34-202737190a20\"}
-```
-
 >**Note:** For peer-to-peer calls, the expected notifications are for call state changes only.
 
 ##### Response
@@ -548,9 +541,9 @@ Content-Type: application/json
 
 ### Example 5: Join scheduled meeting with service hosted media
 To join the scheduled meeting we will need to get the thread id, message id, organizer id and the tenant id in which the meeting is scheduled.
-This information can be obtained from [Get Online Meetings API](../api/onlinemeeting-get.md).
+This information can be obtained from the [Get Online Meetings API](../api/onlinemeeting-get.md) (VTC-based meetings only).
 
-The values of authorization token, callback url, application id, application name, user id, user name and tenant id must be replaced along with the details obtained from  [Get Online Meetings API](../api/onlinemeeting-get.md) with actual values to make the example work.
+The values of authorization token, callback url, application id, application name, user id, user name and tenant id must be replaced along with the details obtained from  [Get Online Meetings API](../api/onlinemeeting-get.md) (VTC-based meetings only) with actual values to make the example work.
 > **Note:** This example needs the `Calls.JoinGroupCalls.All` permission.
 
 ##### Request
@@ -879,8 +872,8 @@ Content-Type: application/json
 
 >**Note:** For join meeting scenarios apart from call state notifications, we receive roster notifications.
 
-### Example 6: Join scheduled meeting with app hosted media
-To join the meeting with application hosted media update the media config with the [AppHostedMediaConfig](../resources/apphostedmediaconfig.md) as shown below, In the sample provided above.
+### Example 6: Join scheduled meeting with application hosted media
+Update the media config with the [AppHostedMediaConfig](../resources/apphostedmediaconfig.md) as shown below.
 
 <!-- {
   "blockType": "request",
@@ -923,7 +916,14 @@ Content-Type: application/json
   "tenantId": "aa67bd4c-8475-432d-bd41-39f255720e0a"
 }
 ```
+### Populating the Media Session Configuration
 
+For application hosted media, the blob that is passed in is the `<Media Session Configuration>` which is the serialized data which contains the session information of the media stack. Specific information about audio, video, VBSS ssession information should be passed here.
+
+A sample media session blob is shown below
+```json
+{\"mpUri\":\"net.tcp://bot.contoso.com:18732/MediaProcessor\",\"audioRenderContexts\":[\"14778cc4-f54c-43c7-989f-9092e34ef784\"],\"videoRenderContexts\":[],\"audioSourceContexts\":[\"a5dcfc9b-5a54-48ef-86f5-1fdd8508741a\"],\"videoSourceContexts\":[],\"dataRenderContexts\":null,\"dataSourceContexts\":null,\"supportedAudioFormat\":\"Pcm16K\",\"videoSinkEncodingFormats\":[],\"mpMediaSessionId\":\"2379cf46-acf3-4fef-a914-be9627075320\",\"regionAffinity\":null,\"skypeMediaBotsVersion\":\"1.11.1.0086\",\"mediaStackVersion\":\"2018.53.1.1\",\"mpVersion\":\"7.2.0.3881\",\"callId\":\"1b69b141-7f1a-4033-9c34-202737190a20\"}
+```
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2015-10-25 14:57:30 UTC -->
 <!--
