@@ -9,7 +9,7 @@ doc_type: resourcePageType
 
 # invitationParticipantInfo resource type
 
-This resource is used to represent a set of identities associated with a conversation invitation, and provides additional invitation parameters.
+This resource is used to represent a set of identities associated with a group call invitation, and provides additional invitation parameters.
 
 ## Properties
 
