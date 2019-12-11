@@ -16,7 +16,7 @@ For further information on how to handle operations, please review [commsOperati
 
 >**Note:** This is only supported for [calls](../resources/call.md) which are initiated with [serviceHostedMediaConfig](../resources/servicehostedmediaconfig.md).
 
-This action is not intended to record the entire call. The maximum length of recording is 5 minutes. The recording is not saved permanently by the by the Cloud Communications Platform and is discarded shortly after the call ends. The bot must download the recording promptly after the recording operation finishes by using the recordingLocation value that's given in the completed notification.
+This action is not intended to record the entire call. The maximum length of recording is 1 minute. The recording is not saved permanently by the Cloud Communications Platform and is discarded shortly after the call ends. The bot must download the recording promptly after the recording operation finishes by using the recordingLocation value that's given in the completed notification.
 
 >**Note:** Any media collected may **not** be persisted. Make sure you are compliant with the laws and regulations of your area when it comes to call recording. Please consult with a legal counsel for more information.
 
@@ -47,9 +47,9 @@ In the request body, provide a JSON object with the following parameters.
 |:---------------|:--------|:----------|
 |prompts|[mediaPrompt](../resources/mediaprompt.md) collection | The prompts to be played. The maximum supported mediaPrompt collection size is 1.|
 |bargeInAllowed|Boolean| If true, the recordResponse request will barge into other existing queued-up/currently-processing record/playprompt requests. Default = false. |
-|initialSilenceTimeoutInSeconds | Int32| Maximum initial silence (user silence) allowed from the time we start the record response operation before we timeout and fail the operation. If we are playing a prompt, then this timer starts after prompt finishes. Default = 5 seconds, Min = 1 second, Max = 300 seconds |
-|maxSilenceTimeoutInSeconds|Int32| Maximum silence (pause) time allowed after a user has started speaking. Default = 5 seconds, Min = 1 second, Max = 300 seconds.|
-|maxRecordDurationInSeconds|Int32| Max duration for the recordResponse operation before stopping recording. Default = 5 seconds, Min = 1 second, Max = 300 seconds.|
+|initialSilenceTimeoutInSeconds | Int32| Maximum initial silence (user silence) allowed from the time we start the record response operation before we timeout and fail the operation. If we are playing a prompt, then this timer starts after prompt finishes. Default = 5 seconds, Min = 1 second, Max = 60 seconds |
+|maxSilenceTimeoutInSeconds|Int32| Maximum silence (pause) time allowed after a user has started speaking. Default = 5 seconds, Min = 1 second, Max = 60 seconds.|
+|maxRecordDurationInSeconds|Int32| Max duration for the recordResponse operation before stopping recording. Default = 5 seconds, Min = 1 second, Max = 60 seconds.|
 |playBeep|Boolean| If true, plays a beep to indicate to the user that they can start recording their message. Default = true.|
 |stopTones|String collection|Stop tones specified to end recording.|
 |clientContext|String|Unique Client Context string. Max limit is 256 chars.|
@@ -120,7 +120,6 @@ Location: https://graph.microsoft.com/v1.0/communications/calls/57dab8b1-894c-40
   "@odata.type": "#microsoft.graph.recordOperation",
   "id": "0fe0623f-d628-42ed-b4bd-8ac290072cc5",
   "status": "running",
-  "completionReason": null,
   "resultInfo": null,
   "recordingLocation": null,
   "clientContext": "d45324c1-fcb5-430a-902c-f20af696537c"
@@ -154,8 +153,7 @@ Content-Type: application/json
         "clientContext": "d45324c1-fcb5-430a-902c-f20af696537c",
         "status": "completed",
         "recordingLocation": "https://file.location/17e3b46c-f61d-4f4d-9635-c626ef18e6ad",
-        "recordingAccessToken": "<access-token>",
-        "completionReason": "stopToneDetected"
+        "recordingAccessToken": "<access-token>"
       }
     }
   ]
