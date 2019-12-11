@@ -11,7 +11,7 @@ doc_type: "resourcePageType"
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-An instance of a workforceforce integration with shifts.
+An instance of a workforce integration with shifts.
 
 ## Methods
 
