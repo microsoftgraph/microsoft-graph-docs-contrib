@@ -132,6 +132,12 @@ Content-Type: application/json
         "@odata.type": "#microsoft.graph.playPromptOperation",
         "@odata.id": "/communications/calls/57DAB8B1894C409AB240BD8BEAE78896/operations/0FE0623FD62842EDB4BD8AC290072CC5",
         "@odata.etag": "W/\"54451\"",
+        "resultInfo": {
+          "@odata.type": "#microsoft.graph.resultInfo",
+          "code": 200,
+          "subcode": 0,
+          "message": "Action completed successfully."
+        },
         "clientContext": "d45324c1-fcb5-430a-902c-f20af696537c",
         "status": "completed"
       }
