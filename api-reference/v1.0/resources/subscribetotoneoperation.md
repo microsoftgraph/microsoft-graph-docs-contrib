@@ -17,7 +17,6 @@ Describes the response format of creation of subscription to receive DTMF tones.
 | :----------------------------- | :---------------------------| :-------------------------------------------------------------------------------------------------------------------------------------------------|
 | clientContext                  | String                      | The client context.                                                                                                                               |
 | id                             | String                      | The server operation ID. Read-only.                                                                                             |
-| resultInfo                     | [resultInfo](resultinfo.md) | The result information.  Read-only.                                                                                             |
 | status                         | String                      | Possible values are: `notStarted`, `running`, `completed`, `failed`. Read-only.                                                 |
 
 ## Relationships
@@ -38,7 +37,6 @@ The following is a JSON representation of the resource.
 {
   "clientContext": "String",
   "id": "String (identifier)",
-  "resultInfo": {"@odata.type": "#microsoft.graph.resultInfo"},
   "status": "notStarted | running | completed | failed"
 }
 ```
