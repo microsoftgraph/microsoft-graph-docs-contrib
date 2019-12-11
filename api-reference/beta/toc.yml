@@ -8779,11 +8779,11 @@
             href: resources/fileAssessmentRequest.md
           - name: Url assessment request
             href: resources/urlassessmentrequest.md
-          - name: List threat assessment requests
+          - name: List
             href: api/informationprotection-list-threatassessmentrequests.md
-          - name: Create threat assessment request
+          - name: Create
             href: api/informationprotection-post-threatassessmentrequests.md
-          - name: Get threat assessment request
+          - name: Get
             href: api/threatassessmentrequest-get.md
       - name: Invitation manager
         href: resources/invitation.md
