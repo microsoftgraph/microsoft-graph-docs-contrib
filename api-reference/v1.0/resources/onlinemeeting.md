@@ -32,7 +32,6 @@ Contains information about the meeting, including the URL used to join a meeting
 | joinWebUrl                | String                                                 | The join URL of the online meeting. Read-only.|
 | participants              | [meetingParticipants](meetingparticipants.md)          | The participants associated with the online meeting.  This includes the organizer and the attendees. |
 | subject                   | String                                                 | The subject of the online meeting. |
-| capabilities              | String collection                                      | The list of meeting capabilities. Possible values are: `questionAndAnswer`. |
 | videoTeleconferenceId     | String                                                 | The videio teleconferencing ID. Read-only. |
 
 ### autoAdmittedUsers values
@@ -66,7 +65,6 @@ Contains information about the meeting, including the URL used to join a meeting
   "participants": {"@odata.type": "#microsoft.graph.meetingParticipants"},
   "startDateTime": "String (timestamp)",
   "subject": "String",
-  "capabilities": [ "questionAndAnswer" ],
   "videoTeleconferenceId": "String"
 }
 ```
