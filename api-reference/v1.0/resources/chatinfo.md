@@ -9,13 +9,13 @@ doc_type: resourcePageType
 
 # chatInfo resource type
 
-Information about a message in Microsoft Teams.
+This contains information associated with Microsoft Teams meetings.
 
 ## Properties
 
 | Property            | Type    | Description|
 |:--------------------|:--------|:-----------|
-| messageId           | String  | The unique identifier for a message in a Microsoft Teams channel. |
+| messageId           | String  | The unique identifier of a message in a Microsoft Teams channel. |
 | replyChainMessageId | String  | The ID of the reply message. |
 | threadId            | String  | The unique identifier for a thread in Microsoft Teams. |
 
