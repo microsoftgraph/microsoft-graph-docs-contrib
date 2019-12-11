@@ -1274,6 +1274,35 @@ For more complex scenarios involving multiple permissions, see [Permission scena
 
 ---
 
+## Schedule management permissions
+
+#### Application permissions
+
+|   Permission    |  Display String   |  Description | Admin Consent Required | Microsoft Account supported |
+|:----------------|:------------------|:-------------|:-----------------------|:--------------|
+| _Schedule.ReadWrite.All_ | Read and Write Shifts service (Teams) data | Allows an app to read and write Schedule, Schedule groups, Shifts and associated entities in Shifts application without a signed-in user. In Private Preview only.| Yes | No |
+| _Schedule.Read.All_ | Read Shifts service (Teams) data | Allows the app to read Schedule, Schedule groups, Shifts and associated entities in Shifts application without a signed-in user. In Private Preview only. | Yes | No |
+
+#### Delegated permissions
+
+|   Permission    |  Display String   |  Description | Admin Consent Required | Microsoft Account supported |
+|:----------------|:------------------|:-------------|:-----------------------|:-----------------------|
+
+### Remarks
+Search permissions are only valid for work or school accounts.
+
+This search permission is only applicable to ingested data from the indexing API.
+
+Access to data via search requires the corresponding permission. Ex : _Files.Read.All_ to access files via search.
+
+### Example usage
+
+#### Application
+
+* _ExternalItem.Read.All__:  Access external data from the [search API](/graph/api/resources/search-api-overview) (`POST /search/query`).
+
+---
+
 ## Search permissions
 
 #### Application permissions

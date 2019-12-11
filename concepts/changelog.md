@@ -84,6 +84,7 @@ Introduced version 1.1 of the Microsoft Graph Toolkit.
 | **Change type** | **Version**   | **Description**                          |
 | :-------------- | :------------ | :--------------------------------------- |
 | Addition | beta | Added [notifications](/graph/api/subscription-post-subscriptions?view=graph-rest-beta) for new and edited channel messages, and new and edited chat messages.
+| Change | beta | Updated the application permissions required to perform read and write operations for Shifts resources including Schedule, Scheduling group, Shift, Time off, Time off reasons, Time off request,Swap request and Open shift requests.|
 
 ## November 2019
 
