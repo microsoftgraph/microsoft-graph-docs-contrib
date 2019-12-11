@@ -10,7 +10,7 @@ doc_type: apiPageType
 # call: subscribeToTone
 
 
-Subscribe to DTMF (dual-tone multi-frequency signaling). This allows you to be notified when the user presses keys on a "Dialpad".
+Subscribe to DTMF (dual-tone multi-frequency signaling). This allows you to be notified when the user presses keys on a "dialpad".
 
 > [!Note]
 > The **subscribeToTone** action is supported only for [calls](../resources/call.md) that are initiated with [serviceHostedMediaConfig](../resources/servicehostedmediaconfig.md).
@@ -105,7 +105,6 @@ Location: https://graph.microsoft.com/v1.0/communications/calls/57dab8b1-894c-40
   "@odata.type": "#microsoft.graph.subscribeToToneOperation",
   "clientContext": "clientContext-value",
   "id": "0fe0623f-d628-42ed-b4bd-8ac290072cc5",
-  "resultInfo": null,
   "status": "completed"
 }
 ```
