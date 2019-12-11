@@ -16,7 +16,7 @@ An abstract base class that contains the media configuration used to connect to 
 | Relationship        | Type                                                 | Description                                                         |
 |:--------------------|:-----------------------------------------------------|:--------------------------------------------------------------------|
 | Application-Hosted Media          | [appHostedMediaConfig](./apphostedmediaconfig.md)       | Media that's hosted locally.                                              |
-| Service-Hosted Media       | [serviceHostedMediaConfig](servicehostedmediaconfig.md)
+| Service-Hosted Media       | [serviceHostedMediaConfig](servicehostedmediaconfig.md) | Media that's hosted remotely  |
 
 
 ## JSON representation
