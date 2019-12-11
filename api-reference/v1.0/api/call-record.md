@@ -152,6 +152,12 @@ Content-Type: application/json
         "id": "0fe0623f-d628-42ed-b4bd-8ac290072cc5",
         "clientContext": "d45324c1-fcb5-430a-902c-f20af696537c",
         "status": "completed",
+        "resultInfo": {
+          "@odata.type": "#microsoft.graph.resultInfo",
+          "code": 200,
+          "subcode": 8515,
+          "message": "Action completed, max record duration reached."
+        },
         "recordingLocation": "https://file.location/17e3b46c-f61d-4f4d-9635-c626ef18e6ad",
         "recordingAccessToken": "<access-token>"
       }
