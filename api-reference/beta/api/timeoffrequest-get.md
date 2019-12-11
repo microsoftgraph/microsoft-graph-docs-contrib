@@ -11,7 +11,7 @@ doc_type: "apiPageType"
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Retrieve the properties and relationships of [timeoffrequest](../resources/timeoffrequest.md) object.
+Retrieve the properties and relationships of a [timeoffrequest](../resources/timeoffrequest.md) object.
 
 ## Permissions
 

@@ -13,6 +13,12 @@ For details about known issues with Microsoft Graph APIs, see [Known issues](kno
 
 ## December 2019
 
+### Identity and access (Azure AD)
+| **Change type** | **Version**   | **Description**                          |
+|:---|:---|:---|
+|Addition|beta, v1.0|Added support for returning a limited amount of information when your application does not have access to some of the types in a response's collection. For more details, see [Limited information returned for inaccessible member objects](permissions-reference.md#limited-information-returned-for-inaccessible-member-objects).|
+
+
 ### Devices and apps (Microsoft Intune)
 
 | **Change type** | **Version**   | **Description**                          |
@@ -51,6 +57,12 @@ For details about known issues with Microsoft Graph APIs, see [Known issues](kno
 | **Change type** | **Version**   | **Description**                          |
 | :-------------- | :------------ | :--------------------------------------- |
 | Addition | beta | Added support for subscribing to notifications that include resource data. Currently supported resources are [chatMessage](/graph/api/resources/chatmessage?view=graph-rest-beta) resources in Microsoft Teams channels and chats. Subscribing apps will have to implement additional authorization and decryption code to benefit from this feature. For more details, see [Set up change notifications for chat messages, including message properties (preview)](webhooks-with-resource-data.md).|
+
+### Identity and access (Azure AD) | Information protection
+
+| **Change type** | **Version** | **Description**              |
+| :-------------- | :---------- | :--------------------------------------- |
+| Addition        | beta        | Added [create](/graph/api/informationprotection-post-threatassessmentrequests?view=graph-rest-beta), [get](/graph/api/threatassessmentrequest-get?view=graph-rest-beta) and [list](/graph/api/informationprotection-list-threatassessmentrequests?view=graph-rest-beta) APIs to manage [threatAssessmentRequest](/graph/api/resources/threatAssessmentRequest?view=graph-rest-beta) resources.|
 
 ### Microsoft Graph Toolkit
 
@@ -208,15 +220,15 @@ Microsoft Search is now exposing a way to search and index data in Microsoft Gra
 |:----------------|:------------|:---------------------------------------------|
 | Addition        | beta        | Added the [Microsoft Search API](search-concept-overview.md) that constitutes [querying](/graph/api/search-query?view=graph-rest-beta) and [indexing](/graph/api/resource/indexing-api-overview?view=graph-rest-beta) capabilities. |
 | Addition        | beta        | Added the [query](/graph/api/search-query?view=graph-rest-beta) action. |
-| Addition        | beta        | Added the [searchRequest](/graph/api/resource/searchrequest?view=graph-rest-beta), [searchQuery](/graph/api/resource/searchquery?view=graph-rest-beta), [searchQueryString](/graph/api/resource/searchquerystring?view=graph-rest-beta),[searchResponse](/graph/api/resource/searchresponse?view=graph-rest-beta), [searchHitsContainer](/graph/api/resource/searchhitscontainer?view=graph-rest-beta), and [searchHit](/graph/api/resource/searchhit?view=graph-rest-beta) complex types. |
-| Addition        | beta        | Added the [externalConnection](/graph/api/resource/externalconnection?view=graph-rest-beta), [schema](/graph/api/resource/schema?view=graph-rest-beta), [externalItem](/graph/api/resource/externalitem?view=graph-rest-beta), and [externalFile](/graph/api/resource/externalfile?view=graph-rest-beta) entities, and methods exposed by these entities. |
+| Addition        | beta        | Added the [searchRequest](/graph/api/resources/searchrequest?view=graph-rest-beta), [searchQuery](/graph/api/resources/searchquery?view=graph-rest-beta), [searchQueryString](/graph/api/resources/searchquerystring?view=graph-rest-beta),[searchResponse](/graph/api/resources/searchresponse?view=graph-rest-beta), [searchHitsContainer](/graph/api/resources/searchhitscontainer?view=graph-rest-beta), and [searchHit](/graph/api/resources/searchhit?view=graph-rest-beta) complex types. |
+| Addition        | beta        | Added the [externalConnection](/graph/api/resources/externalconnection?view=graph-rest-beta), [schema](/graph/api/resources/schema?view=graph-rest-beta), [externalItem](/graph/api/resources/externalitem?view=graph-rest-beta), and [externalFile](/graph/api/resources/externalfile?view=graph-rest-beta) entities, and methods exposed by these entities. |
 
 ### Teamwork (Microsoft Teams)
 
 | **Change type** | **Version**   | **Description**                          |
 | :-------------- | :------------ | :--------------------------------------- |
-| Addition | Beta | Added the [openshift](/graph/api/beta/resources/openshift?view=graph-rest-beta), [openshiftChangeRequest](/graph/api/beta/resources/openshiftChangeRequest?view=graph-rest-beta), [swapShiftChangeRequest](/graph/api/beta/resources/swapShiftChangeRequest?view=graph-rest-beta), and [timeoffrequest](/graph/api/beta/resources/timeoffrequest?view=graph-rest-beta) resources and associated methods.|
-| Addition | Beta | Added the **timeClockEnabled**, **openShiftsEnabled**, **swapShiftsRequestsEnabled**, **offerShiftRequestsEnabled**,  **timeOffRequestsEnabled** properties to the [schedule](/graph/api/beta/resources/schedule?view=graph-rest-beta) resource.|
+| Addition | Beta | Added the [openshift](/graph/api/resources/openshift?view=graph-rest-beta), [openshiftChangeRequest](/graph/api/resources/openshiftChangeRequest?view=graph-rest-beta), [swapShiftChangeRequest](/graph/api/resources/swapShiftChangeRequest?view=graph-rest-beta), and [timeoffrequest](/graph/api/resources/timeoffrequest?view=graph-rest-beta) resources and associated methods.|
+| Addition | Beta | Added the **timeClockEnabled**, **openShiftsEnabled**, **swapShiftsRequestsEnabled**, **offerShiftRequestsEnabled**,  **timeOffRequestsEnabled** properties to the [schedule](/graph/api/resources/schedule?view=graph-rest-beta) resource.|
 | Addition        | Beta          | Added an additional route to retrieve a [driveItem] using a team and channel ID, [get driveItem](/graph/api/driveitem-get?view=graph-rest-beta). |
 
 ## October 2019
