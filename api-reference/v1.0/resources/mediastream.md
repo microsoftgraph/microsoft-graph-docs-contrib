@@ -9,7 +9,7 @@ doc_type: resourcePageType
 
 # mediaStream resource type
 
-The mediaStream type.
+This contains information about the media channel.
 
 ## Properties
 
@@ -40,22 +40,6 @@ The following is a JSON representation of the resource.
   "mediaType": "unknown | audio | video | videoBasedScreenSharing | data",
   "serverMuted": true,
   "sourceId": "String"
-}
-```
-
-## Example
-
-<!-- {
-  "blockType": "example",
-  "@odata.type": "microsoft.graph.mediaStream"
-}-->
-```json
-{
-  "direction": "sendReceive",
-  "label": "main-audio",
-  "mediaType": "audio",
-  "serverMuted": false,
-  "sourceId": "1024"
 }
 ```
 
