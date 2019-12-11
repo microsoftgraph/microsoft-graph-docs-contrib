@@ -11,7 +11,7 @@ doc_type: "apiPageType"
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Retrieve the properties and relationships of [workforceintegration](../resources/workforceintegration.md) object.
+Retrieve the properties and relationships of a [workforceintegration](../resources/workforceintegration.md) object.
 
 ## Permissions
 
