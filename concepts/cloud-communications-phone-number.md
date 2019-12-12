@@ -77,7 +77,7 @@ Use the following cmdlet.
 
 `PS C:\> Set-CsOnlineVoiceApplicationInstance -Identity <user@contoso.com> -TelephoneNumber $null`
 
->**Note:** currently this only works with online numbers. Direct routing (DR) numbers won't work. This is a known issue that we're trying to solve.
+>**Note:** Currently this only works with online numbers and not direct routing (DR) numbers. This is a known issue.
 
 ## Update a phone number
 
