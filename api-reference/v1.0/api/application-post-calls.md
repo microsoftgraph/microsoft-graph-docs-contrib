@@ -125,7 +125,6 @@ Content-Type: application/json
   "state": "establishing",
   "direction": "outgoing",
   "callbackUri": "https://bot.contoso.com/callback",
-  "callRoutes": [],
   "source": {
     "@odata.type": "#microsoft.graph.participantInfo",
     "identity": {
@@ -159,7 +158,6 @@ Content-Type: application/json
   "requestedModalities": [
     "audio"
   ],
-  "activeModalities": [],
   "mediaConfig": {
     "@odata.type": "#microsoft.graph.serviceHostedMediaConfig",
     "preFetchMedia": [
@@ -173,20 +171,17 @@ Content-Type: application/json
      }
     ],
   },
-  "routingPolicies": [],
   "tenantId": "aa67bd4c-8475-432d-bd41-39f255720e0a",
   "myParticipantId": "499ff390-7a72-40e8-83a0-8fac6295ae7e",
   "id": "2e1a0b00-2db4-4022-9570-243709c565ab",
   "@odata.context": "https://graph.microsoft.com/v1.0/$metadata#app/calls/$entity",
   "subject": null,
-  "terminationReason": null,
   "ringingTimeoutInSeconds": null,
   "mediaState": null,
   "resultInfo": null,
   "answeredBy": null,
   "chatInfo": null,
   "meetingInfo": null,
-  "meetingCapability": null,
   "toneInfo": null
 }
 ```
@@ -347,7 +342,6 @@ Content-Type: application/json
   "state": "establishing",
   "direction": "outgoing",
   "callbackUri": "https://bot.contoso.com/callback",
-  "callRoutes": [],
   "source": {
     "@odata.type": "#microsoft.graph.participantInfo",
     "identity": {
@@ -377,25 +371,21 @@ Content-Type: application/json
   "requestedModalities": [
     "audio"
   ],
-  "activeModalities": [],
   "mediaConfig": {
     "@odata.type": "#microsoft.graph.appHostedMediaConfig",
     "blob": "<Media Session Configuration>",
   },
-  "routingPolicies": [],
   "tenantId": "aa67bd4c-8475-432d-bd41-39f255720e0a",
   "myParticipantId": "499ff390-7a72-40e8-83a0-8fac6295ae7e",
   "id": "2e1a0b00-2db4-4022-9570-243709c565ab",
   "@odata.context": "https://graph.microsoft.com/v1.0/$metadata#app/calls/$entity",
   "subject": null,
-  "terminationReason": null,
   "ringingTimeoutInSeconds": null,
   "mediaState": null,
   "resultInfo": null,
   "answeredBy": null,
   "chatInfo": null,
   "meetingInfo": null,
-  "meetingCapability": null,
   "toneInfo": null
 }
 ```
@@ -530,7 +520,6 @@ Content-Type: application/json
   ],
   "mediaConfig": {
     "@odata.type": "#microsoft.graph.appHostedMediaConfig",
-    "blob": "<Media Session Configuration>",
     "removeFromDefaultAudioGroup": false
   },
   "tenantId": "aa67bd4c-8475-432d-bd41-39f255720e0a"
@@ -611,7 +600,6 @@ Content-Type: application/json
   "state": "establishing",
   "direction": "outgoing",
   "callbackUri": "https://bot.contoso.com/callback",
-  "callRoutes": [],
   "source": {
     "@odata.type": "#microsoft.graph.participantInfo",
     "identity": {
@@ -629,7 +617,6 @@ Content-Type: application/json
   "requestedModalities": [
     "audio"
   ],
-  "activeModalities": [],
   "mediaConfig": {
     "@odata.type": "#microsoft.graph.serviceHostedMediaConfig",
     "preFetchMedia": [
@@ -662,18 +649,15 @@ Content-Type: application/json
     },
     "allowConversationWithoutHost": true
   },
-  "routingPolicies": [],
   "tenantId": "aa67bd4c-8475-432d-bd41-39f255720e0a",
   "myParticipantId": "05491616-385f-44a8-9974-18cc5f9933c1",
   "id": "2f1a1100-b174-40a0-aba7-0b405e01ed92",
   "@odata.context": "https://graph.microsoft.com/v1.0/$metadata#app/calls/$entity",
-  "terminationReason": null,
   "ringingTimeoutInSeconds": null,
   "mediaState": null,
   "subject": null,
   "resultInfo": null,
   "answeredBy": null,
-  "meetingCapability": null,
   "toneInfo": null
 }
 ```
@@ -890,8 +874,7 @@ Content-Type: application/json
     "audio"
   ],
   "mediaConfig": {
-    "@odata.type": "#microsoft.graph.appHostedMediaConfig",
-    "blob": "<Media Session Configuration>",
+    "@odata.type": "#microsoft.graph.appHostedMediaConfig"
   },
   "chatInfo": {
     "@odata.type": "#microsoft.graph.chatInfo",
@@ -914,14 +897,7 @@ Content-Type: application/json
   "tenantId": "aa67bd4c-8475-432d-bd41-39f255720e0a"
 }
 ```
-### Populating the Media Session Configuration
 
-For application hosted media, the blob that is passed in is the `<Media Session Configuration>` which is the serialized data which contains the session information of the media stack. Specific information about audio, video, VBSS ssession information should be passed here.
-
-A sample media session blob is shown below
-```json
-{\"mpUri\":\"net.tcp://bot.contoso.com:18732/MediaProcessor\",\"audioRenderContexts\":[\"14778cc4-f54c-43c7-989f-9092e34ef784\"],\"videoRenderContexts\":[],\"audioSourceContexts\":[\"a5dcfc9b-5a54-48ef-86f5-1fdd8508741a\"],\"videoSourceContexts\":[],\"dataRenderContexts\":null,\"dataSourceContexts\":null,\"supportedAudioFormat\":\"Pcm16K\",\"videoSinkEncodingFormats\":[],\"mpMediaSessionId\":\"2379cf46-acf3-4fef-a914-be9627075320\",\"regionAffinity\":null,\"skypeMediaBotsVersion\":\"1.11.1.0086\",\"mediaStackVersion\":\"2018.53.1.1\",\"mpVersion\":\"7.2.0.3881\",\"callId\":\"1b69b141-7f1a-4033-9c34-202737190a20\"}
-```
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2015-10-25 14:57:30 UTC -->
 <!--
