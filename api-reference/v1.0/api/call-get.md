@@ -92,7 +92,6 @@ Content-Type: application/json
   "state": "established",
   "direction": "outgoing",
   "callbackUri": "https://bot.contoso.com/callback",
-  "callRoutes": [],
   "source": {
     "@odata.type": "#microsoft.graph.participantInfo",
     "identity": {
@@ -122,7 +121,6 @@ Content-Type: application/json
   "requestedModalities": [
     "audio"
   ],
-  "activeModalities": [],
   "mediaConfig": {
     "@odata.type": "#microsoft.graph.serviceHostedMediaConfig",
     "preFetchMedia": [
@@ -136,19 +134,16 @@ Content-Type: application/json
      }
     ],
   },
-  "routingPolicies": [],
   "tenantId": "aa67bd4c-8475-432d-bd41-39f255720e0a",
   "myParticipantId": "499ff390-7a72-40e8-83a0-8fac6295ae7e",
   "id": "2e1a0b00-2db4-4022-9570-243709c565ab",
   "@odata.context": "https://graph.microsoft.com/v1.0/$metadata#communications/calls/$entity",
   "subject": null,
-  "terminationReason": null,
   "ringingTimeoutInSeconds": null,
   "resultInfo": null,
   "answeredBy": null,
   "chatInfo": null,
   "meetingInfo": null,
-  "meetingCapability": null,
   "toneInfo": null
 }
 ```
@@ -199,7 +194,6 @@ Content-Type: application/json
   "state": "established",
   "direction": "outgoing",
   "callbackUri": "https://bot.contoso.com/callback",
-  "callRoutes": [],
   "source": {
     "@odata.type": "#microsoft.graph.participantInfo",
     "identity": {
@@ -217,7 +211,6 @@ Content-Type: application/json
   "requestedModalities": [
     "audio"
   ],
-  "activeModalities": [],
   "mediaConfig": {
     "@odata.type": "#microsoft.graph.serviceHostedMediaConfig",
     "preFetchMedia": [
@@ -250,17 +243,14 @@ Content-Type: application/json
     },
     "allowConversationWithoutHost": true
   },
-  "routingPolicies": [],
   "tenantId": "aa67bd4c-8475-432d-bd41-39f255720e0a",
   "myParticipantId": "05491616-385f-44a8-9974-18cc5f9933c1",
   "id": "2f1a1100-b174-40a0-aba7-0b405e01ed92",
   "@odata.context": "https://graph.microsoft.com/v1.0/$metadata#communications/calls/$entity",
-  "terminationReason": null,
   "ringingTimeoutInSeconds": null,
   "subject": null,
   "resultInfo": null,
   "answeredBy": null,
-  "meetingCapability": null,
   "toneInfo": null
 }
 ```
