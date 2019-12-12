@@ -143,9 +143,7 @@ Content-Type: application/json
                 "displayName": "Calling Bot",
                 "id": "2891555a-92ff-42e6-80fa-6e1300c6b5c6"
               }
-            },
-            "region": "westus",
-            "languageId": "en-US"
+            }
           }
         ],
         "requestedModalities": [ "audio", "video" ]
