@@ -3,7 +3,7 @@ title: "Create schema"
 description: "Create the schema for a Microsoft Search connection."
 localization_priority: Normal
 author: "snlraju-msft"
-ms.prod: ""
+ms.prod: "search"
 doc_type: "apiPageType"
 ---
 
@@ -13,7 +13,7 @@ doc_type: "apiPageType"
 
 Create the schema for a Microsoft Search [connection](../resources/externalconnection.md).
 
-There are two schema types supported: custom items, and files.
+Two schema types are supported: custom items, and files.
 
 [!INCLUDE [search-api-preview](../../includes/search-api-preview-signup.md)]
 
@@ -58,7 +58,7 @@ With the `Prefer: respond-async` header included in the request, if successful, 
 Without the `Prefer: respond-async` header included in the request, if successful, this method returns a `201 Created` response code and a new [schema](../resources/schema.md) object in the response body.
 
 > [!NOTE]
-> Creating a schema is a long-running process prone to gateway timeouts. Using the `Prefer: respond-async` is recommended to avoid timeout errors.
+> Creating a schema is a long-running process prone to gateway timeouts. We recommend using the `Prefer: respond-async` header to avoid timeout errors.
 
 ## Examples
 

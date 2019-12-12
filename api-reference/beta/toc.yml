@@ -8765,6 +8765,26 @@
             href: api/informationprotectionlabel-evaluateremoval.md
           - name: Extract label
             href: api/informationprotectionlabel-extractlabel.md
+        - name: Threat assessment
+          items:
+          - name: Overview
+            href: resources/threatassessment-api-overview.md
+          - name: Threat assessment request
+            href: resources/threatassessmentrequest.md
+          - name: Mail assessment request
+            href: resources/mailassessmentrequest.md
+          - name: Email file assessment request
+            href: resources/emailfileassessmentrequest.md
+          - name: File assessment request
+            href: resources/fileAssessmentRequest.md
+          - name: Url assessment request
+            href: resources/urlassessmentrequest.md
+          - name: List
+            href: api/informationprotection-list-threatassessmentrequests.md
+          - name: Create
+            href: api/informationprotection-post-threatassessmentrequests.md
+          - name: Get
+            href: api/threatassessmentrequest-get.md
       - name: Invitation manager
         href: resources/invitation.md
         items:
@@ -10362,6 +10382,8 @@
           href: api/channel-get.md
         - name: Update channel
           href: api/channel-patch.md
+        - name: Delete channel
+          href: api/channel-delete.md
         - name: List channel messages
           href: api/channel-list-messages.md
         - name: Get channel messages delta
@@ -10473,6 +10495,41 @@
           href: api/opentypeextension-get.md
       - name: Shifts
         items:
+        - name: Shift
+          href: resources/shift.md
+          items:
+            - name: Create
+              href: api/schedule-post-shifts.md
+            - name: List
+              href: api/schedule-list-shifts.md
+            - name: Get
+              href: api/shift-get.md
+            - name: Replace
+              href: api/shift-put.md
+            - name: Delete
+              href: api/shift-delete.md
+        - name: Schedule
+          href: resources/schedule.md
+          items:
+            - name: Create or replace
+              href: api/team-put-schedule.md
+            - name: Get
+              href: api/schedule-get.md
+            - name: Share
+              href: api/schedule-share.md
+        - name: Scheduling group
+          href: resources/schedulinggroup.md
+          items:
+            - name: Create
+              href: api/schedule-post-schedulinggroups.md
+            - name: List
+              href: api/schedule-list-schedulinggroups.md
+            - name: Get
+              href: api/schedulinggroup-get.md
+            - name: Replace
+              href: api/schedulinggroup-put.md
+            - name: Delete
+              href: api/schedulinggroup-delete.md
         - name: Open shift
           href: resources/openshift.md
           items:
@@ -10495,41 +10552,6 @@
               href: api/openshiftchangerequest-approve.md
             - name: Decline
               href: api/openshiftchangerequest-decline.md
-        - name: Schedule
-          href: resources/schedule.md
-          items:
-          - name: Create or replace
-            href: api/team-put-schedule.md
-          - name: Get
-            href: api/schedule-get.md
-          - name: Share
-            href: api/schedule-share.md
-        - name: Scheduling group
-          href: resources/schedulinggroup.md
-          items:
-          - name: Create
-            href: api/schedule-post-schedulinggroups.md
-          - name: List
-            href: api/schedule-list-schedulinggroups.md
-          - name: Get
-            href: api/schedulinggroup-get.md
-          - name: Replace
-            href: api/schedulinggroup-put.md
-          - name: Delete
-            href: api/schedulinggroup-delete.md
-        - name: Shift
-          href: resources/shift.md
-          items:
-            - name: Create
-              href: api/schedule-post-shifts.md
-            - name: List
-              href: api/schedule-list-shifts.md
-            - name: Get
-              href: api/shift-get.md
-            - name: Replace
-              href: api/shift-put.md
-            - name: Delete
-              href: api/shift-delete.md
         - name: Swap shift change request
           href: resources/swapshiftschangerequest.md
           items:
