@@ -1,10 +1,10 @@
 ---
 title: "servicePrincipal: Add owner"
 description: "Use this API to add an owner for the service principal."
-localization_priority: Normal
-doc_type: apiPageType
-ms.prod: ""
-author: ""
+localization_priority: Priority
+doc_type: resourcePageType
+ms.prod: "microsoft-identity-platform"
+author: "davidmu1"
 ---
 
 # servicePrincipal: Add owner
@@ -40,11 +40,10 @@ In the request body, supply a JSON representation of [directoryObject](../resour
 
 If successful, this method returns `201 Created` response code and [directoryObject](../resources/directoryobject.md) object in the response body.
 
-## Example
-##### Request
+## Examples
+### Request
 Here is an example of the request.
 
-# [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "create_directoryobject_from_serviceprincipal"
@@ -59,14 +58,9 @@ Content-length: 30
   }
 }
 ```
-# [JavaScript](#tab/javascript)
-[!INCLUDE [sample-code](../includes/snippets/javascript/create-directoryobject-from-serviceprincipal-javascript-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
----
 
 In the request body, supply a JSON representation of [directoryObject](../resources/directoryobject.md) object.
-##### Response
+### Response
 Here is an example of the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.
 <!-- {
   "blockType": "response",

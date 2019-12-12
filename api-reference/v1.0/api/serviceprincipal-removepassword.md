@@ -59,7 +59,7 @@ The following is an example of the request.
 }-->
 
 ```http
-POST https://graph.microsoft.com/beta/servicePrincipals/{id}/removePassword
+POST https://graph.microsoft.com/v1.0/servicePrincipals/{id}/removePassword
 Content-type: application/json
 
 {

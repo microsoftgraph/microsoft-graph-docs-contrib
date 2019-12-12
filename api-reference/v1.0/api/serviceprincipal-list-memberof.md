@@ -1,10 +1,10 @@
 ---
 title: "List servicePrincipal memberOf"
 description: "Get the groups and directory roles that this service principal is a direct member of. This operation is not transitive."
-localization_priority: Normal
-doc_type: apiPageType
-ms.prod: ""
-author: ""
+localization_priority: Priority
+doc_type: resourcePageType
+ms.prod: "microsoft-identity-platform"
+author: "davidmu1"
 ---
 
 # List servicePrincipal memberOf
@@ -33,9 +33,10 @@ GET /servicePrincipals/{id}/memberOf
 This method supports the [OData Query Parameters](https://developer.microsoft.com/graph/docs/concepts/query_parameters) to help customize the response.
 
 ## Request headers
-| Name       | Type | Description|
-|:-----------|:------|:----------|
-| Authorization  | string  | Bearer {token}. Required. |
+| Name       | Description|
+|:-----------|:----------|
+| Authorization | Bearer {token}. Required.  |
+| Content-type | application/json. Required. |
 
 ## Request body
 Do not supply a request body for this method.
@@ -44,34 +45,19 @@ Do not supply a request body for this method.
 
 If successful, this method returns a `200 OK` response code and collection of [directoryObject](../resources/directoryobject.md) objects in the response body.
 
-## Example
+## Examples
 
 ### Request
 
 Here is an example of the request.
 
-# [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "get_serviceprincipal_memberof"
 }-->
-```msgraph-interactive
-GET https://graph.microsoft.com/beta/servicePrincipals/{id}/memberOf
+```http
+GET https://graph.microsoft.com/v1.0/servicePrincipals/{id}/memberOf
 ```
-# [C#](#tab/csharp)
-[!INCLUDE [sample-code](../includes/snippets/csharp/get-serviceprincipal-memberof-csharp-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [JavaScript](#tab/javascript)
-[!INCLUDE [sample-code](../includes/snippets/javascript/get-serviceprincipal-memberof-javascript-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [Objective-C](#tab/objc)
-[!INCLUDE [sample-code](../includes/snippets/objc/get-serviceprincipal-memberof-objc-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
----
-
 
 ### Response
 

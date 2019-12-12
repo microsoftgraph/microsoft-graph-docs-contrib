@@ -1,10 +1,10 @@
 ---
 title: "Create appRoleAssignment"
 description: "Use this API to create a new appRoleAssignment."
-localization_priority: Normal
-doc_type: apiPageType
-ms.prod: ""
-author: ""
+localization_priority: Priority
+doc_type: resourcePageType
+ms.prod: "microsoft-identity-platform"
+author: "davidmu1"
 ---
 
 # Create appRoleAssignment
@@ -27,9 +27,10 @@ POST /servicePrincipals/{id}/appRoleAssignments
 
 ```
 ## Request headers
-| Name       | Type | Description|
-|:---------------|:--------|:----------|
-| Authorization  | string  | Bearer {token}. Required. |
+| Name       | Description|
+|:-----------|:----------|
+| Authorization | Bearer {token}. Required.  |
+| Content-type | application/json. Required. |
 
 ## Request body
 In the request body, supply a JSON representation of [appRoleAssignment](../resources/approleassignment.md) object.
@@ -38,17 +39,16 @@ In the request body, supply a JSON representation of [appRoleAssignment](../reso
 
 If successful, this method returns `201 Created` response code and [appRoleAssignment](../resources/approleassignment.md) object in the response body.
 
-## Example
-##### Request
+## Examples
+### Request
 Here is an example of the request.
 
-# [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "create_approleassignment_from_serviceprincipal"
 }-->
 ```http
-POST https://graph.microsoft.com/beta/servicePrincipals/{id}/appRoleAssignments
+POST https://graph.microsoft.com/v1.0/servicePrincipals/{id}/appRoleAssignments
 Content-type: application/json
 Content-length: 233
 
@@ -60,19 +60,6 @@ Content-length: 233
   "resourceDisplayName": "resourceDisplayName-value"
 }
 ```
-# [C#](#tab/csharp)
-[!INCLUDE [sample-code](../includes/snippets/csharp/create-approleassignment-from-serviceprincipal-csharp-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [JavaScript](#tab/javascript)
-[!INCLUDE [sample-code](../includes/snippets/javascript/create-approleassignment-from-serviceprincipal-javascript-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [Objective-C](#tab/objc)
-[!INCLUDE [sample-code](../includes/snippets/objc/create-approleassignment-from-serviceprincipal-objc-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
----
 
 In the request body, supply a JSON representation of [appRoleAssignment](../resources/approleassignment.md) object.
 ##### Response

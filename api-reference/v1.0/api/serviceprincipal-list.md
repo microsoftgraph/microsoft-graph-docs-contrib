@@ -32,10 +32,10 @@ GET /servicePrincipals
 This method supports the [OData Query Parameters](https://developer.microsoft.com/graph/docs/concepts/query_parameters) to help customize the response.
 
 ## Request headers
-| Name       | Type | Description|
-|:-----------|:------|:----------|
-| Authorization  | string  | Bearer {token}. Required.  |
-| Content-type   | application/json. Required. |
+| Name       | Description|
+|:-----------|:----------|
+| Authorization | Bearer {token}. Required.  |
+| Content-type | application/json. Required. |
 
 ## Request body
 
@@ -75,34 +75,34 @@ Content-type: application/json
 
 {
     "value": [{
-      "accountEnabled": true,
-      "addIns": [],
-      "alternativeNames": ["http://contoso/a7770d29-4321-41a6-b863-ca11d6639448"],
-      "appDisplayName": "My app",
-      "appId": "appId-value",
-      "appOwnerOrganizationId": "65415bb1-9267-4313-bbf5-ae259732ee12",
-      "appRoleAssignmentRequired": true "appRoles": [],
-      "displayName": "My app instance in tenant",
-      "endpoints": [],
-      "homepage": null,
-      "id": "00af5dfb-85da-4b41-a677-0c6b86dd34f8",
-      "info": {
-          "termsOfServiceUrl": null,
-          "supportUrl": null,
-          "privacyStatementUrl": null,
-          "marketingUrl": null,
-          "logoUrl": null
-      },
-      "keyCredentials": [],
-      "logoutUrl": null,
-      "oauth2PermissionScopes": [],
-      "passwordCredentials": [],
-      "publisherName": null,
-      "replyUrls": [],
-      "servicePrincipalNames": [],
-      "servicePrincipalType": null,
-      "tags": [],
-      "tokenEncryptionKeyId": null
+        "id": "59e617e5-e447-4adc-8b88-00af644d7c92",
+        "deletedDateTime": null,
+        "accountEnabled": true,
+        "appDisplayName": "My App",
+        "appId": "65415bb1-9267-4313-bbf5-ae259732ee12",
+        "appOwnerOrganizationId": "1bc1c026-2f7b-48a5-98da-afa2fd8bc7bc",
+        "appRoleAssignmentRequired": false,
+        "displayName": "foo",
+        "homepage": null,
+        "logoutUrl": null,
+        "publisherName": "Contoso",
+        "replyUrls": [],
+        "servicePrincipalNames": [
+        "f1bd758f-4a1a-4b71-aa20-a248a22a8928"
+        ],
+        "tags": [],
+        "addIns": [],
+        "appRoles": [],
+        "info": {
+        "termsOfServiceUrl": null,
+        "supportUrl": null,
+        "privacyStatementUrl": null,
+        "marketingUrl": null,
+        "logoUrl": null
+        },
+        "keyCredentials": [],
+        "oauth2PermissionScopes": [],
+        "passwordCredentials": []
     }]
 }
 ```

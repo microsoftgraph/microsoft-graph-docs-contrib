@@ -30,9 +30,9 @@ GET /servicePrincipals/{id}
 This method supports the [OData Query Parameters](https://developer.microsoft.com/graph/docs/concepts/query_parameters) to help customize the response.
 
 ## Request headers
-| Name       | Type | Description|
-|:-----------|:------|:----------|
-| Authorization  | string  | Bearer {token}. Required.  |
+| Name       | Description|
+|:-----------|:----------|
+| Authorization | Bearer {token}. Required.  |
 | Content-type | application/json. Required. |
 
 ## Request body
@@ -76,17 +76,18 @@ Content-type: application/json
   "appDisplayName": "My app",
   "appId": "appId-value",
   "appOwnerOrganizationId": "65415bb1-9267-4313-bbf5-ae259732ee12",
-  "appRoleAssignmentRequired": true "appRoles": [],
+  "appRoleAssignmentRequired":true,
+  "appRoles": [],
   "displayName": "My app instance in tenant",
   "endpoints": [],
   "homepage": null,
   "id": "00af5dfb-85da-4b41-a677-0c6b86dd34f8",
   "info": {
-      "termsOfServiceUrl": null,
-      "supportUrl": null,
-      "privacyStatementUrl": null,
-      "marketingUrl": null,
-      "logoUrl": null
+    "termsOfServiceUrl": null,
+    "supportUrl": null,
+    "privacyStatementUrl": null,
+    "marketingUrl": null,
+    "logoUrl": null
   },
   "keyCredentials": [],
   "logoutUrl": null,

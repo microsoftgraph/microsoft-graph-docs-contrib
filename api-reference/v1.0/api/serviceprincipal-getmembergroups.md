@@ -1,10 +1,10 @@
 ---
 title: "servicePrincipal: getMemberGroups"
 description: "Get the list of groups that this service principal is a member of.  The check is transitive."
-localization_priority: Normal
-doc_type: apiPageType
-ms.prod: ""
-author: ""
+localization_priority: Priority
+doc_type: resourcePageType
+ms.prod: "microsoft-identity-platform"
+author: "davidmu1"
 ---
 
 # servicePrincipal: getMemberGroups
@@ -28,9 +28,10 @@ POST /servicePrincipals/{id}/getMemberGroups
 
 ```
 ## Request headers
-| Name       | Type | Description|
-|:---------------|:--------|:----------|
-| Authorization  | string  | Bearer {token}. Required. |
+| Name       | Description|
+|:-----------|:----------|
+| Authorization | Bearer {token}. Required.  |
+| Content-type | application/json. Required. |
 
 ## Request body
 In the request body, provide a JSON object with the following parameters.
@@ -45,16 +46,15 @@ If successful, this method returns `200 OK` response code and String collection 
 
 ## Example
 Here is an example of how to call this API.
-##### Request
+### Request
 Here is an example of the request.
 
-# [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "serviceprincipal_getmembergroups"
 }-->
 ```http
-POST https://graph.microsoft.com/beta/servicePrincipals/{id}/getMemberGroups
+POST https://graph.microsoft.com/v1.0/servicePrincipals/{id}/getMemberGroups
 Content-type: application/json
 Content-length: 33
 
@@ -62,22 +62,8 @@ Content-length: 33
   "securityEnabledOnly": true
 }
 ```
-# [C#](#tab/csharp)
-[!INCLUDE [sample-code](../includes/snippets/csharp/serviceprincipal-getmembergroups-csharp-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# [JavaScript](#tab/javascript)
-[!INCLUDE [sample-code](../includes/snippets/javascript/serviceprincipal-getmembergroups-javascript-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [Objective-C](#tab/objc)
-[!INCLUDE [sample-code](../includes/snippets/objc/serviceprincipal-getmembergroups-objc-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
----
-
-
-##### Response
+### Response
 Here is an example of the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.
 <!-- {
   "blockType": "response",

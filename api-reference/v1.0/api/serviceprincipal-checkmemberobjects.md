@@ -30,11 +30,10 @@ POST /servicePrincipals/{id}/checkMemberObjects
 ```
 
 ## Request headers
-
-| Name          | Description   |
-|:--------------|:--------------|
-| Authorization | Bearer {token} |
-| Content-Type  | application/json |
+| Name       | Description|
+|:-----------|:----------|
+| Authorization | Bearer {token}. Required.  |
+| Content-type | application/json. Required. |
 
 ## Request body
 
@@ -56,14 +55,13 @@ The following example shows how to call this API.
 
 The following is an example of the request.
 
-# [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "serviceprincipal_checkmemberobjects"
 }-->
 
 ```http
-POST https://graph.microsoft.com/beta/servicePrincipals/{id}/checkMemberObjects
+POST https://graph.microsoft.com/v1.0/servicePrincipals/{id}/checkMemberObjects
 Content-type: application/json
 
 {
@@ -75,20 +73,6 @@ Content-type: application/json
   ]
 }
 ```
-# [C#](#tab/csharp)
-[!INCLUDE [sample-code](../includes/snippets/csharp/serviceprincipal-checkmemberobjects-csharp-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [JavaScript](#tab/javascript)
-[!INCLUDE [sample-code](../includes/snippets/javascript/serviceprincipal-checkmemberobjects-javascript-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [Objective-C](#tab/objc)
-[!INCLUDE [sample-code](../includes/snippets/objc/serviceprincipal-checkmemberobjects-objc-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
----
-
 
 ### Response
 

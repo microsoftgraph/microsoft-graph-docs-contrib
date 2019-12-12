@@ -1,14 +1,15 @@
 ---
 title: "servicePrincipal: checkMemberGroups"
-description: "One of the following permissions is required to call this API. To learn more, including how to choose permissions, see Permissions."
-localization_priority: Normal
-doc_type: apiPageType
-ms.prod: ""
-author: ""
+description: "heck for membership in the specified list of groups. Returns from the list those groups of which the serviceprincipal has a direct or transitive membership."
+localization_priority: Priority
+doc_type: resourcePageType
+ms.prod: "microsoft-identity-platform"
+author: "davidmu1"
 ---
 
 # servicePrincipal: checkMemberGroups
 
+Check for membership in the specified list of groups. Returns from the list those groups of which the serviceprincipal has a direct or transitive membership.
 
 ## Permissions
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
@@ -26,9 +27,10 @@ POST /servicePrincipals/{id}/checkMemberGroups
 
 ```
 ## Request headers
-| Name       | Type | Description|
-|:---------------|:--------|:----------|
-| Authorization  | string  | Bearer {token}. Required. |
+| Name       | Description|
+|:-----------|:----------|
+| Authorization | Bearer {token}. Required.  |
+| Content-type | application/json. Required. |
 
 ## Request body
 In the request body, provide a JSON object with the following parameters.
@@ -41,18 +43,17 @@ In the request body, provide a JSON object with the following parameters.
 
 If successful, this method returns `200 OK` response code and String collection object in the response body.
 
-## Example
+## Examples
 Here is an example of how to call this API.
-##### Request
+### Request
 Here is an example of the request.
 
-# [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "serviceprincipal_checkmembergroups"
 }-->
 ```http
-POST https://graph.microsoft.com/beta/servicePrincipals/{id}/checkMemberGroups
+POST https://graph.microsoft.com/v1.0/servicePrincipals/{id}/checkMemberGroups
 Content-type: application/json
 Content-length: 44
 
@@ -62,22 +63,7 @@ Content-length: 44
   ]
 }
 ```
-# [C#](#tab/csharp)
-[!INCLUDE [sample-code](../includes/snippets/csharp/serviceprincipal-checkmembergroups-csharp-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [JavaScript](#tab/javascript)
-[!INCLUDE [sample-code](../includes/snippets/javascript/serviceprincipal-checkmembergroups-javascript-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [Objective-C](#tab/objc)
-[!INCLUDE [sample-code](../includes/snippets/objc/serviceprincipal-checkmembergroups-objc-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
----
-
-
-##### Response
+### Response
 Here is an example of the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.
 <!-- {
   "blockType": "response",
