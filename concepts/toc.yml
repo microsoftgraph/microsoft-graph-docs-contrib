@@ -97,7 +97,7 @@ items:
             href: outlook-immutable-id.md
       - name: Cloud Communications
         items:
-          - name: Managing Phone Numbers for Bots
+          - name: Manage phone numbers for bots
             href: cloud-communications-phone-number.md
           - name: Limits
             href: cloud-communications-limits.md
