@@ -114,6 +114,7 @@ The following example shows the response.
 } -->
 ```http
 HTTP/1.1 200 OK
+Content-Type: application/json
 Location: https://graph.microsoft.com/v1.0/communications/calls/57dab8b1-894c-409a-b240-bd8beae78896/operations/0fe0623f-d628-42ed-b4bd-8ac290072cc5
 
 {
