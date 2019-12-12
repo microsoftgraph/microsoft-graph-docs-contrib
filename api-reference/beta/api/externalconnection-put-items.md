@@ -71,7 +71,7 @@ Properties on an `externalItem` should use type specifiers in the payload in the
 - For all collection types.
 
     ```json
-    "categories@odata.type": "StringCollection"
+    "categories@odata.type": "Collection(String)"
     "categories": [
       "red",
       "blue"
@@ -79,7 +79,7 @@ Properties on an `externalItem` should use type specifiers in the payload in the
     ```
 
     > [!IMPORTANT]
-    > When including a property of type `DateTimeCollection`, you must use the type specifier `DateTimeOffsetCollection`.
+    > When including a property of type `Collection(DateTime)`, you must use the type specifier `Collection(DateTimeOffset)`.
 
 ### Creating an externalFile
 
