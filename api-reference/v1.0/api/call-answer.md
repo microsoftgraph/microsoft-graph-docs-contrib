@@ -171,8 +171,7 @@ Content-Type: application/json
                 "displayName": "Test BOT",
                 "id": "8A34A46B-3D17-4ADC-8DCE-DC4E7D572698"
               }
-            },
-            "languageId": "en-US"
+            }
           }
         ],
         "requestedModalities": [ "audio" ]
@@ -327,9 +326,7 @@ Content-Type: application/json
                 "displayName": "Test BOT",
                 "id": "8A34A46B-3D17-4ADC-8DCE-DC4E7D572698"
               }
-            },
-            "region": "westus",
-            "languageId": "en-US"
+            }
           }
         ],
         "requestedModalities": [ "audio" ]
