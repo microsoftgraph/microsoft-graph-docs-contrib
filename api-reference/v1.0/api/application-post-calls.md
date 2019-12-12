@@ -153,9 +153,7 @@ Content-Type: application/json
         }
       },
       "endpointType": null,
-      "region": null,
       "replacesCallId": null,
-      "languageId": null
     }
   ],
   "requestedModalities": [
