@@ -13,8 +13,6 @@ Enable a bot to answer an incoming [call](../resources/call.md). The incoming ca
 
 The bot is expected to answer, [reject](./call-reject.md), or [redirect](./call-redirect.md) the call before the call times out. The current timeout value is 15 seconds.
 
-> **Note:** The bot can only be reached by VoIP. PSTN calling isn't supported.
-
 ## Permissions
 You do not need any permissions to answer a peer-to-peer call. You need one of the following permissions to join a group call. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
 
