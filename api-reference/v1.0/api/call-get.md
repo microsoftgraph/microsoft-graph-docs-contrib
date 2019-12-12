@@ -116,9 +116,7 @@ Content-Type: application/json
           "displayName": "John",
           "id": "112f7296-5fa4-42ca-bae8-6a692b15d4b8"
         }
-      },
-      "region": null,
-      "languageId": null
+      }
     }
   ],
   "requestedModalities": [
