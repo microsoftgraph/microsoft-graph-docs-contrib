@@ -9,8 +9,6 @@ doc_type: resourcePageType
 
 # participantInfo resource type
 
-[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
-
 Contains additional properties about the participant identity
 
 ## Properties
