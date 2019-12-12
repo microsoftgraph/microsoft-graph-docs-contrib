@@ -8,24 +8,12 @@ ms.prod: "cloud-communications"
 
 # Limits to Cloud Communications APIs in Microsoft Graph
 
-We set limits on API usage to ensure that our platform is stable, reliable, and secure.
+We set limits on API usage to ensure that our platform is stable, reliable, and secure. They are *subject to change* in the future. 
 
-#### Calls
-Each month, there's a limit of
+>**Note:** Once the limit is reached, attempting to make more API requests will result in a `429 Error`.
 
-- **10,000** calls
-
-- **100** concurrent calls
-
-This includes all established incoming and outgoing calls.
-
-#### Meetings
-There's a limit of **2000** requests per user
-
-#### Presence (preview)
-There's a limit of **2** requests per second
-
-#### See Also
-These limits are ***subject to change*** in the future
-
-Once the limit is reached, attempting to make more API requests will result in a `429 Error`.
+| API      | Limitations    |
+| :------------- | :----------: |
+|  Calls | 10,000 calls/month and 100 calls/month   |
+| Meetings   | 2000 requests/user |
+| Presence (preview)   | 2 requests/second |
