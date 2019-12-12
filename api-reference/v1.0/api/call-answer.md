@@ -136,22 +136,6 @@ Content-Type: application/json
         "@odata.etag": "W/\"5445\"",
         "state": "incoming",
         "direction": "incoming",
-        "callRoutes": [
-          {
-            "routingType": "lookup",
-            "original": {
-              "phone": {
-                "id": "+14258828080"
-              }
-            },
-            "final": {
-              "user": {
-                "id": "29362BD4-CD58-4ED0-A206-0E4A33DBB0B6",
-                "displayName": "Heidi Steen"
-              }
-            }
-          }
-        ],
         "source": {
           "identity": {
             "user": {
