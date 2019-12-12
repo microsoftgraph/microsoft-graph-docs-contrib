@@ -1325,8 +1325,8 @@ For more complex scenarios involving multiple permissions, see [Permission scena
 
 |   Permission    |  Display String   |  Description | Admin Consent Required | Microsoft Account supported |
 |:----------------|:------------------|:-------------|:-----------------------|:--------------|
-| _Schedule.ReadWrite.All_ | Read and Write Shifts service (Teams) data | Allows an app to read and write Schedule, Schedule groups, Shifts and associated entities in Shifts application without a signed-in user. In Private Preview only.| Yes | No |
-| _Schedule.Read.All_ | Read Shifts service (Teams) data | Allows the app to read Schedule, Schedule groups, Shifts and associated entities in Shifts application without a signed-in user. In Private Preview only. | Yes | No |
+| _Schedule.ReadWrite.All_ | Read and Write Shifts service (Teams) data | Allows an app to read and write schedule, schedule groups, shifts, and associated entities in shifts applications without a signed-in user. This permission is currently in private preview only and is not available for public use.| Yes | No |
+| _Schedule.Read.All_ | Read Shifts service (Teams) data | Allows the app to read schedule, schedule groups, shifts, and associated entities in shifts applications without a signed-in user. This permission is currently in private preview only and is not available for public use. | Yes | No |
 
 #### Delegated permissions
 
