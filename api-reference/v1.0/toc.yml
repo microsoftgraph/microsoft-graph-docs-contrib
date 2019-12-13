@@ -768,6 +768,8 @@
           href: api/call-redirect.md
         - name: Transfer
           href: api/call-transfer.md
+        - name: Keep alive
+          href: api/call-keepalive.md          
         - name: IVR scenarios
           href: resources/calls-api-ivr-overview.md
           items:
