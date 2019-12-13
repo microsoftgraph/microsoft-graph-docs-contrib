@@ -40,7 +40,6 @@ DELETE /teams/{teamId}/schedule/timesOff/{timeOffId}
 | Header       | Value |
 |:---------------|:--------|
 | Authorization  | Bearer {token}. Required.  |
-| Content-Type  | application/json  |
 
 ## Request body
 Do not supply a request body for this method.
