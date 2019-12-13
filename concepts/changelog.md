@@ -16,6 +16,7 @@ For details about known issues with Microsoft Graph APIs, see [Known issues](kno
 ### Identity and access (Azure AD)
 | **Change type** | **Version**   | **Description**                          |
 |:---|:---|:---|
+|Change | beta |Flipped **appRoleAssignments** and **appRoleAssignedTo** relationships on [ServicePrincipal](/graph/api/resoureces/serviceprincipal.md) to match documentation. **appRoleAssignments** returns app roles granted to the service principal and **appRoleAssignedTo** returns principals granted app roles to the service principal.|
 |Addition|beta, v1.0|Added support for returning a limited amount of information when your application does not have access to some of the types in a response's collection. For more details, see [Limited information returned for inaccessible member objects](permissions-reference.md#limited-information-returned-for-inaccessible-member-objects).|
 
 
