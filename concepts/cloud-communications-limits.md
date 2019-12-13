@@ -1,14 +1,14 @@
 ---
-title: "Limitations to cloud communications APIs in Microsoft Graph"
+title: "Cloud communication API limits in Microsoft Graph"
 description: "This contains information about the limits of the Cloud Communications APIs"
 author: "ananmishr"
 localization_priority: Normal
 ms.prod: "cloud-communications"
 ---
 
-# Limitations to cloud communications APIs in Microsoft Graph
+# Cloud communication API limits in Microsoft Graph
 
-This article describes limitations to the cloud communications APIs. These limits help to ensure that the platform is stable, reliable, and secure. Note that these limitations are *subject to change* in the future. 
+This article describes limitations to the cloud communications APIs. These limits help to ensure that the platform is stable, reliable, and secure. Note that these limitations are subject to change in the future. 
 
 >**Note:** When the limit is reached, attempting to make more API requests will result in an HTTP `429 Error`.
 
