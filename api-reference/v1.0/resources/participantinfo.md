@@ -27,8 +27,6 @@ The following is a JSON representation of the resource.
 <!-- {
   "blockType": "resource",
   "optionalProperties": [
-    "countryCode",
-    "endpointType",
     "languageId",
     "region"
   ],
@@ -36,9 +34,7 @@ The following is a JSON representation of the resource.
 }-->
 ```json
 {
-  "countryCode": "String",
   "identity": { "@odata.type": "#microsoft.graph.identitySet" },
-  "endpointType": "default | skypeForBusiness | skypeForBusinessVoipPhone",
   "languageId": "String",
   "region": "String"
 }
