@@ -23,6 +23,8 @@ One of the following permissions is required to call this API. To learn more, in
 | Delegated (personal Microsoft account) | Not supported. |
 |Application | Schedule.ReadWrite.All* |
 
+>\* **Important:** Application permissions are currently in private preview only and are not available for public use.
+
 ## HTTP request
 
 <!-- { "blockType": "ignored" } -->
