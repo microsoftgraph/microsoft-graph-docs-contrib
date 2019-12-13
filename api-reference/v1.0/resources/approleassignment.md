@@ -9,8 +9,6 @@ author: "psignoret"
 
 # appRoleAssignment resource type
 
-[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
-
 Used to record when a user, group or service principal is assigned an app role for an app.
 
 An app role assignment is a relationship between the assigned principal (a user, a group, or a service principal), a resource application (the app's service principal) and an app role defined on the resource application.

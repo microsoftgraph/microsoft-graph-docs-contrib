@@ -9,8 +9,6 @@ author: "davidmu1"
 
 # Delete appRoleAssignment
 
-[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
-
 Deletes an [appRoleAssignment](../resources/approleassignment.md) which a user, group or service principal has been granted.
 
 ## Permissions
@@ -63,7 +61,7 @@ Here is an example of the request to delete an app role assignment.
 }-->
 
 ```http
-DELETE https://graph.microsoft.com/beta/servicePrincipals/{id}/appRoleAssignedTo/{id}
+DELETE https://graph.microsoft.com/v1.0/servicePrincipals/{id}/appRoleAssignedTo/{id}
 ```
 
 ### Response

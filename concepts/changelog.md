@@ -18,6 +18,9 @@ For details about known issues with Microsoft Graph APIs, see [Known issues](kno
 | **Change type** | **Version** | **Description**                  |
 |:----------------|:------------|:-----------------------------------------|
 | Addition | v1.0 | Added new entity type: [servicePrincipal](/graph/resources/serviceprincipal?view=graph-rest-v1.0).|
+| Addition | v1.0 | Added new entity type: [appRoleAssignment](/graph/resources/approleassignment?view=graph-rest-v1.0).|
+| Addition | beta, v1.0 | Added app-only and delegated permissions [AppRoleAssignment.ReadWrite.All](permissions-reference.md#group-permissions). |
+
 ## January 2020
 
 ### Devices and apps (Microsoft Intune)
