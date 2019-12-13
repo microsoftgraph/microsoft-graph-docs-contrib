@@ -3,7 +3,7 @@ title: "List connections"
 description: "Retrieve a list of externalConnections."
 localization_priority: Normal
 author: "snlraju-msft"
-ms.prod: ""
+ms.prod: "search"
 doc_type: "apiPageType"
 ---
 
@@ -12,6 +12,8 @@ doc_type: "apiPageType"
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 Retrieve a list of [externalConnections](../resources/externalconnection.md).
+
+[!INCLUDE [search-api-preview](../../includes/search-api-preview-signup.md)]
 
 ## Permissions
 

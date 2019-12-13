@@ -25,7 +25,7 @@ Subscribes a listener application to receive notifications when the requested ty
 |[event](../resources/event.md) | Calendars.Read | Calendars.Read | Calendars.Read |
 |[group](../resources/group.md) | Group.Read.All | Not supported | Group.Read.All |
 |[group conversation](../resources/conversation.md) | Group.Read.All | Not supported | Not supported |
-|[message](../resources/message.md) | Mail.Read | Mail.Read | Mail.Read |
+|[message](../resources/message.md) | Mail.ReadBasic, Mail.Read | Mail.ReadBasic, Mail.Read | Mail.ReadBasic, Mail.Read |
 |[security alert](../resources/alert.md) | SecurityEvents.ReadWrite.All | Not supported | SecurityEvents.ReadWrite.All |
 |[user](../resources/user.md) | User.Read.All | User.Read.All | User.Read.All |
 
@@ -75,7 +75,7 @@ POST https://graph.microsoft.com/v1.0/subscriptions
 Content-type: application/json
 
 {
-   "changeType": "created,updated",
+   "changeType": "updated",
    "notificationUrl": "https://webhook.azurewebsites.net/api/send/myNotifyClient",
    "resource": "me/mailFolders('Inbox')/messages",
    "expirationDateTime":"2016-11-20T18:23:45.9356913Z",
@@ -138,7 +138,7 @@ Content-length: 252
   "id": "7f105c7d-2dc5-4530-97cd-4e7ae6534c07",
   "resource": "me/mailFolders('Inbox')/messages",
   "applicationId": "24d3b144-21ae-4080-943f-7067b395b913",
-  "changeType": "created,updated",
+  "changeType": "updated",
   "clientState": "secretClientValue",
   "notificationUrl": "https://webhook.azurewebsites.net/api/send/myNotifyClient",
   "expirationDateTime": "2016-11-20T18:23:45.9356913Z",
