@@ -22,7 +22,6 @@ Contains information about the meeting, including the URL used to join a meeting
 
 | Property                  | Type                                                   | Description                                                                                                                |
 | :------------------------ | :----------------------------------------------------- | :------------------------------------------------------------------------------------------------------------------------- |
-| autoAdmittedUsers         | String                                                 | The setting that specifies the type of participants that will automatically be allowed into the online meeting. Read-only. Possible values are: `everyone`, `everyoneInSameAndFederatedCompany`, `everyoneInCompany`, `invitedUsersInCompany`, `organizer`|
 | audioConferencing         | [audioConferencing](audioconferencing.md)              | The phone access (dial-in) information for an online meeting. Read-only. |
 | chatInfo                  | [chatInfo](chatinfo.md)                                | The chat information associated with this online meeting. |
 | creationDateTime          | DateTime                                               | The meeting creation time in UTC. Read-only. |
@@ -33,15 +32,6 @@ Contains information about the meeting, including the URL used to join a meeting
 | participants              | [meetingParticipants](meetingparticipants.md)          | The participants associated with the online meeting.  This includes the organizer and the attendees. |
 | subject                   | String                                                 | The subject of the online meeting. |
 | videoTeleconferenceId     | String                                                 | The videio teleconferencing ID. Read-only. |
-
-### autoAdmittedUsers values
-| Value | Description  |
-| :------------------------ | :----------------------------------------------------- | :------------------------------------------------------------------------------------------------------------------------- |
-| organizer | Only the meeting organizer is admitted directly.  Everyone else waits in the lobby, until admitted by the organizer  |
-| invitedUsersInCompany | The meeting organizer and the users in the same company invited by the organizer join the meeting directly.  Everyone else waits in lobby until admitted.  |
-| everyoneInCompany | Everyone in the same company as the organizer join the meeting directly.  Federated, anonymous users wait in lobby until admitted.  |
-| everyoneInSameAndFederatedCompany |  Everyone in same company as the organizer and federated companies join the meeting directly.  Anonymous users wait in lobby until admitted.  |
-| everyone | Any user is allowed, which means that everyone (including anonymous users) can join the meeting directly without waiting in lobby.  |
 
 
 ## JSON representation
@@ -55,7 +45,6 @@ Contains information about the meeting, including the URL used to join a meeting
 }-->
 ```json
 {
-  "autoAdmittedUsers": "everyone | everyoneInSameAndFederatedCompany | everyoneInCompany | invitedUsersInCompany | organizer",
   "audioConferencing": {"@odata.type": "#microsoft.graph.audioConferencing"},
   "chatInfo": {"@odata.type": "#microsoft.graph.chatInfo"},
   "creationDateTime": "String (timestamp)",
