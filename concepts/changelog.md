@@ -95,7 +95,9 @@ Introduced version 1.1 of the Microsoft Graph Toolkit.
  
 | **Change type** | **Version**   | **Description**                          |
 | :-------------- | :------------ | :--------------------------------------- |
-| Addition | beta | Added [notifications](/graph/api/subscription-post-subscriptions?view=graph-rest-beta) for new and edited channel messages, and new and edited chat messages.
+| Addition | beta | Added [notifications](/graph/api/subscription-post-subscriptions?view=graph-rest-beta) for new and edited channel messages, and new and edited chat messages. |
+| Addition | Beta | Added the [shift-preference](/graph/api/resources/shift-preference?view=graph-rest-beta) resource and associated methods.|
+| Addition | Beta | Added new relationship `shiftPreferences` to [userSettings](/graph/api/resources/usersettings?view=graph-rest-beta) entity. |
 
 ## November 2019
 
