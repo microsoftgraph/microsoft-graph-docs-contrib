@@ -238,6 +238,9 @@ Content-length: 160
 
 #### Request
 The following is an example of the request.
+
+> Note: The attachment's ID must be unique and can be a new randomly generated GUID. However, the attachment's ID must be the same in the _body_ and _attachments_ elements.
+
 <!-- {
   "blockType": "request",
   "name": "create_chatmessage_from_channel"
