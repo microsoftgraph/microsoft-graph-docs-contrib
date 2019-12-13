@@ -9,15 +9,14 @@ doc_type: resourcePageType
 
 # invitationParticipantInfo resource type
 
-This resource is used to represent a set of identities associated with a group call invitation, and provides additional invitation parameters.
+This resource is used to represent the entity that is being invited to a group call. 
 
 ## Properties
 
 | Property                           | Type                          | Description                                                                          |
 | :--------------------------------- | :---------------------------- | :----------------------------------------------------------------------------------- |
-| endpointType                       | String                        | The type of endpoint. Possible values are: `default`, `voicemail`. |
 | identity                           | [identitySet](identityset.md) | The [identitySet](identityset.md) associated with this invitation.                   |
-| replacesCallId                     | String                        | Optional. The call which the target idenity is currently a part of. This call will be dropped once the participant is added. |
+| replacesCallId                     | String                        | Optional. The call which the target identity is currently a part of. This call will be dropped once the participant is added. |
 
 ## JSON representation
 
@@ -26,14 +25,12 @@ The following is a JSON representation of the resource.
 <!-- {
   "blockType": "resource",
   "optionalProperties": [
-    "endpointType",
     "replacesCallId"
   ],
   "@odata.type": "microsoft.graph.invitationParticipantInfo"
 }-->
 ```json
 {
-  "endpointType": "default | voicemail",
   "identity": {"@odata.type": "#microsoft.graph.identitySet"},
   "replacesCallId": "String"
 }
