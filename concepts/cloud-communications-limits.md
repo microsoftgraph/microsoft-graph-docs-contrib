@@ -1,19 +1,23 @@
 ---
-title: "Limits to Cloud Communications APIs in Microsoft Graph"
+title: "Limitations to cloud communications APIs in Microsoft Graph"
 description: "This contains information about the limits of the Cloud Communications APIs"
 author: "ananmishr"
 localization_priority: Normal
 ms.prod: "cloud-communications"
 ---
 
-# Limits to Cloud Communications APIs in Microsoft Graph
+# Limitations to cloud communications APIs in Microsoft Graph
 
-We set limits on API usage to ensure that our platform is stable, reliable, and secure. They are *subject to change* in the future. 
+This article describes limitations to the cloud communications APIs. These limits help to ensure that the platform is stable, reliable, and secure. Note that these limitations are *subject to change* in the future. 
 
->**Note:** Once the limit is reached, attempting to make more API requests will result in a `429 Error`.
+>**Note:** When the limit is reached, attempting to make more API requests will result in an HTTP `429 Error`.
 
 | API      | Limitations    |
 | :------------- | :----------: |
 |  Calls | 10,000 calls/month and 100 calls/month   |
 | Meetings   | 2000 requests/user |
 | Presence (preview)   | 2 requests/second |
+
+## See also
+
+- [Working with the communications API](/graph/api/resources/communications-api-overview?view=graph-rest-beta)
