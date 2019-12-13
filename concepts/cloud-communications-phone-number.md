@@ -18,8 +18,8 @@ One application can have multiple application instances, and each tenant can hav
 
 ![Image showing a phone number with tenants with one or more application instances](images/communications-app-tenant.PNG)
 
-## Register a bot
-Follow the instructions to [register a calling bot](https://microsoftgraph.github.io/microsoft-graph-comms-samples/docs/articles/calls/register-calling-bot.html). You’ll need config values such as bot ID, Microsoft app ID, and Microsoft app password to use in your code.
+## Prerequisite - Register a bot
+To get started, follow the instructions to [register a calling bot](https://microsoftgraph.github.io/microsoft-graph-comms-samples/docs/articles/calls/register-calling-bot.html). You’ll need config values such as bot ID, Microsoft app ID, and Microsoft app password to use in your code.
 
 Add the following permissions to your bot. A tenant admin needs to consent to these permissions as well:
 
@@ -31,7 +31,7 @@ Add the following permissions to your bot. A tenant admin needs to consent to th
 For more information about call-related permissions, see the [Permissions reference](permissions-reference.md#calls-permissions).
 
 
-## Assign a phone number
+## Assign a phone number to your bot
 
 Assigning a phone number to your bot involves three steps:
 
@@ -66,7 +66,7 @@ To assign the phone number to the application instance, the tenant addmin:
 
   `PS C:\> Set-CsOnlineVoiceApplicationInstance -Identity <user@contoso.com> -TelephoneNumber <phone_number>`
 
-## Unassign a phone number
+## Unassign a bot phone number
 
 Use the following cmdlet to unassign a phone number.
 
@@ -74,7 +74,7 @@ Use the following cmdlet to unassign a phone number.
 
 >**Note:** Currently this only works with online numbers and not direct routing (DR) numbers. This is a known issue.
 
-## Update a phone number
+## Update a bot phone number
 
 After unassigning the number, you can assign a different number to the bot by using the following cmdlet.
 
