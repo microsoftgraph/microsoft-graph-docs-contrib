@@ -132,6 +132,7 @@ Content-Type: application/json
       "replacesCallId": "a7ebfb2d-871e-419c-87af-27290b22e8db",
       "identity": {
         "user": {
+          "@odata.type": "#microsoft.graph.identity",
           "id": "278405a3-f568-4b3e-b684-009193463064",
           "identityProvider": "AAD",
           "tenantId": "72f988bf-86f1-41af-91ab-2d7cd011db47"
@@ -335,6 +336,7 @@ Content-Type: application/json
          "replacesCallId":null,
          "identity":{
             "user":{
+              "@odata.type": "#microsoft.graph.identity",
                "id":"7e1b4346-85a6-4bdd-abe3-d11c5d420efe",
                "identityProvider":"AAD",
                "tenantId":"72f988bf-86f1-41af-91ab-2d7cd011db47"
@@ -350,6 +352,7 @@ Content-Type: application/json
          "replacesCallId":null,
          "identity":{
             "user":{
+               "@odata.type": "#microsoft.graph.identity",
                "id":"1e126418-44a0-4a94-a6f8-0efe1ad71acb",
                "identityProvider":"AAD",
                "tenantId":"72f988bf-86f1-41af-91ab-2d7cd011db47"
@@ -390,6 +393,7 @@ Content-Type: application/json
             "identity": {
               "@odata.type": "#microsoft.graph.identitySet",
               "user":{
+                "@odata.type": "#microsoft.graph.identity",
                 "id":"7e1b4346-85a6-4bdd-abe3-d11c5d420efe",
                 "identityProvider":"AAD",
                 "tenantId":"72f988bf-86f1-41af-91ab-2d7cd011db47"
@@ -401,6 +405,7 @@ Content-Type: application/json
             "identity": {
               "@odata.type": "#microsoft.graph.identitySet",
               "user":{
+                "@odata.type": "#microsoft.graph.identity",
                 "id":"1e126418-44a0-4a94-a6f8-0efe1ad71acb",
                 "identityProvider":"AAD",
                 "tenantId":"72f988bf-86f1-41af-91ab-2d7cd011db47"
@@ -473,6 +478,7 @@ Content-Type: application/json
             "identity": {
               "@odata.type": "#microsoft.graph.identitySet",
               "user":{
+                "@odata.type": "#microsoft.graph.identity",
                 "id":"1e126418-44a0-4a94-a6f8-0efe1ad71acb",
                 "identityProvider":"AAD",
                 "tenantId":"72f988bf-86f1-41af-91ab-2d7cd011db47"
@@ -587,6 +593,7 @@ Content-Type: application/json
       "replacesCallId": "a7ebfb2d-871e-419c-87af-27290b22e8db",
       "identity": {
         "user": {
+          "@odata.type": "#microsoft.graph.identity",
           "id": "7e1b4346-85a6-4bdd-abe3-d11c5d420efe",
           "displayName": "Participant",
           "identityProvider": "AAD",
