@@ -16,7 +16,7 @@ The participant type.
 | Method                                                 | Return Type                                                 | Description                                    |
 |:-------------------------------------------------------|:------------------------------------------------------------|:-----------------------------------------------|
 | [Get participant](../api/participant-get.md)           | [participant](participant.md)                               | Read properties of the **participant** object. |
-| [Invite](../api/participant-invite.md)                 | [commsOperation](commsoperation.md)                         | Invite a participant to the call.              |
+| [Invite](../api/participant-invite.md)                 | [inviteParticipantsOperation](../resources/inviteparticipantsoperation.md)                        | Invite a participant to the call.              |
 | [Mute participant](../api/participant-mute.md)         | [muteParticipantOperation](muteparticipantoperation.md)     | Mute a participant in a call.                  |
 
 ## Properties
