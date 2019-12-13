@@ -21,7 +21,9 @@ One of the following permissions is required to call this API. To learn more, in
 |:---------------------------------------|:--------------------------------------------|
 | Delegated (work or school account)     | Group.ReadWrite.All |
 | Delegated (personal Microsoft account) | Not supported. |
-|Application | Schedule.ReadWrite.All (currently in Private Preview) |
+|Application | Schedule.ReadWrite.All*  |
+
+>\* **Important:** Application permissions are currently in private preview only and are not available for public use.
 
 ## HTTP request
 
@@ -35,7 +37,8 @@ POST /teams/{id}/schedule/timeOffRequests/approve
 
 | Name          | Description   |
 |:--------------|:--------------|
-| Authorization | Bearer {token} |
+| Authorization | Bearer {token}. Required. |
+| Content-type | application/json. Required. |
 
 ## Request body
 
@@ -47,7 +50,7 @@ In the request body, provide a JSON object with the following parameters.
 
 ## Response
 
-If successful, this method returns `200, OK` response code. It does not return anything in the response body.
+If successful, this method returns a `200, OK` response code. It does not return anything in the response body.
 
 ## Examples
 
