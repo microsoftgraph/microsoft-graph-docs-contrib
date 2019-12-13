@@ -215,7 +215,7 @@ Content-Type: application/json
             {
                "@odata.type":"#microsoft.graph.participant",
                "info":{
-                  "@odata.type":"#microsoft.graph.participantInfo",
+                  "@odata.type":"#microsoft.graph.invitationParticipantInfo",
                   "identity":{
                      "@odata.type":"#microsoft.graph.identitySet",
                      "application":{
@@ -447,7 +447,7 @@ Content-Type: application/json
         {
           "@odata.type": "#microsoft.graph.participant",
           "info": {
-            "@odata.type": "#microsoft.graph.participantInfo",
+            "@odata.type": "#microsoft.graph.invitationParticipantInfo",
             "identity": {
               "@odata.type": "#microsoft.graph.identitySet",
               "application": {
@@ -474,7 +474,7 @@ Content-Type: application/json
         {
           "@odata.type": "#microsoft.graph.participant",
           "info": {
-            "@odata.type": "#microsoft.graph.participantInfo",
+            "@odata.type": "#microsoft.graph.invitationParticipantInfo",
             "identity": {
               "@odata.type": "#microsoft.graph.identitySet",
               "user":{
@@ -679,7 +679,7 @@ Content-Type: application/json
             {
                "@odata.type":"#microsoft.graph.participant",
                "info":{
-                  "@odata.type":"#microsoft.graph.participantInfo",
+                  "@odata.type":"#microsoft.graph.invitationParticipantInfo",
                   "identity":{
                      "@odata.type":"#microsoft.graph.identitySet",
                      "user":{ 
