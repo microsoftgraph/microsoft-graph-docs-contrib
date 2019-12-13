@@ -74,8 +74,8 @@ Content-Length: 166
         "@odata.type": "#microsoft.graph.mediaInfo",
         "uri": "https://cdn.contoso.com/beep.wav",
         "resourceId": "1D6DE2D4-CD51-4309-8DAA-70768651088E"
-      },
-    },
+      }
+    }
   ]
 }
 ```
