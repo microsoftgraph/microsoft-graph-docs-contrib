@@ -21,7 +21,7 @@ One of the following permissions is required to call this API. To learn more, in
 |:---------------------------------------|:--------------------------------------------|
 | Delegated (work or school account)     | Group.ReadWrite.All |
 | Delegated (personal Microsoft account) | Not supported. |
-|Application | Schedule.ReadWrite.All (currently in Private Preview) |
+|Application | Schedule.ReadWrite.All* |
 
 ## HTTP request
 
@@ -35,7 +35,8 @@ PATCH /teams/{id}/schedule/timeOffRequests
 
 | Name       | Description|
 |:-----------|:-----------|
-| Authorization | Bearer {token} |
+| Authorization | Bearer {token}. Required. |
+| Content-type | application/json. Required. |
 
 ## Request body
 
