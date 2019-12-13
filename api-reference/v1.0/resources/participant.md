@@ -23,12 +23,10 @@ The participant type.
 
 | Property             | Type                                     | Description                                                  |
 | :------------------- | :--------------------------------------- | :------------------------------------------------------------|
-| id                   | String                                   | The participant ID.                                          |
 | info                 | [participantInfo](participantinfo.md)    | The participant of the participant.                          |
 | isInLobby            | Boolean                                  | `true` if the participant is in lobby.                          |
 | isMuted              | Boolean                                  | `true` if the participant is muted (client or server muted).    |
 | mediaStreams         | [mediaStream](mediastream.md) collection | The list of media streams.                                   |
-| metadata             | String                                   | A blob of data provided by the participant in the roster.     |
 
 ## Relationships
 None.
@@ -46,12 +44,10 @@ The following is a JSON representation of the resource.
 }-->
 ```json
 {
-  "id": "String (identifier)",
   "info": {"@odata.type": "#microsoft.graph.participantInfo"},
   "isInLobby": true,
   "isMuted": true,
-  "mediaStreams": [ { "@odata.type": "#microsoft.graph.mediaStream" } ],
-  "metadata": "String"
+  "mediaStreams": [ { "@odata.type": "#microsoft.graph.mediaStream" } ]
 }
 ```
 
