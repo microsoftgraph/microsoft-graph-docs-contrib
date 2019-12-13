@@ -45,7 +45,9 @@ In the request body, provide a JSON object with the following parameters.
 |clientContext|String|Unique Client Context string. Max limit is 256 chars.|
 
 ## Response
-If succsessful, this method returns a `200 OK` response code and a Location header with a URI to the [inviteParticipantsOperation](../resources/inviteparticipantsoperation.md) created for this request. The body of the response contains the [inviteParticipantsOperation](../resources/inviteparticipantsoperation.md) created.
+If succsessful, this method returns a `200 OK` response code and a location header with a URI to the [inviteParticipantsOperation](../resources/inviteparticipantsoperation.md) created for this request. 
+
+The body of the response contains the created [inviteParticipantsOperation](../resources/inviteparticipantsoperation.md).
 
 >**Note:** When this API returns a successful response, all participants will receive a roster update.
 
@@ -67,7 +69,6 @@ The following examples show how to call this API.
 ```http
 POST https://graph.microsoft.com/v1.0/communications/calls/{id}/participants/invite
 Content-Type: application/json
-Content-Length: 464
 
 {
   "participants": [
@@ -128,7 +129,6 @@ Content-Type: application/json
   "participants": [
     {
       "endpointType": null,
-      "id": null,
       "replacesCallId": "a7ebfb2d-871e-419c-87af-27290b22e8db",
       "identity": {
         "user": {
@@ -329,7 +329,6 @@ Content-Type: application/json
    "participants":[
       {
          "endpointType":null,
-         "id":null,
          "replacesCallId":null,
          "identity":{
             "user":{
@@ -344,7 +343,6 @@ Content-Type: application/json
       },
       {
          "endpointType":null,
-         "id":null,
          "replacesCallId":null,
          "identity":{
             "user":{
@@ -580,7 +578,6 @@ Content-Type: application/json
   "participants": [
     {
       "endpointType": null,
-      "id": null,
       "replacesCallId": "a7ebfb2d-871e-419c-87af-27290b22e8db",
       "identity": {
         "user": {
