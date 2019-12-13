@@ -11,7 +11,7 @@ doc_type: apiPageType
 
 Retrieves a list of recently deleted items owned by the specified user.  
 
-Currently, list deleted items functionality is supported only for [group](../resources/group.md) resources owned by the user.
+Currently, list deleted items functionality is supported only for [application](../resources/application.md) and [group](../resources/group.md) resources owned by the user.
 
 This is a service action, which means it does not support pagination.  The API returns up to 1,000 deleted objects owned by the user, sorted by ID.
 
