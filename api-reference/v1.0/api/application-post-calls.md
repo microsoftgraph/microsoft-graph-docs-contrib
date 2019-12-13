@@ -398,7 +398,7 @@ This supports up to 5 VoIP users. The example shows how to create a group call w
 ##### Request
 
 <!-- {
-  "blockType": "request",
+  "blockType": "example",
   "name": "create-group-call-service-hosted-media",
   "@odata.type": "microsoft.graph.call"
 }-->
@@ -466,7 +466,7 @@ This supports up to 5 VoIP users. The example shows how to create a group call w
 ##### Request
 
 <!-- {
-  "blockType": "request",
+  "blockType": "example",
   "name": "create-group-call-app-hosted-media",
   "@odata.type": "microsoft.graph.call"
 }-->
@@ -536,7 +536,7 @@ The values of authorization token, callback url, application id, application nam
 ##### Request
 
 <!-- {
-  "blockType": "request",
+  "blockType": "example",
   "name": "join-scheduled-meeting-service-hosted-media",
   "@odata.type": "microsoft.graph.call"
 }-->
@@ -858,7 +858,7 @@ Content-Type: application/json
 Update the media config with the [AppHostedMediaConfig](../resources/apphostedmediaconfig.md) as shown below.
 
 <!-- {
-  "blockType": "request",
+  "blockType": "example",
   "name": "join-scheduled-meeting-app-hosted-media",
   "@odata.type": "microsoft.graph.call"
 }-->
