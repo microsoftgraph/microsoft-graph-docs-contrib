@@ -44,7 +44,6 @@ Although the same identity cannot be invited multiple times, it is possible for 
 
 | Property            | Type                                                                                                   | Description                                                                                                                                                                                         |
 | :------------------ | :------------------------------------------------------------------------------------------------------| :-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| answeredBy          | [participantInfo](participantinfo.md)                                                                  | The participant that answered the call. Read-only.                                                                                                                                |
 | callbackUri         | String                                                                                                 | The callback URL on which callbacks will be delivered. Must be `https`.                                                                                                                               |
 | chatInfo            | [chatInfo](chatinfo.md)                                                                                | The chat information. Required information for joining a meeting.                                                                                                                              |
 | direction           | String                                                                                                 | The direction of the call. The possible value are `incoming` or `outgoing`. Read-only.                                                                                            |
@@ -55,12 +54,10 @@ Although the same identity cannot be invited multiple times, it is possible for 
 | myParticipantId     | String                                                                                                 | Read-only.                                                                                                                                                                        |
 | requestedModalities | String collection                                                                                      | The list of requested modalities. | Possible values are: `unknown`, `audio`, `video`, `videoBasedScreenSharing`, `data`.                                                                            |
 | resultInfo          | [resultInfo](resultinfo.md)                                                                            | The result information. For example can hold termination reason. Read-only.                                                                                                        |
-| ringingTimeoutInSeconds | Int32                                                                                              | Ringing timeout in seconds for outgoing peer to peer calls. The max value for this attribute is 115 seconds.                                                                                        |
 | source              | [participantInfo](participantinfo.md)                                                                  | The originator of the call.                                                                                                                                                                         |
 | state               | String                                                                                                 | The call state. Possible values are: `incoming`, `establishing`, `ringing`, `established`, `hold`, `transferring`, `transferAccepted`, `redirecting`, `terminating`, `terminated`. Read-only.                          |
 | subject             | String                                                                                                 | The subject of the conversation.                                                                                                                                                                    |
 | targets             | [invitationParticipantInfo](participantinfo.md) collection                                             | The targets of the call. Required information for creating peer to peer call.                                                                                                            |
-| tenantId            | String                                                                                                 | Read-only. `tenantId` in Azure Active Directory.                                                                                                                        |
 toneInfo            | [toneInfo](toneinfo.md)                                                                                | Read-only.                                                                                                                                                                        |
 
 ## Relationships
@@ -77,7 +74,6 @@ The following is a JSON representation of the resource.
 <!-- {
   "blockType": "resource",
   "optionalProperties": [
-    "answeredBy",
     "chatInfo",
     "direction",
     "id",
@@ -87,12 +83,10 @@ The following is a JSON representation of the resource.
     "myParticipantId",
     "replacesContext",
     "resultInfo",
-    "ringingTimeoutInSeconds",
     "state",
     "source",
     "subject",
     "targets",
-    "tenantId",
     "toneInfo"
   ],
   "keyProperty":"id",
@@ -100,7 +94,6 @@ The following is a JSON representation of the resource.
 }-->
 ```json
 {
-  "answeredBy": {"@odata.type": "#microsoft.graph.participantInfo"},
   "callbackUri": "String",
   "chatInfo": {"@odata.type": "#microsoft.graph.chatInfo"},
   "direction": "incoming | outgoing",
@@ -112,12 +105,10 @@ The following is a JSON representation of the resource.
   "replacesContext": "String",
   "requestedModalities": ["unknown | audio | video | videoBasedScreenSharing | data"],
   "resultInfo": {"@odata.type": "#microsoft.graph.resultInfo"},
-  "ringingTimeoutInSeconds": 99,
   "source": {"@odata.type": "#microsoft.graph.participantInfo"},
   "state": "incoming | establishing | ringing | established | hold | transferring | transferAccepted | redirecting | terminating | terminated",
   "subject": "String",
   "targets": [{"@odata.type": "#microsoft.graph.invitationParticipantInfo"}],
-  "tenantId": "String",
   "toneInfo": {"@odata.type": "#microsoft.graph.toneInfo"}
 }
 ```
