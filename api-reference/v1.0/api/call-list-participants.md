@@ -133,8 +133,7 @@ Content-Type: application/json
                "application":{
                   "@odata.type":"#microsoft.graph.identity",
                   "displayName":"Test Participant",
-                  "id":"ef43e42b-4c05-4594-9756-1edb3ccbc989",
-                  "tenantId":"72f988bf-86f1-41af-91ab-2d7cd011db47"
+                  "id":"ef43e42b-4c05-4594-9756-1edb3ccbc989"
                },
                "user":null,
                "device":null,

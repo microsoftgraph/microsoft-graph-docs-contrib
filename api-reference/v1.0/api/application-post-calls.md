@@ -171,7 +171,6 @@ Content-Type: application/json
      }
     ],
   },
-  "tenantId": "aa67bd4c-8475-432d-bd41-39f255720e0a",
   "myParticipantId": "499ff390-7a72-40e8-83a0-8fac6295ae7e",
   "id": "2e1a0b00-2db4-4022-9570-243709c565ab",
   "@odata.context": "https://graph.microsoft.com/v1.0/$metadata#app/calls/$entity",
@@ -239,7 +238,6 @@ Content-Type: application/json
         "@odata.type": "#microsoft.graph.call",
         "state": "established",
         "direction": "outgoing",
-        "tenantId": "aa67bd4c-8475-432d-bd41-39f255720e0a",
         "id": "2e1a0b00-b3c5-4b0f-99b3-c133bc1e6116"
       }
     }
@@ -375,7 +373,6 @@ Content-Type: application/json
     "@odata.type": "#microsoft.graph.appHostedMediaConfig",
     "blob": "<Media Session Configuration>",
   },
-  "tenantId": "aa67bd4c-8475-432d-bd41-39f255720e0a",
   "myParticipantId": "499ff390-7a72-40e8-83a0-8fac6295ae7e",
   "id": "2e1a0b00-2db4-4022-9570-243709c565ab",
   "@odata.context": "https://graph.microsoft.com/v1.0/$metadata#app/calls/$entity",
@@ -453,8 +450,7 @@ Content-Type: application/json
   "mediaConfig": {
     "@odata.type": "#microsoft.graph.serviceHostedMediaConfig",
     "removeFromDefaultAudioGroup": false
-  },
-  "tenantId": "aa67bd4c-8475-432d-bd41-39f255720e0a"
+  }
 }
 ```
 
@@ -521,8 +517,7 @@ Content-Type: application/json
   "mediaConfig": {
     "@odata.type": "#microsoft.graph.appHostedMediaConfig",
     "removeFromDefaultAudioGroup": false
-  },
-  "tenantId": "aa67bd4c-8475-432d-bd41-39f255720e0a"
+  }
 }
 ```
 
@@ -575,7 +570,6 @@ Content-Type: application/json
       "user": {
         "@odata.type": "#microsoft.graph.identity",
         "id": "5810cede-f3cc-42eb-b2c1-e9bd5d53ec96",
-        "tenantId": "aa67bd4c-8475-432d-bd41-39f255720e0a",
         "displayName": "Bob"
       }
     },
@@ -643,13 +637,11 @@ Content-Type: application/json
       "user": {
         "@odata.type": "#microsoft.graph.identity",
         "id": "5810cede-f3cc-42eb-b2c1-e9bd5d53ec96",
-        "tenantId": "aa67bd4c-8475-432d-bd41-39f255720e0a",
         "displayName": "Bob"
       }
     },
     "allowConversationWithoutHost": true
   },
-  "tenantId": "aa67bd4c-8475-432d-bd41-39f255720e0a",
   "myParticipantId": "05491616-385f-44a8-9974-18cc5f9933c1",
   "id": "2f1a1100-b174-40a0-aba7-0b405e01ed92",
   "@odata.context": "https://graph.microsoft.com/v1.0/$metadata#app/calls/$entity",
@@ -697,7 +689,6 @@ Content-Type: application/json
             "user": {
               "@odata.type": "#microsoft.graph.identity",
               "id": "5810cede-f3cc-42eb-b2c1-e9bd5d53ec96",
-              "tenantId": "aa67bd4c-8475-432d-bd41-39f255720e0a",
               "displayName": "Bob"
             }
           },
@@ -745,7 +736,6 @@ Content-Type: application/json
             "user": {
               "@odata.type": "#microsoft.graph.identity",
               "id": "5810cede-f3cc-42eb-b2c1-e9bd5d53ec96",
-              "tenantId": "aa67bd4c-8475-432d-bd41-39f255720e0a",
               "displayName": "Bob"
             }
           },
@@ -888,13 +878,11 @@ Content-Type: application/json
       "user": {
         "@odata.type": "#microsoft.graph.identity",
         "id": "5810cede-f3cc-42eb-b2c1-e9bd5d53ec96",
-        "tenantId": "aa67bd4c-8475-432d-bd41-39f255720e0a",
         "displayName": "Bob"
       }
     },
     "allowConversationWithoutHost": true
-  },
-  "tenantId": "aa67bd4c-8475-432d-bd41-39f255720e0a"
+  }
 }
 ```
 

@@ -81,8 +81,7 @@ These examples will cover a workflow of an incoming call notification and how th
             "@odata.type": "#microsoft.graph.identitySet",
             "user": {
               "@odata.type": "#microsoft.graph.identity",
-              "id": "8d1e6ab6-26c5-4e22-a1bc-06ea7343958e",
-              "tenantId": "632899f8-2ea1-4604-8413-27bd2892079f"
+              "id": "8d1e6ab6-26c5-4e22-a1bc-06ea7343958e"
             }
           },
           "region": "amer",
@@ -100,7 +99,6 @@ These examples will cover a workflow of an incoming call notification and how th
             }
           }
         ],
-        "tenantId": "632899f8-2ea1-4604-8413-27bd2892079f",
         "myParticipantId": "c339cede-4bd6-4f20-ab9f-3a13e65f6d00",
         "id": "491f0b00-ffff-4bc9-a43e-b226498ec22a"
       }
@@ -198,8 +196,7 @@ Content-Type: application/json
             "@odata.type": "#microsoft.graph.identitySet",
             "user": {
               "@odata.type": "#microsoft.graph.identity",
-              "id": "8d1e6ab6-26c5-4e22-a1bc-06ea7343958e",
-              "tenantId": "632899f8-2ea1-4604-8413-27bd2892079f"
+              "id": "8d1e6ab6-26c5-4e22-a1bc-06ea7343958e"
             }
           },
           "region": "amer",
@@ -217,7 +214,6 @@ Content-Type: application/json
             }
           }
         ],
-        "tenantId": "632899f8-2ea1-4604-8413-27bd2892079f",
         "myParticipantId": "c339cede-4bd6-4f20-ab9f-3a13e65f6d00",
         "id": "491f0b00-ffff-4bc9-a43e-b226498ec22a"
       }
@@ -262,8 +258,7 @@ Content-Type: application/json
             "@odata.type": "#microsoft.graph.identitySet",
             "user": {
               "@odata.type": "#microsoft.graph.identity",
-              "id": "ec040873-8235-45fd-a403-c7259a5a548e",
-              "tenantId": "632899f8-2ea1-4604-8413-27bd2892079f"
+              "id": "ec040873-8235-45fd-a403-c7259a5a548e"
             }
           },
           "region": "amer"
@@ -281,7 +276,6 @@ Content-Type: application/json
             }
           }
         ],
-        "tenantId": "632899f8-2ea1-4604-8413-27bd2892079f",
         "myParticipantId": "f540f1b6-994b-4866-be95-8aad34c4f4dc",
         "id": "481f0b00-ffff-4ca1-8c67-a5f1e31e8e82"
       }
@@ -373,8 +367,7 @@ Content-Type: application/json
             "@odata.type": "#microsoft.graph.identitySet",
             "user": {
               "@odata.type": "#microsoft.graph.identity",
-              "id": "ec040873-8235-45fd-a403-c7259a5a548e",
-              "tenantId": "632899f8-2ea1-4604-8413-27bd2892079f"
+              "id": "ec040873-8235-45fd-a403-c7259a5a548e"
             }
           },
           "region": "amer"
@@ -392,7 +385,6 @@ Content-Type: application/json
             }
           }
         ],
-        "tenantId": "632899f8-2ea1-4604-8413-27bd2892079f",
         "myParticipantId": "f540f1b6-994b-4866-be95-8aad34c4f4dc",
         "id": "481f0b00-ffff-4ca1-8c67-a5f1e31e8e82"
       }

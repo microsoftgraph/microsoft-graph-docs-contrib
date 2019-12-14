@@ -117,7 +117,6 @@ Content-Length: 1574
           "user": {
             "@odata.type": "#microsoft.graph.identity",
             "id": "112f7296-5fa4-42ca-bae8-6a692b15d4b8",
-            "tenantId": "aa67bd4c-8475-432d-bd41-39f255720e0a",
             "displayName": "John"
           }
         },
@@ -130,7 +129,6 @@ Content-Length: 1574
         "user": {
           "@odata.type": "#microsoft.graph.identity",
           "id": "5810cede-f3cc-42eb-b2c1-e9bd5d53ec96",
-          "tenantId": "aa67bd4c-8475-432d-bd41-39f255720e0a",
           "displayName": "Bob"
         }
       },

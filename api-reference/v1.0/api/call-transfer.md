@@ -72,7 +72,6 @@ Content-Length: 430
     "identity": {
       "user": {
         "id": "550fae72-d251-43ec-868c-373732c2704f",
-        "tenantId": "72f988bf-86f1-41af-91ab-2d7cd011db47",
         "displayName": "Heidi Steen"
       }
     },
@@ -265,7 +264,6 @@ Content-Type: application/json
       "user": {
         "@odata.type": "#microsoft.graph.identity",
         "id": "550fae72-d251-43ec-868c-373732c2704f",
-        "tenantId": "72f988bf-86f1-41af-91ab-2d7cd011db47",
         "displayName": "Heidi Steen"
       }
     },
