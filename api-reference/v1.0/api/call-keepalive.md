@@ -15,7 +15,7 @@ It's important to make sure that at least one successful request is made within 
 
 We recommend that a request is sent in shorter time intervals (e.g. every 15 minutes). Please make sure that these requests are successful to prevent the call from timing out and ending.
 
-Attempting to send a request to a call that has already ended will result in a '404 Not-Found‘ error. The resources related to the call should be cleaned up on the application side.
+Attempting to send a request to a call that has already ended will result in a `404 Not-Found` error. The resources related to the call should be cleaned up on the application side.
 
 ## Permissions
 One of the following permissions may be required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
