@@ -746,6 +746,63 @@
             href: api/multivaluelegacyextendedproperty-post-multivalueextendedproperties.md
           - name: Get multi-value property
             href: api/multivaluelegacyextendedproperty-get.md
+    - name: Cloud communications
+      displayName: Cloud communications
+      items:
+      - name: Overview
+        href: resources/communications-api-overview.md
+      - name: Call
+        href: resources/call.md
+        items:
+        - name: Create
+          href: api/application-post-calls.md
+        - name: Get call
+          href: api/call-get.md
+        - name: Delete/hang up
+          href: api/call-delete.md
+        - name: Answer
+          href: api/call-answer.md
+        - name: Reject
+          href: api/call-reject.md
+        - name: Redirect
+          href: api/call-redirect.md
+        - name: Transfer
+          href: api/call-transfer.md
+        - name: Keep alive
+          href: api/call-keepalive.md          
+        - name: IVR scenarios
+          href: resources/calls-api-ivr-overview.md
+          items:
+          - name: Play prompt
+            href: api/call-playprompt.md
+          - name: Record
+            href: api/call-record.md
+          - name: Subscribe to tone
+            href: api/call-subscribetotone.md
+        - name: Participant
+          href: resources/participant.md
+          items:
+          - name: Get participant
+            href: api/participant-get.md
+          - name: Mute participant
+            href: api/participant-mute.md
+          - name: List participants
+            href: api/call-list-participants.md
+          - name: Invite participants
+            href: api/participant-invite.md
+        - name: Change screen sharing role
+          href: api/call-changescreensharingrole.md
+        - name: Unmute application
+          href: api/call-unmute.md
+        - name: Mute application
+          href: api/call-mute.md
+      - name: Online meeting
+        href: resources/onlinemeeting.md
+        items:
+        - name: Create online meeting
+          href: api/application-post-onlinemeetings.md
+        - name: Get online meeting
+          href: api/onlinemeeting-get.md          
     - name: Cross-device experiences
       displayName: Project Rome
       items:
