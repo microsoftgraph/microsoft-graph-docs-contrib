@@ -155,8 +155,8 @@ Content-length: 271
 				"oldValue": null,
 				"newValue": "DirectorySync"}],
 			"groupType": "unifiedGroups"
-			}],
-		}, {
+			}, 
+			{
 			"id": "1f0e98f5-3161-4c6b-9b50-d488572f2bb7",
 			"displayName": null,
 			"Type": "User",
