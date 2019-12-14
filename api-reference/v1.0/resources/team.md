@@ -11,7 +11,7 @@ doc_type: resourcePageType
 
 
 
-A team in Microsoft Teams is a collection of [channel](channel.md) objects. 
+A team in Microsoft Teams is a collection of [channel](channel.md) objects.
 A channel represents a topic, and therefore a logical isolation of discussion, within a team.
 
 Every team is associated with a [group](../resources/group.md).
@@ -41,7 +41,7 @@ For more information about working with groups and members in teams, see [Use th
 |:---------------|:--------|:----------|
 |funSettings|[teamFunSettings](teamfunsettings.md) |Settings to configure use of Giphy, memes, and stickers in the team.|
 |guestSettings|[teamGuestSettings](teamguestsettings.md) |Settings to configure whether guests can create, update, or delete channels in the team.|
-|internalId | string | A unique ID for the team that has been used in a few places such as the audit log/[Office 365 Management Activity API](https://docs.microsoft.com/en-us/office/office-365-management-api/office-365-management-activity-api-reference). |
+|internalId | string | A unique ID for the team that has been used in a few places such as the audit log/[Office 365 Management Activity API](/office/office-365-management-api/office-365-management-activity-api-reference). |
 |isArchived|Boolean|Whether this team is in read-only mode. |
 |memberSettings|[teamMemberSettings](teammembersettings.md) |Settings to configure whether members can perform certain actions, for example, create channels and add bots, in the team.|
 |messagingSettings|[teamMessagingSettings](teammessagingsettings.md) |Settings to configure messaging and mentions in the team.|
@@ -65,7 +65,7 @@ The following is a JSON representation of the resource.
 }-->
 
 ```json
-{  
+{
   "guestSettings": {"@odata.type": "microsoft.graph.teamGuestSettings"},
   "memberSettings": {"@odata.type": "microsoft.graph.teamMemberSettings"},
   "messagingSettings": {"@odata.type": "microsoft.graph.teamMessagingSettings"},

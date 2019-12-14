@@ -10495,6 +10495,41 @@
           href: api/opentypeextension-get.md
       - name: Shifts
         items:
+        - name: Shift
+          href: resources/shift.md
+          items:
+            - name: List
+              href: api/schedule-list-shifts.md
+            - name: Create
+              href: api/schedule-post-shifts.md
+            - name: Get
+              href: api/shift-get.md
+            - name: Replace
+              href: api/shift-put.md
+            - name: Delete
+              href: api/shift-delete.md
+        - name: Schedule
+          href: resources/schedule.md
+          items:
+            - name: Create or replace
+              href: api/team-put-schedule.md
+            - name: Get
+              href: api/schedule-get.md
+            - name: Share
+              href: api/schedule-share.md
+        - name: Scheduling group
+          href: resources/schedulinggroup.md
+          items:
+            - name: List
+              href: api/schedule-list-schedulinggroups.md
+            - name: Create
+              href: api/schedule-post-schedulinggroups.md
+            - name: Get
+              href: api/schedulinggroup-get.md
+            - name: Replace
+              href: api/schedulinggroup-put.md
+            - name: Delete
+              href: api/schedulinggroup-delete.md
         - name: Open shift
           href: resources/openshift.md
           items:
@@ -10517,41 +10552,6 @@
               href: api/openshiftchangerequest-approve.md
             - name: Decline
               href: api/openshiftchangerequest-decline.md
-        - name: Schedule
-          href: resources/schedule.md
-          items:
-          - name: Create or replace
-            href: api/team-put-schedule.md
-          - name: Get
-            href: api/schedule-get.md
-          - name: Share
-            href: api/schedule-share.md
-        - name: Scheduling group
-          href: resources/schedulinggroup.md
-          items:
-          - name: Create
-            href: api/schedule-post-schedulinggroups.md
-          - name: List
-            href: api/schedule-list-schedulinggroups.md
-          - name: Get
-            href: api/schedulinggroup-get.md
-          - name: Replace
-            href: api/schedulinggroup-put.md
-          - name: Delete
-            href: api/schedulinggroup-delete.md
-        - name: Shift
-          href: resources/shift.md
-          items:
-            - name: Create
-              href: api/schedule-post-shifts.md
-            - name: List
-              href: api/schedule-list-shifts.md
-            - name: Get
-              href: api/shift-get.md
-            - name: Replace
-              href: api/shift-put.md
-            - name: Delete
-              href: api/shift-delete.md
         - name: Swap shift change request
           href: resources/swapshiftschangerequest.md
           items:
@@ -10564,10 +10564,10 @@
         - name: Time off
           href: resources/timeoff.md
           items:
-            - name: Create
-              href: api/schedule-post-timesoff.md
             - name: List
               href: api/schedule-list-timesoff.md
+            - name: Create
+              href: api/schedule-post-timesoff.md
             - name: Get
               href: api/timeoff-get.md
             - name: Replace
@@ -10577,10 +10577,10 @@
         - name: Time off reason
           href: resources/timeoffreason.md
           items:
-            - name: Create
-              href: api/schedule-post-timeoffreasons.md
             - name: List
               href: api/schedule-list-timeoffreasons.md
+            - name: Create
+              href: api/schedule-post-timeoffreasons.md
             - name: Get
               href: api/timeoffreason-get.md
             - name: Replace
