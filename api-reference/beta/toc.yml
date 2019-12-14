@@ -10498,10 +10498,10 @@
         - name: Shift
           href: resources/shift.md
           items:
-            - name: Create
-              href: api/schedule-post-shifts.md
             - name: List
               href: api/schedule-list-shifts.md
+            - name: Create
+              href: api/schedule-post-shifts.md
             - name: Get
               href: api/shift-get.md
             - name: Replace
@@ -10520,10 +10520,10 @@
         - name: Scheduling group
           href: resources/schedulinggroup.md
           items:
-            - name: Create
-              href: api/schedule-post-schedulinggroups.md
             - name: List
               href: api/schedule-list-schedulinggroups.md
+            - name: Create
+              href: api/schedule-post-schedulinggroups.md
             - name: Get
               href: api/schedulinggroup-get.md
             - name: Replace
@@ -10564,10 +10564,10 @@
         - name: Time off
           href: resources/timeoff.md
           items:
-            - name: Create
-              href: api/schedule-post-timesoff.md
             - name: List
               href: api/schedule-list-timesoff.md
+            - name: Create
+              href: api/schedule-post-timesoff.md
             - name: Get
               href: api/timeoff-get.md
             - name: Replace
@@ -10577,10 +10577,10 @@
         - name: Time off reason
           href: resources/timeoffreason.md
           items:
-            - name: Create
-              href: api/schedule-post-timeoffreasons.md
             - name: List
               href: api/schedule-list-timeoffreasons.md
+            - name: Create
+              href: api/schedule-post-timeoffreasons.md
             - name: Get
               href: api/timeoffreason-get.md
             - name: Replace
