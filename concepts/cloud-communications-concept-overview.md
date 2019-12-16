@@ -92,15 +92,11 @@ You can use cloud communications APIs to:
 - View and manage [permissions for calls](/graph/permissions-reference#calls-permissions)<br/>
 - View and manage [permissions for online meetings](/graph/permissions-reference#online-meetings-permissions)
 
+For samples, please view our [Github samples repository](https://github.com/microsoftgraph/microsoft-graph-comms-samples).
+
 ## API reference
 Looking for the API reference for this service?
 
-- [Clound communications API in Microsoft Graph (v1.0)](/graph/api/resources/communications-api-overview?view=graph-rest-1.0)
-- [Clour communications API in Microsoft Graph (beta)](/graph/api/resources/calls-api-overview?view=graph-rest-beta)
+- [Cloud Communications APIs in Microsoft Graph (v1.0)](/graph/api/resources/communications-api-overview?view=graph-rest-1.0)
+- [Cloud Communications APIs in Microsoft Graph (beta)](/graph/api/resources/calls-api-overview?view=graph-rest-beta)
 
-
-## Support
-
-For a list of all known issues with the cloud communications APIs, see our [Github Issues](https://github.com/microsoftgraph/microsoft-graph-comms-samples/issues) list.
-
-To request a feature, visit our [User Voice](https://microsoftgraph.uservoice.com/forums/920506-microsoft-graph-feature-requests?category_id=373858) page.
