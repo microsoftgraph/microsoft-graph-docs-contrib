@@ -37,7 +37,7 @@ You can use cloud communications APIs to build a bot that:
 - [Transfers a customer](/graph/api/call-transfer?view=graph-rest-1.0) to an agent.
 - [Ends a call](/graph/api/call-delete?view=graph-rest-1.0) with a customer.
 
-![IVR Diagram - Transfer](images/communications-ivr-transfer.png)<br/><br/>
+![Image of a bot providing options for call transfer](images/communications-ivr-transfer.png)
 
 To create a more intelligent interaction between your customers and your bot, when a customer is prompted for a response, they will be able to directly speak about what they need help with.
 
@@ -52,8 +52,7 @@ You can use cloud communications APIs to build a bot that:
 - [Records a short audio clip](/graph/api/call-record?view=graph-rest-1.0) of a customer speaking.
 - [Plays a prompt](/graph/api/call-playprompt?view=graph-rest-1.0) with the appropriate response to the customer, after their speech is analyzed.
 
-![IVR Diagram](images/communications-ivr.PNG)
-
+![Image of a bot that prompts a user to give a voice response](images/communications-ivr.PNG)
 
 ### Collaborate through group calls
 Enable users to engage with coworkers or customers by creating a group call so that everyone can contribute to the conversation.
@@ -85,18 +84,17 @@ You can use cloud communications APIs to:
 - Have a user [retrieve the details](https://docs.microsoft.com/en-us/graph/api/onlinemeeting-get?view=graph-rest-1.0) of an online meeting.
 - Have a bot or a user [join an online meeting](/graph/api/application-post-calls?view=graph-rest-1.0#example-5-join-scheduled-meeting-with-service-hosted-media).
 
-
-## See also
-
-- Learn about [delegated and application permissions](https://docs.microsoft.com/azure/active-directory/develop/v1-permissions-and-consent)<br/>
-- View and manage [permissions for calls](/graph/permissions-reference#calls-permissions)<br/>
-- View and manage [permissions for online meetings](/graph/permissions-reference#online-meetings-permissions)
-
-For samples, please view our [Github samples repository](https://github.com/microsoftgraph/microsoft-graph-comms-samples).
-
 ## API reference
 Looking for the API reference for this service?
 
 - [Cloud Communications APIs in Microsoft Graph (v1.0)](/graph/api/resources/communications-api-overview?view=graph-rest-1.0)
 - [Cloud Communications APIs in Microsoft Graph (beta)](/graph/api/resources/calls-api-overview?view=graph-rest-beta)
+
+## See also
+
+- Learn about [delegated and application permissions](https://docs.microsoft.com/azure/active-directory/develop/v1-permissions-and-consent)
+- View and manage [permissions for calls](/graph/permissions-reference#calls-permissions)
+- View and manage [permissions for online meetings](/graph/permissions-reference#online-meetings-permissions)
+- Find samples in our [Github samples repository](https://github.com/microsoftgraph/microsoft-graph-comms-samples)
+
 
