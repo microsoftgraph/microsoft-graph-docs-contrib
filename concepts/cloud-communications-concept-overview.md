@@ -1,19 +1,19 @@
 ---
-title: "Cloud Communications API Overview"
-description: "The Cloud Communications APIs in Microsoft Graph add a new dimension to how your apps and services interact with users through various communications related features, such as calling and online meetings"
+title: "Cloud communications API Overview"
+description: "The cloud communications APIs in Microsoft Graph add a new dimension to how your apps and services interact with users through various communications related features, such as calling and online meetings."
 author: "ananmishr"
 localization_priority: Normal
 ms.prod: "cloud-communications"
 ---
 
-# Cloud Communications API Overview
-The Cloud Communications APIs in Microsoft Graph add a new dimension to how your apps and services interact with users through various communications related features, such as calling and online meetings. Grow your business by expediting how you respond to your customers’ needs and how your employees collaborate with each other.
+# Cloud communications API Overview
+The cloud communications APIs in Microsoft Graph add a new dimension to how your apps and services interact with users through various communications related features, such as calling and online meetings. Grow your business by expediting how you respond to your customers’ needs and how your employees collaborate with each other.
 
-## Why Integrate with Cloud Communications APIs?
+## Why integrate with cloud communications APIs?
 
 Discover the benefits of utilizing service applications ([bots](https://microsoftgraph.github.io/microsoft-graph-comms-samples/docs/articles/calls/register-calling-bot.html?q=create%20bot)) with our APIs.
 
-### Handle Incoming Calls
+### Handle incoming calls
 
 It can be overwhelming at times when you're receiving a lot of calls for your business and it isn't possible, nor productive, to answer all of them. A bot can serve as your front-desk assistant and handle these calls by rejecting what seem like spam calls, and redirecting (forwarding) specific calls to a different number.
 
@@ -26,7 +26,7 @@ Have a bot [redirect the incoming call](/graph/api/call-redirect?view=graph-rest
 Have a bot [answer](/graph/api/call-answer?view=graph-rest-1.0) or [reject](/graph/api/call-reject?view=graph-rest-1.0) the call.
 
 
-### Simplify the Customer Service Experience
+### Simplify the customer service experience
 Whether you own a large helpdesk service or a small storefront, it can be difficult to handle multiple customer requests, especially if you don’t have any context of what problem they’re trying to solve beforehand. Handle incoming calls from customers through an **Interactive Voice Response** (IVR) system, where a bot will initially interact with them.
 
 When a customer is prompted for a response from the bot, the customer can press a key on their keypad that corresponds to their selection. The bot can then gather the dial-tone multi-frequency (DTMF) from the customer.
@@ -64,7 +64,7 @@ Have a bot [play a prompt](/graph/api/call-playprompt?view=graph-rest-1.0) with 
 ![IVR Diagram](images/communications-ivr.PNG)
 
 
-### Collaborate through Group Calls
+### Collaborate through group calls
 Engage with your coworkers or customers by creating a group call. Let everyone contribute to the conversation.
 
 <br/>**Learn how to create these scenarios:**<br/>
@@ -80,7 +80,7 @@ Have a bot [list out the participants](/graph/api/call-list-participants?view=gr
 Have a bot [mute another participant](/graph/api/participant-mute?view=graph-rest-1.0).
 
 
-### Send Reminders Reliably
+### Send reminders reliably
 If you want to send your customers a reminder for an appointment or a reminder for a payment deadline that’s approaching, you can have a bot call the customer automatically. <!--If the customer misses the call, it will leave a voicemail with the automated message. (Add this back once bot to PSTN calling works)-->
 
 <br/>**Learn how to create these scenarios:**<br/>
@@ -92,7 +92,7 @@ Have a bot [play a recorded prompt](/graph/api/call-playprompt?view=graph-rest-1
 Have the bot [end the call](/graph/api/call-delete?view=graph-rest-1.0).
 
 
-### Set up Online Meetings
+### Set up online meetings
 Whether you want to schedule a meeting between a doctor and a patient or between you and your direct reports, you'll be able to generate a meeting that you can rely on. For added flexibility, you'll be able to "dial out" to other users and invite them to the meeting while it's ongoing.
 
 <br/>**Learn how to create these scenarios:**<br/>
@@ -104,12 +104,13 @@ Have a user [retrieve the details](https://docs.microsoft.com/en-us/graph/api/on
 Have a bot or a user [join an online meeting](/graph/api/application-post-calls?view=graph-rest-1.0#example-5-join-scheduled-meeting-with-service-hosted-media)
 
 
-## See Also
-Learn about [Delegated and Application Permissions](https://docs.microsoft.com/en-us/azure/active-directory/develop/v1-permissions-and-consent)<br/>
-View and Manage [Permissions for Calls](/graph/permissions-reference#calls-permissions)<br/>
-View and Manage [Permissions for Online Meetings](/graph/permissions-reference#online-meetings-permissions)
+## See also
 
-## API Reference
+- Learn about [Delegated and application permissions](https://docs.microsoft.com/azure/active-directory/develop/v1-permissions-and-consent)<br/>
+- View and Manage [Permissions for calls](/graph/permissions-reference#calls-permissions)<br/>
+- View and Manage [Permissions for online meetings](/graph/permissions-reference#online-meetings-permissions)
+
+## API reference
 [Communications API in Microsoft Graph (v1.0)](https://docs.microsoft.com/en-us/graph/api/resources/communications-api-overview?view=graph-rest-1.0)<br/>
 [Communications API in Microsoft Graph (beta)](https://docs.microsoft.com/en-us/graph/api/resources/calls-api-overview?view=graph-rest-beta)
 
