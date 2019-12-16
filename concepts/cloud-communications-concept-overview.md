@@ -92,9 +92,9 @@ Looking for the API reference for this service?
 
 ## See also
 
-- Learn about [delegated and application permissions](https://docs.microsoft.com/azure/active-directory/develop/v1-permissions-and-consent)
-- View and manage [permissions for calls](/graph/permissions-reference#calls-permissions)
-- View and manage [permissions for online meetings](/graph/permissions-reference#online-meetings-permissions)
-- Find samples in our [Github samples repository](https://github.com/microsoftgraph/microsoft-graph-comms-samples)
+- Learn about [delegated and application permissions](https://docs.microsoft.com/azure/active-directory/develop/v1-permissions-and-consent).
+- View and manage [permissions for calls](/graph/permissions-reference#calls-permissions).
+- View and manage [permissions for online meetings](/graph/permissions-reference#online-meetings-permissions).
+- Find samples in our [Github samples repository](https://github.com/microsoftgraph/microsoft-graph-comms-samples).
 
 
