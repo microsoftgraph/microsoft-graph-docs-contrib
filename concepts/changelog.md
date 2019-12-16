@@ -13,14 +13,15 @@ For details about known issues with Microsoft Graph APIs, see [Known issues](kno
 
 ## December 2019
 
-### Cloud Communications
+### Cloud communications
 
-Added cloud communications APIs to v1.0.
+Introduced presence in beta and added cloud communications APIs to v1.0.
 
 | **Change type** | **Version**   | **Description**                          |
 |:---|:---|:---|
-|Addition|v1.0|Added APIs - [create call](/graph/api/application-post-calls.md), [call answer](/graph/api/call-answer.md), [call reject](/graph/api/call-reject.md), [call get](/graph/api/call-get.md), [call delete](/graph/api/call-delete.md), [call mute](/graph/api/call-mute.md), [call-unmute.md](/graph/api/call-unmute.md), [call change screen sharing role][call-changescreensharingrole.md], [call transfer](/graph/api/call-transfer.md), [call redirect](/graph/api/call-redirect.md), [Play a prompt](/graph/api/call-playprompt.md), [Record Response](/graph/api/call-recordresponse.md), [Subscribe to Tone](/graph/api/call-subscribetotone.md), [list participants](/graph/api/call-list-participants.md), [invite participants](/graph/api/participant-invite.md), [get participants](/graph/api/participant-get.md), [mute participants][/graph/api/participant-mute.md], [create online meeting](/graph/api/application-post-onlinemeeting.md), [get online meeting][/graph/api/onlinemeeting-get.md), [call keep alive](/graph/api/call-keepalive.md)|
-|Addition|v1.0|Added resources - [call](/graph/api/resouces/call.md), [participant](/graph/api/resouces/participant.md), [onlinemeetings](/graph/api/resouces/onlinemeetings.md) and other associated methods.|
+|Addition|beta|Add the [presence](/graph/api/resources/presence?view=graph-rest-beta) resource and associated methods, and introduced the Presence.Read and Presence.Read.All permissions.|
+|Addition|v1.0|Added the following APIs: [create call](/graph/api/application-post-calls?view=graph-rest-1.0), [call answer](/graph/api/call-answer?view=graph-rest-1.0), [call reject](/graph/api/call-reject?view=graph-rest-1.0), [call get](/graph/api/call-get?view=graph-rest-1.0), [call delete](/graph/api/call-delete?view=graph-rest-1.0), [call mute](/graph/api/call-mute?view=graph-rest-1.0), [call-unmute](/graph/api/call-unmute?view=graph-rest-1.0), [call change screen sharing role](call-changescreensharingrole?view=graph-rest-1.0), [call transfer](/graph/api/call-transfer?view=graph-rest-1.0), [call redirect](/graph/api/call-redirect?view=graph-rest-1.0), [Play a prompt](/graph/api/call-playprompt?view=graph-rest-1.0), [Record Response](/graph/api/call-recordresponse?view=graph-rest-1.0), [Subscribe to tne](/graph/api/call-subscribetotone?view=graph-rest-1.0), [list participants](/graph/api/call-list-participants?view=graph-rest-1.0), [invite participants](/graph/api/participant-invite?view=graph-rest-1.0), [get participants](/graph/api/participant-get?view=graph-rest-1.0), [mute participants](/graph/api/participant-mute?view=graph-rest-1.0), [create online meeting](/graph/api/application-post-onlinemeeting?view=graph-rest-1.0), [get online meeting](/graph/api/onlinemeeting-get?view=graph-rest-1.0), and [call keep alive](/graph/api/call-keepalive?view=graph-rest-1.0).|
+|Addition|v1.0|Added the following resources: [call](/graph/api/resouces/call?view=graph-rest-1.0), [participant](/graph/api/resouces/participant?view=graph-rest-1.0), and [onlinemeetings](/graph/api/resouces/onlinemeetings?view=graph-rest-1.0).|
 
 ### Identity and access (Azure AD)
 | **Change type** | **Version**   | **Description**                          |
