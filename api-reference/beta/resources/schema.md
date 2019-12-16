@@ -3,7 +3,7 @@ title: "schema resource type"
 description: "Describes the type of content and how to index each property in items in a Microsoft Search connection."
 localization_priority: Normal
 author: "snlraju-msft"
-ms.prod: ""
+ms.prod: "search"
 doc_type: "resourcePageType"
 ---
 
