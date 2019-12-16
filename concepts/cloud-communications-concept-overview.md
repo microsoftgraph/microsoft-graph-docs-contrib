@@ -114,6 +114,7 @@ View and Manage [Permissions for Online Meetings](/graph/permissions-reference#o
 [Communications API in Microsoft Graph (beta)](https://docs.microsoft.com/en-us/graph/api/resources/calls-api-overview?view=graph-rest-beta)
 
 
-
 ## Feedback
 View our [Github Issues](https://github.com/microsoftgraph/microsoft-graph-comms-samples/issues) for all known issues<br/>
+
+Feedback or ideas? Check out our [User Voice](https://microsoftgraph.uservoice.com/forums/920506-microsoft-graph-feature-requests?category_id=373858) page
