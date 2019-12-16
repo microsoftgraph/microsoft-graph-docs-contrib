@@ -81,7 +81,7 @@ Whether scheduling a meeting between a doctor and a patient or between a user an
 You can use cloud communications APIs to:
 
 - Have a user [create an online meeting](/graph/api/application-post-onlinemeetings?view=graph-rest-1.0).
-- Have a user [retrieve the details](https://docs.microsoft.com/en-us/graph/api/onlinemeeting-get?view=graph-rest-1.0) of an online meeting.
+- Have a user [retrieve the details]/graph/api/onlinemeeting-get?view=graph-rest-1.0) of an online meeting.
 - Have a bot or a user [join an online meeting](/graph/api/application-post-calls?view=graph-rest-1.0#example-5-join-scheduled-meeting-with-service-hosted-media).
 
 ## API reference
