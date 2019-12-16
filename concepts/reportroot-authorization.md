@@ -8,7 +8,7 @@ ms.prod: "reports"
 
 # Authorization for APIs to read Office 365 usage reports
 
-Report data accessible via the Microsoft Graph reports API is sensitive. In particular, Office 365 usage reports are protected by both permissions and Azure Active Directory (Azure AD) roles. The rest of this article applies to the reports API that reads Office 365 usage reports.
+Report data accessible via the Microsoft Graph reports API is sensitive. In particular, Office 365 usage reports are protected by both permissions and Azure Active Directory (Azure AD) roles. The information in this article applies to the reports API that reads Office 365 usage reports.
 
 The APIs to read Office 365 usage reports support two types of authorization:
 
@@ -25,7 +25,7 @@ If you're calling the APIs from Graph Explorer:
 If you're calling the APIs from an application:
 
 - The Azure AD tenant administrator must explicitly grant consent to your application. This is required both for application-level authorization and user delegated authorization.
-- If you're using user delegated authorization, the signed-in user must be a member of a limited administrator role in Azure AD as listed above.
+- If you're using user delegated authorization, the signed-in user must be a member of a limited administrator role in Azure AD.
 
 ## Assign Azure AD roles to users
 
