@@ -65,7 +65,7 @@ Introduced presence in beta and added cloud communications APIs to v1.0.
 ### Identity and access (Azure AD)
 | **Change type** | **Version**   | **Description**                          |
 |:---|:---|:---|
-|Change | beta |Updated the behavior of the **appRoleAssignments** and **appRoleAssignedTo** relationships on [servicePrincipal](/graph/api/resoureces/serviceprincipal.md) to return the roles as documented. **appRoleAssignments** returns app roles granted to the service principal and **appRoleAssignedTo** returns principals granted app roles to the service principal.|
+|Change | beta |Updated the behavior of the **appRoleAssignments** and **appRoleAssignedTo** relationships on [servicePrincipal](/graph/api/resoureces/serviceprincipal?view=graph-rest-beta) to return the roles as documented. **appRoleAssignments** returns app roles granted to the service principal and **appRoleAssignedTo** returns principals granted app roles to the service principal.|
 |Addition|beta, v1.0|Added support for returning a limited amount of information when your application does not have access to some of the types in a response's collection. For more details, see [Limited information returned for inaccessible member objects](permissions-reference.md#limited-information-returned-for-inaccessible-member-objects).|
 
 
@@ -74,7 +74,7 @@ Introduced presence in beta and added cloud communications APIs to v1.0.
 | **Change type** | **Version** | **Description**              |
 | :-------------- | :---------- | :--------------------------------------- |
 | Addition        | beta        | Added [create](/graph/api/informationprotection-post-threatassessmentrequests?view=graph-rest-beta), [get](/graph/api/threatassessmentrequest-get?view=graph-rest-beta) and [list](/graph/api/informationprotection-list-threatassessmentrequests?view=graph-rest-beta) APIs to manage [threatAssessmentRequest](/graph/api/resources/threatAssessmentRequest?view=graph-rest-beta) resources.|
-| Addition        | beta        | Added optional request header, User-Agent, to [evaluate application](informationprotectionlabel-evaluateapplication?view=graph-rest-beta), [evaluate classification](informationprotectionlabel-evaluateclassificationresults?view=graph-rest-beta), [evaluate removal](informationprotectionlabel-evaluateremoval?view=graph-rest-beta), [extract label](informationprotectionlabel-extractlabel?view=graph-rest-beta), [list label](informationprotectionlabel-list-labels?view=graph-rest-beta), and [get label](informationprotectionlabel-get?view=graph-rest-beta).
+| Addition        | beta        | Added optional request header, User-Agent, to [evaluate application](/graph/api/informationprotectionlabel-evaluateapplication?view=graph-rest-beta), [evaluate classification](informationprotectionlabel-evaluateclassificationresults?view=graph-rest-beta), [evaluate removal](/graph/api/informationprotectionlabel-evaluateremoval?view=graph-rest-beta), [extract label](/graph/api/informationprotectionlabel-extractlabel?view=graph-rest-beta), [list label](informationprotectionlabel-list-labels?view=graph-rest-beta), and [get label](/graph/api/informationprotectionlabel-get?view=graph-rest-beta).
 
 ### Microsoft Graph Toolkit
 
