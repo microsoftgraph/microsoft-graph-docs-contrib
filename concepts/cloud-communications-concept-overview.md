@@ -9,7 +9,7 @@ ms.prod: "cloud-communications"
 # Cloud communications API overview
 The cloud communications APIs in Microsoft Graph add a new dimension to how your apps and services interact with users through various communications related features, such as calling and online meetings. Grow your business by expediting how you respond to your customers’ needs and how your employees collaborate with each other.
 
-## Why integrate with cloud communications APIs?
+## Why integrate with the cloud communications APIs?
 
 Discover the benefits of using cloud communications APIs to buid service applications ([bots](https://microsoftgraph.github.io/microsoft-graph-comms-samples/docs/articles/calls/register-calling-bot.html?q=create%20bot)).
 
@@ -89,6 +89,16 @@ Looking for the API reference for this service?
 
 - [Cloud Communications APIs in Microsoft Graph (v1.0)](/graph/api/resources/communications-api-overview?view=graph-rest-1.0)
 - [Cloud Communications APIs in Microsoft Graph (beta)](/graph/api/resources/calls-api-overview?view=graph-rest-beta)
+
+## Next steps
+
+Learn how you can use bots to [get started](cloud-communications-get-started) <br/>
+Learn more about [calls](cloud-communications-calls)<br/>
+Learn more about [media](cloud-communications-media)<br/>
+Learn more about [online meetings](cloud-communications-online-meetings)<br/>
+
+View the API usage [limits](cloud-communications-limits).<br/>
+Learn how to [manage phone numbers](cloud-communications-phone-number) for your bots.
 
 ## See also
 
