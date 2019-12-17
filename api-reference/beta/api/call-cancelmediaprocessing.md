@@ -1,6 +1,6 @@
 ---
 title: "call: cancelMediaProcessing"
-description: "Cancels media processing for all IVR in-progress PlayPrompt, RecordResponse operations."
+description: "Cancels media processing for any in-progress PlayPrompt, RecordResponse operations."
 author: "VinodRavichandran"
 localization_priority: Normal
 ms.prod: "cloud-communications"
@@ -11,7 +11,7 @@ doc_type: apiPageType
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Cancels processing for all IVR in-progress PlayPrompt, RecordResponse operations.
+Cancels processing for any in-progress PlayPrompt, RecordResponse operations.
 
 ## Permissions
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
@@ -104,7 +104,7 @@ Content-Length: 259
 }
 ```
 
-##### Notification - For an in-progress recordResponse canceled notification.
+##### Notification - Operation canceled status, for an in-progress recordResponse operation.
 
 ```http
 POST https://bot.contoso.com/api/calls
@@ -126,7 +126,6 @@ Content-Type: application/json
       "resource": "/app/calls/4e1f0b00-4d1f-45bb-92bd-6b379e4f54c7/operations/fb8c7fa0-44c4-4244-b4f0-43fd56842c85",
       "resourceData": {
         "@odata.type": "#microsoft.graph.recordOperation",
-        "completionReason": "operationCanceled",
         "status": "failed",
         "clientContext": "55178b4b-3b9f-4f71-9976-e1e031e386e1",
         "resultInfo": {
