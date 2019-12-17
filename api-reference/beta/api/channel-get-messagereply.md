@@ -21,7 +21,7 @@ One of the following permissions is required to call this API. To learn more, in
 |---------|-------------|
 |Delegated (work or school account)|Group.Read.All, Group.ReadWrite.All|
 |Delegated (personal Microsoft account)|Not supported|
-|Application| Group.Read.All, Group.ReadWrite.All |
+|Application| ChannelMessage.Read.Group, Group.Read.All, Group.ReadWrite.All |
 
 > [!NOTE]
 > Before calling this API with application permissions, you must request access. For details, see [Protected APIs in Microsoft Teams](/graph/teams-protected-apis).

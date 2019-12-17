@@ -1462,6 +1462,33 @@ For more complex scenarios involving multiple permissions, see [Permission scena
 
 ---
 
+## Teams permissions
+
+See also Group.ReadWrite.All
+
+
+|   Permission    |  Display String   |  Description | Admin Consent Required | Microsoft Account supported |
+|:----------------|:------------------|:-------------|:-----------------------|:--------------|
+(For all of these, no admin consent required and Microsoft account not supported)
+
+
+scope	Teams consent text	AAD adminDescription
+TeamSettings.Read.Group	Read this team's settings.	Read this team's settings, without a signed-in user.
+ChannelSettings.Read.Group	Read the names, descriptions, and settings of this team’s channels.	Read this group's channel names, channel descriptions, and channel settings, without a signed-in user.
+ChannelSettings.Edit.Group	Edit the names, descriptions, and settings of this team’s channels.	Edit this group's channel names, channel descriptions, and channel settings, without a signed-in user.
+Channel.Create.Group	Create channels in this team.	Create channels in this group, without a signed-in user.
+Channel.Delete.Group	Delete this team's channels.	Delete this group's channels, without a signed-in user.
+ChannelMessage.Read.Group	Read the team’s channel messages.	Allows an app to read this group's channel's messages, without a signed-in user.
+TeamsApp.Read.Group	See which apps are installed in this team.	See which apps are installed in this group, without a signed-in user.
+TeamsTab.Read.Group	Read this team's tabs.	Read this group's tabs, without a signed-in user.
+TeamsTab.Create.Group	Create tabs in this team.	Create tabs in this group, without a signed-in user.
+TeamsTab.Edit.Group	Edit this team's tabs.	Edit this group's tabs, without a signed-in user.
+TeamsTab.Delete.Group	Delete this team's tabs.	Delete this group's tabs, without a signed-in user.
+Member.Read.Group	Read this team's members.	Read this group's members, without a signed-in user.
+Owner.Read.Group	Read this team's owners.	Read this group's owners, without a signed-in user.
+
+
+
 ## Terms of use permissions
 
 #### Delegated permissions
