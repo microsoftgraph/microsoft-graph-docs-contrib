@@ -42,7 +42,7 @@ The following example shows how to create a new page.
 <!-- { "blockType": "request", "name": "create-page", "scopes": "sites.readwrite.all" } -->
 
 ```json
-POST /sites/{site-id}/page
+POST /sites/{site-id}/pages
 Content-Type: application/json
 
 {

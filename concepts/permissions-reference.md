@@ -1213,7 +1213,7 @@ For more complex scenarios involving multiple permissions, see [Permission scena
 
 ## Presence permissions
 
-#### Application permissions
+#### Delegated permissions
 
 |   Permission    |  Display String   |  Description | Admin Consent Required |
 |:-----------------------------|:-----------------------------------------|:-----------------|:-----------------|
