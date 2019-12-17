@@ -12,7 +12,7 @@ participants.replacesCallId = "a7ebfb2d-871e-419c-87af-27290b22e8db";
 IdentitySet identity = new IdentitySet();
 Identity user = new Identity();
 user.id = "7e1b4346-85a6-4bdd-abe3-d11c5d420efe";
-user.identityProvider = "AAD";
+user.displayName = "string";
 identity.user = user;
 participants.identity = identity;
 
