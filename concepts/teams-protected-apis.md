@@ -27,7 +27,7 @@ The following APIs are currently protected:
 >[!NOTE]
 >[Send message](/graph/api/channel-post-messages?view=graph-rest-beta) is not a protected API.
 
-To request access to these protected APIs, complete the following [request form](http://aka.ms/teamsgraph/requestaccess). 
+To request access to these protected APIs, complete the following [request form](https://aka.ms/teamsgraph/requestaccess). 
 We review access requests every Wednesday and deploy approvals every Friday, 
 except during major holiday weeks in the U.S.
 Submissions during those weeks will be processed the following non-holiday week.
