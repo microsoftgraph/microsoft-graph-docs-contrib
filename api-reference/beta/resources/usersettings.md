@@ -37,7 +37,7 @@ This resource supports:
 | Relationship | Type | Description |
 |:---------------|:--------|:----------|
 |channels|[channel](channel.md) collection|The collection of channels & messages associated with the team.|
-| shiftPreferences |[shift-preference](shift-preference.md)  | The shift preferences for the user. |
+|shiftPreferences|[shiftPreferences](shiftpreferences.md)| The shift preferences for the user. |
 
 ## JSON representation
 
