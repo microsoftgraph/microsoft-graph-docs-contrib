@@ -11,7 +11,7 @@ doc_type: apiPageType
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Cancels processing for any in-progress PlayPrompt, RecordResponse operations.
+"Cancels processing for any in-progress [Play Prompt](./call-playprompt.md) or [Record Response](./call-record.md) operations"
 
 ## Permissions
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
@@ -104,7 +104,7 @@ Content-Length: 259
 }
 ```
 
-##### Notification - Operation canceled status, for an in-progress recordResponse operation.
+##### Notification - Operation canceled for recordResponse.
 
 ```http
 POST https://bot.contoso.com/api/calls
