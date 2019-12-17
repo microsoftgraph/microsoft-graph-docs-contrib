@@ -1,6 +1,6 @@
 ---
 title: "List accessPackageResourceRoles"
-description: "Retrieve a list of accesspackageresourcerole objects."
+description: "Retrieve a list of accessPackageResourceRole objects."
 localization_priority: Normal
 author: "markwahl-msft"
 ms.prod: "microsoft-identity-platform"
@@ -39,7 +39,7 @@ This method uses OData query parameters to construct the response. For general i
 
 | Name      |Description|
 |:----------|:----------|
-| Authorization | Bearer {token} |
+| Authorization | Bearer {token}. Required. |
 
 ## Request body
 
