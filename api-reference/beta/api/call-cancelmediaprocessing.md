@@ -1,6 +1,6 @@
 ---
 title: "call: cancelMediaProcessing"
-description: "Cancels media processing for all in-progress any PlayPrompt or Record operations."
+description: "Cancels media processing for all IVR in-progress PlayPrompt, RecordResponse operations."
 author: "VinodRavichandran"
 localization_priority: Normal
 ms.prod: "cloud-communications"
@@ -11,7 +11,7 @@ doc_type: apiPageType
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Cancels media processing for all in-progress any PlayPrompt or Record operations.
+Cancels processing for all IVR in-progress PlayPrompt, RecordResponse operations.
 
 ## Permissions
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
@@ -40,11 +40,10 @@ In the request body, provide a JSON object with the following parameters.
 
 | Parameter      | Type    | Description                                                    |
 |:---------------|:--------|:---------------------------------------------------------------|
-| all            | Boolean | The flag indicating whether to stop all operations or current. |
 | clientContext  | String  | The client context.                                            |
 
 ## Response
-Returns `202 Accepted` response code and a Location header with a uri to the [commsOperation](../resources/commsoperation.md) created for this request.
+Returns `200 Ok` response code and a Location header with a uri to the [commsOperation](../resources/commsoperation.md) created for this request.
 
 ## Example
 The following example shows how to call this API.
@@ -64,7 +63,6 @@ Content-Type: application/json
 Content-Length: 62
 
 {
-  "all": true,
   "clientContext": "clientContext-value"
 }
 ```
@@ -99,13 +97,14 @@ Content-Type: application/json
 Content-Length: 259
 
 {
-  "id": "17e3b46c-f61d-4f4d-9635-c626ef18e6ad",
-  "status": "running",
-  "clientContext": "d45324c1-fcb5-430a-902c-f20af696537c"
+  "@odata.type": "#microsoft.graph.cancelMediaProcessingOperation",
+  "status": "completed",
+  "clientContext": "3b63716b-2b19-4884-b07d-2d10f2b4de39",
+  "id": "17e3b46c-f61d-4f4d-9635-c626ef18e6ad"
 }
 ```
 
-##### Notification - operation completed
+##### Notification - For an in-progress recordResponse canceled notification.
 
 ```http
 POST https://bot.contoso.com/api/calls
@@ -123,13 +122,21 @@ Content-Type: application/json
     {
       "@odata.type": "#microsoft.graph.commsNotification",
       "changeType": "deleted",
-      "resourceUrl": "/communications/calls/57DAB8B1894C409AB240BD8BEAE78896/operations/0FE0623FD62842EDB4BD8AC290072CC5",
+      "resourceUrl": "/communications/calls/4e1f0b00-4d1f-45bb-92bd-6b379e4f54c7/operations/fb8c7fa0-44c4-4244-b4f0-43fd56842c85",
+      "resource": "/app/calls/4e1f0b00-4d1f-45bb-92bd-6b379e4f54c7/operations/fb8c7fa0-44c4-4244-b4f0-43fd56842c85",
       "resourceData": {
-        "@odata.type": "#microsoft.graph.commsOperation",
-        "@odata.id": "/communications/calls/57DAB8B1894C409AB240BD8BEAE78896/operations/0FE0623FD62842EDB4BD8AC290072CC5",
-        "@odata.etag": "W/\"54451\"",
-        "clientContext": "d45324c1-fcb5-430a-902c-f20af696537c",
-        "status": "completed"
+        "@odata.type": "#microsoft.graph.recordOperation",
+        "completionReason": "operationCanceled",
+        "status": "failed",
+        "clientContext": "55178b4b-3b9f-4f71-9976-e1e031e386e1",
+        "resultInfo": {
+          "@odata.type": "#microsoft.graph.resultInfo",
+          "code": 400,
+          "subcode": 8508,
+          "message": "Action falied, the operation was cancelled.",
+          "subcode": 8508
+        },
+        "id": "fb8c7fa0-44c4-4244-b4f0-43fd56842c85"
       }
     }
   ]
