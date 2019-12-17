@@ -33,13 +33,13 @@ GET /identityGovernance/entitlementManagement/accessPackageResourceRequests
 
 ## Optional query parameters
 
-This method supports some of the OData query parameters to help customize the response. For example, to retrieve who requested to add a resource to a catalog, include `$expand=requestor` in the query. For general information, see [OData query parameters](/graph/query-parameters).
+This method supports some of the OData query parameters to help customize the response. For example, to retrieve who requested the addition of a resource to a catalog, include `$expand=requestor` in the query. For general information, see [OData query parameters](/graph/query-parameters).
 
 ## Request headers
 
 | Name      |Description|
 |:----------|:----------|
-| Authorization | Bearer {token} |
+| Authorization | Bearer {token}. Required. |
 
 ## Request body
 
