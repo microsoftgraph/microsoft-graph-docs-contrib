@@ -11,7 +11,7 @@ doc_type: "apiPageType"
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Create a new [accessPackageResourceRequest](../resources/accesspackageresourcerequest.md) object to request to add a resource to an access package catalog.
+Create a new [accessPackageResourceRequest](../resources/accesspackageresourcerequest.md) object to request the addition of a resource to an access package catalog.
 
 ## Permissions
 
@@ -35,12 +35,12 @@ POST /identityGovernance/entitlementManagement/accessPackageResourceRequests
 
 | Name          | Description   |
 |:--------------|:--------------|
-| Authorization | Bearer {token} |
-| Content-Type  | application/json  |
+| Authorization | Bearer {token}. Required. |
+| Content-Type  | application/json. Required.  |
 
 ## Request body
 
-In the request body, supply a JSON representation of [accessPackageResourceRequest](../resources/accesspackageresourcerequest.md) object. Include the `accessPackageResource` relationship with a [accessPackageResource](../resources/accesspackageresource.md) object as part of the request.
+In the request body, supply a JSON representation of an [accessPackageResourceRequest](../resources/accesspackageresourcerequest.md) object. Include the `accessPackageResource` relationship with an [accessPackageResource](../resources/accesspackageresource.md) object as part of the request.
 
 To add an Azure AD group as a resource to a catalog, the value of the **originSystem** property within the `accessPackageResource` should be **AadGroup** and the value of the **originId** is the identifier of the group.
 
