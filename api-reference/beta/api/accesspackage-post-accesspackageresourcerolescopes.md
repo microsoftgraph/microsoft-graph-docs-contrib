@@ -35,12 +35,12 @@ POST /identityGovernance/entitlementManagement/accessPackages/{id}/accessPackage
 
 | Name          | Description   |
 |:--------------|:--------------|
-| Authorization | Bearer {token} |
-| Content-Type  | application/json  |
+| Authorization | Bearer {token}. Required. |
+| Content-Type  | application/json. Required.  |
 
 ## Request body
 
-In the request body, supply a JSON representation of [accessPackageResourceRoleScope](../resources/accesspackageresourcerolescope.md) object.  Include in the object the relationships to a [accessPackageResourceRole](../resources/accesspackageresourcerole.md) and [accessPackageResourceScope](../resources/accesspackageresourcescope.md).  
+In the request body, supply a JSON representation of an [accessPackageResourceRoleScope](../resources/accesspackageresourcerolescope.md) object.  Include in the object the relationships to an [accessPackageResourceRole](../resources/accesspackageresourcerole.md) and [accessPackageResourceScope](../resources/accesspackageresourcescope.md).  
 
 ## Response
 
