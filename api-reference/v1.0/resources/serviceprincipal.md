@@ -47,6 +47,7 @@ Represents an instance of an application in a directory. Inherits from [director
 |appOwnerOrganizationId|String|Contains the tenant id where the application is registered. This is applicable only to service principals backed by applications.|
 |appRoleAssignmentRequired|Boolean|Specifies whether an **appRoleAssignment** to a user or group is required before Azure AD will issue a user or access token to the application. Not nullable. |
 |appRoles|[appRole](approle.md) collection|The application roles exposed by the associated application. For more information see the **appRoles** property definition on the [application](application.md) entity. Not nullable. |
+| deletedDateTime | DateTimeOffset | The date and time the service principal was deleted. Read-only. |
 |displayName|String|The display name for the service principal.|
 |endpoints|[endPoint](endpoint.md) collection|Endpoints available for discovery. Services like Sharepoint populates this property with tenant specific endpoints that other services can discover and use. This is a contained entity type collection.|
 |homepage|String|Home page or landing page of the application.|

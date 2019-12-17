@@ -16,7 +16,7 @@ One of the following permissions is required to call this API. To learn more, in
 
 |Permission type      | Permissions (from least to most privileged)              |
 |:--------------------|:---------------------------------------------------------|
-|Delegated (work or school account) | Directory.AccessAsUser.All    |
+|Delegated (work or school account) | Application.ReadWrite.All, Directory.AccessAsUser.All    |
 |Delegated (personal Microsoft account) | Not supported.    |
 |Application | Application.ReadWrite.OwnedBy, Application.ReadWrite.All |
 
@@ -74,7 +74,6 @@ Content-type: application/json
 Content-length: 391
 
 {
-  "displayName": "My App instance",
   "appRoleAssignmentRequired": true
 }
 ```
@@ -100,7 +99,7 @@ Content-length: 391
   "appOwnerOrganizationId": "65415bb1-9267-4313-bbf5-ae259732ee12",
   "appRoleAssignmentRequired":true,
   "appRoles": [],
-  "displayName": "My App instance",
+  "displayName": "My App",
   "endpoints": [],
   "homepage": null,
   "id": "00af5dfb-85da-4b41-a677-0c6b86dd34f8",
