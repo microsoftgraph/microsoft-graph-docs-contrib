@@ -24,7 +24,7 @@ Contains information about the meeting, including the URL used to join a meeting
 
 | Property                  | Type                                                   | Description                                                                                                                |
 | :------------------------ | :----------------------------------------------------- | :------------------------------------------------------------------------------------------------------------------------- |
-| autoAdmittedUsers         | String                                                 | The setting that specifies the type of participants that will automatically be allowed into the online meeting. Read-only. Possible values are: `everyone`, `everyoneInSameAndFederatedCompany`, `everyoneInCompany`, `invitedUsersInCompany`, `organizer`|
+| autoAdmittedUsers         | String                                                 | The setting that specifies the type of participants that will automatically be allowed into the online meeting. Possible values are: `everyone`, `everyoneInSameAndFederatedCompany`, `everyoneInCompany`, `invitedUsersInCompany`, `organizer`. Read-only.|
 | audioConferencing         | [audioConferencing](audioconferencing.md)              | The phone access (dial-in) information for an online meeting. Read-only. |
 | canceledDateTime          | DateTime                                               | The time in UTC when the meeting was canceled. Read-only. |
 | chatInfo                  | [chatInfo](chatinfo.md)                                | The chat information associated with this online meeting. |
@@ -38,7 +38,7 @@ Contains information about the meeting, including the URL used to join a meeting
 | participants              | [meetingParticipants](meetingparticipants.md)          | The participants associated with the online meeting.  This includes the organizer and the attendees. |
 | subject                   | String                                                 | The subject of the online meeting. |
 | capabilities              | String collection                                      | The list of meeting capabilities. Possible values are: `questionAndAnswer`. |
-| videoTeleconferenceId     | String                                                 | The videio teleconferencing ID. Read-only. |
+| videoTeleconferenceId     | String                                                 | The video teleconferencing ID. Read-only. |
 
 ### autoAdmittedUsers values
 | Value | Description  |
