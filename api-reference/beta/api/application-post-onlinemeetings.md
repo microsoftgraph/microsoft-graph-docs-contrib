@@ -23,7 +23,6 @@ One of the following permissions is required to call this API. To learn more, in
 | Delegated (work or school account)     | OnlineMeetings.ReadWrite                    |
 | Delegated (personal Microsoft account) | Not Supported                               |
 | Application                            | Not Supported                |
-
 ## HTTP request
 <!-- { "blockType": "ignored" } -->
 ```http
