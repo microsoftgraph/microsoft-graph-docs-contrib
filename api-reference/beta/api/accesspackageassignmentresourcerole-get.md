@@ -1,6 +1,6 @@
 ---
 title: "Get accessPackageAssignmentResourceRole"
-description: "Retrieve the properties and relationships of accessPackageAssignmentResourceRole object."
+description: "Retrieve the properties and relationships of an accessPackageAssignmentResourceRole object."
 localization_priority: Normal
 author: "markwahl-msft"
 ms.prod: "microsoft-identity-platform"
@@ -11,7 +11,7 @@ doc_type: "apiPageType"
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Retrieve the properties and relationships of an accessPackageAssignmentResourceRole object.
+Retrieve the properties and relationships of an [accessPackageAssignmentResourceRole](../resources/accesspackageassignmentresourcerole.md) object.
 
 ## Permissions
 
@@ -39,7 +39,7 @@ This method supports some of the OData query parameters to help customize the re
 
 | Name      |Description|
 |:----------|:----------|
-| Authorization | Bearer {token} |
+| Authorization | Bearer {token}. Required. |
 
 ## Request body
 
