@@ -11,11 +11,11 @@ ms.prod: "cloud-communications"
 Learn about the supported call types and how they're used for the signaling process.
 
 ## Peer-to-Peer calls
-A call is Peer-to-Peer (p2p) when one participant is directly calling another participant. If a bot calls a user, and the user is the only calling target that is specified, this is an example of a p2p call.
+A call is Peer-to-Peer (p2p) when one participant is directly calling another participant. If a bot calls a user, and the user is the only calling target specified, this is an example of a p2p call.
 
 ![P2P Diagram](images/communications-p2p-call.PNG)
 
-### Permissions:
+### Permissions
 If a user wants to call a bot, the bot doesn't need any additional permissions in order to respond to the p2p call.
 
 In order for a bot to call a user, it must have the *Calls.Initiate.All* permission for a p2p call.
