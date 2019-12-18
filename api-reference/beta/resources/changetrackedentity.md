@@ -11,15 +11,15 @@ doc_type: "resourcePageType"
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Represents an entity to track changes made to any supported [schedule](schedule.md) and associated  resource.
+Represents an entity to track changes made to any supported [schedule](schedule.md) and associated resource.
 
 ## Methods
 
 | Method       | Return Type | Description |
 |:-------------|:------------|:------------|
-| [Get changeTrackedEntity](../api/changetrackedentity-get.md) | [changeTrackedEntity](changetrackedentity.md) | Read properties and relationships of changeTrackedEntity object. |
-| [Update](../api/changetrackedentity-update.md) | [changeTrackedEntity](changetrackedentity.md) | Update changeTrackedEntity object. |
-| [Delete](../api/changetrackedentity-delete.md) | None | Delete changeTrackedEntity object. |
+| [Get](../api/changetrackedentity-get.md) | [changeTrackedEntity](changetrackedentity.md) | Read the properties and relationships of a **changeTrackedEntity** object. |
+| [Update](../api/changetrackedentity-update.md) | [changeTrackedEntity](changetrackedentity.md) | Update a **changeTrackedEntity** object. |
+| [Delete](../api/changetrackedentity-delete.md) | None | Delete a **changeTrackedEntity** object. |
 
 ## Properties
 
@@ -32,7 +32,7 @@ Represents an entity to track changes made to any supported [schedule](schedule.
 
 ## Relationships
 
-None
+None.
 
 ## JSON representation
 
