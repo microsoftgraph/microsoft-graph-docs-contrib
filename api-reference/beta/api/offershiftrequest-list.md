@@ -1,6 +1,6 @@
 ---
 title: "List offerShiftRequest"
-description: "Retrieve the properties and relationships of all offershiftrequest objects in a team."
+description: "Retrieve the properties and relationships of all offerShiftRequest objects in a team."
 localization_priority: Normal
 author: "akumar39"
 ms.prod: "microsoft-teams"
@@ -11,7 +11,7 @@ doc_type: "apiPageType"
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Retrieve the properties and relationships of all offershiftrequest objects in a team.
+Retrieve the properties and relationships of all [offerShiftRequest](../resources/offershiftrequest.md) objects in a team.
 
 ## Permissions
 
@@ -39,7 +39,7 @@ This method supports some of the OData query parameters to help customize the re
 
 | Name      |Description|
 |:----------|:----------|
-| Authorization | Bearer {token} |
+| Authorization | Bearer {token}. Required. |
 
 ## Request body
 
