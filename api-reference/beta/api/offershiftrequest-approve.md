@@ -36,6 +36,7 @@ POST /teams/schedule/offerShiftRequests/approve
 | Name          | Description   |
 |:--------------|:--------------|
 | Authorization | Bearer {token}. Required. |
+| Content-type | application/json. Required. |
 
 ## Request body
 
