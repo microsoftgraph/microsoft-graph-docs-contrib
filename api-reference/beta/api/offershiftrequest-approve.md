@@ -35,7 +35,7 @@ POST /teams/schedule/offerShiftRequests/approve
 
 | Name          | Description   |
 |:--------------|:--------------|
-| Authorization | Bearer {token} |
+| Authorization | Bearer {token}. Required. |
 
 ## Request body
 
@@ -51,11 +51,9 @@ If successful, this method returns `200, OK` response code. It does not return a
 
 ## Examples
 
-The following is an example of how to call this API.
-
 ### Request
 
-The following is an example of the request.
+The following example shows a request.
 <!-- {
   "blockType": "request",
   "name": "offershiftrequest_approve"
@@ -72,7 +70,7 @@ Content-type: application/json
 
 ### Response
 
-The following is an example of the response.
+The following example shows the response.
 <!-- {
   "blockType": "response",
   "truncated": true,
