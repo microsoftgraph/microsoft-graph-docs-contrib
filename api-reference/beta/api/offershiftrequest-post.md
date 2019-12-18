@@ -1,17 +1,17 @@
 ---
 title: "Create offerShiftRequest"
-description: "Create an instance of offershiftrequest."
+description: "Create an instance of an offerShiftRequest."
 localization_priority: Normal
 author: "akumar39"
 ms.prod: "microsoft-teams"
 doc_type: "apiPageType"
 ---
 
-# Get offerShiftRequest
+# Create offerShiftRequest
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Create an instance of [offershiftrequest](../resources/offershiftrequest.md).
+Create an instance of an [offerShiftRequest](../resources/offershiftrequest.md).
 
 ## Permissions
 
@@ -39,7 +39,7 @@ This method supports some of the OData query parameters to help customize the re
 
 | Name      |Description|
 |:----------|:----------|
-| Authorization | Bearer {token} |
+| Authorization | Bearer {token}. Required. |
 
 ## Request body
 
