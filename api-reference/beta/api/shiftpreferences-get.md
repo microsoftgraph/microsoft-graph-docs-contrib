@@ -11,7 +11,7 @@ doc_type: apiPageType
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Retrieve the properties and relationships of a [shiftPreferences](../resources/shift-preference.md) object by ID.
+Retrieve the properties and relationships of a [shiftPreferences](../resources/shiftpreferences.md) object by ID.
 
 ## Permissions
 
@@ -42,7 +42,7 @@ Do not supply a request body for this method.
 
 ## Response
 
-If successful, this method returns a `200 OK` response code and a [shiftPreferences](../resources/shift-preference.md) object in the response body.
+If successful, this method returns a `200 OK` response code and a [shiftPreferences](../resources/shiftpreferences.md) object in the response body.
 
 ## Example
 
