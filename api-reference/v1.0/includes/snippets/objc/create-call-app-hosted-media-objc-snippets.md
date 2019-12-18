@@ -24,7 +24,7 @@ MSGraphIdentity *application = [[MSGraphIdentity alloc] init];
 [source setLanguageId: null];
 [call setSource:source];
 NSMutableArray *targetsList = [[NSMutableArray alloc] init];
-MSGraphParticipantInfo *targets = [[MSGraphParticipantInfo alloc] init];
+MSGraphInvitationParticipantInfo *targets = [[MSGraphInvitationParticipantInfo alloc] init];
 MSGraphIdentitySet *identity = [[MSGraphIdentitySet alloc] init];
 MSGraphIdentity *user = [[MSGraphIdentity alloc] init];
 [user setDisplayName:@"John"];
