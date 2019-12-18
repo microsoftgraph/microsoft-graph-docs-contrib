@@ -12,7 +12,7 @@ participants.replacesCallId = "a7ebfb2d-871e-419c-87af-27290b22e8db";
 IdentitySet identity = new IdentitySet();
 Identity user = new Identity();
 user.id = "7e1b4346-85a6-4bdd-abe3-d11c5d420efe";
-user.identityProvider = "AAD";
+user.displayName = "string";
 identity.user = user;
 participants.identity = identity;
 
@@ -22,7 +22,7 @@ participants1.replacesCallId = "a7ebfb2d-871e-419c-87af-27290b22e8db";
 IdentitySet identity1 = new IdentitySet();
 Identity user1 = new Identity();
 user1.id = "1e126418-44a0-4a94-a6f8-0efe1ad71acb";
-user1.identityProvider = "AAD";
+user1.displayName = "string";
 identity1.user = user1;
 participants1.identity = identity1;
 
