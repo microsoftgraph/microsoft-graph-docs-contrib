@@ -18,7 +18,7 @@ Represents a user's availability to be assigned shifts in the [schedule](schedul
 | Method       | Return Type | Description |
 |:-------------|:------------|:------------|
 | [Get](../api/shiftpreferences-get.md) | [shiftPreferences](shiftpreferences.md) | Read the properties and relationships of a **shiftPreferences** object. |
-| [Update](../api/shiftpreferences-update.md) | [shiftPreferences](shiftpreferences.md) | Update a **shiftPreferences** object. |
+| [Update](../api/shiftpreferences-put.md) | [shiftPreferences](shiftpreferences.md) | Update a **shiftPreferences** object. |
 
 ## Properties
 
