@@ -1,5 +1,5 @@
 ---
-title: "Get shift preference"
+title: "Get shiftPreferences"
 description: "Get a shift preference by ID."
 author: "akumar39"
 localization_priority: Normal
@@ -7,11 +7,11 @@ ms.prod: "microsoft-teams"
 doc_type: apiPageType
 ---
 
-# Get shift preference
+# Get shiftPreferences
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Retrieve the properties and relationships of a [shift-preference](../resources/shift-preference.md) object by ID.
+Retrieve the properties and relationships of a [shiftPreferences](../resources/shift-preference.md) object by ID.
 
 ## Permissions
 
@@ -36,14 +36,13 @@ GET /users/{userId}/settings/shiftPreferences
 | Header       | Value |
 |:---------------|:--------|
 | Authorization  | Bearer {token}. Required.  |
-| Content-Type  | application/json  |
 
 ## Request body
 Do not supply a request body for this method.
 
 ## Response
 
-If successful, this method returns a `200 OK` response code and a [shift-preference](../resources/shift-preference.md) object in the response body.
+If successful, this method returns a `200 OK` response code and a [shiftPreferences](../resources/shift-preference.md) object in the response body.
 
 ## Example
 
