@@ -19,7 +19,7 @@ Availability of the user to be scheduled for a [shift](shift.md) and its recurre
 |:-------------|:------------|:------------|
 |recurrence|[patternedRecurrence](patternedrecurrence.md)| Specifies the pattern for recurrence |
 |timeSlots|Collection of [timeRange](timerange.md)|The time slot(s) preferred by the user.|
-|timeZone|String|Specifies the time zone for the indicated time |
+|timeZone|String|Specifies the time zone for the indicated time. |
 
 ## JSON representation
 
