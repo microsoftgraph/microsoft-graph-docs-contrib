@@ -1,6 +1,6 @@
 ---
 title: "shiftPreferences resource type"
-description: "A shift preference is the user's availability to be assigned shifts in the schedule."
+description: "Represents a user's availability to be assigned shifts in the schedule."
 localization_priority: Normal
 author: "akumar39"
 ms.prod: "microsoft-teams"
@@ -11,14 +11,14 @@ doc_type: "resourcePageType"
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-A shift preference is the user's availability to be assigned shifts in the [schedule](schedule.md).
+Represents a user's availability to be assigned shifts in the [schedule](schedule.md).
 
 ## Methods
 
 | Method       | Return Type | Description |
 |:-------------|:------------|:------------|
-| [Get shiftPreferences](../api/shiftpreferences-get.md) | [shiftPreferences](shiftpreferences.md) | Read properties and relationships of shiftPreferences object. |
-| [Update](../api/shiftpreferences-update.md) | [shiftPreferences](shiftpreferences.md) | Update shiftPreferences object. |
+| [Get](../api/shiftpreferences-get.md) | [shiftPreferences](shiftpreferences.md) | Read the properties and relationships of a **shiftPreferences** object. |
+| [Update](../api/shiftpreferences-update.md) | [shiftPreferences](shiftpreferences.md) | Update a **shiftPreferences** object. |
 
 ## Properties
 
@@ -33,7 +33,7 @@ A shift preference is the user's availability to be assigned shifts in the [sche
 
 ## Relationships
 
-None
+None.
 
 ## JSON representation
 
