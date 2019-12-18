@@ -1,5 +1,5 @@
 ---
-title: "Update shift preference"
+title: "Update shiftPreferences"
 description: "Update a user's shift preferences."
 author: "akumar39"
 localization_priority: Normal
@@ -7,11 +7,11 @@ ms.prod: "microsoft-teams"
 doc_type: apiPageType
 ---
 
-# Update shift preference
+# Update shiftPreferences
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Update the properties and relationships of a [shift-preference](../resources/shift-preference.md) object.
+Update the properties and relationships of a [shiftPreferences](../resources/shiftpreferences.md) object.
 
 ## Permissions
 
@@ -36,10 +36,10 @@ GET /users/{userId}/settings/shiftPreferences
 | Header       | Value |
 |:---------------|:--------|
 | Authorization  | Bearer {token}. Required.  |
-| Content-Type  | application/json  |
+| Content-Type  | application/json. Required.  |
 
 ## Request body
-Provide the new [shift-preference](../resources/shift-preference.md) object in the request body for this method.
+Provide the new [shiftPreferences](../resources/shiftpreferences.md) object in the request body for this method.
 
 ## Response
 
