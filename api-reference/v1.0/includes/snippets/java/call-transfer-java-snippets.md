@@ -11,7 +11,6 @@ transferTarget.endpointType = "default";
 IdentitySet identity = new IdentitySet();
 Identity user = new Identity();
 user.id = "550fae72-d251-43ec-868c-373732c2704f";
-user.tenantId = "72f988bf-86f1-41af-91ab-2d7cd011db47";
 user.displayName = "Heidi Steen";
 identity.user = user;
 transferTarget.identity = identity;

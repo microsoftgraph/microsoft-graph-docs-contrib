@@ -16,7 +16,7 @@ var participants = new List<InvitationParticipantInfo>()
 			User = new Identity
 			{
 				Id = "7e1b4346-85a6-4bdd-abe3-d11c5d420efe",
-				IdentityProvider = "AAD"
+				DisplayName = "string"
 			}
 		}
 	},
@@ -28,7 +28,7 @@ var participants = new List<InvitationParticipantInfo>()
 			User = new Identity
 			{
 				Id = "1e126418-44a0-4a94-a6f8-0efe1ad71acb",
-				IdentityProvider = "AAD"
+				DisplayName = "string"
 			}
 		}
 	}
