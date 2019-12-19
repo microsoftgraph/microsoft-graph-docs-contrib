@@ -16,7 +16,7 @@ Retrieve the [accessReview](../resources/accessreview.md) objects for a particul
 >[!NOTE]
 > If any of the access reviews that match the filter is a recurring access review, one **accessReview** object will be returned to represent each recurring series as a whole. For example, if there is a monthly recurring access review of guest members of group A, a quarterly recurring access review of guest members of group B, and a one-time access review of guest members of group C, and the caller queries for access reviews with a business flow template of reviews of guest members of groups, three objects will be returned. To retrieve the instances of a recurring access review, or the access review instance scheduled for a particular month or quarter, the caller can subsequently navigate the **instance** relationship of the recurring **accessReview** object. The **instance** relationship links to the **accessReview** objects for a current or the past instances of the recurring access review.
 
-If there may be many hundreds of access reviews, then improve efficiency and avoid timeouts, retrieve the result set in batches, by including the `$top` query parameter with a page size in a request.  When a result set spans multiple pages, Microsoft Graph returns that page with an `@odata.nextLink` property in the response that contains a URL to the next page of results.
+If there may be many hundreds of access reviews, then improve efficiency and avoid timeouts, retrieve the result set in batches, by including both the `$top` query parameter with a page size and the `$skip=0` query parameter in a request.  When a result set spans multiple pages, Microsoft Graph returns that page with an `@odata.nextLink` property in the response that contains a URL to the next page of results.
 
 The **accessReview** objects returned by this API will not include nested structure properties such as **settings**, or relationships.  To retrieve an access review settings or relationships, use the [get accessReview](accessreview-get.md) API.
 
@@ -35,7 +35,7 @@ One of the following permissions is required to call this API. To learn more, in
 ## HTTP request
 <!-- { "blockType": "ignored" } -->
 ```http
-GET /accessReviews?$filter=businessFlowTemplateId eq {businessFlowTemplate-id}&$top={pagesize}
+GET /accessReviews?$filter=businessFlowTemplateId eq {businessFlowTemplate-id}&$top={pagesize}&$skip=0
 ```
 ## Request headers
 | Name         | Type        | Description |
@@ -58,7 +58,7 @@ The following example shows a request to retrieve all the one-time and recurring
   "name": "get_accessReviews"
 }-->
 ```msgraph-interactive
-GET https://graph.microsoft.com/beta/accessReviews?$filter=businessFlowTemplateId+eq+'6e4f3d20-c5c3-407f-9695-8460952bcc68'
+GET https://graph.microsoft.com/beta/accessReviews?$filter=businessFlowTemplateId+eq+'6e4f3d20-c5c3-407f-9695-8460952bcc68'&$top=100&$skip=0
 ```
 # [C#](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/get-accessreviews-csharp-snippets.md)]
