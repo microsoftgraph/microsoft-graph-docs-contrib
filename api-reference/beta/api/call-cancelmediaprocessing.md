@@ -100,8 +100,8 @@ Content-Length: 259
 {
   "@odata.type": "#microsoft.graph.cancelMediaProcessingOperation",
   "status": "completed",
-  "clientContext": "3b63716b-2b19-4884-b07d-2d10f2b4de39",
-  "id": "17e3b46c-f61d-4f4d-9635-c626ef18e6ad"
+  "clientContext": "d45324c1-fcb5-430a-902c-f20af696537c",
+  "id": "0fe0623f-d628-42ed-b4bd-8ac290072cc5"
 }
 ```
 
@@ -123,20 +123,23 @@ Content-Type: application/json
     {
       "@odata.type": "#microsoft.graph.commsNotification",
       "changeType": "deleted",
-      "resourceUrl": "/communications/calls/4e1f0b00-4d1f-45bb-92bd-6b379e4f54c7/operations/fb8c7fa0-44c4-4244-b4f0-43fd56842c85",
-      "resource": "/app/calls/4e1f0b00-4d1f-45bb-92bd-6b379e4f54c7/operations/fb8c7fa0-44c4-4244-b4f0-43fd56842c85",
+      "resourceUrl": "/communications/calls/57DAB8B1894C409AB240BD8BEAE78896/operations/0FE0623FD62842EDB4BD8AC290072CC5",
       "resourceData": {
         "@odata.type": "#microsoft.graph.recordOperation",
-        "status": "failed",
-        "clientContext": "55178b4b-3b9f-4f71-9976-e1e031e386e1",
+		"@odata.id": "/communications/calls/57DAB8B1894C409AB240BD8BEAE78896/operations/0FE0623FD62842EDB4BD8AC290072CC5",
+        "@odata.etag": "W/\"54451\"",
+		"id": "0fe0623f-d628-42ed-b4bd-8ac290072cc5",
+        "clientContext": "d45324c1-fcb5-430a-902c-f20af696537c",
+		"status": "failed",
         "resultInfo": {
           "@odata.type": "#microsoft.graph.resultInfo",
           "code": 400,
           "subcode": 8508,
-          "message": "Action falied, the operation was cancelled.",
-          "subcode": 8508
+          "message": "Action falied, the operation was cancelled."
         },
-        "id": "fb8c7fa0-44c4-4244-b4f0-43fd56842c85"
+		"recordingLocation": "",
+        "recordingAccessToken": "",
+        "completionReason": "operationCanceled"
       }
     }
   ]
