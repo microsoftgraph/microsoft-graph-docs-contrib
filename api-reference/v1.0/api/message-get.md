@@ -31,6 +31,8 @@ One of the following permissions is required to call this API. To learn more, in
 |Application | Mail.ReadBasic.All, Mail.Read |
 
 ## HTTP request
+
+To get the specified message:
 <!-- { "blockType": "ignored" } -->
 ```http
 GET /me/messages/{id}
@@ -38,6 +40,16 @@ GET /users/{id | userPrincipalName}/messages/{id}
 GET /me/mailFolders/{id}/messages/{id}
 GET /users/{id | userPrincipalName}/mailFolders/{id}/messages/{id}
 ```
+
+To get the MIME content of the specified message: 
+<!-- { "blockType": "ignored" } --> 
+```http 
+GET /me/messages/{id}/$value 
+GET /users/{id | userPrincipalName}/messages/{id}/$value 
+GET /me/mailFolders/{id}/messages/{id}/$value 
+GET /users/{id | userPrincipalName}/mailFolders/{id}/messages/{id}/$value 
+```
+
 ## Optional query parameters
 This method supports the [OData Query Parameters](https://developer.microsoft.com/graph/docs/concepts/query_parameters) to help customize the response.
 
