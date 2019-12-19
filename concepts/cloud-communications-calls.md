@@ -1,38 +1,37 @@
 ---
-title: "Understand calls"
+title: "Calls overview"
 description: "Learn about the supported call types and how they're used for the signaling process."
 author: "ananmishr"
 localization_priority: Normal
 ms.prod: "cloud-communications"
 ---
 
-# Understand calls
+# Calls overview
 
-Learn about the supported call types and how they're used for the signaling process.
+The cloud communications APIs in Microsoft Graph add a new dimension to how your apps and services interact with users through various communications related features, such as calls and online meetings. This article describes the supported call types and how they're used for the signaling process.
 
-## Peer-to-Peer calls
-A call is Peer-to-Peer (p2p) when one participant is directly calling another participant. If a bot calls a user, and the user is the only calling target specified, this is an example of a p2p call.
+## Peer-to-peer calls
+A call is peer-to-peer (P2P) when one participant is directly calling another participant. If a bot calls a user, and the user is the only calling target specified, this is an example of a P2P call.
 
-![P2P Diagram](images/communications-p2p-call.PNG)
+![P2P call diagram](images/communications-p2p-call.PNG)
 
-### Permissions
-If a user wants to call a bot, the bot doesn't need any additional permissions in order to respond to the p2p call.
-
-In order for a bot to call a user, it must have the *Calls.Initiate.All* permission for a p2p call.
+If a user wants to call a bot, the bot doesn't need any additional permissions in order to respond to the P2P call. In order for a bot to call a user, it must have the Calls.Initiate.All permission for a P2P call.
 
 ## Group calls
 
-A group call occurs if there are either 3 participants (at least) in the call, or if there are [meeting coordinates](/graph/api/resources/onlinemeeting) that are specified when the call was initially created. 
+A group call occurs if there are either three or more participants in the call, or if [meeting coordinates](/graph/api/resources/onlinemeeting) were specified when the call was initially created. 
 
 You can create a group call through Microsoft Teams, for example.
 
-![Group Call Diagram](images/communications-group-call.PNG)<br/></br>
+![Group call diagram](images/communications-group-call.PNG)
 
-Currently, bots are able to
-- create group calls on their own
-- join exisiting group calls
-- invite other participants into an existing group call
-- be invited into existing group calls
+Currently, bots are able to:
+- Create group calls
+- Join exisiting group calls
+- Invite other participants into an existing group call
+- Be invited into existing group calls
 
-### Permissions:
-Please view the [permissions for calls](/graph/permissions-reference#calls-permissions) for more information.
+## See also
+
+- [Cloud communications API overview](cloud-communications-concept-overview.md)
+- [Permissions for calls](/graph/permissions-reference#calls-permissions)
