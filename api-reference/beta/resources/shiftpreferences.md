@@ -29,7 +29,7 @@ Represents a user's availability to be assigned shifts in the [schedule](schedul
 | availability | [shiftAvailability](shiftavailability.md) collection | Availability of the user to be scheduled for work and its recurrence pattern. |
 | createdDateTime | `Edm.DateTimeOffset` | Timestamp corresponding to when the entity was created. |
 | lastModifiedDateTime | `Edm.DateTimeOffset` | Timestamp corresponding to when the entity was last modified. |
-| lastModifiedBy | `self.IdentitySet` | Identity of the person who last modified the entity. |
+| lastModifiedBy | [identitySet](identityset.md) | Identity of the person who last modified the entity. |
 
 ## Relationships
 
