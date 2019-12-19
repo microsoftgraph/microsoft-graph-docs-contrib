@@ -1,6 +1,6 @@
 ---
 title: "resultInfo resource type"
-description: "This contains success and failure-specific result information."
+description: "Contains success and failure-specific result information."
 author: "VinodRavichandran"
 localization_priority: Normal
 ms.prod: "cloud-communications"
