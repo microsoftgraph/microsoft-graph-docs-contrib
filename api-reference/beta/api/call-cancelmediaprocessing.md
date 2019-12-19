@@ -1,6 +1,6 @@
 ---
 title: "call: cancelMediaProcessing"
-description: "Cancels media processing for any in-progress PlayPrompt, RecordResponse operations."
+description: "Cancels media processing for any in-progress PlayPrompt or RecordResponse operations."
 author: "VinodRavichandran"
 localization_priority: Normal
 ms.prod: "cloud-communications"
@@ -11,7 +11,7 @@ doc_type: apiPageType
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-"Cancels processing for any in-progress [Play Prompt](./call-playprompt.md) or [Record Response](./call-record.md) operations"
+Cancels processing for any in-progress [play prompt](./call-playprompt.md) or [record response](./call-record.md) operations.
 
 ## Permissions
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
@@ -34,6 +34,7 @@ POST /communications/calls/{id}/cancelMediaProcessing
 | Name          | Description               |
 |:--------------|:--------------------------|
 | Authorization | Bearer {token}. Required. |
+| Content-type | application/json. Required. |
 
 ## Request body
 In the request body, provide a JSON object with the following parameters.
@@ -43,7 +44,7 @@ In the request body, provide a JSON object with the following parameters.
 | clientContext  | String  | The client context.                                            |
 
 ## Response
-Returns `200 Ok` response code and a Location header with a uri to the [commsOperation](../resources/commsoperation.md) created for this request.
+If successful, this method returns a `200 OK` HTTP response code and a Location header with a URI to the [commsOperation](../resources/commsoperation.md) created for this request.
 
 ## Example
 The following example shows how to call this API.
