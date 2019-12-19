@@ -14,7 +14,7 @@ This article describes limitations to the cloud communications APIs. These limit
 
 | API      | Limitations    |
 | :------------- | :----------: |
-|  Calls | 10,000 calls/month and 100 concurrent calls/month   |
+|  Calls | 10,000 calls/month and 100 concurrent calls   |
 | Meetings   | 2000 meetings/user each month |
 | Presence (preview)   | 2 requests/second |
 
