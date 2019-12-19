@@ -120,6 +120,13 @@ Introduced version 1.1 of the Microsoft Graph Toolkit.
 | Addition | beta | Added [notifications](/graph/api/subscription-post-subscriptions?view=graph-rest-beta) for new and edited channel messages, and new and edited chat messages.
 | Change | beta | Updated the application permissions required to perform read and write operations for shifts resources, including [schedule](/graph/api/resources/schedule?view=graph-rest-beta), [schedulingGroup](/graph/api/resources/schedulinggroup?view=graph-rest-beta), [shift](/graph/api/resources/shift?view=graph-rest-beta), [timeOff](/graph/api/resources/timeoff?view=graph-rest-beta), [timeOffReason](/graph/api/resources/timeoffreason?view=graph-rest-beta), [timeOffRequest](/graph/api/resources/timeoffrequest?view=graph-rest-beta), [swapShiftChangeRequest](/graph/api/resources/swapshiftchangerequest?view=graph-rest-beta), and [openShiftChangeRequest](/graph/api/resources/openshiftchangerequest?view=graph-rest-beta). **Note:** Applications permissions are currently in private preview and are not available for public use.|
 
+
+### Identity and access (Azure AD)
+
+| **Change type** | **Version** | **Description**                  |
+|:----------------|:------------|:-----------------------------------------|
+| Addition | Beta | Added the new entity type [accessPackageResourceRequest](/graph/api/resources/accesspackageresourcerequest?view=graph-rest-beta). |
+
 ## November 2019
 
 ### Calendar | Place
