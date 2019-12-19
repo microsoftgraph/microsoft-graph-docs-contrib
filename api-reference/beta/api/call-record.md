@@ -1,6 +1,6 @@
 ---
 title: "call: recordResponse"
-description: "Records a short audio response from the caller. This is useful if the bot wishes to capture a voice response from the caller following a prompt."
+description: "Record a short audio response from the caller. This is useful if the bot wants to capture a voice response from the caller following a prompt."
 author: "VinodRavichandran"
 localization_priority: Normal
 ms.prod: "cloud-communications"
@@ -11,16 +11,17 @@ doc_type: apiPageType
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Records a short audio response from the caller.
-A bot can utilize this to capture a voice response from a caller after they are prompted for a response.
+Record a short audio response from the caller.
 
-For further information on how to handle operations, please review [commsOperation](../resources/commsOperation.md)
+A bot can use this to capture a voice response from a caller after they are prompted for a response.
 
->**Note:** This is only supported for [calls](../resources/call.md) which are initiated with [serviceHostedMediaConfig](../resources/servicehostedmediaconfig.md).
+For more information about how to handle operations, see [commsOperation](../resources/commsOperation.md)
+
+>**Note:** This API is only supported for [calls](../resources/call.md) that are initiated with [serviceHostedMediaConfig](../resources/servicehostedmediaconfig.md).
 
 This action is not intended to record the entire call. The maximum length of recording is 2 minutes. The recording is not saved permanently by the by the Cloud Communications Platform and is discarded shortly after the call ends. The bot must download the recording promptly after the recording operation finishes by using the recordingLocation value that's given in the completed notification.
 
->**Note:** You may NOT record or otherwise persist media content from calls or meetings that your application accesses, or data derived from that media content. Make sure you are compliant with the laws and regulations of your area regarding data protection and confidentiality of communications. Please see the [Terms of Use](https://docs.microsoft.com/legal/microsoft-apis/terms-of-use) and consult with your legal counsel for more information.
+>**Note:** You may not record or otherwise persist media content from calls or meetings that your application accesses, or data derived from that media content. Make sure you are compliant with the laws and regulations of your area regarding data protection and confidentiality of communications. Please see the [Terms of Use](https://docs.microsoft.com/legal/microsoft-apis/terms-of-use) and consult with your legal counsel for more information.
 
 ## Permissions
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
@@ -43,6 +44,7 @@ POST /communications/calls/{id}/recordResponse
 | Name          | Description               |
 |:--------------|:--------------------------|
 | Authorization | Bearer {token}. Required. |
+| Content-type| application/json. Required. |
 
 ## Request body
 In the request body, provide a JSON object with the following parameters.
@@ -58,10 +60,10 @@ In the request body, provide a JSON object with the following parameters.
 |stopTones|String collection|Stop tones specified to end recording.|
 |clientContext|String|Unique Client Context string. Max limit is 256 chars.|
 
-> **Note:** The maximum recording time has now been reduced from 5 minutes to 2 minutes.
+> **Note:** The maximum recording time has been reduced from 5 minutes to 2 minutes.
 
 ## Response
-This method returns a `200 OK` response code and a Location header with a URI to the [recordOperation](../resources/recordoperation.md) created for this request.
+This method returns a `200 OK` HTTP response code and a Location header with a URI to the [recordOperation](../resources/recordoperation.md) created for this request.
 
 ## Example
 The following example shows how to call this API.
