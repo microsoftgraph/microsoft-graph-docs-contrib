@@ -13,6 +13,7 @@ items:
       - name: Services in Microsoft Graph
         href: overview-major-services.md
       - name: What's new
+        expanded: true
         items:
           - name: What's new highlights
             href: whats-new-overview.md
@@ -94,6 +95,14 @@ items:
             href: outlook-get-shared-events-calendars.md
           - name: Immutable ID
             href: outlook-immutable-id.md
+      - name: Cloud communications
+        items:
+          - name: Overview
+            href: cloud-communications-concept-overview.md
+          - name: Manage phone numbers for bots
+            href: cloud-communications-phone-number.md
+          - name: Limits
+            href: cloud-communications-limits.md
       - name: Cross-device experiences
         displayName: Project Rome
         items:
@@ -229,7 +238,11 @@ items:
           - name: Immutable ID
             href: outlook-immutable-id.md
       - name: Reports
-        href: reportroot-concept-overview.md
+        items:
+          - name: Overview
+            href: reportroot-concept-overview.md
+          - name: Authorization for Office 365 usage reports 
+            href: reportroot-authorization.md
       - name: Search (preview)
         items:
           - name: Overview
@@ -348,6 +361,8 @@ items:
                 href: /graph/tutorials/change-notifications
               - name: Missing Outlook notifications (preview)
                 href: webhooks-outlook-authz.md
+              - name: Notifications with resource data (preview)
+                href: webhooks-with-resource-data.md
           - name: Track changes
             displayName: Delta query, Outlook calendar, Groups, Outlook mail, Users
             items:
@@ -436,10 +451,12 @@ items:
                 href: toolkit/components/agenda.md
               - name: Tasks
                 href: toolkit/components/tasks.md
-              - name: People-Picker
+              - name: People Picker
                 href: toolkit/components/people-picker.md
-              - name: Person-Card
+              - name: Person Card
                 href: toolkit/components/person-card.md
+              - name: Get
+                href: toolkit/components/get.md
           - name: Providers
             items:
               - name: Using the providers
@@ -450,6 +467,8 @@ items:
                 href: toolkit/providers/sharepoint.md
               - name: Microsoft Teams provider
                 href: toolkit/providers/teams.md
+              - name: Proxy provider
+                href: toolkit/providers/proxy.md
               - name: Custom provider
                 href: toolkit/providers/custom.md
           - name: Styling components
