@@ -1,6 +1,6 @@
 ---
 title: "resultInfo resource type"
-description: "This contains success and failure specific result information."
+description: "This contains success and failure-specific result information."
 author: "VinodRavichandran"
 localization_priority: Normal
 ms.prod: "cloud-communications"
@@ -11,11 +11,11 @@ doc_type: resourcePageType
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-This contains success and failure specific result information. 
+Contains success and failure-specific result information. 
 
-The code specifies if the result is a generic success or failure. 
+The code specifies whether the result is a generic success or failure. 
 
-The sub-codes provide supplementary information related to the type of success or failure (e.g. a call transfer was successful)
+The subcodes provide supplementary information related to the type of success or failure (for example, a call transfer was successful).
 
 
 ## Properties
