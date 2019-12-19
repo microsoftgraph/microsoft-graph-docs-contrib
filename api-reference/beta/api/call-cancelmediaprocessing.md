@@ -105,7 +105,7 @@ Content-Length: 259
 }
 ```
 
-##### Notification - Operation canceled for recordResponse.
+##### Notification - Operation canceled for recordResponse
 
 ```http
 POST https://bot.contoso.com/api/calls
