@@ -92,19 +92,16 @@ Looking for the API reference for this service?
 
 ## Next steps
 
-Learn how you can use bots to [get started](cloud-communications-get-started) <br/>
-Learn more about [calls](cloud-communications-calls)<br/>
-Learn more about [media](cloud-communications-media)<br/>
-Learn more about [online meetings](cloud-communications-online-meetings)<br/>
-
-View the API usage [limits](cloud-communications-limits).<br/>
-Learn how to [manage phone numbers](cloud-communications-phone-number) for your bots.
+- Use bots to [get started](cloud-communications-get-started).
+- Learn more about [calls](cloud-communications-calls), [media](cloud-communications-media), and [online meetings](cloud-communications-online-meetings).
+- View the API usage [limits](cloud-communications-limits).
+- Learn how to [manage phone numbers](cloud-communications-phone-number) for your bots.
 
 ## See also
 
-- Learn about [delegated and application permissions](https://docs.microsoft.com/azure/active-directory/develop/v1-permissions-and-consent).
-- View and manage [permissions for calls](/graph/permissions-reference#calls-permissions).
-- View and manage [permissions for online meetings](/graph/permissions-reference#online-meetings-permissions).
-- Find samples in our [Github samples repository](https://github.com/microsoftgraph/microsoft-graph-comms-samples).
+- [Delegated and application permissions](https://docs.microsoft.com/azure/active-directory/develop/v1-permissions-and-consent)
+- [Calls permissions](/graph/permissions-reference#calls-permissions)
+- [Online meeting permissions](/graph/permissions-reference#online-meetings-permissions)
+- [Cloud communications samples](https://github.com/microsoftgraph/microsoft-graph-comms-samples)
 
 
