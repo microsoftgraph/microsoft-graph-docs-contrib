@@ -10,7 +10,7 @@ const options = {
 
 const client = Client.init(options);
 
-const recordResponse = {
+const recordOperation = {
   bargeInAllowed: true,
   clientContext: "d45324c1-fcb5-430a-902c-f20af696537c",
   prompts: [
@@ -30,6 +30,6 @@ const recordResponse = {
 };
 
 let res = await client.api('/communications/calls/{id}/recordResponse')
-	.post(recordResponse);
+	.post(recordOperation);
 
 ```

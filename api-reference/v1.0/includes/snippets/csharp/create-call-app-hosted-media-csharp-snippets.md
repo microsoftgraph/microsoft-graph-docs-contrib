@@ -22,7 +22,7 @@ var call = new Call
 		Region = null,
 		LanguageId = null
 	},
-	Targets = new List<ParticipantInfo>()
+	Targets = new List<InvitationParticipantInfo>()
 	{
 		new InvitationParticipantInfo
 		{
