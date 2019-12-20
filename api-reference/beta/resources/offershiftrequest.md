@@ -17,11 +17,9 @@ Represents type of shift request to offer a shift to another user in the team.
 
 | Method       | Return Type | Description |
 |:-------------|:------------|:------------|
-| [Create](../api/offershiftrequest-post.md) | [offerShiftRequest](offershiftrequest.md) | Create an instance of an offerShiftRequest object. |
+| [Create](../api/offershiftrequest-create.md) | [offerShiftRequest](offershiftrequest.md) | Create an instance of an offerShiftRequest object. |
 | [Get](../api/offershiftrequest-get.md) | [offerShiftRequest](offershiftrequest.md) | Read properties and relationships of offerShiftRequest object. |
 | [List](../api/offershiftrequest-list.md) | Collection of [offerShiftRequest](offershiftrequest.md) | Read properties and relationships of all offerShiftRequest objects in a team. |
-| [Update](../api/offershiftrequest-update.md) | [offerShiftRequest](offershiftrequest.md) | Update offerShiftRequest object. |
-| [Delete](../api/offershiftrequest-delete.md) | None | Delete offerShiftRequest object. |
 |[Approve](../api/offershiftrequest-approve.md)|None|Approve an offerShiftRequest. |
 |[Decline](../api/offershiftrequest-decline.md)|None|Decline an offerShiftRequest. |
 

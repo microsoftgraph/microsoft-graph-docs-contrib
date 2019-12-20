@@ -17,6 +17,8 @@ Represents an unassigned, open shift in a [schedule](../resources/schedule.md).
 
 | Method       | Return Type | Description |
 |:-------------|:------------|:------------|
+| [Create](../api/openshift-create.md) | [openShift](openshift.md) | Create an instance of an **openShift** object. |
+| [List](../api/openshift-list.md) | Collection of [openShift](openshift.md) | List the properties and relationships of **openShift** objects in a team.|
 | [Get](../api/openshift-get.md) | [openShift](openshift.md) | Read the properties and relationships of an **openShift** object. |
 | [Update](../api/openshift-update.md) | [openShift](openshift.md) | Update an **openShift** object. |
 | [Delete](../api/openshift-delete.md) | None | Delete an **openShift** object. |

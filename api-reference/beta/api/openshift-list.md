@@ -1,17 +1,17 @@
 ---
-title: "Get openShiftChangeRequest"
-description: "Retrieve the properties and relationships of an openShiftChangeRequest object."
+title: "List openShifts"
+description: "List openshift objects in a team."
 localization_priority: Normal
 author: "akumar39"
 ms.prod: "microsoft-teams"
 doc_type: "apiPageType"
 ---
 
-# Get openShiftChangeRequest
+# List openShift
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Retrieve the properties and relationships of an [openShiftChangeRequest](../resources/openshiftchangerequest.md) object.
+List [openshift](../resources/openshift.md) objects in a team.
 
 ## Permissions
 
@@ -19,7 +19,7 @@ One of the following permissions is required to call this API. To learn more, in
 
 | Permission type                        | Permissions (from least to most privileged) |
 |:---------------------------------------|:--------------------------------------------|
-| Delegated (work or school account)     | Group.ReadWrite.All, Group.Read.All |
+| Delegated (work or school account)     | Group.Read.All, Group.ReadWrite.All |
 | Delegated (personal Microsoft account) | Not supported. |
 | Application                            | Not supported. |
 
@@ -28,13 +28,13 @@ One of the following permissions is required to call this API. To learn more, in
 <!-- { "blockType": "ignored" } -->
 
 ```http
-GET /teams/{id}/schedule/openShiftsChangeRequests/{openShiftsChangeRequestId}
+GET /teams/{id}/schedule/openShifts
 ```
 
 ## Optional query parameters
 
 This method supports some of the OData query parameters to help customize the response. For general information, see [OData query parameters](/graph/query-parameters).
-
+  
 ## Request headers
 
 | Name      |Description|
@@ -47,7 +47,7 @@ Do not supply a request body for this method.
 
 ## Response
 
-If successful, this method returns a `200 OK` response code and the requested [openShiftChangeRequest](../resources/openshiftchangerequest.md) object in the response body.
+If successful, this method returns a `200 OK` response code and all [openShift](../resources/openshift.md) objects in the team in the response body.
 
 ## Examples
 
@@ -56,11 +56,11 @@ If successful, this method returns a `200 OK` response code and the requested [o
 The following is an example of the request.
 <!-- {
   "blockType": "request",
-  "name": "get_openshiftchangerequest"
+  "name": "get_openshift"
 }-->
 
 ```http
-GET https://graph.microsoft.com/beta/teams/{id}/schedule/openShiftsChangeRequests/SREQ_0b87dd20-d5ed-4764-9c3e-cfc8516def09
+GET https://graph.microsoft.com/beta/teams/{id}/schedule/openShifts
 ```
 
 ### Response
@@ -72,35 +72,64 @@ The following is an example of the response.
 <!-- {
   "blockType": "response",
   "truncated": true,
-  "@odata.type": "microsoft.graph.openShiftChangeRequest"
+  "@odata.type": "microsoft.graph.openShift"
 } -->
 
 ```http
 HTTP/1.1 200 OK
 Content-type: application/json
-
 {
-  "id": "SREQ_0b87dd20-d5ed-4764-9c3e-cfc8516def09",
-  "openShiftId": "577b75d2-a927-48c0-a5d1-dc984894e7b8",
-  "assignedTo": "manager",
-  "state": "pending",
-  "senderUserId": "3fe0bc21-1398-4fd9-9713-52511b434c1e",
-  "senderDateTime": "2019-05-01T10:00:00Z",
-  "senderMessage": "Can I take this shift?",
-  "managerUserId": null,
-  "managerActionDateTime": null,
-  "managerActionMessage": null,
+  "value": [
+  {
+  id": "OPNSHFT_577b75d2-a927-48c0-a5d1-dc984894e7b8",
+  "schedulingGroupId": "TAG_228940ed-ff84-4e25-b129-1b395cf78be0",
+  "sharedOpenShift": {
+  "notes": "Inventory Management",
+  "openSlotCount":2,
+  "displayName": "Day shift",
+  "startDateTime": "2018-10-04T00:58:45.340Z",
+  "endDateTime": "2018-10-04T09:50:45.332Z",
+  "theme": "white",
+  "activities": [
+  {
+  "isPaid": true,
+  "startDateTime": "2018-10-04T00:58:45.340Z",
+  "endDateTime": "2018-10-04T01:58:45.340Z",
+  "code": "",
+  "displayName": "Lunch"
+  }
+  ]
+  },
+  "draftOpenShift": {
+  "notes": "Inventory Management",
+  "openSlotCount":3,
+  "displayName": "Day shift",
+  "startDateTime": "2018-10-04T00:58:45.332Z",
+  "endDateTime": "2018-10-04T08:58:45.340Z",
+  "theme": "white",
+  "activities": [
+  {
+  "isPaid": true,
+  "startDateTime": "2018-10-04T00:58:45.340Z",
+  "endDateTime": "2018-10-04T07:58:45.332Z",
+  "code": "Break",
+  "displayName": "Lunch"
+  }
+  ]
+  },
   "createdDateTime": "2019-03-14T04:32:51.451Z",
   "lastModifiedDateTime": "2019-03-14T05:32:51.451Z",
   "lastModifiedBy": {
-    "application": null,
-    "device": null,
-    "conversation": null,
-    "user": {
-      "id": "366c0b19-49b1-41b5-a03f-9f3887bd0ed8",
-      "displayName": "John Doe"
-    }
+  "application": null,
+  "device": null,
+  "conversation": null,
+  "user": {
+  "id": "366c0b19-49b1-41b5-a03f-9f3887bd0ed8",
+  "displayName": "John Doe"
   }
+  }
+  }
+  ]
 }
 ```
 
@@ -108,7 +137,7 @@ Content-type: application/json
 2019-02-04 14:57:30 UTC -->
 <!-- {
   "type": "#page.annotation",
-  "description": "Get openShiftChangeRequest",
+  "description": "List openShift",
   "keywords": "",
   "section": "documentation",
   "tocPath": ""

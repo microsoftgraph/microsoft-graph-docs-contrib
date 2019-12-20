@@ -1,17 +1,17 @@
 ---
-title: "Get openShiftChangeRequest"
-description: "Retrieve the properties and relationships of an openShiftChangeRequest object."
+title: "Create offerShiftRequest"
+description: "Create an instance of an offerShiftRequest."
 localization_priority: Normal
 author: "akumar39"
 ms.prod: "microsoft-teams"
 doc_type: "apiPageType"
 ---
 
-# Get openShiftChangeRequest
+# Create offerShiftRequest
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Retrieve the properties and relationships of an [openShiftChangeRequest](../resources/openshiftchangerequest.md) object.
+Create an instance of an [offerShiftRequest](../resources/offershiftrequest.md).
 
 ## Permissions
 
@@ -19,16 +19,16 @@ One of the following permissions is required to call this API. To learn more, in
 
 | Permission type                        | Permissions (from least to most privileged) |
 |:---------------------------------------|:--------------------------------------------|
-| Delegated (work or school account)     | Group.ReadWrite.All, Group.Read.All |
+| Delegated (work or school account)     | Group.ReadWrite.All |
 | Delegated (personal Microsoft account) | Not supported. |
-| Application                            | Not supported. |
+| Application                            | Schedule.ReadWrite.All (currently in Private Preview) |
 
 ## HTTP request
 
 <!-- { "blockType": "ignored" } -->
 
 ```http
-GET /teams/{id}/schedule/openShiftsChangeRequests/{openShiftsChangeRequestId}
+POST /teams/{teamId}/offerShiftRequests
 ```
 
 ## Optional query parameters
@@ -42,12 +42,11 @@ This method supports some of the OData query parameters to help customize the re
 | Authorization | Bearer {token}. Required. |
 
 ## Request body
-
-Do not supply a request body for this method.
+Provide the new [offershiftrequest](../resources/offershiftrequest.md) object in the request body for this method.
 
 ## Response
 
-If successful, this method returns a `200 OK` response code and the requested [openShiftChangeRequest](../resources/openshiftchangerequest.md) object in the response body.
+If successful, this method returns a `200 OK` response code and an [offerShiftRequest](../resources/offershiftrequest.md) object in the response body.
 
 ## Examples
 
@@ -56,11 +55,19 @@ If successful, this method returns a `200 OK` response code and the requested [o
 The following is an example of the request.
 <!-- {
   "blockType": "request",
-  "name": "get_openshiftchangerequest"
+  "name": "get_offershiftrequest"
 }-->
 
 ```http
-GET https://graph.microsoft.com/beta/teams/{id}/schedule/openShiftsChangeRequests/SREQ_0b87dd20-d5ed-4764-9c3e-cfc8516def09
+POST https://graph.microsoft.com/beta/teams/788b75d2-a911-48c0-a5e2-dc98480457e3/schedule/offershiftrequests
+Authorization: Bearer {token}
+Content-type: application/json
+
+{
+  "senderShiftId": "SHFT_f7e484ed-fdd6-421c-92d9-0bc9e62e2c29",
+  "senderMessage": "Having a family emergency, could you take this shift for me?",
+  "recipientUserId": "fe278b61-21ac-4872-8b41-1962bbb98e3c"
+}
 ```
 
 ### Response
@@ -72,7 +79,7 @@ The following is an example of the response.
 <!-- {
   "blockType": "response",
   "truncated": true,
-  "@odata.type": "microsoft.graph.openShiftChangeRequest"
+  "@odata.type": "microsoft.graph.offerShiftRequest"
 } -->
 
 ```http
@@ -80,25 +87,29 @@ HTTP/1.1 200 OK
 Content-type: application/json
 
 {
+  "@odata.etag": "\"4000ee23-0000-0700-0000-5d1415f60000\"",
   "id": "SREQ_0b87dd20-d5ed-4764-9c3e-cfc8516def09",
-  "openShiftId": "577b75d2-a927-48c0-a5d1-dc984894e7b8",
-  "assignedTo": "manager",
+  "createdDateTime": "2019-09-27T01:01:04.566Z",
+  "lastModifiedDateTime": "2019-09-28T01:03:48.874Z",
+  "assignedTo": "recipient",
   "state": "pending",
-  "senderUserId": "3fe0bc21-1398-4fd9-9713-52511b434c1e",
-  "senderDateTime": "2019-05-01T10:00:00Z",
-  "senderMessage": "Can I take this shift?",
-  "managerUserId": null,
+  "senderDateTime": "2019-09-27T01:01:04.566",
+  "senderMessage": "Having a family emergency, could you take this shift for me?",
+  "senderUserId": "a4704dd0-3f4c-4f2c-9bb5-8cc575703f30",
   "managerActionDateTime": null,
   "managerActionMessage": null,
-  "createdDateTime": "2019-03-14T04:32:51.451Z",
-  "lastModifiedDateTime": "2019-03-14T05:32:51.451Z",
+  "managerUserId": null,
+  "recipientActionDateTime": null,
+  "recipientActionMessage": null,
+  "senderShiftId": "SHFT_f7e484ed-fdd6-421c-92d9-0bc9e62e2c29",
+  "recipientUserId": "fe278b61-21ac-4872-8b41-1962bbb98e3c",
   "lastModifiedBy": {
     "application": null,
     "device": null,
     "conversation": null,
     "user": {
-      "id": "366c0b19-49b1-41b5-a03f-9f3887bd0ed8",
-      "displayName": "John Doe"
+      "id": "fe278b61-21ac-4872-8b41-1962bbb98e3c",
+      "displayName": "Employee 1"
     }
   }
 }
@@ -108,7 +119,7 @@ Content-type: application/json
 2019-02-04 14:57:30 UTC -->
 <!-- {
   "type": "#page.annotation",
-  "description": "Get openShiftChangeRequest",
+  "description": "Get offerShiftRequest",
   "keywords": "",
   "section": "documentation",
   "tocPath": ""

@@ -15,12 +15,15 @@ Represents an entity to track changes made to any supported [schedule](schedule.
 
 ## Methods
 
+<<<<<<< Updated upstream
 | Method       | Return Type | Description |
 |:-------------|:------------|:------------|
 | [Get](../api/changetrackedentity-get.md) | [changeTrackedEntity](changetrackedentity.md) | Read the properties and relationships of a **changeTrackedEntity** object. |
 | [Update](../api/changetrackedentity-update.md) | [changeTrackedEntity](changetrackedentity.md) | Update a **changeTrackedEntity** object. |
 | [Delete](../api/changetrackedentity-delete.md) | None | Delete a **changeTrackedEntity** object. |
 
+=======
+>>>>>>> Stashed changes
 ## Properties
 
 | Property     | Type        | Description |

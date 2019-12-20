@@ -1,34 +1,33 @@
 ---
-title: "Get openShiftChangeRequest"
-description: "Retrieve the properties and relationships of an openShiftChangeRequest object."
+title: "Create openshiftchangerequest"
+description: "Create an instance of openshiftchangerequest."
 localization_priority: Normal
 author: "akumar39"
 ms.prod: "microsoft-teams"
 doc_type: "apiPageType"
 ---
 
-# Get openShiftChangeRequest
+# Create openshiftchangerequest
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Retrieve the properties and relationships of an [openShiftChangeRequest](../resources/openshiftchangerequest.md) object.
-
+Create instance of a [openshiftchangerequest](../resources/openshiftchangerequest.md) object.
 ## Permissions
 
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
 
 | Permission type                        | Permissions (from least to most privileged) |
 |:---------------------------------------|:--------------------------------------------|
-| Delegated (work or school account)     | Group.ReadWrite.All, Group.Read.All |
+| Delegated (work or school account)     | Group.ReadWrite.All |
 | Delegated (personal Microsoft account) | Not supported. |
-| Application                            | Not supported. |
+| Application                            | Schedule.ReadWrite.All (currently in Private Preview) |
 
 ## HTTP request
 
 <!-- { "blockType": "ignored" } -->
 
 ```http
-GET /teams/{id}/schedule/openShiftsChangeRequests/{openShiftsChangeRequestId}
+POST /teams/{id}/schedule/openShiftsChangeRequests
 ```
 
 ## Optional query parameters
@@ -39,15 +38,14 @@ This method supports some of the OData query parameters to help customize the re
 
 | Name      |Description|
 |:----------|:----------|
-| Authorization | Bearer {token}. Required. |
+| Authorization | Bearer {token} |
 
 ## Request body
-
-Do not supply a request body for this method.
+Provide the new [openshiftchangerequest](../resources/openshiftchangerequest.md) object in the request body for this method.
 
 ## Response
 
-If successful, this method returns a `200 OK` response code and the requested [openShiftChangeRequest](../resources/openshiftchangerequest.md) object in the response body.
+If successful, this method returns a `200 OK` response code and the requested [openshiftchangerequest](../resources/openshiftchangerequest.md) object in the response body.
 
 ## Examples
 
@@ -55,12 +53,18 @@ If successful, this method returns a `200 OK` response code and the requested [o
 
 The following is an example of the request.
 <!-- {
-  "blockType": "request",
-  "name": "get_openshiftchangerequest"
+  "blockType": "request"
 }-->
 
 ```http
-GET https://graph.microsoft.com/beta/teams/{id}/schedule/openShiftsChangeRequests/SREQ_0b87dd20-d5ed-4764-9c3e-cfc8516def09
+POST https://graph.microsoft.com/beta/teams/788b75d2-a911-48c0-a5e2-dc98480457e3/schedule/openShiftsChangeRequests
+Authorization: Bearer {token}
+Content-type: application/json
+Content-length: 244
+{
+  "senderMessage": "Can I take this shift?",
+  "openShiftId": "577b75d2-a927-48c0-a5d1-dc984894e7b8"
+}
 ```
 
 ### Response
@@ -72,13 +76,12 @@ The following is an example of the response.
 <!-- {
   "blockType": "response",
   "truncated": true,
-  "@odata.type": "microsoft.graph.openShiftChangeRequest"
+  "@odata.type": "microsoft.graph.swapShiftsChangeRequest"
 } -->
 
 ```http
 HTTP/1.1 200 OK
 Content-type: application/json
-
 {
   "id": "SREQ_0b87dd20-d5ed-4764-9c3e-cfc8516def09",
   "openShiftId": "577b75d2-a927-48c0-a5d1-dc984894e7b8",
@@ -102,13 +105,14 @@ Content-type: application/json
     }
   }
 }
+
 ```
 
 <!-- uuid: 16cd6b66-4b1a-43a1-adaf-3a886856ed98
 2019-02-04 14:57:30 UTC -->
 <!-- {
   "type": "#page.annotation",
-  "description": "Get openShiftChangeRequest",
+  "description": "Create openShiftRequest",
   "keywords": "",
   "section": "documentation",
   "tocPath": ""

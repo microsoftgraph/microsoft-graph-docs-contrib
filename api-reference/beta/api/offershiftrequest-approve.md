@@ -1,6 +1,6 @@
 ---
 title: "offerShiftRequest: approve"
-description: "PROVIDE DESCRIPTION HERE"
+description: "Approve an offershiftrequest object."
 localization_priority: Normal
 author: "akumar39"
 ms.prod: "microsoft-teams"
@@ -11,7 +11,7 @@ doc_type: "apiPageType"
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-PROVIDE DESCRIPTION HERE
+Approve an [offershiftrequest](../resources/offershiftrequest.md) object.
 
 ## Permissions
 
