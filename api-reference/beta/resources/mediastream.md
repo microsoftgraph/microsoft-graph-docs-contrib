@@ -1,6 +1,6 @@
 ---
 title: "mediaStream resource type"
-description: "The mediaStream type."
+description: "This contains information about the media channel."
 author: "VinodRavichandran"
 localization_priority: Normal
 ms.prod: "cloud-communications"
@@ -11,7 +11,7 @@ doc_type: resourcePageType
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-The mediaStream type.
+This contains information about the media channel.
 
 ## Properties
 

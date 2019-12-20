@@ -1,6 +1,6 @@
 ---
 title: "mediaPrompt resource type"
-description: "The mediaPrompt type."
+description: "This resource type contains information about the audio file to be played and other additional settings."
 author: "VinodRavichandran"
 localization_priority: Normal
 ms.prod: "cloud-communications"
@@ -11,7 +11,7 @@ doc_type: resourcePageType
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-The mediaPrompt type.
+This resource type contains information about the audio file to be played and other additional settings.
 
 ## Properties
 
