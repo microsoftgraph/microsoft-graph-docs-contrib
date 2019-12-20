@@ -19,7 +19,7 @@ Delete an online meeting.
 | :-------------- | :----------------------------------------------------------- |
 | Delegated (work or school account)     | OnlineMeetings.ReadWrite              |
 | Delegated (personal Microsoft account) | Not Supported.                         |
-| Application                            | None.                                  |
+| Application                            | Not Supported.                                  |
 
 ## HTTP request
 <!-- { "blockType": "ignored" } -->
