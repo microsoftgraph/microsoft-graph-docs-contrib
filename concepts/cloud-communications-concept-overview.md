@@ -92,10 +92,10 @@ Looking for the API reference for this service?
 
 ## Next steps
 
-- Use bots to [get started](cloud-communications-get-started).
-- Learn more about [calls](cloud-communications-calls), [media](cloud-communications-media), and [online meetings](cloud-communications-online-meetings).
-- View the API usage [limits](cloud-communications-limits).
-- Learn how to [manage phone numbers](cloud-communications-phone-number) for your bots.
+- Use bots to [get started](cloud-communications-get-started.md).
+- Learn more about [calls](cloud-communications-calls.md), [media](cloud-communications-media.md), and [online meetings](cloud-communications-online-meetings.md).
+- View the API usage [limits](cloud-communications-limits.md).
+- Learn how to [manage phone numbers](cloud-communications-phone-number.md) for your bots.
 
 ## See also
 
