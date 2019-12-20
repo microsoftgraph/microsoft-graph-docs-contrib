@@ -7,7 +7,7 @@ ms.prod: "microsoft-teams"
 doc_type: "apiPageType"
 ---
 
-# Get swapShiftsChangeRequest
+# List swapShiftsChangeRequest
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
