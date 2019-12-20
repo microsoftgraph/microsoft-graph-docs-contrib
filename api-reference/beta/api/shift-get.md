@@ -112,8 +112,8 @@ Content-length: 401
 	"sharedShift": {
 		"displayName": "sample display name again",
 		"notes": null,
-		"startDateTime": "2019-06-03T15:00:00Z",
-		"endDateTime": "2019-06-04T00:00:00Z",
+		"startDateTime": "2018-10-04T00:58:45.332Z",
+  		"endDateTime": "2018-10-04T08:58:45.340Z",
 		"theme": "green",
 		"activities": []
 	}
