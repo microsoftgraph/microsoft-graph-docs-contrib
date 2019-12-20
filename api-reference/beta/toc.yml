@@ -10562,10 +10562,6 @@
           items:
             - name: Get
               href: api/openshiftchangerequest-get.md
-            - name: Update
-              href: api/openshiftchangerequest-update.md
-            - name: Delete
-              href: api/openshiftchangerequest-delete.md
             - name: Approve
               href: api/openshiftchangerequest-approve.md
             - name: Decline
@@ -10575,10 +10571,6 @@
           items:
           - name: Get
             href: api/swapshiftschangerequest-get.md
-          - name: Update
-            href: api/swapshiftschangerequest-update.md
-          - name: Delete
-            href: api/swapshiftschangerequest-delete.md
         - name: Time off
           href: resources/timeoff.md
           items:
