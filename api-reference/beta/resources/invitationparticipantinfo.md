@@ -1,6 +1,6 @@
 ---
 title: "invitationParticipantInfo resource type"
-description: "This resource is used to represent the entity that is being invited to a group call."
+description: "Represents an entity that is being invited to a group call."
 author: "VinodRavichandran"
 localization_priority: Normal
 ms.prod: "cloud-communications"
@@ -11,7 +11,7 @@ doc_type: resourcePageType
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-This resource is used to represent the entity that is being invited to a group call. 
+Represents an entity that is being invited to a group call. 
 
 ## Properties
 
