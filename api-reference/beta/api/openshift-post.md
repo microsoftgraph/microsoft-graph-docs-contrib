@@ -40,6 +40,7 @@ This method supports some of the OData query parameters to help customize the re
 | Name      |Description|
 |:----------|:----------|
 | Authorization | Bearer {token}. Required. |
+| Content-type | application/json. Required.|
 
 ## Request body
 
@@ -63,6 +64,7 @@ POST https://graph.microsoft.com/beta/teams/788b75d2-a911-48c0-a5e2-dc98480457e3
 Authorization: Bearer {token}
 Content-type: application/json
 Content-length: 244
+
 {
     "schedulingGroupId": "TAG_228940ed-ff84-4e25-b129-1b395cf78be0",
     "sharedOpenShift": {
@@ -117,6 +119,7 @@ The following is an example of the response.
 ```http
 HTTP/1.1 200 OK
 Content-type: application/json
+
 {
     id": "OPNSHFT_577b75d2-a927-48c0-a5d1-dc984894e7b8",
     "schedulingGroupId": "TAG_228940ed-ff84-4e25-b129-1b395cf78be0",
