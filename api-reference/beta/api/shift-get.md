@@ -94,33 +94,30 @@ Content-type: application/json
 Content-length: 401
 
 {
-   "id":"SHFT_ca485cdd-a42c-4b93-9e6a-6fa54fd45fe1",
-   "createdDateTime":"2019-06-06T20:15:38.9Z",
-   "lastModifiedDateTime":"2019-11-18T01:12:08.318Z",
-   "schedulingGroupId":"TAG_d18fd675-3ac8-41b2-8038-d17fdac8b0d3",
-   "userId":"a7b0c8c4-3f5c-492f-ab13-40f0e0f0ffa8",
-   "draftShift":null,
-   "lastModifiedBy":{
-      "application":null,
-      "device":null,
-      "conversation":null,
-      "user":{
-         "id":"1c717a55-febd-4850-b5f6-101f3a29972c",
-         "displayName":"Sumanth Lingom"
-      }
-   },
-   "sharedShift":{
-      "displayName":"sample display name again",
-      "notes":null,
-      "startDateTime":"2019-06-03T15:00:00Z",
-      "endDateTime":"2019-06-04T00:00:00Z",
-      "theme":"green",
-      "activities":[
-
- 
-
-      ]
-   }
+	"id": "SHFT_ca485cdd-a42c-4b93-9e6a-6fa54fd45fe1",
+	"createdDateTime": "2019-06-06T20:15:38.9Z",
+	"lastModifiedDateTime": "2019-11-18T01:12:08.318Z",
+	"schedulingGroupId": "TAG_d18fd675-3ac8-41b2-8038-d17fdac8b0d3",
+	"userId": "a7b0c8c4-3f5c-492f-ab13-40f0e0f0ffa8",
+	"draftShift": null,
+	"lastModifiedBy": {
+		"application": null,
+		"device": null,
+		"conversation": null,
+		"user": {
+			"id": "1c717a55-febd-4850-b5f6-101f3a29972c",
+			"displayName": "Sumanth Lingom"
+		}
+	},
+	"sharedShift": {
+		"displayName": "sample display name again",
+		"notes": null,
+		"startDateTime": "2019-06-03T15:00:00Z",
+		"endDateTime": "2019-06-04T00:00:00Z",
+		"theme": "green",
+		"activities": []
+	}
+}
 ```
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
