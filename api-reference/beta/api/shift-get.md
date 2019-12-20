@@ -94,21 +94,33 @@ Content-type: application/json
 Content-length: 401
 
 {
-	"id": "SHFT_577b75d2-a927-48c0-a5d1-dc984894e7b8",
-	"createdDateTime": "2019-03-14T04:32:51.451Z",
-	"lastModifiedDateTime": "2019-03-14T05:32:51.451Z",
-	"userId": "c5d0c76b-80c4-481c-be50-923cd8d680a1",
-	"schedulingGroupId": "TAG_228940ed-ff84-4e25-b129-1b395cf78be0",
-	"lastModifiedBy": {
-		"application": null,
-		"device": null,
-		"conversation": null,
-		"user": {
-			"id": "366c0b19-49b1-41b5-a03f-9f3887bd0ed8",
-			"displayName": "John Doe"
-		}
-	}
-}
+   "id":"SHFT_ca485cdd-a42c-4b93-9e6a-6fa54fd45fe1",
+   "createdDateTime":"2019-06-06T20:15:38.9Z",
+   "lastModifiedDateTime":"2019-11-18T01:12:08.318Z",
+   "schedulingGroupId":"TAG_d18fd675-3ac8-41b2-8038-d17fdac8b0d3",
+   "userId":"a7b0c8c4-3f5c-492f-ab13-40f0e0f0ffa8",
+   "draftShift":null,
+   "lastModifiedBy":{
+      "application":null,
+      "device":null,
+      "conversation":null,
+      "user":{
+         "id":"1c717a55-febd-4850-b5f6-101f3a29972c",
+         "displayName":"Sumanth Lingom"
+      }
+   },
+   "sharedShift":{
+      "displayName":"sample display name again",
+      "notes":null,
+      "startDateTime":"2019-06-03T15:00:00Z",
+      "endDateTime":"2019-06-04T00:00:00Z",
+      "theme":"green",
+      "activities":[
+
+ 
+
+      ]
+   }
 ```
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
