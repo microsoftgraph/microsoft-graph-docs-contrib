@@ -11,7 +11,7 @@ doc_type: apiPageType
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Delete an [onlineMeeting](../resources/onlinemeeting.md) object.
+Delete an **onlineMeeting** object.
 
 ## Permissions
 
