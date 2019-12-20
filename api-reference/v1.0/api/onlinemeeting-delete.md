@@ -9,7 +9,7 @@ doc_type: apiPageType
 
 # Delete onlineMeeting
 
-Delete an **onlineMeeting** object.
+Delete an [onlineMeeting](../resources/onlinemeeting.md) object.
 
 ## Permissions
 
