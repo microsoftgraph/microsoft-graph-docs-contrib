@@ -40,6 +40,8 @@ GET /teams/{id}/channels/{id}/messages
 You can use the [$top](/graph/query-parameters#top-parameter) query parameter to control the number of items per response. 
 The other [OData query parameters](/graph/query-parameters) are not currently supported.
 
+> **Note:** [GET /teams/{id}/channels/{id}/messages/delta](chatmessage-delta.md) supports filtering by date, which provides similar data to GET /teams/{id}/channels/{id}/messages.
+
 ## Request headers
 
 | Header       | Value |

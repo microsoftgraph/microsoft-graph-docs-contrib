@@ -1,6 +1,6 @@
 ---
 title: "List accessPackageAssignmentResourceRoles"
-description: "Retrieve a list of accessPackageAssignmentResourceRrole objects."
+description: "Retrieve a list of accessPackageAssignmentResourceRole objects."
 localization_priority: Normal
 author: "markwahl-msft"
 ms.prod: "microsoft-identity-platform"
