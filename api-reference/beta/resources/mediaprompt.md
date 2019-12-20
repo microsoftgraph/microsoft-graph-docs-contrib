@@ -1,6 +1,6 @@
 ---
 title: "mediaPrompt resource type"
-description: "This resource type contains information about the audio file to be played and other additional settings."
+description: "Contains information about the audio file to be played and other additional settings."
 author: "VinodRavichandran"
 localization_priority: Normal
 ms.prod: "cloud-communications"
@@ -11,13 +11,13 @@ doc_type: resourcePageType
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-This resource type contains information about the audio file to be played and other additional settings.
+Contains information about the audio file to be played and other additional settings.
 
 ## Properties
 
 | Property    | Type                      | Description                                                                     |
 | :---------- | :------------------------ | :------------------------------------------------------------------------------ |
-| mediaInfo   | [mediaInfo](mediainfo.md) | The media information                                                           |
+| mediaInfo   | [mediaInfo](mediainfo.md) | The media information.                                                          |
 
 ## JSON representation
 
