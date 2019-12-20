@@ -120,8 +120,6 @@ The following is an example of the response.
 ```http
 HTTP/1.1 200 OK
 Content-type: application/json
-HTTP/1.1 200 OK
-Content-type: application/json
 
 {
   id": "OPNSHFT_577b75d2-a927-48c0-a5d1-dc984894e7b8",
