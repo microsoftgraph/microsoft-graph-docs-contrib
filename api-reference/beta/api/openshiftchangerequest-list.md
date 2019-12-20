@@ -1,17 +1,17 @@
 ---
-title: "List openShiftChangeRequest"
-description: "Retrieve the properties and relationships of openShiftChangeRequest objects in a team."
+title: "List openShiftChangeRequests"
+description: "Retrieve a list of openShiftChangeRequest objects in a team."
 localization_priority: Normal
 author: "akumar39"
 ms.prod: "microsoft-teams"
 doc_type: "apiPageType"
 ---
 
-# List openShiftChangeRequest
+# List openShiftChangeRequests
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Retrieve the properties and relationships of [openShiftChangeRequest](../resources/openshiftchangerequest.md) objects in a team.
+Retrieve a list of [openShiftChangeRequest](../resources/openshiftchangerequest.md) objects in a team.
 
 ## Permissions
 
