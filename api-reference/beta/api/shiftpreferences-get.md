@@ -93,12 +93,12 @@ Content-length: 401
             "timeZone": "Pacific Standard Time",
             "timeSlots": [
                 {
-                    "startTime": "09:15:00.000",
-                    "endTime": "12:30:00.000"
+                    "startTime": "09:15:00.000000",
+                    "endTime": "12:30:00.000000"
                 },
                 {
-                    "startTime": "16:00:00.000",
-                    "endTime": "20:00:00.000"
+                    "startTime": "16:00:00.000000",
+                    "endTime": "20:00:00.000000"
                 }
             ]
         }
