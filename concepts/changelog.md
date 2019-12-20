@@ -12,11 +12,6 @@ This changelog covers what's changed in the Microsoft Graph API, including the v
 For details about known issues with Microsoft Graph APIs, see [Known issues](known-issues.md).
 
 ## December 2019
-### DELETE Online Meeting
-
-| **Change type** | **Version** | **Description**              |
-| :-------------- | :---------- | :--------------------------------------- |
-| Addition        | beta & v1.0       | Added [Delete Online Meeting](/graph/api/onlinemeeting-delete.md)|
 
 ### Change notifications (webhooks)
 
@@ -35,6 +30,8 @@ Introduced presence in beta and added cloud communications APIs to v1.0.
 |Addition|v1.0|Added the following resources: [call](/graph/api/resouces/call?view=graph-rest-1.0), [participant](/graph/api/resouces/participant?view=graph-rest-1.0), and [onlinemeetings](/graph/api/resouces/onlinemeetings?view=graph-rest-1.0).|
 | Change        | Beta        | Renamed IVR API Record to [recordResponse](/graph/api/call-record?view=graph-rest-beta). | 
 | Change        | Beta        | Removed [onlineMeeting](/graph/api/resources/onlinemeeting?view=graph-rest-beta) object properties **isCanceled**, **canceledDateTime**, and **entryExitAnnouncement**. Renamed property **joinUrl** to **joinWebUrl**. | 
+| Addition        | Beta & v1.0       | Added the [delete onlineMeeting](/graph/api/onlinemeeting-delete.md) operation.|
+
 
 ### Devices and apps (Microsoft Intune)
 
