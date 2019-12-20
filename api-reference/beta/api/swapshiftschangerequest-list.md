@@ -1,6 +1,6 @@
 ---
 title: "List swapShiftsChangeRequest"
-description: "Retrieve the properties and relationships of swapShiftsChangeRequest object in the team."
+description: "Retrieve a list of swapShiftsChangeRequest objects in the team."
 localization_priority: Normal
 author: "akumar39"
 ms.prod: "microsoft-teams"
@@ -11,7 +11,7 @@ doc_type: "apiPageType"
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Retrieve the properties and relationships of [swapShiftsChangeRequest](../resources/swapshiftschangerequest.md) objects in the team.
+Retrieve a list of [swapShiftsChangeRequest](../resources/swapshiftschangerequest.md) objects in the team.
 
 ## Permissions
 
