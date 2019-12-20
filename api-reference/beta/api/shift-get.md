@@ -108,14 +108,6 @@ Content-length: 401
 			"id": "1c717a55-febd-4850-b5f6-101f3a29972c",
 			"displayName": "Sumanth Lingom"
 		}
-	},
-	"sharedShift": {
-		"displayName": "sample display name again",
-		"notes": null,
-		"startDateTime": "2018-10-04T00:58:45.332Z",
-  		"endDateTime": "2018-10-04T08:58:45.340Z",
-		"theme": "green",
-		"activities": []
 	}
 }
 ```
