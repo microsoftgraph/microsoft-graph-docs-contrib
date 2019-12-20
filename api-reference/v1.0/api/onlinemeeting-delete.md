@@ -1,5 +1,5 @@
 ---
-title: "Delete online meeting"
+title: "Delete onlineMeeting"
 description: "Delete an online meeting."
 author: "ananmishr"
 localization_priority: Normal
@@ -7,9 +7,9 @@ ms.prod: "cloud-communications"
 doc_type: apiPageType
 ---
 
-# Delete online meeting
+# Delete onlineMeeting
 
-Delete an online meeting.
+Delete an [onlineMeeting](../resources/onlinemeeting.md) object.
 
 ## Permissions
 
@@ -34,11 +34,11 @@ DELETE https://graph.microsoft.com/v1.0/me/onlineMeetings/{id}
 Do not supply a request body for this method.
 
 ## Response
-If successful, this method returns `204 No Content` response code. It does not return anything in the response body.
+If successful, this method returns a `204 No Content` response code. It does not return anything in the response body.
 
-## Example
+## Examples
 
-##### Request
+### Request
 The following example shows the request.
 
 
@@ -65,7 +65,7 @@ DELETE https://graph.microsoft.com/v1.0/me/onlineMeetings/550fae72-d251-43ec-868
 ---
 
 
-##### Response
+### Response
 
 <!-- {
   "blockType": "response",
