@@ -1,6 +1,6 @@
 ---
 title: "Create swapshiftRequest"
-description: "Create an instance of swapShiftsChangeRequest."
+description: "Create an instance of a swapShiftsChangeRequest."
 localization_priority: Normal
 author: "akumar39"
 ms.prod: "microsoft-teams"
@@ -11,7 +11,7 @@ doc_type: "apiPageType"
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Create instance of a [swapShiftsChangeRequest](../resources/swapshiftschangerequest.md) object.
+Create an instance of a [swapShiftsChangeRequest](../resources/swapshiftschangerequest.md) object.
 
 ## Permissions
 
@@ -39,14 +39,14 @@ This method supports some of the OData query parameters to help customize the re
 
 | Name      |Description|
 |:----------|:----------|
-| Authorization | Bearer {token} |
+| Authorization | Bearer {token}. Required. |
 
 ## Request body
-Provide the new [swapShiftsChangeRequest](../resources/swapshiftschangerequest.md) object in the request body for this method.
+In the request body, provide a JSON representation of a new [swapShiftsChangeRequest](../resources/swapshiftschangerequest.md) object.
 
 ## Response
 
-If successful, this method returns a `200 OK` response code and the requested [swapShiftsChangeRequest](../resources/swapshiftschangerequest.md) object in the response body.
+If successful, this method returns a `200 OK` response code and the created [swapShiftsChangeRequest](../resources/swapshiftschangerequest.md) object in the response body.
 
 ## Examples
 
