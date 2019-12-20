@@ -31,7 +31,7 @@ Contains information about the meeting, including the URL used to join a meeting
 | startDateTime             | DateTime                                               | The meeting start time in UTC. |
 | endDateTime               | DateTime                                               | The meeting end time in UTC. |
 | id                        | String                                                 | The default ID associated with the online meeting. Read-only. |
-| joinUrl                   | String                                                 | The join URL of the online meeting. Read-only.|
+| joinWebUrl                   | String                                                 | The join URL of the online meeting. Read-only.|
 | participants              | [meetingParticipants](meetingparticipants.md)          | The participants associated with the online meeting.  This includes the organizer and the attendees. |
 | subject                   | String                                                 | The subject of the online meeting. |
 | capabilities              | String collection                                      | The list of meeting capabilities. Possible values are: `questionAndAnswer`. |
@@ -64,7 +64,7 @@ Contains information about the meeting, including the URL used to join a meeting
   "creationDateTime": "String (timestamp)",
   "endDateTime": "String (timestamp)",
   "id": "String (identifier)",
-  "joinUrl": "String",
+  "joinWebUrl": "String",
   "participants": {"@odata.type": "#microsoft.graph.meetingParticipants"},
   "startDateTime": "String (timestamp)",
   "subject": "String",
