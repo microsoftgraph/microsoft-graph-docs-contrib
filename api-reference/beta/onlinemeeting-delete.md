@@ -50,7 +50,7 @@ The following example shows the request.
   "name": "delete-call"
 }-->
 ```http
-DELETE https://graph.microsoft.com/beta/me/onlineMeetings/f4053f86-17cc-42e7-85f4-f0389ac980d6
+DELETE https://graph.microsoft.com/beta/me/onlineMeetings/550fae72-d251-43ec-868c-373732c2704f_19:meeting_M2IzYzczNTItYmY3OC00MDlmLWJjMzUtYmFiMjNlOTY4MGEz@thread.skype
 ```
 # [C#](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/delete-call-csharp-snippets.md)]
