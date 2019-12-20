@@ -845,7 +845,7 @@
         items:
         - name: Create
           href: api/application-post-calls.md
-        - name: Get call
+        - name: Get
           href: api/call-get.md
         - name: Delete/hang up
           href: api/call-delete.md
@@ -871,16 +871,16 @@
         - name: Participant
           href: resources/participant.md
           items:
-          - name: Get participant
+          - name: Get
             href: api/participant-get.md
+          - name: List
+            href: api/call-list-participants.md
           - name: Configure mixer
             href: api/participant-configuremixer.md
           - name: Mute participant
             href: api/participant-mute.md
           - name: Mute all participants
             href: api/participant-muteall.md
-          - name: List participants
-            href: api/call-list-participants.md
           - name: Invite participants
             href: api/participant-invite.md
         - name: Change screen sharing role
@@ -896,22 +896,22 @@
         - name: Audio routing group
           href: resources/audioroutinggroup.md
           items:
-          - name: Create audio routing group
+          - name: Create
             href: api/call-post-audioroutinggroups.md
-          - name: Get audio routing group
+          - name: Get
             href: api/audioroutinggroup-get.md
-          - name: Update audio routing group
+          - name: Update
             href: api/audioroutinggroup-update.md
-          - name: Delete audio routing group
+          - name: Delete
             href: api/audioroutinggroup-delete.md
       - name: Online meeting
         href: resources/onlinemeeting.md
         items:
-        - name: Create online meeting
+        - name: Create
           href: api/application-post-onlinemeetings.md
-        - name: Get online meeting
+        - name: Get
           href: api/onlinemeeting-get.md
-        - name: Delete online meeting
+        - name: Delete
           href: api/onlinemeeting-delete.md          
       - name: Presence
         href: resources/presence.md
