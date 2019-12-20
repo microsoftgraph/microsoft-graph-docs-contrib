@@ -1,5 +1,5 @@
 ---
-title: "Delete online meeting"
+title: "Delete onlineMeeting"
 description: "Delete an online meeting."
 author: "ananmishr"
 localization_priority: Normal
@@ -7,7 +7,7 @@ ms.prod: "cloud-communications"
 doc_type: apiPageType
 ---
 
-# Delete online meeting
+# Delete onlineMeeting
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
@@ -36,7 +36,7 @@ DELETE https://graph.microsoft.com/beta/me/onlineMeetings/{id}
 Do not supply a request body for this method.
 
 ## Response
-If successful, this method returns `204 No Content` response code. It does not return anything in the response body.
+If successful, this method returns a `204 No Content` response code. It does not return anything in the response body.
 
 ## Example
 
