@@ -38,9 +38,9 @@ Do not supply a request body for this method.
 ## Response
 If successful, this method returns a `204 No Content` response code. It does not return anything in the response body.
 
-## Example
+## Examples
 
-##### Request
+### Request
 The following example shows the request.
 
 
@@ -67,7 +67,7 @@ DELETE https://graph.microsoft.com/beta/me/onlineMeetings/550fae72-d251-43ec-868
 ---
 
 
-##### Response
+### Response
 
 <!-- {
   "blockType": "response",
