@@ -19,20 +19,20 @@ If you want your bot to play a custom prompt when a customer dials your business
 
 For an example that shows you how to create a bot that uses service-hosted media, see the [Remote media calling bot samples](https://github.com/microsoftgraph/microsoft-graph-comms-samples/tree/master/Samples/BetaSamples/RemoteMediaSamples).
 
-![Remote Hosting Diagram](images/communications-remote-media.PNG)
+![Remote hosting diagram](images/communications-remote-media.PNG)
 
 ## Application-hosted media (local hosting)
 If you want your bot to access a live stream of your customers' audio and video to use for recording, transcribing, translating, or sentiment analysis through a natural language processing service, consider hosting your media locally.
 
->**Note:** You may not record or otherwise persist media content from calls or meetings that your application accesses, or data derived from that media content. Make sure you are compliant with the laws and regulations of your area regarding data protection and confidentiality of communications. Please see the [Terms of Use](https://docs.microsoft.com/en-us/legal/microsoft-apis/terms-of-use) and consult with your legal counsel for more information.
+>**Note:** You may not record or otherwise persist media content from calls or meetings that your application accesses, or data derived from that media content. Make sure you are compliant with the laws and regulations of your area regarding data protection and confidentiality of communications. Please see the [Terms of Use](https://docs.microsoft.com/legal/microsoft-apis/terms-of-use) and consult with your legal counsel for more information.
 
 **If you'd like more control over your media, choose this option**. You'll have direct access to media streams and will be able to make use of video-based screen sharing. You'll be able to build more sophisticated IVR scenarios that are speech enabled. This is a heavier weight solution that gives you the most flexibility in how you want to program your media.
 
-See also the [requirements and considerations](https://docs.microsoft.com/en-us/microsoftteams/platform/concepts/calls-and-meetings/requirements-considerations-application-hosted-media-bots) for application-hosted media bots.
+See also the [requirements and considerations](https://docs.microsoft.com/microsoftteams/platform/concepts/calls-and-meetings/requirements-considerations-application-hosted-media-bots) for application-hosted media bots.
 
 For an example that shows you how to create a bot that uses application-hosted media, see the [local media samples](https://github.com/microsoftgraph/microsoft-graph-comms-samples/tree/master/Samples/V1.0Samples/LocalMediaSamples).
 
-![Local Hosting Diagram](images/communications-local-media.PNG)
+![Local hosting diagram](images/communications-local-media.PNG)
 
 ## See also
 
