@@ -802,7 +802,9 @@
         - name: Create online meeting
           href: api/application-post-onlinemeetings.md
         - name: Get online meeting
-          href: api/onlinemeeting-get.md          
+          href: api/onlinemeeting-get.md
+        - name: Delete online meeting
+          href: api/onlinemeeting-delete.md             
     - name: Cross-device experiences
       displayName: Project Rome
       items:
