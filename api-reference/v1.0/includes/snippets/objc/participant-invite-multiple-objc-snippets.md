@@ -19,7 +19,7 @@ MSGraphInvitationParticipantInfo *participants = [[MSGraphInvitationParticipantI
 MSGraphIdentitySet *identity = [[MSGraphIdentitySet alloc] init];
 MSGraphIdentity *user = [[MSGraphIdentity alloc] init];
 [user setId:@"7e1b4346-85a6-4bdd-abe3-d11c5d420efe"];
-[user setIdentityProvider:@"AAD"];
+[user setDisplayName:@"string"];
 [identity setUser:user];
 [participants setIdentity:identity];
 [participantsList addObject: participants];
@@ -28,7 +28,7 @@ MSGraphInvitationParticipantInfo *participants = [[MSGraphInvitationParticipantI
 MSGraphIdentitySet *identity = [[MSGraphIdentitySet alloc] init];
 MSGraphIdentity *user = [[MSGraphIdentity alloc] init];
 [user setId:@"1e126418-44a0-4a94-a6f8-0efe1ad71acb"];
-[user setIdentityProvider:@"AAD"];
+[user setDisplayName:@"string"];
 [identity setUser:user];
 [participants setIdentity:identity];
 [participantsList addObject: participants];

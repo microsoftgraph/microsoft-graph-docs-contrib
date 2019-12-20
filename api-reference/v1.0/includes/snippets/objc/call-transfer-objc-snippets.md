@@ -18,7 +18,6 @@ MSGraphInvitationParticipantInfo *transferTarget = [[MSGraphInvitationParticipan
 MSGraphIdentitySet *identity = [[MSGraphIdentitySet alloc] init];
 MSGraphIdentity *user = [[MSGraphIdentity alloc] init];
 [user setId:@"550fae72-d251-43ec-868c-373732c2704f"];
-[user setTenantId:@"72f988bf-86f1-41af-91ab-2d7cd011db47"];
 [user setDisplayName:@"Heidi Steen"];
 [identity setUser:user];
 [transferTarget setIdentity:identity];

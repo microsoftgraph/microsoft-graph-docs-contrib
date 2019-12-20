@@ -20,7 +20,7 @@ const inviteParticipantsOperation = {
         user: {
           @odata.type: "#microsoft.graph.identity",
           id: "278405a3-f568-4b3e-b684-009193463064",
-          identityProvider: "AAD"
+          displayName: "string"
         }
       }
     }
