@@ -1,6 +1,6 @@
 ---
 title: "mediaStream resource type"
-description: "This contains information about the media channel."
+description: "Contains information about the media channel."
 author: "VinodRavichandran"
 localization_priority: Normal
 ms.prod: "cloud-communications"
@@ -11,7 +11,7 @@ doc_type: resourcePageType
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-This contains information about the media channel.
+Contains information about the media channel.
 
 ## Properties
 
@@ -20,7 +20,7 @@ This contains information about the media channel.
 | direction   | String  | The direction. The possible values are `inactive`, `sendOnly`, `receiveOnly`, `sendReceive`.                  |
 | label       | String  | The media stream label.                                                                                       |
 | mediaType   | String  | The media type. The possible value are `unknown`, `audio`, `video`, `videoBasedScreenSharing`, `data`.        |
-| serverMuted | Boolean | If the media is muted by the server.                                                                          |
+| serverMuted | Boolean | Indicates whether the media is muted by the server.                                                                          |
 | sourceId    | String  | The source ID.                                                                                                |
 
 ## JSON representation
@@ -42,22 +42,6 @@ The following is a JSON representation of the resource.
   "mediaType": "unknown | audio | video | videoBasedScreenSharing | data",
   "serverMuted": true,
   "sourceId": "String"
-}
-```
-
-## Example
-
-<!-- {
-  "blockType": "example",
-  "@odata.type": "microsoft.graph.mediaStream"
-}-->
-```json
-{
-  "direction": "sendReceive",
-  "label": "main-audio",
-  "mediaType": "audio",
-  "serverMuted": false,
-  "sourceId": "1024"
 }
 ```
 
