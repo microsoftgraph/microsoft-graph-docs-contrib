@@ -1,6 +1,6 @@
 ---
 title: "chatInfo resource type"
-description: "This contains information associated with Microsoft Teams meetings."
+description: "Contains information associated with Microsoft Teams meetings."
 author: "VinodRavichandran"
 localization_priority: Normal
 ms.prod: "cloud-communications"
@@ -11,7 +11,7 @@ doc_type: resourcePageType
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-This contains information associated with Microsoft Teams meetings.
+Contains information associated with Microsoft Teams meetings.
 
 ## Properties
 
