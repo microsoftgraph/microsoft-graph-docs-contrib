@@ -67,6 +67,7 @@ The following is an example of the request.
 ```http
 PUT https://graph.microsoft.com/beta/teams/{id}/schedule/openShifts/{openShiftId}
 Content-type: application/json
+
 {
 "schedulingGroupId": "TAG_228940ed-ff84-4e25-b129-1b395cf78be0",
 "sharedOpenShift": {
@@ -121,6 +122,7 @@ HTTP/1.1 200 OK
 Content-type: application/json
 HTTP/1.1 200 OK
 Content-type: application/json
+
 {
   id": "OPNSHFT_577b75d2-a927-48c0-a5d1-dc984894e7b8",
   "schedulingGroupId": "TAG_228940ed-ff84-4e25-b129-1b395cf78be0",
