@@ -36,7 +36,6 @@ This resource supports:
 
 | Relationship | Type | Description |
 |:---------------|:--------|:----------|
-|channels|[channel](channel.md) collection|The collection of channels & messages associated with the team.|
 |shiftPreferences|[shiftPreferences](shiftpreferences.md)| The shift preferences for the user. |
 
 ## JSON representation
@@ -45,7 +44,8 @@ Here is a JSON representation of the resource.
 <!-- {
   "blockType": "resource",
   "keyProperty": "id",
-  "@odata.type": "microsoft.graph.userSettings"
+  "@odata.type": "microsoft.graph.userSettings",
+  "baseType": "microsoft.graph.entity"
 }-->
 ```json
 {
