@@ -9,11 +9,11 @@ doc_type: apiPageType
 
 # call: keepAlive
 
-A call that does not receive this request within 45 minutes will be considered inactive and subsequently ended. 
+Make a request to this API every 15 to 45 minutes to ensure that an ongoing call remains active. A call that does not receive this request within 45 minutes is considered inactive and will subsequently end.
 
-It's important to make sure that at least one successful request is made within 45 minutes of the previous request, or the start of the call.
+At least one successful request must be made within 45 minutes of the previous request, or the start of the call.
 
-We recommend that a request is sent in shorter time intervals (e.g. every 15 minutes). Please make sure that these requests are successful to prevent the call from timing out and ending.
+We recommend that you send a request in shorter time intervals (every 15 minutes). Make sure that these requests are successful to prevent the call from timing out and ending.
 
 Attempting to send a request to a call that has already ended will result in a `404 Not-Found` error. The resources related to the call should be cleaned up on the application side.
 
@@ -42,10 +42,12 @@ POST /communications/calls/{id}/keepAlive
 Do not supply a request body for this method.
 
 ## Response
-This method returns `200 OK` response code.
+This method returns a `200 OK` response code.
 
-###### Request
+## Examples
 
+### Request
+The following example shows a request.
 
 # [HTTP](#tab/http)
 <!-- {
@@ -74,8 +76,8 @@ POST https://graph.microsoft.com/v1.0/communications/calls/2e1a0b00-2db4-4022-95
 
 ---
 
-
-###### Response
+### Response
+The following example shows the response.
 
 <!-- {
   "blockType": "response",
