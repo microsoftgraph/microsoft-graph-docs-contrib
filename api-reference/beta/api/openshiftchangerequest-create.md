@@ -1,17 +1,17 @@
 ---
-title: "Create openshiftchangerequest"
-description: "Create an instance of openshiftchangerequest."
+title: "Create openShiftChangeRequest"
+description: "Create an instance of an openShiftChangeRequest object."
 localization_priority: Normal
 author: "akumar39"
 ms.prod: "microsoft-teams"
 doc_type: "apiPageType"
 ---
 
-# Create openshiftchangerequest
+# Create openShiftChangeRequest
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Create instance of a [openshiftchangerequest](../resources/openshiftchangerequest.md) object.
+Create instance of an [openShiftChangeRequest](../resources/openshiftchangerequest.md) object.
 ## Permissions
 
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
@@ -38,14 +38,15 @@ This method supports some of the OData query parameters to help customize the re
 
 | Name      |Description|
 |:----------|:----------|
-| Authorization | Bearer {token} |
+| Authorization | Bearer {token}. Required. |
+| Content-type | application/json. Required. |
 
 ## Request body
-Provide the new [openshiftchangerequest](../resources/openshiftchangerequest.md) object in the request body for this method.
+In the request body, provide a JSON representation of a new [openShiftChangeRequest](../resources/openshiftchangerequest.md) object.
 
 ## Response
 
-If successful, this method returns a `200 OK` response code and the requested [openshiftchangerequest](../resources/openshiftchangerequest.md) object in the response body.
+If successful, this method returns a `200 OK` response code and the created [openShiftChangeRequest](../resources/openshiftchangerequest.md) object in the response body.
 
 ## Examples
 
@@ -61,6 +62,7 @@ POST https://graph.microsoft.com/beta/teams/788b75d2-a911-48c0-a5e2-dc98480457e3
 Authorization: Bearer {token}
 Content-type: application/json
 Content-length: 244
+
 {
   "senderMessage": "Can I take this shift?",
   "openShiftId": "577b75d2-a927-48c0-a5d1-dc984894e7b8"
@@ -82,6 +84,7 @@ The following is an example of the response.
 ```http
 HTTP/1.1 200 OK
 Content-type: application/json
+
 {
   "id": "SREQ_0b87dd20-d5ed-4764-9c3e-cfc8516def09",
   "openShiftId": "577b75d2-a927-48c0-a5d1-dc984894e7b8",
