@@ -15,13 +15,22 @@ Calls can be set up as a peer-to-peer or as a group call. For creating or joinin
 
 Although the same identity cannot be invited multiple times, it is possible for an application to join the same meeting multiple times. Each time the application wants to joins, a separate identity must be provided in order for the clients to display them as different participants.
 
+> **Note:** You can get the join URL from a meeting scheduled with Microsoft Teams. Extract the data from the URL as shown to populate `chatInfo` and `meetingInfo`.
+```http
+https://teams.microsoft.com/l/meetup-join/19%3ameeting_NTg0NmQ3NTctZDVkZC00YzRhLThmNmEtOGQ3M2E0ODdmZDZk%40thread.v2/0?context=%7b%22Tid%22%3a%2272f988bf-86f1-41af-91ab-2d7cd011db47%22%2c%22Oid%22%3a%224b444206-207c-42f8-92a6-e332b41c88a2%22%7d
+```
+Becomes:
+```
+https://teams.microsoft.com/l/meetup-join/19:meeting_NTg0NmQ3NTctZDVkZC00YzRhLThmNmEtOGQ3M2E0ODdmZDZk@thread.v2/0?context={"Tid":"72f988bf-86f1-41af-91ab-2d7cd011db47","Oid":"4b444206-207c-42f8-92a6-e332b41c88a2"}
+```
+
 ## Methods
 
 | Method                                                             | Return Type                                                 | Description                                                                     |
 |:-------------------------------------------------------------------|:------------------------------------------------------------|:--------------------------------------------------------------------------------|
 | [Get](../api/call-get.md)                                     | [call](call.md)                                             | Read properties of the **call** object.                                         |
 | [Delete](../api/call-delete.md)                                    | None                                                            | Delete or Hang-up an active **call**.                                           |
-| [KeepAlive](../api/call-keepalive.md)                             | None                                                  | Keep the call alive.
+| [KeepAlive](../api/call-keepalive.md)                             | None                                                  | Ensure that the call remains active.
 | **Call Handling**                                                  |                                                        |                                                                                 |
 | [Answer](../api/call-answer.md)                                    | None                                                            | Answer an incoming call.                                                        |
 | [Reject](../api/call-reject.md)                                    | None                                                            | Reject an incoming call.                                                        |
@@ -111,14 +120,6 @@ The following is a JSON representation of the resource.
   "targets": [{"@odata.type": "#microsoft.graph.invitationParticipantInfo"}],
   "toneInfo": {"@odata.type": "#microsoft.graph.toneInfo"}
 }
-```
-
-> **Note:** You will find a join URL from a meeting scheduled with Microsoft Teams. Here's how to extract the data from the URL and fill `chatInfo` and `meetingInfo`.
-
-```http
-https://teams.microsoft.com/l/meetup-join/19%3ameeting_NTg0NmQ3NTctZDVkZC00YzRhLThmNmEtOGQ3M2E0ODdmZDZk%40thread.v2/0?context=%7b%22Tid%22%3a%2272f988bf-86f1-41af-91ab-2d7cd011db47%22%2c%22Oid%22%3a%224b444206-207c-42f8-92a6-e332b41c88a2%22%7d
-decodes to:
-https://teams.microsoft.com/l/meetup-join/19:meeting_NTg0NmQ3NTctZDVkZC00YzRhLThmNmEtOGQ3M2E0ODdmZDZk@thread.v2/0?context={"Tid":"72f988bf-86f1-41af-91ab-2d7cd011db47","Oid":"4b444206-207c-42f8-92a6-e332b41c88a2"}
 ```
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
