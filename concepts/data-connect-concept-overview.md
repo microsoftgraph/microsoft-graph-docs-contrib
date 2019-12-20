@@ -23,8 +23,5 @@ Microsoft is facilitating rich, connected communication between Microsoft Graph 
 ### Get access to data at scale
 Rich applications require access to large amounts of data, often from many users in your organization at once. With the traditional transactional data model, you need to build a complex infrastructure and make thousands of API calls to orchestrate this data delivery. Microsoft Graph data connect uses the power of Azure Data Factory to deliver Office 365 data from your organization to your application, on a repeatable schedule, with just a few simple steps.
 
-## API reference
-Looking for the API reference for this service?
-
 ## Next steps
 To get started, see [Get started with Microsoft Graph data connect](data-connect-get-started.md).

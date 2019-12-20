@@ -11,13 +11,13 @@ doc_type: resourcePageType
 
 An event in a [user](user.md) calendar, or the default calendar of an Office 365 [group](group.md).
 
-The maximum number of attendees included in an **event**, and the maximum number of reciepients in an [eventMessage](eventmessage.md) sent from an Exchange Online mailbox is 500. For more information, see [sending limits](https://docs.microsoft.com/en-us/office365/servicedescriptions/exchange-online-service-description/exchange-online-limits#sending-limits).
+The maximum number of attendees included in an **event**, and the maximum number of reciepients in an [eventMessage](eventmessage.md) sent from an Exchange Online mailbox is 500. For more information, see [sending limits](/office365/servicedescriptions/exchange-online-service-description/exchange-online-limits#sending-limits).
 
 This resource supports:
 
 - Adding your own data to custom properties as [extensions](/graph/extensibility-overview).
 - Subscribing to [change notifications](/graph/webhooks).
-- Using [delta query](/graph/delta-query-overview) to track incremental additions, deletions, and updates, 
+- Using [delta query](/graph/delta-query-overview) to track incremental additions, deletions, and updates,
 by providing a [delta](../api/event-delta.md) function.
 
 > **Note:** There are a few minor differences in the way you can interact with user calendars, group calendars, and their events:
@@ -102,7 +102,7 @@ by providing a [delta](../api/event-delta.md) function.
 > * For Microsoft accounts:
 > `https://outlook.live.com/owa/?itemid={event-id}&exvsurl=1&path=/calendar/item`
 >
-> To open the event in a current version of Outlook on the web, convert the URL to one of the following formats, and use that URL to open the event: 
+> To open the event in a current version of Outlook on the web, convert the URL to one of the following formats, and use that URL to open the event:
 >
 > * For work or school accounts:
 > `https://outlook.office365.com/calendar/item/{event-id}`
