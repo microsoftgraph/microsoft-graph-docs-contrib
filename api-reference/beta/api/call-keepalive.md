@@ -1,6 +1,6 @@
 ---
 title: "call: keepAlive"
-description: "Make a request to this API every 15 to 45 minutes to ensure that an ongoing call stays alive."
+description: "Make a request to this API every 15 to 45 minutes to ensure that an ongoing call remains active."
 author: "VinodRavichandran"
 localization_priority: Normal
 ms.prod: "cloud-communications"
@@ -42,43 +42,24 @@ POST /communications/calls/{id}/keepAlive
 Do not supply a request body for this method.
 
 ## Response
-This method returns a `200 OK` response code.
+This method returns a `200 OK` HTTP response code.
 
 ## Examples
 
 ### Request
-The following example shows a request.
+The following is an example of a request.
 
-# [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "keep-alive"
 }-->
 
 ```http
-POST https://graph.microsoft.com/v1.0/communications/calls/2e1a0b00-2db4-4022-9570-243709c565ab/keepAlive
+POST https://graph.microsoft.com/beta/communications/calls/2e1a0b00-2db4-4022-9570-243709c565ab/keepAlive
 ```
-# [C#](#tab/csharp)
-[!INCLUDE [sample-code](../includes/snippets/csharp/keep-alive-csharp-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [JavaScript](#tab/javascript)
-[!INCLUDE [sample-code](../includes/snippets/javascript/keep-alive-javascript-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [Objective-C](#tab/objc)
-[!INCLUDE [sample-code](../includes/snippets/objc/keep-alive-objc-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [Java](#tab/java)
-[!INCLUDE [sample-code](../includes/snippets/java/keep-alive-java-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
----
 
 ### Response
 The following example shows the response.
-
 <!-- {
   "blockType": "response",
   "name": "keep-alive",
