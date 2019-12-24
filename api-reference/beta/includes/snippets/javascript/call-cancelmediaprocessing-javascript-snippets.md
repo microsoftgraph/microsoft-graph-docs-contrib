@@ -11,7 +11,6 @@ const options = {
 const client = Client.init(options);
 
 const cancelMediaProcessingOperation = {
-  all: true,
   clientContext: "clientContext-value"
 };
 
