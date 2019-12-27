@@ -72,6 +72,13 @@ Introduced presence in beta and added cloud communications APIs to v1.0.
 | :-------------- | :------------ | :--------------------------------------- |
 | Addition | v1.0 | Added the [classSettings](/graph/api/resources/teamclasssettings?view=graph-rest-1.0) property to the [team](/graph/api/resources/team?view=graph-rest-1.0) resource to allow callers to get settings specific to a team of type Class.|
 
+### Groups
+
+| **Change type** | **Version**   | **Description**                          |
+| :-------------- | :------------ | :--------------------------------------- |
+| Addition        | Beta          |Added the **hideFromAddressLists** and **hideFromOutlookClients** properties to the [group](/graph/api/resources/group?view=graph-rest-1.0) entity, to control the visibility of a group in the Outlook user interface.|
+| Addition | Beta | Added the [assignLicense](/graph/api/group-assignlicense?view=graph-rest-1.0 method which can be used to add or remove licenses on users in a [group](/graph/api/resources/group?view=graph-rest-1.0). |
+
 ### Identity and access (Azure AD)
 | **Change type** | **Version**   | **Description**                          |
 |:---|:---|:---|
