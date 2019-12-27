@@ -1,5 +1,5 @@
 ---
-title: "Get Online Meeting"
+title: "Get onlineMeeting"
 description: "Retrieve the properties and relationships of an **online meeting** object."
 author: "ananmishr"
 localization_priority: Normal
@@ -7,7 +7,7 @@ ms.prod: "cloud-communications"
 doc_type: apiPageType
 ---
 
-# Get Online Meeting
+# Get onlineMeeting
 
 Retrieve the properties and relationships of an [onlineMeeting](../resources/onlinemeeting.md) object.
 
@@ -41,11 +41,11 @@ This method supports the [OData query parameters](/graph/query-parameters) to he
 Do not supply a request body for this method.
 
 ## Response
-If successful, this method returns a `200 OK` response code and [onlineMeeting](../resources/onlinemeeting.md) object in the response body.
+If successful, this method returns a `200 OK` response code and an [onlineMeeting](../resources/onlinemeeting.md) object in the response body.
 
-## Example
+## Examples
 
-##### Request
+### Request
 The following example shows the request.
 
 
@@ -76,7 +76,7 @@ GET https://graph.microsoft.com/v1.0/communications/onlineMeetings/?$filter=Vide
 ---
 
 
-##### Response
+### Response
 
 > **Note:** The response object shown here might be shortened for readability. All the properties will be returned from an actual call.
 

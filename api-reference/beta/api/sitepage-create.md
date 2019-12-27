@@ -39,6 +39,8 @@ In the request body, supply a JSON representation of the [sitePage][] resource t
 
 The following example shows how to create a new page.
 
+
+# [HTTP](#tab/http)
 <!-- { "blockType": "request", "name": "create-page", "scopes": "sites.readwrite.all" } -->
 
 ```json
@@ -93,6 +95,12 @@ Content-Type: application/json
     ]
 }
 ```
+# [JavaScript](#tab/javascript)
+[!INCLUDE [sample-code](../includes/snippets/javascript/create-page-javascript-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+---
+
 
 ## Response
 

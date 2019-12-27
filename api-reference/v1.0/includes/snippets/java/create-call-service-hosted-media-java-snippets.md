@@ -8,7 +8,7 @@ IGraphServiceClient graphClient = GraphServiceClient.builder().authenticationPro
 
 Call call = new Call();
 call.callbackUri = "https://bot.contoso.com/callback";
-LinkedList<ParticipantInfo> targetsList = new LinkedList<ParticipantInfo>();
+LinkedList<InvitationParticipantInfo> targetsList = new LinkedList<InvitationParticipantInfo>();
 InvitationParticipantInfo targets = new InvitationParticipantInfo();
 IdentitySet identity = new IdentitySet();
 Identity user = new Identity();

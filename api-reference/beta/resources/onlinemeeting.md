@@ -24,21 +24,18 @@ Contains information about the meeting, including the URL used to join a meeting
 
 | Property                  | Type                                                   | Description                                                                                                                |
 | :------------------------ | :----------------------------------------------------- | :------------------------------------------------------------------------------------------------------------------------- |
-| autoAdmittedUsers         | String                                                 | The setting that specifies the type of participants that will automatically be allowed into the online meeting. Read-only. Possible values are: `everyone`, `everyoneInSameAndFederatedCompany`, `everyoneInCompany`, `invitedUsersInCompany`, `organizer`|
+| autoAdmittedUsers         | String                                                 | The setting that specifies the type of participants that will automatically be allowed into the online meeting. Possible values are: `everyone`, `everyoneInSameAndFederatedCompany`, `everyoneInCompany`, `invitedUsersInCompany`, `organizer`. Read-only.|
 | audioConferencing         | [audioConferencing](audioconferencing.md)              | The phone access (dial-in) information for an online meeting. Read-only. |
-| canceledDateTime          | DateTime                                               | The time in UTC when the meeting was canceled. Read-only. |
 | chatInfo                  | [chatInfo](chatinfo.md)                                | The chat information associated with this online meeting. |
 | creationDateTime          | DateTime                                               | The meeting creation time in UTC. Read-only. |
 | startDateTime             | DateTime                                               | The meeting start time in UTC. |
 | endDateTime               | DateTime                                               | The meeting end time in UTC. |
 | id                        | String                                                 | The default ID associated with the online meeting. Read-only. |
-| isCanceled                | Boolean                                                | Indicates whether the meeting has been canceled. Read-only. |
-| joinUrl                   | String                                                 | The join URL of the online meeting. Read-only.|
-| isBroadcast               | Boolean                                                | Indicates whether the meeting is a broadcast meeting. |
+| joinWebUrl                   | String                                                 | The join URL of the online meeting. Read-only.|
 | participants              | [meetingParticipants](meetingparticipants.md)          | The participants associated with the online meeting.  This includes the organizer and the attendees. |
 | subject                   | String                                                 | The subject of the online meeting. |
 | capabilities              | String collection                                      | The list of meeting capabilities. Possible values are: `questionAndAnswer`. |
-| videoTeleconferenceId     | String                                                 | The videio teleconferencing ID. Read-only. |
+| videoTeleconferenceId     | String                                                 | The video teleconferencing ID. Read-only. |
 
 ### autoAdmittedUsers values
 | Value | Description  |
@@ -63,14 +60,11 @@ Contains information about the meeting, including the URL used to join a meeting
 {
   "autoAdmittedUsers": "everyone | everyoneInSameAndFederatedCompany | everyoneInCompany | invitedUsersInCompany | organizer",
   "audioConferencing": {"@odata.type": "#microsoft.graph.audioConferencing"},
-  "canceledDateTime": "String (timestamp)",
   "chatInfo": {"@odata.type": "#microsoft.graph.chatInfo"},
   "creationDateTime": "String (timestamp)",
   "endDateTime": "String (timestamp)",
   "id": "String (identifier)",
-  "isCanceled": false,
-  "joinUrl": "String",
-  "isBroadcast": false,
+  "joinWebUrl": "String",
   "participants": {"@odata.type": "#microsoft.graph.meetingParticipants"},
   "startDateTime": "String (timestamp)",
   "subject": "String",

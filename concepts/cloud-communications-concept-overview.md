@@ -9,7 +9,7 @@ ms.prod: "cloud-communications"
 # Cloud communications API overview
 The cloud communications APIs in Microsoft Graph add a new dimension to how your apps and services interact with users through various communications related features, such as calling and online meetings. Grow your business by expediting how you respond to your customers’ needs and how your employees collaborate with each other.
 
-## Why integrate with cloud communications APIs?
+## Why integrate with the cloud communications APIs?
 
 Discover the benefits of using cloud communications APIs to buid service applications ([bots](https://microsoftgraph.github.io/microsoft-graph-comms-samples/docs/articles/calls/register-calling-bot.html?q=create%20bot)).
 
@@ -90,11 +90,18 @@ Looking for the API reference for this service?
 - [Cloud Communications APIs in Microsoft Graph (v1.0)](/graph/api/resources/communications-api-overview?view=graph-rest-1.0)
 - [Cloud Communications APIs in Microsoft Graph (beta)](/graph/api/resources/calls-api-overview?view=graph-rest-beta)
 
+## Next steps
+
+- Use bots to [get started](cloud-communications-get-started.md).
+- Learn more about [calls](cloud-communications-calls.md), [media](cloud-communications-media.md), and [online meetings](cloud-communications-online-meetings.md).
+- View the API usage [limits](cloud-communications-limits.md).
+- Learn how to [manage phone numbers](cloud-communications-phone-number.md) for your bots.
+
 ## See also
 
-- Learn about [delegated and application permissions](https://docs.microsoft.com/azure/active-directory/develop/v1-permissions-and-consent).
-- View and manage [permissions for calls](/graph/permissions-reference#calls-permissions).
-- View and manage [permissions for online meetings](/graph/permissions-reference#online-meetings-permissions).
-- Find samples in our [Github samples repository](https://github.com/microsoftgraph/microsoft-graph-comms-samples).
+- [Delegated and application permissions](https://docs.microsoft.com/azure/active-directory/develop/v1-permissions-and-consent)
+- [Calls permissions](/graph/permissions-reference#calls-permissions)
+- [Online meeting permissions](/graph/permissions-reference#online-meetings-permissions)
+- [Cloud communications samples](https://github.com/microsoftgraph/microsoft-graph-comms-samples)
 
 

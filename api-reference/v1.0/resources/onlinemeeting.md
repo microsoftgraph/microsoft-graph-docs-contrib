@@ -17,6 +17,7 @@ Contains information about the meeting, including the URL used to join a meeting
 |:---------------|:--------|:----------|
 | [Create onlineMeeting](../api/application-post-onlineMeetings.md) | [onlineMeeting](onlinemeeting.md) | Create an online meeting. |
 | [Get onlineMeeting](../api/onlinemeeting-get.md) | [onlineMeeting](onlinemeeting.md) | Read the properties and relationships of an **onlineMeeting** object. |
+| [Delete onlineMeeting](../api/onlinemeeting-delete.md) | None | Delete an online meeting |
 
 ## Properties
 
