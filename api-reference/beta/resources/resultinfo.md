@@ -1,7 +1,7 @@
 ---
 title: "resultInfo resource type"
 description: "The resultInfo type."
-author: "VinodRavichandran"
+author: "ananmishr"
 localization_priority: Normal
 ms.prod: "cloud-communications"
 doc_type: resourcePageType

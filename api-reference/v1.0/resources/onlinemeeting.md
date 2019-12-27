@@ -1,7 +1,7 @@
 ---
 title: "onlineMeeting resource type"
 description: "Contains information about the meeting, including the join URL, the attendees list, and the description."
-author: "VinodRavichandran"
+author: "ananmishr"
 localization_priority: Normal
 doc_type: resourcePageType
 ms.prod: "cloud-communications"

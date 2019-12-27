@@ -1,7 +1,7 @@
 ---
 title: "call: answer"
 description: "Answer an incoming call."
-author: "VinodRavichandran"
+author: "ananmishr"
 localization_priority: Normal
 ms.prod: "cloud-communications"
 doc_type: apiPageType

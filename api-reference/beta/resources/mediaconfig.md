@@ -1,7 +1,7 @@
 ---
 title: "mediaConfig resource type"
 description: "The media configuration used to connect to a call."
-author: "VinodRavichandran"
+author: "ananmishr"
 localization_priority: Normal
 ms.prod: "cloud-communications"
 doc_type: resourcePageType
