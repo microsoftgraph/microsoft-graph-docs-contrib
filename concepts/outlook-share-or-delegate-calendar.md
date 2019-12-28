@@ -27,7 +27,7 @@ In the following series of examples:
 - Alex shared a "Kids parties" calendar with Adele Vance and Megan Bowen, and gave both of them `read` permissions to all the details of the events on the "Kids parties" calendar.
 
 
-### Get and set information about sharees, delegates, and permissions for a calendar
+## Get and set information about sharees, delegates, and permissions for a calendar
 
 In this section:
 
@@ -54,7 +54,7 @@ Each calendar is associated with a collection of [calendarPermission](/graph/api
 The primary calendar of a user is always shared with "My Organization", which represents the users in the same organization as the owner. By default, they can read the owner's free/busy status on that calendar and have the `freeBusyRead` permission.
 
 
-#### Get permissions and sharing or delegation information on behalf of owner
+### Get permissions and sharing or delegation information on behalf of owner
 
 The following example gets the **calendarPermission** objects associated with Alex' primary calendar. The request returns two such permission objects:
 
@@ -134,7 +134,7 @@ Content-type: application/json
 ```
 
 
-#### Set permissions for an existing sharee or delegate on a calendar
+### Set permissions for an existing sharee or delegate on a calendar
 
 You can update the permissions assigned to an existing sharee or delegate, as long as the new permissions are supported by those **allowedRoles** set up initially for the sharee or delegate for that calendar. 
 
@@ -187,7 +187,7 @@ Content-type: application/json
 ```
 
 
-### Get properties of a shared or delegated calendar
+## Get properties of a shared or delegated calendar
 
 In this section:
 
@@ -197,7 +197,7 @@ In this section:
 Recalling in this example, Alex has delegated his primary calendar and given the delegate, Megan Bowen, the permission to view calendar items that are marked private.
 This section shows the calendar properties for the owner, Alex, and for the delegate, Megan.
 
-#### Get properties of a shared or delegated calendar on behalf of owner
+### Get properties of a shared or delegated calendar on behalf of owner
 
 The following example gets the properties of the primary calendar on behalf of the owner, Alex. 
 
@@ -256,7 +256,7 @@ Content-type: application/json
 ```
 
 
-#### Get properties of shared or delegated calendar on behalf of sharee or delegate
+### Get properties of shared or delegated calendar on behalf of sharee or delegate
 
 The following example gets the properties of the same calendar on behalf of the delegate, Megan. 
 
@@ -316,7 +316,7 @@ Content-type: application/json
 ```
 
 
-### Get or set the mailbox setting for calendar owner to receive meeting requests and responses
+## Get or set the mailbox setting for calendar owner to receive meeting requests and responses
 
 In this section:
 
@@ -339,7 +339,7 @@ Programmatically, you can get or set the **delegateMeetingMessageDeliveryOptions
 
 The same setting applies to all the delegates the owner has set up for the primary calendar.
 
-#### Get delegation delivery setting for a user's mailbox
+### Get delegation delivery setting for a user's mailbox
 
 The following example gets the **mailboxSettings** of a calendar owner who lets Outlook direct meeting requests and responses to only calendar delegates; that is, **delegateMeetingMessageDeliveryOptions** is set to `sendToDelegateOnly`.
 
@@ -404,7 +404,7 @@ Content-type: application/json
 }
 ```
 
-#### Set delegation delivery setting for a user's mailbox
+### Set delegation delivery setting for a user's mailbox
 
 The following example updates the **delegateMeetingMessageDeliveryOptions** property to `sendToDelegateAndPrincipal`, to have Outlook direct meeting requests and responses of the delegated calendar to all delegates and the owner.
 
@@ -439,7 +439,7 @@ Content-type: application/json
 ```
 
 
-### Delete a sharee or delegate of a calendar
+## Delete a sharee or delegate of a calendar
 
 In the following example, Alex deletes Megan as a sharee of the "Kids parties" calendar.
 
