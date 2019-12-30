@@ -6,11 +6,8 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 GraphServiceClient graphClient = new GraphServiceClient( authProvider );
 
-var clientContext = "clientContext-value";
-
-await graphClient.Communications.Calls["{id}"]
-	.CancelMediaProcessing(clientContext)
+var accessPackageAssignmentResourceRole = await graphClient.IdentityGovernance.EntitlementManagement.AccessPackageAssignmentResourceRoles["{id}"]
 	.Request()
-	.PostAsync();
+	.GetAsync();
 
 ```

@@ -13,9 +13,6 @@ NSMutableURLRequest *urlRequest = [NSMutableURLRequest requestWithURL:[NSURL URL
 
 NSMutableDictionary *payloadDictionary = [[NSMutableDictionary alloc] init];
 
-BOOL all = YES;
-payloadDictionary[@"all"] = all;
-
 NSString *clientContext = @"clientContext-value";
 payloadDictionary[@"clientContext"] = clientContext;
 
