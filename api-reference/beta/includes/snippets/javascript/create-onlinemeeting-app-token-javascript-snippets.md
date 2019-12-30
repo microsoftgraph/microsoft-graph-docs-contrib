@@ -11,7 +11,6 @@ const options = {
 const client = Client.init(options);
 
 const onlineMeeting = {
-  isBroadcast: "false",
   startDateTime:"2019-09-09T14:33:30.8546353-07:00",
   endDateTime:"2019-09-09T15:03:30.8566356-07:00",
   subject:"Application Token Meeting",
