@@ -10,9 +10,9 @@ ms.prod: "outlook"
 
 In Outlook, a calendar owner can share a calendar with other users and let them view or modify events in that calendar; the calendar can be a custom calendar or the primary calendar. The owner can also grant a delegate to act on their behalf, to receive or respond to meeting requests, or create or change items in the primary calendar of the email account.
 
-Programmatically, Microsoft Graph supports getting events in calendars that have been shared by other users, as well as getting the shared calendars themselves. The support also applies to calendars that have been delegated. 
+Programmatically, Microsoft Graph supports reading and writing events in calendars that have been shared by other users, as well as reading the shared calendars themselves. The support also applies to calendars that have been delegated. The rest of this article describes examples reading events in a shared or delegated calendar. For creating events, refer to [Create Outlook events in a shared or delegated calendar](#outlook-create-event-in-shared-delegated-calendar.md).
 
-As an example, Alex has shared with Megan his primary calendar and given Megan read access. If Megan has signed into your app and provided _delegated permissions_ (Calendars.Read.Shared or Calendars.ReadWrite.Shared), on behalf of Megan, your app will be able to access the shared primary calendar and its events as described below.
+The examples below use this scenario: in Outlook, Alex has shared with Megan his primary calendar and given Megan read permission. If Megan has signed into your app and provided _delegated permissions_ (Calendars.Read.Shared or Calendars.ReadWrite.Shared), on behalf of Megan, your app will be able to access the shared primary calendar and its events as described below.
 
 > **Note** The sharing permissions (Calendars.Read.Shared or Calendars.ReadWrite.Shared) allow you to read or write events in a shared or delegated calendar. They do not support [subscribing to change notifications](webhooks.md) on items in such folders. To set up change notification subscriptions on events in a shared, delegated, or any other user or resource calendar in the tenant, use the application permission, Calendars.Read.
 
@@ -22,7 +22,7 @@ Signed in as Megan, your app can get a specific event in Alex's primary calendar
 
 <!-- { "blockType": "ignored" } -->
 ```http
-GET users/{Alex-userId | Alex-userPrincipalName}/calendar/events/{id}
+GET /users/{Alex-userId | Alex-userPrincipalName}/calendar/events/{id}
 ```
 
 On successful completion, you'll get HTTP 200 OK and the [event](/graph/api/resources/event?view=graph-rest-1.0) instance identified by `{id}` from Alex's primary calendar.
@@ -33,7 +33,7 @@ Get all the events in the primary calendar that Alex has shared with Megan:
 
 <!-- { "blockType": "ignored" } -->
 ```http
-GET users/{Alex-userId | Alex-userPrincipalName}/calendar/events
+GET /users/{Alex-userId | Alex-userPrincipalName}/calendar/events
 ```
 
 On successful completion, you'll get HTTP 200 OK and a collection of [event](/graph/api/resources/event?view=graph-rest-1.0) instances in Alex's primary calendar.
@@ -44,7 +44,7 @@ Get the primary calendar that Alex has shared with Megan:
 
 <!-- { "blockType": "ignored" } -->
 ```http
-GET users/{Alex-userId | Alex-userPrincipalName}/calendar
+GET /users/{Alex-userId | Alex-userPrincipalName}/calendar
 ```
 
 On successful completion, you'll get HTTP 200 OK and a [calendar](/graph/api/resources/calendar?view=graph-rest-1.0) instance that represents Alex's shared, primary calendar.

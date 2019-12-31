@@ -10,11 +10,9 @@ ms.prod: "outlook"
 
 In Outlook, customers can share a calendar with other users and let them view, create, or modify events in that calendar. Customers can also grant a delegate to act on their  behalf, to receive or respond to meeting requests, or create or change items in the calendar.
 
-Programmatically, Microsoft Graph supports getting or creating events in calendars that have been shared by other users, as well as getting the shared calendars themselves. The support also applies to calendars that have been delegated. The rest of this topic walks through creating an event in a shared or delegated calendar. For getting events, refer to [Get Outlook events in a shared or delegated calendar](outlook-get-shared-events-calendars.md).
+Programmatically, Microsoft Graph supports reading or writing events in calendars that have been shared by other users, as well as reading the shared calendars themselves. The support also applies to calendars that have been delegated. The rest of this article walks through creating an event in a shared or delegated calendar. For getting events, refer to [Get Outlook events in a shared or delegated calendar](outlook-get-shared-events-calendars.md).
 
-As an example, Alex has shared with Adele his primary calendar and given Adele edit permissions. If Adele has signed into your app and provided delegated permissions (Calendars.Read.Shared or Calendars.ReadWrite.Shared), your app will be able to read or write Alex' default calendar and events in that calendar as described below.
-
-This article describes a scenario where Alex delegates his primary calendar to Adele. The sections below describe a few subsequent steps:
+This article uses the scenario where Alex has delegated his primary calendar to Adele in Outlook. The sections below describe a few subsequent steps:
 1. Adele organizes an event on Alex' behalf. 
 2. One of the attendees, Samantha, receives the meeting request message.
 3. (and step #4) Samantha responds tentative to the meeting.
