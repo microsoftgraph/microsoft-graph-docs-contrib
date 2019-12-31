@@ -756,7 +756,7 @@
         items:
         - name: Create
           href: api/application-post-calls.md
-        - name: Get call
+        - name: Get
           href: api/call-get.md
         - name: Delete/hang up
           href: api/call-delete.md
@@ -782,12 +782,12 @@
         - name: Participant
           href: resources/participant.md
           items:
-          - name: Get participant
+          - name: Get
             href: api/participant-get.md
+          - name: List
+            href: api/call-list-participants.md
           - name: Mute participant
             href: api/participant-mute.md
-          - name: List participants
-            href: api/call-list-participants.md
           - name: Invite participants
             href: api/participant-invite.md
         - name: Change screen sharing role
@@ -799,10 +799,12 @@
       - name: Online meeting
         href: resources/onlinemeeting.md
         items:
-        - name: Create online meeting
+        - name: Create
           href: api/application-post-onlinemeetings.md
-        - name: Get online meeting
-          href: api/onlinemeeting-get.md          
+        - name: Get
+          href: api/onlinemeeting-get.md
+        - name: Delete
+          href: api/onlinemeeting-delete.md             
     - name: Cross-device experiences
       displayName: Project Rome
       items:

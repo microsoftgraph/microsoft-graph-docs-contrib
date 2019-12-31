@@ -1,7 +1,7 @@
 ---
 title: "meetingInfo resource type"
 description: "Meeting information specified to create or join a meeting."
-author: "VinodRavichandran"
+author: "ananmishr"
 localization_priority: Normal
 ms.prod: "cloud-communications"
 doc_type: resourcePageType

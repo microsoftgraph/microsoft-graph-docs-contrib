@@ -19,7 +19,7 @@ MSGraphInvitationParticipantInfo *participants = [[MSGraphInvitationParticipantI
 MSGraphIdentitySet *identity = [[MSGraphIdentitySet alloc] init];
 MSGraphIdentity *user = [[MSGraphIdentity alloc] init];
 [user setId:@"278405a3-f568-4b3e-b684-009193463064"];
-[user setIdentityProvider:@"AAD"];
+[user setDisplayName:@"string"];
 [identity setUser:user];
 [participants setIdentity:identity];
 [participantsList addObject: participants];
