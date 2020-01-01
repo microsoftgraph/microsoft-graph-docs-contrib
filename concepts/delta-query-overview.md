@@ -54,7 +54,7 @@ For users and groups, the following restrictions apply to using using some query
 For users and groups, there are restrictions on using some query parameters:
 
 - If a `$select` query parameter is used, the parameter indicates that the client prefers to only track changes on the properties or relationships specified in the `$select` statement. If a change occurs to a property that is not selected, the resource for which that property changed does not appear in the delta response after a subsequent request.
-- `$expand` is only supported for the `manager` and `members` navigational property for users and groups respectively.
+- `$select` also supports `manager` and `members` navigational property for users and groups respectively. Selecting those properties allows tracking of changes to user's manager and group memberships.
 
 - Scoping filters allow you to track changes to one or more specific users or groups by object ID. For example, the following request returns changes for the groups matching the IDs specified in the query filter. 
 
@@ -74,7 +74,7 @@ https://graph.microsoft.com/beta/groups/delta/?$filter=id eq '477e9fc6-5de7-4406
 
 - Relationships on users and groups are represented as annotations on the standard resource representation. These annotations use the format `propertyName@delta`. The annotations are included in the response of the initial delta query request.
 
-Removed instances are represented by their **id** and an `@removed` object. The `@removed` object may include additional information about why the instance was removed. For example,  "@removed": {"reason": “changed”}.
+Removed instances are represented by their **id** and an `@removed` object. The `@removed` object may include additional information about why the instance was removed. For example,  "@removed": {"reason": "changed"}.
 
 Possible @removed reasons can be *changed* or *deleted*.
 
@@ -112,6 +112,49 @@ Delta query is currently supported for the following resources.
 [Track changes for a drive](/graph/api/driveitem-delta?view=graph-rest-1.0).
 
 > \*\* The usage pattern for Planner resources is similar to other supported resources with a few differences.  For details, see [Track changes for Planner](/graph/api/planneruser-list-delta?view=graph-rest-beta).
+
+### Limitations
+
+#### Properties stored outside of the main data store
+
+Some resources contain properties that are stored outside of the main data store for the resource (for example, the user resource is mostly stored in the Azure AD system, while some properties, like **skills**, are stored in SharePoint Online). Currently, those properties are not supported as part of change tracking; a change to one of those properties will not result in an object showing up in the delta query response. Currently, only the properties stored in the main data store trigger changes in the delta query.
+
+To verify that a property can be used in delta query, try to perform a regular `GET` operation on the resource collection, and select the property you're interested in. For example, you can try the **skills** property on the users collection.
+
+```msgraph-interactive
+GET https://graph.microsoft.com/v1.0/users/?$select=skills
+```
+
+Because the **skills** property is stored outside of Azure AD, the following is the response.
+
+<!-- {
+  "blockType": "response",
+  "truncated": true,
+  "@odata.type": "microsoft.graph.user",
+  "isCollection": true
+} -->
+
+```http
+HTTP/1.1 501 Not Implemented
+Content-type: application/json
+
+{
+    "error": {
+        "code": "NotImplemented",
+        "message": "This operation target is not yet supported.",
+        "innerError": {
+            "request-id": "...",
+            "date": "2019-09-20T21:47:50"
+        }
+    }
+}
+```
+
+This tells you that the **skills** property is not supported for delta query on the **user** resource.
+
+#### Navigation properties
+
+Navigation properties are not supported. For example, you cannot track changes to the users collection that would include changes to their **photo** property; **photo** is a navigation property stored outside of the user entity, and changes to it do not cause the user object to be included in the delta response.
 
 ## Prerequisites
 

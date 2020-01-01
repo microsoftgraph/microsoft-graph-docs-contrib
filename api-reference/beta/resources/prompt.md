@@ -1,9 +1,9 @@
 ---
 title: "prompt resource type"
 description: "Prompt action base type."
-author: "VinodRavichandran"
+author: "ananmishr"
 localization_priority: Normal
-ms.prod: "microsoft-teams"
+ms.prod: "cloud-communications"
 doc_type: resourcePageType
 ---
 
