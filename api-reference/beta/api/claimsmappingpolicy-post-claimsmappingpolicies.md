@@ -1,17 +1,17 @@
 ---
-title: "Remove tokenLifetimePolicy"
-description: "Remove a tokenLifetimePolicy from an application or servicePrincipal."
+title: "Create claimsMappingPolicy"
+description: "Create a new claimsMappingPolicy."
 localization_priority: Normal
 author: "davidmu1"
 ms.prod: "microsoft-identity-platform"
 doc_type: "apiPageType"
 ---
 
-# Remove tokenLifetimePolicy
+# Create claimsMappingPolicy
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Remove a [tokenLifetimePolicy](../resources/tokenlifetimepolicy.md) from an [application](../resources/application.md) or [servicePrincipal](../resources/servicePrincipal.md).
+Create a new [claimsMappingPolicy](../resources/claimsmappingpolicy.md) object.
 
 ## Permissions
 
@@ -19,17 +19,16 @@ One of the following permissions is required to call this API. To learn more, in
 
 | Permission type                        | Permissions (from least to most privileged) |
 |:---------------------------------------|:--------------------------------------------|
-| Delegated (work or school account)     | Policy.Read.All and Application.ReadWrite.All |
+| Delegated (work or school account)     | Policy.ReadWrite.ClaimsMapping |
 | Delegated (personal Microsoft account) | Not supported. |
-| Application                            | Policy.Read.All and Application.ReadWrite.OwnedBy, Policy.Read.All and Application.ReadWrite.All |
+| Application                            | Policy.ReadWrite.ClaimsMapping |
 
 ## HTTP request
 
 <!-- { "blockType": "ignored" } -->
 
 ```http
-DELETE /applications/{id}/tokenLifetimePolicies/{id}/$ref
-DELETE /servicePrincipals/{id}/tokenLifetimePolicies/{id}$ref
+POST policies/claimsMappingPolicies
 ```
 
 ## Request headers
@@ -37,14 +36,15 @@ DELETE /servicePrincipals/{id}/tokenLifetimePolicies/{id}$ref
 | Name          | Description   |
 |:--------------|:--------------|
 | Authorization | Bearer {token} |
+| Content-type | application/json |
 
 ## Request body
 
-Do not supply a request body for this method.
+In the request body, supply a JSON representation of [claimsMappingPolicy](../resources/claimsmappingpolicy.md) object.
 
 ## Response
 
-If successful, this method returns `204 No Content` response code.
+If successful, this method returns a `201 Created` response code and a new [claimsMappingPolicy](../resources/claimsmappingpolicy.md) object in the response body.
 
 ## Examples
 
@@ -53,11 +53,20 @@ If successful, this method returns `204 No Content` response code.
 The following is an example of the request.
 <!-- {
   "blockType": "request",
-  "name": "delete_tokenlifetimepolicy_from_application"
+  "name": "create_claimsmappingpolicy_from_claimsmappingpolicies"
 }-->
 
 ```http
-DELETE https://graph.microsoft.com/beta/applications/{id}/tokenLifetimePolicies/{id}/$ref
+POST https://graph.microsoft.com/beta/policies/claimsMappingPolicies
+Content-type: application/json
+
+{
+  "definition": [
+    "definition-value"
+  ],
+  "displayName": "displayName-value",
+  "isOrganizationDefault": true
+}
 ```
 
 ### Response
@@ -68,18 +77,29 @@ The following is an example of the response.
 
 <!-- {
   "blockType": "response",
-  "truncated": true
+  "truncated": true,
+  "@odata.type": "microsoft.graph.claimsMappingPolicy"
 } -->
 
 ```http
-HTTP/1.1 204 No Content
+HTTP/1.1 201 Created
+Content-type: application/json
+
+{
+  "definition": [
+    "definition-value"
+  ],
+  "displayName": "displayName-value",
+  "isOrganizationDefault": true,
+  "id": "id-value"
+}
 ```
 
 <!-- uuid: 16cd6b66-4b1a-43a1-adaf-3a886856ed98
 2019-02-04 14:57:30 UTC -->
 <!-- {
   "type": "#page.annotation",
-  "description": "Remove tokenLifetimePolicy",
+  "description": "Create claimsMappingPolicy",
   "keywords": "",
   "section": "documentation",
   "tocPath": ""

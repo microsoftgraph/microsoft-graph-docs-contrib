@@ -1,17 +1,17 @@
 ---
-title: "Remove tokenLifetimePolicy"
-description: "Remove a tokenLifetimePolicy from an application or servicePrincipal."
+title: "Get activityBasedTimeoutPolicy"
+description: "Get the properties of an activityBasedTimeoutPolicy object."
 localization_priority: Normal
 author: "davidmu1"
 ms.prod: "microsoft-identity-platform"
 doc_type: "apiPageType"
 ---
 
-# Remove tokenLifetimePolicy
+# Get activityBasedTimeoutPolicy
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Remove a [tokenLifetimePolicy](../resources/tokenlifetimepolicy.md) from an [application](../resources/application.md) or [servicePrincipal](../resources/servicePrincipal.md).
+Get the properties of an [activityBasedTimeoutPolicy](../resources/activitybasedtimeoutpolicy.md) object.
 
 ## Permissions
 
@@ -19,23 +19,26 @@ One of the following permissions is required to call this API. To learn more, in
 
 | Permission type                        | Permissions (from least to most privileged) |
 |:---------------------------------------|:--------------------------------------------|
-| Delegated (work or school account)     | Policy.Read.All and Application.ReadWrite.All |
+| Delegated (work or school account)     | Policy.Read.All |
 | Delegated (personal Microsoft account) | Not supported. |
-| Application                            | Policy.Read.All and Application.ReadWrite.OwnedBy, Policy.Read.All and Application.ReadWrite.All |
+| Application                            | Policy.Read.All |
 
 ## HTTP request
 
 <!-- { "blockType": "ignored" } -->
 
 ```http
-DELETE /applications/{id}/tokenLifetimePolicies/{id}/$ref
-DELETE /servicePrincipals/{id}/tokenLifetimePolicies/{id}$ref
+GET /policies/activityBasedTimeoutPolicies/{id}
 ```
+
+## Optional query parameters
+
+This method supports the `$select` OData query parameters to help customize the response. For general information, see [OData query parameters](/graph/query-parameters).
 
 ## Request headers
 
-| Name          | Description   |
-|:--------------|:--------------|
+| Name      |Description|
+|:----------|:----------|
 | Authorization | Bearer {token} |
 
 ## Request body
@@ -44,7 +47,7 @@ Do not supply a request body for this method.
 
 ## Response
 
-If successful, this method returns `204 No Content` response code.
+If successful, this method returns a `200 OK` response code and the requested [activityBasedTimeoutPolicy](../resources/activitybasedtimeoutpolicy.md) object in the response body.
 
 ## Examples
 
@@ -53,11 +56,11 @@ If successful, this method returns `204 No Content` response code.
 The following is an example of the request.
 <!-- {
   "blockType": "request",
-  "name": "delete_tokenlifetimepolicy_from_application"
+  "name": "get_activitybasedtimeoutpolicy"
 }-->
 
 ```http
-DELETE https://graph.microsoft.com/beta/applications/{id}/tokenLifetimePolicies/{id}/$ref
+GET https://graph.microsoft.com/beta/policies/activityBasedTimeoutPolicies/{id}
 ```
 
 ### Response
@@ -68,18 +71,29 @@ The following is an example of the response.
 
 <!-- {
   "blockType": "response",
-  "truncated": true
+  "truncated": true,
+  "@odata.type": "microsoft.graph.activityBasedTimeoutPolicy"
 } -->
 
 ```http
-HTTP/1.1 204 No Content
+HTTP/1.1 200 OK
+Content-type: application/json
+
+{
+  "definition": [
+    "definition-value"
+  ],
+  "displayName": "displayName-value",
+  "isOrganizationDefault": true,
+  "id": "id-value"
+}
 ```
 
 <!-- uuid: 16cd6b66-4b1a-43a1-adaf-3a886856ed98
 2019-02-04 14:57:30 UTC -->
 <!-- {
   "type": "#page.annotation",
-  "description": "Remove tokenLifetimePolicy",
+  "description": "Get activityBasedTimeoutPolicy",
   "keywords": "",
   "section": "documentation",
   "tocPath": ""

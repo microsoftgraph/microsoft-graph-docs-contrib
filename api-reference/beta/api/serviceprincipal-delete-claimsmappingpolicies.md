@@ -1,17 +1,17 @@
 ---
-title: "Remove tokenLifetimePolicy"
-description: "Remove a tokenLifetimePolicy from an application or servicePrincipal."
+title: "Remove claimsMappingPolicy"
+description: "Remove a claimsMappingPolicy from a servicePrincipal."
 localization_priority: Normal
 author: "davidmu1"
 ms.prod: "microsoft-identity-platform"
 doc_type: "apiPageType"
 ---
 
-# Remove tokenLifetimePolicy
+# Remove claimsMappingPolicy
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Remove a [tokenLifetimePolicy](../resources/tokenlifetimepolicy.md) from an [application](../resources/application.md) or [servicePrincipal](../resources/servicePrincipal.md).
+Remove a [claimsMappingPolicy](../resources/claimsmappingpolicy.md) from a [servicePrincipal](../resources/servicePrincipal.md).
 
 ## Permissions
 
@@ -28,8 +28,7 @@ One of the following permissions is required to call this API. To learn more, in
 <!-- { "blockType": "ignored" } -->
 
 ```http
-DELETE /applications/{id}/tokenLifetimePolicies/{id}/$ref
-DELETE /servicePrincipals/{id}/tokenLifetimePolicies/{id}$ref
+DELETE /servicePrincipals/{id}/claimsMappingPolicies/{id}$ref
 ```
 
 ## Request headers
@@ -53,11 +52,11 @@ If successful, this method returns `204 No Content` response code.
 The following is an example of the request.
 <!-- {
   "blockType": "request",
-  "name": "delete_tokenlifetimepolicy_from_application"
+  "name": "delete_claimsmappingpolicy_from_serviceprincipal"
 }-->
 
 ```http
-DELETE https://graph.microsoft.com/beta/applications/{id}/tokenLifetimePolicies/{id}/$ref
+DELETE https://graph.microsoft.com/beta/servicePrincipals/{id}/claimsMappingPolicies/{id}/$ref
 ```
 
 ### Response
@@ -79,7 +78,7 @@ HTTP/1.1 204 No Content
 2019-02-04 14:57:30 UTC -->
 <!-- {
   "type": "#page.annotation",
-  "description": "Remove tokenLifetimePolicy",
+  "description": "Remove claimsMappingPolicy",
   "keywords": "",
   "section": "documentation",
   "tocPath": ""

@@ -1,17 +1,17 @@
 ---
-title: "Remove tokenLifetimePolicy"
-description: "Remove a tokenLifetimePolicy from an application or servicePrincipal."
+title: "Assign claimsMappingPolicy"
+description: "Assign a claimsMappingPolicy to a service principal."
 localization_priority: Normal
 author: "davidmu1"
 ms.prod: "microsoft-identity-platform"
 doc_type: "apiPageType"
 ---
 
-# Remove tokenLifetimePolicy
+# Assign claimsMappingPolicy
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Remove a [tokenLifetimePolicy](../resources/tokenlifetimepolicy.md) from an [application](../resources/application.md) or [servicePrincipal](../resources/servicePrincipal.md).
+Assign a [claimsMappingPolicy](../resources/claimsmappingpolicy.md) to a [servicePrincipal](../resources/servicePrincipal.md).
 
 ## Permissions
 
@@ -28,8 +28,7 @@ One of the following permissions is required to call this API. To learn more, in
 <!-- { "blockType": "ignored" } -->
 
 ```http
-DELETE /applications/{id}/tokenLifetimePolicies/{id}/$ref
-DELETE /servicePrincipals/{id}/tokenLifetimePolicies/{id}$ref
+POST /servicePrincipals/{id}/claimsMappingPolicies/$ref
 ```
 
 ## Request headers
@@ -37,14 +36,15 @@ DELETE /servicePrincipals/{id}/tokenLifetimePolicies/{id}$ref
 | Name          | Description   |
 |:--------------|:--------------|
 | Authorization | Bearer {token} |
+| Content-Type | application/json |
 
 ## Request body
 
-Do not supply a request body for this method.
+In the request body, supply the identifier of the [claimsMappingPolicy](../resources/claimsmappingpolicy.md) object (using an `@odata.id` property) that should be assigned to the service principal.
 
 ## Response
 
-If successful, this method returns `204 No Content` response code.
+If successful, this method returns `204 No Content` response code. It does not return anything in the response body.
 
 ## Examples
 
@@ -53,18 +53,21 @@ If successful, this method returns `204 No Content` response code.
 The following is an example of the request.
 <!-- {
   "blockType": "request",
-  "name": "delete_tokenlifetimepolicy_from_application"
+  "name": "create_claimsmappingpolicy_from_serviceprincipal"
 }-->
 
 ```http
-DELETE https://graph.microsoft.com/beta/applications/{id}/tokenLifetimePolicies/{id}/$ref
+POST https://graph.microsoft.com/beta/servicePrincipals/{id}/claimsMappingPolicies
+Content-Type: application/json
+
+{
+  "@odata.id":"https://graph.microsoft.com/beta/policies/claimsMappingPolicies/cd3d9b57-0aee-4f25-8ee3-ac74ef5986a9"
+}
 ```
 
 ### Response
 
 The following is an example of the response.
-
-> **Note:** The response object shown here might be shortened for readability. All the properties will be returned from an actual call.
 
 <!-- {
   "blockType": "response",
@@ -79,7 +82,7 @@ HTTP/1.1 204 No Content
 2019-02-04 14:57:30 UTC -->
 <!-- {
   "type": "#page.annotation",
-  "description": "Remove tokenLifetimePolicy",
+  "description": "Assign claimsMappingPolicy",
   "keywords": "",
   "section": "documentation",
   "tocPath": ""

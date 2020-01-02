@@ -8928,8 +8928,6 @@
             href: api/activitybasedtimeoutpolicy-update.md
           - name: Delete
             href: api/activitybasedtimeoutpolicy-delete.md
-          - name: List applied to applications
-            href: api/activitybasedtimeoutpolicy-list-appliesto.md
         - name: Claims mapping policy
           href: resources/claimsmappingpolicy.md
           items:
@@ -8945,7 +8943,7 @@
             href: api/claimsmappingpolicy-delete.md
           - name: List applied to applications
             href: api/claimsmappingpolicy-list-appliesto.md
-        - name: Token lifetime policy
+        - name: Home realm discovery policy
           href: resources/homerealmdiscoverypolicy.md
           items:
           - name: Create

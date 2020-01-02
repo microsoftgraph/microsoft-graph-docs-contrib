@@ -1,17 +1,17 @@
 ---
-title: "Remove tokenLifetimePolicy"
-description: "Remove a tokenLifetimePolicy from an application or servicePrincipal."
+title: "Delete activityBasedTimeoutPolicy"
+description: "Delete activityBasedTimeoutPolicy."
 localization_priority: Normal
 author: "davidmu1"
 ms.prod: "microsoft-identity-platform"
 doc_type: "apiPageType"
 ---
 
-# Remove tokenLifetimePolicy
+# Delete activityBasedTimeoutPolicy
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Remove a [tokenLifetimePolicy](../resources/tokenlifetimepolicy.md) from an [application](../resources/application.md) or [servicePrincipal](../resources/servicePrincipal.md).
+Delete an [activityBasedTimeoutPolicy](../resources/activitybasedtimeoutpolicy.md) object.
 
 ## Permissions
 
@@ -19,17 +19,16 @@ One of the following permissions is required to call this API. To learn more, in
 
 | Permission type                        | Permissions (from least to most privileged) |
 |:---------------------------------------|:--------------------------------------------|
-| Delegated (work or school account)     | Policy.Read.All and Application.ReadWrite.All |
+| Delegated (work or school account)     | Policy.ReadWrite.ActivityBasedTimeout |
 | Delegated (personal Microsoft account) | Not supported. |
-| Application                            | Policy.Read.All and Application.ReadWrite.OwnedBy, Policy.Read.All and Application.ReadWrite.All |
+| Application                            | Policy.ReadWrite.ActivityBasedTimeout |
 
 ## HTTP request
 
 <!-- { "blockType": "ignored" } -->
 
 ```http
-DELETE /applications/{id}/tokenLifetimePolicies/{id}/$ref
-DELETE /servicePrincipals/{id}/tokenLifetimePolicies/{id}$ref
+DELETE /policies/activityBasedTimeoutPolicies/{id}
 ```
 
 ## Request headers
@@ -44,7 +43,7 @@ Do not supply a request body for this method.
 
 ## Response
 
-If successful, this method returns `204 No Content` response code.
+If successful, this method returns a `204 No Content` response code.
 
 ## Examples
 
@@ -53,18 +52,16 @@ If successful, this method returns `204 No Content` response code.
 The following is an example of the request.
 <!-- {
   "blockType": "request",
-  "name": "delete_tokenlifetimepolicy_from_application"
+  "name": "delete_activitybasedtimeoutpolicy"
 }-->
 
 ```http
-DELETE https://graph.microsoft.com/beta/applications/{id}/tokenLifetimePolicies/{id}/$ref
+DELETE https://graph.microsoft.com/beta/policies/activityBasedTimeoutPolicies/{id}
 ```
 
 ### Response
 
 The following is an example of the response.
-
-> **Note:** The response object shown here might be shortened for readability. All the properties will be returned from an actual call.
 
 <!-- {
   "blockType": "response",
@@ -79,7 +76,7 @@ HTTP/1.1 204 No Content
 2019-02-04 14:57:30 UTC -->
 <!-- {
   "type": "#page.annotation",
-  "description": "Remove tokenLifetimePolicy",
+  "description": "Delete activityBasedTimeoutPolicy",
   "keywords": "",
   "section": "documentation",
   "tocPath": ""
