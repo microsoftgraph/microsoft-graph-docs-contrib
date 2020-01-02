@@ -21,14 +21,13 @@ Azure Active Directory (Azure AD) uses policies to control Azure AD feature beha
 |[authorizationPolicy](authorizationpolicy.md)|Represents an organization-wide directory authorization policy. | Add another permission grant policy to be enforced in your organization.|
 |[claimsMappingPolicies](claimsMappingPolicy.md)| | |
 |[homeRealmDiscoveryPolicies](homeRealmDiscoveryPolicy.md)| | |
-|[permissionGrantPolicies](permissiongrantpolicy.md)|Represents a set of conditions that are applied when application consent is performed, to determine what can be consented to by a user or set of administrators. | Create a policy that allows permissions classified as low risk to be granted by the default user role.|
 |[tokenLifetimePolicies](tokenlifetimepolicy.md)|Represents the lifetime duration of access tokens used to access protected resources.| Configure a particularly sensitive application with a shorter than default token lifetime.|
 
 ## Common use cases
 
 | Use case    | Resource      | See also |
 |:-------------|:------------|:------------|
-|Create a policy allowing end users to consent to permissions classified as low risk.| [authorizationPolicy](authorizationpolicy.md) and [permissionGrantPolicies](permissiongrantpolicy.md) | [Create permissionsGrantPolicy](../api/permissionsgrantpolicy-post-permissionsgrantpolicy.md) and add policy to [roleDefinition](unifiedroledefinition.md)
+| | | |
 
 ## Next steps
 
