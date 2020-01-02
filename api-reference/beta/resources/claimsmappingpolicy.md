@@ -42,8 +42,8 @@ Inherits from [stsPolicy](stsPolicy.md).
 |displayName|String| Display name for this policy. Required.|
 |isOrganizationDefault|Boolean|Ignore this property. The claims-mapping policy can only be applied to service principals and can't be set globally for the organization.|
 
-
 ### Properties of a claims-mapping policy definition
+
 The properties below form the JSON object that represents a claims-mapping policy. This JSON object must be **converted to a string with quotations escaped** to be inserted into the **definition** property. A few definition examples are shown below:
 
 #### Example: **definition** to include the EmployeeID and TenantCountry as claims in tokens
