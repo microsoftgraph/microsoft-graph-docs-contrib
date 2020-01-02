@@ -1,15 +1,15 @@
 ---
-title: "Create online meeting"
+title: "Create onlineMeeting"
 description: "Create an online meeting on behalf of a user specified in the request body."
-author: "VinodRavichandran"
+author: "ananmishr"
 localization_priority: Priority
 ms.prod: "cloud-communications"
 doc_type: apiPageType
 ---
 
-# Create online meeting
+# Create onlineMeeting
 
-Create an online meeting on behalf of a user by using the Object Id (oid) in the user token.
+Create an online meeting on behalf of a user by using the object ID (OID) in the user token.
 
 > **Note**: The meeting does not show up on the user's calendar.
 
@@ -40,9 +40,11 @@ In the request body, supply a JSON representation of an [onlineMeeting](../resou
 ## Response
 If successful, this method returns a `201 Created` response code and an [onlineMeeting](../resources/onlinemeeting.md) object in the response body.
 
-### Example: Create an online meeting with user token
+## Examples 
 
-#### Request
+The following example creates an online meeting with a user token.
+
+### Request
 
 # [HTTP](#tab/http)
 <!-- {
@@ -78,7 +80,7 @@ Content-Type: application/json
 ---
 
 
-#### Response
+### Response
 >**Note:** The response object shown here might be shortened for readability. 
 
 <!-- {
