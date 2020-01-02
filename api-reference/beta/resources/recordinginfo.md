@@ -1,7 +1,7 @@
 ---
 title: "recordingInfo resource type"
 description: "Recording information for a participant."
-author: "VinodRavichandran"
+author: "ananmishr"
 localization_priority: Normal
 ms.prod: "cloud-communications"
 doc_type: resourcePageType
@@ -15,10 +15,10 @@ Recording information for a participant.
 
 ## Properties
 
-| Property       | Type    | Description|
-|:---------------|:--------|:----------|
-| initiatedBy | [participantInfo](participantinfo.md) | The participant who initiated the recording. |
-| status | String | Possible values are: `recordingCapable`, `notRecording`, `startedRecording`. |
+| Property        | Type    | Description|
+|:----------------|:--------|:----------|
+| initiatedBy     | [participantInfo](participantinfo.md) | The participant who initiated the recording. |
+| recordingStatus | String | Possible values are: `unknown`, `notRecording`, `recording`, or `failed`. |
 
 ## JSON representation
 
@@ -34,7 +34,7 @@ The following is a JSON representation of the resource.
 ```json
 {
   "initiatedBy": {"@odata.type": "#microsoft.graph.participantInfo"},
-  "status": "recordingCapable | notRecording | startedRecording"
+  "recordingStatus": "unknown | notRecording | recording | failed"
 }
 ```
 
