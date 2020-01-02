@@ -1,6 +1,6 @@
 ---
 title: "tokenLifetimePolicy resource type"
-description: "Represents a policy that can control the lifetime of an access token issued by Azure Active Directory (Azure AD)."
+description: "Represents a policy that can control the lifetime of an access token issued by Azure Active Directory."
 localization_priority: Normal
 author: "davidmu1"
 ms.prod: "microsoft-identity-platform"
@@ -18,7 +18,7 @@ Represents a policy that can control the lifetime of an access or ID token issue
 
 >Note: Configuring this policy for Refresh Tokens and Session Tokens is not supported.
 
-Inherits from [policyBase](policyBase.md).
+Inherits from [stsPolicy](stsPolicy.md).
 
 ## Methods
 
@@ -27,7 +27,7 @@ Inherits from [policyBase](policyBase.md).
 | [Create tokenLifetimePolicy](../api/tokenlifetimepolicy-post-tokenlifetimepolicies.md) | [tokenLifetimePolicy](tokenlifetimepolicy.md) | Create a tokenLifetimePolicy object. |
 | [Get tokenLifetimePolicy](../api/tokenlifetimepolicy-get.md) | [tokenLifetimePolicy](tokenlifetimepolicy.md) | Read properties and relationships of a tokenLifetimePolicy object. |
 | [List tokenLifetimePolicies](../api/tokenlifetimepolicy-list.md) | [tokenLifetimePolicy](tokenlifetimepolicy.md) | Read properties and relationships of tokenLifetimePolicies objects. |
-| [Update tokenLifetimePolicy](../api/tokenlifetimepolicy-update.md) | [tokenLifetimePolicy](tokenlifetimepolicy.md) | Update a tokenLifetimePolicy object. |
+| [Update tokenLifetimePolicy](../api/tokenlifetimepolicy-update.md) | None | Update a tokenLifetimePolicy object. |
 | [Delete tokenLifetimePolicy](../api/tokenlifetimepolicy-delete.md) | None | Delete a tokenLifetimePolicy object. |
 | [List appliesTo](../api/tokenlifetimepolicy-list-appliesto.md) | [directoryObject](directoryobject.md) collection | Get the list of directoryObjects that this policy has been applied to. |
 
@@ -36,7 +36,7 @@ Inherits from [policyBase](policyBase.md).
 | Property     | Type        | Description |
 |:-------------|:------------|:------------|
 |id|String| Unique identifier for this policy. Read-only.|
-|definition|String collection| A string collection containing a JSON string that defines the rules and settings for this policy. see below for more details about the JSON schema for this property. Required.|
+|definition|String collection| A string collection containing a JSON string that defines the rules and settings for this policy. See below for more details about the JSON schema for this property. Required.|
 |description|String| Description for this policy.|
 |displayName|String| Display name for this policy. Required.|
 |isOrganizationDefault|Boolean|If set to true, activates this policy. There can be many policies for the same policy type, but only one can be activated as the organization default. Optional, default value is false.|
@@ -60,7 +60,7 @@ The properties below form the JSON object that represents a token lifetime polic
 
 | Property	   | Type	|Description| Min Value | Max Value | Default Value|
 |:---------------|:--------|:----------|:--------|:--------|:----|
-|AccessTokenLifetime|String|Controls how long **both access and ID tokens** are considered valid.|10 minutes|1 day|1 hour|
+|AccessTokenLifetime|String|Controls how long both access and ID tokens are considered valid.|10 minutes|1 day|1 hour|
 |Version|Integer|Set value of 1. Required.|None|None|None|
 
 ## Relationships

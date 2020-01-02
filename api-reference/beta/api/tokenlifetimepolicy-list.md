@@ -1,6 +1,6 @@
 ---
 title: "List tokenLifetimePolicies"
-description: "Get a list of tokenlifetimepolicy objects."
+description: "Get a list of tokenLifetimePolicy objects."
 localization_priority: Normal
 author: "davidmu1"
 ms.prod: "microsoft-identity-platform"
@@ -11,7 +11,7 @@ doc_type: "apiPageType"
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Get a list of tokenlifetimepolicy objects.
+Get a list of [tokenLifetimePolicy](../resources/tokenlifetimepolicy.md) objects.
 
 ## Permissions
 

@@ -1,6 +1,6 @@
 ---
 title: "Update tokenlifetimepolicy"
-description: "Update the properties of tokenlifetimepolicy object."
+description: "Update the properties of tokenLifetimePolicy object."
 localization_priority: Normal
 author: "davidmu1"
 ms.prod: "microsoft-identity-platform"
@@ -11,7 +11,7 @@ doc_type: "apiPageType"
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Update the properties of tokenlifetimepolicy object.
+Update the properties of a [tokenLifetimePolicy](../resources/tokenlifetimepolicy.md) object.
 
 ## Permissions
 
@@ -51,9 +51,9 @@ In the request body, supply the values for relevant fields that should be update
 
 ## Response
 
-If successful, this method returns `204 No Content` response code. It does not return anything in the response body.
+If successful, this method returns a `204 No Content` response code. It does not return anything in the response body.
 
-## Examples
+## Example
 
 ### Request
 

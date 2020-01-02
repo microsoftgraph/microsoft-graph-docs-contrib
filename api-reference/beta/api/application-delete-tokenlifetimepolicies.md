@@ -7,7 +7,7 @@ ms.prod: "microsoft-identity-platform"
 doc_type: "apiPageType"
 ---
 
-# Apply tokenLifetimePolicy
+# Remove tokenLifetimePolicy
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
@@ -28,8 +28,8 @@ One of the following permissions is required to call this API. To learn more, in
 <!-- { "blockType": "ignored" } -->
 
 ```http
-DELETE /applications/{id}/tokenLifetimePolicies/$ref
-DELETE /servicePrincipals/{id}/tokenLifetimePolicies/$ref
+DELETE /applications/{id}/tokenLifetimePolicies/{id}/$ref
+DELETE /servicePrincipals/{id}/tokenLifetimePolicies/{id}$ref
 ```
 
 ## Request headers
@@ -40,11 +40,11 @@ DELETE /servicePrincipals/{id}/tokenLifetimePolicies/$ref
 
 ## Request body
 
-In the request body, supply an `@odata.id` property to the [tokenLifetimePolicy](../resources/tokenlifetimepolicy.md) object that should be applied.
+Do not supply a request body for this method.
 
 ## Response
 
-If successful, this method returns `204 No Content` response code. It does not return anything in the response body.
+If successful, this method returns `204 No Content` response code.
 
 ## Examples
 
@@ -57,7 +57,7 @@ The following is an example of the request.
 }-->
 
 ```http
-DELETE https://graph.microsoft.com/beta/applications/{id}/tokenLifetimePolicies
+DELETE https://graph.microsoft.com/beta/applications/{id}/tokenLifetimePolicies/{id}/$ref
 ```
 
 ### Response
@@ -79,7 +79,7 @@ HTTP/1.1 204 No Content
 2019-02-04 14:57:30 UTC -->
 <!-- {
   "type": "#page.annotation",
-  "description": "Create tokenLifetimePolicy",
+  "description": "Remove tokenLifetimePolicy",
   "keywords": "",
   "section": "documentation",
   "tocPath": ""

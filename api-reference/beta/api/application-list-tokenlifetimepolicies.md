@@ -1,6 +1,6 @@
 ---
 title: "List assigned tokenLifetimePolicies"
-description: "List assigned tokenLifetimePolicies to an application or servicePrincipal."
+description: "List tokenLifetimePolicies that are assigned to an application or servicePrincipal."
 localization_priority: Normal
 author: "davidmu1"
 ms.prod: "microsoft-identity-platform"
@@ -11,7 +11,7 @@ doc_type: "apiPageType"
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-List the tokenLifetimePolicies assigned to an [application](../resources/application.md) or [servicePrincipal](../resources/servicePrincipal.md).
+List the [tokenLifetimePolicy](../resources/tokenlifetimepolicy.md) objects that are assigned to an [application](../resources/application.md) or [servicePrincipal](../resources/servicePrincipal.md)..
 
 ## Permissions
 
@@ -95,7 +95,7 @@ Content-type: application/json
 2019-02-04 14:57:30 UTC -->
 <!-- {
   "type": "#page.annotation",
-  "description": "Create tokenLifetimePolicy",
+  "description": "List assigned tokenLifetimePolicy",
   "keywords": "",
   "section": "documentation",
   "tocPath": ""

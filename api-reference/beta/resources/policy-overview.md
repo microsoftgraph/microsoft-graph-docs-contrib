@@ -17,7 +17,10 @@ Azure Active Directory (Azure AD) uses policies to control Azure AD feature beha
 
 | Policy type       | Description | Examples |
 |:-------------|:------------|:------------|
+|[activityBasedTimeoutPolicies](activityBasedTimeoutPolicy.md)| | |
 |[authorizationPolicy](authorizationpolicy.md)|Represents an organization-wide directory authorization policy. | Add another permission grant policy to be enforced in your organization.|
+|[claimsMappingPolicies](claimsMappingPolicy.md)| | |
+|[homeRealmDiscoveryPolicies](homeRealmDiscoveryPolicy.md)| | |
 |[permissionGrantPolicies](permissiongrantpolicy.md)|Represents a set of conditions that are applied when application consent is performed, to determine what can be consented to by a user or set of administrators. | Create a policy that allows permissions classified as low risk to be granted by the default user role.|
 |[tokenLifetimePolicies](tokenlifetimepolicy.md)|Represents the lifetime duration of access tokens used to access protected resources.| Configure a particularly sensitive application with a shorter than default token lifetime.|
 
@@ -30,4 +33,4 @@ Azure Active Directory (Azure AD) uses policies to control Azure AD feature beha
 ## Next steps
 
 * Review the different policy resouce types listed above and their various methods.
-* Try the API in the [Graph Explorer](https://developer.microsoft.com/graph/graph-explorer).*
+* Try the API in the [Graph Explorer](https://developer.microsoft.com/graph/graph-explorer).

@@ -11,7 +11,7 @@ doc_type: "apiPageType"
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Assign a tokenLifetimePolicy to an [application](../resources/application.md) or [servicePrincipal](../resources/servicePrincipal.md).
+Assign a [tokenLifetimePolicy](../resources/tokenlifetimepolicy.md) to an [application](../resources/application.md) or [servicePrincipal](../resources/servicePrincipal.md).
 
 ## Permissions
 
@@ -41,7 +41,7 @@ POST /servicePrincipals/{id}/tokenLifetimePolicies/$ref
 
 ## Request body
 
-In the request body, supply an `@odata.id` property to the [tokenLifetimePolicy](../resources/tokenlifetimepolicy.md) object that should be applied.
+In the request body, supply the identifier of the [tokenLifetimePolicy](../resources/tokenlifetimepolicy.md) object (using an `@odata.id` property) that should be assigned to the application or service principal.
 
 ## Response
 
@@ -70,8 +70,6 @@ Content-Type: application/json
 
 The following is an example of the response.
 
-> **Note:** The response object shown here might be shortened for readability. All the properties will be returned from an actual call.
-
 <!-- {
   "blockType": "response",
   "truncated": true
@@ -85,7 +83,7 @@ HTTP/1.1 204 No Content
 2019-02-04 14:57:30 UTC -->
 <!-- {
   "type": "#page.annotation",
-  "description": "Create tokenLifetimePolicy",
+  "description": "Assign tokenLifetimePolicy",
   "keywords": "",
   "section": "documentation",
   "tocPath": ""

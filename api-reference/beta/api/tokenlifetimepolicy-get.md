@@ -1,6 +1,6 @@
 ---
 title: "Get tokenLifetimePolicy"
-description: "Retrieve the properties and relationships of tokenlifetimepolicy object."
+description: "Retrieve the properties and relationships of tokenLifetimePolicy object."
 localization_priority: Normal
 author: "davidmu1"
 ms.prod: "microsoft-identity-platform"
@@ -11,7 +11,7 @@ doc_type: "apiPageType"
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Retrieve the properties and relationships of tokenlifetimepolicy object.
+Retrieve the properties and relationships of a [tokenLifetimePolicy](../resources/tokenlifetimepolicy.md) object.
 
 ## Permissions
 
