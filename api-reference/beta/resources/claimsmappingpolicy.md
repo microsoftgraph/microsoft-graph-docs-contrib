@@ -111,7 +111,7 @@ The following is a JSON representation of the resource.
 
   ],
   "@odata.type": "microsoft.graph.claimsMappingPolicy",
-  "baseType": "stsPolicy",
+  "baseType": "microsoft.graph.stsPolicy",
   "keyProperty": "id"
 }-->
 
