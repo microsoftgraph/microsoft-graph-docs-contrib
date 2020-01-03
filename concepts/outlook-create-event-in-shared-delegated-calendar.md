@@ -70,7 +70,7 @@ Content-type: application/json
         "address": "AlexW@contoso.OnMicrosoft.com"
     }
 }
-
+```
 
 
 ## Step 2: Adele creates and sends an invitation on Alex' behalf
