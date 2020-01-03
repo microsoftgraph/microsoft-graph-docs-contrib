@@ -191,7 +191,6 @@ Find a user account in a B2C tenant, using a sign-in name (also known as a local
 
 The following is an example of the request.
 
-# [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "get_signinname_users"
