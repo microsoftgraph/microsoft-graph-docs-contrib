@@ -16,7 +16,7 @@ The walkthrough below uses the scenario where Alex has delegated his primary cal
 
 The walkthrough describes a few subsequent steps:
 1. [Adele gets the calendar that Alex has delegated to her](#step-1-adele-gets-the-delegated-calendar).
-2. [Adele sends a meeting invitation to Christie and Megan on Alex' behalf](#step-2-adele-creates-and-sends-an-invitation-on-Alex-behalf). 
+2. [Adele sends a meeting invitation to Christie and Megan on Alex' behalf](#step-2-adele-creates-and-sends-an-invitation-on-alex-behalf). 
 3. [Christie receives the meeting request, and inspects the associated event in her calendar](#step-3-christie-receives-meeting-request-and-inspects-the-associated-event-in-her-calendar).
 4. [Christie responds tentative to the invitation](#step-4-christie-responds-to-the-meeting-request).
 5. [Adele receives Christie's response message](#step-5-adele-receives-the-response-message).
