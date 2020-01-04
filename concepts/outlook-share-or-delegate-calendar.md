@@ -21,15 +21,15 @@ The rest of this article is based on the following example scenario:
 
 After the sharing and delegation have been set up and accepted in Outlook, apps can then use the Microsoft Graph API to do the following tasks:
 
-- [Get calendar information about sharees, delegates, and allowed permissions, and update individual permissions](#get-calendar-information-about-sharees-delegates-and-allowed-permissions-and-update-individual-permissions).
+- [Get calendar information about sharees, delegates, and allowed permissions, and update individual permissions](#get-calendar-information-about-sharees-and-delegates-and-update-individual-permissions).
 - [Get the properties that describe the sharing or delegation of the calendar](#get-properties-of-a-shared-or-delegated-calendar).
-- [Get or set the mailbox setting for the calendar owner to continue to receive meeting requests and responses for a delegated calendar](#get-or-set-the-mailbox-setting-for-calendar-owner-to-receive-meeting-requests-and-responses).
+- [Get or set mailbox setting to receive meeting requests and responses for a delegated calendar](#get-or-set-mailbox-setting-to-receive-meeting-requests-and-responses).
 - [Delete a sharee or delegate of a calendar](#delete-a-sharee-or-delegate-of-a-calendar).
 
 > [!NOTE]
 > Most of the API for sharing or delegation is [in preview and available only in the beta version](versioning-and-support.md#beta-version).
 
-## Get calendar information about sharees, delegates, and allowed permissions, and update individual permissions
+## Get calendar information about sharees and delegates, and update individual permissions
 
 In this section:
 
@@ -318,7 +318,7 @@ Content-type: application/json
 ```
 
 
-## Get or set the mailbox setting for calendar owner to receive meeting requests and responses
+## Get or set mailbox setting to receive meeting requests and responses
 
 In this section:
 
@@ -445,7 +445,7 @@ Content-type: application/json
 
 In the following example, Alex deletes Megan as a sharee of the "Kids parties" calendar.
 
-!-- {
+<!-- {
   "blockType": "request",
   "name": "delete_sharee",
   "sampleKeys": ["AlexW@contoso.OnMicrosoft.com", "AAMkADAwAABf02bAAAA=", "L289RXhjaGFuZ2VMYWJTWVnYW5C"]
@@ -478,4 +478,4 @@ Find out more about:
 - [Get Outlook events in a shared or delegated calendar](outlook-get-shared-events-calendars.md)
 - [Create Outlook events in a shared or delegated calendar](outlook-create-event-in-shared-delegated-calendar.md)
 - [Why integrate with Outlook calendar](outlook-calendar-concept-overview.md)
-- The [calendar API](/graph/api/resources/calendar?view=graph-rest-1.0) in Microsoft Graph v1.0.
+- The [calendar API](/graph/api/resources/calendar?view=graph-rest-beta) in Microsoft Graph beta.

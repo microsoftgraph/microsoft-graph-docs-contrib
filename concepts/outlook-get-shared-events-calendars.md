@@ -16,7 +16,7 @@ The examples below use this scenario: in Outlook, Alex has shared his primary ca
 
 > **Note**:
 
-> - The approach shown in the three examples below - specifying the owner's identity (Alex) and the `calendar` shortcut - use calendar and event IDs that correspond to only Alex' mailbox. Specifying such IDs with Megan's identity in subsequent requests returns an error. Instead, first use Megan's identity to get all the calendars that Megan has access to, to identify the IDs of any shared or delegated calendars. You can then use Megan's identity with these calendar IDs in subsequent requests.
+> - The approach shown in the three examples below - specifying the owner's identity (Alex) and the `calendar` shortcut - use calendar and event IDs that correspond to only Alex' mailbox. Specifying such IDs with Megan's identity in subsequent requests would return an error. Instead, first use Megan's identity to get all the calendars that Megan has access to, to identify the IDs of any shared or delegated calendars. You can then use Megan's identity with these calendar IDs in subsequent requests.
 
 > - The sharing permissions (Calendars.Read.Shared or Calendars.ReadWrite.Shared) allow you to read or write events in a shared or delegated calendar. They do not support [subscribing to change notifications](webhooks.md) on items in such folders. To set up change notification subscriptions on events in a shared, delegated, or any other user or resource calendar in the tenant, use the application permission, Calendars.Read.
 
@@ -64,6 +64,10 @@ If Alex has shared a _custom_ calendar (as an example, a calendar named "Kids pa
 
 1. Signed in as Adele, use either the following requests to get all the calendars that Adele has access to, so to get the ID of the shared custom calendar.
 
+    <!-- {
+      "blockType": "request",
+      "name": "get_all_Adele_calendars"
+    }-->
     ```http
     GET https://graph.microsoft.com/v1.0/me/calendars
     GET https://graph.microsoft.com/v1.0/users/{Adele-userId | Adele-userPrincipalName}/calendars
@@ -71,6 +75,13 @@ If Alex has shared a _custom_ calendar (as an example, a calendar named "Kids pa
 
     A successful response includes the response code HTTP 200, and the shared calendar ("Kids parties") as the second calendar in the response.
 
+    <!-- {
+      "blockType": "response",
+      "name": "get_all_Adele_calendars",
+      "truncated": true,
+      "@odata.type": "microsoft.graph.calendar",
+      "isCollection": true
+    } -->
     ```http
     HTTP/1.1 200 OK
     Content-type: application/json
@@ -92,7 +103,7 @@ If Alex has shared a _custom_ calendar (as an example, a calendar named "Kids pa
                 }
             },
             {
-                "id": "AAMkADU5NGAAA0POeX5SHnRaRqdoI4oeRpAABf0JlyAAA=",
+                "id": "AAMkADAABf0JlyAAA=",
                 "name": "Kids parties",
                 "color": "lightYellow",
                 "changeKey": "NDznl+Uh50WkanaCOKHkaQAAYumJRQ==",
@@ -106,18 +117,20 @@ If Alex has shared a _custom_ calendar (as an example, a calendar named "Kids pa
             }
         ]
     }
-```
+    ```
+
 2. On behalf of Adele, get one or more events, or get the shared calendar using the second calendar ID in the response from step 1.
 
+    <!-- { "blockType": "ignored" } -->
     ```http
-    GET https://graph.microsoft.com/v1.0/me/calendars/AAMkADU5NGAAA0POeX5SHnRaRqdoI4oeRpAABf0JlyAAA=/events/{id}
-    GET https://graph.microsoft.com/v1.0/users/{Adele-userId | Adele-userPrincipalName}/calendars/AAMkADU5NGAAA0POeX5SHnRaRqdoI4oeRpAABf0JlyAAA=/events/{id}
+    GET https://graph.microsoft.com/v1.0/me/calendars/AAMkADAABf0JlyAAA=/events/{id}
+    GET https://graph.microsoft.com/v1.0/users/{Adele-userId | Adele-userPrincipalName}/calendars/AAMkADAABf0JlyAAA=/events/{id}
 
-    GET https://graph.microsoft.com/v1.0/me/calendars/AAMkADU5NGAAA0POeX5SHnRaRqdoI4oeRpAABf0JlyAAA=/events
-    GET https://graph.microsoft.com/v1.0/users/{Adele-userId | Adele-userPrincipalName}/calendars/AAMkADU5NGAAA0POeX5SHnRaRqdoI4oeRpAABf0JlyAAA=/events
+    GET https://graph.microsoft.com/v1.0/me/calendars/AAMkADAABf0JlyAAA=/events
+    GET https://graph.microsoft.com/v1.0/users/{Adele-userId | Adele-userPrincipalName}/calendars/AAMkADAABf0JlyAAA=/events
     
-    GET https://graph.microsoft.com/v1.0/me/calendars/AAMkADU5NGAAA0POeX5SHnRaRqdoI4oeRpAABf0JlyAAA=
-    GET https://graph.microsoft.com/v1.0/users/{Adele-userId | Adele-userPrincipalName}/calendars/AAMkADU5NGAAA0POeX5SHnRaRqdoI4oeRpAABf0JlyAAA=
+    GET https://graph.microsoft.com/v1.0/me/calendars/AAMkADAABf0JlyAAA=
+    GET https://graph.microsoft.com/v1.0/users/{Adele-userId | Adele-userPrincipalName}/calendars/AAMkADAABf0JlyAAA=
     ```
 
 On successful completion, you'll get HTTP 200 OK and the requested event, events, or calendar that Alex has shared with Adele.

@@ -91,11 +91,11 @@ Content-type: application/json
 ```
 
 > **NOTE**
-> If Adele got the delegated calendar by specifying Alex' identity and the `calendar` shortcut as follows:
+> If Adele got the delegated calendar by specifying Alex' identity and the `calendar` shortcut like below:
 
-<!-- {
-  "blockType": "ignored"
-}-->
+    <!-- {
+      "blockType": "ignored"
+    }-->
     ```http
     GET https://graph.microsoft.com/v1.0/users/AlexW@contoso.OnMicrosoft.com/calendar
     ```
