@@ -91,16 +91,7 @@ Content-type: application/json
 ```
 
 > **NOTE**
-> If Adele got the delegated calendar by specifying Alex' identity and the `calendar` shortcut like below:
-
-    <!-- {
-      "blockType": "ignored"
-    }-->
-    ```http
-    GET https://graph.microsoft.com/v1.0/users/AlexW@contoso.OnMicrosoft.com/calendar
-    ```
-
-> The request would succeed for Adele as a delegate. However, the returned calendar ID applies to only Alex' mailbox. For Adele to access that delegated calendar subsequently, get the calendar ID using Adele's identity in the GET request.
+> If Adele got the delegated calendar by specifying Alex' identity and the `calendar` shortcut as in `GET https://graph.microsoft.com/v1.0/users/AlexW@contoso.OnMicrosoft.com/calendar`, the request would succeed for Adele as a delegate. However, the returned calendar ID applies to only Alex' mailbox. For Adele to access that delegated calendar subsequently, get the calendar ID using Adele's identity in the GET request.
 
 ## Step 2: Adele creates and sends an invitation on Alex' behalf
 
