@@ -1,6 +1,6 @@
 ---
 title: "Get Outlook events in a shared or delegated calendar"
-description: "In Outlook, customers can share a calendar with other users and let them view or modify events in that calendar. Customers can also grant a delegate to act on their  behalf, to receive or respond to meeting requests, or create or change items in the calendar."
+description: "In Outlook, a calendar owner can share a calendar with other users and let them view or modify events in that calendar; the calendar can be a custom calendar or the primary calendar. The owner can also grant a delegate to act on their behalf, to receive or respond to meeting requests, or create or change items in the primary calendar of the email account."
 author: "angelgolfer-ms"
 localization_priority: Priority
 ms.prod: "outlook"
@@ -8,13 +8,17 @@ ms.prod: "outlook"
 
 # Get Outlook events in a shared or delegated calendar
 
-In Outlook, a calendar owner can share a calendar with other users and let them view or modify events in that calendar; the calendar can be a custom calendar or the primary calendar. The owner can also grant a delegate to act on their behalf, to receive or respond to meeting requests, or create or change items in the primary calendar of the email account.
+In Outlook, a calendar owner can share a calendar with other users and let them view or modify events in that calendar; the shared calendar can be a custom calendar or the primary calendar. The owner can also grant a delegate to their primary calendar and act on their behalf, to receive or respond to meeting requests, or create or change items in the primary calendar.
 
 Programmatically, Microsoft Graph supports reading and writing events in calendars that have been shared by other users, as well as reading the shared calendars. The support also applies to calendars that have been delegated. The rest of this article describes reading events in a shared or delegated calendar. For creating events, refer to [Create Outlook events in a shared or delegated calendar](outlook-create-event-in-shared-delegated-calendar.md).
 
-The examples below use this scenario: in Outlook, Alex has shared his primary calendar with Megan and given Megan read permission. If Megan signs into your app and provides _delegated permissions_ (Calendars.Read.Shared or Calendars.ReadWrite.Shared), on behalf of Megan, your app can specify Alex' ID and the `calendar` shortcut to access Alex' primary calendar and its events.
+The examples below use this scenario: in Outlook, Alex has shared his primary calendar with Megan and given Megan read permissions. If Megan signs into your app and provides _delegated permissions_ (Calendars.Read.Shared or Calendars.ReadWrite.Shared), on behalf of Megan, your app can specify Alex' identity and the `calendar` shortcut to access Alex' primary calendar and its events.
 
-> **Note** The sharing permissions (Calendars.Read.Shared or Calendars.ReadWrite.Shared) allow you to read or write events in a shared or delegated calendar. They do not support [subscribing to change notifications](webhooks.md) on items in such folders. To set up change notification subscriptions on events in a shared, delegated, or any other user or resource calendar in the tenant, use the application permission, Calendars.Read.
+> **Note**:
+
+> - The approach shown in the three examples below - specifying the owner's identity (Alex) and the `calendar` shortcut - use calendar and event IDs that correspond to only Alex' mailbox. Specifying such IDs with Megan's identity in subsequent requests returns an error. Instead, first use Megan's identity to get all the calendars that Megan has access to, to identify the IDs of any shared or delegated calendars. You can then use Megan's identity with these calendar IDs in subsequent requests.
+
+> - The sharing permissions (Calendars.Read.Shared or Calendars.ReadWrite.Shared) allow you to read or write events in a shared or delegated calendar. They do not support [subscribing to change notifications](webhooks.md) on items in such folders. To set up change notification subscriptions on events in a shared, delegated, or any other user or resource calendar in the tenant, use the application permission, Calendars.Read.
 
 ## Get an event in the shared, primary calendar
 
@@ -51,21 +55,21 @@ On successful completion, you'll get HTTP 200 OK and a [calendar](/graph/api/res
 
 The same GET capabilities apply if Alex has delegated Megan access to Alex' primary calendar, or if Alex has delegated Megan his entire mailbox.
 
-If Alex has not shared his primary calendar with Megan, nor has he delegated his primary calendar or mailbox to Megan, specifying Alex’s user ID or user principal name in the preceding GET operations will return an error. 
+If Alex has not shared nor delegated his primary calendar with Megan, specifying Alex’s user ID or user principal name in the preceding GET operations will return an error. 
 
 
 ## Get events or calendar in shared, custom calendar
 
 If Alex has shared a _custom_ calendar (as an example, a calendar named "Kids parties") with Adele, and Adele has provided delegated permissions (Calendars.Read or Calendars.ReadWrite), your app can get the events or calendar as if the shared calendar is one of Adele's calendars, as described below.
 
-1. Signed in as Adele, use either the following requests to get all the calendars that Adele has access to, in order to get the ID of the shared custom calendar.
+1. Signed in as Adele, use either the following requests to get all the calendars that Adele has access to, so to get the ID of the shared custom calendar.
 
     ```http
     GET https://graph.microsoft.com/v1.0/me/calendars
     GET https://graph.microsoft.com/v1.0/users/{Adele-userId | Adele-userPrincipalName}/calendars
     ```
 
-    The shared calendar ("Kids parties") is the second calendar returned in the response.
+    A successful response includes the response code HTTP 200, and the shared calendar ("Kids parties") as the second calendar in the response.
 
     ```http
     HTTP/1.1 200 OK
@@ -103,7 +107,7 @@ If Alex has shared a _custom_ calendar (as an example, a calendar named "Kids pa
         ]
     }
 ```
-2. On behalf of Adele, get one or more events, or the shared calendar using the second calendar ID in the response from step 1.
+2. On behalf of Adele, get one or more events, or get the shared calendar using the second calendar ID in the response from step 1.
 
     ```http
     GET https://graph.microsoft.com/v1.0/me/calendars/AAMkADU5NGAAA0POeX5SHnRaRqdoI4oeRpAABf0JlyAAA=/events/{id}

@@ -12,7 +12,7 @@ In Outlook, customers can share a calendar with other users and let them view, c
 
 Programmatically, Microsoft Graph supports reading or writing events in calendars that have been shared by other users, as well as reading the shared calendars. The support also applies to calendars that have been delegated. The rest of this article walks through creating a meeting event in a shared or delegated calendar. For getting events, refer to [Get Outlook events in a shared or delegated calendar](outlook-get-shared-events-calendars.md).
 
-The walkthrough below uses the scenario where Alex has delegated his primary calendar to Adele in Outlook, and kept the default Outlook mailbox setting to direct meeting requests and responses to only delegates. (In the beta version, this corresponds to the **delegateMeetingMessageDeliveryOptions** property of Alex' [mailboxSettings](/graph/api/resources/mailboxsettings?view=graph-rest-beta) being set as the default value `sendToDelegateOnly`.) 
+The walkthrough below uses the example scenario where Alex has delegated his primary calendar to Adele in Outlook, and kept the default Outlook mailbox setting to direct meeting requests and responses to only delegates. (In the beta version, this setting corresponds to the **delegateMeetingMessageDeliveryOptions** property of Alex' [mailboxSettings](/graph/api/resources/mailboxsettings?view=graph-rest-beta) set as the default value `sendToDelegateOnly`.) 
 
 The walkthrough describes a few subsequent steps:
 1. [Adele gets the calendar that Alex has delegated to her](#step-1-adele-gets-the-delegated-calendar).
@@ -30,48 +30,77 @@ If Alex has shared and not delegated his calendar with Adele:
 
 ## Step 1: Adele gets the delegated calendar
 
-Signed in as Adele, get the calendar that Alex has delegated to her by using Alex' ID and the `calendar` shortcut:
+Signed in as Adele, get the calendars she has access to and identify the one Alex has delegated to her, so to use it in the next step to create an event in that calendar. 
 
 <!-- {
   "blockType": "request",
-  "name": "get_delegated_calendar"
+  "name": "get_Adele_calendars"
 }-->
 ```http
-GET https://graph.microsoft.com/v1.0/users/AlexW@contoso.OnMicrosoft.com/calendar
+GET https://graph.microsoft.com/v1.0/me/calendars
 ```
 
-Notice a successful response includes the response code HTTP 200, the calendar delegated by Alex, and the following properties:
+Notice a successful response includes the response code HTTP 200, Adele's own primary calendar, and the calendar delegated by Alex with the following properties:
 
 - **name** is `Alex Wilber` indicating it is Alex' primary calendar.
-- **canShare** is false since Adele is not the calendar owner.
-- **canEdit** is true since as delegate, Adele has write access to non-private events of Alex'.
+- **canShare** is false since Adele is only a delegate and not the calendar owner.
+- **canEdit** is true since as delegate, Adele has write access to non-private events in the delegated calendar.
 
 <!-- {
   "blockType": "response",
-  "name": "get_delegated_calendar",
+  "name": "get_Adele_calendars",
   "truncated": true,
-  "@odata.type": "microsoft.graph.calendar"
+  "@odata.type": "microsoft.graph.calendar",
+  "isCollection": true
 } -->
 ```http
 HTTP/1.1 200 OK
 Content-type: application/json
 
 {
-    "@odata.context": "https://graph.microsoft.com/v1.0/$metadata#users('AlexW@contoso.OnMicrosoft.com')/calendar/$entity",
-    "id": "AAMkADRpAABf0JlzAAA=",
-    "name": "Alex Wilber",
-    "color": "auto",
-    "changeKey": "NDznl+Uh50WkanaCOKHkaQAAX8m4eQ==",
-    "canShare": false,
-    "canViewPrivateItems": false,
-    "canEdit": true,
-    "owner": {
-        "name": "Alex Wilber",
-        "address": "AlexW@contoso.OnMicrosoft.com"
-    }
+    "@odata.context": "https://graph.microsoft.com/v1.0/$metadata#users('d3b9214b-dd8b-441d-b7dc-c446c9fa0e69')/calendars",
+    "value": [
+        {
+            "id": "AQMkADGkAAAJMjAAAAA==",
+            "name": "Calendar",
+            "color": "auto",
+            "changeKey": "NDznl+Uh50WkanaCOKHkaQAAAAACXQ==",
+            "canShare": true,
+            "canViewPrivateItems": true,
+            "canEdit": true,
+            "owner": {
+                "name": "Adele Vance",
+                "address": "AdeleV@contoso.OnMicrosoft.com"
+            }
+        },
+        {
+            "id": "AAMkADRpAABf0JlzAAA=",
+            "name": "Alex Wilber",
+            "color": "auto",
+            "changeKey": "NDznl+Uh50WkanaCOKHkaQAAX8m4eQ==",
+            "canShare": false,
+            "canViewPrivateItems": false,
+            "canEdit": true,
+            "owner": {
+                "name": "Alex Wilber",
+                "address": "AlexW@contoso.OnMicrosoft.com"
+            }
+        }
+    ]
 }
 ```
 
+> **NOTE**
+> If Adele got the delegated calendar by specifying Alex' identity and the `calendar` shortcut as follows:
+
+<!-- {
+  "blockType": "ignored"
+}-->
+    ```http
+    GET https://graph.microsoft.com/v1.0/users/AlexW@contoso.OnMicrosoft.com/calendar
+    ```
+
+> The request would succeed for Adele as a delegate. However, the returned calendar ID applies to only Alex' mailbox. For Adele to access that delegated calendar subsequently, get the calendar ID using Adele's identity in the GET request.
 
 ## Step 2: Adele creates and sends an invitation on Alex' behalf
 
