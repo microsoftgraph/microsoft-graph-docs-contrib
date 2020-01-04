@@ -410,7 +410,7 @@ Content-type: application/json
 
 The following example updates the **delegateMeetingMessageDeliveryOptions** property to `sendToDelegateAndPrincipal`, to have Outlook direct meeting requests and responses of the delegated calendar to all delegates and the owner.
 
-!-- {
+<!-- {
   "blockType": "request",
   "name": "patch_mailboxsettings_owner",
   "sampleKeys": ["AlexW@contoso.OnMicrosoft.com"]
