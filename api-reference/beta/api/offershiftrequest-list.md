@@ -1,17 +1,17 @@
 ---
-title: "Get swapShiftsChangeRequest"
-description: "Retrieve the properties and relationships of a swapShiftsChangeRequest object."
+title: "List offerShiftRequest"
+description: "Retrieve the properties and relationships of all offerShiftRequest objects in a team."
 localization_priority: Normal
 author: "akumar39"
 ms.prod: "microsoft-teams"
 doc_type: "apiPageType"
 ---
 
-# Get swapShiftsChangeRequest
+# List offerShiftRequest
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Retrieve the properties and relationships of a [swapShiftsChangeRequest](../resources/swapshiftschangerequest.md) object.
+Retrieve the properties and relationships of all [offerShiftRequest](../resources/offershiftrequest.md) objects in a team.
 
 ## Permissions
 
@@ -19,9 +19,9 @@ One of the following permissions is required to call this API. To learn more, in
 
 | Permission type                        | Permissions (from least to most privileged) |
 |:---------------------------------------|:--------------------------------------------|
-| Delegated (work or school account)     | Group.ReadWrite.All |
+| Delegated (work or school account)     | Group.Read.All, Group.ReadWrite.All |
 | Delegated (personal Microsoft account) | Not supported. |
-| Application | Schedule.Read.All*, Schedule.ReadWrite.All* |
+| Application                            | Schedule.Read.All*, Schedule.ReadWrite.All* |
 
 >\* **Important:** Application permissions are currently in private preview only and are not available for public use.
 
@@ -30,7 +30,7 @@ One of the following permissions is required to call this API. To learn more, in
 <!-- { "blockType": "ignored" } -->
 
 ```http
-GET /teams/{id}/schedule/swapShiftsChangeRequests
+GET /teams/schedule/offerShiftRequests
 ```
 
 ## Optional query parameters
@@ -49,7 +49,7 @@ Do not supply a request body for this method.
 
 ## Response
 
-If successful, this method returns a `200 OK` response code and the requested [swapShiftsChangeRequest](../resources/swapshiftschangerequest.md) object in the response body.
+If successful, this method returns a `200 OK` response code and the requested [offerShiftRequest](../resources/offershiftrequest.md) object in the response body.
 
 ## Examples
 
@@ -58,11 +58,11 @@ If successful, this method returns a `200 OK` response code and the requested [s
 The following is an example of the request.
 <!-- {
   "blockType": "request",
-  "name": "get_swapshiftschangerequest"
+  "name": "get_offershiftrequest"
 }-->
 
 ```http
-GET https://graph.microsoft.com/beta/teams/{id}/schedule/swapShiftsChangeRequests/{swapShiftsChangeRequestId}
+GET https://graph.microsoft.com/beta/teams/schedule/offerShiftRequests
 ```
 
 ### Response
@@ -74,7 +74,7 @@ The following is an example of the response.
 <!-- {
   "blockType": "response",
   "truncated": true,
-  "@odata.type": "microsoft.graph.swapShiftsChangeRequest"
+  "@odata.type": "microsoft.graph.offerShiftRequest"
 } -->
 
 ```http
@@ -82,20 +82,10 @@ HTTP/1.1 200 OK
 Content-type: application/json
 
 {
-    "id": "0b87dd20-d5ed-4764-9c3e-cfc8516def09",
-    "senderShiftId": "5ad10161-6524-4c7c-9beb-4e8677ba2f6d",
-    "recipientShiftId": "e73408ca-3ea5-4bbf-96a8-2e06c95f7a2c",
-    "assignedTo": "manager",
-    "state": "approved",
-    "senderUserId": "3fe0bc21-1398-4fd9-9713-52511b434c1e",
-    "senderDateTime": "2019-05-01T10:00:00Z",
-    "senderMessage": "I can't make my shift, any chance we can swap?",
-    "recipientUserId": "567c8ea5-9e32-422a-a663-8270201699cd",
-    "recipientActionDateTime": "2019-05-01T11:00:00Z",
-    "recipientActionMessage": "Sure!",
-    "managerUserId": "fdcc8d43-7f83-438a-9ab1-098e8f2a95ff",
-    "managerActionDateTime": "2019-05-01T12:00:00Z",
-    "managerActionMessage": "Approved!"
+  "recipientActionMessage": "recipientActionMessage-value",
+  "recipientActionDateTime": "datetime-value",
+  "senderShiftId": "senderShiftId-value",
+  "recipientUserId": "recipientUserId-value"
 }
 ```
 
@@ -103,7 +93,7 @@ Content-type: application/json
 2019-02-04 14:57:30 UTC -->
 <!-- {
   "type": "#page.annotation",
-  "description": "Get swapShiftsChangeRequest",
+  "description": "Get offerShiftRequest",
   "keywords": "",
   "section": "documentation",
   "tocPath": ""

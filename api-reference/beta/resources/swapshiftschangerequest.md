@@ -17,9 +17,10 @@ Represents a type of shift request to swap a [shift](../resources/shift.md) with
 
 | Method       | Return Type | Description |
 |:-------------|:------------|:------------|
+| [List](../api/swapshiftschangerequest-list.md) | Collection of [swapShiftsChangeRequest](swapshiftschangerequest.md) | List the properties and relationships of **swapShiftsChangeRequest** objects in a team. |
+| [Create](../api/swapshiftschangerequest-post.md) | [swapshiftschangerequest](swapshiftschangerequest.md) | Create an instance of an swapshiftschangerequest object. |
 | [Get](../api/swapshiftschangerequest-get.md) | [swapShiftsChangeRequest](swapshiftschangerequest.md) | Read the properties and relationships of a **swapShiftsChangeRequest** object. |
-| [Update](../api/swapshiftschangerequest-update.md) | [swapShiftsChangeRequest](swapshiftschangerequest.md) | Update a **swapShiftsChangeRequest** object. |
-| [Delete](../api/swapshiftschangerequest-delete.md) | None | Delete a **swapShiftsChangeRequest** object. |
+|[Approve](../api/swapshiftschangerequest-approve.md)|None|Approve an swapshiftschangerequest. |
 
 ## Properties
 

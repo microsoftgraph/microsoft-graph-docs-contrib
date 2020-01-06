@@ -1,17 +1,17 @@
 ---
-title: "Get openShiftChangeRequest"
-description: "Retrieve the properties and relationships of an openShiftChangeRequest object."
+title: "List openShiftChangeRequests"
+description: "Retrieve a list of openShiftChangeRequest objects in a team."
 localization_priority: Normal
 author: "akumar39"
 ms.prod: "microsoft-teams"
 doc_type: "apiPageType"
 ---
 
-# Get openShiftChangeRequest
+# List openShiftChangeRequests
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Retrieve the properties and relationships of an [openShiftChangeRequest](../resources/openshiftchangerequest.md) object.
+Retrieve a list of [openShiftChangeRequest](../resources/openshiftchangerequest.md) objects in a team.
 
 ## Permissions
 
@@ -28,7 +28,7 @@ One of the following permissions is required to call this API. To learn more, in
 <!-- { "blockType": "ignored" } -->
 
 ```http
-GET /teams/{id}/schedule/openShiftsChangeRequests/{openShiftsChangeRequestId}
+GET /teams/{id}/schedule/openShiftsChangeRequests
 ```
 
 ## Optional query parameters
@@ -47,7 +47,7 @@ Do not supply a request body for this method.
 
 ## Response
 
-If successful, this method returns a `200 OK` response code and the requested [openShiftChangeRequest](../resources/openshiftchangerequest.md) object in the response body.
+If successful, this method returns a `200 OK` response code and the list of [openShiftChangeRequest](../resources/openshiftchangerequest.md) objects in the response body.
 
 ## Examples
 
@@ -60,7 +60,7 @@ The following is an example of the request.
 }-->
 
 ```http
-GET https://graph.microsoft.com/beta/teams/{id}/schedule/openShiftsChangeRequests/SREQ_0b87dd20-d5ed-4764-9c3e-cfc8516def09
+GET https://graph.microsoft.com/beta/teams/{id}/schedule/openShiftsChangeRequests
 ```
 
 ### Response
@@ -80,27 +80,29 @@ HTTP/1.1 200 OK
 Content-type: application/json
 
 {
-  "id": "SREQ_0b87dd20-d5ed-4764-9c3e-cfc8516def09",
-  "openShiftId": "577b75d2-a927-48c0-a5d1-dc984894e7b8",
-  "assignedTo": "manager",
-  "state": "pending",
-  "senderUserId": "3fe0bc21-1398-4fd9-9713-52511b434c1e",
-  "senderDateTime": "2019-05-01T10:00:00Z",
-  "senderMessage": "Can I take this shift?",
-  "managerUserId": null,
-  "managerActionDateTime": null,
-  "managerActionMessage": null,
-  "createdDateTime": "2019-03-14T04:32:51.451Z",
-  "lastModifiedDateTime": "2019-03-14T05:32:51.451Z",
-  "lastModifiedBy": {
-    "application": null,
-    "device": null,
-    "conversation": null,
-    "user": {
-      "id": "366c0b19-49b1-41b5-a03f-9f3887bd0ed8",
-      "displayName": "John Doe"
-    }
-  }
+	"value": [{
+		"id": "SREQ_0b87dd20-d5ed-4764-9c3e-cfc8516def09",
+		"openShiftId": "577b75d2-a927-48c0-a5d1-dc984894e7b8",
+		"assignedTo": "manager",
+		"state": "pending",
+		"senderUserId": "3fe0bc21-1398-4fd9-9713-52511b434c1e",
+		"senderDateTime": "2019-05-01T10:00:00Z",
+		"senderMessage": "Can I take this shift?",
+		"managerUserId": null,
+		"managerActionDateTime": null,
+		"managerActionMessage": null,
+		"createdDateTime": "2019-03-14T04:32:51.451Z",
+		"lastModifiedDateTime": "2019-03-14T05:32:51.451Z",
+		"lastModifiedBy": {
+			"application": null,
+			"device": null,
+			"conversation": null,
+			"user": {
+				"id": "366c0b19-49b1-41b5-a03f-9f3887bd0ed8",
+				"displayName": "John Doe"
+			}
+		}
+	}]
 }
 ```
 
@@ -108,7 +110,7 @@ Content-type: application/json
 2019-02-04 14:57:30 UTC -->
 <!-- {
   "type": "#page.annotation",
-  "description": "Get openShiftChangeRequest",
+  "description": "List openShiftChangeRequest",
   "keywords": "",
   "section": "documentation",
   "tocPath": ""

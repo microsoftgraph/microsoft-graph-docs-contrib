@@ -1,17 +1,17 @@
 ---
-title: "Delete openShift"
-description: "Delete an openShift object."
+title: "swapShiftsChangeRequest: approve"
+description: "Approve a swap shift request."
 localization_priority: Normal
 author: "akumar39"
 ms.prod: "microsoft-teams"
 doc_type: "apiPageType"
 ---
 
-# Delete openShift
+# swapShiftsChangeRequest: approve
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Delete an [openShift](../resources/openshift.md) object.
+Approve a [swapShiftsChangeRequest](../resources/swapshiftschangerequest.md) object.
 
 ## Permissions
 
@@ -28,7 +28,7 @@ One of the following permissions is required to call this API. To learn more, in
 <!-- { "blockType": "ignored" } -->
 
 ```http
-DELETE /teams/{id}/schedule/openShifts/{openShiftId}
+POST /teams/{id}/schedule/swapShiftsChangeRequests/approve
 ```
 
 ## Request headers
@@ -36,63 +36,59 @@ DELETE /teams/{id}/schedule/openShifts/{openShiftId}
 | Name          | Description   |
 |:--------------|:--------------|
 | Authorization | Bearer {token}. Required. |
+| Content-type | application/json. Required. |
 
 ## Request body
 
-Do not supply a request body for this method.
+In the request body, provide a JSON object with the following parameters.
+
+| Parameter    | Type        | Description |
+|:-------------|:------------|:------------|
+|message|String|A custom approval message.|
 
 ## Response
 
-If successful, this method returns a `204 No Content` response code. It does not return anything in the response body.
+If successful, this method returns a `200 OK` response code. It does not return anything in the response body.
 
 ## Examples
 
+The following example shows how to call this API.
+
 ### Request
 
-The following is an example of the request.
-
-# [HTTP](#tab/http)
+The following is an example of a request.
 <!-- {
   "blockType": "request",
-  "name": "delete_openshift"
+  "name": "openshiftchangerequest_approve"
 }-->
 
 ```http
-DELETE https://graph.microsoft.com/beta/teams/{id}/schedule/openShifts/{openShiftId}
+POST https://graph.microsoft.com/beta/teams/{id}/schedule/openShiftsChangeRequests/approve
+Content-type: application/json
+
+{
+  "message": "message-value"
+}
 ```
-# [C#](#tab/csharp)
-[!INCLUDE [sample-code](../includes/snippets/csharp/delete-openshift-csharp-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [JavaScript](#tab/javascript)
-[!INCLUDE [sample-code](../includes/snippets/javascript/delete-openshift-javascript-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [Objective-C](#tab/objc)
-[!INCLUDE [sample-code](../includes/snippets/objc/delete-openshift-objc-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
----
-
 
 ### Response
 
 The following is an example of the response.
-
 <!-- {
   "blockType": "response",
-  "truncated": true
+  "truncated": true,
+  "@odata.type": "microsoft.graph.None"
 } -->
 
 ```http
-HTTP/1.1 204 No Content
+HTTP/1.1 200 OK
 ```
 
 <!-- uuid: 16cd6b66-4b1a-43a1-adaf-3a886856ed98
 2019-02-04 14:57:30 UTC -->
 <!-- {
   "type": "#page.annotation",
-  "description": "Delete openShift",
+  "description": "openShiftChangeRequest: approve",
   "keywords": "",
   "section": "documentation",
   "tocPath": ""
