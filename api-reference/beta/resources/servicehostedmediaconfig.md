@@ -1,7 +1,7 @@
 ---
 title: "serviceHostedMediaConfig resource type"
 description: "The media that's hosted remotely."
-author: "VinodRavichandran"
+author: "ananmishr"
 localization_priority: Normal
 ms.prod: "cloud-communications"
 doc_type: resourcePageType
