@@ -1,7 +1,7 @@
 ---
 title: "updateRecordingStatusOperation resource type"
 description: "Describes the response format of an update recording status action."
-author: "VinodRavichandran"
+author: "ananmishr"
 localization_priority: Normal
 ms.prod: "cloud-communications"
 doc_type: resourcePageType
