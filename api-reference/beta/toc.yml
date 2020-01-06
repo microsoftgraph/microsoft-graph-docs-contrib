@@ -10552,9 +10552,25 @@
               href: api/schedulinggroup-put.md
             - name: Delete
               href: api/schedulinggroup-delete.md
+        - name: Offer shift
+          href: resources/offershiftrequest.md
+          - name: Create
+            href: api/offershiftrequest-post.md
+          - name: Get
+            href: api/offershiftrequest-get.md
+          - name: List
+            href: api/offershiftrequest-list.md
+          - name: Approve
+            href: api/offershiftrequest-approve.md
+          - name: Decline
+            href: api/offershiftrequest-decline.md
         - name: Open shift
           href: resources/openshift.md
           items:
+            - name: List
+              href: api/openshift-list.md
+            - name: Create
+              href: api/openshift-post.md
             - name: Get
               href: api/openshift-get.md
             - name: Update
@@ -10564,15 +10580,29 @@
         - name: Open shift change request
           href: resources/openshiftchangerequest.md
           items:
+            - name: List
+              href: api/openshiftchangerequest-list.md
+            - name: Create
+              href: api/openshiftchangerequest-post.md
             - name: Get
               href: api/openshiftchangerequest-get.md
             - name: Approve
               href: api/openshiftchangerequest-approve.md
             - name: Decline
               href: api/openshiftchangerequest-decline.md
+        - name: Shift preferences
+          href: resources/shiftpreferences.md
+          - name: Get
+            href: api/shiftpreferences-get.md
+          - name: Update
+            href: api/shiftpreferences-put.md
         - name: Swap shift change request
           href: resources/swapshiftschangerequest.md
           items:
+          - name: List
+            href: api/swapshiftschangerequest-list.md
+          - name: Create
+            href: api/swapshiftschangerequest-post.md
           - name: Get
             href: api/swapshiftschangerequest-get.md
         - name: Time off
