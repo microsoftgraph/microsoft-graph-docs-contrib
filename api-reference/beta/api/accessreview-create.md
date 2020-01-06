@@ -36,9 +36,10 @@ In addition, the signed in user must also be in a directory role that permits th
 POST /accessReviews
 ```
 ## Request headers
-| Name         | Type        | Description |
-|:-------------|:------------|:------------|
-| Authorization | string | Bearer \{token\}. Required. |
+| Name         | Description |
+|:-------------|:------------|
+| Authorization | Bearer \{token\}. Required. |
+| Content-type | application/json. Required. |
 
 ## Request body
 In the request body, supply a JSON representation of an [accessReview](../resources/accessreview.md) object.
