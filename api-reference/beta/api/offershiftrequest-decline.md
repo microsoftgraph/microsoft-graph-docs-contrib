@@ -1,17 +1,17 @@
 ---
-title: "Delete openShiftChangeRequest"
-description: "Delete an openShiftChangeRequest object."
+title: "offerShiftRequest: decline"
+description: "Decline an offer shift request."
 localization_priority: Normal
 author: "akumar39"
 ms.prod: "microsoft-teams"
 doc_type: "apiPageType"
 ---
 
-# Delete openShiftChangeRequest
+# offerShiftRequest: decline
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Delete an [openShiftChangeRequest](../resources/openshiftchangerequest.md).
+Decline an [offershiftrequest](../resources/offershiftrequest.md) object.
 
 ## Permissions
 
@@ -21,14 +21,16 @@ One of the following permissions is required to call this API. To learn more, in
 |:---------------------------------------|:--------------------------------------------|
 | Delegated (work or school account)     | Group.ReadWrite.All |
 | Delegated (personal Microsoft account) | Not supported. |
-| Application                            | Not supported. |
+| Application                            | Schedule.ReadWrite.All* |
+
+>\* **Important:** Application permissions are currently in private preview only and are not available for public use.
 
 ## HTTP request
 
 <!-- { "blockType": "ignored" } -->
 
 ```http
-DELETE /teams/{id}/schedule/openShiftsChangeRequests
+POST /teams/schedule/offerShiftRequests/decline
 ```
 
 ## Request headers
@@ -36,47 +38,57 @@ DELETE /teams/{id}/schedule/openShiftsChangeRequests
 | Name          | Description   |
 |:--------------|:--------------|
 | Authorization | Bearer {token}. Required. |
+| Content-type | application/json. Required. |
 
 ## Request body
 
-Do not supply a request body for this method.
+In the request body, provide a JSON object with the following parameters.
+
+| Parameter    | Type        | Description |
+|:-------------|:------------|:------------|
+|message|String|Custom message sent on decline.|
 
 ## Response
 
-If successful, this method returns a `204 No Content` response code. It does not return anything in the response body.
+If successful, this method returns a `200 OK` response code. It does not return anything in the response body.
 
 ## Examples
 
 ### Request
 
-The following is an example of the request.
+The following example shows a request.
 <!-- {
   "blockType": "request",
-  "name": "delete_openshiftchangerequest"
+  "name": "offershiftrequest_decline"
 }-->
 
 ```http
-DELETE https://graph.microsoft.com/beta/teams/{id}/schedule/openShiftsChangeRequests
+POST https://graph.microsoft.com/beta/teams/schedule/offerShiftRequests/decline
+Content-type: application/json
+
+{
+  "message": "Sorry, you can't offer this shift."
+}
 ```
 
 ### Response
 
-The following is an example of the response.
-
+The following example shows the response.
 <!-- {
   "blockType": "response",
-  "truncated": true
+  "truncated": true,
+  "@odata.type": "microsoft.graph.None"
 } -->
 
 ```http
-HTTP/1.1 204 No Content
+HTTP/1.1 200 OK
 ```
 
 <!-- uuid: 16cd6b66-4b1a-43a1-adaf-3a886856ed98
 2019-02-04 14:57:30 UTC -->
 <!-- {
   "type": "#page.annotation",
-  "description": "Delete openShiftChangeRequest",
+  "description": "offerShiftRequest: decline",
   "keywords": "",
   "section": "documentation",
   "tocPath": ""
