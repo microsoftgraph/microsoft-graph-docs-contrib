@@ -10,8 +10,12 @@ const options = {
 
 const client = Client.init(options);
 
-let res = await client.api('/teams/{id}/schedule/openShifts/{openShiftId}')
+const decline = {
+  message: "Sorry, you can't offer this shift."
+};
+
+let res = await client.api('/teams/schedule/offerShiftRequests/decline')
 	.version('beta')
-	.delete();
+	.post(decline);
 
 ```
