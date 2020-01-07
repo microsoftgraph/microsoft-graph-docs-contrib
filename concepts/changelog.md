@@ -11,6 +11,14 @@ This changelog covers what's changed in the Microsoft Graph API, including the v
 
 For details about known issues with Microsoft Graph APIs, see [Known issues](known-issues.md).
 
+## January 2020
+
+### Microsoft Graph Security API
+
+| **Change type** | **Version**   | **Description**                          |
+| :-------------- | :------------ | :--------------------------------------- |
+| Change | v1.0 <br/> beta | [alert](https://aka.ms/graphsecurityalerts) comments cannot be edited. Any edits made to the comments property with the  [Update alert](https://docs.microsoft.com/en-us/graph/api/alert-update?view=graph-rest-1.0&tabs=http) function will not be persisted. |
+
 ## December 2019
 
 ### Change notifications (webhooks)
