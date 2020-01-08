@@ -126,11 +126,11 @@ Content-type: application/json
             "content": "Let's look for funding!"
          },
          "start": {
-             "dateTime": "2016-12-02T18:00:00",
+             "dateTime": "2020-01-12T18:00:00",
              "timeZone": "Pacific Standard Time"
           },
           "end": {
-             "dateTime": "2016-12-02T19:00:00",
+             "dateTime": "2020-01-12T19:00:00",
              "timeZone": "Pacific Standard Time"
           }
     }

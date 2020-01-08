@@ -16,6 +16,8 @@ You can add related content to a user [event](../resources/event.md),
 
 Events in group calendars do not support attachments.
 
+Outlook tasks do not support reference attachments.
+
 **attachment** is the base resource for the following derived types of attachments:
 
 * A file ([fileAttachment](../resources/fileattachment.md) resource)
