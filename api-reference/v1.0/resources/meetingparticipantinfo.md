@@ -1,7 +1,7 @@
 ---
 title: "meetingParticipantInfo resource type"
 description: "Information about a participant in a meeting."
-author: "VinodRavichandran"
+author: "ananmishr"
 localization_priority: Normal
 ms.prod: "cloud-communications"
 doc_type: resourcePageType

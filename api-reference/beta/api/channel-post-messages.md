@@ -43,7 +43,6 @@ POST /teams/{id}/channels/{id}/messages
 
 In the request body, supply a JSON representation of a [message](../resources/chatmessage.md) object. Only the body property is mandatory, other properties are optional.
 
-> Note: Sending messages with attachments and images is not supported.
 
 ## Response
 

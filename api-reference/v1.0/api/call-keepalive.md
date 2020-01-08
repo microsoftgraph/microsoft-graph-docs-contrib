@@ -1,7 +1,7 @@
 ---
 title: "call: keepAlive"
 description: "Make a request to this API every 15 to 45 minutes to ensure that an ongoing call stays alive."
-author: "VinodRavichandran"
+author: "ananmishr"
 localization_priority: Normal
 ms.prod: "cloud-communications"
 doc_type: apiPageType
