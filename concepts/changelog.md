@@ -17,9 +17,7 @@ For details about known issues with Microsoft Graph APIs, see [Known issues](kno
 
 | **Change type** | **Version**   | **Description**                          |
 | :-------------- | :------------ | :--------------------------------------- |
-| Change | v1.0 <br/> beta | [alert](https://aka.ms/graphsecurityalerts) comments cannot be edited. Any edits made to the comments property with the  [Update alert](https://docs.microsoft.com/graph/api/alert-update?view=graph-rest-1.0&tabs=http) function are limited to persist only the following comments:
-1.	Closed in IPC 
-2.	Closed in MCAS <br/>|
+| Change | v1.0 <br/> beta | [alert](https://aka.ms/graphsecurityalerts) comments cannot be edited. Any edits made to the comments property with the  [Update alert](https://docs.microsoft.com/graph/api/alert-update?view=graph-rest-1.0&tabs=http) function are limited to persist only the following comments: <br/> Closed in IPC <br/> Closed in MCAS <br/>|
 
 ## December 2019
 
