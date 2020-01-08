@@ -10,8 +10,12 @@ const options = {
 
 const client = Client.init(options);
 
-let res = await client.api('/teams/{id}/schedule/openShifts/{openShiftId}')
+const approve = {
+  message: "Approved!"
+};
+
+let res = await client.api('/teams/schedule/offerShiftRequests/approve')
 	.version('beta')
-	.delete();
+	.post(approve);
 
 ```

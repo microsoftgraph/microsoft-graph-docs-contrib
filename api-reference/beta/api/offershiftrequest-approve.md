@@ -57,6 +57,8 @@ If successful, this method returns a `200 OK` response code. It does not return 
 ### Request
 
 The following example shows a request.
+
+# [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "offershiftrequest_approve"
@@ -70,6 +72,12 @@ Content-type: application/json
   "message": "Approved!"
 }
 ```
+# [JavaScript](#tab/javascript)
+[!INCLUDE [sample-code](../includes/snippets/javascript/offershiftrequest-approve-javascript-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+---
+
 
 ### Response
 
