@@ -45,9 +45,9 @@ The following table shows the properties of the [group](../resources/group.md) r
 
 | Property | Type | Description|
 |:---------------|:--------|:----------|
-| displayName | string | The name to display in the address book for the group. Required. |
+| displayName | string | The name to display in the address book for the group. Max. length: 256 characters. Required. |
 | mailEnabled | boolean | Set to **true** for mail-enabled groups. Required. |
-| mailNickname | string | The mail alias for the group. Required. |
+| mailNickname | string | The mail alias for the group. Max. length: 64 characters. Required. |
 | securityEnabled | boolean | Set to **true** for security-enabled groups, including Office 365 groups. Required. |
 | owners | string collection | This property represents the owners for the group at creation time. Optional. |
 | members | string collection | This property represents the members for the group at creation time. Optional. |
