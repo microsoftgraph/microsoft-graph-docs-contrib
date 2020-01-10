@@ -11,6 +11,14 @@ This changelog covers what's changed in the Microsoft Graph API, including the v
 
 For details about known issues with Microsoft Graph APIs, see [Known issues](known-issues.md).
 
+## January 2020
+
+### Security 
+
+| **Change type** | **Version**   | **Description**                          |
+| :-------------- | :------------ | :--------------------------------------- |
+| Change | beta and v1.0 | The [Update alert](/graph/api/alert-update?view=graph-rest-1.0&tabs=http) method now updates the **comments** field with the following values only: <br/> `Closed in IPC`, `Closed in MCAS`.|
+
 ## December 2019
 
 ### Change notifications (webhooks)
