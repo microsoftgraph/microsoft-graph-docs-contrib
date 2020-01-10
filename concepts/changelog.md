@@ -17,7 +17,7 @@ For details about known issues with Microsoft Graph APIs, see [Known issues](kno
 
 | **Change type** | **Version**   | **Description**                          |
 | :-------------- | :------------ | :--------------------------------------- |
-| Change | beta and v1.0 | Updated the [Update alert](https://docs.microsoft.com/graph/api/alert-update?view=graph-rest-1.0&tabs=http) method to update the **comments** field with the following values only: <br/> `Closed in IPC`, `Closed in MCAS`.|
+| Change | beta and v1.0 | The [Update alert](https://docs.microsoft.com/graph/api/alert-update?view=graph-rest-1.0&tabs=http) method now updates the **comments** field with the following values only: <br/> `Closed in IPC`, `Closed in MCAS`.|
 
 ## December 2019
 
