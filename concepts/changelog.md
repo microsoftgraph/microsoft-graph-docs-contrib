@@ -13,11 +13,11 @@ For details about known issues with Microsoft Graph APIs, see [Known issues](kno
 
 ## January 2020
 
-### Microsoft Graph Security API
+### Security 
 
 | **Change type** | **Version**   | **Description**                          |
 | :-------------- | :------------ | :--------------------------------------- |
-| Change | v1.0 <br/> beta | [Update alert](https://docs.microsoft.com/graph/api/alert-update?view=graph-rest-1.0&tabs=http) method can update the **comments** field with the following values only: <br/> `Closed in IPC`, `Closed in MCAS`.<br/>|
+| Change | beta and v1.0 | Updated the [Update alert](https://docs.microsoft.com/graph/api/alert-update?view=graph-rest-1.0&tabs=http) method to update the **comments** field with the following values only: <br/> `Closed in IPC`, `Closed in MCAS`.|
 
 ## December 2019
 
