@@ -43,7 +43,6 @@ POST /teams/{id}/channels/{id}/messages
 
 In the request body, supply a JSON representation of a [message](../resources/chatmessage.md) object. Only the body property is mandatory, other properties are optional.
 
-> Note: Sending messages with attachments and images is not supported.
 
 ## Response
 
@@ -238,6 +237,9 @@ Content-length: 160
 
 #### Request
 The following is an example of the request.
+
+> Note: The attachment's ID must be unique and can be a new randomly generated GUID. However, the attachment's ID must be the same in the _body_ and _attachments_ elements.
+
 <!-- {
   "blockType": "request",
   "name": "create_chatmessage_from_channel"
@@ -323,7 +325,7 @@ Content-length: 160
 
 ## See also
 
-- [Cards Reference](https://docs.microsoft.com/en-us/microsoftteams/platform/concepts/cards/cards-reference)
+- [Cards Reference](/microsoftteams/platform/concepts/cards/cards-reference)
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2015-10-25 14:57:30 UTC -->

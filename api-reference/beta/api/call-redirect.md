@@ -1,7 +1,7 @@
 ---
 title: "call: redirect"
 description: "Redirect an incoming call."
-author: "VinodRavichandran"
+author: "ananmishr"
 localization_priority: Normal
 ms.prod: "cloud-communications"
 doc_type: apiPageType
