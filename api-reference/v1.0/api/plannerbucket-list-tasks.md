@@ -49,7 +49,7 @@ Here is an example of the request.
   "name": "plannerbucket_get_tasks"
 }-->
 ```msgraph-interactive
-GET https://graph.microsoft.com/v1.0/planner/buckets/{task-id}/tasks
+GET https://graph.microsoft.com/v1.0/planner/buckets/{bucket-id}/tasks
 ```
 # [C#](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/plannerbucket-get-tasks-csharp-snippets.md)]
