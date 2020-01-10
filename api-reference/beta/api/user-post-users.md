@@ -14,7 +14,7 @@ doc_type: apiPageType
 Create a new [user](../resources/user.md).
 The request body contains the user to create. At a minimum, you must specify the required properties for the user. You can optionally specify any other writable properties.
 
-This operation returns by default only a subset of the properties for each user. These default properties are noted in the [Properties](#properties) section. To get properties that are not returned by default, do a [GET operation](user-get.md) and specify the properties in a `$select` OData query option.
+This operation returns by default only a subset of the properties for each user. These default properties are noted in the [Properties](../resources/user.md#properties) section. To get properties that are not returned by default, do a [GET operation](user-get.md) and specify the properties in a `$select` OData query option.
 
 >[!NOTE]
 >To create external users, use the [invitation API](invitation-post.md).
