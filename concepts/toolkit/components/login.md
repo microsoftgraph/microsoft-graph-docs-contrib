@@ -25,7 +25,7 @@ The component works with a provider and Microsoft Graph out of the box. However,
 
 | Attribute | Property | Description |
 | --- | --- | -- |
-| `user-details` | `userDetails` | Set the user object that will be displayed on the control. |
+| user-details | userDetails | Set the user object that will be displayed on the control. |
 
 The following example sets the person details.
 

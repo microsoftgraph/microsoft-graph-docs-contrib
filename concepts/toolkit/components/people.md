@@ -27,11 +27,11 @@ By default, the `mgt-people` component fetches events from the `/me/people` endp
 
 | Attribute | Property | Description |
 | --- | --- | --- |
-| `show-max` | `showMax` | Indicate the maximum number of people to show. Default value is 3. |
-| `people` | `people` | An array of people to get or set the list of people rendered by the component. Use this property to access the people loaded by the component. Set this value to load your own people. |
-| `group-id` | `groupId` | retrieves people from a specific Microsoft Graph from the respective id. |
-| `user-ids` | `userIds` | given an array of Microsoft Graph user `ids`, the component will render these users.  |
-| `person-card` | `personCard` | An enumeration to determine user action necessary to activate flyout panel - `hover` or `click`. Default value is `none` |
+| show-max | showMax | Indicates the maximum number of people to show. Default value is 3. |
+| people | people | An array of people to get or set the list of people rendered by the component. Use this property to access the people loaded by the component. Set this value to load your own people. |
+| group-id | groupId | Retrieves people from a specific Microsoft Graph from the respective ID. |
+| user-ids | userIds | Given an array of Microsoft Graph user `ids`, the component will render these users.  |
+| person-card | personCard | An enumeration to determine user action necessary to activate flyout panel - `hover` or `click`. Default value is `none`. |
 
 
 The following example sets the maximum number of people to show.
@@ -55,7 +55,7 @@ mgt-people {
 
 ## Templates
 
-The `mgt-people` supports several [templates](../templates.md) that you can use to replace certain parts of the component. To specify a template, include a `<template>` element inside a component and set the `data-type` vue to one of the following.
+The `mgt-people` supports several [templates](../templates.md) that you can use to replace certain parts of the component. To specify a template, include a `<template>` element inside a component and set the `data-type` value to one of the following.
 
 | Data type | Data context | Description |
 | --- | --- | --- |
@@ -83,9 +83,9 @@ The following examples shows how to use the `person` template.
 
 This component uses the following Microsoft Graph APIs and permissions:
 
-| Resource | Permission/scope |
+| Resource | Permission |
 | - | - |
-| [/me/people](https://docs.microsoft.com/graph/api/user-list-people?view=graph-rest-1.0) | `People.Read` |
+| [/me/people](https://docs.microsoft.com/graph/api/user-list-people?view=graph-rest-1.0) | People.Read |
 
 ## Authentication
 

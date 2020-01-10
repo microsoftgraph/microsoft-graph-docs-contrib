@@ -60,7 +60,7 @@ Here is an example of the response. Note: The response object shown here may be 
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 2359
+Content-Length: 2535
 
 {
   "value": [
@@ -111,13 +111,17 @@ Content-Length: 2359
       "allowedOutboundClipboardSharingExceptionLength": 14,
       "notificationRestriction": "blockOrganizationalData",
       "previousPinBlockCount": 5,
+      "managedBrowser": "microsoftEdge",
       "maximumAllowedDeviceThreatLevel": "secured",
-      "mobileThreatDefenseRemediationAction": "wipe"
+      "mobileThreatDefenseRemediationAction": "wipe",
+      "blockDataIngestionIntoOrganizationDocuments": true,
+      "allowedDataIngestionLocations": [
+        "sharePoint"
+      ]
     }
   ]
 }
 ```
-
 
 
 

@@ -38,37 +38,29 @@ The following is a `show-max` example.
 <mgt-people-picker show-max="4"> </mgt-people-picker>
 ```
 
-## Selected People
+## Selected people
 
-The selected people section of the component renders each person chosen by developer or user. 
+The selected people section of the component renders each person chosen by the developer or user. 
 
 ![mgt-people-picker](./images/selected-people.png)
 
-Selected People data is accessible to populate via the following methods:
+You can populate selected people data by doing one of the following:
 
+- Setting the `selectedPeople` property directly, as shown in the following example.  
 
-
-1. Setting the `selectedPeople` property directly:  
-
-      * Example
     ```javascript
     // personObject = User or Person from Microsoft Graph
     document.querySelector('mgt-people-picker').selectedPeople.push(personObject);
     ```
 
+- Using the `selectUsersById()` method, which accepts an array of Microsoft graph [user ids](https://docs.microsoft.com/graph/api/resources/users?view=graph-rest-1.0) to find associated user details for selection.
 
+     >**Note:** If no user is found for an `id`, no data will be rendered for that `id`.
 
-2. Using the method `selectUsersById()` which accepts an array of Microsoft graph [user id](https://docs.microsoft.com/graph/api/resources/users?view=graph-rest-1.0) to find associated user details for selection.
-
-***If no user is found for the provided `id`, no data will be rendered for that specific `id`**
-
-      * Example
     ```javascript
     // id = Mirosoft graph User "id"
     document.querySelector('mgt-people-picker').selectUsersById(["id","id"])
     ```
-
-
 
 ## CSS custom properties
 
@@ -87,10 +79,10 @@ mgt-people-picker {
 
 | Data type | Data context | Description |
 | --- | --- | --- |
-| `loading` | `null`: no data | The template used to render the state of picker while request to graph is being made. |
-| `error` | `null`: no data| The template used if user search returns no users. |
-| `selected-person` | `person`: The person details object| The template to render selected people. |
-| `person` | `person`: The person details object| The template to render people in the dropdown. |
+| loading | null: no data | The template used to render the state of picker while request to graph is being made. |
+| error | null: no data| The template used if user search returns no users. |
+| selected-person |person: The person details object| The template to render selected people. |
+| person | person: The person details object| The template to render people in the dropdown. |
 
 The following examples shows how to use the `error` template.
 

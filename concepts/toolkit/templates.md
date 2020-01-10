@@ -63,16 +63,16 @@ This format can also be used inside of attributes:
 
 > **Note:** You can also expand objects such as `{{event}}` and they will render as JSON strings. This can be useful when you're developing the templates.
 
-## Data Context helper properties
+## Data context helper properties
 
 The following properties can also be used with the data context object in your templates.
 
 | Property |  Description |
 | --- | --- | --- |
-| `$index` | numerical index of item being rendered while being looped with `data-for` |
-| `$parent` | If a template is rendered inside of another template, `$parent` property allows the developer to access the parent data context. |
+| $index | Numerical index of item being rendered while being looped with `data-for`. |
+| $parent | If a template is rendered inside another template, this property allows you to access the parent data context. |
 
-This is an example of using the `$index` property in a data-for loop
+The following example shows how to use the `$index` property in a data-for loop.
 
 ```html
 <mgt-person>

@@ -59,7 +59,7 @@ Here is an example of the response. Note: The response object shown here may be 
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 4950
+Content-Length: 5047
 
 {
   "value": [
@@ -105,6 +105,7 @@ Content-Length: 4950
       "bluetoothBlockContactSharing": true,
       "cameraBlocked": true,
       "cellularBlockWiFiTethering": true,
+      "certificateCredentialConfigurationDisabled": true,
       "dataRoamingBlocked": true,
       "dateTimeConfigurationBlocked": true,
       "factoryResetDeviceAdministratorEmails": [
@@ -115,6 +116,7 @@ Content-Length: 4950
         "@odata.type": "microsoft.graph.androidDeviceOwnerGlobalProxyAutoConfig",
         "proxyAutoConfigURL": "Proxy Auto Config URL value"
       },
+      "googleAccountsBlocked": true,
       "kioskModeScreenSaverConfigurationEnabled": true,
       "kioskModeScreenSaverImageUrl": "https://example.com/kioskModeScreenSaverImageUrl/",
       "kioskModeScreenSaverDisplayTimeInSeconds": 8,
@@ -183,7 +185,6 @@ Content-Length: 4950
   ]
 }
 ```
-
 
 
 
