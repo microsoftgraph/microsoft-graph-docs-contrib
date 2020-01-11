@@ -100,8 +100,9 @@ This component uses the following Microsoft Graph APIs and permissions.
 
 | API                                                                                                              | Permission  |
 | ---------------------------------------------------------------------------------------------------------------- | ----------- |
-| [/me/people](/graph/api/user-list-people?view=graph-rest-1.0)                    | People.Read |
-| [/groups/\${groupId}/members](/graph/api/group-list-members?view=graph-rest-1.0) | People.Read |
+| [/me/people](/graph/api/user-list-people?view=graph-rest-1.0)                    | People.Read        |
+| [/groups/\${groupId}/members](/graph/api/group-list-members?view=graph-rest-1.0) | People.Read        |
+| [/users/${userPrincipleName} ](/graph/api/user-list-people?view=graph-rest-1.0)  | User.Readbasic.All |
 
 ## Authentication
 
