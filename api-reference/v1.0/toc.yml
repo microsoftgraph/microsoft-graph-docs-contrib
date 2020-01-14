@@ -113,7 +113,7 @@
         href: /graph/sdks/choose-authentication-providers?context=graph/api/1.0
       - name: Create requests
         href: /graph/sdks/create-requests?context=graph/api/1.0        
-  - name: Use the toolkit (preview)
+  - name: Use the toolkit
     items:
       - name: Toolkit overview
         href: /graph/toolkit/overview?context=graph/api/1.0
@@ -4110,7 +4110,7 @@
           href: api/listitem-list-versions.md
         - name: Get item analytics
           href: api/itemanalytics-get.md
-    - name: People intelligence
+    - name: People and workplace intelligence
       items:
       - name: Overview
         href: resources/social-overview.md
