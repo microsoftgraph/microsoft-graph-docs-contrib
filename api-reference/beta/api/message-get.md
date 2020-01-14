@@ -121,6 +121,7 @@ Here is an example of the response. The **body** and **uniqueBody** properties a
 Note: The response object shown here is truncated for brevity. All of the properties will be returned from an actual call.
 <!-- {
   "blockType": "response",
+  "name": "get_message",
   "truncated": true,
   "@odata.type": "microsoft.graph.message"
 } -->
@@ -178,6 +179,7 @@ GET https://graph.microsoft.com/beta/me/messages/AQMkADJmMTUAAAgVZAAAA/?$expand=
 Here is an example of the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.
 <!-- {
   "blockType": "response",
+  "name": "get_mentions_in_message",
   "truncated": true,
   "@odata.type": "microsoft.graph.message"
 } -->
@@ -310,6 +312,7 @@ Here is an example of the response.
 Note: The response includes a `Preference-Applied: outlook.body-content-type` header to acknowledge the `Prefer: outlook.body-content-type` request header.
 <!-- {
   "blockType": "response",
+  "name": "get_message_in_text",
   "truncated": true,
   "@odata.type": "microsoft.graph.message"
 } -->
@@ -371,6 +374,7 @@ Here is an example of the response. Note: The number of Internet message headers
 
 <!-- {
   "blockType": "response",
+  "name": "get_message_internet_headers",
   "truncated": true,
   "@odata.type": "microsoft.graph.message"
 } -->
@@ -414,7 +418,9 @@ Content-type: application/json
 The fifth example gets the MIME content of a message in the signed-in user's mailbox.
 
 <!-- {
-  "blockType": "ignored"
+  "blockType": "request",
+  "sampleKeys": ["4aade2547798441eab5188a7a2436bc1"],
+  "name": "get_message_in_mime"
 }-->
 ```http
 GET https://graph.microsoft.com/beta/me/messages/4aade2547798441eab5188a7a2436bc1/$value
@@ -423,7 +429,9 @@ GET https://graph.microsoft.com/beta/me/messages/4aade2547798441eab5188a7a2436bc
 #### Response
 The following is the response. The MIME content begins with the `MIME-Version` header. 
 <!-- {
-  "blockType": "ignored"
+  "blockType": "response",
+  "name": "get_message_in_mime",
+  "truncated": true
 } -->
 ```http
 HTTP/1.1 200 OK
