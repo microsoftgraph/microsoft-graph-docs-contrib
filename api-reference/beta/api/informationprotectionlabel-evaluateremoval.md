@@ -79,6 +79,7 @@ The following is an example of the request.
 ```http
 POST https://graph.microsoft.com/beta/informationprotection/policy/labels/evaluateRemoval
 Content-type: application/json
+User-agent: ContosoLOBApp/1.0
 
 {
   "contentInfo": {
