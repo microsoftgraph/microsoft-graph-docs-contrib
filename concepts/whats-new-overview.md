@@ -15,15 +15,15 @@ See highlights of what's new in Microsoft Graph, and how you can [share your ide
 ## January 2020: New and generally available
 
 ### Security
-Use the [update alert](/graph/api/alert-update?view=graph-rest-1.0) method to update **comments** field for customer alert management, as either `Closed in IPC` or `Closed in MCAS`.
+As part of customer alert management, use the [update alert](/graph/api/alert-update?view=graph-rest-1.0) method and update the **comments** field as either `Closed in IPC` or `Closed in MCAS`.
 
 ## December 2019: New and generally available
 
 ### Cloud communications
-The cloud communications API has GA'd and APIs for [call](/graph/api/resources/call?view=graph-rest-1.0) and [onlineMeeting](/graph/api/resources/onlinemeeting?view=graph-rest-1.0) are [available in v1.0](/graph/api/resources/communications-api-overview?view=graph-rest-1.0)!
+The cloud communications API has GA'd and APIs for [call](/graph/api/resources/call?view=graph-rest-1.0) and [onlineMeeting](/graph/api/resources/onlinemeeting?view=graph-rest-1.0) are [available in v1.0](/graph/api/resources/communications-api-overview?view=graph-rest-1.0).
 
 ### Education
-Use the **classSettings** property to manage class-specific settings, such as enabling the sending of weekly assignments digests. This property is available on the [team](/graph/api/resources/team?view=graph-rest-1.0) resource when the team represents a [class](/graph/api/resources/educationclass?view=graph-rest-1.0).
+Use the **classSettings** property to manage class-specific settings, such as enabling the sending of weekly assignment digests. This property is available on the [team](/graph/api/resources/team?view=graph-rest-1.0) resource when the team represents an [education class](/graph/api/resources/educationclass?view=graph-rest-1.0).
 
 ### Identity and access 
 [Attempting to get container objects with limited permissions returns partial data](permissions-reference.md#limited-information-returned-for-inaccessible-member-objects). An example is a [group](/graph/api/resources/group?view=graph-rest-1.0) instance that's associated with a [user](/graph/api/resources/user?view=graph-rest-1.0), another **group**, and a [device](/graph/api/resources/device?view=graph-rest-1.0). An app having only the permissions User.Read.All and Group.Read.All and attempting to access this **group** instance would get the **user** and **group** objects, but limited data for the **device** object (only data type and object ID and not property values).
@@ -39,7 +39,7 @@ The insights API has GA'd. Use the API in production apps to identify the most r
 To get Office 365 usage reports using permissions delegated by a user, administrators must have assigned the user an Azure AD limited administrator role. This can be one of the following roles: company administrator, Exchange administrator, SharePoint administrator, Lync administrator, global reader, or reports reader. See [Authorization for APIs to read Office 365 usage reports](reportroot-authorization.md) for details.
 
 ### Toolkit
-Microsoft Graph Toolkit v1.1 - for a list of enhancements and bug fixes, see the [December 2019 section](changelog.md#december-2019) of the changelog.
+Microsoft Graph Toolkit v1.1 has released. For a list of enhancements and bug fixes, see the [December 2019 section](changelog.md#december-2019) of the changelog.
 
 ## December 2019: New in preview
 
@@ -59,7 +59,7 @@ Intune [December](changelog.md#december-2019) updates
 ### Teamwork
 - [Set up change notifications that include resource data](webhooks-with-resource-data.md) for [chatMessage](/graph/api/resources/chatmessage?view=graph-rest-beta) resources in Microsoft Teams channels and chats.
 - [Subscribe to notifications](/graph/api/resources/subscription?view=graph-rest-beta) for new or modified [channel messages or chat messages](/graph/api/resources/chatmessage?view=graph-rest-beta).
-- Use the [shiftPreferences](/graph/api/resources/shiftpreferences?view=graph-rest-beta) resource to enable specifying a user's availability to be assigned shifts in a [schedule](/graph/api/resources/schedule?view=graph-rest-beta). Set this as part of the user's [settings](/graph/api/resources/usersettings?view=graph-rest-beta).
+- Use the [shiftPreferences](/graph/api/resources/shiftpreferences?view=graph-rest-beta) resource to enable specifying a user's availability to be assigned shifts in a [schedule](/graph/api/resources/schedule?view=graph-rest-beta). Get or set this as part of the user's [settings](/graph/api/resources/usersettings?view=graph-rest-beta).
 
 
 ## Want to stay in the loop?

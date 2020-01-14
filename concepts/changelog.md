@@ -115,7 +115,7 @@ Introduced version 1.1 of the Microsoft Graph Toolkit.
 | Fixes        | NA         | [Bug fixes and improvements](https://github.com/microsoftgraph/microsoft-graph-toolkit/releases/tag/v1.1.0). |
 
 
-### People intelligence | Insights
+### People and workplace intelligence | Insights
 
 | **Change type** | **Version**   | **Description**                          |
 | :-------------- | :------------ | :--------------------------------------- |
