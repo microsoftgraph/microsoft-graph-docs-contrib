@@ -1,7 +1,7 @@
 ---
 title: "mediaStream resource type"
 description: "The mediaStream type."
-author: "VinodRavichandran"
+author: "ananmishr"
 localization_priority: Normal
 ms.prod: "cloud-communications"
 doc_type: resourcePageType
