@@ -56,7 +56,7 @@ The following is an example of the request.
 }-->
 
 ```msgraph-interactive
-GET https://graph.microsoft.com/beta/drive/root/workbook/comments/{id}/replies/{id}
+GET https://graph.microsoft.com/beta/drive/items/{id}/workbook/comments/{id}/replies/{id}
 ```
 # [C#](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/get-workbookcommentreply-csharp-snippets.md)]
