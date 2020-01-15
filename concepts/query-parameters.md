@@ -426,6 +426,6 @@ However, it is important to note that query parameters specified in a request mi
 
 
 
-## Next steps
+## See also
 
-- Review the [Known Isues and Query Parameters Limitations](known-issues.md#query-parameter-limitations).
+- [Query parameter limitations](known-issues.md#query-parameter-limitations)
