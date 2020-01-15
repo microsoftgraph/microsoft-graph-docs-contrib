@@ -22,7 +22,10 @@ One of the following permissions is required to call this API. To learn more, in
 |:---------------------------------------|:--------------------------------------------|
 | Delegated (work or school account)     | OnlineMeetings.ReadWrite                    |
 | Delegated (personal Microsoft account) | Not Supported                               |
-| Application                            | OnlineMeetings.ReadWrite.All(**Deprecated and not supported in April 2020**)    |
+| Application                            | OnlineMeetings.ReadWrite.All*  |
+
+> \* **Note:** Application permissions are deprecated and will be removed in April 2020.
+
 ## HTTP request
 <!-- { "blockType": "ignored" } -->
 ```http
