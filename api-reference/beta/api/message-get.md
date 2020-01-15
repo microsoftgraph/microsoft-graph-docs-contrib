@@ -419,6 +419,7 @@ The fifth example gets the MIME content of a message in the signed-in user's mai
 
 <!-- {
   "blockType": "request",
+  "name": "get_message_in_mime",
   "sampleKeys": ["4aade2547798441eab5188a7a2436bc1"]
 } -->
 ```http
@@ -429,6 +430,7 @@ GET https://graph.microsoft.com/beta/me/messages/4aade2547798441eab5188a7a2436bc
 The following is the response. The MIME content begins with the `MIME-Version` header. 
 <!-- {
   "blockType": "response",
+  "name": "get_message_in_mime",
   "truncated": true,
   "@odata.type": "string"
 } -->
