@@ -319,8 +319,7 @@ The fourth example gets the MIME content of a message in the signed-in user's ma
 
 <!-- {
   "blockType": "request",
-  "sampleKeys": ["4aade2547798441eab5188a7a2436bc1"],
-  "name": "get_message_in_mime"
+  "sampleKeys": ["4aade2547798441eab5188a7a2436bc1"]
 } -->
 ```http
 GET https://graph.microsoft.com/v1.0/me/messages/4aade2547798441eab5188a7a2436bc1/$value
@@ -331,7 +330,6 @@ The following is the response. The MIME content begins with the `MIME-Version` h
 
 <!-- {
   "blockType": "response",
-  "name": "get_message_in_mime",
   "truncated": true,
   "@odata.type": "string"
 } -->
@@ -373,9 +371,7 @@ X-MS-Exchange-Organization-Network-Message-Id:
 X-MS-Exchange-Organization-SCL: -1 
 X-MS-TNEF-Correlator: 
 X-MS-Exchange-Organization-RecordReviewCfmType: 0 
-x-ms-publictraffictype: Emai
 
-```http
 MIME-Version: 1.0 
 Content-Type: multipart/mixed; 
                 boundary="_004_4aade2547798441eab5188a7a2436bc1contoso_" 
