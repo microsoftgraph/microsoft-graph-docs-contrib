@@ -421,7 +421,7 @@ The fifth example gets the MIME content of a message in the signed-in user's mai
   "blockType": "request",
   "sampleKeys": ["4aade2547798441eab5188a7a2436bc1"],
   "name": "get_message_in_mime"
-}-->
+} -->
 ```http
 GET https://graph.microsoft.com/beta/me/messages/4aade2547798441eab5188a7a2436bc1/$value
 ```
@@ -436,6 +436,7 @@ The following is the response. The MIME content begins with the `MIME-Version` h
 } -->
 ```http
 HTTP/1.1 200 OK
+Content-type: text/plain
 
 Received: from contoso.com (10.194.241.197) by 
 contoso.com (10.194.241.197) with Microsoft 
