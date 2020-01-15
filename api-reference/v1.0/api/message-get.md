@@ -331,7 +331,8 @@ The following is the response. The MIME content begins with the `MIME-Version` h
 <!-- {
   "blockType": "response",
   "name": "get_message_in_mime",
-  "truncated": true
+  "truncated": true,
+  "@odata.type": "string"
 } -->
 ```http
 HTTP/1.1 200 OK
