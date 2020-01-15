@@ -328,11 +328,12 @@ GET https://graph.microsoft.com/v1.0/me/messages/4aade2547798441eab5188a7a2436bc
 
 #### Response
 The following is the response. The MIME content begins with the `MIME-Version` header. 
+
 <!-- {
   "blockType": "response",
   "name": "get_message_in_mime",
   "truncated": true,
-  "@odata.type": "string"
+  "@odata.type": "microsoft.graph.message"
 } -->
 ```http
 HTTP/1.1 200 OK
