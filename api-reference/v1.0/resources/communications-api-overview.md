@@ -1,7 +1,7 @@
 ---
 title: "Working with the communications API in Microsoft Graph"
 description: "The Microsoft Graph communications API adds a new dimension to how your apps and services can interact with users by enabling voice and video features."
-author: "VinodRavichandran"
+author: "ananmishr"
 doc_type: conceptualPageType
 ms.prod: cloud-communications
 localization_priority: Priority
@@ -32,7 +32,7 @@ The following table lists some of the common uses for the communications API.
 | Creating and joining 1-1 and group calls   | [Call](https://docs.microsoft.com/graph/api/resources/call?view=graph-rest-v1.0)| [Methods for calls](https://docs.microsoft.com/graph/api/resources/call?view=graph-rest-v1.0#methods)| 
 |IVR calls   |     | [Methods for IVR](https://docs.microsoft.com/graph/api/resources/calls-api-ivr-overview?view=graph-rest-v1.0)
 | Call controls (participant) | [Participant](https://docs.microsoft.com/graph/api/resources/participant?view=graph-rest-v1.0)   ||
-|Meetings|[onlineMeeting](https://docs.microsoft.comgraph/api/resources/onlinemeeting?view=graph-rest-v1.0)| [Methods for meetings](https://docs.microsoft.com/graph/api/resources/onlinemeeting?view=graph-rest-v1.0#methods)|
+|Meetings|[onlineMeeting](https://docs.microsoft.com/graph/api/resources/onlinemeeting?view=graph-rest-v1.0)| [Methods for meetings](https://docs.microsoft.com/graph/api/resources/onlinemeeting?view=graph-rest-v1.0#methods)|
 
 ## Common properties
 

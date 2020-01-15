@@ -1,7 +1,7 @@
 ---
 title: "call: recordResponse"
 description: "Record a short audio response from the caller. This is useful if the bot wants to capture a voice response from the caller following a prompt."
-author: "VinodRavichandran"
+author: "ananmishr"
 localization_priority: Normal
 ms.prod: "cloud-communications"
 doc_type: apiPageType
@@ -104,7 +104,7 @@ Content-Length: 394
 }
 ```
 # [JavaScript](#tab/javascript)
-[!INCLUDE [sample-code](../includes/snippets/javascript/call-record-javascript-snippets.md)]
+[!INCLUDE [sample-code](../includes/snippets/javascript/call-recordresponse-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
