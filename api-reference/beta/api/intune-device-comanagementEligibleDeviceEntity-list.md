@@ -43,7 +43,7 @@ GET /deviceManagement/comanagementEligibleReports
 Do not supply a request body for this method.
 
 ## Response
-If successful, this method returns a `200 OK` response code and a collection of [comanagementEligibleDeviceEntity](../resources/comanagementEligibleDeviceEntity.md) objects in the response body.
+If successful, this method returns a `200 OK` response code and a collection of comanagementEligibleDeviceEntity objects in the response body.
 
 ## Example
 
