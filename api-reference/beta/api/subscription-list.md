@@ -2,7 +2,7 @@
 title: "List subscriptions"
 description: " see the scenarios below for details."
 localization_priority: Normal
-author: "piotrci"
+author: "baywet"
 doc_type: apiPageType
 ms.prod: ""
 ---
