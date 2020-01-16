@@ -1,7 +1,7 @@
 ---
 title: "List audio routing groups"
 description: "Retrieve a list of **audioRoutingGroup** objects."
-author: "VinodRavichandran"
+author: "ananmishr"
 localization_priority: Normal
 ms.prod: "cloud-communications"
 doc_type: apiPageType

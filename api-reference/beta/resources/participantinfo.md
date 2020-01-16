@@ -1,7 +1,7 @@
 ---
 title: "participantInfo resource type"
 description: "Contains additional properties about the participant identity"
-author: "VinodRavichandran"
+author: "ananmishr"
 localization_priority: Normal
 ms.prod: "cloud-communications"
 doc_type: resourcePageType

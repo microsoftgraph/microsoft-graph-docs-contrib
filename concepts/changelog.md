@@ -11,6 +11,14 @@ This changelog covers what's changed in the Microsoft Graph API, including the v
 
 For details about known issues with Microsoft Graph APIs, see [Known issues](known-issues.md).
 
+## January 2020
+
+### Security 
+
+| **Change type** | **Version**   | **Description**                          |
+| :-------------- | :------------ | :--------------------------------------- |
+| Change | beta and v1.0 | The [Update alert](/graph/api/alert-update?view=graph-rest-1.0&tabs=http) method now updates the **comments** field with the following values only: <br/> `Closed in IPC`, `Closed in MCAS`.|
+
 ## December 2019
 
 ### Change notifications (webhooks)
@@ -18,6 +26,7 @@ For details about known issues with Microsoft Graph APIs, see [Known issues](kno
 | **Change type** | **Version**   | **Description**                          |
 | :-------------- | :------------ | :--------------------------------------- |
 | Addition | beta | Added support for subscribing to notifications that include resource data. Currently supported resources are [chatMessage](/graph/api/resources/chatmessage?view=graph-rest-beta) resources in Microsoft Teams channels and chats. Subscribing apps will have to implement additional authorization and decryption code to benefit from this feature. For more details, see [Set up change notifications for chat messages, including message properties (preview)](webhooks-with-resource-data.md).|
+
 
 ### Cloud Communications
 
@@ -28,6 +37,10 @@ Introduced presence in beta and added cloud communications APIs to v1.0.
 |Addition|beta|Add the [presence](/graph/api/resources/presence?view=graph-rest-beta) resource and associated methods, and introduced the Presence.Read and Presence.Read.All permissions.|
 |Addition|v1.0|Added the following APIs: [create call](/graph/api/application-post-calls?view=graph-rest-1.0), [call answer](/graph/api/call-answer?view=graph-rest-1.0), [call reject](/graph/api/call-reject?view=graph-rest-1.0), [call get](/graph/api/call-get?view=graph-rest-1.0), [call delete](/graph/api/call-delete?view=graph-rest-1.0), [call mute](/graph/api/call-mute?view=graph-rest-1.0), [call-unmute](/graph/api/call-unmute?view=graph-rest-1.0), [call change screen sharing role](/graph/api/call-changescreensharingrole?view=graph-rest-1.0), [call transfer](/graph/api/call-transfer?view=graph-rest-1.0), [call redirect](/graph/api/call-redirect?view=graph-rest-1.0), [Play a prompt](/graph/api/call-playprompt?view=graph-rest-1.0), [Record Response](/graph/api/call-recordresponse?view=graph-rest-1.0), [Subscribe to tne](/graph/api/call-subscribetotone?view=graph-rest-1.0), [list participants](/graph/api/call-list-participants?view=graph-rest-1.0), [invite participants](/graph/api/participant-invite?view=graph-rest-1.0), [get participants](/graph/api/participant-get?view=graph-rest-1.0), [mute participants](/graph/api/participant-mute?view=graph-rest-1.0), [create online meeting](/graph/api/application-post-onlinemeeting?view=graph-rest-1.0), [get online meeting](/graph/api/onlinemeeting-get?view=graph-rest-1.0), and [call keep alive](/graph/api/call-keepalive?view=graph-rest-1.0).|
 |Addition|v1.0|Added the following resources: [call](/graph/api/resouces/call?view=graph-rest-1.0), [participant](/graph/api/resouces/participant?view=graph-rest-1.0), and [onlinemeetings](/graph/api/resouces/onlinemeetings?view=graph-rest-1.0).|
+| Change        | Beta        | Renamed IVR API Record to [recordResponse](/graph/api/call-record?view=graph-rest-beta). | 
+| Change        | Beta        | Removed [onlineMeeting](/graph/api/resources/onlinemeeting?view=graph-rest-beta) object properties **isCanceled**, **canceledDateTime**, and **entryExitAnnouncement**. Renamed property **joinUrl** to **joinWebUrl**. | 
+| Addition        | Beta & v1.0       | Added the [delete onlineMeeting](/graph/api/onlinemeeting-delete.md) operation.|
+
 
 ### Devices and apps (Microsoft Intune)
 
@@ -62,10 +75,17 @@ Introduced presence in beta and added cloud communications APIs to v1.0.
 |Addition|beta|Added the **securityOptions**, **userRightsAssignment**, **auditSetting** and **windowsFirewallSettings** members to the [groupPolicySettingType](/graph/api/resources/intune-gpanalyticsservice-grouppolicysettingtype?view=graph-rest-beta) enum type|
 |Addition|beta|Added the **contentDownloaded** member to the [resultantAppStateDetail](/graph/api/resources/intune-apps-resultantappstatedetail?view=graph-rest-beta) enum type|
 
+### Education
+
+| **Change type** | **Version**   | **Description**                          |
+| :-------------- | :------------ | :--------------------------------------- |
+| Addition | v1.0 | Added the [classSettings](/graph/api/resources/teamclasssettings?view=graph-rest-1.0) property to the [team](/graph/api/resources/team?view=graph-rest-1.0) resource to allow callers to get settings specific to a team of type Class.|
+
 ### Identity and access (Azure AD)
 | **Change type** | **Version**   | **Description**                          |
 |:---|:---|:---|
 |Change | beta |Updated the behavior of the **appRoleAssignments** and **appRoleAssignedTo** relationships on [servicePrincipal](/graph/api/resoureces/serviceprincipal?view=graph-rest-beta) to return the roles as documented. **appRoleAssignments** returns app roles granted to the service principal and **appRoleAssignedTo** returns principals granted app roles to the service principal.|
+| Addition | beta | Added the new entity type [accessPackageResourceRequest](/graph/api/resources/accesspackageresourcerequest?view=graph-rest-beta). |
 |Addition|beta, v1.0|Added support for returning a limited amount of information when your application does not have access to some of the types in a response's collection. For more details, see [Limited information returned for inaccessible member objects](permissions-reference.md#limited-information-returned-for-inaccessible-member-objects).|
 
 
@@ -96,7 +116,7 @@ Introduced version 1.1 of the Microsoft Graph Toolkit.
 | Addition        | NA          | Added the `user-ids` attribute to the [people component](/graph/toolkit/components/people). |
 | Fixes        | NA         | [Bug fixes and improvements](https://github.com/microsoftgraph/microsoft-graph-toolkit/releases/tag/v1.1.0). |
 
-### People intelligence | Insights
+### People and workplace intelligence | Insights
 
 | **Change type** | **Version**   | **Description**                          |
 | :-------------- | :------------ | :--------------------------------------- |
@@ -112,8 +132,11 @@ Introduced version 1.1 of the Microsoft Graph Toolkit.
  
 | **Change type** | **Version**   | **Description**                          |
 | :-------------- | :------------ | :--------------------------------------- |
-| Addition | beta | Added [notifications](/graph/api/subscription-post-subscriptions?view=graph-rest-beta) for new and edited channel messages, and new and edited chat messages.
-| Change | beta | Updated the application permissions required to perform read and write operations for shifts resources, including [schedule](/graph/api/resources/schedule?view=graph-rest-beta), [schedulingGroup](/graph/api/resources/schedulinggroup?view=graph-rest-beta), [shift](/graph/api/resources/shift?view=graph-rest-beta), [timeOff](/graph/api/resources/timeoff?view=graph-rest-beta), [timeOffReason](/graph/api/resources/timeoffreason?view=graph-rest-beta), [timeOffRequest](/graph/api/resources/timeoffrequest?view=graph-rest-beta), [swapShiftChangeRequest](/graph/api/resources/swapshiftchangerequest?view=graph-rest-beta), and [openShiftChangeRequest](/graph/api/resources/openshiftchangerequest?view=graph-rest-beta). **Note:** Applications permissions are currently in private preview and are not available for public use.|
+| Addition | Beta | Added [notifications](/graph/api/subscription-post- subscriptions?view=graph-rest-beta) for new and edited channel messages, and new and edited chat messages. |
+| Addition | Beta | Added the [shiftpreferences](/graph/api/resources/shiftpreferences?view=graph-rest-beta) resource and associated methods.|
+| Addition | Beta | Added new relationship `shiftPreferences` to [userSettings](/graph/api/resources/usersettings?view=graph-rest-beta) entity. |
+| Change | Beta | Updated the application permissions required to perform read and write operations for shifts resources, including [schedule](/graph/api/resources/schedule?view=graph-rest-beta), [schedulingGroup](/graph/api/resources/schedulinggroup?view=graph-rest-beta), [shift](/graph/api/resources/shift?view=graph-rest-beta), [timeOff](/graph/api/resources/timeoff?view=graph-rest-beta), [timeOffReason](/graph/api/resources/timeoffreason?view=graph-rest-beta), [timeOffRequest](/graph/api/resources/timeoffrequest?view=graph-rest-beta), [swapShiftChangeRequest](/graph/api/resources/swapshiftchangerequest?view=graph-rest-beta), and [openShiftChangeRequest](/graph/api/resources/openshiftchangerequest?view=graph-rest-beta). **Note:** Applications permissions are currently in private preview and are not available for public use.|
+
 
 ## November 2019
 
@@ -127,8 +150,9 @@ Introduced version 1.1 of the Microsoft Graph Toolkit.
 
 | **Change type** | **Version** | **Description**                  |
 |:----------------|:------------|:-----------------------------------------|
-| Change        | Beta        | Changed return type for [mute](/graph/api/call-mute?view=graph-rest-beta) and [mute participant](/graph/api/participant-mute?view=graph-rest-beta) methods from [commsOperation](/graph/api/resources/commsoperation?view=graph-rest-beta) to [muteParticipantOperation](/graph/api/resources/muteparticipantoperation?view=graph-rest-beta). | 
-| Change        | Beta        | Changed return type for [unmute](/graph/api/call-unmute?view=graph-rest-beta) method from [commsOperation](/graph/api/resources/commsoperation?view=graph-rest-beta) to [unmuteParticipantOperation](/graph/api/resources/unmuteparticipantoperation?view=graph-rest-beta). | 
+| Change        | Beta        | Changed return type for [mute](/graph/api/call-mute?view=graph-rest-beta) and [mute participant](/graph/api/participant-mute?view=graph-rest-beta) methods from [commsOperation](/graph/api/resources/commsoperation?view=graph-rest-beta) to [muteParticipantOperation](/graph/api/resources/muteparticipantoperation?view=graph-rest-beta). |
+| Change        | Beta        | Changed return type for [unmute](/graph/api/call-unmute?view=graph-rest-beta) method from [commsOperation](/graph/api/resources/commsoperation?view=graph-rest-beta) to [unmuteParticipantOperation](/graph/api/resources/unmuteparticipantoperation?view=graph-rest-beta). |
+| Addition        | Beta        | Added the [keepAlive](/api-reference/beta/api/call-keepalive.md) action to the [call](/api-reference/beta/resources/call.md) entity. |
 
 ### Cloud Communications | Recording
 
@@ -382,22 +406,22 @@ Microsoft Search is now exposing a way to search and index data in Microsoft Gra
 
 | **Change type** | **Version**   | **Description**                          |
 | :-------------- | :------------ | :--------------------------------------- |
-| Change          | beta          | Changed **detectedSensitiveContent** entity name to [classificationResult](/graph/api/resources/classificationresult?view=graph-rest-beta).  | 
-| Deletion        | beta          | Removed **displayName**, **uniqueCount**, and **matches** properties from [classificationResult](/graph/api/resources/classificationresult?view=graph-rest-beta).  | 
-| Change          | beta          | Changed **id** to **sensitiveTypeId** properties of [classificationResult](/graph/api/resources/classificationresult?view=graph-rest-beta).   | 
-| Change          | beta          | Changed **confidence** to **confidenceLevel** property of [classificationResult](/graph/api/resources/classificationresult?view=graph-rest-beta).   | 
-| Addition        | beta          | Added **count** property to [classificationResult](/graph/api/resources/classificationresult?view=graph-rest-beta)/.  | 
-| Deletion        | beta          | Removed **actionSource** property from [labelingOptions](/graph/api/resources/labelingoptions?view=graph-rest-beta). | 
-| Deletion        | beta          | Removed **auditInfo** entity. | 
-| Change          | beta          | Changed **protectByDoNotForwardAction** to [protectDoNotForwardAction](/graph/api/resources/protectdonotforwardaction?view=graph-rest-beta). | 
-| Addition        | beta          | Added **alignment** property to [addContentHeaderAction](/graph/api/resources/addcontentheaderaction?view=graph-rest-beta). | 
+| Change          | beta          | Changed **detectedSensitiveContent** entity name to [classificationResult](/graph/api/resources/classificationresult?view=graph-rest-beta).  |
+| Deletion        | beta          | Removed **displayName**, **uniqueCount**, and **matches** properties from [classificationResult](/graph/api/resources/classificationresult?view=graph-rest-beta).  |
+| Change          | beta          | Changed **id** to **sensitiveTypeId** properties of [classificationResult](/graph/api/resources/classificationresult?view=graph-rest-beta).   |
+| Change          | beta          | Changed **confidence** to **confidenceLevel** property of [classificationResult](/graph/api/resources/classificationresult?view=graph-rest-beta).   |
+| Addition        | beta          | Added **count** property to [classificationResult](/graph/api/resources/classificationresult?view=graph-rest-beta)/.  |
+| Deletion        | beta          | Removed **actionSource** property from [labelingOptions](/graph/api/resources/labelingoptions?view=graph-rest-beta). |
+| Deletion        | beta          | Removed **auditInfo** entity. |
+| Change          | beta          | Changed **protectByDoNotForwardAction** to [protectDoNotForwardAction](/graph/api/resources/protectdonotforwardaction?view=graph-rest-beta). |
+| Addition        | beta          | Added **alignment** property to [addContentHeaderAction](/graph/api/resources/addcontentheaderaction?view=graph-rest-beta). |
 | Change          | beta          | Changed **labelId** property to **label** in [recommendLabelAction](/graph/api/resources/recommendedlabelaction?view=graph-rest-beta). |
 | Change          | beta          | Changed **classificationIds** property to **responsibleSensitivityTypeIds** in [recommendLabelAction](/graph/api/resources/recommendedlabelaction?view=graph-rest-beta). |
 | Addition        | beta          | Added **actionSource** property to [recommendLabelAction](/graph/api/resources/recommendedlabelaction?view=graph-rest-beta). |
 | Change          | beta          | Changed **labelId** property to **label** in [applyLabelAction](/graph/api/resources/applylabelaction?view=graph-rest-beta). |
 | Change          | beta          | Changed **classificationIds** property to **responsibleSensitivityTypeIds** in [applyLabelAction](/graph/api/resources/applylabelaction?view=graph-rest-beta). |
 | Addition        | beta          | Added **actionSource** property to [applyLabelAction](/graph/api/resources/applylabelaction?view=graph-rest-beta). |
-| Change          | beta          | Change [contentFormat](/graph/api/resources/enums?view=graph-rest-beta)) enum value **file** to **default**. | 
+| Change          | beta          | Change [contentFormat](/graph/api/resources/enums?view=graph-rest-beta)) enum value **file** to **default**. |
 | Deletion        | beta          | Removed **mandatory** value from [actionSource](/graph/api/resources/enums?view=graph-rest-beta)) enum. |
 | Change          | beta          | Removed [actionSource](/graph/api/resources/enums?view=graph-rest-beta)) enum value **policyDefault** to **default**. |
 | Deletion        | beta          | Removed **auditMetadataKey**. |
@@ -528,7 +552,7 @@ Microsoft Search is now exposing a way to search and index data in Microsoft Gra
 | Addition        | Beta        | Added the property **isBroadcast** to the [onlineMeeting](/graph/api/resources/onlineMeeting?view=graph-rest-beta) resource. |
 | Change        | Beta        | Renamed the **resource** property to **resourceUrl** on the [commsNotification](/graph/api/resources/commsNotification?view=graph-rest-beta) resource. |
 | Change          | Beta        | Changed the type of the **code** and **subCode** properties from string to Int32 on the [resultInfo](/graph/api/resources/resultInfo?view=graph-rest-beta) resource. |
-| Change        | Beta        | Renamed the **subcode** property to **subCode** on the [resultInfo](/graph/api/resources/resultInfo?view=graph-rest-beta) resource. | 
+| Change        | Beta        | Renamed the **subcode** property to **subCode** on the [resultInfo](/graph/api/resources/resultInfo?view=graph-rest-beta) resource. |
 
 ### Files (OneDrive for Business and OneDrive Personal)
 

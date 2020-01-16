@@ -56,7 +56,7 @@ The following is an example of the request.
 }-->
 
 ```http
-POST https://graph.microsoft.com/v1.0/drive/root/workbook/comments/{id}/replies
+POST https://graph.microsoft.com/v1.0/drive/items/{id}/workbook/comments/{id}/replies
 Content-type: application/json
 
 {
