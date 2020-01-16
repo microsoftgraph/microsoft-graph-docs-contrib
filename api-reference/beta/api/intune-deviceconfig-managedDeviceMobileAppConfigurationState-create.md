@@ -13,7 +13,7 @@ doc_type: apiPageType
 
 > **Note:** The Microsoft Graph API for Intune requires an [active Intune license](https://go.microsoft.com/fwlink/?linkid=839381) for the tenant.
 
-Create a new [managedDeviceMobileAppConfigurationState](../resources/managedDeviceMobileAppConfigurationState.md) object.
+Create a new managedDeviceMobileAppConfigurationState object.
 
 ## Prerequisites
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
@@ -47,11 +47,11 @@ The following table shows the properties that are required when you create the m
 |Property|Type|Description|
 |:---|:---|:---|
 |id|String|Key of the entity.|
-|settingStates|[managedDeviceMobileAppConfigurationSettingState](../resources/managedDeviceMobileAppConfigurationSettingState.md) collection|**TODO: Add description.**|
+|settingStates|managedDeviceMobileAppConfigurationSettingState collection|**TODO: Add description.**|
 |displayName|String|The name of the policy for this policyBase|
 |version|Int32|The version of the policy|
-|platformType|[policyPlatformType](../resources/policyPlatformType.md)|Platform type that the policy applies to. Possible values are: `android`, `androidForWork`, `iOS`, `macOS`, `windowsPhone81`, `windows81AndLater`, `windows10AndLater`, `androidWorkProfile`, `all`.|
-|state|[complianceStatus](../resources/complianceStatus.md)|The compliance state of the policy. Possible values are: `unknown`, `notApplicable`, `compliant`, `remediated`, `nonCompliant`, `error`, `conflict`, `notAssigned`.|
+|platformType|policyPlatformType|Platform type that the policy applies to. Possible values are: `android`, `androidForWork`, `iOS`, `macOS`, `windowsPhone81`, `windows81AndLater`, `windows10AndLater`, `androidWorkProfile`, `all`.|
+|state|complianceStatus|The compliance state of the policy. Possible values are: `unknown`, `notApplicable`, `compliant`, `remediated`, `nonCompliant`, `error`, `conflict`, `notAssigned`.|
 |settingCount|Int32|Count of how many setting a policy holds|
 |userId|String|User unique identifier, must be Guid|
 |userPrincipalName|String|User Principal Name|
@@ -59,7 +59,7 @@ The following table shows the properties that are required when you create the m
 
 
 ## Response
-If successful, this method returns a `201 Created` response code and a [managedDeviceMobileAppConfigurationState](../resources/managedDeviceMobileAppConfigurationState.md) object in the response body.
+If successful, this method returns a `201 Created` response code and a managedDeviceMobileAppConfigurationState object in the response body.
 
 ## Example
 

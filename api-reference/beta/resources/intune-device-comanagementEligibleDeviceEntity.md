@@ -1,6 +1,6 @@
 ---
 title: "comanagementEligibleDeviceEntity resource type"
-description: **TODO: Add description.**
+description: "comanagementEligibleDeviceEntity resource type"
 author: "rolyon"
 localization_priority: Normal
 ms.prod: "Intune"

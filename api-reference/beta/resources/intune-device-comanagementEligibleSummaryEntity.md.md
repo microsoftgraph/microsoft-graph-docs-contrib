@@ -1,6 +1,6 @@
 ---
 title: "comanagementEligibleSummaryEntity resource type"
-description: **TODO: Add description.**
+description: "comanagementEligibleSummaryEntity resource type"
 author: "rolyon"
 localization_priority: Normal
 ms.prod: "Intune"
@@ -18,7 +18,7 @@ Managed Device Mobile App Configuration State for a given device.
 ## Methods
 |Method|Return Type|Description|
 |:---|:---|:---|
-|[List comanagementEligibleSummaryEntity](../api/intune-device-comanagementEligibleSummaryEntity-list.md)|[comanagementEligibleSummaryEntity](../resources/intune-device-comanagementEligibleSummaryEntity.md) collection|List properties and relationships of the [comanagementEligibleSummaryEntity](../resources/intune-device-comanagementEligibleSummaryEntity.md) objects.|
+|[List comanagementEligibleSummaryEntity](../api/intune-device-comanagementEligibleSummaryEntity-list.md)|comanagementEligibleSummaryEntity collection|List properties and relationships of the comanagementEligibleSummaryEntity objects.|
 
 ## Properties
 |Property|Type|Description|
