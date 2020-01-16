@@ -22,7 +22,10 @@ One of the following permissions is required to call this API. To learn more, in
 |:---------------------------------------|:--------------------------------------------|
 | Delegated (work or school account)     | OnlineMeetings.ReadWrite                    |
 | Delegated (personal Microsoft account) | Not Supported                               |
-| Application                            | Not Supported                |
+| Application                            | OnlineMeetings.ReadWrite.All*  |
+
+> \* **Note:** Application permissions are deprecated and will be removed in April 2020.
+
 ## HTTP request
 <!-- { "blockType": "ignored" } -->
 ```http
@@ -51,7 +54,7 @@ If successful, this method returns a `201 Created` response code and an [onlineM
 #### Request
 
 > [!Note]
-> Online meeting creation using the application token is deprecated. Use the /me path with a user token to create online meetings going forward.
+> Online meeting creation using an application token is deprecated and support will be removed in April 2020. Use the /me path with a user token to create online meetings going forward.
 
 # [HTTP](#tab/http)
 <!-- {

@@ -1,7 +1,7 @@
 ---
 title: "Use query parameters to customize responses"
 description: "Microsoft Graph provides optional query parameters that you can use to specify and control the amount of data returned in a response. The following query parameters are supported."
-author: "piotrci"
+author: "baywet"
 localization_priority: Priority
 ms.custom: graphiamtop20, scenarios:getting-started
 ---
@@ -424,3 +424,8 @@ However, it is important to note that query parameters specified in a request mi
 [search-sbj-example]: https://developer.microsoft.com/graph/graph-explorer?request=me/messages?$search=%22subject%3Ahas%22%26$select=subject&method=GET&version=v1.
 [search-to-example]: https://developer.microsoft.com/graph/graph-explorer?request=me/messages?$search=%22to%3Arandiw%22%26$select=subject,toRecipients&method=GET&version=v1.0
 
+
+
+## See also
+
+- [Query parameter limitations](known-issues.md#query-parameter-limitations)

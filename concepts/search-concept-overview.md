@@ -62,4 +62,4 @@ Looking for the API reference for this service?
 
 ## See also
 
-- Engage with the community on [Stack Overflow](https://stackoverflow.com/questions/tagged/microsoft-search).
+- Engage with the community on [Stack Overflow](https://stackoverflow.com/questions/tagged/microsoft-graph-search).

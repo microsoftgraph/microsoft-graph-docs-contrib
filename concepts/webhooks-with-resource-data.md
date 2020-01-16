@@ -1,7 +1,7 @@
 ---
 title: "Set up change notifications that include resource data (preview)"
 description: "Microsoft Graph uses a webhook mechanism to deliver change notifications to clients. Notifications can include resource properties."
-author: "piotrci"
+author: "baywet"
 ms.prod: "non-product-specific"
 localization_priority: Priority
 ---
