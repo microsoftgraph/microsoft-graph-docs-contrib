@@ -11,6 +11,14 @@ This changelog covers what's changed in the Microsoft Graph API, including the v
 
 For details about known issues with Microsoft Graph APIs, see [Known issues](known-issues.md).
 
+## January 2020
+
+### Microsoft Teams
+
+| **Change type** | **Version**   | **Description**                          |
+| :-------------- | :------------ | :--------------------------------------- |
+| Addition | beta | Added permissions for [resource-specific consent](/graph/permissions-reference?context=graph%2Fapi%2Fbeta&view=graph-rest-beta#terms-of-use-permissions).|
+
 ## December 2019
 
 ### Change notifications (webhooks)
