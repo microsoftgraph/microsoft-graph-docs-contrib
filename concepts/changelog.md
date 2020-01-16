@@ -27,6 +27,7 @@ For details about known issues with Microsoft Graph APIs, see [Known issues](kno
 | :-------------- | :------------ | :--------------------------------------- |
 | Addition | beta | Added support for subscribing to notifications that include resource data. Currently supported resources are [chatMessage](/graph/api/resources/chatmessage?view=graph-rest-beta) resources in Microsoft Teams channels and chats. Subscribing apps will have to implement additional authorization and decryption code to benefit from this feature. For more details, see [Set up change notifications for chat messages, including message properties (preview)](webhooks-with-resource-data.md).|
 
+
 ### Cloud communications
 
 Introduced presence in beta and added cloud communications APIs to v1.0.
@@ -93,6 +94,7 @@ Introduced presence in beta and added cloud communications APIs to v1.0.
 | **Change type** | **Version** | **Description**              |
 | :-------------- | :---------- | :--------------------------------------- |
 | Addition        | beta        | Added [create](/graph/api/informationprotection-post-threatassessmentrequests?view=graph-rest-beta), [get](/graph/api/threatassessmentrequest-get?view=graph-rest-beta) and [list](/graph/api/informationprotection-list-threatassessmentrequests?view=graph-rest-beta) APIs to manage [threatAssessmentRequest](/graph/api/resources/threatAssessmentRequest?view=graph-rest-beta) resources.|
+| Addition        | beta        | Added optional request header, User-Agent, to [evaluate application](/graph/api/informationprotectionlabel-evaluateapplication?view=graph-rest-beta), [evaluate classification](/graph/api/informationprotectionlabel-evaluateclassificationresults?view=graph-rest-beta), [evaluate removal](/graph/api/informationprotectionlabel-evaluateremoval?view=graph-rest-beta), [extract label](/graph/api/informationprotectionlabel-extractlabel?view=graph-rest-beta), [list label](/graph/api/informationprotectionlabel-list-labels?view=graph-rest-beta), and [get label](/graph/api/informationprotectionlabel-get?view=graph-rest-beta).
 
 ### Microsoft Graph Toolkit
 
@@ -113,7 +115,6 @@ Introduced version 1.1 of the Microsoft Graph Toolkit.
 | Addition        | NA          | Added the `person-card` attribute to the [people component](/graph/toolkit/components/people). |
 | Addition        | NA          | Added the `user-ids` attribute to the [people component](/graph/toolkit/components/people). |
 | Fixes        | NA         | [Bug fixes and improvements](https://github.com/microsoftgraph/microsoft-graph-toolkit/releases/tag/v1.1.0). |
-
 
 ### People and workplace intelligence | Insights
 
