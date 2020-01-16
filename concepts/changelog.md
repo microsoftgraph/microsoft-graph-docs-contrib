@@ -28,7 +28,7 @@ For details about known issues with Microsoft Graph APIs, see [Known issues](kno
 | Addition | beta | Added support for subscribing to notifications that include resource data. Currently supported resources are [chatMessage](/graph/api/resources/chatmessage?view=graph-rest-beta) resources in Microsoft Teams channels and chats. Subscribing apps will have to implement additional authorization and decryption code to benefit from this feature. For more details, see [Set up change notifications for chat messages, including message properties (preview)](webhooks-with-resource-data.md).|
 
 
-### Cloud Communications
+### Cloud communications
 
 Introduced presence in beta and added cloud communications APIs to v1.0.
 
