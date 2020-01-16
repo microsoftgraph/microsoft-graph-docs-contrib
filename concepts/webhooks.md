@@ -54,8 +54,8 @@ Or to the root folder of a SharePoint/OneDrive for Business drive:
 `/drive/root`
 
 Or to a new [Security API](security-concept-overview.md) alert:
-`/security/alerts?$filter=status eq ‘New’`,
-`/security/alerts?$filter=vendorInformation/provider eq ‘ASC’`
+`/security/alerts?$filter=status eq 'newAlert'`,
+`/security/alerts?$filter=vendorInformation/provider eq 'ASC'`
 
 ### Azure AD resource limitations
 
