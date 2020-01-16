@@ -13,11 +13,11 @@ For details about known issues with Microsoft Graph APIs, see [Known issues](kno
 
 ## January 2020
 
-### Resource specific consent
+### Microsoft Teams
 
 | **Change type** | **Version**   | **Description**                          |
 | :-------------- | :------------ | :--------------------------------------- |
-| Addition | beta | Added permissions for [resource specific consent in Teams](/graph/permissions-reference?context=graph%2Fapi%2Fbeta&view=graph-rest-beta#terms-of-use-permissions)|
+| Addition | beta | Added permissions for [resource-specific consent](/graph/permissions-reference?context=graph%2Fapi%2Fbeta&view=graph-rest-beta#terms-of-use-permissions).|
 
 ## December 2019
 
