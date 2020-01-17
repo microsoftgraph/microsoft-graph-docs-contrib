@@ -21,7 +21,7 @@ This article uses an example to illustrate the second approach. The example crea
 
 A successful operation returns `HTTP 201 Created` and a new [uploadSession](/graph/api/resources/uploadsession?view=graph-rest-beta) instance, which contains an opaque URL that you can use in subsequent `PUT` operations to upload portions of the file. The **uploadSession** provides a temporary storage location where the bytes of the file are saved until you have uploaded the complete file. 
 
-The opaque URL, returned in the **uploadUrl** property of the **uploadSession**, is pre-authenticated and contains the appropriate authorization token for subsequent `PUT` queries in the `https://outlook.office.com` domain. That token expires by **expirationDateTime**. Do not customize this URL for the `PUT` operations.
+Make sure to request `Mail.ReadWrite` permission to create the **uploadSession**. The opaque URL, returned in the **uploadUrl** property of the new **uploadSession**, is pre-authenticated and contains the appropriate authorization token for subsequent `PUT` queries in the `https://outlook.office.com` domain. That token expires by **expirationDateTime**. Do not customize this URL for the `PUT` operations.
 
 The **uploadSession** object in the response also includes the **nextExpectedRanges** property, which indicates the initial upload starting location should be byte 0.
 

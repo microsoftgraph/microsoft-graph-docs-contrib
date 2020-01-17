@@ -1012,8 +1012,8 @@ The *CreatedByApp* constraint associated with this permission indicates that the
 
 |Permission    |Display String   |Description |Admin Consent Required |
 |:-----------------------------|:-----------------------------------------|:-----------------|:-----------------|
-|_OnlineMeetings.Read.All_|Read Online Meeting details from the app (preview)|Allows the app to read VTC associated online meeting details in your organization, without a signed-in user.|Yes|
-
+|_OnlineMeetings.Read.All_|Read Online Meeting details from the app |Allows the app to read VTC associated online meeting details in your organization without a signed-in user.|Yes|
+|_OnlineMeetings.ReadWrite.All_|Read Online Meeting details from the app (deprecated)|**Deprecated. Do not use.** Allows an app to create, read online meetings without a signed-in user.|Yes|
 <br/>
 
 ### Example usage
@@ -1166,8 +1166,8 @@ For more complex scenarios involving multiple permissions, see [Permission scena
 
 |   Permission    |  Display String   |  Description | Admin Consent Required | Microsoft Account supported |
 |:----------------|:------------------|:-------------|:-----------------------|:--------------|
-| _Place.Read.All_ |Allows the app to read company places (conference rooms and room lists) set up in Exchange Online for the tenant. |Yes | No |
-| _Place.ReadWrite.All_ |Allows the app to read and write company places (conference rooms and room lists) set up in Exchange Online for the tenant. |Yes | No |
+| _Place.Read.All_ |   Read all company places | Allows the app to read company places (conference rooms and room lists) set up in Exchange Online for the tenant. |Yes | No |
+| _Place.ReadWrite.All_ |   Read and write all company places | Allows the app to read and write company places (conference rooms and room lists) set up in Exchange Online for the tenant. |Yes | No |
 
 #### Application permissions
 
