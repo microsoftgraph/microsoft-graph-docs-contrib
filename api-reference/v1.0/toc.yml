@@ -219,6 +219,8 @@
         items:
         - name: Assign license
           href: api/user-assignlicense.md
+        - name: Reprocess license assignment
+          href: api/user-reprocesslicenseassignment.md 
         - name: Check member groups
           href: api/user-checkmembergroups.md
         - name: Check member objects
@@ -367,6 +369,8 @@
         - name: Add member
           href: api/group-post-members.md
         - name: Add owner
+          href: api/group-assignlicense.md
+        - name: Assign license
           href: api/group-post-owners.md
         - name: Check member groups
           href: api/group-checkmembergroups.md
