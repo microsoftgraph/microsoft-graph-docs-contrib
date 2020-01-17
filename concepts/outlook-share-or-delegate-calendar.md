@@ -12,14 +12,14 @@ In Outlook, a calendar owner can share the calendar with another user, or delega
 
 Delegates are sharees who can view all information in and have write access to non-private events; they also receive meeting requests and responses, and respond to meeting requests on behalf of the owner. Additionally, the owner can give explicit permissions to delegates to view the owner's _private_ events on the calendar. 
 
-Before calendar sharing or delegation takes effect, the owner sends a sharee or delegate an invitation, and the sharee or delegate has to accept the invitation. All this occurs in an Outlook client. 
+Before calendar sharing or delegation can take effect, the owner sends a sharee or delegate an invitation, and the sharee or delegate accepts the invitation or explicitly adds the shared or delegated calendar for access. All this occurs in an Outlook client. 
 
 The rest of this article is based on the following example scenario:
 
 - Alex Wilber has delegated Megan Bowen to his primary calendar, and also permitted Megan to view private events in that calendar. 
-- Alex shared a "Kids parties" calendar with Adele Vance and Megan Bowen, and gave both of them `read` permissions to all the details of the non-private events on the "Kids parties" calendar.
+- Alex shared a "Kids parties" calendar with Adele Vance and Megan Bowen, and gave both of them `read` permissions to all the details of non-private events on the "Kids parties" calendar, and free/busy status for private events. 
 
-After the sharing and delegation have been set up and accepted in Outlook, apps can then use the Microsoft Graph API to do the following tasks:
+After the sharing and delegation take effect, apps can then use the Microsoft Graph API to do the following tasks:
 
 - [Get calendar information about sharees, delegates, and allowed permissions, and update individual permissions](#get-calendar-information-about-sharees-and-delegates-and-update-individual-permissions).
 - [Get the properties that describe the sharing or delegation of the calendar](#get-properties-of-a-shared-or-delegated-calendar).
@@ -39,19 +39,19 @@ In this section:
 Each calendar is associated with a collection of [calendarPermission](/graph/api/resources/calendarpermission?view=graph-rest-beta) objects, each of which describes a sharee or delegate and the associated permission that the calendar owner has set up. The [calendarRoleType](/graph/api/resources/calendarpermission#calendarroletype-values?view=graph-rest-beta) enumeration defines the range of permissions that Microsoft Graph supports:
 
 - `none`
-    The calendar is not shared with or delegated to anyone.
+    The corresponding sharee or delegate does not have any permissions to the calendar. This applies to only `My Organization` as the sharee or delegate. For individuals, only users with permissions are associated with corresponding **calendarPermission** objects.
 - `freeBusyRead`
-    The sharee can view the owner's free/busy status on the calendar.
+    The sharee can view the owner's free/busy status on the calendar, but not other details.
 - `limitedRead`
     The sharee can view the owner's free/busy status, and the titles and locations of non-private events on the calendar.
 - `read`
-    The sharee can view all the details of non-private events on the calendar.
+    The sharee can view the owner's free/busy status in private events, and all the details of non-private events on the calendar.
 - `write`
-    The sharee can view all the details and edit (create, update, or delete) non-private events on the calendar.
+    The sharee can view the owner's free/busy status in private events, view all the details of non-private events on the calendar, and edit (create, update, or delete) them.
 - `delegateWithoutPrivateEventAccess`
-    The delegate has `write` access but cannot view information of the owner's private events on the calendar.
+    The _delegate_ can view only free/busy status of the owner's private events, and has `write` access to non-private events on the calendar.
 - `delegateWithPrivateEventAccess`
-    The delegate has `write` access and can view information of the owner's private events on the calendar.
+    The _delegate_ can view details of the owner's private and non-private events, and has `write` access to all the events on the calendar.
 
 The primary calendar of a user is always shared with "My Organization", which represents the users in the same organization as the owner. By default, they can read the owner's free/busy status on that calendar and have the `freeBusyRead` permission.
 
