@@ -1,7 +1,7 @@
 ---
 title: "Set up notifications for changes in user data"
 description: "The Microsoft Graph API uses a webhook mechanism to deliver notifications to clients. A client is a web service that configures its own URL to receive notifications. Client apps use notifications to update their state upon changes."
-author: "piotrci"
+author: "baywet"
 ms.prod: "non-product-specific"
 localization_priority: Priority
 ms.custom: graphiamtop20
@@ -54,8 +54,8 @@ Or to the root folder of a SharePoint/OneDrive for Business drive:
 `/drive/root`
 
 Or to a new [Security API](security-concept-overview.md) alert:
-`/security/alerts?$filter=status eq ‘New’`,
-`/security/alerts?$filter=vendorInformation/provider eq ‘ASC’`
+`/security/alerts?$filter=status eq 'newAlert'`,
+`/security/alerts?$filter=vendorInformation/provider eq 'ASC'`
 
 ### Azure AD resource limitations
 

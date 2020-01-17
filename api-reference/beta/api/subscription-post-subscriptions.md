@@ -2,7 +2,7 @@
 title: "Create subscription"
 description: "Subscribes a listener application to receive notifications when data on a Microsoft Graph resource changes."
 localization_priority: Normal
-author: "piotrci"
+author: "baywet"
 doc_type: apiPageType
 ms.prod: ""
 ---
@@ -33,7 +33,7 @@ Creating a subscription requires read permission to the resource. For example, t
 |[security alert](../resources/alert.md) | SecurityEvents.ReadWrite.All | Not supported | SecurityEvents.ReadWrite.All |
 |[user](../resources/user.md) | User.Read.All | User.Read.All | User.Read.All |
 
-> **Note:** In January 2020, chatMessage subscriptions will require [encryption](/graph/webhooks-with-resource-data), and subscription creation will fail if [encryptionCertificate](../resources/subscription.md) is not specified.
+> **Note:** chatMessage subscriptions require [encryption](/graph/webhooks-with-resource-data). Subscription creation will fail if [encryptionCertificate](../resources/subscription.md) is not specified.
 
 > **Note:** Additional limitations apply for subscriptions on OneDrive and Outlook items. The limitations apply to creating as well as managing (getting, updating, and deleting) subscriptions.
 
