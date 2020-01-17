@@ -19,6 +19,12 @@ For details about known issues with Microsoft Graph APIs, see [Known issues](kno
 | :-------------- | :------------ | :--------------------------------------- |
 | Change | beta and v1.0 | The [Update alert](/graph/api/alert-update?view=graph-rest-1.0&tabs=http) method now updates the **comments** field with the following values only: <br/> `Closed in IPC`, `Closed in MCAS`.|
 
+### Users
+
+| **Change type** | **Version**   | **Description**                          |
+| :-------------- | :------------ | :--------------------------------------- |
+| Addition | v1.0 | Added the **identities** property to the [user](/graph/api/resources/user?view=graph-rest-1.0) resource. This property represents the set of identities (like local accounts and social accounts) that this user can use to sign in with.|
+
 ## December 2019
 
 ### Change notifications (webhooks)
