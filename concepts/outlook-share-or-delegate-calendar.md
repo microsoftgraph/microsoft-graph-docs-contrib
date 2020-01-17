@@ -39,17 +39,17 @@ In this section:
 Each calendar is associated with a collection of [calendarPermission](/graph/api/resources/calendarpermission?view=graph-rest-beta) objects, each of which describes a sharee or delegate and the associated permission that the calendar owner has set up. The [calendarRoleType](/graph/api/resources/calendarpermission#calendarroletype-values?view=graph-rest-beta) enumeration defines the range of permissions that Microsoft Graph supports:
 
 - `none`
-    The corresponding sharee or delegate does not have any permissions to the calendar. This applies to only `My Organization` as the sharee or delegate. For individuals, only users with permissions are associated with corresponding **calendarPermission** objects.
+    This value applies to only `My Organization` which does not have any permissions to the calendar. It doesn't apply to individual users, as only users with permissions are associated with a **calendarPermission** object for the calendar.
 - `freeBusyRead`
-    The sharee can view the owner's free/busy status on the calendar, but not other details.
+    The sharee can view the owner's free/busy status, but not other details on the calendar.
 - `limitedRead`
     The sharee can view the owner's free/busy status, and the titles and locations of non-private events on the calendar.
 - `read`
     The sharee can view the owner's free/busy status in private events, and all the details of non-private events on the calendar.
 - `write`
-    The sharee can view the owner's free/busy status in private events, view all the details of non-private events on the calendar, and edit (create, update, or delete) them.
+    The sharee can view the owner's free/busy status in private events, and can view all the details and edit (create, update, or delete) non-private events on the calendar.
 - `delegateWithoutPrivateEventAccess`
-    The _delegate_ can view only free/busy status of the owner's private events, and has `write` access to non-private events on the calendar.
+    The _delegate_ can view the owner's free/busy status in private events, and has `write` access to non-private events on the calendar.
 - `delegateWithPrivateEventAccess`
     The _delegate_ can view details of the owner's private and non-private events, and has `write` access to all the events on the calendar.
 
@@ -138,9 +138,9 @@ Content-type: application/json
 
 ### Update permissions for an existing sharee or delegate on a calendar
 
-On behalf of the calendar owner, you can update the permissions assigned to an existing sharee or delegate, as long as the new permissions are supported by those **allowedRoles** set up initially for the sharee or delegate for that calendar. 
+On behalf of the calendar owner, you can update the permissions assigned to an existing sharee or delegate (specified by the **role** property), as long as the new permissions are supported by those **allowedRoles** set up initially for the sharee or delegate for that calendar. 
 
-Aside from permissions, you cannot update other information after setting up the sharee or delegate, such as **isRemovable**, **isInsideOrganization**, **allowedRoles**, and **emailAddress**. Changing any of these properties requires deleting the sharee or delegate and setting up a new instance of **calendarPermission** again.
+Aside from the **role** property, you cannot update other properties of an existing sharee or delegate. Changing the **emailAddress** property value requires deleting the sharee or delegate and setting up a new instance of **calendarPermission** again.
 
 The following example changes the permission of an existing sharee, Adele, from `read` to `write`, on behalf of the calendar owner, Alex, for the custom calendar "Kids parties".
 
@@ -264,7 +264,7 @@ The following example gets the properties of the same calendar on behalf of the 
 
 Note the following properties:
 
-- **name** of the calendar is "Alex Wilber", since this is Alex' calendar delegated to Megan.
+- **name** of the calendar is by default the owner's display name. In this case, it's "Alex Wilber", since this is Alex' calendar delegated to Megan. The **name** property is the only property of a shared/delegated calendar that a sharee or delegate can customize for themselves; the calendar owner does not see such name changes.
 - **canShare** is false, since Megan is not the owner of this calendar.
 - **canViewPrivateItems** is true for the delegate Megan, as set up by Alex. For a sharee that is not a delegate, this property is always false.
 - **isShared** is false. This property indicates only to a calendar _owner_ whether the calendar has been shared or delegated.
