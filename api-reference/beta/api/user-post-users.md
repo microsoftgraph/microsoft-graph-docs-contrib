@@ -112,8 +112,8 @@ In the request body, supply a JSON representation of [user](../resources/user.md
 ##### Response
 Here is an example of the response. 
 
-[!NOTE]
-The response object shown here might be shortened for readability. All the properties will be returned from an actual call.
+>[!NOTE]
+>The response object shown here might be shortened for readability. All the properties will be returned from an actual call.
 
 <!-- {
   "blockType": "response",
@@ -144,8 +144,8 @@ Content-type: application/json
 
 Create a new user, with a local account identity with a sign-in name, an email address as sign-in, and with a social identity. This example is typically used for migration scenarios in B2C tenants.  
 
-[!NOTE] 
-For local account identities, password expirations must be disabled, and force change password at next sign-in must also be disabled.
+>[!NOTE] 
+>For local account identities, password expirations must be disabled, and force change password at next sign-in must also be disabled.
 
 #### Request
 
