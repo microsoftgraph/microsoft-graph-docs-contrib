@@ -19,6 +19,15 @@ For details about known issues with Microsoft Graph APIs, see [Known issues](kno
 | :-------------- | :------------ | :--------------------------------------- |
 | Addition | v1.0 | Added the [group: assignLicense API](../api-reference/v1.0/api/group-assignlicense.md), which can be used to assign license to a [group](../api-reference/v1.0/resources/group.md). |
 
+### Identity and access (Azure AD)
+| **Change type** | **Version**   | **Description**                          |
+|:---|:---|:---|
+|Change | beta |Updated the existing policies collection with a [policies](/graph/api/resources/policy-overview?view=graph-rest-beta) URL segment. Typed policy resources are now grouped under the policies segment as described in [this blog post](https://developer.microsoft.com/identity/blogs/breaking-changes-policy-api-microsoft-graph-beta/). This update adds four typed policy resources: <br> <li>[activityBasedTimeoutPolicies](/graph/api/resources/activityBasedTimeoutPolicy?view=graph-rest-beta)</li> <li>[claimsMappingPolicies](/graph/api/resources/claimsMappingPolicy?view=graph-rest-beta) </li> <li>[homeRealmDiscoveryPolicies](/graph/api/resources/homeRealmDiscoveryPolicy?view=graph-rest-beta) and </li> <li>[tokenLifetimePolicies](/graph/api/resources/tokenlifetimepolicy?view=graph-rest-beta)</li> |
+| Addition | beta | Added [activityBasedTimeoutPolicy](/graph/api/resources/activityBasedTimeoutPolicy?view=graph-rest-beta) resource type controls automatic sign-out for web sessions after a period of inactivity, for applications that support activity-based timeout functionality.|
+| Addition | beta |[claimsMappingPolicy](/graph/api/resources/claimsMappingPolicy?view=graph-rest-beta) resource type controls the claims mapping for WS-Fed, SAML, OAuth 2.0, and OpenID Connect protocols, for tokens issued to a specific application.|
+| Addition | beta | [homeRealmDiscoveryPolicy](/graph/api/resources/homeRealmDiscoveryPolicy?view=graph-rest-beta) resource type controls Azure Active Directory authentication behavior for federated users, in particular for auto-acceleration and user authentication restrictions in federated domains. |
+| Addition | beta | [tokenLifetimePolicy](/graph/api/resources/tokenlifetimepolicy?view=graph-rest-beta) resource type controls the lifetime duration of access tokens used to access protected resources.|
+
 ### Security
 
 | **Change type** | **Version**   | **Description**                          |
@@ -97,10 +106,9 @@ Introduced presence in beta and added cloud communications APIs to v1.0.
 ### Identity and access (Azure AD)
 | **Change type** | **Version**   | **Description**                          |
 |:---|:---|:---|
-|Change | beta |Updated the behavior of the **appRoleAssignments** and **appRoleAssignedTo** relationships on [servicePrincipal](/graph/api/resoureces/serviceprincipal?view=graph-rest-beta) to return the roles as documented. **appRoleAssignments** returns app roles granted to the service principal and **appRoleAssignedTo** returns principals granted app roles to the service principal.|
+|Change | beta |Updated the behavior of the **appRoleAssignments** and **appRoleAssignedTo** relationships on [servicePrincipal](/graph/api/resources/serviceprincipal.md) to return the roles as documented. **appRoleAssignments** returns app roles granted to the service principal and **appRoleAssignedTo** returns principals granted app roles to the service principal.|
 | Addition | beta | Added the new entity type [accessPackageResourceRequest](/graph/api/resources/accesspackageresourcerequest?view=graph-rest-beta). |
 |Addition|beta, v1.0|Added support for returning a limited amount of information when your application does not have access to some of the types in a response's collection. For more details, see [Limited information returned for inaccessible member objects](permissions-reference.md#limited-information-returned-for-inaccessible-member-objects).|
-
 
 ### Identity and access (Azure AD) | Information protection
 
