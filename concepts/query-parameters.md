@@ -46,12 +46,12 @@ Click the examples to try them in [Graph Explorer][graph-explorer].
 
 ## Other OData URL capabilities
 
+The following OData 4.0 capabilities are URL segments, not query parameters.
+
 | Name                     | Description | Example 
 |:-------------------------|:------------|:---------|
 | [$ref](/graph/api/group-post-members?view=graph-rest-1.0&tabs=http) | Updates entities membership to a collection. | `POST /groups/{id}/members/$ref` |
 | [$value](/graph/api/profilephoto-get) | Retrieves or updates the binary value of an item. | `GET /me/photo/$value` |
-
->**Note:** These OData 4.0 capabilities are URL segments, not query parameters.
 
 ## Encoding query parameters
 
