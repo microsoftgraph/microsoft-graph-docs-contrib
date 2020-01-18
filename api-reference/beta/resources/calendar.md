@@ -49,7 +49,7 @@ A calendar which is a container for events. It can be a calendar for a [user](us
 |color|String|Specifies the color theme to distinguish the calendar from other calendars in a UI. The property values are: LightBlue=0, LightGreen=1, LightOrange=2, LightGray=3, LightYellow=4, LightTeal=5, LightPink=6, LightBrown=7, LightRed=8, MaxColor=9, Auto=-1|
 |defaultOnlineMeetingProvider|onlineMeetingProviderType|The default online meeting provider for meetings sent from this calendar. Possible values are: `unknown`, `skypeForBusiness`, `skypeForConsumer`, `teamsForBusiness`.|
 |hexColor|String|The calendar color, expressed in a hex color code of three hexidecimal values, each ranging from 00 to FF and representing the red, green, or blue components of the color in the RGB color space. If the user has never explicitly set a color for the calendar, this property is  empty. |
-|id|String|The group's unique identifier. Read-only.|
+|id|String|The calendar's unique identifier. Read-only.|
 |isDefaultCalendar|Boolean|True if this is the default calendar where new events are created by default, false otherwise.|
 |isRemovable|Boolean| Indicates whether this user calendar can be deleted from the user mailbox.|
 |isShared |Boolean |True if the user has shared the calendar with other users, false otherwise. Since only the user who created the calendar can share it, **isShared** and **isSharedWithMe** cannot be true for the same user. |
