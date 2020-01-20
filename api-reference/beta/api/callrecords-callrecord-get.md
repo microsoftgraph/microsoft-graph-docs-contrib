@@ -47,13 +47,13 @@ Do not supply a request body for this method.
 
 ## Response
 
-If successful, this method returns a `200 OK` response code and the requested [callRecord](../resources/callrecord.md) object in the response body.
+If successful, this method returns a `200 OK` response code and the requested [callRecord](../resources/callrecords-callrecord.md) object in the response body.
 
 ## Examples
 
 ### Request
 
-The following is an example of the request to get the basic details from a [callRecord](../resources/callrecord.md).
+The following is an example of the request to get the basic details from a [callRecord](../resources/callrecords-callrecord.md).
 <!-- {
   "blockType": "request",
   "name": "get_callrecord"
@@ -72,7 +72,7 @@ The following is an example of the response.
 <!-- {
   "blockType": "response",
   "truncated": true,
-  "@odata.type": "microsoft.graph.callRecord"
+  "@odata.type": "microsoft.graph.callRecords.callRecord"
 } -->
 
 ```http
@@ -112,7 +112,7 @@ The following is an example of the response.
 <!-- {
   "blockType": "response",
   "truncated": true,
-  "@odata.type": "microsoft.graph.callRecord"
+  "@odata.type": "microsoft.graph.callRecords.callRecord"
 } -->
 
 ```http

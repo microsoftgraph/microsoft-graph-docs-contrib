@@ -2,7 +2,7 @@
 title: "networkInfo resource type"
 description: "The networkInfo type"
 localization_priority: Normal
-author: "stjust"
+author: "stephenjust"
 ms.prod: "microsoft-ic3"
 doc_type: "resourcePageType"
 ---

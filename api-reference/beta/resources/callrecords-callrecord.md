@@ -17,7 +17,7 @@ The callRecord type.
 
 | Method       | Return Type | Description |
 |:-------------|:------------|:------------|
-| [Get callRecord](../api/callrecord-callrecord-get.md) | [callRecord](callrecords-callrecord.md) | Read properties and relationships of callRecord object. |
+| [Get callRecord](../api/callrecords-callrecord-get.md) | [callRecord](callrecords-callrecord.md) | Read properties and relationships of callRecord object. |
 ## Properties
 
 | Property     | Type        | Description |

@@ -2,7 +2,7 @@
 title: "deviceInfo resource type"
 description: "The deviceInfo type"
 localization_priority: Normal
-author: "stjust"
+author: "stephenjust"
 ms.prod: "microsoft-ic3"
 doc_type: "resourcePageType"
 ---

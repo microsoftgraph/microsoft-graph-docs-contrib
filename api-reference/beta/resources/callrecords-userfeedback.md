@@ -2,7 +2,7 @@
 title: "userFeedback resource type"
 description: "The userFeedback type."
 localization_priority: Normal
-author: "stjust"
+author: "stephenjust"
 ms.prod: "microsoft-ic3"
 doc_type: "resourcePageType"
 ---
