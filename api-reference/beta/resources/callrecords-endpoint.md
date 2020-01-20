@@ -30,7 +30,7 @@ The following is a JSON representation of the resource.
   "optionalProperties": [
 
   ],
-  "@odata.type": "microsoft.graph.endpoint",
+  "@odata.type": "microsoft.graph.callRecords.endpoint",
   "baseType": null
 }-->
 

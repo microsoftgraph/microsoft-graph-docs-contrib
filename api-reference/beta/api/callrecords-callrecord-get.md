@@ -93,7 +93,7 @@ Content-type: application/json
 
 ### Request
 
-The following is an example of the request to get the full details from a [callRecord](../resources/callrecord.md), including session and segment components.
+The following is an example of the request to get the full details from a [callRecord](../resources/callrecords-callrecord.md), including session and segment components.
 <!-- {
   "blockType": "request",
   "name": "get_callrecord"
