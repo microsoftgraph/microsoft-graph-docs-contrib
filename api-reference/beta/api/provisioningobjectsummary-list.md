@@ -58,6 +58,8 @@ For general information, see [OData query parameters](/graph/query_parameters).
 |sourceIdentity/identityType|eq, contains|
 |targetIdentity/identityType|eq, contains|
 |sourceIdentity/id|eq, contains|
+|servicePrincipal/id|eq|
+|servicePrincipal/name|eq|
 |targetIdentity/id|eq, contains|
 |sourceIdentity/displayName|eq, contains|
 |targetIdentity/displayName|eq, contains|
