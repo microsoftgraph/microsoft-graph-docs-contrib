@@ -72,7 +72,7 @@ The following is a JSON representation of the resource.
   "jobId": "String",
   "modifiedProperties": [{"@odata.type": "microsoft.graph.modifiedProperty"}],
   "provisioningSteps": [{"@odata.type": "microsoft.graph.provisioningStep"}],
-  "servicePrincipal": [{"@odata.type": "microsoft.graph.provisioningServicePrincipal,
+  "servicePrincipal": [{"@odata.type": "microsoft.graph.provisioningServicePrincipal}],
   "sourceIdentity": {"@odata.type": "microsoft.graph.provisionedIdentity"},
   "sourceSystem": {"@odata.type": "microsoft.graph.provisioningSystemDetails"},
   "statusInfo": {"@odata.type": "microsoft.graph.statusBase"},
