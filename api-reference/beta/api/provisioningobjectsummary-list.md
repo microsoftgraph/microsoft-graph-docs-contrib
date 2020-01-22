@@ -189,6 +189,10 @@ Content-type: application/json
                     "newValue": "https://signin.aws.amazon.com/saml?metadata=aws|ISV9.1|primary|z"
                 },
             ],
+            "servicePrincipal": {
+                "id": "6cc35b93-185a-4485-a519-50c09549g3ad",
+                "displayName": "Amazon Web Services (AWS)"
+            },
             "sourceSystem": {
                 "id": "d1e090e1-f2f4-4678-be44-6442ffff0621",
                 "displayName": "Amazon Web Services",
@@ -302,6 +306,10 @@ Content-type: application/json
                 "id": "",
                 "displayName": "Azure AD Provisioning Service",
                 "initiatorType": "system"
+            },
+            "servicePrincipal": {
+                "id": "chc46a42-966b-47d7-9774-576b1c8bd0b8",
+                "displayName": "Box"
             },
             "sourceIdentity": {
                 "id": "5e6c9rae-ab4d-5239-8ad0-174391d110eb",
