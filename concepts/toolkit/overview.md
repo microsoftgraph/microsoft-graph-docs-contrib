@@ -5,9 +5,7 @@ localization_priority: Normal
 author: elisenyang
 ---
 
-# Microsoft Graph Toolkit
-**Web Components powered by Microsoft Graph**
-![Overview of Microsoft Graph Toolkit](./images/mgt_v2.png)
+# Microsoft Graph Toolkit - Web Components powered by Microsoft Graph
 
 ## Overview
 The Microsoft Graph Toolkit is a collection of reusable, framework-agnostic web UI components and helpers for accessing and working with Microsoft Graph. The components are fully functional right of out of the box, with built in providers that authenticate with and fetch data from Microsoft Graph.
@@ -16,9 +14,18 @@ The Microsoft Graph Toolkit is a collection of reusable, framework-agnostic web 
 
 ## What's in the Microsoft Graph Toolkit?
 
-### Components
-The Microsoft Graph Toolkit includes a collection of web components for the most commonly build experiences powered by Microsoft Graph APIs.
+![Overview of Microsoft Graph Toolkit](./images/mgt_v2.png)
 
+### Components
+The Microsoft Graph Toolkit includes a collection of web components for the most commonly built experiences powered by Microsoft Graph APIs.
+
+|Component|Description|
+|---------|-----------|
+|Login|A button and a flyout control to authenticate a user with the Microsoft Identity platform and display the user’s profile information on sign in.|
+|Person|Displays a person or contact by their photo, name, and/or email address.|
+
+|Login|Person|People|Agenda|
+|Tasks|People Card|Get
 
 
 ### Providers
@@ -31,7 +38,7 @@ The Microsoft Graph Toolkit makes integrating common experiences powered by Micr
    :::column span="":::
     **Cut Development Time**
 
-    All of the work to connect to Microsoft Graph, query the APIs, and render the data in a UI that looks and feels like a Microsoft365 experience is already done, with no customization required from the developer.
+    All of the work to connect to Microsoft Graph and render the data in a UI that looks and feels like a Microsoft365 experience is done, with no customization required from the developer.
   :::column-end:::
   :::column span="":::
     **Works Everywhere**
@@ -41,7 +48,7 @@ The Microsoft Graph Toolkit makes integrating common experiences powered by Micr
   :::column span="":::
     **Beautiful but Flexible**
 
-    The components are designed to look and feel like Microsoft365 experiences, but are also customizable. You can style the components using CSS custom properties to match your own branding and use custom templates to modify the content of any component.
+    The components are designed to look and feel like Microsoft365 experiences, but are also customizable using CSS custom properties and templating.
   :::column-end:::
 :::row-end:::
 
