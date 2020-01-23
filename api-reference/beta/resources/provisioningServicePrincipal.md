@@ -17,8 +17,8 @@ Represents the service principal used for provisioning.
 
 | Property     | Type        | Description |
 |:-------------|:------------|:------------|
-|id|String|Uniquely identifies the servicePrincipal used for provisioning.|
-|name|String| Customer defined name for the servicePrincipal.|
+|id|String|Uniquely identifies the **servicePrincipal** used for provisioning.|
+|name|String| Customer-defined name for the **servicePrincipal**.|
 
 ## JSON representation
 
