@@ -52,7 +52,7 @@ The Microsoft Graph Toolkit makes integrating common experiences powered by Micr
    :::column span="":::
     **Cut Development Time**
 
-    All of the work to connect to Microsoft Graph and render the data in a UI that looks and feels like a Microsoft365 experience is done, with no customization required from the developer.
+    All of the work to connect to Microsoft Graph APIs and render the data in a UI that looks and feels like a Microsoft365 experience is done, with no customization required.
   :::column-end:::
   :::column span="":::
     **Works Everywhere**
@@ -74,7 +74,7 @@ The Microsoft Graph Toolkit is great for developers of all experience levels loo
 
 ### Supported Browsers
 
-|![Edge](images/edgeIcon.png)|![Internet Explorer 11](images/internetExplorerIcon.png)|![Chrome](images/chromeIcon.png)|![Safari](images/safariIcon.png)|![Opera](images/operaIcon.png)|![Samsung Internet](images/samsungInternetIcon.png)|
+|![Edge](images/edgeIcon.png)|![Internet Explorer 11](images/internetExplorerIcon.png)|![Firefox](images/firefoxIcon.pbg)|![Chrome](images/chromeIcon.png)|![Safari](images/safariIcon.png)|![Opera](images/operaIcon.png)|![Samsung Internet](images/samsungInternetIcon.png)|
 |----|----|----|----|----|----|----|
 |**Edge**|**IE 11**|**Firefox**|**Chrome**|**Safari**|**Opera**|**Samsung**|
 
@@ -86,5 +86,5 @@ The Microsoft Graph Toolkit is great for developers of all experience levels loo
 
 ## Next Steps
 
-Try out the components in the [playground](https://mgt.dev).
-[Get started](/get-started.md) with the Microsoft Graph Toolkit.
+- Try out the components in the [playground](https://mgt.dev).
+- [Get started](/get-started.md) with the Microsoft Graph Toolkit.
