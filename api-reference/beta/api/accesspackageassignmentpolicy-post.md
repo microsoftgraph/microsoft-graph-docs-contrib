@@ -69,7 +69,9 @@ Content-type: application/json
   "isDenyPolicy": false,
   "accessReviewSettings": null,
   "requestorSettings": {
-    "scopeType": "NoSubjects"
+    "scopeType": "NoSubjects",
+    "acceptRequests": true,
+    "allowedRequestors": []
   },
   "requestApprovalSettings": {
     "isApprovalRequired": false,
@@ -119,7 +121,9 @@ Content-type: application/json
   "isDenyPolicy": false,
   "accessReviewSettings": null,
   "requestorSettings": {
-    "scopeType": "NoSubjects"
+    "scopeType": "NoSubjects",
+    "acceptRequests": true,
+    "allowedRequestors": []
   },
   "requestApprovalSettings": {
     "isApprovalRequired": false,

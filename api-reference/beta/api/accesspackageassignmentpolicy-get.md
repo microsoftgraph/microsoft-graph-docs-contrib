@@ -106,7 +106,9 @@ Content-type: application/json
   "durationInDays": 365,
   "accessReviewSettings": null,
   "requestorSettings": {
-    "scopeType": "NoSubjects"
+    "scopeType": "NoSubjects",
+      "acceptRequests": true,
+      "allowedRequestors": []
   },
   "requestApprovalSettings": {
     "isApprovalRequired": false,
