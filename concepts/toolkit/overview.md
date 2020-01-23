@@ -25,7 +25,7 @@ The Microsoft Graph Toolkit includes a collection of web components for the most
 |[Person](./components/person.md)|Displays a person or contact by their photo, name, and/or email address.|
 |[People](./components/people.md)|Displays a group of people or contacts by their photos or initials.|
 |[Agenda](./components/agenda.md)|Displays events in a user or group’s calendar.|
-|[Tasks](./components/tasks/md)|Displays and enables adding, removing, completing, or editing of tasks from Microsoft Planner or Microsoft To-Do.|
+|[Tasks](./components/tasks.md)|Displays and enables adding, removing, completing, or editing of tasks from Microsoft Planner or Microsoft To-Do.|
 |[People picker](./components/people-picker.md)|Provides the ability to search for people and renders the list of results.|
 |[Person card](./components/person-card.md)|A flyout used on the person component to display more profile information about a user.|
 |[Get](./components/get.md)|Make a GET query to any Microsoft Graph API directly in your HTML.|
@@ -37,7 +37,7 @@ The components work best when used with a provider. Providers enable authenticat
 |---------|-----------|
 |[Msal](./providers/msal.md)|Uses MSAL.js to sign in users and acquire tokens to use with Microsoft Graph.|
 |[SharePoint](./providers/sharepoint.md)|Authenticates and provides Microsoft Graph access to components inside of SharePoint web parts.|
-|[Teams](./providers/teams/md)|Authenticates and provides Microsoft Graph access to components inside of Microsoft Teams tabs.|
+|[Teams](./providers/teams.md)|Authenticates and provides Microsoft Graph access to components inside of Microsoft Teams tabs.|
 |[Proxy](./providers/proxy.md)|Allows the use of backend authentication by routing all calls to Microsoft Graph through your backend.|
 |[Custom](./providers/custom.md)|Create a custom provider to enable authentication and access to Microsoft Graph with your application’s existing authentication code.|
 
