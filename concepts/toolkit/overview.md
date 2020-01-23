@@ -6,9 +6,10 @@ author: elisenyang
 ---
 
 # Microsoft Graph Toolkit
-## Web Components powered by Microsoft Graph
-The Microsoft Graph Toolkit is a collection of reusable, framework-agnostic web UI components and helpers for accessing and working with Microsoft Graph. The components are fully functional right of out of the box, with built in providers that authenticate with and fetch data from Microsoft Graph.
 
+## Web Components powered by Microsoft Graph
+
+The Microsoft Graph Toolkit is a collection of reusable, framework-agnostic web UI components and helpers for accessing and working with Microsoft Graph. The components are fully functional right of out of the box, with built in providers that authenticate with and fetch data from Microsoft Graph.
 
 <iframe src="https://stackblitz.com/edit/js-y4ny1m?embed=1&file=index.html&hideExplorer=1&hideNavigation=1" height="400"></iframe>
 
@@ -17,6 +18,7 @@ The Microsoft Graph Toolkit is a collection of reusable, framework-agnostic web 
 ![Overview of Microsoft Graph Toolkit](./images/mgt_v2.png)
 
 ### Components
+
 The Microsoft Graph Toolkit includes a collection of web components for the most commonly built experiences powered by Microsoft Graph APIs.
 
 |Component|Description|
@@ -31,7 +33,8 @@ The Microsoft Graph Toolkit includes a collection of web components for the most
 |[Get](./components/get.md)|Make a GET query to any Microsoft Graph API directly in your HTML.|
 
 ### Providers
-The components work best when used with a [provider](/providers/providers.md). Providers enable authentication and provide the implementation for acquiring the access tokens for calling the Microsoft Graph APIs. 
+
+The components work best when used with a [provider](/providers/providers.md). Providers enable authentication and provide the implementation for acquiring the access tokens for calling the Microsoft Graph APIs.
 
 |Providers|Description|
 |---------|-----------|
@@ -59,74 +62,29 @@ The Microsoft Graph Toolkit makes integrating common experiences powered by Micr
   :::column span="":::
     **Beautiful but Flexible**
 
-    The components are designed to look and feel like Microsoft365 experiences, but are also customizable using [CSS custom properties](./style.md) and [templating](./template.md).
+    The components are designed to look and feel like Microsoft365 experiences, but are also customizable using [CSS custom properties](./style.md) and [templating](./templates.md).
   :::column-end:::
 :::row-end:::
 
 ## Who should use it?
 
-The Microsoft Graph Toolkit is great for developers of all experience levels looking to develop a web application, Microsoft Teams tab, or SharePoint web part that connects to and accesses data from Microsoft Graph. 
+The Microsoft Graph Toolkit is great for developers of all experience levels looking to develop a web application, Microsoft Teams tab, or SharePoint web part that connects to and accesses data from Microsoft Graph.
 
 ## Where can I use it?
 
 ### Supported Browsers
 
-:::row:::
-  :::column span="":::
-    ![Edge](images/edgeIcon.png)
-
-    Edge
-  :::column-end:::
-  :::column span="":::
-    ![Internet Explorer 11](images/internetExplorerIcon.png)
-
-    IE 11
-  :::column-end:::
-  :::column span="":::
-    ![Firefox](images/firefoxIcon.png)
-
-    Firefox
-  :::column-end:::
-  :::column span="":::
-    ![Chrome](images/chromeIcon.png)
-
-    Firefox
-  :::column-end:::
-  :::column span="":::
-    ![Safari](images/safariIcon.png)
-
-    Safari
-  :::column-end:::
-  :::column span="":::
-    ![Opera](images/operaIcon.png)
-
-    Opera
-  :::column-end:::
-  :::column span="":::
-    ![Samsung Internet](images/samsungInternetIcon.png)
-
-    Samsung
-  :::column-end:::
-:::row-end:::
+|![Edge](images/edgeIcon.png)|![Internet Explorer 11](images/internetExplorerIcon.png)|![Chrome](images/chromeIcon.png)|![Safari](images/safariIcon.png)|![Opera](images/operaIcon.png)|![Samsung Internet](images/samsungInternetIcon.png)|
+|----|----|----|----|----|----|----|
+|**Edge**|**IE 11**|**Firefox**|**Chrome**|**Safari**|**Opera**|**Samsung**|
 
 ### Supported Platforms
 
-:::row:::
-  :::column span="":::
-    ![Microsoft Teams](images/microsoftTeamsIcon.png)
-
-    Microsoft Teams
-  :::column-end:::
-  :::column span="":::
-    ![SharePoint](images/sharepointIcon.png)
-
-    SharePoint
-  :::column-end:::
-  :::column span="6":::
-
-  :::column-end:::
-:::row-end:::
+|![Microsoft Teams](images/microsoftTeamsIcon.png)|![SharePoint](images/sharepointIcon.png)|
+|----|----|
+|**Microsoft Teams**|**SharePoint**|
 
 ## Next Steps
+
 Try out the components in the [playground](https://mgt.dev).
 [Get started](/get-started.md) with the Microsoft Graph Toolkit.
