@@ -122,7 +122,7 @@ The Microsoft Graph Toolkit is great for developers of all experience levels loo
 
     SharePoint
   :::column-end:::
-  :::column span="5":::
-  
+  :::column span="6":::
+
   :::column-end:::
 :::row-end:::
