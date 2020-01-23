@@ -8,18 +8,18 @@ ms.prod: "outlook"
 
 # Share or delegate a calendar in Outlook (preview)
 
-In Outlook, a calendar owner can share the calendar with another user, or delegate another user to manage meetings in the owner's primary calendar. The owner can specify which information in non-private events is viewable, and can give write access to the calendar to users in the same organization. 
+In Outlook, a calendar owner can share the calendar with another user. The owner can specify which information in non-private events is viewable, and can give write access to the calendar to users in the same organization. 
 
-Delegates are sharees who can view all information in and have write access to non-private events; they also receive meeting requests and responses, and respond to meeting requests on behalf of the owner. Additionally, the owner can give explicit permissions to delegates to view the owner's _private_ events on the calendar. 
+The owner can also delegate another user to manage meetings in the owner's _primary_ calendar. Delegates are sharees who can view all information in and have write access to non-private events. They also receive meeting requests and responses, and respond to meeting requests on behalf of the owner. Additionally, the owner can give explicit permissions to delegates to view the owner's _private_ events on the calendar. 
 
-Before calendar sharing or delegation can take effect, the owner sends a sharee or delegate an invitation, and the sharee or delegate accepts the invitation or explicitly adds the shared or delegated calendar for access. All this occurs in an Outlook client. 
+Before calendar sharing or delegation can take effect, the owner sends a sharee or delegate an invitation, and the sharee or delegate accepts the invitation, or, explicitly adds the shared or delegated calendar for access. The invitation and adding a shared or delegated calendar occur in an Outlook client. 
 
 The rest of this article is based on the following example scenario:
 
 - Alex Wilber has delegated Megan Bowen to his primary calendar, and also permitted Megan to view private events in that calendar. 
-- Alex shared a "Kids parties" calendar with Adele Vance and Megan Bowen, and gave both of them `read` permissions to all the details of non-private events on the "Kids parties" calendar, and free/busy status for private events. 
+- Alex shared a "Kids parties" calendar with Adele Vance and Megan Bowen, and gave both Adele and Megan `read` permissions to all the details of non-private events on the "Kids parties" calendar, and free/busy status for private events. 
 
-After the sharing and delegation take effect, apps can then use the Microsoft Graph API to do the following tasks:
+After the sharing and delegation take effect, apps can then use the Microsoft Graph API to do the following tasks with the shared or delegated calendar:
 
 - [Get calendar information about sharees, delegates, and allowed permissions, and update individual permissions](#get-calendar-information-about-sharees-and-delegates-and-update-individual-permissions).
 - [Get the properties that describe the sharing or delegation of the calendar](#get-properties-of-a-shared-or-delegated-calendar).
@@ -27,14 +27,19 @@ After the sharing and delegation take effect, apps can then use the Microsoft Gr
 - [Delete a sharee or delegate of a calendar](#delete-a-sharee-or-delegate-of-a-calendar).
 
 > [!NOTE]
-> Most of the API for sharing or delegation is [in preview and available only in the beta version](versioning-and-support.md#beta-version).
+> The preceding tasks use API for calendar sharing and delegation that is [in preview and available only in the beta version](versioning-and-support.md#beta-version), with the exception of the following [calendar](/graph/api/resources/calendar?view=graph-rest-1.0) properties: **canEdit**, **canShare**, **canViewPrivateItems**, and **owner**.
+
+In a shared or delegated calendar, apps can also do the following:
+
+- [Get shared or delegated Outlook calendar or its events](outlook-get-shared-events-calendars.md)
+- [Create Outlook events in a shared or delegated calendar](outlook-create-event-in-shared-delegated-calendar.md)
 
 ## Get calendar information about sharees and delegates, and update individual permissions
 
 In this section:
 
-- [Get sharing or delegation information and permissions on behalf of owner](#get-sharing-or-delegation-information-and-permissions-on-behalf-of-owner)
-- [Update permissions for an existing sharee or delegate on a calendar](#update-permissions-for-an-existing-sharee-or-delegate-on-a-calendar)
+- [Calendar owner: Get sharing or delegation information and permissions](#calendar-owner-get-sharing-or-delegation-information-and-permissions)
+- [Calendar owner: Update permissions for an existing sharee or delegate on a calendar](#calendar-owner-update-permissions-for-an-existing-sharee-or-delegate-on-a-calendar)
 
 Each calendar is associated with a collection of [calendarPermission](/graph/api/resources/calendarpermission?view=graph-rest-beta) objects, each of which describes a sharee or delegate and the associated permission that the calendar owner has set up. The [calendarRoleType](/graph/api/resources/calendarpermission#calendarroletype-values?view=graph-rest-beta) enumeration defines the range of permissions that Microsoft Graph supports:
 
@@ -56,9 +61,9 @@ Each calendar is associated with a collection of [calendarPermission](/graph/api
 The primary calendar of a user is always shared with "My Organization", which represents the users in the same organization as the owner. By default, they can read the owner's free/busy status on that calendar and have the `freeBusyRead` permission.
 
 
-### Get sharing or delegation information and permissions on behalf of owner
+### Calendar owner: Get sharing or delegation information and permissions
 
-The following example shows on behalf of Alex, how to get the **calendarPermission** objects associated with Alex' primary calendar. The request returns two such permission objects:
+The following example shows with the consent of Alex or administrator, how to get the **calendarPermission** objects associated with Alex' primary calendar. The request returns two such permission objects:
 
 - The first **calendarPermission** object is assigned to the delegate, Megan, and has the following property values:
 
@@ -136,13 +141,13 @@ Content-type: application/json
 ```
 
 
-### Update permissions for an existing sharee or delegate on a calendar
+### Calendar owner: Update permissions for an existing sharee or delegate on a calendar
 
-On behalf of the calendar owner, you can update the permissions assigned to an existing sharee or delegate (specified by the **role** property), as long as the new permissions are supported by those **allowedRoles** set up initially for the sharee or delegate for that calendar. 
+With the consent of Alex or administrator, you can update the permissions assigned to an existing sharee or delegate (specified by the **role** property), as long as the new permissions are supported by those **allowedRoles** set up initially for the sharee or delegate for that calendar. 
 
 Aside from the **role** property, you cannot update other properties of an existing sharee or delegate. Changing the **emailAddress** property value requires deleting the sharee or delegate and setting up a new instance of **calendarPermission** again.
 
-The following example changes the permission of an existing sharee, Adele, from `read` to `write`, on behalf of the calendar owner, Alex, for the custom calendar "Kids parties".
+The following example updates the **role** property, changing the permission of an existing sharee, Adele, from `read` to `write` for the custom calendar "Kids parties".
 
 <!-- {
   "blockType": "request",
@@ -193,15 +198,15 @@ Content-type: application/json
 
 In this section:
 
-- [Get properties of a shared or delegated calendar on behalf of owner](#get-properties-of-a-shared-or-delegated-calendar-on-behalf-of-owner)
-- [Get properties of shared or delegated calendar on behalf of sharee or delegate](#get-properties-of-shared-or-delegated-calendar-on-behalf-of-sharee-or-delegate)
+- [Calendar owner: Get properties of a shared or delegated calendar](#calendar-owner-get-properties-of-a-shared-or-delegated-calendar)
+- [Sharee or delegate: Get properties of shared or delegated calendar](#sharee-or-delegate-get-properties-of-shared-or-delegated-calendar)
 
 Recalling in this example, Alex has delegated his primary calendar and given the delegate, Megan Bowen, the permission to view calendar items that are marked private.
-This section shows the properties of the delegated calendar, first on behalf of the owner, Alex, and then on behalf of the delegate, Megan.
+This section shows the properties of the delegated calendar, first from the perspective of and with the consent of the owner, Alex, and then from the perspective of and with the consent of the delegate, Megan. Consent from the administrator also works for each case.
 
-### Get properties of a shared or delegated calendar on behalf of owner
+### Calendar owner: Get properties of a shared or delegated calendar
 
-The following example gets the properties of the primary calendar on behalf of the owner, Alex. 
+The following example gets the properties of the primary calendar from the perspective of the owner, Alex. 
 
 Note the following properties on Alex' behalf:
 
@@ -258,19 +263,22 @@ Content-type: application/json
 ```
 
 
-### Get properties of shared or delegated calendar on behalf of sharee or delegate
+### Sharee or delegate: Get properties of shared or delegated calendar
 
-The following example gets the properties of the same calendar on behalf of the delegate, Megan. 
+The following example gets the properties of the same calendar from the perspective of the delegate, Megan. 
 
 Note the following properties:
 
-- **name** of the calendar is by default the owner's display name. In this case, it's "Alex Wilber", since this is Alex' calendar delegated to Megan. The **name** property is the only property of a shared/delegated calendar that a sharee or delegate can customize for themselves; the calendar owner does not see such name changes.
+- **name** of the calendar is by default the owner's display name. In this case, it's "Alex Wilber", since this is Alex' calendar delegated to Megan. 
 - **canShare** is false, since Megan is not the owner of this calendar.
 - **canViewPrivateItems** is true for the delegate Megan, as set up by Alex. For a sharee that is not a delegate, this property is always false.
 - **isShared** is false. This property indicates only to a calendar _owner_ whether the calendar has been shared or delegated.
 - **isSharedWithMe** property is true, since Megan is a delegate.
 - **canEdit** is true, since delegates, including Megan, have write access.
 - **owner** is set to Alex.
+
+> [!NOTE] 
+> A sharee or delegate can customize only the **name** property of a shared/delegated calendar. The update is visible only to themselves; the calendar owner does not see such calendar name changes.
 
 <!-- {
   "blockType": "request",

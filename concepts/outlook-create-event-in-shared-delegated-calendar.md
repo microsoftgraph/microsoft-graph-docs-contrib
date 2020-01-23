@@ -10,7 +10,7 @@ ms.prod: "outlook"
 
 In Outlook, customers can share a calendar with other users and let them view, create, or modify events in that calendar. Customers can also grant a delegate to act on their  behalf, to receive or respond to meeting requests, or create or change items in the calendar.
 
-Programmatically, Microsoft Graph supports reading or writing events in calendars that have been shared by other users, as well as reading the shared calendars. The support also applies to calendars that have been delegated. The rest of this article walks through creating a meeting event in a shared or delegated calendar. For getting events, refer to [Get Outlook events in a shared or delegated calendar](outlook-get-shared-events-calendars.md).
+Programmatically, Microsoft Graph supports reading or writing events in calendars that have been shared by other users, as well as reading the shared calendars, and updating the calendar name for sharees. The support also applies to calendars that have been delegated. The rest of this article walks through creating a meeting event in a shared or delegated calendar. For getting events, refer to [Get Outlook events in a shared or delegated calendar](outlook-get-shared-events-calendars.md).
 
 The walkthrough below uses the example scenario where Alex has delegated his primary calendar to Adele in Outlook, and kept the default Outlook mailbox setting to direct meeting requests and responses to only delegates. (In the beta version, this setting corresponds to the **delegateMeetingMessageDeliveryOptions** property of Alex' [mailboxSettings](/graph/api/resources/mailboxsettings?view=graph-rest-beta) set as the default value `sendToDelegateOnly`.) 
 
@@ -40,11 +40,11 @@ Signed in as Adele, get the calendars she has access to and identify the one Ale
 GET https://graph.microsoft.com/v1.0/me/calendars
 ```
 
-Notice a successful response includes the response code HTTP 200, Adele's own primary calendar, and the calendar delegated by Alex with the following properties:
+Notice a successful response includes the response code HTTP 200, Adele's own primary calendar, and a copy of the calendar delegated by Alex in Adele's mailbox, with the following properties:
 
-- **name** is `Alex Wilber` indicating it is Alex' primary calendar.
 - **canShare** is false since Adele is only a delegate and not the calendar owner.
 - **canEdit** is true since as delegate, Adele has write access to non-private events in the delegated calendar.
+- **owner** is `Alex Wilber` indicating it is Alex' calendar.
 
 <!-- {
   "blockType": "response",
@@ -91,7 +91,7 @@ Content-type: application/json
 ```
 
 > **NOTE**
-> If Adele got the delegated calendar by specifying Alex' identity and the `calendar` shortcut as in `GET https://graph.microsoft.com/v1.0/users/AlexW@contoso.OnMicrosoft.com/calendar`, the request would succeed for Adele as a delegate. However, the returned calendar ID applies to only Alex' mailbox. For Adele to access that delegated calendar subsequently, get the calendar ID using Adele's identity in the GET request.
+> Signed in as Adele, you can alternatively get the delegated calendar directly from Alex' mailbox, by specifying Alex' identity and the `calendar` shortcut, as in `GET https://graph.microsoft.com/v1.0/users/AlexW@contoso.OnMicrosoft.com/calendar`. The returned calendar ID corresponds to only Alex' mailbox. 
 
 ## Step 2: Adele creates and sends an invitation on Alex' behalf
 
@@ -146,7 +146,7 @@ Content-type: application/json
 
 Notice a successful response includes HTTP 201 and the following [event](/graph/api/resources/event?view=graph-rest-1.0) properties:
 
-- **isOrganizer** is set to true, since the signed-in user (Adele) sent the invitation.
+- **isOrganizer** is set to true. This property is true for the calendar owner (Alex) and his calendar delegates.
 - The **attendees** collection specifies Megan and Christie.
 - **organizer** is set to Alex, since the invitation was sent by Alex' delegate (Adele) in Alex' primary calendar.
 - Neither the **attendees** nor **organizer** specifies the delegate (Adele).
