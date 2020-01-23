@@ -9,6 +9,7 @@ author: elisenyang
 ## Web Components powered by Microsoft Graph
 The Microsoft Graph Toolkit is a collection of reusable, framework-agnostic web UI components and helpers for accessing and working with Microsoft Graph. The components are fully functional right of out of the box, with built in providers that authenticate with and fetch data from Microsoft Graph.
 
+
 <iframe src="https://stackblitz.com/edit/js-y4ny1m?embed=1&file=index.html&hideExplorer=1&hideNavigation=1" height="400"></iframe>
 
 ## What's in the Microsoft Graph Toolkit?
@@ -70,8 +71,58 @@ The Microsoft Graph Toolkit is great for developers of all experience levels loo
 
 ### Supported Browsers
 
-| ![ Edge](images/edgeIcon.png)<br>Edge | ![Internet Explorer 11](images/internetExplorerIcon.png)<br>IE 11 | ![Firefox](images/firefoxIcon.png)<br>Firefox | ![Chrome](images/chromeIcon.png)<br>Chrome | ![Chrome](images/safariIcon.png)<br>Safari | ![Opera](images/operaIcon.png)<br>Opera | ![Samsung Internet](images/samsungInternetIcon.png)<br> Samsung |
-| --------- | --------- | --------- | --------- | --------- | --------- | --------- |
-| Latest Version | Latest Version| Latest Version| Latest Version| Latest Version | Latest Version | Lastest Version |
+:::row:::
+  :::column span="":::
+    ![Edge](images/edgeIcon.png)
+
+    Edge
+  :::column-end:::
+  :::column span="":::
+    ![Internet Explorer 11](images/internetExplorerIcon.png)
+
+    IE 11
+  :::column-end:::
+  :::column span="":::
+    ![Firefox](images/firefoxIcon.png)
+
+    Firefox
+  :::column-end:::
+  :::column span="":::
+    ![Chrome](images/chromeIcon.png)
+
+    Firefox
+  :::column-end:::
+  :::column span="":::
+    ![Safari](images/safariIcon.png)
+
+    Safari
+  :::column-end:::
+  :::column span="":::
+    ![Opera](images/operaIcon.png)
+
+    Opera
+  :::column-end:::
+  :::column span="":::
+    ![Samsung Internet](images/samsungInternetIcon.png)
+
+    Samsung
+  :::column-end:::
+:::row-end:::
 
 ### Supported Platforms
+
+:::row:::
+  :::column span="":::
+    ![Microsoft Teams](images/microsoftTeamsIcon.png)
+
+    Microsoft Teams
+  :::column-end:::
+  :::column span="":::
+    ![SharePoint](images/sharepointIcon.png)
+
+    SharePoint
+  :::column-end:::
+  :::column span="5":::
+  
+  :::column-end:::
+:::row-end:::
