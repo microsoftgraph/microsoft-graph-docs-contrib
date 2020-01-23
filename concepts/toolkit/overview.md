@@ -19,27 +19,27 @@ The Microsoft Graph Toolkit is a collection of reusable, framework-agnostic web 
 ### Components
 The Microsoft Graph Toolkit includes a collection of web components for the most commonly built experiences powered by Microsoft Graph APIs.
 
-:::row:::
-    :::column span="":::
-        [![login](./images/mgt-login-card.png)](./components/login.md)
-    :::column-end:::
-    :::column span="":::
-        [![person](./images/mgt-person-card.png)](./components/person.md)
-    :::column-end:::
-    :::column span="":::
-        [![people](./images/mgt-people-card.png)](./components/people.md)
-    :::column-end:::
-:::row-end:::
-:::row:::
-    :::column span="":::
-        [![agenda](./images/mgt-agenda-card.png)](./components/agenda.md)
-    :::column-end:::
-        :::column span="":::
-        [![tasks](./images/mgt-tasks-card.png)](./components/tasks.md)
-    :::column-end:::
-:::row-end:::
+|Component|Description|
+|---------|-----------|
+|[Login](./components/login.md)|A button and a flyout control to authenticate a user with the Microsoft Identity platform and display the user’s profile information on sign in.|
+|[Person](./components/person.md)|Displays a person or contact by their photo, name, and/or email address.|
+|[People](./components/people.md)|Displays a group of people or contacts by their photos or initials.|
+|[Agenda](./components/agenda.md)|Displays events in a user or group’s calendar.|
+|[Tasks](./components/tasks/md)|Displays and enables adding, removing, completing, or editing of tasks from Microsoft Planner or Microsoft To-Do.|
+|[People picker](./components/people-picker.md)|Provides the ability to search for people and renders the list of results.|
+|[Person card](./components/person-card.md)|A flyout used on the person component to display more profile information about a user.|
+|[Get](./components/get.md)|Make a GET query to any Microsoft Graph API directly in your HTML.|
 
 ### Providers
+The components work best when used with a provider. Providers enable authentication and provide the implementation for acquiring the access tokens for calling the Microsoft Graph APIs. 
+
+|Providers|Description|
+|---------|-----------|
+|[Msal](./providers/msal.md)|Uses MSAL.js to sign in users and acquire tokens to use with Microsoft Graph.|
+|[SharePoint](./providers/sharepoint.md)|Authenticates and provides Microsoft Graph access to components inside of SharePoint web parts.|
+|[Teams](./providers/teams/md)|Authenticates and provides Microsoft Graph access to components inside of Microsoft Teams tabs.|
+|[Proxy](./providers/proxy.md)|Allows the use of backend authentication by routing all calls to Microsoft Graph through your backend.|
+|[Custom](./providers/custom.md)|Create a custom provider to enable authentication and access to Microsoft Graph with your application’s existing authentication code.|
 
 ## Why use the Microsoft Graph Toolkit?
 
@@ -63,3 +63,15 @@ The Microsoft Graph Toolkit makes integrating common experiences powered by Micr
   :::column-end:::
 :::row-end:::
 
+## Who should use it?
+
+The Microsoft Graph Toolkit is great for developers of all experience levels looking to develop a web application, Microsoft Teams tab, or SharePoint web part that connects to and accesses data from Microsoft Graph. 
+
+## Where can I use it?
+
+**Supported Browsers**
+| ![ Edge](images/edgeIcon.png)<br>Edge | ![Internet Explorer 11](images/internetExplorerIcon.png)<br>IE 11 | ![Firefox](images/firefoxIcon.png)<br>Firefox | ![Chrome](images/chromeIcon.png)<br>Chrome | ![Chrome](images/safariIcon.png)<br>Safari | ![Opera](images/operaIcon.png)<br>Opera | ![Samsung Internet](images/samsungInternetIcon.png)<br> Samsung |
+| --------- | --------- | --------- | --------- | --------- | --------- | --------- |
+| Latest Version | Latest Version| Latest Version| Latest Version| Latest Version | Latest Version | Lastest Version |
+
+**Supported Platforms**
