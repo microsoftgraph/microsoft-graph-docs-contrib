@@ -101,9 +101,20 @@ Content-type: application/json
   "accessPackageId": "1b153a13-76da-4d07-9afa-c6c2b1f2e824",
   "displayName": "All Users",
   "description": "All users can request for access to the directory.",
-  "isEnabled": false,
+  "isDenyPolicy": false,
   "canExtend": false,
-  "durationInDays": 365
+  "durationInDays": 365,
+  "accessReviewSettings": null,
+  "requestorSettings": {
+    "scopeType": "NoSubjects"
+  },
+  "requestApprovalSettings": {
+    "isApprovalRequired": false,
+    "isApprovalRequiredForExtension": false,
+    "isRequestorJustificationRequired": false,
+    "approvalMode": "NoApproval",
+    "approvalStages": []
+  }
 }
 ```
 
