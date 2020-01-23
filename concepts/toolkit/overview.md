@@ -31,7 +31,7 @@ The Microsoft Graph Toolkit includes a collection of web components for the most
 |[Get](./components/get.md)|Make a GET query to any Microsoft Graph API directly in your HTML.|
 
 ### Providers
-The components work best when used with a provider. Providers enable authentication and provide the implementation for acquiring the access tokens for calling the Microsoft Graph APIs. 
+The components work best when used with a [provider](/providers/providers.md). Providers enable authentication and provide the implementation for acquiring the access tokens for calling the Microsoft Graph APIs. 
 
 |Providers|Description|
 |---------|-----------|
@@ -59,7 +59,7 @@ The Microsoft Graph Toolkit makes integrating common experiences powered by Micr
   :::column span="":::
     **Beautiful but Flexible**
 
-    The components are designed to look and feel like Microsoft365 experiences, but are also customizable using CSS custom properties and templating.
+    The components are designed to look and feel like Microsoft365 experiences, but are also customizable using [CSS custom properties](./style.md) and [templating](./template.md).
   :::column-end:::
 :::row-end:::
 
@@ -126,3 +126,7 @@ The Microsoft Graph Toolkit is great for developers of all experience levels loo
 
   :::column-end:::
 :::row-end:::
+
+## Next Steps
+Try out the components in the [playground](https://mgt.dev).
+[Get started](/get-started.md) with the Microsoft Graph Toolkit.
