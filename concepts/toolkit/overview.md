@@ -19,7 +19,9 @@ The Microsoft Graph Toolkit is a collection of reusable, framework-agnostic web 
 ### Components
 The Microsoft Graph Toolkit includes a collection of web components for the most commonly built experiences powered by Microsoft Graph APIs.
 
-:::row:::
+[![login](./images/mgt-login-card.png)]](./components/login.md)
+
+<!-- :::row:::
     :::column span="":::
         [![login](/images/mgt-login-card.png)]](/components/login.md)
     :::column-end:::
@@ -37,7 +39,7 @@ The Microsoft Graph Toolkit includes a collection of web components for the most
         :::column span="":::
         [![tasks](/images/mgt-tasks-card.png)]](/components/tasks.md)
     :::column-end:::
-:::row-end:::
+:::row-end::: -->
 
 ### Providers
 
