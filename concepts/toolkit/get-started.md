@@ -1,19 +1,17 @@
 ---
-title: "Microsoft Graph Toolkit"
-description: "The Microsoft Graph Toolkit is a collection of resuable, framework-agnostic web components and helpers for accessing and working with Microsoft Graph."
+title: "Get Started with the Microsoft Graph Toolkit"
+description: "Get started using the Microsoft Toolkit in your application."
 localization_priority: Normal
 author: elisenyang
 ---
 
-# Get started
+# Get started with the Microsoft Graph Toolkit
+
+> [!VIDEO https://www.youtube-nocookie.com/embed/oZCGb2MMxa0]
 
 You can use the components by referencing the loader directly (via unpkg), or by installing the npm package.
 
-![Animated gif that shows referencing the loader to use the toolkit components](images/get-started.gif)
-
-For details about how to get started with the Microsoft Graph Toolkit, see the [Get started video](https://www.youtube.com/watch?v=oZCGb2MMxa0).
-
-### Use via mgt-loader
+## Use via mgt-loader
 
 See the following [jsfiddle example](https://jsfiddle.net/metulev/9phqxLd5/).
 
@@ -36,7 +34,7 @@ You can then start using the components in your HTML page. The following is a fu
 
 > **Note:** MSAL requires the page to be hosted in a web server for the authentication redirects. If you're just getting started and want to play around, you can use [live server](https://marketplace.visualstudio.com/items?itemName=ritwickdey.LiveServer) in Visual Studio Code.
 
-### Use via NPM (es6 modules)
+## Use via NPM (es6 modules)
 
 By using the es6 modules, you have full control of the bundling process and you can bundle only the code you need for your site. First, add the npm package:
 
@@ -190,9 +188,3 @@ Finally, use the component as you normally would in your template.
 ```html
 <mgt-person [personDetails]="person" show-name></mgt-person>
 ```
-## Browser Support
-
-
-| ![ Edge](images/edgeIcon.png)<br>Edge | ![Internet Explorer 11](images/internetExplorerIcon.png)<br>IE 11 | ![Firefox](images/firefoxIcon.png)<br>Firefox | ![Chrome](images/chromeIcon.png)<br>Chrome | ![Chrome](images/safariIcon.png)<br>Safari | ![Opera](images/operaIcon.png)<br>Opera | ![Samsung Internet](images/samsungInternetIcon.png)<br> Samsung |
-| --------- | --------- | --------- | --------- | --------- | --------- | --------- |
-| Latest Version | Latest Version| Latest Version| Latest Version| Latest Version | Latest Version | Lastest Version |

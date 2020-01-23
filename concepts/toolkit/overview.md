@@ -46,7 +46,7 @@ The components work best when used with a [provider](/providers/providers.md). P
 
 ## Why use the Microsoft Graph Toolkit?
 
-The Microsoft Graph Toolkit makes integrating common experiences powered by Microsoft Graph into your own application quick and easy. 
+The Microsoft Graph Toolkit makes integrating common experiences powered by Microsoft Graph into your own application quick and easy.
 
 :::row:::
    :::column span="":::
