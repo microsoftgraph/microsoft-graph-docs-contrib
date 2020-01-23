@@ -19,14 +19,25 @@ The Microsoft Graph Toolkit is a collection of reusable, framework-agnostic web 
 ### Components
 The Microsoft Graph Toolkit includes a collection of web components for the most commonly built experiences powered by Microsoft Graph APIs.
 
-|Component|Description|
-|---------|-----------|
-|Login|A button and a flyout control to authenticate a user with the Microsoft Identity platform and display the user’s profile information on sign in.|
-|Person|Displays a person or contact by their photo, name, and/or email address.|
-
-|Login|Person|People|Agenda|
-|Tasks|People Card|Get
-
+:::row:::
+    :::column span="":::
+        [![login](/images/mgt-login-card.png)]](/components/login.md)
+    :::column-end:::
+    :::column span="":::
+        [![person](/images/mgt-person-card.png)]](/components/person.md)
+    :::column-end:::
+    :::column span="":::
+        [![people](/images/mgt-people-card.png)]](/components/people.md)
+    :::column-end:::
+:::row-end:::
+:::row:::
+    :::column span="":::
+        [![agenda](/images/mgt-agenda-card.png)]](/components/agenda.md)
+    :::column-end:::
+        :::column span="":::
+        [![tasks](/images/mgt-tasks-card.png)]](/components/tasks.md)
+    :::column-end:::
+:::row-end:::
 
 ### Providers
 

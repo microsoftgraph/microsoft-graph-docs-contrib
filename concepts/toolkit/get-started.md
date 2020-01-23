@@ -5,7 +5,7 @@ localization_priority: Normal
 author: elisenyang
 ---
 
-## Get started
+# Get started
 
 You can use the components by referencing the loader directly (via unpkg), or by installing the npm package.
 
