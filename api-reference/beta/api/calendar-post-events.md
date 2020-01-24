@@ -415,7 +415,7 @@ Content-type: application/json
       "type": "required"
     }
   ],
-   "TransactionId":"7E163156-7762-4BEB-A1C6-729EA81755A7"
+   "transactionId":"7E163156-7762-4BEB-A1C6-729EA81755A7"
 }
 ```
 # [C#](#tab/csharp)
@@ -467,7 +467,7 @@ Content-type: application/json
     "isOrganizer": true,
     "responseRequested": true,
     "seriesMasterId": null,
-    "TransactionId":"7E163156-7762-4BEB-A1C6-729EA81755A7",
+    "transactionId":"7E163156-7762-4BEB-A1C6-729EA81755A7",
     "showAs": "busy",
     "type": "singleInstance",
     "webLink": "https://outlook.office365.com/owa/?itemid=AAMkAGViNDU7zAAAAA7zAAAZe6CkAAA%3D&exvsurl=1&path=/calendar/item",
