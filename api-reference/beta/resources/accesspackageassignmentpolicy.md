@@ -30,7 +30,7 @@ To assign a user to an access package, [create an accessPackageAssignmentRequest
 | Property     | Type        | Description |
 |:-------------|:------------|:------------|
 |accessPackageId|String|ID of the access package.|
-|accessReviewSettings|`assignmentReviewSettings`|Who must review, and how often, the assignments to the access package from this policy. This property is null if reviews are not required. See below for more information on this type.|
+|accessReviewSettings|assignmentReviewSettings|Who must review, and how often, the assignments to the access package from this policy. This property is null if reviews are not required. See below for more information on this type.|
 |canExtend|Boolean|Indicates whether a user can extend the access package assignment duration after approval.|
 |createdBy|String|Read-only.|
 |createdDateTime|DateTimeOffset|The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 would look like this: `'2014-01-01T00:00:00Z'`|
@@ -42,9 +42,8 @@ To assign a user to an access package, [create an accessPackageAssignmentRequest
 |isDenyPolicy|Boolean|If true, the policy will not permit access. Read only.|
 |modifiedBy|String|Read-only.|
 |modifiedDateTime|DateTimeOffset|The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 would look like this: `'2014-01-01T00:00:00Z'`|
-|requestApprovalSettings|`approvalSettings`|Who must approve requests for access package in this policy. See below for more information on this type.|
-|requestorSettings|`requestorSettings`|Who can request this access package from this policy. See below for more information on this type.|
-
+|requestApprovalSettings|approvalSettings|Who must approve requests for access package in this policy. See below for more information on this type.|
+|requestorSettings|requestorSettings|Who can request this access package from this policy. See below for more information on this type.|
 
 
 ## Relationships
