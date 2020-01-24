@@ -146,7 +146,7 @@ Content-type: application/json
 
 Notice a successful response includes HTTP 201 and the following [event](/graph/api/resources/event?view=graph-rest-1.0) properties:
 
-- **isOrganizer** is set to true. This property is true for the calendar owner (Alex) and his calendar delegates.
+- **isOrganizer** is set to true. In general, this property is true if the calendar owner (Alex) is the organizer of the meeting. This also applies if a delegate (Adele) organized the meeting on behalf of the owner.
 - The **attendees** collection specifies Megan and Christie.
 - **organizer** is set to Alex, since the invitation was sent by Alex' delegate (Adele) in Alex' primary calendar.
 - Neither the **attendees** nor **organizer** specifies the delegate (Adele).
@@ -277,7 +277,7 @@ Notice a successful response includes the response code HTTP 200 and the followi
 
 And the following [event](/graph/api/resources/event?view=graph-rest-1.0) properties:
 
-- **attendees** include only Alex, Megan, and Christie.
+- **attendees** include Alex, Megan, and Christie.
 - **organizer** is Alex.
 
 Adele's identity appears only in the **sender** property of the **eventMessage** and not in the associated **event**.
