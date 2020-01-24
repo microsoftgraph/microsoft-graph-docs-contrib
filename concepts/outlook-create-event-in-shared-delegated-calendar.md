@@ -24,7 +24,7 @@ The walkthrough describes a few subsequent steps:
 
 If Alex has shared and not delegated his calendar with Adele:
 
-- Signed in as Adele, an app can [get the calendar that Alex has shared with Adele](outlook-get-shared-events-calendars.md#get-events-or-calendar-in-shared-custom-calendar).
+- Signed in as Adele, an app can [get the calendar that Alex has shared with Adele](outlook-get-shared-events-calendars.md#sharee-get-shared-custom-calendar-or-its-events-from-sharees-mailbox).
 - The app can use the requests and responses in steps 2 to 4 to apply to the shared calendar the same way as the delegated calendar.
 - In step 5, the app can sign in as Alex, instead of Adele, to receive Christie's response message.
 
