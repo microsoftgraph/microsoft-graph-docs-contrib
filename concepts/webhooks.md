@@ -199,6 +199,7 @@ The notification object has the following properties:
 | changeType | string | The event type that caused the notification. For example, `created` on mail receive, or `updated` on marking a message read. |
 | resource | string | The URI of the resource relative to `https://graph.microsoft.com`. |
 | resourceData | object | The content of this property depends on the type of resource being subscribed to. |
+| tenantId | string | The ID of the tenant the notification originated from. |
 
 For example, for Outlook resources, `resourceData` contains the following fields:
 
@@ -224,6 +225,7 @@ When the user receives an email, Microsoft Graph sends a notification like the f
       "clientState":"secretClientValue",
       "changeType":"created",
       "resource":"users/{user_guid}@<tenant_guid>/messages/{long_id_string}",
+      "tenantId": "84bd8158-6d4d-4958-8b9f-9d6445542f95",
       "resourceData":
       {
         "@odata.type":"#Microsoft.Graph.Message",
