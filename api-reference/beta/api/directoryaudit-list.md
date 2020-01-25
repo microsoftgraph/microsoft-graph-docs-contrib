@@ -44,7 +44,7 @@ This method supports the following OData query parameters to help customize the 
 
 ### Attributes supported by $filter parameter
 
-|Attribute Name |Supported operators|
+|Attribute        |Supported operators|
 |:----------------|:------|
 |activityDisplayName| eq, startswith|
 |activityDateTime| eq, ge, le|
