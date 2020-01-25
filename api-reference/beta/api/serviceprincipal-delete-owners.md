@@ -1,6 +1,6 @@
 ---
 title: "Remove owner"
-description: "Remove an owner from an application."
+description: "Remove an owner from a servicePrincipals."
 author: "davidmu1"
 localization_priority: Normal
 ms.prod: "microsoft-identity-platform"
@@ -9,7 +9,9 @@ doc_type: apiPageType
 
 # Remove owner
 
-Remove an owner from an [application](../resources/application.md).
+[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
+
+Remove an owner from a [servicePrincipal](../resources/serviceprincipal.md).
 
 ## Permissions
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
@@ -18,12 +20,12 @@ One of the following permissions is required to call this API. To learn more, in
 |:--------------------|:---------------------------------------------------------|
 |Delegated (work or school account) | Application.ReadWrite.All, Directory.ReadWrite.All, Directory.AccessAsUser.All    |
 |Delegated (personal Microsoft account) | Not supported.    |
-|Application | Application.ReadWrite.OwnedBy, Application.ReadWrite.All |
+|Application | Application.ReadWrite.All, Application.ReadWrite.OwnedBy |
 
 ## HTTP request
 <!-- { "blockType": "ignored" } -->
 ```http
-DELETE /applications/{id}/owners/{id}/$ref
+DELETE /serviceprincipals/{id}/owners/{id}/$ref
 
 ```
 ## Request headers
@@ -45,11 +47,18 @@ If successful, this method returns a `204 No Content` response code.
 The following example shows the request.
 <!-- {
   "blockType": "request",
-  "name": "application_delete_owners"
+  "name": "serviceprincipal_delete_owners"
 }-->
 
 ```http
-DELETE https://graph.microsoft.com/v1.0/applications/{id}/owners/{id}/$ref
+DELETE https://graph.microsoft.com/v1.0/serviceprincipals/{id}/owners/{id}/$ref
+Content-type: application/json
+Content-length: 30
+
+{
+    "@odata.id": "https://graph.microsoft.com/v1.0/directoryObjects/{id}"
+}
+
 ```
 
 ### Response

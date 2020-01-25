@@ -1,88 +1,92 @@
 ---
-title: "List owners"
-description: "Retrieve a list of owners (directoryObject objects) for an application."
-author: "davidmu1"
+title: "List endpoints"
+description: "Retrieve a list of endpoint objects."
+author: "dkershaw10"
 localization_priority: Normal
-ms.prod: "microsoft-identity-platform"
+ms.prod: "groups"
 doc_type: apiPageType
 ---
 
-# List owners
+# List endpoints
 
-[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
-
-Retrieve a list of owners for an application that are [directoryObject](../resources/directoryobject.md) objects.
+Retrieve a list of [endpoint](../resources/endpoint.md) objects.
 
 ## Permissions
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
 
 |Permission type      | Permissions (from least to most privileged)              |
 |:--------------------|:---------------------------------------------------------|
-|Delegated (work or school account) | Application.ReadWrite.All, Directory.Read.All, Directory.ReadWrite.All, Directory.AccessAsUser.All    |
+|Delegated (work or school account) | Group.Read.All, Group.ReadWrite.All    |
 |Delegated (personal Microsoft account) | Not supported.    |
-|Application | Application.ReadWrite.All, Directory.Read.All, Directory.ReadWrite.All |
+|Application | Group.Read.All, Group.ReadWrite.All |
 
 ## HTTP request
 <!-- { "blockType": "ignored" } -->
 ```http
-GET /applications/{id}/owners
+GET /groups/{id}/endpoints
 ```
 ## Optional query parameters
 This method supports the [OData Query Parameters](https://developer.microsoft.com/graph/docs/concepts/query_parameters) to help customize the response.
 
 ## Request headers
-| Name           | Description                |
-|:---------------|:---------------------------|
-| Authorization  | Bearer {token}. Required.  |
+| Name      |Description|
+|:----------|:----------|
+| Authorization  | Bearer {token}. Required.|
+| Content-Type   | Application/Json |
 
 ## Request body
 Do not supply a request body for this method.
 
 ## Response
 
-If successful, this method returns a `200 OK` response code and collection of [directoryObject](../resources/directoryobject.md) objects in the response body.
+If successful, this method returns a `200 OK` response code and collection of [Endpoint](../resources/endpoint.md) objects in the response body.
 ## Example
 ##### Request
-Here is an example of the request.
+
 
 # [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
-  "name": "application_get_owners"
+  "name": "get_endpoints"
 }-->
 ```msgraph-interactive
-GET https://graph.microsoft.com/beta/applications/{id}/owners
+GET https://graph.microsoft.com/beta/groups/{id}/endpoints
 ```
 # [C#](#tab/csharp)
-[!INCLUDE [sample-code](../includes/snippets/csharp/application-get-owners-csharp-snippets.md)]
+[!INCLUDE [sample-code](../includes/snippets/csharp/get-endpoints-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [JavaScript](#tab/javascript)
-[!INCLUDE [sample-code](../includes/snippets/javascript/application-get-owners-javascript-snippets.md)]
+[!INCLUDE [sample-code](../includes/snippets/javascript/get-endpoints-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Objective-C](#tab/objc)
-[!INCLUDE [sample-code](../includes/snippets/objc/application-get-owners-objc-snippets.md)]
+[!INCLUDE [sample-code](../includes/snippets/objc/get-endpoints-objc-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
 
 ##### Response
-Here is an example of the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.
+Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.
 <!-- {
   "blockType": "response",
   "truncated": true,
-  "@odata.type": "microsoft.graph.directoryObject",
+  "@odata.type": "microsoft.graph.endpoint",
   "isCollection": true
 } -->
 ```http
 HTTP/1.1 200 OK
 Content-type: application/json
-Content-length: 55
+Content-length: 261
 
 {
   "value": [
     {
+      "capability": "Conversations",
+      "providerId": "{Yammer GUID}",
+      "providerName": "Yammer",
+      "uri": "uri-value",
+      "providerResourceId": "Yammer.FeedURL",
       "id": "id-value"
     }
   ]
@@ -94,7 +98,7 @@ Content-length: 55
 <!--
 {
   "type": "#page.annotation",
-  "description": "List owners",
+  "description": "List endpoints",
   "keywords": "",
   "section": "documentation",
   "tocPath": "",

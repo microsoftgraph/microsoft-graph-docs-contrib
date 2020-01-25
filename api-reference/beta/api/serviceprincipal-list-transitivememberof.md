@@ -25,16 +25,15 @@ One of the following permissions is required to call this API. To learn more, in
 ## HTTP request
 <!-- { "blockType": "ignored" } -->
 ```http
-GET /servicePrincipals/{id}/memberOf
+GET /servicePrincipals/{id}/transitiveMemberOf
 ```
 ## Optional query parameters
 This method supports the [OData Query Parameters](https://developer.microsoft.com/graph/docs/concepts/query_parameters) to help customize the response.
 
 ## Request headers
-| Name       | Description|
-|:-----------|:----------|
-| Authorization | Bearer {token}. Required.  |
-| Content-type | application/json. Required. |
+| Name           | Description                |
+|:---------------|:---------------------------|
+| Authorization  | Bearer {token}. Required.  |
 
 ## Request body
 Do not supply a request body for this method.
@@ -51,10 +50,10 @@ Here is an example of the request.
 
 <!-- {
   "blockType": "request",
-  "name": "get_serviceprincipal_memberof"
+  "name": "get_serviceprincipal_tranitivememberof"
 }-->
 ```http
-GET https://graph.microsoft.com/beta/servicePrincipals/{id}/memberOf
+GET https://graph.microsoft.com/beta/servicePrincipals/{id}/transitiveMemberOf
 ```
 
 ### Response

@@ -32,10 +32,9 @@ GET /servicePrincipals
 This method supports the [OData Query Parameters](https://developer.microsoft.com/graph/docs/concepts/query_parameters) to help customize the response.
 
 ## Request headers
-| Name       | Description|
-|:-----------|:----------|
-| Authorization | Bearer {token}. Required.  |
-| Content-type | application/json. Required. |
+| Name           | Description                |
+|:---------------|:---------------------------|
+| Authorization  | Bearer {token}. Required.  |
 
 ## Request body
 

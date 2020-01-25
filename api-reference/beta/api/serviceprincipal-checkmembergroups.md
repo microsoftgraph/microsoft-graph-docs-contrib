@@ -1,6 +1,6 @@
 ---
 title: "servicePrincipal: checkMemberGroups"
-description: "heck for membership in the specified list of groups. Returns from the list those groups of which the serviceprincipal has a direct or transitive membership."
+description: "Check for membership in the specified list of groups. Returns from the list those groups of which the serviceprincipal has a direct or transitive membership."
 localization_priority: Priority
 doc_type: resourcePageType
 ms.prod: "microsoft-identity-platform"

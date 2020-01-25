@@ -11,7 +11,7 @@ doc_type: apiPageType
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Retrieve the properties and relationships of [serviceprincipal](serviceprincipal.md) object.
+Retrieve the properties and relationships of [serviceprincipal](../resources/serviceprincipal.md) object.
 
 ## Permissions
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
@@ -33,10 +33,9 @@ GET /servicePrincipals/{id}
 This method supports the [OData Query Parameters](https://developer.microsoft.com/graph/docs/concepts/query_parameters) to help customize the response.
 
 ## Request headers
-| Name       | Description|
-|:-----------|:----------|
-| Authorization | Bearer {token}. Required.  |
-| Content-type | application/json. Required. |
+| Name           | Description                |
+|:---------------|:---------------------------|
+| Authorization  | Bearer {token}. Required.  |
 
 ## Request body
 Do not supply a request body for this method.
@@ -50,7 +49,7 @@ Here is an example of the request.
 
 <!-- {
   "blockType": "request",
-  "name": "get_application"
+  "name": "get_serviceprincipal"
 }-->
 
 ```http
