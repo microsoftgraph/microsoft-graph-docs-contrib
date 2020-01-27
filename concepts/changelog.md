@@ -13,6 +13,11 @@ For details about known issues with Microsoft Graph APIs, see [Known issues](kno
 
 ## January 2020
 
+### Resource specific consent 
+| **Change type** | **Version**   | **Description**                          |
+|:---|:---|:---|
+|Addition | v1.0 | Added **primaryChannel** navigation property to team resource type.|
+
 ### Identity and access (Azure AD)
 | **Change type** | **Version**   | **Description**                          |
 |:---|:---|:---|
