@@ -350,6 +350,35 @@ None.
 
 For more complex scenarios involving multiple permissions, see [Permission scenarios](#permission-scenarios).
 
+## Call records permissions
+
+#### Delegated permissions
+
+None.
+
+<br/>
+
+#### Application permissions
+
+|Permission    |Display String   |Description |Admin Consent Required |
+|:-----------------------------|:-----------------------------------------|:-----------------|:-----------------|
+|_CallRecords.Read.All_|Allows the app to read call records for all calls and online meetings without a signed-in user.|Yes|
+
+> **Important:** Discretion should be used when granting this permission to applications. Call records can provide insights into the operation of your business, and so can be a target for malicious actors. Only grant this permission to applications you trust to meet your data protection requirements.
+
+> **Important:** Make sure that you are compliant with the laws and regulations in your area regarding data protection and confidentiality of communications. Please see the [Terms of Use](https://docs.microsoft.com/legal/microsoft-apis/terms-of-use) and consult with your legal counsel for more information.
+
+<br/>
+
+### Example usage
+
+#### Application
+
+* _CallRecords.Read.All_: Retrieve a call record (`GET /beta/communications/callRecords/{id}`).
+* _CallRecords.Read.All_: Subscribe to new call records (`POST /beta/subscriptions`).
+
+For more complex scenarios involving multiple permissions, see [Permission scenarios](#permission-scenarios).
+
 ## ChannelMessage permissions
 
 #### Delegated permissions
