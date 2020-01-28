@@ -949,7 +949,7 @@
           - name: Client user agent
             href: resources/callrecords-clientuseragent.md
           - name: Service user agent
-            href: resources/callrecords-serviceuseragent
+            href: resources/callrecords-serviceuseragent.md
         - name: User feedback
           items:
           - name: User feedback
