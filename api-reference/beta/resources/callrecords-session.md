@@ -16,7 +16,7 @@ in the case of a Conference call.
 
 ## Methods
 
-No methods exist to directly access sessions. Plase use the [Get callRecord](../api/callrecords-callrecord-get.md)
+No methods exist to directly access sessions. Please use the [Get callRecord](../api/callrecords-callrecord-get.md)
 api with `$expand=sessions` to get the sessions for a [callRecord](callrecords-callrecord.md).
 
 ## Properties

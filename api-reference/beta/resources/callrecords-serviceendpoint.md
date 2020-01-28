@@ -11,7 +11,7 @@ doc_type: "resourcePageType"
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-The serviceEndpoint type. Represents an service endpoint in a call. The endpoint represents a
+The serviceEndpoint type. Represents a service endpoint in a call. The endpoint represents a
 calling media server or other service entity. Inherits from [endpoint](callrecords-endpoint.md) type.
 
 ## Properties
