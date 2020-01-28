@@ -934,6 +934,40 @@
           href: resources/callrecords-session.md
         - name: Segment
           href: resources/callrecords-segment.md
+        - name: Endpoint
+          items:
+          - name: Endpoint
+            href: resources/callrecords-endpoint.md
+          - name: Participant endpoint
+            href: resources/callrecords-participantendpoint.md
+          - name: Service endpoint
+            href: resources/callrecords-serviceendpoint.md
+        - name: User agent
+          items:
+          - name: User agent
+            href: resources/callrecords-useragent.md
+          - name: Client user agent
+            href: resources/callrecords-clientuseragent.md
+          - name: Service user agent
+            href: resources/callrecords-serviceuseragent
+        - name: User feedback
+          items:
+          - name: User feedback
+            href: resources/callrecords-userfeedback.md
+          - name: Feedback token set
+            href: resources/callrecords-feedbacktokenset.md
+        - name: Failure info
+          href: resources/callrecords-failureinfo.md
+        - name: Media
+          items:
+          - name: Media
+            href: resources/callrecords-media.md
+          - name: Device info
+            href: resources/callrecords-deviceinfo.md
+          - name: Network info
+            href: resources/callrecords-networkinfo.md
+          - name: Media stream
+            href: resources/callrecords-mediastream.md
     - name: Cross-device experiences
       displayName: Project Rome
       items:
