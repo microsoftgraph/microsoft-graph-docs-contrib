@@ -8913,7 +8913,7 @@
           - name: Get member objects
             href: api/orgcontact-getmemberobjects.md
       - name: Policy
-        href: resources/policy-overview.md
+        href: resources/policy.md
         items:
         - name: List policies
           href: api/policy-list.md
