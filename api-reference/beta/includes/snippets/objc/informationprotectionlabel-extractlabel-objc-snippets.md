@@ -9,6 +9,7 @@ MSHTTPClient *httpClient = [MSClientFactory createHTTPClientWithAuthenticationPr
 NSString *MSGraphBaseURL = @"https://graph.microsoft.com/beta/";
 NSMutableURLRequest *urlRequest = [NSMutableURLRequest requestWithURL:[NSURL URLWithString:[MSGraphBaseURL stringByAppendingString:@"/informationprotection/policy/labels/extractLabel"]]];
 [urlRequest setHTTPMethod:@"POST"];
+[urlRequest setValue:@"ContosoLOBApp/1.0" forHTTPHeaderField:@"User-Agent"];
 [urlRequest setValue:@"application/json" forHTTPHeaderField:@"Content-Type"];
 
 NSMutableDictionary *payloadDictionary = [[NSMutableDictionary alloc] init];
