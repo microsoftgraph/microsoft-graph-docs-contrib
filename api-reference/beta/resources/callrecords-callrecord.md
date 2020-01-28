@@ -37,7 +37,7 @@ The callRecord type.
 
 | Relationship | Type        | Description |
 |:-------------|:------------|:------------|
-|sessions|[callRecords.session](callrecords-session.md) collection|List of sessions involved in the call. Peer-to-peer calls typically only have one session, whereas group calls typically have at least one session per participant. Read-only. Nullable.|
+|sessions|[microsoft.graph.callRecords.session](callrecords-session.md) collection|List of sessions involved in the call. Peer-to-peer calls typically only have one session, whereas group calls typically have at least one session per participant. Read-only. Nullable.|
 
 ## JSON representation
 

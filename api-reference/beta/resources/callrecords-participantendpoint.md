@@ -18,7 +18,7 @@ a user or user-like entity. Inherits from [endpoint](callrecords-endpoint.md) ty
 
 | Property     | Type        | Description |
 |:-------------|:------------|:------------|
-|feedback|[callRecords.userFeedback](callrecords-userfeedback.md)|The feedback provided by the user of this endpoint about the quality of the session.|
+|feedback|[microsoft.graph.callRecords.userFeedback](callrecords-userfeedback.md)|The feedback provided by the user of this endpoint about the quality of the session.|
 |identity|[identitySet](identityset.md)|Identity associated with the endpoint.|
 
 ## JSON representation

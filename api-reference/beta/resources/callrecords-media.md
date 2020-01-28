@@ -18,11 +18,11 @@ The media type. Represents the media (audio, video, video-based screen-sharing, 
 | Property     | Type        | Description |
 |:-------------|:------------|:------------|
 |label|String|How the media was identified during media negation stage.|
-|callerDevice|[callRecords.deviceInfo](callrecords-deviceinfo.md)|Device information associated with the caller endpoint of this media.|
-|callerNetwork|[callRecords.networkInfo](callrecords-networkinfo.md)|Network information associated with the caller endpoint of this media.|
-|calleeDevice|[callRecords.deviceInfo](callrecords-deviceinfo.md)|Device information associated with the callee endpoint of this media.|
-|calleeNetwork|[callRecords.networkInfo](callrecords-networkinfo.md)|Network information associated with the callee endpoint of this media.|
-|streams|[callRecords.mediaStream](callrecords-mediastream.md) collection||
+|callerDevice|[microsoft.graph.callRecords.deviceInfo](callrecords-deviceinfo.md)|Device information associated with the caller endpoint of this media.|
+|callerNetwork|[microsoft.graph.callRecords.networkInfo](callrecords-networkinfo.md)|Network information associated with the caller endpoint of this media.|
+|calleeDevice|[microsoft.graph.callRecords.deviceInfo](callrecords-deviceinfo.md)|Device information associated with the callee endpoint of this media.|
+|calleeNetwork|[microsoft.graph.callRecords.networkInfo](callrecords-networkinfo.md)|Network information associated with the callee endpoint of this media.|
+|streams|[microsoft.graph.callRecords.mediaStream](callrecords-mediastream.md) collection||
 
 ## JSON representation
 
