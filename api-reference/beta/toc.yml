@@ -10390,6 +10390,8 @@
           href: api/team-get.md
         - name: Update team
           href: api/team-update.md
+        - name: Delete team
+          href: api/group-delete.md
         - name: Archive team
           href: api/team-archive.md
         - name: Unarchive team
@@ -10487,14 +10489,14 @@
           href: api/chat-list.md
         - name: Get chat
           href: api/chat-get.md
+        - name: List chat members
+          href: api/conversationmember-list.md
+        - name: Get chat member
+          href: api/conversationmember-get.md
         - name: List messages in a chat
           href: api/chatmessage-list.md
         - name: Get message in chat
           href: api/chatmessage-get.md
-        - name: Get members in chat
-          href: api/conversationmember-list.md
-        - name: Get one member in chat
-          href: api/conversationmember-get.md
       - name: Chat message
         href: resources/chatmessage.md
         items:

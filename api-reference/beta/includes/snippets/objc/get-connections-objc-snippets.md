@@ -14,10 +14,8 @@ MSURLSessionDataTask *meDataTask = [httpClient dataTaskWithRequest:urlRequest
 	completionHandler: ^(NSData *data, NSURLResponse *response, NSError *nserror) {
 
 		NSError *jsonError = nil;
-		NSDictionary *jsonFinal = [NSJSONSerialization JSONObjectWithData:data options:0 error:&jsonError];
-		NSMutableArray *externalConnectionList = [[NSMutableArray alloc] init];
-		externalConnectionList = [jsonFinal valueForKey:@"value"];
-		MSGraphExternalConnection *externalConnection = [[MSGraphExternalConnection alloc] initWithDictionary:[externalConnectionList objectAtIndex: 0] error:&nserror];
+		MSCollection *collection = [[MSCollection alloc] initWithData:data error:&jsonError];
+		MSGraphExternalConnection *externalConnection = [[MSGraphExternalConnection alloc] initWithDictionary:[[collection value] objectAtIndex: 0] error:&nserror];
 
 }];
 
