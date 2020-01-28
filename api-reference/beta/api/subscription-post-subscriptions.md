@@ -21,6 +21,7 @@ Creating a subscription requires read permission to the resource. For example, t
 
 | Supported resource | Delegated (work or school account) | Delegated (personal Microsoft account) | Application |
 |:-----|:-----|:-----|:-----|
+|[callRecord](../resources/callrecords-callrecord.md) (/communications/callRecords) | Not supported | Not supported | CallRecords.Read.All  |
 |[chatMessage](../resources/chatmessage.md) (/teams/{id}/channels/{id}/messages) | Not supported | Not supported | ChannelMessage.Read.All  |
 |[chatMessage](../resources/chatmessage.md) (/chats/{id}/messages) | Not supported | Not supported | Chat.Read.All  |
 |[contact](../resources/contact.md) | Contacts.Read | Contacts.Read | Contacts.Read |
@@ -117,6 +118,7 @@ The following are valid values for the resource property.
 |Conversations|groups('*{id}*')/conversations|
 |Drives|me/drive/root|
 |Security alert|security/alerts?$filter=status eq ‘New’|
+|Call records|communications/callRecords|
 
 ### Response
 

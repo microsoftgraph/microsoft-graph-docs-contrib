@@ -15,6 +15,7 @@ A subscription allows a client app to receive notifications about changes to dat
 
 - An [alert][] from the Microsoft Graph Security API
 - A [chatMessage][] sent via teams or channels in Microsoft Teams
+- A [callRecord][] produced after a call or meeting in Microsoft Teams or Skype for Business
 - A [conversation][] in an Office 365 group
 - Content in the hierarchy of a root folder [driveItem][] in OneDrive for Business, or of a root folder or subfolder [driveItem][] in a user's personal OneDrive
 - A [message][], [event][], or [contact][] in Outlook
@@ -53,6 +54,7 @@ A subscription allows a client app to receive notifications about changes to dat
 |:--------------------|:-------------------------|
 | Security **alert**     | 43200 minutes (under 30 days)  |
 | Teams **chatMessage**    | 60 minutes (1 hour)  |
+| Teams or Skype for Business **callRecord**    | 4230 minutes (under 3 days)  |
 | Group **conversation** | 4230 minutes (under 3 days)    |
 | OneDrive **driveItem**    | 4230 minutes (under 3 days)    |
 | Outlook **message**, **event**, **contact**              | 4230 minutes (under 3 days)    |
@@ -103,6 +105,7 @@ Here is a JSON representation of the resource.
 [user]: ./user.md
 [alert]: ./alert.md
 [chatMessage]: ./chatmessage.md
+[callRecord]: ./callrecords-callrecord.md
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2015-10-25 14:57:30 UTC -->
