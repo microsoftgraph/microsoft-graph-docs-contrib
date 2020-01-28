@@ -46,9 +46,11 @@ If a client uses a query parameter, it must be specified in the initial request.
 Note the general limited support of the following optional query parameters:
 
 - `$orderby` 
-     - Do not assume a specific sequence of the responses returned from a delta query. Assume that the same item can show up anywhere in the `nextLink` sequence and handle that in your merge logic.
+    
+    Do not assume a specific sequence of the responses returned from a delta query. Assume that the same item can show up anywhere in the `nextLink` sequence and handle that in your merge logic.
 - `$top` 
-     - The number of objects in each page can vary depending on the resource type and the type of changes made to the resource.
+    
+    The number of objects in each page can vary depending on the resource type and the type of changes made to the resource.
 
 For the [message](/graph/api/resources/message?view=graph-rest-1.0) resource, see details for [query parameters support in a delta query](delta-query-messages.md#use-query-parameters-in-a-delta-query-for-messages).
 
