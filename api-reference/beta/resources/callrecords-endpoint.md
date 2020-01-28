@@ -19,7 +19,7 @@ an application/bot, etc. The [participantEndpoint](callrecords-participantendpoi
 
 | Property     | Type        | Description |
 |:-------------|:------------|:------------|
-|userAgent|[userAgent](callrecords-useragent.md)|User-agent reported by this endpoint.|
+|userAgent|[callRecords.userAgent](callrecords-useragent.md)|User-agent reported by this endpoint.|
 
 ## JSON representation
 

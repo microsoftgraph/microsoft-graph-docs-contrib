@@ -26,10 +26,10 @@ api with `$expand=sessions($expand=segments)` to get the segments for a [callRec
 | Property     | Type        | Description |
 |:-------------|:------------|:------------|
 |id|String|Unique identifier for the segment. Read-only.|
-|caller|[endpoint](callrecords-endpoint.md)|Endpoint that initiated this segment.|
-|callee|[endpoint](callrecords-endpoint.md)|Endpoint that answered this segment.|
-|failureInfo|[failureInfo](callrecords-failureinfo.md)|Failure information associated with the segment if it failed.|
-|media|[media](callrecords-media.md) collection|Media associated with this segment.|
+|caller|[callRecords.endpoint](callrecords-endpoint.md)|Endpoint that initiated this segment.|
+|callee|[callRecords.endpoint](callrecords-endpoint.md)|Endpoint that answered this segment.|
+|failureInfo|[callRecords.failureInfo](callrecords-failureinfo.md)|Failure information associated with the segment if it failed.|
+|media|[callRecords.media](callrecords-media.md) collection|Media associated with this segment.|
 |startDateTime|DateTimeOffset|UTC time when the segment started. The DateTimeOffset type represents date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 would look like this: `'2014-01-01T00:00:00Z'`|
 |endDateTime|DateTimeOffset|UTC time when the segment ended. The DateTimeOffset type represents date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 would look like this: `'2014-01-01T00:00:00Z'`|
 

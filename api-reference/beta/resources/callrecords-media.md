@@ -18,20 +18,11 @@ The media type. Represents the media (audio, video, video-based screen-sharing, 
 | Property     | Type        | Description |
 |:-------------|:------------|:------------|
 |label|String|How the media was identified during media negation stage.|
-|callerDevice|[deviceInfo](callrecords-deviceinfo.md)|Device information associated with the caller endpoint of this media.|
-|callerNetwork|[networkInfo](callrecords-networkinfo.md)|Network information associated with the caller endpoint of this media.|
-|calleeDevice|[deviceInfo](callrecords-deviceinfo.md)|Device information associated with the callee endpoint of this media.|
-|calleeNetwork|[networkInfo](callrecords-networkinfo.md)|Network information associated with the callee endpoint of this media.|
-|streams|[mediaStream](callrecords-mediastream.md) collection||
-
-|`label`|`Edm.String`|How the media was identified during media negation stage.|No|Yes|
-|`callerNetwork`|`microsoft.graph.callRecords.networkInfo`|Network information associated with the caller endpoint of this media.|No|Yes|
-|`calleeNetwork`|`microsoft.graph.callRecords.networkInfo`|Network information associated with the callee endpoint of this media.|No|Yes|
-|`callerDevice`|`microsoft.graph.callRecords.deviceInfo`|Device information associated with the caller endpoint of this media.|No|Yes|
-|`calleeDevice`|`microsoft.graph.callRecords.deviceInfo`|Device information associated with the callee endpoint of this media.|No|Yes|
-|`streams`|`Collection(microsoft.graph.callRecords.mediaStream)`|Network streams associated with this media.|No|Yes|
-
-
+|callerDevice|[callRecords.deviceInfo](callrecords-deviceinfo.md)|Device information associated with the caller endpoint of this media.|
+|callerNetwork|[callRecords.networkInfo](callrecords-networkinfo.md)|Network information associated with the caller endpoint of this media.|
+|calleeDevice|[callRecords.deviceInfo](callrecords-deviceinfo.md)|Device information associated with the callee endpoint of this media.|
+|calleeNetwork|[callRecords.networkInfo](callrecords-networkinfo.md)|Network information associated with the callee endpoint of this media.|
+|streams|[callRecords.mediaStream](callrecords-mediastream.md) collection||
 
 ## JSON representation
 
