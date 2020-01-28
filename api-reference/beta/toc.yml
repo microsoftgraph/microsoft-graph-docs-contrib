@@ -914,7 +914,7 @@
         - name: Get
           href: api/onlinemeeting-get.md
         - name: Delete
-          href: api/onlinemeeting-delete.md          
+          href: api/onlinemeeting-delete.md
       - name: Presence
         href: resources/presence.md
         items:
@@ -922,11 +922,18 @@
           href: api/presence-get.md
         - name: Get presence for multiple users
           href: api/cloudcommunications-getpresencesbyuserid.md
-      - name: Call record
-        href: resources/callrecords-callrecord.md
+      - name: Call records
         items:
+        - name: Overview
+          href: resources/callrecords-api-overview.md
         - name: Get call record
           href: api/callrecords-callrecord-get.md
+        - name: Call record
+          href: resources/callrecords-callrecord.md
+        - name: Session
+          href: resources/callrecords-session.md
+        - name: Segment
+          href: resources/callrecords-segment.md
     - name: Cross-device experiences
       displayName: Project Rome
       items:
