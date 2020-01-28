@@ -19,7 +19,7 @@ localization_priority: Priority
 | [session](callrecords-session.md) | [Get callRecord](../api/callrecords-callrecord-get.md) |
 | [segment](callrecords-segment.md) | [Get callRecord](../api/callrecords-callrecord-get.md) |
 
-![Image of a the data structure representing a complete call record](../../../concepts/images/callrecords-structure.png)
+![Image of a the data structure representing a complete call record](/graph/images/callrecords-structure.png)
 
 ## See also
 
