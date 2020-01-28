@@ -24,6 +24,7 @@ Using the Microsoft Graph API, an app can subscribe to changes on the following 
 - Content within the hierarchy of _any folder_ [driveItem][] on a user's personal OneDrive
 - Content within the hierarchy of the _root folder_ [driveItem][] on OneDrive for Business
 - [chatMessage][]
+- [callRecord][] (preview)
 - Security [alert][]
 
 ## Permissions
@@ -53,4 +54,5 @@ In general, subscription operations require read permission to the resource. For
 [group]: ./group.md
 [message]: ./message.md
 [user]: ./user.md
+[callRecord]: ./callrecords-callrecord.md
 [alert]: ./alert.md
