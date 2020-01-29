@@ -22,6 +22,7 @@ This resource supports using [delta query](/graph/delta-query-overview) to track
 
 | Method | Return Type | Description |
 |:---------------|:--------|:----------|
+|**Application management**| | |
 |[List applications](../api/application-list.md) | [application](application.md) collection | Retrieve the list of applications in the organization. |
 |[Create application](../api/application-post-applications.md) | [application](application.md) | Creates (registers) a new application.|
 |[Get application](../api/application-get.md) | [application](application.md) |Read properties and relationships of application object.|
@@ -31,15 +32,20 @@ This resource supports using [delta query](/graph/delta-query-overview) to track
 |[Get deleted application](../api/directory-deleteditems-get.md) | [directoryObject](directoryobject.md) | Retrieve the properties of a recently deleted application. |
 |[Permanently delete application](../api/directory-deleteditems-delete.md) | None | Permanently delete an applications. |
 |[Restore deleted application](../api/directory-deleteditems-restore.md) | [directoryObject](directoryobject.md) | Restore a recently deleted application. |
+|**Certificates & secrets**| | |
 |[Add password](../api/application-addpassword.md)|[passwordCredential](passwordcredential.md)|Add a strong password to an application.|
 |[Remove password](../api/application-removepassword.md)|[passwordCredential](passwordcredential.md)|Remove a password from an application.|
-| [Create extension](../api/application-post-extensionproperty.md) | [extensionProperty](extensionProperty.md) | Create an extension property on an application object. |
+|**Extensions**| | |
 | [List extensions](../api/application-list-extensionproperty.md) | [extensionProperty](extensionProperty.md) collection | List extension properties on an application object. |
+| [Create extension](../api/application-post-extensionproperty.md) | [extensionProperty](extensionProperty.md) | Create an extension property on an application object. |
 | [Delete extension](../api/application-delete-extensionproperty.md) | None | Delete an extension property from an application object. |
-|[List assigned policies](../api/policy-list-assigned.md)| [policy](policy.md) collection| Get all policies assigned to this object.|
+|**Owners**| | |
 |[List owners](../api/application-list-owners.md) |[directoryObject](directoryobject.md) collection| Get an owner object collection.|
 |[Add owner](../api/application-post-owners.md) |[directoryObject](directoryobject.md)| Add an owner by posting to the owners collection.|
 |[Remove owner](../api/application-delete-owners.md) |None| Remove an owner from an application.|
+|**Policies**| | |
+|[List assigned policies](../api/policy-list-assigned.md)| [policy](policy.md) collection| Get all policies assigned to this object.|
+|**Other operations**| | |
 |[delta](../api/application-delta.md)|[application](application.md) collection| Get incremental changes for applications. |
 |[Create call](../api/application-post-calls.md)|[call](call.md)|Create a new call by posting to the calls collection.|
 |[Create online meeting](../api/application-post-onlinemeetings.md)|[onlineMeeting](onlinemeeting.md)|Create a new online meeting by posting to the onlineMeetings collection.|

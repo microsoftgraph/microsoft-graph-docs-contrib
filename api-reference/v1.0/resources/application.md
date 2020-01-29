@@ -15,6 +15,7 @@ Represents an application. Any application that outsources authentication to Azu
 
 | Method | Return Type | Description |
 |:---------------|:--------|:----------|
+|**Application management**| | |
 |[List applications](../api/application-list.md) | [application](application.md) collection | Retrieve the list of applications in the organization. |
 |[Create application](../api/application-post-applications.md) | [application](application.md) | Creates (registers) a new application.|
 |[Get application](../api/application-get.md) | [application](application.md) |Read properties and relationships of application object.|
@@ -24,11 +25,14 @@ Represents an application. Any application that outsources authentication to Azu
 |[Get deleted application](../api/directory-deleteditems-get.md) | [directoryObject](directoryobject.md) | Retrieve the properties of a recently deleted application. |
 |[Permanently delete application](../api/directory-deleteditems-delete.md) | None | Permanently delete an applications. |
 |[Restore deleted application](../api/directory-deleteditems-restore.md) | [directoryObject](directoryobject.md) | Restore a recently deleted application. |
+|**Certificates & secrets**| | |
 |[Add password](../api/application-addpassword.md)|[passwordCredential](passwordcredential.md)|Add a strong password to an application.|
 |[Remove password](../api/application-removepassword.md)|[passwordCredential](passwordcredential.md)|Remove a password from an application.|
-| [Create extension](../api/application-post-extensionproperty.md) | [extensionProperty](extensionProperty.md) | Create an extension property on an application object. |
+|**Extensions**| | |
 | [List extensions](../api/application-list-extensionproperty.md) | [extensionProperty](extensionProperty.md) collection | List extension properties on an application object. |
+| [Create extension](../api/application-post-extensionproperty.md) | [extensionProperty](extensionProperty.md) | Create an extension property on an application object. |
 | [Delete extension](../api/application-delete-extensionproperty.md) | None | Delete an extension property from an application object. |
+|**Owners**| | |
 |[List owners](../api/application-list-owners.md) |[directoryObject](directoryobject.md) collection| Get an owner object collection.|
 |[Add owner](../api/application-post-owners.md) |[directoryObject](directoryobject.md)| Add an owner by posting to the owners collection.|
 |[Remove owner](../api/application-delete-owners.md) |None| Remove an owner from an application.|

@@ -3216,10 +3216,10 @@
           href: api/application-addpassword.md
         - name: Remove password
           href: api/application-removepassword.md
-        - name: Create extension
-          href: api/application-post-extensionproperty.md
         - name: List extensions
           href: api/application-list-extensionproperty.md
+        - name: Create extension
+          href: api/application-post-extensionproperty.md
         - name: Delete extension
           href: api/application-delete-extensionproperty.md
         - name: List owners
@@ -3435,18 +3435,20 @@
           href: api/serviceprincipal-addpassword.md
         - name: Remove password
           href: api/serviceprincipal-removepassword.md
-        - name: List createdObjects
-          href: api/serviceprincipal-list-createdobjects.md
-        - name: List memberOf
-          href: api/serviceprincipal-list-memberof.md
-        - name: List transitive memberOf
-          href: api/serviceprincipal-list-transitivememberof.md
-        - name: List ownedObjects
-          href: api/serviceprincipal-list-ownedobjects.md
         - name: List owners
           href: api/serviceprincipal-list-owners.md
         - name: Add owner
           href: api/serviceprincipal-post-owners.md
+        - name: Remove owner
+          href: api/serviceprincipal-delete-owners.md
+        - name: List createdObjects
+          href: api/serviceprincipal-list-createdobjects.md
+        - name: List ownedObjects
+          href: api/serviceprincipal-list-ownedobjects.md
+        - name: List memberOf
+          href: api/serviceprincipal-list-memberof.md
+        - name: List transitive memberOf
+          href: api/serviceprincipal-list-transitivememberof.md
         - name: checkMemberGroups
           href: api/serviceprincipal-list-checkmembergroups.md
         - name: checkMemberObjects

@@ -11,6 +11,14 @@ This changelog covers what's changed in the Microsoft Graph API, including the v
 
 For details about known issues with Microsoft Graph APIs, see [Known issues](known-issues.md).
 
+## February 2020
+
+### Identity and access (Azure AD)
+
+| **Change type** | **Version** | **Description**                  |
+|:----------------|:------------|:-----------------------------------------|
+| Addition | v1.0 | Added new entity type: [servicePrincipal](/graph/resources/serviceprincipal?view=graph-rest-v1.0).|
+
 ## November 2019
 
 ### Calendar | Place
