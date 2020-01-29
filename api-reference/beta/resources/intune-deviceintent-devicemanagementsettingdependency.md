@@ -37,7 +37,10 @@ Here is a JSON representation of the resource.
   "definitionId": "String",
   "constraints": [
     {
-      "@odata.type": "microsoft.graph.deviceManagementSettingXmlConstraint"
+      "@odata.type": "microsoft.graph.deviceManagementSettingAppConstraint",
+      "supportedTypes": [
+        "String"
+      ]
     }
   ]
 }
