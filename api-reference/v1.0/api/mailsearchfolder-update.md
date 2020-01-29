@@ -104,7 +104,6 @@ Content-type: application/json
   "childFolderCount": 0,
   "unreadItemCount": 0,
   "totalItemCount": 0,
-  "wellKnownName": null,
   "isSupported": true,
   "includeNestedFolders": true,
   "sourceFolderIds": [
@@ -124,7 +123,7 @@ Content-type: application/json
   "section": "documentation",
   "tocPath": "",
   "suppressions": [
-    
+
   ]
 }
 -->
