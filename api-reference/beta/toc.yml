@@ -2642,6 +2642,19 @@
           href: resources/intune-deviceconfig-androiddeviceownerglobalproxyautoconfig.md
         - name: Android device owner global proxy direct
           href: resources/intune-deviceconfig-androiddeviceownerglobalproxydirect.md
+        - name: Android device owner imported PFX certificate profile
+          href: resources/intune-deviceconfig-androiddeviceownerimportedpfxcertificateprofile.md
+          items:
+          - name: List
+            href: api/intune-deviceconfig-androiddeviceownerimportedpfxcertificateprofile-list.md
+          - name: Get
+            href: api/intune-deviceconfig-androiddeviceownerimportedpfxcertificateprofile-get.md
+          - name: Create
+            href: api/intune-deviceconfig-androiddeviceownerimportedpfxcertificateprofile-create.md
+          - name: Delete
+            href: api/intune-deviceconfig-androiddeviceownerimportedpfxcertificateprofile-delete.md
+          - name: Update
+            href: api/intune-deviceconfig-androiddeviceownerimportedpfxcertificateprofile-update.md
         - name: Android device owner play store mode
           href: resources/intune-deviceconfig-androiddeviceownerplaystoremode.md
         - name: Android device owner required password type
@@ -3206,6 +3219,8 @@
             href: api/intune-deviceconfig-appledevicefeaturesconfigurationbase-get.md
         - name: Apple subject name format
           href: resources/intune-deviceconfig-applesubjectnameformat.md
+        - name: Apple VPN always on configuration
+          href: resources/intune-deviceconfig-applevpnalwaysonconfiguration.md
         - name: Apple VPN configuration
           href: resources/intune-deviceconfig-applevpnconfiguration.md
           items:
@@ -3977,6 +3992,8 @@
             href: api/intune-deviceconfig-ioscompliancepolicy-delete.md
           - name: Update
             href: api/intune-deviceconfig-ioscompliancepolicy-update.md
+        - name: iOS credential single sign on extension
+          href: resources/intune-deviceconfig-ioscredentialsinglesignonextension.md
         - name: iOS custom configuration
           href: resources/intune-deviceconfig-ioscustomconfiguration.md
           items:
@@ -4108,6 +4125,8 @@
             href: api/intune-deviceconfig-iosimportedpfxcertificateprofile-update.md
         - name: iOS kerberos single sign on extension
           href: resources/intune-deviceconfig-ioskerberossinglesignonextension.md
+        - name: iOS kiosk mode app type
+          href: resources/intune-deviceconfig-ioskioskmodeapptype.md
         - name: iOS network usage rule
           href: resources/intune-deviceconfig-iosnetworkusagerule.md
         - name: iOS notification alert type
@@ -4127,6 +4146,8 @@
             href: api/intune-deviceconfig-iospkcscertificateprofile-delete.md
           - name: Update
             href: api/intune-deviceconfig-iospkcscertificateprofile-update.md
+        - name: iOS redirect single sign on extension
+          href: resources/intune-deviceconfig-iosredirectsinglesignonextension.md
         - name: iOS SCEP certificate profile
           href: resources/intune-deviceconfig-iosscepcertificateprofile.md
           items:
@@ -4140,6 +4161,8 @@
             href: api/intune-deviceconfig-iosscepcertificateprofile-delete.md
           - name: Update
             href: api/intune-deviceconfig-iosscepcertificateprofile-update.md
+        - name: iOS single sign on extension
+          href: resources/intune-deviceconfig-iossinglesignonextension.md
         - name: iOS single sign on settings
           href: resources/intune-deviceconfig-iossinglesignonsettings.md
         - name: iOS trusted root certificate
@@ -4278,6 +4301,8 @@
             href: api/intune-deviceconfig-macoscompliancepolicy-delete.md
           - name: Update
             href: api/intune-deviceconfig-macoscompliancepolicy-update.md
+        - name: macOS credential single sign on extension
+          href: resources/intune-deviceconfig-macoscredentialsinglesignonextension.md
         - name: macOS custom app configuration
           href: resources/intune-deviceconfig-macoscustomappconfiguration.md
           items:
@@ -4407,6 +4432,8 @@
             href: api/intune-deviceconfig-macospkcscertificateprofile-delete.md
           - name: Update
             href: api/intune-deviceconfig-macospkcscertificateprofile-update.md
+        - name: macOS redirect single sign on extension
+          href: resources/intune-deviceconfig-macosredirectsinglesignonextension.md
         - name: macOS SCEP certificate profile
           href: resources/intune-deviceconfig-macosscepcertificateprofile.md
           items:
@@ -4420,6 +4447,8 @@
             href: api/intune-deviceconfig-macosscepcertificateprofile-delete.md
           - name: Update
             href: api/intune-deviceconfig-macosscepcertificateprofile-update.md
+        - name: macOS single sign on extension
+          href: resources/intune-deviceconfig-macossinglesignonextension.md
         - name: macOS trusted root certificate
           href: resources/intune-deviceconfig-macostrustedrootcertificate.md
           items:
@@ -4511,6 +4540,21 @@
             href: api/intune-deviceconfig-manageddeviceencryptionstate-delete.md
           - name: Update
             href: api/intune-deviceconfig-manageddeviceencryptionstate-update.md
+        - name: Managed device mobile app configuration setting state
+          href: resources/intune-deviceconfig-manageddevicemobileappconfigurationsettingstate.md
+        - name: Managed device mobile app configuration state
+          href: resources/intune-deviceconfig-managedDeviceMobileAppConfigurationState.md
+          items:
+          - name: List
+            href: api/intune-deviceconfig-managedDeviceMobileAppConfigurationState-list.md
+          - name: Get
+            href: api/intune-deviceconfig-managedDeviceMobileAppConfigurationState-get.md
+          - name: Create
+            href: api/intune-deviceconfig-managedDeviceMobileAppConfigurationState-create.md
+          - name: Delete
+            href: api/intune-deviceconfig-managedDeviceMobileAppConfigurationState-delete.md
+          - name: Update
+            href: api/intune-deviceconfig-managedDeviceMobileAppConfigurationState-update.md
         - name: Managed device reported app
           href: resources/intune-deviceconfig-manageddevicereportedapp.md
         - name: Media content rating Australia
@@ -4696,6 +4740,8 @@
             href: api/intune-deviceconfig-softwareupdatestatussummary-get.md
           - name: Update
             href: api/intune-deviceconfig-softwareupdatestatussummary-update.md
+        - name: Specified captive network plugins
+          href: resources/intune-deviceconfig-specifiedcaptivenetworkplugins.md
         - name: State management setting
           href: resources/intune-deviceconfig-statemanagementsetting.md
         - name: Subject alternative name type
@@ -4779,12 +4825,16 @@
           href: resources/intune-deviceconfig-vpnserver.md
         - name: VPN server certificate type
           href: resources/intune-deviceconfig-vpnservercertificatetype.md
+        - name: VPN service exception action
+          href: resources/intune-deviceconfig-vpnserviceexceptionaction.md
         - name: VPN traffic rule
           href: resources/intune-deviceconfig-vpntrafficrule.md
         - name: VPN traffic rule app type
           href: resources/intune-deviceconfig-vpntrafficruleapptype.md
         - name: VPN traffic rule routing policy type
           href: resources/intune-deviceconfig-vpntrafficruleroutingpolicytype.md
+        - name: VPN tunnel configuration type
+          href: resources/intune-deviceconfig-vpntunnelconfigurationtype.md
         - name: Web browser cookie settings
           href: resources/intune-deviceconfig-webbrowsercookiesettings.md
         - name: Weekly schedule
@@ -5526,6 +5576,8 @@
             href: api/intune-fencing-circulargeofencemanagementcondition-delete.md
           - name: Update
             href: api/intune-fencing-circulargeofencemanagementcondition-update.md
+        - name: Co management eligible type
+          href: resources/intune-devices-comanagementeligibletype.md
         - name: Compliance state
           href: resources/intune-devices-compliancestate.md
         - name: Configuration manager action
@@ -5845,6 +5897,8 @@
             href: api/intune-deviceintent-devicemanagementintentsettingcategory-delete.md
           - name: Update
             href: api/intune-deviceintent-devicemanagementintentsettingcategory-update.md
+        - name: Device management intent setting secret constraint
+          href: resources/intune-deviceintent-devicemanagementintentsettingsecretconstraint.md
         - name: Device management intent user state
           href: resources/intune-deviceintent-devicemanagementintentuserstate.md
           items:
@@ -5924,6 +5978,8 @@
             href: api/intune-devices-devicemanagementscriptuserstate-delete.md
           - name: Update
             href: api/intune-devices-devicemanagementscriptuserstate-update.md
+        - name: Device management setting app constraint
+          href: resources/intune-deviceintent-devicemanagementsettingappconstraint.md
         - name: Device management setting boolean constraint
           href: resources/intune-deviceintent-devicemanagementsettingbooleanconstraint.md
         - name: Device management setting category
@@ -5939,6 +5995,8 @@
             href: api/intune-deviceintent-devicemanagementsettingcategory-delete.md
           - name: Update
             href: api/intune-deviceintent-devicemanagementsettingcategory-update.md
+        - name: Device management setting collection constraint
+          href: resources/intune-deviceintent-devicemanagementsettingcollectionconstraint.md
         - name: Device management setting comparison
           href: resources/intune-deviceintent-devicemanagementsettingcomparison.md
         - name: Device management setting definition
@@ -5956,6 +6014,8 @@
             href: api/intune-deviceintent-devicemanagementsettingdefinition-update.md
         - name: Device management setting dependency
           href: resources/intune-deviceintent-devicemanagementsettingdependency.md
+        - name: Device management setting enrollment type constraint
+          href: resources/intune-deviceintent-devicemanagementsettingenrollmenttypeconstraint.md
         - name: Device management setting file constraint
           href: resources/intune-deviceintent-devicemanagementsettingfileconstraint.md
         - name: Device management setting instance
@@ -5971,6 +6031,8 @@
           href: resources/intune-deviceintent-devicemanagementsettingprofileconstraint.md
         - name: Device management setting regex constraint
           href: resources/intune-deviceintent-devicemanagementsettingregexconstraint.md
+        - name: Device management setting required constraint
+          href: resources/intune-deviceintent-devicemanagementsettingrequiredconstraint.md
         - name: Device management setting string length constraint
           href: resources/intune-deviceintent-devicemanagementsettingstringlengthconstraint.md
         - name: Device management setting xml constraint
@@ -6060,6 +6122,8 @@
             href: api/intune-devices-deviceshellscript-delete.md
           - name: Update
             href: api/intune-devices-deviceshellscript-update.md
+          - name: assign action
+            href: api/intune-devices-deviceshellscript-assign.md
         - name: Disk type
           href: resources/intune-devices-disktype.md
         - name: Embedded SIM activation code
