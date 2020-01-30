@@ -58,7 +58,7 @@ The following resources currently provide a `Retry-After` header:
 For a broader discussion of throttling on the Microsoft Cloud, see [Throttling Pattern](https://msdn.microsoft.com/library/office/dn589798.aspx).
 
 > [!NOTE]
-> If no `Retry-After` header is provided by the response, it is recommended to implement an exponential backoff retry policy. You additionally can implement [more advanced patterns](https://docs.microsoft.com/en-us/azure/architecture/patterns/category/resiliency) when building large scale applications.  
+> If no `Retry-After` header is provided by the response, it is recommended to implement an exponential backoff retry policy. You additionally can implement [more advanced patterns](https://docs.microsoft.com/azure/architecture/patterns/category/resiliency) when building large scale applications.  
 
 > [!NOTE]
 > The Microsoft Graph SDK's already implement handlers that rely on the `Retry-After` header or default to an exponential backoff retry policy.
