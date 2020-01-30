@@ -160,6 +160,10 @@ This tells you that the **skills** property is not supported for delta query on 
 
 Navigation properties are not supported. For example, you cannot track changes to the users collection that would include changes to their **photo** property; **photo** is a navigation property stored outside of the user entity, and changes to it do not cause the user object to be included in the delta response.
 
+#### Processing Delays
+
+Developers should expect varying delays between the time a change is made in the interface or via APIs and the time this change is reflected by the delta query.
+
 ## Prerequisites
 
 The same [permissions](./permissions-reference.md) that are required to read a specific resource are also required to perform delta query on that resource.
