@@ -269,6 +269,7 @@ The following code samples are available on GitHub.
 - [Get subscription](/graph/api/subscription-get?view=graph-rest-1.0)
 - [Create subscription](/graph/api/subscription-post-subscriptions?view=graph-rest-1.0)
 - [Change notifications tutorial](/graph/tutorials/change-notifications)
+- [Lifecycle notifications (preview)](/graph/concepts/webhooks-outlook-authz.md)
 
 [contact]: /graph/api/resources/contact?view=graph-rest-1.0
 [conversation]: /graph/api/resources/conversation?view=graph-rest-1.0
