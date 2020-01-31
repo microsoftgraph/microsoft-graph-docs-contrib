@@ -13,7 +13,7 @@ doc_type: apiPageType
 
 Add a member to an Office 365 group or security group through the **members** navigation property.
 
-You can add users or other groups. 
+You can add users, service principals or other groups. 
 
 > [!Important]
 > You can add only users to Office 365 groups.

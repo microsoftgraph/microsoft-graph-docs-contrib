@@ -8,17 +8,16 @@ doc_type: apiPageType
 ---
 
 # List members
-Get a list of the group's direct members. A group can have users, organizational contacts, and other groups as members.
-This operation is not transitive.
+Get a list of the group's direct members. A group can have users, organizational contacts, service principals, and other groups as members. This operation is not transitive.
 
 ## Permissions
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
 
 |Permission type      | Permissions (from least to most privileged)              |
 |:--------------------|:---------------------------------------------------------|
-|Delegated (work or school account) | User.ReadBasic.All, User.Read.All, Group.Read.All, Directory.Read.All  |
+|Delegated (work or school account) | User.ReadBasic.All, User.Read.All, Group.Read.All, Application.Read.All, Directory.Read.All  |
 |Delegated (personal Microsoft account) | Not supported.    |
-|Application | User.Read.All, Group.Read.All, Directory.Read.All |
+|Application | User.Read.All, Group.Read.All, Application.Read.All, Directory.Read.All |
 
 ## HTTP request
 <!-- { "blockType": "ignored" } -->
