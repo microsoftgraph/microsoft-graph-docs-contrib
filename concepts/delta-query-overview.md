@@ -89,6 +89,8 @@ Possible @removed reasons can be *changed* or *deleted*.
 
 The `@removed` object can be returned in the initial delta query response and in tracked (deltaLink) responses. Clients using delta query requests should be designed to handle these objects in the responses.
 
+>**Note:** It's possible that a single entity will be contained multiple times in the response, if that entity was changed multiple times and under certain conditions. Delta queries enable your application to list all the changes, but can't ensure that entities are unified in a single response.
+
 ## Supported resources
 
 Delta query is currently supported for the following resources.
