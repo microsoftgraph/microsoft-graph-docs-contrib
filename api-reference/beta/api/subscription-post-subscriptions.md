@@ -22,9 +22,9 @@ Creating a subscription requires read permission to the resource. For example, t
 | Supported resource | Delegated (work or school account) | Delegated (personal Microsoft account) | Application |
 |:-----|:-----|:-----|:-----|
 |[chatMessage](../resources/chatmessage.md) (/teams/{id}/channels/{id}/messages) | Not supported | Not supported | ChannelMessage.Read.All  |
-|[chatMessage](../resources/chatmessage.md) (/teams/allMessages) | Not supported | Not supported | ChannelMessage.Read.All  |
+|[chatMessage](../resources/chatmessage.md) (/teams/allMessages -- all channel messages in organization) | Not supported | Not supported | ChannelMessage.Read.All  |
 |[chatMessage](../resources/chatmessage.md) (/chats/{id}/messages) | Not supported | Not supported | Chat.Read.All  |
-|[chatMessage](../resources/chatmessage.md) (/chats/allMessages) | Not supported | Not supported | Chat.Read.All  |
+|[chatMessage](../resources/chatmessage.md) (/chats/allMessages -- all chat messages in organization) | Not supported | Not supported | Chat.Read.All  |
 |[contact](../resources/contact.md) | Contacts.Read | Contacts.Read | Contacts.Read |
 |[driveItem](../resources/driveitem.md) (user's personal OneDrive) | Not supported | Files.ReadWrite | Not supported |
 |[driveItem](../resources/driveitem.md) (OneDrive for Business) | Files.ReadWrite.All | Not supported | Files.ReadWrite.All |
@@ -35,7 +35,9 @@ Creating a subscription requires read permission to the resource. For example, t
 |[security alert](../resources/alert.md) | SecurityEvents.ReadWrite.All | Not supported | SecurityEvents.ReadWrite.All |
 |[user](../resources/user.md) | User.Read.All | User.Read.All | User.Read.All |
 
-> **Note:** chatMessage subscriptions require [encryption](/graph/webhooks-with-resource-data). Subscription creation will fail if [encryptionCertificate](../resources/subscription.md) is not specified. Before creating a chatMessage subscription, you must request access, see [Protected APIs in Microsoft Teams](/graph/teams-protected-apis).
+> **Note:** chatMessage subscriptions require [encryption](/graph/webhooks-with-resource-data). Subscription creation will fail if [encryptionCertificate](../resources/subscription.md) is not specified. Before creating a chatMessage subscription, you must request access, see [Protected APIs in Microsoft Teams](/graph/teams-protected-apis). 
+
+> **Note:** /teams/allMessages and /chats/allMessages are currently in preview. During preview you may use this API without fees, subject to the [Microsoft APIs Terms of Use](https://docs.microsoft.com/legal/microsoft-apis/terms-of-use?context=graph/context). However, users of apps using the API may be required to have subscriptions to specific Microsoft 365 offerings. Upon general availability Microsoft may require you or your customers to pay additional fees based on the amount of data accessed through the API.
 
 > **Note:** Additional limitations apply for subscriptions on OneDrive and Outlook items. The limitations apply to creating as well as managing (getting, updating, and deleting) subscriptions.
 
