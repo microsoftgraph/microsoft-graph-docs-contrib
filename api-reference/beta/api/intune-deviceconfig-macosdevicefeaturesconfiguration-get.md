@@ -63,7 +63,7 @@ Here is an example of the response. Note: The response object shown here may be 
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 2703
+Content-Length: 2815
 
 {
   "value": {
@@ -141,6 +141,9 @@ Content-Length: 2703
     ],
     "singleSignOnExtension": {
       "@odata.type": "microsoft.graph.singleSignOnExtension"
+    },
+    "macOSSingleSignOnExtension": {
+      "@odata.type": "microsoft.graph.macOSSingleSignOnExtension"
     }
   }
 }
