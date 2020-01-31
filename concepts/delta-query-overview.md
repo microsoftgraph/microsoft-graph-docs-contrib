@@ -162,7 +162,7 @@ Navigation properties are not supported. For example, you cannot track changes t
 
 #### National clouds
 
-Delta queries are available for customers hosted on the public cloud and the Chinese national cloud only.
+Delta queries are available for customers hosted on the public cloud and Microsoft Graph China operated by 21Vianet only.
 
 ## Prerequisites
 
