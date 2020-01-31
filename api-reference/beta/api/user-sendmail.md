@@ -247,6 +247,57 @@ Here is an example of the response.
 HTTP/1.1 202 Accepted
 ```
 
+##### Request 4
+
+The next example creates a message with a file attachment and sends the message.
+
+<!-- {
+  "blockType": "request",
+  "name": "user_sendmail_with_attachment"
+}-->
+
+```http
+POST https://graph.microsoft.com/beta/me/sendMail
+Content-type: application/json
+
+{
+  "message": {
+    "subject": "Meet for lunch?",
+    "body": {
+      "contentType": "Text",
+      "content": "The new cafeteria is open."
+    },
+    "toRecipients": [
+      {
+        "emailAddress": {
+          "address": "meganb@contoso.onmicrosoft.com"
+        }
+      }
+    ],
+    "attachments": [
+      {
+        "@odata.type": "#microsoft.graph.fileAttachment",
+        "name": "attachment.txt",
+        "contentType": "text/plain",
+        "contentBytes": "SGVsbG8gV29ybGQh"
+      }
+    ]
+  }
+}
+```
+
+##### Response 4
+
+Here is an example of the response.
+<!-- {
+  "blockType": "response",
+  "truncated": true
+} -->
+
+```http
+HTTP/1.1 202 Accepted
+```
+
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2015-10-25 14:57:30 UTC -->
 <!--

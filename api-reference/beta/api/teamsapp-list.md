@@ -18,8 +18,6 @@ This includes apps from the Microsoft Teams store, as well as apps from your org
 
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions_reference).
 
-> **Note:** Only global administrators can call this API.
-
 | Permission Type                        | Permissions (from least to most privileged) |
 |:---------------------------------------|:------------------------------------|
 | Delegated (work or school account)     | AppCatalog.ReadWrite.All            |

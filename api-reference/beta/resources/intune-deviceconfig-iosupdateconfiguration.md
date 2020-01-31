@@ -44,6 +44,7 @@ Inherits from [deviceConfiguration](../resources/intune-shared-deviceconfigurati
 |isEnabled|Boolean|Is setting enabled in UI|
 |activeHoursStart|TimeOfDay|Active Hours Start (active hours mean the time window when updates install should not happen)|
 |activeHoursEnd|TimeOfDay|Active Hours End (active hours mean the time window when updates install should not happen)|
+|desiredOsVersion|String|If left unspecified, devices will update to the latest version of the OS.|
 |scheduledInstallDays|[dayOfWeek](../resources/intune-deviceconfig-dayofweek.md) collection|Days in week for which active hours are configured. This collection can contain a maximum of 7 elements.|
 |utcTimeOffsetInMinutes|Int32|UTC Time Offset indicated in minutes|
 |enforcedSoftwareUpdateDelayInDays|Int32|Days before software updates are visible to iOS devices ranging from 0 to 90 inclusive|
@@ -104,6 +105,7 @@ Here is a JSON representation of the resource.
   "isEnabled": true,
   "activeHoursStart": "String (time of day)",
   "activeHoursEnd": "String (time of day)",
+  "desiredOsVersion": "String",
   "scheduledInstallDays": [
     "String"
   ],
