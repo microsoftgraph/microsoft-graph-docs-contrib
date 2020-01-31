@@ -20,6 +20,7 @@ Not yet documented
 |:---|:---|:---|
 |windowsPc|0|Windows PC|
 |surfaceHub2|1|Surface Hub 2|
+|holoLens|2|HoloLens|
 
 
 

@@ -216,6 +216,7 @@ Inherits from [deviceConfiguration](../resources/intune-shared-deviceconfigurati
 |findMyDeviceInFindMyAppBlocked|Boolean|Indicates whether or not to block Find My Device when the device is supervised (iOS 13 or later).|
 |findMyFriendsInFindMyAppBlocked|Boolean|Indicates whether or not to block Find My Friends when the device is supervised (iOS 13 or later).|
 |iTunesBlocked|Boolean|Indicates whether or not to block the iTunes app. Requires a supervised device for iOS 13 and later.|
+|kioskModeAppType|[iosKioskModeAppType](../resources/intune-deviceconfig-ioskioskmodeapptype.md)|Type of app to run in kiosk mode. Possible values are: `notConfigured`, `appStoreApp`, `managedApp`, `builtInApp`.|
 
 ## Relationships
 |Relationship|Type|Description|
@@ -525,7 +526,8 @@ Here is a JSON representation of the resource.
   "continuousPathKeyboardBlocked": true,
   "findMyDeviceInFindMyAppBlocked": true,
   "findMyFriendsInFindMyAppBlocked": true,
-  "iTunesBlocked": true
+  "iTunesBlocked": true,
+  "kioskModeAppType": "String"
 }
 ```
 

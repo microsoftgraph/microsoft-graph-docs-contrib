@@ -73,7 +73,7 @@ Here is an example of the request.
 ``` http
 POST https://graph.microsoft.com/beta/deviceManagement/deviceEnrollmentConfigurations
 Content-type: application/json
-Content-length: 2231
+Content-length: 2763
 
 {
   "@odata.type": "#microsoft.graph.deviceEnrollmentPlatformRestrictionsConfiguration",
@@ -86,49 +86,70 @@ Content-length: 2231
     "platformBlocked": true,
     "personalDeviceEnrollmentBlocked": true,
     "osMinimumVersion": "Os Minimum Version value",
-    "osMaximumVersion": "Os Maximum Version value"
+    "osMaximumVersion": "Os Maximum Version value",
+    "blockedManufacturers": [
+      "Blocked Manufacturers value"
+    ]
   },
   "windowsRestriction": {
     "@odata.type": "microsoft.graph.deviceEnrollmentPlatformRestriction",
     "platformBlocked": true,
     "personalDeviceEnrollmentBlocked": true,
     "osMinimumVersion": "Os Minimum Version value",
-    "osMaximumVersion": "Os Maximum Version value"
+    "osMaximumVersion": "Os Maximum Version value",
+    "blockedManufacturers": [
+      "Blocked Manufacturers value"
+    ]
   },
   "windowsMobileRestriction": {
     "@odata.type": "microsoft.graph.deviceEnrollmentPlatformRestriction",
     "platformBlocked": true,
     "personalDeviceEnrollmentBlocked": true,
     "osMinimumVersion": "Os Minimum Version value",
-    "osMaximumVersion": "Os Maximum Version value"
+    "osMaximumVersion": "Os Maximum Version value",
+    "blockedManufacturers": [
+      "Blocked Manufacturers value"
+    ]
   },
   "androidRestriction": {
     "@odata.type": "microsoft.graph.deviceEnrollmentPlatformRestriction",
     "platformBlocked": true,
     "personalDeviceEnrollmentBlocked": true,
     "osMinimumVersion": "Os Minimum Version value",
-    "osMaximumVersion": "Os Maximum Version value"
+    "osMaximumVersion": "Os Maximum Version value",
+    "blockedManufacturers": [
+      "Blocked Manufacturers value"
+    ]
   },
   "androidForWorkRestriction": {
     "@odata.type": "microsoft.graph.deviceEnrollmentPlatformRestriction",
     "platformBlocked": true,
     "personalDeviceEnrollmentBlocked": true,
     "osMinimumVersion": "Os Minimum Version value",
-    "osMaximumVersion": "Os Maximum Version value"
+    "osMaximumVersion": "Os Maximum Version value",
+    "blockedManufacturers": [
+      "Blocked Manufacturers value"
+    ]
   },
   "macRestriction": {
     "@odata.type": "microsoft.graph.deviceEnrollmentPlatformRestriction",
     "platformBlocked": true,
     "personalDeviceEnrollmentBlocked": true,
     "osMinimumVersion": "Os Minimum Version value",
-    "osMaximumVersion": "Os Maximum Version value"
+    "osMaximumVersion": "Os Maximum Version value",
+    "blockedManufacturers": [
+      "Blocked Manufacturers value"
+    ]
   },
   "macOSRestriction": {
     "@odata.type": "microsoft.graph.deviceEnrollmentPlatformRestriction",
     "platformBlocked": true,
     "personalDeviceEnrollmentBlocked": true,
     "osMinimumVersion": "Os Minimum Version value",
-    "osMaximumVersion": "Os Maximum Version value"
+    "osMaximumVersion": "Os Maximum Version value",
+    "blockedManufacturers": [
+      "Blocked Manufacturers value"
+    ]
   }
 }
 ```
@@ -138,7 +159,7 @@ Here is an example of the response. Note: The response object shown here may be 
 ``` http
 HTTP/1.1 201 Created
 Content-Type: application/json
-Content-Length: 2403
+Content-Length: 2935
 
 {
   "@odata.type": "#microsoft.graph.deviceEnrollmentPlatformRestrictionsConfiguration",
@@ -154,49 +175,70 @@ Content-Length: 2403
     "platformBlocked": true,
     "personalDeviceEnrollmentBlocked": true,
     "osMinimumVersion": "Os Minimum Version value",
-    "osMaximumVersion": "Os Maximum Version value"
+    "osMaximumVersion": "Os Maximum Version value",
+    "blockedManufacturers": [
+      "Blocked Manufacturers value"
+    ]
   },
   "windowsRestriction": {
     "@odata.type": "microsoft.graph.deviceEnrollmentPlatformRestriction",
     "platformBlocked": true,
     "personalDeviceEnrollmentBlocked": true,
     "osMinimumVersion": "Os Minimum Version value",
-    "osMaximumVersion": "Os Maximum Version value"
+    "osMaximumVersion": "Os Maximum Version value",
+    "blockedManufacturers": [
+      "Blocked Manufacturers value"
+    ]
   },
   "windowsMobileRestriction": {
     "@odata.type": "microsoft.graph.deviceEnrollmentPlatformRestriction",
     "platformBlocked": true,
     "personalDeviceEnrollmentBlocked": true,
     "osMinimumVersion": "Os Minimum Version value",
-    "osMaximumVersion": "Os Maximum Version value"
+    "osMaximumVersion": "Os Maximum Version value",
+    "blockedManufacturers": [
+      "Blocked Manufacturers value"
+    ]
   },
   "androidRestriction": {
     "@odata.type": "microsoft.graph.deviceEnrollmentPlatformRestriction",
     "platformBlocked": true,
     "personalDeviceEnrollmentBlocked": true,
     "osMinimumVersion": "Os Minimum Version value",
-    "osMaximumVersion": "Os Maximum Version value"
+    "osMaximumVersion": "Os Maximum Version value",
+    "blockedManufacturers": [
+      "Blocked Manufacturers value"
+    ]
   },
   "androidForWorkRestriction": {
     "@odata.type": "microsoft.graph.deviceEnrollmentPlatformRestriction",
     "platformBlocked": true,
     "personalDeviceEnrollmentBlocked": true,
     "osMinimumVersion": "Os Minimum Version value",
-    "osMaximumVersion": "Os Maximum Version value"
+    "osMaximumVersion": "Os Maximum Version value",
+    "blockedManufacturers": [
+      "Blocked Manufacturers value"
+    ]
   },
   "macRestriction": {
     "@odata.type": "microsoft.graph.deviceEnrollmentPlatformRestriction",
     "platformBlocked": true,
     "personalDeviceEnrollmentBlocked": true,
     "osMinimumVersion": "Os Minimum Version value",
-    "osMaximumVersion": "Os Maximum Version value"
+    "osMaximumVersion": "Os Maximum Version value",
+    "blockedManufacturers": [
+      "Blocked Manufacturers value"
+    ]
   },
   "macOSRestriction": {
     "@odata.type": "microsoft.graph.deviceEnrollmentPlatformRestriction",
     "platformBlocked": true,
     "personalDeviceEnrollmentBlocked": true,
     "osMinimumVersion": "Os Minimum Version value",
-    "osMaximumVersion": "Os Maximum Version value"
+    "osMaximumVersion": "Os Maximum Version value",
+    "blockedManufacturers": [
+      "Blocked Manufacturers value"
+    ]
   }
 }
 ```
