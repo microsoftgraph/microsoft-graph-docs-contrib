@@ -33,6 +33,8 @@ When creating a subscription, you can specify a separate notification endpoint u
 
 > **Note:** The **lifecycleNotificationUrl** property can only be set or read using Microsoft Graph beta APIs. However, subscriptions created using beta APIs are stored in the same production environment as those created using v1.0, so you can implement the new Outlook flow in addition to your subscriptions creating using v1.0 APIs.
 
+> Subscriptions created via the v1.0 APIs will receive lifecycle notifications. 
+
 ### Subscription request example
 
 ```http
