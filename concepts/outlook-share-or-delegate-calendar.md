@@ -14,12 +14,14 @@ The owner can also delegate another user to manage meetings in the owner's _prim
 
 Before calendar sharing or delegation can take effect, the owner sends a sharee or delegate an invitation, and the sharee or delegate accepts the invitation, or, explicitly adds the shared or delegated calendar for access. The invitation and adding a shared or delegated calendar occur in an Outlook client. 
 
+After sharing or delegation is set up in Outlook, apps can then use the Microsoft Graph API to manage the sharing and delegation.
+
 The rest of this article is based on the following example scenario:
 
 - Alex Wilber has delegated Megan Bowen to his primary calendar, and also permitted Megan to view private events in that calendar. 
 - Alex shared a "Kids parties" calendar with Adele Vance and Megan Bowen, and gave both Adele and Megan `read` permissions to all the details of non-private events on the "Kids parties" calendar, and free/busy status for private events. 
 
-After the sharing and delegation take effect, apps can then use the Microsoft Graph API to do the following tasks with the shared or delegated calendar:
+This article describes programmatically carrying out the following tasks with a shared or delegated calendar:
 
 - [Get calendar information about sharees, delegates, and allowed permissions, and update individual permissions](#get-calendar-information-about-sharees-and-delegates-and-update-individual-permissions).
 - [Get the properties that describe the sharing or delegation of the calendar](#get-properties-of-a-shared-or-delegated-calendar).
@@ -27,9 +29,9 @@ After the sharing and delegation take effect, apps can then use the Microsoft Gr
 - [Delete a sharee or delegate of a calendar](#delete-a-sharee-or-delegate-of-a-calendar).
 
 > [!NOTE]
-> The preceding tasks use API for calendar sharing and delegation that is [in preview and available only in the beta version](versioning-and-support.md#beta-version), with the exception of the following [calendar](/graph/api/resources/calendar?view=graph-rest-1.0) properties: **canEdit**, **canShare**, **canViewPrivateItems**, and **owner**.
+> The preceding tasks use API for calendar sharing and delegation that is [in preview and available only in the beta version](versioning-and-support.md#beta-version), with the exception of these four [calendar](/graph/api/resources/calendar?view=graph-rest-1.0) properties: **canEdit**, **canShare**, **canViewPrivateItems**, and **owner**.
 
-In a shared or delegated calendar, apps can also do the following:
+Apps can also do the following using API that is generally available:
 
 - [Get shared or delegated Outlook calendar or its events](outlook-get-shared-events-calendars.md)
 - [Create Outlook events in a shared or delegated calendar](outlook-create-event-in-shared-delegated-calendar.md)
