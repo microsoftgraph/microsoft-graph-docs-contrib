@@ -15,7 +15,6 @@ Represents an application. Any application that outsources authentication to Azu
 
 | Method | Return Type | Description |
 |:---------------|:--------|:----------|
-|**Application management**| | |
 |[List applications](../api/application-list.md) | [application](application.md) collection | Retrieve the list of applications in the organization. |
 |[Create application](../api/application-post-applications.md) | [application](application.md) | Creates (registers) a new application.|
 |[Get application](../api/application-get.md) | [application](application.md) |Read properties and relationships of application object.|
