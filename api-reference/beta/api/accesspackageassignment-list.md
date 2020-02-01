@@ -33,7 +33,8 @@ GET /identityGovernance/entitlementManagement/accessPackageAssignments
 
 ## Optional query parameters
 
-This method supports some of the OData query parameters to help customize the response. For example, to retrieve only Delivered assignments, you can include a query `$filter=assignmentState eq 'Delivered'`.
+This method supports some of the OData query parameters to help customize the response. For example, to retrieve only delivered assignments, you can include a query `$filter=assignmentState eq 'Delivered'`. To retrieve only assignments for a particular user, you can include a query with assignments targeting the object ID for of that user `$filter=target/objectid+eq+'7deff43e-1f17-44ef-9e5f-d516b0ba11d4'`.
+
 For general information, see [OData query parameters](/graph/query-parameters).
 
 ## Request headers
@@ -55,14 +56,30 @@ If successful, this method returns a `200 OK` response code and a collection of 
 ### Request
 
 The following is an example of the request.
+
+# [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "get_accesspackageassignments"
 }-->
 
-```http
+```msgraph-interactive
 GET https://graph.microsoft.com/beta/identityGovernance/entitlementManagement/accessPackageAssignments
 ```
+# [C#](#tab/csharp)
+[!INCLUDE [sample-code](../includes/snippets/csharp/get-accesspackageassignments-csharp-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [JavaScript](#tab/javascript)
+[!INCLUDE [sample-code](../includes/snippets/javascript/get-accesspackageassignments-javascript-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Objective-C](#tab/objc)
+[!INCLUDE [sample-code](../includes/snippets/objc/get-accesspackageassignments-objc-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+---
+
 
 ### Response
 

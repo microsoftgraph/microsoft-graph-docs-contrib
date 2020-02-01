@@ -3,7 +3,7 @@ title: "externalConnection resource type"
 description: "A connection to Microsoft Search from an external source."
 localization_priority: Normal
 author: "snlraju-msft"
-ms.prod: ""
+ms.prod: "search"
 doc_type: "resourcePageType"
 ---
 
@@ -12,6 +12,8 @@ doc_type: "resourcePageType"
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 A connection to Microsoft Search from an external source.
+
+[!INCLUDE [search-api-preview](../../includes/search-api-preview-signup.md)]
 
 ## Methods
 

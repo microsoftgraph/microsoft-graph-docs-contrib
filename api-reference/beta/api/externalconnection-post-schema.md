@@ -3,7 +3,7 @@ title: "Create schema"
 description: "Create the schema for a Microsoft Search connection."
 localization_priority: Normal
 author: "snlraju-msft"
-ms.prod: ""
+ms.prod: "search"
 doc_type: "apiPageType"
 ---
 
@@ -13,7 +13,9 @@ doc_type: "apiPageType"
 
 Create the schema for a Microsoft Search [connection](../resources/externalconnection.md).
 
-There are two schema types supported: custom items, and files.
+Two schema types are supported: custom items, and files.
+
+[!INCLUDE [search-api-preview](../../includes/search-api-preview-signup.md)]
 
 ## Permissions
 
@@ -56,7 +58,7 @@ With the `Prefer: respond-async` header included in the request, if successful, 
 Without the `Prefer: respond-async` header included in the request, if successful, this method returns a `201 Created` response code and a new [schema](../resources/schema.md) object in the response body.
 
 > [!NOTE]
-> Creating a schema is a long-running process prone to gateway timeouts. Using the `Prefer: respond-async` is recommended to avoid timeout errors.
+> Creating a schema is a long-running process prone to gateway timeouts. We recommend using the `Prefer: respond-async` header to avoid timeout errors.
 
 ## Examples
 
@@ -65,6 +67,8 @@ Without the `Prefer: respond-async` header included in the request, if successfu
 #### Request
 
 The following is an example of the request.
+
+# [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "create_schema_from_connection_async"
@@ -98,6 +102,20 @@ Prefer: respond-async
   ]
 }
 ```
+# [C#](#tab/csharp)
+[!INCLUDE [sample-code](../includes/snippets/csharp/create-schema-from-connection-async-csharp-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [JavaScript](#tab/javascript)
+[!INCLUDE [sample-code](../includes/snippets/javascript/create-schema-from-connection-async-javascript-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Objective-C](#tab/objc)
+[!INCLUDE [sample-code](../includes/snippets/objc/create-schema-from-connection-async-objc-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+---
+
 
 <!-- markdownlint-disable MD024 -->
 #### Response
@@ -122,6 +140,8 @@ Location: https://graph.microsoft.com/beta/external/connections/contosohr/operat
 <!-- markdownlint-enable MD024 -->
 
 The following is an example of the request.
+
+# [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "create_schema_from_connection"
@@ -135,6 +155,20 @@ Content-type: application/json
   "baseType": "microsoft.graph.externalFile"
 }
 ```
+# [C#](#tab/csharp)
+[!INCLUDE [sample-code](../includes/snippets/csharp/create-schema-from-connection-csharp-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [JavaScript](#tab/javascript)
+[!INCLUDE [sample-code](../includes/snippets/javascript/create-schema-from-connection-javascript-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Objective-C](#tab/objc)
+[!INCLUDE [sample-code](../includes/snippets/objc/create-schema-from-connection-objc-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+---
+
 
 <!-- markdownlint-disable MD024 -->
 #### Response

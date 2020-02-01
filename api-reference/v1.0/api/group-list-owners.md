@@ -19,6 +19,8 @@ One of the following permissions is required to call this API. To learn more, in
 |Delegated (personal Microsoft account) | Not supported.    |
 |Application | Group.Read.All and User.Read.All, Group.Read.All and User.ReadWrite.All, Group.Read.All and User.Read.All and Application.Read.All |
 
+[!INCLUDE [limited-info](../../includes/limited-info.md)]
+
 ## HTTP request
 <!-- { "blockType": "ignored" } -->
 ```http

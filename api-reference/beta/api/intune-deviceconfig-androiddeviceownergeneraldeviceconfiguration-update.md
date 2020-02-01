@@ -68,11 +68,13 @@ The following table shows the properties that are required when you create the [
 |bluetoothBlockContactSharing|Boolean|Indicates whether or not to block a user from sharing contacts via bluetooth.|
 |cameraBlocked|Boolean|Indicates whether or not to disable the use of the camera.|
 |cellularBlockWiFiTethering|Boolean|Indicates whether or not to block Wi-Fi tethering.|
+|certificateCredentialConfigurationDisabled|Boolean|Indicates whether or not to block users from any certificate credential configuration.|
 |dataRoamingBlocked|Boolean|Indicates whether or not to block a user from data roaming.|
 |dateTimeConfigurationBlocked|Boolean|Indicates whether or not to block the user from manually changing the date or time on the device|
 |factoryResetDeviceAdministratorEmails|String collection|List of Google account emails that will be required to authenticate after a device is factory reset before it can be set up.|
 |factoryResetBlocked|Boolean|Indicates whether or not the factory reset option in settings is disabled.|
 |globalProxy|[androidDeviceOwnerGlobalProxy](../resources/intune-deviceconfig-androiddeviceownerglobalproxy.md)|Proxy is set up directly with host, port and excluded hosts.|
+|googleAccountsBlocked|Boolean|Indicates whether or not google accounts will be blocked.|
 |kioskModeScreenSaverConfigurationEnabled|Boolean|Whether or not to enable screen saver mode or not in Kiosk Mode.|
 |kioskModeScreenSaverImageUrl|String|URL for an image that will be the device's screen saver in Kiosk Mode.|
 |kioskModeScreenSaverDisplayTimeInSeconds|Int32|The number of seconds that the device will display the screen saver for in Kiosk Mode. Valid values 0 to 9999999|
@@ -138,7 +140,7 @@ Here is an example of the request.
 ``` http
 PATCH https://graph.microsoft.com/beta/deviceManagement/deviceConfigurations/{deviceConfigurationId}
 Content-type: application/json
-Content-length: 4285
+Content-length: 4374
 
 {
   "@odata.type": "#microsoft.graph.androidDeviceOwnerGeneralDeviceConfiguration",
@@ -179,6 +181,7 @@ Content-length: 4285
   "bluetoothBlockContactSharing": true,
   "cameraBlocked": true,
   "cellularBlockWiFiTethering": true,
+  "certificateCredentialConfigurationDisabled": true,
   "dataRoamingBlocked": true,
   "dateTimeConfigurationBlocked": true,
   "factoryResetDeviceAdministratorEmails": [
@@ -189,6 +192,7 @@ Content-length: 4285
     "@odata.type": "microsoft.graph.androidDeviceOwnerGlobalProxyAutoConfig",
     "proxyAutoConfigURL": "Proxy Auto Config URL value"
   },
+  "googleAccountsBlocked": true,
   "kioskModeScreenSaverConfigurationEnabled": true,
   "kioskModeScreenSaverImageUrl": "https://example.com/kioskModeScreenSaverImageUrl/",
   "kioskModeScreenSaverDisplayTimeInSeconds": 8,
@@ -261,7 +265,7 @@ Here is an example of the response. Note: The response object shown here may be 
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 4457
+Content-Length: 4546
 
 {
   "@odata.type": "#microsoft.graph.androidDeviceOwnerGeneralDeviceConfiguration",
@@ -305,6 +309,7 @@ Content-Length: 4457
   "bluetoothBlockContactSharing": true,
   "cameraBlocked": true,
   "cellularBlockWiFiTethering": true,
+  "certificateCredentialConfigurationDisabled": true,
   "dataRoamingBlocked": true,
   "dateTimeConfigurationBlocked": true,
   "factoryResetDeviceAdministratorEmails": [
@@ -315,6 +320,7 @@ Content-Length: 4457
     "@odata.type": "microsoft.graph.androidDeviceOwnerGlobalProxyAutoConfig",
     "proxyAutoConfigURL": "Proxy Auto Config URL value"
   },
+  "googleAccountsBlocked": true,
   "kioskModeScreenSaverConfigurationEnabled": true,
   "kioskModeScreenSaverImageUrl": "https://example.com/kioskModeScreenSaverImageUrl/",
   "kioskModeScreenSaverDisplayTimeInSeconds": 8,
@@ -381,7 +387,6 @@ Content-Length: 4457
   "wifiBlockEditPolicyDefinedConfigurations": true
 }
 ```
-
 
 
 

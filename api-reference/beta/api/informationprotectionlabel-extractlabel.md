@@ -36,17 +36,18 @@ POST /informationprotection/policy/labels/extractLabel
 
 ## Request headers
 
-| Name          | Description                    |
-| :------------ | :----------------------------- |
-| Authorization | Bearer {token}. Required.                 |
-| Content-type  | Content-type: application/json. Required. |
+| Name          | Description                                                                                                                                                                       |
+| :------------ | :-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| Authorization | Bearer {token}. Required.                                                                                                                                                         |
+| Content-type  | Content-type: application/json. Required.                                                                                                                                         |
+| User-Agent    | Describes the name and version of the calling application. Details will surface in Azure Information Protection Analytics. Suggested format is ApplicationName/Version. Optional. |
 
 ## Request body
 
 In the request body, provide a JSON object with the following parameters.
 
-| Parameter   | Type                                       | Description                                                                                                                                                                                                   |
-| :---------- | :----------------------------------------- | :------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ |
+| Parameter   | Type                                       | Description                                                                                                                         |
+| :---------- | :----------------------------------------- | :---------------------------------------------------------------------------------------------------------------------------------- |
 | contentInfo | [contentInfo](../resources/contentinfo.md) | Provides details about the content format, content state, and existing [metadata](../resources/keyvaluepair.md) as key/value pairs. |
 
 ## Response
@@ -60,6 +61,8 @@ The following is an example of how to call this API.
 ### Request
 
 The following is an example of the request.
+
+# [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "informationprotectionlabel_extractlabel"
@@ -68,6 +71,7 @@ The following is an example of the request.
 ```http
 POST https://graph.microsoft.com/beta/informationprotection/policy/labels/extractLabel
 Content-type: application/json
+User-agent: ContosoLOBApp/1.0
 
 {
     "contentInfo": {
@@ -118,6 +122,20 @@ Content-type: application/json
     }
 }
 ```
+# [C#](#tab/csharp)
+[!INCLUDE [sample-code](../includes/snippets/csharp/informationprotectionlabel-extractlabel-csharp-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [JavaScript](#tab/javascript)
+[!INCLUDE [sample-code](../includes/snippets/javascript/informationprotectionlabel-extractlabel-javascript-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Objective-C](#tab/objc)
+[!INCLUDE [sample-code](../includes/snippets/objc/informationprotectionlabel-extractlabel-objc-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+---
+
 
 ### Response
 

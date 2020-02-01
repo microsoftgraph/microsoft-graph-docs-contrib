@@ -1,9 +1,9 @@
 ---
 title: "mediaPrompt resource type"
-description: "The mediaPrompt type."
-author: "VinodRavichandran"
+description: "Contains information about the audio file to be played and other additional settings."
+author: "ananmishr"
 localization_priority: Normal
-ms.prod: "microsoft-teams"
+ms.prod: "cloud-communications"
 doc_type: resourcePageType
 ---
 
@@ -11,13 +11,13 @@ doc_type: resourcePageType
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-The mediaPrompt type.
+Contains information about the audio file to be played and other additional settings.
 
 ## Properties
 
 | Property    | Type                      | Description                                                                     |
 | :---------- | :------------------------ | :------------------------------------------------------------------------------ |
-| mediaInfo   | [mediaInfo](mediainfo.md) | The media information                                                           |
+| mediaInfo   | [mediaInfo](mediainfo.md) | The media information.                                                          |
 
 ## JSON representation
 
