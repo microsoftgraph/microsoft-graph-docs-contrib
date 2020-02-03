@@ -1,9 +1,9 @@
 ---
 title: "mediaInfo resource type"
 description: "The media information used in actions for prompts."
-author: "VinodRavichandran"
+author: "ananmishr"
 localization_priority: Normal
-ms.prod: "microsoft-teams"
+ms.prod: "cloud-communications"
 doc_type: resourcePageType
 ---
 

@@ -1,9 +1,9 @@
 ---
 title: "mediaConfig resource type"
-description: "The media configuration used to connect to a call."
-author: "VinodRavichandran"
+description: "An abstract base class that contains the media configuration used to connect to a call."
+author: "ananmishr"
 localization_priority: Normal
-ms.prod: "microsoft-teams"
+ms.prod: "cloud-communications"
 doc_type: resourcePageType
 ---
 
@@ -11,7 +11,7 @@ doc_type: resourcePageType
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-The media configuration used to connect to a call.
+An abstract base class that contains the media configuration used to connect to a call.
 
 ## Properties
 

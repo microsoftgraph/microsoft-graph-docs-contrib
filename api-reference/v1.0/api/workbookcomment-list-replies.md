@@ -55,8 +55,8 @@ The following is an example of the request.
   "name": "get_replies"
 }-->
 
-```http
-GET https://graph.microsoft.com/v1.0/drive/root/workbook/comments/{id}/replies
+```msgraph-interactive
+GET https://graph.microsoft.com/v1.0/drive/items/{id}/workbook/comments/{id}/replies
 ```
 # [C#](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/get-replies-csharp-snippets.md)]

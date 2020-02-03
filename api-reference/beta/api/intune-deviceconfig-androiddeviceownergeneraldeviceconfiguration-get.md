@@ -36,7 +36,7 @@ GET /deviceManagement/deviceConfigurations/{deviceConfigurationId}/microsoft.gra
 ```
 
 ## Optional query parameters
-This method supports the [OData Query Parameters](https://docs.microsoft.com/en-us/graph/query-parameters) to help customize the response.
+This method supports the [OData Query Parameters](/graph/query-parameters) to help customize the response.
 
 ## Request headers
 |Header|Value|
@@ -63,7 +63,7 @@ Here is an example of the response. Note: The response object shown here may be 
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 4536
+Content-Length: 4799
 
 {
   "value": {
@@ -108,12 +108,18 @@ Content-Length: 4536
     "bluetoothBlockContactSharing": true,
     "cameraBlocked": true,
     "cellularBlockWiFiTethering": true,
+    "certificateCredentialConfigurationDisabled": true,
     "dataRoamingBlocked": true,
     "dateTimeConfigurationBlocked": true,
     "factoryResetDeviceAdministratorEmails": [
       "Factory Reset Device Administrator Emails value"
     ],
     "factoryResetBlocked": true,
+    "globalProxy": {
+      "@odata.type": "microsoft.graph.androidDeviceOwnerGlobalProxyAutoConfig",
+      "proxyAutoConfigURL": "Proxy Auto Config URL value"
+    },
+    "googleAccountsBlocked": true,
     "kioskModeScreenSaverConfigurationEnabled": true,
     "kioskModeScreenSaverImageUrl": "https://example.com/kioskModeScreenSaverImageUrl/",
     "kioskModeScreenSaverDisplayTimeInSeconds": 8,
@@ -181,6 +187,7 @@ Content-Length: 4536
   }
 }
 ```
+
 
 
 

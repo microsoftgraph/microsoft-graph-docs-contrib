@@ -1,9 +1,9 @@
 ---
 title: "callRoute resource type"
 description: "The callRoute type."
-author: "VinodRavichandran"
+author: "ananmishr"
 localization_priority: Normal
-ms.prod: "microsoft-teams"
+ms.prod: "cloud-communications"
 doc_type: resourcePageType
 ---
 

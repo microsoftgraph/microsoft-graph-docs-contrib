@@ -1,7 +1,8 @@
 ---
 title: "Set up notifications for changes in user data"
 description: "The Microsoft Graph API uses a webhook mechanism to deliver notifications to clients. A client is a web service that configures its own URL to receive notifications. Client apps use notifications to update their state upon changes."
-author: "piotrci"
+author: "baywet"
+ms.prod: "non-product-specific"
 localization_priority: Priority
 ms.custom: graphiamtop20
 ---
@@ -17,6 +18,10 @@ After Microsoft Graph accepts the subscription request, it pushes notifications 
  
 > [!div class="nextstepaction"]
 > [Build a webhook app with .NET Core](/graph/tutorials/change-notifications)
+
+By default, change notifications do not contain resource data, other than the `id`. If the app requires resource data, it can make calls to Microsoft Graph APIs to get the full resource. This article uses the **user** resource as an example for working with notifications.
+
+An app can also subscribe to change notifications that include resource data, to avoid having to make additonal API calls to access the data. Such apps will need to implement extra code to handle the requirements of such notifications, specifically: responding to subscription lifecycle notifications, validating the authenticity of notifications, and decrypting the resource data. More resource types will support this type of notifications in the future. For details about how to work with these notificatios, see [Set up change notifications that include resource data (preview)](webhooks-with-resource-data.md).
 
 ## Supported resources
 
@@ -49,8 +54,8 @@ Or to the root folder of a SharePoint/OneDrive for Business drive:
 `/drive/root`
 
 Or to a new [Security API](security-concept-overview.md) alert:
-`/security/alerts?$filter=status eq ‘New’`,
-`/security/alerts?$filter=vendorInformation/provider eq ‘ASC’`
+`/security/alerts?$filter=status eq 'newAlert'`,
+`/security/alerts?$filter=vendorInformation/provider eq 'ASC'`
 
 ### Azure AD resource limitations
 
@@ -194,6 +199,7 @@ The notification object has the following properties:
 | changeType | string | The event type that caused the notification. For example, `created` on mail receive, or `updated` on marking a message read. |
 | resource | string | The URI of the resource relative to `https://graph.microsoft.com`. |
 | resourceData | object | The content of this property depends on the type of resource being subscribed to. |
+| tenantId | string | The ID of the tenant the notification originated from. |
 
 For example, for Outlook resources, `resourceData` contains the following fields:
 
@@ -219,6 +225,7 @@ When the user receives an email, Microsoft Graph sends a notification like the f
       "clientState":"secretClientValue",
       "changeType":"created",
       "resource":"users/{user_guid}@<tenant_guid>/messages/{long_id_string}",
+      "tenantId": "84bd8158-6d4d-4958-8b9f-9d6445542f95",
       "resourceData":
       {
         "@odata.type":"#Microsoft.Graph.Message",
@@ -264,6 +271,7 @@ The following code samples are available on GitHub.
 - [Get subscription](/graph/api/subscription-get?view=graph-rest-1.0)
 - [Create subscription](/graph/api/subscription-post-subscriptions?view=graph-rest-1.0)
 - [Change notifications tutorial](/graph/tutorials/change-notifications)
+- [Lifecycle notifications (preview)](/graph/concepts/webhooks-outlook-authz.md)
 
 [contact]: /graph/api/resources/contact?view=graph-rest-1.0
 [conversation]: /graph/api/resources/conversation?view=graph-rest-1.0
