@@ -1639,6 +1639,34 @@ The *CreatedByApp* constraint associated with this permission indicates the serv
 
 ---
 
+## User authentication method permissions (preview)
+
+#### Delegated permissions
+
+|Permission                              |Display String                        |Description        |Admin Consent Required | Microsoft Account supported |
+|:---------------------------------------|:-------------------------------------|:------------------|:----------------------|:----------------------------|
+|_UserAuthenticationMethod.ReadWrite.All_|Manage users' authentication methods  |Allows create/read/update/delete for authentication methods and default method on a user. Users authorized to do so can perform this for many or all users; users without those roles can only perform the action on self. This permission is currently in private preview only and is not yet available for public use.|Yes|No|
+|_UserAuthenticationMethod.ReadWrite_    |Manage own authentication methods     |Allows create/read/update/delete for authentication methods and default method on a user's own methods only. This permission is currently in private preview only and is not yet available for public use.|Yes|No|
+|_UserAuthenticationMethod.Read.All_     |Read users' authentication methods    |Allows read for authentication methods and default method on a user. Administrators with appropriate roles (global administrator, authentication administrator, privileged authentication administrator) can perform this for many or all users; users without those roles can only perform the action on self. This permission is currently in private preview only and is not yet available for public use.|Yes|No|
+|_UserAuthenticationMethod.Read_         |Read own authentication methods       |Allows read of authentication methods and default method on a user's own methods only. This permission is currently in private preview only and is not yet available for public use.|Yes|No|
+
+#### Application permissions
+
+|Permission                              |Display String                        |Description        |Admin Consent Required |
+|:---------------------------------------|:-------------------------------------|:------------------|:----------------------|
+|_UserAuthenticationMethod.ReadWrite.All_|Manage users' authentication methods  |Allows the application to create/read/update/delete for authentication methods and default method on any user. This permission is currently in private preview only and is not yet available for public use.|Yes|
+|_UserAuthenticationMethod.Read.All_     |Read users' authentication methods    |Allows the application to read authentication methods and default method on a user. This permission is currently in private preview only and is not yet available for public use.|Yes|
+
+### Remarks
+
+User Authentication Method permissions are used to manage authentication methods on users. With these permissions, a delegated user or application can register new authentication methods on a user, read the authentication methods the user already has registered, update those authentication methods, and remove them from the user.
+
+With these permissions, all authentication methods can be read and managed on a user. This includes methods used for:
+
+* Primary authentication (e.g. password)
+* Second factor of multi-factor authentication/MFA (e.g. phone numbers)
+* Self-Service Password Reset/SSPR (e.g. email address)
+
 ## Permission scenarios
 
 This section shows some common scenarios that target [user](/graph/api/resources/user?view=graph-rest-1.0) and [group](/graph/api/resources/group?view=graph-rest-1.0) resources in an organization. The tables show the permissions that an app needs to be able to perform specific operations required by the scenario. Note that in some cases the ability of the app to perform specific operations will depend on whether a permission is an application or delegated permission. In the case of delegated permissions, the app's effective permissions will also depend on the privileges of the signed-in user within the organization. For more information, see  [Delegated permissions, Application permissions, and effective permissions](auth/auth-concepts.md#microsoft-graph-permissions).
