@@ -4,55 +4,50 @@ description: "Provides instructions for creating a batch of API requests."
 localization_priority: Normal
 author: DarrelMiller
 ---
+# Request Batching
 
-# Create a batch request
+Microsoft Graph SDKs have a set content classes to simplify how you create batch payloads and parse batch response payloads.
 
-Batching is a way of combining multiple requests to resources in same/different workloads in a single HTTP request. This can be achieved by making a post call with those requests as a JSON payload to \$batch endpoint.
+## Create a batch request
 
-## BatchRequestContent
+[Batching](../json-batching) is a way of combining multiple requests into a single HTTP request. This can be achieved by making a POST call with those requests as a single JSON payload to `\$batch` endpoint.
 
-A component which eases the way of creating batch request payload. This class handles all the batch specific payload construction, we just need to worry about creating the individual requests.
+### BatchRequestContent
 
-## BatchResponseContent
+A component that simplifies creating the batch request payload. This class handles all the batch specific payload construction, you just need to create the individual requests and add them.
+
+### BatchRequestStep
+
+A component that represents a single request within the batch and enables assigning the request a unique identifier and specifying dependencies between requests.
+
+### BatchResponseContent
 
 A component to simplify the processing of batch responses by providing functionalities like getResponses, getResponseById, getResponsesIterator
 
-## BatchRequestStep
-
-
 ## Simple Batching Example
 
+This example shows how to request information about a user and and their calendar events in a single request. First create the `BatchResponseContent` object, then add requests to the content object.  Once all the requests have been added to the batch, you can then `POST` the content object to the `Batch` endpoint.
+
+The `BatchResponseContent` that is returned can then be used to retrieve the individual responses.
 
 # [C#](#tab/CS)
 
 ```csharp
-// Create http GET request.
-HttpRequestMessage httpRequestMessage1 = new HttpRequestMessage(HttpMethod.Get, "https://graph.microsoft.com/v1.0/me/");
+var graphClient = new GraphServiceClient(authProvider);
 
-// Create http POST request.
-String jsonContent = "{" +
-            "\"displayName\": \"My Notebook\"" +
-            "}";
-HttpRequestMessage httpRequestMessage2 = new HttpRequestMessage(HttpMethod.Post, "https://graph.microsoft.com/v1.0/me/onenote/notebooks");
-httpRequestMessage2.Content = new StringContent(jsonContent, Encoding.UTF8, "application/json");
+IUserRequest userRequest = graphClient.Me.Request();
+IUserEventsCollectionRequest eventsRequest = graphClient.Me.Events.Request();
 
-// Create batch request steps with request ids.
-BatchRequestStep requestStep1 = new BatchRequestStep("1", httpRequestMessage1, null);
-BatchRequestStep requestStep2 = new BatchRequestStep("2", httpRequestMessage2, new List<string> { "1" });
-
-// Add batch request steps to BatchRequestContent.
 BatchRequestContent batchRequestContent = new BatchRequestContent();
-batchRequestContent.AddBatchRequestStep(requestStep1);
-batchRequestContent.AddBatchRequestStep(requestStep2);
 
-// Send batch request with BatchRequestContent.
-HttpResponseMessage response = await httpClient.PostAsync("https://graph.microsoft.com/v1.0/$batch", batchRequestContent);
+var userRequestId = batchRequestContent.AddBatchRequestStep(userRequest);
+var eventsRequestId = batchRequestContent.AddBatchRequestStep(eventsRequest);
 
-// Handle http responses using BatchResponseContent.
-BatchResponseContent batchResponseContent = new BatchResponseContent(response);
-Dictionary<string, HttpResponseMessage> responses = await batchResponseContent.GetResponsesAsync();
-HttpResponseMessage httpResponse = await batchResponseContent.GetResponseByIdAsync("1");
-string nextLink = await batchResponseContent.GetNextLinkAsync();
+BatchResponseContent returnedResponse = await graphClient.Batch.Request().PostAsync(batchRequestContent);
+
+// De-serialize response based on known return type
+User user = await returnedResponse.GetResponseByIdAsync<User>(userRequestId);
+UserEventsCollectionResponse events = await returnedResponse.GetResponseByIdAsync<UserEventsCollectionResponse>(eventsRequestId);
 ```
 
 # [TypeScript](#tab/TypeScript)
@@ -61,13 +56,55 @@ string nextLink = await batchResponseContent.GetNextLinkAsync();
 
 ```
 
+# [Java](#tab/Java)
+
+```java
+Request requestGetMe = new Request.Builder().url("https://graph.microsoft.com/v1.0/me/").build();
+List<String> arrayOfDependsOnIdsGetMe = null;
+MSBatchRequestStep stepGetMe = new MSBatchRequestStep("1", requestGetMe, arrayOfDependsOnIdsGetMe);
+
+Request requestGetMePlannerTasks = new Request.Builder().url("https://graph.microsoft.com/v1.0/me/planner/tasks").build();
+List<String> arrayOfDependsOnIdsGetMePlannerTasks = Arrays.asList("1");
+MSBatchRequestStep stepMePlannerTasks = new MSBatchRequestStep("2", requestGetMePlannerTasks, arrayOfDependsOnIdsGetMePlannerTasks);
+
+String body = "{" + 
+		"\"displayName\": \"My Notebook\"" + 
+		"}";
+RequestBody postBody = RequestBody.create(MediaType.parse("application/json"), body);
+Request requestCreateNotebook = new Request
+	.Builder()
+        .addHeader("Content-Type", "application/json")
+	.url("https://graph.microsoft.com/v1.0/me/onenote/notebooks")
+	.post(postBody)
+	.build();
+MSBatchRequestStep stepCreateNotebook = new MSBatchRequestStep("3", requestCreateNotebook, Arrays.asList("2"));
+
+// Create MSBatch Request Content and get content
+List<MSBatchRequestStep> steps = Arrays.asList(stepGetMe, stepMePlannerTasks, stepCreateNotebook);
+MSBatchRequestContent requestContent = new MSBatchRequestContent(steps);
+String content = requestContent.getBatchRequestContent();
+
+// Make call to $batch endpoint
+OkHttpClient client = HttpClients.createDefault(auth);
+Request batchRequest = new Request
+	.Builder()
+	.url("https://graph.microsoft.com/v1.0/$batch")
+	.post(RequestBody.create(MediaType.parse("application/json"), content))
+	.build();
+Response batchResponse = client.newCall(batchRequest).execute();
+
+// Create MSBatch Response Content
+
+MSBatchResponseContent responseContent = new MSBatchResponseContent(batchResponse);
+Response responseGetMe = responseContent.getResponseById("1");
+
+```
 ---
 
 
+### Batches with dependent requests 
 
-
-
-### Update the profile photo and download the uploaded photo with batching - Making serial requests
+In this example we make two requests, but the second request is dependant on the first request completing.
 
 # [C#](#tab/CS)
 
@@ -81,7 +118,9 @@ string nextLink = await batchResponseContent.GetNextLinkAsync();
 const serialBatching = async function(elem) {
 	try {
 		let file = elem.files[0];
-		let uploadProfilePhotoRequest = new Request("/me/photo/$value", {
+
+        // Upload file
+        let uploadProfilePhotoRequest = new Request("/me/photo/$value", {
 			method: "PUT",
 			headers: {
 				"Content-type": file.type,
@@ -94,13 +133,13 @@ const serialBatching = async function(elem) {
 			request: uploadProfilePhotoRequest,
 		};
 
+        // Download file
 		let downloadProfilePhotoRequest = new Request("/me/photo/$value", {
 			method: "GET",
 		});
 
-		let downloadId = "2";
 		let downloadProfilePhotoStep: BatchRequestStep = {
-			id: downloadId,
+			id: "2",
 			request: downloadProfilePhotoRequest,
 			// Adding dependsOn makes this request wait until the dependency finishes
 			// This download request waits until the upload request completes
