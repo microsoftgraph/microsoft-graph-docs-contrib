@@ -53,6 +53,10 @@ This resource supports:
 |[Update setting](../api/groupsetting-update.md) | [groupSetting](groupsetting.md) | Update a setting object. |
 |[Delete setting](../api/groupsetting-delete.md) | None | Delete a setting object. |
 |[validateProperties](../api/group-validateproperties.md)|JSON| Validate that an Office 365 group's display name or mail nickname complies with naming policies. |
+|**App role assignments**| | |
+|[List appRoleAssignments](../api/approleassignment-list.md) |[appRoleAssignment](approleassignment.md) collection| Get the apps and app roles which this group has been assigned.|
+|[Add appRoleAssignment](../api/approleassignment-post.md) |[appRoleAssignment](approleassignment.md)| Assign an app role to this group.|]
+|[Remove appRoleAssignment](../api/approleassignment-delete.md) | None. | Remove an app role assignment from this group.|
 |**Calendar**| | |
 |[Create event](../api/group-post-events.md) |[event](event.md)| Create a new event by posting to the events collection.|
 |[Get event](../api/group-get-event.md) |[event](event.md)|Read properties of an event object.|

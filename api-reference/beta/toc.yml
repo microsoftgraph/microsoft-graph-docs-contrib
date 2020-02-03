@@ -181,6 +181,15 @@
           href: api/user-delete.md
         - name: Get delta
           href: api/user-delta.md
+      - name: App role assignments
+        href: resources/approleassignment.md
+        items:
+        - name: List app role assignments
+          href: api/approleassignment-list.md
+        - name: Add app role assignment
+          href: api/approleassignment-post.md
+        - name: Remove app role assignment
+          href: api/approleassignment-delete.md
       - name: Calendar
         href: resources/calendar.md
         displayName: Outlook, Outlook calendar
@@ -475,6 +484,15 @@
           href: api/group-update.md
         - name: Validate properties
           href: api/group-validateproperties.md
+      - name: App role assignments
+        href: resources/approleassignment.md
+        items:
+        - name: List app role assignments
+          href: api/approleassignment-list.md
+        - name: Add app role assignment
+          href: api/approleassignment-post.md
+        - name: Remove app role assignment
+          href: api/approleassignment-delete.md
       - name: Attachment
         href: resources/attachment.md
         items:
@@ -8405,15 +8423,6 @@
           href: api/administrativeunit-get-scopedrolemembers.md
         - name: Remove a scoped-role administrator
           href: api/administrativeunit-delete-scopedrolemembers.md
-      - name: App role assignment
-        href: resources/approleassignment.md
-        items:
-        - name: Get appRoleAssignment
-          href: api/approleassignment-get.md
-        - name: Update approleassignment
-          href: api/approleassignment-update.md
-        - name: Delete appRoleAssignment
-          href: api/approleassignment-delete.md
       - name: Application
         href: resources/application.md
         items:
@@ -9195,6 +9204,21 @@
           href: api/serviceprincipal-updatepasswordsinglesignoncredentials.md
         - name: Delete password single sign on credentials
           href: api/serviceprincipal-deletepasswordsinglesignoncredentials.md
+        - name: App role assignments
+          href: resources/approleassignment.md
+          items:
+          - name: List app role assignments
+            href: api/approleassignment-list.md
+          - name: Add app role assignment
+            href: api/approleassignment-post.md
+          - name: Remove app role assignment
+            href: api/approleassignment-delete.md
+          - name: List app role assigned to
+            href: api/approleassignment-list.md
+          - name: Add app role assigned to
+            href: api/approleassignment-post.md
+          - name: Remove app role assigned to
+            href: api/approleassignment-delete.md
       - name: Subscribed sku
         href: resources/subscribedsku.md
         items:

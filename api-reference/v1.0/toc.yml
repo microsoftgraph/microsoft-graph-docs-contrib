@@ -179,6 +179,15 @@
           href: api/user-delete.md
         - name: Get delta
           href: api/user-delta.md
+      - name: App role assignments
+        href: resources/approleassignment.md
+        items:
+        - name: List app role assignments
+          href: api/approleassignment-list.md
+        - name: Add app role assignment
+          href: api/approleassignment-post.md
+        - name: Remove app role assignment
+          href: api/approleassignment-delete.md
       - name: Calendar
         href: resources/calendar.md
         displayName: Outlook, Outlook calendar
@@ -435,6 +444,15 @@
             href: api/grouplifecyclepolicy-removegroup.md
         - name: Validate properties
           href: api/group-validateproperties.md
+      - name: App role assignments
+        href: resources/approleassignment.md
+        items:
+        - name: List app role assignments
+          href: api/approleassignment-list.md
+        - name: Add app role assignment
+          href: api/approleassignment-post.md
+        - name: Remove app role assignment
+          href: api/approleassignment-delete.md
       - name: Attachment
         href: resources/attachment.md
         items:
@@ -3540,6 +3558,21 @@
           href: api/serviceprincipal-getmembergroups.md
         - name: getMemberObjects
           href: api/serviceprincipal-getmemberobjects.md
+        - name: App role assignments
+          href: resources/approleassignment.md
+          items:
+          - name: List app role assignments
+            href: api/approleassignment-list.md
+          - name: Add app role assignment
+            href: api/approleassignment-post.md
+          - name: Remove app role assignment
+            href: api/approleassignment-delete.md
+          - name: List app role assigned to
+            href: api/approleassignment-list.md
+          - name: Add app role assigned to
+            href: api/approleassignment-post.md
+          - name: Remove app role assigned to
+            href: api/approleassignment-delete.md
       - name: Subscribed SKU
         href: resources/subscribedsku.md
         items:

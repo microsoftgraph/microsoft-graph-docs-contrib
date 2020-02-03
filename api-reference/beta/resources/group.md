@@ -58,6 +58,10 @@ This resource supports:
 |[Get endpoint](../api/endpoint-get.md) | [endpoint](endpoint.md) | Read properties and relationships of an endpoint object. |
 |[validateProperties](../api/group-validateproperties.md)|JSON| Validate an Office 365 group's display name or mail nickname complies with naming policies. |
 |[assignLicense](../api/group-assignlicense.md) | [group](group.md) |Add or remove subscriptions for the group. You can also enable and disable specific plans associated with a subscription.|
+|**App role assignments**| | |
+|[List appRoleAssignments](../api/approleassignment-list.md) |[appRoleAssignment](approleassignment.md) collection| Get the apps and app roles which this group has been assigned.|
+|[Add appRoleAssignment](../api/approleassignment-post.md) |[appRoleAssignment](approleassignment.md)| Assign an app role to this group.|]
+|[Remove appRoleAssignment](../api/approleassignment-delete.md) | None. | Remove an app role assignment from this group.|
 |**Calendar**| | |
 |[Create event](../api/group-post-events.md) |[event](event.md)| Create a new event by posting to the events collection.|
 |[Get event](../api/group-get-event.md) |[event](event.md)|Read properties of an event object.|
@@ -92,7 +96,7 @@ This resource supports:
 |**User settings**| | |
 |[addFavorite](../api/group-addfavorite.md)|None|Add the group to the list of the signed-in user's favorite groups. Supported for only Office 365 groups.|
 |[removeFavorite](../api/group-removefavorite.md)|None|Remove the group from the list of the signed-in user's favorite groups. Supported for Office 365 Groups only.|
-|[List memberOf](../api/group-list-memberof.md) |[directoryObject](directoryobject.md) collection| Get the groups and administative units that this user is a direct member of, from the **memberOf** navigation property.|
+|[List memberOf](../api/group-list-memberof.md) |[directoryObject](directoryobject.md) collection| Get the groups and administrative units that this user is a direct member of, from the **memberOf** navigation property.|
 |[List joinedTeams](../api/user-list-joinedteams.md) |[group](group.md) collection| Get the Microsoft Teams that the user is a direct member of.|
 |[subscribeByMail](../api/group-subscribebymail.md)|None|Set the isSubscribedByMail property to **true**. Enabling the signed-in user to receive email conversations. Supported for Office 365 Groups only.|
 |[unsubscribeByMail](../api/group-unsubscribebymail.md)|None|Set the isSubscribedByMail property to **false**. Disabling the signed-in user from receive email conversations. Supported for Office 365 Groups only.|
