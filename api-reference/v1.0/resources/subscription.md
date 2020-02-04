@@ -41,9 +41,9 @@ A subscription allows a client app to receive notifications about changes to dat
 | creatorId | string | Identifier of the user or service principal that created the subscription. If the app used delegated permissions to create the subscription, this field contains the id of the signed-in user the app called on behalf of. If the app used application permissions, this field contains the id of the service principal corresponding to the app. Read-only. |
 | latestSupportedTlsVersion | String | Specifies the latest TLS version that the notification endpoint supports. Allows subscribers to use a deprecated version of TLS for a limited period. Possible values: **v1_0**, **v1_1**, **v1_2**, **v1_3**. Optional, defaults to v1_2. If the client endpoint supports TLS 1.2 or above this property is not needed. If the client endpoint supports only TLS 1.0 or 1.1, this property should be set to the corresponding version or the operation will fail. |
 
-## Maximum length of subscription per resource type
+### Maximum length of subscription per resource type
 
-| Resource            | Maximum Expiration Time  |
+| Resource            | Maximum expiration time  |
 |:--------------------|:-------------------------|
 | User, group, other directory resources   | 4230 minutes (under 3 days)    |
 | Mail                | 4230 minutes (under 3 days)    |
