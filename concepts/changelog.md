@@ -16,7 +16,7 @@ For details about known issues with Microsoft Graph APIs, see [Known issues](kno
 ### Identity and access (Azure AD)
 | **Change type** | **Version**   | **Description**                          |
 |:---|:---|:---|
-| Addition | beta and v1.0 | Added the **latestSupportedTlsVersion** property to the [subscription](/graph/api/resources/subscription?view=graph-rest-1.0) entity. Specifies the latest TLS version that the notification endpoint supports. Allows subscribers to use a deprecated version of TLS for a limited period as described in [this blog post](https://developer.microsoft.com/en-us/office/blogs/microsoft-graph-subscriptions-deprecating-tls-1-0-and-1-1). |
+| Addition | beta and v1.0 | Added the **latestSupportedTlsVersion** property to the [subscription](/graph/api/resources/subscription?view=graph-rest-1.0) entity. Specifies the latest TLS version that the notification endpoint supports. Allows subscribers to use a deprecated version of TLS for a limited period. |
 
 ## January 2020
 
