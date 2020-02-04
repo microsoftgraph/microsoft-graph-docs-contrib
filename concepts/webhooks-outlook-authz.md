@@ -1,7 +1,7 @@
 ---
 title: "Reduce missing subscriptions and notifications for Outlook resources (preview)"
 description: "Outlook might suspend delivery of change notifications due to security events such as user's password reset. Special lifecycle events - `subscriptionRemoved` and `missed` - need to be handled to ensure uninterrupted delivery of notifications."
-author: "piotrci"
+author: "baywet"
 localization_priority: Priority
 ms.custom: graphiamtop20
 ---
@@ -32,6 +32,8 @@ To receive life cycle notifications, you can use the existing **notificationUrl*
 When creating a subscription, you can specify a separate notification endpoint using the **lifecycleNotificationUrl** property. If you specify the endpoint, all current and future types of life cycle notifications will be delivered there. Otherwise, `subscriptionRemoved` and `missed` notifications will be delivered to the existing **notificationUrl** for all existing subscriptions.
 
 > **Note:** The **lifecycleNotificationUrl** property can only be set or read using Microsoft Graph beta APIs. However, subscriptions created using beta APIs are stored in the same production environment as those created using v1.0, so you can implement the new Outlook flow in addition to your subscriptions creating using v1.0 APIs.
+
+> Subscriptions created via the v1.0 APIs will receive lifecycle notifications. 
 
 ### Subscription request example
 

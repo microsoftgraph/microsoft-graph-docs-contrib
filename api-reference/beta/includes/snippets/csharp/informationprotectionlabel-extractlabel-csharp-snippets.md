@@ -60,6 +60,7 @@ var contentInfo = new ContentInfo
 await graphClient.Informationprotection.Policy.Labels
 	.ExtractLabel(contentInfo)
 	.Request()
+	.Header("User-Agent","ContosoLOBApp/1.0")
 	.PostAsync();
 
 ```
