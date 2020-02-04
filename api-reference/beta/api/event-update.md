@@ -73,8 +73,6 @@ In the request body, supply the values for relevant fields that should be update
 | start|DateTimeTimeZone|The start date, time, and time zone of the event. |
 | subject|String|The text of the event's subject line.|
 
-TransactionId is supported only in create event and not in update event request.
-
 Because the **event** resource supports [extensions](/graph/extensibility-overview), you can use the `PATCH` operation to
 add, update, or delete your own app-specific data in custom properties of an extension in an existing **event** instance.
 

@@ -61,7 +61,7 @@ If successful, this method returns `201 Created` response code and [event](../re
 ### Example 1: Create an event in a specific calendar
 
 #### Request
-The following example creates an event in the specified calendar of the signed-in user's.
+The following example creates an event in a specific calendar and assign the event an optional transactionId value
 
 In the request body, supply a JSON representation of [event](../resources/event.md) object.
 
@@ -100,7 +100,8 @@ Content-type: application/json
       },
       "type": "required"
     }
-  ]
+  ],
+  "transactionId":"7E163156-7762-4BEB-A1C6-729EA81755A7"
 }
 ```
 # [C#](#tab/csharp)
@@ -152,6 +153,7 @@ Content-type: application/json
     "isOrganizer": true,
     "responseRequested": true,
     "seriesMasterId": null,
+    "transactionId":"7E163156-7762-4BEB-A1C6-729EA81755A7",
     "showAs": "busy",
     "type": "singleInstance",
     "webLink": "https://outlook.office365.com/owa/?itemid=AAMkAGViNDU7zAAAAA7zAAAZe6CkAAA%3D&exvsurl=1&path=/calendar/item",
@@ -371,163 +373,6 @@ Content-type: application/json
     }
 }
 ```
-
-### Example 3: Create an event with transactionId
-
-#### Request
-The following example creates an event with the given transactionId in the specified calendar of the signed-in user's.
-
-In the request body, supply a JSON representation of [event](../resources/event.md) object.
-
-# [HTTP](#tab/http)
-<!-- {
-  "blockType": "request",
-  "sampleKeys": ["AAMkAGViNDU7zAAAAAGtlAAA="],
-  "name": "create_event_from_calendar"
-}-->
-```http
-POST https://graph.microsoft.com/beta/me/calendars/AAMkAGViNDU7zAAAAAGtlAAA=/events
-Content-type: application/json
-
-{
-  "subject": "Let's go for lunch",
-  "body": {
-    "contentType": "HTML",
-    "content": "Does next month work for you?"
-  },
-  "start": {
-      "dateTime": "2019-03-10T12:00:00",
-      "timeZone": "Pacific Standard Time"
-  },
-  "end": {
-      "dateTime": "2019-03-10T14:00:00",
-      "timeZone": "Pacific Standard Time"
-  },
-  "location":{
-      "displayName":"Harry's Bar"
-  },
-  "attendees": [
-    {
-      "emailAddress": {
-        "address":"adelev@contoso.onmicrosoft.com",
-        "name": "Adele Vance"
-      },
-      "type": "required"
-    }
-  ],
-   "transactionId":"7E163156-7762-4BEB-A1C6-729EA81755A7"
-}
-```
-# [C#](#tab/csharp)
-[!INCLUDE [sample-code](../includes/snippets/csharp/create-event-from-calendar-csharp-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [JavaScript](#tab/javascript)
-[!INCLUDE [sample-code](../includes/snippets/javascript/create-event-from-calendar-javascript-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [Objective-C](#tab/objc)
-[!INCLUDE [sample-code](../includes/snippets/objc/create-event-from-calendar-objc-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
----
-
-
-#### Response
-Here is an example of the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.
-<!-- {
-  "blockType": "response",
-  "truncated": true,
-  "@odata.type": "microsoft.graph.event"
-} -->
-```http
-HTTP/1.1 201 Created
-Content-type: application/json
-
-{
-    "@odata.context": "https://graph.microsoft.com/beta/$metadata#users('5d8d505c-864f-4804-88c7-4583c966cde8')/calendars('AAMkAGViNDU7zAAAAAGtlAAA%3D')/events/$entity",
-    "@odata.etag": "W/\"/IUUrIl3PkG1JCSsPfU+8wAAGXjGjw==\"",
-    "id": "AAMkAGViNDU7zAAAAA7zAAAZe6CkAAA=",
-    "createdDateTime": "2019-02-28T21:36:26.7105485Z",
-    "lastModifiedDateTime": "2019-02-28T21:36:26.9577227Z",
-    "changeKey": "/IUUrIl3PkG1JCSsPfU+8wAAGXjGjw==",
-    "categories": [],
-    "originalStartTimeZone": "Pacific Standard Time",
-    "originalEndTimeZone": "Pacific Standard Time",
-    "uid": "040000008200C780DAE",
-    "reminderMinutesBeforeStart": 15,
-    "isReminderOn": true,
-    "hasAttachments": false,
-    "subject": "Let's go for lunch",
-    "bodyPreview": "Does next month work for you?",
-    "importance": "normal",
-    "sensitivity": "normal",
-    "isAllDay": false,
-    "isCancelled": false,
-    "isOrganizer": true,
-    "responseRequested": true,
-    "seriesMasterId": null,
-    "transactionId":"7E163156-7762-4BEB-A1C6-729EA81755A7",
-    "showAs": "busy",
-    "type": "singleInstance",
-    "webLink": "https://outlook.office365.com/owa/?itemid=AAMkAGViNDU7zAAAAA7zAAAZe6CkAAA%3D&exvsurl=1&path=/calendar/item",
-    "onlineMeetingUrl": null,
-    "isOnlineMeeting": false,
-    "onlineMeetingProvider": "unknown",
-    "onlineMeeting": null,
-    "recurrence": null,
-    "responseStatus": {
-        "response": "organizer",
-        "time": "0001-01-01T00:00:00Z"
-    },
-    "body": {
-        "contentType": "html",
-        "content": "<html>\r\n<head>\r\n<meta http-equiv=\"Content-Type\" content=\"text/html; charset=utf-8\">\r\n<meta content=\"text/html; charset=us-ascii\">\r\n</head>\r\n<body>\r\nDoes next month work for you?\r\n</body>\r\n</html>\r\n"
-    },
-    "start": {
-        "dateTime": "2019-03-10T12:00:00.0000000",
-        "timeZone": "Pacific Standard Time"
-    },
-    "end": {
-        "dateTime": "2019-03-10T14:00:00.0000000",
-        "timeZone": "Pacific Standard Time"
-    },
-    "location": {
-        "displayName": "Harry's Bar",
-        "locationType": "default",
-        "uniqueId": "Harry's Bar",
-        "uniqueIdType": "private"
-    },
-    "locations": [
-        {
-            "displayName": "Harry's Bar",
-            "locationType": "default",
-            "uniqueId": "Harry's Bar",
-            "uniqueIdType": "private"
-        }
-    ],
-    "attendees": [
-        {
-            "type": "required",
-            "status": {
-                "response": "none",
-                "time": "0001-01-01T00:00:00Z"
-            },
-            "emailAddress": {
-                "name": "Adele Vance",
-                "address": "AdeleV@contoso.OnMicrosoft.com"
-            }
-        }
-    ],
-    "organizer": {
-        "emailAddress": {
-            "name": "Megan Bowen",
-            "address": "MeganB@contoso.OnMicrosoft.com"
-        }
-    }
-}
-```
-
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2015-10-25 14:57:30 UTC -->
