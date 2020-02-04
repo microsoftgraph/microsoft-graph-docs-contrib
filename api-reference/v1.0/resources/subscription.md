@@ -25,7 +25,7 @@ A subscription allows a client app to receive notifications about changes to dat
 | [Update subscription](../api/subscription-update.md) | [subscription](subscription.md) | Renews a subscription by updating its expiration time. |
 | [List subscriptions](../api/subscription-list.md) | [subscription](subscription.md) | Lists active subscriptions. |
 | [Get subscription](../api/subscription-get.md) | [subscription](subscription.md) | Reads properties and relationships of subscription object. |
-| [Delete subscription](../api/subscription-delete.md) | None |Deletes a subscription object. |
+| [Delete subscription](../api/subscription-delete.md) | None | Deletes a subscription object. |
 
 ## Properties
 
