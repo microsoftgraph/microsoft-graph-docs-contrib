@@ -47,7 +47,7 @@ If successful, this method returns a `200 OK` response code and collection of [d
 # [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
-  "name": "get_members"
+  "name": "get_directoryrole_members"
 }-->
 ```msgraph-interactive
 GET https://graph.microsoft.com/v1.0/directoryRoles/{id}/members

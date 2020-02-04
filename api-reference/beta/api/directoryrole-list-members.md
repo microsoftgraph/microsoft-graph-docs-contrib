@@ -49,7 +49,7 @@ Here is an example of the request.
 # [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
-  "name": "get_members"
+  "name": "get_directoryrole_members"
 }-->
 ```msgraph-interactive
 GET https://graph.microsoft.com/beta/directoryRoles/{id}/members
