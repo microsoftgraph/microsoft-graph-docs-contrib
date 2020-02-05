@@ -16,6 +16,8 @@ With the [appropriate delegated or application permissions](/graph/permissions-r
 the signed-in user or any user in a tenant. The mail data can be in the cloud on Exchange Online as part of Office 365, or on
 Exchange on-premises in a [hybrid deployment](/graph/hybrid-rest-support).
 
+The Microsoft Graph API supports accessing mail data in users' _primary_ mailboxes. The API does not support accessing in-place archive mailboxes, not [on Exchange Online](https://docs.microsoft.com/office365/servicedescriptions/exchange-online-archiving-service-description/archive-features#archive-mailbox) nor [on Exchange Server](https://docs.microsoft.com/Exchange/policy-and-compliance/in-place-archiving/in-place-archiving?view=exchserver-2019).
+
 ## Using the mail REST API
 
 Mail API requests are performed on behalf of a [user](../resources/user.md) which can be identified by the user's **id** property (a unique GUID), email address,
