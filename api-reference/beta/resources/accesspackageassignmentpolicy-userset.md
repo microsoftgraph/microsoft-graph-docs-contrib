@@ -12,7 +12,7 @@ doc_type: "resourcePageType"
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 
-The `userSet` type, used in the request, approval and assignment review settings of an [access package assignment policy](accesspackageassignmentpolicy.md), is an abstract base type.
+The `userSet` type, used in the request, approval and assignment review settings of an [access package assignment policy](accesspackageassignmentpolicy.md), is the abstract base for the `microsoft.graph.singleUser`,`microsoft.graph.groupMembers`, `microsoft.graph.connectedOrganizationMembers`, `microsoft.graph.manager`, `microsoft.graph.internalSponsors` and `microsoft.graph.externalSponsors` types.
 
 ## Properties
 
@@ -20,7 +20,7 @@ This type has the following properties:
 
 | Property                     | Type                      | Description |
 | :--------------------------- | :------------------------ | :---------- |
-| `@odata.type` | String | The value as specified in one of the sub-classes below. |
+| `@odata.type` | String | The value as specified in one of the types below. |
 | isBackup | Boolean | For a user in an approval stage, this property indicates that the user is a backup fallback approver. |
 
 

@@ -14,13 +14,24 @@ doc_type: "resourcePageType"
 
 The `requestorSettings` type, used for the `requestorSettings` property of an [access package assignment policy](accesspackageassignmentpolicy.md), provides additional settings to select who can create a request.
 
+| Who can request | scopeType | allowedRequestors collection|
+|:----------------|:----------|:------------------|
+|No one|`NoSubjects`|empty array|
+|Specific individual user in your directory|`SpecificDirectorySubjects`|`microsoft.graph.singleUser`|
+|Users in your directory who are members of a group|`SpecificDirectorySubjects`|`microsoft.graph.groupMembers`|
+|Users in your directory with `userType` value of `member`|`AllExistingDirectoryMemberUsers`|empty array|
+|Users in your directory|`AllExistingDirectorySubjects`|empty array|
+|Users in other organizations already configured|`SpecificConnectedOrganizationSubjects`|`microsoft.graph.connectedOrganizationMembers`|
+||`AllExistingConnectedOrganizationSubjects`|empty array|
+|Any user|`AllExternalSubjects`|empty array|
+
 ## Properties
 
 This type has the following properties:
 
 | Property                     | Type                      | Description |
 | :--------------------------- | :------------------------ | :---------- |
-| scopeType |String |Who can request. One of `NoSubjects`, `SpecificDirectorySubjects`, `SpecificConnectedOrganizationSubjects`, `AllExistingConnectedOrganizationSubjects`, `AllExistingDirectoryMemberUsers` or `AllExistingDirectorySubjects`.  |
+| scopeType |String |Who can request. One of `NoSubjects`, `SpecificDirectorySubjects`, `SpecificConnectedOrganizationSubjects`, `AllExistingConnectedOrganizationSubjects`, `AllExistingDirectoryMemberUsers`, `AllExistingDirectorySubjects` or `AllExternalSubjects`.  |
 | acceptRequests | Boolean | Whether new requests are accepted on this policy. |
 | allowedRequestors | [userSet](accesspackageassignmentpolicy-userset.md) collection| The users who are allowed to request on this policy, which can be `microsoft.graph.singleUser`, `microsoft.graph.groupMembers`, and `microsoft.graph.connectedOrganizationMembers`. |
 
