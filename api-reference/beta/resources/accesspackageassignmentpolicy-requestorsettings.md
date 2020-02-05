@@ -22,41 +22,7 @@ This type has the following properties:
 | :--------------------------- | :------------------------ | :---------- |
 | scopeType |String |Who can request. One of `NoSubjects`, `SpecificDirectorySubjects`, `SpecificConnectedOrganizationSubjects`, `AllExistingConnectedOrganizationSubjects`, `AllExistingDirectoryMemberUsers` or `AllExistingDirectorySubjects`.  |
 | acceptRequests | Boolean | Whether new requests are accepted on this policy. |
-| allowedRequestors | `microsoft.graph.singleUser`, `microsoft.graph.groupMembers`, and `microsoft.graph.connectedOrganizationMembers` collection| The users who are allowed to request on this policy. |
-
-### The singleUser type
-
-The singleUser type is used to identify a specific user in the tenant who will be allowed as a requestor, approver or reviewer.
-
-| Property                     | Type                      | Description |
-| :--------------------------- | :------------------------ | :---------- |
-| `@odata.type` | String | The value "`#microsoft.graph.singleUser`". |
-| id |String | The id of the user in Azure AD. |
-| description |String | The name of the user in Azure AD. Read only. |
-| isBackup | Boolean | For a singleUser in an approval stage, this property indicates that the user is a backup fallback approver. |
-
-### The groupMembers type
-
-The groupMembers type is used to identify a collection of users in the tenant who will be allowed as requestor, approver or reviewer.  The users are members of a specific group.
-
-| Property                     | Type                      | Description |
-| :--------------------------- | :------------------------ | :---------- |
-| `@odata.type` | String | The value "`#microsoft.graph.groupMembers`". |
-| id |String | The id of the group in Azure AD. |
-| description |String | The name of the group in Azure AD. Read only. |
-| isBackup | Boolean | For a groupMembers in an approval stage, this property indicates that the group members are a backup fallback approver. |
-
-### The connectedOrganizationMembers type
-
-The connectedOrganizationMembers type is used to identify a collection of users in the tenant who will be allowed as requestor, approver or reviewer.  The users are those who are associated with a connected organization.
-
-| Property                     | Type                      | Description |
-| :--------------------------- | :------------------------ | :---------- |
-|`@odata.type` | String | The value "`#microsoft.graph.connectedOrganizationMembers`". |
-| id |String | The id of the connected organization in entitlement management. |
-| description |String | The name of the connected organization. Read only. |
-| isBackup | Boolean | Not used at present. |
-
+| allowedRequestors | [userSet](accesspackageassignmentpolicy-userset.md) collection| The users who are allowed to request on this policy, which can be `microsoft.graph.singleUser`, `microsoft.graph.groupMembers`, and `microsoft.graph.connectedOrganizationMembers`. |
 
 ## JSON representation
 

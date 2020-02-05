@@ -24,7 +24,7 @@ This type has the following properties:
 | reviewerType | String | Who should be asked to do the review, either `Self` or `Reviewers`. |
 | startDateTime | DateTimeOffset | When the first review should start. |
 | durationInDays | Int32 | The number of days to allow input from reviewers.|
-| reviewers | collection of `singleUser` and `groupMembers`| If the reviewerType is `Reviewers`, this collection specifies the users who will be reviewers, either by id or as members of a group. |
+| reviewers | [userSet](accesspackageassignmentpolicy-userset.md) collection | If the reviewerType is `Reviewers`, this collection specifies the users who will be reviewers, either by id or as members of a group, using a collection of `singleUser` and `groupMembers`. |
 
 ## JSON representation
 
@@ -42,7 +42,12 @@ The following is a JSON representation of the access review settings property of
 
 ```json
 {
-
+  "isEnabled": true,
+  "recurrenceType": "quarterly",
+  "reviewerType": "Self",
+  "startDateTime": "2020-01-23T07:59:59.998Z",
+  "durationInDays": 25,
+  "reviewers": []
 }
 ```
 
