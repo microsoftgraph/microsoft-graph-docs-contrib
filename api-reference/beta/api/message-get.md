@@ -121,6 +121,7 @@ Here is an example of the response. The **body** and **uniqueBody** properties a
 Note: The response object shown here is truncated for brevity. All of the properties will be returned from an actual call.
 <!-- {
   "blockType": "response",
+  "name": "get_message",
   "truncated": true,
   "@odata.type": "microsoft.graph.message"
 } -->
@@ -178,6 +179,7 @@ GET https://graph.microsoft.com/beta/me/messages/AQMkADJmMTUAAAgVZAAAA/?$expand=
 Here is an example of the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.
 <!-- {
   "blockType": "response",
+  "name": "get_mentions_in_message",
   "truncated": true,
   "@odata.type": "microsoft.graph.message"
 } -->
@@ -310,6 +312,7 @@ Here is an example of the response.
 Note: The response includes a `Preference-Applied: outlook.body-content-type` header to acknowledge the `Prefer: outlook.body-content-type` request header.
 <!-- {
   "blockType": "response",
+  "name": "get_message_in_text",
   "truncated": true,
   "@odata.type": "microsoft.graph.message"
 } -->
@@ -371,6 +374,7 @@ Here is an example of the response. Note: The number of Internet message headers
 
 <!-- {
   "blockType": "response",
+  "name": "get_message_internet_headers",
   "truncated": true,
   "@odata.type": "microsoft.graph.message"
 } -->
@@ -413,20 +417,42 @@ Content-type: application/json
 #### Request
 The fifth example gets the MIME content of a message in the signed-in user's mailbox.
 
+
+# [HTTP](#tab/http)
 <!-- {
-  "blockType": "ignored"
-}-->
-```http
+  "blockType": "request",
+  "name": "get_message_in_mime",
+  "sampleKeys": ["4aade2547798441eab5188a7a2436bc1"]
+} -->
+```msgraph-interactive
 GET https://graph.microsoft.com/beta/me/messages/4aade2547798441eab5188a7a2436bc1/$value
 ```
+# [C#](#tab/csharp)
+[!INCLUDE [sample-code](../includes/snippets/csharp/get-message-in-mime-csharp-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [JavaScript](#tab/javascript)
+[!INCLUDE [sample-code](../includes/snippets/javascript/get-message-in-mime-javascript-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Objective-C](#tab/objc)
+[!INCLUDE [sample-code](../includes/snippets/objc/get-message-in-mime-objc-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+---
+
 
 #### Response
 The following is the response. The MIME content begins with the `MIME-Version` header. 
 <!-- {
-  "blockType": "ignored"
+  "blockType": "response",
+  "name": "get_message_in_mime",
+  "truncated": true,
+  "@odata.type": "string"
 } -->
 ```http
 HTTP/1.1 200 OK
+Content-type: text/plain
 
 Received: from contoso.com (10.194.241.197) by 
 contoso.com (10.194.241.197) with Microsoft 
@@ -462,9 +488,7 @@ X-MS-Exchange-Organization-Network-Message-Id:
 X-MS-Exchange-Organization-SCL: -1 
 X-MS-TNEF-Correlator: 
 X-MS-Exchange-Organization-RecordReviewCfmType: 0 
-x-ms-publictraffictype: Emai
 
-```http
 MIME-Version: 1.0 
 Content-Type: multipart/mixed; 
                 boundary="_004_4aade2547798441eab5188a7a2436bc1contoso_" 

@@ -1,7 +1,7 @@
 ---
 title: "Microsoft Graph throttling guidance"
 description: "Throttling limits the number of concurrent calls to a service to prevent overuse of resources. Microsoft Graph is designed to handle a high volume of requests. If an overwhelming number of requests occurs, throttling helps maintain optimal performance and reliability of the Microsoft Graph service."
-author: "piotrci"
+author: "baywet"
 localization_priority: Priority
 ms.custom: graphiamtop20
 ---
@@ -56,6 +56,11 @@ The following resources currently provide a `Retry-After` header:
 - [Drive (OneDrive)](/graph/api/resources/drive?view=graph-rest-1.0)
 
 For a broader discussion of throttling on the Microsoft Cloud, see [Throttling Pattern](https://msdn.microsoft.com/library/office/dn589798.aspx).
+
+> [!NOTE]
+> If no `Retry-After` header is provided by the response, we recommend implementing an exponential backoff retry policy. You can also implement [more advanced patterns](https://docs.microsoft.com/azure/architecture/patterns/category/resiliency) when building large-scale applications. 
+> 
+> Microsoft Graph SDKs already implement handlers that rely on the `Retry-After` header or default to an exponential backoff retry policy.
 
 ## Service-specific limits
 

@@ -104,8 +104,7 @@ Content-type: application/json
   "parentFolderId": "AAMkAGVmMDEzI",
   "childFolderCount": 2,
   "unreadItemCount": 59,
-  "totalItemCount": 60,
-  "wellKnownName": "inbox"
+  "totalItemCount": 60
 }
 ```
 
@@ -169,7 +168,6 @@ Content-type: application/json
   "childFolderCount": 0,
   "unreadItemCount": 6,
   "totalItemCount": 6,
-  "wellKnownName": null,
   "isSupported": true,
   "includeNestedFolders": true,
   "sourceFolderIds": [

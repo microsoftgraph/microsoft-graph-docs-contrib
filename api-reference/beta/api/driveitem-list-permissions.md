@@ -11,7 +11,7 @@ doc_type: apiPageType
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-List the effective sharing permissions of on a [driveItem](../resources/driveitem.md).
+List the effective sharing permissions on a [driveItem](../resources/driveitem.md).
 
 ## Access to sharing permissions
 
