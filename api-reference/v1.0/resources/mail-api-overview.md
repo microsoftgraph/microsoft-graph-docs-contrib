@@ -11,10 +11,9 @@ doc_type: conceptualPageType
 
 Microsoft Graph lets your app get authorized access to a user's Outlook mail data in a personal or organization account.
 With the [appropriate delegated or application permissions](/graph/permissions-reference), your app can access the mail data of
-the signed-in user or any user in a tenant. The mail data can be in the cloud on Exchange Online as part of Office 365, or on
-Exchange on-premises in a [hybrid deployment](/graph/hybrid-rest-support).
+the signed-in user or any user in a tenant. 
 
-The Microsoft Graph API supports accessing mail data in users' _primary_ mailboxes. The API does not support accessing in-place archive mailboxes, not [on Exchange Online](https://docs.microsoft.com/office365/servicedescriptions/exchange-online-archiving-service-description/archive-features#archive-mailbox) nor [on Exchange Server](https://docs.microsoft.com/Exchange/policy-and-compliance/in-place-archiving/in-place-archiving?view=exchserver-2019).
+[!INCLUDE [outlook-mailbox-type-support](../../includes/outlook-mailbox-type-support.md)]
 
 ## Using the mail REST API
 
