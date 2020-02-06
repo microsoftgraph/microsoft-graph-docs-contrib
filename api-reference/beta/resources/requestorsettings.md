@@ -1,6 +1,6 @@
 ---
-title: "accessPackageAssignmentPolicy requestorSettings complex type"
-description: "An access package assignment policy specifies the policy by which subjects may request or be assigned an access package via an access package assignment."
+title: "requestorSettings complex type"
+description: "The requestorSettings type, used for the `requestorSettings` property of an access package assignment policy, provides additional settings to select who can create a request."
 localization_priority: Normal
 author: "markwahl-msft"
 ms.prod: "microsoft-identity-platform"
@@ -11,8 +11,7 @@ doc_type: "resourcePageType"
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-
-The `requestorSettings` type, used for the `requestorSettings` property of an [access package assignment policy](accesspackageassignmentpolicy.md), provides additional settings to select who can create a request.
+The `requestorSettings` type, used for the `requestorSettings` property of an [access package assignment policy](accesspackageassignmentpolicy.md), provides additional settings to select who can create a request for an access package on that policy.
 
 | Who can request | scopeType | allowedRequestors collection|
 |:----------------|:----------|:------------------|
@@ -33,7 +32,7 @@ This type has the following properties:
 | :--------------------------- | :------------------------ | :---------- |
 | scopeType |String |Who can request. One of `NoSubjects`, `SpecificDirectorySubjects`, `SpecificConnectedOrganizationSubjects`, `AllExistingConnectedOrganizationSubjects`, `AllExistingDirectoryMemberUsers`, `AllExistingDirectorySubjects` or `AllExternalSubjects`.  |
 | acceptRequests | Boolean | Whether new requests are accepted on this policy. |
-| allowedRequestors | [userSet](accesspackageassignmentpolicy-userset.md) collection| The users who are allowed to request on this policy, which can be `microsoft.graph.singleUser`, `microsoft.graph.groupMembers`, and `microsoft.graph.connectedOrganizationMembers`. |
+| allowedRequestors | [userSet](userset.md) collection| The users who are allowed to request on this policy, which can be `microsoft.graph.singleUser`, `microsoft.graph.groupMembers`, and `microsoft.graph.connectedOrganizationMembers`. |
 
 ## JSON representation
 

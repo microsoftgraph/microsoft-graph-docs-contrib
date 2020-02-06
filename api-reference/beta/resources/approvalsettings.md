@@ -1,6 +1,6 @@
 ---
-title: "accessPackageAssignmentPolicy approvalSettings complex type"
-description: "An access package assignment policy specifies the policy by which subjects may request or be assigned an access package via an access package assignment."
+title: "approvalSettings complex type"
+description: "The approvalSettings type, used for the requestApprovalSettings property of an access package assignment policy, provides additional settings to select who must approve each request.."
 localization_priority: Normal
 author: "markwahl-msft"
 ms.prod: "microsoft-identity-platform"
@@ -23,7 +23,7 @@ This type has the following properties:
 | isApprovalRequiredForExtension | Boolean| If false, then approval is not required for a user who already has an assignment to extend their assignment. |
 | isRequestorJustificationRequired | Boolean | Whether the requestor is required to supply a justification in their request. |
 | approvalMode| String | One of `NoApproval`, `SingleStage` or `Serial`. The `NoApproval` is used when `isApprovalRequired` is false. |
-| approvalStages | [approvalStage](accesspackageassignmentpolicy-approvalstage.md) collection| If approval is required, the one or two elements of this collection define each of the stages of approval. An empty array if no approval is required.  |
+| approvalStages | [approvalStage](approvalstage.md) collection| If approval is required, the one or two elements of this collection define each of the stages of approval. An empty array if no approval is required.  |
 
 ## JSON representation
 

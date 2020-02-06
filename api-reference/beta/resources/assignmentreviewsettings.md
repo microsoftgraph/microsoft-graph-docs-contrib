@@ -1,6 +1,6 @@
 ---
-title: "accessPackageAssignmentPolicy assignmentReviewSettings complex type"
-description: "An access package assignment policy specifies the policy by which subjects may request or be assigned an access package via an access package assignment."
+title: "assignmentReviewSettings complex type"
+description: "The assignmentReviewSettings type, used for the accessReviewSettings property of an access package assignment policy, provides additional settings to select who must review access package assignments from this policy, and how often they must be reviewed."
 localization_priority: Normal
 author: "markwahl-msft"
 ms.prod: "microsoft-identity-platform"
@@ -24,7 +24,7 @@ This type has the following properties:
 | reviewerType | String | Who should be asked to do the review, either `Self` or `Reviewers`. |
 | startDateTime | DateTimeOffset | When the first review should start. |
 | durationInDays | Int32 | The number of days to allow input from reviewers.|
-| reviewers | [userSet](accesspackageassignmentpolicy-userset.md) collection | If the reviewerType is `Reviewers`, this collection specifies the users who will be reviewers, either by id or as members of a group, using a collection of `singleUser` and `groupMembers`. |
+| reviewers | [userSet](userset.md) collection | If the reviewerType is `Reviewers`, this collection specifies the users who will be reviewers, either by id or as members of a group, using a collection of `singleUser` and `groupMembers`. |
 
 ## JSON representation
 

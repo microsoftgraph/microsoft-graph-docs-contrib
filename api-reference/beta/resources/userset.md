@@ -1,6 +1,6 @@
 ---
-title: "accessPackageAssignmentPolicy userSet complex type"
-description: "An access package assignment policy specifies the policy by which subjects may request or be assigned an access package via an access package assignment."
+title: "userSet complex type"
+description: "The userSet type is the abstract base type for types used in the request, approval and assignment review settings of an access package assignment policy."
 localization_priority: Normal
 author: "markwahl-msft"
 ms.prod: "microsoft-identity-platform"
