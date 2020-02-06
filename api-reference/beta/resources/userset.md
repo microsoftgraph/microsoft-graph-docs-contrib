@@ -11,8 +11,7 @@ doc_type: "resourcePageType"
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-
-The `userSet` type, used in the request, approval and assignment review settings of an [access package assignment policy](accesspackageassignmentpolicy.md), is the abstract base for the `microsoft.graph.singleUser`,`microsoft.graph.groupMembers`, `microsoft.graph.connectedOrganizationMembers`, `microsoft.graph.manager`, `microsoft.graph.internalSponsors` and `microsoft.graph.externalSponsors` types.
+The `userSet` type, used in the request, approval and assignment review settings of an [access package assignment policy](accesspackageassignmentpolicy.md), is the abstract base for the `microsoft.graph.singleUser`,[groupMembers](groupmembers.md), `microsoft.graph.connectedOrganizationMembers`, `microsoft.graph.manager`, `microsoft.graph.internalSponsors` and `microsoft.graph.externalSponsors` types.
 
 ## Properties
 
@@ -35,17 +34,6 @@ The singleUser type is used to identify a specific user in the tenant who will b
 | description |String | The name of the user in Azure AD. Read only. |
 | isBackup | Boolean | For a singleUser in an approval stage, this property indicates that the user is a backup fallback approver. |
 
-### The groupMembers type
-
-The groupMembers type is used to identify a collection of users in the tenant who will be allowed as requestor, approver or reviewer.  The users are members of a specific group.
-
-| Property                     | Type                      | Description |
-| :--------------------------- | :------------------------ | :---------- |
-| `@odata.type` | String | The value "`#microsoft.graph.groupMembers`". |
-| id |String | The id of the group in Azure AD. |
-| description |String | The name of the group in Azure AD. Read only. |
-| isBackup | Boolean | For a groupMembers in an approval stage, this property indicates that the group members are a backup fallback approver. |
-
 ### The connectedOrganizationMembers type
 
 The connectedOrganizationMembers type is used to identify a collection of users in the tenant who will be allowed as requestor, approver or reviewer.  The users are those who are associated with a connected organization.
@@ -59,7 +47,7 @@ The connectedOrganizationMembers type is used to identify a collection of users 
 
 ### The manager type
 
-The groupMembers type is used in an approval stage to indicate that a requesting user's manager is to be the approver.
+The manager type is used in an approval stage to indicate that a requesting user's manager is to be the approver.
 
 | Property                     | Type                      | Description |
 | :--------------------------- | :------------------------ | :---------- |
@@ -87,7 +75,7 @@ The externalSponsors type is used in an approval stage to indicate that a reques
 ## JSON representation
 
 
-The following is a JSON representation of the userSet from the requestor settings property of a policy, which allows the members of a group to request.
+The following is a JSON representation of the groupMembers from the requestor settings property of a policy, which allows the members of a group to request.
 
 <!-- {
   "blockType": "resource",
