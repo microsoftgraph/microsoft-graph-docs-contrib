@@ -48,6 +48,13 @@ The body can contain HTML placed directly in the request body, or it can contain
 
 If successful, this method returns a `201 Created` response code and the new [page](../resources/page.md) object in the response body.
 
+## Limitations
+There is a limit on the number of pages that can be added to a section with the OneNote API. When an attempt to create a page is made to a section at this limit, a response with HTTP status code `507` and message "Exceeded the maximum number of pages allowed per section" will be returned.
+
+There are several workarounds here:
+1. Create a new section and add new pages there
+2. Delete unused pages of an existing section that is at the page limit
+
 ## Example
 ##### Request
 Here is an example of the request.
