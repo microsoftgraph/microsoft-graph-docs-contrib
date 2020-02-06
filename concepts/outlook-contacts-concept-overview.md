@@ -39,6 +39,10 @@ You can use the typical CRUD operations for an Outlook [contact](/graph/api/reso
 - You can keep the app local store synchronized by subscribing to [change notifications](/graph/api/resources/webhooks?view=graph-rest-1.0) and [tracking changes](delta-query-overview.md) to contacts and contact folders.
 - You can extend app storage in a contact instance as an [open extension](extensibility-overview.md#open-extensions), or add strongly typed custom data to the contact schema as a [schema extension](extensibility-overview.md#schema-extensions).
 
+## Where is the data?
+
+[!INCLUDE [outlook-mailbox-type-support](../includes/outlook-mailbox-type-support.md)]
+
 ## API reference
 
 Looking for the API reference for this service?
