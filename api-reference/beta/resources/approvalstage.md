@@ -23,8 +23,8 @@ This type has the following properties:
 | isApproverJustificationRequired |Boolean | Is the approver required to provide a justification for approving a request. |
 | isEscalationEnabled |Boolean | If true, then one or more escalation approvers are configured in this approval stage. |
 | escalationTimeInMinutes |Int32 | If escalation is required, the time a request can be pending a response from a primary approver. |
-| primaryApprovers | [userSet](userset.md) collection| The users who will be asked to approve requests, a collection of `singleUser`, `groupMembers`, `manager`, `internalSponsor` and `externalSponsor`. |
-| escalationApprovers | [userSet](userset.md) collection| If escalation is enabled and the primary approvers do not respond before the escalation time, the escalationApprovers are the users who will be asked to approve requests. This can be a collection of `singleUser`, `groupMembers`, `manager`, `internalSponsor` and `externalSponsor`.|
+| primaryApprovers | [userSet](userset.md) collection| The users who will be asked to approve requests, a collection of [singleUser](singleuser.md), [groupMembers](groupmembers.md), [manager](manager.md), [internalSponsors](internalsponsors.md) and [externalSponsors](externalsponsors.md). |
+| escalationApprovers | [userSet](userset.md) collection| If escalation is enabled and the primary approvers do not respond before the escalation time, the escalationApprovers are the users who will be asked to approve requests. This can be a collection of [singleUser](singleuser.md), [groupMembers](groupmembers.md), [manager](manager.md), [internalSponsors](internalsponsors.md) and [externalSponsors](externalsponsors.md).|
 
 
 

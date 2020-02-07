@@ -24,7 +24,7 @@ This type has the following properties:
 | reviewerType | String | Who should be asked to do the review, either `Self` or `Reviewers`. |
 | startDateTime | DateTimeOffset | When the first review should start. |
 | durationInDays | Int32 | The number of days to allow input from reviewers.|
-| reviewers | [userSet](userset.md) collection | If the reviewerType is `Reviewers`, this collection specifies the users who will be reviewers, either by id or as members of a group, using a collection of `singleUser` and `groupMembers`. |
+| reviewers | [userSet](userset.md) collection | If the reviewerType is `Reviewers`, this collection specifies the users who will be reviewers, either by id or as members of a group, using a collection of [singleUser](singleuser.md) and [groupMembers](groupmembers.md). |
 
 ## JSON representation
 

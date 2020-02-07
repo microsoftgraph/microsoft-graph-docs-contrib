@@ -1,6 +1,6 @@
 ---
 title: "groupMembers complex type"
-description: ""
+description: "The groupMembers type identifies a collection of users in the tenant who will be allowed as requestor, approver or reviewer."
 localization_priority: Normal
 author: "markwahl-msft"
 ms.prod: "microsoft-identity-platform"

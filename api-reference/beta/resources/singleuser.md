@@ -1,0 +1,35 @@
+---
+title: "singleUser complex type"
+description: "The singleUser type identifies a user in the tenant who will be allowed as requestor, approver or reviewer."
+localization_priority: Normal
+author: "markwahl-msft"
+ms.prod: "microsoft-identity-platform"
+doc_type: "resourcePageType"
+---
+
+# singleUser complex type
+
+[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
+
+The singleUser type, used in the request, approval and assignment review settings of an [access package assignment policy](accesspackageassignmentpolicy.md), identifies a specific user in the tenant who will be allowed as a requestor, approver or reviewer.
+
+## Properties
+
+This type has the following properties:
+
+| Property                     | Type                      | Description |
+| :--------------------------- | :------------------------ | :---------- |
+| `@odata.type` | String | The value "`#microsoft.graph.singleUser`". |
+| id |String | The id of the user in Azure AD. |
+| description |String | The name of the user in Azure AD. Read only. |
+| isBackup | Boolean | For a singleUser in an approval stage, this property indicates that the user is a backup fallback approver. |
+
+<!-- uuid: 16cd6b66-4b1a-43a1-adaf-3a886856ed98
+2019-02-04 14:57:30 UTC -->
+<!-- {
+  "type": "#page.annotation",
+  "description": "singleUser complex type",
+  "keywords": "",
+  "section": "documentation",
+  "tocPath": ""
+}-->

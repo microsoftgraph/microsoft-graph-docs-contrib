@@ -11,7 +11,7 @@ doc_type: "resourcePageType"
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-The `userSet` type, used in the request, approval and assignment review settings of an [access package assignment policy](accesspackageassignmentpolicy.md), is the abstract base for the `microsoft.graph.singleUser`,[groupMembers](groupmembers.md), `microsoft.graph.connectedOrganizationMembers`, `microsoft.graph.manager`, `microsoft.graph.internalSponsors` and `microsoft.graph.externalSponsors` types.
+The `userSet` type, used in the request, approval and assignment review settings of an [access package assignment policy](accesspackageassignmentpolicy.md), is the abstract base for the [singleUser](singleuser.md),[groupMembers](groupmembers.md), [connectedOrganizationMembers](connectedorganizationmembers.md), [manager](manager.md), [internalSponsors](internalsponsors.md) and [externalSponsors](externalsponsors.md) types.
 
 ## Properties
 
@@ -22,60 +22,9 @@ This type has the following properties:
 | `@odata.type` | String | The value as specified in one of the types below. |
 | isBackup | Boolean | For a user in an approval stage, this property indicates that the user is a backup fallback approver. |
 
-
-### The singleUser type
-
-The singleUser type is used to identify a specific user in the tenant who will be allowed as a requestor, approver or reviewer.
-
-| Property                     | Type                      | Description |
-| :--------------------------- | :------------------------ | :---------- |
-| `@odata.type` | String | The value "`#microsoft.graph.singleUser`". |
-| id |String | The id of the user in Azure AD. |
-| description |String | The name of the user in Azure AD. Read only. |
-| isBackup | Boolean | For a singleUser in an approval stage, this property indicates that the user is a backup fallback approver. |
-
-### The connectedOrganizationMembers type
-
-The connectedOrganizationMembers type is used to identify a collection of users in the tenant who will be allowed as requestor, approver or reviewer.  The users are those who are associated with a connected organization.
-
-| Property                     | Type                      | Description |
-| :--------------------------- | :------------------------ | :---------- |
-|`@odata.type` | String | The value "`#microsoft.graph.connectedOrganizationMembers`". |
-| id |String | The id of the connected organization in entitlement management. |
-| description |String | The name of the connected organization. Read only. |
-| isBackup | Boolean | Not used at present. |
-
-### The manager type
-
-The manager type is used in an approval stage to indicate that a requesting user's manager is to be the approver.
-
-| Property                     | Type                      | Description |
-| :--------------------------- | :------------------------ | :---------- |
-| `@odata.type` | String | The value "`#microsoft.graph.manager`". |
-| isBackup | Boolean | For a manager in an approval stage, this property indicates that the manager is a backup fallback approver. |
-
-### The internalSponsors type
-
-The internalSponsors type is used in an approval stage to indicate that a requesting user's connected organization internal sponsor is to be the approver.  This approver is only applicable to requests from users who are part of a connected organization.
-
-| Property                     | Type                      | Description |
-| :--------------------------- | :------------------------ | :---------- |
-| `@odata.type` | String | The value "`#microsoft.graph.internalSponsors`". |
-| isBackup | Boolean | This property indicates that the sponsor is a backup fallback approver. |
-
-### The externalSponsors type
-
-The externalSponsors type is used in an approval stage to indicate that a requesting user's connected organization external sponsor is to be the approver. This approver is only applicable to requests from users who are part of a connected organization.
-
-| Property                     | Type                      | Description |
-| :--------------------------- | :------------------------ | :---------- |
-| `@odata.type` | String | The value "`#microsoft.graph.internalSponsors`". |
-| isBackup | Boolean | This property indicates that the sponsor is a backup fallback approver. |
-
 ## JSON representation
 
-
-The following is a JSON representation of the groupMembers from the requestor settings property of a policy, which allows the members of a group to request.
+The following is a JSON representation of the groupMembers, a subtype of userSet, from the requestor settings property of a policy, which allows the members of a group to request.
 
 <!-- {
   "blockType": "resource",

@@ -16,12 +16,12 @@ The `requestorSettings` type, used for the `requestorSettings` property of an [a
 | Who can request | scopeType | allowedRequestors collection|
 |:----------------|:----------|:------------------|
 |No one|`NoSubjects`|empty array|
-|Specific individual user in your directory|`SpecificDirectorySubjects`|`microsoft.graph.singleUser`|
-|Users in your directory who are members of a group|`SpecificDirectorySubjects`|`microsoft.graph.groupMembers`|
+|Specific individual user in your directory|`SpecificDirectorySubjects`|[singleUser](singleuser.md)|
+|Users in your directory who are members of a group|`SpecificDirectorySubjects`|[groupMembers](groupmembers.md)|
 |Users in your directory with `userType` value of `member`|`AllExistingDirectoryMemberUsers`|empty array|
 |Users in your directory|`AllExistingDirectorySubjects`|empty array|
-|Users in other organizations already configured|`SpecificConnectedOrganizationSubjects`|`microsoft.graph.connectedOrganizationMembers`|
-||`AllExistingConnectedOrganizationSubjects`|empty array|
+|Users in specific other connected organizations already configured|`SpecificConnectedOrganizationSubjects`|[connectedOrganizationMembers](connectedorganizationmembers.md)|
+|Users from any other connected organizations already configured|`AllExistingConnectedOrganizationSubjects`|empty array|
 |Any user|`AllExternalSubjects`|empty array|
 
 ## Properties
@@ -32,7 +32,7 @@ This type has the following properties:
 | :--------------------------- | :------------------------ | :---------- |
 | scopeType |String |Who can request. One of `NoSubjects`, `SpecificDirectorySubjects`, `SpecificConnectedOrganizationSubjects`, `AllExistingConnectedOrganizationSubjects`, `AllExistingDirectoryMemberUsers`, `AllExistingDirectorySubjects` or `AllExternalSubjects`.  |
 | acceptRequests | Boolean | Whether new requests are accepted on this policy. |
-| allowedRequestors | [userSet](userset.md) collection| The users who are allowed to request on this policy, which can be `microsoft.graph.singleUser`, `microsoft.graph.groupMembers`, and `microsoft.graph.connectedOrganizationMembers`. |
+| allowedRequestors | [userSet](userset.md) collection| The users who are allowed to request on this policy, which can be [singleUser](singleuser.md), [groupMembers](groupmembers.md), and [connectedOrganizationMembers](connectedorganizationmembers.md). |
 
 ## JSON representation
 
