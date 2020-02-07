@@ -61,7 +61,7 @@ If successful, this method returns `201 Created` response code and [event](../re
 ### Example 1: Create an event in a specific calendar
 
 #### Request
-The following example creates an event in a specific calendar and assign the event an optional transactionId value
+The following example creates an event in a specific calendar and assign the event an optional transactionId value.
 
 In the request body, supply a JSON representation of [event](../resources/event.md) object.
 
