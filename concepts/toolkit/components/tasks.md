@@ -98,6 +98,19 @@ mgt-tasks {
 --task-complete-header-color
 --task-complete-detail-color
 --task-complete-detail-icon-color
+
+--task-icon-background-completed
+--task-icon-background
+
+--task-icon-border-completed
+--task-icon-border
+
+--task-icon-color
+--task-icon-color-completed
+
+--task-icon-border-radius
+
+--task-icon-alignment: flex-start (default) | center | flex-end
 }
 ````
 
