@@ -40,8 +40,7 @@ https://teams.microsoft.com/l/meetup-join/19:meeting_NTg0NmQ3NTctZDVkZC00YzRhLTh
 | [Reject](../api/call-reject.md)                                    | None                                                            | Reject an incoming call.                                                        |
 | [Redirect](../api/call-redirect.md)                                | None                                                            | Redirect an incoming call.                                                      |
 | [Transfer](../api/call-transfer.md)                                | None                                                            | Transfer a call                                                                 |
-
-| **Group Calls**                                                    |                                                             |                                                                                 |
+| **Group Calls**                                                    |                                                             |                                                                            |
 | [List participants](../api/call-list-participants.md)              | [participant](participant.md) collection                    | Get a participant object collection.                                            |
 | [Invite participants](../api/participant-invite.md)                | [commsOperation](commsoperation.md)                         | Invite participants to the active call.                                         |
 | [Mute all participants](../api/participant-muteall.md)             | [commsOperation](commsoperation.md)                         | Mute all participants in the call.                                              |
