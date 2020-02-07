@@ -44,6 +44,15 @@ Click the examples to try them in [Graph Explorer][graph-explorer].
 |:-------------------------|:------------|:---------|
 | [$skipToken](#skiptoken-parameter) | Retrieves the next page of results from result sets that span multiple pages. (Some APIs use `$skip` instead.) | `/users?$skiptoken=X%274453707402000100000017...`|
 
+## Other OData URL capabilities
+
+The following OData 4.0 capabilities are URL segments, not query parameters.
+
+| Name                     | Description | Example 
+|:-------------------------|:------------|:---------|
+| [$ref](/graph/api/group-post-members?view=graph-rest-1.0&tabs=http) | Updates entities membership to a collection. | `POST /groups/{id}/members/$ref` |
+| [$value](/graph/api/profilephoto-get) | Retrieves or updates the binary value of an item. | `GET /me/photo/$value` |
+
 ## Encoding query parameters
 
 The values of query parameters should be percent-encoded. Many HTTP clients, browsers, and tools (such as the [Graph Explorer][graph-explorer]) will help you with this. If a query is failing, one possible cause is failure to encode the query parameter values appropriately.
