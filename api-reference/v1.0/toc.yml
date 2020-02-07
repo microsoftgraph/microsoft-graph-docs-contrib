@@ -369,9 +369,9 @@
         - name: Add member
           href: api/group-post-members.md
         - name: Add owner
-          href: api/group-assignlicense.md
-        - name: Assign license
           href: api/group-post-owners.md
+        - name: Assign license
+          href: api/group-assignlicense.md
         - name: Check member groups
           href: api/group-checkmembergroups.md
         - name: Check member objects
