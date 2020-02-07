@@ -15,7 +15,7 @@ See highlights of what's new in Microsoft Graph, and how you can [share your ide
 ## February 2020: New and generally available
 
 ### Security
-To improve security when subscribing to [change notifications of user data](webhooks.md), servers used by notification endpoints must support Transport Layer Security (TLS) 1.2 or higher. The new requirement is rolled out in stages starting February 15 2020. By May 15, 2020, all notification endpoints must meet the new TLS requirement. [Find out the stages of the rollout](https://developer.microsoft.com/graph/blogs/microsoft-graph-subscriptions-deprecating-tls-1-0-and-1-1/) and if necessary, use the new **latestSupportedTlsVersion** property as a temporary workaround to avoid subscription failures, before completing the TLS upgrade.
+To improve security when subscribing to [change notifications of user data](webhooks.md), [enable Transport Layer Security (TLS) 1.2](https://docs.microsoft.com/configmgr/core/plan-design/security/enable-tls-1-2) or higher on clients and site servers used by notification endpoints. The new requirement is rolled out in stages starting February 15 2020. By May 15, 2020, all notification endpoints must meet the new TLS requirement. [Find out the stages of the rollout](https://developer.microsoft.com/graph/blogs/microsoft-graph-subscriptions-deprecating-tls-1-0-and-1-1/) and if necessary, use the new **latestSupportedTlsVersion** property as a temporary workaround to avoid subscription failures, before completing the TLS upgrade.
 
 
 ## January 2020: New and generally available
