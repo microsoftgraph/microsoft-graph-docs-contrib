@@ -15,9 +15,7 @@ See highlights of what's new in Microsoft Graph, and how you can [share your ide
 ## February 2020: New and generally available
 
 ### Security
-For improved security subscribing to [change notifications of user data](https://docs.microsoft.com/en-us/graph/webhooks), servers of notification endpoints must support Transport Layer Security (TLS) 1.2 or higher. The new requirement is rolled out in stages starting February 15 2020. By May 15, 2020, all notification endpoints must meet the new requirement. [Find out the stages of the rollout](https://developer.microsoft.com/graph/blogs/microsoft-graph-subscriptions-deprecating-tls-1-0-and-1-1/) and if necessary, use the new **latestSupportedTlsVersion** property accordingly to avoid subscription failures.
-
-## February 2020: New in preview
+To improve security when subscribing to [change notifications of user data](webhooks.md), servers used by notification endpoints must support Transport Layer Security (TLS) 1.2 or higher. The new requirement is rolled out in stages starting February 15 2020. By May 15, 2020, all notification endpoints must meet the new TLS requirement. [Find out the stages of the rollout](https://developer.microsoft.com/graph/blogs/microsoft-graph-subscriptions-deprecating-tls-1-0-and-1-1/) and if necessary, use the new **latestSupportedTlsVersion** property as a temporary workaround to avoid subscription failures, before completing the TLS upgrade.
 
 
 ## January 2020: New and generally available
@@ -25,8 +23,19 @@ For improved security subscribing to [change notifications of user data](https:/
 ### Security
 As part of customer alert management, use the [update alert](/graph/api/alert-update?view=graph-rest-1.0) method and update the **comments** field as either `Closed in IPC` or `Closed in MCAS`.
 
+### Teamwork
+Use the **primaryChannel** navigation property of a [team](/graph/api/resources/team?view=graph-rest-1.0) to access its default channel, **General**.
+
+### Users
+Use the **identities** property to access one or more identities that a [user](/graph/api/resources/user?view=graph-rest-1.0) can use to sign in to an Azure AD user account. The identities can be provided by Microsoft, organizations, or social identity providers such as Facebook, Google, or Microsoft. This property allows the user to sign in to the user account with any of these identities.
+
 ## January 2020: New in preview
 
+### Devices and apps
+Intune [January](changelog.md#january-2020) updates.
+
+### Identity and access
+Access specific types of [policies for an organization](/graph/api/resources/policy-overview?view=graph-rest-beta) using the `/policies` URL segment and specifying the policy type. For example, an organization can enforce a policy to automatically sign a user out from a web session after a period of inactivity; see CRUD operations for instances of [activityBasedTimeoutPolicy](/graph/api/resources/activitybasedtimeoutpolicy?view=graph-rest-beta). This is a [breaking change](https://developer.microsoft.com/identity/blogs/breaking-changes-policy-api-microsoft-graph-beta/) to make it easier to discover all policies, by grouping all typed policies under the `/policies` segment. Access other typed policies in a similar approach: [claimsMappingPolicy](/graph/api/resources/claimsmappingpolicy?view=graph-rest-beta), [homeRealmDiscoveryPolicy](/graph/api/resources/homerealmdiscoverypolicy?view=graph-rest-beta), and [tokenLifetimePolicy](/graph/api/resources/tokenlifetimepolicy?view=graph-rest-beta).
 
 
 ## Want to stay in the loop?
