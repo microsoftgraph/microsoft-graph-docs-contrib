@@ -11,7 +11,7 @@ doc_type: "resourcePageType"
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-The `userSet` type, used in the request, approval and assignment review settings of an [access package assignment policy](accesspackageassignmentpolicy.md), is the abstract base for the [singleUser](singleuser.md),[groupMembers](groupmembers.md), [connectedOrganizationMembers](connectedorganizationmembers.md), [manager](manager.md), [internalSponsors](internalsponsors.md) and [externalSponsors](externalsponsors.md) types.
+The `userSet` type, used in the request, approval and assignment review settings of an [access package assignment policy](accesspackageassignmentpolicy.md), is the abstract base for the [singleUser](singleuser.md),[groupMembers](groupmembers.md), [connectedOrganizationMembers](connectedorganizationmembers.md), [requestorManager](requestormanager.md), [internalSponsors](internalsponsors.md) and [externalSponsors](externalsponsors.md) types.
 
 ## Properties
 
