@@ -451,7 +451,7 @@ Tables can contain the following attributes in the input and output HTML. The On
 | width | Width of the table |
 | bgcolor | The background color of the table |
 
-**Note:** The use of the ***border*** attribute in the style property is not supported as an input. 
+**Note:** The use of the **border** attribute in the style property is not supported as an input. 
  
 
 #### Output attributes
