@@ -446,7 +446,7 @@ Tables can contain the following attributes in the input and output HTML. The On
 |Input attribute|Description|
 |:------|:------|
 | data-id | A reference for the element.<br/><br/>Used to [update page content](onenote-update-page.md). |
-| style | The CSS [style](#styles) properties of the element, and also:<br/> - **width**. Supported by **td** as pixels or percentage of page width.<br/><br/>Example: `width="100px"` or `width="60%"` |
+| style | The CSS [style](#styles) properties of the element, and also:<br/> - **width**. Supported by **table** and **td** as pixels or percentage of page width.<br/><br/>Example: `width="100px"` or `width="60%"` |
 | border | Adds border to table with specified width |
 | width | Width of the table |
 | bgcolor | The background color of the table |
