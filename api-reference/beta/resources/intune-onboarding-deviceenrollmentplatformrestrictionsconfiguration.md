@@ -73,49 +73,70 @@ Here is a JSON representation of the resource.
     "platformBlocked": true,
     "personalDeviceEnrollmentBlocked": true,
     "osMinimumVersion": "String",
-    "osMaximumVersion": "String"
+    "osMaximumVersion": "String",
+    "blockedManufacturers": [
+      "String"
+    ]
   },
   "windowsRestriction": {
     "@odata.type": "microsoft.graph.deviceEnrollmentPlatformRestriction",
     "platformBlocked": true,
     "personalDeviceEnrollmentBlocked": true,
     "osMinimumVersion": "String",
-    "osMaximumVersion": "String"
+    "osMaximumVersion": "String",
+    "blockedManufacturers": [
+      "String"
+    ]
   },
   "windowsMobileRestriction": {
     "@odata.type": "microsoft.graph.deviceEnrollmentPlatformRestriction",
     "platformBlocked": true,
     "personalDeviceEnrollmentBlocked": true,
     "osMinimumVersion": "String",
-    "osMaximumVersion": "String"
+    "osMaximumVersion": "String",
+    "blockedManufacturers": [
+      "String"
+    ]
   },
   "androidRestriction": {
     "@odata.type": "microsoft.graph.deviceEnrollmentPlatformRestriction",
     "platformBlocked": true,
     "personalDeviceEnrollmentBlocked": true,
     "osMinimumVersion": "String",
-    "osMaximumVersion": "String"
+    "osMaximumVersion": "String",
+    "blockedManufacturers": [
+      "String"
+    ]
   },
   "androidForWorkRestriction": {
     "@odata.type": "microsoft.graph.deviceEnrollmentPlatformRestriction",
     "platformBlocked": true,
     "personalDeviceEnrollmentBlocked": true,
     "osMinimumVersion": "String",
-    "osMaximumVersion": "String"
+    "osMaximumVersion": "String",
+    "blockedManufacturers": [
+      "String"
+    ]
   },
   "macRestriction": {
     "@odata.type": "microsoft.graph.deviceEnrollmentPlatformRestriction",
     "platformBlocked": true,
     "personalDeviceEnrollmentBlocked": true,
     "osMinimumVersion": "String",
-    "osMaximumVersion": "String"
+    "osMaximumVersion": "String",
+    "blockedManufacturers": [
+      "String"
+    ]
   },
   "macOSRestriction": {
     "@odata.type": "microsoft.graph.deviceEnrollmentPlatformRestriction",
     "platformBlocked": true,
     "personalDeviceEnrollmentBlocked": true,
     "osMinimumVersion": "String",
-    "osMaximumVersion": "String"
+    "osMaximumVersion": "String",
+    "blockedManufacturers": [
+      "String"
+    ]
   }
 }
 ```
