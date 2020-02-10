@@ -362,7 +362,7 @@ None.
 
 |Permission    |Display String   |Description |Admin Consent Required |
 |:-----------------------------|:-----------------------------------------|:-----------------|:-----------------|
-|_CallRecords.Read.All_|Allows the app to read call records for all calls and online meetings without a signed-in user.|Yes|
+|_CallRecords.Read.All_|Read all call records|Allows the app to read call records for all calls and online meetings without a signed-in user.|Yes|
 
 > **Important:** Discretion should be used when granting this permission to applications. Call records can provide insights into the operation of your business, and so can be a target for malicious actors. Only grant this permission to applications you trust to meet your data protection requirements.
 
