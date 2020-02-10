@@ -254,5 +254,10 @@ DELETE https://outlook.office.com/api/beta/Users('a8e8e219-4931-95c1-b73d-62626f
 ```http
 HTTP/1.1 204 No content
 ```
+## Errors
+
+### ErrorAttachmentSizeShouldNotBeLessThanMinimumSize
+
+This error indicates that UploadSession is used for a file size that's smaller than 3MB. If the file size is under 3 MB, you should do a single [POST on the attachments navigation property of the message](/graph/api/message-post-attachments?view=graph-rest-beta). The successful `POST` response includes the ID of the file attached to the message.
 
 
