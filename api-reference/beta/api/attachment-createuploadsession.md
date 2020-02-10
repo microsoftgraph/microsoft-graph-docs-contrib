@@ -13,7 +13,7 @@ doc_type: "apiPageType"
 
 Create an upload session that allows an app to iteratively upload ranges of a file, so as to attach the file to the specified [message](../resources/message.md).
 
-Use this approach to attach files of sizes between 3 MB and 150 MB to a **message**. To attach files of sizes under 4 MB, simply [POST on the attachments navigation property](message-post-attachments.md). 
+Use this approach to attach a file of size between 3 MB and 150 MB to a **message**. To attach a file of sizes under 3 MB, simply [POST on the attachments navigation property](message-post-attachments.md). 
 
 As part of the response, this action returns an upload URL that you can use in subsequent sequential `PUT` queries. Request headers for each `PUT` operation let you specify the exact range of bytes to be uploaded. This allows transfer to be resumed, in case the network connection is dropped during upload. 
 
