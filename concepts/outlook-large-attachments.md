@@ -258,6 +258,6 @@ HTTP/1.1 204 No content
 
 ### ErrorAttachmentSizeShouldNotBeLessThanMinimumSize
 
-This error indicates that UploadSession is used for a file size that's smaller than 3MB. If the file size is under 3 MB, you should do a single [POST on the attachments navigation property of the message](/graph/api/message-post-attachments?view=graph-rest-beta). The successful `POST` response includes the ID of the file attached to the message.
+This error indicates that **uploadSession** was used for a file smaller than 3 MB in size. If the file size is under 3 MB, you should do a single [POST on the attachments navigation property of the message](/graph/api/message-post-attachments?view=graph-rest-beta). The successful `POST` response includes the ID of the file attached to the message.
 
 
