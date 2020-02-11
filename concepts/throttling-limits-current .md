@@ -1,7 +1,6 @@
 ---
 title: "Microsoft Graph throttling limits and boundaries"
 description: "Throttling limits the number of concurrent calls to a service to prevent overuse of resources. Microsoft Graph is designed to handle a high volume of requests. If an overwhelming number of requests occurs, throttling helps maintain optimal performance and reliability of the Microsoft Graph service."
-author: "v-romad"
 localization_priority: Priority
 ---
 
@@ -48,7 +47,7 @@ The following limits apply to Office 365 Groups:
 | File storage|  1 Terabyte + 10 GB per subscribed user + any additional storage purchased. You can purchase an unlimited amount of additional storage.|
 | Group Mailbox size |  50 GB|
 
-Please refer to [Overview of Office 365 Groups for administrators](https://docs.microsoft.com/en-us/office365/admin/create-groups/office-365-groups?view=o365-worldwide)
+Please refer to [Overview of Office 365 Groups for administrators](/office365/admin/create-groups/office-365-groups?view=o365-worldwide)
 
  
 <!--If you exceed your limit you'll get an error code 429. Please do exponential back off, because if you've exceeded your limit for the day, it'll be more than a few seconds before you can do it again.-->
