@@ -9,7 +9,7 @@ author: "davidmu1"
 
 # servicePrincipal: checkMemberGroups
 
-Check for membership in the specified list of groups. Returns from the list those groups of which the serviceprincipal has a direct or transitive membership.
+Check for membership in the specified list of groups. Returns from the list those groups of which the [servicePrincipal](../resources/serviceprincipal.md) has a direct or transitive membership.
 
 ## Permissions
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
@@ -30,7 +30,7 @@ POST /servicePrincipals/{id}/checkMemberGroups
 | Name       | Description|
 |:-----------|:----------|
 | Authorization | Bearer {token}. Required.  |
-| Content-type | application/json. Required. |
+| Content-Type | application/json. Required. |
 
 ## Request body
 In the request body, provide a JSON object with the following parameters.

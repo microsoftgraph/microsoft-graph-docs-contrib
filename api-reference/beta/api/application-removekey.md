@@ -36,7 +36,7 @@ POST /applications/{id}/removePassword
 | Name           | Description                |
 |:---------------|:---------------------------|
 | Authorization  | Bearer {token}. Required.  |
-| Content-Type   | application/json. Required.|
+| Content-type   | application/json. Required.|
 
 ## Request body
 

@@ -9,7 +9,7 @@ author: "davidmu1"
 
 # List servicePrincipal transitive memberOf
 
-Get the groups and directory roles that this service principal is a member of. This operation is transitive and will include all groups that this service principal is a nested member of.
+Get the groups and directory roles that this [servicePrincipal](../resources/serviceprincipal.md) is a member of. This operation is transitive and will include all groups that this service principal is a nested member of.
 
 ## Permissions
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
@@ -19,6 +19,8 @@ One of the following permissions is required to call this API. To learn more, in
 |Delegated (work or school account) | Application.Read.All, Application.ReadWrite.All, Directory.Read.All, Directory.ReadWrite.All, Directory.AccessAsUser.All    |
 |Delegated (personal Microsoft account) | Not supported.    |
 |Application | Application.Read.All, Application.ReadWrite.All, Directory.Read.All, Directory.ReadWrite.All |
+
+[!INCLUDE [limited-info](../../includes/limited-info.md)]
 
 ## HTTP request
 <!-- { "blockType": "ignored" } -->

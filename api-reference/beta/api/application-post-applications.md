@@ -13,6 +13,9 @@ ms.prod: "microsoft-identity-platform"
 
 Create a new [application](../resources/application.md) object.
 
+> [!IMPORTANT]
+> Adding [**passwordCredential**](../resources/passwordcredential.md) when creating applications is not supported. Use the [addPassword](application-addpassword.md) method to add passwords for an application.
+
 ## Permissions
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
 
@@ -33,7 +36,7 @@ POST /applications
 | Name           | Description                |
 |:---------------|:---------------------------|
 | Authorization  | Bearer {token}. Required.  |
-| Content-type   | application/json. Required.|
+| Content-Type   | application/json. Required.|
 
 ## Request body
 In the request body, supply a JSON representation of [application](../resources/application.md) object. The request body must contain  **displayName**, which is a required property.

@@ -11,7 +11,7 @@ author: "davidmu1"
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Retrieve a list of objects owned by the servicePrincipal.  This could include applications or groups.
+Retrieve a list of objects owned by the [servicePrincipal](../resources/serviceprincipal.md).  This could include applications or groups.
 
 ## Permissions
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).

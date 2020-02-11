@@ -86,7 +86,7 @@ See:</br>
   "name": "servicePrincipal_delta"
 }-->
 ```http
-GET https://graph.microsoft.com/beta/servicePrincipals/delta
+GET https://graph.microsoft.com/v1.0/servicePrincipals/delta
 ```
 
 ##### Response
@@ -102,8 +102,8 @@ HTTP/1.1 200 OK
 Content-type: application/json
 
 {
-  "@odata.context":"https://graph.microsoft.com/beta/$metadata#servicePrincipals",
-  "@odata.nextLink":"https://graph.microsoft.com/beta/servicePrincipals/delta?$skiptoken=pqwSUjGYvb3jQpbwVAwEL7yuI3dU1LecfkkfLPtnIjsXoYQp_dpA3cNJWc",
+  "@odata.context":"https://graph.microsoft.com/v1.0/$metadata#servicePrincipals",
+  "@odata.nextLink":"https://graph.microsoft.com/v1.0/servicePrincipals/delta?$skiptoken=pqwSUjGYvb3jQpbwVAwEL7yuI3dU1LecfkkfLPtnIjsXoYQp_dpA3cNJWc",
   "value": [
      {
       "accountEnabled": true,

@@ -11,7 +11,7 @@ author: "davidmu1"
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Get the list of groups that this service principal is a member of.  The check is transitive.
+Get the list of groups that this [servicePrincipal](../resources/serviceprincipal.md) is a member of.  The check is transitive.
 
 ## Permissions
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).

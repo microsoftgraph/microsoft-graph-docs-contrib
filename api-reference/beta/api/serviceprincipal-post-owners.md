@@ -11,7 +11,7 @@ author: "davidmu1"
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Use this API to add an owner for the service principal.
+Use this API to add an owner for the [servicePrincipal](../resources/serviceprincipal.md).
 
 ## Permissions
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
@@ -29,9 +29,9 @@ POST /servicePrincipals/{id}/owners
 
 ```
 ## Request headers
-| Name       | Type | Description|
-|:---------------|:--------|:----------|
-| Authorization  | string  | Bearer {token}. Required. |
+| Name       | Description|
+|:-----------|:----------|
+| Authorization | Bearer {token}. Required.  |
 
 ## Request body
 In the request body, supply a JSON representation of [directoryObject](../resources/directoryobject.md) object.

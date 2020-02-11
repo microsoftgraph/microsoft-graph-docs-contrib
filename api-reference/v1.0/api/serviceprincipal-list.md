@@ -9,7 +9,7 @@ doc_type: apiPageType
 
 # List servicePrincipals
 
-Retrieve a list of servicePrincipal objects.
+Retrieve a list of [servicePrincipal](../resources/serviceprincipal.md) objects.
 
 ## Permissions
 

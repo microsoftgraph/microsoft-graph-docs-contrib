@@ -11,7 +11,7 @@ author: "davidmu1"
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Get the groups and directory roles that this service principal is a direct member of. This operation is not transitive.
+Get the groups and directory roles that this [servicePrincipal](../resources/serviceprincipal.md) is a direct member of. This operation is not transitive.
 
 ## Permissions
 

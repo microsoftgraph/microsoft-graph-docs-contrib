@@ -9,7 +9,7 @@ author: "davidmu1"
 
 # List servicePrincipal memberOf
 
-Get the groups and directory roles that this service principal is a direct member of. This operation is not transitive.
+Get the groups and directory roles that this [servicePrincipal](../resources/serviceprincipal.md) is a direct member of. This operation is not transitive.
 
 ## Permissions
 
@@ -20,6 +20,8 @@ One of the following permissions is required to call this API. To learn more, in
 |Delegated (work or school account) | Application.Read.All, Application.ReadWrite.All, Directory.Read.All, Directory.ReadWrite.All, Directory.AccessAsUser.All    |
 |Delegated (personal Microsoft account) | Not supported.    |
 |Application | Application.Read.All, Application.ReadWrite.All, Directory.Read.All, Directory.ReadWrite.All |
+
+[!INCLUDE [limited-info](../../includes/limited-info.md)]
 
 ## HTTP request
 

@@ -9,7 +9,7 @@ doc_type: "apiPageType"
 
 # servicePrincipal: checkMemberObjects
 
-Check for membership in a list of groups, directory roles, or administrative units for the specified service principle object. This method is transitive.
+Check for membership in a list of groups, directory roles, or administrative units for the specified [servicePrincipal](../resources/serviceprincipal.md) object. This method is transitive.
 
 ## Permissions
 
@@ -33,7 +33,7 @@ POST /servicePrincipals/{id}/checkMemberObjects
 | Name       | Description|
 |:-----------|:----------|
 | Authorization | Bearer {token}. Required.  |
-| Content-type | application/json. Required. |
+| Content-Type | application/json. Required. |
 
 ## Request body
 

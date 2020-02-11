@@ -7,9 +7,12 @@ doc_type: apiPageType
 ms.prod: "microsoft-identity-platform"
 ---
 
-# Create serviceprincipal
+# Create servicePrincipal
 
-Create a new [serviceprincipal](../resources/serviceprincipal.md) object.
+Create a new [servicePrincipal](../resources/serviceprincipal.md) object.
+
+> [!IMPORTANT]
+> Adding [**passwordCredential**](../resources/passwordcredential.md) when creating servicePrincipals is not supported. Use the [addPassword](serviceprincipal-addpassword.md) method to add passwords for a servicePrincipal.
 
 ## Permissions
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
@@ -31,10 +34,10 @@ POST /serviceprincipals
 | Name       | Description|
 |:-----------|:----------|
 | Authorization | Bearer {token}. Required.  |
-| Content-type | application/json. Required. |
+| Content-Type | application/json. Required. |
 
 ## Request body
-In the request body, supply a JSON representation of [serviceprincipal](../resources/serviceprincipal.md) object. The request body must contain  **appId**, which is a required property.
+In the request body, supply a JSON representation of [serviceprincipal](../resources/serviceprincipal.md) object. The request body must contain  **appId**.
 
 ## Response
 

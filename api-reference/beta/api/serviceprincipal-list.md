@@ -11,7 +11,7 @@ doc_type: apiPageType
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Retrieve a list of servicePrincipal objects.
+Retrieve a list of [servicePrincipal](../resources/serviceprincipal.md) objects.
 
 ## Permissions
 

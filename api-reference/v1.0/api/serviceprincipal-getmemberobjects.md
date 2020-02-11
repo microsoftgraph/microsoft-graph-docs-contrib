@@ -9,7 +9,7 @@ author: "davidmu1"
 
 # servicePrincipal: getMemberObjects
 
-Get the list of groups and directory roles that this service principal is a member of.  This check is transitive.
+Get the list of groups and directory roles that this [servicePrincipal](../resources/serviceprincipal.md) is a member of.  This check is transitive.
 
 ## Permissions
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).

@@ -8444,22 +8444,38 @@
           href: api/directory-deleteditems-delete.md
         - name: Restore deleted application
           href: api/directory-deleteditems-restore.md
-        - name: Add password
-          href: api/application-addpassword.md
-        - name: Remove password
-          href: api/application-removepassword.md
-        - name: List extensions
-          href: api/application-list-extensionproperty.md
-        - name: Create extension
-          href: api/application-post-extensionproperty.md
-        - name: Delete extension
-          href: api/application-delete-extensionproperty.md
-        - name: List owners
-          href: api/application-list-owners.md
-        - name: Add owner
-          href: api/application-post-owners.md
-        - name: Remove owner
-          href: api/application-delete-owners.md
+        - name: Certificates & secrets
+          items:
+          - name: Add password
+            href: api/application-addpassword.md
+          - name: Remove password
+            href: api/application-removepassword.md
+        - name: Extensions
+          items:
+          - name: List extensions
+            href: api/application-list-extensionproperty.md
+          - name: Create extension
+            href: api/application-post-extensionproperty.md
+          - name: Delete extension
+            href: api/application-delete-extensionproperty.md
+        - name: Owners
+          items:
+          - name: List owners
+            href: api/application-list-owners.md
+          - name: Add owner
+            href: api/application-post-owners.md
+          - name: Remove owner
+            href: api/application-delete-owners.md
+        - name: Policies
+          items:
+          - name: List assigned policies
+            href: api/policy-list-assigned.md
+          - name: Assign tokenLifetimePolicy
+            href: api/application-post-tokenlifetimepolicies.md
+          - name: List tokenLifetimePolicies
+            href: api/application-list-tokenlifetimepolicies.md
+          - name: Remove tokenLifetimePolicy
+            href: api/application-delete-tokenlifetimepolicies.md
         - name: Application template
           href: resources/applicationtemplate.md
           items:
@@ -9166,44 +9182,12 @@
           href: api/serviceprincipal-update.md
         - name: Delete service principal
           href: api/serviceprincipal-delete.md
-        - name: Add password
-          href: api/serviceprincipal-addpassword.md
-        - name: Remove password
-          href: api/serviceprincipal-removepassword.md
-        - name: List owners
-          href: api/serviceprincipal-list-owners.md
-        - name: Add owner
-          href: api/serviceprincipal-post-owners.md
-        - name: Remove owner
-          href: api/serviceprincipal-delete-owners.md
-        - name: List assigned policies
-          href: api/policy-list-assigned.md
         - name: List createdObjects
           href: api/serviceprincipal-list-createdobjects.md
         - name: List ownedObjects
           href: api/serviceprincipal-list-ownedobjects.md
-        - name: List memberOf
-          href: api/serviceprincipal-list-memberof.md
-        - name: List transitive memberOf
-          href: api/serviceprincipal-list-transitivememberof.md
-        - name: checkMemberGroups
-          href: api/serviceprincipal-list-checkmembergroups.md
-        - name: checkMemberObjects
-          href: api/serviceprincipal-checkmemberobjects.md
-        - name: getMemberGroups
-          href: api/serviceprincipal-getmembergroups.md
-        - name: getMemberObjects
-          href: api/serviceprincipal-getmemberobjects.md
         - name: delta
           href: api/serviceprincipal-delta.md
-        - name: Create password single sign on credentials
-          href: api/serviceprincipal-createpasswordsinglesignoncredentials.md
-        - name: Get password single sign on credentials
-          href: api/serviceprincipal-getpasswordsinglesignoncredentials.md
-        - name: Update password single sign on credentials
-          href: api/serviceprincipal-updatepasswordsinglesignoncredentials.md
-        - name: Delete password single sign on credentials
-          href: api/serviceprincipal-deletepasswordsinglesignoncredentials.md
         - name: App role assignments
           href: resources/approleassignment.md
           items:
@@ -9219,6 +9203,70 @@
             href: api/approleassignment-post.md
           - name: Remove app role assigned to
             href: api/approleassignment-delete.md
+        - name: Delegated permission grants
+          items:
+          - name: List oauth2PermissionGrants
+            href: api/serviceprincipal-list-oauth2permissiongrants.md
+        - name: Certificates & secrets
+          items:
+          - name: Add password
+            href: api/serviceprincipal-addpassword.md
+          - name: Remove password
+            href: api/serviceprincipal-removepassword.md
+        - name: Membership
+          items:
+          - name: List memberOf
+            href: api/serviceprincipal-list-memberof.md
+          - name: List transitive memberOf
+            href: api/serviceprincipal-list-transitivememberof.md
+          - name: checkMemberGroups
+            href: api/serviceprincipal-list-checkmembergroups.md
+          - name: checkMemberObjects
+            href: api/serviceprincipal-checkmemberobjects.md
+          - name: getMemberGroups
+            href: api/serviceprincipal-getmembergroups.md
+          - name: getMemberObjects
+            href: api/serviceprincipal-getmemberobjects.md
+        - name: Owners
+          items:
+          - name: List owners
+            href: api/serviceprincipal-list-owners.md
+          - name: Add owner
+            href: api/serviceprincipal-post-owners.md
+          - name: Remove owner
+            href: api/serviceprincipal-delete-owners.md
+        - name: Policies
+          items:
+          - name: List assigned policies
+            href: api/policy-list-assigned.md
+          - name: Assign claimsMappingPolicy
+            href: api/serviceprincipal-post-claimsmappingpolicies.md
+          - name: List claimsMappingPolicies]
+            href: api/serviceprincipal-list-claimsmappingpolicies.md
+          - name: Remove claimsMappingPolicy
+            href: api/serviceprincipal-delete-claimsmappingpolicies.md
+          - name: Assign homeRealmDiscoveryPolicy
+            href: api/serviceprincipal-post-homerealmdiscoverypolicies.md
+          - name: List homeRealmDiscoveryPolicies
+            href: api/serviceprincipal-list-homerealmdiscoverypolicies.md
+          - name: Remove homeRealmDiscoveryPolicy
+            href: api/serviceprincipal-delete-homerealmdiscoverypolicies.md
+          - name: Assign tokenLifetimePolicy
+            href: api/application-post-tokenlifetimepolicies.md
+          - name: List tokenLifetimePolicies
+            href: api/application-list-tokenlifetimepolicies.md
+          - name: Remove tokenLifetimePolicy
+            href: api/application-delete-tokenlifetimepolicies.md
+        - name: Single sign on
+          items:
+          - name: Create password single sign on credentials
+            href: api/serviceprincipal-createpasswordsinglesignoncredentials.md
+          - name: Get password single sign on credentials
+            href: api/serviceprincipal-getpasswordsinglesignoncredentials.md
+          - name: Update password single sign on credentials
+            href: api/serviceprincipal-updatepasswordsinglesignoncredentials.md
+          - name: Delete password single sign on credentials
+            href: api/serviceprincipal-deletepasswordsinglesignoncredentials.md
       - name: Subscribed sku
         href: resources/subscribedsku.md
         items:

@@ -9,7 +9,7 @@ author: "davidmu1"
 
 # servicePrincipals: List owners
 
-Retrieve a list of owners of the servicePrincipal.
+Retrieve a list of owners of the [servicePrincipal](../resources/serviceprincipal.md).
 
 ## Permissions
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
@@ -19,6 +19,8 @@ One of the following permissions is required to call this API. To learn more, in
 |Delegated (work or school account) | Application.Read.All, Application.ReadWrite.All, Directory.Read.All, Directory.ReadWrite.All, Directory.AccessAsUser.All    |
 |Delegated (personal Microsoft account) | Not supported.    |
 |Application | Application.Read.All, Application.ReadWrite.All, Directory.Read.All, Directory.ReadWrite.All |
+
+[!INCLUDE [limited-info](../../includes/limited-info.md)]
 
 ## HTTP request
 <!-- { "blockType": "ignored" } -->

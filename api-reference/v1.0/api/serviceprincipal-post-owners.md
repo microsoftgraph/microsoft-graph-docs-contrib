@@ -9,7 +9,7 @@ author: "davidmu1"
 
 # servicePrincipal: Add owner
 
-Use this API to add an owner for the service principal.
+Use this API to add an owner for the [servicePrincipal](../resources/serviceprincipal.md).
 
 ## Permissions
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
@@ -30,7 +30,7 @@ POST /servicePrincipals/{id}/owners
 | Name       | Description|
 |:-----------|:----------|
 | Authorization | Bearer {token}. Required.  |
-| Content-type | application/json. Required. |
+| Content-Type | application/json. Required. |
 
 ## Request body
 In the request body, supply a JSON representation of [directoryObject](../resources/directoryobject.md) object.

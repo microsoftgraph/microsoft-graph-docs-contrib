@@ -11,7 +11,7 @@ author: "davidmu1"
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Check for membership in the specified list of groups. Returns from the list those groups of which the serviceprincipal has a direct or transitive membership.
+Check for membership in the specified list of groups. Returns from the list those groups of which the [servicePrincipal](../resources/serviceprincipal.md) has a direct or transitive membership.
 
 ## Permissions
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
