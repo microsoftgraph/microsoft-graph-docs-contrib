@@ -111,6 +111,12 @@ Content-type: application/json
     "canShare":true,
     "canViewPrivateItems":true,
     "canEdit":true,
+    "allowedOnlineMeetingProviders": [
+                "teamsForBusiness"
+            ],
+    "defaultOnlineMeetingProvider": "teamsForBusiness",
+    "isTallyingResponses": true,
+    "isRemovable": false,
     "owner":{
         "name":"Samantha Booth",
         "address":"samanthab@adatum.onmicrosoft.com"
