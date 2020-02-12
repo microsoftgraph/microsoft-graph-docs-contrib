@@ -932,10 +932,6 @@
           href: resources/callrecords-callrecord.md
         - name: Get call record
           href: api/callrecords-callrecord-get.md
-        - name: Session
-          href: resources/callrecords-session.md
-        - name: Segment
-          href: resources/callrecords-segment.md
     - name: Cross-device experiences
       displayName: Project Rome
       items:
