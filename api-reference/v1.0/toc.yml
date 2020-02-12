@@ -720,6 +720,15 @@
           href: api/calendargroup-list-calendars.md
         - name: Create calendar in calendar group
           href: api/calendargroup-post-calendars.md
+       - name: Calendar permission
+        href: resources/calendarpermission.md
+        items:
+        - name: Get
+          href: api/calendarpermission-get.md
+        - name: Update
+          href: api/calendarpermission-update.md
+        - name: Delete
+          href: api/calendarpermission-delete.md
       - name: Categories
         href: resources/outlookcategory.md
         items:
