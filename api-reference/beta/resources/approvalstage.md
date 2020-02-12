@@ -1,29 +1,27 @@
 ---
-title: "approvalStage complex type"
-description: "The approvalStage type, used for the approvalStages property of approval settings in the requestApprovalSettings property of an access package assignment policy, specifies the primary, fallback and escalation approvers of each stage."
+title: "approvalStage resource type"
+description: "Used for the approvalStages property of approval settings in the requestApprovalSettings property of an access package assignment policy. Specifies the primary, fallback, and escalation approvers of each stage."
 localization_priority: Normal
 author: "markwahl-msft"
 ms.prod: "microsoft-identity-platform"
 doc_type: "resourcePageType"
 ---
 
-# approvalStages complex type
+# approvalStages resource type
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-The `approvalStage` type, used for the `approvalStages` property of approval settings in the `requestApprovalSettings` property of an [access package assignment policy](accesspackageassignmentpolicy.md), specifies the primary, fallback and escalation approvers of each stage.
+Used for the **approvalStages** property of approval settings in the **requestApprovalSettings** property of an [access package assignment policy](accesspackageassignmentpolicy.md). Specifies the primary, fallback, and escalation approvers of each stage.
 
 ## Properties
-
-This type has the following properties:
 
 | Property                     | Type                      | Description |
 | :--------------------------- | :------------------------ | :---------- |
 | approvalStageTimeOutInDays |Int32 | The number of days that a request can be pending a response before it is automatically denied. |
-| isApproverJustificationRequired |Boolean | Is the approver required to provide a justification for approving a request. |
+| isApproverJustificationRequired |Boolean | Indicates whether the approver is required to provide a justification for approving a request. |
 | isEscalationEnabled |Boolean | If true, then one or more escalation approvers are configured in this approval stage. |
 | escalationTimeInMinutes |Int32 | If escalation is required, the time a request can be pending a response from a primary approver. |
-| primaryApprovers | [userSet](userset.md) collection| The users who will be asked to approve requests, a collection of [singleUser](singleuser.md), [groupMembers](groupmembers.md), [requestorManager](requestormanager.md), [internalSponsors](internalsponsors.md) and [externalSponsors](externalsponsors.md). |
+| primaryApprovers | [userSet](userset.md) collection| The users who will be asked to approve requests. A collection of [singleUser](singleuser.md), [groupMembers](groupmembers.md), [requestorManager](requestormanager.md), [internalSponsors](internalsponsors.md) and [externalSponsors](externalsponsors.md). |
 | escalationApprovers | [userSet](userset.md) collection| If escalation is enabled and the primary approvers do not respond before the escalation time, the escalationApprovers are the users who will be asked to approve requests. This can be a collection of [singleUser](singleuser.md), [groupMembers](groupmembers.md), [requestorManager](requestormanager.md), [internalSponsors](internalsponsors.md) and [externalSponsors](externalsponsors.md).|
 
 
