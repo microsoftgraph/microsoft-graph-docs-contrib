@@ -9228,7 +9228,7 @@
           - name: List transitive memberOf
             href: api/serviceprincipal-list-transitivememberof.md
           - name: checkMemberGroups
-            href: api/serviceprincipal-list-checkmembergroups.md
+            href: api/serviceprincipal-checkmembergroups.md
           - name: checkMemberObjects
             href: api/serviceprincipal-checkmemberobjects.md
           - name: getMemberGroups
