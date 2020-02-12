@@ -11,8 +11,10 @@ Following are the current throttling limits:
  
 > [!Note]
 > The specific limits described here are subject to change.
+> There may be additional limits we have not documented, think of this as the maximum your app might be able to do rather than a guarantee of what your app can do. 
 
-##### Generic limits:
+
+#### Generic limits
 | Teams request type                                   | Value      |
 |-------------------------------------------|------------|
 | Graph API calls for an app/tenant         | 15000 requests/10 seconds |
@@ -21,7 +23,7 @@ Following are the current throttling limits:
 | POST/PUT/PATCH/DELETE /teams/```{team-id}```|  15 rps |
 | POST /teams/```{team-id}``` | 6 rps |
 
-##### Messaging limits:
+#### Messaging limits
 
 | Teams request type                  | Value   |
 |---------------------------|-------------|
@@ -31,9 +33,8 @@ Following are the current throttling limits:
 | Post channel messages for a user | 3000 messages/day per channel |
 
 
-> !Note There may be additional limits we have not documented, think of this as the maximum your app might be able to do rather than a guarantee of what your app can do. 
 
-##### Group limits:
+#### Group limits
 
 The following limits apply to Office 365 Groups:
 
@@ -47,16 +48,15 @@ The following limits apply to Office 365 Groups:
 | File storage|  1 Terabyte + 10 GB per subscribed user + any additional storage purchased. You can purchase an unlimited amount of additional storage.|
 | Group Mailbox size |  50 GB|
 
-Please refer to [Overview of Office 365 Groups for administrators](/office365/admin/create-groups/office-365-groups?view=o365-worldwide)
+Please refer to [Overview of Office 365 Groups for administrators](/office365/admin/create-groups/office-365-groups?view=o365-worldwide) for more information.
 
- 
-<!--If you exceed your limit you'll get an error code 429. Please do exponential back off, because if you've exceeded your limit for the day, it'll be more than a few seconds before you can do it again.-->
-When throttling occurs, Microsoft Graph returns HTTP status code 429 (Too many requests) including the `Retry-After` response header, and the requests fail. To recover from throttling, back off the request using the `Retry-After` delay because Microsoft Graph continues to log resource usage while a client is being throttled.
- 
-#### Scenarios that are explicitly not supported:
+**Scenarios that are explicitly not supported**
 - Using Teams as a log file. When you send a message, you should expect a person to read it.
 - Migrating messages from other messaging products or installations. We will not extend your limits.
 
+ <!--If you exceed your limit you'll get an error code 429. Please do exponential back off, because if you've exceeded your limit for the day, it'll be more than a few seconds before you can do it again.-->
+
+If you exceed your limit, doing an exponential backoff with a random jitter is the recommended way to handle 429s. This ensures that multiple requests don't introduce collisions on retries. 
 
 #### Azure AD service limits and restrictions
 
@@ -64,10 +64,9 @@ A maximum of 50,000 Azure AD resources can be created in a single directory by u
 
 A non-admin user can create maximum 250 Azure AD resources. Both active resources and deleted resources that are available to restore, count toward this quota. Only deleted Azure AD resources that were deleted fewer than 30 days ago are available to restore. Deleted Azure AD resources that are no longer available to restore count toward this quota at a value of one-quarter for 30 days. If you have developers who are likely to repeatedly exceed this quota in the course of their regular duties, you can [create and assign a custom role](/azure/active-directory/users-groups-roles/roles-quickstart-app-registration-limits) with permission to create a limitless number of app registrations.
 
-Please refer to [Azure AD service limits and restrictions](/azure/active-directory/users-groups-roles/directory-service-limits-restrictions)
+Please refer to [Azure AD service limits and restrictions.](/azure/active-directory/users-groups-roles/directory-service-limits-restrictions)
 
 See also [SharePoint online limits](/office365/servicedescriptions/sharepoint-online-service-description/sharepoint-online-limits)
-and [Software boundaries and limits for SharePoint Servers 2016 and 2019](/sharepoint/install/software-boundaries-and-limits-0)
+and [Software boundaries and limits for SharePoint Servers 2016 and 2019.](/sharepoint/install/software-boundaries-and-limits-0)
 
 
-For internal usage, please refer: [Teams Graph throttling Limits](https://microsoft.sharepoint.com/teams/ExtensibilityandFundamentals/_layouts/15/Doc.aspx?sourcedoc=%7BC4AC7B5C-0435-437E-BFD3-190E9BC71227%7D&file=TeamsGraphThrottlingLimits.xlsx&action=default&mobileredirect=true)
