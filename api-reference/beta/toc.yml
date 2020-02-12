@@ -8450,6 +8450,10 @@
             href: api/application-addpassword.md
           - name: Remove password
             href: api/application-removepassword.md
+          - name: Add key
+            href: api/application-addkey.md
+          - name: Remove key
+            href: api/application-removekey.md
         - name: Extensions
           items:
           - name: List extensions
@@ -9203,16 +9207,20 @@
             href: api/approleassignment-post.md
           - name: Remove app role assigned to
             href: api/approleassignment-delete.md
-        - name: Delegated permission grants
-          items:
-          - name: List oauth2PermissionGrants
-            href: api/serviceprincipal-list-oauth2permissiongrants.md
         - name: Certificates & secrets
           items:
           - name: Add password
             href: api/serviceprincipal-addpassword.md
           - name: Remove password
             href: api/serviceprincipal-removepassword.md
+          - name: Add key
+            href: api/serviceprincipal-addkey.md
+          - name: Remove key
+            href: api/serviceprincipal-removekey.md
+        - name: Delegated permission grants
+          items:
+          - name: List oauth2PermissionGrants
+            href: api/serviceprincipal-list-oauth2permissiongrants.md
         - name: Membership
           items:
           - name: List memberOf

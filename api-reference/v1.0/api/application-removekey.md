@@ -9,8 +9,6 @@ doc_type: "apiPageType"
 
 # application: removeKey
 
-[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
-
 Removes a key credential from an [application](../resources/application.md). This method along with [addKey](application-addkey.md) can be used by an application to programmatically rotate it's expiring keys without a user's context.
 
 > [!Note]
@@ -84,7 +82,7 @@ The following is an example of the request.
 }-->
 
 ```http
-POST https://graph.microsoft.com/beta/applications/{id}/removeKey
+POST https://graph.microsoft.com/v1.0/applications/{id}/removeKey
 Content-Type: application/json
 
 {

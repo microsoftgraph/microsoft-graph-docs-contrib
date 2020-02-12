@@ -1,28 +1,26 @@
 ---
-title: "application: removeKey"
-description: "Remove a key credential from an application"
+title: "application: addKey"
+description: "Add a key credential to an application."
 localization_priority: Normal
 author: "davidmu1"
 ms.prod: "microsoft-identity-platform"
 doc_type: "apiPageType"
 ---
 
-# application: removeKey
+# application: addKey
 
-[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
-
-Removes a key credential from an [application](../resources/application.md). This method along with [addKey](application-addkey.md) can be used by an application to programmatically rotate it's expiring keys without a user's context.
+Adds a key credential to an [application](../resources/application.md). This method along with [removeKey](application-removekey.md) can be used by an application to programmatically rotate it's expiring keys without a user's context.
 
 > [!Note]
-> [Create servicePrincipal](../api/serviceprincipal-post-serviceprincipals.md) and
-[Update servicePrincipal](../api/serviceprincipal-update.md) operations can continue to be used to add and update key credentials for any application with application or a user's context.
+> [Create application](../api/application-post-applications.md) and
+[Update application](../api/application-update.md) operations can continue to be used to add and update key credentials for any application with or without a user's context.
 
 As part of the request validation for this method, a proof of possession of an existing key is verified before the action can be performed. The proof is represented by a self-signed JWT token. The requesting application needs to generate a self-signed JWT token with the following requirements.
 
 Required claims:
 
 - aud - Audience needs to be `00000002-0000-0000-c000-000000000000` (i.e. AAD Graph).
-- iss - Issuer needs to be the __id__ (i.e. Object ID)  of the application that is making the call..
+- iss - Issuer needs to be the __id__ (i.e. Object ID) of the application that is making the call..
 - nbf - not before time
 - exp - expiration time should be "nbf" + 10 mins.
 
@@ -49,7 +47,7 @@ None. An application does not need any specific permission to rotate it's own ke
 <!-- { "blockType": "ignored" } -->
 
 ```http
-POST /applications/{id}/removeKey
+POST /applications/{id}/addKey
 ```
 
 ## Request headers
@@ -61,39 +59,94 @@ POST /applications/{id}/removeKey
 
 ## Request body
 
-| Property	| Type | Description|
-|:----------|:-----|:-----------|
-| keyId     | GUID | The unique identifier for the password. Required. |
+In the request body, provide the following properties.
+
+| Property	   | Type	|Description|
+|:---------------|:--------|:----------|
+| keyCredential | [keyCredential](../resources/keycredential.md) | The application key credential to add. Supported key types are:<br><ul><li>`AsymmetricX509Cert`: The usage must be `Verify`.</li><li>`X509CertAndPassword`: The usage must be `Sign`</li></ul><br>Required. |
+| passwordCredential | [passwordCredential](../resources/passwordcredential.md) | Required only for keys of type `X509CertAndPassword`. Set it to `null` otherwise.|
 | proof | String | A self-signed JWT token used as a proof of possession of the existing keys. The token signing key is the private key of one of the application existing certificates. The token should contain the following claims:<ul><li>`aud` - Audience needs to be `00000002-0000-0000-c000-000000000000` (i.e. AAD Graph).</li><li>`iss` - Issuer needs to be the __id__ (i.e. Object ID)  of the application that is making the call.</li><li>`nbf` - Not before time.</li><li>`exp` - Expiration time should be "nbf" + 10 mins.</li></ul><br>Required.|
 
 ## Response
 
-If successful, this method returns a `204 No content` response code.
+If successful, this method returns a `200 OK` response code and a new [keyCredential](../resources/keycredential.md) object in the response body.
 
 ## Examples
 
-The following is example shows how to call this API.
+### Example 1: Adding a new key credential to an application
 
-### Request
+#### Request
 
 The following is an example of the request.
 
 <!-- {
   "blockType": "request",
-  "name": "application_removekey"
+  "name": "application_addkey"
 }-->
 
 ```http
-POST https://graph.microsoft.com/beta/applications/{id}/removeKey
-Content-Type: application/json
+POST https://graph.microsoft.com/v1.0/applications/{id}/addKey
+Content-type: application/json
 
 {
-    "keyId": "f0b0b335-1d71-4883-8f98-567911bfdca6",
+    "keyCredential": {
+        "type": "AsymmetricX509Cert",
+        "usage": "Verify",
+        "key": "MIIDYDCCAki..."
+    },
+    "passwordCredential": null,
     "proof":"eyJ0eXAiOiJ..."
 }
 ```
 
-### Response
+#### Response
+
+The following is an example of the response.
+
+<!-- {
+  "blockType": "response",
+  "truncated": true,
+  "@odata.type": "microsoft.graph.keyCredential"
+} -->
+
+```http
+HTTP/1.1 200 OK
+Content-Type: application/json
+
+{
+    "@odata.context": "https://graph.microsoft.com/v1.0/$metadata#microsoft.graph.keyCredential"
+}
+```
+
+### Example 2: Adding a key credential and an associated password for the key
+
+#### Request
+
+The following is an example of the request.
+
+<!-- {
+  "blockType": "request",
+  "name": "application_addkey"
+}-->
+
+```http
+POST https://graph.microsoft.com/v1.0/applications/{id}/addKey
+Content-type: application/json
+
+{
+    "keyCredential": {
+        "type": "X509CertAndPassword",
+        "usage": "Sign",
+        "key": "MIIDYDCCAki..."
+    },
+    "passwordCredential": {
+        "secretText": "MKTr0w1..."
+    },
+    "proof":"eyJ0eXAiOiJ..."
+}
+```
+
+#### Response
 
 The following is an example of the response.
 
@@ -103,14 +156,19 @@ The following is an example of the response.
 } -->
 
 ```http
-HTTP/1.1 204 No Content
+HTTP/1.1 200 OK
+Content-Type: application/json
+
+{
+    "@odata.context": "https://graph.microsoft.com/v1.0/$metadata#microsoft.graph.keyCredential"
+}
 ```
 
 <!-- uuid: 16cd6b66-4b1a-43a1-adaf-3a886856ed98
 2019-02-04 14:57:30 UTC -->
 <!-- {
   "type": "#page.annotation",
-  "description": "application: removeKey",
+  "description": "application: addKey",
   "keywords": "",
   "section": "documentation",
   "tocPath": ""
