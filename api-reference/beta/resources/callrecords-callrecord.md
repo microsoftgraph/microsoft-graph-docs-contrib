@@ -11,7 +11,7 @@ doc_type: "resourcePageType"
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-The callRecord type.
+The callRecord type. Represents a single peer-to-peer call or a group call between multiple participants, sometimes referred to as an online meeting.
 
 ## Methods
 

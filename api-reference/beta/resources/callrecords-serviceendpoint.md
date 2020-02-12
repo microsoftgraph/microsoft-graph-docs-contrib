@@ -27,8 +27,8 @@ The following is a JSON representation of the resource.
   "optionalProperties": [
 
   ],
-  "@odata.type": "microsoft.graph.endpoint",
-  "baseType": null
+  "@odata.type": "microsoft.graph.callRecords.serviceEndpoint",
+  "baseType": "microsoft.graph.callRecords.endpoint"
 }-->
 
 ```json

@@ -14,8 +14,8 @@ ms.prod: ""
 A subscription allows a client app to receive notifications about changes to data in Microsoft Graph. Currently, subscriptions are enabled for the following resources:
 
 - An [alert][] from the Microsoft Graph Security API
+- A [callRecord][] produced after a call or meeting in Microsoft Teams
 - A [chatMessage][] sent via teams or channels in Microsoft Teams
-- A [callRecord][] produced after a call or meeting in Microsoft Teams or Skype for Business
 - A [conversation][] in an Office 365 group
 - Content in the hierarchy of a root folder [driveItem][] in OneDrive for Business, or of a root folder or subfolder [driveItem][] in a user's personal OneDrive
 - A [message][], [event][], or [contact][] in Outlook
@@ -54,8 +54,8 @@ A subscription allows a client app to receive notifications about changes to dat
 | Resource            | Maximum expiration time  |
 |:--------------------|:-------------------------|
 | Security **alert**     | 43200 minutes (under 30 days)  |
+| Teams **callRecord**    | 4230 minutes (under 3 days)  |
 | Teams **chatMessage**    | 60 minutes (1 hour)  |
-| Teams or Skype for Business **callRecord**    | 4230 minutes (under 3 days)  |
 | Group **conversation** | 4230 minutes (under 3 days)    |
 | OneDrive **driveItem**    | 4230 minutes (under 3 days)    |
 | Outlook **message**, **event**, **contact**              | 4230 minutes (under 3 days)    |
