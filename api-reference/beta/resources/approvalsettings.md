@@ -1,27 +1,25 @@
 ---
-title: "approvalSettings complex type"
-description: "The approvalSettings type, used for the requestApprovalSettings property of an access package assignment policy, provides additional settings to select who must approve each request.."
+title: "approvalSettings resource type"
+description: "Used for the requestApprovalSettings property of an access package assignment policy. Provides additional settings to select who must approve each request."
 localization_priority: Normal
 author: "markwahl-msft"
 ms.prod: "microsoft-identity-platform"
 doc_type: "resourcePageType"
 ---
 
-# approvalSettings complex type
+# approvalSettings resource type
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-The `approvalSettings` type, used for the `requestApprovalSettings` property of an [access package assignment policy](accesspackageassignmentpolicy.md), provides additional settings to select who must approve each request. 
+Used for the `requestApprovalSettings` property of an [access package assignment policy](accesspackageassignmentpolicy.md). Provides additional settings to select who must approve each request. 
 
 ## Properties
-
-This type has the following properties:
 
 | Property                     | Type                      | Description |
 | :--------------------------- | :------------------------ | :---------- |
 | isApprovalRequired | Boolean | If false, then approval is not required for requests in this policy. |
 | isApprovalRequiredForExtension | Boolean| If false, then approval is not required for a user who already has an assignment to extend their assignment. |
-| isRequestorJustificationRequired | Boolean | Whether the requestor is required to supply a justification in their request. |
+| isRequestorJustificationRequired | Boolean | Indicates whether the requestor is required to supply a justification in their request. |
 | approvalMode| String | One of `NoApproval`, `SingleStage` or `Serial`. The `NoApproval` is used when `isApprovalRequired` is false. |
 | approvalStages | [approvalStage](approvalstage.md) collection| If approval is required, the one or two elements of this collection define each of the stages of approval. An empty array if no approval is required.  |
 
