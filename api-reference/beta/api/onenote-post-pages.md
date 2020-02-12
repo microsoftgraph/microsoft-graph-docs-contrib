@@ -50,6 +50,9 @@ The body can contain HTML placed directly in the request body, or it can contain
 
 If successful, this method returns a `201 Created` response code and the new [onenotepage](../resources/onenotepage.md) object in the response body.
 
+## Limitations
+See [OneNote Create Page](../../../concepts/onenote-create-page.md) for all limitations with this API.
+
 ## Example
 ##### Request
 Here is an example of the request.
