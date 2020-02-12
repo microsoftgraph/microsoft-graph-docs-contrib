@@ -57,6 +57,7 @@ This resource supports:
 |[List appRoleAssignments](../api/approleassignment-list.md) |[appRoleAssignment](approleassignment.md) collection| Get the apps and app roles which this group has been assigned.|
 |[Add appRoleAssignment](../api/approleassignment-post.md) |[appRoleAssignment](approleassignment.md)| Assign an app role to this group.|]
 |[Remove appRoleAssignment](../api/approleassignment-delete.md) | None. | Remove an app role assignment from this group.|
+|[assignLicense](../api/group-assignlicense.md)|[group](group.md)| Add or remove subscriptions for the group. You can also enable and disable specific plans associated with a subscription. |
 |**Calendar**| | |
 |[Create event](../api/group-post-events.md) |[event](event.md)| Create a new event by posting to the events collection.|
 |[Get event](../api/group-get-event.md) |[event](event.md)|Read properties of an event object.|
