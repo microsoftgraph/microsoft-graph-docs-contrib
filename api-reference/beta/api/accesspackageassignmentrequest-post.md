@@ -11,7 +11,7 @@ doc_type: "apiPageType"
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-In [Azure AD entitlement management](../resources/entitlementmanagement-root.md), create a new [accessPackageAssignmentRequest](../resources/accesspackageassignmentrequest.md) object.
+In [Azure AD entitlement management](../resources/entitlementmanagement-root.md), create a new [accessPackageAssignmentRequest](../resources/accesspackageassignmentrequest.md) object.  This is used to assign a user to an access package, or to remove an access package assignment.
 
 ## Permissions
 
@@ -41,6 +41,10 @@ POST /identityGovernance/entitlementManagement/accessPackageAssignmentRequests
 ## Request body
 
 In the request body, supply a JSON representation of [accessPackageAssignmentRequest](../resources/accesspackageassignmentrequest.md) object.
+
+To create an assignment for a user, the value of the `requestType` property is `AdminAdd`, and the `accessPackageAssignment` property contains the `targetId` of the user being assigned, the `assignmentPolicyId` property identifying the [accessPackageAssignmentPolicy](../resources/accesspackageassignmentpolicy.md), and `accessPackageId` property identifying the [accessPackage](../resources/accesspackage.md).
+
+To remove an assignment, the value of the `requestType` property is `AdminRemove`, and the `accessPackageAssignment` property contains the `id` property identifying the [accessPackageAssignment](../resources/accesspackageassignment.md) being removed.
 
 ## Response
 
