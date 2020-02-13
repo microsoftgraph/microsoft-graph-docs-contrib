@@ -36,15 +36,15 @@ POST /identityGovernance/entitlementManagement/accessPackageAssignmentRequests
 | Name          | Description   |
 |:--------------|:--------------|
 | Authorization | Bearer \{token\}. Required. |
-| Content-Type  | application/json  |
+| Content-Type  | application/json. Required. |
 
 ## Request body
 
 In the request body, supply a JSON representation of [accessPackageAssignmentRequest](../resources/accesspackageassignmentrequest.md) object.
 
-To create an assignment for a user, the value of the `requestType` property is `AdminAdd`, and the `accessPackageAssignment` property contains the `targetId` of the user being assigned, the `assignmentPolicyId` property identifying the [accessPackageAssignmentPolicy](../resources/accesspackageassignmentpolicy.md), and `accessPackageId` property identifying the [accessPackage](../resources/accesspackage.md).
+To create an assignment for a user, the value of the **requestType** property is `AdminAdd`, and the **accessPackageAssignment** property contains the `targetId` of the user being assigned, the **assignmentPolicyId** property identifying the [accessPackageAssignmentPolicy](../resources/accesspackageassignmentpolicy.md), and the **accessPackageId** property identifying the [accessPackage](../resources/accesspackage.md).
 
-To remove an assignment, the value of the `requestType` property is `AdminRemove`, and the `accessPackageAssignment` property contains the `id` property identifying the [accessPackageAssignment](../resources/accesspackageassignment.md) being removed.
+To remove an assignment, the value of the **requestType** property is `AdminRemove`, and the **accessPackageAssignment** property contains the **id** property identifying the [accessPackageAssignment](../resources/accesspackageassignmen.md) being removed.
 
 ## Response
 
@@ -54,7 +54,7 @@ If successful, this method returns a 200-series response code and a new [accessP
 
 ### Request
 
-The following is an example of the request for a direct assignment.  The value of the `targetID` is the object ID of a user being assigned, the value of the `accessPackageId` is the desired access package, and the value of `assignmentPolicyId` is a direct assignment policy in that access package.
+The following is an example of the request for a direct assignment.  The value of the **targetID** is the object ID of a user being assigned, the value of the **accessPackageId** is the desired access package, and the value of **assignmentPolicyId** is a direct assignment policy in that access package.
  
 
 # [HTTP](#tab/http)
