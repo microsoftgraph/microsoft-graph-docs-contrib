@@ -1465,7 +1465,7 @@ For more complex scenarios involving multiple permissions, see [Permission scena
 
 ---
 
-## Teams Permission
+## Teams permissions
 
 #### Delegated permissions
 
