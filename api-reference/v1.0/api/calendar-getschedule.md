@@ -39,7 +39,7 @@ In the request body, provide a JSON object with the following parameters.
 
 | Property	   | Type	|Description|
 |:---------------|:--------|:----------|
-|availabilityViewInterval|Int32|Represents the duration of a time slot in an **availabilityView** in the response. The default is 30 minutes, minimum is 6, maximum is 1440. Optional.|
+|availabilityViewInterval|Int32|Represents the duration of a time slot in an **availabilityView** in the response. The default is 30 minutes, minimum is 5, maximum is 1440. Optional.|
 |endTime|[dateTimeTimeZone](../resources/datetimetimezone.md)|The date, time, and time zone that the period ends.|
 |schedules|String collection|A collection of SMTP addresses of users, distribution lists, or resources to get availability information for.|
 |startTime|[dateTimeTimeZone](../resources/datetimetimezone.md)|The date, time, and time zone that the period starts.|

@@ -61,6 +61,7 @@ The following table shows the properties that are required when you create the i
 |isEnabled|Boolean|Is setting enabled in UI|
 |activeHoursStart|TimeOfDay|Active Hours Start (active hours mean the time window when updates install should not happen)|
 |activeHoursEnd|TimeOfDay|Active Hours End (active hours mean the time window when updates install should not happen)|
+|desiredOsVersion|String|If left unspecified, devices will update to the latest version of the OS.|
 |scheduledInstallDays|[dayOfWeek](../resources/intune-deviceconfig-dayofweek.md) collection|Days in week for which active hours are configured. This collection can contain a maximum of 7 elements. Possible values are: `sunday`, `monday`, `tuesday`, `wednesday`, `thursday`, `friday`, `saturday`.|
 |utcTimeOffsetInMinutes|Int32|UTC Time Offset indicated in minutes|
 |enforcedSoftwareUpdateDelayInDays|Int32|Days before software updates are visible to iOS devices ranging from 0 to 90 inclusive|
@@ -77,7 +78,7 @@ Here is an example of the request.
 ``` http
 POST https://graph.microsoft.com/beta/deviceManagement/deviceConfigurations
 Content-type: application/json
-Content-length: 1255
+Content-length: 1306
 
 {
   "@odata.type": "#microsoft.graph.iosUpdateConfiguration",
@@ -112,6 +113,7 @@ Content-length: 1255
   "isEnabled": true,
   "activeHoursStart": "12:00:05.5020000",
   "activeHoursEnd": "11:59:00.8990000",
+  "desiredOsVersion": "Desired Os Version value",
   "scheduledInstallDays": [
     "monday"
   ],
@@ -125,7 +127,7 @@ Here is an example of the response. Note: The response object shown here may be 
 ``` http
 HTTP/1.1 201 Created
 Content-Type: application/json
-Content-Length: 1427
+Content-Length: 1478
 
 {
   "@odata.type": "#microsoft.graph.iosUpdateConfiguration",
@@ -163,6 +165,7 @@ Content-Length: 1427
   "isEnabled": true,
   "activeHoursStart": "12:00:05.5020000",
   "activeHoursEnd": "11:59:00.8990000",
+  "desiredOsVersion": "Desired Os Version value",
   "scheduledInstallDays": [
     "monday"
   ],
@@ -170,7 +173,6 @@ Content-Length: 1427
   "enforcedSoftwareUpdateDelayInDays": 1
 }
 ```
-
 
 
 

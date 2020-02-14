@@ -18,6 +18,7 @@ Before making this request, the caller must have previously [retrieved the list 
 After making this request, the caller should [create a programControl](programcontrol-create.md), to link the access review to a program.  
 
 ## Permissions
+
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
 
 |Permission type                        | Permissions (from least to most privileged)              |
@@ -35,9 +36,10 @@ In addition, the signed in user must also be in a directory role that permits th
 POST /accessReviews
 ```
 ## Request headers
-| Name         | Type        | Description |
-|:-------------|:------------|:------------|
-| Authorization | string | Bearer \{token\}. Required. |
+| Name         | Description |
+|:-------------|:------------|
+| Authorization | Bearer \{token\}. Required. |
+| Content-type | application/json. Required. |
 
 ## Request body
 In the request body, supply a JSON representation of an [accessReview](../resources/accessreview.md) object.
@@ -69,7 +71,7 @@ If successful, this method returns a `201, Created` response code and an [access
 
 This is an example of creating a one-time (not recurring) access review, explicitly specifying two users as the reviewers.
 
-##### Request
+### Request
 In the request body, supply a JSON representation of the [accessReview](../resources/accessreview.md) object.
 
 
@@ -137,7 +139,7 @@ Content-type: application/json
 ---
 
 
-##### Response
+### Response
 >**Note:** The response object shown here might be shortened for readability. All the properties will be returned from an actual call.
 <!-- {
   "blockType": "response",
