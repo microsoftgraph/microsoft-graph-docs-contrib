@@ -1,6 +1,6 @@
 ---
-title: "externalSponsors complex type"
-description: "The externalSponsors type identifies a relationship to another user in the tenant who will be allowed as approver."
+title: "externalSponsors resource type"
+description: "Identifies a relationship to another user in the tenant who will be allowed as approver."
 localization_priority: Normal
 author: "markwahl-msft"
 ms.prod: "microsoft-identity-platform"
@@ -11,18 +11,18 @@ doc_type: "resourcePageType"
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-The externalSponsors type, used in the approval stage of an [access package assignment policy](accesspackageassignmentpolicy.md), indicate that a requesting user's connected organization external sponsor is to be the approver.  This approver is only applicable to requests from users who are part of a connected organization.
+Used in the approval stage of an [access package assignment policy](accesspackageassignmentpolicy.md). Indicates that a requesting user's connected organization external sponsor is to be the approver. This approver is only applicable to requests from users who are part of a connected organization.
 
 ## Properties
 
 | Property                     | Type                      | Description |
 | :--------------------------- | :------------------------ | :---------- |
-| `@odata.type` | String | The value "`#microsoft.graph.externalSponsors`". |
-| isBackup | Boolean | This property indicates that the sponsor is a backup fallback approver. |
+| `@odata.type` | String | The value `#microsoft.graph.externalSponsors`. |
+| isBackup | Boolean | Indicates whether the sponsor is a backup fallback approver. |
 
 ## JSON representation
 
-The following is a JSON representation of an externalSponsors.
+The following is a JSON representation of this resource.
 
 <!-- {
   "blockType": "resource",
