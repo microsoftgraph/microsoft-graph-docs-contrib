@@ -1,5 +1,5 @@
 ---
-title: "assignmentReviewSettings complex type"
+title: "assignmentReviewSettings resource type"
 description: "The assignmentReviewSettings type, used for the accessReviewSettings property of an access package assignment policy, provides additional settings to select who must review access package assignments from this policy, and how often they must be reviewed."
 localization_priority: Normal
 author: "markwahl-msft"
@@ -7,11 +7,11 @@ ms.prod: "microsoft-identity-platform"
 doc_type: "resourcePageType"
 ---
 
-# assignmentReviewSettings complex type
+# assignmentReviewSettings resource type
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-The `assignmentReviewSettings` type, used for the `accessReviewSettings` property of an [access package assignment policy](accesspackageassignmentpolicy.md), provides additional settings to select who must review access package assignments from this policy, and how often they must be reviewed.  
+Used for the **accessReviewSettings** property of an [access package assignment policy](accesspackageassignmentpolicy.md). Provides additional settings to select who must review access package assignments from this policy, and how often they must be reviewed.  
 
 ## Properties
 
@@ -24,7 +24,7 @@ This type has the following properties:
 | reviewerType | String | Who should be asked to do the review, either `Self` or `Reviewers`. |
 | startDateTime | DateTimeOffset | When the first review should start. |
 | durationInDays | Int32 | The number of days to allow input from reviewers.|
-| reviewers | [userSet](userset.md) collection | If the reviewerType is `Reviewers`, this collection specifies the users who will be reviewers, either by id or as members of a group, using a collection of [singleUser](singleuser.md) and [groupMembers](groupmembers.md). |
+| reviewers | [userSet](userset.md) collection | If the reviewerType is `Reviewers`, this collection specifies the users who will be reviewers, either by ID or as members of a group, using a collection of [singleUser](singleuser.md) and [groupMembers](groupmembers.md). |
 
 ## JSON representation
 
