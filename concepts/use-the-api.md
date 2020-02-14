@@ -101,7 +101,7 @@ GET https://graph.microsoft.com/me/calendarView?startDateTime=2019-09-01T09:00:0
 
 ### Microsoft Graph Explorer
 
-Microsoft Graph Explorer is a web-based tool that you can use to build and test requests using Microsoft Graph APIs. You can access Microsoft Graph Explorer at: `https://developer.microsoft.com/graph/graph-explorer#`.
+Microsoft Graph Explorer is a web-based tool that you can use to build and test requests using Microsoft Graph APIs. You can access Microsoft Graph Explorer at: `https://developer.microsoft.com/graph/graph-explorer`.
 
 You can either access demo data without signing in, or you can sign in to a tenant of your own. Use the following steps to build the request:
 1. Select the HTTP method.
