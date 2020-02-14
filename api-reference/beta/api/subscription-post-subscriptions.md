@@ -47,7 +47,7 @@ Additional limitations apply for subscriptions on OneDrive  items. The limitatio
 
 On personal OneDrive, you can subscribe to the root folder or any subfolder in that drive. On OneDrive for Business, you can subscribe to only the root folder. Notifications are sent for the requested types of changes on the subscribed folder, or any file, folder, or other **driveItem** instances in its hierarchy. You cannot subscribe to **drive** or **driveItem** instances that are not folders, such as individual files.
 
-### Contacts, events, and messages (Outlook)
+### contact, event, and message (Outlook)
 
 Additional limitations apply for subscriptions on Outlook items. The limitations apply to creating as well as managing (getting, updating, and deleting) subscriptions.
 
