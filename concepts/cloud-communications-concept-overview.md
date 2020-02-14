@@ -88,7 +88,7 @@ You can use the cloud communications APIs to:
 Looking for the API reference for this service?
 
 - [Cloud Communications APIs in Microsoft Graph (v1.0)](/graph/api/resources/communications-api-overview?view=graph-rest-1.0)
-- [Cloud Communications APIs in Microsoft Graph (beta)](/graph/api/resources/calls-api-overview?view=graph-rest-beta)
+- [Cloud Communications APIs in Microsoft Graph (beta)](/graph/api/resources/communications-api-overview?view=graph-rest-beta)
 
 ## Next steps
 

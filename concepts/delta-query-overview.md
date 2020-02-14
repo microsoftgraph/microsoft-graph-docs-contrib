@@ -121,9 +121,9 @@ Delta query is currently supported for the following resources.
 
 > \*\* The usage pattern for Planner resources is similar to other supported resources with a few differences.  For details, see [Track changes for Planner](/graph/api/planneruser-list-delta?view=graph-rest-beta).
 
-### Limitations
+## Limitations
 
-#### Properties stored outside of the main data store
+### Properties stored outside of the main data store
 
 Some resources contain properties that are stored outside of the main data store for the resource (for example, the user resource is mostly stored in the Azure AD system, while some properties, like **skills**, are stored in SharePoint Online). Currently, those properties are not supported as part of change tracking; a change to one of those properties will not result in an object showing up in the delta query response. Currently, only the properties stored in the main data store trigger changes in the delta query.
 
@@ -160,15 +160,20 @@ Content-type: application/json
 
 This tells you that the **skills** property is not supported for delta query on the **user** resource.
 
-#### Navigation properties
+### Navigation properties
 
 Navigation properties are not supported. For example, you cannot track changes to the users collection that would include changes to their **photo** property; **photo** is a navigation property stored outside of the user entity, and changes to it do not cause the user object to be included in the delta response.
 
-#### National clouds
+### Processing delays
+
+Expect varying delays between the time a change is made to a resource instance, which can be through an app interface or API, and the time the tracked change is reflected in a delta query response.  
+
+### National clouds
 
 Delta queries are available for customers hosted on the public cloud and Microsoft Graph China operated by 21Vianet only.
 
-#### Token duration
+### Token duration
+
 Delta tokens are only valid for a specific period before the client application needs to run a full synchronization again. For identity objects (**directoryObject**, **directoryRole**, **group**, **user**), the limit is 30 days.
 
 ## Prerequisites

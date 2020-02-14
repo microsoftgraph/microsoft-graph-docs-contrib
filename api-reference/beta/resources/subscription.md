@@ -46,6 +46,7 @@ A subscription allows a client app to receive notifications about changes to dat
 | includeResourceData | Boolean | When set to `true`, change notifications [include resource data](/graph/webhooks-with-resource-data) (such as content of a chat message). Optional. | 
 | encryptionCertificate | string | A base64-encoded representation of a certificate with a public key used to encrypt resource data in notifications. Optional. Required when **includeResourceData** is true. | 
 | encryptionCertificateId | string | A custom app-provided identifier to help identify the certificate needed to decrypt resource data. Optional. Required when **includeResourceData** is true. |
+| latestSupportedTlsVersion | String | Specifies the latest version of Transport Layer Security (TLS) that the notification endpoint, specified by **notificationUrl**, supports. The possible values are: `v1_0`, `v1_1`, `v1_2`, `v1_3`. </br></br>For subscribers whose notification endpoint supports a version lower than the currently recommended version (TLS 1.2), specifying this property by a set [timeline](https://developer.microsoft.com/graph/blogs/microsoft-graph-subscriptions-deprecating-tls-1-0-and-1-1/) allows them to temporarily use their deprecated version of TLS before completing their upgrade to TLS 1.2. For these subscribers, not setting this property per the timeline would result in subscription operations failing. </br></br>For subscribers whose notification endpoint already supports TLS 1.2, setting this property is optional. In such cases, Microsoft Graph defaults the property to `v1_2`. |
 
 ### Maximum length of subscription per resource type
 
@@ -90,7 +91,8 @@ Here is a JSON representation of the resource.
   "creatorId": "string",
   "includeResourceData": "boolean",
   "encryptionCertificate": "string",
-  "encryptionCertificateId": "string"
+  "encryptionCertificateId": "string",
+  "latestSupportedTlsVersion": "string"
 }
 ```
 

@@ -472,7 +472,7 @@ Content-type: application/json
 }
 ```
 ### Types of results included
-By default, Microsoft Graph serves mailbox-only results, which do not include directory/orgainization results. To retrieve directory results, specify an HTTP header, as shown.
+By default, Microsoft Graph serves mailbox-only results, which do not include directory/organization results. To retrieve directory results, specify an HTTP header, as shown.
 
 ```
 "X-PeopleQuery-QuerySources: Mailbox,Directory”
