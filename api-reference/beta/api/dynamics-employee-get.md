@@ -23,7 +23,7 @@ One of the following permissions is required to call this API. To learn more, in
 
 ## HTTP request
 ```
-GET /financials/companies('{id}')/employees('{id}')
+GET /financials/companies/{id}/employees/{id}
 ```
 
 ## Optional query parameters
@@ -45,7 +45,7 @@ If successful, this method returns a `200 OK` response code and an **employees**
 Here is an example of the request.
 
 ```json
-GET https://graph.microsoft.com/beta/financials/companies('{id}')/employees('{id}')
+GET https://graph.microsoft.com/beta/financials/companies/{id}/employees/{id}
 ```
 
 **Response**
@@ -78,7 +78,7 @@ Here is an example of the response.
   "terminationDate": "0001-01-01",
   "status": "Active",
   "birthDate": "1973-12-12",
-  "picture@odata.mediaReadLink": "https://api.financials.dynamics.com/v1.0/api/beta/companies('{id}')/employees('{id}')/picture",
+  "picture@odata.mediaReadLink": "https://api.financials.dynamics.com/v1.0/api/beta/companies/{id}/employees/{id}/picture",
   "lastModifiedDateTime": "2017-03-16T14:57:19.497Z"  
 }
 ```

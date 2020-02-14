@@ -21,6 +21,8 @@ One of the following permissions is required to call this API. To learn more, in
 |Delegated (personal Microsoft account) | Not supported.    |
 |Application | User.Read.All, User.ReadWrite.All, Directory.Read.All, Directory.ReadWrite.All |
 
+[!INCLUDE [limited-info](../../includes/limited-info.md)]
+
 ## HTTP request
 <!-- { "blockType": "ignored" } -->
 ```http
@@ -49,7 +51,7 @@ Here is an example of the request.
   "blockType": "request",
   "name": "get_registereddevices"
 }-->
-```http
+```msgraph-interactive
 GET https://graph.microsoft.com/beta/me/registeredDevices
 ```
 # [C#](#tab/csharp)

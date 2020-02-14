@@ -51,7 +51,7 @@ Here is an example of the request.
   "blockType": "request",
   "name": "get_mailfolders"
 }-->
-```http
+```msgraph-interactive
 GET https://graph.microsoft.com/beta/me/mailFolders
 ```
 # [C#](#tab/csharp)

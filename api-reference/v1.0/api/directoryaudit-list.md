@@ -33,7 +33,7 @@ GET /auditLogs/directoryaudits
 
 This method supports the following OData query parameters to help customize the response. For details about how to use these parameters, see [OData query parameters](/graph/query_parameters).
 
-| Name                                                       | Description                                                                   | Example                                                                     |
+| Parameter                                                       | Description                                                                   | Example                                                                     |
 | :--------------------------------------------------------- | :---------------------------------------------------------------------------- | :-------------------------------------------------------------------------- |
 | [\$filter](/graph/query_parameters#filter-parameter)       | Filters results (rows).                                                       | `/auditLogs/directoryAudits?&$filter=createdDateTime le 2018-01-24`         |
 | [\$top](/graph/query_parameters#top-parameter)             | Sets the page size of results.                                                | `/auditLogs/directoryAudits?$top=1`                                         |
@@ -41,7 +41,7 @@ This method supports the following OData query parameters to help customize the 
 
 ### Attributes supported by \$filter parameter
 
-| Attribute name                                               | Supported operators |
+| Attribute                                                    | Supported operators |
 | :----------------------------------------------------------- | :------------------ |
 | activityDisplayName                                          | eq, startswith      |
 | activityDateTime                                             | eq, ge, le          |
@@ -82,7 +82,7 @@ Here is an example of the request.
   "name": "get_directoryaudit"
 }-->
 
-```http
+```msgraph-interactive
 GET https://graph.microsoft.com/v1.0/auditLogs/directoryAudits
 ```
 # [C#](#tab/csharp)
@@ -155,8 +155,8 @@ Content-length: 271
 				"oldValue": null,
 				"newValue": "DirectorySync"}],
 			"groupType": "unifiedGroups"
-			}],
-		}, {
+			}, 
+			{
 			"id": "1f0e98f5-3161-4c6b-9b50-d488572f2bb7",
 			"displayName": null,
 			"Type": "User",

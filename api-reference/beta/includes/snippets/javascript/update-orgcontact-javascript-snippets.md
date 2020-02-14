@@ -23,6 +23,6 @@ const orgContact = {
 
 let res = await client.api('/contacts/{id}')
 	.version('beta')
-	.update({orgContact : orgContact});
+	.update(orgContact);
 
 ```

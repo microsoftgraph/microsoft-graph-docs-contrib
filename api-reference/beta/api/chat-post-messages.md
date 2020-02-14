@@ -2,7 +2,7 @@
 title: "Create chatMessage"
 description: "Use this API to create a new chatMessage."
 localization_priority: Normal
-author: "RamjotSingh"
+author: "clearab"
 ms.prod: "microsoft-teams"
 doc_type: "apiPageType"
 ---
@@ -11,7 +11,7 @@ doc_type: "apiPageType"
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Create a new [message](../resources/chatmessage.md) in the specified [chat](../resources/chat.md).
+Create a new [message](../resources/chatmessage.md) in the specified [chat](../resources/chat.md). This API cannot create an new chat, you must use the [list chats](chat-list.md) method to retreive the Id of an existing chat before creating a chat message.
 
 ## Permissions
 

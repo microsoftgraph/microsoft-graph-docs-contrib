@@ -51,7 +51,7 @@ If successful, this method returns a `200 OK` response code and collection of [l
   "blockType": "request",
   "name": "get_licensedetails"
 }-->
-```http
+```msgraph-interactive
 GET https://graph.microsoft.com/beta/me/licenseDetails
 ```
 # [C#](#tab/csharp)

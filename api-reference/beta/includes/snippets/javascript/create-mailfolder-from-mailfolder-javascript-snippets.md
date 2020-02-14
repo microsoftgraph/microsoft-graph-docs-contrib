@@ -16,6 +16,6 @@ const mailFolder = {
 
 let res = await client.api('/me/mailFolders/{id}/childFolders')
 	.version('beta')
-	.post({mailFolder : mailFolder});
+	.post(mailFolder);
 
 ```

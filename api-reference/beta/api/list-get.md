@@ -43,7 +43,7 @@ Do not supply a request body with this method.
 # [HTTP](#tab/http)
 <!-- { "blockType": "request", "name": "get-list" } -->
 
-```http
+```msgraph-interactive
 GET /sites/{site-id}/lists/{list-id}
 ```
 # [C#](#tab/csharp)
@@ -89,7 +89,7 @@ With `select` and `expand` statements, you can retrieve list metadata, column de
 # [HTTP](#tab/http)
 <!-- { "blockType": "request", "name": "get-list-multi-expand" } -->
 
-```http
+```msgraph-interactive
 GET /sites/{site-id}/lists/{list-id}?select=name,lastModifiedDateTime&expand=columns(select=name,description),items(expand=fields(select=Name,Color,Quantity))
 ```
 # [C#](#tab/csharp)
@@ -165,7 +165,7 @@ Content-type: application/json
 <!-- { "blockType": "request", "name": "get-list-multi-expand" } -->
 
 The following example shows how to get metadata for a list that contains three columns: Name, Quantity, and Category.
-[Managed Metadata](https://docs.microsoft.com/en-us/sharepoint/managed-metadata) columns like ```Category``` return values as term ID and term name pair.
+[Managed Metadata](/sharepoint/managed-metadata) columns like ```Category``` return values as term ID and term name pair.
 ```http
 GET /sites/{site-id}/lists/{list-id}?select=name,lastModifiedDateTime&expand=columns(select=name,description),items(expand=fields(select=Name,Quantity,Category))
 ```

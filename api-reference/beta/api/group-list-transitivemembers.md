@@ -25,6 +25,8 @@ One of the following permissions is required to call this API. To learn more, in
 
 > Note: To list the members of a hidden membership group, the Member.Read.Hidden permission is required.
 
+[!INCLUDE [limited-info](../../includes/limited-info.md)]
+
 ## HTTP request
 
 <!-- { "blockType": "ignored" } -->
@@ -63,7 +65,7 @@ The following is an example of the request.
   "name": "get_group_transitivemembers"
 }-->
 
-```http
+```msgraph-interactive
 GET https://graph.microsoft.com/beta/groups/{id}/transitiveMembers
 ```
 # [C#](#tab/csharp)

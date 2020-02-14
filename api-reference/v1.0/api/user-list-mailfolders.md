@@ -16,9 +16,9 @@ One of the following permissions is required to call this API. To learn more, in
 
 |Permission type      | Permissions (from least to most privileged)              |
 |:--------------------|:---------------------------------------------------------|
-|Delegated (work or school account) | Mail.Read, Mail.ReadWrite    |
-|Delegated (personal Microsoft account) | Mail.Read, Mail.ReadWrite    |
-|Application | Mail.Read, Mail.ReadWrite |
+|Delegated (work or school account) | Mail.ReadBasic, Mail.Read, Mail.ReadWrite    |
+|Delegated (personal Microsoft account) | Mail.ReadBasic, Mail.Read, Mail.ReadWrite    |
+|Application | Mail.ReadBasic.All, Mail.Read, Mail.ReadWrite |
 
 ## HTTP request
 <!-- { "blockType": "ignored" } -->
@@ -49,7 +49,7 @@ Here is an example of the request.
   "blockType": "request",
   "name": "get_mailfolders"
 }-->
-```http
+```msgraph-interactive
 GET https://graph.microsoft.com/v1.0/me/mailFolders
 ```
 # [C#](#tab/csharp)
@@ -71,7 +71,7 @@ GET https://graph.microsoft.com/v1.0/me/mailFolders
 ---
 
 ##### Response
-Here is an example of the response. 
+Here is an example of the response.
 
 >**Note:** The response object shown here might be shortened for readability. All the properties will be returned from an actual call.
 <!-- {
@@ -94,8 +94,7 @@ Content-length: 232
             "parentFolderId": "AQMkADYAAAIBCAAAAA==",
             "childFolderCount": 0,
             "unreadItemCount": 0,
-            "totalItemCount": 0,
-            "wellKnownName": "archive"
+            "totalItemCount": 0
         },
         {
             "id": "AQMkADYAAAIBFQAAAA==",
@@ -103,8 +102,7 @@ Content-length: 232
             "parentFolderId": "AQMkADYAAAIBCAAAAA==",
             "childFolderCount": 1,
             "unreadItemCount": 0,
-            "totalItemCount": 0,
-            "wellKnownName": "conversationhistory"
+            "totalItemCount": 0
         },
         {
             "id": "AQMkADYAAAIBCgAAAA==",
@@ -112,8 +110,7 @@ Content-length: 232
             "parentFolderId": "AQMkADYAAAIBCAAAAA==",
             "childFolderCount": 0,
             "unreadItemCount": 0,
-            "totalItemCount": 0,
-            "wellKnownName": "deleteditems"
+            "totalItemCount": 0
         },
         {
             "id": "AQMkADYAAAIBDwAAAA==",
@@ -121,8 +118,7 @@ Content-length: 232
             "parentFolderId": "AQMkADYAAAIBCAAAAA==",
             "childFolderCount": 0,
             "unreadItemCount": 0,
-            "totalItemCount": 0,
-            "wellKnownName": "drafts"
+            "totalItemCount": 0
         },
         {
             "id": "AQMkADYAAAIBDAAAAA==",
@@ -130,8 +126,7 @@ Content-length: 232
             "parentFolderId": "AQMkADYAAAIBCAAAAA==",
             "childFolderCount": 1,
             "unreadItemCount": 70,
-            "totalItemCount": 71,
-            "wellKnownName": "inbox"
+            "totalItemCount": 71
         },
         {
             "id": "AQMkADYAAAIBGQAAAA==",
@@ -139,8 +134,7 @@ Content-length: 232
             "parentFolderId": "AQMkADYAAAIBCAAAAA==",
             "childFolderCount": 0,
             "unreadItemCount": 0,
-            "totalItemCount": 0,
-            "wellKnownName": "junkemail"
+            "totalItemCount": 0
         },
         {
             "id": "AQMkADYAAAIBCwAAAA==",
@@ -148,8 +142,7 @@ Content-length: 232
             "parentFolderId": "AQMkADYAAAIBCAAAAA==",
             "childFolderCount": 0,
             "unreadItemCount": 0,
-            "totalItemCount": 0,
-            "wellKnownName": "outbox"
+            "totalItemCount": 0
         },
         {
             "id": "AQMkADYAAAIBCQAAAA==",
@@ -157,8 +150,7 @@ Content-length: 232
             "parentFolderId": "AQMkADYAAAIBCAAAAA==",
             "childFolderCount": 0,
             "unreadItemCount": 0,
-            "totalItemCount": 0,
-            "wellKnownName": "sentitems"
+            "totalItemCount": 0
         }
     ]
 }

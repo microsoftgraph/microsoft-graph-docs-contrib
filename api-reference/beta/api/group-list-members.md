@@ -19,11 +19,13 @@ One of the following permissions is required to call this API. To learn more, in
 
 |Permission type      | Permissions (from least to most privileged)              |
 |:--------------------|:---------------------------------------------------------|
-|Delegated (work or school account) | Directory.Read.All, Directory.AccessAsUser.All, User.ReadBasic.All, User.Read.All    |
+|Delegated (work or school account) | User.ReadBasic.All, User.Read.All, Group.Read.All, Directory.Read.All    |
 |Delegated (personal Microsoft account) | Not supported.    |
-|Application | Directory.Read.All, User.Read.All |
+|Application | Group.Read.All, Directory.Read.All |
 
 > Note: To list the members of a hidden membership group, the Member.Read.Hidden permission is required.
+
+[!INCLUDE [limited-info](../../includes/limited-info.md)]
  
 ## HTTP request
 <!-- { "blockType": "ignored" } -->
@@ -54,7 +56,7 @@ The following is an example of the request.
   "blockType": "request",
   "name": "get_group_members"
 }-->
-```http
+```msgraph-interactive
 GET https://graph.microsoft.com/beta/groups/{id}/members
 ```
 # [C#](#tab/csharp)

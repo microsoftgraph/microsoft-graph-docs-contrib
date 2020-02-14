@@ -11,6 +11,9 @@ doc_type: apiPageType
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
+>[!NOTE]
+>The **identityRiskEvents** API is deprecated and will stop returning data on January 10, 2020. For details, see [Deprecation of the IdentityRiskEvents API](https://developer.microsoft.com/office/blogs/deprecatation-of-the-identityriskevents-api/).
+
 Retrieve a list of identityriskevent objects.
 
 ## Permissions
@@ -48,7 +51,7 @@ Here is an example of the request.
   "blockType": "request",
   "name": "get_identityriskevents"
 }-->
-```http
+```msgraph-interactive
 GET https://graph.microsoft.com/beta/identityRiskEvents
 ```
 # [C#](#tab/csharp)

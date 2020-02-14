@@ -22,6 +22,8 @@ One of the following permissions is required to call this API. To learn more, in
 |Delegated (personal Microsoft account) | Not supported.    |
 |Application | Not supported. |
 
+[!INCLUDE [limited-info](../../includes/limited-info.md)]
+
 ## HTTP request
 <!-- { "blockType": "ignored" } -->
 ```http
@@ -50,7 +52,7 @@ The following is an example of the request.
   "blockType": "request",
   "name": "get_acceptedsenders"
 }-->
-```http
+```msgraph-interactive
 GET https://graph.microsoft.com/v1.0/groups/{id}/acceptedSenders
 ```
 # [C#](#tab/csharp)

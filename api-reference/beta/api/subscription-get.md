@@ -2,7 +2,7 @@
 title: "Get subscription"
 description: "Retrieve the properties and relationships of a subscription."
 localization_priority: Normal
-author: "piotrci"
+author: "baywet"
 doc_type: apiPageType
 ms.prod: ""
 ---
@@ -25,7 +25,7 @@ Depending on the resource and the permission type (delegated or application) req
 |[event](../resources/event.md) | Calendars.Read | Calendars.Read | Calendars.Read |
 |[group](../resources/group.md) | Group.Read.All | Not supported | Group.Read.All |
 |[group conversation](../resources/conversation.md) | Group.Read.All | Not supported | Not supported |
-|[message](../resources/message.md) | Mail.Read | Mail.Read | Mail.Read |
+|[message](../resources/message.md) | Mail.ReadBasic, Mail.Read | Mail.ReadBasic, Mail.Read | Mail.ReadBasic, Mail.Read |
 |[security alert](../resources/alert.md) | SecurityEvents.ReadWrite.All | Not supported | SecurityEvents.ReadWrite.All |
 |[user](../resources/user.md) | User.Read.All | User.Read.All | User.Read.All |
 
@@ -77,7 +77,7 @@ Here is an example of the request.
   "name": "get_subscription"
 }-->
 
-```http
+```msgraph-interactive
 GET https://graph.microsoft.com/beta/subscriptions/{id}
 ```
 # [C#](#tab/csharp)
@@ -117,7 +117,8 @@ Content-length: 252
   "clientState":"secretClientValue",
   "notificationUrl":"https://webhook.azurewebsites.net/api/send/myNotifyClient",
   "expirationDateTime":"2016-11-20T18:23:45.9356913Z",
-  "creatorId": "string"
+  "creatorId": "string",
+  "latestSupportedTlsVersion": "v1_2"
 }
 ```
 

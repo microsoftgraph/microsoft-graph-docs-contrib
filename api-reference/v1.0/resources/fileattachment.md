@@ -2,14 +2,15 @@
 title: "fileAttachment resource type"
 description: "A file (such as a text file or Word document) attached to an event, message or post. The  **contentBytes** "
 localization_priority: Priority
-author: ""
-ms.prod: ""
+author: "angelgolfer-ms"
+ms.prod: "outlook"
 doc_type: resourcePageType
 ---
 
 # fileAttachment resource type
 
-A file (such as a text file or Word document) attached to an event, message or post. The  **contentBytes** 
+A file (such as a text file or Word document) attached to a user [event](../resources/event.md),
+[message](../resources/message.md), or [post](../resources/post.md). The  **contentBytes** 
 property contains the base64-encoded contents of the file.  
 
 When creating a file attachment, include the following in the request body:
@@ -23,13 +24,13 @@ Derived from [attachment](attachment.md).
 
 | Method       | Return Type  |Description|
 |:---------------|:--------|:----------|
-|[Get](../api/attachment-get.md) | [fileAttachment](fileattachment.md) |Read properties and relationships of fileAttachment object.|
+|[Get](../api/attachment-get.md) | [fileAttachment](fileattachment.md) |Read properties, relationships, or raw contents of a fileAttachment object.|
 |[Delete](../api/attachment-delete.md) | None |Delete fileAttachment object. |
 
 ## Properties
 | Property	   | Type	|Description|
 |:---------------|:--------|:----------|
-|contentBytes|Binary|The base64-encoded contents of the file.|
+|contentBytes|Edm.Binary|The base64-encoded contents of the file.|
 |contentId|String|The ID of the attachment in the Exchange store.|
 |contentLocation|String|Do not use this property as it is not supported.|
 |contentType|String|The content type of the attachment.|
@@ -50,6 +51,7 @@ Here is a JSON representation of the resource
 <!-- {
   "blockType": "resource",
   "baseType": "microsoft.graph.attachment",
+  "keyProperty": "id",
   "optionalProperties": [
 
   ],
@@ -58,7 +60,7 @@ Here is a JSON representation of the resource
 
 ```json
 {
-  "contentBytes": "binary",
+  "contentBytes": "string (binary)",
   "contentId": "string",
   "contentLocation": "string",
   "contentType": "string",

@@ -22,11 +22,12 @@ An attachment can be one of the following types:
 All these types of attachment resources are derived from the [attachment](../resources/attachment.md)
 resource. 
 
-You can add an attachment to an existing message by posting to its attachments collection, or to a new 
+You can add an attachment to an existing [message](../resources/message.md) by posting to its attachments collection, or to a new 
 message that is being [drafted](../api/user-post-messages.md), or [created and sent on the fly](../api/user-sendmail.md).
 
-Since there is currently a limit of 4MB on the total size of each REST request, this limits the 
-size of the attachment you can add to under 4MB.
+>**Note**: This operation limits the size of the attachment you can add to under 4 MB.
+>
+> However, if you're attaching to a message a file that is between 3MB and 150MB, you can [create an upload session](attachment-createuploadsession.md) and iteratively upload ranges of the file to attach it. See [attach large files to Outlook messages](/graph/outlook-large-attachments) for an example.
 ## Permissions
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
 
@@ -75,7 +76,7 @@ Here is an example of the request.
 # [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
-  "name": "create_file_attachment_from_message"
+  "name": "create_file_attachment_from_message_beta"
 }-->
 ```http
 POST https://graph.microsoft.com/beta/me/messages/AAMkpsDRVK/attachments
@@ -89,15 +90,15 @@ Content-length: 142
 }
 ```
 # [C#](#tab/csharp)
-[!INCLUDE [sample-code](../includes/snippets/csharp/create-file-attachment-from-message-csharp-snippets.md)]
+[!INCLUDE [sample-code](../includes/snippets/csharp/create-file-attachment-from-message-beta-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [JavaScript](#tab/javascript)
-[!INCLUDE [sample-code](../includes/snippets/javascript/create-file-attachment-from-message-javascript-snippets.md)]
+[!INCLUDE [sample-code](../includes/snippets/javascript/create-file-attachment-from-message-beta-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Objective-C](#tab/objc)
-[!INCLUDE [sample-code](../includes/snippets/objc/create-file-attachment-from-message-objc-snippets.md)]
+[!INCLUDE [sample-code](../includes/snippets/objc/create-file-attachment-from-message-beta-objc-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
@@ -108,6 +109,7 @@ In the request body, supply a JSON representation of [attachment](../resources/a
 Here is an example of the response. 
 <!-- {
   "blockType": "response",
+  "name": "create_file_attachment_from_message_beta",
   "truncated": true,
   "@odata.type": "microsoft.graph.fileAttachment"
 } -->
@@ -134,7 +136,10 @@ Content-length: 202
 ##### Request
 Here is an example of the request.
 
-<!-- { "blockType": "ignored" } -->
+<!-- {
+  "blockType": "request",
+  "name": "create_item_attachment_from_message_beta"
+}-->
 
 ```
 POST https://graph.microsoft.com/beta/me/messages/AAMkpsDRVK/attachments
@@ -169,6 +174,7 @@ Content-length: 200
 Here is an example of the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.
 <!-- {
   "blockType": "response",
+  "name": "create_item_attachment_from_message_beta",
   "truncated": true,
   "@odata.type": "microsoft.graph.itemAttachment"
 } -->
@@ -233,6 +239,7 @@ Content-length: 319
 Here is an example of a full response.
 <!-- {
   "blockType": "response",
+  "name": "create_reference_attachment_from_message",
   "truncated": true,
   "@odata.type": "microsoft.graph.referenceAttachment"
 } -->
@@ -266,9 +273,6 @@ HTTP 201 Created
   "description": "Create Attachment",
   "keywords": "",
   "section": "documentation",
-  "tocPath": "",
-  "suppressions": [
-    "Error: create_file_attachment_from_message/contentBytes:\r\n      Expected type Binary but actual was String. Property: contentBytes, actual value: 'a0b1c76de9f7='"
-  ]
+  "tocPath": ""
 }
 -->

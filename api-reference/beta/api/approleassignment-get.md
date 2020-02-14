@@ -3,8 +3,8 @@ title: "Get appRoleAssignment"
 description: "Retrieve the properties and relationships of approleassignment object."
 localization_priority: Priority
 doc_type: apiPageType
-ms.prod: ""
-author: ""
+ms.prod: "microsoft-identity-platform"
+author: "psignoret"
 ---
 
 # Get appRoleAssignment
@@ -25,8 +25,9 @@ One of the following permissions is required to call this API. To learn more, in
 <!-- { "blockType": "ignored" } -->
 ```http
 GET /users/{id | userPrincipalName}/appRoleAssignments/{id}
-GET /servicePrincipals/{id}/appRoleAssignedTo
 GET /groups/{id}/appRoleAssignments/{id}
+GET /servicePrincipals/{id}/appRoleAssignments/{id}
+GET /servicePrincipals/{id}/appRoleAssignedTo/{id}
 ```
 ## Optional query parameters
 This method supports the [OData Query Parameters](https://developer.microsoft.com/graph/docs/concepts/query_parameters) to help customize the response.
@@ -51,8 +52,8 @@ Here is an example of the request.
   "blockType": "request",
   "name": "get_approleassignment"
 }-->
-```http
-GET https://graph.microsoft.com/beta/appRoleAssignments/{id}
+```msgraph-interactive
+GET https://graph.microsoft.com/beta/servicePrincipals/{id}/appRoleAssignedTo/{id}
 ```
 # [C#](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/get-approleassignment-csharp-snippets.md)]

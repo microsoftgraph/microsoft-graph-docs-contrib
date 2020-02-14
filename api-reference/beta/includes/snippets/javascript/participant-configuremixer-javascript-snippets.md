@@ -33,8 +33,8 @@ const participant = {
   ]
 };
 
-let res = await client.api('/app/calls/{id}/participants/configureMixer')
+let res = await client.api('/communications/calls/{id}/participants/configureMixer')
 	.version('beta')
-	.post({participant : participant});
+	.post(participant);
 
 ```

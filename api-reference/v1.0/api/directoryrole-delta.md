@@ -86,7 +86,7 @@ If successful, this method returns `200 OK` response code and [directoryRole](..
   "name": "directoryRole_delta"
 }-->
 
-```http
+```msgraph-interactive
 GET https://graph.microsoft.com/v1.0/directoryRoles/delta
 ```
 # [C#](#tab/csharp)

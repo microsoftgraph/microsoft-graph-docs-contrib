@@ -6,7 +6,8 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 GraphServiceClient graphClient = new GraphServiceClient( authProvider );
 
-await graphClient.Me.Drive.Items["{item-id}"].Unfollow
+await graphClient.Me.Drive.Items["{item-id}"]
+	.Unfollow()
 	.Request()
 	.DeleteAsync();
 

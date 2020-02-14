@@ -1,6 +1,6 @@
 ---
 title: "Get accessReview"
-description: "In the Azure AD access reviews feature, retrieve an accessReview object.  "
+description: "In the Azure AD access reviews feature, retrieve an accessReview object."
 localization_priority: Normal
 author: "davidmu1"
 ms.prod: "microsoft-identity-platform"
@@ -15,7 +15,7 @@ In the Azure AD [access reviews](../resources/accessreviews-root.md) feature, re
 
 To retrieve the reviewers of the access review, use the [list accessReview reviewers](accessreview-listreviewers.md) API. To retrieve the decisions of the access review, use the [list accessReview decisions](accessreview-listdecisions.md) API, or the [list my accessReview decisions](accessreview-listmydecisions.md) API.
 
-If this is a recurring access review, then use the `instances` relationship to retrieve an [accessReview](../resources/accessreview.md) collection of the past, current, and future instances of the access review.
+If this is a recurring access review, no decisions will be associated with the recurring access review series. Instead, use the `instances` relationship of that series to retrieve an [accessReview](../resources/accessreview.md) collection of the past, current, and future instances of the access review. Each past and current instance will have decisions.
 
 ## Permissions
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
@@ -39,10 +39,10 @@ GET /accessReviews/{reviewId}
 | Authorization | string | Bearer \{token\}. Required. |
 
 ## Request body
-No request body should be supplied.
+Do not supply a request body for this method.
 
 ## Response
-If successful, this method returns a `200, OK` response code and an [accessReview](../resources/accessreview.md) object in the response body.
+If successful, this method returns a `200 OK` response code and an [accessReview](../resources/accessreview.md) object in the response body.
 
 ## Example
 ##### Request
@@ -53,7 +53,7 @@ If successful, this method returns a `200, OK` response code and an [accessRevie
   "blockType": "request",
   "name": "get_accessReview"
 }-->
-```http
+```msgraph-interactive
 GET https://graph.microsoft.com/beta/accessReviews/2b83cc42-09db-46f6-8c6e-16fec466a82d
 ```
 # [C#](#tab/csharp)
@@ -115,13 +115,12 @@ Content-type: application/json
 
 ## See also
 
-| Method		   | Return Type	|Description|
-|:---------------|:--------|:----------|
-|[Create accessReview](accessreview-create.md) |	[accessReview](../resources/accessreview.md) |	Create a new accessReview. |
-|[List programControls](programcontrol-list.md) | [programControl](../resources/programcontrol.md) collection | List programControls in a tenant. |
-|[List accessReview reviewers](accessreview-listreviewers.md) |		[userIdentity](../resources/useridentity.md) collection|	Get the reviewers of an accessReview. |
-|[List accessReview decisions](accessreview-listdecisions.md) |		[accessReviewDecision](../resources/accessreviewdecision.md) collection|	Get the decisions of an accessReview.|
-|[List my accessReview decisions](accessreview-listmydecisions.md) |		[accessReviewDecision](../resources/accessreviewdecision.md) collection|	As a reviewer, get my decisions of an accessReview.|
+- [Create accessReview](accessreview-create.md)
+- [List accessReviews](accessreview-list.md)
+- [List programControls](programcontrol-list.md)
+- [List accessReview reviewers](accessreview-listreviewers.md)
+- [List accessReview decisions](accessreview-listdecisions.md)
+- [List my accessReview decisions](accessreview-listmydecisions.md)
 
 
 <!--

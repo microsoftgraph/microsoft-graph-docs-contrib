@@ -1,7 +1,7 @@
 ---
 title: "managedAppDataStorageLocation enum type"
 description: "Storage locations where managed apps can potentially store their data"
-author: "tfitzmac"
+author: "davidmu1"
 localization_priority: Normal
 ms.prod: "Intune"
 doc_type: enumPageType
@@ -19,6 +19,7 @@ Storage locations where managed apps can potentially store their data
 |oneDriveForBusiness|1|OneDrive for business|
 |sharePoint|2|SharePoint|
 |localStorage|6|Local storage on the device|
+
 
 
 
