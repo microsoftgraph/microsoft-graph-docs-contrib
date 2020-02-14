@@ -4,6 +4,7 @@ description: "OMA Settings Integer definition."
 author: "rolyon"
 localization_priority: Normal
 ms.prod: "Intune"
+doc_type: resourcePageType
 ---
 
 # omaSettingInteger resource type
@@ -46,8 +47,6 @@ Here is a JSON representation of the resource.
   "isReadOnly": true
 }
 ```
-
-
 
 
 

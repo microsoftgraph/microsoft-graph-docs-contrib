@@ -1,9 +1,10 @@
 ---
 title: "Get windows81CompliancePolicy"
 description: "Read properties and relationships of the windows81CompliancePolicy object."
-author: "tfitzmac"
+author: "davidmu1"
 localization_priority: Normal
 ms.prod: "Intune"
+doc_type: apiPageType
 ---
 
 # Get windows81CompliancePolicy
@@ -83,6 +84,7 @@ Content-Length: 829
   }
 }
 ```
+
 
 
 

@@ -1,8 +1,9 @@
 ---
 title: "Get incremental changes to events in a calendar view "
 description: "A calendar view is a collection of events in a date/time range from the default calendar (../me/calendarview) "
-author: "piotrci"
+author: "baywet"
 localization_priority: Priority
+ms.custom: graphiamtop20
 ---
 
 # Get incremental changes to events in a calendar view 
@@ -96,7 +97,7 @@ The first request specifies the following:
   "blockType": "request",
   "name": "get_calendarview_delta_1"
 }-->
-```http
+```msgraph-interactive
 GET https://graph.microsoft.com/v1.0/me/calendarView/delta?startdatetime=2016-12-01T00:00:00Z&enddatetime=2016-12-30T00:00:00Z HTTP/1.1
 Prefer: odata.maxpagesize=2
 ```
@@ -104,7 +105,7 @@ Prefer: odata.maxpagesize=2
 [!INCLUDE [sample-code](../includes/snippets/csharp/get-calendarview-delta-1-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# [Javascript](#tab/javascript)
+# [JavaScript](#tab/javascript)
 [!INCLUDE [sample-code](../includes/snippets/javascript/get-calendarview-delta-1-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
@@ -208,7 +209,7 @@ the same _startDateTime_ and _endDateTime_ parameters as in the initial request,
   "blockType": "request",
   "name": "get_calendarview_delta_2"
 }-->
-```http
+```msgraph-interactive
 GET https://graph.microsoft.com/v1.0/me/calendarView/delta?$skiptoken=R0usmcCM996atia_s HTTP/1.1
 Prefer: odata.maxpagesize=2
 ```
@@ -216,7 +217,7 @@ Prefer: odata.maxpagesize=2
 [!INCLUDE [sample-code](../includes/snippets/csharp/get-calendarview-delta-2-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# [Javascript](#tab/javascript)
+# [JavaScript](#tab/javascript)
 [!INCLUDE [sample-code](../includes/snippets/javascript/get-calendarview-delta-2-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
@@ -320,7 +321,7 @@ The third request continues to use the latest `nextLink` returned from the last 
   "blockType": "request",
   "name": "get_calendarview_delta_3"
 }-->
-```http
+```msgraph-interactive
 GET https://graph.microsoft.com/v1.0/me/calendarView/delta?$skiptoken=R0usmci39OQxqJrxK4 HTTP/1.1
 Prefer: odata.maxpagesize=2
 ```
@@ -328,7 +329,7 @@ Prefer: odata.maxpagesize=2
 [!INCLUDE [sample-code](../includes/snippets/csharp/get-calendarview-delta-3-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# [Javascript](#tab/javascript)
+# [JavaScript](#tab/javascript)
 [!INCLUDE [sample-code](../includes/snippets/javascript/get-calendarview-delta-3-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
@@ -411,7 +412,7 @@ Your first request in the next round will look like the following, assuming you 
   "blockType": "request",
   "name": "get_calendarview_delta_next"
 }-->
-```http
+```msgraph-interactive
 GET https://graph.microsoft.com/v1.0/me/calendarView/delta?$deltatoken=R0usmcMDNGg0J1E HTTP/1.1
 Prefer: odata.maxpagesize=2
 ```
@@ -419,7 +420,7 @@ Prefer: odata.maxpagesize=2
 [!INCLUDE [sample-code](../includes/snippets/csharp/get-calendarview-delta-next-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# [Javascript](#tab/javascript)
+# [JavaScript](#tab/javascript)
 [!INCLUDE [sample-code](../includes/snippets/javascript/get-calendarview-delta-next-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 

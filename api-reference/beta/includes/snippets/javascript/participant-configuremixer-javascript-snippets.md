@@ -10,7 +10,7 @@ const options = {
 
 const client = Client.init(options);
 
-const CommsOperation = {
+const participant = {
   clientContext: "d45324c1-fcb5-430a-902c-f20af696537c",
   participantMixerLevels: [
     {
@@ -33,8 +33,8 @@ const CommsOperation = {
   ]
 };
 
-let res = await client.api('/app/calls/{id}/participants/configureMixer')
+let res = await client.api('/communications/calls/{id}/participants/configureMixer')
 	.version('beta')
-	.post(CommsOperation);
+	.post(participant);
 
 ```

@@ -6,6 +6,7 @@ documentationcenter: ''
 author: SusanneWindfeldPedersen
 localization_priority: Normal
 ms.prod: "dynamics-365-business-central"
+doc_type: apiPageType
 ---
 
 # Get currencies
@@ -23,7 +24,7 @@ One of the following permissions is required to call this API. To learn more, in
 ## HTTP request
 
 ```
-GET /financials/companies('{id}')/currencies('{id}')
+GET /financials/companies/{id}/currencies/{id}
 ```
 
 ## Optional query parameters
@@ -47,7 +48,7 @@ If successful, this method returns a `200 OK` response code and a **currencies**
 Here is an example of the request.
 
 ```json
-GET https://graph.microsoft.com/beta/financials/companies('{id}')/currencies('{id}')
+GET https://graph.microsoft.com/beta/financials/companies/{id}/currencies/{id}
 ```
 
 **Response**

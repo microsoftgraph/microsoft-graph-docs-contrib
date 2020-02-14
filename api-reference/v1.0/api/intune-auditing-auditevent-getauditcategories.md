@@ -1,9 +1,10 @@
 ---
 title: "getAuditCategories function"
 description: "Not yet documented"
-author: "tfitzmac"
+author: "davidmu1"
 localization_priority: Normal
 ms.prod: "Intune"
+doc_type: apiPageType
 ---
 
 # getAuditCategories function
@@ -63,6 +64,7 @@ Content-Length: 57
   ]
 }
 ```
+
 
 
 

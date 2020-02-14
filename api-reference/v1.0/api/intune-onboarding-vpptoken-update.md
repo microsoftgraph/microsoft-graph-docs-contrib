@@ -1,9 +1,10 @@
 ---
 title: "Update vppToken"
 description: "Update the properties of a vppToken object."
-author: "tfitzmac"
+author: "davidmu1"
 localization_priority: Normal
 ms.prod: "Intune"
+doc_type: apiPageType
 ---
 
 # Update vppToken
@@ -108,6 +109,7 @@ Content-Length: 574
   "countryOrRegion": "Country Or Region value"
 }
 ```
+
 
 
 

@@ -1,9 +1,10 @@
 ---
 title: "Get iosUpdateConfiguration"
 description: "Read properties and relationships of the iosUpdateConfiguration object."
-author: "tfitzmac"
+author: "davidmu1"
 localization_priority: Normal
 ms.prod: "Intune"
+doc_type: apiPageType
 ---
 
 # Get iosUpdateConfiguration
@@ -78,6 +79,7 @@ Content-Length: 542
   }
 }
 ```
+
 
 
 

@@ -1,9 +1,10 @@
 ---
 title: "windowsUpdateInstallScheduleType resource type"
 description: "Not yet documented"
-author: "tfitzmac"
+author: "davidmu1"
 localization_priority: Normal
 ms.prod: "Intune"
+doc_type: resourcePageType
 ---
 
 # windowsUpdateInstallScheduleType resource type
@@ -31,6 +32,7 @@ Here is a JSON representation of the resource.
   "@odata.type": "#microsoft.graph.windowsUpdateInstallScheduleType"
 }
 ```
+
 
 
 

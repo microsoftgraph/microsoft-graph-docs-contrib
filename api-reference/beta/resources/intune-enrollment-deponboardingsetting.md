@@ -4,6 +4,7 @@ description: "The depOnboardingSetting represents an instance of the Apple DEP s
 author: "rolyon"
 localization_priority: Normal
 ms.prod: "Intune"
+doc_type: resourcePageType
 ---
 
 # depOnboardingSetting resource type
@@ -27,6 +28,7 @@ The depOnboardingSetting represents an instance of the Apple DEP service being o
 |[syncWithAppleDeviceEnrollmentProgram action](../api/intune-enrollment-deponboardingsetting-syncwithappledeviceenrollmentprogram.md)|None|Synchronizes between Apple Device Enrollment Program and Intune|
 |[shareForSchoolDataSyncService action](../api/intune-enrollment-deponboardingsetting-shareforschooldatasyncservice.md)|None|Not yet documented|
 |[unshareForSchoolDataSyncService action](../api/intune-enrollment-deponboardingsetting-unshareforschooldatasyncservice.md)|None|Not yet documented|
+|[getExpiringVppTokenCount function](../api/intune-enrollment-deponboardingsetting-getexpiringvpptokencount.md)|Int32|Not yet documented|
 
 ## Properties
 |Property|Type|Description|
@@ -81,8 +83,6 @@ Here is a JSON representation of the resource.
   ]
 }
 ```
-
-
 
 
 

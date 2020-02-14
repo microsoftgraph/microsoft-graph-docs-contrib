@@ -1,9 +1,10 @@
 ---
 title: "Create iosGeneralDeviceConfiguration"
 description: "Create a new iosGeneralDeviceConfiguration object."
-author: "tfitzmac"
+author: "davidmu1"
 localization_priority: Normal
 ms.prod: "Intune"
+doc_type: apiPageType
 ---
 
 # Create iosGeneralDeviceConfiguration
@@ -644,6 +645,7 @@ Content-Length: 8013
   "wiFiConnectOnlyToConfiguredNetworks": true
 }
 ```
+
 
 
 

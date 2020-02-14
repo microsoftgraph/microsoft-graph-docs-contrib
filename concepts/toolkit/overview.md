@@ -1,26 +1,27 @@
 ---
-title: "Microsoft Graph Toolkit (preview)"
-description: "The Microsoft Graph Toolkit is a collection of framework-agnostic web components and helpers for accessing and working with Microsoft Graph."
+title: "Microsoft Graph Toolkit"
+description: "The Microsoft Graph Toolkit is a collection of resuable, framework-agnostic web components and helpers for accessing and working with Microsoft Graph."
 localization_priority: Normal
-author: nmetulev
+author: elisenyang
 ---
 
-# Microsoft Graph Toolkit (preview)
+# Microsoft Graph Toolkit
 
-The Microsoft Graph Toolkit is a collection of framework-agnostic web components and helpers for accessing and working with Microsoft Graph. All components can access Microsoft Graph without any customization required.
+The Microsoft Graph Toolkit is a collection of reusable, framework-agnostic web components and helpers for accessing and working with Microsoft Graph. All components can access Microsoft Graph without any customization required.
 
-> [!NOTE]
-> This library is in preview and is in early development. We expect to make changes and improvements to all components and APIs based on feedback from the community.
+The Microsoft Graph Toolkit is a great resource for any developer looking to create a web app, Microsoft Teams tab, or SharePoint web part that makes calls to Microsoft Graph. By providing UI components that are designed to look and feel like Microsoft 365 experiences, the Toolkit reduces your time and cost to integrate with the platform. All the UI components authenticate with and access data from Microsoft Graph. The components are fully customizable using CSS and templating so you can match your unique branding and control the content displayed in the components.
 
 ## Get started
 
 You can use the components by referencing the loader directly (via unpkg), or by installing the npm package.
 
+![Animated gif that shows referencing the loader to use the toolkit components](images/get-started.gif)
+
 For details about how to get started with the Microsoft Graph Toolkit, see the [Get started video](https://www.youtube.com/watch?v=oZCGb2MMxa0).
 
 ### Use via mgt-loader
 
-See the folowing [jsfiddle example](https://jsfiddle.net/metulev/9phqxLd5/).
+See the following [jsfiddle example](https://jsfiddle.net/metulev/9phqxLd5/).
 
 ```html
 <script src="https://unpkg.com/@microsoft/mgt/dist/bundle/mgt-loader.js"></script>
@@ -69,7 +70,7 @@ Similarly, to add a provider, you can add it as a component:
 <mgt-msal-provider client-id="[CLIENT-ID]"></mgt-msal-provider>
 ```
 
-or, add it in your code:
+Or, add it in your code:
 
 ```html
 <script type="module">
@@ -83,7 +84,7 @@ or, add it in your code:
 
 The components work best when used with a [provider](./providers.md). The provider exposes authentication and APIs that the components use to call Microsoft Graph.
 
-The toolkit contains providers for [MSAL](./providers/msal.md), [SharePoint](./providers/sharepoint.md), [Teams](./providers/teams.md), and Office Add-ins (coming soon). You can also create your own providers by extending the [IProvider] abstract class.
+The toolkit contains providers for [MSAL](./providers/msal.md), [SharePoint](./providers/sharepoint.md), and [Teams](./providers/teams.md). You can also use your own authentication logic by creating a [custom provider](./providers/custom.md), or using the [ProxyProvider](./providers/proxy.md) with your own backend authentication. 
 
 ## Polyfills
 
@@ -195,3 +196,9 @@ Finally, use the component as you normally would in your template.
 ```html
 <mgt-person [personDetails]="person" show-name></mgt-person>
 ```
+## Browser Support
+
+
+| ![ Edge](images/edgeIcon.png)<br>Edge | ![Internet Explorer 11](images/internetExplorerIcon.png)<br>IE 11 | ![Firefox](images/firefoxIcon.png)<br>Firefox | ![Chrome](images/chromeIcon.png)<br>Chrome | ![Chrome](images/safariIcon.png)<br>Safari | ![Opera](images/operaIcon.png)<br>Opera | ![Samsung Internet](images/samsungInternetIcon.png)<br> Samsung |
+| --------- | --------- | --------- | --------- | --------- | --------- | --------- |
+| Latest Version | Latest Version| Latest Version| Latest Version| Latest Version | Latest Version | Lastest Version |

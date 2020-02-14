@@ -1,9 +1,10 @@
 ---
 title: "List managedDeviceMobileAppConfigurationDeviceStatuses"
 description: "List properties and relationships of the managedDeviceMobileAppConfigurationDeviceStatus objects."
-author: "tfitzmac"
+author: "davidmu1"
 localization_priority: Normal
 ms.prod: "Intune"
+doc_type: apiPageType
 ---
 
 # List managedDeviceMobileAppConfigurationDeviceStatuses
@@ -73,6 +74,7 @@ Content-Length: 563
   ]
 }
 ```
+
 
 
 

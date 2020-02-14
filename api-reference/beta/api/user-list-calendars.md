@@ -4,6 +4,7 @@ description: "Get all the user's calendars (`/calendars` navigation property), g
 localization_priority: Normal
 author: "dkershaw10"
 ms.prod: "microsoft-identity-platform"
+doc_type: apiPageType
 ---
 
 # List calendars
@@ -64,23 +65,19 @@ Here is an example of the request.
   "blockType": "request",
   "name": "user_get_calendars"
 }-->
-```http
+```msgraph-interactive
 GET https://graph.microsoft.com/beta/me/calendars
 ```
 # [C#](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/user-get-calendars-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# [Javascript](#tab/javascript)
+# [JavaScript](#tab/javascript)
 [!INCLUDE [sample-code](../includes/snippets/javascript/user-get-calendars-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Objective-C](#tab/objc)
 [!INCLUDE [sample-code](../includes/snippets/objc/user-get-calendars-objc-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [Java](#tab/java)
-[!INCLUDE [sample-code](../includes/snippets/java/user-get-calendars-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
@@ -113,6 +110,12 @@ Content-type: application/json
             "isShared":false,
             "isSharedWithMe":false,
             "canEdit":true,
+            "allowedOnlineMeetingProviders": [
+                "teamsForBusiness"
+            ],
+            "defaultOnlineMeetingProvider": "teamsForBusiness",
+            "isTallyingResponses": true,
+            "isRemovable": false,
             "owner":{
                 "name":"Samantha Booth",
                 "address":"samanthab@adatum.onmicrosoft.com"

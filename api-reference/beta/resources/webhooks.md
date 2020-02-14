@@ -2,7 +2,9 @@
 title: "Use the Microsoft Graph API to get change notifications"
 description: "The Microsoft Graph REST API uses a webhook mechanism to deliver change notifications to clients. A client is a web service that configures its own URL to receive notifications. Client apps use notifications to update their state upon changes. For more details, including how to subscribe to and handle incoming notifications, see Set up notifications for changes in user data."
 localization_priority: Normal
-author: "piotrci"
+author: "baywet"
+doc_type: conceptualPageType
+ms.prod: ""
 ---
 
 # Use the Microsoft Graph API to get change notifications
@@ -21,6 +23,7 @@ Using the Microsoft Graph API, an app can subscribe to changes on the following 
 - Office 365 group [conversation][]
 - Content within the hierarchy of _any folder_ [driveItem][] on a user's personal OneDrive
 - Content within the hierarchy of the _root folder_ [driveItem][] on OneDrive for Business
+- [chatMessage][]
 - Security [alert][]
 
 ## Permissions
@@ -31,7 +34,7 @@ In general, subscription operations require read permission to the resource. For
 | :------------------------------------- | :------------------------------------------------------------------------------------ |
 | Delegated - work or school account     | [alert][], [contact][], [conversation][], [driveItem][], [event][], [group][], [message][], [user][]|
 | Delegated - personal Microsoft account | [contact][], [driveItem][], [event][], [message][]                                        |
-| Application                            | [alert][], [contact][], [driveItem][], [event][], [group][], [message][], [user][]|
+| Application                            | [alert][], [contact][], [driveItem][], [event][], [group][], [message][], [user][], [chatMessage][]|
 
 ## See also
 
@@ -42,6 +45,7 @@ In general, subscription operations require read permission to the resource. For
 - [Update subscription](../api/subscription-update.md)
 - [Delete subscription](../api/subscription-delete.md)
 
+[chatMessage]: ./chatmessage.md
 [contact]: ./contact.md
 [conversation]: ./conversation.md
 [driveItem]: ./driveitem.md

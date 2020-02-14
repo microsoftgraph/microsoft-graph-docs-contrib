@@ -1,9 +1,10 @@
 ---
 title: "Update windowsPhone81GeneralConfiguration"
 description: "Update the properties of a windowsPhone81GeneralConfiguration object."
-author: "tfitzmac"
+author: "davidmu1"
 localization_priority: Normal
 ms.prod: "Intune"
+doc_type: apiPageType
 ---
 
 # Update windowsPhone81GeneralConfiguration
@@ -192,6 +193,7 @@ Content-Length: 1633
   "windowsStoreBlocked": true
 }
 ```
+
 
 
 

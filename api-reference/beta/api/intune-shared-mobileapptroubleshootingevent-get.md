@@ -4,6 +4,7 @@ description: "Describes the Get mobileAppTroubleshootingEvent method of the Micr
 localization_priority: Normal
 author: "rolyon"
 ms.prod: "Intune"
+doc_type: apiPageType
 ---
 
 # Get mobileAppTroubleshootingEvent
@@ -23,7 +24,9 @@ One of the following permissions is required to call this API. To learn more, in
 |&nbsp; &nbsp; **Device management**|DeviceManagementManagedDevices.ReadWrite.All, DeviceManagementManagedDevices.Read.All|
 |&nbsp; &nbsp; **Troubleshooting**|DeviceManagementManagedDevices.ReadWrite.All, DeviceManagementManagedDevices.Read.All|
 |Delegated (personal Microsoft account)|Not supported.|
-|Application|Not supported.|
+|Application||
+|&nbsp; &nbsp; **Device management**|DeviceManagementManagedDevices.ReadWrite.All, DeviceManagementManagedDevices.Read.All|
+|&nbsp; &nbsp; **Troubleshooting**|DeviceManagementManagedDevices.ReadWrite.All, DeviceManagementManagedDevices.Read.All|
 
 ## HTTP Request
 <!-- {
@@ -36,7 +39,7 @@ GET /users/{usersId}/mobileAppTroubleshootingEvents/{mobileAppTroubleshootingEve
 ```
 
 ## Optional query parameters
-This method supports the [OData Query Parameters](https://docs.microsoft.com/en-us/graph/query-parameters) to help customize the response.
+This method supports the [OData Query Parameters](/graph/query-parameters) to help customize the response.
 
 ## Request headers
 |Header|Value|
@@ -72,6 +75,14 @@ Content-Length: 143
   }
 }
 ```
+
+
+
+
+
+
+
+
 
 
 

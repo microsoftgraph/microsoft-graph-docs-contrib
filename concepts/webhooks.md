@@ -1,8 +1,10 @@
 ---
 title: "Set up notifications for changes in user data"
 description: "The Microsoft Graph API uses a webhook mechanism to deliver notifications to clients. A client is a web service that configures its own URL to receive notifications. Client apps use notifications to update their state upon changes."
-author: "piotrci"
+author: "baywet"
+ms.prod: "non-product-specific"
 localization_priority: Priority
+ms.custom: graphiamtop20
 ---
 
 # Set up notifications for changes in user data
@@ -16,6 +18,10 @@ After Microsoft Graph accepts the subscription request, it pushes notifications 
  
 > [!div class="nextstepaction"]
 > [Build a webhook app with .NET Core](/graph/tutorials/change-notifications)
+
+By default, change notifications do not contain resource data, other than the `id`. If the app requires resource data, it can make calls to Microsoft Graph APIs to get the full resource. This article uses the **user** resource as an example for working with notifications.
+
+An app can also subscribe to change notifications that include resource data, to avoid having to make additonal API calls to access the data. Such apps will need to implement extra code to handle the requirements of such notifications, specifically: responding to subscription lifecycle notifications, validating the authenticity of notifications, and decrypting the resource data. More resource types will support this type of notifications in the future. For details about how to work with these notificatios, see [Set up change notifications that include resource data (preview)](webhooks-with-resource-data.md).
 
 ## Supported resources
 
@@ -48,8 +54,8 @@ Or to the root folder of a SharePoint/OneDrive for Business drive:
 `/drive/root`
 
 Or to a new [Security API](security-concept-overview.md) alert:
-`/security/alerts?$filter=status eq ‘New’`,
-`/security/alerts?$filter=vendorInformation/provider eq ‘ASC’`
+`/security/alerts?$filter=status eq 'newAlert'`,
+`/security/alerts?$filter=vendorInformation/provider eq 'ASC'`
 
 ### Azure AD resource limitations
 
@@ -68,6 +74,16 @@ When the limits are exceeded, attempts to create a subscription will result in a
 - Azure AD B2C tenants are not supported.
 
 - Notification for user entities are not supported for personal Microsoft accounts.
+
+### Outlook resource limitations
+
+When subscribing to Outlook resources such as **messages**, **events** or **contacts**, if you choose to use the *user principal name* UPN in the resource path, the subscription request might fail if the UPN contains an apostrophe. Consider using GUID user IDs instead of UPNs to avoid running into this problem. For example, instead of using resource path:
+
+`/users/sh.o'neal@contoso.com/messages`
+
+Use: 
+
+`/users/{guid-user-id}/messages`
 
 ## Subscription lifetime
 
@@ -183,6 +199,7 @@ The notification object has the following properties:
 | changeType | string | The event type that caused the notification. For example, `created` on mail receive, or `updated` on marking a message read. |
 | resource | string | The URI of the resource relative to `https://graph.microsoft.com`. |
 | resourceData | object | The content of this property depends on the type of resource being subscribed to. |
+| tenantId | string | The ID of the tenant the notification originated from. |
 
 For example, for Outlook resources, `resourceData` contains the following fields:
 
@@ -208,6 +225,7 @@ When the user receives an email, Microsoft Graph sends a notification like the f
       "clientState":"secretClientValue",
       "changeType":"created",
       "resource":"users/{user_guid}@<tenant_guid>/messages/{long_id_string}",
+      "tenantId": "84bd8158-6d4d-4958-8b9f-9d6445542f95",
       "resourceData":
       {
         "@odata.type":"#Microsoft.Graph.Message",
@@ -226,15 +244,15 @@ Note the `value` field is an array of objects. When there are many queued notifi
 
 Each notification received by your app should be processed. The following are the minimum tasks that your app must perform to process a notification:
 
+1. Send a `202 - Accepted` status code in your response to Microsoft Graph. If Microsoft Graph doesn't receive a 2xx class code, it will try to publishing the notification a number of times, for a period of about 4 hours; after that, the notification will be dropped and won't be delivered.
+
+    > **Note:** Send a `202 - Accepted` status code as soon as you receive the notification, even before validating its authenticity. You are simply acknowledging the receipt of the notification and preventing unnecessary retries. The current timeout is 30 seconds, but it might be reduced in the future to optimize service performance.
+
 1. Validate the `clientState` property. It must match the value originally submitted with the subscription creation request.
 
     > **Note:** If this isn't true, you should not consider this a valid notification. It is possible that the notification has not originated from Microsoft Graph and may have been sent by a rogue actor. You should also investigate where the notification comes from and take appropriate action.
 
 1. Update your application based on your business logic.
-
-1. Send a `202 - Accepted` status code in your response to Microsoft Graph. If Microsoft Graph doesn't receive a 2xx class code, it will retry the notification a number of times.
-
-    > **Note:** You should send a `202 - Accepted` status code even if the `clientState` property doesn't match the one submitted with the subscription request. This is a good practice as it prevents a potential rogue actor from discovering the fact that you may not trust their notifications, and perhaps using that information to guess the value of the `clientState` property.
 
 Repeat for other notifications in the request.
 
@@ -253,6 +271,7 @@ The following code samples are available on GitHub.
 - [Get subscription](/graph/api/subscription-get?view=graph-rest-1.0)
 - [Create subscription](/graph/api/subscription-post-subscriptions?view=graph-rest-1.0)
 - [Change notifications tutorial](/graph/tutorials/change-notifications)
+- [Lifecycle notifications (preview)](/graph/concepts/webhooks-outlook-authz.md)
 
 [contact]: /graph/api/resources/contact?view=graph-rest-1.0
 [conversation]: /graph/api/resources/conversation?view=graph-rest-1.0

@@ -1,9 +1,10 @@
 ---
 title: "deviceComplianceScheduledActionForRule resource type"
 description: "Scheduled Action for Rule"
-author: "tfitzmac"
+author: "davidmu1"
 localization_priority: Normal
 ms.prod: "Intune"
+doc_type: resourcePageType
 ---
 
 # deviceComplianceScheduledActionForRule resource type
@@ -47,6 +48,7 @@ Here is a JSON representation of the resource.
   "ruleName": "String"
 }
 ```
+
 
 
 

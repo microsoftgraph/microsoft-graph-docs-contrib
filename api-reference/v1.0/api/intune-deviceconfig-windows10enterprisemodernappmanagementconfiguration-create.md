@@ -1,9 +1,10 @@
 ---
 title: "Create windows10EnterpriseModernAppManagementConfiguration"
 description: "Create a new windows10EnterpriseModernAppManagementConfiguration object."
-author: "tfitzmac"
+author: "davidmu1"
 localization_priority: Normal
 ms.prod: "Intune"
+doc_type: apiPageType
 ---
 
 # Create windows10EnterpriseModernAppManagementConfiguration
@@ -92,6 +93,7 @@ Content-Length: 394
   "uninstallBuiltInApps": true
 }
 ```
+
 
 
 

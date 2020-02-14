@@ -1,9 +1,10 @@
 ---
 title: "List iosGeneralDeviceConfigurations"
 description: "List properties and relationships of the iosGeneralDeviceConfiguration objects."
-author: "tfitzmac"
+author: "davidmu1"
 localization_priority: Normal
 ms.prod: "Intune"
+doc_type: apiPageType
 ---
 
 # List iosGeneralDeviceConfigurations
@@ -283,6 +284,7 @@ Content-Length: 8922
   ]
 }
 ```
+
 
 
 

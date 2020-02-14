@@ -2,6 +2,9 @@
 title: "Update photo"
 description: "Update the properties of photo object."
 localization_priority: Normal
+author: ""
+ms.prod: ""
+doc_type: apiPageType
 ---
 
 # Update photo
@@ -62,7 +65,7 @@ Content-length: 53
 [!INCLUDE [sample-code](../includes/snippets/csharp/update-photo-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# [Javascript](#tab/javascript)
+# [JavaScript](#tab/javascript)
 [!INCLUDE [sample-code](../includes/snippets/javascript/update-photo-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 

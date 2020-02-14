@@ -10,12 +10,12 @@ const options = {
 
 const client = Client.init(options);
 
-const CommsOperation = {
+const unmuteParticipantOperation = {
   clientContext: "clientContext-value"
 };
 
-let res = await client.api('/app/calls/{id}/unmute')
+let res = await client.api('/communications/calls/57dab8b1-894c-409a-b240-bd8beae78896/unmute')
 	.version('beta')
-	.post(CommsOperation);
+	.post(unmuteParticipantOperation);
 
 ```

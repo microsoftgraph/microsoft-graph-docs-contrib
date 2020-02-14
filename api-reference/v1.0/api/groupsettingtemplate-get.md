@@ -4,6 +4,7 @@ description: "A group setting template represents a template of settings from wh
 localization_priority: Normal
 author: "dkershaw10"
 ms.prod: "microsoft-identity-platform"
+doc_type: apiPageType
 ---
 
 # Get a group setting template
@@ -49,14 +50,14 @@ If successful, this method returns a `200 OK` response code and [groupSettingTem
   "blockType": "request",
   "name": "get_groupsettingtemplate"
 }-->
-```http
+```msgraph-interactive
 GET https://graph.microsoft.com/v1.0/groupSettingTemplates/{id}
 ```
 # [C#](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/get-groupsettingtemplate-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# [Javascript](#tab/javascript)
+# [JavaScript](#tab/javascript)
 [!INCLUDE [sample-code](../includes/snippets/javascript/get-groupsettingtemplate-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 

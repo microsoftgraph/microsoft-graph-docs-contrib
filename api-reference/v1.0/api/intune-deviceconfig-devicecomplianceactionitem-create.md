@@ -1,9 +1,10 @@
 ---
 title: "Create deviceComplianceActionItem"
 description: "Create a new deviceComplianceActionItem object."
-author: "tfitzmac"
+author: "davidmu1"
 localization_priority: Normal
 ms.prod: "Intune"
+doc_type: apiPageType
 ---
 
 # Create deviceComplianceActionItem
@@ -92,6 +93,7 @@ Content-Length: 320
   ]
 }
 ```
+
 
 
 

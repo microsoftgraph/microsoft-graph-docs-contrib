@@ -6,10 +6,10 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 IGraphServiceClient graphClient = GraphServiceClient.builder().authenticationProvider( authProvider ).buildClient();
 
-boolean persistChanges = True;
+boolean persistChanges = true;
 
 graphClient.me().drive().items("{id}").workbook()
-	.createSession(this,persistChanges)
+	.createSession(persistChanges)
 	.buildRequest()
 	.post();
 

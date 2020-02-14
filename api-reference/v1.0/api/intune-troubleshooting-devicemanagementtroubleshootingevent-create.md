@@ -1,9 +1,10 @@
 ---
 title: "Create deviceManagementTroubleshootingEvent"
 description: "Create a new deviceManagementTroubleshootingEvent object."
-author: "tfitzmac"
+author: "davidmu1"
 localization_priority: Normal
 ms.prod: "Intune"
+doc_type: apiPageType
 ---
 
 # Create deviceManagementTroubleshootingEvent
@@ -82,6 +83,7 @@ Content-Length: 228
   "correlationId": "Correlation Id value"
 }
 ```
+
 
 
 

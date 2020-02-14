@@ -10,7 +10,7 @@ const options = {
 
 const client = Client.init(options);
 
-const AudioRoutingGroup = {
+const audioRoutingGroup = {
   id: "oneToOne",
   routingMode: "oneToOne",
   sources: [
@@ -21,8 +21,8 @@ const AudioRoutingGroup = {
   ]
 };
 
-let res = await client.api('/app/calls/{id}/audioRoutingGroups')
+let res = await client.api('/communications/calls/{id}/audioRoutingGroups')
 	.version('beta')
-	.post({AudioRoutingGroup : AudioRoutingGroup});
+	.post(audioRoutingGroup);
 
 ```

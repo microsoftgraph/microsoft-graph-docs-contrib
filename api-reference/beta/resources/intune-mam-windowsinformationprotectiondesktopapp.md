@@ -4,6 +4,7 @@ description: "Desktop App for Windows information protection"
 author: "rolyon"
 localization_priority: Normal
 ms.prod: "Intune"
+doc_type: resourcePageType
 ---
 
 # windowsInformationProtectionDesktopApp resource type
@@ -52,8 +53,6 @@ Here is a JSON representation of the resource.
   "binaryVersionHigh": "String"
 }
 ```
-
-
 
 
 

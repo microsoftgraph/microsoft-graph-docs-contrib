@@ -1,9 +1,10 @@
 ---
 title: "Create androidCustomConfiguration"
 description: "Create a new androidCustomConfiguration object."
-author: "tfitzmac"
+author: "davidmu1"
 localization_priority: Normal
 ms.prod: "Intune"
+doc_type: apiPageType
 ---
 
 # Create androidCustomConfiguration
@@ -108,6 +109,7 @@ Content-Length: 574
   ]
 }
 ```
+
 
 
 

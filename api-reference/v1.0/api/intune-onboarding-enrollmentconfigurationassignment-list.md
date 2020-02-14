@@ -1,9 +1,10 @@
 ---
 title: "List enrollmentConfigurationAssignments"
 description: "List properties and relationships of the enrollmentConfigurationAssignment objects."
-author: "tfitzmac"
+author: "davidmu1"
 localization_priority: Normal
 ms.prod: "Intune"
+doc_type: apiPageType
 ---
 
 # List enrollmentConfigurationAssignments
@@ -69,6 +70,7 @@ Content-Length: 275
   ]
 }
 ```
+
 
 
 

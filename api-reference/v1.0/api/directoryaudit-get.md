@@ -4,6 +4,7 @@ description: "Describes the get method of the directoryAudit resource (entity) f
 localization_priority: Normal
 author: "dhanyahk"
 ms.prod: "microsoft-identity-platform"
+doc_type: apiPageType
 ---
 
 # Get directoryAudit
@@ -57,14 +58,14 @@ Here is an example of the request.
   "name": "get_directoryaudit"
 }-->
 
-```http
+```msgraph-interactive
 GET https://graph.microsoft.com/v1.0/auditLogs/directoryAudits/{id}
 ```
 # [C#](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/get-directoryaudit-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# [Javascript](#tab/javascript)
+# [JavaScript](#tab/javascript)
 [!INCLUDE [sample-code](../includes/snippets/javascript/get-directoryaudit-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 

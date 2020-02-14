@@ -6,12 +6,10 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 GraphServiceClient graphClient = new GraphServiceClient( authProvider );
 
-var all = true;
-
 var clientContext = "clientContext-value";
 
-await graphClient.App.Calls["{id}"]
-	.CancelMediaProcessing(all,clientContext)
+await graphClient.Communications.Calls["{id}"]
+	.CancelMediaProcessing(clientContext)
 	.Request()
 	.PostAsync();
 

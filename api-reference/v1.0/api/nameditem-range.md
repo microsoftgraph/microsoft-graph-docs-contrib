@@ -2,6 +2,9 @@
 title: "NamedItem: Range"
 description: "Returns the range object that is associated with the name. Throws an exception if the named item's type is not a range."
 localization_priority: Normal
+author: ""
+ms.prod: ""
+doc_type: apiPageType
 ---
 
 # NamedItem: Range
@@ -52,7 +55,7 @@ POST https://graph.microsoft.com/v1.0/me/drive/items/{id}/workbook/names/{name}/
 [!INCLUDE [sample-code](../includes/snippets/csharp/nameditem-range-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# [Javascript](#tab/javascript)
+# [JavaScript](#tab/javascript)
 [!INCLUDE [sample-code](../includes/snippets/javascript/nameditem-range-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 

@@ -1,9 +1,10 @@
 ---
 title: "Get targetedManagedAppConfiguration"
 description: "Read properties and relationships of the targetedManagedAppConfiguration object."
-author: "tfitzmac"
+author: "davidmu1"
 localization_priority: Normal
 ms.prod: "Intune"
+doc_type: apiPageType
 ---
 
 # Get targetedManagedAppConfiguration
@@ -81,6 +82,7 @@ Content-Length: 611
   }
 }
 ```
+
 
 
 

@@ -1,9 +1,10 @@
 ---
 title: "Get windows10EnterpriseModernAppManagementConfiguration"
 description: "Read properties and relationships of the windows10EnterpriseModernAppManagementConfiguration object."
-author: "tfitzmac"
+author: "davidmu1"
 localization_priority: Normal
 ms.prod: "Intune"
+doc_type: apiPageType
 ---
 
 # Get windows10EnterpriseModernAppManagementConfiguration
@@ -73,6 +74,7 @@ Content-Length: 429
   }
 }
 ```
+
 
 
 

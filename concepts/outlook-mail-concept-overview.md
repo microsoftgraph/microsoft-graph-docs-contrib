@@ -4,6 +4,7 @@ description: "Outlook is a messaging communication hub in Office 365. It also le
 author: "angelgolfer-ms"
 localization_priority: Priority
 ms.prod: "outlook"
+ms.custom: scenarios:getting-started
 ---
 
 # Outlook mail API overview
@@ -54,6 +55,10 @@ Use Microsoft Graph to suggest contextual data to your app users:
 Often times apps have to store their data in an external data store and entail overhead in managing and accessing the data. Microsoft Graph lets you simply include app data as Internet message headers when [creating](/graph/api/user-post-messages?view=graph-rest-1.0#request-2) or [sending](/graph/api/user-sendmail?view=graph-rest-1.0#request-2) a new message, or a reply to a message.
 
 If you need to add and subsequently update custom data, you can [store the data in individual resource instances](extensibility-overview.md#open-extensions). If appropriate, as an alternative, you can extend the schema, add custom properties, and store typed data in Microsoft Graph resources. You can make such [schema extensions](extensibility-overview.md#schema-extensions) discoverable and shareable.
+
+## Where is the data?
+
+[!INCLUDE [outlook-mailbox-type-support](../includes/outlook-mailbox-type-support.md)]
 
 ## API reference
 Looking for the API reference for this service?

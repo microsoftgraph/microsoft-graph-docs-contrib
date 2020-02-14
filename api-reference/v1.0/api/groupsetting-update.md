@@ -4,6 +4,7 @@ description: "Update the properties of a specific group setting object."
 author: "dkershaw10"
 localization_priority: Normal
 ms.prod: "microsoft-identity-platform"
+doc_type: apiPageType
 ---
 
 # Update a group setting
@@ -30,10 +31,10 @@ Update a tenant-wide or group specific setting.
 PATCH /groupSettings/{id}
 PATCH /groups/{id}/settings/{id}
 ```
-## Optional request headers
+## Request headers
 | Name | Description |
 |:-----------|:-----------|
-| Authorization  | Bearer {token}. Required. |
+| Authorization  | {token}. Required. |
 | Content-Type	| application/json	|
 
 ## Request body
@@ -123,7 +124,7 @@ Content-length: 173
 [!INCLUDE [sample-code](../includes/snippets/csharp/update-groupsetting-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# [Javascript](#tab/javascript)
+# [JavaScript](#tab/javascript)
 [!INCLUDE [sample-code](../includes/snippets/javascript/update-groupsetting-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 

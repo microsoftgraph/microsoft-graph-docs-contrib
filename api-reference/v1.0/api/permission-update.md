@@ -4,6 +4,9 @@ ms.author: JeremyKelley
 ms.date: 09/10/2017
 title: Change sharing permissions
 localization_priority: Normal
+description: "Update the properties of a sharing permission by patching the permission resource."
+ms.prod: ""
+doc_type: apiPageType
 ---
 # Update sharing permission
 
@@ -74,7 +77,7 @@ Content-type: application/json
 [!INCLUDE [sample-code](../includes/snippets/csharp/update-permission-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# [Javascript](#tab/javascript)
+# [JavaScript](#tab/javascript)
 [!INCLUDE [sample-code](../includes/snippets/javascript/update-permission-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 

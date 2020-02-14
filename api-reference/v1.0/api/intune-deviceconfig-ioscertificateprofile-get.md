@@ -1,9 +1,10 @@
 ---
 title: "Get iosCertificateProfile"
 description: "Read properties and relationships of the iosCertificateProfile object."
-author: "tfitzmac"
+author: "davidmu1"
 localization_priority: Normal
 ms.prod: "Intune"
+doc_type: apiPageType
 ---
 
 # Get iosCertificateProfile
@@ -72,6 +73,7 @@ Content-Length: 364
   }
 }
 ```
+
 
 
 

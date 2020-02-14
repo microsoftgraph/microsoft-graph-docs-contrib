@@ -1,9 +1,10 @@
 ---
 title: "Get managedDeviceMobileAppConfiguration"
 description: "Read properties and relationships of the managedDeviceMobileAppConfiguration object."
-author: "tfitzmac"
+author: "davidmu1"
 localization_priority: Normal
 ms.prod: "Intune"
+doc_type: apiPageType
 ---
 
 # Get managedDeviceMobileAppConfiguration
@@ -75,6 +76,7 @@ Content-Length: 451
   }
 }
 ```
+
 
 
 

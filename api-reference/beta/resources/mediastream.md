@@ -1,16 +1,17 @@
 ---
 title: "mediaStream resource type"
-description: "The mediaStream type."
-author: "VinodRavichandran"
+description: "Contains information about the media channel."
+author: "ananmishr"
 localization_priority: Normal
-ms.prod: "microsoft-teams"
+ms.prod: "cloud-communications"
+doc_type: resourcePageType
 ---
 
 # mediaStream resource type
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-The mediaStream type.
+Contains information about the media channel.
 
 ## Properties
 
@@ -19,7 +20,7 @@ The mediaStream type.
 | direction   | String  | The direction. The possible values are `inactive`, `sendOnly`, `receiveOnly`, `sendReceive`.                  |
 | label       | String  | The media stream label.                                                                                       |
 | mediaType   | String  | The media type. The possible value are `unknown`, `audio`, `video`, `videoBasedScreenSharing`, `data`.        |
-| serverMuted | Boolean | If the media is muted by the server.                                                                          |
+| serverMuted | Boolean | Indicates whether the media is muted by the server.                                                                          |
 | sourceId    | String  | The source ID.                                                                                                |
 
 ## JSON representation
@@ -29,7 +30,8 @@ The following is a JSON representation of the resource.
 <!-- {
   "blockType": "resource",
   "optionalProperties": [
-    "serverMuted"
+    "serverMuted",
+    "label"
   ],
   "@odata.type": "microsoft.graph.mediaStream"
 }-->
@@ -40,22 +42,6 @@ The following is a JSON representation of the resource.
   "mediaType": "unknown | audio | video | videoBasedScreenSharing | data",
   "serverMuted": true,
   "sourceId": "String"
-}
-```
-
-## Example
-
-<!-- {
-  "blockType": "example",
-  "@odata.type": "microsoft.graph.mediaStream"
-}-->
-```json
-{
-  "direction": "sendReceive",
-  "label": "main-audio",
-  "mediaType": "audio",
-  "serverMuted": false,
-  "sourceId": "1024"
 }
 ```
 

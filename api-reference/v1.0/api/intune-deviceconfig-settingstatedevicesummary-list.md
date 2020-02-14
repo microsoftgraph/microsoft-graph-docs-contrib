@@ -1,9 +1,10 @@
 ---
 title: "List settingStateDeviceSummaries"
 description: "List properties and relationships of the settingStateDeviceSummary objects."
-author: "tfitzmac"
+author: "davidmu1"
 localization_priority: Normal
 ms.prod: "Intune"
+doc_type: apiPageType
 ---
 
 # List settingStateDeviceSummaries
@@ -76,6 +77,7 @@ Content-Length: 486
   ]
 }
 ```
+
 
 
 

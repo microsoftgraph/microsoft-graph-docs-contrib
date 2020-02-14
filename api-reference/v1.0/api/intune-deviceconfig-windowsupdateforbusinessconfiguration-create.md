@@ -1,9 +1,10 @@
 ---
 title: "Create windowsUpdateForBusinessConfiguration"
 description: "Create a new windowsUpdateForBusinessConfiguration object."
-author: "tfitzmac"
+author: "davidmu1"
 localization_priority: Normal
 ms.prod: "Intune"
+doc_type: apiPageType
 ---
 
 # Create windowsUpdateForBusinessConfiguration
@@ -136,6 +137,7 @@ Content-Length: 1082
   "businessReadyUpdatesOnly": "all"
 }
 ```
+
 
 
 

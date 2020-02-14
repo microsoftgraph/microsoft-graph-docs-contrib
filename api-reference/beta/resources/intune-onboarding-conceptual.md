@@ -17,8 +17,9 @@ You can enroll devices, including Windows PCs, to enable mobile device managemen
 The following Graph resources are available to manage enrollment in Intune:
 
 - [Certificate connector setting](intune-onboarding-certificateconnectorsetting.md)
+- [Compliance management partner](intune-onboarding-compliancemanagementpartner.md)
+- [Compliance management partner assignment](intune-onboarding-compliancemanagementpartnerassignment.md)
 - [Device and app management data](intune-onboarding-deviceandappmanagementdata.md)
-- [Device enrollment configuration](intune-onboarding-deviceenrollmentconfiguration.md)
 - [Device enrollment limit configuration](intune-onboarding-deviceenrollmentlimitconfiguration.md)
 - [Device enrollment platform restriction](intune-onboarding-deviceenrollmentplatformrestriction.md)
 - [Device enrollment platform restrictions configuration](intune-onboarding-deviceenrollmentplatformrestrictionsconfiguration.md)
@@ -34,6 +35,7 @@ The following Graph resources are available to manage enrollment in Intune:
 - [Device management exchange on-premises policy](intune-onboarding-devicemanagementexchangeonpremisespolicy.md)
 - [Device management partner](intune-onboarding-devicemanagementpartner.md)
 - [Device management partner app type](intune-onboarding-devicemanagementpartnerapptype.md)
+- [Device management partner assignment](intune-onboarding-devicemanagementpartnerassignment.md)
 - [Device management partner tenant state](intune-onboarding-devicemanagementpartnertenantstate.md)
 - [Enrollment configuration assignment](intune-onboarding-enrollmentconfigurationassignment.md)
 - [Intune brand](intune-onboarding-intunebrand.md)

@@ -7,14 +7,14 @@ description: "Automatically generated file. DO NOT MODIFY"
 MSHTTPClient *httpClient = [MSClientFactory createHTTPClientWithAuthenticationProvider:authenticationProvider];
 
 NSString *MSGraphBaseURL = @"https://graph.microsoft.com/beta/";
-NSMutableURLRequest *urlRequest = [NSMutableURLRequest requestWithURL:[NSURL URLWithString:[MSGraphBaseURL stringByAppendingString:@"/app/calls/{id}/transfer"]]];
+NSMutableURLRequest *urlRequest = [NSMutableURLRequest requestWithURL:[NSURL URLWithString:[MSGraphBaseURL stringByAppendingString:@"/communications/calls/{id}/transfer"]]];
 [urlRequest setHTTPMethod:@"POST"];
 [urlRequest setValue:@"application/json" forHTTPHeaderField:@"Content-Type"];
 
 NSMutableDictionary *payloadDictionary = [[NSMutableDictionary alloc] init];
 
 MSGraphInvitationParticipantInfo *transferTarget = [[MSGraphInvitationParticipantInfo alloc] init];
-[transferTarget setEndpointType: [MSGraphEndpointType Default]];
+[transferTarget setEndpointType: [MSGraphEndpointType default]];
 MSGraphIdentitySet *identity = [[MSGraphIdentitySet alloc] init];
 MSGraphIdentity *user = [[MSGraphIdentity alloc] init];
 [user setId:@"550fae72-d251-43ec-868c-373732c2704f"];
@@ -27,7 +27,7 @@ MSGraphIdentity *user = [[MSGraphIdentity alloc] init];
 [transferTarget setReplacesCallId:@"replacesCallId-value"];
 payloadDictionary[@"transferTarget"] = transferTarget;
 
-NSString *clientContext = @"clientContext-value";
+NSString *clientContext = @"9e90d1c1-f61e-43e7-9f75-d420159aae08";
 payloadDictionary[@"clientContext"] = clientContext;
 
 NSData *data = [NSJSONSerialization dataWithJSONObject:payloadDictionary options:kNilOptions error:&error];

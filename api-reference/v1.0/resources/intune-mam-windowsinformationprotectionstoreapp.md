@@ -1,9 +1,10 @@
 ---
 title: "windowsInformationProtectionStoreApp resource type"
 description: "Store App for Windows information protection"
-author: "tfitzmac"
+author: "davidmu1"
 localization_priority: Normal
 ms.prod: "Intune"
+doc_type: resourcePageType
 ---
 
 # windowsInformationProtectionStoreApp resource type
@@ -44,6 +45,7 @@ Here is a JSON representation of the resource.
   "denied": true
 }
 ```
+
 
 
 

@@ -4,6 +4,7 @@ description: "Retrieve a list of assignment objects. A teacher is allowed to see
 author: "mmast-msft"
 localization_priority: Normal
 ms.prod: "education"
+doc_type: apiPageType
 ---
 
 # List assignments
@@ -89,6 +90,7 @@ Content-length: 344
       "assignTo": {"@odata.type": "microsoft.graph.educationAssignmentRecipient"},
       "assignedDateTime": "2014-02-01T00:00:00Z",
       "classId": "11018",
+      "closeDateTime": "2014-02-11T00:00:00Z",
       "createdBy": {
           "application": null,
           "device": null,

@@ -1,9 +1,10 @@
 ---
 title: "Update windows81GeneralConfiguration"
 description: "Update the properties of a windows81GeneralConfiguration object."
-author: "tfitzmac"
+author: "davidmu1"
 localization_priority: Normal
 ms.prod: "Intune"
+doc_type: apiPageType
 ---
 
 # Update windows81GeneralConfiguration
@@ -188,6 +189,7 @@ Content-Length: 1865
   "workFoldersUrl": "https://example.com/workFoldersUrl/"
 }
 ```
+
 
 
 

@@ -1,9 +1,10 @@
 ---
 title: "deviceEnrollmentFailureReason enum type"
 description: "Top level failure categories for enrollment."
-author: "tfitzmac"
+author: "davidmu1"
 localization_priority: Normal
 ms.prod: "Intune"
+doc_type: enumPageType
 ---
 
 # deviceEnrollmentFailureReason enum type
@@ -36,4 +37,5 @@ Top level failure categories for enrollment.
   ],
 }
 -->
+
 
