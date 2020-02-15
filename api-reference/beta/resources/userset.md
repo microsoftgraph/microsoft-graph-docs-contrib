@@ -1,26 +1,24 @@
 ---
-title: "userSet complex type"
-description: "The userSet type is the abstract base type for types used in the request, approval and assignment review settings of an access package assignment policy."
+title: "userSet resource type"
+description: "The abstract base type for types used in the request, approval, and assignment review settings of an access package assignment policy."
 localization_priority: Normal
 author: "markwahl-msft"
 ms.prod: "microsoft-identity-platform"
 doc_type: "resourcePageType"
 ---
 
-# userSet complex type
+# userSet resource type
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-The `userSet` type, used in the request, approval and assignment review settings of an [access package assignment policy](accesspackageassignmentpolicy.md), is the abstract base for the [singleUser](singleuser.md),[groupMembers](groupmembers.md), [connectedOrganizationMembers](connectedorganizationmembers.md), [requestorManager](requestormanager.md), [internalSponsors](internalsponsors.md) and [externalSponsors](externalsponsors.md) types.
+Used in the request, approval, and assignment review settings of an [access package assignment policy](accesspackageassignmentpolicy.md). The abstract base type for the [singleUser](singleuser.md),[groupMembers](groupmembers.md), [connectedOrganizationMembers](connectedorganizationmembers.md), [requestorManager](requestormanager.md), [internalSponsors](internalsponsors.md), and [externalSponsors](externalsponsors.md) types.
 
 ## Properties
 
-This type has the following properties:
-
 | Property                     | Type                      | Description |
 | :--------------------------- | :------------------------ | :---------- |
-| `@odata.type` | String | The value as specified in one of the types below. |
-| isBackup | Boolean | For a user in an approval stage, this property indicates that the user is a backup fallback approver. |
+| @odata.type | String | The value as specified in one of the types below. |
+| isBackup | Boolean | For a user in an approval stage, this property indicates whether the user is a backup fallback approver. |
 
 ## JSON representation
 
