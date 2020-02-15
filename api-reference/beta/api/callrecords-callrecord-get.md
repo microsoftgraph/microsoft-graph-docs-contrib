@@ -3,7 +3,7 @@ title: "Get callRecord"
 description: "Retrieve the properties and relationships of callrecord object."
 localization_priority: Normal
 author: "stephenjust"
-ms.prod: "microsoft-ic3"
+ms.prod: "cloud-communications"
 doc_type: "apiPageType"
 ---
 
@@ -60,7 +60,7 @@ The following is an example of the request to get the basic details from a [call
 }-->
 
 ```http
-GET /communications/callRecords/{id}
+GET https://graph.microsoft.com/beta/communications/callRecords/{id}
 ```
 
 ### Response
@@ -100,7 +100,7 @@ The following is an example of the request to get the full details from a [callR
 }-->
 
 ```http
-GET /communications/callRecords/{id}?$expand=sessions($expand=segments)
+GET https://graph.microsoft.com/beta/communications/callRecords/{id}?$expand=sessions($expand=segments)
 ```
 
 ### Response

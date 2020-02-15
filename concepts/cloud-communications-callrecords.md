@@ -3,7 +3,7 @@ title: "Call records overview"
 description: "Call records give you insights into the calls and meetings performed within your organization."
 author: "stephenjust"
 localization_priority: Normal
-ms.prod: "microsoft-ic3"
+ms.prod: "cloud-communications"
 ---
 
 # Call records overview

@@ -3,7 +3,7 @@ title: "endpoint resource type"
 description: "The endpoint type"
 localization_priority: Normal
 author: "stephenjust"
-ms.prod: "microsoft-ic3"
+ms.prod: "cloud-communications"
 doc_type: "resourcePageType"
 ---
 

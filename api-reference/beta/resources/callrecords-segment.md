@@ -3,7 +3,7 @@ title: "segment resource type"
 description: "The segment type"
 localization_priority: Normal
 author: "stephenjust"
-ms.prod: "microsoft-ic3"
+ms.prod: "cloud-communications"
 doc_type: "resourcePageType"
 ---
 
