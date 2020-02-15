@@ -36,7 +36,7 @@ GET /deviceManagement/deviceConfigurations/{deviceConfigurationId}/microsoft.gra
 ```
 
 ## Optional query parameters
-This method supports the [OData Query Parameters](/graph/query-parameters) to help customize the response.
+This method supports the [OData Query Parameters](https://docs.microsoft.com/en-us/graph/query-parameters) to help customize the response.
 
 ## Request headers
 |Header|Value|
@@ -63,7 +63,7 @@ Here is an example of the response. Note: The response object shown here may be 
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 1579
+Content-Length: 1889
 
 {
   "value": {
@@ -107,11 +107,20 @@ Content-Length: 1579
       "monday"
     ],
     "utcTimeOffsetInMinutes": 6,
-    "enforcedSoftwareUpdateDelayInDays": 1
+    "enforcedSoftwareUpdateDelayInDays": 1,
+    "updateScheduleType": "alwaysUpdate",
+    "customUpdateTimeWindows": [
+      {
+        "@odata.type": "microsoft.graph.customUpdateTimeWindow",
+        "startDay": "monday",
+        "endDay": "monday",
+        "startTime": "12:03:30.2730000",
+        "endTime": "12:03:02.3740000"
+      }
+    ]
   }
 }
 ```
-
 
 
 

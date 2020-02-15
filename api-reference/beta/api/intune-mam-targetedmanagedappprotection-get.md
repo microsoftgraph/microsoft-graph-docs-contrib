@@ -36,7 +36,7 @@ GET /deviceAppManagement/managedAppRegistrations/{managedAppRegistrationId}/inte
 ```
 
 ## Optional query parameters
-This method supports the [OData Query Parameters](/graph/query-parameters) to help customize the response.
+This method supports the [OData Query Parameters](https://docs.microsoft.com/en-us/graph/query-parameters) to help customize the response.
 
 ## Request headers
 |Header|Value|
@@ -63,7 +63,7 @@ Here is an example of the response. Note: The response object shown here may be 
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 2497
+Content-Length: 2549
 
 {
   "value": {
@@ -120,12 +120,12 @@ Content-Length: 2497
     "allowedDataIngestionLocations": [
       "sharePoint"
     ],
+    "appActionIfUnableToAuthenticateUser": "wipe",
     "isAssigned": true,
     "targetedAppManagementLevels": "unmanaged"
   }
 }
 ```
-
 
 
 
