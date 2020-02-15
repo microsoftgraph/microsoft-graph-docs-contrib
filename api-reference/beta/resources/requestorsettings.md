@@ -1,17 +1,17 @@
 ---
-title: "requestorSettings complex type"
-description: "The requestorSettings type, used for the `requestorSettings` property of an access package assignment policy, provides additional settings to select who can create a request."
+title: "requestorSettings resource type"
+description: "Used for the `requestorSettings` property of an access package assignment policy. Provides additional settings to select who can create a request."
 localization_priority: Normal
 author: "markwahl-msft"
 ms.prod: "microsoft-identity-platform"
 doc_type: "resourcePageType"
 ---
 
-# requestorSettings complex type
+# requestorSettings resource type
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-The `requestorSettings` type, used for the `requestorSettings` property of an [access package assignment policy](accesspackageassignmentpolicy.md), provides additional settings to select who can create a request for an access package on that policy.
+Used for the **requestorSettings** property of an [access package assignment policy](accesspackageassignmentpolicy.md). Provides additional settings to select who can create a request for an access package on that policy.
 
 | Who can request | scopeType | allowedRequestors collection|
 |:----------------|:----------|:------------------|
@@ -26,18 +26,16 @@ The `requestorSettings` type, used for the `requestorSettings` property of an [a
 
 ## Properties
 
-This type has the following properties:
-
 | Property                     | Type                      | Description |
 | :--------------------------- | :------------------------ | :---------- |
 | scopeType |String |Who can request. One of `NoSubjects`, `SpecificDirectorySubjects`, `SpecificConnectedOrganizationSubjects`, `AllExistingConnectedOrganizationSubjects`, `AllExistingDirectoryMemberUsers`, `AllExistingDirectorySubjects` or `AllExternalSubjects`.  |
-| acceptRequests | Boolean | Whether new requests are accepted on this policy. |
+| acceptRequests | Boolean | Indicates whether new requests are accepted on this policy. |
 | allowedRequestors | [userSet](userset.md) collection| The users who are allowed to request on this policy, which can be [singleUser](singleuser.md), [groupMembers](groupmembers.md), and [connectedOrganizationMembers](connectedorganizationmembers.md). |
 
 ## JSON representation
 
 
-The following is a JSON representation of the requestor settings property of a policy, which allows the members of a group to request.
+The following is a JSON representation of the **requestorSettings** property of a policy, which allows the members of a group to request.
 
 <!-- {
   "blockType": "resource",
