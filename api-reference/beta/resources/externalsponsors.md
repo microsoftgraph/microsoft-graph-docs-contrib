@@ -7,7 +7,7 @@ ms.prod: "microsoft-identity-platform"
 doc_type: "resourcePageType"
 ---
 
-# externalSponsors complex type
+# externalSponsors resource type
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
