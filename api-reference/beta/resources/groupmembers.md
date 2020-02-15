@@ -1,32 +1,30 @@
 ---
-title: "groupMembers complex type"
-description: "The groupMembers type identifies a collection of users in the tenant who will be allowed as requestor, approver or reviewer."
+title: "groupMembers resource type"
+description: "Identifies a collection of users in the tenant who will be allowed as requestor, approver, or reviewer."
 localization_priority: Normal
 author: "markwahl-msft"
 ms.prod: "microsoft-identity-platform"
 doc_type: "resourcePageType"
 ---
 
-# groupMembers complex type
+# groupMembers resource type
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-The groupMembers type, used in the request, approval and assignment review settings of an [access package assignment policy](accesspackageassignmentpolicy.md), identifies a collection of users in the tenant who will be allowed as requestor, approver or reviewer.  The users are members of a specific group.
+Used in the request, approval, and assignment review settings of an [access package assignment policy](accesspackageassignmentpolicy.md). Identifies a collection of users in the tenant who will be allowed as requestor, approver, or reviewer.  The users are members of a specific group.
 
 ## Properties
-
-This type has the following properties:
 
 | Property                     | Type                      | Description |
 | :--------------------------- | :------------------------ | :---------- |
 | `@odata.type` | String | The value "`#microsoft.graph.groupMembers`". |
-| id |String | The id of the group in Azure AD. |
+| id |String | The ID of the group in Azure AD. |
 | description |String | The name of the group in Azure AD. Read only. |
-| isBackup | Boolean | For a groupMembers in an approval stage, this property indicates that the group members are a backup fallback approver. |
+| isBackup | Boolean | For **groupMembers** in an approval stage, this property indicates that the group members are a backup fallback approver. |
 
 ## JSON representation
 
-The following is a JSON representation of the groupmembers from the requestor settings property of a policy, which allows the members of a group to request.
+The following is a JSON representation of the **groupMembers** from the requestor settings property of a policy, which allows the members of a group to request.
 
 <!-- {
   "blockType": "resource",
