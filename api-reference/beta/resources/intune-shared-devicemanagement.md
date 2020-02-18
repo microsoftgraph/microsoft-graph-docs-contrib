@@ -128,8 +128,8 @@ The deviceManagement resource represents a container whose contents vary accordi
 |windowsMalwareInformation|[windowsMalwareInformation](../resources/intune-devices-windowsmalwareinformation.md) collection|The list of affected malware in the tenant.|
 |mobileAppTroubleshootingEvents|[mobileAppTroubleshootingEvent](../resources/intune-shared-mobileapptroubleshootingevent.md) collection|The collection property of MobileAppTroubleshootingEvent.|
 |userExperienceAnalyticsOverview|userExperienceAnalyticsOverview|User experience analytics overview|
-|userExperienceAnalyticsBaselines|[userExperienceAnalyticsBaseline](../resources/userExperienceAnalyticsBaseline.md) collection|User experience analytics baselines|
-|userExperienceAnalyticsCategories|[userExperienceAnalyticsCategory](../resources/userExperienceAnalyticsCategory.md) collection|User experience analytics categories|
+|userExperienceAnalyticsBaselines|userExperienceAnalyticsBaseline collection|User experience analytics baselines|
+|userExperienceAnalyticsCategories|userExperienceAnalyticsCategory collection|User experience analytics categories|
 |userExperienceAnalyticsDevicePerformance|userExperienceAnalyticsDevicePerformance collection|User experience analytics device performance|
 |userExperienceAnalyticsRegressionSummary|userExperienceAnalyticsRegressionSummary|User experience analytics regression summary|
 |userExperienceAnalyticsDeviceStartupHistory|userExperienceAnalyticsDeviceStartupHistory collection|User experience analytics device Startup History|
