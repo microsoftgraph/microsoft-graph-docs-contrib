@@ -51,7 +51,7 @@ For details about known issues with Microsoft Graph APIs, see [Known issues](kno
 
 | **Change type** | **Version**   | **Description**                          |
 | :-------------- | :------------ | :--------------------------------------- |
-| Addition | v1.0 | Added the [group: assignLicense API](../api-reference/v1.0/api/group-assignlicense.md), which can be used to assign license to a [group](../api-reference/v1.0/resources/group.md). |
+| Addition | v1.0 | Added the [group: assignLicense API](/graph/api/group-assignlicense.md?view=graph-rest-1.0), which can be used to assign license to a [group](/graph/api/resources/group?view=graph-rest-1.0). |
 
 ### Identity and access (Azure AD)
 
@@ -63,7 +63,7 @@ For details about known issues with Microsoft Graph APIs, see [Known issues](kno
 
 | **Change type** | **Version** | **Description**                          |
 | :-------------- | :---------- | :--------------------------------------- |
-| Addition | v1.0 | Added the [user: reprocessLicenseAssignment API](../api-reference/v1.0/api/user-reprocesslicenseassignment.md), which can be used to reprocess all group-based license assignments for the [user](../api-reference/v1.0/resources/user.md). |
+| Addition | v1.0 | Added the [user: reprocessLicenseAssignment API](/graph/api/user-reprocesslicenseassignment.md), which can be used to reprocess all group-based license assignments for the [user](/graph/api/resources/user.md?view=graph-rest-1.0). |
 | Addition | v1.0 | Added the **identities** property to the [user](/graph/api/resources/user?view=graph-rest-1.0) resource. This property represents the set of identities (like local accounts and social accounts) that this user can use to sign in with.|
 
 ## January 2020
