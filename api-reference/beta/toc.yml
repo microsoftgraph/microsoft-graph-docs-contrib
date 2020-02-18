@@ -9886,8 +9886,6 @@
             href: resources/meetingactivitystatistics.md
           - name: List activity statistics
             href: api/activitystatistics-list.md
-          - name: Get activity statistics
-            href: api/activitystatistics-get.md
     - name: Personal contacts
       href: resources/contact.md
       displayName: Outlook, Outlook contacts, Outlook contact, People

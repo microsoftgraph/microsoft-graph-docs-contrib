@@ -117,31 +117,6 @@ For more information about administrator roles, see [Assigning administrator rol
 
 ---
 
-## Analytics resource permissions
-
-#### Delegated permissions
-
-|   Permission    |  Display String   |  Description | Admin Consent Required |
-|:-----------------------------|:-----------------------------------------|:-----------------|:-----------------|
-| _Analytics.Read_ |   Read all user activities statistics. | Allows the app to read user activities statistics without a signed-in user. | Yes |
-
-#### Application permissions
-
-None.
-
-### Example usage
-
-#### Delegated
-
-* _Analytics.Read_: [List related settings for a user](/graph/api/useranalytics-get-settings?view=graph-rest-beta) (`GET /beta/me/analytics/settings)
-* _Analytics.Read_: [Get activity statistics for a user](/graph/api/activitystatistics-get?view=graph-rest-beta) (`GET /beta/me/analytics/activitystatistics/{id})
-
-#### Application
-
-None.
-
----
-
 ## Administrative Units permissions
 
 #### Delegated permissions
@@ -175,6 +150,30 @@ _AdministrativeUnit.Read.All_ and _AdministrativeUnit.ReadWrite.All_ are valid o
 - _AdministrativeUnit.ReadWrite.All_: Add members to an administrative unit  (`POST /beta/administrativeUnits/<id>/members`)
 
 For more complex scenarios involving multiple permissions, see [Permission scenarios](#permission-scenarios).
+
+---
+
+## Analytics resource permissions
+
+#### Delegated permissions
+
+|   Permission    |  Display String   |  Description | Admin Consent Required |
+|:-----------------------------|:-----------------------------------------|:-----------------|:-----------------|
+| _Analytics.Read_ |   Read all user activities statistics. | Allows the app to read user activities statistics without a signed-in user. | Yes |
+
+#### Application permissions
+
+None.
+
+### Example usage
+
+#### Delegated
+
+* _Analytics.Read_: [List related settings for a user](/graph/api/useranalytics-get-settings?view=graph-rest-beta) (`GET /beta/me/analytics/settings)
+
+#### Application
+
+None.
 
 ---
 
