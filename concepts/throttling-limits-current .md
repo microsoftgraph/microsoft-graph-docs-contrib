@@ -2,6 +2,7 @@
 title: "Microsoft Graph throttling limits and boundaries"
 description: "Throttling limits the number of concurrent calls to a service to prevent overuse of resources. Microsoft Graph is designed to handle a high volume of requests. If an overwhelming number of requests occurs, throttling helps maintain optimal performance and reliability of the Microsoft Graph service."
 localization_priority: Priority
+author: "baywet"
 ---
 
 # Microsoft Teams Graph API limits and boundaries
@@ -68,5 +69,4 @@ Please refer to [Azure AD service limits and restrictions.](/azure/active-direct
 
 See also [SharePoint online limits](/office365/servicedescriptions/sharepoint-online-service-description/sharepoint-online-limits)
 and [Software boundaries and limits for SharePoint Servers 2016 and 2019.](/sharepoint/install/software-boundaries-and-limits-0)
-
 
