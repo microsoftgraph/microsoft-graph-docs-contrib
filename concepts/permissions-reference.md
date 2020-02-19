@@ -1645,17 +1645,17 @@ The *CreatedByApp* constraint associated with this permission indicates the serv
 
 |Permission                              |Display String                        |Description        |Admin Consent Required | Microsoft Account supported |
 |:---------------------------------------|:-------------------------------------|:------------------|:----------------------|:----------------------------|
-|_UserAuthenticationMethod.ReadWrite.All_|Manage users' authentication methods  |Allows create/read/update/delete for authentication methods and default method on a user. Users authorized to do so can perform this for many or all users; users without those roles can only perform the action on self. This permission is currently in private preview only and is not yet available for public use.|Yes|No|
-|_UserAuthenticationMethod.ReadWrite_    |Manage own authentication methods     |Allows create/read/update/delete for authentication methods and default method on a user's own methods only. This permission is currently in private preview only and is not yet available for public use.|Yes|No|
-|_UserAuthenticationMethod.Read.All_     |Read users' authentication methods    |Allows read for authentication methods and default method on a user. Administrators with appropriate roles (global administrator, authentication administrator, privileged authentication administrator) can perform this for many or all users; users without those roles can only perform the action on self. This permission is currently in private preview only and is not yet available for public use.|Yes|No|
 |_UserAuthenticationMethod.Read_         |Read own authentication methods       |Allows read of authentication methods and default method on a user's own methods only. This permission is currently in private preview only and is not yet available for public use.|Yes|No|
+|_UserAuthenticationMethod.Read.All_     |Read users' authentication methods    |Allows read for authentication methods and default method on a user. Administrators with appropriate roles (global administrator, authentication administrator, privileged authentication administrator) can perform this for many or all users; users without those roles can only perform the action on self. This permission is currently in private preview only and is not yet available for public use.|Yes|No|
+|_UserAuthenticationMethod.ReadWrite_    |Manage own authentication methods     |Allows create/read/update/delete for authentication methods and default method on a user's own methods only. This permission is currently in private preview only and is not yet available for public use.|Yes|No|
+|_UserAuthenticationMethod.ReadWrite.All_|Manage users' authentication methods  |Allows create/read/update/delete for authentication methods and default method on a user. Users authorized to do so can perform this for many or all users; users without those roles can only perform the action on self. This permission is currently in private preview only and is not yet available for public use.|Yes|No|
 
 #### Application permissions
 
 |Permission                              |Display String                        |Description        |Admin Consent Required |
 |:---------------------------------------|:-------------------------------------|:------------------|:----------------------|
-|_UserAuthenticationMethod.ReadWrite.All_|Manage users' authentication methods  |Allows the application to create/read/update/delete for authentication methods and default method on any user. This permission is currently in private preview only and is not yet available for public use.|Yes|
 |_UserAuthenticationMethod.Read.All_     |Read users' authentication methods    |Allows the application to read authentication methods and default method on a user. This permission is currently in private preview only and is not yet available for public use.|Yes|
+|_UserAuthenticationMethod.ReadWrite.All_|Manage users' authentication methods  |Allows the application to create/read/update/delete for authentication methods and default method on any user. This permission is currently in private preview only and is not yet available for public use.|Yes|
 
 ### Remarks
 
