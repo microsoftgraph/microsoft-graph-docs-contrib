@@ -58,7 +58,7 @@ Here is an example of the response. Note: The response object shown here may be 
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 636
+Content-Length: 675
 
 {
   "value": [
@@ -73,6 +73,7 @@ Content-Length: 636
       "totalBootTimeInMs": 1,
       "groupPolicyLoginTimeInMs": 8,
       "coreLoginTimeInMs": 1,
+      "responsiveDesktopTimeInMs": 9,
       "totalLoginTimeInMs": 2,
       "isFirstLogin": true,
       "isFeatureUpdate": true,

@@ -117,31 +117,6 @@ For more information about administrator roles, see [Assigning administrator rol
 
 ---
 
-## Analytics resource permissions
-
-#### Delegated permissions
-
-|   Permission    |  Display String   |  Description | Admin Consent Required |
-|:-----------------------------|:-----------------------------------------|:-----------------|:-----------------|
-| _Analytics.Read_ |   Read all user activities statistics. | Allows the app to read user activities statistics without a signed-in user. | Yes |
-
-#### Application permissions
-
-None.
-
-### Example usage
-
-#### Delegated
-
-* _Analytics.Read_: [List related settings for a user](/graph/api/useranalytics-get-settings?view=graph-rest-beta) (`GET /beta/me/analytics/settings)
-* _Analytics.Read_: [Get activity statistics for a user](/graph/api/activitystatistics-get?view=graph-rest-beta) (`GET /beta/me/analytics/activitystatistics/{id})
-
-#### Application
-
-None.
-
----
-
 ## Administrative Units permissions
 
 #### Delegated permissions
@@ -175,6 +150,30 @@ _AdministrativeUnit.Read.All_ and _AdministrativeUnit.ReadWrite.All_ are valid o
 - _AdministrativeUnit.ReadWrite.All_: Add members to an administrative unit  (`POST /beta/administrativeUnits/<id>/members`)
 
 For more complex scenarios involving multiple permissions, see [Permission scenarios](#permission-scenarios).
+
+---
+
+## Analytics resource permissions
+
+#### Delegated permissions
+
+|   Permission    |  Display String   |  Description | Admin Consent Required |
+|:-----------------------------|:-----------------------------------------|:-----------------|:-----------------|
+| _Analytics.Read_ |   Read all user activities statistics. | Allows the app to read user activities statistics without a signed-in user. | Yes |
+
+#### Application permissions
+
+None.
+
+### Example usage
+
+#### Delegated
+
+* _Analytics.Read_: [List related settings for a user](/graph/api/useranalytics-get-settings?view=graph-rest-beta) (`GET /beta/me/analytics/settings)
+
+#### Application
+
+None.
 
 ---
 
@@ -1464,6 +1463,22 @@ _Shared_ permissions are currently only supported for work or school accounts. E
 For more complex scenarios involving multiple permissions, see [Permission scenarios](#permission-scenarios).
 
 ---
+
+## Teams Activity permissions
+
+#### Delegated permissions
+
+|   Permission    |  Display String   |  Description | Admin Consent Required | Microsoft Account supported |
+|:----------------|:------------------|:-------------|:-----------------------|:--------------|
+| _TeamsActivity.Read_ | Read user's teamwork activity feed | Allows the app to read the signed-in user's teamwork activity feed. This permission is currently in private preview only and is not available for public use.	| No | No |
+| _TeamsActivity.Send_ | Send a teamwork activity as the user | Allows the app to create new activities in the user's teamwork activity feed, and send new activities to other users' activity feed, on behalf of the signed-in user. This permission is currently in private preview only and is not available for public use.	| No | No |
+
+#### Application permissions
+
+|   Permission    |  Display String   |  Description | Admin Consent Required | Microsoft Account supported |
+|:----------------|:------------------|:-------------|:-----------------------|:--------------|
+| _TeamsActivity.Read.All_ | Read all users' teamwork activity feed | Allows the app to read all users' teamwork activity feed, without a signed-in user. This permission is currently in private preview only and is not available for public use.	| Yes | No |
+| _TeamsActivity.Send_ | Send a teamwork activity to any user | Allows the app to send new activities to any users' teamwork activity feed, without a signed-in user. This permission is currently in private preview only and is not available for public use.	| Yes | No |
 
 ## Terms of use permissions
 
