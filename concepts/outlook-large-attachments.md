@@ -8,8 +8,8 @@ ms.prod: "outlook"
 
 # Attach large files to Outlook messages or events as attachments
 
-Outlook [message](/graph/api/resources/message?view=graph-rest-1.0) and [event](graph/api/resources/event?view=graph-rest-1.0) can support file attachments of a wider range of sizes. 
-Depending on the size of the file, you can choose one of two ways to attach a file to an Outlook [message](/graph/api/resources/message?view=graph-rest-1.0) or:
+You can attach files up to 150 MB to an Outlook [message](/graph/api/resources/message?view=graph-rest-1.0) or [event](graph/api/resources/event?view=graph-rest-1.0). 
+Depending on the size of the file, you can choose one of two ways to attach the file:
 
 - If the file size is under 4 MB, you can do a single [POST on the attachments navigation property of the message](/graph/api/message-post-attachments?view=graph-rest-1.0). The successful `POST` response includes the ID of the file attached to the message.
 - If the file size is between 3MB and 150MB, create an upload session, and iteratively use `PUT` to upload ranges of bytes of the file until you have uploaded the entire file. A header in the final successful `PUT` response includes a URL with the attachment ID.
