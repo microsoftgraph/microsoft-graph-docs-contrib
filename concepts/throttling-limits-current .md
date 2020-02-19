@@ -29,8 +29,8 @@ Following are the current throttling limits:
 |---------------------------|-------------|
 | GET messaging for an app/tenant | 5 requests/second |
 | POST messaging for an app/tenant | 2 requests/second |
-| Post channel messages for a tenant | 5000 messages/day per channel |
-| Post channel messages for a user | 3000 messages/day per channel |
+| POST channel messages for a tenant | 5000 messages/day per channel |
+| POST channel messages for a user | 3000 messages/day per channel |
 
 
 
