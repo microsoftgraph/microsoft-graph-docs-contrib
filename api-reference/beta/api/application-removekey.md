@@ -11,38 +11,17 @@ doc_type: "apiPageType"
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Removes a key credential from an [application](../resources/application.md). This method along with [addKey](application-addkey.md) can be used by an application to programmatically rotate it's expiring keys without a user's context.
+Removes a key credential from an [application](../resources/application.md). This method along with [addKey](application-addkey.md) can be used by an application to automate rolling its expiring keys.
 
 > [!Note]
 > [Create servicePrincipal](../api/serviceprincipal-post-serviceprincipals.md) and
 [Update servicePrincipal](../api/serviceprincipal-update.md) operations can continue to be used to add and update key credentials for any application with application or a user's context.
 
-As part of the request validation for this method, a proof of possession of an existing key is verified before the action can be performed. The proof is represented by a self-signed JWT token. The requesting application needs to generate a self-signed JWT token with the following requirements.
-
-Required claims:
-
-- aud - Audience needs to be `00000002-0000-0000-c000-000000000000` (i.e. AAD Graph).
-- iss - Issuer needs to be the __id__ (i.e. Object ID)  of the application that is making the call..
-- nbf - not before time
-- exp - expiration time should be "nbf" + 10 mins.
-
-The token signing key is the private key of one of the application existing certificates.
-
-The certificate to be added needs to meet the following criteria to be valid:
-
-- Its public key is part of application keys with `AsymmetricX509Cert` type with `Verify` usage (or) `X509CertAndPassword` type with `Sign` usage.
-- Its public key has not yet expired.
-
-Applications that don’t have any existing valid certificates (i.e.: no certificates have been added yet, or all certificates have expired), won’t be able to use this service action and separate process will be needed to perform an update instead.
-
-The token lifespan should not exceed 10 minutes. Where token lifespan is the difference between EXP and NBF claims.
-
-> [!Note]
-> The [sample](#Sample-to-generate-proof-token) provided at the end of this document can be used to generate the proof token.
+As part of the request validation for this method, a proof of possession of an existing key is verified before the action can be performed.
 
 ## Permissions
 
-None. An application does not need any specific permission to rotate it's own keys.
+None. An application does not need any specific permission to roll it's own keys.
 
 ## HTTP request
 
@@ -61,10 +40,12 @@ POST /applications/{id}/removeKey
 
 ## Request body
 
+In the request body, provide the following required properties.
+
 | Property	| Type | Description|
 |:----------|:-----|:-----------|
-| keyId     | GUID | The unique identifier for the password. Required. |
-| proof | String | A self-signed JWT token used as a proof of possession of the existing keys. The token signing key is the private key of one of the application existing certificates. The token should contain the following claims:<ul><li>`aud` - Audience needs to be `00000002-0000-0000-c000-000000000000` (i.e. AAD Graph).</li><li>`iss` - Issuer needs to be the __id__ (i.e. Object ID)  of the application that is making the call.</li><li>`nbf` - Not before time.</li><li>`exp` - Expiration time should be "nbf" + 10 mins.</li></ul><br>Required.|
+| keyId     | GUID | The unique identifier for the password.|
+| proof | String | A self-signed JWT token used as a proof of possession of the existing keys. This JWT token must be signed using the private key of one of the application's existing valid certificates. The token should contain the following claims:<ul><li>`aud` - Audience needs to be `00000002-0000-0000-c000-000000000000`.</li><li>`iss` - Issuer needs to be the __id__  of the application that is making the call.</li><li>`nbf` - Not before time.</li><li>`exp` - Expiration time should be "nbf" + 10 mins.</li></ul><br>A code [sample](#Sample-to-generate-proof-token) to generate this proof of possession token is provided at the end of this topic.|
 
 ## Response
 
