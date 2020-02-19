@@ -153,7 +153,7 @@ GET https://graph.microsoft.com/v1.0/users/delta?$deltatoken=oEcOySpF_hWYmTIUZBO
 
 ## deltaLink response
 
-If no changes have occurred, the same `deltaToken` is returned with no results.
+If no changes have occurred, a different `deltatoken` is returned with no results.
 
 ```http
 HTTP/1.1 200 OK
@@ -166,7 +166,7 @@ Content-type: application/json
 }
 ```
 
-If changes have occurred, the same `deltaToken` is returned including a collection of changed users.
+If changes have occurred, a different `deltatoken` is returned including a collection of changed users.
 
 ```http
 HTTP/1.1 200 OK

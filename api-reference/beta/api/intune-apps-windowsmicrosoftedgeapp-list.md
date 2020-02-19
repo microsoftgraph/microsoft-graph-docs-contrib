@@ -58,7 +58,7 @@ Here is an example of the response. Note: The response object shown here may be 
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 1053
+Content-Length: 1118
 
 {
   "value": [
@@ -88,7 +88,8 @@ Content-Length: 1053
         "Role Scope Tag Ids value"
       ],
       "dependentAppCount": 1,
-      "channel": "beta"
+      "channel": "beta",
+      "displayLanguageLocale": "Display Language Locale value"
     }
   ]
 }
