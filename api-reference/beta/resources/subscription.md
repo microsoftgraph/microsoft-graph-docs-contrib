@@ -21,6 +21,8 @@ A subscription allows a client app to receive notifications about changes to dat
 - A [message][], [event][], or [contact][] in Outlook
 - A [user][] or [group][] in Azure Active Directory
 
+The resource path expressions supported for each resource - that can be used in the **resource** property of the subscription - are documented in [the overview article](webhooks.md).
+
 ## Methods
 
 | Method | Return Type | Description |
