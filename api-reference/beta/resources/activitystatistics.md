@@ -21,7 +21,7 @@ The following types of statistics are derived from **activityStatistics**:
 * [Focus](focusactivitystatistics.md)
 * [Meeting](meetingactivitystatistics.md)
 
-### Activity id property
+<!--  removing per Mathew 2/6/2020   ### Activity id property
 
 In an HTTP request, to get a specific type of activity statistics within a date range, you can express this information as an ID to the user's collection of activityStatistics in the following format, where `{startdate}` and `{enddate}` are expressed in ISO 8601 calendar date format and `{activity}` can be "call", "chat", "email", "focus", or "meeting":
 
@@ -30,12 +30,11 @@ In an HTTP request, to get a specific type of activity statistics within a date 
 ```
 
 For example, the ID "email_2019-08-10_2019-08-12" represents the emailActivityStatistics for the specified user between August 10, 2019 and August 12, 2019.
-
+-->
 ## Methods
 
 | Method       | Return Type | Description |
 |:-------------|:------------|:------------|
-| [Get activityStatistics](../api/activitystatistics-get.md) | [activityStatistics](activitystatistics.md) | Get the properties for a specified activity's statistics for a user, for the specified time range. |
 | [List activityStatistics](../api/activitystatistics-list.md) | [activityStatistics](activitystatistics.md) | Retrieve the properties for the collection of activity statistics for a user, for the last complete week.|
 
 ## Properties
