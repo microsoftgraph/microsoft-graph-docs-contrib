@@ -13,6 +13,8 @@ doc_type: "resourcePageType"
 
 The media type. Represents the media (audio, video, video-based screen-sharing, etc.) used in a call.
 
+Namespace: microsoft.graph.callRecords
+
 ## Properties
 
 | Property     | Type        | Description |

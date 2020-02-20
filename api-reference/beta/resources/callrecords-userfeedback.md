@@ -13,6 +13,8 @@ doc_type: "resourcePageType"
 
 The userFeedback type. Represents the feedback provided by the user an endpoint about the quality of the session.
 
+Namespace: microsoft.graph.callRecords
+
 ## Properties
 
 | Property     | Type        | Description |

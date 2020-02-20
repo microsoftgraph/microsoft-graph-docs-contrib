@@ -13,6 +13,8 @@ doc_type: "resourcePageType"
 
 The mediaStream type.
 
+Namespace: microsoft.graph.callRecords
+
 ## Properties
 
 | Property     | Type        | Description |

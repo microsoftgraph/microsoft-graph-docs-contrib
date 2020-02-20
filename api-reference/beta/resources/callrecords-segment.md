@@ -16,6 +16,8 @@ in the case of a Conference call. A typical VOIP call will have one segment per 
 scenarios, such as PSTN calls, there will be multiple segments per session due to additional
 server-to-server communication required to connect the call.
 
+Namespace: microsoft.graph.callRecords
+
 ## Methods
 
 No methods exist to directly access segments. Please use the [Get callRecord](../api/callrecords-callrecord-get.md)

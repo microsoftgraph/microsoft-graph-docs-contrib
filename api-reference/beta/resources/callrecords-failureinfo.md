@@ -13,6 +13,8 @@ doc_type: "resourcePageType"
 
 The failureInfo type. Represents information about why a call or portion of a call failed.
 
+Namespace: microsoft.graph.callRecords
+
 ## Properties
 
 | Property     | Type        | Description |

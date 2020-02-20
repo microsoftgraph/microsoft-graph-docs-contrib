@@ -13,6 +13,8 @@ doc_type: "resourcePageType"
 
 The callRecord type. Represents a single peer-to-peer call or a group call between multiple participants, sometimes referred to as an online meeting.
 
+Namespace: microsoft.graph.callRecords
+
 ## Methods
 
 | Method       | Return Type | Description |

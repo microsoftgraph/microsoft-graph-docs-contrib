@@ -13,6 +13,8 @@ doc_type: "resourcePageType"
 
 The networkInfo type. Represents information about the network used in a call.
 
+Namespace: microsoft.graph.callRecords
+
 ## Properties
 
 | Property     | Type        | Description |

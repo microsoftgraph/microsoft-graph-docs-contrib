@@ -15,6 +15,8 @@ The userAgent type. Represents the user agent of an endpoint in a call.
 The [clientUserAgent](callrecords-clientuseragent.md) and
 [serviceUserAgent](callrecords-serviceuseragent.md)) types inherit from this type.
 
+Namespace: microsoft.graph.callRecords
+
 ## Properties
 
 | Property     | Type        | Description |

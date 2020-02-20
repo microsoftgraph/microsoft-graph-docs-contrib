@@ -14,6 +14,8 @@ doc_type: "resourcePageType"
 The clientUserAgent type. Represents a client user agent of an endpoint in a call. Inherits from
 the [userAgent](callrecords-useragent.md) type.
 
+Namespace: microsoft.graph.callRecords
+
 ## Properties
 
 | Property     | Type        | Description |

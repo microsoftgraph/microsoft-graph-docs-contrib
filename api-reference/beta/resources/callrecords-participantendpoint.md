@@ -14,6 +14,8 @@ doc_type: "resourcePageType"
 The participantEndpoint type. Represents an participant endpoint in a call. The endpoint represents
 a user or user-like entity. Inherits from [endpoint](callrecords-endpoint.md) type.
 
+Namespace: microsoft.graph.callRecords
+
 ## Properties
 
 | Property     | Type        | Description |

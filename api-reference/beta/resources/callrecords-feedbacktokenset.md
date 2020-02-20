@@ -13,6 +13,8 @@ doc_type: "resourcePageType"
 
 The feedbackTokenSet type. This is an _open type_ that represents the set of feedback tokens provided by the user of this endpoint for the Session. This is a set of Boolean properties. The property names should not be relied upon since they may change depending on what tokens are offered to the user.
 
+Namespace: microsoft.graph.callRecords
+
 ## Properties
 
 Explicit property names will not be documented since the feedback token names can change, hence this is an [open type](https://docs.microsoft.com/aspnet/web-api/overview/odata-support-in-aspnet-web-api/odata-v4/use-open-types-in-odata-v4).

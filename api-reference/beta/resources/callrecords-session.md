@@ -14,6 +14,8 @@ doc_type: "resourcePageType"
 The session type. Represents a User-User communication or a User-Meeting communication
 in the case of a Conference call.
 
+Namespace: microsoft.graph.callRecords
+
 ## Methods
 
 No methods exist to directly access sessions. Please use the [Get callRecord](../api/callrecords-callrecord-get.md)

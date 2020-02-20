@@ -13,6 +13,8 @@ doc_type: "resourcePageType"
 
 The deviceInfo type. Represents information about a device (microphone, speaker, camera, etc.) used in a call.
 
+Namespace: microsoft.graph.callRecords
+
 ## Properties
 
 | Property     | Type        | Description |

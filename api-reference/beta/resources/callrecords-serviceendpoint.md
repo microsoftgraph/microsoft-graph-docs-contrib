@@ -14,6 +14,8 @@ doc_type: "resourcePageType"
 The serviceEndpoint type. Represents a service endpoint in a call. The endpoint represents a
 calling media server or other service entity. Inherits from [endpoint](callrecords-endpoint.md) type.
 
+Namespace: microsoft.graph.callRecords
+
 ## Properties
 
 None
