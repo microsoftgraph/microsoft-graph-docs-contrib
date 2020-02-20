@@ -28,7 +28,7 @@ One of the following permissions is required to call this API. To learn more, in
 <!-- { "blockType": "ignored" } -->
 
 ```http
-POST /teams/{id}/schedule/swapShiftsChangeRequests/approve
+POST /teams/{id}/schedule/swapShiftsChangeRequests/{swapShiftChangeRequestId}/approve
 ```
 
 ## Request headers
@@ -59,11 +59,11 @@ The following example shows how to call this API.
 The following is an example of a request.
 <!-- {
   "blockType": "request",
-  "name": "openshiftchangerequest_approve"
+  "name": "swapshiftchangerequest_approve"
 }-->
 
 ```http
-POST https://graph.microsoft.com/beta/teams/{id}/schedule/openShiftsChangeRequests/approve
+POST https://graph.microsoft.com/beta/teams/{id}/schedule/swapShiftsChangeRequests/{swapShiftChangeRequestId}/approve
 Content-type: application/json
 
 {
@@ -81,14 +81,14 @@ The following is an example of the response.
 } -->
 
 ```http
-HTTP/1.1 200 OK
+HTTP/1.1 204 NO CONTENT
 ```
 
 <!-- uuid: 16cd6b66-4b1a-43a1-adaf-3a886856ed98
 2019-02-04 14:57:30 UTC -->
 <!-- {
   "type": "#page.annotation",
-  "description": "openShiftChangeRequest: approve",
+  "description": "swapShiftChangeRequest: approve",
   "keywords": "",
   "section": "documentation",
   "tocPath": ""
