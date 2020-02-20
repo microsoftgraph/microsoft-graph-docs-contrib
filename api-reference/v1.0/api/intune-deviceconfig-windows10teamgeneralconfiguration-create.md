@@ -1,9 +1,10 @@
 ---
 title: "Create windows10TeamGeneralConfiguration"
 description: "Create a new windows10TeamGeneralConfiguration object."
-author: "tfitzmac"
+author: "davidmu1"
 localization_priority: Normal
 ms.prod: "Intune"
+doc_type: apiPageType
 ---
 
 # Create windows10TeamGeneralConfiguration
@@ -149,6 +150,7 @@ Content-Length: 1322
   "welcomeScreenMeetingInformation": "showOrganizerAndTimeOnly"
 }
 ```
+
 
 
 

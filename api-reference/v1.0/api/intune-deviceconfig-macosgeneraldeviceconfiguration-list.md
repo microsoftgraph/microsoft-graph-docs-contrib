@@ -1,9 +1,10 @@
 ---
 title: "List macOSGeneralDeviceConfigurations"
 description: "List properties and relationships of the macOSGeneralDeviceConfiguration objects."
-author: "tfitzmac"
+author: "davidmu1"
 localization_priority: Normal
 ms.prod: "Intune"
+doc_type: apiPageType
 ---
 
 # List macOSGeneralDeviceConfigurations
@@ -93,6 +94,7 @@ Content-Length: 1227
   ]
 }
 ```
+
 
 
 

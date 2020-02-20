@@ -1,9 +1,10 @@
 ---
 title: "user: translateExchangeIds"
 description: "Translate identifiers of Outlook-related resources between formats."
-author: "dkershaw10"
+author: "svpsiva"
 localization_priority: Normal
-ms.prod: "microsoft-identity-platform"
+ms.prod: "outlook"
+doc_type: apiPageType
 ---
 
 # user: translateExchangeIds
@@ -73,6 +74,8 @@ The following example shows how to convert multiple identifiers from the normal 
 ### Request
 
 Here is the example request.
+
+# [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "user_translateexchangeids"
@@ -91,6 +94,20 @@ Content-Type: application/json
   "targetIdType": "restImmutableEntryId"
 }
 ```
+# [C#](#tab/csharp)
+[!INCLUDE [sample-code](../includes/snippets/csharp/user-translateexchangeids-csharp-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [JavaScript](#tab/javascript)
+[!INCLUDE [sample-code](../includes/snippets/javascript/user-translateexchangeids-javascript-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Objective-C](#tab/objc)
+[!INCLUDE [sample-code](../includes/snippets/objc/user-translateexchangeids-objc-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+---
+
 
 ### Response
 
@@ -106,7 +123,6 @@ HTTP/1.1 200 OK
 Content-type: application/json
 
 {
-  "@odata.context": "https://graph.microsoft.com/testexchangebeta/$metadata#Collection(microsoft.graph.convertIdResult)",
   "value": [
     {
       "sourceId": "{rest-formatted-id-1}",
@@ -119,17 +135,7 @@ Content-type: application/json
   ]
 }
 ```
-#### SDK sample code
-# [Javascript](#tab/javascript)
-[!INCLUDE [sample-code](../includes/user_translateexchangeids-Javascript-snippets.md)]
-
-# [C#](#tab/cs)
-[!INCLUDE [sample-code](../includes/user_translateexchangeids-Cs-snippets.md)]
-
----
-
-[!INCLUDE [sdk-documentation](../includes/snippets_sdk_documentation_link.md)]
-<!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79 
+<!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2015-10-25 14:57:30 UTC -->
 <!-- {
   "type": "#page.annotation",
@@ -138,7 +144,5 @@ Content-type: application/json
   "section": "documentation",
   "tocPath": "",
   "suppressions": [
-    "Error: /api-reference/beta/api/user-translateexchangeids.md:\r\n      BookmarkMissing: '[#tab/cs](C#)'. Did you mean: #c (score: 5)",
-    "Error: /api-reference/beta/api/user-translateexchangeids.md:\r\n      BookmarkMissing: '[#tab/javascript](Javascript)'. Did you mean: #javascript (score: 4)"
   ]
 }-->

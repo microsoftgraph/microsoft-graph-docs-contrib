@@ -1,9 +1,10 @@
 ---
 title: "Get deviceAndAppManagementRoleDefinition"
 description: "Read properties and relationships of the deviceAndAppManagementRoleDefinition object."
-author: "tfitzmac"
+author: "davidmu1"
 localization_priority: Normal
 ms.prod: "Intune"
+doc_type: apiPageType
 ---
 
 # Get deviceAndAppManagementRoleDefinition
@@ -87,6 +88,7 @@ Content-Length: 712
   }
 }
 ```
+
 
 
 

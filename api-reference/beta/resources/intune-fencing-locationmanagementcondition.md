@@ -4,6 +4,7 @@ description: "Contains the information to define a location management condition
 author: "rolyon"
 localization_priority: Normal
 ms.prod: "Intune"
+doc_type: resourcePageType
 ---
 
 # locationManagementCondition resource type
@@ -63,7 +64,6 @@ Here is a JSON representation of the resource.
   ]
 }
 ```
-
 
 
 

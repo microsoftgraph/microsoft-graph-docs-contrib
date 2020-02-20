@@ -1,9 +1,10 @@
 ---
 title: "List mdmWindowsInformationProtectionPolicies"
 description: "List properties and relationships of the mdmWindowsInformationProtectionPolicy objects."
-author: "tfitzmac"
+author: "davidmu1"
 localization_priority: Normal
 ms.prod: "Intune"
+doc_type: apiPageType
 ---
 
 # List mdmWindowsInformationProtectionPolicies
@@ -189,6 +190,7 @@ Content-Length: 4610
   ]
 }
 ```
+
 
 
 

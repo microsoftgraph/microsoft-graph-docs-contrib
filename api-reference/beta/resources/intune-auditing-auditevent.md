@@ -4,6 +4,7 @@ description: "A class containing the properties for Audit Event."
 author: "rolyon"
 localization_priority: Normal
 ms.prod: "Intune"
+doc_type: resourcePageType
 ---
 
 # auditEvent resource type
@@ -69,7 +70,14 @@ Here is a JSON representation of the resource.
     "userPrincipalName": "String",
     "servicePrincipalName": "String",
     "ipAddress": "String",
-    "userId": "String"
+    "userId": "String",
+    "userRoleScopeTags": [
+      {
+        "@odata.type": "microsoft.graph.roleScopeTagInfo",
+        "displayName": "String",
+        "roleScopeTagId": "String"
+      }
+    ]
   },
   "activity": "String",
   "activityDateTime": "String (timestamp)",
@@ -96,7 +104,6 @@ Here is a JSON representation of the resource.
   "category": "String"
 }
 ```
-
 
 
 

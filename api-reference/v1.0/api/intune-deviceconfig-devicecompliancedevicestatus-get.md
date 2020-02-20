@@ -1,9 +1,10 @@
 ---
 title: "Get deviceComplianceDeviceStatus"
 description: "Read properties and relationships of the deviceComplianceDeviceStatus object."
-author: "tfitzmac"
+author: "davidmu1"
 localization_priority: Normal
 ms.prod: "Intune"
+doc_type: apiPageType
 ---
 
 # Get deviceComplianceDeviceStatus
@@ -74,6 +75,7 @@ Content-Length: 512
   }
 }
 ```
+
 
 
 

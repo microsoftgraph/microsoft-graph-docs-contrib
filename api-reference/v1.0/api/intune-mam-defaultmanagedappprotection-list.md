@@ -1,9 +1,10 @@
 ---
 title: "List defaultManagedAppProtections"
 description: "List properties and relationships of the defaultManagedAppProtection objects."
-author: "tfitzmac"
+author: "davidmu1"
 localization_priority: Normal
 ms.prod: "Intune"
+doc_type: apiPageType
 ---
 
 # List defaultManagedAppProtections
@@ -115,6 +116,7 @@ Content-Length: 2380
   ]
 }
 ```
+
 
 
 

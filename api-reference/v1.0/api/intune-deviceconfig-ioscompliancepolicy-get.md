@@ -1,9 +1,10 @@
 ---
 title: "Get iosCompliancePolicy"
 description: "Read properties and relationships of the iosCompliancePolicy object."
-author: "tfitzmac"
+author: "davidmu1"
 localization_priority: Normal
 ms.prod: "Intune"
+doc_type: apiPageType
 ---
 
 # Get iosCompliancePolicy
@@ -86,6 +87,7 @@ Content-Length: 978
   }
 }
 ```
+
 
 
 

@@ -1,9 +1,10 @@
 ---
 title: "Get editionUpgradeConfiguration"
 description: "Read properties and relationships of the editionUpgradeConfiguration object."
-author: "tfitzmac"
+author: "davidmu1"
 localization_priority: Normal
 ms.prod: "Intune"
+doc_type: apiPageType
 ---
 
 # Get editionUpgradeConfiguration
@@ -76,6 +77,7 @@ Content-Length: 524
   }
 }
 ```
+
 
 
 

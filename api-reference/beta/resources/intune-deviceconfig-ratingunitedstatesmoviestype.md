@@ -4,6 +4,7 @@ description: "Movies rating labels in United States"
 author: "rolyon"
 localization_priority: Normal
 ms.prod: "Intune"
+doc_type: enumPageType
 ---
 
 # ratingUnitedStatesMoviesType enum type
@@ -24,7 +25,6 @@ Movies rating labels in United States
 |parentalGuidance13|4|PG13, some material may be inappropriate for children under 13|
 |restricted|5|R, viewers under 17 require accompanying parent or adult guardian|
 |adults|6|NC17, adults only|
-
 
 
 

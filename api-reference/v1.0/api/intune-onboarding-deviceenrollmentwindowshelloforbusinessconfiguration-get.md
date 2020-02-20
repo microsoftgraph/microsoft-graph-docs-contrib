@@ -1,9 +1,10 @@
 ---
 title: "Get deviceEnrollmentWindowsHelloForBusinessConfiguration"
 description: "Read properties and relationships of the deviceEnrollmentWindowsHelloForBusinessConfiguration object."
-author: "tfitzmac"
+author: "davidmu1"
 localization_priority: Normal
 ms.prod: "Intune"
+doc_type: apiPageType
 ---
 
 # Get deviceEnrollmentWindowsHelloForBusinessConfiguration
@@ -85,6 +86,7 @@ Content-Length: 860
   }
 }
 ```
+
 
 
 

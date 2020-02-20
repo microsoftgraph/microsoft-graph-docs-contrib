@@ -4,6 +4,7 @@ description: "CertificateStore types"
 author: "rolyon"
 localization_priority: Normal
 ms.prod: "Intune"
+doc_type: enumPageType
 ---
 
 # certificateStore enum type
@@ -19,7 +20,6 @@ CertificateStore types
 |:---|:---|:---|
 |user|1|Not yet documented|
 |machine|2|Not yet documented|
-
 
 
 

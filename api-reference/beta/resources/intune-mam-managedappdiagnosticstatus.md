@@ -4,6 +4,7 @@ description: "Represents diagnostics status."
 author: "rolyon"
 localization_priority: Normal
 ms.prod: "Intune"
+doc_type: resourcePageType
 ---
 
 # managedAppDiagnosticStatus resource type
@@ -39,7 +40,6 @@ Here is a JSON representation of the resource.
   "mitigationInstruction": "String"
 }
 ```
-
 
 
 

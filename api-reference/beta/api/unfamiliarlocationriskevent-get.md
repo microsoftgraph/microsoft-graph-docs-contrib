@@ -2,11 +2,17 @@
 title: "Get unfamiliarLocationRiskEvent"
 description: "Retrieve the properties and relationships of an unfamiliarlocationriskevent object."
 localization_priority: Normal
+doc_type: apiPageType
+ms.prod: ""
+author: ""
 ---
 
 # Get unfamiliarLocationRiskEvent
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
+
+>[!NOTE]
+>The **identityRiskEvents** API is deprecated and will stop returning data on January 10, 2020. For details, see [Deprecation of the IdentityRiskEvents API](https://developer.microsoft.com/office/blogs/deprecatation-of-the-identityriskevents-api/).
 
 Retrieve the properties and relationships of an unfamiliarlocationriskevent object.
 ## Permissions

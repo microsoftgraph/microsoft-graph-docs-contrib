@@ -4,6 +4,7 @@ description: "Possible values for automatic update classification."
 author: "rolyon"
 localization_priority: Normal
 ms.prod: "Intune"
+doc_type: enumPageType
 ---
 
 # updateClassification enum type
@@ -21,7 +22,6 @@ Possible values for automatic update classification.
 |recommendedAndImportant|1|Recommended and important.|
 |important|2|Important.|
 |none|3|None.|
-
 
 
 

@@ -4,6 +4,7 @@ description: "Entity which represents an OnPrem Ndes connector."
 author: "rolyon"
 localization_priority: Normal
 ms.prod: "Intune"
+doc_type: resourcePageType
 ---
 
 # ndesConnector resource type
@@ -51,7 +52,6 @@ Here is a JSON representation of the resource.
   "displayName": "String"
 }
 ```
-
 
 
 

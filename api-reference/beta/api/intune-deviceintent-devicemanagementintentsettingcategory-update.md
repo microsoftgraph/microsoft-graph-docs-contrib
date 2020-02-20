@@ -4,6 +4,7 @@ description: "Update the properties of a deviceManagementIntentSettingCategory o
 author: "rolyon"
 localization_priority: Normal
 ms.prod: "Intune"
+doc_type: apiPageType
 ---
 
 # Update deviceManagementIntentSettingCategory
@@ -21,7 +22,7 @@ One of the following permissions is required to call this API. To learn more, in
 |:---|:---|
 |Delegated (work or school account)|DeviceManagementConfiguration.ReadWrite.All|
 |Delegated (personal Microsoft account)|Not supported.|
-|Application|Not supported.|
+|Application|DeviceManagementConfiguration.ReadWrite.All|
 
 ## HTTP Request
 <!-- {
@@ -47,6 +48,7 @@ The following table shows the properties that are required when you create the [
 |:---|:---|:---|
 |id|String|The category ID Inherited from [deviceManagementSettingCategory](../resources/intune-deviceintent-devicemanagementsettingcategory.md)|
 |displayName|String|The category name Inherited from [deviceManagementSettingCategory](../resources/intune-deviceintent-devicemanagementsettingcategory.md)|
+|hasRequiredSetting|Boolean|The category contains top level required setting Inherited from [deviceManagementSettingCategory](../resources/intune-deviceintent-devicemanagementsettingcategory.md)|
 
 
 
@@ -60,11 +62,12 @@ Here is an example of the request.
 ``` http
 PATCH https://graph.microsoft.com/beta/deviceManagement/intents/{deviceManagementIntentId}/categories/{deviceManagementIntentSettingCategoryId}
 Content-type: application/json
-Content-length: 119
+Content-length: 150
 
 {
   "@odata.type": "#microsoft.graph.deviceManagementIntentSettingCategory",
-  "displayName": "Display Name value"
+  "displayName": "Display Name value",
+  "hasRequiredSetting": true
 }
 ```
 
@@ -73,14 +76,16 @@ Here is an example of the response. Note: The response object shown here may be 
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 168
+Content-Length: 199
 
 {
   "@odata.type": "#microsoft.graph.deviceManagementIntentSettingCategory",
   "id": "39bf2a82-2a82-39bf-822a-bf39822abf39",
-  "displayName": "Display Name value"
+  "displayName": "Display Name value",
+  "hasRequiredSetting": true
 }
 ```
+
 
 
 

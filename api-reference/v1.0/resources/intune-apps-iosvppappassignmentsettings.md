@@ -1,9 +1,10 @@
 ---
 title: "iosVppAppAssignmentSettings resource type"
 description: "Contains properties used to assign an iOS VPP mobile app to a group."
-author: "tfitzmac"
+author: "davidmu1"
 localization_priority: Normal
 ms.prod: "Intune"
+doc_type: resourcePageType
 ---
 
 # iosVppAppAssignmentSettings resource type
@@ -38,6 +39,7 @@ Here is a JSON representation of the resource.
   "vpnConfigurationId": "String"
 }
 ```
+
 
 
 

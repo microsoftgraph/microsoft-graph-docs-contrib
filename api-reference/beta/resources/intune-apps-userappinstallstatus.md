@@ -4,6 +4,7 @@ description: "Contains properties for the installation status for a user."
 author: "rolyon"
 localization_priority: Normal
 ms.prod: "Intune"
+doc_type: resourcePageType
 ---
 
 # userAppInstallStatus resource type
@@ -36,7 +37,7 @@ Contains properties for the installation status for a user.
 ## Relationships
 |Relationship|Type|Description|
 |:---|:---|:---|
-|app|[mobileApp](../resources/intune-apps-mobileapp.md)|The navigation link to the mobile app.|
+|app|[mobileApp](../resources/intune-shared-mobileapp.md)|The navigation link to the mobile app.|
 |deviceStatuses|[mobileAppInstallStatus](../resources/intune-apps-mobileappinstallstatus.md) collection|The install state of the app on devices.|
 
 ## JSON Representation
@@ -58,7 +59,6 @@ Here is a JSON representation of the resource.
   "notInstalledDeviceCount": 1024
 }
 ```
-
 
 
 

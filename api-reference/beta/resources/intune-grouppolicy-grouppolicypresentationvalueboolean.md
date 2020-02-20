@@ -4,6 +4,7 @@ description: "The entity represents a Boolean value of a checkbox presentation o
 author: "rolyon"
 localization_priority: Normal
 ms.prod: "Intune"
+doc_type: resourcePageType
 ---
 
 # groupPolicyPresentationValueBoolean resource type
@@ -57,7 +58,6 @@ Here is a JSON representation of the resource.
   "value": true
 }
 ```
-
 
 
 

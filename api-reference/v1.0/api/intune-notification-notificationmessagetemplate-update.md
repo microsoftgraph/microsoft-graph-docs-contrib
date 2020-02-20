@@ -1,9 +1,10 @@
 ---
 title: "Update notificationMessageTemplate"
 description: "Update the properties of a notificationMessageTemplate object."
-author: "tfitzmac"
+author: "davidmu1"
 localization_priority: Normal
 ms.prod: "Intune"
+doc_type: apiPageType
 ---
 
 # Update notificationMessageTemplate
@@ -87,6 +88,7 @@ Content-Length: 310
   "brandingOptions": "includeCompanyLogo"
 }
 ```
+
 
 
 

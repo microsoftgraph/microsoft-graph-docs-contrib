@@ -1,9 +1,10 @@
 ---
 title: "List resourceOperations"
 description: "List properties and relationships of the resourceOperation objects."
-author: "tfitzmac"
+author: "davidmu1"
 localization_priority: Normal
 ms.prod: "Intune"
+doc_type: apiPageType
 ---
 
 # List resourceOperations
@@ -69,6 +70,7 @@ Content-Length: 280
   ]
 }
 ```
+
 
 
 

@@ -1,9 +1,10 @@
 ---
 title: "managedEBookAssignment resource type"
 description: "Contains properties used to assign a eBook to a group."
-author: "tfitzmac"
+author: "davidmu1"
 localization_priority: Normal
 ms.prod: "Intune"
+doc_type: resourcePageType
 ---
 
 # managedEBookAssignment resource type
@@ -49,6 +50,7 @@ Here is a JSON representation of the resource.
   "installIntent": "String"
 }
 ```
+
 
 
 

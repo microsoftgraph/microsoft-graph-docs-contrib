@@ -4,6 +4,7 @@ description: "Not yet documented"
 author: "rolyon"
 localization_priority: Normal
 ms.prod: "Intune"
+doc_type: resourcePageType
 ---
 
 # managementCertificateWithThumbprint resource type
@@ -37,7 +38,6 @@ Here is a JSON representation of the resource.
   "certificate": "String"
 }
 ```
-
 
 
 

@@ -4,6 +4,7 @@ description: "An item describing notification setting."
 author: "rolyon"
 localization_priority: Normal
 ms.prod: "Intune"
+doc_type: resourcePageType
 ---
 
 # iosNotificationSettings resource type
@@ -51,7 +52,6 @@ Here is a JSON representation of the resource.
   "soundsEnabled": true
 }
 ```
-
 
 
 

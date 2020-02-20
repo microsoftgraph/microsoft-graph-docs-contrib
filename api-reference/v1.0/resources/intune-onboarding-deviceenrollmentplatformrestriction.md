@@ -1,9 +1,10 @@
 ---
 title: "deviceEnrollmentPlatformRestriction resource type"
 description: "Platform specific enrollment restrictions"
-author: "tfitzmac"
+author: "davidmu1"
 localization_priority: Normal
 ms.prod: "Intune"
+doc_type: resourcePageType
 ---
 
 # deviceEnrollmentPlatformRestriction resource type
@@ -39,6 +40,7 @@ Here is a JSON representation of the resource.
   "osMaximumVersion": "String"
 }
 ```
+
 
 
 

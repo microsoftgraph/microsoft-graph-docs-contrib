@@ -4,13 +4,14 @@ description: "Complex type containing properties of Shared items."
 author: "simonhult"
 localization_priority: Normal
 ms.prod: "insights"
+doc_type: resourcePageType
 ---
 
 # insightIdentity
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Complex type containing properties of [Shared](insights-shared.md) items. 
+Complex type containing properties of [sharedInsight](insights-shared.md) items. 
 
 ## JSON representation
 Here is a JSON representation of the resource

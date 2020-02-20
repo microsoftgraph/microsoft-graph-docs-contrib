@@ -1,9 +1,10 @@
 ---
 title: "androidWorkProfileGeneralDeviceConfiguration resource type"
 description: "Android Work Profile general device configuration."
-author: "tfitzmac"
+author: "davidmu1"
 localization_priority: Normal
 ms.prod: "Intune"
+doc_type: resourcePageType
 ---
 
 # androidWorkProfileGeneralDeviceConfiguration resource type
@@ -131,6 +132,7 @@ Here is a JSON representation of the resource.
   "securityRequireVerifyApps": true
 }
 ```
+
 
 
 

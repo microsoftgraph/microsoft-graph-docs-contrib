@@ -1,9 +1,10 @@
 ---
 title: "List importedWindowsAutopilotDeviceIdentityUploads"
 description: "List properties and relationships of the importedWindowsAutopilotDeviceIdentityUpload objects."
-author: "tfitzmac"
+author: "davidmu1"
 localization_priority: Normal
 ms.prod: "Intune"
+doc_type: apiPageType
 ---
 
 # List importedWindowsAutopilotDeviceIdentityUploads
@@ -68,6 +69,7 @@ Content-Length: 270
   ]
 }
 ```
+
 
 
 

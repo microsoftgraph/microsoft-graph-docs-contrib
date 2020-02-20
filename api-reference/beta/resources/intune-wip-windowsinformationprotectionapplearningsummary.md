@@ -4,6 +4,7 @@ description: "Windows Information Protection AppLearning Summary entity."
 author: "rolyon"
 localization_priority: Normal
 ms.prod: "Intune"
+doc_type: resourcePageType
 ---
 
 # windowsInformationProtectionAppLearningSummary resource type
@@ -51,7 +52,6 @@ Here is a JSON representation of the resource.
   "deviceCount": 1024
 }
 ```
-
 
 
 

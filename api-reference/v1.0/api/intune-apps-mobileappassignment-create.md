@@ -1,9 +1,10 @@
 ---
 title: "Create mobileAppAssignment"
 description: "Create a new mobileAppAssignment object."
-author: "tfitzmac"
+author: "davidmu1"
 localization_priority: Normal
 ms.prod: "Intune"
+doc_type: apiPageType
 ---
 
 # Create mobileAppAssignment
@@ -93,6 +94,7 @@ Content-Length: 322
   }
 }
 ```
+
 
 
 

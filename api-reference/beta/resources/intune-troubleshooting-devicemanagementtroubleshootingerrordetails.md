@@ -4,6 +4,7 @@ description: "Object containing detailed information about the error and its rem
 author: "rolyon"
 localization_priority: Normal
 ms.prod: "Intune"
+doc_type: resourcePageType
 ---
 
 # deviceManagementTroubleshootingErrorDetails resource type
@@ -49,7 +50,6 @@ Here is a JSON representation of the resource.
   ]
 }
 ```
-
 
 
 

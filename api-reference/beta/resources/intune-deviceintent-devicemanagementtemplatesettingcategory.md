@@ -4,6 +4,7 @@ description: "Entity representing a template setting category"
 author: "rolyon"
 localization_priority: Normal
 ms.prod: "Intune"
+doc_type: resourcePageType
 ---
 
 # deviceManagementTemplateSettingCategory resource type
@@ -31,6 +32,7 @@ Inherits from [deviceManagementSettingCategory](../resources/intune-deviceintent
 |:---|:---|:---|
 |id|String|The category ID Inherited from [deviceManagementSettingCategory](../resources/intune-deviceintent-devicemanagementsettingcategory.md)|
 |displayName|String|The category name Inherited from [deviceManagementSettingCategory](../resources/intune-deviceintent-devicemanagementsettingcategory.md)|
+|hasRequiredSetting|Boolean|The category contains top level required setting Inherited from [deviceManagementSettingCategory](../resources/intune-deviceintent-devicemanagementsettingcategory.md)|
 
 ## Relationships
 |Relationship|Type|Description|
@@ -50,10 +52,10 @@ Here is a JSON representation of the resource.
 {
   "@odata.type": "#microsoft.graph.deviceManagementTemplateSettingCategory",
   "id": "String (identifier)",
-  "displayName": "String"
+  "displayName": "String",
+  "hasRequiredSetting": true
 }
 ```
-
 
 
 

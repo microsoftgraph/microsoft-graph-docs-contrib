@@ -1,9 +1,10 @@
 ---
 title: "List windowsUniversalAppXs"
 description: "List properties and relationships of the windowsUniversalAppX objects."
-author: "tfitzmac"
+author: "davidmu1"
 localization_priority: Normal
 ms.prod: "Intune"
+doc_type: apiPageType
 ---
 
 # List windowsUniversalAppXs
@@ -99,6 +100,7 @@ Content-Length: 1534
   ]
 }
 ```
+
 
 
 

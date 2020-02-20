@@ -1,9 +1,10 @@
 ---
 title: "Create managedMobileApp"
 description: "Create a new managedMobileApp object."
-author: "tfitzmac"
+author: "davidmu1"
 localization_priority: Normal
 ms.prod: "Intune"
+doc_type: apiPageType
 ---
 
 # Create managedMobileApp
@@ -89,6 +90,7 @@ Content-Length: 230
   "version": "Version value"
 }
 ```
+
 
 
 

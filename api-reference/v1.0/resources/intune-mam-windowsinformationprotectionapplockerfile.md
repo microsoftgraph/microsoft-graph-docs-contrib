@@ -1,9 +1,10 @@
 ---
 title: "windowsInformationProtectionAppLockerFile resource type"
 description: "Windows Information Protection AppLocker File"
-author: "tfitzmac"
+author: "davidmu1"
 localization_priority: Normal
 ms.prod: "Intune"
+doc_type: resourcePageType
 ---
 
 # windowsInformationProtectionAppLockerFile resource type
@@ -51,6 +52,7 @@ Here is a JSON representation of the resource.
   "version": "String"
 }
 ```
+
 
 
 

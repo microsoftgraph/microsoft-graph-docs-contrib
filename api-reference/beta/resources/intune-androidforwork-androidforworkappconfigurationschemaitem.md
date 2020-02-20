@@ -4,6 +4,7 @@ description: "Single configuration item inside an Android for Work application's
 author: "rolyon"
 localization_priority: Normal
 ms.prod: "Intune"
+doc_type: resourcePageType
 ---
 
 # androidForWorkAppConfigurationSchemaItem resource type
@@ -59,7 +60,6 @@ Here is a JSON representation of the resource.
   ]
 }
 ```
-
 
 
 

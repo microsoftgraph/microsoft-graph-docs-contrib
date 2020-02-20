@@ -4,6 +4,7 @@ description: "The entity represents a string value of a multi-line text box pres
 author: "rolyon"
 localization_priority: Normal
 ms.prod: "Intune"
+doc_type: resourcePageType
 ---
 
 # groupPolicyPresentationValueMultiText resource type
@@ -59,7 +60,6 @@ Here is a JSON representation of the resource.
   ]
 }
 ```
-
 
 
 
