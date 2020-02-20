@@ -1486,8 +1486,8 @@ For more complex scenarios involving multiple permissions, see [Permission scena
 
 |   Permission    |  Display String   |  Description | Admin Consent Required | Microsoft Account supported |
 |:----------------|:------------------|:-------------|:-----------------------|:--------------|
-| _TeamsApp.Read.All_ | Allows the app to read the Teams apps that are installed for the signed-in user, and in all teams the user is a member of. Does not give the ability to read application-specific settings. This permission is currently in private preview only and is not available for public use.	| No | No |
-| _TeamsApp.ReadWrite.All_ | Allows the app to read, install, upgrade, and uninstall Teams apps, on behalf of the signed-in user and also for teams the user is a member of. Does not give the ability to read or write application-specific settings. This permission is currently in private preview only and is not available for public use.	| No | No |
+| _TeamsApp.Read.All_ | Allows the app to read the Teams apps that are installed for the signed-in user, and in all teams the user is a member of. Does not give the ability to read application-specific settings. This permission is currently in private preview only and is not available for public use.	| Yes | No |
+| _TeamsApp.ReadWrite.All_ | Allows the app to read, install, upgrade, and uninstall Teams apps, on behalf of the signed-in user and also for teams the user is a member of. Does not give the ability to read or write application-specific settings. This permission is currently in private preview only and is not available for public use.	| Yes | No |
 
 #### Application permissions
 
