@@ -21,6 +21,7 @@ Using the Microsoft Graph API, an app can subscribe to changes on the following 
 - Office 365 group [conversation][]
 - Content within the hierarchy of _any folder_ [driveItem][] on a user's personal OneDrive
 - Content within the hierarchy of the _root folder_ [driveItem][] on OneDrive for Business
+- A [list][] under a SharePoint [site][]
 - Security [alert][]
 
 ## Permissions
@@ -29,9 +30,9 @@ In general, subscription operations require read permission to the resource. For
 
 | Permission type                        | Supported resource types                                                      |
 | :------------------------------------- | :------------------------------------------------------------------------------------ |
-| Delegated - work or school account     | [alert][], [contact][], [conversation][], [driveItem][], [event][], [group][], [message][], [user][]|
-| Delegated - personal Microsoft account | [contact][], [driveItem][], [event][], [message][]                                        |
-| Application                            | [alert][], [contact][], [driveItem][], [event][], [group][], [message][], [user][]|
+| Delegated - work or school account     | [alert][], [contact][], [conversation][], [driveItem][], [list][], [event][], [group][], [message][], [user][]|
+| Delegated - personal Microsoft account | [contact][], [driveItem][], [list][], [event][], [message][]                                        |
+| Application                            | [alert][], [contact][], [driveItem][], [list][], [event][], [group][], [message][], [user][]|
 
 ## See also
 
@@ -45,6 +46,8 @@ In general, subscription operations require read permission to the resource. For
 [contact]: ./contact.md
 [conversation]: ./conversation.md
 [driveItem]: ./driveitem.md
+[list]: ./list.md
+[site]: ./site.md
 [event]: ./event.md
 [group]: ./group.md
 [message]: ./message.md

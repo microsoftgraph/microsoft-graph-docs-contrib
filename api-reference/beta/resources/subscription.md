@@ -14,6 +14,7 @@ A subscription allows a client app to receive notifications about changes to dat
 - A [message][], [event][], or [contact][] in Outlook
 - A [conversation][] of an Office 365 group
 - Content in the hierarchy of a root folder [driveItem][] in OneDrive for Business, or of a root folder or subfolder [driveItem][] in a user's personal OneDrive
+- A [list][] under a SharePoint [site][]
 - A [user][] or [group][] in Azure Active Directory
 - An [alert][] from the Microsoft Graph Security API
 
@@ -48,7 +49,7 @@ Here is a JSON representation of the resource.
 
 | Property | Type | Description |
 |:---------|:-----|:------------|
-| changeType | string | Required. Indicates the type of change in the subscribed resource that will raise a notification. The supported values are: `created`, `updated`, `deleted`. Multiple values can be combined using a comma-separated list. <br><br>Note: Drive root item notifications support only the `updated` changeType. User and group notifications support `updated` and `deleted` changeType. |
+| changeType | string | Required. Indicates the type of change in the subscribed resource that will raise a notification. The supported values are: `created`, `updated`, `deleted`. Multiple values can be combined using a comma-separated list. <br><br>Note: Drive root item and list notifications support only the `updated` changeType. User and group notifications support `updated` and `deleted` changeType. |
 | notificationUrl | string | Required. The URL of the endpoint that receives the notifications. This URL must make use of the HTTPS protocol. |
 | lifecycleNotificationUrl | string | Optional. The URL of the endpoint that receives lifecycle notifications, including `subscriptionRemoved` and `missed` notifications. If not provided, those notifications will be delivered to **notificationUrl**. [Read more](/graph/webhooks-outlook-authz.md) about how Outlook resources use lifecycle notifications.  This URL must make use of the HTTPS protocol. |
 | resource | string | Required. Specifies the resource that will be monitored for changes. Do not include the base URL (`https://graph.microsoft.com/beta/`). |
@@ -68,6 +69,7 @@ Here is a JSON representation of the resource.
 | Contacts            | 4230 minutes (under 3 days)    |
 | Group conversations | 4230 minutes (under 3 days)    |
 | Drive root items    | 4230 minutes (under 3 days)    |
+| List                | 4230 minutes (under 3 days)    |
 | Security alerts     | 43200 minutes (under 30 days)  |
 
 > **Note:** Existing applications and new applications should not exceed the supported value. In the future, any requests to create or renew a subscription beyond the maximum value will fail.
@@ -89,6 +91,8 @@ None
 [contact]: ./contact.md
 [conversation]: ./conversation.md
 [driveItem]: ./driveitem.md
+[list]: ./list.md
+[site]: ./site.md
 [event]: ./event.md
 [group]: ./group.md
 [message]: ./message.md

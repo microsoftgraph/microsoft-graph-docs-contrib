@@ -29,6 +29,7 @@ All examples below are relative to a site, eg: `https://graph.microsoft.com/beta
 | [Delete list item][]      | DELETE /lists/{list-id}/items/{item-id}
 | [Create list item][]      | POST /lists/{list-id}
 | [Get recent activities][] | GET /lists/{list-id}/activities
+| [Get WebSocket channel][] | GET /lists/{list-id}/subscriptions/socketIo
 
 [Get list]: ../api/list-get.md
 [Enumerate list items]: ../api/listitem-list.md
@@ -36,6 +37,7 @@ All examples below are relative to a site, eg: `https://graph.microsoft.com/beta
 [Delete list item]: ../api/listitem-delete.md
 [Create list item]: ../api/listitem-create.md
 [Get recent activities]: ../api/activities-list.md
+[Get WebSocket channel]: ../api/driveitem-subscriptions-socketio.md
 
 ## JSON representation
 
@@ -60,6 +62,7 @@ Here is a JSON representation of a **list** resource.
     "template": "documentLibrary | genericList | survey | links | announcements | contacts ..."
   },
   "system": false,
+  "subscriptions": [ {"@odata.type": "microsoft.graph.subscription"} ],
 
   /* inherited from baseItem */
   "id": "string",
@@ -108,6 +111,7 @@ The **list** resource has the following relationships to other resources.
 | **activities**    | [itemActivity][] collection | The recent activities that took place within this list.
 | **drive**         | [drive][]                   | Only present on document libraries. Allows access to the list as a [drive][] resource with [driveItems][driveItem].
 | **items**         | Collection([listItem][])    | All items contained in the list.
+| subscriptions      | [subscription][] collection | The set of subscriptions on the list.
 
 [baseItem]: baseitem.md
 [contentType]: contenttype.md
@@ -120,6 +124,7 @@ The **list** resource has the following relationships to other resources.
 [listItem]: listitem.md
 [site]: site.md
 [systemFacet]: systemfacet.md
+[subscription]: subscription.md
 
 <!--
 {
