@@ -9,7 +9,6 @@ author: "davidmu1"
 
 # oAuth2PermissionGrant resource type
 
-[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 Represents the delegated permissions which have been granted to an application's service principal.
 
@@ -36,9 +35,7 @@ Here is a JSON representation of the resource
   "id": "string (identifier)",
   "principalId": "string",
   "resourceId": "string",
-  "scope": "string",
-  "startTime": "String (timestamp)",
-  "expiryTime": "String (timestamp)"
+  "scope": "string"
 }
 ```
 
@@ -52,8 +49,6 @@ Here is a JSON representation of the resource
 | principalId | String | The **id** of the [user](user.md) on behalf of whom the client is authorized to access the resource, when **consentType** is *Principal*. If **consentType** is *AllPrincipals* this value is null. Required when **consentType** is *Principal*. |
 | resourceId | String | The **id** of the resource [service principal](serviceprincipal.md) to which access is authorized. This identifies the API which the client is authorized to attempt to call on behalf of a signed-in user. |
 | scope | String | A space-separated list of the claim values for delegated permissions which should be included in access tokens for the resource application (the API). For example, `openid User.Read GroupMember.Read.All`. Each claim value should match the **value** field of one of the delegated permissions defined by the API, listed in the **publishedPermissionScopes** property of the resource [service principal](serviceprincipal.md). |
-| startTime | DateTimeOffset | Currently, the start time value is ignored, but a value is required when creating an **oAuth2PermissionGrant**. Required. |
-| expiryTime | DateTimeOffset | Currently, the end time value is ignored, but a value is required when creating an **oAuth2PermissionGrant**. Required. |
 
 ## Relationships
 

@@ -9,8 +9,6 @@ author: "davidmu1"
 
 # Delete a delegated permission grant (oAuth2PermissionGrant)
 
-[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
-
 Delete an [oAuth2PermissionGrant](../resources/oauth2permissiongrant.md).
 
 When a delegated permission grant is deleted, the access it granted is revoked. Existing access tokens will continue to be valid for their lifetime, but new access tokens will not be granted for the delegated permissions identified in the deleted **oAuth2PermissionGrant**.
@@ -31,13 +29,13 @@ One of the following permissions is required to call this API. To learn more, in
 ## HTTP request
 
 <!-- { "blockType": "ignored" } -->
-
 ```http
-DELETE /oauth2PermissionGrants/{id}
+DELETE /oAuth2Permissiongrants/{id}
+DELETE /users/{id | userPrincipalName}/oAuth2Permissiongrants/{id}
+DELETE /drive/root/createdByUser/oAuth2Permissiongrants/{id}
+
 ```
-
 ## Request headers
-
 | Name       | Type | Description|
 |:---------------|:--------|:----------|
 | Authorization  | string  | Bearer {token}. Required. |
@@ -62,22 +60,8 @@ Here is an example of the request.
   "name": "delete_oAuth2PermissionGrant"
 }-->
 ```http
-DELETE https://graph.microsoft.com/beta/oauth2PermissionGrants/{id}
+DELETE https://graph.microsoft.com/v1.0/oauth2PermissionGrants/{id}
 ```
-
-# [C#](#tab/csharp)
-[!INCLUDE [sample-code](../includes/snippets/csharp/delete-oauth2permissiongrant-csharp-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [JavaScript](#tab/javascript)
-[!INCLUDE [sample-code](../includes/snippets/javascript/delete-oauth2permissiongrant-javascript-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [Objective-C](#tab/objc)
-[!INCLUDE [sample-code](../includes/snippets/objc/delete-oauth2permissiongrant-objc-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
----
 
 ### Response
 
