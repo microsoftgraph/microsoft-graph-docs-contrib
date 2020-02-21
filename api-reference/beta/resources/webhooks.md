@@ -17,16 +17,16 @@ Using the Microsoft Graph API, an app can subscribe to changes on the following 
 
 | **Resource** | **Supported resource paths** | **Resource data can be included in notifications**                  |
 |:----------------|:------------|:-----------------------------------------|
-| Outlook [message][] | `/users/{id}/messages`<br>`/users/{id}/mailFolders('inbox')/messages` | No |
-| Outlook [event][] | `/users/{id}/events` | No |
-| Outlook personal [contact][] | `/users/{id}/contacts` | No |
-| [user][] | `/users` (changes to all users)<br>`/users/{id}` (changes to a specific user) | No |
-| [group][] | `/groups` (changes to all groups)<br>`/groups/{id}` (changes to a specific group) | No |
-| Office 365 group [conversation][] | `groups/{id}/conversations` | No |
-| Content within the hierarchy of _any folder_ [driveItem][] on a user's personal OneDrive | `/me/drive/root` | No |
-| Content within the hierarchy of the _root folder_ [driveItem][] on OneDrive for Business | `/drives/{id}/root`<br> `/me/drive/root` | No |
-| Security [alert][] | `/security/alerts/{id}` (changes to a specific alert) <br> `/security/alerts/?$filter` (changes to filtered alerts)| No |
-| Teams [chatmessage](/graph/api/resources/subscription?view=graph-rest-beta) | `/teams/allMessages` (messages in all channels in all teams)<br>`/teams/{id}/channels/{id}/messages` (messages in a specific channel)<br>`/chats/allMessages` (messages in all chats)<br>`/chats/{id}/messages` (messages in a specific chat) | Yes |
+| Outlook [message][] | Changes to all messages in a user's mailbox: <br>`/users/{id}/messages`<br>Changes to messages in a user's Inbox:<br>`/users/{id}/mailFolders('inbox')/messages` | No |
+| Outlook [event][] | Changes to all events in a user's mailbox:<br>`/users/{id}/events` | No |
+| Outlook personal [contact][] | Changes to all personal contacts in a user's mailbox:<br>`/users/{id}/contacts` | No |
+| [user][] | Changes to all users:<br>`/users` <br>Changes to a specific user:<br>`/users/{id}`| No |
+| [group][] | Changes to all groups:<br>`/groups` <br>Changes to a specific group:<br>`/groups/{id}` | No |
+| Office 365 group [conversation][] | Changes to a group's conversations:<br>`groups/{id}/conversations` | No |
+| [driveItem][] on OneDrive (personal) | Changes to content within the hierarchy of _any folder_:<br>`/users/{id}/drive/root` | No |
+| [driveItem][] on OneDrive for Business | Changes to content within the hierarchy of the _root folder_:<br>`/drives/{id}/root`<br> `/users/{id}/drive/root` | No |
+| Security [alert][] | Changes to a specific alert:<br>`/security/alerts/{id}` <br>Changes to filtered alerts:<br> `/security/alerts/?$filter`| No |
+| Teams [chatmessage](/graph/api/resources/subscription?view=graph-rest-beta) | Changes to chat messages in all channels in all teams:<br>`/teams/allMessages` <br>Changes to chat messages in a specific channel:<br>`/teams/{id}/channels/{id}/messages`<br>Changes to chat messages in all chats:<br>`/chats/allMessages` <br>Changes to chat messages in a specific chat:<br>`/chats/{id}/messages` | Yes |
 
 > **Note**: Any resource path that begins with `/users/{id}` can also accept `/me` to reference the signed-in user.
 
