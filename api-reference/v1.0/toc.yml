@@ -183,11 +183,11 @@
         href: resources/approleassignment.md
         items:
         - name: List app role assignments
-          href: api/approleassignment-list.md
+          href: api/user-list-approleassignments.md
         - name: Add app role assignment
-          href: api/approleassignment-post.md
+          href: api/user-post-approleassignments.md
         - name: Remove app role assignment
-          href: api/approleassignment-delete.md
+          href: api/user-delete-approleassignments.md
       - name: Calendar
         href: resources/calendar.md
         displayName: Outlook, Outlook calendar
@@ -452,11 +452,11 @@
         href: resources/approleassignment.md
         items:
         - name: List app role assignments
-          href: api/approleassignment-list.md
+          href: api/group-list-approleassignments.md
         - name: Add app role assignment
-          href: api/approleassignment-post.md
+          href: api/group-post-approleassignments.md
         - name: Remove app role assignment
-          href: api/approleassignment-delete.md
+          href: api/group-delete-approleassignments.md
       - name: Attachment
         href: resources/attachment.md
         items:
@@ -3554,17 +3554,17 @@
           href: resources/approleassignment.md
           items:
           - name: List app role assignments
-            href: api/approleassignment-list.md
+            href: api/serviceprincipal-list-approleassignments.md
           - name: Add app role assignment
-            href: api/approleassignment-post.md
+            href: api/serviceprincipal-post-approleassignments.md
           - name: Remove app role assignment
-            href: api/approleassignment-delete.md
+            href: api/serviceprincipal-delete-approleassignments.md
           - name: List app role assigned to
-            href: api/approleassignment-list.md
+            href: api/serviceprincipal-list-approleassignedto.md
           - name: Add app role assigned to
-            href: api/approleassignment-post.md
+            href: api/serviceprincipal-post-approleassignedto.md
           - name: Remove app role assigned to
-            href: api/approleassignment-delete.md
+            href: api/serviceprincipal-delete-approleassignedto.md
         - name: Certificates & secrets
           items:
           - name: Add password

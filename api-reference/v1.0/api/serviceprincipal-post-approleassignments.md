@@ -1,19 +1,23 @@
 ---
-title: "Create appRoleAssignment"
-description: "Create a new appRoleAssignment."
+title: "Grant an appRoleAssignment to a service principal"
+description: "Grant an app role assignment to a service principal."
 localization_priority: Priority
 doc_type: apiPageType
 ms.prod: "microsoft-identity-platform"
 author: "davidmu1"
 ---
 
-# Create appRoleAssignment
+# Grant an appRoleAssignment to a service principal
 
-Use this API to assign an app role to a user, group or service principal. To create an app role assignment, you need three identifiers:
+Use this API to assign an app role to a client service principal.
 
-1. `principalId`: The `id` of the user, group or service principal to which you are assigning the app role.
-2. `resourceId`: The `id` of the resource `servicePrincipal` which has defined the app role.
-3. `appRoleId`: The `id` of the `appRole` (defined on the resource service principal) to assign.
+App roles which are assigned to service principals are also known as [application permissions](https://docs.microsoft.com/azure/active-directory/develop/v2-permissions-and-consent#permission-types). Application permissions can be granted directly with app role assignments, or through a [consent experience](https://docs.microsoft.com/azure/active-directory/develop/application-consent-experience).
+
+To grant an app role assignment to a client service principal, you need three identifiers:
+
+1. `principalId`: The `id` of the client service principal to which you are assigning the app role.
+2. `resourceId`: The `id` of the resource `servicePrincipal` (the API) which has defined the app role (the application permission).
+3. `appRoleId`: The `id` of the `appRole` (defined on the resource service principal) to assign to the client service principal.
 
 ## Permissions
 
@@ -29,21 +33,18 @@ One of the following permissions is required to call this API. To learn more, in
 
 <!-- { "blockType": "ignored" } -->
 ```http
-GET /servicePrincipals/{id}/appRoleAssignedTo
-GET /users/{id | userPrincipalName}/appRoleAssignments
-GET /groups/{id}/appRoleAssignments
 GET /servicePrincipals/{id}/appRoleAssignments
 ```
 
 > [!NOTE]
-> As a best practice, we recommend creating app role assignments through the `appRoleAssignedTo` relationship of the _resource_ service principal, instead of the `appRoleAssignments` relationship of the assigned user, group or service principal.
+> As a best practice, we recommend creating app role assignments through the [`appRoleAssignedTo` relationship of the _resource_ service principal](serviceprincipal-post-approleassignedto.md), instead of the `appRoleAssignments` relationship of the assigned user, group or service principal.
 
 ## Request headers
 
 | Name       | Description|
 |:-----------|:----------|
 | Authorization | Bearer {token}. Required.  |
-| Content-Type | application/json. Required. |
+| Content-type | application/json. Required. |
 
 ## Request body
 
@@ -61,13 +62,13 @@ Here is an example of the request.
 
 <!-- {
   "blockType": "request",
-  "name": "create_approleassignment_from_serviceprincipal"
+  "name": "group_create_approleassignment"
 }-->
 
 ```http
-POST https://graph.microsoft.com/v1.0/servicePrincipals/{id}/appRoleAssignedTo
-Content-type: application/json
-Content-length: 233
+POST https://graph.microsoft.com/v1.0/servicePrincipals/{id}/appRoleAssignments
+Content-Type: application/json
+Content-Length: 110
 
 {
   "principalId": "principalId-value",
@@ -75,6 +76,8 @@ Content-length: 233
   "appRoleId": "appRoleId-value"
 }
 ```
+
+In this example, `{id}` and `{principalId-value}` would both be the `id` of the assigned client service principal, and `{resoruceId}` would be the `id` of the resource service principal (the API).
 
 ### Response
 

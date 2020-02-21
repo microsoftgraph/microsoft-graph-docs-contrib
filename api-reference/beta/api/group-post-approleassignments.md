@@ -1,21 +1,23 @@
 ---
-title: "Create appRoleAssignment"
-description: "Create a new appRoleAssignment."
+title: "Grant an appRoleAssignment to a group"
+description: "Grant an app role assignment to a group."
 localization_priority: Priority
 doc_type: apiPageType
 ms.prod: "microsoft-identity-platform"
 author: "davidmu1"
 ---
 
-# Create appRoleAssignment
+# Grant an appRoleAssignment to a group
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Use this API to assign an app role to a user, group or service principal. To create an app role assignment, you need three identifiers:
+Use this API to assign an app role to a group. All direct members of the group will be considered assigned. To grant an app role assignment to a group, you need three identifiers:
 
-1. `principalId`: The `id` of the user, group or service principal to which you are assigning the app role.
+1. `principalId`: The `id` of the group to which you are assigning the app role.
 2. `resourceId`: The `id` of the resource `servicePrincipal` which has defined the app role.
-3. `appRoleId`: The `id` of the `appRole` (defined on the resource service principal) to assign.
+3. `appRoleId`: The `id` of the `appRole` (defined on the resource service principal) to assign to the group.
+
+Additional licenses may be required to [use a group to manage access to applications](https://docs.microsoft.com/azure/active-directory/users-groups-roles/groups-saasapps).
 
 ## Permissions
 
@@ -31,10 +33,7 @@ One of the following permissions is required to call this API. To learn more, in
 
 <!-- { "blockType": "ignored" } -->
 ```http
-GET /servicePrincipals/{id}/appRoleAssignedTo
-GET /users/{id | userPrincipalName}/appRoleAssignments
 GET /groups/{id}/appRoleAssignments
-GET /servicePrincipals/{id}/appRoleAssignments
 ```
 
 > [!NOTE]
@@ -45,7 +44,7 @@ GET /servicePrincipals/{id}/appRoleAssignments
 | Name       | Description|
 |:-----------|:----------|
 | Authorization | Bearer {token}. Required.  |
-| Content-Type | application/json. Required. |
+| Content-type | application/json. Required. |
 
 ## Request body
 
@@ -63,13 +62,13 @@ Here is an example of the request.
 
 <!-- {
   "blockType": "request",
-  "name": "create_approleassignment_from_serviceprincipal"
+  "name": "group_create_approleassignment"
 }-->
 
 ```http
-POST https://graph.microsoft.com/beta/servicePrincipals/{id}/appRoleAssignedTo
-Content-type: application/json
-Content-length: 233
+POST https://graph.microsoft.com/beta/groups/{id}/appRoleAssignments
+Content-Type: application/json
+Content-Length: 110
 
 {
   "principalId": "principalId-value",
@@ -77,6 +76,8 @@ Content-length: 233
   "appRoleId": "appRoleId-value"
 }
 ```
+
+In this example, `{id}` and `{principalId-value}` would both be the `id` of the assigned group.
 
 ### Response
 
