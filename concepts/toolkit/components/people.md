@@ -13,7 +13,7 @@ This component uses multiple [mgt-person](./person.md) controls, but it can be b
 
 ## Example
 
-<iframe src="https://mgt.dev/iframe.html?id=mgt-people--people&source=docs" height="300"></iframe>
+<iframe src="https://mgt.dev/iframe.html?id=mgt-people--people&source=docs" height="200"></iframe>
 
 ## Properties
 

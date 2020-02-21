@@ -10,8 +10,10 @@ author: vogtn
 A Person-Card component is a responsive component to display more information related to a person. It is generally used as a flyout on the `mgt-person` component.
 
 For more information about the `mgt-person` component, see [mgt-person docs](./person.md).
+
+## Example
   
-<iframe src="https://mgt.dev/iframe.html?id=mgt-person-card--person-card&source=docs" height="300"></iframe>
+<iframe src="https://mgt.dev/iframe.html?id=mgt-person-card--person-card&source=docs" height="200"></iframe>
 
 ## Properties
 
