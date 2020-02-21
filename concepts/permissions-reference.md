@@ -159,7 +159,7 @@ For more complex scenarios involving multiple permissions, see [Permission scena
 
 |   Permission    |  Display String   |  Description | Admin Consent Required |
 |:-----------------------------|:-----------------------------------------|:-----------------|:-----------------|
-| _Analytics.Read_ |   Read all user activities statistics. | Allows the app to read user activities statistics without a signed-in user. | Yes |
+| _Analytics.Read_ |   Read user activity statistics. | Allows the app to read the signed-in user's activity statistics, such as how much time the user has spent on emails, in meetings, or in chat sessions. | No |
 
 #### Application permissions
 
@@ -1007,15 +1007,12 @@ The *CreatedByApp* constraint associated with this permission indicates that the
 |_OnlineMeetings.Read_|Read Online Meeting.|Allows an app to read online meeting details on behalf of the signed-in user.|No|No|
 |_OnlineMeetings.ReadWrite_|Read and Create Online Meetings.|Allows an app to create, read online meetings on behalf of the signed-in user. |No|No|
 
-<br/>
-
 #### Application permissions
 
 |Permission    |Display String   |Description |Admin Consent Required |
 |:-----------------------------|:-----------------------------------------|:-----------------|:-----------------|
 |_OnlineMeetings.Read.All_|Read Online Meeting details from the app |Allows the app to read VTC associated online meeting details in your organization without a signed-in user.|Yes|
 |_OnlineMeetings.ReadWrite.All_|Read Online Meeting details from the app (deprecated)|**Deprecated. Do not use.** Allows an app to create, read online meetings without a signed-in user.|Yes|
-<br/>
 
 ### Example usage
 
@@ -1479,6 +1476,22 @@ For more complex scenarios involving multiple permissions, see [Permission scena
 |:----------------|:------------------|:-------------|:-----------------------|:--------------|
 | _TeamsActivity.Read.All_ | Read all users' teamwork activity feed | Allows the app to read all users' teamwork activity feed, without a signed-in user. This permission is currently in private preview only and is not available for public use.	| Yes | No |
 | _TeamsActivity.Send_ | Send a teamwork activity to any user | Allows the app to send new activities to any users' teamwork activity feed, without a signed-in user. This permission is currently in private preview only and is not available for public use.	| Yes | No |
+
+## Teams App permissions
+
+#### Delegated permissions
+
+|   Permission    |  Display String   |  Description | Admin Consent Required | Microsoft Account supported |
+|:----------------|:------------------|:-------------|:-----------------------|:--------------|
+| _TeamsApp.Read.All_ | Allows the app to read the Teams apps that are installed for the signed-in user, and in all teams the user is a member of. Does not give the ability to read application-specific settings. This permission is currently in private preview only and is not available for public use.	| Yes | No |
+| _TeamsApp.ReadWrite.All_ | Allows the app to read, install, upgrade, and uninstall Teams apps, on behalf of the signed-in user and also for teams the user is a member of. Does not give the ability to read or write application-specific settings. This permission is currently in private preview only and is not available for public use.	| Yes | No |
+
+#### Application permissions
+
+|   Permission    |  Display String   |  Description | Admin Consent Required | Microsoft Account supported |
+|:----------------|:------------------|:-------------|:-----------------------|:--------------|
+| _TeamsApp.Read.All_ | Allows the app to read the Teams apps that are installed for any user, without a signed-in user. Does not give the ability to read application-specific settings. This permission is currently in private preview only and is not available for public use.	| Yes | No |
+| _TeamsApp.ReadWrite.All_ | Allows the app to read, install, upgrade, and uninstall Teams apps for any user, without a signed-in user. Does not give the ability to read or write application-specific settings. This permission is currently in private preview only and is not available for public use.	| Yes | No |
 
 ## Terms of use permissions
 
