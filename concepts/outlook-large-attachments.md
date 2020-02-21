@@ -13,7 +13,7 @@ Depending on the size of the file, you can choose one of two ways to attach a fi
 - If the file size is under 3 MB, you can do a single [POST on the attachments navigation property of the message](/graph/api/message-post-attachments?view=graph-rest-beta). The successful `POST` response includes the ID of the file attached to the message.
 - If the file size is between 3MB and 150MB, create an upload session, and iteratively use `PUT` to upload ranges of bytes of the file until you have uploaded the entire file. A header in the final successful `PUT` response includes a URL with the attachment ID. 
 
-You can repeat this process to upload multiple file attachments to the same **message**. 
+To attach multiple files to a message, choose the approach for each file based on its file size and attach them individually.
 
 This article uses an example to illustrate the second approach. The example creates and uses an upload session to add a large file attachment (of size over 3MB) to a specific message. Upon successfully uploading the entire file, it gets a URL that contains an ID for the file attachment, with which it can do other operations such as getting the file attachment metadata.
 
