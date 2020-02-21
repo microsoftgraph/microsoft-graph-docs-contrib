@@ -11,7 +11,9 @@ The person component is used to display a person or contact by using their photo
 
 The person component also uses the [mgt-person-card](./person-card.md) to display a flyout card with additional information about the user. For details, see the [Person Card](#person-card) section.
 
-<iframe src="https://mgt.dev/iframe.html?id=mgt-person--person&source=docs"></iframe>
+## Example
+
+<iframe src="https://mgt.dev/iframe.html?id=mgt-person--person&source=docs" height="300"></iframe>
 
 ## Setting the person details
 

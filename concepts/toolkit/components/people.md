@@ -11,7 +11,9 @@ You can use the `mgt-people` web component to display a group of people or conta
 
 This component uses multiple [mgt-person](./person.md) controls, but it can be bound to a set of people descriptors. If there are more people to display than the `show-max` value, a number will be added to indicate the number of additional contacts.
 
-<iframe src="https://mgt.dev/iframe.html?id=mgt-people--people&source=docs"></iframe>
+## Example
+
+<iframe src="https://mgt.dev/iframe.html?id=mgt-people--people&source=docs" height="300"></iframe>
 
 ## Properties
 

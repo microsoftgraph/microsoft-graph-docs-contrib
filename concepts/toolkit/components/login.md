@@ -11,7 +11,9 @@ A Login component is a button and flyout control to facilitate Microsoft identit
 * When user is not signed in, the control is a simple button to initiate the sign in process.
 * When user is signed in, the control displays the current signed in user name, profile image, and email. When clicked, a flyout is opened with a command to sign out.
 
-<iframe src="https://mgt.dev/iframe.html?id=mgt-login--login&source=docs" scrolling="no" style="background:#FFFFFF;"></iframe>
+## Example
+
+<iframe src="https://mgt.dev/iframe.html?id=mgt-login--login&source=docs" height="300"></iframe>
 
 ## Using the control without an authentication provider
 

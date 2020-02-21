@@ -9,7 +9,7 @@ author: nmetulev
 
 The `mgt-agenda` web component represents events in a user or group calendar. By default, the calendar displays the current signed in user events for the current day. The component can also use any endpoint that returns events from Microsoft Graph.
 
-<iframe src="https://mgt.dev/iframe.html?id=mgt-agenda--simple&source=docs"></iframe>
+<iframe src="https://mgt.dev/iframe.html?id=mgt-agenda--simple&source=docs" height="500"></iframe>
 
 ## Properties
 
