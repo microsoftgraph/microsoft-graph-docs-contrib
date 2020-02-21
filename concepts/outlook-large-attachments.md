@@ -6,32 +6,34 @@ localization_priority: Priority
 ms.prod: "outlook"
 ---
 
-# Attach large files to Outlook messages or events as attachments
+# Attach large files to Outlook messages or events
 
-You can attach files up to 150 MB to an Outlook [message](/graph/api/resources/message?view=graph-rest-1.0) or [event](/graph/api/resources/event?view=graph-rest-1.0). 
-Depending on the size of the file, you can choose one of two ways to attach the file:
+You can attach files up to 150 MB to an Outlook [message](/graph/api/resources/message?view=graph-rest-1.0) or [event](/graph/api/resources/event?view=graph-rest-1.0) item. 
+Depending on the file size, you can choose one of two ways to attach the file:
 
-- If the file size is under 4 MB, you can do a single [POST on the attachments navigation property of the message](/graph/api/message-post-attachments?view=graph-rest-1.0). The successful `POST` response includes the ID of the file attached to the message.
+- If the file size is under 3 MB, you can do a single POST on the attachments navigation property of the Outlook item; see how to do this [for a message](/graph/api/message-post-attachments?view=graph-rest-1.0) or [for an event](/graph/api/event-post-attachments?view=graph-rest-1.0). The successful `POST` response includes the ID of the file attachment.
 - If the file size is between 3MB and 150MB, create an upload session, and iteratively use `PUT` to upload ranges of bytes of the file until you have uploaded the entire file. A header in the final successful `PUT` response includes a URL with the attachment ID.
 
-This article uses an example to illustrate the second approach. The example creates and uses an upload session to add a large file attachment (of size over 3MB) to a specific message. Upon successfully uploading the entire file, it gets a URL that contains an ID for the file attachment, with which it can do other operations such as getting the file attachment metadata.
+This article illustrates the second approach with an example. The example creates and uses an upload session to add a large file attachment (of size over 3MB) to a specific message. Upon successfully uploading the entire file, it gets a URL that contains an ID for the file attachment, with which it can do other operations such as getting the file attachment metadata. 
+
+Attaching a large file to an event is similar: after the first step of [creating an upload session for a specific event](#example-request-create-an-upload-session-for-an-event), follow the same process to use the upload session to iteratively upload ranges of bytes of the file until you have uploaded the entire file.
 
 ## Step 1: Create an upload session
 
-[Create an upload session](/graph/api/attachment-createuploadsession?view=graph-rest-beta) to attach a file to a message. Specify the file in the input parameter **AttachmentItem**.
+[Create an upload session](/graph/api/attachment-createuploadsession?view=graph-rest-beta) to attach a file to a message or event. Specify the file in the input parameter **AttachmentItem**.
 
 A successful operation returns `HTTP 201 Created` and a new [uploadSession](/graph/api/resources/uploadsession?view=graph-rest-beta) instance, which contains an opaque URL that you can use in subsequent `PUT` operations to upload portions of the file. The **uploadSession** provides a temporary storage location where the bytes of the file are saved until you have uploaded the complete file.
 
-Make sure to request `Mail.ReadWrite` permission to create the **uploadSession**. The opaque URL, returned in the **uploadUrl** property of the new **uploadSession**, is pre-authenticated and contains the appropriate authorization token for subsequent `PUT` queries in the `https://outlook.office.com` domain. That token expires by **expirationDateTime**. Do not customize this URL for the `PUT` operations.
+Make sure to request `Mail.ReadWrite` permission to create the **uploadSession** for a message, and `Calendars.ReadWrite` for an event. The opaque URL, returned in the **uploadUrl** property of the new **uploadSession**, is pre-authenticated and contains the appropriate authorization token for subsequent `PUT` queries in the `https://outlook.office.com` domain. That token expires by **expirationDateTime**. Do not customize this URL for the `PUT` operations.
 
 The **uploadSession** object in the response also includes the **nextExpectedRanges** property, which indicates the initial upload starting location should be byte 0.
 
-### Example request: create an upload session
+### Example request: create an upload session for a message
 
 # [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
-  "name": "walkthrough_create_uploadsession",
+  "name": "walkthrough_create_uploadsession_message",
   "sampleKeys": ["AAMkADI5MAAIT3drCAAA="]
 }-->
 ```http
@@ -61,10 +63,10 @@ Content-type: application/json
 ---
 
 
-### Example response: get an uploadSession object
+### Example response: get an uploadSession object for the message
 <!-- {
   "blockType": "response",
-  "name": "walkthrough_create_uploadsession",
+  "name": "walkthrough_create_uploadsession_message",
   "truncated": true,
   "@odata.type": "microsoft.graph.uploadSession"
 } -->
@@ -82,10 +84,52 @@ Content-type: application/json
 }
 ```
 
+### Example request: create an upload session for an event
+
+<!-- {
+  "blockType": "request",
+  "name": "walkthrough_create_uploadsession_event",
+  "sampleKeys": ["AAMkADU5CCmSAAA="]
+}-->
+```http
+POST https://graph.microsoft.com/beta/me/events/AAMkADU5CCmSAAA=/attachments/createUploadSession
+Content-type: application/json
+
+{
+  "AttachmentItem": {
+    "attachmentType": "file",
+    "name": "flower",
+    "size": 3483322
+  }
+}
+```
+
+
+### Example response: get an uploadSession object for the event
+<!-- {
+  "blockType": "response",
+  "name": "walkthrough_create_uploadsession_event",
+  "truncated": true,
+  "@odata.type": "microsoft.graph.uploadSession"
+} -->
+```http
+HTTP/1.1 201 Created
+Content-type: application/json
+
+{
+    "@odata.context": "https://graph.microsoft.com/beta/$metadata#microsoft.graph.uploadSession",
+    "uploadUrl": "https://outlook.office.com/api/beta/Users('d3b9214b-dd8b-441d-b7dc-c446c9fa0e69@98a79ebe-74bf-4e07-a017-7b410848cb32')/Events('AAMkADU5CCmSAAA=')/AttachmentSessions('AAMkADU5AAB8M7vyAAA=')?authtoken=eyJhbGciO80jalw2lg",
+    "expirationDateTime": "2020-02-06T05:15:06.3922746Z",
+    "nextExpectedRanges": [
+        "0-"
+    ]
+}
+```
+
 
 ## Step 2: Use the upload session to upload a range of bytes of the file
 
-To upload the file, or a portion of the file, make a `PUT` request to the **uploadUrl** property value returned as part of the **uploadSession** in step 1. You can upload the entire file, or split the file into multiple byte ranges. For better performance, keep each byte range less than 4 MB.
+To upload the file, or a portion of the file, make a `PUT` request to the URL returned in step 1 in the **uploadUrl** property of the **uploadSession** resource. You can upload the entire file, or split the file into multiple byte ranges. For better performance, keep each byte range less than 4 MB.
 
 Specify request headers and request body as described below.
 
@@ -115,7 +159,7 @@ A successful upload returns `HTTP 200 OK` and an **uploadSession** object. Note 
 -->
 - The **uploadUrl** property is not explicitly returned, because all `PUT` operations of an upload session use the same URL returned when creating the session (step 1).
 
-### Example request: first upload
+### Example request: first upload to the message
 <!-- {
   "blockType": "ignored"
 }-->
@@ -150,9 +194,9 @@ Content-type: application/json
 
 Following the initial upload in step 2, continue to upload the remaining portion of the file, using a similar `PUT` request as described in step 2, before you reach the expiration date/time for the session. Use the **NextExpectedRanges** collection to determine where to start the next byte range to upload. You may see multiple ranges specified, indicating parts of the file that the server has not yet received. This is useful if you need to resume a transfer that was interrupted and your client is unsure of the state on the service.
 
-Once the last byte of the file has been successfully uploaded, the final `PUT` operation returns `HTTP 201 Created` and a `Location` header that indicates the URL to the file attachment in the `https://outlook.office.com` domain. You can get the attachment ID from the URL and save it for later use. Depending on your scneario, you can use that ID to [get the metadata of the attachment](/graph/api/attachment-get?view=graph-rest-beta), or [remove the attachment from the message](/graph/api/attachment-delete?view=graph-rest-beta) using the Microsoft Graph endpoint.
+Once the last byte of the file has been successfully uploaded, the final `PUT` operation returns `HTTP 201 Created` and a `Location` header that indicates the URL to the file attachment in the `https://outlook.office.com` domain. You can get the attachment ID from the URL and save it for later use. Depending on your scenario, you can use that ID to [get the metadata of the attachment](/graph/api/attachment-get?view=graph-rest-beta), or [remove the attachment from the message or event](/graph/api/attachment-delete?view=graph-rest-beta) using the Microsoft Graph endpoint.
 
-The following example shows uploading the last byte range of the file.
+The following request shows uploading the last byte range of the file to the message.
 
 ### Example request: final upload
 <!-- {
