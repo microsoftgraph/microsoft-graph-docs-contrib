@@ -13,7 +13,7 @@ If the number of people to display exceeds the `show-max` value, not all people 
 
 ## Example 
 
-<iframe src="https://mgt.dev/iframe.html?id=mgt-people-picker--people-picker&source=docs" height="300"></iframe>
+<iframe src="https://mgt.dev/iframe.html?id=mgt-people-picker--people-picker&source=docs" height="400"></iframe>
 
 ## Properties
 
