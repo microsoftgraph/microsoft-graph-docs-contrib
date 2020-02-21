@@ -78,12 +78,6 @@ The Microsoft Graph Toolkit is great for developers of all experience levels loo
 |----|----|----|----|----|----|----|
 |**Edge**|**IE 11**|**Firefox**|**Chrome**|**Safari**|**Opera**|**Samsung**|
 
-### Supported Platforms
-
-|![Microsoft Teams](images/microsoftTeamsIcon.png)|![SharePoint](images/sharepointIcon.png)|
-|----|----|
-|**Microsoft Teams**|**SharePoint**|
-
 ## Next Steps
 
 - Try out the components in the [playground](https://mgt.dev).
