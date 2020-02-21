@@ -1,17 +1,17 @@
 ---
-title: "Delete appRoleAssignment"
-description: "Delete appRoleAssignment."
+title: "Delete an appRoleAssignment from a user"
+description: "Delete an appRoleAssignment from a user."
 localization_priority: Normal
 doc_type: apiPageType
 ms.prod: "microsoft-identity-platform"
 author: "davidmu1"
 ---
 
-# Delete appRoleAssignment
+# Delete an appRoleAssignment granted to a user
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Deletes an [appRoleAssignment](../resources/approleassignment.md) which a user, group or service principal has been granted.
+Deletes an [appRoleAssignment](../resources/approleassignment.md) which a user has been granted.
 
 ## Permissions
 
@@ -28,10 +28,7 @@ One of the following permissions is required to call this API. To learn more, in
 <!-- { "blockType": "ignored" } -->
 
 ```http
-DELETE /servicePrincipals/{id}/appRoleAssignedTo/{id}
-DELETE /users/{id | userPrincipalName}/appRoleAssignments/{id}
-DELETE /groups/{id}/appRoleAssignments/{id}
-DELETE /servicePrincipals/{id}/appRoleAssignments/{id}
+DELETE /users/{id}/appRoleAssignments/{id}
 ```
 
 > [!NOTE]
@@ -59,11 +56,11 @@ Here is an example of the request to delete an app role assignment.
 
 <!-- {
   "blockType": "request",
-  "name": "delete_approleassignment"
+  "name": "user_delete_approleassignment"
 }-->
 
 ```http
-DELETE https://graph.microsoft.com/beta/servicePrincipals/{id}/appRoleAssignedTo/{id}
+DELETE https://graph.microsoft.com/beta/users/{id}/appRoleAssignments/{id}
 ```
 
 ### Response
