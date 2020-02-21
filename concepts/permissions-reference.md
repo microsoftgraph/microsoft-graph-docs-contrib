@@ -117,31 +117,6 @@ For more information about administrator roles, see [Assigning administrator rol
 
 ---
 
-## Analytics resource permissions
-
-#### Delegated permissions
-
-|   Permission    |  Display String   |  Description | Admin Consent Required |
-|:-----------------------------|:-----------------------------------------|:-----------------|:-----------------|
-| _Analytics.Read_ |   Read all user activities statistics. | Allows the app to read user activities statistics without a signed-in user. | Yes |
-
-#### Application permissions
-
-None.
-
-### Example usage
-
-#### Delegated
-
-* _Analytics.Read_: [List related settings for a user](/graph/api/useranalytics-get-settings?view=graph-rest-beta) (`GET /beta/me/analytics/settings)
-* _Analytics.Read_: [Get activity statistics for a user](/graph/api/activitystatistics-get?view=graph-rest-beta) (`GET /beta/me/analytics/activitystatistics/{id})
-
-#### Application
-
-None.
-
----
-
 ## Administrative Units permissions
 
 #### Delegated permissions
@@ -175,6 +150,30 @@ _AdministrativeUnit.Read.All_ and _AdministrativeUnit.ReadWrite.All_ are valid o
 - _AdministrativeUnit.ReadWrite.All_: Add members to an administrative unit  (`POST /beta/administrativeUnits/<id>/members`)
 
 For more complex scenarios involving multiple permissions, see [Permission scenarios](#permission-scenarios).
+
+---
+
+## Analytics resource permissions
+
+#### Delegated permissions
+
+|   Permission    |  Display String   |  Description | Admin Consent Required |
+|:-----------------------------|:-----------------------------------------|:-----------------|:-----------------|
+| _Analytics.Read_ |   Read user activity statistics. | Allows the app to read the signed-in user's activity statistics, such as how much time the user has spent on emails, in meetings, or in chat sessions. | No |
+
+#### Application permissions
+
+None.
+
+### Example usage
+
+#### Delegated
+
+* _Analytics.Read_: [List related settings for a user](/graph/api/useranalytics-get-settings?view=graph-rest-beta) (`GET /beta/me/analytics/settings)
+
+#### Application
+
+None.
 
 ---
 
@@ -744,17 +743,19 @@ For more complex scenarios involving multiple permissions, see [Permission scena
 |   Permission    |  Display String   |  Description | Admin Consent Required | Microsoft Account supported |
 |:----------------|:------------------|:-------------|:-----------------------|:--------------|
 | _IdentityRiskyUser.Read.All_ |   Read identity user risk  information  | Allows the app to read identity user risk information for all users in your organization on behalf of the signed-in user. | Yes | No |
+| _IdentityRiskyUser.ReadWrite.All_ |   Read and update identity user risk  information  | Allows the app to read and update identity user risk information for all users in your organization on behalf of the signed-in user. | Yes | No |
 
 #### Application permissions
 
 |   Permission    |  Display String   |  Description | Admin Consent Required |
 |:-----------------------------|:-----------------------------------------|:-----------------|:-----------------|
 | _IdentityRiskyUser.Read.All_ |   Read identity user risk  information | Allows the app to read identity user risk information for all users in your organization without a signed-in user. | Yes |
+| _IdentityRiskyUser.ReadWrite.All_ |   Read and update identity user risk  information | Allows the app to read and update identity user risk information for all users in your organization without a signed-in user. | Yes |
 
 
 ### Remarks
 
-_IdentityRiskyUser.Read.All_ is valid only for work or school accounts. For an app with delegated permissions to read identity user risk information, the signed-in user must be a member of one of the following administrator roles: Global Administrator, Security Administrator, or Security Reader. For more information about administrator roles, see [Assigning administrator roles in Azure Active Directory](https://docs.microsoft.com/azure/active-directory/active-directory-assign-admin-roles).
+_IdentityRiskyUser.Read.All_ and _IdentityRiskyUser.ReadWrite.ALL_ is valid only for work or school accounts. For an app with delegated permissions to read identity user risk information, the signed-in user must be a member of one of the following administrator roles: Global Administrator, Security Administrator, or Security Reader. For more information about administrator roles, see [Assigning administrator roles in Azure Active Directory](https://docs.microsoft.com/azure/active-directory/active-directory-assign-admin-roles).
 
 ### Example usage
 
@@ -1006,15 +1007,12 @@ The *CreatedByApp* constraint associated with this permission indicates that the
 |_OnlineMeetings.Read_|Read Online Meeting.|Allows an app to read online meeting details on behalf of the signed-in user.|No|No|
 |_OnlineMeetings.ReadWrite_|Read and Create Online Meetings.|Allows an app to create, read online meetings on behalf of the signed-in user. |No|No|
 
-<br/>
-
 #### Application permissions
 
 |Permission    |Display String   |Description |Admin Consent Required |
 |:-----------------------------|:-----------------------------------------|:-----------------|:-----------------|
 |_OnlineMeetings.Read.All_|Read Online Meeting details from the app |Allows the app to read VTC associated online meeting details in your organization without a signed-in user.|Yes|
 |_OnlineMeetings.ReadWrite.All_|Read Online Meeting details from the app (deprecated)|**Deprecated. Do not use.** Allows an app to create, read online meetings without a signed-in user.|Yes|
-<br/>
 
 ### Example usage
 
@@ -1462,6 +1460,38 @@ _Shared_ permissions are currently only supported for work or school accounts. E
 For more complex scenarios involving multiple permissions, see [Permission scenarios](#permission-scenarios).
 
 ---
+
+## Teams Activity permissions
+
+#### Delegated permissions
+
+|   Permission    |  Display String   |  Description | Admin Consent Required | Microsoft Account supported |
+|:----------------|:------------------|:-------------|:-----------------------|:--------------|
+| _TeamsActivity.Read_ | Read user's teamwork activity feed | Allows the app to read the signed-in user's teamwork activity feed. This permission is currently in private preview only and is not available for public use.	| No | No |
+| _TeamsActivity.Send_ | Send a teamwork activity as the user | Allows the app to create new activities in the user's teamwork activity feed, and send new activities to other users' activity feed, on behalf of the signed-in user. This permission is currently in private preview only and is not available for public use.	| No | No |
+
+#### Application permissions
+
+|   Permission    |  Display String   |  Description | Admin Consent Required | Microsoft Account supported |
+|:----------------|:------------------|:-------------|:-----------------------|:--------------|
+| _TeamsActivity.Read.All_ | Read all users' teamwork activity feed | Allows the app to read all users' teamwork activity feed, without a signed-in user. This permission is currently in private preview only and is not available for public use.	| Yes | No |
+| _TeamsActivity.Send_ | Send a teamwork activity to any user | Allows the app to send new activities to any users' teamwork activity feed, without a signed-in user. This permission is currently in private preview only and is not available for public use.	| Yes | No |
+
+## Teams App permissions
+
+#### Delegated permissions
+
+|   Permission    |  Display String   |  Description | Admin Consent Required | Microsoft Account supported |
+|:----------------|:------------------|:-------------|:-----------------------|:--------------|
+| _TeamsApp.Read.All_ | Allows the app to read the Teams apps that are installed for the signed-in user, and in all teams the user is a member of. Does not give the ability to read application-specific settings. This permission is currently in private preview only and is not available for public use.	| Yes | No |
+| _TeamsApp.ReadWrite.All_ | Allows the app to read, install, upgrade, and uninstall Teams apps, on behalf of the signed-in user and also for teams the user is a member of. Does not give the ability to read or write application-specific settings. This permission is currently in private preview only and is not available for public use.	| Yes | No |
+
+#### Application permissions
+
+|   Permission    |  Display String   |  Description | Admin Consent Required | Microsoft Account supported |
+|:----------------|:------------------|:-------------|:-----------------------|:--------------|
+| _TeamsApp.Read.All_ | Allows the app to read the Teams apps that are installed for any user, without a signed-in user. Does not give the ability to read application-specific settings. This permission is currently in private preview only and is not available for public use.	| Yes | No |
+| _TeamsApp.ReadWrite.All_ | Allows the app to read, install, upgrade, and uninstall Teams apps for any user, without a signed-in user. Does not give the ability to read or write application-specific settings. This permission is currently in private preview only and is not available for public use.	| Yes | No |
 
 ## Terms of use permissions
 
