@@ -11,11 +11,7 @@ A Person-Card component is a responsive component to display more information re
 
 For more information about the `mgt-person` component, see [mgt-person docs](./person.md).
   
-## Example
-
-```html
-<mgt-person-card person-details="{personObject}" person-image="imgUrl"></mgt-person-card>
-```
+<iframe src="https://mgt.dev/?path=/story/mgt-person-card--person-card&source=docs"></iframe>
 
 ## Properties
 

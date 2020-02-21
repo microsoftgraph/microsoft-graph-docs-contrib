@@ -11,15 +11,7 @@ You can use the `mgt-people-picker` web component search for a specified number 
 
 If the number of people to display exceeds the `show-max` value, not all people returned will be displayed in the search list.
 
-## Example
-
-[jsfiddle example](https://jsfiddle.net/metulev/jdv38fg0/)
-
-```html
-<mgt-people-picker></mgt-people-picker>
-```
-
-![mgt-people-picker](./images/mgt-people-picker-image.png)
+<iframe src="https://mgt.dev/iframe.html?id=mgt-people-picker--people-picker&source=docs"></iframe>
 
 ## Properties
 
