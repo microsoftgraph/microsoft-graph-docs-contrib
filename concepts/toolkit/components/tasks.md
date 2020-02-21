@@ -11,7 +11,7 @@ The Tasks component enables the user to view, add, remove, complete, or edit tas
 
 In addition, a user is able to assign a single or multiple Microsoft Graph users to a task. For more details about Microsoft Graph assignments, see [plannerAssignments](https://docs.microsoft.com/graph/api/resources/plannerassignments?view=graph-rest-1.0).
 
-<iframe src="https://mgt.dev/iframe.html?id=mgt-tasks--tasks&source=docs"></iframe>
+<iframe src="https://mgt.dev/iframe.html?id=mgt-tasks--tasks&source=docs" height="700"></iframe>
 
 ## Properties
 
