@@ -118,12 +118,13 @@ Content-type: application/json
 
 {
     "@odata.context": "https://graph.microsoft.com/beta/$metadata#microsoft.graph.uploadSession",
-    "uploadUrl": "https://outlook.office.com/api/beta/Users('d3b9214b-dd8b-441d-b7dc-c446c9fa0e69@98a79ebe-74bf-4e07-a017-7b410848cb32')/Events('AAMkADU5CCmSAAA=')/AttachmentSessions('AAMkADU5AAB8M7vyAAA=')?authtoken=eyJhbGciO80jalw2lg",
-    "expirationDateTime": "2020-02-06T05:15:06.3922746Z",
+    "uploadUrl": "https://outlook.office.com/api/beta/Users('d3b9214b-dd8b-441d-b7dc-c446c9fa0e69@98a79ebe-74bf-4e07-a017-7b410848cb32')/Events('AAMkADU5NzA2NjZlLTE3MTYtNDRkMS1iNzM5LTVkZmNiMDJkYjFlYgBGAAAAAABqzB47_dOSR74xIhiYWhznBwA0POeX5SHnRaRqdoI4oeRpAAAAAAENAAA0POeX5SHnRaRqdoI4oeRpAABuCCmSAAA=')/AttachmentSessions('AAMkADU5NzA2NjZlLTE3MTYtNDRkMS1iNzM5LTVkZmNiMDJkYjFlYgBGAAAAAABqzB47_dOSR74xIhiYWhznBwA0POeX5SHnRaRqdoI4oeRpAAAAAAEBAAA0POeX5SHnRaRqdoI4oeRpAACJlCs8AAA=')?authtoken=eyJhbGciOiJSUzI1NiIsImtpZCI6IktmYUNIUlN6bllHMmNIdDRobk9JQnpndlU5MD0iLCJ4NXQiOiJKaGg0RkVpMnpsLUlFalBYQUQ1OVRmQzR0S0kiLCJ0eXAiOiJKV1QifQ.eyJvaWQiOiJkM2I5MjE0Yi1kZDhiLTQ0MWQtYjdkYy1jNDQ2YzlmYTBlNjkiLCJ2ZXIiOiJSZXNvdXJjZUxvb3BiYWNrLlVzZXIuVjEiLCJzY3AiOiJBdHRhY2htZW50U2Vzc2lvbi5Xcml0ZSIsInJzY29wZWxlbiI6IjQ1NiIsInJlc291cmNlX3Njb3BlIjoie1wiVVJMXCI6XCI4WTdtWFZXYnRxSFkzWGdPekJKYmxEOWJaeW1tT2dhTmFXT3FGUUdPcTNRPVwifSIsImNvcnJpZCI6ImJlMzhmZmQzLTg5ZDktNDJjYi05NGU4LTcwZWUxYTU2MTFlMSIsImFwcGlkIjoiMDAwMDAwMDMtMDAwMC0wMDAwLWMwMDAtMDAwMDAwMDAwMDAwIiwiYXBwaWRhY3IiOiIwIiwidGlkIjoiOThhNzllYmUtNzRiZi00ZTA3LWEwMTctN2I0MTA4NDhjYjMyIiwiaWF0IjoxNTgyMzMyNDE2LCJuYmYiOjE1ODIzMzI0MTYsImV4cCI6MTU4MjM0MzIxNiwiaXNzIjoiaHR0cHM6Ly9yZXNvdXJjZS5zZWxmLyIsImF1ZCI6Imh0dHBzOi8vb3V0bG9vay5vZmZpY2UuY29tL2FwaS8ifQ.tcMR8Y_XQjLuQos_xuv1kmuC0BpVIHBSC19zEEXsLf9V1sxjaQX1bCXx0Fr7QYs1tYmtH72jNTCUU4TvR25r2phU043kCd56J8gjqoSWpksc-8lz-tSwysZzrkz731NIRz7_2pYFShm5YXuAckF0ZYX1BDLqlayFie6QG5sdOQlKZloPVV2JtW74Ib91ty3cpgYK_tIGu1SGNN_9cvqYiGoQrxxWezfe8mNe1VpQ1ph147k8b_BYLMxDSALIQEoZNhtyf2-ACMjirFMvqynxEEJzANIs7Eet4CzpCtfPZwb97S_nmT6BZgc7iR6xIoNIm_470KCt58L2paGnYxlBtw",
+    "expirationDateTime": "2020-02-22T02:46:56.7410786Z",
     "nextExpectedRanges": [
         "0-"
     ]
 }
+
 ```
 
 
@@ -238,7 +239,7 @@ However, getting a large file attachment in base64-encoded format affects API pe
 
 ### Example request: get the file attachment metadata
 
-The following example shows the sender using a `$select` parameter to get all the metadata of a file attachment on a message, except **contentBytes**.
+The following example shows the sender using a `$select` parameter to get some of the metadata of a file attachment on a message, excluding **contentBytes**.
 
 <!-- {
   "blockType": "request",
