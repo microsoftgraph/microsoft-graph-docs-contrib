@@ -44,11 +44,11 @@ POST /informationProtection/threatAssessmentRequests
 
 ## Request body
 
-In the request body, supply a JSON representation of [threatAssessmentRequest](../resources/threatassessmentrequest.md) object.
+In the request body, supply a JSON representation of a [threatAssessmentRequest](../resources/threatassessmentrequest.md) object.
 
 ## Response
 
-If successful, this method returns a `201, Created` response code and a new [threatAssessmentRequest](../resources/threatassessmentrequest.md) object in the response body.
+If successful, this method returns a `201 Created` response code and a new [threatAssessmentRequest](../resources/threatassessmentrequest.md) object in the response body.
 
 ## Examples
 
