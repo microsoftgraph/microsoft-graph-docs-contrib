@@ -46,7 +46,7 @@ The following is a JSON representation of the type.
 
 ## JSON example
 
-The following is a JSON representation of the **groupMembers** from the requestor settings property of a policy, which allows the members of a group to request.
+The following is a JSON representation of the **groupMembers** that could be used in the [requestorSettings](requestorsettings.md) property of a policy, which allows the members of a group to request.
 
 <!-- {
   "blockType": "example",

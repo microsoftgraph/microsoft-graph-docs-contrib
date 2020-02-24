@@ -38,6 +38,27 @@ The following is a JSON representation of the type.
 
 ```json
 {
+  "id": "string (identifier)",
+  "description": "string",
+  "isBackup": false
+}
+```
+
+## JSON example
+
+The following is an example of the JSON representation of the type, that would be included within the [requestorSettings](requestorsettings.md) property of an access package assignment policy.
+
+<!-- {
+  "blockType": "example",
+  "optionalProperties": [
+
+  ],
+  "@odata.type": "microsoft.graph.connectedOrganizationMembers",
+  "baseType": "microsoft.graph.userSet"
+}-->
+
+```json
+{
   "@odata.type": "#microsoft.graph.connectedOrganizationMembers",
   "id": "string (identifier)",
   "description": "string",

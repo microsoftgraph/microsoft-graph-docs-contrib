@@ -106,6 +106,18 @@ Content-type: application/json
       "isDenyPolicy": false,
       "canExtend": false,
       "durationInDays": 365,
+      "requestorSettings" : {
+          "scopeType": "AllExistingDirectorySubjects",
+          "acceptRequests": true,
+          "allowedRequestors": []
+      },
+      "requestApprovalSettings" : {
+          "isApprovalRequired": false,
+          "isApprovalRequiredForExtension": false,
+          "isRequestorJustificationRequired": false,
+          "approvalMode": "NoApproval",
+          "approvalStages": []
+      },
       "accessReviewSettings": null
     }
   ]

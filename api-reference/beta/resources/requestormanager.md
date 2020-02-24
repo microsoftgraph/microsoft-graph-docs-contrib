@@ -37,6 +37,25 @@ The following is a JSON representation of the type.
 
 ```json
 {
+  "isBackup": false
+}
+```
+
+## JSON example
+
+The following is an example of the JSON representation of the type, that would be used inside of an approval stage.
+
+<!-- {
+  "blockType": "example",
+  "optionalProperties": [
+
+  ],
+  "@odata.type": "microsoft.graph.requestorManager",
+  "baseType": "microsoft.graph.userSet"
+}-->
+
+```json
+{
   "@odata.type": "#microsoft.graph.requestorManager",
   "isBackup": false
 }

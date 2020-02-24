@@ -46,6 +46,8 @@ The following is a JSON representation of the type.
 
 ## JSON example
 
+The following is a JSON representation of an example of this type, that could be used in an [approvalStage](approvalstage.md) of an access package assignment policy.
+
 <!-- {
   "blockType": "example",
   "optionalProperties": [
