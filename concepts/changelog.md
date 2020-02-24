@@ -13,6 +13,12 @@ For details about known issues with Microsoft Graph APIs, see [Known issues](kno
 
 ## February 2020
 
+### Cloud Communications | Recording
+
+| **Change type** | **Version**   | **Description**                          |
+| :-------------- | :------------ | :--------------------------------------- |
+|Addition|beta|Added new property `initiator` to [recordingInfo](/graph/api/resources/recordinginfo?view=graph-rest-beta) complex type.
+
 ### Devices and apps (Microsoft Intune)
 
 | **Change type** | **Version** | **Description** |
