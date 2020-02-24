@@ -13,6 +13,27 @@ For details about known issues with Microsoft Graph APIs, see [Known issues](kno
 
 ## February 2020
 
+### Cloud Communications | Recording
+
+| **Change type** | **Version**   | **Description**                          |
+| :-------------- | :------------ | :--------------------------------------- |
+|Addition|v1.0|Added new property `initiator` to [recordingInfo](/graph/api/resources/recordinginfo?view=graph-rest-1.0) complex type.
+|Addition|v1.0|Added new complex types:<br/>[recordingInfo](/graph/api/resources/recordingInfo?view=graph-rest-1.0)<br/>[callRoutes](/graph/api/resources/callRoutes?view=graph-rest-1.0)<br/>[incomingContext](/graph/api/resources/incomingContext?view=graph-rest-1.0)
+|Addition|v1.0|Added new property `recordingInfo` to [participant](/graph/api/resources/participant?view=graph-rest-1.0) entity.
+|Addition|v1.0|Added new property `recordingStatus` to [recordingInfo](/graph/api/resources/recordinginfo?view=graph-rest-1.0) complex type.
+|Addition|v1.0|Added new action [updateRecordingStatus](/graph/api/call-updaterecordingstatus?view=graph-rest-1.0) to [call](/graph/api/resources/call?view=graph-rest-1.0) entity.
+|Addition|v1.0|Added new property `endpointType` to [participantInfo](/graph/api/resources/participantinfo?view=graph-rest-1.0) complex type.
+|Addition|v1.0|Added new property `countryCode` to [participantInfo](/graph/api/resources/participantInfo?view=graph-rest-1.0) complex type.
+|Addition|v1.0|Added new property `incomingContext` to [call](/graph/api/resources/call?view=graph-rest-1.0) entity.
+|Addition|v1.0|Added new property `sourceParticipantId` to [incomingContext](/graph/api/resources/incomingContext?view=graph-rest-1.0) complex type.
+|Addition|v1.0|Added new property `observedParticipantId` to [incomingContext](/graph/api/resources/incomingContext?view=graph-rest-1.0) complex type.
+|Addition|v1.0|Added new property `onBehalfOf` to [incomingContext](/graph/api/resources/incomingContext?view=graph-rest-1.0) complex type.
+|Addition|v1.0|Added new property `transferor` to [incomingContext](/graph/api/resources/incomingContext?view=graph-rest-1.0) complex type.
+|Addition|v1.0|Added new property `callRoute` to [call](/graph/api/resources/call?view=graph-rest-1.0) entity.
+|Addition|v1.0|Added new property `final` to [callRoute](/graph/api/resources/callRoute?view=graph-rest-1.0) complex type.
+|Addition|v1.0|Added new property `original` to [callRoute](/graph/api/resources/callRoute?view=graph-rest-1.0) complex type.
+|Addition|v1.0|Added new property `routingType` to [callRoute](/graph/api/resources/callRoute?view=graph-rest-1.0) complex type.
+
 ### Devices and apps (Microsoft Intune)
 
 | **Change type** | **Version** | **Description** |

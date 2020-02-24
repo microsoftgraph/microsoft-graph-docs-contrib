@@ -28,6 +28,7 @@ The participant type.
 | isInLobby            | Boolean                                  | `true` if the participant is in lobby.                          |
 | isMuted              | Boolean                                  | `true` if the participant is muted (client or server muted).    |
 | mediaStreams         | [mediaStream](mediastream.md) collection | The list of media streams.                                   |
+| recordingInfo        | [recordingInfo](recordinginfo.md)        | Information on whether the participant has recording capability. |
 
 ## Relationships
 None.
