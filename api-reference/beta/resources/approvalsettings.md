@@ -25,10 +25,33 @@ Used for the `requestApprovalSettings` property of an [access package assignment
 
 ## JSON representation
 
-The following is a JSON representation of the request approval settings property of a policy which has two stages of approval.
+The following is a JSON representation of the request approval settings property.
 
 <!-- {
   "blockType": "resource",
+  "optionalProperties": [
+
+  ],
+  "@odata.type": "microsoft.graph.approvalSettings",
+  "baseType": ""
+}-->
+
+```json
+{
+    "isApprovalRequired": true,
+    "isApprovalRequiredForExtension": false,
+    "isRequestorJustificationRequired": true,
+    "approvalMode": "Serial",
+    "approvalStages": [{"@odata.type": "microsoft.graph.approvalStage"}]
+}
+```
+
+## JSON example
+
+The following is an example of a policy which has two stages of approval.
+
+<!-- {
+  "blockType": "example",
   "optionalProperties": [
 
   ],

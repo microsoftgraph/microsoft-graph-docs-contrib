@@ -46,6 +46,30 @@ The following is a JSON representation of the request approval stage.
     "isApproverJustificationRequired": true,
     "isEscalationEnabled": true,
     "escalationTimeInMinutes": 11520,
+    "primaryApprovers": [{"@odata.type": "microsoft.graph.userSet"}],
+    "escalationApprovers": [{"@odata.type": "microsoft.graph.userSet"}]
+}
+```
+
+## JSON example
+
+The following is an example of an approval stage in which the primary approver is the external sponsor, for requestors from connected organizations where the connected organization has an external sponsor.
+
+<!-- {
+  "blockType": "example",
+  "optionalProperties": [
+
+  ],
+  "@odata.type": "microsoft.graph.approvalStage",
+  "baseType": ""
+}-->
+
+```json
+{
+    "approvalStageTimeOutInDays": 14,
+    "isApproverJustificationRequired": true,
+    "isEscalationEnabled": true,
+    "escalationTimeInMinutes": 11520,
     "primaryApprovers": [
         {
             "@odata.type": "#microsoft.graph.groupMembers",
