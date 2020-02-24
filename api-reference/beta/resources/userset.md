@@ -1,5 +1,5 @@
 ---
-title: "userSet resource type"
+title: "userSet complex type"
 description: "The abstract base type for types used in the request, approval, and assignment review settings of an access package assignment policy."
 localization_priority: Normal
 author: "markwahl-msft"
@@ -7,7 +7,7 @@ ms.prod: "microsoft-identity-platform"
 doc_type: "resourcePageType"
 ---
 
-# userSet resource type
+# userSet complex type
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 

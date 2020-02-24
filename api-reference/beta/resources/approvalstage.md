@@ -1,5 +1,5 @@
 ---
-title: "approvalStage resource type"
+title: "approvalStage complex type"
 description: "Used for the approvalStages property of approval settings in the requestApprovalSettings property of an access package assignment policy. Specifies the primary, fallback, and escalation approvers of each stage."
 localization_priority: Normal
 author: "markwahl-msft"
@@ -7,7 +7,7 @@ ms.prod: "microsoft-identity-platform"
 doc_type: "resourcePageType"
 ---
 
-# approvalStage resource type
+# approvalStage complex type
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 

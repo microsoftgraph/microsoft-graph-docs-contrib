@@ -1,5 +1,5 @@
 ---
-title: "singleUser resource type"
+title: "singleUser complex type"
 description: "Identifies a user in the tenant who will be allowed as requestor, approver, or reviewer."
 localization_priority: Normal
 author: "markwahl-msft"
@@ -11,7 +11,7 @@ doc_type: "resourcePageType"
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Used in the request, approval, and assignment review settings of an [access package assignment policy](accesspackageassignmentpolicy.md). Identifies a specific user in the tenant who will be allowed as a requestor, approver, or reviewer.
+Used in the request, approval, and assignment review settings of an [access package assignment policy](accesspackageassignmentpolicy.md). The  `@odata.type` value `#microsoft.graph.singleUser` indicates that this user set identifies a specific user in the tenant who will be allowed as a requestor, approver, or reviewer.
 
 ## Properties
 
@@ -19,10 +19,50 @@ This type has the following properties:
 
 | Property                     | Type                      | Description |
 | :--------------------------- | :------------------------ | :---------- |
-| `@odata.type` | String | The value `#microsoft.graph.singleUser`. |
 | id |String | The ID of the user in Azure AD. |
 | description |String | The name of the user in Azure AD. Read only. |
 | isBackup | Boolean | For a **singleUser** in an approval stage, indicates whether the user is a backup fallback approver. |
+
+## JSON representation
+
+The following is a JSON representation of the type.
+
+<!-- {
+  "blockType": "resource",
+  "optionalProperties": [
+
+  ],
+  "@odata.type": "microsoft.graph.singleUser",
+  "baseType": "microsoft.graph.userSet"
+}-->
+
+```json
+{
+  "isBackup": false,
+  "id": "string (identifier)",
+  "description": "string"
+}
+```
+
+## JSON example
+
+<!-- {
+  "blockType": "example",
+  "optionalProperties": [
+
+  ],
+  "@odata.type": "microsoft.graph.singleUser",
+  "baseType": "microsoft.graph.userSet"
+}-->
+
+```json
+{
+  "@odata.type": "#microsoft.graph.singleUser",
+  "isBackup": false,
+  "id": "string (identifier)",
+  "description": "Escalation approver in case the external sponsor does not respond"
+}
+```
 
 <!-- uuid: 16cd6b66-4b1a-43a1-adaf-3a886856ed98
 2019-02-04 14:57:30 UTC -->

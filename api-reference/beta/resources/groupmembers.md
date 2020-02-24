@@ -1,5 +1,5 @@
 ---
-title: "groupMembers resource type"
+title: "groupMembers comple type"
 description: "Identifies a collection of users in the tenant who will be allowed as requestor, approver, or reviewer."
 localization_priority: Normal
 author: "markwahl-msft"
@@ -7,24 +7,25 @@ ms.prod: "microsoft-identity-platform"
 doc_type: "resourcePageType"
 ---
 
-# groupMembers resource type
+# groupMembers complex type
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Used in the request, approval, and assignment review settings of an [access package assignment policy](accesspackageassignmentpolicy.md). Identifies a collection of users in the tenant who will be allowed as requestor, approver, or reviewer.  The users are members of a specific group.
+Used in the request, approval, and assignment review settings of an [access package assignment policy](accesspackageassignmentpolicy.md). 
+The `@odata.type` value "`#microsoft.graph.groupMembers`" indicates that this type identifies a collection of users in the tenant who will be allowed as requestor, approver, or reviewer, who are the members of a specific group.
 
 ## Properties
 
 | Property                     | Type                      | Description |
 | :--------------------------- | :------------------------ | :---------- |
-| `@odata.type` | String | The value "`#microsoft.graph.groupMembers`". |
 | id |String | The ID of the group in Azure AD. |
 | description |String | The name of the group in Azure AD. Read only. |
 | isBackup | Boolean | For **groupMembers** in an approval stage, this property indicates that the group members are a backup fallback approver. |
 
 ## JSON representation
 
-The following is a JSON representation of the **groupMembers** from the requestor settings property of a policy, which allows the members of a group to request.
+
+The following is a JSON representation of the type.
 
 <!-- {
   "blockType": "resource",
@@ -37,10 +38,31 @@ The following is a JSON representation of the **groupMembers** from the requesto
 
 ```json
 {
+  "id": "string (identifier)",
+  "description": "string",
+  "isBackup": false
+}
+```
+
+## JSON example
+
+The following is a JSON representation of the **groupMembers** from the requestor settings property of a policy, which allows the members of a group to request.
+
+<!-- {
+  "blockType": "example",
+  "optionalProperties": [
+
+  ],
+  "@odata.type": "microsoft.graph.groupMembers",
+  "baseType": "microsoft.graph.userSet"
+}-->
+
+```json
+{
      "@odata.type": "#microsoft.graph.groupMembers",
-     "isBackup": false,
      "id": "string (identifier)",
-     "description": "Authorized requestors"
+     "description": "Authorized requestors",
+     "isBackup": false
 }
 ```
 

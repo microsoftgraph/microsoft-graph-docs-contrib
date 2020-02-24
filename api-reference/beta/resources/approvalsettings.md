@@ -1,5 +1,5 @@
 ---
-title: "approvalSettings resource type"
+title: "approvalSettings complex type"
 description: "Used for the requestApprovalSettings property of an access package assignment policy. Provides additional settings to select who must approve each request."
 localization_priority: Normal
 author: "markwahl-msft"
@@ -7,7 +7,7 @@ ms.prod: "microsoft-identity-platform"
 doc_type: "resourcePageType"
 ---
 
-# approvalSettings resource type
+# approvalSettings complex type
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
