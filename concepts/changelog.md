@@ -64,6 +64,7 @@ For details about known issues with Microsoft Graph APIs, see [Known issues](kno
 | **Change type** | **Version**   | **Description**                          |
 |:---|:---|:---|
 | Addition | beta and v1.0 | Added the **latestSupportedTlsVersion** property to the [subscription](/graph/api/resources/subscription?view=graph-rest-1.0) entity. Specifies the latest TLS version that the notification endpoint supports. Allows subscribers to use a deprecated version of TLS for a limited period. For details, see [Microsoft Graph subscriptions - deprecating TLS 1.0 and 1.1](https://developer.microsoft.com/graph/blogs/microsoft-graph-subscriptions-deprecating-tls-1-0-and-1-1/). |
+|Addition | beta | [synchronizationError](/api-reference/beta/resources/synchronization-synchronizationError.md) resource added to the provisioning job |
 
 ### Teamwork (Microsoft Teams)
 
@@ -115,7 +116,6 @@ For details about known issues with Microsoft Graph APIs, see [Known issues](kno
 | Addition | beta |[claimsMappingPolicy](/graph/api/resources/claimsMappingPolicy?view=graph-rest-beta) resource type controls the claims mapping for WS-Fed, SAML, OAuth 2.0, and OpenID Connect protocols, for tokens issued to a specific application.|
 | Addition | beta | [homeRealmDiscoveryPolicy](/graph/api/resources/homeRealmDiscoveryPolicy?view=graph-rest-beta) resource type controls Azure Active Directory authentication behavior for federated users, in particular for auto-acceleration and user authentication restrictions in federated domains. |
 | Addition | beta | [tokenLifetimePolicy](/graph/api/resources/tokenlifetimepolicy?view=graph-rest-beta) resource type controls the lifetime duration of access tokens used to access protected resources.|
-|Addition | beta | [synchronizationError](/graph/api/resources/synchronizationError?view=graph-rest-beta) resource added to the provisioning job |
 
 ### Security
 
