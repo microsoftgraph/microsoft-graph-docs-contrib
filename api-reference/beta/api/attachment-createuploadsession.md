@@ -13,7 +13,7 @@ doc_type: "apiPageType"
 
 Create an upload session that allows an app to iteratively upload ranges of a file, so as to attach the file to the specified [message](../resources/message.md).
 
-Use this approach to attach files of sizes between 3 MB and 150 MB to a **message**. To attach files of sizes under 4 MB, simply [POST on the attachments navigation property](message-post-attachments.md). 
+Use this approach to attach a file to a **message** when the file size is between 3 MB and 150 MB. To attach a file that's smaller than 3 MB,  [POST on the attachments navigation property](message-post-attachments.md). 
 
 As part of the response, this action returns an upload URL that you can use in subsequent sequential `PUT` queries. Request headers for each `PUT` operation let you specify the exact range of bytes to be uploaded. This allows transfer to be resumed, in case the network connection is dropped during upload. 
 
@@ -64,7 +64,7 @@ In the request body, provide a JSON object with the following parameters.
 
 ## Response
 
-If successful, this method returns `201, Created` response code and a new [uploadSession](../resources/uploadsession.md) object in the response body.
+If successful, this method returns a `201 Created` response code and a new [uploadSession](../resources/uploadsession.md) object in the response body.
 
 >**Note**: 
 >
@@ -77,11 +77,9 @@ If successful, this method returns `201, Created` response code and a new [uploa
 
 ## Examples
 
-The following is an example of how to call this API.
+The following example shows how to create an upload session that you can use in subsequent file upload operations.
 
 ### Request
-
-The following is an example of the request.
 
 # [HTTP](#tab/http)
 <!-- {
@@ -118,8 +116,6 @@ Content-type: application/json
 
 
 ### Response
-
-The following is an example of the response.
 
 > **Note:** The response object shown here might be shortened for readability. All the properties will be returned from an actual call.
 
