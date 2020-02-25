@@ -9,7 +9,6 @@ author: "davidmu1"
 
 # Update a delegated permission grant (oAuth2PermissionGrant)
 
-[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 Update the properties of [oAuth2PermissionGrant](../resources/oauth2permissiongrant.md) object, representing a delegated permission grant.
 
@@ -61,7 +60,7 @@ If successful, this method returns `204 No Content` response code. It does not r
 }-->
 
 ```http
-PATCH https://graph.microsoft.com/beta/oauth2PermissionGrants/{id}
+PATCH https://graph.microsoft.com/v1.0/oauth2PermissionGrants/{id}
 Content-Type: application/json
 Content-Length: 30
 
@@ -69,20 +68,6 @@ Content-Length: 30
   "scope": "scope-value"
 }
 ```
-
-# [C#](#tab/csharp)
-[!INCLUDE [sample-code](../includes/snippets/csharp/update-oauth2permissiongrant-csharp-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [JavaScript](#tab/javascript)
-[!INCLUDE [sample-code](../includes/snippets/javascript/update-oauth2permissiongrant-javascript-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [Objective-C](#tab/objc)
-[!INCLUDE [sample-code](../includes/snippets/objc/update-oauth2permissiongrant-objc-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
----
 
 ### Response
 

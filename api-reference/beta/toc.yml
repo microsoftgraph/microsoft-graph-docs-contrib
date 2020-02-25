@@ -229,6 +229,10 @@
           href: api/user-list-contacts.md
         - name: List contact folders
           href: api/user-list-contactfolders.md
+      - name: Delegated permission grants
+        items:
+        - name: List delegated permission grants
+          href: api/user-list-oauth2permissiongrants.md
       - name: Directory objects
         href: resources/directoryobject.md
         items:
@@ -9011,14 +9015,18 @@
         items:
         - name: Create invitation
           href: api/invitation-post.md
-      - name: Oauth2 permission grant
+      - name: Delegated permission grants
         href: resources/oauth2permissiongrant.md
         items:
-        - name: Get oauth2 permission grant
+        - name: List delegated permission grants
+          href: api/oauth2permissiongrant-list.md
+        - name: Get delegated permission grants
           href: api/oauth2permissiongrant-get.md
-        - name: Update oauth2 permission grant
+        - name: Create delegated permission grant
+          href: api/oauth2permissiongrant-post.md
+        - name: Update delegated permission grant
           href: api/oauth2permissiongrant-update.md
-        - name: Delete oauth2 permission grant
+        - name: Delete delegated permission grant
           href: api/oauth2permissiongrant-delete.md
       - name: On-premises publishing
         href: resources/onpremisespublishingprofile-root.md
@@ -9323,7 +9331,7 @@
             href: api/serviceprincipal-removekey.md
         - name: Delegated permission grants
           items:
-          - name: List oauth2PermissionGrants
+          - name: List delegated permission grants
             href: api/serviceprincipal-list-oauth2permissiongrants.md
         - name: Membership
           items:

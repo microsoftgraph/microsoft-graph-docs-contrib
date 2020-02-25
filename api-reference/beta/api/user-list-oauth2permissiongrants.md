@@ -1,17 +1,20 @@
 ---
-title: "List delegated permission grants (list oauth2PermissionGrants)"
-description: "Retrieve a list of oauth2PermissionGrant objects."
-localization_priority: Normal
-doc_type: apiPageType
+title: "user: List delegated permission grants (oauth2PermissionGrants)"
+description: "Retrieve a list of oAuth2PermissionGrant objects, representing delegated permission grants."
+localization_priority: Priority
+doc_type: resourcePageType
 ms.prod: "microsoft-identity-platform"
 author: "davidmu1"
 ---
 
-# List delegated permission grants (oauth2PermissionGrants)
+# user: List delegated permission grants (oAuth2PermissionGrants)
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Retrieve a list of [oAuth2PermissionGrant](../resources/oauth2permissiongrant.md) objects, representing delegated permissions which have been granted for client applications to access APIs on behalf of signed-in users.
+Retrieve a list of [oAuth2PermissionGrant](../resources/oAuth2PermissionGrant.md) entities, representing delegated permissions granted for a client application to access an API on behalf of the user.
+
+> [!NOTE]
+> Querying the delegated permission grants for a user will only return delegated permissions grants which are specifically for the given user. Delegated permissions granted on behalf of all users in the organization are _not_ included in the response.
 
 ## Permissions
 
@@ -19,7 +22,7 @@ One of the following permissions is required to call this API. To learn more, in
 
 |Permission type      | Permissions (from least to most privileged)              |
 |:--------------------|:---------------------------------------------------------|
-|Delegated (work or school account) | Directory.Read.All, DelegatedPermissionGrant.ReadWrite.All, Directory.ReadWrite.All, Directory.AccessAsUser.All    |
+|Delegated (work or school account) | Directory.Read.All, Directory.ReadWrite.All, Directory.AccessAsUser.All |
 |Delegated (personal Microsoft account) | Not supported.    |
 |Application | Directory.Read.All, Directory.ReadWrite.All |
 
@@ -28,7 +31,8 @@ One of the following permissions is required to call this API. To learn more, in
 <!-- { "blockType": "ignored" } -->
 
 ```http
-GET /oauth2PermissionGrants
+GET /me/oauth2PermissionGrants
+GET /users/{id | userPrincipalName}/oauth2PermissionGrants
 ```
 
 ## Optional query parameters
@@ -37,9 +41,9 @@ This method supports the [OData Query Parameters](https://developer.microsoft.co
 
 ## Request headers
 
-| Name | Description |
-|:----------|:----------|
-| Authorization  | string  | Bearer {token}. Required. |
+| Name           | Description                |
+|:---------------|:---------------------------|
+| Authorization  | Bearer {token}. Required.  |
 
 ## Request body
 
@@ -49,24 +53,24 @@ Do not supply a request body for this method.
 
 If successful, this method returns a `200 OK` response code and collection of [oAuth2PermissionGrant](../resources/oauth2permissiongrant.md) objects in the response body.
 
-## Example
+## Examples
 
 ### Request
 
-# [HTTP](#tab/http)
+Here is an example of the request.
 
 <!-- {
   "blockType": "request",
-  "name": "list_oauth2permissiongrants"
+  "name": "get_user_oAuth2PermissionGrants"
 }-->
 
 ```http
-GET https://graph.microsoft.com/beta/oauth2PermissionGrants
+GET https://graph.microsoft.com/beta/users/{id}/oauth2PermissionGrants
 ```
 
 ### Response
 
-Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.
+Here is an example of the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.
 
 <!-- {
   "blockType": "response",
@@ -78,7 +82,7 @@ Note: The response object shown here may be truncated for brevity. All of the pr
 ```http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 259
+Content-Length: 253
 
 {
   "value": [
@@ -101,7 +105,7 @@ Content-Length: 259
 <!--
 {
   "type": "#page.annotation",
-  "description": "List oauth2PermissionGrants",
+  "description": "List oAuth2PermissionGrants",
   "keywords": "",
   "section": "documentation",
   "tocPath": "",
