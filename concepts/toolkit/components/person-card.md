@@ -13,7 +13,7 @@ For more information about the `mgt-person` component, see [mgt-person docs](./p
 
 ## Example
   
-<iframe src="https://mgt.dev/iframe.html?id=mgt-person-card--person-card&source=docs" height="300"></iframe>
+<iframe src="https://mgt.dev/iframe.html?id=mgt-person-card--person-card&source=docs" height="400"></iframe>
 
 ## Properties
 
