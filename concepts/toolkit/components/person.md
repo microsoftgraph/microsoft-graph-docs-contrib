@@ -13,7 +13,7 @@ The person component also uses the [mgt-person-card](./person-card.md) to displa
 
 ## Example
 
-<iframe src="https://mgt.dev/iframe.html?id=mgt-person--person&source=docs" height="100"></iframe>
+<iframe src="https://mgt.dev/iframe.html?id=mgt-person--person&source=docs" height="300"></iframe>
 
 ## Setting the person details
 

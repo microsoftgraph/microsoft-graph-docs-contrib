@@ -13,7 +13,7 @@ A Login component is a button and flyout control to facilitate Microsoft identit
 
 ## Example
 
-<iframe src="https://mgt.dev/iframe.html?id=mgt-login--login&source=docs" height="200"></iframe>
+<iframe src="https://mgt.dev/iframe.html?id=mgt-login--login&source=docs" height="400"></iframe>
 
 ## Using the control without an authentication provider
 
