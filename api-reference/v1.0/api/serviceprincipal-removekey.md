@@ -121,7 +121,7 @@ namespace MicrosoftIdentityPlatformProofTokenGenerator
             X509Certificate2 signingCert = new X509Certificate2(pfxFilePath, password);
 
             // audience
-            string aud = $"00000002-0000-0000-c000-000000000000"; // AAD Graph
+            string aud = $"00000002-0000-0000-c000-000000000000";
 
             // aud and iss are the only required claims.
             var claims = new Dictionary<string, object>()
