@@ -9,8 +9,6 @@ author: "davidmu1"
 
 # List delegated permission grants (oauth2PermissionGrants)
 
-[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
-
 Retrieve a list of [oAuth2PermissionGrant](../resources/oauth2permissiongrant.md) objects, representing delegated permissions which have been granted for client applications to access APIs on behalf of signed-in users.
 
 ## Permissions
@@ -19,7 +17,7 @@ One of the following permissions is required to call this API. To learn more, in
 
 |Permission type      | Permissions (from least to most privileged)              |
 |:--------------------|:---------------------------------------------------------|
-|Delegated (work or school account) | Directory.Read.All, DelegatedPermissionGrant.ReadWrite.All, Directory.ReadWrite.All, Directory.AccessAsUser.All    |
+|Delegated (work or school account) | Directory.Read.All, Directory.ReadWrite.All, Directory.AccessAsUser.All    |
 |Delegated (personal Microsoft account) | Not supported.    |
 |Application | Directory.Read.All, Directory.ReadWrite.All |
 
@@ -61,7 +59,7 @@ If successful, this method returns a `200 OK` response code and collection of [o
 }-->
 
 ```http
-GET https://graph.microsoft.com/beta/oauth2PermissionGrants
+GET https://graph.microsoft.com/v1.0/oauth2PermissionGrants
 ```
 
 ### Response
@@ -88,9 +86,7 @@ Content-Length: 259
       "consentType": "consentType-value",
       "principalId": "principalId-value",
       "resourceId": "resourceId-value",
-      "scope": "scope-value",
-      "startTime": "datetime-value",
-      "expiryTime": "datetime-value"
+      "scope": "scope-value"
     }
   ]
 }
