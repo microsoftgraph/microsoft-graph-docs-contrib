@@ -117,7 +117,7 @@ For more information about administrator roles, see [Assigning administrator rol
 
 ---
 
-## Administrative Units permissions
+## Administrative units permissions
 
 #### Delegated permissions
 
@@ -349,7 +349,7 @@ None.
 
 For more complex scenarios involving multiple permissions, see [Permission scenarios](#permission-scenarios).
 
-## Channel Message permissions
+## Channel message permissions
 
 #### Delegated permissions
 
@@ -772,7 +772,7 @@ For more complex scenarios involving multiple permissions, see [Permission scena
 
 ---
 
-## Intune Device Management permissions
+## Intune device management permissions
 
 #### Delegated permissions
 
@@ -1032,7 +1032,7 @@ For more complex scenarios involving multiple permissions, see [Permission scena
 
 ---
 
-## On-premises Publishing Profiles permissions
+## On-premises publishing profiles permissions
 
 #### Delegated permissions
 
@@ -1282,7 +1282,7 @@ For more complex scenarios involving multiple permissions, see [Permission scena
 
 ---
 
-## Role Management permissions
+## Role management permissions
 
 #### Delegated permissions
 
@@ -1462,7 +1462,7 @@ For more complex scenarios involving multiple permissions, see [Permission scena
 
 ---
 
-## Teams Activity permissions
+## Teams activity permissions
 
 #### Delegated permissions
 
@@ -1478,7 +1478,7 @@ For more complex scenarios involving multiple permissions, see [Permission scena
 | _TeamsActivity.Read.All_ | Read all users' teamwork activity feed | Allows the app to read all users' teamwork activity feed, without a signed-in user. This permission is currently in private preview only and is not available for public use.	| Yes | No |
 | _TeamsActivity.Send_ | Send a teamwork activity to any user | Allows the app to send new activities to any users' teamwork activity feed, without a signed-in user. This permission is currently in private preview only and is not available for public use.	| Yes | No |
 
-## Teams App permissions
+## Teams app permissions
 
 #### Delegated permissions
 
@@ -1494,7 +1494,7 @@ For more complex scenarios involving multiple permissions, see [Permission scena
 | _TeamsApp.Read.All_ | Read all users' installed Teams apps | Allows the app to read the Teams apps that are installed for any user, without a signed-in user. Does not give the ability to read application-specific settings. This permission is currently in private preview only and is not available for public use.	| Yes | No |
 | _TeamsApp.ReadWrite.All_ | Manage all users' Teams apps  | Allows the app to read, install, upgrade, and uninstall Teams apps for any user, without a signed-in user. Does not give the ability to read or write application-specific settings. This permission is currently in private preview only and is not available for public use.	| Yes | No |
 
-## Teams Tab permissions
+## Teams tab permissions
 
 #### Delegated permissions
 
@@ -1661,7 +1661,7 @@ To read the group memberships of a user (`memberOf`), the app must have either [
 
 For more complex scenarios involving multiple permissions, see [Permission scenarios](#permission-scenarios).
 
-## User Activity permissions
+## User activity permissions
 
 #### Delegated permissions
 
