@@ -63,7 +63,7 @@ Here is an example of the response. Note: The response object shown here may be 
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 2415
+Content-Length: 2467
 
 {
   "value": {
@@ -119,7 +119,8 @@ Content-Length: 2415
     "blockDataIngestionIntoOrganizationDocuments": true,
     "allowedDataIngestionLocations": [
       "sharePoint"
-    ]
+    ],
+    "appActionIfUnableToAuthenticateUser": "wipe"
   }
 }
 ```

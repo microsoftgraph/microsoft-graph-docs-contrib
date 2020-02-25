@@ -61,7 +61,7 @@ Here is an example of the response. Note: The response object shown here may be 
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 1913
+Content-Length: 2095
 
 {
   "value": {
@@ -115,7 +115,12 @@ Content-Length: 1913
       }
     ],
     "showAzureADEnterpriseApps": true,
-    "showOfficeWebApps": true
+    "showOfficeWebApps": true,
+    "sendDeviceOwnershipChangePushNotification": true,
+    "enrollmentAvailability": "availableWithoutPrompts",
+    "roleScopeTagIds": [
+      "Role Scope Tag Ids value"
+    ]
   }
 }
 ```
