@@ -11,6 +11,17 @@ This changelog covers what's changed in the Microsoft Graph API, including the v
 
 For details about known issues with Microsoft Graph APIs, see [Known issues](known-issues.md).
 
+## March 2020
+
+### Cloud communications | logTeleconferenceDeviceQuality
+
+| **Change type** | **Version** | **Description** |
+|:---|:---|:---|
+|Addition|beta|Added the [logTeleconferenceDeviceQuality](/graph/api/calls-logTeleconferenceDeviceQuality) function on [call](/graph/api/resources/call) collection|
+|Addition|beta|Added the **callChainId** property to the [call](/graph/api/resources/call.md) entity|
+|Addition|beta|Added new complex types:<br/>[teleconferenceDeviceQuality](/graph/api/resources/teleconferenceDeviceQuality)<br/>[teleconferenceDeviceMediaQuality](/graph/api/resources/teleconferenceDeviceMediaQuality)<br/>[teleconferenceDeviceAudioQuality](/graph/api/resources/teleconferenceDeviceAudioQuality)<br/>[teleconferenceDeviceVideoQuality](/graph/api/resources/teleconferenceDeviceVideoQuality)<br/>[teleconferenceDeviceScreenSharingQuality](/graph/api/resources/teleconferenceDeviceScreenSharingQuality)|
+
+
 ## February 2020
 
 ### Devices and apps (Microsoft Intune)
