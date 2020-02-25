@@ -7,11 +7,11 @@ ms.prod: "microsoft-identity-platform"
 doc_type: "resourcePageType"
 ---
 
-# provisionedIdentity resource type
+# synchronizationError resource type
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Describes the identity associated with the provisioning object summary event. 
+Describes the error(s) leading the job to go into quarantine. 
 
 ## Properties
 
