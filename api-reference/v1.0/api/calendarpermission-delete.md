@@ -22,11 +22,21 @@ One of the following permissions is required to call this API. To learn more, in
 |Application | Calendars.ReadWrite |
 ## HTTP request
 
+Delete the specified permissions of a user's primary calendar:
 <!-- { "blockType": "ignored" } -->
-
 ```http
 DELETE /users/{id}/calendar/calendarPermissions/{id}
+```
+
+Delete the specified permissions of a group calendar:
+<!-- { "blockType": "ignored" } -->
+```http
 DELETE /groups/{id}/calendar/calendarPermissions/{id}
+```
+
+Delete the specified permissions of the user calendar that contains the identified event:
+<!-- { "blockType": "ignored" } -->
+```http
 DELETE /users/{id}/events/{id}/calendar/calendarPermissions/{id}
 ```
 
@@ -49,13 +59,14 @@ If successful, this method returns `204, No Content` response code. It does not 
 ### Request
 
 The following is an example of the request.
+
 <!-- {
   "blockType": "request",
   "name": "delete_calendarpermission"
 }-->
 
 ```http
-DELETE https://graph.microsoft.com/beta/users/{id}/calendar/calendarPermissions/{id}
+DELETE https://graph.microsoft.com/v1.0/users/{id}/calendar/calendarPermissions/{id}
 ```
 
 ### Response

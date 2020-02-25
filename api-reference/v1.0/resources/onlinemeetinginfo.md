@@ -2,8 +2,8 @@
 title: "onlineMeetingInfo resource type"
 description: "Details for an attendee to join the meeting online."
 localization_priority: Normal
-author: ""
-ms.prod: ""
+author: "ananmishr"
+ms.prod: "microsoft-teams"
 doc_type: "resourcePageType"
 ---
 
@@ -50,4 +50,4 @@ The following is a JSON representation of the resource.
   "keywords": "",
   "section": "documentation",
   "tocPath": ""
-}-->s
+}-->

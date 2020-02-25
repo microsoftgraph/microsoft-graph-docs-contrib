@@ -473,7 +473,7 @@ Content-length: 2985
 #### Example 3: Create a recurring event
 
 ##### Request
-The third example shows how to create a recurring event. The event occurs from 12:00pm to 2:00pm, every Monday starting September 4, 2017, through the end of the year.
+The third example shows how to create a recurring event that occurs once a week. The event occurs from 12:00pm to 2:00pm, every Monday starting September 4, 2017, through the end of the year.
 
 # [HTTP](#tab/http)
 <!-- {
@@ -665,7 +665,6 @@ Content-type: application/json
 Here is an example of a request which creates an event and enables it as an online meeting. It uses the `Prefer: outlook.timezone` request header to specify the time zone for the **start** and **end**
 times in the response.
 
-# [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "create_event_from_user_with_online_meeting"
@@ -705,19 +704,6 @@ Content-type: application/json
   "onlineMeetingProvider": "teamsForBusiness"
 }
 ```
-# [C#](#tab/csharp)
-[!INCLUDE [sample-code](../includes/snippets/csharp/create-event-from-user-csharp-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [JavaScript](#tab/javascript)
-[!INCLUDE [sample-code](../includes/snippets/javascript/create-event-from-user-javascript-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [Objective-C](#tab/objc)
-[!INCLUDE [sample-code](../includes/snippets/objc/create-event-from-user-objc-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
----
 
 In the request body, supply a JSON representation of [event](../resources/event.md) object.
 ##### Response
