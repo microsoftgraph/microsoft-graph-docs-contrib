@@ -244,6 +244,103 @@ Content-type: application/json
 }
 ```
 
+### Example 4: List the last sign-in time of users with a specific display name
+
+#### Request
+
+The following is an example of the request.
+
+
+<!-- {
+  "blockType": "request",
+  "name": "get_signin_last_time_filter"
+}-->
+```msgraph-interactive
+GET https://graph.microsoft.com/beta/users?$filter=startswith(displayName,'Eric')&$select=displayName,signInActivity
+```
+
+#### Response
+
+The following is an example of the response. 
+> **Note:** The response object shown here might be shortened for readability. All the properties will be returned from an actual call.
+
+<!-- {
+  "blockType": "response",
+  "truncated": true,
+  "@odata.type": "microsoft.graph.user",
+  "isCollection": true
+} -->
+```http
+HTTP/1.1 200 OK
+Content-type: application/json
+
+{
+  "@odata.context": "https://graph.microsoft.com/beta/users?$filter=startswith(displayName,'Eric')&$select=displayName,signInActivity",
+  "value": [
+    {
+      "displayName": "Eric Solomon",
+      "signInActivity": {
+        "lastSignInDateTime": "2017-09-04T15:35:02Z",
+        "lastSignInRequestId": "c7df2760-2c81-4ef7-b578-5b5392b571df"
+      }
+    }
+  ]
+}
+```
+
+### Example 5: List the last sign-in time of users in a specific time range
+
+#### Request
+
+The following is an example of the request.
+
+
+<!-- {
+  "blockType": "request",
+  "name": "get_signin_last_time_range"
+}-->
+```msgraph-interactive
+GET https://graph.microsoft.com/beta/users?filter=signInActivity/lastSignInDateTime le 2019-06-01T00:00:00Z
+```
+
+#### Response
+
+The following is an example of the response. 
+> **Note:** The response object shown here might be shortened for readability. All the properties will be returned from an actual call.
+
+<!-- {
+  "blockType": "response",
+  "truncated": true,
+  "@odata.type": "microsoft.graph.user",
+  "isCollection": true
+} -->
+```http
+HTTP/1.1 200 OK
+Content-type: application/json
+
+{
+  "@odata.context": "https://graph.microsoft.com/beta/users?filter=signInActivity/lastSignInDateTime le 2019-06-01T00:00:00Z",
+  "value": [
+    {
+      "displayName": "Adele Vance",
+      "userPrincipalName": "AdeleV@contoso.com",
+      "signInActivity": {
+        "lastSignInDateTime": "2019-05-04T15:35:02Z",
+        "lastSignInRequestId": "c7df2760-2c81-4ef7-b578-5b5392b571df"
+      }
+    },
+    {
+      "displayName": "Alex Wilber",
+      "userPrincipalName": "AlexW@contoso.com",
+      "signInActivity": {
+        "lastSignInDateTime": "2019-04-29T02:16:18Z",
+        "lastSignInRequestId": "90d8b3f8-712e-4f7b-aa1e-62e7ae6cbe96"
+      }
+    }
+  ]
+}
+```
+
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2015-10-25 14:57:30 UTC -->
 <!--

@@ -11,7 +11,7 @@ doc_type: "resourcePageType"
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Provides the last signed-in date for a specific user.
+Provides the last signed-in date for a specific [user](user.md).
 
 ## Properties
 
