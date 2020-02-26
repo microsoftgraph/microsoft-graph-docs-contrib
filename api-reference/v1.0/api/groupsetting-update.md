@@ -48,30 +48,37 @@ In the request body, supply the values for relevant fields that should be update
 
 If successful, this method returns a `204 No Content` response code.
 
-## Example
+## Examples
+
+### Example 1: Update a tenant-wide setting
+
+In this example, `{id}` is the identifier of the tenant-wide group settings object.
+
 #### Request
 
-# [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
-  "name": "update_groupsetting"
+  "name": "update_tenant_setting"
 }-->
 ```http
 PATCH https://graph.microsoft.com/v1.0/groupSettings/{id}
 Content-type: application/json
-Content-length: 173
 
 {
-  "displayName": "displayName-value",
-  "templateId": "templateId-value",
+  "displayName": "Group.Unified",
+  "templateId": "62375ab9-6b52-47ed-826b-58e47e0e304b",
   "values": [
+    {
+      "name": "EnableMIPLabels",
+      "value": "false"
+    },
     {
       "name": "CustomBlockedWordsList",
       "value": ""
     },
     {
       "name": "EnableMSStandardBlockedWords",
-      "value": "False"
+      "value": "false"
     },
     {
       "name": "ClassificationDescriptions",
@@ -87,11 +94,11 @@ Content-length: 173
     },
     {
       "name": "AllowGuestsToBeGroupOwner",
-      "value": "False"
+      "value": "false"
     },
     {
       "name": "AllowGuestsToAccessGroups",
-      "value": "True"
+      "value": "true"
     },
     {
       "name": "GuestUsageGuidelinesUrl",
@@ -99,11 +106,11 @@ Content-length: 173
     },
     {
       "name": "GroupCreationAllowedGroupId",
-      "value": "62e90394-69f5-4237-9190-012177145e10"
+      "value": ""
     },
     {
       "name": "AllowToAddGuests",
-      "value": "True"
+      "value": "true"
     },
     {
       "name": "UsageGuidelinesUrl",
@@ -115,29 +122,47 @@ Content-length: 173
     },
     {
       "name": "EnableGroupCreation",
-      "value": "True"
+      "value": "true"
     }
   ]
 }
 ```
-# [C#](#tab/csharp)
-[!INCLUDE [sample-code](../includes/snippets/csharp/update-groupsetting-csharp-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# [JavaScript](#tab/javascript)
-[!INCLUDE [sample-code](../includes/snippets/javascript/update-groupsetting-javascript-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+#### Response
 
-# [Objective-C](#tab/objc)
-[!INCLUDE [sample-code](../includes/snippets/objc/update-groupsetting-objc-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+<!-- {
+  "blockType": "response",
+  "truncated": false
+} -->
+```http
+HTTP/1.1 204 No Content
+```
 
-# [Java](#tab/java)
-[!INCLUDE [sample-code](../includes/snippets/java/update-groupsetting-java-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+### Example 2: Update a group specific setting
 
----
+In this example, the first `{id}` in the request is the identifier of the group, and the second `{id}` is the identifier of the group settings object.
 
+#### Request
+
+<!-- {
+  "blockType": "request",
+  "name": "update_groupsetting"
+}-->
+```http
+PATCH https://graph.microsoft.com/v1.0/groups/{id}/settings/{id}
+Content-type: application/json
+
+{
+  "displayName": "GroupSettings",
+  "templateId": "08d542b9-071f-4e16-94b0-74abb372e3d9",
+  "values": [
+    {
+            "name": "AllowToAddGuests",
+            "value": "false"
+    }
+  ]
+}
+```
 
 #### Response
 
