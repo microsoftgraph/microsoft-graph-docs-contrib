@@ -13,6 +13,8 @@ The `mgt-agenda` web component represents events in a user or group calendar. By
 
 <iframe src="https://mgt.dev/iframe.html?id=mgt-agenda--simple&source=docs" height="500"></iframe>
 
+[Open this example in mgt.dev](https://mgt.dev/?path=/story/mgt-agenda--simple)
+
 ## Properties
 
 By default, the `mgt-agenda` component fetches events from the `/me/calendarview` endpoint and displays events for the current day. There are several properties you can use to change this behavior.

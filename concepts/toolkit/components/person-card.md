@@ -15,6 +15,8 @@ For more information about the `mgt-person` component, see [mgt-person docs](./p
   
 <iframe src="https://mgt.dev/iframe.html?id=mgt-person-card--person-card&source=docs" height="400"></iframe>
 
+[Open this example in mgt.dev](https://mgt.dev/?path=/story/mgt-person-card--person-card)
+
 ## Properties
 
 The component uses Microsoft Graph to provide additional details about the user. To define a user, you must use the **person-query** property of `mgt-person`.

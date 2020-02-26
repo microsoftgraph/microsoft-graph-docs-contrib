@@ -15,6 +15,8 @@ This component uses multiple [mgt-person](./person.md) controls, but it can be b
 
 <iframe src="https://mgt.dev/iframe.html?id=mgt-people--people&source=docs" height="350"></iframe>
 
+[Open this example in mgt.dev](https://mgt.dev/?path=/story/mgt-people--people)
+
 ## Properties
 
 By default, the `mgt-people` component fetches events from the `/me/people` endpoint with the `personType/class eq 'Person'` filter to display frequently contacted users. You can use several properties to change this behavior.

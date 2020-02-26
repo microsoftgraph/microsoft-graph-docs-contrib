@@ -52,12 +52,12 @@ The Microsoft Graph Toolkit makes integrating common experiences powered by Micr
    :::column span="":::
     **Cut Development Time**
 
-    All of the work to connect to Microsoft Graph APIs and render the data in a UI that looks and feels like a Microsoft365 experience is done, with no customization required.
+    The work to connect to Microsoft Graph APIs and render the data in a UI that looks and feels like a Microsoft365 experience is done for you, with no customization required.
   :::column-end:::
   :::column span="":::
     **Works Everywhere**
 
-    All of the components are based on web standards and work seamlessly with any modern browser and web framework (React, Angular, Vue, etc.). 
+    All components are based on web standards and work seamlessly with any modern browser and web framework (React, Angular, Vue, etc.). 
   :::column-end:::
   :::column span="":::
     **Beautiful but Flexible**

@@ -15,6 +15,8 @@ In addition, a user is able to assign a single or multiple Microsoft Graph users
 
 <iframe src="https://mgt.dev/iframe.html?id=mgt-tasks--tasks&source=docs" height="500"></iframe>
 
+[Open this example in mgt.dev](https://mgt.dev/?path=/story/mgt-tasks--tasks)
+
 ## Properties
 
 | Attribute | Property | Description |
