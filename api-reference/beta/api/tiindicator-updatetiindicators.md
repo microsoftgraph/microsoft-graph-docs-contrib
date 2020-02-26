@@ -39,7 +39,7 @@ POST /security/tiIndicators/updateTiIndicators
 
 ## Request body
 
-In the request body, provide a JSON object with the following parameters. For details about properties that can be updated, see [update tiIndicator](tiindicator-update.md).
+In the request body, provide a JSON object with the following parameters. For details about properties that can be updated, see [update tiIndicator](tiindicator-update.md). Required fields for each tiIndicator are: `id`, `expirationDateTime`, `targetProduct`.
 
 | Parameter    | Type        | Description |
 |:-------------|:------------|:------------|
