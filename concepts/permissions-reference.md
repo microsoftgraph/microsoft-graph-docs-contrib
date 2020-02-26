@@ -364,21 +364,21 @@ None.
 
 > **Note:** See also [Group.Read.All](#group-permissions).
 
-## Channel member permissions ([private preview](#permissions-availability-status))
+## Channel Member permissions
 
 #### Delegated permissions
 
 |   Permission    |  Display String   |  Description | Admin Consent Required | Microsoft Account supported |
 |:----------------|:------------------|:-------------|:-----------------------|:--------------|
-|_ChannelMember.Read.All_ (private preview)|Read the members of channels. |Read the members of channels, on behalf of the signed-in user.  |Yes | No |
-|_ChannelMember.ReadWrite.All_ (private preview)| Add and remove members from channels. | Add and remove members from channels, on behalf of the signed-in user. Also allows changing a channel member's role, for example from owner to non-owner.  | Yes | No |
+|_ChannelMember.Read.All_ |Read the members of channels. |Read the members of channels, on behalf of the signed-in user. This permission is currently in private preview only and is not available for public use. |Yes | No |
+|_ChannelMember.ReadWrite.All_ | Add and remove members from channels. | Add and remove members from channels, on behalf of the signed-in user. Also allows changing a member's role, for example from owner to non-owner. This permission is currently in private preview only and is not available for public use. | Yes | No |
 
 #### Application permissions
 
 |   Permission    |  Display String   |  Description | Admin Consent Required | Microsoft Account supported |
 |:----------------|:------------------|:-------------|:-----------------------|:--------------|
-|_ChannelMember.Read.All_ (private preview)|Read the members of all channels. |Read the members of all channels, without a signed-in user.  |Yes | No |
-|_ChannelMember.ReadWrite.All_ (private preview)| Add and remove members from all channels. |Add and remove members from all channels, without a signed-in user. Also allows changing a channel member's role, for example from owner to non-owner.  | Yes | No |
+|_ChannelMember.Read.All_ |Read the members of all channels. |Read the members of all channels, without a signed-in user. This permission is currently in private preview only and is not available for public use. |Yes | No |
+|_ChannelMember.ReadWrite.All_ | Add and remove members from all channels. |Add and remove members from all channels, without a signed-in user. Also allows changing a member's role, for example from owner to non-owner. This permission is currently in private preview only and is not available for public use. | Yes | No |
 
 ## Chats permissions
 
@@ -1483,15 +1483,15 @@ For more complex scenarios involving multiple permissions, see [Permission scena
 
 |   Permission    |  Display String   |  Description | Admin Consent Required | Microsoft Account supported |
 |:----------------|:------------------|:-------------|:-----------------------|:--------------|
-| _TeamMember.Read.All_ | Read the members of teams and channels. | Read the members of teams and channels, on behalf of the signed-in user. This permission is currently in private preview only and is not available for public use.	| Yes | No |
-| _TeamMember.ReadWrite.All_ | Add and remove members from teams and channels. | Add and remove members from teams and channels, on behalf of the signed-in user. Also allows changing a team member's role, e.g. from owner to non-owner. This permission is currently in private preview only and is not available for public use.	| Yes | No |
+| _TeamMember.Read.All_ | Read the members of teams. | Read the members of teams, on behalf of the signed-in user. This permission is currently in private preview only and is not available for public use.	| Yes | No |
+| _TeamMember.ReadWrite.All_ | Add and remove members from teams. | Add and remove members from teams, on behalf of the signed-in user. Also allows changing a member's role, for example from owner to non-owner. This permission is currently in private preview only and is not available for public use.	| Yes | No |
 
 #### Application permissions
 
 |   Permission    |  Display String   |  Description | Admin Consent Required | Microsoft Account supported |
 |:----------------|:------------------|:-------------|:-----------------------|:--------------|
-| _TeamMember.Read.All_ | Read the members of all teams and channels. | Read the members of all teams and channels, without a signed-in user. This permission is currently in private preview only and is not available for public use.	| Yes | No |
-| _TeamMember.ReadWrite.All_ | Add and remove members from all teams and channels. | Add and remove members from all teams and channels, without a signed-in user. Also allows changing a team member's role, e.g. from owner to non-owner. This permission is currently in private preview only and is not available for public use.	| Yes | No |
+| _TeamMember.Read.All_ | Read the members of all teams. | Read the members of all teams, without a signed-in user. This permission is currently in private preview only and is not available for public use.	| Yes | No |
+| _TeamMember.ReadWrite.All_ | Add and remove members from all teams. | Add and remove members from all teams, without a signed-in user. Also allows changing a team member's role, for example from owner to non-owner. This permission is currently in private preview only and is not available for public use.	| Yes | No |
 
 ## Teams Activity permissions
 
