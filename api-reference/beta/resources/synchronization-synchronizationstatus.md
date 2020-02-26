@@ -29,7 +29,7 @@ Represents the current status of the [synchronizationJob](synchronization-synchr
 |steadyStateLastAchievedTime|DateTimeOffset|The time when steady state (no more changes to the process) was last achieved. The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 would look like this: `'2014-01-01T00:00:00Z'`.|
 |synchronizedEntryCountByType|[stringKeyLongValuePair](synchronization-stringkeylongvaluepair.md) collection|Count of synchronized objects, listed by object type.|
 |troubleshootingUrl|String|In the event of an error, the URL with the troubleshooting steps for the issue.|
-|error|[quarantineError](synchronization-synchronizationerror.md)|Describes the error(s) putting the job into quarantine.|
+|error|[synchronizationError](synchronization-synchronizationerror.md)|Describes the error(s) putting the job into quarantine.|
 
 ### Synchronization status code details
 
