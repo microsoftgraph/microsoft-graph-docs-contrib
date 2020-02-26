@@ -385,7 +385,7 @@ None.
 |_Chat.Read.All_ |Read all chat messages  |Allows the app to read all 1:1 or group chat messages in Microsoft Teams, without a signed-in user. |Yes | No |
 |_Chat.UpdatePolicyViolation.All_ |Flag chat messages for violating policy |Allows the app to update Microsoft Teams 1:1 or group chat messages by patching a set of Data Loss Prevention (DLP) policy violation properties to handle the output of DLP processing. | Yes | No |
 
-> **Note:** For messages in a channel, see [ChannelMessage permissions](#channelmessage-permissions).
+> **Note:** For messages in a channel, see [ChannelMessage permissions](#channel-message-permissions).
 
 ## Contacts permissions
 
