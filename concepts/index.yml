@@ -1,11 +1,11 @@
 ### YamlMime:Hub
 
 title: Microsoft Graph documentation
-summary: Microsoft Graph provides a unified programmability model that you can use to build apps for organizations and consumers that interact with the data of millions of users. You can use the Microsoft Graph REST APIs to access data in Azure Active Directory, Office 365 services, Enterprise Mobility and Security services, Windows 10 services, Dynamics 365, and more. Explore our documentation to learn more about how to use Microsoft Graph APIs.
+summary: Learn how you can use Microsoft Graph to build apps for organizations and consumers that interact with the data of millions of users.
 brand: m365
 metadata:
   title: Microsoft Graph documentation
-  description: Learn how you can use Microsoft Graph to build apps for organizations and consumers that interact with the data of millions of users.
+  description: Microsoft Graph provides a unified programmability model that you can use to build apps for organizations and consumers that interact with the data of millions of users. You can use the Microsoft Graph REST APIs to access data in Azure Active Directory, Office 365 services, Enterprise Mobility and Security services, Windows 10 services, Dynamics 365, and more. Explore our documentation to learn more about how to use Microsoft Graph APIs.
   ms.topic: hub-page
   author: CelesteDG
   ms.author: celested
@@ -109,7 +109,7 @@ additionalContent:
           summary: Learn about known issues with Microsoft Graph.
           url: /graph/known-issues
         - title: Microsoft Graph monthly community call
-          summary: Join the monthly calls by adding https://aka.ms/microsoftgraphcall or catch up on previous recordings.
+          summary: Join the monthly calls or catch up on previous recordings.
           url: https://www.youtube.com/playlist?list=PLWZJrkeLOrbabneRhISU-N7uK4PvVy-jV
         - title: Videos and podcasts
           summary: Check out our video series and podcasts to learn more about Microsoft Graph APIs.
