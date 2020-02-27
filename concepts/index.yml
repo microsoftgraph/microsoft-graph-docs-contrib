@@ -100,7 +100,7 @@ landingContent:
         links:
           - text: Download the SDK for Java
             url: https://github.com/microsoftgraph/msgraph-sdk-java
-    - title: Build an app with Graph and JavaScript
+  - title: Build an app with Graph and JavaScript
     linkLists:
       - linkListType: download
         links:
@@ -186,4 +186,3 @@ landingContent:
         links:
           - text: Download the SDK
             url: https://www.nuget.org/packages/Microsoft.Graph
-
