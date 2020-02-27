@@ -38,18 +38,9 @@ The following is a JSON representation of the resource.
 
 ```json
 {
-    "rating": "poor",
-    "text": "I could hear a lot of noise in the background",
-    "tokens": {
-        "NoSound": false,
-        "OtherNoSound": false,
-        "Echo": false,
-        "Noisy": true,
-        "LowVolume": false,
-        "Stopped": false,
-        "DistortedSound": false,
-        "Interruptions": false
-    }
+  "rating": "String",
+  "text": "String",
+  "tokens": {"@odata.type": "microsoft.graph.callRecords.feedbackTokenSet"}
 }
 ```
 

@@ -40,10 +40,10 @@ The following is a JSON representation of the resource.
 
 ```json
 {
-  "headerValue": "RTCC/7.0.0.0 UCWA/7.0.0.0 AndroidLync/6.25.0.27 (SM-G930U Android 8.0.0)",
-  "applicationVersion": "6.25.0.27",
-  "platform": "android",
-  "productFamily": "skypeForBusiness"
+  "applicationVersion": "String",
+  "headerValue": "String",
+  "platform": "String",
+  "productFamily": "String"
 }
 ```
 

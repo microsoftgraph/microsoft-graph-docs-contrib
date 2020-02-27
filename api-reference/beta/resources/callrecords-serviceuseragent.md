@@ -39,9 +39,9 @@ The following is a JSON representation of the resource.
 
 ```json
 {
-  "headerValue": "RTCC/7.0.0.0 MediationServer",
-  "applicationVersion": null,
-  "role": "mediationServer"
+  "applicationVersion": "String",
+  "headerValue": "String",
+  "role": "String"
 }
 ```
 
