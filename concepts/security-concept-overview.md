@@ -82,4 +82,5 @@ Looking for the API reference for this service?
 ## Next steps
 
 - [Use the Microsoft Graph Security API](/graph/api/resources/security-api-overview?view=graph-rest-1.0)
+- Explore [Microsoft Graph Security API samples](https://aka.ms/graphsecurityapicode)
 - Interested in becoming a security provider? Reach out to [graphsecfeedback](mailto:graphsecfeedback@microsoft.com).
