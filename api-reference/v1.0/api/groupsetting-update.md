@@ -138,7 +138,7 @@ Content-type: application/json
 HTTP/1.1 204 No Content
 ```
 
-### Example 2: Update a group specific setting
+### Example 2: Update a group-specific setting
 
 In this example, the first `{id}` in the request is the identifier of the group, and the second `{id}` is the identifier of the group settings object.
 
