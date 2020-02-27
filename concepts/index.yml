@@ -32,16 +32,6 @@ landingContent:
         links:
           - text: Build your skills with Microsoft Graph training modules
             url: https://docs.microsoft.com/en-us/learn/browse/?roles=developer&products=ms-graph
-  - title: Build an app with Graph and .NET Core 
-    linkLists:
-      - linkListType: tutorial
-        links:
-          - text: Build ASP.NET MVC apps with Graph
-            url: https://docs.microsoft.com/en-us/graph/tutorials/aspnet
-      - linkListType: download
-        links:
-          - text: Download the SDK
-            url: https://www.nuget.org/packages/Microsoft.Graph
   - title: Build an app with Graph and .NET
     linkLists:
       - linkListType: quickstart
@@ -100,12 +90,6 @@ landingContent:
         links:
           - text: Download the SDK for Java
             url: https://github.com/microsoftgraph/msgraph-sdk-java
-  - title: Build an app with Graph and JavaScript
-    linkLists:
-      - linkListType: download
-        links:
-          - text: Download the JavaScript client library
-            url: https://github.com/microsoftgraph/msgraph-sdk-javascript
   - title: Build an app with Graph and Node.js
     linkLists:
       - linkListType: quickstart
