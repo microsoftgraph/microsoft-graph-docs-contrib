@@ -51,48 +51,6 @@ The following is a JSON representation of the request approval stage.
 }
 ```
 
-## JSON example
-
-The following is an example of an approval stage in which the primary approver is the external sponsor, for requestors from connected organizations where the connected organization has an external sponsor.
-
-<!-- {
-  "blockType": "example",
-  "optionalProperties": [
-
-  ],
-  "@odata.type": "microsoft.graph.approvalStage",
-  "baseType": ""
-}-->
-
-```json
-{
-    "approvalStageTimeOutInDays": 14,
-    "isApproverJustificationRequired": true,
-    "isEscalationEnabled": true,
-    "escalationTimeInMinutes": 11520,
-    "primaryApprovers": [
-        {
-            "@odata.type": "#microsoft.graph.groupMembers",
-            "isBackup": true,
-            "id": "string (identifier)",
-            "description": "Fallback group of users in case the connected org of a requestor does not have an external sponsor"
-        },
-        {
-            "@odata.type": "#microsoft.graph.externalSponsors",
-            "isBackup": false
-        }
-    ],
-    "escalationApprovers": [
-        {
-            "@odata.type": "#microsoft.graph.singleUser",
-            "isBackup": true,
-            "id": "string (identifier)",
-            "description": "Escalation approver in case the external sponsor does not respond"
-        }
-    ]
-}
-```
-
 <!-- uuid: 16cd6b66-4b1a-43a1-adaf-3a886856ed98
 2019-02-04 14:57:30 UTC -->
 <!-- {

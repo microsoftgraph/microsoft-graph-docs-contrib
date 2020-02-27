@@ -44,27 +44,6 @@ The following is a JSON representation of the type.
 }
 ```
 
-## JSON example
-
-The following is a JSON representation of an example of this type, that could be used in an [approvalStage](approvalstage.md) of an access package assignment policy.
-
-<!-- {
-  "blockType": "example",
-  "optionalProperties": [
-
-  ],
-  "@odata.type": "microsoft.graph.singleUser",
-  "baseType": "microsoft.graph.userSet"
-}-->
-
-```json
-{
-  "@odata.type": "#microsoft.graph.singleUser",
-  "isBackup": false,
-  "id": "string (identifier)",
-  "description": "Escalation approver in case the external sponsor does not respond"
-}
-```
 
 <!-- uuid: 16cd6b66-4b1a-43a1-adaf-3a886856ed98
 2019-02-04 14:57:30 UTC -->

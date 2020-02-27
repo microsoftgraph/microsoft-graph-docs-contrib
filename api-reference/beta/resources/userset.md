@@ -38,27 +38,6 @@ The following is a JSON representation of userSet.  Note that a userSet is an ab
 }
 ```
 
-## JSON example
-
-The following is an example of the groupMembers, a subtype of userSet, from the requestor settings property of a policy, which allows the members of a group to request.
-
-<!-- {
-  "blockType": "example",
-  "optionalProperties": [
-
-  ],
-  "@odata.type": "microsoft.graph.groupMembers",
-  "baseType": "microsoft.graph.userSet"
-}-->
-
-```json
-{
-     "@odata.type": "#microsoft.graph.groupMembers",
-     "isBackup": false,
-     "id": "string (identifier)",
-     "description": "Authorized requestors"
-}
-```
 
 
 <!-- uuid: 16cd6b66-4b1a-43a1-adaf-3a886856ed98
