@@ -24,6 +24,12 @@ Added new APIs and resources for subscribing to and retrieving call records from
 | Addition | beta | Added new complex types:<br /><li>[endpoint](/graph/api/resources/callrecords-endpoint?view=graph-rest-beta)</li> <li>[participantEndpoint](/graph/api/resources/callrecords-participantendpoint?view=graph-rest-beta)</li> <li>[serviceEndpoint](/graph/api/resources/callrecords-serviceendpoint?view=graph-rest-beta)</li> <li>[userAgent](/graph/api/resources/callrecords-useragent?view=graph-rest-beta)</li> <li>[serviceUserAgent](/graph/api/resources/callrecords-serviceuseragent?view=graph-rest-beta)</li> <li>[clientUserAgent](/graph/api/resources/callrecords-clientuseragent?view=graph-rest-beta)</li> <li>[userfeedback](/graph/api/resources/callrecords-userfeedback?view=graph-rest-beta)</li> <li>[feedbackTokenSet](/graph/api/resources/callrecords-feedbacktokenset?view=graph-rest-beta)</li> <li>[media](/graph/api/resources/callrecords-media?view=graph-rest-beta)</li> <li>[mediaStream](/graph/api/resources/callrecords-mediastream?view=graph-rest-beta)</li> <li>[networkInfo](/graph/api/resources/callrecords-networkinfo?view=graph-rest-beta)</li> <li>[deviceInfo](/graph/api/resources/callrecords-deviceinfo?view=graph-rest-beta)</li> <li>[failureInfo](/graph/api/resources/callrecords-failureinfo?view=graph-rest-beta)</li> |
 | Addition | beta | Added support for webhook subscriptions to call records.|
 
+### Cloud communications | Recording
+
+| **Change type** | **Version**   | **Description**                          |
+| :-------------- | :------------ | :--------------------------------------- |
+|Addition|beta|Added the **initiator** property to the [recordingInfo](/graph/api/resources/recordinginfo?view=graph-rest-beta) complex type.
+
 ### Devices and apps (Microsoft Intune)
 
 | **Change type** | **Version** | **Description** |
@@ -61,19 +67,32 @@ Added new APIs and resources for subscribing to and retrieving call records from
 
 | **Change type** | **Version**   | **Description**                          |
 | :-------------- | :------------ | :--------------------------------------- |
-| Addition | v1.0 | Added the [group: assignLicense API](/graph/api/group-assignlicense.md?view=graph-rest-1.0), which can be used to assign license to a [group](/graph/api/resources/group?view=graph-rest-1.0). |
+| Addition | v1.0 | Added the [group: assignLicense API](/graph/api/group-assignlicense?view=graph-rest-1.0), which can be used to assign license to a [group](/graph/api/resources/group?view=graph-rest-1.0). |
 
 ### Identity and access (Azure AD)
 
 | **Change type** | **Version**   | **Description**                          |
 |:---|:---|:---|
 | Addition | beta and v1.0 | Added the **latestSupportedTlsVersion** property to the [subscription](/graph/api/resources/subscription?view=graph-rest-1.0) entity. Specifies the latest TLS version that the notification endpoint supports. Allows subscribers to use a deprecated version of TLS for a limited period. For details, see [Microsoft Graph subscriptions - deprecating TLS 1.0 and 1.1](https://developer.microsoft.com/graph/blogs/microsoft-graph-subscriptions-deprecating-tls-1-0-and-1-1/). |
+|Addition | beta | Added the [error](/graph/api/resources/synchronization-synchronizationError?view=graph-rest-beta) property to the **quarantineStatus** resource type.|
+
+### Teamwork (Microsoft Teams)
+
+| **Change type** | **Version** | **Description**                          |
+| :-------------- | :---------- | :--------------------------------------- |
+| Addition | Beta | Added the [swapShiftsChangeRequest: decline](/graph/api/swapshiftschangerequest-decline?view=graph-rest-beta) method to the **swapShiftsChangeRequest** resource. |
+
+### Teamwork (Microsoft Teams)
+ 
+| **Change type** | **Version**   | **Description**                          |
+| :-------------- | :------------ | :--------------------------------------- |
+| Addition | Beta | Added [notifications](/graph/api/subscription-post-subscriptions?view=graph-rest-beta) for all channel messages in tenant and all chat messages in tenant. |
 
 ### Users
 
 | **Change type** | **Version** | **Description**                          |
 | :-------------- | :---------- | :--------------------------------------- |
-| Addition | v1.0 | Added the [user: reprocessLicenseAssignment API](/graph/api/user-reprocesslicenseassignment.md), which can be used to reprocess all group-based license assignments for the [user](/graph/api/resources/user.md?view=graph-rest-1.0). |
+| Addition | v1.0 | Added the [user: reprocessLicenseAssignment API](/graph/api/user-reprocesslicenseassignment), which can be used to reprocess all group-based license assignments for the [user](/graph/api/resources/user?view=graph-rest-1.0). |
 | Addition | v1.0 | Added the **identities** property to the [user](/graph/api/resources/user?view=graph-rest-1.0) resource. This property represents the set of identities (like local accounts and social accounts) that this user can use to sign in with.|
 
 ## January 2020

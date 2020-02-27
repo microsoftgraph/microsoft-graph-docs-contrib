@@ -1,17 +1,17 @@
 ---
-title: "openShiftChangeRequest: approve"
-description: "Approve an openshift request."
+title: "swapShiftsChangeRequest: decline"
+description: "Decline a swap shift request."
 localization_priority: Normal
 author: "akumar39"
 ms.prod: "microsoft-teams"
 doc_type: "apiPageType"
 ---
 
-# openShiftChangeRequest: approve
+# swapShiftsChangeRequest: decline
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Approve an [openshiftchangerequest](../resources/openshiftchangerequest.md) object.
+Decline a [swapShiftsChangeRequest](../resources/swapshiftschangerequest.md) object.
 
 ## Permissions
 
@@ -28,7 +28,7 @@ One of the following permissions is required to call this API. To learn more, in
 <!-- { "blockType": "ignored" } -->
 
 ```http
-POST /teams/{id}/schedule/openShiftsChangeRequests/{openShiftChangeRequestId}/approve
+POST /teams/{id}/schedule/swapShiftsChangeRequests/{swapShiftChangeRequestId}/decline
 ```
 
 ## Request headers
@@ -44,7 +44,7 @@ In the request body, provide a JSON object with the following parameters.
 
 | Parameter    | Type        | Description |
 |:-------------|:------------|:------------|
-|message|String|A custom approval message.|
+|message|String|A custom decline message.|
 
 ## Response
 
@@ -57,19 +57,35 @@ The following example shows how to call this API.
 ### Request
 
 The following is an example of a request.
+
+# [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
-  "name": "openshiftchangerequest_approve"
+  "name": "swapshiftchangerequest_decline"
 }-->
 
 ```http
-POST https://graph.microsoft.com/beta/teams/{id}/schedule/openShiftsChangeRequests/{openShiftChangeRequestId}/approve
+POST https://graph.microsoft.com/beta/teams/{id}/schedule/swapShiftsChangeRequests/{swapShiftChangeRequestId}/decline
 Content-type: application/json
 
 {
   "message": "message-value"
 }
 ```
+# [C#](#tab/csharp)
+[!INCLUDE [sample-code](../includes/snippets/csharp/swapshiftchangerequest-decline-csharp-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [JavaScript](#tab/javascript)
+[!INCLUDE [sample-code](../includes/snippets/javascript/swapshiftchangerequest-decline-javascript-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Objective-C](#tab/objc)
+[!INCLUDE [sample-code](../includes/snippets/objc/swapshiftchangerequest-decline-objc-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+---
+
 
 ### Response
 
@@ -81,14 +97,14 @@ The following is an example of the response.
 } -->
 
 ```http
-HTTP/1.1 200 OK
+HTTP/1.1 204 NO CONTENT
 ```
 
 <!-- uuid: 16cd6b66-4b1a-43a1-adaf-3a886856ed98
 2019-02-04 14:57:30 UTC -->
 <!-- {
   "type": "#page.annotation",
-  "description": "openShiftChangeRequest: approve",
+  "description": "swapShiftChangeRequest: decline",
   "keywords": "",
   "section": "documentation",
   "tocPath": ""
