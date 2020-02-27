@@ -1,172 +1,118 @@
-### YamlMime:Landing
+### YamlMime:Hub
 
 title: Microsoft Graph documentation
-summary: Microsoft Graph provides a unified programmability model that you can use to build apps for organizations and consumers that interact with the data of millions of users. You can use the Microsoft Graph REST APIs to access data in Azure Active Directory, Office 365 services, Enterprise Mobility and Security services, Windows 10 services, Dynamics 365, and more. Explore our documentation to learn more about how to use Microsoft Graph APIs.
-
-metadata: 
+summary: Learn how you can use Microsoft Graph to build apps for organizations and consumers that interact with the data of millions of users.
+brand: m365
+metadata:
   title: Microsoft Graph documentation
-  description: Learn how you can use Microsoft Graph to build apps for organizations and consumers that interact with the data of millions of users.
+  description: Learn how you can use Microsoft Graph to build apps for organizations and consumers that interact with the data of millions of users.s core directory services, application access management, and identity protection into a single solution.
+  ms.topic: hub-page
   author: CelesteDG
-  manager: mtillman
-  ms.topic: landing-page
-  ms.date: 02/26/2020
   ms.author: celested
+  ms.date: 02/26/2020
 
-landingContent:
-  - title: Get started
-    linkLists:
-      - linkListType: overview
-        links:
-          - text: What is Microsoft Graph?
-            url: /graph/overview
-          - text: Services in Microsoft Graph
-            url: /graph/overview-major-services
-      - linkListType: video
-        links:
-          - text: Getting started with Microsoft Graph
-            url: https://www.youtube.com/watch?v=PI9NO5rayiY&feature=youtu.be
-        links:
-          - text: Video series - Everything you need to know about Microsoft Graph APIs
-            url: https://developer.microsoft.com/en-us/graph/gallery/?filterBy=Videos
-      - linkListType: learn
-        links:
-          - text: Build your skills with Microsoft Graph training modules
-            url: https://docs.microsoft.com/en-us/learn/browse/?roles=developer&products=ms-graph
-  - title: Build an app with Graph and .NET
-    linkLists:
-      - linkListType: quickstart
-        links:
-          - text: Build a simple app that connects to Office 365
-            url: https://developer.microsoft.com/graph/quick-start?platform=option-dotnet
-      - linkListType: tutorial
-        links:
-          - text: Build ASP.NET MVC apps with Microsoft Graph
-            url: https://docs.microsoft.com/en-us/graph/tutorials/aspnet
-      - linkListType: download
-        links:
-          - text: Download the SDK
-            url: https://www.nuget.org/packages/Microsoft.Graph
-  - title: Build an app with Graph and Android
-    linkLists:
-      - linkListType: quickstart
-        links:
-          - text: Build a simple app that connects to Office 365
-            url: https://developer.microsoft.com/graph/quick-start?platform=option-android
-      - linkListType: tutorial
-        links:
-          - text: Build Android apps
-            url: https://docs.microsoft.com/en-us/graph/tutorials/android
-      - linkListType: download
-        links:
-          - text: Download the SDK for Android
-            url: https://github.com/microsoftgraph/msgraph-sdk-android
-  - title: Build an app with Graph and Angular
-    linkLists:
-      - linkListType: quickstart
-        links:
-          - text: Build a simple app that connects to Office 365
-            url: https://developer.microsoft.com/graph/quick-start?platform=option-angular
-      - linkListType: tutorial
-        links:
-          - text: Build Angular single-page apps
-            url: https://docs.microsoft.com/en-us/graph/tutorials/angular
-      - linkListType: download
-        links:
-          - text: Download the JavaScript client library
-            url: https://github.com/microsoftgraph/msgraph-sdk-javascript
-  - title: Build an app with Graph and iOS
-    linkLists:
-      - linkListType: quickstart
-        links:
-          - text: Build a simple app that connects to Office 365
-            url: https://developer.microsoft.com/graph/quick-start?platform=option-ios-swift
-      - linkListType: download
-        links:
-          - text: Download the SDK for Objective-C
-            url: https://github.com/microsoftgraph/msgraph-sdk-objc
-  - title: Build an app with Graph and Java
-    linkLists:
-      - linkListType: download
-        links:
-          - text: Download the SDK for Java
-            url: https://github.com/microsoftgraph/msgraph-sdk-java
-  - title: Build an app with Graph and Node.js
-    linkLists:
-      - linkListType: quickstart
-        links:
-          - text: Build a simple app that connects to Office 365
-            url: https://developer.microsoft.com/graph/quick-start?platform=option-node
-      - linkListType: tutorial
-        links:
-          - text: Build Node.js Express apps
-            url: https://docs.microsoft.com/en-us/graph/tutorials/node
-      - linkListType: download
-        links:
-          - text: Download the JavaScript client library
-            url: https://github.com/microsoftgraph/msgraph-sdk-javascript
-  - title: Build an app with Graph and PHP
-    linkLists:
-      - linkListType: quickstart
-        links:
-          - text: Build a simple app that connects to Office 365
-            url: https://developer.microsoft.com/graph/quick-start?platform=option-php
-      - linkListType: tutorial
-        links:
-          - text: Build PHP apps
-            url: https://docs.microsoft.com/en-us/graph/tutorials/php
-      - linkListType: download
-        links:
-          - text: Download the SDK for PHP
-            url: https://github.com/microsoftgraph/msgraph-sdk-php
-  - title: Build an app with Graph and Python
-    linkLists:
-      - linkListType: quickstart
-        links:
-          - text: Build a simple app that connects to Office 365
-            url: https://developer.microsoft.com/graph/quick-start?platform=option-Python
-      - linkListType: tutorial
-        links:
-          - text: Build Python Django apps
-            url: https://docs.microsoft.com/en-us/graph/tutorials/python
-  - title: Build an app with Graph and Ruby
-    linkLists:
-      - linkListType: quickstart
-        links:
-          - text: Build a simple app that connects to Office 365
-            url: https://developer.microsoft.com/graph/quick-start?platform=option-ruby
-      - linkListType: tutorial
-        links:
-          - text: Build Ruby on Rails apps
-            url: https://docs.microsoft.com/en-us/graph/tutorials/ruby
-      - linkListType: download
-        links:
-          - text: Download the SDK for Ruby
-            url: https://github.com/microsoftgraph/msgraph-sdk-ruby
-  - title: Build an app with Graph and UWP
-    linkLists:
-      - linkListType: quickstart
-        links:
-          - text: Build a simple app that connects to Office 365
-            url: https://developer.microsoft.com/graph/quick-start?platform=option-windowsuniversal
-      - linkListType: tutorial
-        links:
-          - text: Build UWP apps
-            url: https://docs.microsoft.com/en-us/graph/tutorials/uwp
-      - linkListType: download
-        links:
-          - text: Download the SDK
-            url: https://www.nuget.org/packages/Microsoft.Graph
-  - title: Build an app with Graph and Xamarin
-    linkLists:
-      - linkListType: quickstart
-        links:
-          - text: Build a simple app that connects to Office 365
-            url: https://developer.microsoft.com/graph/quick-start?platform=option-xamarin
-      - linkListType: tutorial
-        links:
-          - text: Build Xamarin apps
-            url: https://docs.microsoft.com/en-us/graph/tutorials/xamarin
-      - linkListType: download
-        links:
-          - text: Download the SDK
-            url: https://www.nuget.org/packages/Microsoft.Graph
+highlightedContent:
+# itemType: architecture | concept | deploy | download | get-started | how-to-guide | learn | overview | quickstart | reference | tutorial | video | whats-new
+  items:
+    - title: Overview of Microsoft Graph
+      itemType: overview
+      url: /graph/overview
+    - title: Services and features
+      itemType: concept
+      url: /graph/overview-major-services
+    - title: Graph Explorer
+      itemType: deploy
+      url: https://developer.microsoft.com/graph/graph-explorer/
+    - title: Use the API
+      itemType: overview
+      url: /graph/use-the-api
+    - title: Microsoft Graph REST API v1.0
+      itemType: reference
+      url: /graph/api/overview?toc=.%2Fref%2Ftoc.json&view=graph-rest-1.0
+    - title: Microsoft Graph REST API Beta
+      itemType: reference
+      url: /graph/api/overview?toc=.%2Fref%2Ftoc.json&view=graph-rest-beta
+
+conceptualContent:
+# itemType: architecture | concept | deploy | download | get-started | how-to-guide | learn | overview | quickstart | reference | tutorial | video | whats-new
+  items:
+    - title: Explore
+      links:
+        - url: /graph/overview-major-services
+          itemType: overview
+          text: Services in Microsoft Graph
+        - url: /graph/whats-new-overview
+          itemType: overview
+          text: What's new in Microsoft Graph
+        - url: /graph/users-you-can-reach
+          itemType: concept
+          text: Users you can reach
+        - url: /graph/data-connect-overview
+          itemType: concept
+          text: Microsoft Graph data connect
+        - url: https://developer.microsoft.com/graph/quick-start
+          itemType: quickstart
+          text: Quickstarts
+        - url: /graph/tutorials
+          itemType: tutorial
+          text: Tutorials
+      footerLink:
+        url: /graph/versioning-and-support
+        text: See more
+    - title: Learn
+      links:
+        - url: /graph/azuread-users-concept-overview
+          itemType: overview
+          text: Users
+        - url: /graph/office365-groups-concept-overview
+          itemType: overview
+          text: Groups
+        - url: /graph/outlook-calendar-concept-overview
+          itemType: overview
+          text: Calendar
+        - url: /graph/intune-concept-overview
+          itemType: overview
+          text: Devices and apps
+        - url: /graph/azuread-identity-access-management-concept-overview
+          itemType: overview
+          text: Identity and access
+        - url: /graph/outlook-mail-concept-overview
+          itemType: overview
+          text: Mail
+      footerLink:
+        url: /graph/data-connect-concept-overview
+        text: See more
+    - title: Develop
+      links:
+        - url: /graph/auth/auth-concepts
+          itemType: concept
+          text: Get auth tokens
+        - url: https://docs.microsoft.com/en-us/graph/use-the-api
+          itemType: overview
+          text: Use the API
+        - url: /graph/migrate-azure-ad-graph-overview
+          itemType: overview
+          text: Migrate
+        - url: /graph/sdks/sdks-overview
+          itemType: overview
+          text: Use the SDKs
+        - url: /graph/toolkit/overview
+          itemType: overview
+          text: Use the toolkit (preview)
+
+additionalContent:
+  sections:
+    - title: Resources
+      summary: Check these resources to stay up-to-date with Microsoft Graph.
+      items:
+        - title: Changelog
+          summary: Find out what’s changed in the v1.0 and beta versions of the Microsoft Graph API.
+          url: /graph/changelog
+        - title: Microsoft Graph blog
+          summary: Read the blog to get the latest news about new APIs, breaking changes, and more.
+          url: https://developer.microsoft.com/graph/blogs/
+        - title: Known issues
+          summary: Learn about known issues with Microsoft Graph.
+          url: /graph/known-issues
+
+  footer: "[Twitter](https://twitter.com/microsoftgraph) - [Dev Center](https://developer.microsoft.com/graph) - [Product requests, content suggestions, or questions](https://developer.microsoft.com/graph/support) - [API community call](https://aka.ms/microsoftgraphcall)"
