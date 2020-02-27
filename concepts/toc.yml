@@ -4,7 +4,7 @@ metadata:
   experiment_id: "b8938daf-1bcb-4f"
 items:
   - name: Microsoft Graph documentation
-    href: landing.yml
+    href: index.yml
   - name: Explore
     expanded: true
     items:
