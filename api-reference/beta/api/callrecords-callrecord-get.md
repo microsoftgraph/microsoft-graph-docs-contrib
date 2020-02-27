@@ -93,6 +93,7 @@ Content-type: application/json
     "endDateTime": "2020-02-25T18:52:46.7640013Z",
     "id": "e523d2ed-2966-4b6b-925b-754a88034cc5",
     "organizer": {
+        "@odata.type": "#microsoft.graph.identitySet",
         "user": {
             "id": "821809f5-0000-0000-0000-3b5136c0e777",
             "displayName": "Abbie Wilkins",
@@ -101,6 +102,7 @@ Content-type: application/json
     },
     "participants": [
         {
+            "@odata.type": "#microsoft.graph.identitySet",
             "user": {
                 "id": "821809f5-0000-0000-0000-3b5136c0e777",
                 "displayName": "Abbie Wilkins",
@@ -108,6 +110,7 @@ Content-type: application/json
             }
         },
         {
+            "@odata.type": "#microsoft.graph.identitySet",
             "user": {
                 "id": "f69e2c00-0000-0000-0000-185e5f5f5d8a",
                 "displayName": "Owen Franklin",
@@ -160,6 +163,7 @@ Content-type: application/json
     "endDateTime": "2020-02-25T18:52:46.7640013Z",
     "id": "e523d2ed-2966-4b6b-925b-754a88034cc5",
     "organizer": {
+        "@odata.type": "#microsoft.graph.identitySet",
         "user": {
             "id": "821809f5-0000-0000-0000-3b5136c0e777",
             "displayName": "Abbie Wilkins",
@@ -168,6 +172,7 @@ Content-type: application/json
     },
     "participants": [
         {
+            "@odata.type": "#microsoft.graph.identitySet",
             "user": {
                 "id": "821809f5-0000-0000-0000-3b5136c0e777",
                 "displayName": "Abbie Wilkins",
@@ -175,6 +180,7 @@ Content-type: application/json
             }
         },
         {
+            "@odata.type": "#microsoft.graph.identitySet",
             "user": {
                 "id": "f69e2c00-0000-0000-0000-185e5f5f5d8a",
                 "displayName": "Owen Franklin",
@@ -200,6 +206,7 @@ Content-type: application/json
                     "productFamily": "skypeForBusiness"
                 },
                 "identity": {
+                    "@odata.type": "#microsoft.graph.identitySet",
                     "user": {
                         "id": "821809f5-0000-0000-0000-3b5136c0e777",
                         "displayName": "Abbie Wilkins",
@@ -216,6 +223,7 @@ Content-type: application/json
                     "productFamily": "skypeForBusiness"
                 },
                 "identity": {
+                    "@odata.type": "#microsoft.graph.identitySet",
                     "user": {
                         "id": "f69e2c00-0000-0000-0000-185e5f5f5d8a",
                         "displayName": "Owen Franklin",
@@ -251,6 +259,7 @@ Content-type: application/json
                             "productFamily": "skypeForBusiness"
                         },
                         "identity": {
+                            "@odata.type": "#microsoft.graph.identitySet",
                             "user": {
                                 "id": "821809f5-0000-0000-0000-3b5136c0e777",
                                 "displayName": "Abbie Wilkins",
@@ -267,6 +276,7 @@ Content-type: application/json
                             "productFamily": "skypeForBusiness"
                         },
                         "identity": {
+                            "@odata.type": "#microsoft.graph.identitySet",
                             "user": {
                                 "id": "f69e2c00-0000-0000-0000-185e5f5f5d8a",
                                 "displayName": "Owen Franklin",
