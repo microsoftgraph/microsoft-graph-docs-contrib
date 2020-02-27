@@ -200,12 +200,10 @@ Content-type: application/json
                     "productFamily": "skypeForBusiness"
                 },
                 "identity": {
-                    {
-                        "user": {
-                            "id": "821809f5-0000-0000-0000-3b5136c0e777",
-                            "displayName": "Abbie Wilkins",
-                            "tenantId": "dc368399-474c-4d40-900c-6265431fd81f"
-                        }
+                    "user": {
+                        "id": "821809f5-0000-0000-0000-3b5136c0e777",
+                        "displayName": "Abbie Wilkins",
+                        "tenantId": "dc368399-474c-4d40-900c-6265431fd81f"
                     }
                 }
             },
