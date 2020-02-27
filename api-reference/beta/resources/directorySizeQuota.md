@@ -3,8 +3,8 @@ title: "directorySizeQuota resource type"
 description: "Represents a company's used and total directory quota."
 localization_priority: Normal
 doc_type: resourcePageType
-ms.prod: ""
-author: ""
+ms.prod: "microsoft-identity-platform"
+author: "davidmu1"
 ---
 
 # directorySizeQuota resource type
