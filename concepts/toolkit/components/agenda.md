@@ -11,9 +11,9 @@ The `mgt-agenda` web component represents events in a user or group calendar. By
 
 ## Example
 
-<iframe src="https://mgt.dev/iframe.html?id=mgt-agenda--simple&source=docs" height="500"></iframe>
+<iframe src="https://mgt.dev/iframe.html?id=components-mgt-agenda--simple&source=docs" height="500"></iframe>
 
-[Open this example in mgt.dev](https://mgt.dev/?path=/story/mgt-agenda--simple)
+[Open this example in mgt.dev](https://mgt.dev/?path=/story/components-mgt-agenda--simple&source=docs)
 
 ## Properties
 

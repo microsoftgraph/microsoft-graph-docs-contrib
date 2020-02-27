@@ -13,9 +13,9 @@ This component uses multiple [mgt-person](./person.md) controls, but it can be b
 
 ## Example
 
-<iframe src="https://mgt.dev/iframe.html?id=mgt-people--people&source=docs" height="350"></iframe>
+<iframe src="https://mgt.dev/iframe.html?id=components-mgt-people--people&source=docs" height="350"></iframe>
 
-[Open this example in mgt.dev](https://mgt.dev/?path=/story/mgt-people--people)
+[Open this example in mgt.dev](https://mgt.dev/?path=/story/components-mgt-people--people&source=docs)
 
 ## Properties
 

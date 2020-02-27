@@ -13,9 +13,9 @@ For more information about the `mgt-person` component, see [mgt-person docs](./p
 
 ## Example
   
-<iframe src="https://mgt.dev/iframe.html?id=mgt-person-card--person-card&source=docs" height="400"></iframe>
+<iframe src="https://mgt.dev/iframe.html?id=components-mgt-person-card--person-card&source=docs" height="400"></iframe>
 
-[Open this example in mgt.dev](https://mgt.dev/?path=/story/mgt-person-card--person-card)
+[Open this example in mgt.dev](https://mgt.dev/?path=/story/components-mgt-person-card--person-card&source=docs)
 
 ## Properties
 
