@@ -111,7 +111,7 @@ additionalContent:
         - title: Microsoft Graph blog
           summary: Read the blog to get the latest news about new APIs, breaking changes, and more.
           url: https://developer.microsoft.com/graph/blogs/
-        - title: Microsoft Graph monthly community call
+        - title: Monthly community calls
           summary: Join the monthly calls or catch up on previous recordings.
           url: https://www.youtube.com/playlist?list=PLWZJrkeLOrbabneRhISU-N7uK4PvVy-jV
         - title: Videos and podcasts
