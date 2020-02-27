@@ -11,7 +11,7 @@ doc_type: "resourcePageType"
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-The failureInfo type. Represents information about why a call or portion of a call failed.
+Represents information about why a call or portion of a call failed.
 
 Namespace: microsoft.graph.callRecords
 

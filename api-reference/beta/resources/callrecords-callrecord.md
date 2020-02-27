@@ -11,7 +11,7 @@ doc_type: "resourcePageType"
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-The callRecord type. Represents a single peer-to-peer call or a group call between multiple participants, sometimes referred to as an online meeting.
+Represents a single peer-to-peer call or a group call between multiple participants, sometimes referred to as an online meeting.
 
 Namespace: microsoft.graph.callRecords
 
@@ -57,16 +57,39 @@ The following is a JSON representation of the resource.
 
 ```json
 {
-  "endDateTime": "String (timestamp)",
-  "id": "String (identifier)",
-  "joinWebUrl": "String",
-  "lastModifiedDateTime": "String (timestamp)",
-  "modalities": ["string"],
-  "organizer": {"@odata.type": "microsoft.graph.identitySet"},
-  "participants": [{"@odata.type": "microsoft.graph.identitySet"}],
-  "startDateTime": "String (timestamp)",
-  "type": "string",
-  "version": 1024
+    "id": "e523d2ed-2966-4b6b-925b-754a88034cc5",
+    "version": 1,
+    "type": "peerToPeer",
+    "modalities": [
+        "audio"
+    ],
+    "lastModifiedDateTime": "2020-02-25T19:00:24.582757Z",
+    "startDateTime": "2020-02-25T18:52:21.2169889Z",
+    "endDateTime": "2020-02-25T18:52:46.7640013Z",
+    "organizer": {
+        "user": {
+            "id": "821809f5-0000-0000-0000-3b5136c0e777",
+            "displayName": "Abbie Wilkins",
+            "tenantId": "dc368399-474c-4d40-900c-6265431fd81f"
+        }
+    },
+    "participants": [
+        {
+            "user": {
+                "id": "821809f5-0000-0000-0000-3b5136c0e777",
+                "displayName": "Abbie Wilkins",
+                "tenantId": "dc368399-474c-4d40-900c-6265431fd81f"
+            }
+        },
+        {
+            "user": {
+                "id": "f69e2c00-0000-0000-0000-185e5f5f5d8a",
+                "displayName": "Owen Franklin",
+                "tenantId": "dc368399-474c-4d40-900c-6265431fd81f"
+            }
+        }
+    ],
+    "joinWebUrl": null
 }
 ```
 

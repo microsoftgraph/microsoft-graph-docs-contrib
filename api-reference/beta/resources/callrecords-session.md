@@ -11,7 +11,7 @@ doc_type: "resourcePageType"
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-The session type. Represents a User-User communication or a User-Meeting communication
+Represents a User-User communication or a User-Meeting communication
 in the case of a Conference call.
 
 Namespace: microsoft.graph.callRecords

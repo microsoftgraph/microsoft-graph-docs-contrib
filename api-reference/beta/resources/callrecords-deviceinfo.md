@@ -11,7 +11,7 @@ doc_type: "resourcePageType"
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-The deviceInfo type. Represents information about a device (microphone, speaker, camera, etc.) used in a call.
+Represents information about a device (microphone, speaker, camera, etc.) used in a call.
 
 Namespace: microsoft.graph.callRecords
 

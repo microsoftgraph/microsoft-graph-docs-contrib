@@ -11,7 +11,7 @@ doc_type: "resourcePageType"
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-The endpoint type. Represents an endpoint in a call. The endpoint could be a user's device, a meeting,
+Represents an endpoint in a call. The endpoint could be a user's device, a meeting,
 an application/bot, etc. The [participantEndpoint](callrecords-participantendpoint.md) and
 [serviceEndpoint](callrecords-serviceendpoint.md) types inherit from this type.
 

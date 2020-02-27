@@ -11,14 +11,16 @@ doc_type: "resourcePageType"
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-The serviceEndpoint type. Represents a service endpoint in a call. The endpoint represents a
+Represents a service endpoint in a call. The endpoint represents a
 calling media server or other service entity. Inherits from [endpoint](callrecords-endpoint.md) type.
 
 Namespace: microsoft.graph.callRecords
 
 ## Properties
 
-None
+| Property     | Type        | Description |
+|:-------------|:------------|:------------|
+|userAgent|[microsoft.graph.callRecords.userAgent](callrecords-useragent.md)|User-agent reported by this endpoint.|
 
 ## JSON representation
 

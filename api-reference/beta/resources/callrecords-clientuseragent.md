@@ -11,7 +11,7 @@ doc_type: "resourcePageType"
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-The clientUserAgent type. Represents a client user agent of an endpoint in a call. Inherits from
+Represents a client user agent of an endpoint in a call. Inherits from
 the [userAgent](callrecords-useragent.md) type.
 
 Namespace: microsoft.graph.callRecords
@@ -20,6 +20,8 @@ Namespace: microsoft.graph.callRecords
 
 | Property     | Type        | Description |
 |:-------------|:------------|:------------|
+|applicationVersion|String|Identifies the version of application software used by this endpoint.|
+|headerValue|String|User-agent header value reported by this endpoint.|
 |platform|String|Identifies the platform used by this endpoint. Possible values are: `unknown`, `windows`, `macOS`, `iOS`, `android`, `web`, `ipPhone`, `roomSystem`, `surfaceHub`, `holoLens`, `unknownFutureValue`.|
 |productFamily|String|Identifies the family of application software used by this endpoint. Possible values are: `unknown`, `teams`, `skypeForBusiness`, `lync`, `unknownFutureValue`.|
 
@@ -38,10 +40,10 @@ The following is a JSON representation of the resource.
 
 ```json
 {
-  "applicationVersion": "String",
-  "headerValue": "String",
-  "platform": "String",
-  "productFamily": "String"
+  "headerValue": "RTCC/7.0.0.0 UCWA/7.0.0.0 AndroidLync/6.25.0.27 (SM-G930U Android 8.0.0)",
+  "applicationVersion": "6.25.0.27",
+  "platform": "android",
+  "productFamily": "skypeForBusiness"
 }
 ```
 

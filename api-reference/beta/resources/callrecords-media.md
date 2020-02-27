@@ -11,7 +11,7 @@ doc_type: "resourcePageType"
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-The media type. Represents the media (audio, video, video-based screen-sharing, etc.) used in a call.
+Represents the media (audio, video, video-based screen-sharing, etc.) used in a call.
 
 Namespace: microsoft.graph.callRecords
 

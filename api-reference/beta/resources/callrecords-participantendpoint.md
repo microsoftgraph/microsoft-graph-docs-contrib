@@ -11,7 +11,7 @@ doc_type: "resourcePageType"
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-The participantEndpoint type. Represents an participant endpoint in a call. The endpoint represents
+Represents an participant endpoint in a call. The endpoint represents
 a user or user-like entity. Inherits from [endpoint](callrecords-endpoint.md) type.
 
 Namespace: microsoft.graph.callRecords
@@ -20,6 +20,7 @@ Namespace: microsoft.graph.callRecords
 
 | Property     | Type        | Description |
 |:-------------|:------------|:------------|
+|userAgent|[microsoft.graph.callRecords.userAgent](callrecords-useragent.md)|User-agent reported by this endpoint.|
 |feedback|[microsoft.graph.callRecords.userFeedback](callrecords-userfeedback.md)|The feedback provided by the user of this endpoint about the quality of the session.|
 |identity|[identitySet](identityset.md)|Identity associated with the endpoint.|
 

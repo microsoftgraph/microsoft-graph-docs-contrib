@@ -11,7 +11,7 @@ doc_type: "resourcePageType"
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-The userFeedback type. Represents the feedback provided by the user an endpoint about the quality of the session.
+Represents the feedback provided by the user an endpoint about the quality of the session.
 
 Namespace: microsoft.graph.callRecords
 
@@ -38,9 +38,18 @@ The following is a JSON representation of the resource.
 
 ```json
 {
-  "rating": "String",
-  "text": "String",
-  "tokens": {"@odata.type": "microsoft.graph.callRecords.feedbackTokenSet"}
+    "rating": "poor",
+    "text": "I could hear a lot of noise in the background",
+    "tokens": {
+        "NoSound": false,
+        "OtherNoSound": false,
+        "Echo": false,
+        "Noisy": true,
+        "LowVolume": false,
+        "Stopped": false,
+        "DistortedSound": false,
+        "Interruptions": false
+    }
 }
 ```
 

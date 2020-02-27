@@ -11,7 +11,7 @@ doc_type: "resourcePageType"
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-The networkInfo type. Represents information about the network used in a call.
+Represents information about the network used in a call.
 
 Namespace: microsoft.graph.callRecords
 

@@ -11,7 +11,7 @@ doc_type: "resourcePageType"
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-The segment type. Represents a portion of a User-User communication or a User-Meeting communication
+Represents a portion of a User-User communication or a User-Meeting communication
 in the case of a Conference call. A typical VOIP call will have one segment per session. In certain
 scenarios, such as PSTN calls, there will be multiple segments per session due to additional
 server-to-server communication required to connect the call.

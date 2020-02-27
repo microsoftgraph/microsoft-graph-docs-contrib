@@ -11,7 +11,7 @@ doc_type: "resourcePageType"
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-The serviceUserAgent type. Represents a service user agent of an endpoint in a call. Inherits from
+Represents a service user agent of an endpoint in a call. Inherits from
 [userAgent](callrecords-useragent.md) type.
 
 Namespace: microsoft.graph.callRecords
@@ -20,6 +20,8 @@ Namespace: microsoft.graph.callRecords
 
 | Property     | Type        | Description |
 |:-------------|:------------|:------------|
+|applicationVersion|String|Identifies the version of application software used by this endpoint.|
+|headerValue|String|User-agent header value reported by this endpoint.|
 |role|String|Identifies the role of the service used by this endpoint. Possible values are: `unknown`, `customBot`, `skypeForBusinessMicrosoftTeamsGateway`, `skypeForBusinessAudioVideoMcu`, `skypeForBusinessApplicationSharingMcu`, `skypeForBusinessCallQueues`, `skypeForBusinessAutoAttendant`, `mediationServer`, `mediationServerCloudConnectorEdition`, `exchangeUnifiedMessagingService`, `mediaController`, `conferencingAnnouncementService`, `conferencingAttendant`, `audioTeleconferencerController`, `skypeForBusinessUnifiedCommunicationApplicationPlatform`, `responseGroupServiceAnnouncementService`, `gateway`, `skypeTranslator`, `skypeForBusinessAttendant`, `responseGroupService`, `unknownFutureValue`.|
 
 ## JSON representation
@@ -37,9 +39,9 @@ The following is a JSON representation of the resource.
 
 ```json
 {
-  "applicationVersion": "String",
-  "headerValue": "String",
-  "role": "String"
+  "headerValue": "RTCC/7.0.0.0 MediationServer",
+  "applicationVersion": null,
+  "role": "mediationServer"
 }
 ```
 

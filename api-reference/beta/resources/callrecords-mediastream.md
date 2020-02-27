@@ -11,7 +11,7 @@ doc_type: "resourcePageType"
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-The mediaStream type.
+Represents information about a media stream between two endpoints in a call.
 
 Namespace: microsoft.graph.callRecords
 
