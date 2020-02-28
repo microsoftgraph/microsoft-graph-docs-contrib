@@ -9,11 +9,11 @@ doc_type: "resourcePageType"
 
 # mediaStream resource type
 
+Namespace: microsoft.graph.callRecords
+
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 Represents information about a media stream between two endpoints in a call.
-
-Namespace: microsoft.graph.callRecords
 
 ## Properties
 

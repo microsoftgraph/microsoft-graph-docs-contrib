@@ -9,11 +9,11 @@ doc_type: "resourcePageType"
 
 # networkInfo resource type
 
+Namespace: microsoft.graph.callRecords
+
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 Represents information about the network used in a call.
-
-Namespace: microsoft.graph.callRecords
 
 ## Properties
 

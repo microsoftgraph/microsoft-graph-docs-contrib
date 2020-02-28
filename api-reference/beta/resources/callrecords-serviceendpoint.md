@@ -9,12 +9,12 @@ doc_type: "resourcePageType"
 
 # serviceEndpoint resource type
 
+Namespace: microsoft.graph.callRecords
+
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 Represents a service endpoint in a call. The endpoint represents a
 calling media server or other service entity. Inherits from [endpoint](callrecords-endpoint.md) type.
-
-Namespace: microsoft.graph.callRecords
 
 ## Properties
 

@@ -9,11 +9,11 @@ doc_type: "resourcePageType"
 
 # failureInfo resource type
 
+Namespace: microsoft.graph.callRecords
+
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 Represents information about why a call or portion of a call failed.
-
-Namespace: microsoft.graph.callRecords
 
 ## Properties
 

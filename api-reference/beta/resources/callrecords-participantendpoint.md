@@ -9,12 +9,12 @@ doc_type: "resourcePageType"
 
 # participantEndpoint resource type
 
+Namespace: microsoft.graph.callRecords
+
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 Represents an participant endpoint in a call. The endpoint represents
 a user or user-like entity. Inherits from [endpoint](callrecords-endpoint.md) type.
-
-Namespace: microsoft.graph.callRecords
 
 ## Properties
 

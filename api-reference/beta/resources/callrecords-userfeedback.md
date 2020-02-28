@@ -9,11 +9,11 @@ doc_type: "resourcePageType"
 
 # userFeedback resource type
 
+Namespace: microsoft.graph.callRecords
+
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 Represents the feedback provided by the user an endpoint about the quality of the session.
-
-Namespace: microsoft.graph.callRecords
 
 ## Properties
 

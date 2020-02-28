@@ -9,11 +9,11 @@ doc_type: "apiPageType"
 
 # Get callRecord
 
+Namespace: microsoft.graph.callRecords
+
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 Retrieve the properties and relationships of a [callRecord](../resources/callrecords-callrecord.md) object.
-
-Namespace: microsoft.graph.callRecords
 
 ## Permissions
 

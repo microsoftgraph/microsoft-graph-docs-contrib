@@ -9,12 +9,12 @@ doc_type: "resourcePageType"
 
 # serviceUserAgent resource type
 
+Namespace: microsoft.graph.callRecords
+
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 Represents a service user agent of an endpoint in a call. Inherits from
 [userAgent](callrecords-useragent.md) type.
-
-Namespace: microsoft.graph.callRecords
 
 ## Properties
 

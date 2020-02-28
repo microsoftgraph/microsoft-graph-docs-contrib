@@ -9,11 +9,11 @@ doc_type: "resourcePageType"
 
 # callRecord resource type
 
+Namespace: microsoft.graph.callRecords
+
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 Represents a single peer-to-peer call or a group call between multiple participants, sometimes referred to as an online meeting.
-
-Namespace: microsoft.graph.callRecords
 
 ## Methods
 

@@ -9,12 +9,12 @@ doc_type: "resourcePageType"
 
 # session resource type
 
+Namespace: microsoft.graph.callRecords
+
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 Represents a User-User communication or a User-Meeting communication
 in the case of a Conference call.
-
-Namespace: microsoft.graph.callRecords
 
 ## Methods
 

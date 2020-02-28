@@ -9,11 +9,11 @@ doc_type: "resourcePageType"
 
 # feedbackTokenSet resource type
 
+Namespace: microsoft.graph.callRecords
+
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 This is an _open type_ that represents the set of feedback tokens provided by the user of this endpoint for the Session. This is a set of Boolean properties. The property names should not be relied upon since they may change depending on what tokens are offered to the user.
-
-Namespace: microsoft.graph.callRecords
 
 ## Properties
 

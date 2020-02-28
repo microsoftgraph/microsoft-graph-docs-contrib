@@ -9,11 +9,11 @@ doc_type: "resourcePageType"
 
 # deviceInfo resource type
 
+Namespace: microsoft.graph.callRecords
+
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 Represents information about a device (microphone, speaker, camera, etc.) used in a call.
-
-Namespace: microsoft.graph.callRecords
 
 ## Properties
 
