@@ -100,11 +100,16 @@ Content-type: application/json
   "id": "b2eba9a1-b357-42ee-83a8-336522ed6cbf",
   "accessPackageId": "1b153a13-76da-4d07-9afa-c6c2b1f2e824",
   "displayName": "All Users",
-  "description": "All users can request for access to the directory.",
+  "description": "All users in the directory can request access.",
   "isDenyPolicy": false,
   "canExtend": false,
   "durationInDays": 365,
-  "accessReviewSettings": null
+  "accessReviewSettings": null,
+  "requestorSettings": {
+    "scopeType": "AllExistingDirectorySubjects",
+    "acceptRequests": true,
+    "allowedRequestors": []
+  }
 }
 ```
 
