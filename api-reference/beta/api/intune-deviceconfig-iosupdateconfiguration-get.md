@@ -63,7 +63,7 @@ Here is an example of the response. Note: The response object shown here may be 
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 1526
+Content-Length: 1889
 
 {
   "value": {
@@ -102,11 +102,22 @@ Content-Length: 1526
     "isEnabled": true,
     "activeHoursStart": "12:00:05.5020000",
     "activeHoursEnd": "11:59:00.8990000",
+    "desiredOsVersion": "Desired Os Version value",
     "scheduledInstallDays": [
       "monday"
     ],
     "utcTimeOffsetInMinutes": 6,
-    "enforcedSoftwareUpdateDelayInDays": 1
+    "enforcedSoftwareUpdateDelayInDays": 1,
+    "updateScheduleType": "alwaysUpdate",
+    "customUpdateTimeWindows": [
+      {
+        "@odata.type": "microsoft.graph.customUpdateTimeWindow",
+        "startDay": "monday",
+        "endDay": "monday",
+        "startTime": "12:03:30.2730000",
+        "endTime": "12:03:02.3740000"
+      }
+    ]
   }
 }
 ```

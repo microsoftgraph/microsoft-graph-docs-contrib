@@ -91,8 +91,12 @@ items:
             href: outlook-calendar-online-meetings.md
           - name: Schedule recurring events
             href: outlook-schedule-recurring-events.md
+          - name: Share or delegate calendar (preview)
+            href: outlook-share-or-delegate-calendar.md
           - name: Get shared events
             href: outlook-get-shared-events-calendars.md
+          - name: Create shared events
+            href: outlook-create-event-in-shared-delegated-calendar.md
           - name: Immutable ID
             href: outlook-immutable-id.md
       - name: Cloud communications
@@ -236,6 +240,12 @@ items:
                 href: notifications-integrating-with-android.md
               - name: IOS app integration
                 href: notifications-integrating-with-ios.md
+      - name: People and workplace intelligence
+        items:
+          - name: Overview
+            href: social-intel-concept-overview.md
+          - name: Get information about relevant people
+            href: people-example.md
       - name: Personal contacts
         displayName: Outlook, Outlook contacts, Outlook contact, People
         items:
@@ -286,12 +296,6 @@ items:
       - name: Sites and lists
         href: sharepoint-concept-overview.md
         displayName: SharePoint, OneDrive, OneDrive for Business, OneDrive business, OneDrive personal
-      - name: People and workplace intelligence
-        items:
-          - name: Overview
-            href: social-intel-concept-overview.md
-          - name: Get information about relevant people
-            href: people-example.md
       - name: Tasks and plans
         href: planner-concept-overview.md
         displayName: Planner

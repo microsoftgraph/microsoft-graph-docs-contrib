@@ -12,77 +12,41 @@ See highlights of what's new in Microsoft Graph, and how you can [share your ide
 > [!IMPORTANT]
 > Features, including APIs and tools, in _preview_ status may change without notice, and some may never be promoted to generally available (GA) status. Do not use preview features in production apps.
 
-
-## December 2019: New in preview
-
-### Teamwork
-- [Set up change notifications that include resource data](webhooks-with-resource-data.md) for [chatMessage](/graph/api/resources/chatmessage?view=graph-rest-beta) resources in Microsoft Teams channels and chats.
-- [Subscribe to notifications](/graph/api/resources/subscription?view=graph-rest-beta) for new or modified [channel messages or chat messages](/graph/api/resources/chatmessage?view=graph-rest-beta).
-
-## November 2019: New and generally available
-
-### Groups
-- Use delegated or application permissions, GroupMember.Read.All and GroupMember.ReadWrite.All, to list groups, read basic group properties, read (and update if read/write permission) the membership of the groups the app has access to.
-- Use the application permission, Group.Create, to create groups without a signed-in user.
-- For a specified [group](/graph/api/resources/group?view=graph-rest-1.0), [check for membership](/graph/api/group-checkmemberobjects?view=graph-rest-1.0) in other groups or directory roles.
-
-### Identity and access
-- Register [applications](/graph/api/resources/application?view=graph-rest-1.0) that authenticate with Azure Active Directory (Azure AD). Use delegated [permissions](/graph/permissions-reference#application-resource-permissions), Application.Read.All and Application.ReadWrite.All, or application permission, Application.Read.All, as appropriate.
-- For a specified [device](/graph/api/resources/device?view=graph-rest-1.0), [check for membership](/graph/api/device-checkmemberobjects?view=graph-rest-1.0) in other groups or directory roles.
-
-### Mail
-- Use the **conversationIndex** property to get the position of a message in an Outlook email conversation.
-- Use the delegated permission, Mail.ReadBasic, and application permission, Mail.ReadBasic.All, to get [message](/graph/api/resources/message?view=graph-rest-1.0) or [mail folder](/graph/api/resources/mailfolder?view=graph-rest-1.0) resources, track their changes, and manage [subscriptions](/graph/api/resources/subscription?view=graph-rest-1.0) for change notifications on messages.
-
-### Users
-- [Check for group memberships](/graph/api/user-checkmemberobjects?view=graph-rest-1.0) for a specified [user](/graph/api/resources/user?view=graph-rest-1.0).
-- Use the **creationType** property to find how a user account was created, for example, whether the account was created as a regular school or work account or as an external account, etc.
-
-## November 2019: New in preview
+## February 2020: New and generally available
 
 ### Calendar
-- [Use Outlook to organize or attend meetings online](outlook-calendar-online-meetings.md).
-- [Set properties](/graph/api/place-update?view=graph-rest-beta) for the rich location types of [room](/graph/api/resources/room?view=graph-rest-beta) and [room list](/graph/api/resources/roomlist?view=graph-rest-beta).
+Walk through an example of [creating an event in a shared or delegated calendar](outlook-create-event-in-shared-delegated-calendar.md), and the actions and properties available to the delegate, invitees, and calendar owner during this process.
 
-### Cloud communication
-The [call](/graph/api/resources/call?view=graph-rest-beta) resource type supports the following additional features:
+### Security
+To improve security when subscribing to [change notifications of user data](webhooks.md), [enforce Transport Layer Security (TLS) 1.2](https://docs.microsoft.com/configmgr/core/plan-design/security/enable-tls-1-2) or higher on clients and site servers used in the notification process. The new requirement is rolled out in stages starting February 15 2020. By May 15, 2020, all notification endpoints must meet the new TLS requirement. [Find out the stages of the rollout](https://developer.microsoft.com/graph/blogs/microsoft-graph-subscriptions-deprecating-tls-1-0-and-1-1/) and if necessary, use the new **latestSupportedTlsVersion** property as a temporary workaround to avoid subscription failures, before completing the TLS upgrade.
 
-- The [context of an incoming call](/graph/api/resources/incomingcontext?view=graph-rest-beta)
-- The type of endpoint for a participant, such as voice mail or Skype for Business
-- The ability to [update](/graph/api/call-updaterecordingstatus?view=graph-rest-beta) the [recording information](/graph/api/resources/recordinginfo?view=graph-rest-beta) for a [participant](/graph/api/resources/participant?view=graph-rest-beta)
+## February 2020: New in preview
 
-### Devices and apps
-Intune [November](changelog.md#november-2019) updates
+### Calendar
+See [tasks supported by preview APIs that manage calendar sharing and delegation](outlook-share-or-delegate-calendar.md).
 
-### Education
-Administrators can enable class-wide settings through the **classSettings** property of the [team](/graph/api/resources/team?view=graph-rest-beta) associated with the [class](/graph/api/resources/educationclass?view=graph-rest-beta). Currently, there is a setting to notify guardians about weekly assignments.
 
-### Identity and access
-- Use the application permission, Policy.Read.All, to read all your organization's conditional access policies and named locations, without a signed-in user present.
-- Allow a [conditional access policy](/graph/api/resources/conditionalaccesspolicy?view=graph-rest-beta) to be in a report-only state, `enabledForReportingButNotEnforced`.
-- Use the delegated permission, ThreatAssessment.ReadWrite.All, or application permission, ThreatAssessment.Read.All, to read (or create, if read/write permission) requests to assess threats in an organization.
+## January 2020: New and generally available
 
-### Mail
-Use the delegated permission, Mail.ReadBasic, and application permission, Mail.ReadBasic.All, to manage [subscriptions](/graph/api/resources/subscription?view=graph-rest-beta) for change notifications on the [message](/graph/api/resources/message?view=graph-rest-beta) resource.
-
-### Notifications
-Use the new light-weight notifications [web SDK](https://aka.ms/GNSDK) in place of the [Project Rome SDK](https://github.com/Microsoft/project-rome), to take advantage of an improved authentication model and support for web apps using web push. 
-
-### People and workplace intelligence
-Debut of the [profile](/graph/api/resources/profile?view=graph-rest-beta) resource which is a rich representation of the next generation of people entities in Microsoft services. This resource relates to common and practical people attributes, including information for any meaningful dates such as [anniversaries](/graph/api/resources/personanniversary?view=graph-rest-beta), [education](/graph/api/resources/educationalactivity?view=graph-rest-beta), [employment positions](/graph/api/resources/workposition?view=graph-rest-beta), [interests](/graph/api/resources/personinterest?view=graph-rest-beta), [language](/graph/api/resources/languageproficiency?view=graph-rest-beta) and [skill](/graph/api/resources/skillproficiency?view=graph-rest-beta) proficiencies, [project participation](/graph/api/resources/projectparticipation?view=graph-rest-beta), [web site association](/graph/api/resources/personwebsite?view=graph-rest-beta), and other [account](/graph/api/resources/useraccountinformation?view=graph-rest-beta) and contact information.
-
-### Search
-Debut of the [Microsoft Search API](search-concept-overview.md) which allows app users to get more up-to-date, personalized, and relevant search results powered by Microsoft Graph. Use the [query](/graph/api/search-query?view=graph-rest-beta) capability that by default, searches Outlook messages and events, and OneDrive and SharePoint files in the Microsoft cloud. Use [connectors](/microsoftsearch/connectors-overview), available in the [Microsoft Graph connectors gallery](/microsoftsearch/connectors-gallery), to include search data outside of the Microsoft cloud. Alternatively, [build your own connectors](/graph/api/resources/indexing-api-overview?view=graph-rest-beta#common-use-cases), index external custom items and files, and query specific external data sources.
+### Security
+As part of customer alert management, use the [update alert](/graph/api/alert-update?view=graph-rest-1.0) method and update the **comments** field as either `Closed in IPC` or `Closed in MCAS`.
 
 ### Teamwork
-Get the [file](/graph/api/resources/driveitem?view=graph-rest-beta) resources associated with a [team](/graph/api/resources/team?view=graph-rest-beta) and [channel](/graph/api/resources/channel?view=graph-rest-beta) by using the following HTTP request syntax:
-
-```http
-GET /teams/{teamId}/channels/{channelId}/filesFolder
-```
+Use the **primaryChannel** navigation property of a [team](/graph/api/resources/team?view=graph-rest-1.0) to access its default channel, **General**.
 
 ### Users
-Use the **creationType** property to find how a user account was created, for example, whether the account was created as a regular school or work account or as an external account, etc.
+Use the **identities** property to access one or more identities that a [user](/graph/api/resources/user?view=graph-rest-1.0) can use to sign in to an Azure AD user account. The identities can be provided by Microsoft, organizations, or social identity providers such as Facebook, Google, or Microsoft. This property allows the user to sign in to the user account with any of these identities.
+
+## January 2020: New in preview
+
+### Devices and apps
+Intune [January](changelog.md#january-2020) updates.
+
+<!--
+### Identity and access
+Access specific types of [policies for an organization](/graph/api/resources/policy-overview?view=graph-rest-beta) using the `/policies` URL segment and specifying the policy type. For example, an organization can enforce a policy to automatically sign a user out from a web session after a period of inactivity; see CRUD operations for instances of [activityBasedTimeoutPolicy](/graph/api/resources/activitybasedtimeoutpolicy?view=graph-rest-beta). This is a [breaking change](https://developer.microsoft.com/identity/blogs/breaking-changes-policy-api-microsoft-graph-beta/) to make it easier to discover all policies, by grouping all typed policies under the `/policies` segment. Access other typed policies in a similar approach: [claimsMappingPolicy](/graph/api/resources/claimsmappingpolicy?view=graph-rest-beta), [homeRealmDiscoveryPolicy](/graph/api/resources/homerealmdiscoverypolicy?view=graph-rest-beta), and [tokenLifetimePolicy](/graph/api/resources/tokenlifetimepolicy?view=graph-rest-beta).
+-->
+
 
 ## Want to stay in the loop?
 

@@ -1,7 +1,7 @@
 ---
 title: "Set up change notifications that include resource data (preview)"
 description: "Microsoft Graph uses a webhook mechanism to deliver change notifications to clients. Notifications can include resource properties."
-author: "piotrci"
+author: "baywet"
 ms.prod: "non-product-specific"
 localization_priority: Priority
 ---
@@ -316,6 +316,37 @@ Here is an example of the properties included in the JWT token that are needed f
   "tid": "84bd8158-6d4d-4958-8b9f-9d6445542f95",
   "uti": "-KoJHevhgEGnN4kwuixpAA",
   "ver": "1.0"
+}
+```
+
+### Example: Verifying validation tokens
+
+```csharp
+// add Microsoft.IdentityModel.Protocols.OpenIdConnect and System.IdentityModel.Tokens.Jwt nuget packages to your project
+public async Task<bool> ValidateToken(string token, string tenantId, IEnumerable<string> appIds)
+{
+    var configurationManager = new ConfigurationManager<OpenIdConnectConfiguration>("https://login.microsoftonline.com/common/.well-known/openid-configuration", new OpenIdConnectConfigurationRetriever());
+    var openIdConfig = await configurationManager.GetConfigurationAsync();
+    var handler = new JwtSecurityTokenHandler();
+    try
+    {
+	handler.ValidateToken(token, new TokenValidationParameters
+	{
+	    ValidateIssuer = true,
+	    ValidateAudience = true,
+	    ValidateIssuerSigningKey = true,
+	    ValidateLifetime = true,
+	    ValidIssuer = $"https://sts.windows.net/{tenantId}/",
+	    ValidAudiences = appIds,
+	    IssuerSigningKeys = openIdConfig.SigningKeys
+	}, out _);
+	return true;
+    }
+    catch (Exception ex)
+    {
+	Trace.TraceError($"{ex.Message}:{ex.StackTrace}");
+	return false;
+    }
 }
 ```
 
