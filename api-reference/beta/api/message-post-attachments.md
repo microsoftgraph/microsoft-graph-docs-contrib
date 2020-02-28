@@ -25,7 +25,7 @@ resource.
 You can add an attachment to an existing [message](../resources/message.md) by posting to its attachments collection, or to a new 
 message that is being [drafted](../api/user-post-messages.md), or [created and sent on the fly](../api/user-sendmail.md).
 
->**Note**: This operation limits the size of the attachment you can add to under 4 MB.
+>**Note**: This operation limits the size of the attachment you can add to under 3 MB.
 >
 > However, if you're attaching to a message a file that is between 3MB and 150MB, you can [create an upload session](attachment-createuploadsession.md) and iteratively upload ranges of the file to attach it. See [attach large files to Outlook messages](/graph/outlook-large-attachments) for an example.
 ## Permissions

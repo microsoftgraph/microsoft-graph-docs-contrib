@@ -238,6 +238,14 @@ The `version` segment in the URL represents the version of Microsoft Graph that 
 
 Use `me` for OneNote content that the current user can access (owned and shared). Use `users/{id}` for OneNote content that the specified user (in the URL) has shared with the current user. Use [Microsoft Graph](https://graph.microsoft.com/v1.0/users) to get user IDs. 
 
+<a name="limitations"></a>
+
+## OneNote section size limitations
+There is a limit to the number of pages that you can add to a section using the OneNote API. When this limit is reached for a section and an attempt is made to create a new page in that section, you will see a response with HTTP status code `507` and message "Exceeded the maximum number of pages allowed per section". For more information about this error code, see [OneNote error codes](onenote-error-codes.md).
+
+You can use one of the following workarounds:
+- Create a new section and add new pages there.
+- Delete unused pages of an existing section that has reached the page limit.
 
 <a name="permissions"></a>
 
