@@ -9,8 +9,6 @@ localization_priority: Priority
 
 # Working with the call records API in Microsoft Graph
 
-Namespace: microsoft.graph.callRecords
-
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 ## Key resource types
