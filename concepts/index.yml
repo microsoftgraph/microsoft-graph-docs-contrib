@@ -37,9 +37,6 @@ conceptualContent:
   items:
     - title: Explore
       links:
-        - url: /graph/overview-major-services
-          itemType: overview
-          text: Services in Microsoft Graph
         - url: /graph/whats-new-overview
           itemType: overview
           text: What's new in Microsoft Graph
