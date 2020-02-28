@@ -11,7 +11,9 @@ doc_type: "apiPageType"
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Retrieve the properties and relationships of a callrecord object.
+Retrieve the properties and relationships of a [callRecord](../resources/callrecords-callrecord.md) object.
+
+Namespace: microsoft.graph.callRecords
 
 ## Permissions
 
@@ -47,7 +49,7 @@ Do not supply a request body for this method.
 
 ## Response
 
-If successful, this method returns a `200 OK` response code and the requested [callRecord](../resources/callrecords-callrecord.md) object in the response body.
+If successful, this method returns a `200 OK` response code and the requested [microsoft.graph.callRecords.callRecord](../resources/callrecords-callrecord.md) object in the response body.
 
 ## Examples
 

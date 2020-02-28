@@ -19,7 +19,7 @@ Namespace: microsoft.graph.callRecords
 
 | Method       | Return Type | Description |
 |:-------------|:------------|:------------|
-| [Get callRecord](../api/callrecords-callrecord-get.md) | [callRecord](callrecords-callrecord.md) | Read properties and relationships of callRecord object. |
+| [Get callRecord](../api/callrecords-callrecord-get.md) | [microsoft.graph.callRecords.callRecord](callrecords-callrecord.md) | Read properties and relationships of callRecord object. |
 ## Properties
 
 | Property     | Type        | Description |
