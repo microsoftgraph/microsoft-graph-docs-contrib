@@ -6,9 +6,12 @@ metadata:
   title: Microsoft Graph documentation
   description: Microsoft Graph provides a unified programmability model that you can use to build apps for organizations and consumers that interact with the data of millions of users. You can use the Microsoft Graph REST APIs to access data in Azure Active Directory, Office 365 services, Enterprise Mobility and Security services, Windows 10 services, Dynamics 365, and more. Explore our documentation to learn more about how to use Microsoft Graph APIs.
   ms.topic: hub-page
+  ms.prod: ms-graph
   author: CelesteDG
   ms.author: celested
   ms.date: 02/27/2020
+  featureFlags:
+  - clicktale
 
 highlightedContent:
 # itemType: architecture | concept | deploy | download | get-started | how-to-guide | learn | overview | quickstart | reference | tutorial | video | whats-new
@@ -93,7 +96,6 @@ conceptualContent:
 additionalContent:
   sections:
     - title: Resources
-      summary: Check these resources to stay up-to-date with Microsoft Graph.
       items:
         - title: Changelog
           summary: Find out what’s changed in the v1.0 and beta versions of the Microsoft Graph API.
