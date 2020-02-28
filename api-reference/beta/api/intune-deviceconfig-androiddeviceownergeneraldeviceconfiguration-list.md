@@ -177,8 +177,8 @@ Content-Length: 5047
       "usersBlockAdd": true,
       "usersBlockRemove": true,
       "volumeBlockAdjustment": true,
-      "vpnAlwaysOnPackageIdentifier": "Vpn Always On Package Identifier value",
       "vpnAlwaysOnLockdownMode": true,
+      "vpnAlwaysOnPackageIdentifier": "Vpn Always On Package Identifier value",
       "wifiBlockEditConfigurations": true,
       "wifiBlockEditPolicyDefinedConfigurations": true
     }

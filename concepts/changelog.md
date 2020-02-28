@@ -13,10 +13,80 @@ For details about known issues with Microsoft Graph APIs, see [Known issues](kno
 
 ## February 2020
 
+### Cloud communications | Recording
+
+| **Change type** | **Version**   | **Description**                          |
+| :-------------- | :------------ | :--------------------------------------- |
+|Addition|beta|Added the **initiator** property to the [recordingInfo](/graph/api/resources/recordinginfo?view=graph-rest-beta) complex type.
+
+### Devices and apps (Microsoft Intune)
+
+| **Change type** | **Version** | **Description** |
+|:---|:---|:---|
+|Addition|beta|Added new entities:<br/>[macOSMdatpApp](/graph/api/resources/intune-apps-macosmdatpapp)<br/>[unsupportedGroupPolicyExtension](/graph/api/resources/intune-gpanalyticsservice-unsupportedgrouppolicyextension)<br/>[userExperienceAnalyticsDeviceStartupProcess](/graph/api/resources/intune-devices-userexperienceanalyticsdevicestartupprocess)<br/>[userExperienceAnalyticsDeviceStartupProcessPerformance](/graph/api/resources/intune-devices-userexperienceanalyticsdevicestartupprocessperformance)<br/>[userExperienceAnalyticsStartupScoreHistory](/graph/api/resources/intune-devices-userexperienceanalyticsstartupscorehistory)<br/>|
+|Addition|beta|Added new complex types:<br/>[customUpdateTimeWindow](/graph/api/resources/intune-deviceconfig-customupdatetimewindow)<br/>[iosAvailableUpdateVersion](/graph/api/resources/intune-softwareupdate-iosavailableupdateversion)<br/>[managedDeviceSummarizedAppState](/graph/api/resources/intune-troubleshooting-manageddevicesummarizedappstate)<br/>|
+|Addition|beta|Added new enum types:<br/>[enrollmentAvailabilityOptions](/graph/api/resources/intune-shared-enrollmentavailabilityoptions)<br/>[globalDeviceHealthScriptState](/graph/api/resources/intune-devices-globaldevicehealthscriptstate)<br/>[iosSoftwareUpdateScheduleType](/graph/api/resources/intune-deviceconfig-iossoftwareupdatescheduletype)<br/>|
+|Addition|beta|Added the [updateGlobalScript](/graph/api/intune-devices-devicehealthscript-updateglobalscript) action on [deviceHealthScript](/graph/api/resources/intune-devices-devicehealthscript) |
+|Addition|beta|Added the [getGlobalScriptHighestAvailableVersion](/graph/api/intune-devices-devicehealthscript-getglobalscripthighestavailableversion) action on [deviceHealthScript](/graph/api/resources/intune-devices-devicehealthscript) |
+|Addition|beta|Added the [enableGlobalScripts](/graph/api/intune-devices-devicehealthscript-enableglobalscripts) action on [deviceHealthScript](/graph/api/resources/intune-devices-devicehealthscript) collection |
+|Addition|beta|Added the [getManagedDevicesWithFailedOrPendingApps](/graph/api/intune-troubleshooting-user-getmanageddeviceswithfailedorpendingapps) function on [user](/graph/api/resources/intune-shared-user) |
+|Addition|beta|Added the [areGlobalScriptsAvailable](/graph/api/intune-devices-devicehealthscript-areglobalscriptsavailable) function on [deviceHealthScript](/graph/api/resources/intune-devices-devicehealthscript) collection |
+|Deletion|beta|Removed the following enum types:<br/>**logLevel**<br/>|
+|Addition|beta|Added the **certificateSerialNumber** property to the [applePushNotificationCertificate](/graph/api/resources/intune-devices-applepushnotificationcertificate) entity|
+|Addition|beta|Added the **isGlobalScript** and **highestAvailableVersion** properties to the [deviceHealthScript](/graph/api/resources/intune-devices-devicehealthscript) entity|
+|Addition|beta|Added the **hasRequiredSetting** property to the [deviceManagementSettingCategory](/graph/api/resources/intune-deviceintent-devicemanagementsettingcategory) entity|
+|Addition|beta|Added the **sendDeviceOwnershipChangePushNotification**, **enrollmentAvailability** and **roleScopeTagIds** properties to the [intuneBrandingProfile](/graph/api/resources/intune-wip-intunebrandingprofile) entity|
+|Addition|beta|Added the **updateScheduleType** and **customUpdateTimeWindows** properties to the [iosUpdateConfiguration](/graph/api/resources/intune-deviceconfig-iosupdateconfiguration) entity|
+|Addition|beta|Added the **appActionIfUnableToAuthenticateUser** property to the [managedAppProtection](/graph/api/resources/intune-mam-managedappprotection) entity|
+|Addition|beta|Added the **userPrincipalName** property to the [termsAndConditionsAcceptanceStatus](/graph/api/resources/intune-companyterms-termsandconditionsacceptancestatus) entity|
+|Addition|beta|Added the **responsiveDesktopTimeInMs** property to the [userExperienceAnalyticsDevicePerformance](/graph/api/resources/intune-devices-userexperienceanalyticsdeviceperformance) entity|
+|Addition|beta|Added the **responsiveDesktopTimeInMs** property to the [userExperienceAnalyticsDeviceStartupHistory](/graph/api/resources/intune-devices-userexperienceanalyticsdevicestartuphistory) entity|
+|Addition|beta|Added the **installLanguage** property to the [win32LobApp](/graph/api/resources/intune-apps-win32lobapp) entity|
+|Addition|beta|Added the **displayLanguageLocale** property to the [windowsMicrosoftEdgeApp](/graph/api/resources/intune-apps-windowsmicrosoftedgeapp) entity|
+|Addition|beta|Added the **userExperienceAnalyticsDeviceStartupProcesses**, **userExperienceAnalyticsDeviceStartupProcessPerformance** and **userExperienceAnalyticsStartupScoreHistory** navigation properties to the [deviceManagement](/graph/api/resources/intune-shared-devicemanagement) entity|
+|Addition|beta|Added the **unsupportedGroupPolicyExtensions** navigation property to the [groupPolicyMigrationReport](/graph/api/resources/intune-gpanalyticsservice-grouppolicymigrationreport) entity|
+|Addition|beta|Added the **configMgrDeviceCount** property to the [deviceOperatingSystemSummary](/graph/api/resources/intune-devices-deviceoperatingsystemsummary) complex type|
+|Addition|beta|Added the **roleScopeTagIds**, **sendDeviceOwnershipChangePushNotification** and **enrollmentAvailability** properties to the [intuneBrand](/graph/api/resources/intune-onboarding-intunebrand) complex type|
+|Addition|beta|Added the **troubleshootingErrorDetails** property to the [mobileAppTroubleshootingHistoryItem](/graph/api/resources/intune-troubleshooting-mobileapptroubleshootinghistoryitem) complex type|
+|Addition|beta|Added the **xTec** member to the [deviceManagementDerivedCredentialIssuer](/graph/api/resources/intune-rapolicy-devicemanagementderivedcredentialissuer) enum type|
+|Addition|beta|Added the **windows10x** member to the [deviceType](/graph/api/resources/intune-deviceconfig-devicetype) enum type|
+|Addition|beta|Added the **windowsManagementCloudApi** member to the [managementAgentType](/graph/api/resources/intune-deviceconfig-managementagenttype) enum type|
+
+
+### Groups
+
+| **Change type** | **Version**   | **Description**                          |
+| :-------------- | :------------ | :--------------------------------------- |
+| Addition | v1.0 | Added the [group: assignLicense API](/graph/api/group-assignlicense?view=graph-rest-1.0), which can be used to assign license to a [group](/graph/api/resources/group?view=graph-rest-1.0). |
+
 ### Identity and access (Azure AD)
+
 | **Change type** | **Version**   | **Description**                          |
 |:---|:---|:---|
+| Addition | beta and v1.0 | Added the **latestSupportedTlsVersion** property to the [subscription](/graph/api/resources/subscription?view=graph-rest-1.0) entity. Specifies the latest TLS version that the notification endpoint supports. Allows subscribers to use a deprecated version of TLS for a limited period. For details, see [Microsoft Graph subscriptions - deprecating TLS 1.0 and 1.1](https://developer.microsoft.com/graph/blogs/microsoft-graph-subscriptions-deprecating-tls-1-0-and-1-1/). 
+| Change | beta |Updated the existing policies collection with a [policies](/graph/api/resources/policy-overview?view=graph-rest-beta) URL segment. Typed policy resources are now grouped under the policies segment as described in [this blog post](https://developer.microsoft.com/identity/blogs/breaking-changes-policy-api-microsoft-graph-beta/). This update adds four typed policy resources: <br> <li>[activityBasedTimeoutPolicies](/graph/api/resources/activityBasedTimeoutPolicy?view=graph-rest-beta)</li> <li>[claimsMappingPolicies](/graph/api/resources/claimsMappingPolicy?view=graph-rest-beta) </li> <li>[homeRealmDiscoveryPolicies](/graph/api/resources/homeRealmDiscoveryPolicy?view=graph-rest-beta) and </li> <li>[tokenLifetimePolicies](/graph/api/resources/tokenlifetimepolicy?view=graph-rest-beta)</li> |
+| Addition | beta | Added [activityBasedTimeoutPolicy](/graph/api/resources/activityBasedTimeoutPolicy?view=graph-rest-beta) resource type controls automatic sign-out for web sessions after a period of inactivity, for applications that support activity-based timeout functionality.|
+| Addition | beta |[claimsMappingPolicy](/graph/api/resources/claimsMappingPolicy?view=graph-rest-beta) resource type controls the claims mapping for WS-Fed, SAML, OAuth 2.0, and OpenID Connect protocols, for tokens issued to a specific application.|
+| Addition | beta | [homeRealmDiscoveryPolicy](/graph/api/resources/homeRealmDiscoveryPolicy?view=graph-rest-beta) resource type controls Azure Active Directory authentication behavior for federated users, in particular for auto-acceleration and user authentication restrictions in federated domains. |
+| Addition | beta | [tokenLifetimePolicy](/graph/api/resources/tokenlifetimepolicy?view=graph-rest-beta) resource type controls the lifetime duration of access tokens used to access protected resources.|
+| Addition | beta | Added the [error](/graph/api/resources/synchronization-synchronizationError?view=graph-rest-beta) property to the **quarantineStatus** resource type.|
 | Addition | beta and v1.0 | Added the **latestSupportedTlsVersion** property to the [subscription](/graph/api/resources/subscription?view=graph-rest-1.0) entity. Specifies the latest TLS version that the notification endpoint supports. Allows subscribers to use a deprecated version of TLS for a limited period. For details, see [Microsoft Graph subscriptions - deprecating TLS 1.0 and 1.1](https://developer.microsoft.com/graph/blogs/microsoft-graph-subscriptions-deprecating-tls-1-0-and-1-1/). |
+| Change | beta | Updated the [accessPackageAssignmentPolicy](/graph/api/resources/accesspackageassignmentpolicy?view=graph-rest-beta) with additional properties for requestor, approval and review settings.|
+|Addition | beta | Added the [error](/graph/api/resources/synchronization-synchronizationError?view=graph-rest-beta) property to the **quarantineStatus** resource type.|
+
+### Teamwork (Microsoft Teams)
+
+| **Change type** | **Version** | **Description**                          |
+| :-------------- | :---------- | :--------------------------------------- |
+| Addition | Beta | Added [notifications](/graph/api/subscription-post-subscriptions?view=graph-rest-beta) for all channel messages in tenant and all chat messages in tenant. |
+| Addition | Beta | Added the [swapShiftsChangeRequest: decline](/graph/api/swapshiftschangerequest-decline?view=graph-rest-beta) method to the **swapShiftsChangeRequest** resource. |
+
+### Users
+
+| **Change type** | **Version** | **Description**                          |
+| :-------------- | :---------- | :--------------------------------------- |
+| Addition | v1.0 | Added the [user: reprocessLicenseAssignment API](/graph/api/user-reprocesslicenseassignment), which can be used to reprocess all group-based license assignments for the [user](/graph/api/resources/user?view=graph-rest-1.0). |
+| Addition | v1.0 | Added the **identities** property to the [user](/graph/api/resources/user?view=graph-rest-1.0) resource. This property represents the set of identities (like local accounts and social accounts) that this user can use to sign in with.|
 
 ## January 2020
 
@@ -133,6 +203,12 @@ Introduced presence in beta and added cloud communications APIs to v1.0.
 | **Change type** | **Version**   | **Description**                          |
 | :-------------- | :------------ | :--------------------------------------- |
 | Addition | v1.0 | Added the [classSettings](/graph/api/resources/teamclasssettings?view=graph-rest-1.0) property to the [team](/graph/api/resources/team?view=graph-rest-1.0) resource to allow callers to get settings specific to a team of type Class.|
+
+### Groups
+
+| **Change type** | **Version**   | **Description**                          |
+| :-------------- | :------------ | :--------------------------------------- |
+| Addition        | Beta          |Added the **hideFromAddressLists** and **hideFromOutlookClients** properties to the [group](/graph/api/resources/group?view=graph-rest-1.0) entity, to control the visibility of a group in the Outlook UI.|
 
 ### Identity and access (Azure AD)
 
@@ -834,6 +910,12 @@ Debut of the places API which provides rich details for locations in apps.
 | **Change type** | **Version**   | **Description**                          |
 | :-------------- | :------------ | :--------------------------------------- |
 | Addition | beta | Added support for the Mail.ReadBasic.All application permission in mailFolder API: [list mailfolders](/graph/api/user-list-mailfolders?view=graph-rest-beta), [get a mailfolder](/graph/api/mailfolder-get?view=graph-rest-beta), [list child folders](/graph/api/mailfolder-list-childfolders?view=graph-rest-beta) and [list messages in a mail folder](/graph/api/mailfolder-list-childfolders?view=graph-rest-beta). Also added Mail.ReadBasic.All support in [delta query for message](/graph/api/message-delta?view=graph-rest-beta) and [delta query for mailFolder](/graph/api/mailfolder-delta?view=graph-rest-beta).|
+
+### Sites (SharePoint)
+
+| **Change type** | **Version** | **Description**                          |
+| :-------------- | :---------- | :--------------------------------------- |
+| Addition        | beta       | Added the **subscriptions** navigation property to the [list](/graph/api/resources/list?view=graph-rest-beta) entity. |
 
 ### Reports
 
@@ -1837,7 +1919,7 @@ Debut of the places API which provides rich details for locations in apps.
 |Addition|beta|Added the **zscalerPrivateAccess**, **f5Access2018**, **citrixSso** and **paloAltoGlobalProtectV2** members to the [appleVpnConnectionType](/graph/api/resources/intune-deviceconfig-applevpnconnectiontype?view=graph-rest-beta) enum type|
 |Addition|beta|Added the **userAbandonment** member to the [deviceEnrollmentFailureReason](/graph/api/resources/intune-troubleshooting-deviceenrollmentfailurereason?view=graph-rest-beta) enum type|
 |Addition|beta|Added the **blocked** member to the [enrollmentState](/graph/api/resources/intune-enrollment-enrollmentstate?view=graph-rest-beta) enum type|
-|Addition|beta|Added the **microsoft365ManagedMdm** member to the [managementAgentType](/graph/api/resources/intune-devices-managementagenttype?view=graph-rest-beta) enum type|
+|Addition|beta|Added the **microsoft365ManagedMdm** member to the [managementAgentType](/graph/api/resources/intune-shared-managementagenttype?view=graph-rest-beta) enum type|
 |Addition|beta|Added the **domainNameService** member to the [subjectAlternativeNameType](/graph/api/resources/intune-deviceconfig-subjectalternativenametype?view=graph-rest-beta) enum type|
 |Addition|beta|Added the **wpa2Personal** and **wpa2Enterprise** members to the [wiFiSecurityType](/graph/api/resources/intune-deviceconfig-wifisecuritytype?view=graph-rest-beta) enum type|
 |Addition|beta|Added the **enterpriseUnwantedSoftware**, **ransom** and **hipsRule** members to the [windowsMalwareCategory](/graph/api/resources/intune-devices-windowsmalwarecategory?view=graph-rest-beta) enum type|

@@ -369,6 +369,8 @@ Use the `$top` query parameter to specify the page size of the result set.
 
 If more items remain in the result set, the response body will contain an `@odata.nextLink` parameter. This parameter contains a URL that you can use to get the next page of results. To learn more, see [Paging](./paging.md). 
 
+$top accepts a minimum value of 1 and a maximum value of 999 (inclusive).  
+
 For example, the following request returns the first five messages in the user's mailbox:
 
 ```http
