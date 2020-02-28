@@ -9,6 +9,8 @@ doc_type: apiPageType
 
 # List channel message replies
 
+Namespace: microsoft.graph
+
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 List all the replies of a [message](../resources/chatmessage.md) in a [channel](../resources/channel.md) of a team.

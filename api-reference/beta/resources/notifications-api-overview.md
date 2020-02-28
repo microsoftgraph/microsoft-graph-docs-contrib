@@ -9,6 +9,8 @@ author: "merzink"
 
 # Use the notifications REST API in Microsoft Graph
 
+Namespace: microsoft.graph
+
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 You can use the notifications API in Microsoft Graph to send push notifications to a user. Simply post a notification to your target user, and the platform will deliver the notification to all device endpoints registered to that user. The high-level flow is as follows:

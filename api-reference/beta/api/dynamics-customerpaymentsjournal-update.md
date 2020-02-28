@@ -10,6 +10,8 @@ doc_type: apiPageType
 ---
 
 # Update customerPaymentJournals
+
+Namespace: microsoft.graph
 Update the properties of a customer payments journal object for Dynamics 365 Business Central.
 
 ## Permissions

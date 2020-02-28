@@ -10,6 +10,8 @@ doc_type: apiPageType
 ---
 
 # Create customers
+
+Namespace: microsoft.graph
 Create a customer object in Dynamics 365 Business Central.
 
 ## Permissions

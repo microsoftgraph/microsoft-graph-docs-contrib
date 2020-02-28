@@ -10,6 +10,8 @@ doc_type: resourcePageType
 ---
 
 # employees resource type
+
+Namespace: microsoft.graph
 Represents an employee in Dynamics 365 Business Central.
 
 ## Methods

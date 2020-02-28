@@ -9,6 +9,8 @@ doc_type: "apiPageType"
 
 # Delete extensionProperty
 
+Namespace: microsoft.graph
+
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 Delete an [extensionProperty](../resources/extensionproperty.md).

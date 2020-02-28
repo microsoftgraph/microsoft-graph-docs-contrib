@@ -9,6 +9,8 @@ ms.prod: ""
 
 # Get subscription
 
+Namespace: microsoft.graph
+
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 Retrieve the properties and relationships of a subscription.

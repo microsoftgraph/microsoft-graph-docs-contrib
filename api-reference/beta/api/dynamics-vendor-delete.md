@@ -10,6 +10,8 @@ doc_type: apiPageType
 ---
 
 # Delete vendors
+
+Namespace: microsoft.graph
 Delete a vendor object from Dynamics 365 Business Central.
 
 ## Permissions

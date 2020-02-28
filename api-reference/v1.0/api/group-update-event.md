@@ -8,6 +8,8 @@ doc_type: apiPageType
 ---
 
 # Update event
+
+Namespace: microsoft.graph
 Update an [event](../resources/event.md) object.
 
 ## Permissions

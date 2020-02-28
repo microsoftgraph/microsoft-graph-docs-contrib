@@ -10,6 +10,8 @@ doc_type: apiPageType
 ---
 
 # Create unitsOfMeasure
+
+Namespace: microsoft.graph
 Create a units of measure object in Dynamics 365 Business Central.
 
 ## Permissions

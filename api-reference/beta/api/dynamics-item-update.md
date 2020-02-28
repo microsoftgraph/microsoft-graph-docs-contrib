@@ -10,6 +10,8 @@ doc_type: apiPageType
 ---
 
 # Update items
+
+Namespace: microsoft.graph
 Update the properties of an item object for Dynamics 365 Business Central.
 
 ## Permissions

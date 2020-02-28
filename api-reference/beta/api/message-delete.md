@@ -9,6 +9,8 @@ doc_type: apiPageType
 
 # Delete message
 
+Namespace: microsoft.graph
+
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 Delete a message in the specified user's mailbox, or delete a relationship of the message.

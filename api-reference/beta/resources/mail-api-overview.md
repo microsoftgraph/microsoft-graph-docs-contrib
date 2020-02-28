@@ -9,6 +9,8 @@ doc_type: conceptualPageType
 
 # Use the Outlook mail REST API
 
+Namespace: microsoft.graph
+
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 Microsoft Graph lets your app get authorized access to a user's Outlook mail data in a personal or organization account.

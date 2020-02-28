@@ -9,6 +9,8 @@ doc_type: apiPageType
 
 # educationAssignment: getResourcesFolderUrl
 
+Namespace: microsoft.graph
+
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 This function returns the OneDrive URL where all file-based resources (Word, Excel, and so on) should be uploaded.  

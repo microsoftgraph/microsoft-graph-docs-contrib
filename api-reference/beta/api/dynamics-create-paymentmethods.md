@@ -10,6 +10,8 @@ doc_type: apiPageType
 ---
 
 # Create paymentMethods
+
+Namespace: microsoft.graph
 Create a payment method object in DDynamics 365 Business Central.
 
 ## Permissions

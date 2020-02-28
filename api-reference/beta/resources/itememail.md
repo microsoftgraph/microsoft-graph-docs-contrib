@@ -9,6 +9,8 @@ doc_type: "resourcePageType"
 
 # itemEmail resource type
 
+Namespace: microsoft.graph
+
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 Represents detailed information about email addresses associated with the user.

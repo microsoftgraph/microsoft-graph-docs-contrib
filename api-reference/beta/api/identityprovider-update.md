@@ -9,6 +9,8 @@ ms.prod: "microsoft-identity-platform"
 
 # Update identityProvider
 
+Namespace: microsoft.graph
+
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 Update properties in an existing [identityProvider](../resources/identityprovider.md).

@@ -10,6 +10,8 @@ doc_type: resourcePageType
 ---
 
 # generalLedgerEntries resource type
+
+Namespace: microsoft.graph
 Represents a generalLedgerEntry object in Dynamics 365 Business Central.
 
 ## Methods

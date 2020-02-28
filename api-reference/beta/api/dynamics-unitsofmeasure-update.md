@@ -10,6 +10,8 @@ doc_type: apiPageType
 ---
 
 # Update unitsOfMeasure
+
+Namespace: microsoft.graph
 Update the properties of a units of measure object for Dynamics 365 Business Central.
 
 ## Permissions

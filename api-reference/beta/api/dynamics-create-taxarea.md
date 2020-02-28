@@ -10,6 +10,8 @@ doc_type: apiPageType
 ---
 
 # Create taxAreas
+
+Namespace: microsoft.graph
 Creates a tax area object in Dynamics 365 Business Central.
 
 ## Permissions

@@ -10,6 +10,8 @@ doc_type: resourcePageType
 ---
 
 # taxGroups resource type
+
+Namespace: microsoft.graph
 Represents a taxGroups resource type in Dynamics 365 Business Central.
 
 ## Methods

@@ -8,6 +8,8 @@ doc_type: apiPageType
 ---
 
 # Delete event
+
+Namespace: microsoft.graph
 Delete an [event](../resources/event.md) object.
 
 ## Permissions

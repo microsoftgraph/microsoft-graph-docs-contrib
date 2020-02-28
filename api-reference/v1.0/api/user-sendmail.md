@@ -9,6 +9,8 @@ doc_type: apiPageType
 
 # Send mail
 
+Namespace: microsoft.graph
+
 Send the message specified in the request body. The message is saved in the Sent Items folder by default.
 
 You can include a [file attachment](../resources/fileattachment.md) in the same **sendMail** action call.

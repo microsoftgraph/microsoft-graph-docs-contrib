@@ -9,6 +9,8 @@ ms.prod: "microsoft-identity-platform"
 
 # filter resource type
 
+Namespace: microsoft.graph
+
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 Determines which objects should be provisioned to the application. For example, you might want to only provision users that are located in the US. When a scoping filter is present, objects that do not satisfy the filter will be skipped during synchronization.

@@ -9,6 +9,8 @@ doc_type: apiPageType
 
 # List createdObjects
 
+Namespace: microsoft.graph
+
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 Get a list of directory objects that were created by the user.

@@ -9,6 +9,8 @@ doc_type: apiPageType
 
 # List events
 
+Namespace: microsoft.graph
+
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 Get a list of [event](../resources/event.md) objects from the user's default calendar or 

@@ -9,6 +9,8 @@ doc_type: apiPageType
 
 # Get a directory setting
 
+Namespace: microsoft.graph
+
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 Retrieve the properties of a specific directory setting object.

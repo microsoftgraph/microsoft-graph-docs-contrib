@@ -10,6 +10,8 @@ doc_type: resourcePageType
 ---
 
 # customerPaymentsJournals resource type
+
+Namespace: microsoft.graph
 Represents a customer payment journal in Dynamics 365 Business Central.
 
 ## Methods

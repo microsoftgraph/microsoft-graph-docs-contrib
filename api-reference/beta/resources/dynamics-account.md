@@ -10,6 +10,8 @@ doc_type: resourcePageType
 ---
 
 # accounts resource type
+
+Namespace: microsoft.graph
 Represents an account object in Dynamics 365 Business Central.
 
 ## Methods

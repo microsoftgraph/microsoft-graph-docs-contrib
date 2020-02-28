@@ -9,6 +9,8 @@ doc_type: "apiPageType"
 
 # Create itemPhoneNumber
 
+Namespace: microsoft.graph
+
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 Use this API to create a new [itemPhone](../resources/itemphone.md) object.

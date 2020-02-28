@@ -10,6 +10,8 @@ doc_type: resourcePageType
 ---
 
 # taxAreas resource type
+
+Namespace: microsoft.graph
 Represents a tax area resource type in Dynamics 365 Business Central.
 
 ## Methods

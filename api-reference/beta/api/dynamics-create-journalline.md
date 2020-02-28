@@ -10,6 +10,8 @@ doc_type: apiPageType
 ---
 
 # Create journalLines
+
+Namespace: microsoft.graph
 Creates a journal line object in Dynamics 365 Business Central.
 
 ## Permissions

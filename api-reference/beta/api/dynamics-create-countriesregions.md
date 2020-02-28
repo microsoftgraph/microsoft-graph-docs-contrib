@@ -10,6 +10,8 @@ doc_type: apiPageType
 ---
 
 # Create countriesRegions
+
+Namespace: microsoft.graph
 Create a countriesRegions object in Dynamics 365 Business Central.
 
 ## Permissions

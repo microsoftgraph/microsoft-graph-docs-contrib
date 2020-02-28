@@ -9,6 +9,8 @@ doc_type: "resourcePageType"
 
 # schema resource type
 
+Namespace: microsoft.graph
+
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 Describes the type of content and how to index each property in items in a Microsoft Search [connection](externalconnection.md).

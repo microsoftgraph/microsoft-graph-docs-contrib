@@ -9,6 +9,8 @@ doc_type: apiPageType
 
 # Get member groups
 
+Namespace: microsoft.graph
+
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 Return all the groups that the specified user, group, service principal or directory object is a member of. This function is transitive.

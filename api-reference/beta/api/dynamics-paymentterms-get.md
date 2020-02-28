@@ -10,6 +10,8 @@ doc_type: apiPageType
 ---
 
 # Get paymentTerms
+
+Namespace: microsoft.graph
 Retrieve the properties and relationships of a payment terms object for Dynamics 365 Business Central.
 
 ## Permissions

@@ -10,6 +10,8 @@ doc_type: apiPageType
 ---
 
 # Get employees
+
+Namespace: microsoft.graph
 Retrieve the properties and relationships of an employee object for Dynamics 365 Business Central.
 
 ## Permissions

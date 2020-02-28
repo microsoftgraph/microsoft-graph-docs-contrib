@@ -10,6 +10,8 @@ doc_type: apiPageType
 ---
 
 # Get itemCategories
+
+Namespace: microsoft.graph
 Retrieve the properties and relationships of an item category object for Dynamics 365 Business Central.
 
 ## Permissions

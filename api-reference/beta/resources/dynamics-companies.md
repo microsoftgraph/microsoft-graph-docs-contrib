@@ -10,6 +10,8 @@ doc_type: resourcePageType
 ---
 
 # companies resource type
+
+Namespace: microsoft.graph
 Represents a companies resource type in Dynamics 365 Business Central. 
 
 ## Methods

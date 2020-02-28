@@ -9,6 +9,8 @@ localization_priority: Priority
 
 # Working with the communications API in Microsoft Graph
 
+Namespace: microsoft.graph
+
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 The Microsoft Graph communications API adds a new dimension to how you or your organization can interact with other users by enabling core communication capabilities and features in your apps and services. You can use this API to create and receive calls, create and retrieve meeting coordinates, and check users' presence.

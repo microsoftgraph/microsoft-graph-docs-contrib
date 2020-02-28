@@ -9,6 +9,8 @@ doc_type: conceptualPageType
 
 # Working with Excel in Microsoft Graph
 
+Namespace: microsoft.graph
+
 You can use Microsoft Graph to allow web and mobile applications to read and modify Excel workbooks stored in OneDrive for Business, SharePoint site or Group drive. The `Workbook` (or Excel file) resource contains all the other Excel resources through relationships. You can access a workbook through the [Drive API](drive.md) by identifying the location of the file in the URL. For example:
 
 `https://graph.microsoft.com/{version}/me/drive/items/{id}/workbook/`  

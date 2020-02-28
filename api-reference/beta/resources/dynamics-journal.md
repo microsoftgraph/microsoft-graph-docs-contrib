@@ -10,6 +10,8 @@ doc_type: resourcePageType
 ---
 
 # journal resource type
+
+Namespace: microsoft.graph
 Represents a journal in Dynamics 365 Business Central.
 
 ## Methods

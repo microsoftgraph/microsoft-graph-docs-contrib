@@ -9,6 +9,8 @@ doc_type: apiPageType
 
 # reportRoot: getOneDriveUsageStorage
 
+Namespace: microsoft.graph
+
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 Get the trend on the amount of storage you are using in OneDrive for Business.

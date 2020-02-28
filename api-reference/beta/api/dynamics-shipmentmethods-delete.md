@@ -10,6 +10,8 @@ doc_type: apiPageType
 ---
 
 # Delete shipmentMethods
+
+Namespace: microsoft.graph
 Delete a shipment method object from Dynamics 365 Business Central.
 
 ## Permissions

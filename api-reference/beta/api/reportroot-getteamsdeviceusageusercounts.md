@@ -9,6 +9,8 @@ doc_type: apiPageType
 
 # reportRoot: getTeamsDeviceUsageUserCounts
 
+Namespace: microsoft.graph
+
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 Get the number of Microsoft Teams daily unique users by device type.

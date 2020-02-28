@@ -10,6 +10,8 @@ doc_type: resourcePageType
 ---
 
 # dimensionValues resource type
+
+Namespace: microsoft.graph
 Represents a dimension value in Dynamics 365 Business Central.
 
 ## Methods

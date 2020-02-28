@@ -9,6 +9,8 @@ doc_type: "resourcePageType"
 
 # certificateBasedAuthConfiguration resource type
 
+Namespace: microsoft.graph
+
 Certificate-based authentication enables you to be authenticated by Azure Active Directory with a client certificate on a Windows, Android, or iOS device when connecting your Exchange Online account to:
 
 - Microsoft mobile applications such as Outlook and Word

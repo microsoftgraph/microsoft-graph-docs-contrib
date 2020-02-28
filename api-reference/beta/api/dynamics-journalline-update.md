@@ -10,6 +10,8 @@ doc_type: apiPageType
 ---
 
 # Update journalLines
+
+Namespace: microsoft.graph
 Update the properties of a journal lines object for Dynamics 365 Business Central.
 
 ## Permissions

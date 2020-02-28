@@ -9,6 +9,8 @@ ms.prod: ""
 
 # Update subscription
 
+Namespace: microsoft.graph
+
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 Renew a subscription by extending its expiry time.

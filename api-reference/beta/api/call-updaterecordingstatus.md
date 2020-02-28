@@ -9,6 +9,8 @@ doc_type: apiPageType
 
 # call: updateRecordingStatus
 
+Namespace: microsoft.graph
+
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 Update the application's recording status associated with a call.

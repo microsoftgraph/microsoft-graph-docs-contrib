@@ -9,6 +9,8 @@ doc_type: apiPageType
 
 # reportRoot: getOffice365GroupsActivityStorage
 
+Namespace: microsoft.graph
+
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 Get the total storage used across all group mailboxes and group sites.

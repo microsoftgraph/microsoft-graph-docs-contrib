@@ -9,6 +9,8 @@ doc_type: resourcePageType
 
 # event resource type
 
+Namespace: microsoft.graph
+
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 An event in a [user](user.md) calendar, or the default calendar of an Office 365 [group](group.md).

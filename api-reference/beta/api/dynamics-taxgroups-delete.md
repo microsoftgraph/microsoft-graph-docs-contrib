@@ -10,6 +10,8 @@ doc_type: apiPageType
 ---
 
 # Delete taxGroups
+
+Namespace: microsoft.graph
 Delete a tax group object from Dynamics 365 Business Central.
 
 ## Permissions

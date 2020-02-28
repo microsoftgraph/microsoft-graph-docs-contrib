@@ -10,6 +10,8 @@ doc_type: apiPageType
 ---
 
 # Update taxGroups
+
+Namespace: microsoft.graph
 Update the properties of a tax groups object for Dynamics 365 Business Central.
 
 ## Permissions

@@ -9,6 +9,8 @@ doc_type: conceptualPageType
 
 # Working with users in Microsoft Graph
 
+Namespace: microsoft.graph
+
 You can use Microsoft Graph to build compelling app experiences based on users, their relationships with other users and groups, and their mail, calendar, and files.
 
 You can access [users](user.md) through Microsoft Graph in two ways:

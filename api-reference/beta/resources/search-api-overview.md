@@ -9,6 +9,8 @@ doc_type: resourcePageType
 
 # Use the Microsoft Search API to query data
 
+Namespace: microsoft.graph
+
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 You can use the Microsoft Search API to query Office 365 data in your apps.

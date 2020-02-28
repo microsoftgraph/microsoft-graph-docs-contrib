@@ -10,6 +10,8 @@ doc_type: apiPageType
 ---
 
 # Create employees
+
+Namespace: microsoft.graph
 Create an employee object in Dynamics 365 Business Central.
 
 ## Permissions

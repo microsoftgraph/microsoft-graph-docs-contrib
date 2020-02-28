@@ -10,6 +10,8 @@ doc_type: apiPageType
 ---
 
 # Delete paymentMethods
+
+Namespace: microsoft.graph
 Delete a payment method object from Dynamics 365 Business Central.
 
 ## Permissions

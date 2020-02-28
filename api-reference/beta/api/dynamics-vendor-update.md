@@ -10,6 +10,8 @@ doc_type: apiPageType
 ---
 
 # Update vendors
+
+Namespace: microsoft.graph
 Update the properties of a vendor object for Dynamics 365 Business Central.
 
 ## Permissions

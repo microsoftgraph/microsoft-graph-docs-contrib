@@ -9,6 +9,8 @@ doc_type: conceptualPageType
 
 # Use the Outlook mail REST API
 
+Namespace: microsoft.graph
+
 Microsoft Graph lets your app get authorized access to a user's Outlook mail data in a personal or organization account.
 With the [appropriate delegated or application permissions](/graph/permissions-reference), your app can access the mail data of
 the signed-in user or any user in a tenant. 

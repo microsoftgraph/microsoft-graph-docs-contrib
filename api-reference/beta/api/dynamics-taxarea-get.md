@@ -10,6 +10,8 @@ doc_type: apiPageType
 ---
 
 # Get taxAreas
+
+Namespace: microsoft.graph
 Retrieve the properties and relationships of a tax area object for Dynamics 365 Business Central.
 
 ## Permissions

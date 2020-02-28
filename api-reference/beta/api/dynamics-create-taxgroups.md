@@ -10,6 +10,8 @@ doc_type: apiPageType
 ---
 
 # Create taxGroups
+
+Namespace: microsoft.graph
 Create a tax groups object in Dynamics 365 Business Central.
 
 ## Permissions

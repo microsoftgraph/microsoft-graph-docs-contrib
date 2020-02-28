@@ -10,6 +10,8 @@ doc_type: resourcePageType
 ---
 
 # vendors resource type
+
+Namespace: microsoft.graph
 Represents a vendor in Dynamics 365 Business Central.
 
 ## Methods

@@ -9,6 +9,8 @@ doc_type: resourcePageType
 
 # participant resource type
 
+Namespace: microsoft.graph
+
 The participant type.
 
 ## Methods

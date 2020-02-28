@@ -10,6 +10,8 @@ doc_type: apiPageType
 ---
 
 # Update customers
+
+Namespace: microsoft.graph
 Update the properties of a customer object for Dynamics 365 Business Central.
 
 ## Permissions

@@ -10,6 +10,8 @@ doc_type: resourcePageType
 ---
 
 # journalLines resource type
+
+Namespace: microsoft.graph
 Represents a line in a journal in Dynamics 365 Business Central.
 
 ## Methods

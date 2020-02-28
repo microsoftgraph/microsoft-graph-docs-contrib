@@ -10,6 +10,8 @@ doc_type: apiPageType
 ---
 
 # Create customerPaymentJournals
+
+Namespace: microsoft.graph
 Creates a customer payment journal object in Dynamics 365 Business Central.
 
 ## Permissions

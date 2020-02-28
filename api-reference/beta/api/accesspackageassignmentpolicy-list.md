@@ -9,6 +9,8 @@ doc_type: "apiPageType"
 
 # List accessPackageAssignmentPolicies
 
+Namespace: microsoft.graph
+
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 In [Azure AD entitlement management](../resources/entitlementmanagement-root.md), retrieve a list of [accessPackageAssignmentPolicy](../resources/accesspackageassignmentpolicy.md) objects.   The resulting list includes all the assignment policies which the caller has access to read, across all catalogs and access packages.

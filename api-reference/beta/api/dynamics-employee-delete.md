@@ -10,6 +10,8 @@ doc_type: apiPageType
 ---
 
 # Delete employees
+
+Namespace: microsoft.graph
 Delete an employee from Dynamics 365 Business Central.
 
 ## Permissions

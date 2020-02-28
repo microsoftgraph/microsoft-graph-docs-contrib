@@ -10,6 +10,8 @@ doc_type: apiPageType
 ---
 
 # Get dimensionValues
+
+Namespace: microsoft.graph
 Retrieve the properties and relationships of a dimension value object for Dynamics 365 Business Central.
 
 ## Permissions

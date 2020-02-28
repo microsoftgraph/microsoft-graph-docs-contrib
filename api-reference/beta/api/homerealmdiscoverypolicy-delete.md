@@ -9,6 +9,8 @@ doc_type: "apiPageType"
 
 # Delete homeRealmDiscoveryPolicy
 
+Namespace: microsoft.graph
+
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 Delete a [homeRealmDiscoveryPolicy](../resources/homerealmdiscoverypolicy.md) object.

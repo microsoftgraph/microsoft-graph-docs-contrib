@@ -9,6 +9,8 @@ doc_type: apiPageType
 
 # Get settings
 
+Namespace: microsoft.graph
+
 Read the user and organization [userSettings](../resources/usersettings.md) object.
 To learn how to update the properties of the [userSettings](../resources/usersettings.md) object, see [update user settings](usersettings-update.md).
 

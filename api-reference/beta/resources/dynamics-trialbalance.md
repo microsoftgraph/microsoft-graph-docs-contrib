@@ -10,6 +10,8 @@ doc_type: resourcePageType
 ---
 
 # trialBalance resource type
+
+Namespace: microsoft.graph
 Represents a trial balance in Dynamics 365 Business Central.
 
 ## Methods

@@ -9,6 +9,8 @@ doc_type: apiPageType
 
 # user: getMemberGroups
 
+Namespace: microsoft.graph
+
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 Return all the groups that the user is a member of. The check is transitive, unlike reading the

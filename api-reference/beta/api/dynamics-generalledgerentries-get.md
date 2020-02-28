@@ -10,6 +10,8 @@ doc_type: apiPageType
 ---
 
 # Get generalLedgerEntries
+
+Namespace: microsoft.graph
 Retrieve the properties and relationships of a general ledger entry object for Dynamics 365 Business Central.
 
 ## Permissions

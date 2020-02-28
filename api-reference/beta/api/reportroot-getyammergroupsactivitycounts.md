@@ -9,6 +9,8 @@ doc_type: apiPageType
 
 # reportRoot: getYammerGroupsActivityCounts
 
+Namespace: microsoft.graph
+
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 Get the number of Yammer messages posted, read, and liked in groups.

@@ -10,6 +10,8 @@ doc_type: resourcePageType
 ---
 
 # currencies resource type
+
+Namespace: microsoft.graph
 Represents a currency used in Dynamics 365 Business Central.
 
 ## Methods

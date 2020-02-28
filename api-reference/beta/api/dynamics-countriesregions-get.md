@@ -10,6 +10,8 @@ doc_type: apiPageType
 ---
 
 # Get countriesRegions
+
+Namespace: microsoft.graph
 Retrieve the properties and relationships of a countriesRegions object for Dynamics 365 Business Central.
 
 ## Permissions

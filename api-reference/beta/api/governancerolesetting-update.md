@@ -9,6 +9,8 @@ ms.prod: "microsoft-identity-platform"
 
 # Update governanceRoleSetting
 
+Namespace: microsoft.graph
+
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 Update the properties of [governanceRoleSetting](../resources/governancerolesetting.md).

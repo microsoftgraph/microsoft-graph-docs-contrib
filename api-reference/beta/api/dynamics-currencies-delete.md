@@ -10,6 +10,8 @@ doc_type: apiPageType
 ---
 
 # Delete currencies
+
+Namespace: microsoft.graph
 Delete a currency object from Dynamics 365 Business Central.
 
 ## Permissions

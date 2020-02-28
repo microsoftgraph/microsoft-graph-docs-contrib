@@ -10,6 +10,8 @@ doc_type: apiPageType
 ---
 
 # Get taxGroups
+
+Namespace: microsoft.graph
 Retrieve the properties and relationships of a tax groups object for Dynamics 365 Business Central.
 
 ## Permissions

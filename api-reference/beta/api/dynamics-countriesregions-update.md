@@ -10,6 +10,8 @@ doc_type: apiPageType
 ---
 
 # Update countriesRegions
+
+Namespace: microsoft.graph
 Update the properties of a country/region object for Dynamics 365 Business Central.
 
 ## Permissions

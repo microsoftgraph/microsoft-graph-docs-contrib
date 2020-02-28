@@ -10,6 +10,8 @@ doc_type: apiPageType
 ---
 
 # Get customerPaymentJournals
+
+Namespace: microsoft.graph
 Retrieve the properties and relationships of a customer payment journal object for Dynamics 365 Business Central.
 
 ## Permissions

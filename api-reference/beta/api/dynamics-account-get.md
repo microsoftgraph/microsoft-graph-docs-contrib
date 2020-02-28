@@ -10,6 +10,8 @@ doc_type: apiPageType
 ---
 
 # Get accounts
+
+Namespace: microsoft.graph
 Retrieve the properties and relationships of an account object for Dynamics 365 Business Central.
 
 ## Permissions

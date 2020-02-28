@@ -10,6 +10,8 @@ doc_type: apiPageType
 ---
 
 # Update employees
+
+Namespace: microsoft.graph
 Update the properties of an employee object for Dynamics 365 Business Central.
 
 ## Permissions

@@ -10,6 +10,8 @@ doc_type: resourcePageType
 ---
 
 # itemCategories resource type
+
+Namespace: microsoft.graph
 Represents a category for a number of items in Dynamics 365 Business Central.
 
 ## Methods

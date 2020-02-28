@@ -9,6 +9,8 @@ doc_type: apiPageType
 
 # Get identityRiskEvent
 
+Namespace: microsoft.graph
+
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 >[!NOTE]

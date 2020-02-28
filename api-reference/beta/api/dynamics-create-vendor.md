@@ -10,6 +10,8 @@ doc_type: apiPageType
 ---
 
 # Create vendors
+
+Namespace: microsoft.graph
 Create a vendor object in Dynamics 365 Business Central.
 
 ## Permissions

@@ -9,6 +9,8 @@ doc_type: resourcePageType
 
 # educationCategory resource type
 
+Namespace: microsoft.graph
+
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 A category that can be applied to assignments.

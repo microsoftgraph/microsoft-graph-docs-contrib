@@ -9,6 +9,8 @@ ms.prod: ""
 
 # List governanceRoleSettings
 
+Namespace: microsoft.graph
+
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 Retrieve a collection of [governanceRoleSettings](../resources/governancerolesetting.md) on a resource.

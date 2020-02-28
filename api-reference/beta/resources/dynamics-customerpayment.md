@@ -10,6 +10,8 @@ doc_type: resourcePageType
 ---
 
 # customerPayments resource type
+
+Namespace: microsoft.graph
 Represents a customer payment in Dynamics 365 Business Central. A customer payment is entered as a line in a customer payment journal.
 
 ## Methods

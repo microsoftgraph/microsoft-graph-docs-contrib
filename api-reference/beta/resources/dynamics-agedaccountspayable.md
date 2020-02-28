@@ -10,6 +10,8 @@ doc_type: resourcePageType
 ---
 
 # agedAccountsPayable resource type
+
+Namespace: microsoft.graph
 Represents an agedAccountsPayable object in Dynamics 365 Business Central, which is showing the aging of a vendor account.
 
 ## Methods

@@ -9,6 +9,8 @@ doc_type: "resourcePageType"
 
 # educationRubric resource type
 
+Namespace: microsoft.graph
+
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 A grading rubric that can be attached to an assignment. A rubric is associated with an **educationUser** (teacher), and attached to one or more **educationAssignment** resources. 

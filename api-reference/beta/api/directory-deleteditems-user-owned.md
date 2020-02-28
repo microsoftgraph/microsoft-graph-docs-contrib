@@ -9,6 +9,8 @@ doc_type: apiPageType
 
 # List deleted items owned by a user
 
+Namespace: microsoft.graph
+
 Retrieves a list of recently deleted items owned by the specified user.  
 
 Currently, list deleted items functionality is supported only for [application](../resources/application.md) and [group](../resources/group.md) resources owned by the user.

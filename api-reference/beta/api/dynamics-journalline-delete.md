@@ -10,6 +10,8 @@ doc_type: apiPageType
 ---
 
 # Delete journalLines
+
+Namespace: microsoft.graph
 Delete a journal line object from Dynamics 365 Business Central.
 
 ## Permissions

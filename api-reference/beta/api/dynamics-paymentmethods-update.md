@@ -10,6 +10,8 @@ doc_type: apiPageType
 ---
 
 # Update paymentMethods
+
+Namespace: microsoft.graph
 Update the properties of a payment method object for Dynamics 365 Business Central.
 
 ## Permissions

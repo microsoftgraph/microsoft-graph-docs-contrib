@@ -10,6 +10,8 @@ doc_type: apiPageType
 ---
 
 # Get journalLines
+
+Namespace: microsoft.graph
 Retrieve the properties and relationships of a journal line object for Dynamics 365 Business Central.
 
 ## Permissions

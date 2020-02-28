@@ -8,6 +8,8 @@ doc_type: resourcePageType
 ---
 
 # customers resource type
+
+Namespace: microsoft.graph
 Represents a customer in Dynamics 365 Business Central.
 
 ## Methods

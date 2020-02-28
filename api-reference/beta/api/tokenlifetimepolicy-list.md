@@ -9,6 +9,8 @@ doc_type: "apiPageType"
 
 # List tokenLifetimePolicies
 
+Namespace: microsoft.graph
+
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 Get a list of [tokenLifetimePolicy](../resources/tokenlifetimepolicy.md) objects.

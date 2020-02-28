@@ -9,6 +9,8 @@ author: ""
 
 # Working with SharePoint sites in Microsoft Graph
 
+Namespace: microsoft.graph
+
 The SharePoint API in Microsoft Graph supports the following core scenarios:
 
 * Access to SharePoint **sites**, **lists**, and **drives** (document libraries)

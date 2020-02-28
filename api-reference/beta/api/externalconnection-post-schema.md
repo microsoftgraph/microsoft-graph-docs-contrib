@@ -9,6 +9,8 @@ doc_type: "apiPageType"
 
 # Create schema
 
+Namespace: microsoft.graph
+
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 Create the schema for a Microsoft Search [connection](../resources/externalconnection.md).

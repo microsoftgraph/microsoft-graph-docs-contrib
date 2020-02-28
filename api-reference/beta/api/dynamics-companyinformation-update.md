@@ -10,6 +10,8 @@ doc_type: apiPageType
 ---
 
 # Update companyInformation
+
+Namespace: microsoft.graph
 Update the properties of a company information object for Dynamics 365 Business Central.
 
 ## Permissions

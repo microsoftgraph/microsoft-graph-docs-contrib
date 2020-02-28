@@ -9,6 +9,8 @@ doc_type: conceptualPageType
 
 # Use the Planner REST API
 
+Namespace: microsoft.graph
+
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 You can use the Planner API in Microsoft Graph to create tasks and assign them to users in a group in Office 365.

@@ -10,6 +10,8 @@ doc_type: apiPageType
 ---
 
 # Delete itemCategories
+
+Namespace: microsoft.graph
 Delete an itemCategory from Dynamics 365 Business Central.
 
 ## Permissions

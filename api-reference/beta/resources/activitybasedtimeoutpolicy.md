@@ -9,6 +9,8 @@ doc_type: "resourcePageType"
 
 # activityBasedTimeoutPolicy resource type
 
+Namespace: microsoft.graph
+
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 Represents a policy that can control the idle timeout for web sessions for applications that support activity-based timeout functionality. Applications enforce automatic signout after a period of inactivity. This type of policy can only be applied at the organization level (by setting the **isOrganizationDefault** property to `true`).

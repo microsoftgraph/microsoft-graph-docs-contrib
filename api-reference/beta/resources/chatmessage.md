@@ -9,6 +9,8 @@ ms.prod: "microsoft-teams"
 
 # chatMessage resource type
 
+Namespace: microsoft.graph
+
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 Represents an individual chat message within a [channel](channel.md) or [chat](chat.md). The chat message can be a root chat message or part of a reply thread that is defined by the **replyToId** property in the chat message.

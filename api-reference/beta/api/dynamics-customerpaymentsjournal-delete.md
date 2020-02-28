@@ -10,6 +10,8 @@ doc_type: apiPageType
 ---
 
 # Delete customerPaymentJournals
+
+Namespace: microsoft.graph
 Delete a customer payment journal object from Dynamics 365 Business Central.
 
 ## Permissions

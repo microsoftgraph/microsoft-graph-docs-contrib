@@ -9,6 +9,8 @@ doc_type: conceptualPageType
 
 # Use the Microsoft Graph API to integrate people and workplace intelligence in an app
 
+Namespace: microsoft.graph
+
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 Microsoft Graph enables access to useful data about people, their profile, documents they interact with, and work patterns, and supports gestures in a user's social context.

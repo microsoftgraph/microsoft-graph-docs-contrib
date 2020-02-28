@@ -9,6 +9,8 @@ doc_type: "apiPageType"
 
 # Create claimsMappingPolicy
 
+Namespace: microsoft.graph
+
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 Create a new [claimsMappingPolicy](../resources/claimsmappingpolicy.md) object.

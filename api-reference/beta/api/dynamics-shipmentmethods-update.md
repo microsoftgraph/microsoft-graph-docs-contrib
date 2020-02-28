@@ -10,6 +10,8 @@ doc_type: apiPageType
 ---
 
 # Update shipmentMethods
+
+Namespace: microsoft.graph
 Update the properties of a shipment method object for Dynamics 365 Business Central.
 
 ## Permissions

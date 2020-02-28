@@ -10,6 +10,8 @@ doc_type: resourcePageType
 ---
 
 # unitsOfMeasure resource type
+
+Namespace: microsoft.graph
 Represents a unit of measure, which is a standard of measurement of a quantity, in Dynamics 365 Business Central.
 
 ## Methods

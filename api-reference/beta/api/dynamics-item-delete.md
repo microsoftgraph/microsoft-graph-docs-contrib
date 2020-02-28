@@ -10,6 +10,8 @@ doc_type: apiPageType
 ---
 
 # Delete items
+
+Namespace: microsoft.graph
 Delete an item from Dynamics 365 Business Central.
 
 ## Permissions

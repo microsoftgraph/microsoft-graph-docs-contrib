@@ -10,6 +10,8 @@ doc_type: apiPageType
 ---
 
 # Delete paymentTerms
+
+Namespace: microsoft.graph
 Delete a payment terms object from Dynamics 365 Business Central.
 
 ## Permissions

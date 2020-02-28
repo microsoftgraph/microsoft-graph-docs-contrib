@@ -10,6 +10,8 @@ doc_type: apiPageType
 ---
 
 # Get companies
+
+Namespace: microsoft.graph
 Retrieve the properties and relationships of a companies object for Dynamics 365 Business Central.
 
 ## Permissions

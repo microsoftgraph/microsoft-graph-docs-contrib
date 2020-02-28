@@ -10,6 +10,8 @@ doc_type: apiPageType
 ---
 
 # Delete customers
+
+Namespace: microsoft.graph
 Delete a customer object from Dynamics 365 Business Central.
 
 ## Permissions

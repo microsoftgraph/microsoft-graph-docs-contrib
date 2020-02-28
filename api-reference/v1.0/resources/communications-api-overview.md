@@ -9,6 +9,8 @@ localization_priority: Priority
 
 # Working with the communications API in Microsoft Graph
 
+Namespace: microsoft.graph
+
 The Microsoft Graph communications API adds a new dimension to how you or your organization can interact with other users by enabling core communication capabilities and features in your apps and services. You can use this API to create and receive calls as well as create and retrieve meeting coordinates.
 
 You can use the communications API to build service applications (bots) that act like participants in a call, and that create and retrieve meetings on behalf of users.

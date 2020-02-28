@@ -9,6 +9,8 @@ doc_type: "resourcePageType"
 
 # personInterest resource type
 
+Namespace: microsoft.graph
+
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 Provides detailed information about interests the user has associated with themselves in various services.

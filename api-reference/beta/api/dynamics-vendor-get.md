@@ -10,6 +10,8 @@ doc_type: apiPageType
 ---
 
 # Get vendors
+
+Namespace: microsoft.graph
 Retrieve the properties and relationships of a vendor object for Dynamics 365 Business Central.
 
 ## Permissions

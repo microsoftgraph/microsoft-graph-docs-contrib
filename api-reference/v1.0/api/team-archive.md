@@ -9,6 +9,8 @@ doc_type: apiPageType
 
 # Archive team
 
+Namespace: microsoft.graph
+
 
 
 Archive the specified [team](../resources/team.md). 

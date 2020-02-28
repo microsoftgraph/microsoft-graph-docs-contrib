@@ -10,6 +10,8 @@ doc_type: apiPageType
 ---
 
 # Update currencies
+
+Namespace: microsoft.graph
 Update the properties of a currency object for Dynamics 365 Business Central.
 
 ## Permissions

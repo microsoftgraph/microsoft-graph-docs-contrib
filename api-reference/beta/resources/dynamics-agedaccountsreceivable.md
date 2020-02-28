@@ -10,6 +10,8 @@ doc_type: resourcePageType
 ---
 
 # agedAccountsReceivable resource type
+
+Namespace: microsoft.graph
 Represents an agedAccountsReceivable object in Dynamics 365 Business Central, which is showing the aging of a customer account.
 
 ## Methods

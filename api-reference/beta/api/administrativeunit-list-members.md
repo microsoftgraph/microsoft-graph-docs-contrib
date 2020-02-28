@@ -9,6 +9,8 @@ doc_type: apiPageType
 
 # List members
 
+Namespace: microsoft.graph
+
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 Use this API to get the members list (user and group) in an administrative unit.
