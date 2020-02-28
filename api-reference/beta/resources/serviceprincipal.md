@@ -97,7 +97,6 @@ This resource supports using [delta query](/graph/delta-query-overview) to track
 |preferredSingleSignOnMode|string|Specifies the single sign-on mode configured for this application. Azure AD uses the preferred single sign-on mode to launch the application from Office 365 or the Azure AD My Apps. The supported values are password, saml, external, and oidc.|
 |preferredTokenSigningKeyEndDateTime|DateTimeOffset|Specifies the expiration date of the keyCredential used for token signing, marked by **preferredTokenSigningKeyThumbprint**.|
 |preferredTokenSigningKeyThumbprint|String|Reserved for internal use only. Do not write or otherwise rely on this property. May be removed in future versions. |
-|publisherName|String|The display name of the tenant in which the associated application is specified.|
 |publishedPermissionScopes|[permissionScope](permissionscope.md) collection|The delegated permissions exposed by the application. For more information see the **oauth2PermissionScopes** property on the [application](application.md) entity's **api** property. Not nullable.|
 |replyUrls|String collection|The URLs that user tokens are sent to for sign in with the associated application, or the redirect URIs that OAuth 2.0 authorization codes and access tokens are sent to for the associated application. Not nullable. |
 |samlMetadataUrl|String|The url where the service exposes SAML metadata for federation.|
@@ -169,7 +168,6 @@ This resource supports using [delta query](/graph/delta-query-overview) to track
   "preferredSingleSignOnMode": "string",
   "preferredTokenSigningKeyEndDateTime": "DateTime",
   "preferredTokenSigningKeyThumbprint": "string",
-  "publisherName": "string",
   "replyUrls": ["string"],
   "samlMetadataUrl": "string",
   "samlSingleSignOnSettings": "microsoft.DirectoryServices.SamlSingleSignOnSettings",
