@@ -9,7 +9,7 @@ metadata:
   ms.prod: ms-graph
   author: CelesteDG
   ms.author: celested
-  ms.date: 02/27/2020
+  ms.date: 02/28/2020
   featureFlags:
   - clicktale
 
@@ -57,24 +57,24 @@ conceptualContent:
           text: Tutorials
     - title: Learn
       links:
+        - url: /graph/teams-concept-overview
+          itemType: overview
+          text: Teamwork
+        - url: /graph/onedrive-concept-overview
+          itemType: overview
+          text: Files
         - url: /graph/azuread-users-concept-overview
           itemType: overview
           text: Users
-        - url: /graph/office365-groups-concept-overview
-          itemType: overview
-          text: Groups
         - url: /graph/outlook-calendar-concept-overview
           itemType: overview
           text: Calendar
-        - url: /graph/intune-concept-overview
-          itemType: overview
-          text: Devices and apps
-        - url: /graph/azuread-identity-access-management-concept-overview
-          itemType: overview
-          text: Identity and access
         - url: /graph/outlook-mail-concept-overview
           itemType: overview
           text: Mail
+        - url: /graph/azuread-identity-access-management-concept-overview
+          itemType: overview
+          text: Identity and access
     - title: Develop
       links:
         - url: /graph/auth/auth-concepts
