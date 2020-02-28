@@ -17,7 +17,7 @@ For details about known issues with Microsoft Graph APIs, see [Known issues](kno
 
 | **Change type** | **Version**   | **Description**                          |
 |:---|:---|:---|
-| Addition | v1.0 | Added new user permission [User.ManageIdentities.All](/graph/permissions-reference#user-resource-permissions).|
+| Addition | v1.0 | Added new user permission [User.ManageIdentities.All](/graph/permissions-reference#user-permissions).|
 
 ## February 2020
 
