@@ -9,15 +9,17 @@ localization_priority: Priority
 
 # Working with the call records API in Microsoft Graph
 
+Namespace: microsoft.graph.callRecords
+
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 ## Key resource types
 
 | Resource | Methods |
 | :-- | :-- |
-| [microsoft.graph.callRecords.callRecord](callrecords-callrecord.md) | [Get callRecord](../api/callrecords-callrecord-get.md) |
-| [microsoft.graph.callRecords.session](callrecords-session.md) | [Get callRecord](../api/callrecords-callrecord-get.md) |
-| [microsoft.graph.callRecords.segment](callrecords-segment.md) | [Get callRecord](../api/callrecords-callrecord-get.md) |
+| [callRecord](callrecords-callrecord.md) | [Get callRecord](../api/callrecords-callrecord-get.md) |
+| [session](callrecords-session.md) | [Get callRecord](../api/callrecords-callrecord-get.md) |
+| [segment](callrecords-segment.md) | [Get callRecord](../api/callrecords-callrecord-get.md) |
 
 ## Call record structure
 
