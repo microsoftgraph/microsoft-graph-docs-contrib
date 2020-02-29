@@ -1,11 +1,11 @@
 ---
-title: "Microsoft Graph throttling limits and boundaries"
+title: "Throttling limits for Microsoft Teams APIs in Microsoft Graph"
 description: "Throttling limits the number of concurrent calls to a service to prevent overuse of resources. Microsoft Graph is designed to handle a high volume of requests. If an overwhelming number of requests occurs, throttling helps maintain optimal performance and reliability of the Microsoft Graph service."
 localization_priority: Priority
 author: "nkramer"
 ---
 
-# Limits and boundaries for Microsoft Teams
+# Throttling limits for Microsoft Teams APIs in Microsoft Graph
 
 Throttling limits the number of concurrent calls to a service to prevent overuse of resources. 
 Microsoft Graph is designed to handle a high volume of requests. 
