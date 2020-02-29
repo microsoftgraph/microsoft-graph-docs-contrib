@@ -57,15 +57,15 @@ conceptualContent:
           text: Tutorials
     - title: Learn
       links:
+        - url: /graph/azuread-users-concept-overview
+          itemType: overview
+          text: Users
         - url: /graph/teams-concept-overview
           itemType: overview
           text: Teamwork
         - url: /graph/onedrive-concept-overview
           itemType: overview
           text: Files
-        - url: /graph/azuread-users-concept-overview
-          itemType: overview
-          text: Users
         - url: /graph/outlook-calendar-concept-overview
           itemType: overview
           text: Calendar
