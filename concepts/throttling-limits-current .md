@@ -2,20 +2,24 @@
 title: "Microsoft Graph throttling limits and boundaries"
 description: "Throttling limits the number of concurrent calls to a service to prevent overuse of resources. Microsoft Graph is designed to handle a high volume of requests. If an overwhelming number of requests occurs, throttling helps maintain optimal performance and reliability of the Microsoft Graph service."
 localization_priority: Priority
-author: "baywet"
+author: "nkramer"
 ---
 
 # Microsoft Teams Graph API limits and boundaries
 Microsoft Graph is designed to handle a high volume of requests to a service. To prevent an overwhelming requests, Microsoft Graph has restricted the client request submission from throttling to within specified range and limits.
 
-Following are the current throttling limits:
- 
-> [!Note]
-> The specific limits described here are subject to change.
-> There may be additional limits we have not documented, think of this as the maximum your app might be able to do rather than a guarantee of what your app can do. 
+## Basics
 
+- All limits are subject to change without notice.
+- There may be additional limits we've not documented below. We've tried to document the most important limits, but exhaustively describing all limits one could ever encounter is beyond the scope of this document.
+- If you get a 429 error code with a retry-after header, you should retry after no less than that time. If you get a 429 without a retry-after header, you should do an exponential backoff with a random jitter is the recommended way to handle 429s. This ensures that multiple requests don't introduce collisions on retries. See https://docs.microsoft.com/en-us/graph/throttling for details.
 
-#### Generic limits
+## Polling
+If your app polls to see whether a resource has changed, you may only do that once per day. (except for teamsAsyncOperation, that's intended to be polled frequently) If you need to hear about changes more frequently than that, you should create a subscription to that resource and receive change notifications (webhooks). If we don't support the type of subscription you need, we apologize for not supporting your scenario, and encourage you to send that feedback in UserVoice. 
+
+Apps that violate these terms of use may be subject to additional throttling or suspended entirely.
+
+## General limits
 | Teams request type                                   | Value      |
 |-------------------------------------------|------------|
 | Graph API calls for an app/tenant         | 15000 requests/10 seconds |
@@ -24,7 +28,7 @@ Following are the current throttling limits:
 | POST/PUT/PATCH/DELETE /teams/```{team-id}```|  15 rps |
 | POST /teams/```{team-id}``` | 6 rps |
 
-#### Messaging limits
+## Messaging limits
 
 | Teams request type                  | Value   |
 |---------------------------|-------------|
@@ -33,9 +37,11 @@ Following are the current throttling limits:
 | POST channel messages for a tenant | 5000 messages/day per channel |
 | POST channel messages for a user | 3000 messages/day per channel |
 
+**Scenarios that are explicitly not supported**
+- Using Teams as a log file. When you send a message, you should expect a person to read it.
+- Migrating messages from other messaging products or installations. We will not extend your limits.
 
-
-#### Group limits
+## Group limits
 
 The following limits apply to Office 365 Groups:
 
@@ -51,15 +57,8 @@ The following limits apply to Office 365 Groups:
 
 Please refer to [Overview of Office 365 Groups for administrators](/office365/admin/create-groups/office-365-groups?view=o365-worldwide) for more information.
 
-**Scenarios that are explicitly not supported**
-- Using Teams as a log file. When you send a message, you should expect a person to read it.
-- Migrating messages from other messaging products or installations. We will not extend your limits.
 
- <!--If you exceed your limit you'll get an error code 429. Please do exponential back off, because if you've exceeded your limit for the day, it'll be more than a few seconds before you can do it again.-->
-
-If you exceed your limit, doing an exponential backoff with a random jitter is the recommended way to handle 429s. This ensures that multiple requests don't introduce collisions on retries. 
-
-#### Azure AD service limits and restrictions
+## Azure AD service limits and restrictions
 
 A maximum of 50,000 Azure AD resources can be created in a single directory by users of the free edition of Azure Active Directory by default. If you have at least one verified domain, the default directory service quota in Azure AD is extended to 300,000 Azure AD resources.
 
@@ -69,4 +68,3 @@ Please refer to [Azure AD service limits and restrictions.](/azure/active-direct
 
 See also [SharePoint online limits](/office365/servicedescriptions/sharepoint-online-service-description/sharepoint-online-limits)
 and [Software boundaries and limits for SharePoint Servers 2016 and 2019.](/sharepoint/install/software-boundaries-and-limits-0)
-
