@@ -17,12 +17,17 @@ If an overwhelming number of requests occurs, throttling helps maintain optimal 
 ## Polling
 
 If your app polls to see whether a resource has changed, you may only do that once per day. 
-(except for teamsAsyncOperation, that's intended to be polled frequently) 
-If you need to hear about changes more frequently than that, you should create a subscription to that resource and receive change notifications (webhooks). 
-If we don't support the type of subscription you need, we apologize for not supporting your scenario, and encourage you to send that feedback in UserVoice. 
+(except for [teamsAsyncOperation](/api/resources/teamsasyncoperation), that's intended to be polled frequently) 
+If you need to hear about changes more frequently than that, you should [create a subscription](/api/subscription-post-subscriptions?view=graph-rest-beta) to that resource and receive change notifications (webhooks). 
+If we don't support the type of subscription you need, we apologize for not supporting your scenario, and encourage you to send that feedback in [UserVoice](https://microsoftgraph.uservoice.com/forums/920506-microsoft-graph-feature-requests?category_id=359626). 
 
 When polling for new messages, you must specify a date range where supported, 
 see [get channel messages delta](/graph/api/chatmessage-delta?view=graph-rest-beta) for details.
+
+Polling is GETting a resource over and over again to see if it's changed. 
+You are allowed to GET the same resource multiple times a day as long as it's not polling. 
+For example, it is okay to GET /me/joinedTeams every time the user visits/refreshes your webpage, 
+but it is not okay to GET /me/joinedTeams in a loop every 30 seconds to refresh that webpage.
 
 Apps that violate these terms of use may be subject to additional throttling or suspended entirely.
 
