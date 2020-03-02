@@ -104,12 +104,7 @@ Content-type: application/json
   "isDenyPolicy": false,
   "canExtend": false,
   "durationInDays": 365,
-  "accessReviewSettings": null,
-  "requestorSettings": {
-    "scopeType": "AllExistingDirectorySubjects",
-    "acceptRequests": true,
-    "allowedRequestors": []
-  }
+  "accessReviewSettings": null
 }
 ```
 

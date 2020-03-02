@@ -48,9 +48,13 @@ If successful, this method returns a 200-series response code and a new [accessP
 
 ## Examples
 
-### Request
+### Creating a direct assignment policy
 
-The following is an example of the request.
+A direct assignment policy is useful when access package assignment requests will only be created by an administrator, not by users themselves.
+
+#### Request
+
+The following is an example of the request to create an access package assignment policy.  In this policy, no users can request, no approval is required, and there are no access reviews.
 
 # [HTTP](#tab/http)
 <!-- {
@@ -96,8 +100,7 @@ Content-type: application/json
 
 ---
 
-
-### Response
+#### Response
 
 The following is an example of the response.
 
@@ -117,10 +120,136 @@ Content-type: application/json
   "id": "4c02f928-7752-49aa-8fc8-e286d973a965",
   "accessPackageId": "56ff43fd-6b05-48df-9634-956a777fce6d",
   "displayName": "direct",
-  "description": "direct assignments by administrator",
-  "isDenyPolicy": false
+  "description": "direct assignments by administrator"
 }
 ```
+
+### Creating a policy for users from other organizations to request
+
+The following example illustrates a more complex policy with two-stage approvals and access reviews.
+
+#### Request
+
+The following is an example of the request to create an access package assignment policy. 
+
+# [HTTP](#tab/http)
+<!-- {
+  "blockType": "request",
+  "name": "create_accesspackageassignmentpolicy_from_accesspackageassignmentpolicies"
+}-->
+
+```http
+POST https://graph.microsoft.com/beta/identityGovernance/entitlementManagement/accessPackageAssignmentPolicies
+Content-type: application/json
+
+{
+    "accessPackageId": "string (identifier)",
+    "displayName": "Users from connected organizations can request",
+    "description": "Allow users from configured connected organizations to request and be approved by their sponsors",
+    "canExtend": false,
+    "durationInDays": 365,
+    "expirationDateTime": null,
+    "requestorSettings": {
+        "scopeType": "AllExistingConnectedOrganizationSubjects",
+        "acceptRequests": true,
+        "allowedRequestors": []
+    },
+    "requestApprovalSettings": {
+        "isApprovalRequired": true,
+        "isApprovalRequiredForExtension": false,
+        "isRequestorJustificationRequired": true,
+        "approvalMode": "Serial",
+        "approvalStages": [
+            {
+                "approvalStageTimeOutInDays": 14,
+                "isApproverJustificationRequired": true,
+                "isEscalationEnabled": true,
+                "escalationTimeInMinutes": 11520,
+                "primaryApprovers": [
+                    {
+                        "@odata.type": "#microsoft.graph.groupMembers",
+                        "isBackup": true,
+                        "id": "string (identifier)",
+                        "description": "group for users from connected organizations which have no external sponsor"
+                    },
+                    {
+                        "@odata.type": "#microsoft.graph.externalSponsors",
+                        "isBackup": false
+                    }
+                ],
+                "escalationApprovers": [
+                    {
+                        "@odata.type": "#microsoft.graph.singleUser",
+                        "isBackup": true,
+                        "id": "string (identifier)",
+                        "description": "user if the external sponsor does not respond"
+                    }
+                ]
+            },
+            {
+                "approvalStageTimeOutInDays": 14,
+                "isApproverJustificationRequired": true,
+                "isEscalationEnabled": true,
+                "escalationTimeInMinutes": 11520,
+                "primaryApprovers": [
+                    {
+                        "@odata.type": "#microsoft.graph.groupMembers",
+                        "isBackup": true,
+                        "id": "string (identifier)",
+                        "description": "group for users from connected organizations which have no internal sponsor"
+                    },
+                    {
+                        "@odata.type": "#microsoft.graph.internalSponsors",
+                        "isBackup": false
+                    }
+                ],
+                "escalationApprovers": [
+                    {
+                        "@odata.type": "#microsoft.graph.singleUser",
+                        "isBackup": true,
+                        "id": "string (identifier)",
+                        "description": "user if the internal sponsor does not respond"
+                    }
+                ]
+            }
+        ]
+    },
+    "accessReviewSettings": {
+        "isEnabled": true,
+        "recurrenceType": "quarterly",
+        "reviewerType": "Self",
+        "startDateTime": "2020-04-01T07:59:59.998Z",
+        "durationInDays": 25,
+        "reviewers": []
+    }
+}
+```
+
+
+#### Response
+
+The following is an example of the response.
+
+> **Note:** The response object shown here might be shortened for readability. All the properties will be returned from an actual call.
+
+<!-- {
+  "blockType": "response",
+  "truncated": true,
+  "@odata.type": "microsoft.graph.accessPackageAssignmentPolicy"
+} -->
+
+```http
+HTTP/1.1 201 Created
+Content-type: application/json
+
+{
+  "id": "4c02f928-7752-49aa-8fc8-e286d973a965",
+  "accessPackageId": "string (identifier)",
+  "displayName": "Users from connected organizations can request",
+  "description": "Allow users from configured connected organizations to request and be approved by their sponsors"
+}
+```
+
 
 <!-- uuid: 16cd6b66-4b1a-43a1-adaf-3a886856ed98
 2019-02-04 14:57:30 UTC -->
