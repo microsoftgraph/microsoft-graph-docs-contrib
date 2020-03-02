@@ -9143,7 +9143,7 @@
             href: api/tokenissuancepolicy-delete.md
           - name: List applied to applications
             href: api/tokenissuancepolicy-list-appliesto.md
-          - name: Token lifetime policy
+        - name: Token lifetime policy
           href: resources/tokenlifetimepolicy.md
           items:
           - name: Create
