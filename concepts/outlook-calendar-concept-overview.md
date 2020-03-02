@@ -88,6 +88,10 @@ Use the [people API](people-example.md) in Microsoft Graph to connect to [people
 
 Save overhead in storing and managing app data in external data stores. With Microsoft Graph, you can store custom app data as [open extensions](extensibility-overview.md#open-extensions) in individual resource instances. If you require the data to be typed, or would like to be able to share the typed schema, you can store custom app data in [schema extensions](extensibility-overview.md#schema-extensions).
 
+## Where is the data?
+
+[!INCLUDE [outlook-mailbox-type-support](../includes/outlook-mailbox-type-support.md)]
+
 ## API reference
 
 Looking for the API reference for this service?
