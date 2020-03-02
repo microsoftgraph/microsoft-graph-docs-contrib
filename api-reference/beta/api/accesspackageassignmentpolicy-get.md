@@ -101,7 +101,6 @@ Content-type: application/json
   "accessPackageId": "1b153a13-76da-4d07-9afa-c6c2b1f2e824",
   "displayName": "All Users",
   "description": "All users in the directory can request access.",
-  "isDenyPolicy": false,
   "canExtend": false,
   "durationInDays": 365,
   "accessReviewSettings": null

@@ -8850,7 +8850,7 @@
           - name: Create
             href: api/accesspackageresourcerequest-post.md
         - name: Access package resource role scope
-          href: resources/accesspackageresourcerequest.md
+          href: resources/accesspackageresourcerolescope.md
           items:
           - name: List
             href: api/accesspackage-list-accesspackageresourcerolescopes.md
