@@ -398,21 +398,21 @@ None.
 
 > **Note:** See also [Group.Read.All](#group-permissions).
 
-## Channel Member permissions
+## Channel member permissions ([private preview](#permissions-availability-status))
 
 #### Delegated permissions
 
 |   Permission    |  Display String   |  Description | Admin Consent Required | Microsoft Account supported |
 |:----------------|:------------------|:-------------|:-----------------------|:--------------|
-|_ChannelMember.Read.All_ |Read the members of channels. |Read the members of channels, on behalf of the signed-in user. This permission is currently in private preview only and is not available for public use. |Yes | No |
-|_ChannelMember.ReadWrite.All_ | Add and remove members from channels. | Add and remove members from channels, on behalf of the signed-in user. Also allows changing a member's role, for example from owner to non-owner. This permission is currently in private preview only and is not available for public use. | Yes | No |
+|_ChannelMember.Read.All_ (private preview) |Read the members of channels. |Read the members of channels, on behalf of the signed-in user. |Yes | No |
+|_ChannelMember.ReadWrite.All_ (private preview)| Add and remove members from channels. | Add and remove members from channels, on behalf of the signed-in user. Also allows changing a member's role, for example from owner to non-owner. | Yes | No |
 
 #### Application permissions
 
 |   Permission    |  Display String   |  Description | Admin Consent Required | Microsoft Account supported |
 |:----------------|:------------------|:-------------|:-----------------------|:--------------|
-|_ChannelMember.Read.All_ |Read the members of all channels. |Read the members of all channels, without a signed-in user. This permission is currently in private preview only and is not available for public use. |Yes | No |
-|_ChannelMember.ReadWrite.All_ | Add and remove members from all channels. |Add and remove members from all channels, without a signed-in user. Also allows changing a member's role, for example from owner to non-owner. This permission is currently in private preview only and is not available for public use. | Yes | No |
+|_ChannelMember.Read.All_ (private preview)|Read the members of all channels. |Read the members of all channels, without a signed-in user. |Yes | No |
+|_ChannelMember.ReadWrite.All_ (private preview)| Add and remove members from all channels. |Add and remove members from all channels, without a signed-in user. Also allows changing a member's role, for example from owner to non-owner. | Yes | No |
 
 ## Chats permissions
 
