@@ -12,6 +12,9 @@ doc_type: apiPageType
 # Create unitsOfMeasure
 
 Namespace: microsoft.graph
+
+[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
+
 Create a units of measure object in Dynamics 365 Business Central.
 
 ## Permissions

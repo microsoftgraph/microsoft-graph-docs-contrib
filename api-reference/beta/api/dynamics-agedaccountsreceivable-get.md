@@ -13,6 +13,9 @@ ms.prod: "dynamics-365-business-central"
 # Get agedAccountsReceivable
 
 Namespace: microsoft.graph
+
+[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
+
 Retrieve the properties and relationships of an aged accounts receivable report object for Dynamics 365 Business Central.
 
 ## Permissions

@@ -12,6 +12,9 @@ doc_type: apiPageType
 # Update taxAreas
 
 Namespace: microsoft.graph
+
+[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
+
 Update the properties of a tax area object for Dynamics 365 Business Central.
 
 ## Permissions

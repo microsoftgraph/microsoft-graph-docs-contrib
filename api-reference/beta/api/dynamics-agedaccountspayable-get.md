@@ -12,6 +12,9 @@ doc_type: apiPageType
 # Get agedAccountsPayable
 
 Namespace: microsoft.graph
+
+[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
+
 Retrieve the properties and relationships of an aged accounts payable report object for Dynamics 365 Business Central.
 
 ## Permissions

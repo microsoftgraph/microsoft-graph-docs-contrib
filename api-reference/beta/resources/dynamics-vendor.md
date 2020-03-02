@@ -12,6 +12,9 @@ doc_type: resourcePageType
 # vendors resource type
 
 Namespace: microsoft.graph
+
+[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
+
 Represents a vendor in Dynamics 365 Business Central.
 
 ## Methods

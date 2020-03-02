@@ -12,6 +12,9 @@ doc_type: apiPageType
 # Update items
 
 Namespace: microsoft.graph
+
+[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
+
 Update the properties of an item object for Dynamics 365 Business Central.
 
 ## Permissions

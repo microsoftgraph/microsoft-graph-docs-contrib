@@ -11,6 +11,9 @@ doc_type: apiPageType
 # Create customerPayments
 
 Namespace: microsoft.graph
+
+[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
+
 Creates a customer payment object in Dynamics 365 Business Central.
 
 ## Permissions

@@ -12,6 +12,9 @@ doc_type: resourcePageType
 # paymentMethods resource type
 
 Namespace: microsoft.graph
+
+[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
+
 Represents a method of payment in Dynamics 365 Business Central, such as PayPal, credit card, and bank account.
 
 ## Methods

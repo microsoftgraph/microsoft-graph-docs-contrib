@@ -12,6 +12,9 @@ doc_type: apiPageType
 # Delete countriesRegions
 
 Namespace: microsoft.graph
+
+[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
+
 Delete a countries/regions object from Dynamics 365 Business Central.
 
 ## Permissions

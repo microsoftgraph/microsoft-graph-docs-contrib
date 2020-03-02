@@ -12,6 +12,9 @@ doc_type: resourcePageType
 # dimensionValues resource type
 
 Namespace: microsoft.graph
+
+[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
+
 Represents a dimension value in Dynamics 365 Business Central.
 
 ## Methods

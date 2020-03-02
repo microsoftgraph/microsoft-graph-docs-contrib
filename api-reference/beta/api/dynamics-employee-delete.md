@@ -12,6 +12,9 @@ doc_type: apiPageType
 # Delete employees
 
 Namespace: microsoft.graph
+
+[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
+
 Delete an employee from Dynamics 365 Business Central.
 
 ## Permissions

@@ -12,6 +12,9 @@ doc_type: apiPageType
 # Get employees
 
 Namespace: microsoft.graph
+
+[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
+
 Retrieve the properties and relationships of an employee object for Dynamics 365 Business Central.
 
 ## Permissions

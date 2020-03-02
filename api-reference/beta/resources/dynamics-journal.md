@@ -12,6 +12,9 @@ doc_type: resourcePageType
 # journal resource type
 
 Namespace: microsoft.graph
+
+[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
+
 Represents a journal in Dynamics 365 Business Central.
 
 ## Methods

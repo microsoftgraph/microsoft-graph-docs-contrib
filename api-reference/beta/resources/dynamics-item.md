@@ -12,6 +12,9 @@ doc_type: resourcePageType
 # items resource type
 
 Namespace: microsoft.graph
+
+[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
+
 Represents an item in Dynamics 365 Business Central.
 
 ## Methods
