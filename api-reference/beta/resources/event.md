@@ -109,7 +109,6 @@ Here is a JSON representation of the resource
 |createdDateTime|DateTimeOffset|The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 would look like this: `'2014-01-01T00:00:00Z'`|
 |end|[DateTimeTimeZone](datetimetimezone.md)|The date, time, and time zone that the event ends. By default, the end time is in UTC.|
 |hasAttachments|Boolean|Set to true if the event has attachments.|
-|iCalUId|String|A unique identifier as defined in [RFC5545](https://tools.ietf.org/html/rfc5545#section-3.8.4.7). It is shared by all instances of an event across different calendars. Read-only.|
 |id|String| Unique identifier for the event. [!INCLUDE [outlook-beta-id](../../includes/outlook-beta-id.md)] Read-only. |
 |importance|String|The importance of the event. Possible values are: `low`, `normal`, `high`.|
 |isAllDay|Boolean|Set to true if the event lasts all day. If true, regardless of whether it's a single-day or multi-day event, start and end time must be set to midnight and be in the same time zone.|
@@ -139,6 +138,7 @@ Here is a JSON representation of the resource
 |subject|String|The text of the event's subject line.|
 |transactionId|String|A custom identifier specified by a client app for the server to avoid redundant [POST](../api/calendar-post-events.md) operations in case of client retries to create the same event. This is useful when low network connectivity causes the client to time out before receiving a response from the server for the client's prior create-event request. After you set **transactionId** when creating an event, you cannot change **transactionId** in a subsequent update. This property is only returned in a response payload if an app has set it. Optional.|
 |type|String|The event type. Possible values are: `singleInstance`, `occurrence`, `exception`, `seriesMaster`. Read-only|
+|uid|String|A unique identifier for calendar events. For recurring events, the value is the same for the series master and all of its occurences including exceptions. This property will replace the current iCalUid property defined in the [event resource](/graph/api/resources/event?view=graph-rest-1.0), which is different for each instance in a series.|
 |webLink|String|The URL to open the event in Outlook on the web.<br/><br/>Outlook on the web opens the event in the browser if you are signed in to your mailbox. Otherwise, Outlook on the web prompts you to sign in.<br/><br/>This URL can be accessed from within an iFrame.|
 
 > [!NOTE]
