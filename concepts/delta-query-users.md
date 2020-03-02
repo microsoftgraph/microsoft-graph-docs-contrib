@@ -81,7 +81,7 @@ GET https://graph.microsoft.com/v1.0/users/delta?$skiptoken=oEBwdSP6uehIAxQOWq_3
 
 ## nextLink response
 
-The response contains a `nextLink` and another `skipToken`, indicating there are more users available. You continue making requests using the nextLink URL until a deltaLink URL is returned in the response.
+The response contains a `nextLink` and another `skipToken`, indicating there are more users available. You should continue making requests using the nextLink URL until a deltaLink URL is returned in the response even if the value is an empty array (may happen under certain circumstances).
 
 ```http
 HTTP/1.1 200 OK
