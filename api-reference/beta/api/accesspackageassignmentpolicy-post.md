@@ -132,10 +132,9 @@ The following example illustrates a more complex policy with two-stage approvals
 
 The following is an example of the request to create an access package assignment policy. 
 
-# [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
-  "name": "create_accesspackageassignmentpolicy_from_accesspackageassignmentpolicies"
+  "name": "create_accesspackageassignmentpolicy_from_accesspackageassignmentpolicies_multistage"
 }-->
 
 ```http
@@ -225,7 +224,6 @@ Content-type: application/json
 }
 ```
 
----
 
 #### Response
 
