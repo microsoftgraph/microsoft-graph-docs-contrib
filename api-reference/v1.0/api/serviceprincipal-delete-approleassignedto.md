@@ -9,7 +9,7 @@ author: "davidmu1"
 
 # Delete an appRoleAssignment granted for a service principal
 
-Deletes an [appRoleAssignment](../resources/approleassignment.md) which a user, group or client service principal has been granted for a resource service principal.
+Deletes an [appRoleAssignment](../resources/approleassignment.md) that a user, group, or client service principal has been granted for a resource service principal.
 
 ## Permissions
 
@@ -30,7 +30,7 @@ DELETE /servicePrincipals/{id}/appRoleAssignedTo/{id}
 ```
 
 > [!NOTE]
-> As a best practice, we recommend deleting app role assignments through the `appRoleAssignedTo` relationship of the _resource_ service principal, instead of the `appRoleAssignments` relationship of the assigned user, group or service principal.
+> As a best practice, we recommend deleting app role assignments through the `appRoleAssignedTo` relationship of the _resource_ service principal, instead of the `appRoleAssignments` relationship of the assigned user, group, or service principal.
 
 ## Request headers
 

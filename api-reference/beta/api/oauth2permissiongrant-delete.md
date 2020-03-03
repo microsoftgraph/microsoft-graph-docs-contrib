@@ -1,5 +1,5 @@
 ---
-title: "Delete a delegated permission grant (oAuth2PermissionGrant)"
+title: "Delete an oAuth2PermissionGrant"
 description: "Delete an oAuth2PermissionGrant, representing a delegated permission grant."
 localization_priority: Normal
 doc_type: apiPageType

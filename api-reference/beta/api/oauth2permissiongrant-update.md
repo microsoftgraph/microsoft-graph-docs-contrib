@@ -1,6 +1,6 @@
 ---
-title: "Update a delegated permission grant (oAuth2PermissionGrant)"
-description: "Update the properties of an oAuth2PermissionGrant object representing a delegated permission grant."
+title: "Update an oAuth2PermissionGrant"
+description: "Update the properties of an oAuth2PermissionGrant, representing a delegated permission grant."
 localization_priority: Normal
 doc_type: apiPageType
 ms.prod: "microsoft-identity-platform"

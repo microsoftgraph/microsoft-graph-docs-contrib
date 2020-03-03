@@ -9,7 +9,7 @@ author: "davidmu1"
 
 # Delete an appRoleAssignment granted to a service principal
 
-Deletes an [appRoleAssignment](../resources/approleassignment.md) which a service principal has been granted.
+Deletes an [appRoleAssignment](../resources/approleassignment.md) that a service principal has been granted.
 
 App roles which are assigned to service principals are also known as [application permissions](https://docs.microsoft.com/azure/active-directory/develop/v2-permissions-and-consent#permission-types). Deleting an app role assignment for a service principal is equivalent to revoking the app-only permission grant.
 
@@ -32,7 +32,7 @@ DELETE /servicePrincipals/{id}/appRoleAssignments/{id}
 ```
 
 > [!NOTE]
-> As a best practice, we recommend deleting app role assignments through the `appRoleAssignedTo` relationship of the _resource_ service principal, instead of the `appRoleAssignments` relationship of the assigned user, group or service principal.
+> As a best practice, we recommend deleting app role assignments through the `appRoleAssignedTo` relationship of the _resource_ service principal, instead of the `appRoleAssignments` relationship of the assigned user, group, or service principal.
 
 ## Request headers
 

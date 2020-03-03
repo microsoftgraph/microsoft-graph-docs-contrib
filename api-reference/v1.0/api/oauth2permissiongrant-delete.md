@@ -1,5 +1,5 @@
 ---
-title: "Delete a delegated permission grant (oAuth2PermissionGrant)"
+title: "Delete an oAuth2PermissionGrant"
 description: "Delete an oAuth2PermissionGrant, representing a delegated permission grant."
 localization_priority: Normal
 doc_type: apiPageType
@@ -29,13 +29,13 @@ One of the following permissions is required to call this API. To learn more, in
 ## HTTP request
 
 <!-- { "blockType": "ignored" } -->
+
 ```http
 DELETE /oAuth2Permissiongrants/{id}
-DELETE /users/{id | userPrincipalName}/oAuth2Permissiongrants/{id}
-DELETE /drive/root/createdByUser/oAuth2Permissiongrants/{id}
-
 ```
+
 ## Request headers
+
 | Name       | Type | Description|
 |:---------------|:--------|:----------|
 | Authorization  | string  | Bearer {token}. Required. |

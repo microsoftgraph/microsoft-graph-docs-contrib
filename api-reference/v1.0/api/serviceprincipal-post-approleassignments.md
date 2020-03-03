@@ -9,15 +9,16 @@ author: "davidmu1"
 
 # Grant an appRoleAssignment to a service principal
 
-Use this API to assign an app role to a client service principal.
 
-App roles which are assigned to service principals are also known as [application permissions](https://docs.microsoft.com/azure/active-directory/develop/v2-permissions-and-consent#permission-types). Application permissions can be granted directly with app role assignments, or through a [consent experience](https://docs.microsoft.com/azure/active-directory/develop/application-consent-experience).
+Assign an app role to a client service principal.
+
+App roles that are assigned to service principals are also known as [application permissions](https://docs.microsoft.com/azure/active-directory/develop/v2-permissions-and-consent#permission-types). Application permissions can be granted directly with app role assignments, or through a [consent experience](https://docs.microsoft.com/azure/active-directory/develop/application-consent-experience).
 
 To grant an app role assignment to a client service principal, you need three identifiers:
 
-1. `principalId`: The `id` of the client service principal to which you are assigning the app role.
-2. `resourceId`: The `id` of the resource `servicePrincipal` (the API) which has defined the app role (the application permission).
-3. `appRoleId`: The `id` of the `appRole` (defined on the resource service principal) to assign to the client service principal.
+- `principalId`: The `id` of the client service principal to which you are assigning the app role.
+- `resourceId`: The `id` of the resource `servicePrincipal` (the API) which has defined the app role (the application permission).
+- `appRoleId`: The `id` of the `appRole` (defined on the resource service principal) to assign to the client service principal.
 
 ## Permissions
 
@@ -37,7 +38,7 @@ POST /servicePrincipals/{id}/appRoleAssignments
 ```
 
 > [!NOTE]
-> As a best practice, we recommend creating app role assignments through the [`appRoleAssignedTo` relationship of the _resource_ service principal](serviceprincipal-post-approleassignedto.md), instead of the `appRoleAssignments` relationship of the assigned user, group or service principal.
+> As a best practice, we recommend creating app role assignments through the [`appRoleAssignedTo` relationship of the _resource_ service principal](serviceprincipal-post-approleassignedto.md), instead of the `appRoleAssignments` relationship of the assigned user, group, or service principal.
 
 ## Request headers
 
@@ -48,11 +49,11 @@ POST /servicePrincipals/{id}/appRoleAssignments
 
 ## Request body
 
-In the request body, supply a JSON representation of [appRoleAssignment](../resources/approleassignment.md) object.
+In the request body, supply a JSON representation of an [appRoleAssignment](../resources/approleassignment.md) object.
 
 ## Response
 
-If successful, this method returns `201 Created` response code and [appRoleAssignment](../resources/approleassignment.md) object in the response body.
+If successful, this method returns a `201 Created` response code and an [appRoleAssignment](../resources/approleassignment.md) object in the response body.
 
 ## Examples
 
@@ -81,7 +82,9 @@ In this example, `{id}` and `{principalId-value}` would both be the `id` of the 
 
 ### Response
 
-Here is an example of the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.
+Here is an example of the response. 
+
+> **Note:** The response object shown here might be shortened for readability. All the properties will be returned from an actual call.
 
 <!-- {
   "blockType": "response",
