@@ -11,7 +11,7 @@ author: "davidmu1"
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Retrieve the list of [appRoleAssignment](../resources/approleassignment.md) that a user has been granted. Also returns app roles assigned to groups that the user is a direct member of.
+Retrieve the list of [appRoleAssignment](../resources/approleassignment.md) that a user has been granted. This operation also returns app roles assigned to groups that the user is a direct member of.
 
 ## Permissions
 
@@ -34,7 +34,7 @@ GET /users/{id | userPrincipalName}/appRoleAssignments
 
 This method supports the [OData query parameters](/graph/query_parameters) to help customize the response.
 
-See [supported filter patterns](../resources/approleassignment.md#supported-filter-patterns) to learn how to search for and filter app role assignments.
+To learn how to search for and filter app role assignments, see [supported filter patterns](../resources/approleassignment.md#supported-filter-patterns).
 
 ## Request headers
 
@@ -48,13 +48,13 @@ Do not supply a request body for this method.
 
 ## Response
 
-If successful, this method returns a `200 OK` response code and collection of [appRoleAssignment](../resources/approleassignment.md) objects in the response body.
+If successful, this method returns a `200 OK` response code and a collection of [appRoleAssignment](../resources/approleassignment.md) objects in the response body.
 
 ## Example
 
 ### Request
 
-Here is an example of the request to retrieve the app roles which have been assigned to a user.
+Here is an example of the request to retrieve the app roles that have been assigned to a user.
 
 <!-- {
   "blockType": "request",
