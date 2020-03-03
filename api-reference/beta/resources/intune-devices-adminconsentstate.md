@@ -20,7 +20,7 @@ Admin consent state.
 |:---|:---|:---|
 |notConfigured|0|Admin did not configure the item|
 |granted|1|Admin granted item|
-|notGranted|2|Admin deos not grant item|
+|notGranted|2|Admin does not grant item|
 
 
 
