@@ -11,7 +11,7 @@ author: "davidmu1"
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Retrieve the list of [appRoleAssignment](../resources/approleassignment.md) that a group has been granted.
+Retrieve the list of [appRoleAssignment](../resources/approleassignment.md) that have been granted to a group.
 
 ## Permissions
 
