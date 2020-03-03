@@ -13,8 +13,6 @@ You can use the components by referencing the loader directly (via unpkg), or by
 
 ## Use via mgt-loader
 
-See the following [jsfiddle example](https://jsfiddle.net/metulev/9phqxLd5/).
-
 ```html
 <script src="https://unpkg.com/@microsoft/mgt/dist/bundle/mgt-loader.js"></script>
 ```
