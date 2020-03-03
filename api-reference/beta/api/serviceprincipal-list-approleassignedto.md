@@ -11,11 +11,11 @@ author: "davidmu1"
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Retrieve a list of [appRoleAssignment](../resources/approleassignment.md) which users, groups or client service principals have been granted for the given resource service principal.
+Retrieve a list of [appRoleAssignment](../resources/approleassignment.md) that users, groups, or client service principals have been granted for the given resource service principal.
 
-For example, if the resource service principal is the service principal for the Microsoft Graph API, this will return all service principals which have been granted any app-only permissions to Microsoft Graph.
+For example, if the resource service principal is the service principal for the Microsoft Graph API, this will return all service principals that have been granted any app-only permissions to Microsoft Graph.
 
-If the resource service principal is an application which has app roles granted to users and groups, this will return all the users and groups assigned app roles for this application.
+If the resource service principal is an application that has app roles granted to users and groups, this will return all the users and groups assigned app roles for this application.
 
 ## Permissions
 
@@ -36,9 +36,9 @@ GET /servicePrincipals/{id}/appRoleAssignedTo
 
 ## Optional query parameters
 
-This method supports the [OData Query Parameters](https://developer.microsoft.com/graph/docs/concepts/query_parameters) to help customize the response.
+This method supports the [OData query parameters](/graph/query-parameters) to help customize the response.
 
-See [supported filter patterns](../resources/approleassignment.md#supported-filter-patterns) to learn how to search for and filter app role assignments.
+To learn how to search for and filter app role assignments, see [supported filter patterns](../resources/approleassignment.md#supported-filter-patterns).
 
 ## Request headers
 
@@ -52,13 +52,13 @@ Do not supply a request body for this method.
 
 ## Response
 
-If successful, this method returns a `200 OK` response code and collection of [appRoleAssignment](../resources/approleassignment.md) objects in the response body.
+If successful, this method returns a `200 OK` response code and a collection of [appRoleAssignment](../resources/approleassignment.md) objects in the response body.
 
 ## Example
 
 ### Request
 
-Here is an example of the request to retrieve the app roles assignments which have been granted for a given resource service principal.
+The following is an example of the request to retrieve the app roles assignments that have been granted for a given resource service principal.
 
 <!-- {
   "blockType": "request",
@@ -71,7 +71,9 @@ GET https://graph.microsoft.com/beta/servicePrincipals/{id}/appRoleAssignedTo
 
 ### Response
 
-Here is an example of the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.
+Here is an example of the response. 
+
+> **Note:** The response object shown here might be shortened for readability. All the properties will be returned from an actual call.
 
 <!-- {
   "blockType": "response",
