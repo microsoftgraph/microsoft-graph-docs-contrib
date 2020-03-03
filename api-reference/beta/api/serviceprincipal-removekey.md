@@ -11,7 +11,7 @@ doc_type: "apiPageType"
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Removes a key credential from a [servicePrincipal](../resources/serviceprincipal.md). This method along with [addKey](serviceprincipal-addkey.md) can be used by a servicePrincipal to automate rolling its expiring keys.
+Remove a key credential from a [servicePrincipal](../resources/serviceprincipal.md). This method along with [addKey](serviceprincipal-addkey.md) can be used by a servicePrincipal to automate rolling its expiring keys.
 
 > [!Note]
 > [Create servicePrincipal](../api/serviceprincipal-post-serviceprincipals.md) and
@@ -21,7 +21,7 @@ As part of the request validation for this method, a proof of possession of an e
 
 ## Permissions
 
-None. A servicePrincipal does not need any specific permission to roll it's own keys.
+None. A servicePrincipal does not need any specific permission to roll its own keys.
 
 ## HTTP request
 
@@ -53,7 +53,7 @@ If successful, this method returns a `204 No content` response code.
 
 ## Examples
 
-The following is example shows how to call this API.
+The following example shows how to call this API.
 
 ### Request
 
