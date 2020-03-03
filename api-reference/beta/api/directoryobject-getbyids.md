@@ -29,6 +29,8 @@ One of the following permissions is required to call this API. To learn more, in
 |Delegated (personal Microsoft account) | Not supported.    |
 |Application | Directory.Read.All |
 
+[!INCLUDE [limited-info](../../includes/limited-info.md)]
+
 ## HTTP request
 
 <!-- { "blockType": "ignored" } -->

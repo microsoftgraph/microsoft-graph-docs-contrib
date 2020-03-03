@@ -1,22 +1,24 @@
 ---
-title: "Search API overview (preview)"
-description: "Learn about using the Microsoft Search API to index content and add search across your Office & indexed content into your apps."
+title: "Overview of the Microsoft Search API in Microsoft Graph (preview)"
+description: "Use the Microsoft Search API to index content and add search across your Office and indexed content to your apps."
 localization_priority: Priority
 ms.prod: "search"
 author: "snlraju-msft"
 scenarios: "getting-started"
 ---
 
-# Overview for extending the Microsoft Search experience for apps on Microsoft Graph (preview)
+# Overview of the Microsoft Search API in Microsoft Graph (preview)
 
-Microsoft Search is an enterprise search engine that delivers productivity gains and relevant search results for your organization. It harnesses the collective knowledge and productivity of an organization, and surfaces relevant content to keep end users up to date. Microsoft Search is available in various experiences including Office, SharePoint, Delve, Windows, and Bing.
+Microsoft Search is an enterprise search engine that delivers productivity gains and relevant search results for your organization. It harnesses the collective knowledge and productivity of an organization, and surfaces relevant content to keep end users up to date. Microsoft Search is available in various experiences including Office, SharePoint, Delve, Windows, and Bing. You can use the Microsoft Search API in Microsoft Graph to extend Microsoft Search to your apps.
+
+[!INCLUDE [search-api-preview-signup](../includes/search-api-preview-signup.md)]
 
 <!-- markdownlint-disable MD026 -->
 ## Why use the Microsoft Search API?
 
 ### One unified search endpoint for Microsoft cloud data
 
-The Microsoft Search API provides one unified search endpoint to let developers [query](/graph/api/search-query?view=graph-rest-beta) data in the Microsoft cloud - messages and events in Outlook mailboxes, and files on OneDrive and SharePoint - data that Microsoft Search already indexes.
+The Microsoft Search API provides one unified search endpoint that you can use to [query](/graph/api/search-query?view=graph-rest-beta) data in the Microsoft cloud - messages and events in Outlook mailboxes, and files on OneDrive and SharePoint - that Microsoft Search already indexes.
 
 ### Include custom external data in search experience
 
@@ -24,19 +26,19 @@ Customers who want to include data outside of the Microsoft cloud in their searc
 
 ### Consistent, up-to-date search experience
 
-Using the Microsoft Search API, customers benefit from getting more personalized relevant results powered by Microsoft Graph. This also makes search in your apps return results consistent with search in Office applications.
+When you use the Microsoft Search API, your customers benefit from more personalized, relevant search results powered by Microsoft Graph. The search experience in your apps will return results that are consistent with search in Office applications.
 
-## What data can I add or access by using these APIs?
+## What data can I add or access by using the Microsoft Search API?
 
-Microsoft Search supports searching content in the Microsoft cloud:
+The Microsoft Search API supports searching the following content in the Microsoft cloud:
 
 - Outlook [message](/graph/api/resources/message?view=graph-rest-beta) and [event](/graph/api/resources/event?view=graph-rest-beta) objects
 - SharePoint and OneDrive [driveItem](/graph/api/resources/driveitem?view=graph-rest-beta) file objects
 
-In addition, you can index and search external content:
+In addition, you can index and search external content via the following:
 
-- [externalItem](/graph/api/resources/externalitem?view=graph-rest-beta) objects which are of custom types
-- [externalFile](/graph/api/resources/externalfile?view=graph-rest-beta) objects which are of well-known types
+- [externalItem](/graph/api/resources/externalitem?view=graph-rest-beta) objects, which are of custom types
+- [externalFile](/graph/api/resources/externalfile?view=graph-rest-beta) objects, which are of well-known types
 
 ## API reference
 
@@ -60,6 +62,4 @@ Looking for the API reference for this service?
 
 ## See also
 
-Engage with the community:
-
-- [Discuss on StackOverflow](https://stackoverflow.com/questions/tagged/microsoft-search)
+- Engage with the community on [Stack Overflow](https://stackoverflow.com/questions/tagged/microsoft-graph-search).

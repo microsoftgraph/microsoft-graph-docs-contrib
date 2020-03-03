@@ -63,7 +63,7 @@ Here is an example of the response. Note: The response object shown here may be 
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 3192
+Content-Length: 3242
 
 {
   "value": {
@@ -158,11 +158,11 @@ Content-Length: 3192
       "productName": "Product Name value",
       "publisher": "Publisher value"
     },
-    "setupFilePath": "Setup File Path value"
+    "setupFilePath": "Setup File Path value",
+    "installLanguage": "Install Language value"
   }
 }
 ```
-
 
 
 

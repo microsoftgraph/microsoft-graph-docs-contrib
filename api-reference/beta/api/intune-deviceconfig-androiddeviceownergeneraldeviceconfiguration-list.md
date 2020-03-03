@@ -59,7 +59,7 @@ Here is an example of the response. Note: The response object shown here may be 
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 4988
+Content-Length: 5047
 
 {
   "value": [
@@ -105,6 +105,7 @@ Content-Length: 4988
       "bluetoothBlockContactSharing": true,
       "cameraBlocked": true,
       "cellularBlockWiFiTethering": true,
+      "certificateCredentialConfigurationDisabled": true,
       "dataRoamingBlocked": true,
       "dateTimeConfigurationBlocked": true,
       "factoryResetDeviceAdministratorEmails": [
@@ -176,15 +177,14 @@ Content-Length: 4988
       "usersBlockAdd": true,
       "usersBlockRemove": true,
       "volumeBlockAdjustment": true,
-      "vpnAlwaysOnPackageIdentifier": "Vpn Always On Package Identifier value",
       "vpnAlwaysOnLockdownMode": true,
+      "vpnAlwaysOnPackageIdentifier": "Vpn Always On Package Identifier value",
       "wifiBlockEditConfigurations": true,
       "wifiBlockEditPolicyDefinedConfigurations": true
     }
   ]
 }
 ```
-
 
 
 

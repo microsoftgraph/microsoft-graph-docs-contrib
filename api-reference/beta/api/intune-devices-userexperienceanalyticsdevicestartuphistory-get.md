@@ -61,7 +61,7 @@ Here is an example of the response. Note: The response object shown here may be 
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 499
+Content-Length: 631
 
 {
   "value": {
@@ -75,12 +75,14 @@ Content-Length: 499
     "totalBootTimeInMs": 1,
     "groupPolicyLoginTimeInMs": 8,
     "coreLoginTimeInMs": 1,
+    "responsiveDesktopTimeInMs": 9,
     "totalLoginTimeInMs": 2,
-    "isFirstLogin": true
+    "isFirstLogin": true,
+    "isFeatureUpdate": true,
+    "operatingSystemVersion": "Operating System Version value"
   }
 }
 ```
-
 
 
 
