@@ -21,7 +21,13 @@ As part of the request validation for this method, a proof of possession of an e
 
 ## Permissions
 
-None. A servicePrincipal does not need any specific permission to roll its own keys.
+|Permission type      | Permissions (from least to most privileged)              |
+|:--------------------|:---------------------------------------------------------|
+|Delegated (work or school account) | None.  |
+|Delegated (personal Microsoft account) | None.    |
+|Application | None. |
+
+> [!Note] A servicePrincipal does not need any specific permission to roll it's own keys.
 
 ## HTTP request
 
@@ -45,7 +51,7 @@ In the request body, provide the following required properties.
 | Property	| Type | Description|
 |:----------|:-----|:-----------|
 | keyId     | GUID | The unique identifier for the password.|
-| proof | String | A self-signed JWT token used as a proof of possession of the existing keys. This JWT token must be signed using the private key of one of the servicePrincipal's existing valid certificates. The token should contain the following claims:<ul><li>`aud` - Audience needs to be `00000002-0000-0000-c000-000000000000`.</li><li>`iss` - Issuer needs to be the __id__  of the servicePrincipal that is making the call.</li><li>`nbf` - Not before time.</li><li>`exp` - Expiration time should be "nbf" + 10 mins.</li></ul><br>A code [sample](#sample-to-generate-proof-token) to generate this proof of possession token is provided at the end of this topic.|
+| proof | String | A self-signed JWT token used as a proof of possession of the existing keys. This JWT token must be signed using the private key of one of the servicePrincipal's existing valid certificates. The token should contain the following claims:<ul><li>`aud` - Audience needs to be `00000002-0000-0000-c000-000000000000`.</li><li>`iss` - Issuer needs to be the __id__  of the servicePrincipal that is making the call.</li><li>`nbf` - Not before time.</li><li>`exp` - Expiration time should be "nbf" + 10 mins.</li></ul><br>Here is a code [sample](/concepts/application-rollkey-prooftoken.md) that can be used to generate this proof of possession token.|
 
 ## Response
 
@@ -96,56 +102,3 @@ HTTP/1.1 204 No Content
   "section": "documentation",
   "tocPath": ""
 }-->
-
-## Sample to generate proof token
-
-The following sample could be used to generate the proof token:
-
-```csharp
-using System;
-using System.Collections.Generic;
-using System.Security.Cryptography.X509Certificates;
-using Microsoft.IdentityModel.Tokens;
-using Microsoft.IdentityModel.JsonWebTokens;
-
-namespace MicrosoftIdentityPlatformProofTokenGenerator
-{
-    class Program
-    {
-        static void Main(string[] args)
-        {
-            // Configure the following
-            string pfxFilePath = "<Path to your certificate file";
-            string password = "<Certificate password>";
-            string objectId = "<id of the servicePrincipal object>";
-
-            // Get signing certificate
-            X509Certificate2 signingCert = new X509Certificate2(pfxFilePath, password);
-
-            // audience
-            string aud = $"00000002-0000-0000-c000-000000000000";
-
-            // aud and iss are the only required claims.
-            var claims = new Dictionary<string, object>()
-            {
-                { "aud", aud },
-                { "iss", objectId }
-            };
-
-            // token validity should not be more than 10 minutes
-            var now = DateTime.UtcNow;
-            var securityTokenDescriptor = new SecurityTokenDescriptor
-            {
-                Claims = claims,
-                NotBefore = now,
-                Expires = now.AddMinutes(10),
-                SigningCredentials = new X509SigningCredentials(signingCert)
-            };
-
-            var handler = new JsonWebTokenHandler();
-            var x = handler.CreateToken(securityTokenDescriptor);
-            Console.WriteLine(x);
-        }
-    }
-}
-```
