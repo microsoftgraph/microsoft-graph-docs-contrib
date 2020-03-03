@@ -11,7 +11,7 @@ author: "davidmu1"
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Retrieve the list of [appRoleAssignment](../resources/approleassignment.md) which a user has been granted. Also returns app roles assigned to groups which the user is a direct member of.
+Retrieve the list of [appRoleAssignment](../resources/approleassignment.md) that a user has been granted. Also returns app roles assigned to groups that the user is a direct member of.
 
 ## Permissions
 
@@ -32,7 +32,7 @@ GET /users/{id | userPrincipalName}/appRoleAssignments
 
 ## Optional query parameters
 
-This method supports the [OData Query Parameters](https://developer.microsoft.com/graph/docs/concepts/query_parameters) to help customize the response.
+This method supports the [OData query parameters](/graph/query_parameters) to help customize the response.
 
 See [supported filter patterns](../resources/approleassignment.md#supported-filter-patterns) to learn how to search for and filter app role assignments.
 
@@ -67,7 +67,9 @@ GET https://graph.microsoft.com/beta/users/{id}/appRoleAssignments
 
 ### Response
 
-Here is an example of the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.
+Here is an example of the response. 
+
+> **Note:** The response object shown here might be shortened for readability. All the properties will be returned from an actual call.
 
 <!-- {
   "blockType": "response",

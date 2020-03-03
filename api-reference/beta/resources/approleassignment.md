@@ -1,17 +1,17 @@
 ---
 title: "appRoleAssignment resource type"
-description: "Used to record when a user, group or service principal is assigned to an app role on an application's service principal. You can create, read and delete app role assignments."
+description: "Used to record when a user, group, or service principal is assigned to an app role on an application's service principal. You can create, read and delete app role assignments."
 localization_priority: Priority
 doc_type: resourcePageType
 ms.prod: "microsoft-identity-platform"
-author: "psignoret"
+author: "davidmu1"
 ---
 
 # appRoleAssignment resource type
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Used to record when a user, group or service principal is assigned an app role for an app.
+Used to record when a user, group, or service principal is assigned an app role for an app.
 
 An app role assignment is a relationship between the assigned principal (a user, a group, or a service principal), a resource application (the app's service principal) and an app role defined on the resource application.
 
@@ -29,7 +29,7 @@ An app role assignment where the assigned principal is a service principal is an
 | creationTimestamp | DateTimeOffset | The time when the app role assignment was created.The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 would look like this: `'2014-01-01T00:00:00Z'`. Read-only. Does not support `$filter`. |
 | principalId | Guid | The unique identifier (**id**) for the [user](user.md), [group](group.md) or [service principal](serviceprincipal.md) being granted the app role. Required on create. Does not support `$filter` (see [note](#unsupported-filter-patterns)). |
 | principalType | String | The type of the assigned principal. This can either be "User", "Group" or "ServicePrincipal". Read-only. Does not support `$filter`. |
-| principalDisplayName | String |The display name of the user, group or service principal that was granted the app role assignment. Read-only. Supports `$filter` (`eq` and `startswith`). |
+| principalDisplayName | String |The display name of the user, group, or service principal that was granted the app role assignment. Read-only. Supports `$filter` (`eq` and `startswith`). |
 | resourceId | Guid |The unique identifier (**id**) for the resource [service principal](serviceprincipal.md) for which the assignment is made. Required on create. Supports `$filter` (`eq` only). |
 | resourceDisplayName | String | The display name of the resource app's service principal to which the assignment is made. Does not support `$filter`. |
 | appRoleId | Guid | The identifier (**id**) for the [app role](approle.md) which is assigned to the principal. This app role must be exposed in the **appRoles** property on the resource application's service principal (**resourceId**). If the resource application has not declared any app roles, a default app role ID of `00000000-0000-0000-0000-000000000000` can be specified to signal that the principal is assigned to the resource app without any specific app roles. Required on create. Does not support `$filter`. |
@@ -63,9 +63,9 @@ Here is a JSON representation of the resource
 
 Below are some common query patterns for app role assignments.
 
-### List the app role assignments a user, group or service principal has been granted for an app
+### List the app role assignments a user, group, or service principal has been granted for an app
 
-To find the app role assignments granted to a user, group or service principal (`{principal-id}`), for a given resource app (`{resource-id}`), query the `appRoleAssignments` navigation of the assigned principal and filter by `resourceId`.
+To find the app role assignments granted to a user, group, or service principal (`{principal-id}`), for a given resource app (`{resource-id}`), query the `appRoleAssignments` navigation of the assigned principal and filter by `resourceId`.
 
 ```http
 GET https://graph.microsoft.com/beta/users/{principal-id}/appRoleAssignments
@@ -84,7 +84,7 @@ GET https://graph.microsoft.com/beta/servicePrincipals/{principal-id}/appRoleAss
 
 ### Search for assigned principal by display name
 
-To find the app role assignments granted for an app (`{resource-id}`) and filter by the assigned users, groups and service principals' display name, query the `appRoleAssignedTo` navigation of the resource app's service principal and filter by `principalDisplayName`.
+To find the app role assignments granted for an app (`{resource-id}`) and filter by the assigned users, groups, and service principals' display name, query the `appRoleAssignedTo` navigation of the resource app's service principal and filter by `principalDisplayName`.
 
 ```http
 GET https://graph.microsoft.com/beta/servicePrincipals/{resource-id}/appRoleAssignedTo
@@ -100,7 +100,7 @@ GET https://graph.microsoft.com/beta/servicePrincipals/{resource-id}/appRoleAssi
 
 The following are some examples scenarios where service-side filtering is not currently supported, and client-side filtering may be required:
 
-* Filtering by `resourceDisplayName` for a given user, group or service principal is not supported. Instead, retrieve all app role assignments granted to assigned principal (with the `appRoleAssignments` navigation) and filter the results on the client side. Alternatively, filter all [**servicePrincipals**](../resources/serviceprincipal.md) to find the resource app's service principal `id`, and then filter the assigned principal's `appRoleAssignments` by `resourceId`. 
+* Filtering by `resourceDisplayName` for a given user, group, or service principal is not supported. Instead, retrieve all app role assignments granted to assigned principal (with the `appRoleAssignments` navigation) and filter the results on the client side. Alternatively, filter all [**servicePrincipals**](../resources/serviceprincipal.md) to find the resource app's service principal `id`, and then filter the assigned principal's `appRoleAssignments` by `resourceId`. 
 * Filtering by `appRoleId` is not supported. Instead, retrieve all app role assignments for the assigned principal and resource app (`appRoleAssignments` filtered by `resourceId`), or all app role assignments for the resource app (`appRoleAssignedTo`), and then further filter the results on the client side.
 * Filtering by `principalId` is not supported, but is usually not needed. Instead, query the assigned principal's app role assignments and filter by `resourceId`.
 

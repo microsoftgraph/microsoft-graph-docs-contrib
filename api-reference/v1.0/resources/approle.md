@@ -9,14 +9,15 @@ author: "davidmu1"
 
 # appRole resource type
 
-Represents an application role that may be requested by a client application calling another application or that may be used to assign an application to users or groups in a specified application role. The **appRoles** property <!-- of the [servicePrincipal](serviceprincipal.md) entity and --> of the [application](application.md) entity is a collection of **appRole**.
+Represents an application role which may be requested by (and granted to) a client application, or which may be used to assign an application to users or groups in a specified role. 
 
 The **appRoles** property of the [application](application.md) and [servicePrincipal](serviceprincipal.md) entities are a collection of **appRole**. 
 
 With [appRoleAssignments](approleassignment.md), app roles can be assigned to users, groups, or other applications' service principals.
 
 ## Properties
-| Property	   | Type	|Description|
+
+| Property   | Type |Description|
 |:---------------|:--------|:----------|
 |allowedMemberTypes|String collection|Specifies whether this app role can be assigned to users and groups (by setting to `["User"]`), to other application's (by setting to `["Application"]`, or both (by setting to `["User", "Application"]`). App roles supporting assignment of other applications' service principals are also known as [application permissions](/graph/auth/auth-concepts#microsoft-graph-permissions).|
 |description|String|The description for the app role. This is displayed when the app role is being assigned and, if the app role functions as an application permission, during  consent experiences.|

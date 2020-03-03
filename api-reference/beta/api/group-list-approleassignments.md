@@ -1,6 +1,6 @@
 ---
 title: "List appRoleAssignments granted to a group"
-description: "Retrieve the list of app role assignments granted to a group."
+description: "Retrieve the list of appRoleAssignments that have been granted to a group."
 localization_priority: Priority
 doc_type: apiPageType
 ms.prod: "microsoft-identity-platform"
@@ -11,7 +11,7 @@ author: "davidmu1"
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Retrieve the list of [appRoleAssignment](../resources/approleassignment.md) which a group has been granted.
+Retrieve the list of [appRoleAssignment](../resources/approleassignment.md) that a group has been granted.
 
 ## Permissions
 
@@ -32,7 +32,7 @@ GET /groups/{id}/appRoleAssignments
 
 ## Optional query parameters
 
-This method supports the [OData Query Parameters](https://developer.microsoft.com/graph/docs/concepts/query_parameters) to help customize the response.
+This method supports the [OData query parameters](/graph/query_parameters) to help customize the response.
 
 See [supported filter patterns](../resources/approleassignment.md#supported-filter-patterns) to learn how to search for and filter app role assignments.
 
@@ -67,7 +67,9 @@ GET https://graph.microsoft.com/beta/groups/{id}/appRoleAssignments
 
 ### Response
 
-Here is an example of the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.
+Here is an example of the response.
+
+> **Note:** The response object shown here might be shortened for readability. All the properties will be returned from an actual call.
 
 <!-- {
   "blockType": "response",

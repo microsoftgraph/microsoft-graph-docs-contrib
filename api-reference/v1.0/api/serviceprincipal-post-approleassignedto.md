@@ -9,15 +9,16 @@ author: "davidmu1"
 
 # Grant an appRoleAssignment for a service principal
 
-Use this API to assign an app role for a resource service principal, to a user, group or client service principal.
 
-App roles which are assigned to service principals are also known as [application permissions](https://docs.microsoft.com/azure/active-directory/develop/v2-permissions-and-consent#permission-types). Application permissions can be granted directly with app role assignments, or through a [consent experience](https://docs.microsoft.com/azure/active-directory/develop/application-consent-experience).
+Assign an app role for a resource service principal, to a user, group, or client service principal.
 
-To grant an app role assignment you need three identifiers:
+App roles that are assigned to service principals are also known as [application permissions](https://docs.microsoft.com/azure/active-directory/develop/v2-permissions-and-consent#permission-types). Application permissions can be granted directly with app role assignments, or through a [consent experience](https://docs.microsoft.com/azure/active-directory/develop/application-consent-experience).
 
-1. `principalId`: The `id` of the **user**, **group** or client **servicePrincipal** to which you are assigning the app role.
-2. `resourceId`: The `id` of the resource **servicePrincipal** which has defined the app role.
-3. `appRoleId`: The `id` of the **appRole** (defined on the resource service principal) to assign to a user, group or service principal.
+To grant an app role assignment, you need three identifiers:
+
+- `principalId`: The `id` of the **user**, **group** or client **servicePrincipal** to which you are assigning the app role.
+- `resourceId`: The `id` of the resource **servicePrincipal** which has defined the app role.
+- `appRoleId`: The `id` of the **appRole** (defined on the resource service principal) to assign to a user, group, or service principal.
 
 ## Permissions
 
@@ -45,11 +46,11 @@ POST /servicePrincipals/{id}/appRoleAssignedTo
 
 ## Request body
 
-In the request body, supply a JSON representation of [appRoleAssignment](../resources/approleassignment.md) object.
+In the request body, supply a JSON representation of an [appRoleAssignment](../resources/approleassignment.md) object.
 
 ## Response
 
-If successful, this method returns `201 Created` response code and [appRoleAssignment](../resources/approleassignment.md) object in the response body.
+If successful, this method returns a `201 Created` response code and an [appRoleAssignment](../resources/approleassignment.md) object in the response body.
 
 ## Examples
 
@@ -74,11 +75,13 @@ Content-Length: 110
 }
 ```
 
-In this example, `{id}` and `{resourceId-value}` would both be the `id` of the resource service principal, and `{principalId}` would be the `id` of the assigned user, group or client service principal.
+In this example, `{id}` and `{resourceId-value}` would both be the `id` of the resource service principal, and `{principalId}` would be the `id` of the assigned user, group, or client service principal.
 
 ### Response
 
-Here is an example of the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.
+Here is an example of the response. 
+
+> **Note:** The response object shown here might be shortened for readability. All the properties will be returned from an actual call.
 
 <!-- {
   "blockType": "response",

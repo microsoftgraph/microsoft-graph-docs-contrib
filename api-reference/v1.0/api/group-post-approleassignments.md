@@ -11,11 +11,11 @@ author: "davidmu1"
 
 Use this API to assign an app role to a group. All direct members of the group will be considered assigned. To grant an app role assignment to a group, you need three identifiers:
 
-1. `principalId`: The `id` of the group to which you are assigning the app role.
-2. `resourceId`: The `id` of the resource `servicePrincipal` which has defined the app role.
-3. `appRoleId`: The `id` of the `appRole` (defined on the resource service principal) to assign to the group.
+- `principalId`: The `id` of the group to which you are assigning the app role.
+- `resourceId`: The `id` of the resource `servicePrincipal` which has defined the app role.
+- `appRoleId`: The `id` of the `appRole` (defined on the resource service principal) to assign to the group.
 
-Additional licenses may be required to [use a group to manage access to applications](https://docs.microsoft.com/azure/active-directory/users-groups-roles/groups-saasapps).
+Additional licenses might be required to [use a group to manage access to applications](https://docs.microsoft.com/azure/active-directory/users-groups-roles/groups-saasapps).
 
 ## Permissions
 
@@ -23,9 +23,9 @@ One of the following permissions is required to call this API. To learn more, in
 
 |Permission type      | Permissions (from least to most privileged)              |
 |:--------------------|:---------------------------------------------------------|
-|Delegated (work or school account) | AppRoleAssignment.ReadWrite.All,Directory.AccessAsUser.All    |
+|Delegated (work or school account) | AppRoleAssignment.ReadWrite.All, Directory.AccessAsUser.All    |
 |Delegated (personal Microsoft account) | Not supported.    |
-|Application | AppRoleAssignment.ReadWrite.All, |
+|Application | AppRoleAssignment.ReadWrite.All |
 
 ## HTTP request
 
@@ -35,7 +35,7 @@ POST /groups/{id}/appRoleAssignments
 ```
 
 > [!NOTE]
-> As a best practice, we recommend creating app role assignments through the `appRoleAssignedTo` relationship of the _resource_ service principal, instead of the `appRoleAssignments` relationship of the assigned user, group or service principal.
+> As a best practice, we recommend creating app role assignments through the `appRoleAssignedTo` relationship of the _resource_ service principal, instead of the `appRoleAssignments` relationship of the assigned user, group, or service principal.
 
 ## Request headers
 
@@ -46,11 +46,11 @@ POST /groups/{id}/appRoleAssignments
 
 ## Request body
 
-In the request body, supply a JSON representation of [appRoleAssignment](../resources/approleassignment.md) object.
+In the request body, supply a JSON representation of an [appRoleAssignment](../resources/approleassignment.md) object.
 
 ## Response
 
-If successful, this method returns `201 Created` response code and [appRoleAssignment](../resources/approleassignment.md) object in the response body.
+If successful, this method returns a `201 Created` response code and an [appRoleAssignment](../resources/approleassignment.md) object in the response body.
 
 ## Examples
 
@@ -79,7 +79,9 @@ In this example, `{id}` and `{principalId-value}` would both be the `id` of the 
 
 ### Response
 
-Here is an example of the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.
+Here is an example of the response. 
+
+>**Note:** The response object shown here might be shortened for readability. All the properties will be returned from an actual call.
 
 <!-- {
   "blockType": "response",
