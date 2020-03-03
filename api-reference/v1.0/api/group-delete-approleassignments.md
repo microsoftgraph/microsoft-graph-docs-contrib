@@ -63,7 +63,7 @@ DELETE https://graph.microsoft.com/v1.0/groups/{id}/appRoleAssignments/{id}
 
 ### Response
 
-Here is an example of the response.
+The following is an example of the response.
 
 <!-- {
   "blockType": "response",

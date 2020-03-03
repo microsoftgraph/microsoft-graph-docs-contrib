@@ -67,7 +67,7 @@ DELETE https://graph.microsoft.com/beta/servicePrincipals/{id}/appRoleAssignment
 
 ### Response
 
-Here is an example of the response.
+The following is an example of the response.
 
 <!-- {
   "blockType": "response",
