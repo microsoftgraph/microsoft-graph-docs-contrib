@@ -1,6 +1,6 @@
-## Sample to generate proof token
+## Example: Generate a proof token
 
-The following sample could be used to generate the proof token:
+You can use the following code example to generate the proof token.
 
 ```csharp
 using System;
