@@ -11,7 +11,7 @@ doc_type: "apiPageType"
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-In [Azure AD entitlement management](../resources/entitlementmanagement-root.md), use this API to create a new [accessPackageAssignmentPolicy](../resources/accesspackageassignmentpolicy.md) object.
+In [Azure AD entitlement management](../resources/entitlementmanagement-root.md), create a new [accessPackageAssignmentPolicy](../resources/accesspackageassignmentpolicy.md) object.
 
 ## Permissions
 
@@ -36,11 +36,11 @@ POST /identityGovernance/entitlementManagement/accessPackageAssignmentPolicies
 | Name          | Description   |
 |:--------------|:--------------|
 | Authorization | Bearer \{token\}. Required. |
-| Content-Type  | application/json  |
+| Content-Type  | application/json. Required.  |
 
 ## Request body
 
-In the request body, supply a JSON representation of [accessPackageAssignmentPolicy](../resources/accesspackageassignmentpolicy.md) object.
+In the request body, supply a JSON representation of an [accessPackageAssignmentPolicy](../resources/accesspackageassignmentpolicy.md) object.
 
 ## Response
 
@@ -48,13 +48,13 @@ If successful, this method returns a 200-series response code and a new [accessP
 
 ## Examples
 
-### Creating a direct assignment policy
+### Example 1: Create a direct assignment policy
 
 A direct assignment policy is useful when access package assignment requests will only be created by an administrator, not by users themselves.
 
 #### Request
 
-The following is an example of the request to create an access package assignment policy.  In this policy, no users can request, no approval is required, and there are no access reviews.
+The following example shows a request to create an access package assignment policy. In this policy, no users can request, no approval is required, and there are no access reviews.
 
 # [HTTP](#tab/http)
 <!-- {
@@ -123,9 +123,9 @@ Content-type: application/json
 }
 ```
 
-### Creating a policy for users from other organizations to request
+### Example 2: Create a policy for users from other organizations to request
 
-The following example illustrates a more complex policy with two-stage approvals and access reviews.
+The following example shows a more complex policy with two-stage approvals and access reviews.
 
 #### Request
 
