@@ -9,7 +9,7 @@ author: "davidmu1"
 
 # List appRoleAssignments granted to a group
 
-Retrieve the list of [appRoleAssignment](../resources/approleassignment.md) which a group has been granted.
+Retrieve the list of [appRoleAssignment](../resources/approleassignment.md) that have been granted to a group.
 
 ## Permissions
 

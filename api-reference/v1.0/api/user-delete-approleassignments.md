@@ -9,7 +9,7 @@ author: "davidmu1"
 
 # Delete an appRoleAssignment granted to a user
 
-Deletes an [appRoleAssignment](../resources/approleassignment.md) which a user has been granted.
+Deletes an [appRoleAssignment](../resources/approleassignment.md) that a user has been granted.
 
 ## Permissions
 

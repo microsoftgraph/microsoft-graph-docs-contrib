@@ -11,7 +11,7 @@ author: "davidmu1"
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Deletes an [appRoleAssignment](../resources/approleassignment.md) which a user has been granted.
+Deletes an [appRoleAssignment](../resources/approleassignment.md) that a user has been granted.
 
 ## Permissions
 
