@@ -54,6 +54,10 @@ The following scenarios are not supported:
 - Using Teams as a log file. When your app sends a message, you should expect a person to read it.
 - Migrating messages from other messaging products or installations. The [Send message](/api/channel-post-messages?view=graph-rest-beta) API does not have the throughput necessary for a typical migration, and we are unable to adjust limits to assist migrations.
 
+## Teams limits
+
+See https://docs.microsoft.com/en-us/microsoftteams/limits-specifications-teams
+
 ## Group limits
 
 The following limits apply to Office 365 Groups:
