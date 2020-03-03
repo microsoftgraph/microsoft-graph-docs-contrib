@@ -11,9 +11,9 @@ You can use `mgt-get` to make any GET query from Microsoft Graph directly in you
 
 ## Example
 
-<iframe src="https://mgt.dev/iframe.html?id=samples-mgt-get--get-emails&source=docs" height="500"></iframe>
+<iframe src="https://mgt.dev/iframe.html?id=components-mgt-get--get-email&source=docs" height="500"></iframe>
 
-[Open this example in mgt.dev](https://mgt.dev/?path=/story/samples-mgt-get--get-emails&source=docs)
+[Open this example in mgt.dev](https://mgt.dev/?path=/story/components-mgt-get--get-email&source=docs)
 
 ## Properties and attributes
 

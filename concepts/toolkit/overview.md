@@ -9,11 +9,11 @@ author: elisenyang
 
 ## Web Components powered by Microsoft Graph
 
-The Microsoft Graph Toolkit is a collection of reusable, framework-agnostic web UI components and helpers for accessing and working with Microsoft Graph. The components are fully functional right of out of the box, with built in providers that authenticate with and fetch data from Microsoft Graph.
+The Microsoft Graph Toolkit is a collection of reusable, framework-agnostic web components and helpers for accessing and working with Microsoft Graph. The components are fully functional right of out of the box, with built in providers that authenticate with and fetch data from Microsoft Graph.
 
-<iframe src="https://mgt.dev/iframe.html?id=samples-simple--login-to-show-agenda&source=docs" height="400"></iframe>
+<iframe src="https://mgt.dev/iframe.html?id=samples-general--login-to-show-agenda&source=docs" height="400"></iframe>
 
-[Open this example in mgt.dev](https://mgt.dev/?path=/story/samples-simple--login-to-show-agenda&source=docs)
+[Open this example in mgt.dev](https://mgt.dev/?path=/story/samples-general--login-to-show-agenda&source=docs)
 
 ## What's in the Microsoft Graph Toolkit?
 
