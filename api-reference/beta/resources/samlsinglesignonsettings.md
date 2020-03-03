@@ -1,6 +1,6 @@
 ---
 title: "samlSingleSignOnSettings resource type"
-description: "Represents the saml single sign-on settings."
+description: "Represents the SAML single sign-on settings."
 localization_priority: Normal
 doc_type: resourcePageType
 ms.prod: "microsoft-identity-platform"
@@ -11,7 +11,7 @@ author: "davidmu1"
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Represents a container for settings related to saml single sign-on.
+Represents a container for settings related to SAML single sign-on.
 
 ## Properties
 
