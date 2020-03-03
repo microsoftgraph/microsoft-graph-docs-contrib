@@ -1,6 +1,6 @@
 ---
 title: "servicePrincipal: Add owner"
-description: "Use this API to add an owner for the service principal."
+description: "Add an owner for the service principal."
 localization_priority: Priority
 doc_type: resourcePageType
 ms.prod: "microsoft-identity-platform"
@@ -11,7 +11,7 @@ author: "davidmu1"
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Use this API to add an owner for the [servicePrincipal](../resources/serviceprincipal.md).
+Add an owner for the [servicePrincipal](../resources/serviceprincipal.md).
 
 ## Permissions
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
@@ -34,11 +34,11 @@ POST /servicePrincipals/{id}/owners
 | Authorization | Bearer {token}. Required.  |
 
 ## Request body
-In the request body, supply a JSON representation of [directoryObject](../resources/directoryobject.md) object.
+In the request body, supply a JSON representation of a [directoryObject](../resources/directoryobject.md) object.
 
 ## Response
 
-If successful, this method returns `204 No Content` response code and [directoryObject](../resources/directoryobject.md) object in the response body.
+If successful, this method returns a `204 No Content` response code and a [directoryObject](../resources/directoryobject.md) object in the response body.
 
 ## Examples
 ### Request
@@ -58,7 +58,7 @@ Content-length: 30
 }
 ```
 
-In the request body, supply a JSON representation of [directoryObject](../resources/directoryobject.md) object.
+In the request body, supply a JSON representation of a [directoryObject](../resources/directoryobject.md) object.
 ### Response
 The following is an example of the response.
 
