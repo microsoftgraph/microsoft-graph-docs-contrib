@@ -9,6 +9,8 @@ doc_type: apiPageType
 
 # Get attachment
 
+Namespace: microsoft.graph
+
 Read the properties, relationships, or raw contents of an attachment, attached to a user [event](../resources/event.md), 
 [message](../resources/message.md), or [post](../resources/post.md). 
 

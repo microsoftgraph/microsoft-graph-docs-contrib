@@ -9,6 +9,8 @@ doc_type: "apiPageType"
 
 # Update externalitem
 
+Namespace: microsoft.graph
+
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 Update the properties of an [externalitem](../resources/externalitem.md) or [externalFile](../resources/externalfile.md).

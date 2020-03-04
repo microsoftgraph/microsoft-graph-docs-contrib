@@ -9,6 +9,8 @@ doc_type: "apiPageType"
 
 # List accounts
 
+Namespace: microsoft.graph
+
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 Retrieves properties related to the user's accounts from the [profile](../resources/profile.md).

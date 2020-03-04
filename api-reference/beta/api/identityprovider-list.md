@@ -9,6 +9,8 @@ ms.prod: "microsoft-identity-platform"
 
 # List identityProviders
 
+Namespace: microsoft.graph
+
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 Retrieve all [identityProviders](../resources/identityprovider.md) in the directory.

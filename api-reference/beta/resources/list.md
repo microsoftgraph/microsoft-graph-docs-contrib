@@ -9,6 +9,8 @@ doc_type: resourcePageType
 ---
 # List resource
 
+Namespace: microsoft.graph
+
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 The **list** resource represents a list in a [site][].

@@ -9,6 +9,8 @@ doc_type: "resourcePageType"
 
 # externalFile resource type
 
+Namespace: microsoft.graph
+
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 An item indexed via a Microsoft Search [connection](externalconnection.md). This type derives from the [externalItem](externalitem.md) type.

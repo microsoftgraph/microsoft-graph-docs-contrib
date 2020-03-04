@@ -9,6 +9,8 @@ doc_type: apiPageType
 
 # List ownedObjects
 
+Namespace: microsoft.graph
+
 Get the list of directory objects that are owned by the user.
 ## Permissions
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).

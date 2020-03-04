@@ -9,6 +9,8 @@ doc_type: apiPageType
 
 # Get settings
 
+Namespace: microsoft.graph
+
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 Read the user and organization [userSettings](../resources/usersettings.md) object.

@@ -9,6 +9,8 @@ doc_type: "resourcePageType"
 
 # webAccount resource type
 
+Namespace: microsoft.graph
+
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 Represents web accounts the user has indicated they use or has added to their user [profile](profile.md).

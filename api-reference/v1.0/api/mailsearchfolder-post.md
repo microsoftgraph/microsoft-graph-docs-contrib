@@ -9,6 +9,8 @@ doc_type: apiPageType
 
 # Create mailSearchFolder
 
+Namespace: microsoft.graph
+
 Create a new [mailSearchFolder](../resources/mailsearchfolder.md) in the specified user's mailbox.
 
 ## Permissions

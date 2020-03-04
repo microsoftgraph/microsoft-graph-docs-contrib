@@ -9,6 +9,8 @@ doc_type: "apiPageType"
 
 # group: checkMemberObjects
 
+Namespace: microsoft.graph
+
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 Check for membership in a list of groups or administrative units for the specified group. This method is transitive.

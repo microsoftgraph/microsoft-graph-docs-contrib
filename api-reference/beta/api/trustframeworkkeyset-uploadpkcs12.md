@@ -9,6 +9,8 @@ doc_type: "apiPageType"
 
 # trustFrameworkKeySet: uploadPkcs12
 
+Namespace: microsoft.graph
+
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 Upload a PKCS12 format key (PFX) to a [trustFrameworkKeyset](../resources/trustframeworkkeyset.md). The input is a base-64 encoded value of the Pfx certificate contents. This method returns [trustFrameworkKey](../resources/trustframeworkkey.md).

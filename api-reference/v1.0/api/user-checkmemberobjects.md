@@ -9,6 +9,8 @@ doc_type: "apiPageType"
 
 # user: checkMemberObjects
 
+Namespace: microsoft.graph
+
 Check for membership in a list of group or directory roles for the specified user object. This method is transitive.
 
 ## Permissions

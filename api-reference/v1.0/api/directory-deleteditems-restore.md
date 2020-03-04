@@ -9,6 +9,8 @@ doc_type: apiPageType
 
 # Restore deleted item
 
+Namespace: microsoft.graph
+
 Restores a recently deleted item from [deleted items](../resources/directory.md). 
 
 Currently, deleted items functionality is only supported for the [application](../resources/application.md), [group](../resources/group.md) and [user](../resources/user.md) resources. If an item was accidentally deleted, you can fully restore the item.

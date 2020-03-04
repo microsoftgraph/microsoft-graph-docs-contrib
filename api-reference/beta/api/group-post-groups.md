@@ -9,6 +9,8 @@ doc_type: apiPageType
 
 # Create group
 
+Namespace: microsoft.graph
+
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 Create a new [group](../resources/group.md) as specified in the request body. You can create one of the following groups:

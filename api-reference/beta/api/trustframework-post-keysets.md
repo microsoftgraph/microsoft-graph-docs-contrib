@@ -9,6 +9,8 @@ doc_type: "apiPageType"
 
 # Create trustFrameworkKeySet
 
+Namespace: microsoft.graph
+
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 Create a new [trustFrameworkKeySet](../resources/trustframeworkkeyset.md). The ID of the **trustFrameworkKeySet** is expected in the create request; however, it can be modified by the service. The modified ID will be available in the response and in the location header.

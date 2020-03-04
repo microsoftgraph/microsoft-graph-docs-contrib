@@ -9,6 +9,8 @@ doc_type: "apiPageType"
 
 # List claimsMappingPolicies
 
+Namespace: microsoft.graph
+
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 Get a list of [claimsMappingPolicy](../resources/claimsmappingpolicy.md) objects.

@@ -9,6 +9,8 @@ doc_type: apiPageType
 
 # reportRoot: getOffice365ServicesUserCounts
 
+Namespace: microsoft.graph
+
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 Get the count of users by activity type and service.

@@ -9,6 +9,8 @@ doc_type: "apiPageType"
 
 # Update personinterest
 
+Namespace: microsoft.graph
+
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 Update the properties of a [personInterest](../resources/personinterest.md) object in a user's [profile](../resources/profile.md).

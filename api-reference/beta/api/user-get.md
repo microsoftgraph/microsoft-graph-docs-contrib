@@ -9,6 +9,8 @@ doc_type: apiPageType
 
 # Get a user
 
+Namespace: microsoft.graph
+
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 Retrieve the properties and relationships of user object.

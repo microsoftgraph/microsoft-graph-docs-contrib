@@ -9,6 +9,8 @@ doc_type: apiPageType
 
 # List childFolders
 
+Namespace: microsoft.graph
+
 Get the folder collection under the specified folder. You can use the `.../me/mailFolders` shortcut to get the top-level 
 folder collection and navigate to another folder.
 ## Permissions

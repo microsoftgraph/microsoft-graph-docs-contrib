@@ -9,6 +9,8 @@ doc_type: resourcePageType
 
 # signIn resource type
 
+Namespace: microsoft.graph
+
 Details user and application sign-in activity for a tenant (directory).
 
 ## Methods

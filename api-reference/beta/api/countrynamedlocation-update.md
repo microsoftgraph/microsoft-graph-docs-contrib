@@ -9,6 +9,8 @@ doc_type: apiPageType
 
 # Update countryNamedLocation
 
+Namespace: microsoft.graph
+
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 Update the properties of a [countryNamedLocation](../resources/countryNamedLocation.md) object.

@@ -9,6 +9,8 @@ doc_type: "resourcePageType"
 
 # personName resource type
 
+Namespace: microsoft.graph
+
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 Represents extended name information provided by the user or which they have associated with their account.

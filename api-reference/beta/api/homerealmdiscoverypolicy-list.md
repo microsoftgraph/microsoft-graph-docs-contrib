@@ -9,6 +9,8 @@ doc_type: "apiPageType"
 
 # List homeRealmDiscoveryPolicies
 
+Namespace: microsoft.graph
+
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 Get a list of [homeRealmDiscoveryPolicy](../resources/homerealmdiscoverypolicy.md) objects.

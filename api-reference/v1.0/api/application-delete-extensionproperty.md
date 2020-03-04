@@ -9,6 +9,8 @@ doc_type: "apiPageType"
 
 # Delete extensionProperty
 
+Namespace: microsoft.graph
+
 Delete an [extensionProperty](../resources/extensionproperty.md).
 
 ## Permissions

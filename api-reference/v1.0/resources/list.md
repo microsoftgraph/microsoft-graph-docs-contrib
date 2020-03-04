@@ -11,6 +11,8 @@ doc_type: resourcePageType
 
 # List resource
 
+Namespace: microsoft.graph
+
 The **list** resource represents a list in a [site][].
 This resource contains the top level properties of the list, including template and field definitions.
 

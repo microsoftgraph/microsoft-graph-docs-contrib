@@ -9,6 +9,8 @@ doc_type: apiPageType
 
 # reportRoot: getOffice365ActiveUserDetail
 
+Namespace: microsoft.graph
+
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 Get details about Office 365 active users.

@@ -9,6 +9,8 @@ doc_type: apiPageType
 
 # reportRoot: getTeamsUserActivityUserDetail
 
+Namespace: microsoft.graph
+
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 Get details about Microsoft Teams user activity by user.

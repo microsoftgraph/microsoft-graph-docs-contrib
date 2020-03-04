@@ -9,6 +9,8 @@ doc_type: resourcePageType
 
 # organization resource type
 
+Namespace: microsoft.graph
+
 Represents the Azure Active Directory tenant that the user or application is signed in to. Only the read and update operations are supported on this resource; create and delete are not supported. Inherits from [directoryObject](directoryobject.md).
 
 This resource lets you add your own data to custom properties using [extensions](/graph/extensibility-overview).
