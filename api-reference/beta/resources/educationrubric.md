@@ -21,6 +21,7 @@ See [Education rubric overview](https://developer.microsoft.com/graph/docs/conce
 
 | Method       | Return Type | Description |
 |:-------------|:------------|:------------|
+| [Create educationRubric](../api/educationuser-post-rubrics.md) | [educationRubric](educationrubric.md) | Create a new educationRubric object. |
 | [Get educationRubric](../api/educationrubric-get.md) | [educationRubric](educationrubric.md) | Read properties and relationships of educationRubric object. |
 | [Update educationRubric](../api/educationrubric-update.md) | [educationRubric](educationrubric.md) | Update educationRubric object. |
 | [Delete educationRubric](../api/educationrubric-delete.md) | None | Delete educationRubric object. |
