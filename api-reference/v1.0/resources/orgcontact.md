@@ -9,6 +9,8 @@ doc_type: resourcePageType
 
 # orgContact resource type
 
+Namespace: microsoft.graph
+
 Represents an organizational contact. Organizational contacts are managed by an organization's administrators and are different from [personal contacts](contact.md). Additionally, organizational contacts are either synchronized from on-premises directories or from Exchange Online, and are read-only.
 
 Inherits from [directoryObject](directoryobject.md).

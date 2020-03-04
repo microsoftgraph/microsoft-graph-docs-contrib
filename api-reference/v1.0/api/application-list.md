@@ -9,6 +9,8 @@ doc_type: apiPageType
 
 # List applications
 
+Namespace: microsoft.graph
+
 Get the list of [applications](../resources/application.md) in this organization.
 
 ## Permissions

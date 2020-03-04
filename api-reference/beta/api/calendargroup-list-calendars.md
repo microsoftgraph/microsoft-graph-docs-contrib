@@ -9,6 +9,8 @@ doc_type: apiPageType
 
 # List calendars
 
+Namespace: microsoft.graph
+
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 Retrieve a list of calendars belonging to a calendar group.

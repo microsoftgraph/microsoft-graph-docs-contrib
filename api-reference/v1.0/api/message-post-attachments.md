@@ -9,6 +9,8 @@ doc_type: apiPageType
 
 # Add attachment
 
+Namespace: microsoft.graph
+
 Use this API to add an [attachment](../resources/attachment.md) to a message. 
 
 An attachment can be one of the following types:

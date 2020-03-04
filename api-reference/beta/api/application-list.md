@@ -9,6 +9,8 @@ doc_type: apiPageType
 
 # List applications
 
+Namespace: microsoft.graph
+
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 Get the list of [applications](../resources/application.md) in this organization.

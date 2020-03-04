@@ -9,6 +9,8 @@ doc_type: apiPageType
 
 # Get event
 
+Namespace: microsoft.graph
+
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 Get the properties and relationships of the specified [event](../resources/event.md) object.

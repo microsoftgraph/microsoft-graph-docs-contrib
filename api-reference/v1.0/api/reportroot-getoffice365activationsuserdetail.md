@@ -9,6 +9,8 @@ doc_type: apiPageType
 
 # reportRoot: getOffice365ActivationsUserDetail
 
+Namespace: microsoft.graph
+
 Get details about users who have activated Office 365.
 
 > **Note:** For details about different report views and names, see [Office 365 Reports - Microsoft Office activations](https://support.office.com/client/Office-activations-87c24ae2-82e0-4d1e-be01-c3bcc3f18c60).

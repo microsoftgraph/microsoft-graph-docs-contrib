@@ -9,6 +9,8 @@ author: "angelgolfer-ms"
 
 # attachment resource type
 
+Namespace: microsoft.graph
+
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 You can add related content to a user [event](../resources/event.md),

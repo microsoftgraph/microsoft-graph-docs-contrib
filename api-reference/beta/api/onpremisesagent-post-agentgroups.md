@@ -9,6 +9,8 @@ doc_type: "apiPageType"
 
 # Assign onPremisesAgent to onPremisesAgentGroup
 
+Namespace: microsoft.graph
+
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 Assign an [onPremisesAgent](../resources/onpremisesagent.md) to an [onPremisesAgentGroup](../resources/onpremisesagentgroup.md) object.

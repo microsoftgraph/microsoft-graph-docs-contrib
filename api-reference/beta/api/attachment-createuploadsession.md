@@ -9,6 +9,8 @@ doc_type: "apiPageType"
 
 # attachment: createUploadSession
 
+Namespace: microsoft.graph
+
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 Create an upload session that allows an app to iteratively upload ranges of a file, so as to attach the file to the specified [message](../resources/message.md).
@@ -28,6 +30,10 @@ See [attach large files to Outlook messages](/graph/outlook-large-attachments) f
 
 > [!TIP]
 > Exchange Online lets administrators customize the message size limit for Office 365 mailboxes,  including any message attachments. By default, this message size limit is 35 MB. Find out how to [customize the maximum message size](https://www.microsoft.com/microsoft-365/blog/2015/04/15/office-365-now-supports-larger-email-messages-up-to-150-mb) to support attachments larger than the default limit for your tenant. 
+
+> [!IMPORTANT] 
+> Be aware of a [known issue](/graph/known-issues#attaching-large-files-to-messages) if you're attaching to a message in a shared or delegated mailbox.
+
 
 ## Permissions
 

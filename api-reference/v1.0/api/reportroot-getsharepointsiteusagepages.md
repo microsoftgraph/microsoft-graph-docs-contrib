@@ -9,6 +9,8 @@ doc_type: apiPageType
 
 # reportRoot: getSharePointSiteUsagePages
 
+Namespace: microsoft.graph
+
 Get the number of pages viewed across all sites.
 
 > **Note:** For details about different report views and names, see [Office 365 Reports - SharePoint site usage](https://support.office.com/client/SharePoint-site-usage-4ecfb843-e5d5-464d-8bf6-7ed512a9b213).

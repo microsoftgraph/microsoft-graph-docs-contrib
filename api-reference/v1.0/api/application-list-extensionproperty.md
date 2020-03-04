@@ -9,6 +9,8 @@ doc_type: "apiPageType"
 
 # List extensionProperties
 
+Namespace: microsoft.graph
+
 Retrieve the list of [extensionProperty](../resources/extensionproperty.md) objects on an application.
 
 ## Permissions
