@@ -8013,19 +8013,19 @@
       - name: Category
         href: resources/educationcategory.md
         items:
-        - name: Get category
-          href: api/educationcategory-get.md
         - name: Create category
           href: api/educationclass-post-category.md
+        - name: Get category
+          href: api/educationcategory-get.md
         - name: Delete category
           href: api/educationcategory-delete.md
       - name: Rubric
         href: resources/educationrubric.md
         items:
-        - name: Get rubric
-          href: api/educationrubric-get.md
         - name: Create rubric
           href: api/educationuser-post-rubrics.md
+        - name: Get rubric
+          href: api/educationrubric-get.md
         - name: Update rubric
           href: api/educationrubric-update.md
         - name: Delete rubric
