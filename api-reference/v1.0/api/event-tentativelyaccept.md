@@ -9,6 +9,8 @@ doc_type: apiPageType
 
 # event: tentativelyAccept
 
+Namespace: microsoft.graph
+
 Tentatively accept the specified [event](../resources/event.md) in a user [calendar](../resources/calendar.md).
 
 ## Permissions

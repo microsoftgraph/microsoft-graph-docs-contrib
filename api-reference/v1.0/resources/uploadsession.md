@@ -9,9 +9,11 @@ ms.prod: ""
 doc_type: resourcePageType
 ---
 
-# UploadSession resource
+# uploadSession resource type
 
-The **UploadSession** resource provides information about how to upload large files to OneDrive, OneDrive for Business, or SharePoint document libraries, or to Outlook [event](event.md) and [message](message.md) items as attachments.
+Namespace: microsoft.graph
+
+The **uploadSession** resource provides information about how to upload large files to OneDrive, OneDrive for Business, or SharePoint document libraries, or to Outlook [event](event.md) and [message](message.md) items as attachments.
 
 ## JSON representation
 

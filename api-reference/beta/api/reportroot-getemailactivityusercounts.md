@@ -9,6 +9,8 @@ doc_type: apiPageType
 
 # reportRoot: getEmailActivityUserCounts
 
+Namespace: microsoft.graph
+
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 Enables you to understand trends on the number of unique users who are performing email activities like send, read, and receive.

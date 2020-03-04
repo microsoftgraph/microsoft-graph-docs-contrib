@@ -9,6 +9,8 @@ doc_type: resourcePageType
 
 # eventMessage resource type
 
+Namespace: microsoft.graph
+
 A message that represents a meeting request, cancellation, or response (which can be one of the following: acceptance, tentative acceptance, or decline).
 
 The **eventMessage** entity is derived from [message](message.md). The **meetingMessageType** property identifies the type of the event message.

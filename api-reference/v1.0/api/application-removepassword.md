@@ -9,6 +9,8 @@ doc_type: "apiPageType"
 
 # application: removePassword
 
+Namespace: microsoft.graph
+
 Remove a password from an [application](../resources/application.md).
 
 ## Permissions

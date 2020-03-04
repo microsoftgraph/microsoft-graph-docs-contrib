@@ -9,6 +9,8 @@ doc_type: apiPageType
 
 # Create onlineMeeting
 
+Namespace: microsoft.graph
+
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 Create an online meeting on behalf of a user by using the object ID (OID) in the user token.

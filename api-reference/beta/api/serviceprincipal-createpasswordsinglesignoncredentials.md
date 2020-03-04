@@ -9,6 +9,8 @@ doc_type: "apiPageType"
 
 # servicePrincipal: createPasswordSingleSignOnCredentials
 
+Namespace: microsoft.graph
+
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 Create single sign-on credentials using a password for a user or group.

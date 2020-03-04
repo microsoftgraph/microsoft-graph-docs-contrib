@@ -9,6 +9,8 @@ doc_type: apiPageType
 
 # reportRoot: getSharePointSiteUsagePages
 
+Namespace: microsoft.graph
+
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 Get the number of pages viewed across all sites.

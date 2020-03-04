@@ -9,6 +9,8 @@ doc_type: "apiPageType"
 
 # Delete activityBasedTimeoutPolicy
 
+Namespace: microsoft.graph
+
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 Delete an [activityBasedTimeoutPolicy](../resources/activitybasedtimeoutpolicy.md) object.

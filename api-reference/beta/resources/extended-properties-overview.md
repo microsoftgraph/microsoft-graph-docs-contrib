@@ -9,6 +9,8 @@ doc_type: conceptualPageType
 
 # Outlook extended properties overview
 
+Namespace: microsoft.graph
+
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 Extended properties allow storing custom data and specifically serve as a fallback mechanism for apps to access

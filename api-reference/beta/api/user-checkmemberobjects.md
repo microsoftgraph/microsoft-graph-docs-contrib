@@ -9,6 +9,8 @@ doc_type: "apiPageType"
 
 # user: checkMemberObjects
 
+Namespace: microsoft.graph
+
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 Check for membership in a list of group, directory role, or administrative unit objects for the specified user object. This method is transitive.

@@ -9,6 +9,8 @@ doc_type: apiPageType
 
 # event: decline
 
+Namespace: microsoft.graph
+
 Decline invitation to the specified [event](../resources/event.md) in a user [calendar](../resources/calendar.md).
 
 ## Permissions

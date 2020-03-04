@@ -9,6 +9,8 @@ doc_type: apiPageType
 
 # Create subscription
 
+Namespace: microsoft.graph
+
 Subscribes a listener application to receive notifications when the requested type of changes occur to the specified resource in Microsoft Graph.
 
 ## Permissions

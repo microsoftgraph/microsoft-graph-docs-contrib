@@ -9,6 +9,8 @@ doc_type: apiPageType
 
 # Add owner
 
+Namespace: microsoft.graph
+
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 Use this API to add an owner to an application by posting to the owners collection.

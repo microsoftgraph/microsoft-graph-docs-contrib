@@ -9,6 +9,8 @@ doc_type: apiPageType
 
 # Get application
 
+Namespace: microsoft.graph
+
 Get the properties and relationships of an [application](../resources/application.md) object.
 
 ## Permissions

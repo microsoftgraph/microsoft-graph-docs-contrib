@@ -9,6 +9,8 @@ doc_type: "apiPageType"
 
 # application: removePassword
 
+Namespace: microsoft.graph
+
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 Removes a password from an [application](../resources/application.md).

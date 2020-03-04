@@ -9,6 +9,8 @@ doc_type: apiPageType
 
 # message: reply
 
+Namespace: microsoft.graph
+
 Reply to the sender of a message, add a comment or modify any updateable properties all in one **reply** call. 
 The message is then saved in the Sent Items folder.
 

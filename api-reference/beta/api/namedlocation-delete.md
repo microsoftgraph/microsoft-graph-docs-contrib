@@ -9,6 +9,8 @@ doc_type: apiPageType
 
 # Delete namedLocation
 
+Namespace: microsoft.graph
+
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 Delete a [namedLocation](../resources/namedlocation.md) object.

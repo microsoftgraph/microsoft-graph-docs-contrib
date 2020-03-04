@@ -8,6 +8,8 @@ doc_type: apiPageType
 ---
 # List riskDetection
 
+Namespace: microsoft.graph
+
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 Retrieve the properties of a collection of **riskDetection** objects.

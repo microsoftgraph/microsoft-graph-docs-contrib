@@ -9,6 +9,8 @@ author: ""
 
 # Get suspiciousIpRiskEvent
 
+Namespace: microsoft.graph
+
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 >[!NOTE]

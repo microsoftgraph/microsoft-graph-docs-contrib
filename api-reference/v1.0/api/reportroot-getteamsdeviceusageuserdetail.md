@@ -9,6 +9,8 @@ doc_type: apiPageType
 
 # reportRoot: getTeamsDeviceUsageUserDetail
 
+Namespace: microsoft.graph
+
 Get details about Microsoft Teams device usage by user.
 
 ## Permissions

@@ -9,6 +9,8 @@ doc_type: apiPageType
 
 # reportRoot: getEmailActivityUserDetail
 
+Namespace: microsoft.graph
+
 Get details about email activity users have performed.
 
 > **Note:** For details about different report views and names, see [Office 365 Reports - Email Activity](https://support.office.com/client/Email-activity-1cbe2c00-ca65-4fb9-9663-1bbfa58ebe44).

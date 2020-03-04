@@ -9,6 +9,8 @@ doc_type: apiPageType
 
 # List user transitive memberOf
 
+Namespace: microsoft.graph
+
 Get groups, directory roles that the user is a member of. This API request is transitive, and will also return all groups the user is a nested member of.
 
 ## Permissions
