@@ -9,6 +9,8 @@ author: ""
 
 # List servicePrincipal transitive memberOf
 
+Namespace: microsoft.graph
+
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 Get the groups and directory roles that this service principal is a member of. This operation is transitive and will include all groups that this service principal is a nested member of.

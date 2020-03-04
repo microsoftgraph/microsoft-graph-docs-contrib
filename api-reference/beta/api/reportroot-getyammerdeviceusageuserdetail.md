@@ -9,6 +9,8 @@ doc_type: apiPageType
 
 # reportRoot: getYammerDeviceUsageUserDetail function
 
+Namespace: microsoft.graph
+
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 Get details about Yammer device usage by user.

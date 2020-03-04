@@ -9,6 +9,8 @@ doc_type: resourcePageType
 
 # participantInfo resource type
 
+Namespace: microsoft.graph
+
 Contains additional properties about the participant identity
 
 ## Properties

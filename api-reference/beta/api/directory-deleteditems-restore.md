@@ -9,6 +9,8 @@ doc_type: apiPageType
 
 # Restore deleted item
 
+Namespace: microsoft.graph
+
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 Restores a recently deleted item from [deleted items](../resources/directory.md). 

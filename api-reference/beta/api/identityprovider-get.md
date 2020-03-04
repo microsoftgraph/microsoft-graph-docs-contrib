@@ -9,6 +9,8 @@ ms.prod: "microsoft-identity-platform"
 
 # Get identityProvider
 
+Namespace: microsoft.graph
+
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 Retrieve the properties of an existing [identityProvider](../resources/identityprovider.md).

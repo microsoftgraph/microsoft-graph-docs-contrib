@@ -9,6 +9,8 @@ doc_type: "apiPageType"
 
 # Create itemEmail
 
+Namespace: microsoft.graph
+
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 Create a new [itemEmail](../resources/itememail.md).

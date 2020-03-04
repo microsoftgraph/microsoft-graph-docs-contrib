@@ -9,6 +9,8 @@ ms.prod: "outlook"
 
 # List mailFolders
 
+Namespace: microsoft.graph
+
 Get the mail folder collection directly under the root folder of the signed-in user. The returned collection includes any [mail search folders](../resources/mailsearchfolder.md) directly under the root.
 
 ## Permissions

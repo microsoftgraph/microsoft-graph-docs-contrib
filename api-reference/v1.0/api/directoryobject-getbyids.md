@@ -9,6 +9,8 @@ doc_type: apiPageType
 
 # Get directory objects from a list of ids
 
+Namespace: microsoft.graph
+
 Returns the directory objects specified in a list of IDs.
 
 >[!NOTE]

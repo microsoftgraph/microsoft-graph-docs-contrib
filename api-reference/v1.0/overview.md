@@ -45,6 +45,16 @@ If you're interested in new or enhanced APIs that are still in preview status, s
 
 Find more information about [versioning and support](/graph/versioning-and-support).
 
+## Call the v1.0 endpoint
+
+Microsoft Graph API requests to the v1.0 endpoint use the following pattern:
+
+```
+	https://graph.microsoft.com/v1.0/{resource}?[query_parameters]
+```
+
+For details, see [Use the Microsoft Graph API](/graph/use-the-api).
+
 ## Connect with us
 
 Are there additional APIs or features you'd like to see in Microsoft Graph? Post new feature requests on [UserVoice](https://officespdev.uservoice.com/forums/224641-general/filters/new?category_id=101632).

@@ -9,6 +9,8 @@ doc_type: "resourcePageType"
 
 # languageProficiency resource type
 
+Namespace: microsoft.graph
+
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 Represents detailed information about languages that a user has added to their [profile](profile.md).

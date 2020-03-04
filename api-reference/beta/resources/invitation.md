@@ -9,6 +9,8 @@ doc_type: resourcePageType
 
 # invitation resource type
 
+Namespace: microsoft.graph
+
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 Represents an invitation that is used to add external users to an organization. 

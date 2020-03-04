@@ -9,6 +9,8 @@ doc_type: apiPageType
 
 # Remove member
 
+Namespace: microsoft.graph
+
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 Use this API to remove a member from a group via the **members** navigation property.

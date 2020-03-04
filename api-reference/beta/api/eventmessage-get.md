@@ -9,6 +9,8 @@ doc_type: apiPageType
 
 # Get eventMessage
 
+Namespace: microsoft.graph
+
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 Get the properties and relationships of the [eventMessage](../resources/eventmessage.md) object. Apply the `$expand` parameter on the **event**

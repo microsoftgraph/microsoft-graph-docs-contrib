@@ -9,6 +9,8 @@ author: "angelgolfer-ms"
 
 # fileAttachment resource type
 
+Namespace: microsoft.graph
+
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 A file (such as a text file or Word document) attached to a user [event](../resources/event.md),

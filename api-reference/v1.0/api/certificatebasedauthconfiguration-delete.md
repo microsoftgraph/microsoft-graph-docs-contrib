@@ -9,6 +9,8 @@ doc_type: "apiPageType"
 
 # Delete certificateBasedAuthConfiguration
 
+Namespace: microsoft.graph
+
 Delete a [certificateBasedAuthConfiguration](../resources/certificateBasedAuthConfiguration.md) object.
 
 ## Permissions

@@ -9,6 +9,8 @@ doc_type: "apiPageType"
 
 # Delete externalItem
 
+Namespace: microsoft.graph
+
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 Delete an [externalitem](../resources/externalitem.md) or [externalFile](../resources/externalfile.md).

@@ -9,6 +9,8 @@ doc_type: resourcePageType
 
 # userSettings resource type
 
+Namespace: microsoft.graph
+
 The current user settings for content discovery.
 To learn how to get or update user settings, see [Get settings](../api/usersettings-get.md) and [Update settings](../api/usersettings-update.md).
 

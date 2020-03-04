@@ -9,6 +9,8 @@ doc_type: "resourcePageType"
 
 # claimsMappingPolicy resource type
 
+Namespace: microsoft.graph
+
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 Represents the claim-mapping policies for WS-Fed, SAML, OAuth 2.0, and OpenID Connect protocols, for tokens issued to a specific application. You can use claims-mapping policies to:
