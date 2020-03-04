@@ -21,6 +21,7 @@ A category that can be applied to assignments.
 | Method		   | Return Type	|Description|
 |:---------------|:--------|:----------|
 |[Get educationCategory](../api/educationcategory-get.md) | [educationCategory](educationcategory.md) | Get an existing **educationCategory**.|
+|[Create category](../api/educationclass-post-category.md) | [educationCategory](educationcategory.md) | Create a new **educationCategory**.|
 |[Delete category](../api/educationcategory-delete.md) | None | Remove an **educationCategory**.|
 
 

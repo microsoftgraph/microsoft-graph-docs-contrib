@@ -8015,6 +8015,8 @@
         items:
         - name: Get category
           href: api/educationcategory-get.md
+        - name: Create category
+          href: api/educationclass-post-category.md
         - name: Delete category
           href: api/educationcategory-delete.md
       - name: Rubric
@@ -8022,6 +8024,8 @@
         items:
         - name: Get rubric
           href: api/educationrubric-get.md
+        - name: Create rubric
+          href: api/educationuser-post-rubrics.md
         - name: Update rubric
           href: api/educationrubric-update.md
         - name: Delete rubric
