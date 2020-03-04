@@ -11,7 +11,7 @@ author: "davidmu1"
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Retrieve a list of [oAuth2PermissionGrant](../resources/oAuth2PermissionGrant.md) entities, Which represent delegated permissions granted to enable a client application to access an API on behalf of the user.
+Retrieve a list of [oAuth2PermissionGrant](../resources/oAuth2PermissionGrant.md) entities, which represent delegated permissions granted to enable a client application to access an API on behalf of the user.
 
 > [!NOTE]
 > Querying the delegated permission grants for a user will only return delegated permissions grants that are specifically for the given user. Delegated permissions granted on behalf of all users in the organization are _not_ included in the response.

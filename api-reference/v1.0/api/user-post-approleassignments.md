@@ -11,9 +11,9 @@ author: "davidmu1"
 
 Use this API to assign an app role to a user. To grant an app role assignment to a user, you need three identifiers:
 
-1. `principalId`: The `id` of the user to which you are assigning the app role.
-2. `resourceId`: The `id` of the resource `servicePrincipal` which has defined the app role.
-3. `appRoleId`: The `id` of the `appRole` (defined on the resource service principal) to assign to the user.
+- `principalId`: The `id` of the user to whom you are assigning the app role.
+- `resourceId`: The `id` of the resource `servicePrincipal` that has defined the app role.
+- `appRoleId`: The `id` of the `appRole` (defined on the resource service principal) to assign to the user.
 
 ## Permissions
 
@@ -21,9 +21,9 @@ One of the following permissions is required to call this API. To learn more, in
 
 |Permission type      | Permissions (from least to most privileged)              |
 |:--------------------|:---------------------------------------------------------|
-|Delegated (work or school account) | AppRoleAssignment.ReadWrite.All,Directory.AccessAsUser.All    |
+|Delegated (work or school account) | AppRoleAssignment.ReadWrite.All, Directory.AccessAsUser.All    |
 |Delegated (personal Microsoft account) | Not supported.    |
-|Application | AppRoleAssignment.ReadWrite.All, |
+|Application | AppRoleAssignment.ReadWrite.All |
 
 ## HTTP request
 
@@ -44,11 +44,11 @@ POST /users/{id | userPrincipalName}/appRoleAssignments
 
 ## Request body
 
-In the request body, supply a JSON representation of [appRoleAssignment](../resources/approleassignment.md) object.
+In the request body, supply a JSON representation of an [appRoleAssignment](../resources/approleassignment.md) object.
 
 ## Response
 
-If successful, this method returns `201 Created` response code and [appRoleAssignment](../resources/approleassignment.md) object in the response body.
+If successful, this method returns a `201 Created` response code and an [appRoleAssignment](../resources/approleassignment.md) object in the response body.
 
 ## Examples
 

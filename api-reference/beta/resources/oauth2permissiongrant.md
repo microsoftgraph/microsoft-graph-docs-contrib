@@ -27,7 +27,6 @@ Delegated permissions are sometimes referred to as "OAuth 2.0 scopes" or "scopes
 | [Update oAuth2PermissionGrant](../api/oauth2permissiongrant-update.md) | None | Update oAuth2PermissionGrant object. |
 | [Delete oAuth2PermissionGrant](../api/oauth2permissiongrant-delete.md) | None  | Delete a delegated permission grant. |
 
-
 ## Properties
 
 | Property | Type | Description |
