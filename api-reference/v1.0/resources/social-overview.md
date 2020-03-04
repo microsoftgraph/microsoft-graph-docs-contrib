@@ -9,8 +9,6 @@ doc_type: conceptualPageType
 
 # Use the Microsoft Graph API to integrate people intelligence in an app
 
-Namespace: microsoft.graph
-
 Microsoft Graph enables access to useful data about people and documents they interact with.
 
 ## Aggregate and extract specific information about people

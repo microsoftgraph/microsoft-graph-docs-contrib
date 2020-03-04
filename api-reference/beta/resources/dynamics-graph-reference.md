@@ -10,8 +10,6 @@ doc_type: conceptualPageType
 ---
 # Working with the Dynamics 365 Business Central API in Microsoft Graph
 
-Namespace: microsoft.graph
-
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 You can use Microsoft Graph to connect and integrate your web service or SaaS solution with Microsoft Dynamics 365 Business Central. With Microsoft Graph, you can build apps that get authorized access to and integrate seamlessly with Microsoft Dynamics 365 Business Central data.

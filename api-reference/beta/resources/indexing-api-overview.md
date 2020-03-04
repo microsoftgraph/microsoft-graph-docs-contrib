@@ -9,8 +9,6 @@ doc_type: conceptualPageType
 
 # Use the Microsoft Search API to index data
 
-Namespace: microsoft.graph
-
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 You can use Microsoft Graph to add custom items or external files to search results in the [Microsoft Search](/microsoftsearch/overview-microsoft-search) experience.
