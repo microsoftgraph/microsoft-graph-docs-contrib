@@ -14,7 +14,7 @@ Microsoft Graph is a RESTful web API that enables you to access Microsoft Cloud 
 
 ## OData namespace
 
-The Microsoft Graph API defines most of its resources, methods, and enumerations in the OData namespace, `microsoft.graph`, as specified in the [Microsoft Graph metadata](traverse-the-graph.md#microsoft-graph-api-metadata). A small number of API sets are defined in their sub-namespaces, such as the [call records API](/graph/api/resources/callrecords-api-overview?view=graph-rest-beta) which defines resources like [callRecord](/graph/api/resources/callrecords-callrecord?view=graph-rest-beta) in `microsoft.graph.callRecords`. 
+The Microsoft Graph API defines most of its resources, methods, and enumerations in the OData namespace, `microsoft.graph`, in the [Microsoft Graph metadata](traverse-the-graph.md#microsoft-graph-api-metadata). A small number of API sets are defined in their sub-namespaces, such as the [call records API](/graph/api/resources/callrecords-api-overview?view=graph-rest-beta) which defines resources like [callRecord](/graph/api/resources/callrecords-callrecord?view=graph-rest-beta) in `microsoft.graph.callRecords`. 
 
 Unless explicitly specified in the corresponding topic, assume types, methods, and enumerations are part of the `microsoft.graph` namespace.
 
