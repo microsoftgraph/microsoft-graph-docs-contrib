@@ -9,6 +9,8 @@ doc_type: apiPageType
 
 # Update subscription
 
+Namespace: microsoft.graph
+
 Renew a subscription by extending its expiry time.
 
 Subscriptions expire after a length of time that varies by resource type. In order to avoid missing notifications, an app should renew its subscriptions well in advance of their expiry date. See [subscription](../resources/subscription.md) for maximum length of a subscription for each resource type.

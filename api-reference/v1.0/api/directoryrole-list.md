@@ -9,6 +9,8 @@ doc_type: apiPageType
 
 # List directoryRoles
 
+Namespace: microsoft.graph
+
 List the directory roles that are activated in the tenant.
 
 This operation only returns roles that have been activated. A role becomes activated when an admin activates the role using the [Activate directoryRole](directoryrole-post-directoryroles.md) API. Not all built-in roles are initially activated. 

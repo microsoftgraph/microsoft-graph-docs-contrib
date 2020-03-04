@@ -9,6 +9,8 @@ doc_type: apiPageType
 
 # Delete ipNamedLocation
 
+Namespace: microsoft.graph
+
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 Delete an [ipNamedLocation](../resources/ipNamedLocation.md) object.

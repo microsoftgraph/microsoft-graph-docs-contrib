@@ -9,6 +9,8 @@ doc_type: "apiPageType"
 
 # List onPremisesAgents
 
+Namespace: microsoft.graph
+
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 Retrieve a list of [onPremisesAgent](../resources/onpremisesagent.md) objects.

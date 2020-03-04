@@ -9,6 +9,8 @@ doc_type: apiPageType
 
 # reportRoot: getTeamsDeviceUsageDistributionUserCounts
 
+Namespace: microsoft.graph
+
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 Get the number of Microsoft Teams unique users by device type over the selected time period.

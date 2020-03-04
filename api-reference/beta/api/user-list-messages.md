@@ -9,6 +9,8 @@ ms.prod: "outlook"
 
 # List messages
 
+Namespace: microsoft.graph
+
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 Get the messages in the signed-in user's mailbox (including the Deleted Items and Clutter folders). 

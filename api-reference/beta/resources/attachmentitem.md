@@ -9,6 +9,8 @@ doc_type: "resourcePageType"
 
 # attachmentItem resource type
 
+Namespace: microsoft.graph
+
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 Represents attributes of an item to be attached.

@@ -9,6 +9,8 @@ doc_type: apiPageType
 
 # Update settings
 
+Namespace: microsoft.graph
+
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 Update the properties of the [userSettings](../resources/usersettings.md) object. 

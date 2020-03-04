@@ -9,6 +9,8 @@ doc_type: "apiPageType"
 
 # Update trustFrameworkKeySet
 
+Namespace: microsoft.graph
+
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 Update the properties of a [trustFrameworkKeyset](../resources/trustframeworkkeyset.md). This operation will replace the content of an existing keyset. Specifying the ID in the request payload is optional.

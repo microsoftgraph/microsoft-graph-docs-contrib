@@ -9,6 +9,8 @@ doc_type: apiPageType
 
 # reportRoot: getEmailAppUsageAppsUserCounts
 
+Namespace: microsoft.graph
+
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 Get the count of unique users per email app.

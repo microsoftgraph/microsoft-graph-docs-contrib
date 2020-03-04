@@ -9,6 +9,8 @@ doc_type: "resourcePageType"
 
 # serviceInformation resource type
 
+Namespace: microsoft.graph
+
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 Represents basic descriptive data about cloud services that a user has chosen to refer to from their account.

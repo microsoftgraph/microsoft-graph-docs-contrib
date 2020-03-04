@@ -9,6 +9,8 @@ doc_type: apiPageType
 
 # Update user
 
+Namespace: microsoft.graph
+
 Update the properties of a user object.
 
 ## Permissions

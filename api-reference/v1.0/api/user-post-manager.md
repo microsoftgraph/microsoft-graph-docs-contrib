@@ -9,6 +9,8 @@ doc_type: apiPageType
 
 # Assign manager
 
+Namespace: microsoft.graph
+
 Assign a user's manager.
 > [!NOTE]
 > You cannot assign direct reports; instead, use this API.

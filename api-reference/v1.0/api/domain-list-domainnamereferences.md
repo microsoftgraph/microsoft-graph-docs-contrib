@@ -9,6 +9,8 @@ doc_type: apiPageType
 
 # List domainNameReferences
 
+Namespace: microsoft.graph
+
 Retrieve a list of [directoryObject](../resources/directoryobject.md) with a reference to the domain. The returned list will contain all directory objects that have a dependency on the domain.
 
 ## Permissions

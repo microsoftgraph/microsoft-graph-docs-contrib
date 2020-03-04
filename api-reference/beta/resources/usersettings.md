@@ -9,6 +9,8 @@ doc_type: resourcePageType
 
 # userSettings resource type
 
+Namespace: microsoft.graph
+
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 The current user settings for content discovery. 

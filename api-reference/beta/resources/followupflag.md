@@ -9,6 +9,8 @@ author: ""
 
 # followupFlag resource type
 
+Namespace: microsoft.graph
+
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 Allows setting a flag for the user to follow up on an item later. Supported items include [message](message.md) and [contact](contact.md).

@@ -9,6 +9,8 @@ doc_type: apiPageType
 
 # reportRoot: getSkypeForBusinessPeerToPeerActivityCounts
 
+Namespace: microsoft.graph
+
 Get usage trends on the number and type of sessions held in your organization. Types of sessions include IM, audio, video, application sharing, and file transfer.
 
 > **Note:** For details about different report views and names, see [Office 365 Reports - Skype for Business peer-to-peer activity](https://support.office.com/client/Skype-for-Business-Online-peertopeer-activity-d3b2d569-4ee9-44b8-92bf-d518142f0713).

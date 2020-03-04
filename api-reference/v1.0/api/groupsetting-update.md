@@ -9,6 +9,8 @@ doc_type: apiPageType
 
 # Update a group setting
 
+Namespace: microsoft.graph
+
 Update the properties of a specific group setting object.
 
 ## Permissions

@@ -9,6 +9,8 @@ doc_type: "apiPageType"
 
 # Get certificateBasedAuthConfiguration
 
+Namespace: microsoft.graph
+
 Get the properties of a [certificateBasedAuthConfiguration](../resources/certificateBasedAuthConfiguration.md) object.
 
 ## Permissions

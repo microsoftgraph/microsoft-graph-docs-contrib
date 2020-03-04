@@ -9,6 +9,8 @@ doc_type: "apiPageType"
 
 # application: addPassword
 
+Namespace: microsoft.graph
+
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 Adds a strong password to an [application](../resources/application.md).

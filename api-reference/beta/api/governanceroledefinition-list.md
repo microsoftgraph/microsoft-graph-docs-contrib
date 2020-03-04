@@ -8,6 +8,8 @@ ms.prod: ""
 ---
 
 # List governanceRoleDefinitions
+
+Namespace: microsoft.graph
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 Get a collection of [governanceRoleDefinitions](../resources/governanceroledefinition.md) on a resource.

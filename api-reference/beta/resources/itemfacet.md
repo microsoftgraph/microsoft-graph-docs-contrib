@@ -9,6 +9,8 @@ doc_type: "resourcePageType"
 
 # itemFacet resource type
 
+Namespace: microsoft.graph
+
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 Represents the abstract base type that all resource types in the [profile](profile.md) entityset inherit from.

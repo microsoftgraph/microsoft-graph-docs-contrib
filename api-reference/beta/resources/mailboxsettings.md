@@ -9,6 +9,8 @@ doc_type: resourcePageType
 
 # mailboxSettings resource type
 
+Namespace: microsoft.graph
+
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 Settings for the primary mailbox of a [user](user.md).

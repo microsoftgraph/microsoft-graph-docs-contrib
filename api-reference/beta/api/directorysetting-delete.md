@@ -9,6 +9,8 @@ doc_type: apiPageType
 
 # Delete a directory setting
 
+Namespace: microsoft.graph
+
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 Delete a directory setting.

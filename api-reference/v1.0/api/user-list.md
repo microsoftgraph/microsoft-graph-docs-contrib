@@ -9,6 +9,8 @@ doc_type: apiPageType
 
 # List users
 
+Namespace: microsoft.graph
+
 Retrieve a list of [user](../resources/user.md) objects.
 
 ## Permissions

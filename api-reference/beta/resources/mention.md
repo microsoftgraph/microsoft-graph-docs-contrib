@@ -9,6 +9,8 @@ doc_type: resourcePageType
 
 # mention resource type
 
+Namespace: microsoft.graph
+
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 Represents a notification to a person based on the person's email address. This type of notification is also known as @-mentions.
