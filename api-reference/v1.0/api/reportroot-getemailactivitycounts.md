@@ -71,7 +71,6 @@ The CSV file has the following headers for columns.
 The following is an example of the request.
 
 
-# [HTTP](#tab/http)
 <!--{
   "blockType": "ignored",
   "isComposable": true,
@@ -81,7 +80,6 @@ The following is an example of the request.
 ```msgraph-interactive
 GET https://graph.microsoft.com/v1.0/reports/getEmailActivityCounts(period='D7')
 ```
----
 
 
 #### Response

@@ -83,7 +83,6 @@ The following is an example that outputs CSV.
 The following is an example of the request.
 
 
-# [HTTP](#tab/http)
 <!-- {
   "blockType": "ignored",
   "name": "reportroot_getemailactivitycounts_csv"
@@ -92,7 +91,6 @@ The following is an example of the request.
 ```msgraph-interactive
 GET https://graph.microsoft.com/beta/reports/getEmailActivityCounts(period='D7')?$format=text/csv
 ```
----
 
 
 #### Response
