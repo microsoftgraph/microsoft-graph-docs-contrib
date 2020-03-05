@@ -9,6 +9,8 @@ author: "davidmu1"
 
 # appRoleAssignment resource type
 
+Namespace: microsoft.graph
+
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 Used to record when a user, group, or service principal is assigned an app role for an app.

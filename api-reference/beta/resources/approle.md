@@ -9,6 +9,8 @@ author: "davidmu1"
 
 # appRole resource type
 
+Namespace: microsoft.graph
+
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 Represents an application role that can be requested by (and granted to) a client application, or that can be used to assign an application to users or groups in a specified role. 

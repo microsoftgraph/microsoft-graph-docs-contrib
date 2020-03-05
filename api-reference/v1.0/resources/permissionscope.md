@@ -9,6 +9,8 @@ author: "davidmu1"
 
 # permissionScope resource type
 
+Namespace: microsoft.graph
+
 Represents the definition of a [delegated permission](https://docs.microsoft.com/azure/active-directory/develop/v2-permissions-and-consent#permission-types).
 
 Delegated permissions can be requested by client applications needing an access token to the API which defined the permissions. Delegated permissions can be requested [dynamically](https://docs.microsoft.com/azure/active-directory/develop/v2-permissions-and-consent#requesting-individual-user-consent), using the `scopes` parameter in an authorization request to the Microsoft identity platform, or [statically](https://docs.microsoft.com/azure/active-directory/develop/v2-permissions-and-consent#the-default-scope), through the **requiredResourceAccess** collection on the [application](application.md) object.

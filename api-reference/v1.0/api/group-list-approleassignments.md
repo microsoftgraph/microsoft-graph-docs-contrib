@@ -9,6 +9,8 @@ author: "davidmu1"
 
 # List appRoleAssignments granted to a group
 
+Namespace: microsoft.graph
+
 Retrieve the list of [appRoleAssignment](../resources/approleassignment.md) that have been granted to a group.
 
 ## Permissions

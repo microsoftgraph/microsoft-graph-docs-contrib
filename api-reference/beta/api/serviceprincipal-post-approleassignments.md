@@ -9,6 +9,8 @@ author: "davidmu1"
 
 # Grant an appRoleAssignment to a service principal
 
+Namespace: microsoft.graph
+
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 Assign an app role to a client service principal.

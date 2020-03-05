@@ -9,6 +9,8 @@ author: "davidmu1"
 
 # List appRoleAssignments granted to a user
 
+Namespace: microsoft.graph
+
 
 Retrieve the list of [appRoleAssignment](../resources/approleassignment.md) that a user has been granted. This operation also returns app roles assigned to groups that the user is a direct member of.
 

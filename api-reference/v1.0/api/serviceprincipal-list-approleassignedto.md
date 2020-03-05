@@ -9,6 +9,8 @@ author: "davidmu1"
 
 # List appRoleAssignments granted for a service principal
 
+Namespace: microsoft.graph
+
 Retrieve a list of [appRoleAssignment](../resources/approleassignment.md) that users, groups, or client service principals have been granted for the given resource service principal.
 
 For example, if the resource service principal is the service principal for the Microsoft Graph API, this will return all service principals that have been granted any app-only permissions to Microsoft Graph.

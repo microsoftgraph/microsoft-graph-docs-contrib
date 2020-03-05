@@ -9,6 +9,8 @@ author: "davidmu1"
 
 # Delete a delegated permission grant (oAuth2PermissionGrant)
 
+Namespace: microsoft.graph
+
 Delete an [oAuth2PermissionGrant](../resources/oauth2permissiongrant.md).
 
 When a delegated permission grant is deleted, the access it granted is revoked. Existing access tokens will continue to be valid for their lifetime, but new access tokens will not be granted for the delegated permissions identified in the deleted **oAuth2PermissionGrant**.

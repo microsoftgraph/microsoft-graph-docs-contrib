@@ -9,6 +9,8 @@ author: "davidmu1"
 
 # Get a delegated permission grant (oAuth2PermissionGrant)
 
+Namespace: microsoft.graph
+
 Retrieve the properties of a single [oAuth2PermissionGrant](../resources/oauth2permissiongrant.md).
 
 An **oAuth2PermissionGrant** represents delegated permissions which have been granted for a client application to access an API on behalf of a signed-in user.

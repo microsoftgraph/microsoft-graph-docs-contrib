@@ -9,6 +9,8 @@ author: "davidmu1"
 
 # appRole resource type
 
+Namespace: microsoft.graph
+
 Represents an application role that can be requested by (and granted to) a client application, or that can be used to assign an application to users or groups in a specified role. 
 
 The **appRoles** property of the [application](application.md) and [servicePrincipal](serviceprincipal.md) entities are a collection of **appRole**. 

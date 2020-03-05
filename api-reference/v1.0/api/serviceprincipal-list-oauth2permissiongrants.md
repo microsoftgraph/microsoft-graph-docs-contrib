@@ -9,6 +9,8 @@ author: "davidmu1"
 
 # servicePrincipal: List delegated permission grants (oAuth2PermissionGrants)
 
+Namespace: microsoft.graph
+
 Retrieve a list of [oAuth2PermissionGrant](../resources/oAuth2PermissionGrant.md) entities, representing delegated permissions granted to the service principal (representing the client application) to access an API on behalf of a user.
 
 ## Permissions

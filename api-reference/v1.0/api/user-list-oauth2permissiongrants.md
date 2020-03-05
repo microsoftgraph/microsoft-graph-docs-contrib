@@ -9,6 +9,8 @@ author: "davidmu1"
 
 # user: List delegated permission grants (oAuth2PermissionGrants)
 
+Namespace: microsoft.graph
+
 Retrieve a list of [oAuth2PermissionGrant](../resources/oAuth2PermissionGrant.md) entities, which represent delegated permissions granted to enable a client application to access an API on behalf of the user.
 
 > [!NOTE]
