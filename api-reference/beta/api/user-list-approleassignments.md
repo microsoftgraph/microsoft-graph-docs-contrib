@@ -36,8 +36,6 @@ GET /users/{id | userPrincipalName}/appRoleAssignments
 
 This method supports the [OData query parameters](/graph/query_parameters) to help customize the response.
 
-To learn how to search for and filter app role assignments, see [supported filter patterns](../resources/approleassignment.md#supported-filter-patterns).
-
 ## Request headers
 
 | Name           | Description                |
