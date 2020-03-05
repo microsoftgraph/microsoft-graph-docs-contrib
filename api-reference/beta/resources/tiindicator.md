@@ -53,7 +53,7 @@ For details about the types of indicators supported and limits on indicator coun
 |[submitTiIndicators](../api/tiindicator-submittiindicators.md)|[tiIndicator](tiindicator.md) collection|Create new tiIndicators by posting a tiIndicators collection.|
 |[updateTiIndicators](../api/tiindicator-updatetiindicators.md)|[tiIndicator](tiindicator.md) collection| Update multiple tiIndicator objects.|
 
-## Methods with targetProduct
+## Method Differences for targetProduct
 
 | Method | Azure Sentinel | Microsoft Defender ATP |
 |:-------------|:------------|:------------|
