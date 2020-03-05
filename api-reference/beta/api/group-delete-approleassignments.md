@@ -9,6 +9,8 @@ author: "davidmu1"
 
 # Delete an appRoleAssignment granted to a group
 
+Namespace: microsoft.graph
+
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 Deletes an [appRoleAssignment](../resources/approleassignment.md) that a group has been granted.

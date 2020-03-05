@@ -9,6 +9,8 @@ author: "davidmu1"
 
 # Grant an appRoleAssignment to a service principal
 
+Namespace: microsoft.graph
+
 
 Assign an app role to a client service principal.
 

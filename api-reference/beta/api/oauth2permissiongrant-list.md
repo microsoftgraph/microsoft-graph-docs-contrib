@@ -7,7 +7,9 @@ ms.prod: "microsoft-identity-platform"
 author: "davidmu1"
 ---
 
-# List delegated permission grants (oauth2PermissionGrants)
+# List oauth2PermissionGrants
+
+Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
