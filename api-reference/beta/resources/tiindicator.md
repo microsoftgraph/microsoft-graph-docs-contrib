@@ -32,7 +32,7 @@ Current **targetProduct** support includes the following:
   > [!NOTE]
   >The following indicator types are supported by Microsoft Defender ATP targetProduct:
   > - Files
-  > - IP addresses: Microsoft Defender ATP supports destination IPv4/IPv6 only – set property in networkDestinationIPv4 or    networkDestinationIPv6 properties in Microsoft Graph security API **tiIndicator**.
+  > - IP addresses: Microsoft Defender ATP supports destination IPv4/IPv6 only – set property in networkDestinationIPv4 or    networkDestinationIPv6 properties in Microsoft Graph Security API **tiIndicator**.
   > - URLs/domains
 
    There is a limit of 5000 indicators per tenant for Microsoft Defender ATP.
