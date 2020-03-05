@@ -1,6 +1,6 @@
 ---
 title: "appRole resource type"
-description: "Represents an application role that may be requested by a client application calling another application or that may be used to assign an application to users or groups in a specified application role. The **appRoles** property of the servicePrincipal entity and of the application entity is a collection of **appRole**."
+description: "Represents an application role that may be requested by a client application calling another application or that may be used to assign an application to users or groups in a specified application role."
 localization_priority: Normal
 doc_type: resourcePageType
 ms.prod: "microsoft-identity-platform"
@@ -11,7 +11,7 @@ author: "davidmu1"
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Represents an application role which may be requested by (and granted to) a client application, or which may be used to assign an application to users or groups in a specified role. 
+Represents an application role that can be requested by (and granted to) a client application, or that can be used to assign an application to users or groups in a specified role. 
 
 The **appRoles** property of the [application](application.md) and [servicePrincipal](serviceprincipal.md) entities are a collection of **appRole**. 
 
@@ -31,7 +31,7 @@ With [appRoleAssignments](approleassignment.md), app roles can be assigned to us
 
 ## JSON representation
 
-Here is a JSON representation of the resource:
+The following is a JSON representation of the resource.
 
 <!-- {
   "blockType": "resource",

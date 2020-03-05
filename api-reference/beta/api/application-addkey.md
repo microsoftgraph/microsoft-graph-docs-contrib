@@ -11,7 +11,7 @@ doc_type: "apiPageType"
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Adds a key credential to an [application](../resources/application.md). This method along with [removeKey](application-removekey.md) can be used by an application to automate rolling its expiring keys.
+Add a key credential to an [application](../resources/application.md). This method, along with [removeKey](application-removekey.md), can be used by an application to automate rolling its expiring keys.
 
 > [!Note]
 > [Create application](../api/application-post-applications.md) and
@@ -19,11 +19,11 @@ Adds a key credential to an [application](../resources/application.md). This met
 
 As part of the request validation for this method, a proof of possession of an existing key is verified before the action can be performed. 
 
-Applications that don’t have any existing valid certificates (i.e.: no certificates have been added yet, or all certificates have expired), won’t be able to use this service action. [Update application](../api/application-update.md) can be used to perform an update instead.
+Applications that don’t have any existing valid certificates (no certificates have been added yet, or all certificates have expired), won’t be able to use this service action. You can use the [Update application](../api/application-update.md) operation to perform an update instead.
 
 ## Permissions
 
-None. An application does not need any specific permission to roll it's own keys.
+None. An application does not need any specific permission to roll its own keys.
 
 ## HTTP request
 
@@ -56,7 +56,7 @@ If successful, this method returns a `200 OK` response code and a new [keyCreden
 
 ## Examples
 
-### Example 1: Adding a new key credential to an application
+### Example 1: Add a new key credential to an application
 
 #### Request
 
@@ -101,7 +101,7 @@ Content-Type: application/json
 }
 ```
 
-### Example 2: Adding a key credential and an associated password for the key
+### Example 2: Add a key credential and an associated password for the key
 
 #### Request
 
