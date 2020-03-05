@@ -53,6 +53,9 @@ In the request, you may _optionally_ include the `shouldSetSpoSiteReadOnlyForMem
 ```
 This optional parameter defines whether to set permissions for team members to read-only on the Sharepoint Online site associated with the team. Setting it to false or omitting the body altogether will result in this step being skipped.
 
+>[!IMPORTANT]
+>Note that `shouldSetSpoSiteReadOnlyForMembers` parameter is not supported in Application context.
+
 ## Response
 
 If archiving is started successfully, this method returns a `202 Accepted` response code. The response will also contain a `Location` header, which contains the location of the [teamsAsyncOperation](../resources/teamsasyncoperation.md) that was created to handle archiving of the team. Check the status of the archiving operation by making a GET request to this location.
