@@ -1,8 +1,8 @@
 ---
 title: "servicePrincipal: checkMemberGroups"
-description: "Check for membership in the specified list of groups. Returns from the list those groups of which the serviceprincipal has a direct or transitive membership."
+description: "Check for membership in the specified list of groups. Returns from the list those groups of which the service principal has a direct or transitive membership."
 localization_priority: Priority
-doc_type: resourcePageType
+doc_type: apiPageType
 ms.prod: "microsoft-identity-platform"
 author: "davidmu1"
 ---
@@ -43,7 +43,7 @@ In the request body, provide a JSON object with the following parameters.
 
 ## Response
 
-If successful, this method returns `200 OK` response code and String collection object in the response body.
+If successful, this method returns a `200 OK` response code and a String collection object in the response body.
 
 ## Examples
 Here is an example of how to call this API.

@@ -24,7 +24,7 @@ Represents an application. Any application that outsources authentication to Azu
 |[Get deleted application](../api/directory-deleteditems-get.md) | [directoryObject](directoryobject.md) | Retrieve the properties of a recently deleted application. |
 |[Permanently delete application](../api/directory-deleteditems-delete.md) | None | Permanently delete an applications. |
 |[Restore deleted application](../api/directory-deleteditems-restore.md) | [directoryObject](directoryobject.md) | Restore a recently deleted application. |
-|**Certificates & secrets**| | |
+|**Certificates and secrets**| | |
 |[Add password](../api/application-addpassword.md)|[passwordCredential](passwordcredential.md)|Add a strong password to an application.|
 |[Remove password](../api/application-removepassword.md)|[passwordCredential](passwordcredential.md)|Remove a password from an application.|
 |[Add key](../api/application-addkey.md)|[keyCredential](keycredential.md)|Add a key credential to an application.|

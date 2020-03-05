@@ -9319,7 +9319,7 @@
             href: api/serviceprincipal-post-approleassignedto.md
           - name: Remove app role assigned to
             href: api/serviceprincipal-delete-approleassignedto.md
-        - name: Certificates & secrets
+        - name: Certificates and secrets
           items:
           - name: Add password
             href: api/serviceprincipal-addpassword.md

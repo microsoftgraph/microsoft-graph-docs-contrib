@@ -23,7 +23,7 @@ One of the following permissions is required to call this API. To learn more, in
 ## HTTP request
 <!-- { "blockType": "ignored" } -->
 ```http
-POST /servicePrincipals/{id}/owners
+POST /servicePrincipals/{id}/owners/$ref
 
 ```
 ## Request headers
@@ -37,7 +37,7 @@ In the request body, supply a JSON representation of [directoryObject](../resour
 
 ## Response
 
-If successful, this method returns `204 No Content` response code and [directoryObject](../resources/directoryobject.md) object in the response body.
+If successful, this method returns a `204 No Content` response code and a [directoryObject](../resources/directoryobject.md) object in the response body.
 
 ## Examples
 ### Request
