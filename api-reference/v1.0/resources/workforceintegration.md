@@ -11,8 +11,6 @@ doc_type: "resourcePageType"
 
 Namespace: microsoft.graph
 
-[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
-
 An instance of a workforce integration with shifts.
 
 ## Methods
@@ -31,8 +29,7 @@ An instance of a workforce integration with shifts.
 |displayName|String|Name of the workforce integration.|
 |encryption|[workforceIntegrationEncryption](workforceintegrationencryption.md)|The workforce integration encryption resource.|
 |isActive|Boolean|Indicates whether this workforce integration is currently active and available.|
-|supports|string| Possible values are: `none`, `shift`, `swapRequest`, `openshift`, `openShiftRequest`, `userShiftPreferences`|
-|supportedEntities|string| Use this in place of `supports` to align with v1.0 contract. Possible values are: `none`, `shift`, `swapRequest`, `openshift`, `openShiftRequest`, `userShiftPreferences`|
+|supportedEntities|string| The Shifts entities supported for synchronous change notifications. Possible values are: `none`, `shift`, `swapRequest`, `openshift`, `openShiftRequest`, `userShiftPreferences`|
 |url|String| Workforce Integration URL for callbacks from the shift service.|
 
 ## Relationships
