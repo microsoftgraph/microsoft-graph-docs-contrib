@@ -39,11 +39,11 @@ POST /serviceprincipals
 | Content-Type | application/json. Required. |
 
 ## Request body
-In the request body, supply a JSON representation of [serviceprincipal](../resources/serviceprincipal.md) object. The request body must contain  **appId**.
+In the request body, supply a JSON representation of a [serviceprincipal](../resources/serviceprincipal.md) object. The request body must contain  **appId**.
 
 ## Response
 
-If successful, this method returns `201 Created` response code and an [serviceprincipal](../resources/serviceprincipal.md) object in the response body.
+If successful, this method returns a `201 Created` response code and a [serviceprincipal](../resources/serviceprincipal.md) object in the response body.
 
 ## Examples
 ### Request

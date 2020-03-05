@@ -2,7 +2,7 @@
 title: "servicePrincipal: Add owner"
 description: "Use this API to add an owner for the service principal."
 localization_priority: Priority
-doc_type: resourcePageType
+doc_type: apiPageType
 ms.prod: "microsoft-identity-platform"
 author: "davidmu1"
 ---

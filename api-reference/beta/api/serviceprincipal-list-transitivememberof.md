@@ -2,7 +2,7 @@
 title: "List servicePrincipal transitive memberOf"
 description: "Get the groups and directory roles that this service principal is a member of."
 localization_priority: Priority
-doc_type: resourcePageType
+doc_type: apiPageType
 ms.prod: "microsoft-identity-platform"
 author: "davidmu1"
 ---

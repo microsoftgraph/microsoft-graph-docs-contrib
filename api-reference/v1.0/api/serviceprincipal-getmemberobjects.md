@@ -2,7 +2,7 @@
 title: "servicePrincipal: getMemberObjects"
 description: "Get the list of groups and directory roles that this service principal is a member of.  This check is transitive."
 localization_priority: Priority
-doc_type: resourcePageType
+doc_type: apiPageType
 ms.prod: "microsoft-identity-platform"
 author: "davidmu1"
 ---
@@ -63,7 +63,8 @@ Content-length: 33
 ```
 
 ### Response
-Here is an example of the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.
+Here is an example of the response. 
+>Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.
 <!-- {
   "blockType": "response",
   "truncated": true,
