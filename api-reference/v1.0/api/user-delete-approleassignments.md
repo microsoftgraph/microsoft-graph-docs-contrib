@@ -1,6 +1,6 @@
 ---
-title: "Delete an appRoleAssignment from a user"
-description: "Delete an appRoleAssignment from a user."
+title: "Delete an appRoleAssignment granted to a user"
+description: "Delete an appRoleAssignment that has been granted to a user."
 localization_priority: Normal
 doc_type: apiPageType
 ms.prod: "microsoft-identity-platform"
@@ -9,7 +9,7 @@ author: "davidmu1"
 
 # Delete an appRoleAssignment granted to a user
 
-Deletes an [appRoleAssignment](../resources/approleassignment.md) that a user has been granted.
+Delete an [appRoleAssignment](../resources/approleassignment.md) that has been granted to a user.
 
 ## Permissions
 
@@ -44,7 +44,7 @@ Do not supply a request body for this method.
 
 ## Response
 
-If successful, this method returns `204 No Content` response code. It does not return anything in the response body.
+If successful, this method returns a `204 No Content` response code. It does not return anything in the response body.
 
 ## Examples
 
