@@ -46,7 +46,7 @@ In the request body, provide the following required properties.
 |:---------------|:--------|:----------|
 | keyCredential | [keyCredential](../resources/keycredential.md) | The new application key credential to add. The __type__, __usage__ and __key__ are required properties for this usage. Supported key types are:<br><ul><li>`AsymmetricX509Cert`: The usage must be `Verify`.</li><li>`X509CertAndPassword`: The usage must be `Sign`</li></ul>|
 | passwordCredential | [passwordCredential](../resources/passwordcredential.md) | Only __secretText__ is required to be set which should contain the password for the key. This property is required only for keys of type `X509CertAndPassword`. Set it to `null` otherwise.|
-| proof | String | A self-signed JWT token used as a proof of possession of the existing keys. This JWT token must be signed using the private key of one of the application's existing valid certificates. The token should contain the following claims:<ul><li>`aud` - Audience needs to be `00000002-0000-0000-c000-000000000000`.</li><li>`iss` - Issuer needs to be the __id__  of the application that is making the call.</li><li>`nbf` - Not before time.</li><li>`exp` - Expiration time should be "nbf" + 10 mins.</li></ul><br>A code [sample](#sample-to-generate-proof-token) to generate this proof of possession token is provided at the end of this topic.|
+| proof | String | A self-signed JWT token used as a proof of possession of the existing keys. This JWT token must be signed using the private key of one of the application's existing valid certificates. The token should contain the following claims:<ul><li>`aud` - Audience needs to be `00000002-0000-0000-c000-000000000000`.</li><li>`iss` - Issuer needs to be the __id__  of the application that is making the call.</li><li>`nbf` - Not before time.</li><li>`exp` - Expiration time should be "nbf" + 10 mins.</li></ul><br>Here is a code [sample](/concepts/application-rollkey-prooftoken.md) that can be used to generate this proof of possession token.|
 
 ## Response
 
@@ -154,56 +154,3 @@ Content-Type: application/json
   "section": "documentation",
   "tocPath": ""
 }-->
-
-## Sample to generate proof token
-
-The following sample could be used to generate the proof token:
-
-```csharp
-using System;
-using System.Collections.Generic;
-using System.Security.Cryptography.X509Certificates;
-using Microsoft.IdentityModel.Tokens;
-using Microsoft.IdentityModel.JsonWebTokens;
-
-namespace MicrosoftIdentityPlatformProofTokenGenerator
-{
-    class Program
-    {
-        static void Main(string[] args)
-        {
-            // Configure the following
-            string pfxFilePath = "<Path to your certificate file";
-            string password = "<Certificate password>";
-            string objectId = "<id of the application object>";
-
-            // Get signing certificate
-            X509Certificate2 signingCert = new X509Certificate2(pfxFilePath, password);
-
-            // audience
-            string aud = $"00000002-0000-0000-c000-000000000000";
-
-            // aud and iss are the only required claims.
-            var claims = new Dictionary<string, object>()
-            {
-                { "aud", aud },
-                { "iss", objectId }
-            };
-
-            // token validity should not be more than 10 minutes
-            var now = DateTime.UtcNow;
-            var securityTokenDescriptor = new SecurityTokenDescriptor
-            {
-                Claims = claims,
-                NotBefore = now,
-                Expires = now.AddMinutes(10),
-                SigningCredentials = new X509SigningCredentials(signingCert)
-            };
-
-            var handler = new JsonWebTokenHandler();
-            var x = handler.CreateToken(securityTokenDescriptor);
-            Console.WriteLine(x);
-        }
-    }
-}
-```
