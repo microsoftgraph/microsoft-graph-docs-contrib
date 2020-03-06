@@ -9,6 +9,8 @@ doc_type: apiPageType
 
 # reportRoot: getSharePointActivityUserDetail
 
+Namespace: microsoft.graph
+
 Get details about SharePoint activity by user.
 
 > **Note:** For details about different report views and names, see [Office 365 Reports - SharePoint activity](https://support.office.com/client/SharePoint-activity-a91c958f-1279-499d-9959-12f0de08dc8f).

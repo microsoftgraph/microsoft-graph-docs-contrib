@@ -9,6 +9,8 @@ doc_type: apiPageType
 
 # List ownedObjects
 
+Namespace: microsoft.graph
+
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 Get the list of directory objects that are owned by the user.

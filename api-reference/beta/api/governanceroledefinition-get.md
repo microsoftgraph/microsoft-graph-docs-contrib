@@ -9,6 +9,8 @@ ms.prod: ""
 
 # Get governanceRoleDefinition
 
+Namespace: microsoft.graph
+
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 Retrieve the properties and relationships of a [governanceRoleDefinition](../resources/governanceroledefinition.md).

@@ -9,6 +9,8 @@ doc_type: apiPageType
 
 # List user memberOf
 
+Namespace: microsoft.graph
+
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 Get groups, directory roles and administrative units that the user is a direct member of. This operation is not transitive.

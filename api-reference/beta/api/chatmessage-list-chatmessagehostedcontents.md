@@ -9,6 +9,8 @@ doc_type: "apiPageType"
 
 # List hostedContents
 
+Namespace: microsoft.graph
+
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 Retrieve the list of [chatMessageHostedContent](../resources/chatmessagehostedcontent.md) objects from a message.

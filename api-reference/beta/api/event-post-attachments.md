@@ -9,6 +9,8 @@ doc_type: apiPageType
 
 # Add attachment
 
+Namespace: microsoft.graph
+
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 Use this API to add an [attachment](../resources/attachment.md) to an existing [event](../resources/event.md). This operation limits the size of the attachment you can add to under 3 MB.

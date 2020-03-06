@@ -9,6 +9,8 @@ doc_type: apiPageType
 
 # List registeredDevices
 
+Namespace: microsoft.graph
+
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 Get the list of user's registered devices.

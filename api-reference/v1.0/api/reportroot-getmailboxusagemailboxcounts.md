@@ -9,6 +9,8 @@ doc_type: apiPageType
 
 # reportRoot: getMailboxUsageMailboxCounts
 
+Namespace: microsoft.graph
+
 Get the total number of user mailboxes in your organization and how many are active each day of the reporting period. A mailbox is considered active if the user sent or read any email.
 
 > **Note:** For details about different report views and names, see [Office 365 Reports - Mailbox usage](https://support.office.com/client/Mailbox-usage-beffbe01-ce2d-4614-9ae5-7898868e2729).

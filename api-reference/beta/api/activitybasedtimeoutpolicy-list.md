@@ -9,6 +9,8 @@ doc_type: "apiPageType"
 
 # List activityBasedTimeoutPolicies
 
+Namespace: microsoft.graph
+
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 Get a list of [activityBasedTimeoutPolicy](../resources/activitybasedtimeoutpolicy.md) objects.
