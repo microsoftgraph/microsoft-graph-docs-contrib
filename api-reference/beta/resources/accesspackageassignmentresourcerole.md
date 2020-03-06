@@ -19,7 +19,7 @@ In [Azure AD entitlement management](entitlementmanagement-root.md), an access p
 
 | Method       | Return Type | Description |
 |:-------------|:------------|:------------|
-| [Get accessPackageAssignmentResourceRole](../api/accesspackageassignmentresourcerole-get.md) | [accessPackageAssignmentResourceRole](accesspackageassignmentresourcerole.md)  | Retrieve a accessPackageAssignmentResourceRole object. |
+| [Get accessPackageAssignmentResourceRole](../api/accesspackageassignmentresourcerole-get.md) | [accessPackageAssignmentResourceRole](accesspackageassignmentresourcerole.md)  | Retrieve an accessPackageAssignmentResourceRole object. |
 | [List accessPackageAssignmentResourceRoles](../api/accesspackageassignmentresourcerole-list.md) | [accessPackageAssignmentResourceRole](accesspackageassignmentresourcerole.md) collection | Retrieve a list of accessPackageAssignmentResourceRole objects. |
 
 ## Properties
