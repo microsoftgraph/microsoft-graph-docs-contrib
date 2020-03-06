@@ -18,6 +18,10 @@ When accompanied by a Universal Print subscription, the Print feature enables ma
 ## Methods
 | Method       | Return Type | Description |
 |:-------------|:------------|:------------|
+| [List connectors](../api/printer-list-connectors.md) | [printConnector](printconnector.md) collection | Get a list of print connectors. |
+| [List printers](../api/printer-list-printers.md) | [printer](printer.md) collection | Get a list of printers. |
+| [List printerShares](../api/printer-list-printershares.md) | [printerShare](printershare.md) collection | Get a list of printer shares. |
+| [List services](../api/printer-list-services.md) | [printService](printservice.md) collection | Get a list of services. |
 | [Create printerShare](../api/print-post-printershares.md) | [printerShare](printershare.md) | Create a new printer share by posting to the **printerShares** collection. |
 | [Update settings](../api/print-update-settings.md) |  [printSettings](printsettings.md) | Updates tenant-wide settings for the Universal Print service. |
 
