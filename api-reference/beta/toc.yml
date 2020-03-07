@@ -10019,10 +10019,13 @@
           - name: Get multi-value property
             href: api/multivaluelegacyextendedproperty-get.md
     - name: Printing
+    - items:
       - name: Universal Print
+      - items:
         - name: Print (Overview)
           href: resources/print.md
         - name: Connectors
+        - items:
           - name: Connector
             href: resources/printconnector.md
           - name: Delete
@@ -10032,9 +10035,11 @@
           - name: Update
             href: api/printconnector-update.md
         - name: Documents
+        - items:
           - name: Document Configuration
             href: resources/printerdocumentconfiguration.md
         - name: Print Jobs
+        - items:
           - name: Print Job
             href: resources/printjob.md
           - name: Create
@@ -10046,6 +10051,7 @@
           - name: Cancel print job
             href: api/printjob-cancelprintjob.md
         - name: Printers
+        - items:
           - name: Printer
             href: resources/printer.md
           - name: Get
@@ -10075,6 +10081,7 @@
           - name: Reset defaults
             href: api/printer-resetdefaults.md
         - name: Printer Shares
+        - items:
           - name: Printer Share
             href: resources/printershare.md
           - name: List
@@ -10088,9 +10095,11 @@
           - name: Create
             href: api/print-post-printershares.md
         - name: Reports
+        - items:
           - name: Archived Print Job
             href: resources/archivedprintjob.md
           - name: Organized by printer
+          - items:
             - name: Get
               href: api/printusagesummarybyprinter-get.md
             - name: List a printer's archived print jobs
@@ -10100,6 +10109,7 @@
             - name: List monthly reports by printer
               href: api/reportroot-list-monthlyprintusagesummariesbyprinter.md
           - name: Organized by user or group
+          - items:
             - name: Get
               href: api/printusagesummarybyuser-get.md
             - name: List a user's archived print jobs
@@ -10111,6 +10121,7 @@
             - name: List monthly reports by user
               href: api/reportroot-list-monthlyprintusagesummariesbyuser.md
         - name: Services
+        - items:
           - name: Service
             href: resources/printservice.md
           - name: Endpoint
@@ -10124,6 +10135,7 @@
           - name: List a service's endpoints
             href: api/printservice-list-endpoints.md
         - name: Settings
+        - items:
           - name: Settings
             href: resources/printsettings.md
           - name: Get

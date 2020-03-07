@@ -35,7 +35,7 @@ A group of settings that a printer should use to print a document.
 |twoSidedShortEdge|1|The printer will print double-sided, and will flip documents along the short edge.|
 |oneSided|2|The printer will print single-sided.|
 
-# printQuality values
+### printQuality values
 
 |Member|Description|
 |:---|:---|
