@@ -1,6 +1,6 @@
 ---
-title: "Create or Get Online Meeting with External Id"
-description: "Create an online meeting specifying an external id. If the external id existed, this API will return the online meeting created ealier."
+title: "onlineMeeting: createOrGet"
+description: "Create an online meeting with a custom specified external ID. If the external ID already exists, this API will return the [onlineMeeting](../resources/onlinemeeting.md) object with that external ID."
 author: "ananmishr"
 localization_priority: Normal
 ms.prod: "cloud-communications"
@@ -13,9 +13,9 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-This API will be able to create an [onlineMeeting](../resources/onlinemeeting.md) object with a custom specified external id. If the external id has existed, this API will return the [onlineMeeting](../resources/onlinemeeting.md) object with the external id created earlier.
+Create an [onlineMeeting](../resources/onlinemeeting.md) object with a custom specified external ID. If the external ID already exists, this API will return the [onlineMeeting](../resources/onlinemeeting.md) object with that external ID.
 
-> **Note**: The meeting does not show up on the user's calendar.
+> **Note**: The meeting does not show on the user's calendar.
 
 ## Permissions
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
@@ -45,7 +45,7 @@ In the request body, provide a JSON object with the following parameters.
 |:-----------------|:-----------------------------------------|:--------------------------------------------------------------------------|
 | chatInfo         |[chatInfo](../resources/chatinfo.md)                   |The chat information associated with this online meeting.|
 | endDateTime      | DateTime                                 | The meeting end time in UTC. |
-| externalId       | String                                   | The external ID. A custom Id. (Required) |
+| externalId       | String                                   | The external ID. A custom ID. (Required) |
 | participants     | [meetingParticipants](../resources/meetingparticipants.md)          | The participants associated with the online meeting.  This includes the organizer and the attendees. |
 | startDateTime    | DateTime                                 | The meeting start time in UTC. |
 | subject          | String                                   | The subject of the online meeting. |
@@ -53,9 +53,11 @@ In the request body, provide a JSON object with the following parameters.
 ## Response
 If successful, this method returns a `200 OK` response code and an [onlineMeeting](../resources/onlinemeeting.md) object in the response body.
 
-### Example: Create or get an online meeting with externalId
+## Examples
 
-#### Request
+The following example shows how to create or get an online meeting with an external ID.
+
+### Request
 
 # [HTTP](#tab/http)
 <!-- {
@@ -100,7 +102,7 @@ Content-Type: application/json
 }
 ```
 
-#### Response
+### Response
 
 >**Note:** The response object shown here might be shortened for readability. 
 
