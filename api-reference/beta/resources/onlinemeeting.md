@@ -38,7 +38,7 @@ Contains information about the meeting, including the URL used to join a meeting
 | subject                   | String                                                 | The subject of the online meeting. |
 | capabilities              | String collection                                      | The list of meeting capabilities. Possible values are: `questionAndAnswer`. |
 | videoTeleconferenceId     | String                                                 | The video teleconferencing ID. Read-only. |
-| externalId                | String                                                 | The external ID. A custom Id. Optional. |
+| externalId                | String                                                 | The external ID. A custom ID. Optional. |
 
 ### autoAdmittedUsers values
 | Value | Description  |
