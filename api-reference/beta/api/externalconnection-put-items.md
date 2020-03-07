@@ -9,6 +9,8 @@ doc_type: "apiPageType"
 
 # Create externalItem
 
+Namespace: microsoft.graph
+
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 Create a new [externalItem](../resources/externalitem.md) or [externalFile](../resources/externalfile.md).

@@ -9,6 +9,8 @@ ms.prod: "microsoft-identity-platform"
 
 # List signIns
 
+Namespace: microsoft.graph
+
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 Get a list of [signIn](../resources/signin.md) objects. The list contains the user sign-ins for your Azure Active Directory tenant. Sign-ins where a username and password are passed as part of authorization token, and successful federated sign-ins are currently included in the sign-in logs. The most recent sign-ins are returned first.

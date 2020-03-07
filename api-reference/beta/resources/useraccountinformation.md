@@ -9,6 +9,8 @@ doc_type: "resourcePageType"
 
 # userAccountInformation resource type
 
+Namespace: microsoft.graph
+
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 Represents information specifically tied to a user's account, whether that is as an Azure AD account or Microsoft account. The entity identifier is set to the corresponding Azure AD guid or Microsoft Account CID respectively. These fields are read-only through Microsoft Graph and must be edited through a users profile or by a Tenant Administrator on a corresponding experience.

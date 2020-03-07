@@ -353,6 +353,35 @@ None.
 
 For more complex scenarios involving multiple permissions, see [Permission scenarios](#permission-scenarios).
 
+## Call records permissions
+
+#### Delegated permissions
+
+None.
+
+<br/>
+
+#### Application permissions
+
+|Permission    |Display String   |Description |Admin Consent Required |
+|:-----------------------------|:-----------------------------------------|:-----------------|:-----------------|
+|_CallRecords.Read.All_|Read all call records|Allows the app to read call records for all calls and online meetings without a signed-in user.|Yes|
+
+> **Important:** Discretion should be used when granting this permission to applications. Call records can provide insights into the operation of your business, and so can be a target for malicious actors. Only grant this permission to applications you trust to meet your data protection requirements.
+
+> **Important:** Make sure that you are compliant with the laws and regulations in your area regarding data protection and confidentiality of communications. Please see the [Terms of Use](https://docs.microsoft.com/legal/microsoft-apis/terms-of-use) and consult with your legal counsel for more information.
+
+<br/>
+
+### Example usage
+
+#### Application
+
+* _CallRecords.Read.All_: Retrieve a call record (`GET /beta/communications/callRecords/{id}`).
+* _CallRecords.Read.All_: Subscribe to new call records (`POST /beta/subscriptions`).
+
+For more complex scenarios involving multiple permissions, see [Permission scenarios](#permission-scenarios).
+
 ## Channel message permissions
 
 #### Delegated permissions
@@ -368,6 +397,22 @@ None.
 |_ChannelMessage.UpdatePolicyViolation.All_ |Flag channel messages for violating policy |Allows the app to update Microsoft Teams channel messages by patching a set of Data Loss Prevention (DLP) policy violation properties to handle the output of DLP processing. | Yes | No |
 
 > **Note:** See also [Group.Read.All](#group-permissions).
+
+## Channel member permissions ([private preview](#permissions-availability-status))
+
+#### Delegated permissions
+
+|   Permission    |  Display String   |  Description | Admin Consent Required | Microsoft Account supported |
+|:----------------|:------------------|:-------------|:-----------------------|:--------------|
+|_ChannelMember.Read.All_ (private preview) |Read the members of channels. |Read the members of channels, on behalf of the signed-in user. |Yes | No |
+|_ChannelMember.ReadWrite.All_ (private preview)| Add and remove members from channels. | Add and remove members from channels, on behalf of the signed-in user. Also allows changing a member's role, for example from owner to non-owner. | Yes | No |
+
+#### Application permissions
+
+|   Permission    |  Display String   |  Description | Admin Consent Required | Microsoft Account supported |
+|:----------------|:------------------|:-------------|:-----------------------|:--------------|
+|_ChannelMember.Read.All_ (private preview)|Read the members of all channels. |Read the members of all channels, without a signed-in user. |Yes | No |
+|_ChannelMember.ReadWrite.All_ (private preview)| Add and remove members from all channels. |Add and remove members from all channels, without a signed-in user. Also allows changing a member's role, for example from owner to non-owner. | Yes | No |
 
 ## Chats permissions
 
@@ -1502,6 +1547,22 @@ For more complex scenarios involving multiple permissions, see [Permission scena
 |:----------------|:------------------|:-------------|:-----------------------|:--------------|
 | _TeamsApp.Read.All_ (private preview)| Read all users' installed Teams apps | Allows the app to read the Teams apps that are installed for any user, without a signed-in user. Does not give the ability to read application-specific settings. | Yes | No |
 | _TeamsApp.ReadWrite.All_ (private preview)| Manage all users' Teams apps  | Allows the app to read, install, upgrade, and uninstall Teams apps for any user, without a signed-in user. Does not give the ability to read or write application-specific settings. 	| Yes | No |
+
+## Team member permissions ([private preview](#permissions-availability-status))
+
+#### Delegated permissions
+
+|   Permission    |  Display String   |  Description | Admin Consent Required | Microsoft Account supported |
+|:----------------|:------------------|:-------------|:-----------------------|:--------------|
+| _TeamMember.Read.All_ (private preview)| Read the members of teams. | Read the members of teams, on behalf of the signed-in user. | Yes | No |
+| _TeamMember.ReadWrite.All_ (private preview)| Add and remove members from teams. | Add and remove members from teams, on behalf of the signed-in user. Also allows changing a member's role, for example from owner to non-owner. | Yes | No |
+
+#### Application permissions
+
+|   Permission    |  Display String   |  Description | Admin Consent Required | Microsoft Account supported |
+|:----------------|:------------------|:-------------|:-----------------------|:--------------|
+| _TeamMember.Read.All_ (private preview)| Read the members of all teams. | Read the members of all teams, without a signed-in user.	| Yes | No |
+| _TeamMember.ReadWrite.All_ (private preview)| Add and remove members from all teams. | Add and remove members from all teams, without a signed-in user. Also allows changing a team member's role, for example from owner to non-owner. | Yes | No |
 
 ## Teams tab permissions ([private preview](#permissions-availability-status))
 

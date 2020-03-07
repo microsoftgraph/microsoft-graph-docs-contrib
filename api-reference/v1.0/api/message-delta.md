@@ -9,6 +9,8 @@ doc_type: apiPageType
 
 # message: delta
 
+Namespace: microsoft.graph
+
 Get a set of messages that have been added, deleted, or updated in a specified folder.
 
 A **delta** function call for messages in a folder is similar to a GET request, except that by appropriately 

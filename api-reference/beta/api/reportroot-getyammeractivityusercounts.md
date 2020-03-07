@@ -9,6 +9,8 @@ doc_type: apiPageType
 
 # reportRoot: getYammerActivityUserCounts
 
+Namespace: microsoft.graph
+
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 Get the trends on the number of unique users who posted, read, and liked Yammer messages.

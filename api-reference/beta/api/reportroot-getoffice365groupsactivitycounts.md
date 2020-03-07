@@ -9,6 +9,8 @@ doc_type: apiPageType
 
 # reportRoot: getOffice365GroupsActivityCounts
 
+Namespace: microsoft.graph
+
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 Get the number of group activities across group workloads.

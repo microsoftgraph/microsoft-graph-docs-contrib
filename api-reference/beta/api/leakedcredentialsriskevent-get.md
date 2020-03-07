@@ -9,6 +9,8 @@ ms.prod: ""
 
 # Get leakedCredentialsRiskEvent
 
+Namespace: microsoft.graph
+
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 >[!NOTE]
