@@ -127,7 +127,7 @@ Some services in Microsoft Graph make their debut there, others have been well-k
 
 |Feature     |Supporting services  |Description |More information |
 |:-----------|:--------------------|:-----------|:----------------|
-| Universal Print (preview) | Universal Print | Universal Print is a Microsoft 365 cloud-based print infrastructure that enables a simple, rich and secure print experience for users and reduces time and effort for IT. | Coming soon... |
+| Universal Print (preview) | Universal Print | Universal Print is a Microsoft 365 cloud-based print infrastructure that enables a simple, rich and secure print experience for users and reduces time and effort for IT. | [Universal Print API overview](universal-print-concept-overview.md) |
 
 
 ## Next steps

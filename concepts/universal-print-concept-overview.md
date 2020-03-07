@@ -31,7 +31,7 @@ Get started:
 
 ### Manage printers
 
-Keeping track of printers, their configurations, and their usage is a complex task. The Universal Print API enables integration in all three areas.
+Keeping track of an organization's printers, their configurations, and their usage is a complex task. The Universal Print API enables integration in all three areas.
 
 * **Keep an eye on printer status, configurations, and availability** by using [List printers](/graph/api/print-list-printers?view=graph-rest-beta) and [printerStatus](/graph/resources/printerstatus?view=graph-rest-beta).
 
@@ -51,7 +51,7 @@ Keeping track of printers, their configurations, and their usage is a complex ta
 
 ### Seamlessly replace or update printer hardware
 
-Printers are not visible to users until you [share](/graph/api/print-post-printershares?view=graph-rest-beta) them, providing administrators fine-grained control of which printer hardware is available at a given time.
+Printers are not visible to users until they are [shared](/graph/api/print-post-printershares?view=graph-rest-beta), providing administrators fine-grained control of which printer hardware is available at a given time.
 
 Sharing a printer creates a [printerShare](/graph/resources/printershare?view=graph-rest-beta) resource which can be updated at any time to point to a different printer, making it easy to replace broken printer hardware or take printers offline for maintenance.
 
