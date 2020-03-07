@@ -28,7 +28,7 @@ One of the following permissions is required to call this API. To learn more, in
 ## HTTP request
 <!-- { "blockType": "ignored" } -->
 ```http
-POST /education/classes/{id}/assignments/{id}/getResourcesFolderUrl
+GET /education/classes/{id}/assignments/{id}/getResourcesFolderUrl
 
 ```
 ## Request headers
@@ -52,7 +52,7 @@ The following is an example of a request.
   "name": "educationassignment_publish"
 }-->
 ```http
-POST https://graph.microsoft.com/beta/education/classes/11012/assignments/19002/getResourcesFolderUrl
+GET https://graph.microsoft.com/beta/education/classes/11012/assignments/19002/getResourcesFolderUrl
 ```
 # [C#](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/educationassignment-publish-csharp-snippets.md)]
