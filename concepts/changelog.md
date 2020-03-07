@@ -16,8 +16,8 @@ For details about known issues with Microsoft Graph APIs, see [Known issues](kno
 ### Cloud communications
 | **Change type** | **Version**   | **Description**                          |
 |:---|:---|:---|
-| Addition | beta | Added [Create or Get](/graph/api/onlinemeeting-createorget) API.|
-| Addition | beta | Added an optional externalId property |
+| Addition | beta | Added the [onlineMeeting: createOrGet](/graph/api/onlinemeeting-createorget) method.|
+| Addition | beta | Added an optional **externalId** property. |
 
 ## February 2020
 
