@@ -9,6 +9,8 @@ doc_type: apiPageType
 
 # reportRoot: getTeamsDeviceUsageUserDetail
 
+Namespace: microsoft.graph
+
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 Get details about Microsoft Teams device usage by user.

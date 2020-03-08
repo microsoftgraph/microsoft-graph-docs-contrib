@@ -94,7 +94,7 @@ GET https://graph.microsoft.com/v1.0/groups/delta?$skiptoken=pqwSUjGYvb3jQpbwVAw
 
 ## nextLink response
 
-The response contains another `nextLink` with a new `skipToken` value, indicating there are more groups available. You continue making requests using the `nextLink` URL until a `deltaLink` URL is returned in the final response.
+The response contains another `nextLink` with a new `skipToken` value, which indicates that more groups are available. You should continue making requests using the `nextLink` URL until a `deltaLink` URL is returned in the final response, even if the value is an empty array (this can happen under certain circumstances).
 
 ```http
 HTTP/1.1 200 OK

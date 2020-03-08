@@ -10,6 +10,8 @@ doc_type: apiPageType
 
 # Get websocket endpoint
 
+Namespace: microsoft.graph
+
 Allows you to receive near-real-time change notifications for a [drive][] using [socket.io][].
 Socket.io is a popular notifications library for JavaScript that utilizes WebSockets. To learn more, see [socket.io](https://socket.io).
 

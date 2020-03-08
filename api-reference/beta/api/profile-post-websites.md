@@ -9,6 +9,8 @@ doc_type: "apiPageType"
 
 # Create personWebsite
 
+Namespace: microsoft.graph
+
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 Create a new [personWebsite](../resources/personwebsite.md) object in a user's [profile](../resources/profile.md).

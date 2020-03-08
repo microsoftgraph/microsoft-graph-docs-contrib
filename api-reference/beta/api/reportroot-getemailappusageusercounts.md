@@ -9,6 +9,8 @@ doc_type: apiPageType
 
 # reportRoot: getEmailAppUsageUserCounts
 
+Namespace: microsoft.graph
+
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 Get the count of unique users that connected to Exchange Online using any email app.

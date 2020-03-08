@@ -9,6 +9,8 @@ doc_type: apiPageType
 
 # Update group
 
+Namespace: microsoft.graph
+
 Update the properties of a group object.
 
 ## Permissions
