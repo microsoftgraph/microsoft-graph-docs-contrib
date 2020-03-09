@@ -9,6 +9,8 @@ doc_type: apiPageType
 
 # reportRoot: getEmailActivityCounts
 
+Namespace: microsoft.graph
+
 Enables you to understand the trends of email activity (like how many were sent, read, and received) in your organization.
 
 > **Note:** For details about different report views and names, see [Office 365 Reports - Email Activity](https://support.office.com/client/Email-activity-1cbe2c00-ca65-4fb9-9663-1bbfa58ebe44).

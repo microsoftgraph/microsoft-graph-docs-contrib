@@ -9,6 +9,8 @@ doc_type: apiPageType
 
 # List namedLocations
 
+Namespace: microsoft.graph
+
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 Get a list of [namedLocation](../resources/namedlocation.md) objects.

@@ -9,6 +9,8 @@ ms.prod: "cloud-communications"
 
 # onlineMeeting resource type
 
+Namespace: microsoft.graph
+
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 Contains information about the meeting, including the URL used to join a meeting, the attendees list, and the description.

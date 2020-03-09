@@ -9,6 +9,8 @@ doc_type: "resourcePageType"
 
 # signInActivity resource type
 
+Namespace: microsoft.graph
+
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 Provides the last signed-in date for a specific user.
