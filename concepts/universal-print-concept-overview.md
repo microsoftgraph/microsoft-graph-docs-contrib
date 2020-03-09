@@ -28,12 +28,12 @@ Moving print infrastructure to the cloud enables printing documents directly fro
 Get started:
 
 1. [Create a print job](/graph/api/printer-post-jobs?view=graph-rest-beta) and store the resulting document ID.
-2. [Upload document data](/graph/api/printdocument-uploaddata?view=graph-rest-beta) to the document from (1).
+2. [Upload document data](/graph/api/printdocument-uploaddata?view=graph-rest-beta) to the document .
 3. [Start print job](/graph/api/printjob-startprintjob?view=graph-rest-beta)
 
 ### Manage printers
 
-Keeping track of an organization's printers, their configurations, and their usage is a complex task. The Universal Print API enables integration in all three areas.
+Keeping track of an organization's printers, printer configurations, and printer usage is a complex task. The Universal Print API enables integration in all three areas.
 
 * **Keep an eye on printer status, configurations, and availability** by using [List printers](/graph/api/print-list-printers?view=graph-rest-beta) and [printerStatus](/graph/resources/printerstatus?view=graph-rest-beta).
 
@@ -53,11 +53,11 @@ Keeping track of an organization's printers, their configurations, and their usa
 
 ### Seamlessly replace or update printer hardware
 
-Printers are not visible to users until they are [shared](/graph/api/print-post-printershares?view=graph-rest-beta), providing administrators fine-grained control of which printer hardware is available at a given time.
+Printers are not visible to users until they are [shared](/graph/api/print-post-printershares?view=graph-rest-beta), providing administrators fine-grained control over which printer hardware is available at a given time.
 
-Sharing a printer creates a [printerShare](/graph/resources/printershare?view=graph-rest-beta) resource which can be updated at any time to point to a different printer, making it easy to replace broken printer hardware or take printers offline for maintenance.
+Sharing a printer creates a [printerShare](/graph/resources/printershare?view=graph-rest-beta) resource that can be updated at any time to point to a different printer, making it easy to replace broken printer hardware or take printers offline for maintenance.
 
-To leverage this in your application, use [Update printerShare](/graph/api/printershare-update?view=graph-rest-beta) to update the printerShare's `printer` reference.
+To use this in your application, use [Update printerShare](/graph/api/printershare-update?view=graph-rest-beta) to update the printerShare's `printer` reference.
 
 ## API reference
 Looking for the API reference for this service?
