@@ -137,6 +137,7 @@ The following is a JSON representation of the resource.
   "answeredBy": {"@odata.type": "#microsoft.graph.participantInfo"},
   "callRoutes": [{"@odata.type": "#microsoft.graph.callRoute"}],
   "callbackUri": "String",
+  "callChainId": "String",
   "chatInfo": {"@odata.type": "#microsoft.graph.chatInfo"},
   "direction": "incoming | outgoing",
   "id": "String (identifier)",
