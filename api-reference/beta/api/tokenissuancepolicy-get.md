@@ -1,19 +1,19 @@
 ---
-title: "Get activityBasedTimeoutPolicy"
-description: "Get the properties of an activityBasedTimeoutPolicy object."
+title: "Get tokenIssuancePolicy"
+description: "Retrieve the properties and relationships of tokenIssuancePolicy object."
 localization_priority: Normal
 author: "davidmu1"
 ms.prod: "microsoft-identity-platform"
 doc_type: "apiPageType"
 ---
 
-# Get activityBasedTimeoutPolicy
+# Get tokenIssuancePolicy
 
 Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Get the properties of an [activityBasedTimeoutPolicy](../resources/activitybasedtimeoutpolicy.md) object.
+Retrieve the properties and relationships of a [tokenIssuancePolicy](../resources/tokenIssuancePolicy.md) object.
 
 ## Permissions
 
@@ -30,18 +30,18 @@ One of the following permissions is required to call this API. To learn more, in
 <!-- { "blockType": "ignored" } -->
 
 ```http
-GET /policies/activityBasedTimeoutPolicies/{id}
+GET /policies/tokenIssuancePolicies/{id}
 ```
 
 ## Optional query parameters
 
-This method supports the `$select` OData query parameters to help customize the response. For general information, see [OData query parameters](/graph/query-parameters).
+This method supports the `$expand` and `$select` OData query parameters to help customize the response. For general information, see [OData query parameters](/graph/query-parameters). When using `$expand`, make sure your app requests permissions to read the expanded objects.
 
 ## Request headers
 
 | Name      |Description|
 |:----------|:----------|
-| Authorization | Bearer {token} |
+| Authorization | Bearer {token}. Required. |
 
 ## Request body
 
@@ -49,7 +49,7 @@ Do not supply a request body for this method.
 
 ## Response
 
-If successful, this method returns a `200 OK` response code and the requested [activityBasedTimeoutPolicy](../resources/activitybasedtimeoutpolicy.md) object in the response body.
+If successful, this method returns a `200 OK` response code and the requested [tokenIssuancePolicy](../resources/tokenIssuancePolicy.md) object in the response body.
 
 ## Examples
 
@@ -60,24 +60,12 @@ The following is an example of the request.
 # [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
-  "name": "get_activitybasedtimeoutpolicy"
+  "name": "get_tokenIssuancePolicy"
 }-->
 
 ```msgraph-interactive
-GET https://graph.microsoft.com/beta/policies/activityBasedTimeoutPolicies/{id}
+GET https://graph.microsoft.com/beta/policies/tokenIssuancepolicies/{id}
 ```
-# [C#](#tab/csharp)
-[!INCLUDE [sample-code](../includes/snippets/csharp/get-activitybasedtimeoutpolicy-csharp-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [JavaScript](#tab/javascript)
-[!INCLUDE [sample-code](../includes/snippets/javascript/get-activitybasedtimeoutpolicy-javascript-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [Objective-C](#tab/objc)
-[!INCLUDE [sample-code](../includes/snippets/objc/get-activitybasedtimeoutpolicy-objc-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
 ---
 
 
@@ -90,7 +78,7 @@ The following is an example of the response.
 <!-- {
   "blockType": "response",
   "truncated": true,
-  "@odata.type": "microsoft.graph.activityBasedTimeoutPolicy"
+  "@odata.type": "microsoft.graph.tokenIssuancePolicy"
 } -->
 
 ```http
@@ -111,7 +99,7 @@ Content-type: application/json
 2019-02-04 14:57:30 UTC -->
 <!-- {
   "type": "#page.annotation",
-  "description": "Get activityBasedTimeoutPolicy",
+  "description": "Get tokenIssuancePolicy",
   "keywords": "",
   "section": "documentation",
   "tocPath": ""

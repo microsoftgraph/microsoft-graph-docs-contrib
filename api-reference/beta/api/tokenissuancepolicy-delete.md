@@ -1,19 +1,19 @@
 ---
-title: "Remove claimsMappingPolicy"
-description: "Remove a claimsMappingPolicy from a servicePrincipal."
+title: "Delete tokenIssuancePolicy"
+description: "Delete tokenIssuancePolicy."
 localization_priority: Normal
 author: "davidmu1"
 ms.prod: "microsoft-identity-platform"
 doc_type: "apiPageType"
 ---
 
-# Remove claimsMappingPolicy
+# Delete tokenIssuancePolicy
 
 Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Remove a [claimsMappingPolicy](../resources/claimsmappingpolicy.md) from a [servicePrincipal](../resources/servicePrincipal.md).
+Delete a [tokenIssuancePolicy](../resources/tokenissuancepolicy.md) object.
 
 ## Permissions
 
@@ -21,23 +21,23 @@ One of the following permissions is required to call this API. To learn more, in
 
 | Permission type                        | Permissions (from least to most privileged) |
 |:---------------------------------------|:--------------------------------------------|
-| Delegated (work or school account)     | Policy.Read.All and Application.ReadWrite.All, Policy.ReadWrite.ApplicationConfiguration and Application.ReadWrite.All  |
+| Delegated (work or school account)     | Policy.ReadWrite.ApplicationConfiguration |
 | Delegated (personal Microsoft account) | Not supported. |
-| Application                            | Policy.Read.All and Application.ReadWrite.OwnedBy, Policy.ReadWrite.ApplicationConfiguration and Application.ReadWrite.OwnedBy, Policy.Read.All and Application.ReadWrite.All, Policy.ReadWrite.ApplicationConfiguration and Application.ReadWrite.All |
+| Application                            | Policy.ReadWrite.ApplicationConfiguration |
 
 ## HTTP request
 
 <!-- { "blockType": "ignored" } -->
 
 ```http
-DELETE /servicePrincipals/{id}/claimsMappingPolicies/{id}$ref
+DELETE /policies/tokenIssuancePolicies/{id}
 ```
 
 ## Request headers
 
 | Name          | Description   |
 |:--------------|:--------------|
-| Authorization | Bearer {token} |
+| Authorization | Bearer {token}. Required. |
 
 ## Request body
 
@@ -45,27 +45,29 @@ Do not supply a request body for this method.
 
 ## Response
 
-If successful, this method returns `204 No Content` response code.
+If successful, this method returns a `204 No Content` response code.
 
 ## Examples
 
 ### Request
 
 The following is an example of the request.
+
+# [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
-  "name": "delete_claimsmappingpolicy_from_serviceprincipal"
+  "name": "delete_tokenissuancepolicy"
 }-->
 
 ```http
-DELETE https://graph.microsoft.com/beta/servicePrincipals/{id}/claimsMappingPolicies/{id}/$ref
+DELETE https://graph.microsoft.com/beta/policies/tokenIssuancePolicies/{id}
 ```
+---
+
 
 ### Response
 
 The following is an example of the response.
-
-> **Note:** The response object shown here might be shortened for readability. All the properties will be returned from an actual call.
 
 <!-- {
   "blockType": "response",
@@ -80,7 +82,7 @@ HTTP/1.1 204 No Content
 2019-02-04 14:57:30 UTC -->
 <!-- {
   "type": "#page.annotation",
-  "description": "Remove claimsMappingPolicy",
+  "description": "Delete tokenIssuancePolicy",
   "keywords": "",
   "section": "documentation",
   "tocPath": ""
