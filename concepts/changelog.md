@@ -19,6 +19,7 @@ For details about known issues with Microsoft Graph APIs, see [Known issues](kno
 | :-------------- | :---------- | :--------------------------------------- |
 | Addition | v1.0 | Introducing all beta Shifts APIs in V1, including [shift], [workforceintegration]
 | Addition | Beta |Added new property `supportedEntities` to [workforceintegration](/graph/api/resources/workforceintegration?view=graph-rest-beta) entity.
+| Addition | v1.0 | Added new entity [teamwork](/graph/api/resources/teamwork?view=graph-rest-1.0).
 
 ## February 2020
 
