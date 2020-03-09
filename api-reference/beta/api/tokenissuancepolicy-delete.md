@@ -9,6 +9,8 @@ doc_type: "apiPageType"
 
 # Delete tokenIssuancePolicy
 
+Namespace: microsoft.graph
+
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 Delete a [tokenIssuancePolicy](../resources/tokenissuancepolicy.md) object.
