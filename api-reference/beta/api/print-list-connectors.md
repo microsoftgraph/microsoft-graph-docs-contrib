@@ -80,7 +80,7 @@ Content-length: 1289
       "appVersion": "0.19.7338.23496",
       "deviceHealth": {
         "lastConnectionTime": "2020-02-04T07:00:00.0000000"
-      }
+      },
       "registeredDateTime": "2020-02-04T07:00:00.0000000",
       "registeredBy": {},
       "location": {

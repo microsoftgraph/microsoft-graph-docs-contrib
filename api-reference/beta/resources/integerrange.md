@@ -36,7 +36,7 @@ The following is a JSON representation of the resource.
 ```json
 {
     "minimum": 12345,
-    "minimum": 12345
+    "maximum": 12345
 }
 ```
 

@@ -50,8 +50,8 @@ The following is a JSON representation of the resource.
 
 ```json
 {
-    "latitude": 123456,
-    "longitude": 123456,
+    "latitude": 80.1,
+    "longitude": -170.1,
     "altitudeInMeters": 123456,
     "streetAddress": "String",
     "subUnit": ["String"],

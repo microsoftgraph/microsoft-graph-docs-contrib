@@ -122,7 +122,7 @@ The following is a JSON representation of the resource.
 {
   "isColorPrintingSupported": true,
   "supportsFitPdfToPage": true,
-  "supportedCopiesPerJob": [123456],
+  "supportedCopiesPerJob": {"@odata.type": "microsoft.graph.integerRange"},
   "supportedDocumentMimeTypes": ["String"],
   "supportedFinishings": ["String"],
   "supportedMediaColors": ["String"],

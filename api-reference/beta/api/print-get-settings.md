@@ -67,7 +67,9 @@ Content-type: application/json
 Content-length: 127
 
 {
-    "@odata.context": "https://graph.microsoft.com/beta/$metadata#print/settings",
+  "@odata.context": "https://graph.microsoft.com/beta/$metadata#print/settings",
+  value: {
     "documentConversionEnabled": true
+  }
 }
 ```

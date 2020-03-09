@@ -83,8 +83,8 @@ Content-length: 1526
       "acceptingJobs": true,
       "registeredBy": {},
       "status": {
-        "processingState": "idle",
-        "processingStateReasons": [],
+        "processingState": "stopped",
+        "processingStateReasons": ["disconnected"],
         "processingStateDescription": ""
       },
       "defaults": {

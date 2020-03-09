@@ -66,7 +66,7 @@ The following is a JSON representation of the resource.
 
 ```json
 {
-  "pageRanges": {"@odata.type": "microsoft.graph.printPageRange"},
+  "pageRanges": [{"@odata.type": "microsoft.graph.printPageRange"}],
   "printQuality": "String",
   "printResolutionInDpi": 123456,
   "feedDirection": "String",
