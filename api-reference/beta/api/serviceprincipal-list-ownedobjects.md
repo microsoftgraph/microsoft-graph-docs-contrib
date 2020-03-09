@@ -9,6 +9,8 @@ author: ""
 
 # servicePrincipals: List ownedObjects
 
+Namespace: microsoft.graph
+
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 Retrieve a list of objects owned by the servicePrincipal.  This could include applications or groups.

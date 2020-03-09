@@ -9,6 +9,8 @@ doc_type: apiPageType
 
 # Get countryNamedLocation
 
+Namespace: microsoft.graph
+
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 Retrieve the properties and relationships of a [countryNamedLocation](../resources/countryNamedLocation.md) object.

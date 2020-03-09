@@ -9,15 +9,17 @@ doc_type: resourcePageType
 
 # subscription resource type
 
+Namespace: microsoft.graph
+
 A subscription allows a client app to receive notifications about changes to data in Microsoft Graph. Currently, subscriptions are enabled for the following resources:
 
-- A [message][], [event][], or [contact][] in Outlook
-- A [conversation][] of an Office 365 group
-- Content in the hierarchy of a root folder [driveItem][] in OneDrive for Business, or of a root folder or subfolder [driveItem][] in a user's personal OneDrive
-- A [user][] or [group][] in Azure Active Directory
 - An [alert][] from the Microsoft Graph Security API
+- A [conversation][] in an Office 365 group
+- Content in the hierarchy of a root folder [driveItem][] in OneDrive for Business, or of a root folder or subfolder [driveItem][] in a user's personal OneDrive
+- A [message][], [event][], or [contact][] in Outlook
+- A [user][] or [group][] in Azure Active Directory
 
-The resource path expressions supported for each resource - that can be used in the **resource** property of the subscription - are documented in [the overview article](webhooks.md).
+See [Use the Microsoft Graph API to get change notifications](webhooks.md) for the possible resource path values for each supported resource.
 
 ## Methods
 
@@ -35,7 +37,7 @@ The resource path expressions supported for each resource - that can be used in 
 |:---------|:-----|:------------|
 | changeType | string | Required. Indicates the type of change in the subscribed resource that will raise a notification. The supported values are: `created`, `updated`, `deleted`. Multiple values can be combined using a comma-separated list.<br><br>Note: Drive root item notifications support only the `updated` changeType. User and group notifications support `updated` and `deleted` changeType. |
 | notificationUrl | string | Required. The URL of the endpoint that will receive the notifications. This URL must make use of the HTTPS protocol. |
-| resource | string | Required. Specifies the resource that will be monitored for changes. Do not include the base URL (`https://graph.microsoft.com/v1.0/`). |
+| resource | string | Required. Specifies the resource that will be monitored for changes. Do not include the base URL (`https://graph.microsoft.com/v1.0/`). See the possible resource path [values](webhooks.md) for each supported resource.|
 | expirationDateTime | [dateTime](https://tools.ietf.org/html/rfc3339) | Required. Specifies the date and time when the webhook subscription expires. The time is in UTC, and can be an amount of time from subscription creation that varies for the resource subscribed to.  See the table below for maximum supported subscription length of time. |
 | clientState | string | Optional. Specifies the value of the `clientState` property sent by the service in each notification. The maximum length is 128 characters. The client can check that the notification came from the service by comparing the value of the `clientState` property sent with the subscription with the value of the `clientState` property received with each notification. |
 | id | string | Unique identifier for the subscription. Read-only. |

@@ -9,6 +9,8 @@ ms.prod: "outlook"
 
 # Create Event
 
+Namespace: microsoft.graph
+
 Create an [event](../resources/event.md) in the user's default calendar or specified calendar.
 
 You can specify the time zone for each of the start and end times of the event as part of their values, because the 
@@ -647,6 +649,8 @@ Content-type: application/json
 ##### Request 4
 The fourth example shows how to create a daily recurring event. The event occurs from 12:00pm to 2:00pm, every day starting February 21, 2020, for two occurrences.
 
+
+# [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "create_event_recurring_daily"
@@ -695,6 +699,24 @@ Content-type: application/json
   }
 }
 ```
+# [C#](#tab/csharp)
+[!INCLUDE [sample-code](../includes/snippets/csharp/create-event-recurring-daily-csharp-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [JavaScript](#tab/javascript)
+[!INCLUDE [sample-code](../includes/snippets/javascript/create-event-recurring-daily-javascript-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Objective-C](#tab/objc)
+[!INCLUDE [sample-code](../includes/snippets/objc/create-event-recurring-daily-objc-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Java](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/create-event-recurring-daily-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+---
+
 
 
 In the request body, supply a JSON representation of [event](../resources/event.md) object.

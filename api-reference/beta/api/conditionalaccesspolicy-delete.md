@@ -9,6 +9,8 @@ doc_type: apiPageType
 
 # Delete conditionalAccessPolicy
 
+Namespace: microsoft.graph
+
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 Delete a [conditionalAccessPolicy](../resources/conditionalaccesspolicy.md) object.

@@ -916,7 +916,7 @@
         - name: Get
           href: api/onlinemeeting-get.md
         - name: Delete
-          href: api/onlinemeeting-delete.md          
+          href: api/onlinemeeting-delete.md
       - name: Presence
         href: resources/presence.md
         items:
@@ -924,6 +924,14 @@
           href: api/presence-get.md
         - name: Get presence for multiple users
           href: api/cloudcommunications-getpresencesbyuserid.md
+      - name: Call records (preview)
+        items:
+        - name: Overview
+          href: resources/callrecords-api-overview.md
+        - name: Call record
+          href: resources/callrecords-callrecord.md
+        - name: Get call record
+          href: api/callrecords-callrecord-get.md
     - name: Cross-device experiences
       displayName: Project Rome
       items:
@@ -8005,6 +8013,8 @@
       - name: Category
         href: resources/educationcategory.md
         items:
+        - name: Create category
+          href: api/educationclass-post-category.md
         - name: Get category
           href: api/educationcategory-get.md
         - name: Delete category
@@ -8012,6 +8022,8 @@
       - name: Rubric
         href: resources/educationrubric.md
         items:
+        - name: Create rubric
+          href: api/educationuser-post-rubrics.md
         - name: Get rubric
           href: api/educationrubric-get.md
         - name: Update rubric
@@ -8850,7 +8862,7 @@
           - name: Create
             href: api/accesspackageresourcerequest-post.md
         - name: Access package resource role scope
-          href: resources/accesspackageresourcerequest.md
+          href: resources/accesspackageresourcerolescope.md
           items:
           - name: List
             href: api/accesspackage-list-accesspackageresourcerolescopes.md
@@ -9083,24 +9095,81 @@
           - name: Get member objects
             href: api/orgcontact-getmemberobjects.md
       - name: Policy
-        href: resources/policy.md
+        href: resources/policy-overview.md
         items:
-        - name: List policies
-          href: api/policy-list.md
-        - name: Create policy
-          href: api/policy-post.md
-        - name: Get policy
-          href: api/policy-get.md
-        - name: Update policy
-          href: api/policy-update.md
-        - name: Delete policy
-          href: api/policy-delete.md
-        - name: Assign policy
-          href: api/policy-assign.md
-        - name: List assigned policies
-          href: api/policy-list-assigned.md
-        - name: List applied to applications
-          href: api/policy-list-appliesto.md
+        - name: Activity-based timeout policy
+          href: resources/activitybasedtimeoutpolicy.md
+          items:
+          - name: Create
+            href: api/activitybasedtimeoutpolicy-post-activitybasedtimeoutpolicies.md
+          - name: List
+            href: api/activitybasedtimeoutpolicy-list.md
+          - name: Get
+            href: api/activitybasedtimeoutpolicy-get.md
+          - name: Update
+            href: api/activitybasedtimeoutpolicy-update.md
+          - name: Delete
+            href: api/activitybasedtimeoutpolicy-delete.md
+        - name: Claims mapping policy
+          href: resources/claimsmappingpolicy.md
+          items:
+          - name: Create
+            href: api/claimsmappingpolicy-post-claimsmappingpolicies.md
+          - name: List
+            href: api/claimsmappingpolicy-list.md
+          - name: Get
+            href: api/claimsmappingpolicy-get.md
+          - name: Update
+            href: api/claimsmappingpolicy-update.md
+          - name: Delete
+            href: api/claimsmappingpolicy-delete.md
+          - name: List applied to applications
+            href: api/claimsmappingpolicy-list-appliesto.md
+        - name: Home realm discovery policy
+          href: resources/homerealmdiscoverypolicy.md
+          items:
+          - name: Create
+            href: api/homerealmdiscoverypolicy-post-homerealmdiscoverypolicies.md
+          - name: List
+            href: api/homerealmdiscoverypolicy-list.md
+          - name: Get
+            href: api/homerealmdiscoverypolicy-get.md
+          - name: Update
+            href: api/homerealmdiscoverypolicy-update.md
+          - name: Delete
+            href: api/homerealmdiscoverypolicy-delete.md
+          - name: List applied to applications
+            href: api/homerealmdiscoverypolicy-list-appliesto.md
+        - name: Token issuance policy
+          href: resources/tokenissuancepolicy.md
+          items:
+          - name: Create
+            href: api/tokenissuancepolicy-post-tokenissuancepolicy.md
+          - name: List
+            href: api/tokenissuancepolicy-list.md
+          - name: Get
+            href: api/tokenissuancepolicy-get.md
+          - name: Update
+            href: api/tokenissuancepolicy-update.md
+          - name: Delete
+            href: api/tokenissuancepolicy-delete.md
+          - name: List applied to applications
+            href: api/tokenissuancepolicy-list-appliesto.md
+        - name: Token lifetime policy
+          href: resources/tokenlifetimepolicy.md
+          items:
+          - name: Create
+            href: api/tokenlifetimepolicy-post-tokenlifetimepolicies.md
+          - name: List
+            href: api/tokenlifetimepolicy-list.md
+          - name: Get
+            href: api/tokenlifetimepolicy-get.md
+          - name: Update
+            href: api/tokenlifetimepolicy-update.md
+          - name: Delete
+            href: api/tokenlifetimepolicy-delete.md
+          - name: List applied to applications
+            href: api/tokenlifetimepolicy-list-appliesto.md
       - name: Privileged Identity Management
         items:
         - name: Privileged Identity Management
@@ -10768,7 +10837,7 @@
             href: api/shiftpreferences-get.md
           - name: Update
             href: api/shiftpreferences-put.md
-        - name: Swap shift change request
+        - name: Swap shifts change request
           href: resources/swapshiftschangerequest.md
           items:
           - name: List
@@ -10777,6 +10846,10 @@
             href: api/swapshiftschangerequest-post.md
           - name: Get
             href: api/swapshiftschangerequest-get.md
+          - name: Approve
+            href: api/swapshiftschangerequest-approve.md
+          - name: Decline
+            href: api/swapshiftschangerequest-decline.md
         - name: Time off
           href: resources/timeoff.md
           items:

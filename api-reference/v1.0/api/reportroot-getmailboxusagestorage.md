@@ -9,6 +9,8 @@ doc_type: apiPageType
 
 # reportRoot: getMailboxUsageStorage
 
+Namespace: microsoft.graph
+
 Get the amount of storage used in your organization.
 
 > **Note:** For details about different report views and names, see [Office 365 Reports - Mailbox usage](https://support.office.com/client/Mailbox-usage-beffbe01-ce2d-4614-9ae5-7898868e2729).
