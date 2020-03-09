@@ -17,7 +17,7 @@ For details about known issues with Microsoft Graph APIs, see [Known issues](kno
 
 | **Change type** | **Version** | **Description**                  |
 |:----------------|:------------|:-----------------------------------------|
-| Change | beta | Conditional Access APIs are moved to /identity/ segment. e.g. /beta/identity/conditionalAccess/policies.|
+| Change | beta | Updated the conditional access APIs to use the /identity/ segment; for example, /beta/identity/conditionalAccess/policies.|
 
 ## February 2020
 
