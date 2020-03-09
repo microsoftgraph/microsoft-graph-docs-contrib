@@ -9,6 +9,8 @@ doc_type: "apiPageType"
 
 # Create tokenIssuancePolicy
 
+Namespace: microsoft.graph
+
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 Create a new [tokenIssuancePolicy](../resources/tokenissuancepolicy.md) object.
@@ -35,12 +37,12 @@ POST policies/tokenIssuancePolicies
 
 | Name          | Description   |
 |:--------------|:--------------|
-| Authorization | Bearer {token} |
-| Content-type | application/json |
+| Authorization | Bearer {token}. Required. |
+| Content-type | application/json. Required. |
 
 ## Request body
 
-In the request body, supply a JSON representation of [tokenIssuancePolicy](../resources/tokenissuancepolicy.md) object.
+In the request body, supply a JSON representation of a [tokenIssuancePolicy](../resources/tokenissuancepolicy.md) object.
 
 ## Response
 
