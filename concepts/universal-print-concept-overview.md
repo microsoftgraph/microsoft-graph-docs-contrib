@@ -11,6 +11,8 @@ ms.custom: scenarios:getting-started
 
 Universal Print is a modern print solution that organizations can use to manage their print infrastructure through cloud services from Microsoft.
 
+We'd love to hear your feedback over at the [Universal Print](https://techcommunity.microsoft.com/t5/universal-print/ct-p/UniversalPrint) Microsoft Tech Community site!
+
 ![Screenshot of the Universal Print Azure portal home page](images/universal-print-portal-homepage.png)
 
 ## Why use Universal Print?
