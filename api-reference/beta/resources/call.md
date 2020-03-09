@@ -110,6 +110,7 @@ The following is a JSON representation of the resource.
     "activeModalities",
     "answeredBy",
     "callRoutes",
+    "callChainId",
     "chatInfo",
     "direction",
     "id",
