@@ -103,6 +103,7 @@ Content-type: application/json
             "name": "Calendar",
             "color": "auto",
             "changeKey": "nfZyf7VcrEKLNoU37KWlkQAAA0x0+w==",
+            "calendarGroupId":null,
             "isDefaultCalendar": true,
             "canShare":true,
             "canViewPrivateItems":true,

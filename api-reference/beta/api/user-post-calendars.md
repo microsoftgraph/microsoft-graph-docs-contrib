@@ -92,7 +92,7 @@ Content-type: application/json
     "color":"auto",
     "isDefaultCalendar":false,
     "changeKey":"DxYSthXJXEWwAQSYQnXvIgAAIxGttg==",
-    "calendarGroupId":"AQMkQAAAA==",
+    "calendarGroupId":null,
     "canShare":true,
     "canViewPrivateItems":true,
     "hexColor": "",
