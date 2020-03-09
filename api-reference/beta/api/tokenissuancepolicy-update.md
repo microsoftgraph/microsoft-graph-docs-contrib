@@ -9,6 +9,8 @@ doc_type: "apiPageType"
 
 # Update tokenIssuancePolicy
 
+Namespace: microsoft.graph
+
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 Update the properties of a [tokenIssuancePolicy](../resources/tokenIssuancePolicy.md) object.
@@ -35,8 +37,8 @@ PATCH /policies/tokenIssuancePolicies/{id}
 
 | Name       | Description|
 |:-----------|:-----------|
-| Authorization | Bearer {token} |
-| Content-type | application/json |
+| Authorization | Bearer {token}. Required. |
+| Content-type | application/json. Required. |
 
 ## Request body
 
