@@ -45,7 +45,7 @@ In the request body, provide a JSON object with the following parameters.
 
 | Parameter    | Type        | Description |
 |:-------------|:------------|:------------|
-|quality|[teleconferenceDeviceQuality](../resources/teleconferencedevicequality.md)|Quality data of VTC media leg.|
+|quality|teleconferenceDeviceQuality|Quality data of VTC media leg.|
 
 ## Response
 
