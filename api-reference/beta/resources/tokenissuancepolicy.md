@@ -9,6 +9,8 @@ doc_type: "resourcePageType"
 
 # tokenIssuancePolicy resource type
 
+Namespace: microsoft.graph
+
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 Represents the policy to specify the characteristics of SAML tokens issued by Azure AD. You can use token-issuance policies to:
@@ -42,7 +44,7 @@ Inherits from [stsPolicy](stsPolicy.md).
 
 
 ### Properties of a token issuance policy definition
-The properties below form the JSON object that represents a token issuance policy. This JSON object must be **converted to a string with quotations escaped** to be inserted into the **definition** property. An example is shown below in JSON format:
+The properties form the JSON object that represents a token issuance policy. This JSON object must be **converted to a string with quotations escaped** to be inserted into the **definition** property. The following is an example in JSON format:
 
 <!-- {
   "blockType": "ignored"
@@ -56,9 +58,9 @@ The properties below form the JSON object that represents a token issuance polic
 
 | Property	   | Type	|Description|
 |:---------------|:--------|:----------|
-|TokenResponseSigningPolicy|String|Represent the certificate signing options available in Azure AD. Supported values can be: `ResponseOnly`, `TokenOnly`, `ResponseAndToken`.  |
-|SamlTokenVersion|String|Version of the SAML token. Supported values can be: `1.1`, `2.0`. |
-|SigningAlgorithm|String|Signing algorithm use by Azure AD to sign the SAML token. Supported values can be: `http://www.w3.org/2001/04/xmldsig-more#rsa-sha256`, `http://www.w3.org/2000/09/xmldsig#rsa-sha1`.|
+|TokenResponseSigningPolicy|String|Represents the certificate signing options available in Azure AD. Supported values are: `ResponseOnly`, `TokenOnly`, `ResponseAndToken`.  |
+|SamlTokenVersion|String|Version of the SAML token. Supported values are: `1.1`, `2.0`. |
+|SigningAlgorithm|String|Signing algorithm use by Azure AD to sign the SAML token. Supported values are: `http://www.w3.org/2001/04/xmldsig-more#rsa-sha256`, `http://www.w3.org/2000/09/xmldsig#rsa-sha1`.|
 |Version|Integer|Set value of 1. Required.|
 
 
