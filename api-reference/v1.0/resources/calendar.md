@@ -56,6 +56,7 @@ A calendar which is a container for events. It can be a calendar for a [user](us
 ## Relationships
 | Relationship | Type	|Description|
 |:---------------|:--------|:----------|
+|calendarPermissions|[calendarPermission](calendarpermission.md) collection| The permissions of the users with whom the calendar is shared.|
 |calendarView|[Event](event.md) collection|The calendar view for the calendar. Navigation property. Read-only.|
 |events|[Event](event.md) collection|The events in the calendar. Navigation property. Read-only.|
 |multiValueExtendedProperties|[multiValueLegacyExtendedProperty](multivaluelegacyextendedproperty.md) collection| The collection of multi-value extended properties defined for the calendar. Read-only. Nullable.|

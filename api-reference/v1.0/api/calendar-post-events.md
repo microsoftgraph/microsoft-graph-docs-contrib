@@ -57,7 +57,7 @@ If successful, this method returns `201 Created` response code and [event](../re
 
 ### Example 1: Create an event in a specific calendar
 
-##### Request
+#### Request
 Here is an example of the request.
 In the request body, supply a JSON representation of [event](../resources/event.md) object.
 
@@ -118,7 +118,7 @@ Content-type: application/json
 ---
 
 
-##### Response
+#### Response
 Here is an example of the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.
 <!-- {
   "blockType": "response",
@@ -213,7 +213,7 @@ Content-type: application/json
 ```
 ### Example 2: Create and enable an event as an online meeting
 
-##### Request
+#### Request
 The following example creates an event in the specified calendar of the signed-in user's and enables it as an online meeting.
 
 In the request body, supply a JSON representation of [event](../resources/event.md) object.
@@ -257,7 +257,7 @@ Content-type: application/json
 }
 ```
 
-##### Response
+#### Response
 Here is an example of the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.
 <!-- {
   "blockType": "response",

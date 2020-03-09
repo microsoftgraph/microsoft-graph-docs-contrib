@@ -80,7 +80,7 @@ If successful, this method returns `201 Created` response code and [event](../re
 
 ### Example 1: Create an event
 
-##### Request
+#### Request
 Here is an example of the request. It uses the `Prefer: outlook.timezone` request header to specify the time zone for the **start** and **end** 
 times in the response.
 
@@ -142,7 +142,7 @@ Content-length: 600
 ---
 
 In the request body, supply a JSON representation of [event](../resources/event.md) object.
-##### Response
+#### Response
 Here is an example of the response, which shows the **start** and **end** properties use the time zone specified in the `Prefer: outlook.timezone` header. 
 Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.
 <!-- {
@@ -243,7 +243,7 @@ Content-length: 2197
 
 ### Example 2: Create an event that occurs in multiple locations
 
-##### Request
+#### Request
 The next example request specifies 3 locations where the organizer and attendees can attend the meeting from.
 
 In the request body, supply a JSON representation of [event](../resources/event.md) object.
@@ -337,7 +337,7 @@ Content-length: 1390
 ---
 
 
-##### Response
+#### Response
 The following example response shows the created event that specifies information for the 3 locations for the meeting. Because of the 
 `Prefer: outlook.timezone="Pacific Standard Time"` request header, the **start** and **end** properties are expressed in PST.
 Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.
@@ -470,9 +470,9 @@ Content-length: 2985
 ```
 
 
-#### Example 3: Create a recurring event
+### Example 3: Create a recurring event
 
-##### Request
+#### Request
 The third example shows how to create a recurring event that occurs once a week. The event occurs from 12:00pm to 2:00pm, every Monday starting September 4, 2017, through the end of the year.
 
 # [HTTP](#tab/http)
@@ -543,7 +543,7 @@ Content-type: application/json
 ---
 
 In the request body, supply a JSON representation of [event](../resources/event.md) object.
-##### Response
+#### Response
 Here is an example of the response. 
 Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.
 <!-- {
@@ -659,9 +659,9 @@ Content-type: application/json
     "OnlineMeeting":null
 }
 ```
-#### Example 4: Create and enable an event as an online meeting
+### Example 4: Create and enable an event as an online meeting
 
-##### Request
+#### Request
 Here is an example of a request which creates an event and enables it as an online meeting. It uses the `Prefer: outlook.timezone` request header to specify the time zone for the **start** and **end**
 times in the response.
 
@@ -706,7 +706,7 @@ Content-type: application/json
 ```
 
 In the request body, supply a JSON representation of [event](../resources/event.md) object.
-##### Response
+#### Response
 Here is an example of the response, which shows the **start** and **end** properties use the time zone specified in the `Prefer: outlook.timezone` header.
 Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.
 <!-- {
