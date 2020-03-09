@@ -4,6 +4,7 @@ description: Retrieve the properties and relationships of a print service.
 author: braedenp-msft
 localization_priority: Normal
 ms.prod: universal-print
+doc_type: apiPageType
 ---
 
 # Get printService
