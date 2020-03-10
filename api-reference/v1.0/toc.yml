@@ -3494,7 +3494,7 @@
             href: resources/emailfileassessmentrequest.md
           - name: File assessment request
             href: resources/fileAssessmentRequest.md
-          - name: Url assessment request
+          - name: URL assessment request
             href: resources/urlassessmentrequest.md
           - name: List
             href: api/informationprotection-list-threatassessmentrequests.md
