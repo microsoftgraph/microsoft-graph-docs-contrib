@@ -109,6 +109,11 @@ Added new APIs and resources for subscribing to and retrieving call records from
 |Addition | beta | Added the [error](/graph/api/resources/synchronization-synchronizationError?view=graph-rest-beta) property to the **quarantineStatus** resource type.|
 | Addition | beta and v1.0 | Added application-level and delegated Policy.ReadWrite.ApplicationConfiguration permission for read and write operations on application configuration policies.|
 
+### Identity and access (Azure AD) | Information protection
+
+| **Change type** | **Version** | **Description**              |
+| :-------------- | :---------- | :--------------------------------------- |
+| Addition        | v1.0        | Added [create](/graph/api/informationprotection-post-threatassessmentrequests?view=graph-rest-1.0), [get](/graph/api/threatassessmentrequest-get?view=graph-rest-1.0) and [list](/graph/api/informationprotection-list-threatassessmentrequests?view=graph-rest-1.0) APIs to manage [threatAssessmentRequest](/graph/api/resources/threatAssessmentRequest?view=graph-rest-1.0) resources.|
 
 ### Teamwork (Microsoft Teams)
 
