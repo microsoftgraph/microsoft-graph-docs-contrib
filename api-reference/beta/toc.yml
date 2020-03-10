@@ -10022,116 +10022,117 @@
       items:
       - name: Print
         href: resources/print.md
-        items: 
-        - name: Connectors
-          href: resources/printconnector.md
+      - name: Connectors
+        href: resources/printconnector.md
+        items:
+        - name: List
+          href: api/print-list-connectors.md
+        - name: Get
+          href: api/printconnector-get.md
+        - name: Update
+          href: api/printconnector-update.md
+        - name: Delete
+          href: api/printconnector-delete.md
+      - name: Print jobs
+        href: resources/printjob.md
+        items:
+        - name: Create
+          href: api/printer-post-jobs.md
+        - name: Get
+          href: api/printjob-get.md
+        - name: Start
+          href: api/printjob-startprintjob.md
+        - name: Cancel
+          href: api/printjob-cancelprintjob.md
+      - name: Printers
+        href: resources/printer.md
+        items:
+        - name: List
+          href: api/print-list-printers.md
+        - name: Get
+          href: api/printer-get.md
+        - name: Delete
+          href: api/printer-delete.md
+        - name: Get capabilities
+          href: api/printer-getcapabilities.md
+        - name: List connectors
+          href: api/printer-list-connectors.md
+        - name: List print jobs
+          href: api/printer-list-jobs.md
+        - name: Create print job
+          href: api/printer-post-jobs.md
+        - name: List allowed users
+          href: api/printer-list-allowedusers.md
+        - name: List allowedGroups
+          href: api/printer-list-allowedgroups.md
+        - name: Add allowed group
+          href: api/printer-post-allowedgroups.md
+        - name: Add allowed user
+          href: api/printer-post-allowedusers.md
+        - name: Delete allowed group
+          href: api/printer-delete-allowedgroup.md
+        - name: Delete allowed user
+          href: api/printer-delete-alloweduser.md
+        - name: Reset defaults
+          href: api/printer-resetdefaults.md
+      - name: Printer shares
+        href: resources/printershare.md
+        items:
+        - name: List
+          href: api/print-list-printershares.md
+        - name: Create
+          href: api/print-post-printershares.md
+        - name: Get
+          href: api/printershare-get.md
+        - name: Update
+          href: api/printershare-update.md
+        - name: Delete
+          href: api/printershare-delete.md
+      - name: Reports
+        items:
+        - name: Organized by printer
           items:
-          - name: Delete
-            href: api/printconnector-delete.md
           - name: Get
-            href: api/printconnector-get.md
-          - name: Update
-            href: api/printconnector-update.md
-          - name: Documents
-            href: resources/printerdocumentconfiguration.md
-        - name: Print jobs
-          href: resources/printjob.md
-          items:
-          - name: Create
-            href: api/printer-post-jobs.md
-          - name: Get
-            href: api/printjob-get.md
-          - name: Start
-            href: api/printjob-startprintjob.md
-          - name: Cancel
-            href: api/printjob-cancelprintjob.md
-        - name: Printers
-          href: resources/printer.md
+            href: api/printusagesummarybyprinter-get.md
+          - name: List a printer's archived print jobs
+            href: api/reports-getprinterarchivedprintjobs.md
+          - name: List daily reports by printer
+            href: api/reportroot-list-dailyprintusagesummariesbyprinter.md
+          - name: List monthly reports by printer
+            href: api/reportroot-list-monthlyprintusagesummariesbyprinter.md
+        - name: Organized by user or group
           items:
           - name: Get
-            href: api/printer-get.md
-          - name: Delete
-            href: api/printer-delete.md
-          - name: Get capabilities
-            href: api/printer-getcapabilities.md
-          - name: List connectors
-            href: api/printer-list-connectors.md
-          - name: List print jobs
-            href: api/printer-list-jobs.md
-          - name: Create print job
-            href: api/printer-post-jobs.md
-          - name: List allowed users
-            href: api/printer-list-allowedusers.md
-          - name: List allowedGroups
-            href: api/printer-list-allowedgroups.md
-          - name: Add allowed group
-            href: api/printer-post-allowedgroups.md
-          - name: Add allowed user
-            href: api/printer-post-allowedusers.md
-          - name: Delete allowed group
-            href: api/printer-delete-allowedgroup.md
-          - name: Delete allowed user
-            href: api/printer-delete-alloweduser.md
-          - name: Reset defaults
-            href: api/printer-resetdefaults.md
-        - name: Printer shares
-          href: resources/printershare.md
-          items:
+            href: api/printusagesummarybyuser-get.md
+          - name: List a user's archived print jobs
+            href: api/reports-getuserarchivedprintjobs.md
+          - name: List a group's archived print jobs
+            href: api/reports-getgrouparchivedprintjobs.md
+          - name: List daily reports by user
+            href: api/reportroot-list-dailyprintusagesummariesbyuser.md
+          - name: List monthly reports by user
+            href: api/reportroot-list-monthlyprintusagesummariesbyuser.md
+      - name: Services
+        href: resources/printservice.md
+        items:
           - name: List
-            href: api/print-list-printershares.md
-          - name: Create
-            href: api/print-post-printershares.md
+            href: api/print-list-services.md
           - name: Get
-            href: api/printershare-get.md
-          - name: Update
-            href: api/printershare-update.md
-          - name: Delete
-            href: api/printershare-delete.md
-        - name: Reports
-          items:
-          - name: Organized by printer
+            href: api/printservice-get.md
+          - name: Endpoint
+            href: resources/printserviceendpoint.md
             items:
-            - name: Get
-              href: api/printusagesummarybyprinter-get.md
-            - name: List a printer's archived print jobs
-              href: api/reports-getprinterarchivedprintjobs.md
-            - name: List daily reports by printer
-              href: api/reportroot-list-dailyprintusagesummariesbyprinter.md
-            - name: List monthly reports by printer
-              href: api/reportroot-list-monthlyprintusagesummariesbyprinter.md
-          - name: Organized by user or group
-            items:
-            - name: Get
-              href: api/printusagesummarybyuser-get.md
-            - name: List a user's archived print jobs
-              href: api/reports-getuserarchivedprintjobs.md
-            - name: List a group's archived print jobs
-              href: api/reports-getgrouparchivedprintjobs.md
-            - name: List daily reports by user
-              href: api/reportroot-list-dailyprintusagesummariesbyuser.md
-            - name: List monthly reports by user
-              href: api/reportroot-list-monthlyprintusagesummariesbyuser.md
-        - name: Services
-          href: resources/printservice.md
-          items:
-            - name: List
-              href: api/print-list-services.md
-            - name: Get
-              href: api/printservice-get.md
-            - name: Endpoint
-              href: resources/printserviceendpoint.md
-              items:
-              - name: Get endpoint
-                href: api/printserviceendpoint-get.md
-              - name: List a service's endpoints
-                href: api/printservice-list-endpoints.md
-        - name: Settings
-          href: resources/printsettings.md
-          items:
-          - name: Get
-            href: api/print-get-settings.md
-          - name: Update
-            href: api/print-update-settings.md
+            - name: Get endpoint
+              href: api/printserviceendpoint-get.md
+            - name: List a service's endpoints
+              href: api/printservice-list-endpoints.md
+      - name: Settings
+        href: resources/printsettings.md
+        items:
+        - name: Get
+          href: api/print-get-settings.md
+        - name: Update
+          href: api/print-update-settings.md
     - name: Reports
       items:
       - name: Identity and access reports
