@@ -110,7 +110,7 @@ Content-type: application/json
     "color": "auto",
     "isDefaultCalendar": false,
     "changeKey": "nfZyf7VcrEKLNoU37KWlkQAAA0x0+w==",
-    "calendarGroupId":"AQMkQAAAA==",
+    "calendarGroupId":null,
     "canShare":true,
     "canViewPrivateItems":true,
     "hexColor": "",
