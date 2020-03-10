@@ -37,7 +37,7 @@ The following is a JSON representation of the resource.
 <!-- {
   "blockType": "resource",
   "keyProperty": "id",
-  "@odata.type": "microsoft.graph.appscope"
+  "@odata.type": "microsoft.graph.appScope"
 }-->
 
 ```json
@@ -53,7 +53,7 @@ The following is a JSON representation of the resource.
 <!--
 {
   "type": "#page.annotation",
-  "description": "appscope resource",
+  "description": "appScope resource",
   "keywords": "",
   "section": "documentation",
   "tocPath": "",
