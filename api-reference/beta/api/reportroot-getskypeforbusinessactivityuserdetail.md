@@ -9,6 +9,8 @@ doc_type: apiPageType
 
 # reportRoot: getSkypeForBusinessActivityUserDetail
 
+Namespace: microsoft.graph
+
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 Get details about Skype for Business activity by user.

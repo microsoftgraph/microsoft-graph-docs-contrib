@@ -9,6 +9,8 @@ doc_type: apiPageType
 
 # reportRoot: getOneDriveActivityUserDetail
 
+Namespace: microsoft.graph
+
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 Get details about OneDrive activity by user.

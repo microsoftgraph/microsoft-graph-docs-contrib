@@ -9,6 +9,8 @@ doc_type: apiPageType
 
 # reportRoot: getSkypeForBusinessPeerToPeerActivityMinuteCounts
 
+Namespace: microsoft.graph
+
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 Get usage trends on the length in minutes and type of peer-to-peer sessions held in your organization. Types of sessions include audio and video.

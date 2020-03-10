@@ -9,6 +9,8 @@ doc_type: "resourcePageType"
 
 # provisioningObjectSummary resource type
 
+Namespace: microsoft.graph
+
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 Represents an action performed by the Azure AD Provisioning service and its associated properties. 

@@ -9,6 +9,8 @@ doc_type: apiPageType
 
 # reportRoot: getYammerActivityUserCounts
 
+Namespace: microsoft.graph
+
 Get the trends on the number of unique users who posted, read, and liked Yammer messages.
 
 > **Note:** For details about different report views and names, see [Office 365 Reports - Yammer Activity](https://support.office.com/client/Yammer-activity-c7c9f938-5b8e-4d52-b1a2-c7c32cb2312a).

@@ -9,6 +9,8 @@ doc_type: apiPageType
 
 # reportRoot: getYammerDeviceUsageDistributionUserCounts
 
+Namespace: microsoft.graph
+
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 Get the number of users by device type.

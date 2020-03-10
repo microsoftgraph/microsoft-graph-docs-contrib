@@ -9,6 +9,8 @@ doc_type: apiPageType
 
 # reportRoot: getOneDriveActivityUserCounts
 
+Namespace: microsoft.graph
+
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 Get the trend in the number of active OneDrive users.

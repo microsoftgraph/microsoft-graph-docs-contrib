@@ -9,6 +9,8 @@ doc_type: apiPageType
 
 # reportRoot: getEmailActivityUserDetail
 
+Namespace: microsoft.graph
+
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 Get details about email activity users have performed.

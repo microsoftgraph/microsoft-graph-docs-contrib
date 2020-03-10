@@ -9,6 +9,8 @@ doc_type: apiPageType
 
 # reportRoot: getTeamsUserActivityCounts
 
+Namespace: microsoft.graph
+
 Get the number of Microsoft Teams activities by activity type. The activity types are team chat messages, private chat messages, calls, and meetings.
 
 ## Permissions

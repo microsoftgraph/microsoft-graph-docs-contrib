@@ -9,6 +9,8 @@ doc_type: apiPageType
 
 # reportRoot: getSharePointActivityFileCounts
 
+Namespace: microsoft.graph
+
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 Get the number of unique, licensed users who interacted with files stored on SharePoint sites.

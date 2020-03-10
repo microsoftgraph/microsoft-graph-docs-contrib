@@ -9,6 +9,8 @@ doc_type: apiPageType
 
 # reportRoot: getSharePointSiteUsageDetail
 
+Namespace: microsoft.graph
+
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 Get details about SharePoint site usage.

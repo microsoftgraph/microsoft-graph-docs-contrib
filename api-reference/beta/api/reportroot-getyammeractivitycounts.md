@@ -9,6 +9,8 @@ doc_type: apiPageType
 
 # reportRoot: getYammerActivityCounts
 
+Namespace: microsoft.graph
+
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 Get the trends on the amount of Yammer activity in your organization by how many messages were posted, read, and liked.

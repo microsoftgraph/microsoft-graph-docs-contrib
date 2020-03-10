@@ -9,6 +9,8 @@ doc_type: apiPageType
 
 # reportRoot: getEmailActivityUserCounts
 
+Namespace: microsoft.graph
+
 Enables you to understand trends on the number of unique users who are performing email activities like send, read, and receive.
 
 > **Note:** For details about different report views and names, see [Office 365 Reports - Email Activity](https://support.office.com/client/Email-activity-1cbe2c00-ca65-4fb9-9663-1bbfa58ebe44).

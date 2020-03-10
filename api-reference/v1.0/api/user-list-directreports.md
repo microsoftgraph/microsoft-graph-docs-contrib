@@ -9,6 +9,8 @@ doc_type: apiPageType
 
 # List directReports
 
+Namespace: microsoft.graph
+
 Get a user's direct reports.
 
 ## Permissions

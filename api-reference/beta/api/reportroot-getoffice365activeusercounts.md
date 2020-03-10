@@ -9,6 +9,8 @@ doc_type: apiPageType
 
 # reportRoot: getOffice365ActiveUserCounts
 
+Namespace: microsoft.graph
+
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 Get the count of daily active users in the reporting period by product.

@@ -9,6 +9,8 @@ doc_type: apiPageType
 
 # reportRoot: getEmailAppUsageVersionsUserCounts
 
+Namespace: microsoft.graph
+
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 Get the count of unique users by Outlook desktop version.

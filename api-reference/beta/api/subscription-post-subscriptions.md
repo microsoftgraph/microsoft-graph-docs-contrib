@@ -9,6 +9,8 @@ ms.prod: ""
 
 # Create subscription
 
+Namespace: microsoft.graph
+
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 Subscribes a listener application to receive notifications when the requested type of changes occur to the specified resource in Microsoft Graph.

@@ -9,6 +9,8 @@ doc_type: resourcePageType
 
 # followupFlag resource type
 
+Namespace: microsoft.graph
+
 
 Allows setting a flag in an item for the user to follow up on later. 
 

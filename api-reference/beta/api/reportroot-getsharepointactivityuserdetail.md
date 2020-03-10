@@ -9,6 +9,8 @@ doc_type: apiPageType
 
 # reportRoot: getSharePointActivityUserDetail
 
+Namespace: microsoft.graph
+
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 Get details about SharePoint activity by user.

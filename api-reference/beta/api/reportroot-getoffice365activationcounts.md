@@ -9,6 +9,8 @@ doc_type: apiPageType
 
 # reportRoot: getOffice365ActivationCounts
 
+Namespace: microsoft.graph
+
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 Get the count of Office 365 activations on desktops and devices.
