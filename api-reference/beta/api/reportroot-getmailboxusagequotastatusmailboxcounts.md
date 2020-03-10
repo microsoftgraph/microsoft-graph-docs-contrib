@@ -9,6 +9,8 @@ doc_type: apiPageType
 
 # reportRoot: getMailboxUsageQuotaStatusMailboxCounts
 
+Namespace: microsoft.graph
+
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 Get the count of user mailboxes in each quota category.

@@ -9,6 +9,8 @@ ms.prod: "outlook"
 
 # Create Event
 
+Namespace: microsoft.graph
+
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 Create an [event](../resources/event.md) in the user's default calendar or specified calendar.

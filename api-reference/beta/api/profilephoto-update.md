@@ -9,6 +9,8 @@ author: ""
 
 # Update profilephoto
 
+Namespace: microsoft.graph
+
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 Update the photo for any user in the tenant including the signed-in user, or the specified group or contact. Since there

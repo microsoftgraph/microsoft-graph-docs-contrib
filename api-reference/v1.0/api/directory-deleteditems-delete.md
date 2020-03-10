@@ -9,6 +9,8 @@ doc_type: apiPageType
 
 # Permanently delete item
 
+Namespace: microsoft.graph
+
 Permanently deletes an item from [deleted items](../resources/directory.md).
 
 Currently, deleted items functionality is only supported for the [application](../resources/application.md), [group](../resources/group.md) and [user](../resources/user.md) resources. You can permanently delete an item from deleted items. But, once an item is permanently deleted, it **cannot** be restored.

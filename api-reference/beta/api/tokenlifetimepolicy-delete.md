@@ -9,6 +9,8 @@ doc_type: "apiPageType"
 
 # Delete tokenLifetimePolicy
 
+Namespace: microsoft.graph
+
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 Delete a [tokenLifetimePolicy](../resources/tokenlifetimepolicy.md) object.

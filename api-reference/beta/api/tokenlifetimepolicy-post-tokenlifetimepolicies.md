@@ -9,6 +9,8 @@ doc_type: "apiPageType"
 
 # Create tokenLifetimePolicy
 
+Namespace: microsoft.graph
+
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 Create a new [tokenLifetimePolicy](../resources/tokenlifetimepolicy.md) object.

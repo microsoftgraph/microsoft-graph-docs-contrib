@@ -9,6 +9,8 @@ doc_type: apiPageType
 
 # List members
 
+Namespace: microsoft.graph
+
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 Retrieve a list of the users that are assigned to the directory role.  Only users can be assigned to a directory role.

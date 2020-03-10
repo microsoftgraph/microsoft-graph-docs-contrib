@@ -9,6 +9,8 @@ doc_type: apiPageType
 
 # reportRoot: getSkypeForBusinessPeerToPeerActivityUserCounts
 
+Namespace: microsoft.graph
+
 Get usage trends on the number of unique users and type of peer-to-peer sessions held in your organization. Types of sessions include IM, audio, video, application sharing, and file transfers in peer-to-peer sessions.
 
 > **Note:** For details about different report views and names, see [Office 365 Reports - Skype for Business peer-to-peer activity](https://docs.microsoft.com/skypeforbusiness/skype-for-business-online-reporting/peer-to-peer-activity-report).
