@@ -178,16 +178,16 @@ items:
             href: outlook-mail-concept-overview.md
           - name: Automate messaging
             href: outlook-create-send-messages.md
+          - name: Organize messages
+            href: outlook-organize-messages.md
           - name: Get MIME content
             href: outlook-get-mime-message.md
+          - name: Attach large files
+            href: outlook-large-attachments.md
           - name: Get shared messages
             href: outlook-share-messages-folders.md
           - name: Send mail from another user
             href: outlook-send-mail-from-other-user.md
-          - name: Attach large files
-            href: outlook-large-attachments.md
-          - name: Organize messages
-            href: outlook-organize-messages.md
           - name: Immutable ID
             href: outlook-immutable-id.md
       - name: Notes
