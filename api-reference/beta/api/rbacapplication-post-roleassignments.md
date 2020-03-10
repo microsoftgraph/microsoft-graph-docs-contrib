@@ -9,8 +9,6 @@ doc_type: "apiPageType"
 
 # Create unifiedRoleAssignment
 
-Namespace: microsoft.graph
-
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 Create a new [unifiedRoleAssignment](../resources/unifiedroleassignment.md) object.
@@ -41,11 +39,11 @@ POST /roleManagement/directory/roleAssignments
 
 ## Request body
 
-In the request body, supply a JSON representation of [unifiedRoleAssignment](../resources/unifiedroleassignment.md) object.
+In the request body, supply a JSON representation of [unifiedRoleAssignment](../resources/unifiedroleassignment.md) object. The request must have either a scope defined in Azure AD, such as `directoryScopeId`, or an application-specific scope, such as `appScopeId`. Examples of Azure AD scope are tenant ("/"), administrative units, or applications. 
 
 ## Response
 
-If successful, this method returns `201 Created` response code and a new [unifiedRoleAssignment](../resources/unifiedroleassignment.md) object in the response body.
+If successful, this method returns a `201 Created` response code and a new [unifiedRoleAssignment](../resources/unifiedroleassignment.md) object in the response body.
 
 ## Example
 
@@ -53,7 +51,6 @@ If successful, this method returns `201 Created` response code and a new [unifie
 
 The following is an example of the request. Note the use of the roleTemplateId for roleDefinitionId. roleDefinitionId can be either the service-wide template Id or the directory-specific roleDefinitionId.
 
-# [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "create_unifiedroleassignment_from_rbacapplication"
@@ -64,25 +61,12 @@ POST https://graph.microsoft.com/beta/roleManagement/directory/roleAssignments
 Content-type: application/json
 
 { 
-    "principalId":"a98eb769-7bd4-4489-86f6-ad96e1d58b62",
-    "roleDefinitionId":"b0f54661-2d74-4c50-afa3-1ec803f12efe",
-    "resourceScope":"/"
+    "@odata.type": "#microsoft.graph.unifiedRoleAssignment",
+    "roleDefinitionId": "c2cf284d-6c41-4e6b-afac-4b80928c9034",
+    "principalId": "f8ca5a85-489a-49a0-b555-0a6d81e56f0d",
+    "directoryScopeId": "/"
 }
 ```
-# [C#](#tab/csharp)
-[!INCLUDE [sample-code](../includes/snippets/csharp/create-unifiedroleassignment-from-rbacapplication-csharp-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [JavaScript](#tab/javascript)
-[!INCLUDE [sample-code](../includes/snippets/javascript/create-unifiedroleassignment-from-rbacapplication-javascript-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [Objective-C](#tab/objc)
-[!INCLUDE [sample-code](../includes/snippets/objc/create-unifiedroleassignment-from-rbacapplication-objc-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
----
-
 
 ### Response
 
@@ -103,9 +87,9 @@ Content-type: application/json
 {
     "@odata.context": "https://graph.microsoft.com/beta/$metadata#roleManagement/directory/roleAssignments/$entity",
     "id": "YUb1sHQtUEyvox7IA_Eu_mm3jqnUe4lEhvatluHVi2I-1",
-    "principalId": "a98eb769-7bd4-4489-86f6-ad96e1d58b62",
-    "resourceScope": "/",
-    "roleDefinitionId": "b0f54661-2d74-4c50-afa3-1ec803f12efe"
+    "roleDefinitionId": "c2cf284d-6c41-4e6b-afac-4b80928c9034",
+    "principalId": "f8ca5a85-489a-49a0-b555-0a6d81e56f0d",
+    "directoryScopeId": "/"
 }
 ```
 

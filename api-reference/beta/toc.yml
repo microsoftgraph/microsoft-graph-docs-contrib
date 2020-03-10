@@ -8013,8 +8013,6 @@
       - name: Category
         href: resources/educationcategory.md
         items:
-        - name: Create category
-          href: api/educationclass-post-category.md
         - name: Get category
           href: api/educationcategory-get.md
         - name: Delete category
@@ -8022,8 +8020,6 @@
       - name: Rubric
         href: resources/educationrubric.md
         items:
-        - name: Create rubric
-          href: api/educationuser-post-rubrics.md
         - name: Get rubric
           href: api/educationrubric-get.md
         - name: Update rubric
@@ -8862,7 +8858,7 @@
           - name: Create
             href: api/accesspackageresourcerequest-post.md
         - name: Access package resource role scope
-          href: resources/accesspackageresourcerolescope.md
+          href: resources/accesspackageresourcerequest.md
           items:
           - name: List
             href: api/accesspackage-list-accesspackageresourcerolescopes.md
@@ -9140,21 +9136,6 @@
             href: api/homerealmdiscoverypolicy-delete.md
           - name: List applied to applications
             href: api/homerealmdiscoverypolicy-list-appliesto.md
-        - name: Token issuance policy
-          href: resources/tokenissuancepolicy.md
-          items:
-          - name: Create
-            href: api/tokenissuancepolicy-post-tokenissuancepolicy.md
-          - name: List
-            href: api/tokenissuancepolicy-list.md
-          - name: Get
-            href: api/tokenissuancepolicy-get.md
-          - name: Update
-            href: api/tokenissuancepolicy-update.md
-          - name: Delete
-            href: api/tokenissuancepolicy-delete.md
-          - name: List applied to applications
-            href: api/tokenissuancepolicy-list-appliesto.md
         - name: Token lifetime policy
           href: resources/tokenlifetimepolicy.md
           items:
@@ -9317,6 +9298,19 @@
             href: api/unifiedroleassignment-get.md
           - name: Delete role assignment
             href: api/unifiedroleassignment-delete.md
+        - name: Role assignment multiple
+          href: resources/unifiedroleassignmentmultiple.md
+          items:
+          - name: List roleAssignmentMultiple
+            href: api/unifiedroleassignmentmultiple-list.md
+          - name: Create roleAssignmentMultiple
+            href: api/unifiedroleassignmentmultiple-post.md
+          - name: Get roleAssignmentMultiple
+            href: api/unifiedroleassignmentmultiple-get.md
+          - name: Update roleAssignmentMultiple
+            href: api/unifiedroleassignmentmultiple-delete.md
+          - name: Delete roleAssignmentMultiple
+            href: api/unifiedroleassignmentmultiple-delete.md
       - name: Service principal
         href: resources/serviceprincipal.md
         items:
