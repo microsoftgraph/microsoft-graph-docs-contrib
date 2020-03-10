@@ -66,7 +66,7 @@ The following is an example of the response.
 <!-- {
   "blockType": "response",
   "truncated": true,
-  "@odata.type": "microsoft.graph.archivedprintjob"
+  "@odata.type": "microsoft.graph.archivedPrintJob"
 } -->
 ```http
 HTTP/1.1 200 OK
