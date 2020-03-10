@@ -10021,10 +10021,12 @@
     - name: Printing
       items:
       - name: Universal Print
+        href: resources/print.md
         items:
         - name: Print (Overview)
           href: resources/print.md
         - name: Connectors
+          href: resources/printconnector.md
           items:
           - name: Connector
             href: resources/printconnector.md
@@ -10035,10 +10037,12 @@
           - name: Update
             href: api/printconnector-update.md
         - name: Documents
+          href: resources/printerdocumentconfiguration.md
           items:
           - name: Document Configuration
             href: resources/printerdocumentconfiguration.md
         - name: Print Jobs
+          href: resources/printjob.md
           items:
           - name: Print Job
             href: resources/printjob.md
@@ -10046,11 +10050,12 @@
             href: api/printer-post-jobs.md
           - name: Get
             href: api/printjob-get.md
-          - name: Start print job
+          - name: Start
             href: api/printjob-startprintjob.md
-          - name: Cancel print job
+          - name: Cancel
             href: api/printjob-cancelprintjob.md
         - name: Printers
+          href: resources/printer.md
           items:
           - name: Printer
             href: resources/printer.md
@@ -10066,34 +10071,35 @@
             href: api/printer-list-jobs.md
           - name: Create print job
             href: api/printer-post-jobs.md
-          - name: List allowedUsers
+          - name: List allowed users
             href: api/printer-list-allowedusers.md
           - name: List allowedGroups
             href: api/printer-list-allowedgroups.md
-          - name: Add allowedGroup
+          - name: Add allowed group
             href: api/printer-post-allowedgroups.md
-          - name: Add allowedUser
+          - name: Add allowed user
             href: api/printer-post-allowedusers.md
-          - name: Delete allowedGroup
+          - name: Delete allowed group
             href: api/printer-delete-allowedgroup.md
-          - name: Delete allowedUser
+          - name: Delete allowed user
             href: api/printer-delete-alloweduser.md
           - name: Reset defaults
             href: api/printer-resetdefaults.md
         - name: Printer Shares
+          href: resources/printershare.md
           items:
           - name: Printer Share
             href: resources/printershare.md
           - name: List
             href: api/print-list-printershares.md
-          - name: Get
-            href: api/printershare-get.md
-          - name: Delete
-            href: api/printershare-delete.md
-          - name: Update
-            href: api/printershare-update.md
           - name: Create
             href: api/print-post-printershares.md
+          - name: Get
+            href: api/printershare-get.md
+          - name: Update
+            href: api/printershare-update.md
+          - name: Delete
+            href: api/printershare-delete.md
         - name: Reports
           items:
           - name: Archived Print Job
