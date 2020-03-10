@@ -132,15 +132,16 @@ Content-type: application/json
       "id": "c2cf284d-6c41-4e6b-afac-4b80928c9034",
       "displayName": "Billing Administrator",
       "description": "Can perform common billing related tasks like updating payment information.",
-      "rolePermissions": {
-        "allowedResourceActions": [
-          "microsoft.commerce.billing/allEntities/allTasks",
-          "microsoft.directory/organization/basic/update",
-        ],
-        "excludedResourceActions": []
-      },
+      "rolePermissions": [
+        {
+          "allowedResourceActions": [
+            "microsoft.commerce.billing/allEntities/allTasks",
+            "microsoft.directory/organization/basic/update",
+          ],
+          "excludedResourceActions": []
+        }],
       "isEnabled": true,
-    },
+      },
     "principalId": "f8ca5a85-489a-49a0-b555-0a6d81e56f0d",
     "principal": {
       "@odata.context": "https://graph.microsoft.com/v1.0/$metadata#users/$entity",

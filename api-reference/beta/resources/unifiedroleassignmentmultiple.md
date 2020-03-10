@@ -69,7 +69,7 @@ The following is a JSON representation of the resource.
   "roleDefinition": {"@odata.type": "microsoft.graph.unifiedRoleDefinition"},
   "principalIds": ["string"],
   "principals": [{"@odata.type": "microsoft.graph.directoryObject"}],
-  "directoryScopeIds": "[string]",
+  "directoryScopeIds": ["string"],
   "directoryScopes": [{"@odata.type": "microsoft.graph.directoryObject"}],
   "appScopeIds": ["string"],
   "appScopes": [{"@odata.type": "microsoft.graph.appScope"}],

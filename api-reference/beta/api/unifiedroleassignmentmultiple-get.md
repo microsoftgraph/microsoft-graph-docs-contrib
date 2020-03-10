@@ -131,10 +131,11 @@ Content-type: application/json
     "id": "c2cf284d-6c41-4e6b-afac-4b80928c9034",
     "displayName": "Application Manager",
     "description": "Manages mobile and managed applications",
-    "rolePermissions": {
-      "allowedResourceActions": [],
-      "excludedResourceActions": [],
-    },
+    "rolePermissions": [
+      {
+        "allowedResourceActions": [],
+        "excludedResourceActions": [],
+    }],
     "isEnabled": true,
     "isBuiltIn": true,
   },
