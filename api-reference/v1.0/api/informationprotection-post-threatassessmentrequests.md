@@ -58,7 +58,6 @@ If successful, this method returns a `201 Created` response code and a new [thre
 
 The following is an example of the request.
 
-# [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "create_mailassessmentrequest_from_informationprotection"
@@ -121,7 +120,6 @@ Content-type: application/json
 
 The following is an example of the request.
 
-# [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "create_emailfileassessmentrequest_from_informationprotection"
@@ -184,7 +182,6 @@ Content-type: application/json
 
 The following is an example of the request.
 
-# [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "create_fileassessmentrequest_from_informationprotection"
@@ -246,7 +243,6 @@ Content-type: application/json
 
 The following is an example of the request.
 
-# [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "create_urlassessmentrequest_from_informationprotection"
