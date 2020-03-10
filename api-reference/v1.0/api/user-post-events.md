@@ -656,7 +656,7 @@ Content-type: application/json
             "address":"AlexW@contoso.onmicrosoft.com"
         }
     },
-    "OnlineMeeting":null
+    "onlineMeeting":null
 }
 ```
 ### Example 4: Create and enable an event as an online meeting
@@ -718,7 +718,7 @@ Note: The response object shown here may be truncated for brevity. All of the pr
 ```http
 HTTP/1.1 201 Created
 Content-type: application/json
-Content-length: 2197
+
 {
     "@odata.context":"https://graph.microsoft.com/v1.0/$metadata#users('cd209b0b-3f83-4c35-82d2-d88a61820480')/events/$entity",
     "@odata.etag":"W/\"ZlnW4RIAV06KYYwlrfNZvQAALfZeRQ==\"",

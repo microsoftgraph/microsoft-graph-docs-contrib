@@ -124,7 +124,7 @@ Here is an example of the response. Note: The response object shown here may be 
   "blockType": "response",
   "truncated": true,
   "@odata.type": "microsoft.graph.event"
-} -->
+}-->
 ```http
 HTTP/1.1 201 Created
 Content-type: application/json
@@ -264,7 +264,7 @@ Here is an example of the response. Note: The response object shown here may be 
   "truncated": true,
   "name": "create_event_from_calendar_with_online_meeting",
   "@odata.type": "microsoft.graph.event"
-} -->
+}-->
 ```http
 HTTP/1.1 201 Created
 Content-type: application/json
