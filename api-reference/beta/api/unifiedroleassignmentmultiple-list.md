@@ -9,6 +9,8 @@ doc_type: "apiPageType"
 
 # List unifiedRoleAssignmentMultiple
 
+Namespace: microsoft.graph
+
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 Get a list of [unifiedRoleAssignmentMultiple](../resources/unifiedroleassignmentmultiple.md) object. Use this to get list of role assignments in Microsoft Intune. For other Micrsoft 365 applications (like Azure AD), use [unifiedRoleAssignment](../../resources/unifiedroleassignment.md)

@@ -9,6 +9,8 @@ doc_type: "resourcePageType"
 
 # unifiedRoleAssignmentMultiple resource type
 
+Namespace: microsoft.graph
+
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 A unifiedRoleAssignmentMultiple is used to grant access to resources. It represents a role definition assigned to an array of principals (typically a user) over an array of scope. An example of such an RBAC provider is Microsoft Intune. In Microsoft Intune, you can create a role assignment with multiple principals and multiple scopes.

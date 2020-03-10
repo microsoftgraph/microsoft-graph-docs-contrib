@@ -9,6 +9,8 @@ doc_type: "apiPageType"
 
 # Delete unifiedRoleAssignmentMultiple
 
+Namespace: microsoft.graph
+
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 Delete a [unifiedRoleAssignmentMultiple](../resources/unifiedRoleAssignmentMultiple.md) object. This is applicable for a RBAC application that supports multiple principals and scopes. Microsoft Intune is such an application.

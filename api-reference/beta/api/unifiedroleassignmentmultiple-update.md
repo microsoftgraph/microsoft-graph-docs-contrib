@@ -9,6 +9,8 @@ doc_type: "apiPageType"
 
 # Update unifiedRoleAssignmentMultiple
 
+Namespace: microsoft.graph
+
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 Update an existing [unifiedRoleAssignmentMultiple](../resources/unifiedroleassignmentmultiple.md) object. Use this to update role assignments in Microsoft Intune. Note that [unifiedRoleAssignment](../../resources/unifiedroleassignment.md) does not support update.
