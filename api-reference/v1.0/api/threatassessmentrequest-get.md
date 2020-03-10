@@ -67,7 +67,6 @@ If successful, this method returns a `200 OK` response code and the requested [t
 
 The following is an example of the request.
 
-# [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "get_mailassessmentrequest"
@@ -121,7 +120,6 @@ Content-type: application/json
 
 The following is an example of the request.
 
-# [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "get_emailfileassessmentrequest"
@@ -175,7 +173,6 @@ Content-type: application/json
 
 The following is an example of the request.
 
-# [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "get_fileassessmentrequest"
@@ -228,7 +225,6 @@ Content-type: application/json
 
 The following is an example of the request.
 
-# [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "get_urlassessmentrequest"
@@ -280,7 +276,6 @@ Content-type: application/json
 
 The following is an example of the request.
 
-# [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "get_threatassessmentrequest_expand_results"
