@@ -182,11 +182,11 @@
       - name: App role assignments
         href: resources/approleassignment.md
         items:
-        - name: List app role assignments
+        - name: List
           href: api/user-list-approleassignments.md
-        - name: Add app role assignment
+        - name: Add
           href: api/user-post-approleassignments.md
-        - name: Remove app role assignment
+        - name: Remove
           href: api/user-delete-approleassignments.md
       - name: Calendar
         href: resources/calendar.md
@@ -225,7 +225,7 @@
           href: api/user-list-contactfolders.md
       - name: Delegated permission grants
         items:
-        - name: List delegated permission grants
+        - name: List
           href: api/user-list-oauth2permissiongrants.md
       - name: Directory objects
         href: resources/directoryobject.md
@@ -455,11 +455,11 @@
       - name: App role assignments
         href: resources/approleassignment.md
         items:
-        - name: List app role assignments
+        - name: List
           href: api/group-list-approleassignments.md
-        - name: Add app role assignment
+        - name: Add
           href: api/group-post-approleassignments.md
-        - name: Remove app role assignment
+        - name: Remove
           href: api/group-delete-approleassignments.md
       - name: Attachment
         href: resources/attachment.md
@@ -3319,7 +3319,7 @@
           href: api/directory-deleteditems-delete.md
         - name: Restore deleted application
           href: api/directory-deleteditems-restore.md
-        - name: Certificates & secrets
+        - name: Certificates and secrets
           items:
           - name: Add password
             href: api/application-addpassword.md
@@ -3331,19 +3331,19 @@
             href: api/application-removekey.md
         - name: Extensions
           items:
-          - name: List extensions
+          - name: List
             href: api/application-list-extensionproperty.md
-          - name: Create extension
+          - name: Create
             href: api/application-post-extensionproperty.md
-          - name: Delete extension
+          - name: Delete
             href: api/application-delete-extensionproperty.md
         - name: Owners
           items:
-          - name: List owners
+          - name: List
             href: api/application-list-owners.md
-          - name: Add owner
+          - name: Add
             href: api/application-post-owners.md
-          - name: Remove owner
+          - name: Remove
             href: api/application-delete-owners.md
       - name: Audit logs
         href: resources/azure-ad-auditlog-overview.md
@@ -3520,15 +3520,15 @@
       - name: Delegated permission grants
         href: resources/oauth2permissiongrant.md
         items:
-        - name: List delegated permission grants
+        - name: List
           href: api/oauth2permissiongrant-list.md
-        - name: Get delegated permission grants
-          href: api/oauth2permissiongrant-get.md
-        - name: Create delegated permission grant
+        - name: Create
           href: api/oauth2permissiongrant-post.md
-        - name: Update delegated permission grant
+        - name: Get
+          href: api/oauth2permissiongrant-get.md
+        - name: Update
           href: api/oauth2permissiongrant-update.md
-        - name: Delete delegated permission grant
+        - name: Delete
           href: api/oauth2permissiongrant-delete.md
       - name: Organization
         href: resources/organization.md
@@ -3553,34 +3553,34 @@
       - name: Service principal
         href: resources/serviceprincipal.md
         items:
-        - name: List service principal
+        - name: List
           href: api/serviceprincipal-list.md
-        - name: Create service principal
+        - name: Create
           href: api/serviceprincipal-post-serviceprincipals.md
-        - name: Get service principal
+        - name: Get
           href: api/serviceprincipal-get.md
-        - name: Update service principal
+        - name: Update
           href: api/serviceprincipal-update.md
-        - name: Delete service principal
+        - name: Delete
           href: api/serviceprincipal-delete.md
-        - name: List createdObjects
+        - name: List created objects
           href: api/serviceprincipal-list-createdobjects.md
-        - name: List ownedObjects
+        - name: List owned objects
           href: api/serviceprincipal-list-ownedobjects.md
         - name: App role assignments
           href: resources/approleassignment.md
           items:
-          - name: List app role assignments
+          - name: List
             href: api/serviceprincipal-list-approleassignments.md
-          - name: Add app role assignment
+          - name: Add
             href: api/serviceprincipal-post-approleassignments.md
-          - name: Remove app role assignment
+          - name: Remove
             href: api/serviceprincipal-delete-approleassignments.md
-          - name: List app role assigned to
+          - name: List assigned to
             href: api/serviceprincipal-list-approleassignedto.md
-          - name: Add app role assigned to
+          - name: Add assigned to
             href: api/serviceprincipal-post-approleassignedto.md
-          - name: Remove app role assigned to
+          - name: Remove assigned to
             href: api/serviceprincipal-delete-approleassignedto.md
         - name: Certificates and secrets
           items:
@@ -3594,29 +3594,29 @@
             href: api/serviceprincipal-removekey.md
         - name: Delegated permission grants
           items:
-          - name: List delegated permission grants
+          - name: List
             href: api/serviceprincipal-list-oauth2permissiongrants.md
         - name: Membership
           items:
-          - name: List memberOf
+          - name: List member of
             href: api/serviceprincipal-list-memberof.md
-          - name: List transitive memberOf
+          - name: List transitive member of
             href: api/serviceprincipal-list-transitivememberof.md
-          - name: checkMemberGroups
+          - name: Check member groups
             href: api/serviceprincipal-checkmembergroups.md
-          - name: checkMemberObjects
+          - name: Check member objects
             href: api/serviceprincipal-checkmemberobjects.md
-          - name: getMemberGroups
+          - name: Get member groups
             href: api/serviceprincipal-getmembergroups.md
-          - name: getMemberObjects
+          - name: Get member objects
             href: api/serviceprincipal-getmemberobjects.md
         - name: Owners
           items:
-          - name: List owners
+          - name: List
             href: api/serviceprincipal-list-owners.md
-          - name: Add owner
+          - name: Add
             href: api/serviceprincipal-post-owners.md
-          - name: Remove owner
+          - name: Remove
             href: api/serviceprincipal-delete-owners.md
       - name: Subscribed SKU
         href: resources/subscribedsku.md
