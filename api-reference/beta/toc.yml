@@ -10023,13 +10023,11 @@
       - name: Universal Print
         href: resources/print.md
         items:
-        - name: Print (Overview)
+        - name: Print
           href: resources/print.md
         - name: Connectors
           href: resources/printconnector.md
           items:
-          - name: Connector
-            href: resources/printconnector.md
           - name: Delete
             href: api/printconnector-delete.md
           - name: Get
@@ -10038,14 +10036,9 @@
             href: api/printconnector-update.md
         - name: Documents
           href: resources/printerdocumentconfiguration.md
-          items:
-          - name: Document Configuration
-            href: resources/printerdocumentconfiguration.md
-        - name: Print Jobs
+        - name: Print jobs
           href: resources/printjob.md
           items:
-          - name: Print Job
-            href: resources/printjob.md
           - name: Create
             href: api/printer-post-jobs.md
           - name: Get
@@ -10057,8 +10050,6 @@
         - name: Printers
           href: resources/printer.md
           items:
-          - name: Printer
-            href: resources/printer.md
           - name: Get
             href: api/printer-get.md
           - name: Delete
@@ -10085,11 +10076,9 @@
             href: api/printer-delete-alloweduser.md
           - name: Reset defaults
             href: api/printer-resetdefaults.md
-        - name: Printer Shares
+        - name: Printer shares
           href: resources/printershare.md
           items:
-          - name: Printer Share
-            href: resources/printershare.md
           - name: List
             href: api/print-list-printershares.md
           - name: Create
@@ -10102,7 +10091,7 @@
             href: api/printershare-delete.md
         - name: Reports
           items:
-          - name: Archived Print Job
+          - name: Archived print job
             href: resources/archivedprintjob.md
           - name: Organized by printer
             items:
@@ -10127,23 +10116,22 @@
             - name: List monthly reports by user
               href: api/reportroot-list-monthlyprintusagesummariesbyuser.md
         - name: Services
+          href: resources/printservice.md
           items:
-          - name: Service
-            href: resources/printservice.md
-          - name: Endpoint
-            href: resources/printserviceendpoint.md
-          - name: Get service
-            href: api/printservice-get.md
-          - name: Get endpoint
-            href: api/printserviceendpoint-get.md
-          - name: List
-            href: api/print-list-services.md
-          - name: List a service's endpoints
-            href: api/printservice-list-endpoints.md
+            - name: List
+              href: api/print-list-services.md
+            - name: Get
+              href: api/printservice-get.md
+            - name: Endpoint
+              href: resources/printserviceendpoint.md
+              items:
+              - name: Get endpoint
+                href: api/printserviceendpoint-get.md
+              - name: List a service's endpoints
+                href: api/printservice-list-endpoints.md
         - name: Settings
+          href: resources/printsettings.md
           items:
-          - name: Settings
-            href: resources/printsettings.md
           - name: Get
             href: api/print-get-settings.md
           - name: Update
