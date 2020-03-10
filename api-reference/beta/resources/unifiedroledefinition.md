@@ -64,7 +64,7 @@ The following is a JSON representation of the resource.
   "id": "String (identifier)",
   "isBuiltIn": true,
   "isEnabled": true,
-  "resourceScopes": ["String"], (DO NOT USE. This is going to be deprecated soon.)
+  "resourceScopes": ["String"],
   "rolePermissions": [{"@odata.type": "microsoft.graph.unifiedRolePermission"}],
   "templateId": "String",
   "version": "String"

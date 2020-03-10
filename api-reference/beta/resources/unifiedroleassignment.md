@@ -33,9 +33,9 @@ Providing either a directoryScopeId or an appScopeId is required.
 |roleDefinitionId|String| ID of the unifiedRoleDefinition the assignment is for. Read only. |
 |roleDefinition|[unifiedRoleDefinition](unifiedroledefinition.md)|Property indicating the roleDefinition the assignment is for. Provided so that callers can get the role definition using `$expand` at the same time as getting the role assignment. roleDefinition.Id will be auto expanded
 |principalId|String| Objectid of the principal to which the assignment is granted. |
-|principal|DirectoryObject (ServicePrincipal, User, Group)| Property referencing the assigned principal. Provided so that callers can get the principal using `$expand` at the same time as getting the role assignment. Read-only. |
+|principal|[directoryObject](directoryobject.md)| Property referencing the assigned principal. Provided so that callers can get the principal using `$expand` at the same time as getting the role assignment. Read-only. |
 |directoryScopeId|String|Id of the directory object representing the scope of the assignment. The scope of an assignment determines the set of resources for which the principal has been granted access. Directory scopes are shared scopes stored in the directory that are understood by multiple applications. App scopes are scopes that are defined and understood by this application only.|
-|directoryScope|DirectoryObject|Property referencing the directory object that is the scope of the assignment. Provided so that callers can get the directory object using `$expand` at the same time as getting the role assignment. Read-only. |
+|directoryScope|[directoryObject](directoryobject.md)|Property referencing the directory object that is the scope of the assignment. Provided so that callers can get the directory object using `$expand` at the same time as getting the role assignment. Read-only. |
 |appScopeId|String|Id of the app specific scope when the assignment scope is app specific. The scope of an assignment determines the set of resources for which the principal has been granted access. Directory scopes are shared scopes stored in the directory that are understood by multiple applications. App scopes are scopes that are defined and understood by this application only.|
 |appScope|[appScope](appScope.md)|Read-only property with details of the app specific scope when the assignment scope is app specific. Containment entity. |
 |resourceScope|String| The scope at which the unifiedRoleAssignment applies. This is "/" for service-wide. **DO NOT USE. This property will be deprecated soon.**|
@@ -62,14 +62,14 @@ The following is a JSON representation of the resource.
 {
   "id": "String (identifier)",
   "roleDefinitionId": "String",
-  "roleDefinition": "unifiedRoleDefinition",
+  "roleDefinition": {"@odata.type": "microsoft.graph.unifiedRoleDefinition"},
   "principalId": "String",
-  "principal": "DirectoryObject (ServicePrincipal, User, Group)",
+  "principal": {"@odata.type": "microsoft.graph.directoryObject"},
   "directoryScopeId": "String",
-  "directoryScope": "DirectoryObject",
+  "directoryScope": {"@odata.type": "microsoft.graph.directoryObject"},
   "appScopeId": "String",
-  "appScope": "appScope",
-  "resourceScope": "String" (DO NOT USE. This property will be deprecated soon.)
+  "appScope": {"@odata.type": "microsoft.graph.appScope"},
+  "resourceScope": "String"
 }
 ```
 
