@@ -19,7 +19,7 @@ We'd love to hear your feedback over at the [Universal Print](https://techcommun
 
 Universal Print moves key Windows Server print functionality to the Microsoft 365 cloud, so organizations no longer need on-premises print servers and do not need to install printer drivers on devices. In addition, Universal Print adds key functionality like security groups for printer access, location-based printer discovery, and a rich administrator experience.
 
-As organizations adopt Universal Print, organizations and independent software vendors (ISVs) can build and extend applications to support new scenarios.
+As organizations adopt Universal Print, organizations and independent software vendors (ISVs) can use the Universal Print API in Microsoft Graph to build and extend applications to support new scenarios.
 
 ### Print documents from web and mobile applications
 
