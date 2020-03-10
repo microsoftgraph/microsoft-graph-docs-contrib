@@ -9,6 +9,8 @@ ms.prod: ""
 
 # Get governanceRoleSetting
 
+Namespace: microsoft.graph
+
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 

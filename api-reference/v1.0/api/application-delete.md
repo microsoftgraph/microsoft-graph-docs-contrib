@@ -9,6 +9,8 @@ doc_type: apiPageType
 
 # Delete application
 
+Namespace: microsoft.graph
+
 Delete an [application](../resources/application.md) object.
 
 ## Permissions

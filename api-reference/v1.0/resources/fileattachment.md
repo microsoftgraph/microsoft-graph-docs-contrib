@@ -9,6 +9,8 @@ doc_type: resourcePageType
 
 # fileAttachment resource type
 
+Namespace: microsoft.graph
+
 A file (such as a text file or Word document) attached to a user [event](../resources/event.md),
 [message](../resources/message.md), or [post](../resources/post.md). The  **contentBytes** 
 property contains the base64-encoded contents of the file.  

@@ -9,6 +9,8 @@ doc_type: "apiPageType"
 
 # Create extensionProperty
 
+Namespace: microsoft.graph
+
 Create a new [extensionProperty](../resources/extensionproperty.md) definition. You can use this operation to add a custom property value to the targeted object type defined in the **extensionProperty**, using standard creation and update requests to the target object.
 
 ## Permissions

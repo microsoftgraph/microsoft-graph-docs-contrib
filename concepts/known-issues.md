@@ -167,9 +167,8 @@ Currently, the **onlineMeetingUrl** property of a Skype meeting [event](/graph/a
 
 The beta version offers a workaround, where you can use the **onlineMeetingProvider** property of an [event](/graph/api/resources/event?view=graph-rest-beta) to verify if the provider is Microsoft Teams. Through the **onlineMeeting** property of the **event**, you can access the **joinUrl**.
 
-## Cloud communications (preview)
+## Cloud communications 
 
-> **Note** Cloud communications are currently in preview and are available only in the Microsoft Graph beta endpoint.
 The Microsoft Teams client does not show the **View Meeting details**  menu for channel meetings created via the cloud communications API.
 
 ## Contacts
@@ -223,6 +222,9 @@ GET /users/{id | userPrincipalName}/contacts/{id}
 ```
 
 ## Messages
+
+### Attaching large files to messages
+An app with delegated permissions returns `HTTP 403 Forbidden` when attempting to [attach large files](outlook-large-attachments.md) to an Outlook message that is in a shared or delegated mailbox. With delegated permissions, [createUploadSession](/graph/api/attachment-createuploadsession?view=graph-rest-beta) succeeds only if the message is in the signed-in user's mailbox.
 
 ### The comment parameter for creating a draft
 
