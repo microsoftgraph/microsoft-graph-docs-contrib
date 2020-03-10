@@ -10018,22 +10018,18 @@
             href: api/multivaluelegacyextendedproperty-post-multivalueextendedproperties.md
           - name: Get multi-value property
             href: api/multivaluelegacyextendedproperty-get.md
-    - name: Printing
+    - name: Universal Print
+      href: resources/print.md
       items:
-      - name: Universal Print
-        href: resources/print.md
+      - name: Connectors
+        href: resources/printconnector.md
         items:
-        - name: Print
-          href: resources/print.md
-        - name: Connectors
-          href: resources/printconnector.md
-          items:
-          - name: Delete
-            href: api/printconnector-delete.md
-          - name: Get
-            href: api/printconnector-get.md
-          - name: Update
-            href: api/printconnector-update.md
+        - name: Delete
+          href: api/printconnector-delete.md
+        - name: Get
+          href: api/printconnector-get.md
+        - name: Update
+          href: api/printconnector-update.md
         - name: Documents
           href: resources/printerdocumentconfiguration.md
         - name: Print jobs
