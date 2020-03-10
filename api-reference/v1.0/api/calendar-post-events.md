@@ -220,11 +220,11 @@ In the request body, supply a JSON representation of [event](../resources/event.
 
 <!-- {
   "blockType": "request",
-  "sampleKeys": ["AAMkAGViNDU8zAAAAAGtlAAA="],
+  "sampleKeys": ["AAMkAGViNDU9zAAAAAGtlAAA="],
   "name": "create_event_from_calendar_with_online_meeting"
 }-->
 ```http
-POST https://graph.microsoft.com/v1.0/me/calendars/AAMkAGViNDU8zAAAAAGtlAAA=/events
+POST https://graph.microsoft.com/v1.0/me/calendars/AAMkAGViNDU9zAAAAAGtlAAA=/events
 Content-type: application/json
 {
   "subject": "Let's go for lunch",
@@ -262,13 +262,14 @@ Here is an example of the response. Note: The response object shown here may be 
 <!-- {
   "blockType": "response",
   "truncated": true,
+  "name": "create_event_from_calendar_with_online_meeting",
   "@odata.type": "microsoft.graph.event"
 } -->
 ```http
 HTTP/1.1 201 Created
 Content-type: application/json
 {
-    "@odata.context": "https://graph.microsoft.com/v1.0/$metadata#users('5d8d505c-864f-4804-88c7-4583c966cde8')/calendars('AAMkAGViNDU8zAAAAAGtlAAA%3D')/events/$entity",
+    "@odata.context": "https://graph.microsoft.com/v1.0/$metadata#users('5d8d505c-864f-4804-88c7-4583c966cde8')/calendars('AAMkAGViNDU9zAAAAAGtlAAA%3D')/events/$entity",
     "@odata.etag": "W/\"/IUUrIl3PkG1JCSsPfU+8wAAGXjGjw==\"",
     "id": "AAMkAGViNDU7zAAAAA7zAAAZe6CkAAA=",
     "createdDateTime": "2019-02-28T21:36:26.7105485Z",
