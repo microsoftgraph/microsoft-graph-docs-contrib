@@ -10089,8 +10089,6 @@
             href: api/printershare-delete.md
         - name: Reports
           items:
-          - name: Archived print job
-            href: resources/archivedprintjob.md
           - name: Organized by printer
             items:
             - name: Get
