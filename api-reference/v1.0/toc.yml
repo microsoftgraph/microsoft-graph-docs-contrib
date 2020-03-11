@@ -617,6 +617,8 @@
           href: api/event-list-attachments.md
         - name: Add attachment
           href: api/event-post-attachments.md
+        - name: Create session to attach large file
+          href: api/attachment-createuploadsession.md
         - name: Create open extension
           href: api/opentypeextension-post-opentypeextension.md
         - name: Get open extension
@@ -665,6 +667,8 @@
           href: resources/itemattachment.md
         - name: Reference attachment type
           href: resources/referenceattachment.md
+        - name: Create session to attach large file
+          href: api/attachment-createuploadsession.md
         - name: Get attachment
           href: api/attachment-get.md
         - name: Delete attachment
@@ -3489,6 +3493,28 @@
           href: api/identityprovider-update.md
         - name: Delete identity provider
           href: api/identityprovider-delete.md
+      - name: Information protection
+        items:
+        - name: Threat assessment
+          items:
+          - name: Overview
+            href: resources/threatassessment-api-overview.md
+          - name: Threat assessment request
+            href: resources/threatassessmentrequest.md
+          - name: Mail assessment request
+            href: resources/mailassessmentrequest.md
+          - name: Email file assessment request
+            href: resources/emailfileassessmentrequest.md
+          - name: File assessment request
+            href: resources/fileAssessmentRequest.md
+          - name: URL assessment request
+            href: resources/urlassessmentrequest.md
+          - name: List
+            href: api/informationprotection-list-threatassessmentrequests.md
+          - name: Create
+            href: api/informationprotection-post-threatassessmentrequests.md
+          - name: Get
+            href: api/threatassessmentrequest-get.md
       - name: Invitation manager
         href: resources/invitation.md
         items:
@@ -3565,6 +3591,8 @@
           href: api/message-list-attachments.md
         - name: Add attachment
           href: api/message-post-attachments.md
+        - name: Create session to attach large file
+          href: api/attachment-createuploadsession.md
         - name: Create open extension
           href: api/opentypeextension-post-opentypeextension.md
         - name: Get open extension
@@ -3578,6 +3606,8 @@
           href: resources/itemattachment.md
         - name: Reference attachment type
           href: resources/referenceattachment.md
+        - name: Create session to attach large file
+          href: api/attachment-createuploadsession.md
         - name: Get attachment
           href: api/attachment-get.md
         - name: Delete attachment

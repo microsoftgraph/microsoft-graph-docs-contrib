@@ -9,6 +9,8 @@ doc_type: apiPageType
 
 # Update user mailbox settings
 
+Namespace: microsoft.graph
+
 Enable, configure, or disable one or more of the following settings as part of a user's [mailboxSettings](../resources/mailboxsettings.md):
 
 - [automatic replies](../resources/automaticrepliessetting.md) (notify people automatically upon receipt of their email)

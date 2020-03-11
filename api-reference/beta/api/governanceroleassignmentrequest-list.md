@@ -9,6 +9,8 @@ ms.prod: ""
 
 # List governanceRoleAssignmentRequests
 
+Namespace: microsoft.graph
+
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 Retrieve a collection of [governanceRoleAssignmentRequests](../resources/governanceroleassignmentrequest.md). 

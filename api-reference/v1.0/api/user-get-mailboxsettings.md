@@ -9,6 +9,8 @@ doc_type: apiPageType
 
 # Get user mailbox settings
 
+Namespace: microsoft.graph
+
 Get the user's [mailboxSettings](../resources/mailboxsettings.md). You can view all mailbox settings, or get specific settings.
 
 Users can set the following settings for their mailboxes through an Outlook client:
