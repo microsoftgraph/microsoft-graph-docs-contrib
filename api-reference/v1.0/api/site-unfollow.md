@@ -1,16 +1,16 @@
 ---
 author: learafa
-title: Follow site
-description: Follow a user's site/sites.
+title: Unfollow site
+description: Unfollow a user's site
 localization_priority: Normal
 ms.prod: "sharepoint"
 doc_type: apiPageType
 ---
-# Follow site 
+# Unfollow site 
 
 Namespace: microsoft.graph
 
-Follow a user's [site](../resources/site.md) or multiple sites.
+Unfollow a user's [site](../resources/site.md) or multiple sites.
 
 ## Permissions
 
@@ -27,7 +27,7 @@ One of the following permissions is required to call this API. To learn more, in
 <!-- { "blockType": "ignored" } -->
 
 ```http
-POST /users/{user-id}/followedSites/add
+POST /users/{user-id}/followedSites/remove
 ```
 
 ## Request body
@@ -39,24 +39,23 @@ In the request body, supply an array of JSON objects with the id parameter menti
 |:---------------------|:-------|:-----------------------------------------------------------------------|
 |   id                 | string | The [unique identifier](../resources/site.md#id-property) of the item. |
 
+## Response
 
-## Response 
-
-* If the request is successful, this method returns an array of sites that were followed.  
-* If an error occurred while following any of the specified sites, this method returns a `207` status code and the response body will contain an array of entries containing [error](/graph/errors) objects and siteIds indicating which sites were unable to be followed.
+* If the request is successful, this method returns a `204` status code with no content.  
+* If an error occured while unfollowing any of the specified sites, this method returns a `207` status code and the response body will contain an array of entries containing [error](/graph/errors) objects and siteIds indicating which sites unable to be unfollowed.
 
 ## Example
 
-The following example shows how to follow multiple sites. 
+The following example shows how to unfollow multiple sites.
 
 ### Request
 
 
 # [HTTP](#tab/http)
-<!-- { "blockType": "request", "name": "follow-site", "scopes": "sites.readwrite.all" } -->
+<!-- { "blockType": "request", "name": "unfollow-site", "scopes": "sites.readwrite.all" } -->
 
 ```http
-POST /users/{user-id}/followedSites/add
+POST /users/{user-id}/followedSites/remove
 Content-Type: application/json
 
 {
@@ -72,15 +71,15 @@ Content-Type: application/json
 }
 ```
 # [C#](#tab/csharp)
-[!INCLUDE [sample-code](../includes/snippets/csharp/follow-site-csharp-snippets.md)]
+[!INCLUDE [sample-code](../includes/snippets/csharp/unfollow-site-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [JavaScript](#tab/javascript)
-[!INCLUDE [sample-code](../includes/snippets/javascript/follow-site-javascript-snippets.md)]
+[!INCLUDE [sample-code](../includes/snippets/javascript/unfollow-site-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Objective-C](#tab/objc)
-[!INCLUDE [sample-code](../includes/snippets/objc/follow-site-objc-snippets.md)]
+[!INCLUDE [sample-code](../includes/snippets/objc/unfollow-site-objc-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
@@ -92,39 +91,7 @@ If successful, it returns the following JSON response.
 <!-- { "blockType": "response", "@type": "microsoft.graph.site", "isCollection": true, "truncated": true } -->
 
 ```json
-HTTP/1.1 200 OK
-Content-type: application/json
-
-{
-    "value": [
-        {
-            "id": "contoso.sharepoint.com,da60e844-ba1d-49bc-b4d4-d5e36bae9019,712a596e-90a1-49e3-9b48-bfa80bee8740",
-            "webUrl": "http://contoso.sharepoint.com/sites/SiteFollowed1",
-            "name": "SiteFollowed1",
-            "sharepointIds": {
-                "siteId": "da60e844-ba1d-49bc-b4d4-d5e36bae9019",
-                "siteUrl": "http://contoso.sharepoint.com/sites/SiteFollowed1",
-                "webId": "712a596e-90a1-49e3-9b48-bfa80bee8740"
-            },
-            "siteCollection": {
-                "hostname": "contoso.sharepoint.com"
-            }
-        },
-        {
-            "id": "contoso.sharepoint.com,da60e844-ba1d-49bc-b4d4-d5e36bae9019,0271110f-634f-4300-a841-3a8a2e851851",
-            "webUrl": "http://contoso.sharepoint.com/sites/SiteFollowed2",
-            "name": "SiteFollowed2",
-            "sharepointIds": {
-                "siteId": "da60e844-ba1d-49bc-b4d4-d5e36bae9019",
-                "siteUrl": "http://contoso.sharepoint.com/sites/SiteFollowed2",
-                "webId": "0271110f-634f-4300-a841-3a8a2e851851"
-            },
-            "siteCollection": {
-                "hostname": "contoso.sharepoint.com"
-            }
-        }
-    ]
-}
+HTTP/1.1 204 No Content
 ```
 
 If an error occured, it returns the following JSON response 
@@ -134,6 +101,7 @@ If an error occured, it returns the following JSON response
 ```json
 HTTP/1.1 207 Multi-Status
 Content-type: application/json
+
 {
     "value": [
         {
@@ -150,19 +118,6 @@ Content-type: application/json
                     "throwSite": ""
                 }
             }
-        },
-        {
-            "id": "contoso.sharepoint.com,da60e844-ba1d-49bc-b4d4-d5e36bae9019,0271110f-634f-4300-a841-3a8a2e851851",
-            "webUrl": "http://contoso.sharepoint.com/sites/SiteFollowed2",
-            "name": "SiteFollowed2",
-            "sharepointIds": {
-                "siteId": "da60e844-ba1d-49bc-b4d4-d5e36bae9019",
-                "siteUrl": "http://contoso.sharepoint.com/sites/SiteFollowed2",
-                "webId": "0271110f-634f-4300-a841-3a8a2e851851"
-            },
-            "siteCollection": {
-                "hostname": "contoso.sharepoint.com"
-            }
         }
     ]
 }
@@ -170,10 +125,10 @@ Content-type: application/json
 
 <!-- {
   "type": "#page.annotation",
-  "description": "Follow sharepoint site for a user.",
-  "keywords": "follow site",
+  "description": "Unfollow sharepoint site/sites for a user.",
+  "keywords": "unfollow site",
   "section": "documentation",
-  "tocPath": "Sites/Follow site",
+  "tocPath": "Sites/Unfollow site",
   "suppressions": [
   ]
 } -->
