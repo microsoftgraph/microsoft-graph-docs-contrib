@@ -97,7 +97,7 @@ Represents the capabilities reported by a printer.
 |twoSidedShortEdge|1|The printer will print double-sided, and will flip documents along the short edge.|
 |oneSided|2|The printer will print single-sided.|
 
-## printOrientation enum
+## printOrientation values
 
 |Member|Value|Description|
 |:---|:---|:---|

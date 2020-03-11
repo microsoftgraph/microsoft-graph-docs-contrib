@@ -78,7 +78,7 @@ Represents the printer's default settings. Check the printer's [capabilities](..
 |stapleDualRight|30|Staple the document twice along the right edge.|
 |stapleDualBottom|31|Staple the document twice along the bottom edge.|
 
-## printOrientation enum
+## printOrientation values
 
 |Member|Value|Description|
 |:---|:---|:---|

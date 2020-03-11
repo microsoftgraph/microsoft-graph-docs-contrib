@@ -43,14 +43,14 @@ A group of settings that a printer should use to print a document.
 |medium|The printer will print the job using medim (commonly known as "normal") quality.|
 |high|The printer will print the job using high (commonly known as "best" or "fine") quality.|
 
-## printerFeedDirection enum
+## printerFeedDirection values
 
 |Member|Description|
 |:---|:---|
 |longEdgeFirst|The printer will consume sheets from the active tray in "landscape" orientation, with the long edge of the sheet first.|
 |shortEdgeFirst|The printer will consume sheets from the active tray in "portrait" orientation, with the short edge of the sheet first.|
 
-## printOrientation enum
+## printOrientation values
 
 |Member|Value|Description|
 |:---|:---|:---|
