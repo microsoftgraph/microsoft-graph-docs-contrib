@@ -74,13 +74,13 @@ The Microsoft Graph Toolkit is great for developers of all experience levels loo
 
 ## Where can I use it?
 
-### Supported Browsers
+### Supported browsers
 
 |![Edge](images/edgeIcon.png)|![Internet Explorer 11](images/internetExplorerIcon.png)|![Firefox](images/firefoxIcon.png)|![Chrome](images/chromeIcon.png)|![Safari](images/safariIcon.png)|![Opera](images/operaIcon.png)|![Samsung Internet](images/samsungInternetIcon.png)|
 |----|----|----|----|----|----|----|
 |**Edge**|**IE 11**|**Firefox**|**Chrome**|**Safari**|**Opera**|**Samsung**|
 
-## Next Steps
+## Next steps
 
 - Try out the components in the [playground](https://mgt.dev).
 - [Get started](get-started.md) with the Microsoft Graph Toolkit.
