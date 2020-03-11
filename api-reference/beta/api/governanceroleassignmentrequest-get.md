@@ -9,6 +9,8 @@ ms.prod: ""
 
 # Get governanceRoleAssignmentRequest
 
+Namespace: microsoft.graph
+
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 Get a [governanceRoleAssignmentRequest](../resources/governanceroleassignmentrequest.md). 

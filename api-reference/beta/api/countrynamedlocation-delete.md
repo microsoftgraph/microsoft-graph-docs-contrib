@@ -9,6 +9,8 @@ doc_type: apiPageType
 
 # Delete countryNamedLocation
 
+Namespace: microsoft.graph
+
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 Delete a [countryNamedLocation](../resources/countryNamedLocation.md) object.

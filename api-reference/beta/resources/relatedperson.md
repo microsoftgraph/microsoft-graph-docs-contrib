@@ -9,6 +9,8 @@ doc_type: "resourcePageType"
 
 # relatedPerson resource type
 
+Namespace: microsoft.graph
+
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 Represents information about people related to information within a given entity in a [profile](profile.md) for a user.

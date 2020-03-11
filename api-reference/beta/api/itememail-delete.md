@@ -9,6 +9,8 @@ doc_type: "apiPageType"
 
 # Delete itemEmail
 
+Namespace: microsoft.graph
+
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 Delete an [itemEmail](../resources/itememail.md) object from a user's [profile](../resources/profile.md).

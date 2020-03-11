@@ -9,6 +9,8 @@ ms.prod: ""
 
 # Cancel governanceRoleAssignmentRequest
 
+Namespace: microsoft.graph
+
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 Cancel a [governanceRoleAssignmentRequest](../resources/governanceroleassignmentrequest.md).

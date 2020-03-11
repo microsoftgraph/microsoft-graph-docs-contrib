@@ -9,6 +9,8 @@ author: ""
 
 # servicePrincipal: List createdObjects
 
+Namespace: microsoft.graph
+
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 Retrieve a list of directoryobject objects.

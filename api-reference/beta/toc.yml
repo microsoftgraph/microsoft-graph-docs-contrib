@@ -677,6 +677,8 @@
           href: api/event-list-attachments.md
         - name: Add attachment
           href: api/event-post-attachments.md
+        - name: Create session to attach large file
+          href: api/attachment-createuploadsession.md
         - name: Create open extension
           href: api/opentypeextension-post-opentypeextension.md
         - name: Get open extension
@@ -725,6 +727,8 @@
           href: resources/itemattachment.md
         - name: Reference attachment type
           href: resources/referenceattachment.md
+        - name: Create session to attach large file
+          href: api/attachment-createuploadsession.md
         - name: Get attachment
           href: api/attachment-get.md
         - name: Delete attachment
@@ -8013,6 +8017,8 @@
       - name: Category
         href: resources/educationcategory.md
         items:
+        - name: Create category
+          href: api/educationclass-post-category.md
         - name: Get category
           href: api/educationcategory-get.md
         - name: Delete category
@@ -8020,6 +8026,8 @@
       - name: Rubric
         href: resources/educationrubric.md
         items:
+        - name: Create rubric
+          href: api/educationuser-post-rubrics.md
         - name: Get rubric
           href: api/educationrubric-get.md
         - name: Update rubric
@@ -8858,7 +8866,7 @@
           - name: Create
             href: api/accesspackageresourcerequest-post.md
         - name: Access package resource role scope
-          href: resources/accesspackageresourcerequest.md
+          href: resources/accesspackageresourcerolescope.md
           items:
           - name: List
             href: api/accesspackage-list-accesspackageresourcerolescopes.md
@@ -9136,6 +9144,21 @@
             href: api/homerealmdiscoverypolicy-delete.md
           - name: List applied to applications
             href: api/homerealmdiscoverypolicy-list-appliesto.md
+        - name: Token issuance policy
+          href: resources/tokenissuancepolicy.md
+          items:
+          - name: Create
+            href: api/tokenissuancepolicy-post-tokenissuancepolicy.md
+          - name: List
+            href: api/tokenissuancepolicy-list.md
+          - name: Get
+            href: api/tokenissuancepolicy-get.md
+          - name: Update
+            href: api/tokenissuancepolicy-update.md
+          - name: Delete
+            href: api/tokenissuancepolicy-delete.md
+          - name: List applied to applications
+            href: api/tokenissuancepolicy-list-appliesto.md
         - name: Token lifetime policy
           href: resources/tokenlifetimepolicy.md
           items:
@@ -9489,7 +9512,7 @@
           href: api/message-list-attachments.md
         - name: Add attachment
           href: api/message-post-attachments.md
-        - name: Create session to attach large file (preview)
+        - name: Create session to attach large file
           href: api/attachment-createuploadsession.md
         - name: Create open extension
           href: api/opentypeextension-post-opentypeextension.md
@@ -9504,7 +9527,7 @@
           href: resources/itemattachment.md
         - name: Reference attachment type
           href: resources/referenceattachment.md
-        - name: Create session to attach large file (preview)
+        - name: Create session to attach large file
           href: api/attachment-createuploadsession.md
         - name: Get attachment
           href: api/attachment-get.md
@@ -10731,6 +10754,8 @@
           href: api/event-list-attachments.md
         - name: Add attachment
           href: api/event-post-attachments.md
+        - name: Create session to attach large file
+          href: api/attachment-createuploadsession.md
         - name: Create open extension
           href: api/opentypeextension-post-opentypeextension.md
         - name: Get open extension
