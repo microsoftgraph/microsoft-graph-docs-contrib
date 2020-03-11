@@ -42,7 +42,9 @@ The following is a JSON representation of the resource.
   "optionalProperties": [
 
   ],
-  "@odata.type": "microsoft.graph.printService"
+  "@odata.type": "microsoft.graph.printService",
+  "keyProperty": "id",
+  "baseType":"microsoft.graph.entity"
 }-->
 
 ```json

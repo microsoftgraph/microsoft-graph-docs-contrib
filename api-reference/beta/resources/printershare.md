@@ -45,7 +45,9 @@ The following is a JSON representation of the resource.
   "optionalProperties": [
 
   ],
-  "@odata.type": "microsoft.graph.printerShare"
+  "@odata.type": "microsoft.graph.printerShare",
+  "keyProperty": "id",
+  "baseType":"microsoft.graph.entity"
 }-->
 
 ```json
