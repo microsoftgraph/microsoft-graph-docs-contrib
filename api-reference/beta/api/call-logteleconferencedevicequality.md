@@ -11,7 +11,7 @@ doc_type: "apiPageType"
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Cloud Video Interop (CVI) bot represents Video teleconferencing (VTC) devices and acts as a back-to-back agent for VTC device in a conference call.  Since a CVI bot is in the middle of VTC and Teams infrastructure as a VTC proxy, it has two media legs. One media leg is between CVI bot and Teams infrastructure such as MC/MP or Teams client and the other media leg is between CVI bot and VTC device. 
+Cloud Video Interop (CVI) bot represents Video teleconferencing (VTC) devices and acts as a back-to-back agent for VTC device in a conference call.  Since a CVI bot is in the middle of VTC and Teams infrastructure as a VTC proxy, it has two media legs. One media leg is between CVI bot and Teams infrastructure such as Teams conference server or Teams client and the other media leg is between CVI bot and VTC device. 
 The third party partners own the VTC media leg and Teams infrastructure cannot access the quality data of the third party call leg.  This API is only for the CVI partners to provide their media quality data.
 
 ## Permissions
@@ -45,7 +45,7 @@ In the request body, provide a JSON object with the following parameters.
 
 | Parameter    | Type        | Description |
 |:-------------|:------------|:------------|
-|quality|teleconferenceDeviceQuality|Quality data of VTC media leg.|
+|quality|[teleconferenceDeviceQuality](../resources/teleconferencedevicequality.md)|Quality data of VTC media leg.|
 
 ## Response
 
