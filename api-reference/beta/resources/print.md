@@ -62,5 +62,7 @@ The following is a JSON representation of the resource.
   "description": "print resource",
   "keywords": "",
   "section": "documentation",
-  "tocPath": ""
+  "tocPath": "",
+  "suppressions": [ 
+    "Error: Resource print has documented navigation properties, but we thought it was a complex type!"
 }-->
