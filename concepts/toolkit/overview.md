@@ -74,7 +74,7 @@ The Microsoft Graph Toolkit is great for developers of all experience levels loo
 
 ## Where can I use it?
 
-### Supported browsers
+The Microsoft Graph Toolkit is supported in the following browsers.
 
 |![Edge](images/edgeIcon.png)|![Internet Explorer 11](images/internetExplorerIcon.png)|![Firefox](images/firefoxIcon.png)|![Chrome](images/chromeIcon.png)|![Safari](images/safariIcon.png)|![Opera](images/operaIcon.png)|![Samsung Internet](images/samsungInternetIcon.png)|
 |----|----|----|----|----|----|----|
