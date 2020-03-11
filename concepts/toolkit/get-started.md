@@ -7,13 +7,15 @@ author: elisenyang
 
 # Get started with the Microsoft Graph Toolkit
 
-The Microsoft Graph Toolkit can easily be included in your web application, SharePoint web part, or Microsoft Teams tab. The components are built on existing web standards and are compatible with any web framework and modern browser. This topic describes how to get started with using the Microsoft Graph Toolkit in your project.
+The Microsoft Graph Toolkit can easily be included in your web application, SharePoint web part, or Microsoft Teams tab. The components are built on existing web standards and are compatible with any web framework and modern browser. This topic describes how to get started using the Microsoft Graph Toolkit in your project.
 
 > [!VIDEO https://www.youtube-nocookie.com/embed/oZCGb2MMxa0]
 
 You can use the Microsoft Graph Toolkit in your application by referencing the loader directly (via unpkg), or by installing the npm package.
 
 ## Use via mgt-loader
+
+To use the toolkit via mgt-loader, see the following example.
 
 ```html
 <script src="https://unpkg.com/@microsoft/mgt/dist/bundle/mgt-loader.js"></script>
