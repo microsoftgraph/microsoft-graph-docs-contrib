@@ -68,7 +68,7 @@ Content-length: 127
 
 {
   "@odata.context": "https://graph.microsoft.com/beta/$metadata#print/settings",
-  value: {
+  "value": {
     "documentConversionEnabled": true
   }
 }

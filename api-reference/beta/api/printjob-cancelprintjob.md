@@ -50,7 +50,7 @@ The following is an example of the request.
   "name": "printjob-cancelprintjob"
 }-->
 ```http
-POST https://graph.microsoft.com/beta/print/printers/{id}/jobs/{id}/cancelPrintJob()
+POST https://graph.microsoft.com/beta/print/printers/{id}/jobs/{id}/cancelPrintJob
 ```
 
 ##### Response
