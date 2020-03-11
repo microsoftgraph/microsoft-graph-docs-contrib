@@ -23,10 +23,10 @@ Video teleconferencing device media quality data.
 |averageOutboundJitter|Duration|The average outbound stream network jitter.|
 |averageOutboundPacketLossRateInPercentage|Double|The average outbound stream packet loss rate in percentage (0-100). For example, 0.01 means 0.01%.|
 |averageOutboundRoundTripDelay|Duration|The average outbound stream network round trip delay.|
-|channelIndex|Int64|The channel index of media. Indexing begins with 1.  If a media session contains 3 video modalities, channel indexes will be 1, 2, and 3.|
+|channelIndex|Int32|The channel index of media. Indexing begins with 1.  If a media session contains 3 video modalities, channel indexes will be 1, 2, and 3.|
 |inboundPackets|Int64|The total number of the inbound packets.|
 |localIPAddress|String|the local IP address for the media session.|
-|localPort|Int64|The local media port.|
+|localPort|Int32|The local media port.|
 |maximumInboundJitter|Duration|The maximum inbound stream network jitter.|
 |maximumInboundPacketLossRateInPercentage|Double|The maximum inbound stream packet loss rate in percentage (0-100). For example, 0.01 means 0.01%.|
 |maximumInboundRoundTripDelay|Duration|The maximum inbound stream network round trip delay.|
@@ -37,7 +37,7 @@ Video teleconferencing device media quality data.
 |networkLinkSpeedInBytes|Int64|The network link speed in bytes|
 |outboundPackets|Int64|The total number of the outbound packets.|
 |remoteIPAddress|String|The remote IP address for the media session.|
-|remotePort|Int64|The remote media port.|
+|remotePort|Int32|The remote media port.|
 
 ## JSON representation
 
