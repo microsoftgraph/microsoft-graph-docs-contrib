@@ -22,13 +22,13 @@ Represents the capabilities reported by a printer.
 |supportsFitPdfToPage|Boolean|True if the printer supports scaling PDF pages to match the print media size; false otherwise.|
 |supportedCopiesPerJob|[integerRange](integerrange.md)|The range of copies per job supported by the printer.|
 |supportedDocumentMimeTypes|String collection|The document mime types that are supported by the printer.|
-|supportedFinishings|printFinishing collection|The finishings that are supported by the printer. Valid values are described in the following table.|
+|supportedFinishings|printFinishing collection|The finishings that are supported by the printer.|
 |supportedMediaColors|String collection|The media (i.e., paper) colors supported by the printer.|
 |supportedMediaTypes|printMediaType collection|The media types supported by the printer. Valid values are described in the following table.|
 |supportedDuplexConfigurations|printDuplexConfiguration collection|The duplex configurations supported by the printer. Valid values are described in the following table.|
 |supportedMediaSizes|String collection|The media sizes supported by the printer. Supports standard size names for ISO and ANSI media sizes, along with any custom sizes supported by the associated printer.|
 |supportedPagesPerSheet|[integerRange](integerrange.md)|The pagesPerSheet values supported by the printer.|
-|supportedOrientations|printOrientation collection|The print orientations supported by the printer. Valid values are `portrait`, `landscape`, `reversePortrait`, and `reverseLandscape`.|
+|supportedOrientations|printOrientation collection|The print orientations supported by the printer. Valid values are described in the following table.|
 |supportedOutputBins|String collection|The printer's supported output bins (trays).|
 |supportedPresentationDirections|printPresentationDirection collection|The presentation directions supported by the printer. Supported values are described in the following table.|
 |supportedColorConfigurations|printColorConfiguration collection|The color modes supported by the printer. Valid values are described in the following table.|
@@ -96,6 +96,15 @@ Represents the capabilities reported by a printer.
 |twoSidedLongEdge|0|The printer will print double-sided, and will flip documents along the long edge.|
 |twoSidedShortEdge|1|The printer will print double-sided, and will flip documents along the short edge.|
 |oneSided|2|The printer will print single-sided.|
+
+## printOrientation enum
+
+|Member|Value|Description|
+|:---|:---|:---|
+|portrait|3|The printer will print impressions in the "portrait" orientation.|
+|landscape|4|The printer will print impressions in the "landscape" orientation.|
+|reverseLandscape|5|The printer will print impressions in the "reverse landscape" orientation.|
+|reversePortrait|6|The printer will print impressions in the "reverse portrait" orientation.|
 
 ### printColorConfiguration values
 

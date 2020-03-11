@@ -21,8 +21,8 @@ A group of settings that a printer should use to print a document.
 |pageRanges|[printPageRange](printpagerange.md) collection|The page ranges to print. Read-only.|
 |printQuality|printQuality|The print quality to use when printing the job. Valid values are described in the table below. Read-only.|
 |printResolutionInDpi|Int32|The resolution to use when printing the job, expressed in dots per inch (DPI). Read-only.|
-|feedDirection|printerFeedDirection|The direction to use when feeding media into the printer. Valid values are `longEdgeFirst` and `shortEdgeFirst`. Read-only.|
-|orientation|printOrientation|The orientation setting the printer should use when printing the job. Valid values are `portrait`, `landscape`, `reversePortrait`, and `reverseLandscape`. Read-only.|
+|feedDirection|printerFeedDirection|The direction to use when feeding media into the printer. Valid values are described in the following table. Read-only.|
+|orientation|printOrientation|The orientation setting the printer should use when printing the job. Valid values are described in the following table.|
 |duplexConfiguration|printDuplexConfiguration|The duplex configuration the printer should use when printing the job. Valid values are described in the table below. Read-only.|
 |copies|Int32|The number of copies that should be printed. Read-only.|
 |colorConfiguration|printColorConfiguration|The color configuration the printer should use to print the job. Valid values are described in the table below. Read-only.|
@@ -42,6 +42,22 @@ A group of settings that a printer should use to print a document.
 |low|The printer will print the job using low (commonly known as "draft") quality.|
 |medium|The printer will print the job using medim (commonly known as "normal") quality.|
 |high|The printer will print the job using high (commonly known as "best" or "fine") quality.|
+
+## printerFeedDirection enum
+
+|Member|Description|
+|:---|:---|
+|longEdgeFirst|The printer will consume sheets from the active tray in "landscape" orientation, with the long edge of the sheet first.|
+|shortEdgeFirst|The printer will consume sheets from the active tray in "portrait" orientation, with the short edge of the sheet first.|
+
+## printOrientation enum
+
+|Member|Value|Description|
+|:---|:---|:---|
+|portrait|3|The printer will print impressions in the "portrait" orientation.|
+|landscape|4|The printer will print impressions in the "landscape" orientation.|
+|reverseLandscape|5|The printer will print impressions in the "reverse landscape" orientation.|
+|reversePortrait|6|The printer will print impressions in the "reverse portrait" orientation.|
 
 ### printColorConfiguration values
 

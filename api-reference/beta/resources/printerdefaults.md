@@ -25,7 +25,7 @@ Represents the printer's default settings. Check the printer's [capabilities](..
 |mediaType|printMediaType|The default media (such as paper) type to print the document on. Valid values are described in the following table.|
 |mediaSize|String|The default media size to use. Supports standard size names for ISO and ANSI media sizes, along with any custom sizes supported by the associated printer.
 |pagesPerSheet|Int32|The default number of document pages to print on each sheet.
-|orientation|printOrientation|The default orientation to use when printing the document. Valid values are `portrait`, `landscape`, `reversePortrait`, and `reverseLandscape`.|
+|orientation|printOrientation|The default orientation to use when printing the document. Valid values are described in the following table.|
 |outputBin|String|The default output bin to place completed prints into. See the printer's [capabilities](../api/printer-getcapabilities.md) for a list of supported output bins.|
 |pdfFitToPage|Boolean|The default pdfFitToPage setting. True to fit each page of a PDF document to a physical sheet of media; false to let the printer decide how to lay out impressions.|
 |presentationDirection|printPresentationDirection|The default direction to lay out pages when multiple pages are being printed per sheet. Valid values are described in the following table.|
@@ -77,6 +77,15 @@ Represents the printer's default settings. Check the printer's [capabilities](..
 |stapleDualTop|29|Staple the document twice along the top edge.|
 |stapleDualRight|30|Staple the document twice along the right edge.|
 |stapleDualBottom|31|Staple the document twice along the bottom edge.|
+
+## printOrientation enum
+
+|Member|Value|Description|
+|:---|:---|:---|
+|portrait|3|The printer will print impressions in the "portrait" orientation.|
+|landscape|4|The printer will print impressions in the "landscape" orientation.|
+|reverseLandscape|5|The printer will print impressions in the "reverse landscape" orientation.|
+|reversePortrait|6|The printer will print impressions in the "reverse portrait" orientation.|
 
 ### printMediaType values
 
