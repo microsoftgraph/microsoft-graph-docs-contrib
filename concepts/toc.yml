@@ -49,6 +49,8 @@ items:
             href: /graph/tutorials/ios-swift
           - name: Java
             href: /graph/tutorials/java
+          - name: JavaScript
+            href: /graph/tutorials/javascript
           - name: Node.js
             href: /graph/tutorials/node
           - name: PHP
@@ -104,7 +106,7 @@ items:
           - name: Overview
             href: cloud-communications-concept-overview.md
           - name: Get started
-            href: cloud-communications-get-started.md            
+            href: cloud-communications-get-started.md
           - name: Calls
             href: cloud-communications-calls.md
           - name: Media
@@ -167,7 +169,7 @@ items:
         href: azuread-identity-access-management-concept-overview.md
         displaName: Azure AD, Microsoft identity platform
         items:
-          - name: Information Protection        
+          - name: Information Protection
             href: information-protection-overview.md
       - name: Mail
         displayName: Outlook, Outlook mail
@@ -261,7 +263,7 @@ items:
         items:
           - name: Overview
             href: reportroot-concept-overview.md
-          - name: Authorization for Office 365 usage reports 
+          - name: Authorization for Office 365 usage reports
             href: reportroot-authorization.md
       - name: Search (preview)
         items:
