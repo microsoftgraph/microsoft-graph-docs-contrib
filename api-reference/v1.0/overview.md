@@ -50,7 +50,7 @@ Find more information about [versioning and support](/graph/versioning-and-suppo
 Microsoft Graph API requests to the v1.0 endpoint use the following pattern:
 
 ```
-	https://graph.microsoft.com/v1.0/{resource}?[query_parameters]
+https://graph.microsoft.com/v1.0/{resource}?[query_parameters]
 ```
 
 For details, see [Use the Microsoft Graph API](/graph/use-the-api).
