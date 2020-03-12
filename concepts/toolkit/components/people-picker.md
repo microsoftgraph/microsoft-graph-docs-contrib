@@ -13,7 +13,7 @@ If the number of people to display exceeds the `show-max` value, not all people 
 
 ## Example
 
-The example below shows the `mgt-people-picker` component. Start searching for a name to see the results render and use the code editor to see how [properties](#Properties) change the behavior of the component.
+The example below shows the `mgt-people-picker` component. Start searching for a name to see the results render and use the code editor to see how [properties](#properties) change the behavior of the component.
 
 <iframe src="https://mgt.dev/iframe.html?id=components-mgt-people-picker--people-picker&source=docs" height="450"></iframe>
 

@@ -13,7 +13,7 @@ For more information about the `mgt-person` component, see [mgt-person docs](./p
 
 ## Example
 
-The example below shows the use of the `mgt-person-card` component with a `mgt-person` component. Hover over the person to see the Person Card and use the code editor to see how [properties](#Properties) change the behavior of the component.
+The example below shows the use of the `mgt-person-card` component with a `mgt-person` component. Hover over the person to see the Person Card and use the code editor to see how [properties](#properties) change the behavior of the component.
   
 <iframe src="https://mgt.dev/iframe.html?id=components-mgt-person-card--person-card-hover&source=docs" height="400"></iframe>
 

@@ -11,7 +11,7 @@ The `mgt-agenda` web component represents events in a user or group calendar. By
 
 ## Example
 
-The example below shows the signed-in user's calendar events displayed using the `mgt-agenda` component. You can use the code editor to see how [properties](#Properties) change the behavior of the component.
+The example below shows the signed-in user's calendar events displayed using the `mgt-agenda` component. You can use the code editor to see how [properties](#properties) change the behavior of the component.
 
 <iframe src="https://mgt.dev/iframe.html?id=components-mgt-agenda--simple&source=docs" height="500"></iframe>
 

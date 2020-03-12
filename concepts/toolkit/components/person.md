@@ -13,7 +13,7 @@ The person component also uses the [mgt-person-card](./person-card.md) to displa
 
 ## Example
 
-The example below displays a person using the `mgt-person` component. You can use the code editor to see how [properties](#Properties) change the behavior of the component.
+The example below displays a person using the `mgt-person` component. You can use the code editor to see how [properties](#properties) change the behavior of the component.
 
 <iframe src="https://mgt.dev/iframe.html?id=components-mgt-person--person&source=docs" height="250"></iframe>
 

@@ -11,7 +11,7 @@ author: elisenyang
 
 The Microsoft Graph Toolkit is a collection of reusable, framework-agnostic web components and helpers for accessing and working with Microsoft Graph. The components are fully functional right of out of the box, with built in providers that authenticate with and fetch data from Microsoft Graph.
 
-The Microsoft Graph Toolkit makes it easy to use Microsoft Graph in your application. In the example below, see how a signed in user and their calendar events are displayed with just two lines of code by using the [Login](/components/login.md) and [Agenda](/components/agenda.md) components.
+The Microsoft Graph Toolkit makes it easy to use Microsoft Graph in your application. In the example below, see how a signed in user and their calendar events are displayed with just two lines of code by using the [Login](./components/login.md) and [Agenda](./components/agenda.md) components.
 
 <iframe src="https://mgt.dev/iframe.html?id=samples-general--login-to-show-agenda&source=docs&source=docs" height="400"></iframe>
 
