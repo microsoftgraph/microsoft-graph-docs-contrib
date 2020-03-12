@@ -47,6 +47,7 @@ The following is a JSON representation of the resource.
 
   ],
   "@odata.type": "microsoft.graph.print"
+  "keyProperty": "settings"
 }-->
 
 ```json
