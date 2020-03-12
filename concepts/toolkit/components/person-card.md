@@ -12,6 +12,8 @@ A Person-Card component is a responsive component to display more information re
 For more information about the `mgt-person` component, see [mgt-person docs](./person.md).
 
 ## Example
+
+The example below shows the use of the `mgt-person-card` component with a `mgt-person` component. Hover over the person to see the Person Card and use the code editor to see how [properties](#Properties) change the behavior of the component.
   
 <iframe src="https://mgt.dev/iframe.html?id=components-mgt-person-card--person-card-hover&source=docs" height="400"></iframe>
 
