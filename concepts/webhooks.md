@@ -142,6 +142,7 @@ Microsoft Graph validates the notification endpoint provided in the `notificatio
 1. Microsoft Graph sends a POST request to the notification URL:
 
     ``` http
+    Content-Type: text/plain; charset=utf-8
     POST https://{notificationUrl}?validationToken={opaqueTokenCreatedByMicrosoftGraph}
     ```
 

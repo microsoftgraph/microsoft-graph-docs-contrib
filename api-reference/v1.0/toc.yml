@@ -617,8 +617,6 @@
           href: api/event-list-attachments.md
         - name: Add attachment
           href: api/event-post-attachments.md
-        - name: Create session to attach large file
-          href: api/attachment-createuploadsession.md
         - name: Create open extension
           href: api/opentypeextension-post-opentypeextension.md
         - name: Get open extension
@@ -667,8 +665,6 @@
           href: resources/itemattachment.md
         - name: Reference attachment type
           href: resources/referenceattachment.md
-        - name: Create session to attach large file
-          href: api/attachment-createuploadsession.md
         - name: Get attachment
           href: api/attachment-get.md
         - name: Delete attachment
@@ -3582,8 +3578,6 @@
           href: api/message-list-attachments.md
         - name: Add attachment
           href: api/message-post-attachments.md
-        - name: Create session to attach large file
-          href: api/attachment-createuploadsession.md
         - name: Create open extension
           href: api/opentypeextension-post-opentypeextension.md
         - name: Get open extension
@@ -3597,8 +3591,6 @@
           href: resources/itemattachment.md
         - name: Reference attachment type
           href: resources/referenceattachment.md
-        - name: Create session to attach large file
-          href: api/attachment-createuploadsession.md
         - name: Get attachment
           href: api/attachment-get.md
         - name: Delete attachment
