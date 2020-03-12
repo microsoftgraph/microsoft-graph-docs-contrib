@@ -16,10 +16,7 @@ Namespace: microsoft.graph
 Retrieve tenant-wide settings for the Universal Print service.
 
 ## Permissions
-
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
-
-In addition to the following permissions, the user's tenant must have an active Universal Print subscription.
 
 |Permission type | Permissions (from least to most privileged) |
 |:---------------|:--------------------------------------------|
@@ -32,6 +29,9 @@ In addition to the following permissions, the user's tenant must have an active 
 ```http
 GET /print/settings
 ```
+
+## Optional query parameters
+This method supports some of the OData query parameters to help customize the response. For general information, see [OData query parameters](/graph/query-parameters).
 
 ## Request headers
 | Name      |Description|
@@ -47,7 +47,7 @@ If successful, this method returns a `200 OK` response code and a [printSettings
 The following is an example of the request.
 <!-- {
   "blockType": "request",
-  "name": "get_settings"
+  "name": "get_printsettings"
 }-->
 ```http
 GET https://graph.microsoft.com/beta/print/settings
@@ -59,18 +59,16 @@ The following is an example of the response.
   "blockType": "response",
   "truncated": true,
   "@odata.type": "microsoft.graph.printSettings",
-  "isCollection": true
+  "isCollection": false
 } -->
 ```http
 HTTP/1.1 200 OK
 Content-type: application/json
-Content-length: 127
+Content-length: 144
 
 {
   "@odata.context": "https://graph.microsoft.com/beta/$metadata#print/settings",
-  "value": {
-    "documentConversionEnabled": true
-  }
+  "documentConversionEnabled": true
 }
 ```
 
