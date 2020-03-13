@@ -677,6 +677,7 @@ times in the response.
 POST https://graph.microsoft.com/v1.0/me/events
 Prefer: outlook.timezone="Pacific Standard Time"
 Content-type: application/json
+
 {
   "subject": "Let's go for lunch",
   "body": {

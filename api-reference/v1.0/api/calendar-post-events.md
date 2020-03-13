@@ -228,6 +228,7 @@ In the request body, supply a JSON representation of [event](../resources/event.
 ```http
 POST https://graph.microsoft.com/v1.0/me/calendars/AAMkAGViNDU9zAAAAAGtlAAA=/events
 Content-type: application/json
+
 {
   "subject": "Let's go for lunch",
   "body": {
@@ -270,6 +271,7 @@ Here is an example of the response. Note: The response object shown here may be 
 ```http
 HTTP/1.1 201 Created
 Content-type: application/json
+
 {
     "@odata.context": "https://graph.microsoft.com/v1.0/$metadata#users('5d8d505c-864f-4804-88c7-4583c966cde8')/calendars('AAMkAGViNDU9zAAAAAGtlAAA%3D')/events/$entity",
     "@odata.etag": "W/\"/IUUrIl3PkG1JCSsPfU+8wAAGXjGjw==\"",
