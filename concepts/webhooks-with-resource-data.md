@@ -476,6 +476,19 @@ byte[] decryptedSymmetricKey = rsaProvider.Decrypt(encryptedSymmetricKey, fOAEP:
 
 // Can now use decryptedSymmetricKey with the AES algorithm.
 ```
+```Java
+String storename = ""; //name/path of the jks store
+String storepass = ""; //password used to open the jks store
+String alias = ""; //alias of the certificate when store in the jks store, should be passed as encryptionCertificateId when subscribing and retrieved from the notification
+KeyStore ks = KeyStore.getInstance("JKS");
+ks.load(new FileInputStream(storename), storepass.toCharArray());
+Key asymmetricKey = ks.getKey(alias, storepass.toCharArray());
+byte[] encryptedSymetricKey = Base64.decodeBase64("<value from dataKey property>");
+Cipher cipher = Cipher.getInstance("RSA/ECB/OAEPWithSHA1AndMGF1Padding");
+cipher.init(Cipher.DECRYPT_MODE, asymmetricKey);
+byte[] decryptedSymmetricKey = cipher.doFinal(encryptedSymetricKey);
+// Can now use decryptedSymmetricKey with the AES algorithm.
+```
 
 #### Compare data signature using HMAC-SHA256
 
@@ -490,6 +503,23 @@ using (HMACSHA256 hmac = new HMACSHA256(decryptedSymmetricKey))
     actualSignature = hmac.ComputeHash(encryptedPayload);
 }
 if (actualSignature.SequenceEqual(expectedSignature))
+{
+    // Continue with decryption of the encryptedPayload.
+}
+else
+{
+    // Do not attempt to decrypt encryptedPayload. Assume notification payload has been tampered with and investigate.
+}
+```
+```Java
+byte[] decryptedSymmetricKey = "<the aes key decrypted in the previous step>";
+byte[] decodedEncryptedData = Base64.decodeBase64("data property from encryptedContent object");
+Mac mac = Mac.getInstance("HMACSHA256");
+SecretKey skey = new SecretKeySpec(decryptedSymmetricKey, "HMACSHA256");
+mac.init(skey);
+byte[] hashedData = mac.doFinal(decodedEncryptedData);
+String encodedHashedData = new String(Base64.encodeBase64(hashedData));
+if (comparisonSignature.equals(encodedHashedData);)
 {
     // Continue with decryption of the encryptedPayload.
 }
@@ -532,6 +562,13 @@ using (var decryptor = aesProvider.CreateDecryptor())
 }
 
 // decryptedResourceData now contains a JSON string that represents the resource.
+```
+```Java
+SecretKey skey = new SecretKeySpec(decryptedSymmetricKey, "AES");
+IvParameterSpec ivspec = new IvParameterSpec(Arrays.copyOf(decryptedSymmetricKey, 16));
+Cipher cipher = Cipher.getInstance("AES/CBC/PKCS5PADDING");
+cipher.init(Cipher.DECRYPT_MODE, skey, ivspec);
+String decryptedResourceData = new String(cipher.doFinal(Base64.decodeBase64(encryptedData)));
 ```
 
 ## See also
