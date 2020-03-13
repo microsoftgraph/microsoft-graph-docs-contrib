@@ -120,6 +120,24 @@ An edit link provides read and write access to an item.
 }
 ```
 
+### Existing access link
+
+This link does not grant any additional privileges to the user.
+
+<!-- {"blockType": "example", "@odata.type": "microsoft.graph.permission", "name": "permission-existing-link" } -->
+
+```json
+{
+  "id": "00000000-0000-0000-0000-000000000000",
+  "roles": ["read"],
+  "link": {
+    "scope": "existingAccess",
+    "type": "view",
+    "webUrl": "https://contoso.sharepoint.com/:w:/t/design/Shared%20Documents/SampleDoc.docx?d=w12345",
+  },
+  "expirationDateTime": "0001-01-01T00:00:00Z"
+}
+
 ### Sharing Invitation
 In addition to creating sharing links, a user can be invited by e-mail address.
 In this scenario the permission creates an invitation that is sent to the user's
