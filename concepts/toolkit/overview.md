@@ -1,13 +1,11 @@
 ---
-title: "Microsoft Graph Toolkit"
+title: "Microsoft Graph Toolkit: Web Components powered by Microsoft Graph"
 description: "The Microsoft Graph Toolkit is a collection of resuable, framework-agnostic web components and helpers for accessing and working with Microsoft Graph."
 localization_priority: Normal
 author: elisenyang
 ---
 
-# Microsoft Graph Toolkit
-
-**Web Components powered by Microsoft Graph**
+# Microsoft Graph Toolkit: Web Components powered by Microsoft Graph
 
 The Microsoft Graph Toolkit is a collection of reusable, framework-agnostic web components and helpers for accessing and working with Microsoft Graph. The components are fully functional right of out of the box, with built in providers that authenticate with and fetch data from Microsoft Graph.
 
