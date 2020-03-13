@@ -455,6 +455,8 @@ items:
         items:
           - name: Toolkit overview
             href: toolkit/overview.md
+          - name: Get started
+            href: toolkit/get-started.md
           - name: Components
             items:
               - name: Login
