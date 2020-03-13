@@ -658,7 +658,6 @@ Content-type: application/json
             "address":"AlexW@contoso.onmicrosoft.com"
         }
     },
-    "onlineMeeting":null
 }
 ```
 ### Example 4: Create and enable an event as an online meeting
