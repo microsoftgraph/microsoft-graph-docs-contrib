@@ -1,15 +1,13 @@
 ---
 title: "Update managedMobileApp"
 description: "Update the properties of a managedMobileApp object."
-author: "rolyon"
+author: "davidmu1"
 localization_priority: Normal
 ms.prod: "Intune"
 doc_type: apiPageType
 ---
 
 # Update managedMobileApp
-
-Namespace: microsoft.graph
 
 > **Important:** Microsoft Graph APIs under the /beta version are subject to change; production use is not supported.
 
@@ -94,8 +92,6 @@ Content-Length: 230
   "version": "Version value"
 }
 ```
-
-
 
 
 

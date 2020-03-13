@@ -1,15 +1,13 @@
 ---
 title: "Create mobileAppIntentAndState"
 description: "Create a new mobileAppIntentAndState object."
-author: "rolyon"
+author: "davidmu1"
 localization_priority: Normal
 ms.prod: "Intune"
 doc_type: apiPageType
 ---
 
 # Create mobileAppIntentAndState
-
-Namespace: microsoft.graph
 
 > **Important:** Microsoft Graph APIs under the /beta version are subject to change; production use is not supported.
 
@@ -124,8 +122,6 @@ Content-Length: 880
   ]
 }
 ```
-
-
 
 
 

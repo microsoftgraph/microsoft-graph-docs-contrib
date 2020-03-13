@@ -1,15 +1,13 @@
 ---
 title: "List iosLobAppProvisioningConfigurationAssignments"
 description: "List properties and relationships of the iosLobAppProvisioningConfigurationAssignment objects."
-author: "rolyon"
+author: "davidmu1"
 localization_priority: Normal
 ms.prod: "Intune"
 doc_type: apiPageType
 ---
 
 # List iosLobAppProvisioningConfigurationAssignments
-
-Namespace: microsoft.graph
 
 > **Important:** Microsoft Graph APIs under the /beta version are subject to change; production use is not supported.
 
@@ -74,8 +72,6 @@ Content-Length: 286
   ]
 }
 ```
-
-
 
 
 

@@ -2,14 +2,12 @@
 title: "Create officeClientConfigurationAssignment"
 description: "Add a target group to an existing policy."
 localization_priority: Normal
-author: "rolyon"
+author: "davidmu1"
 ms.prod: "Intune"
 doc_type: apiPageType
 ---
 
 # Create officeClientConfigurationAssignment
-
-Namespace: microsoft.graph
 
 > **Important:** Microsoft Graph APIs under the /beta version are subject to change; production use is not supported.
 
@@ -88,8 +86,6 @@ Content-Length: 221
   }
 }
 ```
-
-
 
 
 

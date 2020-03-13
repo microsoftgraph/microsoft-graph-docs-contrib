@@ -1,15 +1,13 @@
 ---
 title: "Update vppToken"
 description: "Update the properties of a vppToken object."
-author: "rolyon"
+author: "davidmu1"
 localization_priority: Normal
 ms.prod: "Intune"
 doc_type: apiPageType
 ---
 
 # Update vppToken
-
-Namespace: microsoft.graph
 
 > **Important:** Microsoft Graph APIs under the /beta version are subject to change; production use is not supported.
 
@@ -151,8 +149,6 @@ Content-Length: 1115
   ]
 }
 ```
-
-
 
 
 

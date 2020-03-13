@@ -1,15 +1,13 @@
 ---
 title: "Update userExperienceAnalyticsRegressionSummary"
 description: "Update the properties of a userExperienceAnalyticsRegressionSummary object."
-author: "rolyon"
+author: "davidmu1"
 localization_priority: Normal
 ms.prod: "Intune"
 doc_type: apiPageType
 ---
 
 # Update userExperienceAnalyticsRegressionSummary
-
-Namespace: microsoft.graph
 
 > **Important:** Microsoft Graph APIs under the /beta version are subject to change; production use is not supported.
 
@@ -81,8 +79,6 @@ Content-Length: 131
   "id": "41683327-3327-4168-2733-684127336841"
 }
 ```
-
-
 
 
 

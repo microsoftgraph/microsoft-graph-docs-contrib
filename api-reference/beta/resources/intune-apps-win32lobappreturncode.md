@@ -1,15 +1,13 @@
 ---
 title: "win32LobAppReturnCode resource type"
 description: "Contains return code properties for a Win32 App"
-author: "rolyon"
+author: "davidmu1"
 localization_priority: Normal
 ms.prod: "Intune"
 doc_type: resourcePageType
 ---
 
 # win32LobAppReturnCode resource type
-
-Namespace: microsoft.graph
 
 > **Important:** Microsoft Graph APIs under the /beta version are subject to change; production use is not supported.
 

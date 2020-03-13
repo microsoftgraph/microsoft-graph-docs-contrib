@@ -1,15 +1,13 @@
 ---
 title: "Update androidDeviceOwnerEnterpriseWiFiConfiguration"
 description: "Update the properties of a androidDeviceOwnerEnterpriseWiFiConfiguration object."
-author: "rolyon"
+author: "davidmu1"
 localization_priority: Normal
 ms.prod: "Intune"
 doc_type: apiPageType
 ---
 
 # Update androidDeviceOwnerEnterpriseWiFiConfiguration
-
-Namespace: microsoft.graph
 
 > **Important:** Microsoft Graph APIs under the /beta version are subject to change; production use is not supported.
 
@@ -187,8 +185,6 @@ Content-Length: 1784
   "outerIdentityPrivacyTemporaryValue": "Outer Identity Privacy Temporary Value value"
 }
 ```
-
-
 
 
 

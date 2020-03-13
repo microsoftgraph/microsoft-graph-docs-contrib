@@ -1,15 +1,13 @@
 ---
 title: "getEncryptionPublicKey function"
 description: "Get a public key to use to encrypt the Apple device enrollment program token"
-author: "rolyon"
+author: "davidmu1"
 localization_priority: Normal
 ms.prod: "Intune"
 doc_type: apiPageType
 ---
 
 # getEncryptionPublicKey function
-
-Namespace: microsoft.graph
 
 > **Important:** Microsoft Graph APIs under the /beta version are subject to change; production use is not supported.
 
@@ -66,8 +64,6 @@ Content-Length: 50
   "value": "Get Encryption Public Key value"
 }
 ```
-
-
 
 
 

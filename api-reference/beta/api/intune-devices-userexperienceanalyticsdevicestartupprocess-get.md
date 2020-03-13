@@ -1,15 +1,13 @@
 ---
 title: "Get userExperienceAnalyticsDeviceStartupProcess"
 description: "Read properties and relationships of the userExperienceAnalyticsDeviceStartupProcess object."
-author: "rolyon"
+author: "davidmu1"
 localization_priority: Normal
 ms.prod: "Intune"
 doc_type: apiPageType
 ---
 
 # Get userExperienceAnalyticsDeviceStartupProcess
-
-Namespace: microsoft.graph
 
 > **Important:** Microsoft Graph APIs under the /beta version are subject to change; production use is not supported.
 
@@ -36,7 +34,7 @@ GET /deviceManagement/userExperienceAnalyticsDeviceStartupProcesses/{userExperie
 ```
 
 ## Optional query parameters
-This method supports the [OData Query Parameters](/graph/query-parameters) to help customize the response.
+This method supports the [OData Query Parameters](https://docs.microsoft.com/en-us/graph/query-parameters) to help customize the response.
 
 ## Request headers
 |Header|Value|
@@ -77,8 +75,6 @@ Content-Length: 358
   }
 }
 ```
-
-
 
 
 

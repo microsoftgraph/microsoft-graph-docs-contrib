@@ -1,15 +1,13 @@
 ---
 title: "Get windowsManagedDevice"
 description: "Read properties and relationships of the windowsManagedDevice object."
-author: "rolyon"
+author: "davidmu1"
 localization_priority: Normal
 ms.prod: "Intune"
 doc_type: apiPageType
 ---
 
 # Get windowsManagedDevice
-
-Namespace: microsoft.graph
 
 > **Important:** Microsoft Graph APIs under the /beta version are subject to change; production use is not supported.
 
@@ -40,7 +38,7 @@ GET /deviceManagement/deviceManagementScripts/{deviceManagementScriptId}/deviceR
 ```
 
 ## Optional query parameters
-This method supports the [OData Query Parameters](/graph/query-parameters) to help customize the response.
+This method supports the [OData Query Parameters](https://docs.microsoft.com/en-us/graph/query-parameters) to help customize the response.
 
 ## Request headers
 |Header|Value|
@@ -67,7 +65,7 @@ Here is an example of the response. Note: The response object shown here may be 
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 8057
+Content-Length: 8083
 
 {
   "value": {
@@ -240,7 +238,8 @@ Content-Length: 8057
     },
     "configurationManagerClientInformation": {
       "@odata.type": "microsoft.graph.configurationManagerClientInformation",
-      "clientIdentifier": "Client Identifier value"
+      "clientIdentifier": "Client Identifier value",
+      "isBlocked": true
     },
     "ethernetMacAddress": "Ethernet Mac Address value",
     "physicalMemoryInBytes": 5,
@@ -248,8 +247,6 @@ Content-Length: 8057
   }
 }
 ```
-
-
 
 
 

@@ -1,15 +1,13 @@
 ---
 title: "Update userExperienceAnalyticsDeviceStartupHistory"
 description: "Update the properties of a userExperienceAnalyticsDeviceStartupHistory object."
-author: "rolyon"
+author: "davidmu1"
 localization_priority: Normal
 ms.prod: "Intune"
 doc_type: apiPageType
 ---
 
 # Update userExperienceAnalyticsDeviceStartupHistory
-
-Namespace: microsoft.graph
 
 > **Important:** Microsoft Graph APIs under the /beta version are subject to change; production use is not supported.
 
@@ -120,8 +118,6 @@ Content-Length: 582
   "operatingSystemVersion": "Operating System Version value"
 }
 ```
-
-
 
 
 

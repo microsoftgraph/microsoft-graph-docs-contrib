@@ -1,15 +1,13 @@
 ---
 title: "defenderPotentiallyUnwantedAppAction enum type"
 description: "Defender’s action to take on detected Potentially Unwanted Application (PUA)."
-author: "rolyon"
+author: "davidmu1"
 localization_priority: Normal
 ms.prod: "Intune"
 doc_type: enumPageType
 ---
 
 # defenderPotentiallyUnwantedAppAction enum type
-
-Namespace: microsoft.graph
 
 > **Important:** Microsoft Graph APIs under the /beta version are subject to change; production use is not supported.
 

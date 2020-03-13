@@ -1,15 +1,13 @@
 ---
 title: "Create roleAssignment"
 description: "Create a new roleAssignment object."
-author: "rolyon"
+author: "davidmu1"
 localization_priority: Normal
 ms.prod: "Intune"
 doc_type: apiPageType
 ---
 
 # Create roleAssignment
-
-Namespace: microsoft.graph
 
 > **Important:** Microsoft Graph APIs under the /beta version are subject to change; production use is not supported.
 
@@ -104,8 +102,6 @@ Content-Length: 326
   ]
 }
 ```
-
-
 
 
 

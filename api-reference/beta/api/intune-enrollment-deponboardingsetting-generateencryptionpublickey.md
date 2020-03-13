@@ -1,30 +1,28 @@
 ---
-title: "createMigrationReport action"
-description: "Not yet documented"
-author: "rolyon"
+title: "generateEncryptionPublicKey action"
+description: "Generate a public key to use to encrypt the Apple device enrollment program token"
+author: "davidmu1"
 localization_priority: Normal
 ms.prod: "Intune"
 doc_type: apiPageType
 ---
 
-# createMigrationReport action
-
-Namespace: microsoft.graph
+# generateEncryptionPublicKey action
 
 > **Important:** Microsoft Graph APIs under the /beta version are subject to change; production use is not supported.
 
 > **Note:** The Microsoft Graph API for Intune requires an [active Intune license](https://go.microsoft.com/fwlink/?linkid=839381) for the tenant.
 
-Not yet documented
+Generate a public key to use to encrypt the Apple device enrollment program token
 
 ## Prerequisites
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
 
 |Permission type|Permissions (from most to least privileged)|
 |:---|:---|
-|Delegated (work or school account)|DeviceManagementConfiguration.ReadWrite.All|
+|Delegated (work or school account)|DeviceManagementServiceConfig.ReadWrite.All, DeviceManagementServiceConfig.Read.All|
 |Delegated (personal Microsoft account)|Not supported.|
-|Application|DeviceManagementConfiguration.ReadWrite.All|
+|Application|DeviceManagementServiceConfig.ReadWrite.All, DeviceManagementServiceConfig.Read.All|
 
 ## HTTP Request
 <!-- {
@@ -32,7 +30,7 @@ One of the following permissions is required to call this API. To learn more, in
 }
 -->
 ``` http
-POST /deviceManagement/groupPolicyMigrationReports/createMigrationReport
+POST /deviceManagement/depOnboardingSettings/{depOnboardingSettingId}/generateEncryptionPublicKey
 ```
 
 ## Request headers
@@ -42,15 +40,7 @@ POST /deviceManagement/groupPolicyMigrationReports/createMigrationReport
 |Accept|application/json|
 
 ## Request body
-In the request body, supply JSON representation of the parameters.
-
-The following table shows the parameters that can be used with this action.
-
-|Property|Type|Description|
-|:---|:---|:---|
-|groupPolicyObjectFile|[groupPolicyObjectFile](../resources/intune-gpanalyticsservice-grouppolicyobjectfile.md)|Not yet documented|
-
-
+Do not supply a request body for this method.
 
 ## Response
 If successful, this action returns a `200 OK` response code and a String in the response body.
@@ -60,18 +50,7 @@ If successful, this action returns a `200 OK` response code and a String in the 
 ### Request
 Here is an example of the request.
 ``` http
-POST https://graph.microsoft.com/beta/deviceManagement/groupPolicyMigrationReports/createMigrationReport
-
-Content-type: application/json
-Content-length: 191
-
-{
-  "groupPolicyObjectFile": {
-    "@odata.type": "microsoft.graph.groupPolicyObjectFile",
-    "ouDistinguishedName": "Ou Distinguished Name value",
-    "content": "Content value"
-  }
-}
+POST https://graph.microsoft.com/beta/deviceManagement/depOnboardingSettings/{depOnboardingSettingId}/generateEncryptionPublicKey
 ```
 
 ### Response
@@ -79,14 +58,12 @@ Here is an example of the response. Note: The response object shown here may be 
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 48
+Content-Length: 55
 
 {
-  "value": "Create Migration Report value"
+  "value": "Generate Encryption Public Key value"
 }
 ```
-
-
 
 
 

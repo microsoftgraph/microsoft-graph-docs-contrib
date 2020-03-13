@@ -2,14 +2,12 @@
 title: "Create windowsOfficeClientConfiguration"
 description: "Create a new non-security policy with targeting groups."
 localization_priority: Normal
-author: "rolyon"
+author: "davidmu1"
 ms.prod: "Intune"
 doc_type: apiPageType
 ---
 
 # Create windowsOfficeClientConfiguration
-
-Namespace: microsoft.graph
 
 > **Important:** Microsoft Graph APIs under the /beta version are subject to change; production use is not supported.
 
@@ -142,8 +140,6 @@ Content-Length: 1069
   ]
 }
 ```
-
-
 
 
 

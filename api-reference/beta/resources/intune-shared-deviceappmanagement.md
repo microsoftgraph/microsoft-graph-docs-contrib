@@ -1,15 +1,13 @@
 ---
 title: "deviceAppManagement resource type"
 description: "Singleton entity that acts as a container for all device app management functionality."
-author: "rolyon"
+author: "davidmu1"
 localization_priority: Normal
 ms.prod: "intune"
 doc_type: resourcePageType
 ---
 
 # deviceAppManagement resource type
-
-Namespace: microsoft.graph
 
 > **Important:** Microsoft Graph APIs under the /beta version are subject to change; production use is not supported.
 

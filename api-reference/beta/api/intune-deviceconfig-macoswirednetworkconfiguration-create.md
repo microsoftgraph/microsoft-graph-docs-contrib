@@ -1,15 +1,13 @@
 ---
 title: "Create macOSWiredNetworkConfiguration"
 description: "Create a new macOSWiredNetworkConfiguration object."
-author: "rolyon"
+author: "davidmu1"
 localization_priority: Normal
 ms.prod: "Intune"
 doc_type: apiPageType
 ---
 
 # Create macOSWiredNetworkConfiguration
-
-Namespace: microsoft.graph
 
 > **Important:** Microsoft Graph APIs under the /beta version are subject to change; production use is not supported.
 
@@ -178,8 +176,6 @@ Content-Length: 1671
   "enableOuterIdentityPrivacy": "Enable Outer Identity Privacy value"
 }
 ```
-
-
 
 
 

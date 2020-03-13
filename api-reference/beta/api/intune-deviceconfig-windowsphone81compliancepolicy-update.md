@@ -1,15 +1,13 @@
 ---
 title: "Update windowsPhone81CompliancePolicy"
 description: "Update the properties of a windowsPhone81CompliancePolicy object."
-author: "rolyon"
+author: "davidmu1"
 localization_priority: Normal
 ms.prod: "Intune"
 doc_type: apiPageType
 ---
 
 # Update windowsPhone81CompliancePolicy
-
-Namespace: microsoft.graph
 
 > **Important:** Microsoft Graph APIs under the /beta version are subject to change; production use is not supported.
 
@@ -134,8 +132,6 @@ Content-Length: 841
   "storageRequireEncryption": true
 }
 ```
-
-
 
 
 

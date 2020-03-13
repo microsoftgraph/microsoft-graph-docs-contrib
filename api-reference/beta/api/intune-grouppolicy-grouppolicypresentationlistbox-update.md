@@ -1,15 +1,13 @@
 ---
 title: "Update groupPolicyPresentationListBox"
 description: "Update the properties of a groupPolicyPresentationListBox object."
-author: "rolyon"
+author: "davidmu1"
 localization_priority: Normal
 ms.prod: "Intune"
 doc_type: apiPageType
 ---
 
 # Update groupPolicyPresentationListBox
-
-Namespace: microsoft.graph
 
 > **Important:** Microsoft Graph APIs under the /beta version are subject to change; production use is not supported.
 
@@ -93,8 +91,6 @@ Content-Length: 278
   "valuePrefix": "Value Prefix value"
 }
 ```
-
-
 
 
 

@@ -1,15 +1,13 @@
 ---
 title: "Update deviceManagementCollectionSettingDefinition"
 description: "Update the properties of a deviceManagementCollectionSettingDefinition object."
-author: "rolyon"
+author: "davidmu1"
 localization_priority: Normal
 ms.prod: "Intune"
 doc_type: apiPageType
 ---
 
 # Update deviceManagementCollectionSettingDefinition
-
-Namespace: microsoft.graph
 
 > **Important:** Microsoft Graph APIs under the /beta version are subject to change; production use is not supported.
 
@@ -158,8 +156,6 @@ Content-Length: 1044
   "elementDefinitionId": "Element Definition Id value"
 }
 ```
-
-
 
 
 

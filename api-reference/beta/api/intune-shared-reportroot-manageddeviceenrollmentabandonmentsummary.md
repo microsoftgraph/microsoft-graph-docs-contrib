@@ -1,15 +1,13 @@
 ---
 title: "managedDeviceEnrollmentAbandonmentSummary function"
 description: "Metadata for Enrollment abandonment summary report"
-author: "rolyon"
+author: "davidmu1"
 localization_priority: Normal
 ms.prod: "intune"
 doc_type: apiPageType
 ---
 
 # managedDeviceEnrollmentAbandonmentSummary function
-
-Namespace: microsoft.graph
 
 > **Important:** APIs under the /beta version in Microsoft Graph are subject to change. Use of these APIs in production applications is not supported.
 
@@ -79,8 +77,6 @@ Content-Length: 123
   }
 }
 ```
-
-
 
 
 

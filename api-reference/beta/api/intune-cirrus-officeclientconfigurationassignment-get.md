@@ -2,14 +2,12 @@
 title: "Get officeClientConfigurationAssignment"
 description: "Read properties and relationships of the officeClientConfigurationAssignment object."
 localization_priority: Normal
-author: "rolyon"
+author: "davidmu1"
 ms.prod: "Intune"
 doc_type: apiPageType
 ---
 
 # Get officeClientConfigurationAssignment
-
-Namespace: microsoft.graph
 
 > **Important:** Microsoft Graph APIs under the /beta version are subject to change; production use is not supported.
 
@@ -75,8 +73,6 @@ Content-Length: 250
   }
 }
 ```
-
-
 
 
 

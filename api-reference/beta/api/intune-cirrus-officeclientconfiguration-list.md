@@ -2,14 +2,12 @@
 title: "List officeClientConfigurations"
 description: "Get all policies."
 localization_priority: Normal
-author: "rolyon"
+author: "davidmu1"
 ms.prod: "Intune"
 doc_type: apiPageType
 ---
 
 # List officeClientConfigurations
-
-Namespace: microsoft.graph
 
 > **Important:** Microsoft Graph APIs under the /beta version are subject to change; production use is not supported.
 
@@ -97,8 +95,6 @@ Content-Length: 1207
   ]
 }
 ```
-
-
 
 
 
