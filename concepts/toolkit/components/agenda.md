@@ -11,13 +11,11 @@ The `mgt-agenda` web component represents events in a user or group calendar. By
 
 ## Example
 
-[jsfiddle example](https://jsfiddle.net/metulev/ojt2c7vp/)
+The following example shows the signed-in user's calendar events displayed using the `mgt-agenda` component. You can use the code editor to see how [properties](#properties) change the behavior of the component.
 
-```html
-<mgt-agenda group-by-day></mgt-agenda>
-```
+<iframe src="https://mgt.dev/iframe.html?id=components-mgt-agenda--simple&source=docs" height="500"></iframe>
 
-![mgt-agenda](./images/mgt-agenda.png)
+[Open this example in mgt.dev](https://mgt.dev/?path=/story/components-mgt-agenda--simple&source=docs)
 
 ## Properties
 
