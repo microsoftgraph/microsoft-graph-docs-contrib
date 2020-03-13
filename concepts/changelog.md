@@ -13,6 +13,12 @@ For details about known issues with Microsoft Graph APIs, see [Known issues](kno
 
 ## March 2020
 
+### Identity and access (Azure AD)
+
+| **Change type** | **Version**   | **Description**                          |
+|:---|:---|:---|
+| Addition | beta | Added the `PrivilegedAccess.Read.AzureResources` application permission for [Privileged Identity Management - Azure resources](/graph/api/resources/privilegedidentitymanagement-resources?view=graph-rest-beta).|
+
 ### Reports | Office 365 usage reports
 
 | **Change type** | **Version** | **Description**                  |
