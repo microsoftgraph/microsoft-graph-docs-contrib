@@ -3,8 +3,8 @@ title: "List governanceRoleDefinitions"
 description: "Get a collection of governanceRoleDefinitions on a resource."
 localization_priority: Normal
 doc_type: apiPageType
-author: ""
-ms.prod: ""
+author: "davidmu1"
+ms.prod: "microsoft-identitiy-platform"
 ---
 
 # List governanceRoleDefinitions

@@ -3,8 +3,8 @@ title: "List governanceRoleAssignments"
 description: "Retrieve a collection of governanceRoleAssignments."
 localization_priority: Normal
 doc_type: apiPageType
-author: ""
-ms.prod: ""
+author: "davidmu1"
+ms.prod: "microsoft-identitiy-platform"
 ---
 
 # List governanceRoleAssignments

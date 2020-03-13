@@ -3,8 +3,8 @@ title: "Get governanceResource"
 description: "Retrieve the properties and relationships of a governanceResource object."
 localization_priority: Normal
 doc_type: apiPageType
-author: ""
-ms.prod: ""
+author: "davidmu1"
+ms.prod: "microsoft-identitiy-platform"
 ---
 
 # Get governanceResource
