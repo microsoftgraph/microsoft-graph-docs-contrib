@@ -9,6 +9,8 @@ ms.prod: "microsoft-identity-platform"
 
 # synchronizationQuarantine resource type
 
+Namespace: microsoft.graph
+
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 Provides information about the quarantine state of a [synchronizationJob](synchronization-synchronizationjob.md).

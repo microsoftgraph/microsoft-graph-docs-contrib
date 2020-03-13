@@ -9,6 +9,8 @@ doc_type: apiPageType
 
 # Add owner
 
+Namespace: microsoft.graph
+
 Add an owner to an [application](../resources/application.md) by posting to the owners collection.
 
 ## Permissions

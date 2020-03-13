@@ -9,6 +9,8 @@ doc_type: apiPageType
 
 # Get namedLocation
 
+Namespace: microsoft.graph
+
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 Retrieve the properties and relationships of a [namedLocation](../resources/namedlocation.md) object.

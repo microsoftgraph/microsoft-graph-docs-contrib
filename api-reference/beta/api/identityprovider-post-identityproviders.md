@@ -9,6 +9,8 @@ ms.prod: "microsoft-identity-platform"
 
 # Create identityProvider
 
+Namespace: microsoft.graph
+
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 Create a new [identityProvider](../resources/identityprovider.md) by specifying display name, identityProvider type, client ID, and client secret.

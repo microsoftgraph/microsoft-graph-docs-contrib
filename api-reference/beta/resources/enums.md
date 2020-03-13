@@ -9,6 +9,8 @@ author: "MSGraphDocsvTeam"
 
 # Enum values
 
+Namespace: microsoft.graph
+
 ### attachmentType values
 
 | Member

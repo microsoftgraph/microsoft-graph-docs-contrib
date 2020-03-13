@@ -9,6 +9,8 @@ doc_type: apiPageType
 
 # List memberOf
 
+Namespace: microsoft.graph
+
 Get [groups](../resources/group.md) and [directory roles](../resources/directoryrole.md) that the user is a direct member of. 
 
 ## Permissions

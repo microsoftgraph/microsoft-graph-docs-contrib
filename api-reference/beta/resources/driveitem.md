@@ -10,6 +10,8 @@ doc_type: resourcePageType
 
 # driveItem resource type
 
+Namespace: microsoft.graph
+
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 The **driveItem** resource represents a file, folder, or other item stored in a drive.

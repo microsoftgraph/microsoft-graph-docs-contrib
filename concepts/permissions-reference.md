@@ -902,7 +902,7 @@ For more complex scenarios involving multiple permissions, see [Permission scena
 |   Permission    |  Display String   |  Description | Admin Consent Required | Microsoft Account supported |
 |:----------------|:------------------|:-------------|:-----------------------|:--------------|
 | _Mail.Read_ |    Read user mail | Allows the app to read email in user mailboxes. | No | Yes
-| _Mail.ReadBasic_ |    Read user basic mail | Allows the app to read email in the signed-in user's mailbox, except for **body**, **bodyPreview**, **uniqueBody**, **attachments**, **extensions**, and any extended properties. Does not include permissions to search messages. | No | Yes
+| _Mail.ReadBasic_ |    Read user basic mail | Allows the app to read email in the signed-in user's mailbox, except for **body**, **bodyPreview**, **uniqueBody**, **attachments**, **extensions**, and any extended properties. Does not include permissions to search messages. | No | No
 | _Mail.ReadWrite_ |    Read and write access to user mail | Allows the app to create, read, update, and delete email in user mailboxes. Does not include permission to send mail.| No | Yes
 | _Mail.Read.Shared_ |    Read user and shared mail | Allows the app to read mail that the user can access, including the user's own and shared mail. | No | No
 | _Mail.ReadWrite.Shared_ |    Read and write user and shared mail | Allows the app to create, read, update, and delete mail that the user has permission to access, including the user's own and shared mail. Does not include permission to send mail. | No | No
@@ -1232,6 +1232,7 @@ For more complex scenarios involving multiple permissions, see [Permission scena
 |   Permission    |  Display String   |  Description | Admin Consent Required | Microsoft Account supported |
 |:----------------|:------------------|:-------------|:-----------------------|:--------------|
 | _Policy.Read.All_ | Read your organization's policies | Allows the app to read your organization's policies on behalf of the signed-in user. | Yes | No |
+| _Policy.ReadWrite.ApplicationConfiguration_ | Read and write your organization's application configuration policies | Allows the app to read and write your organization's application configuration policies on behalf of the signed-in user. | Yes | No |
 | _Policy.ReadWrite.ConditionalAccess_ | Read and write your organization's conditional access policies | Allows the app to read and write your organization's conditional access policies on behalf of the signed-in user. | Yes | No |
 | _Policy.ReadWrite.FeatureRollout_ | Read and write your organization's feature rollout policies | Allows the app to read and write your organization's feature rollout policies on behalf of the signed-in user. Includes abilities to assign and remove users and groups to rollout of a specific feature. | Yes | No |
 | _Policy.ReadWrite.TrustFramework_ | Read and write your organization's trust framework policies | Allows the app to read and write your organization's trust framework policies on behalf of the signed-in user. | Yes | No |
@@ -1241,6 +1242,7 @@ For more complex scenarios involving multiple permissions, see [Permission scena
 |   Permission    |  Display String   |  Description | Admin Consent Required |
 |:-----------------------------|:-----------------------------------------|:-----------------|:-----------------|
 | _Policy.Read.All_ | Read your organization's policies | Allows the app to read all your organization's policies without a signed in user. | Yes |
+| _Policy.Read.ApplicationConfiguration_ | Read your organization's application configuration policies | Allows the app to read all your organization's application configuration policies without a signed in user. | Yes |
 | _Policy.ReadWrite.FeatureRollout_ | Read and write feature rollout policies | Allows the app to read and write feature rollout policies without a signed-in user. Includes abilities to assign and remove users and groups to rollout of a specific feature. | Yes |
 | _Policy.ReadWrite.TrustFramework_ | Read and write your organization's trust framework policies | Allows the app to read and write your organization's trust framework policies without a signed in user. | Yes |
 
@@ -1251,6 +1253,7 @@ The following usages are valid for both delegated and application permissions:
 * _Policy.Read.All_: Read your organization's policies (`GET /policies`)
 * _Policy.Read.All_: Read your organization's trust framework policies (`GET /beta/trustFramework/policies`)
 * _Policy.Read.All_: Read your organization's feature rollout policies (`GET /beta/directory/featureRolloutPolicies`)
+* _Policy.ReadWrite.ApplicationConfiguration: Read and write your organization's application configuration policies (`POST /beta/policies/tokenLifetimePolicies`)
 * _Policy.ReadWrite.ConditionalAccess_: Read and write your organization's conditional access policies (`POST /beta/conditionalAccess/policies`)
 * _Policy.ReadWrite.FeatureRollout_: Read and write your organization's feature rollout policies (`POST /beta/directory/featureRolloutPolicies`)
 * _Policy.ReadWrite.TrustFramework_: Read and write your organization's trust framework policies (`POST /beta/trustFramework/policies`)

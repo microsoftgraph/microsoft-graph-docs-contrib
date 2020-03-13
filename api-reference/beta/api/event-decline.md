@@ -9,6 +9,8 @@ doc_type: apiPageType
 
 # event: decline
 
+Namespace: microsoft.graph
+
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 Decline invitation to the specified [event](../resources/event.md) in a user [calendar](../resources/calendar.md).

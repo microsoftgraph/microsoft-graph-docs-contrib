@@ -9,6 +9,8 @@ ms.prod: "outlook"
 
 # dateTimeTimeZone resource type
 
+Namespace: microsoft.graph
+
 Describes the date, time, and time zone of a point in time.
 
 ## Properties

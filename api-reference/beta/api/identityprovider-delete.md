@@ -9,6 +9,8 @@ ms.prod: "microsoft-identity-platform"
 
 # Delete identityProvider
 
+Namespace: microsoft.graph
+
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 Delete an existing [identityProvider](../resources/identityprovider.md).

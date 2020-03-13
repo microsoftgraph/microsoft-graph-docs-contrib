@@ -9,6 +9,8 @@ doc_type: "apiPageType"
 
 # application: addPassword
 
+Namespace: microsoft.graph
+
 Adds a strong password to an [application](../resources/application.md).
 
 ## Permissions
