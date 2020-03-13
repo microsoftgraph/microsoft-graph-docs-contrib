@@ -49,7 +49,7 @@ If successful, this method returns a `201 Created` response code and a new [unif
 
 ## Examples
 
-### Example 1: Create a role assignment in Microsoft Intune
+### Example 1: Create a role assignment in Intune over two scope groups (which are Azure AD objects)
 
 #### Request
 
