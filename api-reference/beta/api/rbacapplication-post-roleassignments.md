@@ -47,9 +47,11 @@ In the request body, supply a JSON representation of [unifiedRoleAssignment](../
 
 If successful, this method returns a `201 Created` response code and a new [unifiedRoleAssignment](../resources/unifiedroleassignment.md) object in the response body.
 
-## Example
+## Examples
 
-### Request
+### Example 1: Create a role assignment at tenant scope
+
+#### Request
 
 The following is an example of the request. Note the use of the roleTemplateId for roleDefinitionId. roleDefinitionId can be either the service-wide template Id or the directory-specific roleDefinitionId.
 
@@ -70,7 +72,7 @@ Content-type: application/json
 }
 ```
 
-### Response
+#### Response
 
 The following is an example of the response.
 
@@ -92,6 +94,54 @@ Content-type: application/json
     "roleDefinitionId": "c2cf284d-6c41-4e6b-afac-4b80928c9034",
     "principalId": "f8ca5a85-489a-49a0-b555-0a6d81e56f0d",
     "directoryScopeId": "/"
+}
+```
+
+### Example 2 : Create a role assignment over an administrative unit scope
+
+#### Request
+
+The following example assigns a principal User Admin role over an administrative unit.
+
+<!-- {
+  "blockType": "request",
+  "name": "create_unifiedroleassignment_over_administrativeunit"
+}-->
+
+```http
+POST https://graph.microsoft.com/beta/roleManagement/directory/roleAssignments
+Content-type: application/json
+
+{
+    "@odata.type": "#microsoft.graph.unifiedRoleAssignment",
+    "roleDefinitionId": "fe930be7-5e62-47db-91af-98c3a49a38b1", //template id of User Account Administrator
+    "principalId": "f8ca5a85-489a-49a0-b555-0a6d81e56f0d",
+    "directoryScopeId": "5d107bba-d8e2-4e13-b6ae-884be90e5d1a" //object id of an administrative unit
+}
+```
+
+#### Response
+
+The following is an example of the response.
+
+> **Note:** The response object shown here might be shortened for readability. All the properties will be returned from an actual call.
+
+<!-- {
+  "blockType": "response",
+  "truncated": true,
+  "@odata.type": "microsoft.graph.unifiedRoleAssignment"
+} -->
+
+```http
+HTTP/1.1 201 Created
+Content-type: application/json
+
+{
+    "@odata.context": "https://graph.microsoft.com/beta/$metadata#roleManagement/directory/roleAssignments/$entity",
+    "id": "BH21sHQtUEyvox7IA_Eu_mm3jqnUe4lEhvatluHIWb7-1",
+    "roleDefinitionId": "fe930be7-5e62-47db-91af-98c3a49a38b1",
+    "principalId": "f8ca5a85-489a-49a0-b555-0a6d81e56f0d",
+    "directoryScopeId": "5d107bba-d8e2-4e13-b6ae-884be90e5d1a"
 }
 ```
 
