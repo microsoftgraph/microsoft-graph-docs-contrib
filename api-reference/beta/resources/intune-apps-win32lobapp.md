@@ -9,6 +9,8 @@ doc_type: resourcePageType
 
 # win32LobApp resource type
 
+Namespace: microsoft.graph
+
 > **Important:** Microsoft Graph APIs under the /beta version are subject to change; production use is not supported.
 
 > **Note:** The Microsoft Graph API for Intune requires an [active Intune license](https://go.microsoft.com/fwlink/?linkid=839381) for the tenant.
@@ -65,6 +67,7 @@ Inherits from [mobileLobApp](../resources/intune-apps-mobilelobapp.md)
 |returnCodes|[win32LobAppReturnCode](../resources/intune-apps-win32lobappreturncode.md) collection|The return codes for post installation behavior.|
 |msiInformation|[win32LobAppMsiInformation](../resources/intune-apps-win32lobappmsiinformation.md)|The MSI details if this Win32 app is an MSI app.|
 |setupFilePath|String|The relative path of the setup file in the encrypted Win32LobApp package.|
+|installLanguage|String|Not yet documented|
 
 ## Relationships
 |Relationship|Type|Description|
@@ -178,7 +181,8 @@ Here is a JSON representation of the resource.
     "productName": "String",
     "publisher": "String"
   },
-  "setupFilePath": "String"
+  "setupFilePath": "String",
+  "installLanguage": "String"
 }
 ```
 

@@ -9,6 +9,8 @@ doc_type: apiPageType
 
 # Create depEnrollmentProfile
 
+Namespace: microsoft.graph
+
 > **Important:** Microsoft Graph APIs under the /beta version are subject to change; production use is not supported.
 
 > **Note:** The Microsoft Graph API for Intune requires an [active Intune license](https://go.microsoft.com/fwlink/?linkid=839381) for the tenant.
@@ -54,7 +56,7 @@ The following table shows the properties that are required when you create the d
 |enableAuthenticationViaCompanyPortal|Boolean|Indicates to authenticate with Apple Setup Assistant instead of Company Portal. Inherited from [enrollmentProfile](../resources/intune-enrollment-enrollmentprofile.md)|
 |requireCompanyPortalOnSetupAssistantEnrolledDevices|Boolean|Indicates that Company Portal is required on setup assistant enrolled devices Inherited from [enrollmentProfile](../resources/intune-enrollment-enrollmentprofile.md)|
 |isDefault|Boolean|Indicates if this is the default profile|
-|supervisedModeEnabled|Boolean|Supervised mode, True to enable, false otherwise. See https://docs.microsoft.com/en-us/intune/deploy-use/enroll-devices-in-microsoft-intune for additional information.|
+|supervisedModeEnabled|Boolean|Supervised mode, True to enable, false otherwise. See https://docs.microsoft.com/intune/deploy-use/enroll-devices-in-microsoft-intune for additional information.|
 |supportDepartment|String|Support department information|
 |passCodeDisabled|Boolean|Indicates if Passcode setup pane is disabled|
 |isMandatory|Boolean|Indicates if the profile is mandatory|
@@ -181,7 +183,6 @@ Content-Length: 1403
   "enableSharedIPad": true
 }
 ```
-
 
 
 

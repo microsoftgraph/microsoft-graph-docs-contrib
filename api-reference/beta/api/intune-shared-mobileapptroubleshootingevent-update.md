@@ -9,6 +9,8 @@ doc_type: apiPageType
 
 # Update mobileAppTroubleshootingEvent
 
+Namespace: microsoft.graph
+
 > **Important:** APIs under the /beta version in Microsoft Graph are subject to change. Use of these APIs in production applications is not supported.
 
 > **Note:** The Microsoft Graph API for Intune requires an [active Intune license](https://go.microsoft.com/fwlink/?linkid=839381) for the tenant.
@@ -92,6 +94,8 @@ Content-Length: 120
   "id": "77943c10-3c10-7794-103c-9477103c9477"
 }
 ```
+
+
 
 
 

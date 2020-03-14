@@ -9,6 +9,8 @@ doc_type: resourcePageType
 
 # androidWorkProfileCompliancePolicy resource type
 
+Namespace: microsoft.graph
+
 > **Important:** Microsoft Graph APIs under the /beta version are subject to change; production use is not supported.
 
 > **Note:** The Microsoft Graph API for Intune requires an [active Intune license](https://go.microsoft.com/fwlink/?linkid=839381) for the tenant.
@@ -49,6 +51,7 @@ Inherits from [deviceCompliancePolicy](../resources/intune-shared-devicecomplian
 |securityRequireVerifyApps|Boolean|Require the Android Verify apps feature is turned on.|
 |deviceThreatProtectionEnabled|Boolean|Require that devices have enabled device threat protection.|
 |deviceThreatProtectionRequiredSecurityLevel|[deviceThreatProtectionLevel](../resources/intune-deviceconfig-devicethreatprotectionlevel.md)|Require Mobile Threat Protection minimum risk level to report noncompliance. Possible values are: `unavailable`, `secured`, `low`, `medium`, `high`, `notSet`.|
+|advancedThreatProtectionRequiredSecurityLevel|[deviceThreatProtectionLevel](../resources/intune-deviceconfig-devicethreatprotectionlevel.md)|MDATP Require Mobile Threat Protection minimum risk level to report noncompliance. Possible values are: `unavailable`, `secured`, `low`, `medium`, `high`, `notSet`.|
 |securityBlockJailbrokenDevices|Boolean|Devices must not be jailbroken or rooted.|
 |osMinimumVersion|String|Minimum Android version.|
 |osMaximumVersion|String|Maximum Android version.|
@@ -103,6 +106,7 @@ Here is a JSON representation of the resource.
   "securityRequireVerifyApps": true,
   "deviceThreatProtectionEnabled": true,
   "deviceThreatProtectionRequiredSecurityLevel": "String",
+  "advancedThreatProtectionRequiredSecurityLevel": "String",
   "securityBlockJailbrokenDevices": true,
   "osMinimumVersion": "String",
   "osMaximumVersion": "String",

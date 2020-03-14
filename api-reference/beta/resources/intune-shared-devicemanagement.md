@@ -9,6 +9,8 @@ doc_type: resourcePageType
 
 # deviceManagement resource type
 
+Namespace: microsoft.graph
+
 > **Important:** Microsoft Graph APIs under the /beta version are subject to change; production use is not supported.
 
 > **Note:** The Microsoft Graph API for Intune requires an [active Intune license](https://go.microsoft.com/fwlink/?linkid=839381) for the tenant.
@@ -120,18 +122,22 @@ The deviceManagement resource represents a container whose contents vary accordi
 |dataSharingConsents|[dataSharingConsent](../resources/intune-devices-datasharingconsent.md) collection|Data sharing consents.|
 |detectedApps|[detectedApp](../resources/intune-devices-detectedapp.md) collection|The list of detected apps associated with a device.|
 |deviceManagementScripts|[deviceManagementScript](../resources/intune-shared-devicemanagementscript.md) collection|The list of device management scripts associated with the tenant.|
+|deviceShellScripts|[deviceShellScript](../resources/intune-devices-deviceshellscript.md) collection|The list of device shell scripts associated with the tenant.|
 |deviceHealthScripts|[deviceHealthScript](../resources/intune-devices-devicehealthscript.md) collection|The list of device health scripts associated with the tenant.|
 |managedDeviceOverview|[managedDeviceOverview](../resources/intune-devices-manageddeviceoverview.md)|Device overview|
 |managedDevices|[managedDevice](../resources/intune-devices-manageddevice.md) collection|The list of managed devices.|
 |remoteActionAudits|[remoteActionAudit](../resources/intune-devices-remoteactionaudit.md) collection|The list of device remote action audits with the tenant.|
 |windowsMalwareInformation|[windowsMalwareInformation](../resources/intune-devices-windowsmalwareinformation.md) collection|The list of affected malware in the tenant.|
 |mobileAppTroubleshootingEvents|[mobileAppTroubleshootingEvent](../resources/intune-shared-mobileapptroubleshootingevent.md) collection|The collection property of MobileAppTroubleshootingEvent.|
-|userExperienceAnalyticsOverview|[userExperienceAnalyticsOverview](../resources/intune-devices-userexperienceanalyticsoverview.md)|User experience analytics overview|
-|userExperienceAnalyticsBaselines|[userExperienceAnalyticsBaseline](../resources/intune-devices-userexperienceanalyticsbaseline.md) collection|User experience analytics baselines|
-|userExperienceAnalyticsCategories|[userExperienceAnalyticsCategory](../resources/intune-devices-userexperienceanalyticscategory.md) collection|User experience analytics categories|
-|userExperienceAnalyticsDevicePerformance|[userExperienceAnalyticsDevicePerformance](../resources/intune-devices-userexperienceanalyticsdeviceperformance.md) collection|User experience analytics device performance|
-|userExperienceAnalyticsRegressionSummary|[userExperienceAnalyticsRegressionSummary](../resources/intune-devices-userexperienceanalyticsregressionsummary.md)|User experience analytics regression summary|
-|userExperienceAnalyticsDeviceStartupHistory|[userExperienceAnalyticsDeviceStartupHistory](../resources/intune-devices-userexperienceanalyticsdevicestartuphistory.md) collection|User experience analytics device Startup History|
+|userExperienceAnalyticsOverview|userExperienceAnalyticsOverview|User experience analytics overview|
+|userExperienceAnalyticsBaselines|userExperienceAnalyticsBaseline collection|User experience analytics baselines|
+|userExperienceAnalyticsCategories|userExperienceAnalyticsCategory collection|User experience analytics categories|
+|userExperienceAnalyticsDevicePerformance|userExperienceAnalyticsDevicePerformance collection|User experience analytics device performance|
+|userExperienceAnalyticsRegressionSummary|userExperienceAnalyticsRegressionSummary|User experience analytics regression summary|
+|userExperienceAnalyticsDeviceStartupHistory|userExperienceAnalyticsDeviceStartupHistory collection|User experience analytics device Startup History|
+|userExperienceAnalyticsDeviceStartupProcesses|userExperienceAnalyticsDeviceStartupProcess collection|User experience analytics device Startup Processes|
+|userExperienceAnalyticsDeviceStartupProcessPerformance|userExperienceAnalyticsDeviceStartupProcessPerformance collection|User experience analytics device Startup Process Performance|
+|userExperienceAnalyticsStartupScoreHistory|userExperienceAnalyticsStartupScoreHistory collection|User experience analytics device Startup Score History|
 |**Enrollment**|
 |depOnboardingSettings|[depOnboardingSetting](../resources/intune-enrollment-deponboardingsetting.md) collection|This collections of multiple DEP tokens per-tenant.|
 |importedDeviceIdentities|[importedDeviceIdentity](../resources/intune-enrollment-importeddeviceidentity.md) collection|The imported device identities.|

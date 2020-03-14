@@ -9,6 +9,8 @@ doc_type: apiPageType
 
 # Update applePushNotificationCertificate
 
+Namespace: microsoft.graph
+
 > **Important:** Microsoft Graph APIs under the /beta version are subject to change; production use is not supported.
 
 > **Note:** The Microsoft Graph API for Intune requires an [active Intune license](https://go.microsoft.com/fwlink/?linkid=839381) for the tenant.
@@ -53,6 +55,7 @@ The following table shows the properties that are required when you create the [
 |expirationDateTime|DateTimeOffset|The expiration date and time for Apple push notification certificate.|
 |certificateUploadStatus|String|The certificate upload status.|
 |certificateUploadFailureReason|String|The reason the certificate upload failed.|
+|certificateSerialNumber|String|Certificate serial number. This property is read-only.|
 |certificate|String|Not yet documented|
 
 
@@ -67,7 +70,7 @@ Here is an example of the request.
 ``` http
 PATCH https://graph.microsoft.com/beta/deviceManagement/applePushNotificationCertificate
 Content-type: application/json
-Content-length: 416
+Content-length: 481
 
 {
   "@odata.type": "#microsoft.graph.applePushNotificationCertificate",
@@ -76,6 +79,7 @@ Content-length: 416
   "expirationDateTime": "2016-12-31T23:57:57.2481234-08:00",
   "certificateUploadStatus": "Certificate Upload Status value",
   "certificateUploadFailureReason": "Certificate Upload Failure Reason value",
+  "certificateSerialNumber": "Certificate Serial Number value",
   "certificate": "Certificate value"
 }
 ```
@@ -85,7 +89,7 @@ Here is an example of the response. Note: The response object shown here may be 
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 529
+Content-Length: 594
 
 {
   "@odata.type": "#microsoft.graph.applePushNotificationCertificate",
@@ -96,10 +100,10 @@ Content-Length: 529
   "expirationDateTime": "2016-12-31T23:57:57.2481234-08:00",
   "certificateUploadStatus": "Certificate Upload Status value",
   "certificateUploadFailureReason": "Certificate Upload Failure Reason value",
+  "certificateSerialNumber": "Certificate Serial Number value",
   "certificate": "Certificate value"
 }
 ```
-
 
 
 

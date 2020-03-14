@@ -9,6 +9,8 @@ doc_type: apiPageType
 
 # Get userExperienceAnalyticsDeviceStartupHistory
 
+Namespace: microsoft.graph
+
 > **Important:** Microsoft Graph APIs under the /beta version are subject to change; production use is not supported.
 
 > **Note:** The Microsoft Graph API for Intune requires an [active Intune license](https://go.microsoft.com/fwlink/?linkid=839381) for the tenant.
@@ -34,7 +36,7 @@ GET /deviceManagement/userExperienceAnalyticsDeviceStartupHistory/{userExperienc
 ```
 
 ## Optional query parameters
-This method supports the [OData Query Parameters](https://docs.microsoft.com/en-us/graph/query-parameters) to help customize the response.
+This method supports the [OData Query Parameters](/graph/query-parameters) to help customize the response.
 
 ## Request headers
 |Header|Value|
@@ -61,7 +63,7 @@ Here is an example of the response. Note: The response object shown here may be 
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 499
+Content-Length: 631
 
 {
   "value": {
@@ -75,12 +77,14 @@ Content-Length: 499
     "totalBootTimeInMs": 1,
     "groupPolicyLoginTimeInMs": 8,
     "coreLoginTimeInMs": 1,
+    "responsiveDesktopTimeInMs": 9,
     "totalLoginTimeInMs": 2,
-    "isFirstLogin": true
+    "isFirstLogin": true,
+    "isFeatureUpdate": true,
+    "operatingSystemVersion": "Operating System Version value"
   }
 }
 ```
-
 
 
 

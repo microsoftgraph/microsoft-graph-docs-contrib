@@ -9,6 +9,8 @@ doc_type: resourcePageType
 
 # deviceManagementIntentSettingCategory resource type
 
+Namespace: microsoft.graph
+
 > **Important:** Microsoft Graph APIs under the /beta version are subject to change; production use is not supported.
 
 > **Note:** The Microsoft Graph API for Intune requires an [active Intune license](https://go.microsoft.com/fwlink/?linkid=839381) for the tenant.
@@ -32,6 +34,7 @@ Inherits from [deviceManagementSettingCategory](../resources/intune-deviceintent
 |:---|:---|:---|
 |id|String|The category ID Inherited from [deviceManagementSettingCategory](../resources/intune-deviceintent-devicemanagementsettingcategory.md)|
 |displayName|String|The category name Inherited from [deviceManagementSettingCategory](../resources/intune-deviceintent-devicemanagementsettingcategory.md)|
+|hasRequiredSetting|Boolean|The category contains top level required setting Inherited from [deviceManagementSettingCategory](../resources/intune-deviceintent-devicemanagementsettingcategory.md)|
 
 ## Relationships
 |Relationship|Type|Description|
@@ -51,7 +54,8 @@ Here is a JSON representation of the resource.
 {
   "@odata.type": "#microsoft.graph.deviceManagementIntentSettingCategory",
   "id": "String (identifier)",
-  "displayName": "String"
+  "displayName": "String",
+  "hasRequiredSetting": true
 }
 ```
 

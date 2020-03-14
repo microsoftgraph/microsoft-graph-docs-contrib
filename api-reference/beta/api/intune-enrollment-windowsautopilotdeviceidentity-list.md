@@ -9,6 +9,8 @@ doc_type: apiPageType
 
 # List windowsAutopilotDeviceIdentities
 
+Namespace: microsoft.graph
+
 > **Important:** Microsoft Graph APIs under the /beta version are subject to change; production use is not supported.
 
 > **Note:** The Microsoft Graph API for Intune requires an [active Intune license](https://go.microsoft.com/fwlink/?linkid=839381) for the tenant.
@@ -59,7 +61,7 @@ Here is an example of the response. Note: The response object shown here may be 
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 1201
+Content-Length: 1245
 
 {
   "value": [
@@ -84,12 +86,12 @@ Content-Length: 1201
       "skuNumber": "Sku Number value",
       "systemFamily": "System Family value",
       "azureActiveDirectoryDeviceId": "Azure Active Directory Device Id value",
-      "managedDeviceId": "Managed Device Id value"
+      "managedDeviceId": "Managed Device Id value",
+      "displayName": "Display Name value"
     }
   ]
 }
 ```
-
 
 
 

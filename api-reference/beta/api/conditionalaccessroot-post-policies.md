@@ -9,6 +9,8 @@ doc_type: apiPageType
 
 # Create conditionalAccessPolicy
 
+Namespace: microsoft.graph
+
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 Create a new [conditionalAccessPolicy](../resources/conditionalaccesspolicy.md).
@@ -19,12 +21,9 @@ One of the following permissions is required to call this API. To learn more, in
 
 |Permission type                        | Permissions (from least to most privileged)                    |
 |:--------------------------------------|:---------------------------------------------------------------|
-|Delegated (work or school account)     | Policy.ReadWrite.ConditionalAccess and Directory.AccessAsUser.All |
+|Delegated (work or school account)     | Policy.ReadWrite.ConditionalAccess and Application.Read.All |
 |Delegated (personal Microsoft account) | Not supported. |
 |Application                            | Not supported. |
-
->[!NOTE]
->This API requires multiple permissions. For details, see [Known issues](/graph/known-issues#conditional-access-policies-and-named-locations).
 
 ## HTTP request
 
@@ -60,6 +59,8 @@ The following example shows a common request to require multi-factor authenticat
 
 >**Note:** You must set up your trusted locations before using this operation.
 
+
+# [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "create_conditionalaccesspolicy_from_conditionalaccessroot"
@@ -102,6 +103,20 @@ Content-type: application/json
     }
 }
 ```
+# [C#](#tab/csharp)
+[!INCLUDE [sample-code](../includes/snippets/csharp/create-conditionalaccesspolicy-from-conditionalaccessroot-csharp-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [JavaScript](#tab/javascript)
+[!INCLUDE [sample-code](../includes/snippets/javascript/create-conditionalaccesspolicy-from-conditionalaccessroot-javascript-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Objective-C](#tab/objc)
+[!INCLUDE [sample-code](../includes/snippets/objc/create-conditionalaccesspolicy-from-conditionalaccessroot-objc-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+---
+
 
 #### Response
 

@@ -9,6 +9,8 @@ doc_type: apiPageType
 
 # List auditEvents
 
+Namespace: microsoft.graph
+
 > **Important:** Microsoft Graph APIs under the /beta version are subject to change; production use is not supported.
 
 > **Note:** The Microsoft Graph API for Intune requires an [active Intune license](https://go.microsoft.com/fwlink/?linkid=839381) for the tenant.
@@ -58,7 +60,7 @@ Here is an example of the response. Note: The response object shown here may be 
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 1855
+Content-Length: 1873
 
 {
   "value": [
@@ -79,11 +81,11 @@ Content-Length: 1855
         "servicePrincipalName": "Service Principal Name value",
         "ipAddress": "Ip Address value",
         "userId": "User Id value",
-        "scopeTags": [
+        "userRoleScopeTags": [
           {
-            "@odata.type": "microsoft.graph.scopeTagInfo",
-            "scopeTagName": "Scope Tag Name value",
-            "scopeTagId": "Scope Tag Id value"
+            "@odata.type": "microsoft.graph.roleScopeTagInfo",
+            "displayName": "Display Name value",
+            "roleScopeTagId": "Role Scope Tag Id value"
           }
         ]
       },
@@ -114,7 +116,6 @@ Content-Length: 1855
   ]
 }
 ```
-
 
 
 

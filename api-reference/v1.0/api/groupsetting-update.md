@@ -9,6 +9,8 @@ doc_type: apiPageType
 
 # Update a group setting
 
+Namespace: microsoft.graph
+
 Update the properties of a specific group setting object.
 
 ## Permissions
@@ -31,10 +33,10 @@ Update a tenant-wide or group specific setting.
 PATCH /groupSettings/{id}
 PATCH /groups/{id}/settings/{id}
 ```
-## Optional request headers
+## Request headers
 | Name | Description |
 |:-----------|:-----------|
-| Authorization  | Bearer {token}. Required. |
+| Authorization  | {token}. Required. |
 | Content-Type	| application/json	|
 
 ## Request body

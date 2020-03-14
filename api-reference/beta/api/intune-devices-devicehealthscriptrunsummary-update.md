@@ -9,6 +9,8 @@ doc_type: apiPageType
 
 # Update deviceHealthScriptRunSummary
 
+Namespace: microsoft.graph
+
 > **Important:** Microsoft Graph APIs under the /beta version are subject to change; production use is not supported.
 
 > **Note:** The Microsoft Graph API for Intune requires an [active Intune license](https://go.microsoft.com/fwlink/?linkid=839381) for the tenant.
@@ -20,9 +22,9 @@ One of the following permissions is required to call this API. To learn more, in
 
 |Permission type|Permissions (from most to least privileged)|
 |:---|:---|
-|Delegated (work or school account)|DeviceManagementManagedDevices.ReadWrite.All|
+|Delegated (work or school account)|DeviceManagementConfiguration.ReadWrite.All, DeviceManagementConfiguration.Read.All|
 |Delegated (personal Microsoft account)|Not supported.|
-|Application|DeviceManagementManagedDevices.ReadWrite.All|
+|Application|DeviceManagementConfiguration.ReadWrite.All, DeviceManagementConfiguration.Read.All|
 
 ## HTTP Request
 <!-- {
@@ -56,6 +58,7 @@ The following table shows the properties that are required when you create the [
 |issueReoccurredDeviceCount|Int32|Number of devices for which the remediation script executed successfully but failed to resolve the detected issue|
 |remediationScriptErrorDeviceCount|Int32|Number of devices for which the remediation script execution encountered an error and did not complete|
 |lastScriptRunDateTime|DateTimeOffset|Last run time for the script across all devices|
+|issueRemediatedCumulativeDeviceCount|Int32|Number of devices that were remediated over the last 30 days|
 
 
 
@@ -69,7 +72,7 @@ Here is an example of the request.
 ``` http
 PATCH https://graph.microsoft.com/beta/deviceManagement/deviceHealthScripts/{deviceHealthScriptId}/runSummary
 Content-type: application/json
-Content-length: 448
+Content-length: 494
 
 {
   "@odata.type": "#microsoft.graph.deviceHealthScriptRunSummary",
@@ -81,7 +84,8 @@ Content-length: 448
   "remediationSkippedDeviceCount": 13,
   "issueReoccurredDeviceCount": 10,
   "remediationScriptErrorDeviceCount": 1,
-  "lastScriptRunDateTime": "2017-01-01T00:01:17.4310553-08:00"
+  "lastScriptRunDateTime": "2017-01-01T00:01:17.4310553-08:00",
+  "issueRemediatedCumulativeDeviceCount": 4
 }
 ```
 
@@ -90,7 +94,7 @@ Here is an example of the response. Note: The response object shown here may be 
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 497
+Content-Length: 543
 
 {
   "@odata.type": "#microsoft.graph.deviceHealthScriptRunSummary",
@@ -103,10 +107,10 @@ Content-Length: 497
   "remediationSkippedDeviceCount": 13,
   "issueReoccurredDeviceCount": 10,
   "remediationScriptErrorDeviceCount": 1,
-  "lastScriptRunDateTime": "2017-01-01T00:01:17.4310553-08:00"
+  "lastScriptRunDateTime": "2017-01-01T00:01:17.4310553-08:00",
+  "issueRemediatedCumulativeDeviceCount": 4
 }
 ```
-
 
 
 

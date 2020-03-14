@@ -9,6 +9,8 @@ doc_type: resourcePageType
 
 # applePushNotificationCertificate resource type
 
+Namespace: microsoft.graph
+
 > **Important:** Microsoft Graph APIs under the /beta version are subject to change; production use is not supported.
 
 > **Note:** The Microsoft Graph API for Intune requires an [active Intune license](https://go.microsoft.com/fwlink/?linkid=839381) for the tenant.
@@ -32,6 +34,7 @@ Apple push notification certificate.
 |expirationDateTime|DateTimeOffset|The expiration date and time for Apple push notification certificate.|
 |certificateUploadStatus|String|The certificate upload status.|
 |certificateUploadFailureReason|String|The reason the certificate upload failed.|
+|certificateSerialNumber|String|Certificate serial number. This property is read-only.|
 |certificate|String|Not yet documented|
 
 ## Relationships
@@ -55,6 +58,7 @@ Here is a JSON representation of the resource.
   "expirationDateTime": "String (timestamp)",
   "certificateUploadStatus": "String",
   "certificateUploadFailureReason": "String",
+  "certificateSerialNumber": "String",
   "certificate": "String"
 }
 ```

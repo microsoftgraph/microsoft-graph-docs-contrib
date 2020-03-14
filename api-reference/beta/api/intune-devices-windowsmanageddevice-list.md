@@ -9,6 +9,8 @@ doc_type: apiPageType
 
 # List windowsManagedDevices
 
+Namespace: microsoft.graph
+
 > **Important:** Microsoft Graph APIs under the /beta version are subject to change; production use is not supported.
 
 > **Note:** The Microsoft Graph API for Intune requires an [active Intune license](https://go.microsoft.com/fwlink/?linkid=839381) for the tenant.
@@ -60,7 +62,7 @@ Here is an example of the response. Note: The response object shown here may be 
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 8286
+Content-Length: 8419
 
 {
   "value": [
@@ -235,12 +237,14 @@ Content-Length: 8286
       "configurationManagerClientInformation": {
         "@odata.type": "microsoft.graph.configurationManagerClientInformation",
         "clientIdentifier": "Client Identifier value"
-      }
+      },
+      "ethernetMacAddress": "Ethernet Mac Address value",
+      "physicalMemoryInBytes": 5,
+      "processorArchitecture": "x86"
     }
   ]
 }
 ```
-
 
 
 

@@ -9,6 +9,8 @@ doc_type: resourcePageType
 
 # termsAndConditionsAcceptanceStatus resource type
 
+Namespace: microsoft.graph
+
 > **Important:** Microsoft Graph APIs under the /beta version are subject to change; production use is not supported.
 
 > **Note:** The Microsoft Graph API for Intune requires an [active Intune license](https://go.microsoft.com/fwlink/?linkid=839381) for the tenant.
@@ -31,6 +33,7 @@ A termsAndConditionsAcceptanceStatus entity represents the acceptance status of 
 |userDisplayName|String|Display name of the user whose acceptance the entity represents.|
 |acceptedVersion|Int32|Most recent version number of the T&C accepted by the user.|
 |acceptedDateTime|DateTimeOffset|DateTime when the terms were last accepted by the user.|
+|userPrincipalName|String|The userPrincipalName of the User that accepted the term.|
 
 ## Relationships
 |Relationship|Type|Description|
@@ -51,7 +54,8 @@ Here is a JSON representation of the resource.
   "id": "String (identifier)",
   "userDisplayName": "String",
   "acceptedVersion": 1024,
-  "acceptedDateTime": "String (timestamp)"
+  "acceptedDateTime": "String (timestamp)",
+  "userPrincipalName": "String"
 }
 ```
 

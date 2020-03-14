@@ -9,6 +9,8 @@ doc_type: apiPageType
 
 # Get deviceManagementExportJob
 
+Namespace: microsoft.graph
+
 > **Important:** Microsoft Graph APIs under the /beta version are subject to change; production use is not supported.
 
 > **Note:** The Microsoft Graph API for Intune requires an [active Intune license](https://go.microsoft.com/fwlink/?linkid=839381) for the tenant.
@@ -34,7 +36,7 @@ GET /deviceManagement/reports/exportJobs/{deviceManagementExportJobId}
 ```
 
 ## Optional query parameters
-This method supports the [OData Query Parameters](https://docs.microsoft.com/en-us/graph/query-parameters) to help customize the response.
+This method supports the [OData Query Parameters](/graph/query-parameters) to help customize the response.
 
 ## Request headers
 |Header|Value|
@@ -61,7 +63,7 @@ Here is an example of the response. Note: The response object shown here may be 
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 548
+Content-Length: 498
 
 {
   "value": {
@@ -72,9 +74,6 @@ Content-Length: 548
     "select": [
       "Select value"
     ],
-    "orderBy": [
-      "Order By value"
-    ],
     "format": "pdf",
     "snapshotId": "Snapshot Id value",
     "status": "notStarted",
@@ -84,7 +83,6 @@ Content-Length: 548
   }
 }
 ```
-
 
 
 

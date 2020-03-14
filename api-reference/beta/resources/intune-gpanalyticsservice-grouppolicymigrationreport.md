@@ -9,6 +9,8 @@ doc_type: resourcePageType
 
 # groupPolicyMigrationReport resource type
 
+Namespace: microsoft.graph
+
 > **Important:** Microsoft Graph APIs under the /beta version are subject to change; production use is not supported.
 
 > **Note:** The Microsoft Graph API for Intune requires an [active Intune license](https://go.microsoft.com/fwlink/?linkid=839381) for the tenant.
@@ -46,6 +48,7 @@ The Group Policy migration report.
 |Relationship|Type|Description|
 |:---|:---|:---|
 |groupPolicySettingMappings|[groupPolicySettingMapping](../resources/intune-gpanalyticsservice-grouppolicysettingmapping.md) collection|A list of group policy settings to MDM/Intune mappings.|
+|unsupportedGroupPolicyExtensions|[unsupportedGroupPolicyExtension](../resources/intune-gpanalyticsservice-unsupportedgrouppolicyextension.md) collection|A list of unsupported group policy extensions inside the Group Policy Object.|
 
 ## JSON Representation
 Here is a JSON representation of the resource.

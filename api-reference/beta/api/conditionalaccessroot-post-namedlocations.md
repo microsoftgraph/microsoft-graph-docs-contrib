@@ -9,6 +9,8 @@ doc_type: apiPageType
 
 # Create namedLocation
 
+Namespace: microsoft.graph
+
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 Create a new [namedLocation](../resources/namedlocation.md) object.
@@ -19,12 +21,9 @@ One of the following permissions is required to call this API. To learn more, in
 
 | Permission type                        | Permissions (from least to most privileged) |
 |:---------------------------------------|:--------------------------------------------|
-| Delegated (work or school account)     | Policy.ReadWrite.ConditionalAccess and Directory.AccessAsUser.All |
+| Delegated (work or school account)     | Policy.ReadWrite.ConditionalAccess |
 | Delegated (personal Microsoft account) | Not supported. |
 | Application                            | Not supported. |
-
->[!NOTE]
->This API requires multiple permissions. For details, see [Known issues](/graph/known-issues#conditional-access-policies-and-named-locations).
 
 ## HTTP request
 
@@ -56,6 +55,8 @@ If successful, this method returns a `201 Created`response code and a new [ipNam
 #### Request
 
 The following is an example of the request.
+
+# [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "create_namedlocation_from_conditionalaccessroot"
@@ -81,6 +82,16 @@ Content-type: application/json
     ]
 }
 ```
+# [JavaScript](#tab/javascript)
+[!INCLUDE [sample-code](../includes/snippets/javascript/create-namedlocation-from-conditionalaccessroot-javascript-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Objective-C](#tab/objc)
+[!INCLUDE [sample-code](../includes/snippets/objc/create-namedlocation-from-conditionalaccessroot-objc-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+---
+
 
 #### Response
 

@@ -9,6 +9,8 @@ doc_type: apiPageType
 
 # Update windows10EnterpriseModernAppManagementConfiguration
 
+Namespace: microsoft.graph
+
 > **Important:** Microsoft Graph APIs under the /beta version are subject to change; production use is not supported.
 
 > **Note:** The Microsoft Graph API for Intune requires an [active Intune license](https://go.microsoft.com/fwlink/?linkid=839381) for the tenant.
@@ -152,7 +154,6 @@ Content-Length: 1259
   "uninstallBuiltInApps": true
 }
 ```
-
 
 
 

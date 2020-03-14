@@ -9,6 +9,8 @@ doc_type: apiPageType
 
 # summarizeDevicePerformanceDevices function
 
+Namespace: microsoft.graph
+
 > **Important:** Microsoft Graph APIs under the /beta version are subject to change; production use is not supported.
 
 > **Note:** The Microsoft Graph API for Intune requires an [active Intune license](https://go.microsoft.com/fwlink/?linkid=839381) for the tenant.
@@ -65,7 +67,7 @@ Here is an example of the response. Note: The response object shown here may be 
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 636
+Content-Length: 675
 
 {
   "value": [
@@ -84,12 +86,12 @@ Content-Length: 636
       "loginScore": 10,
       "coreLoginTimeInMs": 1,
       "groupPolicyLoginTimeInMs": 8,
-      "deviceCount": 11
+      "deviceCount": 11,
+      "responsiveDesktopTimeInMs": 9
     }
   ]
 }
 ```
-
 
 
 

@@ -9,6 +9,8 @@ doc_type: apiPageType
 
 # Update iosGeneralDeviceConfiguration
 
+Namespace: microsoft.graph
+
 > **Important:** Microsoft Graph APIs under the /beta version are subject to change; production use is not supported.
 
 > **Note:** The Microsoft Graph API for Intune requires an [active Intune license](https://go.microsoft.com/fwlink/?linkid=839381) for the tenant.
@@ -230,11 +232,11 @@ The following table shows the properties that are required when you create the [
 |contactsAllowManagedToUnmanagedWrite|Boolean|Indicates whether or not managed apps can write contacts to unmanaged contacts accounts (iOS 12.0 and later).|
 |contactsAllowUnmanagedToManagedRead|Boolean|Indicates whether or not unmanaged apps can read from managed contacts accounts (iOS 12.0 or later).|
 |cellularBlockPersonalHotspotModification|Boolean|Indicates whether or not to block the user from modifying the personal hotspot setting (iOS 12.2 or later).|
-|siriDisableServerLogging|Boolean|Indicates whether or not server-side Siri logging is disabled (iOS 12.2 or later).|
 |continuousPathKeyboardBlocked|Boolean|Indicates whether or not to block the continuous path keyboard when the device is supervised (iOS 13 or later).|
 |findMyDeviceInFindMyAppBlocked|Boolean|Indicates whether or not to block Find My Device when the device is supervised (iOS 13 or later).|
 |findMyFriendsInFindMyAppBlocked|Boolean|Indicates whether or not to block Find My Friends when the device is supervised (iOS 13 or later).|
 |iTunesBlocked|Boolean|Indicates whether or not to block the iTunes app. Requires a supervised device for iOS 13 and later.|
+|kioskModeAppType|[iosKioskModeAppType](../resources/intune-deviceconfig-ioskioskmodeapptype.md)|Type of app to run in kiosk mode. Possible values are: `notConfigured`, `appStoreApp`, `managedApp`, `builtInApp`.|
 
 
 
@@ -248,7 +250,7 @@ Here is an example of the request.
 ``` http
 PATCH https://graph.microsoft.com/beta/deviceManagement/deviceConfigurations/{deviceConfigurationId}
 Content-type: application/json
-Content-length: 10517
+Content-length: 10518
 
 {
   "@odata.type": "#microsoft.graph.iosGeneralDeviceConfiguration",
@@ -532,11 +534,11 @@ Content-length: 10517
   "contactsAllowManagedToUnmanagedWrite": true,
   "contactsAllowUnmanagedToManagedRead": true,
   "cellularBlockPersonalHotspotModification": true,
-  "siriDisableServerLogging": true,
   "continuousPathKeyboardBlocked": true,
   "findMyDeviceInFindMyAppBlocked": true,
   "findMyFriendsInFindMyAppBlocked": true,
-  "iTunesBlocked": true
+  "iTunesBlocked": true,
+  "kioskModeAppType": "appStoreApp"
 }
 ```
 
@@ -545,7 +547,7 @@ Here is an example of the response. Note: The response object shown here may be 
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 10689
+Content-Length: 10690
 
 {
   "@odata.type": "#microsoft.graph.iosGeneralDeviceConfiguration",
@@ -832,14 +834,13 @@ Content-Length: 10689
   "contactsAllowManagedToUnmanagedWrite": true,
   "contactsAllowUnmanagedToManagedRead": true,
   "cellularBlockPersonalHotspotModification": true,
-  "siriDisableServerLogging": true,
   "continuousPathKeyboardBlocked": true,
   "findMyDeviceInFindMyAppBlocked": true,
   "findMyFriendsInFindMyAppBlocked": true,
-  "iTunesBlocked": true
+  "iTunesBlocked": true,
+  "kioskModeAppType": "appStoreApp"
 }
 ```
-
 
 
 

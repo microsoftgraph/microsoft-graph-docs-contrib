@@ -9,11 +9,13 @@ doc_type: apiPageType
 
 # Get user mailbox settings
 
+Namespace: microsoft.graph
+
 Get the user's [mailboxSettings](../resources/mailboxsettings.md). You can view all mailbox settings, or get specific settings.
 
 Users can set the following settings for their mailboxes through an Outlook client:
 
-- [automatic replies](../resources/automaticrepliessetting.md) (notify people automatically upon 
+- [automatic replies](../resources/automaticrepliessetting.md) (notify people automatically upon
 receipt of their email)
 - date format
 - [locale](../resources/localeinfo.md) (language and country/region)
@@ -21,11 +23,11 @@ receipt of their email)
 - time zone
 - [working hours](../resources/workinghours.md)
 
-Users can set their preferred date and time formats using Outlook on the web. Users can choose one of the supported [short date](https://docs.microsoft.com/en-us/dotnet/standard/base-types/standard-date-and-time-format-strings#ShortDate) or [short time](https://docs.microsoft.com/en-us/dotnet/standard/base-types/standard-date-and-time-format-strings#ShortTime) formats. This `GET` operation returns the format the user has chosen.
+Users can set their preferred date and time formats using Outlook on the web. Users can choose one of the supported [short date](/dotnet/standard/base-types/standard-date-and-time-format-strings#ShortDate) or [short time](/dotnet/standard/base-types/standard-date-and-time-format-strings#ShortTime) formats. This `GET` operation returns the format the user has chosen.
 
-Users can set the time zone they prefer on any Outlook client, by choosing from the [supported time zones](outlookuser-supportedtimezones.md) that their administrator has set up for their mailbox server. The administrator can set up time zones in the Windows time zone format or  [Internet Assigned Numbers Authority (IANA) time zone](https://www.iana.org/time-zones) (also known as Olson time zone) format. The Windows format is the default. 
+Users can set the time zone they prefer on any Outlook client, by choosing from the [supported time zones](outlookuser-supportedtimezones.md) that their administrator has set up for their mailbox server. The administrator can set up time zones in the Windows time zone format or  [Internet Assigned Numbers Authority (IANA) time zone](https://www.iana.org/time-zones) (also known as Olson time zone) format. The Windows format is the default.
 
-This `GET` operation returns the user's preferred time zone in the format that the administrator has set up. If you want that time zone to be in a specific format (Windows or IANA), you can first [update the preferred time zone in that format as a mailbox setting](user-update-mailboxsettings.md). Subsequently you will be able to get the time zone in that format. Alternatively, you can manage the format conversion separately in your app. 
+This `GET` operation returns the user's preferred time zone in the format that the administrator has set up. If you want that time zone to be in a specific format (Windows or IANA), you can first [update the preferred time zone in that format as a mailbox setting](user-update-mailboxsettings.md). Subsequently you will be able to get the time zone in that format. Alternatively, you can manage the format conversion separately in your app.
 
 ## Permissions
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
@@ -90,8 +92,8 @@ If successful, this method returns a `200 OK` response code and one of the follo
 ## Examples
 
 ### Example 1
-#### Request 
-The first example gets all the mailbox settings of the signed-in user's mailbox, which include settings for automatic replies, date format, 
+#### Request
+The first example gets all the mailbox settings of the signed-in user's mailbox, which include settings for automatic replies, date format,
 locale (language and country/region), time format, time zone, and working hours.
 
 <!-- {
@@ -103,7 +105,7 @@ GET https://graph.microsoft.com/v1.0/me/mailboxSettings
 ```
 
 #### Response
-The response includes all the mailbox settings of the signed-in user. 
+The response includes all the mailbox settings of the signed-in user.
 Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.
 <!-- {
   "blockType": "response",
@@ -186,7 +188,7 @@ GET https://graph.microsoft.com/v1.0/me/mailboxSettings/automaticRepliesSetting
 ---
 
 #### Response
-The response includes only the automatic replies settings. 
+The response includes only the automatic replies settings.
 Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.
 <!-- {
   "blockType": "response",
@@ -226,7 +228,7 @@ The third example gets specifically the working hour settings of the signed-in u
 GET https://graph.microsoft.com/v1.0/me/mailboxSettings/workingHours
 ```
 #### Response
-The response includes only the working hours settings. Notice that the user's work hours are in a [custom time zone](../resources/customtimezone.md). 
+The response includes only the working hours settings. Notice that the user's work hours are in a [custom time zone](../resources/customtimezone.md).
 Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.
 <!-- {
   "blockType": "ignored",

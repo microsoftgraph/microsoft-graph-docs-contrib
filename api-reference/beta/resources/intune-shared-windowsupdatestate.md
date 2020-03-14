@@ -9,6 +9,8 @@ doc_type: resourcePageType
 
 # windowsUpdateState resource type
 
+Namespace: microsoft.graph
+
 > **Important:** Microsoft Graph APIs under the /beta version are subject to change; production use is not supported.
 
 > **Note:** The Microsoft Graph API for Intune requires an [active Intune license](https://go.microsoft.com/fwlink/?linkid=839381) for the tenant.
@@ -32,7 +34,7 @@ Not yet documented
 |userId|String|The id of the user.|
 |deviceDisplayName|String|Device display name.|
 |userPrincipalName|String|User principal name.|
-|status|[windowsUpdateStatus](../resources/intune-shared-windowsupdatestatus.md)|Windows udpate status. Possible values are: `upToDate`, `pendingInstallation`, `pendingReboot`, `failed`.|
+|status|[windowsUpdateState](../resources/intune-shared-windowsupdatestate.md)|Windows udpate status. Possible values are: `upToDate`, `pendingInstallation`, `pendingReboot`, `failed`.|
 |qualityUpdateVersion|String|The Quality Update Version of the device.|
 |featureUpdateVersion|String|The current feature update version of the device.|
 |lastScanDateTime|DateTimeOffset|The date time that the Windows Update Agent did a successful scan.|

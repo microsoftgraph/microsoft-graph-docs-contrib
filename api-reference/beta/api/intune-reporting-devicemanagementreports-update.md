@@ -9,6 +9,8 @@ doc_type: apiPageType
 
 # Update deviceManagementReports
 
+Namespace: microsoft.graph
+
 > **Important:** Microsoft Graph APIs under the /beta version are subject to change; production use is not supported.
 
 > **Note:** The Microsoft Graph API for Intune requires an [active Intune license](https://go.microsoft.com/fwlink/?linkid=839381) for the tenant.
@@ -79,7 +81,6 @@ Content-Length: 114
   "id": "d6a697d3-97d3-d6a6-d397-a6d6d397a6d6"
 }
 ```
-
 
 
 

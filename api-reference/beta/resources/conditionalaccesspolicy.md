@@ -9,6 +9,8 @@ doc_type: resourcePageType
 
 # conditionalAccessPolicy resource type
 
+Namespace: microsoft.graph
+
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 Represents an Azure Active Directory conditional access policy. Conditional access policies are custom rules that define an access scenario. For more information, see the [Conditional access documentation](https://docs.microsoft.com/azure/active-directory/conditional-access/).
@@ -35,7 +37,7 @@ Represents an Azure Active Directory conditional access policy. Conditional acce
 |id|String| Specifies the identifier of a conditionalAccessPolicy object. Read-only.|
 |modifiedDateTime| DateTimeOffset|The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 would look like this: `'2014-01-01T00:00:00Z'`. Readonly. |
 |sessionControls|[conditionalAccessSessionControls](conditionalaccesssessioncontrols.md)| Specifies the session controls that are enforced after sign-in. |
-|state|string| Specifies the state of the conditionalAccessPolicy object. Possible values are: `enabled`, `disabled`. Required. |
+|state|string| Specifies the state of the conditionalAccessPolicy object. Possible values are: `enabled`, `disabled`, `enabledForReportingButNotEnforced`. Required. |
 
 ## Relationships
 

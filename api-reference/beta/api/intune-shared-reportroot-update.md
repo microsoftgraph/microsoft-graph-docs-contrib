@@ -9,6 +9,8 @@ doc_type: apiPageType
 
 # Update reportRoot
 
+Namespace: microsoft.graph
+
 > **Important:** APIs under the /beta version in Microsoft Graph are subject to change. Use of these APIs in production applications is not supported.
 
 > **Note:** The Microsoft Graph API for Intune requires an [active Intune license](https://go.microsoft.com/fwlink/?linkid=839381) for the tenant.
@@ -79,6 +81,8 @@ Content-Length: 101
   "id": "9ab6b3dd-b3dd-9ab6-ddb3-b69addb3b69a"
 }
 ```
+
+
 
 
 

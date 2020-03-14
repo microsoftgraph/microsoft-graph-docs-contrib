@@ -9,6 +9,8 @@ doc_type: apiPageType
 
 # List deviceManagementScriptAssignments
 
+Namespace: microsoft.graph
+
 > **Important:** Microsoft Graph APIs under the /beta version are subject to change; production use is not supported.
 
 > **Note:** The Microsoft Graph API for Intune requires an [active Intune license](https://go.microsoft.com/fwlink/?linkid=839381) for the tenant.
@@ -30,7 +32,7 @@ One of the following permissions is required to call this API. To learn more, in
 }
 -->
 ``` http
-GET /deviceManagement/deviceHealthScripts/{deviceHealthScriptId}/assignments
+GET /deviceManagement/deviceShellScripts/{deviceShellScriptId}/assignments
 GET /deviceManagement/deviceManagementScripts/{deviceManagementScriptId}/assignments
 ```
 
@@ -51,7 +53,7 @@ If successful, this method returns a `200 OK` response code and a collection of 
 ### Request
 Here is an example of the request.
 ``` http
-GET https://graph.microsoft.com/beta/deviceManagement/deviceHealthScripts/{deviceHealthScriptId}/assignments
+GET https://graph.microsoft.com/beta/deviceManagement/deviceShellScripts/{deviceShellScriptId}/assignments
 ```
 
 ### Response
@@ -73,7 +75,6 @@ Content-Length: 274
   ]
 }
 ```
-
 
 
 

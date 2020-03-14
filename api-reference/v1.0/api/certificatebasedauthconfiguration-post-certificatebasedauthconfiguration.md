@@ -9,6 +9,8 @@ doc_type: "apiPageType"
 
 # Create certificateBasedAuthConfiguration
 
+Namespace: microsoft.graph
+
 Create a new [certificateBasedAuthConfiguration](../resources/certificateBasedAuthConfiguration.md) object.
 
 > [!NOTE]

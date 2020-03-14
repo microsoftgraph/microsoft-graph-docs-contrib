@@ -8,6 +8,8 @@ doc_type: apiPageType
 ---
 
 # List members
+
+Namespace: microsoft.graph
 Get a list of the group's direct members. A group can have users, organizational contacts, and other groups as members.
 This operation is not transitive.
 
@@ -19,6 +21,8 @@ One of the following permissions is required to call this API. To learn more, in
 |Delegated (work or school account) | User.ReadBasic.All, User.Read.All, Group.Read.All, Directory.Read.All  |
 |Delegated (personal Microsoft account) | Not supported.    |
 |Application | User.Read.All, Group.Read.All, Directory.Read.All |
+
+[!INCLUDE [limited-info](../../includes/limited-info.md)]
 
 ## HTTP request
 <!-- { "blockType": "ignored" } -->
@@ -47,25 +51,25 @@ The following is an example of the request.
 # [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
-  "name": "get_members"
+  "name": "get_group_members"
 }-->
 ```msgraph-interactive
 GET https://graph.microsoft.com/v1.0/groups/{id}/members
 ```
 # [C#](#tab/csharp)
-[!INCLUDE [sample-code](../includes/snippets/csharp/get-members-csharp-snippets.md)]
+[!INCLUDE [sample-code](../includes/snippets/csharp/get-group-members-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [JavaScript](#tab/javascript)
-[!INCLUDE [sample-code](../includes/snippets/javascript/get-members-javascript-snippets.md)]
+[!INCLUDE [sample-code](../includes/snippets/javascript/get-group-members-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Objective-C](#tab/objc)
-[!INCLUDE [sample-code](../includes/snippets/objc/get-members-objc-snippets.md)]
+[!INCLUDE [sample-code](../includes/snippets/objc/get-group-members-objc-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Java](#tab/java)
-[!INCLUDE [sample-code](../includes/snippets/java/get-members-java-snippets.md)]
+[!INCLUDE [sample-code](../includes/snippets/java/get-group-members-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

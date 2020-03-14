@@ -9,6 +9,8 @@ doc_type: apiPageType
 
 # List messages
 
+Namespace: microsoft.graph
+
 Get the messages in the signed-in user's mailbox (including the Deleted Items and Clutter folders).
 
 Depending on the page size and mailbox data, getting messages from a mailbox can incur multiple requests. The default page size is 10 messages. To get the next page of messages, simply apply the entire URL returned in `@odata.nextLink` to the next get-messages request. This URL includes any query parameters you may have specified in the initial request. 
@@ -27,9 +29,9 @@ One of the following permissions is required to call this API. To learn more, in
 
 |Permission type      | Permissions (from least to most privileged)              |
 |:--------------------|:---------------------------------------------------------|
-|Delegated (work or school account) | Mail.Read, Mail.ReadWrite    |
-|Delegated (personal Microsoft account) | Mail.Read, Mail.ReadWrite    |
-|Application | Mail.Read, Mail.ReadWrite |
+|Delegated (work or school account) | Mail.ReadBasic, Mail.Read, Mail.ReadWrite    |
+|Delegated (personal Microsoft account) | Mail.ReadBasic, Mail.Read, Mail.ReadWrite    |
+|Application | Mail.ReadBasic.All, Mail.Read, Mail.ReadWrite |
 
 ## HTTP request
 

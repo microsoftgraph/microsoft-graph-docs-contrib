@@ -9,6 +9,8 @@ doc_type: resourcePageType
 
 # groupPolicySettingMapping resource type
 
+Namespace: microsoft.graph
+
 > **Important:** Microsoft Graph APIs under the /beta version are subject to change; production use is not supported.
 
 > **Note:** The Microsoft Graph API for Intune requires an [active Intune license](https://go.microsoft.com/fwlink/?linkid=839381) for the tenant.
@@ -41,8 +43,9 @@ The Group Policy setting to MDM/Intune mapping.
 |mdmCspName|String|The CSP name this group policy setting maps to.|
 |mdmSettingUri|String|The MDM CSP URI this group policy setting maps to.|
 |mdmMinimumOSVersion|Int32|The minimum OS version this mdm setting supports.|
-|settingType|[groupPolicySettingType](../resources/intune-gpanalyticsservice-grouppolicysettingtype.md)|The setting type (security or admx) of the Group Policy. Possible values are: `unknown`, `policy`, `account`.|
+|settingType|[groupPolicySettingType](../resources/intune-gpanalyticsservice-grouppolicysettingtype.md)|The setting type (security or admx) of the Group Policy. Possible values are: `unknown`, `policy`, `account`, `securityOptions`, `userRightsAssignment`, `auditSetting`, `windowsFirewallSettings`.|
 |isMdmSupported|Boolean|Indicates if the setting is supported by Intune or not|
+|mdmSupportedState|[mdmSupportedState](../resources/intune-gpanalyticsservice-mdmsupportedstate.md)|Indicates if the setting is supported in Mdm or not. Possible values are: `unknown`, `supported`, `unsupported`, `deprecated`.|
 |settingScope|[groupPolicySettingScope](../resources/intune-gpanalyticsservice-grouppolicysettingscope.md)|The scope of the setting. Possible values are: `unknown`, `device`, `user`.|
 |intuneSettingUriList|String collection|The list of Intune Setting URIs this group policy setting maps to|
 
@@ -78,6 +81,7 @@ Here is a JSON representation of the resource.
   "mdmMinimumOSVersion": 1024,
   "settingType": "String",
   "isMdmSupported": true,
+  "mdmSupportedState": "String",
   "settingScope": "String",
   "intuneSettingUriList": [
     "String"

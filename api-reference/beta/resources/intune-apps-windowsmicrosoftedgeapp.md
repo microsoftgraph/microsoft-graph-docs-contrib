@@ -9,6 +9,8 @@ doc_type: resourcePageType
 
 # windowsMicrosoftEdgeApp resource type
 
+Namespace: microsoft.graph
+
 > **Important:** Microsoft Graph APIs under the /beta version are subject to change; production use is not supported.
 
 > **Note:** The Microsoft Graph API for Intune requires an [active Intune license](https://go.microsoft.com/fwlink/?linkid=839381) for the tenant.
@@ -49,6 +51,7 @@ Inherits from [mobileApp](../resources/intune-shared-mobileapp.md)
 |roleScopeTagIds|String collection|List of scope tag ids for this mobile app. Inherited from [mobileApp](../resources/intune-shared-mobileapp.md)|
 |dependentAppCount|Int32|The total number of dependencies the child app has. Inherited from [mobileApp](../resources/intune-shared-mobileapp.md)|
 |channel|[microsoftEdgeChannel](../resources/intune-apps-microsoftedgechannel.md)|The channel to install on target devices. Possible values are: `dev`, `beta`, `stable`.|
+|displayLanguageLocale|String|The language locale to use when the Edge app displays text to the user.|
 
 ## Relationships
 |Relationship|Type|Description|
@@ -95,7 +98,8 @@ Here is a JSON representation of the resource.
     "String"
   ],
   "dependentAppCount": 1024,
-  "channel": "String"
+  "channel": "String",
+  "displayLanguageLocale": "String"
 }
 ```
 

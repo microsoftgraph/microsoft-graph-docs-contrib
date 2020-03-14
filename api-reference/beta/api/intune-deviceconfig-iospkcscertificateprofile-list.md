@@ -9,6 +9,8 @@ doc_type: apiPageType
 
 # List iosPkcsCertificateProfiles
 
+Namespace: microsoft.graph
+
 > **Important:** Microsoft Graph APIs under the /beta version are subject to change; production use is not supported.
 
 > **Note:** The Microsoft Graph API for Intune requires an [active Intune license](https://go.microsoft.com/fwlink/?linkid=839381) for the tenant.
@@ -59,7 +61,7 @@ Here is an example of the response. Note: The response object shown here may be 
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 1903
+Content-Length: 2229
 
 {
   "value": [
@@ -104,12 +106,20 @@ Content-Length: 1903
       "certificationAuthority": "Certification Authority value",
       "certificationAuthorityName": "Certification Authority Name value",
       "certificateTemplateName": "Certificate Template Name value",
-      "subjectAlternativeNameFormatString": "Subject Alternative Name Format String value"
+      "subjectAlternativeNameFormatString": "Subject Alternative Name Format String value",
+      "subjectNameFormatString": "Subject Name Format String value",
+      "certificateStore": "machine",
+      "customSubjectAlternativeNames": [
+        {
+          "@odata.type": "microsoft.graph.customSubjectAlternativeName",
+          "sanType": "emailAddress",
+          "name": "Name value"
+        }
+      ]
     }
   ]
 }
 ```
-
 
 
 

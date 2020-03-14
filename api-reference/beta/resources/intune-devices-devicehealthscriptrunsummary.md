@@ -9,6 +9,8 @@ doc_type: resourcePageType
 
 # deviceHealthScriptRunSummary resource type
 
+Namespace: microsoft.graph
+
 > **Important:** Microsoft Graph APIs under the /beta version are subject to change; production use is not supported.
 
 > **Note:** The Microsoft Graph API for Intune requires an [active Intune license](https://go.microsoft.com/fwlink/?linkid=839381) for the tenant.
@@ -34,6 +36,7 @@ Contains properties for the run summary of a device management script.
 |issueReoccurredDeviceCount|Int32|Number of devices for which the remediation script executed successfully but failed to resolve the detected issue|
 |remediationScriptErrorDeviceCount|Int32|Number of devices for which the remediation script execution encountered an error and did not complete|
 |lastScriptRunDateTime|DateTimeOffset|Last run time for the script across all devices|
+|issueRemediatedCumulativeDeviceCount|Int32|Number of devices that were remediated over the last 30 days|
 
 ## Relationships
 None
@@ -58,7 +61,8 @@ Here is a JSON representation of the resource.
   "remediationSkippedDeviceCount": 1024,
   "issueReoccurredDeviceCount": 1024,
   "remediationScriptErrorDeviceCount": 1024,
-  "lastScriptRunDateTime": "String (timestamp)"
+  "lastScriptRunDateTime": "String (timestamp)",
+  "issueRemediatedCumulativeDeviceCount": 1024
 }
 ```
 

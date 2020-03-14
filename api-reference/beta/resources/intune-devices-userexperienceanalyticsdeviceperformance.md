@@ -9,6 +9,8 @@ doc_type: resourcePageType
 
 # userExperienceAnalyticsDevicePerformance resource type
 
+Namespace: microsoft.graph
+
 > **Important:** Microsoft Graph APIs under the /beta version are subject to change; production use is not supported.
 
 > **Note:** The Microsoft Graph API for Intune requires an [active Intune license](https://go.microsoft.com/fwlink/?linkid=839381) for the tenant.
@@ -42,6 +44,7 @@ The user experience analytics device performance entity contains device boot per
 |coreLoginTimeInMs|Int32|The user experience analytics device core login time in milliseconds.|
 |groupPolicyLoginTimeInMs|Int32|The user experience analytics device group policy login time in milliseconds.|
 |deviceCount|Int64|User experience analytics summarized device count.|
+|responsiveDesktopTimeInMs|Int32|The user experience analytics responsive desktop time in milliseconds.|
 
 ## Relationships
 None
@@ -70,7 +73,8 @@ Here is a JSON representation of the resource.
   "loginScore": 1024,
   "coreLoginTimeInMs": 1024,
   "groupPolicyLoginTimeInMs": 1024,
-  "deviceCount": 1024
+  "deviceCount": 1024,
+  "responsiveDesktopTimeInMs": 1024
 }
 ```
 

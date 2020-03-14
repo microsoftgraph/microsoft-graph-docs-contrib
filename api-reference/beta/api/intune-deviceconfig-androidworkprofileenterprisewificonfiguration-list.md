@@ -9,6 +9,8 @@ doc_type: apiPageType
 
 # List androidWorkProfileEnterpriseWiFiConfigurations
 
+Namespace: microsoft.graph
+
 > **Important:** Microsoft Graph APIs under the /beta version are subject to change; production use is not supported.
 
 > **Note:** The Microsoft Graph API for Intune requires an [active Intune license](https://go.microsoft.com/fwlink/?linkid=839381) for the tenant.
@@ -59,7 +61,7 @@ Here is an example of the response. Note: The response object shown here may be 
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 1922
+Content-Length: 2052
 
 {
   "value": [
@@ -105,12 +107,13 @@ Content-Length: 1922
       "authenticationMethod": "usernameAndPassword",
       "innerAuthenticationProtocolForEapTtls": "challengeHandshakeAuthenticationProtocol",
       "innerAuthenticationProtocolForPeap": "microsoftChapVersionTwo",
-      "outerIdentityPrivacyTemporaryValue": "Outer Identity Privacy Temporary Value value"
+      "outerIdentityPrivacyTemporaryValue": "Outer Identity Privacy Temporary Value value",
+      "proxySettings": "manual",
+      "proxyAutomaticConfigurationUrl": "https://example.com/proxyAutomaticConfigurationUrl/"
     }
   ]
 }
 ```
-
 
 
 

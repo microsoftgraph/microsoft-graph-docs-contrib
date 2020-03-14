@@ -9,6 +9,8 @@ doc_type: resourcePageType
 
 # auditActor resource type
 
+Namespace: microsoft.graph
+
 > **Important:** Microsoft Graph APIs under the /beta version are subject to change; production use is not supported.
 
 > **Note:** The Microsoft Graph API for Intune requires an [active Intune license](https://go.microsoft.com/fwlink/?linkid=839381) for the tenant.
@@ -26,7 +28,7 @@ A class containing the properties for Audit Actor.
 |servicePrincipalName|String|Service Principal Name (SPN).|
 |ipAddress|String|IPAddress.|
 |userId|String|User Id.|
-|scopeTags|[scopeTagInfo](../resources/intune-auditing-scopetaginfo.md) collection|List of user scope tags when the audit was performed.|
+|userRoleScopeTags|[roleScopeTagInfo](../resources/intune-auditing-rolescopetaginfo.md) collection|List of user scope tags when the audit was performed.|
 
 ## Relationships
 None
@@ -51,11 +53,11 @@ Here is a JSON representation of the resource.
   "servicePrincipalName": "String",
   "ipAddress": "String",
   "userId": "String",
-  "scopeTags": [
+  "userRoleScopeTags": [
     {
-      "@odata.type": "microsoft.graph.scopeTagInfo",
-      "scopeTagName": "String",
-      "scopeTagId": "String"
+      "@odata.type": "microsoft.graph.roleScopeTagInfo",
+      "displayName": "String",
+      "roleScopeTagId": "String"
     }
   ]
 }

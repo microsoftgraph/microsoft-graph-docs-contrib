@@ -9,6 +9,8 @@ doc_type: apiPageType
 
 # List androidWorkProfileCompliancePolicies
 
+Namespace: microsoft.graph
+
 > **Important:** Microsoft Graph APIs under the /beta version are subject to change; production use is not supported.
 
 > **Note:** The Microsoft Graph API for Intune requires an [active Intune license](https://go.microsoft.com/fwlink/?linkid=839381) for the tenant.
@@ -58,7 +60,7 @@ Here is an example of the response. Note: The response object shown here may be 
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 1620
+Content-Length: 1687
 
 {
   "value": [
@@ -85,6 +87,7 @@ Content-Length: 1620
       "securityRequireVerifyApps": true,
       "deviceThreatProtectionEnabled": true,
       "deviceThreatProtectionRequiredSecurityLevel": "secured",
+      "advancedThreatProtectionRequiredSecurityLevel": "secured",
       "securityBlockJailbrokenDevices": true,
       "osMinimumVersion": "Os Minimum Version value",
       "osMaximumVersion": "Os Maximum Version value",
@@ -99,7 +102,6 @@ Content-Length: 1620
   ]
 }
 ```
-
 
 
 

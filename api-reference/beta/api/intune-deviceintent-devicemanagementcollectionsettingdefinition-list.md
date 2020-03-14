@@ -9,6 +9,8 @@ doc_type: apiPageType
 
 # List deviceManagementCollectionSettingDefinitions
 
+Namespace: microsoft.graph
+
 > **Important:** Microsoft Graph APIs under the /beta version are subject to change; production use is not supported.
 
 > **Note:** The Microsoft Graph API for Intune requires an [active Intune license](https://go.microsoft.com/fwlink/?linkid=839381) for the tenant.
@@ -61,7 +63,7 @@ Here is an example of the response. Note: The response object shown here may be 
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 985
+Content-Length: 1213
 
 {
   "value": [
@@ -72,13 +74,17 @@ Content-Length: 985
       "displayName": "Display Name value",
       "isTopLevel": true,
       "description": "Description value",
+      "placeholderText": "Placeholder Text value",
       "documentationUrl": "https://example.com/documentationUrl/",
       "keywords": [
         "Keywords value"
       ],
       "constraints": [
         {
-          "@odata.type": "microsoft.graph.deviceManagementSettingXmlConstraint"
+          "@odata.type": "microsoft.graph.deviceManagementSettingAppConstraint",
+          "supportedTypes": [
+            "Supported Types value"
+          ]
         }
       ],
       "dependencies": [
@@ -87,7 +93,10 @@ Content-Length: 985
           "definitionId": "Definition Id value",
           "constraints": [
             {
-              "@odata.type": "microsoft.graph.deviceManagementSettingXmlConstraint"
+              "@odata.type": "microsoft.graph.deviceManagementSettingAppConstraint",
+              "supportedTypes": [
+                "Supported Types value"
+              ]
             }
           ]
         }
@@ -97,7 +106,6 @@ Content-Length: 985
   ]
 }
 ```
-
 
 
 

@@ -9,6 +9,8 @@ doc_type: resourcePageType
 
 # deviceEnrollmentPlatformRestrictionsConfiguration resource type
 
+Namespace: microsoft.graph
+
 > **Important:** Microsoft Graph APIs under the /beta version are subject to change; production use is not supported.
 
 > **Note:** The Microsoft Graph API for Intune requires an [active Intune license](https://go.microsoft.com/fwlink/?linkid=839381) for the tenant.
@@ -73,49 +75,70 @@ Here is a JSON representation of the resource.
     "platformBlocked": true,
     "personalDeviceEnrollmentBlocked": true,
     "osMinimumVersion": "String",
-    "osMaximumVersion": "String"
+    "osMaximumVersion": "String",
+    "blockedManufacturers": [
+      "String"
+    ]
   },
   "windowsRestriction": {
     "@odata.type": "microsoft.graph.deviceEnrollmentPlatformRestriction",
     "platformBlocked": true,
     "personalDeviceEnrollmentBlocked": true,
     "osMinimumVersion": "String",
-    "osMaximumVersion": "String"
+    "osMaximumVersion": "String",
+    "blockedManufacturers": [
+      "String"
+    ]
   },
   "windowsMobileRestriction": {
     "@odata.type": "microsoft.graph.deviceEnrollmentPlatformRestriction",
     "platformBlocked": true,
     "personalDeviceEnrollmentBlocked": true,
     "osMinimumVersion": "String",
-    "osMaximumVersion": "String"
+    "osMaximumVersion": "String",
+    "blockedManufacturers": [
+      "String"
+    ]
   },
   "androidRestriction": {
     "@odata.type": "microsoft.graph.deviceEnrollmentPlatformRestriction",
     "platformBlocked": true,
     "personalDeviceEnrollmentBlocked": true,
     "osMinimumVersion": "String",
-    "osMaximumVersion": "String"
+    "osMaximumVersion": "String",
+    "blockedManufacturers": [
+      "String"
+    ]
   },
   "androidForWorkRestriction": {
     "@odata.type": "microsoft.graph.deviceEnrollmentPlatformRestriction",
     "platformBlocked": true,
     "personalDeviceEnrollmentBlocked": true,
     "osMinimumVersion": "String",
-    "osMaximumVersion": "String"
+    "osMaximumVersion": "String",
+    "blockedManufacturers": [
+      "String"
+    ]
   },
   "macRestriction": {
     "@odata.type": "microsoft.graph.deviceEnrollmentPlatformRestriction",
     "platformBlocked": true,
     "personalDeviceEnrollmentBlocked": true,
     "osMinimumVersion": "String",
-    "osMaximumVersion": "String"
+    "osMaximumVersion": "String",
+    "blockedManufacturers": [
+      "String"
+    ]
   },
   "macOSRestriction": {
     "@odata.type": "microsoft.graph.deviceEnrollmentPlatformRestriction",
     "platformBlocked": true,
     "personalDeviceEnrollmentBlocked": true,
     "osMinimumVersion": "String",
-    "osMaximumVersion": "String"
+    "osMaximumVersion": "String",
+    "blockedManufacturers": [
+      "String"
+    ]
   }
 }
 ```

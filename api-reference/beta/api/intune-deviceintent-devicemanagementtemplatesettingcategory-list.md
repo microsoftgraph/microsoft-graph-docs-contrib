@@ -9,6 +9,8 @@ doc_type: apiPageType
 
 # List deviceManagementTemplateSettingCategories
 
+Namespace: microsoft.graph
+
 > **Important:** Microsoft Graph APIs under the /beta version are subject to change; production use is not supported.
 
 > **Note:** The Microsoft Graph API for Intune requires an [active Intune license](https://go.microsoft.com/fwlink/?linkid=839381) for the tenant.
@@ -58,19 +60,19 @@ Here is an example of the response. Note: The response object shown here may be 
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 215
+Content-Length: 250
 
 {
   "value": [
     {
       "@odata.type": "#microsoft.graph.deviceManagementTemplateSettingCategory",
       "id": "cd213562-3562-cd21-6235-21cd623521cd",
-      "displayName": "Display Name value"
+      "displayName": "Display Name value",
+      "hasRequiredSetting": true
     }
   ]
 }
 ```
-
 
 
 

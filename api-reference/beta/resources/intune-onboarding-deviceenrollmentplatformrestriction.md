@@ -9,6 +9,8 @@ doc_type: resourcePageType
 
 # deviceEnrollmentPlatformRestriction resource type
 
+Namespace: microsoft.graph
+
 > **Important:** Microsoft Graph APIs under the /beta version are subject to change; production use is not supported.
 
 > **Note:** The Microsoft Graph API for Intune requires an [active Intune license](https://go.microsoft.com/fwlink/?linkid=839381) for the tenant.
@@ -22,6 +24,7 @@ Platform specific enrollment restrictions
 |personalDeviceEnrollmentBlocked|Boolean|Block personally owned devices from enrolling|
 |osMinimumVersion|String|Min OS version supported|
 |osMaximumVersion|String|Max OS version supported|
+|blockedManufacturers|String collection|Collection of blocked Manufacturers.|
 
 ## Relationships
 None
@@ -39,7 +42,10 @@ Here is a JSON representation of the resource.
   "platformBlocked": true,
   "personalDeviceEnrollmentBlocked": true,
   "osMinimumVersion": "String",
-  "osMaximumVersion": "String"
+  "osMaximumVersion": "String",
+  "blockedManufacturers": [
+    "String"
+  ]
 }
 ```
 
