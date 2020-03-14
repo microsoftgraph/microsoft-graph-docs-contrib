@@ -13,7 +13,7 @@ For details about known issues with Microsoft Graph APIs, see [Known issues](kno
 
 ## March 2020
 
-### Calendar (Outlook)
+### Calendar
 
 | **Change type** | **Version**   | **Description**                          |
 | :-------------- | :------------ | :--------------------------------------- |
@@ -26,21 +26,26 @@ For details about known issues with Microsoft Graph APIs, see [Known issues](kno
 | Addition | v1.0 | Added the **isTallyingResponses** property to the [calendar](/graph/api/resources/calendar?view=graph-rest-1.0) entity. |
 | Addition | v1.0 | Added the **isRemovable** property to the [calendar](/graph/api/resources/calendar?view=graph-rest-1.0) entity. |
 | Addition | v1.0 | Added the **delegateMeetingMessageDeliveryOptions** property to the [mailboxSettings](/graph/api/resources/mailboxSettings?view=graph-rest-1.0) entity. |
+| Addition | Beta | Added the **calendarGroupId** property to the [calendar](/graph/api/resources/calendar?view=graph-rest-beta) entity. |
+| Addition | Beta | Added the **isDraft** property to the [event](/graph/api/resources/event?view=graph-rest-beta) entity. |
 
-### Mail (Outlook)
+### Identity and access (Azure AD)
 
 | **Change type** | **Version**   | **Description**                          |
-| :-------------- | :------------ | :--------------------------------------- |
-| Addition        | V1.0          | [Adding file attachments up to 150MB](outlook-large-attachments.md) to a [message](/graph/api/resources/message?view=graph-rest-1.0) instance. |
-| Addition        | V1.0          | The [attachmentItem](/graph/api/resources/attachmentitem?view=graph-rest-1.0) complex type, [createUploadSession](/graph/api/attachment-createuploadsession?view=graph-rest-1.0) action for the [attachment](/graph/api/resources/attachment?view=graph-rest-1.0) entity, and the **attachmentType** enumeration. |
-| Changed         | V1.0          | Extended the existing [uploadSession](/graph/api/resources/uploadsession?view=graph-rest-1.0) entity that has been used by [driveItem](/graph/api/resources/driveitem?view=graph-rest-1.0) to apply to **attachment** as well. |
+|:---|:---|:---|
+| Addition | beta | Added the PrivilegedAccess.Read.AzureResources application permission for [Privileged Identity Management - Azure resources](/graph/api/resources/privilegedidentitymanagement-resources?view=graph-rest-beta).|
+
+### Reports | Office 365 usage reports
+
+| **Change type** | **Version** | **Description**                  |
+|:----------------|:------------|:-----------------------------------------|
+| Change          | beta and v1.0  | For delegated permissions to allow apps to read Office 365 service usage reports on behalf of a user, added Teams Service Administrator and Teams Communications Administrator as accepted user roles. For more details, see [Authorization for APIs to read Office 365 usage reports](reportroot-authorization.md).|
 
 ### Teamwork (Microsoft Teams)
 
 | **Change type** | **Version** | **Description**                          |
 | :-------------- | :---------- | :--------------------------------------- |
 | Addition | Beta | Added Support for ChannelMessage.Read.All to APIs for reading [chatMessages](/graph/api/resources/chatmessage?view=graph-rest-beta) in channels. |
-
 
 ## February 2020
 

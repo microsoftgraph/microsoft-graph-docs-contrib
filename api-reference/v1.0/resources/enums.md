@@ -7,15 +7,6 @@ ms.prod: ""
 doc_type: enumPageType
 ---
 
-### attachmentType values
-
-| Member
-|:--------------
-| file
-| item
-| reference
-
-
 ### contactRelationship values
 
 |Member|Value|Description|
