@@ -137,6 +137,7 @@ This link does not grant any additional privileges to the user.
   },
   "expirationDateTime": "0001-01-01T00:00:00Z"
 }
+```
 
 ### Sharing Invitation
 In addition to creating sharing links, a user can be invited by e-mail address.
