@@ -86,7 +86,7 @@ If successful, this method returns a `200 OK` response code and updated [event](
 
 ## Example
 
-#### Request
+### Request
 
 Here is an example of the request.
 
@@ -130,7 +130,7 @@ Content-length: 285
 ---
 
 
-#### Response
+### Response
 
 Here is an example of the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.
 <!-- {
