@@ -79,7 +79,6 @@ Looking for the API reference for this service?
   - [Getting shared messages](outlook-share-messages-folders.md)
   - How to [send mail from another user](outlook-send-mail-from-other-user.md)
   - [Getting immutable identifiers for Outlook resources](outlook-immutable-id.md)
-  
 
 - Find out more about [using the mail API](/graph/api/resources/mail-api-overview?view=graph-rest-1.0) and its [use cases](/graph/api/resources/mail-api-overview?view=graph-rest-1.0#common-use-cases) in Microsoft Graph v1.0.
 
