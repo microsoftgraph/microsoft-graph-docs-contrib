@@ -12,6 +12,11 @@ See highlights of what's new in Microsoft Graph, and how you can [share your ide
 > [!IMPORTANT]
 > Features, including APIs and tools, in _preview_ status may change without notice, and some may never be promoted to generally available (GA) status. Do not use preview features in production apps.
 
+## March 2020: New and generally available
+
+## March 2020: New in preview
+
+
 ## February 2020: New and generally available
 
 ### Calendar
@@ -25,22 +30,6 @@ To improve security when subscribing to [change notifications of user data](webh
 ### Calendar
 See [tasks supported by preview APIs that manage calendar sharing and delegation](outlook-share-or-delegate-calendar.md).
 
-
-## January 2020: New and generally available
-
-### Security
-As part of customer alert management, use the [update alert](/graph/api/alert-update?view=graph-rest-1.0) method and update the **comments** field as either `Closed in IPC` or `Closed in MCAS`.
-
-### Teamwork
-Use the **primaryChannel** navigation property of a [team](/graph/api/resources/team?view=graph-rest-1.0) to access its default channel, **General**.
-
-### Users
-Use the **identities** property to access one or more identities that a [user](/graph/api/resources/user?view=graph-rest-1.0) can use to sign in to an Azure AD user account. The identities can be provided by Microsoft, organizations, or social identity providers such as Facebook, Google, or Microsoft. This property allows the user to sign in to the user account with any of these identities.
-
-## January 2020: New in preview
-
-### Devices and apps
-Intune [January](changelog.md#january-2020) updates.
 
 <!--
 ### Identity and access
