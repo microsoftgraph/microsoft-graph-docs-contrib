@@ -20,7 +20,7 @@ Use Teams Service Administrator and Teams Communications Administrator as accept
 ## March 2020: New in preview only
 
 ### Teamwork
-Use the `ChannelMessage.Read.All` application-level permission to read [chatMessage](/graph/api/resources/chatmessage?view=graph-rest-beta) instances in channels without a signed-in user present.
+Use the `ChannelMessage.Read.All` application-level permission to read [chatMessage](/graph/api/resources/chatmessage?view=graph-rest-beta) instances in channels without a signed-in user.
 
 ## February 2020: New and generally available
 
