@@ -19,6 +19,13 @@ Use Teams Service Administrator and Teams Communications Administrator as accept
 
 ## March 2020: New in preview only
 
+### Calendar
+- Use the **calendarGroupId** property to get the [calendar group](/graph/api/resources/calendargroup?view=graph-rest-beta) in which a [calendar](/graph/api/resources/calendar?view=graph-rest-beta) has been created.
+- Use the **isDraft** property to identify an [event](/graph/api/resources/event?view=graph-rest-beta) as a meeting that the user has updated in Outlook but has not sent to update attendees.
+
+### Identity and access
+Use the `PrivilegedAccess.Read.AzureResources` application-level permission for [Privileged Identity Management (PIM) of Azure resources](/graph/api/resources/privilegedidentitymanagement-resources?view=graph-rest-beta), to set up just-in-time access workflow for Azure infrastructure roles at a management group, subscription, resource group, or resource level.
+
 ### Teamwork
 Use the `ChannelMessage.Read.All` application-level permission to read [chatMessage](/graph/api/resources/chatmessage?view=graph-rest-beta) instances in channels without a signed-in user.
 
