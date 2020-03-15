@@ -11,16 +11,11 @@ You can use `mgt-get` to make any GET query from Microsoft Graph directly in you
 
 ## Example
 
-```html
-<mgt-get resource="/me/messages" version="beta" scopes="mail.read" max-pages="2">
-  <template>
-    emails: {{value.length}}
-  </template>
-  <template data-type="loading">
-    loading
-  </template>
-</mgt-get>
-```
+The following example shows the use of the `mgt-get` component to display a user's emails. You can use the code editor to see how [properties and attributes](#properties-and-attributes) change the behavior of the component.
+
+<iframe src="https://mgt.dev/iframe.html?id=components-mgt-get--get-email&source=docs" height="500"></iframe>
+
+[Open this example in mgt.dev](https://mgt.dev/?path=/story/components-mgt-get--get-email&source=docs)
 
 ## Properties and attributes
 
