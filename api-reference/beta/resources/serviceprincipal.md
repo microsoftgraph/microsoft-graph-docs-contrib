@@ -9,6 +9,8 @@ author: "davidmu1"
 
 # servicePrincipal resource type
 
+Namespace: microsoft.graph
+
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 Represents an instance of an application in a directory. Inherits from [directoryObject](directoryobject.md).

@@ -916,7 +916,7 @@
         - name: Get
           href: api/onlinemeeting-get.md
         - name: Delete
-          href: api/onlinemeeting-delete.md          
+          href: api/onlinemeeting-delete.md
       - name: Presence
         href: resources/presence.md
         items:
@@ -924,6 +924,14 @@
           href: api/presence-get.md
         - name: Get presence for multiple users
           href: api/cloudcommunications-getpresencesbyuserid.md
+      - name: Call records (preview)
+        items:
+        - name: Overview
+          href: resources/callrecords-api-overview.md
+        - name: Call record
+          href: resources/callrecords-callrecord.md
+        - name: Get call record
+          href: api/callrecords-callrecord-get.md
     - name: Cross-device experiences
       displayName: Project Rome
       items:
@@ -8005,6 +8013,8 @@
       - name: Category
         href: resources/educationcategory.md
         items:
+        - name: Create category
+          href: api/educationclass-post-category.md
         - name: Get category
           href: api/educationcategory-get.md
         - name: Delete category
@@ -8012,6 +8022,8 @@
       - name: Rubric
         href: resources/educationrubric.md
         items:
+        - name: Create rubric
+          href: api/educationuser-post-rubrics.md
         - name: Get rubric
           href: api/educationrubric-get.md
         - name: Update rubric
@@ -8850,7 +8862,7 @@
           - name: Create
             href: api/accesspackageresourcerequest-post.md
         - name: Access package resource role scope
-          href: resources/accesspackageresourcerequest.md
+          href: resources/accesspackageresourcerolescope.md
           items:
           - name: List
             href: api/accesspackage-list-accesspackageresourcerolescopes.md
@@ -9128,6 +9140,21 @@
             href: api/homerealmdiscoverypolicy-delete.md
           - name: List applied to applications
             href: api/homerealmdiscoverypolicy-list-appliesto.md
+        - name: Token issuance policy
+          href: resources/tokenissuancepolicy.md
+          items:
+          - name: Create
+            href: api/tokenissuancepolicy-post-tokenissuancepolicy.md
+          - name: List
+            href: api/tokenissuancepolicy-list.md
+          - name: Get
+            href: api/tokenissuancepolicy-get.md
+          - name: Update
+            href: api/tokenissuancepolicy-update.md
+          - name: Delete
+            href: api/tokenissuancepolicy-delete.md
+          - name: List applied to applications
+            href: api/tokenissuancepolicy-list-appliesto.md
         - name: Token lifetime policy
           href: resources/tokenlifetimepolicy.md
           items:

@@ -9,6 +9,8 @@ doc_type: apiPageType
 
 # List owners
 
+Namespace: microsoft.graph
+
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 Retrieve a list of owners for an application that are [directoryObject](../resources/directoryobject.md) objects.

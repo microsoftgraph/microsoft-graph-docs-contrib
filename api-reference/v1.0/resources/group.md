@@ -9,6 +9,8 @@ doc_type: resourcePageType
 
 # group resource type
 
+Namespace: microsoft.graph
+
 Represents an Azure Active Directory (Azure AD) group, which can be an Office 365 group, or a security group.  
 
 Inherits from [directoryObject](directoryobject.md).
