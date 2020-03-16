@@ -1,15 +1,13 @@
 ---
 title: "windowsInformationProtectionDeviceRegistration resource type"
 description: "Represents device registration records for Bring-Your-Own-Device(BYOD) Windows devices."
-author: "rolyon"
+author: "davidmu1"
 localization_priority: Normal
 ms.prod: "Intune"
 doc_type: resourcePageType
 ---
 
 # windowsInformationProtectionDeviceRegistration resource type
-
-Namespace: microsoft.graph
 
 > **Important:** Microsoft Graph APIs under the /beta version are subject to change; production use is not supported.
 

@@ -1,15 +1,13 @@
 ---
 title: "Get iosVppEBookAssignment"
 description: "Read properties and relationships of the iosVppEBookAssignment object."
-author: "rolyon"
+author: "davidmu1"
 localization_priority: Normal
 ms.prod: "Intune"
 doc_type: apiPageType
 ---
 
 # Get iosVppEBookAssignment
-
-Namespace: microsoft.graph
 
 > **Important:** Microsoft Graph APIs under the /beta version are subject to change; production use is not supported.
 
@@ -76,7 +74,6 @@ Content-Length: 273
   }
 }
 ```
-
 
 
 
