@@ -1,6 +1,6 @@
 ---
 title: "teleconferenceDeviceVideoQuality resource type"
-description: "Video teleconferencing device video quality data."
+description: "Represents video teleconferencing device video quality data."
 localization_priority: Normal
 author: "dongkyun"
 ms.prod: "cloud-communications"
@@ -9,13 +9,15 @@ doc_type: "resourcePageType"
 
 # teleconferenceDeviceVideoQuality resource type
 
+Namespace: microsoft.graph
+
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Video teleconferencing device video quality data.
+Represents video teleconferencing device video quality data.
 
 ## Properties
 
-teleconferenceDeviceVideoQuality inherits the properties from [teleconferenceDeviceMediaQuality](teleconferencedevicemediaquality.md).  The following list is the additional properties.
+The **teleconferenceDeviceVideoQuality** resource inherits the properties from [teleconferenceDeviceMediaQuality](teleconferencedevicemediaquality.md), and includes the following additional properties.
 
 | Property     | Type        | Description |
 |:-------------|:------------|:------------|

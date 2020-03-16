@@ -9,9 +9,11 @@ doc_type: "resourcePageType"
 
 # teleconferenceDeviceMediaQuality resource type
 
+Namespace: microsoft.graph
+
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Video teleconferencing device media quality data.
+Represents video teleconferencing device media quality data.
 
 ## Properties
 

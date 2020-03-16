@@ -1,6 +1,6 @@
 ---
 title: "teleconferenceDeviceScreenSharingQuality resource type"
-description: "Video teleconferencing device screen sharing quality data."
+description: "Represents video teleconferencing device screen-sharing quality data."
 localization_priority: Normal
 author: "dongkyun"
 ms.prod: "cloud-communications"
@@ -9,13 +9,15 @@ doc_type: "resourcePageType"
 
 # teleconferenceDeviceScreenSharingQuality resource type
 
+Namespace: microsoft.graph
+
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Video teleconferencing device screen sharing quality data.
+Represents video teleconferencing device screen-sharing quality data.
 
 ## Properties
 
-teleconferenceDeviceScreenSharingQuality inherits all of the properties from [teleconferenceDeviceVideoQuality](teleconferencedevicevideoquality.md).
+The **teleconferenceDeviceScreenSharingQuality** inherits all the properties from [teleconferenceDeviceVideoQuality](teleconferencedevicevideoquality.md).
 
 ## JSON representation
 

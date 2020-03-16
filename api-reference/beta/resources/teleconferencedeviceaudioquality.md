@@ -9,13 +9,15 @@ doc_type: "resourcePageType"
 
 # teleconferenceDeviceAudioQuality resource type
 
+Namespace: microsoft.graph
+
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Video teleconferencing device audio quality data.
+Represents video teleconferencing device audio quality data.
 
 ## Properties
 
-teleconferenceDeviceAudioQuality inherits all of the properties from [teleconferenceDeviceMediaQuality](teleconferencedevicemediaquality.md).
+**teleconferenceDeviceAudioQuality** inherits all the properties of the [teleconferenceDeviceMediaQuality](teleconferencedevicemediaquality.md) resource.
 
 ## JSON representation
 
