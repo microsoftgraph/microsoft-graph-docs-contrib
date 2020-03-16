@@ -42,7 +42,7 @@ POST /me/onlineMeetings
 |:--------------|:--------------------------|
 | Authorization | Bearer {token}. Required. |
 | Content-type  | application/json. Required. |
-| Accept-Language  | <language>. Optional. |
+| Accept-Language  | Language. Optional. |
 
 If the request contains an 'Accept-Language' HTTP header, the `content` of `joinInformation` will be in the language and locale variant specified in 'Accept-Language' request HTTP header. The default content will be in English.
 
