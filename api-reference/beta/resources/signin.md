@@ -49,8 +49,8 @@ Provides details about user or application sign-in activity in your directory.
 |resourceDisplayName|String|The name of the resource that the user signed in to.|
 |resourceId|String|The identifier of the resource that the user signed in to.|
 |riskDetail|riskDetail|The reason behind a specific state of a risky user, sign-in, or a risk event. Possible values: `none`, `adminGeneratedTemporaryPassword`, `userPerformedSecuredPasswordChange`, `userPerformedSecuredPasswordReset`, `adminConfirmedSigninSafe`, `aiConfirmedSigninSafe`, `userPassedMFADrivenByRiskBasedPolicy`, `adminDismissedAllRiskForUser`, `adminConfirmedSigninCompromised`, or `unknownFutureValue`. The value `none` means that no action has been performed on the user or sign-in so far. **Note:** Details for this property are only available for Azure AD Premium P2 customers. All other customers are returned `hidden`.|
-|riskEventTypes|riskEventTypes|The list of risk event types associated with the sign-in. Possible values: `unlikelyTravel`, `anonymizedIPAddress`, `maliciousIPAddress`, `unfamiliarFeatures`, `malwareInfectedIPAddress`, `suspiciousIPAddress`, `leakedCredentials`, `investigationsThreatIntelligence`,  `generic`, or `unknownFutureValue`.|
-|riskEventTypes_v2|riskEventTypes|The list of risk event types associated with the sign-in. Possible values: `unlikelyTravel`, `anonymizedIPAddress`, `maliciousIPAddress`, `unfamiliarFeatures`, `malwareInfectedIPAddress`, `suspiciousIPAddress`, `leakedCredentials`, `investigationsThreatIntelligence`,  `generic`, or `unknownFutureValue`.|
+|riskEventTypes|riskEventType collection|The list of risk event types associated with the sign-in. Possible values: `unlikelyTravel`, `anonymizedIPAddress`, `maliciousIPAddress`, `unfamiliarFeatures`, `malwareInfectedIPAddress`, `suspiciousIPAddress`, `leakedCredentials`, `investigationsThreatIntelligence`,  `generic`, or `unknownFutureValue`.|
+|riskEventTypes_v2|String collection|The list of risk event types associated with the sign-in. Possible values: `unlikelyTravel`, `anonymizedIPAddress`, `maliciousIPAddress`, `unfamiliarFeatures`, `malwareInfectedIPAddress`, `suspiciousIPAddress`, `leakedCredentials`, `investigationsThreatIntelligence`,  `generic`, or `unknownFutureValue`.|
 |riskLevelAggregated|riskLevel|The aggregated risk level. Possible values: `none`, `low`, `medium`, `high`, `hidden`, or `unknownFutureValue`. The value `hidden` means the user or sign-in was not enabled for Azure AD Identity Protection. **Note:** Details for this property are only available for Azure AD Premium P2 customers. All other customers are returned `hidden`.|
 |riskLevelDuringSignIn|riskLevel|The risk level during sign-in. Possible values: `none`, `low`, `medium`, `high`, `hidden`, or `unknownFutureValue`. The value `hidden` means the user or sign-in was not enabled for Azure AD Identity Protection. **Note:** Details for this property are only available for Azure AD Premium P2 customers. All other customers are returned `hidden`.|
 |riskState|riskState|The risk state of a risky user, sign-in, or a risk event. Possible values: `none`, `confirmedSafe`, `remediated`, `dismissed`, `atRisk`, `confirmedCompromised`, or `unknownFutureValue`.|
@@ -105,8 +105,8 @@ Here is a JSON representation of the resource.
   "resourceDisplayName": "String",
   "resourceId": "String",
   "riskDetail": "string",
-  "riskEventTypes": "string",
-  "riskEventTypes_v2": "string",
+  "riskEventTypes": ["string"],
+  "riskEventTypes_v2": ["String"],
   "riskLevelAggregated": "string",
   "riskLevelDuringSignIn": "string",
   "riskState": "string",
