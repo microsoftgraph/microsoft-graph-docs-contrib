@@ -1,6 +1,6 @@
 ---
 title: "teleconferenceDeviceQuality resource type"
-description: "Represents video teleconferencing device session level quality data."
+description: "Represents video teleconferencing device session-level quality data."
 localization_priority: Normal
 author: "dongkyun"
 ms.prod: "cloud-communications"
@@ -13,7 +13,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Represents video teleconferencing device session level quality data.
+Represents video teleconferencing device session-level quality data.
 
 ## Properties
 
