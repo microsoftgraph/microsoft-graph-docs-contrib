@@ -2,10 +2,14 @@
 title: "Enum values"
 description: "Microsoft Graph enumeration values."
 localization_priority: Normal
-author: ""
-ms.prod: ""
+ms.prod: "non-product-specific"
+author: "MSGraphDocsvTeam"
 doc_type: enumPageType
 ---
+
+# Enum values
+
+Namespace: microsoft.graph
 
 ### contactRelationship values
 
