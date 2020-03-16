@@ -44,7 +44,7 @@ POST /me/onlineMeetings
 | Content-type  | application/json. Required. |
 | Accept-Language  | Language. Optional. |
 
-If the request contains an 'Accept-Language' HTTP header, the `content` of `joinInformation` will be in the language and locale variant specified in 'Accept-Language' request HTTP header. The default content will be in English.
+If the request contains an `Accept-Language` HTTP header, the `content` of `joinInformation` will be in the language and locale variant specified in the `Accept-Language` header. The default content will be in English.
 
 ## Request body
 In the request body, supply a JSON representation of an [onlineMeeting](../resources/onlinemeeting.md) object.
