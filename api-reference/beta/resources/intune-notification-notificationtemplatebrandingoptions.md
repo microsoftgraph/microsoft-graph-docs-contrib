@@ -1,15 +1,13 @@
 ---
 title: "notificationTemplateBrandingOptions enum type"
 description: "Branding Options for the Message Template. Branding is defined in the Intune Admin Console."
-author: "rolyon"
+author: "davidmu1"
 localization_priority: Normal
 ms.prod: "Intune"
 doc_type: enumPageType
 ---
 
 # notificationTemplateBrandingOptions enum type
-
-Namespace: microsoft.graph
 
 > **Important:** Microsoft Graph APIs under the /beta version are subject to change; production use is not supported.
 

@@ -1987,6 +1987,8 @@
             href: api/intune-apps-win32lobapp-delete.md
           - name: Update
             href: api/intune-apps-win32lobapp-update.md
+        - name: Win32 LOB app delivery optimization priority
+          href: resources/intune-apps-win32lobappdeliveryoptimizationpriority.md
         - name: Win32 LOB app detection
           href: resources/intune-apps-win32lobappdetection.md
         - name: Win32 LOB app detection operator
@@ -2364,6 +2366,8 @@
             href: api/intune-enrollment-deponboardingsetting-delete.md
           - name: Update
             href: api/intune-enrollment-deponboardingsetting-update.md
+          - name: generateEncryptionPublicKey action
+            href: api/intune-enrollment-deponboardingsetting-generateencryptionpublickey.md
           - name: uploadDepToken action
             href: api/intune-enrollment-deponboardingsetting-uploaddeptoken.md
           - name: syncWithAppleDeviceEnrollmentProgram action
@@ -3702,6 +3706,13 @@
           href: resources/intune-deviceconfig-firewallpresharedkeyencodingmethodtype.md
         - name: Folder protection type
           href: resources/intune-deviceconfig-folderprotectiontype.md
+        - name: Group policy category
+          href: resources/intune-grouppolicy-grouppolicycategory.md
+          items:
+          - name: Get
+            href: api/intune-grouppolicy-grouppolicycategory-get.md
+          - name: Update
+            href: api/intune-grouppolicy-grouppolicycategory-update.md
         - name: Group policy configuration
           href: resources/intune-grouppolicy-grouppolicyconfiguration.md
           items:
@@ -3982,6 +3993,19 @@
             href: api/intune-grouppolicy-grouppolicypresentationvaluetext-update.md
         - name: Group policy type
           href: resources/intune-grouppolicy-grouppolicytype.md
+        - name: Group policy uploaded category
+          href: resources/intune-grouppolicy-grouppolicyuploadedcategory.md
+          items:
+          - name: List
+            href: api/intune-grouppolicy-grouppolicyuploadedcategory-list.md
+          - name: Get
+            href: api/intune-grouppolicy-grouppolicyuploadedcategory-get.md
+          - name: Create
+            href: api/intune-grouppolicy-grouppolicyuploadedcategory-create.md
+          - name: Delete
+            href: api/intune-grouppolicy-grouppolicyuploadedcategory-delete.md
+          - name: Update
+            href: api/intune-grouppolicy-grouppolicyuploadedcategory-update.md
         - name: Group policy uploaded definition
           href: resources/intune-grouppolicy-grouppolicyuploadeddefinition.md
           items:
@@ -4018,6 +4042,8 @@
           href: resources/intune-deviceconfig-internetexplorermessagesetting.md
         - name: Internet site security level
           href: resources/intune-deviceconfig-internetsitesecuritylevel.md
+        - name: iOS Azure ad single sign on extension
+          href: resources/intune-deviceconfig-iosazureadsinglesignonextension.md
         - name: iOS bookmark
           href: resources/intune-deviceconfig-iosbookmark.md
         - name: iOS certificate profile
@@ -4348,6 +4374,8 @@
           href: resources/intune-deviceconfig-localsecurityoptionssmartcardremovalbehaviortype.md
         - name: Local security options standard user elevation prompt behavior type
           href: resources/intune-deviceconfig-localsecurityoptionsstandarduserelevationpromptbehaviortype.md
+        - name: macOS associated domains key/value pair
+          href: resources/intune-deviceconfig-macosassociateddomainskeyvaluepair.md
         - name: macOS certificate profile base
           href: resources/intune-deviceconfig-macoscertificateprofilebase.md
           items:
@@ -5618,6 +5646,8 @@
             href: api/intune-devices-applepushnotificationcertificate-get.md
           - name: Update
             href: api/intune-devices-applepushnotificationcertificate-update.md
+          - name: generateApplePushNotificationCertificateSigningRequest action
+            href: api/intune-devices-applepushnotificationcertificate-generateapplepushnotificationcertificatesigningrequest.md
         - name: Apple VPP token troubleshooting event
           href: resources/intune-troubleshooting-applevpptokentroubleshootingevent.md
           items:
@@ -5677,6 +5707,10 @@
           href: resources/intune-devices-compliancestate.md
         - name: Configuration manager action
           href: resources/intune-devices-configurationmanageraction.md
+        - name: Configuration manager action delivery status
+          href: resources/intune-devices-configurationmanageractiondeliverystatus.md
+        - name: Configuration manager action result
+          href: resources/intune-devices-configurationmanageractionresult.md
         - name: Configuration manager action type
           href: resources/intune-devices-configurationmanageractiontype.md
         - name: Configuration manager client enabled features
@@ -5723,6 +5757,8 @@
             href: api/intune-devices-detectedapp-update.md
         - name: Device action result
           href: resources/intune-devices-deviceactionresult.md
+        - name: Device and app management assignment filter type
+          href: resources/intune-esim-deviceandappmanagementassignmentfiltertype.md
         - name: Device enrollment failure reason
           href: resources/intune-troubleshooting-deviceenrollmentfailurereason.md
         - name: Device exchange access state summary
@@ -5784,6 +5820,8 @@
             href: api/intune-devices-devicehealthscriptdevicestate-delete.md
           - name: Update
             href: api/intune-devices-devicehealthscriptdevicestate-update.md
+        - name: Device health script remediation summary
+          href: resources/intune-devices-devicehealthscriptremediationsummary.md
         - name: Device health script run summary
           href: resources/intune-devices-devicehealthscriptrunsummary.md
           items:
@@ -5830,6 +5868,23 @@
             href: api/intune-troubleshooting-devicemanagementautopilotevent-delete.md
           - name: Update
             href: api/intune-troubleshooting-devicemanagementautopilotevent-update.md
+        - name: Device management autopilot policy compliance status
+          href: resources/intune-troubleshooting-devicemanagementautopilotpolicycompliancestatus.md
+        - name: Device management autopilot policy status detail
+          href: resources/intune-troubleshooting-devicemanagementautopilotpolicystatusdetail.md
+          items:
+          - name: List
+            href: api/intune-troubleshooting-devicemanagementautopilotpolicystatusdetail-list.md
+          - name: Get
+            href: api/intune-troubleshooting-devicemanagementautopilotpolicystatusdetail-get.md
+          - name: Create
+            href: api/intune-troubleshooting-devicemanagementautopilotpolicystatusdetail-create.md
+          - name: Delete
+            href: api/intune-troubleshooting-devicemanagementautopilotpolicystatusdetail-delete.md
+          - name: Update
+            href: api/intune-troubleshooting-devicemanagementautopilotpolicystatusdetail-update.md
+        - name: Device management autopilot policy type
+          href: resources/intune-troubleshooting-devicemanagementautopilotpolicytype.md
         - name: Device management boolean setting instance
           href: resources/intune-deviceintent-devicemanagementbooleansettinginstance.md
           items:
@@ -6134,6 +6189,8 @@
           href: resources/intune-deviceintent-devicemanagementsettingregexconstraint.md
         - name: Device management setting required constraint
           href: resources/intune-deviceintent-devicemanagementsettingrequiredconstraint.md
+        - name: Device management setting sddl constraint
+          href: resources/intune-deviceintent-devicemanagementsettingsddlconstraint.md
         - name: Device management setting string length constraint
           href: resources/intune-deviceintent-devicemanagementsettingstringlengthconstraint.md
         - name: Device management setting xml constraint
@@ -7617,7 +7674,7 @@
           - name: Update
             href: api/intune-shared-devicemanagementderivedcredentialsettings-update.md
           - name: List
-            href: api/intune-shared-devicemanagementderivedcredentialsettings-list.md    
+            href: api/intune-shared-devicemanagementderivedcredentialsettings-list.md
           - name: Delete
             href: api/intune-shared-devicemanagementderivedcredentialsettings-delete.md
         - name: Device management script
