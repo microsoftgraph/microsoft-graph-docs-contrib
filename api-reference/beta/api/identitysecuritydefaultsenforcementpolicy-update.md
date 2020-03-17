@@ -1,17 +1,17 @@
 ---
-title: "Update identitysecuritydefaultsenforcementpolicy"
-description: "Update the properties of identitysecuritydefaultsenforcementpolicy object."
+title: "Update identitySecurityDefaultsEnforcementPolicy"
+description: "Update the properties of an identitySecurityDefaultsEnforcementPolicy object."
 localization_priority: Normal
 author: "davidmu1"
 ms.prod: "microsoft-identity-platform"
 doc_type: apiPageType
 ---
 
-# Update identitysecuritydefaultsenforcementpolicy
+# Update identitySecurityDefaultsEnforcementPolicy
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Update the properties of [identitySecurityDefaultsEnforcementPolicy](../resources/identitysecuritydefaultsenforcementpolicy.md) object.
+Update the properties of an [identitySecurityDefaultsEnforcementPolicy](../resources/identitysecuritydefaultsenforcementpolicy.md) object.
 
 ## Permissions
 
@@ -71,8 +71,6 @@ Content-type: application/json
 ### Response
 
 The following is an example of the response.
-
-> **Note:** The response object shown here might be shortened for readability. All the properties will be returned from an actual call.
 
 <!-- {
   "blockType": "response",
