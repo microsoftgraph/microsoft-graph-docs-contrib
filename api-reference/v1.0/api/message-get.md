@@ -9,6 +9,8 @@ doc_type: apiPageType
 
 # Get message
 
+Namespace: microsoft.graph
+
 Retrieve the properties and relationships of a [message](../resources/message.md) object.
 
 You can use the `$value` parameter to [get the MIME content of a message](/graph/outlook-get-mime-message).

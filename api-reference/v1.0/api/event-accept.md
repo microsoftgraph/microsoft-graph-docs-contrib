@@ -9,6 +9,8 @@ doc_type: apiPageType
 
 # event: accept
 
+Namespace: microsoft.graph
+
 Accept the specified [event](../resources/event.md) in a user [calendar](../resources/calendar.md).
 
 ## Permissions
