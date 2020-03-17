@@ -9,6 +9,8 @@ doc_type: apiPageType
 
 # identitySecurityDefaultsEnforcementPolicy resource type
 
+Namespace: microsoft.graph
+
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 Represents the Azure Active Directory security defaults policy. Security defaults contain preconfigured security settings that protect against common attacks.
