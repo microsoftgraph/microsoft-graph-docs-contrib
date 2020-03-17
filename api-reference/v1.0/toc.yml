@@ -800,6 +800,8 @@
           href: api/call-unmute.md
         - name: Mute application
           href: api/call-mute.md
+        - name: Log teleconference device quality data
+          href: api/call-logteleconferencedevicequality.md
       - name: Online meeting
         href: resources/onlinemeeting.md
         items:

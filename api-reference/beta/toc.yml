@@ -908,7 +908,7 @@
             href: api/audioroutinggroup-update.md
           - name: Delete
             href: api/audioroutinggroup-delete.md
-        - name: Log video quality data
+        - name: Log teleconference device quality data
           href: api/call-logteleconferencedevicequality.md
       - name: Online meeting
         href: resources/onlinemeeting.md
