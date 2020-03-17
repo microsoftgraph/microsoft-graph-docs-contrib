@@ -1,15 +1,13 @@
 ---
 title: "groupPolicyConfigurationAssignment resource type"
 description: "The group policy configuration assignment entity assigns one or more AAD groups to a specific group policy configuration."
-author: "rolyon"
+author: "davidmu1"
 localization_priority: Normal
 ms.prod: "Intune"
 doc_type: resourcePageType
 ---
 
 # groupPolicyConfigurationAssignment resource type
-
-Namespace: microsoft.graph
 
 > **Important:** Microsoft Graph APIs under the /beta version are subject to change; production use is not supported.
 

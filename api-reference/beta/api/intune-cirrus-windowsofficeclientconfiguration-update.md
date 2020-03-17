@@ -2,14 +2,12 @@
 title: "Update windowsOfficeClientConfiguration"
 description: "Patch a specific non-security policy payload."
 localization_priority: Normal
-author: "rolyon"
+author: "davidmu1"
 ms.prod: "Intune"
 doc_type: apiPageType
 ---
 
 # Update windowsOfficeClientConfiguration
-
-Namespace: microsoft.graph
 
 > **Important:** Microsoft Graph APIs under the /beta version are subject to change; production use is not supported.
 
@@ -139,7 +137,6 @@ Content-Length: 1069
   ]
 }
 ```
-
 
 
 

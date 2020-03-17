@@ -1,15 +1,13 @@
 ---
 title: "emailCertificateType enum type"
 description: "Supported certificate sources for email signing and encryption."
-author: "rolyon"
+author: "davidmu1"
 localization_priority: Normal
 ms.prod: "Intune"
 doc_type: enumPageType
 ---
 
 # emailCertificateType enum type
-
-Namespace: microsoft.graph
 
 > **Important:** Microsoft Graph APIs under the /beta version are subject to change; production use is not supported.
 

@@ -1,15 +1,13 @@
 ---
 title: "Update deviceManagementExportJob"
 description: "Update the properties of a deviceManagementExportJob object."
-author: "rolyon"
+author: "davidmu1"
 localization_priority: Normal
 ms.prod: "Intune"
 doc_type: apiPageType
 ---
 
 # Update deviceManagementExportJob
-
-Namespace: microsoft.graph
 
 > **Important:** Microsoft Graph APIs under the /beta version are subject to change; production use is not supported.
 
@@ -112,7 +110,6 @@ Content-Length: 453
   "expirationDateTime": "2016-12-31T23:57:57.2481234-08:00"
 }
 ```
-
 
 
 
