@@ -13,14 +13,14 @@ doc_type: apiPageType
 
 Represents the Azure Active Directory security defaults policy. Security defaults contain preconfigured security settings that protect against common attacks.
 
-Inherits from [policyBase](../resources/policybase.md)
+Inherits from [policyBase](../resources/policybase.md).
 
 ## Methods
 
 | Method       | Return Type | Description |
 |:-------------|:------------|:------------|
-| [Get](../api/identitysecuritydefaultsenforcementpolicy-get.md) | [identitySecurityDefaultsEnforcementPolicy](identitysecuritydefaultsenforcementpolicy.md) | Read properties of identitySecurityDefaultsEnforcementPolicy object. |
-| [Update](../api/identitysecuritydefaultsenforcementpolicy-update.md) | [identitySecurityDefaultsEnforcementPolicy](identitysecuritydefaultsenforcementpolicy.md) | Update identitySecurityDefaultsEnforcementPolicy object. |
+| [Get](../api/identitysecuritydefaultsenforcementpolicy-get.md) | [identitySecurityDefaultsEnforcementPolicy](identitysecuritydefaultsenforcementpolicy.md) | Read the properties of an **identitySecurityDefaultsEnforcementPolicy** object. |
+| [Update](../api/identitysecuritydefaultsenforcementpolicy-update.md) | [identitySecurityDefaultsEnforcementPolicy](identitysecuritydefaultsenforcementpolicy.md) | Update an **identitySecurityDefaultsEnforcementPolicy** object. |
 
 ## Properties
 
@@ -33,7 +33,7 @@ Inherits from [policyBase](../resources/policybase.md)
 
 ## Relationships
 
-None
+None.
 
 ## JSON representation
 
