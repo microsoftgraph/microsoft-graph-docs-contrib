@@ -8,11 +8,9 @@ ms.prod: "search"
 
 # Use the Microsoft Search API in Microsoft Graph to search files
 
-You can use the Microsoft Search API to search files stored in SharePoint or OneDrive. The Microsoft Search API uses a relevance model that makes use of signals from Microsoft Graph about users' relationships and activities. This enables you to return and promote the content that users care about, in a file search experience that is consistent with the **Files** tab that lists search results in SharePoint. 
+You can use the Microsoft Search API to search files stored in SharePoint or OneDrive. The Microsoft Search API uses a relevance model that makes use of signals from Microsoft Graph about users' relationships and activities. This enables you to return and promote the content that users care about, in a file search experience that is consistent with the **Files** tab that lists search results in SharePoint.
 
 [!INCLUDE [search-api-preview-signup](../includes/search-api-preview-signup.md)]
-
-The API can also surface external files exposed via the [externalFile](/graph/api/resources/externalfile?view=graph-rest-beta) resource.
 
 ## Search SharePoint or OneDrive files
 
@@ -218,4 +216,3 @@ You cannot scope a query to a particular connection ID.
 ## Next steps
 
 - [Use the Microsoft Search API to query data](/graph/api/resources/search-api-overview?view=graph-rest-beta)
-
