@@ -1,27 +1,26 @@
 ---
-title: "groupPolicyObjectFile resource type"
-description: "The Group Policy Object file uploaded by admin."
-author: "rolyon"
+title: "iosAzureAdSingleSignOnExtension resource type"
+description: "Represents an Azure AD-type Single Sign-On extension profile for iOS devices."
+author: "davidmu1"
 localization_priority: Normal
 ms.prod: "Intune"
 doc_type: resourcePageType
 ---
 
-# groupPolicyObjectFile resource type
-
-Namespace: microsoft.graph
+# iosAzureAdSingleSignOnExtension resource type
 
 > **Important:** Microsoft Graph APIs under the /beta version are subject to change; production use is not supported.
 
 > **Note:** The Microsoft Graph API for Intune requires an [active Intune license](https://go.microsoft.com/fwlink/?linkid=839381) for the tenant.
 
-The Group Policy Object file uploaded by admin.
+Represents an Azure AD-type Single Sign-On extension profile for iOS devices.
+
+
+Inherits from [iosSingleSignOnExtension](../resources/intune-deviceconfig-iossinglesignonextension.md)
 
 ## Properties
 |Property|Type|Description|
 |:---|:---|:---|
-|ouDistinguishedName|String|The distinguished name of the OU.|
-|content|String|The Group Policy Object file content.|
 
 ## Relationships
 None
@@ -30,14 +29,12 @@ None
 Here is a JSON representation of the resource.
 <!-- {
   "blockType": "resource",
-  "@odata.type": "microsoft.graph.groupPolicyObjectFile"
+  "@odata.type": "microsoft.graph.iosAzureAdSingleSignOnExtension"
 }
 -->
 ``` json
 {
-  "@odata.type": "#microsoft.graph.groupPolicyObjectFile",
-  "ouDistinguishedName": "String",
-  "content": "String"
+  "@odata.type": "#microsoft.graph.iosAzureAdSingleSignOnExtension"
 }
 ```
 

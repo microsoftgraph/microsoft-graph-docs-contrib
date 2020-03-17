@@ -2,14 +2,12 @@
 title: "windowsOfficeClientSecurityConfiguration resource type"
 description: "Not yet documented"
 localization_priority: Normal
-author: "rolyon"
+author: "davidmu1"
 ms.prod: "Intune"
 doc_type: resourcePageType
 ---
 
 # windowsOfficeClientSecurityConfiguration resource type
-
-Namespace: microsoft.graph
 
 > **Important:** Microsoft Graph APIs under the /beta version are subject to change; production use is not supported.
 

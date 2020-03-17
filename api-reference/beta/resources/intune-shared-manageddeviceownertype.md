@@ -1,15 +1,13 @@
 ---
 title: "managedDeviceOwnerType enum type"
 description: "Owner type of device."
-author: "rolyon"
+author: "davidmu1"
 localization_priority: Normal
 ms.prod: "Intune"
 doc_type: enumPageType
 ---
 
 # managedDeviceOwnerType enum type
-
-Namespace: microsoft.graph
 
 > **Important:** Microsoft Graph APIs under the /beta version are subject to change; production use is not supported.
 
