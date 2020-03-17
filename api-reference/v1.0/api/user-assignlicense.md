@@ -8,6 +8,8 @@ doc_type: apiPageType
 ---
 
 # user: assignLicense
+
+Namespace: microsoft.graph
 Add or remove subscriptions for the user. You can also enable and disable specific plans associated with a subscription.
 
 ## Permissions

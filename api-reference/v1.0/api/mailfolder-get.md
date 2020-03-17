@@ -9,6 +9,8 @@ doc_type: apiPageType
 
 # Get mailFolder
 
+Namespace: microsoft.graph
+
 Retrieve the properties and relationships of a message folder object.
 
 There are two scenarios where an app can get another user's mail folder:

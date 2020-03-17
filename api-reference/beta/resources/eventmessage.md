@@ -9,6 +9,8 @@ doc_type: resourcePageType
 
 # eventMessage resource type
 
+Namespace: microsoft.graph
+
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 A message that represents a meeting request, cancellation, or response (which can be one of the following: acceptance, tentative acceptance, or decline).

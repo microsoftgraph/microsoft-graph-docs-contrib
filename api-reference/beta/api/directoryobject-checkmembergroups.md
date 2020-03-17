@@ -9,6 +9,8 @@ doc_type: apiPageType
 
 # Check member groups
 
+Namespace: microsoft.graph
+
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 Check for membership in a specified list of groups, and returns from that list those groups

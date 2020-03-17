@@ -9,6 +9,8 @@ doc_type: "resourcePageType"
 
 # eventMessageResponse resource type
 
+Namespace: microsoft.graph
+
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 A message that represents a response to a meeting request in the meeting organizer's mailbox.
