@@ -1,15 +1,13 @@
 ---
 title: "windows10EditionType enum type"
 description: "Windows 10 Edition type."
-author: "rolyon"
+author: "davidmu1"
 localization_priority: Normal
 ms.prod: "Intune"
 doc_type: enumPageType
 ---
 
 # windows10EditionType enum type
-
-Namespace: microsoft.graph
 
 > **Important:** Microsoft Graph APIs under the /beta version are subject to change; production use is not supported.
 

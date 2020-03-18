@@ -1,15 +1,13 @@
 ---
 title: "Create androidManagedStoreAppConfiguration"
 description: "Create a new androidManagedStoreAppConfiguration object."
-author: "rolyon"
+author: "davidmu1"
 localization_priority: Normal
 ms.prod: "Intune"
 doc_type: apiPageType
 ---
 
 # Create androidManagedStoreAppConfiguration
-
-Namespace: microsoft.graph
 
 > **Important:** Microsoft Graph APIs under the /beta version are subject to change; production use is not supported.
 
@@ -132,7 +130,6 @@ Content-Length: 764
   "appSupportsOemConfig": true
 }
 ```
-
 
 
 

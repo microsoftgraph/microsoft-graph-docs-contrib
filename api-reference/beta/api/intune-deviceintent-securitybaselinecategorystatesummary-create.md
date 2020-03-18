@@ -1,15 +1,13 @@
 ---
 title: "Create securityBaselineCategoryStateSummary"
 description: "Create a new securityBaselineCategoryStateSummary object."
-author: "rolyon"
+author: "davidmu1"
 localization_priority: Normal
 ms.prod: "Intune"
 doc_type: apiPageType
 ---
 
 # Create securityBaselineCategoryStateSummary
-
-Namespace: microsoft.graph
 
 > **Important:** Microsoft Graph APIs under the /beta version are subject to change; production use is not supported.
 
@@ -102,7 +100,6 @@ Content-Length: 310
   "displayName": "Display Name value"
 }
 ```
-
 
 
 
