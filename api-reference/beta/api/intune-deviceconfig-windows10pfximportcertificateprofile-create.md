@@ -1,15 +1,13 @@
 ---
 title: "Create windows10PFXImportCertificateProfile"
 description: "Create a new windows10PFXImportCertificateProfile object."
-author: "rolyon"
+author: "davidmu1"
 localization_priority: Normal
 ms.prod: "Intune"
 doc_type: apiPageType
 ---
 
 # Create windows10PFXImportCertificateProfile
-
-Namespace: microsoft.graph
 
 > **Important:** Microsoft Graph APIs under the /beta version are subject to change; production use is not supported.
 
@@ -153,7 +151,6 @@ Content-Length: 1262
   "keyStorageProvider": "useTpmKspOtherwiseFail"
 }
 ```
-
 
 
 

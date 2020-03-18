@@ -1,15 +1,13 @@
 ---
 title: "iosVppAppAssignedUserLicense resource type"
 description: "iOS Volume Purchase Program user license assignment. This class does not support Create, Delete, or Update."
-author: "rolyon"
+author: "davidmu1"
 localization_priority: Normal
 ms.prod: "Intune"
 doc_type: resourcePageType
 ---
 
 # iosVppAppAssignedUserLicense resource type
-
-Namespace: microsoft.graph
 
 > **Important:** Microsoft Graph APIs under the /beta version are subject to change; production use is not supported.
 

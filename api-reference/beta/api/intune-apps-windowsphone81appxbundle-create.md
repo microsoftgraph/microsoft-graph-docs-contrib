@@ -1,15 +1,13 @@
 ---
 title: "Create windowsPhone81AppXBundle"
 description: "Create a new windowsPhone81AppXBundle object."
-author: "rolyon"
+author: "davidmu1"
 localization_priority: Normal
 ms.prod: "Intune"
 doc_type: apiPageType
 ---
 
 # Create windowsPhone81AppXBundle
-
-Namespace: microsoft.graph
 
 > **Important:** Microsoft Graph APIs under the /beta version are subject to change; production use is not supported.
 
@@ -244,7 +242,6 @@ Content-Length: 2483
   ]
 }
 ```
-
 
 
 

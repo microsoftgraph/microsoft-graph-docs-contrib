@@ -1,15 +1,13 @@
 ---
 title: "windowsDomainJoinConfiguration resource type"
 description: "Windows Domain Join device configuration."
-author: "rolyon"
+author: "davidmu1"
 localization_priority: Normal
 ms.prod: "intune"
 doc_type: resourcePageType
 ---
 
 # windowsDomainJoinConfiguration resource type
-
-Namespace: microsoft.graph
 
 > **Important:** Microsoft Graph APIs under the /beta version are subject to change; production use is not supported.
 

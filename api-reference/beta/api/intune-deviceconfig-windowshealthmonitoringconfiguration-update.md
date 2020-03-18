@@ -1,15 +1,13 @@
 ---
 title: "Update windowsHealthMonitoringConfiguration"
 description: "Update the properties of a windowsHealthMonitoringConfiguration object."
-author: "rolyon"
+author: "davidmu1"
 localization_priority: Normal
 ms.prod: "Intune"
 doc_type: apiPageType
 ---
 
 # Update windowsHealthMonitoringConfiguration
-
-Namespace: microsoft.graph
 
 > **Important:** Microsoft Graph APIs under the /beta version are subject to change; production use is not supported.
 
@@ -160,7 +158,6 @@ Content-Length: 1416
   "configDeviceHealthMonitoringCustomScope": "Config Device Health Monitoring Custom Scope value"
 }
 ```
-
 
 
 
