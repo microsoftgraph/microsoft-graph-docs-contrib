@@ -9,7 +9,7 @@ doc_type: apiPageType
 
 # Update a group setting
 
-Update the properties of a specific group setting object.
+Update the properties of a [groupSetting](../resources/groupsetting.md) object.
 
 ## Permissions
 
@@ -25,7 +25,7 @@ One of the following permissions is required to call this API. To learn more, in
 ## HTTP request
 <!-- { "blockType": "ignored" } -->
 
-Update a tenant-wide or group specific setting.
+
 
 ```http
 PATCH /groupSettings/{id}
@@ -42,7 +42,7 @@ In the request body, supply the values for relevant fields that should be update
 
 | Property | Type | Description |
 |:---------------|:--------|:----------|
-| values | settingValue collection | The updated set of values.  NOTE: You must supply the entire collection set. You cannot update a single set of values. |
+| values | [settingValue](../resources/settingvalue.md) collection | The updated set of values. You must include the entire collection set. You cannot update a single set of values. |
 
 ## Response
 
@@ -50,9 +50,9 @@ If successful, this method returns a `204 No Content` response code.
 
 ## Examples
 
-### Example 1: Update a tenant-wide setting
+### Example 1: Update a tenant-wide group setting
 
-In this example, `{id}` is the identifier of the tenant-wide group settings object.
+In this example, `{id}` is the identifier of the tenant-wide groupSetting object.
 
 #### Request
 
@@ -138,9 +138,9 @@ Content-type: application/json
 HTTP/1.1 204 No Content
 ```
 
-### Example 2: Update a group-specific setting
+### Example 2: Update a specific group setting
 
-In this example, the first `{id}` in the request is the identifier of the group, and the second `{id}` is the identifier of the group settings object.
+In this example, the first `{id}` in the request is the identifier of the group, and the second `{id}` is the identifier of the groupSetting object.
 
 #### Request
 
