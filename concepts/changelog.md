@@ -66,6 +66,7 @@ For details about known issues with Microsoft Graph APIs, see [Known issues](kno
 |:---|:---|:---|
 | Addition | v1.0 | Added new user permission [User.ManageIdentities.All](/graph/permissions-reference#user-permissions).|
 | Addition | beta | Added the PrivilegedAccess.Read.AzureResources application permission for [Privileged Identity Management - Azure resources](/graph/api/resources/privilegedidentitymanagement-resources?view=graph-rest-beta).|
+| Addition | beta | Added the [Auditlogs.Read.All](/graph/permissions-reference#user-permissions) permission for listing the sign-in activity of a user.|
 
 ### Reports | Office 365 usage reports
 
@@ -86,6 +87,34 @@ For details about known issues with Microsoft Graph APIs, see [Known issues](kno
 | **Change type** | **Version** | **Description**                          |
 | :-------------- | :---------- | :--------------------------------------- |
 | Addition | Beta | Added Support for ChannelMessage.Read.All to APIs for reading [chatMessages](/graph/api/resources/chatmessage?view=graph-rest-beta) in channels. |
+
+### Universal Print
+
+Added new APIs and resources for managing and printing to printers by using the Universal Print service.
+
+| **Change type** | **Version**   | **Description**                          |
+|:---|:---|:---|
+| Addition | beta | Added the [archivedPrintJob](/graph/api/resources/archivedprintjob) entity.|
+| Addition | beta | Added the [deviceHealth](/graph/api/resources/devicehealth) complex type.|
+| Addition | beta | Added the [integerRange](/graph/api/resources/integerrange) complex type.|
+| Addition | beta | Added the [print](/graph/api/resources/print) entity.|
+| Addition | beta | Added the [printConnector](/graph/api/resources/printconnector) entity.|
+| Addition | beta | Added the [printDocument](/graph/api/resources/printdocument) entity.|
+| Addition | beta | Added the [printer](/graph/api/resources/printer) entity.|
+| Addition | beta | Added the [printerCapabilities](/graph/api/resources/printercapabilities) complex type.|
+| Addition | beta | Added the [printerDefaults](/graph/api/resources/printerdefaults) complex type.|
+| Addition | beta | Added the [printerDocumentConfiguration](/graph/api/resources/printerdocumentconfiguration) complex type.|
+| Addition | beta | Added the [printerLocation](/graph/api/resources/printerlocation) complex type.|
+| Addition | beta | Added the [printerShare](/graph/api/resources/printershare) entity.|
+| Addition | beta | Added the [printerStatus](/graph/api/resources/printerstatus) complex type.|
+| Addition | beta | Added the [printJob](/graph/api/resources/printJob) entity.|
+| Addition | beta | Added the [printJobStatus](/graph/api/resources/printjobstatus) complex type.|
+| Addition | beta | Added the [printPageRange](/graph/api/resources/printpagerange) complex type.|
+| Addition | beta | Added the [printService](/graph/api/resources/printpagerange) entity.|
+| Addition | beta | Added the [printServiceEndpoint](/graph/api/resources/printserviceendpoint) entity.|
+| Addition | beta | Added the [printSettings](/graph/api/resources/printsettings) complex type.|
+| Addition | beta | Added the [printUsageSummaryByPrinter](/graph/api/resources/printusagesummarybyprinter) entity.|
+| Addition | beta | Added the [printUsageSummaryByUser](/graph/api/resources/printusagesummarybyuser) entity.|
 
 ## February 2020
 
