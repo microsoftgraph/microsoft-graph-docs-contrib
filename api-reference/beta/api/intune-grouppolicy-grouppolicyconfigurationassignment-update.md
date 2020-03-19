@@ -1,15 +1,13 @@
 ---
 title: "Update groupPolicyConfigurationAssignment"
 description: "Update the properties of a groupPolicyConfigurationAssignment object."
-author: "rolyon"
+author: "davidmu1"
 localization_priority: Normal
 ms.prod: "Intune"
 doc_type: apiPageType
 ---
 
 # Update groupPolicyConfigurationAssignment
-
-Namespace: microsoft.graph
 
 > **Important:** Microsoft Graph APIs under the /beta version are subject to change; production use is not supported.
 
@@ -90,7 +88,6 @@ Content-Length: 287
   }
 }
 ```
-
 
 
 

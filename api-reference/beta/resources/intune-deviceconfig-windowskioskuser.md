@@ -1,15 +1,13 @@
 ---
 title: "windowsKioskUser resource type"
 description: "The user base class used to identify the account info for the kiosk configuration"
-author: "rolyon"
+author: "davidmu1"
 localization_priority: Normal
 ms.prod: "Intune"
 doc_type: resourcePageType
 ---
 
 # windowsKioskUser resource type
-
-Namespace: microsoft.graph
 
 > **Important:** Microsoft Graph APIs under the /beta version are subject to change; production use is not supported.
 

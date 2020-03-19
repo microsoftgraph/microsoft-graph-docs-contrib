@@ -1,15 +1,13 @@
 ---
 title: "macOSLobChildApp resource type"
 description: "Contains properties the MacOS LOB App in a bundle package"
-author: "rolyon"
+author: "davidmu1"
 localization_priority: Normal
 ms.prod: "Intune"
 doc_type: resourcePageType
 ---
 
 # macOSLobChildApp resource type
-
-Namespace: microsoft.graph
 
 > **Important:** Microsoft Graph APIs under the /beta version are subject to change; production use is not supported.
 

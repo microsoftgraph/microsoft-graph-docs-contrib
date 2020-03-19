@@ -1,15 +1,13 @@
 ---
 title: "List macOSEnterpriseWiFiConfigurations"
 description: "List properties and relationships of the macOSEnterpriseWiFiConfiguration objects."
-author: "rolyon"
+author: "davidmu1"
 localization_priority: Normal
 ms.prod: "Intune"
 doc_type: apiPageType
 ---
 
 # List macOSEnterpriseWiFiConfigurations
-
-Namespace: microsoft.graph
 
 > **Important:** Microsoft Graph APIs under the /beta version are subject to change; production use is not supported.
 
@@ -120,7 +118,6 @@ Content-Length: 2263
   ]
 }
 ```
-
 
 
 

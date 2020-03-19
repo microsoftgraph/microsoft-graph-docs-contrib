@@ -1,15 +1,13 @@
 ---
 title: "createGooglePlayWebToken action"
 description: "Generates a web token that is used in an embeddable component."
-author: "rolyon"
+author: "davidmu1"
 localization_priority: Normal
 ms.prod: "Intune"
 doc_type: apiPageType
 ---
 
 # createGooglePlayWebToken action
-
-Namespace: microsoft.graph
 
 > **Important:** Microsoft Graph APIs under the /beta version are subject to change; production use is not supported.
 
@@ -81,7 +79,6 @@ Content-Length: 53
   "value": "Create Google Play Web Token value"
 }
 ```
-
 
 
 

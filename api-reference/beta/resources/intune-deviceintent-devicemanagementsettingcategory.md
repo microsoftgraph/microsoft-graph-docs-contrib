@@ -1,15 +1,13 @@
 ---
 title: "deviceManagementSettingCategory resource type"
 description: "Entity representing a setting category"
-author: "rolyon"
+author: "davidmu1"
 localization_priority: Normal
 ms.prod: "Intune"
 doc_type: resourcePageType
 ---
 
 # deviceManagementSettingCategory resource type
-
-Namespace: microsoft.graph
 
 > **Important:** Microsoft Graph APIs under the /beta version are subject to change; production use is not supported.
 

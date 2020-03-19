@@ -1,15 +1,13 @@
 ---
 title: "windowsUpdateForBusinessConfiguration resource type"
 description: "Windows Update for business configuration."
-author: "rolyon"
+author: "davidmu1"
 localization_priority: Normal
 ms.prod: "Intune"
 doc_type: resourcePageType
 ---
 
 # windowsUpdateForBusinessConfiguration resource type
-
-Namespace: microsoft.graph
 
 > **Important:** Microsoft Graph APIs under the /beta version are subject to change; production use is not supported.
 
