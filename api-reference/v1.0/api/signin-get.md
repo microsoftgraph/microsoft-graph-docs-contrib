@@ -108,8 +108,8 @@ Content-length: 211
         {
             "id": "66ea54eb-6301-4ee5-be62-ff5a759b0100",
             "createdDateTime": "2020-03-13T19:15:41.6195833Z",
-            "userDisplayName": "John Johnson",
-            "userPrincipalName": "johnjohnson@contoso.com",
+            "userDisplayName": "Test Contoso",
+            "userPrincipalName": "testaccount1@contoso.com",
             "userId": "26be570a-ae82-4189-b4e2-a37c6808512d",
             "appId": "de8bc8b5-d9f9-48b1-a8ad-b748da725064",
             "appDisplayName": "Graph explorer",
