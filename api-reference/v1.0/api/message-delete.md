@@ -9,6 +9,8 @@ doc_type: apiPageType
 
 # Delete message
 
+Namespace: microsoft.graph
+
 Delete a message in the specified user's mailbox, or delete a relationship of the message.
 
 >**Note** You may not be able to delete items in the recoverable items deletions folder (represented by the [well-known folder name](../resources/mailfolder.md) `recoverableitemsdeletions`). See [Deleted item retention](/exchange/policy-and-compliance/recoverable-items-folder/recoverable-items-folder#deleted-item-retention) and [Clean up deleted items](/exchange/policy-and-compliance/recoverable-items-folder/clean-up-deleted-items) for more information.
