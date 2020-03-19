@@ -1,17 +1,17 @@
 ---
-title: "Get shift"
-description: "Get a shift by ID."
+title: "Get timeOffReason"
+description: "Get a timeOffReason by ID."
 author: "akumar39"
 localization_priority: Normal
 ms.prod: "microsoft-teams"
 doc_type: apiPageType
 ---
 
-# Get shift
+# Get timeOffReason
 
 Namespace: microsoft.graph
 
-Retrieve the properties and relationships of a [shift](../resources/shift.md) object by ID.
+Retrieve the properties and relationships of a [timeOffReason](../resources/timeoffreason.md) object by ID.
 
 ## Permissions
 
@@ -20,7 +20,7 @@ One of the following permissions is required to call this API. To learn more, in
 |Permission type      | Permissions (from least to most privileged)              |
 |:--------------------|:---------------------------------------------------------|
 |Delegated (work or school account) | Schedule.Read.All, Group.Read.All, Schedule.ReadWrite.All, Group.ReadWrite.All    |
-|Delegated (personal Microsoft account) | Not supported.    |s
+|Delegated (personal Microsoft account) | Not supported.    |
 |Application | Schedule.Read.All, Schedule.ReadWrite.All |
 
 > **Note**: This API supports admin permissions. Global admins can access groups that they are not a member of.
@@ -30,7 +30,7 @@ One of the following permissions is required to call this API. To learn more, in
 <!-- { "blockType": "ignored" } -->
 
 ```http
-GET /teams/{teamId}/schedule/shifts/{shiftId}
+GET /teams/{teamId}/schedule/timeOffReasons/{timeOffReasonId}
 ```
 
 ## Request headers
@@ -44,31 +44,33 @@ Do not supply a request body for this method.
 
 ## Response
 
-If successful, this method returns a `200 OK` response code and a [shift](../resources/shift.md) object in the response body.
+If successful, this method returns a `200 OK` response code and a [timeOffReason](../resources/timeoffreason.md) object in the response body.
 
 ## Example
 
 ### Request
 
 The following is an example of the request.
+
 <!-- {
   "blockType": "request",
-  "name": "shift-get"
+  "name": "timeoffreason-get"
 }-->
 ```msgraph-interactive
-GET https://graph.microsoft.com/v1.0/teams/{teamId}/schedule/shifts/{shiftId}
+GET https://graph.microsoft.com/v1.0/teams/{teamId}/schedule/timeOffReasons/{timeOffReasonId}
 ```
 ---
 
-### Response
 
-The following is an example of the response.
+#### Response
+
+The following is an example of the response. 
 
 >**Note:** The response object shown here might be shortened for readability. All the properties will be returned from an actual call.
 <!-- {
   "blockType": "response",
   "truncated": true,
-  "@odata.type": "microsoft.graph.shift"
+  "@odata.type": "microsoft.graph.timeOffReason"
 } -->
 
 ```http
@@ -77,21 +79,21 @@ Content-type: application/json
 Content-length: 401
 
 {
-	"id": "SHFT_ca485cdd-a42c-4b93-9e6a-6fa54fd45fe1",
-	"createdDateTime": "2019-06-06T20:15:38.9Z",
-	"lastModifiedDateTime": "2019-11-18T01:12:08.318Z",
-	"schedulingGroupId": "TAG_d18fd675-3ac8-41b2-8038-d17fdac8b0d3",
-	"userId": "a7b0c8c4-3f5c-492f-ab13-40f0e0f0ffa8",
-	"draftShift": null,
-	"lastModifiedBy": {
-		"application": null,
-		"device": null,
-		"conversation": null,
-		"user": {
-			"id": "1c717a55-febd-4850-b5f6-101f3a29972c",
-			"displayName": "Sumanth Lingom"
-		}
-	}
+  "id": "TOR_891045ca-b5d2-406b-aa06-a3c8921245d7",
+  "createdDateTime": "2019-03-12T22:10:38.242Z",
+  "lastModifiedDateTime": "2019-03-12T22:10:38.242Z",
+  "displayName": "Vacation",
+  "iconType": "plane",
+  "isActive": true,
+  "lastModifiedBy": {
+    "application": null,
+    "device": null,
+    "conversation": null,
+    "user": {
+      "id": "366c0b19-49b1-41b5-a03f-9f3887bd0ed8",
+      "displayName": "John Doe"
+    }
+  }
 }
 ```
 
@@ -100,7 +102,7 @@ Content-length: 401
 <!--
 {
   "type": "#page.annotation",
-  "description": "Get a shift by id",
+  "description": "Get a timeOffReason by id",
   "keywords": "",
   "section": "documentation",
   "tocPath": "",

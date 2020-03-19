@@ -1,17 +1,17 @@
 ---
-title: "Get shift"
-description: "Get a shift by ID."
+title: "Delete timeOff"
+description: "Delete a timeOff instance from a schedule."
 author: "akumar39"
 localization_priority: Normal
 ms.prod: "microsoft-teams"
 doc_type: apiPageType
 ---
 
-# Get shift
+# Delete timeOff
 
 Namespace: microsoft.graph
 
-Retrieve the properties and relationships of a [shift](../resources/shift.md) object by ID.
+Delete a [timeOff](../resources/timeoff.md) instance from a [schedule](../resources/schedule.md).
 
 ## Permissions
 
@@ -19,9 +19,9 @@ One of the following permissions is required to call this API. To learn more, in
 
 |Permission type      | Permissions (from least to most privileged)              |
 |:--------------------|:---------------------------------------------------------|
-|Delegated (work or school account) | Schedule.Read.All, Group.Read.All, Schedule.ReadWrite.All, Group.ReadWrite.All    |
+|Delegated (work or school account) | Schedule.ReadWrite.All, Group.ReadWrite.All    |
 |Delegated (personal Microsoft account) | Not supported.    |s
-|Application | Schedule.Read.All, Schedule.ReadWrite.All |
+|Application | Schedule.ReadWrite.All |
 
 > **Note**: This API supports admin permissions. Global admins can access groups that they are not a member of.
 
@@ -30,7 +30,7 @@ One of the following permissions is required to call this API. To learn more, in
 <!-- { "blockType": "ignored" } -->
 
 ```http
-GET /teams/{teamId}/schedule/shifts/{shiftId}
+DELETE /teams/{teamId}/schedule/timesOff/{timeOffId}
 ```
 
 ## Request headers
@@ -44,55 +44,38 @@ Do not supply a request body for this method.
 
 ## Response
 
-If successful, this method returns a `200 OK` response code and a [shift](../resources/shift.md) object in the response body.
+If successful, this method returns a `204 No Content` response code. It does not return anything in the response body.
 
 ## Example
 
-### Request
+#### Request
 
 The following is an example of the request.
+
 <!-- {
   "blockType": "request",
-  "name": "shift-get"
+  "name": "timeoff-delete"
 }-->
-```msgraph-interactive
-GET https://graph.microsoft.com/v1.0/teams/{teamId}/schedule/shifts/{shiftId}
+```http
+DELETE https://graph.microsoft.com/v1.0/teams/{teamId}/schedule/timesOff/{timeOffId}
 ```
+
 ---
 
-### Response
 
-The following is an example of the response.
+#### Response
+
+The following is an example of the response. 
 
 >**Note:** The response object shown here might be shortened for readability. All the properties will be returned from an actual call.
 <!-- {
   "blockType": "response",
   "truncated": true,
-  "@odata.type": "microsoft.graph.shift"
+  "@odata.type": "microsoft.graph.None"
 } -->
 
 ```http
-HTTP/1.1 200 OK
-Content-type: application/json
-Content-length: 401
-
-{
-	"id": "SHFT_ca485cdd-a42c-4b93-9e6a-6fa54fd45fe1",
-	"createdDateTime": "2019-06-06T20:15:38.9Z",
-	"lastModifiedDateTime": "2019-11-18T01:12:08.318Z",
-	"schedulingGroupId": "TAG_d18fd675-3ac8-41b2-8038-d17fdac8b0d3",
-	"userId": "a7b0c8c4-3f5c-492f-ab13-40f0e0f0ffa8",
-	"draftShift": null,
-	"lastModifiedBy": {
-		"application": null,
-		"device": null,
-		"conversation": null,
-		"user": {
-			"id": "1c717a55-febd-4850-b5f6-101f3a29972c",
-			"displayName": "Sumanth Lingom"
-		}
-	}
-}
+HTTP/1.1 204 No Content
 ```
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
@@ -100,7 +83,7 @@ Content-length: 401
 <!--
 {
   "type": "#page.annotation",
-  "description": "Get a shift by id",
+  "description": "Deletes a timeOff from the schedule",
   "keywords": "",
   "section": "documentation",
   "tocPath": "",

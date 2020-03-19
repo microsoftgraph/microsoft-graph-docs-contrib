@@ -1,17 +1,17 @@
 ---
-title: "Get shift"
-description: "Get a shift by ID."
+title: "Get schedulingGroup"
+description: "Retrieve the properties and relationships of a [schedulingGroup](../resources/schedulinggroup.md) by ID."
 author: "akumar39"
 localization_priority: Normal
 ms.prod: "microsoft-teams"
 doc_type: apiPageType
 ---
 
-# Get shift
+# Get schedulingGroup
 
 Namespace: microsoft.graph
 
-Retrieve the properties and relationships of a [shift](../resources/shift.md) object by ID.
+Retrieve the properties and relationships of a [schedulingGroup](../resources/schedulinggroup.md) by ID.
 
 ## Permissions
 
@@ -20,8 +20,9 @@ One of the following permissions is required to call this API. To learn more, in
 |Permission type      | Permissions (from least to most privileged)              |
 |:--------------------|:---------------------------------------------------------|
 |Delegated (work or school account) | Schedule.Read.All, Group.Read.All, Schedule.ReadWrite.All, Group.ReadWrite.All    |
-|Delegated (personal Microsoft account) | Not supported.    |s
+|Delegated (personal Microsoft account) | Not supported.    |
 |Application | Schedule.Read.All, Schedule.ReadWrite.All |
+
 
 > **Note**: This API supports admin permissions. Global admins can access groups that they are not a member of.
 
@@ -30,7 +31,7 @@ One of the following permissions is required to call this API. To learn more, in
 <!-- { "blockType": "ignored" } -->
 
 ```http
-GET /teams/{teamId}/schedule/shifts/{shiftId}
+GET /teams/{teamId}/schedule/schedulingGroups/{schedulingGroupId}
 ```
 
 ## Request headers
@@ -44,31 +45,33 @@ Do not supply a request body for this method.
 
 ## Response
 
-If successful, this method returns a `200 OK` response code and a [shift](../resources/shift.md) object in the response body.
+If successful, this method returns a `200 OK` response code and a [schedulingGroup](../resources/schedulinggroup.md) object in the response body.
 
 ## Example
 
 ### Request
 
 The following is an example of the request.
+
 <!-- {
   "blockType": "request",
-  "name": "shift-get"
+  "name": "schedule-get-schedulinggroups"
 }-->
 ```msgraph-interactive
-GET https://graph.microsoft.com/v1.0/teams/{teamId}/schedule/shifts/{shiftId}
+GET https://graph.microsoft.com/v1.0/teams/{teamId}/schedule/schedulingGroups/{schedulingGroupId}
 ```
 ---
 
+
 ### Response
 
-The following is an example of the response.
+The following is an example of the response. 
 
 >**Note:** The response object shown here might be shortened for readability. All the properties will be returned from an actual call.
 <!-- {
   "blockType": "response",
   "truncated": true,
-  "@odata.type": "microsoft.graph.shift"
+  "@odata.type": "microsoft.graph.schedulingGroup"
 } -->
 
 ```http
@@ -77,21 +80,24 @@ Content-type: application/json
 Content-length: 401
 
 {
-	"id": "SHFT_ca485cdd-a42c-4b93-9e6a-6fa54fd45fe1",
-	"createdDateTime": "2019-06-06T20:15:38.9Z",
-	"lastModifiedDateTime": "2019-11-18T01:12:08.318Z",
-	"schedulingGroupId": "TAG_d18fd675-3ac8-41b2-8038-d17fdac8b0d3",
-	"userId": "a7b0c8c4-3f5c-492f-ab13-40f0e0f0ffa8",
-	"draftShift": null,
-	"lastModifiedBy": {
-		"application": null,
-		"device": null,
-		"conversation": null,
-		"user": {
-			"id": "1c717a55-febd-4850-b5f6-101f3a29972c",
-			"displayName": "Sumanth Lingom"
-		}
-	}
+  "id": "TAG_f914d037-00a3-4ba4-b712-ef178cbea263",
+  "createdDateTime": "2019-03-12T22:10:38.242Z",
+  "lastModifiedDateTime": "2019-03-12T22:10:38.242Z",
+  "displayName": "Cashiers",
+  "isActive": true,
+  "userIds": [
+    "c5d0c76b-80c4-481c-be50-923cd8d680a1",
+    "2a4296b3-a28a-44ba-bc66-0274b9b95851"
+  ],
+  "lastModifiedBy": {
+    "application": null,
+    "device": null,
+    "conversation": null,
+    "user": {
+      "id": "366c0b19-49b1-41b5-a03f-9f3887bd0ed8",
+      "displayName": "John Doe"
+    }
+  }
 }
 ```
 
@@ -100,7 +106,7 @@ Content-length: 401
 <!--
 {
   "type": "#page.annotation",
-  "description": "Get a shift by id",
+  "description": "Get a schedulingGroup by id",
   "keywords": "",
   "section": "documentation",
   "tocPath": "",

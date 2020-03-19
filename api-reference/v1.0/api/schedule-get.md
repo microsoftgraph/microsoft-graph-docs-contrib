@@ -1,17 +1,24 @@
 ---
-title: "Get shift"
-description: "Get a shift by ID."
+title: "Get schedule"
+description: "Retrieve the properties and relationships of a **schedule** object."
 author: "akumar39"
 localization_priority: Normal
 ms.prod: "microsoft-teams"
 doc_type: apiPageType
 ---
 
-# Get shift
+# Get schedule
 
 Namespace: microsoft.graph
 
-Retrieve the properties and relationships of a [shift](../resources/shift.md) object by ID.
+Retrieve the properties and relationships of a [schedule](../resources/schedule.md) object.
+
+The schedule creation process conforms to the [One API guideline for resource based long running operations (RELO)](https://github.com/Microsoft/api-guidelines/blob/master/Guidelines.md#131-resource-based-long-running-operations-relo).
+When clients use the [PUT method](team-put-schedule.md), if the schedule is provisioned, the operation updates the schedule; otherwise, the operation starts the schedule provisioning process in the background.
+
+During schedule provisioning, clients can use the GET method to get the schedule and look at the `provisionStatus` property for the current state of the provisioning. If the provisioning failed, clients can get additional information from the `provisionStatusCode` property.
+
+Clients can also inspect the configuration of the schedule.
 
 ## Permissions
 
@@ -30,7 +37,7 @@ One of the following permissions is required to call this API. To learn more, in
 <!-- { "blockType": "ignored" } -->
 
 ```http
-GET /teams/{teamId}/schedule/shifts/{shiftId}
+GET /teams/{teamId}/schedule
 ```
 
 ## Request headers
@@ -38,37 +45,40 @@ GET /teams/{teamId}/schedule/shifts/{shiftId}
 | Header       | Value |
 |:---------------|:--------|
 | Authorization  | Bearer {token}. Required.  |
+| Content-Type  | application/json. Required.  |
 
 ## Request body
 Do not supply a request body for this method.
 
 ## Response
 
-If successful, this method returns a `200 OK` response code and a [shift](../resources/shift.md) object in the response body.
+If successful, this method returns a `200 OK` response code and a [schedule](../resources/schedule.md) object in the response body.
 
 ## Example
 
 ### Request
 
 The following is an example of the request.
+
 <!-- {
   "blockType": "request",
-  "name": "shift-get"
+  "name": "schedule-get"
 }-->
 ```msgraph-interactive
-GET https://graph.microsoft.com/v1.0/teams/{teamId}/schedule/shifts/{shiftId}
+GET https://graph.microsoft.com/v1.0/teams/{teamId}/schedule
 ```
 ---
 
+
 ### Response
 
-The following is an example of the response.
+The following is an example of the response. 
 
 >**Note:** The response object shown here might be shortened for readability. All the properties will be returned from an actual call.
 <!-- {
   "blockType": "response",
   "truncated": true,
-  "@odata.type": "microsoft.graph.shift"
+  "@odata.type": "microsoft.graph.schedule"
 } -->
 
 ```http
@@ -77,21 +87,16 @@ Content-type: application/json
 Content-length: 401
 
 {
-	"id": "SHFT_ca485cdd-a42c-4b93-9e6a-6fa54fd45fe1",
-	"createdDateTime": "2019-06-06T20:15:38.9Z",
-	"lastModifiedDateTime": "2019-11-18T01:12:08.318Z",
-	"schedulingGroupId": "TAG_d18fd675-3ac8-41b2-8038-d17fdac8b0d3",
-	"userId": "a7b0c8c4-3f5c-492f-ab13-40f0e0f0ffa8",
-	"draftShift": null,
-	"lastModifiedBy": {
-		"application": null,
-		"device": null,
-		"conversation": null,
-		"user": {
-			"id": "1c717a55-febd-4850-b5f6-101f3a29972c",
-			"displayName": "Sumanth Lingom"
-		}
-	}
+  "id": "833fc4df-c88b-4398-992f-d8afcfe41df2",
+  "enabled": true,
+  "timeZone": "America/Chicago",
+  "provisionStatus": "Completed",
+  "provisionStatusCode": null,
+  "timeClockEnabled": true,
+  "openShiftsEnabled": true,
+  "swapShiftsRequestsEnabled": true,
+  "offerShiftRequestsEnabled": true,
+  "timeOffRequestsEnabled": true
 }
 ```
 
@@ -100,7 +105,7 @@ Content-length: 401
 <!--
 {
   "type": "#page.annotation",
-  "description": "Get a shift by id",
+  "description": "Get the schedule",
   "keywords": "",
   "section": "documentation",
   "tocPath": "",
