@@ -11,6 +11,8 @@ doc_type: resourcePageType
 
 # RemoteItem resource type
 
+Namespace: microsoft.graph
+
 The **remoteItem** resource indicates that a [**driveItem**](driveitem.md) references an item that exists in another drive.
 This resource provides the unique IDs of the source drive and target item.
 

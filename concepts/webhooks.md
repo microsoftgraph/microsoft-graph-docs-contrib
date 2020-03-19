@@ -36,6 +36,7 @@ Using the Microsoft Graph API, an app can subscribe to changes on the following 
 - Content within the hierarchy of _any folder_ [driveItem][] on a user's personal OneDrive
 - Content within the hierarchy of the _root folder_ [driveItem][] on OneDrive for Business
 - Security [alert][]
+- Teams [callRecord][] (preview)
 
 You can create a subscription to a specific Outlook folder such as the Inbox:
 `me/mailFolders('inbox')/messages`
@@ -141,6 +142,7 @@ Microsoft Graph validates the notification endpoint provided in the `notificatio
 1. Microsoft Graph sends a POST request to the notification URL:
 
     ``` http
+    Content-Type: text/plain; charset=utf-8
     POST https://{notificationUrl}?validationToken={opaqueTokenCreatedByMicrosoftGraph}
     ```
 
@@ -281,3 +283,4 @@ The following code samples are available on GitHub.
 [message]: /graph/api/resources/message?view=graph-rest-1.0
 [user]: /graph/api/resources/user?view=graph-rest-1.0
 [alert]: /graph/api/resources/alert?view=graph-rest-1.0
+[callRecord]: /graph/api/resources/callrecords-callrecord?view=graph-rest-beta

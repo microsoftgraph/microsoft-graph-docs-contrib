@@ -9,6 +9,8 @@ doc_type: "apiPageType"
 
 # List extensionProperties
 
+Namespace: microsoft.graph
+
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 Retrieve the list of [extensionProperty](../resources/extensionproperty.md) objects on an application.

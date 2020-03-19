@@ -908,6 +908,8 @@
             href: api/audioroutinggroup-update.md
           - name: Delete
             href: api/audioroutinggroup-delete.md
+        - name: Log video quality data
+          href: api/call-logteleconferencedevicequality.md
       - name: Online meeting
         href: resources/onlinemeeting.md
         items:
@@ -916,7 +918,7 @@
         - name: Get
           href: api/onlinemeeting-get.md
         - name: Delete
-          href: api/onlinemeeting-delete.md          
+          href: api/onlinemeeting-delete.md
       - name: Presence
         href: resources/presence.md
         items:
@@ -924,6 +926,14 @@
           href: api/presence-get.md
         - name: Get presence for multiple users
           href: api/cloudcommunications-getpresencesbyuserid.md
+      - name: Call records (preview)
+        items:
+        - name: Overview
+          href: resources/callrecords-api-overview.md
+        - name: Call record
+          href: resources/callrecords-callrecord.md
+        - name: Get call record
+          href: api/callrecords-callrecord-get.md
     - name: Cross-device experiences
       displayName: Project Rome
       items:
@@ -1979,6 +1989,8 @@
             href: api/intune-apps-win32lobapp-delete.md
           - name: Update
             href: api/intune-apps-win32lobapp-update.md
+        - name: Win32 LOB app delivery optimization priority
+          href: resources/intune-apps-win32lobappdeliveryoptimizationpriority.md
         - name: Win32 LOB app detection
           href: resources/intune-apps-win32lobappdetection.md
         - name: Win32 LOB app detection operator
@@ -2356,6 +2368,8 @@
             href: api/intune-enrollment-deponboardingsetting-delete.md
           - name: Update
             href: api/intune-enrollment-deponboardingsetting-update.md
+          - name: generateEncryptionPublicKey action
+            href: api/intune-enrollment-deponboardingsetting-generateencryptionpublickey.md
           - name: uploadDepToken action
             href: api/intune-enrollment-deponboardingsetting-uploaddeptoken.md
           - name: syncWithAppleDeviceEnrollmentProgram action
@@ -3694,6 +3708,13 @@
           href: resources/intune-deviceconfig-firewallpresharedkeyencodingmethodtype.md
         - name: Folder protection type
           href: resources/intune-deviceconfig-folderprotectiontype.md
+        - name: Group policy category
+          href: resources/intune-grouppolicy-grouppolicycategory.md
+          items:
+          - name: Get
+            href: api/intune-grouppolicy-grouppolicycategory-get.md
+          - name: Update
+            href: api/intune-grouppolicy-grouppolicycategory-update.md
         - name: Group policy configuration
           href: resources/intune-grouppolicy-grouppolicyconfiguration.md
           items:
@@ -3974,6 +3995,19 @@
             href: api/intune-grouppolicy-grouppolicypresentationvaluetext-update.md
         - name: Group policy type
           href: resources/intune-grouppolicy-grouppolicytype.md
+        - name: Group policy uploaded category
+          href: resources/intune-grouppolicy-grouppolicyuploadedcategory.md
+          items:
+          - name: List
+            href: api/intune-grouppolicy-grouppolicyuploadedcategory-list.md
+          - name: Get
+            href: api/intune-grouppolicy-grouppolicyuploadedcategory-get.md
+          - name: Create
+            href: api/intune-grouppolicy-grouppolicyuploadedcategory-create.md
+          - name: Delete
+            href: api/intune-grouppolicy-grouppolicyuploadedcategory-delete.md
+          - name: Update
+            href: api/intune-grouppolicy-grouppolicyuploadedcategory-update.md
         - name: Group policy uploaded definition
           href: resources/intune-grouppolicy-grouppolicyuploadeddefinition.md
           items:
@@ -4010,6 +4044,8 @@
           href: resources/intune-deviceconfig-internetexplorermessagesetting.md
         - name: Internet site security level
           href: resources/intune-deviceconfig-internetsitesecuritylevel.md
+        - name: iOS Azure ad single sign on extension
+          href: resources/intune-deviceconfig-iosazureadsinglesignonextension.md
         - name: iOS bookmark
           href: resources/intune-deviceconfig-iosbookmark.md
         - name: iOS certificate profile
@@ -4340,6 +4376,8 @@
           href: resources/intune-deviceconfig-localsecurityoptionssmartcardremovalbehaviortype.md
         - name: Local security options standard user elevation prompt behavior type
           href: resources/intune-deviceconfig-localsecurityoptionsstandarduserelevationpromptbehaviortype.md
+        - name: macOS associated domains key/value pair
+          href: resources/intune-deviceconfig-macosassociateddomainskeyvaluepair.md
         - name: macOS certificate profile base
           href: resources/intune-deviceconfig-macoscertificateprofilebase.md
           items:
@@ -5610,6 +5648,8 @@
             href: api/intune-devices-applepushnotificationcertificate-get.md
           - name: Update
             href: api/intune-devices-applepushnotificationcertificate-update.md
+          - name: generateApplePushNotificationCertificateSigningRequest action
+            href: api/intune-devices-applepushnotificationcertificate-generateapplepushnotificationcertificatesigningrequest.md
         - name: Apple VPP token troubleshooting event
           href: resources/intune-troubleshooting-applevpptokentroubleshootingevent.md
           items:
@@ -5669,6 +5709,10 @@
           href: resources/intune-devices-compliancestate.md
         - name: Configuration manager action
           href: resources/intune-devices-configurationmanageraction.md
+        - name: Configuration manager action delivery status
+          href: resources/intune-devices-configurationmanageractiondeliverystatus.md
+        - name: Configuration manager action result
+          href: resources/intune-devices-configurationmanageractionresult.md
         - name: Configuration manager action type
           href: resources/intune-devices-configurationmanageractiontype.md
         - name: Configuration manager client enabled features
@@ -5715,6 +5759,8 @@
             href: api/intune-devices-detectedapp-update.md
         - name: Device action result
           href: resources/intune-devices-deviceactionresult.md
+        - name: Device and app management assignment filter type
+          href: resources/intune-esim-deviceandappmanagementassignmentfiltertype.md
         - name: Device enrollment failure reason
           href: resources/intune-troubleshooting-deviceenrollmentfailurereason.md
         - name: Device exchange access state summary
@@ -5776,6 +5822,8 @@
             href: api/intune-devices-devicehealthscriptdevicestate-delete.md
           - name: Update
             href: api/intune-devices-devicehealthscriptdevicestate-update.md
+        - name: Device health script remediation summary
+          href: resources/intune-devices-devicehealthscriptremediationsummary.md
         - name: Device health script run summary
           href: resources/intune-devices-devicehealthscriptrunsummary.md
           items:
@@ -5822,6 +5870,23 @@
             href: api/intune-troubleshooting-devicemanagementautopilotevent-delete.md
           - name: Update
             href: api/intune-troubleshooting-devicemanagementautopilotevent-update.md
+        - name: Device management autopilot policy compliance status
+          href: resources/intune-troubleshooting-devicemanagementautopilotpolicycompliancestatus.md
+        - name: Device management autopilot policy status detail
+          href: resources/intune-troubleshooting-devicemanagementautopilotpolicystatusdetail.md
+          items:
+          - name: List
+            href: api/intune-troubleshooting-devicemanagementautopilotpolicystatusdetail-list.md
+          - name: Get
+            href: api/intune-troubleshooting-devicemanagementautopilotpolicystatusdetail-get.md
+          - name: Create
+            href: api/intune-troubleshooting-devicemanagementautopilotpolicystatusdetail-create.md
+          - name: Delete
+            href: api/intune-troubleshooting-devicemanagementautopilotpolicystatusdetail-delete.md
+          - name: Update
+            href: api/intune-troubleshooting-devicemanagementautopilotpolicystatusdetail-update.md
+        - name: Device management autopilot policy type
+          href: resources/intune-troubleshooting-devicemanagementautopilotpolicytype.md
         - name: Device management boolean setting instance
           href: resources/intune-deviceintent-devicemanagementbooleansettinginstance.md
           items:
@@ -6126,6 +6191,8 @@
           href: resources/intune-deviceintent-devicemanagementsettingregexconstraint.md
         - name: Device management setting required constraint
           href: resources/intune-deviceintent-devicemanagementsettingrequiredconstraint.md
+        - name: Device management setting sddl constraint
+          href: resources/intune-deviceintent-devicemanagementsettingsddlconstraint.md
         - name: Device management setting string length constraint
           href: resources/intune-deviceintent-devicemanagementsettingstringlengthconstraint.md
         - name: Device management setting xml constraint
@@ -7609,7 +7676,7 @@
           - name: Update
             href: api/intune-shared-devicemanagementderivedcredentialsettings-update.md
           - name: List
-            href: api/intune-shared-devicemanagementderivedcredentialsettings-list.md    
+            href: api/intune-shared-devicemanagementderivedcredentialsettings-list.md
           - name: Delete
             href: api/intune-shared-devicemanagementderivedcredentialsettings-delete.md
         - name: Device management script
@@ -8005,6 +8072,8 @@
       - name: Category
         href: resources/educationcategory.md
         items:
+        - name: Create category
+          href: api/educationclass-post-category.md
         - name: Get category
           href: api/educationcategory-get.md
         - name: Delete category
@@ -8012,6 +8081,8 @@
       - name: Rubric
         href: resources/educationrubric.md
         items:
+        - name: Create rubric
+          href: api/educationuser-post-rubrics.md
         - name: Get rubric
           href: api/educationrubric-get.md
         - name: Update rubric
@@ -8850,7 +8921,7 @@
           - name: Create
             href: api/accesspackageresourcerequest-post.md
         - name: Access package resource role scope
-          href: resources/accesspackageresourcerequest.md
+          href: resources/accesspackageresourcerolescope.md
           items:
           - name: List
             href: api/accesspackage-list-accesspackageresourcerolescopes.md
@@ -9083,24 +9154,81 @@
           - name: Get member objects
             href: api/orgcontact-getmemberobjects.md
       - name: Policy
-        href: resources/policy.md
+        href: resources/policy-overview.md
         items:
-        - name: List policies
-          href: api/policy-list.md
-        - name: Create policy
-          href: api/policy-post.md
-        - name: Get policy
-          href: api/policy-get.md
-        - name: Update policy
-          href: api/policy-update.md
-        - name: Delete policy
-          href: api/policy-delete.md
-        - name: Assign policy
-          href: api/policy-assign.md
-        - name: List assigned policies
-          href: api/policy-list-assigned.md
-        - name: List applied to applications
-          href: api/policy-list-appliesto.md
+        - name: Activity-based timeout policy
+          href: resources/activitybasedtimeoutpolicy.md
+          items:
+          - name: Create
+            href: api/activitybasedtimeoutpolicy-post-activitybasedtimeoutpolicies.md
+          - name: List
+            href: api/activitybasedtimeoutpolicy-list.md
+          - name: Get
+            href: api/activitybasedtimeoutpolicy-get.md
+          - name: Update
+            href: api/activitybasedtimeoutpolicy-update.md
+          - name: Delete
+            href: api/activitybasedtimeoutpolicy-delete.md
+        - name: Claims mapping policy
+          href: resources/claimsmappingpolicy.md
+          items:
+          - name: Create
+            href: api/claimsmappingpolicy-post-claimsmappingpolicies.md
+          - name: List
+            href: api/claimsmappingpolicy-list.md
+          - name: Get
+            href: api/claimsmappingpolicy-get.md
+          - name: Update
+            href: api/claimsmappingpolicy-update.md
+          - name: Delete
+            href: api/claimsmappingpolicy-delete.md
+          - name: List applied to applications
+            href: api/claimsmappingpolicy-list-appliesto.md
+        - name: Home realm discovery policy
+          href: resources/homerealmdiscoverypolicy.md
+          items:
+          - name: Create
+            href: api/homerealmdiscoverypolicy-post-homerealmdiscoverypolicies.md
+          - name: List
+            href: api/homerealmdiscoverypolicy-list.md
+          - name: Get
+            href: api/homerealmdiscoverypolicy-get.md
+          - name: Update
+            href: api/homerealmdiscoverypolicy-update.md
+          - name: Delete
+            href: api/homerealmdiscoverypolicy-delete.md
+          - name: List applied to applications
+            href: api/homerealmdiscoverypolicy-list-appliesto.md
+        - name: Token issuance policy
+          href: resources/tokenissuancepolicy.md
+          items:
+          - name: Create
+            href: api/tokenissuancepolicy-post-tokenissuancepolicy.md
+          - name: List
+            href: api/tokenissuancepolicy-list.md
+          - name: Get
+            href: api/tokenissuancepolicy-get.md
+          - name: Update
+            href: api/tokenissuancepolicy-update.md
+          - name: Delete
+            href: api/tokenissuancepolicy-delete.md
+          - name: List applied to applications
+            href: api/tokenissuancepolicy-list-appliesto.md
+        - name: Token lifetime policy
+          href: resources/tokenlifetimepolicy.md
+          items:
+          - name: Create
+            href: api/tokenlifetimepolicy-post-tokenlifetimepolicies.md
+          - name: List
+            href: api/tokenlifetimepolicy-list.md
+          - name: Get
+            href: api/tokenlifetimepolicy-get.md
+          - name: Update
+            href: api/tokenlifetimepolicy-update.md
+          - name: Delete
+            href: api/tokenlifetimepolicy-delete.md
+          - name: List applied to applications
+            href: api/tokenlifetimepolicy-list-appliesto.md
       - name: Privileged Identity Management
         items:
         - name: Privileged Identity Management
@@ -9964,6 +10092,121 @@
             href: api/multivaluelegacyextendedproperty-post-multivalueextendedproperties.md
           - name: Get multi-value property
             href: api/multivaluelegacyextendedproperty-get.md
+    - name: Universal Print
+      items:
+      - name: Print
+        href: resources/print.md
+      - name: Connectors
+        href: resources/printconnector.md
+        items:
+        - name: List
+          href: api/print-list-connectors.md
+        - name: Get
+          href: api/printconnector-get.md
+        - name: Update
+          href: api/printconnector-update.md
+        - name: Delete
+          href: api/printconnector-delete.md
+      - name: Print jobs
+        href: resources/printjob.md
+        items:
+        - name: Create
+          href: api/printer-post-jobs.md
+        - name: Get
+          href: api/printjob-get.md
+        - name: Start
+          href: api/printjob-startprintjob.md
+        - name: Cancel
+          href: api/printjob-cancelprintjob.md
+      - name: Printers
+        href: resources/printer.md
+        items:
+        - name: List
+          href: api/print-list-printers.md
+        - name: Get
+          href: api/printer-get.md
+        - name: Delete
+          href: api/printer-delete.md
+        - name: Get capabilities
+          href: api/printer-getcapabilities.md
+        - name: List connectors
+          href: api/printer-list-connectors.md
+        - name: List print jobs
+          href: api/printer-list-jobs.md
+        - name: Create print job
+          href: api/printer-post-jobs.md
+        - name: List allowed users
+          href: api/printer-list-allowedusers.md
+        - name: List allowedGroups
+          href: api/printer-list-allowedgroups.md
+        - name: Add allowed group
+          href: api/printer-post-allowedgroups.md
+        - name: Add allowed user
+          href: api/printer-post-allowedusers.md
+        - name: Delete allowed group
+          href: api/printer-delete-allowedgroup.md
+        - name: Delete allowed user
+          href: api/printer-delete-alloweduser.md
+        - name: Reset defaults
+          href: api/printer-resetdefaults.md
+      - name: Printer shares
+        href: resources/printershare.md
+        items:
+        - name: List
+          href: api/print-list-printershares.md
+        - name: Create
+          href: api/print-post-printershares.md
+        - name: Get
+          href: api/printershare-get.md
+        - name: Update
+          href: api/printershare-update.md
+        - name: Delete
+          href: api/printershare-delete.md
+      - name: Reports
+        items:
+        - name: Organized by printer
+          items:
+          - name: Get
+            href: api/printusagesummarybyprinter-get.md
+          - name: List a printer's archived print jobs
+            href: api/reports-getprinterarchivedprintjobs.md
+          - name: List daily reports by printer
+            href: api/reportroot-list-dailyprintusagesummariesbyprinter.md
+          - name: List monthly reports by printer
+            href: api/reportroot-list-monthlyprintusagesummariesbyprinter.md
+        - name: Organized by user or group
+          items:
+          - name: Get
+            href: api/printusagesummarybyuser-get.md
+          - name: List a user's archived print jobs
+            href: api/reports-getuserarchivedprintjobs.md
+          - name: List a group's archived print jobs
+            href: api/reports-getgrouparchivedprintjobs.md
+          - name: List daily reports by user
+            href: api/reportroot-list-dailyprintusagesummariesbyuser.md
+          - name: List monthly reports by user
+            href: api/reportroot-list-monthlyprintusagesummariesbyuser.md
+      - name: Services
+        href: resources/printservice.md
+        items:
+          - name: List
+            href: api/print-list-services.md
+          - name: Get
+            href: api/printservice-get.md
+          - name: Endpoint
+            href: resources/printserviceendpoint.md
+            items:
+            - name: Get endpoint
+              href: api/printserviceendpoint-get.md
+            - name: List a service's endpoints
+              href: api/printservice-list-endpoints.md
+      - name: Settings
+        href: resources/printsettings.md
+        items:
+        - name: Get
+          href: api/print-get-settings.md
+        - name: Update
+          href: api/print-update-settings.md
     - name: Reports
       items:
       - name: Identity and access reports

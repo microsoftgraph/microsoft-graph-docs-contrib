@@ -4,10 +4,12 @@ description: "Govern access to resources including groups, apps and sites throug
 localization_priority: Normal
 author: "markwahl-msft"
 ms.prod: "microsoft-identity-platform"
-doc_type: "resourcePageType"
+doc_type: "conceptualPageType"
 ---
 
 # Working with the Azure AD entitlement management API
+
+Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 

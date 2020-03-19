@@ -9,6 +9,8 @@ ms.prod: "microsoft-identity-platform"
 
 # Create application
 
+Namespace: microsoft.graph
+
 Create a new [application](../resources/application.md) object.
 
 ## Permissions
