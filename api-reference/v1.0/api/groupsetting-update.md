@@ -9,9 +9,9 @@ doc_type: apiPageType
 
 # Update a group setting
 
-Update the properties of a [groupSetting](../resources/groupsetting.md) object for tenant-wide [group](../resources/group.md) settings or a specific group setting.
-
 Namespace: microsoft.graph
+
+Update the properties of a [groupSetting](../resources/groupsetting.md) object for tenant-wide [group](../resources/group.md) settings or a specific group setting.
 
 ## Permissions
 
