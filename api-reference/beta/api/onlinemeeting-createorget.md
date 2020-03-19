@@ -50,6 +50,8 @@ In the request body, provide a JSON object with the following parameters.
 | startDateTime    | DateTime                                 | The meeting start time in UTC. |
 | subject          | String                                   | The subject of the online meeting. |
 
+>**Note:** If the 'startDateTime' and 'endDateTime' are not provided, the values will default to the datetime value that is default to the system. In C#, that value is  "01/01/0001"
+
 ## Response
 If successful, this method returns a `200 OK` response code and an [onlineMeeting](../resources/onlinemeeting.md) object in the response body.
 
