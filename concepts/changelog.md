@@ -78,7 +78,7 @@ For details about known issues with Microsoft Graph APIs, see [Known issues](kno
 | Change type | Version | Description                                                                                                                                               |
 |-------------|---------|-----------------------------------------------------------------------------------------------------------------------------------------------------------|
 | Change      | beta    | The [externalFile](/graph/api/resources/externalfile?view=graph-rest-beta) resource has been deprecated.                                                  |
-| Change      | beta    | The [externalItem](/graph/api/resources/externalfile?view=graph-rest-beta) resource now supports updating the `content` and `properties` properties.      |
+| Change      | beta    | The [externalItem](/graph/api/resources/externalfile?view=graph-rest-beta) resource now supports updating the **content** and **properties** properties.      |
 | Change      | beta    | Operations on [externalItem](/graph/api/resources/externalfile?view=graph-rest-beta) resources now return a `Retry-After` header when they are throttled. |
 
 ### Teamwork (Microsoft Teams)
