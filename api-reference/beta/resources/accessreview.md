@@ -121,11 +121,11 @@ The `accessReviewSettings` provides additional settings when creating an access 
 
 ## The autoReviewSettings type
 
-The `autoReviewSettings` is embedded within the access review settings, and specifies the behavior for the feature when an access review completes.  The type has one property, `notReviewedResult`.
+The `autoReviewSettings` is embedded within the access review settings, and along with `autoReviewEnabled` specifies the behavior for the feature when an access review completes.  The type has one property, `notReviewedResult`.  If you do not wish to have a review decision recorded unless the reviewer makes an explicit choice, set `autoReviewEnabled` to false.  If you wish to have the system provide a decision even if the reviewer does not make a choice, set `autoReviewEnabled` to true and include `autoReviewSettings` with the `notReviewedResult` property.  Then, when a review completes, based on the `notReviewedResult` property, the decision will be recorded to either `Approve` or `Deny`.   
 
 | Property                     | Type     | Description                          |
 | :--------------------------- | :------  | :----------                          |
-| `notReviewedResult`          |`String`  | Must be one of `Approve`, `Deny`, or `Recommendation`. |
+| `notReviewedResult`          |`String`  | Must be one of `Approve`, `Deny`, or `Recommendation`.  If `Recommendation`, then `accessRecommendationsEnbaled` in the settings should also be set to true. |
 
 
 ## The accessReviewRecurrenceSettings type
