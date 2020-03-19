@@ -13,7 +13,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-In the Azure AD [access reviews](accessreviews-root.md) feature, the `accessReview` represents an access review.  
+Represents an Azure AD [access review](accessreviews-root.md).  
 
 
 ## Methods
