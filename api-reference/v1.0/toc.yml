@@ -3521,6 +3521,8 @@
           href: api/orgcontact-list.md
         - name: Get org contact
           href: api/orgcontact-get.md
+        - name: Get org contact delta
+          href: api/orgcontact-delta.md
         - name: List direct reports
           href: api/orgcontact-list-directreports.md  
         - name: List memberOf
