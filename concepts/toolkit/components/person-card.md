@@ -33,9 +33,12 @@ The component uses Microsoft Graph to provide additional details about the user.
 The Person-Card component uses [templates](../templates.md) that allow you to add or replace portions of the component. To specify a template, include a `<template>` element inside of a component and set the `data-type` value to one of the following.
 
 | Data type | Data context | Description |
-| --- | --- | --- |
+| - | - | - |
+| no-data | null | The template used when no data is available.
 | default | `person`: The person details object <br> `personImage`: The URL of the image | The default template replaces the entire component with your own. |
-| additional-details | `person`: The person details object <br> `personImage`: the URL of the image | The template used to add additional content to the card. |
+| person-details | `person`: The person details object | The template used to render the top part of the person card. |
+| contact-details | `person`: The person details object | The template used to override the contact details part of the additional details container. |
+| additional-details | `person`: The person details object <br> `personImage`: the URL of the image | The template used to add custom content to the additional details container. |
 
 For example, you can use a template to customize the component attached to the `mgt-person` component and a template to add additional details in the card. 
 
@@ -79,3 +82,18 @@ This component uses the [Person component](./person.md) to display the user and 
 ## Authentication
 
 The Person-Card control uses the global authentication provider described in the [authentication documentation](./../providers.md). 
+
+## Extend for more control
+
+For more complex scenarios or a truly custom UX, this component exposes several `protected render*` methods for override in component extensions:
+
+| Method | Description |
+| - | - |
+| `renderNoData` | Render a state when no person data is available. | 
+| `renderPersonDetails` | Render the main body of the person card (image, name, icons). |
+| `renderPersonImage` | Render the image part of the person details. |
+| `renderPersonName` | Render the name/title part of the person details. |
+| `renderContactIcons` | Render the contact icons part of the person details. |
+| `renderAdditionalDetailsButton` | Render the button to expand the additional details. |
+| `renderAdditionalDetails` | Render the content in the expanded additional details container. |
+| `renderContactDetails` | Render the contact details part of the additional details. |
