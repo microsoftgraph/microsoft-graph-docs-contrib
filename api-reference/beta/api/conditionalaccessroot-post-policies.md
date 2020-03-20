@@ -25,7 +25,8 @@ One of the following permissions is required to call this API. To learn more, in
 |Delegated (personal Microsoft account) | Not supported. |
 |Application                            | Not supported. |
 
-Note: Policy.Read.All scope is temporarily required to call this API while we are working on resolving the Policy.ReadWrite.ConditionalAccess scope to read policies from the directory.
+> **Note:** Currently, the Policy.Read.All permission is required to call this API. In the future, the Policy.ReadWrite.ConditionalAccess permission will enable you to read policies from the directory.
+
 
 ## HTTP request
 
