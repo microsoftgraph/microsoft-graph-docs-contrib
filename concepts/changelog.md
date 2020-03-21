@@ -13,6 +13,21 @@ For details about known issues with Microsoft Graph APIs, see [Known issues](kno
 
 ## March 2020
 
+### Calendar
+
+| **Change type** | **Version** | **Description**                          |
+|:----------------|:------------|:-----------------------------------------|
+| Addition | Beta | Added the **calendarGroupId** property to the [calendar](/graph/api/resources/calendar?view=graph-rest-beta) entity. |
+| Addition | Beta | Added the **isDraft** property to the [event](/graph/api/resources/event?view=graph-rest-beta) entity. |
+
+### Cloud communications
+
+| **Change type** | **Version** | **Description** |
+|:---|:---|:---|
+|Addition|beta|Added the [logTeleconferenceDeviceQuality](/graph/api/call-logteleconferencedevicequality) function on the [call](/graph/api/resources/call) collection.|
+|Addition|beta|Added the **callChainId** property to the [call](/graph/api/resources/call.md) entity.|
+|Addition|beta|Added new complex types:<br/>[teleconferenceDeviceQuality](/graph/api/resources/teleconferencedevicequality)<br/>[teleconferenceDeviceMediaQuality](/graph/api/resources/teleconferencedevicemediaquality)<br/>[teleconferenceDeviceAudioQuality](/graph/api/resources/teleconferencedeviceaudioquality)<br/>[teleconferenceDeviceVideoQuality](/graph/api/resources/teleconferencedevicevideoquality)<br/>[teleconferenceDeviceScreenSharingQuality](/graph/api/resources/teleconferencedevicescreensharingquality).|
+
 ### Devices and apps (Microsoft Intune)
 
 | **Change type** | **Version** | **Description** |
@@ -45,21 +60,6 @@ For details about known issues with Microsoft Graph APIs, see [Known issues](kno
 |Addition|beta|Added the **deliveryOptimizationPriority** property to the [win32LobAppAssignmentSettings](/graph/api/resources/intune-apps-win32lobappassignmentsettings?view=graph-rest-beta) complex type|
 |Addition|beta|Added the **deviceOsHigherThanDesiredOsVersion** member to the [iosUpdatesInstallStatus](/graph/api/resources/intune-deviceconfig-iosupdatesinstallstatus?view=graph-rest-beta) enum type|
 
-### Calendar
-
-| **Change type** | **Version** | **Description**                          |
-|:----------------|:------------|:-----------------------------------------|
-| Addition | Beta | Added the **calendarGroupId** property to the [calendar](/graph/api/resources/calendar?view=graph-rest-beta) entity. |
-| Addition | Beta | Added the **isDraft** property to the [event](/graph/api/resources/event?view=graph-rest-beta) entity. |
-
-### Cloud communications
-
-| **Change type** | **Version** | **Description** |
-|:---|:---|:---|
-|Addition|beta|Added the [logTeleconferenceDeviceQuality](/graph/api/call-logteleconferencedevicequality) function on the [call](/graph/api/resources/call) collection.|
-|Addition|beta|Added the **callChainId** property to the [call](/graph/api/resources/call.md) entity.|
-|Addition|beta|Added new complex types:<br/>[teleconferenceDeviceQuality](/graph/api/resources/teleconferencedevicequality)<br/>[teleconferenceDeviceMediaQuality](/graph/api/resources/teleconferencedevicemediaquality)<br/>[teleconferenceDeviceAudioQuality](/graph/api/resources/teleconferencedeviceaudioquality)<br/>[teleconferenceDeviceVideoQuality](/graph/api/resources/teleconferencedevicevideoquality)<br/>[teleconferenceDeviceScreenSharingQuality](/graph/api/resources/teleconferencedevicescreensharingquality).|
-
 ### Identity and access (Azure AD)
 
 | **Change type** | **Version**   | **Description**                          |
@@ -75,11 +75,47 @@ For details about known issues with Microsoft Graph APIs, see [Known issues](kno
 |:----------------|:------------|:-----------------------------------------|
 | Change          | beta and v1.0  | For delegated permissions to allow apps to read Office 365 service usage reports on behalf of a user, added Teams Service Administrator and Teams Communications Administrator as accepted user roles. For more details, see [Authorization for APIs to read Office 365 usage reports](reportroot-authorization.md).|
 
+### Search
+
+| Change type | Version | Description                                                                                                                                               |
+|-------------|---------|-----------------------------------------------------------------------------------------------------------------------------------------------------------|
+| Change      | beta    | The [externalFile](/graph/api/resources/externalfile?view=graph-rest-beta) resource has been deprecated.                                                  |
+| Change      | beta    | The [externalItem](/graph/api/resources/externalfile?view=graph-rest-beta) resource now supports updating the **content** and **properties** properties.      |
+| Change      | beta    | Operations on [externalItem](/graph/api/resources/externalfile?view=graph-rest-beta) resources now return a `Retry-After` header when they are throttled. |
+
 ### Teamwork (Microsoft Teams)
 
 | **Change type** | **Version** | **Description**                          |
 | :-------------- | :---------- | :--------------------------------------- |
 | Addition | Beta | Added Support for ChannelMessage.Read.All to APIs for reading [chatMessages](/graph/api/resources/chatmessage?view=graph-rest-beta) in channels. |
+
+### Universal Print
+
+Added new APIs and resources for managing and printing to printers by using the Universal Print service.
+
+| **Change type** | **Version**   | **Description**                          |
+|:---|:---|:---|
+| Addition | beta | Added the [archivedPrintJob](/graph/api/resources/archivedprintjob) entity.|
+| Addition | beta | Added the [deviceHealth](/graph/api/resources/devicehealth) complex type.|
+| Addition | beta | Added the [integerRange](/graph/api/resources/integerrange) complex type.|
+| Addition | beta | Added the [print](/graph/api/resources/print) entity.|
+| Addition | beta | Added the [printConnector](/graph/api/resources/printconnector) entity.|
+| Addition | beta | Added the [printDocument](/graph/api/resources/printdocument) entity.|
+| Addition | beta | Added the [printer](/graph/api/resources/printer) entity.|
+| Addition | beta | Added the [printerCapabilities](/graph/api/resources/printercapabilities) complex type.|
+| Addition | beta | Added the [printerDefaults](/graph/api/resources/printerdefaults) complex type.|
+| Addition | beta | Added the [printerDocumentConfiguration](/graph/api/resources/printerdocumentconfiguration) complex type.|
+| Addition | beta | Added the [printerLocation](/graph/api/resources/printerlocation) complex type.|
+| Addition | beta | Added the [printerShare](/graph/api/resources/printershare) entity.|
+| Addition | beta | Added the [printerStatus](/graph/api/resources/printerstatus) complex type.|
+| Addition | beta | Added the [printJob](/graph/api/resources/printJob) entity.|
+| Addition | beta | Added the [printJobStatus](/graph/api/resources/printjobstatus) complex type.|
+| Addition | beta | Added the [printPageRange](/graph/api/resources/printpagerange) complex type.|
+| Addition | beta | Added the [printService](/graph/api/resources/printpagerange) entity.|
+| Addition | beta | Added the [printServiceEndpoint](/graph/api/resources/printserviceendpoint) entity.|
+| Addition | beta | Added the [printSettings](/graph/api/resources/printsettings) complex type.|
+| Addition | beta | Added the [printUsageSummaryByPrinter](/graph/api/resources/printusagesummarybyprinter) entity.|
+| Addition | beta | Added the [printUsageSummaryByUser](/graph/api/resources/printusagesummarybyuser) entity.|
 
 ## February 2020
 
@@ -143,7 +179,7 @@ Added new APIs and resources for subscribing to and retrieving call records from
 
 | **Change type** | **Version**   | **Description**                          |
 |:---|:---|:---|
-| Addition | beta and v1.0 | Added the **latestSupportedTlsVersion** property to the [subscription](/graph/api/resources/subscription?view=graph-rest-1.0) entity. Specifies the latest TLS version that the notification endpoint supports. Allows subscribers to use a deprecated version of TLS for a limited period. For details, see [Microsoft Graph subscriptions - deprecating TLS 1.0 and 1.1](https://developer.microsoft.com/graph/blogs/microsoft-graph-subscriptions-deprecating-tls-1-0-and-1-1/). 
+| Addition | beta and v1.0 | Added the **latestSupportedTlsVersion** property to the [subscription](/graph/api/resources/subscription?view=graph-rest-1.0) entity. Specifies the latest TLS version that the notification endpoint supports. Allows subscribers to use a deprecated version of TLS for a limited period. For details, see [Microsoft Graph subscriptions - deprecating TLS 1.0 and 1.1](https://developer.microsoft.com/graph/blogs/microsoft-graph-subscriptions-deprecating-tls-1-0-and-1-1/).
 | Change | beta |Updated the existing policies collection with a [policies](/graph/api/resources/policy-overview?view=graph-rest-beta) URL segment. Typed policy resources are now grouped under the policies segment as described in [this blog post](https://developer.microsoft.com/identity/blogs/breaking-changes-policy-api-microsoft-graph-beta/). This update adds four typed policy resources: <br> <li>[activityBasedTimeoutPolicies](/graph/api/resources/activityBasedTimeoutPolicy?view=graph-rest-beta)</li> <li>[claimsMappingPolicies](/graph/api/resources/claimsMappingPolicy?view=graph-rest-beta) </li> <li>[homeRealmDiscoveryPolicies](/graph/api/resources/homeRealmDiscoveryPolicy?view=graph-rest-beta) and </li> <li>[tokenLifetimePolicies](/graph/api/resources/tokenlifetimepolicy?view=graph-rest-beta)</li> |
 | Addition | beta | Added [activityBasedTimeoutPolicy](/graph/api/resources/activityBasedTimeoutPolicy?view=graph-rest-beta) resource type controls automatic sign-out for web sessions after a period of inactivity, for applications that support activity-based timeout functionality.|
 | Addition | beta |Added the [claimsMappingPolicy](/graph/api/resources/claimsMappingPolicy?view=graph-rest-beta) resource type, which controls the claims mapping for WS-Fed, SAML, OAuth 2.0, and OpenID Connect protocols, for tokens issued to a specific application.|
@@ -219,7 +255,7 @@ Added new APIs and resources for subscribing to and retrieving call records from
 | Change | beta and v1.0 | The [Update alert](/graph/api/alert-update?view=graph-rest-1.0&tabs=http) method now updates the **comments** field with the following values only: <br/> `Closed in IPC`, `Closed in MCAS`.|
 
 ### Teamwork (Microsoft Teams)
- 
+
 | **Change type** | **Version**   | **Description**                          |
 | :-------------- | :------------ | :--------------------------------------- |
 |Addition | v1.0 | Added **primaryChannel** navigation property to team resource type.|
@@ -247,8 +283,8 @@ Introduced presence in beta and added cloud communications APIs to v1.0.
 |Addition|beta|Add the [presence](/graph/api/resources/presence?view=graph-rest-beta) resource and associated methods, and introduced the Presence.Read and Presence.Read.All permissions.|
 |Addition|v1.0|Added the following APIs: [create call](/graph/api/application-post-calls?view=graph-rest-1.0), [call answer](/graph/api/call-answer?view=graph-rest-1.0), [call reject](/graph/api/call-reject?view=graph-rest-1.0), [call get](/graph/api/call-get?view=graph-rest-1.0), [call delete](/graph/api/call-delete?view=graph-rest-1.0), [call mute](/graph/api/call-mute?view=graph-rest-1.0), [call-unmute](/graph/api/call-unmute?view=graph-rest-1.0), [call change screen sharing role](/graph/api/call-changescreensharingrole?view=graph-rest-1.0), [call transfer](/graph/api/call-transfer?view=graph-rest-1.0), [call redirect](/graph/api/call-redirect?view=graph-rest-1.0), [Play a prompt](/graph/api/call-playprompt?view=graph-rest-1.0), [Record Response](/graph/api/call-recordresponse?view=graph-rest-1.0), [Subscribe to tne](/graph/api/call-subscribetotone?view=graph-rest-1.0), [list participants](/graph/api/call-list-participants?view=graph-rest-1.0), [invite participants](/graph/api/participant-invite?view=graph-rest-1.0), [get participants](/graph/api/participant-get?view=graph-rest-1.0), [mute participants](/graph/api/participant-mute?view=graph-rest-1.0), [create online meeting](/graph/api/application-post-onlinemeeting?view=graph-rest-1.0), [get online meeting](/graph/api/onlinemeeting-get?view=graph-rest-1.0), and [call keep alive](/graph/api/call-keepalive?view=graph-rest-1.0).|
 |Addition|v1.0|Added the following resources: [call](/graph/api/resouces/call?view=graph-rest-1.0), [participant](/graph/api/resouces/participant?view=graph-rest-1.0), and [onlinemeetings](/graph/api/resouces/onlinemeetings?view=graph-rest-1.0).|
-| Change        | Beta        | Renamed IVR API Record to [recordResponse](/graph/api/call-record?view=graph-rest-beta). | 
-| Change        | Beta        | Removed [onlineMeeting](/graph/api/resources/onlinemeeting?view=graph-rest-beta) object properties **isCanceled**, **canceledDateTime**, and **entryExitAnnouncement**. Renamed property **joinUrl** to **joinWebUrl**. | 
+| Change        | Beta        | Renamed IVR API Record to [recordResponse](/graph/api/call-record?view=graph-rest-beta). |
+| Change        | Beta        | Removed [onlineMeeting](/graph/api/resources/onlinemeeting?view=graph-rest-beta) object properties **isCanceled**, **canceledDateTime**, and **entryExitAnnouncement**. Renamed property **joinUrl** to **joinWebUrl**. |
 | Addition        | Beta & v1.0       | Added the [delete onlineMeeting](/graph/api/onlinemeeting-delete.md) operation.|
 
 ### Devices and apps (Microsoft Intune)
@@ -344,7 +380,7 @@ Introduced version 1.1 of the Microsoft Graph Toolkit.
 | Change          | beta and v1.0  | For delegated permissions to allow apps to read Office 365 service usage reports on behalf of a user, the tenant administrator must have assigned the user an Azure AD limited administrator role. For more details, see [Authorization for APIs to read Office 365 usage reports](reportroot-authorization.md).|
 
 ### Teamwork (Microsoft Teams)
- 
+
 | **Change type** | **Version**   | **Description**                          |
 | :-------------- | :------------ | :--------------------------------------- |
 | Addition | Beta | Added [notifications](/graph/api/subscription-post-subscriptions?view=graph-rest-beta) for new and edited channel messages, and new and edited chat messages. |
@@ -588,9 +624,9 @@ Microsoft Search is now exposing a way to search and index data in Microsoft Gra
 
 | **Change type** | **Version** | **Description**                  |
 |:----------------|:------------|:-----------------------------------------|
-| Addition | Beta | Added new entities: <br/>[authenticationDetail](/graph/api/authenticationDetail?view=graph-rest-beta)<br/>[keyValue](/graph/api/keyValue?view=graph-rest-beta)<br/>[networkLocationDetail](/graph/api/networkLocationDetail?view=graph-rest-beta)|
+| Addition | Beta | Added new entities: <br/>[authenticationDetail](/graph/api/resources/authenticationDetail?view=graph-rest-beta)<br/>[keyValue](/graph/api/resources/keyValue?view=graph-rest-beta)<br/>[networkLocationDetail](/graph/api/resources/networkLocationDetail?view=graph-rest-beta)|
 | Addition | Beta | Added the **alternateSignInName**, **ServicePrincipalId**, **ServicePrincipalName**, and **authenticationProcessingDetails** properties to the [signIn](/graph/api/resources/signin?view=graph-rest-beta) resource. |
-| Deletion | Beta | Moved the reference to [mfaDetail](/graph/api/resources/mfadetail?view=graph-rest-beta) from [signIn](/graph/api/resources/signin?view=graph-rest-beta) to [authenticationDetail](/graph/api/authenticationDetail?view=graph-rest-beta). |
+| Deletion | Beta | Moved the reference to [mfaDetail](/graph/api/resources/mfadetail?view=graph-rest-beta) from [signIn](/graph/api/resources/signin?view=graph-rest-beta) to [authenticationDetail](/graph/api/resources/authenticationDetail?view=graph-rest-beta). |
 | Addition | Beta | Added the **signInActivity** property to the [user](/graph/api/resources/user?view=graph-rest-beta) resource. |
 | Addition | Beta | Added a new entity type: [Trustframeworkkeyset](/graph/api/resources/trustframeworkkeyset?view=graph-rest-beta) |
 | Addition | Beta | Added new entity type: [Identityuserflow](/graph/api/resources/identityuserflow?view=graph-rest-beta) |
@@ -656,9 +692,9 @@ Microsoft Search is now exposing a way to search and index data in Microsoft Gra
 
 | **Change type** | **Version**   | **Description**                          |
 | :-------------- | :------------ | :--------------------------------------- |
-| Addition		| Beta			|Added the [Create and send notifications](/graph/api/user-post-notifications?view=graph-rest-beta) API to enable targeting users without managing the on-behalf-of tokens. |
+| Addition    | Beta      |Added the [Create and send notifications](/graph/api/user-post-notifications?view=graph-rest-beta) API to enable targeting users without managing the on-behalf-of tokens. |
 | Addition        | Beta          | Introduced the **targetPolicy** property on the [notification](/graph/api/resources/projectrome-notification?view=graph-rest-beta) resource to enable web endpoints to be targeted via webpush. |
-| Addition		| Beta			|  Added the **fallbackPolicy** property on the [notification](/graph/api/resources/projectrome-notification?view=graph-rest-beta) resource to enable guaranteed delivery on iOS for high-priority notifications. |
+| Addition    | Beta      |  Added the **fallbackPolicy** property on the [notification](/graph/api/resources/projectrome-notification?view=graph-rest-beta) resource to enable guaranteed delivery on iOS for high-priority notifications. |
 
 ### Teamwork (Microsoft Teams)
 
