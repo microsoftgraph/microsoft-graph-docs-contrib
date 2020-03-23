@@ -35,7 +35,7 @@ GET /auditLogs/provisioning
 
 ## Optional query parameters
 
-This method supports the following OData query parameter to help customize the response. Note that the filters are all case sensitive except for status. 
+This method supports the following OData query parameters to help customize the response. Note that the filters are all case sensitive except for status. 
 
 |Name     |Description                            |Example|
 |:--------------------|----------------|------------------------------------------------------------------------|
