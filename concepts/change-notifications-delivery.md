@@ -12,7 +12,7 @@ Change notifications can be delivered different ways to subscribers. If change n
 
 ## Using Azure Event Hubs to receive change notifications
 
-[Azure Event Hubs](https://azure.microsoft.com/en-us/services/event-hubs) is a popular real-time events ingestion and distribution service built for scale. You can leverage Azure Events Hubs to receive change notifications instead of traditional webhooks. This feature is currently in preview.  
+[Azure Event Hubs](https://azure.microsoft.com/services/event-hubs) is a popular real-time events ingestion and distribution service built for scale. You can leverage Azure Events Hubs to receive change notifications instead of traditional webhooks. This feature is currently in preview.  
 Using Azure Event Hubs to receive change notifications differs in a few ways including:
 
 - You don't rely on publicly exposed notification URLs : the Event Hubs SDK will relay the notifications to yoru application
@@ -99,4 +99,4 @@ The main difference during subscription creation will be the **notificationUrl**
 
 #### Receiving notifications
 
-Events will be now delivered to your application by Event Hubs, please refer to [receiving events](https://docs.microsoft.com/en-us/azure/event-hubs/get-started-dotnet-standard-send-v2#receive-events) from the Event Hubs documentation.
+Events will be now delivered to your application by Event Hubs, please refer to [receiving events](https://docs.microsoft.com/azure/event-hubs/get-started-dotnet-standard-send-v2#receive-events) from the Event Hubs documentation.
