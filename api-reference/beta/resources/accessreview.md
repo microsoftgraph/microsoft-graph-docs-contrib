@@ -125,7 +125,7 @@ The `autoReviewSettings` is embedded within the access review settings, and alon
 
 | Property                     | Type     | Description                          |
 | :--------------------------- | :------  | :----------                          |
-| `notReviewedResult`          |`String`  | Must be one of `Approve`, `Deny`, or `Recommendation`.  If `Recommendation`, then `accessRecommendationsEnbaled` in the settings should also be set to true. |
+| `notReviewedResult`          |`String`  | Must be one of `Approve`, `Deny`, or `Recommendation`.  If `Recommendation`, then `accessRecommendationsEnabled` in the settings should also be set to true. |
 
 
 ## The accessReviewRecurrenceSettings type
