@@ -25,8 +25,8 @@ One of the following permissions is required to call this API. To learn more, in
 |Delegated (personal Microsoft account) | Not supported. |
 |Application                            | Not supported. |
 
-[!NOTE]
-This API has a [known issue](/graph/known-issues#permissions) related to permissions.
+> [!NOTE]
+> This API has a [known issue](/graph/known-issues#permissions) related to permissions.
 
 ## HTTP request
 
