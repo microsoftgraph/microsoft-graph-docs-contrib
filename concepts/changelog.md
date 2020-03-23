@@ -13,6 +13,12 @@ For details about known issues with Microsoft Graph APIs, see [Known issues](kno
 
 ## March 2020
 
+### Subscriptions
+
+| **Change type** | **Version** | **Description**                          |
+|:----------------|:------------|:-----------------------------------------|
+| Addition | Beta | Added the ability to get [change notifications delivered via Event Hub](/graph/api/concepts/change-notifications-delivery?view=graph-rest-beta). |
+
 ### Calendar
 
 | **Change type** | **Version** | **Description**                          |
