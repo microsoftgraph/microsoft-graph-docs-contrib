@@ -99,4 +99,4 @@ The main difference during subscription creation will be the **notificationUrl**
 
 #### Receiving notifications
 
-Events will be now delivered to your application by Event Hubs, please refer to [receiving events](https://docs.microsoft.com/en-us/azure/event-hubs/get-started-dotnet-standard-send-v2#receive-events) from the Event Hubs documentation.  
+Events will be now delivered to your application by Event Hubs, please refer to [receiving events](https://docs.microsoft.com/en-us/azure/event-hubs/get-started-dotnet-standard-send-v2#receive-events) from the Event Hubs documentation.
