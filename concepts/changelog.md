@@ -13,6 +13,12 @@ For details about known issues with Microsoft Graph APIs, see [Known issues](kno
 
 ## March 2020
 
+### Subscriptions
+
+| **Change type** | **Version** | **Description**                          |
+|:----------------|:------------|:-----------------------------------------|
+| Deletion | Beta | Removed the **includeProperties** property to the [subscription](/graph/api/resources/subscription?view=graph-rest-beta) entity. (replaced by includeResourceData) |
+
 ### Calendar
 
 | **Change type** | **Version** | **Description**                          |
