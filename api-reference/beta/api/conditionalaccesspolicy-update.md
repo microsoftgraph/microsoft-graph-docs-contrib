@@ -26,7 +26,7 @@ One of the following permissions is required to call this API. To learn more, in
 |Application                            | Not supported. |
 
 [!NOTE]
-This API has a [known issue](/concepts/known-issues.md#permissions) related to permissions.
+This API has a [known issue](/graph/known-issues.md#permissions) related to permissions.
 
 ## HTTP request
 
