@@ -90,7 +90,6 @@ Content-length: 1313
   "isShared": true,
   "registeredDateTime": "2020-02-04T00:00:00.0000000Z",
   "acceptingJobs": true,
-  "registeredBy": {},
   "status": {
     "processingState": "idle",
     "processingStateReasons": [],
