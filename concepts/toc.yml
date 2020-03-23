@@ -384,7 +384,7 @@ items:
               - name: Notifications with resource data (preview)
                 href: webhooks-with-resource-data.md
               - name: Get notifications delivered different ways (preview)
-                href: /graph/change-notifications-delivery?context=graph/api/beta
+                href: change-notifications-delivery.md
           - name: Track changes
             displayName: Delta query, Outlook calendar, Groups, Outlook mail, Users
             items:
