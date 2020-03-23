@@ -379,4 +379,6 @@ Some functionality is not yet available in Microsoft Graph. If you don't see the
 
 ## Conditional Access
 
+### Permissions
+
 Currently Policy.Read.All scope is required to call POST and PATCH APIs. In the future, Policy.ReadWrite.ConditionalAccess scope will enable you to read policies from the directory.
