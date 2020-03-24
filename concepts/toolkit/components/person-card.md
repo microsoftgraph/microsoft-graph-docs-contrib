@@ -92,8 +92,11 @@ For more complex scenarios or a truly custom UX, this component exposes several 
 | `renderNoData` | Render a state when no person data is available. | 
 | `renderPersonDetails` | Render the main body of the person card (image, name, icons). |
 | `renderPersonImage` | Render the image part of the person details. |
-| `renderPersonName` | Render the name/title part of the person details. |
+| `renderPersonName` | Render the name part of the person details. |
+| `renderPersonTitle` | Render the title part of the person details. |
+| `renderPersonSubtitle` | Render the subtitle part of the person details. |
 | `renderContactIcons` | Render the contact icons part of the person details. |
-| `renderAdditionalDetailsButton` | Render the button to expand the additional details. |
-| `renderAdditionalDetails` | Render the content in the expanded additional details container. |
-| `renderContactDetails` | Render the contact details part of the additional details. |
+| `renderExpandedDetailsButton` | Render the button to show the expanded details. |
+| `renderExpandedDetails` | Render the content in the expanded details container. |
+| `renderContactDetails` | Render the contact details part of the expanded details. |
+| `renderAdditionalDetails` | Render the additional details part of the expanded details. |
