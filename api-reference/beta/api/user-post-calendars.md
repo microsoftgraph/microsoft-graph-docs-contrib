@@ -94,6 +94,7 @@ Content-type: application/json
     "color":"auto",
     "isDefaultCalendar":false,
     "changeKey":"DxYSthXJXEWwAQSYQnXvIgAAIxGttg==",
+    "calendarGroupId":null,
     "canShare":true,
     "canViewPrivateItems":true,
     "hexColor": "",

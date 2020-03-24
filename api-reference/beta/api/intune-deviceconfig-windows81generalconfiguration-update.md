@@ -1,15 +1,13 @@
 ---
 title: "Update windows81GeneralConfiguration"
 description: "Update the properties of a windows81GeneralConfiguration object."
-author: "rolyon"
+author: "davidmu1"
 localization_priority: Normal
 ms.prod: "Intune"
 doc_type: apiPageType
 ---
 
 # Update windows81GeneralConfiguration
-
-Namespace: microsoft.graph
 
 > **Important:** Microsoft Graph APIs under the /beta version are subject to change; production use is not supported.
 
@@ -256,7 +254,6 @@ Content-Length: 2869
   "workFoldersUrl": "https://example.com/workFoldersUrl/"
 }
 ```
-
 
 
 

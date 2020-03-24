@@ -1,15 +1,13 @@
 ---
 title: "ratingUnitedKingdomTelevisionType enum type"
 description: "TV content rating labels in United Kingdom"
-author: "rolyon"
+author: "davidmu1"
 localization_priority: Normal
 ms.prod: "Intune"
 doc_type: enumPageType
 ---
 
 # ratingUnitedKingdomTelevisionType enum type
-
-Namespace: microsoft.graph
 
 > **Important:** Microsoft Graph APIs under the /beta version are subject to change; production use is not supported.
 

@@ -131,6 +131,7 @@ The following Graph resources are available to manage app protection polices in 
 - [VPP licensing type](intune-apps-vpplicensingtype.md)
 - [Web app](intune-apps-webapp.md)
 - [Win32 LOB app](intune-apps-win32lobapp.md)
+- [Win32 LOB app delivery optimization priority](intune-apps-win32lobappdeliveryoptimizationpriority.md)
 - [Win32 LOB app detection](intune-apps-win32lobappdetection.md)
 - [Win32 LOB app detection operator](intune-apps-win32lobappdetectionoperator.md)
 - [Win32 LOB app file system detection](intune-apps-win32lobappfilesystemdetection.md)
