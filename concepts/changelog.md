@@ -17,7 +17,7 @@ For details about known issues with Microsoft Graph APIs, see [Known issues](kno
 
 | **Change type** | **Version**   | **Description**                          |
 |:---|:---|:---|
-| Addition | beta and v1.0 | Added the **authenticationRequirement** property and the **riskEventTypes_v2** to the [signin](/graph/api/resources/signin?view=graph-rest-1.0) entity. |
+| Addition | beta and v1.0 | Added the **authenticationRequirement** property and the **riskEventTypes_v2** property to the [signin](/graph/api/resources/signin?view=graph-rest-1.0) entity. |
 
 ### Reports | Office 365 usage reports
 
