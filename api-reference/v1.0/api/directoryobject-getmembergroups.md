@@ -9,6 +9,8 @@ doc_type: apiPageType
 
 # Get member groups
 
+Namespace: microsoft.graph
+
 Return all the groups that the specified user, group, or directory object is a member of. This function is transitive.
 
 ## Permissions

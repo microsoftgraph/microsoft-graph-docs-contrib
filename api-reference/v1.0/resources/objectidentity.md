@@ -9,6 +9,8 @@ author: "davidmu1"
 
 # objectIdentity resource type
 
+Namespace: microsoft.graph
+
 Represents an identity used to sign in to a user account. An identity can be provided by Microsoft, by organizations, or by social identity providers such as Facebook, Google, or Microsoft, that are tied to a user account. This enables the user to sign in to the user account with any of those associated identities.
 
 The **identities** property of the [user](user.md) resource is an **objectIdentity** object.

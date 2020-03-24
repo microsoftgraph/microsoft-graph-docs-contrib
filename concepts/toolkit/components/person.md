@@ -13,12 +13,11 @@ The person component also uses the [mgt-person-card](./person-card.md) to displa
 
 ## Example
 
-[jsfiddle example](https://jsfiddle.net/metulev/0jkzfr42/)
+The following example displays a person using the `mgt-person` component. You can use the code editor to see how [properties](#properties) change the behavior of the component.
 
-### Add the control to the HTML page
-```html
-<mgt-person person-query=""></mgt-person>
-```
+<iframe src="https://mgt.dev/iframe.html?id=components-mgt-person--person&source=docs" height="250"></iframe>
+
+[Open this example in mgt.dev](https://mgt.dev/?path=/story/components-mgt-person--person&source=docs)
 
 ## Setting the person details
 
@@ -42,7 +41,7 @@ You can use three properties to set the person details. Use only one of the foll
 
   If no image is provided, one will be fetched (if available).
 
-## Changing how the component looks
+## Properties
 
 You can use several properties to customize the component.
 

@@ -13,13 +13,11 @@ If the number of people to display exceeds the `show-max` value, not all people 
 
 ## Example
 
-[jsfiddle example](https://jsfiddle.net/metulev/jdv38fg0/)
+The following example shows the `mgt-people-picker` component. Start searching for a name to see the results render and use the code editor to see how [properties](#properties) change the behavior of the component.
 
-```html
-<mgt-people-picker></mgt-people-picker>
-```
+<iframe src="https://mgt.dev/iframe.html?id=components-mgt-people-picker--people-picker&source=docs" height="450"></iframe>
 
-![mgt-people-picker](./images/mgt-people-picker-image.png)
+[Open this example in mgt.dev](https://mgt.dev/?path=/story/components-mgt-people-picker--people-picker&source=docs)
 
 ## Properties
 
@@ -79,10 +77,12 @@ mgt-people-picker {
 
 | Data type | Data context | Description |
 | --- | --- | --- |
+| default | null: no data | The template used to override the rendering of the entire component.
 | loading | null: no data | The template used to render the state of picker while request to graph is being made. |
-| error | null: no data| The template used if user search returns no users. |
-| selected-person |person: The person details object| The template to render selected people. |
-| person | person: The person details object| The template to render people in the dropdown. |
+| error | null: no data | The template used if user search returns no users. |
+| no-data | null: no data | An alternative template used if user search returns no users. |
+| selected-person | person: The person details object | The template to render selected people. |
+| person | person: The person details object | The template to render people in the dropdown. |
 
 The following examples shows how to use the `error` template.
 
@@ -107,3 +107,19 @@ This component uses the following Microsoft Graph APIs and permissions.
 ## Authentication
 
 The control uses the global authentication provider described in the [authentication documentation](./../providers.md).
+
+## Extend for more control
+
+For more complex scenarios or a truly custom UX, this component exposes several `protected render*` methods for override in component extensions:
+
+| Method | Description |
+| - | - |
+| `renderInput` | Render the input text box. |
+| `renderSelectedPeople` | Render the selected people tokens. |
+| `renderSelectedPerson` | Render an individual person token. |
+| `renderFlyout` | Render the flyout chrome. |
+| `renderFlyoutContent` | Render the appropriate state in the results flyout. |
+| `renderLoading` | Render the loading state. |
+| `renderNoData` | Render the state when no results are found for the search query. |
+| `renderSearchResults` | Render the list of search results. |
+| `renderPersonResult` | Render an individual person search result. |

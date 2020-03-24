@@ -9,6 +9,8 @@ doc_type: apiPageType
 
 # Add a member
 
+Namespace: microsoft.graph
+
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 Use this API to add a member (user or group) to an administrative unit.

@@ -9,6 +9,8 @@ doc_type: resourcePageType
 
 # user resource type
 
+Namespace: microsoft.graph
+
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 Represents an Azure AD user account. Inherits from [directoryObject](directoryobject.md).

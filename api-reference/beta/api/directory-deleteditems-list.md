@@ -9,6 +9,8 @@ doc_type: apiPageType
 
 # List deleted items
 
+Namespace: microsoft.graph
+
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 Retrieve a list of recently deleted items from [deleted items](../resources/directory.md).

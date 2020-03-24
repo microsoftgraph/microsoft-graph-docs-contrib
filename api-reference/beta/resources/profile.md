@@ -9,6 +9,8 @@ doc_type: "resourcePageType"
  
 # profile resource type
 
+Namespace: microsoft.graph
+
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 Represents descriptive properties of a person in a tenant. These properties are surfaced in shared people experiences across Microsoft 365 and third-party services and experiences via Microsoft Graph. 

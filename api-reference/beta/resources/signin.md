@@ -10,6 +10,8 @@ ms.prod: "microsoft-identity-platform"
 
 # signIn resource type
 
+Namespace: microsoft.graph
+
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 Provides details about user or application sign-in activity in your directory. 
