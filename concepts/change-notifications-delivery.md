@@ -15,7 +15,7 @@ Change notifications can be delivered different ways to subscribers. If change n
 [Azure Event Hubs](https://azure.microsoft.com/services/event-hubs) is a popular real-time events ingestion and distribution service built for scale. You can leverage Azure Events Hubs to receive change notifications instead of traditional webhooks. This feature is currently in preview.  
 Using Azure Event Hubs to receive change notifications differs in a few ways including:
 
-- You don't rely on publicly exposed notification URLs : the Event Hubs SDK will relay the notifications to yoru application
+- You don't rely on publicly exposed notification URLs : the Event Hubs SDK will relay the notifications to your application
 - You don't need to implement the [notification URL validation](webhooks.md#notification-endpoint-validation)
 - You'll need to provision an Azure Event Hub
 - You'll need to provision an Azure Key Vault
