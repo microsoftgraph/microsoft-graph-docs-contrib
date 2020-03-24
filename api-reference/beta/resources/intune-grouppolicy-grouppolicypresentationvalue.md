@@ -1,15 +1,13 @@
 ---
 title: "groupPolicyPresentationValue resource type"
 description: "The base presentation value entity that stores the value for a single group policy presentation."
-author: "rolyon"
+author: "davidmu1"
 localization_priority: Normal
 ms.prod: "Intune"
 doc_type: resourcePageType
 ---
 
 # groupPolicyPresentationValue resource type
-
-Namespace: microsoft.graph
 
 > **Important:** Microsoft Graph APIs under the /beta version are subject to change; production use is not supported.
 

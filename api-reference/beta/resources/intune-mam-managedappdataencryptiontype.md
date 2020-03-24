@@ -1,15 +1,13 @@
 ---
 title: "managedAppDataEncryptionType enum type"
 description: "Represents the level to which app data is encrypted for managed apps"
-author: "rolyon"
+author: "davidmu1"
 localization_priority: Normal
 ms.prod: "Intune"
 doc_type: enumPageType
 ---
 
 # managedAppDataEncryptionType enum type
-
-Namespace: microsoft.graph
 
 > **Important:** Microsoft Graph APIs under the /beta version are subject to change; production use is not supported.
 

@@ -1,15 +1,13 @@
 ---
 title: "deviceManagementAbstractComplexSettingDefinition resource type"
 description: "Entity representing the defintion for an abstract complex setting"
-author: "rolyon"
+author: "davidmu1"
 localization_priority: Normal
 ms.prod: "Intune"
 doc_type: resourcePageType
 ---
 
 # deviceManagementAbstractComplexSettingDefinition resource type
-
-Namespace: microsoft.graph
 
 > **Important:** Microsoft Graph APIs under the /beta version are subject to change; production use is not supported.
 
