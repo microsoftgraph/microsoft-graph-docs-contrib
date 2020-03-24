@@ -9,6 +9,8 @@ doc_type: resourcePageType
 
 # user resource type
 
+Namespace: microsoft.graph
+
 Represents an Azure AD user account. Inherits from [directoryObject](directoryobject.md).
 
 This resource supports:

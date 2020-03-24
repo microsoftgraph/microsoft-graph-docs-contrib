@@ -13,13 +13,11 @@ This component uses multiple [mgt-person](./person.md) controls, but it can be b
 
 ## Example
 
-[jsfiddle example](https://jsfiddle.net/metulev/az6pqy2r/)
+The following example shows a group of people displayed using the `mgt-people` component. You can use the code editor to see how [properties](#properties) change the behavior of the component.
 
-```html
-<mgt-people></mgt-people>
-```
+<iframe src="https://mgt.dev/iframe.html?id=components-mgt-people--people&source=docs" height="350"></iframe>
 
-![mgt-people](./images/mgt-people.png)
+[Open this example in mgt.dev](https://mgt.dev/?path=/story/components-mgt-people--people&source=docs)
 
 ## Properties
 

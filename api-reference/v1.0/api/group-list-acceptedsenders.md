@@ -8,6 +8,8 @@ doc_type: apiPageType
 ---
 
 # List acceptedSenders
+
+Namespace: microsoft.graph
 Get a list of users or groups that are in the accepted-senders list for this group.
 
 Users in the accepted senders list can post to conversations of the group (identified in the GET request URL). 

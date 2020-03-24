@@ -9,6 +9,8 @@ doc_type: apiPageType
 
 # Get a reply to a channel message
 
+Namespace: microsoft.graph
+
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 Get a single reply to a [message](../resources/chatmessage.md) in a [channel](../resources/channel.md) of a team.
