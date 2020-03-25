@@ -800,6 +800,8 @@
           href: api/call-unmute.md
         - name: Mute application
           href: api/call-mute.md
+        - name: Update recording status
+          href: api/call-updaterecordingstatus.md
       - name: Online meeting
         href: resources/onlinemeeting.md
         items:
