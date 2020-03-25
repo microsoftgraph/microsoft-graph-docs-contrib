@@ -13,33 +13,33 @@ For details about known issues with Microsoft Graph APIs, see [Known issues](kno
 
 ## March 2020
 
-### Cloud Communications | Call
-
-| **Change type** | **Version**   | **Description**                          |
-| :-------------- | :------------ | :--------------------------------------- |
-|Addition|v1.0|Added new property `initiator` to [recordingInfo](/graph/api/resources/recordinginfo?view=graph-rest-1.0) complex type.
-|Addition|v1.0|Added new complex types:<br/>[recordingInfo](/graph/api/resources/recordingInfo?view=graph-rest-1.0)<br/>[callRoutes](/graph/api/resources/callRoutes?view=graph-rest-1.0)<br/>[incomingContext](/graph/api/resources/incomingContext?view=graph-rest-1.0)
-|Addition|v1.0|Added new property `recordingInfo` to [participant](/graph/api/resources/participant?view=graph-rest-1.0) entity.
-|Addition|v1.0|Added new property `recordingStatus` to [recordingInfo](/graph/api/resources/recordinginfo?view=graph-rest-1.0) complex type.
-|Addition|v1.0|Added new action [updateRecordingStatus](/graph/api/call-updaterecordingstatus?view=graph-rest-1.0) to [call](/graph/api/resources/call?view=graph-rest-1.0) entity.
-|Addition|v1.0|Added new property `endpointType` to [participantInfo](/graph/api/resources/participantinfo?view=graph-rest-1.0) complex type.
-|Addition|v1.0|Added new property `countryCode` to [participantInfo](/graph/api/resources/participantInfo?view=graph-rest-1.0) complex type.
-|Addition|v1.0|Added new property `incomingContext` to [call](/graph/api/resources/call?view=graph-rest-1.0) entity.
-|Addition|v1.0|Added new property `sourceParticipantId` to [incomingContext](/graph/api/resources/incomingContext?view=graph-rest-1.0) complex type.
-|Addition|v1.0|Added new property `observedParticipantId` to [incomingContext](/graph/api/resources/incomingContext?view=graph-rest-1.0) complex type.
-|Addition|v1.0|Added new property `onBehalfOf` to [incomingContext](/graph/api/resources/incomingContext?view=graph-rest-1.0) complex type.
-|Addition|v1.0|Added new property `transferor` to [incomingContext](/graph/api/resources/incomingContext?view=graph-rest-1.0) complex type.
-|Addition|v1.0|Added new property `callRoute` to [call](/graph/api/resources/call?view=graph-rest-1.0) entity.
-|Addition|v1.0|Added new property `final` to [callRoute](/graph/api/resources/callRoute?view=graph-rest-1.0) complex type.
-|Addition|v1.0|Added new property `original` to [callRoute](/graph/api/resources/callRoute?view=graph-rest-1.0) complex type.
-|Addition|v1.0|Added new property `routingType` to [callRoute](/graph/api/resources/callRoute?view=graph-rest-1.0) complex type.
-
 ### Calendar
 
 | **Change type** | **Version** | **Description**                          |
 |:----------------|:------------|:-----------------------------------------|
 | Addition | Beta | Added the **calendarGroupId** property to the [calendar](/graph/api/resources/calendar?view=graph-rest-beta) entity. |
 | Addition | Beta | Added the **isDraft** property to the [event](/graph/api/resources/event?view=graph-rest-beta) entity. |
+
+### Cloud communications | Call
+
+| **Change type** | **Version**   | **Description**                          |
+| :-------------- | :------------ | :--------------------------------------- |
+|Addition|v1.0|Added new property **initiator** to [recordingInfo](/graph/api/resources/recordinginfo?view=graph-rest-1.0) complex type.
+|Addition|v1.0|Added new complex types:<br/>[recordingInfo](/graph/api/resources/recordinginfo?view=graph-rest-1.0)<br/>[callRoutes](/graph/api/resources/callRoutes?view=graph-rest-1.0)<br/>[incomingContext](/graph/api/resources/incomingcontext?view=graph-rest-1.0)
+|Addition|v1.0|Added new property **recordingInfo** to [participant](/graph/api/resources/participant?view=graph-rest-1.0) entity.
+|Addition|v1.0|Added new property **recordingStatus** to [recordingInfo](/graph/api/resources/recordinginfo?view=graph-rest-1.0) complex type.
+|Addition|v1.0|Added new action [updateRecordingStatus](/graph/api/call-updaterecordingstatus?view=graph-rest-1.0) to [call](/graph/api/resources/call?view=graph-rest-1.0) entity.
+|Addition|v1.0|Added new property **endpointType** to [participantInfo](/graph/api/resources/participantinfo?view=graph-rest-1.0) complex type.
+|Addition|v1.0|Added new property **countryCode** to [participantInfo](/graph/api/resources/participantinfo?view=graph-rest-1.0) complex type.
+|Addition|v1.0|Added new property **incomingContext** to [call](/graph/api/resources/call?view=graph-rest-1.0) entity.
+|Addition|v1.0|Added new property **sourceParticipantId** to [incomingContext](/graph/api/resources/incomingcontext?view=graph-rest-1.0) complex type.
+|Addition|v1.0|Added new property **observedParticipantId** to [incomingContext](/graph/api/resources/incomingcontext?view=graph-rest-1.0) complex type.
+|Addition|v1.0|Added new property **onBehalfOf** to [incomingContext](/graph/api/resources/incomingcontext?view=graph-rest-1.0) complex type.
+|Addition|v1.0|Added new property **transferor** to [incomingContext](/graph/api/resources/incomingcontext?view=graph-rest-1.0) complex type.
+|Addition|v1.0|Added new property **callRoute** to [call](/graph/api/resources/call?view=graph-rest-1.0) entity.
+|Addition|v1.0|Added new property **final** to [callRoute](/graph/api/resources/callroute?view=graph-rest-1.0) complex type.
+|Addition|v1.0|Added new property **original** to [callRoute](/graph/api/resources/callroute?view=graph-rest-1.0) complex type.
+|Addition|v1.0|Added new property **routingType** to [callRoute](/graph/api/resources/callroute?view=graph-rest-1.0) complex type.
 
 ### Identity and access (Azure AD)
 
