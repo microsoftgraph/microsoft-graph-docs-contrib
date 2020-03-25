@@ -31,34 +31,38 @@ but it is not okay to GET /me/joinedTeams in a loop every 30 seconds to refresh 
 
 Apps that violate these terms of use may be subject to additional throttling or suspended entirely.
 
+## Acceptable use
+
+The following scenarios are not supported:
+- Using Teams as a log file. When your app sends a message, you should expect a person to read it.
+- Migrating messages from other messaging products or installations. The [Send message](/api/channel-post-messages?view=graph-rest-beta) API does not have the throughput necessary for a typical migration, and we are unable to adjust limits to assist migrations.
+
+
+
 ## Throttling limits
 
 See [Microsoft Graph throttling guidance](throttling.md) for guidance on how to handle 429 responses.
 
 ### General APIs
 
-| Teams request type                                   | Limit      |
-|-------------------------------------------|------------|
-| Graph API calls for an app/tenant         | 15000 requests every 10 seconds |
-| GET request for resources (except messages) |60 rps per app per tenant, 600 rps per app across all tenants |
-| GET /teams/```{team-id}```|  30 rps per app per tenant |
-| PATCH/DELETE /teams/```{team-id}```|  15 rps per app per tenant |
-| POST /teams/```{team-id}```, PUT /groups/```{team-id}```/team | 6 rps per app per tenant |
+Limits are expressed as requests per second (rps).
+
+| Teams request type                                   | Limit per app per tenant        | Limit per app across all tenants      |
+|------------------------------------------------------|---------------------------------|------------|
+| Any Graph API calls for Microsoft Teams              | 15000 requests every 10 seconds | n/a |
+| GET team, channel, tab, installedApps, appCatalogs   | 60 rps                          | 600 rps |
+| POST/PUT channel, tab, installedApps, appCatalogs    |  30 rps                         | 300 rps  |
+| PATCH team, channel, tab, installedApps, appCatalogs |  30 rps                         | 300 rps  |
+| DELETE channel, tab, installedApps, appCatalogs      |  15 rps                         | 150 rps  |
+| GET /teams/```{team-id}```, joinedTeams              |  30 rps                         | 300 rps  |
+| POST /teams/```{team-id}```, PUT /groups/```{team-id}```/team, clone | 6 rps | 150 rps  | 
+| GET channel message  | 5 rps | 100 rps |
+| GET 1:1/group chat message  | 3 rps | 30 rps |
+| POST channel message | 2 rps | 20 rps |
+| POST 1:1/group chat message | 2 rps | 20 rps |
 
 A maximum of 4 requests per second per app can be issued on a given team or channel.
 
-### Messaging APIs
-
-| Teams request type                  | Limit   |
-|---------------------------|-------------|
-| GET messaging for an app/tenant | 5 requests/second |
-| POST messaging for an app/tenant | 2 requests/second |
-| POST channel messages for a tenant | 5000 messages/day per channel |
-| POST channel messages for a user | 3000 messages/day per channel |
-
-The following scenarios are not supported:
-- Using Teams as a log file. When your app sends a message, you should expect a person to read it.
-- Migrating messages from other messaging products or installations. The [Send message](/api/channel-post-messages?view=graph-rest-beta) API does not have the throughput necessary for a typical migration, and we are unable to adjust limits to assist migrations.
 
 ## Microsoft Teams limits
 
@@ -79,6 +83,8 @@ The following limits apply to Office 365 Groups:
 | Group Mailbox size |  50 GB|
 
 Please refer to [Overview of Office 365 Groups for administrators](/office365/admin/create-groups/office-365-groups?view=o365-worldwide) for more information.
+
+https://docs.microsoft.com/en-us/microsoft-365/admin/create-groups/office-365-groups#group-limits
 
 ## Azure AD service limits and restrictions
 
