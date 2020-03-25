@@ -1,13 +1,13 @@
 ---
-title: "Teams-Channel-Picker component in the Microsoft Graph Toolkit"
-description: "You can use the mgt-teams-channel-picker to search for channels and teams associated with the user from the Micrsoft Graph."
+title: "Microsoft Teams Channel Picker component in the Microsoft Graph Toolkit"
+description: "You can use mgt-teams-channel-picker to search for channels and teams associated with the user from the Microsoft Graph."
 localization_priority: Normal
 author: vogtn
 ---
 
 # Teams-Channel-Picker component
 
-You can use the `mgt-teams-channel-picker` to search for channels and teams associated with the user from the Micrsoft Graph. The component will load all Teams the user has joined, and each channel associated to those teams. 
+A user can use the `mgt-teams-channel-picker` to search for channels and teams associated with the user from the Microsoft Graph. The component can search all Teams the user has joined, and each channel in those teams. 
 
 ## Example
 
@@ -17,40 +17,32 @@ The following example shows the `mgt-teams-channel-picker` component. Start sear
 
 [Open this example in mgt.dev](https://mgt.dev/?path=/story/components-mgt-teams-channel-picker--teams-channel-picker&source=docs)
 
-
-## Selected Channel and Team
-
-The selected channel section of the component renders the channel of the user's choice. 
-
 ![mgt-teams-channel-picker](./images/selected-channel.png)
 
-1. `SelectedItem()`
-2. `selectChannelsById()`
 
-**GET**
+## Getting the selected channel
 
-The public method `SelectedItem()` will retrieve the currently selected item in an `object` of [MicrosoftGraph.Channel](/graph/api/resources/channel?view=graph-rest-1.0) and [MicrosoftGraph.Team](/graph/api/resources/group?view=graph-rest-1.0)
+Use the `selectedItem` property to retrieve the currently selected channel and parent team. This value will be null if no channel has been selected. `selectedItem` contains two properties, `channel` ([MicrosoftGraph.Channel](/graph/api/resources/channel?view=graph-rest-1.0)) and `team` ([MicrosoftGraph.Team](/graph/api/resources/group?view=graph-rest-1.0))
 
-  ```javascript
-  const selectedItem = document.querySelector('mgt-teams-channel-picker').SelectedItem();
-  console.log(selectedItem.channel)
-  //returns: MicrosoftGraph.Channel
-  console.log(selectedItem.team);
-  //returns: MicrosoftGraph.Team
-  ```
+```javascript
+const channelPicker = document.querySelector('mgt-teams-channel-picker');
+console.log(channelPicker.selectedItem.channel);
+console.log(channelPicker.selectedItem.team);
+```
 
-**SET** 
+## Selecting a channel programmatically
 
-Below is the method to manually set a `selectedChannel` through `selectChannelsById()`. 
+Use the `selectChannelsById(channelId: string)` method to programmatically select a channel.
 
-- `selectChannelsById()` accepts an `string` of Microsoft graph [Channel.id](/graph/api/resources/channel?view=graph-rest-1.0) to find associated Team and Channel details for that selection. The control currently allows for one selection or Channel per component:
+> **Note:** the teams channel picker only supports single channel selection
 
-    ```javascript
-    // channelId = Microsoft Graph Channel, unique id property
-    document.querySelector('mgt-teams-channel-picker').selectChannelsById(channelId);
-    ```
+```javascript
+const channelPicker = document.querySelector('mgt-teams-channel-picker');
+const channelId = 'some-channel-id';
+channelPicker.selectChannelsById(channelId);
+```
 
-**Note:** The provided channel (and subsequent id) must belong to a team that the authenticated user has joined. 
+> **Note:** The provided channel (and subsequent id) must belong to a team that the authenticated user has joined. 
 
 
 ## CSS custom properties
