@@ -1,6 +1,6 @@
 ---
 title: "incomingContext resource type"
-description: "The context associated with an incoming call."
+description: "Represents the context associated with an incoming call."
 author: "ananmishr"
 localization_priority: Normal
 ms.prod: "cloud-communications"
@@ -9,14 +9,14 @@ doc_type: resourcePageType
 
 # incomingContext resource type
 
-The context associated with an incoming call.
+Represents the context associated with an incoming call.
 
 ## Properties
 
 | Property              | Type                          | Description                                                             |
 |:----------------------|:------------------------------|:------------------------------------------------------------------------|
-| sourceParticipantId   | String                        | The id of the participant that triggered the incoming call. Read-only.  |
-| observedParticipantId | String                        | The id of the participant that is under observation. Read-only.         |
+| sourceParticipantId   | String                        | The ID of the participant that triggered the incoming call. Read-only.  |
+| observedParticipantId | String                        | The ID of the participant that is under observation. Read-only.         |
 | onBehalfOf            | [identitySet](identityset.md) | The identity that the call is happening on behalf of.                   |
 | transferor            | [identitySet](identityset.md) | The identity that transferred the call.                                 |
 
