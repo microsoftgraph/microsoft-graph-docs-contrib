@@ -5,9 +5,11 @@ localization_priority: Normal
 author: vogtn
 ---
 
-# Teams-Channel-Picker component
+# Teams Channel Picker component
 
-A user can use the `mgt-teams-channel-picker` to search for channels and teams associated with the user from the Microsoft Graph. The component can search all Teams the user has joined, and each channel in those teams. 
+A user can use the `mgt-teams-channel-picker` to search for Microsoft Teams channels associated with the user from the Microsoft Graph. The component can search all Teams the user has joined, and each channel in those teams. 
+
+![mgt-teams-channel-picker](./images/selected-channel.png)
 
 ## Example
 
@@ -16,9 +18,6 @@ The following example shows the `mgt-teams-channel-picker` component. Start sear
 <iframe src="https://mgt.dev/iframe.html?id=components-mgt-teams-channel-picker--teams-channel-picker&source=docs" height="450"></iframe>
 
 [Open this example in mgt.dev](https://mgt.dev/?path=/story/components-mgt-teams-channel-picker--teams-channel-picker&source=docs)
-
-![mgt-teams-channel-picker](./images/selected-channel.png)
-
 
 ## Getting the selected channel
 
@@ -30,11 +29,11 @@ console.log(channelPicker.selectedItem.channel);
 console.log(channelPicker.selectedItem.team);
 ```
 
-## Selecting a channel programmatically
+## Selecting a channel
 
 Use the `selectChannelsById(channelId: string)` method to programmatically select a channel.
 
-> **Note:** the teams channel picker only supports single channel selection
+> **Note:** the Teams channel picker only supports single channel selection
 
 ```javascript
 const channelPicker = document.querySelector('mgt-teams-channel-picker');
