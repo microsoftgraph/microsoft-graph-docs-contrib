@@ -110,7 +110,7 @@ The `mgt-person` component can show an `mgt-person-card` on either hover or clic
 
 | Attribute    |  Property     | Description                                                                     |
 | ------------ | ------------- | ------------------------------------------------------------------------------- |
-| person-card | personCard | An enumeration to determine user action necessary to activate flyout panel - `hover` or `click`. Default value is `none` |
+| person-card | personCardInteraction | An enumeration to determine user action necessary to activate flyout panel - `hover` or `click`. Default value is `none` |
 
 
 For more information about templating, styling, and attributes, see [Person Card component](./person-card.md).
