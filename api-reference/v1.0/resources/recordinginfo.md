@@ -1,6 +1,6 @@
 ---
 title: "recordingInfo resource type"
-description: "Recording information for a participant."
+description: "Represents recording information for a participant."
 author: "ananmishr"
 localization_priority: Normal
 ms.prod: "cloud-communications"
@@ -9,13 +9,15 @@ doc_type: resourcePageType
 
 # recordingInfo resource type
 
-Recording information for a participant.
+Namespace: microsoft.graph
+
+Represents recording information for a participant.
 
 ## Properties
 
 | Property        | Type    | Description|
 |:----------------|:--------|:----------|
-| initiator     | [identitySet](identitySet.md) | The identities of Recording Initiator. |
+| initiator     | [identitySet](identitySet.md) | The identities of the recording initiator. |
 | recordingStatus | String | Possible values are: `unknown`, `notRecording`, `recording`, or `failed`. |
 
 ## JSON representation
