@@ -479,6 +479,8 @@ items:
                 href: toolkit/components/person-card.md
               - name: Get
                 href: toolkit/components/get.md
+              - name: Teams Channel Picker
+                href: toolkit/components/teams-channel-picker.md
           - name: Providers
             items:
               - name: Using the providers
