@@ -1,15 +1,13 @@
 ---
 title: "securityBaselineStateSummary resource type"
 description: "The security baseline compliance state summary for the security baseline of the account."
-author: "rolyon"
+author: "davidmu1"
 localization_priority: Normal
 ms.prod: "Intune"
 doc_type: resourcePageType
 ---
 
 # securityBaselineStateSummary resource type
-
-Namespace: microsoft.graph
 
 > **Important:** Microsoft Graph APIs under the /beta version are subject to change; production use is not supported.
 

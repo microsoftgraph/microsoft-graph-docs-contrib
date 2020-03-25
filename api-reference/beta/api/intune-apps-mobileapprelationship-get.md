@@ -1,15 +1,13 @@
 ---
 title: "Get mobileAppRelationship"
 description: "Read properties and relationships of the mobileAppRelationship object."
-author: "rolyon"
+author: "davidmu1"
 localization_priority: Normal
 ms.prod: "Intune"
 doc_type: apiPageType
 ---
 
 # Get mobileAppRelationship
-
-Namespace: microsoft.graph
 
 > **Important:** Microsoft Graph APIs under the /beta version are subject to change; production use is not supported.
 
@@ -74,7 +72,6 @@ Content-Length: 226
   }
 }
 ```
-
 
 
 

@@ -2,14 +2,12 @@
 title: "assign action"
 description: "Replace all targeted groups for a policy."
 localization_priority: Normal
-author: "rolyon"
+author: "davidmu1"
 ms.prod: "Intune"
 doc_type: apiPageType
 ---
 
 # assign action
-
-Namespace: microsoft.graph
 
 > **Important:** Microsoft Graph APIs under the /beta version are subject to change; production use is not supported.
 
@@ -97,7 +95,6 @@ Content-Length: 274
   ]
 }
 ```
-
 
 
 

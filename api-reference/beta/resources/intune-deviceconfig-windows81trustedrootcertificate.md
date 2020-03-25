@@ -1,15 +1,13 @@
 ---
 title: "windows81TrustedRootCertificate resource type"
 description: "Windows 8.1 Trusted Certificate configuration profile"
-author: "rolyon"
+author: "davidmu1"
 localization_priority: Normal
 ms.prod: "Intune"
 doc_type: resourcePageType
 ---
 
 # windows81TrustedRootCertificate resource type
-
-Namespace: microsoft.graph
 
 > **Important:** Microsoft Graph APIs under the /beta version are subject to change; production use is not supported.
 
