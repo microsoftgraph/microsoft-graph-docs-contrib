@@ -20,18 +20,38 @@ The following example shows the `mgt-teams-channel-picker` component. Start sear
 
 ## Selected Channel and Team
 
-The selected channel section of the component renders the channel of the user's choice. Below is the method to manually set a `selectedChannel` through `selectChannelById()`. 
+The selected channel section of the component renders the channel of the user's choice. 
 
 ![mgt-teams-channel-picker](./images/selected-channel.png)
 
-- `selectChannelsById()` accepts an array of Microsoft graph [Channel.id](https://docs.microsoft.com/graph/api/resources/users?view=graph-rest-1.0) to find associated Team and Channel details for that selection. The control currently allows for one selection or Channel per component:
+1. `SelectedItem()`
+2. `selectChannelsById()`
+
+**GET**
+
+The public method `SelectedItem()` will retrieve the currently selected item in an `object` of [MicrosoftGraph.Channel](/graph/api/resources/channel?view=graph-rest-1.0) and [MicrosoftGraph.Team](/graph/api/resources/group?view=graph-rest-1.0)
+
+  ```javascript
+  const selectedItem = document.querySelector('mgt-teams-channel-picker').SelectedItem();
+  console.log(selectedItem.channel)
+  //returns: MicrosoftGraph.Channel
+  console.log(selectedItem.team);
+  //returns: MicrosoftGraph.Team
+  ```
+
+**SET** 
+
+Below is the method to manually set a `selectedChannel` through `selectChannelsById()`. 
+
+- `selectChannelsById()` accepts an `string` of Microsoft graph [Channel.id](/graph/api/resources/channel?view=graph-rest-1.0) to find associated Team and Channel details for that selection. The control currently allows for one selection or Channel per component:
 
     ```javascript
     // channelId = Microsoft Graph Channel, unique id property
-    document.querySelector('mgt-teams-channel-picker').selectChannelsById.push([channelId]);
+    document.querySelector('mgt-teams-channel-picker').selectChannelsById(channelId);
     ```
 
 **Note:** The provided channel (and subsequent id) must belong to a team that the authenticated user has joined. 
+
 
 ## CSS custom properties
 
@@ -48,17 +68,22 @@ mgt-teams-channel-picker {
     --input-border-top: 2px rgba(255, 255, 255, 0.5) solid;
 
     --input-background-color: #1f1f1f; /* input area background color */
-    --input-hover-color: #008394;
-    --input-focus-color: #0f78d4;
+    --input-hover-color: #008394; /* input area border hover color */
+    --input-focus-color: #0f78d4; /* input area border focus color */
 
-    --selection-background-color: #1f1f1f;
-    --selection-hover-color: #333d47;
-    --font-color: white;
+    --selection-background-color: #1f1f1f; /* selected channel background color */
+    --selection-hover-color: #333d47; /* selected channel hover color*/
+    --font-color: white; /* input area border focus color */
     --arrow-fill: #ffffff;
-    --placeholder-focus-color: rgba(255, 255, 255, 0.8);
+    --placeholder-focus-color: rgba(255, 255, 255, 0.8); /* place holder text focus color */
 
 }
 ```
+
+## Events
+| Event | Detail | Description |
+| --- | --- | --- |
+| selectionChanged | The detail contains the currently selected item  of `{channel : `[MicrosoftGraph.Channel](/graph/api/resources/channel?view=graph-rest-1.0)`, team: `[MicrosoftGraph.Team](/graph/api/resources/group?view=graph-rest-1.0)`}` | Fired when user makes a change in selection of channel. 
 
 ## Templates
 
