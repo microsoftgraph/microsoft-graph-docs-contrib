@@ -9,6 +9,8 @@ doc_type: resourcePageType
 
 # callRoute resource type
 
+Namespace: microsoft.graph
+
 Represents the call route type.
 
 ## Properties
