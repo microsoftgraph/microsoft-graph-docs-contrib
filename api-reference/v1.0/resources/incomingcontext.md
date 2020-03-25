@@ -9,6 +9,8 @@ doc_type: resourcePageType
 
 # incomingContext resource type
 
+Namespace: microsoft.graph
+
 Represents the context associated with an incoming call.
 
 ## Properties
