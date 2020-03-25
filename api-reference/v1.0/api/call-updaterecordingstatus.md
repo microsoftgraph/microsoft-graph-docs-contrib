@@ -11,7 +11,8 @@ doc_type: apiPageType
 
 Update the application's recording status associated with a call.
 
-**Additional Restriction**: You may NOT use the Media Access API to record or otherwise persist media content from calls or meetings that your Application accesses, or data derived from that media content ("record" or "recording"), without first calling the updateRecordingStatus API to indicate that recording has begun, and receiving a success reply from that API. If your Application begins recording any meeting it must end the recording prior to calling the updateRecordingStatus API to indicate that the recording has ended.
+> [!NOTE}
+> **Additional Restriction**: You may NOT use the Media Access API to record or otherwise persist media content from calls or meetings that your application accesses, or data derived from that media content ("record" or "recording"), without first calling the **updateRecordingStatus** API to indicate that recording has begun, and receiving a success reply from that API. If your application begins recording any meeting, it must end the recording prior to calling the **updateRecordingStatus** API to indicate that the recording has ended.
 
 ## Permissions
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
@@ -39,7 +40,7 @@ In the request body, provide a JSON object with the following parameters.
 
 | Parameter       | Type    | Description                                                                           |
 |:----------------|:--------|:--------------------------------------------------------------------------------------|
-| clientContext   | String  | Unique Client Context string. Max limit is 256 chars.                                 |
+| clientContext   | String  | Unique client context string. Max limit is 256 chars.                                 |
 | status          | String  | The recording status. Possible values are: `notRecording`, `recording`, or `failed`.  |
 
 ## Response
