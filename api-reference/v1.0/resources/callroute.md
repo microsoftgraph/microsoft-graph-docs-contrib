@@ -1,6 +1,6 @@
 ---
 title: "callRoute resource type"
-description: "The callRoute type."
+description: "Represents the call route type."
 author: "ananmishr"
 localization_priority: Normal
 ms.prod: "cloud-communications"
@@ -9,7 +9,7 @@ doc_type: resourcePageType
 
 # callRoute resource type
 
-The callRoute type.
+Represents the call route type.
 
 ## Properties
 
