@@ -68,7 +68,7 @@ The following example shows how to create or get an online meeting with an exter
 }-->
 
 ```http
-POST https://graph.microsoft.com/beta/users('{id}')/onlineMeetings/createOrGet
+POST https://graph.microsoft.com/beta/users({id})/onlineMeetings/createOrGet
 Content-Type: application/json
 
 {
