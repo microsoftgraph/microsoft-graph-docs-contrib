@@ -39,7 +39,7 @@ A resource representing a users regional and language preferences.
 
 ## JSON representation
 
-The following is a JSON representation of the resource.
+The following is a JSON definition of the resource.
 
 <!--{
   "blockType": "resource",
@@ -58,8 +58,53 @@ The following is a JSON representation of the resource.
     "regionalFormatOverrides":[{"odata.type":"microsofr.graph.regionalFormatOverrides"}]
 }
 ```
-<!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
-2015-10-25 14:57:30 UTC -->
+The following is a JSON representation with examples of the resource.
+
+<!--{
+  "blockType": "resource",
+  "optionalProperties": [],
+  "baseType": "microsoft.graph.settings.regionalAndLanguageSettings",
+  "@odata.type": "microsoft.graph.settings.regionalAndLanguageSettings"
+}-->
+
+```json
+"defaultDisplayLanguage": {
+        "locale": "en-US",
+        "displayName": "English (United States)"
+    },
+    "authoringLanguages": [
+        {
+            "locale": "fr-FR",
+            "displayName": "French (France)"
+        },
+        {
+            "locale": "de-DE",
+            "displayName": "German (Germany)"
+        },
+    ],
+    "defaultTranslationLanguage": {
+        "locale": "en-US",
+        "displayName": "English (United States)"
+    },
+    "defaultSpeechInputLanguage": {
+        "locale": "en-US",
+        "displayName": "English (United States)"
+    },
+    "defaultRegionalFormat": {
+        "locale": "en-GB",
+        "displayName": "English (United Kingdom)"
+    },
+    "regionalFormatOverrides": {
+        "calendar": "Gregorian Calendar",
+        "firstDayOfWeek": "Sunday",
+        "shortDateFormat": "yyyy-MM-dd",
+        "longDateFormat": "dddd, MMMM d, yyyy",
+        "shortTimeFormat": "HH:mm",
+        "longTimeFormat": "h:mm:ss tt",
+        "timeZone": "Pacific Standard Time"
+    }
+}
+```
 <!-- {
   "type": "#page.annotation",
   "description": "regionalAndLanguageSettings resource",
