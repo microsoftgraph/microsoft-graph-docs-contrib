@@ -31,6 +31,9 @@ Microsoft Teams is a chat-based workspace in Office 365 that provides built-in a
 |[timeOff](/graph/api/resources/timeoff?view=graph-rest-beta) (preview)| [Create](/graph/api/schedule-post-timesoff?view=graph-rest-beta), [List](/graph/api/schedule-list-timesoff?view=graph-rest-beta), [Get](/graph/api/timeoff-get?view=graph-rest-beta), [Replace](/graph/api/timeoff-put?view=graph-rest-beta), [Delete](/graph/api/timeoff-delete?view=graph-rest-beta) |
 |[timeOffReason](/graph/api/resources/timeoffreason?view=graph-rest-beta) (preview)| [Create](/graph/api/schedule-post-timeoffreasons?view=graph-rest-beta), [List](/graph/api/schedule-list-timeoffreasons?view=graph-rest-beta), [Get](/graph/api/timeoffreason-get?view=graph-rest-beta), [Replace](/graph/api/timeoffreason-put?view=graph-rest-beta), [Delete](/graph/api/timeoffreason-delete?view=graph-rest-beta) |
 
+### Throttling and Limits
+
+See [Microsoft Teams Throttling Limits](teams-throttling-limits.md).
 
 ## Teams and groups
 

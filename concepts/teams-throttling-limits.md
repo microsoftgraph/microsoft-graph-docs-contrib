@@ -31,19 +31,25 @@ but it is not okay to GET /me/joinedTeams in a loop every 30 seconds to refresh 
 
 Apps that violate these terms of use may be subject to additional throttling or suspended entirely.
 
-## General limits
+## Throttling limits
 
-| Teams request type                                   | Value      |
+See [Microsoft Graph throttling guidance](throttling.md) for guidance on how to handle 429 responses.
+
+### General APIs
+
+| Teams request type                                   | Limit      |
 |-------------------------------------------|------------|
-| Graph API calls for an app/tenant         | 15000 requests/10 seconds |
-| GET request for resources (except messages) |60 rps/app/tenant, 600 rps/app/all tenants |
-| GET /teams/```{team-id}```|  30 rps |
-| POST/PUT/PATCH/DELETE /teams/```{team-id}```|  15 rps |
-| POST /teams/```{team-id}``` | 6 rps |
+| Graph API calls for an app/tenant         | 15000 requests every 10 seconds |
+| GET request for resources (except messages) |60 rps per app per tenant, 600 rps per app across all tenants |
+| GET /teams/```{team-id}```|  30 rps per app per tenant |
+| PATCH/DELETE /teams/```{team-id}```|  15 rps per app per tenant |
+| POST /teams/```{team-id}```, PUT /groups/```{team-id}```/team | 6 rps per app per tenant |
 
-## Messaging limits
+A maximum of 4 requests per second per app can be issued on a given team or channel.
 
-| Teams request type                  | Value   |
+### Messaging APIs
+
+| Teams request type                  | Limit   |
 |---------------------------|-------------|
 | GET messaging for an app/tenant | 5 requests/second |
 | POST messaging for an app/tenant | 2 requests/second |
@@ -54,7 +60,7 @@ The following scenarios are not supported:
 - Using Teams as a log file. When your app sends a message, you should expect a person to read it.
 - Migrating messages from other messaging products or installations. The [Send message](/api/channel-post-messages?view=graph-rest-beta) API does not have the throughput necessary for a typical migration, and we are unable to adjust limits to assist migrations.
 
-## Teams limits
+## Microsoft Teams limits
 
 See https://docs.microsoft.com/en-us/microsoftteams/limits-specifications-teams
 

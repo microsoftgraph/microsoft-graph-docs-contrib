@@ -119,3 +119,8 @@ The following resources are provided by the Outlook service.
 - [outlookTaskGroup](/graph/api/resources/outlooktaskgroup)
 - [outlookCategory](/graph/api/resources/outlookcategory)
 - [attachment](/graph/api/resources/attachment)
+
+### Microsoft Teams
+
+See [Microsoft Teams Throttling Limits](teams-throttling-limits.md).
+
