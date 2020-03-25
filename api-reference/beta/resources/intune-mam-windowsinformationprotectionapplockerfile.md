@@ -1,15 +1,13 @@
 ---
 title: "windowsInformationProtectionAppLockerFile resource type"
 description: "Windows Information Protection AppLocker File"
-author: "rolyon"
+author: "davidmu1"
 localization_priority: Normal
 ms.prod: "Intune"
 doc_type: resourcePageType
 ---
 
 # windowsInformationProtectionAppLockerFile resource type
-
-Namespace: microsoft.graph
 
 > **Important:** Microsoft Graph APIs under the /beta version are subject to change; production use is not supported.
 

@@ -1,15 +1,13 @@
 ---
 title: "complianceManagementPartner resource type"
 description: "Compliance management partner for all platforms"
-author: "rolyon"
+author: "davidmu1"
 localization_priority: Normal
 ms.prod: "Intune"
 doc_type: resourcePageType
 ---
 
 # complianceManagementPartner resource type
-
-Namespace: microsoft.graph
 
 > **Important:** Microsoft Graph APIs under the /beta version are subject to change; production use is not supported.
 

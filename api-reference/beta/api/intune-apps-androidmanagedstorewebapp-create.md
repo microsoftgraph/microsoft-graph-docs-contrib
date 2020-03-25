@@ -1,15 +1,13 @@
 ---
 title: "Create androidManagedStoreWebApp"
 description: "Create a new androidManagedStoreWebApp object."
-author: "rolyon"
+author: "davidmu1"
 localization_priority: Normal
 ms.prod: "Intune"
 doc_type: apiPageType
 ---
 
 # Create androidManagedStoreWebApp
-
-Namespace: microsoft.graph
 
 > **Important:** Microsoft Graph APIs under the /beta version are subject to change; production use is not supported.
 
@@ -166,7 +164,6 @@ Content-Length: 1159
   "supportsOemConfig": true
 }
 ```
-
 
 
 

@@ -1,15 +1,13 @@
 ---
 title: "Create androidWorkProfileEnterpriseWiFiConfiguration"
 description: "Create a new androidWorkProfileEnterpriseWiFiConfiguration object."
-author: "rolyon"
+author: "davidmu1"
 localization_priority: Normal
 ms.prod: "Intune"
 doc_type: apiPageType
 ---
 
 # Create androidWorkProfileEnterpriseWiFiConfiguration
-
-Namespace: microsoft.graph
 
 > **Important:** Microsoft Graph APIs under the /beta version are subject to change; production use is not supported.
 
@@ -186,7 +184,6 @@ Content-Length: 1843
   "proxyAutomaticConfigurationUrl": "https://example.com/proxyAutomaticConfigurationUrl/"
 }
 ```
-
 
 
 
