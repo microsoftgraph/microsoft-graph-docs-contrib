@@ -9,19 +9,21 @@ doc_type: resourcePageType
 
 # updateRecordingStatusOperation resource type
 
+Namespace: microsoft.graph
+
 Describes the response format of an update recording status action.
 
 ## Properties
 
 | Property            | Type                        | Description|
 |:--------------------|:----------------------------|:-----------------------------------------------------------------------------------|
-| clientContext       | String                      | Unique Client Context string. Max limit is 256 chars.                              |
+| clientContext       | String                      | Unique client context string. Max limit is 256 chars.                              |
 | id                  | String                      | Read-only.                                                                         |
 | resultInfo          | [resultInfo](resultinfo.md) | The result information. Read-only.                                                 |
 | status              | String                      | Possible values are: `notStarted`, `running`, `completed`, `failed`.               |
 
 ## Relationships
-None
+None.
 
 ## JSON representation
 
