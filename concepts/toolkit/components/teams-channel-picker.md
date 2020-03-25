@@ -31,14 +31,14 @@ console.log(channelPicker.selectedItem.team);
 
 ## Selecting a channel
 
-Use the `selectChannelsById(channelId: string)` method to programmatically select a channel.
+Use the `selectChannelById(channelId: string)` method to programmatically select a channel.
 
 > **Note:** the Teams channel picker only supports single channel selection
 
 ```javascript
 const channelPicker = document.querySelector('mgt-teams-channel-picker');
 const channelId = 'some-channel-id';
-channelPicker.selectChannelsById(channelId);
+channelPicker.selectChannelById(channelId);
 ```
 
 > **Note:** The provided channel (and subsequent id) must belong to a team that the authenticated user has joined. 
