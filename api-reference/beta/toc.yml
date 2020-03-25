@@ -915,12 +915,12 @@
         items:
         - name: Create
           href: api/application-post-onlinemeetings.md
-        - name: Create or Get
-          href: api/onlinemeeting-createorget.md
         - name: Get
           href: api/onlinemeeting-get.md
         - name: Delete
           href: api/onlinemeeting-delete.md
+        - name: Create or get
+          href: api/onlinemeeting-createorget.md
       - name: Presence
         href: resources/presence.md
         items:
