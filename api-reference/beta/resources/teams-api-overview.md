@@ -31,9 +31,19 @@ Microsoft Teams is a chat-based workspace in Office 365 that provides built-in a
 |[timeOff](/graph/api/resources/timeoff?view=graph-rest-beta) (preview)| [Create](/graph/api/schedule-post-timesoff?view=graph-rest-beta), [List](/graph/api/schedule-list-timesoff?view=graph-rest-beta), [Get](/graph/api/timeoff-get?view=graph-rest-beta), [Replace](/graph/api/timeoff-put?view=graph-rest-beta), [Delete](/graph/api/timeoff-delete?view=graph-rest-beta) |
 |[timeOffReason](/graph/api/resources/timeoffreason?view=graph-rest-beta) (preview)| [Create](/graph/api/schedule-post-timeoffreasons?view=graph-rest-beta), [List](/graph/api/schedule-list-timeoffreasons?view=graph-rest-beta), [Get](/graph/api/timeoffreason-get?view=graph-rest-beta), [Replace](/graph/api/timeoffreason-put?view=graph-rest-beta), [Delete](/graph/api/timeoffreason-delete?view=graph-rest-beta) |
 
-### Throttling and Limits
+## Microsoft Teams limits
 
-See [Microsoft Teams Throttling Limits](teams-throttling-limits.md).
+The tested performance and capacity limits of Microsoft Teams are documented in
+[Limits and specifications for Microsoft Teams](https://docs.microsoft.com/en-us/microsoftteams/limits-specifications-teams).
+These limits apply whether using Microsoft Teams directly or using Graph APIs.
+Because every team has a corresponding group, and every group is a directory object,
+limits on the [number of groups](https://docs.microsoft.com/en-us/microsoft-365/admin/create-groups/office-365-groups#group-limits)
+and the [number of directory objects ("resources")](/azure/active-directory/users-groups-roles/directory-service-limits-restrictions)
+can also come in to play. 
+
+Files inside channels are stored in SharePoint; [SharePoint online limits](/office365/servicedescriptions/sharepoint-online-service-description/sharepoint-online-limits) apply.
+
+See also [throttling limits for Microsoft Teams services](/graph/throttling).
 
 ## Teams and groups
 
