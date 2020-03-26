@@ -1,18 +1,17 @@
 ---
 author: JeremyKelley
-description: "The remoteItem resource indicates that a driveItem references an item that exists in another drive."
+ms.author: JeremyKelley
 ms.date: 09/10/2017
 title: RemoteItem
 localization_priority: Normal
-doc_type: resourcePageType
+description: "The remoteItem resource indicates that a driveItem references an item that exists in another drive."
 ms.prod: ""
+doc_type: resourcePageType
 ---
 
 # RemoteItem resource type
 
 Namespace: microsoft.graph
-
-[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 The **remoteItem** resource indicates that a [**driveItem**](driveitem.md) references an item that exists in another drive.
 This resource provides the unique IDs of the source drive and target item.
@@ -74,17 +73,16 @@ This resource provides the unique IDs of the source drive and target item.
 | webDavUrl            | Url                                 | DAV compatible URL for the item.                                                                                                                                  |
 | webUrl               | Url                                 | URL that displays the resource in the browser. Read-only.                                                                                                         |
 
+[specialFolder]: specialfolder.md
+
 ## Remarks
 
 For more information about the facets on a **driveItem**, see [driveItem](driveitem.md).
 
-<!--
-{
+<!-- {
   "type": "#page.annotation",
   "description": "The quota facet provides information about how much space the OneDrive has available.",
   "keywords": "quota,available,remaining,used",
   "section": "documentation",
-  "tocPath": "Facets/RemoteItem",
-  "suppressions": []
-}
--->
+  "tocPath": "Facets/RemoteItem"
+} -->
