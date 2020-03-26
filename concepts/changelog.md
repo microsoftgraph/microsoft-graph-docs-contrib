@@ -13,6 +13,12 @@ For details about known issues with Microsoft Graph APIs, see [Known issues](kno
 
 ## March 2020
 
+### Cloud communications
+
+| **Change type** | **Version**   | **Description**                          |
+| :-------------- | :------------ | :--------------------------------------- |
+|Addition|beta|Added in an optional **Accept-Language** header for [online meetings](/graph/api/resources/onlinemeeting)
+
 ### Calendar
 
 | **Change type** | **Version** | **Description**                          |
