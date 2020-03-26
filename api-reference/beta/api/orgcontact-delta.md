@@ -105,7 +105,6 @@ Adding an optional request header - `prefer:return=minimal` - results in the fol
 
 The following is an example of the request. Because there is no `$select` parameter, a default set of properties is tracked and returned.
 
-# [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "orgContact_delta"
@@ -158,7 +157,6 @@ Content-type: application/json
 
 The next example shows the initial request selecting three properties for change tracking, with default response behavior.
 
-# [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "orgcontact_delta_select"
@@ -202,7 +200,6 @@ Content-type: application/json
 
 The next example shows the initial request selecting three properties for change tracking, with alternative minimal response behavior.
 
-# [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "orgcontact_delta_minimal"
