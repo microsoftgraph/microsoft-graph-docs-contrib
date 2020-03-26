@@ -210,7 +210,7 @@ The next example shows the initial request selecting three properties for change
 }-->
 
 ```msgraph-interactive
-GET https://graph.microsoft.com/beta/contacts/delta?$select=displayName,jobTitle,mobilePhone
+GET https://graph.microsoft.com/beta/contacts/delta?$select=displayName,jobTitle,mail
 Prefer: return=minimal
 ```
 
