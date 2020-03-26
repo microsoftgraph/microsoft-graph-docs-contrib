@@ -1,24 +1,66 @@
 ---
-title: "Overview of users in Microsoft Graph"
-description: "Users are the representation of an Azure Active Directory (Azure AD) work or school user account or a Microsoft account in Microsoft Graph. The **user** resource in Microsoft Graph is a hub from which you can access the relationships and resources that are relevant to your users."
-author: "dkershaw10"
+title: "How to add additional properties to the profile card"
+description: "TO DO POLLY*****Users are the representation of an Azure Active Directory (Azure AD) work or school user account or a Microsoft account in Microsoft Graph. The **user** resource in Microsoft Graph is a hub from which you can access the relationships and resources that are relevant to your users."
+author: "ponincev"
 localization_priority: Priority
 ms.prod: "users"
-ms.custom: scenarios:getting-started
+ms.custom: scenarios:ASK****getting-started
 ---
 
-# Overview of users in Microsoft Graph
+# How to add additional properties to the profile card
 
-Users are the representation of an Azure Active Directory (Azure AD) work or school user account or a Microsoft account in Microsoft Graph. The **user** resource in Microsoft Graph is a hub from which you can access the relationships and resources that are relevant to your users.
+On the [profile card](https://support.office.com/article/profile-cards-in-office-365-e80f931f-5fc4-4a59-ba6e-c1e35a85b501), you can find information about users that is stored and maintained by your organization, for example Job title or Office location.  
 
-> [!VIDEO https://www.youtube-nocookie.com/embed/TUMPipN3UFI]
+You can add additional properties from your Active Directory to be shown on profile cards by:
 
-## Develop user-centric applications
+- Making additional attributes visible, or
 
-You can use Microsoft Graph to access the relationships, documents, contacts, and preferences that are contextually relevant to the signed-in user. The **user** resource provides straightforward way for you to access and manipulate user resources without having to perform additional calls, look up specific authentication information, and directly issue queries against other Microsoft Graph resources.
+- Adding custom attributes
 
-To access a user's information and data, you'll need to [get access on their behalf](auth-v2-user.md). Authenticating your application with [admin consent](permissions-reference.md) enables you to work with and update a wider range of entities associated with a user.
+## Make additional attributes visible
 
+You can make the following attributes from AD or AAD visible on users' profile cards:
+
+UserPrincipalName
+Fax
+StreetAddress
+PostalCode
+StateOrProvince
+Alias
+
+You can add any of the above listed attributes to the profile card by configuring your tenant settings in Microsoft Graph1. Here's how to do that:
+
+Go to https://developer.microsoft.com/en-us/graph/graph-explorer 
+
+Sign in with your Admin username and password 
+
+Make sure the Preview toggle is set to Off 
+
+In the Query URL, select PATCH and enter https://microsoft.com/beta/organization/[TenantID]/settings 
+
+In Request Body enter: 
+
+{ 
+
+"experiencePersonalization": { 
+
+                "visibilities": { 
+
+                    "[Attribute name, e.g. Alias]": "Visible" 
+
+                } 
+
+        } 
+
+}  
+
+Click Run Query 
+
+Note: When you make additional attributes visible, you must use the English property names. You don't have to add localized values. The additional properties will automatically be shown in the language settings that the user has specified for Office 365. 
+
+Important: It takes up to 24 hours for the changes to show on profile cards. 
+
+ 
 ### Manage your organization
 
 Create new users in your organization or update the resources and relationships for existing users. You can use Microsoft Graph to perform the following user management tasks: 
