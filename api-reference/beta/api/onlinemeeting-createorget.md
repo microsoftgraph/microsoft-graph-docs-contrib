@@ -13,7 +13,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Create an [onlineMeeting](../resources/onlinemeeting.md) object with a custom specified external ID. If the external ID already exists, this API will return the [onlineMeeting](../resources/onlinemeeting.md) object with that external ID.
+Create an [onlineMeeting](../resources/onlinemeeting.md) object with a custom specified external ID. If the external ID already exists, this API will return the [onlineMeeting](../resources/onlinemeeting.md) object with that external ID. 
 
 > **Note**: The meeting does not show on the user's calendar.
 
