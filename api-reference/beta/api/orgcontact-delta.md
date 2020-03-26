@@ -50,7 +50,7 @@ In subsequent requests, copy and apply the `nextLink` or `deltaLink` URL from th
 
 ### OData query parameters
 
-This method supports optional OData Query Parameters to help customize the response.
+This method supports optional OData query parameters to help customize the response.
 
 - You can use a `$select` query parameter as in any GET request to specify only the properties you need for best performance. The **id** property is always returned.
 - There is limited support for `$filter`:
@@ -60,7 +60,6 @@ This method supports optional OData Query Parameters to help customize the respo
 | Name       | Description|
 |:---------------|:----------|
 | Authorization  | Bearer &lt;token&gt;. Required.|
-| Content-Type  | application/json. Required. |
 | Prefer | return=minimal <br><br>Specifying this header with a request that uses a `deltaLink` would return only the object properties that have changed since the last round. Optional. |
 
 ## Request body
@@ -96,7 +95,7 @@ Adding an optional request header - `prefer:return=minimal` - results in the fol
 - If the property has changed, the new value is included in the response. This includes properties being set to null value.
 - If the property has not changed, the property is not included in the response at all. (Different from the default behavior.)
 
-> **Note:** The header can be added to a `deltaLink` request at any point in time in the delta cycle. The header only affects the set of properties included in the response and it does not affect how the delta query is executed. See [Example 3](#example-3-alternative-minimal-response-behavior).
+> **Note:** The header can be added to a `deltaLink` request at any point in time in the delta cycle. The header only affects the set of properties included in the response and it does not affect how the delta query is run. See [Example 3](#example-3-alternative-minimal-response-behavior).
 
 ## Examples
 
