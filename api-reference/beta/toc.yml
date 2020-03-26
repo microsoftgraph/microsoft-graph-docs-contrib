@@ -9152,9 +9152,10 @@
           items:
           - name: List direct reports
             href: api/orgcontact-list-directreports.md
-        - name: Directory object
-          href: resources/directoryobject.md
-          items:
+          - name: List memberOf
+            href: api/orgcontact-list-memberof.md
+          - name: Get manager
+            href: api/orgcontact-get-manager.md
           - name: Get member objects
             href: api/orgcontact-getmemberobjects.md
       - name: Policy
