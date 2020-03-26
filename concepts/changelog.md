@@ -20,7 +20,7 @@ For details about known issues with Microsoft Graph APIs, see [Known issues](kno
 | Addition | Beta | Added the **calendarGroupId** property to the [calendar](/graph/api/resources/calendar?view=graph-rest-beta) entity. |
 | Addition | Beta | Added the **isDraft** property to the [event](/graph/api/resources/event?view=graph-rest-beta) entity. |
 
-### Change Notifications
+### Change notifications
 
 | **Change type** | **Version** | **Description**                          |
 |:----------------|:------------|:-----------------------------------------|
