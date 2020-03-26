@@ -34,10 +34,10 @@ Microsoft Teams is a chat-based workspace in Office 365 that provides built-in a
 ## Microsoft Teams limits
 
 The tested performance and capacity limits of Microsoft Teams are documented in
-[Limits and specifications for Microsoft Teams](https://docs.microsoft.com/en-us/microsoftteams/limits-specifications-teams).
+[Limits and specifications for Microsoft Teams](/microsoftteams/limits-specifications-teams).
 These limits apply whether using Microsoft Teams directly or using Graph APIs.
 Because every team has a corresponding group, and every group is a directory object,
-limits on the [number of groups](https://docs.microsoft.com/en-us/microsoft-365/admin/create-groups/office-365-groups#group-limits)
+limits on the [number of groups](/microsoft-365/admin/create-groups/office-365-groups#group-limits)
 and the [number of directory objects ("resources")](/azure/active-directory/users-groups-roles/directory-service-limits-restrictions)
 can also come in to play. 
 
