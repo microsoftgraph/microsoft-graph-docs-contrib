@@ -17,9 +17,7 @@ Represents an organizational contact. Organizational contacts are managed by an 
 
 Inherits from [directoryObject](directoryobject.md).
 
-This resource supports:
-
-- Using [delta query](/graph/delta-query-overview) to track incremental additions, deletions, and updates, by providing a [delta](../api/orgcontact-delta.md) function.
+This resource supports using [delta query](/graph/delta-query-overview) to track incremental additions, deletions, and updates, by providing a [delta](../api/orgcontact-delta.md) function.
 
 ## Methods
 
