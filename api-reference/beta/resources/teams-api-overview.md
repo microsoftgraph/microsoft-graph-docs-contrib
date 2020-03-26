@@ -108,8 +108,8 @@ If none of those users are signed in to the Microsoft Teams application/website,
 ## Polling requirements
 
 If your app polls to see whether a resource has changed, you can only do that once per day. 
-(The [teamsAsyncOperation](/api/resources/teamsasyncoperation) method is an exception in that it's intended to be polled frequently.) 
-If you need to hear about changes more frequently than that, you should [create a subscription](/api/subscription-post-subscriptions?view=graph-rest-beta) to that resource and receive change notifications (webhooks). 
+([teamsAsyncOperation](teamsasyncoperation.md) is an exception in that it's intended to be polled frequently.) 
+If you need to hear about changes more frequently than that, you should [create a subscription](../api/subscription-post-subscriptions.md) to that resource and receive change notifications (webhooks). 
 If you don't find support for the type of subscription you need, we encourage you to provide feedback via [UserVoice](https://microsoftgraph.uservoice.com/forums/920506-microsoft-graph-feature-requests?category_id=359626). 
 
 When polling for new messages, you must specify a date range where supported. For details, see [get channel messages delta](/graph/api/chatmessage-delta?view=graph-rest-beta).
@@ -120,7 +120,7 @@ For example, it is okay to GET /me/joinedTeams every time the user visits/refres
 but it is not okay to GET /me/joinedTeams in a loop every 30 seconds to refresh that web page.
 
 Apps that don't follow these polling requirements will be considered in violation of the
-[Microsoft APIs Terms of Use](/legal/microsoft-apis/terms-of-use). This may result in additional [throttling](/graph/throttling) 
+[Microsoft APIs Terms of Use](https://docs.microsoft.com/legal/microsoft-apis/terms-of-use). This may result in additional [throttling](/graph/throttling) 
 or the suspension or termination of your use of the Microsoft APIs.
 
 ## See also
