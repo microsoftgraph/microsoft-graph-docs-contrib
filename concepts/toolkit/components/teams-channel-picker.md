@@ -60,12 +60,13 @@ mgt-teams-channel-picker {
     --input-hover-color: #008394; /* input area border hover color */
     --input-focus-color: #0f78d4; /* input area border focus color */
 
-    --selection-background-color: #1f1f1f; /* selected channel background color */
-    --selection-hover-color: #333d47; /* selected channel hover color*/
+    --dropdown-background-color: #1f1f1f; /* channel background color */
+    --dropdown-item-hover-background: #333d47; /* channel or team hover background */
+    --dropdown-item-selected-background: #0F78D4; /* selected channel background color */
+
     --font-color: white; /* input area border focus color */
     --arrow-fill: #ffffff;
     --placeholder-focus-color: rgba(255, 255, 255, 0.8); /* place holder text focus color */
-
 }
 ```
 
@@ -106,3 +107,18 @@ This component uses the following Microsoft Graph APIs and permissions.
 ## Authentication
 
 The control uses the global authentication provider described in the [authentication documentation](./../providers.md).
+
+## Extend for more control
+
+For more complex scenarios or a truly custom UX, this component exposes several `protected render*` methods for override in component extensions:
+
+| Method | Description |
+| - | - |
+| `renderSelected` | Renders the selected team and channel in the input box. |
+| `renderInput` | Renders the input box. |
+| `renderDropdown` | Renders the dropdown. |
+| `renderDropdownList` | Renders the items in the dropdown recursively. |
+| `renderItem` | Renders a team or a channel in the dropdown list. |
+| `renderHighlightedText` | Renders the channel text, highlighting the input query. |
+| `renderLoading` | Renders the loading dropdown state. |
+| `renderError` | Renders the dropdown error state. |
