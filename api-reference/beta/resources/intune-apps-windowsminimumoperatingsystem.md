@@ -1,15 +1,13 @@
 ---
 title: "windowsMinimumOperatingSystem resource type"
 description: "The minimum operating system required for a Windows mobile app."
-author: "rolyon"
+author: "davidmu1"
 localization_priority: Normal
 ms.prod: "Intune"
 doc_type: resourcePageType
 ---
 
 # windowsMinimumOperatingSystem resource type
-
-Namespace: microsoft.graph
 
 > **Important:** Microsoft Graph APIs under the /beta version are subject to change; production use is not supported.
 

@@ -1,15 +1,13 @@
 ---
 title: "List dataSharingConsents"
 description: "List properties and relationships of the dataSharingConsent objects."
-author: "rolyon"
+author: "davidmu1"
 localization_priority: Normal
 ms.prod: "Intune"
 doc_type: apiPageType
 ---
 
 # List dataSharingConsents
-
-Namespace: microsoft.graph
 
 > **Important:** Microsoft Graph APIs under the /beta version are subject to change; production use is not supported.
 
@@ -77,7 +75,6 @@ Content-Length: 447
   ]
 }
 ```
-
 
 
 

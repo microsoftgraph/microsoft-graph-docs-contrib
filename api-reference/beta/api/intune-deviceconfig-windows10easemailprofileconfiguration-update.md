@@ -1,15 +1,13 @@
 ---
 title: "Update windows10EasEmailProfileConfiguration"
 description: "Update the properties of a windows10EasEmailProfileConfiguration object."
-author: "rolyon"
+author: "davidmu1"
 localization_priority: Normal
 ms.prod: "Intune"
 doc_type: apiPageType
 ---
 
 # Update windows10EasEmailProfileConfiguration
-
-Namespace: microsoft.graph
 
 > **Important:** Microsoft Graph APIs under the /beta version are subject to change; production use is not supported.
 
@@ -190,7 +188,6 @@ Content-Length: 1698
   "requireSsl": true
 }
 ```
-
 
 
 

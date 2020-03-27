@@ -1,15 +1,13 @@
 ---
 title: "Create deviceCompliancePolicySettingStateSummary"
 description: "Create a new deviceCompliancePolicySettingStateSummary object."
-author: "rolyon"
+author: "davidmu1"
 localization_priority: Normal
 ms.prod: "Intune"
 doc_type: apiPageType
 ---
 
 # Create deviceCompliancePolicySettingStateSummary
-
-Namespace: microsoft.graph
 
 > **Important:** Microsoft Graph APIs under the /beta version are subject to change; production use is not supported.
 
@@ -111,7 +109,6 @@ Content-Length: 451
   "conflictDeviceCount": 3
 }
 ```
-
 
 
 

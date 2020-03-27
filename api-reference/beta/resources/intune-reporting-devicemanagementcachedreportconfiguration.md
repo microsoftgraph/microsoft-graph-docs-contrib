@@ -1,15 +1,13 @@
 ---
 title: "deviceManagementCachedReportConfiguration resource type"
 description: "Entity representing the configuration of a cached report"
-author: "rolyon"
+author: "davidmu1"
 localization_priority: Normal
 ms.prod: "Intune"
 doc_type: resourcePageType
 ---
 
 # deviceManagementCachedReportConfiguration resource type
-
-Namespace: microsoft.graph
 
 > **Important:** Microsoft Graph APIs under the /beta version are subject to change; production use is not supported.
 
