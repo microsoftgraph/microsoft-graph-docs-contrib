@@ -1,7 +1,7 @@
 ---
 title: "serviceHostedMediaConfig resource type"
-description: "The serviceHostedMediaConfig type."
-author: "VinodRavichandran"
+description: "The media that's hosted remotely."
+author: "ananmishr"
 localization_priority: Normal
 ms.prod: "cloud-communications"
 doc_type: resourcePageType
@@ -9,9 +9,11 @@ doc_type: resourcePageType
 
 # serviceHostedMediaConfig resource type
 
+Namespace: microsoft.graph
+
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-The serviceHostedMediaConfig type.
+The media that's hosted remotely. This is inherited from [mediaConfig](mediaconfig.md).
 
 ## Properties
 

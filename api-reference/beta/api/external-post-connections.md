@@ -3,11 +3,13 @@ title: "Create connection"
 description: "Use this API to create a new externalConnection."
 localization_priority: Normal
 author: "snlraju-msft"
-ms.prod: ""
+ms.prod: "search"
 doc_type: "apiPageType"
 ---
 
 # Create connection
+
+Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
@@ -42,7 +44,7 @@ POST /external/connections
 
 ## Request body
 
-In the request body, supply a JSON representation of a [externalConnection](../resources/externalconnection.md) object.
+In the request body, supply a JSON representation of an [externalConnection](../resources/externalconnection.md) object.
 
 ## Response
 

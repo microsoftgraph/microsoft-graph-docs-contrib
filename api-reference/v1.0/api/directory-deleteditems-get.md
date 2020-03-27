@@ -9,6 +9,8 @@ doc_type: apiPageType
 
 # Get deleted item
 
+Namespace: microsoft.graph
+
 Retrieve the properties of a recently deleted item in [deleted items](../resources/directory.md).
 
 Currently, deleted items functionality is only supported for the [application](../resources/application.md), [group](../resources/group.md) and [user](../resources/user.md) resources.

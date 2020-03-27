@@ -1,13 +1,15 @@
 ---
 title: "audioConferencing resource type"
 description: "Represents phone access information for an online meeting."
-author: "VinodRavichandran"
+author: "ananmishr"
 localization_priority: Normal
 ms.prod: "cloud-communications"
 doc_type: resourcePageType
 ---
 
 # audioConferencing resource type
+
+Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 

@@ -1,13 +1,15 @@
 ---
 title: "participant: mute"
 description: "Mute a specific participant in the call."
-author: "VinodRavichandran"
+author: "ananmishr"
 localization_priority: Normal
 ms.prod: "cloud-communications"
 doc_type: apiPageType
 ---
 
 # participant: mute
+
+Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
@@ -51,7 +53,7 @@ In the request body, provide a JSON object with the following parameters.
 ## Response
 If successful, this method returns a `200 OK` response code and a [muteParticipantOperation](../resources/muteParticipantoperation.md) object in the response body.
 
->**Note:** Whem this API returns a successful response, all participants will receive a roster update.
+>**Note:** When this API returns a successful response, all participants will receive a roster update.
 
 ## Example - Mute specific participant
 The following example shows how to call this API.

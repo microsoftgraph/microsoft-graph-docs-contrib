@@ -9,6 +9,8 @@ doc_type: "apiPageType"
 
 # Get swapShiftsChangeRequest
 
+Namespace: microsoft.graph
+
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 Retrieve the properties and relationships of a [swapShiftsChangeRequest](../resources/swapshiftschangerequest.md) object.
@@ -21,7 +23,9 @@ One of the following permissions is required to call this API. To learn more, in
 |:---------------------------------------|:--------------------------------------------|
 | Delegated (work or school account)     | Group.ReadWrite.All |
 | Delegated (personal Microsoft account) | Not supported. |
-| Application                            | Not supported. |
+| Application | Schedule.Read.All*, Schedule.ReadWrite.All* |
+
+>\* **Important:** Application permissions are currently in private preview only and are not available for public use.
 
 ## HTTP request
 
@@ -54,14 +58,30 @@ If successful, this method returns a `200 OK` response code and the requested [s
 ### Request
 
 The following is an example of the request.
+
+# [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "get_swapshiftschangerequest"
 }-->
 
-```http
-GET https://graph.microsoft.com/beta/teams/{id}/schedule/swapShiftsChangeRequests
+```msgraph-interactive
+GET https://graph.microsoft.com/beta/teams/{id}/schedule/swapShiftsChangeRequests/{swapShiftsChangeRequestId}
 ```
+# [C#](#tab/csharp)
+[!INCLUDE [sample-code](../includes/snippets/csharp/get-swapshiftschangerequest-csharp-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [JavaScript](#tab/javascript)
+[!INCLUDE [sample-code](../includes/snippets/javascript/get-swapshiftschangerequest-javascript-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Objective-C](#tab/objc)
+[!INCLUDE [sample-code](../includes/snippets/objc/get-swapshiftschangerequest-objc-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+---
+
 
 ### Response
 
@@ -80,7 +100,20 @@ HTTP/1.1 200 OK
 Content-type: application/json
 
 {
-  "recipientShiftId": "recipientShiftId-value"
+    "id": "0b87dd20-d5ed-4764-9c3e-cfc8516def09",
+    "senderShiftId": "5ad10161-6524-4c7c-9beb-4e8677ba2f6d",
+    "recipientShiftId": "e73408ca-3ea5-4bbf-96a8-2e06c95f7a2c",
+    "assignedTo": "manager",
+    "state": "approved",
+    "senderUserId": "3fe0bc21-1398-4fd9-9713-52511b434c1e",
+    "senderDateTime": "2019-05-01T10:00:00Z",
+    "senderMessage": "I can't make my shift, any chance we can swap?",
+    "recipientUserId": "567c8ea5-9e32-422a-a663-8270201699cd",
+    "recipientActionDateTime": "2019-05-01T11:00:00Z",
+    "recipientActionMessage": "Sure!",
+    "managerUserId": "fdcc8d43-7f83-438a-9ab1-098e8f2a95ff",
+    "managerActionDateTime": "2019-05-01T12:00:00Z",
+    "managerActionMessage": "Approved!"
 }
 ```
 

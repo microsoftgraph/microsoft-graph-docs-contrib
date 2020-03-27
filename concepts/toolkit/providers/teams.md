@@ -13,7 +13,7 @@ To learn more, see [providers](../providers.md).
 
 ## Get started
 
-Before using the Teams provider, you will need to make sure you have referenced the [Microsoft Teams SDK](https://docs.microsoft.com/en-us/javascript/api/overview/msteams-client?view=msteams-client-js-latest#using-the-sdk) in your page.
+Before using the Teams provider, you will need to make sure you have referenced the [Microsoft Teams SDK](/javascript/api/overview/msteams-client?view=msteams-client-js-latest#using-the-sdk) in your page.
 
 ### via script tag
 The following example uses the provider in HTML (via CDN).
@@ -36,7 +36,7 @@ The following example uses the provider in HTML (via CDN).
 | scopes  | Comma separated strings for scopes the user must consent to on sign in. Optional. |
 | depends-on | Element selector string of another higher-priority provider component. Optional. |
 
-### via NPM 
+### via NPM
 The following example uses the provider in JS modules (via NPM).
 
 Make sure to install both the toolkit and the Microsoft Teams SDK.
@@ -49,7 +49,7 @@ Next, import and use the provider.
 
 ```ts
 import '@microsoft/teams-js';
-import {Providers, TeamsProvider} from '@microsoft/mgt'; 
+import {Providers, TeamsProvider} from '@microsoft/mgt';
 Providers.globalProvider = new TeamsProvider(config);
 ```
 
@@ -68,7 +68,7 @@ Alternatively, you might need to set the reference to the Microsoft Teams Librar
 
 ```ts
 import * as MicrosoftTeams from "@microsoft/teams-js/dist/MicrosoftTeams";
-import {Providers, TeamsProvider} from '@microsoft/mgt'; 
+import {Providers, TeamsProvider} from '@microsoft/mgt';
 
 TeamsProvider.microsoftTeamsLib = MicrosoftTeams;
 Providers.globalProvider = new TeamsProvider(config);
@@ -78,13 +78,13 @@ For a complete example, see [Microsoft Teams tab sample](https://github.com/micr
 
 ## Configure your Teams app
 
-If you're just getting started with Teams apps, see [Add tabs to Microsoft Teams apps](https://docs.microsoft.com/en-us/microsoftteams/platform/concepts/tabs/tabs-overview). You can also use [App Studio](https://docs.microsoft.com/en-us/microsoftteams/platform/get-started/get-started-app-studio) to quickly develop your app manifest.
+If you're just getting started with Teams apps, see [Add tabs to Microsoft Teams apps](/microsoftteams/platform/concepts/tabs/tabs-overview). You can also use [App Studio](/microsoftteams/platform/get-started/get-started-app-studio) to quickly develop your app manifest.
 
 After you install your app with a tab, and you're ready to use the components, you need to make sure that your app has the right permissions to access Microsoft Graph. To configure your app with the necessary permissions:
 
-1. [Retrieve your domain name](https://docs.microsoft.com/en-us/azure/active-directory/identity-protection/graph-get-started#retrieve-your-domain-name)
-2. [Create a new app registration](https://docs.microsoft.com/en-us/azure/active-directory/identity-protection/graph-get-started#create-a-new-app-registration)
-3. [Grant your application permission](https://docs.microsoft.com/en-us/azure/active-directory/identity-protection/graph-get-started#grant-your-application-permission-to-use-the-api)
+1. [Retrieve your domain name](/azure/active-directory/identity-protection/graph-get-started#retrieve-your-domain-name)
+2. [Create a new app registration](/azure/active-directory/identity-protection/graph-get-started#create-a-new-app-registration)
+3. [Grant your application permission](/azure/active-directory/identity-protection/graph-get-started#grant-your-application-permission-to-use-the-api)
 
 It's important to add the right permission on the **Add API access page**. You will need an administrator to add and approve the permissions, depending on which component you need.
 
@@ -102,7 +102,7 @@ In order to sign in with your Teams credentials, you need to provide a URL that 
 <script src="https://unpkg.com/@microsoft/teams-js/dist/MicrosoftTeams.min.js" crossorigin="anonymous"></script>
 <script src="https://unpkg.com/@microsoft/mgt/dist/bundle/mgt-loader.js">
 
-<script>	    
+<script>
   mgt.TeamsProvider.handleAuth();
 </script>
 ```
@@ -111,7 +111,7 @@ or via a module referenced in your auth popup page:
 
 ```ts
 import * as MicrosoftTeams from "@microsoft/teams-js/dist/MicrosoftTeams";
-import {Providers, TeamsProvider} from '@microsoft/mgt'; 
+import {Providers, TeamsProvider} from '@microsoft/mgt';
 
 TeamsProvider.microsoftTeamsLib = MicrosoftTeams;
 TeamsProvider.handleAuth();

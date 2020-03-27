@@ -9,6 +9,8 @@ doc_type: "apiPageType"
 
 # Delete openShift
 
+Namespace: microsoft.graph
+
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 Delete an [openShift](../resources/openshift.md) object.
@@ -28,7 +30,7 @@ One of the following permissions is required to call this API. To learn more, in
 <!-- { "blockType": "ignored" } -->
 
 ```http
-DELETE /teams/{id}/schedule/openShifts
+DELETE /teams/{id}/schedule/openShifts/{openShiftId}
 ```
 
 ## Request headers
@@ -50,14 +52,30 @@ If successful, this method returns a `204 No Content` response code. It does not
 ### Request
 
 The following is an example of the request.
+
+# [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "delete_openshift"
 }-->
 
 ```http
-DELETE https://graph.microsoft.com/beta/teams/{id}/schedule/openShifts
+DELETE https://graph.microsoft.com/beta/teams/{id}/schedule/openShifts/{openShiftId}
 ```
+# [C#](#tab/csharp)
+[!INCLUDE [sample-code](../includes/snippets/csharp/delete-openshift-csharp-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [JavaScript](#tab/javascript)
+[!INCLUDE [sample-code](../includes/snippets/javascript/delete-openshift-javascript-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Objective-C](#tab/objc)
+[!INCLUDE [sample-code](../includes/snippets/objc/delete-openshift-objc-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+---
+
 
 ### Response
 

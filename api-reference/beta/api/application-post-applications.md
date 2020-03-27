@@ -9,6 +9,8 @@ ms.prod: "microsoft-identity-platform"
 
 # Create application
 
+Namespace: microsoft.graph
+
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 Create a new [application](../resources/application.md) object.

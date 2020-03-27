@@ -9,6 +9,8 @@ doc_type: "apiPageType"
 
 # timeOffRequest: decline
 
+Namespace: microsoft.graph
+
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 Decline a [timeoffrequest](../resources/timeoffrequest.md) object.
@@ -21,7 +23,9 @@ One of the following permissions is required to call this API. To learn more, in
 |:---------------------------------------|:--------------------------------------------|
 | Delegated (work or school account)     | Group.ReadWrite.All |
 | Delegated (personal Microsoft account) | Not supported. |
-| Application                            | Not supported. |
+|Application | Schedule.ReadWrite.All*  |
+
+>\* **Important:** Application permissions are currently in private preview only and are not available for public use.
 
 ## HTTP request
 
@@ -57,6 +61,8 @@ The following is an example of how to call this API.
 ### Request
 
 The following is an example of the request.
+
+# [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "timeoffrequest_decline"
@@ -70,6 +76,16 @@ Content-type: application/json
   "message": "message-value"
 }
 ```
+# [JavaScript](#tab/javascript)
+[!INCLUDE [sample-code](../includes/snippets/javascript/timeoffrequest-decline-javascript-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Objective-C](#tab/objc)
+[!INCLUDE [sample-code](../includes/snippets/objc/timeoffrequest-decline-objc-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+---
+
 
 ### Response
 

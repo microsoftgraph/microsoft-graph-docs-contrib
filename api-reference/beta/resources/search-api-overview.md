@@ -11,17 +11,17 @@ doc_type: resourcePageType
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Using the Microsoft Search API, apps can query Office 365 data.
+You can use the Microsoft Search API to query Office 365 data in your apps.
 
-Search requests are executed in the context of the signed-in user, identified using an [access token with delegated permissions](/graph/auth-v2-user).
+Search requests run in the context of the signed-in user, identified using an [access token with delegated permissions](/graph/auth-v2-user).
 
 [!INCLUDE [search-api-preview](../../includes/search-api-preview-signup.md)]
 
 ## Common use cases
 
-The search API provides a [query](../api/search-query.md) method to search across your data in Microsoft Search. This section lists the common use cases, based on the properties you set in the **query** request body.
+The Microsoft Search API provides a [query](../api/search-query.md) method to search across your data in Microsoft Search. This section lists the common use cases, based on the properties you set in the **query** request body.
 
-Search requests are executed on behalf of user. Search results are trimmed down to enforce any access control applied to the items.  For example, in the context of files, permissions on the files will be evaluated part of the search request. Users cannot access more items in search than they would be able to from the enumeration API.
+Search requests run on behalf of the user. Search results are scoped to enforce any access control applied to the items.  For example, in the context of files, permissions on the files are evaluated as part of the search request. Users cannot access more items in a search than they can from the enumeration API.
 
 | Use cases | Properties to define in the query request body |
 |:------------------|:---------|
@@ -48,16 +48,16 @@ The following are the supported entity types:
 
 Control pagination of the search results by specifying the following two properties in the **query** request body:
 
-- **from** which is an integer that indicates the 0-based starting point to list search results on the page. The default value is 0.
+- **from** - An integer that indicates the 0-based starting point to list search results on the page. The default value is 0.
 
-- **size** which is an integer that indicates the number of results to be returned for a page. The default value is 25.
+- **size** - An integer that indicates the number of results to be returned for a page. The default value is 25.
 
 Note the following limits if you're searching the **event** or **message** entity:
 
-- **from** must start at zero in the first page request, otherwise the request results in HTTP 400 `Bad request`.
+- **from** must start at zero in the first page request; otherwise, the request results in an HTTP 400 `Bad request`.
 - The maximum results per page (**size**) is 200.
 - The maximum total number of items that can be returned by paginating is 1000.
-- Going beyond the limits returns a best effort response. The request does not result in HTTP 400.
+- Going beyond the limits returns a best effort response. The request does not result in an HTTP 400.
 
 Best practices:
 
@@ -73,22 +73,22 @@ Best practices:
 
 ### Get the most relevant emails
 
-When searching the **message** entity, specifying **enableTopResults** as `true` returns a hybrid list of messages : the first 3 messages in the response are sorted by relevance, the remaining messages are sorted by date.
+When searching the **message** entity, specifying **enableTopResults** as `true` returns a hybrid list of messages: the first three messages in the response are sorted by relevance; the remaining messages are sorted by date.
 
 ### Get selected properties
 
 When searching an **externalItem** entity, use the **stored_fields** property to specify the fields to be returned in the response.
 
-The names specified in **stored_fields** should be the retrievable Managed Property. These property names have been configured for the connection in the  tenant administration of Microsoft Search.
+The fields specified in **stored_fields** should be retrievable managed properties that have been configured for the connection via the Microsoft Search tenant administration.
 
 ### Keyword Query Language (KQL) support
 
 Specify free text keywords, operators (such as `AND`, `OR`), and property restrictions in KQL syntax in the actual search query string (**query** property of the **query** request body). The syntax and command depend on the entity types (in the **entityTypes** property) you target in the same **query** request body.
 
-Depending on the entity type, the searchable properties vary:
+Depending on the entity type, the searchable properties vary. For details, see:
 
-- [message properties](/microsoft-365/compliance/keyword-queries-and-search-conditions#searchable-email-properties)
-- [driveItem properties](/microsoft-365/compliance/keyword-queries-and-search-conditions#searchable-site-properties)
+- [Email properties](/microsoft-365/compliance/keyword-queries-and-search-conditions#searchable-email-properties)
+- [Site properties](/microsoft-365/compliance/keyword-queries-and-search-conditions#searchable-site-properties)
 
 ## Error handling
 

@@ -1,13 +1,15 @@
 ---
 title: "presence resource type"
 description: "Contains information about a user's presence, including their availability and user activity."
-author: "VinodRavichandran"
+author: "ananmishr"
 localization_priority: Normal
 doc_type: resourcePageType
 ms.prod: "cloud-communications"
 ---
 
 # presence resource type
+
+Namespace: microsoft.graph
 
 Contains information about a user's presence, including their availability and user activity.
 

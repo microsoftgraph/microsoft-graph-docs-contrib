@@ -3,11 +3,13 @@ title: "List connections"
 description: "Retrieve a list of externalConnections."
 localization_priority: Normal
 author: "snlraju-msft"
-ms.prod: ""
+ms.prod: "search"
 doc_type: "apiPageType"
 ---
 
 # List connections
+
+Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 

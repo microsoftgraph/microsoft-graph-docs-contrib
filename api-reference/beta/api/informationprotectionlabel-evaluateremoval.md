@@ -9,6 +9,8 @@ doc_type: "apiPageType"
 
 # informationProtectionLabel: evaluateRemoval
 
+Namespace: microsoft.graph
+
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 Indicate to the consuming application what actions it should take to remove the label information.
@@ -42,19 +44,20 @@ POST /informationprotection/policy/labels/evaluateRemoval
 
 ## Request headers
 
-| Name          | Description                 |
-| :------------ | :-------------------------- |
-| Authorization | Bearer {token}. Required.   |
-| Content-type  | application/json. Required. |
+| Name          | Description                                                                                                                                                                       |
+| :------------ | :-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| Authorization | Bearer {token}. Required.                                                                                                                                                         |
+| Content-type  | application/json. Required.                                                                                                                                                       |
+| User-Agent    | Describes the name and version of the calling application. Details will surface in Azure Information Protection Analytics. Suggested format is ApplicationName/Version. Optional. |
 
 ## Request body
 
 In the request body, provide a JSON object with the following parameters.
 
-| Parameter              | Type                                                             | Description                                                                                                                                                                                                   |
-| :--------------------- | :--------------------------------------------------------------- | :------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ |
+| Parameter              | Type                                                             | Description                                                                                                                         |
+| :--------------------- | :--------------------------------------------------------------- | :---------------------------------------------------------------------------------------------------------------------------------- |
 | contentInfo            | [contentInfo](../resources/contentinfo.md)                       | Provides details about the content format, content state, and existing [metadata](../resources/keyvaluepair.md) as key/value pairs. |
-| downgradeJustification | [downgradeJustification](../resources/downgradejustification.md) | Justification that must be provided by the user or application logic.                                                                                                                                         |
+| downgradeJustification | [downgradeJustification](../resources/downgradejustification.md) | Justification that must be provided by the user or application logic.                                                               |
 
 
 ## Response
@@ -78,6 +81,7 @@ The following is an example of the request.
 ```http
 POST https://graph.microsoft.com/beta/informationprotection/policy/labels/evaluateRemoval
 Content-type: application/json
+User-agent: ContosoLOBApp/1.0
 
 {
   "contentInfo": {

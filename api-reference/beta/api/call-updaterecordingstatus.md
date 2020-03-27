@@ -1,13 +1,15 @@
 ---
 title: "call: updateRecordingStatus"
 description: "Update the application's recording status associated with a call."
-author: "VinodRavichandran"
+author: "ananmishr"
 localization_priority: Normal
 ms.prod: "cloud-communications"
 doc_type: apiPageType
 ---
 
 # call: updateRecordingStatus
+
+Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 

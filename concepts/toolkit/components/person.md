@@ -7,24 +7,23 @@ author: nmetulev
 
 # Person component in the Microsoft Graph Toolkit
 
-The person component is used to display a person or contact by using their photo, name, and/or email address. 
+The person component is used to display a person or contact by using their photo, name, and/or email address.
 
 The person component also uses the [mgt-person-card](./person-card.md) to display a flyout card with additional information about the user. For details, see the [Person Card](#person-card) section.
 
 ## Example
 
-[jsfiddle example](https://jsfiddle.net/metulev/0jkzfr42/)
+The following example displays a person using the `mgt-person` component. You can use the code editor to see how [properties](#properties) change the behavior of the component.
 
-### Add the control to the HTML page
-```html
-<mgt-person person-query=""></mgt-person>
-```
+<iframe src="https://mgt.dev/iframe.html?id=components-mgt-person--person&source=docs" height="250"></iframe>
+
+[Open this example in mgt.dev](https://mgt.dev/?path=/story/components-mgt-person--person&source=docs)
 
 ## Setting the person details
 
 You can use three properties to set the person details. Use only one of the following properties per instance:
 
-* Set the `user-id` attribute or `userId` property to fetch the user from Microsoft Graph by using their ID.  
+* Set the `user-id` attribute or `userId` property to fetch the user from Microsoft Graph by using their ID.
 
 * Set the `person-query` attribute or `personQuery` property to search Microsoft Graph for a given person. It will choose the first person available and fetch the person details. An email works best to ensure the right person is queried, but a name works as well.
 
@@ -42,14 +41,14 @@ You can use three properties to set the person details. Use only one of the foll
 
   If no image is provided, one will be fetched (if available).
 
-## Changing how the component looks
+## Properties
 
 You can use several properties to customize the component.
 
-| Property    | Attribute    | Description                                                   |
-| ----------- | ------------ | ------------------------------------------------------------- |
-| showName  | show-name  | Set flag to display person display name - default is `false`. |
-| showEmail | show-email | Set flag to display person email - default is `false`.        |
+| Attribute    | Property   | Description                                                   |
+| -----------  | ---------- | ------------------------------------------------------------- |
+| show-name    | showName   | Set flag to display person display name - default is `false`. |
+| show-email   | showEmail  | Set flag to display person email - default is `false`.        |
 
 ## CSS custom properties
 
@@ -107,9 +106,9 @@ The `mgt-person` component can show an `mgt-person-card` on either hover or clic
 <mgt-person person-query="me" person-card="hover"></mgt-person>
 ```
 
-| Property     | Attribute     | Description                                                                     |
+| Attribute    |  Property     | Description                                                                     |
 | ------------ | ------------- | ------------------------------------------------------------------------------- |
-| personCard | person-card | An enumeration to determine user action necessary to activate flyout panel - `hover` or `click`. Default value is `none` |
+| person-card | personCard | An enumeration to determine user action necessary to activate flyout panel - `hover` or `click`. Default value is `none` |
 
 
 For more information about templating, styling, and attributes, see [Person Card component](./person-card.md).
@@ -120,11 +119,11 @@ This control uses the following Microsoft Graph APIs and permissions.
 
 | Resource                                                                                                    | Permission     |
 | ----------------------------------------------------------------------------------------------------------- | -------------------- |
-| [/me](https://docs.microsoft.com/en-us/graph/api/user-get?view=graph-rest-1.0)                              | User.Read          |
-| [/me/photo/$value](https://docs.microsoft.com/en-us/graph/api/profilephoto-get?view=graph-rest-beta)        | User.Read          |
-| [/me/people/?$search=](https://docs.microsoft.com/en-us/graph/api/user-list-people?view=graph-rest-1.0)     | People.Read        |
-| [/me/contacts/*](https://docs.microsoft.com/en-us/graph/api/user-list-contacts?view=graph-rest-1.0&tabs=cs) | Contacts.Read      |
-| [/users/{id}/photo/$value](https://docs.microsoft.com/en-us/graph/api/user-list-people?view=graph-rest-1.0) | User.ReadBasic.All |
+| [/me](/graph/api/user-get?view=graph-rest-1.0)                              | User.Read          |
+| [/me/photo/$value](/graph/api/profilephoto-get?view=graph-rest-beta)        | User.Read          |
+| [/me/people/?$search=](/graph/api/user-list-people?view=graph-rest-1.0)     | People.Read        |
+| [/me/contacts/\*](/graph/api/user-list-contacts?view=graph-rest-1.0&tabs=cs) | Contacts.Read      |
+| [/users/{id}/photo/$value](/graph/api/user-list-people?view=graph-rest-1.0) | User.ReadBasic.All |
 
 > **Note:** to access the `*/photo/$value` resources for personal Microsoft accounts, use the Microsoft Graph beta endpoint.
 

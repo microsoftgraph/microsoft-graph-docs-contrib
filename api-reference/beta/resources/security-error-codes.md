@@ -9,6 +9,8 @@ doc_type: conceptualPageType
 
 # Microsoft Graph Security API error responses
 
+Namespace: microsoft.graph
+
 Errors in the Microsoft Graph Security API are returned using the standard HTTP 206 Partial Content status code and are delivered via a warning header.
 
 ## Errors
@@ -48,10 +50,10 @@ Warning : 199 - "{Vendor2}/{Provider 2}/504/10000",    (usual timeout limit is s
 
 ## Threat indicator bulk action errors
 
-Bulk actions (create, update, delete) can generate two different potential error codes: 
+Bulk actions (create, update, delete) can generate two different potential error codes:
 
 - A 400 error code indicates that the body provided had an error during serialization.
-- A 206 error code indicates that one or more of the bulk actions failed when it was federated out to its provider. The response will contain success/error data from the individual providers for each threat intelligence indicator. Unlike [alerts](https://docs.microsoft.com/graph/api/resources/security-api-overview?view=graph-rest-1.0#alerts), all potential error information will be contained within the body of the response for [tiIndicator](https://docs.microsoft.com/graph/api/resources/security-api-overview?view=graph-rest-beta#threat-indicators-preview) bulk actions.
+- A 206 error code indicates that one or more of the bulk actions failed when it was federated out to its provider. The response will contain success/error data from the individual providers for each threat intelligence indicator. Unlike [alerts](/graph/api/resources/security-api-overview?view=graph-rest-1.0#alerts), all potential error information will be contained within the body of the response for [tiIndicator](/graph/api/resources/security-api-overview?view=graph-rest-beta#threat-indicators-preview) bulk actions.
 
 ## Constraints
 

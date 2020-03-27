@@ -9,9 +9,11 @@ doc_type: "apiPageType"
 
 # Update timeoffrequest
 
+Namespace: microsoft.graph
+
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Update the properties of [timeoffrequest](../resources/timeoffrequest.md) object.
+Update the properties of a [timeoffrequest](../resources/timeoffrequest.md) object.
 
 ## Permissions
 
@@ -21,7 +23,9 @@ One of the following permissions is required to call this API. To learn more, in
 |:---------------------------------------|:--------------------------------------------|
 | Delegated (work or school account)     | Group.ReadWrite.All |
 | Delegated (personal Microsoft account) | Not supported. |
-| Application                            | Not supported. |
+|Application | Schedule.ReadWrite.All* |
+
+>\* **Important:** Application permissions are currently in private preview only and are not available for public use.
 
 ## HTTP request
 
@@ -35,7 +39,8 @@ PATCH /teams/{id}/schedule/timeOffRequests
 
 | Name       | Description|
 |:-----------|:-----------|
-| Authorization | Bearer {token} |
+| Authorization | Bearer {token}. Required. |
+| Content-type | application/json. Required. |
 
 ## Request body
 
@@ -56,6 +61,8 @@ If successful, this method returns a `200 OK` response code and an updated [time
 ### Request
 
 The following is an example of the request.
+
+# [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "update_timeoffrequest"
@@ -71,6 +78,20 @@ Content-type: application/json
   "timeOffReasonId": "timeOffReasonId-value"
 }
 ```
+# [C#](#tab/csharp)
+[!INCLUDE [sample-code](../includes/snippets/csharp/update-timeoffrequest-csharp-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [JavaScript](#tab/javascript)
+[!INCLUDE [sample-code](../includes/snippets/javascript/update-timeoffrequest-javascript-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Objective-C](#tab/objc)
+[!INCLUDE [sample-code](../includes/snippets/objc/update-timeoffrequest-objc-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+---
+
 
 ### Response
 

@@ -1,7 +1,7 @@
 ---
 title: "androidWorkProfileEnterpriseWiFiConfiguration resource type"
 description: "By providing the configurations in this profile you can instruct the Android Work Profile device to connect to desired Wi-Fi endpoint. By specifying the authentication method and security types expected by Wi-Fi endpoint you can make the Wi-Fi connection seamless for end user."
-author: "rolyon"
+author: "davidmu1"
 localization_priority: Normal
 ms.prod: "Intune"
 doc_type: resourcePageType
@@ -51,6 +51,8 @@ Inherits from [androidWorkProfileWiFiConfiguration](../resources/intune-deviceco
 |innerAuthenticationProtocolForEapTtls|[nonEapAuthenticationMethodForEapTtlsType](../resources/intune-deviceconfig-noneapauthenticationmethodforeapttlstype.md)|Non-EAP Method for Authentication (Inner Identity) when EAP Type is EAP-TTLS and Authenticationmethod is Username and Password. Possible values are: `unencryptedPassword`, `challengeHandshakeAuthenticationProtocol`, `microsoftChap`, `microsoftChapVersionTwo`.|
 |innerAuthenticationProtocolForPeap|[nonEapAuthenticationMethodForPeap](../resources/intune-deviceconfig-noneapauthenticationmethodforpeap.md)|Non-EAP Method for Authentication (Inner Identity) when EAP Type is PEAP and Authenticationmethod is Username and Password. Possible values are: `none`, `microsoftChapVersionTwo`.|
 |outerIdentityPrivacyTemporaryValue|String|Enable identity privacy (Outer Identity) when EAP Type is configured to EAP-TTLS or PEAP. The String provided here is used to mask the username of individual users when they attempt to connect to Wi-Fi network.|
+|proxySettings|[wiFiProxySetting](../resources/intune-deviceconfig-wifiproxysetting.md)|Proxy Type for this Wi-Fi connection. Possible values are: `none`, `manual`, `automatic`.|
+|proxyAutomaticConfigurationUrl|String|URL of the proxy server automatic configuration script when automatic configuration is selected. This URL is typically the location of PAC (Proxy Auto Configuration) file.|
 
 ## Relationships
 |Relationship|Type|Description|
@@ -116,7 +118,9 @@ Here is a JSON representation of the resource.
   "authenticationMethod": "String",
   "innerAuthenticationProtocolForEapTtls": "String",
   "innerAuthenticationProtocolForPeap": "String",
-  "outerIdentityPrivacyTemporaryValue": "String"
+  "outerIdentityPrivacyTemporaryValue": "String",
+  "proxySettings": "String",
+  "proxyAutomaticConfigurationUrl": "String"
 }
 ```
 

@@ -3,11 +3,13 @@ title: "Get schema"
 description: "Retrieve the properties of a schema for an externalConnection."
 localization_priority: Normal
 author: "snlraju-msft"
-ms.prod: ""
+ms.prod: "search"
 doc_type: "apiPageType"
 ---
 
 # Get schema
+
+Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 

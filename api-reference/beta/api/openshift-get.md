@@ -9,6 +9,8 @@ doc_type: "apiPageType"
 
 # Get openShift
 
+Namespace: microsoft.graph
+
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 Retrieve the properties and relationships of an [openshift](../resources/openshift.md) object.
@@ -28,13 +30,13 @@ One of the following permissions is required to call this API. To learn more, in
 <!-- { "blockType": "ignored" } -->
 
 ```http
-GET /teams/{id}/schedule/openShifts
+GET /teams/{id}/schedule/openShifts/{openShiftId}
 ```
 
 ## Optional query parameters
 
 This method supports some of the OData query parameters to help customize the response. For general information, see [OData query parameters](/graph/query-parameters).
-
+  
 ## Request headers
 
 | Name      |Description|
@@ -54,14 +56,30 @@ If successful, this method returns a `200 OK` response code and the requested [o
 ### Request
 
 The following is an example of the request.
+
+# [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "get_openshift"
 }-->
 
-```http
-GET https://graph.microsoft.com/beta/teams/{id}/schedule/openShifts
+```msgraph-interactive
+GET https://graph.microsoft.com/beta/teams/{id}/schedule/openShifts/OPNSHFT_577b75d2-a927-48c0-a5d1-dc984894e7b8
 ```
+# [C#](#tab/csharp)
+[!INCLUDE [sample-code](../includes/snippets/csharp/get-openshift-csharp-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [JavaScript](#tab/javascript)
+[!INCLUDE [sample-code](../includes/snippets/javascript/get-openshift-javascript-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Objective-C](#tab/objc)
+[!INCLUDE [sample-code](../includes/snippets/objc/get-openshift-objc-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+---
+
 
 ### Response
 
@@ -80,13 +98,53 @@ HTTP/1.1 200 OK
 Content-type: application/json
 
 {
+  "id": "OPNSHFT_577b75d2-a927-48c0-a5d1-dc984894e7b8",
+  "schedulingGroupId": "TAG_228940ed-ff84-4e25-b129-1b395cf78be0",
   "sharedOpenShift": {
-    "openSlotCount": 99
+  "notes": "Inventory Management",
+  "openSlotCount":2,
+  "displayName": "Day shift",
+  "startDateTime": "2018-10-04T00:58:45.340Z",
+  "endDateTime": "2018-10-04T09:50:45.332Z",
+  "theme": "white",
+  "activities": [
+  {
+  "isPaid": true,
+  "startDateTime": "2018-10-04T00:58:45.340Z",
+  "endDateTime": "2018-10-04T01:58:45.340Z",
+  "code": "",
+  "displayName": "Lunch"
+  }
+  ]
   },
   "draftOpenShift": {
-    "openSlotCount": 99
+  "notes": "Inventory Management",
+  "openSlotCount":3,
+  "displayName": "Day shift",
+  "startDateTime": "2018-10-04T00:58:45.332Z",
+  "endDateTime": "2018-10-04T08:58:45.340Z",
+  "theme": "white",
+  "activities": [
+  {
+  "isPaid": true,
+  "startDateTime": "2018-10-04T00:58:45.340Z",
+  "endDateTime": "2018-10-04T07:58:45.332Z",
+  "code": "Break",
+  "displayName": "Lunch"
+  }
+  ]
   },
-  "schedulingGroupId": "schedulingGroupId-value"
+  "createdDateTime": "2019-03-14T04:32:51.451Z",
+  "lastModifiedDateTime": "2019-03-14T05:32:51.451Z",
+  "lastModifiedBy": {
+  "application": null,
+  "device": null,
+  "conversation": null,
+  "user": {
+  "id": "366c0b19-49b1-41b5-a03f-9f3887bd0ed8",
+  "displayName": "John Doe"
+  }
+  }
 }
 ```
 

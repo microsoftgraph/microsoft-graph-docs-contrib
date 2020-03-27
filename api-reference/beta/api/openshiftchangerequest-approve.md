@@ -9,6 +9,8 @@ doc_type: "apiPageType"
 
 # openShiftChangeRequest: approve
 
+Namespace: microsoft.graph
+
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 Approve an [openshiftchangerequest](../resources/openshiftchangerequest.md) object.
@@ -28,7 +30,7 @@ One of the following permissions is required to call this API. To learn more, in
 <!-- { "blockType": "ignored" } -->
 
 ```http
-POST /teams/{id}/schedule/openShiftsChangeRequests/approve
+POST /teams/{id}/schedule/openShiftsChangeRequests/{openShiftChangeRequestId}/approve
 ```
 
 ## Request headers
@@ -63,7 +65,7 @@ The following is an example of a request.
 }-->
 
 ```http
-POST https://graph.microsoft.com/beta/teams/{id}/schedule/openShiftsChangeRequests/approve
+POST https://graph.microsoft.com/beta/teams/{id}/schedule/openShiftsChangeRequests/{openShiftChangeRequestId}/approve
 Content-type: application/json
 
 {

@@ -1,13 +1,15 @@
 ---
 title: "updateRecordingStatusOperation resource type"
 description: "Describes the response format of an update recording status action."
-author: "VinodRavichandran"
+author: "ananmishr"
 localization_priority: Normal
 ms.prod: "cloud-communications"
 doc_type: resourcePageType
 ---
 
 # updateRecordingStatusOperation resource type
+
+Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 

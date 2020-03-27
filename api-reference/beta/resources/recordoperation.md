@@ -1,7 +1,7 @@
 ---
 title: "recordOperation resource type"
-description: "The recordOperation type"
-author: "VinodRavichandran"
+description: "Contains information related to audio recording."
+author: "ananmishr"
 localization_priority: Normal
 ms.prod: "cloud-communications"
 doc_type: resourcePageType
@@ -9,9 +9,11 @@ doc_type: resourcePageType
 
 # recordOperation resource type
 
+Namespace: microsoft.graph
+
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-The recordOperation type
+Contains information related to audio recording.
 
 ## Properties
 
@@ -19,14 +21,14 @@ The recordOperation type
 | :----------------------------- | :---------------------------| :-------------------------------------------------------------------------------------------------------------------------------------------------|
 | clientContext                  | String                      | Unique Client Context string. Max limit is 256 chars.                                                                                                                               |
 | completionReason               | String                      | Possible values are: `operationCanceled`, `stopToneDetected`, `maxRecordDurationReached`, `initialSilenceTimeout`, `maxSilenceTimeout`, `playPromptFailed`, `playBeepFailed`, `mediaReceiveTimeout`, `unspecifiedError`, `none`. |
-| id                             | String                      | The server operation id. Read-only.                                                                                              |
+| id                             | String                      | The server operation ID. Read-only.                                                                                              |
 | recordingAccessToken           | String                      | The access token required to retrieve the recording.                                                                                              |
 | recordingLocation              | String                      | The location where the recording is located.                                                                                                      |
 | resultInfo                     | [resultInfo](resultinfo.md) | The result information.  Read-only.                                                                                              |
 | status                         | String                      | Possible values are: `notStarted`, `running`, `completed`, `failed`. Read-only.                                                |
 
 ## Relationships
-None
+None.
 
 ## JSON representation
 
