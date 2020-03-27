@@ -1,15 +1,13 @@
 ---
 title: "secureAssessmentAccountType enum type"
 description: "Type of accounts that are allowed for Windows10SecureAssessment ConfigurationAccount."
-author: "rolyon"
+author: "davidmu1"
 localization_priority: Normal
 ms.prod: "Intune"
 doc_type: enumPageType
 ---
 
 # secureAssessmentAccountType enum type
-
-Namespace: microsoft.graph
 
 > **Important:** Microsoft Graph APIs under the /beta version are subject to change; production use is not supported.
 
