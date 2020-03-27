@@ -1,15 +1,13 @@
 ---
 title: "Get androidWorkProfileWiFiConfiguration"
 description: "Read properties and relationships of the androidWorkProfileWiFiConfiguration object."
-author: "rolyon"
+author: "davidmu1"
 localization_priority: Normal
 ms.prod: "Intune"
 doc_type: apiPageType
 ---
 
 # Get androidWorkProfileWiFiConfiguration
-
-Namespace: microsoft.graph
 
 > **Important:** Microsoft Graph APIs under the /beta version are subject to change; production use is not supported.
 
@@ -109,7 +107,6 @@ Content-Length: 1484
   }
 }
 ```
-
 
 
 

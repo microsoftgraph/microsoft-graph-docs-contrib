@@ -11,8 +11,6 @@ doc_type: apiPageType
 
 Namespace: microsoft.graph
 
-[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
-
 Grant users access to a link represented by a [permission][].
 
 ## Permissions
@@ -81,7 +79,7 @@ This example grants the users john@contoso.com and ryan@external.com access to a
 <!-- { "blockType": "request", "name": "permission-grant", "scopes": "files.readwrite", "target": "action" } -->
 
 ```json
-POST https://graph.microsoft.com/beta/shares/{encoded-sharing-url}/permission/grant
+POST https://graph.microsoft.com/v1.0/shares/{encoded-sharing-url}/permission/grant
 Content-type: application/json
 
 {

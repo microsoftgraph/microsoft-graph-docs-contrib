@@ -109,7 +109,6 @@ Looking for the API reference for this service?
   - [Use Outlook to organize or attend meetings online (preview)](outlook-calendar-online-meetings.md)
   - [Scheduling repeating appointments as recurring events in Outlook](outlook-schedule-recurring-events.md)
   - [Getting shared events](outlook-get-shared-events-calendars.md)
-  - [Attaching large files to Outlook messages or events](outlook-large-attachments.md)
   - [Getting immutable identifiers for Outlook resources](outlook-immutable-id.md)
 - Take a look at the Outlook [calendar API](/graph/api/resources/calendar?view=graph-rest-1.0) reference.
 

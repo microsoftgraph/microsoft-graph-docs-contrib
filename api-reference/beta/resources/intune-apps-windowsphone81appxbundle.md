@@ -1,15 +1,13 @@
 ---
 title: "windowsPhone81AppXBundle resource type"
 description: "Contains properties and inherited properties for Windows Phone 8.1 AppX Bundle Line Of Business apps."
-author: "rolyon"
+author: "davidmu1"
 localization_priority: Normal
 ms.prod: "Intune"
 doc_type: resourcePageType
 ---
 
 # windowsPhone81AppXBundle resource type
-
-Namespace: microsoft.graph
 
 > **Important:** Microsoft Graph APIs under the /beta version are subject to change; production use is not supported.
 

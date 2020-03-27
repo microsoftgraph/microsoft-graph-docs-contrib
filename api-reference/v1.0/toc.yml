@@ -617,8 +617,6 @@
           href: api/event-list-attachments.md
         - name: Add attachment
           href: api/event-post-attachments.md
-        - name: Create session to attach large file
-          href: api/attachment-createuploadsession.md
         - name: Create open extension
           href: api/opentypeextension-post-opentypeextension.md
         - name: Get open extension
@@ -667,8 +665,6 @@
           href: resources/itemattachment.md
         - name: Reference attachment type
           href: resources/referenceattachment.md
-        - name: Create session to attach large file
-          href: api/attachment-createuploadsession.md
         - name: Get attachment
           href: api/attachment-get.md
         - name: Delete attachment
@@ -804,6 +800,8 @@
           href: api/call-unmute.md
         - name: Mute application
           href: api/call-mute.md
+        - name: Update recording status
+          href: api/call-updaterecordingstatus.md
       - name: Online meeting
         href: resources/onlinemeeting.md
         items:
@@ -3527,12 +3525,28 @@
           href: api/orgcontact-list.md
         - name: Get org contact
           href: api/orgcontact-get.md
-        - name: List direct reports
-          href: api/orgcontact-list-directreports.md  
-        - name: List memberOf
-          href: api/orgcontact-list-memberof.md
-        - name: Get manager
-          href: api/orgcontact-get-manager.md
+        - name: Get org contact delta
+          href: api/orgcontact-delta.md
+        - name: Groups
+          href: resources/group.md
+          items:
+          - name: List memberOf
+            href: api/orgcontact-list-memberof.md
+          - name: Get member groups
+            href: api/orgcontact-getmembergroups.md
+          - name: Check member groups
+            href: api/orgcontact-checkmembergroups.md
+        - name: Org hierarchy
+          href: resources/directoryobject.md
+          items:
+          - name: List direct reports
+            href: api/orgcontact-list-directreports.md  
+          - name: List memberOf
+            href: api/orgcontact-list-memberof.md
+          - name: Get manager
+            href: api/orgcontact-get-manager.md
+          - name: Get member objects
+            href: api/orgcontact-getmemberobjects.md
       - name: Subscribed SKU
         href: resources/subscribedsku.md
         items:
@@ -3584,8 +3598,6 @@
           href: api/message-list-attachments.md
         - name: Add attachment
           href: api/message-post-attachments.md
-        - name: Create session to attach large file
-          href: api/attachment-createuploadsession.md
         - name: Create open extension
           href: api/opentypeextension-post-opentypeextension.md
         - name: Get open extension
@@ -3599,8 +3611,6 @@
           href: resources/itemattachment.md
         - name: Reference attachment type
           href: resources/referenceattachment.md
-        - name: Create session to attach large file
-          href: api/attachment-createuploadsession.md
         - name: Get attachment
           href: api/attachment-get.md
         - name: Delete attachment

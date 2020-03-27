@@ -1,15 +1,13 @@
 ---
 title: "managedDeviceMobileAppConfigurationSettingState resource type"
 description: "Managed Device Mobile App Configuration Setting State for a given device."
-author: "rolyon"
+author: "davidmu1"
 localization_priority: Normal
 ms.prod: "Intune"
 doc_type: resourcePageType
 ---
 
 # managedDeviceMobileAppConfigurationSettingState resource type
-
-Namespace: microsoft.graph
 
 > **Important:** Microsoft Graph APIs under the /beta version are subject to change; production use is not supported.
 

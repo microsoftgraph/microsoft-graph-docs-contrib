@@ -1,15 +1,13 @@
 ---
 title: "hourlySchedule resource type"
 description: "Hourly run schedule of a recurring device management script."
-author: "rolyon"
+author: "davidmu1"
 localization_priority: Normal
 ms.prod: "Intune"
 doc_type: resourcePageType
 ---
 
 # hourlySchedule resource type
-
-Namespace: microsoft.graph
 
 > **Important:** Microsoft Graph APIs under the /beta version are subject to change; production use is not supported.
 
