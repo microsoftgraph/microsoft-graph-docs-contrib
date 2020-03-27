@@ -1,15 +1,13 @@
 ---
 title: "Create androidForWorkEnterpriseWiFiConfiguration"
 description: "Create a new androidForWorkEnterpriseWiFiConfiguration object."
-author: "rolyon"
+author: "davidmu1"
 localization_priority: Normal
 ms.prod: "Intune"
 doc_type: apiPageType
 ---
 
 # Create androidForWorkEnterpriseWiFiConfiguration
-
-Namespace: microsoft.graph
 
 > **Important:** Microsoft Graph APIs under the /beta version are subject to change; production use is not supported.
 
@@ -180,7 +178,6 @@ Content-Length: 1717
   "outerIdentityPrivacyTemporaryValue": "Outer Identity Privacy Temporary Value value"
 }
 ```
-
 
 
 

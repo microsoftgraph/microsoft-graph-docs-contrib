@@ -1,15 +1,13 @@
 ---
 title: "androidForWorkGeneralDeviceConfiguration resource type"
 description: "Android For Work general device configuration."
-author: "rolyon"
+author: "davidmu1"
 localization_priority: Normal
 ms.prod: "Intune"
 doc_type: resourcePageType
 ---
 
 # androidForWorkGeneralDeviceConfiguration resource type
-
-Namespace: microsoft.graph
 
 > **Important:** Microsoft Graph APIs under the /beta version are subject to change; production use is not supported.
 

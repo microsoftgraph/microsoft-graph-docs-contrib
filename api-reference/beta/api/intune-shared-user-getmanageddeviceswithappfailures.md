@@ -1,15 +1,13 @@
 ---
 title: "getManagedDevicesWithAppFailures function"
 description: "Retrieves the list of devices with failed apps"
-author: "rolyon"
+author: "davidmu1"
 localization_priority: Normal
 ms.prod: "intune"
 doc_type: apiPageType
 ---
 
 # getManagedDevicesWithAppFailures function
-
-Namespace: microsoft.graph
 
 > **Important:** APIs under the /beta version in Microsoft Graph are subject to change. Use of these APIs in production applications is not supported.
 
@@ -68,7 +66,6 @@ Content-Length: 74
   ]
 }
 ```
-
 
 
 

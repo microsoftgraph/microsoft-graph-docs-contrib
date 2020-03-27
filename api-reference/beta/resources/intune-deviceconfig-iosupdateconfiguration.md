@@ -1,15 +1,13 @@
 ---
 title: "iosUpdateConfiguration resource type"
 description: "IOS Update Configuration, allows you to configure time window within week to install iOS updates"
-author: "rolyon"
+author: "davidmu1"
 localization_priority: Normal
 ms.prod: "Intune"
 doc_type: resourcePageType
 ---
 
 # iosUpdateConfiguration resource type
-
-Namespace: microsoft.graph
 
 > **Important:** Microsoft Graph APIs under the /beta version are subject to change; production use is not supported.
 
