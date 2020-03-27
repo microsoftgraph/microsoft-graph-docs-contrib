@@ -11,7 +11,7 @@ ms.custom: scenarios:getting-started
 
 On the [profile card](https://support.office.com/article/profile-cards-in-office-365-e80f931f-5fc4-4a59-ba6e-c1e35a85b501), you can find information about users that is stored and maintained by your organization, for example Job title or Office location.  
 
-You can add additional properties from your Active Directory to be shown on profile cards by:
+You can show additional properties from your Active Directory on profile cards by:
 
 - Making additional attributes visible, or
 
@@ -33,7 +33,7 @@ You can add any of the above listed attributes to the profile card by configurin
 1. Go to [https://developer.microsoft.com/en-us/graph/graph-explorer](https://developer.microsoft.com/en-us/graph/graph-explorer)
 2. Sign in with your Admin username and password
 3. Make sure the Preview toggle is set to **Off**
-4. In the Query URL, select PATCH and enter:
+4. In the Query URL, select **PATCH** and enter:
     <div style="display: inline">https://microsoft.com/beta/organization/[TenantID]/settings</div>
 
 5. In **Request Body** enter:
@@ -58,7 +58,7 @@ You can add any of the [15 custom attributes](https://docs.microsoft.com/exchang
 1. Go to [https://developer.microsoft.com/en-us/graph/graph-explorer](https://developer.microsoft.com/en-us/graph/graph-explorer)
 2. Sign in with your Admin username and password
 3. Make sure the Preview toggle is set to **Off**
-4. In the Query URL, select PATCH and enter:
+4. In the Query URL, select **PATCH** and enter:
     <div style="display: inline">https://microsoft.com/beta/organization/[TenantID]/settings</div>
 5. In **Request Body** enter:
 
