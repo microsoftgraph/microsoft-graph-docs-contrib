@@ -1,6 +1,6 @@
 ---
 title: "How to add additional properties to the profile card"
-description: "You can customize the profile card by making additional attributes visible, or adding custom attributes.
+description: "This article describes how you can customize the profile card by making additional attributes visible, or adding custom attributes."
 author: "PollyNincevic"
 localization_priority: Priority
 ms.prod: "users"
@@ -28,12 +28,14 @@ You can make the following attributes from AD or AAD visible on users' profile c
 - StateOrProvince
 - Alias
 
-You can add any of the above listed attributes to the profile card by configuring your tenant settings in Microsoft Graph<sup id="a1">[1](#f1)</sup> Here's how:
+You can add any of the above listed attributes to the profile card by configuring your tenant settings in Microsoft Graph.<sup id="a1">[1](#f1) </sup>Here's how:
 
 1. Go to [https://developer.microsoft.com/en-us/graph/graph-explorer](https://developer.microsoft.com/en-us/graph/graph-explorer)
 2. Sign in with your Admin username and password
 3. Make sure the Preview toggle is set to **Off**
-4. In the Query URL, select PATCH and enter https://microsoft.com/beta/organization/[TenantID]/settings
+4. In the Query URL, select PATCH and enter:
+    <div style="display: inline">https://microsoft.com/beta/organization/[TenantID]/settings</div>
+
 5. In **Request Body** enter:
 
         {
@@ -52,11 +54,12 @@ You can add any of the above listed attributes to the profile card by configurin
 **Important:** It takes up to 24 hours for the changes to show on profile cards.
 
 ## Adding custom attributes 
-You can add any of the [15 custom attributes](https://docs.microsoft.com/exchange/recipients/mailbox-custom-attributes?view=exchserver-2019) from Exchange Server to users' profile cards by configuring your tenant settings in Microsoft Graph<sup id="a1">[1](#f1)</sup>. Here's how:
+You can add any of the [15 custom attributes](https://docs.microsoft.com/exchange/recipients/mailbox-custom-attributes?view=exchserver-2019) from Exchange Server to users' profile cards by configuring your tenant settings in Microsoft Graph.<sup id="a1">[1](#f1)</sup> Here's how:
 1. Go to [https://developer.microsoft.com/en-us/graph/graph-explorer](https://developer.microsoft.com/en-us/graph/graph-explorer)
 2. Sign in with your Admin username and password
 3. Make sure the Preview toggle is set to **Off**
-4. In the Query URL, select PATCH and enter https://microsoft.com/beta/organization/[TenantID]/settings
+4. In the Query URL, select PATCH and enter:
+    <div style="display: inline">https://microsoft.com/beta/organization/[TenantID]/settings</div>
 5. In **Request Body** enter:
 
         {
@@ -90,7 +93,7 @@ If a language is not supported, the property name will be shown with the default
 ### Related articles
 
 [Find your Office 365 tenant ID](https://docs.microsoft.com/onedrive/find-your-office-365-tenant-id)
-#### Notes
+#### Footnote
 
 <b id="f1">1.</b> The Microsoft Graph is in Beta. [↩](#a1)
 
