@@ -19,7 +19,7 @@ Allows you to receive near-real-time change notifications for a [drive][] and [l
 Socket.io is a popular notifications library for JavaScript that utilizes WebSockets. To learn more, see [socket.io](https://socket.io).
 
 [drive]: ../resources/drive.md
-[list]: ../resources/drive.md
+[list]: ../resources/list.md
 [socket.io]: https://socket.io/
 
 ## Permissions

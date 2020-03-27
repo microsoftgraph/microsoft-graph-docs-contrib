@@ -123,7 +123,7 @@ The **list** resource has the following relationships to other resources.
 | **items**         | Collection([listItem][])         | All items contained in the list.
 | **columns**       | Collection([columnDefinition][]) | The collection of field definitions for this list.
 | **contentTypes**  | Collection([contentType][])      | The collection of content types present in this list.
-| subscriptions      | [subscription][] collection | The set of subscriptions on the list.
+| **subscriptions** | Collection([subscription][])     | The set of subscriptions on the list.
 
 [baseItem]: baseitem.md
 [contentType]: contenttype.md
