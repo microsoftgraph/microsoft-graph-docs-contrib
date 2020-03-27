@@ -35,7 +35,7 @@ POST /app/onlineMeetings
 POST /communications/onlineMeetings
 POST /me/onlineMeetings
 ```
-> **Note:** The `/app` path is deprecated. Going forward, use the `/communications` path.
+> **Note:** The `/app` or `/communications` path with an application token is deprecated. Going forward, use the /me path with a user token to create online meetings.
 
 ## Request headers
 | Name          | Description               |

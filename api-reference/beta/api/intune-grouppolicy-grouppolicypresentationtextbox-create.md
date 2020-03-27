@@ -1,15 +1,13 @@
 ---
 title: "Create groupPolicyPresentationTextBox"
 description: "Create a new groupPolicyPresentationTextBox object."
-author: "rolyon"
+author: "davidmu1"
 localization_priority: Normal
 ms.prod: "Intune"
 doc_type: apiPageType
 ---
 
 # Create groupPolicyPresentationTextBox
-
-Namespace: microsoft.graph
 
 > **Important:** Microsoft Graph APIs under the /beta version are subject to change; production use is not supported.
 
@@ -95,7 +93,6 @@ Content-Length: 294
   "maxLength": 9
 }
 ```
-
 
 
 

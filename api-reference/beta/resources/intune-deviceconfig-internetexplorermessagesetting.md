@@ -1,15 +1,13 @@
 ---
 title: "internetExplorerMessageSetting enum type"
 description: "What message will be displayed by Edge before switching to Internet Explorer."
-author: "rolyon"
+author: "davidmu1"
 localization_priority: Normal
 ms.prod: "Intune"
 doc_type: enumPageType
 ---
 
 # internetExplorerMessageSetting enum type
-
-Namespace: microsoft.graph
 
 > **Important:** Microsoft Graph APIs under the /beta version are subject to change; production use is not supported.
 

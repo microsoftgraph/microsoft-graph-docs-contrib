@@ -1,15 +1,13 @@
 ---
 title: "deviceManagementIntentDeviceSettingStateSummary resource type"
 description: "Entity that represents device setting state summary for an intent"
-author: "rolyon"
+author: "davidmu1"
 localization_priority: Normal
 ms.prod: "Intune"
 doc_type: resourcePageType
 ---
 
 # deviceManagementIntentDeviceSettingStateSummary resource type
-
-Namespace: microsoft.graph
 
 > **Important:** Microsoft Graph APIs under the /beta version are subject to change; production use is not supported.
 

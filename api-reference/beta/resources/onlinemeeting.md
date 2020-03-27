@@ -21,6 +21,7 @@ Contains information about the meeting, including the URL used to join a meeting
 |:---------------|:--------|:----------|
 | [Create onlineMeeting](../api/application-post-onlineMeetings.md) | [onlineMeeting](onlinemeeting.md) | Create an online meeting. |
 | [Get onlineMeeting](../api/onlinemeeting-get.md) | [onlineMeeting](onlinemeeting.md) | Read the properties and relationships of an **onlineMeeting** object. |
+| [Create or get onlineMeeting](../api/onlinemeeting-createorget.md) | [onlineMeeting](onlinemeeting.md) | Create an online meeting with a custom, external ID. If the meeting already exists, retrieve its propertie. |
 
 ## Properties
 
@@ -39,6 +40,7 @@ Contains information about the meeting, including the URL used to join a meeting
 | capabilities              | String collection                                      | The list of meeting capabilities. Possible values are: `questionAndAnswer`. |
 | videoTeleconferenceId     | String                                                 | The video teleconferencing ID. Read-only. |
 | joinInformation | [itemBody](itembody.md) | The join information in the language and locale variant specified in 'Accept-Language' request HTTP header. Read-only |
+| externalId                | String                                                 | The external ID. A custom ID. Optional. |
 
 ### autoAdmittedUsers values
 | Value | Description  |
@@ -55,7 +57,7 @@ Contains information about the meeting, including the URL used to join a meeting
 <!-- {
   "blockType": "resource",
   "optionalProperties": [
-
+  "externalId"
   ],
   "@odata.type": "microsoft.graph.onlineMeeting"
 }-->

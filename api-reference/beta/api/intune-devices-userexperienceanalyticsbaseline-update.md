@@ -1,15 +1,13 @@
 ---
 title: "Update userExperienceAnalyticsBaseline"
 description: "Update the properties of a userExperienceAnalyticsBaseline object."
-author: "rolyon"
+author: "davidmu1"
 localization_priority: Normal
 ms.prod: "Intune"
 doc_type: apiPageType
 ---
 
 # Update userExperienceAnalyticsBaseline
-
-Namespace: microsoft.graph
 
 > **Important:** Microsoft Graph APIs under the /beta version are subject to change; production use is not supported.
 
@@ -92,7 +90,6 @@ Content-Length: 266
   "createdDateTime": "2017-01-01T00:02:43.5775965-08:00"
 }
 ```
-
 
 
 
