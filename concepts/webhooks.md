@@ -156,7 +156,7 @@ Microsoft Graph validates the notification endpoint provided in the `notificatio
 
 The client should discard the validation token after providing it in the response.
 
-Additionally, you can use the [Microsoft Graph Postman collection](use-postman.md) to confirm your endpoint properly implements the validation request. The **Subscription Validation** request in the **Misc** folder provides unit tests validating the response provided by your endpoint.  
+Additionally, you can use the [Microsoft Graph Postman collection](use-postman.md) to confirm that your endpoint properly implements the validation request. The **Subscription Validation** request in the **Misc** folder provides unit tests that validate the response provided by your endpoint.  
 
 ![validation response test results](images/change-notifications/validation-request-tests-results.png)
 
