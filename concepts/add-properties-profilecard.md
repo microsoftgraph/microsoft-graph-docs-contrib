@@ -1,10 +1,10 @@
 ---
 title: "How to add additional properties to the profile card"
-description: "TO DO POLLY*****Users are the representation of an Azure Active Directory (Azure AD) work or school user account or a Microsoft account in Microsoft Graph. The **user** resource in Microsoft Graph is a hub from which you can access the relationships and resources that are relevant to your users."
+description: "You can customize the profile card by making additional attributes visible, or adding custom attributes.
 author: "PollyNincevic"
 localization_priority: Priority
 ms.prod: "users"
-ms.custom: scenarios:ASK****getting-started
+ms.custom: scenarios:getting-started
 ---
 
 # How to add additional properties to the profile card
@@ -21,93 +21,78 @@ You can add additional properties from your Active Directory to be shown on prof
 
 You can make the following attributes from AD or AAD visible on users' profile cards:
 
-UserPrincipalName
-Fax
-StreetAddress
-PostalCode
-StateOrProvince
-Alias
+- UserPrincipalName
+- Fax
+- StreetAddress
+- PostalCode
+- StateOrProvince
+- Alias
 
-You can add any of the above listed attributes to the profile card by configuring your tenant settings in Microsoft Graph1. Here's how to do that:
+You can add any of the above listed attributes to the profile card by configuring your tenant settings in Microsoft Graph<sup id="a1">[1](#f1)</sup> Here's how:
 
-Go to https://developer.microsoft.com/en-us/graph/graph-explorer 
+1. Go to [https://developer.microsoft.com/en-us/graph/graph-explorer](https://developer.microsoft.com/en-us/graph/graph-explorer)
+2. Sign in with your Admin username and password
+3. Make sure the Preview toggle is set to **Off**
+4. In the Query URL, select PATCH and enter https://microsoft.com/beta/organization/[TenantID]/settings
+5. In **Request Body** enter:
 
-Sign in with your Admin username and password 
+        {
+                "experiencePersonalization": {
+                    "visibilities" : {
+                        "[Attribute name, e.g. Alias]": "Visible"
+                    }
+            }    
+        }  
 
-Make sure the Preview toggle is set to Off 
+6. Click **Run Query**
 
-In the Query URL, select PATCH and enter https://microsoft.com/beta/organization/[TenantID]/settings 
+> [!NOTE]
+> When you make additional attributes visible, you must use the English property names. You don't have to add localized values. The additional properties will automatically be shown in the language settings that the user has specified for Office 365.
 
-In Request Body enter: 
+**Important:** It takes up to 24 hours for the changes to show on profile cards.
 
-{ 
+## Adding custom attributes 
+You can add any of the [15 custom attributes](https://docs.microsoft.com/exchange/recipients/mailbox-custom-attributes?view=exchserver-2019) from Exchange Server to users' profile cards by configuring your tenant settings in Microsoft Graph<sup id="a1">[1](#f1)</sup>. Here's how:
+1. Go to [https://developer.microsoft.com/en-us/graph/graph-explorer](https://developer.microsoft.com/en-us/graph/graph-explorer)
+2. Sign in with your Admin username and password
+3. Make sure the Preview toggle is set to **Off**
+4. In the Query URL, select PATCH and enter https://microsoft.com/beta/organization/[TenantID]/settings
+5. In **Request Body** enter:
 
-"experiencePersonalization": { 
+        {
+            "experiencePersonalization": {
+                
+                "localizations": [
+                    {
+                        "propertyName": "customAttribute[X]", 
+                        "default": "[Property name, e.g. Cost center]", 
+                        "localizationValues": {
+                            "[Language code, e.g. de-de]": "Kostenstelle", 
+                            "[Language code, e.g. es-es]": "Centro de costos", 
+                    }
+                ],    
+            }
+        }      
 
-                "visibilities": { 
+6. Click **Run Query**
 
-                    "[Attribute name, e.g. Alias]": "Visible" 
+> [!NOTE]
+> Enter the language code in the form *ll-cc*, where *ll* is the language code, and cc the country code. For example, for German – Austria, enter the country code de-at.  
+To see an overview of supported languages, see the article [What languages is Office available in?](https://go.microsoft.com/fwlink/?linkid=2124878) and select the tab **Office Online**.
+If a language is not supported, the property name will be shown with the default value.  
 
-                } 
+**Important:** It takes up to 24 hours for the changes to show on profile cards.
 
-        } 
+> [!NOTE]
+> Custom properties are not searchable and can't be used to search for people across Microsoft apps and services.
 
-}  
 
-Click Run Query 
+### Related articles
 
-Note: When you make additional attributes visible, you must use the English property names. You don't have to add localized values. The additional properties will automatically be shown in the language settings that the user has specified for Office 365. 
+[Find your Office 365 tenant ID](https://docs.microsoft.com/onedrive/find-your-office-365-tenant-id)
+#### Notes
 
-Important: It takes up to 24 hours for the changes to show on profile cards. 
+<b id="f1">1.</b> The Microsoft Graph is in Beta. [↩](#a1)
 
- 
-### Manage your organization
 
-Create new users in your organization or update the resources and relationships for existing users. You can use Microsoft Graph to perform the following user management tasks: 
 
-- Create or delete users in your Azure AD organization.
-- List a user's group memberships and determine whether a user is a member of a group.
-- List the users who report to a user and assign managers to a user.
-- Upload or retrieve a photo for the user.
-
-### Work with calendars and tasks
-
-You can view, query, and update user calendar and calendar groups associated with a user, including:
-
-- List and create events on a users calendar.
-- View tasks assigned to a user.
-- Find free meeting times for a set of users.
-- Get a list of reminders set on a user's calendar.
-
-### Administer mail and handle contacts
-
-You can configure user mail settings and contact lists and send mail on a user's behalf, including:
-
-- List mail messages and send new mail.
-- Create and list user contacts and organize contacts in folders.
-- Retrieve and update mailbox folders and settings.
-
-### Enrich your app with user insights
-
-Maximize relevance in your application by promoting recently used or trending documents and contacts associated with a user. You can use Microsoft Graph to:
-
-- Return documents recently viewed and modified by a user.
-- Return documents and sites trending around a user's activity.
-- List documents shared with a user through email or OneDrive for Business.
-
-## API reference
-Looking for the API reference for this service?
-
-- [Users API in Microsoft Graph v1.0](/graph/api/resources/users?view=graph-rest-1.0)
-- [Users API in Microsoft Graph beta](/graph/api/resources/users?view=graph-rest-beta)
-
-## Next steps
-
-- Learn more about how to [work with users](/graph/api/resources/users?view=graph-rest-1.0).
-- Explore your own data from the **user** resource in the [Graph Explorer](https://developer.microsoft.com/graph/graph-explorer).
-- Authenticate with Microsoft Graph [on behalf of a user](auth-v2-user.md) or [as a daemon or service by consent of an administrator](auth-v2-service.md).
-- Set access control and policies for users with the [Azure AD API](/graph/api/resources/azure-ad-overview?view=graph-rest-1.0).
-- Review the [permissions](permissions-reference.md) your app will need to access user data. 
-<!-- This isn't really a next step; let's remove to keep the list of links concise.>
-- Stay up to date with Microsoft Graph [changelog](changelog.md).
--->
