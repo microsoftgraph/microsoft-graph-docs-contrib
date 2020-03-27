@@ -9,9 +9,13 @@ doc_type: "resourcePageType"
 
 # errorDetail resource type
 
+Namespace: microsoft.graph
+
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 Describes an error for a failed request to create a Microsoft Search connection [schema](schema.md) asynchronously.
+
+[!INCLUDE [search-api-preview](../../includes/search-api-preview-signup.md)]
 
 ## Properties
 

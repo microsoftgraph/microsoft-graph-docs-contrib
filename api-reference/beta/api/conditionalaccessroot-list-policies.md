@@ -9,6 +9,8 @@ doc_type: apiPageType
 
 # List policies
 
+Namespace: microsoft.graph
+
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 Retrieve a list of [conditionalAccessPolicy](../resources/conditionalaccesspolicy.md) objects.
@@ -21,7 +23,7 @@ One of the following permissions is required to call this API. To learn more, in
 |:--------------------------------------|:----------------------------------------------------------------------------------|
 |Delegated (work or school account)     | Policy.Read.All |
 |Delegated (personal Microsoft account) | Not supported. |
-|Application                            | Not supported. |
+|Application                            | Policy.Read.All |
 
 ## HTTP request
 

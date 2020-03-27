@@ -9,6 +9,8 @@ doc_type: "apiPageType"
 
 # Update place
 
+Namespace: microsoft.graph
+
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 Update the properties of [place](../resources/place.md) object, which can be a [room](../resources/room.md) or [roomList](../resources/roomlist.md). You can identify the **room** or **roomList** by specifying the **id** or **emailAddress** property.
@@ -28,18 +30,19 @@ One of the following permissions is required to call this API. To learn more, in
 <!-- { "blockType": "ignored" } -->
 
 ```http
-PATCH /places/{id}
+PATCH /places/{id | emailAddress}
 ```
 
 ## Request headers
 
-| Name       | Type | Description|
-|:-----------|:------|:----------|
-| Authorization  | string  | Bearer {token}. Required. |
+| Name       | Value|
+|:-----------|:------|
+| Authorization  | Bearer {token}. Required. |
+| Content-Type | application/json. Required. |
 
 ## Request body
 
-In the request body, supply the values for relevant fields that should be updated. Existing properties that are not included in the request body will maintain their previous values or be recalculated based on changes to other property values. For best performance, don't include existing values that haven't changed.
+In the request body, supply the values for relevant fields that should be updated. Only one instance of a place resource (**room** or **roomList**) can be updated at a time. In the request body, use `@odata.type` to specify the type of place, and include the properties of that type to update. Existing properties that are not included in the request body will maintain their previous values or be recalculated based on changes to other property values. For best performance, don't include existing values that haven't changed.
 
 | Property               | Type                                              | Description |
 |:-----------------------|:--------------------------------------------------|:--|
@@ -72,6 +75,8 @@ If successful, this method returns a `200 OK` response code and an updated [plac
 The following is an example of the request.
 
 
+
+# [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "update_room"
@@ -90,6 +95,20 @@ Content-length: 285
   "isWheelchairAccessible": false
 }
 ```
+# [C#](#tab/csharp)
+[!INCLUDE [sample-code](../includes/snippets/csharp/update-room-csharp-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [JavaScript](#tab/javascript)
+[!INCLUDE [sample-code](../includes/snippets/javascript/update-room-javascript-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Objective-C](#tab/objc)
+[!INCLUDE [sample-code](../includes/snippets/objc/update-room-objc-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+---
+
 
 ### Response
 
@@ -122,8 +141,8 @@ Content-type: application/json
       "countryOrRegion": "USA"
     },
     "geoCoordinates": {
-      "latitude": 47.640568390488626,
-      "longitude": -122.1293731033803
+      "latitude": 47.0,
+      "longitude": -122.0
     },
     "phone": "555-555-0100",
     "nickname": "Conf Room",
@@ -151,6 +170,8 @@ Content-type: application/json
 The following is an example of the request.
 
 
+
+# [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "update_roomlist"
@@ -162,9 +183,37 @@ Content-type: application/json
 {
   "@odata.type": "microsoft.graph.roomlist",
   "displayName": "Building 1",
-  "phone":"555-555-0100"
+  "phone":"555-555-0100",
+  "address": {
+    "street": "4567 Main Street",
+    "city": "Buffalo",
+    "state": "NY",
+    "postalCode": "98052",
+    "countryOrRegion": "USA"
+  },
+  "geoCoordinates": {
+    "altitude": null,
+    "latitude": 47.0,
+    "longitude": -122.0,
+    "accuracy": null,
+    "altitudeAccuracy": null
+ }
 }
 ```
+# [C#](#tab/csharp)
+[!INCLUDE [sample-code](../includes/snippets/csharp/update-roomlist-csharp-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [JavaScript](#tab/javascript)
+[!INCLUDE [sample-code](../includes/snippets/javascript/update-roomlist-javascript-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Objective-C](#tab/objc)
+[!INCLUDE [sample-code](../includes/snippets/objc/update-roomlist-objc-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+---
+
 
 ### Response
 
@@ -195,7 +244,13 @@ Content-type: application/json
     "postalCode": "98052",
     "countryOrRegion": "USA"
   },
-  "geocoordinates": null,
+  "geoCoordinates": {
+    "altitude": null,
+    "latitude": 47.0,
+    "longitude": -122.0,
+    "accuracy": null,
+    "altitudeAccuracy": null
+ },
   "phone": "555-555-0100",
   "emailAddress": "bldg1@contoso.com"
 }

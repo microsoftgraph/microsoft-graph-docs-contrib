@@ -1,7 +1,7 @@
 ---
 title: "Get macOSMicrosoftEdgeApp"
 description: "Read properties and relationships of the macOSMicrosoftEdgeApp object."
-author: "rolyon"
+author: "davidmu1"
 localization_priority: Normal
 ms.prod: "Intune"
 doc_type: apiPageType
@@ -36,7 +36,7 @@ GET /deviceAppManagement/mobileApps/{mobileAppId}/deviceStatuses/{mobileAppInsta
 ```
 
 ## Optional query parameters
-This method supports the [OData Query Parameters](https://docs.microsoft.com/en-us/graph/query-parameters) to help customize the response.
+This method supports the [OData Query Parameters](/graph/query-parameters) to help customize the response.
 
 ## Request headers
 |Header|Value|
@@ -63,7 +63,7 @@ Here is an example of the response. Note: The response object shown here may be 
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 961
+Content-Length: 985
 
 {
   "value": {
@@ -91,12 +91,11 @@ Content-Length: 961
     "roleScopeTagIds": [
       "Role Scope Tag Ids value"
     ],
-    "dependentAppCount": 1
+    "dependentAppCount": 1,
+    "channel": "beta"
   }
 }
 ```
-
-
 
 
 
