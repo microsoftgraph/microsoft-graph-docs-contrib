@@ -28,6 +28,9 @@ Intune will provide customer the ability to run their Shell scripts on the enrol
 ## Properties
 |Property|Type|Description|
 |:---|:---|:---|
+|executionFrequency|Duration|The interval for script to run. If not defined the script will run once|
+|retryCount|Int32|Number of times for the script to be retried if it fails|
+|blockExecutionNotifications|Boolean|Does not notify the user a script is being executed|
 |id|String|Unique Identifier for the device management script.|
 |displayName|String|Name of the device management script.|
 |description|String|Optional description for the device management script.|
@@ -58,6 +61,9 @@ Here is a JSON representation of the resource.
 ``` json
 {
   "@odata.type": "#microsoft.graph.deviceShellScript",
+  "executionFrequency": "String (duration)",
+  "retryCount": 1024,
+  "blockExecutionNotifications": true,
   "id": "String (identifier)",
   "displayName": "String",
   "description": "String",
