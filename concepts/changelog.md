@@ -13,18 +13,18 @@ For details about known issues with Microsoft Graph APIs, see [Known issues](kno
 
 ## March 2020
 
-### Cloud communications
-
-| **Change type** | **Version**   | **Description**                          |
-| :-------------- | :------------ | :--------------------------------------- |
-|Addition|beta|Added in an optional **Accept-Language** header for [online meetings](/graph/api/resources/onlinemeeting)
-
 ### Calendar
 
 | **Change type** | **Version** | **Description**                          |
 |:----------------|:------------|:-----------------------------------------|
 | Addition | Beta | Added the **calendarGroupId** property to the [calendar](/graph/api/resources/calendar?view=graph-rest-beta) entity. |
 | Addition | Beta | Added the **isDraft** property to the [event](/graph/api/resources/event?view=graph-rest-beta) entity. |
+
+### Cloud communications
+
+| **Change type** | **Version**   | **Description**                          |
+| :-------------- | :------------ | :--------------------------------------- |
+|Addition|beta|Added in an optional `Accept-Language` header for [online meetings](/graph/api/resources/onlinemeeting).
 
 ### Identity and access (Azure AD)
 
