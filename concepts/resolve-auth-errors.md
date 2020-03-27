@@ -8,12 +8,12 @@ ms.prod: "microsoft-identity-platform"
 
 # Resolve Microsoft Graph authorization errors
 
-Authorization errors can be a result of several different issues, most of which generate a 401 or 403 error. For example, the following can all lead to authorization errors:
+Authorization errors can be a result of several different issues, most of which generate a 403 error (with a few exceptions). For example, the following can all lead to authorization errors:
 
 * Incorrect [access token acquisition flows](https://docs.microsoft.com/azure/active-directory/develop/active-directory-authentication-scenarios)
 * Poorly configured [permission scopes](https://docs.microsoft.com/azure/active-directory/develop/active-directory-v2-scopes)
 * Lack of [consent](https://docs.microsoft.com/azure/active-directory/develop/active-directory-devhowto-multi-tenant-overview#understanding-user-and-admin-consent)
-* Lack of [permissions](https://docs.microsoft.com/en-us/azure/active-directory/develop/v2-permissions-and-consent)
+* Lack of [permissions](https://docs.microsoft.com/azure/active-directory/develop/v2-permissions-and-consent)
 
 ## Recommended steps
 
