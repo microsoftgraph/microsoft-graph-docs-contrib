@@ -3525,26 +3525,26 @@
           href: api/orgcontact-get.md
         - name: Get org contact delta
           href: api/orgcontact-delta.md
-      - name: Groups
-        href: resources/group.md
-        items:
-        - name: List memberOf
-          href: api/orgcontact-list-memberof.md
-        - name: Get member groups
-          href: api/orgcontact-getmembergroups.md
-        - name: Check member groups
-          href: api/orgcontact-checkmembergroups.md
-      - name: Org hierarchy
-        href: resources/directoryobject.md
-        items:
-        - name: List direct reports
-          href: api/orgcontact-list-directreports.md  
-        - name: List memberOf
-          href: api/orgcontact-list-memberof.md
-        - name: Get manager
-          href: api/orgcontact-get-manager.md
-        - name: Get member objects
-          href: api/orgcontact-getmemberobjects.md
+        - name: Groups
+          href: resources/group.md
+          items:
+          - name: List memberOf
+            href: api/orgcontact-list-memberof.md
+          - name: Get member groups
+            href: api/orgcontact-getmembergroups.md
+          - name: Check member groups
+            href: api/orgcontact-checkmembergroups.md
+        - name: Org hierarchy
+          href: resources/directoryobject.md
+          items:
+          - name: List direct reports
+            href: api/orgcontact-list-directreports.md  
+          - name: List memberOf
+            href: api/orgcontact-list-memberof.md
+          - name: Get manager
+            href: api/orgcontact-get-manager.md
+          - name: Get member objects
+            href: api/orgcontact-getmemberobjects.md
       - name: Subscribed SKU
         href: resources/subscribedsku.md
         items:
