@@ -13,12 +13,6 @@ For details about known issues with Microsoft Graph APIs, see [Known issues](kno
 
 ## March 2020
 
-### Files (OneDrive for Business)
-
-| **Change type** | **Version**   | **Description**                          |
-| :-------------- | :------------ | :--------------------------------------- |
-| Addition        | v1.0 and beta | Added image and video properties to remoteItem that have been recently used by the signed in user.These properties would allow to retrieve media type thumbnails specifically images when combined with an expand function. Example: GET /me/drive/recent?$filter=(remoteItem/image ne null or remoteItem/video ne null)&$expand=thumbnails. Calling this API with $filter and $expand also need preference Header such as prefer: apiversion=2.1, NoPreAuthThumbnailUrls |
-
 ### Calendar
 
 | **Change type** | **Version** | **Description**                          |
@@ -88,6 +82,12 @@ For details about known issues with Microsoft Graph APIs, see [Known issues](kno
 |Addition|beta|Added the **ignoreDevicesForUnsupportedSettingsEnabled** property to the [deviceManagementSettings](/graph/api/resources/intune-deviceconfig-devicemanagementsettings?view=graph-rest-beta) complex type|
 |Addition|beta|Added the **deliveryOptimizationPriority** property to the [win32LobAppAssignmentSettings](/graph/api/resources/intune-apps-win32lobappassignmentsettings?view=graph-rest-beta) complex type|
 |Addition|beta|Added the **deviceOsHigherThanDesiredOsVersion** member to the [iosUpdatesInstallStatus](/graph/api/resources/intune-deviceconfig-iosupdatesinstallstatus?view=graph-rest-beta) enum type. |
+
+### Files (OneDrive for Business)
+
+| **Change type** | **Version**   | **Description**                          |
+| :-------------- | :------------ | :--------------------------------------- |
+| Addition        | v1.0 and beta | Added **image** and **video** properties on the **remoteItem** resource. These properties allow you to retrieve media type thumbnails when combined with an expand function.  |
 
 ### Identity and access (Azure AD)
 
