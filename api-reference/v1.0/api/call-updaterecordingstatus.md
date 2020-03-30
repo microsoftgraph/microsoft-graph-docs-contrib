@@ -5,12 +5,11 @@ author: "ananmishr"
 localization_priority: Normal
 ms.prod: "cloud-communications"
 doc_type: apiPageType
-namespace: microsoft.graph
 ---
 
 # call: updateRecordingStatus
 
-
+Namespace: microsoft.graph
 
 Update the application's recording status associated with a call.
 
