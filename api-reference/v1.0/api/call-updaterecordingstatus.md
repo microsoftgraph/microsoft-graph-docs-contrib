@@ -13,7 +13,6 @@ Namespace: microsoft.graph
 
 Update the application's recording status associated with a call.
 
-> [!NOTE]
 > **Additional Restriction**: You may NOT use the Media Access API to record or otherwise persist media content from calls or meetings that your application accesses, or data derived from that media content ("record" or "recording"), without first calling the **updateRecordingStatus** API to indicate that recording has begun, and receiving a success reply from that API. If your application begins recording any meeting, it must end the recording prior to calling the **updateRecordingStatus** API to indicate that the recording has ended.
 
 ## Permissions
