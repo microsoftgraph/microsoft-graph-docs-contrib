@@ -41,7 +41,6 @@ In the request body, supply the values for relevant fields that should be update
 |description|String| Description of the class.|
 |displayName|String| Name of the class.|
 |mailNickname|String| Email alias for sending email to all users if that feature is enabled. |
-<!-- Please verify the revised description here. -->
 |classCode|String| Class code used by the school.|
 |externalId|String| ID of the class from the syncing system. |
 |externalName|String|Name of the class in the syncing system.|
