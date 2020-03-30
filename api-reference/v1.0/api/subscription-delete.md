@@ -9,6 +9,8 @@ doc_type: apiPageType
 
 # Delete subscription
 
+Namespace: microsoft.graph
+
 Delete a subscription.
 
 ## Permissions

@@ -9,6 +9,8 @@ doc_type: apiPageType
 
 # List licenseDetails
 
+Namespace: microsoft.graph
+
 Retrieve a list of licenseDetails objects.
 
 ## Permissions

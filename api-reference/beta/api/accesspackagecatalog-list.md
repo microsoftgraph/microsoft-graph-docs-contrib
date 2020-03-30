@@ -9,6 +9,8 @@ doc_type: "apiPageType"
 
 # List accessPackageCatalogs
 
+Namespace: microsoft.graph
+
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 Retrieve a list of [accessPackageCatalog](../resources/accesspackagecatalog.md) objects.
@@ -33,7 +35,7 @@ GET /identityGovernance/entitlementManagement/accessPackageCatalogs
 
 ## Optional query parameters
 
-This method supports some of the OData query parameters to help customize the response.  For example, to retrieve the access packages in each catalog, include `$expand=accessPackages` in the query. For general information, see [OData query parameters](/graph/query-parameters).
+This method supports some of the OData query parameters to help customize the response.  For example, to retrieve the access packages in each catalog, include `$expand=accessPackages` in the query. To search for access package catalogs with a particular name, include a filter such as `$filter=contains(tolower(displayName),'staff')` in the query.  For general information, see [OData query parameters](/graph/query-parameters).
 
 ## Request headers
 

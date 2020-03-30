@@ -1,7 +1,7 @@
 ---
 title: "Update deviceHealthScript"
 description: "Update the properties of a deviceHealthScript object."
-author: "rolyon"
+author: "davidmu1"
 localization_priority: Normal
 ms.prod: "Intune"
 doc_type: apiPageType
@@ -123,7 +123,6 @@ Content-Length: 747
   "highestAvailableVersion": "Highest Available Version value"
 }
 ```
-
 
 
 

@@ -9,6 +9,8 @@ doc_type: apiPageType
 
 # List registeredDevices
 
+Namespace: microsoft.graph
+
 Get the list of user's registered devices.
 ## Permissions
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
