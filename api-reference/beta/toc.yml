@@ -28,7 +28,8 @@
       href: /graph/paging?context=graph/api/beta
     - name: Use query parameters
       href: /graph/query-parameters?context=graph/api/beta
-    - name: Batch requests
+    - name: Batching
+      displayName: Batch requests
       href: /graph/json-batching?context=graph/api/beta
     - name: Throttling
       href: /graph/throttling?context=graph/api/beta
@@ -43,8 +44,8 @@
         href: /graph/webhooks-outlook-authz?context=graph/api/beta
       - name: Notifications with resource data (preview)
         href: /graph/webhooks-with-resource-data?context=graph/api/beta
-    - name: Track changes
-      displayname: Delta query, Outlook calendar, Groups, Outlook mail, Users, Planner, Azure AD
+    - name: Change tracking
+      displayname: Delta query, track changes, Outlook calendar, Groups, Outlook mail, Users, Planner, Azure AD
       items:
       - name: Overview
         href: /graph/delta-query-overview?context=graph/api/beta
