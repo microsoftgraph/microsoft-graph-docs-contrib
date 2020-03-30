@@ -51,7 +51,8 @@ You can add any of the above listed attributes to the profile card by configurin
 > [!NOTE]
 > When you make additional attributes visible, you must use the English property names. You don't have to add localized values. The additional properties will automatically be shown in the language settings that the user has specified for Office 365.
 
-**Important:** It takes up to 24 hours for the changes to show on profile cards.
+> [!IMPORTANT]
+> It takes up to 24 hours for the changes to show on profile cards.
 
 ## Adding custom attributes 
 You can add any of the [15 custom attributes](https://docs.microsoft.com/exchange/recipients/mailbox-custom-attributes?view=exchserver-2019) from Exchange Server to users' profile cards by configuring your tenant settings in Microsoft Graph.<sup id="a1">[1](#f1)</sup> Here's how:
@@ -84,7 +85,8 @@ You can add any of the [15 custom attributes](https://docs.microsoft.com/exchang
 To see an overview of supported languages, see the article [What languages is Office available in?](https://go.microsoft.com/fwlink/?linkid=2124878) and select the tab **Office Online**.
 If a language is not supported, the property name will be shown with the default value.  
 
-**Important:** It takes up to 24 hours for the changes to show on profile cards.
+> [!IMPORTANT]
+> It takes up to 24 hours for the changes to show on profile cards.
 
 > [!NOTE]
 > Custom properties are not searchable and can't be used to search for people across Microsoft apps and services.
