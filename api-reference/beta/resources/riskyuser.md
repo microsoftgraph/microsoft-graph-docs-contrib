@@ -44,10 +44,13 @@ For more information about risk events, see [Azure Active Directory Identity Pro
 |`userDisplayName`|`string`|Risky user display name|
 |`userPrincipalName`|`string`|Risky user principal name|
 
+## Relationships
+
+None.
 
 ## JSON representation
 
-Here is a JSON representation of the resource.
+The following is a JSON representation of the resource.
 
 <!-- {
   "blockType": "resource",
