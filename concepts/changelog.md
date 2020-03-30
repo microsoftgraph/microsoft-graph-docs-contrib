@@ -2749,7 +2749,7 @@ Debut of the places API which provides rich details for locations in apps.
 
 ## January 2018
 
-### Batch requests
+### Batching
 
 |Change type|Version|Description|
 |:---|:---|:---|

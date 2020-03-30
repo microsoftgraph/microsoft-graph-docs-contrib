@@ -13,7 +13,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Get newly created, updated, or deleted organizational contacts without having to perform a full read of the entire collection. See [Track changes](/graph/delta-query-overview) for details.
+Get newly created, updated, or deleted organizational contacts without having to perform a full read of the entire collection. See [change tracking](/graph/delta-query-overview) for details.
 
 ## Permissions
 
