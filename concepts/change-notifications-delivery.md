@@ -8,7 +8,9 @@ ms.custom: graphiamtop20
 
 # Get change notifications delivered different ways (preview)
 
-Change notifications can be delivered different ways to subscribers. If change notifications' main delivery mode is through webhooks, it can be challenging to leverage webhooks for high throughput scenarios.
+Change notifications can be delivered different ways to subscribers. If change notifications' main delivery mode is through webhooks, it can be challenging to leverage webhooks for high throughput scenarios or when the receiver cannot expose a publicly available notificiation URL.  
+
+Good examples of high throughput scenarios include applications subscribing to a large set of resources, applications subscribing to resources that change with a high frequency and multi-tenant applications that subscribe to resources accross a large set of organizations.
 
 ## Using Azure Event Hubs to receive change notifications
 
