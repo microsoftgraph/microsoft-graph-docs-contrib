@@ -29,6 +29,6 @@ const bookingBusiness = {
 
 let res = await client.api('/bookingBusinesses')
 	.version('beta')
-	.post({bookingBusiness : bookingBusiness});
+	.post(bookingBusiness);
 
 ```

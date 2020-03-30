@@ -3,9 +3,13 @@ title: "Get schemaExtension"
 description: "Get the properties of the specified schemaExtension definition."
 localization_priority: Normal
 author: "dkershaw10"
+doc_type: apiPageType
+ms.prod: ""
 ---
 
 # Get schemaExtension
+
+Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
@@ -50,14 +54,14 @@ Here is an example of the request.
   "blockType": "request",
   "name": "get_schemaextension"
 }-->
-```http
+```msgraph-interactive
 GET https://graph.microsoft.com/beta/schemaExtensions/graphlearn_test
 ```
 # [C#](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/get-schemaextension-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# [Javascript](#tab/javascript)
+# [JavaScript](#tab/javascript)
 [!INCLUDE [sample-code](../includes/snippets/javascript/get-schemaextension-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 

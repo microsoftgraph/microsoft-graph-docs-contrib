@@ -8,6 +8,8 @@ doc_type: apiPageType
 ---
 # Follow site 
 
+Namespace: microsoft.graph
+
 Follow a user's [site](../resources/site.md) or multiple sites.
 
 ## Permissions
@@ -73,7 +75,7 @@ Content-Type: application/json
 [!INCLUDE [sample-code](../includes/snippets/csharp/follow-site-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# [Javascript](#tab/javascript)
+# [JavaScript](#tab/javascript)
 [!INCLUDE [sample-code](../includes/snippets/javascript/follow-site-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 

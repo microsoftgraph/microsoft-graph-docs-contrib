@@ -19,11 +19,20 @@ var bookingAppointment = new BookingAppointment
 			PostOfficeBox = null,
 			State = "NY",
 			Street = "123 First Avenue",
+			AdditionalData = new Dictionary<string, object>()
+			{
+				{"type@odata.type","#microsoft.graph.physicalAddressType"}
+			},
 			Type = null
 		},
 		Coordinates = null,
 		DisplayName = "Customer",
 		LocationEmailAddress = null,
+		AdditionalData = new Dictionary<string, object>()
+		{
+			{"uniqueIdType@odata.type","#microsoft.graph.locationUniqueIdType"},
+			{"locationType@odata.type","#microsoft.graph.locationType"}
+		},
 		LocationType = null,
 		LocationUri = null,
 		UniqueId = null,
@@ -34,22 +43,28 @@ var bookingAppointment = new BookingAppointment
 	CustomerPhone = "213-555-0199",
 	End = new DateTimeTimeZone
 	{
-		DateTime = "2018-05-01T15:30:00+03:00",
+		DateTime = "2018-05-01T12:30:00+00:00",
 		TimeZone = "UTC"
 	},
-	InvoiceAmount = 10.0,
+	InvoiceAmount = 10,
 	InvoiceDate = new DateTimeTimeZone
 	{
-		DateTime = "2018-05-01T15:30:00+03:00",
+		DateTime = "2018-05-01T12:30:00+00:00",
 		TimeZone = "UTC"
 	},
 	InvoiceId = "1001",
+	AdditionalData = new Dictionary<string, object>()
+	{
+		{"reminders@odata.type","#Collection(microsoft.graph.bookingReminder)"},
+		{"priceType@odata.type","#microsoft.graph.bookingPriceType"},
+		{"invoiceStatus@odata.type","#microsoft.graph.bookingInvoiceStatus"}
+	},
 	InvoiceStatus = BookingInvoiceStatus.Open,
 	InvoiceUrl = "theInvoiceUrl",
 	OptOutOfCustomerEmail = false,
 	PostBuffer = "PT10M",
 	PreBuffer = "PT5M",
-	Price = 10.0,
+	Price = 10,
 	PriceType = BookingPriceType.FixedPrice,
 	Reminders = new List<BookingReminder>()
 	{
@@ -57,18 +72,30 @@ var bookingAppointment = new BookingAppointment
 		{
 			Message = "This service is tomorrow",
 			Offset = "P1D",
+			AdditionalData = new Dictionary<string, object>()
+			{
+				{"recipients@odata.type","#microsoft.graph.bookingReminderRecipients"}
+			},
 			Recipients = BookingReminderRecipients.AllAttendees
 		},
 		new BookingReminder
 		{
 			Message = "Please be available to enjoy your lunch service.",
 			Offset = "PT1H",
+			AdditionalData = new Dictionary<string, object>()
+			{
+				{"recipients@odata.type","#microsoft.graph.bookingReminderRecipients"}
+			},
 			Recipients = BookingReminderRecipients.Customer
 		},
 		new BookingReminder
 		{
 			Message = "Please check traffic for next cater.",
 			Offset = "PT2H",
+			AdditionalData = new Dictionary<string, object>()
+			{
+				{"recipients@odata.type","#microsoft.graph.bookingReminderRecipients"}
+			},
 			Recipients = BookingReminderRecipients.Staff
 		}
 	},
@@ -83,11 +110,20 @@ var bookingAppointment = new BookingAppointment
 			PostOfficeBox = null,
 			State = "NY",
 			Street = "123 First Avenue",
+			AdditionalData = new Dictionary<string, object>()
+			{
+				{"type@odata.type","#microsoft.graph.physicalAddressType"}
+			},
 			Type = null
 		},
 		Coordinates = null,
 		DisplayName = "Customer location",
 		LocationEmailAddress = null,
+		AdditionalData = new Dictionary<string, object>()
+		{
+			{"uniqueIdType@odata.type","#microsoft.graph.locationUniqueIdType"},
+			{"locationType@odata.type","#microsoft.graph.locationType"}
+		},
 		LocationType = null,
 		LocationUri = null,
 		UniqueId = null,
@@ -97,7 +133,7 @@ var bookingAppointment = new BookingAppointment
 	ServiceNotes = "Customer requires punctual service.",
 	Start = new DateTimeTimeZone
 	{
-		DateTime = "2018-05-01T15:00:00+03:00",
+		DateTime = "2018-05-01T12:00:00+00:00",
 		TimeZone = "UTC"
 	}
 };

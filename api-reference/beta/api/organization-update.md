@@ -4,10 +4,12 @@ description: "Update the properties of the currently authenticated organization.
 localization_priority: Normal
 author: "davidmu1"
 ms.prod: "microsoft-identity-platform"
-doc_type: "apiPageType"
+doc_type: apiPageType
 ---
 
 # Update organization
+
+Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
@@ -89,7 +91,7 @@ Content-length: 411
 [!INCLUDE [sample-code](../includes/snippets/csharp/update-organization-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# [Javascript](#tab/javascript)
+# [JavaScript](#tab/javascript)
 [!INCLUDE [sample-code](../includes/snippets/javascript/update-organization-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 

@@ -18,6 +18,6 @@ const programControl = {
 
 let res = await client.api('/programControls')
 	.version('beta')
-	.post({programControl : programControl});
+	.post(programControl);
 
 ```

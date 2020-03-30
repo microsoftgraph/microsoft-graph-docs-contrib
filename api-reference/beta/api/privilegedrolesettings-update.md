@@ -2,9 +2,14 @@
 title: "Update privilegedRoleSettings"
 description: "Update the role settings for the given role setting. A privilegedRoleSettings object will be returned."
 localization_priority: Normal
+doc_type: apiPageType
+ms.prod: "microsoft-identity-platform"
+author: "davidmu1"
 ---
 
 # Update privilegedRoleSettings
+
+Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
@@ -13,7 +18,7 @@ Update the role settings for the given role setting. A [privilegedRoleSettings](
 
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
 
->**Note:** The requester must have one of the following roles: Privileged Role Administrator, Global Administrator, Security Administrator, or Security Reader. 
+>**Note:** The requester must have the Privileged Role Administrator role to update role settings. 
 
 |Permission type      | Permissions (from least to most privileged)              |
 |:--------------------|:---------------------------------------------------------|
@@ -87,7 +92,7 @@ Content-type: application/json
 [!INCLUDE [sample-code](../includes/snippets/csharp/put-privilegedrolesettings-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# [Javascript](#tab/javascript)
+# [JavaScript](#tab/javascript)
 [!INCLUDE [sample-code](../includes/snippets/javascript/put-privilegedrolesettings-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 

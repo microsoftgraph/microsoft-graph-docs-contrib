@@ -1,19 +1,30 @@
 ---
-title: "Get deleted item"
+title: "Retrieve the properties of a recently deleted item"
 description: "Retrieve the properties of a recently deleted item in deleted items."
 author: "davidmu1"
 localization_priority: Normal
 ms.prod: "microsoft-identity-platform"
+doc_type: apiPageType
 ---
 
 # Get deleted item
 
+Namespace: microsoft.graph
+
 Retrieve the properties of a recently deleted item in [deleted items](../resources/directory.md).
 
-Currently, deleted items functionality is only supported for the [group](../resources/group.md) and [user](../resources/user.md) resources.
+Currently, deleted items functionality is only supported for the [application](../resources/application.md), [group](../resources/group.md) and [user](../resources/user.md) resources.
 
 ## Permissions
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
+
+### For applications:
+
+|Permission type      | Permissions (from least to most privileged)              |
+|:--------------------|:---------------------------------------------------------|
+|Delegated (work or school account) | Directory.Read.All, Directory.ReadWrite.All, Directory.AccessAsUser.All    |
+|Delegated (personal Microsoft account) | Not supported.    |
+|Application | Application.ReadWrite.OwnedBy, Application.ReadWrite.All, Directory.Read.All |
 
 ### For users:
 
@@ -61,19 +72,23 @@ If successful, this method returns a `200 OK` response code and [directoryObject
   "blockType": "request",
   "name": "get_directory"
 }-->
-```http
+```msgraph-interactive
 GET https://graph.microsoft.com/v1.0/directory/deletedItems/{object-id}
 ```
 # [C#](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/get-directory-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# [Javascript](#tab/javascript)
+# [JavaScript](#tab/javascript)
 [!INCLUDE [sample-code](../includes/snippets/javascript/get-directory-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Objective-C](#tab/objc)
 [!INCLUDE [sample-code](../includes/snippets/objc/get-directory-objc-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Java](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/get-directory-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

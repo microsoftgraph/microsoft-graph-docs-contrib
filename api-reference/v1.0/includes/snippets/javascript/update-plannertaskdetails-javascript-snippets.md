@@ -40,6 +40,6 @@ const plannerTaskDetails = {
 };
 
 let res = await client.api('/planner/tasks/{task-id}/details')
-	.update({plannerTaskDetails : plannerTaskDetails});
+	.update(plannerTaskDetails);
 
 ```

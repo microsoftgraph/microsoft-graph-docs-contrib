@@ -4,8 +4,11 @@ description: "Retrieve the risk history"
 localization_priority: Normal
 author: "cloudhandler"
 ms.prod: "microsoft-identity-platform"
+doc_type: apiPageType
 ---
 # List history of riskyUser
+
+Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
@@ -51,14 +54,14 @@ Here is an example of the request.
   "name": "get_userriskhitsory",
   "sampleKeys": ["41a31b00-3b3b-42d9-8f1c-6d4f14e74c69"]
 }-->
-```http
+```msgraph-interactive
 GET https://graph.microsoft.com/beta/riskyUsers/41a31b00-3b3b-42d9-8f1c-6d4f14e74c69/history
 ```
 # [C#](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/get-userriskhitsory-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# [Javascript](#tab/javascript)
+# [JavaScript](#tab/javascript)
 [!INCLUDE [sample-code](../includes/snippets/javascript/get-userriskhitsory-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 

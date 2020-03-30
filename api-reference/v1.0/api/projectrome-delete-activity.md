@@ -3,9 +3,13 @@ title: "Delete an activity"
 description: "Delete an existing user activity for your app."
 localization_priority: Normal
 ms.prod: "project-rome"
+author: ""
+doc_type: apiPageType
 ---
 
 # Delete an activity
+
+Namespace: microsoft.graph
 
 Delete an existing user activity for your app.
 
@@ -62,12 +66,16 @@ DELETE https://graph.microsoft.com/v1.0/me/activities/{activity-id}/
 [!INCLUDE [sample-code](../includes/snippets/csharp/delete-activity-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# [Javascript](#tab/javascript)
+# [JavaScript](#tab/javascript)
 [!INCLUDE [sample-code](../includes/snippets/javascript/delete-activity-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Objective-C](#tab/objc)
 [!INCLUDE [sample-code](../includes/snippets/objc/delete-activity-objc-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Java](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/delete-activity-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

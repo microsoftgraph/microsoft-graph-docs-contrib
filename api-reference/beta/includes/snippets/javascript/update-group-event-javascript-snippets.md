@@ -24,6 +24,6 @@ const event = {
 
 let res = await client.api('/groups/{id}/events/{id}')
 	.version('beta')
-	.update({event : event});
+	.update(event);
 
 ```

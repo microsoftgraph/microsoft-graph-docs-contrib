@@ -15,6 +15,6 @@ const message = {
 };
 
 let res = await client.api('/me/messages/{id}')
-	.update({message : message});
+	.update(message);
 
 ```

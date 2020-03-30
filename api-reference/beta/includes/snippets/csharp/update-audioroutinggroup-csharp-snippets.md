@@ -6,7 +6,7 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 GraphServiceClient graphClient = new GraphServiceClient( authProvider );
 
-var AudioRoutingGroup = new AudioRoutingGroup
+var audioRoutingGroup = new AudioRoutingGroup
 {
 	Id = "oneToOne",
 	RoutingMode = RoutingMode.OneToOne,
@@ -21,8 +21,8 @@ var AudioRoutingGroup = new AudioRoutingGroup
 	}
 };
 
-await graphClient.App.Calls["{id}"].AudioRoutingGroups["{id}"]
+await graphClient.Communications.Calls["{id}"].AudioRoutingGroups["{id}"]
 	.Request()
-	.UpdateAsync(AudioRoutingGroup);
+	.UpdateAsync(audioRoutingGroup);
 
 ```

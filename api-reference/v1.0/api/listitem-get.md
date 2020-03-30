@@ -5,8 +5,11 @@ title: Get listItem
 description: Returns the metadata for an item in a SharePoint list.
 localization_priority: Priority
 ms.prod: "sharepoint"
+doc_type: apiPageType
 ---
 # Get listItem
+
+Namespace: microsoft.graph
 
 Returns the metadata for an [item][] in a [list][].
 
@@ -62,19 +65,23 @@ If successful, this method returns a `200 OK` response code and an [item][] in t
 # [HTTP](#tab/http)
 <!-- { "blockType": "request", "name": "get-list-item", "scopes": "sites.read.all" } -->
 
-```http
+```msgraph-interactive
 GET https://graph.microsoft.com/v1.0/sites/{site-id}/lists/{list-id}/items/{item-id}?expand=fields
 ```
 # [C#](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/get-list-item-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# [Javascript](#tab/javascript)
+# [JavaScript](#tab/javascript)
 [!INCLUDE [sample-code](../includes/snippets/javascript/get-list-item-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Objective-C](#tab/objc)
 [!INCLUDE [sample-code](../includes/snippets/objc/get-list-item-objc-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Java](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/get-list-item-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

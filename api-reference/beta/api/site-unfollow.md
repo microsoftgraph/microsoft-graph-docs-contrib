@@ -8,6 +8,8 @@ doc_type: apiPageType
 ---
 # Unfollow site 
 
+Namespace: microsoft.graph
+
 Unfollow a user's [site](../resources/site.md) or multiple sites.
 
 ## Permissions
@@ -72,7 +74,7 @@ Content-Type: application/json
 [!INCLUDE [sample-code](../includes/snippets/csharp/unfollow-site-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# [Javascript](#tab/javascript)
+# [JavaScript](#tab/javascript)
 [!INCLUDE [sample-code](../includes/snippets/javascript/unfollow-site-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 

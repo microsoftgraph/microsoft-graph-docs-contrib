@@ -6,9 +6,9 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 GraphServiceClient graphClient = new GraphServiceClient( authProvider );
 
-var OnlineMeeting = new OnlineMeeting
+var onlineMeeting = new OnlineMeeting
 {
-	MeetingType = MeetingType.MeetNow,
+	MeetingType = "meetNow",
 	Participants = new MeetingParticipants
 	{
 		Organizer = new MeetingParticipantInfo
@@ -27,6 +27,6 @@ var OnlineMeeting = new OnlineMeeting
 
 await graphClient.App.OnlineMeetings
 	.Request()
-	.AddAsync(OnlineMeeting);
+	.AddAsync(onlineMeeting);
 
 ```

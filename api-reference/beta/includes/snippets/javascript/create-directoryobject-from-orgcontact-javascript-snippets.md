@@ -17,6 +17,6 @@ const directoryObject = {
 
 let res = await client.api('/contacts/{id}/memberOf')
 	.version('beta')
-	.post({directoryObject : directoryObject});
+	.post(directoryObject);
 
 ```

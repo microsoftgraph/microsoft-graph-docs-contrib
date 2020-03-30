@@ -9,6 +9,8 @@ doc_type: "apiPageType"
 
 # Get applicationTemplate
 
+Namespace: microsoft.graph
+
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 Retrieve the properties of an [applicationTemplate](../resources/applicationtemplate.md) object.
@@ -65,14 +67,14 @@ The following is an example of the request.
   "name": "get_applicationtemplate"
 }-->
 
-```http
+```msgraph-interactive
 GET https://graph.microsoft.com/beta/applicationTemplates/{id}
 ```
 # [C#](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/get-applicationtemplate-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# [Javascript](#tab/javascript)
+# [JavaScript](#tab/javascript)
 [!INCLUDE [sample-code](../includes/snippets/javascript/get-applicationtemplate-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 

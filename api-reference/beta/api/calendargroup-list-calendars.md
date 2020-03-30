@@ -4,9 +4,12 @@ description: "Retrieve a list of calendars belonging to a calendar group."
 author: "angelgolfer-ms"
 localization_priority: Normal
 ms.prod: "outlook"
+doc_type: apiPageType
 ---
 
 # List calendars
+
+Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
@@ -68,22 +71,22 @@ Here is an example of the request.
 # [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
-  "name": "get_calendars"
+  "name": "calendargroup_get_calendars"
 }-->
 
-```http
+```msgraph-interactive
 GET https://graph.microsoft.com/beta/me/calendarGroups/{id}/calendars
 ```
 # [C#](#tab/csharp)
-[!INCLUDE [sample-code](../includes/snippets/csharp/get-calendars-csharp-snippets.md)]
+[!INCLUDE [sample-code](../includes/snippets/csharp/calendargroup-get-calendars-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# [Javascript](#tab/javascript)
-[!INCLUDE [sample-code](../includes/snippets/javascript/get-calendars-javascript-snippets.md)]
+# [JavaScript](#tab/javascript)
+[!INCLUDE [sample-code](../includes/snippets/javascript/calendargroup-get-calendars-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Objective-C](#tab/objc)
-[!INCLUDE [sample-code](../includes/snippets/objc/get-calendars-objc-snippets.md)]
+[!INCLUDE [sample-code](../includes/snippets/objc/calendargroup-get-calendars-objc-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
@@ -111,8 +114,9 @@ Content-length: 147
       "name": "name-value",
       "color": {
       },
+      "calendarGroupId":"calendarGroupId-value",
       "changeKey": "changeKey-value",
-      "id": "id-value"
+      "id": "id-value"      
     }
   ]
 }

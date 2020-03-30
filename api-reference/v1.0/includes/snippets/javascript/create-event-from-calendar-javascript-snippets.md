@@ -39,6 +39,6 @@ const event = {
 };
 
 let res = await client.api('/me/calendars/AAMkAGViNDU7zAAAAAGtlAAA=/events')
-	.post({event : event});
+	.post(event);
 
 ```

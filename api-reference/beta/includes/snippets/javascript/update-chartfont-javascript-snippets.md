@@ -21,6 +21,6 @@ const workbookChartFont = {
 
 let res = await client.api('/me/drive/items/{id}/workbook/worksheets/{id|name}/charts/{name}/axes/valueaxis/format/font')
 	.version('beta')
-	.update({workbookChartFont : workbookChartFont});
+	.update(workbookChartFont);
 
 ```

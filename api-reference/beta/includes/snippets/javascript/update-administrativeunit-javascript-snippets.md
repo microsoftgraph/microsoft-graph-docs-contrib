@@ -18,6 +18,6 @@ const administrativeUnit = {
 
 let res = await client.api('/administrativeUnits/{id}')
 	.version('beta')
-	.update({administrativeUnit : administrativeUnit});
+	.update(administrativeUnit);
 
 ```

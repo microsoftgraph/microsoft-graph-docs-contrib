@@ -10,17 +10,17 @@ var bookingAppointment = new BookingAppointment
 {
 	End = new DateTimeTimeZone
 	{
-		DateTime = "2018-05-06T15:30:00+03:00",
+		DateTime = "2018-05-06T12:30:00+00:00",
 		TimeZone = "UTC"
 	},
 	InvoiceDate = new DateTimeTimeZone
 	{
-		DateTime = "2018-05-06T15:30:00+03:00",
+		DateTime = "2018-05-06T12:30:00+00:00",
 		TimeZone = "UTC"
 	},
 	Start = new DateTimeTimeZone
 	{
-		DateTime = "2018-05-06T15:00:00+03:00",
+		DateTime = "2018-05-06T12:00:00+00:00",
 		TimeZone = "UTC"
 	}
 };

@@ -19,17 +19,32 @@ var bookingService = new BookingService
 			PostOfficeBox = null,
 			State = "NY",
 			Street = "4567 First Street",
+			AdditionalData = new Dictionary<string, object>()
+			{
+				{"type@odata.type","#microsoft.graph.physicalAddressType"}
+			},
 			Type = null
 		},
 		Coordinates = null,
 		DisplayName = "Contoso Lunch Delivery",
 		LocationEmailAddress = null,
+		AdditionalData = new Dictionary<string, object>()
+		{
+			{"uniqueIdType@odata.type","#microsoft.graph.locationUniqueIdType"},
+			{"locationType@odata.type","#microsoft.graph.locationType"}
+		},
 		LocationType = null,
 		LocationUri = null,
 		UniqueId = null,
 		UniqueIdType = null
 	},
-	DefaultPrice = 10.0,
+	DefaultPrice = 10,
+	AdditionalData = new Dictionary<string, object>()
+	{
+		{"staffMemberIds@odata.type","#Collection(String)"},
+		{"defaultReminders@odata.type","#Collection(microsoft.graph.bookingReminder)"},
+		{"defaultPriceType@odata.type","#microsoft.graph.bookingPriceType"}
+	},
 	DefaultPriceType = BookingPriceType.FixedPrice,
 	DefaultReminders = new List<BookingReminder>()
 	{
@@ -37,6 +52,10 @@ var bookingService = new BookingService
 		{
 			Message = "Please be reminded that this service is tomorrow.",
 			Offset = "P1D",
+			AdditionalData = new Dictionary<string, object>()
+			{
+				{"recipients@odata.type","#microsoft.graph.bookingReminderRecipients"}
+			},
 			Recipients = BookingReminderRecipients.AllAttendees
 		}
 	},

@@ -6,7 +6,7 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 GraphServiceClient graphClient = new GraphServiceClient( authProvider );
 
-var extension = new Extension
+var extension = new OpenTypeExtension
 {
 	ExtensionName = "Com.Contoso.Deal",
 	CompanyName = "Alpine Skis",

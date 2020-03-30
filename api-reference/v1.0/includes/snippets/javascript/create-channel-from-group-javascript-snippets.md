@@ -16,6 +16,6 @@ const channel = {
 };
 
 let res = await client.api('/teams/{id}/channels')
-	.post({channel : channel});
+	.post(channel);
 
 ```

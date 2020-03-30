@@ -12,13 +12,23 @@ var bookingStaffMember = new BookingStaffMember
 	{
 		new BookingWorkHours
 		{
+			AdditionalData = new Dictionary<string, object>()
+			{
+				{"timeSlots@odata.type","#Collection(microsoft.graph.bookingWorkTimeSlot)"},
+				{"day@odata.type","#microsoft.graph.dayOfWeek"}
+			},
 			Day = DayOfWeek.Monday,
-			TimeSlots = new List<String>()
+			TimeSlots = new List<BookingWorkTimeSlot>()
 			{
 			}
 		},
 		new BookingWorkHours
 		{
+			AdditionalData = new Dictionary<string, object>()
+			{
+				{"timeSlots@odata.type","#Collection(microsoft.graph.bookingWorkTimeSlot)"},
+				{"day@odata.type","#microsoft.graph.dayOfWeek"}
+			},
 			Day = DayOfWeek.Tuesday,
 			TimeSlots = new List<BookingWorkTimeSlot>()
 			{
@@ -31,6 +41,11 @@ var bookingStaffMember = new BookingStaffMember
 		},
 		new BookingWorkHours
 		{
+			AdditionalData = new Dictionary<string, object>()
+			{
+				{"timeSlots@odata.type","#Collection(microsoft.graph.bookingWorkTimeSlot)"},
+				{"day@odata.type","#microsoft.graph.dayOfWeek"}
+			},
 			Day = DayOfWeek.Wednesday,
 			TimeSlots = new List<BookingWorkTimeSlot>()
 			{
@@ -43,6 +58,11 @@ var bookingStaffMember = new BookingStaffMember
 		},
 		new BookingWorkHours
 		{
+			AdditionalData = new Dictionary<string, object>()
+			{
+				{"timeSlots@odata.type","#Collection(microsoft.graph.bookingWorkTimeSlot)"},
+				{"day@odata.type","#microsoft.graph.dayOfWeek"}
+			},
 			Day = DayOfWeek.Thursday,
 			TimeSlots = new List<BookingWorkTimeSlot>()
 			{
@@ -55,6 +75,11 @@ var bookingStaffMember = new BookingStaffMember
 		},
 		new BookingWorkHours
 		{
+			AdditionalData = new Dictionary<string, object>()
+			{
+				{"timeSlots@odata.type","#Collection(microsoft.graph.bookingWorkTimeSlot)"},
+				{"day@odata.type","#microsoft.graph.dayOfWeek"}
+			},
 			Day = DayOfWeek.Friday,
 			TimeSlots = new List<BookingWorkTimeSlot>()
 			{

@@ -2,9 +2,14 @@
 title: "Delete identityProvider"
 description: "Delete an existing identityProvider."
 localization_priority: Normal
+doc_type: apiPageType
+author: "valnav"
+ms.prod: "microsoft-identity-platform"
 ---
 
 # Delete identityProvider
+
+Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
@@ -18,7 +23,7 @@ One of the following permissions is required to call this API. To learn more, in
 |:--------------------|:---------------------------------------------------------|
 |Delegated (work or school account)|IdentityProvider.ReadWrite.All|
 |Delegated (personal Microsoft account)| Not supported.|
-|Application|Not supported.|
+|Application|IdentityProvider.ReadWrite.All|
 
 The work or school account must be a global administrator of the tenant.
 
@@ -62,7 +67,7 @@ DELETE https://graph.microsoft.com/beta/identityProviders/Amazon-OAuth
 [!INCLUDE [sample-code](../includes/snippets/csharp/delete-identityprovider-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# [Javascript](#tab/javascript)
+# [JavaScript](#tab/javascript)
 [!INCLUDE [sample-code](../includes/snippets/javascript/delete-identityprovider-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 

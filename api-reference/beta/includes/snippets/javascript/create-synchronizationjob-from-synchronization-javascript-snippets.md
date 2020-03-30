@@ -16,6 +16,6 @@ const synchronizationJob = {
 
 let res = await client.api('/servicePrincipals/{id}/synchronization/jobs')
 	.version('beta')
-	.post({synchronizationJob : synchronizationJob});
+	.post(synchronizationJob);
 
 ```

@@ -4,10 +4,12 @@ description: "Retrieve the properties and relationships of currently authenticat
 localization_priority: Normal
 author: "davidmu1"
 ms.prod: "microsoft-identity-platform"
-doc_type: "apiPageType"
+doc_type: apiPageType
 ---
 
 # Get organization
+
+Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
@@ -51,7 +53,7 @@ Do not supply a request body for this method.
 
 ## Response
 
-If successful, this method returns a `200 OK` response code and [organization](../resources/organization.md) object in the response body.
+If successful, this method returns a `200 OK` response code and a collection of one [organization](../resources/organization.md) object in the response body.
 
 ## Example
 
@@ -65,14 +67,14 @@ Here is an example of the request.
   "name": "get_organization"
 }-->
 
-```http
+```msgraph-interactive
 GET https://graph.microsoft.com/beta/organization
 ```
 # [C#](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/get-organization-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# [Javascript](#tab/javascript)
+# [JavaScript](#tab/javascript)
 [!INCLUDE [sample-code](../includes/snippets/javascript/get-organization-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 

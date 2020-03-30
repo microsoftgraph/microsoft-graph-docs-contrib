@@ -2,9 +2,14 @@
 title: "Add Named Item FormulaLocal"
 description: "Adds a new name to the collection of the given scope using the user's locale for the formula."
 localization_priority: Normal
+doc_type: apiPageType
+ms.prod: ""
+author: ""
 ---
 
 # Add Named Item FormulaLocal
+
+Namespace: microsoft.graph
 Adds a new name to the collection of the given scope using the user's locale for the formula.
 
 ## Permissions
@@ -69,7 +74,7 @@ Content-length: 54
 [!INCLUDE [sample-code](../includes/snippets/csharp/nameditemcollection-add-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# [Javascript](#tab/javascript)
+# [JavaScript](#tab/javascript)
 [!INCLUDE [sample-code](../includes/snippets/javascript/nameditemcollection-add-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 

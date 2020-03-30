@@ -2,11 +2,14 @@
 title: "List events"
 description: "Get a list of event objects from the user's default calendar or "
 localization_priority: Priority
-author: "dkershaw10"
-ms.prod: "microsoft-identity-platform"
+author: "angelgolfer-ms"
+ms.prod: "outlook"
+doc_type: apiPageType
 ---
 
 # List events
+
+Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
@@ -95,7 +98,7 @@ The request does not specify any `Prefer: outlook.body-content-type` header to i
   "blockType": "request",
   "name": "get_events"
 }-->
-```http
+```msgraph-interactive
 GET https://graph.microsoft.com/beta/me/events?$select=subject,body,bodyPreview,organizer,attendees,start,end,location
 Prefer: outlook.timezone="Pacific Standard Time"
 ```
@@ -103,7 +106,7 @@ Prefer: outlook.timezone="Pacific Standard Time"
 [!INCLUDE [sample-code](../includes/snippets/csharp/get-events-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# [Javascript](#tab/javascript)
+# [JavaScript](#tab/javascript)
 [!INCLUDE [sample-code](../includes/snippets/javascript/get-events-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
@@ -206,7 +209,7 @@ The request also uses a `$select` query parameter to return specific properties.
   "blockType": "request",
   "name": "get_events_in_text"
 }-->
-```http
+```msgraph-interactive
 GET https://graph.microsoft.com/beta/me/events?$select=subject,body,bodyPreview
 Prefer: outlook.body-content-type="text" 
 ```
@@ -214,7 +217,7 @@ Prefer: outlook.body-content-type="text"
 [!INCLUDE [sample-code](../includes/snippets/csharp/get-events-in-text-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# [Javascript](#tab/javascript)
+# [JavaScript](#tab/javascript)
 [!INCLUDE [sample-code](../includes/snippets/javascript/get-events-in-text-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 

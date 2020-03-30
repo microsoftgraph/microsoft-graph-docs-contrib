@@ -17,6 +17,6 @@ const contactFolder = {
 
 let res = await client.api('/me/contactFolders/{id}')
 	.version('beta')
-	.update({contactFolder : contactFolder});
+	.update(contactFolder);
 
 ```

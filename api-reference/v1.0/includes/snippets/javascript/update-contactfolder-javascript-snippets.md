@@ -16,6 +16,6 @@ const contactFolder = {
 };
 
 let res = await client.api('/me/contactFolders/{id}')
-	.update({contactFolder : contactFolder});
+	.update(contactFolder);
 
 ```

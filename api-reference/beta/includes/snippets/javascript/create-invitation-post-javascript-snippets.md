@@ -17,6 +17,6 @@ const invitation = {
 
 let res = await client.api('/invitations')
 	.version('beta')
-	.post({invitation : invitation});
+	.post(invitation);
 
 ```

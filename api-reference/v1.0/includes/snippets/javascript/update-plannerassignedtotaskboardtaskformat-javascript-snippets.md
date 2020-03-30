@@ -17,6 +17,6 @@ const plannerAssignedToTaskBoardTaskFormat = {
 };
 
 let res = await client.api('/planner/tasks/{task-id}/assignedToTaskBoardFormat')
-	.update({plannerAssignedToTaskBoardTaskFormat : plannerAssignedToTaskBoardTaskFormat});
+	.update(plannerAssignedToTaskBoardTaskFormat);
 
 ```

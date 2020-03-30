@@ -8,12 +8,14 @@ doc_type: apiPageType
 ---
 # List riskDetection
 
+Namespace: microsoft.graph
+
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 Retrieve the properties of a collection of **riskDetection** objects.
 
 >[!NOTE]
->You must have an Azure AD Premium P2 license to use the risk detection API.
+>You must have an Azure AD Premium P1 or P2 license to use the risk detection API.
 
 ## Permissions
 
@@ -64,14 +66,14 @@ Here is an example of the request.
   "name": "list_riskDetection"
 }-->
 
-```http
+```msgraph-interactive
 GET https://graph.microsoft.com/beta/riskDetections
 ```
 # [C#](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/list-riskdetection-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# [Javascript](#tab/javascript)
+# [JavaScript](#tab/javascript)
 [!INCLUDE [sample-code](../includes/snippets/javascript/list-riskdetection-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
@@ -142,14 +144,14 @@ The following example shows how to use `$filter` to get the collection of risk d
   "name": "list_filter_riskDetections"
 } -->
 
-```http
+```msgraph-interactive
 GET https://graph.microsoft.com/beta/riskDetections?$filter=riskType eq 'unfamiliarFeatures' or riskLevel eq 'medium'
 ```
 # [C#](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/list-filter-riskdetections-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# [Javascript](#tab/javascript)
+# [JavaScript](#tab/javascript)
 [!INCLUDE [sample-code](../includes/snippets/javascript/list-filter-riskdetections-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 

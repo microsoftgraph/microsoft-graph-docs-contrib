@@ -13,7 +13,7 @@ var servicePrincipal = new ServicePrincipal
 	{
 		new AddIn
 		{
-			Id = "id-value",
+			Id = Guid.Parse("id-value"),
 			Type = "type-value",
 			Properties = new List<KeyValue>()
 			{
@@ -27,7 +27,7 @@ var servicePrincipal = new ServicePrincipal
 	},
 	AppDisplayName = "appDisplayName-value",
 	AppId = "appId-value",
-	AppOwnerOrganizationId = "appOwnerOrganizationId-value",
+	AppOwnerOrganizationId = Guid.Parse("appOwnerOrganizationId-value"),
 	AppRoleAssignmentRequired = true
 };
 

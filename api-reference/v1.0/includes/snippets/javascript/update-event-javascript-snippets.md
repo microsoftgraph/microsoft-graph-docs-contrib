@@ -24,6 +24,6 @@ const event = {
 };
 
 let res = await client.api('/me/events/{id}')
-	.update({event : event});
+	.update(event);
 
 ```

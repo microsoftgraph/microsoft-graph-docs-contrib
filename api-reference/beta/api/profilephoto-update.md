@@ -2,9 +2,14 @@
 title: "Update profilephoto"
 description: "Update the photo for any user in the tenant including the signed-in user, or the specified group or contact. Since there"
 localization_priority: Normal
+doc_type: apiPageType
+ms.prod: ""
+author: ""
 ---
 
 # Update profilephoto
+
+Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
@@ -27,7 +32,7 @@ One of the following permissions is required to call this API. To learn more, in
 
 > **Note** To update the photo of any user in the organization, your app must have the User.ReadWrite.All application permission and call this API under its own identity, not on behalf of a user. To learn more, see [get access without a signed-in user](/graph/auth-v2-service).
 
-> **Note:**  There is currently a [known issue](https://docs.microsoft.com/en-us/graph/known-issues#groups) with accessing group photos using application permissions.
+> **Note:**  There is currently a [known issue](/graph/known-issues#groups) with accessing group photos using application permissions.
 
 ## HTTP request
 <!-- { "blockType": "ignored" } -->
@@ -72,7 +77,7 @@ Binary data for the image
 [!INCLUDE [sample-code](../includes/snippets/csharp/update-profilephoto-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# [Javascript](#tab/javascript)
+# [JavaScript](#tab/javascript)
 [!INCLUDE [sample-code](../includes/snippets/javascript/update-profilephoto-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 

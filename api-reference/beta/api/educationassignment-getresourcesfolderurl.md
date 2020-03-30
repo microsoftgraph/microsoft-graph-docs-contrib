@@ -4,9 +4,12 @@ description: "This function returns the OneDrive URL where all file-based resour
 localization_priority: Normal
 author: "dipakboyed"
 ms.prod: "education"
+doc_type: apiPageType
 ---
 
 # educationAssignment: getResourcesFolderUrl
+
+Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
@@ -25,7 +28,7 @@ One of the following permissions is required to call this API. To learn more, in
 ## HTTP request
 <!-- { "blockType": "ignored" } -->
 ```http
-POST /education/classes/{id}/assignments/{id}/getResourcesFolderUrl
+GET /education/classes/{id}/assignments/{id}/getResourcesFolderUrl
 
 ```
 ## Request headers
@@ -48,14 +51,14 @@ The following is an example of a request.
   "blockType": "request",
   "name": "educationassignment_publish"
 }-->
-```http
-POST https://graph.microsoft.com/beta/education/classes/11012/assignments/19002/getResourcesFolderUrl
+```msgraph-interactive
+GET https://graph.microsoft.com/beta/education/classes/11012/assignments/19002/getResourcesFolderUrl
 ```
 # [C#](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/educationassignment-publish-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# [Javascript](#tab/javascript)
+# [JavaScript](#tab/javascript)
 [!INCLUDE [sample-code](../includes/snippets/javascript/educationassignment-publish-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 

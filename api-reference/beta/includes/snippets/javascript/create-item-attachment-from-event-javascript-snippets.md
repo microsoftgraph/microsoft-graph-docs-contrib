@@ -33,6 +33,6 @@ const attachment = {
 
 let res = await client.api('/me/events/{AAMkAGI1AAAt9AHjAAA=}/attachments')
 	.version('beta')
-	.post({attachment : attachment});
+	.post(attachment);
 
 ```

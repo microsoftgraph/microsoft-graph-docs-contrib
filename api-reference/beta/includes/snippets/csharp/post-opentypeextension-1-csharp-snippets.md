@@ -26,7 +26,7 @@ var message = new Message
 	},
 	Extensions = new List<Extension>()
 	{
-		new Extension
+		new OpenTypeExtension
 		{
 			ExtensionName = "Com.Contoso.Referral",
 			CompanyName = "Wingtip Toys",

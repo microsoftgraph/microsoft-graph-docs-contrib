@@ -4,9 +4,12 @@ description: "Get the folder collection under the specified folder. You can use 
 author: "angelgolfer-ms"
 localization_priority: Normal
 ms.prod: "outlook"
+doc_type: apiPageType
 ---
 
 # List childFolders
+
+Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
@@ -21,7 +24,7 @@ One of the following permissions is required to call this API. To learn more, in
 |:---------------------------------------|:------------------------------------|
 | Delegated (work or school account)     | Mail.ReadBasic, Mail.Read, Mail.ReadWrite           |
 | Delegated (personal Microsoft account) | Mail.ReadBasic, Mail.Read, Mail.ReadWrite           |
-| Application                            | Mail.Read, Mail.ReadWrite           |
+| Application                            | Mail.ReadBasic.All, Mail.Read, Mail.ReadWrite           |
 
 ## HTTP request
 
@@ -62,22 +65,22 @@ The following is an example of the request.
 # [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
-  "name": "get_childfolders"
+  "name": "mailfolder_get_childfolders"
 }-->
 
-```http
+```msgraph-interactive
 GET https://graph.microsoft.com/beta/me/mailFolders/AAMkAGVmMDEzM/childFolders
 ```
 # [C#](#tab/csharp)
-[!INCLUDE [sample-code](../includes/snippets/csharp/get-childfolders-csharp-snippets.md)]
+[!INCLUDE [sample-code](../includes/snippets/csharp/mailfolder-get-childfolders-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# [Javascript](#tab/javascript)
-[!INCLUDE [sample-code](../includes/snippets/javascript/get-childfolders-javascript-snippets.md)]
+# [JavaScript](#tab/javascript)
+[!INCLUDE [sample-code](../includes/snippets/javascript/mailfolder-get-childfolders-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Objective-C](#tab/objc)
-[!INCLUDE [sample-code](../includes/snippets/objc/get-childfolders-objc-snippets.md)]
+[!INCLUDE [sample-code](../includes/snippets/objc/mailfolder-get-childfolders-objc-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
@@ -148,14 +151,14 @@ The following is an example of the request.
   "name": "get_childfolders_of_searchfolders"
 }-->
 
-```http
+```msgraph-interactive
 GET https://graph.microsoft.com/beta/me/mailFolders/searchfolders/childFolders
 ```
 # [C#](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/get-childfolders-of-searchfolders-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# [Javascript](#tab/javascript)
+# [JavaScript](#tab/javascript)
 [!INCLUDE [sample-code](../includes/snippets/javascript/get-childfolders-of-searchfolders-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 

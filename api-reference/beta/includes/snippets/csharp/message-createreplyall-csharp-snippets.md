@@ -10,7 +10,7 @@ var message = new Message
 {
 	Attachments = new List<Attachment>()
 	{
-		new Attachment
+		new FileAttachment
 		{
 			Name = "guidelines.txt",
 			ContentBytes = "bWFjIGFuZCBjaGVlc2UgdG9kYXk="

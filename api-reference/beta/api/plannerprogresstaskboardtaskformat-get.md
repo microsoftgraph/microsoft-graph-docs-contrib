@@ -4,9 +4,12 @@ description: "Retrieve the properties and relationships of **plannerProgressTask
 localization_priority: Normal
 author: "TarkanSevilmis"
 ms.prod: "planner"
+doc_type: apiPageType
 ---
 
 # Get plannerProgressTaskBoardTaskFormat
+
+Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
@@ -23,7 +26,7 @@ One of the following permissions is required to call this API. To learn more, in
 ## HTTP request
 <!-- { "blockType": "ignored" } -->
 ```http
-GET /planner/tasks/<id>/progressTaskBoardFormat
+GET /planner/tasks/{id}/progressTaskBoardFormat
 ```
 
 ## Request headers
@@ -49,14 +52,14 @@ Here is an example of the request.
   "blockType": "request",
   "name": "get_plannerprogresstaskboardtaskformat"
 }-->
-```http
-GET https://graph.microsoft.com/beta/planner/tasks/<id>/progressTaskBoardFormat
+```msgraph-interactive
+GET https://graph.microsoft.com/beta/planner/tasks/{id}/progressTaskBoardFormat
 ```
 # [C#](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/get-plannerprogresstaskboardtaskformat-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# [Javascript](#tab/javascript)
+# [JavaScript](#tab/javascript)
 [!INCLUDE [sample-code](../includes/snippets/javascript/get-plannerprogresstaskboardtaskformat-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 

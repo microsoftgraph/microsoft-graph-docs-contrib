@@ -5,8 +5,12 @@ ms.date: 09/10/2017
 title: Send an invite to access an item
 localization_priority: Normal
 ms.prod: "sharepoint"
+description: "Sends a sharing invitation for a DriveItem."
+doc_type: apiPageType
 ---
 # Send a sharing invitation
+
+Namespace: microsoft.graph
 
 Sends a sharing invitation for a **DriveItem**.
 A sharing invitation provides permissions to the recipients and optionally sends them an email with a [sharing link][].
@@ -93,12 +97,16 @@ Content-type: application/json
 [!INCLUDE [sample-code](../includes/snippets/csharp/send-sharing-invite-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# [Javascript](#tab/javascript)
+# [JavaScript](#tab/javascript)
 [!INCLUDE [sample-code](../includes/snippets/javascript/send-sharing-invite-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Objective-C](#tab/objc)
 [!INCLUDE [sample-code](../includes/snippets/objc/send-sharing-invite-objc-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Java](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/send-sharing-invite-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

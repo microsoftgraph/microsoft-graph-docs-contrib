@@ -2,9 +2,14 @@
 title: "Create privilegedRoleAssignmentRequest"
 description: "Create a privilegedroleassignmentrequest object."
 localization_priority: Normal
+doc_type: apiPageType
+ms.prod: ""
+author: ""
 ---
 
 # Create privilegedRoleAssignmentRequest
+
+Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
@@ -36,7 +41,7 @@ In the request body, supply a JSON representation of [privilegedroleassignmentre
 | Property	   | Type	 |  Description|
 |:---------------|:--------|:----------|
 |roleId|String|The ID of the role. Required.|
-|type|String|Represents the type of the operation on the role assignment. The value can be `AdminAdd`: Adminstrators add users to roles;`UserAdd`: Users add role assignments. Required.|
+|type|String|Represents the type of the operation on the role assignment. The value can be `AdminAdd`: Administrators add users to roles;`UserAdd`: Users add role assignments. Required.|
 |assignmentState|String|The state of the assignment. The value can be `Eligible` for eligible assignment `Active` - if it is directly assigned `Active` by administrators, or activated on an eligible assignment by the users. Possible values are: ``NotStarted``, `Completed`, `RequestedApproval`, `Scheduled`, `Approved`, `ApprovalDenied`, `ApprovalAborted`, `Cancelling`, `Cancelled`, `Revoked`, `RequestExpired`. Required.|
 |reason|String|The reason needs to be provided for the role assignment request for audit and review purpose.|
 |schedule|[governanceSchedule](../resources/governanceschedule.md)|The schedule of the role assignment request.|
@@ -96,7 +101,7 @@ Content-type: application/json
 [!INCLUDE [sample-code](../includes/snippets/csharp/post-privilegedroleassignmentrequest-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# [Javascript](#tab/javascript)
+# [JavaScript](#tab/javascript)
 [!INCLUDE [sample-code](../includes/snippets/javascript/post-privilegedroleassignmentrequest-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 

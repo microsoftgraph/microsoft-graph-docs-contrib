@@ -1,12 +1,15 @@
 ---
 author: JeremyKelley
-ms.author: JeremyKelley
+description: "Retrieve the list of Drive resources available for a target User, Group, or Site."
 ms.date: 09/10/2017
 title: List Drives
 localization_priority: Normal
 ms.prod: "sharepoint"
+doc_type: apiPageType
 ---
 # List available drives
+
+Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
@@ -32,14 +35,14 @@ To list the document libraries for a group, your app requests the **drives** rel
 # [HTTP](#tab/http)
 <!-- {"blockType": "request", "name": "group-list-drives", "scopes": "groups.read.all" } -->
 
-```http
+```msgraph-interactive
 GET /groups/{groupId}/drives
 ```
 # [C#](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/group-list-drives-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# [Javascript](#tab/javascript)
+# [JavaScript](#tab/javascript)
 [!INCLUDE [sample-code](../includes/snippets/javascript/group-list-drives-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
@@ -58,14 +61,14 @@ To list the document libraries for a site, your app requests the **drives** rela
 # [HTTP](#tab/http)
 <!-- {"blockType": "request", "name": "site-list-drives", "scopes": "sites.read.all" } -->
 
-```http
+```msgraph-interactive
 GET /sites/{siteId}/drives
 ```
 # [C#](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/site-list-drives-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# [Javascript](#tab/javascript)
+# [JavaScript](#tab/javascript)
 [!INCLUDE [sample-code](../includes/snippets/javascript/site-list-drives-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
@@ -82,14 +85,14 @@ GET /sites/{siteId}/drives
 # [HTTP](#tab/http)
 <!-- {"blockType": "request", "name": "user-list-drives", "scopes": "files.read.all" } -->
 
-```http
+```msgraph-interactive
 GET /users/{userId}/drives
 ```
 # [C#](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/user-list-drives-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# [Javascript](#tab/javascript)
+# [JavaScript](#tab/javascript)
 [!INCLUDE [sample-code](../includes/snippets/javascript/user-list-drives-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
@@ -106,14 +109,14 @@ GET /users/{userId}/drives
 # [HTTP](#tab/http)
 <!-- {"blockType": "request", "name": "enum-drives", "scopes": "files.read" } -->
 
-```http
+```msgraph-interactive
 GET /me/drives
 ```
 # [C#](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/enum-drives-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# [Javascript](#tab/javascript)
+# [JavaScript](#tab/javascript)
 [!INCLUDE [sample-code](../includes/snippets/javascript/enum-drives-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 

@@ -4,9 +4,12 @@ description: "In the Azure AD access reviews feature, create a new accessReview 
 localization_priority: Normal
 author: "davidmu1"
 ms.prod: "microsoft-identity-platform"
+doc_type: apiPageType
 ---
 
 # Create accessReview
+
+Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
@@ -17,13 +20,14 @@ Before making this request, the caller must have previously [retrieved the list 
 After making this request, the caller should [create a programControl](programcontrol-create.md), to link the access review to a program.  
 
 ## Permissions
+
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
 
 |Permission type                        | Permissions (from least to most privileged)              |
 |:--------------------------------------|:---------------------------------------------------------|
-|Delegated (work or school account)     | AccessReview.ReadWrite.All |
+|Delegated (work or school account)     | AccessReview.ReadWrite.Membership, AccessReview.ReadWrite.All |
 |Delegated (personal Microsoft account) | Not supported. |
-|Application                            | Not supported. |
+|Application                            | AccessReview.ReadWrite.Membership |
 
 The caller should also have ProgramControl.ReadWrite.All permission, so that after creating an access review, the caller can create a [programControl](../resources/programcontrol.md).
 In addition, the signed in user must also be in a directory role that permits them to create an access review.  For more details, see the role and permission requirements for [access reviews](../resources/accessreviews-root.md).
@@ -34,9 +38,10 @@ In addition, the signed in user must also be in a directory role that permits th
 POST /accessReviews
 ```
 ## Request headers
-| Name         | Type        | Description |
-|:-------------|:------------|:------------|
-| Authorization | string | Bearer \{token\}. Required. |
+| Name         | Description |
+|:-------------|:------------|
+| Authorization | Bearer \{token\}. Required. |
+| Content-type | application/json. Required. |
 
 ## Request body
 In the request body, supply a JSON representation of an [accessReview](../resources/accessreview.md) object.
@@ -68,13 +73,11 @@ If successful, this method returns a `201, Created` response code and an [access
 
 This is an example of creating a one-time (not recurring) access review, explicitly specifying two users as the reviewers.
 
-##### Request
+### Request
 In the request body, supply a JSON representation of the [accessReview](../resources/accessreview.md) object.
 
-
-# [HTTP](#tab/http)
 <!-- {
-  "blockType": "request",
+  "blockType": "ignored",
   "name": "create_accessReview_from_accessReviews"
 }-->
 ```http
@@ -121,22 +124,8 @@ Content-type: application/json
     }
 }
 ```
-# [C#](#tab/csharp)
-[!INCLUDE [sample-code](../includes/snippets/csharp/create-accessreview-from-accessreviews-csharp-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# [Javascript](#tab/javascript)
-[!INCLUDE [sample-code](../includes/snippets/javascript/create-accessreview-from-accessreviews-javascript-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [Objective-C](#tab/objc)
-[!INCLUDE [sample-code](../includes/snippets/objc/create-accessreview-from-accessreviews-objc-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
----
-
-
-##### Response
+### Response
 >**Note:** The response object shown here might be shortened for readability. All the properties will be returned from an actual call.
 <!-- {
   "blockType": "response",

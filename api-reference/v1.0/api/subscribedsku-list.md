@@ -4,10 +4,12 @@ description: "Retrieve the list of commercial subscriptions that an organization
 localization_priority: Priority
 author: "davidmu1"
 ms.prod: "microsoft-identity-platform"
-doc_type: "apiPageType"
+doc_type: apiPageType
 ---
 
 # List subscribedSkus
+
+Namespace: microsoft.graph
 
 Get the list of commercial subscriptions that an organization has acquired.
 
@@ -50,19 +52,23 @@ Here is an example of the request.
   "blockType": "request",
   "name": "get_subscribedskus"
 }-->
-```http
+```msgraph-interactive
 GET https://graph.microsoft.com/v1.0/subscribedSkus
 ```
 # [C#](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/get-subscribedskus-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# [Javascript](#tab/javascript)
+# [JavaScript](#tab/javascript)
 [!INCLUDE [sample-code](../includes/snippets/javascript/get-subscribedskus-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Objective-C](#tab/objc)
 [!INCLUDE [sample-code](../includes/snippets/objc/get-subscribedskus-objc-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Java](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/get-subscribedskus-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

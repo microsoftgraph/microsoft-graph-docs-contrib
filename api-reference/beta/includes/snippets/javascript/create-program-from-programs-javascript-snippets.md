@@ -17,6 +17,6 @@ const program = {
 
 let res = await client.api('/programs')
 	.version('beta')
-	.post({program : program});
+	.post(program);
 
 ```

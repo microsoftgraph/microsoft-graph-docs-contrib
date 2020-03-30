@@ -2,9 +2,14 @@
 title: "Create programControl"
 description: "In the Azure AD access reviews feature, create a new programControl object.  This links an access review to a program."
 localization_priority: Normal
+doc_type: apiPageType
+ms.prod: ""
+author: ""
 ---
 
 # Create programControl
+
+Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
@@ -12,9 +17,9 @@ In the Azure AD [access reviews](../resources/accessreviews-root.md) feature, cr
 
 Prior to making this request, the caller must have previously
 
- - [created a program](program-create.md) or [retrieved a program](program-list.md), to have the value of `programId` to include in the request,
- - [created an access review](accessreview-create.md) or [retrieved an access review](accessreview-get.md), to have the value of `controlId` to include in the request, and
- - [retrieved the list of program control types](programcontroltype-list.md), to have the value of `controlTypeId` to include in the request.
+- [created a program](program-create.md) or [retrieved a program](program-list.md), to have the value of `programId` to include in the request,
+- [created an access review](accessreview-create.md) or [retrieved an access review](accessreview-get.md), to have the value of `controlId` to include in the request, and
+- [retrieved the list of program control types](programcontroltype-list.md), to have the value of `controlTypeId` to include in the request.
 
 
 ## Permissions
@@ -77,7 +82,7 @@ Content-type: application/json
 [!INCLUDE [sample-code](../includes/snippets/csharp/create-programcontrol-from-programcontrols-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# [Javascript](#tab/javascript)
+# [JavaScript](#tab/javascript)
 [!INCLUDE [sample-code](../includes/snippets/javascript/create-programcontrol-from-programcontrols-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
