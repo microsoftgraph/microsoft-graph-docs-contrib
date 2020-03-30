@@ -1,7 +1,7 @@
 ---
 title: "deviceOperatingSystemSummary resource type"
 description: "Device operating system summary."
-author: "rolyon"
+author: "davidmu1"
 localization_priority: Normal
 ms.prod: "Intune"
 doc_type: resourcePageType
@@ -28,6 +28,7 @@ Device operating system summary.
 |androidDeviceAdminCount|Int32|Number of device admin Android devices.|
 |androidFullyManagedCount|Int32|Number of fully managed Android devices.|
 |androidWorkProfileCount|Int32|Number of work profile Android devices.|
+|configMgrDeviceCount|Int32|Number of ConfigMgr managed devices.|
 
 ## Relationships
 None
@@ -51,7 +52,8 @@ Here is a JSON representation of the resource.
   "androidDedicatedCount": 1024,
   "androidDeviceAdminCount": 1024,
   "androidFullyManagedCount": 1024,
-  "androidWorkProfileCount": 1024
+  "androidWorkProfileCount": 1024,
+  "configMgrDeviceCount": 1024
 }
 ```
 

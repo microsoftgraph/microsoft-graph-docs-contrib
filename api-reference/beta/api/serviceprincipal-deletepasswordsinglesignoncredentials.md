@@ -9,6 +9,8 @@ doc_type: "apiPageType"
 
 # servicePrincipal: deletePasswordSingleSignOnCredentials
 
+Namespace: microsoft.graph
+
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 Delete single sign-on credentials using a password for a user or group.

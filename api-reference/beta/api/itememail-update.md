@@ -9,6 +9,8 @@ doc_type: "apiPageType"
 
 # Update itememail
 
+Namespace: microsoft.graph
+
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 Update the properties of an [itemEmail](../resources/itememail.md) object in a user's [profile](../resources/profile.md).

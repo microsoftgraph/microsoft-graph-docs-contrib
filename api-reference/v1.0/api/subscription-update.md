@@ -2,12 +2,14 @@
 title: "Update subscription"
 description: "Renew a subscription by extending its expiry time."
 localization_priority: Normal
-author: "piotrci"
+author: "baywet"
 ms.prod: ""
 doc_type: apiPageType
 ---
 
 # Update subscription
+
+Namespace: microsoft.graph
 
 Renew a subscription by extending its expiry time.
 
@@ -119,7 +121,8 @@ Content-length: 252
   "clientState":"subscription-identifier",
   "notificationUrl":"https://webhook.azurewebsites.net/api/send/myNotifyClient",
   "expirationDateTime":"2016-11-22T18:23:45.9356913Z",
-  "creatorId": "8ee44408-0679-472c-bc2a-692812af3437"
+  "creatorId": "8ee44408-0679-472c-bc2a-692812af3437",
+  "latestSupportedTlsVersion": "v1_2"
 }
 ```
 
