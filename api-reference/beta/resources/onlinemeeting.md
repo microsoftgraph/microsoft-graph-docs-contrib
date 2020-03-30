@@ -39,11 +39,12 @@ Contains information about the meeting, including the URL used to join a meeting
 | subject                   | String                                                 | The subject of the online meeting. |
 | capabilities              | String collection                                      | The list of meeting capabilities. Possible values are: `questionAndAnswer`. |
 | videoTeleconferenceId     | String                                                 | The video teleconferencing ID. Read-only. |
+| joinInformation | [itemBody](itembody.md) | The join information in the language and locale variant specified in 'Accept-Language' request HTTP header. Read-only |
 | externalId                | String                                                 | The external ID. A custom ID. Optional. |
 
 ### autoAdmittedUsers values
 | Value | Description  |
-| :------------------------ | :----------------------------------------------------- | :------------------------------------------------------------------------------------------------------------------------- |
+| :------------------------ | :----------------------------------------------------- |
 | organizer | Only the meeting organizer is admitted directly.  Everyone else waits in the lobby, until admitted by the organizer  |
 | invitedUsersInCompany | The meeting organizer and the users in the same company invited by the organizer join the meeting directly.  Everyone else waits in lobby until admitted.  |
 | everyoneInCompany | Everyone in the same company as the organizer join the meeting directly.  Federated, anonymous users wait in lobby until admitted.  |

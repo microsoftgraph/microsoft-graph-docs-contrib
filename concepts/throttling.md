@@ -121,7 +121,7 @@ The following resources are provided by the Outlook service.
 - [outlookCategory](/graph/api/resources/outlookcategory)
 - [attachment](/graph/api/resources/attachment)
 
-#### Microsoft Teams service limits
+### Microsoft Teams service limits
 
 Limits are expressed as requests per second (rps).
 
