@@ -9,6 +9,8 @@ doc_type: apiPageType
 
 # event: decline
 
+Namespace: microsoft.graph
+
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 Decline invitation to the specified [event](../resources/event.md) in a user [calendar](../resources/calendar.md).
@@ -133,7 +135,7 @@ Here is an example of the response.
 } -->
 
 ```http
-HTTP/1.1 200 OK
+HTTP/1.1 202 Accepted
 ```
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79

@@ -1,7 +1,7 @@
 ---
 title: "Get targetedManagedAppProtection"
 description: "Read properties and relationships of the targetedManagedAppProtection object."
-author: "rolyon"
+author: "davidmu1"
 localization_priority: Normal
 ms.prod: "Intune"
 doc_type: apiPageType
@@ -63,7 +63,7 @@ Here is an example of the response. Note: The response object shown here may be 
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 2497
+Content-Length: 2549
 
 {
   "value": {
@@ -120,12 +120,12 @@ Content-Length: 2497
     "allowedDataIngestionLocations": [
       "sharePoint"
     ],
+    "appActionIfUnableToAuthenticateUser": "wipe",
     "isAssigned": true,
     "targetedAppManagementLevels": "unmanaged"
   }
 }
 ```
-
 
 
 

@@ -1,7 +1,7 @@
 ---
 title: "summarizeDevicePerformanceDevices function"
 description: "Not yet documented"
-author: "rolyon"
+author: "davidmu1"
 localization_priority: Normal
 ms.prod: "Intune"
 doc_type: apiPageType
@@ -65,7 +65,7 @@ Here is an example of the response. Note: The response object shown here may be 
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 636
+Content-Length: 675
 
 {
   "value": [
@@ -84,12 +84,12 @@ Content-Length: 636
       "loginScore": 10,
       "coreLoginTimeInMs": 1,
       "groupPolicyLoginTimeInMs": 8,
-      "deviceCount": 11
+      "deviceCount": 11,
+      "responsiveDesktopTimeInMs": 9
     }
   ]
 }
 ```
-
 
 
 

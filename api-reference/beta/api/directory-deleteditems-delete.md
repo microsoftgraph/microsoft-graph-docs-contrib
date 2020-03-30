@@ -9,6 +9,8 @@ doc_type: apiPageType
 
 # Permanently delete item
 
+Namespace: microsoft.graph
+
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 Permanently delete an item from [deleted items](../resources/directory.md).

@@ -10,7 +10,9 @@ doc_type: apiPageType
 ---
 # List sharing permissions on a driveItem
 
-List the effective sharing permissions of on a [driveItem](../resources/driveitem.md).
+Namespace: microsoft.graph
+
+List the effective sharing permissions on a [driveItem](../resources/driveitem.md).
 
 ## Access to sharing permissions
 

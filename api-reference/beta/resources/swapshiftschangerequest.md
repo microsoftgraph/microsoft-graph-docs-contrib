@@ -9,6 +9,8 @@ doc_type: "resourcePageType"
 
 # swapShiftsChangeRequest resource type
 
+Namespace: microsoft.graph
+
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 Represents a type of shift request to swap a [shift](../resources/shift.md) with another user in the [team](../resources/team.md).
@@ -20,7 +22,8 @@ Represents a type of shift request to swap a [shift](../resources/shift.md) with
 | [List](../api/swapshiftschangerequest-list.md) | Collection of [swapShiftsChangeRequest](swapshiftschangerequest.md) | List the properties and relationships of **swapShiftsChangeRequest** objects in a team. |
 | [Create](../api/swapshiftschangerequest-post.md) | [swapshiftschangerequest](swapshiftschangerequest.md) | Create an instance of an swapshiftschangerequest object. |
 | [Get](../api/swapshiftschangerequest-get.md) | [swapShiftsChangeRequest](swapshiftschangerequest.md) | Read the properties and relationships of a **swapShiftsChangeRequest** object. |
-|[Approve](../api/swapshiftschangerequest-approve.md)|None|Approve an swapshiftschangerequest. |
+|[Approve](../api/swapshiftschangerequest-approve.md)|None|Approve a **swapShiftsChangeRequest**. |
+|[Decline](../api/swapshiftschangerequest-decline.md)|None|Decline a **swapShiftsChangeRequest**.|
 
 ## Properties
 

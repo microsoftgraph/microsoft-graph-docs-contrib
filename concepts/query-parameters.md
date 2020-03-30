@@ -1,7 +1,7 @@
 ---
 title: "Use query parameters to customize responses"
 description: "Microsoft Graph provides optional query parameters that you can use to specify and control the amount of data returned in a response. The following query parameters are supported."
-author: "piotrci"
+author: "baywet"
 localization_priority: Priority
 ms.custom: graphiamtop20, scenarios:getting-started
 ---
@@ -43,6 +43,15 @@ Click the examples to try them in [Graph Explorer][graph-explorer].
 | Name                     | Description | Example
 |:-------------------------|:------------|:---------|
 | [$skipToken](#skiptoken-parameter) | Retrieves the next page of results from result sets that span multiple pages. (Some APIs use `$skip` instead.) | `/users?$skiptoken=X%274453707402000100000017...`|
+
+## Other OData URL capabilities
+
+The following OData 4.0 capabilities are URL segments, not query parameters.
+
+| Name                     | Description | Example 
+|:-------------------------|:------------|:---------|
+| [$ref](/graph/api/group-post-members?view=graph-rest-1.0&tabs=http) | Updates entities membership to a collection. | `POST /groups/{id}/members/$ref` |
+| [$value](/graph/api/profilephoto-get) | Retrieves or updates the binary value of an item. | `GET /me/photo/$value` |
 
 ## Encoding query parameters
 
@@ -360,6 +369,8 @@ Use the `$top` query parameter to specify the page size of the result set.
 
 If more items remain in the result set, the response body will contain an `@odata.nextLink` parameter. This parameter contains a URL that you can use to get the next page of results. To learn more, see [Paging](./paging.md). 
 
+$top accepts a minimum value of 1 and a maximum value of 999 (inclusive).  
+
 For example, the following request returns the first five messages in the user's mailbox:
 
 ```http
@@ -421,6 +432,11 @@ However, it is important to note that query parameters specified in a request mi
 [search-sent-example]: https://developer.microsoft.com/graph/graph-explorer?request=me/messages?$search=%22sent%3A07/23/2018%22%26$select=subject,sentDateTime&method=GET&version=v1.0
 [search-size-example]: https://developer.microsoft.com/graph/graph-explorer?request=me/messages?$search=%22size%3A1%2E%2E500000%22&method=GET&version=v1.0
 
-[search-sbj-example]: https://developer.microsoft.com/graph/graph-explorer?request=me/messages?$search=%22subject%3Ahas%22%26$select=subject&method=GET&version=v1.
+[search-sbj-example]: https://developer.microsoft.com/graph/graph-explorer?request=me/messages?$search=%22subject%3Ahas%22%26$select=subject&method=GET&version=v1.0
 [search-to-example]: https://developer.microsoft.com/graph/graph-explorer?request=me/messages?$search=%22to%3Arandiw%22%26$select=subject,toRecipients&method=GET&version=v1.0
 
+
+
+## See also
+
+- [Query parameter limitations](known-issues.md#query-parameter-limitations)
