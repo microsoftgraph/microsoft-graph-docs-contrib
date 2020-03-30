@@ -105,11 +105,11 @@ Content-length: 224
   "description": "World History Level 1",
   "classCode": "301",
   "createdBy": {
-        "user": {
-          "displayName": "Susana Rocha",
-          "id": "14012",
-        }
-      },
+    "user": {
+      "displayName": "Susana Rocha",
+      "id": "14012"
+    }
+  },
   "displayName": "History - World History 1",
   "externalId": "301",
   "externalName": "World History Level 1",
