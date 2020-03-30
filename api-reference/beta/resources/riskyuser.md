@@ -44,10 +44,6 @@ For more information about risk events, see [Azure Active Directory Identity Pro
 |`userDisplayName`|`string`|Risky user display name|
 |`userPrincipalName`|`string`|Risky user principal name|
 
-## Relationships
-| Relationship | Type	|Description|
-|:---------------|:--------|:----------|
-|history|[riskyUserHistoryItem](riskyuserhistoryitem.md) collection|Represents the risk history of an Azure AD user as determined by Azure AD Identity Protection. |
 
 ## JSON representation
 
