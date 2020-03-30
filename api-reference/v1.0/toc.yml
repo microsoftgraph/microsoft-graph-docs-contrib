@@ -28,7 +28,8 @@
       href: /graph/paging?context=graph/api/1.0
     - name: Use query parameters
       href: /graph/query-parameters?context=graph/api/1.0
-    - name: Batch requests
+    - name: Batching
+      displayName: Batch requests
       href: /graph/json-batching?context=graph/api/1.0
     - name: Throttling
       href: /graph/throttling?context=graph/api/1.0
@@ -41,8 +42,8 @@
         href: /graph/tutorials/change-notifications
       - name: Missing Outlook notifications (preview)
         href: /graph/webhooks-outlook-authz?context=graph/api/1.0
-    - name: Track changes
-      displayname: Delta query, Outlook calendar, Groups, Outlook mail, Users
+    - name: Change tracking
+      displayname: Delta query, track changes, Outlook calendar, Groups, Outlook mail, Users
       items:
       - name: Overview
         href: /graph/delta-query-overview?context=graph/api/1.0
