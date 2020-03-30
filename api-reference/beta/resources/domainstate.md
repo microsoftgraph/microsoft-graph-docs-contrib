@@ -1,12 +1,15 @@
 ---
 title: "domainState resource type"
 description: "Represents the status of asynchronous operations scheduled on a domain."
-author: "lleonard-msft"
+author: "davidmu1"
 localization_priority: Normal
 ms.prod: "microsoft-identity-platform"
+doc_type: resourcePageType
 ---
 
 # domainState resource type
+
+Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 

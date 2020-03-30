@@ -3,10 +3,13 @@ title: "riskyUser resource type"
 description: "Represents Azure AD users who are at risk. Azure AD continually evaluates user risk based on various signals and machine learning. This API provides programmatic access to all at-risk users in your Azure AD."
 author: "cloudhandler"
 localization_priority: Normal
+doc_type: resourcePageType
 ms.prod: "microsoft-identity-platform"
 ---
 
 # riskyUser resource type
+
+Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
@@ -20,8 +23,8 @@ For more information about risk events, see [Azure Active Directory Identity Pro
 
 | Method   | Return Type|Description|
 |:---------------|:--------|:----------|
-|[List riskyUsers](../api/riskyusers-list.md) | [riskyUser](riskyUser.md) collection|List risky users and their properties.|
-|[Get riskyUser](../api/riskyusers-get.md) | [riskyUser](riskyUser.md)|Get a specific risky user and its properties.|
+|[List riskyUsers](../api/riskyusers-list.md) | [riskyUser](riskyuser.md) collection|List risky users and their properties.|
+|[Get riskyUser](../api/riskyusers-get.md) | [riskyUser](riskyuser.md)|Get a specific risky user and its properties.|
 |[List history](../api/riskyuser-list-history.md) | [riskyUserHistoryItem](riskyuserhistoryitem.md) collection|Get the risk history of an Azure AD user.|
 |[Confirm riskyUsers compromised](../api/riskyusers-confirmcompromised.md)|None |Confirm a risky user as compromised.|
 |[Dismiss riskyUsers](../api/riskyusers-dismiss.md)|None | Dismiss the risk of a risky user.|

@@ -1,9 +1,10 @@
 ---
 title: "Create deviceManagementIntent"
 description: "Create a new deviceManagementIntent object."
-author: "rolyon"
+author: "davidmu1"
 localization_priority: Normal
 ms.prod: "Intune"
+doc_type: apiPageType
 ---
 
 # Create deviceManagementIntent
@@ -21,7 +22,7 @@ One of the following permissions is required to call this API. To learn more, in
 |:---|:---|
 |Delegated (work or school account)|DeviceManagementConfiguration.ReadWrite.All|
 |Delegated (personal Microsoft account)|Not supported.|
-|Application|Not supported.|
+|Application|DeviceManagementConfiguration.ReadWrite.All|
 
 ## HTTP Request
 <!-- {
@@ -51,6 +52,7 @@ The following table shows the properties that are required when you create the d
 |isAssigned|Boolean|Signifies whether or not the intent is assigned to users|
 |lastModifiedDateTime|DateTimeOffset|When the intent was last modified|
 |templateId|String|The ID of the template this intent was created from (if any)|
+|roleScopeTagIds|String collection|List of Scope Tags for this Entity instance.|
 
 
 
@@ -64,14 +66,17 @@ Here is an example of the request.
 ``` http
 POST https://graph.microsoft.com/beta/deviceManagement/intents
 Content-type: application/json
-Content-length: 204
+Content-length: 266
 
 {
   "@odata.type": "#microsoft.graph.deviceManagementIntent",
   "displayName": "Display Name value",
   "description": "Description value",
   "isAssigned": true,
-  "templateId": "Template Id value"
+  "templateId": "Template Id value",
+  "roleScopeTagIds": [
+    "Role Scope Tag Ids value"
+  ]
 }
 ```
 
@@ -80,7 +85,7 @@ Here is an example of the response. Note: The response object shown here may be 
 ``` http
 HTTP/1.1 201 Created
 Content-Type: application/json
-Content-Length: 317
+Content-Length: 379
 
 {
   "@odata.type": "#microsoft.graph.deviceManagementIntent",
@@ -89,7 +94,10 @@ Content-Length: 317
   "description": "Description value",
   "isAssigned": true,
   "lastModifiedDateTime": "2017-01-01T00:00:35.1329464-08:00",
-  "templateId": "Template Id value"
+  "templateId": "Template Id value",
+  "roleScopeTagIds": [
+    "Role Scope Tag Ids value"
+  ]
 }
 ```
 

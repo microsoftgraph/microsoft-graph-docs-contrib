@@ -2,9 +2,14 @@
 title: "recentNotebookLinks resource type"
 description: "Links to open a OneNote notebook. This resource type exists as a property on a recentNotebook resource."
 localization_priority: Normal
+doc_type: resourcePageType
+ms.prod: ""
+author: ""
 ---
 
 # recentNotebookLinks resource type
+
+Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
@@ -14,7 +19,7 @@ Links to open a OneNote notebook. This resource type exists as a property on a [
 | Property	   | Type	|Description|
 |:---------------|:--------|:----------|
 |oneNoteClientUrl|[externalLink](externallink.md)|Opens the notebook in the OneNote client, if it's installed.|
-|oneNoteWebUrl|[externalLink](externallink.md)|Opens the notebook in OneNote Online.|
+|oneNoteWebUrl|[externalLink](externallink.md)|Opens the notebook in OneNote on the web.|
 
 ## JSON representation
 

@@ -1,9 +1,10 @@
 ---
 title: "restrictedAppsState enum type"
 description: "Restricted apps state"
-author: "rolyon"
+author: "davidmu1"
 localization_priority: Normal
 ms.prod: "Intune"
+doc_type: enumPageType
 ---
 
 # restrictedAppsState enum type
@@ -19,7 +20,6 @@ Restricted apps state
 |:---|:---|:---|
 |prohibitedApps|0|Prohibited apps|
 |notApprovedApps|1|Not approved apps|
-
 
 
 

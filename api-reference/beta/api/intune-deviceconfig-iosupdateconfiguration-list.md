@@ -1,9 +1,10 @@
 ---
 title: "List iosUpdateConfigurations"
 description: "List properties and relationships of the iosUpdateConfiguration objects."
-author: "rolyon"
+author: "davidmu1"
 localization_priority: Normal
 ms.prod: "Intune"
+doc_type: apiPageType
 ---
 
 # List iosUpdateConfigurations
@@ -21,7 +22,7 @@ One of the following permissions is required to call this API. To learn more, in
 |:---|:---|
 |Delegated (work or school account)|DeviceManagementConfiguration.ReadWrite.All, DeviceManagementConfiguration.Read.All|
 |Delegated (personal Microsoft account)|Not supported.|
-|Application|Not supported.|
+|Application|DeviceManagementConfiguration.ReadWrite.All, DeviceManagementConfiguration.Read.All|
 
 ## HTTP Request
 <!-- {
@@ -58,7 +59,7 @@ Here is an example of the response. Note: The response object shown here may be 
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 763
+Content-Length: 2005
 
 {
   "value": [
@@ -70,6 +71,27 @@ Content-Length: 763
         "Role Scope Tag Ids value"
       ],
       "supportsScopeTags": true,
+      "deviceManagementApplicabilityRuleOsEdition": {
+        "@odata.type": "microsoft.graph.deviceManagementApplicabilityRuleOsEdition",
+        "osEditionTypes": [
+          "windows10EnterpriseN"
+        ],
+        "name": "Name value",
+        "ruleType": "exclude"
+      },
+      "deviceManagementApplicabilityRuleOsVersion": {
+        "@odata.type": "microsoft.graph.deviceManagementApplicabilityRuleOsVersion",
+        "minOSVersion": "Min OSVersion value",
+        "maxOSVersion": "Max OSVersion value",
+        "name": "Name value",
+        "ruleType": "exclude"
+      },
+      "deviceManagementApplicabilityRuleDeviceMode": {
+        "@odata.type": "microsoft.graph.deviceManagementApplicabilityRuleDeviceMode",
+        "deviceMode": "sModeConfiguration",
+        "name": "Name value",
+        "ruleType": "exclude"
+      },
       "createdDateTime": "2017-01-01T00:02:43.5775965-08:00",
       "description": "Description value",
       "displayName": "Display Name value",
@@ -77,11 +99,22 @@ Content-Length: 763
       "isEnabled": true,
       "activeHoursStart": "12:00:05.5020000",
       "activeHoursEnd": "11:59:00.8990000",
+      "desiredOsVersion": "Desired Os Version value",
       "scheduledInstallDays": [
         "monday"
       ],
       "utcTimeOffsetInMinutes": 6,
-      "enforcedSoftwareUpdateDelayInDays": 1
+      "enforcedSoftwareUpdateDelayInDays": 1,
+      "updateScheduleType": "alwaysUpdate",
+      "customUpdateTimeWindows": [
+        {
+          "@odata.type": "microsoft.graph.customUpdateTimeWindow",
+          "startDay": "monday",
+          "endDay": "monday",
+          "startTime": "12:03:30.2730000",
+          "endTime": "12:03:02.3740000"
+        }
+      ]
     }
   ]
 }

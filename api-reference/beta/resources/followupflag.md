@@ -2,9 +2,14 @@
 title: "followupFlag resource type"
 description: "Allows setting a flag for the user to follow up on an item later. Supported items include message and contact."
 localization_priority: Normal
+doc_type: resourcePageType
+ms.prod: ""
+author: ""
 ---
 
 # followupFlag resource type
+
+Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
