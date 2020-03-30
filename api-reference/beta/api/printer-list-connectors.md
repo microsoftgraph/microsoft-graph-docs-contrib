@@ -94,7 +94,6 @@ Content-length: 1373
         "lastConnectionTime": "2020-02-04T07:00:00.0000000"
       },
       "registeredDateTime": "2020-02-04T07:00:00.0000000",
-      "registeredBy": {},
       "location": {
         "latitude": 1.1,
         "longitude": 2.2,
