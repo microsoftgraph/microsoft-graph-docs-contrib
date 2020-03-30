@@ -9,6 +9,8 @@ doc_type: apiPageType
 
 # List directReports
 
+Namespace: microsoft.graph
+
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 Get a user's direct reports. Returns the users and contacts for whom this user is assigned as manager.

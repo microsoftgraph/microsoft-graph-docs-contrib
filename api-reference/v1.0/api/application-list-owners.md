@@ -9,6 +9,8 @@ doc_type: apiPageType
 
 # List owners
 
+Namespace: microsoft.graph
+
 Retrieve a list of owners for an application that are [directoryObject](../resources/directoryobject.md) objects.
 
 ## Permissions

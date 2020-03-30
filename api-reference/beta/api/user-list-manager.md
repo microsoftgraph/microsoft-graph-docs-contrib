@@ -9,6 +9,8 @@ doc_type: apiPageType
 
 # List manager
 
+Namespace: microsoft.graph
+
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 Get user's manager. Returns the user or contact assigned as the user's manager.

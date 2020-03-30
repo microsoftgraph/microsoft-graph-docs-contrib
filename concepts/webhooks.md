@@ -142,6 +142,7 @@ Microsoft Graph validates the notification endpoint provided in the `notificatio
 1. Microsoft Graph sends a POST request to the notification URL:
 
     ``` http
+    Content-Type: text/plain; charset=utf-8
     POST https://{notificationUrl}?validationToken={opaqueTokenCreatedByMicrosoftGraph}
     ```
 
@@ -154,6 +155,10 @@ Microsoft Graph validates the notification endpoint provided in the `notificatio
     - The body must include the validation token provided by Microsoft Graph.
 
 The client should discard the validation token after providing it in the response.
+
+Additionally, you can use the [Microsoft Graph Postman collection](use-postman.md) to confirm that your endpoint properly implements the validation request. The **Subscription Validation** request in the **Misc** folder provides unit tests that validate the response provided by your endpoint.  
+
+![validation response test results](images/change-notifications/validation-request-tests-results.png)
 
 ### Renewing a subscription
 
