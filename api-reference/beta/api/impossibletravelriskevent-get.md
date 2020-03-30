@@ -9,6 +9,8 @@ ms.prod: ""
 
 # Get impossibleTravelRiskEvent
 
+Namespace: microsoft.graph
+
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 >[!NOTE]

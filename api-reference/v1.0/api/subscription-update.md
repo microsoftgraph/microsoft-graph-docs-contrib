@@ -9,6 +9,8 @@ doc_type: apiPageType
 
 # Update subscription
 
+Namespace: microsoft.graph
+
 Renew a subscription by extending its expiry time.
 
 Subscriptions expire after a length of time that varies by resource type. In order to avoid missing notifications, an app should renew its subscriptions well in advance of their expiry date. See [subscription](../resources/subscription.md) for maximum length of a subscription for each resource type.
@@ -119,7 +121,8 @@ Content-length: 252
   "clientState":"subscription-identifier",
   "notificationUrl":"https://webhook.azurewebsites.net/api/send/myNotifyClient",
   "expirationDateTime":"2016-11-22T18:23:45.9356913Z",
-  "creatorId": "8ee44408-0679-472c-bc2a-692812af3437"
+  "creatorId": "8ee44408-0679-472c-bc2a-692812af3437",
+  "latestSupportedTlsVersion": "v1_2"
 }
 ```
 

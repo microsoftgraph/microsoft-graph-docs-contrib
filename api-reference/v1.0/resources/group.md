@@ -9,6 +9,8 @@ doc_type: resourcePageType
 
 # group resource type
 
+Namespace: microsoft.graph
+
 Represents an Azure Active Directory (Azure AD) group, which can be an Office 365 group, or a security group.  
 
 Inherits from [directoryObject](directoryobject.md).
@@ -53,6 +55,7 @@ This resource supports:
 |[Update setting](../api/groupsetting-update.md) | [groupSetting](groupsetting.md) | Update a setting object. |
 |[Delete setting](../api/groupsetting-delete.md) | None | Delete a setting object. |
 |[validateProperties](../api/group-validateproperties.md)|JSON| Validate that an Office 365 group's display name or mail nickname complies with naming policies. |
+|[assignLicense](../api/group-assignlicense.md)|[group](group.md)| Add or remove subscriptions for the group. You can also enable and disable specific plans associated with a subscription. |
 |**Calendar**| | |
 |[Create event](../api/group-post-events.md) |[event](event.md)| Create a new event by posting to the events collection.|
 |[Get event](../api/group-get-event.md) |[event](event.md)|Read properties of an event object.|
@@ -112,6 +115,8 @@ This resource supports:
 |displayName|String|The display name for the group. This property is required when a group is created and cannot be cleared during updates. <br><br>Returned by default. Supports $filter and $orderby. |
 |groupTypes|String collection| Specifies the group type and its membership.  <br><br>If the collection contains `Unified` then the group is an Office 365 group; otherwise it's a security group.  <br><br>If the collection includes `DynamicMembership`, the group has dynamic membership; otherwise, membership is static.  <br><br>Returned by default. Supports $filter.|
 |hasMembersWithLicenseErrors|Boolean|Indicates whether there are members in this group that have license errors from its group-based license assignment. <br><br>This property is never returned on a GET operation. You can use it as a $filter argument to get groups that have members with license errors (that is, filter for this property being true). See an [example](../api/group-list.md).|
+|hideFromAddressLists |Boolean |True if the group is not displayed in certain parts of the Outlook UI: the **Address Book**, address lists for selecting message recipients, and the **Browse Groups** dialog for searching groups; otherwise, false. Default value is **false**. <br><br>Returned only on $select.|
+|hideFromOutlookClients |Boolean |True if the group is not displayed in Outlook clients, such as Outlook for Windows and Outlook on the web; otherwise, false. Default value is **false**. <br><br>Returned only on $select.|
 |id|String|The unique identifier for the group. <br><br>Returned by default. Inherited from [directoryObject](directoryobject.md). Key. Not nullable. Read-only.|
 |isSubscribedByMail|Boolean|Indicates whether the signed-in user is subscribed to receive email conversations. Default value is **true**. <br><br>Returned only on $select. |
 |licenseProcessingState|String|Indicates status of the group license assignment to all members of the group. Default value is **false**. Read-only. Possible values: `QueuedForProcessing`, `ProcessingInProgress`, and `ProcessingComplete`.<br><br>Returned only on $select. Read-only.|
@@ -316,6 +321,8 @@ The following is a JSON representation of the resource.
   "displayName": "string",
   "groupTypes": ["string"],
   "hasMembersWithLicenseErrors": "Boolean",
+  "hideFromAddressLists": false,
+  "hideFromOutlookClients": false,
   "id": "string (identifier)",
   "isSubscribedByMail": true,
   "licenseProcessingState": "string",

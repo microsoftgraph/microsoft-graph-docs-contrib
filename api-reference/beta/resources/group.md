@@ -9,6 +9,8 @@ doc_type: resourcePageType
 
 # group resource type
 
+Namespace: microsoft.graph
+
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 Represents an Azure Active Directory (Azure AD) group, which can be an Office 365 group, a team in Microsoft Teams, or a security group.
@@ -33,6 +35,7 @@ This resource supports:
 |[Get group](../api/group-get.md) | [group](group.md) |Read properties and relationships of group object.|
 |[Update group](../api/group-update.md) | None |Update the properties of a group object. |
 |[Delete group](../api/group-delete.md) | None |Delete group object. |
+|[List groups](../api/group-list.md) |[group](group.md)|Read properties and relationships of all group objects.|
 |[delta](../api/group-delta.md)|group collection| Get incremental changes for groups. |
 |[List groupLifecyclePolicies](../api/group-list-grouplifecyclepolicies.md) |[groupLifecyclePolicy](grouplifecyclepolicy.md) collection| List group lifecycle policies. |
 |[List owners](../api/group-list-owners.md) |[directoryObject](directoryobject.md) collection| Get the owners of the group from the **owners** navigation property.|

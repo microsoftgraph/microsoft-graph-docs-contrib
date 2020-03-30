@@ -241,6 +241,8 @@
           href: api/user-list-ownedobjects.md
         - name: List registered devices
           href: api/user-list-registereddevices.md
+        - name: Reprocess license assignment
+          href: api/user-reprocesslicenseassignment.md 
         - name: Revoke sign-in session
           href: api/user-revokesigninsessions.md  
       - name: Drive
@@ -368,6 +370,8 @@
           href: api/group-post-members.md
         - name: Add owner
           href: api/group-post-owners.md
+        - name: Assign license
+          href: api/group-assignlicense.md
         - name: Check member groups
           href: api/group-checkmembergroups.md
         - name: Check member objects
@@ -796,6 +800,8 @@
           href: api/call-unmute.md
         - name: Mute application
           href: api/call-mute.md
+        - name: Update recording status
+          href: api/call-updaterecordingstatus.md
       - name: Online meeting
         href: resources/onlinemeeting.md
         items:
@@ -3476,6 +3482,28 @@
           href: api/identityprovider-update.md
         - name: Delete identity provider
           href: api/identityprovider-delete.md
+      - name: Information protection
+        items:
+        - name: Threat assessment
+          items:
+          - name: Overview
+            href: resources/threatassessment-api-overview.md
+          - name: Threat assessment request
+            href: resources/threatassessmentrequest.md
+          - name: Mail assessment request
+            href: resources/mailassessmentrequest.md
+          - name: Email file assessment request
+            href: resources/emailfileassessmentrequest.md
+          - name: File assessment request
+            href: resources/fileAssessmentRequest.md
+          - name: URL assessment request
+            href: resources/urlassessmentrequest.md
+          - name: List
+            href: api/informationprotection-list-threatassessmentrequests.md
+          - name: Create
+            href: api/informationprotection-post-threatassessmentrequests.md
+          - name: Get
+            href: api/threatassessmentrequest-get.md
       - name: Invitation manager
         href: resources/invitation.md
         items:
@@ -3495,12 +3523,28 @@
           href: api/orgcontact-list.md
         - name: Get org contact
           href: api/orgcontact-get.md
-        - name: List direct reports
-          href: api/orgcontact-list-directreports.md  
-        - name: List memberOf
-          href: api/orgcontact-list-memberof.md
-        - name: Get manager
-          href: api/orgcontact-get-manager.md
+        - name: Get org contact delta
+          href: api/orgcontact-delta.md
+        - name: Groups
+          href: resources/group.md
+          items:
+          - name: List memberOf
+            href: api/orgcontact-list-memberof.md
+          - name: Get member groups
+            href: api/orgcontact-getmembergroups.md
+          - name: Check member groups
+            href: api/orgcontact-checkmembergroups.md
+        - name: Org hierarchy
+          href: resources/directoryobject.md
+          items:
+          - name: List direct reports
+            href: api/orgcontact-list-directreports.md  
+          - name: List memberOf
+            href: api/orgcontact-list-memberof.md
+          - name: Get manager
+            href: api/orgcontact-get-manager.md
+          - name: Get member objects
+            href: api/orgcontact-getmemberobjects.md
       - name: Subscribed SKU
         href: resources/subscribedsku.md
         items:

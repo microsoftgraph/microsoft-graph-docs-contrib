@@ -9,6 +9,8 @@ doc_type: resourcePageType
 
 # invitation resource type
 
+Namespace: microsoft.graph
+
 Represents an invitation that is used to add external users to an organization. 
 
 The invitation process uses the following flow:

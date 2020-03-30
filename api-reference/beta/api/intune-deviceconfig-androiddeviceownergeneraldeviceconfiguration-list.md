@@ -1,7 +1,7 @@
 ---
 title: "List androidDeviceOwnerGeneralDeviceConfigurations"
 description: "List properties and relationships of the androidDeviceOwnerGeneralDeviceConfiguration objects."
-author: "rolyon"
+author: "davidmu1"
 localization_priority: Normal
 ms.prod: "Intune"
 doc_type: apiPageType
@@ -177,15 +177,14 @@ Content-Length: 5047
       "usersBlockAdd": true,
       "usersBlockRemove": true,
       "volumeBlockAdjustment": true,
-      "vpnAlwaysOnPackageIdentifier": "Vpn Always On Package Identifier value",
       "vpnAlwaysOnLockdownMode": true,
+      "vpnAlwaysOnPackageIdentifier": "Vpn Always On Package Identifier value",
       "wifiBlockEditConfigurations": true,
       "wifiBlockEditPolicyDefinedConfigurations": true
     }
   ]
 }
 ```
-
 
 
 

@@ -9,6 +9,8 @@ author: ""
 
 # List unfamiliarLocationRiskEvents
 
+Namespace: microsoft.graph
+
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 >[!NOTE]

@@ -21,6 +21,7 @@ The following tutorials build an app that authenticates a user and accesses date
 - [iOS Objective-C](/graph/tutorials/ios-objectivec)
 - [iOS Swift](/graph/tutorials/ios-swift)
 - [Java](/graph/tutorials/java)
+- [JavaScript](/graph/tutorials/javascript)
 - [Node.js](/graph/tutorials/node)
 - [PHP](/graph/tutorials/php)
 - [Python](/graph/tutorials/python)
