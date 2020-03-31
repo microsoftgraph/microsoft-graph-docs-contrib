@@ -5,13 +5,13 @@ localization_priority: Normal
 author: vogtn
 ---
 
-# Teams Channel Picker component
+# Microsoft Teams Channel Picker component in the Microsoft Graph Toolkit
 
-A user can use the `mgt-teams-channel-picker` to search for Microsoft Teams channels associated with the user from the Microsoft Graph. The component can search all Teams the user has joined, and each channel in those teams. 
+A you can use the `mgt-teams-channel-picker` component to enable searches for Microsoft Teams channels associated with a user. The component can search all teams the user has joined, and each channel in those teams. 
 
 ## Example
 
-The following example shows the `mgt-teams-channel-picker` component. Start searching for a channel or Team to see the results render.
+The following example shows the `mgt-teams-channel-picker` component. Start searching for a channel or team to see the results render.
 
 <iframe src="https://mgt.dev/iframe.html?id=components-mgt-teams-channel-picker--teams-channel-picker&source=docs" height="450"></iframe>
 
@@ -19,7 +19,7 @@ The following example shows the `mgt-teams-channel-picker` component. Start sear
 
 ## Getting the selected channel
 
-Use the `selectedItem` property to retrieve the currently selected channel and parent team. This value will be null if no channel has been selected. `selectedItem` contains two properties, `channel` ([MicrosoftGraph.Channel](/graph/api/resources/channel?view=graph-rest-1.0)) and `team` ([MicrosoftGraph.Team](/graph/api/resources/group?view=graph-rest-1.0))
+Use the `selectedItem` property to retrieve the currently selected channel and parent team. This value will be null if no channel has been selected. `selectedItem` contains two properties: `channel` ([MicrosoftGraph.Channel](/graph/api/resources/channel?view=graph-rest-1.0)) and `team` ([MicrosoftGraph.Team](/graph/api/resources/group?view=graph-rest-1.0)).
 
 ```javascript
 const channelPicker = document.querySelector('mgt-teams-channel-picker');
@@ -31,7 +31,7 @@ console.log(channelPicker.selectedItem.team);
 
 Use the `selectChannelById(channelId: string)` method to programmatically select a channel.
 
-> **Note:** the Teams channel picker only supports single channel selection
+> **Note:** the Teams channel picker only supports single channel selection.
 
 ```javascript
 const channelPicker = document.querySelector('mgt-teams-channel-picker');
@@ -39,7 +39,7 @@ const channelId = 'some-channel-id';
 channelPicker.selectChannelById(channelId);
 ```
 
-> **Note:** The provided channel (and subsequent id) must belong to a team that the authenticated user has joined. 
+> **Note:** The provided channel (and subsequent ID) must belong to a team that the authenticated user has joined. 
 
 
 ## CSS custom properties
@@ -73,7 +73,7 @@ mgt-teams-channel-picker {
 ## Events
 | Event | Detail | Description |
 | --- | --- | --- |
-| selectionChanged | The detail contains the currently selected item  of `{channel : `[MicrosoftGraph.Channel](/graph/api/resources/channel?view=graph-rest-1.0)`, team: `[MicrosoftGraph.Team](/graph/api/resources/group?view=graph-rest-1.0)`}` | Fired when user makes a change in selection of channel. 
+| selectionChanged | The detail contains the currently selected item  of `{channel : `[MicrosoftGraph.Channel](/graph/api/resources/channel?view=graph-rest-1.0)`, team: `[MicrosoftGraph.Team](/graph/api/resources/group?view=graph-rest-1.0)`}` | Fired when user makes a change in selection of a channel. |
 
 ## Templates
 
@@ -81,11 +81,11 @@ mgt-teams-channel-picker {
 
 | Data type | Data context | Description |
 | --- | --- | --- |
-| loading | null: no data | The template used to render the state of picker while request to graph is being made. |
+| loading | null: no data | The template used to render the state of the picker while the request to Microsoft Graph is being made. |
 | error | null: no data| The template used if user search returns no users. |
 
 
-The following examples shows how to use the `error` template.
+The following example shows how to use the `error` template.
 
 ```html
 <mgt-teams-channel-picker>
@@ -114,11 +114,11 @@ For more complex scenarios or a truly custom UX, this component exposes several 
 
 | Method | Description |
 | - | - |
-| `renderSelected` | Renders the selected team and channel in the input box. |
-| `renderInput` | Renders the input box. |
-| `renderDropdown` | Renders the dropdown. |
-| `renderDropdownList` | Renders the items in the dropdown recursively. |
-| `renderItem` | Renders a team or a channel in the dropdown list. |
-| `renderHighlightedText` | Renders the channel text, highlighting the input query. |
-| `renderLoading` | Renders the loading dropdown state. |
-| `renderError` | Renders the dropdown error state. |
+| renderSelected | Renders the selected team and channel in the input box. |
+| renderInput | Renders the input box. |
+| renderDropdown | Renders the dropdown. |
+| renderDropdownList | Renders the items in the dropdown recursively. |
+| renderItem | Renders a team or a channel in the dropdown list. |
+| renderHighlightedText | Renders the channel text, highlighting the input query. |
+| renderLoading | Renders the loading dropdown state. |
+| renderError | Renders the dropdown error state. |
