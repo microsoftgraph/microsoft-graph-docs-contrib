@@ -92,12 +92,12 @@ The control uses the global authentication provider described in the [authentica
 
 ## Extend for more control
 
-For more complex scenarios or a truly custom UX, this component exposes several `protected render*` methods for override in component extensions:
+For more complex scenarios or a truly custom UX, this component exposes several `protected render*` methods for override in component extensions.
 
 | Method | Description |
 | - | - |
-| `renderLoading` | Renders the loading state. |
-| `renderNoData` | Renders the empty data state. |
-| `renderPeople` | Renders a list of people, up to the `show-max` value. |
-| `renderPerson` | Renders an individual person. |
-| `renderOverflow` | Renders a representation of remaining people beyond the `show-max` value. |
+| renderLoading | Renders the loading state. |
+| renderNoData | Renders the empty data state. |
+| renderPeople | Renders a list of people, up to the `show-max` value. |
+| renderPerson | Renders an individual person. |
+| renderOverflow | Renders a representation of remaining people beyond the `show-max` value. |
