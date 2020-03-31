@@ -110,16 +110,16 @@ The control uses the global authentication provider described in the [authentica
 
 ## Extend for more control
 
-For more complex scenarios or a truly custom UX, this component exposes several `protected render*` methods for override in component extensions:
+For more complex scenarios or a truly custom UX, this component exposes several `protected render*` methods for override in component extensions.
 
 | Method | Description |
 | - | - |
-| `renderInput` | Render the input text box. |
-| `renderSelectedPeople` | Render the selected people tokens. |
-| `renderSelectedPerson` | Render an individual person token. |
-| `renderFlyout` | Render the flyout chrome. |
-| `renderFlyoutContent` | Render the appropriate state in the results flyout. |
-| `renderLoading` | Render the loading state. |
-| `renderNoData` | Render the state when no results are found for the search query. |
-| `renderSearchResults` | Render the list of search results. |
-| `renderPersonResult` | Render an individual person search result. |
+| renderInput | Render the input text box. |
+| renderSelectedPeople | Render the selected people tokens. |
+| renderSelectedPerson | Render an individual person token. |
+| renderFlyout | Render the flyout chrome. |
+| renderFlyoutContent | Render the appropriate state in the results flyout. |
+| renderLoading | Render the loading state. |
+| renderNoData | Render the state when no results are found for the search query. |
+| renderSearchResults | Render the list of search results. |
+| renderPersonResult | Render an individual person search result. |
