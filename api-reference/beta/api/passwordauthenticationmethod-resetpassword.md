@@ -51,7 +51,7 @@ In the request body, provide a JSON object with the following parameters.
 
 ## Response
 
-If successful, this method returns `200, OK` response code and a URL in the `Location` header.
+If successful, this method returns `202, ACCEPTED` response code and a URL in the `Location` header.
 
 If the caller did not submit a password, a Microsoft-generated password is provided in a JSON object in the response body.
 
@@ -85,11 +85,10 @@ The following is an example of the response.
 <!-- {
   "blockType": "response",
   "truncated": true,
-  "@odata.type": "microsoft.graph.passwordResetResponse"
 } -->
 
 ```http
-HTTP/1.1 200 OK
+HTTP/1.1 202 ACCEPTED
 Content-type: application/json
 Location: https://graph.microsoft.com/beta/users/{id}/authentication/operations/{id}
 ```
@@ -130,11 +129,10 @@ The following is an example of the response.
 <!-- {
   "blockType": "response",
   "truncated": true,
-  "@odata.type": "microsoft.graph.passwordResetResponse"
 } -->
 
 ```http
-HTTP/1.1 200 OK
+HTTP/1.1 202 ACCEPTED
 Content-type: application/json
 Location: https://graph.microsoft.com/beta/users/{id}/authentication/operations/{id}
 
