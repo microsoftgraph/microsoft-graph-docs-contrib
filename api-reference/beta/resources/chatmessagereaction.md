@@ -2,12 +2,14 @@
 title: "chatMessageReaction resource type"
 description: "Represents a reaction to a chatMessage entity. "
 localization_priority: Normal
+doc_type: resourcePageType
 author: "RamjotSingh"
 ms.prod: "microsoft-teams"
-doc_type: "resourcePageType"
 ---
 
 # chatMessageReaction resource type
+
+Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
@@ -20,7 +22,7 @@ An entity of type `chatMessageReaction` is returned as part of the [Get channel 
 | Property     | Type        | Description |
 |:-------------|:------------|:------------|
 |createdDateTime|DateTimeOffset|The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 would look like this: `'2014-01-01T00:00:00Z'`|
-|reactionType|String|Planned values include: <br><ul><li>Like - Like a message, content is blank in this case.</li><li>Emoji - Emoji reaction. Content is set to unicode value of the emoji.</li><li>Label - Content is set to the string in the label.</li></ul>|
+|reactionType|String|Supported values are `like`, `angry`, `sad`, `laugh`, `heart`, `surprised`. |
 |user|[identitySet](identityset.md)|The user who reacted to the message.|
 
 ## JSON representation

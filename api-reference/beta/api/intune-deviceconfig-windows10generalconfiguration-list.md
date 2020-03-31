@@ -1,9 +1,10 @@
 ---
 title: "List windows10GeneralConfigurations"
 description: "List properties and relationships of the windows10GeneralConfiguration objects."
-author: "rolyon"
+author: "davidmu1"
 localization_priority: Normal
 ms.prod: "Intune"
+doc_type: apiPageType
 ---
 
 # List windows10GeneralConfigurations
@@ -21,7 +22,7 @@ One of the following permissions is required to call this API. To learn more, in
 |:---|:---|
 |Delegated (work or school account)|DeviceManagementConfiguration.ReadWrite.All, DeviceManagementConfiguration.Read.All|
 |Delegated (personal Microsoft account)|Not supported.|
-|Application|Not supported.|
+|Application|DeviceManagementConfiguration.ReadWrite.All, DeviceManagementConfiguration.Read.All|
 
 ## HTTP Request
 <!-- {
@@ -58,7 +59,7 @@ Here is an example of the response. Note: The response object shown here may be 
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 14999
+Content-Length: 16638
 
 {
   "value": [
@@ -70,11 +71,42 @@ Content-Length: 14999
         "Role Scope Tag Ids value"
       ],
       "supportsScopeTags": true,
+      "deviceManagementApplicabilityRuleOsEdition": {
+        "@odata.type": "microsoft.graph.deviceManagementApplicabilityRuleOsEdition",
+        "osEditionTypes": [
+          "windows10EnterpriseN"
+        ],
+        "name": "Name value",
+        "ruleType": "exclude"
+      },
+      "deviceManagementApplicabilityRuleOsVersion": {
+        "@odata.type": "microsoft.graph.deviceManagementApplicabilityRuleOsVersion",
+        "minOSVersion": "Min OSVersion value",
+        "maxOSVersion": "Max OSVersion value",
+        "name": "Name value",
+        "ruleType": "exclude"
+      },
+      "deviceManagementApplicabilityRuleDeviceMode": {
+        "@odata.type": "microsoft.graph.deviceManagementApplicabilityRuleDeviceMode",
+        "deviceMode": "sModeConfiguration",
+        "name": "Name value",
+        "ruleType": "exclude"
+      },
       "createdDateTime": "2017-01-01T00:02:43.5775965-08:00",
       "description": "Description value",
       "displayName": "Display Name value",
       "version": 7,
       "taskManagerBlockEndTask": true,
+      "energySaverOnBatteryThresholdPercentage": 7,
+      "energySaverPluggedInThresholdPercentage": 7,
+      "powerLidCloseActionOnBattery": "noAction",
+      "powerLidCloseActionPluggedIn": "noAction",
+      "powerButtonActionOnBattery": "noAction",
+      "powerButtonActionPluggedIn": "noAction",
+      "powerSleepButtonActionOnBattery": "noAction",
+      "powerSleepButtonActionPluggedIn": "noAction",
+      "powerHybridSleepOnBattery": "enabled",
+      "powerHybridSleepPluggedIn": "enabled",
       "windows10AppsForceUpdateSchedule": {
         "@odata.type": "microsoft.graph.windows10AppsForceUpdateSchedule",
         "startDateTime": "2016-12-31T23:58:46.7156189-08:00",
@@ -118,6 +150,7 @@ Content-Length: 14999
       "searchDisableIndexingRemovableDrive": true,
       "searchEnableAutomaticIndexSizeManangement": true,
       "searchBlockWebResults": true,
+      "findMyFiles": "enabled",
       "securityBlockAzureADJoinedDevicesAutoEncryption": true,
       "diagnosticsDataSubmissionMode": "none",
       "oneDriveDisableFileSync": true,
@@ -127,6 +160,7 @@ Content-Length: 14999
       "inkWorkspaceAccessState": "blocked",
       "inkWorkspaceBlockSuggestedApps": true,
       "smartScreenEnableAppInstallControl": true,
+      "smartScreenAppInstallControl": "anywhere",
       "personalizationDesktopImageUrl": "https://example.com/personalizationDesktopImageUrl/",
       "personalizationLockScreenImageUrl": "https://example.com/personalizationLockScreenImageUrl/",
       "bluetoothAllowedServices": [
@@ -231,6 +265,7 @@ Content-Length: 14999
       "lockScreenBlockCortana": true,
       "lockScreenBlockToastNotifications": true,
       "lockScreenTimeoutInSeconds": 10,
+      "lockScreenActivateAppsWithVoice": "enabled",
       "passwordBlockSimple": true,
       "passwordExpirationDays": 6,
       "passwordMinimumLength": 5,
@@ -248,6 +283,7 @@ Content-Length: 14999
       "privacyBlockInputPersonalization": true,
       "privacyBlockPublishUserActivities": true,
       "privacyBlockActivityFeed": true,
+      "activateAppsWithVoice": "enabled",
       "startBlockUnpinningAppsFromTaskbar": true,
       "startMenuAppListVisibility": "collapse",
       "startMenuHideChangeAccountSettings": true,
@@ -381,7 +417,9 @@ Content-Length: 14999
       "dataProtectionBlockDirectMemoryAccess": true,
       "appManagementPackageFamilyNamesToLaunchAfterLogOn": [
         "App Management Package Family Names To Launch After Log On value"
-      ]
+      ],
+      "uninstallBuiltInApps": true,
+      "configureTimeZone": "Configure Time Zone value"
     }
   ]
 }

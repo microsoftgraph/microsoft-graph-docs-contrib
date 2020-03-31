@@ -1,9 +1,10 @@
 ---
 title: "appleVpnConnectionType enum type"
 description: "Apple VPN connection type."
-author: "rolyon"
+author: "davidmu1"
 localization_priority: Normal
 ms.prod: "Intune"
+doc_type: enumPageType
 ---
 
 # appleVpnConnectionType enum type
@@ -31,7 +32,8 @@ Apple VPN connection type.
 |f5Access2018|11|F5 Access 2018.|
 |citrixSso|12|Citrix Sso.|
 |paloAltoGlobalProtectV2|13|Palo Alto Networks GlobalProtect V2.|
-
+|ikEv2|14|IKEv2.|
+|alwaysOn|15|AlwaysOn.|
 
 
 

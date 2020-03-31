@@ -1,9 +1,10 @@
 ---
 title: "Get androidDeviceOwnerGeneralDeviceConfiguration"
 description: "Read properties and relationships of the androidDeviceOwnerGeneralDeviceConfiguration object."
-author: "rolyon"
+author: "davidmu1"
 localization_priority: Normal
 ms.prod: "Intune"
+doc_type: apiPageType
 ---
 
 # Get androidDeviceOwnerGeneralDeviceConfiguration
@@ -21,7 +22,7 @@ One of the following permissions is required to call this API. To learn more, in
 |:---|:---|
 |Delegated (work or school account)|DeviceManagementConfiguration.ReadWrite.All, DeviceManagementConfiguration.Read.All|
 |Delegated (personal Microsoft account)|Not supported.|
-|Application|Not supported.|
+|Application|DeviceManagementConfiguration.ReadWrite.All, DeviceManagementConfiguration.Read.All|
 
 ## HTTP Request
 <!-- {
@@ -35,7 +36,7 @@ GET /deviceManagement/deviceConfigurations/{deviceConfigurationId}/microsoft.gra
 ```
 
 ## Optional query parameters
-This method supports the [OData Query Parameters](https://docs.microsoft.com/en-us/graph/query-parameters) to help customize the response.
+This method supports the [OData Query Parameters](/graph/query-parameters) to help customize the response.
 
 ## Request headers
 |Header|Value|
@@ -62,7 +63,7 @@ Here is an example of the response. Note: The response object shown here may be 
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 3260
+Content-Length: 4799
 
 {
   "value": {
@@ -73,6 +74,27 @@ Content-Length: 3260
       "Role Scope Tag Ids value"
     ],
     "supportsScopeTags": true,
+    "deviceManagementApplicabilityRuleOsEdition": {
+      "@odata.type": "microsoft.graph.deviceManagementApplicabilityRuleOsEdition",
+      "osEditionTypes": [
+        "windows10EnterpriseN"
+      ],
+      "name": "Name value",
+      "ruleType": "exclude"
+    },
+    "deviceManagementApplicabilityRuleOsVersion": {
+      "@odata.type": "microsoft.graph.deviceManagementApplicabilityRuleOsVersion",
+      "minOSVersion": "Min OSVersion value",
+      "maxOSVersion": "Max OSVersion value",
+      "name": "Name value",
+      "ruleType": "exclude"
+    },
+    "deviceManagementApplicabilityRuleDeviceMode": {
+      "@odata.type": "microsoft.graph.deviceManagementApplicabilityRuleDeviceMode",
+      "deviceMode": "sModeConfiguration",
+      "name": "Name value",
+      "ruleType": "exclude"
+    },
     "createdDateTime": "2017-01-01T00:02:43.5775965-08:00",
     "description": "Description value",
     "displayName": "Display Name value",
@@ -86,12 +108,23 @@ Content-Length: 3260
     "bluetoothBlockContactSharing": true,
     "cameraBlocked": true,
     "cellularBlockWiFiTethering": true,
+    "certificateCredentialConfigurationDisabled": true,
     "dataRoamingBlocked": true,
     "dateTimeConfigurationBlocked": true,
     "factoryResetDeviceAdministratorEmails": [
       "Factory Reset Device Administrator Emails value"
     ],
     "factoryResetBlocked": true,
+    "globalProxy": {
+      "@odata.type": "microsoft.graph.androidDeviceOwnerGlobalProxyAutoConfig",
+      "proxyAutoConfigURL": "Proxy Auto Config URL value"
+    },
+    "googleAccountsBlocked": true,
+    "kioskModeScreenSaverConfigurationEnabled": true,
+    "kioskModeScreenSaverImageUrl": "https://example.com/kioskModeScreenSaverImageUrl/",
+    "kioskModeScreenSaverDisplayTimeInSeconds": 8,
+    "kioskModeScreenSaverStartDelayInSeconds": 7,
+    "kioskModeScreenSaverDetectMediaDisabled": true,
     "kioskModeApps": [
       {
         "@odata.type": "microsoft.graph.appListItem",
@@ -104,8 +137,11 @@ Content-Length: 3260
     "kioskModeWallpaperUrl": "https://example.com/kioskModeWallpaperUrl/",
     "kioskModeExitCode": "Kiosk Mode Exit Code value",
     "kioskModeVirtualHomeButtonEnabled": true,
+    "kioskModeVirtualHomeButtonType": "swipeUp",
     "kioskModeBluetoothConfigurationEnabled": true,
     "kioskModeWiFiConfigurationEnabled": true,
+    "kioskModeFlashlightConfigurationEnabled": true,
+    "kioskModeMediaVolumeConfigurationEnabled": true,
     "microphoneForceMute": true,
     "networkEscapeHatchAllowed": true,
     "nfcBlockOutgoingBeam": true,
@@ -144,8 +180,8 @@ Content-Length: 3260
     "usersBlockAdd": true,
     "usersBlockRemove": true,
     "volumeBlockAdjustment": true,
-    "vpnAlwaysOnPackageIdentifier": "Vpn Always On Package Identifier value",
     "vpnAlwaysOnLockdownMode": true,
+    "vpnAlwaysOnPackageIdentifier": "Vpn Always On Package Identifier value",
     "wifiBlockEditConfigurations": true,
     "wifiBlockEditPolicyDefinedConfigurations": true
   }

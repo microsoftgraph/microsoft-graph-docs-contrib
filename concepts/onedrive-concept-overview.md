@@ -2,7 +2,8 @@
 title: "OneDrive file storage API overview"
 description: "OneDrive is the files hub in Office 365."
 localization_priority: Priority
-ms.prod: "sharepoint"
+ms.prod: "onedrive"
+ms.custom: scenarios:getting-started
 ---
 
 # OneDrive file storage API overview
@@ -15,6 +16,8 @@ Files in Office 365 are stored in [drives][Drive API].
 Users can store files in a personal drive - their OneDrive - or in a shared drive powered by a [SharePoint][] document library.
 OneDrive's flexibility lets users collaborate however it works best for them.
 Users can share links to files, copy or move files to team drives, or even attach OneDrive files to mail messages in Outlook.
+
+> [!VIDEO https://www.youtube-nocookie.com/embed/vG-hQxFHCAE]
 
 ## Why integrate with OneDrive file storage in the cloud?
 

@@ -1,9 +1,10 @@
 ---
 title: "Get windows10EndpointProtectionConfiguration"
 description: "Read properties and relationships of the windows10EndpointProtectionConfiguration object."
-author: "rolyon"
+author: "davidmu1"
 localization_priority: Normal
 ms.prod: "Intune"
+doc_type: apiPageType
 ---
 
 # Get windows10EndpointProtectionConfiguration
@@ -21,7 +22,7 @@ One of the following permissions is required to call this API. To learn more, in
 |:---|:---|
 |Delegated (work or school account)|DeviceManagementConfiguration.ReadWrite.All, DeviceManagementConfiguration.Read.All|
 |Delegated (personal Microsoft account)|Not supported.|
-|Application|Not supported.|
+|Application|DeviceManagementConfiguration.ReadWrite.All, DeviceManagementConfiguration.Read.All|
 
 ## HTTP Request
 <!-- {
@@ -35,7 +36,7 @@ GET /deviceManagement/deviceConfigurations/{deviceConfigurationId}/microsoft.gra
 ```
 
 ## Optional query parameters
-This method supports the [OData Query Parameters](https://docs.microsoft.com/en-us/graph/query-parameters) to help customize the response.
+This method supports the [OData Query Parameters](/graph/query-parameters) to help customize the response.
 
 ## Request headers
 |Header|Value|
@@ -62,7 +63,7 @@ Here is an example of the response. Note: The response object shown here may be 
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 29142
+Content-Length: 32668
 
 {
   "value": {
@@ -73,6 +74,27 @@ Content-Length: 29142
       "Role Scope Tag Ids value"
     ],
     "supportsScopeTags": true,
+    "deviceManagementApplicabilityRuleOsEdition": {
+      "@odata.type": "microsoft.graph.deviceManagementApplicabilityRuleOsEdition",
+      "osEditionTypes": [
+        "windows10EnterpriseN"
+      ],
+      "name": "Name value",
+      "ruleType": "exclude"
+    },
+    "deviceManagementApplicabilityRuleOsVersion": {
+      "@odata.type": "microsoft.graph.deviceManagementApplicabilityRuleOsVersion",
+      "minOSVersion": "Min OSVersion value",
+      "maxOSVersion": "Max OSVersion value",
+      "name": "Name value",
+      "ruleType": "exclude"
+    },
+    "deviceManagementApplicabilityRuleDeviceMode": {
+      "@odata.type": "microsoft.graph.deviceManagementApplicabilityRuleDeviceMode",
+      "deviceMode": "sModeConfiguration",
+      "name": "Name value",
+      "ruleType": "exclude"
+    },
     "createdDateTime": "2017-01-01T00:02:43.5775965-08:00",
     "description": "Description value",
     "displayName": "Display Name value",
@@ -103,6 +125,7 @@ Content-Length: 29142
         "action": "blocked",
         "trafficDirection": "out",
         "interfaceTypes": "remoteAccess",
+        "edgeTraversal": "blocked",
         "localUserAuthorizations": "Local User Authorizations value"
       }
     ],
@@ -155,6 +178,18 @@ Content-Length: 29142
       ]
     },
     "userRightsLocalLogOn": {
+      "@odata.type": "microsoft.graph.deviceManagementUserRightsSetting",
+      "state": "blocked",
+      "localUsersOrGroups": [
+        {
+          "@odata.type": "microsoft.graph.deviceManagementUserRightsLocalUserOrGroup",
+          "name": "Name value",
+          "description": "Description value",
+          "securityIdentifier": "Security Identifier value"
+        }
+      ]
+    },
+    "userRightsDenyLocalLogOn": {
       "@odata.type": "microsoft.graph.deviceManagementUserRightsSetting",
       "state": "blocked",
       "localUsersOrGroups": [
@@ -442,18 +477,6 @@ Content-Length: 29142
         }
       ]
     },
-    "userRightsRegisterProcessAsService": {
-      "@odata.type": "microsoft.graph.deviceManagementUserRightsSetting",
-      "state": "blocked",
-      "localUsersOrGroups": [
-        {
-          "@odata.type": "microsoft.graph.deviceManagementUserRightsLocalUserOrGroup",
-          "name": "Name value",
-          "description": "Description value",
-          "securityIdentifier": "Security Identifier value"
-        }
-      ]
-    },
     "xboxServicesEnableXboxGameSaveTask": true,
     "xboxServicesAccessoryManagementServiceStartupMode": "automatic",
     "xboxServicesLiveAuthManagerServiceStartupMode": "automatic",
@@ -526,6 +549,7 @@ Content-Length: 29142
     "defenderSecurityCenterHelpURL": "Defender Security Center Help URL value",
     "defenderSecurityCenterNotificationsFromApp": "blockNoncriticalNotifications",
     "defenderSecurityCenterITContactDisplay": "displayInAppAndInNotifications",
+    "windowsDefenderTamperProtection": "enable",
     "firewallBlockStatefulFTP": true,
     "firewallIdleTimeoutForSecurityAssociationInSeconds": 2,
     "firewallPreSharedKeyEncodingMethod": "none",
@@ -656,6 +680,7 @@ Content-Length: 29142
     "deviceGuardLocalSystemAuthorityCredentialGuardSettings": "enableWithUEFILock",
     "deviceGuardEnableVirtualizationBasedSecurity": true,
     "deviceGuardEnableSecureBootWithDMA": true,
+    "deviceGuardSecureBootWithDMA": "withoutDMA",
     "deviceGuardLaunchSystemGuard": "enabled",
     "smartScreenEnableInShell": true,
     "smartScreenBlockOverrideForFiles": true,
@@ -720,6 +745,63 @@ Content-Length: 29142
       "encryptionMethod": "aesCbc256",
       "requireEncryptionForWriteAccess": true,
       "blockCrossOrganizationWriteAccess": true
+    },
+    "bitLockerRecoveryPasswordRotation": "disabled",
+    "defenderDisableScanArchiveFiles": true,
+    "defenderAllowScanArchiveFiles": true,
+    "defenderDisableBehaviorMonitoring": true,
+    "defenderAllowBehaviorMonitoring": true,
+    "defenderDisableCloudProtection": true,
+    "defenderAllowCloudProtection": true,
+    "defenderEnableScanIncomingMail": true,
+    "defenderEnableScanMappedNetworkDrivesDuringFullScan": true,
+    "defenderDisableScanRemovableDrivesDuringFullScan": true,
+    "defenderAllowScanRemovableDrivesDuringFullScan": true,
+    "defenderDisableScanDownloads": true,
+    "defenderAllowScanDownloads": true,
+    "defenderDisableIntrusionPreventionSystem": true,
+    "defenderAllowIntrusionPreventionSystem": true,
+    "defenderDisableOnAccessProtection": true,
+    "defenderAllowOnAccessProtection": true,
+    "defenderDisableRealTimeMonitoring": true,
+    "defenderAllowRealTimeMonitoring": true,
+    "defenderDisableScanNetworkFiles": true,
+    "defenderAllowScanNetworkFiles": true,
+    "defenderDisableScanScriptsLoadedInInternetExplorer": true,
+    "defenderAllowScanScriptsLoadedInInternetExplorer": true,
+    "defenderBlockEndUserAccess": true,
+    "defenderAllowEndUserAccess": true,
+    "defenderScanMaxCpuPercentage": 12,
+    "defenderCheckForSignaturesBeforeRunningScan": true,
+    "defenderCloudBlockLevel": "high",
+    "defenderCloudExtendedTimeoutInSeconds": 5,
+    "defenderDaysBeforeDeletingQuarantinedMalware": 12,
+    "defenderDisableCatchupFullScan": true,
+    "defenderDisableCatchupQuickScan": true,
+    "defenderEnableLowCpuPriority": true,
+    "defenderFileExtensionsToExclude": [
+      "Defender File Extensions To Exclude value"
+    ],
+    "defenderFilesAndFoldersToExclude": [
+      "Defender Files And Folders To Exclude value"
+    ],
+    "defenderProcessesToExclude": [
+      "Defender Processes To Exclude value"
+    ],
+    "defenderPotentiallyUnwantedAppAction": "enable",
+    "defenderScanDirection": "monitorIncomingFilesOnly",
+    "defenderScanType": "disabled",
+    "defenderScheduledQuickScanTime": "11:58:49.3840000",
+    "defenderScheduledScanDay": "everyday",
+    "defenderScheduledScanTime": "11:59:10.9990000",
+    "defenderSignatureUpdateIntervalInHours": 6,
+    "defenderSubmitSamplesConsentType": "alwaysPrompt",
+    "defenderDetectedMalwareActions": {
+      "@odata.type": "microsoft.graph.defenderDetectedMalwareActions",
+      "lowSeverity": "clean",
+      "moderateSeverity": "clean",
+      "highSeverity": "clean",
+      "severeSeverity": "clean"
     }
   }
 }
