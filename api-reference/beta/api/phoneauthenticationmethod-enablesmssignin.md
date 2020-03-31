@@ -15,7 +15,7 @@ Use this action to enable SMS sign-in for an existing `mobile` phone number. To 
 
 * the phone must have `"phoneType": "mobile"`
 * the phone must be unique in the SMS sign-in system (i.e. no one else can also be using that number)
-* the user must be enabled for SMS sign-in in the [authentication methods](https://docs.microsoft.com/en-us/azure/active-directory/authentication/concept-authentication-methods) policy.
+* the user must be enabled for SMS sign-in in the [authentication methods](https://docs.microsoft.com/azure/active-directory/authentication/concept-authentication-methods) policy.
 
 ## Permissions
 

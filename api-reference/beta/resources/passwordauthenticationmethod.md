@@ -19,7 +19,7 @@ A representation of a user's password. For security, the password itself will ne
 |:-------------|:------------|:------------|
 |[List passwordAuthenticationMethods](../api/authentication-list-passwordmethods.md) | [passwordAuthenticationMethod](passwordauthenticationmethod.md) collection | Read properties and relationships of all of this user's passwordAuthenticationMethod objects. |
 |[Get passwordAuthenticationMethod](../api/passwordauthenticationmethod-get.md) | [passwordAuthenticationMethod](passwordauthenticationmethod.md) | Read properties and relationships of passwordAuthenticationMethod object. |
-|[Reset password](../api/passwordauthenticationmethod-resetpassword.md)|[passwordResetResponse](passwordresetresponse.md)||
+|[Reset password](../api/passwordauthenticationmethod-resetpassword.md)|None|Reset a user's password in the cloud and, if synced, on-premises.|
 
 ## Properties
 
