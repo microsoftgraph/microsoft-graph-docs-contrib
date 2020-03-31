@@ -2,7 +2,7 @@
 title: "user: reprocessLicenseAssignment"
 description: "Reprocess all group-based license assignments for the user."
 localization_priority: Normal
-author: "dkershaw10"
+author: "krbain"
 ms.prod: "microsoft-identity-platform"
 doc_type: "apiPageType" 
 ---

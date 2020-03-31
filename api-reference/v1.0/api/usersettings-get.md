@@ -1,7 +1,7 @@
 ---
 title: "Get settings"
 description: "Read the user and organization settings object."
-author: "dkershaw10"
+author: "krbain"
 localization_priority: Priority
 ms.prod: "microsoft-identity-platform"
 doc_type: apiPageType

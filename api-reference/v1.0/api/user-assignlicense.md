@@ -1,7 +1,7 @@
 ---
 title: "assignLicense"
 description: "Add or remove subscriptions for the user. You can also enable and disable specific plans associated with a subscription."
-author: "dkershaw10"
+author: "krbain"
 localization_priority: Priority
 ms.prod: "microsoft-identity-platform"
 doc_type: apiPageType

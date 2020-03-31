@@ -2,7 +2,7 @@
 title: "Assign manager"
 description: "Assign a user's manager."
 localization_priority: Normal
-author: "dkershaw10"
+author: "krbain"
 ms.prod: "microsoft-identity-platform"
 doc_type: apiPageType
 ---

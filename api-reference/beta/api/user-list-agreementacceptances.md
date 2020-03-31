@@ -2,7 +2,7 @@
 title: "List agreementAcceptances"
 description: "Retrieve a list of a user's agreementAcceptance objects."
 localization_priority: Normal
-author: "dkershaw10"
+author: "krbain"
 ms.prod: "microsoft-identity-platform"
 doc_type: apiPageType
 ---

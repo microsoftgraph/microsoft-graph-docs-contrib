@@ -2,7 +2,7 @@
 title: "user: checkMemberObjects"
 description: "Check for membership in a list of group or directory roles for the specified user object."
 localization_priority: Normal
-author: "davidmu1"
+author: "krbain"
 ms.prod: "microsoft-identity-platform"
 doc_type: "apiPageType"
 ---

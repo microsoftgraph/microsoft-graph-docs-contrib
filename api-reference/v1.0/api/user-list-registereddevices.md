@@ -2,7 +2,7 @@
 title: "List registeredDevices"
 description: "Get the list of user's registered devices."
 localization_priority: Normal
-author: "dkershaw10"
+author: "krbain"
 ms.prod: "microsoft-identity-platform"
 doc_type: apiPageType
 ---

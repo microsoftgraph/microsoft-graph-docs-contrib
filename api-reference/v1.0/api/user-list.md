@@ -1,7 +1,7 @@
 ---
 title: "List users"
 description: "Retrieve a list of user objects."
-author: "dkershaw10"
+author: "krbain"
 localization_priority: Priority
 ms.prod: "microsoft-identity-platform"
 doc_type: apiPageType

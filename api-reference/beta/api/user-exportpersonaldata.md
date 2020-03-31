@@ -2,7 +2,7 @@
 title: "user: exportPersonalData"
 description: "Submits a data policy operation request, made by a Company Administrator to export an organizational user's data."
 localization_priority: Normal
-author: "dkershaw10"
+author: "krbain"
 ms.prod: "microsoft-identity-platform"
 doc_type: apiPageType
 ---
