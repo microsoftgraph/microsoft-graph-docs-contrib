@@ -87,19 +87,19 @@ The Person-Card control uses the global authentication provider described in the
 
 ## Extend for more control
 
-For more complex scenarios or a truly custom UX, this component exposes several `protected render*` methods for override in component extensions:
+For more complex scenarios or a truly custom UX, this component exposes several `protected render*` methods for override in component extensions.
 
 | Method | Description |
 | - | - |
-| `renderNoData` | Render a state when no person data is available. | 
-| `renderPersonDetails` | Render the main body of the person card (image, name, icons). |
-| `renderPersonImage` | Render the image part of the person details. |
-| `renderPersonName` | Render the name part of the person details. |
-| `renderPersonTitle` | Render the title part of the person details. |
-| `renderPersonSubtitle` | Render the subtitle part of the person details. |
-| `renderContactIcons` | Render the contact icons part of the person details. |
-| `renderExpandedDetailsButton` | Render the button to show the expanded details. |
-| `renderExpandedDetails` | Render the content in the expanded details container. |
-| `renderContactDetails` | Render the contact details part of the expanded details. |
-| `renderAdditionalDetails` | Render the additional details part of the expanded details. |
+| renderNoData | Renders a state when no person data is available. | 
+| renderPersonDetails | Renders the main body of the person card (image, name, icons). |
+| renderPersonImage | Renders the image part of the person details. |
+| renderPersonName | Renders the name part of the person details. |
+| renderPersonTitle | Renders the title part of the person details. |
+| renderPersonSubtitle | Renders the subtitle part of the person details. |
+| renderContactIcons | Renders the contact icons part of the person details. |
+| renderExpandedDetailsButton | Renders the button to show the expanded details. |
+| renderExpandedDetails | Renders the content in the expanded details container. |
+| renderContactDetails | Renders the contact details part of the expanded details. |
+| renderAdditionalDetails | Renders the additional details part of the expanded details. |
 
