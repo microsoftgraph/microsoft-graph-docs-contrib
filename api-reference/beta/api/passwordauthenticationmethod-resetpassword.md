@@ -134,8 +134,8 @@ The following is an example of the response.
 
 ```http
 HTTP/1.1 202 ACCEPTED
-Content-type: application/json
 Location: https://graph.microsoft.com/beta/users/{id}/authentication/operations/{id}
+Content-type: application/json
 
 {
   "password": "new system generated password"
