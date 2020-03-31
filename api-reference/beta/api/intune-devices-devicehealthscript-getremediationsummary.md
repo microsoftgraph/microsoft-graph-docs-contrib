@@ -1,13 +1,13 @@
 ---
-title: "createMigrationReport action"
+title: "getRemediationSummary function"
 description: "Not yet documented"
-author: "rolyon"
+author: "davidmu1"
 localization_priority: Normal
 ms.prod: "Intune"
 doc_type: apiPageType
 ---
 
-# createMigrationReport action
+# getRemediationSummary function
 
 > **Important:** Microsoft Graph APIs under the /beta version are subject to change; production use is not supported.
 
@@ -20,9 +20,9 @@ One of the following permissions is required to call this API. To learn more, in
 
 |Permission type|Permissions (from most to least privileged)|
 |:---|:---|
-|Delegated (work or school account)|DeviceManagementConfiguration.ReadWrite.All|
+|Delegated (work or school account)|DeviceManagementConfiguration.ReadWrite.All, DeviceManagementConfiguration.Read.All|
 |Delegated (personal Microsoft account)|Not supported.|
-|Application|DeviceManagementConfiguration.ReadWrite.All|
+|Application|DeviceManagementConfiguration.ReadWrite.All, DeviceManagementConfiguration.Read.All|
 
 ## HTTP Request
 <!-- {
@@ -30,7 +30,7 @@ One of the following permissions is required to call this API. To learn more, in
 }
 -->
 ``` http
-POST /deviceManagement/groupPolicyMigrationReports/createMigrationReport
+GET /deviceManagement/deviceHealthScripts/getRemediationSummary
 ```
 
 ## Request headers
@@ -40,36 +40,17 @@ POST /deviceManagement/groupPolicyMigrationReports/createMigrationReport
 |Accept|application/json|
 
 ## Request body
-In the request body, supply JSON representation of the parameters.
-
-The following table shows the parameters that can be used with this action.
-
-|Property|Type|Description|
-|:---|:---|:---|
-|groupPolicyObjectFile|[groupPolicyObjectFile](../resources/intune-gpanalyticsservice-grouppolicyobjectfile.md)|Not yet documented|
-
-
+Do not supply a request body for this method.
 
 ## Response
-If successful, this action returns a `200 OK` response code and a String in the response body.
+If successful, this function returns a `200 OK` response code and a [deviceHealthScriptRemediationSummary](../resources/intune-devices-devicehealthscriptremediationsummary.md) in the response body.
 
 ## Example
 
 ### Request
 Here is an example of the request.
 ``` http
-POST https://graph.microsoft.com/beta/deviceManagement/groupPolicyMigrationReports/createMigrationReport
-
-Content-type: application/json
-Content-length: 191
-
-{
-  "groupPolicyObjectFile": {
-    "@odata.type": "microsoft.graph.groupPolicyObjectFile",
-    "ouDistinguishedName": "Ou Distinguished Name value",
-    "content": "Content value"
-  }
-}
+GET https://graph.microsoft.com/beta/deviceManagement/deviceHealthScripts/getRemediationSummary
 ```
 
 ### Response
@@ -77,13 +58,16 @@ Here is an example of the response. Note: The response object shown here may be 
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 48
+Content-Length: 155
 
 {
-  "value": "Create Migration Report value"
+  "value": {
+    "@odata.type": "microsoft.graph.deviceHealthScriptRemediationSummary",
+    "scriptCount": 11,
+    "remediatedDeviceCount": 5
+  }
 }
 ```
-
 
 
 

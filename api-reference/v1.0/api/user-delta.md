@@ -9,7 +9,9 @@ doc_type: apiPageType
 
 # user: delta
 
-Get newly created, updated, or deleted users without having to perform a full read of the entire user collection. See [Track changes](/graph/delta-query-overview) for details.
+Namespace: microsoft.graph
+
+Get newly created, updated, or deleted users without having to perform a full read of the entire user collection. See [change tracking](/graph/delta-query-overview) for details.
 
 ## Permissions
 

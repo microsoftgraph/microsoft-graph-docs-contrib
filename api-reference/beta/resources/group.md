@@ -9,6 +9,8 @@ doc_type: resourcePageType
 
 # group resource type
 
+Namespace: microsoft.graph
+
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 Represents an Azure Active Directory (Azure AD) group, which can be an Office 365 group, a team in Microsoft Teams, or a security group.
