@@ -49,7 +49,7 @@ The `mgt-get` component supports several [templates](../templates.md) that you c
 | Data type | Data context | Description |
 | --- | --- | --- |
 | default | The response from Microsoft Graph. | The default template is required to render the data coming from Microsoft Graph. |
-| value | data item from the returned `value` array | Use the `value` template instead of the `default` template when expecting the response from the graph to contain an array of items - such as **messages**, **files**, **users**, etc. The `value` template will automatically be repeated for each item returned by the resource. The `value` template will also start rendering the items as soon as they are ready (unlike the default template).
+| value | Data item from the returned `value` array | Use the `value` template instead of the `default` template when expecting the response from the graph to contain an array of items - such as **messages**, **files**, or **users**. The `value` template will automatically be repeated for each item returned by the resource. The `value` template will also start rendering the items as soon as they are ready (unlike the default template).|
 | error | The error from Microsoft Graph. | This template will be used if there is an error making the request. |
 | loading | N/A | This template is used while the request is being made. |
 
