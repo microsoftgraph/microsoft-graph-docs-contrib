@@ -119,7 +119,7 @@ There will be cases where the data context object contains loop and you will nee
 
 ## TemplateContext
 
-Each component in the Microsoft Graph Toolkit defines the `templateContext` property which allows a developer to pass additional data to any template in the component. 
+Each component in the Microsoft Graph Toolkit defines the `templateContext` property, which you can use to pass additional data to any template in the component. 
 
 ```ts
 document.querySelector('mgt-agenda').templateContext = {
