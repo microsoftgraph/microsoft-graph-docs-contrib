@@ -9,6 +9,8 @@ doc_type: "resourcePageType"
 
 # skillProficiency resource type
 
+Namespace: microsoft.graph
+
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 Represents detailed information about skills associated with a user in various services.

@@ -9,6 +9,8 @@ doc_type: "resourcePageType"
 
 # personAnniversary resource type
 
+Namespace: microsoft.graph
+
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 Represents the details of meaningful dates associated with a person in a user's [profile](profile.md).

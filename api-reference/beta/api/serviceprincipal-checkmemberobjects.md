@@ -9,6 +9,8 @@ doc_type: "apiPageType"
 
 # servicePrincipal: checkMemberObjects
 
+Namespace: microsoft.graph
+
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 Check for membership in a list of groups, directory roles, or administrative units for the specified service principle object. This method is transitive.

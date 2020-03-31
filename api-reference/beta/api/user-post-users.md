@@ -9,6 +9,8 @@ doc_type: apiPageType
 
 # Create user
 
+Namespace: microsoft.graph
+
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 Create a new [user](../resources/user.md).

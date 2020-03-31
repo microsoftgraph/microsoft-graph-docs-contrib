@@ -9,6 +9,8 @@ doc_type: resourcePageType
 
 # message resource type
 
+Namespace: microsoft.graph
+
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 A message in a mailbox folder.

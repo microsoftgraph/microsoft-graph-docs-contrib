@@ -9,6 +9,8 @@ doc_type: "apiPageType"
 
 # List provisioningObjectSummary
 
+Namespace: microsoft.graph
+
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 Get all provisioning events that occurred in your tenant, such as the deletion of a group in a target application or the creation of a user when provisioning user accounts from your HR system. 
@@ -33,11 +35,13 @@ GET /auditLogs/provisioning
 
 ## Optional query parameters
 
-This method supports the following OData query parameter to help customize the response. Note that the filters are all case sensitive except for status. 
+This method supports the following OData query parameters to help customize the response. Note that the filters are all case sensitive except for status. 
 
 |Name     |Description                            |Example|
 |:--------------------|----------------|------------------------------------------------------------------------|
 |[$filter](/graph/query-parameters#filter-parameter)|Filters results (rows). |/`auditLogs/provisioning?$filter=id eq '74c3b0ae-9cc5-850e-e0a5-7r6a4231de87'`
+|[$top](/graph/query-parameters#top-parameter)|Sets the page size of results.|`/auditLogs/provisioning?$top=20`|
+|[$skiptoken](/graph/query-parameters#skiptoken-parameter)|Retrieves the next page of results from result sets that span multiple pages. You must pass the top filter in the query to generate the token. You cannot specify the number of results to be skipped.|`/auditLogs/provisioning?$top=20&$skiptoken=g822a72df43b19c8ce94b71d153981b680a08800bc3e35f239dffb378ff72c25"`|
 
 For general information, see [OData query parameters](/graph/query_parameters).
 
