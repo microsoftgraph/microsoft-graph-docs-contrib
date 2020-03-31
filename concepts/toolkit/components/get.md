@@ -27,7 +27,7 @@ You can use several attributes to change the behavior of the component. The only
 | scopes | scopes | Optional array of strings if using the property or a comma delimited scope if using the attribute. The component will use these scopes (with a supported provider) to ensure that the user has consented to the right permission. |
 | version | version | Optional API version to use when making the GET request. Default is `v1.0`.  |
 | max-pages | maxPages | Optional number of pages (for resources that support paging). Default is 3. Setting this value to 0 will get all pages.  |
-| polling-rate | pollingRate | Optional number of miliseconds. When set, the component will poll the request uri for updates in the defined interval. If using a delta query, polling will always query the delta api. The template will only refresh when the data changes. |
+| polling-rate | pollingRate | Optional number of miliseconds. When set, the component will poll the request URI for updates in the defined interval. If using a delta query, polling will always query the delta API. The template will only refresh when the data changes. |
 | N/A | response | Read-only response from Microsoft Graph if request was successful.  |
 | N/A |error| Read-only error from Microsoft Graph if request was not successful. |
 
