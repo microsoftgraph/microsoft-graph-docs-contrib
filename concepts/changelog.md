@@ -17,7 +17,7 @@ For details about known issues with Microsoft Graph APIs, see [Known issues](kno
 
 | **Change type** | **Version**   | **Description**                          |
 | :-------------- | :------------ | :--------------------------------------- |
-|Addition|beta|Added the [authenticationMethod](../resources/authenticationmethods.md), [passwordAuthenticationMethod](../resources/passwordauthenticationmethod.md), and [phoneAuthenticationMethod](../resources/phoneauthenticationmethod.md) resources and associated functions, including [resetPassword](../api/passwordauthenticationmethod-resetpassword.md), [enableSmsSignIn](../api/phoneauthenticationmethod-enablesmssignin.md), and [disableSmsSignIn](../api/phoneauthenticationmethod-disablesmssignin.md).
+|Addition|beta|Added the [authenticationMethod](/graph/api/resources/authenticationmethods?view=graph-rest-beta), [passwordAuthenticationMethod](/graph/api/resources/passwordauthenticationmethod?view=graph-rest-beta), and [phoneAuthenticationMethod](/graph/api/resources/phoneauthenticationmethod?view=graph-rest-beta) resources and associated functions.
 
 ## March 2020
 
