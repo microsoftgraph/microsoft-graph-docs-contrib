@@ -9,6 +9,8 @@ doc_type: apiPageType
 
 # Remove owner
 
+Namespace: microsoft.graph
+
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 Remove an owner from an [application](../resources/application.md).

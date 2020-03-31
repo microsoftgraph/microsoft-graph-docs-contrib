@@ -9,6 +9,8 @@ doc_type: apiPageType
 
 # Create group
 
+Namespace: microsoft.graph
+
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 Create a new [group](../resources/group.md) as specified in the request body. You can create one of the following groups:
@@ -49,6 +51,7 @@ The following table shows the properties of the [group](../resources/group.md) r
 | Property | Type | Description|
 |:---------------|:--------|:----------|
 | displayName | string | The name to display in the address book for the group. Required. |
+| description | string | A description for the group. Optional. |
 | mailEnabled | boolean | Set to **true** for mail-enabled groups. Required. |
 | mailNickname | string | The mail alias for the group. Required. |
 | securityEnabled | boolean | Set to **true** for security-enabled groups, including Office 365 groups. Required. |

@@ -1,7 +1,7 @@
 ---
 title: "Get androidManagedStoreAppConfiguration"
 description: "Read properties and relationships of the androidManagedStoreAppConfiguration object."
-author: "rolyon"
+author: "davidmu1"
 localization_priority: Normal
 ms.prod: "Intune"
 doc_type: apiPageType
@@ -91,8 +91,6 @@ Content-Length: 829
   }
 }
 ```
-
-
 
 
 

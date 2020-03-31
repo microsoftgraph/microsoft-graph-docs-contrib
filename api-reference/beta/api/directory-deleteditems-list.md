@@ -9,6 +9,8 @@ doc_type: apiPageType
 
 # List deleted items
 
+Namespace: microsoft.graph
+
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 Retrieve a list of recently deleted items from [deleted items](../resources/directory.md).
@@ -16,6 +18,7 @@ Retrieve a list of recently deleted items from [deleted items](../resources/dire
 Currently, deleted items functionality is only supported for the [application](../resources/application.md), [group](../resources/group.md) and [user](../resources/user.md) resources.
 
 ## Permissions
+
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
 
 ### For applications:

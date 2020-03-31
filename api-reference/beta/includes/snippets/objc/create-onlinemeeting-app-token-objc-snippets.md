@@ -12,7 +12,6 @@ NSMutableURLRequest *urlRequest = [NSMutableURLRequest requestWithURL:[NSURL URL
 [urlRequest setValue:@"application/json" forHTTPHeaderField:@"Content-Type"];
 
 MSGraphOnlineMeeting *onlineMeeting = [[MSGraphOnlineMeeting alloc] init];
-[onlineMeeting setIsBroadcast:@"false"];
 [onlineMeeting setStartDateTime: "2019-09-09T21:33:30.8546353+00:00"];
 [onlineMeeting setEndDateTime: "2019-09-09T22:03:30.8566356+00:00"];
 [onlineMeeting setSubject:@"Application Token Meeting"];

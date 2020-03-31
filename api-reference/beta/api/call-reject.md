@@ -1,13 +1,15 @@
 ---
 title: "call: reject"
 description: "Enable a bot to reject an incoming call."
-author: "VinodRavichandran"
+author: "ananmishr"
 localization_priority: Normal
 ms.prod: "cloud-communications"
 doc_type: apiPageType
 ---
 
 # call: reject
+
+Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
@@ -16,8 +18,6 @@ Enable a bot to reject an incoming call. The incoming call request can be an inv
 The bot is expected to answer or reject the call before the call times out. The current timeout value is 15 seconds.
 
 This API does not end existing calls that have already been answered. Use [delete call](../api/call-delete.md) to end a call.
-
-> **Note:** The bot can only be reached through VoIP. PSTN calling to bot is not yet supported.
 
 ## Permissions
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).

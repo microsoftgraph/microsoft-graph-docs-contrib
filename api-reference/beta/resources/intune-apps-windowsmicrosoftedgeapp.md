@@ -1,7 +1,7 @@
 ---
 title: "windowsMicrosoftEdgeApp resource type"
 description: "Contains properties and inherited properties for the Microsoft Edge app on Windows."
-author: "rolyon"
+author: "davidmu1"
 localization_priority: Normal
 ms.prod: "Intune"
 doc_type: resourcePageType
@@ -49,6 +49,7 @@ Inherits from [mobileApp](../resources/intune-shared-mobileapp.md)
 |roleScopeTagIds|String collection|List of scope tag ids for this mobile app. Inherited from [mobileApp](../resources/intune-shared-mobileapp.md)|
 |dependentAppCount|Int32|The total number of dependencies the child app has. Inherited from [mobileApp](../resources/intune-shared-mobileapp.md)|
 |channel|[microsoftEdgeChannel](../resources/intune-apps-microsoftedgechannel.md)|The channel to install on target devices. Possible values are: `dev`, `beta`, `stable`.|
+|displayLanguageLocale|String|The language locale to use when the Edge app displays text to the user.|
 
 ## Relationships
 |Relationship|Type|Description|
@@ -95,7 +96,8 @@ Here is a JSON representation of the resource.
     "String"
   ],
   "dependentAppCount": 1024,
-  "channel": "String"
+  "channel": "String",
+  "displayLanguageLocale": "String"
 }
 ```
 

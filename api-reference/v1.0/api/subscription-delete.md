@@ -2,12 +2,14 @@
 title: "Delete subscription"
 description: "Delete a subscription."
 localization_priority: Normal
-author: "piotrci"
+author: "baywet"
 ms.prod: ""
 doc_type: apiPageType
 ---
 
 # Delete subscription
+
+Namespace: microsoft.graph
 
 Delete a subscription.
 

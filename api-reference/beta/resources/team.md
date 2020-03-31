@@ -9,6 +9,8 @@ doc_type: resourcePageType
 
 # team resource type
 
+Namespace: microsoft.graph
+
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 A team in Microsoft Teams is a collection of [channel](channel.md) objects. A channel represents a topic, and therefore a logical isolation of discussion, within a team.
@@ -31,12 +33,6 @@ Every team is associated with a [group](../resources/group.md). The group has th
 |[List all teams](/graph/teams-list-all-teams) | [group](group.md) collection | List all groups that have teams. |
 |[Get team photo](../api/team-get-photo.md) | Binary data | Get the photo (picture) for a team. |
 |[Update team photo](../api/team-update-photo.md) | None | Update the photo (picture) for a team. |
-|[Publish apps to your organization](../resources/teamsapp.md)| [teamsApp](../resources/teamsapp.md) | Create Teams apps visible only to your organization. |
-|[Add app to team](../api/teamsappinstallation-add.md) | [teamsAppInstallation](teamsappinstallation.md) | Adds (installs) an app to a team.|
-|[Add tab to channel](../api/teamstab-add.md) | [teamsTab](../resources/teamstab.md) | Adds (installs) a tab to a team's channel.|
-|[List channel messages](../api/channel-list-messages.md)  | [chatMessage](../resources/chatmessage.md) | [Get messages in a channel](../api/channel-list-messages.md) |
-|[Create chatMessage in a channel](../api/channel-post-messages.md)  | [chatMessage](../resources/chatmessage.md) | Send a message to a channel. |
-|[Create chatMessage reply in a channel](../api/channel-post-messagereply.md) | [chatMessage](../resources/chatmessage.md) | Reply to a message in a channel. |
 
 ## Properties
 
@@ -114,7 +110,7 @@ The following is a JSON representation of the resource.
 }
 -->
 
-## See Also
+## See also
 
 - [Creating a group with a team](/graph/teams-create-group-and-team)
-- [Teams API Overview](teams-api-overview.md)
+- [Use the Microsoft Graph API to work with Microsoft Teams](teams-api-overview.md)

@@ -1,13 +1,15 @@
 ---
 title: "organizerMeetingInfo resource type"
 description: "Contains details about the meeting organizer. "
-author: "VinodRavichandran"
+author: "ananmishr"
 localization_priority: Normal
 ms.prod: "cloud-communications"
 doc_type: resourcePageType
 ---
 
 # organizerMeetingInfo resource type
+
+Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 

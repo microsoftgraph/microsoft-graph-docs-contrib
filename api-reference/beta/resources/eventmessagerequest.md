@@ -9,6 +9,8 @@ doc_type: resourcePageType
 
 # eventMessageRequest resource type
 
+Namespace: microsoft.graph
+
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 A message that represents a meeting request in an invitee's mailbox.
@@ -98,7 +100,7 @@ Here is a JSON representation of the resource
 |conversationIndex|Edm.Binary|The index of the conversation the email belongs to.|
 |createdDateTime|DateTimeOffset|The date and time the message was created.|
 |endDateTime|[DateTimeTimeZone](datetimetimezone.md)|The end time of the requested meeting.|
-|from|[recipient](recipient.md)|The mailbox owner and sender of the message.|
+|from|[recipient](recipient.md)|The owner of the mailbox from which the message is sent. In most cases, this value is the same as the **sender** property, except for sharing or delegation scenarios. The value must correspond to the actual mailbox used. Find out more about [setting the from and sender properties](/graph/outlook-create-send-messages#setting-the-from-and-sender-properties) of a message.|
 |hasAttachments|Boolean|Indicates whether the message has attachments.|
 |id|String|Read-only.|
 |importance|String| The importance of the message: `Low`, `Normal`, `High`.|
@@ -121,7 +123,7 @@ Here is a JSON representation of the resource
 |recurrence|[PatternedRecurrence](patternedrecurrence.md)|The recurrence pattern of the requested meeting.|
 |replyTo|[recipient](recipient.md) collection|The email addresses to use when replying.|
 |responseRequested|Boolean|Set to true if the sender would like the invitee to send a response to the requested meeting.|
-|sender|[recipient](recipient.md)|The account that is actually used to generate the message.|
+|sender|[recipient](recipient.md)|The account that is actually used to generate the message. In most cases, this value is the same as the **from** property. You can set this property to a different value when sending a message from a [shared mailbox](/exchange/collaboration/shared-mailboxes/shared-mailboxes), [for a shared calendar, or as a delegate](/graph/outlook-share-delegate-calendar.md). In any case, the value must correspond to the actual mailbox used. Find out more about [setting the from and sender properties](/graph/outlook-create-send-messages#setting-the-from-and-sender-properties) of a message.|
 |sentDateTime|DateTimeOffset|The date and time the message was sent.|
 |startDateTime|[DateTimeTimeZone](datetimetimezone.md)|The start time of the requested meeting.|
 |subject|String|The subject of the message.|

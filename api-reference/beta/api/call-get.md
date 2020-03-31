@@ -1,13 +1,15 @@
 ---
 title: "Get call"
 description: "Retrieve the properties and relationships of a call object."
-author: "VinodRavichandran"
+author: "ananmishr"
 localization_priority: Normal
 ms.prod: "cloud-communications"
 doc_type: apiPageType
 ---
 
 # Get call
+
+Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
@@ -108,7 +110,7 @@ Content-Type: application/json
   },
   "targets": [
     {
-      "@odata.type": "#microsoft.graph.participantInfo",
+      "@odata.type": "#microsoft.graph.invitationParticipantInfo",
       "identity": {
         "@odata.type": "#microsoft.graph.identitySet",
         "user": {
