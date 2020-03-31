@@ -2,7 +2,7 @@
 title: "user: delta"
 description: "Get newly created, updated, or deleted users without having to perform a full read of the entire user collection."
 localization_priority: Normal
-author: "baywet"
+author: "krbain"
 ms.prod: "microsoft-identity-platform"
 doc_type: apiPageType
 ---
