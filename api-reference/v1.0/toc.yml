@@ -803,6 +803,8 @@
           href: api/call-mute.md
         - name: Update recording status
           href: api/call-updaterecordingstatus.md
+        - name: Log teleconference device quality data
+          href: api/call-logteleconferencedevicequality.md
       - name: Online meeting
         href: resources/onlinemeeting.md
         items:
