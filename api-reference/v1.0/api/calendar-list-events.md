@@ -4,23 +4,25 @@ description: "Retrieve a list of events in a calendar.  The list contains single
 author: "angelgolfer-ms"
 localization_priority: Priority
 ms.prod: "outlook"
+doc_type: apiPageType
 ---
 
 # List events
 
-Retrieve a list of events in a calendar.  The list contains single instance meetings and series masters.
+Namespace: microsoft.graph
+
+Retrieve a list of events in a calendar.  The calendar can be one for a [user](../resources/user.md), or the default calendar of an Office 365 [group](../resources/group.md). The list of events contains single instance meetings and series masters.
 
 To get expanded event instances, you can [get the calendar view](calendar-list-calendarview.md), or 
 [get the instances of an event](event-list-instances.md).
 
 ## Permissions
-One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
+Depending on the type of calendar that the events are in and the permission type (delegated or application) requested, one of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
 
-|Permission type      | Permissions (from least to most privileged)              |
-|:--------------------|:---------------------------------------------------------|
-|Delegated (work or school account) | Calendars.Read    |
-|Delegated (personal Microsoft account) | Calendars.Read    |
-|Application | Calendars.Read |
+| Calendar | Delegated (work or school account) | Delegated (personal Microsoft account) | Application |
+|:-----|:-----|:-----|:-----|
+| user calendar | Calendars.Read, Calendars.ReadWrite | Calendars.Read, Calendars.ReadWrite | Calendars.Read, Calendars.ReadWrite |
+| group calendar | Group.Read.All, Group.ReadWrite.All | Not supported. | Not supported. |
 
 ## HTTP request
 <!-- { "blockType": "ignored" } -->
@@ -66,14 +68,14 @@ Here is an example of the request.
   "blockType": "request",
   "name": "calendar_get_events"
 }-->
-```http
+```msgraph-interactive
 GET https://graph.microsoft.com/v1.0/me/calendar/events
 ```
 # [C#](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/calendar-get-events-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# [Javascript](#tab/javascript)
+# [JavaScript](#tab/javascript)
 [!INCLUDE [sample-code](../includes/snippets/javascript/calendar-get-events-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 

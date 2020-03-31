@@ -18,6 +18,6 @@ const synchronizationTemplate = {
 
 let res = await client.api('/applications/{id}/synchronization/templates')
 	.version('beta')
-	.post({synchronizationTemplate : synchronizationTemplate});
+	.post(synchronizationTemplate);
 
 ```

@@ -2,9 +2,14 @@
 title: "Delete inferenceClassificationOverride"
 description: "Delete an override specified by its ID."
 localization_priority: Normal
+author: ""
+ms.prod: ""
+doc_type: apiPageType
 ---
 
 # Delete inferenceClassificationOverride
+
+Namespace: microsoft.graph
 
 Delete an override specified by its ID.
 ## Permissions
@@ -51,7 +56,7 @@ DELETE https://graph.microsoft.com/v1.0/me/inferenceClassification/overrides/98f
 [!INCLUDE [sample-code](../includes/snippets/csharp/delete-inferenceclassificationoverride-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# [Javascript](#tab/javascript)
+# [JavaScript](#tab/javascript)
 [!INCLUDE [sample-code](../includes/snippets/javascript/delete-inferenceclassificationoverride-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 

@@ -4,9 +4,12 @@ description: "Return all of the groups, directory roles and administrative units
 localization_priority: Priority
 author: "dkershaw10"
 ms.prod: "microsoft-identity-platform"
+doc_type: apiPageType
 ---
 
 # user: getMemberObjects
+
+Namespace: microsoft.graph
 Return all of the groups, directory roles and administrative units that the user is a member of. The check is transitive.
 
 ## Permissions
@@ -64,7 +67,7 @@ Content-length: 33
 [!INCLUDE [sample-code](../includes/snippets/csharp/user-getmemberobjects-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# [Javascript](#tab/javascript)
+# [JavaScript](#tab/javascript)
 [!INCLUDE [sample-code](../includes/snippets/javascript/user-getmemberobjects-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 

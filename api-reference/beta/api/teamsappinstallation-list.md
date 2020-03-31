@@ -1,12 +1,15 @@
 ---
 title: "List apps in team"
 description: "Retrieve the list of apps installed in the specified team."
-author: "nkramer"
+author: "clearab"
 localization_priority: Normal
 ms.prod: "microsoft-teams"
+doc_type: apiPageType
 ---
 
 # List apps in team
+
+Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
@@ -46,11 +49,13 @@ Do not supply a request body for this method.
 
 ## Response
 
-If successful, this method returns a `200 OK` response code and collection of [teamsApp](../resources/teamsapp.md) objects in the response body.
+If successful, this method returns a `200 OK` response code and collection of [teamsAppInstallation](../resources/teamsappinstallation.md) objects in the response body.
 
-## Example
+## Examples
 
-### Request
+### Example 1: List installed apps
+
+#### Request
 
 The following is an example of the request.
 
@@ -59,15 +64,15 @@ The following is an example of the request.
   "blockType": "request",
   "name": "get_installed_teams_apps"
 }-->
-
-```http
+```msgraph-interactive
 GET https://graph.microsoft.com/beta/teams/{id}/installedApps
 ```
+
 # [C#](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/get-installed-teams-apps-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# [Javascript](#tab/javascript)
+# [JavaScript](#tab/javascript)
 [!INCLUDE [sample-code](../includes/snippets/javascript/get-installed-teams-apps-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
@@ -75,28 +80,23 @@ GET https://graph.microsoft.com/beta/teams/{id}/installedApps
 [!INCLUDE [sample-code](../includes/snippets/objc/get-installed-teams-apps-objc-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# [Java](#tab/java)
-[!INCLUDE [sample-code](../includes/snippets/java/get-installed-teams-apps-java-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
 ---
 
-
-### Response
+#### Response
 
 The following is an example of the response.
 >**Note:** The response object shown here might be shortened for readability. All the properties will be returned from an actual call.
 <!-- {
   "blockType": "response",
+  "name": "get_installed_teams_apps",
   "truncated": true,
-  "@odata.type": "microsoft.graph.directoryObject",
+  "@odata.type": "microsoft.graph.teamsAppInstallation",
   "isCollection": true
 } -->
 
 ```http
 HTTP/1.1 200 OK
 Content-type: application/json
-Content-length: 55
 
 {
   "value": [
@@ -107,9 +107,9 @@ Content-length: 55
 }
 ```
 
-## Example -- getting the names of the installed apps
+### Example 2: Get the names and other details of installed apps
 
-### Request
+#### Request
 
 The following is an example of the request.
 
@@ -119,14 +119,14 @@ The following is an example of the request.
   "name": "get_installed_teams_apps_expand"
 }-->
 
-```http
+```msgraph-interactive
 GET https://graph.microsoft.com/beta/teams/{id}/installedApps?$expand=teamsAppDefinition
 ```
 # [C#](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/get-installed-teams-apps-expand-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# [Javascript](#tab/javascript)
+# [JavaScript](#tab/javascript)
 [!INCLUDE [sample-code](../includes/snippets/javascript/get-installed-teams-apps-expand-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
@@ -134,29 +134,25 @@ GET https://graph.microsoft.com/beta/teams/{id}/installedApps?$expand=teamsAppDe
 [!INCLUDE [sample-code](../includes/snippets/objc/get-installed-teams-apps-expand-objc-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# [Java](#tab/java)
-[!INCLUDE [sample-code](../includes/snippets/java/get-installed-teams-apps-expand-java-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
 ---
 
 
-### Response
+#### Response
 
 The following is an example of the response.
 
 >**Note:** The response object shown here might be shortened for readability. All the properties will be returned from an actual call.
 <!-- {
   "blockType": "response",
+  "name": "get_installed_teams_apps_expand",
   "truncated": true,
-  "@odata.type": "microsoft.graph.directoryObject",
+  "@odata.type": "microsoft.graph.teamsAppInstallation",
   "isCollection": true
 } -->
 
 ```http
 HTTP/1.1 200 OK
 Content-type: application/json
-Content-length: 55
 
 {
     "value": [

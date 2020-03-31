@@ -4,9 +4,12 @@ description: "Get the properties and relationships of a calendar object. The cal
 localization_priority: Priority
 author: "angelgolfer-ms"
 ms.prod: "outlook"
+doc_type: apiPageType
 ---
 
 # Get calendar
+
+Namespace: microsoft.graph
 
 Get the properties and relationships of a [calendar](../resources/calendar.md) object. The calendar can be one for a [user](../resources/user.md), 
 or the default calendar of an Office 365 [group](../resources/group.md).
@@ -17,13 +20,13 @@ There are two scenarios where an app can get another user's calendar:
 * If the app has the appropriate delegated [permissions](#permissions) from one user, and another user has shared a calendar with that user, or, has given delegated access to that user. See [details and an example](/graph/outlook-get-shared-events-calendars).
 
 ## Permissions
-One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
+Depending on the type of calendar that the event is in and the permission type (delegated or application) requested, one of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
 
-|Permission type      | Permissions (from least to most privileged)              |
-|:--------------------|:---------------------------------------------------------|
-|Delegated (work or school account) | Calendars.Read    |
-|Delegated (personal Microsoft account) | Calendars.Read    |
-|Application | Calendars.Read |
+| Calendar | Delegated (work or school account) | Delegated (personal Microsoft account) | Application |
+|:-----|:-----|:-----|:-----|
+| user calendar | Calendars.Read, Calendars.ReadWrite | Calendars.Read, Calendars.ReadWrite | Calendars.Read, Calendars.ReadWrite |
+| group calendar | Group.Read.All, Group.ReadWrite.All | Not supported. | Not supported. |
+
 
 ## HTTP request
 <!-- { "blockType": "ignored" } -->
@@ -61,21 +64,21 @@ Do not supply a request body for this method.
 If successful, this method returns a `200 OK` response code and [calendar](../resources/calendar.md) object in the response body.
 ## Example
 ##### Request
-Here is an example of the request.
+The following example gets the signed-in user's default calendar.
 
 # [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "get_calendar"
 }-->
-```http
+```msgraph-interactive
 GET https://graph.microsoft.com/v1.0/me/calendar
 ```
 # [C#](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/get-calendar-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# [Javascript](#tab/javascript)
+# [JavaScript](#tab/javascript)
 [!INCLUDE [sample-code](../includes/snippets/javascript/get-calendar-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 

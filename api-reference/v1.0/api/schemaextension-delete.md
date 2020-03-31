@@ -3,9 +3,13 @@ title: "Delete schemaExtension"
 description: "Delete the definition of a schema extension."
 localization_priority: Normal
 author: "dkershaw10"
+ms.prod: ""
+doc_type: apiPageType
 ---
 
 # Delete schemaExtension
+
+Namespace: microsoft.graph
 
 Delete the definition of a [schema extension](../resources/schemaextension.md).
 
@@ -58,7 +62,7 @@ DELETE https://graph.microsoft.com/v1.0/schemaExtensions/{id}
 [!INCLUDE [sample-code](../includes/snippets/csharp/delete-schemaextension-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# [Javascript](#tab/javascript)
+# [JavaScript](#tab/javascript)
 [!INCLUDE [sample-code](../includes/snippets/javascript/delete-schemaextension-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 

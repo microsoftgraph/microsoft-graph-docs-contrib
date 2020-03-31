@@ -28,6 +28,6 @@ const contact = {
 
 let res = await client.api('/me/contacts/AAMkADh6v5AAAvgTCEAAA=')
 	.version('beta')
-	.update({contact : contact});
+	.update(contact);
 
 ```

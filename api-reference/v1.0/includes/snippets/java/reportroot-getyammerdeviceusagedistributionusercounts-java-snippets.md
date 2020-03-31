@@ -7,7 +7,7 @@ description: "Automatically generated file. DO NOT MODIFY"
 IGraphServiceClient graphClient = GraphServiceClient.builder().authenticationProvider( authProvider ).buildClient();
 
 Report report = graphClient.reports()
-	.getYammerDeviceUsageDistributionUserCounts('D7')
+	.getYammerDeviceUsageDistributionUserCounts("D7")
 	.buildRequest()
 	.get();
 

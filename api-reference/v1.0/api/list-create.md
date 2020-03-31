@@ -5,8 +5,12 @@ ms.date: 09/11/2017
 title: Create a SharePoint List
 localization_priority: Normal
 ms.prod: "sharepoint"
+description: "Create a new list in a site."
+doc_type: apiPageType
 ---
 # Create a new list
+
+Namespace: microsoft.graph
 
 Create a new [list][] in a [site][].
 
@@ -65,7 +69,7 @@ Content-Type: application/json
 [!INCLUDE [sample-code](../includes/snippets/csharp/create-list-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# [Javascript](#tab/javascript)
+# [JavaScript](#tab/javascript)
 [!INCLUDE [sample-code](../includes/snippets/javascript/create-list-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 

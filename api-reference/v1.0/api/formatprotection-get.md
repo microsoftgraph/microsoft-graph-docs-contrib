@@ -2,9 +2,14 @@
 title: "Get FormatProtection"
 description: "Retrieve the properties and relationships of formatprotection object."
 localization_priority: Normal
+author: ""
+ms.prod: ""
+doc_type: apiPageType
 ---
 
 # Get FormatProtection
+
+Namespace: microsoft.graph
 
 Retrieve the properties and relationships of formatprotection object.
 ## Permissions
@@ -47,14 +52,14 @@ Here is an example of the request.
   "blockType": "request",
   "name": "get_formatprotection"
 }-->
-```http
+```msgraph-interactive
 GET https://graph.microsoft.com/v1.0/me/drive/items/{id}/workbook/names/{name}/range/format/protection
 ```
 # [C#](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/get-formatprotection-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# [Javascript](#tab/javascript)
+# [JavaScript](#tab/javascript)
 [!INCLUDE [sample-code](../includes/snippets/javascript/get-formatprotection-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 

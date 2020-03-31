@@ -2,9 +2,14 @@
 title: "List overrides"
 description: "Get the overrides that a user has set up to always classify messages from certain senders in specific ways."
 localization_priority: Normal
+author: ""
+ms.prod: ""
+doc_type: apiPageType
 ---
 
 # List overrides
+
+Namespace: microsoft.graph
 
 Get the overrides that a user has set up to always classify messages from certain senders in specific ways.
 
@@ -46,14 +51,14 @@ Here is an example of the request.
   "blockType": "request",
   "name": "get_overrides"
 }-->
-```http
+```msgraph-interactive
 GET https://graph.microsoft.com/v1.0/me/inferenceClassification/overrides
 ```
 # [C#](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/get-overrides-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# [Javascript](#tab/javascript)
+# [JavaScript](#tab/javascript)
 [!INCLUDE [sample-code](../includes/snippets/javascript/get-overrides-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 

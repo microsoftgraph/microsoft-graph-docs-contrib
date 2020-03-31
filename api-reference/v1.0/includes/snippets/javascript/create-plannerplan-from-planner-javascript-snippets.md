@@ -16,6 +16,6 @@ const plannerPlan = {
 };
 
 let res = await client.api('/planner/plans')
-	.post({plannerPlan : plannerPlan});
+	.post(plannerPlan);
 
 ```

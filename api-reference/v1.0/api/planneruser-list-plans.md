@@ -4,9 +4,12 @@ description: "Retrieve a list of **plannerplan** objects shared with a user obje
 localization_priority: Normal
 author: "TarkanSevilmis"
 ms.prod: "planner"
+doc_type: apiPageType
 ---
 
 # List plans
+
+Namespace: microsoft.graph
 
 Retrieve a list of **plannerplan** objects shared with a [user](../resources/user.md) object.
 
@@ -50,14 +53,14 @@ Here is an example of the request.
   "blockType": "request",
   "name": "get_plans"
 }-->
-```http
+```msgraph-interactive
 GET https://graph.microsoft.com/v1.0/me/planner/plans
 ```
 # [C#](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/get-plans-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# [Javascript](#tab/javascript)
+# [JavaScript](#tab/javascript)
 [!INCLUDE [sample-code](../includes/snippets/javascript/get-plans-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 

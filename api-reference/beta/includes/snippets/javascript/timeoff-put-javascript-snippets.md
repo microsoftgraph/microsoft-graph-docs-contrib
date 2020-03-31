@@ -28,6 +28,6 @@ const timeOff = {
 
 let res = await client.api('/teams/{teamId}/schedule/timesOff/{timeOffId}')
 	.version('beta')
-	.put({timeOff : timeOff});
+	.put(timeOff);
 
 ```

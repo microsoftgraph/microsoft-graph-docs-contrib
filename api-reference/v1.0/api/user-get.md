@@ -4,9 +4,12 @@ description: "Retrieve the properties and relationships of user object."
 author: "dkershaw10"
 localization_priority: Priority
 ms.prod: "microsoft-identity-platform"
+doc_type: apiPageType
 ---
 
 # Get a user
+
+Namespace: microsoft.graph
 
 Retrieve the properties and relationships of user object.
 
@@ -105,14 +108,14 @@ You can get the user information for the signed-in user by replacing `/users/{id
   "blockType": "request",
   "name": "get_user"
 }-->
-```http
+```msgraph-interactive
 GET https://graph.microsoft.com/v1.0/me
 ```
 # [C#](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/get-user-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# [Javascript](#tab/javascript)
+# [JavaScript](#tab/javascript)
 [!INCLUDE [sample-code](../includes/snippets/javascript/get-user-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 

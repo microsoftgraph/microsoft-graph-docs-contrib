@@ -4,9 +4,12 @@ description: "Gets a chart based on its position in the collection."
 author: "lumine2008"
 localization_priority: Normal
 ms.prod: "excel"
+doc_type: apiPageType
 ---
 
 # ChartCollection: ItemAt
+
+Namespace: microsoft.graph
 
 Gets a chart based on its position in the collection.
 ## Permissions
@@ -20,7 +23,6 @@ One of the following permissions is required to call this API. To learn more, in
 
 ## HTTP request
 
-# [HTTP](#tab/http)
 <!-- { "blockType": "ignored" } -->
 ```http
 POST /workbook/worksheets/{id|name}/charts/itemAt
@@ -47,6 +49,8 @@ If successful, this method returns `200 OK` response code and [WorkbookChart](..
 Here is an example of how to call this API.
 ##### Request
 Here is an example of the request.
+
+# [HTTP](#tab/http)
 <!--{
   "blockType": "request",
   "isComposable": true,
@@ -63,7 +67,7 @@ Content-length: 20
   "index": 8
 }
 ```
-# [Javascript](#tab/javascript)
+# [JavaScript](#tab/javascript)
 [!INCLUDE [sample-code](../includes/snippets/javascript/chartcollection-itemat-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 

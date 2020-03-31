@@ -4,9 +4,12 @@ description: "Retrieve a list of sectionGroup objects."
 author: "jewan-microsoft"
 localization_priority: Normal
 ms.prod: "onenote"
+doc_type: apiPageType
 ---
 
 # List sectionGroups
+
+Namespace: microsoft.graph
 
 Retrieve a list of [sectionGroup](../resources/sectiongroup.md) objects.
 ## Permissions
@@ -54,14 +57,14 @@ Here is an example of the request.
   "blockType": "request",
   "name": "onenote_get_sectiongroups"
 }-->
-```http
+```msgraph-interactive
 GET https://graph.microsoft.com/v1.0/me/onenote/sectionGroups
 ```
 # [C#](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/onenote-get-sectiongroups-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# [Javascript](#tab/javascript)
+# [JavaScript](#tab/javascript)
 [!INCLUDE [sample-code](../includes/snippets/javascript/onenote-get-sectiongroups-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 

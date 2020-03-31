@@ -4,9 +4,12 @@ description: "Use this API to create a new mailSearchFolder in the specified use
 localization_priority: Normal
 author: "angelgolfer-ms"
 ms.prod: "outlook"
+doc_type: apiPageType
 ---
 
 # Create mailSearchFolder
+
+Namespace: microsoft.graph
 
 Create a new [mailSearchFolder](../resources/mailsearchfolder.md) in the specified user's mailbox.
 
@@ -84,7 +87,7 @@ Content-length: 159
 [!INCLUDE [sample-code](../includes/snippets/csharp/create-mailsearchfolder-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# [Javascript](#tab/javascript)
+# [JavaScript](#tab/javascript)
 [!INCLUDE [sample-code](../includes/snippets/javascript/create-mailsearchfolder-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
@@ -123,7 +126,6 @@ Content-type: application/json
     "childFolderCount": 0,
     "unreadItemCount": 0,
     "totalItemCount": 0,
-    "wellKnownName": null,
     "isSupported": true,
     "includeNestedFolders": true,
     "sourceFolderIds": [
@@ -144,7 +146,7 @@ Content-type: application/json
   "section": "documentation",
   "tocPath": "",
   "suppressions": [
-  
+
   ]
 }
 -->

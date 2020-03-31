@@ -19,6 +19,6 @@ const workbookRangeFormat = {
 };
 
 let res = await client.api('/me/drive/items/{id}/workbook/worksheets/Sheet1/range(address='$B$1')/format')
-	.update({workbookRangeFormat : workbookRangeFormat});
+	.update(workbookRangeFormat);
 
 ```

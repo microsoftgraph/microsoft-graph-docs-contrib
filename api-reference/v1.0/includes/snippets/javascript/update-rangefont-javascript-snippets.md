@@ -20,6 +20,6 @@ const workbookRangeFont = {
 };
 
 let res = await client.api('/me/drive/items/{id}/workbook/names/{name}/range/format/font')
-	.update({workbookRangeFont : workbookRangeFont});
+	.update(workbookRangeFont);
 
 ```

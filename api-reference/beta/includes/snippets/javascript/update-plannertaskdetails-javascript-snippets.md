@@ -41,6 +41,6 @@ const plannerTaskDetails = {
 
 let res = await client.api('/planner/tasks/gcrYAaAkgU2EQUvpkNNXLGQAGTtu/details')
 	.version('beta')
-	.update({plannerTaskDetails : plannerTaskDetails});
+	.update(plannerTaskDetails);
 
 ```

@@ -8,9 +8,9 @@ GraphServiceClient graphClient = new GraphServiceClient( authProvider );
 
 var appRoleAssignment = new AppRoleAssignment
 {
-	CreationTimestamp = "2016-10-19T10:37:00Z",
+	CreationTimestamp = DateTimeOffset.Parse("2016-10-19T10:37:00Z"),
 	PrincipalDisplayName = "principalDisplayName-value",
-	PrincipalId = "principalId-value",
+	PrincipalId = Guid.Parse("principalId-value"),
 	PrincipalType = "principalType-value",
 	ResourceDisplayName = "resourceDisplayName-value"
 };

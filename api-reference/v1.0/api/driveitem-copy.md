@@ -5,8 +5,12 @@ ms.date: 09/10/2017
 title: Copy a file or folder
 localization_priority: Normal
 ms.prod: "sharepoint"
+description: "Asynchronously creates a copy of an driveItem (including any children), under a new parent item or with a new name."
+doc_type: apiPageType
 ---
 # Copy a DriveItem
+
+Namespace: microsoft.graph
 
 Asynchronously creates a copy of an [driveItem][item-resource] (including any children), under a new parent item or with a new name.
 
@@ -69,7 +73,7 @@ Content-Type: application/json
 [!INCLUDE [sample-code](../includes/snippets/csharp/copy-item-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# [Javascript](#tab/javascript)
+# [JavaScript](#tab/javascript)
 [!INCLUDE [sample-code](../includes/snippets/javascript/copy-item-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 

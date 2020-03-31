@@ -4,8 +4,13 @@ ms.author: JeremyKelley
 ms.date: 09/10/2017
 title: Remove access to an item
 localization_priority: Normal
+description: "Remove access to a DriveItem."
+ms.prod: ""
+doc_type: apiPageType
 ---
 # Delete a sharing permission from a file or folder
+
+Namespace: microsoft.graph
 
 Remove access to a [DriveItem](../resources/driveitem.md).
 
@@ -59,7 +64,7 @@ DELETE /me/drive/items/{item-id}/permissions/{perm-id}
 [!INCLUDE [sample-code](../includes/snippets/csharp/delete-permission-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# [Javascript](#tab/javascript)
+# [JavaScript](#tab/javascript)
 [!INCLUDE [sample-code](../includes/snippets/javascript/delete-permission-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 

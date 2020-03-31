@@ -4,9 +4,12 @@ description: "Clear range values, format, fill, border, etc."
 localization_priority: Normal
 author: "lumine2008"
 ms.prod: "excel"
+doc_type: apiPageType
 ---
 
 # Range: clear
+
+Namespace: microsoft.graph
 
 Clear range values, format, fill, border, etc.
 ## Permissions
@@ -66,7 +69,7 @@ Content-length: 32
 [!INCLUDE [sample-code](../includes/snippets/csharp/range-clear-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# [Javascript](#tab/javascript)
+# [JavaScript](#tab/javascript)
 [!INCLUDE [sample-code](../includes/snippets/javascript/range-clear-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 

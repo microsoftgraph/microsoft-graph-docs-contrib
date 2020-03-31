@@ -4,10 +4,12 @@ description: "Retrieve a specific commercial subscription that an organization h
 localization_priority: Normal
 author: "davidmu1"
 ms.prod: "microsoft-identity-platform"
-doc_type: "apiPageType"
+doc_type: apiPageType
 ---
 
 # Get subscribedSku
+
+Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
@@ -51,23 +53,19 @@ Here is an example of the request.
   "blockType": "request",
   "name": "get_subscribedsku"
 }-->
-```http
+```msgraph-interactive
 GET https://graph.microsoft.com/beta/subscribedSkus/{id}
 ```
 # [C#](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/get-subscribedsku-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# [Javascript](#tab/javascript)
+# [JavaScript](#tab/javascript)
 [!INCLUDE [sample-code](../includes/snippets/javascript/get-subscribedsku-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Objective-C](#tab/objc)
 [!INCLUDE [sample-code](../includes/snippets/objc/get-subscribedsku-objc-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [Java](#tab/java)
-[!INCLUDE [sample-code](../includes/snippets/java/get-subscribedsku-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

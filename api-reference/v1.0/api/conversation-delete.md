@@ -4,9 +4,12 @@ description: "Delete conversation."
 author: "dkershaw10"
 localization_priority: Normal
 ms.prod: "groups"
+doc_type: apiPageType
 ---
 
 # Delete conversation
+
+Namespace: microsoft.graph
 
 Delete conversation.
 ## Permissions
@@ -51,7 +54,7 @@ DELETE https://graph.microsoft.com/v1.0/groups/{id}/conversations/{id}
 [!INCLUDE [sample-code](../includes/snippets/csharp/delete-conversation-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# [Javascript](#tab/javascript)
+# [JavaScript](#tab/javascript)
 [!INCLUDE [sample-code](../includes/snippets/javascript/delete-conversation-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 

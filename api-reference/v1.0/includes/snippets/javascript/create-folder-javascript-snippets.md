@@ -17,6 +17,6 @@ const driveItem = {
 };
 
 let res = await client.api('/me/drive/root/children')
-	.post({driveItem : driveItem});
+	.post(driveItem);
 
 ```

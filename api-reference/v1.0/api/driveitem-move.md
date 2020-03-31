@@ -5,8 +5,12 @@ ms.date: 09/10/2017
 title: Move a file or folder
 localization_priority: Normal
 ms.prod: "sharepoint"
+description: "To move a DriveItem to a new parent item, your app requests to update the parentReference of the DriveItem to move."
+doc_type: apiPageType
 ---
 # Move a DriveItem to a new folder
+
+Namespace: microsoft.graph
 
 To move a DriveItem to a new parent item, your app requests to update the **parentReference** of the DriveItem to move.
 
@@ -78,7 +82,7 @@ Content-type: application/json
 [!INCLUDE [sample-code](../includes/snippets/csharp/move-item-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# [Javascript](#tab/javascript)
+# [JavaScript](#tab/javascript)
 [!INCLUDE [sample-code](../includes/snippets/javascript/move-item-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 

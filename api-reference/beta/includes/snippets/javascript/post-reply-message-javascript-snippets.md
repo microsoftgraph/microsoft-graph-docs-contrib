@@ -19,6 +19,6 @@ const chatMessage = {
 
 let res = await client.api('/teams/{id}/channels/{id}/messages/{id}/replies')
 	.version('beta')
-	.post({chatMessage : chatMessage});
+	.post(chatMessage);
 
 ```

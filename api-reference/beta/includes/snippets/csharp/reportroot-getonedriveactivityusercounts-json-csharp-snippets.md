@@ -7,7 +7,7 @@ description: "Automatically generated file. DO NOT MODIFY"
 GraphServiceClient graphClient = new GraphServiceClient( authProvider );
 
 var getOneDriveActivityUserCounts = await graphClient.Reports
-	.GetOneDriveActivityUserCounts('D7')
+	.GetOneDriveActivityUserCounts("D7")
 	.Request()
 	.GetAsync();
 

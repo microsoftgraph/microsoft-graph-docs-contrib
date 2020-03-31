@@ -4,9 +4,12 @@ description: "Get the list of devices that are owned by the user."
 author: "dkershaw10"
 localization_priority: Normal
 ms.prod: "microsoft-identity-platform"
+doc_type: apiPageType
 ---
 
 # List ownedDevices
+
+Namespace: microsoft.graph
 
 Get the list of devices that are owned by the user.
 ## Permissions
@@ -17,6 +20,8 @@ One of the following permissions is required to call this API. To learn more, in
 |Delegated (work or school account) | Directory.Read.All, Directory.ReadWrite.All, Directory.AccessAsUser.All    |
 |Delegated (personal Microsoft account) | Not supported.    |
 |Application | Directory.Read.All, Directory.ReadWrite.All |
+
+[!INCLUDE [limited-info](../../includes/limited-info.md)]
 
 ## HTTP request
 <!-- { "blockType": "ignored" } -->
@@ -46,14 +51,14 @@ Here is an example of the request.
   "blockType": "request",
   "name": "get_owneddevices"
 }-->
-```http
+```msgraph-interactive
 GET https://graph.microsoft.com/v1.0/me/ownedDevices
 ```
 # [C#](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/get-owneddevices-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# [Javascript](#tab/javascript)
+# [JavaScript](#tab/javascript)
 [!INCLUDE [sample-code](../includes/snippets/javascript/get-owneddevices-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 

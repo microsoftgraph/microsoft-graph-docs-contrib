@@ -4,9 +4,12 @@ description: "Create a new contactFolder under the user's default contacts folde
 localization_priority: Normal
 author: "dkershaw10"
 ms.prod: "microsoft-identity-platform"
+doc_type: apiPageType
 ---
 
 # Create ContactFolder
+
+Namespace: microsoft.graph
 
 Create a new contactFolder under the user's default contacts folder.
 
@@ -62,7 +65,7 @@ Content-length: 84
 [!INCLUDE [sample-code](../includes/snippets/csharp/create-contactfolder-from-user-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# [Javascript](#tab/javascript)
+# [JavaScript](#tab/javascript)
 [!INCLUDE [sample-code](../includes/snippets/javascript/create-contactfolder-from-user-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 

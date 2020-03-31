@@ -4,9 +4,12 @@ description: "Reply to all recipients of a message. The message is then saved in
 author: "angelgolfer-ms"
 localization_priority: Normal
 ms.prod: "outlook"
+doc_type: apiPageType
 ---
 
 # message: replyAll
+
+Namespace: microsoft.graph
 
 Reply to all recipients of a message. The message is then saved in the Sent Items folder.
 
@@ -67,7 +70,7 @@ Content-length: 32
 [!INCLUDE [sample-code](../includes/snippets/csharp/message-replyall-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# [Javascript](#tab/javascript)
+# [JavaScript](#tab/javascript)
 [!INCLUDE [sample-code](../includes/snippets/javascript/message-replyall-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 

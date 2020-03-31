@@ -4,9 +4,12 @@ description: "The **plannerPlanContext** resource represents the relationship of
 localization_priority: Normal
 author: "TarkanSevilmis"
 ms.prod: "planner"
+doc_type: resourcePageType
 ---
 
 # plannerPlanContext resource type
+
+Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 

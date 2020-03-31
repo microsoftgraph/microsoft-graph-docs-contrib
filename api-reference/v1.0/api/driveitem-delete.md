@@ -5,8 +5,12 @@ ms.date: 09/10/2017
 title: Delete a file or folder
 localization_priority: Normal
 ms.prod: "sharepoint"
+description: "Delete a DriveItem by using its ID or path."
+doc_type: apiPageType
 ---
 # Delete a DriveItem
+
+Namespace: microsoft.graph
 
 Delete a [DriveItem](../resources/driveitem.md) by using its ID or path.
 Note that deleting items using this method will move the items to the recycle bin instead of permanently deleting the item.
@@ -54,7 +58,7 @@ DELETE /me/drive/items/{item-id}
 [!INCLUDE [sample-code](../includes/snippets/csharp/delete-drive-item-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# [Javascript](#tab/javascript)
+# [JavaScript](#tab/javascript)
 [!INCLUDE [sample-code](../includes/snippets/javascript/delete-drive-item-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 

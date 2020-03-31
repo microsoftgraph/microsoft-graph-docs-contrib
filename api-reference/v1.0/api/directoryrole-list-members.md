@@ -4,9 +4,12 @@ description: "Retrieve a list of the users that are assigned to the directory ro
 author: "davidmu1"
 localization_priority: Normal
 ms.prod: "microsoft-identity-platform"
+doc_type: apiPageType
 ---
 
 # List members
+
+Namespace: microsoft.graph
 
 Retrieve a list of the users that are assigned to the directory role.  Only users can be assigned to a directory role.
 ## Permissions
@@ -15,9 +18,11 @@ One of the following permissions is required to call this API. To learn more, in
 
 |Permission type      | Permissions (from least to most privileged)              |
 |:--------------------|:---------------------------------------------------------|
-|Delegated (work or school account) | Directory.Read.All, Directory.ReadWrite.All, Directory.AccessAsUser.All    |
+|Delegated (work or school account) | RoleManagement.Read.Directory, Directory.Read.All, RoleManagement.ReadWrite.Directory, Directory.ReadWrite.All, Directory.AccessAsUser.All    |
 |Delegated (personal Microsoft account) | Not supported.    |
-|Application | Directory.Read.All, Directory.ReadWrite.All |
+|Application | RoleManagement.Read.Directory, Directory.Read.All, RoleManagement.ReadWrite.Directory, Directory.ReadWrite.All |
+
+[!INCLUDE [limited-info](../../includes/limited-info.md)]
 
 ## HTTP request
 <!-- { "blockType": "ignored" } -->
@@ -44,25 +49,25 @@ If successful, this method returns a `200 OK` response code and collection of [d
 # [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
-  "name": "get_members"
+  "name": "get_directoryrole_members"
 }-->
-```http
+```msgraph-interactive
 GET https://graph.microsoft.com/v1.0/directoryRoles/{id}/members
 ```
 # [C#](#tab/csharp)
-[!INCLUDE [sample-code](../includes/snippets/csharp/get-members-csharp-snippets.md)]
+[!INCLUDE [sample-code](../includes/snippets/csharp/get-directoryrole-members-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# [Javascript](#tab/javascript)
-[!INCLUDE [sample-code](../includes/snippets/javascript/get-members-javascript-snippets.md)]
+# [JavaScript](#tab/javascript)
+[!INCLUDE [sample-code](../includes/snippets/javascript/get-directoryrole-members-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Objective-C](#tab/objc)
-[!INCLUDE [sample-code](../includes/snippets/objc/get-members-objc-snippets.md)]
+[!INCLUDE [sample-code](../includes/snippets/objc/get-directoryrole-members-objc-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Java](#tab/java)
-[!INCLUDE [sample-code](../includes/snippets/java/get-members-java-snippets.md)]
+[!INCLUDE [sample-code](../includes/snippets/java/get-directoryrole-members-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

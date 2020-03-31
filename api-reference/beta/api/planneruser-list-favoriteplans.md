@@ -4,9 +4,12 @@ description: "Retrieve a list of plannerPlans that are marked as favorite by a u
 author: "TarkanSevilmis"
 localization_priority: Normal
 ms.prod: "planner"
+doc_type: apiPageType
 ---
 
 # List favoritePlans
+
+Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
@@ -25,7 +28,7 @@ One of the following permissions is required to call this API. To learn more, in
 <!-- { "blockType": "ignored" } -->
 ```http
 GET /me/planner/favoritePlans
-GET /users/<id>/planner/favoritePlans
+GET /users/{id}/planner/favoritePlans
 ```
 ## Optional query parameters
 This method supports the [OData Query Parameters](https://developer.microsoft.com/graph/docs/concepts/query_parameters) to help customize the response.
@@ -48,23 +51,19 @@ The following is an example of the request.
   "blockType": "request",
   "name": "get_favoriteplans"
 }-->
-```http
+```msgraph-interactive
 GET https://graph.microsoft.com/beta/me/planner/favoritePlans
 ```
 # [C#](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/get-favoriteplans-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# [Javascript](#tab/javascript)
+# [JavaScript](#tab/javascript)
 [!INCLUDE [sample-code](../includes/snippets/javascript/get-favoriteplans-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Objective-C](#tab/objc)
 [!INCLUDE [sample-code](../includes/snippets/objc/get-favoriteplans-objc-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [Java](#tab/java)
-[!INCLUDE [sample-code](../includes/snippets/java/get-favoriteplans-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

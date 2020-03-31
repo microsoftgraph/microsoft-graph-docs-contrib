@@ -20,6 +20,6 @@ const appRoleAssignment = {
 
 let res = await client.api('/appRoleAssignments/{id}')
 	.version('beta')
-	.update({appRoleAssignment : appRoleAssignment});
+	.update(appRoleAssignment);
 
 ```

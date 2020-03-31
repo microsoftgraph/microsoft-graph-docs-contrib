@@ -15,6 +15,6 @@ const calendar = {
 };
 
 let res = await client.api('/me/calendar')
-	.update({calendar : calendar});
+	.update(calendar);
 
 ```

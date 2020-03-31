@@ -4,9 +4,12 @@ description: "Retrieve the properties and relationships of **plannertask** objec
 localization_priority: Normal
 author: "TarkanSevilmis"
 ms.prod: "planner"
+doc_type: apiPageType
 ---
 
 # Get plannerTask
+
+Namespace: microsoft.graph
 
 Retrieve the properties and relationships of **plannertask** object.
 ## Permissions
@@ -47,14 +50,14 @@ Here is an example of the request.
   "blockType": "request",
   "name": "get_plannertask"
 }-->
-```http
+```msgraph-interactive
 GET https://graph.microsoft.com/v1.0/planner/tasks/{task-id}
 ```
 # [C#](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/get-plannertask-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# [Javascript](#tab/javascript)
+# [JavaScript](#tab/javascript)
 [!INCLUDE [sample-code](../includes/snippets/javascript/get-plannertask-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 

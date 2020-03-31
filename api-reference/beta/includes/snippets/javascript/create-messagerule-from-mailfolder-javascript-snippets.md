@@ -34,6 +34,6 @@ const messageRule = {
 
 let res = await client.api('/me/mailFolders/inbox/messagerules')
 	.version('beta')
-	.post({messageRule : messageRule});
+	.post(messageRule);
 
 ```

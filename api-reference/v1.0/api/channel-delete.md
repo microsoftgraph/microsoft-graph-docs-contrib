@@ -1,22 +1,22 @@
 ---
 title: "Delete channel"
 description: "Delete the channel."
-author: "nkramer"
+author: "clearab"
 localization_priority: Normal
 ms.prod: "microsoft-teams"
+doc_type: apiPageType
 ---
 
 # Delete channel
 
-
+Namespace: microsoft.graph
 
 Delete the [channel](../resources/channel.md).
-
-> **Note**: There is a known issue with application permissions and this API. For details, see the [known issues list](/graph/known-issues#application-permissions).
 
 > **Note**: The data in deleted channels will continue to be stored for several weeks to allow team owner to recovery deleted channel. During that time, a new channel with the same displayName may not be created.
 
 ## Permissions
+
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
 
 |Permission type      | Permissions (from least to most privileged)              |
@@ -32,19 +32,25 @@ One of the following permissions is required to call this API. To learn more, in
 ```http
 DELETE /teams/{id}/channels/{id}
 ```
+
 ## Request headers
+
 | Header       | Value |
 |:---------------|:--------|
 | Authorization  | Bearer {token}. Required.  |
 
 ## Request body
+
 Do not supply a request body for this method.
 
 ## Response
 
 If successful, this method returns `204 No Content` response code. It does not return anything in the response body.
+
 ## Example
-##### Request
+
+### Request
+
 The following is an example of the request.
 
 # [HTTP](#tab/http)
@@ -54,13 +60,13 @@ The following is an example of the request.
 }-->
 
 ```http
-DELETE https://graph.microsoft.com/beta/teams/{id}/channels/{id}
+DELETE https://graph.microsoft.com/v1.0/teams/{id}/channels/{id}
 ```
 # [C#](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/delete-channel-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# [Javascript](#tab/javascript)
+# [JavaScript](#tab/javascript)
 [!INCLUDE [sample-code](../includes/snippets/javascript/delete-channel-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
@@ -74,8 +80,7 @@ DELETE https://graph.microsoft.com/beta/teams/{id}/channels/{id}
 
 ---
 
-
-#### Response
+### Response
 
 The following is an example of the response. 
 <!-- {

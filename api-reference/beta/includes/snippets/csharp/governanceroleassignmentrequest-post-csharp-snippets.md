@@ -17,8 +17,8 @@ var governanceRoleAssignmentRequest = new GovernanceRoleAssignmentRequest
 	Schedule = new GovernanceSchedule
 	{
 		Type = "Once",
-		StartDateTime = "2018-05-12T23:53:55.327Z",
-		EndDateTime = "2018-08-10T23:53:55.327Z"
+		StartDateTime = DateTimeOffset.Parse("2018-05-12T23:53:55.327Z"),
+		EndDateTime = DateTimeOffset.Parse("2018-08-10T23:53:55.327Z")
 	}
 };
 

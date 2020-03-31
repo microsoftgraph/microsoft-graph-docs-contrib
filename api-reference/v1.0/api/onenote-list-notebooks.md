@@ -4,9 +4,12 @@ description: "Retrieve a list of notebook objects."
 author: "jewan-microsoft"
 localization_priority: Priority
 ms.prod: "onenote"
+doc_type: apiPageType
 ---
 
 # List notebooks
+
+Namespace: microsoft.graph
 
 Retrieve a list of [notebook](../resources/notebook.md) objects.
 ## Permissions
@@ -54,14 +57,14 @@ Here is an example of the request.
   "blockType": "request",
   "name": "get_notebooks"
 }-->
-```http
+```msgraph-interactive
 GET https://graph.microsoft.com/v1.0/me/onenote/notebooks
 ```
 # [C#](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/get-notebooks-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# [Javascript](#tab/javascript)
+# [JavaScript](#tab/javascript)
 [!INCLUDE [sample-code](../includes/snippets/javascript/get-notebooks-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 

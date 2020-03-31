@@ -10,7 +10,7 @@ const options = {
 
 const client = Client.init(options);
 
-const directoryObject = {
+const validateProperties = {
   entityType: "Group",
   displayName: "Myprefix_test_mysuffix",
   mailNickname: "Myprefix_test_mysuffix",
@@ -18,6 +18,6 @@ const directoryObject = {
 };
 
 let res = await client.api('/directoryObjects/validateProperties')
-	.post({directoryObject : directoryObject});
+	.post(validateProperties);
 
 ```

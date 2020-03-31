@@ -4,9 +4,12 @@ description: "The **licenseAssignmentStates** property of the user entity is a c
 author: "dkershaw10"
 localization_priority: Normal
 ms.prod: "groups"
+doc_type: resourcePageType
 ---
 
 # licenseAssignmentState resource type
+
+Namespace: microsoft.graph
 
 
 The **licenseAssignmentStates** property of the [user](user.md) entity is a collection of **licenseAssignmentState** objects. It provides details about license assignments to a user. The details include information such as:  

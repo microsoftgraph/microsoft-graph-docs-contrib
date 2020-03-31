@@ -4,9 +4,12 @@ description: "Refreshes the PivotTable within a given worksheet."
 author: "lumine2008"
 localization_priority: Normal
 ms.prod: "excel"
+doc_type: apiPageType
 ---
 
 # workbookPivotTable: refreshAll
+
+Namespace: microsoft.graph
 
 Refreshes the PivotTable within a given worksheet.
 
@@ -53,7 +56,7 @@ POST https://graph.microsoft.com/v1.0/me/drive/root/workbook/worksheets/{id}/piv
 [!INCLUDE [sample-code](../includes/snippets/csharp/workbookpivottable-refreshall-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# [Javascript](#tab/javascript)
+# [JavaScript](#tab/javascript)
 [!INCLUDE [sample-code](../includes/snippets/javascript/workbookpivottable-refreshall-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 

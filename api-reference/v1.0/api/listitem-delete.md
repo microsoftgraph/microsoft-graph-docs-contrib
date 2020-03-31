@@ -5,8 +5,12 @@ ms.date: 09/11/2017
 title: Delete an entry from a SharePoint list
 localization_priority: Normal
 ms.prod: "sharepoint"
+description: "Removes an item from a list."
+doc_type: apiPageType
 ---
 # Delete an item from a list
+
+Namespace: microsoft.graph
 
 Removes an item from a [list][].
 
@@ -55,7 +59,7 @@ DELETE https://graph.microsoft.com/v1.0/sites/{site-id}/lists/{list-id}/items/{i
 [!INCLUDE [sample-code](../includes/snippets/csharp/delete-item-site-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# [Javascript](#tab/javascript)
+# [JavaScript](#tab/javascript)
 [!INCLUDE [sample-code](../includes/snippets/javascript/delete-item-site-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 

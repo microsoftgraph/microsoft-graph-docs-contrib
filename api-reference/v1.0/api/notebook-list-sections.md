@@ -4,9 +4,12 @@ description: "Retrieve a list of onenoteSection objects from the specified noteb
 author: "jewan-microsoft"
 localization_priority: Normal
 ms.prod: "onenote"
+doc_type: apiPageType
 ---
 
 # List sections
+
+Namespace: microsoft.graph
 
 Retrieve a list of [onenoteSection](../resources/section.md) objects from the specified notebook.
 ## Permissions
@@ -55,14 +58,14 @@ Here is an example of the request.
   "blockType": "request",
   "name": "notebook_get_sections"
 }-->
-```http
+```msgraph-interactive
 GET https://graph.microsoft.com/v1.0/me/onenote/notebooks/{id}/sections
 ```
 # [C#](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/notebook-get-sections-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# [Javascript](#tab/javascript)
+# [JavaScript](#tab/javascript)
 [!INCLUDE [sample-code](../includes/snippets/javascript/notebook-get-sections-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 

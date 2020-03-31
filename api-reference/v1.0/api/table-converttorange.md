@@ -4,9 +4,12 @@ description: "Converts the table into a normal range of cells. All data is prese
 author: "lumine2008"
 localization_priority: Normal
 ms.prod: "excel"
+doc_type: apiPageType
 ---
 
 # Table: convertToRange
+
+Namespace: microsoft.graph
 
 Converts the table into a normal range of cells. All data is preserved.
 ## Permissions
@@ -54,7 +57,7 @@ POST https://graph.microsoft.com/v1.0/me/drive/items/{id}/workbook/tables/{id|na
 [!INCLUDE [sample-code](../includes/snippets/csharp/table-converttorange-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# [Javascript](#tab/javascript)
+# [JavaScript](#tab/javascript)
 [!INCLUDE [sample-code](../includes/snippets/javascript/table-converttorange-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 

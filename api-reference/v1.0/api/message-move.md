@@ -4,11 +4,14 @@ description: "Move a message to a folder. This creates a new copy of the message
 author: "angelgolfer-ms"
 localization_priority: Priority
 ms.prod: "outlook"
+doc_type: apiPageType
 ---
 
 # message: move
 
-Move a message to a folder. This creates a new copy of the message in the destination folder and removes the original message.
+Namespace: microsoft.graph
+
+Move a message to another folder within the specified user's mailbox. This creates a new copy of the message in the destination folder and removes the original message.
 
 ## Permissions
 
@@ -77,7 +80,7 @@ Content-type: application/json
 [!INCLUDE [sample-code](../includes/snippets/csharp/message-move-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# [Javascript](#tab/javascript)
+# [JavaScript](#tab/javascript)
 [!INCLUDE [sample-code](../includes/snippets/javascript/message-move-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 

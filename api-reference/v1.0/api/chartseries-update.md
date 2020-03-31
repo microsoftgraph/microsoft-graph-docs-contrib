@@ -4,9 +4,12 @@ description: "Update the properties of chartseries object."
 author: "lumine2008"
 localization_priority: Normal
 ms.prod: "excel"
+doc_type: apiPageType
 ---
 
 # Update chartseries
+
+Namespace: microsoft.graph
 
 Update the properties of chartseries object.
 ## Permissions
@@ -61,7 +64,7 @@ Content-length: 26
 [!INCLUDE [sample-code](../includes/snippets/csharp/update-chartseries-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# [Javascript](#tab/javascript)
+# [JavaScript](#tab/javascript)
 [!INCLUDE [sample-code](../includes/snippets/javascript/update-chartseries-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 

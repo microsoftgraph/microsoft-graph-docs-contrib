@@ -1,11 +1,15 @@
 ---
 author: JeremyKelley
-ms.author: JeremyKelley
+description: "Remove access to a DriveItem."
 ms.date: 09/10/2017
 title: Remove access to an item
 localization_priority: Normal
+doc_type: apiPageType
+ms.prod: ""
 ---
 # Delete a sharing permission from a file or folder
+
+Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
@@ -60,16 +64,12 @@ DELETE https://graph.microsoft.com/beta/me/drive/root/items/{item-id}/permission
 [!INCLUDE [sample-code](../includes/snippets/csharp/delete-permission-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# [Javascript](#tab/javascript)
+# [JavaScript](#tab/javascript)
 [!INCLUDE [sample-code](../includes/snippets/javascript/delete-permission-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Objective-C](#tab/objc)
 [!INCLUDE [sample-code](../includes/snippets/objc/delete-permission-objc-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [Java](#tab/java)
-[!INCLUDE [sample-code](../includes/snippets/java/delete-permission-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

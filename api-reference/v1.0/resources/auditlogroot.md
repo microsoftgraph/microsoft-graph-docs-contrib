@@ -4,9 +4,12 @@ description: "Contains different types of audit logs. This resources returns a s
 author: "dhanyahk"
 localization_priority: Normal
 ms.prod: "microsoft-identity-platform"
+doc_type: resourcePageType
 ---
 
 # auditLogRoot resource type
+
+Namespace: microsoft.graph
 
 Contains different types of audit logs. This resources returns a singleton auditLog resource. It doesn't contain any usable properties.
 
@@ -54,14 +57,14 @@ Here is a JSON representation of the resource.
   "blockType": "request",
   "name": "get_auditLogs"
 }-->
-```http
+```msgraph-interactive
 GET https://graph.microsoft.com/v1.0/auditLogs
 ```
 # [C#](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/get-auditlogs-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# [Javascript](#tab/javascript)
+# [JavaScript](#tab/javascript)
 [!INCLUDE [sample-code](../includes/snippets/javascript/get-auditlogs-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 

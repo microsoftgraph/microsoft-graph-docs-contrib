@@ -10,15 +10,15 @@ const options = {
 
 const client = Client.init(options);
 
-const CommsOperation = {
+const muteParticipantsOperation = {
   participants: [
     ""
   ],
   clientContext: "clientContext-value"
 };
 
-let res = await client.api('/app/calls/{id}/participants/muteAll')
+let res = await client.api('/communications/calls/{id}/participants/muteAll')
 	.version('beta')
-	.post(CommsOperation);
+	.post(muteParticipantsOperation);
 
 ```

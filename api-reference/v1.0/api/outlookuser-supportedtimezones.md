@@ -4,9 +4,12 @@ description: "Get the list of time zones that are supported for the user, as con
 localization_priority: Normal
 author: "angelgolfer-ms"
 ms.prod: "outlook"
+doc_type: apiPageType
 ---
 
 # outlookUser: supportedTimeZones
+
+Namespace: microsoft.graph
 
 Get the list of time zones that are supported for the user, as configured on the user's mailbox server.
 
@@ -61,14 +64,14 @@ The following example does not specify the `timeZoneStandard` parameter, and get
   "blockType": "request",
   "name": "user_supportedtimezones_default"
 }-->
-```http
+```msgraph-interactive
 GET https://graph.microsoft.com/v1.0/me/outlook/supportedTimeZones
 ```
 # [C#](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/user-supportedtimezones-default-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# [Javascript](#tab/javascript)
+# [JavaScript](#tab/javascript)
 [!INCLUDE [sample-code](../includes/snippets/javascript/user-supportedtimezones-default-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
@@ -129,14 +132,14 @@ The following example specifies `Iana` for the `TimeZoneStandard` parameter, and
   "name": "user_supportedtimezones_iana"
 } -->
 
-```http
+```msgraph-interactive
 GET https://graph.microsoft.com/v1.0/me/outlook/supportedTimeZones(TimeZoneStandard=microsoft.graph.timeZoneStandard'Iana')
 ```
 # [C#](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/user-supportedtimezones-iana-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# [Javascript](#tab/javascript)
+# [JavaScript](#tab/javascript)
 [!INCLUDE [sample-code](../includes/snippets/javascript/user-supportedtimezones-iana-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 

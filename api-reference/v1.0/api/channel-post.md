@@ -4,9 +4,12 @@ description: "Create a new channel in a Microsoft Team, as specified in the requ
 localization_priority: Priority
 author: "nkramer"
 ms.prod: "microsoft-teams"
+doc_type: apiPageType
 ---
 
 # Create Channel
+
+Namespace: microsoft.graph
 
 
 
@@ -66,7 +69,7 @@ Content-type: application/json
 [!INCLUDE [sample-code](../includes/snippets/csharp/create-channel-from-group-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# [Javascript](#tab/javascript)
+# [JavaScript](#tab/javascript)
 [!INCLUDE [sample-code](../includes/snippets/javascript/create-channel-from-group-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 

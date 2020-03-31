@@ -29,6 +29,6 @@ const group = {
 };
 
 let res = await client.api('/groups')
-	.post({group : group});
+	.post(group);
 
 ```

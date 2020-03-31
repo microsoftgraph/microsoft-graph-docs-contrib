@@ -2,9 +2,14 @@
 title: "List NamedItemCollection"
 description: "Retrieve a list of nameditem objects."
 localization_priority: Normal
+author: ""
+ms.prod: ""
+doc_type: apiPageType
 ---
 
 # List NamedItemCollection
+
+Namespace: microsoft.graph
 
 Retrieve a list of nameditem objects.
 ## Permissions
@@ -45,14 +50,14 @@ Here is an example of the request.
   "blockType": "request",
   "name": "get_nameditemcollection"
 }-->
-```http
+```msgraph-interactive
 GET https://graph.microsoft.com/v1.0/me/drive/items/{id}/workbook/names
 ```
 # [C#](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/get-nameditemcollection-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# [Javascript](#tab/javascript)
+# [JavaScript](#tab/javascript)
 [!INCLUDE [sample-code](../includes/snippets/javascript/get-nameditemcollection-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 

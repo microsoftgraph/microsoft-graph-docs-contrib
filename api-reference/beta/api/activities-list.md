@@ -3,9 +3,14 @@ author: daspek
 ms.author: dspektor
 ms.date: 09/10/2017
 title: File Activities
+description: "List the recent activities that took place on an item or under a hierarchy."
 localization_priority: Normal
+doc_type: apiPageType
+ms.prod: ""
 ---
 # Enumerate activities (preview)
+
+Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
@@ -44,23 +49,19 @@ GET /sites/{site-id}/lists/{list-id}/items/{item-id}/activities
 # [HTTP](#tab/http)
 <!-- { "blockType": "request", "name": "list-activities" } -->
 
-```http
+```msgraph-interactive
 GET https://graph.microsoft.com/beta/me/drive/activities
 ```
 # [C#](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/list-activities-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# [Javascript](#tab/javascript)
+# [JavaScript](#tab/javascript)
 [!INCLUDE [sample-code](../includes/snippets/javascript/list-activities-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Objective-C](#tab/objc)
 [!INCLUDE [sample-code](../includes/snippets/objc/list-activities-objc-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [Java](#tab/java)
-[!INCLUDE [sample-code](../includes/snippets/java/list-activities-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

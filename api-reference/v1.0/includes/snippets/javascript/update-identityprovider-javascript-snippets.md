@@ -15,6 +15,6 @@ const identityProvider = {
 };
 
 let res = await client.api('/identityProviders/Amazon-OAuth')
-	.update({identityProvider : identityProvider});
+	.update(identityProvider);
 
 ```

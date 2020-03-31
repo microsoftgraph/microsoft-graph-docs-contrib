@@ -16,6 +16,6 @@ const mailFolder = {
 };
 
 let res = await client.api('/me/mailFolders/AAMkAGVmMDEzM')
-	.update({mailFolder : mailFolder});
+	.update(mailFolder);
 
 ```

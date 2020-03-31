@@ -4,9 +4,12 @@ description: "Clears the sorting that is currently on the table. While this does
 localization_priority: Normal
 author: "lumine2008"
 ms.prod: "excel"
+doc_type: apiPageType
 ---
 
 # TableSort: clear
+
+Namespace: microsoft.graph
 
 Clears the sorting that is currently on the table. While this doesn't modify the table's ordering, it clears the state of the header buttons.
 ## Permissions
@@ -54,7 +57,7 @@ POST https://graph.microsoft.com/v1.0/me/drive/items/{id}/workbook/tables/{id|na
 [!INCLUDE [sample-code](../includes/snippets/csharp/tablesort-clear-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# [Javascript](#tab/javascript)
+# [JavaScript](#tab/javascript)
 [!INCLUDE [sample-code](../includes/snippets/javascript/tablesort-clear-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 

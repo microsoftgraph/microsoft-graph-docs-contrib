@@ -1,11 +1,15 @@
 ---
 author: daspek
-ms.author: dspektor
+description: "Get itemAnalytics about the views that took place under this resource."
 ms.date: 10/06/2017
 title: Get analytics
 localization_priority: Normal
+doc_type: apiPageType
+ms.prod: ""
 ---
 # Get analytics
+
+Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
@@ -46,23 +50,19 @@ GET /sites/{site-id}/lists/{list-id}/items/{item-id}/analytics
 # [HTTP](#tab/http)
 <!-- { "blockType": "request", "name": "get-analytics" } -->
 
-```http
+```msgraph-interactive
 GET /drives/{drive-id}/items/{item-id}/analytics
 ```
 # [C#](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/get-analytics-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# [Javascript](#tab/javascript)
+# [JavaScript](#tab/javascript)
 [!INCLUDE [sample-code](../includes/snippets/javascript/get-analytics-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Objective-C](#tab/objc)
 [!INCLUDE [sample-code](../includes/snippets/objc/get-analytics-objc-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [Java](#tab/java)
-[!INCLUDE [sample-code](../includes/snippets/java/get-analytics-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

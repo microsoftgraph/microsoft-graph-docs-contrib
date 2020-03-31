@@ -4,9 +4,12 @@ description: "`)"
 author: "TarkanSevilmis"
 localization_priority: Normal
 ms.prod: "planner"
+doc_type: conceptualPageType
 ---
 
 # Using order hints in Planner
+
+Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 

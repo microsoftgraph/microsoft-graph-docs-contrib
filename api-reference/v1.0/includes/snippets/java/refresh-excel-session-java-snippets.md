@@ -10,7 +10,7 @@ LinkedList<Option> requestOptions = new LinkedList<Option>();
 requestOptions.add(new HeaderOption("workbook-session-id", "{session-id}"));
 
 graphClient.me().drive().items("{id}").workbook()
-	.refreshSession(this)
+	.refreshSession()
 	.buildRequest( requestOptions )
 	.post();
 

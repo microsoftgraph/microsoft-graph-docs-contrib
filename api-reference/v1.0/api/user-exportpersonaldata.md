@@ -4,9 +4,12 @@ description: "Submits a data policy operation request, made by a Company Adminis
 localization_priority: Normal
 author: "dkershaw10"
 ms.prod: "microsoft-identity-platform"
+doc_type: apiPageType
 ---
 
 # user: exportPersonalData
+
+Namespace: microsoft.graph
 
 Submit a data policy operation request from a company administrator or an application to export an organizational user's data.
 
@@ -68,7 +71,7 @@ Content-length: 48
 [!INCLUDE [sample-code](../includes/snippets/csharp/user-exportpersonaldata-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# [Javascript](#tab/javascript)
+# [JavaScript](#tab/javascript)
 [!INCLUDE [sample-code](../includes/snippets/javascript/user-exportpersonaldata-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 

@@ -4,9 +4,12 @@ description: "Retrieve a list of **plannerPlan** objects owned by a group object
 localization_priority: Priority
 author: "TarkanSevilmis"
 ms.prod: "planner"
+doc_type: apiPageType
 ---
 
 # List plans
+
+Namespace: microsoft.graph
 
 Retrieve a list of **plannerPlan** objects owned by a [group](../resources/group.md) object.
 ## Permissions
@@ -46,14 +49,14 @@ Here is an example of the request.
   "blockType": "request",
   "name": "get_plans"
 }-->
-```http
+```msgraph-interactive
 GET https://graph.microsoft.com/v1.0/groups/{group-id}/planner/plans
 ```
 # [C#](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/get-plans-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# [Javascript](#tab/javascript)
+# [JavaScript](#tab/javascript)
 [!INCLUDE [sample-code](../includes/snippets/javascript/get-plans-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 

@@ -4,9 +4,12 @@ description: "Describes the delete method of the group resource (entity) of the 
 author: "dkershaw10"
 localization_priority: Normal
 ms.prod: "groups"
+doc_type: apiPageType
 ---
 
 # Delete group
+
+Namespace: microsoft.graph
 
 Delete group.  
 
@@ -61,7 +64,7 @@ DELETE https://graph.microsoft.com/v1.0/groups/{id}
 [!INCLUDE [sample-code](../includes/snippets/csharp/delete-group-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# [Javascript](#tab/javascript)
+# [JavaScript](#tab/javascript)
 [!INCLUDE [sample-code](../includes/snippets/javascript/delete-group-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 

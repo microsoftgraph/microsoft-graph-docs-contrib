@@ -4,9 +4,12 @@ description: "Resets the source data for the chart."
 author: "lumine2008"
 localization_priority: Normal
 ms.prod: "excel"
+doc_type: apiPageType
 ---
 
 # Chart: setData
+
+Namespace: microsoft.graph
 
 Resets the source data for the chart.
 ## Permissions
@@ -66,7 +69,7 @@ Content-length: 70
 [!INCLUDE [sample-code](../includes/snippets/csharp/chart-setdata-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# [Javascript](#tab/javascript)
+# [JavaScript](#tab/javascript)
 [!INCLUDE [sample-code](../includes/snippets/javascript/chart-setdata-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 

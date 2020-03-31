@@ -4,9 +4,12 @@ description: "Suggest meeting times and locations based on organizer and attende
 localization_priority: Priority
 author: "angelgolfer-ms"
 ms.prod: "outlook"
+doc_type: apiPageType
 ---
 
 # user: findMeetingTimes
+
+Namespace: microsoft.graph
 Suggest meeting times and locations based on organizer and attendee availability, and time or location constraints specified as parameters.
 
 If **findMeetingTimes** cannot return any meeting suggestions, the response would indicate a reason in the **emptySuggestionsReason** property. 
@@ -177,7 +180,7 @@ Content-Type: application/json
 [!INCLUDE [sample-code](../includes/snippets/csharp/user-findmeetingtimes-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# [Javascript](#tab/javascript)
+# [JavaScript](#tab/javascript)
 [!INCLUDE [sample-code](../includes/snippets/javascript/user-findmeetingtimes-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 

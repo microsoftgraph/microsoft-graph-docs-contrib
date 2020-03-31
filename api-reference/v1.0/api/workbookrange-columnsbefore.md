@@ -4,9 +4,12 @@ description: "Gets a certain number of columns to the left of the given range."
 author: "lumine2008"
 localization_priority: Normal
 ms.prod: "excel"
+doc_type: apiPageType
 ---
 
 # workbookRange: columnsBefore
+
+Namespace: microsoft.graph
 
 Gets a certain number of columns to the left of the given range.
 
@@ -21,7 +24,6 @@ One of the following permissions is required to call this API. To learn more, in
 
 ## HTTP request
 
-# [HTTP](#tab/http)
 <!-- { "blockType": "ignored" } -->
 ```http
 POST /me/drive/root/workbook/worksheets/{id}/range/columnsBefore(count=n)
@@ -50,6 +52,8 @@ If successful, this method returns `200 OK` response code and [workbookRange](..
 Here is an example of how to call this API.
 ##### Request
 Here is an example of the request.
+
+# [HTTP](#tab/http)
 <!--{
   "blockType": "request",
   "isComposable": true,
@@ -63,7 +67,7 @@ POST https://graph.microsoft.com/v1.0/me/drive/root/workbook/worksheets/{id}/ran
 [!INCLUDE [sample-code](../includes/snippets/csharp/workbookrange-columnsbefore-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# [Javascript](#tab/javascript)
+# [JavaScript](#tab/javascript)
 [!INCLUDE [sample-code](../includes/snippets/javascript/workbookrange-columnsbefore-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 

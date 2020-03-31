@@ -16,6 +16,6 @@ const accessReview = {
 
 let res = await client.api('/accessReviews/006111db-0810-4494-a6df-904d368bd81b')
 	.version('beta')
-	.update({accessReview : accessReview});
+	.update(accessReview);
 
 ```

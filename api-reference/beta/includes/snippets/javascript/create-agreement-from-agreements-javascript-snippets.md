@@ -27,6 +27,6 @@ const agreement = {
 
 let res = await client.api('/agreements')
 	.version('beta')
-	.post({agreement : agreement});
+	.post(agreement);
 
 ```

@@ -4,9 +4,12 @@ description: "Describes the delete method of the user resource (entity) of the M
 author: "dkershaw10"
 localization_priority: Priority
 ms.prod: "microsoft-identity-platform"
+doc_type: apiPageType
 ---
 
 # Delete a user
+
+Namespace: microsoft.graph
 
 Delete user.  
 
@@ -61,7 +64,7 @@ DELETE https://graph.microsoft.com/v1.0/users/{user-id}
 [!INCLUDE [sample-code](../includes/snippets/csharp/delete-user-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# [Javascript](#tab/javascript)
+# [JavaScript](#tab/javascript)
 [!INCLUDE [sample-code](../includes/snippets/javascript/delete-user-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 

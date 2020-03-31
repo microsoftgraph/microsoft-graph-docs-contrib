@@ -36,6 +36,6 @@ const conversation = {
 
 let res = await client.api('/groups/29981b6a-0e57-42dc-94c9-cd24f5306196/conversations')
 	.version('beta')
-	.post({conversation : conversation});
+	.post(conversation);
 
 ```

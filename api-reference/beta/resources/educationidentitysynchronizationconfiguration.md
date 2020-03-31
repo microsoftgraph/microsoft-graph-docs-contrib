@@ -4,9 +4,13 @@ description: "Abstract base class for all school data profile identity synchroni
 author: "mmast-msft"
 localization_priority: Normal
 ms.prod: "education"
+doc_type: resourcePageType
 ---
 
+
 # educationIdentitySynchronizationConfiguration resource type
+
+Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 

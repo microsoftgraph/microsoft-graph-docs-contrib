@@ -3,9 +3,13 @@ title: "Listing versions of a ListItem"
 description: "SharePoint can be configured to retain the history for list items."
 localization_priority: Normal
 ms.prod: "sharepoint"
+author: ""
+doc_type: apiPageType
 ---
 
 # Listing versions of a ListItem
+
+Namespace: microsoft.graph
 
 SharePoint can be configured to retain the history for list items.
 
@@ -46,14 +50,14 @@ This example retrieves the versions of a listItem in a SharePoint list:
 # [HTTP](#tab/http)
 <!-- { "blockType": "request", "name": "get-previous-versions-listitem", "scopes": "files.read sites.read.all" } -->
 
-```http
+```msgraph-interactive
 GET /sites/{site-id}/lists/{list-id}/items/{item-id}/versions
 ```
 # [C#](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/get-previous-versions-listitem-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# [Javascript](#tab/javascript)
+# [JavaScript](#tab/javascript)
 [!INCLUDE [sample-code](../includes/snippets/javascript/get-previous-versions-listitem-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 

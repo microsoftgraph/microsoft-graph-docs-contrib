@@ -7,7 +7,7 @@ description: "Automatically generated file. DO NOT MODIFY"
 GraphServiceClient graphClient = new GraphServiceClient( authProvider );
 
 var getSharePointSiteUsagePages = await graphClient.Reports
-	.GetSharePointSiteUsagePages('D7')
+	.GetSharePointSiteUsagePages("D7")
 	.Request()
 	.GetAsync();
 

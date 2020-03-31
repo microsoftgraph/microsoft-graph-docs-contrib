@@ -23,6 +23,6 @@ const message = {
 };
 
 let res = await client.api('/me/mailFolders/{id}/messages')
-	.post({message : message});
+	.post(message);
 
 ```

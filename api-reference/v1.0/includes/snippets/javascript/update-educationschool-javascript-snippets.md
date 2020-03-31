@@ -16,6 +16,6 @@ const educationSchool = {
 };
 
 let res = await client.api('/education/schools/{school-id}')
-	.update({educationSchool : educationSchool});
+	.update(educationSchool);
 
 ```

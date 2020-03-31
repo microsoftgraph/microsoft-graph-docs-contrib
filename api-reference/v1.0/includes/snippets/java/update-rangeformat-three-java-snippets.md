@@ -14,7 +14,7 @@ workbookRangeFormat.rowHeight = 49;
 workbookRangeFormat.wrapText = false;
 
 graphClient.me().drive().items("{id}").workbook().worksheets("{sheet-id}")
-	.range('$C$1').format()
+	.range("$C$1").format()
 	.buildRequest()
 	.patch(workbookRangeFormat);
 

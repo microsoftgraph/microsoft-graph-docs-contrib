@@ -26,6 +26,6 @@ const privilegedRoleSettings = {
 
 let res = await client.api('/privilegedRoles/{id}/settings')
 	.version('beta')
-	.put({privilegedRoleSettings : privilegedRoleSettings});
+	.put(privilegedRoleSettings);
 
 ```

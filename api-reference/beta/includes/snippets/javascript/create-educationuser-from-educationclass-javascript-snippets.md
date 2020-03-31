@@ -16,6 +16,6 @@ const educationUser = {
 
 let res = await client.api('/education/classes/11017/teachers/$ref')
 	.version('beta')
-	.post({educationUser : educationUser});
+	.post(educationUser);
 
 ```

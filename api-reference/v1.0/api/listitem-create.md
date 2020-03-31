@@ -5,8 +5,12 @@ ms.date: 09/11/2017
 title: Create a new entry in a SharePoint list
 localization_priority: Priority
 ms.prod: "sharepoint"
+description: "Create a new listItem in a list."
+doc_type: apiPageType
 ---
 # Create a new item in a list
+
+Namespace: microsoft.graph
 
 Create a new [listItem][] in a [list][].
 
@@ -56,7 +60,7 @@ Content-Type: application/json
 [!INCLUDE [sample-code](../includes/snippets/csharp/create-listitem-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# [Javascript](#tab/javascript)
+# [JavaScript](#tab/javascript)
 [!INCLUDE [sample-code](../includes/snippets/javascript/create-listitem-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 

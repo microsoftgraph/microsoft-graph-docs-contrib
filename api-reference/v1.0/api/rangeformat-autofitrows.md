@@ -4,9 +4,12 @@ description: "Changes the height of the rows of the current range to achieve the
 localization_priority: Normal
 author: "lumine2008"
 ms.prod: "excel"
+doc_type: apiPageType
 ---
 
 # RangeFormat: autofitRows
+
+Namespace: microsoft.graph
 
 Changes the height of the rows of the current range to achieve the best fit, based on the current data in the columns.
 ## Permissions
@@ -55,7 +58,7 @@ POST https://graph.microsoft.com/v1.0/me/drive/items/{id}/workbook/names/{name}/
 [!INCLUDE [sample-code](../includes/snippets/csharp/rangeformat-autofitrows-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# [Javascript](#tab/javascript)
+# [JavaScript](#tab/javascript)
 [!INCLUDE [sample-code](../includes/snippets/javascript/rangeformat-autofitrows-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
