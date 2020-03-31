@@ -5,7 +5,7 @@ localization_priority: Normal
 author: vogtn
 ---
 
-# People-Picker component
+# People-Picker component in the Microsoft Graph Toolkit
 
 You can use the `mgt-people-picker` web component search for a specified number of people and render the list of results via Microsoft Graph. By default, the component will search for all people; you can also define a group property to further filter the results.
 
