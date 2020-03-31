@@ -9,6 +9,8 @@ doc_type: apiPageType
 
 # List tasks
 
+Namespace: microsoft.graph
+
 Retrieve a list of **plannerTask** objects associated to a [plannerBucket](../resources/plannerbucket.md) object.
 ## Permissions
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
@@ -49,7 +51,7 @@ Here is an example of the request.
   "name": "plannerbucket_get_tasks"
 }-->
 ```msgraph-interactive
-GET https://graph.microsoft.com/v1.0/planner/buckets/{task-id}/tasks
+GET https://graph.microsoft.com/v1.0/planner/buckets/{bucket-id}/tasks
 ```
 # [C#](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/plannerbucket-get-tasks-csharp-snippets.md)]

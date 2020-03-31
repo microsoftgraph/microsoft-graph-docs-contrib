@@ -21,6 +21,7 @@ The following tutorials build an app that authenticates a user and accesses date
 - [iOS Objective-C](/graph/tutorials/ios-objectivec)
 - [iOS Swift](/graph/tutorials/ios-swift)
 - [Java](/graph/tutorials/java)
+- [JavaScript](/graph/tutorials/javascript)
 - [Node.js](/graph/tutorials/node)
 - [PHP](/graph/tutorials/php)
 - [Python](/graph/tutorials/python)
@@ -37,8 +38,8 @@ Don't see your preferred language or platform? Request a tutorial for it on [Use
 The following tutorials focus on specific scenarios for using the Microsoft Graph.
 
 
-- [Optimize data usage when using Microsoft Graph with query parameters](https://docs.microsoft.com/en-us/learn/modules/optimize-data-usage/)
-- [Optimize network traffic with Microsoft Graph](https://docs.microsoft.com/en-us/learn/modules/optimize-data-usage/2-microsoft-graph-query-parameters)
+- [Optimize data usage when using Microsoft Graph with query parameters](https://docs.microsoft.com/learn/modules/optimize-data-usage/)
+- [Optimize network traffic with Microsoft Graph](https://docs.microsoft.com/learn/modules/optimize-data-usage/2-microsoft-graph-query-parameters)
 - [Change notifications and delta query](/graph/tutorials/change-notifications)
 
 ## See also

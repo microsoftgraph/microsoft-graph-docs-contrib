@@ -9,6 +9,8 @@ doc_type: "apiPageType"
 
 # Get accessPackageAssignmentPolicy
 
+Namespace: microsoft.graph
+
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 In [Azure AD entitlement management](../resources/entitlementmanagement-root.md), retrieve the properties and relationships of an
@@ -55,14 +57,30 @@ If successful, this method returns a `200 OK` response code and the requested [a
 ### Request
 
 The following is an example of the request.
+
+# [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "get_accesspackageassignmentpolicy"
 }-->
 
-```http
+```msgraph-interactive
 GET https://graph.microsoft.com/beta/identityGovernance/entitlementManagement/accessPackageAssignmentPolicies/{id}
 ```
+# [C#](#tab/csharp)
+[!INCLUDE [sample-code](../includes/snippets/csharp/get-accesspackageassignmentpolicy-csharp-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [JavaScript](#tab/javascript)
+[!INCLUDE [sample-code](../includes/snippets/javascript/get-accesspackageassignmentpolicy-javascript-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Objective-C](#tab/objc)
+[!INCLUDE [sample-code](../includes/snippets/objc/get-accesspackageassignmentpolicy-objc-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+---
+
 
 ### Response
 
@@ -84,10 +102,10 @@ Content-type: application/json
   "id": "b2eba9a1-b357-42ee-83a8-336522ed6cbf",
   "accessPackageId": "1b153a13-76da-4d07-9afa-c6c2b1f2e824",
   "displayName": "All Users",
-  "description": "All users can request for access to the directory.",
-  "isEnabled": false,
+  "description": "All users in the directory can request access.",
   "canExtend": false,
-  "durationInDays": 365
+  "durationInDays": 365,
+  "accessReviewSettings": null
 }
 ```
 
