@@ -135,13 +135,13 @@ The control uses the global authentication provider described in the [authentica
 
 ## Extend for more control
 
-For more complex scenarios or a truly custom UX, this component exposes several `protected render*` methods for override in component extensions:
+For more complex scenarios or a truly custom UX, this component exposes several `protected render*` methods for override in component extensions.
 
 | Method | Description |
 | - | - |
-| `renderLoading` | Renders the loading state. |
-| `renderImage` | Renders the image part. |
-| `renderNoData` | Renders when no image or person data is available. |
-| `renderDetails` | Renders the person details part. |
-| `renderEmail` | Renders the email sub-part of the person details. |
-| `renderName` | Renders the name sub-part of the person details. |
+| renderLoading | Renders the loading state. |
+| renderImage | Renders the image part. |
+| renderNoData | Renders when no image or person data is available. |
+| renderDetails | Renders the person details part. |
+| renderEmail | Renders the email sub-part of the person details. |
+| renderName | Renders the name sub-part of the person details. |
