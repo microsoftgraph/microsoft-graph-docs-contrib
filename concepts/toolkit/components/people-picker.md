@@ -114,12 +114,12 @@ For more complex scenarios or a truly custom UX, this component exposes several 
 
 | Method | Description |
 | - | - |
-| renderInput | Render the input text box. |
-| renderSelectedPeople | Render the selected people tokens. |
-| renderSelectedPerson | Render an individual person token. |
-| renderFlyout | Render the flyout chrome. |
-| renderFlyoutContent | Render the appropriate state in the results flyout. |
-| renderLoading | Render the loading state. |
-| renderNoData | Render the state when no results are found for the search query. |
-| renderSearchResults | Render the list of search results. |
-| renderPersonResult | Render an individual person search result. |
+| renderInput | Renders the input text box. |
+| renderSelectedPeople | Renders the selected people tokens. |
+| renderSelectedPerson | Renders an individual person token. |
+| renderFlyout | Renders the flyout chrome. |
+| renderFlyoutContent | Renders the appropriate state in the results flyout. |
+| renderLoading | Renders the loading state. |
+| renderNoData | Renders the state when no results are found for the search query. |
+| renderSearchResults | Renders the list of search results. |
+| renderPersonResult | Renders an individual person search result. |
