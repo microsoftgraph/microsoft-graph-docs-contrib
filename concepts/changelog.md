@@ -11,14 +11,6 @@ This changelog covers what's changed in the Microsoft Graph API, including the v
 
 For details about known issues with Microsoft Graph APIs, see [Known issues](known-issues.md).
 
-## April 2020
-
-### Identity and access (Azure AD)
-
-| **Change type** | **Version**   | **Description**                          |
-| :-------------- | :------------ | :--------------------------------------- |
-|Addition|beta|Added the [authenticationMethod](../resources/authenticationmethods.md), [passwordAuthenticationMethod](../resources/passwordauthenticationmethod.md), and [phoneAuthenticationMethod](../resources/phoneauthenticationmethod.md) resources and associated functions, including [resetPassword](../api/passwordauthenticationmethod-resetpassword.md), [enableSmsSignIn](../api/phoneauthenticationmethod-enablesmssignin.md), and [disableSmsSignIn](../api/phoneauthenticationmethod-disablesmssignin.md).
-
 ## February 2020
 
 ### Cloud communications | Recording
