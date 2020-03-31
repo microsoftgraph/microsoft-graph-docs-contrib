@@ -8586,6 +8586,44 @@
           items:
           - name: List provisioning
             href: api/provisioningobjectsummary-list.md
+      - name: Authentication methods
+        href: resources/azure-ad-authenticationmethods-overview.md
+        items: 
+        - name: Authentication methods
+          href: resources/authenticationmethods.md
+          items:
+          - name: List authentication methods
+            href: api/authentication-list-methods.md
+          - name: Get authentication method
+            href: api/authenticationmethod-get.md
+        - name: Password authentication methods
+          href: resources/passwordauthenticationmethod.md
+          items:
+          - name: List password authentication methods
+            href: api/authentication-list-passwordmethods.md
+          - name: Get password authentication method
+            href: api/passwordauthenticationmethod-get.md
+          - name: Reset password
+            href: api/passwordauthenticationmethod-resetpassword.md
+          - name: Get password reset operations status
+            href: api/authenticationoperation-get.md
+        - name: Phone authentication methods
+          href: resources/phoneauthenticationmethod.md
+          items:
+          - name: List phone authentication methods
+						href: api/authentication-list-phonemethods.md
+          - name: Get phone authentication method
+						href: api/phoneauthenticationmethod-get.md
+          - name: Add phone authentication method
+						href: api/authentication-post-phonemethods.md
+          - name: Update phone authentication method
+						href: api/phoneauthenticationmethod-update.md
+          - name: Delete phone authentication method
+						href: api/phoneauthenticationmethod-delete.md
+          - name: Enable SMS sign-in
+						href: api/passwordauthenticationmethod-enablesmssignin.md
+          - name: Disable SMS sign-in
+						href: api/passwordauthenticationmethod-disablesmssignin.md
       - name: Certificate-based auth configuration
         href: resources/certificatebasedauthconfiguration.md
         items:
