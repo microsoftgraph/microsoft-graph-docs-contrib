@@ -8685,19 +8685,19 @@
           href: resources/phoneauthenticationmethod.md
           items:
           - name: List phone authentication methods
-						href: api/authentication-list-phonemethods.md
+            href: api/authentication-list-phonemethods.md
           - name: Get phone authentication method
-						href: api/phoneauthenticationmethod-get.md
+            href: api/phoneauthenticationmethod-get.md
           - name: Add phone authentication method
-						href: api/authentication-post-phonemethods.md
+            href: api/authentication-post-phonemethods.md
           - name: Update phone authentication method
-						href: api/phoneauthenticationmethod-update.md
+            href: api/phoneauthenticationmethod-update.md
           - name: Delete phone authentication method
-						href: api/phoneauthenticationmethod-delete.md
+            href: api/phoneauthenticationmethod-delete.md
           - name: Enable SMS sign-in
-						href: api/passwordauthenticationmethod-enablesmssignin.md
+            href: api/passwordauthenticationmethod-enablesmssignin.md
           - name: Disable SMS sign-in
-						href: api/passwordauthenticationmethod-disablesmssignin.md
+            href: api/passwordauthenticationmethod-disablesmssignin.md
       - name: Certificate-based auth configuration
         href: resources/certificatebasedauthconfiguration.md
         items:
