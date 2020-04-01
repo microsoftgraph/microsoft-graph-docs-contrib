@@ -643,8 +643,6 @@ Content-type: application/json
             "excludeRoles": []
         },
         "devices": {
-            "includeDeviceRule": null,
-            "excludeDeviceRule": null,
             "includeDeviceStates": [
                 "All"
             ],
