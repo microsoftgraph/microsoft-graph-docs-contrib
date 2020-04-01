@@ -132,7 +132,7 @@ For details about known issues with Microsoft Graph APIs, see [Known issues](kno
 
 | **Change type** | **Version** | **Description**                          |
 | :-------------- | :---------- | :--------------------------------------- |
-| Addition        | beta       | Added the **subscriptions** navigation property to the [list](/graph/api/resources/list?view=graph-rest-1.0) entity. |
+| Addition        | v1.0       | Added the **subscriptions** navigation property to the [list](/graph/api/resources/list?view=graph-rest-v1.0) entity. |
 ### Universal Print
 
 Added new APIs and resources for managing and printing to printers by using the Universal Print service.
@@ -1081,7 +1081,7 @@ Debut of the places API which provides rich details for locations in apps.
 
 | **Change type** | **Version** | **Description**                          |
 | :-------------- | :---------- | :--------------------------------------- |
-| Addition        | v1.0        | Added the **subscriptions** navigation property to the [list](/graph/api/resources/list?view=graph-rest-v1.0) entity. |
+| Addition        | beta        | Added the **subscriptions** navigation property to the [list](/graph/api/resources/list?view=graph-rest-beta) entity. |
 
 ### Reports
 
