@@ -2,7 +2,7 @@
 title: "group: assignLicense"
 description: "Add or remove licenses on the group. Licenses assigned to the group will be assigned to all users in the group."
 localization_priority: Normal
-author: "davidmu1"
+author: "yyuank"
 ms.prod: "microsoft-identity-platform"
 doc_type: "apiPageType"
 ---
