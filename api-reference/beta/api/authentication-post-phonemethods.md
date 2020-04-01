@@ -11,7 +11,7 @@ doc_type: "apiPageType"
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Use this API to add a new [phone authentication method](../resources/phoneauthenticationmethod.md). A user may only have one phone of each type. This means, for example, adding a `mobile` phone to a user with a preexisting `mobile` phone will fail. Additionally, a user must always have a `mobile` phone before adding an `alternateMobile` phone.
+Use this API to add a new [phone authentication method](../resources/phoneauthenticationmethod.md). A user may only have one phone of each type, captured in the phoneType property. This means, for example, adding a `mobile` phone to a user with a preexisting `mobile` phone will fail. Additionally, a user must always have a `mobile` phone before adding an `alternateMobile` phone.
 
 Adding a phone number makes it available for use in both Azure multi-factor authentication (MFA) and self-service password reset (SSPR) if enabled.
 
@@ -27,7 +27,7 @@ One of the following permissions is required to call this API. To learn more, in
 | Delegated (personal Microsoft account) | Not supported. |
 | Application                            | UserAuthenticationMethod.Read.All, UserAuthenticationMethod.ReadWrite.All | UserAuthenticationMethod.Read.All, UserAuthenticationMethod.ReadWrite.All |
 
-For delegated scenarios where an admin is acting on another user, the admin needs one of the following roles:
+For delegated scenarios where an admin is acting on another user, the admin needs [one of the following roles](https://docs.microsoft.com/azure/active-directory/users-groups-roles/directory-assign-admin-roles#available-roles):
 
 * Global admin
 * Privileged authentication admin
@@ -47,6 +47,7 @@ POST /users/{id}/authentication/phoneMethods
 | Name          | Description   |
 |:--------------|:--------------|
 | Authorization | Bearer {token} |
+| Content-Type  | application/json |
 
 ## Request body
 
