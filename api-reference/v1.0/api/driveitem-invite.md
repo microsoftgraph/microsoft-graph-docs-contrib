@@ -63,6 +63,8 @@ In the request body, provide a JSON object with the following parameters.
 | requireSignIn    | Boolean                        | Specifies whether the recipient of the invitation is required to sign-in to view the shared item.
 | sendInvitation   | Boolean                        | If true, a [sharing link][] is sent to the recipient. Otherwise, a permission is granted directly without sending a notification.
 | roles            | Collection(String)             | Specify the roles that are to be granted to the recipients of the sharing invitation.
+| expirationDateTime | DateTimeOffset                       | Specify the DateTime after which the permission expires. Available on OneDrive for Business, SharePoint, and premium personal OneDrive accounts.
+| password           | String                         | The password set on the invite by the creator. Optional and OneDrive Personal only
 
 ## Example
 
@@ -90,7 +92,9 @@ Content-type: application/json
   "message": "Here's the file that we're collaborating on.",
   "requireSignIn": true,
   "sendInvitation": true,
-  "roles": [ "write" ]
+  "roles": [ "write" ],
+  "password": "password123",
+  "expirationDateTime": "2018-07-15T14:00:00.000Z"
 }
 ```
 # [C#](#tab/csharp)
@@ -131,12 +135,14 @@ Content-type: application/json
           "id": "42F177F1-22C0-4BE3-900D-4507125C5C20"
         }
       },
+      "hasPassword": true,
       "id": "CCFC7CA3-7A19-4D57-8CEF-149DB9DDFA62",
       "invitation": {
         "email": "ryan@contoso.com",
         "signInRequired": true
       },
-      "roles": [ "write" ]
+      "roles": [ "write" ],
+      "expirationDateTime": "2018-07-15T14:00:00.000Z"
     }
   ]
 }
