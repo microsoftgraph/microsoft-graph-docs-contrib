@@ -117,7 +117,6 @@ The following is an example of the request.
 
 ```http
 POST https://graph.microsoft.com/beta/users/{id}/authentication/passwordMethods/{id}/resetPassword
-Content-type: application/json
 ```
 
 ### Response
