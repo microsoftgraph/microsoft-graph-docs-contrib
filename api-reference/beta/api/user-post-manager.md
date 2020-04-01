@@ -3,7 +3,7 @@ title: "Assign a manager"
 description: "Use this API to assign a user's manager."
 localization_priority: Normal
 author: "krbain"
-ms.prod: "microsoft-identity-platform"
+ms.prod: "users"
 doc_type: apiPageType
 ---
 
