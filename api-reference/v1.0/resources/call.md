@@ -52,12 +52,15 @@ https://teams.microsoft.com/l/meetup-join/19:meeting_NTg0NmQ3NTctZDVkZC00YzRhLTh
 | [ChangeScreenSharingRole](../api/call-changescreensharingrole.md)  | None                                                        | Start and stop sharing screen in the call.                                      |
 | **Recording Operations**                                           |                                                             |                                              |
 | [UpdateRecordingStatus](../api/call-updaterecordingstatus.md)      | [updateRecordingStatusOperation](updateRecordingStatusOperation.md)               | Updates the recording status.                      |
+| **Logging Operations**                                           |                                                             |                                              |
+| [Log device quality data](../api/call-logteleconferencedevicequality.md)| [teleconferenceDeviceQuality](teleconferencedevicequality.md) | Log video teleconferencing device quality data.|
 
 ## Properties
 
 | Property            | Type                                                                                                   | Description                                                                                                                                                                                         |
 | :------------------ | :------------------------------------------------------------------------------------------------------| :-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
 | callbackUri         | String                                                                                                 | The callback URL on which callbacks will be delivered. Must be `https`.                                                                                                                               |
+| callChainId         | String                                                                                                 | A unique identifier for all the participant calls in a conference or a unique identifier for two participant calls in a P2P call.  This needs to be copied over from `Microsoft.Graph.Call.CallChainId`. |
 | callRoutes         | [callRoute](callRoute.md) collection                                                                                                 | The routing information on how the call was retargeted. Read-only.                                                                                                                |
 | chatInfo            | [chatInfo](chatinfo.md)                                                                                | The chat information. Required information for joining a meeting.                                                                                                                              |
 | direction           | String                                                                                                 | The direction of the call. The possible value are `incoming` or `outgoing`. Read-only.                                                                                            |
@@ -89,6 +92,7 @@ The following is a JSON representation of the resource.
 <!-- {
   "blockType": "resource",
   "optionalProperties": [
+    "callChainId",
     "chatInfo",
     "direction",
     "id",
@@ -110,6 +114,7 @@ The following is a JSON representation of the resource.
 ```json
 {
   "callbackUri": "String",
+  "callChainId": "String",
   "chatInfo": {"@odata.type": "#microsoft.graph.chatInfo"},
   "direction": "incoming | outgoing",
   "id": "String (identifier)",
