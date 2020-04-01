@@ -8,7 +8,7 @@ IGraphServiceClient graphClient = GraphServiceClient.builder().authenticationPro
 
 DriveItem driveItem = new DriveItem();
 driveItem.name = "Just some files";
-driveItem.@microsoft.graph.conflictBehavior = "rename";
+driveItem.@name.conflictBehavior = "rename";
 Bundle bundle = new Bundle();
 driveItem.bundle = bundle;
 LinkedList<DriveItem> childrenList = new LinkedList<DriveItem>();

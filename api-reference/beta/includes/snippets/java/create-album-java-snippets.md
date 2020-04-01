@@ -8,7 +8,7 @@ IGraphServiceClient graphClient = GraphServiceClient.builder().authenticationPro
 
 DriveItem driveItem = new DriveItem();
 driveItem.name = "My Day at the Beach";
-driveItem.@microsoft.graph.conflictBehavior = "rename";
+driveItem.@name.conflictBehavior = "rename";
 Bundle bundle = new Bundle();
 Album album = new Album();
 bundle.album = album;

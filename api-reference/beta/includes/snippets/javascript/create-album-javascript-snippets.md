@@ -12,7 +12,7 @@ const client = Client.init(options);
 
 const driveItem = {
   name: "My Day at the Beach",
-  "@microsoft.graph.conflictBehavior" : "rename",
+  "@name.conflictBehavior" : "rename",
   bundle: { album: {} },
   children: [
     { id: "1234asdf" }

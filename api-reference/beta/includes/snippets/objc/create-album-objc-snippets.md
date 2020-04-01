@@ -13,7 +13,7 @@ NSMutableURLRequest *urlRequest = [NSMutableURLRequest requestWithURL:[NSURL URL
 
 MSGraphDriveItem *driveItem = [[MSGraphDriveItem alloc] init];
 [driveItem setName:@"My Day at the Beach"];
-[driveItem set@microsoft.graph.conflictBehavior:@"rename"];
+[driveItem set@name.conflictBehavior:@"rename"];
 MSGraphBundle *bundle = [[MSGraphBundle alloc] init];
 MSGraphAlbum *album = [[MSGraphAlbum alloc] init];
 [bundle setAlbum:album];
