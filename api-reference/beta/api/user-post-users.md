@@ -9,10 +9,14 @@ doc_type: apiPageType
 
 # Create user
 
+Namespace: microsoft.graph
+
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 Create a new [user](../resources/user.md).
 The request body contains the user to create. At a minimum, you must specify the required properties for the user. You can optionally specify any other writable properties.
+
+This operation returns by default only a subset of the properties for each user. These default properties are noted in the [Properties](../resources/user.md#properties) section. To get properties that are not returned by default, do a [GET operation](user-get.md) and specify the properties in a `$select` OData query option.
 
 >[!NOTE]
 >To create external users, use the [invitation API](invitation-post.md).
@@ -110,8 +114,8 @@ In the request body, supply a JSON representation of [user](../resources/user.md
 ##### Response
 Here is an example of the response. 
 
-[!NOTE]
-The response object shown here might be shortened for readability. All the properties will be returned from an actual call.
+>[!NOTE]
+>The response object shown here might be shortened for readability. All the properties will be returned from an actual call.
 
 <!-- {
   "blockType": "response",
@@ -142,8 +146,8 @@ Content-type: application/json
 
 Create a new user, with a local account identity with a sign-in name, an email address as sign-in, and with a social identity. This example is typically used for migration scenarios in B2C tenants.  
 
-[!NOTE] 
-For local account identities, password expirations must be disabled, and force change password at next sign-in must also be disabled.
+>[!NOTE] 
+>For local account identities, password expirations must be disabled, and force change password at next sign-in must also be disabled.
 
 #### Request
 

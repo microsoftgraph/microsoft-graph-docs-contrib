@@ -9,11 +9,13 @@ doc_type: "apiPageType"
 
 # attachment: createUploadSession
 
+Namespace: microsoft.graph
+
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 Create an upload session that allows an app to iteratively upload ranges of a file, so as to attach the file to the specified [message](../resources/message.md).
 
-Use this approach to attach files of sizes between 3 MB and 150 MB to a **message**. To attach files of sizes under 4 MB, simply [POST on the attachments navigation property](message-post-attachments.md). 
+Use this approach to attach a file to a **message** when the file size is between 3 MB and 150 MB. To attach a file that's smaller than 3 MB,  [POST on the attachments navigation property](message-post-attachments.md). 
 
 As part of the response, this action returns an upload URL that you can use in subsequent sequential `PUT` queries. Request headers for each `PUT` operation let you specify the exact range of bytes to be uploaded. This allows transfer to be resumed, in case the network connection is dropped during upload. 
 
@@ -28,6 +30,10 @@ See [attach large files to Outlook messages](/graph/outlook-large-attachments) f
 
 > [!TIP]
 > Exchange Online lets administrators customize the message size limit for Office 365 mailboxes,  including any message attachments. By default, this message size limit is 35 MB. Find out how to [customize the maximum message size](https://www.microsoft.com/microsoft-365/blog/2015/04/15/office-365-now-supports-larger-email-messages-up-to-150-mb) to support attachments larger than the default limit for your tenant. 
+
+> [!IMPORTANT] 
+> Be aware of a [known issue](/graph/known-issues#attaching-large-files-to-messages) if you're attaching to a message in a shared or delegated mailbox.
+
 
 ## Permissions
 
@@ -64,7 +70,7 @@ In the request body, provide a JSON object with the following parameters.
 
 ## Response
 
-If successful, this method returns `201, Created` response code and a new [uploadSession](../resources/uploadsession.md) object in the response body.
+If successful, this method returns a `201 Created` response code and a new [uploadSession](../resources/uploadsession.md) object in the response body.
 
 >**Note**: 
 >
@@ -77,11 +83,9 @@ If successful, this method returns `201, Created` response code and a new [uploa
 
 ## Examples
 
-The following is an example of how to call this API.
+The following example shows how to create an upload session that you can use in subsequent file upload operations.
 
 ### Request
-
-The following is an example of the request.
 
 # [HTTP](#tab/http)
 <!-- {
@@ -118,8 +122,6 @@ Content-type: application/json
 
 
 ### Response
-
-The following is an example of the response.
 
 > **Note:** The response object shown here might be shortened for readability. All the properties will be returned from an actual call.
 

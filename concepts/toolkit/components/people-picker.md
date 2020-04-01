@@ -13,13 +13,11 @@ If the number of people to display exceeds the `show-max` value, not all people 
 
 ## Example
 
-[jsfiddle example](https://jsfiddle.net/metulev/jdv38fg0/)
+The following example shows the `mgt-people-picker` component. Start searching for a name to see the results render and use the code editor to see how [properties](#properties) change the behavior of the component.
 
-```html
-<mgt-people-picker></mgt-people-picker>
-```
+<iframe src="https://mgt.dev/iframe.html?id=components-mgt-people-picker--people-picker&source=docs" height="450"></iframe>
 
-![mgt-people-picker](./images/mgt-people-picker-image.png)
+[Open this example in mgt.dev](https://mgt.dev/?path=/story/components-mgt-people-picker--people-picker&source=docs)
 
 ## Properties
 
@@ -100,8 +98,9 @@ This component uses the following Microsoft Graph APIs and permissions.
 
 | API                                                                                                              | Permission  |
 | ---------------------------------------------------------------------------------------------------------------- | ----------- |
-| [/me/people](/graph/api/user-list-people?view=graph-rest-1.0)                    | People.Read |
-| [/groups/\${groupId}/members](/graph/api/group-list-members?view=graph-rest-1.0) | People.Read |
+| [/me/people](/graph/api/user-list-people?view=graph-rest-1.0)                    | People.Read        |
+| [/groups/\${groupId}/members](/graph/api/group-list-members?view=graph-rest-1.0) | People.Read        |
+| [/users/${userPrincipleName} ](/graph/api/user-list-people?view=graph-rest-1.0)  | User.Readbasic.All |
 
 ## Authentication
 
