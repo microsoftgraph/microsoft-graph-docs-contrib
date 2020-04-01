@@ -17,11 +17,18 @@ Retrieve the properties and relationships of an authenticationmethod object.
 
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
 
-| Permission type                        | Permissions (from least to most privileged) |
-|:---------------------------------------|:--------------------------------------------|
-| Delegated (work or school account)     | UserAuthenticationMethod.Read, UserAuthenticationMethod.Read.All, UserAuthenticationMethod.ReadWrite, UserAuthenticationMethod.ReadWrite.All |
+| Permission type                        | Permissions acting on self (from least to most privileged) | Permissions acting on others (from least to most privileged)|
+|:---------------------------------------|:-------------------------|:-----------------|
+| Delegated (work or school account)     | UserAuthenticationMethod.Read, UserAuthenticationMethod.Read.All, UserAuthenticationMethod.ReadWrite, UserAuthenticationMethod.ReadWrite.All | UserAuthenticationMethod.Read.All, UserAuthenticationMethod.ReadWrite.All |
 | Delegated (personal Microsoft account) | Not supported. |
-| Application                            | UserAuthenticationMethod.Read.All, UserAuthenticationMethod.ReadWrite.All |
+| Application                            | UserAuthenticationMethod.Read.All, UserAuthenticationMethod.ReadWrite.All | UserAuthenticationMethod.Read.All, UserAuthenticationMethod.ReadWrite.All |
+
+For delegated scenarios where an admin is acting on another user, the admin needs one of the following roles:
+
+* Global admin
+* Global reader
+* Privileged authentication admin
+* Authentication admin (only sees masked phone numbers)
 
 ## HTTP request
 

@@ -17,11 +17,17 @@ Use this action to disable SMS sign-in for an existing `mobile` phone number. Be
 
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
 
-| Permission type                        | Permissions (from least to most privileged) |
-|:---------------------------------------|:--------------------------------------------|
-| Delegated (work or school account)     | UserAuthenticationMethod.ReadWrite, UserAuthenticationMethod.ReadWrite.All |
+| Permission type                        | Permissions acting on self (from least to most privileged) | Permissions acting on others (from least to most privileged)|
+|:---------------------------------------|:-------------------------|:-----------------|
+| Delegated (work or school account)     | UserAuthenticationMethod.ReadWrite, UserAuthenticationMethod.ReadWrite.All | UserAuthenticationMethod.ReadWrite.All |
 | Delegated (personal Microsoft account) | Not supported. |
-| Application                            | UserAuthenticationMethod.ReadWrite.All |
+| Application                            | UserAuthenticationMethod.ReadWrite.All | UserAuthenticationMethod.ReadWrite.All |
+
+For delegated scenarios where an admin is acting on another user, the admin needs one of the following roles:
+
+* Global admin
+* Privileged authentication admin
+* Authentication admin
 
 ## HTTP request
 
