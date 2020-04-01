@@ -3,7 +3,7 @@ title: "List scopedAdministratorOf"
 description: "Retrieve a list of scopedRoleMembership for the user."
 author: "krbain"
 localization_priority: Normal
-ms.prod: "microsoft-identity-platform"
+ms.prod: "users"
 doc_type: apiPageType
 ---
 

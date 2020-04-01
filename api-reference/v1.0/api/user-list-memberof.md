@@ -3,7 +3,7 @@ title: "List memberOf"
 description: "Get groups and directory roles that the user is a direct member of. "
 author: "krbain"
 localization_priority: Priority
-ms.prod: "microsoft-identity-platform"
+ms.prod: "users"
 doc_type: apiPageType
 ---
 

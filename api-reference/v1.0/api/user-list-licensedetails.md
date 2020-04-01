@@ -3,7 +3,7 @@ title: "List licenseDetails"
 description: "Retrieve a list of licenseDetails objects."
 author: "krbain"
 localization_priority: Normal
-ms.prod: "microsoft-identity-platform"
+ms.prod: "users"
 doc_type: apiPageType
 ---
 

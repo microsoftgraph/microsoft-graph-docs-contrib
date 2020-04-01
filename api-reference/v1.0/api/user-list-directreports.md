@@ -3,7 +3,7 @@ title: "List directReports"
 description: "Get a user's direct reports."
 localization_priority: Priority
 author: "krbain"
-ms.prod: "microsoft-identity-platform"
+ms.prod: "users"
 doc_type: apiPageType
 ---
 

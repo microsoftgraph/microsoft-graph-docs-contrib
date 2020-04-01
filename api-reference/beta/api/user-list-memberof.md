@@ -3,7 +3,7 @@ title: "List user memberOf"
 description: "Get groups, directory roles and administrative units that the user is a direct member of. This operation is not transitive."
 localization_priority: Normal
 author: "krbain"
-ms.prod: "microsoft-identity-platform"
+ms.prod: "users"
 doc_type: apiPageType
 ---
 

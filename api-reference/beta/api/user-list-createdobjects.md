@@ -3,7 +3,7 @@ title: "List createdObjects"
 description: "Get a list of directory objects that were created by the user."
 author: "krbain"
 localization_priority: Normal
-ms.prod: "microsoft-identity-platform"
+ms.prod: "users"
 doc_type: apiPageType
 ---
 
