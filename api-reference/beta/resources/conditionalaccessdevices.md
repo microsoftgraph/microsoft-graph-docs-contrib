@@ -2,7 +2,7 @@
 title: "conditionalAccessDevices resource type"
 description: "Represents devices in the policy scope."
 localization_priority: Normal
-author: "gapalani"
+author: "davidmu1"
 ms.prod: "microsoft-identity-platform"
 doc_type: resourcePageType
 ---
