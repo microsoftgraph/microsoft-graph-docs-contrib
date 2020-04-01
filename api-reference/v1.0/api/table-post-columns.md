@@ -9,6 +9,8 @@ doc_type: apiPageType
 
 # Create TableColumn
 
+Namespace: microsoft.graph
+
 Use this API to create a new TableColumn.
 ## Permissions
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
@@ -33,11 +35,11 @@ POST /workbook/worksheets/{id|name}/tables/{id|name}/columns
 | Workbook-Session-Id  | Workbook session Id that determines if changes are persisted or not. Optional.|
 
 ## Request body
-In the request body, supply a JSON representation of [WorkbookTableColumn](../resources/tablecolumn.md) object.
+In the request body, supply a JSON representation of [WorkbookTableColumn](../resources/workbooktablecolumn.md) object.
 
 ## Response
 
-If successful, this method returns `201 Created` response code and [WorkbookTableColumn](../resources/tablecolumn.md) object in the response body.
+If successful, this method returns `201 Created` response code and [WorkbookTableColumn](../resources/workbooktablecolumn.md) object in the response body.
 
 ## Example
 ##### Request
@@ -64,7 +66,7 @@ Content-length: 81
 [!INCLUDE [sample-code](../includes/snippets/csharp/create-tablecolumn-from-table-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# [Javascript](#tab/javascript)
+# [JavaScript](#tab/javascript)
 [!INCLUDE [sample-code](../includes/snippets/javascript/create-tablecolumn-from-table-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
@@ -78,7 +80,7 @@ Content-length: 81
 
 ---
 
-In the request body, supply a JSON representation of [WorkbookTableColumn](../resources/tablecolumn.md) object.
+In the request body, supply a JSON representation of [WorkbookTableColumn](../resources/workbooktablecolumn.md) object.
 ##### Response
 Here is an example of the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.
 <!-- {

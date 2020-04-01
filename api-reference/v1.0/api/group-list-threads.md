@@ -8,6 +8,8 @@ doc_type: apiPageType
 ---
 
 # List threads
+
+Namespace: microsoft.graph
 Get all the threads of a group.
 
 >Note: You can also [get all the threads of a conversation](conversation-list-threads.md).
@@ -50,14 +52,14 @@ The following is an example of the request.
   "blockType": "request",
   "name": "group_get_threads"
 }-->
-```http
+```msgraph-interactive
 GET https://graph.microsoft.com/v1.0/groups/{id}/threads
 ```
 # [C#](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/group-get-threads-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# [Javascript](#tab/javascript)
+# [JavaScript](#tab/javascript)
 [!INCLUDE [sample-code](../includes/snippets/javascript/group-get-threads-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 

@@ -1,7 +1,7 @@
 ---
 title: "vpnServer resource type"
 description: "VPN Server definition."
-author: "rolyon"
+author: "davidmu1"
 localization_priority: Normal
 ms.prod: "Intune"
 doc_type: resourcePageType
@@ -40,8 +40,6 @@ Here is a JSON representation of the resource.
   "isDefaultServer": true
 }
 ```
-
-
 
 
 

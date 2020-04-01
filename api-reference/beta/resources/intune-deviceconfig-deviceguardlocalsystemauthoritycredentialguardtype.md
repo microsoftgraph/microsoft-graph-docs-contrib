@@ -1,7 +1,7 @@
 ---
 title: "deviceGuardLocalSystemAuthorityCredentialGuardType enum type"
 description: "Possible values of Credential Guard settings."
-author: "rolyon"
+author: "davidmu1"
 localization_priority: Normal
 ms.prod: "Intune"
 doc_type: enumPageType
@@ -21,8 +21,6 @@ Possible values of Credential Guard settings.
 |notConfigured|0|Turns off Credential Guard remotely if configured previously without UEFI Lock.|
 |enableWithUEFILock|1|Turns on Credential Guard with UEFI lock.|
 |enableWithoutUEFILock|2|Turns on Credential Guard without UEFI lock.|
-
-
 
 
 

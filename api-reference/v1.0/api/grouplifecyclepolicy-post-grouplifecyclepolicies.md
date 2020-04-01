@@ -9,6 +9,8 @@ doc_type: apiPageType
 
 # Create groupLifecyclePolicy
 
+Namespace: microsoft.graph
+
 Creates a new [groupLifecyclePolicy](../resources/grouplifecyclepolicy.md).
 
 ## Permissions
@@ -67,7 +69,7 @@ Content-length: 125
 [!INCLUDE [sample-code](../includes/snippets/csharp/create-grouplifecyclepolicy-from-group-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# [Javascript](#tab/javascript)
+# [JavaScript](#tab/javascript)
 [!INCLUDE [sample-code](../includes/snippets/javascript/create-grouplifecyclepolicy-from-group-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 

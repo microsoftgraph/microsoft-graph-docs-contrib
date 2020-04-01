@@ -15,6 +15,6 @@ const contactFolder = {
 };
 
 let res = await client.api('/me/contactFolders/{id}/childFolders')
-	.post({contactFolder : contactFolder});
+	.post(contactFolder);
 
 ```

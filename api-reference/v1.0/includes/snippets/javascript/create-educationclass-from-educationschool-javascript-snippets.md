@@ -15,6 +15,6 @@ const educationClass = {
 };
 
 let res = await client.api('/education/schools/{school-id}/classes/$ref')
-	.post({educationClass : educationClass});
+	.post(educationClass);
 
 ```

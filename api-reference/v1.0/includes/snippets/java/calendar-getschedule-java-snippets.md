@@ -21,10 +21,10 @@ DateTimeTimeZone endTime = new DateTimeTimeZone();
 endTime.dateTime = "2019-03-15T18:00:00";
 endTime.timeZone = "Pacific Standard Time";
 
-String availabilityViewInterval = "60";
+int availabilityViewInterval = 60;
 
 graphClient.me().calendar()
-	.getschedule(schedulesList,endTime,startTime,availabilityViewInterval)
+	.getSchedule(schedulesList,endTime,startTime,availabilityViewInterval)
 	.buildRequest( requestOptions )
 	.post();
 

@@ -1,7 +1,7 @@
 ---
 title: "Create androidDeviceOwnerEnrollmentProfile"
 description: "Create a new androidDeviceOwnerEnrollmentProfile object."
-author: "rolyon"
+author: "davidmu1"
 localization_priority: Normal
 ms.prod: "Intune"
 doc_type: apiPageType
@@ -22,7 +22,7 @@ One of the following permissions is required to call this API. To learn more, in
 |:---|:---|
 |Delegated (work or school account)|DeviceManagementConfiguration.ReadWrite.All|
 |Delegated (personal Microsoft account)|Not supported.|
-|Application|Not supported.|
+|Application|DeviceManagementConfiguration.ReadWrite.All|
 
 ## HTTP Request
 <!-- {
@@ -58,7 +58,7 @@ The following table shows the properties that are required when you create the a
 |enrolledDeviceCount|Int32|Total number of Android devices that have enrolled using this enrollment profile.|
 |qrCodeContent|String|String used to generate a QR code for the token.|
 |qrCodeImage|[mimeContent](../resources/intune-shared-mimecontent.md)|String used to generate a QR code for the token.|
-|scopeTags|String collection|List of Scope Tags for this Entity instance.|
+|roleScopeTagIds|String collection|List of Scope Tags for this Entity instance.|
 
 
 
@@ -72,7 +72,7 @@ Here is an example of the request.
 ``` http
 POST https://graph.microsoft.com/beta/deviceManagement/androidDeviceOwnerEnrollmentProfiles
 Content-type: application/json
-Content-length: 613
+Content-length: 627
 
 {
   "@odata.type": "#microsoft.graph.androidDeviceOwnerEnrollmentProfile",
@@ -89,8 +89,8 @@ Content-length: 613
     "type": "Type value",
     "value": "dmFsdWU="
   },
-  "scopeTags": [
-    "Scope Tags value"
+  "roleScopeTagIds": [
+    "Role Scope Tag Ids value"
   ]
 }
 ```
@@ -100,7 +100,7 @@ Here is an example of the response. Note: The response object shown here may be 
 ``` http
 HTTP/1.1 201 Created
 Content-Type: application/json
-Content-Length: 785
+Content-Length: 799
 
 {
   "@odata.type": "#microsoft.graph.androidDeviceOwnerEnrollmentProfile",
@@ -120,12 +120,11 @@ Content-Length: 785
     "type": "Type value",
     "value": "dmFsdWU="
   },
-  "scopeTags": [
-    "Scope Tags value"
+  "roleScopeTagIds": [
+    "Role Scope Tag Ids value"
   ]
 }
 ```
-
 
 
 

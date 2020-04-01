@@ -1,7 +1,7 @@
 ---
 title: "groupPolicyPresentationDecimalTextBox resource type"
 description: "Represents an ADMX decimalTextBox element and an ADMX decimal element."
-author: "rolyon"
+author: "davidmu1"
 localization_priority: Normal
 ms.prod: "Intune"
 doc_type: resourcePageType
@@ -67,8 +67,6 @@ Here is a JSON representation of the resource.
   "maxValue": 1024
 }
 ```
-
-
 
 
 

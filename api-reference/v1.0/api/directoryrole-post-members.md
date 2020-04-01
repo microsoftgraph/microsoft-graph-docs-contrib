@@ -9,6 +9,8 @@ doc_type: apiPageType
 
 # Add directory role member
 
+Namespace: microsoft.graph
+
 Use this API to create a new directory role member.
 
 ## Permissions
@@ -56,7 +58,7 @@ Content-type: application/json
   "@odata.id": "https://graph.microsoft.com/v1.0/directoryObjects/{id}"
 }
 ```
-# [Javascript](#tab/javascript)
+# [JavaScript](#tab/javascript)
 [!INCLUDE [sample-code](../includes/snippets/javascript/create-directoryobject-from-directoryrole-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 

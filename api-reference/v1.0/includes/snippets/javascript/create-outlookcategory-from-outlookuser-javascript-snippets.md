@@ -16,6 +16,6 @@ const outlookCategory = {
 };
 
 let res = await client.api('/me/outlook/masterCategories')
-	.post({outlookCategory : outlookCategory});
+	.post(outlookCategory);
 
 ```

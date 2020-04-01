@@ -1,7 +1,7 @@
 ---
 title: "omaSettingString resource type"
 description: "OMA Settings String definition."
-author: "rolyon"
+author: "davidmu1"
 localization_priority: Normal
 ms.prod: "Intune"
 doc_type: resourcePageType
@@ -45,8 +45,6 @@ Here is a JSON representation of the resource.
   "value": "String"
 }
 ```
-
-
 
 
 

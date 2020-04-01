@@ -26,6 +26,6 @@ const device = {
 };
 
 let res = await client.api('/devices')
-	.post({device : device});
+	.post(device);
 
 ```

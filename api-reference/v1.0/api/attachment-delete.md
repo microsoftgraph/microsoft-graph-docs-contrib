@@ -2,14 +2,16 @@
 title: "Delete attachment"
 description: "Delete an attachment from a calendar event, mail message, or group post."
 localization_priority: Normal
-author: ""
-ms.prod: ""
+author: "angelgolfer-ms"
+ms.prod: "outlook"
 doc_type: apiPageType
 ---
 
 # Delete attachment
 
-Delete an attachment from a calendar event, mail message, or group post.
+Namespace: microsoft.graph
+
+Delete an attachment from a user calendar event, mail message, or group post.
 ## Permissions
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
 
@@ -22,17 +24,24 @@ One of the following permissions is required to call this API. To learn more, in
 -->
 
 ## HTTP request
-Attachments for an [event](../resources/event.md) in the user's or group's default [calendar](../resources/calendar.md).
+Attachments for an [event](../resources/event.md) in the user's default [calendar](../resources/calendar.md).
 <!-- { "blockType": "ignored" } -->
 ```http
 DELETE /me/events/{id}/attachments/{id}
 DELETE /users/{id | userPrincipalName}/events/{id}/attachments/{id}
 
-DELETE /me/calendar/{id}/events/{id}/attachments/{id}
+DELETE /me/calendar/events/{id}/attachments/{id}
 DELETE /users/{id | userPrincipalName}/calendar/events/{id}/attachments/{id}
 ```
 
-<!--
+Attachments for an [event](../resources/event.md) in the specified [calendar](../resources/calendar.md) belonging to the user.
+<!-- { "blockType": "ignored" } -->
+```http
+DELETE /me/calendars/{id}/events/{id}/attachments/{id}
+DELETE /users/{id | userPrincipalName}/calendars/{id}/events/{id}/attachments/{id}
+```
+
+<!-- Tried adding and getting group event with attachment, event exists but without attachment. Assume group event attachment not supported.
 DELETE /groups/{id}/events/{id}/attachments/{id}
 DELETE /groups/{id}/calendar/events/{id}/attachments/{id}
 -->
@@ -105,7 +114,7 @@ DELETE https://graph.microsoft.com/v1.0/me/events/{id}/attachments/{id}
 [!INCLUDE [sample-code](../includes/snippets/csharp/delete-attachment-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# [Javascript](#tab/javascript)
+# [JavaScript](#tab/javascript)
 [!INCLUDE [sample-code](../includes/snippets/javascript/delete-attachment-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 

@@ -21,6 +21,6 @@ const directorySetting = {
 
 let res = await client.api('/settings/{id}')
 	.version('beta')
-	.update({directorySetting : directorySetting});
+	.update(directorySetting);
 
 ```

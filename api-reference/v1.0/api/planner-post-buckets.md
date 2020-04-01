@@ -9,6 +9,8 @@ doc_type: apiPageType
 
 # Create plannerBucket
 
+Namespace: microsoft.graph
+
 Use this API to create a new **plannerBucket**.
 
 ## Permissions
@@ -64,7 +66,7 @@ Content-length: 92
 [!INCLUDE [sample-code](../includes/snippets/csharp/create-plannerbucket-from-planner-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# [Javascript](#tab/javascript)
+# [JavaScript](#tab/javascript)
 [!INCLUDE [sample-code](../includes/snippets/javascript/create-plannerbucket-from-planner-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 

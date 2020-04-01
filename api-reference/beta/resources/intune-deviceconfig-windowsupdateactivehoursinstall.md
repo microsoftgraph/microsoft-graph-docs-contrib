@@ -1,7 +1,7 @@
 ---
 title: "windowsUpdateActiveHoursInstall resource type"
 description: "Not yet documented"
-author: "rolyon"
+author: "davidmu1"
 localization_priority: Normal
 ms.prod: "Intune"
 doc_type: resourcePageType
@@ -41,8 +41,6 @@ Here is a JSON representation of the resource.
   "activeHoursEnd": "String (time of day)"
 }
 ```
-
-
 
 
 

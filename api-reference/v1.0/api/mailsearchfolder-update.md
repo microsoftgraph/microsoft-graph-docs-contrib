@@ -9,6 +9,8 @@ doc_type: apiPageType
 
 # Update mailSearchFolder
 
+Namespace: microsoft.graph
+
 Update the writable properties of a [mailSearchFolder](../resources/mailsearchfolder.md) object.
 
 ## Permissions
@@ -69,7 +71,7 @@ Content-type: application/json
 [!INCLUDE [sample-code](../includes/snippets/csharp/update-mailsearchfolder-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# [Javascript](#tab/javascript)
+# [JavaScript](#tab/javascript)
 [!INCLUDE [sample-code](../includes/snippets/javascript/update-mailsearchfolder-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
@@ -104,7 +106,6 @@ Content-type: application/json
   "childFolderCount": 0,
   "unreadItemCount": 0,
   "totalItemCount": 0,
-  "wellKnownName": null,
   "isSupported": true,
   "includeNestedFolders": true,
   "sourceFolderIds": [
@@ -124,7 +125,7 @@ Content-type: application/json
   "section": "documentation",
   "tocPath": "",
   "suppressions": [
-    
+
   ]
 }
 -->

@@ -16,6 +16,6 @@ const device = {
 
 let res = await client.api('/devices/{id}')
 	.version('beta')
-	.update({device : device});
+	.update(device);
 
 ```

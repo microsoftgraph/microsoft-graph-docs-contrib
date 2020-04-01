@@ -24,6 +24,6 @@ const message = {
 
 let res = await client.api('/me/mailFolders/{id}/messages')
 	.version('beta')
-	.post({message : message});
+	.post(message);
 
 ```

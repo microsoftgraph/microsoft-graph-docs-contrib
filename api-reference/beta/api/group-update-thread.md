@@ -9,6 +9,8 @@ doc_type: apiPageType
 
 # Update conversation thread
 
+Namespace: microsoft.graph
+
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 Update a [thread](../resources/conversationthread.md) object.
@@ -66,7 +68,7 @@ Content-length: 655
   "isReminderOn": true
 }
 ```
-# [Javascript](#tab/javascript)
+# [JavaScript](#tab/javascript)
 [!INCLUDE [sample-code](../includes/snippets/javascript/update-group-thread-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 

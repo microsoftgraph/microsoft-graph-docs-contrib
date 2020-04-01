@@ -1,7 +1,7 @@
 ---
 title: "groupPolicyPresentationValue resource type"
 description: "The base presentation value entity that stores the value for a single group policy presentation."
-author: "rolyon"
+author: "davidmu1"
 localization_priority: Normal
 ms.prod: "Intune"
 doc_type: resourcePageType
@@ -53,8 +53,6 @@ Here is a JSON representation of the resource.
   "id": "String (identifier)"
 }
 ```
-
-
 
 
 

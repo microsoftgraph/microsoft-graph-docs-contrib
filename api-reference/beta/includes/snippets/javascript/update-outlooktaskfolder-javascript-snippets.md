@@ -16,6 +16,6 @@ const outlookTaskFolder = {
 
 let res = await client.api('/me/outlook/taskFolders/AAMkADIyAAAhrbPWAAA=')
 	.version('beta')
-	.update({outlookTaskFolder : outlookTaskFolder});
+	.update(outlookTaskFolder);
 
 ```

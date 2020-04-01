@@ -26,6 +26,6 @@ const onlineMeeting = {
 
 let res = await client.api('/app/onlineMeetings')
 	.version('beta')
-	.post({onlineMeeting : onlineMeeting});
+	.post(onlineMeeting);
 
 ```

@@ -9,6 +9,8 @@ doc_type: apiPageType
 
 # Create event
 
+Namespace: microsoft.graph
+
 Use this API to create a new event in a calendar. The calendar can be one for a [user](../resources/user.md), or the default calendar of an Office 365 [group](../resources/group.md). 
 
 ## Permissions
@@ -100,7 +102,7 @@ Content-type: application/json
 [!INCLUDE [sample-code](../includes/snippets/csharp/create-event-from-calendar-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# [Javascript](#tab/javascript)
+# [JavaScript](#tab/javascript)
 [!INCLUDE [sample-code](../includes/snippets/javascript/create-event-from-calendar-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 

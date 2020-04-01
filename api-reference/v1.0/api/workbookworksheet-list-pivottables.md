@@ -9,6 +9,8 @@ doc_type: apiPageType
 
 # List pivotTables
 
+Namespace: microsoft.graph
+
 Retrieve a list of workbookpivottable objects.
 
 ## Permissions
@@ -48,14 +50,14 @@ Here is an example of the request.
   "blockType": "request",
   "name": "get_pivottables"
 }-->
-```http
+```msgraph-interactive
 GET https://graph.microsoft.com/v1.0/me/drive/root/workbook/worksheets/{id}/pivotTables
 ```
 # [C#](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/get-pivottables-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# [Javascript](#tab/javascript)
+# [JavaScript](#tab/javascript)
 [!INCLUDE [sample-code](../includes/snippets/javascript/get-pivottables-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 

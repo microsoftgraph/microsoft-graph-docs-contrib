@@ -9,6 +9,8 @@ doc_type: apiPageType
 
 # Add a student
 
+Namespace: microsoft.graph
+
 Add a member to a class.
 
 ## Permissions
@@ -56,7 +58,7 @@ Content-length: 56
   "@odata.id":"https://graph.microsoft.com/v1.0/education/users/13015"
 }
 ```
-# [Javascript](#tab/javascript)
+# [JavaScript](#tab/javascript)
 [!INCLUDE [sample-code](../includes/snippets/javascript/create-educationuser-from-educationclass-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 

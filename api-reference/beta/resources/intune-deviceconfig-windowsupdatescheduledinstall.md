@@ -1,7 +1,7 @@
 ---
 title: "windowsUpdateScheduledInstall resource type"
 description: "Not yet documented"
-author: "rolyon"
+author: "davidmu1"
 localization_priority: Normal
 ms.prod: "Intune"
 doc_type: resourcePageType
@@ -21,7 +21,7 @@ Inherits from [windowsUpdateInstallScheduleType](../resources/intune-deviceconfi
 ## Properties
 |Property|Type|Description|
 |:---|:---|:---|
-|scheduledInstallDay|[weeklySchedule](../resources/intune-deviceconfig-weeklyschedule.md)|Scheduled Install Day in week. Possible values are: `userDefined`, `everyday`, `sunday`, `monday`, `tuesday`, `wednesday`, `thursday`, `friday`, `saturday`.|
+|scheduledInstallDay|[weeklySchedule](../resources/intune-deviceconfig-weeklyschedule.md)|Scheduled Install Day in week. Possible values are: `userDefined`, `everyday`, `sunday`, `monday`, `tuesday`, `wednesday`, `thursday`, `friday`, `saturday`, `noScheduledScan`.|
 |scheduledInstallTime|TimeOfDay|Scheduled Install Time during day|
 
 ## Relationships
@@ -41,8 +41,6 @@ Here is a JSON representation of the resource.
   "scheduledInstallTime": "String (time of day)"
 }
 ```
-
-
 
 
 

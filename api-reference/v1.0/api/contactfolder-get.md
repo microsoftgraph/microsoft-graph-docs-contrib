@@ -9,6 +9,8 @@ doc_type: apiPageType
 
 # Get contactFolder
 
+Namespace: microsoft.graph
+
 Get a contact folder by using the contact folder ID.
 
 There are two scenarios where an app can get another user's contact folder:
@@ -54,14 +56,14 @@ Here is an example of the request.
   "blockType": "request",
   "name": "get_contactfolder"
 }-->
-```http
+```msgraph-interactive
 GET https://graph.microsoft.com/v1.0/me/contactFolders/{id}
 ```
 # [C#](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/get-contactfolder-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# [Javascript](#tab/javascript)
+# [JavaScript](#tab/javascript)
 [!INCLUDE [sample-code](../includes/snippets/javascript/get-contactfolder-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 

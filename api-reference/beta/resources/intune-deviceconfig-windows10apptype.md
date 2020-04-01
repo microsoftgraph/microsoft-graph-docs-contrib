@@ -1,7 +1,7 @@
 ---
 title: "windows10AppType enum type"
 description: "Windows 10 Application type."
-author: "rolyon"
+author: "davidmu1"
 localization_priority: Normal
 ms.prod: "Intune"
 doc_type: enumPageType
@@ -20,8 +20,6 @@ Windows 10 Application type.
 |:---|:---|:---|
 |desktop|0|Desktop.|
 |universal|1|Universal.|
-
-
 
 
 

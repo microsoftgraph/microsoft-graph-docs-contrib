@@ -17,6 +17,6 @@ const directoryObject = {
 
 let res = await client.api('/servicePrincipals/{id}/owners')
 	.version('beta')
-	.post({directoryObject : directoryObject});
+	.post(directoryObject);
 
 ```

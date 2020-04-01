@@ -23,6 +23,6 @@ const group = {
 
 let res = await client.api('/groups/{id}')
 	.version('beta')
-	.update({group : group});
+	.update(group);
 
 ```

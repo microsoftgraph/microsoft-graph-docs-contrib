@@ -20,6 +20,6 @@ const contact = {
 };
 
 let res = await client.api('/me/contactFolders/{id}/contacts')
-	.post({contact : contact});
+	.post(contact);
 
 ```

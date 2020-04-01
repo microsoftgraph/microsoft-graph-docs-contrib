@@ -12,7 +12,7 @@ var displayName = "Myprefix_test_mysuffix";
 
 var mailNickname = "Myprefix_test_mysuffix";
 
-var onBehalfOfUserId = "onBehalfOfUserId-value";
+var onBehalfOfUserId = Guid.Parse("onBehalfOfUserId-value");
 
 await graphClient.DirectoryObjects
 	.ValidateProperties(entityType,displayName,mailNickname,onBehalfOfUserId)

@@ -1,7 +1,7 @@
 ---
 title: "windowsAutopilotSettings resource type"
 description: "The windowsAutopilotSettings resource represents a Windows Autopilot Account to sync data with Windows device data sync service."
-author: "rolyon"
+author: "davidmu1"
 localization_priority: Normal
 ms.prod: "Intune"
 doc_type: resourcePageType
@@ -50,8 +50,6 @@ Here is a JSON representation of the resource.
   "syncStatus": "String"
 }
 ```
-
-
 
 
 

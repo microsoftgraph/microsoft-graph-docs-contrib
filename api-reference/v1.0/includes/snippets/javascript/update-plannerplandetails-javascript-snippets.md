@@ -22,6 +22,6 @@ const plannerPlanDetails = {
 };
 
 let res = await client.api('/planner/plans/{plan-id}/details')
-	.update({plannerPlanDetails : plannerPlanDetails});
+	.update(plannerPlanDetails);
 
 ```

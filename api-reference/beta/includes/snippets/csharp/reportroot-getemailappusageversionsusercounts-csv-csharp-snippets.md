@@ -7,7 +7,7 @@ description: "Automatically generated file. DO NOT MODIFY"
 GraphServiceClient graphClient = new GraphServiceClient( authProvider );
 
 var getEmailAppUsageVersionsUserCounts = await graphClient.Reports
-	.GetEmailAppUsageVersionsUserCounts('D7')
+	.GetEmailAppUsageVersionsUserCounts("D7")
 	.Request()
 	.GetAsync();
 

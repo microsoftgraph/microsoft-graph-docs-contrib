@@ -9,6 +9,8 @@ doc_type: apiPageType
 
 # Get message
 
+Namespace: microsoft.graph
+
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 Retrieve the properties and relationships of the [message](../resources/message.md) object.
@@ -85,8 +87,12 @@ Do not supply a request body for this method.
 ## Response
 
 If successful, this method returns a `200 OK` response code and [message](../resources/message.md) object in the response body.
-## Example
-##### Request 1
+
+Specifying the `$value` parameter returns the message content in MIME format, and not a **message** resource.
+
+## Examples
+### Example 1
+#### Request
 The first example gets the specified message. It does not specify any header to indicate the desired format of the body to be returned.
 
 # [HTTP](#tab/http)
@@ -95,14 +101,14 @@ The first example gets the specified message. It does not specify any header to 
   "sampleKeys": ["AAMkAGI1AAAoZCfHAAA="],
   "name": "get_message"
 }-->
-```http
+```msgraph-interactive
 GET https://graph.microsoft.com/beta/me/messages/AAMkAGI1AAAoZCfHAAA=
 ```
 # [C#](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/get-message-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# [Javascript](#tab/javascript)
+# [JavaScript](#tab/javascript)
 [!INCLUDE [sample-code](../includes/snippets/javascript/get-message-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
@@ -110,17 +116,14 @@ GET https://graph.microsoft.com/beta/me/messages/AAMkAGI1AAAoZCfHAAA=
 [!INCLUDE [sample-code](../includes/snippets/objc/get-message-objc-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# [Java](#tab/java)
-[!INCLUDE [sample-code](../includes/snippets/java/get-message-java-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
 ---
 
-##### Response 1
+#### Response
 Here is an example of the response. The **body** and **uniqueBody** properties are returned in the default HTML format.
 Note: The response object shown here is truncated for brevity. All of the properties will be returned from an actual call.
 <!-- {
   "blockType": "response",
+  "name": "get_message",
   "truncated": true,
   "@odata.type": "microsoft.graph.message"
 } -->
@@ -146,7 +149,9 @@ Content-length: 523
 }
 ```
 
-##### Request 2
+
+### Example 2
+#### Request
 In the next example, the signed-in user is Dana Swope. The example shows getting the details of all the mentions in the specified message in Dana's mailbox.
 
 # [HTTP](#tab/http)
@@ -155,14 +160,14 @@ In the next example, the signed-in user is Dana Swope. The example shows getting
   "sampleKeys": ["AQMkADJmMTUAAAgVZAAAA"],
   "name": "get_mentions_in_message"
 }-->
-```http
+```msgraph-interactive
 GET https://graph.microsoft.com/beta/me/messages/AQMkADJmMTUAAAgVZAAAA/?$expand=mentions
 ```
 # [C#](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/get-mentions-in-message-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# [Javascript](#tab/javascript)
+# [JavaScript](#tab/javascript)
 [!INCLUDE [sample-code](../includes/snippets/javascript/get-mentions-in-message-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
@@ -170,16 +175,13 @@ GET https://graph.microsoft.com/beta/me/messages/AQMkADJmMTUAAAgVZAAAA/?$expand=
 [!INCLUDE [sample-code](../includes/snippets/objc/get-mentions-in-message-objc-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# [Java](#tab/java)
-[!INCLUDE [sample-code](../includes/snippets/java/get-mentions-in-message-java-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
 ---
 
-##### Response 2
+#### Response
 Here is an example of the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.
 <!-- {
   "blockType": "response",
+  "name": "get_mentions_in_message",
   "truncated": true,
   "@odata.type": "microsoft.graph.message"
 } -->
@@ -274,8 +276,8 @@ Content-length: 2248
 }
 ```
 
-
-##### Request 3
+### Example 3
+#### Request
 
 The third example shows how to use a `Prefer: outlook.body-content-type="text"` header to get the **body** and **uniqueBody** of the specified message in text format.
 
@@ -287,7 +289,7 @@ The third example shows how to use a `Prefer: outlook.body-content-type="text"` 
   "name": "get_message_in_text"
 }-->
 
-```http
+```msgraph-interactive
 GET https://graph.microsoft.com/beta/me/messages/AAMkAGI1AAAoZCfHAAA=/?$select=subject,body,bodyPreview,uniqueBody
 Prefer: outlook.body-content-type="text"
 ```
@@ -295,7 +297,7 @@ Prefer: outlook.body-content-type="text"
 [!INCLUDE [sample-code](../includes/snippets/csharp/get-message-in-text-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# [Javascript](#tab/javascript)
+# [JavaScript](#tab/javascript)
 [!INCLUDE [sample-code](../includes/snippets/javascript/get-message-in-text-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
@@ -303,19 +305,16 @@ Prefer: outlook.body-content-type="text"
 [!INCLUDE [sample-code](../includes/snippets/objc/get-message-in-text-objc-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# [Java](#tab/java)
-[!INCLUDE [sample-code](../includes/snippets/java/get-message-in-text-java-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
 ---
 
 
-##### Response 3
+#### Response
 
 Here is an example of the response. 
 Note: The response includes a `Preference-Applied: outlook.body-content-type` header to acknowledge the `Prefer: outlook.body-content-type` request header.
 <!-- {
   "blockType": "response",
+  "name": "get_message_in_text",
   "truncated": true,
   "@odata.type": "microsoft.graph.message"
 } -->
@@ -323,7 +322,6 @@ Note: The response includes a `Preference-Applied: outlook.body-content-type` he
 HTTP/1.1 200 OK
 Content-type: application/json
 Preference-Applied: outlook.body-content-type="text"
-Content-length: 1550
 
 {
     "@odata.context":"https://graph.microsoft.com/beta/$metadata#users('cd209b0b-3f83-4c35-82d2-d88a61820480')/messages(subject,body,bodyPreview,uniqueBody)/$entity",
@@ -341,8 +339,8 @@ Content-length: 1550
     }
 }
 ```
-
-##### Request 4
+### Example 4
+#### Request
 
 The fourth example shows how to get the Internet message headers of a specific message.  
 
@@ -354,14 +352,14 @@ The fourth example shows how to get the Internet message headers of a specific m
   "name": "get_message_internet_headers"
 }-->
 
-```http
+```msgraph-interactive
 GET https://graph.microsoft.com/beta/me/messages/AAMkAGVmMDEz/?$select=internetMessageHeaders
 ```
 # [C#](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/get-message-internet-headers-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# [Javascript](#tab/javascript)
+# [JavaScript](#tab/javascript)
 [!INCLUDE [sample-code](../includes/snippets/javascript/get-message-internet-headers-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
@@ -369,19 +367,16 @@ GET https://graph.microsoft.com/beta/me/messages/AAMkAGVmMDEz/?$select=internetM
 [!INCLUDE [sample-code](../includes/snippets/objc/get-message-internet-headers-objc-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# [Java](#tab/java)
-[!INCLUDE [sample-code](../includes/snippets/java/get-message-internet-headers-java-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
 ---
 
 
-##### Response 4
+#### Response
 
 Here is an example of the response. Note: The number of Internet message headers in the response object has been reduced for brevity.
 
 <!-- {
   "blockType": "response",
+  "name": "get_message_internet_headers",
   "truncated": true,
   "@odata.type": "microsoft.graph.message"
 } -->
@@ -419,11 +414,140 @@ Content-type: application/json
 }
 ```
 
+
+### Example 5
+#### Request
+The fifth example gets the MIME content of a message in the signed-in user's mailbox.
+
+
+# [HTTP](#tab/http)
+<!-- {
+  "blockType": "request",
+  "name": "get_message_in_mime",
+  "sampleKeys": ["4aade2547798441eab5188a7a2436bc1"]
+} -->
+```msgraph-interactive
+GET https://graph.microsoft.com/beta/me/messages/4aade2547798441eab5188a7a2436bc1/$value
+```
+# [C#](#tab/csharp)
+[!INCLUDE [sample-code](../includes/snippets/csharp/get-message-in-mime-csharp-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [JavaScript](#tab/javascript)
+[!INCLUDE [sample-code](../includes/snippets/javascript/get-message-in-mime-javascript-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Objective-C](#tab/objc)
+[!INCLUDE [sample-code](../includes/snippets/objc/get-message-in-mime-objc-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+---
+
+
+#### Response
+The following is the response. The MIME content begins with the `MIME-Version` header. 
+<!-- {
+  "blockType": "response",
+  "name": "get_message_in_mime",
+  "truncated": true,
+  "@odata.type": "string"
+} -->
+```http
+HTTP/1.1 200 OK
+Content-type: text/plain
+
+Received: from contoso.com (10.194.241.197) by 
+contoso.com (10.194.241.197) with Microsoft 
+SMTP Server (version=TLS1_2, 
+cipher=TLS_ECDHE_RSA_WITH_AES_256_CBC_SHA384_P256) id 15.1.1374.0 via Mailbox 
+Transport; Mon, 4 Sep 2017 03:00:08 -0700 
+Received: from contoso.com (10.194.241.197) by 
+contoso.com (10.194.241.197) with Microsoft 
+SMTP Server (version=TLS1_2, 
+cipher=TLS_ECDHE_RSA_WITH_AES_256_CBC_SHA384_P256) id 15.1.1374.0; Mon, 4 Sep 
+2017 03:00:07 -0700 
+Received: from contoso.com 
+(fe80::5bf:5059:4ca0:5017) by contoso.com 
+(fe80::5bf:5059:4ca0:5017%12) with mapi id 15.01.1374.000; Mon, 4 Sep 2017 
+03:00:01 -0700 
+From: Administrator <admin@contoso.com> 
+To: Administrator <admin@contoso.com> 
+Subject: This email has attachment. 
+Thread-Topic: This email has attachment. 
+Thread-Index: AQHTJWSHSywMzSz8o0OJud48nG50GQ== 
+Date: Mon, 4 Sep 2017 10:00:00 +0000 
+Message-ID: 
+                <4aade2547798441eab5188a7a2436bc1@contoso.com> 
+Accept-Language: en-US 
+Content-Language: en-US 
+X-MS-Exchange-Organization-AuthAs: Internal 
+X-MS-Exchange-Organization-AuthMechanism: 04 
+X-MS-Exchange-Organization-AuthSource: 
+                contoso.com 
+X-MS-Has-Attach: yes 
+X-MS-Exchange-Organization-Network-Message-Id: 
+                0ffdb402-ec03-42c8-5d32-08d4f37bb517 
+X-MS-Exchange-Organization-SCL: -1 
+X-MS-TNEF-Correlator: 
+X-MS-Exchange-Organization-RecordReviewCfmType: 0 
+
+MIME-Version: 1.0 
+Content-Type: multipart/mixed; 
+                boundary="_004_4aade2547798441eab5188a7a2436bc1contoso_" 
+ 
+--_004_4aade2547798441eab5188a7a2436bc1contoso_ 
+Content-Type: multipart/alternative; 
+                boundary="_000_4aade2547798441eab5188a7a2436bc1contoso_" 
+ 
+--_000_4aade2547798441eab5188a7a2436bc1contoso_ 
+Content-Type: text/plain; charset="iso-8859-1" 
+Content-Transfer-Encoding: quoted-printable 
+ 
+The attachment is an email. 
+ 
+--_000_4aade2547798441eab5188a7a2436bc1contoso_ 
+Content-Type: text/html; charset="iso-8859-1" 
+Content-Transfer-Encoding: quoted-printable 
+ 
+<html> 
+<head> 
+<meta http-equiv=3D"Content-Type" content=3D"text/html; charset=3Diso-8859-= 
+1"> 
+<style type=3D"text/css" style=3D"display:none;"><!-- P {margin-top:0;margi= 
+n-bottom:0;} --></style> 
+</head> 
+<body dir=3D"ltr"> 
+<div id=3D"divtagdefaultwrapper" style=3D"font-size:12pt;color:#000000;font= 
+-family:Calibri,Helvetica,sans-serif;" dir=3D"ltr"> 
+<p>The attachment is an email.</p> 
+</div> 
+</body> 
+</html> 
+ 
+--_000_4aade2547798441eab5188a7a2436bc1contoso_-- 
+ 
+--_004_4aade2547798441eab5188a7a2436bc1contoso_ 
+Content-Type: application/octet-stream; name="Attachment email.eml" 
+Content-Description: Attachment email.eml 
+Content-Disposition: attachment; filename="Attachment email.eml"; size=408; 
+                creation-date="Mon, 04 Sep 2017 09:59:43 GMT"; 
+                modification-date="Mon, 04 Sep 2017 09:59:43 GMT" 
+Content-Transfer-Encoding: base64 
+ 
+RnJvbToJQWRtaW5pc3RyYXRvciA8YWRtaW5AdGVuYW50LUVYSEItMTQ3MS5jb20+DQpTZW50OglN 
+b25kYXksIFNlcHRlbWJlciA0LCAyMDE3IDM6MjYgUE0NClRvOglTcml2YXJkaGFuIEhlYmJhcg0K 
+U3ViamVjdDoJQXR0YWNobWVudCBlbWFpbA0KDQpJIHdpbGwgYXR0YWNoIHRoaXMgZW1haWwgdG8g 
+YW5vdGhlciBtYWlsLg0K 
+ 
+--_004_4aade2547798441eab5188a7a2436bc1contoso_-- 
+```
+
+
 ## See also
 
 - [Add custom data to resources using extensions](/graph/extensibility-overview)
-- [Add custom data to users using open extensions (preview)](/graph/extensibility-open-users)
-- [Add custom data to groups using schema extensions (preview)](/graph/extensibility-schema-groups)
+- [Add custom data to users using open extensions](/graph/extensibility-open-users)
+- [Add custom data to groups using schema extensions](/graph/extensibility-schema-groups)
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2015-10-25 14:57:30 UTC -->

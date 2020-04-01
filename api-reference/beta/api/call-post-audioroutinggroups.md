@@ -1,13 +1,15 @@
 ---
 title: "Create audio routing group"
 description: "Create a new **audioRoutingGroup**."
-author: "VinodRavichandran"
+author: "ananmishr"
 localization_priority: Normal
-ms.prod: "microsoft-teams"
+ms.prod: "cloud-communications"
 doc_type: apiPageType
 ---
 
 # Create audio routing group
+
+Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
@@ -26,8 +28,9 @@ One of the following permissions is required to call this API. To learn more, in
 <!-- { "blockType": "ignored" } -->
 ```http
 POST /app/calls/{id}/audioRoutingGroups
-POST /applications/{id}/calls/{id}/audioRoutingGroups
+POST /communications/calls/{id}/audioRoutingGroups
 ```
+> **Note:** The `/app` path is deprecated. Going forward, use the `/communications` path.
 
 ## Request headers
 | Name          | Description               |
@@ -54,7 +57,7 @@ The following example shows the request.
   "name": "create-audioRoutingGroup-from-call"
 }-->
 ```http
-POST https://graph.microsoft.com/beta/app/calls/{id}/audioRoutingGroups
+POST https://graph.microsoft.com/beta/communications/calls/{id}/audioRoutingGroups
 Content-Type: application/json
 Content-Length: 233
 
@@ -73,16 +76,12 @@ Content-Length: 233
 [!INCLUDE [sample-code](../includes/snippets/csharp/create-audioroutinggroup-from-call-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# [Javascript](#tab/javascript)
+# [JavaScript](#tab/javascript)
 [!INCLUDE [sample-code](../includes/snippets/javascript/create-audioroutinggroup-from-call-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Objective-C](#tab/objc)
 [!INCLUDE [sample-code](../includes/snippets/objc/create-audioroutinggroup-from-call-objc-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [Java](#tab/java)
-[!INCLUDE [sample-code](../includes/snippets/java/create-audioroutinggroup-from-call-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
@@ -121,7 +120,7 @@ Content-Length: 233
 The following example shows the request.
 
 ```http
-POST https://graph.microsoft.com/beta/app/calls/{id}/audioRoutingGroups
+POST https://graph.microsoft.com/beta/communications/calls/{id}/audioRoutingGroups
 Content-Type: application/json
 Content-Length: 233
 ```

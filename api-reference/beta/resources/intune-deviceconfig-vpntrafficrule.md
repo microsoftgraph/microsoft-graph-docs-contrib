@@ -1,7 +1,7 @@
 ---
 title: "vpnTrafficRule resource type"
 description: "VPN Traffic Rule definition."
-author: "rolyon"
+author: "davidmu1"
 localization_priority: Normal
 ms.prod: "Intune"
 doc_type: resourcePageType
@@ -78,8 +78,6 @@ Here is a JSON representation of the resource.
   "claims": "String"
 }
 ```
-
-
 
 
 

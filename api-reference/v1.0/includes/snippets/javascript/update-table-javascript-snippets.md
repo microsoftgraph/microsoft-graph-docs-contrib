@@ -18,6 +18,6 @@ const workbookTable = {
 };
 
 let res = await client.api('/me/drive/items/{id}/workbook/tables/{id|name}')
-	.update({workbookTable : workbookTable});
+	.update(workbookTable);
 
 ```

@@ -15,6 +15,6 @@ const directoryObject = {
 };
 
 let res = await client.api('/users/{id}/manager/$ref')
-	.put({directoryObject : directoryObject});
+	.put(directoryObject);
 
 ```

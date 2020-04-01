@@ -1,7 +1,7 @@
 ---
 title: "windows10VpnAuthenticationMethod enum type"
 description: "Windows 10 VPN connection types."
-author: "rolyon"
+author: "davidmu1"
 localization_priority: Normal
 ms.prod: "Intune"
 doc_type: enumPageType
@@ -21,8 +21,6 @@ Windows 10 VPN connection types.
 |certificate|0|Authenticate with a certificate.|
 |usernameAndPassword|1|Use username and password for authentication.|
 |customEapXml|2|Authentication method is specified in custom EAP XML.|
-
-
 
 
 

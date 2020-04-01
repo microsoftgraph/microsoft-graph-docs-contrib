@@ -1,7 +1,7 @@
 ---
 title: "windowsDeviceHealthState enum type"
 description: "Computer endpoint protection state"
-author: "rolyon"
+author: "davidmu1"
 localization_priority: Normal
 ms.prod: "Intune"
 doc_type: enumPageType
@@ -24,8 +24,6 @@ Computer endpoint protection state
 |manualStepsPending|4|Computer is in pending manual steps state|
 |offlineScanPending|8|Computer is in pending offline scan state|
 |critical|16|Computer is in critical failure state|
-
-
 
 
 

@@ -1,7 +1,7 @@
 ---
 title: "adminConsent resource type"
 description: "Admin consent information."
-author: "rolyon"
+author: "davidmu1"
 localization_priority: Normal
 ms.prod: "Intune"
 doc_type: resourcePageType
@@ -19,6 +19,7 @@ Admin consent information.
 |Property|Type|Description|
 |:---|:---|:---|
 |shareAPNSData|[adminConsentState](../resources/intune-devices-adminconsentstate.md)|The admin consent state of sharing user and device data to Apple. Possible values are: `notConfigured`, `granted`, `notGranted`.|
+|shareUserExperienceAnalyticsData|[adminConsentState](../resources/intune-devices-adminconsentstate.md)|Gets or sets the admin consent for sharing User experience analytics data. Possible values are: `notConfigured`, `granted`, `notGranted`.|
 
 ## Relationships
 None
@@ -33,11 +34,10 @@ Here is a JSON representation of the resource.
 ``` json
 {
   "@odata.type": "#microsoft.graph.adminConsent",
-  "shareAPNSData": "String"
+  "shareAPNSData": "String",
+  "shareUserExperienceAnalyticsData": "String"
 }
 ```
-
-
 
 
 

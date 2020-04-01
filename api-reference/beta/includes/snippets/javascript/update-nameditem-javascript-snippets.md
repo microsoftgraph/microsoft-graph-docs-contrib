@@ -21,6 +21,6 @@ const workbookNamedItem = {
 
 let res = await client.api('/me/drive/items/{id}/workbook/names/{name}')
 	.version('beta')
-	.update({workbookNamedItem : workbookNamedItem});
+	.update(workbookNamedItem);
 
 ```

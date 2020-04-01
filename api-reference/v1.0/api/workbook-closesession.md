@@ -9,6 +9,8 @@ doc_type: apiPageType
 
 # Close Session
 
+Namespace: microsoft.graph
+
 Use this API to close an existing workbook session. 
 
 ## Permissions
@@ -62,7 +64,7 @@ Content-length: 0
 [!INCLUDE [sample-code](../includes/snippets/csharp/close-excel-session-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# [Javascript](#tab/javascript)
+# [JavaScript](#tab/javascript)
 [!INCLUDE [sample-code](../includes/snippets/javascript/close-excel-session-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 

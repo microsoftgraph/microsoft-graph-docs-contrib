@@ -9,6 +9,8 @@ doc_type: apiPageType
 ---
 # List the pages in the site pages list of a site
 
+Namespace: microsoft.graph
+
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 Get the collection of [sitePage][] objects from the site pages [list][] in a site [site][]. All pages in the site are returned (with pagination).
@@ -29,7 +31,7 @@ One of the following permissions is required to call this API. To learn more, in
 
 ## HTTP request
 
-```http
+```msgraph-interactive
 GET /sites/{site-id}/pages
 
 ```
@@ -47,7 +49,7 @@ GET /sites/{site-id}/pages
 }
 -->
 
-```http
+```msgraph-interactive
 GET /sites/{site-id}/pages
 ```
 

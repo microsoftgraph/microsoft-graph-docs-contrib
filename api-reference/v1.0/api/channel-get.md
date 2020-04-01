@@ -9,6 +9,8 @@ doc_type: apiPageType
 
 # Get channel
 
+Namespace: microsoft.graph
+
 
 
 Retrieve the properties and relationships of a [channel](../resources/channel.md).
@@ -55,14 +57,14 @@ Here is an example of the request.
   "blockType": "request",
   "name": "get_channel"
 }-->
-```http
+```msgraph-interactive
 GET https://graph.microsoft.com/v1.0/teams/{id}/channels/{id}
 ```
 # [C#](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/get-channel-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# [Javascript](#tab/javascript)
+# [JavaScript](#tab/javascript)
 [!INCLUDE [sample-code](../includes/snippets/javascript/get-channel-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 

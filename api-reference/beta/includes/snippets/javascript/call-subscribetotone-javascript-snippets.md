@@ -11,10 +11,10 @@ const options = {
 const client = Client.init(options);
 
 const subscribeToToneOperation = {
-  clientContext: "d45324c1-fcb5-430a-902c-f20af696537c"
+  clientContext: "fd1c7836-4d84-4e24-b6aa-23188688cc54"
 };
 
-let res = await client.api('/app/calls/{id}/subscribeToTone')
+let res = await client.api('/communications/calls/{id}/subscribeToTone')
 	.version('beta')
 	.post(subscribeToToneOperation);
 

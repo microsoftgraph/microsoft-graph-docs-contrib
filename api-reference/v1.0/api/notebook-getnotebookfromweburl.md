@@ -9,6 +9,8 @@ doc_type: apiPageType
 
 # notebook: getNotebookFromWebUrl
 
+Namespace: microsoft.graph
+
 Retrieve the properties and relationships of a [notebook](../resources/notebook.md) object by using its URL path.
 
 The location can be user notebooks on Office 365, group notebooks, or SharePoint site-hosted team notebooks on Office 365.
@@ -63,7 +65,7 @@ Content-type: application/json
 [!INCLUDE [sample-code](../includes/snippets/csharp/notebook-fromweburl-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# [Javascript](#tab/javascript)
+# [JavaScript](#tab/javascript)
 [!INCLUDE [sample-code](../includes/snippets/javascript/notebook-fromweburl-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 

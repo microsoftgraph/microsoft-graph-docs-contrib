@@ -1,7 +1,7 @@
 ---
 title: "omaSettingDateTime resource type"
 description: "OMA Settings DateTime definition."
-author: "rolyon"
+author: "davidmu1"
 localization_priority: Normal
 ms.prod: "Intune"
 doc_type: resourcePageType
@@ -45,8 +45,6 @@ Here is a JSON representation of the resource.
   "value": "String (timestamp)"
 }
 ```
-
-
 
 
 

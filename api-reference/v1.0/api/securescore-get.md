@@ -9,6 +9,8 @@ doc_type: apiPageType
 
 # Get secureScore
 
+Namespace: microsoft.graph
+
 Retrieve the properties and relationships of a [secureScore](../resources/securescore.md) object.
 
 ## Permissions
@@ -55,14 +57,14 @@ The following is an example of the request.
   "name": "get_securescore"
 }-->
 
-```http
+```msgraph-interactive
 GET https://graph.microsoft.com/v1.0/security/secureScores/{id}
 ```
 # [C#](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/get-securescore-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# [Javascript](#tab/javascript)
+# [JavaScript](#tab/javascript)
 [!INCLUDE [sample-code](../includes/snippets/javascript/get-securescore-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 

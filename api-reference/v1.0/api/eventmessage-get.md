@@ -9,6 +9,8 @@ doc_type: apiPageType
 
 # Get eventMessage
 
+Namespace: microsoft.graph
+
 Get the properties and relationships of the [eventMessage](../resources/eventmessage.md) object. Apply the $expand parameter on the **event** navigation property to get the associated [event](../resources/event.md) in an attendee's calendar.
 
 Currently, this operation returns event message bodies in only HTML format.
@@ -54,14 +56,14 @@ The first example shows how to get the properties of an event message based on t
   "sampleKeys": ["AAMkADYAAAImV_lAAA="],
   "name": "get_eventmessage"
 }-->
-```http
+```msgraph-interactive
 GET https://graph.microsoft.com/v1.0/me/messages/AAMkADYAAAImV_lAAA=
 ```
 # [C#](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/get-eventmessage-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# [Javascript](#tab/javascript)
+# [JavaScript](#tab/javascript)
 [!INCLUDE [sample-code](../includes/snippets/javascript/get-eventmessage-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
@@ -107,6 +109,7 @@ Content-type: application/json
     "importance":"normal",
     "parentFolderId":"AQMkADYAAAIBDAAAAA==",
     "conversationId":"AAQkADYCipTiRjXQORU=",
+    "conversationIndex":"AdN/Xdgnql4N9FlrT0KKlOJGNdA5FQ==",
     "isDeliveryReceiptRequested":null,
     "isReadReceiptRequested":false,
     "isRead":false,
@@ -161,14 +164,14 @@ and apply an $expand parameter to get the properties of the event.
   "sampleKeys": ["AAMkADYAAAImV_jAAA="],
   "name": "get_event_based_on_eventmessage"
 }-->
-```http
+```msgraph-interactive
 GET https://graph.microsoft.com/v1.0/me/messages/AAMkADYAAAImV_jAAA=?$expand=microsoft.graph.eventMessage/event
 ```
 # [C#](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/get-event-based-on-eventmessage-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# [Javascript](#tab/javascript)
+# [JavaScript](#tab/javascript)
 [!INCLUDE [sample-code](../includes/snippets/javascript/get-event-based-on-eventmessage-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
@@ -213,8 +216,9 @@ Content-type: application/json
    "subject":"Kick off planning",
    "bodyPreview":"Let's collect opinions from our teams and organize action items.",
    "importance":"normal",
-    "parentFolderId":"AQMkADYAS4AAAIBDAAAAA==",
-    "conversationId":"AAQkADYRuffB3wDlPn-ReFZarI60=",
+   "parentFolderId":"AQMkADYAS4AAAIBDAAAAA==",
+   "conversationId":"AAQkADYRuffB3wDlPn-ReFZarI60=",
+   "conversationIndex":"AdN/XVP4JG598HfAOU+f9F4VlqsjrQ==",
    "isDeliveryReceiptRequested":null,
    "isReadReceiptRequested":false,
    "isRead":false,

@@ -9,6 +9,8 @@ doc_type: apiPageType
 
 # contactFolder: delta
 
+Namespace: microsoft.graph
+
 Get a set of contact folders that have been added, deleted, or removed from the user's mailbox.
 
 A **delta** function call for contact folders in a mailbox is similar to a GET request, except that by appropriately 
@@ -83,7 +85,7 @@ returning **contactFolder** rather than **message** collections.
   "blockType": "request",
   "name": "contactfolder_delta"
 }-->
-```http
+```msgraph-interactive
 GET https://graph.microsoft.com/v1.0/me/contactFolders/delta
 Prefer: odata.maxpagesize=2
 ```
@@ -91,7 +93,7 @@ Prefer: odata.maxpagesize=2
 [!INCLUDE [sample-code](../includes/snippets/csharp/contactfolder-delta-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# [Javascript](#tab/javascript)
+# [JavaScript](#tab/javascript)
 [!INCLUDE [sample-code](../includes/snippets/javascript/contactfolder-delta-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 

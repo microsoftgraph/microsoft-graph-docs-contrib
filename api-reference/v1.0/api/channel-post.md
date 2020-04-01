@@ -9,6 +9,8 @@ doc_type: apiPageType
 
 # Create Channel
 
+Namespace: microsoft.graph
+
 
 
 Create a new [channel](../resources/channel.md) in a Microsoft Team, as specified in the request body.
@@ -67,7 +69,7 @@ Content-type: application/json
 [!INCLUDE [sample-code](../includes/snippets/csharp/create-channel-from-group-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# [Javascript](#tab/javascript)
+# [JavaScript](#tab/javascript)
 [!INCLUDE [sample-code](../includes/snippets/javascript/create-channel-from-group-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 

@@ -9,6 +9,8 @@ doc_type: apiPageType
 
 # Get a group setting
 
+Namespace: microsoft.graph
+
 Retrieve the properties of a specific of group setting object.
 
 ## Permissions
@@ -58,14 +60,14 @@ If successful, this method returns a `200 OK` response code and [groupSetting](.
   "name": "get_groupsetting"
 }-->
 
-```http
+```msgraph-interactive
 GET https://graph.microsoft.com/v1.0/groupSettings/{id}
 ```
 # [C#](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/get-groupsetting-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# [Javascript](#tab/javascript)
+# [JavaScript](#tab/javascript)
 [!INCLUDE [sample-code](../includes/snippets/javascript/get-groupsetting-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 

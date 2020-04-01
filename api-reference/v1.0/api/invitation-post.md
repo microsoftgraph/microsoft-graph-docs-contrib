@@ -9,6 +9,8 @@ doc_type: apiPageType
 
 # Create invitation
 
+Namespace: microsoft.graph
+
 Use this API to create a new [invitation](../resources/invitation.md). Invitation adds an external user to the organization.
 
 When creating a new invitation you have several options available:
@@ -74,7 +76,7 @@ Content-length: 551
 [!INCLUDE [sample-code](../includes/snippets/csharp/create-invitation-post-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# [Javascript](#tab/javascript)
+# [JavaScript](#tab/javascript)
 [!INCLUDE [sample-code](../includes/snippets/javascript/create-invitation-post-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 

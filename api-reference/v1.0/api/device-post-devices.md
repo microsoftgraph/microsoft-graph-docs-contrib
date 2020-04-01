@@ -9,6 +9,8 @@ doc_type: apiPageType
 
 # Create device
 
+Namespace: microsoft.graph
+
 Create and register a new device in the organization.
 
 ## Permissions
@@ -72,7 +74,7 @@ Content-type: application/json
 [!INCLUDE [sample-code](../includes/snippets/csharp/create-device-from-devices-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# [Javascript](#tab/javascript)
+# [JavaScript](#tab/javascript)
 [!INCLUDE [sample-code](../includes/snippets/javascript/create-device-from-devices-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 

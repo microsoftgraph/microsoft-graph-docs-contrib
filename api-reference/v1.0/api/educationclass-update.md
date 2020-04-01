@@ -9,6 +9,8 @@ doc_type: apiPageType
 
 # Update educationclass properties
 
+Namespace: microsoft.graph
+
 Update the properties of a class.
 
 ## Permissions
@@ -39,7 +41,6 @@ In the request body, supply the values for relevant fields that should be update
 |description|String| Description of the class.|
 |displayName|String| Name of the class.|
 |mailNickname|String| Email alias for sending email to all users if that feature is enabled. |
-<!-- Please verify the revised description here. -->
 |classCode|String| Class code used by the school.|
 |externalId|String| ID of the class from the syncing system. |
 |externalName|String|Name of the class in the syncing system.|
@@ -70,7 +71,7 @@ Content-length: 224
 [!INCLUDE [sample-code](../includes/snippets/csharp/update-educationclass-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# [Javascript](#tab/javascript)
+# [JavaScript](#tab/javascript)
 [!INCLUDE [sample-code](../includes/snippets/javascript/update-educationclass-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
@@ -104,11 +105,11 @@ Content-length: 224
   "description": "World History Level 1",
   "classCode": "301",
   "createdBy": {
-        "user": {
-          "displayName": "Susana Rocha",
-          "id": "14012",
-        }
-      },
+    "user": {
+      "displayName": "Susana Rocha",
+      "id": "14012"
+    }
+  },
   "displayName": "History - World History 1",
   "externalId": "301",
   "externalName": "World History Level 1",

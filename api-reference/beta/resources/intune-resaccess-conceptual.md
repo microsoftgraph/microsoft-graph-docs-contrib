@@ -4,10 +4,11 @@ description: "Lists the Microsoft Graph API for Intune endpoints (REST) that man
 author: "rolyon"
 localization_priority: Normal
 ms.prod: "intune"
-doc_type: conceptualPageType
 ---
 
 # Manage resource access certificates in Intune
+
+Namespace: microsoft.graph
 
 > **Important:** APIs under the /beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported.
 

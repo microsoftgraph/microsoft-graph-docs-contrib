@@ -9,6 +9,8 @@ doc_type: apiPageType
 
 # Create Session
 
+Namespace: microsoft.graph
+
 Use this API to create a new workbook session. 
 
 Excel APIs can be called in one of two modes: 
@@ -73,7 +75,7 @@ Content-length: 52
 [!INCLUDE [sample-code](../includes/snippets/csharp/create-excel-session-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# [Javascript](#tab/javascript)
+# [JavaScript](#tab/javascript)
 [!INCLUDE [sample-code](../includes/snippets/javascript/create-excel-session-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 

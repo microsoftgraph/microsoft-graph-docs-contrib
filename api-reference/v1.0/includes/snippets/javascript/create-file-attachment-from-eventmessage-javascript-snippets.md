@@ -20,6 +20,6 @@ const attachment = {
 };
 
 let res = await client.api('/me/messages/{id}/attachments')
-	.post({attachment : attachment});
+	.post(attachment);
 
 ```

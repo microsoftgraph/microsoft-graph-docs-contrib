@@ -18,6 +18,6 @@ const profilePhoto = {
 
 let res = await client.api('/users/{id|userPrincipalName}/photo')
 	.version('beta')
-	.update({profilePhoto : profilePhoto});
+	.update(profilePhoto);
 
 ```

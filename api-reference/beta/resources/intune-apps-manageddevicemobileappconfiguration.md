@@ -1,7 +1,7 @@
 ---
 title: "managedDeviceMobileAppConfiguration resource type"
 description: "An abstract class for Mobile app configuration for enrolled devices."
-author: "rolyon"
+author: "davidmu1"
 localization_priority: Normal
 ms.prod: "Intune"
 doc_type: resourcePageType
@@ -68,8 +68,6 @@ Here is a JSON representation of the resource.
   "version": 1024
 }
 ```
-
-
 
 
 

@@ -15,7 +15,7 @@ var workbookRangeFormat = new WorkbookRangeFormat
 };
 
 await graphClient.Me.Drive.Items["{id}"].Workbook.Worksheets["{sheet-id}"]
-	.Range('$A$1').Format
+	.Range("$A$1").Format
 	.Request()
 	.UpdateAsync(workbookRangeFormat);
 

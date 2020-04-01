@@ -16,6 +16,6 @@ const driveItem = {
 
 let res = await client.api('/drive/bundles/{bundle-id}/children')
 	.version('beta')
-	.post({driveItem : driveItem});
+	.post(driveItem);
 
 ```

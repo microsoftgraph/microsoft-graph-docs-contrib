@@ -1,7 +1,7 @@
 ---
 title: "deliveryOptimizationBandwidthPercentage resource type"
 description: "Bandwidth limits specified as a percentage."
-author: "rolyon"
+author: "davidmu1"
 localization_priority: Normal
 ms.prod: "Intune"
 doc_type: resourcePageType
@@ -43,8 +43,6 @@ Here is a JSON representation of the resource.
   "maximumForegroundBandwidthPercentage": 1024
 }
 ```
-
-
 
 
 

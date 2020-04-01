@@ -9,6 +9,8 @@ doc_type: "apiPageType"
 
 # Update educationoutcome
 
+Namespace: microsoft.graph
+
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 Update the properties of an [educationOutcome](../resources/educationoutcome.md) object.
@@ -56,6 +58,8 @@ If successful, this method returns a `200 OK` response code and an updated [educ
 #### Request
 
 The following is an example of the request for updating a feedback outcome.
+
+# [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "update_educationfeedbackoutcome"
@@ -75,6 +79,12 @@ Content-type: application/json
     }
 }
 ```
+# [JavaScript](#tab/javascript)
+[!INCLUDE [sample-code](../includes/snippets/javascript/update-educationfeedbackoutcome-javascript-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+---
+
 
 #### Response
 
@@ -120,6 +130,8 @@ Content-type: application/json
 #### Request
 
 The following is an example of the request for updating a points outcome.
+
+# [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "update_educationpointsoutcome"
@@ -137,6 +149,12 @@ Content-type: application/json
     }
 }
 ```
+# [JavaScript](#tab/javascript)
+[!INCLUDE [sample-code](../includes/snippets/javascript/update-educationpointsoutcome-javascript-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+---
+
 
 #### Response
 
@@ -179,6 +197,8 @@ Content-type: application/json
 #### Request
 
 The following is an example of the request for updating a rubric outcome.
+
+# [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "update_educationoutcome"
@@ -218,6 +238,12 @@ Content-type: application/json
     ]
 }
 ```
+# [JavaScript](#tab/javascript)
+[!INCLUDE [sample-code](../includes/snippets/javascript/update-educationoutcome-javascript-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+---
+
 
 #### Response
 

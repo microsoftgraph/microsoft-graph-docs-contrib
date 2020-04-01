@@ -1,7 +1,7 @@
 ---
 title: "groupPolicyPresentationValueDecimal resource type"
 description: "The entity represents an unsigned integer value of a decimal text box presentation on a policy definition."
-author: "rolyon"
+author: "davidmu1"
 localization_priority: Normal
 ms.prod: "Intune"
 doc_type: resourcePageType
@@ -58,8 +58,6 @@ Here is a JSON representation of the resource.
   "value": 1024
 }
 ```
-
-
 
 
 

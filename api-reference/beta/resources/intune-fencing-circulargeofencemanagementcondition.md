@@ -1,7 +1,7 @@
 ---
 title: "circularGeofenceManagementCondition resource type"
 description: "Contains the information to define a circular geo-fence management condition, an area of interest, to monitor."
-author: "rolyon"
+author: "davidmu1"
 localization_priority: Normal
 ms.prod: "Intune"
 doc_type: resourcePageType
@@ -73,8 +73,6 @@ Here is a JSON representation of the resource.
   "radiusInMeters": "<Unknown Primitive Type Edm.Single>"
 }
 ```
-
-
 
 
 

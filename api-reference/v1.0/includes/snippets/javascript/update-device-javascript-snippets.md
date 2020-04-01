@@ -15,6 +15,6 @@ const device = {
 };
 
 let res = await client.api('/devices/{id}')
-	.update({device : device});
+	.update(device);
 
 ```

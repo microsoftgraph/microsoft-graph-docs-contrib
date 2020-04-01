@@ -10,21 +10,27 @@ var recipients = new List<DriveRecipient>()
 {
 	new DriveRecipient
 	{
-		Email = "john@contoso.com"
-	},
-	new DriveRecipient
-	{
-		Email = "ryan@external.com"
+		Email = "ryan@contoso.org"
 	}
 };
 
+var message = "Here's the file that we're collaborating on.";
+
+var requireSignIn = true;
+
+var sendInvitation = true;
+
 var roles = new List<String>()
 {
-	"read"
+	"write"
 };
 
-await graphClient.Shares["{encoded-sharing-url}"].Permission
-	.Grant(roles,recipients)
+var password = "password123";
+
+var expirationDateTime = "2018-07-15T14:00:00Z";
+
+await graphClient.Me.Drive.Items["{item-id}"]
+	.Invite(recipients,requireSignIn,roles,sendInvitation,message,expirationDateTime,password)
 	.Request()
 	.PostAsync();
 

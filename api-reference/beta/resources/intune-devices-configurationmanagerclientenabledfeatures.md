@@ -1,7 +1,7 @@
 ---
 title: "configurationManagerClientEnabledFeatures resource type"
 description: "configuration Manager client enabled features"
-author: "rolyon"
+author: "davidmu1"
 localization_priority: Normal
 ms.prod: "Intune"
 doc_type: resourcePageType
@@ -50,8 +50,6 @@ Here is a JSON representation of the resource.
   "officeApps": true
 }
 ```
-
-
 
 
 

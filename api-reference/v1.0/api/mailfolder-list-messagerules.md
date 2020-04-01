@@ -9,6 +9,8 @@ doc_type: apiPageType
 
 # List rules
 
+Namespace: microsoft.graph
+
 Get all the [messageRule](../resources/messagerule.md) objects defined for the user's Inbox.
 
 ## Permissions
@@ -47,14 +49,14 @@ Here is an example of the request.
   "sampleKeys": ["inbox"],
   "name": "get_messagerules"
 }-->
-```http
+```msgraph-interactive
 GET https://graph.microsoft.com/v1.0/me/mailFolders/inbox/messageRules
 ```
 # [C#](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/get-messagerules-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# [Javascript](#tab/javascript)
+# [JavaScript](#tab/javascript)
 [!INCLUDE [sample-code](../includes/snippets/javascript/get-messagerules-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 

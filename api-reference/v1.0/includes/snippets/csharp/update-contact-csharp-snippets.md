@@ -15,7 +15,7 @@ var contact = new Contact
 		State = "WA",
 		PostalCode = "98121"
 	},
-	Birthday = "1974-07-22"
+	Birthday = DateTimeOffset.Parse("1974-07-22")
 };
 
 await graphClient.Me.Contacts["{id}"]

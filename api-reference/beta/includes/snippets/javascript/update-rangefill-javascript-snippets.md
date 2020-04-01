@@ -16,6 +16,6 @@ const workbookRangeFill = {
 
 let res = await client.api('/me/drive/items/{id}/workbook/names/{name}/range/format/fill')
 	.version('beta')
-	.update({workbookRangeFill : workbookRangeFill});
+	.update(workbookRangeFill);
 
 ```

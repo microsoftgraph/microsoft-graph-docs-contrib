@@ -17,6 +17,6 @@ const groupLifecyclePolicy = {
 };
 
 let res = await client.api('/groupLifecyclePolicies/{id}')
-	.update({groupLifecyclePolicy : groupLifecyclePolicy});
+	.update(groupLifecyclePolicy);
 
 ```

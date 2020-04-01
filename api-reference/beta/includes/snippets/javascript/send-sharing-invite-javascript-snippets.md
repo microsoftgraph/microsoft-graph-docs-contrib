@@ -13,16 +13,18 @@ const client = Client.init(options);
 const permission = {
   recipients: [
     {
-      email: "john@contoso.com"
-    },
-    {
-      email: "ryan@external.com"
+      email: "ryan@contoso.org"
     }
   ],
-  roles: ["read"]
+  message: "Here's the file that we're collaborating on.",
+  requireSignIn: true,
+  sendInvitation: true,
+  roles: [ "write" ],
+  password: "password123",
+  expirationDateTime: "2018-07-15T14:00:00.000Z"
 };
 
-let res = await client.api('/shares/{encoded-sharing-url}/permission/grant')
+let res = await client.api('/me/drive/items/{item-id}/invite')
 	.version('beta')
 	.post(permission);
 

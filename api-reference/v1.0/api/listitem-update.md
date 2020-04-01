@@ -9,6 +9,8 @@ doc_type: apiPageType
 ---
 # Update listItem
 
+Namespace: microsoft.graph
+
 Update the properties on a **[listItem][]**.
 
 ## Permissions
@@ -71,7 +73,7 @@ Content-Type: application/json
 [!INCLUDE [sample-code](../includes/snippets/csharp/update-listitem-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# [Javascript](#tab/javascript)
+# [JavaScript](#tab/javascript)
 [!INCLUDE [sample-code](../includes/snippets/javascript/update-listitem-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 

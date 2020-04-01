@@ -23,6 +23,6 @@ const bookingBusiness = {
 
 let res = await client.api('/bookingBusinesses/fabrikam@M365B489948.onmicrosoft.com')
 	.version('beta')
-	.update({bookingBusiness : bookingBusiness});
+	.update(bookingBusiness);
 
 ```

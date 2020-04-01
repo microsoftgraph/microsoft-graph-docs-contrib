@@ -1,7 +1,7 @@
 ---
 title: "roleScopeTag resource type"
 description: "Role Scope Tag"
-author: "rolyon"
+author: "davidmu1"
 localization_priority: Normal
 ms.prod: "Intune"
 doc_type: resourcePageType
@@ -33,6 +33,7 @@ Role Scope Tag
 |id|String|Key of the entity. This is read-only and automatically generated.|
 |displayName|String|The display or friendly name of the Role Scope Tag.|
 |description|String|Description of the Role Scope Tag.|
+|isBuiltIn|Boolean|Description of the Role Scope Tag.|
 
 ## Relationships
 |Relationship|Type|Description|
@@ -52,11 +53,10 @@ Here is a JSON representation of the resource.
   "@odata.type": "#microsoft.graph.roleScopeTag",
   "id": "String (identifier)",
   "displayName": "String",
-  "description": "String"
+  "description": "String",
+  "isBuiltIn": true
 }
 ```
-
-
 
 
 

@@ -16,6 +16,6 @@ const hybridAgentUpdaterConfiguration = {
 
 let res = await client.api('/onPremisesPublishingProfiles/provisioning/hybridAgentUpdaterConfiguration')
 	.version('beta')
-	.update({hybridAgentUpdaterConfiguration : hybridAgentUpdaterConfiguration});
+	.update(hybridAgentUpdaterConfiguration);
 
 ```

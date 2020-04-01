@@ -10,6 +10,8 @@ doc_type: apiPageType
 
 # Get websocket endpoint
 
+Namespace: microsoft.graph
+
 Allows you to receive near-real-time change notifications for a [drive][] using [socket.io][].
 Socket.io is a popular notifications library for JavaScript that utilizes WebSockets. To learn more, see [socket.io](https://socket.io).
 
@@ -45,14 +47,14 @@ GET /sites/{siteId}/lists/{listId}/drive/root/subscriptions/socketIo
 
 # [HTTP](#tab/http)
 <!-- { "blockType": "request", "name": "drive_root_subscriptions_socketIo" } -->
-```http
+```msgraph-interactive
 GET /me/drive/root/subscriptions/socketIo
 ```
 # [C#](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/drive-root-subscriptions-socketio-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# [Javascript](#tab/javascript)
+# [JavaScript](#tab/javascript)
 [!INCLUDE [sample-code](../includes/snippets/javascript/drive-root-subscriptions-socketio-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
@@ -87,8 +89,6 @@ Content-type: application/json
 ```
 
 The `notificationUrl` returned is a socket.io endpoint URL.
-To use it with a socket.io client, split the string on the `/callback?` token.
-The part of the string before `/callback?` is the socket.io endpoint URL and the part of the string after is an opaque query string that must be given to the libary.
 
 The following example shows how to use the `notificationUrl` with socket.io in JavaScript.
 
@@ -96,11 +96,8 @@ The following example shows how to use the `notificationUrl` with socket.io in J
 // this is the notificationUrl returned from this API
 var notificationUrl = "https://f3hb0mpua.svc.ms/zbaehwg/callback?snthgk=1ff3-2345672zz831837523";
 
-// after the split, split[0] will be everything leading up to '/callback?' and split[1] will be everything after.
-var split = notificationUrl.split("/callback?");
-
 // 'io' comes from the socket.io client library
-var socket = io(split[0], { query: split[1] });
+var socket = io(notificationUrl);
 
 // these examples log to the console.
 // your app would provide its own callbacks

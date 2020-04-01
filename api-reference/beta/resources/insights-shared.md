@@ -9,12 +9,14 @@ doc_type: resourcePageType
 
 # sharedInsight resource type
 
+Namespace: microsoft.graph
+
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 An insight representing files shared with or by a specific user. The following shared files are supported:
 
 - Files attached directly in an email or a meeting invite.
-- OneDrive for Bussiness and SharePoint modern attachments - files stored in OneDrive for Business and SharePoint that users share as a links in an email.
+- OneDrive for Business and SharePoint modern attachments - files stored in OneDrive for Business and SharePoint that users share as a links in an email.
 
 **Note**: We are currently working on populating the results of the Shared API with data. There may be some data missing in the first weeks after release.
 
@@ -22,7 +24,7 @@ An insight representing files shared with or by a specific user. The following s
 
 | Method       | Return Type  |Description|
 |:---------------|:--------|:----------|
-|[List shared](../api/insights-list-shared.md) |[insights_shared](insights-shared.md) collection| Get a list of shared files.|
+|[List shared](../api/insights-list-shared.md) |[sharedInsight](insights-shared.md) collection| Get a list of shared files.|
 
 ## Properties
 

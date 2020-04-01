@@ -9,6 +9,8 @@ doc_type: apiPageType
 
 # message: createReplyAll
 
+Namespace: microsoft.graph
+
 Create a draft to reply to the sender and all the recipients of the specified [message](../resources/message.md). You can then [update](../api/message-update.md) the draft to add reply content to the **body** or change other message properties, or, simply [send](../api/message-send.md) the draft.
 
 ## Permissions
@@ -57,7 +59,7 @@ POST https://graph.microsoft.com/v1.0/me/messages/{id}/createReplyAll
 [!INCLUDE [sample-code](../includes/snippets/csharp/message-createreplyall-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# [Javascript](#tab/javascript)
+# [JavaScript](#tab/javascript)
 [!INCLUDE [sample-code](../includes/snippets/javascript/message-createreplyall-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 

@@ -16,6 +16,6 @@ const invitation = {
 };
 
 let res = await client.api('/invitations')
-	.post({invitation : invitation});
+	.post(invitation);
 
 ```

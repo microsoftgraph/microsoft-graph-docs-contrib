@@ -1,7 +1,7 @@
 ---
 title: "airPrintDestination resource type"
 description: "Represents an AirPrint destination."
-author: "rolyon"
+author: "davidmu1"
 localization_priority: Normal
 ms.prod: "Intune"
 doc_type: resourcePageType
@@ -42,8 +42,6 @@ Here is a JSON representation of the resource.
   "forceTls": true
 }
 ```
-
-
 
 
 

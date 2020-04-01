@@ -9,6 +9,8 @@ doc_type: apiPageType
 
 # group: renew
 
+Namespace: microsoft.graph
+
 Renews a group's expiration. When a group is renewed, the group expiration is extended by the number of days defined in the policy.
 
 ## Permissions
@@ -59,7 +61,7 @@ POST https://graph.microsoft.com/v1.0/groups/{id}/renew
 [!INCLUDE [sample-code](../includes/snippets/csharp/group-renew-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# [Javascript](#tab/javascript)
+# [JavaScript](#tab/javascript)
 [!INCLUDE [sample-code](../includes/snippets/javascript/group-renew-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 

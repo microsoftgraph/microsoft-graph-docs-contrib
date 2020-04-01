@@ -9,6 +9,8 @@ doc_type: apiPageType
 
 # List joinedTeams
 
+Namespace: microsoft.graph
+
 
 
 Get the [teams](../resources/team.md) in Microsoft Teams that the user is a direct member of.
@@ -58,14 +60,14 @@ Here is an example of the request.
   "blockType": "request",
   "name": "get_joinedteams"
 }-->
-```http
+```msgraph-interactive
 GET https://graph.microsoft.com/v1.0/me/joinedTeams
 ```
 # [C#](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/get-joinedteams-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# [Javascript](#tab/javascript)
+# [JavaScript](#tab/javascript)
 [!INCLUDE [sample-code](../includes/snippets/javascript/get-joinedteams-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 

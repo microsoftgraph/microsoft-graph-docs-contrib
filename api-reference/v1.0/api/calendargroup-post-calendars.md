@@ -9,6 +9,8 @@ doc_type: apiPageType
 
 # Create Calendar
 
+Namespace: microsoft.graph
+
 Use this API to create a new calendar in a calendar group for a [user](../resources/user.md).
 
 ## Permissions
@@ -77,7 +79,7 @@ Content-type: application/json
   "name": "Marketing calendar"
 }
 ```
-# [Javascript](#tab/javascript)
+# [JavaScript](#tab/javascript)
 [!INCLUDE [sample-code](../includes/snippets/javascript/create-calendar-from-calendargroup-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 

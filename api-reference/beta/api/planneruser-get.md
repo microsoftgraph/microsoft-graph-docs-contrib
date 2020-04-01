@@ -9,6 +9,8 @@ doc_type: apiPageType
 
 # Get plannerUser
 
+Namespace: microsoft.graph
+
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 Retrieve the properties and relationships of a [plannerUser](../resources/planneruser.md) object. The returned properties include the user's favorite plans and recently viewed plans. 
@@ -25,7 +27,7 @@ One of the following permissions is required to call this API. To learn more, in
 <!-- { "blockType": "ignored" } -->
 ```http
 GET /me/planner
-GET /users/<id>/planner
+GET /users/{id}/planner
 ```
 
 ## Request headers
