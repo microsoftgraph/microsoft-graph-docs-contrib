@@ -115,6 +115,7 @@ Content-type: application/json
                 "platforms": null,
                 "locations": null,
                 "deviceStates": null,
+                "devices": null,
                 "applications": {
                     "includeApplications": [
                         "None"
@@ -155,6 +156,7 @@ Content-type: application/json
                 "platforms": null,
                 "locations": null,
                 "deviceStates": null,
+                "devices": null,
                 "applications": {
                     "includeApplications": [
                         "None"
