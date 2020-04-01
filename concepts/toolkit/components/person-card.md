@@ -61,14 +61,21 @@ For example, you can use a template to customize the component attached to the `
 
 ## CSS custom properties
 
-The `mgt-person-card` component defines the following CSS custom properties.
+The `mgt-person-card` component defines the following CSS custom properties. To utilze the properties you must define the selector as the parent `mgt-person` element. 
 
 ```css
-mgt-person-card {
-  --font-size: 14px;
-  --font-weight: 600;
-  --height: '100%';
-  --background-color: transparent;
+mgt-person {
+  --person-card-display-name-font-size: 40px;
+  --person-card-display-name-color: #ffffff;
+  --person-card-title-font-size: 20px;
+  --person-card-title-color: #ffffff;
+  --person-card-subtitle-font-size: 10px;
+  --person-card-subtitle-color: #ffffff;
+  --person-card-details-title-font-size: 10px;
+  --person-card-details-title-color: #b3bf0a;
+  --person-card-details-item-font-size: 20px;
+  --person-card-details-item-color: #3abf0a;
+  --person-card-background-color: #000000;
 }
 ```
 
