@@ -64,7 +64,7 @@ The following is an example of how to call this API when the caller submits a de
 The following is an example of the request.
 <!-- {
   "blockType": "request",
-  "name": "passwordauthenticationmethod_resetpassword"
+  "name": "passwordauthenticationmethod_resetpassword_adminprovided"
 }-->
 
 ```http
@@ -112,7 +112,7 @@ The following is an example of how to call this API when the caller does not sub
 The following is an example of the request.
 <!-- {
   "blockType": "request",
-  "name": "passwordauthenticationmethod_resetpassword"
+  "name": "passwordauthenticationmethod_resetpassword_systemgenerated"
 }-->
 
 ```http
