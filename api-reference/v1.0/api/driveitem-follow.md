@@ -10,8 +10,6 @@ doc_type: apiPageType
 
 Namespace: microsoft.graph
 
-[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
-
 Follow a [driveItem](../resources/driveitem.md).
 
 >**Note:** To unfollow an item, see [Unfollow item](driveitem-unfollow.md).
