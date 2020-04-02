@@ -60,11 +60,11 @@ Content-length: xxx
 }
 ```
 
-2. Ensure the team has two or more owners. You can do so via the [Graph add owner endpoint](https://docs.microsoft.com/graph/api/group-post-owners?view=graph-rest-beta&amp;tabs=http). These should be real user accounts and not service accounts. Having two owners helps handle cases where one owner leaves the company or is unavailable to perform team management operations.
+2. Ensure the team has two or more owners. You can do so via the [add owner](https://docs.microsoft.com/graph/api/group-post-owners?view=graph-rest-beta&amp;tabs=http) operation. These should be real user accounts and not service accounts. Having two owners helps handle cases where one owner leaves the company or is unavailable to perform team management operations.
 
-3. Add all members (and guests if necessary) to the group using the [Graph add member endpoint](https://docs.microsoft.com/graph/api/group-post-members?view=graph-rest-beta&amp;tabs=http), if you did not do so in Step 1.
+3. Add all members (and guests if necessary) to the group using the [add member](https://docs.microsoft.com/graph/api/group-post-members?view=graph-rest-beta&amp;tabs=http) operation, if you did not do so in Step 1.
 
-4. Wait 15 minutes after creating the group (step 1) before proceeding. After the group is successfully created and all owners and members added, create a Microsoft Teams team using the [Graph create team from group endpoint](https://docs.microsoft.com/graph/api/team-put-teams?view=graph-rest-beta&amp;tabs=http). If you run into an error, the group creation process might not be completed; try waiting a few more minutes.
+4. Wait 15 minutes after creating the group (step 1) before proceeding. After the group is successfully created and all owners and members added, create a Microsoft Teams team using the [create team from group](https://docs.microsoft.com/graph/api/team-put-teams?view=graph-rest-beta&amp;tabs=http) operation. If you run into an error, the group creation process might not be completed; try waiting a few more minutes.
 
 ```http
 PUT /groups/{id}/team
@@ -97,7 +97,7 @@ The created team has the same ID as the group.
 
 ## Adding or managing members
 
-To add members after a team is created, you use the [Microsoft Graph groups API] (https://docs.microsoft.com/graph/api/group-post-members?view=graph-rest-beta&amp;tabs=http). Note the following with respect to membership changes:
+To add members after a team is created, you use the [create group](https://docs.microsoft.com/graph/api/group-post-members?view=graph-rest-beta&amp;tabs=http) operation. Note the following with respect to membership changes:
 
 1. Membership changes made to Office 365 groups sync to Teams via a background sync mechanism that takes 24 hours (or in some cases more).
 
