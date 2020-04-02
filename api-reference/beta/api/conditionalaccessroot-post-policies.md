@@ -550,7 +550,7 @@ Content-type: application/json
 
 ### Example 4: Require MFA to Exchange Online from non-complaint devices
 
->**Note:** We are deprecating deviceStates condition, and it may be removed from the future version. Please use devices condition moving forward.
+>**Note:** We are deprecating the **deviceStates** condition, and it may be removed in the future. Going forward, use devices condition.
 
 #### Request
 The following example shows a request to require MFA to Exchange Online from non-complaint devices.
