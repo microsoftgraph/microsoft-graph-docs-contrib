@@ -57,7 +57,7 @@ In the request body, provide a JSON object with the following parameters.
 | recipients         | Collection([driveRecipient][]) | A collection of recipients who will receive access.
 | roles              | Collection(String)             | If the link is an "existing access" link, specifies roles to be granted to the users. Otherwise must match the role of the link.
 
-For a list of available roles, see [Roles enumeration](../resources/permission.md#roles-enumeration).
+For a list of available roles, see [Roles enumeration](../resources/permission.md#roles-enumeration-values).
 
 ## Response
 
