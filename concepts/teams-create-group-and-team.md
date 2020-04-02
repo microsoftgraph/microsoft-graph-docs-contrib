@@ -15,9 +15,9 @@ You can use the Microsoft Teams API in Microsoft Graph to create teams in multip
 
 All teams are backed by Office 365 Groups. When creating new teams via graph, setting up a new Office 365 Group, adding all owners and members and then converting that into a team is the quickest way to get your team up and running.
 
-1. Create an [Office 365 group](https://support.office.com/article/learn-about-office-365-groups-b565caa1-5c40-40ef-9915-60fdb2d97fa2) using the [Graph create group endpoint](https://docs.microsoft.com/graph/api/group-post-groups?view=graph-rest-beta&amp;tabs=http). If you are trying to set up a class team, please use the [Graph create EducationClass endpoint](https://docs.microsoft.com/graph/api/educationroot-post-classes?view=graph-rest-beta&amp;tabs=http). You may specify owners and members at this step. Ensure you have the right owners for the newly created team as described in Step 2.
+1. Create an [Office 365 group](https://support.office.com/article/learn-about-office-365-groups-b565caa1-5c40-40ef-9915-60fdb2d97fa2) using the [Graph create group endpoint](https://docs.microsoft.com/graph/api/group-post-groups?view=graph-rest-beta&amp;tabs=http). If you're trying to set up a class team, use the [Graph create EducationClass endpoint](https://docs.microsoft.com/graph/api/educationroot-post-classes?view=graph-rest-beta&amp;tabs=http). You can specify owners and members. Make sure that you have the right owners for the newly created team, as described in Step 2.
 
-In order to include a team, you need to set the following property values, as shown in the following example:
+In order to include a team, you need to set the following property values, as shown:
 
 - **groupTypes** = { "Unified" } 
 - **mailEnabled** = true
@@ -60,11 +60,11 @@ Content-length: xxx
 }
 ```
 
-2. Ensure the team has two or more owners, you can do so via the [Graph add owner endpoint](https://docs.microsoft.com/graph/api/group-post-owners?view=graph-rest-beta&amp;tabs=http) if you haven't done so already in Step 1. These should be real user accounts and not service accounts. Having two owners helps handle cases where one owners leaves the company or is unavailable to perform team management operations.
+2. Ensure the team has two or more owners. You can do so via the [Graph add owner endpoint](https://docs.microsoft.com/graph/api/group-post-owners?view=graph-rest-beta&amp;tabs=http). These should be real user accounts and not service accounts. Having two owners helps handle cases where one owner leaves the company or is unavailable to perform team management operations.
 
-3. Add all members (and guests if necessary) to the group using the [Graph add member endpoint](https://docs.microsoft.com/graph/api/group-post-members?view=graph-rest-beta&amp;tabs=http) if you did not do so in Step 1.
+3. Add all members (and guests if necessary) to the group using the [Graph add member endpoint](https://docs.microsoft.com/graph/api/group-post-members?view=graph-rest-beta&amp;tabs=http), if you did not do so in Step 1.
 
-4. You will need to wait 15 minutes after creating the group (Step 1) before proceeding further. After the group is successfully created and all owners and members added, you can proceed to create a Microsoft Teams team using the [Graph create team from group endpoint](https://docs.microsoft.com/graph/api/team-put-teams?view=graph-rest-beta&amp;tabs=http). If you run into an error, please try waiting a few more minutes as the group creation may not be complete yet.
+4. Wait 15 minutes after creating the group (step 1) before proceeding. After the group is successfully created and all owners and members added, create a Microsoft Teams team using the [Graph create team from group endpoint](https://docs.microsoft.com/graph/api/team-put-teams?view=graph-rest-beta&amp;tabs=http). If you run into an error, the group creation process might not be completed; try waiting a few more minutes.
 
 ```http
 PUT /groups/{id}/team
