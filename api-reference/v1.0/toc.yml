@@ -4162,6 +4162,10 @@
           href: api/site-list-subsites.md
         - name: Get item analytics
           href: api/itemanalytics-get.md
+        - name: Follow site
+          href: api/site-follow.md
+        - name: Unfollow site
+          href: api/site-unfollow.md
       - name: Lists
         href: resources/list.md
         items:

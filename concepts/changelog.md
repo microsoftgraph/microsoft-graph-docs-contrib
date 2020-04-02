@@ -145,8 +145,15 @@ For details about known issues with Microsoft Graph APIs, see [Known issues](kno
 | Change      | beta    | The [externalItem](/graph/api/resources/externalfile?view=graph-rest-beta) resource now supports updating the **content** and **properties** properties.      |
 | Change      | beta    | Operations on [externalItem](/graph/api/resources/externalfile?view=graph-rest-beta) resources now return a `Retry-After` header when they are throttled. |
 
-### Sites (SharePoint)
 
+### Sites (OneDrive and SharePoint)
+
+| **Change type** | **Version** | **Description**                          |
+| :-------------- | :---------- | :-------------------------------------- |
+| Addition        | v1.0        | Added the [followSite](/graph/api/follow-site?view=graph-rest-1.0) navigation property to the [user](/graph/api/resources/user?view=graph-rest-1.0) entity set |
+| Addition        | v1.0        | Added the [unfollowSite](/graph/api/unfollow-site?view=graph-rest-1.0) navigation property to the [user](/graph/api/resources/user?view=graph-rest-1.0) entity set |
+
+### Teamwork (Microsoft Teams)
 | **Change type** | **Version** | **Description**                          |
 | :-------------- | :---------- | :--------------------------------------- |
 | Addition        | v1.0       | Added the **subscriptions** navigation property to the [list](/graph/api/resources/list?view=graph-rest-v1.0) entity. |
