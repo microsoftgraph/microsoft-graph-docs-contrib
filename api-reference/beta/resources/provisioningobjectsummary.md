@@ -17,7 +17,7 @@ Represents an action performed by the Azure AD Provisioning service and its asso
 
 ## Methods
 
-| Method       | Return Type | Description |
+| Method  | Return Type | Description |
 |:-------------|:------------|:------------|
 | [List provisioningObjectSummary](../api/provisioningobjectsummary-list.md) | [provisioningObjectSummary](provisioningobjectsummary.md) | Get a list of all provisioning events that occurred in your tenant. |
 
