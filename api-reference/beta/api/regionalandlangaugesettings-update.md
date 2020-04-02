@@ -16,17 +16,21 @@ Update the properties of a [regionalAndLanguageSettings](../resources/settingsre
 ## Permissions
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
 
-|Type             |Permission (from least to most privileged)     |
-|-----------------|---------------------------------------------- |
-|Write            |User.ReadWrite, User.ReadWrite.All             |
+|Permission Type                   |Permission (from least to most privileged)     |
+|----------------------------------|---------------------------------------------- |
+|Delegated (work or school account)|User.ReadWrite, User.ReadWrite.All             |
+|Delegated (personal account)      |User.ReadWrite, User.ReadWrite.All             |
+|Application                       |User.ReadWrite, User.ReadWrite.All             |
 
 ## HTTP request
+To update a subset of properties of a user's regional and language settings
 <!-- { "blockType": "ignored" } -->
 ```http
 PATCH /settings/regionalAndLanguageSettings
 ```
+To update f a user's regional and language settings
 ```http
-POST /settings/regionalAndLanguageSettings
+PUT /settings/regionalAndLanguageSettings
 ```
 ## Request headers
 | Header       | Value|
@@ -35,9 +39,9 @@ POST /settings/regionalAndLanguageSettings
 | Content-Type  | application/json  |
 
 ## Request body
- **Post**: In the request body, supply a [regionalAndLanguageSettings](../resources/settingsregionalAndLanguageSettings.md) object.
+ **PUT**: In the request body, supply a [regionalAndLanguageSettings](../resources/settingsregionalAndLanguageSettings.md) object.
  
- **Patch**: Only supply the values for relevant fields that should be updated. Existing properties that are not included in the request body will maintain their previous values or be recalculated based on changes to other property values. For best performance you shouldn't include existing values that haven't changed.
+ **PATCH**: Only supply the values for relevant fields that should be updated. Existing properties that are not included in the request body will maintain their previous values or be recalculated based on changes to other property values. For best performance you shouldn't include existing values that haven't changed.
  
 ## Response
 
@@ -54,10 +58,10 @@ The following example shows a request.
 # [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
-  "name": "post_regionalAndLanguageSettings"
+  "name": "put_regionalAndLanguageSettings"
 }-->
 ```http
-POST https://graph.microsoft.com/beta/me/settings/regionalandlanguagesettings
+put https://graph.microsoft.com/beta/me/settings/regionalandlanguagesettings
 Content-type: application/json
 
 {
