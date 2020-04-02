@@ -109,7 +109,7 @@ To add members after a team is created, you use the [Microsoft Graph groups API]
 
 After you create a team, you can use the following checklist to verify that the team was created successfully.
 
-### Initial team creation
+### Validate team creation
 
 1. Verify that the Office 365 group backing the team is created via the Azure AD or Microsoft 365 admin centers.
 
@@ -121,7 +121,7 @@ After you create a team, you can use the following checklist to verify that the 
 
 5. Verify that members can see the team after signing into the Teams desktop or web client.
 
-### Adding more members
+### Validate addition of members
 
 1. Verify that newly members show up in the group via the Azure AD or Microsoft 365 admin center.
 
