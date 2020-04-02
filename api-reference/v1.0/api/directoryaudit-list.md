@@ -52,7 +52,7 @@ This method supports the following OData query parameters to help customize the 
 | initiatedBy/user/displayName                                 | eq                  |
 | initiatedBy/user/userPrincipalName                           | eq, startswith      |
 | initiatedBy/app/appId                                        | eq                  |
-| initiatedBy/app/appDisplayName                               | eq                  |
+| initiatedBy/app/displayName                                  | eq                  |
 | targetResources/any(t: t/id eq '{value}')                    | eq                  |
 | targetResources/any(t:t/displayName eq '{value}')            | eq                  |
 | targetResources/any(x: startswith(x/displayName, '{value}')) | startswith          |
