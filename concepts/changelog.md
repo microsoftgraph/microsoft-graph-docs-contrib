@@ -121,10 +121,11 @@ Added new APIs and resources for managing and printing to printers by using the 
 Added new APIs and resources for managing user preferences for regional and langauge settings.
 | **Change type** | **Version**   | **Description**                          |
 | :-------------- | :------------ | :--------------------------------------- |
-| Addition | beta | Added the [regionalAndLanguageSettings](/graph/api/resources/settingsregionandlanguagesettings) entity.|
-| Addition | beta | Added the [regionalFormatOverrides](/graph/api/resources/settingsregionalformatoverrides) complex type.|
-| Addition | beta | Added the [settingsregionalAndLanguageSettings-get](/graph/api/settingsregionalandlanguagesettings-get) function on the [regionalAndLanguageSettings](/graph/api/resources/settingsregionalandlanguagesettings) resource.|
-| Addition | beta | Added the [settingsregionalAndLanguageSettings-update](/graph/api/settingsregionalandlanguagesettings-update) function on the [regionalAndLanguageSettings](/graph/api/resources/settingsregionalandlanguagesettings) resource.|
+| Addition | beta | Added the [regionalAndLanguageSettings](/graph/api/resources/regionandlanguagesettings) entity.|
+| Addition | beta | Added the [regionalFormatOverrides](/graph/api/resources/regionalformatoverrides) complex type.|
+| Addition | beta | Added the [regionalAndLanguageSettings-get](/graph/api/regionalandlanguagesettings-get) function on the [regionalAndLanguageSettings](/graph/api/resources/regionalandlanguagesettings) resource.|
+| Addition | beta | Added the [regionalAndLanguageSettings-update](/graph/api/regionalandlanguagesettings-update) function on the [regionalAndLanguageSettings](/graph/api/resources/regionalandlanguagesettings) resource.|
+| Change | beta | Added the [regionalAndLanguageSettings](/graph/resources/regionalandlanguagesettings) relationship to the [userSettings](/graph/api/resources/userSettings) resource.|
 
 ## February 2020
 
