@@ -20,6 +20,14 @@ For details about known issues with Microsoft Graph APIs, see [Known issues](kno
 | Addition | Beta | Added the **calendarGroupId** property to the [calendar](/graph/api/resources/calendar?view=graph-rest-beta) entity. |
 | Addition | Beta | Added the **isDraft** property to the [event](/graph/api/resources/event?view=graph-rest-beta) entity. |
 
+### Files (OneDrive for Business)
+| **Change type** | **Version** | **Description**                          |
+| :-------------- | :---------- | :--------------------------------------- |
+| Addition        | v1.0        | Added the **following** navigation property to the [drive](/graph/api/resources/drive?view=graph-rest-v1.0) entity. |
+| Addition        | v1.0        | Added the [follow](/graph/api/driveitem-follow?view=graph-rest-v1.0) action on [driveItem](/graph/api/resources/driveitem?view=graph-rest-v1.0). |
+| Addition        | v1.0        | Added the [unfollow](/graph/api/driveitem-unfollow?view=graph-rest-v1.0) action on [driveItem](/graph/api/resources/driveitem?view=graph-rest-v1.0). |
+
+
 ### Identity and access (Azure AD)
 
 | **Change type** | **Version**   | **Description**                          |
@@ -37,13 +45,6 @@ For details about known issues with Microsoft Graph APIs, see [Known issues](kno
 | **Change type** | **Version** | **Description**                          |
 | :-------------- | :---------- | :--------------------------------------- |
 | Addition | Beta | Added Support for ChannelMessage.Read.All to APIs for reading [chatMessages](/graph/api/resources/chatmessage?view=graph-rest-beta) in channels. |
-
-### Files (OneDrive for Business)
-| **Change type** | **Version** | **Description**                          |
-| :-------------- | :---------- | :--------------------------------------- |
-| Addition        | V1.0        | Added the **following** navigation property to the [drive](/graph/api/resources/drive?view=graph-rest-v1.0) entity |
-| Addition        | V1.0        | Added the [follow](/graph/api/driveitem-follow?view=graph-rest-v1.0) action on [driveItem](/graph/api/resources/driveitem?view=graph-rest-v1.0) |
-| Addition        | V1.0        | Added the [unfollow](/graph/api/driveitem-unfollow?view=graph-rest-v1.0) action on [driveItem](/graph/api/resources/driveitem?view=graph-rest-v1.0) |
 
 ## February 2020
 
