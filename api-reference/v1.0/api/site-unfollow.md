@@ -50,8 +50,6 @@ The following example shows how to unfollow multiple sites.
 
 ### Request
 
-
-# [HTTP](#tab/http)
 <!-- { "blockType": "request", "name": "unfollow-site", "scopes": "sites.readwrite.all" } -->
 
 ```http
@@ -70,19 +68,6 @@ Content-Type: application/json
     ] 
 }
 ```
-# [C#](#tab/csharp)
-[!INCLUDE [sample-code](../includes/snippets/csharp/unfollow-site-csharp-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [JavaScript](#tab/javascript)
-[!INCLUDE [sample-code](../includes/snippets/javascript/unfollow-site-javascript-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [Objective-C](#tab/objc)
-[!INCLUDE [sample-code](../includes/snippets/objc/unfollow-site-objc-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
----
 
 ### Response
 
