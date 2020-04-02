@@ -13,9 +13,9 @@ You can use the Microsoft Teams API in Microsoft Graph to create teams in multip
 
 ## Initial team creation
 
-All teams are backed by Office 365 Groups. When creating new teams via graph, setting up a new Office 365 Group, adding all owners and members and then converting that into a team is the quickest way to get your team up and running.
+All teams are backed by Office 365 groups. The quickest way to get your team up and running when you create new teams via Microsoft Graph is to set up a new Office 365 group, all all owners and members, and convert that into a team.
 
-1. Create an [Office 365 group](https://support.office.com/article/learn-about-office-365-groups-b565caa1-5c40-40ef-9915-60fdb2d97fa2) using the [Graph create group endpoint](https://docs.microsoft.com/graph/api/group-post-groups?view=graph-rest-beta&amp;tabs=http). If you're trying to set up a class team, use the [Graph create EducationClass endpoint](https://docs.microsoft.com/graph/api/educationroot-post-classes?view=graph-rest-beta&amp;tabs=http). You can specify owners and members. Make sure that you have the right owners for the newly created team, as described in Step 2.
+1. Create an [Office 365 group](https://support.office.com/article/learn-about-office-365-groups-b565caa1-5c40-40ef-9915-60fdb2d97fa2) using the [create group](https://docs.microsoft.com/graph/api/group-post-groups?view=graph-rest-beta&amp;tabs=http) operation. If you're trying to set up a class team, use the [create EducationClass](https://docs.microsoft.com/graph/api/educationroot-post-classes?view=graph-rest-beta&amp;tabs=http) operation. You can specify owners and members. Make sure that you have the right owners for the newly created team, as described in Step 2.
 
 In order to include a team, you need to set the following property values, as shown:
 
