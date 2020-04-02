@@ -15,7 +15,7 @@ You can use the Microsoft Teams API in Microsoft Graph to create teams in multip
 
 All teams are backed by Office 365 groups. The quickest way to get your team up and running when you create new teams via Microsoft Graph is to set up a new Office 365 group, all all owners and members, and convert that into a team.
 
-1. Create an [Office 365 group](https://support.office.com/article/learn-about-office-365-groups-b565caa1-5c40-40ef-9915-60fdb2d97fa2) using the [create group](/graph/api/group-post-groups?view=graph-rest-beta) operation. If you're trying to set up a class team, use the [create EducationClass](/graph/api/educationroot-post-classes?view=graph-rest-beta) operation. You can specify owners and members. Make sure that you have the right owners for the newly created team, as described in Step 2.
+1. Create an [Office 365 group](https://support.office.com/article/learn-about-office-365-groups-b565caa1-5c40-40ef-9915-60fdb2d97fa2) using the [create group](/graph/api/group-post-groups?view=graph-rest-beta) operation. If you're trying to set up a class team, use the [create educationClass](/graph/api/educationroot-post-classes?view=graph-rest-beta) operation. You can specify owners and members. Make sure that you have the right owners for the newly created team, as described in Step 2.
 
     In order to include a team, you need to set the following property values, as shown:
 
@@ -97,7 +97,7 @@ All teams are backed by Office 365 groups. The quickest way to get your team up 
 
 ## Adding or managing members
 
-To add members after a team is created, you use the [create group](/graph/api/group-post-members?view=graph-rest-beta) operation. Note the following with respect to membership changes:
+To add members after a team is created, you use the [add member](/graph/api/group-post-members?view=graph-rest-beta) operation. Note the following with respect to membership changes:
 
 1. Membership changes made to Office 365 groups sync to Teams via a background sync mechanism that takes 24 hours (or in some cases more).
 
