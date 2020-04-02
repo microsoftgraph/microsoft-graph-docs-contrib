@@ -392,13 +392,13 @@
           href: api/profile-get.md
         - name: Delete user's profile
           href: api/profile-delete.md
-      - name: Regional format and languages
-        href: resources/settingsregionalandlanguagesettings.md
+      - name: Preferred languages and regional formats
+        href: resources/regionalandlanguagesettings.md
         items:
-        - name: Get regional format and languages
-          href: api/settingsregionalandlanguagesettings-get.md
-        - name: Update regional format and languages
-          href: api/settingsregionalandlanguagesettings-update.md         
+        - name: Get
+          href: api/regionalandlanguagesettings-get.md
+        - name: Update
+          href: api/regionalandlanguagesettings-update.md         
       - name: Teamwork
         items:
         - name: Installed app
