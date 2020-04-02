@@ -17,8 +17,8 @@ An open type that represents a user's preferences for languages in various conte
 
 | Method                                                          | Return Type                                                    | Description                                                                                  |
 | :-------------------------------------------------------------- | :------------------------------------------------------------- | :------------------------------------------------------------------------------------------- |
-| [Get](../api/settingsregionalAndLanguageSettings-get.md)        | [regionalAndLanguageSettings](regionalAndLanguageSettings.md)  | Read properties and relationships of a **regionalAndLanguageSettings** object.               |                           |
-| [Update](../api/settingsregionalandlangaugesettings-update.md)  | [regionalAndLanguageSettings](regionalAndLanguageSettings.md)  | Update the **regionalAndLanguageSettings** object for a user.                                |
+| [Get](../api/regionalAndLanguageSettings-get.md)        | [regionalAndLanguageSettings](regionalAndLanguageSettings.md)  | Read properties and relationships of a **regionalAndLanguageSettings** object.               |                           |
+| [Update](../api/regionalandlangaugesettings-update.md)  | [regionalAndLanguageSettings](regionalAndLanguageSettings.md)  | Update the **regionalAndLanguageSettings** object for a user.                                |
 
 ## Properties
 |Property                     |Type                 |Description          |
