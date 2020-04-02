@@ -52,6 +52,8 @@ landingContent:
         links:
           - text: Angular
             url: /graph/tutorials/angular
+          - text: JavaScript
+            url: /graph/tutorials/javascript
           - text: React
             url: /graph/tutorials/react
   - title: Scenarios
