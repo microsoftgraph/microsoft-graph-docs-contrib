@@ -11,7 +11,7 @@ doc_type: apiPageType
 
 Namespace: microsoft.graph
 
-Update the properties of a [regionalAndLanguageSettings](../resources/settingsregionalAndLanguageSettings.md) object.
+Update the properties of a [regionalAndLanguageSettings](../resources/regionalAndLanguageSettings.md) object.
 
 ## Permissions
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
@@ -39,7 +39,7 @@ PUT /settings/regionalAndLanguageSettings
 | Content-Type  | application/json  |
 
 ## Request body
- **PUT**: In the request body, supply a [regionalAndLanguageSettings](../resources/settingsregionalAndLanguageSettings.md) object.
+ **PUT**: In the request body, supply a [regionalAndLanguageSettings](../resources/regionalAndLanguageSettings.md) object.
  
  **PATCH**: Only supply the values for relevant fields that should be updated. Existing properties that are not included in the request body will maintain their previous values or be recalculated based on changes to other property values. For best performance you shouldn't include existing values that haven't changed.
  
