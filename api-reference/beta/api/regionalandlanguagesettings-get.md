@@ -6,26 +6,27 @@ localization_priority: Normal
 ms.prod: "settings"
 doc_type: apiPageType
 ---
+
+# Get regionalAndLanguageSettings
+
+Namespace: microsoft.graph
+
+Get the properties of a [regionalAndLanguageSettings](../resources/settingsregionalAndLanguageSettings.md) object.
+
 ## Permissions
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
 
-|Type             |Permission (from least to most privileged)     |
-|-----------------|---------------------------------------------- |
-|Read             |User.Read, User.Read.All                       |
-|Write            |User.ReadWrite, User.ReadWrite.All             |
+|Permission Type                   |Permission (from least to most privileged)     |
+|----------------------------------|---------------------------------------------- |
+|Delegated (work or school account)|User.Read, User.Read.All                        |
+|Delegated (personal account)      |User.Read, User.Read.All              |
+|Application                       |User.Read, User.Read.All              |
 
 ## HTTP request
 <!-- { "blockType": "ignored" } -->
 ```http
 GET /settings/regionalAndLanguageSettings
 ```
-
-## Optional query parameters
-This method supports the [OData Query Parameters](https://developer.microsoft.com/graph/docs/concepts/query_parameters) to help customize the response.
-|Pattern               |Supported |Syntax                                                        |
-|----------------------|----------|--------------------------------------------------------------|
-|Select                |Yes       |`/?$select=defaultDisplayLanguage,defaultTranslationLanguage` |
-
 ## Request headers
 | Header       | Value|
 |:-----------|:------|
@@ -42,7 +43,7 @@ If successful, this method returns a `200 OK` response code and [regionalAndLang
 ## Example
 
 ### Example 1: Get the properties of the signed-in user
-
+This method supports the [OData Query Parameters](https://developer.microsoft.com/graph/docs/concepts/query_parameters) to help customize the response.
 #### Request
 
 
@@ -65,8 +66,6 @@ Here is an example of the response. Note: The response object shown here may be 
 ```http
 HTTP/1.1 200 OK
 Content-type: application/json
-Content-length: 491
-
 {
     "defaultDisplayLanguage": {
         "locale": "en-US",
