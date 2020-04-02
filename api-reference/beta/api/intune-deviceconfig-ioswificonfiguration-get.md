@@ -1,15 +1,13 @@
 ---
 title: "Get iosWiFiConfiguration"
 description: "Read properties and relationships of the iosWiFiConfiguration object."
-author: "rolyon"
+author: "davidmu1"
 localization_priority: Normal
 ms.prod: "Intune"
 doc_type: apiPageType
 ---
 
 # Get iosWiFiConfiguration
-
-Namespace: microsoft.graph
 
 > **Important:** Microsoft Graph APIs under the /beta version are subject to change; production use is not supported.
 
@@ -114,7 +112,6 @@ Content-Length: 1723
   }
 }
 ```
-
 
 
 

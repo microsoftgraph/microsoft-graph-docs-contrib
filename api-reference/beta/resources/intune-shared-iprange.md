@@ -1,15 +1,13 @@
 ---
 title: "ipRange resource type"
 description: "IP range base class for representing IPV4, IPV6 address ranges"
-author: "rolyon"
+author: "davidmu1"
 localization_priority: Normal
 ms.prod: "Intune"
 doc_type: resourcePageType
 ---
 
 # ipRange resource type
-
-Namespace: microsoft.graph
 
 > **Important:** Microsoft Graph APIs under the /beta version are subject to change; production use is not supported.
 

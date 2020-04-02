@@ -1,15 +1,13 @@
 ---
 title: "windowsKioskSingleUWPApp resource type"
 description: "The class used to identify the UWP app info for the kiosk configuration"
-author: "rolyon"
+author: "davidmu1"
 localization_priority: Normal
 ms.prod: "Intune"
 doc_type: resourcePageType
 ---
 
 # windowsKioskSingleUWPApp resource type
-
-Namespace: microsoft.graph
 
 > **Important:** Microsoft Graph APIs under the /beta version are subject to change; production use is not supported.
 

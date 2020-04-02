@@ -1,15 +1,13 @@
 ---
 title: "deviceManagementExchangeConnector resource type"
 description: "Entity which represents a connection to an Exchange environment."
-author: "rolyon"
+author: "davidmu1"
 localization_priority: Normal
 ms.prod: "Intune"
 doc_type: resourcePageType
 ---
 
 # deviceManagementExchangeConnector resource type
-
-Namespace: microsoft.graph
 
 > **Important:** Microsoft Graph APIs under the /beta version are subject to change; production use is not supported.
 
