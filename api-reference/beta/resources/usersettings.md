@@ -39,6 +39,7 @@ This resource supports:
 | Relationship | Type | Description |
 |:---------------|:--------|:----------|
 |shiftPreferences|[shiftPreferences](shiftpreferences.md)| The shift preferences for the user. |
+|regionalAndLanguageSettings|[regionalAndLanguageSettings](regionalandlanguagesettings.md)| The regional and language settings for the user. |
 
 ## JSON representation
 
