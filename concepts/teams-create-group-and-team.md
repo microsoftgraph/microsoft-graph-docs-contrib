@@ -1,14 +1,14 @@
 ---
 title: "Creating teams and managing members using Microsoft Graph"
 description: "Creating a group that includes a team involves the following steps: "
-author: "nkramer"
+author: "nkramer, hachandr"
 localization_priority: Priority
 ms.prod: "microsoft-teams"
 ---
 
 # Creating teams and managing members using Microsoft Graph
 
-While there are multiple ways to create teams for Microsoft Teams via Graph API, we recommend the following approach for best results.
+You can use the Microsoft Teams API in Microsoft Graph to create teams in multiple ways. This article describes the approach that we recommend for the best results.
 
 
 ## Initial team creation
