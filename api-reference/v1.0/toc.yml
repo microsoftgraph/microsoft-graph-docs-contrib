@@ -3222,6 +3222,8 @@
           href: api/drive-sharedwithme.md
         - name: Get special folder
           href: api/drive-get-specialfolder.md
+        - name: List followed items
+          href: api/drive-list-following.md
       - name: Drive items
         href: resources/driveitem.md
         items:
@@ -3255,6 +3257,10 @@
           href: api/driveitem-delta.md
         - name: List versions
           href: api/driveitem-list-versions.md
+        - name: Follow item
+          href: api/driveitem-follow.md
+        - name: Unfollow item
+          href: api/driveitem-unfollow.md
         - name: Preview item
           href: api/driveitem-preview.md
         - name: Get item analytics
