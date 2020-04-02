@@ -57,7 +57,7 @@ In the request body, provide a JSON object with the following parameters.
 | recipients         | Collection([driveRecipient][]) | A collection of recipients who will receive access.
 | roles              | Collection(String)             | If the link is an "existing access" link, specifies roles to be granted to the users. Otherwise must match the role of the link.
 
-For a list of available roles, see [Roles enumeration](../resources/permission.md#roles-enumeration-values).
+For a list of available roles, see [Roles enumeration](../resources/permission.md).
 
 ## Response
 
@@ -122,7 +122,7 @@ Content-type: application/json
 
 >**Note:** The response object shown here might be shortened for readability. All the properties will be returned from an actual call.
 
-If the link is an [existing access](../resources/permission.md#permission-existing-link) link, additional permissions will be returned representing the following:
+If the link is an [existing access](../resources/permission.md) link, additional permissions will be returned representing the following:
 
 - User-type permissions representing recipients who were successfully granted access. These can be identified by presence of the **grantedTo** property.
 - Link-type permissions representing invitations that need to be sent to unrecognized external users for them to gain access. These can be identified by the presence of an [invitation](../resources/sharinginvitation.md) facet. These entries will contain a [link][sharing-link] with the invitation URL, and the grantedToIdentities collection will indicate the users to whom the link should be sent.
