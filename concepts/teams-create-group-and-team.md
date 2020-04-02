@@ -137,5 +137,6 @@ For the process to get triggered, a current owner or member of that team (someon
 
 The current SLA for synchronizing membership changes made to Groups to Teams is up to 24 hours once triggered by client activity but could take longer under certain circumstances (due to service load for example).
 
+
 ![Process for roster sync.](images/teams-roster-sync.png)
 
