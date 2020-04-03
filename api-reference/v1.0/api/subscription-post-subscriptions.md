@@ -2,12 +2,14 @@
 title: "Create subscription"
 description: "Subscribes a listener application to receive notifications when data on the Microsoft Graph changes."
 localization_priority: Priority
-author: "piotrci"
+author: "baywet"
 ms.prod: ""
 doc_type: apiPageType
 ---
 
 # Create subscription
+
+Namespace: microsoft.graph
 
 Subscribes a listener application to receive notifications when the requested type of changes occur to the specified resource in Microsoft Graph.
 
@@ -25,7 +27,8 @@ Subscribes a listener application to receive notifications when the requested ty
 |[event](../resources/event.md) | Calendars.Read | Calendars.Read | Calendars.Read |
 |[group](../resources/group.md) | Group.Read.All | Not supported | Group.Read.All |
 |[group conversation](../resources/conversation.md) | Group.Read.All | Not supported | Not supported |
-|[message](../resources/message.md) | Mail.Read | Mail.Read | Mail.Read |
+|[list](../resources/list.md) | Sites.ReadWrite.All | Not supported | Sites.ReadWrite.All |
+|[message](../resources/message.md) | Mail.ReadBasic, Mail.Read | Mail.ReadBasic, Mail.Read | Mail.ReadBasic, Mail.Read |
 |[security alert](../resources/alert.md) | SecurityEvents.ReadWrite.All | Not supported | SecurityEvents.ReadWrite.All |
 |[user](../resources/user.md) | User.Read.All | User.Read.All | User.Read.All |
 
@@ -33,7 +36,7 @@ Subscribes a listener application to receive notifications when the requested ty
 
 - On personal OneDrive, you can subscribe to the root folder or any subfolder in that drive. On OneDrive for Business, you can subscribe to only the root folder. Notifications are sent for the requested types of changes on the subscribed folder, or any file, folder, or other **driveItem** instances in its hierarchy. You cannot subscribe to **drive** or **driveItem** instances that are not folders, such as individual files.
 
-- In Outlook, delegated permission supports subscribing to items in folders in only the signed-in user's mailbox. That means, for example, you cannot use the delegated permission Calendars.Read to subscribe to events in another user’s mailbox.
+- In Outlook, delegated permission supports subscribing to items in folders in only the signed-in user's mailbox. That means, for example, you cannot use the delegated permission Calendars.Read to subscribe to events in another user's mailbox.
 - To subscribe to change notifications of Outlook contacts, events, or messages in _shared or delegated_ folders:
 
   - Use the corresponding application permission to subscribe to changes of items in a folder or mailbox of _any_ user in the tenant.
@@ -75,11 +78,12 @@ POST https://graph.microsoft.com/v1.0/subscriptions
 Content-type: application/json
 
 {
-   "changeType": "created,updated",
+   "changeType": "updated",
    "notificationUrl": "https://webhook.azurewebsites.net/api/send/myNotifyClient",
    "resource": "me/mailFolders('Inbox')/messages",
    "expirationDateTime":"2016-11-20T18:23:45.9356913Z",
-   "clientState": "secretClientValue"
+   "clientState": "secretClientValue",
+   "latestSupportedTlsVersion": "v1_2"
 }
 ```
 # [C#](#tab/csharp)
@@ -102,7 +106,7 @@ Content-type: application/json
 
 
 In the request body, supply a JSON representation of the [subscription](../resources/subscription.md) object.
-The `clientState` field is optional.
+The `clientState` and `latestSupportedTlsVersion` fields are optional.
 
 ##### Resources examples
 
@@ -117,7 +121,8 @@ The following are valid values for the resource property of the subscription:
 |Groups|groups|
 |Conversations|groups('*{id}*')/conversations|
 |Drives|me/drive/root|
-|Security alert|security/alerts?$filter=status eq ‘New’|
+|List|site/{site-id}/lists/{list-id}|
+|Security alert|security/alerts?$filter=status eq 'New'|
 
 ##### Response
 
@@ -138,11 +143,12 @@ Content-length: 252
   "id": "7f105c7d-2dc5-4530-97cd-4e7ae6534c07",
   "resource": "me/mailFolders('Inbox')/messages",
   "applicationId": "24d3b144-21ae-4080-943f-7067b395b913",
-  "changeType": "created,updated",
+  "changeType": "updated",
   "clientState": "secretClientValue",
   "notificationUrl": "https://webhook.azurewebsites.net/api/send/myNotifyClient",
   "expirationDateTime": "2016-11-20T18:23:45.9356913Z",
-  "creatorId": "8ee44408-0679-472c-bc2a-692812af3437"
+  "creatorId": "8ee44408-0679-472c-bc2a-692812af3437",
+  "latestSupportedTlsVersion": "v1_2"
 }
 ```
 

@@ -1,7 +1,8 @@
 ---
 title: "Set up notifications for changes in user data"
 description: "The Microsoft Graph API uses a webhook mechanism to deliver notifications to clients. A client is a web service that configures its own URL to receive notifications. Client apps use notifications to update their state upon changes."
-author: "piotrci"
+author: "baywet"
+ms.prod: "non-product-specific"
 localization_priority: Priority
 ms.custom: graphiamtop20
 ---
@@ -18,6 +19,10 @@ After Microsoft Graph accepts the subscription request, it pushes notifications 
 > [!div class="nextstepaction"]
 > [Build a webhook app with .NET Core](/graph/tutorials/change-notifications)
 
+By default, change notifications do not contain resource data, other than the `id`. If the app requires resource data, it can make calls to Microsoft Graph APIs to get the full resource. This article uses the **user** resource as an example for working with notifications.
+
+An app can also subscribe to change notifications that include resource data, to avoid having to make additonal API calls to access the data. Such apps will need to implement extra code to handle the requirements of such notifications, specifically: responding to subscription lifecycle notifications, validating the authenticity of notifications, and decrypting the resource data. More resource types will support this type of notifications in the future. For details about how to work with these notificatios, see [Set up change notifications that include resource data (preview)](webhooks-with-resource-data.md).
+
 ## Supported resources
 
 Using the Microsoft Graph API, an app can subscribe to changes on the following resources:
@@ -31,6 +36,7 @@ Using the Microsoft Graph API, an app can subscribe to changes on the following 
 - Content within the hierarchy of _any folder_ [driveItem][] on a user's personal OneDrive
 - Content within the hierarchy of the _root folder_ [driveItem][] on OneDrive for Business
 - Security [alert][]
+- Teams [callRecord][] (preview)
 
 You can create a subscription to a specific Outlook folder such as the Inbox:
 `me/mailFolders('inbox')/messages`
@@ -49,8 +55,8 @@ Or to the root folder of a SharePoint/OneDrive for Business drive:
 `/drive/root`
 
 Or to a new [Security API](security-concept-overview.md) alert:
-`/security/alerts?$filter=status eq ‘New’`,
-`/security/alerts?$filter=vendorInformation/provider eq ‘ASC’`
+`/security/alerts?$filter=status eq 'newAlert'`,
+`/security/alerts?$filter=vendorInformation/provider eq 'ASC'`
 
 ### Azure AD resource limitations
 
@@ -69,6 +75,8 @@ When the limits are exceeded, attempts to create a subscription will result in a
 - Azure AD B2C tenants are not supported.
 
 - Notification for user entities are not supported for personal Microsoft accounts.
+
+- A [Known issue](graph/concepts/known-issues#change-notifications) exists with user subscriptions.
 
 ### Outlook resource limitations
 
@@ -136,6 +144,7 @@ Microsoft Graph validates the notification endpoint provided in the `notificatio
 1. Microsoft Graph sends a POST request to the notification URL:
 
     ``` http
+    Content-Type: text/plain; charset=utf-8
     POST https://{notificationUrl}?validationToken={opaqueTokenCreatedByMicrosoftGraph}
     ```
 
@@ -148,6 +157,10 @@ Microsoft Graph validates the notification endpoint provided in the `notificatio
     - The body must include the validation token provided by Microsoft Graph.
 
 The client should discard the validation token after providing it in the response.
+
+Additionally, you can use the [Microsoft Graph Postman collection](use-postman.md) to confirm that your endpoint properly implements the validation request. The **Subscription Validation** request in the **Misc** folder provides unit tests that validate the response provided by your endpoint.  
+
+![validation response test results](images/change-notifications/validation-request-tests-results.png)
 
 ### Renewing a subscription
 
@@ -194,6 +207,7 @@ The notification object has the following properties:
 | changeType | string | The event type that caused the notification. For example, `created` on mail receive, or `updated` on marking a message read. |
 | resource | string | The URI of the resource relative to `https://graph.microsoft.com`. |
 | resourceData | object | The content of this property depends on the type of resource being subscribed to. |
+| tenantId | string | The ID of the tenant the notification originated from. |
 
 For example, for Outlook resources, `resourceData` contains the following fields:
 
@@ -219,6 +233,7 @@ When the user receives an email, Microsoft Graph sends a notification like the f
       "clientState":"secretClientValue",
       "changeType":"created",
       "resource":"users/{user_guid}@<tenant_guid>/messages/{long_id_string}",
+      "tenantId": "84bd8158-6d4d-4958-8b9f-9d6445542f95",
       "resourceData":
       {
         "@odata.type":"#Microsoft.Graph.Message",
@@ -264,6 +279,7 @@ The following code samples are available on GitHub.
 - [Get subscription](/graph/api/subscription-get?view=graph-rest-1.0)
 - [Create subscription](/graph/api/subscription-post-subscriptions?view=graph-rest-1.0)
 - [Change notifications tutorial](/graph/tutorials/change-notifications)
+- [Lifecycle notifications (preview)](/graph/concepts/webhooks-outlook-authz.md)
 
 [contact]: /graph/api/resources/contact?view=graph-rest-1.0
 [conversation]: /graph/api/resources/conversation?view=graph-rest-1.0
@@ -273,3 +289,4 @@ The following code samples are available on GitHub.
 [message]: /graph/api/resources/message?view=graph-rest-1.0
 [user]: /graph/api/resources/user?view=graph-rest-1.0
 [alert]: /graph/api/resources/alert?view=graph-rest-1.0
+[callRecord]: /graph/api/resources/callrecords-callrecord?view=graph-rest-beta

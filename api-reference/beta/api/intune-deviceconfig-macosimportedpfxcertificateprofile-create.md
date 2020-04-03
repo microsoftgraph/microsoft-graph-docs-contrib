@@ -1,7 +1,7 @@
 ---
 title: "Create macOSImportedPFXCertificateProfile"
 description: "Create a new macOSImportedPFXCertificateProfile object."
-author: "rolyon"
+author: "davidmu1"
 localization_priority: Normal
 ms.prod: "Intune"
 doc_type: apiPageType
@@ -166,8 +166,6 @@ Content-Length: 1469
   "intendedPurpose": "smimeEncryption"
 }
 ```
-
-
 
 
 

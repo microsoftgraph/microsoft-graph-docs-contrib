@@ -1,7 +1,7 @@
 ---
 title: "iosikEv2VpnConfiguration resource type"
 description: "By providing the configurations in this profile you can instruct the iOS device to connect to desired IKEv2 VPN endpoint."
-author: "rolyon"
+author: "davidmu1"
 localization_priority: Normal
 ms.prod: "Intune"
 doc_type: resourcePageType
@@ -42,7 +42,7 @@ Inherits from [iosVpnConfiguration](../resources/intune-deviceconfig-iosvpnconfi
 |displayName|String|Admin provided name of the device configuration. Inherited from [deviceConfiguration](../resources/intune-shared-deviceconfiguration.md)|
 |version|Int32|Version of the device configuration. Inherited from [deviceConfiguration](../resources/intune-shared-deviceconfiguration.md)|
 |connectionName|String|Connection name displayed to the user. Inherited from [appleVpnConfiguration](../resources/intune-deviceconfig-applevpnconfiguration.md)|
-|connectionType|[appleVpnConnectionType](../resources/intune-deviceconfig-applevpnconnectiontype.md)|Connection type. Inherited from [appleVpnConfiguration](../resources/intune-deviceconfig-applevpnconfiguration.md). Possible values are: `ciscoAnyConnect`, `pulseSecure`, `f5EdgeClient`, `dellSonicWallMobileConnect`, `checkPointCapsuleVpn`, `customVpn`, `ciscoIPSec`, `citrix`, `ciscoAnyConnectV2`, `paloAltoGlobalProtect`, `zscalerPrivateAccess`, `f5Access2018`, `citrixSso`, `paloAltoGlobalProtectV2`, `ikEv2`.|
+|connectionType|[appleVpnConnectionType](../resources/intune-deviceconfig-applevpnconnectiontype.md)|Connection type. Inherited from [appleVpnConfiguration](../resources/intune-deviceconfig-applevpnconfiguration.md). Possible values are: `ciscoAnyConnect`, `pulseSecure`, `f5EdgeClient`, `dellSonicWallMobileConnect`, `checkPointCapsuleVpn`, `customVpn`, `ciscoIPSec`, `citrix`, `ciscoAnyConnectV2`, `paloAltoGlobalProtect`, `zscalerPrivateAccess`, `f5Access2018`, `citrixSso`, `paloAltoGlobalProtectV2`, `ikEv2`, `alwaysOn`.|
 |loginGroupOrDomain|String|Login group or domain when connection type is set to Dell SonicWALL Mobile Connection. Inherited from [appleVpnConfiguration](../resources/intune-deviceconfig-applevpnconfiguration.md)|
 |role|String|Role when connection type is set to Pulse Secure. Inherited from [appleVpnConfiguration](../resources/intune-deviceconfig-applevpnconfiguration.md)|
 |realm|String|Realm when connection type is set to Pulse Secure. Inherited from [appleVpnConfiguration](../resources/intune-deviceconfig-applevpnconfiguration.md)|
@@ -82,6 +82,8 @@ Inherits from [iosVpnConfiguration](../resources/intune-deviceconfig-iosvpnconfi
 |tlsMinimumVersion|String|The minimum TLS version to be used with EAP-TLS authentication|
 |allowDefaultSecurityAssociationParameters|Boolean|Allows the use of security association parameters by setting all parameters to the device's default unless explicitly specified.|
 |allowDefaultChildSecurityAssociationParameters|Boolean|Allows the use of child security association parameters by setting all parameters to the device's default unless explicitly specified.|
+|alwaysOnConfiguration|[appleVpnAlwaysOnConfiguration](../resources/intune-deviceconfig-applevpnalwaysonconfiguration.md)|AlwaysOn Configuration|
+|enableAlwaysOnConfiguration|Boolean|Determines if Always on VPN is enabled|
 
 ## Relationships
 |Relationship|Type|Description|
@@ -233,7 +235,26 @@ Here is a JSON representation of the resource.
   "tlsMaximumVersion": "String",
   "tlsMinimumVersion": "String",
   "allowDefaultSecurityAssociationParameters": true,
-  "allowDefaultChildSecurityAssociationParameters": true
+  "allowDefaultChildSecurityAssociationParameters": true,
+  "alwaysOnConfiguration": {
+    "@odata.type": "microsoft.graph.appleVpnAlwaysOnConfiguration",
+    "tunnelConfiguration": "String",
+    "userToggleEnabled": true,
+    "voicemailExceptionAction": "String",
+    "airPrintExceptionAction": "String",
+    "cellularExceptionAction": "String",
+    "allowAllCaptiveNetworkPlugins": true,
+    "allowedCaptiveNetworkPlugins": {
+      "@odata.type": "microsoft.graph.specifiedCaptiveNetworkPlugins",
+      "allowedBundleIdentifiers": [
+        "String"
+      ]
+    },
+    "allowCaptiveWebSheet": true,
+    "natKeepAliveIntervalInSeconds": 1024,
+    "natKeepAliveOffloadEnable": true
+  },
+  "enableAlwaysOnConfiguration": true
 }
 ```
 

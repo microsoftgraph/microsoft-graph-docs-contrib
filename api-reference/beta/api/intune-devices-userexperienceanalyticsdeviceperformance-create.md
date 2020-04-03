@@ -1,7 +1,7 @@
 ---
 title: "Create userExperienceAnalyticsDevicePerformance"
 description: "Create a new userExperienceAnalyticsDevicePerformance object."
-author: "rolyon"
+author: "davidmu1"
 localization_priority: Normal
 ms.prod: "Intune"
 doc_type: apiPageType
@@ -60,6 +60,7 @@ The following table shows the properties that are required when you create the u
 |coreLoginTimeInMs|Int32|The user experience analytics device core login time in milliseconds.|
 |groupPolicyLoginTimeInMs|Int32|The user experience analytics device group policy login time in milliseconds.|
 |deviceCount|Int64|User experience analytics summarized device count.|
+|responsiveDesktopTimeInMs|Int32|The user experience analytics responsive desktop time in milliseconds.|
 
 
 
@@ -73,7 +74,7 @@ Here is an example of the request.
 ``` http
 POST https://graph.microsoft.com/beta/deviceManagement/userExperienceAnalyticsDevicePerformance
 Content-type: application/json
-Content-length: 494
+Content-length: 529
 
 {
   "@odata.type": "#microsoft.graph.userExperienceAnalyticsDevicePerformance",
@@ -89,7 +90,8 @@ Content-length: 494
   "loginScore": 10,
   "coreLoginTimeInMs": 1,
   "groupPolicyLoginTimeInMs": 8,
-  "deviceCount": 11
+  "deviceCount": 11,
+  "responsiveDesktopTimeInMs": 9
 }
 ```
 
@@ -98,7 +100,7 @@ Here is an example of the response. Note: The response object shown here may be 
 ``` http
 HTTP/1.1 201 Created
 Content-Type: application/json
-Content-Length: 543
+Content-Length: 578
 
 {
   "@odata.type": "#microsoft.graph.userExperienceAnalyticsDevicePerformance",
@@ -115,11 +117,10 @@ Content-Length: 543
   "loginScore": 10,
   "coreLoginTimeInMs": 1,
   "groupPolicyLoginTimeInMs": 8,
-  "deviceCount": 11
+  "deviceCount": 11,
+  "responsiveDesktopTimeInMs": 9
 }
 ```
-
-
 
 
 

@@ -1,7 +1,7 @@
 ---
 title: "List macOSDeviceFeaturesConfigurations"
 description: "List properties and relationships of the macOSDeviceFeaturesConfiguration objects."
-author: "rolyon"
+author: "davidmu1"
 localization_priority: Normal
 ms.prod: "Intune"
 doc_type: apiPageType
@@ -59,7 +59,7 @@ Here is an example of the response. Note: The response object shown here may be 
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 2867
+Content-Length: 2985
 
 {
   "value": [
@@ -138,13 +138,14 @@ Content-Length: 2867
       ],
       "singleSignOnExtension": {
         "@odata.type": "microsoft.graph.singleSignOnExtension"
+      },
+      "macOSSingleSignOnExtension": {
+        "@odata.type": "microsoft.graph.macOSSingleSignOnExtension"
       }
     }
   ]
 }
 ```
-
-
 
 
 

@@ -9,9 +9,11 @@ doc_type: "resourcePageType"
 
 # accessPackageAssignmentRequest resource type
 
+Namespace: microsoft.graph
+
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-In [Azure AD entitlement management](entitlementmanagement-root.md), an access package assignment request is created by a user who wants to obtain an access package assignment. If the request is successful, with any necessary approvals, the user receives an access package assignment, and is the subject of that resulting access package assignment.
+In [Azure AD entitlement management](entitlementmanagement-root.md), an access package assignment request is created by a user who wants to obtain an access package assignment. If the request is successful, with any necessary approvals, the user receives an access package assignment, and is the subject of that resulting access package assignment.  Azure AD also creates access package assignment requests automatically for tracking access removal.
 
 
 ## Methods
@@ -31,10 +33,10 @@ In [Azure AD entitlement management](entitlementmanagement-root.md), an access p
 |id|String| Read-only.|
 |isValidationOnly|Boolean|True if the request is not to be processed for assignment.|
 |justification|String|The requestor's supplied justification.|
-|requestState|String|One of `Denied`, `Delivered`, `PartiallyDelivered`. Read-only.|
+|requestState|String|One of `Denied`, `Delivered`, `PartiallyDelivered`, `Submitted` or `Scheduled`. Read-only.|
 |requestStatus|String|More information on the request processing status. Read-only.|
-|requestType|String|One of `UserAdd` or `UserRemove`. Read-only.|
-
+|requestType|String|One of `UserAdd`, `UserRemove`, `AdminAdd`, `AdminRemove` or `SystemRemove`. Read-only.|
+|accessPackageAssignment|[accessPackageAssignment](accesspackageassignment.md)| An access package assignment requested to be created.|
 
 ## Relationships
 
@@ -59,7 +61,14 @@ The following is a JSON representation of the resource.
 
 ```json
 {
- 
+  "createdDateTime": "2020-02-12T22:06:58.303Z",
+  "completedDate": "2020-02-12T22:14:28.19Z",
+  "id": "1244d439-5baa-4b9a-be5f-e8fdef5a998b",
+  "requestType": "UserAdd",
+  "requestState": "Delivered",
+  "requestStatus": "FulfilledNotificationTriggered",
+  "isValidationOnly": false,
+  "justification": ""
 }
 ```
 
