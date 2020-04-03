@@ -21,7 +21,7 @@ The following example shows the use of the `mgt-person-card` component with a `m
 
 ## Setup for Teams integrations
 
-The Person-Card component includes icons for contacting the target person, including Teams chat. If your app needs to run inside of the Microsoft Teams desktop client, you can ensure that the Teams chat dialog is properly displayed by setting the `microsoftTeamsLib` in the `TeamsProvider`.
+The Person-Card component allows the user to contact the target person, including Teams chat. If using the component inside a Teams tab app, you can ensure that the component deep links directly to chat instead of opening a browser window by setting the `microsoftTeamsLib` in the `TeamsProvider`.
 
 If the Person-Card component is unable to detect the Teams lib, the component will attempt to open the Teams web client instead.
 
