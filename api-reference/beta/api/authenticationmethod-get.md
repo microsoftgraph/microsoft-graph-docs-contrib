@@ -3,7 +3,7 @@ title: "Get authenticationMethod"
 description: "Retrieve the properties and relationships of an authenticationmethod object."
 localization_priority: Normal
 author: "mmcla"
-ms.prod: ""
+ms.prod: "microsoft-identity-platform"
 doc_type: "apiPageType"
 ---
 

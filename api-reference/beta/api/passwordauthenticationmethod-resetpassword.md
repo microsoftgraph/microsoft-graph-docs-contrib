@@ -62,6 +62,13 @@ If successful, this method returns `202 ACCEPTED` response code and a URL in the
 
 If the caller did not submit a password, a Microsoft-generated password is provided in a JSON object in the response body.
 
+## Response headers
+
+| Name        | Description     |
+|:------------|:----------------|
+|Location     | Url to call to check status of the operation|
+|Retry-after  | Duration in seconds|
+
 ## Example: user-submitted password
 
 The following is an example of how to call this API when the caller submits a desired password.

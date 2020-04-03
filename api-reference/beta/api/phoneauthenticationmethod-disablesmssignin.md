@@ -11,7 +11,7 @@ doc_type: "apiPageType"
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Use this action to disable SMS sign-in for an existing `mobile` phone number. Be careful! This will make the number no longer available for SMS sign-in, which could prevent your user from signing in.
+Use this action to disable SMS sign-in for an existing `mobile` phone number. Note: This will make the number no longer available for SMS sign-in, which could prevent your user from signing in.
 
 ## Permissions
 
