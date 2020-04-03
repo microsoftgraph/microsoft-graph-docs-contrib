@@ -61,7 +61,7 @@ For example, you can use a template to customize the component attached to the `
 
 ## CSS custom properties
 
-The `mgt-person-card` component defines the following CSS custom properties. To utilze the properties you must define the selector as the parent `mgt-person` element. 
+The `mgt-person-card` component defines the following CSS custom properties. To use these properties, you must define the selector as the parent `mgt-person` element. 
 
 ```css
 mgt-person {
