@@ -58,7 +58,7 @@ In the request body, provide a JSON object with the following parameters.
 
 ## Response
 
-If successful, this method returns `202, ACCEPTED` response code and a URL in the `Location` header.
+If successful, this method returns `202 ACCEPTED` response code and a URL in the `Location` header.
 
 If the caller did not submit a password, a Microsoft-generated password is provided in a JSON object in the response body.
 

@@ -60,7 +60,7 @@ In the request body, supply a JSON representation of [phoneAuthenticationMethod]
 
 ## Response
 
-If successful, this method returns `201, Created` response code and a new [phoneAuthenticationMethod](../resources/phoneauthenticationmethod.md) object in the response body.
+If successful, this method returns `201 Created` response code and a new [phoneAuthenticationMethod](../resources/phoneauthenticationmethod.md) object in the response body.
 
 ## Examples
 
