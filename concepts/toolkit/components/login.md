@@ -84,3 +84,26 @@ This component uses the [Person component](./person.md) to display the user and 
 ## Authentication
 
 The login control uses the global authentication provider described in the [authentication documentation](./../providers.md). 
+
+## Extend for more control
+
+For more complex scenarios or a truly custom UX, this component exposes several `protected render*` methods for override in component extensions.
+
+| Method | Description |
+| - | - |
+| renderButton | Renders the button chrome. |
+| renderButtonContent | Renders the button content. |
+| renderFlyout | Renders the flyout chrome. |
+| renderFlyoutContent | Renders the flyout content. |
+
+### Bring your own flyout
+
+It is possible to use your own flyout component in place of the built-in one, by overriding the `renderFlyout()` method and providing the new flyout.
+
+In this case, ensure the login component continues to work as expected by overriding the `protected` flyout display methods to update the visibility of your alternative flyout.
+
+| Method | Description |
+| - | - |
+| hideFlyout | Dismisses the flyout. |
+| showFlyout | Displays the flyout. |
+| toggleFlyout | Toggles the state of the flyout. |
