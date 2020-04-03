@@ -21,13 +21,15 @@ The following example shows the use of the `mgt-person-card` component with a `m
 
 ## Properties
 
-The component uses Microsoft Graph to provide additional details about the user. To define a user, you must use the **person-query** property of `mgt-person`.
+The component uses Microsoft Graph to provide additional details about the user. To define a user, you can either use the **person-query** property of `mgt-person` and indicate **inherit-details** as an attribute to pass on data to `mgt-person-card` as a template of `mgt-person`, or you can provide **user-id** or **person-query** property directly with `mgt-person-card`.
 
 | Attribute         | Type                     | Description                                                                           |
 | ---------------- | -------------------------------- | ------------------------------------------------------------------------------------- |
 | person-details | MicrosoftGraph.User <br> MicrosoftGraph.Person <br> MicrosoftGraph.Contact | Person object as defined by Microsoft Graph, containing details related to the user. |
 | person-image   | png/jpg/svg                    | Image related to the person displayed in the card.                                   |
 | inherit-details   | None.                  | Allows person-card to walk parent tree for `mgt-person` component to use the same `person-details` and `person-image` data.                      |
+| user-id | string | Allows developers to supply user-id to retrive data shown on person-card component |
+| person-query | string | Allows developers to supply person-query to retrive data shown on person-card component |
 
 
 ## Templates
