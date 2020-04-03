@@ -368,7 +368,8 @@ items:
             href: paging.md
           - name: Use query parameters
             href: query-parameters.md
-          - name: Batch requests
+          - name: Batching
+            displayName: Batch requests
             href: json-batching.md
           - name: Throttling
             href: throttling.md
@@ -383,8 +384,8 @@ items:
                 href: webhooks-outlook-authz.md
               - name: Notifications with resource data (preview)
                 href: webhooks-with-resource-data.md
-          - name: Track changes
-            displayName: Delta query, Outlook calendar, Groups, Outlook mail, Users
+          - name: Change tracking
+            displayName: Delta query, track changes, Outlook calendar, Groups, Outlook mail, Users
             items:
               - name: Overview
                 href: delta-query-overview.md

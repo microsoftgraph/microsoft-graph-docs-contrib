@@ -1,7 +1,7 @@
 ---
 title: "Create group"
 description: "Create a new group as specified in the request body. "
-author: "dkershaw10"
+author: "yyuank"
 localization_priority: Priority
 ms.prod: "groups"
 doc_type: apiPageType
@@ -49,6 +49,7 @@ The following table shows the properties of the [group](../resources/group.md) r
 | Property | Type | Description|
 |:---------------|:--------|:----------|
 | displayName | string | The name to display in the address book for the group. Required. |
+| description | string | A description for the group. Max. length: 1024 characters. Optional. |
 | mailEnabled | boolean | Set to **true** for mail-enabled groups. Required. |
 | mailNickname | string | The mail alias for the group. Required. |
 | securityEnabled | boolean | Set to **true** for security-enabled groups, including Office 365 groups. Required. |
