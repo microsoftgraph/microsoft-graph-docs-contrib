@@ -9,6 +9,8 @@ ms.prod: "outlook"
 
 # Create Event
 
+Namespace: microsoft.graph
+
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 Create an [event](../resources/event.md) in the user's default calendar or specified calendar.
@@ -81,11 +83,10 @@ If successful, this method returns `201 Created` response code and [event](../re
 
 ## Examples
 
-### Example 1: Create an event
+### Example 1: Create an event in the specified time zone, and assign the event an optional transactionId value
 
 #### Request
-Here is an example of the request. It uses the `Prefer: outlook.timezone` request header to specify the time zone for the **start** and **end**
-times in the response.
+Here is an example of the request. It uses the Prefer: outlook.timezone request header to specify the time zone for the start and end times in the response. It also sets the transactionId property to reduce unnecessary retries on the server.
 
 # [HTTP](#tab/http)
 <!-- {
@@ -123,7 +124,8 @@ Content-type: application/json
       "type": "required"
     }
   ],
-  "allowNewTimeProposals": true
+  "allowNewTimeProposals": true,
+  "transactionId":"7E163156-7762-4BEB-A1C6-729EA81755A7"
 }
 ```
 # [C#](#tab/csharp)
@@ -177,9 +179,11 @@ Content-length: 2197
     "sensitivity":"normal",
     "isAllDay":false,
     "isCancelled":false,
+    "isDraft": false,
     "isOrganizer":true,
     "responseRequested":true,
     "seriesMasterId":null,
+    "transactionId":"7E163156-7762-4BEB-A1C6-729EA81755A7",
     "showAs":"busy",
     "type":"singleInstance",
     "webLink":"https://outlook.office365.com/owa/?itemid=AAMkAGI1AAAt9AHjAAA%3D&exvsurl=1&path=/calendar/item",
@@ -370,6 +374,7 @@ Content-length: 2985
   "sensitivity":"normal",
   "isAllDay":false,
   "isCancelled":false,
+  "isDraft": false,
   "isOrganizer":true,
   "responseRequested":true,
   "seriesMasterId":null,
@@ -468,10 +473,10 @@ Content-length: 2985
 ```
 
 
-### Example 3: Create a recurring event
+### Example 3: Create a weekly recurring event
 
 #### Request
-The third example shows how to create a recurring event. The event occurs from 12:00pm to 2:00pm, every Monday starting September 4, 2017, through the end of the year.
+The third example shows how to create a recurring event that occurs once a week. The event occurs from 12:00pm to 2:00pm, every Monday starting September 4, 2017, through the end of the year.
 
 # [HTTP](#tab/http)
 <!-- {
@@ -572,6 +577,7 @@ Content-type: application/json
     "sensitivity":"normal",
     "isAllDay":false,
     "isCancelled":false,
+    "isDraft": false,
     "isOrganizer":true,
     "responseRequested":true,
     "seriesMasterId":null,
@@ -655,7 +661,178 @@ Content-type: application/json
 }
 ```
 
-### Example 4: Create and enable an event as an online meeting
+### Example 4: Create a daily recurring event
+
+#### Request
+The fourth example shows how to create a daily recurring event. The event occurs from 12:00pm to 2:00pm, every day starting February 25, 2020, for two occurrences.
+
+<!-- {
+  "blockType": "request",
+  "name": "create_event_recurring_daily"
+}-->
+```http
+POST https://graph.microsoft.com/beta/me/events
+Prefer: outlook.timezone="Pacific Standard Time"
+Content-type: application/json
+
+{
+  "subject": "Let's go for lunch",
+  "body": {
+    "contentType": "HTML",
+    "content": "Does noon work for you?"
+  },
+  "start": {
+      "dateTime": "2020-02-25T12:00:00",
+      "timeZone": "Pacific Standard Time"
+  },
+  "end": {
+      "dateTime": "2020-02-25T14:00:00",
+      "timeZone": "Pacific Standard Time"
+  },
+  "location":{
+      "displayName":"Harry's Bar"
+  },
+  "attendees": [
+    {
+      "emailAddress": {
+        "address":"AlexW@contoso.OnMicrosoft.com",
+        "name": "Alex Wilbur"
+      },
+      "type": "required"
+    }
+  ],
+  "recurrence": {
+    "pattern": {
+      "type": "daily",
+      "interval": 1
+    },
+    "range": {
+      "type": "numbered",
+      "startDate": "2020-02-25",
+      "numberOfOccurrences": 2
+    }
+  }
+}
+```
+
+
+In the request body, supply a JSON representation of [event](../resources/event.md) object.
+#### Response
+Here is an example of the response.
+Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.
+<!-- {
+  "blockType": "response",
+  "name": "create_event_recurring_daily",
+  "truncated": true,
+  "@odata.type": "microsoft.graph.event"
+} -->
+```http
+HTTP/1.1 201 Created
+Content-type: application/json
+
+{
+    "@odata.context": "https://graph.microsoft.com/beta/$metadata#users('d3b9214b-dd8b-441d-b7dc-c446c9fa0e69')/calendar/events/$entity",
+    "@odata.etag": "W/\"NDznl+Uh50WkanaCOKHkaQAAhrvLSg==\"",
+    "id": "AAMkADU5NWAAA=",
+    "createdDateTime": "2020-02-18T22:13:47.2967773Z",
+    "lastModifiedDateTime": "2020-02-18T22:13:47.7398267Z",
+    "changeKey": "NDznl+Uh50WkanaCOKHkaQAAhrvLSg==",
+    "categories": [],
+    "originalStartTimeZone": "Pacific Standard Time",
+    "originalEndTimeZone": "Pacific Standard Time",
+    "uid": "040000008200E00074C5B7101A82E0080000000027B6D5B0A8E6D50100000000000000001000000065CD4D206C79D44CBF53D42B6E79CE55",
+    "reminderMinutesBeforeStart": 15,
+    "isReminderOn": true,
+    "hasAttachments": false,
+    "subject": "Let's go for lunch",
+    "bodyPreview": "Does noon work for you?",
+    "importance": "normal",
+    "sensitivity": "normal",
+    "isAllDay": false,
+    "isCancelled": false,
+    "isDraft": false,
+    "isOrganizer": true,
+    "responseRequested": true,
+    "seriesMasterId": null,
+    "showAs": "busy",
+    "type": "seriesMaster",
+    "webLink": "https://outlook.office365.com/owa/?itemid=AAMkADU5NWAAA%3D&exvsurl=1&path=/calendar/item",
+    "onlineMeetingUrl": null,
+    "isOnlineMeeting": false,
+    "onlineMeetingProvider": "unknown",
+    "allowNewTimeProposals": true,
+    "onlineMeeting": null,
+    "responseStatus": {
+        "response": "organizer",
+        "time": "0001-01-01T00:00:00Z"
+    },
+    "body": {
+        "contentType": "html",
+        "content": "<html>\r\n<head>\r\n<meta http-equiv=\"Content-Type\" content=\"text/html; charset=utf-8\">\r\n<meta content=\"text/html; charset=us-ascii\">\r\n</head>\r\n<body>\r\nDoes noon work for you?\r\n</body>\r\n</html>\r\n"
+    },
+    "start": {
+        "dateTime": "2020-02-25T12:00:00.0000000",
+        "timeZone": "Pacific Standard Time"
+    },
+    "end": {
+        "dateTime": "2020-02-25T14:00:00.0000000",
+        "timeZone": "Pacific Standard Time"
+    },
+    "location": {
+        "displayName": "Harry's Bar",
+        "locationType": "default",
+        "uniqueId": "Harry's Bar",
+        "uniqueIdType": "private"
+    },
+    "locations": [
+        {
+            "displayName": "Harry's Bar",
+            "locationType": "default",
+            "uniqueId": "Harry's Bar",
+            "uniqueIdType": "private"
+        }
+    ],
+    "recurrence": {
+        "pattern": {
+            "type": "daily",
+            "interval": 1,
+            "month": 0,
+            "dayOfMonth": 0,
+            "firstDayOfWeek": "sunday",
+            "index": "first"
+        },
+        "range": {
+            "type": "numbered",
+            "startDate": "2020-02-25",
+            "endDate": "0001-01-01",
+            "recurrenceTimeZone": "Pacific Standard Time",
+            "numberOfOccurrences": 2
+        }
+    },
+    "attendees": [
+        {
+            "type": "required",
+            "status": {
+                "response": "none",
+                "time": "0001-01-01T00:00:00Z"
+            },
+            "emailAddress": {
+                "name": "Alex Wilber",
+                "address": "AlexW@contoso.OnMicrosoft.com"
+            }
+        }
+    ],
+    "organizer": {
+        "emailAddress": {
+            "name": "Adele Vance",
+            "address": "AdeleV@contoso.OnMicrosoft.com"
+        }
+    }
+}
+```
+
+
+### Example 5: Create and enable an event as an online meeting
 
 #### Request
 Here is an example of a request which creates an event and enables it as an online meeting. It uses the `Prefer: outlook.timezone` request header to specify the time zone for the **start** and **end**
@@ -753,6 +930,7 @@ Content-length: 2197
     "sensitivity":"normal",
     "isAllDay":false,
     "isCancelled":false,
+    "isDraft": false,
     "isOrganizer":true,
     "responseRequested":true,
     "seriesMasterId":null,
@@ -824,6 +1002,7 @@ Content-length: 2197
 
 ## See also
 
+- [Schedule repeating appointments as recurring events in Outlook](/graph/outlook-schedule-recurring-events)
 - [Add custom data to resources using extensions](/graph/extensibility-overview)
 - [Add custom data to users using open extensions](/graph/extensibility-open-users)
 - [Add custom data to groups using schema extensions](/graph/extensibility-schema-groups)

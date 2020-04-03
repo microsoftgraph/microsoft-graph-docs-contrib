@@ -9,6 +9,8 @@ doc_type: resourcePageType
 
 # recordingInfo resource type
 
+Namespace: microsoft.graph
+
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 Recording information for a participant.
@@ -19,6 +21,7 @@ Recording information for a participant.
 |:----------------|:--------|:----------|
 | initiatedBy     | [participantInfo](participantinfo.md) | The participant who initiated the recording. |
 | recordingStatus | String | Possible values are: `unknown`, `notRecording`, `recording`, or `failed`. |
+| initiator | [identitySet](identitySet.md) | The identities of recording initiator. |
 
 ## JSON representation
 
@@ -34,7 +37,8 @@ The following is a JSON representation of the resource.
 ```json
 {
   "initiatedBy": {"@odata.type": "#microsoft.graph.participantInfo"},
-  "recordingStatus": "unknown | notRecording | recording | failed"
+  "recordingStatus": "unknown | notRecording | recording | failed",
+  "initiator": {"@odata.type": "#microsoft.graph.initiator"}
 }
 ```
 

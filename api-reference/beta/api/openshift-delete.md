@@ -9,6 +9,8 @@ doc_type: "apiPageType"
 
 # Delete openShift
 
+Namespace: microsoft.graph
+
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 Delete an [openShift](../resources/openshift.md) object.
@@ -28,7 +30,7 @@ One of the following permissions is required to call this API. To learn more, in
 <!-- { "blockType": "ignored" } -->
 
 ```http
-DELETE /teams/{id}/schedule/openShifts
+DELETE /teams/{id}/schedule/openShifts/{openShiftId}
 ```
 
 ## Request headers
@@ -58,7 +60,7 @@ The following is an example of the request.
 }-->
 
 ```http
-DELETE https://graph.microsoft.com/beta/teams/{id}/schedule/openShifts
+DELETE https://graph.microsoft.com/beta/teams/{id}/schedule/openShifts/{openShiftId}
 ```
 # [C#](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/delete-openshift-csharp-snippets.md)]

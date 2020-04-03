@@ -8,6 +8,8 @@ doc_type: resourcePageType
 ---
 # riskDetection resource type
 
+Namespace: microsoft.graph
+
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 Represents information about a detected risk in an Azure AD tenant. 

@@ -1,7 +1,7 @@
 ---
 title: "deviceHealthScript resource type"
 description: "Intune will provide customer the ability to run their Powershell Health scripts (remediation + detection) on the enrolled windows 10 Azure Active Directory joined devices."
-author: "rolyon"
+author: "davidmu1"
 localization_priority: Normal
 ms.prod: "Intune"
 doc_type: resourcePageType
@@ -24,6 +24,11 @@ Intune will provide customer the ability to run their Powershell Health scripts 
 |[Delete deviceHealthScript](../api/intune-devices-devicehealthscript-delete.md)|None|Deletes a [deviceHealthScript](../resources/intune-devices-devicehealthscript.md).|
 |[Update deviceHealthScript](../api/intune-devices-devicehealthscript-update.md)|[deviceHealthScript](../resources/intune-devices-devicehealthscript.md)|Update the properties of a [deviceHealthScript](../resources/intune-devices-devicehealthscript.md) object.|
 |[assign action](../api/intune-devices-devicehealthscript-assign.md)|None|Not yet documented|
+|[updateGlobalScript action](../api/intune-devices-devicehealthscript-updateglobalscript.md)|String|Update the Proprietary Device Health Script|
+|[getGlobalScriptHighestAvailableVersion action](../api/intune-devices-devicehealthscript-getglobalscripthighestavailableversion.md)|String|Update the Proprietary Device Health Script|
+|[enableGlobalScripts action](../api/intune-devices-devicehealthscript-enableglobalscripts.md)|None|Not yet documented|
+|[areGlobalScriptsAvailable function](../api/intune-devices-devicehealthscript-areglobalscriptsavailable.md)|[globalDeviceHealthScriptState](../resources/intune-devices-globaldevicehealthscriptstate.md)|Not yet documented|
+|[getRemediationSummary function](../api/intune-devices-devicehealthscript-getremediationsummary.md)|[deviceHealthScriptRemediationSummary](../resources/intune-devices-devicehealthscriptremediationsummary.md)|Not yet documented|
 
 ## Properties
 |Property|Type|Description|
@@ -41,6 +46,8 @@ Intune will provide customer the ability to run their Powershell Health scripts 
 |enforceSignatureCheck|Boolean|Indicate whether the script signature needs be checked|
 |runAs32Bit|Boolean|Indicate whether PowerShell script(s) should run as 32-bit|
 |roleScopeTagIds|String collection|List of Scope Tag IDs for the device health script|
+|isGlobalScript|Boolean|Determines if this is Microsoft Proprietary Script. Proprietary scripts are read-only|
+|highestAvailableVersion|String|Highest available version for a Microsoft Proprietary script|
 
 ## Relationships
 |Relationship|Type|Description|
@@ -74,7 +81,9 @@ Here is a JSON representation of the resource.
   "runAs32Bit": true,
   "roleScopeTagIds": [
     "String"
-  ]
+  ],
+  "isGlobalScript": true,
+  "highestAvailableVersion": "String"
 }
 ```
 

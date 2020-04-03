@@ -1,7 +1,7 @@
 ---
 title: "Get defaultManagedAppProtection"
 description: "Read properties and relationships of the defaultManagedAppProtection object."
-author: "rolyon"
+author: "davidmu1"
 localization_priority: Normal
 ms.prod: "Intune"
 doc_type: apiPageType
@@ -61,7 +61,7 @@ Here is an example of the response. Note: The response object shown here may be 
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 4878
+Content-Length: 4930
 
 {
   "value": {
@@ -118,6 +118,7 @@ Content-Length: 4878
     "allowedDataIngestionLocations": [
       "sharePoint"
     ],
+    "appActionIfUnableToAuthenticateUser": "wipe",
     "appDataEncryptionType": "afterDeviceRestart",
     "screenCaptureBlocked": true,
     "encryptAppData": true,
@@ -175,7 +176,6 @@ Content-Length: 4878
   }
 }
 ```
-
 
 
 

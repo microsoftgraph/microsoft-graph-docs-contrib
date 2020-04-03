@@ -8,6 +8,8 @@ ms.prod: "intune"
 
 # Shared resources in Microsoft Intune
 
+Namespace: microsoft.graph
+
 > **Important:** APIs under the /beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported.
 
 > **Note:** The Microsoft Graph API for Intune requires an [active Intune license](https://go.microsoft.com/fwlink/?linkid=839381) for the tenant.
@@ -32,13 +34,12 @@ The following Graph resources are shared between Intune workflows:
 - [Device enrollment configuration](intune-shared-deviceenrollmentconfiguration.md)
 - [Device enrollment type](intune-shared-deviceenrollmenttype.md)
 - [Device management](intune-shared-devicemanagement.md)
-- [Device management derived credential issuer](intune-shared-devicemanagementderivedcredentialissuer.md)
-- [Device management derived credential notification type](intune-shared-devicemanagementderivedcredentialnotificationtype.md)
 - [Device management derived credential settings](intune-shared-devicemanagementderivedcredentialsettings.md)
 - [Device management script](intune-shared-devicemanagementscript.md)
 - [Device platform type](intune-shared-deviceplatformtype.md)
 - [Device type](intune-shared-devicetype.md)
 - [Enablement](intune-shared-enablement.md)
+- [Enrollment availability options](intune-shared-enrollmentavailabilityoptions.md)
 - [Enrollment state](intune-shared-enrollmentstate.md)
 - [Exclusion group assignment target](intune-shared-exclusiongroupassignmenttarget.md)
 - [Group assignment target](intune-shared-groupassignmenttarget.md)
@@ -54,6 +55,7 @@ The following Graph resources are shared between Intune workflows:
 - [Key/value pair](intune-shared-keyvaluepair.md)
 - [macOS VPP app assignment settings](intune-shared-macosvppappassignmentsettings.md)
 - [Managed device owner type](intune-shared-manageddeviceownertype.md)
+- [Management agent type](intune-shared-managementagenttype.md)
 - [MDM windows information protection policy](intune-shared-mdmwindowsinformationprotectionpolicy.md)
 - [Microsoft store for business app assignment settings](intune-shared-microsoftstoreforbusinessappassignmentsettings.md)
 - [MIME content](intune-shared-mimecontent.md)
@@ -84,5 +86,4 @@ The following Graph resources are shared between Intune workflows:
 - [Windows domain join configuration](intune-shared-windowsdomainjoinconfiguration.md)
 - [Windows universal AppX app assignment settings](intune-shared-windowsuniversalappxappassignmentsettings.md)
 - [Windows update state](intune-shared-windowsupdatestate.md)
-- [Windows update status](intune-shared-windowsupdatestatus.md)
 

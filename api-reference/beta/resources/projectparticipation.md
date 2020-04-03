@@ -9,6 +9,8 @@ doc_type: "resourcePageType"
 
 # projectParticipation resource type
 
+Namespace: microsoft.graph
+
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 Represents detailed information about projects associated with a user.

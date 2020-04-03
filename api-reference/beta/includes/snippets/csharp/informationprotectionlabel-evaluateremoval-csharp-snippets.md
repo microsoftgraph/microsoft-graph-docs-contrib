@@ -66,6 +66,7 @@ var downgradeJustification = new DowngradeJustification
 await graphClient.Informationprotection.Policy.Labels
 	.EvaluateRemoval(contentInfo,downgradeJustification)
 	.Request()
+	.Header("User-Agent","ContosoLOBApp/1.0")
 	.PostAsync();
 
 ```
