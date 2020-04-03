@@ -27,9 +27,9 @@ If the Person-Card component is unable to detect the Teams lib, the component wi
 
 ```ts
 import * as MicrosoftTeams from "@microsoft/teams-js/dist/MicrosoftTeams";
-import {TeamsProvider} from '@microsoft/mgt';
+import {TeamsHelper} from '@microsoft/mgt';
 
-TeamsProvider.microsoftTeamsLib = MicrosoftTeams;
+TeamsHelper.microsoftTeamsLib = MicrosoftTeams;
 ```
 
 For more information about the `TeamsProvider` provider, see [TeamsProvider docs](../providers/teams.md).
