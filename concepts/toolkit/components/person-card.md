@@ -19,6 +19,21 @@ The following example shows the use of the `mgt-person-card` component with a `m
 
 [Open this example in mgt.dev](https://mgt.dev/?path=/story/components-mgt-person-card--person-card-hover&source=docs)
 
+## Setup for Teams integrations
+
+The Person-Card component includes icons for contacting the target person, including Teams chat. If your app needs to run inside of the Microsoft Teams desktop client, you can ensure that the Teams chat dialog is properly displayed by setting the `microsoftTeamsLib` in the `TeamsProvider`.
+
+If the Person-Card component is unable to detect the Teams lib, the component will attempt to open the Teams web client instead.
+
+```ts
+import * as MicrosoftTeams from "@microsoft/teams-js/dist/MicrosoftTeams";
+import {TeamsProvider} from '@microsoft/mgt';
+
+TeamsProvider.microsoftTeamsLib = MicrosoftTeams;
+```
+
+For more information about the `TeamsProvider` provider, see [TeamsProvider docs](../providers/teams.md).
+
 ## Properties
 
 The component uses Microsoft Graph to provide additional details about the user. To define a user, you must use the **person-query** property of `mgt-person`.
