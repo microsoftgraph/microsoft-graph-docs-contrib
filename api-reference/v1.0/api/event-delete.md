@@ -11,7 +11,7 @@ doc_type: apiPageType
 
 Namespace: microsoft.graph
 
-Removes the specified [event]((../resources/event.md)) from the containing calendar. 
+Removes the specified [event](../resources/event.md) from the containing calendar. 
 
 If the event is a meeting, deleting the event on the organizer's calendar sends a cancellation message to the meeting attendees.
 
