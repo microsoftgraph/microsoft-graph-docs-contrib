@@ -36,7 +36,7 @@ For more information about the `TeamsProvider` provider, see [Microsoft Teams pr
 
 ## Properties
 
-The component uses Microsoft Graph to provide additional details about the user. By default, the `mgt-person-card` will get its data from the `mgt-person` component and the developer only need to provide **inherit-details** attribute. However, you can provide **user-id** or **person-query** property directly with `mgt-person-card` to get a standalone component.
+By default, the `mgt-person` component will pass the person details to the `mgt-person-card` component. However, you can use these attributes to change this when templating the `mgt-person` component or when using the `mgt-person-card` component as a standalone component.
 
 | Attribute         | Type                     | Description                                                                           |
 | ---------------- | -------------------------------- | ------------------------------------------------------------------------------------- |
@@ -119,4 +119,3 @@ For more complex scenarios or a truly custom UX, this component exposes several 
 | renderExpandedDetails | Renders the content in the expanded details container. |
 | renderContactDetails | Renders the contact details part of the expanded details. |
 | renderAdditionalDetails | Renders the additional details part of the expanded details. |
-
