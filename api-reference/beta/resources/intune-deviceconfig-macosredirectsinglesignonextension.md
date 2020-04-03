@@ -1,7 +1,7 @@
 ---
 title: "macOSRedirectSingleSignOnExtension resource type"
 description: "Represents a Redirect-type Single Sign-On extension profile for macOS devices."
-author: "rolyon"
+author: "davidmu1"
 localization_priority: Normal
 ms.prod: "Intune"
 doc_type: resourcePageType
@@ -23,7 +23,7 @@ Inherits from [macOSSingleSignOnExtension](../resources/intune-deviceconfig-maco
 |:---|:---|:---|
 |extensionIdentifier|String|Gets or sets the bundle ID of the app extension that performs SSO for the specified URLs.|
 |teamIdentifier|String|Gets or sets the team ID of the app extension that performs SSO for the specified URLs.|
-|configurations|[keyTypedValuePair](../resources/intune-shared-keytypedvaluepair.md) collection|Gets or sets a list of typed key-value pairs used to configure Credential-type profiles. This collection can contain a maximum of 500 elements.|
+|configurations|[keyTypedValuePair](../resources/intune-deviceconfig-keytypedvaluepair.md) collection|Gets or sets a list of typed key-value pairs used to configure Credential-type profiles. This collection can contain a maximum of 500 elements.|
 |urlPrefixes|String collection|One or more URL prefixes of identity providers on whose behalf the app extension performs single sign-on. URLs must begin with http:// or https://. All URL prefixes must be unique for all profiles.|
 
 ## Relationships

@@ -1,7 +1,7 @@
 ---
 title: "Create iosUpdateConfiguration"
 description: "Create a new iosUpdateConfiguration object."
-author: "rolyon"
+author: "davidmu1"
 localization_priority: Normal
 ms.prod: "Intune"
 doc_type: apiPageType
@@ -65,6 +65,8 @@ The following table shows the properties that are required when you create the i
 |scheduledInstallDays|[dayOfWeek](../resources/intune-deviceconfig-dayofweek.md) collection|Days in week for which active hours are configured. This collection can contain a maximum of 7 elements. Possible values are: `sunday`, `monday`, `tuesday`, `wednesday`, `thursday`, `friday`, `saturday`.|
 |utcTimeOffsetInMinutes|Int32|UTC Time Offset indicated in minutes|
 |enforcedSoftwareUpdateDelayInDays|Int32|Days before software updates are visible to iOS devices ranging from 0 to 90 inclusive|
+|updateScheduleType|[iosSoftwareUpdateScheduleType](../resources/intune-deviceconfig-iossoftwareupdatescheduletype.md)|Update schedule type. Possible values are: `updateOutsideOfActiveHours`, `alwaysUpdate`, `updateDuringTimeWindows`, `updateOutsideOfTimeWindows`.|
+|customUpdateTimeWindows|[customUpdateTimeWindow](../resources/intune-deviceconfig-customupdatetimewindow.md) collection|If update schedule type is set to use time window scheduling, custom time windows when updates will be scheduled. This collection can contain a maximum of 20 elements.|
 
 
 
@@ -78,7 +80,7 @@ Here is an example of the request.
 ``` http
 POST https://graph.microsoft.com/beta/deviceManagement/deviceConfigurations
 Content-type: application/json
-Content-length: 1306
+Content-length: 1596
 
 {
   "@odata.type": "#microsoft.graph.iosUpdateConfiguration",
@@ -118,7 +120,17 @@ Content-length: 1306
     "monday"
   ],
   "utcTimeOffsetInMinutes": 6,
-  "enforcedSoftwareUpdateDelayInDays": 1
+  "enforcedSoftwareUpdateDelayInDays": 1,
+  "updateScheduleType": "alwaysUpdate",
+  "customUpdateTimeWindows": [
+    {
+      "@odata.type": "microsoft.graph.customUpdateTimeWindow",
+      "startDay": "monday",
+      "endDay": "monday",
+      "startTime": "12:03:30.2730000",
+      "endTime": "12:03:02.3740000"
+    }
+  ]
 }
 ```
 
@@ -127,7 +139,7 @@ Here is an example of the response. Note: The response object shown here may be 
 ``` http
 HTTP/1.1 201 Created
 Content-Type: application/json
-Content-Length: 1478
+Content-Length: 1768
 
 {
   "@odata.type": "#microsoft.graph.iosUpdateConfiguration",
@@ -170,10 +182,19 @@ Content-Length: 1478
     "monday"
   ],
   "utcTimeOffsetInMinutes": 6,
-  "enforcedSoftwareUpdateDelayInDays": 1
+  "enforcedSoftwareUpdateDelayInDays": 1,
+  "updateScheduleType": "alwaysUpdate",
+  "customUpdateTimeWindows": [
+    {
+      "@odata.type": "microsoft.graph.customUpdateTimeWindow",
+      "startDay": "monday",
+      "endDay": "monday",
+      "startTime": "12:03:30.2730000",
+      "endTime": "12:03:02.3740000"
+    }
+  ]
 }
 ```
-
 
 
 

@@ -1,7 +1,7 @@
 ---
 title: "Update intuneBrandingProfile"
 description: "Update the properties of a intuneBrandingProfile object."
-author: "rolyon"
+author: "davidmu1"
 localization_priority: Normal
 ms.prod: "Intune"
 doc_type: apiPageType
@@ -72,6 +72,9 @@ The following table shows the properties that are required when you create the [
 |companyPortalBlockedActions|[companyPortalBlockedAction](../resources/intune-shared-companyportalblockedaction.md) collection|Collection of blocked actions on the company portal as per platform and device ownership types.|
 |showAzureADEnterpriseApps|Boolean|Boolean that indicates if AzureAD Enterprise Apps will be shown in Company Portal|
 |showOfficeWebApps|Boolean|Boolean that indicates if Office WebApps will be shown in Company Portal|
+|sendDeviceOwnershipChangePushNotification|Boolean|Boolean that indicates if a push notification is sent to users when their device ownership type changes from personal to corporate|
+|enrollmentAvailability|[enrollmentAvailabilityOptions](../resources/intune-shared-enrollmentavailabilityoptions.md)|Customized device enrollment flow displayed to the end user . Possible values are: `availableWithPrompts`, `availableWithoutPrompts`, `unavailable`.|
+|roleScopeTagIds|String collection|List of scope tags assigned to the branding profile|
 
 
 
@@ -85,7 +88,7 @@ Here is an example of the request.
 ``` http
 PATCH https://graph.microsoft.com/beta/deviceManagement/intuneBrandingProfiles/{intuneBrandingProfileId}
 Content-type: application/json
-Content-length: 1620
+Content-length: 1792
 
 {
   "@odata.type": "#microsoft.graph.intuneBrandingProfile",
@@ -135,7 +138,12 @@ Content-length: 1620
     }
   ],
   "showAzureADEnterpriseApps": true,
-  "showOfficeWebApps": true
+  "showOfficeWebApps": true,
+  "sendDeviceOwnershipChangePushNotification": true,
+  "enrollmentAvailability": "availableWithoutPrompts",
+  "roleScopeTagIds": [
+    "Role Scope Tag Ids value"
+  ]
 }
 ```
 
@@ -144,7 +152,7 @@ Here is an example of the response. Note: The response object shown here may be 
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 1792
+Content-Length: 1964
 
 {
   "@odata.type": "#microsoft.graph.intuneBrandingProfile",
@@ -197,10 +205,14 @@ Content-Length: 1792
     }
   ],
   "showAzureADEnterpriseApps": true,
-  "showOfficeWebApps": true
+  "showOfficeWebApps": true,
+  "sendDeviceOwnershipChangePushNotification": true,
+  "enrollmentAvailability": "availableWithoutPrompts",
+  "roleScopeTagIds": [
+    "Role Scope Tag Ids value"
+  ]
 }
 ```
-
 
 
 

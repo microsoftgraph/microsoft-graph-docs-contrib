@@ -36,6 +36,7 @@ Using the Microsoft Graph API, an app can subscribe to changes on the following 
 - Content within the hierarchy of _any folder_ [driveItem][] on a user's personal OneDrive
 - Content within the hierarchy of the _root folder_ [driveItem][] on OneDrive for Business
 - Security [alert][]
+- Teams [callRecord][] (preview)
 
 You can create a subscription to a specific Outlook folder such as the Inbox:
 `me/mailFolders('inbox')/messages`
@@ -74,6 +75,8 @@ When the limits are exceeded, attempts to create a subscription will result in a
 - Azure AD B2C tenants are not supported.
 
 - Notification for user entities are not supported for personal Microsoft accounts.
+
+- A [Known issue](graph/concepts/known-issues#change-notifications) exists with user subscriptions.
 
 ### Outlook resource limitations
 
@@ -141,6 +144,7 @@ Microsoft Graph validates the notification endpoint provided in the `notificatio
 1. Microsoft Graph sends a POST request to the notification URL:
 
     ``` http
+    Content-Type: text/plain; charset=utf-8
     POST https://{notificationUrl}?validationToken={opaqueTokenCreatedByMicrosoftGraph}
     ```
 
@@ -153,6 +157,10 @@ Microsoft Graph validates the notification endpoint provided in the `notificatio
     - The body must include the validation token provided by Microsoft Graph.
 
 The client should discard the validation token after providing it in the response.
+
+Additionally, you can use the [Microsoft Graph Postman collection](use-postman.md) to confirm that your endpoint properly implements the validation request. The **Subscription Validation** request in the **Misc** folder provides unit tests that validate the response provided by your endpoint.  
+
+![validation response test results](images/change-notifications/validation-request-tests-results.png)
 
 ### Renewing a subscription
 
@@ -281,3 +289,4 @@ The following code samples are available on GitHub.
 [message]: /graph/api/resources/message?view=graph-rest-1.0
 [user]: /graph/api/resources/user?view=graph-rest-1.0
 [alert]: /graph/api/resources/alert?view=graph-rest-1.0
+[callRecord]: /graph/api/resources/callrecords-callrecord?view=graph-rest-beta

@@ -319,6 +319,94 @@ Here is an example of the properties included in the JWT token that are needed f
 }
 ```
 
+### Example: Verifying validation tokens
+
+```csharp
+// add Microsoft.IdentityModel.Protocols.OpenIdConnect and System.IdentityModel.Tokens.Jwt nuget packages to your project
+public async Task<bool> ValidateToken(string token, string tenantId, IEnumerable<string> appIds)
+{
+    var configurationManager = new ConfigurationManager<OpenIdConnectConfiguration>("https://login.microsoftonline.com/common/.well-known/openid-configuration", new OpenIdConnectConfigurationRetriever());
+    var openIdConfig = await configurationManager.GetConfigurationAsync();
+    var handler = new JwtSecurityTokenHandler();
+    try
+    {
+	handler.ValidateToken(token, new TokenValidationParameters
+	{
+	    ValidateIssuer = true,
+	    ValidateAudience = true,
+	    ValidateIssuerSigningKey = true,
+	    ValidateLifetime = true,
+	    ValidIssuer = $"https://sts.windows.net/{tenantId}/",
+	    ValidAudiences = appIds,
+	    IssuerSigningKeys = openIdConfig.SigningKeys
+	}, out _);
+	return true;
+    }
+    catch (Exception ex)
+    {
+	Trace.TraceError($"{ex.Message}:{ex.StackTrace}");
+	return false;
+    }
+}
+```
+```java
+private boolean IsValidationTokenValid(String[] appIds, String tenantId, String serializedToken) {
+	try {
+	    JwkKeyResolver jwksResolver = new JwkKeyResolver();
+	    Jws<Claims> token = Jwts.parserBuilder()
+		.setSigningKeyResolver(jwksResolver)
+		.build()
+		.parseClaimsJws(serializedToken);
+	    Claims body = token.getBody();
+	    String audience = body.getAudience();
+	    boolean isAudienceValid = false;
+	    for(String appId : appIds) {
+		isAudienceValid = isAudienceValid || appId.equals(audience);
+	    }
+	    boolean isTenantValid = body.getIssuer().endsWith(tenantId + "/");
+	    return isAudienceValid  && isTenantValid; //nbf,exp and signature are already validated by library
+	} catch (Exception e) {
+	    LOGGER.error("could not validate token");
+	    LOGGER.error(e.getMessage());
+	    return false;
+	}
+}
+```
+For the Java sample to work, you will also need to implement the `JwkKeyResolver`.  
+```java
+package com.example.restservice;
+
+import com.auth0.jwk.JwkProvider;
+import com.auth0.jwk.UrlJwkProvider;
+import com.auth0.jwk.Jwk;
+import io.jsonwebtoken.Claims;
+import io.jsonwebtoken.JwsHeader;
+import io.jsonwebtoken.SigningKeyResolverAdapter;
+import java.security.Key;
+import java.net.URI;
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
+
+public class JwkKeyResolver extends SigningKeyResolverAdapter {
+    private JwkProvider keyStore;
+    private final Logger LOGGER = LoggerFactory.getLogger(this.getClass());
+    public JwkKeyResolver() throws java.net.URISyntaxException, java.net.MalformedURLException {
+        this.keyStore = new UrlJwkProvider((new URI("https://login.microsoftonline.com/common/discovery/keys").toURL()));
+    }
+    @Override
+    public Key resolveSigningKey(JwsHeader jwsHeader, Claims claims) {
+        try {
+            String keyId = jwsHeader.getKeyId();
+            Jwk pub = keyStore.get(keyId);
+            return pub.getPublicKey();
+        } catch (Exception e) {
+            LOGGER.error(e.getMessage());
+            return null;
+        }
+    }
+}
+```
+
 ## Decrypting resource data from change notifications
 
 The **resourceData** property of a notification includes only the basic ID and type information of a resource instance. The **encryptedData** property contains the full resource data, encrypted by Microsoft Graph using the public key provided in the subscription. The property also contains values required for verification and decryption. This is done to increase the security of customer data accessed via notifications. It is your responsibility to secure the private key to ensure that customer data cannot be decrypted by a third party, even if they manage to intercept the original notifications.
@@ -445,6 +533,19 @@ byte[] decryptedSymmetricKey = rsaProvider.Decrypt(encryptedSymmetricKey, fOAEP:
 
 // Can now use decryptedSymmetricKey with the AES algorithm.
 ```
+```Java
+String storename = ""; //name/path of the jks store
+String storepass = ""; //password used to open the jks store
+String alias = ""; //alias of the certificate when store in the jks store, should be passed as encryptionCertificateId when subscribing and retrieved from the notification
+KeyStore ks = KeyStore.getInstance("JKS");
+ks.load(new FileInputStream(storename), storepass.toCharArray());
+Key asymmetricKey = ks.getKey(alias, storepass.toCharArray());
+byte[] encryptedSymetricKey = Base64.decodeBase64("<value from dataKey property>");
+Cipher cipher = Cipher.getInstance("RSA/ECB/OAEPWithSHA1AndMGF1Padding");
+cipher.init(Cipher.DECRYPT_MODE, asymmetricKey);
+byte[] decryptedSymmetricKey = cipher.doFinal(encryptedSymetricKey);
+// Can now use decryptedSymmetricKey with the AES algorithm.
+```
 
 #### Compare data signature using HMAC-SHA256
 
@@ -459,6 +560,23 @@ using (HMACSHA256 hmac = new HMACSHA256(decryptedSymmetricKey))
     actualSignature = hmac.ComputeHash(encryptedPayload);
 }
 if (actualSignature.SequenceEqual(expectedSignature))
+{
+    // Continue with decryption of the encryptedPayload.
+}
+else
+{
+    // Do not attempt to decrypt encryptedPayload. Assume notification payload has been tampered with and investigate.
+}
+```
+```Java
+byte[] decryptedSymmetricKey = "<the aes key decrypted in the previous step>";
+byte[] decodedEncryptedData = Base64.decodeBase64("data property from encryptedContent object");
+Mac mac = Mac.getInstance("HMACSHA256");
+SecretKey skey = new SecretKeySpec(decryptedSymmetricKey, "HMACSHA256");
+mac.init(skey);
+byte[] hashedData = mac.doFinal(decodedEncryptedData);
+String encodedHashedData = new String(Base64.encodeBase64(hashedData));
+if (comparisonSignature.equals(encodedHashedData);)
 {
     // Continue with decryption of the encryptedPayload.
 }
@@ -501,6 +619,13 @@ using (var decryptor = aesProvider.CreateDecryptor())
 }
 
 // decryptedResourceData now contains a JSON string that represents the resource.
+```
+```Java
+SecretKey skey = new SecretKeySpec(decryptedSymmetricKey, "AES");
+IvParameterSpec ivspec = new IvParameterSpec(Arrays.copyOf(decryptedSymmetricKey, 16));
+Cipher cipher = Cipher.getInstance("AES/CBC/PKCS5PADDING");
+cipher.init(Cipher.DECRYPT_MODE, skey, ivspec);
+String decryptedResourceData = new String(cipher.doFinal(Base64.decodeBase64(encryptedData)));
 ```
 
 ## See also

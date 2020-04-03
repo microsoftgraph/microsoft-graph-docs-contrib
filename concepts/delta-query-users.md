@@ -81,7 +81,7 @@ GET https://graph.microsoft.com/v1.0/users/delta?$skiptoken=oEBwdSP6uehIAxQOWq_3
 
 ## nextLink response
 
-The response contains a `nextLink` and another `skipToken`, indicating there are more users available. You continue making requests using the nextLink URL until a deltaLink URL is returned in the response.
+The response contains another `nextLink` with a new `skipToken` value, which indicates that more groups are available. You should continue making requests using the `nextLink` URL until a `deltaLink` URL is returned in the final response, even if the value is an empty array (this can happen under certain circumstances).
 
 ```http
 HTTP/1.1 200 OK
@@ -153,7 +153,7 @@ GET https://graph.microsoft.com/v1.0/users/delta?$deltatoken=oEcOySpF_hWYmTIUZBO
 
 ## deltaLink response
 
-If no changes have occurred, the same `deltaToken` is returned with no results.
+If no changes have occurred, a different `deltatoken` is returned with no results.
 
 ```http
 HTTP/1.1 200 OK
@@ -166,7 +166,7 @@ Content-type: application/json
 }
 ```
 
-If changes have occurred, the same `deltaToken` is returned including a collection of changed users.
+If changes have occurred, a different `deltatoken` is returned including a collection of changed users.
 
 ```http
 HTTP/1.1 200 OK

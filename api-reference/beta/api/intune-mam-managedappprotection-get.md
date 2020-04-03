@@ -1,7 +1,7 @@
 ---
 title: "Get managedAppProtection"
 description: "Read properties and relationships of the managedAppProtection object."
-author: "rolyon"
+author: "davidmu1"
 localization_priority: Normal
 ms.prod: "Intune"
 doc_type: apiPageType
@@ -63,7 +63,7 @@ Here is an example of the response. Note: The response object shown here may be 
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 2415
+Content-Length: 2467
 
 {
   "value": {
@@ -119,11 +119,11 @@ Content-Length: 2415
     "blockDataIngestionIntoOrganizationDocuments": true,
     "allowedDataIngestionLocations": [
       "sharePoint"
-    ]
+    ],
+    "appActionIfUnableToAuthenticateUser": "wipe"
   }
 }
 ```
-
 
 
 

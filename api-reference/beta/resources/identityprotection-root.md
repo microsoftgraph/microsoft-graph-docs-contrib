@@ -9,6 +9,8 @@ doc_type: conceptualPageType
 
 # Use the Azure AD identity protection API (preview)
 
+Namespace: microsoft.graph
+
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 Identity Protection is a tool that allows organizations to discover, investigate, and remediate identity-based risks in their environment. You can use the following Microsoft Graph APIs to query risks detected by Identity Protection: 

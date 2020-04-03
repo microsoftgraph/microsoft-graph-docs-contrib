@@ -1,13 +1,15 @@
 ---
 title: "Create Calendar"
 description: "Use this API to create a new calendar for a user."
-author: "dkershaw10"
+author: "harini84"
 localization_priority: Priority
-ms.prod: "microsoft-identity-platform"
+ms.prod: "outlook"
 doc_type: apiPageType
 ---
 
 # Create Calendar
+
+Namespace: microsoft.graph
 
 Use this API to create a new calendar for a [user](../resources/user.md).
 ## Permissions

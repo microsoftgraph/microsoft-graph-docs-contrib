@@ -8,6 +8,8 @@ ms.prod: "intune"
 
 # Shared resources in Microsoft Intune
 
+Namespace: microsoft.graph
+
 > **Important:** APIs under the /beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported.
 
 > **Note:** The Microsoft Graph API for Intune requires an [active Intune license](https://go.microsoft.com/fwlink/?linkid=839381) for the tenant.
@@ -20,7 +22,6 @@ The following Graph resources are shared between Intune workflows:
 - [All devices assignment target](intune-shared-alldevicesassignmenttarget.md)
 - [All licensed users assignment target](intune-shared-alllicensedusersassignmenttarget.md)
 - [Android managed app protection](intune-shared-androidmanagedappprotection.md)
-- [BitLocker recovery password rotation type](intune-shared-bitlockerrecoverypasswordrotationtype.md)
 - [Company portal action](intune-shared-companyportalaction.md)
 - [Company portal blocked action](intune-shared-companyportalblockedaction.md)
 - [Compliance status](intune-shared-compliancestatus.md)
@@ -33,13 +34,12 @@ The following Graph resources are shared between Intune workflows:
 - [Device enrollment configuration](intune-shared-deviceenrollmentconfiguration.md)
 - [Device enrollment type](intune-shared-deviceenrollmenttype.md)
 - [Device management](intune-shared-devicemanagement.md)
-- [Device management derived credential issuer](intune-shared-devicemanagementderivedcredentialissuer.md)
-- [Device management derived credential notification type](intune-shared-devicemanagementderivedcredentialnotificationtype.md)
 - [Device management derived credential settings](intune-shared-devicemanagementderivedcredentialsettings.md)
 - [Device management script](intune-shared-devicemanagementscript.md)
 - [Device platform type](intune-shared-deviceplatformtype.md)
 - [Device type](intune-shared-devicetype.md)
 - [Enablement](intune-shared-enablement.md)
+- [Enrollment availability options](intune-shared-enrollmentavailabilityoptions.md)
 - [Enrollment state](intune-shared-enrollmentstate.md)
 - [Exclusion group assignment target](intune-shared-exclusiongroupassignmenttarget.md)
 - [Group assignment target](intune-shared-groupassignmenttarget.md)
@@ -52,11 +52,6 @@ The following Graph resources are shared between Intune workflows:
 - [IP range](intune-shared-iprange.md)
 - [IPv4 range](intune-shared-ipv4range.md)
 - [IPv6 range](intune-shared-ipv6range.md)
-- [Key boolean value pair](intune-shared-keybooleanvaluepair.md)
-- [Key integer value pair](intune-shared-keyintegervaluepair.md)
-- [Key real value pair](intune-shared-keyrealvaluepair.md)
-- [Key string value pair](intune-shared-keystringvaluepair.md)
-- [Key typed value pair](intune-shared-keytypedvaluepair.md)
 - [Key/value pair](intune-shared-keyvaluepair.md)
 - [macOS VPP app assignment settings](intune-shared-macosvppappassignmentsettings.md)
 - [Managed device owner type](intune-shared-manageddeviceownertype.md)
@@ -91,5 +86,4 @@ The following Graph resources are shared between Intune workflows:
 - [Windows domain join configuration](intune-shared-windowsdomainjoinconfiguration.md)
 - [Windows universal AppX app assignment settings](intune-shared-windowsuniversalappxappassignmentsettings.md)
 - [Windows update state](intune-shared-windowsupdatestate.md)
-- [Windows update status](intune-shared-windowsupdatestatus.md)
 

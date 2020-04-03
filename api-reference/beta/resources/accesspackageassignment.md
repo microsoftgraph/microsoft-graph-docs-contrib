@@ -9,6 +9,8 @@ doc_type: "resourcePageType"
 
 # accessPackageAssignment resource type
 
+Namespace: microsoft.graph
+
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 In [Azure AD entitlement management](entitlementmanagement-root.md), an access package assignment is an assignment of an access package to a particular subject, for a period of time.  For example, an access package assignment could state that user 'Alice' has the been assigned access via the access package 'Sales' for the period January 2019 through July 2019.
@@ -19,7 +21,7 @@ In [Azure AD entitlement management](entitlementmanagement-root.md), an access p
 |:-------------|:------------|:------------|
 | [List accessPackageAssignments](../api/accesspackageassignment-list.md) | [accessPackageAssignment](accesspackageassignment.md) collection | Retrieve a list of **accesspackageassignment** objects. |
 
->**Note:** You can't use a method to create an access package assignment. Instead, a client that wants to request an access package assignment for a user can [create an accessPackageAssignmentRequest](../api/accesspackageassignmentrequest-post.md).
+>**Note:** You can't use a method to create or remove an access package assignment. Instead, a client that wants to request an access package assignment for a user, or remove an access package assignment from a user, can [create an accessPackageAssignmentRequest](../api/accesspackageassignmentrequest-post.md).
 
 ## Properties
 
@@ -27,7 +29,7 @@ In [Azure AD entitlement management](entitlementmanagement-root.md), an access p
 |:-------------|:------------|:------------|
 |accessPackageId|String|The identifier of the access package. Read-only.|
 |assignmentPolicyId|String|The identifier of the access package assignment policy. Read-only.|
-|assignmentState|String|Read-only.|
+|assignmentState|String|The state of the access package. Possible values are `Delivered` or `Expired`. Read-only.|
 |assignmentStatus|String|Read-only.|
 |catalogId|String|The identifier of the catalog containing the access package. Read-only.|
 |expiredDateTime|DateTimeOffset|The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 would look like this: `'2014-01-01T00:00:00Z'`|
