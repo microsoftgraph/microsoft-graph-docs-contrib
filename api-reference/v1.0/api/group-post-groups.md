@@ -1,13 +1,16 @@
 ---
 title: "Create group"
 description: "Create a new group as specified in the request body. "
-author: "dkershaw10"
+author: "yyuank"
 localization_priority: Priority
 ms.prod: "groups"
 doc_type: apiPageType
 ---
 
 # Create group
+
+Namespace: microsoft.graph
+
 Create a new group as specified in the request body. You can create the following types of groups:
 
 * Office 365 group (unified group)
@@ -45,7 +48,8 @@ The following table shows the properties of the [group](../resources/group.md) r
 
 | Property | Type | Description|
 |:---------------|:--------|:----------|
-| displayName | string | The name to display in the address book for the group. Max. length: 256 characters. Required. |
+| displayName | string | The name to display in the address book for the group. Maximum length: 256 characters. Required. |
+| description | string | A description for the group. Max. length: 1024 characters. Optional. |
 | mailEnabled | boolean | Set to **true** for mail-enabled groups. Required. |
 | mailNickname | string | The mail alias for the group. Max. length: 64 characters. Required. |
 | securityEnabled | boolean | Set to **true** for security-enabled groups, including Office 365 groups. Required. |

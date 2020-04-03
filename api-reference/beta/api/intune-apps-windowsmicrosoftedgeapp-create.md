@@ -1,7 +1,7 @@
 ---
 title: "Create windowsMicrosoftEdgeApp"
 description: "Create a new windowsMicrosoftEdgeApp object."
-author: "rolyon"
+author: "davidmu1"
 localization_priority: Normal
 ms.prod: "Intune"
 doc_type: apiPageType
@@ -65,6 +65,7 @@ The following table shows the properties that are required when you create the w
 |roleScopeTagIds|String collection|List of scope tag ids for this mobile app. Inherited from [mobileApp](../resources/intune-shared-mobileapp.md)|
 |dependentAppCount|Int32|The total number of dependencies the child app has. Inherited from [mobileApp](../resources/intune-shared-mobileapp.md)|
 |channel|[microsoftEdgeChannel](../resources/intune-apps-microsoftedgechannel.md)|The channel to install on target devices. Possible values are: `dev`, `beta`, `stable`.|
+|displayLanguageLocale|String|The language locale to use when the Edge app displays text to the user.|
 
 
 
@@ -78,7 +79,7 @@ Here is an example of the request.
 ``` http
 POST https://graph.microsoft.com/beta/deviceAppManagement/mobileApps
 Content-type: application/json
-Content-length: 744
+Content-length: 805
 
 {
   "@odata.type": "#microsoft.graph.windowsMicrosoftEdgeApp",
@@ -103,7 +104,8 @@ Content-length: 744
     "Role Scope Tag Ids value"
   ],
   "dependentAppCount": 1,
-  "channel": "beta"
+  "channel": "beta",
+  "displayLanguageLocale": "Display Language Locale value"
 }
 ```
 
@@ -112,7 +114,7 @@ Here is an example of the response. Note: The response object shown here may be 
 ``` http
 HTTP/1.1 201 Created
 Content-Type: application/json
-Content-Length: 916
+Content-Length: 977
 
 {
   "@odata.type": "#microsoft.graph.windowsMicrosoftEdgeApp",
@@ -140,10 +142,10 @@ Content-Length: 916
     "Role Scope Tag Ids value"
   ],
   "dependentAppCount": 1,
-  "channel": "beta"
+  "channel": "beta",
+  "displayLanguageLocale": "Display Language Locale value"
 }
 ```
-
 
 
 

@@ -25,7 +25,6 @@ Because user and group are so frequently used, these resources appear first.  Ot
 |Azure AD Graph <br>(v1.6) property |Microsoft Graph<br>property|Comments|
 |---|---|---|
 | **appRoleAssignments** | beta  &nbsp;-&nbsp; **appRoleAssignments** <br> v1.0 &nbsp;-&nbsp; _Not yet available_ | |
-| **creationType** | beta  &nbsp;-&nbsp; _Not yet available_ <br> v1.0 &nbsp;-&nbsp; _Not yet available_| |
 | **deletedTimestamp**| beta  &nbsp;-&nbsp; **deletedDateTime** <br> v1.0 &nbsp;-&nbsp; **deletedDateTime** | |
 | **dirSyncEnabled** | beta &nbsp;-&nbsp;**onPremisesSyncEnabled** <br> v1.0 &nbsp;-&nbsp; **onPremisesSyncEnabled** | |
 | **facsimileTelephoneNumber** | beta  &nbsp;-&nbsp; **faxNumber** <br> v1.0 &nbsp;-&nbsp; **faxNumber** | |
@@ -36,10 +35,10 @@ Because user and group are so frequently used, these resources appear first.  Ot
 | **oAuth2PermissionGrants** | beta  &nbsp;-&nbsp; **oAuth2PermissionGrants** <br> v1.0 &nbsp;-&nbsp; _Not yet available_ ||
 | **provisioningErrors** | beta &nbsp;-&nbsp; _Not available_ <br> v1.0 &nbsp;-&nbsp; _Not available_ | This property and its information is deprecated.  However, a new property describing any AD Connect related provisioning errors can be found in **onPremisesProvisioningErrors** |
 | **refreshTokensValidFromDateTime** | beta&nbsp;-&nbsp;**signinSessionsValidFromDateTime**<br>v1.0&nbsp;-&nbsp;_Not yet available_ | |
-| **signinNames** | beta &nbsp;-&nbsp; **identities/signInType** <br> v1.0 &nbsp;-&nbsp; _Not yet available_ | This property is now part of the [objectIdentity](/graph/api/resources/objectIdentity?view=graph-rest-beta) resource.|
+| **signinNames** | beta &nbsp;-&nbsp; **identities/signInType** <br> v1.0 &nbsp;-&nbsp; **identities/signInType** | This property is now part of the [objectIdentity](/graph/api/resources/objectIdentity?view=graph-rest-1.0) resource.|
 | **telephoneNumber** | beta  &nbsp;-&nbsp; **businessPhones** <br> v1.0 &nbsp;-&nbsp; **businessPhones** | |
 | **thumbnailPhoto** | beta  &nbsp;-&nbsp; **photo**, photos <br> v1.0 &nbsp;-&nbsp; **photo**, photos | The Azure AD thumbnail photo is not available through Microsoft Graph.  Use the [photo API](/graph/api/resources/profilephoto?view=graph-rest-1.0) instead. |
-| **userIdentities** | beta &nbsp;-&nbsp; **identities** <br> v1.0 &nbsp;-&nbsp; _Not yet available_ | |
+| **userIdentities** | beta &nbsp;-&nbsp; **identities** <br> v1.0 &nbsp;-&nbsp; **identities** | See [objectIdentity](/graph/api/resources/objectIdentity?view=graph-rest-1.0) resource type for more details.|
 | **userState** | beta  &nbsp;-&nbsp; **externalUserState** <br> v1.0 &nbsp;-&nbsp; **externalUserState** | |
 | **userStateChangedOn** | beta&nbsp;-&nbsp;**externalUserStateChangeDateTime**<br>v1.0&nbsp;-&nbsp;**externalUserStateChangeDateTime** | |
 
@@ -150,7 +149,7 @@ The Azure AD Graph directoryObjectReference resource has been renamed to directo
 
 ## Policy property differences
 
-Currently the policy resource in Microsoft Graph (only available in preview) looks very similar to Azure AD Graph.  However it will change so that there are named policy types (such as tokenIssuancePolicy or tokenLifetimePolicy), rather than a generic policy resource type.
+In Microsoft Graph there are named policy types (such as tokenIssuancePolicy or tokenLifetimePolicy), rather than a generic policy resource type. More details are available in the [policy overview](/graph/api/resources/policy-overview?view=graph-rest-beta). Policies are not yet available in v1.0.
 
 ## ServiceEndpoint property differences
 

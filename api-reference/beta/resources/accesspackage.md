@@ -9,6 +9,8 @@ doc_type: "resourcePageType"
 
 # accessPackage resource type
 
+Namespace: microsoft.graph
+
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 In [Azure AD entitlement management](entitlementmanagement-root.md), an access package defines the collections of resource roles and the policies for how one or more users can get access to those resources.  

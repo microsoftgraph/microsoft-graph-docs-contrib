@@ -9,6 +9,8 @@ doc_type: "apiPageType"
 
 # informationProtectionLabel: evaluateApplication
 
+Namespace: microsoft.graph
+
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 Compute the [information protection label](../resources/informationprotectionlabel.md) that should be applied and return the set of actions that must be taken to correctly label the information. This API is useful when a label should be set manually or explicitly by a user or service, rather than automatically based on file contents. 
@@ -52,19 +54,20 @@ POST /users/{id}/informationProtection/policy/labels/evaluateApplication
 
 ## Request headers
 
-| Name          | Description                 |
-| :------------ | :-------------------------- |
-| Authorization | Bearer {token}. Required.   |
-| Content-type  | application/json. Required. |
+| Name          | Description                                                                                                                                                           |
+| :------------ | :-------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| Authorization | Bearer {token}. Required.                                                                                                                                             |
+| Content-type  | application/json. Required.                                                                                                                                           |
+| User-Agent    | Describes the name of the calling application. Details will surface in Azure Information Protection Analytics. Suggested format is ApplicationName/Version. Optional. |
 
 ## Request body
 
 In the request body, provide a JSON object with the following parameters.
 
-| Parameter       | Type                                               | Description                                                                                                                                                                                                   |
-| :-------------- | :------------------------------------------------- | :------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ |
+| Parameter       | Type                                               | Description                                                                                                                      |
+| :-------------- | :------------------------------------------------- | :------------------------------------------------------------------------------------------------------------------------------- |
 | contentInfo     | [contentInfo](../resources/contentinfo.md)         | Provides details on the content format, content state, and existing [metadata](../resources/keyvaluepair.md) as key/value pairs. |
-| labelingOptions | [labelingOptions](../resources/labelingoptions.md) | Provides details about the desired state of the content.                                                                                                                                                      |
+| labelingOptions | [labelingOptions](../resources/labelingoptions.md) | Provides details about the desired state of the content.                                                                         |
 
 ## Response
 
@@ -87,6 +90,7 @@ The following is an example of the request.
 ```http
 POST https://graph.microsoft.com/beta/informationprotection/policy/labels/evaluateApplication
 Content-type: application/json
+User-agent: ContosoLOBApp/1.0
 
 {
   "contentInfo": {

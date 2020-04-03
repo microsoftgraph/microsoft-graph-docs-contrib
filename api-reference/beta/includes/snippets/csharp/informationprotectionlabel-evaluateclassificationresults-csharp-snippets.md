@@ -31,6 +31,7 @@ var classificationResults = new List<ClassificationResult>()
 await graphClient.Informationprotection.Policy.Labels
 	.EvaluateClassificationResults(contentInfo,classificationResults)
 	.Request()
+	.Header("User-Agent","ContosoLOBApp/1.0")
 	.PostAsync();
 
 ```
