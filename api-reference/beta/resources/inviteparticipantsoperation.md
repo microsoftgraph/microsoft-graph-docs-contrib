@@ -1,13 +1,15 @@
 --- 
 title: "inviteParticipantsOperation resource type"
 description: "Represents the status of a long-running participant invitation operation, triggered by a call to the participant-invite API."
-author: "VinodRavichandran"
+author: "ananmishr"
 localization_priority: Normal
 ms.prod: "cloud-communications"
 doc_type: resourcePageType
 ---
 
 # inviteParticipantsOperation resource type
+
+Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 

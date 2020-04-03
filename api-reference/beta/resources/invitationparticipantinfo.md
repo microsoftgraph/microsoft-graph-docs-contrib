@@ -1,7 +1,7 @@
 ---
 title: "invitationParticipantInfo resource type"
-description: "The **InvitationParticipant** is used to represent a set of identities associated with a conversation invitation, and provides additional invitation parameters."
-author: "VinodRavichandran"
+description: "Represents an entity that is being invited to a group call."
+author: "ananmishr"
 localization_priority: Normal
 ms.prod: "cloud-communications"
 doc_type: resourcePageType
@@ -9,9 +9,11 @@ doc_type: resourcePageType
 
 # invitationParticipantInfo resource type
 
+Namespace: microsoft.graph
+
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-This resource is used to represent a set of identities associated with a conversation invitation, and provides additional invitation parameters.
+Represents an entity that is being invited to a group call. 
 
 ## Properties
 
@@ -19,8 +21,6 @@ This resource is used to represent a set of identities associated with a convers
 | :--------------------------------- | :---------------------------- | :----------------------------------------------------------------------------------- |
 | endpointType                       | String                        | The type of endpoint. Possible values are: `default`, `voicemail`. |
 | identity                           | [identitySet](identityset.md) | The [identitySet](identityset.md) associated with this invitation.                   |
-| languageId                         | String                        | The language culture string.                                                                                     |
-| region                             | String                        | Region of the participant.                                                           |
 | replacesCallId                     | String                        | Optional. The call which the target idenity is currently a part of. This call will be dropped once the participant is added. |
 
 ## JSON representation
@@ -30,7 +30,8 @@ The following is a JSON representation of the resource.
 <!-- {
   "blockType": "resource",
   "optionalProperties": [
-
+    "endpointType",
+    "replacesCallId"
   ],
   "@odata.type": "microsoft.graph.invitationParticipantInfo"
 }-->
@@ -38,8 +39,6 @@ The following is a JSON representation of the resource.
 {
   "endpointType": "default | voicemail",
   "identity": {"@odata.type": "#microsoft.graph.identitySet"},
-  "languageId": "String",
-  "region": "String",
   "replacesCallId": "String"
 }
 ```

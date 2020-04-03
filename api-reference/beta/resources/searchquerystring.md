@@ -9,9 +9,13 @@ doc_type: "resourcePageType"
 
 # searchQueryString resource type
 
+Namespace: microsoft.graph
+
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 The search terms for the query.
+
+[!INCLUDE [search-api-preview](../../includes/search-api-preview-signup.md)]
 
 ## Properties
 

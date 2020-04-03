@@ -1,13 +1,15 @@
 ---
 title: "call: subscribeToTone"
 description: "Subscribe to DTMF (dual-tone multi-frequency signaling). This allows you to be notified when the user presses keys on a 'Dialpad'."
-author: "VinodRavichandran"
+author: "ananmishr"
 localization_priority: Normal
 ms.prod: "cloud-communications"
 doc_type: apiPageType
 ---
 
 # call: subscribeToTone
+
+Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
@@ -25,6 +27,7 @@ One of the following permissions is required to call this API. To learn more, in
 | Delegated (personal Microsoft account) | Not Supported        |
 | Application     | Calls.AccessMedia.All                       |
 
+>**Note:** Any tone data provided may not be persisted. Make sure you are compliant with the laws and regulations of your area regarding data protection and confidentiality of communications. Please see the [Terms of Use](https://docs.microsoft.com/legal/microsoft-apis/terms-of-use) and consult with your legal counsel for more information.
 ## HTTP request
 <!-- { "blockType": "ignored" } -->
 ```http
@@ -90,19 +93,20 @@ Content-Length: 46
 
 <!-- {
   "blockType": "response",
+  "name": "call-subscribeToTone",
   "truncated": true,
-  "@odata.type": "microsoft.graph.commsOperation"
+  "@odata.type": "microsoft.graph.subscribeToToneOperation"
 } -->
 ```http
 HTTP/1.1 200 OK
-Location: https://graph.microsoft.com/beta/communications/calls/421f1100-411f-4a29-8514-dbbb9caff45a/operations/ea91863c-d0a6-4de0-b73a-4c8d63da5d87
-Content-Type: application/json
-Content-Length: 259
+Location: https://graph.microsoft.com/beta/communications/calls/57dab8b1-894c-409a-b240-bd8beae78896/operations/0fe0623f-d628-42ed-b4bd-8ac290072cc5
 
 {
-  "id": "ea91863c-d0a6-4de0-b73a-4c8d63da5d87",
-  "status": "completed",
-  "clientContext": "fd1c7836-4d84-4e24-b6aa-23188688cc54",
+  "@odata.type": "#microsoft.graph.subscribeToToneOperation",
+  "clientContext": "clientContext-value",
+  "id": "0fe0623f-d628-42ed-b4bd-8ac290072cc5",
+  "resultInfo": null,
+  "status": "completed"
 }
 ```
 
@@ -127,7 +131,7 @@ Content-Type: application/json
     {
       "@odata.type": "#microsoft.graph.commsNotification",
       "changeType": "updated",
-      "resourceUrl": "/communications/calls/421f1100-411f-4a29-8514-dbbb9caff45",
+      "resourceUrl": "/communications/calls/57dab8b1-894c-409a-b240-bd8beae78896",
       "resourceData": {
         "@odata.type": "#microsoft.graph.call",
         "state": "established",

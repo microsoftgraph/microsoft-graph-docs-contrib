@@ -1,7 +1,7 @@
 ---
 title: "Update androidDeviceOwnerGeneralDeviceConfiguration"
 description: "Update the properties of a androidDeviceOwnerGeneralDeviceConfiguration object."
-author: "rolyon"
+author: "davidmu1"
 localization_priority: Normal
 ms.prod: "Intune"
 doc_type: apiPageType
@@ -68,6 +68,7 @@ The following table shows the properties that are required when you create the [
 |bluetoothBlockContactSharing|Boolean|Indicates whether or not to block a user from sharing contacts via bluetooth.|
 |cameraBlocked|Boolean|Indicates whether or not to disable the use of the camera.|
 |cellularBlockWiFiTethering|Boolean|Indicates whether or not to block Wi-Fi tethering.|
+|certificateCredentialConfigurationDisabled|Boolean|Indicates whether or not to block users from any certificate credential configuration.|
 |dataRoamingBlocked|Boolean|Indicates whether or not to block a user from data roaming.|
 |dateTimeConfigurationBlocked|Boolean|Indicates whether or not to block the user from manually changing the date or time on the device|
 |factoryResetDeviceAdministratorEmails|String collection|List of Google account emails that will be required to authenticate after a device is factory reset before it can be set up.|
@@ -122,8 +123,8 @@ The following table shows the properties that are required when you create the [
 |usersBlockAdd|Boolean|Indicates whether or not adding users and profiles is disabled.|
 |usersBlockRemove|Boolean|Indicates whether or not to disable removing other users from the device.|
 |volumeBlockAdjustment|Boolean|Indicates whether or not adjusting the master volume is disabled.|
-|vpnAlwaysOnPackageIdentifier|String|Android app package name for app that will handle an always-on VPN connection.|
 |vpnAlwaysOnLockdownMode|Boolean|If an always on VPN package name is specified, whether or not to lock network traffic when that VPN is disconnected.|
+|vpnAlwaysOnPackageIdentifier|String|Android app package name for app that will handle an always-on VPN connection.|
 |wifiBlockEditConfigurations|Boolean|Indicates whether or not to block the user from editing the wifi connection settings.|
 |wifiBlockEditPolicyDefinedConfigurations|Boolean|Indicates whether or not to block the user from editing just the networks defined by the policy.|
 
@@ -139,7 +140,7 @@ Here is an example of the request.
 ``` http
 PATCH https://graph.microsoft.com/beta/deviceManagement/deviceConfigurations/{deviceConfigurationId}
 Content-type: application/json
-Content-length: 4319
+Content-length: 4374
 
 {
   "@odata.type": "#microsoft.graph.androidDeviceOwnerGeneralDeviceConfiguration",
@@ -180,6 +181,7 @@ Content-length: 4319
   "bluetoothBlockContactSharing": true,
   "cameraBlocked": true,
   "cellularBlockWiFiTethering": true,
+  "certificateCredentialConfigurationDisabled": true,
   "dataRoamingBlocked": true,
   "dateTimeConfigurationBlocked": true,
   "factoryResetDeviceAdministratorEmails": [
@@ -251,8 +253,8 @@ Content-length: 4319
   "usersBlockAdd": true,
   "usersBlockRemove": true,
   "volumeBlockAdjustment": true,
-  "vpnAlwaysOnPackageIdentifier": "Vpn Always On Package Identifier value",
   "vpnAlwaysOnLockdownMode": true,
+  "vpnAlwaysOnPackageIdentifier": "Vpn Always On Package Identifier value",
   "wifiBlockEditConfigurations": true,
   "wifiBlockEditPolicyDefinedConfigurations": true
 }
@@ -263,7 +265,7 @@ Here is an example of the response. Note: The response object shown here may be 
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 4491
+Content-Length: 4546
 
 {
   "@odata.type": "#microsoft.graph.androidDeviceOwnerGeneralDeviceConfiguration",
@@ -307,6 +309,7 @@ Content-Length: 4491
   "bluetoothBlockContactSharing": true,
   "cameraBlocked": true,
   "cellularBlockWiFiTethering": true,
+  "certificateCredentialConfigurationDisabled": true,
   "dataRoamingBlocked": true,
   "dateTimeConfigurationBlocked": true,
   "factoryResetDeviceAdministratorEmails": [
@@ -378,14 +381,12 @@ Content-Length: 4491
   "usersBlockAdd": true,
   "usersBlockRemove": true,
   "volumeBlockAdjustment": true,
-  "vpnAlwaysOnPackageIdentifier": "Vpn Always On Package Identifier value",
   "vpnAlwaysOnLockdownMode": true,
+  "vpnAlwaysOnPackageIdentifier": "Vpn Always On Package Identifier value",
   "wifiBlockEditConfigurations": true,
   "wifiBlockEditPolicyDefinedConfigurations": true
 }
 ```
-
-
 
 
 

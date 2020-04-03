@@ -1,7 +1,7 @@
 ---
 title: "List androidDeviceOwnerCompliancePolicies"
 description: "List properties and relationships of the androidDeviceOwnerCompliancePolicy objects."
-author: "rolyon"
+author: "davidmu1"
 localization_priority: Normal
 ms.prod: "Intune"
 doc_type: apiPageType
@@ -58,7 +58,7 @@ Here is an example of the response. Note: The response object shown here may be 
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 1485
+Content-Length: 1552
 
 {
   "value": [
@@ -75,6 +75,7 @@ Content-Length: 1485
       "version": 7,
       "deviceThreatProtectionEnabled": true,
       "deviceThreatProtectionRequiredSecurityLevel": "secured",
+      "advancedThreatProtectionRequiredSecurityLevel": "secured",
       "securityRequireSafetyNetAttestationBasicIntegrity": true,
       "securityRequireSafetyNetAttestationCertifiedDevice": true,
       "osMinimumVersion": "Os Minimum Version value",
@@ -97,8 +98,6 @@ Content-Length: 1485
   ]
 }
 ```
-
-
 
 
 

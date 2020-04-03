@@ -1,13 +1,15 @@
 ---
 title: "Remove owner"
 description: "Remove an owner from an application."
-author: "davidmu1"
+author: "sureshja"
 localization_priority: Normal
 ms.prod: "microsoft-identity-platform"
 doc_type: apiPageType
 ---
 
 # Remove owner
+
+Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 

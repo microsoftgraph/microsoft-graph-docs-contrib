@@ -1,13 +1,15 @@
 ---
 title: "callMediaState resource type"
 description: "Represents the media state for a call."
-author: "VinodRavichandran"
+author: "ananmishr"
 ms.prod: "cloud-communications"
 localization_priority: Normal
 doc_type: resourcePageType
 ---
 
 # callMediaState resource type
+
+Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 

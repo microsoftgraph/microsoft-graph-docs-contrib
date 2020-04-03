@@ -76,6 +76,7 @@ var labelingOptions = new LabelingOptions
 await graphClient.Informationprotection.Policy.Labels
 	.EvaluateApplication(contentInfo,labelingOptions)
 	.Request()
+	.Header("User-Agent","ContosoLOBApp/1.0")
 	.PostAsync();
 
 ```

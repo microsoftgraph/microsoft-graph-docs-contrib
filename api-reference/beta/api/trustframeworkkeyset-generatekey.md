@@ -9,6 +9,8 @@ doc_type: "apiPageType"
 
 # trustFrameworkKeySet: generateKey
 
+Namespace: microsoft.graph
+
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 Generate a [trustFrameworkKey](../resources/trustFrameworkKey.md) and a secret automatically in the [trustFrameworkKeyset](../resources/trustframeworkkeyset.md). The caller doesn't have to provide a secret.

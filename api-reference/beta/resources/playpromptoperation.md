@@ -1,13 +1,15 @@
 ---
 title: "playPromptOperation resource type"
 description: "The playPrompt operation to obtain the result of the playPrompt action."
-author: "VinodRavichandran"
+author: "ananmishr"
 localization_priority: Normal
 ms.prod: "cloud-communications"
 doc_type: resourcePageType
 ---
 
 # playPromptOperation resource type
+
+Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 

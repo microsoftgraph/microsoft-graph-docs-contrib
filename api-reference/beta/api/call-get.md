@@ -1,13 +1,15 @@
 ---
 title: "Get call"
 description: "Retrieve the properties and relationships of a call object."
-author: "VinodRavichandran"
+author: "ananmishr"
 localization_priority: Normal
 ms.prod: "cloud-communications"
 doc_type: apiPageType
 ---
 
 # Get call
+
+Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
@@ -108,7 +110,7 @@ Content-Type: application/json
   },
   "targets": [
     {
-      "@odata.type": "#microsoft.graph.participantInfo",
+      "@odata.type": "#microsoft.graph.invitationParticipantInfo",
       "identity": {
         "@odata.type": "#microsoft.graph.identitySet",
         "user": {
@@ -157,13 +159,29 @@ Content-Type: application/json
 ### Example 2: Getting a group call
 
 ##### Request
+
+# [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "get-call"
 }-->
-```http
+```msgraph-interactive
 GET https://graph.microsoft.com/beta/communications/calls/2f1a1100-b174-40a0-aba7-0b405e01ed92
 ```
+# [C#](#tab/csharp)
+[!INCLUDE [sample-code](../includes/snippets/csharp/get-call-csharp-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [JavaScript](#tab/javascript)
+[!INCLUDE [sample-code](../includes/snippets/javascript/get-call-javascript-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Objective-C](#tab/objc)
+[!INCLUDE [sample-code](../includes/snippets/objc/get-call-objc-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+---
+
 
 ##### Response
 

@@ -1,13 +1,15 @@
 ---
 title: "Delete audio routing group"
 description: "Delete the specified audio routing group."
-author: "VinodRavichandran"
+author: "ananmishr"
 localization_priority: Normal
 ms.prod: "cloud-communications"
 doc_type: apiPageType
 ---
 
 # Delete audio routing group
+
+Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 

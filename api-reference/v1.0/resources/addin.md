@@ -9,7 +9,9 @@ author: "davidmu1"
 
 # addIn resource type
 
-Defines custom behavior that a consuming service can use to call an app in specific contexts. For example, applications that can render file streams [may configure addIns](https://docs.microsoft.com/en-us/onedrive/developer/file-handlers/?view=odsp-graph-online) for its "FileHandler" functionality. This will let services like Office 365 call the application in the context of a document the user is working on.
+Namespace: microsoft.graph
+
+Defines custom behavior that a consuming service can use to call an app in specific contexts. For example, applications that can render file streams [may configure addIns](/onedrive/developer/file-handlers/?view=odsp-graph-online) for its "FileHandler" functionality. This will let services like Office 365 call the application in the context of a document the user is working on.
 
 ## Properties
 | Property	   | Type	|Description|

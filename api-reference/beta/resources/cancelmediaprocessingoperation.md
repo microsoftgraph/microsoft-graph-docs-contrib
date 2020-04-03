@@ -1,13 +1,15 @@
 --- 
 title: "CancelMediaProcessingOperation resource type"
 description: "This resource type is used to describe the response format of Media processing cancel operation."
-author: "VinodRavichandran"
+author: "ananmishr"
 localization_priority: Normal
 ms.prod: "cloud-communications"
 doc_type: resourcePageType
 ---
 
 # CancelMediaProcessingOperation resource type
+
+Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 

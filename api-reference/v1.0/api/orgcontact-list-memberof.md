@@ -9,6 +9,8 @@ doc_type: apiPageType
 
 # List memberOf
 
+Namespace: microsoft.graph
+
 List the groups that this [organizational contact](../resources/orgcontact.md) is a member of.
 
 ## Permissions
@@ -19,6 +21,8 @@ One of the following permissions is required to call this API. To learn more, in
 |Delegated (work or school account) | OrgContact.Read.All and Group.Read.All, Directory.Read.All  |
 |Delegated (personal Microsoft account) | Not supported.    |
 |Application | OrgContact.Read.All and Group.Read.All, Directory.Read.All |
+
+[!INCLUDE [limited-info](../../includes/limited-info.md)]
 
 ## HTTP request
 <!-- { "blockType": "ignored" } -->

@@ -1,7 +1,7 @@
 ---
 title: "Get defaultManagedAppProtection"
 description: "Read properties and relationships of the defaultManagedAppProtection object."
-author: "rolyon"
+author: "davidmu1"
 localization_priority: Normal
 ms.prod: "Intune"
 doc_type: apiPageType
@@ -61,7 +61,7 @@ Here is an example of the response. Note: The response object shown here may be 
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 4606
+Content-Length: 4930
 
 {
   "value": {
@@ -114,6 +114,11 @@ Content-Length: 4606
     "managedBrowser": "microsoftEdge",
     "maximumAllowedDeviceThreatLevel": "secured",
     "mobileThreatDefenseRemediationAction": "wipe",
+    "blockDataIngestionIntoOrganizationDocuments": true,
+    "allowedDataIngestionLocations": [
+      "sharePoint"
+    ],
+    "appActionIfUnableToAuthenticateUser": "wipe",
     "appDataEncryptionType": "afterDeviceRestart",
     "screenCaptureBlocked": true,
     "encryptAppData": true,
@@ -163,12 +168,14 @@ Content-Length: 4606
     "customBrowserDisplayName": "Custom Browser Display Name value",
     "minimumRequiredCompanyPortalVersion": "Minimum Required Company Portal Version value",
     "minimumWarningCompanyPortalVersion": "Minimum Warning Company Portal Version value",
-    "minimumWipeCompanyPortalVersion": "Minimum Wipe Company Portal Version value"
+    "minimumWipeCompanyPortalVersion": "Minimum Wipe Company Portal Version value",
+    "allowedAndroidDeviceModels": [
+      "Allowed Android Device Models value"
+    ],
+    "appActionIfAndroidDeviceModelNotAllowed": "wipe"
   }
 }
 ```
-
-
 
 
 
