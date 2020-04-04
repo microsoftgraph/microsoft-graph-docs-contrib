@@ -3326,6 +3326,18 @@
           href: api/application-post-owners.md
         - name: Remove owner
           href: api/application-delete-owners.md
+        - name: Add token issuance policy
+          href: api/application-post-tokenissuancepolicies.md
+        - name: List token issuance policies
+          href: api/application-list-tokenissuancepolicies.md
+        - name: Remove token issuance policy
+          href: api/application-delete-tokenissuancepolicies.md
+        - name: Add token lifetime policy
+          href: api/application-post-tokenlifetimepolicies.md
+        - name: List token lifetime policies
+          href: api/application-list-tokenlifetimepolicies.md
+        - name: Remove token lifetime policy
+          href: api/application-delete-tokenlifetimepolicies.md
       - name: Audit logs
         href: resources/azure-ad-auditlog-overview.md
         items:
