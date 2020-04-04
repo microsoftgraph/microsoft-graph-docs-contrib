@@ -1,7 +1,7 @@
 ---
 title: "Creating teams and managing members using Microsoft Graph"
 description: "Creating a group that includes a team involves the following steps: "
-author: "nkramer, hachandr"
+author: "hachandr"
 localization_priority: Priority
 ms.prod: "microsoft-teams"
 ---
