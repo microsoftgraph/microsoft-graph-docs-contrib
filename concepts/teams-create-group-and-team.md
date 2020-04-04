@@ -13,11 +13,11 @@ You can use the Microsoft Teams API in Microsoft Graph to create teams in multip
 
 ## Initial team creation
 
-All teams are backed by Office 365 groups. The quickest way to get your team up and running when you create new teams via Microsoft Graph is to set up a new Office 365 group, all all owners and members, and convert that into a team.
+All teams are backed by Office 365 groups. The quickest way to get your team up and running when you create new teams via Microsoft Graph is to set up a new Office 365 group, all owners and members, and convert that into a team.
 
-1. Create an [Office 365 group](https://support.office.com/article/learn-about-office-365-groups-b565caa1-5c40-40ef-9915-60fdb2d97fa2) using the [create group](/graph/api/group-post-groups?view=graph-rest-beta) operation. If you're trying to set up a class team, use the [create educationClass](/graph/api/educationroot-post-classes?view=graph-rest-beta) operation. You can specify owners and members. Make sure that you have the right owners for the newly created team, as described in Step 2.
+1. Create an [Office 365 group](https://support.office.com/article/learn-about-office-365-groups-b565caa1-5c40-40ef-9915-60fdb2d97fa2) using the [create group](/graph/api/group-post-groups?view=graph-rest-1.0) operation. You can specify owners and members. Make sure that you have the right owners for the newly created group, as described in Step 2.
 
-    In order to include a team, you need to set the following property values, as shown:
+    In order to create a team for this group, you need to set the following property values, as shown:
 
     - **groupTypes** = { "Unified" } 
     - **mailEnabled** = true
@@ -60,9 +60,9 @@ All teams are backed by Office 365 groups. The quickest way to get your team up 
     }
     ```
 
-2. Ensure the team has two or more owners. You can do so via the [add owner](/graph/api/group-post-owners?view=graph-rest-beta) operation. These should be real user accounts and not service accounts. Having two owners helps handle cases where one owner leaves the company or is unavailable to perform team management operations.
+2. Ensure the group has two or more owners. You can do so via the [add owner](/graph/api/group-post-owners?view=graph-rest-1.0) operation. These should be real user accounts and not service accounts. Having two owners helps handle cases where one owner leaves the company or is unavailable to perform team management operations.
 
-3. Add all members (and guests if necessary) to the group using the [add member](/graph/api/group-post-members?view=graph-rest-beta) operation, if you did not do so in Step 1.
+3. Add all members (and guests if necessary) to the group using the [add member](/graph/api/group-post-members?view=graph-rest-1.0) operation, if you did not do so in Step 1.
 
 4. After the group is successfully created, which can take upto 15 minutes after completing Step 1, create a Microsoft Teams team using the [create team from group](/graph/api/team-put-teams?view=graph-rest-beta) operation. If you run into an error, the group creation process might not be completed; try waiting a few more minutes.
 
@@ -97,7 +97,7 @@ All teams are backed by Office 365 groups. The quickest way to get your team up 
 
 ## Adding or managing members
 
-To add members after a team is created, you use the [add member](/graph/api/group-post-members?view=graph-rest-beta) operation. Note the following with respect to membership changes:
+To add members after a team is created, you use the [add member](/graph/api/group-post-members?view=graph-rest-1.0) operation. Note the following with respect to membership changes:
 
 1. Membership changes made to Office 365 groups sync to Teams via a background sync mechanism that typically takes 24 hours (or more in some cases).
 
