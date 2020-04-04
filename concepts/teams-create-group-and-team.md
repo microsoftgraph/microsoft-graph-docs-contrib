@@ -64,7 +64,7 @@ All teams are backed by Office 365 groups. The quickest way to get your team up 
 
 3. Add all members (and guests if necessary) to the group using the [add member](/graph/api/group-post-members?view=graph-rest-beta) operation, if you did not do so in Step 1.
 
-4. Wait 15 minutes after creating the group (step 1) before proceeding. After the group is successfully created and all owners and members added, create a Microsoft Teams team using the [create team from group](/graph/api/team-put-teams?view=graph-rest-beta) operation. If you run into an error, the group creation process might not be completed; try waiting a few more minutes.
+4. After the group is successfully created, which can take upto 15 minutes after completing Step 1, create a Microsoft Teams team using the [create team from group](/graph/api/team-put-teams?view=graph-rest-beta) operation. If you run into an error, the group creation process might not be completed; try waiting a few more minutes.
 
     ```http
     PUT /groups/{id}/team
@@ -99,7 +99,7 @@ All teams are backed by Office 365 groups. The quickest way to get your team up 
 
 To add members after a team is created, you use the [add member](/graph/api/group-post-members?view=graph-rest-beta) operation. Note the following with respect to membership changes:
 
-1. Membership changes made to Office 365 groups sync to Teams via a background sync mechanism that takes 24 hours (or in some cases more).
+1. Membership changes made to Office 365 groups sync to Teams via a background sync mechanism that typically takes 24 hours (or more in some cases).
 
 2. The background process is triggered only if one or more users in the team (owner or member) is active in the Teams desktop client. Launching the Teams application and/or having it running constitutes activity — a user does not need to visit the team that is being modified specifically.
 
