@@ -7,7 +7,7 @@ localization_priority: Priority
 
 # What's new in Microsoft Graph
 
-See highlights of what's new in Microsoft Graph, and how you can [share your ideas](#want-to-stay-in-the-loop). For a complete list of API updates, see the [March](changelog.md#march-2020) and [February](changelog.md#february-2020) sections of the API changelog. 
+See highlights of what's new in Microsoft Graph, and how you can [share your ideas](#want-to-stay-in-the-loop). For a complete list of API updates, see the [March](changelog.md#march-2020) section of the API changelog. 
 
 > [!IMPORTANT]
 > Features, including APIs and tools, in _preview_ status may change without notice, and some may never be promoted to generally available (GA) status. Do not use preview features in production apps.
