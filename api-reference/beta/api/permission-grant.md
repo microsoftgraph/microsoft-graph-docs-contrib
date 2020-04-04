@@ -7,7 +7,7 @@ localization_priority: Normal
 ms.prod: "sharepoint"
 doc_type: apiPageType
 ---
-# Grant permission
+# permission: grant
 
 Namespace: microsoft.graph
 

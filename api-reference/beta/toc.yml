@@ -8238,7 +8238,7 @@
           href: api/driveitem-createlink.md
         - name: Use sharing links
           href: api/shares-get.md
-        - name: Add users to sharing link
+        - name: Grant access to sharing link
           href: api/permission-grant.md
         - name: List permissions
           href: api/driveitem-list-permissions.md

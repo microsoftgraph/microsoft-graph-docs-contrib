@@ -69,7 +69,7 @@ Permissions with an [**invitation**][SharingInvitation] facet represent permissi
 [SharingInvitation]: sharinginvitation.md
 [SharingLink]: sharinglink.md
 
-## Roles enumeration
+### Roles property values
 
 | Role        | Details                                                                        |
 |:------------|:-------------------------------------------------------------------------------|
