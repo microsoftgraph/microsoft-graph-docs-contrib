@@ -77,9 +77,11 @@ To learn more, see [styling components](../style.md).
 
 The `mgt-person` component supports several [templates](../templates.md) that allow you to replace certain parts of the component. To specify a template, include a `<template>` element inside a component and set the `data-type` value to one of the following:
 
-| Data type     | Data context              | Description                                                       |
-| ---------     | ------------------------- | ----------------------------------------------------------------- |
-| default     | person: The person details object <br> `personImage`: The URL of the image | The default template replaces the entire component with your own. |
+| Data type | Data context | Description |
+| --------- | ------------ | ----------- |
+| loading | none | The template to render while the component is in a laoding state. |
+| no-data | none | The template to render when no person image or data is available. | 
+| default | person: The person details object <br> `personImage`: The URL of the image | The default template replaces the entire component with your own. |
 | person-card | person: The person details object <br> `personImage`: The URL of the image | The template to update the mgt-person-card displayed on hover or click. |
 
 The following example defines a template for the person component.
@@ -108,7 +110,7 @@ The `mgt-person` component can show an `mgt-person-card` on either hover or clic
 
 | Attribute    |  Property     | Description                                                                     |
 | ------------ | ------------- | ------------------------------------------------------------------------------- |
-| person-card | personCard | An enumeration to determine user action necessary to activate flyout panel - `hover` or `click`. Default value is `none` |
+| person-card | personCardInteraction | An enumeration to determine user action necessary to activate flyout panel - `hover` or `click`. Default value is `none` |
 
 
 For more information about templating, styling, and attributes, see [Person Card component](./person-card.md).
@@ -130,3 +132,16 @@ This control uses the following Microsoft Graph APIs and permissions.
 ## Authentication
 
 The control uses the global authentication provider described in the [authentication documentation](./../providers.md) to fetch the required data.
+
+## Extend for more control
+
+For more complex scenarios or a truly custom UX, this component exposes several `protected render*` methods for override in component extensions.
+
+| Method | Description |
+| - | - |
+| renderLoading | Renders the loading state. |
+| renderImage | Renders the image part. |
+| renderNoData | Renders when no image or person data is available. |
+| renderDetails | Renders the person details part. |
+| renderEmail | Renders the email sub-part of the person details. |
+| renderName | Renders the name sub-part of the person details. |
