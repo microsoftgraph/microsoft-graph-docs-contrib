@@ -64,11 +64,15 @@ All teams are backed by Office 365 groups. The quickest way to get your team up 
 
 3. Add all members (and guests if necessary) to the group using the [add member](/graph/api/group-post-members?view=graph-rest-1.0) operation, if you did not do so in Step 1.
 
-4. After the group is successfully created, which can take upto 15 minutes after completing Step 1, create a Microsoft Teams team using the [create team from group](/graph/api/team-post?view=graph-rest-beta) operation. If you run into an error, the group creation process might not be completed; try waiting a few more minutes.
+4. After the group is successfully created, which can take upto 15 minutes after completing Step 1, create a Microsoft Teams team using the [create team from group](/graph/api/team-post?view=graph-rest-beta#example-4-create-a-team-from-group) operation. If you run into an error, the group creation process might not be completed; try waiting a few more minutes. 
 
     ```http
-    PUT /groups/{id}/team
-    { }
+    POST https://graph.microsoft.com/beta/teams
+    Content-Type: application/json
+    {
+      "template@odata.bind": "https://graph.microsoft.com/beta/teamsTemplates('standard')",
+      "group@odata.bind": "https://graph.microsoft.com/v1.0/groups('groupId')"
+    }
     ```
 
     The following example shows the response. 
@@ -76,18 +80,11 @@ All teams are backed by Office 365 groups. The quickest way to get your team up 
     >**Note:** The response object shown might be shortened for readability. All the properties will be returned from an actual call.
 
     ```http
-    HTTP/1.1 200 OK
-    Content-type: application/json
-    Content-length: xxx
+    HTTP/1.1 202 Accepted
+    Content-Type: application/json
+    Location: /teams/{teamId}/operations/{operationId}
+    Content-Location: /teams/{teamId}
     {
-        "@odata.context" : "https://graph.microsoft.com/v1.0/$metadata#teams/$entity",
-        "id" : "b7f968af-ca51-42f6-a77e-82c7147bc8f2",
-        "webUrl" : "https://example.com",
-        "isArchived" : null,
-        "memberSettings" : { },
-        "guestSettings" : { },
-        "messagingSettings" : { },
-        "funSettings" : {}
     }
     ```
 
