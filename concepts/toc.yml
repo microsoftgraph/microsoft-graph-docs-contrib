@@ -32,7 +32,7 @@ items:
       - name: Tutorials
         items:
           - name: Overview
-            href: tutorials.md
+            href: tutorials.yml
           - name: .NET Core
             href: /graph/tutorials/dotnet-core
           - name: Android
@@ -168,9 +168,6 @@ items:
       - name: Identity and access
         href: azuread-identity-access-management-concept-overview.md
         displaName: Azure AD, Microsoft identity platform
-        items:
-          - name: Information Protection
-            href: information-protection-overview.md
       - name: Mail
         displayName: Outlook, Outlook mail
         items:
@@ -295,6 +292,8 @@ items:
             href: security-authorization.md
           - name: Integrated solutions
             href: security-integration.md
+          - name: Information Protection
+            href: information-protection-overview.md
           - name: Partner opportunities
             href: security-partner-overview.md
       - name: Sites and lists
