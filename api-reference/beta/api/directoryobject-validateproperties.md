@@ -1,8 +1,8 @@
 ---
 title: "directoryObject: validateProperties"
-description: "Validate if an Office 365 group's display name or mail nickname complies with naming policies.  Clients can use the API to determine if a display name or mail nickname is valid before trying to **create** an Office 365 group. For validating properties of an existing group, use the validateProperties function for groups."
+description: "Validate if an Office 365 group's display name or mail nickname complies with naming policies."
 localization_priority: Normal
-author: "davidmu1"
+author: "keylimesoda"
 ms.prod: "microsoft-identity-platform"
 doc_type: apiPageType
 ---
