@@ -32,7 +32,7 @@ items:
       - name: Tutorials
         items:
           - name: Overview
-            href: tutorials.md
+            href: tutorials.yml
           - name: .NET Core
             href: /graph/tutorials/dotnet-core
           - name: Android
@@ -168,9 +168,6 @@ items:
       - name: Identity and access
         href: azuread-identity-access-management-concept-overview.md
         displaName: Azure AD, Microsoft identity platform
-        items:
-          - name: Information Protection
-            href: information-protection-overview.md
       - name: Mail
         displayName: Outlook, Outlook mail
         items:
@@ -295,6 +292,8 @@ items:
             href: security-authorization.md
           - name: Integrated solutions
             href: security-integration.md
+          - name: Information Protection
+            href: information-protection-overview.md
           - name: Partner opportunities
             href: security-partner-overview.md
       - name: Sites and lists
@@ -368,7 +367,8 @@ items:
             href: paging.md
           - name: Use query parameters
             href: query-parameters.md
-          - name: Batch requests
+          - name: Batching
+            displayName: Batch requests
             href: json-batching.md
           - name: Throttling
             href: throttling.md
@@ -383,8 +383,8 @@ items:
                 href: webhooks-outlook-authz.md
               - name: Notifications with resource data (preview)
                 href: webhooks-with-resource-data.md
-          - name: Track changes
-            displayName: Delta query, Outlook calendar, Groups, Outlook mail, Users
+          - name: Change tracking
+            displayName: Delta query, track changes, Outlook calendar, Groups, Outlook mail, Users
             items:
               - name: Overview
                 href: delta-query-overview.md
@@ -465,20 +465,22 @@ items:
             items:
               - name: Login
                 href: toolkit/components/login.md
+              - name: Get
+                href: toolkit/components/get.md
               - name: Person
                 href: toolkit/components/person.md
               - name: People
                 href: toolkit/components/people.md
+              - name: Person Card
+                href: toolkit/components/person-card.md
+              - name: People Picker
+                href: toolkit/components/people-picker.md
+              - name: Teams Channel Picker
+                href: toolkit/components/teams-channel-picker.md
               - name: Agenda
                 href: toolkit/components/agenda.md
               - name: Tasks
                 href: toolkit/components/tasks.md
-              - name: People Picker
-                href: toolkit/components/people-picker.md
-              - name: Person Card
-                href: toolkit/components/person-card.md
-              - name: Get
-                href: toolkit/components/get.md
           - name: Providers
             items:
               - name: Using the providers
