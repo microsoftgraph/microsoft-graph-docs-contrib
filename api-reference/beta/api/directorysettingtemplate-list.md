@@ -1,8 +1,8 @@
 ---
 title: "List directorySettingTemplates"
-description: "Directory setting templates represents a set of templates of directory settings, from which directory settings may be created and used within a tenant.  This operation retrieves the list of available directorySettingTemplates objects."
+description: "Directory setting templates represents a set of templates of directory settings."
 localization_priority: Normal
-author: "davidmu1"
+author: "dkershaw10"
 ms.prod: "microsoft-identity-platform"
 doc_type: apiPageType
 ---

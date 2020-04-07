@@ -1,8 +1,8 @@
 ---
 title: "Get a directory setting template"
-description: "A directory setting template represents a template of settings from which settings may be created within a tenant. This operation allows retrieval of the properties of the directorySettingTemplate object, including the available settings and their defaults."
+description: "A directory setting template represents a template of settings from which settings may be created within a tenant."
 localization_priority: Normal
-author: "davidmu1"
+author: "dkershaw10"
 ms.prod: "microsoft-identity-platform"
 doc_type: apiPageType
 ---
