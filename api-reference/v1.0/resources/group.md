@@ -2,12 +2,14 @@
 title: "group resource type"
 description: "Represents an Azure Active Directory (Azure AD) group, which can be an Office 365 group, or a security group. "
 localization_priority: Priority
-author: "dkershaw10" 
+author: "yyuank" 
 ms.prod: "groups"
 doc_type: resourcePageType
 ---
 
 # group resource type
+
+Namespace: microsoft.graph
 
 Represents an Azure Active Directory (Azure AD) group, which can be an Office 365 group, or a security group.  
 

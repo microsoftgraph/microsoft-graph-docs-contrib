@@ -8,6 +8,8 @@ doc_type: apiPageType
 ---
 # Get trustFrameworkPolicy
 
+Namespace: microsoft.graph
+
 >**Important:** APIs under the /beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported.
 
 Retrieve the contents of an existing [trustFrameworkPolicy](../resources/trustframeworkpolicy.md).

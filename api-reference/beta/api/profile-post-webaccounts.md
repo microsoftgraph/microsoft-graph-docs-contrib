@@ -9,6 +9,8 @@ doc_type: "apiPageType"
 
 # Create webAccount
 
+Namespace: microsoft.graph
+
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 Create a new [webAccount](../resources/webaccount.md) object in a user's [profile](../resources/profile.md).

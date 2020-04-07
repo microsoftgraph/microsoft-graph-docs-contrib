@@ -9,6 +9,8 @@ ms.prod: ""
 
 # List impossibleTravelRiskEvents
 
+Namespace: microsoft.graph
+
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 >[!NOTE]
