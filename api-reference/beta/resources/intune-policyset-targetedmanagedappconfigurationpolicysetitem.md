@@ -1,15 +1,13 @@
 ---
 title: "targetedManagedAppConfigurationPolicySetItem resource type"
 description: "A class containing the properties used for Targeted managed app configuration PolicySetItem."
-author: "rolyon"
+author: "davidmu1"
 localization_priority: Normal
 ms.prod: "Intune"
 doc_type: resourcePageType
 ---
 
 # targetedManagedAppConfigurationPolicySetItem resource type
-
-Namespace: microsoft.graph
 
 > **Important:** Microsoft Graph APIs under the /beta version are subject to change; production use is not supported.
 

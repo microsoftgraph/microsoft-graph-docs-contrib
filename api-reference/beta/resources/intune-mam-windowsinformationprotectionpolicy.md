@@ -1,15 +1,13 @@
 ---
 title: "windowsInformationProtectionPolicy resource type"
 description: "Policy for Windows information protection without MDM"
-author: "rolyon"
+author: "davidmu1"
 localization_priority: Normal
 ms.prod: "Intune"
 doc_type: resourcePageType
 ---
 
 # windowsInformationProtectionPolicy resource type
-
-Namespace: microsoft.graph
 
 > **Important:** Microsoft Graph APIs under the /beta version are subject to change; production use is not supported.
 

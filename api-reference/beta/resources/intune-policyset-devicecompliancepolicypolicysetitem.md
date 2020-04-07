@@ -1,15 +1,13 @@
 ---
 title: "deviceCompliancePolicyPolicySetItem resource type"
 description: "A class containing the properties used for device compliance policy PolicySetItem."
-author: "rolyon"
+author: "davidmu1"
 localization_priority: Normal
 ms.prod: "Intune"
 doc_type: resourcePageType
 ---
 
 # deviceCompliancePolicyPolicySetItem resource type
-
-Namespace: microsoft.graph
 
 > **Important:** Microsoft Graph APIs under the /beta version are subject to change; production use is not supported.
 
