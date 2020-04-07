@@ -1,6 +1,6 @@
 ---
 title: "domainDnsRecord resource type"
-description: "The DomainDnsRecord entity is used to present such DNS records."
+description: "The DomainDnsRecord entity is used to present DNS records."
 localization_priority: Normal
 author: "adimitui"
 ms.prod: "microsoft-identity-platform"
