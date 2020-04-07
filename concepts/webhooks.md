@@ -76,6 +76,8 @@ When the limits are exceeded, attempts to create a subscription will result in a
 
 - Notification for user entities are not supported for personal Microsoft accounts.
 
+- A [Known issue](graph/concepts/known-issues#change-notifications) exists with user subscriptions.
+
 ### Outlook resource limitations
 
 When subscribing to Outlook resources such as **messages**, **events** or **contacts**, if you choose to use the *user principal name* UPN in the resource path, the subscription request might fail if the UPN contains an apostrophe. Consider using GUID user IDs instead of UPNs to avoid running into this problem. For example, instead of using resource path:
@@ -155,6 +157,10 @@ Microsoft Graph validates the notification endpoint provided in the `notificatio
     - The body must include the validation token provided by Microsoft Graph.
 
 The client should discard the validation token after providing it in the response.
+
+Additionally, you can use the [Microsoft Graph Postman collection](use-postman.md) to confirm that your endpoint properly implements the validation request. The **Subscription Validation** request in the **Misc** folder provides unit tests that validate the response provided by your endpoint.  
+
+![validation response test results](images/change-notifications/validation-request-tests-results.png)
 
 ### Renewing a subscription
 
