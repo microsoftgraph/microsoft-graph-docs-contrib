@@ -36,13 +36,15 @@ For more information about the `TeamsProvider` provider, see [Microsoft Teams pr
 
 ## Properties
 
-The component uses Microsoft Graph to provide additional details about the user. To define a user, you must use the **person-query** property of `mgt-person`.
+By default, the `mgt-person` component will pass the person details to the `mgt-person-card` component. However, you can use these attributes to change this when templating the `mgt-person` component or when using the `mgt-person-card` component as a standalone component.
 
 | Attribute         | Type                     | Description                                                                           |
 | ---------------- | -------------------------------- | ------------------------------------------------------------------------------------- |
 | person-details | MicrosoftGraph.User <br> MicrosoftGraph.Person <br> MicrosoftGraph.Contact | Person object as defined by Microsoft Graph, containing details related to the user. |
 | person-image   | png/jpg/svg                    | Image related to the person displayed in the card.                                   |
 | inherit-details   | None.                  | Allows person-card to walk parent tree for `mgt-person` component to use the same `person-details` and `person-image` data.                      |
+| user-id | string | Allows developers to supply user-id to retrive data shown on person-card component |
+| person-query | string | Allows developers to supply person-query to retrive data shown on person-card component |
 
 
 ## Templates
@@ -124,4 +126,3 @@ For more complex scenarios or a truly custom UX, this component exposes several 
 | renderExpandedDetails | Renders the content in the expanded details container. |
 | renderContactDetails | Renders the contact details part of the expanded details. |
 | renderAdditionalDetails | Renders the additional details part of the expanded details. |
-
