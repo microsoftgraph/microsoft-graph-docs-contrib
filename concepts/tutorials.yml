@@ -63,6 +63,6 @@ landingContent:
           - text: Change notifications and delta query
             url: /learn/modules/msgraph-changenotifications-trackchanges
           - text: Optimize data usage with query parameters
-            url: learn/modules/optimize-data-usage
+            url: /learn/modules/optimize-data-usage
           - text: Optimize network traffic
-            url: learn/modules/optimize-data-usage/2-microsoft-graph-query-parameters
+            url: /learn/modules/optimize-network-traffic
