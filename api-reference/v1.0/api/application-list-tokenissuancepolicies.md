@@ -13,7 +13,7 @@ Namespace: microsoft.graph
 
 
 
-List the [tokenIssuancePolicy](../resources/tokenlifetimepolicy.md) objects that are assigned to an [application](../resources/application.md).
+List the [tokenIssuancePolicy](../resources/tokenissuancepolicy.md) objects that are assigned to an [application](../resources/application.md).
 
 ## Permissions
 
@@ -37,7 +37,7 @@ GET /applications/{id}/tokenIssuancePolicies
 
 | Name          | Description   |
 |:--------------|:--------------|
-| Authorization | Bearer {token} |
+| Authorization | Bearer {token}. Required. |
 
 ## Request body
 

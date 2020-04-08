@@ -37,7 +37,7 @@ PATCH /policies/tokenLifetimePolicies/{id}
 
 | Name       | Description|
 |:-----------|:-----------|
-| Authorization | Bearer {token} |
+| Authorization | Bearer {token}. Required. |
 | Content-type | application/json |
 
 ## Request body

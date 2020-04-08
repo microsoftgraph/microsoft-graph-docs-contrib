@@ -41,7 +41,7 @@ This method supports the `$expand`, `$select` and `$top` OData query parameters 
 
 | Name      |Description|
 |:----------|:----------|
-| Authorization | Bearer {token} |
+| Authorization | Bearer {token}. Required. |
 
 ## Request body
 

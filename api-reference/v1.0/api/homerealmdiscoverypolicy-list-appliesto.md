@@ -39,7 +39,7 @@ This method supports the `$select` and `$top` OData query parameters to help cus
 
 | Name      |Description|
 |:----------|:----------|
-| Authorization | Bearer {token} |
+| Authorization | Bearer {token}. Required. |
 
 ## Request body
 

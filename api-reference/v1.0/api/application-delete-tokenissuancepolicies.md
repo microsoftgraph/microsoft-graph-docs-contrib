@@ -1,6 +1,6 @@
 ---
 title: "Remove tokenIssuancePolicy"
-description: "Remove a tokenIssuancePolicy from an application or servicePrincipal."
+description: "Remove a tokenIssuancePolicy from an application."
 localization_priority: Normal
 author: "sureshja"
 ms.prod: "microsoft-identity-platform"
@@ -13,7 +13,7 @@ Namespace: microsoft.graph
 
 
 
-Remove a [tokenIssuancePolicy](../resources/tokenlifetimepolicy.md) from an [application](../resources/application.md).
+Remove a [tokenIssuancePolicy](../resources/tokenissuancepolicy.md) from an [application](../resources/application.md).
 
 ## Permissions
 
@@ -37,7 +37,7 @@ DELETE /applications/{id}/tokenIssuancePolicies/{id}/$ref
 
 | Name          | Description   |
 |:--------------|:--------------|
-| Authorization | Bearer {token} |
+| Authorization | Bearer {token}. Required. |
 
 ## Request body
 
@@ -56,7 +56,7 @@ The following is an example of the request.
 # [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
-  "name": "delete_tokenlifetimepolicy_from_application"
+  "name": "delete_tokenissuancepolicy_from_application"
 }-->
 
 ```http

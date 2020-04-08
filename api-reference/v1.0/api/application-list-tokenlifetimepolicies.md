@@ -37,7 +37,7 @@ GET /applications/{id}/tokenLifetimePolicies
 
 | Name          | Description   |
 |:--------------|:--------------|
-| Authorization | Bearer {token} |
+| Authorization | Bearer {token}. Required. |
 
 ## Request body
 

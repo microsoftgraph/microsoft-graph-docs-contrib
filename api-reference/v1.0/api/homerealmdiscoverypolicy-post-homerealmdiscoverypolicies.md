@@ -37,7 +37,7 @@ POST policies/homeRealmDiscoveryPolicies
 
 | Name          | Description   |
 |:--------------|:--------------|
-| Authorization | Bearer {token} |
+| Authorization | Bearer {token}. Required. |
 | Content-type | application/json |
 
 ## Request body

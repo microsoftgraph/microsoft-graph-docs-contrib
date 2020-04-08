@@ -35,7 +35,7 @@ POST /applications/{id}/tokenIssuancePolicies/$ref
 
 | Name          | Description   |
 |:--------------|:--------------|
-| Authorization | Bearer {token} |
+| Authorization | Bearer {token}. Required. |
 | Content-Type | application/json |
 
 ## Request body
