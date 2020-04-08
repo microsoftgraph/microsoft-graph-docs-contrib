@@ -1,15 +1,13 @@
 ---
 title: "Update groupPolicyPresentationValue"
 description: "Update the properties of a groupPolicyPresentationValue object."
-author: "rolyon"
+author: "davidmu1"
 localization_priority: Normal
 ms.prod: "Intune"
 doc_type: apiPageType
 ---
 
 # Update groupPolicyPresentationValue
-
-Namespace: microsoft.graph
 
 > **Important:** Microsoft Graph APIs under the /beta version are subject to change; production use is not supported.
 
@@ -85,7 +83,6 @@ Content-Length: 242
   "id": "8132eaab-eaab-8132-abea-3281abea3281"
 }
 ```
-
 
 
 

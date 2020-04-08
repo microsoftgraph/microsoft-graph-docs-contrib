@@ -1,15 +1,13 @@
 ---
 title: "mobileAppAssignmentSettings resource type"
 description: "Abstract class to contain properties used to assign a mobile app to a group."
-author: "rolyon"
+author: "davidmu1"
 localization_priority: Normal
 ms.prod: "Intune"
 doc_type: resourcePageType
 ---
 
 # mobileAppAssignmentSettings resource type
-
-Namespace: microsoft.graph
 
 > **Important:** Microsoft Graph APIs under the /beta version are subject to change; production use is not supported.
 

@@ -1,15 +1,13 @@
 ---
 title: "Update managedDevice"
 description: "Update the properties of a managedDevice object."
-author: "rolyon"
+author: "davidmu1"
 localization_priority: Normal
 ms.prod: "Intune"
 doc_type: apiPageType
 ---
 
 # Update managedDevice
-
-Namespace: microsoft.graph
 
 > **Important:** Microsoft Graph APIs under the /beta version are subject to change; production use is not supported.
 
@@ -137,7 +135,7 @@ Here is an example of the request.
 ``` http
 PATCH https://graph.microsoft.com/beta/deviceManagement/managedDevices/{managedDeviceId}
 Content-type: application/json
-Content-length: 7634
+Content-length: 7658
 
 {
   "@odata.type": "#microsoft.graph.managedDevice",
@@ -308,7 +306,8 @@ Content-length: 7634
   },
   "configurationManagerClientInformation": {
     "@odata.type": "microsoft.graph.configurationManagerClientInformation",
-    "clientIdentifier": "Client Identifier value"
+    "clientIdentifier": "Client Identifier value",
+    "isBlocked": true
   },
   "ethernetMacAddress": "Ethernet Mac Address value",
   "physicalMemoryInBytes": 5,
@@ -321,7 +320,7 @@ Here is an example of the response. Note: The response object shown here may be 
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 7683
+Content-Length: 7707
 
 {
   "@odata.type": "#microsoft.graph.managedDevice",
@@ -493,14 +492,14 @@ Content-Length: 7683
   },
   "configurationManagerClientInformation": {
     "@odata.type": "microsoft.graph.configurationManagerClientInformation",
-    "clientIdentifier": "Client Identifier value"
+    "clientIdentifier": "Client Identifier value",
+    "isBlocked": true
   },
   "ethernetMacAddress": "Ethernet Mac Address value",
   "physicalMemoryInBytes": 5,
   "processorArchitecture": "x86"
 }
 ```
-
 
 
 

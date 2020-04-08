@@ -1,15 +1,13 @@
 ---
 title: "configurationManagerClientHealthState resource type"
 description: "Configuration manager client health state"
-author: "rolyon"
+author: "davidmu1"
 localization_priority: Normal
 ms.prod: "Intune"
 doc_type: resourcePageType
 ---
 
 # configurationManagerClientHealthState resource type
-
-Namespace: microsoft.graph
 
 > **Important:** Microsoft Graph APIs under the /beta version are subject to change; production use is not supported.
 
@@ -22,7 +20,7 @@ Configuration manager client health state
 |:---|:---|:---|
 |state|[configurationManagerClientState](../resources/intune-devices-configurationmanagerclientstate.md)|Current configuration manager client state. Possible values are: `unknown`, `installed`, `healthy`, `installFailed`, `updateFailed`, `communicationError`.|
 |errorCode|Int32|Error code for failed state.|
-|lastSyncDateTime|DateTimeOffset|Datetime fo last sync with configuration manager management point.|
+|lastSyncDateTime|DateTimeOffset|Datetime for last sync with configuration manager management point.|
 
 ## Relationships
 None

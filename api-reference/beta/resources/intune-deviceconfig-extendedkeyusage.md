@@ -1,15 +1,13 @@
 ---
 title: "extendedKeyUsage resource type"
 description: "Custom Extended Key Usage definition"
-author: "rolyon"
+author: "davidmu1"
 localization_priority: Normal
 ms.prod: "Intune"
 doc_type: resourcePageType
 ---
 
 # extendedKeyUsage resource type
-
-Namespace: microsoft.graph
 
 > **Important:** Microsoft Graph APIs under the /beta version are subject to change; production use is not supported.
 

@@ -2,14 +2,12 @@
 title: "List mobileAppTroubleshootingEvents"
 description: "Describes the List mobileAppTroubleshootingEvent method of the Microsoft Graph API for Intune, which supports multiple workflows."
 localization_priority: Normal
-author: "rolyon"
+author: "davidmu1"
 ms.prod: "Intune"
 doc_type: apiPageType
 ---
 
 # List mobileAppTroubleshootingEvents
-
-Namespace: microsoft.graph
 
 > **Important:** APIs under the /beta version in Microsoft Graph are subject to change. Use of these APIs in production applications is not supported.
 
@@ -76,7 +74,6 @@ Content-Length: 161
   ]
 }
 ```
-
 
 
 
