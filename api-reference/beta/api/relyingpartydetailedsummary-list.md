@@ -28,7 +28,7 @@ One of the following permissions is required to call this API. To learn more, in
 <!-- { "blockType": "ignored" } -->
 
 ```http
-GET /reports/relyingPartyDetailedSummary
+GET /reports/getRelyingPartyDetailedSummary
 ```
 ## Function parameters
 
@@ -71,7 +71,7 @@ The following is an example of the request.
 }-->
 
 ```http
-GET https://graph.microsoft.com/beta/reports/getRelyingPartySummary(period={period_value})
+GET https://graph.microsoft.com/beta/reports/getRelyingPartyDetailedSummary(period='period_value')
 ```
 
 ### Response
@@ -96,7 +96,20 @@ Content-type: application/json
   "serviceId": "serviceId-value",
   "relyingPartyName": "relyingPartyName-value",
   "successfulSignInCount": "successfulSignInCount-value",
-  "failedSignInCount": "failedSignInCount-value"
+  "failedSignInCount": "failedSignInCount-value",
+  "totalSignInCount": "totalSignInCount-value",
+  "signInSuccessRate": "signInSuccessRate-value",
+  "uniqueUserCount": "uniqueUserCount-value",
+  "migrationStatus": "migrationStatus-value",
+  "replyUrls": [
+      "replyUrls-value"
+  ],
+  "migrationValidationDetails": [
+      {
+          "name": "name-value",
+          "value": "value-value"
+      }
+  ]
 }
 ```
 
