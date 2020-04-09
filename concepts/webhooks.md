@@ -77,7 +77,7 @@ When the limits are exceeded, attempts to create a subscription will result in a
 
 - Notification for user entities are not supported for personal Microsoft accounts.
 
-- A [Known issue](graph/concepts/known-issues#change-notifications) exists with user subscriptions.
+- A [Known issue](concepts/known-issues#change-notifications) exists with user and group subscriptions.
 
 ### Outlook resource limitations
 
@@ -270,9 +270,9 @@ Repeat for other notifications in the request.
 The following code samples are available on GitHub.
 
 - [Microsoft Graph Training Module - Using Change Notifications and Track Changes with Microsoft Graph](https://github.com/microsoftgraph/msgraph-training-changenotifications)
-- [Microsoft Graph Webhooks Sample for Node.js](https://github.com/OfficeDev/Microsoft-Graph-Nodejs-Webhooks)
-- [Microsoft Graph Webhooks Sample for ASP.NET](https://github.com/OfficeDev/Microsoft-Graph-ASPNET-Webhooks)
-- [Microsoft Graph User Webhooks Sample using WebJobs SDK](https://github.com/microsoftgraph/webjobs-webhooks-sample)
+- [Microsoft Graph Webhooks Sample for Node.js](https://github.com/microsoftgraph/nodejs-webhooks-rest-sample)
+- [Microsoft Graph Webhooks Sample for ASP.NET Core](https://github.com/microsoftgraph/aspnetcore-webhooks-sample)
+- [Microsoft Graph Webhooks Sample for Java Spring](https://github.com/microsoftgraph/java-spring-webhooks-sample)
 
 ## See also
 

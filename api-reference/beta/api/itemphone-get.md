@@ -30,7 +30,7 @@ One of the following permissions is required to call this API. To learn more, in
 <!-- { "blockType": "ignored" } -->
 
 ```http
-GET /me/profile/phones/{id} 
+GET /me/profile/phones/{id}
 ```
 
 ## Optional query parameters
@@ -87,7 +87,6 @@ GET https://graph.microsoft.com/beta/me/profile/phones/{id}
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
-
 
 ### Response
 
