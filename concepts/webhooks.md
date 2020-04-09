@@ -37,6 +37,7 @@ Using the Microsoft Graph API, an app can subscribe to changes on the following 
 - Content within the hierarchy of the _root folder_ [driveItem][] on OneDrive for Business
 - Security [alert][]
 - Teams [callRecord][] (preview)
+- Teams [chatMessage][] (preview)
 
 You can create a subscription to a specific Outlook folder such as the Inbox:
 `me/mailFolders('inbox')/messages`
@@ -76,7 +77,7 @@ When the limits are exceeded, attempts to create a subscription will result in a
 
 - Notification for user entities are not supported for personal Microsoft accounts.
 
-- A [Known issue](graph/concepts/known-issues#change-notifications) exists with user subscriptions.
+- A [known issue](known-issues.md#change-notifications) exists with user and group subscriptions.
 
 ### Outlook resource limitations
 
@@ -289,4 +290,5 @@ The following code samples are available on GitHub.
 [message]: /graph/api/resources/message?view=graph-rest-1.0
 [user]: /graph/api/resources/user?view=graph-rest-1.0
 [alert]: /graph/api/resources/alert?view=graph-rest-1.0
-[callRecord]: /graph/api/resources/callrecords-callrecord?view=graph-rest-beta
+[callRecord]: /graph/api/resources/callrecords-callrecord
+[chatMessage]: /graph/api/resources/chatmessage
