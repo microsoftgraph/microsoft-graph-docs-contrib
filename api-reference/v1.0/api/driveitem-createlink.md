@@ -143,7 +143,7 @@ Content-Type: application/json
       "id": "1234",
       "displayName": "Sample Application"
     },
-  }
+  },
   "hasPassword": true
 }
 ```
@@ -207,7 +207,7 @@ Content-Type: application/json
       "id": "1234",
       "displayName": "Sample Application"
     },
-  }
+  },
 }
 ```
 
