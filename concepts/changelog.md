@@ -28,13 +28,6 @@ For details about known issues with Microsoft Graph APIs, see [Known issues](kno
 | Addition | Beta | Added the **calendarGroupId** property to the [calendar](/graph/api/resources/calendar?view=graph-rest-beta) entity. |
 | Addition | Beta | Added the **isDraft** property to the [event](/graph/api/resources/event?view=graph-rest-beta) entity. |
 
-### Change notifications
-
-| **Change type** | **Version** | **Description**                          |
-|:----------------|:------------|:-----------------------------------------|
-| Addition | beta | Added support for [delta queries for orgContact](/graph/api/orgcontact-delta?view=graph-rest-beta).|
-| Addition | v1.0 | Added support for [delta queries for orgContact](/graph/api/orgcontact-delta?view=graph-rest-1.0).|
-
 ### Cloud communications | Call
 
 | **Change type** | **Version**   | **Description**                          |
@@ -116,6 +109,7 @@ For details about known issues with Microsoft Graph APIs, see [Known issues](kno
 | **Change type** | **Version**   | **Description**                          |
 |:---|:---|:---|
 | Addition | beta and v1.0 | Added the **authenticationRequirement** property and the **riskEventTypes_v2** property to the [signin](/graph/api/resources/signin?view=graph-rest-1.0) entity. |
+| Addition | beta and v1.0 | Added support for [delta queries for orgContact](/graph/api/orgcontact-delta?view=graph-rest-1.0).|
 | Addition | v1.0 | Added new user permission [User.ManageIdentities.All](/graph/permissions-reference#user-permissions).|
 | Addition | beta | Added the PrivilegedAccess.Read.AzureResources application permission for [Privileged Identity Management - Azure resources](/graph/api/resources/privilegedidentitymanagement-resources?view=graph-rest-beta).|
 | Addition | beta | Added the [Auditlogs.Read.All](/graph/permissions-reference#user-permissions) permission for listing the sign-in activity of a user.|
@@ -148,8 +142,8 @@ For details about known issues with Microsoft Graph APIs, see [Known issues](kno
 
 | **Change type** | **Version** | **Description**                          |
 | :-------------- | :---------- | :-------------------------------------- |
-| Addition        | v1.0        | Added the [followSite](/graph/api/follow-site?view=graph-rest-1.0) navigation property to the [user](/graph/api/resources/user?view=graph-rest-1.0) entity set. |
-| Addition        | v1.0        | Added the [unfollowSite](/graph/api/unfollow-site?view=graph-rest-1.0) navigation property to the [user](/graph/api/resources/user?view=graph-rest-1.0) entity set. |
+| Addition        | v1.0        | Added the [followSite](/graph/api/site-follow?view=graph-rest-1.0) navigation property to the [user](/graph/api/resources/user?view=graph-rest-1.0) entity. |
+| Addition        | v1.0        | Added the [unfollowSite](/graph/api/site-unfollow?view=graph-rest-1.0) navigation property to the [user](/graph/api/resources/user?view=graph-rest-1.0) entity. |
 | Addition        | v1.0       | Added the **subscriptions** navigation property to the [list](/graph/api/resources/list?view=graph-rest-1.0) entity. |
 
 ### Teamwork (Microsoft Teams)
