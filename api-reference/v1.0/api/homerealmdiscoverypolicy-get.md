@@ -35,7 +35,7 @@ GET /policies/homeRealmDiscoveryPolicies/{id}
 
 ## Optional query parameters
 
-This method supports the `$expand` and `$select` OData query parameters to help customize the response. For general information, see [OData query parameters](/graph/query-parameters). When using `$expand` make sure your app requests permissions to read the expanded objects.
+This method supports the `$expand` and `$select` OData query parameters to help customize the response. For general information, see [OData query parameters](/graph/query-parameters). When using `$expand`, make sure that your app requests permissions to read the expanded objects.
 
 ## Request headers
 
