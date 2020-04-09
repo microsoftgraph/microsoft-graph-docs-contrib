@@ -1,7 +1,7 @@
 ---
 title: "Update win32LobApp"
 description: "Update the properties of a win32LobApp object."
-author: "rolyon"
+author: "davidmu1"
 localization_priority: Normal
 ms.prod: "Intune"
 doc_type: apiPageType
@@ -83,6 +83,7 @@ The following table shows the properties that are required when you create the [
 |returnCodes|[win32LobAppReturnCode](../resources/intune-apps-win32lobappreturncode.md) collection|The return codes for post installation behavior.|
 |msiInformation|[win32LobAppMsiInformation](../resources/intune-apps-win32lobappmsiinformation.md)|The MSI details if this Win32 app is an MSI app.|
 |setupFilePath|String|The relative path of the setup file in the encrypted Win32LobApp package.|
+|installLanguage|String|Not yet documented|
 
 
 
@@ -96,7 +97,7 @@ Here is an example of the request.
 ``` http
 PATCH https://graph.microsoft.com/beta/deviceAppManagement/mobileApps/{mobileAppId}
 Content-type: application/json
-Content-length: 2817
+Content-length: 2865
 
 {
   "@odata.type": "#microsoft.graph.win32LobApp",
@@ -187,7 +188,8 @@ Content-length: 2817
     "productName": "Product Name value",
     "publisher": "Publisher value"
   },
-  "setupFilePath": "Setup File Path value"
+  "setupFilePath": "Setup File Path value",
+  "installLanguage": "Install Language value"
 }
 ```
 
@@ -196,7 +198,7 @@ Here is an example of the response. Note: The response object shown here may be 
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 2989
+Content-Length: 3037
 
 {
   "@odata.type": "#microsoft.graph.win32LobApp",
@@ -290,11 +292,10 @@ Content-Length: 2989
     "productName": "Product Name value",
     "publisher": "Publisher value"
   },
-  "setupFilePath": "Setup File Path value"
+  "setupFilePath": "Setup File Path value",
+  "installLanguage": "Install Language value"
 }
 ```
-
-
 
 
 

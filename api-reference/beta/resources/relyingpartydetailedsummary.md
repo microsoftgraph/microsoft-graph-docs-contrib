@@ -1,6 +1,6 @@
 ---
 title: "relyingPartyDetailedSummary resource type"
-description: "Represents a relying party in AD FS"
+description: "Represents a relying party in AD FS."
 localization_priority: Normal
 author: "davidmu1"
 ms.prod: "microsoft-identity-platform"
@@ -11,13 +11,13 @@ doc_type: "resourcePageType"
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Represents a relying party configured with Active Directory Federation Services (AD FS), its aggregated usage and whether the relying party configuration can be migrated to Azure Active Directory.
+Represents a relying party configured with Active Directory Federation Services (AD FS), its aggregated usage, and whether the relying party configuration can be migrated to Azure Active Directory.
 
 ## Methods
 
 | Method       | Return Type | Description |
 |:-------------|:------------|:------------|
-| [List relyingPartyDetailedSummary](../api/relyingpartydetailedsummary-list.md) | [relyingPartyDetailedSummary](relyingpartydetailedsummary.md) | Read the properties and relationships of a **relyingPartyDetailedSummary** object. |
+| [List](../api/relyingpartydetailedsummary-list.md) | [relyingPartyDetailedSummary](relyingpartydetailedsummary.md) | Retrieve a list of **relyingPartyDetailedSummary** objects. |
 
 
 ## Properties

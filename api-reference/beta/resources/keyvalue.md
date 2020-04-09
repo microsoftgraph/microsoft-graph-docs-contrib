@@ -9,16 +9,18 @@ doc_type: "resourcePageType"
 
 # keyValue resource type
 
+Namespace: microsoft.graph
+
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Provides additional authentication processing information, such as the server name and the presence of hints for login and domain.
+Provides additional authentication processing information, such as the server name and the presence of hints for sign in and domain.
 
 ## Properties
 
 | Property     | Type        | Description |
 |:-------------|:------------|:------------|
-|key|String|Contains the name of the field that a value is associated with. When a login or domain hint is included in the sign-in request, corresponding fields are included as key-value pairs. Possible keys: `Login hint present`, `Domain hint present`.|
-|value|String|Contains the corresponding value for the specified key. The value is `true` if a login hint was included in the sign-in request; otherwise `false`. The value is `true` if a domain hint was included in the sign-in request; otherwise `false`.|
+|key|String|Contains the name of the field that a value is associated with. When a sign in or domain hint is included in the sign-in request, corresponding fields are included as key-value pairs. Possible keys: `Login hint present`, `Domain hint present`.|
+|value|String|Contains the corresponding value for the specified key. The value is `true` if a sign in hint was included in the sign-in request; otherwise `false`. The value is `true` if a domain hint was included in the sign-in request; otherwise `false`.|
 
 ## JSON representation
 
@@ -47,5 +49,7 @@ The following is a JSON representation of the resource.
   "description": "keyValue resource",
   "keywords": "",
   "section": "documentation",
-  "tocPath": ""
-}-->
+  "tocPath": "",
+  "suppressions": []
+}
+-->

@@ -9,6 +9,8 @@ doc_type: "apiPageType"
 
 # trustFrameworkKeySet: uploadCertificate
 
+Namespace: microsoft.graph
+
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 Upload a certificate to a [trustFrameworkKeyset](../resources/trustframeworkkeyset.md). The input is a base-64 encoded value of the certificate contents. This method returns [trustFrameworkKey](../resources/trustframeworkkey.md).

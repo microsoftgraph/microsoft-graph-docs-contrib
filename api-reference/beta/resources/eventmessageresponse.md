@@ -9,6 +9,8 @@ doc_type: "resourcePageType"
 
 # eventMessageResponse resource type
 
+Namespace: microsoft.graph
+
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 A message that represents a response to a meeting request in the meeting organizer's mailbox.
@@ -64,7 +66,7 @@ For more information on how to propose a time, and how to receive and accept a n
 |createdDateTime|DateTimeOffset|The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 would look like this: `'2014-01-01T00:00:00Z'`|
 |endDateTime|[dateTimeTimeZone](datetimetimezone.md)|The end time of the requested meeting.|
 |flag|[followUpFlag](followupflag.md)|The flag value that indicates the status, start date, due date, or completion date for the message.|
-|from|[recipient](recipient.md)|The mailbox owner and sender of the message.|
+|from|[recipient](recipient.md)|The owner of the mailbox from which the message is sent. In most cases, this value is the same as the **sender** property, except for sharing or delegation scenarios. The value must correspond to the actual mailbox used. Find out more about [setting the from and sender properties](/graph/outlook-create-send-messages#setting-the-from-and-sender-properties) of a message.|
 |hasAttachments|Boolean|Indicates whether the message has attachments.|
 |id|String| Unique identifier for the message. [!INCLUDE [outlook-beta-id](../../includes/outlook-beta-id.md)] Read-only. |
 |importance|String| The importance of the message: `low`, `normal`, `high`.|
@@ -88,7 +90,7 @@ For more information on how to propose a time, and how to receive and accept a n
 |recurrence|[patternedRecurrence](patternedrecurrence.md)|The recurrence pattern of the requested meeting.|
 |replyTo|[recipient](recipient.md) collection|The email addresses to use when replying.|
 |responseType|string| Specifies the type of response to a meeting request. Possible values are: `tentativelyAccepted`, `accepted`, `declined`. For the eventMessageResponse type, `none`, `organizer`, and `notResponded` are not supported. Read-only. Not filterable.|
-|sender|[recipient](recipient.md)|The account that is actually used to generate the message.|
+|sender|[recipient](recipient.md)|The account that is actually used to generate the message. In most cases, this value is the same as the **from** property. You can set this property to a different value when sending a message from a [shared mailbox](/exchange/collaboration/shared-mailboxes/shared-mailboxes), [for a shared calendar, or as a delegate](/graph/outlook-share-delegate-calendar.md). In any case, the value must correspond to the actual mailbox used. Find out more about [setting the from and sender properties](/graph/outlook-create-send-messages#setting-the-from-and-sender-properties) of a message.|
 |sentDateTime|DateTimeOffset|The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 would look like this: `'2014-01-01T00:00:00Z'`|
 |startDateTime|[dateTimeTimeZone](datetimetimezone.md)|The start time of the requested meeting.|
 |subject|String|The subject of the message.|

@@ -1,7 +1,7 @@
 ---
 title: "groupPolicySettingType enum type"
 description: "Setting type of the group policy."
-author: "rolyon"
+author: "davidmu1"
 localization_priority: Normal
 ms.prod: "Intune"
 doc_type: enumPageType
@@ -19,8 +19,12 @@ Setting type of the group policy.
 |Member|Value|Description|
 |:---|:---|:---|
 |unknown|0|GroupPolicySettingType unknown|
-|policy|1|Policy Setting|
-|account|2|Account Setting|
+|policy|1|Policy setting type|
+|account|2|Account setting type|
+|securityOptions|3|SecurityOptions setting type|
+|userRightsAssignment|4|UserRightsAssignment setting type|
+|auditSetting|5|AuditSetting setting type|
+|windowsFirewallSettings|6|WindowsFirewallSettings setting type|
 
 
 

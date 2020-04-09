@@ -1,7 +1,7 @@
 ---
 title: "Update deviceHealthScript"
 description: "Update the properties of a deviceHealthScript object."
-author: "rolyon"
+author: "davidmu1"
 localization_priority: Normal
 ms.prod: "Intune"
 doc_type: apiPageType
@@ -20,9 +20,9 @@ One of the following permissions is required to call this API. To learn more, in
 
 |Permission type|Permissions (from most to least privileged)|
 |:---|:---|
-|Delegated (work or school account)|DeviceManagementManagedDevices.ReadWrite.All|
+|Delegated (work or school account)|DeviceManagementConfiguration.ReadWrite.All, DeviceManagementConfiguration.Read.All|
 |Delegated (personal Microsoft account)|Not supported.|
-|Application|DeviceManagementManagedDevices.ReadWrite.All|
+|Application|DeviceManagementConfiguration.ReadWrite.All, DeviceManagementConfiguration.Read.All|
 
 ## HTTP Request
 <!-- {
@@ -48,7 +48,6 @@ The following table shows the properties that are required when you create the [
 |:---|:---|:---|
 |id|String|Unique Identifier for the device health script|
 |publisher|String|Name of the device health script publisher|
-|version|String|Version of the device health script|
 |displayName|String|Name of the device health script|
 |description|String|Description of the device health script|
 |detectionScriptContent|Binary|The entire content of the detection powershell script|
@@ -72,12 +71,11 @@ Here is an example of the request.
 ``` http
 PATCH https://graph.microsoft.com/beta/deviceManagement/deviceHealthScripts/{deviceHealthScriptId}
 Content-type: application/json
-Content-length: 483
+Content-length: 575
 
 {
   "@odata.type": "#microsoft.graph.deviceHealthScript",
   "publisher": "Publisher value",
-  "version": "Version value",
   "displayName": "Display Name value",
   "description": "Description value",
   "detectionScriptContent": "ZGV0ZWN0aW9uU2NyaXB0Q29udGVudA==",
@@ -88,7 +86,7 @@ Content-length: 483
   "roleScopeTagIds": [
     "Role Scope Tag Ids value"
   ]
-}
+ }
 ```
 
 ### Response
@@ -96,7 +94,7 @@ Here is an example of the response. Note: The response object shown here may be 
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 655
+Content-Length: 747
 
 {
   "@odata.type": "#microsoft.graph.deviceHealthScript",
@@ -114,11 +112,11 @@ Content-Length: 655
   "runAs32Bit": true,
   "roleScopeTagIds": [
     "Role Scope Tag Ids value"
-  ]
+  ],
+  "isGlobalScript": true,
+  "highestAvailableVersion": "Highest Available Version value"
 }
 ```
-
-
 
 
 

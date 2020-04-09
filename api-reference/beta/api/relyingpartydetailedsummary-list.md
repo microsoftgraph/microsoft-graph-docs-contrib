@@ -1,6 +1,6 @@
 ---
 title: "List relyingPartyDetailedSummary"
-description: "Retrieve the properties and relationships of a relyingPartyDetailedSummary object."
+description: "Retrieve a list of relyingPartyDetailedSummary objects."
 localization_priority: Normal
 author: "davidmu1"
 ms.prod: "microsoft-identity-platform"
@@ -11,7 +11,7 @@ doc_type: "apiPageType"
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Retrieve the properties and relationships of a [relyingPartyDetailedSummary](../resources/relyingpartydetailedsummary.md) object.
+Retrieve a list of **relyingPartyDetailedSummary** objects.
 
 ## Permissions
 
