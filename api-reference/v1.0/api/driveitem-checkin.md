@@ -1,11 +1,15 @@
 ---
-author: rgregg
-ms.author: rgregg
-description: Create a copy of an existing item.
-title: check-in changes to a driveItem resource
+author: learafa
+description: "Check-in a checked out DriveItem resource, which makes the version of the document available to others."
+ms.date: 04/09/2020
+title: Check in files
+localization_priority: Normal
 ms.prod: "sharepoint"
+doc_type: apiPageType
 ---
-# check-in changes to a driveItem resource
+# DriveItem: checkin
+
+Namespace: microsoft.graph
 
 Check-in a checked out DriveItem resource, which makes the version of the document available to others.
 
@@ -41,16 +45,13 @@ In the request body, provide a JSON object with the following parameters.
 | checkInAs | string | Optional. The desired status of the document after the check-in operation is complete. Can be `published` or unspecified. |
 | comment   | string | A check-in comment that is associated with the version.                                                   |
 
-## Response
-
-If successful, the API call returns a `204 No Content`.
-
 ## Example
 
-### Request
 This example checks in a file identified by `{item-id}`.
 
-<!-- { "blockType": "request", "name": "checkin-item", "scopes": "files.readwrite sites.readwrite.all", "target": "action", "apiVersions": "beta" } -->
+
+# [HTTP](#tab/http)
+<!-- { "blockType": "request", "name": "checkin-item", "scopes": "files.readwrite", "target": "action" } -->
 
 ```http
 POST /drives/{drive-id}/items/{item-id}/checkin
@@ -60,20 +61,44 @@ Content-Type: application/json
   "comment": "Updating the latest guidelines"
 }
 ```
+# [C#](#tab/csharp)
+[!INCLUDE [sample-code](../includes/snippets/csharp/checkin-item-csharp-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-### Response
+# [JavaScript](#tab/javascript)
+[!INCLUDE [sample-code](../includes/snippets/javascript/checkin-item-javascript-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Objective-C](#tab/objc)
+[!INCLUDE [sample-code](../includes/snippets/objc/checkin-item-objc-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+---
+
+
+## Response
+
+If successful, the API call returns a `204 No content`.
+
 <!-- { "blockType": "response" } -->
 
 ```http
-HTTP/1.1 204 No Content
+HTTP/1.1 204 No content
 ```
+
+### Remarks
+
 
 [item-resource]: ../resources/driveitem.md
 
-<!-- {
+<!--
+{
   "type": "#page.annotation",
   "description": "Create a copy of an existing item.",
   "keywords": "copy existing item",
   "section": "documentation",
-  "tocPath": "Items/Copy"
-} -->
+  "tocPath": "Items/Copy",
+  "suppressions": [
+  ]
+}
+-->

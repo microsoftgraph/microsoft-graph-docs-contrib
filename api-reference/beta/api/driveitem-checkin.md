@@ -2,12 +2,12 @@
 author: JeremyKelley
 description: "Check-in a checked out DriveItem resource, which makes the version of the document available to others."
 ms.date: 09/10/2017
-title: Check In Files
+title: Check in files
 localization_priority: Normal
 ms.prod: "sharepoint"
 doc_type: apiPageType
 ---
-# Check-in changes to a DriveItem resource
+# DriveItem: checkin
 
 Namespace: microsoft.graph
 

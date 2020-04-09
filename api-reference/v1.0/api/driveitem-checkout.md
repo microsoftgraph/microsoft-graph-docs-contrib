@@ -1,5 +1,5 @@
 ---
-author: JeremyKelley
+author: learafa
 description: "Check-out a driveItem resource to prevent others from editing the document, and your changes from being visible until the documented is checked-in."
 ms.date: 09/10/2017
 title: Check out files
@@ -10,8 +10,6 @@ doc_type: apiPageType
 # DriveItem: checkout
 
 Namespace: microsoft.graph
-
-[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 Check-out a driveItem resource to prevent others from editing the document, and your changes from being visible until the documented is [checked-in](driveitem-checkin.md).
 

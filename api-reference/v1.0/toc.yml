@@ -3236,7 +3236,7 @@
         - name: Check in files
           href: api/driveitem-checkin.md
         - name: Check out files
-          href: api/driveitem-checkin.md 
+          href: api/driveitem-checkout.md 
         - name: Create folder
           href: api/driveitem-post-children.md
         - name: Update item
