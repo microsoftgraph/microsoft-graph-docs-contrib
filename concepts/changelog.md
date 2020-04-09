@@ -19,6 +19,12 @@ For details about known issues with Microsoft Graph APIs, see [Known issues](kno
 |:---|:---|:---|
 | Addition | Beta | Added [unifiedRoleAssignmentMultiple](/graph/api/resources/unifiedroleassignmentmultiple?view=graph-rest-beta), [rbacApplicationMultiple](/graph/api/resources/rbacapplicationmultiple?view=graph-rest-beta), and [appScope](/graph/api/resources/appscope?view=graph-rest-beta) and the following actions:<br><li>[List unifiedRoleAssignmentMultiple](/graph/api/unifiedroleassignmentmultiple-list?view=graph-rest-beta)</li><li>[Get unifiedRoleAssignmentMultiple](/graph/api/unifiedroleassignmentmultiple-get?view=graph-rest-beta)</li><li>[Create unifiedRoleAssignmentMultiple](/graph/api/resources/unifiedroleassignmentmultiple-post?view=graph-rest-beta)</li><li>[Update unifiedRoleAssignmentMultiple](/graph/api/unifiedroleassignmentmultiple-update?view=graph-rest-beta)</li><li>[Delete unifiedRoleAssignmentMultiple](/graph/api/unifiedroleassignmentmultiple-delete?view=graph-rest-beta)</li>. |
 
+### Files (OneDrive for Business)
+
+| **Change type** | **Version**   | **Description**                          |
+| :-------------- | :------------ | :--------------------------------------- 
+| Addition        | v1.0        | Added the [folowedSites](/graph/api/sites-list-followed?view=graph-rest-1.0) navigation property to the to the [user](/graph/api/resources/user?view=graph-rest-1.0) entity set |
+
 ## March 2020
 
 ### Calendar

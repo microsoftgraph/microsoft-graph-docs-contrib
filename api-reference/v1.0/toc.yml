@@ -4172,6 +4172,8 @@
           href: api/site-follow.md
         - name: Unfollow site
           href: api/site-unfollow.md
+        - name: List Followed sites
+          href: api/sites-list-followed.md
       - name: Lists
         href: resources/list.md
         items:
