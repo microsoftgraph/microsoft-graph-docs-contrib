@@ -803,6 +803,8 @@
           href: api/call-mute.md
         - name: Update recording status
           href: api/call-updaterecordingstatus.md
+        - name: Log teleconference device quality data
+          href: api/call-logteleconferencedevicequality.md
       - name: Online meeting
         href: resources/onlinemeeting.md
         items:
@@ -3220,6 +3222,8 @@
           href: api/drive-sharedwithme.md
         - name: Get special folder
           href: api/drive-get-specialfolder.md
+        - name: List followed items
+          href: api/drive-list-following.md
       - name: Drive items
         href: resources/driveitem.md
         items:
@@ -3253,6 +3257,10 @@
           href: api/driveitem-delta.md
         - name: List versions
           href: api/driveitem-list-versions.md
+        - name: Follow item
+          href: api/driveitem-follow.md
+        - name: Unfollow item
+          href: api/driveitem-unfollow.md
         - name: Preview item
           href: api/driveitem-preview.md
         - name: Get item analytics
@@ -3264,6 +3272,8 @@
           href: api/driveitem-createlink.md
         - name: Use sharing links
           href: api/shares-get.md
+        - name: Grant access to sharing link
+          href: api/permission-grant.md
         - name: List permissions
           href: api/driveitem-list-permissions.md
         - name: Add permissions
@@ -4158,6 +4168,10 @@
           href: api/site-list-subsites.md
         - name: Get item analytics
           href: api/itemanalytics-get.md
+        - name: Follow site
+          href: api/site-follow.md
+        - name: Unfollow site
+          href: api/site-unfollow.md
       - name: Lists
         href: resources/list.md
         items:

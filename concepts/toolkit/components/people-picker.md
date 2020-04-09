@@ -5,7 +5,7 @@ localization_priority: Normal
 author: vogtn
 ---
 
-# People-Picker component
+# People-Picker component in the Microsoft Graph Toolkit
 
 You can use the `mgt-people-picker` web component search for a specified number of people and render the list of results via Microsoft Graph. By default, the component will search for all people; you can also define a group property to further filter the results.
 
@@ -77,10 +77,12 @@ mgt-people-picker {
 
 | Data type | Data context | Description |
 | --- | --- | --- |
+| default | null: no data | The template used to override the rendering of the entire component.
 | loading | null: no data | The template used to render the state of picker while request to graph is being made. |
-| error | null: no data| The template used if user search returns no users. |
-| selected-person |person: The person details object| The template to render selected people. |
-| person | person: The person details object| The template to render people in the dropdown. |
+| error | null: no data | The template used if user search returns no users. |
+| no-data | null: no data | An alternative template used if user search returns no users. |
+| selected-person | person: The person details object | The template to render selected people. |
+| person | person: The person details object | The template to render people in the dropdown. |
 
 The following examples shows how to use the `error` template.
 
@@ -105,3 +107,19 @@ This component uses the following Microsoft Graph APIs and permissions.
 ## Authentication
 
 The control uses the global authentication provider described in the [authentication documentation](./../providers.md).
+
+## Extend for more control
+
+For more complex scenarios or a truly custom UX, this component exposes several `protected render*` methods for override in component extensions.
+
+| Method | Description |
+| - | - |
+| renderInput | Renders the input text box. |
+| renderSelectedPeople | Renders the selected people tokens. |
+| renderSelectedPerson | Renders an individual person token. |
+| renderFlyout | Renders the flyout chrome. |
+| renderFlyoutContent | Renders the appropriate state in the results flyout. |
+| renderLoading | Renders the loading state. |
+| renderNoData | Renders the state when no results are found for the search query. |
+| renderSearchResults | Renders the list of search results. |
+| renderPersonResult | Renders an individual person search result. |
