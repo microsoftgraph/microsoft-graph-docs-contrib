@@ -290,5 +290,5 @@ The following code samples are available on GitHub.
 [message]: /graph/api/resources/message?view=graph-rest-1.0
 [user]: /graph/api/resources/user?view=graph-rest-1.0
 [alert]: /graph/api/resources/alert?view=graph-rest-1.0
-[callRecord]: /graph/api/resources/callrecords-callrecord?view=graph-rest-beta
-[chatMessage]: /graph/api/resources/chatmessage?view=graph-rest-beta
+[callRecord]: /graph/api/resources/callrecords-callrecord
+[chatMessage]: /graph/api/resources/chatmessage
