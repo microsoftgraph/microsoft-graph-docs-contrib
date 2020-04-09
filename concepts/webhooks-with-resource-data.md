@@ -86,7 +86,6 @@ Content-Type: application/json
   "resource": "/teams/{id}/channels/{id}/messages",
   "includeResourceData": true,
   "encryptionCertificateId": "{custom ID}",
-  "encryptionCertificateThumbprint": "{thumbprint from the certificate}",
   "expirationDateTime": "2019-09-19T11:00:00.0000000Z",
   "clientState": "{secret client state}"
 }
