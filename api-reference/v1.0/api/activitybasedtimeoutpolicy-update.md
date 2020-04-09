@@ -38,7 +38,7 @@ PATCH /policies/activityBasedTimeoutPolicies/{id}
 | Name       | Description|
 |:-----------|:-----------|
 | Authorization | Bearer {token}. Required. |
-| Content-type | application/json |
+| Content-type | application/json. Required. |
 
 ## Request body
 
