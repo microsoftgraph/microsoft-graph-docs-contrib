@@ -1271,6 +1271,8 @@ Debut of the places API which provides rich details for locations in apps.
 | Addition | Beta | Added the **bundles** navigation property to the [drive](/graph/api/resources/drive?view=graph-rest-beta) entity |
 | Addition | Beta | Added the **bundle** property to the [driveItem](/graph/api/resources/driveitem?view=graph-rest-beta) entity |
 | Addition | Beta | Added the **grant** action to the [permission](/graph/api/resources/permission?view=graph-rest-beta) entity |
+| Addition | v1.0 | Added the [CheckIn][CheckIn-beta] and [CheckOut][CheckOut-beta] actions on the [DriveItem][DriveItem-beta] resource. |
+| Addition | v1.0 | Added the **expirationDateTime**, **password**, **message**, and **recipients** properties on the [CreateLink][CreateLink-beta] action on a [DriveItem][DriveItem-beta] resource. |
 
 ### Education
 | Change type | Version | Description                                                                                                                                                      |
@@ -1313,16 +1315,7 @@ Debut of the places API which provides rich details for locations in apps.
 | :-------------- | :---------- | :--------------------------------------- |
 | Addition        | v1.0       | Added the Secure Score APIs to the [security API](/graph/api/resources/securescore-api-overview?view=graph-rest-1.0), including the following resources and operations:<br/>[secureScore](/graph/api/resources/securescore?view=graph-rest-1.0) (and related entities)<br/>[List secureScores](/graph/api/securescores-list?view=graph-rest-1.0)<br/>[secureScoreControlProfile](/graph/api/resources/securescorecontrolprofile?view=graph-rest-1.0)<br/>[List secureScoreControlProfiles](/graph/api/securescorecontrolprofiles-list?view=graph-rest-1.0)<br/>[Update secureScoreControlProfile](/graph/api/securescorecontrolprofiles-update?view=graph-rest-1.0) |
 
-<<<<<<< HEAD
-### OneDrive and SharePoint APIs
-
-| **Change type** | **Version** | **Description**                          |
-| :-------------- | :---------- | :--------------------------------------- |
-| Addition        | v1.0        | Added the [CheckIn][CheckIn-beta] and [CheckOut][CheckOut-beta] actions on the [DriveItem][DriveItem-beta] resource. |
-| Addition        | v1.0        | Added the **expirationDateTime**, **password**, **message**, and **recipients** properties on the [CreateLink][CreateLink-beta] action on a [DriveItem][DriveItem-beta] resource. |
-=======
 ### Teamwork (Microsoft Teams)
->>>>>>> fe01a3af4aa0f97179477c47f44ff90b53b6da0b
 
 | **Change type** | **Version** | **Description**                  |
 |:----------------|:------------|:-----------------------------------------|
