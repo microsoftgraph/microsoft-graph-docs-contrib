@@ -120,3 +120,26 @@ The following resources are provided by the Outlook service.
 - [outlookTaskGroup](/graph/api/resources/outlooktaskgroup)
 - [outlookCategory](/graph/api/resources/outlookcategory)
 - [attachment](/graph/api/resources/attachment)
+
+### Microsoft Teams service limits
+
+Limits are expressed as requests per second (rps).
+
+| Teams request type                                   | Limit per app per tenant        | Limit per app across all tenants      |
+|------------------------------------------------------|---------------------------------|------------|
+| Any Graph API calls for Microsoft Teams              | 15000 requests every 10 seconds | n/a |
+| GET team, channel, tab, installedApps, appCatalogs   | 60 rps                          | 600 rps |
+| POST/PUT channel, tab, installedApps, appCatalogs    |  30 rps                         | 300 rps  |
+| PATCH team, channel, tab, installedApps, appCatalogs |  30 rps                         | 300 rps  |
+| DELETE channel, tab, installedApps, appCatalogs      |  15 rps                         | 150 rps  |
+| GET /teams/```{team-id}```, joinedTeams              |  30 rps                         | 300 rps  |
+| POST /teams/```{team-id}```, PUT /groups/```{team-id}```/team, clone | 6 rps | 150 rps  | 
+| GET channel message  | 5 rps | 100 rps |
+| GET 1:1/group chat message  | 3 rps | 30 rps |
+| POST channel message | 2 rps | 20 rps |
+| POST 1:1/group chat message | 2 rps | 20 rps |
+
+A maximum of 4 requests per second per app can be issued on a given team or channel.
+
+See also [Microsoft Teams limits](/graph/api/resources/teams-api-overview#microsoft-teams-limits) 
+and [polling requirements](/graph/api/resources/teams-api-overview#polling-requirements).

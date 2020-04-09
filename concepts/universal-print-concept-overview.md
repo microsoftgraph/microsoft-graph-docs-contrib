@@ -64,4 +64,5 @@ Looking for the API reference for this service?
 
 ## See also
 
-* We'd love to hear your feedback about the Universal Print APIs over at [UserVoice](https://microsoftgraph.uservoice.com/forums/920506-microsoft-graph-feature-requests)!
+- [What is Universal Print](https://docs.microsoft.com/universal-print/fundamentals/universal-print-whatis)
+- We'd love to hear your feedback about the Universal Print APIs over at [UserVoice](https://microsoftgraph.uservoice.com/forums/920506-microsoft-graph-feature-requests)!
