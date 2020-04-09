@@ -21,9 +21,6 @@ To manage roles and assign access to resources in role-based access control (RBA
 
 ## March 2020: New and generally available
 
-### Change notifications
-[Track changes](/graph/api/orgcontact-delta?view=graph-rest-1.0) for [organizational contacts](/graph/api/resources/orgcontact?view=graph-rest-1.0).
-
 ### Cloud communications
 - Get the call routing and incoming context of a [call](/graph/api/resources/call?view=graph-rest-1.0).
 - An app can [update the recording status](/graph/api/call-updaterecordingstatus?view=graph-rest-1.0) of a call.
@@ -38,6 +35,7 @@ To manage roles and assign access to resources in role-based access control (RBA
 - [Grant](/graph/api/permission-grant?view=graph-rest-1.0) permissions to users to access a sharing link, in order to share the corresponding drive item.
 
 ### Identity and access
+- [Track changes](/graph/api/orgcontact-delta?view=graph-rest-1.0) for [organizational contacts](/graph/api/resources/orgcontact?view=graph-rest-1.0).
 - Use the **riskEventTypes_v2** property to get the risk event types associated with a [sign-in](/graph/api/resources/signin?view=graph-rest-1.0).
 - Use the `User.ManageIdentities.All` delegated permission to allow an app to read, update, or delete identities that are associated with a user's account, that the signed-in user has access to. Use that permission at the application-level without a signed-in user present. This allows the app to [manage](/graph/api/user-update?view=graph-rest-1.0) which identities a user can sign-in with.
 
