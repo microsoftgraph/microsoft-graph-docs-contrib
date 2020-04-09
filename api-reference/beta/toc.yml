@@ -8605,6 +8605,8 @@
           href: api/application-update.md
         - name: Delete application
           href: api/application-delete.md
+        - name: Get delta
+          href: api/application-delta.md
         - name: List deleted applications
           href: api/directory-deleteditems-list.md
         - name: Get deleted application
