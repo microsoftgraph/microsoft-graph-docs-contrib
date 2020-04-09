@@ -77,7 +77,7 @@ When the limits are exceeded, attempts to create a subscription will result in a
 
 - Notification for user entities are not supported for personal Microsoft accounts.
 
-- A [Known issue](concepts/known-issues#change-notifications) exists with user and group subscriptions.
+- A [known issue](known-issues.md#change-notifications) exists with user and group subscriptions.
 
 ### Outlook resource limitations
 
