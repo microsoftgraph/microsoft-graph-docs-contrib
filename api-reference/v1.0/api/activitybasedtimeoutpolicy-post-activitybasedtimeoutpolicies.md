@@ -38,11 +38,11 @@ POST policies/activityBasedTimeoutPolicies
 | Name          | Description   |
 |:--------------|:--------------|
 | Authorization | Bearer {token}. Required. |
-| Content-type | application/json |
+| Content-type | application/json. Required. |
 
 ## Request body
 
-In the request body, supply a JSON representation of [activityBasedTimeoutPolicy](../resources/activitybasedtimeoutpolicy.md) object.
+In the request body, supply a JSON representation of an [activityBasedTimeoutPolicy](../resources/activitybasedtimeoutpolicy.md) object.
 
 ## Response
 
