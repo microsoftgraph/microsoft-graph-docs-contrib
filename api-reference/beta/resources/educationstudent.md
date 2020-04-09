@@ -4,9 +4,12 @@ description: "Additional information added to an educationUser that is present w
 author: "mmast-msft"
 localization_priority: Normal
 ms.prod: "education"
+doc_type: resourcePageType
 ---
 
 # educationStudent resource type
+
+Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
@@ -17,7 +20,7 @@ Additional information added to an [educationUser](educationuser.md) that is pre
 |:---------------|:--------|:----------|
 |birthDate|Date| Birth date of the student.|
 |externalId|String| ID of the student in the source system.|
-|gender|educationGender| Possible values are: `female`, `male`, `other`, `unkownFutureValue`.|
+|gender|educationGender| Possible values are: `female`, `male`, `other`.|
 |grade|String|Current grade level of the student.|
 |graduationYear|String| Year the student is graduating from the school.|
 |studentNumber|String| Student Number.|

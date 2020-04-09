@@ -4,9 +4,12 @@ description: "A contact is an item in Outlook where you can organize and save in
 author: "angelgolfer-ms"
 localization_priority: Normal
 ms.prod: "outlook"
+doc_type: resourcePageType
 ---
 
 # contact resource type
+
+Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
@@ -16,7 +19,7 @@ This resource supports:
 
 - Adding your own data to custom properties as [extensions](/graph/extensibility-overview).
 - Subscribing to [change notifications](/graph/webhooks).
-- Using [delta query](/graph/delta-query-overview) to track incremental additions, deletions, and updates, 
+- Using [delta query](/graph/delta-query-overview) to track incremental additions, deletions, and updates,
 by providing a [delta](../api/contact-delta.md) function.
 
 ## JSON representation
@@ -95,7 +98,7 @@ Here is a JSON representation of the resource
 |gender |String |The contact's gender. |
 |generation|String|The contact's generation.|
 |givenName|String|The contact's given name.|
-|id|String|The contact's unique identifier. Read-only.|
+|id|String| Unique identifier for the contact. [!INCLUDE [outlook-beta-id](../../includes/outlook-beta-id.md)] Read-only. |
 |imAddresses|String collection|The contact's instant messaging (IM) addresses.|
 |initials|String|The contact's initials.|
 |jobTitle|String|The contact’s job title.|

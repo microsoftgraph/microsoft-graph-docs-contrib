@@ -2,11 +2,14 @@
 title: "dataPolicyOperation resource type"
 description: "Represents a submitted data policy operation. It contains necessary information for tracking the status of an operation. For example, a company administrator can submit a data policy operation request to export an employee's company data, and then later track that request."
 localization_priority: Normal
-author: "lleonard-msft"
+author: "dkershaw10"
 ms.prod: "microsoft-identity-platform"
+doc_type: resourcePageType
 ---
 
 # dataPolicyOperation resource type
+
+Namespace: microsoft.graph
 
 Represents a submitted data policy operation. It contains necessary information for tracking the status of an operation. For example, a company administrator can submit a data policy operation request to export an employee's company data, and then later track that request.
 

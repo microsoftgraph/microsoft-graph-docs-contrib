@@ -6,9 +6,15 @@ documentationcenter: ''
 author: SusanneWindfeldPedersen
 localization_priority: Normal
 ms.prod: "dynamics-365-business-central"
+doc_type: apiPageType
 ---
 
 # Update items
+
+Namespace: microsoft.graph
+
+[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
+
 Update the properties of an item object for Dynamics 365 Business Central.
 
 ## Permissions
@@ -22,7 +28,7 @@ One of the following permissions is required to call this API. To learn more, in
 
 ## HTTP request
 ```
-PATCH /financials/companies('{id}')/items('{id}')
+PATCH /financials/companies/{id}/items/{id}
 ```
 
 ## Optional query parameters
@@ -46,7 +52,7 @@ If successful, this method returns a `200 OK` response code and an updated **ite
 
 Here is an example of the request.
 ```json
-PATCH https://graph.microsoft.com/beta/financials/companies('{id}')/items('{id}')
+PATCH https://graph.microsoft.com/beta/financials/companies/{id}/items/{id}
 Content-type: application/json
 
 {

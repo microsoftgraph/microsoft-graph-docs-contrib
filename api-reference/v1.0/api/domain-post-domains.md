@@ -1,12 +1,15 @@
 ---
 title: "Create domain"
 description: "Adds a domain to the tenant."
-author: "lleonard-msft"
+author: "adimitui"
 localization_priority: Normal
 ms.prod: "microsoft-identity-platform"
+doc_type: apiPageType
 ---
 
 # Create domain
+
+Namespace: microsoft.graph
 
 Adds a domain to the tenant.
 
