@@ -7,10 +7,17 @@ localization_priority: Priority
 
 # What's new in Microsoft Graph
 
-See highlights of what's new in Microsoft Graph, and how you can [share your ideas](#want-to-stay-in-the-loop). For a complete list of API updates, see the [March](changelog.md#march-2020) section of the API changelog. 
+See highlights of what's new in Microsoft Graph, and how you can [share your ideas](#want-to-stay-in-the-loop). For a complete list of API updates, see the [April](changelog.md#april-2020) and [March](changelog.md#march-2020) sections of the API changelog. 
 
 > [!IMPORTANT]
 > Features, including APIs and tools, in _preview_ status may change without notice, and some may never be promoted to generally available (GA) status. Do not use preview features in production apps.
+
+
+## April 2020: New in preview only
+
+### Identity and access
+To manage roles and assign access to resources in role-based access control (RBAC) providers such as Microsoft Intune, use [unifiedRoleAssignmentMultiple](/graph/api/resources/unifiedroleassignmentmultiple?view=graph-rest-beta). The **unifiedRoleAssignmentMultiple** resource supports defining a single role over an array of scopes, and assigning the role to multiple principals (such as users). 
+
 
 ## March 2020: New and generally available
 
@@ -39,7 +46,7 @@ Use Teams Service Administrator and Teams Communications Administrator as accept
 
 ### Sites
 - Let users [follow](/graph/api/site-follow?view=graph-rest-1.0) or [unfollow](/graph/api/site-unfollow?view=graph-rest-1.0) SharePoint sites.
-- Use the **subscriptions** navigation property to get [change notification subscriptions](/graph/api/resources/subscription?view=graph-rest-1.0) to a SharePoint [list](/graph/api/resources/list?view=graph-rest-1.0).
+- [Subscribe to change notifications](/graph/api/resources/subscription?view=graph-rest-1.0) for a SharePoint [list](/graph/api/resources/list?view=graph-rest-1.0).
 
 ## March 2020: New in preview only
 
