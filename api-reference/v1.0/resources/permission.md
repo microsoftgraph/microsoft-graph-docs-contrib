@@ -59,7 +59,7 @@ Here is a JSON representation of the resource
 |:--------------|:------------------------------------------|:-----------------
 | id            | String                                    | The unique identifier of the permission among all permissions on the item. Read-only.
 | grantedTo     | [IdentitySet](identityset.md)             | For user type permissions, the details of the users & applications for this permission. Read-only.
-| grantedToIdentities | Collection([IdentitySet][]) | For link type permissions, the details of the users to whom permission was granted. Read-only.
+| grantedToIdentities | Collection([IdentitySet](identityset.md)) | For link type permissions, the details of the users to whom permission was granted. Read-only.
 | invitation    | [SharingInvitation][]                     | Details of any associated sharing invitation for this permission. Read-only.
 | inheritedFrom | [ItemReference](itemreference.md)         | Provides a reference to the ancestor of the current permission, if it is inherited from an ancestor. Read-only.
 | link          | [SharingLink][]                           | Provides the link details of the current permission, if it is a link type permissions. Read-only.
