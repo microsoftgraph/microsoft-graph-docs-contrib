@@ -91,23 +91,23 @@ HTTP/1.1 200 OK
 Content-type: application/json
 
 {
-  "id": "id-value",
-  "relyingPartyId": "relyingPartyId-value",
-  "serviceId": "serviceId-value",
-  "relyingPartyName": "relyingPartyName-value",
-  "successfulSignInCount": "successfulSignInCount-value",
-  "failedSignInCount": "failedSignInCount-value",
-  "totalSignInCount": "totalSignInCount-value",
-  "signInSuccessRate": "signInSuccessRate-value",
-  "uniqueUserCount": "uniqueUserCount-value",
-  "migrationStatus": "migrationStatus-value",
+  "id": "1fec2821-6c43-4919-9560-ce36c820faa5",
+  "relyingPartyId": "https://contosoorg-dev-ed.my.contoso.com",
+  "serviceId": "287ed092-c182-4748-99a9-9ef3b5a0a0f9",
+  "relyingPartyName": "contoso",
+  "successfulSignInCount": 90,
+  "failedSignInCount": 10,
+  "totalSignInCount": 100,
+  "signInSuccessRate":90,
+  "uniqueUserCount": 10,
+  "migrationStatus": "ready",
   "replyUrls": [
-      "replyUrls-value"
+      "https://contosoorg-dev-ed.my.contoso.com"
   ],
   "migrationValidationDetails": [
       {
-          "name": "name-value",
-          "value": "value-value"
+          "name": "AdditionalWSFedEndpointCheckResult",
+          "value": "{\"result\": 0, \"message\": \"No additional WS-Federation endpoints were found.\"}"
       }
   ]
 }
