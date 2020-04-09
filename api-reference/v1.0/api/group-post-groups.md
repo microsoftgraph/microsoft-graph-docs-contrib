@@ -174,7 +174,7 @@ Content-type: application/json
 
 ### Example 2: Create a group with owners and members
 
-The following example creates an Office 365 group with an owner and members specified.
+The following example creates an Office 365 group with an owner and members specified. Please note that a maximum of 20 relationships, such as owners and members, can be added in one shot as part of group creation. Subsequent members can be added through Add member or Add member API, or using JASON batch.
 
 #### Request
 
