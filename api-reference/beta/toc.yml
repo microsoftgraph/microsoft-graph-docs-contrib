@@ -1216,6 +1216,8 @@
             href: api/intune-apps-androidmanagedstoreapp-delete.md
           - name: Update
             href: api/intune-apps-androidmanagedstoreapp-update.md
+        - name: Android managed store app assignment settings
+          href: resources/intune-apps-androidmanagedstoreappassignmentsettings.md
         - name: Android managed store app configuration
           href: resources/intune-apps-androidmanagedstoreappconfiguration.md
           items:
@@ -1246,6 +1248,8 @@
           href: resources/intune-androidforwork-androidmanagedstoreappconfigurationschemaitem.md
         - name: Android managed store app configuration schema item data type
           href: resources/intune-androidforwork-androidmanagedstoreappconfigurationschemaitemdatatype.md
+        - name: Android managed store app track
+          href: resources/intune-apps-androidmanagedstoreapptrack.md
         - name: Android managed store web app
           href: resources/intune-apps-androidmanagedstorewebapp.md
           items:
@@ -1265,6 +1269,8 @@
           href: resources/intune-apps-androidpermissionaction.md
         - name: Android permission action type
           href: resources/intune-apps-androidpermissionactiontype.md
+        - name: Android profile applicability
+          href: resources/intune-apps-androidprofileapplicability.md
         - name: Android store app
           href: resources/intune-apps-androidstoreapp.md
           items:
@@ -2642,6 +2648,19 @@
             href: api/intune-deviceconfig-androiddeviceownercompliancepolicy-update.md
         - name: Android device owner default app permission policy type
           href: resources/intune-deviceconfig-androiddeviceownerdefaultapppermissionpolicytype.md
+        - name: Android device owner derived credential authentication configuration
+          href: resources/intune-deviceconfig-androiddeviceownerderivedcredentialauthenticationconfiguration.md
+          items:
+          - name: List
+            href: api/intune-deviceconfig-androiddeviceownerderivedcredentialauthenticationconfiguration-list.md
+          - name: Get
+            href: api/intune-deviceconfig-androiddeviceownerderivedcredentialauthenticationconfiguration-get.md
+          - name: Create
+            href: api/intune-deviceconfig-androiddeviceownerderivedcredentialauthenticationconfiguration-create.md
+          - name: Delete
+            href: api/intune-deviceconfig-androiddeviceownerderivedcredentialauthenticationconfiguration-delete.md
+          - name: Update
+            href: api/intune-deviceconfig-androiddeviceownerderivedcredentialauthenticationconfiguration-update.md
         - name: Android device owner enterprise Wi-Fi configuration
           href: resources/intune-deviceconfig-androiddeviceownerenterprisewificonfiguration.md
           items:
@@ -3244,6 +3263,8 @@
           href: resources/intune-deviceconfig-applisttype.md
         - name: App locker application control type
           href: resources/intune-deviceconfig-applockerapplicationcontroltype.md
+        - name: Apple app list item
+          href: resources/intune-deviceconfig-appleapplistitem.md
         - name: Apple device features configuration base
           href: resources/intune-deviceconfig-appledevicefeaturesconfigurationbase.md
           items:
@@ -3251,6 +3272,13 @@
             href: api/intune-deviceconfig-appledevicefeaturesconfigurationbase-list.md
           - name: Get
             href: api/intune-deviceconfig-appledevicefeaturesconfigurationbase-get.md
+        - name: Apple expedited checkin configuration base
+          href: resources/intune-deviceconfig-appleexpeditedcheckinconfigurationbase.md
+          items:
+          - name: List
+            href: api/intune-deviceconfig-appleexpeditedcheckinconfigurationbase-list.md
+          - name: Get
+            href: api/intune-deviceconfig-appleexpeditedcheckinconfigurationbase-get.md
         - name: Apple subject name format
           href: resources/intune-deviceconfig-applesubjectnameformat.md
         - name: Apple VPN always on configuration
@@ -3779,6 +3807,23 @@
             href: api/intune-grouppolicy-grouppolicydefinitionvalue-delete.md
           - name: Update
             href: api/intune-grouppolicy-grouppolicydefinitionvalue-update.md
+        - name: Group policy operation
+          href: resources/intune-grouppolicy-grouppolicyoperation.md
+          items:
+          - name: List
+            href: api/intune-grouppolicy-grouppolicyoperation-list.md
+          - name: Get
+            href: api/intune-grouppolicy-grouppolicyoperation-get.md
+          - name: Create
+            href: api/intune-grouppolicy-grouppolicyoperation-create.md
+          - name: Delete
+            href: api/intune-grouppolicy-grouppolicyoperation-delete.md
+          - name: Update
+            href: api/intune-grouppolicy-grouppolicyoperation-update.md
+        - name: Group policy operation status
+          href: resources/intune-grouppolicy-grouppolicyoperationstatus.md
+        - name: Group policy operation type
+          href: resources/intune-grouppolicy-grouppolicyoperationtype.md
         - name: Group policy presentation
           href: resources/intune-grouppolicy-grouppolicypresentation.md
           items:
@@ -4024,6 +4069,33 @@
             href: api/intune-grouppolicy-grouppolicyuploadeddefinition-delete.md
           - name: Update
             href: api/intune-grouppolicy-grouppolicyuploadeddefinition-update.md
+        - name: Group policy uploaded definition file
+          href: resources/intune-grouppolicy-grouppolicyuploadeddefinitionfile.md
+          items:
+          - name: List
+            href: api/intune-grouppolicy-grouppolicyuploadeddefinitionfile-list.md
+          - name: Get
+            href: api/intune-grouppolicy-grouppolicyuploadeddefinitionfile-get.md
+          - name: Create
+            href: api/intune-grouppolicy-grouppolicyuploadeddefinitionfile-create.md
+          - name: Delete
+            href: api/intune-grouppolicy-grouppolicyuploadeddefinitionfile-delete.md
+          - name: Update
+            href: api/intune-grouppolicy-grouppolicyuploadeddefinitionfile-update.md
+          - name: addLanguageFiles action
+            href: api/intune-grouppolicy-grouppolicyuploadeddefinitionfile-addlanguagefiles.md
+          - name: removeLanguageFiles action
+            href: api/intune-grouppolicy-grouppolicyuploadeddefinitionfile-removelanguagefiles.md
+          - name: updateLanguageFiles action
+            href: api/intune-grouppolicy-grouppolicyuploadeddefinitionfile-updatelanguagefiles.md
+          - name: uploadNewVersion action
+            href: api/intune-grouppolicy-grouppolicyuploadeddefinitionfile-uploadnewversion.md
+          - name: remove action
+            href: api/intune-grouppolicy-grouppolicyuploadeddefinitionfile-remove.md
+        - name: Group policy uploaded definition file status
+          href: resources/intune-grouppolicy-grouppolicyuploadeddefinitionfilestatus.md
+        - name: Group policy uploaded language file
+          href: resources/intune-grouppolicy-grouppolicyuploadedlanguagefile.md
         - name: Group policy uploaded presentation
           href: resources/intune-grouppolicy-grouppolicyuploadedpresentation.md
           items:
@@ -4173,6 +4245,19 @@
             href: api/intune-deviceconfig-iosenterprisewificonfiguration-delete.md
           - name: Update
             href: api/intune-deviceconfig-iosenterprisewificonfiguration-update.md
+        - name: iOS expedited checkin configuration
+          href: resources/intune-deviceconfig-iosexpeditedcheckinconfiguration.md
+          items:
+          - name: List
+            href: api/intune-deviceconfig-iosexpeditedcheckinconfiguration-list.md
+          - name: Get
+            href: api/intune-deviceconfig-iosexpeditedcheckinconfiguration-get.md
+          - name: Create
+            href: api/intune-deviceconfig-iosexpeditedcheckinconfiguration-create.md
+          - name: Delete
+            href: api/intune-deviceconfig-iosexpeditedcheckinconfiguration-delete.md
+          - name: Update
+            href: api/intune-deviceconfig-iosexpeditedcheckinconfiguration-update.md
         - name: iOS general device configuration
           href: resources/intune-deviceconfig-iosgeneraldeviceconfiguration.md
           items:
@@ -5825,6 +5910,10 @@
             href: api/intune-devices-devicehealthscriptdevicestate-delete.md
           - name: Update
             href: api/intune-devices-devicehealthscriptdevicestate-update.md
+        - name: Device health script remediation history
+          href: resources/intune-devices-devicehealthscriptremediationhistory.md
+        - name: Device health script remediation history data
+          href: resources/intune-devices-devicehealthscriptremediationhistorydata.md
         - name: Device health script remediation summary
           href: resources/intune-devices-devicehealthscriptremediationsummary.md
         - name: Device health script run summary
@@ -6139,6 +6228,8 @@
             href: api/intune-devices-devicemanagementscriptuserstate-delete.md
           - name: Update
             href: api/intune-devices-devicemanagementscriptuserstate-update.md
+        - name: Device management setting abstract implementation constraint
+          href: resources/intune-deviceintent-devicemanagementsettingabstractimplementationconstraint.md
         - name: Device management setting app constraint
           href: resources/intune-deviceintent-devicemanagementsettingappconstraint.md
         - name: Device management setting boolean constraint
@@ -6599,25 +6690,6 @@
             href: api/intune-devices-remoteactionaudit-delete.md
           - name: Update
             href: api/intune-devices-remoteactionaudit-update.md
-        - name: Remote assistance on-boarding status
-          href: resources/intune-remoteassistance-remoteassistanceonboardingstatus.md
-        - name: Remote assistance partner
-          href: resources/intune-remoteassistance-remoteassistancepartner.md
-          items:
-          - name: List
-            href: api/intune-remoteassistance-remoteassistancepartner-list.md
-          - name: Get
-            href: api/intune-remoteassistance-remoteassistancepartner-get.md
-          - name: Create
-            href: api/intune-remoteassistance-remoteassistancepartner-create.md
-          - name: Delete
-            href: api/intune-remoteassistance-remoteassistancepartner-delete.md
-          - name: Update
-            href: api/intune-remoteassistance-remoteassistancepartner-update.md
-          - name: beginOnboarding action
-            href: api/intune-remoteassistance-remoteassistancepartner-beginonboarding.md
-          - name: disconnect action
-            href: api/intune-remoteassistance-remoteassistancepartner-disconnect.md
         - name: Remote lock action result
           href: resources/intune-devices-remotelockactionresult.md
         - name: Reset passcode action result
@@ -6799,19 +6871,19 @@
             href: api/intune-devices-userexperienceanalyticsregressionsummary-update.md
           - name: summarizeDeviceRegressionPerformance
             href: api/intune-devices-userexperienceanalyticsregressionsummary-summarizedeviceregressionperformance.md
-        - name: User experience analytics startup score history
-          href: resources/intune-devices-userexperienceanalyticsstartupscorehistory.md
+        - name: User experience analytics score history
+          href: resources/intune-devices-userexperienceanalyticsscorehistory.md
           items:
           - name: List
-            href: api/intune-devices-userexperienceanalyticsstartupscorehistory-list.md
+            href: api/intune-devices-userexperienceanalyticsscorehistory-list.md
           - name: Get
-            href: api/intune-devices-userexperienceanalyticsstartupscorehistory-get.md
+            href: api/intune-devices-userexperienceanalyticsscorehistory-get.md
           - name: Create
-            href: api/intune-devices-userexperienceanalyticsstartupscorehistory-create.md
+            href: api/intune-devices-userexperienceanalyticsscorehistory-create.md
           - name: Delete
-            href: api/intune-devices-userexperienceanalyticsstartupscorehistory-delete.md
+            href: api/intune-devices-userexperienceanalyticsscorehistory-delete.md
           - name: Update
-            href: api/intune-devices-userexperienceanalyticsstartupscorehistory-update.md
+            href: api/intune-devices-userexperienceanalyticsscorehistory-update.md
         - name: User experience analytics summarized by
           href: resources/intune-devices-userexperienceanalyticssummarizedby.md
         - name: Variable management condition expression
@@ -7482,6 +7554,13 @@
             href: api/intune-rbac-deviceandappmanagementroledefinition-delete.md
           - name: Update
             href: api/intune-rbac-deviceandappmanagementroledefinition-update.md
+        - name: Rbac application multiple
+          href: resources/intune-rbac-rbacapplicationmultiple.md
+          items:
+          - name: Get
+            href: api/intune-rbac-rbacapplicationmultiple-get.md
+          - name: Update
+            href: api/intune-rbac-rbacapplicationmultiple-update.md
         - name: Resource action
           href: resources/intune-rbac-resourceaction.md
         - name: Resource operation
@@ -7525,6 +7604,13 @@
             href: api/intune-rbac-roledefinition-delete.md
           - name: Update
             href: api/intune-rbac-roledefinition-update.md
+        - name: Role management
+          href: resources/intune-rbac-rolemanagement.md
+          items:
+          - name: Get
+            href: api/intune-rbac-rolemanagement-get.md
+          - name: Update
+            href: api/intune-rbac-rolemanagement-update.md
         - name: Role permission
           href: resources/intune-rbac-rolepermission.md
         - name: Role scope tag
@@ -7624,7 +7710,7 @@
             href: api/intune-shared-devicecompliancepolicy-get.md
           - name: assign action
             href: api/intune-shared-devicecompliancepolicy-assign.md
-          - name: refreshDeviceComplianceReportSummarization action
+          - name: |refreshDeviceComplianceReportSummarization action
             href: api/intune-shared-devicecompliancepolicy-refreshdevicecompliancereportsummarization.md
           - name: hasPayloadLinks action
             href: api/intune-shared-devicecompliancepolicy-haspayloadlinks.md
@@ -7680,6 +7766,8 @@
             href: api/intune-shared-devicemanagementderivedcredentialsettings-update.md
           - name: List
             href: api/intune-shared-devicemanagementderivedcredentialsettings-list.md
+          - name: deviceManagementDerivedCredentialSettings](../resources/intune-shared-devicemanagementderivedcredentialsettings.md)|Create
+            href: api/intune-shared-devicemanagementderivedcredentialsettings.md
           - name: Delete
             href: api/intune-shared-devicemanagementderivedcredentialsettings-delete.md
         - name: Device management script

@@ -1,19 +1,21 @@
 ---
-title: "List userExperienceAnalyticsStartupScoreHistories"
-description: "List properties and relationships of the userExperienceAnalyticsStartupScoreHistory objects."
-author: "davidmu1"
+title: "Get userExperienceAnalyticsScoreHistory"
+description: "Read properties and relationships of the userExperienceAnalyticsScoreHistory object."
+author: "dougeby"
 localization_priority: Normal
 ms.prod: "Intune"
 doc_type: apiPageType
 ---
 
-# List userExperienceAnalyticsStartupScoreHistories
+# Get userExperienceAnalyticsScoreHistory
+
+Namespace: microsoft.graph
 
 > **Important:** Microsoft Graph APIs under the /beta version are subject to change; production use is not supported.
 
 > **Note:** The Microsoft Graph API for Intune requires an [active Intune license](https://go.microsoft.com/fwlink/?linkid=839381) for the tenant.
 
-List properties and relationships of the [userExperienceAnalyticsStartupScoreHistory](../resources/intune-devices-userexperienceanalyticsstartupscorehistory.md) objects.
+Read properties and relationships of the [userExperienceAnalyticsScoreHistory](../resources/intune-devices-userexperienceanalyticsscorehistory.md) object.
 
 ## Prerequisites
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
@@ -30,8 +32,11 @@ One of the following permissions is required to call this API. To learn more, in
 }
 -->
 ``` http
-GET /deviceManagement/userExperienceAnalyticsStartupScoreHistory
+GET /deviceManagement/userExperienceAnalyticsScoreHistory/{userExperienceAnalyticsScoreHistoryId}
 ```
+
+## Optional query parameters
+This method supports the [OData Query Parameters](/graph/query-parameters) to help customize the response.
 
 ## Request headers
 |Header|Value|
@@ -43,14 +48,14 @@ GET /deviceManagement/userExperienceAnalyticsStartupScoreHistory
 Do not supply a request body for this method.
 
 ## Response
-If successful, this method returns a `200 OK` response code and a collection of [userExperienceAnalyticsStartupScoreHistory](../resources/intune-devices-userexperienceanalyticsstartupscorehistory.md) objects in the response body.
+If successful, this method returns a `200 OK` response code and [userExperienceAnalyticsScoreHistory](../resources/intune-devices-userexperienceanalyticsscorehistory.md) object in the response body.
 
 ## Example
 
 ### Request
 Here is an example of the request.
 ``` http
-GET https://graph.microsoft.com/beta/deviceManagement/userExperienceAnalyticsStartupScoreHistory
+GET https://graph.microsoft.com/beta/deviceManagement/userExperienceAnalyticsScoreHistory/{userExperienceAnalyticsScoreHistoryId}
 ```
 
 ### Response
@@ -58,23 +63,20 @@ Here is an example of the response. Note: The response object shown here may be 
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 360
+Content-Length: 325
 
 {
-  "value": [
-    {
-      "@odata.type": "#microsoft.graph.userExperienceAnalyticsStartupScoreHistory",
-      "id": "52efee0b-ee0b-52ef-0bee-ef520beeef52",
-      "startupDateTime": "2017-01-01T00:03:13.1084278-08:00",
-      "startupScore": 12,
-      "coreBootScore": 13,
-      "coreSigninScore": 15,
-      "recommendedSoftwareScore": 8
-    }
-  ]
+  "value": {
+    "@odata.type": "#microsoft.graph.userExperienceAnalyticsScoreHistory",
+    "id": "d15e3ba8-3ba8-d15e-a83b-5ed1a83b5ed1",
+    "startupDateTime": "2017-01-01T00:03:13.1084278-08:00",
+    "startupScore": 12,
+    "coreBootScore": 13,
+    "coreSigninScore": 15,
+    "recommendedSoftwareScore": 8
+  }
 }
 ```
-
 
 
 

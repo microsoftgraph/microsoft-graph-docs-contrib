@@ -1,28 +1,30 @@
 ---
-title: "Get remoteAssistancePartner"
-description: "Read properties and relationships of the remoteAssistancePartner object."
-author: "davidmu1"
+title: "Get roleManagement"
+description: "Read properties and relationships of the roleManagement object."
+author: "dougeby"
 localization_priority: Normal
 ms.prod: "Intune"
 doc_type: apiPageType
 ---
 
-# Get remoteAssistancePartner
+# Get roleManagement
+
+Namespace: microsoft.graph
 
 > **Important:** Microsoft Graph APIs under the /beta version are subject to change; production use is not supported.
 
 > **Note:** The Microsoft Graph API for Intune requires an [active Intune license](https://go.microsoft.com/fwlink/?linkid=839381) for the tenant.
 
-Read properties and relationships of the [remoteAssistancePartner](../resources/intune-remoteassistance-remoteassistancepartner.md) object.
+Read properties and relationships of the [roleManagement](../resources/intune-rbac-rolemanagement.md) object.
 
 ## Prerequisites
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
 
 |Permission type|Permissions (from most to least privileged)|
 |:---|:---|
-|Delegated (work or school account)|DeviceManagementServiceConfig.ReadWrite.All, DeviceManagementServiceConfig.Read.All|
+|Delegated (work or school account)|DeviceManagementRBAC.ReadWrite.All, DeviceManagementRBAC.Read.All|
 |Delegated (personal Microsoft account)|Not supported.|
-|Application|DeviceManagementServiceConfig.ReadWrite.All, DeviceManagementServiceConfig.Read.All|
+|Application|DeviceManagementRBAC.ReadWrite.All, DeviceManagementRBAC.Read.All|
 
 ## HTTP Request
 <!-- {
@@ -30,7 +32,7 @@ One of the following permissions is required to call this API. To learn more, in
 }
 -->
 ``` http
-GET /deviceManagement/remoteAssistancePartners/{remoteAssistancePartnerId}
+GET /roleManagement
 ```
 
 ## Optional query parameters
@@ -46,14 +48,14 @@ This method supports the [OData Query Parameters](/graph/query-parameters) to he
 Do not supply a request body for this method.
 
 ## Response
-If successful, this method returns a `200 OK` response code and [remoteAssistancePartner](../resources/intune-remoteassistance-remoteassistancepartner.md) object in the response body.
+If successful, this method returns a `200 OK` response code and [roleManagement](../resources/intune-rbac-rolemanagement.md) object in the response body.
 
 ## Example
 
 ### Request
 Here is an example of the request.
 ``` http
-GET https://graph.microsoft.com/beta/deviceManagement/remoteAssistancePartners/{remoteAssistancePartnerId}
+GET https://graph.microsoft.com/beta/roleManagement
 ```
 
 ### Response
@@ -61,20 +63,15 @@ Here is an example of the response. Note: The response object shown here may be 
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 346
+Content-Length: 128
 
 {
   "value": {
-    "@odata.type": "#microsoft.graph.remoteAssistancePartner",
-    "id": "7443c8b9-c8b9-7443-b9c8-4374b9c84374",
-    "displayName": "Display Name value",
-    "onboardingUrl": "https://example.com/onboardingUrl/",
-    "onboardingStatus": "onboarding",
-    "lastConnectionDateTime": "2016-12-31T23:58:36.6670033-08:00"
+    "@odata.type": "#microsoft.graph.roleManagement",
+    "id": "6fb74c1e-4c1e-6fb7-1e4c-b76f1e4cb76f"
   }
 }
 ```
-
 
 
 

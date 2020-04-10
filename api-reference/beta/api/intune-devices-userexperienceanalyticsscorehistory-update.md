@@ -1,19 +1,21 @@
 ---
-title: "Create userExperienceAnalyticsStartupScoreHistory"
-description: "Create a new userExperienceAnalyticsStartupScoreHistory object."
-author: "davidmu1"
+title: "Update userExperienceAnalyticsScoreHistory"
+description: "Update the properties of a userExperienceAnalyticsScoreHistory object."
+author: "dougeby"
 localization_priority: Normal
 ms.prod: "Intune"
 doc_type: apiPageType
 ---
 
-# Create userExperienceAnalyticsStartupScoreHistory
+# Update userExperienceAnalyticsScoreHistory
+
+Namespace: microsoft.graph
 
 > **Important:** Microsoft Graph APIs under the /beta version are subject to change; production use is not supported.
 
 > **Note:** The Microsoft Graph API for Intune requires an [active Intune license](https://go.microsoft.com/fwlink/?linkid=839381) for the tenant.
 
-Create a new [userExperienceAnalyticsStartupScoreHistory](../resources/intune-devices-userexperienceanalyticsstartupscorehistory.md) object.
+Update the properties of a [userExperienceAnalyticsScoreHistory](../resources/intune-devices-userexperienceanalyticsscorehistory.md) object.
 
 ## Prerequisites
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
@@ -30,7 +32,7 @@ One of the following permissions is required to call this API. To learn more, in
 }
 -->
 ``` http
-POST /deviceManagement/userExperienceAnalyticsStartupScoreHistory
+PATCH /deviceManagement/userExperienceAnalyticsScoreHistory/{userExperienceAnalyticsScoreHistoryId}
 ```
 
 ## Request headers
@@ -40,9 +42,9 @@ POST /deviceManagement/userExperienceAnalyticsStartupScoreHistory
 |Accept|application/json|
 
 ## Request body
-In the request body, supply a JSON representation for the userExperienceAnalyticsStartupScoreHistory object.
+In the request body, supply a JSON representation for the [userExperienceAnalyticsScoreHistory](../resources/intune-devices-userexperienceanalyticsscorehistory.md) object.
 
-The following table shows the properties that are required when you create the userExperienceAnalyticsStartupScoreHistory.
+The following table shows the properties that are required when you create the [userExperienceAnalyticsScoreHistory](../resources/intune-devices-userexperienceanalyticsscorehistory.md).
 
 |Property|Type|Description|
 |:---|:---|:---|
@@ -56,19 +58,19 @@ The following table shows the properties that are required when you create the u
 
 
 ## Response
-If successful, this method returns a `201 Created` response code and a [userExperienceAnalyticsStartupScoreHistory](../resources/intune-devices-userexperienceanalyticsstartupscorehistory.md) object in the response body.
+If successful, this method returns a `200 OK` response code and an updated [userExperienceAnalyticsScoreHistory](../resources/intune-devices-userexperienceanalyticsscorehistory.md) object in the response body.
 
 ## Example
 
 ### Request
 Here is an example of the request.
 ``` http
-POST https://graph.microsoft.com/beta/deviceManagement/userExperienceAnalyticsStartupScoreHistory
+PATCH https://graph.microsoft.com/beta/deviceManagement/userExperienceAnalyticsScoreHistory/{userExperienceAnalyticsScoreHistoryId}
 Content-type: application/json
-Content-length: 250
+Content-length: 243
 
 {
-  "@odata.type": "#microsoft.graph.userExperienceAnalyticsStartupScoreHistory",
+  "@odata.type": "#microsoft.graph.userExperienceAnalyticsScoreHistory",
   "startupDateTime": "2017-01-01T00:03:13.1084278-08:00",
   "startupScore": 12,
   "coreBootScore": 13,
@@ -80,13 +82,13 @@ Content-length: 250
 ### Response
 Here is an example of the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.
 ``` http
-HTTP/1.1 201 Created
+HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 299
+Content-Length: 292
 
 {
-  "@odata.type": "#microsoft.graph.userExperienceAnalyticsStartupScoreHistory",
-  "id": "52efee0b-ee0b-52ef-0bee-ef520beeef52",
+  "@odata.type": "#microsoft.graph.userExperienceAnalyticsScoreHistory",
+  "id": "d15e3ba8-3ba8-d15e-a83b-5ed1a83b5ed1",
   "startupDateTime": "2017-01-01T00:03:13.1084278-08:00",
   "startupScore": 12,
   "coreBootScore": 13,
@@ -94,7 +96,6 @@ Content-Length: 299
   "recommendedSoftwareScore": 8
 }
 ```
-
 
 
 
