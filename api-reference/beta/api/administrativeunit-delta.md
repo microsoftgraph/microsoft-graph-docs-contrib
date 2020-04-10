@@ -82,13 +82,12 @@ For details and an example, see [Using delta query](/graph/delta-query-overview)
 ## Example
 ### Request
 
-# [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "administrativeunit_delta"
 }-->
 ```msgraph-interactive
-GET https://graph.microsoft.com/beta/administrativeunit/delta
+GET https://graph.microsoft.com/beta/administrativeunits/delta
 ```
 
 ### Response
