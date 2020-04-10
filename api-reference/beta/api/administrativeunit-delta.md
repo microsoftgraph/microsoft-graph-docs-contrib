@@ -1,13 +1,13 @@
 ---
-title: "administrativeunit: delta"
-description: "Get newly created, updated, or deleted Administrative Units without having to perform a full read of the entire resource collection. See Using Delta Query for details."
+title: "administrativeUnit: delta"
+description: "Get newly created, updated, or deleted administrative units without having to perform a full read of the entire resource collection."
 localization_priority: Normal
 author: "anandyadavMSFT"
 ms.prod: "microsoft-identity-platform"
 doc_type: apiPageType
 ---
 
-# administrativeunit: delta
+# administrativeUnit: delta
 
 Namespace: microsoft.graph
 
