@@ -88,7 +88,7 @@ For details and an example, see [Using delta query](/graph/delta-query-overview)
   "name": "administrativeunit_delta"
 }-->
 ```msgraph-interactive
-GET https://graph.microsoft.com/beta/administrativeunits/delta
+GET https://graph.microsoft.com/beta/administrativeunit/delta
 ```
 
 ### Response
