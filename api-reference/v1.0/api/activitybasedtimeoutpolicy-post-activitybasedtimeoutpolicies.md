@@ -54,7 +54,6 @@ If successful, this method returns a `201 Created` response code and a new [acti
 
 The following is an example of the request.
 
-# [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "create_activitybasedtimeoutpolicy_from_activitybasedtimeoutpolicies"
