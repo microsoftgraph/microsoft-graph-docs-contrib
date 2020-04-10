@@ -7,7 +7,9 @@ localization_priority: Priority
 
 # Changelog for Microsoft Graph
 
-This changelog covers what's changed in the Microsoft Graph API, including the v1.0 and beta endpoint Microsoft Graph APIs.
+This changelog covers specific API-level changes in Microsoft Graph v1.0 and beta.
+
+For a summary of the value of these API changes, as well as recent tools, components, guidance, and tutorial additions, see [What's new in Microsoft Graph](whats-new-overview.md).
 
 For details about known issues with Microsoft Graph APIs, see [Known issues](known-issues.md).
 
