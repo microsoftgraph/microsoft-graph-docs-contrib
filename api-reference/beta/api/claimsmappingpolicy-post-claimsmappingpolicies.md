@@ -2,7 +2,7 @@
 title: "Create claimsMappingPolicy"
 description: "Create a new claimsMappingPolicy."
 localization_priority: Normal
-author: "davidmu1"
+author: "dkershaw10"
 ms.prod: "microsoft-identity-platform"
 doc_type: "apiPageType"
 ---

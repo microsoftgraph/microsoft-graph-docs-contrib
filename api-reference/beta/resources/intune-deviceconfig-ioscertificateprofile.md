@@ -1,15 +1,13 @@
 ---
 title: "iosCertificateProfile resource type"
 description: "Device Configuration."
-author: "rolyon"
+author: "davidmu1"
 localization_priority: Normal
 ms.prod: "Intune"
 doc_type: resourcePageType
 ---
 
 # iosCertificateProfile resource type
-
-Namespace: microsoft.graph
 
 > **Important:** Microsoft Graph APIs under the /beta version are subject to change; production use is not supported.
 

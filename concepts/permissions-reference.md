@@ -699,6 +699,8 @@ For application permissions, there are some limitations for the APIs that are su
 
 In some cases, an app may need [Directory permissions](#directory-permissions) to read some group properties like `member` and `memberOf`. For example, if a group has a one or more [servicePrincipals](/graph/api/resources/serviceprincipal?view=graph-rest-beta) as members, the app will need effective permissions to read service principals through being granted one of the _Directory.\*_ permissions, otherwise Microsoft Graph will return an error. (In the case of delegated permissions, the signed-in user will also need sufficient privileges in the organization to read service principals.) The same guidance applies for the `memberOf` property, which can return [administrativeUnits](/graph/api/resources/administrativeunit?view=graph-rest-beta).
 
+To set an Office 365 group's **preferredDataLocation** attribute, an app needs Directory permissions. When users in a multi-geo environment create an Office 365 group, the **preferredDataLocation** value for the group is automatically set to that of the user. For more information about groups' preferred data location, see [Create an Office 365 group with a specific PDL](https://docs.microsoft.com/office365/enterprise/multi-geo-add-group-with-pdl).
+
 Group permissions are used to control access to [Microsoft Teams](/graph/api/resources/teams-api-overview) resources and APIs. Personal Microsoft accounts are not supported.
 
 Group permissions are also used to control access to [Microsoft Planner](/graph/api/resources/planner-overview) resources and APIs. Only delegated permissions are supported for Microsoft Planner APIs; application permissions are not supported. Personal Microsoft accounts are not supported.
@@ -1254,7 +1256,7 @@ The following usages are valid for both delegated and application permissions:
 * _Policy.Read.All_: Read your organization's trust framework policies (`GET /beta/trustFramework/policies`)
 * _Policy.Read.All_: Read your organization's feature rollout policies (`GET /beta/directory/featureRolloutPolicies`)
 * _Policy.ReadWrite.ApplicationConfiguration: Read and write your organization's application configuration policies (`POST /beta/policies/tokenLifetimePolicies`)
-* _Policy.ReadWrite.ConditionalAccess_: Read and write your organization's conditional access policies (`POST /beta/conditionalAccess/policies`)
+* _Policy.ReadWrite.ConditionalAccess_: Read and write your organization's conditional access policies (`POST /beta/identity/conditionalAccess/policies`)
 * _Policy.ReadWrite.FeatureRollout_: Read and write your organization's feature rollout policies (`POST /beta/directory/featureRolloutPolicies`)
 * _Policy.ReadWrite.TrustFramework_: Read and write your organization's trust framework policies (`POST /beta/trustFramework/policies`)
 
@@ -1655,6 +1657,7 @@ Threat assessment permissions are valid only on work or school accounts.
 | _User.ReadWrite.All_ |     Read and write all users' full profiles | Allows the app to read and write the full set of profile properties, reports, and managers of other users in your organization, on behalf of the signed-in user. Also allows the app to create and delete users as well as reset user passwords on behalf of the signed-in user. | Yes | No |
 | _User.Invite.All_  |     Invite guest users to the organization | Allows the app to invite guest users to your organization, on behalf of the signed-in user. | Yes | No |
 | _User.Export.All_       |    Export users' data | Allows the app to export an organizational user's data, when performed by a Company Administrator.| Yes | No |
+| _User.ManageIdentities.All_       |    Manage user identities | Allows an application to read, update and delete identities that are associated with a user's account, that the signed-in user has access to. This controls which identities your users can sign-in with. | Yes | No |
 
 
 #### Application permissions
@@ -1665,6 +1668,7 @@ Threat assessment permissions are valid only on work or school accounts.
 | _User.ReadWrite.All_ |   Read and write all users' full profiles | Allows the app to read and write the full set of profile properties, group membership, reports and managers of other users in your organization, without a signed-in user.  Also allows the app to create and delete non-administrative users. Does not allow reset of user passwords. | Yes |
 | _User.Invite.All_  |     Invite guest users to the organization | Allows the app to invite guest users to your organization, without a signed-in user. | Yes |
 | _User.Export.All_       |    Export users' data | Allows the app to export organizational users' data, without a signed-in user.| Yes |
+| _User.ManageIdentities.All_       |    Manage all user identities | Allows an application to read, update and delete identities that are associated with a user's account, without a signed in user. This controls which identities users can sign-in with. |  Yes |
 
 ### Remarks
 
@@ -1714,6 +1718,8 @@ The _User.ReadBasic.All_ permission constrains app access to a limited set of pr
 
 To read the group memberships of a user (`memberOf`), the app must have either [_Group.Read.All_](#group-permissions) or [_Group.ReadWrite.All_](#group-permissions). However, if the user also has membership in a [directoryRole](/graph/api/resources/directoryrole?view=graph-rest-1.0) or an [administrativeUnit](/graph/api/resources/administrativeunit?view=graph-rest-beta), the app will need effective permissions to read those resources too, or Microsoft Graph will return an error. This means the app will also need [Directory permissions](#directory-permissions), and, for delegated permissions, the signed-in user will also need sufficient privileges in the organization to access directory roles and administrative units.
 
+With the _User.ManageIdentities.All_ delegated or application permission, it is possible to update the identities (`identities`) of a user. This includes federated (or social identities) or local identities with email or name-based sign-in names.
+
 ### Example usage
 
 #### Delegated
@@ -1722,7 +1728,6 @@ To read the group memberships of a user (`memberOf`), the app must have either [
 * _User.ReadWrite_: Update the photo of the signed-in user (`PUT /me/photo/$value`).
 * _User.ReadBasic.All_: Find all users whose name starts with "David" (`GET /users?$filter=startswith(displayName,'David')`).
 * _User.Read.All_: Read a user's manager (`GET /user/{id | userPrincipalName}/manager`).
-
 
 #### Application
 

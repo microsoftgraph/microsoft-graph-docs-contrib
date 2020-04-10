@@ -86,7 +86,6 @@ Content-Type: application/json
   "resource": "/teams/{id}/channels/{id}/messages",
   "includeResourceData": true,
   "encryptionCertificateId": "{custom ID}",
-  "encryptionCertificateThumbprint": "{thumbprint from the certificate}",
   "expirationDateTime": "2019-09-19T11:00:00.0000000Z",
   "clientState": "{secret client state}"
 }
@@ -346,6 +345,63 @@ public async Task<bool> ValidateToken(string token, string tenantId, IEnumerable
     {
 	Trace.TraceError($"{ex.Message}:{ex.StackTrace}");
 	return false;
+    }
+}
+```
+```java
+private boolean IsValidationTokenValid(String[] appIds, String tenantId, String serializedToken) {
+	try {
+	    JwkKeyResolver jwksResolver = new JwkKeyResolver();
+	    Jws<Claims> token = Jwts.parserBuilder()
+		.setSigningKeyResolver(jwksResolver)
+		.build()
+		.parseClaimsJws(serializedToken);
+	    Claims body = token.getBody();
+	    String audience = body.getAudience();
+	    boolean isAudienceValid = false;
+	    for(String appId : appIds) {
+		isAudienceValid = isAudienceValid || appId.equals(audience);
+	    }
+	    boolean isTenantValid = body.getIssuer().endsWith(tenantId + "/");
+	    return isAudienceValid  && isTenantValid; //nbf,exp and signature are already validated by library
+	} catch (Exception e) {
+	    LOGGER.error("could not validate token");
+	    LOGGER.error(e.getMessage());
+	    return false;
+	}
+}
+```
+For the Java sample to work, you will also need to implement the `JwkKeyResolver`.  
+```java
+package com.example.restservice;
+
+import com.auth0.jwk.JwkProvider;
+import com.auth0.jwk.UrlJwkProvider;
+import com.auth0.jwk.Jwk;
+import io.jsonwebtoken.Claims;
+import io.jsonwebtoken.JwsHeader;
+import io.jsonwebtoken.SigningKeyResolverAdapter;
+import java.security.Key;
+import java.net.URI;
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
+
+public class JwkKeyResolver extends SigningKeyResolverAdapter {
+    private JwkProvider keyStore;
+    private final Logger LOGGER = LoggerFactory.getLogger(this.getClass());
+    public JwkKeyResolver() throws java.net.URISyntaxException, java.net.MalformedURLException {
+        this.keyStore = new UrlJwkProvider((new URI("https://login.microsoftonline.com/common/discovery/keys").toURL()));
+    }
+    @Override
+    public Key resolveSigningKey(JwsHeader jwsHeader, Claims claims) {
+        try {
+            String keyId = jwsHeader.getKeyId();
+            Jwk pub = keyStore.get(keyId);
+            return pub.getPublicKey();
+        } catch (Exception e) {
+            LOGGER.error(e.getMessage());
+            return null;
+        }
     }
 }
 ```

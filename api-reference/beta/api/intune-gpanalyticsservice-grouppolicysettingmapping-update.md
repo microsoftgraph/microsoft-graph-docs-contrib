@@ -1,15 +1,13 @@
 ---
 title: "Update groupPolicySettingMapping"
 description: "Update the properties of a groupPolicySettingMapping object."
-author: "rolyon"
+author: "davidmu1"
 localization_priority: Normal
 ms.prod: "Intune"
 doc_type: apiPageType
 ---
 
 # Update groupPolicySettingMapping
-
-Namespace: microsoft.graph
 
 > **Important:** Microsoft Graph APIs under the /beta version are subject to change; production use is not supported.
 
@@ -67,6 +65,7 @@ The following table shows the properties that are required when you create the [
 |mdmSupportedState|[mdmSupportedState](../resources/intune-gpanalyticsservice-mdmsupportedstate.md)|Indicates if the setting is supported in Mdm or not. Possible values are: `unknown`, `supported`, `unsupported`, `deprecated`.|
 |settingScope|[groupPolicySettingScope](../resources/intune-gpanalyticsservice-grouppolicysettingscope.md)|The scope of the setting. Possible values are: `unknown`, `device`, `user`.|
 |intuneSettingUriList|String collection|The list of Intune Setting URIs this group policy setting maps to|
+|intuneSettingDefinitionId|String|The Intune Setting Definition Id|
 
 
 
@@ -80,7 +79,7 @@ Here is an example of the request.
 ``` http
 PATCH https://graph.microsoft.com/beta/deviceManagement/groupPolicyMigrationReports/{groupPolicyMigrationReportId}/groupPolicySettingMappings/{groupPolicySettingMappingId}
 Content-type: application/json
-Content-length: 887
+Content-length: 957
 
 {
   "@odata.type": "#microsoft.graph.groupPolicySettingMapping",
@@ -105,7 +104,8 @@ Content-length: 887
   "settingScope": "device",
   "intuneSettingUriList": [
     "Intune Setting Uri List value"
-  ]
+  ],
+  "intuneSettingDefinitionId": "Intune Setting Definition Id value"
 }
 ```
 
@@ -114,7 +114,7 @@ Here is an example of the response. Note: The response object shown here may be 
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 936
+Content-Length: 1006
 
 {
   "@odata.type": "#microsoft.graph.groupPolicySettingMapping",
@@ -140,10 +140,10 @@ Content-Length: 936
   "settingScope": "device",
   "intuneSettingUriList": [
     "Intune Setting Uri List value"
-  ]
+  ],
+  "intuneSettingDefinitionId": "Intune Setting Definition Id value"
 }
 ```
-
 
 
 
