@@ -1,17 +1,17 @@
 ---
 author: learafa
-description: "Check-in a checked out DriveItem resource, which makes the version of the document available to others."
+description: "Check in a checked out driveItem resource, which makes the version of the document available to others."
 ms.date: 04/09/2020
-title: Check in files
+title: driveItem: checkin
 localization_priority: Normal
 ms.prod: "sharepoint"
 doc_type: apiPageType
 ---
-# DriveItem: checkin
+# driveItem: checkin
 
 Namespace: microsoft.graph
 
-Check-in a checked out DriveItem resource, which makes the version of the document available to others.
+Check in a checked out **driveItem** resource, which makes the version of the document available to others.
 
 ## Permissions
 
@@ -42,12 +42,12 @@ In the request body, provide a JSON object with the following parameters.
 
 |   Name    | Value  |                                                Description                                                |
 | :-------- | :----- | :-------------------------------------------------------------------------------------------------------- |
-| checkInAs | string | Optional. The desired status of the document after the check-in operation is complete. Can be `published` or unspecified. |
+| checkInAs | string | Optional. The status of the document after the check-in operation is complete. Can be `published` or unspecified. |
 | comment   | string | A check-in comment that is associated with the version.                                                   |
 
 ## Response
 
-If successful, the API call returns a `204 No content`.
+If successful, the API call returns `204 No content`.
 
 ## Example
 
