@@ -38,7 +38,7 @@ PATCH /policies/tokenLifetimePolicies/{id}
 | Name       | Description|
 |:-----------|:-----------|
 | Authorization | Bearer {token}. Required. |
-| Content-type | application/json |
+| Content-type | application/json. Required. |
 
 ## Request body
 
@@ -61,7 +61,6 @@ If successful, this method returns a `204 No Content` response code. It does not
 
 The following is an example of the request.
 
-# [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "update_tokenlifetimepolicy"
