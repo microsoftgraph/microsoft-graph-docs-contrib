@@ -26,11 +26,12 @@ This topic provides descriptions of the declared properties and navigation prope
 
 | Method   | Return Type | Description |
 |:---------------|:--------|:----------|
-|[Create administrativeUnit](../api/administrativeunit-post-administrativeunits.md) | [administrativeUnit](administrativeunit.md) | Create a new administrative unit.|
-|[List administrativeUnits](../api/administrativeunit-list.md) | [administrativeUnit](administrativeunit.md) collection |List properties of all administrativeUnits.|
-|[Get administrativeUnit](../api/administrativeunit-get.md) | [administrativeUnit](administrativeunit.md) |Read properties and relationships of a specific administrativeUnit object.|
-|[Update adminstrativeUnit](../api/administrativeunit-update.md) | [administrativeUnit](administrativeunit.md)	|Update administrativeUnit object. |
-|[Delete adminstrativeUnit](../api/administrativeunit-delete.md) | None |Delete administrativeUnit object. |
+|[Create](../api/administrativeunit-post-administrativeunits.md) | [administrativeUnit](administrativeunit.md) | Create a new administrative unit.|
+|[List](../api/administrativeunit-list.md) | [administrativeUnit](administrativeunit.md) collection |List properties of all administrativeUnits.|
+|[Get](../api/administrativeunit-get.md) | [administrativeUnit](administrativeunit.md) |Read properties and relationships of a specific administrativeUnit object.|
+|[Update](../api/administrativeunit-update.md) | [administrativeUnit](administrativeunit.md)	|Update administrativeUnit object. |
+|[Delete](../api/administrativeunit-delete.md) | None |Delete administrativeUnit object. |
+|[Get delta](../api/administrativeunit-delta.md)|[administrativeUnit](administrativeunit.md)|Get newly created, updated, or deleted **administrativeUnits** without having to perform a full read of the entire resource collection.|
 |[Add a member](../api/administrativeunit-post-members.md) |[directoryObject](directoryobject.md)| Add a member (user or group).|
 |[List members](../api/administrativeunit-list-members.md) |[directoryObject](directoryobject.md) collection| Get the list of (user and group) members.|
 |[Get a member](../api/administrativeunit-get-members.md) |[directoryObject](directoryobject.md)| Get a specific member.|
