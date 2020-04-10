@@ -25,9 +25,9 @@ Inherits from [stsPolicy](stsPolicy.md).
 
 | Method       | Return Type | Description |
 |:-------------|:------------|:------------|
+| [List tokenIssuancePolicy](../api/tokenissuancepolicy-list.md) | [tokenIssuancePolicy](tokenissuancepolicy.md) | Read properties and relationships of tokenIssuancePolicy objects. |
 | [Create tokenIssuancePolicy](../api/tokenissuancepolicy-post-tokenissuancepolicy.md) | [tokenIssuancePolicy](tokenissuancepolicy.md) | Create a tokenIssuancePolicy object. |
 | [Get tokenIssuancePolicy](../api/tokenissuancepolicy-get.md) | [tokenIssuancePolicy](tokenissuancepolicy.md) | Read properties and relationships of a tokenIssuancePolicy object. |
-| [List tokenIssuancePolicy](../api/tokenissuancepolicy-list.md) | [tokenIssuancePolicy](tokenissuancepolicy.md) | Read properties and relationships of tokenIssuancePolicy objects. |
 | [Update tokenIssuancePolicy](../api/tokenissuancepolicy-update.md) | None | Update a tokenIssuancePolicy object. |
 | [Delete tokenIssuancePolicy](../api/tokenissuancepolicy-delete.md) | None | Delete a tokenIssuancePolicy object. |
 | [List appliesTo](../api/tokenissuancepolicy-list-appliesto.md) | [directoryObject](directoryobject.md) collection | Get the list of directoryObjects that this policy has been applied to. |
