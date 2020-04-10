@@ -21,9 +21,9 @@ Inherits from [stsPolicy](stsPolicy.md).
 
 | Method       | Return Type | Description |
 |:-------------|:------------|:------------|
+| [List homeRealmDiscoveryPolicies](../api/homerealmdiscoverypolicy-list.md) | [homeRealmDiscoveryPolicy](homerealmdiscoverypolicy.md) | Read properties and relationships of homeRealmDiscoveryPolicies objects. |
 | [Create homeRealmDiscoveryPolicy](../api/homerealmdiscoverypolicy-post-homerealmdiscoverypolicies.md) | [homeRealmDiscoveryPolicy](homerealmdiscoverypolicy.md) | Create a homeRealmDiscoveryPolicy object. |
 | [Get homeRealmDiscoveryPolicy](../api/homerealmdiscoverypolicy-get.md) | [homeRealmDiscoveryPolicy](homerealmdiscoverypolicy.md) | Read properties and relationships of a homeRealmDiscoveryPolicy object. |
-| [List homeRealmDiscoveryPolicies](../api/homerealmdiscoverypolicy-list.md) | [homeRealmDiscoveryPolicy](homerealmdiscoverypolicy.md) | Read properties and relationships of homeRealmDiscoveryPolicies objects. |
 | [Update homeRealmDiscoveryPolicy](../api/homerealmdiscoverypolicy-update.md) | None | Update a homeRealmDiscoveryPolicy object. |
 | [Delete homeRealmDiscoveryPolicy](../api/homerealmdiscoverypolicy-delete.md) | None | Delete a homeRealmDiscoveryPolicy object. |
 | [List appliesTo](../api/homerealmdiscoverypolicy-list-appliesto.md) | [directoryObject](directoryobject.md) collection | Get the list of directoryObjects that this policy has been applied to. |
