@@ -8661,9 +8661,10 @@
           - name: List provisioning
             href: api/provisioningobjectsummary-list.md
       - name: Authentication methods
-        href: resources/authenticationmethods-overview.md
         items: 
-        - name: Authentication methods
+        - name: Overview
+          href: resources/authenticationmethods-overview.md
+        - name: Authentication method
           href: resources/authenticationmethod.md
           items:
           - name: List
