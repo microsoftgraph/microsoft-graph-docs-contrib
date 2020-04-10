@@ -43,7 +43,7 @@ Do not supply a request body for this method.
 
 ## Response
 
-If successful, this method returns `204 No Content` response code.
+If successful, this method returns a `204 No Content` response code.
 
 ## Examples
 
@@ -51,7 +51,6 @@ If successful, this method returns `204 No Content` response code.
 
 The following is an example of the request.
 
-# [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "delete_tokenlifetimepolicy_from_application"
