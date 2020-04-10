@@ -1,6 +1,6 @@
 ---
 title: "deviceManagement resource type"
-description: "The deviceManagement resource represents a container whose contents vary according to workflow, including:  "
+description: "The deviceManagement resource represents a container whose contents vary according to workflow."
 localization_priority: Normal
 author: "dougeby"
 ms.prod: "intune"
