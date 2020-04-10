@@ -23,9 +23,9 @@ Inherits from [stsPolicy](stsPolicy.md).
 
 | Method       | Return Type | Description |
 |:-------------|:------------|:------------|
+| [List tokenLifetimePolicies](../api/tokenlifetimepolicy-list.md) | [tokenLifetimePolicy](tokenlifetimepolicy.md) | Read properties and relationships of tokenLifetimePolicies objects. |
 | [Create tokenLifetimePolicy](../api/tokenlifetimepolicy-post-tokenlifetimepolicies.md) | [tokenLifetimePolicy](tokenlifetimepolicy.md) | Create a tokenLifetimePolicy object. |
 | [Get tokenLifetimePolicy](../api/tokenlifetimepolicy-get.md) | [tokenLifetimePolicy](tokenlifetimepolicy.md) | Read properties and relationships of a tokenLifetimePolicy object. |
-| [List tokenLifetimePolicies](../api/tokenlifetimepolicy-list.md) | [tokenLifetimePolicy](tokenlifetimepolicy.md) | Read properties and relationships of tokenLifetimePolicies objects. |
 | [Update tokenLifetimePolicy](../api/tokenlifetimepolicy-update.md) | None | Update a tokenLifetimePolicy object. |
 | [Delete tokenLifetimePolicy](../api/tokenlifetimepolicy-delete.md) | None | Delete a tokenLifetimePolicy object. |
 | [List appliesTo](../api/tokenlifetimepolicy-list-appliesto.md) | [directoryObject](directoryobject.md) collection | Get the list of directoryObjects that this policy has been applied to. |
