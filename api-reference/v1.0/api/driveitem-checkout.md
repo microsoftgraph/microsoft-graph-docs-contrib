@@ -1,17 +1,16 @@
 ---
 author: learafa
 description: "Check-out a driveItem resource to prevent others from editing the document, and your changes from being visible until the documented is checked-in."
-ms.date: 09/10/2017
-title: Check out files
+title: "driveItem: checkout"
 localization_priority: Normal
 ms.prod: "sharepoint"
 doc_type: apiPageType
 ---
-# DriveItem: checkout
+# driveItem: checkout
 
 Namespace: microsoft.graph
 
-Check-out a driveItem resource to prevent others from editing the document, and your changes from being visible until the documented is [checked-in](driveitem-checkin.md).
+Check out a **driveItem** resource to prevent others from editing the document, and prevent your changes from being visible until the documented is [checked in](driveitem-checkin.md).
 
 ## Permissions
 
@@ -37,11 +36,11 @@ POST /users/{userId}/drive/items/{itemId}/checkout
 
 ## Request body
 
-No request body is required.
+Do not supply a request body for this method.
 
 ## Response
 
-If successful, the API call returns a `204 No content`.
+If successful, the API call returns `204 No content`.
 
 ## Example
 
