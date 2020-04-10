@@ -38,7 +38,7 @@ POST policies/tokenLifetimePolicies
 | Name          | Description   |
 |:--------------|:--------------|
 | Authorization | Bearer {token}. Required. |
-| Content-type | application/json |
+| Content-type | application/json. Required. |
 
 ## Request body
 
