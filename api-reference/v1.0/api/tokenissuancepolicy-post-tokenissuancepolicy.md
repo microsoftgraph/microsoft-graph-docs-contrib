@@ -52,7 +52,6 @@ If successful, this method returns a `201 Created` response code and a new [toke
 
 The following is an example of the request.
 
-# [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "create_tokenIssuancePolicies_from_tokenIssuancePolicies"
