@@ -24,6 +24,13 @@ For details about known issues with Microsoft Graph APIs, see [Known issues](kno
 | **Change type** | **Version**   | **Description**                          |
 | :-------------- | :------------ | :--------------------------------------- 
 | Addition        | v1.0        | Added the [folowedSites](/graph/api/sites-list-followed?view=graph-rest-1.0) navigation property to the to the [user](/graph/api/resources/user?view=graph-rest-1.0) entity set |
+| Addition        | v1.0        | Added the **expirationDateTime**, **password**, and **message** properties on the [CreateLink][/graph/api/driveitem-createlink?view=graph-rest-1.0] action on a [DriveItem](/graph/resources/driveitem?view=graph-rest-1.0) resource. |
+| Addition        | v1.0        | Added the **dataLocaton** property on the [SiteCollection](/graph/resources/sitecollection?view=graph-rest-1.0) resource. |
+| Addition        | v1.0        | Added the **preventsDownload** property on the [SharingLink](/graph/resources/sharinglink?view=graph-rest-1.0) resource. |
+| Addition        | v1.0        | Added the **tenantId** property on the [SharepointIds](/graph/resources/sharepointids?view=graph-rest-1.0) resource. |
+| Addition        | v1.0        | Added the **permission** property on the [SharedDriveItem](/graph/resources/shareddriveitem?view=graph-rest-1.0) resource. |
+| Addition        | v1.0        | Added the **expirationDateTime**, **hasPassword**, and **grantedToIdentities** properties on the [Permission](/graph/resources/permission?view=graph-rest-1.0) resource. |
+| Addition        | v1.0        | Added the **expirationDateTime**, and **password** properties on the [Invite](/graph/api/driveitem-invite?view=graph-rest-1.0) action on a [DriveItem](/graph/resources/driveitem?view=graph-rest-1.0) resource. |
 
 ## March 2020
 
