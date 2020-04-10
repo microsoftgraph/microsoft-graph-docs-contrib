@@ -35,7 +35,7 @@ To begin tracking changes, you make a request that includes the delta function o
 GET /administrativeunits/delta
 ```
 
-### Query parameters
+## Query parameters
 
 Tracking changes incurs a round of one or more **delta** function calls. If you use any query parameter 
 (other than `$deltatoken` and `$skiptoken`), you must specify 
@@ -50,7 +50,7 @@ includes the encoded parameters.
 | $deltatoken | string | A [state token](/graph/delta-query-overview) returned in the `deltaLink` URL of the previous **delta** function call for the same resource collection, indicating the completion of that round of change tracking. Save and apply the entire `deltaLink` URL including this token in the first request of the next round of change tracking for that collection.|
 | $skiptoken | string | A [state token](/graph/delta-query-overview) returned in the `nextLink` URL of the previous **delta** function call, indicating there are further changes to be tracked in the same resource collection. |
 
-## Optional query parameters
+### Optional query parameters
 
 This method supports the following OData query parameters to help customize the response:
 
@@ -69,7 +69,7 @@ This method supports the following OData query parameters to help customize the 
 ## Request body
 Do not supply a request body for this method.
 
-### Response
+## Response
 
 If successful, this method returns `200 OK` response code and an [administrativeUnit](../resources/administrativeunit.md) collection object in the response body. The response also includes a `nextLink` URL or a `deltaLink` URL. 
 
@@ -79,8 +79,8 @@ If successful, this method returns `200 OK` response code and an [administrative
 
 For details and an example, see [Using delta query](/graph/delta-query-overview) and [Get incremental changes for users](/graph/delta-query-users).
 
-### Example
-##### Request
+## Example
+### Request
 
 # [HTTP](#tab/http)
 <!-- {
@@ -91,8 +91,8 @@ For details and an example, see [Using delta query](/graph/delta-query-overview)
 GET https://graph.microsoft.com/beta/administrativeunits/delta
 ```
 
-##### Response
-Note: The response object shown here might be shortened for readability. All the properties will be returned from an actual call.
+### Response
+>**Note:** The response object shown here might be shortened for readability. All the properties will be returned from an actual call.
 <!-- { 
   "blockType": "response",
   "truncated": true,
