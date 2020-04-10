@@ -1,7 +1,7 @@
 ---
 author: JeremyKelley
-description: "Check-in a checked out DriveItem resource, which makes the version of the document available to others."
-title: driveItem: checkin
+description: "Check in a checked out DriveItem resource, which makes the version of the document available to others."
+title: "driveItem: checkin"
 localization_priority: Normal
 ms.prod: "sharepoint"
 doc_type: apiPageType
@@ -12,7 +12,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Check-in a checked out **driveItem** resource, which makes the version of the document available to others.
+Check in a checked out **driveItem** resource, which makes the version of the document available to others.
 
 ## Permissions
 
