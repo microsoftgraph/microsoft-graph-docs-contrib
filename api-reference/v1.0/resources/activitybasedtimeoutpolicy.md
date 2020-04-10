@@ -48,9 +48,9 @@ The properties below form the JSON object that represents an activity-based time
 }
 ```
 
->Note: All time durations in these properties are specified in the format "dd.hh:mm:ss".
+>**Note:** All time durations in these properties are specified in the format "dd.hh:mm:ss".
 
->Note: Max values for properties denoted in "days" are 1 second short of the denoted number of days. For example, the max value of 1 days is specified as "23:59:59".
+>**Note:** Max values for properties denoted in "days" are 1 second short of the denoted number of days. For example, the max value of 1 days is specified as "23:59:59".
 
 | Property	   | Type	|Description|
 |:-------------|:------|:---------|
