@@ -174,7 +174,7 @@ The deviceManagement resource represents a container whose contents vary accordi
 |**Remote access**|
 |userPfxCertificates|[userPFXCertificate](../resources/intune-raimportcerts-userpfxcertificate.md) collection|Collection of PFX certificates associated with a user.|
 |**Remote assistance**|
-|remoteAssistancePartners|[remoteAssistancePartner](../resources/intune-remoteassistance-remoteassistancepartner.md) collection|The remote assist partners.|
+|remoteAssistancePartners|remoteAssistancePartner collection|The remote assist partners.|
 |**Role based access control (RBAC)**|
 |resourceOperations|[resourceOperation](../resources/intune-rbac-resourceoperation.md) collection|The Resource Operations.|
 |roleAssignments|[deviceAndAppManagementRoleAssignment](../resources/intune-rbac-deviceandappmanagementroleassignment.md) collection|The Role Assignments.|
