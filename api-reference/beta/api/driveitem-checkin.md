@@ -1,7 +1,6 @@
 ---
 author: JeremyKelley
 description: "Check-in a checked out DriveItem resource, which makes the version of the document available to others."
-ms.date: 09/10/2017
 title: driveItem: checkin
 localization_priority: Normal
 ms.prod: "sharepoint"
