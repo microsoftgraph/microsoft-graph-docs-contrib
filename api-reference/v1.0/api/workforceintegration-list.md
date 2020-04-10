@@ -98,7 +98,7 @@ Content-type: application/json
       },
       "isActive": true,
       "url": "url-value",
-      "supports": "supports-value"
+      "supportedEntities": "supportedEntities-value"
     }
   ]
 }

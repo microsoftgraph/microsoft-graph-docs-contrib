@@ -95,7 +95,7 @@ Content-type: application/json
     "secret": null
   },
   "url": "https://contosoWorkforceIntegration.com/Contoso/",
-  "supports": "shift"
+  "supportedEntities": "shift"
 }
 ```
 

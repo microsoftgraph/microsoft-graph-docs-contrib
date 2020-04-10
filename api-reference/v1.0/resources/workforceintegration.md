@@ -55,7 +55,7 @@ The following is a JSON representation of the resource.
   "displayName": "String",
   "encryption": {"@odata.type": "microsoft.graph.workforceIntegrationEncryption"},
   "isActive": true,
-  "supports": "string",
+  "supportedEntities": "string",
   "url": "String"
 }
 ```

@@ -49,7 +49,7 @@ In the request body, supply the values for relevant fields that should be update
 |displayName|String|Name of the workforce integration.|
 |encryption|workforceIntegrationEncryption|The workforce integration encryption resource. |
 |isActive|Boolean|Indicates whether this workforce integration is currently active and available.|
-|supports|string| `none`, `shift`, `swapRequest`, `openshift`, `openShiftRequest`, `userShiftPreferences`. If selecting more than one value, all values must start with the first letter in uppercase.|
+|supportedEntities|string| `none`, `shift`, `swapRequest`, `openshift`, `openShiftRequest`, `userShiftPreferences`. If selecting more than one value, all values must start with the first letter in uppercase.|
 |url|String| Workforce Integration url for callbacks from the Shift service. |
 
 ## Response
@@ -80,7 +80,7 @@ Content-type: application/json
   },
   "isActive": true,
   "url": "url-value",
-  "supports": "supports-value"
+  "supportedEntities": "supportedEntities-value"
 }
 ```
 ---
@@ -111,7 +111,7 @@ Content-type: application/json
   },
   "isActive": true,
   "url": "url-value",
-  "supports": "supports-value"
+  "supportedEntities": "supportedEntities-value"
 }
 ```
 

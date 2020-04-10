@@ -31,7 +31,7 @@ One of the following permissions is required to call this API. To learn more, in
 <!-- { "blockType": "ignored" } -->
 
 ```http
-POST /teams/schedule/offerShiftRequests/approve
+POST /teams/{teamId}/schedule/offerShiftRequests/{offerShiftRequestId}/approve
 ```
 
 ## Request headers
@@ -65,7 +65,7 @@ The following example shows a request.
 }-->
 
 ```http
-POST https://graph.microsoft.com/v1.0/teams/schedule/offerShiftRequests/approve
+POST https://graph.microsoft.com/v1.0/teams/{teamId}/schedule/offerShiftRequests/{offerShiftRequestId}/approve
 Content-type: application/json
 
 {
