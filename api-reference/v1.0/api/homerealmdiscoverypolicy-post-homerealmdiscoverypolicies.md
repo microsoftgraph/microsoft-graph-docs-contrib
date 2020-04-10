@@ -38,7 +38,7 @@ POST policies/homeRealmDiscoveryPolicies
 | Name          | Description   |
 |:--------------|:--------------|
 | Authorization | Bearer {token}. Required. |
-| Content-type | application/json |
+| Content-type | application/json. Required. |
 
 ## Request body
 
@@ -54,7 +54,6 @@ If successful, this method returns a `201 Created` response code and a new [home
 
 The following is an example of the request.
 
-# [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "create_homerealmdiscoverypolicy_from_homerealmdiscoverypolicies"
