@@ -3574,10 +3574,10 @@
         - name: Activity-based timeout policy
           href: resources/activitybasedtimeoutpolicy.md
           items:
-          - name: Create
-            href: api/activitybasedtimeoutpolicy-post-activitybasedtimeoutpolicies.md
           - name: List
             href: api/activitybasedtimeoutpolicy-list.md
+          - name: Create
+            href: api/activitybasedtimeoutpolicy-post-activitybasedtimeoutpolicies.md
           - name: Get
             href: api/activitybasedtimeoutpolicy-get.md
           - name: Update
@@ -3587,10 +3587,10 @@
         - name: Home realm discovery policy
           href: resources/homerealmdiscoverypolicy.md
           items:
-          - name: Create
-            href: api/homerealmdiscoverypolicy-post-homerealmdiscoverypolicies.md
           - name: List
             href: api/homerealmdiscoverypolicy-list.md
+          - name: Create
+            href: api/homerealmdiscoverypolicy-post-homerealmdiscoverypolicies.md
           - name: Get
             href: api/homerealmdiscoverypolicy-get.md
           - name: Update
@@ -3602,10 +3602,10 @@
         - name: Token issuance policy
           href: resources/tokenissuancepolicy.md
           items:
-          - name: Create
-            href: api/tokenissuancepolicy-post-tokenissuancepolicy.md
           - name: List
             href: api/tokenissuancepolicy-list.md
+          - name: Create
+            href: api/tokenissuancepolicy-post-tokenissuancepolicy.md          
           - name: Get
             href: api/tokenissuancepolicy-get.md
           - name: Update
@@ -3617,10 +3617,10 @@
         - name: Token lifetime policy
           href: resources/tokenlifetimepolicy.md
           items:
-          - name: Create
-            href: api/tokenlifetimepolicy-post-tokenlifetimepolicies.md
           - name: List
             href: api/tokenlifetimepolicy-list.md
+          - name: Create
+            href: api/tokenlifetimepolicy-post-tokenlifetimepolicies.md
           - name: Get
             href: api/tokenlifetimepolicy-get.md
           - name: Update
