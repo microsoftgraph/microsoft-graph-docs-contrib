@@ -15,6 +15,8 @@ Namespace: microsoft.graph
 
 Represents the OAuth 2.0 scopes (delegated permissions) that have been granted to an application (represented by a service principal) as part of the user or admin consent process.
 
+This resource supports using [delta query](/graph/delta-query-overview) to track incremental additions, deletions, and updates, by providing a [delta](../api/oauth2permissiongrant-delta.md) function.
+
 ## JSON representation
 
 Here is a JSON representation of the resource
