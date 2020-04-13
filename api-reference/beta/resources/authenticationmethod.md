@@ -26,7 +26,7 @@ Represents an authentication method registered to a user. An [authentication met
 
 | Property     | Type        | Description |
 |:-------------|:------------|:------------|
-|id|String| Read-only.|
+|id|String| Read-only. |
 
 ## Relationships
 
