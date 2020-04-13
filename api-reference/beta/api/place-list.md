@@ -66,7 +66,9 @@ This method supports some of the OData query parameters to help customize the re
 - $select
 - $top
 
-Use $top to customize the page size. The default page size is 100.For general information, see [OData query parameters](/graph/query-parameters).
+Use $top to customize the page size. The default page size is 100.
+
+For general information, see [OData query parameters](/graph/query-parameters).
 
 ## Request headers
 
