@@ -49,8 +49,8 @@ If successful, this method returns a `200 OK` response code and [regionalAndLang
 
 ### Example 1: Get the properties of the signed-in user
 This method supports the [OData Query Parameters](https://developer.microsoft.com/graph/docs/concepts/query_parameters) to help customize the response.
-#### Request
 
+#### Request
 
 # [HTTP](#tab/http)
 <!-- {
@@ -66,11 +66,12 @@ Here is an example of the response. Note: The response object shown here may be 
 <!-- {
   "blockType": "response",
   "truncated": true,
-  "@odata.type": "microsoft.graph.user"
+  "@odata.type": "microsoft.graph.regionalAndLanguageSettings"
 } -->
 ```http
 HTTP/1.1 200 OK
 Content-type: application/json
+
 {
     "defaultDisplayLanguage": {
         "locale": "en-US",
@@ -84,7 +85,7 @@ Content-type: application/json
         {
             "locale": "de-DE",
             "displayName": "German (Germany)"
-        },
+        }
     ],
     "defaultTranslationLanguage": {
         "locale": "en-US",
