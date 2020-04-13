@@ -13,7 +13,9 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Use this action to disable SMS sign-in for an existing `mobile` phone number. Note: This will make the number no longer available for SMS sign-in, which could prevent your user from signing in.
+Disable SMS sign-in for an existing `mobile` phone number. 
+
+>**Note:** The number will no longer be available for SMS sign-in, which can prevent your user from signing in.
 
 ## Permissions
 
@@ -44,7 +46,7 @@ POST /users/{id}/authentication/phoneMethods/{id}/disableSmsSignIn
 
 | Name          | Description   |
 |:--------------|:--------------|
-| Authorization | Bearer {token} |
+| Authorization | Bearer {token}. Required. |
 
 ## Request body
 
@@ -52,11 +54,11 @@ Do not supply a request body for this method.
 
 ## Response
 
-If successful, this method returns `200 OK` response code. It does not return anything in the response body.
+If successful, this method returns a `200 OK` response code. It does not return anything in the response body.
 
 ## Examples
 
-The following is an example of how to call this API.
+The following example shows how to call this API.
 
 ### Request
 
