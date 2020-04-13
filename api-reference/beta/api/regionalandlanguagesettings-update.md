@@ -28,11 +28,7 @@ To update a subset of the properties of a user's regional and language settings:
 ```http
 PATCH /settings/regionalAndLanguageSettings
 ```
-To update all of a user's regional and language settings:
-<!-- { "blockType": "ignored" } -->
-```http
-PUT /settings/regionalAndLanguageSettings
-```
+
 ## Request headers
 | Header       | Value|
 |:-----------|:------|
