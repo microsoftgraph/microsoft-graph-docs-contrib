@@ -7,7 +7,7 @@ ms.prod: "settings"
 doc_type: resourcePageType
 ---
 
-# regionalAndLangaugesettings resource type
+# regionalAndLanguageSettings resource type
 
 Namespace: microsoft.graph
 
@@ -36,7 +36,6 @@ The following is a JSON definition of the resource.
 
 <!--{
   "blockType": "resource",
-  "optionalProperties": [],
   "baseType": "",
   "@odata.type": "microsoft.graph.regionalAndLanguageSettings"
 }-->
