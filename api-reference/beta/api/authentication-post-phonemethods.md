@@ -1,6 +1,6 @@
 ---
 title: "Create phoneAuthenticationMethod"
-description: "Use this API to add a new phoneAuthenticationMethod."
+description: "Add a new phone authentication method."
 localization_priority: Normal
 author: "mmcla"
 ms.prod: "microsoft-identity-platform"
@@ -13,9 +13,9 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Use this API to add a new [phone authentication method](../resources/phoneauthenticationmethod.md). A user may only have one phone of each type, captured in the phoneType property. This means, for example, adding a `mobile` phone to a user with a preexisting `mobile` phone will fail. Additionally, a user must always have a `mobile` phone before adding an `alternateMobile` phone.
+Add a new [phone authentication method](../resources/phoneauthenticationmethod.md). A user may only have one phone of each type, captured in the **phoneType** property. This means, for example, adding a `mobile` phone to a user with a preexisting `mobile` phone will fail. Additionally, a user must always have a `mobile` phone before adding an `alternateMobile` phone.
 
-Adding a phone number makes it available for use in both Azure multi-factor authentication (MFA) and self-service password reset (SSPR) if enabled.
+Adding a phone number makes it available for use in both Azure multi-factor authentication (MFA) and self-service password reset (SSPR), if enabled.
 
 Additionally, if a user is enabled by policy to use SMS sign-in and a `mobile` number is added, the system will attempt to register the number for use in that system.
 
@@ -48,12 +48,12 @@ POST /users/{id}/authentication/phoneMethods
 
 | Name          | Description   |
 |:--------------|:--------------|
-| Authorization | Bearer {token} |
-| Content-Type  | application/json |
+| Authorization | Bearer {token}. Required. |
+| Content-Type  | application/json. Required. |
 
 ## Request body
 
-In the request body, supply a JSON representation of [phoneAuthenticationMethod](../resources/phoneauthenticationmethod.md) object. The JSON must include `phoneNumber` and `phoneType`, but not `smsSignInState` (which is read-only).
+In the request body, supply a JSON representation of a [phoneAuthenticationMethod](../resources/phoneauthenticationmethod.md) object. The JSON must include `phoneNumber` and `phoneType`, but not `smsSignInState` (which is read-only).
 
 | Property     | Type        | Description |
 |:-------------|:------------|:------------|
@@ -62,7 +62,7 @@ In the request body, supply a JSON representation of [phoneAuthenticationMethod]
 
 ## Response
 
-If successful, this method returns `201 Created` response code and a new [phoneAuthenticationMethod](../resources/phoneauthenticationmethod.md) object in the response body.
+If successful, this method returns a `201 Created` response code and a new [phoneAuthenticationMethod](../resources/phoneauthenticationmethod.md) object in the response body.
 
 ## Examples
 
