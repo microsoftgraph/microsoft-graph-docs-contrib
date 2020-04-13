@@ -386,20 +386,20 @@
           href: api/planneruser-list-tasks.md
         - name: Update settings
           href: api/planneruser-update.md
-      - name: Profile
-        href: resources/profile.md
-        items:
-        - name: Get user's profile
-          href: api/profile-get.md
-        - name: Delete user's profile
-          href: api/profile-delete.md
       - name: Preferred languages and regional formats
         href: resources/regionalandlanguagesettings.md
         items:
         - name: Get
           href: api/regionalandlanguagesettings-get.md
         - name: Update
-          href: api/regionalandlanguagesettings-update.md         
+          href: api/regionalandlanguagesettings-update.md   
+      - name: Profile
+        href: resources/profile.md
+        items:
+        - name: Get user's profile
+          href: api/profile-get.md
+        - name: Delete user's profile
+          href: api/profile-delete.md      
       - name: Teamwork
         items:
         - name: Installed app
