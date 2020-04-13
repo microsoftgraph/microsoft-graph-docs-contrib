@@ -1,6 +1,6 @@
 ---
 title: "phoneAuthenticationMethod: enableSmsSignIn"
-description: "Enable SMS sign-in for a mobile phone"
+description: "Enable SMS sign-in for a mobile phone."
 localization_priority: Normal
 author: "mmcla"
 ms.prod: "microsoft-identity-platform"
