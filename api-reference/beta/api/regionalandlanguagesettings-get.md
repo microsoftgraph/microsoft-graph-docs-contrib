@@ -86,7 +86,7 @@ Content-type: application/json
         {
             "locale": "de-DE",
             "displayName": "German (Germany)"
-        }
+        },
     ],
     "defaultTranslationLanguage": {
         "locale": "en-US",
