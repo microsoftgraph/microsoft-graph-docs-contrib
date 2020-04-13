@@ -95,7 +95,7 @@ GET https://graph.microsoft.com/beta/administrativeunits/delta
 <!-- { 
   "blockType": "response",
   "truncated": true,
-  "@odata.type": "microsoft.graph.administrativeunit",
+  "@odata.type": "microsoft.graph.administrativeUnit",
   "isCollection": true 
 } --> 
 ```http
