@@ -1,5 +1,5 @@
 ---
-title: "authentication methods API overview"
+title: "Azure AD authentication methods API overview"
 description: "Authentication methods are how users authenticate in Azure AD."
 localization_priority: Normal
 author: "mmcla"
@@ -7,24 +7,22 @@ ms.prod: "microsoft-identity-platform"
 doc_type: "conceptualPageType"
 ---
 
-# Azure AD authentication methods overview
+# Azure AD authentication methods API overview
 
 Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-[Authentication methods](https://docs.microsoft.com/azure/active-directory/authentication/concept-authentication-methods) are the ways that users authenticate in Azure Active Directory (AD). Authentication methods in Azure AD include password and phone (i.e. SMS and voice calls), which are manageable in Microsoft Graph today, among many others such as FIDO2 security keys and the Microsoft Authenticator app. Authentication methods are used in primary, second-factor, and step-up authentication, and also in the self-service password reset (SSPR) process.
+[Authentication methods](https://docs.microsoft.com/azure/active-directory/authentication/concept-authentication-methods) are the ways that users authenticate in Azure Active Directory (AD). Authentication methods in Azure AD include password and phone (for example, SMS and voice calls), which are manageable in Microsoft Graph today, among many others such as FIDO2 security keys and the Microsoft Authenticator app. Authentication methods are used in primary, second-factor, and step-up authentication, and also in the self-service password reset (SSPR) process.
 
-These APIs are used to manage a user's authentication methods. 
+The authentication method APIs are used to manage a user's authentication methods. For example:
 
-Some examples:
-
-* You can add a phone number to a user. The user can then use that phone number for SMS and voice call authentication if they're enabled to use in by policy. 
-* You can then update that number, or delete it from the user.
+* You can add a phone number to a user. The user can then use that phone number for SMS and voice call authentication if they're enabled to use it by policy. 
+* You can update that number, or delete it from the user.
 * You can enable or disable the number for SMS sign-in.
 * You can reset a user's password.
 
-## What authentication methods can be managed in Graph?
+## What authentication methods can be managed in Microsoft Graph?
 
 |Authentication method       | Description |Examples     |
 |:---------------------------|:------------|:------------|
@@ -33,5 +31,5 @@ Some examples:
 
 ## Next steps
 
-* Review the authentication method types listed above and their various methods.
+* Review the authentication method types and their various methods.
 * Try the API in the [Graph Explorer](https://developer.microsoft.com/graph/graph-explorer).
