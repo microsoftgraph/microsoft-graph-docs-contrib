@@ -9,11 +9,11 @@ doc_type: "resourcePageType"
 
 # authenticationMethod resource type
 
+Namespace: microsoft.graph
+
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 An authenticationMethod resource represents an authentication method registered to a user. An [authentication method](https://docs.microsoft.com/azure/active-directory/authentication/concept-authentication-methods) is something used by a user to authenticate or otherwise prove their identity to the system. Some examples include password, phone (usable via SMS or voice call), FIDO2 security keys, and more. As of this writing, password and phone methods are implemented.
-
-
 
 ## Methods
 

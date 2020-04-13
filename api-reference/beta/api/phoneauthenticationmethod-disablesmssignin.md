@@ -9,6 +9,8 @@ doc_type: "apiPageType"
 
 # phoneAuthenticationMethod: disableSmsSignIn
 
+Namespace: microsoft.graph
+
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 Use this action to disable SMS sign-in for an existing `mobile` phone number. Note: This will make the number no longer available for SMS sign-in, which could prevent your user from signing in.
@@ -20,8 +22,8 @@ One of the following permissions is required to call this API. To learn more, in
 | Permission type                        | Permissions acting on self (from least to most privileged) | Permissions acting on others (from least to most privileged)|
 |:---------------------------------------|:-------------------------|:-----------------|
 | Delegated (work or school account)     | UserAuthenticationMethod.ReadWrite, UserAuthenticationMethod.ReadWrite.All | UserAuthenticationMethod.ReadWrite.All |
-| Delegated (personal Microsoft account) | Not supported. |
-| Application                            | UserAuthenticationMethod.ReadWrite.All | UserAuthenticationMethod.ReadWrite.All |
+| Delegated (personal Microsoft account) | Not supported. | Not supported. |
+| Application                            | Not supported. | Not supported. |
 
 For delegated scenarios where an admin is acting on another user, the admin needs [one of the following roles](https://docs.microsoft.com/azure/active-directory/users-groups-roles/directory-assign-admin-roles#available-roles):
 

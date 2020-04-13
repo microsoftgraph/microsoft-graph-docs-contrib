@@ -9,6 +9,8 @@ doc_type: "resourcePageType"
 
 # passwordAuthenticationMethod resource type
 
+Namespace: microsoft.graph
+
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 A representation of a user's password. For security, the password itself will never be returned in the object, but action can be taken to reset a password.

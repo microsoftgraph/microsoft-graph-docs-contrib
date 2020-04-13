@@ -9,6 +9,8 @@ doc_type: "resourcePageType"
 
 # phoneAuthenticationMethod resource type
 
+Namespace: microsoft.graph
+
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 A representation of a phone registered to a user. This resource includes the phone number, the phone type, and whether the phone is configured for SMS sign-in.
