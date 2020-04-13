@@ -89,11 +89,11 @@ items:
             href: outlook-get-free-busy-schedule.md
           - name: Propose new meeting times (preview)
             href: outlook-calendar-meeting-proposals.md
-          - name: Organize or attend online meetings (preview)
+          - name: Organize or attend online meetings
             href: outlook-calendar-online-meetings.md
           - name: Schedule recurring events
             href: outlook-schedule-recurring-events.md
-          - name: Share or delegate calendar (preview)
+          - name: Share or delegate calendar
             href: outlook-share-or-delegate-calendar.md
           - name: Get shared events
             href: outlook-get-shared-events-calendars.md
