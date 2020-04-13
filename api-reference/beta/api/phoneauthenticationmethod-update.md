@@ -1,6 +1,6 @@
 ---
 title: "Update phoneauthenticationmethod"
-description: "Update the properties of phoneauthenticationmethod object."
+description: "Update the phone number of a phoneAuthenticationMethod object."
 localization_priority: Normal
 author: "mmcla"
 ms.prod: "microsoft-identity-platform"
@@ -15,9 +15,9 @@ Namespace: microsoft.graph
 
 Update the phone number of a [phone authentication method](../resources/phoneauthenticationmethod.md).
 
-A phone's type cannot be changed. To change a phone's type, add a new number of the desired type and then delete the previous object with the former type.
+You can't change a phone's type. To change a phone's type, add a new number of the desired type and then delete the object with the original type.
 
-If a user is enabled by policy to use SMS sign-in and the `mobile` number is changed, the system will attempt to register the number for use in that system.
+If a user is enabled by policy to use SMS to sign in and the `mobile` number is changed, the system will attempt to register the number for use in that system.
 
 ## Permissions
 
@@ -48,8 +48,8 @@ PUT /users/{id}/authentication/phoneMethods/{id}
 
 | Name       | Description|
 |:-----------|:-----------|
-| Authorization | Bearer {token} |
-| Content-Type  | application/json |
+| Authorization | Bearer {token}. Required. |
+| Content-type  | application/json. Required. |
 
 ## Request body
 
