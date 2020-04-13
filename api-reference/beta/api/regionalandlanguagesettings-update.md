@@ -53,7 +53,7 @@ If successful, this method returns a 200 response code and the updated regionalA
 
 #### Request
 
-The following example shows a request.
+The following is an example of the request.
 
 # [HTTP](#tab/http)
 <!-- {
@@ -107,7 +107,7 @@ Content-type: application/json
 
 #### Request
 
-The following example shows a request.
+The following is an example of the request.
 
 # [HTTP](#tab/http)
 <!-- {
@@ -117,7 +117,6 @@ The following example shows a request.
 ```http
 PATCH https://graph.microsoft.com/beta/me/settings/regionalandlanguagesettings
 Content-type: application/json
-
 {
   "authoringLanguages": [
     "locale-value",
