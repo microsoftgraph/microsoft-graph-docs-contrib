@@ -8277,6 +8277,10 @@
           href: api/driveitem-get.md
         - name: Get thumbnails
           href: api/driveitem-list-thumbnails.md
+        - name: Check in files
+          href: api/driveitem-checkin.md
+        - name: Check out files
+          href: api/driveitem-checkout.md 
         - name: Create folder
           href: api/driveitem-post-children.md
         - name: Update item
@@ -8643,16 +8647,18 @@
       - name: Administrative unit
         href: resources/administrativeunit.md
         items:
-        - name: Create administrative unit
-          href: api/administrativeunit-post-administrativeunits.md
-        - name: List administrative unit
+        - name: List
           href: api/administrativeunit-list.md
-        - name: Get administrative unit
+        - name: Create
+          href: api/administrativeunit-post-administrativeunits.md
+        - name: Get
           href: api/administrativeunit-get.md
-        - name: Update administrative unit
+        - name: Update
           href: api/administrativeunit-update.md
-        - name: Delete administrative unit
+        - name: Delete
           href: api/administrativeunit-delete.md
+        - name: Get delta
+          href: api/administrativeunit-delta.md
         - name: Add a member
           href: api/administrativeunit-post-members.md
         - name: List members

@@ -58,7 +58,7 @@ The following is an example of the request.
 }-->
 
 ```msgraph-interactive
-GET https://graph.microsoft.com/beta/security/secureScoreControlProfiles/{id}
+GET https://graph.microsoft.com/v1.0/security/secureScoreControlProfiles/{id}
 ```
 # [C#](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/get-securescorecontrolprofile-csharp-snippets.md)]
