@@ -23,8 +23,13 @@ One of the following permissions is required to call this API. To learn more, in
 |Application                       |User.ReadWrite, User.ReadWrite.All             |
 
 ## HTTP request
+
+To update all of a user's regional and language settings:
+```http
+PUT /settings/regionalAndLanguageSettings
+```
+
 To update a subset of the properties of a user's regional and language settings:
-<!-- { "blockType": "ignored" } -->
 ```http
 PATCH /settings/regionalAndLanguageSettings
 ```
