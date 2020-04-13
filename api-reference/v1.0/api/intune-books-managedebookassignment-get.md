@@ -1,7 +1,7 @@
 ---
 title: "Get managedEBookAssignment"
 description: "Read properties and relationships of the managedEBookAssignment object."
-author: "davidmu1"
+author: "dougeby"
 localization_priority: Normal
 ms.prod: "Intune"
 doc_type: apiPageType
@@ -74,6 +74,7 @@ Content-Length: 274
   }
 }
 ```
+
 
 
 

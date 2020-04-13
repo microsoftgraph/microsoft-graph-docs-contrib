@@ -1,7 +1,7 @@
 ---
 title: "Get windows10MobileCompliancePolicy"
 description: "Read properties and relationships of the windows10MobileCompliancePolicy object."
-author: "davidmu1"
+author: "dougeby"
 localization_priority: Normal
 ms.prod: "Intune"
 doc_type: apiPageType
@@ -91,6 +91,7 @@ Content-Length: 1029
   }
 }
 ```
+
 
 
 

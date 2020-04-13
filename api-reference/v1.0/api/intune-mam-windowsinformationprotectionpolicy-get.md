@@ -1,7 +1,7 @@
 ---
 title: "Get windowsInformationProtectionPolicy"
 description: "Read properties and relationships of the windowsInformationProtectionPolicy object."
-author: "davidmu1"
+author: "dougeby"
 localization_priority: Normal
 ms.prod: "Intune"
 doc_type: apiPageType
@@ -205,6 +205,7 @@ Content-Length: 4870
   }
 }
 ```
+
 
 
 

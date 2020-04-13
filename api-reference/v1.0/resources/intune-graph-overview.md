@@ -1,7 +1,7 @@
 ---
 title: "Using the Intune Graph API"
 description: " Intune hybrid deployments are not supported. "
-author: "davidmu1"
+author: "dougeby"
 localization_priority: Priority
 ms.prod: "intune"
 doc_type: conceptualPageType
@@ -45,4 +45,7 @@ The Microsoft Graph API controls access to resources via permissions. As a devel
 
 - Learn [how to use Azure AD](https://docs.microsoft.com/en-us/intune/intune-graph-apis) to access the Microsoft Graph API for Intune.  
 - Explore the [PowerShell Intune samples](https://github.com/microsoftgraph/powershell-intune-samples), which show how to use the Microsoft Graph API for Intune in context of working examples.
+
+
+
 

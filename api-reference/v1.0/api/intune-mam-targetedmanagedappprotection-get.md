@@ -1,7 +1,7 @@
 ---
 title: "Get targetedManagedAppProtection"
 description: "Read properties and relationships of the targetedManagedAppProtection object."
-author: "davidmu1"
+author: "dougeby"
 localization_priority: Normal
 ms.prod: "Intune"
 doc_type: apiPageType
@@ -106,6 +106,7 @@ Content-Length: 1664
   }
 }
 ```
+
 
 
 

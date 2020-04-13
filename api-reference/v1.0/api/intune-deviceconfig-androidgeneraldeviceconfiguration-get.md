@@ -1,7 +1,7 @@
 ---
 title: "Get androidGeneralDeviceConfiguration"
 description: "Read properties and relationships of the androidGeneralDeviceConfiguration object."
-author: "davidmu1"
+author: "dougeby"
 localization_priority: Normal
 ms.prod: "Intune"
 doc_type: apiPageType
@@ -163,6 +163,7 @@ Content-Length: 3414
   }
 }
 ```
+
 
 
 
