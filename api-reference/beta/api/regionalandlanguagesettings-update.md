@@ -60,7 +60,7 @@ The following is an example of the request.
   "blockType": "request",
   "name": "put_regionalAndLanguageSettings"
 }-->
-```http
+```msgraph-interactive
 PUT https://graph.microsoft.com/beta/me/settings/regionalandlanguagesettings
 Content-type: application/json
 
@@ -114,7 +114,7 @@ The following is an example of the request.
   "blockType": "request",
   "name": "update_regionalAndLanguageSettings"
 }-->
-```http
+```msgraph-interactive
 PATCH https://graph.microsoft.com/beta/me/settings/regionalandlanguagesettings
 Content-type: application/json
 {
