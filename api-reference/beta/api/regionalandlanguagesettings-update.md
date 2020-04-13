@@ -11,7 +11,7 @@ doc_type: apiPageType
 
 Namespace: microsoft.graph
 
-Update the properties of a [regionalAndLanguageSettings](../resources/regionalAndLanguageSettings.md) object.
+Update some or all of the properties of a [regionalAndLanguageSettings](../resources/regionalAndLanguageSettings.md) object.
 
 ## Permissions
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
@@ -23,12 +23,12 @@ One of the following permissions is required to call this API. To learn more, in
 |Application                       |User.ReadWrite, User.ReadWrite.All             |
 
 ## HTTP request
-To update a subset of properties of a user's regional and language settings
+To update a subset of the properties of a user's regional and language settings:
 <!-- { "blockType": "ignored" } -->
 ```http
 PATCH /settings/regionalAndLanguageSettings
 ```
-To update f a user's regional and language settings
+To update all of a user's regional and language settings:
 ```http
 PUT /settings/regionalAndLanguageSettings
 ```
@@ -61,7 +61,7 @@ The following example shows a request.
   "name": "put_regionalAndLanguageSettings"
 }-->
 ```http
-put https://graph.microsoft.com/beta/me/settings/regionalandlanguagesettings
+PUT https://graph.microsoft.com/beta/me/settings/regionalandlanguagesettings
 Content-type: application/json
 
 {
