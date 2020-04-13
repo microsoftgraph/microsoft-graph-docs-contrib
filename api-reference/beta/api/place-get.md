@@ -42,11 +42,6 @@ GET /places/{id}
 ## Optional query parameters
 Use $select to get specific **place** properties.
 
-This method supports the following query parameters to help customize the response:
-* $filter
-* $select
-* $top
-
 For more information on OData query options, see [OData query parameters](/graph/query-parameters).
 
 ## Request headers
