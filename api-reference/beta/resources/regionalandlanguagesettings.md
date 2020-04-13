@@ -36,9 +36,8 @@ The following is a JSON definition of the resource.
 
 <!--{
   "blockType": "resource",
-  "baseType": "",
   "@odata.type": "microsoft.graph.regionalAndLanguageSettings"
-}-->
+} -->
 
 ```json
 {
