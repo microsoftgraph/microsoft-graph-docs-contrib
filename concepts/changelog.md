@@ -19,6 +19,16 @@ For details about known issues with Microsoft Graph APIs, see [Known issues](kno
 |:---|:---|:---|
 | Addition | Beta | Added [unifiedRoleAssignmentMultiple](/graph/api/resources/unifiedroleassignmentmultiple?view=graph-rest-beta), [rbacApplicationMultiple](/graph/api/resources/rbacapplicationmultiple?view=graph-rest-beta), and [appScope](/graph/api/resources/appscope?view=graph-rest-beta) and the following actions:<br><li>[List unifiedRoleAssignmentMultiple](/graph/api/unifiedroleassignmentmultiple-list?view=graph-rest-beta)</li><li>[Get unifiedRoleAssignmentMultiple](/graph/api/unifiedroleassignmentmultiple-get?view=graph-rest-beta)</li><li>[Create unifiedRoleAssignmentMultiple](/graph/api/resources/unifiedroleassignmentmultiple-post?view=graph-rest-beta)</li><li>[Update unifiedRoleAssignmentMultiple](/graph/api/unifiedroleassignmentmultiple-update?view=graph-rest-beta)</li><li>[Delete unifiedRoleAssignmentMultiple](/graph/api/unifiedroleassignmentmultiple-delete?view=graph-rest-beta)</li>. |
 
+### Users
+
+| **Change type** | **Version**   | **Description**                          |
+| :-------------- | :------------ | :--------------------------------------- |
+| Addition | beta | Added the [regionalAndLanguageSettings](/graph/api/resources/regionandlanguagesettings) entity.|
+| Addition | beta | Added the [regionalFormatOverrides](/graph/api/resources/regionalformatoverrides) complex type.|
+| Addition | beta | Added the [regionalAndLanguageSettings-get](/graph/api/regionalandlanguagesettings-get) function on the [regionalAndLanguageSettings](/graph/api/resources/regionalandlanguagesettings) resource.|
+| Addition | beta | Added the [regionalAndLanguageSettings-update](/graph/api/regionalandlanguagesettings-update) function on the [regionalAndLanguageSettings](/graph/api/resources/regionalandlanguagesettings) resource.|
+| Change | beta | Added the [regionalAndLanguageSettings](/graph/resources/regionalandlanguagesettings) relationship to the [userSettings](/graph/api/resources/userSettings) resource.|
+
 ## March 2020
 
 ### Calendar
@@ -186,16 +196,6 @@ Added new APIs and resources for managing and printing to printers by using the 
 | Addition | beta | Added the [printUsageSummaryByPrinter](/graph/api/resources/printusagesummarybyprinter) entity.|
 | Addition | beta | Added the [printUsageSummaryByUser](/graph/api/resources/printusagesummarybyuser) entity.|
 
-### Users
-
-Added new APIs and resources for managing user preferences for regional and langauge settings.
-| **Change type** | **Version**   | **Description**                          |
-| :-------------- | :------------ | :--------------------------------------- |
-| Addition | beta | Added the [regionalAndLanguageSettings](/graph/api/resources/regionandlanguagesettings) entity.|
-| Addition | beta | Added the [regionalFormatOverrides](/graph/api/resources/regionalformatoverrides) complex type.|
-| Addition | beta | Added the [regionalAndLanguageSettings-get](/graph/api/regionalandlanguagesettings-get) function on the [regionalAndLanguageSettings](/graph/api/resources/regionalandlanguagesettings) resource.|
-| Addition | beta | Added the [regionalAndLanguageSettings-update](/graph/api/regionalandlanguagesettings-update) function on the [regionalAndLanguageSettings](/graph/api/resources/regionalandlanguagesettings) resource.|
-| Change | beta | Added the [regionalAndLanguageSettings](/graph/resources/regionalandlanguagesettings) relationship to the [userSettings](/graph/api/resources/userSettings) resource.|
 
 ## February 2020
 
