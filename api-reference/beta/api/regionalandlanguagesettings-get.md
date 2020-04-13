@@ -59,13 +59,14 @@ If successful, this method returns a `200 OK` response code and [regionalAndLang
 ```msgraph-interactive
 GET https://graph.microsoft.com/beta/me/settings/regionalAndLanguageSettings
 ```
+
 ##### Response
 Here is an example of the response. Note: The response object shown here may be truncated for brevity. 
 
 <!-- {
   "blockType": "response",
   "truncated": true,
-  "@odata.type": "microsoft.graph.regionalAndLanguageSettings"
+  "@odata.type": "microsoft.graph.regionalAndLanguageSettings",
   "name": "get_regionalAndLanguageSettings"
 } -->
 ```http
