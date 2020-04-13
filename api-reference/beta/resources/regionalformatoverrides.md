@@ -38,12 +38,12 @@ The following is a JSON definition of the resource.
 ```json
 {
     "calendar": "string",
-    "firstDayOfWeek":"string",
+    "firstDayOfWeek": "string",
     "shortDateFormat": "string",
     "longDateFormat": "string",
-    "shortTimeFormat":"string",
-    "longTimeFormat":"string",
-    "timeZone:""string"
+    "shortTimeFormat": "string",
+    "longTimeFormat": "string",
+    "timeZone": "string"
 }
 ```
 <!-- {
