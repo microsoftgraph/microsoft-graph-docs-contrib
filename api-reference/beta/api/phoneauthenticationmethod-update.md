@@ -1,5 +1,5 @@
 ---
-title: "Update phoneauthenticationmethod"
+title: "Update phoneAuthenticationMethod"
 description: "Update the phone number of a phoneAuthenticationMethod object."
 localization_priority: Normal
 author: "mmcla"
@@ -7,7 +7,7 @@ ms.prod: "microsoft-identity-platform"
 doc_type: "apiPageType"
 ---
 
-# Update phoneauthenticationmethod
+# Update phoneAuthenticationMethod
 
 Namespace: microsoft.graph
 
