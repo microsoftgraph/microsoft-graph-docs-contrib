@@ -50,9 +50,9 @@ For details about known issues with Microsoft Graph APIs, see [Known issues](kno
 
 | **Change type** | **Version**   | **Description**                          |
 | :-------------- | :------------ | :--------------------------------------- |
-| Addition | Beta | Added the **Meeting Created** and ** Meeting Interacted** properties to the [getEmailActivityCounts](/graph/api/reportroot-getemailactivitycounts?view=graph-rest-beta) API CSV entity. |
-| Addition | Beta | Added the **Meeting Created** and ** Meeting Interacted** properties to the [getEmailActivityUserCounts](/graph/api/reportroot-getemailactivityusercounts?view=graph-rest-beta) API CSV entity. |
-| Addition | Beta | Added the **Meeting Created** and ** Meeting Interacted** properties to the [getEmailActivityuserDetail](/graph/api/reportroot-getemailactivityuserdetail?view=graph-rest-beta) API CSV entity. |
+| Addition | Beta | Added the **Meeting Created** and **Meeting Interacted** properties to the [getEmailActivityCounts](/graph/api/reportroot-getemailactivitycounts?view=graph-rest-beta) API CSV entity. |
+| Addition | Beta | Added the **Meeting Created** and **Meeting Interacted** properties to the [getEmailActivityUserCounts](/graph/api/reportroot-getemailactivityusercounts?view=graph-rest-beta) API CSV entity. |
+| Addition | Beta | Added the **Meeting Created** and **Meeting Interacted** properties to the [getEmailActivityuserDetail](/graph/api/reportroot-getemailactivityuserdetail?view=graph-rest-beta) API CSV entity. |
 
 ## March 2020
 
