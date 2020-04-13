@@ -16,8 +16,8 @@ A collection of strings representing formatting overrides for calendars, dates, 
 
 |Property             |Type                 |Description                                                    |
 |---------------------|---------------------|---------------------------------------------------------------|
-|calendar             |String               |The calendar to use e.g. Gregorian Calendar.<br><br>Returned by default.|                   
-|firstDayOfWeek       |String               |The first day of the week to use e.g. Sunday.<br><br>Returned by default.|
+|calendar             |String               |The calendar to use, e.g., Gregorian Calendar.<br><br>Returned by default.|                   
+|firstDayOfWeek       |String               |The first day of the week to use, e.g., Sunday.<br><br>Returned by default.|
 |shortDateFormat      |String               |The short date time format to be used for displaying dates.<br><br>Returned by default.|
 |longDateFormat       |String               |The long date time format to be used for displaying dates.<br><br>Returned by default.|
 |shortTimeFormat      |String               |The short time format to be used for displaying time.<br><br>Returned by default.|
@@ -32,7 +32,7 @@ The following is a JSON definition of the resource.
   "blockType": "resource",
   "optionalProperties": [],
   "baseType": "",
-  "@odata.type": "microsoft.graph.settings.regionalFormatOverrides"
+  "@odata.type": "microsoft.graph.regionalFormatOverrides"
 }-->
 
 ```json
