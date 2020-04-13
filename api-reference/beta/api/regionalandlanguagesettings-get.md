@@ -27,6 +27,11 @@ One of the following permissions is required to call this API. To learn more, in
 ```http
 GET /settings/regionalAndLanguageSettings
 ```
+## Optional query parameters
+You can use `$select` to get specific regionalAndLanguageSettings properties, including those that are not returned by default.
+
+For more information on OData query options, see [OData Query Parameters](/graph/query-parameters).
+
 ## Request headers
 | Header       | Value|
 |:-----------|:------|
