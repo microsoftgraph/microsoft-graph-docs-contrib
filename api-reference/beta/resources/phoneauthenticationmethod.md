@@ -1,6 +1,6 @@
 ---
 title: "phoneAuthenticationMethod resource type"
-description: "A representation of a phone registered to a user"
+description: "A representation of a phone registered to a user."
 localization_priority: Normal
 author: "mmcla"
 ms.prod: "microsoft-identity-platform"
@@ -13,34 +13,34 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-A representation of a phone registered to a user. This resource includes the phone number, the phone type, and whether the phone is configured for SMS sign-in.
+A representation of a phone registered to a user. This resource includes the phone number, the phone type, and whether the phone is configured for the user to sign in via SMS.
 
-A phone has one of three types: mobile, alternate mobile, or office. A user can have exactly one number registered for each type, and must have a mobile phone before an alternate mobile phone is added. When using a phone for multi-factor authentication (MFA) or self-service password reset (SSPR), the mobile phone is the default and the alternate mobile phone is the backup. 
+A phone has one of three types: mobile, alternate mobile, or office. A user can have one number registered for each type, and must have a mobile phone before an alternate mobile phone is added. When using a phone for multi-factor authentication (MFA) or self-service password reset (SSPR), the mobile phone is the default and the alternate mobile phone is the backup. 
 
 Mobile phones can be used for both SMS and voice calls, depending on the tenant settings.
 
 An office phone can only receive voice calls, not SMS messages.
 
-The SMS sign-in state property gives information about whether or not a phone number is ready to perform SMS sign-in. The possible values are:
+The SMS sign-in state property gives information about whether or not a phone number is ready to sign in via SMS. The following are the possible values.
 
 |Value|Description|
 |--------|-----------|
-|`notSupported`|Primary sign-in not supported on this authentication method--for example, sign-in can be enabled only on a user's primary mobile number, not the alternate number|
-|`notAllowedByPolicy`|This user isn't enabled by policy to use this method as a primary sign-in|
-|`notConfigured`|This user is enabled by policy to use this method as primary sign-in but needs to take additional action to configure it|
-|`phoneNumberNotUnique`|This user attempted to set up a phone number as primary sign-in but the number was not unique and can't be used as a sign-in name|
-|`ready`|This authentication method is ready for use in primary sign-in|
+|`notSupported`|Primary sign-in not supported on this authentication method - for example, sign-in can be enabled only on a user's primary mobile number, not the alternate number.|
+|`notAllowedByPolicy`|This user isn't enabled by policy to use this method as a primary sign-in.|
+|`notConfigured`|This user is enabled by policy to use this method as primary sign-in but needs to take additional action to configure it.|
+|`phoneNumberNotUnique`|This user attempted to set up a phone number as primary sign-in but the number was not unique and can't be used as a sign-in name.|
+|`ready`|This authentication method is ready for use in primary sign-in.|
 
 ## Methods
 
 | Method       | Return Type | Description |
 |:-------------|:------------|:------------|
-| [List phoneAuthenticationMethod](../api/Authentication-list-phonemethods.md) | [phoneAuthenticationMethod](phoneauthenticationmethod.md) | Read properties and relationships of all of this user's phoneAuthenticationMethod objects. |
-| [Get phoneAuthenticationMethod](../api/phoneauthenticationmethod-get.md) | [phoneAuthenticationMethod](phoneauthenticationmethod.md) | Read properties and relationships of phoneAuthenticationMethod object. |
+| [List](../api/Authentication-list-phonemethods.md) | [phoneAuthenticationMethod](phoneauthenticationmethod.md) | Read properties and relationships of all of this user's phoneAuthenticationMethod objects. |
+| [Get](../api/phoneauthenticationmethod-get.md) | [phoneAuthenticationMethod](phoneauthenticationmethod.md) | Read properties and relationships of phoneAuthenticationMethod object. |
 | [Update](../api/phoneauthenticationmethod-update.md) | [phoneAuthenticationMethod](phoneauthenticationmethod.md) | Update phoneAuthenticationMethod object. |
 | [Delete](../api/phoneauthenticationmethod-delete.md) | None | Delete phoneAuthenticationMethod object. |
-|[Disablesmssignin](../api/phoneauthenticationmethod-disablesmssignin.md)|None|Turn off SMS sign-in for a user.|
-|[Enablesmssignin](../api/phoneauthenticationmethod-enablesmssignin.md)|None|Turn on SMS sign-in for a user.|
+|[Disable SMS signin](../api/phoneauthenticationmethod-disablesmssignin.md)|None|Turn off SMS sign-in for a user.|
+|[Enable SMS signin](../api/phoneauthenticationmethod-enablesmssignin.md)|None|Turn on SMS sign-in for a user.|
 
 ## Properties
 
@@ -53,7 +53,7 @@ The SMS sign-in state property gives information about whether or not a phone nu
 
 ## Relationships
 
-None
+None.
 
 ## JSON representation
 
