@@ -2,7 +2,7 @@
 title: "Get a directory setting template"
 description: "Allows retrieval of the properties of the directorySettingTemplate object, including the available settings and their defaults."
 localization_priority: Normal
-author: "dkershaw10"
+author: "adimitui"
 ms.prod: "microsoft-identity-platform"
 doc_type: apiPageType
 ---
