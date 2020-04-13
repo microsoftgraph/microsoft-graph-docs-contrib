@@ -29,6 +29,7 @@ To update a subset of the properties of a user's regional and language settings:
 PATCH /settings/regionalAndLanguageSettings
 ```
 To update all of a user's regional and language settings:
+<!-- { "blockType": "ignored" } -->
 ```http
 PUT /settings/regionalAndLanguageSettings
 ```
@@ -103,28 +104,6 @@ Content-type: application/json
 }
 ```
 
-### Example 2: Update selected properties of the signed-in user
-
-#### Request
-
-The following is an example of the request.
-
-# [HTTP](#tab/http)
-<!-- {
-  "blockType": "request",
-  "name": "update_regionalAndLanguageSettings"
-}-->
-```msgraph-interactive
-PATCH https://graph.microsoft.com/beta/me/settings/regionalandlanguagesettings
-Content-type: application/json
-{
-  "authoringLanguages": [
-    "locale-value",
-    "locale-value"
-  ],
-  "defaultRegionalFormat": "locale-value"
-}
-```
 <!--
 {
   "type": "#page.annotation",
