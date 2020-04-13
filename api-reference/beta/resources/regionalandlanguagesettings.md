@@ -28,7 +28,7 @@ An open type that represents a user's preferences for languages in various conte
 |defaultTranslationLanguage         |localeInfo                   |The language a user expects to have documents, emails, and messages translated into.<br><br>Returned by default.|
 |defaultSpeechInputLanguage         |localeInfo                   |The language a user expected to use as input for text to speech scenarios.<br><br>Returned by default.|
 |defaultRegionalFormat              |localeInfo                     |The locale that drives the default date, time, and calendar formatting.<br><br>Returned by default.|
-|regionalFormatOverrides            |[regionalFormatOverrides](regionalformatoverrides.md)    |Allows a user to override their defaultRegionalFormat with field specific formats.<br><br>Returned by default.|
+|regionalFormatOverrides            |regionalFormatOverrides(regionalformatoverrides.md)    |Allows a user to override their defaultRegionalFormat with field specific formats.<br><br>Returned by default.|
 
 ## JSON representation
 
@@ -48,7 +48,7 @@ The following is a JSON definition of the resource.
     "defaultTranslationLanguage": {"odata.type":"microsoft.graph.localeInfo"},
     "defaultSpeechInputLanguage": {"odata.type":"microsoft.graph.localeInfo"},
     "defaultRegionalFormat":{"odata.type":"microsoft.graph.localeInfo"} ,
-    "regionalFormatOverrides":[{"odata.type":"microsoft.graph.regionalFormatOverrides"}]
+    "regionalFormatOverrides":{"odata.type":"microsoft.graph.regionalFormatOverrides"}
 }
 ```
 <!-- {
