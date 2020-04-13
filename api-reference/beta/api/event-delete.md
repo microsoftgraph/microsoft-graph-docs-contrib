@@ -1,7 +1,7 @@
 ---
 title: "Delete event"
 description: "Delete event."
-author: "angelgolfer-ms"
+author: "harini84"
 localization_priority: Normal
 ms.prod: "outlook"
 doc_type: apiPageType
