@@ -15,7 +15,7 @@ Namespace: microsoft.graph
 
 Initiate a reset for the password associated with a [password authentication method](../resources/passwordauthenticationmethod.md) object. This can only be done by an administrator with appropriate permissions and cannot be performed on a user's own account.
 
-This flow writes the new password to Azure Active Directory and pushes it to on-premises Active Directory if configured using password writeback. The admin can either provide a new password or have the system generate one. The user is prompted to change password on their next sign-in.
+This flow writes the new password to Azure Active Directory and pushes it to on-premises Active Directory if configured using password writeback. The admin can either provide a new password or have the system generate one. The user is prompted to change their password on their next sign in.
 
 This reset is a long-running operation and will return a link in the `Location` header where the caller can periodically check for the status of the reset.
 
@@ -47,8 +47,8 @@ POST /users/{id}/authentication/passwordMethods/{id}/resetPassword
 
 | Name          | Description   |
 |:--------------|:--------------|
-| Authorization | Bearer {token} |
-| Content-Type  | application/json |
+| Authorization | Bearer {token}. Required. |
+| Content-type  | application/json. Required. |
 
 ## Request body
 
@@ -56,11 +56,11 @@ In the request body, provide a JSON object with the following parameters.
 
 | Parameter    | Type        | Description |
 |:-------------|:------------|:------------|
-|newPassword|String|The new desired password entered by the admin. Required for tenants with hybrid password scenarios. If omitted for a cloud-only password, the system returns a system-generated password. This is a unicode string with no other encoding. It is validated against the tenant's banned password system before acceptance, and must adhere to the tenant's cloud and/or on-premises password requirements.|
+|newPassword|String|The new password entered by the admin. Required for tenants with hybrid password scenarios. If omitted for a cloud-only password, the system returns a system-generated password. This is a unicode string with no other encoding. It is validated against the tenant's banned password system before acceptance, and must adhere to the tenant's cloud and/or on-premises password requirements.|
 
 ## Response
 
-If successful, this method returns `202 ACCEPTED` response code and a URL in the `Location` header.
+If successful, this method returns a `202 ACCEPTED` response code and a URL in the `Location` header.
 
 If the caller did not submit a password, a Microsoft-generated password is provided in a JSON object in the response body.
 
@@ -68,14 +68,16 @@ If the caller did not submit a password, a Microsoft-generated password is provi
 
 | Name        | Description     |
 |:------------|:----------------|
-|Location     | Url to call to check status of the operation|
-|Retry-after  | Duration in seconds|
+|Location     | URL to call to check the status of the operation.|
+|Retry-after  | Duration in seconds.|
 
-## Example: user-submitted password
+## Examples
 
-The following is an example of how to call this API when the caller submits a desired password.
+### Example 1: User-submitted password
 
-### Request
+The following example shows how to call this API when the caller submits a password.
+
+#### Request
 
 The following is an example of the request.
 <!-- {
@@ -92,7 +94,7 @@ Content-type: application/json
 }
 ```
 
-### Response
+#### Response
 
 The following is an example of the response.
 
@@ -119,11 +121,11 @@ Location: https://graph.microsoft.com/beta/users/{id}/authentication/operations/
   "tocPath": ""
 }-->
 
-## Example: system-generated password
+### Example 2: System-generated password
 
-The following is an example of how to call this API when the caller does not submit a password.
+The following example shows how to call this API when the caller does not submit a password.
 
-### Request
+#### Request
 
 The following is an example of the request.
 <!-- {
@@ -135,7 +137,7 @@ The following is an example of the request.
 POST https://graph.microsoft.com/beta/users/{id}/authentication/passwordMethods/{id}/resetPassword
 ```
 
-### Response
+#### Response
 
 The following is an example of the response.
 
