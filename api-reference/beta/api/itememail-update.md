@@ -1,6 +1,6 @@
 ---
 title: "Update itememail"
-description: "Update the properties of an itememail object in a user's profile."
+description: "Update the properties of an itemEmail object in a user's profile."
 localization_priority: Normal
 author: "kevinbellinger"
 ms.prod: "people"
