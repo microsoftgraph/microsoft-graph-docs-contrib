@@ -13,11 +13,11 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Use this action to enable SMS sign-in for an existing `mobile` phone number. To be successfully enabled:
+Enable SMS sign-in for an existing `mobile` phone number. To be successfully enabled:
 
-* the phone must have `"phoneType": "mobile"`
-* the phone must be unique in the SMS sign-in system (i.e. no one else can also be using that number)
-* the user must be enabled for SMS sign-in in the [authentication methods](https://docs.microsoft.com/azure/active-directory/authentication/concept-authentication-methods) policy.
+* The phone must have `"phoneType": "mobile"`.
+* The phone must be unique in the SMS sign-in system (no one else can also be using that number).
+* The user must be enabled for SMS sign-in in the [authentication methods](https://docs.microsoft.com/azure/active-directory/authentication/concept-authentication-methods) policy.
 
 ## Permissions
 
@@ -48,7 +48,7 @@ POST /users/{id}/authentication/phoneMethods/{id}/enableSmsSignIn
 
 | Name          | Description   |
 |:--------------|:--------------|
-| Authorization | Bearer {token} |
+| Authorization | Bearer {token}. Required. |
 
 ## Request body
 
@@ -56,11 +56,11 @@ Do not supply a request body for this method.
 
 ## Response
 
-If successful, this method returns `200 OK` response code. It does not return anything in the response body.
+If successful, this method returns a `200 OK` response code. It does not return anything in the response body.
 
 ## Examples
 
-The following is an example of how to call this API.
+The following example shows how to call this API.
 
 ### Request
 
