@@ -48,7 +48,7 @@ None
 
 | Name      |Description|
 |:----------|:----------|
-| Authorization | Bearer {token} |
+| Authorization | Bearer {token}. Required. |
 
 ## Request body
 
