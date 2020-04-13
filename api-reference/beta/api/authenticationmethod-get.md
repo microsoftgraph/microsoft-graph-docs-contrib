@@ -1,6 +1,6 @@
 ---
 title: "Get authenticationMethod"
-description: "Retrieve the properties and relationships of an authenticationmethod object."
+description: "Retrieve the properties and relationships of an authenticationMethod object."
 localization_priority: Normal
 author: "mmcla"
 ms.prod: "microsoft-identity-platform"
@@ -13,7 +13,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Retrieve the properties and relationships of an authenticationmethod object.
+Retrieve the properties and relationships of an [authenticationMethod](../resources/authenticationmethod.md) object.
 
 ## Permissions
 
@@ -49,7 +49,7 @@ None
 
 | Name      |Description|
 |:----------|:----------|
-| Authorization | Bearer {token} |
+| Authorization | Bearer {token}. Required. |
 
 ## Request body
 
