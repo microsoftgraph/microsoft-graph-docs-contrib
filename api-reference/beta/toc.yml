@@ -8695,12 +8695,12 @@
             href: api/authentication-list-phonemethods.md
           - name: Get
             href: api/phoneauthenticationmethod-get.md
-          - name: Add
-            href: api/authentication-post-phonemethods.md
           - name: Update
             href: api/phoneauthenticationmethod-update.md
           - name: Delete
             href: api/phoneauthenticationmethod-delete.md
+          - name: Add
+            href: api/authentication-post-phonemethods.md
           - name: Enable SMS sign-in
             href: api/phoneauthenticationmethod-enablesmssignin.md
           - name: Disable SMS sign-in
