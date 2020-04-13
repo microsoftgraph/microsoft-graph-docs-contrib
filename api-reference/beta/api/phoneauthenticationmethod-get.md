@@ -1,6 +1,6 @@
 ---
 title: "Get phoneAuthenticationMethod"
-description: "Retrieve the properties and relationships of a phoneauthenticationmethod object."
+description: "Retrieve a single phoneAuthenticationMethod object."
 localization_priority: Normal
 author: "mmcla"
 ms.prod: "microsoft-identity-platform"
@@ -49,7 +49,7 @@ None
 
 | Name      |Description|
 |:----------|:----------|
-| Authorization | Bearer {token} |
+| Authorization | Bearer {token}. Required. |
 
 ## Request body
 
