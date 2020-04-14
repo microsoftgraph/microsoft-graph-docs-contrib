@@ -41,7 +41,7 @@ Represents video teleconferencing device media quality data.
 |remoteIPAddress|String|The remote IP address for the media session.|
 |remotePort|Int32|The remote media port.|
 
-## Derived types
+### Derived types
 
 | Type                                                 | Description                                                         |
 |:-----------------------------------------------------|:--------------------------------------------------------------------|
