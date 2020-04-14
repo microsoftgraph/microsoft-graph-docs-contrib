@@ -10,11 +10,7 @@ const options = {
 
 const client = Client.init(options);
 
-const forceDelete = {
-  disableUserAccounts: true
-};
-
-let res = await client.api('/domains/{id}/forceDelete')
-	.post(forceDelete);
+let res = await client.api('/applications/{id}/tokenLifetimePolicies')
+	.get();
 
 ```

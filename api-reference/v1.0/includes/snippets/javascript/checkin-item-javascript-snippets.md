@@ -10,11 +10,11 @@ const options = {
 
 const client = Client.init(options);
 
-const forceDelete = {
-  disableUserAccounts: true
+const checkin = {
+  comment: "Updating the latest guidelines"
 };
 
-let res = await client.api('/domains/{id}/forceDelete')
-	.post(forceDelete);
+let res = await client.api('/drives/{drive-id}/items/{item-id}/checkin')
+	.post(checkin);
 
 ```

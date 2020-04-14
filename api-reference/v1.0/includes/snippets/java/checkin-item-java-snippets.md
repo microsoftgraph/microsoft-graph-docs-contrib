@@ -6,8 +6,11 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 IGraphServiceClient graphClient = GraphServiceClient.builder().authenticationProvider( authProvider ).buildClient();
 
-List list = graphClient.sites("{site-id}").lists("{list-title}")
+String comment = "Updating the latest guidelines";
+
+graphClient.drives("{drive-id}").items("{item-id}")
+	.checkin(null,comment)
 	.buildRequest()
-	.get();
+	.post();
 
 ```

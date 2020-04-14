@@ -7,15 +7,13 @@ description: "Automatically generated file. DO NOT MODIFY"
 MSHTTPClient *httpClient = [MSClientFactory createHTTPClientWithAuthenticationProvider:authenticationProvider];
 
 NSString *MSGraphBaseURL = @"https://graph.microsoft.com/v1.0/";
-NSMutableURLRequest *urlRequest = [NSMutableURLRequest requestWithURL:[NSURL URLWithString:[MSGraphBaseURL stringByAppendingString:@"/organization"]]];
+NSMutableURLRequest *urlRequest = [NSMutableURLRequest requestWithURL:[NSURL URLWithString:[MSGraphBaseURL stringByAppendingString:@"/applications/{id}/tokenIssuancePolicies"]]];
 [urlRequest setHTTPMethod:@"GET"];
 
 MSURLSessionDataTask *meDataTask = [httpClient dataTaskWithRequest:urlRequest 
 	completionHandler: ^(NSData *data, NSURLResponse *response, NSError *nserror) {
 
-		NSError *jsonError = nil;
-		MSCollection *collection = [[MSCollection alloc] initWithData:data error:&jsonError];
-		MSGraphOrganization *organization = [[MSGraphOrganization alloc] initWithDictionary:[[collection value] objectAtIndex: 0] error:&nserror];
+		MSGraphTokenIssuancePolicies *tokenIssuancePolicies = [[MSGraphTokenIssuancePolicies alloc] initWithData:data error:&nserror];
 
 }];
 
