@@ -64,7 +64,7 @@ All teams are backed by Office 365 groups. The quickest way to get your team up 
 
 3. Add all members (and guests if necessary) to the group using the [add member](/graph/api/group-post-members?view=graph-rest-1.0) operation, if you did not do so in Step 1.
 
-4. After the group is successfully created, which can take upto 15 minutes after completing Step 1, create a Microsoft Teams team using the [create team from group](/graph/api/team-post?view=graph-rest-beta#example-4-create-a-team-from-group) operation. If you run into an error, the group creation process might not be completed; try waiting a few more minutes. 
+4. After the group is successfully created, which can take up to 15 minutes after completing Step 1, create a Microsoft Teams team using the [create team from group](/graph/api/team-post?view=graph-rest-beta#example-4-create-a-team-from-group) operation. If you run into an error, the group creation process might not be completed; try waiting a few more minutes. 
 
     ```http
     POST https://graph.microsoft.com/beta/teams

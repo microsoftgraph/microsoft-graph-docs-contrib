@@ -1,13 +1,15 @@
 ---
 title: "managedDeviceMobileAppConfigurationAssignment resource type"
 description: "Contains the properties used to assign an MDM app configuration to a group."
-author: "davidmu1"
+author: "dougeby"
 localization_priority: Normal
 ms.prod: "Intune"
 doc_type: resourcePageType
 ---
 
 # managedDeviceMobileAppConfigurationAssignment resource type
+
+Namespace: microsoft.graph
 
 > **Important:** Microsoft Graph APIs under the /beta version are subject to change; production use is not supported.
 
