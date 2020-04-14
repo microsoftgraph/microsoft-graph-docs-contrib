@@ -6,8 +6,9 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 GraphServiceClient graphClient = new GraphServiceClient( authProvider );
 
-var list = await graphClient.Sites["{site-id}"].Lists["{list-title}"]
+await graphClient.Drives["{drive-id}"].Items["{item-id}"]
+	.Checkout()
 	.Request()
-	.GetAsync();
+	.PostAsync();
 
 ```

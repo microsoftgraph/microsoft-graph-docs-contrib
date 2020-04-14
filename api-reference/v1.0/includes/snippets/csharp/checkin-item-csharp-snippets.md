@@ -6,8 +6,11 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 GraphServiceClient graphClient = new GraphServiceClient( authProvider );
 
-var list = await graphClient.Sites["{site-id}"].Lists["{list-title}"]
+var comment = "Updating the latest guidelines";
+
+await graphClient.Drives["{drive-id}"].Items["{item-id}"]
+	.Checkin(null,comment)
 	.Request()
-	.GetAsync();
+	.PostAsync();
 
 ```
