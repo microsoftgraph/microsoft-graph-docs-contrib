@@ -1,13 +1,15 @@
 ---
 title: "Delete targetedManagedAppConfiguration"
 description: "Deletes a targetedManagedAppConfiguration."
-author: "rolyon"
+author: "dougeby"
 localization_priority: Normal
 ms.prod: "Intune"
 doc_type: apiPageType
 ---
 
 # Delete targetedManagedAppConfiguration
+
+Namespace: microsoft.graph
 
 > **Important:** Microsoft Graph APIs under the /beta version are subject to change; production use is not supported.
 

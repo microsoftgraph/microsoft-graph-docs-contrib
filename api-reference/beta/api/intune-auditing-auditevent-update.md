@@ -1,13 +1,15 @@
 ---
 title: "Update auditEvent"
 description: "Update the properties of a auditEvent object."
-author: "rolyon"
+author: "dougeby"
 localization_priority: Normal
 ms.prod: "Intune"
 doc_type: apiPageType
 ---
 
 # Update auditEvent
+
+Namespace: microsoft.graph
 
 > **Important:** Microsoft Graph APIs under the /beta version are subject to change; production use is not supported.
 
@@ -71,7 +73,7 @@ Here is an example of the request.
 ``` http
 PATCH https://graph.microsoft.com/beta/deviceManagement/auditEvents/{auditEventId}
 Content-type: application/json
-Content-length: 1585
+Content-length: 1603
 
 {
   "@odata.type": "#microsoft.graph.auditEvent",
@@ -89,11 +91,11 @@ Content-length: 1585
     "servicePrincipalName": "Service Principal Name value",
     "ipAddress": "Ip Address value",
     "userId": "User Id value",
-    "scopeTags": [
+    "userRoleScopeTags": [
       {
-        "@odata.type": "microsoft.graph.scopeTagInfo",
-        "scopeTagName": "Scope Tag Name value",
-        "scopeTagId": "Scope Tag Id value"
+        "@odata.type": "microsoft.graph.roleScopeTagInfo",
+        "displayName": "Display Name value",
+        "roleScopeTagId": "Role Scope Tag Id value"
       }
     ]
   },
@@ -128,7 +130,7 @@ Here is an example of the response. Note: The response object shown here may be 
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 1634
+Content-Length: 1652
 
 {
   "@odata.type": "#microsoft.graph.auditEvent",
@@ -147,11 +149,11 @@ Content-Length: 1634
     "servicePrincipalName": "Service Principal Name value",
     "ipAddress": "Ip Address value",
     "userId": "User Id value",
-    "scopeTags": [
+    "userRoleScopeTags": [
       {
-        "@odata.type": "microsoft.graph.scopeTagInfo",
-        "scopeTagName": "Scope Tag Name value",
-        "scopeTagId": "Scope Tag Id value"
+        "@odata.type": "microsoft.graph.roleScopeTagInfo",
+        "displayName": "Display Name value",
+        "roleScopeTagId": "Role Scope Tag Id value"
       }
     ]
   },
@@ -180,9 +182,6 @@ Content-Length: 1634
   "category": "Category value"
 }
 ```
-
-
-
 
 
 

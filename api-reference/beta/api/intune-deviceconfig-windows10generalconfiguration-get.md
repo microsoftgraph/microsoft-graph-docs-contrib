@@ -1,13 +1,15 @@
 ---
 title: "Get windows10GeneralConfiguration"
 description: "Read properties and relationships of the windows10GeneralConfiguration object."
-author: "rolyon"
+author: "dougeby"
 localization_priority: Normal
 ms.prod: "Intune"
 doc_type: apiPageType
 ---
 
 # Get windows10GeneralConfiguration
+
+Namespace: microsoft.graph
 
 > **Important:** Microsoft Graph APIs under the /beta version are subject to change; production use is not supported.
 
@@ -36,7 +38,7 @@ GET /deviceManagement/deviceConfigurations/{deviceConfigurationId}/microsoft.gra
 ```
 
 ## Optional query parameters
-This method supports the [OData Query Parameters](https://docs.microsoft.com/en-us/graph/query-parameters) to help customize the response.
+This method supports the [OData Query Parameters](/graph/query-parameters) to help customize the response.
 
 ## Request headers
 |Header|Value|
@@ -63,7 +65,7 @@ Here is an example of the response. Note: The response object shown here may be 
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 15750
+Content-Length: 15912
 
 {
   "value": {
@@ -153,6 +155,7 @@ Content-Length: 15750
     "searchDisableIndexingRemovableDrive": true,
     "searchEnableAutomaticIndexSizeManangement": true,
     "searchBlockWebResults": true,
+    "findMyFiles": "enabled",
     "securityBlockAzureADJoinedDevicesAutoEncryption": true,
     "diagnosticsDataSubmissionMode": "none",
     "oneDriveDisableFileSync": true,
@@ -285,6 +288,7 @@ Content-Length: 15750
     "privacyBlockInputPersonalization": true,
     "privacyBlockPublishUserActivities": true,
     "privacyBlockActivityFeed": true,
+    "activateAppsWithVoice": "enabled",
     "startBlockUnpinningAppsFromTaskbar": true,
     "startMenuAppListVisibility": "collapse",
     "startMenuHideChangeAccountSettings": true,
@@ -418,13 +422,12 @@ Content-Length: 15750
     "dataProtectionBlockDirectMemoryAccess": true,
     "appManagementPackageFamilyNamesToLaunchAfterLogOn": [
       "App Management Package Family Names To Launch After Log On value"
-    ]
+    ],
+    "uninstallBuiltInApps": true,
+    "configureTimeZone": "Configure Time Zone value"
   }
 }
 ```
-
-
-
 
 
 

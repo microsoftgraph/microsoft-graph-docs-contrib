@@ -1,13 +1,15 @@
 ---
 title: "List androidWorkProfilePkcsCertificateProfiles"
 description: "List properties and relationships of the androidWorkProfilePkcsCertificateProfile objects."
-author: "rolyon"
+author: "dougeby"
 localization_priority: Normal
 ms.prod: "Intune"
 doc_type: apiPageType
 ---
 
 # List androidWorkProfilePkcsCertificateProfiles
+
+Namespace: microsoft.graph
 
 > **Important:** Microsoft Graph APIs under the /beta version are subject to change; production use is not supported.
 
@@ -59,7 +61,7 @@ Here is an example of the response. Note: The response object shown here may be 
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 2139
+Content-Length: 2465
 
 {
   "value": [
@@ -111,14 +113,20 @@ Content-Length: 2139
       "certificationAuthority": "Certification Authority value",
       "certificationAuthorityName": "Certification Authority Name value",
       "certificateTemplateName": "Certificate Template Name value",
-      "subjectAlternativeNameFormatString": "Subject Alternative Name Format String value"
+      "subjectAlternativeNameFormatString": "Subject Alternative Name Format String value",
+      "subjectNameFormatString": "Subject Name Format String value",
+      "certificateStore": "machine",
+      "customSubjectAlternativeNames": [
+        {
+          "@odata.type": "microsoft.graph.customSubjectAlternativeName",
+          "sanType": "emailAddress",
+          "name": "Name value"
+        }
+      ]
     }
   ]
 }
 ```
-
-
-
 
 
 
