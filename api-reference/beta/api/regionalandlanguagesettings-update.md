@@ -25,11 +25,13 @@ One of the following permissions is required to call this API. To learn more, in
 ## HTTP request
 
 To update all of a user's regional and language settings:
+<!-- { "blockType": "ignored" } -->
 ```http
 PUT /settings/regionalAndLanguageSettings
 ```
 
 To update a subset of the properties of a user's regional and language settings:
+<!-- { "blockType": "ignored" } -->
 ```http
 PATCH /settings/regionalAndLanguageSettings
 ```
@@ -62,7 +64,7 @@ The following is an example of the request.
   "blockType": "request",
   "name": "put_regionalAndLanguageSettings"
 }-->
-```msgraph-interactive
+```http
 PUT https://graph.microsoft.com/beta/me/settings/regionalandlanguagesettings
 Content-type: application/json
 
@@ -99,6 +101,8 @@ Content-type: application/json
 }
 ```
 
+---
+
 #### Response
 
 The following is an example of the response.
@@ -123,7 +127,7 @@ The following is an example of the request.
   "blockType": "request",
   "name": "patch_regionalAndLanguageSettings"
 }-->
-```msgraph-interactive
+```http
 PATCH https://graph.microsoft.com/beta/me/settings/regionalandlanguagesettings
 Content-type: application/json
 
@@ -139,6 +143,8 @@ Content-type: application/json
    }
 }
 ```
+
+---
 
 #### Response
 
