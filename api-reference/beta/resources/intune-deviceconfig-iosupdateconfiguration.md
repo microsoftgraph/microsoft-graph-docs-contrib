@@ -1,13 +1,15 @@
 ---
 title: "iosUpdateConfiguration resource type"
 description: "IOS Update Configuration, allows you to configure time window within week to install iOS updates"
-author: "rolyon"
+author: "dougeby"
 localization_priority: Normal
 ms.prod: "Intune"
 doc_type: resourcePageType
 ---
 
 # iosUpdateConfiguration resource type
+
+Namespace: microsoft.graph
 
 > **Important:** Microsoft Graph APIs under the /beta version are subject to change; production use is not supported.
 
@@ -44,9 +46,12 @@ Inherits from [deviceConfiguration](../resources/intune-shared-deviceconfigurati
 |isEnabled|Boolean|Is setting enabled in UI|
 |activeHoursStart|TimeOfDay|Active Hours Start (active hours mean the time window when updates install should not happen)|
 |activeHoursEnd|TimeOfDay|Active Hours End (active hours mean the time window when updates install should not happen)|
+|desiredOsVersion|String|If left unspecified, devices will update to the latest version of the OS.|
 |scheduledInstallDays|[dayOfWeek](../resources/intune-deviceconfig-dayofweek.md) collection|Days in week for which active hours are configured. This collection can contain a maximum of 7 elements.|
 |utcTimeOffsetInMinutes|Int32|UTC Time Offset indicated in minutes|
 |enforcedSoftwareUpdateDelayInDays|Int32|Days before software updates are visible to iOS devices ranging from 0 to 90 inclusive|
+|updateScheduleType|[iosSoftwareUpdateScheduleType](../resources/intune-deviceconfig-iossoftwareupdatescheduletype.md)|Update schedule type. Possible values are: `updateOutsideOfActiveHours`, `alwaysUpdate`, `updateDuringTimeWindows`, `updateOutsideOfTimeWindows`.|
+|customUpdateTimeWindows|[customUpdateTimeWindow](../resources/intune-deviceconfig-customupdatetimewindow.md) collection|If update schedule type is set to use time window scheduling, custom time windows when updates will be scheduled. This collection can contain a maximum of 20 elements.|
 
 ## Relationships
 |Relationship|Type|Description|
@@ -104,11 +109,22 @@ Here is a JSON representation of the resource.
   "isEnabled": true,
   "activeHoursStart": "String (time of day)",
   "activeHoursEnd": "String (time of day)",
+  "desiredOsVersion": "String",
   "scheduledInstallDays": [
     "String"
   ],
   "utcTimeOffsetInMinutes": 1024,
-  "enforcedSoftwareUpdateDelayInDays": 1024
+  "enforcedSoftwareUpdateDelayInDays": 1024,
+  "updateScheduleType": "String",
+  "customUpdateTimeWindows": [
+    {
+      "@odata.type": "microsoft.graph.customUpdateTimeWindow",
+      "startDay": "String",
+      "endDay": "String",
+      "startTime": "String (time of day)",
+      "endTime": "String (time of day)"
+    }
+  ]
 }
 ```
 

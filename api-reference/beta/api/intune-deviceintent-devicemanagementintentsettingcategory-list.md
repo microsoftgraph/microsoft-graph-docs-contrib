@@ -1,13 +1,15 @@
 ---
 title: "List deviceManagementIntentSettingCategories"
 description: "List properties and relationships of the deviceManagementIntentSettingCategory objects."
-author: "rolyon"
+author: "dougeby"
 localization_priority: Normal
 ms.prod: "Intune"
 doc_type: apiPageType
 ---
 
 # List deviceManagementIntentSettingCategories
+
+Namespace: microsoft.graph
 
 > **Important:** Microsoft Graph APIs under the /beta version are subject to change; production use is not supported.
 
@@ -58,21 +60,19 @@ Here is an example of the response. Note: The response object shown here may be 
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 213
+Content-Length: 248
 
 {
   "value": [
     {
       "@odata.type": "#microsoft.graph.deviceManagementIntentSettingCategory",
       "id": "39bf2a82-2a82-39bf-822a-bf39822abf39",
-      "displayName": "Display Name value"
+      "displayName": "Display Name value",
+      "hasRequiredSetting": true
     }
   ]
 }
 ```
-
-
-
 
 
 

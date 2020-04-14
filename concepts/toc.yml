@@ -13,6 +13,7 @@ items:
       - name: Services in Microsoft Graph
         href: overview-major-services.md
       - name: What's new
+        expanded: true
         items:
           - name: What's new highlights
             href: whats-new-overview.md
@@ -31,7 +32,7 @@ items:
       - name: Tutorials
         items:
           - name: Overview
-            href: tutorials.md
+            href: tutorials.yml
           - name: .NET Core
             href: /graph/tutorials/dotnet-core
           - name: Android
@@ -48,6 +49,8 @@ items:
             href: /graph/tutorials/ios-swift
           - name: Java
             href: /graph/tutorials/java
+          - name: JavaScript
+            href: /graph/tutorials/javascript
           - name: Node.js
             href: /graph/tutorials/node
           - name: PHP
@@ -86,12 +89,36 @@ items:
             href: outlook-get-free-busy-schedule.md
           - name: Propose new meeting times (preview)
             href: outlook-calendar-meeting-proposals.md
+          - name: Organize or attend online meetings
+            href: outlook-calendar-online-meetings.md
           - name: Schedule recurring events
             href: outlook-schedule-recurring-events.md
+          - name: Share or delegate calendar
+            href: outlook-share-or-delegate-calendar.md
           - name: Get shared events
             href: outlook-get-shared-events-calendars.md
+          - name: Create shared events
+            href: outlook-create-event-in-shared-delegated-calendar.md
           - name: Immutable ID
             href: outlook-immutable-id.md
+      - name: Cloud communications
+        items:
+          - name: Overview
+            href: cloud-communications-concept-overview.md
+          - name: Get started
+            href: cloud-communications-get-started.md
+          - name: Calls
+            href: cloud-communications-calls.md
+          - name: Media
+            href: cloud-communications-media.md
+          - name: Online meetings
+            href: cloud-communications-online-meetings.md
+          - name: Call records (preview)
+            href: cloud-communications-callrecords.md
+          - name: Manage phone numbers for bots
+            href: cloud-communications-phone-number.md
+          - name: Limits
+            href: cloud-communications-limits.md
       - name: Cross-device experiences
         displayName: Project Rome
         items:
@@ -140,7 +167,7 @@ items:
         displayname: Dynamics, Dynamics 365 Business Central
       - name: Identity and access
         href: azuread-identity-access-management-concept-overview.md
-        displayName: Azure AD, Microsoft identity platform
+        displaName: Azure AD, Microsoft identity platform
       - name: Mail
         displayName: Outlook, Outlook mail
         items:
@@ -148,16 +175,16 @@ items:
             href: outlook-mail-concept-overview.md
           - name: Automate messaging
             href: outlook-create-send-messages.md
+          - name: Organize messages
+            href: outlook-organize-messages.md
           - name: Get MIME content
             href: outlook-get-mime-message.md
+          - name: Attach large files (preview)
+            href: outlook-large-attachments.md
           - name: Get shared messages
             href: outlook-share-messages-folders.md
           - name: Send mail from another user
             href: outlook-send-mail-from-other-user.md
-          - name: Attach large files (preview)
-            href: outlook-large-attachments.md
-          - name: Organize messages
-            href: outlook-organize-messages.md
           - name: Immutable ID
             href: outlook-immutable-id.md
       - name: Notes
@@ -214,6 +241,12 @@ items:
                 href: notifications-integrating-with-android.md
               - name: IOS app integration
                 href: notifications-integrating-with-ios.md
+      - name: People and workplace intelligence
+        items:
+          - name: Overview
+            href: social-intel-concept-overview.md
+          - name: Get information about relevant people
+            href: people-example.md
       - name: Personal contacts
         displayName: Outlook, Outlook contacts, Outlook contact, People
         items:
@@ -224,7 +257,31 @@ items:
           - name: Immutable ID
             href: outlook-immutable-id.md
       - name: Reports
-        href: reportroot-concept-overview.md
+        items:
+          - name: Overview
+            href: reportroot-concept-overview.md
+          - name: Authorization for Office 365 usage reports
+            href: reportroot-authorization.md
+      - name: Search (preview)
+        items:
+          - name: Overview
+            href: search-concept-overview.md
+          - name: Query
+            items:
+              - name: Search messages
+                href: search-concept-messages.md
+              - name: Search events
+                href: search-concept-events.md
+              - name: Search files
+                href: search-concept-files.md
+              - name: Search connectors
+                href: search-concept-custom-types.md
+          - name: Index
+            items:
+              - name: Manage connections
+                href: search-index-manage-connections.md
+              - name: Manage items
+                href: search-index-manage-items.md
       - name: Security
         items:
           - name: Overview
@@ -235,17 +292,13 @@ items:
             href: security-authorization.md
           - name: Integrated solutions
             href: security-integration.md
+          - name: Information Protection
+            href: information-protection-overview.md
           - name: Partner opportunities
             href: security-partner-overview.md
       - name: Sites and lists
         href: sharepoint-concept-overview.md
         displayName: SharePoint, OneDrive, OneDrive for Business, OneDrive business, OneDrive personal
-      - name: Social and workplace intelligence
-        items:
-          - name: Overview
-            href: social-intel-concept-overview.md
-          - name: Get information about relevant people
-            href: people-example.md
       - name: Tasks and plans
         href: planner-concept-overview.md
         displayName: Planner
@@ -264,6 +317,10 @@ items:
             href: teams-protected-apis.md
           - name: Send proactive messages with a bot
             href: teams-proactive-messaging.md
+      - name: Universal Print
+        items:
+          - name: Overview
+            href: universal-print-concept-overview.md
       - name: Workbooks and charts
         displayName: Excel
         items:
@@ -310,7 +367,8 @@ items:
             href: paging.md
           - name: Use query parameters
             href: query-parameters.md
-          - name: Batch requests
+          - name: Batching
+            displayName: Batch requests
             href: json-batching.md
           - name: Throttling
             href: throttling.md
@@ -323,8 +381,10 @@ items:
                 href: /graph/tutorials/change-notifications
               - name: Missing Outlook notifications (preview)
                 href: webhooks-outlook-authz.md
-          - name: Track changes
-            displayName: Delta query, Outlook calendar, Groups, Outlook mail, Users
+              - name: Notifications with resource data (preview)
+                href: webhooks-with-resource-data.md
+          - name: Change tracking
+            displayName: Delta query, track changes, Outlook calendar, Groups, Outlook mail, Users
             items:
               - name: Overview
                 href: delta-query-overview.md
@@ -393,26 +453,34 @@ items:
             href: sdks/create-client.md
           - name: Choose an authentication provider
             href: sdks/choose-authentication-providers.md
+          - name: Create requests
+            href: sdks/create-requests.md
       - name: Use the toolkit
         items:
           - name: Toolkit overview
             href: toolkit/overview.md
+          - name: Get started
+            href: toolkit/get-started.md
           - name: Components
             items:
               - name: Login
                 href: toolkit/components/login.md
+              - name: Get
+                href: toolkit/components/get.md
               - name: Person
                 href: toolkit/components/person.md
               - name: People
                 href: toolkit/components/people.md
+              - name: Person Card
+                href: toolkit/components/person-card.md
+              - name: People Picker
+                href: toolkit/components/people-picker.md
+              - name: Teams Channel Picker
+                href: toolkit/components/teams-channel-picker.md
               - name: Agenda
                 href: toolkit/components/agenda.md
               - name: Tasks
                 href: toolkit/components/tasks.md
-              - name: People-Picker
-                href: toolkit/components/people-picker.md
-              - name: Person-Card
-                href: toolkit/components/person-card.md
           - name: Providers
             items:
               - name: Using the providers
@@ -423,6 +491,8 @@ items:
                 href: toolkit/providers/sharepoint.md
               - name: Microsoft Teams provider
                 href: toolkit/providers/teams.md
+              - name: Proxy provider
+                href: toolkit/providers/proxy.md
               - name: Custom provider
                 href: toolkit/providers/custom.md
           - name: Styling components

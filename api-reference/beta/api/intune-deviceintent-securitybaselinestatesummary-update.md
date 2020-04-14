@@ -1,13 +1,15 @@
 ---
 title: "Update securityBaselineStateSummary"
 description: "Update the properties of a securityBaselineStateSummary object."
-author: "rolyon"
+author: "dougeby"
 localization_priority: Normal
 ms.prod: "Intune"
 doc_type: apiPageType
 ---
 
 # Update securityBaselineStateSummary
+
+Namespace: microsoft.graph
 
 > **Important:** Microsoft Graph APIs under the /beta version are subject to change; production use is not supported.
 
@@ -97,9 +99,6 @@ Content-Length: 262
   "notApplicableCount": 2
 }
 ```
-
-
-
 
 
 

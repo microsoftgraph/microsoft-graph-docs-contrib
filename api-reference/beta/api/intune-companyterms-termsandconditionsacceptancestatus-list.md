@@ -1,13 +1,15 @@
 ---
 title: "List termsAndConditionsAcceptanceStatuses"
 description: "List properties and relationships of the termsAndConditionsAcceptanceStatus objects."
-author: "rolyon"
+author: "dougeby"
 localization_priority: Normal
 ms.prod: "Intune"
 doc_type: apiPageType
 ---
 
 # List termsAndConditionsAcceptanceStatuses
+
+Namespace: microsoft.graph
 
 > **Important:** Microsoft Graph APIs under the /beta version are subject to change; production use is not supported.
 
@@ -58,7 +60,7 @@ Here is an example of the response. Note: The response object shown here may be 
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 313
+Content-Length: 370
 
 {
   "value": [
@@ -67,14 +69,12 @@ Content-Length: 313
       "id": "a045ce1a-ce1a-a045-1ace-45a01ace45a0",
       "userDisplayName": "User Display Name value",
       "acceptedVersion": 15,
-      "acceptedDateTime": "2016-12-31T23:57:43.6165506-08:00"
+      "acceptedDateTime": "2016-12-31T23:57:43.6165506-08:00",
+      "userPrincipalName": "User Principal Name value"
     }
   ]
 }
 ```
-
-
-
 
 
 

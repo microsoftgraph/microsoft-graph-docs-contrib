@@ -1,13 +1,15 @@
 ---
 title: "event: decline"
 description: "Decline invitation to the specified event in a user calendar."
-author: "angelgolfer-ms"
+author: "harini84"
 localization_priority: Normal
 ms.prod: "outlook"
 doc_type: apiPageType
 ---
 
 # event: decline
+
+Namespace: microsoft.graph
 
 Decline invitation to the specified [event](../resources/event.md) in a user [calendar](../resources/calendar.md).
 
@@ -120,7 +122,7 @@ Here is an example of the response.
 } -->
 
 ```http
-HTTP/1.1 200 OK
+HTTP/1.1 202 Accepted
 ```
 
 <br/>
