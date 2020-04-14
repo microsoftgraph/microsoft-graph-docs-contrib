@@ -108,7 +108,6 @@ The following is an example of the response.
   "@odata.type": "microsoft.graph.regionalAndLanguageSettings",
   "name": "put_regionalAndLanguageSettings"
 } -->
-
 ```http
 HTTP/1.1 204 No Content
 ```
@@ -150,7 +149,6 @@ The following is an example of the response.
   "@odata.type": "microsoft.graph.regionalAndLanguageSettings",
   "name": "patch_regionalAndLanguageSettings"
 } -->
-
 ```http
 HTTP/1.1 204 No Content
 ```
