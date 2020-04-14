@@ -1,13 +1,15 @@
 ---
 title: "vpnEncryptionAlgorithmType enum type"
 description: "The type of VPN security association encryption algorithm"
-author: "davidmu1"
+author: "dougeby"
 localization_priority: Normal
 ms.prod: "Intune"
 doc_type: enumPageType
 ---
 
 # vpnEncryptionAlgorithmType enum type
+
+Namespace: microsoft.graph
 
 > **Important:** Microsoft Graph APIs under the /beta version are subject to change; production use is not supported.
 
