@@ -68,30 +68,24 @@ Content-type: application/json
 
 {
     "defaultDisplayLanguage": {
-        "locale": "en-US",
-        "displayName": "English (United States)"
+        "locale": "en-US"
     },
     "authoringLanguages": [
         {
-            "locale": "fr-FR",
-            "displayName": "French (France)"
+            "locale": "fr-FR"
         },
         {
-            "locale": "de-DE",
-            "displayName": "German (Germany)"
-        },
+            "locale": "de-DE"
+        }
     ],
     "defaultTranslationLanguage": {
-        "locale": "en-US",
-        "displayName": "English (United States)"
+        "locale": "en-US"
     },
     "defaultSpeechInputLanguage": {
-        "locale": "en-US",
-        "displayName": "English (United States)"
+        "locale": "en-US"
     },
     "defaultRegionalFormat": {
-        "locale": "en-GB",
-        "displayName": "English (United Kingdom)"
+        "locale": "en-GB"
     },
     "regionalFormatOverrides": {
         "calendar": "Gregorian Calendar",
@@ -113,6 +107,48 @@ The following is an example of the response.
   "truncated": true,
   "@odata.type": "microsoft.graph.regionalAndLanguageSettings",
   "name": "put_regionalAndLanguageSettings"
+} -->
+
+```http
+HTTP/1.1 204 No Content
+```
+
+### Example 2: Update selected properties of the signed-in user
+
+#### Request
+
+The following is an example of the request.
+
+# [HTTP](#tab/http)
+<!-- {
+  "blockType": "request",
+  "name": "patch_regionalAndLanguageSettings"
+}-->
+```msgraph-interactive
+PATCH https://graph.microsoft.com/beta/me/settings/regionalandlanguagesettings
+Content-type: application/json
+
+{
+  "authoringLanguages": [
+    {
+     "locale": "en-US" },
+    {
+     "locale": "es-MX" }
+  ],
+  "defaultRegionalFormat": {
+     "locale": "en-US"
+   }
+}
+```
+
+#### Response
+
+The following is an example of the response.
+<!-- {
+  "blockType": "response",
+  "truncated": true,
+  "@odata.type": "microsoft.graph.regionalAndLanguageSettings",
+  "name": "patch_regionalAndLanguageSettings"
 } -->
 
 ```http
