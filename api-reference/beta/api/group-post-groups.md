@@ -148,9 +148,6 @@ Content-type: application/json
 	 "description": "Self help community for golf",
 	 "displayName": "Golf Assist",
 	 "expirationDateTime": null,
-   "externalGroupIds": [],
-   "externalGroupProviderId": null,
-   "externalGroupState": null,
 	 "groupTypes": [
 	     "Unified"
 	 ],
@@ -160,7 +157,6 @@ Content-type: application/json
 	 "mailNickname": "golfassist",
 	 "membershipRule": null,
 	 "membershipRuleProcessingState": null,
-   "membershipTypes": [],
 	 "onPremisesLastSyncDateTime": null,
 	 "onPremisesSecurityIdentifier": null,
 	 "onPremisesSyncEnabled": null,
@@ -255,9 +251,6 @@ Content-type: application/json
     "description": "Group with designated owner and members",
     "displayName": "Operations group",
     "expirationDateTime": null,
-    "externalGroupIds": [],
-    "externalGroupProviderId": null,
-    "externalGroupState": null,
     "groupTypes": [
         "Unified"
     ],
@@ -267,7 +260,6 @@ Content-type: application/json
     "mailNickname": "operations2019",
     "membershipRule": null,
     "membershipRuleProcessingState": null,
-    "membershipTypes": [],
     "onPremisesLastSyncDateTime": null,
     "onPremisesSecurityIdentifier": null,
     "onPremisesSyncEnabled": null,
@@ -314,7 +306,7 @@ Content-Type: application/json
 }
 ```
 
-> **Note:** The **visibility** and **groupTypes** properties are not required for creation, but are auto-populated with these values.
+> **Note:** The **visibility** and **groupTypes** properties are not required for creation, but are auto-populated with these values. A group with **isAssignableToRole** property set to `true` cannot be of dynamic membership type and cannot have an owner. For more information, see [Using a group to manage Azure AD role assignments](https://go.microsoft.com/fwlink/?linkid=2103037).
 
 #### Response
 
@@ -339,9 +331,6 @@ Content-type: application/json
   "description": "Group assignable to a role",
   "displayName": "Role assignable group",
   "expirationDateTime": null,
-  "externalGroupIds": [],
-  "externalGroupProviderId": null,
-  "externalGroupState": null,
   "groupTypes": [
     "Unified"
   ],
@@ -351,7 +340,6 @@ Content-type: application/json
   "mailNickname": "contosohelpdeskadministrators",
   "membershipRule": null,
   "membershipRuleProcessingState": null,
-  "membershipTypes": [],
   "onPremisesLastSyncDateTime": null,
   "onPremisesSecurityIdentifier": null,
   "onPremisesSyncEnabled": null,
