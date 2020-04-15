@@ -1,13 +1,15 @@
 ---
 title: "Create auditEvent"
 description: "Create a new auditEvent object."
-author: "rolyon"
+author: "dougeby"
 localization_priority: Normal
 ms.prod: "Intune"
 doc_type: apiPageType
 ---
 
 # Create auditEvent
+
+Namespace: microsoft.graph
 
 > **Important:** Microsoft Graph APIs under the /beta version are subject to change; production use is not supported.
 
@@ -180,8 +182,6 @@ Content-Length: 1652
   "category": "Category value"
 }
 ```
-
-
 
 
 

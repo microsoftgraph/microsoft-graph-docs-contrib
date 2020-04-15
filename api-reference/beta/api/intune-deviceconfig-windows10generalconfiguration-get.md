@@ -1,13 +1,15 @@
 ---
 title: "Get windows10GeneralConfiguration"
 description: "Read properties and relationships of the windows10GeneralConfiguration object."
-author: "rolyon"
+author: "dougeby"
 localization_priority: Normal
 ms.prod: "Intune"
 doc_type: apiPageType
 ---
 
 # Get windows10GeneralConfiguration
+
+Namespace: microsoft.graph
 
 > **Important:** Microsoft Graph APIs under the /beta version are subject to change; production use is not supported.
 
@@ -63,7 +65,7 @@ Here is an example of the response. Note: The response object shown here may be 
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 15785
+Content-Length: 15912
 
 {
   "value": {
@@ -153,6 +155,7 @@ Content-Length: 15785
     "searchDisableIndexingRemovableDrive": true,
     "searchEnableAutomaticIndexSizeManangement": true,
     "searchBlockWebResults": true,
+    "findMyFiles": "enabled",
     "securityBlockAzureADJoinedDevicesAutoEncryption": true,
     "diagnosticsDataSubmissionMode": "none",
     "oneDriveDisableFileSync": true,
@@ -285,6 +288,7 @@ Content-Length: 15785
     "privacyBlockInputPersonalization": true,
     "privacyBlockPublishUserActivities": true,
     "privacyBlockActivityFeed": true,
+    "activateAppsWithVoice": "enabled",
     "startBlockUnpinningAppsFromTaskbar": true,
     "startMenuAppListVisibility": "collapse",
     "startMenuHideChangeAccountSettings": true,
@@ -419,12 +423,11 @@ Content-Length: 15785
     "appManagementPackageFamilyNamesToLaunchAfterLogOn": [
       "App Management Package Family Names To Launch After Log On value"
     ],
-    "uninstallBuiltInApps": true
+    "uninstallBuiltInApps": true,
+    "configureTimeZone": "Configure Time Zone value"
   }
 }
 ```
-
-
 
 
 

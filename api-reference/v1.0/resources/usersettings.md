@@ -1,13 +1,15 @@
 ---
 title: "userSettings resource type"
 description: "The current user settings for content discovery. "
-author: "dkershaw10"
+author: "krbain"
 localization_priority: Priority
 ms.prod: "microsoft-identity-platform"
 doc_type: resourcePageType
 ---
 
 # userSettings resource type
+
+Namespace: microsoft.graph
 
 The current user settings for content discovery.
 To learn how to get or update user settings, see [Get settings](../api/usersettings-get.md) and [Update settings](../api/usersettings-update.md).
@@ -16,6 +18,9 @@ This resource supports:
 
 - Checking whether a user and the user's organization contribute to content discovery.
 - Disabling or enabling content discovery for specific users. This also disables documents in Office Delve.
+
+> [!NOTE]
+> This endpoint works only with users. You can't use this endpoint with contacts.
 
 ## Methods
 | Method       | Return Type  |Description|

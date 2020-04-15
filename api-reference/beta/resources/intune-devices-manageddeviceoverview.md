@@ -1,13 +1,15 @@
 ---
 title: "managedDeviceOverview resource type"
 description: "Summary data for managed devices"
-author: "rolyon"
+author: "dougeby"
 localization_priority: Normal
 ms.prod: "Intune"
 doc_type: resourcePageType
 ---
 
 # managedDeviceOverview resource type
+
+Namespace: microsoft.graph
 
 > **Important:** Microsoft Graph APIs under the /beta version are subject to change; production use is not supported.
 
@@ -62,7 +64,8 @@ Here is a JSON representation of the resource.
     "androidDedicatedCount": 1024,
     "androidDeviceAdminCount": 1024,
     "androidFullyManagedCount": 1024,
-    "androidWorkProfileCount": 1024
+    "androidWorkProfileCount": 1024,
+    "configMgrDeviceCount": 1024
   },
   "deviceExchangeAccessStateSummary": {
     "@odata.type": "microsoft.graph.deviceExchangeAccessStateSummary",

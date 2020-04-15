@@ -1,13 +1,15 @@
 ---
 title: "List owners"
-description: "Retrieve a list of the group's owners. The owners are a set of non-admin users who are allowed to modify the group object."
+description: "Retrieve a list of the group's owners."
 localization_priority: Normal
-author: "dkershaw10"
+author: "yyuank"
 ms.prod: "groups"
 doc_type: apiPageType
 ---
 
 # List owners
+
+Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 

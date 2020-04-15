@@ -3,15 +3,17 @@ title: "synchronizationSchema: parseExpression"
 description: "(../resources/synchronization_attributemappingsource.md) object. "
 localization_priority: Normal
 doc_type: apiPageType
-author: "davidmu1"
+author: "ArvindHarinder1"
 ms.prod: "microsoft-identity-platform"
 ---
 
 # synchronizationSchema: parseExpression
 
+Namespace: microsoft.graph
+
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Parse a given string expression into an [attributeMappingSource|(../resources/synchronization_attributemappingsource.md) object.
+Parse a given string expression into an [attributeMappingSource](../resources/synchronization-attributemappingsource.md) object.
 
 For more information about expressions, see [Writing Expressions for Attribute Mappings in Azure Active Directory](/azure/active-directory/active-directory-saas-writing-expressions-for-attribute-mappings).
 

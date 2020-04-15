@@ -9,6 +9,8 @@ doc_type: "apiPageType"
 
 # openShiftChangeRequest: decline
 
+Namespace: microsoft.graph
+
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 Decline an [openshiftchangerequest](../resources/openshiftchangerequest.md) object.
@@ -28,7 +30,7 @@ One of the following permissions is required to call this API. To learn more, in
 <!-- { "blockType": "ignored" } -->
 
 ```http
-POST /teams/{id}/schedule/openShiftsChangeRequests/decline
+POST /teams/{id}/schedule/openShiftsChangeRequests/{openShiftChangeRequestId}/decline
 ```
 
 ## Request headers
@@ -62,7 +64,7 @@ The following is an example of the request.
 }-->
 
 ```http
-POST https://graph.microsoft.com/beta/teams/{id}/schedule/openShiftsChangeRequests/decline
+POST https://graph.microsoft.com/beta/teams/{id}/schedule/openShiftsChangeRequests/{openShiftChangeRequestId}/decline
 Content-type: application/json
 
 {

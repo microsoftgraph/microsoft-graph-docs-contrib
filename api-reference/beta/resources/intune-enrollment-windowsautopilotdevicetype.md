@@ -1,13 +1,15 @@
 ---
 title: "windowsAutopilotDeviceType enum type"
 description: "Not yet documented"
-author: "rolyon"
+author: "dougeby"
 localization_priority: Normal
 ms.prod: "Intune"
 doc_type: enumPageType
 ---
 
 # windowsAutopilotDeviceType enum type
+
+Namespace: microsoft.graph
 
 > **Important:** Microsoft Graph APIs under the /beta version are subject to change; production use is not supported.
 
@@ -20,6 +22,7 @@ Not yet documented
 |:---|:---|:---|
 |windowsPc|0|Windows PC|
 |surfaceHub2|1|Surface Hub 2|
+|holoLens|2|HoloLens|
 
 
 

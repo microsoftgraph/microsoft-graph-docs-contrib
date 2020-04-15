@@ -1,13 +1,15 @@
 ---
 title: "deviceManagementSubscriptionState enum type"
 description: "Tenant mobile device management subscription state."
-author: "rolyon"
+author: "dougeby"
 localization_priority: Normal
 ms.prod: "Intune"
 doc_type: enumPageType
 ---
 
 # deviceManagementSubscriptionState enum type
+
+Namespace: microsoft.graph
 
 > **Important:** Microsoft Graph APIs under the /beta version are subject to change; production use is not supported.
 
