@@ -77,8 +77,8 @@ If successful, this method returns a `200 OK` response code and [oauth2permissio
 
 See:
 
-- [Using Delta Query](/graph/delta-query-overview) for more details</br>
-- [Get incremental changes for users](/graph/delta-query-users) for example requests.</br>
+- [Using Delta Query](/graph/delta-query-overview) for more details.
+- [Get incremental changes for users](/graph/delta-query-users) for example requests.
 
 ## Example
 ### Request
