@@ -61,6 +61,7 @@ The `mgt-people` supports several [templates](../templates.md) that you can use 
 | `person` | `person`: person object | The template used to render each person. |
 | `overflow` | `people`: list of person objects <br> `max`: number of shown people <br> `extra`: number of extra people | The template used to render the number beyond the max to the right of the list of people. |
 | `no-data` | No data context is passed | The template used when no data is available. |
+| `loading` | No data context is passed | The template used while the component loads state.
 
 The following examples shows how to use the `person` template.
 
@@ -88,3 +89,15 @@ This component uses the following Microsoft Graph APIs and permissions:
 ## Authentication
 
 The control uses the global authentication provider described in the [authentication documentation](./../providers.md).
+
+## Extend for more control
+
+For more complex scenarios or a truly custom UX, this component exposes several `protected render*` methods for override in component extensions.
+
+| Method | Description |
+| - | - |
+| renderLoading | Renders the loading state. |
+| renderNoData | Renders the empty data state. |
+| renderPeople | Renders a list of people, up to the `show-max` value. |
+| renderPerson | Renders an individual person. |
+| renderOverflow | Renders a representation of remaining people beyond the `show-max` value. |

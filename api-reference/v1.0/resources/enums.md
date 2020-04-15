@@ -684,6 +684,36 @@ Possible values for user account types (group membership), per Windows definitio
 |restId|
 |restImmutableEntryId|
 
+### onlineMeetingProviderType values
+
+|Member|
+|:---|
+|unknown|
+|skypeForBusiness|
+|skypeForConsumer|
+|teamsForBusiness|
+
+### delegateMeetingMessageDeliveryOptions values
+
+|Member|
+|:---|
+|sendToDelegateAndInformationToPrincipal|
+|sendToDelegateAndPrincipal|
+|sendToDelegateOnly|
+
+### calendarRoleType values
+
+|Member|
+|:---|
+|none|
+|freeBusyRead|
+|limitedRead|
+|read|
+|write|
+|delegateWithoutPrivateEventAccess|
+|delegateWithPrivateEventAccess|
+|custom|
+
 ### threatAssessmentContentType values
 
 | Member | Value | Description             |
@@ -751,3 +781,4 @@ Possible values for user account types (group membership), per Windows definitio
 | notJunk               | 13    | Allow due to not junk.              |
 | junk                  | 14    | Blocked due to junk.                |
 | unknownFutureValue    | 15    | A sentinel member.                  |
+
