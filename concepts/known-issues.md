@@ -319,12 +319,12 @@ In both the v1 and beta endpoints, the response of `GET /users/id/messages` incl
 
 ## Teamwork (Microsoft Teams)
 
-### GET /teams and POST /teams are not supported
+### GET /teams is not supported; POST /teams is only available in beta
 
 See [list all teams](teams-list-all-teams.md) and 
 [list your teams](/graph/api/user-list-joinedteams?view=graph-rest-1.0)
 to get a list of teams.
-See [create team](/graph/api/team-put-teams?view=graph-rest-1.0) for creating teams.
+See [create team](/graph/api/team-put-teams?view=graph-rest-1.0) for creating teams in v1.0.
 
 ### Missing teams in list all teams
 
