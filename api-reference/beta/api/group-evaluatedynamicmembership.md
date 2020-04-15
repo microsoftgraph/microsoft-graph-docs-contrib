@@ -11,9 +11,9 @@ doc_type: apiPageType
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Evaluate whether a user or device is a member of a dynamic group. The membership rule is returned along with other details that were used to evaluate the user or device. You can complete this operation in the following ways: 
-- Evaluate whether a user or device is a member of the specified group.  
-- Evaluate whether a user or device is a member of the specified group based on member ID and membership rule.
+Evaluate whether a user or device would be a member of a dynamic group. The membership rule is returned along with other details that were used to evaluate the user or device. You can complete this operation in the following ways: 
+- Evaluate whether a user or device would be a member of the specified group.  
+- Evaluate whether a user or device would be a member of the specified group based on member ID and membership rule.
 
 ## Permissions
 
