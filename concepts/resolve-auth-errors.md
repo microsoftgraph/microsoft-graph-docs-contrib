@@ -1,6 +1,6 @@
 ---
 title: "Resolve Microsoft Graph authorization errors"
-description: "How to resolve Microsoft Graph 401 and 403 authorization errors."
+description: "Find out how to resolve Microsoft Graph 401 and 403 authorization errors."
 author: "davidmu1"
 localization_priority: Priority
 ms.prod: "microsoft-identity-platform"
@@ -8,16 +8,16 @@ ms.prod: "microsoft-identity-platform"
 
 # Resolve Microsoft Graph authorization errors
 
-Authorization errors can be a result of several different issues, most of which generate a 403 error (with a few exceptions). For example, the following can all lead to authorization errors:
+Authorization errors can occur as a result of several different issues, most of which generate a 403 error (with a few exceptions). For example, the following can all lead to authorization errors:
 
 * Incorrect [access token acquisition flows](https://docs.microsoft.com/azure/active-directory/develop/active-directory-authentication-scenarios)
 * Poorly configured [permission scopes](https://docs.microsoft.com/azure/active-directory/develop/active-directory-v2-scopes)
 * Lack of [consent](https://docs.microsoft.com/azure/active-directory/develop/active-directory-devhowto-multi-tenant-overview#understanding-user-and-admin-consent)
 * Lack of [permissions](https://docs.microsoft.com/azure/active-directory/develop/v2-permissions-and-consent)
 
-## Steps to resolve common authorization errors
+## Steps to resolve common errors
 
-To resolve common authorization errors, try the steps described for the error that most closely match the error you're getting. More than one might apply. You can also check the answers already available on Stack Overflow for [401 errors](https://stackoverflow.com/search?q=%5Bmicrosoft-graph%5D+401+isanswered%3Ayes+views%3A50) and [403 errors](https://stackoverflow.com/search?q=%5Bmicrosoft-graph%5D+403+isanswered%3Ayes+views%3A50). If you can't find a solution to your problem, [ask a new question on Stack Overflow](https://stackoverflow.com/questions/ask) and tag with *microsoft-graph*.
+To resolve common authorization errors, try the steps described for the error that most closely match the error you're getting. More than one error might apply. You can also check the answers already available on Stack Overflow for [401 errors](https://stackoverflow.com/search?q=%5Bmicrosoft-graph%5D+401+isanswered%3Ayes+views%3A50) and [403 errors](https://stackoverflow.com/search?q=%5Bmicrosoft-graph%5D+403+isanswered%3Ayes+views%3A50). If you can't find a solution to your problem, [ask a new question on Stack Overflow](https://stackoverflow.com/questions/ask) and tag with *microsoft-graph*.
 
 **401 Unauthorized error: Is your token valid?** <br>
 
@@ -25,7 +25,7 @@ Make sure that your application is presenting a valid access token to Microsoft 
 
 **403 Forbidden error: Have you chosen the right set of permissions?**<br>
 
-Check that you have requested the correct set of permissions based on the Microsoft Graph APIs your app calls. Recommended least privileged permissions are provided in all the Microsoft Graph API reference method topics. Additionally, those permissions must be granted to the application by a user or an administrator. Granting permissions normally happens through a consent page or by granting permissions using the Azure Portal application registration blade. From the **Settings** blade for the application, click **Required Permissions**, and then click **Grant Permissions**. <br>
+Verify that you have requested the correct set of permissions based on the Microsoft Graph APIs your app calls. The least privileged permissions that we recommend are provided in all the Microsoft Graph API method reference topics. Additionally, those permissions must be granted to the application by a user or an administrator. Granting permissions normally happens through a consent page or by granting permissions using the Azure Portal application registration blade. From the **Settings** blade for the application, click **Required Permissions**, and then click **Grant Permissions**. <br>
 
 * [Microsoft Graph permissions](https://docs.microsoft.com/graph/permissions-reference) <br>
 * [Understanding Azure AD permissions and consent](https://docs.microsoft.com/azure/active-directory/develop/v2-permissions-and-consent) <br>
@@ -46,15 +46,15 @@ Currently, there are no application permission daemon service-to-service permiss
 
 **403 Forbidden: Does the user have access and are they licensed?** <br>
 
-For delegated code flows, Microsoft Graph evaluates if the request is allowed based on the permissions granted to the app and the permissions that the signed-in user has. Generally, this error indicates that the user is not privileged enough to perform the request **or** the user is not licensed for the data being accessed. Only users with the required permissions or licenses can make the request successfully.
+For delegated code flows, Microsoft Graph evaluates whether the request is allowed based on the permissions granted to the app and the permissions that the signed-in user has. Generally, this error indicates that the user is not privileged enough to perform the request **or** the user is not licensed for the data being accessed. Only users with the required permissions or licenses can make the request successfully.
 
 **403 Forbidden: Did you select the correct resource API?** <br>
 
-API services like Microsoft Graph check that the *aud* claim (audience) in the received access token matches the value it expects for itself, and if not, it results in a 403 Forbidden error. A common mistake resulting in this error is trying to use a token acquired for Azure AD Graph APIs, Outlook APIs, or SharePoint/OneDrive APIs to call Microsoft Graph (or vice versa). Ensure that the resource (or scope) your app is acquiring a token for matches the API that the app is calling.
+API services like Microsoft Graph check that the *aud* claim (audience) in the received access token matches the value it expects for itself, and if not, it results in a `403 Forbidden` error. A common mistake that causes in this error is trying to use a token acquired for Azure AD Graph APIs, Outlook APIs, or SharePoint/OneDrive APIs to call Microsoft Graph (or vice versa). Ensure that the resource (or scope) your app is acquiring a token for matches the API that the app is calling.
 
 **400 Bad Request or 403 Forbidden: Does the user comply with their organization's conditional access (CA) policies?**<br>
 
-Based on an organization's CA policies, a user accessing Microsoft Graph resources via your app may be challenged for additional information that is not present in the access token your app originally acquired. In this case, your app receives a 400 with an *interaction_required* error during access token acquisition or a 403 with *insufficient_claims* error when calling Microsoft Graph. In both cases, the error response contains additional information that can be presented to the authorize endpoint to challenge the user for additional information (like multi-factor authentication or device enrollment).
+Based on an organization's CA policies, a user accessing Microsoft Graph resources via your app might be challenged for additional information that is not present in the access token your app originally acquired. In this case, your app receives a 400 with an *interaction_required* error during access token acquisition or a 403 with *insufficient_claims* error when calling Microsoft Graph. In both cases, the error response contains additional information that can be presented to the authorize endpoint to challenge the user for additional information (like multi-factor authentication or device enrollment).
 
 * [Handling conditional access challenges using MSAL](https://docs.microsoft.com/azure/active-directory/develop/msal-handling-exceptions#conditional-access-and-claims-challenges)
 * [Developer guidance for Azure Active Directory conditional access](https://docs.microsoft.com/azure/active-directory/develop/conditional-access-dev-guide)
