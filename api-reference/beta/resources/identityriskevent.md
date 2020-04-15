@@ -3,11 +3,13 @@ title: "identityRiskEvent resource type"
 description: "A risk event detected by Azure Active Directory Identity Protection. It is the base type for each specific risk event type:"
 author: "cloudhandler"
 localization_priority: Normal
-ms.prod: "security"
+ms.prod: "microsoft-identity-platform"
 doc_type: resourcePageType
 ---
 
 # identityRiskEvent resource type
+
+Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
@@ -25,7 +27,7 @@ A risk event detected by [Azure Active Directory Identity Protection](https://az
 |[suspiciousIpRiskEvent](suspiciousipriskevent.md) | Sign-ins from suspicious IP addresses. |
 |[unfamiliarLocationRiskEvent](unfamiliarlocationriskevent.md) | Sign-ins from unfamiliar locations. |
 
-Complete information about risk events can be found in the [Azure AD Identity Protection documentation](https://docs.microsoft.com/azure/active-directory/active-directory-reporting-risk-events).
+Complete information about risk events can be found in the [Azure AD Identity Protection documentation](/azure/active-directory/active-directory-reporting-risk-events).
 
 ## Methods
 
@@ -54,7 +56,7 @@ Complete information about risk events can be found in the [Azure AD Identity Pr
 
 ## JSON representation
 
-Here is a JSON representation of the resource. 
+Here is a JSON representation of the resource.
 
 <!-- {
   "blockType": "resource",

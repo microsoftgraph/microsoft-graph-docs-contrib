@@ -2,12 +2,14 @@
 title: "onlineMeetingInfo resource type"
 description: "Details for an attendee to join the meeting online."
 localization_priority: Normal
-author: "VinodRavichandran"
+author: "ananmishr"
 ms.prod: "microsoft-teams"
 doc_type: "resourcePageType"
 ---
 
 # onlineMeetingInfo resource type
+
+Namespace: microsoft.graph
 
 Details for an attendee to join the meeting online.
 

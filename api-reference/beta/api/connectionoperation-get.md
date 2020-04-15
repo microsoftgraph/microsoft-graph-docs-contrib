@@ -3,11 +3,13 @@ title: "Get connectionOperation"
 description: "Retrieve the properties of a connectionOperation."
 localization_priority: Normal
 author: "snlraju-msft"
-ms.prod: ""
+ms.prod: "search"
 doc_type: "apiPageType"
 ---
 
 # Get connectionOperation
+
+Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 

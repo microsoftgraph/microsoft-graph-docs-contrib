@@ -1,13 +1,15 @@
 ---
 title: "Get userExperienceAnalyticsDevicePerformance"
 description: "Read properties and relationships of the userExperienceAnalyticsDevicePerformance object."
-author: "rolyon"
+author: "dougeby"
 localization_priority: Normal
 ms.prod: "Intune"
 doc_type: apiPageType
 ---
 
 # Get userExperienceAnalyticsDevicePerformance
+
+Namespace: microsoft.graph
 
 > **Important:** Microsoft Graph APIs under the /beta version are subject to change; production use is not supported.
 
@@ -61,7 +63,7 @@ Here is an example of the response. Note: The response object shown here may be 
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 592
+Content-Length: 629
 
 {
   "value": {
@@ -79,13 +81,11 @@ Content-Length: 592
     "loginScore": 10,
     "coreLoginTimeInMs": 1,
     "groupPolicyLoginTimeInMs": 8,
-    "deviceCount": 11
+    "deviceCount": 11,
+    "responsiveDesktopTimeInMs": 9
   }
 }
 ```
-
-
-
 
 
 

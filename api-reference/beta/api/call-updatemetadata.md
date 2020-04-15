@@ -1,13 +1,15 @@
 ---
 title: "call: updateMetadata"
 description: "Update the appliation's metadata associated with a call."
-author: "VinodRavichandran"
+author: "ananmishr"
 localization_priority: Normal
 ms.prod: "cloud-communications"
 doc_type: apiPageType
 ---
 
 # call: updateMetadata
+
+Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 

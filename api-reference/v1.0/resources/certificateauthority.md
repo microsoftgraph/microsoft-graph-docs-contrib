@@ -2,12 +2,14 @@
 title: "certificateAuthority resource type"
 description: "Represents a certificate authority."
 localization_priority: Normal
-author: "davidmu1"
+author: "adimitui"
 ms.prod: "microsoft-identity-platform"
 doc_type: "resourcePageType"
 ---
 
 # certificateAuthority resource type
+
+Namespace: microsoft.graph
 
 Represents a certificate authority.
 

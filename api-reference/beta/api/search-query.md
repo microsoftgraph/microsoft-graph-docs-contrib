@@ -1,6 +1,6 @@
 ---
 title: "search: query"
-description: "PROVIDE DESCRIPTION HERE"
+description: "Runs the query specified in the request body. Search results are provided in the response."
 localization_priority: Normal
 author: "nmoreau"
 ms.prod: "search"
@@ -9,9 +9,11 @@ doc_type: "apiPageType"
 
 # search: query
 
+Namespace: microsoft.graph
+
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Executes the query specified in the request body. Search results are provided in the response.
+Runs the query specified in the request body. Search results are provided in the response.
 
 [!INCLUDE [search-api-preview](../../includes/search-api-preview-signup.md)]
 
@@ -35,7 +37,8 @@ POST /search/query
 
 | Name          | Description   |
 |:--------------|:--------------|
-| Authorization | Bearer {token} |
+| Authorization | Bearer {token}. Required. |
+| Content-type | application/json. Required. |
 
 ## Request body
 

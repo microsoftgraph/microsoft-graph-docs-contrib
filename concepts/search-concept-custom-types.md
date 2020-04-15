@@ -1,22 +1,22 @@
 ---
-title: "Search Custom types"
-description: "The query API lets you search accross Custom types ingested via the indexing API."
+title: "Use the Microsoft Search API in Microsoft Graph to search custom types"
+description: "You can use the Microsoft Search API to import external data via the [externalItem](/graph/api/resources/externalitem?view=graph-rest-beta) resource, and run search queries on this external content."
 author: "nmoreau"
 localization_priority: Normal
 ms.prod: "search"
 ---
 
-# Search custom types (externalItem)
+# Use the Microsoft Search API in Microsoft Graph to search custom types
 
-The Microsoft Search API lets you import external data via the [externalItem](/graph/api/resources/externalitem?view=graph-rest-beta) resource, and run search queries on this external content.
+You can use the Microsoft Search API to import external data via the [externalItem](/graph/api/resources/externalitem?view=graph-rest-beta) resource, and run search queries on this external content.
 
 [!INCLUDE [search-api-preview-signup](../includes/search-api-preview-signup.md)]
 
 To search for custom types, specify the following in the [query](/graph/api/search-query?view=graph-rest-beta) method request body:
 
-- The **contentSources** property to include the connection ID which is assigned during the connector setup
+- The **contentSources** property to include the connection ID that is assigned during the connector setup
 
-- The **entityType** property as `externalItem`
+- The **entityTypes** property as `externalItem`
 
 - The **stored_fields** property to include the fields in the external item you want to retrieve
 
@@ -57,8 +57,6 @@ Content-Type: application/json
 ```
 
 ### Response
-
-Response
 
 ```json
 {
@@ -112,10 +110,8 @@ Response
 
 - Custom types don’t support searching across multiple sources (specified in **contentSources**). You can search only one connection at a time.
 
-- You must specify the **stored_fields** property, otherwise search results are not returned.
+- You must specify the **stored_fields** property; otherwise, search results are not returned.
 
 ## Next steps
 
-Find out more about:
-
-- [Use the search API](/graph/api/resources/search-api-overview?view=graph-rest-beta)
+- [Use the Microsoft Search API to query data](/graph/api/resources/search-api-overview?view=graph-rest-beta)

@@ -1,13 +1,15 @@
 ---
 title: "Get androidDeviceOwnerGeneralDeviceConfiguration"
 description: "Read properties and relationships of the androidDeviceOwnerGeneralDeviceConfiguration object."
-author: "rolyon"
+author: "dougeby"
 localization_priority: Normal
 ms.prod: "Intune"
 doc_type: apiPageType
 ---
 
 # Get androidDeviceOwnerGeneralDeviceConfiguration
+
+Namespace: microsoft.graph
 
 > **Important:** Microsoft Graph APIs under the /beta version are subject to change; production use is not supported.
 
@@ -63,7 +65,7 @@ Here is an example of the response. Note: The response object shown here may be 
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 4742
+Content-Length: 4799
 
 {
   "value": {
@@ -108,6 +110,7 @@ Content-Length: 4742
     "bluetoothBlockContactSharing": true,
     "cameraBlocked": true,
     "cellularBlockWiFiTethering": true,
+    "certificateCredentialConfigurationDisabled": true,
     "dataRoamingBlocked": true,
     "dateTimeConfigurationBlocked": true,
     "factoryResetDeviceAdministratorEmails": [
@@ -179,16 +182,13 @@ Content-Length: 4742
     "usersBlockAdd": true,
     "usersBlockRemove": true,
     "volumeBlockAdjustment": true,
-    "vpnAlwaysOnPackageIdentifier": "Vpn Always On Package Identifier value",
     "vpnAlwaysOnLockdownMode": true,
+    "vpnAlwaysOnPackageIdentifier": "Vpn Always On Package Identifier value",
     "wifiBlockEditConfigurations": true,
     "wifiBlockEditPolicyDefinedConfigurations": true
   }
 }
 ```
-
-
-
 
 
 

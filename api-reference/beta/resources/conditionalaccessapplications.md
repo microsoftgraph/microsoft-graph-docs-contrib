@@ -2,12 +2,14 @@
 title: "conditionalAccessApplications resource type"
 description: "Represents applications and user actions included in and excluded from the policy scope."
 localization_priority: Normal
-author: "davidmu1"
+author: "dkershaw10"
 ms.prod: "microsoft-identity-platform"
 doc_type: resourcePageType
 ---
 
 # conditionalAccessApplications resource type
+
+Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 

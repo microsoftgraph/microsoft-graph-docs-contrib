@@ -1,7 +1,7 @@
 ---
 title: "invitationParticipantInfo resource type"
-description: "The **InvitationParticipant** is used to represent a set of identities associated with a conversation invitation, and provides additional invitation parameters."
-author: "VinodRavichandran"
+description: "Represents an entity that is being invited to a group call."
+author: "ananmishr"
 localization_priority: Normal
 ms.prod: "cloud-communications"
 doc_type: resourcePageType
@@ -9,9 +9,11 @@ doc_type: resourcePageType
 
 # invitationParticipantInfo resource type
 
+Namespace: microsoft.graph
+
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-This resource is used to represent a set of identities associated with a conversation invitation, and provides additional invitation parameters.
+Represents an entity that is being invited to a group call. 
 
 ## Properties
 

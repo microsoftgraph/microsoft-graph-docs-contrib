@@ -1,14 +1,14 @@
 ---
-title: "Search messages"
-description: "The Microsoft Search API lets apps search for information in email messages, return messages ranked by relevance, and render a dedicated search experience."
+title: "Use the Microsoft Search API in Microsoft Graph to search messages"
+description: "You can use the Microsoft Search API to search for information in email messages, return messages ranked by relevance, and render a dedicated search experience."
 author: "knightsu"
 localization_priority: Normal
 ms.prod: "search"
 ---
 
-# Search messages
+# Use the Microsoft Search API in Microsoft Graph to search messages
 
-The Microsoft Search API lets apps search for information in email messages, return messages ranked by relevance, and render a dedicated search experience. The search applies to the body and attachments of messages in the user's own mailbox.
+You can use the Microsoft Search API to search for information in email messages, return messages ranked by relevance, and render a dedicated search experience. The search applies to the body and attachments of messages in the user's own mailbox.
 
 [!INCLUDE [search-api-preview-signup](../includes/search-api-preview-signup.md)]
 
@@ -16,15 +16,15 @@ A search query can include [filters](https://support.office.com/article/learn-to
 
 Message search results are sorted by **receivedDateTime** in descending order.
 
-Message search applies to work or school accounts. Users can search their own mailbox, but not in delegated mailboxes. See further [known limitations](#known-limitations) below.
+Message search applies to work or school accounts. Users can search their own mailbox, but can't search delegated mailboxes. For details, see [known limitations](#known-limitations).
 
-Message search also looks for attachments. The [file types supported for attachments](https://docs.microsoft.com/SharePoint/technical-reference/default-crawled-file-name-extensions-and-parsed-file-types) is the same as that for SharePoint Online.
+Message search also looks for attachments. The [supported file types](https://docs.microsoft.com/SharePoint/technical-reference/default-crawled-file-name-extensions-and-parsed-file-types) for message attachment search are the same as those for SharePoint Online search.
 
 ## Examples
 
-### Example 1
+### Example 1: Search messages in a user's mailbox
 
-The following example queries messages in the signed-in user's mailbox that contain the string "contoso" in any part of the message (the sender name, subject, message body, or any attachments). The query returns the first 25 results. The search results are ordered by Datetime descending.
+The following example queries messages in the signed-in user's mailbox that contain the string "contoso" in any part of the message (the sender name, subject, message body, or any attachments). The query returns the first 25 results. The search results are ordered by **DateTime** descending.
 
 #### Request
 
@@ -54,7 +54,7 @@ Content-Type: application/json
 
 #### Response
 
-The following is an example of the response which contains one message that matches the search criterion.
+The following is an example of the response, which contains one message that matches the search criterion. 
 
 ```json
 {
@@ -113,9 +113,8 @@ The following is an example of the response which contains one message that matc
 }
 ```
 
-### Example 2 Search top results messages
-
-The following example uses the same search query as [example 1](#example-1), and sorts the results by relevance.
+### Example 2: Search top results messages
+The following example uses the search query shown in [Example 1](#example-1), and sorts the results by relevance. 
 
 <!-- markdownlint-disable MD024 -->
 #### Request
@@ -147,12 +146,9 @@ Content-Type: application/json
 
 ## Known limitations
 
-- You can only access a user’s own mailbox. Searching delegated mailbox is not supported
-
+- You can only access a user’s own mailbox. Searching delegated mailboxes is not supported.
 - For messages, the **total** property of the [searchHitsContainer](/graph/api/resources/searchhitscontainer?view=graph-rest-beta) type contains the number of results on the page, not the total number of matching results.
 
 ## Next steps
 
-Find out more about:
-
-- [Use the search API](/graph/api/resources/search-api-overview?view=graph-rest-beta)
+- [Use the Microsoft Search API](/graph/api/resources/search-api-overview?view=graph-rest-beta)

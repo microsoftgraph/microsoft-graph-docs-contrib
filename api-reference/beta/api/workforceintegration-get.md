@@ -9,9 +9,11 @@ doc_type: "apiPageType"
 
 # Get workforceIntegration
 
+Namespace: microsoft.graph
+
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Retrieve the properties and relationships of [workforceintegration](../resources/workforceintegration.md) object.
+Retrieve the properties and relationships of a [workforceintegration](../resources/workforceintegration.md) object.
 
 ## Permissions
 
@@ -54,14 +56,30 @@ If successful, this method returns a `200 OK` response code and the requested [w
 ### Request
 
 The following is an example of the request.
+
+# [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "get_workforceintegration"
 }-->
 
-```http
+```msgraph-interactive
 GET https://graph.microsoft.com/beta/teamwork/workforceIntegrations/{workforceintegrationid}
 ```
+# [C#](#tab/csharp)
+[!INCLUDE [sample-code](../includes/snippets/csharp/get-workforceintegration-csharp-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [JavaScript](#tab/javascript)
+[!INCLUDE [sample-code](../includes/snippets/javascript/get-workforceintegration-javascript-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Objective-C](#tab/objc)
+[!INCLUDE [sample-code](../includes/snippets/objc/get-workforceintegration-objc-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+---
+
 
 ### Response
 

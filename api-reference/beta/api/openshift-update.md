@@ -9,6 +9,8 @@ doc_type: "apiPageType"
 
 # Update openShift
 
+Namespace: microsoft.graph
+
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 Update the properties of an [openShift](../resources/openshift.md) object.
@@ -28,7 +30,7 @@ One of the following permissions is required to call this API. To learn more, in
 <!-- { "blockType": "ignored" } -->
 
 ```http
-PATCH /teams/{id}/schedule/openShifts
+PUT /teams/{id}/schedule/openShifts/{openShiftId}
 ```
 
 ## Request headers
@@ -57,25 +59,53 @@ If successful, this method returns a `200 OK` response code and an updated [open
 ### Request
 
 The following is an example of the request.
+
+# [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "update_openshift"
 }-->
 
 ```http
-PATCH https://graph.microsoft.com/beta/teams/{id}/schedule/openShifts
+PUT https://graph.microsoft.com/beta/teams/{id}/schedule/openShifts/{openShiftId}
 Content-type: application/json
 
 {
-  "sharedOpenShift": {
-    "openSlotCount": 99
-  },
-  "draftOpenShift": {
-    "openSlotCount": 99
-  },
-  "schedulingGroupId": "TAG_f914d037-00a3-4ba4-b712-ef178cbea263"
+"schedulingGroupId": "TAG_228940ed-ff84-4e25-b129-1b395cf78be0",
+"sharedOpenShift": {
+"notes": "Inventory Management",
+"openSlotCount":5,
+"displayName": "Field shift",
+"startDateTime": "2018-10-04T00:58:45.340Z",
+"endDateTime": "2018-10-04T09:50:45.332Z",
+"theme": "white",
+"activities": [
+{
+"isPaid": true,
+"startDateTime": "2018-10-04T00:58:45.340Z",
+"endDateTime": "2018-10-04T01:58:45.340Z",
+"code": "",
+"displayName": "Lunch"
+}
+]
+},
+"draftOpenShift": null
 }
 ```
+# [C#](#tab/csharp)
+[!INCLUDE [sample-code](../includes/snippets/csharp/update-openshift-csharp-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [JavaScript](#tab/javascript)
+[!INCLUDE [sample-code](../includes/snippets/javascript/update-openshift-javascript-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Objective-C](#tab/objc)
+[!INCLUDE [sample-code](../includes/snippets/objc/update-openshift-objc-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+---
+
 
 ### Response
 
@@ -94,13 +124,37 @@ HTTP/1.1 200 OK
 Content-type: application/json
 
 {
+  "id": "OPNSHFT_577b75d2-a927-48c0-a5d1-dc984894e7b8",
+  "schedulingGroupId": "TAG_228940ed-ff84-4e25-b129-1b395cf78be0",
   "sharedOpenShift": {
-    "openSlotCount": 99
+  "notes": "Inventory Management",
+  "openSlotCount":5,
+  "displayName": "Day shift",
+  "startDateTime": "2018-10-04T00:58:45.340Z",
+  "endDateTime": "2018-10-04T09:50:45.332Z",
+  "theme": "white",
+  "activities": [
+  {
+  "isPaid": true,
+  "startDateTime": "2018-10-04T00:58:45.340Z",
+  "endDateTime": "2018-10-04T01:58:45.340Z",
+  "code": "",
+  "displayName": "Lunch"
+  }
+  ]
   },
-  "draftOpenShift": {
-    "openSlotCount": 99
-  },
-  "schedulingGroupId": "schedulingGroupId-value"
+  "draftOpenShift": null,
+  "createdDateTime": "2019-03-14T04:32:51.451Z",
+  "lastModifiedDateTime": "2019-03-14T05:32:51.451Z",
+  "lastModifiedBy": {
+  "application": null,
+  "device": null,
+  "conversation": null,
+  "user": {
+  "id": "366c0b19-49b1-41b5-a03f-9f3887bd0ed8",
+  "displayName": "John Doe"
+  }
+  }
 }
 ```
 

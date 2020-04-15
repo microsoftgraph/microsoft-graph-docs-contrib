@@ -1,13 +1,15 @@
 ---
 title: "Get windowsInformationProtectionDeviceRegistration"
 description: "Read properties and relationships of the windowsInformationProtectionDeviceRegistration object."
-author: "rolyon"
+author: "dougeby"
 localization_priority: Normal
 ms.prod: "Intune"
 doc_type: apiPageType
 ---
 
 # Get windowsInformationProtectionDeviceRegistration
+
+Namespace: microsoft.graph
 
 > **Important:** Microsoft Graph APIs under the /beta version are subject to change; production use is not supported.
 
@@ -76,9 +78,6 @@ Content-Length: 450
   }
 }
 ```
-
-
-
 
 
 

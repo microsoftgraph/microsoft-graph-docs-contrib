@@ -1,13 +1,15 @@
 ---
 title: "Get androidCompliancePolicy"
 description: "Read properties and relationships of the androidCompliancePolicy object."
-author: "rolyon"
+author: "dougeby"
 localization_priority: Normal
 ms.prod: "Intune"
 doc_type: apiPageType
 ---
 
 # Get androidCompliancePolicy
+
+Namespace: microsoft.graph
 
 > **Important:** Microsoft Graph APIs under the /beta version are subject to change; production use is not supported.
 
@@ -61,7 +63,7 @@ Here is an example of the response. Note: The response object shown here may be 
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 1863
+Content-Length: 1989
 
 {
   "value": {
@@ -87,7 +89,9 @@ Content-Length: 1863
     "securityRequireVerifyApps": true,
     "deviceThreatProtectionEnabled": true,
     "deviceThreatProtectionRequiredSecurityLevel": "secured",
+    "advancedThreatProtectionRequiredSecurityLevel": "secured",
     "securityBlockJailbrokenDevices": true,
+    "securityBlockDeviceAdministratorManagedDevices": true,
     "osMinimumVersion": "Os Minimum Version value",
     "osMaximumVersion": "Os Maximum Version value",
     "minAndroidSecurityPatchLevel": "Min Android Security Patch Level value",
@@ -110,9 +114,6 @@ Content-Length: 1863
   }
 }
 ```
-
-
-
 
 
 

@@ -1,13 +1,15 @@
 ---
 title: "tokenMeetingInfo resource type"
 description: "The tokenMeetingInfo type."
-author: "VinodRavichandran"
+author: "ananmishr"
 localization_priority: Normal
 ms.prod: "cloud-communications"
 doc_type: resourcePageType
 ---
 
 # tokenMeetingInfo resource type
+
+Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 

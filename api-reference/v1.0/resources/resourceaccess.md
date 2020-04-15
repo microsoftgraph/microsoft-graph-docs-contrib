@@ -4,10 +4,12 @@ description: "Specifies an OAuth 2.0 permission scope or an app role that an app
 localization_priority: Normal
 doc_type: resourcePageType
 ms.prod: "microsoft-identity-platform"
-author: "davidmu1"
+author: "psignoret"
 ---
 
 # resourceAccess resource type
+
+Namespace: microsoft.graph
 
 Specifies an OAuth 2.0 permission scope or an app role that an application requires. The **resourceAccess** property of the [requiredResourceAccess](requiredresourceaccess.md) type is a collection of **ResourceAccess**.
 

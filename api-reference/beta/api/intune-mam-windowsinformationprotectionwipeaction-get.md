@@ -1,13 +1,15 @@
 ---
 title: "Get windowsInformationProtectionWipeAction"
 description: "Read properties and relationships of the windowsInformationProtectionWipeAction object."
-author: "rolyon"
+author: "dougeby"
 localization_priority: Normal
 ms.prod: "Intune"
 doc_type: apiPageType
 ---
 
 # Get windowsInformationProtectionWipeAction
+
+Namespace: microsoft.graph
 
 > **Important:** Microsoft Graph APIs under the /beta version are subject to change; production use is not supported.
 
@@ -76,9 +78,6 @@ Content-Length: 496
   }
 }
 ```
-
-
-
 
 
 

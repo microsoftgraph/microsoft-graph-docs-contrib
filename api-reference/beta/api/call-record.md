@@ -1,26 +1,29 @@
 ---
-title: "call: record"
-description: "Record a short audio clip from the call. This is useful if the bot wishes to capture a voice response from the caller following a prompt."
-author: "VinodRavichandran"
+title: "call: recordResponse"
+description: "Record a short audio response from the caller. This is useful if the bot wants to capture a voice response from the caller following a prompt."
+author: "ananmishr"
 localization_priority: Normal
 ms.prod: "cloud-communications"
 doc_type: apiPageType
 ---
 
-# call: record
+# call: recordResponse
+
+Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Record a short audio clip from a call.
-A bot can utilize this to capture a voice response from a caller after they are prompted for a response.
+Record a short audio response from the caller.
 
-For further information on how to handle operations, please review [commsOperation](../resources/commsOperation.md)
+A bot can use this to capture a voice response from a caller after they are prompted for a response.
 
->**Note:** This is only supported for [calls](../resources/call.md) which are initiated with [serviceHostedMediaConfig](../resources/servicehostedmediaconfig.md).
+For more information about how to handle operations, see [commsOperation](../resources/commsOperation.md)
 
-This action is not intended to record the entire call. The maximum length of recording is 5 minutes. The recording is not saved permanently by the by the Cloud Communications Platform and is discarded shortly after the call ends. The bot must download the recording promptly after the recording operation finishes by using the recordingLocation value that's given in the completed notification.
+>**Note:** This API is only supported for [calls](../resources/call.md) that are initiated with [serviceHostedMediaConfig](../resources/servicehostedmediaconfig.md).
 
->**Note:** Any media collected may **not** be persisted. Make sure you are compliant with the laws and regulations of your area when it comes to call recording. Please consult with a legal counsel for more information.
+This action is not intended to record the entire call. The maximum length of recording is 2 minutes. The recording is not saved permanently by the by the Cloud Communications Platform and is discarded shortly after the call ends. The bot must download the recording promptly after the recording operation finishes by using the recordingLocation value that's given in the completed notification.
+
+>**Note:** You may not record or otherwise persist media content from calls or meetings that your application accesses, or data derived from that media content. Make sure you are compliant with the laws and regulations of your area regarding data protection and confidentiality of communications. Please see the [Terms of Use](https://docs.microsoft.com/legal/microsoft-apis/terms-of-use) and consult with your legal counsel for more information.
 
 ## Permissions
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
@@ -34,8 +37,8 @@ One of the following permissions is required to call this API. To learn more, in
 ## HTTP request
 <!-- { "blockType": "ignored" } -->
 ```http
-POST /app/calls/{id}/record
-POST /communications/calls/{id}/record
+POST /app/calls/{id}/recordResponse
+POST /communications/calls/{id}/recordResponse
 ```
 > **Note:** The `/app` path is deprecated. Going forward, use the `/communications` path.
 
@@ -43,28 +46,31 @@ POST /communications/calls/{id}/record
 | Name          | Description               |
 |:--------------|:--------------------------|
 | Authorization | Bearer {token}. Required. |
+| Content-type| application/json. Required. |
 
 ## Request body
 In the request body, provide a JSON object with the following parameters.
 
 | Parameter      | Type    |Description|
 |:---------------|:--------|:----------|
-|prompts|[mediaPrompt](../resources/mediaprompt.md) collection | Collection of prompts to play (if any) before recording starts. Customers can choose to specify "playPrompt" action separately or specify as part of "record" - mostly all records are preceeded by a prompt. Current support is only for a single prompt as part of the collection. |
-|bargeInAllowed|Boolean| If true, this record request will barge into other existing queued-up/currently-processing record/playprompt requests. Default = false. |
-|initialSilenceTimeoutInSeconds | Int32| Maximum initial silence (user silence) allowed from the time we start the record operation before we timeout and fail the operation. If we are playing a prompt, then this timer starts after prompt finishes. Default = 5 seconds, Min = 1 second, Max = 300 seconds |
-|maxSilenceTimeoutInSeconds|Int32| Maximum silence (pause) time allowed after a user has started speaking. Default = 5 seconds, Min = 1 second, Max = 300 seconds.|
-|maxRecordDurationInSeconds|Int32| Max duration for a record operation before stopping recording. Default = 5 seconds, Min = 1 second, Max = 300 seconds.|
+|prompts|[MediaPrompt](../resources/mediaprompt.md) collection | The prompts to be played. The maximum supported mediaPrompt collection size is 1.|
+|bargeInAllowed|Boolean| If true, the recordResponse request will barge into other existing queued-up/currently-processing record/playprompt requests. Default = false. |
+|initialSilenceTimeoutInSeconds | Int32| Maximum initial silence (user silence) allowed from the time we start the record response operation before we timeout and fail the operation. If we are playing a prompt, then this timer starts after prompt finishes. Default = 5 seconds, Min = 1 second, Max = 120 seconds |
+|maxSilenceTimeoutInSeconds|Int32| Maximum silence (pause) time allowed after a user has started speaking. Default = 5 seconds, Min = 1 second, Max = 120 seconds.|
+|maxRecordDurationInSeconds|Int32| Max duration for the recordResponse operation before stopping recording. Default = 5 seconds, Min = 1 second, Max = 120 seconds.|
 |playBeep|Boolean| If true, plays a beep to indicate to the user that they can start recording their message. Default = true.|
 |stopTones|String collection|Stop tones specified to end recording.|
 |clientContext|String|Unique Client Context string. Max limit is 256 chars.|
 
+> **Note:** The maximum recording time has been reduced from 5 minutes to 2 minutes.
+
 ## Response
-This method returns a `200 OK` response code and a Location header with a URI to the [recordOperation](../resources/recordoperation.md) created for this request.
+This method returns a `200 OK` HTTP response code and a Location header with a URI to the [recordOperation](../resources/recordoperation.md) created for this request.
 
 ## Example
 The following example shows how to call this API.
 
-### Example 1: Record a short audio clip from a call
+### Example 1: Records a short audio response from the caller
 
 ##### Request
 The following example shows the request.
@@ -73,10 +79,10 @@ The following example shows the request.
 # [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
-  "name": "call-record"
+  "name": "call-recordResponse"
 }-->
 ```http
-POST https://graph.microsoft.com/beta/communications/calls/{id}/record
+POST https://graph.microsoft.com/beta/communications/calls/{id}/recordResponse
 Content-Type: application/json
 Content-Length: 394
 
@@ -100,7 +106,7 @@ Content-Length: 394
 }
 ```
 # [JavaScript](#tab/javascript)
-[!INCLUDE [sample-code](../includes/snippets/javascript/call-record-javascript-snippets.md)]
+[!INCLUDE [sample-code](../includes/snippets/javascript/call-recordresponse-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
@@ -168,7 +174,7 @@ Content-Type: application/json
 
 ### Example 2: Retrieving the recording file
 
-> **Note:** While you're able to fetch the recording and process it, you **must** delete it afterwards. Media cannot be persisted.
+> **Note:** You may NOT record or otherwise persist media content from calls or meetings that your application accesses, or data derived from that media content. Make sure you are compliant with the laws and regulations of your area regarding data protection and confidentiality of communications. Please see the [Terms of Use](https://docs.microsoft.com/legal/microsoft-apis/terms-of-use) and consult with your legal counsel for more information.
 
 ##### Request
 
@@ -195,12 +201,14 @@ Content-Type: application/octet-stream
 (application/octet-stream of size 160696 bytes)
 ```
 
+> **Note:** You may NOT record or otherwise persist media content from calls or meetings that your application accesses, or data derived from that media content. Make sure you are compliant with the laws and regulations of your area regarding data protection and confidentiality of communications. Please see the [Terms of Use](https://docs.microsoft.com/legal/microsoft-apis/terms-of-use) and consult with your legal counsel for more information.
+
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2015-10-25 14:57:30 UTC -->
 <!--
 {
   "type": "#page.annotation",
-  "description": "call: record",
+  "description": "call: recordResponse",
   "keywords": "",
   "section": "documentation",
   "tocPath": "",

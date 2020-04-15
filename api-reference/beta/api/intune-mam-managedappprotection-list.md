@@ -1,13 +1,15 @@
 ---
 title: "List managedAppProtections"
 description: "List properties and relationships of the managedAppProtection objects."
-author: "rolyon"
+author: "dougeby"
 localization_priority: Normal
 ms.prod: "Intune"
 doc_type: apiPageType
 ---
 
 # List managedAppProtections
+
+Namespace: microsoft.graph
 
 > **Important:** Microsoft Graph APIs under the /beta version are subject to change; production use is not supported.
 
@@ -60,7 +62,7 @@ Here is an example of the response. Note: The response object shown here may be 
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 2401
+Content-Length: 2589
 
 {
   "value": [
@@ -113,14 +115,16 @@ Content-Length: 2401
       "previousPinBlockCount": 5,
       "managedBrowser": "microsoftEdge",
       "maximumAllowedDeviceThreatLevel": "secured",
-      "mobileThreatDefenseRemediationAction": "wipe"
+      "mobileThreatDefenseRemediationAction": "wipe",
+      "blockDataIngestionIntoOrganizationDocuments": true,
+      "allowedDataIngestionLocations": [
+        "sharePoint"
+      ],
+      "appActionIfUnableToAuthenticateUser": "wipe"
     }
   ]
 }
 ```
-
-
-
 
 
 
