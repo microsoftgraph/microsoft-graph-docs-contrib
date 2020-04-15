@@ -1,13 +1,15 @@
 ---
 title: "windowsDefenderApplicationControlSupplementalPolicyAssignment resource type"
 description: "A class containing the properties used for assignment of a WindowsDefenderApplicationControl supplemental policy to a group."
-author: "rolyon"
+author: "dougeby"
 localization_priority: Normal
 ms.prod: "Intune"
 doc_type: resourcePageType
 ---
 
 # windowsDefenderApplicationControlSupplementalPolicyAssignment resource type
+
+Namespace: microsoft.graph
 
 > **Important:** Microsoft Graph APIs under the /beta version are subject to change; production use is not supported.
 

@@ -9,6 +9,8 @@ doc_type: apiPageType
 ---
 # Search for sites
 
+Namespace: microsoft.graph
+
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 Search across a SharePoint tenant for [sites][] that match keywords provided.
@@ -26,7 +28,9 @@ One of the following permissions is required to call this API. To learn more, in
 |Application                            | Sites.Read.All, Sites.ReadWrite.All
 
 ## HTTP request
-
+```http
+GET /sites?$search={query}
+```
 
 # [HTTP](#tab/http)
 <!-- { "blockType": "request", "name": "search-sites", "scopes": "service.sharepoint sites.readwrite.all" } -->

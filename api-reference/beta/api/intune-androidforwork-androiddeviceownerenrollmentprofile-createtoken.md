@@ -1,13 +1,15 @@
 ---
 title: "createToken action"
 description: "Not yet documented"
-author: "rolyon"
+author: "dougeby"
 localization_priority: Normal
 ms.prod: "Intune"
 doc_type: apiPageType
 ---
 
 # createToken action
+
+Namespace: microsoft.graph
 
 > **Important:** Microsoft Graph APIs under the /beta version are subject to change; production use is not supported.
 
@@ -75,4 +77,4 @@ HTTP/1.1 204 No Content
 ```
 
 
-
+

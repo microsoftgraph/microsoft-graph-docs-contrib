@@ -1,13 +1,15 @@
 ---
 title: "List deviceManagementExportJobs"
 description: "List properties and relationships of the deviceManagementExportJob objects."
-author: "rolyon"
+author: "dougeby"
 localization_priority: Normal
 ms.prod: "Intune"
 doc_type: apiPageType
 ---
 
 # List deviceManagementExportJobs
+
+Namespace: microsoft.graph
 
 > **Important:** Microsoft Graph APIs under the /beta version are subject to change; production use is not supported.
 
@@ -58,7 +60,7 @@ Here is an example of the response. Note: The response object shown here may be 
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 594
+Content-Length: 538
 
 {
   "value": [
@@ -70,9 +72,6 @@ Content-Length: 594
       "select": [
         "Select value"
       ],
-      "orderBy": [
-        "Order By value"
-      ],
       "format": "pdf",
       "snapshotId": "Snapshot Id value",
       "status": "notStarted",
@@ -83,9 +82,6 @@ Content-Length: 594
   ]
 }
 ```
-
-
-
 
 
 

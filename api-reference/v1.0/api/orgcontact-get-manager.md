@@ -2,12 +2,14 @@
 title: "Get manager"
 description: "Get this organizational contact's manager."
 localization_priority: Normal
-author: "davidmu1"
+author: "dkershaw10"
 ms.prod: "microsoft-identity-platform"
 doc_type: apiPageType
 ---
 
 # Get manager
+
+Namespace: microsoft.graph
 
 Get this organizational contact's manager.
 
@@ -19,6 +21,8 @@ One of the following permissions is required to call this API. To learn more, in
 |Delegated (work or school account) | OrgContact.Read.All and Group.Read.All, Directory.Read.All   |
 |Delegated (personal Microsoft account) | Not supported.    |
 |Application | OrgContact.Read.All and Group.Read.All, Directory.Read.All |
+
+[!INCLUDE [limited-info](../../includes/limited-info.md)]
 
 ## HTTP request
 
@@ -46,14 +50,34 @@ If successful, this method returns a `200 OK` response code and a collection of 
 
 #### Request
 
+
+# [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "get_manager"
 }-->
 
-```http
+```msgraph-interactive
 GET https://graph.microsoft.com/v1.0/contacts/{id}/manager
 ```
+# [C#](#tab/csharp)
+[!INCLUDE [sample-code](../includes/snippets/csharp/get-manager-csharp-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [JavaScript](#tab/javascript)
+[!INCLUDE [sample-code](../includes/snippets/javascript/get-manager-javascript-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Objective-C](#tab/objc)
+[!INCLUDE [sample-code](../includes/snippets/objc/get-manager-objc-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Java](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/get-manager-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+---
+
 
 #### Response
 The following is an example of the response.

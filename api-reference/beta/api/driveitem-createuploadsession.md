@@ -9,6 +9,8 @@ doc_type: apiPageType
 ---
 # Upload large files with an upload session
 
+Namespace: microsoft.graph
+
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 Create an upload session to allow your app to upload files up to the maximum file size.
@@ -57,7 +59,7 @@ For example, the `item` property allows setting the following parameters:
 <!-- { "blockType": "resource", "@odata.type": "microsoft.graph.driveItemUploadableProperties" } -->
 ```json
 {
-  "@microsoft.graph.conflictBehavior": "rename | fail | overwrite",
+  "@microsoft.graph.conflictBehavior": "fail (default) | replace | rename",
   "description": "description",
   "fileSize": 1234,
   "name": "filename.txt"
@@ -182,7 +184,7 @@ You may see multiple ranges specified, indicating parts of the file that the ser
 This is useful if you need to resume a transfer that was interrupted and your client is unsure of the state on the service.
 
 You should always determine the size of your byte ranges according to the best practices below. 
-Do not assume that **nextExpectedRanges** will return reanges of proper size for a byte range to upload.
+Do not assume that **nextExpectedRanges** will return ranges of proper size for a byte range to upload.
 The **nextExpectedRanges** property indicates ranges of the file that have not been received and not a pattern for how your app should upload the file.
 
 <!-- { "blockType": "ignored", "@odata.type": "microsoft.graph.uploadSession", "truncated": true } -->

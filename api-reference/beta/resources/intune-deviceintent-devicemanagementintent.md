@@ -1,13 +1,15 @@
 ---
 title: "deviceManagementIntent resource type"
 description: "Entity that represents an intent to apply settings to a device"
-author: "rolyon"
+author: "dougeby"
 localization_priority: Normal
 ms.prod: "Intune"
 doc_type: resourcePageType
 ---
 
 # deviceManagementIntent resource type
+
+Namespace: microsoft.graph
 
 > **Important:** Microsoft Graph APIs under the /beta version are subject to change; production use is not supported.
 
