@@ -1,6 +1,6 @@
 ---
 title: "oauth2permissiongrant: delta"
-description: "Get newly created, updated, or deleted oauth2permissiongrant's without having to perform a full read of the entire resource collection. See Using Delta Query for details."
+description: " Get created, updated, or deleted oauth2permissiongrants without having to perform a full read of the entire resource collection."
 localization_priority: Normal
 author: "psignoret"
 ms.prod: "microsoft-identity-platform"
@@ -54,9 +54,7 @@ includes the encoded, desired parameters.
 
 This method supports OData Query Parameters to help customize the response.
 
-- You can use a `$select` query parameter as in any GET request to specify only the properties your need for best performance. The 
-_id_ property is always returned. 
-
+- You can use a `$select` query parameter as in any GET request to specify only the properties your need for best performance. The _id_ property is always returned.
 - There is limited support for `$filter`:
   * The only supported `$filter` expression is for tracking changes for specific resources, by their id:  `$filter=id+eq+{value}` or `$filter=id+eq+{value1}+or+id+eq+{value2}`. The number of ids you can specify is limited by the maximum URL length.
 
@@ -70,20 +68,20 @@ _id_ property is always returned.
 ## Request body
 Do not supply a request body for this method.
 
-### Response
+## Response
 
-If successful, this method returns `200 OK` response code and [oauth2permissiongrant](../resources/oauth2permissiongrant.md) collection object in the response body. The response also includes a nextLink URL or a deltaLink URL. 
+If successful, this method returns a `200 OK` response code and [oauth2permissiongrant](../resources/oauth2permissiongrant.md) collection object in the response body. The response also includes a `nextLink` URL or a `deltaLink` URL.
 
 - If a `nextLink` URL is returned, there are additional pages of data to be retrieved in the session. The oauth2permissiongrant continues making requests using the `nextLink` URL until a `deltaLink` URL is included in the response.
-
 - If a `deltaLink` URL is returned, there is no more data about the existing state of the resource to be returned. Persist and use the `deltaLink` URL to learn about changes to the resource in the future.
 
-See:</br>
-- [Using Delta Query](/graph/delta-query-overview) for more details</br>
-- [Get incremental changes for users](/graph/delta-query-users) for an example requests.</br>
+See:
 
-### Example
-##### Request
+- [Using Delta Query](/graph/delta-query-overview) for more details</br>
+- [Get incremental changes for users](/graph/delta-query-users) for example requests.</br>
+
+## Example
+### Request
 
 # [HTTP](#tab/http)
 <!-- {
@@ -94,8 +92,8 @@ See:</br>
 GET https://graph.microsoft.com/beta/oauth2permissiongrants/delta
 ```
 
-##### Response
-Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.
+### Response
+>Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.
 <!-- { 
   "blockType": "response",
   "truncated": true,
