@@ -53,16 +53,16 @@ For details about the types of indicators supported and limits on indicator coun
 |[submitTiIndicators](../api/tiindicator-submittiindicators.md)|[tiIndicator](tiindicator.md) collection|Create new tiIndicators by posting a tiIndicators collection.|
 |[updateTiIndicators](../api/tiindicator-updatetiindicators.md)|[tiIndicator](tiindicator.md) collection| Update multiple tiIndicator objects.|
 
-## Methods Supported by Each TargetProduct
+### Methods supported by each target product
 
 | Method | Azure Sentinel | Microsoft Defender ATP |
 |:-------------|:---------|:-----------------------|
-| [Create tiIndicator](https://docs.microsoft.com/graph/api/tiindicators-post?view=graph-rest-beta&tabs=http)| Required fields are: `action`, `azureTenantId`, `description`, `expirationDateTime`, `targetProduct`, `threatType`, `tlpLevel`, and at least one email, network, or file observable.| Required fields are: `action`, and one of these following values: `domainName`, `url`, `networkDestinationIPv4`, `networkDestinationIPv6`, `fileHashValue` ( must supply `fileHashType` in case of `fileHashValue`).
-| [Submit tiIndicators](https://docs.microsoft.com/graph/api/tiindicator-submittiindicators?view=graph-rest-beta&tabs=http)| Refer to the [Create tiIndicator](https://docs.microsoft.com/graph/api/tiindicators-post?view=graph-rest-beta&tabs=http) method above for required fields for each tiIndicator.| Refer to the [Create tiIndicator](https://docs.microsoft.com/graph/api/tiindicators-post?view=graph-rest-beta&tabs=http) method above for required fields for each tiIndicator.|
-| [Update tiIndicator](https://docs.microsoft.com/graph/api/tiindicator-update?view=graph-rest-beta&tabs=http) | Required fields are: `id`, `expirationDateTime`, `targetProduct`. <br> Editable fields are:  `action`, `activityGroupNames`, `additionalInformation`, `confidence`, `description`, `diamondModel`, `expirationDateTime`, `externalId`, `isActive`, `killChain`, `knownFalsePositives`, `lastReportedDateTime`, `malwareFamilyNames`, `passiveOnly`, `severity`, `tags`, `tlpLevel`. | Required fields are: `id`, `expirationDateTime`, `targetProduct`. <br> Editable fields are: `expirationDateTime`, `severity`, `description`. |
-| [Update tiIndicators](https://docs.microsoft.com/graph/api/tiindicator-updatetiindicators?view=graph-rest-beta&tabs=http)| Refer to the [Update tiIndicator](https://docs.microsoft.com/graph/api/tiindicator-update?view=graph-rest-beta&tabs=http) method above for required and editable fields for each tiIndicator.| <p align="center">[File issue](https://github.com/microsoftgraph/security-api-solutions/issues/new) </p> | <p align="center">&#x2713;</p> |
-| [Delete tiIndicator](https://docs.microsoft.com/graph/api/tiindicator-delete?view=graph-rest-beta&tabs=http) | Required field is: `id`. | Required field is: `id`. |
-| [Delete tiIndicators](https://docs.microsoft.com/graph/api/tiindicator-deletetiindicators?view=graph-rest-beta&tabs=http)| Refer to the [Delete tiIndicator](https://docs.microsoft.com/graph/api/tiindicator-delete?view=graph-rest-beta&tabs=http) method above for required field for each tiIndicator.| <p align="center">[File issue](https://github.com/microsoftgraph/security-api-solutions/issues/new) </p> | <p align="center">&#x2713;</p> |
+| [Create tiIndicator](../api/tiindicators-post?view=graph-rest-beta&tabs=http)| Required fields are: `action`, `azureTenantId`, `description`, `expirationDateTime`, `targetProduct`, `threatType`, `tlpLevel`, and at least one email, network, or file observable.| Required fields are: `action`, and one of these following values: `domainName`, `url`, `networkDestinationIPv4`, `networkDestinationIPv6`, `fileHashValue` ( must supply `fileHashType` in case of `fileHashValue`).
+| [Submit tiIndicators](../api/tiindicator-submittiindicators?view=graph-rest-beta&tabs=http)| Refer to the [Create tiIndicator](https://docs.microsoft.com/graph/api/tiindicators-post?view=graph-rest-beta&tabs=http) method for required fields for each tiIndicator.| Refer to the [Create tiIndicator](https://docs.microsoft.com/graph/api/tiindicators-post?view=graph-rest-beta&tabs=http) method for required fields for each tiIndicator.|
+| [Update tiIndicator](../api/tiindicator-update?view=graph-rest-beta&tabs=http) | Required fields are: `id`, `expirationDateTime`, `targetProduct`. <br> Editable fields are:  `action`, `activityGroupNames`, `additionalInformation`, `confidence`, `description`, `diamondModel`, `expirationDateTime`, `externalId`, `isActive`, `killChain`, `knownFalsePositives`, `lastReportedDateTime`, `malwareFamilyNames`, `passiveOnly`, `severity`, `tags`, `tlpLevel`. | Required fields are: `id`, `expirationDateTime`, `targetProduct`. <br> Editable fields are: `expirationDateTime`, `severity`, `description`. |
+| [Update tiIndicators](../api/tiindicator-updatetiindicators?view=graph-rest-beta&tabs=http)| Refer to the [Update tiIndicator](https://docs.microsoft.com/graph/api/tiindicator-update?view=graph-rest-beta&tabs=http) method for required and editable fields for each tiIndicator.| <p align="center">[File issue](https://github.com/microsoftgraph/security-api-solutions/issues/new) </p> | <p align="center">&#x2713;</p> |
+| [Delete tiIndicator](../api/tiindicator-delete?view=graph-rest-beta&tabs=http) | Required field is: `id`. | Required field is: `id`. |
+| [Delete tiIndicators](../api/tiindicator-deletetiindicators?view=graph-rest-beta&tabs=http)| Refer to the [Delete tiIndicator](../api/tiindicator-delete?view=graph-rest-beta&tabs=http) method above for required field for each tiIndicator.| <p align="center">[File issue](https://github.com/microsoftgraph/security-api-solutions/issues/new) </p> | <p align="center">&#x2713;</p> |
 
 ## Properties
 
@@ -91,7 +91,7 @@ For details about the types of indicators supported and limits on indicator coun
 |threatType|[threatType](#threattype-values)| Each indicator must have a valid Indicator Threat Type. Possible values are: `Botnet`, `C2`, `CryptoMining`, `Darknet`, `DDoS`, `MaliciousUrl`, `Malware`, `Phishing`, `Proxy`, `PUA`, `WatchList`. **Required.** |
 |tlpLevel|[tlpLevel](#tlplevel-values)| Traffic Light Protocol value for the indicator. Possible values are: `unknown`, `white`, `green`, `amber`, `red`. **Required.**|
 
-### Indicator Observables - Email
+### Indicator observables - email
 
 | Property     | Type        | Description |
 |:-------------|:------------|:------------|
@@ -105,7 +105,7 @@ For details about the types of indicators supported and limits on indicator coun
 |emailSubject|String|Subject line of email.|
 |emailXMailer|String|X-Mailer value used in the email.|
 
-### Indicator Observables - File
+### Indicator observables - file
 
 | Property     | Type        | Description |
 |:-------------|:------------|:------------|
@@ -120,7 +120,7 @@ For details about the types of indicators supported and limits on indicator coun
 |fileSize|Int64|Size of the file in bytes.|
 |fileType|String| Text description of the type of file. For example, “Word Document” or “Binary”.|
 
-### Indicator Observables - Network
+### Indicator observables - network
 
 | Property     | Type        | Description |
 |:-------------|:------------|:------------|
