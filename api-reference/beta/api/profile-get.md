@@ -15,7 +15,7 @@ Namespace: microsoft.graph
 
 Retrieve the properties of a [profile](../resources/profile.md) object for a given user.
 
-The **profile** resource also exposes [relationships](#relationships) to various rich properties that are descriptive of the user, for example, anniversaries and education activities. To get such navigation properties, use the corresponding GET method on that property. See the [methods](../resources/profile.md) exposed by **profile**.
+The **profile** resource also exposes [relationships](../resources/profile.md#relationships) to various rich properties that are descriptive of the user, for example, anniversaries and education activities. To get such navigation properties, use the corresponding GET method on that property. See the [methods](../resources/profile.md) exposed by **profile**.
 
 ## Permissions
 
