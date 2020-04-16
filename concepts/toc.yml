@@ -357,6 +357,8 @@ items:
             href: auth-cloudsolutionprovider.md
           - name: Limit mailbox access
             href: auth-limit-mailbox-access.md
+          - name: Resolve authorization errors
+            href: resolve-auth-errors.md
       - name: Use the API
         items:
           - name: Overview

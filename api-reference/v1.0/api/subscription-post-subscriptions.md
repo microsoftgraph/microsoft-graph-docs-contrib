@@ -121,7 +121,7 @@ The following are valid values for the resource property of the subscription:
 |Groups|groups|
 |Conversations|groups('*{id}*')/conversations|
 |Drives|me/drive/root|
-|List|site/{site-id}/lists/{list-id}|
+|List|sites/{site-id}/lists/{list-id}|
 |Security alert|security/alerts?$filter=status eq 'New'|
 
 ##### Response
