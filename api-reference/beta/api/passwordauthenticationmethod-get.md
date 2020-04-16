@@ -43,7 +43,7 @@ GET /users/{id}/authentication/passwordMethods/{id}
 
 ## Optional query parameters
 
-None
+This method does not support optional query parameters to customize the response.
 
 ## Request headers
 
