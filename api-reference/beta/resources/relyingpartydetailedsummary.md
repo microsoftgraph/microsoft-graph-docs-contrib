@@ -57,25 +57,18 @@ The following is a JSON representation of the resource.
 
 ```json
 {
-  "failedSignInCount": "failedSignInCount-value",
-  "id": "id-value",
-  "migrationStatus": "migrationStatus-value",
-  "migrationValidationDetails": [
-      {
-        "name": "name-value",
-        "value": "value-value"
-      }
-    ],
-  "relyingPartyId": "relyingPartyId-value",
-  "relyingPartyName": "relyingPartyName-value",
-  "replyUrls": [
-    "replyUrls-value"
-    ],
-  "serviceId": "serviceId-value",
-  "signInSuccessRate": "signInSuccessRate-value",
-  "successfulSignInCount": "successfulSignInCount-value",
-  "totalSignInCount": "totalSignInCount-value",
-  "uniqueUserCount": "uniqueUserCount-value"
+  "failedSignInCount": 10,
+  "id": "String (identifier)",
+  "migrationStatus": "ready | needsReview | additionalStepsRequired",
+  "migrationValidationDetails": [{"@odata.type": "microsoft.graph.keyValuePair"}],
+  "relyingPartyId": "String",
+  "relyingPartyName": "String",
+  "replyUrls": ["String"],
+  "serviceId": "String (identifier)",
+  "signInSuccessRate": 90.0,
+  "successfulSignInCount": 90,
+  "totalSignInCount": 100,
+  "uniqueUserCount": 10
 }
 ```
 
