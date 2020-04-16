@@ -83,11 +83,11 @@ The beta version offers a workaround, where you can use the **onlineMeetingProvi
 
 ### Additional notifications for users
 
-[Subscriptions](/graph/api/resources/subscription) to changes for **user** with **changeType** set to **updated** will also receive notifications of **changeType**: **updated** on user creation and user deletion.
+[Subscriptions](/graph/api/resources/subscription) to changes for **user** with **changeType** set to **updated** will also receive notifications of **changeType**: **updated** on user creation and user soft-deletion.
 
 ### Additional notifications for groups
 
-[Subscriptions](/graph/api/resources/subscription) to changes for **group** with **changeType** set to **updated** will also receive notifications of **changeType**: **updated** on group creation and group deletion.
+[Subscriptions](/graph/api/resources/subscription) to changes for **group** with **changeType** set to **updated** will also receive notifications of **changeType**: **updated** on group creation and group soft-deletion.
 
 ## Cloud communications 
 
