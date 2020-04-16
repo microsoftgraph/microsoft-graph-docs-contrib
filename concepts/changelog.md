@@ -658,7 +658,7 @@ Microsoft Search is now exposing a way to search and index data in Microsoft Gra
 | Addition | Beta | Added the **timeClockEnabled**, **openShiftsEnabled**, **swapShiftsRequestsEnabled**, **offerShiftRequestsEnabled**,  **timeOffRequestsEnabled** properties to the [schedule](/graph/api/resources/schedule?view=graph-rest-beta) resource.|
 | Addition        | Beta          | Added an additional route to retrieve a [driveItem] using a team and channel ID, [get driveItem](/graph/api/driveitem-get?view=graph-rest-beta). |
 
-October 2019
+### October 2019
 
 ### Calendar
 
