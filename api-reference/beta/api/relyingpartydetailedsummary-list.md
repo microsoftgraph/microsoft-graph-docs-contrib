@@ -98,7 +98,7 @@ Content-type: application/json
   "successfulSignInCount": 90,
   "failedSignInCount": 10,
   "totalSignInCount": 100,
-  "signInSuccessRate":90,
+  "signInSuccessRate":90.0,
   "uniqueUserCount": 10,
   "migrationStatus": "ready",
   "replyUrls": [
