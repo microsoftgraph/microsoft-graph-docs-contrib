@@ -13,7 +13,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Settings that represent a user’s preferences for [regional locale and languages](../resources/regionalAndLanguageSettings.md), for [shift scheduling](../resources/shiftpreferences.md), and for [insights and content discovery](../resources/usersettings.md).
+Settings that represent a user’s preferences for [regional locale and languages](../resources/regionalandlanguagesettings.md), for [shift scheduling](../resources/shiftpreferences.md), and for [insights and content discovery](../resources/usersettings.md).
 To learn how to get or update user settings, see [Get settings](../api/usersettings-get.md) and [Update settings](../api/usersettings-update.md).
 
 This resource supports:
