@@ -13,7 +13,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Represents an Azure AD user account. Inherits from [directoryObject](directoryobject.md).
+Represents an Azure AD user account. Inherits from [directoryObject](directoryobject.md). The user resource lets mail clients to specify user preferences for languages and date and time formats for their primary Exchange mailboxes, and for the user's Azure AD profile. See the [relationships](#settingsclarify) section below for details.
 
 For performance reasons, the [create](../api/user-post-users.md), [get](../api/user-get.md), and [list](../api/user-list.md) operations return only a subset of more commonly used properties by default. These default properties are noted in the [Properties](#properties) section. To get any of the properties that are not returned by default, specify them in a `$select` OData query option.
 
@@ -288,6 +288,9 @@ The age group and minor consent properties are optional properties used by Azure
 |scopedRoleMemberOf|[scopedRoleMembership](scopedrolemembership.md) collection| The scoped-role administrative unit memberships for this user. Read-only. Nullable.|
 |settings|[userSettings](usersettings.md) | Read-only. Nullable.|
 |registeredDevices|[directoryObject](directoryobject.md) collection|Devices that are registered for the user. Read-only. Nullable.|
+
+### <a name="settingsclarify">userSettings Languages and Regional Formats</a>
+The user resource contains a property [mailBoxSettings](../resources/mailboxsettings.md) which includes the user's preference language, date and time formatting, and time zone preferences for their Exchange mailbox. These preferences are targeted for mail clients and are only available if the user has a mailbox provisioned. Additionally user includes a relationship via [userSettings](../resources/usersettings.md) to [regionalAndLanguageSettings](../resources/regionalandlanguagesettings.md), the super set of language and regional formatting preferences for a user that can be used by any application to provide the user with the best language and regional formatting experience.   
 
 ## JSON representation
 
