@@ -410,8 +410,8 @@
           href: resources/usersettings.md
         - name: Get settings
           href: api/usersettings-get.md
-      - name: Update settings
-        href: api/usersettings-update.md
+        - name: Update settings
+          href: api/usersettings-update.md
     - name: Groups
       items:
       - name: Overview
