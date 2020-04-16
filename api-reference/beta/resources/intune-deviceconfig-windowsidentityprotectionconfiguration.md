@@ -1,13 +1,15 @@
 ---
 title: "windowsIdentityProtectionConfiguration resource type"
 description: "This entity provides descriptions of the declared methods, properties and relationships exposed by Windows Hello for Business."
-author: "davidmu1"
+author: "dougeby"
 localization_priority: Normal
 ms.prod: "Intune"
 doc_type: resourcePageType
 ---
 
 # windowsIdentityProtectionConfiguration resource type
+
+Namespace: microsoft.graph
 
 > **Important:** Microsoft Graph APIs under the /beta version are subject to change; production use is not supported.
 
