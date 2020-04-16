@@ -10,6 +10,8 @@ doc_type: resourcePageType
 
 Namespace: microsoft.graph
 
+[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
+
 A collection of strings representing formatting overrides for calendars, dates, and times. 
 
 ## Properties
