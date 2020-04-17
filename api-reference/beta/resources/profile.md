@@ -21,7 +21,7 @@ Programmatically, these properties are expressed as [relationships](#relationshi
 
 | Method                                                                     | Return Type                                                    | Description                                                                                  |
 |:---------------------------------------------------------------------------|:---------------------------------------------------------------|:---------------------------------------------------------------------------------------------|
-| [Get profile](../api/profile-get.md)                                       | [profile](profile.md)                                          | Read properties of profile object.                                         |
+| [Get profile](../api/profile-get.md)                                       | [profile](profile.md)                                          | Read properties and relationships of the profile object.                                         |
 | [Delete profile](../api/profile-delete.md)                                 | None                                                           | Delete a **profile** object.                                                                 |
 | [List account](../api/profile-list-account.md)                             | [userAccountInformation](useraccountinformation.md) collection | Get a **userAccountInformation** object collection.                                          |
 | [Create personAnniversary](../api/profile-post-anniversaries.md)           | [personAnniversary](personanniversary.md)                      | Create a new **personAnniversary** by posting to the anniversaries collection.               |
