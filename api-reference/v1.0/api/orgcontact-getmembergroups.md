@@ -2,12 +2,14 @@
 title: "orgContact: getMemberGroups"
 description: "Return all the groups that the organizational contact is a member of."
 localization_priority: Normal
-author: "davidmu1"
+author: "dkershaw10"
 ms.prod: "microsoft-identity-platform"
 doc_type: apiPageType
 ---
 
 # orgContact: getMemberGroups
+
+Namespace: microsoft.graph
 
 Return all the groups that the [organizational contact](../resources/orgcontact.md) is a member of. The check is transitive, unlike reading the **memberOf** navigation property, which returns only the groups that the user is a direct member of.
 

@@ -2,12 +2,14 @@
 title: "modifiedProperty resource type"
 description: "Describes the changes performed in the target system."
 localization_priority: Normal
-author: "davidmu1"
+author: "keylimesoda"
 ms.prod: "microsoft-identity-platform"
 doc_type: resourcePageType
 ---
 
 # modifiedProperty resource type
+
+Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 

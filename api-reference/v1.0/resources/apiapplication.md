@@ -4,10 +4,12 @@ description: "Specifies settings for a Web API application."
 localization_priority: Normal
 doc_type: resourcePageType
 ms.prod: "microsoft-identity-platform"
-author: "davidmu1"
+author: "sureshja"
 ---
 
 # apiApplication resource type
+
+Namespace: microsoft.graph
 
 Specifies settings for an application that implements a web API.
 

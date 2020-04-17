@@ -1,13 +1,15 @@
 ---
 title: "userExperienceAnalyticsDeviceStartupHistory resource type"
 description: "The user experience analytics device startup history entity contains device boot performance history details."
-author: "rolyon"
+author: "dougeby"
 localization_priority: Normal
 ms.prod: "Intune"
 doc_type: resourcePageType
 ---
 
 # userExperienceAnalyticsDeviceStartupHistory resource type
+
+Namespace: microsoft.graph
 
 > **Important:** Microsoft Graph APIs under the /beta version are subject to change; production use is not supported.
 
@@ -36,6 +38,7 @@ The user experience analytics device startup history entity contains device boot
 |totalBootTimeInMs|Int32|The user experience analytics device total boot time in milliseconds.|
 |groupPolicyLoginTimeInMs|Int32|The User experience analytics Device group policy login time in milliseconds.|
 |coreLoginTimeInMs|Int32|The user experience analytics device core login time in milliseconds.|
+|responsiveDesktopTimeInMs|Int32|The user experience analytics responsive desktop time in milliseconds.|
 |totalLoginTimeInMs|Int32|The user experience analytics device total login time in milliseconds.|
 |isFirstLogin|Boolean|The user experience analytics device first login.|
 |isFeatureUpdate|Boolean|The user experience analytics device boot record is a feature update.|
@@ -64,6 +67,7 @@ Here is a JSON representation of the resource.
   "totalBootTimeInMs": 1024,
   "groupPolicyLoginTimeInMs": 1024,
   "coreLoginTimeInMs": 1024,
+  "responsiveDesktopTimeInMs": 1024,
   "totalLoginTimeInMs": 1024,
   "isFirstLogin": true,
   "isFeatureUpdate": true,

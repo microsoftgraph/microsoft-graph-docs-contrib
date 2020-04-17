@@ -1,13 +1,15 @@
 ---
 title: "Create userExperienceAnalyticsDeviceStartupHistory"
 description: "Create a new userExperienceAnalyticsDeviceStartupHistory object."
-author: "rolyon"
+author: "dougeby"
 localization_priority: Normal
 ms.prod: "Intune"
 doc_type: apiPageType
 ---
 
 # Create userExperienceAnalyticsDeviceStartupHistory
+
+Namespace: microsoft.graph
 
 > **Important:** Microsoft Graph APIs under the /beta version are subject to change; production use is not supported.
 
@@ -55,6 +57,7 @@ The following table shows the properties that are required when you create the u
 |totalBootTimeInMs|Int32|The user experience analytics device total boot time in milliseconds.|
 |groupPolicyLoginTimeInMs|Int32|The User experience analytics Device group policy login time in milliseconds.|
 |coreLoginTimeInMs|Int32|The user experience analytics device core login time in milliseconds.|
+|responsiveDesktopTimeInMs|Int32|The user experience analytics responsive desktop time in milliseconds.|
 |totalLoginTimeInMs|Int32|The user experience analytics device total login time in milliseconds.|
 |isFirstLogin|Boolean|The user experience analytics device first login.|
 |isFeatureUpdate|Boolean|The user experience analytics device boot record is a feature update.|
@@ -72,7 +75,7 @@ Here is an example of the request.
 ``` http
 POST https://graph.microsoft.com/beta/deviceManagement/userExperienceAnalyticsDeviceStartupHistory
 Content-type: application/json
-Content-length: 498
+Content-length: 533
 
 {
   "@odata.type": "#microsoft.graph.userExperienceAnalyticsDeviceStartupHistory",
@@ -84,6 +87,7 @@ Content-length: 498
   "totalBootTimeInMs": 1,
   "groupPolicyLoginTimeInMs": 8,
   "coreLoginTimeInMs": 1,
+  "responsiveDesktopTimeInMs": 9,
   "totalLoginTimeInMs": 2,
   "isFirstLogin": true,
   "isFeatureUpdate": true,
@@ -96,7 +100,7 @@ Here is an example of the response. Note: The response object shown here may be 
 ``` http
 HTTP/1.1 201 Created
 Content-Type: application/json
-Content-Length: 547
+Content-Length: 582
 
 {
   "@odata.type": "#microsoft.graph.userExperienceAnalyticsDeviceStartupHistory",
@@ -109,14 +113,13 @@ Content-Length: 547
   "totalBootTimeInMs": 1,
   "groupPolicyLoginTimeInMs": 8,
   "coreLoginTimeInMs": 1,
+  "responsiveDesktopTimeInMs": 9,
   "totalLoginTimeInMs": 2,
   "isFirstLogin": true,
   "isFeatureUpdate": true,
   "operatingSystemVersion": "Operating System Version value"
 }
 ```
-
-
 
 
 

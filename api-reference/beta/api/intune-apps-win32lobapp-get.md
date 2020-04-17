@@ -1,13 +1,15 @@
 ---
 title: "Get win32LobApp"
 description: "Read properties and relationships of the win32LobApp object."
-author: "rolyon"
+author: "dougeby"
 localization_priority: Normal
 ms.prod: "Intune"
 doc_type: apiPageType
 ---
 
 # Get win32LobApp
+
+Namespace: microsoft.graph
 
 > **Important:** Microsoft Graph APIs under the /beta version are subject to change; production use is not supported.
 
@@ -63,7 +65,7 @@ Here is an example of the response. Note: The response object shown here may be 
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 3192
+Content-Length: 3242
 
 {
   "value": {
@@ -158,12 +160,11 @@ Content-Length: 3192
       "productName": "Product Name value",
       "publisher": "Publisher value"
     },
-    "setupFilePath": "Setup File Path value"
+    "setupFilePath": "Setup File Path value",
+    "installLanguage": "Install Language value"
   }
 }
 ```
-
-
 
 
 
