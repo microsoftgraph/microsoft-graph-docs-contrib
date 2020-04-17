@@ -64,7 +64,7 @@ If successful, this method returns a `202 ACCEPTED` response code and a URL in t
 
 If the caller did not submit a password, a Microsoft-generated password is provided in a JSON object in the response body.
 
-## Response headers
+### Response headers
 
 | Name        | Description     |
 |:------------|:----------------|
