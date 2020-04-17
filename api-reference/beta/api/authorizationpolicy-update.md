@@ -1,0 +1,141 @@
+---
+title: "Update authorizationpolicy"
+description: "Update the properties of authorizationPolicy object."
+localization_priority: Normal
+author: "abhijeetsinha"
+ms.prod: "microsoft-identity-platform"
+doc_type: "apiPageType"
+---
+
+# Update authorizationPolicy
+
+Namespace: microsoft.graph
+
+[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
+
+Update the properties of a [authorizationPolicy](../resources/authorizationpolicy.md) object.
+
+## Permissions
+
+One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
+
+| Permission type                        | Permissions (from least to most privileged) |
+|:---------------------------------------|:--------------------------------------------|
+| Delegated (work or school account)     | Policy.ReadWrite.ApplicationConfiguration|
+| Delegated (personal Microsoft account) | Not supported. |
+| Application                            | Policy.ReadWrite.ApplicationConfiguration|
+
+## HTTP request
+
+<!-- { "blockType": "ignored" } -->
+
+```http
+PATCH /policies/authorizationPolicy/authorizationPolicy
+```
+
+## Request headers
+
+| Name       | Description|
+|:-----------|:-----------|
+| Authorization | Bearer {token} |
+| Content-type | application/json |
+
+## Request body
+
+In the request body, supply the values for relevant fields that should be updated. Existing properties that are not included in the request body will maintain their previous values or be recalculated based on changes to other property values. For best performance, don't include existing values that haven't changed.
+
+| Property     | Type        | Description |
+|:-------------|:------------|:------------|
+|description|String| Description for this policy.|
+|displayName|String| Display name for this policy. Required.|
+|`guestUserRole`|`String`| Represents role templateId for the role that should be granted to guest user. Use https://graph.microsoft.com/beta/roleManagement/directory/roleDefinitions to find the list of available role templates. Only supported roles today are Default Member User, Default Guest User and Restricted Guest User. | 
+|`enabledPreviewFeatures`|`Collection(string)`| List of features enabled for private preview on the tenant. |
+|`blockMsolPowerShell`|`Boolean`| To disable the use of MSOL PowerShell set this property to true. Setting to true will also disable user-based access to the legacy service endpoint used by MSOL PowerShell. This does not affect Azure AD Connect, Azure AD Graph or Microsoft Graph. |
+
+
+## Response
+
+If successful, this method returns a `204 No Content` response code. It does not return anything in the response body.
+
+## Example 1: Update/set Guest user access level for the tenant
+
+### Request
+
+The following is an example of the request. In this example, guest access level is modified to Restricted Guest User.
+
+```http
+PATCH https://graph.microsoft.com/beta/policies/authorizationPolicy/authorizationPolicy
+{
+  "guestUserRole": "2af84b1e-32c8-42b7-82bc-daa82404023b"
+}
+
+```
+### Response
+
+The following is an example of the response.
+
+<!-- {
+  "blockType": "response",
+  "truncated": true,
+  "@odata.type": "microsoft.graph.authorizationPolicyPolicy"
+} -->
+
+```http
+HTTP/1.1 204 No Content
+
+```
+
+## Example 2: Enable new feature for preview on tenant
+
+### Request
+
+The following is an example of the request.
+
+```http
+PATCH https://graph.microsoft.com/beta/policies/authorizationPolicy/authorizationPolicy
+{
+  "enabledPreviewFeatures": ["assignGroupsToRoles"]
+}
+
+```
+### Response
+
+The following is an example of the response.
+
+<!-- {
+  "blockType": "response",
+  "truncated": true,
+  "@odata.type": "microsoft.graph.authorizationPolicyPolicy"
+} -->
+
+```http
+HTTP/1.1 204 No Content
+```
+
+
+## Example 3: Block MSOL PowerShell in tenant
+
+### Request
+
+The following is an example of the request.
+
+```http
+PATCH https://graph.microsoft.com/beta/policies/authorizationPolicy/authorizationPolicy
+{
+  "blockMsolPowerShell": true
+}
+
+```
+### Response
+
+The following is an example of the response.
+
+<!-- {
+  "blockType": "response",
+  "truncated": true,
+  "@odata.type": "microsoft.graph.authorizationPolicyPolicy"
+} -->
+
+```http
+HTTP/1.1 204 No Content
+```
