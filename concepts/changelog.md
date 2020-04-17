@@ -15,6 +15,14 @@ For details about known issues with Microsoft Graph APIs, see [Known issues](kno
 
 ## April 2020
 
+### Universal Print
+
+Added allowedGroups and allowedUsers properties to the `printerShare` resource.
+
+| **Change type** | **Version**   | **Description**                          |
+|:---|:---|:---|
+| Addition | beta | Added **allowedGroups** and **allowedUsers** properties to the [printerShare](/graph/api/resources/printershare) entity.|
+
 ### Calendar
 
 | **Change type** | **Version**   | **Description**                          |
