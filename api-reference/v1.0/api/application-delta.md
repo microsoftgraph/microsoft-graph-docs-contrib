@@ -77,7 +77,6 @@ For details, see [Using delta query](/graph/delta-query-overview). For example r
 ## Example
 ### Request
 
-# [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "application_delta"
