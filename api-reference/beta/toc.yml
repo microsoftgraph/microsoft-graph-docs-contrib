@@ -9151,12 +9151,16 @@
       - name: Oauth2 permission grant
         href: resources/oauth2permissiongrant.md
         items:
-        - name: Get oauth2 permission grant
+        - name: List
+          href: api/oauth2permissiongrant-list.md
+        - name: Get
           href: api/oauth2permissiongrant-get.md
-        - name: Update oauth2 permission grant
+        - name: Update
           href: api/oauth2permissiongrant-update.md
-        - name: Delete oauth2 permission grant
+        - name: Delete
           href: api/oauth2permissiongrant-delete.md
+        - name: Get delta
+          href: api/oauth2permissiongrant-delta.md
       - name: On-premises publishing
         href: resources/onpremisespublishingprofile-root.md
         items:
@@ -10326,6 +10330,13 @@
       items:
       - name: Identity and access reports
         items:
+        - name: AD FS application activity
+          items:
+          - name: Relying party detailed summary
+            href: resources/relyingpartydetailedsummary.md
+            items:
+            - name: List
+              href: api/relyingpartydetailedsummary-list.md
         - name: Application sign-in
           items:
           - name: Sign-in summary
