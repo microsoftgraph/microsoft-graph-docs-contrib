@@ -7,82 +7,137 @@ author: DarrelMiller
 
 # Page through a collection
 
-For performance reasons, collections of entities are often split into pages and each page is returned with a URL to the next page. Sometimes, page granularity provided by the API does not match the requirements of the consumer. PageIterator simplifies consuming of paged collections.
+For performance reasons, collections of entities are often split into pages and each page is returned with a URL to the next page. Sometimes, page granularity provided by the API does not match the requirements of the consumer. **PageIterator** simplifies consuming of paged collections. **PageIterator** handles enumerating the current page and requesting subsequent pages automatically.
 
 ## Iterate over all the messages
 
-This example demonstrates iterating over all the messages in a user's mailbox.  By setting the `top` parameter to 999 we can minimize the number of requests that are necessary.
+This example demonstrates iterating over all the messages in a user's mailbox.
 
-# [C#](#tab/CS)
+> [!TIP]
+> This example sets a small page size using the `top` parameter for demonstration purposes. You can set the page size up to 999 to minimize the number of requests that are necessary.
+
+<!-- markdownlint-disable MD025 -->
+# [C#](#tab/csharp)
 
 ```csharp
-var results = new List<string>();
-var messages = await client.Me.Messages
-	.Request()
-	.WithScopes(scopes)
-	.Select(e => new {
-		e.Sender,
-		e.Subject
-	})
-	.Top(999)
-	.GetAsync();
+var messages = await graphClient.Me.Messages
+    .Request()
+    .Select(e => new {
+        e.Sender,
+        e.Subject
+    })
+    .Top(10)
+    .GetAsync();
 
-var pageIterator = PageIterator<Message>.CreatePageIterator(client, messages, (m) => {
-	output(m.Subject);
-	return true;
-});
+var pageIterator = PageIterator<Message>
+    .CreatePageIterator(graphClient, messages, (m) => {
+        Console.WriteLine(m.Subject);
+        return true;
+    });
 
 await pageIterator.IterateAsync();
 ```
 
-# [TypeScript](#tab/TypeScript)
+# [TypeScript](#tab/typeScript)
 
 ```typescript
-// Makes request to fetch mails list. Which is expected to have multiple pages of data.
-let response: PageCollection = await client.api("/me/messages?$top=999&$select=sender,subject").get();
-// A callback function to be called for every item in the collection. This call back should return boolean indicating whether not to continue the iteration process.
+// Makes request to fetch mails list.
+let response: PageCollection = await client
+  .api("/me/messages?$top=10&$select=sender,subject")
+  .get();
+
+// A callback function to be called for every item in the collection.
+// This call back should return boolean indicating whether not to
+// continue the iteration process.
 let callback: PageIteratorCallback = (data) => {
-   console.log(data);
-   return true;
+  console.log(data.subject);
+  return true;
 };
-// Creating a new page iterator instance with client a graph client instance, page collection response from request and callback
+
+// Creating a new page iterator instance with client a graph client
+// instance, page collection response from request and callback
 let pageIterator = new PageIterator(client, response, callback);
+
 // This iterates the collection until the nextLink is drained out.
-pageIterator.iterate();
-}
+await pageIterator.iterate();
 ```
 
 ---
+<!-- markdownlint-enable MD025 -->
 
 ## Stopping and Resuming the iteration
 
-Some scenarios require stopping the iteration process in order to perform other actions.  There may be cases where you with to resume the iteration.  It is possible to pause the iteration by returning `false` from the iteration callback. Iteration can be resumed by calling the `resume` method on the `Iterator` task.
+Some scenarios require stopping the iteration process in order to perform other actions. It is possible to pause the iteration by returning `false` from the iteration callback. Iteration can be resumed by calling the `resume` method on the **PageIterator**.
 
-# [TypeScript](#tab/TypeScript)
+<!-- markdownlint-disable MD025 MD024 -->
+# [C#](#tab/csharp)
+
+```csharp
+int count = 0;
+int pauseAfter = 25;
+
+var messages = await graphClient.Me.Messages
+    .Request()
+    .Select(e => new {
+        e.Sender,
+        e.Subject
+    })
+    .Top(10)
+    .GetAsync();
+
+var pageIterator = PageIterator<Message>
+    .CreatePageIterator(graphClient, messages, (m) => {
+        Console.WriteLine(m.Subject);
+        count++;
+        // If we've iterated over the limit,
+        // stop the iteration by returning false
+        return count < pauseAfter;
+    });
+
+await pageIterator.IterateAsync();
+
+while (pageIterator.State != PagingState.Complete)
+{
+    Console.WriteLine("Iteration paused for 5 seconds...");
+    Thread.Sleep(5000);
+    // Reset count
+    count = 0;
+    await pageIterator.ResumeAsync();
+}
+```
+
+# [TypeScript](#tab/typeScript)
 
 ```typescript
-// Populating custom size pages if the api restricts to some maximum size. Lazy loading more data on user prompt or something, stop and resume will do the trick.
-let response: PageCollection = await client.api("/me/messages").get();
-let size = 1000;
-let count = 0;
+let count: number = 0;
+let pauseAfter: number = 25;
+
+let response: PageCollection = await client
+  .api('/me/messages?$top=10&$select=sender,subject')
+  .get();
+
 let callback: PageIteratorCallback = (data) => {
-	console.log(data);
-	count++;
-	if (count === size) {
-		count = 0;
-		return false;
-	}
-	return true;
+  result = `${result}${data.subject}\n`;
+  console.log(data.subject);
+  count++;
+
+  // If we've iterated over the limit,
+  // stop the iteration by returning false
+  return count < pauseAfter;
 };
+
 let pageIterator = new PageIterator(client, response, callback);
-// This stops iterating over for 1000 entities.
-pageIterator.iterate();
+await pageIterator.iterate();
 
-// Resuming will do start from where it left off and iterate for next 1000 entities.
-// Check and resume is likely to be called in any user interaction requiring to load more data.
-if (!pageIterator.isComplete()) {
-	pageIterator.resume();
+while (!pageIterator.isComplete()) {
+  console.log('Iteration paused for 5 seconds...');
+  await new Promise(resolve => setTimeout(resolve, 5000));
+
+  // Reset count
+  count = 0;
+  await pageIterator.resume();
 }
-
 ```
+
 ---
+<!-- markdownlint-enable MD025 MD024 -->
