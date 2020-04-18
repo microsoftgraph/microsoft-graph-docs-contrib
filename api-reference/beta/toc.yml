@@ -1059,7 +1059,7 @@
     - name: Devices and apps
       expanded: true
       items:
-      - name: Cloud printing
+      - name: Cloud printing (preview)
         items:
         - name: Print
           href: resources/print.md

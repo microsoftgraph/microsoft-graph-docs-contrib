@@ -153,7 +153,7 @@ items:
       - name: Devices and apps
         expanded: true
         items:
-          - name: Cloud printing
+          - name: Cloud printing (preview)
             href: universal-print-concept-overview.md
             displayName: Universal Print
           - name: Corporate management
