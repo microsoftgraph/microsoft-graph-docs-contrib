@@ -1270,8 +1270,8 @@ For more complex scenarios involving multiple permissions, see [Permission scena
 
 |   Permission    |  Display String   |  Description | Admin Consent Required |
 |:-----------------------------|:-----------------------------------------|:-----------------|:-----------------|
-| _Presence.Read_ | Read user's presence information | Allows the app to read presence information on behalf of the signed-in user. Presence information includes activity, availability, status note, calendar out-of-office message, timezone and location. | Yes |
-| _Presence.Read.All_ |   Read presence information of all users in your organization | Allows the app to read presence information of all users in the directory on behalf of the signed-in user. Presence information includes activity, availability, status note, calendar out-of-office message, timezone and location. | Yes |
+| _Presence.Read_ | Read user's presence information | Allows the app to read presence information on behalf of the signed-in user. Presence information includes activity, availability, status note, calendar out-of-office message, timezone and location. | No |
+| _Presence.Read.All_ |   Read presence information of all users in your organization | Allows the app to read presence information of all users in the directory on behalf of the signed-in user. Presence information includes activity, availability, status note, calendar out-of-office message, timezone and location. | No |
 
 ### Example usage
 
