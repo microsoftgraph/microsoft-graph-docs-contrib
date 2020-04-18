@@ -1,6 +1,6 @@
 ---
 title: "Update phoneAuthenticationMethod"
-description: "Update the phone number of a phoneAuthenticationMethod object."
+description: "Update the phone number associated with a phoneAuthenticationMethod object."
 localization_priority: Normal
 author: "mmcla"
 ms.prod: "microsoft-identity-platform"
@@ -13,7 +13,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Update the phone number of a [phone authentication method](../resources/phoneauthenticationmethod.md).
+Update the phone number associated with a [phone authentication method](../resources/phoneauthenticationmethod.md).
 
 You can't change a phone's type. To change a phone's type, add a new number of the desired type and then delete the object with the original type.
 
