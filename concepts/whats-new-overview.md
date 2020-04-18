@@ -44,7 +44,7 @@ Intune [April](changelog.md#april-2020) updates.
 [List](/graph/api/relyingpartydetailedsummary-list?view=graph-rest-beta) [relying parties](https://docs.microsoft.com/windows-server/identity/ad-fs/technical-reference/understanding-key-ad-fs-concepts) configured in Active Directory Federation Services.
 
 ### Reports | Office 365 usage reports
-View **Meeting Created** and **Meeting Interacted** data in CSV reports for [email activity counts](/graph/api/resources/reportroot-getemailactivitycounts?view=graph-rest-beta), [email activity user counts](/graph/api/resources/reportroot-getemailactivityusercounts?view=graph-rest-beta), and [email activity user detail](/graph/api/resources/reportroot-getemailactivityuserdetail?view=graph-rest-beta).
+View **Meeting Created** and **Meeting Interacted** data in CSV reports for [email activity counts](/graph/api/reportroot-getemailactivitycounts?view=graph-rest-beta), [email activity user counts](/graph/api/reportroot-getemailactivityusercounts?view=graph-rest-beta), and [email activity user detail](/graph/api/reportroot-getemailactivityuserdetail?view=graph-rest-beta).
 
 
 ## March 2020: New and generally available
