@@ -1061,7 +1061,7 @@
       items:
       - name: Cloud printing
         items:
-        - name: Overview
+        - name: Print
           href: resources/print.md
           displayName: Universal Print
         - name: Connectors
