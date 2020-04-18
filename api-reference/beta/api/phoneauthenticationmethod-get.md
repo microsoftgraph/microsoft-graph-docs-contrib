@@ -13,7 +13,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Retrieve a single [phone authentication method](../resources/phoneauthenticationmethod.md) object.
+Retrieve a single [phoneAuthenticationMethod](../resources/phoneauthenticationmethod.md) object.
 
 ## Permissions
 
