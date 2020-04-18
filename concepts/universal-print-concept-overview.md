@@ -1,5 +1,5 @@
 ---
-title: "Universal Print API overview"
+title: "Overview of cloud printing using Universal Print API"
 description: "Universal Print is a modern print solution that organizations can use to manage their print infrastructure through cloud services from Microsoft."
 author: "braedenp-msft"
 localization_priority: Priority
@@ -7,7 +7,7 @@ ms.prod: "universal-print"
 ms.custom: scenarios:getting-started
 ---
 
-# Universal Print API overview
+# Overview of cloud printing using the Universal Print API
 
 Universal Print is a modern print solution that organizations can use to manage their print infrastructure through cloud services from Microsoft.
 
