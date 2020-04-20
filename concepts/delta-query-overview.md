@@ -100,7 +100,7 @@ Delta query is currently supported for the following resources.
 
 | **Resource collection**                                        | **API**                                                                                                                                                                                |
 | :------------------------------------------------------------- | :------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| Applications (preview)                                         | [delta](/graph/api/application-delta) function of the [application](/graph/api/resources/application) resource (preview)                     |
+| Applications                                         | [delta](/graph/api/application-delta) function of the [application](/graph/api/resources/application) resource                     |
 | Administrative units (preview)                                         | [delta](/graph/api/administrativeunit-delta) function of the [administrativeUnit](/graph/api/resources/administrativeunit) resource (preview)                     |
 | Chat messages in a channel (preview)                            | [delta](/graph/api/chatmessage-delta) function of the [chatMessage](/graph/api/resources/chatmessage) |
 | Classes (preview)                                              | [delta](/graph/api/educationclass-delta) function of the [educationClass](/graph/api/resources/educationclass) resource (preview)                     |
