@@ -36,25 +36,68 @@ var messages = await customGraphClient.Me.Messages.Request()
 # [TypeScript](#tab/typeScript)
 
 ```typescript
-const client = MicrosoftGraph.Client.init({
-  defaultVersion: "v1.0",
+// Create a custom auth provider
+let authProvider = new SimpleAuthProvider(accessToken);
+// Create an authentication handler that uses custom auth provider
+let authHandler = new MicrosoftGraph.AuthenticationHandler(authProvider);
+
+// Create a custom logging handler
+let loggingHandler = new CustomLoggingHandler();
+
+// Create a standard HTTP message handler
+let httpHandler = new MicrosoftGraph.HTTPMessageHandler();
+
+// Use setNext to chain handlers together
+// auth -> logging -> http
+authHandler.setNext(loggingHandler);
+loggingHandler.setNext(httpHandler);
+
+// Pass the first middleware in the chain in the middleWare property
+const client = MicrosoftGraph.Client.initWithMiddleware({
+  defaultVersion: 'v1.0',
   debugLogging: true,
-  authProvider: (done) => {
-    done(null, secrets.accessToken);
-  },
+  middleware: authHandler,
 });
 
-// Get the current middleware chain (in this case, it's the default one)
-let arr = client.getMiddlewareChain();
+let response: PageCollection = await client
+  .api('/me/messages?$top=10&$select=sender,subject')
+  .get();
+```
 
-// Initialize the middleware chain that we created
-const chaosHandler = new chaosHandler();
+## SimpleAuthProvider.ts
 
-// adding the dummy handler in the array of middlewares at 3rd position
-arr.splice(2, 0, chaosHandler);
+```typescript
+import { AuthenticationProvider } from "@microsoft/microsoft-graph-client";
 
-// setting the new middleware chain
-client.setMiddlewareChain(arr);
+export default class SimpleAuthProvider implements AuthenticationProvider {
+  private accessToken: string;
+
+  constructor(accessToken: string) {
+    this.accessToken = accessToken;
+  }
+
+  getAccessToken = async (): Promise<string> => {
+    return this.accessToken;
+  }
+}
+```
+
+## CustomLoggingHandler.ts
+
+```typescript
+import { Context, Middleware } from "@microsoft/microsoft-graph-client";
+
+export default class CustomLoggingHandler implements Middleware {
+  private nextMiddleware: any = null;
+
+  execute = async (context: Context): Promise<void> => {
+    console.log(`Logging request: ${context.request.toString()}`);
+    return await this.nextMiddleware.execute(context);
+  }
+  setNext = (middleware: Middleware): void => {
+    this.nextMiddleware = middleware;
+  }
+}
 ```
 
 ---
