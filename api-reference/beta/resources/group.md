@@ -233,6 +233,7 @@ The following is a JSON representation of the resource
   "assignedLicenses": [{"@odata.type": "microsoft.graph.assignedLicense"}],
   "allowExternalSenders": false,
   "autoSubscribeNewMembers": true,
+  "createdByAppId": "String",
   "createdDateTime": "String (timestamp)",
   "deletedDateTime": "String (timestamp)",
   "description": "string",
