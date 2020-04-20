@@ -18,12 +18,12 @@ To learn how to get or update user settings, see [Get settings](../api/usersetti
 
 This resource supports:
 
-- Checking whether a user and the user's organization contribute to content discovery.
-- Disabling or enabling content discovery for specific users. This also disables documents in Office Delve.
-- Checking whether a user can be assigned to shifts in a schedule.
-- Updating a user's shift preferences.
 - Determining what language and regional formatting a user prefers to view applications with.
 - Updating a user's language and regional formatting preferences.
+- Checking whether a user can be assigned to shifts in a schedule.
+- Updating a user's shift preferences.
+- Checking whether a user and the user's organization contribute to content discovery.
+- Disabling or enabling content discovery for specific users. This also disables documents in Office Delve.
 
 > [!NOTE]
 > This endpoint works only with users. You can't use this endpoint with contacts.
