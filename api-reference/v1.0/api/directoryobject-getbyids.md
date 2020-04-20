@@ -22,7 +22,7 @@ Returns the directory objects specified in a list of IDs.
 Some common uses for this function are to:
 
 * Resolve IDs returned by functions (that return collections of IDs) such as [getMemberObjects](directoryobject-getmemberobjects.md) or [getMemberGroups](directoryobject-getmembergroups.md)  to their backing directory objects.
-* Resolve ids persisted in an external store by the application to their backing directory objects.
+* Resolve IDs persisted in an external store by the application to their backing directory objects.
 
 ## Permissions
 
@@ -63,11 +63,11 @@ In the request body, provide a JSON object with the following parameters.
 
 ## Response
 
-If successful, this method returns `200 OK` response code and String collection object in the response body.
+If successful, this method returns a `200 OK` response code and a string collection object in the response body.
 
 ## Example
 
-##### Request
+### Request
 
 
 # [HTTP](#tab/http)
@@ -104,7 +104,7 @@ Content-type: application/json
 ---
 
 
-##### Response
+### Response
 
 >**Note:** The response object shown here might be shortened for readability. All the properties will be returned from an actual call.
 <!-- {
