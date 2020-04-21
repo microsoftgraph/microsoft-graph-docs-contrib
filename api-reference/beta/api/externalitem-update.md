@@ -144,7 +144,10 @@ Content-type: application/json
     "priority": 1,
     "assignee": "john@contoso.com"
   },
-  "content": "Textual content of the file"
+  "content": {
+    "value": "<h1>Error in payment gateway</h1><p>Error details...</p>",
+    "type": "html"
+  }
 }
 ```
 
