@@ -11,7 +11,7 @@ doc_type: apiPageType
 
 Namespace: microsoft.graph
 
-Returns the directory objects specified in a list of IDs.
+Return the directory objects specified in a list of IDs.
 
 >[!NOTE]
 >This API has a [known issue](/graph/known-issues#incomplete-objects-when-using-getbyids-request). Not all directory objects returned are the full objects containing all their properties.
