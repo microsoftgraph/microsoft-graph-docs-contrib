@@ -37,7 +37,7 @@ attendeesList.add(attendees);
 event.attendees = attendeesList;
 event.allowNewTimeProposals = true;
 event.isOnlineMeeting = true;
-event.onlineMeetingProvider = "teamsForBusiness";
+event.onlineMeetingProvider = OnlineMeetingProviderType.TEAMS_FOR_BUSINESS;
 
 graphClient.me().events()
 	.buildRequest( requestOptions )
