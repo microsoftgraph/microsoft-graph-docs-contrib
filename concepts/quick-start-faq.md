@@ -31,7 +31,7 @@ This section answers questions about the contents of the quick start samples.
 
 ### Can I get the quick start code without downloading through the quick start page?
 
-Absolutely! Each quick start download is based on a [Microsoft Graph tutorial](tutorials.md), so you have two other options to get the same source code:
+Absolutely! Each quick start download is based on a [Microsoft Graph tutorial](tutorials.yml), so you have two other options to get the same source code:
 
 - Build the code yourself by following the step-by-step tutorial.
 - Download the completed project from the corresponding GitHub repository and follow the instructions in the README to configure and run the sample.
