@@ -30,7 +30,7 @@ One of the following permissions is required to call this API. To learn more, in
 <!-- { "blockType": "ignored" } -->
 
 ```http
-DELETE /teams/{id}/schedule/timeOffRequests
+DELETE /teams/{teamId}/schedule/timeOffRequests/{timeOffRequestId}
 ```
 
 ## Request headers
@@ -59,7 +59,7 @@ The following is an example of the request.
 }-->
 
 ```http
-DELETE https://graph.microsoft.com/v1.0/teams/{id}/schedule/timeOffRequests
+DELETE https://graph.microsoft.com/v1.0/teams/{teamId}/schedule/timeOffRequests/{timeOffRequestId}
 ```
 ---
 

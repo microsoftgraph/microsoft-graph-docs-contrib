@@ -1,7 +1,7 @@
 ---
 title: "timeOff resource type"
 description: "A unit of non-work in the schedule."
-author: "nkramer"
+author: "akumar39"
 localization_priority: Normal
 ms.prod: "microsoft-teams"
 doc_type: resourcePageType_
@@ -10,8 +10,6 @@ doc_type: resourcePageType_
 # timeOff resource type
 
 Namespace: microsoft.graph
-
-[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 A unit of non-work in a schedule.
 
