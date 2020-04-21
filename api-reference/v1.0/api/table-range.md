@@ -1,5 +1,5 @@
 ---
-title: "Table: Range"
+title: "workbookTable: range"
 description: "Gets the range object associated with the entire table."
 author: "lumine2008"
 localization_priority: Normal
@@ -7,7 +7,7 @@ ms.prod: "excel"
 doc_type: apiPageType
 ---
 
-# Table: Range
+# workbookTable: range
 
 Namespace: microsoft.graph
 
@@ -39,12 +39,12 @@ GET /workbook/worksheets/{id|name}/tables/{id|name}/range
 
 ## Response
 
-If successful, this method returns `200 OK` response code and [Range](../resources/range.md) object in the response body.
+If successful, this method returns a `200 OK` response code and a [range](../resources/range.md) object in the response body.
 
 ## Example
-Here is an example of how to call this API.
+
 ##### Request
-Here is an example of the request.
+The following is an example of the request.
 
 # [HTTP](#tab/http)
 <!--{
@@ -76,7 +76,9 @@ GET https://graph.microsoft.com/v1.0/me/drive/items/{id}/workbook/tables/{id|nam
 
 
 ##### Response
-Here is an example of the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.
+The following is an example of the response. 
+
+>**Note:** The response object shown here might be shortened for readability. All the properties will be returned from an actual call.
 <!-- {
   "blockType": "response",
   "truncated": true,
