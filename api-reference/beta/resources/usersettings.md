@@ -13,15 +13,17 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Settings that represent a user’s preferences for [regional locale and languages](../resources/regionalandlanguagesettings.md), for [shift scheduling](../resources/shiftpreferences.md), and for [insights and content discovery](../resources/officegraphinsights.md):
+Settings that represent a user’s preferences for [regional locale and languages](../resources/regionalandlanguagesettings.md), for [shift scheduling](../resources/shiftpreferences.md), and for [insights and content discovery](../resources/officegraphinsights.md).
 
-- Managing user's locale-based preferences: 
+Manage user's locale-based preferences: 
   - Determining what language and regional formatting a user prefers to view applications with.
   - Updating a user's language and regional formatting preferences.
-- Managing user's work shift preferences: 
+
+Manage user's work shift preferences: 
   - Checking whether a user can be assigned to shifts in a schedule.
   - Updating a user's shift preferences.
-- Enabling discovery of content and document-centric insights:
+  
+Enable discovery of content and document-centric insights:
   - Checking whether a user and the user's organization contribute to content discovery.
   - Disabling or enabling content discovery for specific users. This also disables documents in Office Delve.
 
