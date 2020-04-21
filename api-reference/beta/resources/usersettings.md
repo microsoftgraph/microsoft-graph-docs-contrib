@@ -13,17 +13,19 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Settings that represent a user’s preferences for [regional locale and languages](../resources/regionalandlanguagesettings.md), for [shift scheduling](../resources/shiftpreferences.md), and for [insights and content discovery](../resources/usersettings.md).
+Settings that represent a user’s preferences for [regional locale and languages](../resources/regionalandlanguagesettings.md), for [shift scheduling](../resources/shiftpreferences.md), and for [insights and content discovery](../resources/officegraphinsights.md):
+
+- Managing user's locale-based preferences: 
+  - Determining what language and regional formatting a user prefers to view applications with.
+  - Updating a user's language and regional formatting preferences.
+- Managing user's work shift preferences: 
+  - Checking whether a user can be assigned to shifts in a schedule.
+  - Updating a user's shift preferences.
+- Enabling discovery of content and document-centric insights:
+  - Checking whether a user and the user's organization contribute to content discovery.
+  - Disabling or enabling content discovery for specific users. This also disables documents in Office Delve.
+
 To learn how to get or update user settings, see [Get settings](../api/usersettings-get.md) and [Update settings](../api/usersettings-update.md).
-
-This resource supports:
-
-- Determining what language and regional formatting a user prefers to view applications with.
-- Updating a user's language and regional formatting preferences.
-- Checking whether a user can be assigned to shifts in a schedule.
-- Updating a user's shift preferences.
-- Checking whether a user and the user's organization contribute to content discovery.
-- Disabling or enabling content discovery for specific users. This also disables documents in Office Delve.
 
 > [!NOTE]
 > This endpoint works only with users. You can't use this endpoint with contacts.
