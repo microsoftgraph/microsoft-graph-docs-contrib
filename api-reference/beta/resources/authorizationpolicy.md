@@ -36,7 +36,7 @@ Delete - not supported
 ## Properties  
 | Property | Type | Description | Required | ReadOnly | Nullable |
 |-|-|-|-|-|-|
-|`guestUserRoleId`|`Guid`| Represents role templateId for the role that should be granted to guest user. Use https://graph.microsoft.com/beta/roleManagement/directory/roleDefinitions to find the list of available role templates. Only supported roles today are Default Member User (a0b1b346-4d3e-4e8b-98f8-753987be4970), Default Guest User (10dae51f-b6af-4016-8d66-8c2a99b929b3) and Restricted Guest User (2af84b1e-32c8-42b7-82bc-daa82404023b). | No | No | Yes |
+|`guestUserRoleId`|`Guid`| Represents role templateId for the role that should be granted to guest user. Use https://graph.microsoft.com/beta/roleManagement/directory/roleDefinitions to find the list of available role templates. Only supported roles today are User (a0b1b346-4d3e-4e8b-98f8-753987be4970), Guest User (10dae51f-b6af-4016-8d66-8c2a99b929b3) and Restricted Guest User (2af84b1e-32c8-42b7-82bc-daa82404023b). | No | No | Yes |
 |`enabledPreviewFeatures`|`Collection(string)`| List of features enabled for private preview on the tenant. | No | No | Yes |
 |`blockMsolPowerShell`|`Boolean`| To disable the use of MSOL PowerShell set this property to true. Setting to true will also disable user-based access to the legacy service endpoint used by MSOL PowerShell. This does not affect Azure AD Connect, Azure AD Graph or Microsoft Graph. | No | No | Yes |
 
@@ -45,15 +45,12 @@ Delete - not supported
 
 | Method       | Return Type | Description |
 |:-------------|:------------|:------------|
-| [Get authorizationnPolicy](../api/authorizationpolicy-get.md) | [authorizationPolicy](authorizationpolicy.md) | Read properties and relationships of a authorizationPolicy object. |
-| [Update authorizationPolicy](../api/authorizationpolicy-update.md) | None | Update a authorizationPolicy object. |
+| [Get authorizationnPolicy](../api/authorizationpolicy-get.md) | [authorizationPolicy](authorizationpolicy.md) | Read the authorizationPolicy object. |
+| [Update authorizationPolicy](../api/authorizationpolicy-update.md) | None | Update the authorizationPolicy object. |
 
 
 ## Relationships
-
-| Relationship | Type        | Description |
-|:-------------|:------------|:------------|
-|appliesTo|[directoryObject](directoryobject.md) collection| The [directoryObject](directoryObject.md) collection that this policy has been applied to. Read-only.|
+None
 
 ## JSON representation
 
