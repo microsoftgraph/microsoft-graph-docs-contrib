@@ -58,7 +58,7 @@ If successful, this method returns a `200 OK` response code and the single [auth
 The following is an example of the request.
 
 ```msgraph-interactive
-GET https://graph.microsoft.com/beta/policies/identitySecurityDefaultsEnforcementPolicy
+GET https://graph.microsoft.com/beta/policies/authorizationPolicy/authorizationPolicy
 ```
 ---
 
@@ -85,8 +85,6 @@ Content-type: application/json
     "description": "Used to manage authorization related settings across the company.",
     "enabledPreviewFeatures": [],
     "guestUserRoleId": "10dae51f-b6af-4016-8d66-8c2a99b929b3",
-    "permissionGrantPolicyIdsAssignedToDefaultUserRole": [
-        "user-default-legacy"
-    ]
+    "blockMsolPowerShell": ""
 }
 ```
