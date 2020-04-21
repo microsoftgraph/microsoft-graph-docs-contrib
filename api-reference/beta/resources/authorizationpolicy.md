@@ -13,10 +13,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Used to manage authorization related settings across the company.
-Represents a new entity type for directory authorization policies that derives from the base policy entity. This is a singleton policy type.
-
-This will inherit from the base policy type - but be strongly typed on its own. The key difference is that this will be considered a singleton policy type. That is, Create/Delete operations do not apply on this type of policy. By default, if this policy is not yet created, it will return some set of default values. The first time the policy is updated - it will create the object in the backend. We enforce in the directory only one instance of this object can exist.
+Used to manage authorization related settings across the company. This inherits from the base policy type - but be strongly typed on its own. The key difference is that this is a singleton policy type. That is, create and delete operations do not apply on this type of policy. By default, if this policy is not yet created, it will return some set of default values. The first time the policy is updated - it will create the object in the backend. We enforce in the directory only one instance of this object can exist.
 
 **Functionality:**
 
