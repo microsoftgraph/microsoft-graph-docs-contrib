@@ -721,6 +721,15 @@
           href: api/calendargroup-list-calendars.md
         - name: Create calendar in calendar group
           href: api/calendargroup-post-calendars.md
+      - name: Calendar permission
+        href: resources/calendarpermission.md
+        items:
+        - name: Get
+          href: api/calendarpermission-get.md
+        - name: Update
+          href: api/calendarpermission-update.md
+        - name: Delete
+          href: api/calendarpermission-delete.md
       - name: Categories
         href: resources/outlookcategory.md
         items:
@@ -3222,6 +3231,8 @@
           href: api/drive-sharedwithme.md
         - name: Get special folder
           href: api/drive-get-specialfolder.md
+        - name: List followed items
+          href: api/drive-list-following.md
       - name: Drive items
         href: resources/driveitem.md
         items:
@@ -3231,6 +3242,10 @@
           href: api/driveitem-get.md
         - name: Get thumbnails
           href: api/driveitem-list-thumbnails.md
+        - name: Check in files
+          href: api/driveitem-checkin.md
+        - name: Check out files
+          href: api/driveitem-checkout.md 
         - name: Create folder
           href: api/driveitem-post-children.md
         - name: Update item
@@ -3255,6 +3270,10 @@
           href: api/driveitem-delta.md
         - name: List versions
           href: api/driveitem-list-versions.md
+        - name: Follow item
+          href: api/driveitem-follow.md
+        - name: Unfollow item
+          href: api/driveitem-unfollow.md
         - name: Preview item
           href: api/driveitem-preview.md
         - name: Get item analytics
@@ -3266,6 +3285,8 @@
           href: api/driveitem-createlink.md
         - name: Use sharing links
           href: api/shares-get.md
+        - name: Grant access to sharing link
+          href: api/permission-grant.md
         - name: List permissions
           href: api/driveitem-list-permissions.md
         - name: Add permissions
@@ -3294,6 +3315,8 @@
           href: api/application-update.md
         - name: Delete application
           href: api/application-delete.md
+        - name: Get delta
+          href: api/application-delta.md
         - name: List deleted applications
           href: api/directory-deleteditems-list.md
         - name: Get deleted application
@@ -3318,6 +3341,18 @@
           href: api/application-post-owners.md
         - name: Remove owner
           href: api/application-delete-owners.md
+        - name: Add token issuance policy
+          href: api/application-post-tokenissuancepolicies.md
+        - name: List token issuance policies
+          href: api/application-list-tokenissuancepolicies.md
+        - name: Remove token issuance policy
+          href: api/application-delete-tokenissuancepolicies.md
+        - name: Add token lifetime policy
+          href: api/application-post-tokenlifetimepolicies.md
+        - name: List token lifetime policies
+          href: api/application-list-tokenlifetimepolicies.md
+        - name: Remove token lifetime policy
+          href: api/application-delete-tokenlifetimepolicies.md
       - name: Audit logs
         href: resources/azure-ad-auditlog-overview.md
         items:
@@ -3548,6 +3583,67 @@
             href: api/orgcontact-get-manager.md
           - name: Get member objects
             href: api/orgcontact-getmemberobjects.md
+      - name: Policy
+        href: resources/policy-overview.md
+        items:
+        - name: Activity-based timeout policy
+          href: resources/activitybasedtimeoutpolicy.md
+          items:
+          - name: List
+            href: api/activitybasedtimeoutpolicy-list.md
+          - name: Create
+            href: api/activitybasedtimeoutpolicy-post-activitybasedtimeoutpolicies.md
+          - name: Get
+            href: api/activitybasedtimeoutpolicy-get.md
+          - name: Update
+            href: api/activitybasedtimeoutpolicy-update.md
+          - name: Delete
+            href: api/activitybasedtimeoutpolicy-delete.md
+        - name: Home realm discovery policy
+          href: resources/homerealmdiscoverypolicy.md
+          items:
+          - name: List
+            href: api/homerealmdiscoverypolicy-list.md
+          - name: Create
+            href: api/homerealmdiscoverypolicy-post-homerealmdiscoverypolicies.md
+          - name: Get
+            href: api/homerealmdiscoverypolicy-get.md
+          - name: Update
+            href: api/homerealmdiscoverypolicy-update.md
+          - name: Delete
+            href: api/homerealmdiscoverypolicy-delete.md
+          - name: List applied to applications
+            href: api/homerealmdiscoverypolicy-list-appliesto.md
+        - name: Token issuance policy
+          href: resources/tokenissuancepolicy.md
+          items:
+          - name: List
+            href: api/tokenissuancepolicy-list.md
+          - name: Create
+            href: api/tokenissuancepolicy-post-tokenissuancepolicy.md          
+          - name: Get
+            href: api/tokenissuancepolicy-get.md
+          - name: Update
+            href: api/tokenissuancepolicy-update.md
+          - name: Delete
+            href: api/tokenissuancepolicy-delete.md
+          - name: List applied to applications
+            href: api/tokenissuancepolicy-list-appliesto.md
+        - name: Token lifetime policy
+          href: resources/tokenlifetimepolicy.md
+          items:
+          - name: List
+            href: api/tokenlifetimepolicy-list.md
+          - name: Create
+            href: api/tokenlifetimepolicy-post-tokenlifetimepolicies.md
+          - name: Get
+            href: api/tokenlifetimepolicy-get.md
+          - name: Update
+            href: api/tokenlifetimepolicy-update.md
+          - name: Delete
+            href: api/tokenlifetimepolicy-delete.md
+          - name: List applied to applications
+            href: api/tokenlifetimepolicy-list-appliesto.md
       - name: Subscribed SKU
         href: resources/subscribedsku.md
         items:
@@ -4160,6 +4256,10 @@
           href: api/site-list-subsites.md
         - name: Get item analytics
           href: api/itemanalytics-get.md
+        - name: Follow site
+          href: api/site-follow.md
+        - name: Unfollow site
+          href: api/site-unfollow.md
       - name: Lists
         href: resources/list.md
         items:

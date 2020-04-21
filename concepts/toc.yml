@@ -32,7 +32,7 @@ items:
       - name: Tutorials
         items:
           - name: Overview
-            href: tutorials.md
+            href: tutorials.yml
           - name: .NET Core
             href: /graph/tutorials/dotnet-core
           - name: Android
@@ -89,11 +89,11 @@ items:
             href: outlook-get-free-busy-schedule.md
           - name: Propose new meeting times (preview)
             href: outlook-calendar-meeting-proposals.md
-          - name: Organize or attend online meetings (preview)
+          - name: Organize or attend online meetings
             href: outlook-calendar-online-meetings.md
           - name: Schedule recurring events
             href: outlook-schedule-recurring-events.md
-          - name: Share or delegate calendar (preview)
+          - name: Share or delegate calendar
             href: outlook-share-or-delegate-calendar.md
           - name: Get shared events
             href: outlook-get-shared-events-calendars.md
@@ -151,8 +151,14 @@ items:
           - name: Tips
             href: data-connect-tips.md
       - name: Devices and apps
-        href: intune-concept-overview.md
-        displayName: Intune
+        expanded: true
+        items:
+          - name: Cloud printing (preview)
+            href: universal-print-concept-overview.md
+            displayName: Universal Print
+          - name: Corporate management
+            href: intune-concept-overview.md
+            displayName: Intune
       - name: Education
         items:
           - name: Overview
@@ -168,9 +174,6 @@ items:
       - name: Identity and access
         href: azuread-identity-access-management-concept-overview.md
         displaName: Azure AD, Microsoft identity platform
-        items:
-          - name: Information Protection
-            href: information-protection-overview.md
       - name: Mail
         displayName: Outlook, Outlook mail
         items:
@@ -295,6 +298,8 @@ items:
             href: security-authorization.md
           - name: Integrated solutions
             href: security-integration.md
+          - name: Information Protection
+            href: information-protection-overview.md
           - name: Partner opportunities
             href: security-partner-overview.md
       - name: Sites and lists
@@ -318,10 +323,6 @@ items:
             href: teams-protected-apis.md
           - name: Send proactive messages with a bot
             href: teams-proactive-messaging.md
-      - name: Universal Print
-        items:
-          - name: Overview
-            href: universal-print-concept-overview.md
       - name: Workbooks and charts
         displayName: Excel
         items:
@@ -358,6 +359,8 @@ items:
             href: auth-cloudsolutionprovider.md
           - name: Limit mailbox access
             href: auth-limit-mailbox-access.md
+          - name: Resolve authorization errors
+            href: resolve-auth-errors.md
       - name: Use the API
         items:
           - name: Overview
@@ -466,20 +469,22 @@ items:
             items:
               - name: Login
                 href: toolkit/components/login.md
+              - name: Get
+                href: toolkit/components/get.md
               - name: Person
                 href: toolkit/components/person.md
               - name: People
                 href: toolkit/components/people.md
+              - name: Person Card
+                href: toolkit/components/person-card.md
+              - name: People Picker
+                href: toolkit/components/people-picker.md
+              - name: Teams Channel Picker
+                href: toolkit/components/teams-channel-picker.md
               - name: Agenda
                 href: toolkit/components/agenda.md
               - name: Tasks
                 href: toolkit/components/tasks.md
-              - name: People Picker
-                href: toolkit/components/people-picker.md
-              - name: Person Card
-                href: toolkit/components/person-card.md
-              - name: Get
-                href: toolkit/components/get.md
           - name: Providers
             items:
               - name: Using the providers
