@@ -28,6 +28,8 @@ Represents the type of conditions that govern when the policy applies.
 |platforms|[conditionalAccessPlatforms](conditionalaccessplatforms.md)| Platforms included in and excluded from the policy. |
 |signInRiskLevels|String collection| Risk levels included in the policy. Possible values are: `low`, `medium`, `high`, `none`.|
 
+>**Note:** We are deprecating the **deviceStates** condition, and it may be removed in the future. Going forward, use **devices** condition.
+
 ## Relationships
 
 None.
