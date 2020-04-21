@@ -36,7 +36,7 @@ Delete - not supported
 ## Properties  
 | Property | Type | Description | Required | ReadOnly | Nullable |
 |-|-|-|-|-|-|
-|`guestUserRole`|`String`| Represents role templateId for the role that should be granted to guest user. Use https://graph.microsoft.com/beta/roleManagement/directory/roleDefinitions to find the list of available role templates. Only supported roles today are Default Member User, Default Guest User and Restricted Guest User. | No | No | Yes |
+|`guestUserRoleId`|`Guid`| Represents role templateId for the role that should be granted to guest user. Use https://graph.microsoft.com/beta/roleManagement/directory/roleDefinitions to find the list of available role templates. Only supported roles today are Default Member User (a0b1b346-4d3e-4e8b-98f8-753987be4970), Default Guest User (10dae51f-b6af-4016-8d66-8c2a99b929b3) and Restricted Guest User (2af84b1e-32c8-42b7-82bc-daa82404023b). | No | No | Yes |
 |`enabledPreviewFeatures`|`Collection(string)`| List of features enabled for private preview on the tenant. | No | No | Yes |
 |`blockMsolPowerShell`|`Boolean`| To disable the use of MSOL PowerShell set this property to true. Setting to true will also disable user-based access to the legacy service endpoint used by MSOL PowerShell. This does not affect Azure AD Connect, Azure AD Graph or Microsoft Graph. | No | No | Yes |
 
@@ -75,7 +75,7 @@ The following is a JSON representation of the resource.
   "description": "String",
   "displayName": "String",
   "enabledPreviewFeatures": "[String]",
-  "guestUserRoleId": "String",
+  "guestUserRoleId": Guid,
   "blockMsolPowerShell": true 
 }
 ```
