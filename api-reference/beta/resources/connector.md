@@ -20,7 +20,7 @@ Connectors are lightweight agents that sit on-premises and facilitate the outbou
 | Method       | Return Type | Description |
 |:-------------|:------------|:------------|
 | [Get connector](../api/connector-get.md) | [connector](connector.md) | Read properties and relationships of connector object. |
-| [List memberOf](../api/connector-list-memberof.md) | [connectorGroup](connectorgroup.md) collection | Get a connectorGroup object collection. |
+| [List connectorGroup](../api/connector-list-memberof.md) | [connectorGroup](connectorgroup.md) collection | List the connectorGroup object collection the connector is a member of. |
 
 ## Properties
 | Property     | Type        | Description |
