@@ -21,7 +21,7 @@ The following example shows the `mgt-people-picker` component. Start searching f
 
 ## Properties
 
-By default, the `mgt-people-picker` component fetches events from the `/me/people` endpoint. Use the following attributes to change this behavior.
+By default, the `mgt-people-picker` component fetches people from the `/me/people` endpoint. Use the following attributes to change this behavior.
 
 | Attribute | Property | Description                                                                                                                                                                            |
 | -------- | --------- | -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
@@ -59,6 +59,14 @@ You can populate selected people data by doing one of the following:
     // id = Mirosoft graph User "id"
     document.querySelector('mgt-people-picker').selectUsersById(["id","id"])
     ```
+
+## Events
+
+The following events are fired from the component.
+
+| Event | Description |
+| --- | --- |
+| `selectionChanged` | The user added or removed a person from the list of selected/picked people.|
 
 ## CSS custom properties
 

@@ -89,11 +89,11 @@ items:
             href: outlook-get-free-busy-schedule.md
           - name: Propose new meeting times (preview)
             href: outlook-calendar-meeting-proposals.md
-          - name: Organize or attend online meetings (preview)
+          - name: Organize or attend online meetings
             href: outlook-calendar-online-meetings.md
           - name: Schedule recurring events
             href: outlook-schedule-recurring-events.md
-          - name: Share or delegate calendar (preview)
+          - name: Share or delegate calendar
             href: outlook-share-or-delegate-calendar.md
           - name: Get shared events
             href: outlook-get-shared-events-calendars.md
@@ -151,8 +151,14 @@ items:
           - name: Tips
             href: data-connect-tips.md
       - name: Devices and apps
-        href: intune-concept-overview.md
-        displayName: Intune
+        expanded: true
+        items:
+          - name: Cloud printing (preview)
+            href: universal-print-concept-overview.md
+            displayName: Universal Print
+          - name: Corporate management
+            href: intune-concept-overview.md
+            displayName: Intune
       - name: Education
         items:
           - name: Overview
@@ -317,10 +323,6 @@ items:
             href: teams-protected-apis.md
           - name: Send proactive messages with a bot
             href: teams-proactive-messaging.md
-      - name: Universal Print
-        items:
-          - name: Overview
-            href: universal-print-concept-overview.md
       - name: Workbooks and charts
         displayName: Excel
         items:
@@ -357,6 +359,8 @@ items:
             href: auth-cloudsolutionprovider.md
           - name: Limit mailbox access
             href: auth-limit-mailbox-access.md
+          - name: Resolve authorization errors
+            href: resolve-auth-errors.md
       - name: Use the API
         items:
           - name: Overview

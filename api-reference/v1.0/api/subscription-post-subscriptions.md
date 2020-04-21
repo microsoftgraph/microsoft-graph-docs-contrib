@@ -121,7 +121,7 @@ The following are valid values for the resource property of the subscription:
 |Groups|groups|
 |Conversations|groups('*{id}*')/conversations|
 |Drives|me/drive/root|
-|List|site/{site-id}/lists/{list-id}|
+|List|sites/{site-id}/lists/{list-id}|
 |Security alert|security/alerts?$filter=status eq 'New'|
 
 ##### Response
@@ -139,7 +139,7 @@ Content-type: application/json
 Content-length: 252
 
 {
-  "@odata.context": "https://graph.microsoft.com/beta/$metadata#subscriptions/$entity",
+  "@odata.context": "https://graph.microsoft.com/v1.0/$metadata#subscriptions/$entity",
   "id": "7f105c7d-2dc5-4530-97cd-4e7ae6534c07",
   "resource": "me/mailFolders('Inbox')/messages",
   "applicationId": "24d3b144-21ae-4080-943f-7067b395b913",
