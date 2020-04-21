@@ -11,7 +11,7 @@ doc_type: apiPageType
 
 Namespace: microsoft.graph
 
-Gets the range object associated with the entire table.
+Get the range object associated with the entire table.
 ## Permissions
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
 
@@ -39,11 +39,11 @@ GET /workbook/worksheets/{id|name}/tables/{id|name}/range
 
 ## Response
 
-If successful, this method returns a `200 OK` response code and a [range](../resources/range.md) object in the response body.
+If successful, this method returns a `200 OK` response code and a [workbookRange](../resources/range.md) object in the response body.
 
 ## Example
 
-##### Request
+### Request
 The following is an example of the request.
 
 # [HTTP](#tab/http)
@@ -75,7 +75,7 @@ GET https://graph.microsoft.com/v1.0/me/drive/items/{id}/workbook/tables/{id|nam
 ---
 
 
-##### Response
+### Response
 The following is an example of the response. 
 
 >**Note:** The response object shown here might be shortened for readability. All the properties will be returned from an actual call.
