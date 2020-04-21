@@ -2,7 +2,7 @@
 title: "Delete countryNamedLocation"
 description: "Delete a countryNamedLocation object."
 localization_priority: Normal
-author: "davidmu1"
+author: "dkershaw10"
 ms.prod: "microsoft-identity-platform"
 doc_type: apiPageType
 ---

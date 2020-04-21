@@ -2,7 +2,7 @@
 title: "Get conditionalAccessPolicy"
 description: "Retrieve the properties and relationships of a conditionalAccessPolicy object."
 localization_priority: Normal
-author: "davidmu1"
+author: "dkershaw10"
 ms.prod: "microsoft-identity-platform"
 doc_type: apiPageType
 ---
@@ -167,11 +167,12 @@ Content-type: application/json
                 "d2136c9c-b049-47ae-b9cf-316e04ef7198"
             ]
         },
-        "deviceStates": {
-            "includeStates": [
+        "deviceStates": null,
+        "devices": {
+            "includeDeviceStates": [
                 "All"
             ],
-            "excludeStates": [
+            "excludeDeviceStates": [
                 "Compliant"
             ]
         }
