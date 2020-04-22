@@ -40,7 +40,7 @@ items:
           - name: Angular
             href: /graph/tutorials/angular
           - name: ASP.NET
-            href: /graph/tutorials/aspnet
+            href: /learn/modules/msgraph-build-aspnetmvc-apps
           - name: Microsoft Flow
             href: /graph/tutorials/flow
           - name: iOS Objective-C
