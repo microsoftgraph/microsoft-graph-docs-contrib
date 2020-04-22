@@ -17,7 +17,7 @@ event.recurrence = null;
 event.iCalUId = "iCalUId-value";
 event.reminderMinutesBeforeStart = 99;
 event.isOnlineMeeting = true;
-event.onlineMeetingProvider = "teamsForBusiness";
+event.onlineMeetingProvider = OnlineMeetingProviderType.TEAMS_FOR_BUSINESS;
 event.isReminderOn = true;
 
 graphClient.me().events("{id}")

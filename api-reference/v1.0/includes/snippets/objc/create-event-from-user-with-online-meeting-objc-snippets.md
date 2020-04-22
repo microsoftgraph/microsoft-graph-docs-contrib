@@ -40,7 +40,7 @@ MSGraphEmailAddress *emailAddress = [[MSGraphEmailAddress alloc] init];
 [event setAttendees:attendeesList];
 [event setAllowNewTimeProposals: true];
 [event setIsOnlineMeeting: true];
-[event setOnlineMeetingProvider:@"teamsForBusiness"];
+[event setOnlineMeetingProvider: [MSGraphOnlineMeetingProviderType teamsForBusiness]];
 
 NSError *error;
 NSData *eventData = [event getSerializedDataWithError:&error];

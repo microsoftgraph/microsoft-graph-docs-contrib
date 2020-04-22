@@ -19,7 +19,7 @@ var @event = new Event
 	ICalUId = "iCalUId-value",
 	ReminderMinutesBeforeStart = 99,
 	IsOnlineMeeting = true,
-	OnlineMeetingProvider = "teamsForBusiness",
+	OnlineMeetingProvider = OnlineMeetingProviderType.TeamsForBusiness,
 	IsReminderOn = true
 };
 
