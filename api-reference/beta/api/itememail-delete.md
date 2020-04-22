@@ -9,6 +9,8 @@ doc_type: "apiPageType"
 
 # Delete itemEmail
 
+Namespace: microsoft.graph
+
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 Delete an [itemEmail](../resources/itememail.md) object from a user's [profile](../resources/profile.md).
@@ -60,6 +62,7 @@ The following is an example of the request.
 ```http
 DELETE https://graph.microsoft.com/beta/me/profile/emails/{id}
 ```
+
 # [C#](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/delete-itememail-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
@@ -73,7 +76,6 @@ DELETE https://graph.microsoft.com/beta/me/profile/emails/{id}
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
-
 
 ### Response
 

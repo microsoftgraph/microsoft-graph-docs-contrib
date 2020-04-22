@@ -4,10 +4,12 @@ description: "Specifies parental control settings for an application. These sett
 localization_priority: Normal
 doc_type: resourcePageType
 ms.prod: "microsoft-identity-platform"
-author: "davidmu1"
+author: "sureshja"
 ---
 
 # parentalControlSettings resource type
+
+Namespace: microsoft.graph
 
 Specifies parental control settings for an application. These settings control the consent experience.
 

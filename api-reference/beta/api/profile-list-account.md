@@ -1,17 +1,19 @@
 ---
-title: "List account"
-description: "Retrieve a list of useraccountinformation objects."
+title: "List accounts"
+description: "Retrieve a list of userAccountInformation objects."
 localization_priority: Normal
 author: "kevinbellinger"
 ms.prod: "people"
 doc_type: "apiPageType"
 ---
 
-# List account
+# List accounts
+
+Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Retrieves properties related to the user's account from the [profile](../resources/profile.md).
+Retrieves properties related to the user's accounts from the [profile](../resources/profile.md).
 
 ## Permissions
 

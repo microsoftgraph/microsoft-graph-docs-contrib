@@ -1,13 +1,15 @@
 ---
 title: "List participants"
 description: "Retrieve a list of participant objects in the call."
-author: "VinodRavichandran"
+author: "ananmishr"
 localization_priority: Normal
 ms.prod: "cloud-communications"
 doc_type: apiPageType
 ---
 
 # List participants
+
+Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
@@ -59,7 +61,7 @@ If successful, this method returns a `200 OK` response code and collection of [p
   "name": "get-participants"
 }-->
 
-```http
+```msgraph-interactive
 GET https://graph.microsoft.com/beta/communications/calls/7531d31f-d10d-44de-802f-c569dbca451c/participants
 ```
 # [C#](#tab/csharp)

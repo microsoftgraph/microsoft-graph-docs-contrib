@@ -9,9 +9,13 @@ doc_type: "resourcePageType"
 
 # searchQuery resource type
 
+Namespace: microsoft.graph
+
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 Represents a search query that contains search terms and optional filters.
+
+[!INCLUDE [search-api-preview](../../includes/search-api-preview-signup.md)]
 
 ## Properties
 

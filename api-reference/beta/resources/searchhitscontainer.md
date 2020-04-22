@@ -9,9 +9,13 @@ doc_type: "resourcePageType"
 
 # searchHitsContainer resource type
 
+Namespace: microsoft.graph
+
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 Represent the list of search results.
+
+[!INCLUDE [search-api-preview](../../includes/search-api-preview-signup.md)]
 
 ## Properties
 

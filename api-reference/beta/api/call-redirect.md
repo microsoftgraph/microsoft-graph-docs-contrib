@@ -1,13 +1,15 @@
 ---
 title: "call: redirect"
 description: "Redirect an incoming call."
-author: "VinodRavichandran"
+author: "ananmishr"
 localization_priority: Normal
 ms.prod: "cloud-communications"
 doc_type: apiPageType
 ---
 
 # call: redirect
+
+Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
@@ -296,7 +298,7 @@ Content-Type: application/json
 ##### Request
 
 <!-- {
-  "blockType": "request", 
+  "blockType": "ignored", 
   "name": "call-redirect-simuring"
 } -->
 

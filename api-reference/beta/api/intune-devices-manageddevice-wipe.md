@@ -1,13 +1,15 @@
 ---
 title: "wipe action"
 description: "Wipe a device"
-author: "rolyon"
+author: "dougeby"
 localization_priority: Normal
 ms.prod: "Intune"
 doc_type: apiPageType
 ---
 
 # wipe action
+
+Namespace: microsoft.graph
 
 > **Important:** Microsoft Graph APIs under the /beta version are subject to change; production use is not supported.
 
@@ -53,6 +55,7 @@ The following table shows the parameters that can be used with this action.
 |keepEnrollmentData|Boolean|Not yet documented|
 |keepUserData|Boolean|Not yet documented|
 |macOsUnlockCode|String|Not yet documented|
+|useProtectedWipe|Boolean|Not yet documented|
 
 
 
@@ -67,12 +70,13 @@ Here is an example of the request.
 POST https://graph.microsoft.com/beta/deviceManagement/managedDevices/{managedDeviceId}/wipe
 
 Content-type: application/json
-Content-length: 109
+Content-length: 138
 
 {
   "keepEnrollmentData": true,
   "keepUserData": true,
-  "macOsUnlockCode": "Mac Os Unlock Code value"
+  "macOsUnlockCode": "Mac Os Unlock Code value",
+  "useProtectedWipe": true
 }
 ```
 
@@ -81,9 +85,6 @@ Here is an example of the response. Note: The response object shown here may be 
 ``` http
 HTTP/1.1 204 No Content
 ```
-
-
-
 
 
 

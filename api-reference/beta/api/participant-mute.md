@@ -1,7 +1,7 @@
 ---
 title: "participant: mute"
 description: "Mute a specific participant in the call."
-author: "VinodRavichandran"
+author: "ananmishr"
 localization_priority: Normal
 ms.prod: "cloud-communications"
 doc_type: apiPageType
@@ -9,15 +9,17 @@ doc_type: apiPageType
 
 # participant: mute
 
+Namespace: microsoft.graph
+
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 Mute a specific participant in the call.
 
 This is a server mute, meaning that the server will drop all audio packets for this participant, even if the participant continues to stream audio.
 
-For more information about how to handle operations, see [commsOperation](../resources/commsOperation.md).
+For more information about how to handle mute operations, see [muteParticipantOperation](../resources/muteParticipantoperation.md).
 
-> **Note:** This is only supported for group calls.
+> **Note:** This method is only supported for group calls.
 
 ## Permissions
 
@@ -49,9 +51,9 @@ In the request body, provide a JSON object with the following parameters.
 |clientContext|String|Unique Client Context string. Max limit is 256 chars.|
 
 ## Response
-If successful, this method returns a `200 OK` response code and a [commsOperation](../resources/commsoperation.md) object in the response body.
+If successful, this method returns a `200 OK` response code and a [muteParticipantOperation](../resources/muteParticipantoperation.md) object in the response body.
 
->**Note:** Whem this API returns a successful response, all participants will receive a roster update.
+>**Note:** When this API returns a successful response, all participants will receive a roster update.
 
 ## Example - Mute specific participant
 The following example shows how to call this API.

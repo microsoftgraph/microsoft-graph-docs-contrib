@@ -1,13 +1,15 @@
 ---
 title: "removeAllDevicesFromManagement action"
 description: "Retire all devices from management for this user"
-author: "rolyon"
+author: "dougeby"
 localization_priority: Normal
 ms.prod: "intune"
 doc_type: apiPageType
 ---
 
 # removeAllDevicesFromManagement action
+
+Namespace: microsoft.graph
 
 > **Important:** APIs under the /beta version in Microsoft Graph are subject to change. Use of these APIs in production applications is not supported.
 

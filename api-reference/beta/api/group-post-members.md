@@ -2,12 +2,14 @@
 title: "Add member"
 description: "Add a member to an Office 365 group or security group through the **members** navigation property."
 localization_priority: Normal
-author: "dkershaw10"
+author: "yyuank"
 ms.prod: "groups"
 doc_type: apiPageType
 ---
 
 # Add member
+
+Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
@@ -23,9 +25,9 @@ One of the following permissions is required to call this API. To learn more, in
 
 |Permission type      | Permissions (from least to most privileged)              |
 |:--------------------|:---------------------------------------------------------|
-|Delegated (work or school account) | Group.ReadWrite.All, Directory.ReadWrite.All, Directory.AccessAsUser.All    |
+|Delegated (work or school account) | GroupMember.ReadWrite.All, Group.ReadWrite.All, Directory.ReadWrite.All, Directory.AccessAsUser.All    |
 |Delegated (personal Microsoft account) | Not supported.    |
-|Application | Group.ReadWrite.All, Directory.ReadWrite.All |
+|Application | GroupMember.ReadWrite.All, Group.ReadWrite.All, Directory.ReadWrite.All |
 
 ## HTTP request
 <!-- { "blockType": "ignored" } -->

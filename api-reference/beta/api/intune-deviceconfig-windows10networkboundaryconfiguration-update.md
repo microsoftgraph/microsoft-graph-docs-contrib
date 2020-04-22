@@ -1,13 +1,15 @@
 ---
 title: "Update windows10NetworkBoundaryConfiguration"
 description: "Update the properties of a windows10NetworkBoundaryConfiguration object."
-author: "rolyon"
+author: "dougeby"
 localization_priority: Normal
 ms.prod: "Intune"
 doc_type: apiPageType
 ---
 
 # Update windows10NetworkBoundaryConfiguration
+
+Namespace: microsoft.graph
 
 > **Important:** Microsoft Graph APIs under the /beta version are subject to change; production use is not supported.
 
@@ -212,9 +214,6 @@ Content-Length: 2189
   }
 }
 ```
-
-
-
 
 
 

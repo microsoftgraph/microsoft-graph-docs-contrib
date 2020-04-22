@@ -2,12 +2,14 @@
 title: "Get mobileAppTroubleshootingEvent"
 description: "Describes the Get mobileAppTroubleshootingEvent method of the Microsoft Graph API for Intune, which supports multiple workflows."
 localization_priority: Normal
-author: "rolyon"
+author: "dougeby"
 ms.prod: "Intune"
 doc_type: apiPageType
 ---
 
 # Get mobileAppTroubleshootingEvent
+
+Namespace: microsoft.graph
 
 > **Important:** APIs under the /beta version in Microsoft Graph are subject to change. Use of these APIs in production applications is not supported.
 
@@ -39,7 +41,7 @@ GET /users/{usersId}/mobileAppTroubleshootingEvents/{mobileAppTroubleshootingEve
 ```
 
 ## Optional query parameters
-This method supports the [OData Query Parameters](https://docs.microsoft.com/en-us/graph/query-parameters) to help customize the response.
+This method supports the [OData Query Parameters](/graph/query-parameters) to help customize the response.
 
 ## Request headers
 |Header|Value|

@@ -2,12 +2,14 @@
 title: "message: delta"
 description: "Get a set of messages that have been added, deleted, or updated in a specified folder."
 localization_priority: Priority
-author: "angelgolfer-ms"
+author: "svpsiva"
 ms.prod: "outlook"
 doc_type: apiPageType
 ---
 
 # message: delta
+
+Namespace: microsoft.graph
 
 Get a set of messages that have been added, deleted, or updated in a specified folder.
 
@@ -21,9 +23,9 @@ One of the following permissions is required to call this API. To learn more, in
 
 |Permission type      | Permissions (from least to most privileged)              |
 |:--------------------|:---------------------------------------------------------|
-|Delegated (work or school account) | Mail.Read, Mail.ReadWrite    |
-|Delegated (personal Microsoft account) | Mail.Read, Mail.ReadWrite    |
-|Application | Mail.Read, Mail.ReadWrite |
+|Delegated (work or school account) | Mail.ReadBasic, Mail.Read, Mail.ReadWrite    |
+|Delegated (personal Microsoft account) | Mail.ReadBasic, Mail.Read, Mail.ReadWrite    |
+|Application | Mail.ReadBasic.All , Mail.Read, Mail.ReadWrite |
 
 ## HTTP request
 <!-- { "blockType": "ignored" } -->

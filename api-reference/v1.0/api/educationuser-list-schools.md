@@ -9,6 +9,8 @@ doc_type: apiPageType
 
 # List schools
 
+Namespace: microsoft.graph
+
 Retrieve a list of schools for a user.
 
 >**Note:** If the delegated token is used, members can only see information about their own schools. Use the `...beta/education/me/schools` resource in this case.
@@ -66,22 +68,18 @@ GET https://graph.microsoft.com/v1.0/education/me/schools
 ```
 
 # [C#](#tab/csharp)
-
 [!INCLUDE [sample-code](../includes/snippets/csharp/get-schools-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [JavaScript](#tab/javascript)
-
 [!INCLUDE [sample-code](../includes/snippets/javascript/get-schools-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Objective-C](#tab/objc)
-
 [!INCLUDE [sample-code](../includes/snippets/objc/get-schools-objc-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Java](#tab/java)
-
 [!INCLUDE [sample-code](../includes/snippets/java/get-schools-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
