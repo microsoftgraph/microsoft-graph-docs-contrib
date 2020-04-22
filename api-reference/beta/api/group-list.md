@@ -48,7 +48,7 @@ values, as shown in the following example:
 ```
 GET https://graph.microsoft.com/beta/groups?$orderby=displayName
 ```
-You can also use the `$count` and `$search` query parameters to limit the response. You can use `$search` on the **displayName** property. When items are added or updated for this resource, they are specially indexed for use with the `$count` and `$search` query parameters. There can be a slight delay between when an item is added or updated and when it is available in the index.
+You can also use the `$count` and `$search` query parameters to limit the response. The `$search` query parameter supports tokenization only on the **displayName** and **description** fields. Other fields default to `$filter` behavior. When items are added or updated for this resource, they are specially indexed for use with the `$count` and `$search` query parameters. There can be a slight delay between when an item is added or updated and when it is available in the index.
 
 For more information on OData query options, see [OData Query Parameters](/graph/query-parameters).
 

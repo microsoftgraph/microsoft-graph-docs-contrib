@@ -471,6 +471,7 @@ The following is an example of the request.
 ```msgraph-interactive
 GET https://graph.microsoft.com/beta/users?$search="displayName:wa" OR "displayName:to"&$orderbydisplayName&$count=true
 ConsistencyLevel: eventual
+```
 
 #### Response
 
@@ -507,7 +508,6 @@ Content-type: application/json
     }
   ]
 }
-
 ```
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79

@@ -152,7 +152,7 @@ The following is an example of the request.
   "name": "get_count_only"
 }-->
 ```msgraph-interactive
-GET https://graph.microsoft.com/beta/servicePrincipals/{id}/transitiveMemberOf/$/Microsoft.Graph.Group/$count
+GET https://graph.microsoft.com/beta/servicePrincipals/{id}/transitiveMemberOf/microsoft.graph.group/$count
 ConsistencyLevel: eventual
 ```
 
@@ -184,7 +184,7 @@ The following is an example of the request.
   "name": "get_tier_count"
 }-->
 ```msgraph-interactive
-GET https://graph.microsoft.com/beta/servicePrincipals/{id}/transitiveMemberOf/$/Microsoft.Graph.Group?$count=true&$orderby=displayName&$search="displayName:Video"&$select=displayName,id
+GET https://graph.microsoft.com/beta/servicePrincipals/{id}/transitiveMemberOf/microsoft.graph.group?$count=true&$orderby=displayName&$search="displayName:Video"&$select=displayName,id
 ConsistencyLevel: eventual
 ```
 
@@ -226,7 +226,7 @@ The following is an example of the request.
   "name": "get_a_count"
 }-->
 ```msgraph-interactive
-GET https://graph.microsoft.com/beta/servicePrincipals/{id}/transitiveMemberOf/$/Microsoft.Graph.Group?$count=true&$orderby=displayName&$filter=startswith(displayName, 'a')
+GET https://graph.microsoft.com/beta/servicePrincipals/{id}/transitiveMemberOf/microsoft.graph.group?$count=true&$orderby=displayName&$filter=startswith(displayName, 'a')
 ConsistencyLevel: eventual
 ```
 

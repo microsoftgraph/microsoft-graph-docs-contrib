@@ -156,7 +156,7 @@ The following is an example of the request.
   "name": "get_count_user_only"
 }-->
 ```msgraph-interactive
-GET https://graph.microsoft.com/beta/groups/{id}/members/$/microsoft.graph.user/$count
+GET https://graph.microsoft.com/beta/groups/{id}/members/microsoft.graph.user/$count
 ConsistencyLevel: eventual
 ```
 
@@ -188,7 +188,7 @@ The following is an example of the request.
   "name": "get_pr_count"
 }-->
 ```msgraph-interactive
-GET https://graph.microsoft.com/beta/groups/{id}/members/$/microsoft.graph.user?$count=true&$orderby=displayName&$search="displayName:Pr"&$select=displayName,id
+GET https://graph.microsoft.com/beta/groups/{id}/members/microsoft.graph.user?$count=true&$orderby=displayName&$search="displayName:Pr"&$select=displayName,id
 ConsistencyLevel: eventual
 ```
 

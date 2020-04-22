@@ -92,7 +92,7 @@ GET  https://graph.microsoft.com/v1.0/me/contacts?$count=true
 
 The `$count` query parameter is supported for these collections of resources and their relationships that derive from [directoryObject](/graph/api/resources/directoryobject?view=graph-rest-beta):
 - [application](https://docs.microsoft.com/graph/api/resources/application?view=graph-rest-beta)
-- [contact](https://docs.microsoft.com/graph/api/resources/contact?view=graph-rest-beta)
+- [orgContact](https://docs.microsoft.com/graph/api/resources/orgcontact?view=graph-rest-beta)
 - [device](https://docs.microsoft.com/graph/api/resources/device?view=graph-rest-beta)
 - [group](https://docs.microsoft.com/graph/api/resources/group?view=graph-rest-beta)
 - [servicePrincipal](https://docs.microsoft.com/graph/api/resources/serviceprincipal?view=graph-rest-beta)
@@ -126,9 +126,9 @@ GET https://graph.microsoft.com/v1.0/me/drive/root?$expand=children($select=id,n
 
 ## filter parameter
 
-Use the `$filter` query parameter to retrieve just a subset of a collection. The `$filter` query parameter can also be used to retrieve for relationships like member, memberOf, transitiveMember, and transitiveMemberOf.
+Use the `$filter` query parameter to retrieve just a subset of a collection. The `$filter` query parameter can also be used to retrieve relationships like members, memberOf, transitiveMembers, and transitiveMemberOf. For example, get all the security groups I'm a member of.
 
-For example, to find users whose display name starts with the letter 'J', use `startswith`.
+The following example can be used to find users whose display name starts with the letter 'J', use `startswith`.
 
 ```http
 GET https://graph.microsoft.com/v1.0/users?$filter=startswith(displayName,'J')
@@ -165,6 +165,7 @@ The following table shows some examples that use the `$filter` query parameter.
 | Get all emails received by the signed-in user in April 2017. | [`https://graph.microsoft.com/v1.0/me/mailFolders/inbox/messages?$filter=ReceivedDateTime ge 2017-04-01 and receivedDateTime lt 2017-05-01`](https://developer.microsoft.com/graph/graph-explorer?request=me/mailFolders/inbox/messages?$filter=ReceivedDateTime+ge+2017-04-01+and+receivedDateTime+lt+2017-05-01&method=GET&version=v1.0) 
 | Get all unread mail in the signed-in user's Inbox. | [`https://graph.microsoft.com/v1.0/me/mailFolders/inbox/messages?$filter=isRead eq false`](https://developer.microsoft.com/graph/graph-explorer?request=me/mailFolders/inbox/messages?$filter=isRead+eq+false&method=GET&version=v1.0) 
 | List all Office 365 groups in an organization. | [`https://graph.microsoft.com/v1.0/groups?$filter=groupTypes/any(c:c+eq+'Unified')`](https://developer.microsoft.com/graph/graph-explorer?request=groups?$filter=groupTypes/any(c:c+eq+'Unified')&method=GET&version=v1.0) 
+| Use OData cast to get transitive membership in groups with a display name that starts with 'a' including a count of returned objects. | [https://graph.microsoft.com/beta/me/transitiveMemberOf/microsoft.graph.group?$count=true&$orderby=displayName&$filter=startswith(displayName, 'a')](https://developer.microsoft.com/graph/graph-explorer?request=me/transitiveMemberOf/microsoft.graph.group?$count=true&$orderby=displayName&$filter=startswith(displayName, 'a')) |
 
 > **Note:** The following `$filter` operators are not supported for Azure AD resources:  `ne`, `gt`, `ge`, `lt`, `le`, and `not`. The `contains` string operator is currently not supported on any Microsoft Graph resources.
 
@@ -336,8 +337,8 @@ To learn more about the People API, see [Get information about relevant people](
 
 ### Using $search on directory object collections
 
-You can use the `$search` query parameter to restrict results based on a search criterion such as looking for words in strings delimited by spaces, casing, and character types (numbers and special characters). The `$search` parameter is only available for the **displayName** property. For example: 
- 
+You can use the `$search` query parameter to restrict results based on a search criterion such as looking for words in strings delimited by spaces, casing, and character types (numbers and special characters). The tokenized search support works only on the displayName and description fields. Any field can be put in `$search`, fields other than **displayName** and **description** defaults to `$filter` behavior. For example:
+
 `https://graph.microsoft.com/beta/groups/?$search="displayName:OneVideo"`
  
 This looks for all groups with display names that look like "OneVideo". `$search` can be used together with `$filter` as well. For example: 
