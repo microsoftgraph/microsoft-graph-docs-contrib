@@ -1,6 +1,6 @@
 ---
-title: "List timeOffRequest"
-description: "Retrieve a list of timeoffrequest objects in the team."
+title: "List timeOffRequests"
+description: "Retrieve a list of timeOffRequest objects in the team."
 localization_priority: Normal
 author: "akumar39"
 ms.prod: "microsoft-teams"
@@ -23,9 +23,11 @@ One of the following permissions is required to call this API. To learn more, in
 |:---------------------------------------|:--------------------------------------------|
 |Delegated (work or school account) | Schedule.Read.All, Group.Read.All, Schedule.ReadWrite.All, Group.ReadWrite.All    |
 |Delegated (personal Microsoft account) | Not supported.    |
-|Application | Schedule.Read.All, Schedule.ReadWrite.All |
+|Application | Schedule.Read.All*, Schedule.ReadWrite.All* |
 
-> **Note**: This API supports admin permissions. Global admins can access groups that they are not a member of. currently in private preview only and are not available for public use.
+>\* **Important:** Application permissions are currently in private preview only and are not available for public use.
+
+> **Note**: This API supports admin permissions. Global admins can access groups that they are not a member of. 
 
 ## HTTP request
 
