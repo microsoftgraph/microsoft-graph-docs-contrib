@@ -42,7 +42,7 @@ var @event = new Event
 	},
 	AllowNewTimeProposals = true,
 	IsOnlineMeeting = true,
-	OnlineMeetingProvider = "teamsForBusiness"
+	OnlineMeetingProvider = OnlineMeetingProviderType.TeamsForBusiness
 };
 
 await graphClient.Me.Events
