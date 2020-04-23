@@ -9653,7 +9653,7 @@
           - name: Get 
             href: api/unifiedroleassignmentmultiple-get.md
           - name: Update 
-            href: api/unifiedroleassignmentmultiple-delete.md
+            href: api/unifiedroleassignmentmultiple-update.md
           - name: Delete 
             href: api/unifiedroleassignmentmultiple-delete.md
       - name: Service principal
