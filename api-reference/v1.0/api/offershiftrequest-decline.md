@@ -11,7 +11,7 @@ doc_type: "apiPageType"
 
 Namespace: microsoft.graph
 
-Decline an [offershiftrequest](../resources/offershiftrequest.md) object.
+Decline an [offerShiftRequest](../resources/offershiftrequest.md) object.
 
 ## Permissions
 
