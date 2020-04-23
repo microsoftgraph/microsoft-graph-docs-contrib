@@ -1,6 +1,6 @@
 ---
 title: "openShiftChangeRequest: decline"
-description: "Decline an openshift request."
+description: "Decline an openShiftChangeRequest."
 localization_priority: Normal
 author: "akumar39"
 ms.prod: "microsoft-teams"
@@ -11,7 +11,7 @@ doc_type: "apiPageType"
 
 Namespace: microsoft.graph
 
-Decline an [openshiftchangerequest](../resources/openshiftchangerequest.md) object.
+Decline an [openShiftChangeRequest](../resources/openshiftchangerequest.md) object.
 
 ## Permissions
 
@@ -38,6 +38,7 @@ POST /teams/{id}/schedule/openShiftsChangeRequests/{openShiftChangeRequestId}/de
 | Name          | Description   |
 |:--------------|:--------------|
 | Authorization | Bearer {token}. Required. |
+| Content-type | application/json. Required. |
 
 ## Request body
 
