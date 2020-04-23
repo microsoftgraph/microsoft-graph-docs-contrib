@@ -7,11 +7,11 @@ ms.prod: "microsoft-teams"
 doc_type: "apiPageType"
 ---
 
-# List openShift
+# List openShifts
 
 Namespace: microsoft.graph
 
-List [openshift](../resources/openshift.md) objects in a team.
+List [openShift](../resources/openshift.md) objects in a team.
 
 ## Permissions
 
