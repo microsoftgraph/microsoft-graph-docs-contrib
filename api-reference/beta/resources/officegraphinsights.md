@@ -25,9 +25,9 @@ Each insight is returned with a `resourceVisualization` and `resourceReference` 
 
 | Relationship      | Type          | Description  |
 | ------------- |---------------| -------------|
-| trending    	| [trending](insights-trending.md) collection		| Calculated relationship identifying trending documents. Trending documents are relevant documents from the closest network of a user, which help users discover potentially useful content, even if users have never viewed the content or it has never been sent to them before. Trending documents can be stored in OneDrive for Business or  SharePoint.|
-| used    	| [usedInsight](insights-used.md) collection		| Calculated relationship identifying the latest documents viewed and modified by a user, including email and link attachments, SharePoint and OneDrive documents,  ranked by relevancy to the user.|
-| shared    	| [sharedInsight](insights-shared.md) collection		| Calculated relationship identifying the most relevant documents shared with or shared by a user, including classic and modern link attachments, OneDrive and SharePoint documents, ranked by last shared datetime.|
+| trending    	| [trending](insights-trending.md) collection		| Calculated relationship identifying trending around a user documents. Trending documents are relevant documents from the closest network of the user, which can be stored in OneDrive or in SharePoint sites. Trending insights help the user to discover potentially useful content, which the user has access but never viewed it before.|
+| used    	| [usedInsight](insights-used.md) collection		| Calculated relationship identifying the latest documents viewed and modified by a user, including email and link attachments, SharePoint and OneDrive documents, ranked by relevancy to the user.|
+| shared    	| [sharedInsight](insights-shared.md) collection		| Calculated relationship identifying the most relevant documents shared with or shared by a user, including file and reference attachments, OneDrive and SharePoint documents, ranked by last shared datetime.|
 ## JSON representation
 
 Here is a JSON representation of the resource
