@@ -4,344 +4,519 @@ description: "Provides instructions for creating a batch of API requests."
 localization_priority: Normal
 author: DarrelMiller
 ---
+
 # Request Batching
 
-Microsoft Graph SDKs have a set content classes to simplify how you create batch payloads and parse batch response payloads.
+[Batching](../json-batching.md) is a way of combining multiple requests into a single HTTP request. The requests are combined in a single JSON payload which is sent via POST to the `\$batch` endpoint. Microsoft Graph SDKs have a set of classes to simplify how you create batch payloads and parse batch response payloads.
+
+> [!IMPORTANT]
+> See [Known Issues](../known-issues.md#json-batching) for current limitations with JSON batching in Microsoft Graph.
 
 ## Create a batch request
 
-[Batching](../json-batching) is a way of combining multiple requests into a single HTTP request. This can be achieved by making a POST call with those requests as a single JSON payload to `\$batch` endpoint.
+The Microsoft Graph SDKs provide three classes to work with batch requests and responses.
 
-### BatchRequestContent
-
-A component that simplifies creating the batch request payload. This class handles all the batch specific payload construction, you just need to create the individual requests and add them.
-
-### BatchRequestStep
-
-A component that represents a single request within the batch and enables assigning the request a unique identifier and specifying dependencies between requests.
-
-### BatchResponseContent
-
-A component to simplify the processing of batch responses by providing functionalities like getResponses, getResponseById, getResponsesIterator
+- **BatchRequestStep**: This class represents a single request (such as `GET /me`) within a batch. It enables assigning a unique identifier to the request and specifying dependencies between requests.
+- **BatchRequestContent**: This class simplifies creating the batch request payload. It contains multiple **BatchRequestStep** objects.
+- **BatchResponseContent** This class simplifies parsing the response from a batch request. It provides the ability to get all responses, get a specific response by ID, and get the `@odata.nextLink` property if present.
 
 ## Simple Batching Example
 
-This example shows how to request information about a user and and their calendar events in a single request. First create the `BatchResponseContent` object, then add requests to the content object.  Once all the requests have been added to the batch, you can then `POST` the content object to the `Batch` endpoint.
+This example shows how to send multiple requests in a batch that are not dependent on each other. The requests may be executed by the service in any order. This example gets the user and gets the user's calendar view for the current day.
 
-The `BatchResponseContent` that is returned can then be used to retrieve the individual responses.
-
-# [C#](#tab/CS)
+### [C#](#tab/csharp)
 
 ```csharp
-var graphClient = new GraphServiceClient(authProvider);
+// Use the request builder to generate a regular
+// request to /me
+var userRequest = graphClient.Me.Request();
 
-IUserRequest userRequest = graphClient.Me.Request();
-IUserEventsCollectionRequest eventsRequest = graphClient.Me.Events.Request();
+var today = DateTime.Now.Date;
+var start = today.ToString("yyyy-MM-ddTHH:mm:ssK");
+var end = today.AddDays(1).ToString("yyyy-MM-ddTHH:mm:ssK");
 
-BatchRequestContent batchRequestContent = new BatchRequestContent();
+var queryOptions = new List<QueryOption>
+{
+    new QueryOption("startDateTime", start),
+    new QueryOption("endDateTime", end)
+};
 
+// Use the request builder to generate a regular
+// request to /me/calendarview?startDateTime="start"&endDateTime="end"
+var eventsRequest = graphClient.Me.CalendarView.Request(queryOptions);
+
+// Build the batch
+var batchRequestContent = new BatchRequestContent();
+
+// Using AddBatchRequestStep adds each request as a step
+// with no specified order of execution
 var userRequestId = batchRequestContent.AddBatchRequestStep(userRequest);
 var eventsRequestId = batchRequestContent.AddBatchRequestStep(eventsRequest);
 
-BatchResponseContent returnedResponse = await graphClient.Batch.Request().PostAsync(batchRequestContent);
+var returnedResponse = await graphClient.Batch.Request().PostAsync(batchRequestContent);
 
 // De-serialize response based on known return type
-User user = await returnedResponse.GetResponseByIdAsync<User>(userRequestId);
-UserEventsCollectionResponse events = await returnedResponse.GetResponseByIdAsync<UserEventsCollectionResponse>(eventsRequestId);
+try
+{
+    var user = await returnedResponse
+        .GetResponseByIdAsync<User>(userRequestId);
+    Console.WriteLine($"Hello {user.DisplayName}!");
+}
+catch (ServiceException ex)
+{
+    Console.WriteLine($"Get user failed: {ex.Error.Message}");
+}
+
+// For collections, must use the *CollectionResponse class to deserialize
+// The .Value property will contain the *CollectionPage type that the Graph client
+// returns from GetAsync().
+try
+{
+    var events = await returnedResponse
+        .GetResponseByIdAsync<UserCalendarViewCollectionResponse>(eventsRequestId);
+    Console.WriteLine($"You have {events.Value.CurrentPage.Count} events on your calendar today.");
+}
+catch (ServiceException ex)
+{
+    Console.WriteLine($"Get calendar view failed: {ex.Error.Message}");
+}
 ```
 
-# [TypeScript](#tab/TypeScript)
+### [TypeScript](#tab/typescript)
 
 ```typescript
+// Create a batch request step to GET /me
+let userRequestStep: MicrosoftGraph.BatchRequestStep = {
+  id: "1",
+  request: new Request("/me", {
+    method: "GET"
+  })
+}
 
+let today = moment({hour: 0, minute: 0, seconds: 0});
+let start = today.format();
+let end = today.add(1, "day").format();
+
+// Create a batch request step to GET
+// /me/calendarview?startDateTime="start"&endDateTime="end"
+let calendarViewRequestStep: MicrosoftGraph.BatchRequestStep = {
+  id: "2",
+  request: new Request(`/me/calendarview?startDateTime=${start}&endDateTime=${end}`, {
+    method: "GET"
+  })
+}
+
+// Create the batch request content with the steps created
+// above
+let batchRequestContent = new MicrosoftGraph.BatchRequestContent([
+  userRequestStep,
+  calendarViewRequestStep
+]);
+
+let content = await batchRequestContent.getContent();
+
+// POST the batch request content to the /$batch endpoint
+let batchResponse = await client
+  .api('/$batch')
+  .post(content);
+
+// Create a BatchResponseContent object to parse the response
+let batchResponseContent = new MicrosoftGraph.BatchResponseContent(batchResponse);
+
+// Get the user response using the id assigned to the request
+let userResponse = batchResponseContent.getResponseById("1");
+
+// For a single entity, the JSON payload can be deserialized
+// into the expected type
+// Types supplied by @microsoft/microsoft-graph-types
+if (userResponse.ok) {
+  let user: User = await userResponse.json();
+  console.log(`Hello ${user.displayName}!`);
+} else {
+  console.log(`Get user failed with status ${userResponse.status}`);
+}
+
+// Get the calendar view response by id
+let calendarResponse = batchResponseContent.getResponseById("2");
+
+// For a collection of entities, the "value" property of
+// the JSON payload can be deserialized into an array of
+// the expected type
+if (calendarResponse.ok) {
+  let rawResponse = await calendarResponse.json();
+  let events: [Event] = rawResponse.value;
+  console.log(`You have ${events.length} events on your calendar today.`);
+} else {
+  console.log(`Get calendar view failed with status ${calendarResponse.status}`);
+}
 ```
 
-# [Java](#tab/Java)
+### [Java](#tab/java)
 
 ```java
-Request requestGetMe = new Request.Builder().url("https://graph.microsoft.com/v1.0/me/").build();
-List<String> arrayOfDependsOnIdsGetMe = null;
-MSBatchRequestStep stepGetMe = new MSBatchRequestStep("1", requestGetMe, arrayOfDependsOnIdsGetMe);
+// Use the Graph client to generate the request URL for GET /me
+Request userRequest = new Request.Builder().url(graphClient.me().getRequestUrl()).build();
+MSBatchRequestStep userRequestStep = new MSBatchRequestStep("1", userRequest, null);
 
-Request requestGetMePlannerTasks = new Request.Builder().url("https://graph.microsoft.com/v1.0/me/planner/tasks").build();
-List<String> arrayOfDependsOnIdsGetMePlannerTasks = Arrays.asList("1");
-MSBatchRequestStep stepMePlannerTasks = new MSBatchRequestStep("2", requestGetMePlannerTasks, arrayOfDependsOnIdsGetMePlannerTasks);
+ZoneOffset localTimeZone = OffsetDateTime.now().getOffset();
+OffsetDateTime today = OffsetDateTime.of(LocalDate.now(), LocalTime.MIDNIGHT, localTimeZone);
+OffsetDateTime tomorrow = today.plusDays(1);
 
-String body = "{" + 
-		"\"displayName\": \"My Notebook\"" + 
-		"}";
-RequestBody postBody = RequestBody.create(MediaType.parse("application/json"), body);
-Request requestCreateNotebook = new Request
-	.Builder()
-        .addHeader("Content-Type", "application/json")
-	.url("https://graph.microsoft.com/v1.0/me/onenote/notebooks")
-	.post(postBody)
-	.build();
-MSBatchRequestStep stepCreateNotebook = new MSBatchRequestStep("3", requestCreateNotebook, Arrays.asList("2"));
+// Use the Graph client to generate the request URL for
+// GET /me/calendarview?startDateTime="start"&endDateTime="end"
+String calendarViewOptions = String.format("?startDateTime=%s&endDateTime=%s", today.toString(), tomorrow.toString());
+String calendarViewUrl = graphClient.me().calendarView().getRequestUrl().concat(calendarViewOptions);
+Request calendarViewRequest = new Request.Builder().url(calendarViewUrl).build();
+MSBatchRequestStep calendarViewRequestStep = new MSBatchRequestStep("2", calendarViewRequest, null);
 
-// Create MSBatch Request Content and get content
-List<MSBatchRequestStep> steps = Arrays.asList(stepGetMe, stepMePlannerTasks, stepCreateNotebook);
-MSBatchRequestContent requestContent = new MSBatchRequestContent(steps);
-String content = requestContent.getBatchRequestContent();
+// Create the batch request content with the steps created above
+List<MSBatchRequestStep> batchSteps = Arrays.asList(userRequestStep, calendarViewRequestStep);
+MSBatchRequestContent batchRequestContent = new MSBatchRequestContent(batchSteps);
 
-// Make call to $batch endpoint
+ICoreAuthenticationProvider auth =
+    (ICoreAuthenticationProvider)graphClient.getAuthenticationProvider();
 OkHttpClient client = HttpClients.createDefault(auth);
-Request batchRequest = new Request
-	.Builder()
-	.url("https://graph.microsoft.com/v1.0/$batch")
-	.post(RequestBody.create(MediaType.parse("application/json"), content))
-	.build();
+
+// Send the batch request content to the /$batch endpoint
+String batchContent = batchRequestContent.getBatchRequestContent();
+Request batchRequest = new Request.Builder()
+    .url("https://graph.microsoft.com/v1.0/$batch")
+    .post(RequestBody.create(MediaType.parse("application/json"), batchContent))
+    .build();
+
 Response batchResponse = client.newCall(batchRequest).execute();
 
-// Create MSBatch Response Content
+ISerializer graphSerializer = graphClient.getSerializer();
 
-MSBatchResponseContent responseContent = new MSBatchResponseContent(batchResponse);
-Response responseGetMe = responseContent.getResponseById("1");
+// Create an MSBatchResponseContent object to parse the response
+MSBatchResponseContent batchResponseContent = new MSBatchResponseContent(batchResponse);
+// Get the user response using the id assigned to the request
+Response userResponse = batchResponseContent.getResponseById("1");
 
+// For a single entity, the JSON payload can be deserialized
+// into the expected type
+if (userResponse.isSuccessful()) {
+    User user = graphSerializer.deserializeObject(userResponse.body().string(), User.class);
+    System.out.println(String.format("Hello %s!", user.displayName));
+} else {
+    GraphErrorResponse error = graphSerializer
+        .deserializeObject(userResponse.body().string(), GraphErrorResponse.class);
+    System.out.println(
+        String.format("Error getting user: %s - %s", error.error.code, error.error.message));
+}
+
+// Get the calendar view response by id
+Response calendarViewResponse = batchResponseContent.getResponseById("2");
+
+// For a collection of entities, the JSON payload can be deserialized
+// into a *CollectionResponse object. The collection can then be
+// accessed via the value property
+if (calendarViewResponse.isSuccessful()) {
+    EventCollectionResponse events = graphSerializer
+        .deserializeObject(calendarViewResponse.body().string(), EventCollectionResponse.class);
+    System.out.println(
+        String.format("You have %d events on your calendar today", events.value.size()));
+} else {
+    GraphErrorResponse error = graphSerializer
+        .deserializeObject(calendarViewResponse.body().string(), GraphErrorResponse.class);
+    System.out.println(
+        String.format("Error getting calendar view: %s - %s", error.error.code, error.error.message));
+}
 ```
+
 ---
 
+## Batches with dependent requests
 
-### Batches with dependent requests 
+This example shows how to send multiple requests in a batch that are dependent on each other. The requests will be executed by the service in the order specified by the dependencies. This example adds an event with a start time during the current day to the user's calendar and gets the user's calendar view for the current day. To make sure that the calendar review returned includes the new event created, the request for the calendar view is configured as dependent on the request to add the new event. This ensures that the add event request will execute first.
 
-In this example we make two requests, but the second request is dependant on the first request completing.
+> [!NOTE]
+> If the add event request fails, the get calendar view request will fail with a `424 Failed Dependency` error.
 
-# [C#](#tab/CS)
+<!-- markdownlint-disable MD024 -->
+### [C#](#tab/csharp)
 
 ```csharp
+var today = DateTime.Now.Date;
+
+var newEvent = new Event
+{
+    Subject = "File end-of-day report",
+    Start = new DateTimeTimeZone
+    {
+        // 5:00 PM
+        DateTime = today.AddHours(17).ToString("yyyy-MM-ddTHH:mm:ss"),
+        TimeZone = TimeZoneInfo.Local.StandardName
+    },
+    End = new DateTimeTimeZone
+    {
+        // 5:30 PM
+        DateTime = today.AddHours(17).AddMinutes(30).ToString("yyyy-MM-ddTHH:mm:ss"),
+        TimeZone = TimeZoneInfo.Local.StandardName
+    }
+};
+
+// POST requests are handled a bit differently
+// The SDK request builders generate GET requests, so
+// you must get the HttpRequestMessage and convert to a POST
+var jsonEvent = graphClient.HttpProvider.Serializer.SerializeAsJsonContent(newEvent);
+
+var addEventRequest = graphClient.Me.Events.Request().GetHttpRequestMessage();
+addEventRequest.Method = HttpMethod.Post;
+addEventRequest.Content = jsonEvent;
+
+var start = today.ToString("yyyy-MM-ddTHH:mm:ssK");
+var end = today.AddDays(1).ToString("yyyy-MM-ddTHH:mm:ssK");
+
+var queryOptions = new List<QueryOption>
+{
+    new QueryOption("startDateTime", start),
+    new QueryOption("endDateTime", end)
+};
+
+// Use the request builder to generate a regular
+// request to /me/calendarview?startDateTime="start"&endDateTime="end"
+var calendarViewRequest = graphClient.Me.CalendarView.Request(queryOptions);
+
+// Build the batch
+var batchRequestContent = new BatchRequestContent();
+
+// Force the requests to execute in order, so that the request for
+// today's events will include the new event created.
+
+// First request, no dependency
+var addEventRequestId = batchRequestContent.AddBatchRequestStep(addEventRequest);
+
+// Second request, depends on addEventRequestId
+var eventsRequestId = Guid.NewGuid().ToString();
+batchRequestContent.AddBatchRequestStep(new BatchRequestStep(
+    eventsRequestId,
+    calendarViewRequest.GetHttpRequestMessage(),
+    new List<string> { addEventRequestId }
+));
+
+var returnedResponse = await graphClient.Batch.Request().PostAsync(batchRequestContent);
+
+// De-serialize response based on known return type
+try
+{
+    var createdEvent = await returnedResponse
+        .GetResponseByIdAsync<Event>(addEventRequestId);
+    Console.WriteLine($"New event created with ID: {createdEvent.Id}");
+}
+catch (ServiceException ex)
+{
+    Console.WriteLine($"Add event failed: {ex.Error.Message}");
+}
+
+// For collections, must use the *CollectionResponse class to deserialize
+// The .Value property will contain the *CollectionPage type that the Graph client
+// returns from GetAsync().
+try
+{
+    var events = await returnedResponse
+        .GetResponseByIdAsync<UserCalendarViewCollectionResponse>(eventsRequestId);
+    Console.WriteLine($"You have {events.Value.CurrentPage.Count} events on your calendar today.");
+}
+catch (ServiceException ex)
+{
+    Console.WriteLine($"Get calendar view failed: {ex.Error.Message}");
+}
 ```
 
-# [TypeScript](#tab/TypeScript)
+### [TypeScript](#tab/typescript)
 
 ```typescript
-// elem here is the input HTML element of type file
-const serialBatching = async function(elem) {
-	try {
-		let file = elem.files[0];
+// 5:00 PM
+let eventStart = moment({hour: 17, minute: 0, seconds: 0});
 
-        // Upload file
-        let uploadProfilePhotoRequest = new Request("/me/photo/$value", {
-			method: "PUT",
-			headers: {
-				"Content-type": file.type,
-			},
-			body: file,
-		});
+// Create a batch request step to add an event
+let newEvent: Event = {
+  subject: "File end-of-day report",
+  start: {
+    dateTime: eventStart
+      .format("YYYY-MM-DDTHH:mm:ss"),
+    timeZone: moment.tz.guess()
+  },
+  end: {
+    // 5:30 PM
+    dateTime: eventStart.add(30, "minutes")
+      .format("YYYY-MM-DDTHH:mm:ss"),
+    timeZone: moment.tz.guess()
+  }
+}
+console.log(JSON.stringify(newEvent));
 
-		let uploadProfilePhotoStep: BatchRequestStep = {
-			id: "1",
-			request: uploadProfilePhotoRequest,
-		};
+let addEventRequestStep: MicrosoftGraph.BatchRequestStep = {
+  id: "1",
+  request: new Request("/me/events", {
+    method: "POST",
+    body: JSON.stringify(newEvent),
+    headers: {
+      "Content-Type": "application/json"
+    }
+  })
+}
 
-        // Download file
-		let downloadProfilePhotoRequest = new Request("/me/photo/$value", {
-			method: "GET",
-		});
+let today = moment({hour: 0, minute: 0, seconds: 0});
+let start = today.format();
+let end = today.add(1, "day").format();
+console.log(`/me/calendarview?startDateTime=${start}&endDateTime=${end}`);
 
-		let downloadProfilePhotoStep: BatchRequestStep = {
-			id: "2",
-			request: downloadProfilePhotoRequest,
-			// Adding dependsOn makes this request wait until the dependency finishes
-			// This download request waits until the upload request completes
-			dependsOn: ["1"],
-		};
+// Create a batch request step to GET
+// /me/calendarview?startDateTime="start"&endDateTime="end"
+let calendarViewRequestStep: MicrosoftGraph.BatchRequestStep = {
+  id: "2",
+  // This step will happen after step 1
+  dependsOn: [ "1" ],
+  request: new Request(`/me/calendarview?startDateTime=${start}&endDateTime=${end}`, {
+    method: "GET"
+  })
+}
 
-		//Create instance by passing a batch request step
-		let batchRequestContent = new MicrosoftGraph.BatchRequestContent([uploadProfilePhotoStep, downloadProfilePhotoStep]);
+// Create the batch request content with the steps created
+// above
+let batchRequestContent = new MicrosoftGraph.BatchRequestContent([
+  addEventRequestStep,
+  calendarViewRequestStep
+]);
 
-		//Extracting content from the instance
-		let content = await batchRequestContent.getContent();
+let content = await batchRequestContent.getContent();
 
-		//Making call to $batch end point with the extracted content
-		let response = await client.api("/$batch").post(content);
+// POST the batch request content to the /$batch endpoint
+let batchResponse = await client
+  .api('/$batch')
+  .post(content);
 
-		//Create instance with response from the batch request
-		let batchResponseContent = new MicrosoftGraph.BatchResponseContent(response);
+// Create a BatchResponseContent object to parse the response
+let batchResponseContent = new MicrosoftGraph.BatchResponseContent(batchResponse);
 
-		//Getting response by id
-		console.log(batchResponse.getResponseById(downloadId));
+// Get the create event response by id
+let newEventResponse = batchResponseContent.getResponseById("1");
+if (newEventResponse.ok) {
+  let event: Event = await newEventResponse.json();
+  console.log(`New event created with ID: ${event.id}`);
+} else {
+  console.log(`Create event failed with status ${newEventResponse.status}`);
+}
 
-		//Getting all the responses
-		console.log(batchResponseContent.getResponses());
-	} catch (error) {
-		console.error(error);
-	}
-};
+// Get the calendar view response by id
+let calendarResponse = batchResponseContent.getResponseById("2");
+
+if (calendarResponse.ok)
+{
+  // For a collection of entities, the "value" property of
+  // the JSON payload can be deserialized into an array of
+  // the expected type
+  let rawResponse = await calendarResponse.json();
+  let events: [Event] = rawResponse.value;
+  console.log(`You have ${events.length} events on your calendar today.`);
+} else {
+  console.log(`Get calendar view failed with status ${calendarResponse.status}`);
+}
+```
+
+### [Java](#tab/java)
+
+```java
+ZoneOffset localTimeZone = OffsetDateTime.now().getOffset();
+OffsetDateTime today = OffsetDateTime.of(LocalDate.now(), LocalTime.MIDNIGHT, localTimeZone);
+OffsetDateTime tomorrow = today.plusDays(1);
+
+// Use the Graph client to generate the request URL for POST /me/events
+Event newEvent = new Event();
+newEvent.subject = "File end-of-day report";
+newEvent.start = new DateTimeTimeZone();
+// 5:00 PM
+newEvent.start.dateTime = today.plusHours(17)
+    .format(DateTimeFormatter.ISO_LOCAL_DATE_TIME);
+newEvent.start.timeZone = ZoneOffset.systemDefault().getId();
+newEvent.end = new DateTimeTimeZone();
+// 5:30 PM
+newEvent.end.dateTime = today.plusHours(17).plusMinutes(30)
+    .format(DateTimeFormatter.ISO_LOCAL_DATE_TIME);
+newEvent.end.timeZone = ZoneOffset.systemDefault().getId();
+
+RequestBody newEventRequestBody = RequestBody.create(
+    MediaType.parse("application/json"),
+    graphClient.getSerializer().serializeObject(newEvent));
+Request addEventRequest = new Request.Builder().url(graphClient
+    .me()
+    .events()
+    .getRequestUrl())
+    .post(newEventRequestBody)
+    .addHeader("Content-Type", "application/json")
+    .build();
+
+// arrayOfDependsOnIds = null, first request is not dependent on anything
+MSBatchRequestStep addEventRequestStep = new MSBatchRequestStep("1", addEventRequest, null);
+
+// Use the Graph client to generate the request URL for
+// GET /me/calendarview?startDateTime="start"&endDateTime="end"
+String calendarViewOptions = String.format("?startDateTime=%s&endDateTime=%s", today.toString(), tomorrow.toString());
+String calendarViewUrl = graphClient.me().calendarView().getRequestUrl().concat(calendarViewOptions);
+Request calendarViewRequest = new Request.Builder().url(calendarViewUrl).build();
+// This request depends on the previous request
+MSBatchRequestStep calendarViewRequestStep = new MSBatchRequestStep(
+    "2",
+    calendarViewRequest,
+    Arrays.asList("1") // Pass ID of dependency
+);
+
+// Create the batch request content with the steps created above
+List<MSBatchRequestStep> batchSteps = Arrays.asList(addEventRequestStep, calendarViewRequestStep);
+MSBatchRequestContent batchRequestContent = new MSBatchRequestContent(batchSteps);
+
+ICoreAuthenticationProvider auth =
+    (ICoreAuthenticationProvider)graphClient.getAuthenticationProvider();
+OkHttpClient client = HttpClients.createDefault(auth);
+
+// Send the batch request content to the /$batch endpoint
+String batchContent = batchRequestContent.getBatchRequestContent();
+Request batchRequest = new Request.Builder()
+    .url("https://graph.microsoft.com/v1.0/$batch")
+    .post(RequestBody.create(MediaType.parse("application/json"), batchContent))
+    .build();
+
+Response batchResponse = client.newCall(batchRequest).execute();
+
+ISerializer graphSerializer = graphClient.getSerializer();
+
+// Create an MSBatchResponseContent object to parse the response
+MSBatchResponseContent batchResponseContent = new MSBatchResponseContent(batchResponse);
+// Get the user response using the id assigned to the request
+Response addEventResponse = batchResponseContent.getResponseById("1");
+
+// For a single entity, the JSON payload can be deserialized
+// into the expected type
+  if (addEventResponse.isSuccessful()) {
+    Event event = graphSerializer.deserializeObject(addEventResponse.body().string(), Event.class);
+    System.out.println(String.format("New event created with ID: %s", event.id));
+} else {
+    GraphErrorResponse error = graphSerializer
+        .deserializeObject(addEventResponse.body().string(), GraphErrorResponse.class);
+    System.out.println(
+        String.format("Error creating event: %s - %s", error.error.code, error.error.message));
+}
+
+// Get the calendar view response by id
+Response calendarViewResponse = batchResponseContent.getResponseById("2");
+
+// For a collection of entities, the JSON payload can be deserialized
+// into a *CollectionResponse object. The collection can then be
+// accessed via the value property
+if (calendarViewResponse.isSuccessful()) {
+    EventCollectionResponse events = graphSerializer
+        .deserializeObject(calendarViewResponse.body().string(), EventCollectionResponse.class);
+    System.out.println(
+        String.format("You have %d events on your calendar today", events.value.size()));
+} else {
+    GraphErrorResponse error = graphSerializer
+        .deserializeObject(calendarViewResponse.body().string(), GraphErrorResponse.class);
+    System.out.println(
+        String.format("Error getting calendar view: %s - %s", error.error.code, error.error.message));
+}
 ```
 
 ---
-
-### GET and POST contents from and to different workloads - Making parallel requests
-
-# [C#](#tab/CS)
-
-```csharp
-```
-
-# [TypeScript](#tab/TypeScript)
-
-```typescript
-const parallelBatching = async function() {
-	try {
-		let fileName = "test.pdf";
-		let oneDriveFileRequest = new Request(`/me/drive/root:/${fileName}:/content`, {
-			method: "GET",
-		});
-
-		let oneDriveFileStep: BatchRequestStep = {
-			id: "1",
-			request: oneDriveFileRequest,
-		};
-
-		let folderDetails = {
-			name: "Testing Batch",
-			folder: {},
-		};
-		let createFolder = new Request("/me/drive/root/children", {
-			method: "POST",
-			headers: {
-				"Content-type": "application/json",
-			},
-			body: JSON.stringify(folderDetails),
-		});
-
-		let createFolderStep: BatchRequestStep = {
-			id: "2",
-			request: createFolder,
-			dependsOn: ["1"],
-		};
-
-		let mailsRequest = new Request("/me/messages", {
-			method: "GET",
-		});
-
-		let mailsRequestStep: BatchRequestStep = {
-			id: "3",
-			request: mailsRequest,
-			dependsOn: ["2"],
-		};
-
-		//Create instance by passing a batch request step
-		let batchRequestContent = new MicrosoftGraph.BatchRequestContent();
-
-		// Dynamically adding requests to the batch content
-		let fileDownloadId = batchRequestContent.addRequest(oneDriveFileStep);
-
-		let createFolderId = batchRequestContent.addRequest(createFolderStep);
-
-		let mailsId = batchRequestContent.addRequest(mailsRequestStep);
-
-		// Dynamically removing unnecessary dependencies
-		// NOTE: Passing second param empty removes all the dependencies for that request
-		batchRequestContent.removeDependency("3", "2");
-
-		// Dynamically removing unnecessary request. Removing a request automatically removes the dependencies in relevant dependents
-		// Here download file dependency is removed from the onedrive create folder request
-		batchRequestContent.removeRequest(fileDownloadId);
-
-		// Now no requests depends on anything so the request will be made parallel in the service end
-		// Extracting content from the instance
-		let content = await batchRequestContent.getContent();
-
-		//Making call to $batch end point with the extracted content
-		let response = await client.api("/$batch").post(content);
-
-		//Create instance with response from the batch request
-		let batchResponse = new MicrosoftGraph.BatchResponseContent(response);
-
-		//Getting iterator and looping through the responses iterator
-		let iterator = batchResponse.getResponsesIterator();
-		let data = iterator.next();
-		while (!data.done) {
-			console.log(data.value[0] + ":" + data.value[1]);
-			data = iterator.next();
-		}
-	} catch (error) {
-		console.error(error);
-	}
-};
-```
-
----
-
-
-### Create a folder in OneDrive and upload multiple files - Making batch request with all other request depend on one request
-
-
-# [C#](#tab/CS)
-
-```csharp
-```
-
-# [TypeScript](#tab/TypeScript)
-
-```typescript
-// elem here is the input HTML element of type file
-const sameBatching = async function(elem) {
-	try {
-		let file1 = elem.files[0];
-		let file2 = elem.files[1];
-
-		let folderDetails = {
-			name: "MyFiles",
-			folder: {},
-		};
-		let createFolder = new Request("/me/drive/root/children", {
-			method: "POST",
-			headers: {
-				"Content-type": "application/json",
-			},
-			body: JSON.stringify(folderDetails),
-		});
-
-		let createFolderStep: BatchRequestStep = {
-			id: "1",
-			request: createFolder,
-		};
-
-		let uploadFileRequest1 = new Request(`/me/drive/root:/MyFiles/${file1.name}:/content`, {
-			method: "PUT",
-			headers: {
-				"Content-type": file1.type,
-			},
-			body: file1,
-		});
-
-		let uploadFileStep1: BatchRequestStep = {
-			id: "2",
-			request: uploadFileRequest1,
-			dependsOn: ["1"],
-		};
-
-		let uploadFileRequest2 = new Request(`/me/drive/root:/MyFiles/${file2.name}:/content`, {
-			method: "PUT",
-			headers: {
-				"Content-type": file2.type,
-			},
-			body: file2,
-		});
-
-		let uploadFileStep2: BatchRequestStep = {
-			id: "3",
-			request: uploadFileRequest2,
-			dependsOn: ["1"],
-		};
-
-		let batchRequestContent = new MicrosoftGraph.BatchRequestContent([createFolderStep, uploadFileStep1, uploadFileStep2]);
-
-		let content = await batchRequestContent.getContent();
-
-		let response = await client.api("/$batch").post(content);
-		let batchResponseContent = new MicrosoftGraph.BatchResponseContent(response);
-		console.log(batchResponseContent.getResponses());
-	} catch (error) {
-		console.error(error);
-	}
-};
-```
-
----
-
-## Limitations of Batch
-
-Refer, [JSON Batching](https://developer.microsoft.com/en-us/graph/docs/concepts/json_batching), [Known Issues](https://developer.microsoft.com/en-us/graph/docs/concepts/known_issues#json-batching) documents for current constraints in the batching
+<!-- markdownlint-enable MD024 -->
