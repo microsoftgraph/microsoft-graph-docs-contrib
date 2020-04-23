@@ -1,6 +1,6 @@
 ---
 title: "Create openShift"
-description: "Create an instance of openshift object."
+description: "Create an instance of openShift object."
 localization_priority: Normal
 author: "akumar39"
 ms.prod: "microsoft-teams"
@@ -11,7 +11,7 @@ doc_type: "apiPageType"
 
 Namespace: microsoft.graph
 
-Create an instance of an [openshift](../resources/openshift.md) object.
+Create an instance of an [openShift](../resources/openshift.md) object.
 
 ## Permissions
 
@@ -42,11 +42,11 @@ POST /teams/{id}/schedule/openShifts
 
 ## Request body
 
-Provide the new [openshift](../resources/openshift.md) object in the request body for this method.
+Provide the new [openShift](../resources/openshift.md) object in the request body for this method.
 
 ## Response
 
-If successful, this method returns a `200 OK` response code and the requested [openShift](../resources/openshift.md) object in the response body.
+If successful, this method returns a `200 OK` response code and the created [openShift](../resources/openshift.md) object in the response body.
 
 ## Examples
 
