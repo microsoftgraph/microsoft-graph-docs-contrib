@@ -16,17 +16,17 @@ For a summary of the value of these API changes, as well as recent tools, compon
 #### Identity and access (Azure AD)
 | **Change type** | **Version**   | **Description**                          |
 | :-------------- | :------------ | :--------------------------------------- |
-| Addition | beta | Added the connector entity and the following actions: <br/> Get Connector <br/> List connectorGroup |
-| Addition | beta | Added the ConnectorGroup entity and the following actions: Get connectorGroup <br/> Assign an application <br/> List applications <br/> Add connector <br/> List connectors <br/> Update connectorGroup <br/> Delete connectorGroup |
-| Addition | beta | Added the OnPremisesPublishing entity. |
-| Addition | beta | Added the OnPremisesPublishingSingleSignOn entity. |
-| Addition | beta | Added Verifiedcustomdomaincertificatesmetadata entity.|
-| Addition | beta | Added the kerberosSignOnSettings entity. |
-| Change | beta | Changed in the onpremisesagent,  onpremisesagentgroup, and publishedresource entity the publishingType value from **appProxy** to **applicationProxy**. |
-| Addition | beta | Added the **isEnabled** property to the onPremisesPublishingProfile entity. |
-| Addition | beta | Added **connector** and **connectorGroup** as navigation property to the OnPremisesPublishingProfile entity. |
-| Addition | beta | Added the **onPremisesPublishing** property to application entity. |
-| Addition | beta | Added the **OnPremisesPublishing** property to Update Application. |
+| Addition | beta | Added the [connector](/graph/api/resources/connector?view=graph-rest-beta) entity and the following actions: <br/> [Get Connector](/graph/api/connector-get?view=graph-rest-beta) <br/> [List connectorGroup](/graph/api/connector-list?view=graph-rest-beta) |
+| Addition | beta | Added the [connectorGroup](/graph/api/resources/connectorgroup?view=graph-rest-beta) entity and the following actions: [Get connectorGroup](/graph/api/connectorgroup-get?view=graph-rest-beta) <br/> [Assign an application](/graph/api/connectorgroup-post-applications?view=graph-rest-beta) <br/> [List applications](/graph/api/connectorgroup-list-applications?view=graph-rest-beta)  <br/> [Add connector](/graph/api/connectorgroup-post-members?view=graph-rest-beta) <br/> [List connectors](/graph/api/connectorgroup-list-members?view=graph-rest-beta) <br/> [Update connectorGroup](/graph/api/connectorgroup-update?view=graph-rest-beta) <br/> [Delete connectorGroup](/graph/api/connectorgroup-delete?view=graph-rest-beta) |
+| Addition | beta | Added the [OnPremisesPublishing](/graph/api/resources/onpremisespublishing?view=graph-rest-beta) entity. |
+| Addition | beta | Added the [OnPremisesPublishingSingleSignOn](/graph/api/resources/onpremisespublishingsinglesignon?view=graph-rest-beta) entity. |
+| Addition | beta | Added [verifiedCustomDomainCertificatesMetadata](/graph/api/resources/verifiedcustomdomaincertificatesmetadata?view=graph-rest-beta) entity.|
+| Addition | beta | Added the [kerberosSignOnSettings](/graph/api/resources/kerberossignonsettings?view=graph-rest-beta) entity. |
+| Change | beta | Changed in the [onPremisesAgent](/graph/api/resources/onpremisesagent?view=graph-rest-beta),  [onPremisesAgentGroup](/graph/api/resources/onpremisesagentgroup?view=graph-rest-beta), and [publishedResource](/graph/api/resources/publishedresource?view=graph-rest-beta) entity the publishingType value from **appProxy** to **applicationProxy**. |
+| Addition | beta | Added the **isEnabled** property to the [onPremisesPublishingProfile](/graph/api/resources/onpremisespublishingprofile?view=graph-rest-beta) entity. |
+| Addition | beta | Added [connector](/graph/api/resources/connector?view=graph-rest-beta) and [connectorGroup](/graph/api/resources/connectorgroup?view=graph-rest-beta) as navigation property to the OnPremisesPublishingProfile entity. |
+| Addition | beta | Added the **onPremisesPublishing** property to [application](/graph/api/resources/application?view=graph-rest-beta entity. |
+| Addition | beta | Added the **OnPremisesPublishing** property to [Update Application](/graph/api/application-update?view=graph-rest-beta). |
 
 ## April 2020
 
