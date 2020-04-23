@@ -16,8 +16,7 @@ This example demonstrates iterating over all the messages in a user's mailbox.
 > [!TIP]
 > This example sets a small page size using the `top` parameter for demonstration purposes. You can set the page size up to 999 to minimize the number of requests that are necessary.
 
-<!-- markdownlint-disable MD025 -->
-# [C#](#tab/csharp)
+### [C#](#tab/csharp)
 
 ```csharp
 var messages = await graphClient.Me.Messages
@@ -38,7 +37,7 @@ var pageIterator = PageIterator<Message>
 await pageIterator.IterateAsync();
 ```
 
-# [TypeScript](#tab/typeScript)
+### [TypeScript](#tab/typeScript)
 
 ```typescript
 // Makes request to fetch mails list.
@@ -63,14 +62,13 @@ await pageIterator.iterate();
 ```
 
 ---
-<!-- markdownlint-enable MD025 -->
 
 ## Stopping and Resuming the iteration
 
 Some scenarios require stopping the iteration process in order to perform other actions. It is possible to pause the iteration by returning `false` from the iteration callback. Iteration can be resumed by calling the `resume` method on the **PageIterator**.
 
-<!-- markdownlint-disable MD025 MD024 -->
-# [C#](#tab/csharp)
+<!-- markdownlint-disable MD024 -->
+### [C#](#tab/csharp)
 
 ```csharp
 int count = 0;
@@ -106,7 +104,7 @@ while (pageIterator.State != PagingState.Complete)
 }
 ```
 
-# [TypeScript](#tab/typeScript)
+### [TypeScript](#tab/typeScript)
 
 ```typescript
 let count: number = 0;
@@ -140,4 +138,4 @@ while (!pageIterator.isComplete()) {
 ```
 
 ---
-<!-- markdownlint-enable MD025 MD024 -->
+<!-- markdownlint-enable MD024 -->

@@ -9,8 +9,7 @@ author: DarrelMiller
 
 In order to change the default behavior Graph SDK client, you can create a customized native client library and pass it into the constructor of the service library client. This provides the opportunity to configure the native library with the desired parameters and middleware pipeline. Middleware components can be removed and added. It is important to note the order of execution of middleware components is significant.
 
-<!-- markdownlint-disable MD025 -->
-# [C#](#tab/csharp)
+## [C#](#tab/csharp)
 
 ```csharp
 var handlers = GraphClientFactory.CreateDefaultHandlers(authProvider);
@@ -33,7 +32,7 @@ var messages = await customGraphClient.Me.Messages.Request()
     .GetAsync();
 ```
 
-# [TypeScript](#tab/typeScript)
+## [TypeScript](#tab/typeScript)
 
 ```typescript
 // Create a custom auth provider
@@ -64,7 +63,7 @@ let response: PageCollection = await client
   .get();
 ```
 
-## SimpleAuthProvider.ts
+### SimpleAuthProvider.ts
 
 ```typescript
 import { AuthenticationProvider } from "@microsoft/microsoft-graph-client";
@@ -82,7 +81,7 @@ export default class SimpleAuthProvider implements AuthenticationProvider {
 }
 ```
 
-## CustomLoggingHandler.ts
+### CustomLoggingHandler.ts
 
 ```typescript
 import { Context, Middleware } from "@microsoft/microsoft-graph-client";
@@ -101,4 +100,3 @@ export default class CustomLoggingHandler implements Middleware {
 ```
 
 ---
-<!-- markdownlint-enable MD025 -->
