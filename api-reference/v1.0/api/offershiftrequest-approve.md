@@ -1,6 +1,6 @@
 ---
 title: "offerShiftRequest: approve"
-description: "Approve an offershiftrequest object."
+description: "Approve an offerShiftRequest object."
 localization_priority: Normal
 author: "akumar39"
 ms.prod: "microsoft-teams"
@@ -11,7 +11,7 @@ doc_type: "apiPageType"
 
 Namespace: microsoft.graph
 
-Approve an [offershiftrequest](../resources/offershiftrequest.md) object.
+Approve an [offerShiftRequest](../resources/offershiftrequest.md) object.
 
 ## Permissions
 
