@@ -10281,6 +10281,18 @@
           href: api/printershare-update.md
         - name: Delete
           href: api/printershare-delete.md
+        - name: List allowedUsers
+          href: api/printershare-list-allowedusers.md
+        - name: Add allowedUser
+          href: api/printershare-post-allowedusers.md
+        - name: Remove allowedUser
+          href: api/printershare-delete-alloweduser.md
+        - name: List allowedGroups
+          href: api/printershare-list-allowedgroups.md
+        - name: Add allowedGroup
+          href: api/printershare-post-allowedgroups.md
+        - name: Remove allowedGroup
+          href: api/printershare-delete-allowedgroup.md
       - name: Reports
         items:
         - name: Organized by printer

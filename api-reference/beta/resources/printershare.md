@@ -23,12 +23,12 @@ Represents a printer that is intended to be discoverable by users and printing a
 | [Get printerShare](../api/printershare-get.md) | [printerShare](printershare.md) | Read properties and relationships of a printerShare object. |
 | [Update](../api/printershare-update.md) | [printerShare](printershare.md) | Update a printerShare object. |
 | [Delete](../api/printershare-delete.md) | None | Unshare a printer. |
-| [List allowedUsers](../api/printer-list-allowedusers.md) | [userIdentity](useridentity.md) collection | Retrieve a list of users who have been granted access to submit print jobs to the associated printer share. |
-| [Add allowedUser](../api/printer-post-allowedusers.md) | None | Grant the specified user access to submit print jobs to the associated printer share. |
-| [Remove allowedUser](../api/printer-delete-alloweduser.md) | None | Revoke printer share access from the specified user. |
-| [List allowedGroups](../api/printer-list-allowedgroups.md) | [identity](identity.md) collection | Retrieve a list of groups which have been granted access to submit print jobs to the associated printer share. |
-| [Add allowedGroup](../api/printer-post-allowedgroups.md) | None | Grant the specified group access to submit print jobs to the associated printer share. |
-| [Remove allowedGroup](../api/printer-delete-allowedgroup.md) | None | Revoke printer share access from the specified group. |
+| [List allowedUsers](../api/printershare-list-allowedusers.md) | [userIdentity](useridentity.md) collection | Retrieve a list of users who have been granted access to submit print jobs to the associated printer share. |
+| [Add allowedUser](../api/printershare-post-allowedusers.md) | None | Grant the specified user access to submit print jobs to the associated printer share. |
+| [Remove allowedUser](../api/printershare-delete-alloweduser.md) | None | Revoke printer share access from the specified user. |
+| [List allowedGroups](../api/printershare-list-allowedgroups.md) | [identity](identity.md) collection | Retrieve a list of groups which have been granted access to submit print jobs to the associated printer share. |
+| [Add allowedGroup](../api/printershare-post-allowedgroups.md) | None | Grant the specified group access to submit print jobs to the associated printer share. |
+| [Remove allowedGroup](../api/printershare-delete-allowedgroup.md) | None | Revoke printer share access from the specified group. |
 
 ## Properties
 | Property     | Type        | Description |
