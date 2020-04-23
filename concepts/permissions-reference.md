@@ -1799,6 +1799,56 @@ Threat assessment permissions are valid only on work or school accounts.
 
 ---
 
+## Universal Print permissions
+
+#### Delegated permissions
+
+|   Permission    |  Display String   |  Description | Admin Consent Required | Microsoft Account supported |
+|:----------------|:------------------|:-------------|:-----------------------|:--------------|
+| _Printer.Create_ | Create printers | Allows the application to create (register) printers on behalf of the signed-in user. | Yes | No |
+| _Printer.FullControl.All_ | Create (register), read, update, and create (unregister) printers | Allows the application to create (register), read, update, and delete (unregister) printers on behalf of the signed-in user. | Yes | No |
+| _Printer.Read.All_ | Read printers | Allows the application to read printers on behalf of the signed-in user. | Yes | No |
+| _Printer.ReadWrite.All_ | Read and update printers | Allows the application to read and update printers on behalf of the signed-in user. Does not allow creating (registering) or deleting (unregistering) printers. | Yes | No |
+| _PrinterShare.Read.All_ | Read printer shares | Allows the application to read printer shares on behalf of the signed-in user. | No | No |
+| _PrinterShare.ReadWrite.All_ | Read and update printer shares | Allows the application to read and update printer shares on behalf of the signed-in user. | Yes | No |
+| _PrintJob.Read_ | Read the signed-in user's print jobs | Allows the application to read the metadata and payload of print jobs you created. | No | No |
+| _PrintJob.Read.All_ | Read print jobs | Allows the application to read the metadata and payload of print jobs on behalf of the signed-in user. | Yes | No |
+| _PrintJob.ReadBasic_ | Read basic information of the signed-in user's print jobs | Allows the application to read the metadata of print jobs that the signed-in user created. | No | No |
+| _PrintJob.ReadBasic.All_ | Read basic information of print jobs | Allows the application to read the metadata of print jobs on behalf of the signed-in user. | Yes | No |
+| _PrintJob.ReadWrite_ | Read and update the signed-in user's print jobs | Allows the application to read and update the metadata and payload of print jobs that the signed-in user created. | No | No |
+| _PrintJob.ReadWrite.All_ | Read and update print jobs | Allows the application to read and update the metadata and payload of print jobs on behalf of the signed-in user. | Yes | No |
+| _PrintJob.ReadWriteBasic_ | Read and write basic information of the signed-in user's print jobs | Allows the application to read and update the metadata of print jobs that the signed-in user created. | No | No |
+| _PrintJob.ReadWriteBasic.All_ | Read and write basic information of print jobs | Allows the application to read and update the metadata of print jobs on behalf of the signed-in user. | Yes | No |
+
+#### Application permissions
+
+|   Permission    |  Display String   |  Description | Admin Consent Required |
+|:----------------|:------------------|:-------------|:-----------------------|
+| _Printer.Read.All_ | Read printers | Allows the application to read printers without a signed-in user. | Yes |
+| _Printer.ReadWrite.All_ | Read and update printers | Allows the application to read and update printers without a signed-in user. | Yes |
+| _PrintJob.Manage.All_ | Perform advanced operations on print jobs | Allows the application to perform advanced operations like redirecting a print job to another printer without a signed-in user. Also allows the application to read and update the metadata of print jobs. | Yes |
+| _PrintJob.Read.All_ | Read print jobs | Allows the application to read the metadata and payload of print jobs without a signed-in user. | Yes |
+| _PrintJob.ReadBasic.All_ | Read basic information for print jobs | Allows the application to read the metadata of print jobs without a signed-in user. | Yes |
+| _PrintJob.ReadWrite.All_ | Read and write print jobs | Allows the application to read and update the metadata and payload of print jobs without a signed-in user. | Yes |
+| _PrintJob.ReadWriteBasic.All_ | Read and write basic information for print jobs | Allows the application to read and update the metadata of print jobs without a signed-in user. | Yes |
+| _PrintTaskDefinition.ReadWrite.All_ | Read, write and update print task definitions | Allows the application to read, write and update print task definitions without a signed-in user. | Yes |
+
+### Remarks
+
+Threat assessment permissions are valid only on work or school accounts.
+
+### Example usage
+
+#### Delegated
+
+* _ThreatAssessment.ReadWrite.All_: Read and write threat assessment requests (`POST /informationProtection/threatAssessmentRequests`)
+
+#### Application
+
+* _ThreatAssessment.Read.All_: Read threat assessment requests (`GET /informationProtection/threatAssessmentRequests`)
+
+---
+
 ## User permissions
 
 #### Delegated permissions
