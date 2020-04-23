@@ -41,7 +41,7 @@ POST /teams/{teamId}/schedule/offerShiftRequests
 | Content-type | application/json. Required. |
 
 ## Request body
-Provide the new [offershiftrequest](../resources/offershiftrequest.md) object in the request body for this method.
+Provide the new [offerShiftRequest](../resources/offershiftrequest.md) object in the request body for this method.
 
 ## Response
 
