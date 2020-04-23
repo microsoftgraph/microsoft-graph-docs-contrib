@@ -149,7 +149,7 @@ and [polling requirements](/graph/api/resources/teams-api-overview#polling-requi
 
 The following limits apply to any request on `/subscriptions`.
 
-| Operation                 | Limit per app per tenant     | Limit per tenant accross all apps |
+| Operation                 | Limit per app per tenant     | Limit per app accross all tenants |
 |---------------------------|------------------------------|-----------------------------------|
 | POST, PUT, DELETE, PATCH  | 1000 requests per 20 seconds | 2000 requests per 20 seconds      |
 | All other HTTP methods    | 5000 requests per 20 seconds | 10000 requests per 20 seconds     |
