@@ -11,12 +11,26 @@ This changelog covers specific API-level changes in Microsoft Graph v1.0 and bet
 
 For a summary of the value of these API changes, as well as recent tools, components, guidance, and tutorial additions, see [What's new in Microsoft Graph](whats-new-overview.md).
 
+## May 2020
+
+#### Identity and access (Azure AD)
+| **Change type** | **Version**   | **Description**                          |
+| :-------------- | :------------ | :--------------------------------------- |
+| Addition | beta | Added the connector entity and the following actions: <br/> Get Connector <br/> List connectorGroup |
+| Addition | beta | Added the ConnectorGroup entity and the following actions: Get connectorGroup <br/> Assign an application <br/> List applications <br/> Add connector <br/> List connectors <br/> Update connectorGroup <br/> Delete connectorGroup |
+| Addition | beta | Added the OnPremisesPublishing entity. |
+| Addition | beta | Added the OnPremisesPublishingSingleSignOn entity. |
+| Addition | beta | Added Verifiedcustomdomaincertificatesmetadata entity.|
+| Addition | beta | Added the kerberosSignOnSettings entity. |
+| Change | beta | Changed in the onpremisesagent,  onpremisesagentgroup, and publishedresource entity the publishingType value from **appProxy** to **applicationProxy**. |
+| Addition | beta | Added the **isEnabled** property to the onPremisesPublishingProfile entity. |
+| Addition | beta | Added **connector** and **connectorGroup** as navigation property to the OnPremisesPublishingProfile entity. |
+| Addition | beta | Added the **onPremisesPublishing** property to application entity. |
+| Addition | beta | Added the **OnPremisesPublishing** property to Update Application. |
+
 ## April 2020
 
 ### Calendar
-
-| **Change type** | **Version**   | **Description**                          |
-| :-------------- | :------------ | :--------------------------------------- |
 |Addition | v1.0 | Added new entity [calendarPermission](/graph/api/resources/calendarpermission?view=graph-rest-1.0). |
 |Addition | v1.0 | Added [get](/graph/api/calendarpermission-get?view=graph-rest-1.0), [update](/graph/api/calendarpermission-update?view=graph-rest-1.0) and [delete](/graph/api/calendarpermission-delete?view=graph-rest-1.0) APIs to manage [calendarPermission](/graph/api/resources/calendarpermission?view=graph-rest-1.0) resources on [calendar](/graph/api/resources/calendar?view=graph-rest-1.0). |
 |Addition | v1.0 | Added new complex type [onlineMeetingInfo](/graph/api/resources/onlinemeetinginfo?view=graph-rest-1.0). |
