@@ -22,9 +22,9 @@ In addition to the following permissions, the user's tenant must have an active 
 
 |Permission type | Permissions (from least to most privileged) |
 |:---------------|:--------------------------------------------|
-|Delegated (work or school account)| Users.Read.All |
+|Delegated (work or school account)| Printer.Read.All, Printer.ReadWrite.All, Printer.FullControl.All |
 |Delegated (personal Microsoft account)|Not Supported.|
-|Application|Not Supported.|
+|Application| Printer.ReadWrite.All |
 
 ## HTTP request
 <!-- { "blockType": "ignored" } -->

@@ -20,9 +20,9 @@ One of the following permissions is required to call this API. To learn more, in
 
 |Permission type | Permissions (from least to most privileged) |
 |:---------------|:--------------------------------------------|
-|Delegated (work or school account)| Users.Read.All |
+|Delegated (work or school account)| Printer.Read.All, Printer.ReadWrite.All |
 |Delegated (personal Microsoft account)|Not Supported.|
-|Application|Not Supported.|
+|Application| Printer.Read.All, Printer.ReadWrite.All |
 
 ## HTTP request
 <!-- { "blockType": "ignored" } -->
