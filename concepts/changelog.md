@@ -28,8 +28,6 @@ For a summary of the value of these API changes, as well as recent tools, compon
 
 ### Cloud printing
 
-Added allowedGroups and allowedUsers properties to the `printerShare` resource.
-
 | **Change type** | **Version**   | **Description**                          |
 |:---|:---|:---|
 | Addition | beta | Added **allowedGroups** and **allowedUsers** properties to the [printerShare](/graph/api/resources/printershare) entity.|
