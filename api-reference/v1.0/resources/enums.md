@@ -2,10 +2,14 @@
 title: "Enum values"
 description: "Microsoft Graph enumeration values."
 localization_priority: Normal
-author: ""
-ms.prod: ""
+ms.prod: "non-product-specific"
+author: "MSGraphDocsvTeam"
 doc_type: enumPageType
 ---
+
+# Enum values
+
+Namespace: microsoft.graph
 
 ### contactRelationship values
 
@@ -627,6 +631,26 @@ Possible values for user account types (group membership), per Windows definitio
 | generic
 | unknownFutureValue
 
+### riskEventType values
+
+|Member|
+|:---|
+|unlikelyTravel|
+|anonymizedIPAddress|
+|maliciousIPAddress|
+|unfamiliarFeatures|
+|malwareInfectedIPAddress|
+|suspiciousIPAddress|
+|leakedCredentials|
+|investigationsThreatIntelligence|
+|generic|
+|adminConfirmedUserCompromised|
+|mcasImpossibleTravel|
+|mcasSuspiciousInboxManipulationRules|
+|investigationsThreatIntelligenceSigninLinked|
+|maliciousIPAddressValidCredentialsBlockedIP|
+|unknownFutureValue|
+
 ### riskLevel values
 
 | Member
@@ -659,6 +683,36 @@ Possible values for user account types (group membership), per Windows definitio
 |immutableEntryId|
 |restId|
 |restImmutableEntryId|
+
+### onlineMeetingProviderType values
+
+|Member|
+|:---|
+|unknown|
+|skypeForBusiness|
+|skypeForConsumer|
+|teamsForBusiness|
+
+### delegateMeetingMessageDeliveryOptions values
+
+|Member|
+|:---|
+|sendToDelegateAndInformationToPrincipal|
+|sendToDelegateAndPrincipal|
+|sendToDelegateOnly|
+
+### calendarRoleType values
+
+|Member|
+|:---|
+|none|
+|freeBusyRead|
+|limitedRead|
+|read|
+|write|
+|delegateWithoutPrivateEventAccess|
+|delegateWithPrivateEventAccess|
+|custom|
 
 ### threatAssessmentContentType values
 
@@ -727,3 +781,4 @@ Possible values for user account types (group membership), per Windows definitio
 | notJunk               | 13    | Allow due to not junk.              |
 | junk                  | 14    | Blocked due to junk.                |
 | unknownFutureValue    | 15    | A sentinel member.                  |
+
