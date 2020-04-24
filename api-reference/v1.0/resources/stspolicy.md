@@ -7,7 +7,7 @@ ms.prod: "microsoft-identity-platform"
 doc_type: "resourcePageType"
 ---
 
-# policyBase resource type
+# stsPolicy resource type
 
 Namespace: microsoft.graph
 
