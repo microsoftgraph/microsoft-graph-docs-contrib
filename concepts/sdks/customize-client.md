@@ -7,7 +7,7 @@ author: DarrelMiller
 
 # Customize the Graph Service Client
 
-In order to change the default behavior Graph SDK client, you can create a customized native client library and pass it into the constructor of the service library client. This provides the opportunity to configure the native library with the desired parameters and middleware pipeline. Middleware components can be removed and added. It is important to note the order of execution of middleware components is significant.
+The Microsoft Graph SDK client configures a default set of middleware that allows the SDK to communicate with the Microsoft Graph endpoints. This default set is customizable, allowing you to change the behavior of the client. For example, you can insert customized logging, or add a test handler to simulate specific scenarios.Middleware components can be removed and added. It is important to note the order of execution of middleware components is significant.
 
 ## [C#](#tab/csharp)
 
@@ -20,6 +20,7 @@ var compressionHandler =
 handlers.Remove(compressionHandler);
 
 // Add a new one
+// ChaosHandler simulates random server failures
 handlers.Add(new ChaosHandler());
 
 var httpClient = GraphClientFactory.Create(handlers);

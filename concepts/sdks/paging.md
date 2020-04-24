@@ -7,7 +7,7 @@ author: DarrelMiller
 
 # Page through a collection
 
-For performance reasons, collections of entities are often split into pages and each page is returned with a URL to the next page. Sometimes, page granularity provided by the API does not match the requirements of the consumer. **PageIterator** simplifies consuming of paged collections. **PageIterator** handles enumerating the current page and requesting subsequent pages automatically.
+For performance reasons, collections of entities are often split into pages and each page is returned with a URL to the next page. The **PageIterator** class simplifies consuming of paged collections. **PageIterator** handles enumerating the current page and requesting subsequent pages automatically.
 
 ## Iterate over all the messages
 
