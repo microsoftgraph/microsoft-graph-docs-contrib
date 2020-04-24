@@ -59,7 +59,7 @@ interface MsalConfig {
 
 You must provide a `clientId` (to create a new `UserAgentApplication`).
 
-To learn more, see the [MSAL documentation](https://github.com/AzureAD/microsoft-authentication-library-for-js/wiki/MSAL-basics).
+To learn more about MSAL.js and for additional options you can use when initializing the MSAL library, see the [MSAL documentation](https://docs.microsoft.com/azure/active-directory/develop/msal-js-initializing-client-applications).
 
 ## Creating an app/client ID
 
