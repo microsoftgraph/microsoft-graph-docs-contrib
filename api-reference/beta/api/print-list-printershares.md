@@ -36,7 +36,7 @@ GET /print/printerShares
 This method supports some of the OData query parameters to help customize the response. For general information, see [OData query parameters](/graph/query-parameters).
 
 ### Exceptions
-* Some operators are not supported: `$count`, `$orderby`, `$search`
+Some operators are not supported: `$count`, `$orderby`, `$search`.
 
 ## Request headers
 | Name      |Description|
