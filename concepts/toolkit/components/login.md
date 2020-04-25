@@ -34,7 +34,7 @@ let loginControl = document.getElementById('myLoginControl');
 loginControl.userDetails = {
     displayName: 'Nikola Metulev',
     email: 'nikola@contoso.com',
-    profileImage: 'url'
+    personImage: 'url'
 }
 ```
 
