@@ -38,6 +38,13 @@ For a summary of the value of these API changes, as well as recent tools, compon
 | Addition | beta | Added the **profileCardProperties** navigation property to the **organizationSettings** entity. |
 | Addition | beta | Added the **profileCardProperty** entity and the following operations: <br/> [List](/graph/api/organizationsettings-list-profilecardproperties) <br/> [Create](/graph/api/organizationsettings-post-profilecardproperties) <br/> [Get profileCardProperty](/graph/api/profilecardproperty-get?view=graph-rest-beta) entity. <br/> [Update profileCardProperty](/graph/api/profilecardproperty-update?view=graph-rest-beta) <br/> [Delete](/graph/api/profilecardproperty-delete) |
 
+### Identity and access (Azure AD) | Conditional access
+
+| **Change type** | **Version** | **Description**                  |
+|:----------------|:------------|:-----------------------------------------|
+| Addition | beta | Added the **userRiskLevels** property to the [conditionalaccessconditionset](/graph/api/resources/conditionalaccessconditionset?view=graph-rest-beta) entity. |
+| Addition | beta | Added the **passwordChange** grant control to the [conditionalaccessgrantcontrols](/graph/api/resources/conditionalaccessgrantcontrols?view=graph-rest-beta) entity. |
+
 ## June 2020
 
 ### Calendar
@@ -398,16 +405,9 @@ Added new APIs and resources for subscribing to and retrieving call records from
 
 | **Change type** | **Version** | **Description**                          |
 | :-------------- | :---------- | :--------------------------------------- |
-| Addition        | v1.0        | Added the [check in](/graph/api/driveitem-checkin?view=graph-rest-1.0) and [check out](/graph/api/driveitem-checkin?view=graph-rest-1.0) actions on the [driveItem](/graph/api/resources/driveitem?view=graph-rest-1.0) resource. |
-| **Change type** | **Version**   | **Description**                          |
-| :-------------- | :------------ | :--------------------------------------- |
-| Addition        | v1.0        | Added the **expirationDateTime**, **password**, and **message** properties on the [createLink](/graph/api/driveitem-createlink?view=graph-rest-1.0) action on a [driveItem](/graph/api/resources/driveitem?view=graph-rest-1.0) resource. |
-| Addition        | v1.0        | Added the **preventsDownload** property on the [sharingLink](/graph/api/resources/sharinglink?view=graph-rest-1.0) resource. |
-| Addition        | v1.0        | Added the **permission** property on the [sharedDriveItem](/graph/api/resources/shareddriveitem?view=graph-rest-1.0) resource. |
-| Addition        | v1.0        | Added the **expirationDateTime**, **hasPassword**, and **grantedToIdentities** properties on the [permission](/graph/api/resources/permission?view=graph-rest-1.0) resource. |
-| Addition        | v1.0        | Added the **expirationDateTime**, and **password** properties on the [invite](/graph/api/driveitem-invite?view=graph-rest-1.0) action on a [driveItem](/graph/api/resources/driveitem?view=graph-rest-1.0) resource. |
+| Addition        | v1.0        | Added the [check in](/graph/api/driveitem-checkin?view=graph-rest-v1.0) and [check out](/graph/api/driveitem-checkin?view=graph-rest-v1.0) actions on the [driveItem](/graph/api/resources/driveitem?view=graph-rest-v1.0) resource. |
 
-### Identity and access
+### Identity and access (Azure AD)
 
 | **Change type** | **Version**   | **Description** |
 |:---|:---|:---|
