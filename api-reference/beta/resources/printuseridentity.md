@@ -7,13 +7,13 @@ ms.prod: universal-print
 doc_type: resourcePageType
 ---
 
-# printer resource type
+# printUserIdentity resource type
 
 Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Represents a user identity within the Universal Print service. Maps to an [Azure Active Directory (Azure AD) user](../api/user-get.md).
+Represents a user identity within the Universal Print service. Maps to an [Azure Active Directory (Azure AD) user](user.md).
 
 ## Properties
 | Property     | Type        | Description |
