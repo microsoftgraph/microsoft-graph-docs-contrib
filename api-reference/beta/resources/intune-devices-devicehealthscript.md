@@ -1,13 +1,15 @@
 ---
 title: "deviceHealthScript resource type"
 description: "Intune will provide customer the ability to run their Powershell Health scripts (remediation + detection) on the enrolled windows 10 Azure Active Directory joined devices."
-author: "davidmu1"
+author: "dougeby"
 localization_priority: Normal
 ms.prod: "Intune"
 doc_type: resourcePageType
 ---
 
 # deviceHealthScript resource type
+
+Namespace: microsoft.graph
 
 > **Important:** Microsoft Graph APIs under the /beta version are subject to change; production use is not supported.
 
@@ -29,6 +31,7 @@ Intune will provide customer the ability to run their Powershell Health scripts 
 |[enableGlobalScripts action](../api/intune-devices-devicehealthscript-enableglobalscripts.md)|None|Not yet documented|
 |[areGlobalScriptsAvailable function](../api/intune-devices-devicehealthscript-areglobalscriptsavailable.md)|[globalDeviceHealthScriptState](../resources/intune-devices-globaldevicehealthscriptstate.md)|Not yet documented|
 |[getRemediationSummary function](../api/intune-devices-devicehealthscript-getremediationsummary.md)|[deviceHealthScriptRemediationSummary](../resources/intune-devices-devicehealthscriptremediationsummary.md)|Not yet documented|
+|[getRemediationHistory function](../api/intune-devices-devicehealthscript-getremediationhistory.md)|[deviceHealthScriptRemediationHistory](../resources/intune-devices-devicehealthscriptremediationhistory.md)|Function to get the number of remediations by a device health scripts|
 
 ## Properties
 |Property|Type|Description|

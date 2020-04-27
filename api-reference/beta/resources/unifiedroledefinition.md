@@ -2,7 +2,7 @@
 title: "unifiedRoleDefinition resource type"
 description: "A unified role definition is a collection of permissions"
 localization_priority: Normal
-author: "davidmu1"
+author: "abhijeetsinha"
 ms.prod: "microsoft-identity-platform"
 doc_type: "resourcePageType"
 ---
