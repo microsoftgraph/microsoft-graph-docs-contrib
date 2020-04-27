@@ -2,7 +2,7 @@
 title: "List tokenIssuancePolicy"
 description: "Get a list of tokenIssuancePolicy objects."
 localization_priority: Normal
-author: "dkershaw10"
+author: "luleonpla"
 ms.prod: "microsoft-identity-platform"
 doc_type: "apiPageType"
 ---

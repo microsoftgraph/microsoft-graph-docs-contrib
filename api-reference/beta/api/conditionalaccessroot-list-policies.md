@@ -2,7 +2,7 @@
 title: "List policies"
 description: "Retrieve a list of conditionalAccessPolicy objects."
 localization_priority: Normal
-author: "dkershaw10"
+author: "videor"
 ms.prod: "microsoft-identity-platform"
 doc_type: apiPageType
 ---
