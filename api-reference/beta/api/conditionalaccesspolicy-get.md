@@ -167,11 +167,12 @@ Content-type: application/json
                 "d2136c9c-b049-47ae-b9cf-316e04ef7198"
             ]
         },
-        "deviceStates": {
-            "includeStates": [
+        "deviceStates": null,
+        "devices": {
+            "includeDeviceStates": [
                 "All"
             ],
-            "excludeStates": [
+            "excludeDeviceStates": [
                 "Compliant"
             ]
         }

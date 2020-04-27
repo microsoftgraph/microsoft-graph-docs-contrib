@@ -2,7 +2,7 @@
 title: "Get directoryAudit"
 description: "Describes the get method of the directoryAudit resource (entity) from the Microsoft Graph API (beta version)."
 localization_priority: Normal
-author: "cloudhandler"
+author: "SarahBar"
 ms.prod: "microsoft-identity-platform"
 doc_type: apiPageType
 ---

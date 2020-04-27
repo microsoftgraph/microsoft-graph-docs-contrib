@@ -100,7 +100,7 @@ Delta query is currently supported for the following resources.
 
 | **Resource collection**                                        | **API**                                                                                                                                                                                |
 | :------------------------------------------------------------- | :------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| Applications (preview)                                         | [delta](/graph/api/application-delta) function of the [application](/graph/api/resources/application) resource (preview)                     |
+| Applications                                         | [delta](/graph/api/application-delta) function of the [application](/graph/api/resources/application) resource                     |
 | Administrative units (preview)                                         | [delta](/graph/api/administrativeunit-delta) function of the [administrativeUnit](/graph/api/resources/administrativeunit) resource (preview)                     |
 | Chat messages in a channel (preview)                            | [delta](/graph/api/chatmessage-delta) function of the [chatMessage](/graph/api/resources/chatmessage) |
 | Classes (preview)                                              | [delta](/graph/api/educationclass-delta) function of the [educationClass](/graph/api/resources/educationclass) resource (preview)                     |
@@ -113,6 +113,7 @@ Delta query is currently supported for the following resources.
 | Mail folders                                                   | [delta](/graph/api/mailfolder-delta?view=graph-rest-1.0) function of the [mailFolder](/graph/api/resources/mailfolder?view=graph-rest-1.0) resource                                    |
 | Messages in a folder                                           | [delta](/graph/api/message-delta?view=graph-rest-1.0) function of the [message](/graph/api/resources/message?view=graph-rest-1.0) resource                                             |
 | Organizational contacts | [delta](/graph/api/orgcontact-delta?view=graph-rest-1.0) function of the [orgContact](/graph/api/resources/orgcontact?view=graph-rest-1.0) resource |
+| OAuth2PermissionGrants (preview) | [delta](/graph/api/oauth2permissiongrant-delta?view=graph-rest-beta) function of the [oauth2permissiongrant](/graph/api/resources/oauth2permissiongrant?view=graph-rest-beta) resource (preview) |
 | Personal contact folders                                       | [delta](/graph/api/contactfolder-delta?view=graph-rest-1.0) function of the [contactFolder](/graph/api/resources/contactfolder?view=graph-rest-1.0) resource                           |
 | Personal contacts in a folder                                  | [delta](/graph/api/contact-delta?view=graph-rest-1.0) function of the [contact](/graph/api/resources/contact?view=graph-rest-1.0) resource    
 | Planner items\*\* (preview)                                    | [delta](/graph/api/planneruser-list-delta) function of the all segment of [plannerUser](/graph/api/resources/planneruser) resource (preview)|                                         |
