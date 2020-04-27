@@ -40,7 +40,7 @@ GET /print/printerShares/{id}/allowedGroups
 ## Request body
 Do not supply a request body for this method.
 ## Response
-If successful, this method returns a `200 OK` response code and a collection of [identity](../resources/identity.md) objects in the response body.
+If successful, this method returns a `200 OK` response code and a collection of [printIdentity](../resources/printidentity.md) objects in the response body.
 ## Example
 ##### Request
 The following is an example of the request.
@@ -58,7 +58,7 @@ The following is an example of the response.
 <!-- {
   "blockType": "response",
   "truncated": true,
-  "@odata.type": "microsoft.graph.identity",
+  "@odata.type": "microsoft.graph.printIdentity",
   "isCollection": true
 } -->
 ```http
