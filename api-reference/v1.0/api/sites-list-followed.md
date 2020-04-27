@@ -22,7 +22,7 @@ One of the following permissions is required to call this API. To learn more, in
 |Delegated (personal Microsoft account) | Not supported.    |
 |Application | Sites.Read.All, Sites.ReadWrite.All |
 
-### Request
+## HTTP request
 
 This method is accessible only through OneDrive for Business.
 
