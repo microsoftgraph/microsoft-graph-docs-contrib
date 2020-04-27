@@ -394,6 +394,85 @@ Content-length: 1992
 }
 ```
 
+##### Request 4
+
+The fourth example shows expanding a series master event of a recurring series with exceptions and cancelled occurences. The request specifies a `$select` query parameter 
+to return specific properties. 
+
+
+# [HTTP](#tab/http)
+<!-- {
+  "blockType": "request",
+  "name": "get_event_seriesMaster_expansion"
+}-->
+```msgraph-interactive
+GET https://graph.microsoft.com/beta/me/events/AAMkADAGAADDdm4NAAA=/?$select=subject,start,end,occurrenceId,exceptionalOccurrences,cancelledOccurrences
+```
+# [C#](#tab/csharp)
+[!INCLUDE [sample-code](../includes/snippets/csharp/get-event-multiple-locations-csharp-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [JavaScript](#tab/javascript)
+[!INCLUDE [sample-code](../includes/snippets/javascript/get-event-multiple-locations-javascript-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Objective-C](#tab/objc)
+[!INCLUDE [sample-code](../includes/snippets/objc/get-event-multiple-locations-objc-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+---
+
+##### Response 4
+Here is an example of the response. The $select applies to series master event and all nested events in the exception occurrences. In case of cancelled occurrences, since the occurrence no longer exist, occurrenceId is returned in response
+
+<!-- {
+  "blockType": "response",
+  "name": "get_event_seriesMaster_expansion",
+  "truncated": true,
+  "@odata.type": "microsoft.graph.event"
+} -->
+```http
+HTTP/1.1 200 OK
+Content-type: application/json
+Content-length: 1992
+
+{
+  "@odata.context":"https://graph.microsoft.com/beta/$metadata#users('d1a2fae9-db66-4cc9-8133-2184c77af1b8')/events(subject,start,end,occurrenceId,exceptionalOccurrences,cancelledOccurrences)/$entity",
+  "@odata.etag":"W/\"y53lbKh6jkaxHzFwGhgyxgAAw5zhug==\"",
+  "id":"AAMkADAGAADDdm4NAAA=",
+  "subject": "Daily stand-up",
+    "cancelledOccurrences": [
+     "OID.AAMkADAGAADDdm4NAAA=.2020-04-30",
+     "OID.AAMkADAGAADDdm4NAAA=.2020-05-07",
+     "OID.AAMkADAGAADDdm4NAAA=.2020-05-14"
+    ],
+    "occurrenceId": null,
+    "start": {
+        "dateTime": "2020-04-23T11:30:00.0000000",
+        "timeZone": "UTC"
+    },
+    "end": {
+        "dateTime": "2020-04-23T12:00:00.0000000",
+        "timeZone": "UTC"
+    },
+    "exceptionalOccurrences": [
+        {
+            "id": "AAMkADM0ZGRhMjdjLTA==",
+            "Subject": "SM update 24",
+            "occurrenceId": "OID.AAMkADAGAADDdm4NAAA=.2020-05-21",
+            "start": {
+                "dateTime": "2020-05-21T11:30:00.0000000",
+                "timeZone": "UTC"
+            },
+            "end": {
+                "dateTime": "2020-05-21T12:00:00.0000000",
+                "timeZone": "UTC"
+            }
+        }
+    ]
+}
+```
+
 ## See also
 
 - [Add custom data to resources using extensions](/graph/extensibility-overview)
