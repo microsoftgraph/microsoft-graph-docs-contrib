@@ -24,15 +24,14 @@ Represents grant controls that must be fulfilled to pass the policy.
 | customAuthenticationFactors | String collection | List of custom controls IDs required by the policy. Learn more about custom controls here: https://docs.microsoft.com/azure/active-directory/conditional-access/controls#custom-controls-preview |
 | termsOfUse | String collection | List of [terms of use](agreement.md) IDs required by the policy. |
 
-## Special considerations when using `passwordChange` as a control
+### Special considerations when using `passwordChange` as a control
 
-1. `passwordChange` must be accompanied with `mfa` using and `AND` operator. This combination ensures the password will be updated in a secure way.
+Consider the following when you use the `passwordChange` control: 
 
-2. `passwordChange` must be used in a policy containing `userRiskLevels`: Our goal is to empower scenarios where users must use a secure change password to reset their user risk.
-
-3. The policy should target `all` applications, without any application excluded.
-
-4. The policy cannot contain any other condition.
+- `passwordChange` must be accompanied by `mfa` using and `AND` operator. This combination ensures that the password will be updated in a secure way.
+- `passwordChange` must be used in a policy containing `userRiskLevels`. This is designed to enable scenarios where users must use a secure change password to reset their user risk.
+- The policy should target `all` applications, and not exclude any applications.
+- The policy cannot contain any other condition.
 
 ## Relationships
 
