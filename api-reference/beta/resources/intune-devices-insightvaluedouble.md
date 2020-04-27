@@ -1,13 +1,15 @@
 ---
 title: "insightValueDouble resource type"
 description: "The value in an user experience analytics insight."
-author: "davidmu1"
+author: "dougeby"
 localization_priority: Normal
 ms.prod: "Intune"
 doc_type: resourcePageType
 ---
 
 # insightValueDouble resource type
+
+Namespace: microsoft.graph
 
 > **Important:** Microsoft Graph APIs under the /beta version are subject to change; production use is not supported.
 

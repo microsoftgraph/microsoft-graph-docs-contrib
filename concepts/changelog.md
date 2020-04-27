@@ -7,32 +7,117 @@ localization_priority: Priority
 
 # Changelog for Microsoft Graph
 
-This changelog covers what's changed in the Microsoft Graph API, including the v1.0 and beta endpoint Microsoft Graph APIs.
+This changelog covers specific API-level changes in Microsoft Graph v1.0 and beta.
 
-For details about known issues with Microsoft Graph APIs, see [Known issues](known-issues.md).
+For a summary of the value of these API changes, as well as recent tools, components, guidance, and tutorial additions, see [What's new in Microsoft Graph](whats-new-overview.md).
+
+## April 2020
+
+### Calendar
+
+| **Change type** | **Version**   | **Description**                          |
+| :-------------- | :------------ | :--------------------------------------- |
+|Addition | v1.0 | Added new entity [calendarPermission](/graph/api/resources/calendarpermission?view=graph-rest-1.0). |
+|Addition | v1.0 | Added [get](/graph/api/calendarpermission-get?view=graph-rest-1.0), [update](/graph/api/calendarpermission-update?view=graph-rest-1.0) and [delete](/graph/api/calendarpermission-delete?view=graph-rest-1.0) APIs to manage [calendarPermission](/graph/api/resources/calendarpermission?view=graph-rest-1.0) resources on [calendar](/graph/api/resources/calendar?view=graph-rest-1.0). |
+|Addition | v1.0 | Added new complex type [onlineMeetingInfo](/graph/api/resources/onlinemeetinginfo?view=graph-rest-1.0). |
+| Addition | v1.0 | Added the **isOnlineMeeting**, **onlineMeetingProvider** and **onlineMeeting** properties to the [event](/graph/api/resources/event?view=graph-rest-1.0) entity. **isOnlineMeeting** and **onlineMeetingProvider** are optional parameters to the [create](/graph/api/user-post-events?view=graph-rest-1.0) and [update](/graph/api/event-update?view=graph-rest-1.0) methods of **event**. |
+| Addition | v1.0 | Added the **defaultOnlineMeetingProviders** and **allowedOnlineMeetingProviders** properties to the [calendar](/graph/api/resources/calendar?view=graph-rest-1.0) entity. |
+| Addition | v1.0 | Added the **isTallyingResponses** property to the [calendar](/graph/api/resources/calendar?view=graph-rest-1.0) entity. |
+| Addition | v1.0 | Added the **isRemovable** property to the [calendar](/graph/api/resources/calendar?view=graph-rest-1.0) entity. |
+| Addition | v1.0 | Added the **delegateMeetingMessageDeliveryOptions** property to the [mailboxSettings](/graph/api/resources/mailboxSettings?view=graph-rest-1.0) entity. |
+
+### Devices and apps | Cloud printing
+
+| **Change type** | **Version**   | **Description**                          |
+|:---|:---|:---|
+| Addition | beta | Added **allowedGroups** and **allowedUsers** properties to the [printerShare](/graph/api/resources/printershare?view=graph-rest-beta) entity.|
+
+### Devices and apps | Corporate management (Intune)
+
+| **Change type** | **Version** | **Description** |
+|:---|:---|:---|
+|Addition|beta|Added new entities:<br/>[androidDeviceOwnerDerivedCredentialAuthenticationConfiguration](/graph/api/resources/intune-deviceconfig-androiddeviceownerderivedcredentialauthenticationconfiguration?view=graph-rest-beta)<br/>[appleExpeditedCheckinConfigurationBase](/graph/api/resources/intune-deviceconfig-appleexpeditedcheckinconfigurationbase?view=graph-rest-beta)<br/>[groupPolicyOperation](/graph/api/resources/intune-grouppolicy-grouppolicyoperation?view=graph-rest-beta)<br/>[groupPolicyUploadedDefinitionFile](/graph/api/resources/intune-grouppolicy-grouppolicyuploadeddefinitionfile?view=graph-rest-beta)<br/>[iosExpeditedCheckinConfiguration](/graph/api/resources/intune-deviceconfig-iosexpeditedcheckinconfiguration?view=graph-rest-beta)<br/>[userExperienceAnalyticsScoreHistory](/graph/api/resources/intune-devices-userexperienceanalyticsscorehistory?view=graph-rest-beta)<br/>|
+|Addition|beta|Added new complex types:<br/>[androidManagedStoreAppAssignmentSettings](/graph/api/resources/intune-apps-androidmanagedstoreappassignmentsettings?view=graph-rest-beta)<br/>[androidManagedStoreAppTrack](/graph/api/resources/intune-apps-androidmanagedstoreapptrack?view=graph-rest-beta)<br/>[appleAppListItem](/graph/api/resources/intune-deviceconfig-appleapplistitem?view=graph-rest-beta)<br/>[deviceHealthScriptRemediationHistory](/graph/api/resources/intune-devices-devicehealthscriptremediationhistory?view=graph-rest-beta)<br/>[deviceHealthScriptRemediationHistoryData](/graph/api/resources/intune-devices-devicehealthscriptremediationhistorydata?view=graph-rest-beta)<br/>[deviceManagementSettingAbstractImplementationConstraint](/graph/api/resources/intune-deviceintent-devicemanagementsettingabstractimplementationconstraint?view=graph-rest-beta)<br/>[groupPolicyUploadedLanguageFile](/graph/api/resources/intune-grouppolicy-grouppolicyuploadedlanguagefile?view=graph-rest-beta)<br/>|
+|Addition|beta|Added new enum types:<br/>[androidProfileApplicability](/graph/api/resources/intune-apps-androidprofileapplicability?view=graph-rest-beta)<br/>[groupPolicyOperationStatus](/graph/api/resources/intune-grouppolicy-grouppolicyoperationstatus?view=graph-rest-beta)<br/>[groupPolicyOperationType](/graph/api/resources/intune-grouppolicy-grouppolicyoperationtype?view=graph-rest-beta)<br/>[groupPolicyUploadedDefinitionFileStatus](/graph/api/resources/intune-grouppolicy-grouppolicyuploadeddefinitionfilestatus?view=graph-rest-beta)<br/>|
+|Addition|beta|Added the [getAvailableExtensionProperties](o:getAvailableExtensionProperties?view=graph-rest-beta) action|
+|Addition|beta|Added the [getObjectsById](o:getObjectsById?view=graph-rest-beta) action|
+|Addition|beta|Added the [addLanguageFiles](/graph/api/intune-grouppolicy-grouppolicyuploadeddefinitionfile-addlanguagefiles?view=graph-rest-beta) action on [groupPolicyUploadedDefinitionFile](/graph/api/resources/intune-grouppolicy-grouppolicyuploadeddefinitionfile?view=graph-rest-beta) |
+|Addition|beta|Added the [removeLanguageFiles](/graph/api/intune-grouppolicy-grouppolicyuploadeddefinitionfile-removelanguagefiles?view=graph-rest-beta) action on [groupPolicyUploadedDefinitionFile](/graph/api/resources/intune-grouppolicy-grouppolicyuploadeddefinitionfile?view=graph-rest-beta) |
+|Addition|beta|Added the [updateLanguageFiles](/graph/api/intune-grouppolicy-grouppolicyuploadeddefinitionfile-updatelanguagefiles?view=graph-rest-beta) action on [groupPolicyUploadedDefinitionFile](/graph/api/resources/intune-grouppolicy-grouppolicyuploadeddefinitionfile?view=graph-rest-beta) |
+|Addition|beta|Added the [uploadNewVersion](/graph/api/intune-grouppolicy-grouppolicyuploadeddefinitionfile-uploadnewversion?view=graph-rest-beta) action on [groupPolicyUploadedDefinitionFile](/graph/api/resources/intune-grouppolicy-grouppolicyuploadeddefinitionfile?view=graph-rest-beta) |
+|Addition|beta|Added the [remove](/graph/api/intune-grouppolicy-grouppolicyuploadeddefinitionfile-remove?view=graph-rest-beta) action on [groupPolicyUploadedDefinitionFile](/graph/api/resources/intune-grouppolicy-grouppolicyuploadeddefinitionfile?view=graph-rest-beta) |
+|Addition|beta|Added the [getPolicyNonComplianceSummaryReport](/graph/api/intune-reporting-devicemanagementreports-getpolicynoncompliancesummaryreport?view=graph-rest-beta) action on [deviceManagementReports](/graph/api/resources/intune-reporting-devicemanagementreports?view=graph-rest-beta) |
+|Addition|beta|Added the [getRemediationHistory](/graph/api/intune-devices-devicehealthscript-getremediationhistory?view=graph-rest-beta) function on [deviceHealthScript](/graph/api/resources/intune-devices-devicehealthscript?view=graph-rest-beta) |
+|Deletion|beta|Removed the following entities:<br/>**userExperienceAnalyticsStartupScoreHistory**<br/>|
+|Addition|beta|Added the **profileApplicability** property to the [androidForWorkMobileAppConfiguration](/graph/api/resources/intune-apps-androidforworkmobileappconfiguration?view=graph-rest-beta) entity|
+|Addition|beta|Added the **appTracks** property to the [androidManagedStoreApp](/graph/api/resources/intune-apps-androidmanagedstoreapp?view=graph-rest-beta) entity|
+|Addition|beta|Added the **profileApplicability** property to the [androidManagedStoreAppConfiguration](/graph/api/resources/intune-apps-androidmanagedstoreappconfiguration?view=graph-rest-beta) entity|
+|Addition|beta|Added the **groupPolicyObjectId**, **ouDistinguishedName**, **createdDateTime** and **lastModifiedDateTime** properties to the [groupPolicyObjectFile](/graph/api/resources/intune-gpanalyticsservice-grouppolicyobjectfile?view=graph-rest-beta) entity|
+|Addition|beta|Added the **specificationVersion** property to the [managedDevice](/graph/api/resources/intune-devices-manageddevice?view=graph-rest-beta) entity|
+|Addition|beta|Added the **derivedCredentialSettings** navigation property to the [androidDeviceOwnerEnterpriseWiFiConfiguration](/graph/api/resources/intune-deviceconfig-androiddeviceownerenterprisewificonfiguration?view=graph-rest-beta) entity|
+|Addition|beta|Added the **derivedCredentialSettings** navigation property to the [androidDeviceOwnerVpnConfiguration](/graph/api/resources/intune-deviceconfig-androiddeviceownervpnconfiguration?view=graph-rest-beta) entity|
+|Addition|beta|Added the **userExperienceAnalyticsScoreHistory** and **groupPolicyUploadedDefinitionFiles** navigation properties to the [deviceManagement](/graph/api/resources/intune-shared-devicemanagement?view=graph-rest-beta) entity|
+|Deletion|beta|Removed the **userExperienceAnalyticsStartupScoreHistory** navigation property from the [deviceManagement](/graph/api/resources/intune-shared-devicemanagement?view=graph-rest-beta) entity|
+|Addition|beta|Added the **settingInstanceId** property to the [deviceCompliancePolicySettingState](/graph/api/resources/intune-deviceconfig-devicecompliancepolicysettingstate?view=graph-rest-beta) complex type|
+|Addition|beta|Added the **settingInstanceId** property to the [deviceConfigurationSettingState](/graph/api/resources/intune-deviceconfig-deviceconfigurationsettingstate?view=graph-rest-beta) complex type|
+|Addition|beta|Added the **enableSharedDeviceMode** and **configurations** properties to the [iosAzureAdSingleSignOnExtension](/graph/api/resources/intune-deviceconfig-iosazureadsinglesignonextension?view=graph-rest-beta) complex type|
+|Addition|beta|Added the **settingInstanceId** property to the [managedDeviceMobileAppConfigurationSettingState](/graph/api/resources/intune-deviceconfig-manageddevicemobileappconfigurationsettingstate?view=graph-rest-beta) complex type|
+|Addition|beta|Added the **azureAdJoinUsingAzureVmExtension** member to the [deviceEnrollmentType](/graph/api/resources/intune-shared-deviceenrollmenttype?view=graph-rest-beta) enum type|
+|Addition|beta|Added the **windows10XProfile** member to the [policyPlatformType](/graph/api/resources/intune-shared-policyplatformtype?view=graph-rest-beta) enum type|
+
+### Files (OneDrive)
+
+| **Change type** | **Version** | **Description**                          |
+| :-------------- | :---------- | :--------------------------------------- |
+| Addition        | v1.0        | Added the [check in](/graph/api/driveitem-checkin?view=graph-rest-v1.0) and [check out](/graph/api/driveitem-checkin?view=graph-rest-v1.0) actions on the [driveItem](/graph/api/resources/driveitem?view=graph-rest-v1.0) resource. |
+
+
+### Identity and access (Azure AD)
+
+| **Change type** | **Version**   | **Description** |
+|:---|:---|:---|
+| Addition | beta | Added [unifiedRoleAssignmentMultiple](/graph/api/resources/unifiedroleassignmentmultiple?view=graph-rest-beta), [rbacApplicationMultiple](/graph/api/resources/rbacapplicationmultiple?view=graph-rest-beta), and [appScope](/graph/api/resources/appscope?view=graph-rest-beta) and the following actions:<br><li>[List unifiedRoleAssignmentMultiple](/graph/api/unifiedroleassignmentmultiple-list?view=graph-rest-beta)</li><li>[Get unifiedRoleAssignmentMultiple](/graph/api/unifiedroleassignmentmultiple-get?view=graph-rest-beta)</li><li>[Create unifiedRoleAssignmentMultiple](/graph/api/resources/unifiedroleassignmentmultiple-post?view=graph-rest-beta)</li><li>[Update unifiedRoleAssignmentMultiple](/graph/api/unifiedroleassignmentmultiple-update?view=graph-rest-beta)</li><li>[Delete unifiedRoleAssignmentMultiple](/graph/api/unifiedroleassignmentmultiple-delete?view=graph-rest-beta)</li>. |
+| Addition | v1.0 | Added support for [delta queries for application](/graph/api/application-delta?view=graph-rest-1.0).|
+| Addition | beta | Added support for [delta queries for administrativeUnits](/graph/api/administrativeunit-delta?view=graph-rest-beta).|
+| Addition | beta | Added support for [delta queries for oAuth2PermissionGrant](/graph/api/oauth2permissiongrant-delta?view=graph-rest-beta).|
+| Addition | v1.0 | Typed policy resources are grouped under the [policies](/graph/api/resources/policy-overview?view=graph-rest-1.0) URL segment. This update adds five typed policy resources: <br> <li>[activityBasedTimeoutPolicies](/graph/api/resources/activityBasedTimeoutPolicy?view=graph-rest-1.0)</li> <li>[claimsMappingPolicies](/graph/api/resources/claimsMappingPolicy?view=graph-rest-1.0) </li> <li>[homeRealmDiscoveryPolicies](/graph/api/resources/homeRealmDiscoveryPolicy?view=graph-rest-1.0) </li> <li>[tokenLifetimePolicies](/graph/api/resources/tokenlifetimepolicy?view=graph-rest-1.0) and </li> <li>[tokenIssuancePolicies](/graph/api/resources/tokenissuancepolicy?view=graph-rest-1.0)</li>|
+| Addition | v1.0 | Added [activityBasedTimeoutPolicy](/graph/api/resources/activityBasedTimeoutPolicy?view=graph-rest-1.0) resource type, which controls automatic sign-out for web sessions after a period of inactivity, for applications that support activity-based timeout functionality.|
+| Addition | v1.0 |Added the [claimsMappingPolicy](/graph/api/resources/claimsMappingPolicy?view=graph-rest-1.0) resource type, which controls the claims mapping for WS-Fed, SAML, OAuth 2.0, and OpenID Connect protocols, for tokens issued to a specific application.|
+| Addition | v1.0 | Added the [homeRealmDiscoveryPolicy](/graph/api/resources/homeRealmDiscoveryPolicy?view=graph-rest-1.0) resource type, which controls Azure Active Directory authentication behavior for federated users, in particular for auto-acceleration and user authentication restrictions in federated domains. |
+| Addition | v1.0 | Added the [tokenLifetimePolicy](/graph/api/resources/tokenlifetimepolicy?view=graph-rest-1.0) resource type, which controls the lifetime duration of access tokens used to access protected resources.|
+| Addition | v1.0 | Added the [tokenIssuancePolicy](/graph/api/resources/tokenissuancepolicy?view=graph-rest-1.0) resource type, which controls the characteristics of SAML tokens issued by Azure AD. This allows you to set the signing algorithm, signing options, or SAML token version to be used to issue the SAML token.|
+| Addition | beta | Added the [authenticationMethod](/graph/api/resources/authenticationmethod?view=graph-rest-beta), [passwordAuthenticationMethod](/graph/api/resources/passwordauthenticationmethod?view=graph-rest-beta), and [phoneAuthenticationMethod](/graph/api/resources/phoneauthenticationmethod?view=graph-rest-beta) resources and associated methods.
+| Addition | beta | Added the **createdByAppId** property to the [group](/graph/api/resources/group?view=graph-rest-beta) entity.|
+
+### Reports | Identity and access reports
+
+| **Change type** | **Version**   | **Description**                          |
+| :-------------- | :------------ | :--------------------------------------- |
+| Addition | beta | Added a new resource type [relyingPartyDetailedSummary](/graph/api/resources/relyingpartydetailedsummary?view=graph-rest-beta). This resource type supports [listing](/graph/api/relyingpartydetailedsummary-list?view=graph-rest-beta) the relying parties configured in Active Directory Federation Services.|
+
+### Reports | Office 365 usage reports
+
+| **Change type** | **Version**   | **Description**                          |
+| :-------------- | :------------ | :--------------------------------------- |
+| Addition | Beta | Added the **Meeting Created** and **Meeting Interacted** properties to the [getEmailActivityCounts](/graph/api/reportroot-getemailactivitycounts?view=graph-rest-beta) API CSV entity. |
+| Addition | Beta | Added the **Meeting Created** and **Meeting Interacted** properties to the [getEmailActivityUserCounts](/graph/api/reportroot-getemailactivityusercounts?view=graph-rest-beta) API CSV entity. |
+| Addition | Beta | Added the **Meeting Created** and **Meeting Interacted** properties to the [getEmailActivityuserDetail](/graph/api/reportroot-getemailactivityuserdetail?view=graph-rest-beta) API CSV entity. |
 
 ## March 2020
 
 ### Calendar
 
-| **Change type** | **Version** | **Description**                          |
-|:----------------|:------------|:-----------------------------------------|
+| **Change type** | **Version**   | **Description**                          |
+| :-------------- | :------------ | :--------------------------------------- |
 | Addition | Beta | Added the **calendarGroupId** property to the [calendar](/graph/api/resources/calendar?view=graph-rest-beta) entity. |
 | Addition | Beta | Added the **isDraft** property to the [event](/graph/api/resources/event?view=graph-rest-beta) entity. |
-
-### Change notifications
-
-| **Change type** | **Version** | **Description**                          |
-|:----------------|:------------|:-----------------------------------------|
-| Addition | beta | Added support for [delta queries for orgContact](/graph/api/orgcontact-delta?view=graph-rest-beta).|
-| Addition | v1.0 | Added support for [delta queries for orgContact](/graph/api/orgcontact-delta?view=graph-rest-1.0).|
 
 ### Cloud communications | Call
 
 | **Change type** | **Version**   | **Description**                          |
 | :-------------- | :------------ | :--------------------------------------- |
 |Addition|v1.0|Added new property **initiator** to the [recordingInfo](/graph/api/resources/recordinginfo?view=graph-rest-1.0) complex type.
-|Addition|v1.0|Added new complex types:<br/>[recordingInfo](/graph/api/resources/recordinginfo?view=graph-rest-1.0)<br/>[callRoutes](/graph/api/resources/callRoutes?view=graph-rest-1.0)<br/>[incomingContext](/graph/api/resources/incomingcontext?view=graph-rest-1.0)
+|Addition|v1.0|Added new complex types:<br/>[recordingInfo](/graph/api/resources/recordinginfo?view=graph-rest-1.0)<br/>[callRoute](/graph/api/resources/callRoute?view=graph-rest-1.0)<br/>[incomingContext](/graph/api/resources/incomingcontext?view=graph-rest-1.0)
 |Addition|v1.0|Added new property **recordingInfo** to the [participant](/graph/api/resources/participant?view=graph-rest-1.0) entity.
 |Addition|v1.0|Added new property **recordingStatus** to the [recordingInfo](/graph/api/resources/recordinginfo?view=graph-rest-1.0) complex type.
 |Addition|v1.0|Added new action [updateRecordingStatus](/graph/api/call-updaterecordingstatus?view=graph-rest-1.0) to the [call](/graph/api/resources/call?view=graph-rest-1.0) entity.
@@ -43,7 +128,7 @@ For details about known issues with Microsoft Graph APIs, see [Known issues](kno
 |Addition|v1.0|Added new property **observedParticipantId** to the [incomingContext](/graph/api/resources/incomingcontext?view=graph-rest-1.0) complex type.
 |Addition|v1.0|Added new property **onBehalfOf** to the [incomingContext](/graph/api/resources/incomingcontext?view=graph-rest-1.0) complex type.
 |Addition|v1.0|Added new property **transferor** to the [incomingContext](/graph/api/resources/incomingcontext?view=graph-rest-1.0) complex type.
-|Addition|v1.0|Added new property **callRoute** to the [call](/graph/api/resources/call?view=graph-rest-1.0) entity.
+|Addition|v1.0|Added new property **CallRoutes** to the [call](/graph/api/resources/call?view=graph-rest-1.0) entity.
 |Addition|v1.0|Added new property **final** to the [callRoute](/graph/api/resources/callroute?view=graph-rest-1.0) complex type.
 |Addition|v1.0|Added new property **original** to the [callRoute](/graph/api/resources/callroute?view=graph-rest-1.0) complex type.
 |Addition|v1.0|Added new property **routingType** to the [callRoute](/graph/api/resources/callroute?view=graph-rest-1.0) complex type.
@@ -108,6 +193,7 @@ For details about known issues with Microsoft Graph APIs, see [Known issues](kno
 | **Change type** | **Version**   | **Description**                          |
 |:---|:---|:---|
 | Addition | beta and v1.0 | Added the **authenticationRequirement** property and the **riskEventTypes_v2** property to the [signin](/graph/api/resources/signin?view=graph-rest-1.0) entity. |
+| Addition | beta and v1.0 | Added support for [delta queries for orgContact](/graph/api/orgcontact-delta?view=graph-rest-1.0).|
 | Addition | v1.0 | Added new user permission [User.ManageIdentities.All](/graph/permissions-reference#user-permissions).|
 | Addition | beta | Added the PrivilegedAccess.Read.AzureResources application permission for [Privileged Identity Management - Azure resources](/graph/api/resources/privilegedidentitymanagement-resources?view=graph-rest-beta).|
 | Addition | beta | Added the [Auditlogs.Read.All](/graph/permissions-reference#user-permissions) permission for listing the sign-in activity of a user.|
@@ -119,6 +205,7 @@ For details about known issues with Microsoft Graph APIs, see [Known issues](kno
 | **Change type** | **Version** | **Description**                  |
 |:----------------|:------------|:-----------------------------------------|
 | Change | beta | Updated the conditional access APIs to use the /identity/ segment; for example, /beta/identity/conditionalAccess/policies.|
+| Addition | beta | Added the **devices** property to the [conditionalaccessconditionset](/graph/api/resources/conditionalaccessconditionset?view=graph-rest-beta) entity. |
 
 ### Reports | Office 365 usage reports
 
@@ -140,8 +227,8 @@ For details about known issues with Microsoft Graph APIs, see [Known issues](kno
 
 | **Change type** | **Version** | **Description**                          |
 | :-------------- | :---------- | :-------------------------------------- |
-| Addition        | v1.0        | Added the [followSite](/graph/api/follow-site?view=graph-rest-1.0) navigation property to the [user](/graph/api/resources/user?view=graph-rest-1.0) entity set. |
-| Addition        | v1.0        | Added the [unfollowSite](/graph/api/unfollow-site?view=graph-rest-1.0) navigation property to the [user](/graph/api/resources/user?view=graph-rest-1.0) entity set. |
+| Addition        | v1.0        | Added the [followSite](/graph/api/site-follow?view=graph-rest-1.0) navigation property to the [user](/graph/api/resources/user?view=graph-rest-1.0) entity. |
+| Addition        | v1.0        | Added the [unfollowSite](/graph/api/site-unfollow?view=graph-rest-1.0) navigation property to the [user](/graph/api/resources/user?view=graph-rest-1.0) entity. |
 | Addition        | v1.0       | Added the **subscriptions** navigation property to the [list](/graph/api/resources/list?view=graph-rest-1.0) entity. |
 
 ### Teamwork (Microsoft Teams)
@@ -201,7 +288,7 @@ Added new APIs and resources for subscribing to and retrieving call records from
 
 | **Change type** | **Version** | **Description** |
 |:---|:---|:---|
-|Addition|beta|Added new entities:<br/>[macOSMdatpApp](/graph/api/resources/intune-apps-macosmdatpapp)<br/>[unsupportedGroupPolicyExtension](/graph/api/resources/intune-gpanalyticsservice-unsupportedgrouppolicyextension)<br/>[userExperienceAnalyticsDeviceStartupProcess](/graph/api/resources/intune-devices-userexperienceanalyticsdevicestartupprocess)<br/>[userExperienceAnalyticsDeviceStartupProcessPerformance](/graph/api/resources/intune-devices-userexperienceanalyticsdevicestartupprocessperformance)<br/>[userExperienceAnalyticsStartupScoreHistory](/graph/api/resources/intune-devices-userexperienceanalyticsstartupscorehistory)<br/>|
+|Addition|beta|Added new entities:<br/>[macOSMdatpApp](/graph/api/resources/intune-apps-macosmdatpapp)<br/>[unsupportedGroupPolicyExtension](/graph/api/resources/intune-gpanalyticsservice-unsupportedgrouppolicyextension)<br/>[userExperienceAnalyticsDeviceStartupProcess](/graph/api/resources/intune-devices-userexperienceanalyticsdevicestartupprocess)<br/>[userExperienceAnalyticsDeviceStartupProcessPerformance](/graph/api/resources/intune-devices-userexperienceanalyticsdevicestartupprocessperformance)<br/>|
 |Addition|beta|Added new complex types:<br/>[customUpdateTimeWindow](/graph/api/resources/intune-deviceconfig-customupdatetimewindow)<br/>[iosAvailableUpdateVersion](/graph/api/resources/intune-softwareupdate-iosavailableupdateversion)<br/>[managedDeviceSummarizedAppState](/graph/api/resources/intune-troubleshooting-manageddevicesummarizedappstate)<br/>|
 |Addition|beta|Added new enum types:<br/>[enrollmentAvailabilityOptions](/graph/api/resources/intune-shared-enrollmentavailabilityoptions)<br/>[globalDeviceHealthScriptState](/graph/api/resources/intune-devices-globaldevicehealthscriptstate)<br/>[iosSoftwareUpdateScheduleType](/graph/api/resources/intune-deviceconfig-iossoftwareupdatescheduletype)<br/>|
 |Addition|beta|Added the [updateGlobalScript](/graph/api/intune-devices-devicehealthscript-updateglobalscript) action on [deviceHealthScript](/graph/api/resources/intune-devices-devicehealthscript) |
@@ -583,7 +670,7 @@ Microsoft Search is now exposing a way to search and index data in Microsoft Gra
 | Addition | Beta | Added the **timeClockEnabled**, **openShiftsEnabled**, **swapShiftsRequestsEnabled**, **offerShiftRequestsEnabled**,  **timeOffRequestsEnabled** properties to the [schedule](/graph/api/resources/schedule?view=graph-rest-beta) resource.|
 | Addition        | Beta          | Added an additional route to retrieve a [driveItem] using a team and channel ID, [get driveItem](/graph/api/driveitem-get?view=graph-rest-beta). |
 
-## October 2019
+### October 2019
 
 ### Calendar
 

@@ -17,7 +17,7 @@ landingContent:
       - linkListType: get-started
         links:
           - text: ASP.NET
-            url: /graph/tutorials/aspnet
+            url: /learn/modules/msgraph-build-aspnetmvc-apps
           - text: Node.js
             url: /graph/tutorials/node
           - text: PHP
@@ -31,7 +31,7 @@ landingContent:
       - linkListType: get-started
         links:
           - text: .NET Core
-            url: /graph/tutorial/dotnet-core
+            url: /graph/tutorials/dotnet-core
           - text: Android
             url: /graph/tutorials/android
           - text: iOS Objective-C
@@ -63,6 +63,6 @@ landingContent:
           - text: Change notifications and delta query
             url: /learn/modules/msgraph-changenotifications-trackchanges
           - text: Optimize data usage with query parameters
-            url: learn/modules/optimize-data-usage
+            url: /learn/modules/optimize-data-usage
           - text: Optimize network traffic
-            url: learn/modules/optimize-data-usage/2-microsoft-graph-query-parameters
+            url: /learn/modules/optimize-network-traffic

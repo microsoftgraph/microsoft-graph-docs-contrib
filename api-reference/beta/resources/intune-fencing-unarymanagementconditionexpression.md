@@ -1,13 +1,15 @@
 ---
 title: "unaryManagementConditionExpression resource type"
 description: "A management condition expression that is evaluated using a unary operation."
-author: "davidmu1"
+author: "dougeby"
 localization_priority: Normal
 ms.prod: "Intune"
 doc_type: resourcePageType
 ---
 
 # unaryManagementConditionExpression resource type
+
+Namespace: microsoft.graph
 
 > **Important:** Microsoft Graph APIs under the /beta version are subject to change; production use is not supported.
 
