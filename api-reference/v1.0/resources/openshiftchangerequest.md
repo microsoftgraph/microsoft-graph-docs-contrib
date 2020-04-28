@@ -11,7 +11,7 @@ doc_type: "resourcePageType"
 
 Namespace: microsoft.graph
 
-Represents request to claim an [openshift](../resources/openshift.md) in a [schedule](../resources/schedule.md).
+Represents request to claim an [openShift](../resources/openshift.md) in a [schedule](../resources/schedule.md).
 
 ## Methods
 
