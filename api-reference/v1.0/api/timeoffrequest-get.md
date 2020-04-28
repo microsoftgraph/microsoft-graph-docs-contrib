@@ -1,6 +1,6 @@
 ---
 title: "Get timeOffRequest"
-description: "Retrieve the properties and relationships of timeoffrequest object."
+description: "Retrieve the properties and relationships of a timeOffRequest object."
 localization_priority: Normal
 author: "akumar39"
 ms.prod: "microsoft-teams"
@@ -20,7 +20,7 @@ One of the following permissions is required to call this API. To learn more, in
 | Permission type                        | Permissions (from least to most privileged) |
 |:---------------------------------------|:--------------------------------------------|
 |Delegated (work or school account) | Schedule.Read.All, Group.Read.All, Schedule.ReadWrite.All, Group.ReadWrite.All    |
-|Delegated (personal Microsoft account) | Not supported.    |s
+|Delegated (personal Microsoft account) | Not supported.    |
 |Application | Schedule.Read.All, Schedule.ReadWrite.All |
 
 > **Note**: This API supports admin permissions. Global admins can access groups that they are not a member of. currently in private preview only and are not available for public use.
