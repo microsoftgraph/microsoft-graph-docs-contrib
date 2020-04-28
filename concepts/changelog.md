@@ -238,7 +238,7 @@ For a summary of the value of these API changes, as well as recent tools, compon
 | :-------------- | :---------- | :--------------------------------------- |
 | Addition | Beta | Added support for ChannelMessage.Read.All to APIs for reading [chatMessages](/graph/api/resources/chatmessage?view=graph-rest-beta) in channels. |
 
-### Universal Print
+### Devices and apps | Cloud printing
 
 Added new APIs and resources for managing and printing to printers by using the Universal Print service.
 
