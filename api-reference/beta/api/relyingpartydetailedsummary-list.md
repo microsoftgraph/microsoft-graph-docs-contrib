@@ -2,7 +2,7 @@
 title: "List relyingPartyDetailedSummary"
 description: "Retrieve a list of relyingPartyDetailedSummary objects."
 localization_priority: Normal
-author: "davidmu1"
+author: "khotz"
 ms.prod: "microsoft-identity-platform"
 doc_type: "apiPageType"
 ---
