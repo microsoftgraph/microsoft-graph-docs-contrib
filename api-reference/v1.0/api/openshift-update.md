@@ -42,12 +42,12 @@ PUT /teams/{id}/schedule/openShifts/{openShiftId}
 
 ## Request body
 
-Provide the modified [openshift](../resources/openshift.md) object in the request body for this method.
+Provide the modified [openShift](../resources/openshift.md) object in the request body for this method.
 
 | Property     | Type        | Description |
 |:-------------|:------------|:------------|
 |draftOpenShift|openShiftItem|An unpublished open shift.|
-|schedulingGroupId|String| Scheduling group id. |
+|schedulingGroupId|String| Scheduling group ID. |
 |sharedOpenShift|openShiftItem|A published open shift.|
 
 ## Response

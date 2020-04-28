@@ -49,8 +49,8 @@ In the request body, supply the values for relevant fields that should be update
 |displayName|String|Name of the workforce integration.|
 |encryption|workforceIntegrationEncryption|The workforce integration encryption resource. |
 |isActive|Boolean|Indicates whether this workforce integration is currently active and available.|
-|supports|string| `none`, `shift`, `swapRequest`, `openshift`, `openShiftRequest`, `userShiftPreferences`. If selecting more than one value, all values must start with the first letter in uppercase.|
-|supportedEntities|string| This property will replace `supports` in V1.0. It is recommended to use this property instead of `supports`, but Beta will support both for the time being.|
+|supports|string| Possible values are `none`, `shift`, `swapRequest`, `openshift`, `openShiftRequest`, `userShiftPreferences`. If selecting more than one value, all values must start with the first letter in uppercase.|
+|supportedEntities|string| This property will replace **supports** in v1.0. We recommend that you use this property instead of **supports**. The **supports** property will still be supported in beta for the time being.|
 |url|String| Workforce Integration url for callbacks from the Shift service. |
 
 ## Response
