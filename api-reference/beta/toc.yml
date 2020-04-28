@@ -11229,8 +11229,6 @@
           items:
             - name: Get
               href: api/timeoffrequest-get.md
-            - name: Update
-              href: api/timeoffrequest-update.md
             - name: Delete
               href: api/timeoffrequest-delete.md
             - name: Approve
