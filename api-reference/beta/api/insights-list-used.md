@@ -1,4 +1,3 @@
-XXX
 ---
 title: "List used"
 description: "Calculated insight that returns the list of files used with a user."
@@ -14,7 +13,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Calculated insight that includes a list of documents the user has modified.
+Calculated insight that includes a list of documents the user has modified or viewed.
 
 ## Permissions
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
@@ -30,6 +29,13 @@ Get a list of documents that the signed-in user has modified:
 
 ```http
 GET /me/insights/used
+```
+
+Get a list of documents that the signed-in user has modified or viewed:
+
+>**Note**: This query option is only accessible by the user, not by anyone else. You cannot retrieve viewed by another user documents. 
+```http
+GET /me/insights/used?$orderby=LastUsed/LastAccessedDateTime desc
 ```
 
 Get a list of documents that the specified user has modified.
