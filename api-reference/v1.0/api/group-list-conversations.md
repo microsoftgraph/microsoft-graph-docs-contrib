@@ -10,6 +10,7 @@ doc_type: apiPageType
 # List conversations
 
 Namespace: microsoft.graph
+
 Retrieve the list of [conversations](../resources/conversation.md) in this group.
 
 ## Permissions
