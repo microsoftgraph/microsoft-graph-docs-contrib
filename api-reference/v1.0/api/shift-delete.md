@@ -1,6 +1,6 @@
 ---
 title: "Delete shift"
-description: "Deletes a shift from the schedule."
+description: "Delete a shift from the schedule."
 author: "akumar39"
 localization_priority: Normal
 ms.prod: "microsoft-teams"
@@ -11,7 +11,7 @@ doc_type: apiPageType
 
 Namespace: microsoft.graph
 
-Deletes a [shift](../resources/shift.md) from the schedule.
+Delete a [shift](../resources/shift.md) from the schedule.
 
 ## Permissions
 
@@ -66,7 +66,6 @@ DELETE https://graph.microsoft.com/v1.0/teams/{teamId}/schedule/shifts/{shiftId}
 
 The following is an example of the response. 
 
->**Note:** The response object shown here might be shortened for readability. All the properties will be returned from an actual call.
 <!-- {
   "blockType": "response",
   "truncated": true,
