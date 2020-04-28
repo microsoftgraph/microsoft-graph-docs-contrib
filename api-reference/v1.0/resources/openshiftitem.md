@@ -11,7 +11,7 @@ doc_type: "resourcePageType"
 
 Namespace: microsoft.graph
 
-Represents a single count of an [openshift](../resources/openshift.md).
+Represents a single count of an [openShift](../resources/openshift.md).
 
 ## Properties
 
