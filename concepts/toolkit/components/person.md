@@ -27,6 +27,10 @@ You can use three properties to set the person details. Use only one of the foll
 
 * Set the `person-query` attribute or `personQuery` property to search Microsoft Graph for a given person. It will choose the first person available and fetch the person details. An email works best to ensure the right person is queried, but a name works as well.
 
+* Set the `person-presence` attribute or `personPresence` property to add a presence badge to person avatar manually.
+
+* Set the `avatar-size` attribute or `avatarSize` property to `small` or `large` to determine the size of avatar. This helps add the [correct presence badge](https://mgt.dev/?path=/story/components-mgt-person--person-presence-display-all) to avatar. You will need to choose the correct corresponding css custom properties shown below to further customize avatar size. It is by default `small`, but will switch to `large` if both `show-name` and `show-email` attributes are set. We recommend using `small` if your avatar is smaller than 32px by 32px. 
+
 * Set the `person-details` attribute or `personDetails` property to manually set the person details, as shown in the following example.
 
 
@@ -49,6 +53,7 @@ You can use several properties to customize the component.
 | -----------  | ---------- | ------------------------------------------------------------- |
 | show-name    | showName   | Set flag to display person display name - default is `false`. |
 | show-email   | showEmail  | Set flag to display person email - default is `false`.        |
+| show-presence | showPresence | Set flag to display person presence - default is `false`.|
 
 ## CSS custom properties
 
