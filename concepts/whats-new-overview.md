@@ -32,8 +32,15 @@ See highlights of what's new in Microsoft Graph, and how you can [share your ide
 
 ## April 2020: New in preview only
 
-### Devices and apps
+### Devices and apps | Cloud printing
+
+Designate allowed users and groups to use specific [printer shares](/graph/api/resources/printershare?view=graph-rest-beta) on Universal Print, the Microsoft 365 cloud-based print infrastructure. To experience robust and centralized print management capabilities, and offer a simple yet rich and secure print experience for print users, see the [Universal Print announcement](https://techcommunity.microsoft.com/t5/windows-it-pro-blog/announcing-universal-print-a-cloud-based-print-solution/ba-p/1204775) and join their preview program.
+
+### Devices and apps | Corporate management
 Intune [April](changelog.md#april-2020) updates.
+
+### Groups
+Identify the app that created a [group](/graph/api/resources/group?view=graph-rest-beta) by its app ID.
 
 ### Identity and access
 - [Track changes](/graph/api/administrativeunit-delta?view=graph-rest-beta) for [administrative units](/graph/api/resources/administrativeunit?view=graph-rest-beta).
