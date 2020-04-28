@@ -31,6 +31,7 @@ For a summary of the value of these API changes, as well as recent tools, compon
 | **Change type** | **Version**   | **Description**                          |
 |:---|:---|:---|
 | Addition | beta | Added **allowedGroups** and **allowedUsers** properties to the [printerShare](/graph/api/resources/printershare?view=graph-rest-beta) entity.|
+| Addition | beta | Added the [printIdentity](/graph/api/resources/printidentity?view=graph-rest-beta) and [printUserIdentity](/graph/api/resources/printuseridentity?view=graph-rest-beta) resource types. |
 
 ### Devices and apps | Corporate management (Intune)
 
@@ -237,7 +238,7 @@ For a summary of the value of these API changes, as well as recent tools, compon
 | :-------------- | :---------- | :--------------------------------------- |
 | Addition | Beta | Added support for ChannelMessage.Read.All to APIs for reading [chatMessages](/graph/api/resources/chatmessage?view=graph-rest-beta) in channels. |
 
-### Universal Print
+### Devices and apps | Cloud printing
 
 Added new APIs and resources for managing and printing to printers by using the Universal Print service.
 
