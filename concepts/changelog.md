@@ -107,7 +107,8 @@ For a summary of the value of these API changes, as well as recent tools, compon
 ### Files (OneDrive for Business)
 
 | **Change type** | **Version**   | **Description**                          |
-| :-------------- | :------------ | :--------------------------------------- 
+| :-------------- | :------------ | :--------------------------------------- |
+| Addition        | beta        | Added the [folowedSites](/graph/api/sites-list-followed?view=graph-rest-beta) navigation property to the to the [user](/graph/api/resources/user?view=graph-rest-beta) entity set |
 | Addition        | v1.0        | Added the [folowedSites](/graph/api/sites-list-followed?view=graph-rest-1.0) navigation property to the to the [user](/graph/api/resources/user?view=graph-rest-1.0) entity set |
 | Addition        | v1.0        | Added the **expirationDateTime**, **password**, and **message** properties on the [createLink][/graph/api/driveitem-createlink?view=graph-rest-1.0] action on a [driveItem](/graph/resources/driveitem?view=graph-rest-1.0) resource. |
 | Addition        | v1.0        | Added the **dataLocaton** property on the [siteCollection](/graph/resources/sitecollection?view=graph-rest-1.0) resource. |
