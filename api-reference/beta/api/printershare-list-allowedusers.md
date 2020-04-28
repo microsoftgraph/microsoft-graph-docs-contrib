@@ -40,7 +40,7 @@ GET /print/printerShares/{id}/allowedUsers
 ## Request body
 Do not supply a request body for this method.
 ## Response
-If successful, this method returns a `200 OK` response code and a collection of [userIdentity](../resources/userIdentity.md) objects in the response body.
+If successful, this method returns a `200 OK` response code and a collection of [printUserIdentity](../resources/printuseridentity.md) objects in the response body.
 ## Example
 ### Request
 The following is an example of the request.
@@ -59,7 +59,7 @@ The following is an example of the response.
 <!-- {
   "blockType": "response",
   "truncated": true,
-  "@odata.type": "microsoft.graph.userIdentity",
+  "@odata.type": "microsoft.graph.printUserIdentity",
   "isCollection": true
 } -->
 ```http
@@ -68,7 +68,7 @@ Content-type: application/json
 Content-length: 286
 
 {
-  "@odata.context": "https://graph.microsoft.com/beta/$metadata#Collection(microsoft.graph.printIdentity)",
+  "@odata.context": "https://graph.microsoft.com/beta/$metadata#Collection(microsoft.graph.printUserIdentity)",
   "value": [
     {
       "id": "016b5565-3bbf-4067-b9ff-4d68167eb1a6",
