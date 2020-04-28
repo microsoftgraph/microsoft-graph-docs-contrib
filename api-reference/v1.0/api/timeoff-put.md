@@ -1,6 +1,6 @@
 ---
 title: "Replace timeOff"
-description: "Replace an existing timeOff."
+description: "Replace an existing timeOff object."
 author: "akumar39"
 localization_priority: Normal
 ms.prod: "microsoft-teams"
@@ -11,9 +11,9 @@ doc_type: apiPageType
 
 Namespace: microsoft.graph
 
-Replace an existing [timeOff](../resources/timeoff.md).
+Replace an existing [timeOff](../resources/timeoff.md) object.
 
-If the specified [timeOff](../resources/timeoff.md) doesn't exist, this method returns `404 Not found`.
+If the specified [timeOff](../resources/timeoff.md) object doesn't exist, this method returns `404 Not found`.
 
 ## Permissions
 
@@ -22,7 +22,7 @@ One of the following permissions is required to call this API. To learn more, in
 |Permission type      | Permissions (from least to most privileged)              |
 |:--------------------|:---------------------------------------------------------|
 |Delegated (work or school account) | Schedule.ReadWrite.All, Group.ReadWrite.All    |
-|Delegated (personal Microsoft account) | Not supported.    |s
+|Delegated (personal Microsoft account) | Not supported.    |
 |Application | Schedule.ReadWrite.All |
 
 > **Note**: This API supports admin permissions. Global admins can access groups that they are not a member of.
