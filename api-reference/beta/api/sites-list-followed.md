@@ -10,6 +10,8 @@ doc_type: apiPageType
 
 Namespace: microsoft.graph
 
+[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
+
 List the [sites](../resources/site.md) that have been followed by the signed in user.
 
 ## Permissions
