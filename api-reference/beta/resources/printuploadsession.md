@@ -19,7 +19,9 @@ Represents an active upload session to add document data to a print job. Only on
 
 | Method       | Return Type | Description |
 |:-------------|:------------|:------------|
+| [Get](../api/printdocument-get-uploadsession.md) | [printUploadSession](printuploadsession.md) | Read details of an upload session. |
 | [Create](../api/printdocument-put-uploadsession.md) | [printUploadSession](printuploadsession.md) | Create an upload session to upload data to a [printDocument](printdocument.md). |
+| [Upload data](../api/printdocument-post-uploadsession.md) | [printUploadSession](printuploadsession.md) | Upload data to a [printDocument](printdocument.md) by using an existing upload session. |
 | [Delete](../api/printdocument-delete-uploadsession.md) | None | Read the properties and relationships of the printer object. |
 
 ## Properties

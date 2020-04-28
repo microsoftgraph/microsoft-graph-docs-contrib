@@ -17,13 +17,14 @@ For a summary of the value of these API changes, as well as recent tools, compon
 
 | **Change type** | **Version**   | **Description**                          |
 |:---|:---|:---|
-| Change | beta | Renamed the **printerShares** property to **shares** on the [print](/graph/api/resources/print?view=graph-rest-beta) entity.<br/> This will change URL paths such as "/print/printerShares/*" to "/print/shares/*". |
-| Change | beta | Renamed the **name** property to **displayName** on the [printer](/graph/api/resources/printer?view=graph-rest-beta) entity. |
-| Change | beta | Renamed the **acceptingJobs** property to **isAcceptingJobs** on the [printer](/graph/api/resources/printer?view=graph-rest-beta) entity. |
 | Change | beta | Changed the type of the **shares** property to **printerShare collection** on the [printer](/graph/api/resources/printer?view=graph-rest-beta) entity. |
-| Change | beta | Renamed the **name** property to **displayName** on the [printerShare](/graph/api/resources/printerShare?view=graph-rest-beta) entity. |
+| Change | beta | Deprecated the **name** property on the [printerShare](/graph/api/resources/printerShare?view=graph-rest-beta) entity. |
+| Change | beta | Deprecated the **name** and **acceptingJobs** properties on the [printer](/graph/api/resources/printer?view=graph-rest-beta) entity. |
+| Change | beta | Deprecated the **printerShares** property on the [print](/graph/api/resources/print?view=graph-rest-beta) entity.<br/> Soon, URL paths such as "/print/printerShares/\*" will stop working. Use "/print/shares/\*" instead. |
+| Change | beta | Deprecated the **registeredBy** property on the [printer](/graph/api/resources/printerShare?view=graph-rest-beta) entity. |
+| Addition | beta | Added the **shares** property on the [print](/graph/api/resources/print?view=graph-rest-beta) entity. |
+| Addition | beta | Added **displayName** and **isAcceptingJobs** properties to the [printer](/graph/api/resources/printer?view=graph-rest-beta) entity. |
 | Addition | beta | Added properties to the [printerShare](/graph/api/resources/printerShare?view=graph-rest-beta) entity: <br/> <ul><li>**manufacturer**</li><li>**model**</li><li>**isAcceptingJobs**</li><li>**defaults**</li><li>**capabilities**</li><li>**location**</li><li>**status**</li><li>**jobs**</li></ul> |
-| Deletion | beta | Removed the **registeredBy** property from the [printerShare](/graph/api/resources/printerShare?view=graph-rest-beta) entity. |
 
 ## April 2020
 

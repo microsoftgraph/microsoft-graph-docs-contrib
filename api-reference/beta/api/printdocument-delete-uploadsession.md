@@ -7,7 +7,7 @@ ms.prod: universal-print
 doc_type: apiPageType
 ---
 
-# printDocument: uploadData
+# Delete an upload session
 
 Namespace: microsoft.graph
 
