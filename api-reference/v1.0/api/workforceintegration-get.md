@@ -1,6 +1,6 @@
 ---
 title: "Get workforceIntegration"
-description: "Retrieve the properties and relationships of workforceintegration object."
+description: "Retrieve the properties and relationships of workforceIntegration object."
 localization_priority: Normal
 author: "akumar39"
 ms.prod: "microsoft-teams"
@@ -11,7 +11,7 @@ doc_type: "apiPageType"
 
 Namespace: microsoft.graph
 
-Retrieve the properties and relationships of a [workforceintegration](../resources/workforceintegration.md) object.
+Retrieve the properties and relationships of a [workforceIntegration](../resources/workforceintegration.md) object.
 
 ## Permissions
 
@@ -41,7 +41,7 @@ This method supports some of the OData query parameters to help customize the re
 
 | Name      |Description|
 |:----------|:----------|
-| Authorization | Bearer {token} |
+| Authorization | Bearer {token}. Required. |
 
 ## Request body
 
