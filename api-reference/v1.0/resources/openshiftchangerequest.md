@@ -17,8 +17,8 @@ Represents request to claim an [openShift](../resources/openshift.md) in a [sche
 
 | Method       | Return Type | Description |
 |:-------------|:------------|:------------|
-| [List](../api/openshiftchangerequest-list.md) | Collection of [openshiftchangerequest](openshiftchangerequest.md) | List the properties and relationships of **openShiftChangeRequest** objects in a team. |
-| [Create](../api/openshiftchangerequest-post.md) | [openshiftchangerequest](openshiftchangerequest.md) | Create an instance of an **openShiftChangeRequest** object. |
+| [List](../api/openshiftchangerequest-list.md) | Collection of [openShiftChangeRequest](openshiftchangerequest.md) | List the properties and relationships of **openShiftChangeRequest** objects in a team. |
+| [Create](../api/openshiftchangerequest-post.md) | [openShiftChangeRequest](openshiftchangerequest.md) | Create an instance of an **openShiftChangeRequest** object. |
 | [Get](../api/openshiftchangerequest-get.md) | [openShiftChangeRequest](openshiftchangerequest.md) | Read the properties and relationships of an **openShiftChangeRequest** object. |
 |[Approve](../api/openshiftchangerequest-approve.md)|None|Approve an open shift change request.|
 |[Decline](../api/openshiftchangerequest-decline.md)|None| Decline an open shift change request.|
