@@ -26,7 +26,14 @@ For a summary of the value of these API changes, as well as recent tools, compon
 | Addition | v1.0 | Added the **isRemovable** property to the [calendar](/graph/api/resources/calendar?view=graph-rest-1.0) entity. |
 | Addition | v1.0 | Added the **delegateMeetingMessageDeliveryOptions** property to the [mailboxSettings](/graph/api/resources/mailboxSettings?view=graph-rest-1.0) entity. |
 
-### Devices and apps (Microsoft Intune)
+### Devices and apps | Cloud printing
+
+| **Change type** | **Version**   | **Description**                          |
+|:---|:---|:---|
+| Addition | beta | Added **allowedGroups** and **allowedUsers** properties to the [printerShare](/graph/api/resources/printershare?view=graph-rest-beta) entity.|
+| Addition | beta | Added the [printIdentity](/graph/api/resources/printidentity?view=graph-rest-beta) and [printUserIdentity](/graph/api/resources/printuseridentity?view=graph-rest-beta) resource types. |
+
+### Devices and apps | Corporate management (Intune)
 
 | **Change type** | **Version** | **Description** |
 |:---|:---|:---|
@@ -234,7 +241,7 @@ For a summary of the value of these API changes, as well as recent tools, compon
 | Addition | v1.0 | Added new entity [teamwork](/graph/api/resources/teamwork?view=graph-rest-1.0).
 | Addition | Beta | Added support for ChannelMessage.Read.All to APIs for reading [chatMessages](/graph/api/resources/chatmessage?view=graph-rest-beta) in channels. |
 
-### Universal Print
+### Devices and apps | Cloud printing
 
 Added new APIs and resources for managing and printing to printers by using the Universal Print service.
 
