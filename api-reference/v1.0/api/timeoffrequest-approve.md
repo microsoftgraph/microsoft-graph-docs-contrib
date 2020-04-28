@@ -20,7 +20,7 @@ One of the following permissions is required to call this API. To learn more, in
 | Permission type                        | Permissions (from least to most privileged) |
 |:---------------------------------------|:--------------------------------------------|
 |Delegated (work or school account) | Schedule.ReadWrite.All, Group.ReadWrite.All    |
-|Delegated (personal Microsoft account) | Not supported.    |s
+|Delegated (personal Microsoft account) | Not supported.    |
 |Application | Schedule.ReadWrite.All |
 
 > **Note**: This API supports admin permissions. Global admins can access groups that they are not a member of.
@@ -50,11 +50,9 @@ In the request body, provide a JSON object with the following parameters.
 
 ## Response
 
-If successful, this method returns a `200, OK` response code. It does not return anything in the response body.
+If successful, this method returns a `200 OK` response code. It does not return anything in the response body.
 
 ## Examples
-
-The following is an example of how to call this API.
 
 ### Request
 
