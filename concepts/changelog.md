@@ -11,6 +11,14 @@ This changelog covers specific API-level changes in Microsoft Graph v1.0 and bet
 
 For a summary of the value of these API changes, as well as recent tools, components, guidance, and tutorial additions, see [What's new in Microsoft Graph](whats-new-overview.md).
 
+## May 2020
+
+### Calendar
+
+| **Change type** | **Version**   | **Description**                          |
+| :-------------- | :------------ | :--------------------------------------- |
+| Addition | beta | Added the **cancelledOccurrences**, **exceptionalOccurrences** and **occurrenceId** properties to the [event](/graph/api/resources/event?view=graph-rest-beta) entity.
+
 ## April 2020
 
 ### Calendar
