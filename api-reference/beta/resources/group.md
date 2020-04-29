@@ -158,24 +158,24 @@ Here's what each **visibility** property value means:
 | Private | Owner permission is needed to join the group.<br>Non-members cannot view the contents of the group.|
 | Hiddenmembership | Owner permission is needed to join the group.<br>Non-members cannot view the contents of the group.<br>Non-members cannot see the members of the group.<br>Administrators (global, company, user, and helpdesk) can view the membership of the group.<br>The group appears in the global address book (GAL).|
 
-### Additional details on provisioning and configuring groups
+### Provisioning and configuring groups
 
-Groups can be further configured using the `resourceBehaviorOptions` and `resourceProvisioningOptions`:
+You can further configure groups using the **resourceBehaviorOptions** and **resourceProvisioningOptions** properties.
 
-`resourceBehaviorOptions` is a String collection that specifies the group behaviors that can be set for an Office 365 group during creation. This can be set only as part of creation (POST):
+**resourceBehaviorOptions** is a string collection that specifies the group behaviors that can be set for an Office 365 group. This can be set only as part of creation (POST):
 
-| `resourceBehaviorOptions`   |Description|Default if not set|
+| resourceBehaviorOptions   |Description|Default if not set|
 |:---------------|:--------|:-----------|
-| **AllowOnlyMembersToPost**|Only group *members* can post conversations to the group.|Any user in the organization can post conversations to the group.|
-| **HideGroupInOutlook**|This group will be hidden in Outlook experiences.|All groups will be visible and discoverable in Outlook experiences.|
-| **SubscribeNewGroupMembers**|Group members are subscribed to receive group conversations. |Group members do not receive group conversations.|
-| **WelcomeEmailDisabled**|A welcome email is sent to a new member on joining the group.|Wecome emails are not sent to new members.|
+| AllowOnlyMembersToPost|Only group *members* can post conversations to the group.|Any user in the organization can post conversations to the group.|
+| HideGroupInOutlook|This group will be hidden in Outlook experiences.|All groups will be visible and discoverable in Outlook experiences.|
+| SubscribeNewGroupMembers|Group members are subscribed to receive group conversations. |Group members do not receive group conversations.|
+| WelcomeEmailDisabled|A welcome email is sent to a new member on joining the group.|Wecome emails are not sent to new members.|
 
-`resourceProvisioningOptions` is a String collection that specifies the group resources that are provisioned as part of Office 365 group creation, that are not normally part of default group creation.
+**resourceProvisioningOptions** is a string collection that specifies the group resources that are provisioned as part of Office 365 group creation, that are not normally part of default group creation.
 
-| `resourceProvisioningOptions`   |Description| Default if not set |
+| resourceProvisioningOptions   |Description| Default if not set |
 |:---------------|:--------|:------------|
-| **Teams**|Provision this group as a Team. Additionally this property may be added to the `resourceProvisioningOptions` string collection through a PATCH operation, in order to convert an existing Office 365 group to a Team.| The group is a regular Office 365 group without Teams capabilities.|
+| Teams|Provision this group as a team. Additionally, this property can be added to the **resourceProvisioningOptions** string collection through a PATCH operation, in order to convert an existing Office 365 group to a team.| The group is a regular Office 365 group without Teams capabilities.|
 
 ## Relationships
 | Relationship | Type	|Description|
@@ -184,7 +184,7 @@ Groups can be further configured using the `resourceBehaviorOptions` and `resour
 |calendar|[calendar](calendar.md)|The group's calendar. Read-only.|
 |calendarView|[event](event.md) collection|The calendar view for the calendar. Read-only.|
 |conversations|[conversation](conversation.md) collection|The group's conversations.|
-|createdOnBehalfOf|[directoryObject](directoryobject.md)| The user (or application) that created the group. NOTE: This is not set if the user is an administrator. Read-only.|
+|createdOnBehalfOf|[directoryObject](directoryobject.md)| The user (or application) that created the group. **Note:** This is not set if the user is an administrator. Read-only.|
 |drive|[drive](drive.md)|The group's default drive. Read-only.|
 |drives|[drive](drive.md) collection|The group's drives. Read-only.|
 |endpoints|[Endpoint](endpoint.md) collection| Endpoints for the group. Read-only. Nullable.|
@@ -205,7 +205,7 @@ Groups can be further configured using the `resourceBehaviorOptions` and `resour
 |threads|[conversationThread](conversationthread.md) collection| The group's conversation threads. Nullable.|
 
 ## JSON representation
-The following is a JSON representation of the resource
+The following is a JSON representation of the resource.
 
 <!-- {
   "blockType": "resource",
