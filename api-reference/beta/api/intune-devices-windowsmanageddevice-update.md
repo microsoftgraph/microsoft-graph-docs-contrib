@@ -1,13 +1,15 @@
 ---
 title: "Update windowsManagedDevice"
 description: "Update the properties of a windowsManagedDevice object."
-author: "davidmu1"
+author: "dougeby"
 localization_priority: Normal
 ms.prod: "Intune"
 doc_type: apiPageType
 ---
 
 # Update windowsManagedDevice
+
+Namespace: microsoft.graph
 
 > **Important:** Microsoft Graph APIs under the /beta version are subject to change; production use is not supported.
 
@@ -72,7 +74,7 @@ The following table shows the properties that are required when you create the [
 |easActivationDateTime|DateTimeOffset|Exchange ActivationSync activation time of the device. This property is read-only. Inherited from [managedDevice](../resources/intune-devices-manageddevice.md)|
 |aadRegistered|Boolean|Whether the device is Azure Active Directory registered. This property is read-only. Inherited from [managedDevice](../resources/intune-devices-manageddevice.md)|
 |azureADRegistered|Boolean|Whether the device is Azure Active Directory registered. This property is read-only. Inherited from [managedDevice](../resources/intune-devices-manageddevice.md)|
-|deviceEnrollmentType|[deviceEnrollmentType](../resources/intune-shared-deviceenrollmenttype.md)|Enrollment type of the device. This property is read-only. Inherited from [managedDevice](../resources/intune-devices-manageddevice.md). Possible values are: `unknown`, `userEnrollment`, `deviceEnrollmentManager`, `appleBulkWithUser`, `appleBulkWithoutUser`, `windowsAzureADJoin`, `windowsBulkUserless`, `windowsAutoEnrollment`, `windowsBulkAzureDomainJoin`, `windowsCoManagement`, `appleUserEnrollment`, `appleUserEnrollmentWithServiceAccount`.|
+|deviceEnrollmentType|[deviceEnrollmentType](../resources/intune-shared-deviceenrollmenttype.md)|Enrollment type of the device. This property is read-only. Inherited from [managedDevice](../resources/intune-devices-manageddevice.md). Possible values are: `unknown`, `userEnrollment`, `deviceEnrollmentManager`, `appleBulkWithUser`, `appleBulkWithoutUser`, `windowsAzureADJoin`, `windowsBulkUserless`, `windowsAutoEnrollment`, `windowsBulkAzureDomainJoin`, `windowsCoManagement`, `appleUserEnrollment`, `appleUserEnrollmentWithServiceAccount`, `azureAdJoinUsingAzureVmExtension`.|
 |lostModeState|[lostModeState](../resources/intune-devices-lostmodestate.md)|Indicates if Lost mode is enabled or disabled. This property is read-only. Inherited from [managedDevice](../resources/intune-devices-manageddevice.md). Possible values are: `disabled`, `enabled`.|
 |activationLockBypassCode|String|Code that allows the Activation Lock on a device to be bypassed. This property is read-only. Inherited from [managedDevice](../resources/intune-devices-manageddevice.md)|
 |emailAddress|String|Email(s) for the user associated with the device. This property is read-only. Inherited from [managedDevice](../resources/intune-devices-manageddevice.md)|
@@ -122,6 +124,7 @@ The following table shows the properties that are required when you create the [
 |ethernetMacAddress|String|Ethernet MAC. This property is read-only. Inherited from [managedDevice](../resources/intune-devices-manageddevice.md)|
 |physicalMemoryInBytes|Int64|Total Memory in Bytes. This property is read-only. Inherited from [managedDevice](../resources/intune-devices-manageddevice.md)|
 |processorArchitecture|[managedDeviceArchitecture](../resources/intune-devices-manageddevicearchitecture.md)|Processor architecture. This property is read-only. Inherited from [managedDevice](../resources/intune-devices-manageddevice.md). Possible values are: `unknown`, `x86`, `x64`, `arm`, `arM64`.|
+|specificationVersion|String|Specification version. This property is read-only. Inherited from [managedDevice](../resources/intune-devices-manageddevice.md)|
 
 
 
@@ -135,7 +138,7 @@ Here is an example of the request.
 ``` http
 PATCH https://graph.microsoft.com/beta/deviceManagement/managedDevices/{managedDeviceId}
 Content-type: application/json
-Content-length: 7665
+Content-length: 7723
 
 {
   "@odata.type": "#microsoft.graph.windowsManagedDevice",
@@ -311,7 +314,8 @@ Content-length: 7665
   },
   "ethernetMacAddress": "Ethernet Mac Address value",
   "physicalMemoryInBytes": 5,
-  "processorArchitecture": "x86"
+  "processorArchitecture": "x86",
+  "specificationVersion": "Specification Version value"
 }
 ```
 
@@ -320,7 +324,7 @@ Here is an example of the response. Note: The response object shown here may be 
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 7714
+Content-Length: 7772
 
 {
   "@odata.type": "#microsoft.graph.windowsManagedDevice",
@@ -497,10 +501,10 @@ Content-Length: 7714
   },
   "ethernetMacAddress": "Ethernet Mac Address value",
   "physicalMemoryInBytes": 5,
-  "processorArchitecture": "x86"
+  "processorArchitecture": "x86",
+  "specificationVersion": "Specification Version value"
 }
 ```
-
 
 
 
