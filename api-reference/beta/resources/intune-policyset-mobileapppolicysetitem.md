@@ -1,13 +1,15 @@
 ---
 title: "mobileAppPolicySetItem resource type"
 description: "A class containing the properties used for mobile app PolicySetItem."
-author: "davidmu1"
+author: "dougeby"
 localization_priority: Normal
 ms.prod: "Intune"
 doc_type: resourcePageType
 ---
 
 # mobileAppPolicySetItem resource type
+
+Namespace: microsoft.graph
 
 > **Important:** Microsoft Graph APIs under the /beta version are subject to change; production use is not supported.
 

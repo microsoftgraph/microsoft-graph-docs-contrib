@@ -2,7 +2,7 @@
 title: "Create namedLocation"
 description: "Create a new namedLocation."
 localization_priority: Normal
-author: "davidmu1"
+author: "videor"
 ms.prod: "microsoft-identity-platform"
 doc_type: apiPageType
 ---

@@ -2,7 +2,7 @@
 title: "conditionalAccessConditionSet resource type"
 description: "Represents the type of conditions that govern when the policy applies."
 localization_priority: Normal
-author: "davidmu1"
+author: "videor"
 ms.prod: "microsoft-identity-platform"
 doc_type: resourcePageType
 ---
@@ -23,9 +23,12 @@ Represents the type of conditions that govern when the policy applies.
 |users|[conditionalAccessUsers](conditionalaccessusers.md)| Users, groups, and roles included in and excluded from the policy. Required. |
 |clientAppTypes|String collection| Client application types included in the policy. Possible values are: `browser`, `modern`, `easSupported`, `easUnsupported`, `other`.|
 |deviceStates|[conditionalAccessDeviceStates](conditionalaccessdevicestates.md)| Device states in the policy. |
+|devices|[conditionalAccessDevices](conditionalaccessdevices.md)| Devices in the policy. |
 |locations|[conditionalAccessLocations](conditionalaccesslocations.md)| Locations included in and excluded from the policy. |
 |platforms|[conditionalAccessPlatforms](conditionalaccessplatforms.md)| Platforms included in and excluded from the policy. |
 |signInRiskLevels|String collection| Risk levels included in the policy. Possible values are: `low`, `medium`, `high`, `none`.|
+
+>**Note:** We are deprecating the **deviceStates** condition, and it may be removed in the future. Going forward, use **devices** condition.
 
 ## Relationships
 
@@ -40,6 +43,7 @@ The following is a JSON representation of the resource.
   "optionalProperties": [
     "clientAppTypes",
     "deviceStates",
+    "devices",
     "locations",
     "platforms",
     "signInRiskLevels"
@@ -54,6 +58,7 @@ The following is a JSON representation of the resource.
   "users": {"@odata.type": "microsoft.graph.conditionalAccessUsers"},
   "clientAppTypes": ["String"],
   "deviceStates": {"@odata.type": "microsoft.graph.conditionalAccessDeviceStates"},
+  "devices": {"@odata.type": "microsoft.graph.conditionalAccessDevices"},
   "locations": {"@odata.type": "microsoft.graph.conditionalAccessLocations"},
   "platforms": {"@odata.type": "microsoft.graph.conditionalAccessPlatforms"},
   "signInRiskLevels": ["String"]

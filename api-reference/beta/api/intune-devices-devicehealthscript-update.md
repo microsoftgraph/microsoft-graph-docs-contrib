@@ -1,13 +1,15 @@
 ---
 title: "Update deviceHealthScript"
 description: "Update the properties of a deviceHealthScript object."
-author: "davidmu1"
+author: "dougeby"
 localization_priority: Normal
 ms.prod: "Intune"
 doc_type: apiPageType
 ---
 
 # Update deviceHealthScript
+
+Namespace: microsoft.graph
 
 > **Important:** Microsoft Graph APIs under the /beta version are subject to change; production use is not supported.
 
@@ -48,6 +50,7 @@ The following table shows the properties that are required when you create the [
 |:---|:---|:---|
 |id|String|Unique Identifier for the device health script|
 |publisher|String|Name of the device health script publisher|
+|version|String|Version of the device health script|
 |displayName|String|Name of the device health script|
 |description|String|Description of the device health script|
 |detectionScriptContent|Binary|The entire content of the detection powershell script|
@@ -58,6 +61,8 @@ The following table shows the properties that are required when you create the [
 |enforceSignatureCheck|Boolean|Indicate whether the script signature needs be checked|
 |runAs32Bit|Boolean|Indicate whether PowerShell script(s) should run as 32-bit|
 |roleScopeTagIds|String collection|List of Scope Tag IDs for the device health script|
+|isGlobalScript|Boolean|Determines if this is Microsoft Proprietary Script. Proprietary scripts are read-only|
+|highestAvailableVersion|String|Highest available version for a Microsoft Proprietary script|
 
 
 
@@ -76,6 +81,7 @@ Content-length: 575
 {
   "@odata.type": "#microsoft.graph.deviceHealthScript",
   "publisher": "Publisher value",
+  "version": "Version value",
   "displayName": "Display Name value",
   "description": "Description value",
   "detectionScriptContent": "ZGV0ZWN0aW9uU2NyaXB0Q29udGVudA==",
@@ -85,8 +91,10 @@ Content-length: 575
   "runAs32Bit": true,
   "roleScopeTagIds": [
     "Role Scope Tag Ids value"
-  ]
- }
+  ],
+  "isGlobalScript": true,
+  "highestAvailableVersion": "Highest Available Version value"
+}
 ```
 
 ### Response
@@ -117,7 +125,6 @@ Content-Length: 747
   "highestAvailableVersion": "Highest Available Version value"
 }
 ```
-
 
 
 
