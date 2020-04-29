@@ -22,7 +22,7 @@ LinkedList<String> rolesList = new LinkedList<String>();
 rolesList.add("write");
 
 graphClient.me().drive().items("{item-id}")
-	.invite(requireSignIn,rolesList,sendInvitation,message,recipientsList)
+	.invite(requireSignIn,rolesList,sendInvitation,message,recipientsList,null,null)
 	.buildRequest()
 	.post();
 

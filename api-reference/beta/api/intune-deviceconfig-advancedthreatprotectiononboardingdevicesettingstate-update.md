@@ -1,13 +1,15 @@
 ---
 title: "Update advancedThreatProtectionOnboardingDeviceSettingState"
 description: "Update the properties of a advancedThreatProtectionOnboardingDeviceSettingState object."
-author: "davidmu1"
+author: "dougeby"
 localization_priority: Normal
 ms.prod: "Intune"
 doc_type: apiPageType
 ---
 
 # Update advancedThreatProtectionOnboardingDeviceSettingState
+
+Namespace: microsoft.graph
 
 > **Important:** Microsoft Graph APIs under the /beta version are subject to change; production use is not supported.
 
@@ -115,7 +117,6 @@ Content-Length: 622
   "complianceGracePeriodExpirationDateTime": "2016-12-31T23:56:44.951111-08:00"
 }
 ```
-
 
 
 

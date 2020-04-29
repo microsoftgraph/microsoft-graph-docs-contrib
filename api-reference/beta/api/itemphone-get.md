@@ -1,6 +1,6 @@
 ---
 title: "Get itemPhone"
-description: "Retrieve the properties and relationships of an itemphone object."
+description: "Retrieve the properties and relationships of an itemPhone object."
 localization_priority: Normal
 author: "kevinbellinger"
 ms.prod: "people"
