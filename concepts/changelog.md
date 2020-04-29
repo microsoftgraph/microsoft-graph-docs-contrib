@@ -80,6 +80,19 @@ For a summary of the value of these API changes, as well as recent tools, compon
 | :-------------- | :---------- | :--------------------------------------- |
 | Addition        | v1.0        | Added the [check in](/graph/api/driveitem-checkin?view=graph-rest-v1.0) and [check out](/graph/api/driveitem-checkin?view=graph-rest-v1.0) actions on the [driveItem](/graph/api/resources/driveitem?view=graph-rest-v1.0) resource. |
 
+### Files (OneDrive for Business)
+
+| **Change type** | **Version**   | **Description**                          |
+| :-------------- | :------------ | :--------------------------------------- |
+| Addition        | beta        | Added the [folowedSites](/graph/api/sites-list-followed?view=graph-rest-beta) navigation property to the to the [user](/graph/api/resources/user?view=graph-rest-beta) entity set |
+| Addition        | v1.0        | Added the [folowedSites](/graph/api/sites-list-followed?view=graph-rest-1.0) navigation property to the to the [user](/graph/api/resources/user?view=graph-rest-1.0) entity set |
+| Addition        | v1.0        | Added the **expirationDateTime**, **password**, and **message** properties on the [createLink][/graph/api/driveitem-createlink?view=graph-rest-1.0] action on a [driveItem](/graph/resources/driveitem?view=graph-rest-1.0) resource. |
+| Addition        | v1.0        | Added the **dataLocaton** property on the [siteCollection](/graph/resources/sitecollection?view=graph-rest-1.0) resource. |
+| Addition        | v1.0        | Added the **preventsDownload** property on the [sharingLink](/graph/resources/sharinglink?view=graph-rest-1.0) resource. |
+| Addition        | v1.0        | Added the **tenantId** property on the [sharepointIds](/graph/resources/sharepointids?view=graph-rest-1.0) resource. |
+| Addition        | v1.0        | Added the **permission** property on the [sharedDriveItem](/graph/resources/shareddriveitem?view=graph-rest-1.0) resource. |
+| Addition        | v1.0        | Added the **expirationDateTime**, **hasPassword**, and **grantedToIdentities** properties on the [permission](/graph/resources/permission?view=graph-rest-1.0) resource. |
+| Addition        | v1.0        | Added the **expirationDateTime**, and **password** properties on the [invite](/graph/api/driveitem-invite?view=graph-rest-1.0) action on a [driveItem](/graph/resources/driveitem?view=graph-rest-1.0) resource. |
 
 ### Identity and access (Azure AD)
 
