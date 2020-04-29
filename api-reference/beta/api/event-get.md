@@ -409,7 +409,7 @@ to return specific properties.
 GET https://graph.microsoft.com/beta/me/events/AAMkADAGAADDdm4NAAA=/?$select=subject,start,end,occurrenceId,exceptionalOccurrences,cancelledOccurrences
 ```
 ##### Response 4
-Here is an example of the response. The $select applies to series master event and all nested events in the exception occurrences. In case of cancelled occurrences, since the occurrence no longer exist, occurrenceId is returned in response
+Here is an example of the response. The $select applies to series master event and all events in the exception occurrences. In case of cancelled occurrences, since the occurrence no longer exist, occurrenceId is returned in response
 
 <!-- {
   "blockType": "response",
@@ -427,21 +427,21 @@ Content-length: 1992
   "@odata.etag":"W/\"y53lbKh6jkaxHzFwGhgyxgAAw5zhug==\"",
   "id":"AAMkADAGAADDdm4NAAA=",
   "subject": "Daily stand-up",
-    "cancelledOccurrences": [
+  "cancelledOccurrences": [
      "OID.AAMkADAGAADDdm4NAAA=.2020-04-30",
      "OID.AAMkADAGAADDdm4NAAA=.2020-05-07",
      "OID.AAMkADAGAADDdm4NAAA=.2020-05-14"
     ],
-    "occurrenceId": null,
+  "occurrenceId": null,
     "start": {
         "dateTime": "2020-04-23T11:30:00.0000000",
         "timeZone": "UTC"
     },
-    "end": {
+  "end": {
         "dateTime": "2020-04-23T12:00:00.0000000",
         "timeZone": "UTC"
     },
-    "exceptionalOccurrences": [
+  "exceptionalOccurrences": [
         {
             "id": "AAMkADM0ZGRhMjdjLTA==",
             "Subject": "SM update 24",
