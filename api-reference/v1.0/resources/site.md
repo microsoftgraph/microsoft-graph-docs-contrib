@@ -27,7 +27,7 @@ The **site** resource provides metadata and relationships for a SharePoint site.
 | [Search for sites][]     | collection of site | Search across a SharePoint tenant for sites that match keywords provided.
 | [Follow site][]          | collection of site | Follow a user's site or multiple sites.
 | [Unfollow site][]        | collection of site | Follow a user's site or multiple sites.
-| [List followed sites][]  | POST /me/followedSites
+| [List followed sites][]  | collection of site | List the sites that have been followed by the signed in user.
 
 [Get site]: ../api/site-get.md
 [Get root site]: ../api/site-get.md
