@@ -1,13 +1,15 @@
 ---
 title: "List calendars"
 description: "Retrieve a list of calendars belonging to a calendar group."
-author: "angelgolfer-ms"
+author: "harini84"
 localization_priority: Normal
 ms.prod: "outlook"
 doc_type: apiPageType
 ---
 
 # List calendars
+
+Namespace: microsoft.graph
 
 Retrieve a list of calendars belonging to a calendar group.
 
@@ -70,7 +72,7 @@ Here is an example of the request.
   "name": "calendargroup_get_calendars"
 }-->
 
-```http
+```msgraph-interactive
 GET https://graph.microsoft.com/v1.0/me/calendarGroups/{id}/calendars
 ```
 # [C#](#tab/csharp)

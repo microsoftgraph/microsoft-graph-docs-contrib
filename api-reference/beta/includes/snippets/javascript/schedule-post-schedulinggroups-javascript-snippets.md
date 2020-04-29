@@ -21,6 +21,6 @@ const schedulingGroup = {
 
 let res = await client.api('/teams/{teamId}/schedule/schedulingGroups')
 	.version('beta')
-	.post({schedulingGroup : schedulingGroup});
+	.post(schedulingGroup);
 
 ```

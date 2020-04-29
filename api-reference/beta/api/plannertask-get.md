@@ -9,6 +9,8 @@ doc_type: apiPageType
 
 # Get plannerTask
 
+Namespace: microsoft.graph
+
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 Retrieve the properties and relationships of **plannertask** object.
@@ -50,7 +52,7 @@ Here is an example of the request.
   "blockType": "request",
   "name": "get_plannertask"
 }-->
-```http
+```msgraph-interactive
 GET https://graph.microsoft.com/beta/planner/tasks/01gzSlKkIUSUl6DF_EilrmQAKDhh
 ```
 # [C#](#tab/csharp)

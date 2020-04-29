@@ -2,12 +2,14 @@
 title: "List organization"
 description: "Retrieve a list of organization objects."
 localization_priority: Normal
-author: "davidmu1"
+author: "adimitui"
 ms.prod: "microsoft-identity-platform"
 doc_type: apiPageType
 ---
 
 # List organization
+
+Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
@@ -48,7 +50,7 @@ Here is an example of the request.
   "blockType": "request",
   "name": "get_organization"
 }-->
-```http
+```msgraph-interactive
 GET https://graph.microsoft.com/beta/organization
 ```
 # [C#](#tab/csharp)

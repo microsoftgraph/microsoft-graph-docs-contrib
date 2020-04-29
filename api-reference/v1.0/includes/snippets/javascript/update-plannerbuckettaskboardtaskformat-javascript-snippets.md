@@ -15,6 +15,6 @@ const plannerBucketTaskBoardTaskFormat = {
 };
 
 let res = await client.api('/planner/tasks/{task-id}/bucketTaskBoardFormat')
-	.update({plannerBucketTaskBoardTaskFormat : plannerBucketTaskBoardTaskFormat});
+	.update(plannerBucketTaskBoardTaskFormat);
 
 ```

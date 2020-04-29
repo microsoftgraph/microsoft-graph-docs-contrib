@@ -23,6 +23,6 @@ const user = {
 
 let res = await client.api('/users')
 	.version('beta')
-	.post({user : user});
+	.post(user);
 
 ```

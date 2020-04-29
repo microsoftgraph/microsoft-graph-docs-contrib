@@ -9,6 +9,8 @@ doc_type: apiPageType
 
 # Planner: delta
 
+Namespace: microsoft.graph
+
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 Retrieves changes to objects that the user is [subscribed](../resources/planner-overview.md#track-changes-using-delta-query) to.
@@ -73,7 +75,7 @@ Here is an example of the request.
   "name": "get_delta"
 }-->
 
-```http
+```msgraph-interactive
 GET https://graph.microsoft.com/beta/me/planner/all/delta
 ```
 # [C#](#tab/csharp)

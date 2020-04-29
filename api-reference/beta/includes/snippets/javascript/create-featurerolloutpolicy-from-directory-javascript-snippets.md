@@ -20,6 +20,6 @@ const featureRolloutPolicy = {
 
 let res = await client.api('/directory/featureRolloutPolicies')
 	.version('beta')
-	.post({featureRolloutPolicy : featureRolloutPolicy});
+	.post(featureRolloutPolicy);
 
 ```

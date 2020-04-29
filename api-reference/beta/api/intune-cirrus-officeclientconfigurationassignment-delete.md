@@ -2,12 +2,14 @@
 title: "Delete officeClientConfigurationAssignment"
 description: "Deletes a officeClientConfigurationAssignment."
 localization_priority: Normal
-author: "rolyon"
+author: "dougeby"
 ms.prod: "Intune"
 doc_type: apiPageType
 ---
 
 # Delete officeClientConfigurationAssignment
+
+Namespace: microsoft.graph
 
 > **Important:** Microsoft Graph APIs under the /beta version are subject to change; production use is not supported.
 
@@ -20,7 +22,7 @@ One of the following permissions is required to call this API. To learn more, in
 
 |Permission type|Permissions (from most to least privileged)|
 |:---|:---|
-|Delegated (work or school account)|**TODO: Determine scopes**|
+|Delegated (work or school account)|**TODO: Determine scopes **|
 |Delegated (personal Microsoft account)|Not supported.|
 |Application|**TODO: Determine scopes **|
 
@@ -58,9 +60,6 @@ Here is an example of the response. Note: The response object shown here may be 
 ``` http
 HTTP/1.1 204 No Content
 ```
-
-
-
 
 
 

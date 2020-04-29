@@ -1,13 +1,15 @@
 ---
 title: "Get windowsDomainJoinConfiguration"
 description: "Read properties and relationships of the windowsDomainJoinConfiguration object."
-author: "rolyon"
+author: "dougeby"
 localization_priority: Normal
 ms.prod: "intune"
 doc_type: apiPageType
 ---
 
 # Get windowsDomainJoinConfiguration
+
+Namespace: microsoft.graph
 
 > **Important:** APIs under the /beta version in Microsoft Graph are subject to change. Use of these APIs in production applications is not supported.
 
@@ -25,7 +27,9 @@ One of the following permissions is required to call this API. To learn more, in
 | &nbsp; &nbsp; **Device configuration** | DeviceManagementConfiguration.ReadWrite.All, DeviceManagementConfiguration.Read.All|
 | &nbsp; &nbsp; **Enrollment** | DeviceManagementServiceConfig.ReadWrite.All, DeviceManagementServiceConfig.Read.All |
 |Delegated (personal Microsoft account)|Not supported.|
-|Application|Not supported.|
+|Application||
+| &nbsp; &nbsp; **Device configuration** | DeviceManagementConfiguration.ReadWrite.All, DeviceManagementConfiguration.Read.All|
+| &nbsp; &nbsp; **Enrollment** | DeviceManagementServiceConfig.ReadWrite.All, DeviceManagementServiceConfig.Read.All |
 
 ## HTTP Request
 **Device configuration**
@@ -102,6 +106,9 @@ Content-Length: 560
   }
 }
 ```
+
+
+
 
 
 

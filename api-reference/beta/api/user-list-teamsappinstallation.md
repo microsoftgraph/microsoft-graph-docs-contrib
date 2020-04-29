@@ -9,6 +9,8 @@ ms.prod: "microsoft-teams"
 
 # List apps installed for user
 
+Namespace: microsoft.graph
+
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 Retrieve the list of [apps](../resources/teamsappinstallation.md) installed in the personal scope of the specified [user](../resources/user.md).
@@ -62,7 +64,7 @@ The following is an example of the request.
   "blockType": "request",
   "name": "user_list_teamsApps"
 }-->
-```http
+```msgraph-interactive
 GET https://graph.microsoft.com/beta/users/{id}/teamwork/installedApps
 ```
 # [C#](#tab/csharp)

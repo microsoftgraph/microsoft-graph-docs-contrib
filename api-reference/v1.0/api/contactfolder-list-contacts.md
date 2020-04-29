@@ -2,12 +2,14 @@
 title: "List contacts"
 description: "Get a contact collection from the default Contacts folder of the signed-in user (`.../me/contacts`), or from the specified contact folder."
 localization_priority: Normal
-author: "angelgolfer-ms"
+author: "kevinbellinger"
 ms.prod: "outlook"
 doc_type: apiPageType
 ---
 
 # List contacts
+
+Namespace: microsoft.graph
 
 Get a contact collection from the default Contacts folder of the signed-in user (`.../me/contacts`), or from the specified contact folder.
 ## Permissions
@@ -50,7 +52,7 @@ Here is an example of the request.
   "blockType": "request",
   "name": "contactfolder_get_contacts"
 }-->
-```http
+```msgraph-interactive
 GET https://graph.microsoft.com/v1.0/me/contactFolders/{id}/contacts
 ```
 # [C#](#tab/csharp)

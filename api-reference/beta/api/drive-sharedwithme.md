@@ -9,6 +9,8 @@ doc_type: apiPageType
 ---
 # List items shared with the signed-in user
 
+Namespace: microsoft.graph
+
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 Retrieve a collection of [DriveItem](../resources/driveitem.md) resources that have been shared with the owner of the [Drive](../resources/drive.md).
@@ -32,7 +34,7 @@ Additionally, without one of the  **All** permissions, shared items returned fro
 # [HTTP](#tab/http)
 <!-- { "blockType": "request", "name": "shared-with-me", "scopes": "files.read", "target": "action" } -->
 
-```http
+```msgraph-interactive
 GET /me/drive/sharedWithMe
 ```
 # [C#](#tab/csharp)

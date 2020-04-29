@@ -18,6 +18,6 @@ const calendar = Content-type: application/json
 
 let res = await client.api('/me/calendargroups/AAMkADYAAAR9NR5AAA=/calendars')
 	.version('beta')
-	.post({calendar : calendar});
+	.post(calendar);
 
 ```

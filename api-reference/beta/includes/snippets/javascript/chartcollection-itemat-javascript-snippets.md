@@ -16,6 +16,6 @@ const workbookChart = {
 
 let res = await client.api('/me/drive/items/{id}/workbook/worksheets/{id|name}/charts/ItemAt')
 	.version('beta')
-	.post({workbookChart : workbookChart});
+	.post(workbookChart);
 
 ```

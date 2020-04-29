@@ -1,13 +1,15 @@
 ---
 title: "List childFolders"
 description: "Get a collection of child folders under the specified contact folder."
-author: "angelgolfer-ms"
+author: "kevinbellinger"
 localization_priority: Normal
 ms.prod: "outlook"
 doc_type: apiPageType
 ---
 
 # List childFolders
+
+Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
@@ -49,7 +51,7 @@ Here is an example of the request.
   "blockType": "request",
   "name": "contactfolder_get_childfolders"
 }-->
-```http
+```msgraph-interactive
 GET https://graph.microsoft.com/beta/me/contactFolders/{id}/childFolders
 ```
 # [C#](#tab/csharp)

@@ -9,6 +9,8 @@ doc_type: "apiPageType"
 
 # List places
 
+Namespace: microsoft.graph
+
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 Get a collection of the specified type of [place](../resources/place.md) objects defined in the tenant. For example, you can get all the rooms, all the room lists, or the rooms in a specific room list in the tenant.
@@ -88,7 +90,7 @@ The following example shows how to get all the [room](../resources/room.md) obje
   "name": "get_all_rooms"
 }-->
 
-```http
+```msgraph-interactive
 GET https://graph.microsoft.com/beta/places/microsoft.graph.room
 ```
 # [C#](#tab/csharp)
@@ -206,7 +208,7 @@ The following example shows how to get all the [roomList](../resources/roomlist.
   "name": "get_all_roomlists"
 }-->
 
-```http
+```msgraph-interactive
 GET https://graph.microsoft.com/beta/places/microsoft.graph.roomlist
 ```
 # [C#](#tab/csharp)
@@ -289,7 +291,7 @@ The following example shows how to get a list of [room](../resources/room.md) ob
   "name": "get_rooms_in_roomlist"
 }-->
 
-```http
+```msgraph-interactive
 GET https://graph.microsoft.com/beta/places/bldg2@contoso.com/microsoft.graph.roomlist/rooms
 ```
 # [C#](#tab/csharp)

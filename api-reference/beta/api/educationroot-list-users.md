@@ -9,6 +9,8 @@ doc_type: apiPageType
 
 # List users
 
+Namespace: microsoft.graph
+
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 Retrieve a list of user objects. These user objects will include education-specific properties.
@@ -48,7 +50,7 @@ The following is an example of the request.
   "blockType": "request",
   "name": "educationroot_get_users"
 }-->
-```http
+```msgraph-interactive
 GET https://graph.microsoft.com/beta/education/users
 ```
 # [C#](#tab/csharp)

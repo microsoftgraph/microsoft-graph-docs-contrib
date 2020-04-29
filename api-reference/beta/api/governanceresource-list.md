@@ -3,11 +3,13 @@ title: "List governanceResources"
 description: "Retrieve a collection of governanceResource that the requestor has access to."
 localization_priority: Normal
 doc_type: apiPageType
-author: ""
-ms.prod: ""
+ms.prod: "microsoft-identity-platform"
+author: "shauliu"
 ---
 
 # List governanceResources
+
+Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
@@ -20,7 +22,7 @@ One of the following permissions is required to call this API. To learn more, in
 |:--------------------|:---------------------------------------------------------|
 |Delegated (work or school account) | PrivilegedAccess.ReadWrite.AzureResources  |
 |Delegated (personal Microsoft account) | Not supported.    |
-|Application | Not supported. |
+|Application | PrivilegedAccess.Read.AzureResources |
 
 ## HTTP request
 <!-- { "blockType": "ignored" } -->
@@ -49,7 +51,7 @@ This example lists all resources I can currently access.
   "blockType": "request",
   "name": "get_governanceresources"
 }-->
-```http
+```msgraph-interactive
 GET https://graph.microsoft.com/beta/privilegedAccess/azureResources/resources
 ```
 # [C#](#tab/csharp)

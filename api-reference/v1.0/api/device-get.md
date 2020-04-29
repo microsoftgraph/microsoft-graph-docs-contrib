@@ -1,13 +1,15 @@
 ---
 title: "Get device"
 description: "Get the properties and relationships of a device object."
-author: "davidmu1"
+author: "spunukol"
 localization_priority: Normal
 ms.prod: "microsoft-identity-platform"
 doc_type: apiPageType
 ---
 
 # Get device
+
+Namespace: microsoft.graph
 
 Get the properties and relationships of a device object.
 ## Permissions
@@ -50,7 +52,7 @@ Here is an example of the request.
   "blockType": "request",
   "name": "get_device"
 }-->
-```http
+```msgraph-interactive
 GET https://graph.microsoft.com/v1.0/devices/{id}
 ```
 # [C#](#tab/csharp)

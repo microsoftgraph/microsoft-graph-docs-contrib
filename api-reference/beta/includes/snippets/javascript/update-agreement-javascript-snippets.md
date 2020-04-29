@@ -17,6 +17,6 @@ const agreement = {
 
 let res = await client.api('/agreements/{id}')
 	.version('beta')
-	.update({agreement : agreement});
+	.update(agreement);
 
 ```

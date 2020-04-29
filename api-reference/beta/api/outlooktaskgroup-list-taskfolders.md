@@ -1,13 +1,15 @@
 ---
 title: "List taskFolders"
 description: "Get Outlook task folders in a specific outlookTaskGroup."
-author: "angelgolfer-ms"
+author: "mashriv"
 localization_priority: Normal
 ms.prod: "outlook"
 doc_type: apiPageType
 ---
 
 # List taskFolders
+
+Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
@@ -50,7 +52,7 @@ Here is an example of the request.
   "blockType": "request",
   "name": "get_taskfolders"
 }-->
-```http
+```msgraph-interactive
 GET https://graph.microsoft.com/beta/me/outlook/taskGroups/AAMkADIyAAAhrbe-AAA=/taskFolders
 ```
 # [C#](#tab/csharp)

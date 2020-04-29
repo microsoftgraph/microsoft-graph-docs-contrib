@@ -1,13 +1,15 @@
 ---
 title: "Get macOSLobApp"
 description: "Read properties and relationships of the macOSLobApp object."
-author: "rolyon"
+author: "dougeby"
 localization_priority: Normal
 ms.prod: "Intune"
 doc_type: apiPageType
 ---
 
 # Get macOSLobApp
+
+Namespace: microsoft.graph
 
 > **Important:** Microsoft Graph APIs under the /beta version are subject to change; production use is not supported.
 
@@ -36,7 +38,7 @@ GET /deviceAppManagement/mobileApps/{mobileAppId}/deviceStatuses/{mobileAppInsta
 ```
 
 ## Optional query parameters
-This method supports the [OData Query Parameters](https://docs.microsoft.com/en-us/graph/query-parameters) to help customize the response.
+This method supports the [OData Query Parameters](/graph/query-parameters) to help customize the response.
 
 ## Request headers
 |Header|Value|
@@ -63,7 +65,7 @@ Here is an example of the response. Note: The response object shown here may be 
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 1875
+Content-Length: 1921
 
 {
   "value": {
@@ -104,7 +106,9 @@ Content-Length: 1875
       "v10_10": true,
       "v10_11": true,
       "v10_12": true,
-      "v10_13": true
+      "v10_13": true,
+      "v10_14": true,
+      "v10_15": true
     },
     "buildNumber": "Build Number value",
     "versionNumber": "Version Number value",
@@ -125,9 +129,6 @@ Content-Length: 1875
   }
 }
 ```
-
-
-
 
 
 

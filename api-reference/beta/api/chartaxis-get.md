@@ -9,6 +9,8 @@ doc_type: apiPageType
 
 # Get workbookChartAxis
 
+Namespace: microsoft.graph
+
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 Retrieve the properties and relationships of chartaxis object.
@@ -52,7 +54,7 @@ Here is an example of the request.
   "blockType": "request",
   "name": "get_chartaxis"
 }-->
-```http
+```msgraph-interactive
 GET https://graph.microsoft.com/beta/me/drive/items/{id}/workbook/worksheets/{id|name}/charts/{name}/axes/valueaxis
 ```
 # [C#](#tab/csharp)

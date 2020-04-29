@@ -16,6 +16,6 @@ const calendarGroup = {
 
 let res = await client.api('/me/calendarGroups/{id}')
 	.version('beta')
-	.update({calendarGroup : calendarGroup});
+	.update(calendarGroup);
 
 ```

@@ -1,13 +1,15 @@
 ---
 title: "List serviceConfigurationRecords"
 description: "Retrieves a list of domainDnsRecord objects needed to enable services for the domain."
-author: "davidmu1"
+author: "adimitui"
 localization_priority: Normal
 ms.prod: "microsoft-identity-platform"
 doc_type: apiPageType
 ---
 
 # List serviceConfigurationRecords
+
+Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
@@ -29,7 +31,7 @@ One of the following permissions is required to call this API. To learn more, in
 ## HTTP request
 <!-- { "blockType": "ignored" } -->
 ```http
-GET /domains/contoso.com/serviceConfigurationRecords
+GET /domains/{id}/serviceConfigurationRecords
 ```
 
 ## Optional query parameters
@@ -60,7 +62,7 @@ If successful, this method returns a `200 OK` response code and collection of [d
   "blockType": "request",
   "name": "get_serviceconfigurationrecords"
 }-->
-```http
+```msgraph-interactive
 GET https://graph.microsoft.com/beta/domains/contoso.com/serviceConfigurationRecords
 ```
 # [C#](#tab/csharp)

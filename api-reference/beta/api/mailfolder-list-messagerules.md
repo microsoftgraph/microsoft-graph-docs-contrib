@@ -2,12 +2,14 @@
 title: "List rules"
 description: "Get all the messageRule objects defined for the user's Inbox."
 localization_priority: Normal
-author: "angelgolfer-ms"
+author: "svpsiva"
 ms.prod: "outlook"
 doc_type: apiPageType
 ---
 
 # List rules
+
+Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
@@ -48,7 +50,7 @@ Here is an example of the request.
   "blockType": "request",
   "name": "get_messagerules"
 }-->
-```http
+```msgraph-interactive
 GET https://graph.microsoft.com/beta/me/mailFolders/inbox/messagerules
 ```
 # [C#](#tab/csharp)

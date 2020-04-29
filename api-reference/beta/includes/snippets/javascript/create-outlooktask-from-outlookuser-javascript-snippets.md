@@ -24,6 +24,6 @@ const outlookTask = {
 
 let res = await client.api('/me/outlook/tasks')
 	.version('beta')
-	.post({outlookTask : outlookTask});
+	.post(outlookTask);
 
 ```

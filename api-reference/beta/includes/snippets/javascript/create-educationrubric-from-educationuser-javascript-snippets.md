@@ -91,6 +91,6 @@ const educationRubric = {
 
 let res = await client.api('/education/me/rubrics')
 	.version('beta')
-	.post({educationRubric : educationRubric});
+	.post(educationRubric);
 
 ```

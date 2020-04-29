@@ -9,6 +9,8 @@ doc_type: apiPageType
 
 # Range: LastColumn
 
+Namespace: microsoft.graph
+
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 Gets the last column within the range. For example, the last column of "B2:D5" is "D2:D5".
@@ -51,7 +53,7 @@ Here is an example of the request.
   "blockType": "request",
   "name": "range_lastcolumn"
 }-->
-```http
+```msgraph-interactive
 GET https://graph.microsoft.com/beta/me/drive/items/{id}/workbook/names/{name}/range/LastColumn
 ```
 # [C#](#tab/csharp)

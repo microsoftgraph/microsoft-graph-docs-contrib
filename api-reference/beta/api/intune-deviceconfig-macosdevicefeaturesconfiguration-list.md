@@ -1,13 +1,15 @@
 ---
 title: "List macOSDeviceFeaturesConfigurations"
 description: "List properties and relationships of the macOSDeviceFeaturesConfiguration objects."
-author: "rolyon"
+author: "dougeby"
 localization_priority: Normal
 ms.prod: "Intune"
 doc_type: apiPageType
 ---
 
 # List macOSDeviceFeaturesConfigurations
+
+Namespace: microsoft.graph
 
 > **Important:** Microsoft Graph APIs under the /beta version are subject to change; production use is not supported.
 
@@ -59,7 +61,7 @@ Here is an example of the response. Note: The response object shown here may be 
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 2572
+Content-Length: 2985
 
 {
   "value": [
@@ -128,14 +130,24 @@ Content-Length: 2572
       "restartDisabledWhileLoggedIn": true,
       "powerOffDisabledWhileLoggedIn": true,
       "logOutDisabledWhileLoggedIn": true,
-      "screenLockDisableImmediate": true
+      "screenLockDisableImmediate": true,
+      "associatedDomains": [
+        {
+          "@odata.type": "microsoft.graph.keyValuePair",
+          "name": "Name value",
+          "value": "Value value"
+        }
+      ],
+      "singleSignOnExtension": {
+        "@odata.type": "microsoft.graph.singleSignOnExtension"
+      },
+      "macOSSingleSignOnExtension": {
+        "@odata.type": "microsoft.graph.macOSSingleSignOnExtension"
+      }
     }
   ]
 }
 ```
-
-
-
 
 
 

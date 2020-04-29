@@ -2,12 +2,14 @@
 title: "List subscribedSkus"
 description: "Retrieve the list of commercial subscriptions that an organization has acquired."
 localization_priority: Normal
-author: "davidmu1"
+author: "SumitParikh"
 ms.prod: "microsoft-identity-platform"
 doc_type: apiPageType
 ---
 
 # List subscribedSkus
+
+Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
@@ -29,7 +31,9 @@ One of the following permissions is required to call this API. To learn more, in
 GET /subscribedSkus
 ```
 ## Optional query parameters
-This method supports the [OData Query Parameters](https://developer.microsoft.com/graph/docs/concepts/query_parameters) to help customize the response.
+
+This method does not support the [OData query parameters](/graph//query-parameters) to help customize the response (`$filter` is not supported).
+
 ## Request headers
 
 | Name       | Description|
@@ -51,7 +55,7 @@ Here is an example of the request.
   "blockType": "request",
   "name": "get_subscribedskus"
 }-->
-```http
+```msgraph-interactive
 GET https://graph.microsoft.com/beta/subscribedSkus
 ```
 # [C#](#tab/csharp)

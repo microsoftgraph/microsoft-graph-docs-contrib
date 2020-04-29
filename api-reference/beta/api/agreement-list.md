@@ -3,11 +3,13 @@ title: "List agreements"
 description: "Retrieve a list of agreement objects."
 localization_priority: Normal
 doc_type: apiPageType
-ms.prod: ""
-author: ""
+ms.prod: "microsoft-identity-platform"
+author: "raprakasMSFT"
 ---
 
 # List agreements
+
+Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
@@ -48,7 +50,7 @@ If successful, this method returns a `200 OK` response code and collection of [a
   "blockType": "request",
   "name": "get_agreements"
 }-->
-```http
+```msgraph-interactive
 GET https://graph.microsoft.com/beta/agreements
 ```
 # [C#](#tab/csharp)

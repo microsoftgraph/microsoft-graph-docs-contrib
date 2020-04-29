@@ -18,6 +18,6 @@ const workbookWorksheet = {
 
 let res = await client.api('/me/drive/items/{id}/workbook/worksheets/{id|name}')
 	.version('beta')
-	.update({workbookWorksheet : workbookWorksheet});
+	.update(workbookWorksheet);
 
 ```

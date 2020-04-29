@@ -9,6 +9,8 @@ doc_type: apiPageType
 
 # List overrides
 
+Namespace: microsoft.graph
+
 Get the overrides that a user has set up to always classify messages from certain senders in specific ways.
 
 Each override corresponds to an SMTP address of a sender. Initially, a user does not have any overrides.
@@ -49,7 +51,7 @@ Here is an example of the request.
   "blockType": "request",
   "name": "get_overrides"
 }-->
-```http
+```msgraph-interactive
 GET https://graph.microsoft.com/v1.0/me/inferenceClassification/overrides
 ```
 # [C#](#tab/csharp)

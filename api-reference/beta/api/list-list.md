@@ -9,6 +9,8 @@ doc_type: apiPageType
 ---
 # Enumerate lists in a site
 
+Namespace: microsoft.graph
+
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 Get the collection of [lists][] for a [site][].
@@ -29,7 +31,7 @@ One of the following permissions is required to call this API. To learn more, in
 ## HTTP request
 
 ```http
-GET https://graph.microsoft.com/beta/sites/{site-id}/lists
+GET /sites/{site-id}/lists
 ```
 
 ## Example
@@ -40,7 +42,7 @@ GET https://graph.microsoft.com/beta/sites/{site-id}/lists
 # [HTTP](#tab/http)
 <!-- { "blockType": "request", "name": "enum-lists", "scopes": "sites.read.all service.sharepoint" } -->
 
-```http
+```msgraph-interactive
 GET https://graph.microsoft.com/beta/sites/{site-id}/lists
 ```
 # [C#](#tab/csharp)

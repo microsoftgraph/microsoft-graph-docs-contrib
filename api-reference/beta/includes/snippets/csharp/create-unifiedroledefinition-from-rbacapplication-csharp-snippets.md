@@ -20,7 +20,7 @@ var unifiedRoleDefinition = new UnifiedRoleDefinition
 			}
 		}
 	},
-	IsEnabled = "true"
+	IsEnabled = true
 };
 
 await graphClient.RoleManagement.Directory.RoleDefinitions

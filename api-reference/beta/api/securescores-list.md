@@ -9,6 +9,8 @@ author: ""
 
 # List secureScores
 
+Namespace: microsoft.graph
+
  [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 Retrieve the properties and relationships of a [secureScores](../resources/securescores.md) object.
@@ -57,7 +59,7 @@ The following is an example of the request.
   "name": "securescores_list"
 }-->
 
-```http
+```msgraph-interactive
 GET https://graph.microsoft.com/beta/security/secureScores?$top=1
 ```
 # [C#](#tab/csharp)

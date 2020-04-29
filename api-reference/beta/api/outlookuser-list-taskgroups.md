@@ -2,12 +2,14 @@
 title: "List taskGroups"
 description: "Get all the Outlook task groups in the user's mailbox."
 localization_priority: Normal
-author: "angelgolfer-ms"
+author: "mashriv"
 ms.prod: "outlook"
 doc_type: apiPageType
 ---
 
 # List taskGroups
+
+Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
@@ -52,7 +54,7 @@ Here is an example of the request.
   "blockType": "request",
   "name": "get_taskgroups"
 }-->
-```http
+```msgraph-interactive
 GET https://graph.microsoft.com/beta/me/outlook/taskGroups
 ```
 # [C#](#tab/csharp)

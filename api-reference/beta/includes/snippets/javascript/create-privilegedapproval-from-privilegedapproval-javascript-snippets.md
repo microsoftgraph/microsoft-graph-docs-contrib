@@ -20,6 +20,6 @@ const privilegedApproval = {
 
 let res = await client.api('/privilegedApproval')
 	.version('beta')
-	.post({privilegedApproval : privilegedApproval});
+	.post(privilegedApproval);
 
 ```

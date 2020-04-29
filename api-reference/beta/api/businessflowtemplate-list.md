@@ -3,11 +3,13 @@ title: "List businessFlowTemplates"
 description: "In the Azure AD access reviews feature, list all the businessFlowTemplate objects."
 localization_priority: Normal
 doc_type: apiPageType
-ms.prod: ""
-author: ""
+ms.prod: "microsoft-identity-platform"
+author: "markwahl-msft"
 ---
 
 # List businessFlowTemplates
+
+Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
@@ -48,7 +50,7 @@ If successful, this method returns a `200, OK` response code and an array of [bu
   "blockType": "request",
   "name": "get_businessFlowTemplate"
 }-->
-```http
+```msgraph-interactive
 GET https://graph.microsoft.com/beta/businessFlowTemplates
 ```
 # [C#](#tab/csharp)
@@ -82,20 +84,24 @@ Content-type: application/json
     "value":[
         {
             "id": "842169fe-e1b7-4ce9-98b6-6a9db02eec6b",
-            "displayName": "Access Reviews for External Users' access to groups"
+            "displayName": "Access reviews of guest user memberships of a group"
         },
         {
             "id": "7fbc909b-efe1-4c72-8ae6-99cb30b882de",
-            "displayName": "Access Reviews for External Users' access to applications"
+            "displayName": "Access reviews of guest user assignments to an application"
         },
         {
             "id": "50839a84-e23c-44a7-a8cc-16e162afc656",
-            "displayName": "Access Reviews for All Users' assignment to applications"
+            "displayName": "Access reviews of assignments to an application"
         },
         {
             "id": "6e4f3d20-c5c3-407f-9695-8460952bcc68",
-            "displayName": "Access Reviews for Office 365 Groups' membership"
-        } 
+            "displayName": "Access reviews of memberships of a group"
+        },
+        {
+            "id": "d7e0b82d-997f-44d0-ac5e-de9deb087c15",
+            "displayName": "Access reviews of memberships of an Azure AD role"
+        }
     ]
 }
 

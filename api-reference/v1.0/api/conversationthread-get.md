@@ -9,6 +9,8 @@ doc_type: apiPageType
 
 # Get conversationThread
 
+Namespace: microsoft.graph
+
 Get a specific thread that belongs to a group. You can specify both the parent conversation and the thread, or, 
 you can specify the thread without referencing the parent conversation. 
 ## Permissions
@@ -49,7 +51,7 @@ Here is an example of the request.
   "blockType": "request",
   "name": "get_conversationthread"
 }-->
-```http
+```msgraph-interactive
 GET https://graph.microsoft.com/v1.0/groups/{id}/threads/{id}
 ```
 # [C#](#tab/csharp)

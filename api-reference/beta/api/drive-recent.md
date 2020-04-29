@@ -9,6 +9,8 @@ doc_type: apiPageType
 ---
 # List recent files
 
+Namespace: microsoft.graph
+
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 List a set of items that have been recently used by the signed in user.
@@ -33,7 +35,7 @@ One of the following permissions is required to call this API. To learn more, in
        "scopes": "files.read",
        "target": "action" } -->
 
-```http
+```msgraph-interactive
 GET /me/drive/recent
 ```
 # [C#](#tab/csharp)

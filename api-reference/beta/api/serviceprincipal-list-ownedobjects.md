@@ -3,11 +3,13 @@ title: "servicePrincipals: List ownedObjects"
 description: "Retrieve a list of objects owned by the servicePrincipal.  This could include applications or groups."
 localization_priority: Normal
 doc_type: apiPageType
-ms.prod: ""
-author: ""
+ms.prod: "microsoft-identity-platform"
+author: "sureshja"
 ---
 
 # servicePrincipals: List ownedObjects
+
+Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
@@ -21,6 +23,8 @@ One of the following permissions is required to call this API. To learn more, in
 |Delegated (work or school account) | Directory.Read.All, Directory.ReadWrite.All, Directory.AccessAsUser.All    |
 |Delegated (personal Microsoft account) | Not supported.    |
 |Application | Directory.Read.All, Directory.ReadWrite.All |
+
+[!INCLUDE [limited-info](../../includes/limited-info.md)]
 
 ## HTTP request
 <!-- { "blockType": "ignored" } -->
@@ -50,7 +54,7 @@ Here is an example of the request.
   "blockType": "request",
   "name": "get_ownedobjects"
 }-->
-```http
+```msgraph-interactive
 GET https://graph.microsoft.com/beta/servicePrincipals/{id}/ownedObjects
 ```
 # [C#](#tab/csharp)

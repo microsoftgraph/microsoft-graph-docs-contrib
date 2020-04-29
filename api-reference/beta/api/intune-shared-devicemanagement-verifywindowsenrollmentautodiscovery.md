@@ -1,13 +1,15 @@
 ---
 title: "verifyWindowsEnrollmentAutoDiscovery function"
 description: "Not yet documented"
-author: "rolyon"
+author: "dougeby"
 localization_priority: Normal
 ms.prod: "intune"
 doc_type: apiPageType
 ---
 
 # verifyWindowsEnrollmentAutoDiscovery function
+
+Namespace: microsoft.graph
 
 > **Important:** APIs under the /beta version in Microsoft Graph are subject to change. Use of these APIs in production applications is not supported.
 
@@ -22,7 +24,8 @@ One of the following permissions is required to call this API. To learn more, in
 |Delegated (work or school account)||
 | &nbsp; &nbsp; **Onboarding** | DeviceManagementServiceConfig.ReadWrite.All|
 |Delegated (personal Microsoft account)|Not supported.|
-|Application|Not supported.|
+|Application||
+| &nbsp; &nbsp; **Onboarding** | DeviceManagementServiceConfig.ReadWrite.All|
 
 ## HTTP Request
 <!-- {
@@ -70,6 +73,9 @@ Content-Length: 21
   "value": true
 }
 ```
+
+
+
 
 
 

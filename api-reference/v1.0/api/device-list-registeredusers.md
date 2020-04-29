@@ -1,13 +1,15 @@
 ---
 title: "List registeredUsers"
 description: "Retrieve a list of users that are registered users of the device."
-author: "davidmu1"
+author: "spunukol"
 localization_priority: Normal
 ms.prod: "microsoft-identity-platform"
 doc_type: apiPageType
 ---
 
 # List registeredUsers
+
+Namespace: microsoft.graph
 
 Retrieve a list of users that are registered users of the device.
 
@@ -16,12 +18,13 @@ For cloud joined devices and registered personal devices, registered users are s
 ## Permissions
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
 
-
 |Permission type      | Permissions (from least to most privileged)              |
 |:--------------------|:---------------------------------------------------------|
 |Delegated (work or school account) | Directory.Read.All, Directory.ReadWrite.All, Directory.AccessAsUser.All    |
 |Delegated (personal Microsoft account) | Not supported.    |
 |Application | Directory.Read.All or Directory.ReadWrite.All |
+
+[!INCLUDE [limited-info](../../includes/limited-info.md)]
 
 ## HTTP request
 <!-- { "blockType": "ignored" } -->
@@ -50,7 +53,7 @@ Here is an example of the request.
   "blockType": "request",
   "name": "get_registeredusers"
 }-->
-```http
+```msgraph-interactive
 GET https://graph.microsoft.com/v1.0/devices/{id}/registeredUsers
 ```
 # [C#](#tab/csharp)

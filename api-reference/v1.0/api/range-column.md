@@ -9,6 +9,8 @@ doc_type: apiPageType
 
 # Range: Column
 
+Namespace: microsoft.graph
+
 Gets a column contained in the range.
 ## Permissions
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
@@ -56,7 +58,7 @@ Here is an example of the request.
   "isComposable": true,
   "name": "range_column"
 }-->
-```http
+```msgraph-interactive
 GET https://graph.microsoft.com/v1.0/me/drive/items/{id}/workbook/names/{name}/range/column(column=5)
 ```
 # [C#](#tab/csharp)

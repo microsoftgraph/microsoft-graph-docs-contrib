@@ -9,6 +9,8 @@ doc_type: apiPageType
 
 # Range: EntireRow
 
+Namespace: microsoft.graph
+
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 Gets an object that represents the entire row of the range.
@@ -51,7 +53,7 @@ Here is an example of the request.
   "blockType": "request",
   "name": "range_entirerow"
 }-->
-```http
+```msgraph-interactive
 GET https://graph.microsoft.com/beta/me/drive/items/{id}/workbook/names/{name}/range/EntireRow
 ```
 # [C#](#tab/csharp)

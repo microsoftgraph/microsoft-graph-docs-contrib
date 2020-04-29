@@ -1,13 +1,15 @@
 ---
 title: "List events"
 description: "Retrieve a list of event objects."
-author: "dkershaw10"
+author: "yyuank"
 localization_priority: Normal
 ms.prod: "groups"
 doc_type: apiPageType
 ---
 
 # List events
+
+Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
@@ -54,7 +56,7 @@ The following is an example of the request.
   "blockType": "request",
   "name": "get_group_events"
 }-->
-```http
+```msgraph-interactive
 GET https://graph.microsoft.com/beta/groups/{id}/events
 ```
 # [C#](#tab/csharp)

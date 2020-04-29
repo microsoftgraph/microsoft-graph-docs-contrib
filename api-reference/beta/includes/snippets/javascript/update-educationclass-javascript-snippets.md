@@ -17,6 +17,6 @@ const educationClass = {
 
 let res = await client.api('/education/classes/11014')
 	.version('beta')
-	.update({educationClass : educationClass});
+	.update(educationClass);
 
 ```

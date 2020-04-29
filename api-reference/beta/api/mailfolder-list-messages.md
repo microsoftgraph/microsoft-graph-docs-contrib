@@ -2,12 +2,14 @@
 title: "List messages"
 description: "List all the messages in the signed-in user's mailbox, or those messages in a specified folder in the mailbox or drive."
 localization_priority: Normal
-author: "angelgolfer-ms"
+author: "svpsiva"
 ms.prod: "outlook"
 doc_type: apiPageType
 ---
 
 # List messages
+
+Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
@@ -52,7 +54,7 @@ The following is an example of the request.
   "blockType": "request",
   "name": "mailfolder_get_messages"
 }-->
-```http
+```msgraph-interactive
 GET https://graph.microsoft.com/beta/me/mailFolders/AAMkAGVmMDEzM/messages
 ```
 # [C#](#tab/csharp)

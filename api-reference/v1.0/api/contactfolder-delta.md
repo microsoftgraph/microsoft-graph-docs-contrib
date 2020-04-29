@@ -2,12 +2,14 @@
 title: "contactFolder: delta"
 description: "Get a set of contact folders that have been added, deleted, or removed from the user's mailbox."
 localization_priority: Normal
-author: "angelgolfer-ms"
+author: "kevinbellinger"
 ms.prod: "outlook"
 doc_type: apiPageType
 ---
 
 # contactFolder: delta
+
+Namespace: microsoft.graph
 
 Get a set of contact folders that have been added, deleted, or removed from the user's mailbox.
 
@@ -83,7 +85,7 @@ returning **contactFolder** rather than **message** collections.
   "blockType": "request",
   "name": "contactfolder_delta"
 }-->
-```http
+```msgraph-interactive
 GET https://graph.microsoft.com/v1.0/me/contactFolders/delta
 Prefer: odata.maxpagesize=2
 ```

@@ -1,13 +1,15 @@
 ---
 title: "Get calendarGroup"
 description: "Retrieve the properties and relationships of a calendar group object."
-author: "angelgolfer-ms"
+author: "harini84"
 localization_priority: Normal
 ms.prod: "outlook"
 doc_type: apiPageType
 ---
 
 # Get calendarGroup
+
+Namespace: microsoft.graph
 
 Retrieve the properties and relationships of a calendar group object.
 
@@ -63,7 +65,7 @@ Here is an example of the request.
   "name": "get_calendargroup"
 }-->
 
-```http
+```msgraph-interactive
 GET https://graph.microsoft.com/v1.0/me/calendarGroups/{id}
 ```
 # [C#](#tab/csharp)

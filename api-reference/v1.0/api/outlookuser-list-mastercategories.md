@@ -1,13 +1,15 @@
 ---
 title: "List Outlook categories"
 description: "Get all the categories that have been defined for the user."
-author: "angelgolfer-ms"
+author: "svpsiva"
 localization_priority: Normal
 ms.prod: "outlook"
 doc_type: apiPageType
 ---
 
 # List Outlook categories
+
+Namespace: microsoft.graph
 
 
 Get all the categories that have been defined for the user.
@@ -50,7 +52,7 @@ Here is an example of the request.
   "blockType": "request",
   "name": "get_mastercategories"
 }-->
-```http
+```msgraph-interactive
 GET https://graph.microsoft.com/v1.0/me/outlook/masterCategories
 ```
 # [C#](#tab/csharp)

@@ -1,13 +1,15 @@
 ---
 title: "Get contactFolder"
 description: "Get a contact folder by using the contact folder ID."
-author: "angelgolfer-ms"
+author: "kevinbellinger"
 localization_priority: Normal
 ms.prod: "outlook"
 doc_type: apiPageType
 ---
 
 # Get contactFolder
+
+Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
@@ -56,7 +58,7 @@ Here is an example of the request.
   "blockType": "request",
   "name": "get_contactfolder"
 }-->
-```http
+```msgraph-interactive
 GET https://graph.microsoft.com/beta/me/contactFolders/{id}
 ```
 # [C#](#tab/csharp)

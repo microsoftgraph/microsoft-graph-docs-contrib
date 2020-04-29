@@ -9,6 +9,8 @@ doc_type: "apiPageType"
 
 # List rubrics
 
+Namespace: microsoft.graph
+
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 Retrieve a list of [educationRubric](../resources/educationrubric.md) objects.
@@ -57,7 +59,7 @@ The following is an example of the request.
   "name": "get_rubrics"
 }-->
 
-```http
+```msgraph-interactive
 GET https://graph.microsoft.com/beta/education/me/rubrics
 ```
 # [C#](#tab/csharp)

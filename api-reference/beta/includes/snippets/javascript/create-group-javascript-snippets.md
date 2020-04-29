@@ -23,6 +23,6 @@ const group = {
 
 let res = await client.api('/groups')
 	.version('beta')
-	.post({group : group});
+	.post(group);
 
 ```

@@ -1,13 +1,15 @@
 ---
 title: "Get depEnrollmentBaseProfile"
 description: "Read properties and relationships of the depEnrollmentBaseProfile object."
-author: "rolyon"
+author: "dougeby"
 localization_priority: Normal
 ms.prod: "Intune"
 doc_type: apiPageType
 ---
 
 # Get depEnrollmentBaseProfile
+
+Namespace: microsoft.graph
 
 > **Important:** Microsoft Graph APIs under the /beta version are subject to change; production use is not supported.
 
@@ -34,7 +36,7 @@ GET /deviceManagement/depOnboardingSettings/{depOnboardingSettingId}/enrollmentP
 ```
 
 ## Optional query parameters
-This method supports the [OData Query Parameters](https://docs.microsoft.com/en-us/graph/query-parameters) to help customize the response.
+This method supports the [OData Query Parameters](/graph/query-parameters) to help customize the response.
 
 ## Request headers
 |Header|Value|
@@ -61,7 +63,7 @@ Here is an example of the response. Note: The response object shown here may be 
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 1136
+Content-Length: 1209
 
 {
   "value": {
@@ -91,13 +93,12 @@ Content-Length: 1136
     "diagnosticsDisabled": true,
     "displayToneSetupDisabled": true,
     "privacyPaneDisabled": true,
-    "deviceNameTemplate": "Device Name Template value"
+    "screenTimeScreenDisabled": true,
+    "deviceNameTemplate": "Device Name Template value",
+    "configurationWebUrl": true
   }
 }
 ```
-
-
-
 
 
 

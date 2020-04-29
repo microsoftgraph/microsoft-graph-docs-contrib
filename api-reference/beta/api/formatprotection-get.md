@@ -9,6 +9,8 @@ ms.prod: ""
 
 # Get FormatProtection
 
+Namespace: microsoft.graph
+
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 Retrieve the properties and relationships of formatprotection object.
@@ -51,7 +53,7 @@ Here is an example of the request.
   "blockType": "request",
   "name": "get_formatprotection"
 }-->
-```http
+```msgraph-interactive
 GET https://graph.microsoft.com/beta/me/drive/items/{id}/workbook/names/{name}/range/format/protection
 ```
 # [C#](#tab/csharp)

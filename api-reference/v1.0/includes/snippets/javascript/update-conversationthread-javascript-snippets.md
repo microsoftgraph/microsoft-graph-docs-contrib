@@ -16,6 +16,6 @@ const conversationThread = {
 };
 
 let res = await client.api('/groups/{id}/threads/{id}')
-	.update({conversationThread : conversationThread});
+	.update(conversationThread);
 
 ```

@@ -13,11 +13,13 @@ var @event = new Event
 	ResponseStatus = new ResponseStatus
 	{
 		Response = ResponseType.None,
-		Time = "datetime-value"
+		Time = DateTimeOffset.Parse("datetime-value")
 	},
 	Recurrence = null,
 	ICalUId = "iCalUId-value",
 	ReminderMinutesBeforeStart = 99,
+	IsOnlineMeeting = true,
+	OnlineMeetingProvider = OnlineMeetingProviderType.TeamsForBusiness,
 	IsReminderOn = true
 };
 

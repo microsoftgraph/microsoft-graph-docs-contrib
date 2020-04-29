@@ -9,6 +9,8 @@ doc_type: apiPageType
 
 # Get educationAssignmentResource
 
+Namespace: microsoft.graph
+
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 Get the properties of a specific resource on an assignment.  
@@ -47,7 +49,7 @@ The following is an example of the request.
   "blockType": "request",
   "name": "get_educationassignmentresource"
 }-->
-```http
+```msgraph-interactive
 GET https://graph.microsoft.com/beta/education/classes/11021/assignments/19002/resources/22002
 ```
 # [C#](#tab/csharp)

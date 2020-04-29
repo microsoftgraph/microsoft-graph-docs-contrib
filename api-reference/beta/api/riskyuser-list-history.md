@@ -8,6 +8,8 @@ doc_type: apiPageType
 ---
 # List history of riskyUser
 
+Namespace: microsoft.graph
+
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 Get the risk history of a [riskyUser](../resources/riskyuser.md) resource.
@@ -52,7 +54,7 @@ Here is an example of the request.
   "name": "get_userriskhitsory",
   "sampleKeys": ["41a31b00-3b3b-42d9-8f1c-6d4f14e74c69"]
 }-->
-```http
+```msgraph-interactive
 GET https://graph.microsoft.com/beta/riskyUsers/41a31b00-3b3b-42d9-8f1c-6d4f14e74c69/history
 ```
 # [C#](#tab/csharp)

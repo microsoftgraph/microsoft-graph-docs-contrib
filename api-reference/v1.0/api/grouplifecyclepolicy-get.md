@@ -1,13 +1,15 @@
 ---
 title: "Get groupLifecyclePolicy"
 description: "Retrieve the properties and relationships of a groupLifecyclePolicies object."
-author: "dkershaw10"
+author: "yyuank"
 localization_priority: Normal
 ms.prod: "groups"
 doc_type: apiPageType
 ---
 
 # Get groupLifecyclePolicy
+
+Namespace: microsoft.graph
 
 Retrieve the properties and relationships of a [groupLifecyclePolicies](../resources/grouplifecyclepolicy.md) object.
 
@@ -48,7 +50,7 @@ If successful, this method returns a `200 OK` response code and [groupLifecycleP
   "blockType": "request",
   "name": "get_grouplifecyclepolicy"
 }-->
-```http
+```msgraph-interactive
 GET https://graph.microsoft.com/v1.0/groupLifecyclePolicies/{id}
 ```
 # [C#](#tab/csharp)

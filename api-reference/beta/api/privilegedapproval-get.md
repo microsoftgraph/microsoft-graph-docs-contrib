@@ -3,11 +3,13 @@ title: "Get privilegedApproval"
 description: "Retrieve the properties and relationships of privilegedapproval object."
 localization_priority: Normal
 doc_type: apiPageType
-ms.prod: ""
-author: ""
+ms.prod: "microsoft-identity-platform"
+author: "shauliu"
 ---
 
 # Get privilegedApproval
+
+Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
@@ -53,7 +55,7 @@ Here is an example of the request.
   "blockType": "request",
   "name": "get_privilegedapproval"
 }-->
-```http
+```msgraph-interactive
 GET https://graph.microsoft.com/beta/privilegedApproval/{id}
 ```
 # [C#](#tab/csharp)

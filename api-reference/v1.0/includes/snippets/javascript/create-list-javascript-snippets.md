@@ -28,6 +28,6 @@ const list = {
 };
 
 let res = await client.api('/sites/{site-id}/lists')
-	.post({list : list});
+	.post(list);
 
 ```

@@ -1,13 +1,15 @@
 ---
 title: "List domains"
 description: "Retrieve a list of domain objects."
-author: "davidmu1"
+author: "adimitui"
 localization_priority: Normal
 ms.prod: "microsoft-identity-platform"
 doc_type: apiPageType
 ---
 
 # List domains
+
+Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
@@ -51,7 +53,7 @@ If successful, this method returns a `200 OK` response code and collection of [d
   "blockType": "request",
   "name": "get_domains"
 }-->
-```http
+```msgraph-interactive
 GET https://graph.microsoft.com/beta/domains
 ```
 # [C#](#tab/csharp)

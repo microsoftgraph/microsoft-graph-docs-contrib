@@ -9,6 +9,8 @@ doc_type: apiPageType
 
 # Get group
 
+Namespace: microsoft.graph
+
 Retrieve the Office 365 **group** that corresponds to this **educationClass**.
 
 >**Note:** If the delegated token is used, members can only see information about their own schools. Use the `...beta/education/me/schools` resource in this case.
@@ -45,7 +47,7 @@ The following is an example of the request.
   "blockType": "request",
   "name": "educationclass_get_group"
 }-->
-```http
+```msgraph-interactive
 GET https://graph.microsoft.com/v1.0/education/classes/{class-id}/group
 ```
 # [C#](#tab/csharp)

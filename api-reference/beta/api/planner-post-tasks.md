@@ -9,6 +9,8 @@ doc_type: apiPageType
 
 # Create plannerTask
 
+Namespace: microsoft.graph
+
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 Use this API to create a new **plannerTask**.
@@ -25,7 +27,6 @@ One of the following permissions is required to call this API. To learn more, in
 <!-- { "blockType": "ignored" } -->
 ```http
 POST /planner/tasks
-
 ```
 ## Request headers
 | Name       | Description|
@@ -65,7 +66,7 @@ Content-length: 285
       "@odata.type": "#microsoft.graph.plannerAssignment",
       "orderHint": " !"
     }
-  },
+  }
 }
 ```
 # [JavaScript](#tab/javascript)

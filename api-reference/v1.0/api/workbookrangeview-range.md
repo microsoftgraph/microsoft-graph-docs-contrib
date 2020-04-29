@@ -8,6 +8,8 @@ doc_type: apiPageType
 ---
 
 # workbookRangeView: range
+
+Namespace: microsoft.graph
 Return the range associated with the rangeView resource.
 
 ## Permissions
@@ -49,7 +51,7 @@ Here is an example of the request.
   "isComposable": true,
   "name": "workbookrangeview_range"
 }-->
-```http
+```msgraph-interactive
 GET https://graph.microsoft.com/v1.0/me/drive/root/workbook/worksheets/{id}/range(address='A1:Z10')/visibleView/range
 ```
 # [C#](#tab/csharp)

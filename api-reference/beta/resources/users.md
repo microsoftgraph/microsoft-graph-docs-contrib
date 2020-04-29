@@ -1,8 +1,8 @@
 ---
 title: "Working with users in Microsoft Graph"
-description: "You can use Microsoft Graph to build compelling app experiences based on users, their relationships with other users and groups, and their mail, calendar, and files."
+description: "Build compelling app experiences based on users, their relationships with other users and groups, and their mail, calendar, and files."
 localization_priority: Priority
-author: "dkershaw10"
+author: "krbain"
 ms.prod: "microsoft-identity-platform"
 doc_type: conceptualPageType
 ---
@@ -27,6 +27,7 @@ One of the following [permissions](https://developer.microsoft.com/graph/docs/au
 - User.ReadWrite
 - User.Read.All
 - User.ReadWrite.All
+- User.ManageIdentities.All
 - Directory.Read.All
 - Directory.ReadWrite.All
 - Directory.AccessAsUser.All

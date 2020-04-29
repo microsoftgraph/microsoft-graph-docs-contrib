@@ -9,6 +9,8 @@ doc_type: apiPageType
 
 # List educationClasses
 
+Namespace: microsoft.graph
+
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 Retrieve a list of classes owned by a school.
@@ -48,7 +50,7 @@ The following is an example of the request.
   "blockType": "request",
   "name": "get_classes"
 }-->
-```http
+```msgraph-interactive
 GET https://graph.microsoft.com/beta/education/schools/10002/classes
 ```
 # [C#](#tab/csharp)

@@ -10,6 +10,11 @@ doc_type: apiPageType
 ---
 
 # Get countriesRegions
+
+Namespace: microsoft.graph
+
+[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
+
 Retrieve the properties and relationships of a countriesRegions object for Dynamics 365 Business Central.
 
 ## Permissions
@@ -23,7 +28,7 @@ One of the following permissions is required to call this API. To learn more, in
 
 ## HTTP request
 ```
-GET /financials/companies('{id}')/countriesRegions('{id}')
+GET /financials/companies/{id}/countriesRegions/{id}
 ```
 
 ## Optional query parameters
@@ -46,7 +51,7 @@ If successful, this method returns a `200 OK` response code and a **countriesReg
 
 Here is an example of the request.
 ```json
-GET https://graph.microsoft.com/beta/financials/companies('{id}')/countriesRegions('{id}')
+GET https://graph.microsoft.com/beta/financials/companies/{id}/countriesRegions/{id}
 ```
 
 **Response**

@@ -9,6 +9,8 @@ doc_type: apiPageType
 
 # Get ChartLineFormat
 
+Namespace: microsoft.graph
+
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 Retrieve the properties and relationships of chartlineformat object.
@@ -52,7 +54,7 @@ Here is an example of the request.
   "blockType": "request",
   "name": "get_chartlineformat"
 }-->
-```http
+```msgraph-interactive
 GET https://graph.microsoft.com/beta/me/drive/items/{id}/workbook/worksheets/{id|name}/charts/{name}/axes/seriesaxis/format/line
 ```
 # [C#](#tab/csharp)

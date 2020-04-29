@@ -1,13 +1,15 @@
 ---
 title: "List attachments"
 description: "Retrieve a list of attachment objects attached to an event."
-author: "angelgolfer-ms"
+author: "svpsiva"
 localization_priority: Normal
 ms.prod: "outlook"
 doc_type: apiPageType
 ---
 
 # List attachments
+
+Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
@@ -72,7 +74,7 @@ Here is an example of the request.
   "name": "event_get_attachments_beta"
 }-->
 
-```http
+```msgraph-interactive
 GET https://graph.microsoft.com/beta/me/events/{id}/attachments
 ```
 # [C#](#tab/csharp)

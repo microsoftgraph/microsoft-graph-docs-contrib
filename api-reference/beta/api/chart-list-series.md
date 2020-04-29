@@ -9,6 +9,8 @@ doc_type: apiPageType
 
 # List series
 
+Namespace: microsoft.graph
+
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 Retrieve a list of chartseries objects.
@@ -50,7 +52,7 @@ Here is an example of the request.
   "blockType": "request",
   "name": "get_series"
 }-->
-```http
+```msgraph-interactive
 GET https://graph.microsoft.com/beta/me/drive/items/{id}/workbook/worksheets/{id|name}/charts/{name}/series
 ```
 # [C#](#tab/csharp)

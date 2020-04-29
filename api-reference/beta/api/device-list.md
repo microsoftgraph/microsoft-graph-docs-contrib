@@ -1,13 +1,15 @@
 ---
 title: "List devices"
 description: "Retrieve a list of devices registered in the directory. "
-author: "davidmu1"
+author: "spunukol"
 localization_priority: Normal
 ms.prod: "microsoft-identity-platform"
 doc_type: apiPageType
 ---
 
 # List devices
+
+Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
@@ -50,7 +52,7 @@ Here is an example of the request.
   "blockType": "request",
   "name": "get_devices"
 }-->
-```http
+```msgraph-interactive
 GET https://graph.microsoft.com/beta/devices
 ```
 # [C#](#tab/csharp)

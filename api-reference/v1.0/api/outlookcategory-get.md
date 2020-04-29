@@ -1,13 +1,15 @@
 ---
 title: "Get Outlook category"
 description: "Get the properties and relationships of the specified outlookCategory object."
-author: "angelgolfer-ms"
+author: "svpsiva"
 localization_priority: Normal
 ms.prod: "outlook"
 doc_type: apiPageType
 ---
 
 # Get Outlook category
+
+Namespace: microsoft.graph
 
 
 Get the properties and relationships of the specified [outlookCategory](../resources/outlookcategory.md) object.
@@ -51,7 +53,7 @@ Here is an example of the request.
   "sampleKeys": ["de912e4d-c790-4da9-949c-ccd933aaa0f7"],
   "name": "get_outlookcategory"
 }-->
-```http
+```msgraph-interactive
 GET https://graph.microsoft.com/v1.0/me/outlook/masterCategories/de912e4d-c790-4da9-949c-ccd933aaa0f7
 ```
 # [C#](#tab/csharp)

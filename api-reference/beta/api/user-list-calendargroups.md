@@ -2,12 +2,14 @@
 title: "List calendarGroups"
 description: "Get the user's calendar groups."
 localization_priority: Normal
-author: "dkershaw10"
-ms.prod: "microsoft-identity-platform"
+author: "harini84"
+ms.prod: "outlook"
 doc_type: apiPageType
 ---
 
 # List calendarGroups
+
+Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
@@ -50,7 +52,7 @@ Here is an example of the request.
   "blockType": "request",
   "name": "get_calendargroups"
 }-->
-```http
+```msgraph-interactive
 GET https://graph.microsoft.com/beta/me/calendarGroups
 ```
 # [C#](#tab/csharp)

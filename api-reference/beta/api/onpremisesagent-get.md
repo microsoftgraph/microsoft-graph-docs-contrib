@@ -2,12 +2,14 @@
 title: "Get onPremisesAgent"
 description: "Retrieve the properties and relationships of an onPremisesAgent object."
 localization_priority: Normal
-author: "davidmu1"
+author: "japere"
 ms.prod: "microsoft-identity-platform"
 doc_type: "apiPageType"
 ---
 
 # Get onPremisesAgent
+
+Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
@@ -28,7 +30,7 @@ One of the following permissions is required to call this API. To learn more, in
 <!-- { "blockType": "ignored" } -->
 
 ```http
-GET ~/onPremisesPublishingProfiles/{publishingType}/agents/{id1}/?$expand=agentGroups
+GET /onPremisesPublishingProfiles/{publishingType}/agents/{id1}/?$expand=agentGroups
 ```
 
 ## Optional query parameters
@@ -61,7 +63,7 @@ The following is an example of the request.
   "name": "get_onpremisesagent"
 }-->
 
-```http
+```msgraph-interactive
 GET https://graph.microsoft.com/beta/onPremisesPublishingProfiles/provisioning/agents/1234b780-965f-4149-85c5-a8c73e58b67d/?$expand=agentGroups
 ```
 # [C#](#tab/csharp)

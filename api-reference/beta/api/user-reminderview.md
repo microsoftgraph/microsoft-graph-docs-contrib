@@ -1,13 +1,15 @@
 ---
 title: "user: reminderView"
 description: "Return a list of calendar reminders within the specified start and end times. "
-author: "dkershaw10"
+author: "harini84"
 localization_priority: Normal
-ms.prod: "microsoft-identity-platform"
+ms.prod: "outlook"
 doc_type: apiPageType
 ---
 
 # user: reminderView
+
+Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
@@ -60,7 +62,7 @@ Here is an example of the request.
   "blockType": "request",
   "name": "user_reminderview"
 }-->
-```http
+```msgraph-interactive
 GET https://graph.microsoft.com/beta/me/reminderView(startDateTime='2017-06-05T10:00:00.0000000',endDateTime='2017-06-11T11:00:00.0000000')
 ```
 # [C#](#tab/csharp)

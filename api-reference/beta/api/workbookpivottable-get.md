@@ -9,6 +9,8 @@ doc_type: apiPageType
 
 # Get workbookPivotTable
 
+Namespace: microsoft.graph
+
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 Retrieve the properties and relationships of workbookPivotTable object.
@@ -52,7 +54,7 @@ Here is an example of the request.
   "blockType": "request",
   "name": "get_workbookpivottable"
 }-->
-```http
+```msgraph-interactive
 GET https://graph.microsoft.com/beta/drive/root/workbook/worksheets/{id}/pivotTables/{id}
 ```
 # [C#](#tab/csharp)

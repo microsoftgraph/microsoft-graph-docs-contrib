@@ -40,6 +40,6 @@ const event = {
 
 let res = await client.api('/groups/01d4ee64-15ce-491e-bad1-b91aa3223df4/events')
 	.version('beta')
-	.post({event : event});
+	.post(event);
 
 ```

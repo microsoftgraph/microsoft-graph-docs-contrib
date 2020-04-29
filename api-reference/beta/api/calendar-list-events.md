@@ -1,13 +1,15 @@
 ---
 title: "List events"
 description: "Retrieve a list of events in a calendar.  The list contains single instance meetings and series masters."
-author: "angelgolfer-ms"
+author: "harini84"
 localization_priority: Normal
 ms.prod: "outlook"
 doc_type: apiPageType
 ---
 
 # List events
+
+Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
@@ -69,7 +71,7 @@ Here is an example of the request.
   "blockType": "request",
   "name": "calendar_get_events"
 }-->
-```http
+```msgraph-interactive
 GET https://graph.microsoft.com/beta/me/calendar/events
 ```
 # [C#](#tab/csharp)

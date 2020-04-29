@@ -10,6 +10,11 @@ doc_type: apiPageType
 ---
 
 # Get agedAccountsPayable
+
+Namespace: microsoft.graph
+
+[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
+
 Retrieve the properties and relationships of an aged accounts payable report object for Dynamics 365 Business Central.
 
 ## Permissions
@@ -23,7 +28,7 @@ One of the following permissions is required to call this API. To learn more, in
 
 ## HTTP request
 ```
-GET /financials/companies('{id}')/agedAccountsPayable
+GET /financials/companies/{id}/agedAccountsPayable
 ```
 ## Optional query parameters
 This method supports the [OData Query Parameters](/graph/query-parameters) to help customize the response.
@@ -45,7 +50,7 @@ If successful, this method returns a `200 OK` response code and an **agedAccount
 
 Here is an example of the request.
 ```json
-GET https://graph.microsoft.com/beta/financials/companies('{id}')/agedAccountsPayable?$filter=periodLengthFilter eq '3M'
+GET https://graph.microsoft.com/beta/financials/companies/{id}/agedAccountsPayable?$filter=periodLengthFilter eq '3M'
 ```
 
 **Response**

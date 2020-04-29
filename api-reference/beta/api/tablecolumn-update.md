@@ -9,6 +9,8 @@ doc_type: apiPageType
 
 # Update tablecolumn
 
+Namespace: microsoft.graph
+
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 Update the properties of tablecolumn object.
@@ -76,6 +78,9 @@ Content-length: 81
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
+
+> [!NOTE]
+> If you want to update multiple fields of a column, make **values** a string array in the request. For example: `"values": [["a"], [1], [2], [3]]`.
 
 ##### Response
 Here is an example of the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.

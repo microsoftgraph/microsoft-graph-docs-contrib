@@ -2,12 +2,14 @@
 title: "List contactFolders"
 description: "Get all the contact folders in the signed-in user's mailbox."
 localization_priority: Normal
-author: "dkershaw10"
-ms.prod: "microsoft-identity-platform"
+author: "kevinbellinger"
+ms.prod: "outlook"
 doc_type: apiPageType
 ---
 
 # List contactFolders
+
+Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
@@ -51,7 +53,7 @@ Here is an example of the request.
   "blockType": "request",
   "name": "get_contactfolders"
 }-->
-```http
+```msgraph-interactive
 GET https://graph.microsoft.com/beta/me/contactFolders
 ```
 # [C#](#tab/csharp)

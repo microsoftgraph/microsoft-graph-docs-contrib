@@ -1,13 +1,16 @@
 ---
 title: "List memberOf"
 description: "Get groups that the group is a direct member of. "
-author: "dkershaw10"
+author: "yyuank"
 localization_priority: Priority
 ms.prod: "groups"
 doc_type: apiPageType
 ---
 
 # List memberOf
+
+Namespace: microsoft.graph
+
 Get groups that the group is a direct member of. 
 
 This operation is not transitive. Unlike getting a user's Office 365 Groups, this returns all types of groups, not just Office 365 groups.
@@ -17,9 +20,11 @@ One of the following permissions is required to call this API. To learn more, in
 
 |Permission type      | Permissions (from least to most privileged)              |
 |:--------------------|:---------------------------------------------------------|
-|Delegated (work or school account) | Group.Read.All    |
+|Delegated (work or school account) | GroupMember.Read.All, Group.Read.All    |
 |Delegated (personal Microsoft account) | Not supported.    |
-|Application | Group.Read.All, Directory.Read.All |
+|Application | GroupMember.Read.All, Group.Read.All, Directory.Read.All |
+
+[!INCLUDE [limited-info](../../includes/limited-info.md)]
 
 ## HTTP request
 <!-- { "blockType": "ignored" } -->
@@ -50,7 +55,7 @@ The following is an example of the request.
   "blockType": "request",
   "name": "group_get_memberof"
 }-->
-```http
+```msgraph-interactive
 GET https://graph.microsoft.com/v1.0/groups/{id}/memberOf
 ```
 # [C#](#tab/csharp)

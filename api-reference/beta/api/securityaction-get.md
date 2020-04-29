@@ -9,6 +9,8 @@ doc_type: apiPageType
 
 # Get securityAction
 
+Namespace: microsoft.graph
+
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 Retrieve the properties and relationships of a [securityAction](../resources/securityaction.md) object.
@@ -61,7 +63,7 @@ The following is an example of the request.
   "name": "get_securityaction"
 }-->
 
-```http
+```msgraph-interactive
 GET https://graph.microsoft.com/beta/security/securityActions/{id}
 ```
 # [C#](#tab/csharp)

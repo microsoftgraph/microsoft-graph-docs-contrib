@@ -9,6 +9,8 @@ doc_type: apiPageType
 ---
 # Get a special folder by name
 
+Namespace: microsoft.graph
+
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 Use the special collection to access a special folder by name.
@@ -35,7 +37,7 @@ One of the following permissions is required to call this API. To learn more, in
 # [HTTP](#tab/http)
 <!-- { "blockType": "request", "name": "get-special-folder", "scopes": "files.read" } -->
 
-```http
+```msgraph-interactive
 GET /me/drive/special/{name}
 ```
 # [C#](#tab/csharp)
@@ -103,7 +105,7 @@ collection or use the [expand](/graph/query-parameters) option to expand the chi
 # [HTTP](#tab/http)
 <!-- { "blockType": "request", "name": "get-special-children", "scopes": "files.read" } -->
 
-```http
+```msgraph-interactive
 GET /me/drive/special/{name}/children
 ```
 # [C#](#tab/csharp)

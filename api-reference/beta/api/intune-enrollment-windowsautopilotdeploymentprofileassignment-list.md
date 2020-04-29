@@ -1,13 +1,15 @@
 ---
 title: "List windowsAutopilotDeploymentProfileAssignments"
 description: "List properties and relationships of the windowsAutopilotDeploymentProfileAssignment objects."
-author: "rolyon"
+author: "dougeby"
 localization_priority: Normal
 ms.prod: "Intune"
 doc_type: apiPageType
 ---
 
 # List windowsAutopilotDeploymentProfileAssignments
+
+Namespace: microsoft.graph
 
 > **Important:** Microsoft Graph APIs under the /beta version are subject to change; production use is not supported.
 
@@ -58,7 +60,7 @@ Here is an example of the response. Note: The response object shown here may be 
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 285
+Content-Length: 354
 
 {
   "value": [
@@ -67,14 +69,13 @@ Content-Length: 285
       "id": "de7e1e1e-1e1e-de7e-1e1e-7ede1e1e7ede",
       "target": {
         "@odata.type": "microsoft.graph.deviceAndAppManagementAssignmentTarget"
-      }
+      },
+      "source": "policySets",
+      "sourceId": "Source Id value"
     }
   ]
 }
 ```
-
-
-
 
 
 

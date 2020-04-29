@@ -1,13 +1,15 @@
 ---
 title: "List photos"
 description: "Retrieve a list of profilePhoto objects."
-author: "dkershaw10"
+author: "yyuank"
 localization_priority: Normal
 ms.prod: "groups"
 doc_type: apiPageType
 ---
 
 # List photos
+
+Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
@@ -52,7 +54,7 @@ The following is an example of the request.
   "blockType": "request",
   "name": "get_photos"
 }-->
-```http
+```msgraph-interactive
 GET https://graph.microsoft.com/beta/groups/{id}/photos
 ```
 # [C#](#tab/csharp)

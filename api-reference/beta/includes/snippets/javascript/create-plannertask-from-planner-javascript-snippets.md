@@ -19,11 +19,11 @@ const plannerTask = {
       @odata.type: "#microsoft.graph.plannerAssignment",
       orderHint: " !"
     }
-  },
+  }
 };
 
 let res = await client.api('/planner/tasks')
 	.version('beta')
-	.post({plannerTask : plannerTask});
+	.post(plannerTask);
 
 ```

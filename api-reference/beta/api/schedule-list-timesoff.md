@@ -9,6 +9,8 @@ doc_type: apiPageType
 
 # List timesOff
 
+Namespace: microsoft.graph
+
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 Get the list of [timeOff](../resources/timeoff.md) instances in a [schedule](../resources/schedule.md).
@@ -60,7 +62,7 @@ The following is an example of a request that gets all **timeOff** objects that 
   "blockType": "request",
   "name": "schedule-list-timesoff"
 }-->
-```http
+```msgraph-interactive
 GET https://graph.microsoft.com/beta/teams/{teamId}/schedule/timesOff?$filter=sharedTimeOff/startDateTime ge 2019-03-11T00:00:00.000Z and sharedTimeOff/endDateTime le 2019-03-18T00:00:00.000Z and draftTimeOff/startDateTime ge 2019-03-11T00:00:00.000Z and draftTimeOff/endDateTime le 2019-03-18T00:00:00.000Z
 ```
 # [C#](#tab/csharp)

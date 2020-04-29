@@ -9,6 +9,8 @@ doc_type: apiPageType
 ---
 # Track changes for a Drive
 
+Namespace: microsoft.graph
+
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 This method allows your app to track changes to a drive and its children over time.
@@ -80,7 +82,7 @@ Here is an example of the initial request.
 # [HTTP](#tab/http)
 <!-- { "blockType": "request", "name": "get_item_delta_first" } -->
 
-```http
+```msgraph-interactive
 GET https://graph.microsoft.com/beta/me/drive/root/delta
 ```
 # [C#](#tab/csharp)
@@ -145,7 +147,7 @@ Here is an example request after the initial request.
 # [HTTP](#tab/http)
 <!-- { "blockType": "request", "name": "get_item_delta_last" }-->
 
-```http
+```msgraph-interactive
 GET https://graph.microsoft.com/beta/me/drive/root/delta(token='1230919asd190410jlka')
 ```
 # [C#](#tab/csharp)
@@ -221,7 +223,7 @@ Using `delta` is the only way to guarantee that you've read all of the data you 
 # [HTTP](#tab/http)
 <!-- { "blockType": "request", "name": "get-delta-latest", "scope": "files.read", "target": "action" } -->
 
-```http
+```msgraph-interactive
 GET /me/drive/root/delta?token=latest
 ```
 # [C#](#tab/csharp)

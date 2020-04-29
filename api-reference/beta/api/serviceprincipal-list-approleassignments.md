@@ -3,11 +3,13 @@ title: "servicePrincipal: List appRoleAssignments"
 description: "Retrieve a list of approleassignment objects."
 localization_priority: Normal
 doc_type: apiPageType
-ms.prod: ""
-author: ""
+ms.prod: "microsoft-identity-platform"
+author: "sureshja"
 ---
 
 # servicePrincipal: List appRoleAssignments
+
+Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
@@ -50,7 +52,7 @@ Here is an example of the request.
   "blockType": "request",
   "name": "get_approleassignments"
 }-->
-```http
+```msgraph-interactive
 GET https://graph.microsoft.com/beta/servicePrincipals/{id}/appRoleAssignments
 ```
 # [C#](#tab/csharp)

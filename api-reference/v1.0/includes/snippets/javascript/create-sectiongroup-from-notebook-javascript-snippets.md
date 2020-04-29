@@ -15,6 +15,6 @@ const sectionGroup = {
 };
 
 let res = await client.api('/me/onenote/notebooks/{id}/sectionGroups')
-	.post({sectionGroup : sectionGroup});
+	.post(sectionGroup);
 
 ```

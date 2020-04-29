@@ -2,12 +2,14 @@
 title: "Get bookingService"
 description: "Get the properties and relationships of a bookingService object in the specified bookingbusiness."
 localization_priority: Normal
-author: "angelgolfer-ms"
+author: "arvindmicrosoft"
 ms.prod: "bookings"
 doc_type: apiPageType
 ---
 
 # Get bookingService
+
+Namespace: microsoft.graph
 
  [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
@@ -47,7 +49,7 @@ The following is an example of the request.
   "blockType": "request",
   "name": "get_bookingservice"
 }-->
-```http
+```msgraph-interactive
 GET https://graph.microsoft.com/beta/bookingBusinesses/Contosolunchdelivery@M365B489948.onmicrosoft.com/services/57da6774-a087-4d69-b0e6-6fb82c339976
 ```
 # [C#](#tab/csharp)

@@ -9,6 +9,8 @@ doc_type: apiPageType
 
 # Get conversationThread
 
+Namespace: microsoft.graph
+
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 Get a specific thread that belongs to a group. You can specify both the parent conversation and the thread, or, 
@@ -51,7 +53,7 @@ Here is an example of the request.
   "blockType": "request",
   "name": "get_conversationthread"
 }-->
-```http
+```msgraph-interactive
 GET https://graph.microsoft.com/beta/groups/{id}/threads/{id}
 ```
 # [C#](#tab/csharp)

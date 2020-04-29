@@ -3,11 +3,13 @@ title: "synchronizationSchema: filterOperators"
 description: "List all operators supported in the scoping filters."
 localization_priority: Normal
 doc_type: apiPageType
-author: "davidmu1"
+author: "ArvindHarinder1"
 ms.prod: "microsoft-identity-platform"
 ---
 
 # synchronizationSchema: filterOperators
+
+Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
@@ -54,7 +56,7 @@ The following is an example of a request.
   "blockType": "request",
   "name": "synchronizationschema_filteroperators"
 }-->
-```http
+```msgraph-interactive
 GET https://graph.microsoft.com/beta/servicePrincipals/{id}/synchronization/jobs/{jobId}/schema/filterOperators
 ```
 # [C#](#tab/csharp)

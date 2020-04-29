@@ -2,12 +2,14 @@
 title: "mailFolder: delta"
 description: "Get a set of mail folders that have been added, deleted, or removed from the user's mailbox."
 localization_priority: Normal
-author: "angelgolfer-ms"
+author: "svpsiva"
 ms.prod: "outlook"
 doc_type: apiPageType
 ---
 
 # mailFolder: delta
+
+Namespace: microsoft.graph
 
 Get a set of mail folders that have been added, deleted, or removed from the user's mailbox.
 
@@ -22,9 +24,9 @@ One of the following permissions is required to call this API. To learn more, in
 
 |Permission type      | Permissions (from least to most privileged)              |
 |:--------------------|:---------------------------------------------------------|
-|Delegated (work or school account) | Mail.Read, Mail.ReadWrite    |
-|Delegated (personal Microsoft account) | Mail.Read, Mail.ReadWrite    |
-|Application | Mail.Read, Mail.ReadWrite |
+|Delegated (work or school account) | Mail.ReadBasic, Mail.Read, Mail.ReadWrite    |
+|Delegated (personal Microsoft account) | Mail.ReadBasic, Mail.Read, Mail.ReadWrite    |
+|Application | Mail.ReadBasic.All, Mail.Read, Mail.ReadWrite |
 
 ## HTTP request
 <!-- { "blockType": "ignored" } -->
@@ -83,7 +85,7 @@ returning **mailFolder** rather than **message** collections.
   "blockType": "request",
   "name": "mailfolder_delta"
 }-->
-```http
+```msgraph-interactive
 GET https://graph.microsoft.com/v1.0/me/mailFolders/delta
 
 Prefer: odata.maxpagesize=2

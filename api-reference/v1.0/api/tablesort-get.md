@@ -9,6 +9,8 @@ doc_type: apiPageType
 
 # Get TableSort
 
+Namespace: microsoft.graph
+
 Retrieve the properties and relationships of tablesort object.
 ## Permissions
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
@@ -49,7 +51,7 @@ Here is an example of the request.
   "blockType": "request",
   "name": "get_tablesort"
 }-->
-```http
+```msgraph-interactive
 GET https://graph.microsoft.com/v1.0/me/drive/items/{id}/workbook/tables/{id|name}/sort
 ```
 # [C#](#tab/csharp)

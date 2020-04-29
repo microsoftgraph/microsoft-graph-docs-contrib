@@ -18,6 +18,6 @@ const tiIndicator = {
 
 let res = await client.api('/security/tiIndicators/{id}')
 	.version('beta')
-	.update({tiIndicator : tiIndicator});
+	.update(tiIndicator);
 
 ```

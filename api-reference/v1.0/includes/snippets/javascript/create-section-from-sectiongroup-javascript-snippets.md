@@ -15,6 +15,6 @@ const onenoteSection = {
 };
 
 let res = await client.api('/me/onenote/sectionGroups/{id}/sections')
-	.post({onenoteSection : onenoteSection});
+	.post(onenoteSection);
 
 ```

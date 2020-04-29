@@ -9,6 +9,8 @@ doc_type: apiPageType
 
 # List educationClasses
 
+Namespace: microsoft.graph
+
 Retrieve a list of classes owned by a school.
 
 ## Permissions
@@ -46,7 +48,7 @@ The following is an example of the request.
   "blockType": "request",
   "name": "get_classes"
 }-->
-```http
+```msgraph-interactive
 GET https://graph.microsoft.com/v1.0/education/schools/{school-id}/classes
 ```
 # [C#](#tab/csharp)

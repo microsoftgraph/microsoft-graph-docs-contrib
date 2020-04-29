@@ -16,6 +16,6 @@ const educationRubric = {
 
 let res = await client.api('/education/classes/{id}/assignments/{id}/rubric/$ref')
 	.version('beta')
-	.put({educationRubric : educationRubric});
+	.put(educationRubric);
 
 ```

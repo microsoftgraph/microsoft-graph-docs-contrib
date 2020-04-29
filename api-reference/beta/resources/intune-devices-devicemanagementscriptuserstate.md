@@ -1,13 +1,15 @@
 ---
 title: "deviceManagementScriptUserState resource type"
 description: "Contains properties for user run state of the device management script."
-author: "rolyon"
+author: "dougeby"
 localization_priority: Normal
 ms.prod: "Intune"
 doc_type: resourcePageType
 ---
 
 # deviceManagementScriptUserState resource type
+
+Namespace: microsoft.graph
 
 > **Important:** Microsoft Graph APIs under the /beta version are subject to change; production use is not supported.
 
@@ -27,7 +29,7 @@ Contains properties for user run state of the device management script.
 ## Properties
 |Property|Type|Description|
 |:---|:---|:---|
-|id|String|Key of the device management script user state entity.|
+|id|String|Key of the device management script user state entity. This property is read-only.|
 |successDeviceCount|Int32|Success device count for specific user.|
 |errorDeviceCount|Int32|Error device count for specific user.|
 |userPrincipalName|String|User principle name of specific user.|

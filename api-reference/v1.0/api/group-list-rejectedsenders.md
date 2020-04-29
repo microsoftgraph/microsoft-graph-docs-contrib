@@ -1,13 +1,15 @@
 ---
 title: "List rejectedSenders"
 description: "Get a list of users or groups that are in the rejected-senders list for this group. "
-author: "dkershaw10"
+author: "yyuank"
 localization_priority: Normal
 ms.prod: "groups"
 doc_type: apiPageType
 ---
 
 # List rejectedSenders
+
+Namespace: microsoft.graph
 Get a list of users or groups that are in the rejected-senders list for this group. 
 
 Users in the rejected senders list cannot post to conversations of the group (identified in the GET request URL). Make sure you do not specify the same user or group in the rejected senders and accepted senders lists, otherwise you will get an error.
@@ -20,6 +22,8 @@ One of the following permissions is required to call this API. To learn more, in
 |Delegated (work or school account) | Group.Read.All, Group.ReadWrite.All    |
 |Delegated (personal Microsoft account) | Not supported.    |
 |Application | Not supported. |
+
+[!INCLUDE [limited-info](../../includes/limited-info.md)]
 
 ## HTTP request
 <!-- { "blockType": "ignored" } -->
@@ -49,7 +53,7 @@ The following is an example of the request.
   "blockType": "request",
   "name": "get_rejectedsenders"
 }-->
-```http
+```msgraph-interactive
 GET https://graph.microsoft.com/v1.0/groups/{id}/rejectedSenders
 ```
 # [C#](#tab/csharp)

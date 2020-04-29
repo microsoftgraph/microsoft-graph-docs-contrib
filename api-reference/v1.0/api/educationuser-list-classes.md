@@ -9,6 +9,8 @@ doc_type: apiPageType
 
 # List classes
 
+Namespace: microsoft.graph
+
 Retrieve a list of class objects. Note that if the delegated token is used, members can only see information about their own classes. 
 
 <!-- Please verify the revision to the delegated token text. -->
@@ -49,7 +51,7 @@ The following is an example of the request.
   "blockType": "request",
   "name": "get_classes"
 }-->
-```http
+```msgraph-interactive
 GET https://graph.microsoft.com/v1.0/education/me/classes
 ```
 # [C#](#tab/csharp)

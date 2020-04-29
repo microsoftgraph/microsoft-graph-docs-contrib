@@ -27,6 +27,6 @@ const unifiedRoleDefinition = {
 
 let res = await client.api('/roleManagement/directory/roleDefinitions')
 	.version('beta')
-	.post({unifiedRoleDefinition : unifiedRoleDefinition});
+	.post(unifiedRoleDefinition);
 
 ```

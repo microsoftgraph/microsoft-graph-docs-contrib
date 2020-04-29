@@ -18,6 +18,6 @@ const educationUser = {
 };
 
 let res = await client.api('/education/users/{user-id}')
-	.update({educationUser : educationUser});
+	.update(educationUser);
 
 ```

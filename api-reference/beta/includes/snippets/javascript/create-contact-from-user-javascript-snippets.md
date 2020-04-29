@@ -36,6 +36,6 @@ const contact = {
 
 let res = await client.api('/me/contacts')
 	.version('beta')
-	.post({contact : contact});
+	.post(contact);
 
 ```

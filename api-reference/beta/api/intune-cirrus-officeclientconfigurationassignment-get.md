@@ -2,12 +2,14 @@
 title: "Get officeClientConfigurationAssignment"
 description: "Read properties and relationships of the officeClientConfigurationAssignment object."
 localization_priority: Normal
-author: "rolyon"
+author: "dougeby"
 ms.prod: "Intune"
 doc_type: apiPageType
 ---
 
 # Get officeClientConfigurationAssignment
+
+Namespace: microsoft.graph
 
 > **Important:** Microsoft Graph APIs under the /beta version are subject to change; production use is not supported.
 
@@ -20,7 +22,7 @@ One of the following permissions is required to call this API. To learn more, in
 
 |Permission type|Permissions (from most to least privileged)|
 |:---|:---|
-|Delegated (work or school account)|**TODO: Determine scopes**|
+|Delegated (work or school account)|**TODO: Determine scopes **|
 |Delegated (personal Microsoft account)|Not supported.|
 |Application|**TODO: Determine scopes **|
 
@@ -34,7 +36,7 @@ GET /officeConfiguration/clientConfigurations/{officeClientConfigurationId}/assi
 ```
 
 ## Optional query parameters
-This method supports the [OData Query Parameters](https://developer.microsoft.com/en-us/graph/docs/overview/query_parameters) to help customize the response.
+This method supports the [OData Query Parameters](/graph/query-parameters) to help customize the response.
 
 ## Request headers
 |Header|Value|
@@ -73,9 +75,6 @@ Content-Length: 250
   }
 }
 ```
-
-
-
 
 
 

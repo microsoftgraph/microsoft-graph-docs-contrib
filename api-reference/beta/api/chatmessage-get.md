@@ -9,6 +9,8 @@ doc_type: apiPageType
 
 # Get chatMessage
 
+Namespace: microsoft.graph
+
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 Retrieve a single [message](../resources/chatmessage.md) in a [chat](../resources/chat.md).
@@ -60,7 +62,7 @@ Here is an example of the request.
   "blockType": "request",
   "name": "get_chat_message"
 }-->
-```http
+```msgraph-interactive
 GET https://graph.microsoft.com/beta/me/chats/{id}/messages/{id}
 ```
 # [C#](#tab/csharp)

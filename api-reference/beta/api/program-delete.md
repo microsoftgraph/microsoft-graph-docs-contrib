@@ -3,11 +3,13 @@ title: "Delete program"
 description: "In the Azure AD access reviews feature, delete a program object."
 localization_priority: Normal
 doc_type: apiPageType
-ms.prod: ""
-author: ""
+ms.prod: "microsoft-identity-platform"
+author: "markwahl-msft"
 ---
 
 # Delete program
+
+Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
@@ -30,7 +32,7 @@ The signed in user must also be in a directory role that permits them to create 
 ## HTTP request
 <!-- { "blockType": "ignored" } -->
 ```http
-DELETE /programs('{id}')
+DELETE /programs/{id}
 ```
 ## Request headers
 | Name         | Type        | Description |

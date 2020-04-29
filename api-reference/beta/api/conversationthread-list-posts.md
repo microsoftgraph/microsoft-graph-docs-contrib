@@ -9,6 +9,8 @@ doc_type: apiPageType
 
 # List posts
 
+Namespace: microsoft.graph
+
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 Get the posts of the specified thread. You can specify both the parent conversation and the thread, or, 
@@ -52,7 +54,7 @@ Here is an example of the request.
   "blockType": "request",
   "name": "get_posts"
 }-->
-```http
+```msgraph-interactive
 GET https://graph.microsoft.com/beta/groups/0d75b8dc-c42d-44dd-890a-751a99c0589f/threads/AAQkAD8EJUmcWwTJi06Cew==/posts
 ```
 # [C#](#tab/csharp)

@@ -9,6 +9,8 @@ doc_type: apiPageType
 
 # Get alert
 
+Namespace: microsoft.graph
+
  Retrieve the properties and relationships of an [alert](../resources/alert.md) object.
 
 ## Permissions
@@ -55,7 +57,7 @@ The following is an example of the request.
   "name": "get_alert"
 }-->
 
-```http
+```msgraph-interactive
 GET https://graph.microsoft.com/v1.0/security/alerts/{alert_id}
 ```
 # [C#](#tab/csharp)

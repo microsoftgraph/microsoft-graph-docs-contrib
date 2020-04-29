@@ -1,13 +1,15 @@
 ---
 title: "Get mobileThreatDefenseConnector"
 description: "Read properties and relationships of the mobileThreatDefenseConnector object."
-author: "rolyon"
+author: "dougeby"
 localization_priority: Normal
 ms.prod: "Intune"
 doc_type: apiPageType
 ---
 
 # Get mobileThreatDefenseConnector
+
+Namespace: microsoft.graph
 
 > **Important:** Microsoft Graph APIs under the /beta version are subject to change; production use is not supported.
 
@@ -34,7 +36,7 @@ GET /deviceManagement/mobileThreatDefenseConnectors/{mobileThreatDefenseConnecto
 ```
 
 ## Optional query parameters
-This method supports the [OData Query Parameters](https://docs.microsoft.com/en-us/graph/query-parameters) to help customize the response.
+This method supports the [OData Query Parameters](/graph/query-parameters) to help customize the response.
 
 ## Request headers
 |Header|Value|
@@ -61,7 +63,7 @@ Here is an example of the response. Note: The response object shown here may be 
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 720
+Content-Length: 828
 
 {
   "value": {
@@ -69,6 +71,8 @@ Content-Length: 720
     "id": "e4bede14-de14-e4be-14de-bee414debee4",
     "lastHeartbeatDateTime": "2016-12-31T23:59:37.9174975-08:00",
     "partnerState": "available",
+    "androidMobileApplicationManagementEnabled": true,
+    "iosMobileApplicationManagementEnabled": true,
     "androidEnabled": true,
     "iosEnabled": true,
     "windowsEnabled": true,
@@ -83,9 +87,6 @@ Content-Length: 720
   }
 }
 ```
-
-
-
 
 
 

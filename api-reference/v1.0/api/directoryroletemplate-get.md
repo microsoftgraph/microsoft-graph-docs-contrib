@@ -1,13 +1,15 @@
 ---
 title: "Get directoryRoleTemplate"
 description: "Retrieve the properties and relationships of a directoryroletemplate object."
-author: "davidmu1"
+author: "abhijeetsinha"
 localization_priority: Normal
 ms.prod: "microsoft-identity-platform"
 doc_type: apiPageType
 ---
 
 # Get directoryRoleTemplate
+
+Namespace: microsoft.graph
 
 Retrieve the properties and relationships of a directoryroletemplate object.
 ## Permissions
@@ -47,7 +49,7 @@ Here is an example of the request.
   "blockType": "request",
   "name": "get_directoryroletemplate"
 }-->
-```http
+```msgraph-interactive
 GET https://graph.microsoft.com/v1.0/directoryRoleTemplates/{id}
 ```
 # [C#](#tab/csharp)

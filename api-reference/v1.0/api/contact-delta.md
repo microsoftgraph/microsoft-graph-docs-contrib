@@ -2,12 +2,14 @@
 title: "contact: delta"
 description: "Get a set of contacts that have been added, deleted, or updated in a specified folder."
 localization_priority: Normal
-author: "angelgolfer-ms"
+author: "kevinbellinger"
 ms.prod: "outlook"
 doc_type: apiPageType
 ---
 
 # contact: delta
+
+Namespace: microsoft.graph
 
 Get a set of contacts that have been added, deleted, or updated in a specified folder.
 
@@ -84,7 +86,7 @@ returning **contact** rather than **message** collections.
   "blockType": "request",
   "name": "contact_delta"
 }-->
-```http
+```msgraph-interactive
 GET https://graph.microsoft.com/v1.0/me/contactFolders/{id}/contacts/delta?$select=displayName
 Prefer: odata.maxpagesize=2
 ```
@@ -128,7 +130,7 @@ Content-type: application/json
 Content-length: 337
 
 {
-  "@odata.nextLink":"https://graph.microsoft.com/v1.0/me/contactfolders('{id}')/contacts/delta?$skiptoken={_skipToken_}",
+  "@odata.nextLink":"https://graph.microsoft.com/v1.0/me/contactfolders/{id}/contacts/delta?$skiptoken={_skipToken_}",
   "value": [
     {
       "parentFolderId": "parentFolderId-value",

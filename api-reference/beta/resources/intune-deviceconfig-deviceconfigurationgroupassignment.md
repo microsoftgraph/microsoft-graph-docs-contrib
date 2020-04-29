@@ -1,13 +1,15 @@
 ---
 title: "deviceConfigurationGroupAssignment resource type"
 description: "Device configuration group assignment."
-author: "rolyon"
+author: "dougeby"
 localization_priority: Normal
 ms.prod: "Intune"
 doc_type: resourcePageType
 ---
 
 # deviceConfigurationGroupAssignment resource type
+
+Namespace: microsoft.graph
 
 > **Important:** Microsoft Graph APIs under the /beta version are subject to change; production use is not supported.
 
@@ -34,7 +36,7 @@ Device configuration group assignment.
 ## Relationships
 |Relationship|Type|Description|
 |:---|:---|:---|
-|deviceConfiguration|[deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md)|The navigation link to the Device Configuration being targeted.|
+|deviceConfiguration|[deviceConfiguration](../resources/intune-shared-deviceconfiguration.md)|The navigation link to the Device Configuration being targeted.|
 
 ## JSON Representation
 Here is a JSON representation of the resource.

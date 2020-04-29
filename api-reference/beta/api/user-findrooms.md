@@ -2,12 +2,14 @@
 title: "user: findRooms"
 description: "Get all the meeting rooms in the user's tenant or in a specific room list. "
 localization_priority: Priority
-author: "angelgolfer-ms"
-ms.prod: "microsoft-identity-platform"
+author: "vrod9429"
+ms.prod: "outlook"
 doc_type: apiPageType
 ---
 
 # user: findRooms
+
+Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
@@ -78,7 +80,7 @@ The first example gets the [emailAddress](../resources/emailaddress.md) objects 
   "blockType": "request",
   "name": "user_get_rooms_in_tenant"
 }-->
-```http
+```msgraph-interactive
 GET https://graph.microsoft.com/beta/me/findRooms
 ```
 # [C#](#tab/csharp)
@@ -152,7 +154,7 @@ The second example gets the [emailAddress](../resources/emailaddress.md) objects
   "blockType": "request",
   "name": "user_get_rooms_from_specific_list"
 }-->
-```http
+```msgraph-interactive
 GET https://graph.microsoft.com/beta/me/findRooms(RoomList='Building2Rooms@contoso.onmicrosoft.com') 
 ```
 # [C#](#tab/csharp)

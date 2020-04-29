@@ -1,13 +1,15 @@
 ---
 title: "Get domain"
 description: "Retrieve the properties and relationships of domain object."
-author: "davidmu1"
+author: "adimitui"
 localization_priority: Normal
 ms.prod: "microsoft-identity-platform"
 doc_type: apiPageType
 ---
 
 # Get domain
+
+Namespace: microsoft.graph
 
 Retrieve the properties and relationships of domain object.
 
@@ -58,7 +60,7 @@ If successful, this method returns a `200 OK` response code and [domain](../reso
   "sampleKeys": ["contoso.com"],
   "name": "get_domain"
 }-->
-```http
+```msgraph-interactive
 GET https://graph.microsoft.com/v1.0/domains/contoso.com
 ```
 # [C#](#tab/csharp)

@@ -1,13 +1,15 @@
 ---
 title: "Get event"
 description: "Get the properties and relationships of the specified event object."
-author: "angelgolfer-ms"
+author: "harini84"
 localization_priority: Priority
 ms.prod: "outlook"
 doc_type: apiPageType
 ---
 
 # Get event
+
+Namespace: microsoft.graph
 
 Get the properties and relationships of the specified [event](../resources/event.md) object.
 
@@ -97,7 +99,7 @@ The first example gets the specified event. It specifies the following:
   "name": "get_event"
 }-->
 
-```http
+```msgraph-interactive
 GET https://graph.microsoft.com/v1.0/me/events/AAMkAGIAAAoZDOFAAA=?$select=subject,body,bodyPreview,organizer,attendees,start,end,location 
 Prefer: outlook.timezone="Pacific Standard Time"
 ```
@@ -213,7 +215,7 @@ to return specific properties.
   "sampleKeys": ["AAMkADAGAADDdm4NAAA="],
   "name": "get_event_multiple_locations"
 }-->
-```http
+```msgraph-interactive
 GET https://graph.microsoft.com/v1.0/me/events/AAMkADAGAADDdm4NAAA=?$select=subject,body,bodyPreview,organizer,attendees,start,end,location,locations
 ```
 # [C#](#tab/csharp)

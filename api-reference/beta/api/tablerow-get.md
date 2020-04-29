@@ -9,6 +9,8 @@ doc_type: apiPageType
 
 # Get TableRow
 
+Namespace: microsoft.graph
+
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 Retrieve the properties and relationships of tablerow object.
@@ -51,7 +53,7 @@ Here is an example of the request.
   "blockType": "request",
   "name": "get_tablerow"
 }-->
-```http
+```msgraph-interactive
 GET https://graph.microsoft.com/beta/me/drive/items/{id}/workbook/tables/{id|name}/rows/{index}
 ```
 # [C#](#tab/csharp)

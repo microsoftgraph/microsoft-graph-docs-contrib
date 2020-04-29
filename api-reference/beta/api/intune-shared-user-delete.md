@@ -1,13 +1,15 @@
 ---
 title: "Delete user"
 description: "Deletes a user."
-author: "rolyon"
+author: "dougeby"
 localization_priority: Normal
 ms.prod: "intune"
 doc_type: apiPageType
 ---
 
 # Delete user
+
+Namespace: microsoft.graph
 
 > **Important:** APIs under the /beta version in Microsoft Graph are subject to change. Use of these APIs in production applications is not supported.
 
@@ -25,7 +27,11 @@ One of the following permissions is required to call this API. To learn more, in
 | &nbsp; &nbsp; **Onboarding** | DeviceManagementServiceConfig.ReadWrite.All|
 | &nbsp; &nbsp; **Troubleshooting** | DeviceManagementManagedDevices.ReadWrite.All|
 |Delegated (personal Microsoft account)|Not supported.|
-|Application|Not supported.|
+|Application||
+| &nbsp; &nbsp; **Device management** | DeviceManagementManagedDevices.ReadWrite.All|
+| &nbsp; &nbsp; **MAM** | DeviceManagementApps.ReadWrite.All|
+| &nbsp; &nbsp; **Onboarding** | DeviceManagementServiceConfig.ReadWrite.All|
+| &nbsp; &nbsp; **Troubleshooting** | DeviceManagementManagedDevices.ReadWrite.All|
 
 ## HTTP Request
 
@@ -69,6 +75,9 @@ Here is an example of the response. Note: The response object shown here may be 
 ``` http
 HTTP/1.1 204 No Content
 ```
+
+
+
 
 
 

@@ -9,6 +9,8 @@ doc_type: "resourcePageType"
 
 # callActivityStatistics resource type
 
+Namespace: microsoft.graph
+
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 Represents data about the user's time spent in call activities on Microsoft Teams or Skype for Business. This is based on [activityStatistics](../resources/activitystatistics.md).
@@ -35,8 +37,9 @@ The following is a JSON representation of the resource.
 
 <!-- {
   "blockType": "resource",
+  "baseType": "microsoft.graph.activityStatistics",
+  "keyProperty": "id", 
   "optionalProperties": [
-
   ],
   "@odata.type": "microsoft.graph.callActivityStatistics"
 }--> 

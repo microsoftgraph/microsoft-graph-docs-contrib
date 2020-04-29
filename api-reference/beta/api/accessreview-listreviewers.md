@@ -2,12 +2,14 @@
 title: "List accessReview reviewers"
 description: "In the Azure AD access reviews feature, retrieve the reviewers of an accessReview object."
 localization_priority: Normal
-author: "davidmu1"
+author: "markwahl-msft"
 ms.prod: "microsoft-identity-platform"
 doc_type: apiPageType
 ---
 
 # List accessReview reviewers
+
+Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
@@ -49,7 +51,7 @@ If successful, this method returns a `200, OK` response code and an array of [us
   "blockType": "request",
   "name": "get_accessReview_reviewers"
 }-->
-```http
+```msgraph-interactive
 GET https://graph.microsoft.com/beta/accessReviews/2b83cc42-09db-46f6-8c6e-16fec466a82d/reviewers
 ```
 # [C#](#tab/csharp)

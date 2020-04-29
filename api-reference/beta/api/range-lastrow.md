@@ -9,6 +9,8 @@ doc_type: apiPageType
 
 # Range: LastRow
 
+Namespace: microsoft.graph
+
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 Gets the last row within the range. For example, the last row of "B2:D5" is "B5:D5".
@@ -51,7 +53,7 @@ Here is an example of the request.
   "blockType": "request",
   "name": "range_lastrow"
 }-->
-```http
+```msgraph-interactive
 GET https://graph.microsoft.com/beta/me/drive/items/{id}/workbook/names/{name}/range/LastRow
 ```
 # [C#](#tab/csharp)

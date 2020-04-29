@@ -15,6 +15,6 @@ const permission = {
 };
 
 let res = await client.api('/me/drive/items/{item-id}/permissions/{perm-id}')
-	.update({permission : permission});
+	.update(permission);
 
 ```

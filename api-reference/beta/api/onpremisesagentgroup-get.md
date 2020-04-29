@@ -2,12 +2,14 @@
 title: "Get onPremisesAgentGroup"
 description: "Retrieve the properties and relationships of an [onPremisesAgentGroup](../resources/onpremisesagentgroup.md) object."
 localization_priority: Normal
-author: "davidmu1"
+author: "japere"
 ms.prod: "microsoft-identity-platform"
 doc_type: "apiPageType"
 ---
 
 # Get onPremisesAgentGroup
+
+Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
@@ -61,7 +63,7 @@ The following is an example of the request.
   "name": "get_onpremisesagentgroup"
 }-->
 
-```http
+```msgraph-interactive
 GET https://graph.microsoft.com/beta/onPremisesPublishingProfiles/provisioning/agentGroups/2d55ed41-1619-4848-92bb-0576d3038682/?$expand=publishedResources,agents
 ```
 # [C#](#tab/csharp)

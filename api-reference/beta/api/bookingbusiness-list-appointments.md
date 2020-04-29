@@ -2,12 +2,14 @@
 title: "List appointments"
 description: "Get a list of bookingAppointment objects for the specified bookingbusiness."
 localization_priority: Normal
-author: "angelgolfer-ms"
+author: "arvindmicrosoft"
 ms.prod: "bookings"
 doc_type: apiPageType
 ---
 
 # List appointments
+
+Namespace: microsoft.graph
 
  [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
@@ -49,7 +51,7 @@ The following is an example of the request.
   "blockType": "request",
   "name": "get_appointments"
 }-->
-```http
+```msgraph-interactive
 GET https://graph.microsoft.com/beta/bookingBusinesses/Contosolunchdelivery@M365B489948.onmicrosoft.com/appointments
 ```
 # [C#](#tab/csharp)

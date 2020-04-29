@@ -9,6 +9,8 @@ doc_type: "apiPageType"
 
 # Get educationRubric attached to educationAssignment
 
+Namespace: microsoft.graph
+
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 Get the [educationRubric](../resources/educationrubric.md) object attached to an [educationAssignment](../resources/educationassignment.md), if one exists.
@@ -57,7 +59,7 @@ The following is an example of the request.
   "name": "get_rubric"
 }-->
 
-```http
+```msgraph-interactive
 GET https://graph.microsoft.com/beta/education/me/assignments/{id}/rubric
 ```
 # [C#](#tab/csharp)

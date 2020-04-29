@@ -1,13 +1,15 @@
 ---
 title: "List endpoints"
 description: "Retrieve a list of endpoint objects."
-author: "dkershaw10"
+author: "yyuank"
 localization_priority: Normal
 ms.prod: "groups"
 doc_type: apiPageType
 ---
 
 # List endpoints
+
+Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
@@ -51,7 +53,7 @@ If successful, this method returns a `200 OK` response code and collection of [E
   "blockType": "request",
   "name": "get_endpoints"
 }-->
-```http
+```msgraph-interactive
 GET https://graph.microsoft.com/beta/groups/{id}/endpoints
 ```
 # [C#](#tab/csharp)

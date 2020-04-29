@@ -9,6 +9,8 @@ doc_type: apiPageType
 
 # List chat messages
 
+Namespace: microsoft.graph
+
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 Retrieve the list of [messages](../resources/chatmessage.md) in a [chat](../resources/chat.md). 
@@ -64,7 +66,7 @@ Here is an example of the request.
   "blockType": "request",
   "name": "get_chat_messages"
 }-->
-```http
+```msgraph-interactive
 GET https://graph.microsoft.com/beta/chats/{id}/messages
 ```
 # [C#](#tab/csharp)

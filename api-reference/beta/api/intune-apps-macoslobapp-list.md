@@ -1,13 +1,15 @@
 ---
 title: "List macOSLobApps"
 description: "List properties and relationships of the macOSLobApp objects."
-author: "rolyon"
+author: "dougeby"
 localization_priority: Normal
 ms.prod: "Intune"
 doc_type: apiPageType
 ---
 
 # List macOSLobApps
+
+Namespace: microsoft.graph
 
 > **Important:** Microsoft Graph APIs under the /beta version are subject to change; production use is not supported.
 
@@ -58,7 +60,7 @@ Here is an example of the response. Note: The response object shown here may be 
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 1999
+Content-Length: 2049
 
 {
   "value": [
@@ -100,7 +102,9 @@ Content-Length: 1999
         "v10_10": true,
         "v10_11": true,
         "v10_12": true,
-        "v10_13": true
+        "v10_13": true,
+        "v10_14": true,
+        "v10_15": true
       },
       "buildNumber": "Build Number value",
       "versionNumber": "Version Number value",
@@ -122,9 +126,6 @@ Content-Length: 1999
   ]
 }
 ```
-
-
-
 
 
 

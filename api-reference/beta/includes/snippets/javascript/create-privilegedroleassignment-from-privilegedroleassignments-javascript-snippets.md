@@ -17,6 +17,6 @@ const privilegedRoleAssignment = {
 
 let res = await client.api('/privilegedRoleAssignments')
 	.version('beta')
-	.post({privilegedRoleAssignment : privilegedRoleAssignment});
+	.post(privilegedRoleAssignment);
 
 ```

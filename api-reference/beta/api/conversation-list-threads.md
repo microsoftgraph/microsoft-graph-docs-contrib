@@ -9,6 +9,8 @@ doc_type: apiPageType
 
 # List threads
 
+Namespace: microsoft.graph
+
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 Get all the threads in a group conversation.
@@ -50,7 +52,7 @@ Here is an example of the request.
   "blockType": "request",
   "name": "get_threads"
 }-->
-```http
+```msgraph-interactive
 GET https://graph.microsoft.com/beta/groups/{id}/conversations/{id}/threads
 ```
 # [C#](#tab/csharp)

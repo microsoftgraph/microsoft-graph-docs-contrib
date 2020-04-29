@@ -16,6 +16,6 @@ const directoryObject = {
 
 let res = await client.api('/directory/featureRolloutPolicies/{id}/appliesTo/$ref')
 	.version('beta')
-	.post({directoryObject : directoryObject});
+	.post(directoryObject);
 
 ```

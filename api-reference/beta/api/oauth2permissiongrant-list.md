@@ -3,11 +3,13 @@ title: "List oauth2PermissionGrants"
 description: "Retrieve a list of oauth2PermissionGrant objects."
 localization_priority: Normal
 doc_type: apiPageType
-ms.prod: ""
-author: ""
+ms.prod: "microsoft-identity-platform"
+author: "psignoret"
 ---
 
 # List oauth2PermissionGrants
+
+Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
@@ -53,7 +55,7 @@ If successful, this method returns a `200 OK` response code and collection of [o
   "blockType": "request",
   "name": "get_oauth2permissiongrants"
 }-->
-```http
+```msgraph-interactive
 GET https://graph.microsoft.com/beta/oauth2PermissionGrants
 ```
 # [C#](#tab/csharp)

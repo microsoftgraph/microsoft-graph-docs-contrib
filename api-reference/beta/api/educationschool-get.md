@@ -9,6 +9,8 @@ doc_type: apiPageType
 
 # Get educationSchool
 
+Namespace: microsoft.graph
+
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 Retrieve the properties and relationships of the school object.
@@ -50,7 +52,7 @@ The following is an example of the request.
   "blockType": "request",
   "name": "get_educationschool"
 }-->
-```http
+```msgraph-interactive
 GET https://graph.microsoft.com/beta/education/schools/10001
 ```
 # [C#](#tab/csharp)

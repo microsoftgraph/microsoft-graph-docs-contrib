@@ -1,13 +1,15 @@
 ---
 title: "Get a scopedRoleMember"
 description: "Retrieve a specific scopedRoleMembership resource."
-author: "davidmu1"
+author: "anandyadavMSFT"
 localization_priority: Normal
 ms.prod: "microsoft-identity-platform"
 doc_type: apiPageType
 ---
 
 # Get a scopedRoleMember
+
+Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
@@ -50,7 +52,7 @@ Here is an example of the request.
   "blockType": "request",
   "name": "get_scopedrolemember"
 }-->
-```http
+```msgraph-interactive
 GET https://graph.microsoft.com/beta/administrativeUnits/{id}/scopedRoleMembers/{id}
 ```
 # [C#](#tab/csharp)

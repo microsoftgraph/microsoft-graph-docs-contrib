@@ -3,11 +3,13 @@ title: "List mailFolders"
 description: "Get all the mail folders in the signed-in user's mailbox."
 localization_priority: Normal
 doc_type: apiPageType
-author: "angelgolfer-ms"
+author: "svpsiva"
 ms.prod: "outlook"
 ---
 
 # List mailFolders
+
+Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
@@ -51,7 +53,7 @@ Here is an example of the request.
   "blockType": "request",
   "name": "get_mailfolders"
 }-->
-```http
+```msgraph-interactive
 GET https://graph.microsoft.com/beta/me/mailFolders
 ```
 # [C#](#tab/csharp)

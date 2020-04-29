@@ -9,6 +9,8 @@ author: ""
 
 # Get photo
 
+Namespace: microsoft.graph
+
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 Retrieve the properties and relationships of photo object.
@@ -51,7 +53,7 @@ Here is an example of the request for photo metadata.
   "blockType": "request",
   "name": "get_photo"
 }-->
-```http
+```msgraph-interactive
 GET https://graph.microsoft.com/beta/users/{id|userPrincipalName}/photo
 ```
 # [C#](#tab/csharp)

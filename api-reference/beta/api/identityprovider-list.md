@@ -3,11 +3,13 @@ title: "List identityProviders"
 description: "Retrieve all identityProviders in the directory."
 localization_priority: Normal
 doc_type: apiPageType
-author: ""
-ms.prod: ""
+author: "Nickgmicrosoft"
+ms.prod: "microsoft-identity-platform"
 ---
 
 # List identityProviders
+
+Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
@@ -21,7 +23,7 @@ One of the following permissions is required to call this API. To learn more, in
 |:--------------------|:---------------------------------------------------------|
 |Delegated (work or school account)|IdentityProvider.Read.All, IdentityProvider.ReadWrite.All|
 |Delegated (personal Microsoft account)| Not supported.|
-|Application|Not supported.|
+|Application|IdentityProvider.Read.All, IdentityProvider.ReadWrite.All|
 
 The work or school account must be a global administrator of the tenant.
 
@@ -58,7 +60,7 @@ The following example retrieves all **identityProvider**.
   "blockType": "request",
   "name": "get_identityproviders"
 }-->
-```http
+```msgraph-interactive
 GET https://graph.microsoft.com/beta/identityProviders
 ```
 # [C#](#tab/csharp)

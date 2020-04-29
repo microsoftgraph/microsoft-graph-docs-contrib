@@ -1,13 +1,15 @@
 ---
 title: "user: translateExchangeIds"
 description: "Translate identifiers of Outlook-related resources between formats."
-author: "dkershaw10"
+author: "svpsiva"
 localization_priority: Normal
-ms.prod: "microsoft-identity-platform"
+ms.prod: "outlook"
 doc_type: apiPageType
 ---
 
 # user: translateExchangeIds
+
+Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
@@ -19,8 +21,8 @@ One of the following permissions is required to call this API. To learn more, in
 
 | Permission type | Permissions (from least to most privileged) |
 |:----------------|:--------------------------------------------|
-| Delegated (work or school account) | User.ReadBasic, User.Read, User.ReadWrite, User.ReadBasic.All, User.Read.All, User.ReadWrite.All |
-| Delegated (personal Microsoft account) | User.ReadBasic, User.Read, User.ReadWrite |
+| Delegated (work or school account) | User.ReadBasic.All, User.Read, User.ReadWrite, User.ReadBasic.All, User.Read.All, User.ReadWrite.All |
+| Delegated (personal Microsoft account) | User.ReadBasic.All, User.Read, User.ReadWrite |
 | Application | User.Read.All, User.ReadWrite.All |
 
 ## HTTP request
@@ -123,7 +125,6 @@ HTTP/1.1 200 OK
 Content-type: application/json
 
 {
-  "@odata.context": "https://graph.microsoft.com/testexchangebeta/$metadata#Collection(microsoft.graph.convertIdResult)",
   "value": [
     {
       "sourceId": "{rest-formatted-id-1}",
@@ -136,7 +137,7 @@ Content-type: application/json
   ]
 }
 ```
-<!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79 
+<!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2015-10-25 14:57:30 UTC -->
 <!-- {
   "type": "#page.annotation",

@@ -2,12 +2,14 @@
 title: "reportRoot: getCredentialUserRegistrationCount"
 description: "Report the current state of how many users in your organization are registered for self-service password reset and multi-factor authentication (MFA) capabilities."
 localization_priority: Normal
-author: "davidmu1"
+author: "khotz"
 ms.prod: "reports"
 doc_type: "apiPageType"
 ---
 
 # reportRoot: getCredentialUserRegistrationCount
+
+Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
@@ -60,7 +62,7 @@ The following is an example of the request.
   "name": "reportroot_getcredentialuserregistrationcount"
 }-->
 
-```http
+```msgraph-interactive
 GET https://graph.microsoft.com/beta/reports/getCredentialUserRegistrationCount
 ```
 # [C#](#tab/csharp)

@@ -1,13 +1,15 @@
 ---
 title: "List groupSettingTemplates"
-description: "Group setting templates represents a set of templates  from which group settings may be created and used within a tenant.  This operation retrieves the list of available groupSettingTemplates objects."
-author: "dkershaw10"
+description: "Retrieve a list of available groupSettingTemplates objects."
+author: "yyuank"
 localization_priority: Normal
-ms.prod: "microsoft-identity-platform"
+ms.prod: "groups"
 doc_type: apiPageType
 ---
 
 # List groupSettingTemplates
+
+Namespace: microsoft.graph
 
 Group setting templates represents a set of templates  from which group settings may be created and used within a tenant.  This operation retrieves the list of available groupSettingTemplates objects.
 
@@ -52,7 +54,7 @@ If successful, this method returns a `200 OK` response code and collection of [g
   "blockType": "request",
   "name": "get_groupsettingtemplates"
 }-->
-```http
+```msgraph-interactive
 GET https://graph.microsoft.com/v1.0/groupSettingTemplates
 ```
 # [C#](#tab/csharp)

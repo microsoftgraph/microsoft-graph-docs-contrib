@@ -10,6 +10,11 @@ doc_type: apiPageType
 ---
 
 # Update companyInformation
+
+Namespace: microsoft.graph
+
+[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
+
 Update the properties of a company information object for Dynamics 365 Business Central.
 
 ## Permissions
@@ -23,7 +28,7 @@ One of the following permissions is required to call this API. To learn more, in
 
 ## HTTP request
 ```
-PATCH /financials/companies('{id}')/companyInformation('{id}')
+PATCH /financials/companies/{id}/companyInformation/{id}
 ```
 
 ## Optional query parameters
@@ -48,7 +53,7 @@ If successful, this method returns a `200 OK` response code and an updated an **
 
 Here is an example of the request.
 ```json
-PATCH https://graph.microsoft.com/beta/financials/companies('{id}')/companyInformation('{id}')
+PATCH https://graph.microsoft.com/beta/financials/companies/{id}/companyInformation/{id}
 Content-type: application/json
 
 {
@@ -85,7 +90,7 @@ Content-type: application/json
   "currencyCode": "USD",
   "currentFiscalYearStartDate": "2018-01-01",
   "industry": "",
-  "picture@odata.mediaReadLink": "https://api.financials.dynamics.com/v1.0/api/beta/companies('{id}')/companyInformation('{id}')/picture",
+  "picture@odata.mediaReadLink": "https://api.financials.dynamics.com/v1.0/api/beta/companies/{id}/companyInformation/{id}/picture",
   "lastModifiedDateTime": "2017-03-16T14:57:19.497Z"
   }
 ```

@@ -33,6 +33,6 @@ const schemaExtension = {
 };
 
 let res = await client.api('/schemaExtensions')
-	.post({schemaExtension : schemaExtension});
+	.post(schemaExtension);
 
 ```

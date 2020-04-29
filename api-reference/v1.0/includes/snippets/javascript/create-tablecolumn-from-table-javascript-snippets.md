@@ -18,6 +18,6 @@ const workbookTableColumn = {
 };
 
 let res = await client.api('/me/drive/items/{id}/workbook/tables/{id|name}/columns')
-	.post({workbookTableColumn : workbookTableColumn});
+	.post(workbookTableColumn);
 
 ```

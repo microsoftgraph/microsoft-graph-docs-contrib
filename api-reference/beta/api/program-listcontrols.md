@@ -3,11 +3,13 @@ title: "List programControls of a program"
 description: "In the Azure AD access reviews feature, list all the programControl objects, linked to a particular program."
 localization_priority: Normal
 doc_type: apiPageType
-ms.prod: ""
-author: ""
+ms.prod: "microsoft-identity-platform"
+author: "markwahl-msft"
 ---
 
 # List programControls of a program
+
+Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
@@ -48,7 +50,7 @@ If successful, this method returns a `200, OK` response code and an array of [pr
   "blockType": "request",
   "name": "get_programControl_from_program"
 }-->
-```http
+```msgraph-interactive
 GET https://graph.microsoft.com/beta/programs/673a7379-9c38-4f01-bd9d-4fda7260b807/controls
 ```
 # [C#](#tab/csharp)

@@ -10,6 +10,8 @@ ms.prod: ""
 ---
 # Enumerate activities (preview)
 
+Namespace: microsoft.graph
+
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 List the recent [activities](../resources/itemactivity.md) that took place on an item or under a hierarchy.
@@ -47,7 +49,7 @@ GET /sites/{site-id}/lists/{list-id}/items/{item-id}/activities
 # [HTTP](#tab/http)
 <!-- { "blockType": "request", "name": "list-activities" } -->
 
-```http
+```msgraph-interactive
 GET https://graph.microsoft.com/beta/me/drive/activities
 ```
 # [C#](#tab/csharp)

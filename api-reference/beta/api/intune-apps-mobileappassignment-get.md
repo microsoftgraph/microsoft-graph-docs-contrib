@@ -1,13 +1,15 @@
 ---
 title: "Get mobileAppAssignment"
 description: "Read properties and relationships of the mobileAppAssignment object."
-author: "rolyon"
+author: "dougeby"
 localization_priority: Normal
 ms.prod: "Intune"
 doc_type: apiPageType
 ---
 
 # Get mobileAppAssignment
+
+Namespace: microsoft.graph
 
 > **Important:** Microsoft Graph APIs under the /beta version are subject to change; production use is not supported.
 
@@ -34,7 +36,7 @@ GET /deviceAppManagement/mobileApps/{mobileAppId}/assignments/{mobileAppAssignme
 ```
 
 ## Optional query parameters
-This method supports the [OData Query Parameters](https://docs.microsoft.com/en-us/graph/query-parameters) to help customize the response.
+This method supports the [OData Query Parameters](/graph/query-parameters) to help customize the response.
 
 ## Request headers
 |Header|Value|
@@ -61,7 +63,7 @@ Here is an example of the response. Note: The response object shown here may be 
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 359
+Content-Length: 424
 
 {
   "value": {
@@ -73,13 +75,12 @@ Content-Length: 359
     },
     "settings": {
       "@odata.type": "microsoft.graph.mobileAppAssignmentSettings"
-    }
+    },
+    "source": "policySets",
+    "sourceId": "Source Id value"
   }
 }
 ```
-
-
-
 
 
 

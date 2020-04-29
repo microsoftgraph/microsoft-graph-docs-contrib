@@ -9,6 +9,8 @@ doc_type: "resourcePageType"
 
 # emailActivityStatistics resource type
 
+Namespace: microsoft.graph
+
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 Represents data about the user's time spent in email activities in Microsoft Outlook. This is based on [activityStatistics](../resources/activitystatistics.md).
@@ -37,6 +39,8 @@ The following is a JSON representation of the resource.
 
 <!-- {
   "blockType": "resource",
+  "baseType": "microsoft.graph.activityStatistics",
+  "keyProperty": "id", 
   "optionalProperties": [
 
   ],

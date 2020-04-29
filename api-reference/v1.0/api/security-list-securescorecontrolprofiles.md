@@ -9,6 +9,8 @@ doc_type: apiPageType
 
 # List secureScoreControlProfiles
 
+Namespace: microsoft.graph
+
 Retrieve the properties and relationships of a [secureScoreControlProfiles](../resources/securescorecontrolprofile.md) object.
 
 ## Permissions
@@ -66,7 +68,7 @@ The following is an example of the request.
   "name": "get_securescorecontrolprofiles"
 }-->
 
-```http
+```msgraph-interactive
 GET https://graph.microsoft.com/v1.0/security/secureScoreControlProfiles
 ```
 # [C#](#tab/csharp)

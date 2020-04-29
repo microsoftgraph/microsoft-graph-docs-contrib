@@ -16,6 +16,6 @@ const oAuth2PermissionGrant = {
 
 let res = await client.api('/oAuth2Permissiongrants/{id}')
 	.version('beta')
-	.update({oAuth2PermissionGrant : oAuth2PermissionGrant});
+	.update(oAuth2PermissionGrant);
 
 ```

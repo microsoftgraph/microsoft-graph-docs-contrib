@@ -1,13 +1,15 @@
 ---
 title: "List depIOSEnrollmentProfiles"
 description: "List properties and relationships of the depIOSEnrollmentProfile objects."
-author: "rolyon"
+author: "dougeby"
 localization_priority: Normal
 ms.prod: "Intune"
 doc_type: apiPageType
 ---
 
 # List depIOSEnrollmentProfiles
+
+Namespace: microsoft.graph
 
 > **Important:** Microsoft Graph APIs under the /beta version are subject to change; production use is not supported.
 
@@ -58,7 +60,7 @@ Here is an example of the response. Note: The response object shown here may be 
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 2065
+Content-Length: 2322
 
 {
   "value": [
@@ -89,7 +91,9 @@ Content-Length: 2065
       "diagnosticsDisabled": true,
       "displayToneSetupDisabled": true,
       "privacyPaneDisabled": true,
+      "screenTimeScreenDisabled": true,
       "deviceNameTemplate": "Device Name Template value",
+      "configurationWebUrl": true,
       "iTunesPairingMode": "allow",
       "managementCertificates": [
         {
@@ -107,17 +111,18 @@ Content-Length: 2065
       "homeButtonScreenDisabled": true,
       "iMessageAndFaceTimeScreenDisabled": true,
       "onBoardingScreenDisabled": true,
-      "screenTimeScreenDisabled": true,
       "simSetupScreenDisabled": true,
       "softwareUpdateScreenDisabled": true,
-      "watchMigrationScreenDisabled": true
+      "watchMigrationScreenDisabled": true,
+      "appearanceScreenDisabled": true,
+      "expressLanguageScreenDisabled": true,
+      "preferredLanguageScreenDisabled": true,
+      "deviceToDeviceMigrationDisabled": true,
+      "welcomeScreenDisabled": true
     }
   ]
 }
 ```
-
-
-
 
 
 

@@ -1,13 +1,15 @@
 ---
 title: "List groupLifecyclePolicies"
 description: "List all the groupLifecyclePolicies."
-author: "dkershaw10"
+author: "yyuank"
 localization_priority: Normal
 ms.prod: "groups"
 doc_type: apiPageType
 ---
 
 # List groupLifecyclePolicies
+
+Namespace: microsoft.graph
 
 List all the [groupLifecyclePolicies](../resources/grouplifecyclepolicy.md).
 
@@ -52,7 +54,7 @@ If successful, this method returns a `200 OK` response code and a collection of 
   "blockType": "request",
   "name": "get_grouplifecyclepolicy"
 }-->
-```http
+```msgraph-interactive
 GET https://graph.microsoft.com/v1.0/groupLifecyclePolicies
 ```
 # [C#](#tab/csharp)

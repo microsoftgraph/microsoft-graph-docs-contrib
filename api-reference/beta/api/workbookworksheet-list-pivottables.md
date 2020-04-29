@@ -9,6 +9,8 @@ doc_type: apiPageType
 
 # List pivotTables
 
+Namespace: microsoft.graph
+
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 Retrieve a list of workbookpivottable objects.
@@ -52,7 +54,7 @@ Here is an example of the request.
   "blockType": "request",
   "name": "get_pivottables"
 }-->
-```http
+```msgraph-interactive
 GET https://graph.microsoft.com/beta/drive/root/workbook/worksheets/{id}/pivotTables
 ```
 # [C#](#tab/csharp)

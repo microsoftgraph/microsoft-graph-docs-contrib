@@ -9,6 +9,8 @@ doc_type: apiPageType
 
 # Get educationClass
 
+Namespace: microsoft.graph
+
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 Retrieve a class from the system. A class is a universal group with a special property that indicates to the system that the group is a class. Group members represent the students;  group admins represent the teachers in the class. If you're using the delegated token, the user will only see classes in which they are members.
@@ -48,7 +50,7 @@ Here is an example of the request.
   "blockType": "request",
   "name": "get_educationclass"
 }-->
-```http
+```msgraph-interactive
 GET https://graph.microsoft.com/beta/education/classes/11023
 ```
 # [C#](#tab/csharp)

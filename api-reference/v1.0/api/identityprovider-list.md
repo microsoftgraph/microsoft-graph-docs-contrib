@@ -2,12 +2,14 @@
 title: "List identityProviders"
 description: "Retrieve all identityProviders"
 localization_priority: Priority
-author: "valnav"
+author: "Nickgmicrosoft"
 ms.prod: "microsoft-identity-platform"
 doc_type: apiPageType
 ---
 
 # List identityProviders
+
+Namespace: microsoft.graph
 
 Retrieve all [identityProviders](../resources/identityprovider.md) in the directory.
 
@@ -56,7 +58,7 @@ The following example retrieves all **identityProvider**.
   "blockType": "request",
   "name": "list-identityproviders"
 }-->
-```http
+```msgraph-interactive
 GET https://graph.microsoft.com/v1.0/identityProviders
 ```
 # [C#](#tab/csharp)

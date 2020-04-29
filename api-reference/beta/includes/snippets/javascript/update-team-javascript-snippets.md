@@ -29,6 +29,6 @@ const team = {
 
 let res = await client.api('/teams/{id}')
 	.version('beta')
-	.update({team : team});
+	.update(team);
 
 ```

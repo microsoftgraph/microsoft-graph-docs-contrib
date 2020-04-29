@@ -17,6 +17,6 @@ const calendarGroup = {
 };
 
 let res = await client.api('/me/calendarGroups')
-	.post({calendarGroup : calendarGroup});
+	.post(calendarGroup);
 
 ```

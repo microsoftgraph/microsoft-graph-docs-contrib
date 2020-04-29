@@ -3,11 +3,13 @@ title: "Get agreement"
 description: "Retrieve the properties and relationships of an agreement object."
 localization_priority: Normal
 doc_type: apiPageType
-ms.prod: ""
-author: ""
+ms.prod: "microsoft-identity-platform"
+author: "raprakasMSFT"
 ---
 
 # Get agreement
+
+Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
@@ -48,7 +50,7 @@ If successful, this method returns a `200 OK` response code and [agreement](../r
   "blockType": "request",
   "name": "get_agreement"
 }-->
-```http
+```msgraph-interactive
 GET https://graph.microsoft.com/beta/agreements/{id}?$expand=files
 ```
 # [C#](#tab/csharp)

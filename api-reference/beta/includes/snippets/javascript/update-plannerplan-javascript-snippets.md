@@ -16,6 +16,6 @@ const plannerPlan = {
 
 let res = await client.api('/planner/plans/{id}')
 	.version('beta')
-	.update({plannerPlan : plannerPlan});
+	.update(plannerPlan);
 
 ```

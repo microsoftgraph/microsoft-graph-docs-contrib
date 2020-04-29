@@ -3,11 +3,13 @@ title: "Get oAuth2Permissiongrant"
 description: "Retrieve the properties and relationships of oAuth2Permissiongrant object."
 localization_priority: Normal
 doc_type: apiPageType
-ms.prod: ""
-author: ""
+ms.prod: "microsoft-identity-platform"
+author: "psignoret"
 ---
 
 # Get oAuth2Permissiongrant
+
+Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
@@ -53,7 +55,7 @@ Here is an example of the request.
   "blockType": "request",
   "name": "get_oAuth2Permissiongrant"
 }-->
-```http
+```msgraph-interactive
 GET https://graph.microsoft.com/beta/oAuth2Permissiongrants/{id}
 ```
 # [C#](#tab/csharp)

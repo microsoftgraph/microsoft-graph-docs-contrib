@@ -17,6 +17,6 @@ const fieldValueSet = {
 
 let res = await client.api('/sites/{site-id}/lists/{list-id}/items/{item-id}/fields')
 	.version('beta')
-	.update({fieldValueSet : fieldValueSet});
+	.update(fieldValueSet);
 
 ```

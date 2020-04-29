@@ -9,6 +9,8 @@ doc_type: apiPageType
 
 # Range: EntireColumn
 
+Namespace: microsoft.graph
+
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 Gets an object that represents the entire column of the range.
@@ -51,7 +53,7 @@ Here is an example of the request.
   "blockType": "request",
   "name": "range_entirecolumn"
 }-->
-```http
+```msgraph-interactive
 GET https://graph.microsoft.com/beta/me/drive/items/{id}/workbook/names/{name}/range/EntireColumn
 ```
 # [C#](#tab/csharp)

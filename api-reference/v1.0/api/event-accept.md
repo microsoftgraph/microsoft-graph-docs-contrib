@@ -1,13 +1,15 @@
 ---
 title: "event: accept"
 description: "Accept the specified event in a user calendar."
-author: "angelgolfer-ms"
+author: "harini84"
 localization_priority: Normal
 ms.prod: "outlook"
 doc_type: apiPageType
 ---
 
 # event: accept
+
+Namespace: microsoft.graph
 
 Accept the specified [event](../resources/event.md) in a user [calendar](../resources/calendar.md).
 
@@ -102,7 +104,7 @@ Here is an example of the response.
   "truncated": true
 } -->
 ```http
-HTTP/1.1 200 OK
+HTTP/1.1 202 Accepted
 ```
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79

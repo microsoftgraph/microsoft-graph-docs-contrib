@@ -9,6 +9,8 @@ doc_type: apiPageType
 ---
 # Search for a DriveItems within a drive
 
+Namespace: microsoft.graph
+
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 Search the hierarchy of items for items matching a query.
@@ -56,7 +58,7 @@ Here is an example of the request searching the current user's OneDrive
 # [HTTP](#tab/http)
 <!-- { "blockType": "request", "name": "item_search" }-->
 
-```http
+```msgraph-interactive
 GET /me/drive/root/search(q='{search-query}')
 ```
 # [C#](#tab/csharp)
@@ -118,7 +120,7 @@ To broaden the search scope, use the **search** method on the [Drive](../resourc
 # [HTTP](#tab/http)
 <!-- { "blockType": "request", "name": "item_search_all" }-->
 
-```http
+```msgraph-interactive
 GET /me/drive/search(q='{search-query}')
 ```
 # [C#](#tab/csharp)

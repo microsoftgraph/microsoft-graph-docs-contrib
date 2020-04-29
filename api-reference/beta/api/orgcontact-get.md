@@ -2,24 +2,27 @@
 title: "Get orgContact"
 description: "Retrieve the properties and relationships of orgcontact object."
 localization_priority: Normal
-author: "davidmu1"
+author: "dkershaw10"
 ms.prod: "microsoft-identity-platform"
 doc_type: apiPageType
 ---
 
 # Get orgContact
 
+Namespace: microsoft.graph
+
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Retrieve the properties and relationships of orgcontact object.
+Get the properties and relationships of an organizational contact object.
+
 ## Permissions
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
 
 |Permission type      | Permissions (from least to most privileged)              |
 |:--------------------|:---------------------------------------------------------|
-|Delegated (work or school account) | Directory.Read.All, Directory.ReadWrite.All, Directory.AccessAsUser.All    |
+|Delegated (work or school account) | OrgContact.Read.All, Directory.Read.All, Directory.ReadWrite.All, Directory.AccessAsUser.All    |
 |Delegated (personal Microsoft account) | Not supported.    |
-|Application | Directory.Read.All, Directory.ReadWrite.All |
+|Application | OrgContact.Read.All, Directory.Read.All, Directory.ReadWrite.All |
 
 ## HTTP request
 <!-- { "blockType": "ignored" } -->
@@ -49,7 +52,7 @@ Here is an example of the request.
   "blockType": "request",
   "name": "get_orgcontact"
 }-->
-```http
+```msgraph-interactive
 GET https://graph.microsoft.com/beta/contacts/{id}
 ```
 # [C#](#tab/csharp)

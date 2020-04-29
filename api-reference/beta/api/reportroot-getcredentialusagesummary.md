@@ -2,12 +2,14 @@
 title: "reportRoot: getCredentialUsageSummary"
 description: "Report the current state of how many users in your organization are using self-service password reset capabilities."
 localization_priority: Normal
-author: "davidmu1"
+author: "khotz"
 ms.prod: "reports"
 doc_type: "apiPageType"
 ---
 
 # reportRoot: getCredentialUsageSummary
+
+Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
@@ -76,7 +78,7 @@ The following is an example of the request.
   "name": "reportroot_getcredentialusagesummary"
 }-->
 
-```http
+```msgraph-interactive
 GET https://graph.microsoft.com/beta/reports/getCredentialUsageSummary(period='D30')?$filter=feature eq 'registration'
 ```
 # [C#](#tab/csharp)

@@ -2,12 +2,14 @@
 title: "Update calendar"
 description: "Update the properties of a calendar object. The calendar can be one for a user, "
 localization_priority: Normal
-author: "angelgolfer-ms"
+author: "harini84"
 ms.prod: "outlook"
 doc_type: apiPageType
 ---
 
 # Update calendar
+
+Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
@@ -117,6 +119,12 @@ Content-type: application/json
     "isShared":false,
     "isSharedWithMe":false,
     "canEdit":true,
+    "allowedOnlineMeetingProviders": [
+                "teamsForBusiness"
+            ],
+    "defaultOnlineMeetingProvider": "teamsForBusiness",
+    "isTallyingResponses": true,
+    "isRemovable": false,
     "owner":{
         "name":"Samantha Booth",
         "address":"samanthab@adatum.onmicrosoft.com"

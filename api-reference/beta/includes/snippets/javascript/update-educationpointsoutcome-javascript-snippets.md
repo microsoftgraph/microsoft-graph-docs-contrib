@@ -20,6 +20,6 @@ const educationOutcome = {
 
 let res = await client.api('/education/me/assignments/{id}/submissions/{id}/outcomes/{id}')
 	.version('beta')
-	.update({educationOutcome : educationOutcome});
+	.update(educationOutcome);
 
 ```

@@ -3,11 +3,13 @@ title: "List messages"
 description: "Get the messages in the signed-in user's mailbox (including the Deleted Items and Clutter folders). "
 localization_priority: Normal
 doc_type: apiPageType
-author: "angelgolfer-ms"
+author: "svpsiva"
 ms.prod: "outlook"
 ---
 
 # List messages
+
+Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
@@ -17,17 +19,17 @@ Depending on the page size and mailbox data, getting messages from a mailbox can
 
 Do not try to extract the `$skip` value from the `@odata.nextLink` URL to manipulate responses. This API uses the `$skip` value to keep count of all the items it has gone through in the user's mailbox to return a page of message-type items. It's therefore possible that even in the initial response, the `$skip` value is larger than the page size. For more information, see [Paging Microsoft Graph data in your app](/graph/paging).
 
-You can filter on the messages and get only those that include a [mention](../resources/mention.md) of the signed-in user.
-
-Note that by default, the `GET /me/messages` operation does not return the **mentions** property. Use the `$expand` query parameter 
-to [find details of each mention in a message](../api/message-get.md#request-2).
+You can filter on the messages and get only those that include a [mention](../resources/mention.md) of the signed-in user. See an [example](#request-2) below. 
+By default, the `GET /me/messages` operation does not return the **mentions** property. Use the `$expand` query parameter 
+to [find details of each mention in a message](../api/message-get.md#example-2).
 
 There are two scenarios where an app can get messages in another user's mail folder:
 
 * If the app has application permissions, or,
 * If the app has the appropriate delegated [permissions](#permissions) from one user, and another user has shared a mail folder with that user, or, has given delegated access to that user. See [details and an example](/graph/outlook-share-messages-folders).
 
-
+> **Note** Be aware of the [known issue](/graph/known-issues#get-messages-returns-chats-in-microsoft-teams) that this operation includes Microsoft Teams chat messages in its response.
+ 
 ## Permissions
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
 
@@ -68,6 +70,18 @@ This method supports the [OData Query Parameters](https://developer.microsoft.co
 
 You can use the `$filter` query parameter on the **mentionsPreview** property to get those messages that mention the signed-in user.
 
+### Using filter and orderby in the same query
+When using `$filter` and `$orderby` in the same query to get messages, make sure to specify properties in the following ways:
+
+1. Properties that appear in `$orderby` must also appear in `$filter`. 
+2. Properties that appear in `$orderby` are in the same order as in `$filter`.
+3. Properties that are present in `$orderby` appear in `$filter` before any properties that aren't.
+
+Failing to do this results in the following error:
+
+- Error code: `InefficientFilter`
+- Error message: `The restriction or sort order is too complex for this operation.`
+
 ## Request headers
 | Name       | Type | Description|
 |:-----------|:------|:----------|
@@ -90,7 +104,7 @@ The first example gets the default, top 10 messages in the signed-in user's mail
   "blockType": "request",
   "name": "get_messages"
 }-->
-```http
+```msgraph-interactive
 GET https://graph.microsoft.com/beta/me/messages?$select=sender,subject
 ```
 # [C#](#tab/csharp)
@@ -229,7 +243,7 @@ The example also incorporates URL encoding for the space characters in the query
   "blockType": "request",
   "name": "get_messages_with_mentions"
 }-->
-```http
+```msgraph-interactive
 GET https://graph.microsoft.com/beta/me/messages?$filter=MentionsPreview/IsMentioned%20eq%20true&$select=Subject,Sender,ReceivedDateTime,MentionsPreview
 ```
 # [C#](#tab/csharp)
@@ -306,7 +320,7 @@ The third example shows how to use a `Prefer: outlook.body-content-type="text"` 
   "blockType": "request",
   "name": "get_messages_in_text"
 }-->
-```http
+```msgraph-interactive
 GET https://graph.microsoft.com/beta/me/messages?$select=subject,body,bodyPreview,uniqueBody
 Prefer: outlook.body-content-type="text"
 ```

@@ -1,13 +1,15 @@
 ---
 title: "List directoryRoleTemplates"
 description: "Retrieve a list of directoryRoleTemplate objects."
-author: "davidmu1"
+author: "abhijeetsinha"
 localization_priority: Normal
 ms.prod: "microsoft-identity-platform"
 doc_type: apiPageType
 ---
 
 # List directoryRoleTemplates
+
+Namespace: microsoft.graph
 
 Retrieve a list of directoryRoleTemplate objects.
 
@@ -49,7 +51,7 @@ If successful, this method returns a `200 OK` response code and collection of [d
   "blockType": "request",
   "name": "get_directoryroletemplates"
 }-->
-```http
+```msgraph-interactive
 GET https://graph.microsoft.com/v1.0/directoryRoleTemplates
 ```
 # [C#](#tab/csharp)

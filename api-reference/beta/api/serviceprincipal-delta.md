@@ -3,11 +3,13 @@ title: "servicePrincipal: delta"
 description: "Get newly created, updated, or deleted service principals without having to perform a full read of the entire resource collection. See Using Delta Query for details."
 localization_priority: Normal
 doc_type: apiPageType
-ms.prod: ""
-author: ""
+ms.prod: "microsoft-identity-platform"
+author: "sureshja"
 ---
 
 # servicePrincipal: delta
+
+Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
@@ -88,7 +90,7 @@ See:</br>
   "blockType": "request",
   "name": "servicePrincipal_delta"
 }-->
-```http
+```msgraph-interactive
 GET https://graph.microsoft.com/beta/servicePrincipals/delta
 ```
 # [C#](#tab/csharp)

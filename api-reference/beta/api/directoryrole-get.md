@@ -1,13 +1,15 @@
 ---
 title: "Get directoryRole"
 description: "Retrieve the properties of a directoryRole object."
-author: "davidmu1"
+author: "abhijeetsinha"
 localization_priority: Normal
 ms.prod: "microsoft-identity-platform"
 doc_type: apiPageType
 ---
 
 # Get directoryRole
+
+Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
@@ -49,7 +51,7 @@ Here is an example of the request.
   "blockType": "request",
   "name": "get_directoryrole"
 }-->
-```http
+```msgraph-interactive
 GET https://graph.microsoft.com/beta/directoryRoles/{id}
 ```
 # [C#](#tab/csharp)

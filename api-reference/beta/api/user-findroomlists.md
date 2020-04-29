@@ -1,13 +1,15 @@
 ---
 title: "user: findRoomLists"
 description: "Get the room lists defined in a tenant."
-author: "angelgolfer-ms"
+author: "vrod9429"
 localization_priority: Priority
-ms.prod: "microsoft-identity-platform"
+ms.prod: "outlook"
 doc_type: apiPageType
 ---
 
 # user: findRoomLists
+
+Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
@@ -62,7 +64,7 @@ Here is an example of the request.
   "blockType": "request",
   "name": "user_get_room_lists"
 }-->
-```http
+```msgraph-interactive
 GET https://graph.microsoft.com/beta/me/findRoomLists
 ```
 # [C#](#tab/csharp)

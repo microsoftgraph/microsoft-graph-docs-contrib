@@ -2,12 +2,14 @@
 title: "List publishedResources"
 description: "Retrieve a list of publishedResource objects."
 localization_priority: Normal
-author: "davidmu1"
+author: "japere"
 ms.prod: "microsoft-identity-platform"
 doc_type: "apiPageType"
 ---
 
 # List publishedResources
+
+Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
@@ -61,7 +63,7 @@ The following is an example of the request.
   "name": "get_publishedresources"
 }-->
 
-```http
+```msgraph-interactive
 GET https://graph.microsoft.com/beta/onPremisesPublishingProfiles/{publishingType}/publishedResources?$expand=agentGroups
 ```
 # [C#](#tab/csharp)

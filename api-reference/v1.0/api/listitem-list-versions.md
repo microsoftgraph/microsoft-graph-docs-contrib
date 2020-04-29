@@ -9,6 +9,8 @@ doc_type: apiPageType
 
 # Listing versions of a ListItem
 
+Namespace: microsoft.graph
+
 SharePoint can be configured to retain the history for list items.
 
 Previous versions may be retained for a finite period of time depending on admin settings which may be unique per user or location.
@@ -48,7 +50,7 @@ This example retrieves the versions of a listItem in a SharePoint list:
 # [HTTP](#tab/http)
 <!-- { "blockType": "request", "name": "get-previous-versions-listitem", "scopes": "files.read sites.read.all" } -->
 
-```http
+```msgraph-interactive
 GET /sites/{site-id}/lists/{list-id}/items/{item-id}/versions
 ```
 # [C#](#tab/csharp)

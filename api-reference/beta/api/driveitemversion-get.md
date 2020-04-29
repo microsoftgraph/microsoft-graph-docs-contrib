@@ -9,6 +9,8 @@ author: ""
 
 # Get a DriveItemVersion resource (preview)
 
+Namespace: microsoft.graph
+
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 Retrieve the metadata for a specific version of a [DriveItem](../resources/driveitem.md).
@@ -51,7 +53,7 @@ This example retrieves a version of a file in the current user's drive.
 # [HTTP](#tab/http)
 <!-- { "blockType": "request", "name": "get-single-version", "scopes": "files.read" } -->
 
-```http
+```msgraph-interactive
 GET /me/drive/items/{item-id}/versions/{version-id}
 ```
 # [C#](#tab/csharp)

@@ -9,6 +9,8 @@ author: ""
 
 # List secureScoreControlProfiles
 
+Namespace: microsoft.graph
+
  [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 Retrieves a list of [secureScoreControlProfile](../resources/securescorecontrolprofiles.md) objects for a tenant.
@@ -57,7 +59,7 @@ The following is an example of the request.
   "name": "securescorecontrolprofiles_list"
 }-->
 
-```http
+```msgraph-interactive
 GET https://graph.microsoft.com/beta/security/secureScoreControlProfiles
 ```
 # [C#](#tab/csharp)

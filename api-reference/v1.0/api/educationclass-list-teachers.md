@@ -9,6 +9,8 @@ doc_type: apiPageType
 
 # List teachers
 
+Namespace: microsoft.graph
+
 Retrieve a list teachers for a class. Delegated tokens must be members of the class to get the teacher list.
 
 ## Permissions
@@ -46,7 +48,7 @@ The following is an example of the request.
   "blockType": "request",
   "name": "get_teachers"
 }-->
-```http
+```msgraph-interactive
 GET https://graph.microsoft.com/v1.0/education/classes/{class-id}/teachers
 ```
 # [C#](#tab/csharp)

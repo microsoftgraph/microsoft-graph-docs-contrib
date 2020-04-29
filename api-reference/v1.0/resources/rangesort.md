@@ -9,6 +9,8 @@ doc_type: resourcePageType
 
 # RangeSort resource type
 
+Namespace: microsoft.graph
+
 Manages sorting operations on Range objects.
 
 
@@ -52,7 +54,7 @@ Here is an example of the request.
   "blockType": "request",
   "name": "range_sort"
 }-->
-```http
+```msgraph-interactive
 GET https://graph.microsoft.com/v1.0/me/drive/items/{id}/workbook/names/{name}/range/sort
 ```
 # [C#](#tab/csharp)

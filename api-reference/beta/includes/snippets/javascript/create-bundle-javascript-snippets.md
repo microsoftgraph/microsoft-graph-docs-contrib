@@ -12,7 +12,7 @@ const client = Client.init(options);
 
 const driveItem = {
   name: "Just some files",
-  "@name.conflictBehavior" : "rename",
+  "@microsoft.graph.conflictBehavior" : "rename",
   bundle: { },
   children: [
     { id: "1234asdf" },
@@ -22,6 +22,6 @@ const driveItem = {
 
 let res = await client.api('/drive/bundles')
 	.version('beta')
-	.post({driveItem : driveItem});
+	.post(driveItem);
 
 ```

@@ -1,13 +1,15 @@
 ---
 title: "Get administrativeUnit"
 description: "Retrieve the properties and relationships of an administrativeUnit object."
-author: "davidmu1"
+author: "anandyadavMSFT"
 localization_priority: Normal
 ms.prod: "microsoft-identity-platform"
 doc_type: apiPageType
 ---
 
 # Get administrativeUnit
+
+Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
@@ -53,7 +55,7 @@ Here is an example of the request.
   "blockType": "request",
   "name": "get_administrativeunit"
 }-->
-```http
+```msgraph-interactive
 GET https://graph.microsoft.com/beta/administrativeUnits/{id}
 ```
 # [C#](#tab/csharp)

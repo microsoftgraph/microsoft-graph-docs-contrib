@@ -1,13 +1,15 @@
 ---
 title: "Create windowsManagementAppHealthState"
 description: "Create a new windowsManagementAppHealthState object."
-author: "rolyon"
+author: "dougeby"
 localization_priority: Normal
 ms.prod: "Intune"
 doc_type: apiPageType
 ---
 
 # Create windowsManagementAppHealthState
+
+Namespace: microsoft.graph
 
 > **Important:** Microsoft Graph APIs under the /beta version are subject to change; production use is not supported.
 
@@ -46,7 +48,7 @@ The following table shows the properties that are required when you create the w
 
 |Property|Type|Description|
 |:---|:---|:---|
-|id|String|Unique Identifier for the Windows management app health state|
+|id|String|Unique Identifier for the Windows management app health state. This property is read-only.|
 |healthState|[healthState](../resources/intune-devices-healthstate.md)|Windows management app health state. Possible values are: `unknown`, `healthy`, `unhealthy`.|
 |installedVersion|String|Windows management app installed version.|
 |lastCheckInDateTime|DateTimeOffset|Windows management app last check-in time.|
@@ -94,9 +96,6 @@ Content-Length: 349
   "deviceOSVersion": "Device OSVersion value"
 }
 ```
-
-
-
 
 
 

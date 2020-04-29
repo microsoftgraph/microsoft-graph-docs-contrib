@@ -2,12 +2,14 @@
 title: "List featureRolloutPolicies"
 description: "Retrieve a list of featureRolloutPolicy objects."
 localization_priority: Normal
-author: "davidmu1"
+author: "keylimesoda"
 ms.prod: "microsoft-identity-platform"
 doc_type: "apiPageType"
 ---
 
 # List featureRolloutPolicies
+
+Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
@@ -61,7 +63,7 @@ The following is an example of the request.
   "name": "get_featurerolloutpolicies"
 }-->
 
-```http
+```msgraph-interactive
 GET https://graph.microsoft.com/beta/directory/featureRolloutPolicies
 ```
 # [C#](#tab/csharp)

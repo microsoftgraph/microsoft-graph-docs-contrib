@@ -9,6 +9,8 @@ doc_type: apiPageType
 
 # List channels
 
+Namespace: microsoft.graph
+
 
 
 Retrieve the list of [channels](../resources/channel.md) in this team.
@@ -55,7 +57,7 @@ Here is an example of the request.
   "blockType": "request",
   "name": "get_channels"
 }-->
-```http
+```msgraph-interactive
 GET https://graph.microsoft.com/v1.0/teams/{id}/channels
 ```
 # [C#](#tab/csharp)

@@ -15,6 +15,6 @@ const inferenceClassificationOverride = {
 };
 
 let res = await client.api('/me/inferenceClassification/overrides/{id}')
-	.update({inferenceClassificationOverride : inferenceClassificationOverride});
+	.update(inferenceClassificationOverride);
 
 ```

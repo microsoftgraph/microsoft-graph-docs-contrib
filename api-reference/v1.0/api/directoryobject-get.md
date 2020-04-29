@@ -1,13 +1,15 @@
 ---
 title: "Get directoryObject"
 description: "Retrieve the properties and relationships of directoryObject object."
-author: "davidmu1"
+author: "keylimesoda"
 localization_priority: Priority
 ms.prod: "microsoft-identity-platform"
 doc_type: apiPageType
 ---
 
 # Get directoryObject
+
+Namespace: microsoft.graph
 
 Retrieve the properties and relationships of directoryObject object.
 ## Permissions
@@ -46,7 +48,7 @@ If successful, this method returns a `200 OK` response code and [directoryObject
   "blockType": "request",
   "name": "get_directoryobject"
 }-->
-```http
+```msgraph-interactive
 GET https://graph.microsoft.com/v1.0/directoryObjects/{id}
 ```
 # [C#](#tab/csharp)
