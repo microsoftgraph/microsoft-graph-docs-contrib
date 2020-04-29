@@ -2,7 +2,7 @@
 title: "Create conditionalAccessPolicy"
 description: "Create a new conditionalAccessPolicy."
 localization_priority: Normal
-author: "dkershaw10"
+author: "videor"
 ms.prod: "microsoft-identity-platform"
 doc_type: apiPageType
 ---
