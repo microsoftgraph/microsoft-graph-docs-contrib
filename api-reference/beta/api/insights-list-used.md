@@ -13,7 +13,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Calculated insight that includes a list of documents the user has modified or viewed.
+Calculated insight that includes a list of documents the user has viewed or modified.
 
 ## Permissions
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
@@ -29,13 +29,6 @@ Get a list of documents that the signed-in user has modified:
 
 ```http
 GET /me/insights/used
-```
-
-Get a list of documents that the signed-in user has modified or viewed:
-
->**Note**: This query option is only accessible by the user, not by anyone else. You cannot retrieve viewed by another user documents. 
-```http
-GET /me/insights/used?$orderby=LastUsed/LastAccessedDateTime desc
 ```
 
 Get a list of documents that the specified user has modified.
@@ -66,6 +59,13 @@ Or based on **containerType**:
 
 See the available container types and types you can filter by in [resourceVisualization](../resources/insights-resourcevisualization.md).
 
+Use the $orderBy query parameter to sort documents last viewed or modified by the signed-in user, based on the last access time of the document.
+
+>**Note**: Use this query option only for the signed-in user. You cannot use this API to get documents viewed or modified by another user 
+For example:
+```http
+GET /me/insights/used?$orderby=LastUsed/LastAccessedDateTime desc
+```
 
 ## Request headers
 | Header       |  Value|
