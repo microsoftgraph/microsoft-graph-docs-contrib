@@ -115,6 +115,91 @@ Content-type: application/json
 }
 ```
 
+## Examples Use cases of WorkforceIntegration entity for Filtering by WFM rules eligibility
+
+### Use case: Replace an existing WorkforceIntegration to enable SwapRequest for eligibility filtering
+
+### Request
+
+The following is an example of the request. 
+```
+PATCH https://graph.microsoft.com/v1.0/teamwork/workforceIntegrations/{workforceIntegrationid}
+{
+  "displayName": "ABCWorkforceIntegration",
+  "apiVersion": 1,
+  "isActive": true,
+  "encryption": {
+    - "protocol": "sharedSecret",
+    "secret": "My Secret"
+  },
+  "url": "https://abcWorkforceIntegration.com/Contoso/",
+  "supports": "Shift,SwapRequest",
+  "eligibilityFilteringEnabledEntities": "SwapRequest"
+}
+```
+### Response
+
+The following is an example of the response.
+```
+HTTP/1.1 200 OK
+Content-type: application/json
+{
+  "id": "c5d0c76b-80c4-481c-be50-923cd8d680a1",
+  "displayName": "ABCWorkforceIntegration",
+  "apiVersion": 1,
+  "isActive": true,
+  "encryption": {
+    "protocol": "sharedSecret",
+    "secret": null
+  },
+  "url": "https://abcWorkforceIntegration.com/Contoso/",
+  "supports": "Shift,SwapRequest",
+  "eligibilityFilteringEnabledEntities": "SwapRequest"
+}
+```
+To see how to create a new workforceintegration with SwapRequest enabled for eligibility filtering, see [Create](../api/workforceintegration-post.md).
+
+## Example of fetching eligible shifts when SwapRequest is included in eligibilityFilteringEnabledEntities
+The interaction between Shifts app and workforce integration endpoints will follow the existing pattern.
+
+### Request
+
+The following is an example of the request made by Shifts to the workforce integration endpoint to fetch eligible shifts for a swap request.
+
+```
+POST https://abcWorkforceIntegration.com/Contoso/{apiVersion}/team/{teamId}/read
+Accept-Language: en-us
+{
+  "requests": [
+  {
+     "id": "{shiftId}",
+     "method": "GET”,
+     "url": “/shifts/{shiftId}/requestableShifts?requestType={requestType}&startDateTime={startDateTime}&endDateTime={endDateTime}”
+   }]
+}
+```
+### Response
+
+The following is an example of the response from the workforce integration service.
+```
+HTTP/1.1 200 OK
+{
+  "responses": [
+  {
+    "body": {
+      "SHFT_6548f642-cbc1-4228-8621-054327576457",
+      "SHFT_6548f642-cbc1-4228-8621-054327571234"
+  }
+    "id": "{shiftId}",
+    "status: 200,
+    "body": {
+       "data": [{ShiftId}, {ShiftId}...]
+       "error": null
+    }
+  ]
+}
+```
+
 <!-- uuid: 16cd6b66-4b1a-43a1-adaf-3a886856ed98
 2019-02-04 14:57:30 UTC -->
 <!-- {

@@ -17,6 +17,8 @@ An instance of a workforce integration with shifts.
 
 | Method       | Return Type | Description |
 |:-------------|:------------|:------------|
+| [Create](../api/workforceintegration-post.md) | [workforceIntegration](workforceintegration.md) | Create a new **workforceIntegration** object.|
+| [List](../api/workforceintegration-list.md) | [workforceIntegration](workforceintegration.md) collection | Get the list of **workforceIntegration** objects associated with this schedule.|
 | [Get](../api/workforceintegration-get.md) | [workforceIntegration](workforceintegration.md) | Read the properties and relationships of a **workforceIntegration** object. |
 | [Update](../api/workforceintegration-update.md) | [workforceIntegration](workforceintegration.md) | Update a **workforceIntegration** object. |
 | [Delete](../api/workforceintegration-delete.md) | None | Delete a **workforceIntegration** object. |
@@ -29,8 +31,8 @@ An instance of a workforce integration with shifts.
 |displayName|String|Name of the workforce integration.|
 |encryption|[workforceIntegrationEncryption](workforceintegrationencryption.md)|The workforce integration encryption resource.|
 |isActive|Boolean|Indicates whether this workforce integration is currently active and available.|
-|supportedEntities|string| The Shifts entities supported for synchronous change notifications. Possible values are: `none`, `shift`, `swapRequest`, `openshift`, `openShiftRequest`, `userShiftPreferences`|
-|url|String| Workforce Integration URL for callbacks from the shift service.|
+|supportedEntities|string| The Shifts entities supported for synchronous change notifications. Shifts will make a call back to the url provided on client changes on those entities added here. By default, no entities are supported for change notifications. Possible values are: `none`, `shift`, `swapRequest`, `openshift`, `openShiftRequest`, `userShiftPreferences`|
+|url|String| Workforce Integration URL for callbacks from the Shifts service.|
 
 ## Relationships
 

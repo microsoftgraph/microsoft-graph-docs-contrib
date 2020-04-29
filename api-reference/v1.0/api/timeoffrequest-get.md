@@ -33,6 +33,10 @@ One of the following permissions is required to call this API. To learn more, in
 GET /teams/{teamId}/schedule/timeOffRequests/{timeOffRequestId}
 ```
 
+## Optional query parameters
+
+This method does not support OData query parameters to customize the response.
+
 ## Request headers
 
 | Name      |Description|
