@@ -17,8 +17,8 @@ A unit of non-work in a schedule.
 
 | Method       | Return Type  |Description|
 |:---------------|:--------|:----------|
-|[Create](../api/schedule-post-timesoff.md) | [timeOff](timeoff.md) | Create a new **timeOff** object.|
 |[List](../api/schedule-list-timesoff.md) | [timeOff](timeoff.md) collection | Get the list of **timeOff** objects in this schedule.|
+|[Create](../api/schedule-post-timesoff.md) | [timeOff](timeoff.md) | Create a new **timeOff** object.|
 |[Get](../api/timeoff-get.md) | [timeOff](timeoff.md) | Get a **timeOff** object by ID.|
 |[Replace](../api/timeoff-put.md) | [timeOff](timeoff.md) | Replace a **timeOff** object.|
 |[Delete](../api/timeoff-delete.md) | None | Delete a **timeOff** object from the schedule.|
@@ -26,17 +26,17 @@ A unit of non-work in a schedule.
 ## Properties
 |Name          |Type           |Description                                                                                                                                      |
 |--------------|---------------|-------------------------------------------------------------------------------------------------------------------------------------------------|
-| id			|`string`      |ID of the `timeOff`.|
-| userId 			|`string`      |ID of the user assigned to the `timeOff`. Required.|
-| sharedTimeOff 	| [timeOffItem](timeoffitem.md)  |The shared version of this `timeOff` that is viewable by both employees and managers. Required.|
-| draftTimeOff		| [timeOffItem](timeoffitem.md)        |The draft version of this `timeOff` that is viewable by managers. Required.|
-| createdDateTime		|`DateTimeOffset`        |The time stamp at which this `timeOff` was first created. The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 would look like this: '2014-01-01T00:00:00Z'. |
-| lastModifiedDateTime		|`DateTimeOffset`        |The time stamp at which this `timeOff` was last updated. The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 would look like this: '2014-01-01T00:00:00Z'. |
-| lastModifiedBy		| [identitySet](identityset.md)        |The identity that last updated this `timeOff`. |
+| id			|`string`      |ID of the **timeOff**.|
+| userId 			|`string`      |ID of the user assigned to the **timeOff**. Required.|
+| sharedTimeOff 	| [timeOffItem](timeoffitem.md)  |The shared version of this **timeOff** that is viewable by both employees and managers. Required.|
+| draftTimeOff		| [timeOffItem](timeoffitem.md)        |The draft version of this **timeOff** that is viewable by managers. Required.|
+| createdDateTime		|`DateTimeOffset`        |The time stamp at which this **timeOff** was first created. The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 would look like this: '2014-01-01T00:00:00Z'. |
+| lastModifiedDateTime		|`DateTimeOffset`        |The time stamp at which this **timeOff** was last updated. The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 would look like this: '2014-01-01T00:00:00Z'. |
+| lastModifiedBy		| [identitySet](identityset.md)        |The identity that last updated this **timeOff**. |
 
 ## JSON representation
 
-Here is a JSON representation of the resource.
+The following is a JSON representation of the resource.
 
 <!-- {
   "blockType": "resource",

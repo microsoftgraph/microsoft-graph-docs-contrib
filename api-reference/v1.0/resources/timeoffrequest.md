@@ -1,6 +1,6 @@
 ---
 title: "timeOffRequest resource type"
-description: "Represents a type of shift request to take timeoff."
+description: "Represents a type of shift request to take timeOff."
 localization_priority: Normal
 author: "akumar39"
 ms.prod: "microsoft-teams"
@@ -11,7 +11,7 @@ doc_type: "resourcePageType"
 
 Namespace: microsoft.graph
 
-Represents a type of shift request to take [timeoff](../resources/timeoff.md).
+Represents a type of shift request to take [timeOff](../resources/timeoff.md).
 
 ## Methods
 

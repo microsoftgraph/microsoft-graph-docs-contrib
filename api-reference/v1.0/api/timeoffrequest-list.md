@@ -1,6 +1,6 @@
 ---
 title: "List timeOffRequest"
-description: "Retrieve a list of timeoffrequest objects in the team."
+description: "Retrieve a list of timeOffRequest objects in the team."
 localization_priority: Normal
 author: "akumar39"
 ms.prod: "microsoft-teams"
@@ -11,7 +11,7 @@ doc_type: "apiPageType"
 
 Namespace: microsoft.graph
 
-Retrieve a list of [timeoffrequest](../resources/timeoffrequest.md) objects in the team.
+Retrieve a list of [timeOffRequest](../resources/timeoffrequest.md) objects in the team.
 
 ## Permissions
 

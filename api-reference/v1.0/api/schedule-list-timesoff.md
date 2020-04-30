@@ -33,14 +33,13 @@ One of the following permissions is required to call this API. To learn more, in
 GET /teams/{teamId}/schedule/timesOff
 ```
 ## Optional query parameters
-This method supports the $filter [OData query parameter](/graph/query-parameters) to help customize the response.
+This method supports the `$filter` [OData query parameter](/graph/query-parameters) to help customize the response.
 
 ## Request headers
 
 | Header       | Value |
 |:---------------|:--------|
 | Authorization  | Bearer {token}. Required.  |
-| Content-Type  | application/json  |
 
 ## Request body
 Do not supply a request body for this method.
@@ -51,7 +50,7 @@ If successful, this method returns a `200 OK` response code and a collection of 
 
 ## Example
 
-#### Request
+### Request
 
 The following is an example of a request that gets all **timeOff** objects that have a shared version and a draft version between March 11 - March 18, 2019.
 
@@ -65,7 +64,7 @@ GET https://graph.microsoft.com/v1.0/teams/{teamId}/schedule/timesOff?$filter=sh
 ---
 
 
-#### Response
+### Response
 
 The following is an example of the response. 
 

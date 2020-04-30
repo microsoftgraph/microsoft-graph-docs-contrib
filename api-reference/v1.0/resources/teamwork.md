@@ -21,8 +21,7 @@ A container for the range of Microsoft Teams functionalities that are available 
 
 ## Relationships
 
-| Relationship | Type | Description |
-|:---------------|:--------|:----------|
+None.
 
 ## JSON representation
 

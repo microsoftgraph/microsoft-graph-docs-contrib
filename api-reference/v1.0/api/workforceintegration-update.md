@@ -1,17 +1,17 @@
 ---
-title: "Update workforceintegration"
-description: "Update the properties of a workforceintegration object."
+title: "Update workforceIntegration"
+description: "Update the properties of a workforceIntegration object."
 localization_priority: Normal
 author: "akumar39"
 ms.prod: "microsoft-teams"
 doc_type: "apiPageType"
 ---
 
-# Update workforceintegration
+# Update workforceIntegration
 
 Namespace: microsoft.graph
 
-Update the properties of a [workforceintegration](../resources/workforceintegration.md) object.
+Update the properties of a [workforceIntegration](../resources/workforceintegration.md) object.
 
 ## Permissions
 
@@ -45,12 +45,12 @@ In the request body, supply the values for relevant fields that should be update
 
 | Property     | Type        | Description |
 |:-------------|:------------|:------------|
-|apiVersion|Int32|API version for the call back url. Start with 1.|
+|apiVersion|Int32|API version for the call back URL. Start with 1.|
 |displayName|String|Name of the workforce integration.|
 |encryption|workforceIntegrationEncryption|The workforce integration encryption resource. |
 |isActive|Boolean|Indicates whether this workforce integration is currently active and available.|
-|supportedEntities|string| `none`, `shift`, `swapRequest`, `openshift`, `openShiftRequest`, `userShiftPreferences`. If selecting more than one value, all values must start with the first letter in uppercase.|
-|url|String| Workforce Integration url for callbacks from the Shift service. |
+|supportedEntities|string| Possible values are: `none`, `shift`, `swapRequest`, `openshift`, `openShiftRequest`, `userShiftPreferences`. If selecting more than one value, all values must start with the first letter in uppercase.|
+|url|String| Workforce integration URL for callbacks from the shift service. |
 
 ## Response
 

@@ -1,6 +1,6 @@
 ---
 title: "Delete timeOffReason"
-description: "Mark a timeOffReason as inactive by setting the isActive property"
+description: "Mark a timeOffReason as inactive by setting the isActive property."
 author: "akumar39"
 localization_priority: Normal
 ms.prod: "microsoft-teams"
@@ -11,7 +11,7 @@ doc_type: apiPageType
 
 Namespace: microsoft.graph
 
-Mark a [timeOffReason](../resources/timeoffreason.md) as inactive by setting the **isActive** property. Every team must include atleast one timeoff reason.
+Mark a [timeOffReason](../resources/timeoffreason.md) as inactive by setting the **isActive** property. Every team must include at least one timeoff reason.
 
 This method does not remove the specified [timeOffReason](../resources/timeoffreason.md) instance. [timeOffItem](../resources/timeoffitem.md) instances that have been assigned this reason remain assigned to this reason.
 
@@ -22,7 +22,7 @@ One of the following permissions is required to call this API. To learn more, in
 |Permission type      | Permissions (from least to most privileged)              |
 |:--------------------|:---------------------------------------------------------|
 |Delegated (work or school account) | Schedule.ReadWrite.All, Group.ReadWrite.All    |
-|Delegated (personal Microsoft account) | Not supported.    |s
+|Delegated (personal Microsoft account) | Not supported.    |
 |Application | Schedule.ReadWrite.All |
 
 > **Note**: This API supports admin permissions. Global admins can access groups that they are not a member of.
@@ -68,7 +68,6 @@ DELETE https://graph.microsoft.com/v1.0/teams/{teamId}/schedule/timeOffReasons/{
 
 The following is an example of the response. 
 
->**Note:** The response object shown here might be shortened for readability. All the properties will be returned from an actual call.
 <!-- {
   "blockType": "response",
   "truncated": true,
