@@ -59,7 +59,11 @@ If successful, this method returns a `200 OK` response code and an updated [work
 
 ## Examples
 
-### Request
+### Example 1: Update a workforceIntegration object
+
+The following example updates a **workforceIntegration** object.
+
+#### Request
 
 The following is an example of the request.
 
@@ -100,7 +104,7 @@ Content-type: application/json
 ---
 
 
-### Response
+#### Response
 
 The following is an example of the response.
 
@@ -129,11 +133,11 @@ Content-type: application/json
 }
 ```
 
-## Examples for Use cases of WorkforceIntegration entity for Filtering by WFM rules eligibility
+### Example 2: Create a new workforceIntegration with SwapRequest enabled for eligibility filtering
 
-### Use case: Create a new WorkforceIntegration with SwapRequest enabled for eligibility filtering
+The following example creates a new **workforceIntegration** with SwapRequest enabled for eligibility filtering.
 
-### Request
+#### Request
 
 The following is an example of the request. 
 ```
@@ -153,7 +157,7 @@ POST https://graph.microsoft.com/beta/teamwork/workforceIntegrations/
 Authorization: Bearer {token}
 Content-type: application/json
 ```
-### Response
+#### Response
 
 The following is an example of the response.
 ```
@@ -175,10 +179,11 @@ HTTP/1.1 200 OK
 ```
 To see how to create a new workforceintegration with SwapRequest enabled for eligibility filtering, see [Create](../api/workforceintegration-post.md).
 
-## Example of fetching eligible shifts when SwapRequest is included in eligibilityFilteringEnabledEntities
+### Example 3: Fetching eligible shifts when SwapRequest is included in eligibilityFilteringEnabledEntities
+
 The interaction between Shifts app and workforce integration endpoints will follow the existing pattern.
 
-### Request
+#### Request
 
 The following is an example of the request made by Shifts to the workforce integration endpoint to fetch eligible shifts for a swap request.
 
@@ -194,7 +199,7 @@ Accept-Language: en-us
    }]
 }
 ```
-### Response
+#### Response
 
 The following is an example of the response from the workforce integration service.
 ```
