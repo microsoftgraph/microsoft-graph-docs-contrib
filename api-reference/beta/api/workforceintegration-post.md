@@ -124,10 +124,10 @@ Content-type: application/json
 
 ### Example 2: Create a new workforceIntegration with SwapRequest enabled for eligibility filtering
 
+The following is an example of a request with SwapRequest enabled for eligibility filtering. 
 
 #### Request
 
-The following is an example of a request with SwapRequest enabled for eligibility filtering. 
 ```
 POST https://graph.microsoft.com/beta/teamwork/workforceIntegrations/
 Authorization: Bearer {token}
@@ -167,7 +167,7 @@ HTTP/1.1 200 OK
 }
 
 ```
-To see how to update an existing workforceintegration with SwapRequest enabled for eligibility filtering, see [Update](../api/workforceintegration-update.md).
+To update an existing **workforceIntegration** object with SwapRequest enabled for eligibility filtering, see the [Update](../api/workforceintegration-update.md) method.
 
 ### Example 3: Fetching eligible shifts when SwapRequest is included in eligibilityFilteringEnabledEntities
 
