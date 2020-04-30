@@ -25,12 +25,14 @@ For a summary of the value of these API changes, as well as recent tools, compon
 | Addition | v1.0 | Added the **isTallyingResponses** property to the [calendar](/graph/api/resources/calendar?view=graph-rest-1.0) entity. |
 | Addition | v1.0 | Added the **isRemovable** property to the [calendar](/graph/api/resources/calendar?view=graph-rest-1.0) entity. |
 | Addition | v1.0 | Added the **delegateMeetingMessageDeliveryOptions** property to the [mailboxSettings](/graph/api/resources/mailboxSettings?view=graph-rest-1.0) entity. |
+| Addition | Beta and v1.0          | Support for [file attachments up to 150MB](outlook-large-attachments.md) to an [event](/graph/api/resources/event?view=graph-rest-1.0) instance. |
 
 ### Devices and apps | Cloud printing
 
 | **Change type** | **Version**   | **Description**                          |
 |:---|:---|:---|
-| Addition | beta | Added **allowedGroups** and **allowedUsers** properties to the [printerShare](/graph/api/resources/printershare) entity.|
+| Addition | beta | Added **allowedGroups** and **allowedUsers** properties to the [printerShare](/graph/api/resources/printershare?view=graph-rest-beta) entity.|
+| Addition | beta | Added the [printIdentity](/graph/api/resources/printidentity?view=graph-rest-beta) and [printUserIdentity](/graph/api/resources/printuseridentity?view=graph-rest-beta) resource types. |
 
 ### Devices and apps | Corporate management (Intune)
 
@@ -71,6 +73,19 @@ For a summary of the value of these API changes, as well as recent tools, compon
 | :-------------- | :---------- | :--------------------------------------- |
 | Addition        | v1.0        | Added the [check in](/graph/api/driveitem-checkin?view=graph-rest-v1.0) and [check out](/graph/api/driveitem-checkin?view=graph-rest-v1.0) actions on the [driveItem](/graph/api/resources/driveitem?view=graph-rest-v1.0) resource. |
 
+### Files (OneDrive for Business)
+
+| **Change type** | **Version**   | **Description**                          |
+| :-------------- | :------------ | :--------------------------------------- |
+| Addition        | beta        | Added the [folowedSites](/graph/api/sites-list-followed?view=graph-rest-beta) navigation property to the to the [user](/graph/api/resources/user?view=graph-rest-beta) entity set |
+| Addition        | v1.0        | Added the [folowedSites](/graph/api/sites-list-followed?view=graph-rest-1.0) navigation property to the to the [user](/graph/api/resources/user?view=graph-rest-1.0) entity set |
+| Addition        | v1.0        | Added the **expirationDateTime**, **password**, and **message** properties on the [createLink][/graph/api/driveitem-createlink?view=graph-rest-1.0] action on a [driveItem](/graph/resources/driveitem?view=graph-rest-1.0) resource. |
+| Addition        | v1.0        | Added the **dataLocaton** property on the [siteCollection](/graph/resources/sitecollection?view=graph-rest-1.0) resource. |
+| Addition        | v1.0        | Added the **preventsDownload** property on the [sharingLink](/graph/resources/sharinglink?view=graph-rest-1.0) resource. |
+| Addition        | v1.0        | Added the **tenantId** property on the [sharepointIds](/graph/resources/sharepointids?view=graph-rest-1.0) resource. |
+| Addition        | v1.0        | Added the **permission** property on the [sharedDriveItem](/graph/resources/shareddriveitem?view=graph-rest-1.0) resource. |
+| Addition        | v1.0        | Added the **expirationDateTime**, **hasPassword**, and **grantedToIdentities** properties on the [permission](/graph/resources/permission?view=graph-rest-1.0) resource. |
+| Addition        | v1.0        | Added the **expirationDateTime**, and **password** properties on the [invite](/graph/api/driveitem-invite?view=graph-rest-1.0) action on a [driveItem](/graph/resources/driveitem?view=graph-rest-1.0) resource. |
 
 ### Identity and access (Azure AD)
 
@@ -88,6 +103,15 @@ For a summary of the value of these API changes, as well as recent tools, compon
 | Addition | v1.0 | Added the [tokenIssuancePolicy](/graph/api/resources/tokenissuancepolicy?view=graph-rest-1.0) resource type, which controls the characteristics of SAML tokens issued by Azure AD. This allows you to set the signing algorithm, signing options, or SAML token version to be used to issue the SAML token.|
 | Addition | beta | Added the [authenticationMethod](/graph/api/resources/authenticationmethod?view=graph-rest-beta), [passwordAuthenticationMethod](/graph/api/resources/passwordauthenticationmethod?view=graph-rest-beta), and [phoneAuthenticationMethod](/graph/api/resources/phoneauthenticationmethod?view=graph-rest-beta) resources and associated methods.
 | Addition | beta | Added the **createdByAppId** property to the [group](/graph/api/resources/group?view=graph-rest-beta) entity.|
+
+### Mail
+
+| **Change type** | **Version**   | **Description**                          |
+| :-------------- | :------------ | :--------------------------------------- |
+| Addition        | V1.0          | [Adding file attachments up to 150MB](outlook-large-attachments.md) to a [message](/graph/api/resources/message?view=graph-rest-1.0) instance. |
+| Addition        | V1.0          | The [attachmentItem](/graph/api/resources/attachmentitem?view=graph-rest-1.0) complex type, [createUploadSession](/graph/api/attachment-createuploadsession?view=graph-rest-1.0) action for the [attachment](/graph/api/resources/attachment?view=graph-rest-1.0) entity, and the **attachmentType** enumeration. |
+| Changed         | V1.0          | Extended the existing [uploadSession](/graph/api/resources/uploadsession?view=graph-rest-1.0) entity that has been used by [driveItem](/graph/api/resources/driveitem?view=graph-rest-1.0) to apply to **attachment** as well. |
+
 
 ### Reports | Identity and access reports
 
@@ -237,7 +261,7 @@ For a summary of the value of these API changes, as well as recent tools, compon
 | :-------------- | :---------- | :--------------------------------------- |
 | Addition | Beta | Added support for ChannelMessage.Read.All to APIs for reading [chatMessages](/graph/api/resources/chatmessage?view=graph-rest-beta) in channels. |
 
-### Universal Print
+### Devices and apps | Cloud printing
 
 Added new APIs and resources for managing and printing to printers by using the Universal Print service.
 
