@@ -142,6 +142,9 @@ The following example creates a new **workforceIntegration** with SwapRequest en
 The following is an example of the request. 
 ```
 POST https://graph.microsoft.com/beta/teamwork/workforceIntegrations/
+Authorization: Bearer {token}
+Content-type: application/json
+
 {
   "displayName": "ABCWorkforceIntegration",
   "apiVersion": 1,
@@ -154,8 +157,7 @@ POST https://graph.microsoft.com/beta/teamwork/workforceIntegrations/
   "supports": "Shift,SwapRequest",
   "eligibilityFilteringEnabledEntities": "SwapRequest"
 }
-Authorization: Bearer {token}
-Content-type: application/json
+
 ```
 #### Response
 
@@ -177,7 +179,7 @@ HTTP/1.1 200 OK
 }
 
 ```
-To see how to create a new workforceintegration with SwapRequest enabled for eligibility filtering, see [Create](../api/workforceintegration-post.md).
+To create a new **workforceIntegration** with SwapRequest enabled for eligibility filtering, see the [Create](../api/workforceintegration-post.md) method.
 
 ### Example 3: Fetching eligible shifts when SwapRequest is included in eligibilityFilteringEnabledEntities
 
@@ -190,6 +192,7 @@ The following is an example of the request made by Shifts to the workforce integ
 ```
 POST https://abcWorkforceIntegration.com/Contoso/{apiVersion}/team/{teamId}/read
 Accept-Language: en-us
+
 {
   "requests": [
   {
