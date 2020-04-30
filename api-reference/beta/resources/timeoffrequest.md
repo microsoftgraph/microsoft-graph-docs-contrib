@@ -19,8 +19,8 @@ Represents a type of shift request to take [timeoff](../resources/timeoff.md).
 
 | Method       | Return Type | Description |
 |:-------------|:------------|:------------|
-| [Get](../api/timeoffrequest-get.md) | [timeOffRequest](timeoffrequest.md) | Read the properties and relationships of a **timeOffRequest** object. |
 | [List](../api/timeoffrequest-list.md) | [timeOffRequest](timeoffrequest.md) collection | Get the list of **timeOffRequest** objects in this schedule.|
+| [Get](../api/timeoffrequest-get.md) | [timeOffRequest](timeoffrequest.md) | Read the properties and relationships of a **timeOffRequest** object. |
 | [Delete](../api/timeoffrequest-delete.md) | None | Delete a **timeOffRequest** object. |
 | [Approve](../api/timeoffrequest-approve.md)|None|Approve a time off request.|
 | [Decline](../api/timeoffrequest-decline.md)|None|Decline a time off request.|
