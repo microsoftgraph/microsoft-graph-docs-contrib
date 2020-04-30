@@ -50,9 +50,11 @@ If successful, this method returns a `201 Created` response code and a new [work
 
 ## Examples
 
-### Request
+### Example 1: Create a new workforceIntegration object.
 
-The following is an example of the request.
+#### Request
+
+The following is an example of a request to create a new **workforceIntegration** object.
 
 # [HTTP](#tab/http)
 <!-- {
@@ -91,7 +93,7 @@ Content-type: application/json
 ---
 
 
-### Response
+#### Response
 
 The following is an example of the response.
 
@@ -120,15 +122,17 @@ Content-type: application/json
 }
 ```
 
-## Examples for Use cases of WorkforceIntegration entity for Filtering by WFM rules eligibility
+### Example 2: Create a new workforceIntegration with SwapRequest enabled for eligibility filtering
 
-### Use case: Create a new WorkforceIntegration with SwapRequest enabled for eligibility filtering
 
-### Request
+#### Request
 
-The following is an example of the request. 
+The following is an example of a request with SwapRequest enabled for eligibility filtering. 
 ```
 POST https://graph.microsoft.com/beta/teamwork/workforceIntegrations/
+Authorization: Bearer {token}
+Content-type: application/json
+
 {
   "displayName": "ABCWorkforceIntegration",
   "apiVersion": 1,
@@ -141,10 +145,9 @@ POST https://graph.microsoft.com/beta/teamwork/workforceIntegrations/
   "supports": "Shift,SwapRequest",
   "eligibilityFilteringEnabledEntities": "SwapRequest"
 }
-Authorization: Bearer {token}
-Content-type: application/json
+
 ```
-### Response
+#### Response
 
 The following is an example of the response.
 ```
@@ -166,7 +169,8 @@ HTTP/1.1 200 OK
 ```
 To see how to update an existing workforceintegration with SwapRequest enabled for eligibility filtering, see [Update](../api/workforceintegration-update.md).
 
-## Example of fetching eligible shifts when SwapRequest is included in eligibilityFilteringEnabledEntities
+### Example 3: Fetching eligible shifts when SwapRequest is included in eligibilityFilteringEnabledEntities
+
 The interaction between Shifts app and workforce integration endpoints will follow the existing pattern.
 
 ### Request
@@ -176,6 +180,7 @@ The following is an example of the request made by Shifts to the workforce integ
 ```
 POST https://abcWorkforceIntegration.com/Contoso/{apiVersion}/team/{teamId}/read
 Accept-Language: en-us
+
 {
   "requests": [
   {
