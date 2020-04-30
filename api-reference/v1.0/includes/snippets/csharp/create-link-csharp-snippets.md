@@ -11,7 +11,7 @@ var type = "view";
 var scope = "anonymous";
 
 await graphClient.Me.Drive.Items["{item-id}"]
-	.CreateLink(type,scope)
+	.CreateLink(type,scope,null,null,null)
 	.Request()
 	.PostAsync();
 

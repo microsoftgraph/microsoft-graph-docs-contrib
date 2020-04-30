@@ -86,11 +86,11 @@ The beta version offers a workaround, where you can use the **onlineMeetingProvi
 
 ### Additional notifications for users
 
-[Subscriptions](/graph/api/resources/subscription) to changes for **user** with **changeType** set to **updated** will also receive notifications of **changeType**: **updated** on user creation and user deletion.
+[Subscriptions](/graph/api/resources/subscription) to changes for **user** with **changeType** set to **updated** will also receive notifications of **changeType**: **updated** on user creation and user soft deletion.
 
 ### Additional notifications for groups
 
-[Subscriptions](/graph/api/resources/subscription) to changes for **group** with **changeType** set to **updated** will also receive notifications of **changeType**: **updated** on group creation and group deletion.
+[Subscriptions](/graph/api/resources/subscription) to changes for **group** with **changeType** set to **updated** will also receive notifications of **changeType**: **updated** on group creation and group soft deletion.
 
 ## Cloud communications 
 
@@ -322,12 +322,13 @@ In both the v1 and beta endpoints, the response of `GET /users/id/messages` incl
 
 ## Teamwork (Microsoft Teams)
 
-### GET /teams and POST /teams are not supported
+### GET /teams is not supported
 
-See [list all teams](teams-list-all-teams.md) and 
-[list your teams](/graph/api/user-list-joinedteams?view=graph-rest-1.0)
-to get a list of teams.
-See [create team](/graph/api/team-put-teams?view=graph-rest-1.0) for creating teams.
+To get a list of teams, see [list all teams](teams-list-all-teams.md) and 
+[list your teams](/graph/api/user-list-joinedteams?view=graph-rest-1.0).
+
+### POST /teams is only available in beta
+To creat teams in v1.0, see [create team](/graph/api/team-put-teams?view=graph-rest-1.0).
 
 ### Missing teams in list all teams
 

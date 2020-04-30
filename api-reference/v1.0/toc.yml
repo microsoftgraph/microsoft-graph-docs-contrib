@@ -3319,6 +3319,8 @@
           href: api/application-update.md
         - name: Delete application
           href: api/application-delete.md
+        - name: Get delta
+          href: api/application-delta.md
         - name: List deleted applications
           href: api/directory-deleteditems-list.md
         - name: Get deleted application
@@ -4266,6 +4268,8 @@
           href: api/site-follow.md
         - name: Unfollow site
           href: api/site-unfollow.md
+        - name: List followed sites
+          href: api/sites-list-followed.md
       - name: Lists
         href: resources/list.md
         items:
