@@ -7,7 +7,7 @@ ms.prod: "microsoft-identity-platform"
 doc_type: "apiPageType"
 ---
 
-# Assign Connector to connectorGroup
+# Add connector to connectorGroup
 
 Namespace: microsoft.graph
 
