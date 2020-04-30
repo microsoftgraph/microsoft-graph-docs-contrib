@@ -77,6 +77,7 @@ For a summary of the value of these API changes, as well as recent tools, compon
 
 | **Change type** | **Version**   | **Description** |
 |:---|:---|:---|
+| Addition | beta | Added [organizationalbrandingproperties](/graph/api/resources/organizationalbrandingproperties?view=graph-rest-beta) resource type, which allows customization of visual look and feel of sign-in screens.|
 | Addition | beta | Added [unifiedRoleAssignmentMultiple](/graph/api/resources/unifiedroleassignmentmultiple?view=graph-rest-beta), [rbacApplicationMultiple](/graph/api/resources/rbacapplicationmultiple?view=graph-rest-beta), and [appScope](/graph/api/resources/appscope?view=graph-rest-beta) and the following actions:<br><li>[List unifiedRoleAssignmentMultiple](/graph/api/unifiedroleassignmentmultiple-list?view=graph-rest-beta)</li><li>[Get unifiedRoleAssignmentMultiple](/graph/api/unifiedroleassignmentmultiple-get?view=graph-rest-beta)</li><li>[Create unifiedRoleAssignmentMultiple](/graph/api/resources/unifiedroleassignmentmultiple-post?view=graph-rest-beta)</li><li>[Update unifiedRoleAssignmentMultiple](/graph/api/unifiedroleassignmentmultiple-update?view=graph-rest-beta)</li><li>[Delete unifiedRoleAssignmentMultiple](/graph/api/unifiedroleassignmentmultiple-delete?view=graph-rest-beta)</li>. |
 | Addition | v1.0 | Added support for [delta queries for application](/graph/api/application-delta?view=graph-rest-1.0).|
 | Addition | beta | Added support for [delta queries for administrativeUnits](/graph/api/administrativeunit-delta?view=graph-rest-beta).|

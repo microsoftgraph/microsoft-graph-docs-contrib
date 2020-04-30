@@ -9392,6 +9392,25 @@
           href: api/organization-get.md
         - name: Update org details
           href: api/organization-update.md
+      - name: Organizational branding
+        href: resources/organizationalbrandingproperties.md
+        items:
+        - name: Create organizational branding 
+          href: api/organizationalbrandingproperties-create.md
+        - name: Get organizational branding 
+          href: api/organizationalbrandingproperties-get.md
+        - name: Update organizational branding
+          href: api/organizationalbrandingproperties-update.md
+        - name: Delete organizational branding
+          href: api/organizationalbrandingproperties-delete.md
+        - name: Create localized organizational branding 
+          href: api/organizationalbrandingpropertieslocalization-create.md
+        - name: Get localized organizational branding 
+          href: api/organizationalbrandingpropertieslocalization-get.md
+        - name: Update localized organizational branding
+          href: api/organizationalbrandingpropertieslocalization-update.md
+        - name: Delete localized organizational branding
+          href: api/organizationalbrandingpropertieslocalization-delete.md 
       - name: Organizational contacts
         href: resources/orgcontact.md
         items:
