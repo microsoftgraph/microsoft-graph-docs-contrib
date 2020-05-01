@@ -41,7 +41,6 @@ Represents a physical printer device that has been registered with the Universal
 |displayName|String|The name of the printer.|
 |manufacturer|String|The manufacturer reported by the printer. Read-only.|
 |model|String|The model name reported by the printer. Read-only.|
-|registeredBy|[printUserIdentity](printuseridentity.md)|The user who registered the printer. Deprecated.|Yes|Yes|
 |registeredDateTime|DateTimeOffset|The DateTimeOffset when the printer was registered. Read-only.|
 |status|[printerStatus](printerstatus.md)|The processing status of the printer, including any errors. Read-only.|
 |isShared|Boolean|True if the printer is shared; false otherwise. Read-only.|
