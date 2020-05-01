@@ -34,7 +34,6 @@ Represents a printer that is intended to be discoverable by users and printing a
 | Property     | Type        | Description |
 |:-------------|:------------|:------------|
 |id|String| The printerShare's identifier. Read-only.|
-|name|String|The name of the printer share that print clients should display. Deprecated.|
 |displayName|String|The name of the printer share that print clients should display.|
 |createdDateTime|DateTimeOffset|The DateTimeOffset when the printer share was created. Read-only.|
 |manufacturer|String|The manufacturer reported by the printer associated with this printer share. Read-only.|
