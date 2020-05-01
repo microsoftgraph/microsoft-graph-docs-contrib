@@ -1,12 +1,12 @@
 ---
-title: "Places API overview"
+title: "Places API overview (preview)"
 description: "You can use Microsoft Graph to build compelling app experiences based on different places. Today, you can access company places and details about each place."
 author: "vrod9429"
 localization_priority: Priority
 ms.prod: "outlook"
 ---
 
-# Places API overview
+# Places API overview (preview)
 
 You can use the places API to build compelling app experiences based on different places. Today, you can access company places and details about each place.
 
