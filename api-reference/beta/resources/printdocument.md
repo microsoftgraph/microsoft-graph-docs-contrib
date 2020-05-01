@@ -19,18 +19,13 @@ Represents a document being printed.
 
 | Method       | Return Type | Description |
 |:-------------|:------------|:------------|
-| [Get uploadSession](../api/printdocument-get-uploadsession.md) | [printUploadSession](printuploadsession.md) | Read details of an upload session. |
-| [Create uploadSession](../api/printdocument-put-uploadsession.md) | [printUploadSession](printuploadsession.md) | Create an upload session to upload data to a [printDocument](printdocument.md). |
-| [Delete uploadSession](../api/printdocument-delete-uploadsession.md) | None | Read the properties and relationships of the printer object. |
-| [Upload data](../api/printdocument-post-uploadsession.md) | [printUploadSession](printuploadsession.md) | Upload data to a [printDocument](printdocument.md) by using an existing upload session. |
-| [uploadData](../api/printdocument-uploaddata.md) | None | Upload a single binary segment of the **printDocument**. Deprecated. |
+| [uploadData](../api/printdocument-uploaddata.md) | None | Upload a single binary segment of the **printDocument**. |
 
 ## Properties
 | Property     | Type        | Description |
 |:-------------|:------------|:------------|
 |id|String|The document's identifier. Read-only.|
-|name|String|The document's name. Read-only. Deprecated.|
-|displayName|String|The document's name. Read-only.|
+|name|String|The document's name. Read-only.|
 |mimeType|String|The document's MIME type. Read-only.|
 |sizeInBytes|Int64|The document's size in bytes. Read-only.|
 |documentConfiguration|[printerDocumentConfiguration](printerdocumentconfiguration.md) |A group of settings that a printer should use to print a document. Read-only.|

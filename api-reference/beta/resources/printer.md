@@ -38,7 +38,6 @@ Represents a physical printer device that has been registered with the Universal
 | Property     | Type        | Description |
 |:-------------|:------------|:------------|
 |id|String|The document's identifier. Read-only.|
-|name|String|The name of the printer. Deprecated.|
 |displayName|String|The name of the printer.|
 |manufacturer|String|The manufacturer reported by the printer. Read-only.|
 |model|String|The model name reported by the printer. Read-only.|
@@ -54,7 +53,7 @@ Represents a physical printer device that has been registered with the Universal
 | Relationship | Type        | Description |
 |:-------------|:------------|:------------|
 |jobs|[printJob](printjob.md) collection| The list of jobs that are queued for printing by the printer.|
-|shares|[printerShare](printershare.md) collection| The printerShare that is associated with the printer. Read-only. Nullable.|
+|shares|[printerShare](printershare.md) collection| The list of printerShares that are associated with the printer. Read-only. Nullable.|
 |connectors|[printConnector](printconnector.md)|The connectors that are associated with the printer.|
 |allowedUsers|[printUserIdentity](printuseridentity.md) collection|The users who have access to print using the printer.|
 |allowedGroups|[printIdentity](printidentity.md)|The groups whose users have access to print using the printer.|
