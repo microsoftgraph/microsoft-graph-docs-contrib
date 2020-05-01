@@ -73,7 +73,7 @@ With globalization, today's business meetings often involve attendees participat
 
 ## Build apps with location awareness and provide intelligent context (preview)
 
-Use the [places API](/graph/api/resources/place?view=graph-rest-beta)(preview)to help users navigate to a place, or provide an intelligent solution based on the user's location. The following are some example scenarios:
+Use the [places API](/graph/api/resources/place?view=graph-rest-beta) (preview) to help users navigate to a place, or provide an intelligent solution based on the user's location. The following are some example scenarios:
 
 - Incorporate place details in calendar events to help users navigate their day and enhance productivity.<sup>**</sup>
 - Catering applications can use the places API to assist venue navigation and set up.<sup>**</sup>
