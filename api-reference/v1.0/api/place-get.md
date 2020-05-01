@@ -11,7 +11,6 @@ doc_type: "apiPageType"
 
 Namespace: microsoft.graph
 
-[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 Get the properties and relationships of a [place](../resources/place.md) object specified by either its ID or email address. 
 
 The **place** object can be one of the following types:
@@ -72,7 +71,7 @@ The following example specifies the **id** of a **room** to get its properties.
 }-->
 
 ```msgraph-interactive
-GET https://graph.microsoft.com/beta/places/3162F1E1-C4C0-604B-51D8-91DA78989EB1
+GET https://graph.microsoft.com/v1/places/3162F1E1-C4C0-604B-51D8-91DA78989EB1
 ```
 # [C#](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/get-room-csharp-snippets.md)]
@@ -107,7 +106,7 @@ HTTP/1.1 200 OK
 Content-type: application/json
 
 {
-    "@odata.context": "https://graph.microsoft.com/beta/$metadata#places/$entity",
+    "@odata.context": "https://graph.microsoft.com/v1/$metadata#places/$entity",
     "@odata.type": "#microsoft.graph.room",
     "id": "3162F1E1-C4C0-604B-51D8-91DA78989EB1",
     "emailAddress": "cf100@contoso.com",
@@ -153,7 +152,7 @@ The following example specifies the **emailAddress** of a **roomList** to get it
 }-->
 
 ```msgraph-interactive
-GET https://graph.microsoft.com/beta/places/bldg1@contoso.com
+GET https://graph.microsoft.com/v1/places/bldg1@contoso.com
 ```
 # [C#](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/get-roomlist-csharp-snippets.md)]
@@ -188,7 +187,7 @@ HTTP/1.1 200 OK
 Content-type: application/json
 
 {
-  "@odata.context": "https://graph.microsoft.com/beta/$metadata#places/$entity",
+  "@odata.context": "https://graph.microsoft.com/v1/$metadata#places/$entity",
   "@odata.type": "#microsoft.graph.roomList",
   "id": "DC404124-302A-92AA-F98D-7B4DEB0C1705",
   "displayName": "Building 1",
