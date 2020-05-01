@@ -1,6 +1,6 @@
 ---
 title: "List used"
-description: "Calculated insight that returns the list of files used with a user."
+description: "Calculated insight that includes a list of documents the user has viewed or modified."
 author: "simonhult"
 localization_priority: Normal
 ms.prod: "insights"
@@ -13,7 +13,10 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Calculated insight that includes a list of documents the user has viewed or modified.
+Calculated insight that includes a list of documents the user has viewed or modified. 
+For the signed-in user, this method includes documents that the user has modified, and may or may not have viewed.
+For other users, this method includes only documents that the user has modified.
+
 
 ## Permissions
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
@@ -62,6 +65,7 @@ See the available container types and types you can filter by in [resourceVisual
 Use the $orderBy query parameter to sort documents last viewed or modified by the signed-in user, based on the last access time of the document.
 
 >**Note**: Use this query option only for the signed-in user. You cannot use this API to get documents viewed or modified by another user 
+
 For example:
 ```http
 GET /me/insights/used?$orderby=LastUsed/LastAccessedDateTime desc
