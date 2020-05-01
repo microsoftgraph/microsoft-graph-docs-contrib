@@ -1,6 +1,6 @@
 ---
 title: "usedInsight resource type"
-description: "An insight representing documents used by a specific user. The insights returns the most relevant documents that a user viewed or accessed."
+description: "An insight representing documents used by a specific user. The insights returns the most relevant documents that a user viewed or modified."
 author: "simonhult"
 localization_priority: Normal
 ms.prod: "insights"
@@ -13,7 +13,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-An insight representing documents used by a specific user. The insights returns the most relevant documents that a user viewed or accessed. This includes documents in:
+An insight representing documents used by a specific user. The insights returns the most relevant documents that a user viewed or modified. This includes documents in:
 
 - OneDrive for Business
 - SharePoint
