@@ -17,14 +17,14 @@ Represents the Keberos Constrained Delegation (KCD) settings for the [onPremises
 
 >[!NOTE]
 >Do not use this property for configuring SAML or password-based single-sign on. If you are configuring SAML single-sign-on this must be set using samlSingleSignOnSettings.
-If you are configuring password-based single-sign this must be set using createPasswordSingleSignOnCredentials.
+If you are configuring password-based single-sign this must be set using [createPasswordSingleSignOnCredentials](../api/serviceprincipal-createpasswordsinglesignoncredentials.md).
 
 ## Properties
 
 | Property     | Type        | Description |
 |:-------------|:------------|:------------|
-|KerberosServicePrincipalName|String| The Internal Application SPN of the application server. This SPN needs to be in the list of services to which the connector can present delegated credentials. |
-|KerberosSignOnMappingAttributeType|String| The Delegated Login Identity for the connector to use on behalf of your users. For more information, see [Working with different on-premises and cloud identities ](https://docs.microsoft.com/azure/active-directory/manage-apps/application-proxy-configure-single-sign-on-with-kcd#working-with-different-on-premises-and-cloud-identities). Possible values are: `userPrincipalName`, `onPremisesUserPrincipalName`, `userPrincipalUsername`, `onPremisesUserPrincipalUsername`, `onPremisesSAMAccountName`.|
+|kerberosServicePrincipalName|String| The Internal Application SPN of the application server. This SPN needs to be in the list of services to which the connector can present delegated credentials. |
+|kerberosSignOnMappingAttributeType|String| The Delegated Login Identity for the connector to use on behalf of your users. For more information, see [Working with different on-premises and cloud identities ](https://docs.microsoft.com/azure/active-directory/manage-apps/application-proxy-configure-single-sign-on-with-kcd#working-with-different-on-premises-and-cloud-identities). Possible values are: `userPrincipalName`, `onPremisesUserPrincipalName`, `userPrincipalUsername`, `onPremisesUserPrincipalUsername`, `onPremisesSAMAccountName`.|
 
 ## JSON representation
 

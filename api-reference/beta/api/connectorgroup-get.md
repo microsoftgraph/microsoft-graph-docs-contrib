@@ -27,7 +27,7 @@ One of the following permissions is required to call this API. To learn more, in
 ## HTTP request
 <!-- { "blockType": "ignored" } -->
 ```http
-GET ~/onPremisesPublishingProfiles/applicationProxy/connectorGroups/{id}
+GET /onPremisesPublishingProfiles/applicationProxy/connectorGroups/{id}
 ```
 ## Optional query parameters
 This method supports the [OData Query Parameters](https://developer.microsoft.com/graph/docs/concepts/query_parameters) to help customize the response.
