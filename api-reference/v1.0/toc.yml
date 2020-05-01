@@ -4507,7 +4507,7 @@
         - name: Get open extension
           href: api/opentypeextension-get.md
        - name: Shifts
-        items:
+         items:
         - name: Shift
           href: resources/shift.md
           items:
