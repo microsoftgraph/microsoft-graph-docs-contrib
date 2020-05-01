@@ -20,7 +20,7 @@ Each [Azure AD Application Proxy](https://aka.ms/whyappproxy) connector is alway
 | Method		   | Return Type	|Description|
 |:---------------|:--------|:----------|
 |[Get connectorGroup](../api/connectorgroup-get.md) | [connectorGroup](connectorgroup.md) | Read properties and relationships of connectorGroup object. |
-|[Assign an application](../api/connectorgroup-post-applications.md) |[application](application.md)| Associate an application with the connectorGroup by posting to the applications collection. |
+|[Add an application](../api/connectorgroup-post-applications.md) |[application](application.md)| Associate an application with the connectorGroup by posting to the applications collection. |
 |[List applications](../api/connectorgroup-list-applications.md) |[application](application.md) collection| Get the application object collection associated with the connectorGroup. |
 |[Add connector](../api/connectorgroup-post-members.md) |[connector](connector.md)| Add a connector to the connectorGroup by posting to the connectorGroup collection. |
 |[List members](../api/connectorgroup-list-members.md) |[connector](connector.md) collection| Get a connector object collection. |
