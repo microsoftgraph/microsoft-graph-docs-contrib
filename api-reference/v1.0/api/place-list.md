@@ -11,7 +11,6 @@ doc_type: "apiPageType"
 
 Namespace: microsoft.graph
 
-[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 Get a collection of the specified type of [place](../resources/place.md) objects defined in the tenant. For example, you can get all the rooms, all the room lists, or the rooms in a specific room list in the tenant.
 
@@ -99,7 +98,7 @@ The following example shows how to get all the [room](../resources/room.md) obje
 }-->
 
 ```msgraph-interactive
-GET https://graph.microsoft.com/beta/places/microsoft.graph.room
+GET https://graph.microsoft.com/v1/places/microsoft.graph.room
 ```
 # [C#](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/get-all-rooms-csharp-snippets.md)]
@@ -135,7 +134,7 @@ HTTP/1.1 200 OK
 Content-type: application/json
 
 {
-  "@odata.context": "https://graph.microsoft.com/beta/$metadata#places/microsoft.graph.room",
+  "@odata.context": "https://graph.microsoft.com/v1/$metadata#places/microsoft.graph.room",
   "value": [
     {
       "id": "3162F1E1-C4C0-604B-51D8-91DA78989EB1",
@@ -217,7 +216,7 @@ The following example shows how to get all the [roomList](../resources/roomlist.
 }-->
 
 ```msgraph-interactive
-GET https://graph.microsoft.com/beta/places/microsoft.graph.roomlist
+GET https://graph.microsoft.com/v1/places/microsoft.graph.roomlist
 ```
 # [C#](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/get-all-roomlists-csharp-snippets.md)]
@@ -253,7 +252,7 @@ HTTP/1.1 200 OK
 Content-type: application/json
 
 {
-  "@odata.context": "https://graph.microsoft.com/beta/$metadata#places/microsoft.graph.roomList",
+  "@odata.context": "https://graph.microsoft.com/v1/$metadata#places/microsoft.graph.roomList",
   "value": [
     {
       "id": "DC404124-302A-92AA-F98D-7B4DEB0C1705",
@@ -300,7 +299,7 @@ The following example shows how to get a list of [room](../resources/room.md) ob
 }-->
 
 ```msgraph-interactive
-GET https://graph.microsoft.com/beta/places/bldg2@contoso.com/microsoft.graph.roomlist/rooms
+GET https://graph.microsoft.com/v1/places/bldg2@contoso.com/microsoft.graph.roomlist/rooms
 ```
 # [C#](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/get-rooms-in-roomlist-csharp-snippets.md)]
@@ -336,7 +335,7 @@ HTTP/1.1 200 OK
 Content-type: application/json
 
 {
-  "@odata.context": "https://graph.microsoft.com/beta/$metadata#places('bldg2%40contoso.com')/microsoft.graph.roomList/rooms",
+  "@odata.context": "https://graph.microsoft.com/v1/$metadata#places('bldg2%40contoso.com')/microsoft.graph.roomList/rooms",
   "value": [
     {
       "id": "3162F1E1-C4C0-604B-51D8-91DA78970B97",
