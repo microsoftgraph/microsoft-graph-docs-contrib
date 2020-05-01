@@ -11,8 +11,6 @@ doc_type: "resourcePageType"
 
 Namespace: microsoft.graph
 
-[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
-
 Represents basic location attributes such as name, physical address, and geographic coordinates. This is the base type for richer location types such as [room](room.md) and [roomList](roomlist.md).
 
 ### Using the places API
