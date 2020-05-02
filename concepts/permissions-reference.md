@@ -1835,25 +1835,25 @@ Threat assessment permissions are valid only on work or school accounts.
 
 ### Remarks
 
-* To use Universal Print, user's or app's tenant must have an active Universal Print subscription in addition to the above permissions.
+* To use the Universal Print service, the user or app's tenant must have an active Universal Print subscription in addition to the  permissions listed earlier.
 
-* Some permissions above distinguish between Print Job metadata and payload. Metadata describes the configuration of a Print Job (e.g., its name, and document configuration such as whether it should be stapled or printed in color). Payload is the document data itself (e.g., the PDF or XPS file that's being printed.)
+* Some permissions distinguish between print job metadata and payload. Metadata describes the configuration of a print job (its name and document configuration, such as whether it should be stapled or printed in color). Payload is the document data itself (the PDF or XPS file to be printed.)
 
-* All PrintJob.* permissions also require at least Printer.Read.All (or a more prviliged permission) because Print Jobs are stored within Printers.
+* All PrintJob.* permissions also require at least Printer.Read.All (or a more prviliged permission) because print jobs are stored within printers.
 
 ### Example usage
 
 #### Delegated
 
-* _Printer.Read.All_: Get a list of all Printers in the tenant (`GET /print/printers`)
-* _PrintJob.Read.All_: Get a list of all Print Jobs queued to a Printer (`GET /print/printers/{id}/jobs`)
-* _Printer.FullControl.All_: Delete (unregister) a Printer (`DELETE /print/printers/{id}`)
-* _PrintJob.ReadWriteBasic.All_: Update metadata (e.g., current status) of Print Jobs (`PATCH /print/printers/{id}/jobs/{id}`)
-* _PrintJob.ReadWrite.All_: Create Print Jobs and upload document data to them (`POST /print/printers/{id}/jobs`)
+* _Printer.Read.All_: Get a list of all printers in the tenant (`GET /print/printers`)
+* _PrintJob.Read.All_: Get a list of all print jobs queued to a Printer (`GET /print/printers/{id}/jobs`)
+* _Printer.FullControl.All_: Delete (unregister) a printer (`DELETE /print/printers/{id}`)
+* _PrintJob.ReadWriteBasic.All_: Update metadata (such as current status) of print jobs (`PATCH /print/printers/{id}/jobs/{id}`)
+* _PrintJob.ReadWrite.All_: Create print jobs and upload document data to them (`POST /print/printers/{id}/jobs`)
 
 #### Application
 
-* _Printer.Read.All_: Get a list of all Printers in the tenant (`GET /print/printers`)
+* _Printer.Read.All_: Get a list of all printers in the tenant (`GET /print/printers`)
 
 ---
 
