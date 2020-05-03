@@ -4,17 +4,10 @@
       "condition": "OR",
       "arguments": [
         {
-          "title": "Enum values",
-          "level": 1,
-          "required": true,
-          "headers": [
-            {
-              "title": "* values",
-              "level": 3,
-              "required": true,
-              "multiple": true
-            }
-          ]
+            "title": "* values",
+            "level": 3,
+            "required": true,
+            "multiple": true
         },
         {
           "title": "* enum type",
