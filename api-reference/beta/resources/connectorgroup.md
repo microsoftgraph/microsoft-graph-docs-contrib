@@ -23,7 +23,7 @@ Each [Azure AD Application Proxy](https://aka.ms/whyappproxy) connector is alway
 |[List connectorGroup](../api/connectorgroup-list.md) |[connectorGroup](connectorgroup.md) collection | Retrieve a list of connectorGroup objects. |
 |[List members](../api/connectorgroup-list-members.md) |[connector](connector.md) collection| Get a connector object collection. |
 |[List applications](../api/connectorgroup-list-applications.md) |[application](application.md) collection| Get the application object collection associated with the connectorGroup. |
-|[Add an application](../api/connectorgroup-post-applications.md) |[application](application.md)| Associate an application with the connectorGroup by posting to the applications collection. |
+|[Add application](../api/connectorgroup-post-applications.md) |[application](application.md)| Associate an application with the connectorGroup by posting to the applications collection. |
 |[Add connector](../api/connectorgroup-post-members.md) |[connector](connector.md)| Add a connector to the connectorGroup by posting to the connectorGroup collection. |
 |[Update connectorGroup](../api/connectorgroup-update.md) | [connectorGroup](connectorgroup.md)| Update connectorGroup object. |
 |[Delete connectorGroup](../api/connectorgroup-delete.md) | None | Delete connectorGroup object. All connectors must be removed from the connectorGroup before a connectorGroup can be deleted. |

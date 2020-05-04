@@ -6,13 +6,13 @@ author: "japere"
 ms.prod: "microsoft-identity-platform"
 doc_type: "apiPageType"
 ---
-# Assign an application to a connector group
+# Add an application to a connectorGroup
 
 Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Assign an [application](../resources/application.md) to a [connectorGroup](../resources/connectorgroup.md).
+Add an [application](../resources/application.md) to a [connectorGroup](../resources/connectorgroup.md).
 
 ## Permissions
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
