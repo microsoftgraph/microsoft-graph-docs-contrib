@@ -4,15 +4,17 @@ description: "A link to a folder or file (such as a text file or Word document) 
 localization_priority: Normal
 doc_type: resourcePageType
 ms.prod: "outlook"
-author: "angelgolfer-ms"
+author: "svpsiva"
 ---
 
 # referenceAttachment resource type
 
+Namespace: microsoft.graph
+
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 A link to a folder or file (such as a text file or Word document) on a OneDrive for Business cloud drive, or other supported storage locations, attached to 
-an [event](../resources/event.md), [message](../resources/message.md), [Outlook task](../resources/outlooktask.md), or [post](../resources/post.md) .
+an [event](../resources/event.md), [message](../resources/message.md), or [post](../resources/post.md) .
 
 Derived from [attachment](attachment.md).
 

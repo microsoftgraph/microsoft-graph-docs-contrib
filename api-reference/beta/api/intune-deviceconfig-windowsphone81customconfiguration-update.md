@@ -1,13 +1,15 @@
 ---
 title: "Update windowsPhone81CustomConfiguration"
 description: "Update the properties of a windowsPhone81CustomConfiguration object."
-author: "rolyon"
+author: "dougeby"
 localization_priority: Normal
 ms.prod: "Intune"
 doc_type: apiPageType
 ---
 
 # Update windowsPhone81CustomConfiguration
+
+Namespace: microsoft.graph
 
 > **Important:** Microsoft Graph APIs under the /beta version are subject to change; production use is not supported.
 
@@ -170,8 +172,6 @@ Content-Length: 1473
   ]
 }
 ```
-
-
 
 
 

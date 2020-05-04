@@ -1,13 +1,15 @@
 ---
 title: "group: resetUnseenCount"
-description: "Reset the unseenCount of all the posts that the current user has not seen since their last visit. Supported for Office 365 Groups only."
-author: "dkershaw10"
+description: "Reset the unseenCount of all the posts that the current user has not seen since their last visit."
+author: "yyuank"
 localization_priority: Normal
 ms.prod: "groups"
 doc_type: apiPageType
 ---
 
 # group: resetUnseenCount
+
+Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 

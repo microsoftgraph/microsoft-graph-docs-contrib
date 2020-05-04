@@ -1,13 +1,15 @@
 ---
 title: "deviceConfigurationAssignment resource type"
 description: "The device configuration assignment entity assigns an AAD group to a specific device configuration."
-author: "rolyon"
+author: "dougeby"
 localization_priority: Normal
 ms.prod: "Intune"
 doc_type: resourcePageType
 ---
 
 # deviceConfigurationAssignment resource type
+
+Namespace: microsoft.graph
 
 > **Important:** Microsoft Graph APIs under the /beta version are subject to change; production use is not supported.
 

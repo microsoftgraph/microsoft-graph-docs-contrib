@@ -8,6 +8,8 @@ ms.prod: "intune"
 
 # How to protect your company app data with Microsoft Intune
 
+Namespace: microsoft.graph
+
 > **Important:** APIs under the /beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported.
 
 > **Note:** The Microsoft Graph API for Intune requires an [active Intune license](https://go.microsoft.com/fwlink/?linkid=839381) for the tenant.
@@ -36,14 +38,17 @@ The following Graph resources are available to manage app protection polices in 
 - [Android managed store account enrollment target](intune-androidforwork-androidmanagedstoreaccountenrollmenttarget.md)
 - [Android managed store account enterprise settings](intune-androidforwork-androidmanagedstoreaccountenterprisesettings.md)
 - [Android managed store app](intune-apps-androidmanagedstoreapp.md)
+- [Android managed store app assignment settings](intune-apps-androidmanagedstoreappassignmentsettings.md)
 - [Android managed store app configuration](intune-apps-androidmanagedstoreappconfiguration.md)
 - [Android managed store app configuration schema](intune-androidforwork-androidmanagedstoreappconfigurationschema.md)
 - [Android managed store app configuration schema item](intune-androidforwork-androidmanagedstoreappconfigurationschemaitem.md)
 - [Android managed store app configuration schema item data type](intune-androidforwork-androidmanagedstoreappconfigurationschemaitemdatatype.md)
+- [Android managed store app track](intune-apps-androidmanagedstoreapptrack.md)
 - [Android managed store web app](intune-apps-androidmanagedstorewebapp.md)
 - [Android minimum operating system](intune-apps-androidminimumoperatingsystem.md)
 - [Android permission action](intune-apps-androidpermissionaction.md)
 - [Android permission action type](intune-apps-androidpermissionactiontype.md)
+- [Android profile applicability](intune-apps-androidprofileapplicability.md)
 - [Android store app](intune-apps-androidstoreapp.md)
 - [App configuration setting item](intune-apps-appconfigurationsettingitem.md)
 - [Certificate status](intune-apps-certificatestatus.md)
@@ -68,6 +73,7 @@ The following Graph resources are available to manage app protection polices in 
 - [iOS VPP e-book assignment](intune-books-iosvppebookassignment.md)
 - [macOS LOB app](intune-apps-macoslobapp.md)
 - [macOS LOB child app](intune-apps-macoslobchildapp.md)
+- [macOS mdatp app](intune-apps-macosmdatpapp.md)
 - [macOS microsoft edge app](intune-apps-macosmicrosoftedgeapp.md)
 - [macOS minimum operating system](intune-apps-macosminimumoperatingsystem.md)
 - [macOS office suite app](intune-apps-macosofficesuiteapp.md)
@@ -128,6 +134,7 @@ The following Graph resources are available to manage app protection polices in 
 - [VPP licensing type](intune-apps-vpplicensingtype.md)
 - [Web app](intune-apps-webapp.md)
 - [Win32 LOB app](intune-apps-win32lobapp.md)
+- [Win32 LOB app delivery optimization priority](intune-apps-win32lobappdeliveryoptimizationpriority.md)
 - [Win32 LOB app detection](intune-apps-win32lobappdetection.md)
 - [Win32 LOB app detection operator](intune-apps-win32lobappdetectionoperator.md)
 - [Win32 LOB app file system detection](intune-apps-win32lobappfilesystemdetection.md)

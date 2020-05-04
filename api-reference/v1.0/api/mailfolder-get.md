@@ -1,13 +1,15 @@
 ---
 title: "Get mailFolder"
 description: "Retrieve the properties and relationships of a message folder object."
-author: "angelgolfer-ms"
+author: "svpsiva"
 localization_priority: Priority
 ms.prod: "outlook"
 doc_type: apiPageType
 ---
 
 # Get mailFolder
+
+Namespace: microsoft.graph
 
 Retrieve the properties and relationships of a message folder object.
 
@@ -104,8 +106,7 @@ Content-type: application/json
   "parentFolderId": "AAMkAGVmMDEzI",
   "childFolderCount": 2,
   "unreadItemCount": 59,
-  "totalItemCount": 60,
-  "wellKnownName": "inbox"
+  "totalItemCount": 60
 }
 ```
 
@@ -169,7 +170,6 @@ Content-type: application/json
   "childFolderCount": 0,
   "unreadItemCount": 6,
   "totalItemCount": 6,
-  "wellKnownName": null,
   "isSupported": true,
   "includeNestedFolders": true,
   "sourceFolderIds": [

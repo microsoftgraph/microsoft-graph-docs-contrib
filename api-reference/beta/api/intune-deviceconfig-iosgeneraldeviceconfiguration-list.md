@@ -1,13 +1,15 @@
 ---
 title: "List iosGeneralDeviceConfigurations"
 description: "List properties and relationships of the iosGeneralDeviceConfiguration objects."
-author: "rolyon"
+author: "dougeby"
 localization_priority: Normal
 ms.prod: "Intune"
 doc_type: apiPageType
 ---
 
 # List iosGeneralDeviceConfigurations
+
+Namespace: microsoft.graph
 
 > **Important:** Microsoft Graph APIs under the /beta version are subject to change; production use is not supported.
 
@@ -59,7 +61,7 @@ Here is an example of the response. Note: The response object shown here may be 
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 11837
+Content-Length: 11879
 
 {
   "value": [
@@ -351,13 +353,12 @@ Content-Length: 11837
       "continuousPathKeyboardBlocked": true,
       "findMyDeviceInFindMyAppBlocked": true,
       "findMyFriendsInFindMyAppBlocked": true,
-      "iTunesBlocked": true
+      "iTunesBlocked": true,
+      "kioskModeAppType": "appStoreApp"
     }
   ]
 }
 ```
-
-
 
 
 

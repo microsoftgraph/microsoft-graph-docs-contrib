@@ -1,13 +1,15 @@
 ---
 title: "Create a directory setting on groups"
 description: "Use this API to create a new directory setting for the group."
-author: "dkershaw10"
+author: "yyuank"
 localization_priority: Normal
 ms.prod: "groups"
 doc_type: apiPageType
 ---
 
 # Create a directory setting on groups
+
+Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 

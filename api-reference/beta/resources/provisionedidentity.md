@@ -2,12 +2,14 @@
 title: "provisionedIdentity resource type"
 description: "Describes the identity associated with the provisioning object summary event."
 localization_priority: Normal
-author: "davidmu1"
+author: "ArvindHarinder1"
 ms.prod: "microsoft-identity-platform"
 doc_type: "resourcePageType"
 ---
 
 # provisionedIdentity resource type
+
+Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 

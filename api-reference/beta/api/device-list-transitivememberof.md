@@ -1,13 +1,15 @@
 ---
 title: "List device transitive groups"
-description: "Get groups that the device is a member of. This API request is transitive, and will also return all groups the device is a nested member of."
+description: "Get groups that the device is a member of."
 localization_priority: Normal
-author: "davidmu1"
+author: "spunukol"
 ms.prod: "microsoft-identity-platform"
 doc_type: apiPageType
 ---
 
 # List device transitive groups
+
+Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 

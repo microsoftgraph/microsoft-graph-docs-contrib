@@ -9,6 +9,8 @@ doc_type: apiPageType
 
 # Create Channel
 
+Namespace: microsoft.graph
+
 
 
 Create a new [channel](../resources/channel.md) in a Microsoft Team, as specified in the request body.
@@ -89,7 +91,7 @@ Here is an example of the response. Note: The response object shown here may be 
   "@odata.type": "microsoft.graph.channel"
 } -->
 ```http
-HTTP/1.1 200 OK
+HTTP/1.1 201 Created
 Content-type: application/json
 Content-length: 201
 

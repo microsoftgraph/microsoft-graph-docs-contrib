@@ -1,13 +1,15 @@
 ---
 title: "deviceEnrollmentLimitConfiguration resource type"
 description: "Device Enrollment Configuration that restricts the number of devices a user can enroll"
-author: "rolyon"
+author: "dougeby"
 localization_priority: Normal
 ms.prod: "Intune"
 doc_type: resourcePageType
 ---
 
 # deviceEnrollmentLimitConfiguration resource type
+
+Namespace: microsoft.graph
 
 > **Important:** Microsoft Graph APIs under the /beta version are subject to change; production use is not supported.
 

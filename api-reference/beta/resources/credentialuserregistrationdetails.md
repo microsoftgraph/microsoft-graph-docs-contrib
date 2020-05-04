@@ -2,12 +2,14 @@
 title: "credentialUserRegistrationDetails resource type"
 description: "Represents the details of the usage of self-service password reset and multi-factor authentication (MFA) for all registered users."
 localization_priority: Normal
-author: "davidmu1"
+author: "khotz"
 ms.prod: "reports"
 doc_type: "resourcePageType"
 ---
 
 # credentialUserRegistrationDetails resource type
+
+Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 

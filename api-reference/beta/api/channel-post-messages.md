@@ -9,6 +9,8 @@ doc_type: apiPageType
 
 # Create chatMessage in a channel
 
+Namespace: microsoft.graph
+
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 Create a new [chatMessage](../resources/chatmessage.md) in the specified [channel](../resources/channel.md).
@@ -43,7 +45,6 @@ POST /teams/{id}/channels/{id}/messages
 
 In the request body, supply a JSON representation of a [message](../resources/chatmessage.md) object. Only the body property is mandatory, other properties are optional.
 
-> Note: Sending messages with attachments and images is not supported.
 
 ## Response
 

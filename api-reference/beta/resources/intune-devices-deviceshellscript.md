@@ -1,13 +1,15 @@
 ---
 title: "deviceShellScript resource type"
 description: "Intune will provide customer the ability to run their Shell scripts on the enrolled Mac OS devices. The script can be run once or periodically."
-author: "rolyon"
+author: "dougeby"
 localization_priority: Normal
 ms.prod: "Intune"
 doc_type: resourcePageType
 ---
 
 # deviceShellScript resource type
+
+Namespace: microsoft.graph
 
 > **Important:** Microsoft Graph APIs under the /beta version are subject to change; production use is not supported.
 
@@ -23,10 +25,14 @@ Intune will provide customer the ability to run their Shell scripts on the enrol
 |[Create deviceShellScript](../api/intune-devices-deviceshellscript-create.md)|[deviceShellScript](../resources/intune-devices-deviceshellscript.md)|Create a new [deviceShellScript](../resources/intune-devices-deviceshellscript.md) object.|
 |[Delete deviceShellScript](../api/intune-devices-deviceshellscript-delete.md)|None|Deletes a [deviceShellScript](../resources/intune-devices-deviceshellscript.md).|
 |[Update deviceShellScript](../api/intune-devices-deviceshellscript-update.md)|[deviceShellScript](../resources/intune-devices-deviceshellscript.md)|Update the properties of a [deviceShellScript](../resources/intune-devices-deviceshellscript.md) object.|
+|[assign action](../api/intune-devices-deviceshellscript-assign.md)|None|Not yet documented|
 
 ## Properties
 |Property|Type|Description|
 |:---|:---|:---|
+|executionFrequency|Duration|The interval for script to run. If not defined the script will run once|
+|retryCount|Int32|Number of times for the script to be retried if it fails|
+|blockExecutionNotifications|Boolean|Does not notify the user a script is being executed|
 |id|String|Unique Identifier for the device management script.|
 |displayName|String|Name of the device management script.|
 |description|String|Optional description for the device management script.|
@@ -57,6 +63,9 @@ Here is a JSON representation of the resource.
 ``` json
 {
   "@odata.type": "#microsoft.graph.deviceShellScript",
+  "executionFrequency": "String (duration)",
+  "retryCount": 1024,
+  "blockExecutionNotifications": true,
   "id": "String (identifier)",
   "displayName": "String",
   "description": "String",
