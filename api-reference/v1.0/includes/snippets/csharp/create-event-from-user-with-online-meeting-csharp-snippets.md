@@ -40,9 +40,8 @@ var @event = new Event
 			Type = AttendeeType.Required
 		}
 	},
-	AllowNewTimeProposals = true,
 	IsOnlineMeeting = true,
-	OnlineMeetingProvider = "teamsForBusiness"
+	OnlineMeetingProvider = OnlineMeetingProviderType.TeamsForBusiness
 };
 
 await graphClient.Me.Events

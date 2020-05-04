@@ -678,6 +678,8 @@
           href: api/event-list-attachments.md
         - name: Add attachment
           href: api/event-post-attachments.md
+        - name: Create session to attach large file
+          href: api/attachment-createuploadsession.md          
         - name: Create open extension
           href: api/opentypeextension-post-opentypeextension.md
         - name: Get open extension
@@ -726,6 +728,8 @@
           href: resources/itemattachment.md
         - name: Reference attachment type
           href: resources/referenceattachment.md
+        - name: Create session to attach large file
+          href: api/attachment-createuploadsession.md
         - name: Get attachment
           href: api/attachment-get.md
         - name: Delete attachment
@@ -1107,9 +1111,9 @@
             href: api/printer-list-allowedusers.md
           - name: List allowedGroups
             href: api/printer-list-allowedgroups.md
-          - name: Add allowed group
+          - name: Create allowed group
             href: api/printer-post-allowedgroups.md
-          - name: Add allowed user
+          - name: Create allowed user
             href: api/printer-post-allowedusers.md
           - name: Delete allowed group
             href: api/printer-delete-allowedgroup.md
@@ -1130,6 +1134,18 @@
             href: api/printershare-update.md
           - name: Delete
             href: api/printershare-delete.md
+          - name: List allowed users
+            href: api/printershare-list-allowedusers.md
+          - name: Create allowed user
+            href: api/printershare-post-allowedusers.md
+          - name: Delete allowed user
+            href: api/printershare-delete-alloweduser.md
+          - name: List allowed groups
+            href: api/printershare-list-allowedgroups.md
+          - name: Create allowed group
+            href: api/printershare-post-allowedgroups.md
+          - name: Delete allowed group
+            href: api/printershare-delete-allowedgroup.md
         - name: Reports
           items:
           - name: Organized by printer
@@ -9653,7 +9669,7 @@
           - name: Get 
             href: api/unifiedroleassignmentmultiple-get.md
           - name: Update 
-            href: api/unifiedroleassignmentmultiple-delete.md
+            href: api/unifiedroleassignmentmultiple-update.md
           - name: Delete 
             href: api/unifiedroleassignmentmultiple-delete.md
       - name: Service principal
@@ -9847,7 +9863,7 @@
           href: api/message-list-attachments.md
         - name: Add attachment
           href: api/message-post-attachments.md
-        - name: Create session to attach large file (preview)
+        - name: Create session to attach large file
           href: api/attachment-createuploadsession.md
         - name: Create open extension
           href: api/opentypeextension-post-opentypeextension.md
@@ -9862,7 +9878,7 @@
           href: resources/itemattachment.md
         - name: Reference attachment type
           href: resources/referenceattachment.md
-        - name: Create session to attach large file (preview)
+        - name: Create session to attach large file
           href: api/attachment-createuploadsession.md
         - name: Get attachment
           href: api/attachment-get.md
@@ -10754,6 +10770,8 @@
           href: api/site-follow.md
         - name: Unfollow site
           href: api/site-unfollow.md
+        - name: List followed sites
+          href: api/sites-list-followed.md
       - name: Lists
         href: resources/list.md
         items:
@@ -11086,6 +11104,8 @@
           href: api/event-list-attachments.md
         - name: Add attachment
           href: api/event-post-attachments.md
+        - name: Create session to attach large file
+          href: api/attachment-createuploadsession.md
         - name: Create open extension
           href: api/opentypeextension-post-opentypeextension.md
         - name: Get open extension
