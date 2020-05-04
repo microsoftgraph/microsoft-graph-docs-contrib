@@ -45,7 +45,7 @@ This method supports the [OData Query Parameters](https://developer.microsoft.co
 | Header       | Value |
 |:---------------|:--------|
 | Authorization  | Bearer {token}. Required.  |
-| ConsistencyLevel | The value is always `eventual`. This header is required when using the `$count`, `$search`, `$filter`, and OData cast query parameters. It uses an index that may not be up-to-date with recent changes to the object. |
+| ConsistencyLevel | eventual. This header is required when using the `$count`, `$search`, `$filter`, and OData cast query parameters. It uses an index that may not be up-to-date with recent changes to the object. |
 
 ## Request body
 
@@ -149,7 +149,7 @@ Content-type: text/plain
 
 294
 
-### Example 3: Use $search to get group membership with display names that contain the letters 'Video' including a count of returned objects
+### Example 3: Use OData cast and $search to get membership with display names that contain the letters 'Video' including a count of returned objects
 
 #### Request
 
@@ -160,7 +160,7 @@ The following is an example of the request.
   "name": "get_video_count"
 }-->
 ```msgraph-interactive
-GET https://graph.microsoft.com/beta/devices/{id}/transitiveMemberOf?$count=true&$orderby=displayName&$search="displayName:Video"&$select=displayName,id
+GET https://graph.microsoft.com/beta/devices/{id}/transitiveMemberOf/microsoft.graph.group?$count=true&$orderBy=displayName&$search="displayName:Video"&$select=displayName,id
 ConsistencyLevel: eventual
 ```
 
@@ -191,7 +191,7 @@ Content-type: application/json
 }
 ```
 
-### Example 4: Use $filter to get group membership with a display name that starts with 'A' including a count of returned objects
+### Example 4: Use OData cast and $filter to get membership with a display name that starts with 'A' including a count of returned objects
 
 #### Request
 
@@ -202,7 +202,7 @@ The following is an example of the request.
   "name": "get_a_count"
 }-->
 ```msgraph-interactive
-GET https://graph.microsoft.com/beta/devices/{id}/transitiveMemberOf?$count=true&$orderby=displayName&$filter=startswith(displayName, 'a')
+GET https://graph.microsoft.com/beta/devices/{id}/transitiveMemberOf/microsoft.graph.group?$count=true&$orderBy=displayName&$filter=startswith(displayName, 'a')
 ConsistencyLevel: eventual
 ```
 

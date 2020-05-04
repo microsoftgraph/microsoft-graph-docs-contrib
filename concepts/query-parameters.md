@@ -165,7 +165,7 @@ The following table shows some examples that use the `$filter` query parameter.
 | Get all emails received by the signed-in user in April 2017. | [`https://graph.microsoft.com/v1.0/me/mailFolders/inbox/messages?$filter=ReceivedDateTime ge 2017-04-01 and receivedDateTime lt 2017-05-01`](https://developer.microsoft.com/graph/graph-explorer?request=me/mailFolders/inbox/messages?$filter=ReceivedDateTime+ge+2017-04-01+and+receivedDateTime+lt+2017-05-01&method=GET&version=v1.0) 
 | Get all unread mail in the signed-in user's Inbox. | [`https://graph.microsoft.com/v1.0/me/mailFolders/inbox/messages?$filter=isRead eq false`](https://developer.microsoft.com/graph/graph-explorer?request=me/mailFolders/inbox/messages?$filter=isRead+eq+false&method=GET&version=v1.0) 
 | List all Office 365 groups in an organization. | [`https://graph.microsoft.com/v1.0/groups?$filter=groupTypes/any(c:c+eq+'Unified')`](https://developer.microsoft.com/graph/graph-explorer?request=groups?$filter=groupTypes/any(c:c+eq+'Unified')&method=GET&version=v1.0) 
-| Use OData cast to get transitive membership in groups with a display name that starts with 'a' including a count of returned objects. | [https://graph.microsoft.com/beta/me/transitiveMemberOf/microsoft.graph.group?$count=true&$orderby=displayName&$filter=startswith(displayName, 'a')](https://developer.microsoft.com/graph/graph-explorer?request=me/transitiveMemberOf/microsoft.graph.group?$count=true&$orderby=displayName&$filter=startswith(displayName, 'a')) |
+| Use OData cast to get transitive membership in groups with a display name that starts with 'a' including a count of returned objects. | [`https://graph.microsoft.com/beta/me/transitiveMemberOf/microsoft.graph.group?$count=true&$filter=startswith(displayName, 'a')`](https://developer.microsoft.com/graph/graph-explorer?request=me/transitiveMemberOf/microsoft.graph.group?$count=true&$orderby=displayName&$filter=startswith(displayName, 'a')&method=GET&version=v1.0) |
 
 > **Note:** The following `$filter` operators are not supported for Azure AD resources:  `ne`, `gt`, `ge`, `lt`, `le`, and `not`. The `contains` string operator is currently not supported on any Microsoft Graph resources.
 
@@ -337,7 +337,7 @@ To learn more about the People API, see [Get information about relevant people](
 
 ### Using $search on directory object collections
 
-You can use the `$search` query parameter to restrict results based on a search criterion such as looking for words in strings delimited by spaces, casing, and character types (numbers and special characters). The tokenized search support works only on the displayName and description fields. Any field can be put in `$search`, fields other than **displayName** and **description** defaults to `$filter` behavior. For example:
+You can use the `$search` query parameter to restrict results based on a search criterion such as looking for words in strings delimited by spaces, casing, and character types (numbers and special characters). The tokenized search support works only on the displayName and description fields. Any field can be put in `$search`, fields other than **displayName** and **description** defaults to `$filter` startswith behavior. For example:
 
 `https://graph.microsoft.com/beta/groups/?$search="displayName:OneVideo"`
  
@@ -353,7 +353,7 @@ The syntax of search follows these rules:
 - Generic format: $search="clause1" [AND | OR]  "[clauseX]". 
 - Any number of clauses is supported. Parentheses for precedence is also supported. 
 - The syntax for each clause is <property>:<text to search>. 
-- The property name must be specified in clause. Any property that can be used in `$filter` can also be used inside `$search`. Depending on the property, the search behavior is either "search" or "prefix match" if search is not supported on the property. 
+- The property name must be specified in clause. Any property that can be used in `$filter` can also be used inside `$search`. Depending on the property, the search behavior is either "search" or "startswith" if search is not supported on the property. 
 - The whole clause part must be put inside double quotes.  
 - Logical operator 'AND' 'OR' must be put outside double quotes. They must be in upper case. 
 - Given that the whole clause part needs to be put inside double quotes, if <text to search> contains double quote and backslash, it needs to be escaped by backslash. No other characters need to be escaped. 
