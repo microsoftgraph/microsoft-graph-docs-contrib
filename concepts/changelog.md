@@ -13,6 +13,14 @@ For a summary of the value of these API changes, as well as recent tools, compon
 
 For details about known issues with Microsoft Graph APIs, see [Known issues](known-issues.md).
 
+## May 2020
+
+### Identity and access (Azure AD)
+
+| **Change type** | **Version**   | **Description**                          |
+| :-------------- | :------------ | :--------------------------------------- |
+| Addition | beta | Added the [authorizationPolicy](api-reference/beta/resources/authorizationpolicy.md) resource type which controls authorization settings in Azure AD. |
+
 ## April 2020
 
 ### Calendar
