@@ -13,7 +13,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Assign a [connector](../resources/connector.md)  to a [connectorGroup](../resources/connectorgroup.md).
+Add a [connector](../resources/connector.md)  to a [connectorGroup](../resources/connectorgroup.md).
 ## Permissions
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
 
@@ -26,7 +26,7 @@ One of the following permissions is required to call this API. To learn more, in
 ## HTTP request
 <!-- { "blockType": "ignored" } -->
 ```http
-POST /connectors/{id}/memberOf
+POST /onPremisesPublishingProfiles/applicationProxy/connectors/{id}/memberOf/$ref
 
 ```
 ## Request headers
@@ -49,7 +49,7 @@ Here is an example of the request.
   "name": "create_connectorgroup_from_connector"
 }-->
 ```http
-POST https://graph.microsoft.com/beta/onPremisesPublishingProfiles/applicationProxy/connectors/{id}/memberOf
+POST https://graph.microsoft.com/beta/onPremisesPublishingProfiles/applicationProxy/connectors/{id}/memberOf/$ref
 
 Content-type: application/json
 Content-length: 99
