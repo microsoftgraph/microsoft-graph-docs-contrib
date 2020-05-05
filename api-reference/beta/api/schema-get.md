@@ -117,7 +117,7 @@ Content-type: application/json
       "isQueryable": true,
       "isRetrievable": true,
       "isRefinable": true,
-      "isSearchable": "false"
+      "isSearchable": false
     },
     {
       "name": "assignee",
