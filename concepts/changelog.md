@@ -21,9 +21,9 @@ For a summary of the value of these API changes, as well as recent tools, compon
 
 ### Search
 
-| Change type | Version | Description                                                                                                                                     |
-|:------------|:--------|:------------------------------------------------------------------------------------------------------------------------------------------------|
-| Addition    | beta    | Added the **aliases**, **isRefinable**, and **labels** properties to the [property](/graph/api/resources/property?view=graph-rest-beta) entity. |
+| **Change type** | **Version** | **Description**                                                                                                                                 |
+|:----------------|:------------|:------------------------------------------------------------------------------------------------------------------------------------------------|
+| Addition        | beta        | Added the **aliases**, **isRefinable**, and **labels** properties to the [property](/graph/api/resources/property?view=graph-rest-beta) entity. |
 
 ## April 2020
 
