@@ -116,13 +116,13 @@ Content-type: application/json
       "type": "String",
       "isQueryable": true,
       "isRetrievable": true,
-      "isRefinable": "true"
+      "isRefinable": true
     },
     {
       "name": "assignee",
       "type": "String",
       "isRetrievable": true,
-      "isRefinable": "true"
+      "isRefinable": true
     }
   ]
 }

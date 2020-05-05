@@ -100,7 +100,7 @@ Prefer: respond-async
       "name": "assignee",
       "type": "String",
       "isRetrievable": "true",
-      "isRefinable" "true"
+      "isRefinable": "true"
     }
   ]
 }
