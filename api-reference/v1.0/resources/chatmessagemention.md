@@ -28,10 +28,11 @@ In the **content** property, the first mention has an HTML `id` attribute of 0. 
 
 The second mention has an `id` attribute of 1, matching the **id** property of the second instance, which is 1.
 
-For a fuller context of the example, see [List channel message replies](../api/channel-list-messagereplies.md#example).
+For a fuller context of the example, see [List channel message replies](../..beta/api/channel-list-messagereplies.md).
 
 ## Properties
-| Property	   | Type	|Description|
+
+| Property| Type|Description|
 |:---------------|:--------|:----------|
 |id|Int32|Index of an entity being mentioned in the specified **chatMessage**. Matches the {index} value in the corresponding `<at id="{index}">` tag in the message body.|
 |mentionText|string|String used to represent the mention. For example, a user's display name, a team name.|

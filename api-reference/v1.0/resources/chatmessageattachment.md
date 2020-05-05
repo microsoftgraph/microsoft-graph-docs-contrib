@@ -3,8 +3,8 @@ title: "chatMessageAttachment resource type"
 description: "Represents an attachment to a chat message entity."
 localization_priority: Normal
 doc_type: resourcePageType
-ms.prod: ""
-author: ""
+ms.prod: "microsoft-teams"
+author: nkramer""
 ---
 
 # chatMessageAttachment resource type
