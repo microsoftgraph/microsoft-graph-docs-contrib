@@ -3,7 +3,7 @@ title: "Get localized organizationalBrandingProperties"
 description: "Retrieve organizationalbrandingproperties object for a specific locale."
 localization_priority: Normal
 author: "kexia"
-ms.prod: ""
+ms.prod: "microsoft-identity-platform"
 doc_type: "apiPageType"
 ---
 
@@ -11,7 +11,7 @@ doc_type: "apiPageType"
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Retrieve the properties of the organizationalbrandingproperties object.
+Retrieve the properties of the [organizationalBrandingProperties](../resources/organizationalbrandingproperties.md) object.
 
 ## Permissions
 
@@ -51,9 +51,9 @@ Do not supply a request body for this method.
 If successful, this method returns a `200 OK` response code and the requested [organizationalBrandingProperties](../resources/organizationalbrandingproperties.md) object in the response body. The value of "id" corresponds to the localization requested.
 
 ## Examples
-### Use case: Get the localized branding for a specific locale (fr)
+### Example 1: Get the localized branding for a specific locale (fr)
 A GET request to a particular localization returns only the values for that localization. Null values will not be replaced by those from the default branding.
-### Request
+#### Request
 
 The following is an example of the request.
 <!-- {
@@ -62,10 +62,10 @@ The following is an example of the request.
 }-->
 
 ```http
-GET https://graph.microsoft.com/v1.0/organization/d69179bf-f4a4-41a9-a9de-249c0f2efb1d/branding/localizations/fr
+GET https://graph.microsoft.com/beta/organization/d69179bf-f4a4-41a9-a9de-249c0f2efb1d/branding/localizations/fr
 ```
 
-### Response
+#### Response
 
 The following is an example of the response.
 
@@ -79,25 +79,27 @@ The following is an example of the response.
 
 ```http
 HTTP/1.1 200 OK
-{ 
+Content-Type: application/json
+
+{
 "backgroundColor":"#00000F",
 "backgroundImage@odata.mediaContentType":"image/*",
 "backgroundImage@odata.mediaReadLink": null,
-"backgroundImage@odata.mediaEditLink": "https://graph.microsoft.com/v1.0/organization/d69179bf-f4a4-41a9-a9de-249c0f2efb1d/branding/localizations/fr/backgroundImage",
+"backgroundImage@odata.mediaEditLink": "https://graph.microsoft.com/beta/organization/d69179bf-f4a4-41a9-a9de-249c0f2efb1d/branding/localizations/fr/backgroundImage",
 "bannerLogo@odata.mediaContentType":"image/*",
 "bannerLogo@odata.mediaReadLink": null,
-"bannerLogo@odata.mediaEditLink": "https://graph.microsoft.com/v1.0/organization/d69179bf-f4a4-41a9-a9de-249c0f2efb1d/branding/localizations/fr/bannerLogo",
+"bannerLogo@odata.mediaEditLink": "https://graph.microsoft.com/beta/organization/d69179bf-f4a4-41a9-a9de-249c0f2efb1d/branding/localizations/fr/bannerLogo",
 "id":"fr",
 "squareLogo@odata.mediaContentType":"image/*",
 "squareLogo@odata.mediaReadLink": null,
-"squareLogo@odata.mediaEditLink": "https://graph.microsoft.com/v1.0/organization/d69179bf-f4a4-41a9-a9de-249c0f2efb1d/branding/localizations/fr/squareLogo",
+"squareLogo@odata.mediaEditLink": "https://graph.microsoft.com/beta/organization/d69179bf-f4a4-41a9-a9de-249c0f2efb1d/branding/localizations/fr/squareLogo",
 "signInPageText":null,
 "usernameHintText":null
 }
 ```
 
-### Use case: Get all language-specific localizations that have been configured
-### Request
+### Example 2: Get all language-specific localizations that have been configured
+#### Request
 
 The following is an example of the request.
 <!-- {
@@ -106,10 +108,10 @@ The following is an example of the request.
 }-->
 
 ```http
-GET https://graph.microsoft.com/v1.0/organization/d69179bf-f4a4-41a9-a9de-249c0f2efb1d/branding/localizations
+GET https://graph.microsoft.com/beta/organization/d69179bf-f4a4-41a9-a9de-249c0f2efb1d/branding/localizations
 ```
 
-### Response
+#### Response
 
 The following is an example of the response.
 
@@ -123,20 +125,22 @@ The following is an example of the response.
 
 ```http
 HTTP/1.1 200 OK
-{ 
+Content-Type: application/json
+
+{
  "values": [
    {
     "backgroundColor":"#FFFF33",
     "backgroundImage@odata.mediaContentType":"image/*",
-    "backgroundImage@odata.mediaReadLink": "https://graph.microsoft.com/v1.0/organization/d69179bf-f4a4-41a9-a9de-249c0f2efb1d/branding/localizations/en-US/backgroundImage",
-    "backgroundImage@odata.mediaEditLink":"https://graph.microsoft.com/v1.0/organization/d69179bf-f4a4-41a9-a9de-249c0f2efb1d/branding/localizations/en-US/backgroundImage",
+    "backgroundImage@odata.mediaReadLink": "https://graph.microsoft.com/beta/organization/d69179bf-f4a4-41a9-a9de-249c0f2efb1d/branding/localizations/en-US/backgroundImage",
+    "backgroundImage@odata.mediaEditLink":"https://graph.microsoft.com/beta/organization/d69179bf-f4a4-41a9-a9de-249c0f2efb1d/branding/localizations/en-US/backgroundImage",
     "bannerLogo@odata.mediaContentType":"image/*",
     "bannerLogo@odata.mediaReadLink": null,
-    "bannerLogo@odata.mediaEditLink": "https://graph.microsoft.com/v1.0/organization/d69179bf-f4a4-41a9-a9de-249c0f2efb1d/branding/localizations/en-US/bannerLogo",
+    "bannerLogo@odata.mediaEditLink": "https://graph.microsoft.com/beta/organization/d69179bf-f4a4-41a9-a9de-249c0f2efb1d/branding/localizations/en-US/bannerLogo",
     "id":"en-us",
     "squareLogo@odata.mediaContentType":"image/*",
     "squareLogo@odata.mediaReadLink": null,
-    "squareLogo@odata.mediaEditLink": "https://graph.microsoft.com/v1.0/organization/d69179bf-f4a4-41a9-a9de-249c0f2efb1d/branding/localizations/en-US/squareLogo",
+    "squareLogo@odata.mediaEditLink": "https://graph.microsoft.com/beta/organization/d69179bf-f4a4-41a9-a9de-249c0f2efb1d/branding/localizations/en-US/squareLogo",
     "signInPageText":"Welcome",
     "usernameHintText":"hint"
    },
@@ -144,14 +148,14 @@ HTTP/1.1 200 OK
     "backgroundColor":"#00000F",
     "backgroundImage@odata.mediaContentType":"image/*",
     "backgroundImage@odata.mediaReadLink": null,
-    "backgroundImage@odata.mediaEditLink": "https://graph.microsoft.com/v1.0/organization/d69179bf-f4a4-41a9-a9de-249c0f2efb1d/branding/localizations/fr/bannerLogo",
+    "backgroundImage@odata.mediaEditLink": "https://graph.microsoft.com/beta/organization/d69179bf-f4a4-41a9-a9de-249c0f2efb1d/branding/localizations/fr/bannerLogo",
     "bannerLogo@odata.mediaContentType":"image/*",
     "bannerLogo@odata.mediaReadLink": null,
-    "bannerLogo@odata.mediaEditLink": "https://graph.microsoft.com/v1.0/organization/d69179bf-f4a4-41a9-a9de-249c0f2efb1d/branding/localizations/fr/bannerLogo",
+    "bannerLogo@odata.mediaEditLink": "https://graph.microsoft.com/beta/organization/d69179bf-f4a4-41a9-a9de-249c0f2efb1d/branding/localizations/fr/bannerLogo",
     "id":"fr",
     "squareLogo@odata.mediaContentType":"image/*",
     "squareLogo@odata.mediaReadLink": null,
-    "squareLogo@odata.mediaEditLink": "https://graph.microsoft.com/v1.0/organization/d69179bf-f4a4-41a9-a9de-249c0f2efb1d/branding/localizations/fr/squareLogo",
+    "squareLogo@odata.mediaEditLink": "https://graph.microsoft.com/beta/organization/d69179bf-f4a4-41a9-a9de-249c0f2efb1d/branding/localizations/fr/squareLogo",
     "signInPageText":null,
     "usernameHintText":null
    }
@@ -159,9 +163,9 @@ HTTP/1.1 200 OK
 }
 ```
 
-### Use case: Get the value of signInPageText for a specific locale
+### Example 3: Get the value of **signInPageText** for a specific locale
 Requesting a property of a localization returns that value, or 204 if the value is null.
-### Request
+#### Request
 
 The following is an example of the request.
 <!-- {
@@ -170,10 +174,10 @@ The following is an example of the request.
 }-->
 
 ```http
-GET https://graph.microsoft.com/v1.0/organization/d69179bf-f4a4-41a9-a9de-249c0f2efb1d/branding/localizations/en-US/signInPageText
+GET https://graph.microsoft.com/beta/organization/d69179bf-f4a4-41a9-a9de-249c0f2efb1d/branding/localizations/en-US/signInPageText
 ```
 
-### Response
+#### Response
 
 The following is an example of the response.
 
@@ -187,7 +191,9 @@ The following is an example of the response.
 
 ```http
 HTTP/1.1 200 OK
-{ 
+Content-Type: application/json
+
+{
 "value":"Welcome"
 }
 ```

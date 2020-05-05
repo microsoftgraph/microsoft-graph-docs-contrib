@@ -3,7 +3,7 @@ title: "Delete localized organizationalBrandingProperties"
 description: "Delete organizationalBrandingProperties for a specific localization."
 localization_priority: Normal
 author: "kexia"
-ms.prod: ""
+ms.prod: "microsoft-identity-platform"
 doc_type: "apiPageType"
 ---
 
@@ -11,7 +11,7 @@ doc_type: "apiPageType"
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Delete organizationalBrandingProperties.
+Delete an [organizationalBrandingProperties](../resources/organizationalbrandingproperties.md) object.
 
 ## Permissions
 
@@ -36,7 +36,6 @@ DELETE /organization/{id}/branding/localizations/{locale}
 | Name          | Description   |
 |:--------------|:--------------|
 | Authorization | Bearer {token} |
-| Content-Type  | application/json. Required.  |
 
 ## Request body
 
@@ -57,7 +56,7 @@ The following is an example of the request.
 }-->
 
 ```http
-DELETE https://graph.microsoft.com/v1.0/organization/d69179bf-f4a4-41a9-a9de-249c0f2efb1d/branding/localizations/fr
+DELETE https://graph.microsoft.com/beta/organization/d69179bf-f4a4-41a9-a9de-249c0f2efb1d/branding/localizations/fr
 ```
 
 ### Response

@@ -3,7 +3,7 @@ title: "Update organizationalbrandingproperties"
 description: "Update the properties of the organizationalbrandingproperties object."
 localization_priority: Normal
 author: "kexia"
-ms.prod: ""
+ms.prod: "microsoft-identity-platform"
 doc_type: "apiPageType"
 ---
 
@@ -11,7 +11,7 @@ doc_type: "apiPageType"
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Update the properties of the organizationalbrandingproperties object.
+Update the properties of the [organizationalBrandingProperties](../resources/organizationalbrandingproperties.md) object.
 
 ## Permissions
 
@@ -38,6 +38,7 @@ PUT /organization/{id}/branding/{property name}
 |:-----------|:-----------|
 | Authorization | Bearer {token} |
 | Content-Type  | application/json. Required.  |
+| Content-Language  | Locale. Optional.  |
 
 ## Request body
 
@@ -45,12 +46,12 @@ In the request body, supply the values for relevant fields that should be update
 
 | Property     | Type        | Description |
 |:-------------|:------------|:------------|
-|backgroundColor|String||
-|backgroundImage|Stream||
-|bannerLogo|Stream||
-|signInPageText|String||
-|squareLogo|Stream||
-|usernameHintText|String||
+|backgroundColor|String|Color that will appear in place of the background image in low-bandwidth connections. The primary color of your banner logo or your organization color is recommended to be used here. Specify this in hexadecimal (for example, white is #FFFFFF).|
+|backgroundImage|Stream|Image that appears as the background of the sign in page. .png or .jpg not larger than 1920x1080 and smaller than 300kb. A smaller image will reduce bandwidth requirements and make page loads more performant.|
+|bannerLogo|Stream|A banner version of your company logo which appears appears on the sign-in page. .png or .jpg no larger than 36x245px. We recommend using a transparent image with no padding around the logo.|
+|signInPageText|String|Text that appears at the bottom of the sign-in box. You can use this to communicate additional information, such as the phone number to your help desk or a legal statement. This text must be Unicode and not exceed 1024 characters.|
+|squareLogo|Stream|Square version of your company logo. This appears in Windows 10 out-of-box (OOBE) experiences and when Windows Autopilot is enabled for deployment. .png or .jpg no larger than 240x240px and no more than 10kb in size. We recommend using a transparent image with no padding around the logo.|
+|usernameHintText|String|String that shows as the hint in the username textbox on the sign in screen. This text must be Unicode, without links or code, and can't exceed 64 characters.|
 
 The id property is ignored when passed in.
 
@@ -59,9 +60,9 @@ The id property is ignored when passed in.
 If successful, this method returns a `204 OK` response code.
 
 ## Examples
-### Use case: Update default branding
+### Example 1: Update default branding
 If the branding already exists, PATCH will replace only the specified properties, leaving unspecified properties unchanged. 
-### Request
+#### Request
 
 The following is an example of the request.
 <!-- {
@@ -70,14 +71,16 @@ The following is an example of the request.
 }-->
 
 ```http
-PATCH https://graph.microsoft.com/v1.0/organization/d69179bf-f4a4-41a9-a9de-249c0f2efb1d/branding
+PATCH https://graph.microsoft.com/beta/organization/d69179bf-f4a4-41a9-a9de-249c0f2efb1d/branding
+Content-Type: application/json
+
 {
     "signInPageText":"Default",
     "usernameHintText":"DefaultHint"
 }
 ```
 
-### Response
+#### Response
 The following is an example of the response.
 
 <!-- {
@@ -92,9 +95,9 @@ HTTP/1.1 204 OK
 
 In this case, the values of the default /branding are updated but no values are changed on any localization.
 
-### Use case: Update BannerLogo for default branding
+### Example 2: Update **bannerLogo** for default branding
 The following request updates the banner logo for the default branding.
-### Request
+#### Request
 
 The following is an example of the request.
 <!-- {
@@ -103,12 +106,12 @@ The following is an example of the request.
 }-->
 
 ```http
-PATCH https://graph.microsoft.com/v1.0/organization/d69179bf-f4a4-41a9-a9de-249c0f2efb1d/branding/bannerLogo
+PATCH https://graph.microsoft.com/beta/organization/d69179bf-f4a4-41a9-a9de-249c0f2efb1d/branding/bannerLogo
 Content-Type: image/jpeg
 Binary data for the image
 ```
 
-### Response
+#### Response
 The following is an example of the response.
 
 <!-- {
@@ -121,9 +124,9 @@ The following is an example of the response.
 HTTP/1.1 204 No Content
 ```
 
-### Use case: Update localized branding
+### Example 3: Update localized branding
 If Content-Language header is specified the localization associated with Content-Language is created, if it doesn't already exist, and then updated using the specified values. The default branding is not changed.
-### Request
+#### Request
 
 The following is an example of the request.
 <!-- {
@@ -132,14 +135,16 @@ The following is an example of the request.
 }-->
 
 ```http
-PATCH https://graph.microsoft.com/v1.0/organization/d69179bf-f4a4-41a9-a9de-249c0f2efb1d/branding
+PATCH https://graph.microsoft.com/beta/organization/d69179bf-f4a4-41a9-a9de-249c0f2efb1d/branding
+Content-Type: application/json
 Content-Language: fr
+
 {
     "backgroundColor":"#FFFF33"
 }
 ```
 
-### Response
+#### Response
 The following is an example of the response.
 
 <!-- {
@@ -154,9 +159,9 @@ HTTP/1.1 204 No Content
 
 Following this request, the fr localization is updated with the new value of backgroundColor, but no change is made to the default /branding.
 
-### Use case: Replace default branding and all localizations
+### Example 4: Replace default branding and all localizations
 If the branding already exists, PUT will replace the default branding and any localizations.
-### Request
+#### Request
 
 The following is an example of the request.
 <!-- {
@@ -165,14 +170,16 @@ The following is an example of the request.
 }-->
 
 ```http
-PUT https://graph.microsoft.com/v1.0/organization/d69179bf-f4a4-41a9-a9de-249c0f2efb1d/branding
+PUT https://graph.microsoft.com/beta/organization/d69179bf-f4a4-41a9-a9de-249c0f2efb1d/branding
+Content-Type: application/json
 Content-Language: fr
+
 {
     "backgroundColor":"#FFFF33"
 }
 ```
 
-### Response
+#### Response
 The following is an example of the response.
 
 <!-- {
