@@ -61,7 +61,7 @@ This method supports some of the OData query parameters to help customize the re
 
 ## Response
 
-If successful, this method returns a `201 CREATED` response code and the created [organizationalBrandingProperties](../resources/organizationalbrandingproperties.md) object in the response body.
+If successful, this method returns a `201 Created` response code and the created [organizationalBrandingProperties](../resources/organizationalbrandingproperties.md) object in the response body.
 
 ## Examples
 ### Use case: Create default branding and localization for en-US.
