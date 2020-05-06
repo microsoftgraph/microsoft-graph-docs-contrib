@@ -1,17 +1,17 @@
 ---
-title: "Page through a collection"
-description: "Provides instructions for creating Microsoft Graph API requests."
+title: "Page through a collection using the Microsoft Graph SDKs"
+description: "Provides instructions for creating Microsoft Graph API requests using the Microsoft Graph SDKs."
 localization_priority: Normal
 author: DarrelMiller
 ---
 
-# Page through a collection
+# Page through a collection using the Microsoft Graph SDKs
 
 For performance reasons, collections of entities are often split into pages and each page is returned with a URL to the next page. The **PageIterator** class simplifies consuming of paged collections. **PageIterator** handles enumerating the current page and requesting subsequent pages automatically.
 
 ## Iterate over all the messages
 
-This example demonstrates iterating over all the messages in a user's mailbox.
+The following example shows iterating over all the messages in a user's mailbox.
 
 > [!TIP]
 > This example sets a small page size using the `top` parameter for demonstration purposes. You can set the page size up to 999 to minimize the number of requests that are necessary.
@@ -63,7 +63,7 @@ await pageIterator.iterate();
 
 ---
 
-## Stopping and Resuming the iteration
+## Stopping and resuming the iteration
 
 Some scenarios require stopping the iteration process in order to perform other actions. It is possible to pause the iteration by returning `false` from the iteration callback. Iteration can be resumed by calling the `resume` method on the **PageIterator**.
 
