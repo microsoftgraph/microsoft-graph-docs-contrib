@@ -1,13 +1,13 @@
 ---
-title: "Customize your client"
-description: "Provides instructions on how to change the default behavior of the Graph Service Client."
+title: "Customize the Microsoft Graph SDK service client"
+description: "Provides instructions on how to change the default behavior of the Microsoft Graph SDK service client."
 localization_priority: Normal
 author: DarrelMiller
 ---
 
-# Customize the Graph Service Client
+# Customize the Microsoft Graph SDK service client
 
-The Microsoft Graph SDK client configures a default set of middleware that allows the SDK to communicate with the Microsoft Graph endpoints. This default set is customizable, allowing you to change the behavior of the client. For example, you can insert customized logging, or add a test handler to simulate specific scenarios.Middleware components can be removed and added. It is important to note the order of execution of middleware components is significant.
+The Microsoft Graph SDK client configures a default set of middleware that allows the SDK to communicate with the Microsoft Graph endpoints. This default set is customizable, allowing you to change the behavior of the client. For example, you can insert customized logging, or add a test handler to simulate specific scenarios. You can add and remove middleware components. It is important to note that the order in which middleware components run is significant.
 
 ## [C#](#tab/csharp)
 
