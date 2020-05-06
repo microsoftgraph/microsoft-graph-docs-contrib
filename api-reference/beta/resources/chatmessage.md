@@ -56,7 +56,7 @@ Represents an individual chat message within a [channel](channel.md) or [chat](c
 |attachments|[chatMessageAttachment](chatmessageattachment.md) collection |Attached files. Attachments are currently read-only – sending attachments is not supported. |
 |mentions|[chatMessageMention](chatmessagemention.md) collection| List of entities mentioned in the chat message. Currently supports user, bot, team, channel.|
 |importance| chatMessageImportance | The importance of the chat message. The possible values are: `normal`, `high`, `urgent`.|
-|reactions| [chatMessageReaction](chatmessagereaction.md) collection | Reactions for this chat message (for example, Like).|
+|reactions| [chatMessageReaction](./chatmessagereaction.md) collection | Reactions for this chat message (for example, Like).|
 |locale|string|Locale of the chat message set by the client.|
 
 ## JSON representation
