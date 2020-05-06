@@ -149,8 +149,6 @@ For a summary of the value of these API changes, as well as recent tools, compon
 | Addition        | v1.0        | Added the **dataLocatonCode** property on the [siteCollection](/graph/api/resources/sitecollection?view=graph-rest-1.0) resource. |
 | Addition        | v1.0        | Added the **tenantId** property on the [sharepointIds](/graph/api/resources/sharepointids?view=graph-rest-1.0) resource. |
 
-
-
 ## March 2020
 
 ### Calendar
@@ -235,7 +233,6 @@ For a summary of the value of these API changes, as well as recent tools, compon
 | Addition        | v1.0        | Added the [follow](/graph/api/driveitem-follow?view=graph-rest-v1.0) action on [driveItem](/graph/api/resources/driveitem?view=graph-rest-v1.0). |
 | Addition        | v1.0        | Added the [unfollow](/graph/api/driveitem-unfollow?view=graph-rest-v1.0) action on [driveItem](/graph/api/resources/driveitem?view=graph-rest-v1.0). |
 
-
 ### Identity and access (Azure AD)
 
 | **Change type** | **Version**   | **Description**                          |
@@ -269,7 +266,6 @@ For a summary of the value of these API changes, as well as recent tools, compon
 | Change      | beta    | The [externalFile](/graph/api/resources/externalfile?view=graph-rest-beta) resource has been deprecated.                                                  |
 | Change      | beta    | The [externalItem](/graph/api/resources/externalfile?view=graph-rest-beta) resource now supports updating the **content** and **properties** properties.      |
 | Change      | beta    | Operations on [externalItem](/graph/api/resources/externalfile?view=graph-rest-beta) resources now return a `Retry-After` header when they are throttled. |
-
 
 ### Sites (OneDrive and SharePoint)
 
