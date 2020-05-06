@@ -104,8 +104,12 @@ For more complex scenarios or a truly custom UX, this component exposes several 
 | - | - |
 | renderButton | Renders the button chrome. |
 | renderButtonContent | Renders the button content. |
+| renderSignedInButtonContent | Render the button content when the user is signed in. |
+| renderSignedOutButtonContent | Render the button content when the user is not signed in. |
 | renderFlyout | Renders the flyout chrome. |
 | renderFlyoutContent | Renders the flyout content. |
+| renderFlyoutPersonDetails | Render the flyout person details. |
+| renderFlyoutCommands | Render the flyout commands. |
 
 ### Bring your own flyout
 
