@@ -11,16 +11,16 @@ ms.prod: "microsoft-teams"
 
 Namespace: microsoft.graph
 
-Represents an individual chat message within a [channel](../../beta/resources/channel.md) or [chat](../../beta/resources/chat.md). The chat message can be a root chat message or part of a reply thread that is defined by the **replyToId** property in the chat message.
+Represents an individual chat message within a [channel](./channel.md) or [chat](../../beta/resources/chat.md). The chat message can be a root chat message or part of a reply thread that is defined by the **replyToId** property in the chat message.
 
 ## Methods
 
 | Method       | Return Type  |Description|
 |:---------------|:--------|:----------|
 |**Channel messages**| | |
-|[Create chatMessage in a channel](../../beta/api/channel-post-messages.md) | [chatMessage](chatmessage.md)| Create a new top-level chat message in a channel.|
+|[Create chatMessage in a channel](../api/channel-post-message.md) | [chatMessage](chatmessage.md)| Create a new top-level chat message in a channel.|
 |**Channel message replies**| | |
-|[Reply to a chatMessage in a channel](../../beta/api/channel-post-messagereply.md) | [chatMessage](chatmessage.md)| Reply to an existing chat message in a channel.|
+|[Reply to a chatMessage in a channel](../api/channel-post-messagereply.md) | [chatMessage](chatmessage.md)| Reply to an existing chat message in a channel.|
 
 ## Properties
 
