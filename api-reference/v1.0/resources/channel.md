@@ -45,7 +45,7 @@ where files are shared, and where tabs are added.
 
 | Relationship | Type | Description|
 |:---------------|:--------|:----------|
-|messages|[chatMessage](../../beta/resources/chatmessage.md) collection|A collection of all the messages in the channel. A navigation property. Nullable.|
+|messages|[chatMessage](./chatmessage.md) collection|A collection of all the messages in the channel. A navigation property. Nullable.|
 |tabs|[teamsTab](../resources/teamstab.md) collection|A collection of all the tabs in the channel. A navigation property.|
 
 ## JSON representation

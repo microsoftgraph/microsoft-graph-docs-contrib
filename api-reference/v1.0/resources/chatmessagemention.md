@@ -11,7 +11,7 @@ doc_type: resourcePageType
 
 Namespace: microsoft.graph
 
-Represents a mention in a [chatMessage](../../beta/resources/chatmessage.md) entity. The mention can be to a [user](user.md), [team](team.md), bot, or [channel](channel.md). 
+Represents a mention in a [chatMessage](./resources/chatmessage.md) entity. The mention can be to a [user](user.md), [team](team.md), bot, or [channel](channel.md). 
 
 In a **chatMessage** object that contains one or more mentions, the message body **content** property represents the chat message in HTML. It encloses the **mentionText** of each mention in an HTML `at` element, with an `id` attribute that corresponds to the **id** property of the mention.
 

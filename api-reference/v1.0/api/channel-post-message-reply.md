@@ -11,7 +11,7 @@ doc_type: apiPageType
 
 Namespace: microsoft.graph
 
-Create a new reply to a [message](/api-reference/beta/resources/chatmessage.md) in a specified [channel](/api-reference/beta/resources/channel.md).
+Create a new reply to a [message](../resources/chatmessage.md) in a specified [channel](../resources/channel.md).
 
 > **Note**: We don't recommend that you use this API for data migration. It does not have the throughput necessary for a typical migration.
 
@@ -39,11 +39,11 @@ POST /teams/{id}/channels/{id}/messages/{id}/replies
 
 ## Request body
 
-In the request body, supply a JSON representation of a [message](/api-reference/beta/resources/chatmessage.md) object. Only the body property is mandatory, other properties are optional.
+In the request body, supply a JSON representation of a [message](../resources/chatmessage.md) object. Only the body property is mandatory, other properties are optional.
 
 ## Response
 
-If successful, this method returns `201 Created` response code with the [message](/api-reference/beta/resources/chatmessage.md) that was created.
+If successful, this method returns `201 Created` response code with the [message](../resources/chatmessage.md) that was created.
 
 ## Example
 ##### Request

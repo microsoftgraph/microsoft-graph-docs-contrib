@@ -18,9 +18,9 @@ Represents an individual chat message within a [channel](../../beta/resources/ch
 | Method       | Return Type  |Description|
 |:---------------|:--------|:----------|
 |**Channel messages**| | |
-|[Create chatMessage in a channel](../../beta/api/channel-post-messages.md) | [chatMessage](../../beta/resources/chatmessage.md)| Create a new top-level chat message in a channel.|
+|[Create chatMessage in a channel](../../beta/api/channel-post-messages.md) | [chatMessage](chatmessage.md)| Create a new top-level chat message in a channel.|
 |**Channel message replies**| | |
-|[Reply to a chatMessage in a channel](../../beta/api/channel-post-messagereply.md) | [chatMessage](../../beta/resources/chatmessage.md)| Reply to an existing chat message in a channel.|
+|[Reply to a chatMessage in a channel](../../beta/api/channel-post-messagereply.md) | [chatMessage](chatmessage.md)| Reply to an existing chat message in a channel.|
 
 ## Properties
 

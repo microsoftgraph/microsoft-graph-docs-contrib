@@ -11,7 +11,7 @@ doc_type: apiPageType
 
 Namespace: microsoft.graph
 
-Create a new [chatMessage](../../beta/resources/chatmessage.md) in the specified [channel](../resources/channel.md).
+Create a new [chatMessage](../resources/chatmessage.md) in the specified [channel](../resources/channel.md).
 
 > **Note**: We don't recommend that you use this API for data migration. It does not have the throughput necessary for a typical migration.
 
@@ -41,11 +41,11 @@ POST /teams/{id}/channels/{id}/messages
 
 ## Request body
 
-In the request body, supply a JSON representation of a [message](../../beta/resources/chatmessage.md) object. Only the body property is mandatory, other properties are optional.
+In the request body, supply a JSON representation of a [message](../resources/chatmessage.md) object. Only the body property is mandatory, other properties are optional.
 
 ## Response
 
-If successful, this method returns a `201 Created` response code and a new [chatMessage](../../beta/resources/chatmessage.md) object in the response body.
+If successful, this method returns a `201 Created` response code and a new [chatMessage](../resources/chatmessage.md) object in the response body.
 
 ## Examples
 
