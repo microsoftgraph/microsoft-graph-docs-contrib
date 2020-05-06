@@ -467,7 +467,7 @@ items:
             href: sdks/paging.md
           - name: Create a batch request
             href: sdks/batch-requests.md
-          - name: Large file upload
+          - name: Upload large files
             href: sdks/large-file-upload.md
       - name: Use the toolkit
         items:
