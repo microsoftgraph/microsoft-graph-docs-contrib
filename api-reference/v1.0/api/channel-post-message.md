@@ -11,7 +11,7 @@ doc_type: apiPageType
 
 Namespace: microsoft.graph
 
-Create a new [chatMessage](../resources/chatmessage.md) in the specified [channel](../resources/channel.md).
+Create a new [chatMessage](../../beta/resources/chatmessage.md) in the specified [channel](../resources/channel.md).
 
 > **Note**: We don't recommend that you use this API for data migration. It does not have the throughput necessary for a typical migration.
 
@@ -41,21 +41,22 @@ POST /teams/{id}/channels/{id}/messages
 
 ## Request body
 
-In the request body, supply a JSON representation of a [message](../resources/chatmessage.md) object. Only the body property is mandatory, other properties are optional.
-
+In the request body, supply a JSON representation of a [message](../../beta/resources/chatmessage.md) object. Only the body property is mandatory, other properties are optional.
 
 ## Response
 
-If successful, this method returns a `201 Created` response code and a new [chatMessage](../resources/chatmessage.md) object in the response body.
+If successful, this method returns a `201 Created` response code and a new [chatMessage](../../beta/resources/chatmessage.md) object in the response body.
 
 ## Examples
 
 ### Example 1: Hello World
 
 #### Request
+
 The following is an example of the request.
 
 # [HTTP](#tab/http)
+
 <!-- {
   "blockType": "request",
   "name": "create_chatmessage_from_channel"
@@ -71,17 +72,21 @@ Content-type: application/json
   }
 }
 ```
+
 # [C#](#tab/csharp)
-[!INCLUDE [sample-code](microsoft-graph-docs/includes/snippets/csharp/create-chatmessage-from-channel-csharp-snippets.md)]
-[!INCLUDE [sdk-documentation](microsoft-graph-docs/includes/snippets/snippets-sdk-documentation-link.md)]
+
+[!INCLUDE [sample-code](../../beta/includes/snippets/csharp/create-chatmessage-from-channel-csharp-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [JavaScript](#tab/javascript)
-[!INCLUDE [sample-code](microsoft-graph-docs/includes/snippets/javascript/create-chatmessage-from-channel-javascript-snippets.md)]
-[!INCLUDE [sdk-documentation](microsoft-graph-docs/includes/snippets/snippets-sdk-documentation-link.md)]
+
+[!INCLUDE [sample-code](../../beta/includes/snippets/javascript/create-chatmessage-from-channel-javascript-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Objective-C](#tab/objc)
-[!INCLUDE [sample-code](microsoft-graph-docs/includes/snippets/objc/create-chatmessage-from-channel-objc-snippets.md)]
-[!INCLUDE [sdk-documentation](microsoft-graph-docs/includes/snippets/snippets-sdk-documentation-link.md)]
+
+[!INCLUDE [sample-code](../../beta/includes/snippets/objc/create-chatmessage-from-channel-objc-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
 

@@ -4,7 +4,7 @@ description: "Represents an attachment to a chat message entity."
 localization_priority: Normal
 doc_type: resourcePageType
 ms.prod: "microsoft-teams"
-author: nkramer""
+author: "nkramer"
 ---
 
 # chatMessageAttachment resource type
@@ -13,7 +13,7 @@ Namespace: microsoft.graph
 
 Represents an attachment to a chat message entity.
 
-An entity of type `chatMessageAttachment` is returned as part of the [Get channel messages](../api/channel-list-messages.md) API, as a part of [chatMessage](chatmessage.md) entity.
+An entity of type `chatMessageAttachment` is returned as part of the [Get channel messages](../../beta/api/channel-list-messages.md) API, as a part of [chatMessage](../../beta/resources/chatmessage.md) entity.
 
 ## Properties
 | Property	   | Type	|Description|

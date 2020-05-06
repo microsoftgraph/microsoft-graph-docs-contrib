@@ -11,7 +11,7 @@ doc_type: apiPageType
 
 Namespace: microsoft.graph
 
-Create a new reply to a [message](../resources/chatmessage.md) in a specified [channel](../resources/channel.md).
+Create a new reply to a [message](../../beta/resources/chatmessage.md) in a specified [channel](../../beta/resources/channel.md).
 
 > **Note**: We don't recommend that you use this API for data migration. It does not have the throughput necessary for a typical migration.
 
@@ -29,17 +29,20 @@ One of the following permissions is required to call this API. To learn more, in
 ```http
 POST /teams/{id}/channels/{id}/messages/{id}/replies
 ```
+
 ## Request headers
+
 | Name       | Type | Description|
 |:---------------|:--------|:----------|
 | Authorization  | string  | Bearer {token}. Required. |
 
 ## Request body
-In the request body, supply a JSON representation of a [message](../resources/chatmessage.md) object. Only the body property is mandatory, other properties are optional.
+
+In the request body, supply a JSON representation of a [message](../../beta/resources/chatmessage.md) object. Only the body property is mandatory, other properties are optional.
 
 ## Response
 
-If successful, this method returns `201 Created` response code with the [message](../resources/chatmessage.md) that was created.
+If successful, this method returns `201 Created` response code with the [message](../../beta/resources/chatmessage.md) that was created.
 
 ## Example
 ##### Request
@@ -62,15 +65,15 @@ Content-type: application/json
 }
 ```
 # [C#](#tab/csharp)
-[!INCLUDE [sample-code](microsoft-graph-docs/includes/snippets/csharp/post-reply-message-csharp-snippets.md)]
-[!INCLUDE [sdk-documentation](microsoft-graph-docs/includes/snippets/snippets-sdk-documentation-link.md)]
+[!INCLUDE [sample-code](../includes/snippets/csharp/post-reply-csharp-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [JavaScript](#tab/javascript)
-[!INCLUDE [sample-code](microsoft-graph-docs/includes/snippets/javascript/post-reply-message-javascript-snippets.md)]
+[!INCLUDE [sample-code](../includes/snippets/javascript/post-reply-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Objective-C](#tab/objc)
-[!INCLUDE [sample-code](microsoft-graph-docs/includes/snippets/objc/post-reply-message-objc-snippets.md)]
+[!INCLUDE [sample-code](../includes/snippets/objc/message-reply-objc-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
