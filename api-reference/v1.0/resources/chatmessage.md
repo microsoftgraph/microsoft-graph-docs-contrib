@@ -22,7 +22,7 @@ Represents an individual chat message within a [channel](./channel.md) or [chat]
 |[Get chatMessages in a channel delta](/graph/api/chatmessage-delta?view=graph-rest-beta) | [chatMessage](#chatmessage-resource-type) |Retrieve  chat messages (without replies) in a channel.|
 |[Create subscription for new channel messages](../api/subscription-post-subscriptions.md)  | [subscription](./subscription.md)  |  Listen for new and edited channel messages and reactions. |
 |[Get channel chatMessage](/graph/api/channel-get-message?view=graph-rest-beta) | [chatMessage](#chatmessage-resource-type)  | Retrieve a single chat message (without replies) from a channel. |  
-|[Create chatMessage in a channel](../api/channel-post-message.md) | [chatMessage](#chatmessage-resource-type)| Create a new top-level chat message in a channel.|
+|[Create chatMessage in a channel](../api/channel-post-messages.md) | [chatMessage](#chatmessage-resource-type)| Create a new top-level chat message in a channel.|
 |**Channel message replies**| | |
 |[List replies to a chatMessage](/graph/api/channel-list-messagereplies?view=graph-rest-beta)]| [chatMessage](#chatmessage-resource-type) collection | List all replies to a chat message in a channel. |
 |[Get a reply to a chatMessage](/graph/api/channel-get-messagereply?view=graph-rest-beta)| [chatMessage](#chatmessage-resource-type) |Retrieve a single reply to a chat message in a channel. |
