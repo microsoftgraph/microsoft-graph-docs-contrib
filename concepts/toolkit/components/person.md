@@ -49,11 +49,17 @@ You can use three properties to set the person details. Use only one of the foll
 
 You can use several properties to customize the component.
 
-| Attribute    | Property   | Description                                                   |
-| -----------  | ---------- | ------------------------------------------------------------- |
-| show-name    | showName   | Set flag to display person display name - default is `false`. |
-| show-email   | showEmail  | Set flag to display person email - default is `false`.        |
-| show-presence | showPresence | Set flag to display person presence - default is `false`.|
+| Attribute       | Property       | Description                                                   |
+| -----------     | ----------     | ------------------------------------------------------------- |
+| user-id         | userId         | Set to a user id to fetch that user's details and image from Microsoft Graph.|
+| person-query    | personQuery    | Set to a name or email of a person to search for a person in Microsoft Graph and fetch the first person's details and image.|
+| person-details  | personDetails  | Set to an object representing a person. Works with object from the people, users, contacts, or group, resources. |
+| person-image    | personImage    | Set the image to show for the person. |
+| person-presence | personPresence | Set the presence for the person. |
+| fetch-image     | fetchImage     | Set flag to fetch `personImage` automatically from Microsoft Graph based on the `personDetails` object provided by the user. |
+| show-name       | showName       | Set flag to display person display name - default is `false`. |
+| show-email      | showEmail      | Set flag to display person email - default is `false`.        |
+| show-presence   | showPresence   | Set flag to display person presence - default is `false`.|
 
 ## CSS custom properties
 
