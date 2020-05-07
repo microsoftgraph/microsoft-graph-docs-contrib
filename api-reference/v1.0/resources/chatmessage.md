@@ -3,7 +3,7 @@ title: "chatMessage resource type"
 description: "Represents an individual chat message within a channel or chat entity. The chat message can be a root chat message or part of a thread that is defined by the **replyToId** property in the chat message."
 doc_type: resourcePageType
 localization_priority: Normal
-author: "clearab"
+author: "nkramer"
 ms.prod: "microsoft-teams"
 ---
 
@@ -18,9 +18,23 @@ Represents an individual chat message within a [channel](./channel.md) or [chat]
 | Method       | Return Type  |Description|
 |:---------------|:--------|:----------|
 |**Channel messages**| | |
-|[Create chatMessage in a channel](../api/channel-post-message.md) | [chatMessage](chatmessage.md)| Create a new top-level chat message in a channel.|
+|[List channel chatMessage](/graph/api/channel-list-messages?view=graph-rest-beta) | [chatMessage](#chatmessage-resource-type) collection |List of all root chat messages in a channel.  |
+|[Get chatMessages in a channel delta](/graph/api/chatmessage-delta?view=graph-rest-beta) | [chatMessage](#chatmessage-resource-type) |Retrieve  chat messages (without replies) in a channel.|
+|[Create subscription for new channel messages](../api/subscription-post-subscriptions.md)  | [subscription](./subscription.md)  |  Listen for new and edited channel messages and reactions. |
+|[Get channel chatMessage](/graph/api/channel-get-message?view=graph-rest-beta) | [chatMessage](#chatmessage-resource-type)  | Retrieve a single chat message (without replies) from a channel. |  
+|[Create chatMessage in a channel](../api/channel-post-message.md) | [chatMessage](#chatmessage-resource-type)| Create a new top-level chat message in a channel.|
 |**Channel message replies**| | |
-|[Reply to a chatMessage in a channel](../api/channel-post-messagereply.md) | [chatMessage](chatmessage.md)| Reply to an existing chat message in a channel.|
+|[List replies to a chatMessage](/graph/api/channel-list-messagereplies?view=graph-rest-beta)]| [chatMessage](#chatmessage-resource-type) collection | List all replies to a chat message in a channel. |
+|[Get a reply to a chatMessage](/graph/api/channel-get-messagereply?view=graph-rest-beta)| [chatMessage](#chatmessage-resource-type) |Retrieve a single reply to a chat message in a channel. |
+|[Reply to a chatMessage in a channel](../api/channel-post-messagereply.md) | [chatMessage](#chatmessage-resource-type)| Reply to an existing chat message in a channel.|
+|**1:1 and group chat messages**| | |
+|[Create chatMessage in a chat](/graph/api/chat-post-messages?view=graph-rest-beta) | [chatMessage](#chatmessage-resource-type) | Send a chat message in an existing 1:1 or group chat conversation. |
+|[List chatMessages in a chat](/graph/api/chatmessage-list?view=graph-rest-beta) |[chatMessage](#chatmessage-resource-type)|List chat messages in a 1:1 or group chat.|
+|[Create subscription for new chat messages](../api/subscription-post-subscriptions.md) |[subscription](./subscription.md)|Listen for new and edited chat messages and reactions.|
+|[Get chatMessage in chat](/graph/api/chatmessage-get?view=graph-rest-beta)  |[chatMessage](#chatmessage-resource-type) |Retrieve a single chat message in a chat.|
+|**Hosted content**| | |
+|[List all hosted content](/graph/api/chatmessage-list-chatmessagehostedcontents?view=graph-rest-beta) |[chatMessageHostedContent](/graph/api/resources/chatmessagehostedcontent?view=graph-rest-beta) collection |Retrieve all hosted content in a chat message. |
+|[Get hosted content](/graph/api/chatmessagehostedcontent-get?view=graph-rest-beta) | [chatMessageHostedContent](/graph/api/resources/chatmessagehostedcontent?view=graph-rest-beta) |Retrieve hosted content from a chat message.  |
 
 ## Properties
 
@@ -30,7 +44,7 @@ Represents an individual chat message within a [channel](./channel.md) or [chat]
 |replyToId| string | Read-only. Id of the parent chat message or root chat message of the thread. (Only applies to chat messages in channels not chats) |
 |from|[identitySet](identityset.md)| Read only. Details of the sender of the chat message.|
 |etag| string | Read-only. Version number of the chat message. |
-|messageType|chatMessageType|The type of chat message. The possible values are: `message`.|
+|messageType|string|The type of chat message. The possible values are: `message`.|
 |createdDateTime|dateTimeOffset|Read only. Timestamp of when the chat message was created.|
 |lastModifiedDateTime|dateTimeOffset|Read only. Timestamp of when the chat message is created or edited, including when a reply is made (if it's a root chat message in a channel) or a reaction is added or removed. |
 |deletedDateTime|dateTimeOffset|Read only. Timestamp at which the chat message was deleted, or null if not deleted. |
@@ -80,7 +94,7 @@ The following is a JSON representation of the resource.
   "mentions": [{"@odata.type": "microsoft.graph.chatMessageMention"}],
   "importance": "string",
   "policyViolation": "string",
-  "reactions":  "string",,
+  "reactions":  "string",
   "locale": "string",
   "deleted": true
 }
