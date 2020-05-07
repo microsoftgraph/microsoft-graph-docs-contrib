@@ -2,7 +2,7 @@
 title: "Create chatMessage in a channel"
 description: "Create a new chatMessage in the specified channel."
 localization_priority: Normal
-author: "RamjotSingh"
+author: "nkramer"
 ms.prod: "microsoft-teams"
 doc_type: apiPageType
 ---
