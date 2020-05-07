@@ -39,7 +39,7 @@ Represents an individual chat message within a [channel](./channel.md) or [chat]
 |summary|string| Summary text of the chat message that could be used for push notifications and summary views or fall back views. Only applies to channel chat messages, not chat messages in a chat. |
 |attachments|[chatMessageAttachment](chatmessageattachment.md) collection |Attached files. Attachments are currently read-only – sending attachments is not supported. |
 |mentions|[chatMessageMention](chatmessagemention.md) collection| List of entities mentioned in the chat message. Currently supports user, bot, team, channel.|
-|importance| chatMessageImportance | The importance of the chat message. The possible values are: `normal`, `high`, `urgent`.|
+|importance| string | The importance of the chat message. The possible values are: `normal`, `high`, `urgent`.|
 |reactions| [chatMessageReaction](/graph/api/resources/chatmessagereaction?view=graph-rest-beta) collection | Reactions for this chat message (for example, Like).|
 |locale|string|Locale of the chat message set by the client.|
 
@@ -80,7 +80,7 @@ The following is a JSON representation of the resource.
   "mentions": [{"@odata.type": "microsoft.graph.chatMessageMention"}],
   "importance": "string",
   "policyViolation": "string",
-  "reactions": [{"@odata.type": "microsoft.graph.chatMessageReaction"}],
+  "reactions":  "string",,
   "locale": "string",
   "deleted": true
 }
