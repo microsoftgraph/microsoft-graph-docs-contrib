@@ -23,7 +23,7 @@ For a summary of the value of these API changes, as well as recent tools, compon
 
 | **Change type** | **Version** | **Description**                          |
 | :-------------- | :---------- | :--------------------------------------- |
-| Addition | v1.0 | Introduced the Shifts APIs, including [shift](/graph/api/resources/shift?view=graph-rest-1.0), [workforceintegration]((/graph/api/resources/workforceintegration?view=graph-rest-1.0), and associated methods.|
+| Addition | v1.0 | Introduced the Shifts APIs, including [shift](/graph/api/resources/shift?view=graph-rest-1.0), [workforceintegration](/graph/api/resources/workforceintegration?view=graph-rest-1.0), and associated methods.|
 
 ## April 2020
 
