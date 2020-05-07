@@ -826,7 +826,9 @@
         - name: Get
           href: api/onlinemeeting-get.md
         - name: Delete
-          href: api/onlinemeeting-delete.md             
+          href: api/onlinemeeting-delete.md
+        - name: Create or get
+          href: api/onlinemeeting-createorget.md
     - name: Cross-device experiences
       displayName: Project Rome
       items:
