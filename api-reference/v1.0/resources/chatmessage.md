@@ -94,9 +94,8 @@ The following is a JSON representation of the resource.
   "mentions": [{"@odata.type": "microsoft.graph.chatMessageMention"}],
   "importance": "string",
   "policyViolation": "string",
-  "reactions":  "string",
+  "reactions": [{"@odata.type": "microsoft.graph.chatMessageReaction"}],
   "locale": "string",
-  "deleted": true
 }
 
 ```
