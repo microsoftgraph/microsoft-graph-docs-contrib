@@ -35,6 +35,7 @@ Contains information about the meeting, including the URL used to join a meeting
 | participants              | [meetingParticipants](meetingparticipants.md)          | The participants associated with the online meeting.  This includes the organizer and the attendees. |
 | subject                   | String                                                 | The subject of the online meeting. |
 | videoTeleconferenceId     | String                                                 | The video teleconferencing ID. Read-only. |
+| joinInformation | [itemBody](itembody.md) | The join information in the language and locale variant specified in 'Accept-Language' request HTTP header. Read-only |
 
 
 ## JSON representation
