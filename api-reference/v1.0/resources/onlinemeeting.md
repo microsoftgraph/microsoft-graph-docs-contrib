@@ -35,7 +35,7 @@ Contains information about the meeting, including the URL used to join a meeting
 | participants              | [meetingParticipants](meetingparticipants.md)          | The participants associated with the online meeting.  This includes the organizer and the attendees. |
 | subject                   | String                                                 | The subject of the online meeting. |
 | videoTeleconferenceId     | String                                                 | The video teleconferencing ID. Read-only. |
-
+| [Create or get onlineMeeting](../api/onlinemeeting-createorget.md) | [onlineMeeting](onlinemeeting.md) | Create an online meeting with a custom, external ID. If the meeting already exists, retrieve its propertie. |
 
 ## JSON representation
 
