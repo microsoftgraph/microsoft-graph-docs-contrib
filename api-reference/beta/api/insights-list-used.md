@@ -15,7 +15,9 @@ Namespace: microsoft.graph
 
 Calculated insight that includes a list of documents the user has viewed or modified. 
 
-For the signed-in user, this method includes documents that the user has modified {Example 1}. Using an `$orderby` query parameter on the lastAccessedDateTime property returns the most recently viewed documents, that the user may or may not have modified. See an example below {Example 2}.
+For the signed-in user:
+- This method includes documents that the user has modified; see [example 1](#example-1-return-documents-that-user-has-modified) below. 
+- Using an `$orderby` query parameter on the **lastAccessedDateTime** property returns the most recently viewed documents that the user may or may not have modified; see [example 2](#example-2-return-the-most-recently-viewed-documents-that-user-may-or-may-not-have-modified).
 
 For other users, this method includes only documents that the user has modified.
 
@@ -31,25 +33,26 @@ One of the following permissions is required to call this API. To learn more, in
 
 ## HTTP request
 
-Get a list of documents that the signed-in user has modified:
+- Get a list of documents that the signed-in user has modified:
 
-```http
-GET /me/insights/used
-```
+  ```http
+  GET /me/insights/used
+  ```
 
-Get a list of documents that the specified user has modified.
+- Get a list of documents that the specified user has modified:
 
->**Note**: Requesting another user's **used** documents returns results sorted by **lastModifiedDateTime**. **lastAccessedDateTime** is then set to **lastModifiedDateTime**.
-```http
-GET /users/{id | userPrincipalName}/insights/used
-```
+  ```http
+  GET /users/{id | userPrincipalName}/insights/used
+  ```
+  >**Note**: Requesting another user's **used** documents returns results sorted by **lastModifiedDateTime**. **lastAccessedDateTime** is then set to **lastModifiedDateTime**.
 
-Expand the resource referenced by a **used** insight:
 
-```http
-GET /me/insights/used/{id}/resource
-GET /users/{id | userPrincipalName}/insights/used/{id}/resource
-```
+- Expand the resource referenced by a **used** insight:
+
+  ```http
+  GET /me/insights/used/{id}/resource
+  GET /users/{id | userPrincipalName}/insights/used/{id}/resource
+  ```
 
 
 ## Optional query parameters
@@ -65,11 +68,11 @@ This method supports the [OData Query Parameters](https://developer.microsoft.co
 
   See the available container types and types you can filter by in [resourceVisualization](../resources/insights-resourcevisualization.md).
 
-- Use the `$orderBy` query parameter to sort documents last viewed or modified by the signed-in user, based on the lastAccessedDateTime property:
+- Use the `$orderBy` query parameter to sort documents last viewed or modified by the signed-in user, based on the **lastAccessedDateTime** property:
 
   `https://graph.microsoft.com/beta/me/insights/used?$orderby=LastUsed/LastAccessedDateTime desc`
 
-  >**Note**: Use this query option only for the signed-in user. You cannot use this API to get documents viewed or modified by another user. See an example {example 2} below
+  >**Note**: Use this query option only for the signed-in user. You cannot use this API to get documents viewed or modified by another user. See [example 2](#example-2-return-the-most-recently-viewed-documents-that-user-may-or-may-not-have-modified) below.
 
 
 ## Request headers
@@ -86,7 +89,7 @@ Do not supply a request body for this method.
 If successful, this method returns a `200 OK` response code and a list of [used](../resources/insights-used.md) items in the response body.
 ## Example
 
-### Example 1: return documents that user has modified
+### Example 1: Return documents that user has modified
 
 #### Request
 
@@ -260,7 +263,7 @@ Here is an example of the response. Note: The response object shown here may be 
 }
 ```
 
-### Example 2: return the most recently viewed documents, that user may or may not have modified 
+### Example 2: Return the most recently viewed documents that user may or may not have modified 
 
 #### Request
 
