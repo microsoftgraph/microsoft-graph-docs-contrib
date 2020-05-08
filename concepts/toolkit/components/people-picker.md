@@ -7,9 +7,7 @@ author: vogtn
 
 # People-Picker component in the Microsoft Graph Toolkit
 
-You can use the `mgt-people-picker` web component search for a specified number of people and render the list of results via Microsoft Graph. By default, the component will search for all people; you can also define a group property to further filter the results.
-
-If the number of people to display exceeds the `show-max` value, not all people returned will be displayed in the search list.
+You can use the `mgt-people-picker` web component to search for people and/or groups. By default, the component will search for all people and users in the organization, but you can change the behavior to also search for Groups, or only Groups. You can also filter the search to a specific group.
 
 ## Example
 
@@ -21,14 +19,16 @@ The following example shows the `mgt-people-picker` component. Start searching f
 
 ## Properties
 
-By default, the `mgt-people-picker` component fetches people from the `/me/people` endpoint. Use the following attributes to change this behavior.
+By default, the `mgt-people-picker` component fetches people from the `/me/people` and `/users` endpoint. Use the following attributes to change this behavior.
 
 | Attribute | Property | Description                                                                                                                                                                            |
 | -------- | --------- | -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
 | show-max | showMax   | A number value to indicate the maximum number of people to show. the default value is 6.                                                                                             |
-| people   | people    | An array of people to get or set the list of people rendered by the component. Use this property to access the people loaded by the component. Set this value to load your own people. |
 | group    | group     | A string value that belongs to a Microsoft Graph defined group for further filtering of the search results.                                                                            |
-|  selected-people  | selectedPeople     | An array of type  `person`, representing people selected in the component. Set this value to choose selected people by default.|
+| type     | type      | The type of entities to search for. Available options are: `Person`, `Group`, `Any`. Default value is `Person`. This attribute has no effect if `group` property is set.                                                                            |
+| group-type     | groupType      | The group type to search for. Available options are: `Unified`, `Security`, `MailEnabledSecurity`, `Distribution`, `Any`. Default value is `Any`. This attribute has no effect if the `type` property is set to `Person`.                                                                           |
+|  selected-people  | selectedPeople     | An array of selected people. Set this value to select people programmatically.|
+| people   | people    | An array of people found and rendered in the search result |
 
 The following is a `show-max` example.
 
@@ -109,8 +109,10 @@ This component uses the following Microsoft Graph APIs and permissions.
 | API                                                                                                              | Permission  |
 | ---------------------------------------------------------------------------------------------------------------- | ----------- |
 | [/me/people](/graph/api/user-list-people?view=graph-rest-1.0)                    | People.Read        |
-| [/groups/\${groupId}/members](/graph/api/group-list-members?view=graph-rest-1.0) | People.Read        |
-| [/users/${userPrincipleName} ](/graph/api/user-list-people?view=graph-rest-1.0)  | User.Readbasic.All |
+| [/users](/graph/api/user-list?view=graph-rest-1.0)  | User.ReadBasic.All |
+| [/groups](/group-list?view=graph-rest-beta)  | Group.Read.All |
+| [/groups/\${groupId}/members](/graph/api/group-list-members?view=graph-rest-1.0) | User.ReadBasic.All        |
+| [/users/${userPrincipleName} ](/graph/api/user-get?view=graph-rest-1.0)  | User.Read |
 
 ## Authentication
 
