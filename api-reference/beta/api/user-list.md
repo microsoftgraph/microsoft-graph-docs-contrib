@@ -43,7 +43,7 @@ This method supports the [OData Query Parameters](https://developer.microsoft.co
 | Header | Value |
 |:------ |:----- |
 | Authorization | Bearer {token} (required)  |
-| ConsistencyLevel | eventual. This header is required when using the `$search`or `$count` query parameter. It uses an index that may not be up-to-date with recent changes to the object. |
+| ConsistencyLevel | eventual. This header and `$count` are required when using `$search`, or when using `$filter` with the `$orderby` query parameter. It uses an index that may not be up-to-date with recent changes to the object. |
 
 ## Request body
 
