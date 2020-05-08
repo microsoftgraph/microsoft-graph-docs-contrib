@@ -61,7 +61,7 @@ You can add any of the [15 custom attributes](https://docs.microsoft.com/exchang
 3. Make sure the Preview toggle is set to **Off**
 4. In the Query URL, select **PATCH** and enter:
     <div style="display: inline">https://microsoft.com/beta/organization/[TenantID]/settings</div>
-5. In **Request Body** enter:
+5. In **Request Body** enter the following:
 
         {
             "experiencePersonalization": {
@@ -81,8 +81,7 @@ You can add any of the [15 custom attributes](https://docs.microsoft.com/exchang
 6. Click **Run Query**
 
 > [!NOTE]
-> Enter the language code in the form *ll-cc*, where *ll* is the language code, and cc the country code. For example, for German – Austria, enter the country code de-at.  
-To see an overview of supported languages, see the article [What languages is Office available in?](https://go.microsoft.com/fwlink/?linkid=2124878) and select the tab **Office Online**.
+> Enter the language code in the form *ll-cc*, where *ll* is the language code, and cc the country code. For example, for German – Austria, enter the country code de-at. 
 If a language is not supported, the property name will be shown with the default value.  
 
 > [!IMPORTANT]
