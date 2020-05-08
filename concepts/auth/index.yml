@@ -46,7 +46,7 @@ landingContent:
           - text: Manage app access
             url: /graph/auth-cloudsolutionprovider
           - text: Limit mailbox access
-            url: /graph/auth-limit-mailbox-access/graph/auth-v2-service
+            url: /graph/auth-limit-mailbox-access
       - linkListType: reference
         links:
           - text: Authorization errors
@@ -65,6 +65,8 @@ landingContent:
             url: https://github.com/AzureAD/microsoft-authentication-library-for-objc
           - text: JavaScript
             url: https://github.com/AzureAD/microsoft-authentication-library-for-js
+          - text: Python
+            url: https://github.com/AzureAD/microsoft-authentication-library-for-python
           - text: UWP
             url: https://github.com/AzureAD/microsoft-authentication-library-for-dotnet
           - text: Xamarin
