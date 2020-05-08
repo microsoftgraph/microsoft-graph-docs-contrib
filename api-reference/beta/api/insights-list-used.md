@@ -57,24 +57,20 @@ This method supports the [OData Query Parameters](https://developer.microsoft.co
 
 - You can use the `$filter` query parameter to filter used items. For example, based on **type**:
 
-`https://graph.microsoft.com/beta/me/insights/used?$filter=ResourceVisualization/Type eq 'PowerPoint'`
+  `https://graph.microsoft.com/beta/me/insights/used?$filter=ResourceVisualization/Type eq 'PowerPoint'`
 
 - Use `$filter` to filter used items based on  **containerType**:
 
-`https://graph.microsoft.com/beta/me/insights/used?$filter=ResourceVisualization/containerType eq 'OneDriveBusiness'`
+  `https://graph.microsoft.com/beta/me/insights/used?$filter=ResourceVisualization/containerType eq 'OneDriveBusiness'`
 
-See the available container types and types you can filter by in [resourceVisualization](../resources/insights-resourcevisualization.md).
+  See the available container types and types you can filter by in [resourceVisualization](../resources/insights-resourcevisualization.md).
 
 - Use the `$orderBy` query parameter to sort documents last viewed or modified by the signed-in user, based on the lastAccessedDateTime property:
 
-` https://graph.microsoft.com/beta/me/insights/used?$orderby=LastUsed/LastAccessedDateTime desc`
+  `https://graph.microsoft.com/beta/me/insights/used?$orderby=LastUsed/LastAccessedDateTime desc`
 
->**Note**: Use this query option only for the signed-in user. You cannot use this API to get documents viewed or modified by another user. See an example {example 2}. below
+  >**Note**: Use this query option only for the signed-in user. You cannot use this API to get documents viewed or modified by another user. See an example {example 2} below
 
-For example:
-```http
-GET /me/insights/used?$orderby=LastUsed/LastAccessedDateTime desc
-```
 
 ## Request headers
 | Header       |  Value|
