@@ -137,6 +137,8 @@ This control uses the following Microsoft Graph APIs and permissions.
 | [/me/people/?$search=](/graph/api/user-list-people?view=graph-rest-1.0)     | People.Read        |
 | [/me/contacts/\*](/graph/api/user-list-contacts?view=graph-rest-1.0&tabs=cs) | Contacts.Read      |
 | [/users/{id}/photo/$value](/graph/api/user-list-people?view=graph-rest-1.0) | User.ReadBasic.All |
+| [/me/presence](/graph/api/presence-get?view=graph-rest-beta)                | Presence.Read |
+| [/users/{id}/presence](/graph/api/presence-get?view=graph-rest-beta)        | Presence.Read.All |
 
 > **Note:** to access the `*/photo/$value` resources for personal Microsoft accounts, use the Microsoft Graph beta endpoint.
 
