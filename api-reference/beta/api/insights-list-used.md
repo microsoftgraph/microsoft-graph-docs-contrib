@@ -15,11 +15,11 @@ Namespace: microsoft.graph
 
 Calculated insight that includes a list of documents the user has viewed or modified. 
 
-For the signed-in user:
+For the _signed-in user_:
 - This method includes documents that the user has modified; see [example 1](#example-1-return-documents-that-user-has-modified) below. 
-- Using an `$orderby` query parameter on the **lastAccessedDateTime** property returns the most recently viewed documents that the user may or may not have modified; see [example 2](#example-2-return-the-most-recently-viewed-documents-that-user-may-or-may-not-have-modified).
+- Using an `$orderby` query parameter on the **lastAccessedDateTime** property returns the most recently viewed documents that the user may or may not have modified; see [example 2](#example-2-return-the-most-recently-viewed-documents-that-the-signed-in-user-may-or-may-not-have-modified).
 
-For other users, this method includes only documents that the user has modified.
+For _other users_, this method includes only documents that the user has modified.
 
 
 ## Permissions
@@ -68,11 +68,11 @@ This method supports the [OData Query Parameters](https://developer.microsoft.co
 
   See the available container types and types you can filter by in [resourceVisualization](../resources/insights-resourcevisualization.md).
 
-- Use the `$orderBy` query parameter to sort documents last viewed or modified by the signed-in user, based on the **lastAccessedDateTime** property:
+- Use the `$orderBy` query parameter to sort documents last viewed or modified _by the signed-in user_, based on the **lastAccessedDateTime** property:
 
   `https://graph.microsoft.com/beta/me/insights/used?$orderby=LastUsed/LastAccessedDateTime desc`
 
-  >**Note**: Use this query option only for the signed-in user. You cannot use this API to get documents viewed or modified by another user. See [example 2](#example-2-return-the-most-recently-viewed-documents-that-user-may-or-may-not-have-modified) below.
+  >**Note**: Use this query option _only for the signed-in user_. You cannot use this API to get documents viewed or modified by another user. See [example 2](#example-2-return-the-most-recently-viewed-documents-that-the-signed-in-user-may-or-may-not-have-modified) below.
 
 
 ## Request headers
@@ -263,7 +263,7 @@ Here is an example of the response. Note: The response object shown here may be 
 }
 ```
 
-### Example 2: Return the most recently viewed documents that user may or may not have modified 
+### Example 2: Return the most recently viewed documents that the signed-in user may or may not have modified 
 
 #### Request
 
