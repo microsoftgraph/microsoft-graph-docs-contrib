@@ -13,6 +13,15 @@ For a summary of the value of these API changes, as well as recent tools, compon
 
 ## May 2020
 
+### Devices and apps | Corporate management (Intune)
+
+| **Change type** | **Version** | **Description** |
+|:---|:---|:---|
+|Addition|v1.0|Added new enum types:<br/>[managedBrowserType](/graph/api/resources/intune-mam-managedbrowsertype?view=graph-rest-1.0)<br/>|
+|Addition|v1.0|Added the **customBrowserPackageId** and **customBrowserDisplayName** properties to the [androidManagedAppProtection](/graph/api/resources/intune-mam-androidmanagedappprotection?view=graph-rest-1.0) entity|
+|Addition|v1.0|Added the **customBrowserProtocol** property to the [iosManagedAppProtection](/graph/api/resources/intune-mam-iosmanagedappprotection?view=graph-rest-1.0) entity|
+|Addition|v1.0|Added the **managedBrowser** property to the [managedAppProtection](/graph/api/resources/intune-mam-managedappprotection?view=graph-rest-1.0) entity|
+
 ### Identity and access (Azure AD)
 
 | **Change type** | **Version**   | **Description**                          |
