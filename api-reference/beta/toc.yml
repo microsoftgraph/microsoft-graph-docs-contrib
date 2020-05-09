@@ -354,9 +354,10 @@
             href: api/outlookuser-list-mastercategories.md
         - name: Translate IDs
           href: api/user-translateexchangeids.md
-      - name: Outlook tasks
-        href: resources/outlooktask.md
+      - name: Outlook tasks (preview)
         items:
+        - name: Outlook tasks
+          href: resources/outlooktask.md
         - name: Create tasks
           href: api/outlookuser-post-tasks.md
         - name: List tasks
@@ -387,9 +388,10 @@
           href: api/planneruser-list-tasks.md
         - name: Update settings
           href: api/planneruser-update.md
-      - name: Profile
-        href: resources/profile.md
+      - name: Profile (preview)
         items:
+        - name: Profile 
+          href: resources/profile.md
         - name: Get user's profile
           href: api/profile-get.md
         - name: Delete user's profile
@@ -10153,8 +10155,9 @@
         - name: List people
           href: api/user-list-people.md
       - name: Profile (preview)
-        href: resources/profile.md
         items:
+        - name: Profile
+          href: resources/profile.md
         - name: Get user's profile
           href: api/profile-get.md
         - name: Delete user's profile
