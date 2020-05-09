@@ -362,8 +362,9 @@
         - name: List tasks
           href: api/outlookuser-list-tasks.md
       - name: People
-        href: resources/person.md
         items:
+        - name: Person
+          href: resources/person.md
         - name: List people
           href: api/user-list-people.md
       - name: Photo
@@ -10090,9 +10091,10 @@
       items:
       - name: Overview
         href: resources/social-overview.md
-      - name: Person
-        href: resources/person.md
+      - name: People
         items:
+        - name: Person
+          href: resources/person.md
         - name: List people
           href: api/user-list-people.md
       - name: Profile (preview)
