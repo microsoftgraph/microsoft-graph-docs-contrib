@@ -93,7 +93,7 @@ If successful, this method returns a `200 OK` response code and a collection of 
 
 The following example shows how to get all the [room](../resources/room.md) objects in the tenant.
 
-# [HTTP](#tab/http)
+
 <!-- {
   "blockType": "request",
   "name": "get_all_rooms"
