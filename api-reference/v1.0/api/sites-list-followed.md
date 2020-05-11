@@ -31,6 +31,11 @@ This method is accessible only through OneDrive for Business.
 ```http
 POST /me/followedSites
 ```
+Get a list of the sites followed by a target user, based on its ID.
+
+```http
+POST /users/{user-id}/followedSites
+```
 
 ## Optional query parameters
 This method supports the [OData query parameters](/graph/query_parameters) to help customize the response.
