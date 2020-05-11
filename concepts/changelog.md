@@ -13,6 +13,27 @@ For a summary of the value of these API changes, as well as recent tools, compon
 
 ## May 2020
 
+### Identity and access (Azure AD)
+
+| **Change type** | **Version**   | **Description** |
+|:---|:---|:---|
+| Addition | beta | Added Application.Read.All and Application.ReadWrite.All permissions to [application-list](/graph/api/application-list?view=graph-rest-beta)<br>Added support for `$count`, `$search`, and `$filter` query parameters to: <br><ul><li>[application-list](/graph/api/application-list?view=graph-rest-beta)</li><li>[device-list-memberof](/graph/api/device-list-memberof?view=graph-rest-beta)</li><li>[device-list-transitivememberof](/graph/api/device-list-transitivememberof?view=graph-rest-beta)</li><li>[device-list](/graph/api/device-list?view=graph-rest-beta)</li><li>[group-list-memberof](/graph/api/group-list-memberof?view=graph-rest-beta)</li><li>[group-list-members](/graph/api/group-list-members?view=graph-rest-beta)</li><li>[group-list-transitivememberof](/graph/api/group-list-transitivememberof?view=graph-rest-beta)</li><li>[group-list-transitivemembers](/graph/api/group-list-transitivemembers?view=graph-rest-beta)</li><li>[group-list](/graph/api/group-list?view=graph-rest-beta)</li><li>[orgcontact-list](/graph/api/orgcontact-list?view=graph-rest-beta)</li><li>[serviceprincipal-list-memberof](/graph/api/serviceprincipal-list-memberof?view=graph-rest-beta)</li><li>[serviceprincipal-list-transitivememberof](/graph/api/serviceprincipal-list-transitivememberof?view=graph-rest-beta)</li><li>[serviceprincipal-list](/graph/api/serviceprincipal-list?view=graph-rest-beta)</li><li>[user-list-memberof](/graph/api/user-list-memberof?view=graph-rest-beta)</li><li>[user-list-transitivememberof](/graph/api/user-list-transitivememberof?view=graph-rest-beta)</li><li>[user-list](/graph/api/user-list?view=graph-rest-beta)</li></ul><br>Added examples for using OData cast to: <ul><li>[group-list-memberof](/graph/api/group-list-memberof?view=graph-rest-beta)</li><li>[group-list-members](/graph/api/group-list-members?view=graph-rest-beta)</li><li>[group-list-transitivememberof](/graph/api/group-list-transitivememberof?view=graph-rest-beta)</li><li>[serviceprincipal-list-memberof](/graph/api/serviceprincipal-list-memberof?view=graph-rest-beta)</li><li>[serviceprincipal-list-transitivememberof](/graph/api/serviceprincipal-list-transitivememberof?view=graph-rest-beta)</li><li>[user-list-memberof](/graph/api/user-list-memberof?view=graph-rest-beta)</li><li>[user-list-transitivememberof](/graph/api/user-list-transitivememberof?view=graph-rest-beta)</li></ul> |
+
+## April 2020
+
+### Calendar
+
+| **Change type** | **Version**   | **Description**                          |
+| :-------------- | :------------ | :--------------------------------------- |
+|Addition | v1.0 | Added new entity [calendarPermission](/graph/api/resources/calendarpermission?view=graph-rest-1.0). |
+|Addition | v1.0 | Added [get](/graph/api/calendarpermission-get?view=graph-rest-1.0), [update](/graph/api/calendarpermission-update?view=graph-rest-1.0) and [delete](/graph/api/calendarpermission-delete?view=graph-rest-1.0) APIs to manage [calendarPermission](/graph/api/resources/calendarpermission?view=graph-rest-1.0) resources on [calendar](/graph/api/resources/calendar?view=graph-rest-1.0). |
+|Addition | v1.0 | Added new complex type [onlineMeetingInfo](/graph/api/resources/onlinemeetinginfo?view=graph-rest-1.0). |
+| Addition | v1.0 | Added the **isOnlineMeeting**, **onlineMeetingProvider** and **onlineMeeting** properties to the [event](/graph/api/resources/event?view=graph-rest-1.0) entity. **isOnlineMeeting** and **onlineMeetingProvider** are optional parameters to the [create](/graph/api/user-post-events?view=graph-rest-1.0) and [update](/graph/api/event-update?view=graph-rest-1.0) methods of **event**. |
+| Addition | v1.0 | Added the **defaultOnlineMeetingProviders** and **allowedOnlineMeetingProviders** properties to the [calendar](/graph/api/resources/calendar?view=graph-rest-1.0) entity. |
+| Addition | v1.0 | Added the **isTallyingResponses** property to the [calendar](/graph/api/resources/calendar?view=graph-rest-1.0) entity. |
+| Addition | v1.0 | Added the **isRemovable** property to the [calendar](/graph/api/resources/calendar?view=graph-rest-1.0) entity. |
+| Addition | v1.0 | Added the **delegateMeetingMessageDeliveryOptions** property to the [mailboxSettings](/graph/api/resources/mailboxSettings?view=graph-rest-1.0) entity. |
+
 ### Devices and apps (Microsoft Intune)
 
 | **Change type** | **Version** | **Description** |
@@ -46,26 +67,12 @@ For a summary of the value of these API changes, as well as recent tools, compon
 |Addition|beta|Added the **azureAdJoinUsingAzureVmExtension** member to the [deviceEnrollmentType](/graph/api/resources/intune-shared-deviceenrollmenttype?view=graph-rest-beta) enum type|
 |Addition|beta|Added the **windows10XProfile** member to the [policyPlatformType](/graph/api/resources/intune-shared-policyplatformtype?view=graph-rest-beta) enum type|
 
-## April 2020
-
-### Calendar
-
-| **Change type** | **Version**   | **Description**                          |
-| :-------------- | :------------ | :--------------------------------------- |
-|Addition | v1.0 | Added new entity [calendarPermission](/graph/api/resources/calendarpermission?view=graph-rest-1.0). |
-|Addition | v1.0 | Added [get](/graph/api/calendarpermission-get?view=graph-rest-1.0), [update](/graph/api/calendarpermission-update?view=graph-rest-1.0) and [delete](/graph/api/calendarpermission-delete?view=graph-rest-1.0) APIs to manage [calendarPermission](/graph/api/resources/calendarpermission?view=graph-rest-1.0) resources on [calendar](/graph/api/resources/calendar?view=graph-rest-1.0). |
-|Addition | v1.0 | Added new complex type [onlineMeetingInfo](/graph/api/resources/onlinemeetinginfo?view=graph-rest-1.0). |
-| Addition | v1.0 | Added the **isOnlineMeeting**, **onlineMeetingProvider** and **onlineMeeting** properties to the [event](/graph/api/resources/event?view=graph-rest-1.0) entity. **isOnlineMeeting** and **onlineMeetingProvider** are optional parameters to the [create](/graph/api/user-post-events?view=graph-rest-1.0) and [update](/graph/api/event-update?view=graph-rest-1.0) methods of **event**. |
-| Addition | v1.0 | Added the **defaultOnlineMeetingProviders** and **allowedOnlineMeetingProviders** properties to the [calendar](/graph/api/resources/calendar?view=graph-rest-1.0) entity. |
-| Addition | v1.0 | Added the **isTallyingResponses** property to the [calendar](/graph/api/resources/calendar?view=graph-rest-1.0) entity. |
-| Addition | v1.0 | Added the **isRemovable** property to the [calendar](/graph/api/resources/calendar?view=graph-rest-1.0) entity. |
-| Addition | v1.0 | Added the **delegateMeetingMessageDeliveryOptions** property to the [mailboxSettings](/graph/api/resources/mailboxSettings?view=graph-rest-1.0) entity. |
-
 ### Files (OneDrive)
 
 | **Change type** | **Version** | **Description**                          |
 | :-------------- | :---------- | :--------------------------------------- |
 | Addition        | v1.0        | Added the [check in](/graph/api/driveitem-checkin?view=graph-rest-v1.0) and [check out](/graph/api/driveitem-checkin?view=graph-rest-v1.0) actions on the [driveItem](/graph/api/resources/driveitem?view=graph-rest-v1.0) resource. |
+
 
 ### Identity and access (Azure AD)
 
