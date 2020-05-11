@@ -7,7 +7,7 @@ author: nmetulev
 
 # Person component in the Microsoft Graph Toolkit
 
-The person component is used to display a person or contact by using their photo, name, and/or email address.
+The person component is used to display a person or contact by using their photo, name, email address, or any other person details.
 
 The person component also uses the [mgt-person-card](./person-card.md) to display a flyout card with additional information about the user. For details, see the [Person Card](#person-card) section.
 
@@ -29,9 +29,9 @@ You can use three properties to set the person details. Use only one of the foll
 
 * Set the `person-presence` attribute or `personPresence` property to add a presence badge to person avatar manually.
 
-* Set the `avatar-size` attribute or `avatarSize` property to `small` or `large` to determine the size of avatar. This helps add the [correct presence badge](https://mgt.dev/?path=/story/components-mgt-person--person-presence-display-all) to avatar. You will need to choose the correct corresponding css custom properties shown below to further customize avatar size. It is by default `small`, but will switch to `large` if both `show-name` and `show-email` attributes are set. We recommend using `small` if your avatar is smaller than 32px by 32px. 
+* Set the `avatar-size` attribute or `avatarSize` property to `small` or `large` to determine the size of avatar. This helps add the [correct presence badge](https://mgt.dev/?path=/story/components-mgt-person--person-presence-display-all) to avatar. You will need to choose the correct corresponding css custom properties shown below to further customize avatar size. By default, the value is set to `auto` which will automatically decide how to render the presence based on the `view` property. We recommend using `small` if your avatar is smaller than 32px by 32px. 
 
-* Set the `person-details` attribute or `personDetails` property to manually set the person details, as shown in the following example.
+* Use the `person-details` attribute or `personDetails` property to manually set the person details, as shown in the following example.
 
 
     ```js
@@ -57,9 +57,12 @@ You can use several properties to customize the component.
 | person-image    | personImage    | Set the image to show for the person. |
 | person-presence | personPresence | Set the presence for the person. |
 | fetch-image     | fetchImage     | Set flag to fetch `personImage` automatically from Microsoft Graph based on the `personDetails` object provided by the user. |
-| show-name       | showName       | Set flag to display person display name - default is `false`. |
-| show-email      | showEmail      | Set flag to display person email - default is `false`.        |
+| view            | view           | Set to control how the person is rendered. Default is `avatar` <br /> `avatar` - show only avatar <br /> `oneline` - show avatar and first line (`displayName` by default) <br /> `twolines` - show avatar and two lines of text (`displayName` and `mail` by default)|
+| line1-property  | line1Property  | Sets the property of the personDetails to use for the first line of text. Default is `displayName`.|
+| line2-property  | line2Property  | Sets the property of the personDetails to use for the second line of text. Default is `mail`.|
 | show-presence   | showPresence   | Set flag to display person presence - default is `false`.|
+| show-name       | showName       | **DEPRECATED - use `view`.**  Set flag to display person display name - default is `false`. |
+| show-email      | showEmail      | **DEPRECATED - use `view`.** Set flag to display person email - default is `false`.        |
 
 ## CSS custom properties
 
@@ -67,18 +70,21 @@ The `mgt-person` component defines the following CSS custom properties.
 
 ```css
 mgt-person {
-  --avatar-size-s: 24px;
-  --avatar-size: 48px; // avatar size when both name and email are shown
-  --avatar-font-size--s: 16px;
-  --avatar-font-size: 32px; // font-size when both name and email are shown
+  --avatar-size: 48px;
   --avatar-border: 0;
+  --avatar-border-radius: 50%;
   --initials-color: white;
   --initials-background-color: magenta;
-  --font-size: 12px;
+  --font-family: 'Segoe UI';
+  --font-size: 14px;
   --font-weight: 500;
   --color: black;
-  --email-font-size: 12px;
-  --email-color: black;
+  --text-transform: none;
+  --line2-font-size: 12px;
+  --line2-font-weight: 400;
+  --line2-color: black;
+  --line2-text-transform: none;
+  --details-spacing: 12px;
 }
 ```
 
@@ -100,8 +106,8 @@ The following example defines a template for the person component.
 ```html
 <mgt-person>
   <template>
-    <div data-if="person.image">
-      <img src="{{person.image}}" />
+    <div data-if="personImage">
+      <img src="{{personImage}}" />
     </div>
     <div data-else>
       {{person.displayName}}
@@ -153,8 +159,6 @@ For more complex scenarios or a truly custom UX, this component exposes several 
 | Method | Description |
 | - | - |
 | renderLoading | Renders the loading state. |
-| renderImage | Renders the image part. |
 | renderNoData | Renders when no image or person data is available. |
+| renderAvatar | Renders the avatar. |
 | renderDetails | Renders the person details part. |
-| renderEmail | Renders the email sub-part of the person details. |
-| renderName | Renders the name sub-part of the person details. |
