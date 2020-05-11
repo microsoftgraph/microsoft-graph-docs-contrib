@@ -63,6 +63,13 @@ For a broader discussion of throttling on the Microsoft Cloud, see [Throttling P
 >
 > Microsoft Graph SDKs already implement handlers that rely on the `Retry-After` header or default to an exponential backoff retry policy.
 
+## Best practices to avoid throttling
+
+Programming patterns like continuously polling a resource to check for updates and regularly scanning resource collections to check for new or deleted resources are more likely to lead to applications being throttled and degrade overall performances. You should instead leverage [change tracking](delta-query-overview.md) and [change notifications](webhooks.md) when available.
+
+>[!NOTE]
+>[Best practices for discovering files and detecting changes at scale](https://docs.microsoft.com/onedrive/developer/rest-api/concepts/scan-guidance?view=odsp-graph-online) describes best practices in details.
+
 ## Service-specific limits
 
 Microsoft Graph allows you to access data in [multiple services](overview-major-services.md), such as Outlook or Azure Active Directory. These services impose their own throttling limits that affect applications that use Microsoft Graph to access them.
@@ -140,6 +147,16 @@ Limits are expressed as requests per second (rps).
 | POST 1:1/group chat message | 2 rps | 20 rps |
 
 A maximum of 4 requests per second per app can be issued on a given team or channel.
+A maximum of 3000 messages per app per day can be sent to a given channel.
 
 See also [Microsoft Teams limits](/graph/api/resources/teams-api-overview#microsoft-teams-limits) 
 and [polling requirements](/graph/api/resources/teams-api-overview#polling-requirements).
+
+### Microsoft Graph change notifications subscription operations
+
+The following limits apply to any request on `/subscriptions`.
+
+| Operation                 | Limit per app per tenant     | Limit per app accross all tenants |
+|---------------------------|------------------------------|-----------------------------------|
+| POST, PUT, DELETE, PATCH  | 1000 requests per 20 seconds | 2000 requests per 20 seconds      |
+| All other HTTP methods    | 5000 requests per 20 seconds | 10000 requests per 20 seconds     |
