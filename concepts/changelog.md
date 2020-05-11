@@ -148,7 +148,6 @@ For a summary of the value of these API changes, as well as recent tools, compon
 | Addition | beta | Added the [authenticationMethod](/graph/api/resources/authenticationmethod?view=graph-rest-beta), [passwordAuthenticationMethod](/graph/api/resources/passwordauthenticationmethod?view=graph-rest-beta), and [phoneAuthenticationMethod](/graph/api/resources/phoneauthenticationmethod?view=graph-rest-beta) resources and associated methods.
 | Addition | beta | Added the **createdByAppId** property to the [group](/graph/api/resources/group?view=graph-rest-beta) entity.|
 
-
 ### Mail
 
 | **Change type** | **Version**   | **Description**                          |
