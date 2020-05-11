@@ -86,9 +86,7 @@ POST https://graph.microsoft.com/beta/groups/{id}/evaluateDynamicMembership
 Content-type: application/json
 
 { 
-  "memberId": [
-    "memberId-value"
-  ]
+  "memberId": "319b41e8-d9e4-42f8-bdc9-741113f48b33"
 }
 ```
 
@@ -108,14 +106,14 @@ HTTP/1.1 200 OK
 Content-type: application/json
 
 {
-  "membershipRule": "membershipRule-value",
+  "membershipRule": "(user.displayName -startsWith \"EndTestUser\")",
   "membershipRuleEvaluationResult": true,
   "membershipRuleEvaluationDetails": {
     "expressionResult": true,
-    "expression": "expression-value",
+    "expression": "user.displayName -startsWith \"EndTestUser\"",
     "propertyToEvaluate": {
-      "propertyName": "propertyName-value",
-      "propertyValue": "propertyValue-value"
+      "propertyName": "displayName",
+      "propertyValue": "EndTestUser001"
     }
   }
 }
@@ -138,12 +136,8 @@ POST https://graph.microsoft.com/beta/groups/evaluateDynamicMembership
 Content-type: application/json
 
 { 
-  "memberId": [
-    "memberIds-value"
-  ],
-  "membershipRule": [
-    "membershipRule-value"
-  ]
+  "memberId": "319b41e8-d9e4-42f8-bdc9-741113f48b33",
+  "membershipRule": "(user.displayName -startsWith \"EndTestUser\")"
 }
 ```
 
@@ -163,14 +157,14 @@ HTTP/1.1 200 OK
 Content-type: application/json
 
 {
-  "membershipRule": "membershipRule-value",
+  "membershipRule": "(user.displayName -startsWith \"EndTestUser\")",
   "membershipRuleEvaluationResult": true,
   "membershipRuleEvaluationDetails": {
     "expressionResult": true,
-    "expression": "expression-value",
+    "expression": "user.displayName -startsWith \"EndTestUser\"",
     "propertyToEvaluate": {
-      "propertyName": "propertyName-value",
-      "propertyValue": "propertyValue-value"
+      "propertyName": "displayName",
+      "propertyValue": "EndTestUser001"
     }
   }
 }
