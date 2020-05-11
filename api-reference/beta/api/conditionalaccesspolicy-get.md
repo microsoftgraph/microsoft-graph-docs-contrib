@@ -2,7 +2,7 @@
 title: "Get conditionalAccessPolicy"
 description: "Retrieve the properties and relationships of a conditionalAccessPolicy object."
 localization_priority: Normal
-author: "dkershaw10"
+author: "videor"
 ms.prod: "microsoft-identity-platform"
 doc_type: apiPageType
 ---
@@ -110,9 +110,8 @@ Content-type: application/json
             "low"
         ],
         "clientAppTypes": [
-            "modern",
-            "easSupported",
-            "easUnsupported",
+            "mobileAppsAndDesktopClients",
+            "exchangeActiveSync",
             "other"
         ],
         "applications": {
