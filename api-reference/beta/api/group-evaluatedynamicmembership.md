@@ -62,8 +62,8 @@ The following table lists the properties that are required when you evaluate gro
 
 | Parameter | Type | Description |
 | :-------- | :--- | :---------- |
-| memberId | String collection | The membership identifier. |
-| membershipRule | String collection | The rule that is used for membership evaluation. |
+| memberId | String collection | memberId is the object Id of the user or device to be evaluated. |
+| membershipRule | String collection | The rule that is used for membership evaluation. For more details about properties and syntax to be used to create dynamic group memebrship rules, please see [Dynamic membership rules](https://docs.microsoft.com/azure/active-directory/users-groups-roles/groups-dynamic-membership).|
 
 ## Response
 
@@ -89,9 +89,7 @@ POST https://graph.microsoft.com/beta/groups/{id}/evaluateDynamicMembership
 Content-type: application/json
 
 { 
-  "memberId": [
-    "memberId-value"
-  ]
+  "memberId": "319b41e8-d9e4-42f8-bdc9-741113f48b33"
 }
 ```
 
@@ -111,14 +109,14 @@ HTTP/1.1 200 OK
 Content-type: application/json
 
 {
-  "membershipRule": "membershipRule-value",
+  "membershipRule": "(user.displayName -startsWith \"EndTestUser\")",
   "membershipRuleEvaluationResult": true,
   "membershipRuleEvaluationDetails": {
     "expressionResult": true,
-    "expression": "expression-value",
+    "expression": "user.displayName -startsWith \"EndTestUser\"",
     "propertyToEvaluate": {
-      "propertyName": "propertyName-value",
-      "propertyValue": "propertyValue-value"
+      "propertyName": "displayName",
+      "propertyValue": "EndTestUser001"
     }
   }
 }
@@ -141,12 +139,8 @@ POST https://graph.microsoft.com/beta/groups/evaluateDynamicMembership
 Content-type: application/json
 
 { 
-  "memberId": [
-    "memberIds-value"
-  ],
-  "membershipRule": [
-    "membershipRule-value"
-  ]
+  "memberId": "319b41e8-d9e4-42f8-bdc9-741113f48b33",
+  "membershipRule": "(user.displayName -startsWith \"EndTestUser\")"
 }
 ```
 
@@ -166,14 +160,14 @@ HTTP/1.1 200 OK
 Content-type: application/json
 
 {
-  "membershipRule": "membershipRule-value",
+  "membershipRule": "(user.displayName -startsWith \"EndTestUser\")",
   "membershipRuleEvaluationResult": true,
   "membershipRuleEvaluationDetails": {
     "expressionResult": true,
-    "expression": "expression-value",
+    "expression": "user.displayName -startsWith \"EndTestUser\"",
     "propertyToEvaluate": {
-      "propertyName": "propertyName-value",
-      "propertyValue": "propertyValue-value"
+      "propertyName": "displayName",
+      "propertyValue": "EndTestUser001"
     }
   }
 }
