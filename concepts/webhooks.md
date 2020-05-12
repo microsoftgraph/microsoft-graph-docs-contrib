@@ -274,6 +274,12 @@ The following code samples are available on GitHub.
 - [Microsoft Graph Webhooks Sample for ASP.NET Core](https://github.com/microsoftgraph/aspnetcore-webhooks-sample)
 - [Microsoft Graph Webhooks Sample for Java Spring](https://github.com/microsoftgraph/java-spring-webhooks-sample)
 
+## Firewall configuration
+
+You optionnally can configure the firewall protecting your notification URL to allow inbound connections only from Microsoft Graph. This allows you to reduce your exposure further to rogue actors sending invalid notifications to your notification URL so they can trigger the custom logic you implemented. For a complete list of IP addresses used by Microsoft Graph to deliver change notifications please refer to [additional endpoints for Office 365](https://docs.microsoft.com/office365/enterprise/additional-office365-ip-addresses-and-urls) under the "Microsoft Graph Change Notifications" entry.
+
+> **Note:** The IP addresses listed used to deliver change notifications can be updated at any time without notice.
+
 ## See also
 
 - [Subscription resource type](/graph/api/resources/subscription?view=graph-rest-1.0)
