@@ -33,7 +33,7 @@ The following example sets the person details.
 let loginControl = document.getElementById('myLoginControl');
 loginControl.userDetails = {
     displayName: 'Nikola Metulev',
-    email: 'nikola@contoso.com',
+    mail: 'nikola@contoso.com',
     personImage: 'url'
 }
 ```

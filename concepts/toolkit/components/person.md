@@ -34,7 +34,7 @@ You can use three properties to set the person details. Use only one of the foll
     let personControl = document.getElementById('myPersonControl');
     personControl.personDetails = {
         displayName: 'Nikola Metulev',
-        email: 'nikola@contoso.com',
+        mail: 'nikola@contoso.com',
         personImage: 'url'
     }
     ```
