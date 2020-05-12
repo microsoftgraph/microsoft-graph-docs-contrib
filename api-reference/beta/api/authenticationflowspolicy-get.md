@@ -72,14 +72,12 @@ GET https://graph.microsoft.com/beta/policies/authenticationFlowsPolicy
 HTTP/1.1 200 OK
 Content-Type: application/json
 {
-  "value": {
-    "@odata.type": "#microsoft.cpim.api.dataModels.authenticationFlowsPolicy",
+    "@odata.context": "https://graph.microsoft.com/beta/$metadata#policies/authenticationFlowsPolicy/$entity",
+    "id": "authenticationFlowsPolicy",
+    "displayName": "Authentication flows policy",
+    "description": "Authentication flows policy allows modification of settings related to authentication flows in AAD tenant, such as self-service sign up configuration.",
     "selfServiceSignUp": {
-      "@odata.type": "microsoft.graph.selfServiceSignUpAuthenticationFlowConfiguration"
-    },
-    "id": "682b0e8a-0e8a-682b-8a0e-2b688a0e2b68",
-    "displayName": "String",
-    "description": "String"
-  }
+        "isEnabled": true
+    }
 }
 ```

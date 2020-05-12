@@ -29,7 +29,7 @@ One of the following permissions is required to call this API. To learn more, in
 }
 -->
 ``` http
-PATCH /policies/authenticationFlowsPolicy
+PATCH https://graph.microsoft.com/beta/policies/authenticationFlowsPolicy
 ```
 
 ## Request headers
@@ -56,7 +56,9 @@ The following table shows the properties that are required when you create the [
 
 If successful, this method returns a `200 OK` response code and an updated [authenticationFlowsPolicy](../resources/authenticationflowspolicy.md) object in the response body.
 
-## Examples
+## Example
+
+No Content - 204 - 19746ms
 
 ### Request
 <!-- {
