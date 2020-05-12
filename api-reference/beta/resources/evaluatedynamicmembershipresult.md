@@ -21,7 +21,7 @@ Represents the result of membership evaluation.
 |:-------- |:---- |:----------- |
 | membershipRule | String | If a group ID is provided, the value is the membership rule for the group. If a group ID is not provided, the value is the membership rule that was provided as a parameter. For more information, see [Dynamic membership rules for groups in Azure Active Directory](https://docs.microsoft.com/azure/active-directory/users-groups-roles/groups-dynamic-membership). |
 | membershipRuleEvaluationDetails | [expressionEvaluationDetails](expressionevaluationdetails.md) | Provides a detailed anaylsis of the membership evaluation result. |
-| membershipRuleEvaluationResult | Boolean | The value is `true` if the identifier is a member of the group, or if the provided membership rule has all of the properties defined; otherwise `false`. |
+| membershipRuleEvaluationResult | Boolean | The value is `true` if the user or device is a member of the group. The value can also be `true` if a membership rule was provided and the user or device passes the rule evaluation; otherwise `false`. |
 
 ## JSON representation
 
