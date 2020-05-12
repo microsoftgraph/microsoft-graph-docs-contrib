@@ -18,9 +18,9 @@ One of the following permissions is required to call this API. To learn more, in
 
 |Permission type|Permissions (from most to least privileged)|
 |:---|:---|
-|Delegated (work or school account)|**TODO: Provide applicable permissions.**|
-|Delegated (personal Microsoft account)|**TODO: Provide applicable permissions.**|
-|Application|**TODO: Provide applicable permissions.**|
+|Delegated (work or school account)|Policy.ReadWrite.AuthenticationFlows|
+|Delegated (personal Microsoft account)|Not Supported|
+|Application|Policy.ReadWrite.AuthenticationFlows|
 
 ## HTTP request
 
@@ -29,7 +29,7 @@ One of the following permissions is required to call this API. To learn more, in
 }
 -->
 ``` http
-PATCH /policyRoot/authenticationFlowsPolicy
+PATCH /policies/authenticationFlowsPolicy
 ```
 
 ## Request headers
@@ -45,10 +45,10 @@ The following table shows the properties that are required when you create the [
 
 |Property|Type|Description|
 |:---|:---|:---|
-|selfServiceSignUp|[selfServiceSignUpAuthenticationFlowConfiguration](../resources/selfservicesignupauthenticationflowconfiguration.md)|**TODO: Add Description**|
-|id|String|**TODO: Add Description**|
-|displayName|String|**TODO: Add Description**|
-|description|String|**TODO: Add Description**|
+|selfServiceSignUp|[selfServiceSignUpAuthenticationFlowConfiguration](../resources/selfservicesignupauthenticationflowconfiguration.md)|Self-service sign-up configuration|
+|id|String|Inherited property. The ID of the authentication flows policy|
+|displayName|String|Inherited property.The human-readable name of the policy, "Authentication flows policy"|
+|description|String|Inherited property. A description of the policy|
 
 
 
@@ -65,7 +65,7 @@ If successful, this method returns a `200 OK` response code and an updated [auth
 }
 -->
 ``` http
-PATCH https://graph.microsoft.com/beta/policyRoot/authenticationFlowsPolicy
+PATCH https://graph.microsoft.com/beta/policies/authenticationFlowsPolicy
 Content-Type: application/json
 Content-length: 242
 
