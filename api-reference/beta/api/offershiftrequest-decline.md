@@ -9,6 +9,8 @@ doc_type: "apiPageType"
 
 # offerShiftRequest: decline
 
+Namespace: microsoft.graph
+
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 Decline an [offershiftrequest](../resources/offershiftrequest.md) object.
@@ -30,7 +32,7 @@ One of the following permissions is required to call this API. To learn more, in
 <!-- { "blockType": "ignored" } -->
 
 ```http
-POST /teams/schedule/offerShiftRequests/decline
+POST /teams/{teamId}/schedule/offerShiftRequests/{offerShiftRequestId}/decline
 ```
 
 ## Request headers
@@ -65,7 +67,7 @@ The following example shows a request.
 }-->
 
 ```http
-POST https://graph.microsoft.com/beta/teams/schedule/offerShiftRequests/decline
+POST https://graph.microsoft.com/beta/teams/{teamId}/schedule/offerShiftRequests/{offerShiftRequestId}/decline
 Content-type: application/json
 
 {

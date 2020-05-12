@@ -1,13 +1,15 @@
 ---
 title: "Get managedDevice"
 description: "Read properties and relationships of the managedDevice object."
-author: "rolyon"
+author: "dougeby"
 localization_priority: Normal
 ms.prod: "Intune"
 doc_type: apiPageType
 ---
 
 # Get managedDevice
+
+Namespace: microsoft.graph
 
 > **Important:** Microsoft Graph APIs under the /beta version are subject to change; production use is not supported.
 
@@ -65,7 +67,7 @@ Here is an example of the response. Note: The response object shown here may be 
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 8050
+Content-Length: 8249
 
 {
   "value": {
@@ -105,7 +107,8 @@ Content-Length: 8050
       "deviceGuardVirtualizationBasedSecurityHardwareRequirementState": "secureBootRequired",
       "deviceGuardVirtualizationBasedSecurityState": "rebootRequired",
       "deviceGuardLocalSystemAuthorityCredentialGuardState": "rebootRequired",
-      "osBuildNumber": "Os Build Number value"
+      "osBuildNumber": "Os Build Number value",
+      "operatingSystemProductType": 10
     },
     "ownerType": "company",
     "managedDeviceOwnerType": "company",
@@ -238,16 +241,18 @@ Content-Length: 8050
     },
     "configurationManagerClientInformation": {
       "@odata.type": "microsoft.graph.configurationManagerClientInformation",
-      "clientIdentifier": "Client Identifier value"
+      "clientIdentifier": "Client Identifier value",
+      "isBlocked": true
     },
     "ethernetMacAddress": "Ethernet Mac Address value",
     "physicalMemoryInBytes": 5,
-    "processorArchitecture": "x86"
+    "processorArchitecture": "x86",
+    "specificationVersion": "Specification Version value",
+    "joinType": "azureADJoined",
+    "skuFamily": "Sku Family value"
   }
 }
 ```
-
-
 
 
 

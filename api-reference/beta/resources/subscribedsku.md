@@ -1,13 +1,15 @@
 ---
 title: "subscribedSku resource type"
-description: " create, update, and delete are not supported. Query filter expressions are not supported. Inherits from directoryObject."
+description: "Represents the subscribed SKU type."
 localization_priority: Normal
-author: "davidmu1"
+author: "SumitParikh"
 ms.prod: "microsoft-identity-platform"
 doc_type: resourcePageType
 ---
 
 # subscribedSku resource type
+
+Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 

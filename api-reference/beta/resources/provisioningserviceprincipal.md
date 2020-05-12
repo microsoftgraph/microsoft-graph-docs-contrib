@@ -2,12 +2,14 @@
 title: "provisioningServicePrincipal resource type"
 description: "Represents the service principal used for provisioning."
 localization_priority: Normal
-author: "davidmu1"
+author: "ArvindHarinder1"
 ms.prod: "microsoft-identity-platform"
 doc_type: "resourcePageType"
 ---
 
 # provisioningServicePrincipal resource type
+
+Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 

@@ -1,13 +1,15 @@
 ---
 title: "Update managedDeviceOverview"
 description: "Update the properties of a managedDeviceOverview object."
-author: "rolyon"
+author: "dougeby"
 localization_priority: Normal
 ms.prod: "Intune"
 doc_type: apiPageType
 ---
 
 # Update managedDeviceOverview
+
+Namespace: microsoft.graph
 
 > **Important:** Microsoft Graph APIs under the /beta version are subject to change; production use is not supported.
 
@@ -155,8 +157,6 @@ Content-Length: 1227
   "lastModifiedDateTime": "2017-01-01T00:00:35.1329464-08:00"
 }
 ```
-
-
 
 
 

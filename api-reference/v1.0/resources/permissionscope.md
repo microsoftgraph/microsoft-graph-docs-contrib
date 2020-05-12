@@ -4,10 +4,12 @@ description: "Represents an OAuth 2.0 delegated permission scope."
 localization_priority: Normal
 doc_type: resourcePageType
 ms.prod: "microsoft-identity-platform"
-author: "davidmu1"
+author: "psignoret"
 ---
 
 # permissionScope resource type
+
+Namespace: microsoft.graph
 
 Represents an OAuth 2.0 delegated permission scope. The specified OAuth 2.0 delegated permission scopes may be requested by client applications (through the **requiredResourceAccess** collection on the [application](application.md) object) when calling a resource application. The **oauth2Permissions** property <!-- of the [servicePrincipal](serviceprincipal.md) entity and --> of the [Application](application.md) entity is a collection of **permissionScope**.
 
