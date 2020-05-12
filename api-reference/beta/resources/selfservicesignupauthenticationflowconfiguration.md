@@ -17,7 +17,7 @@ Represents the configurations related to self-service sign-up.
 ## Properties
 |Property|Type|Description|Key|Required|ReadOnly|
 |:-------|:---|:----------|:--|:-------|:-------|
-|`isEnabled`|`Edm.boolean`|Is self service sign up flow enabled or disabled. The default value is false. |No|Yes|No|
+|isEnabled|Boolean|Is self service sign up flow enabled or disabled. The default value is false. |No|Yes|No|
 
 ## Relationships
 None.

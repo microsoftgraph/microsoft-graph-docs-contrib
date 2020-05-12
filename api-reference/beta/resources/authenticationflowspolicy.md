@@ -19,19 +19,12 @@ Currently, this API is to enable/disable the self-service sign up experience at 
 The policy/api is named 'authentication flows' because the settings here will refer to the flow of user when they use identity. For example sign up is a flow, sign in is a flow, profile update, progressive profiling etc are the various authentication flows a user can go through.
 
 ## Properties
-|Property|Type|Description|
-|:---|:---|:---|
-|description|String|**TODO: Add Description**|
-|displayName|String|**TODO: Add Description**|
-|id|String|**TODO: Add Description**|
-|selfServiceSignUp|[selfServiceSignUpAuthenticationFlowConfiguration](../resources/selfservicesignupauthenticationflowconfiguration.md)|**TODO: Add Description**|
-
 |Property|Type|Description|Key|Required|ReadOnly|
 |:-------|:---|:----------|:--|:-------|:-------|
-|`id`|`Edm.string`| Inherited property. The ID of the authentication flows policy|Yes|No|Yes|
-|`displayName`|`Edm.string`| Inherited property.The human-readable name of the policy, "Authentication flows policy"|No|No|Yes|
-|`description`|`Edm.string`|Inherited property. A description of the policy|No|No|Yes|
-|`selfServiceSignUp`|`microsoft.graph.selfServiceSignUpAuthenticationFlowConfiguration`|Self service sign up configuration |No|No|No|
+|id|String| Inherited property. The ID of the authentication flows policy|Yes|No|Yes|
+|displayName|String| Inherited property.The human-readable name of the policy, "Authentication flows policy"|No|No|Yes|
+|description|String|Inherited property. A description of the policy|No|No|Yes|
+|selfServiceSignUp|[selfServiceSignUpAuthenticationFlowConfiguration](../resources/selfservicesignupauthenticationflowconfiguration.md)|Self-service sign-up configuration |No|No|No|
 
 ## Relationships
 None.
