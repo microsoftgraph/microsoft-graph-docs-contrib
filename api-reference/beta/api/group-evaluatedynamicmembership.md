@@ -59,8 +59,8 @@ The following table lists the properties that are required when you evaluate gro
 
 | Parameter | Type | Description |
 | :-------- | :--- | :---------- |
-| memberId | String collection | The membership identifier. |
-| membershipRule | String collection | The rule that is used for membership evaluation. |
+| memberId | String collection | memberId is the object Id of the user or device to be evaluated. |
+| membershipRule | String collection | The rule that is used for membership evaluation. For more details about properties and syntax to be used to create dynamic group memebrship rules, please see [Dynamic membership rules](https://docs.microsoft.com/azure/active-directory/users-groups-roles/groups-dynamic-membership).|
 
 ## Response
 
