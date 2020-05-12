@@ -13,6 +13,21 @@ For a summary of the value of these API changes, as well as recent tools, compon
 
 ## May 2020
 
+
+### Devices and apps | Cloud printing
+
+| **Change type** | **Version**   | **Description**                          |
+|:---|:---|:---|
+| Change | beta | Changed the type of the **shares** property to **printerShare collection** on the [printer](/graph/api/resources/printer?view=graph-rest-beta) entity. |
+| Change | beta | Deprecated the **name** property on the [printerShare](/graph/api/resources/printerShare?view=graph-rest-beta) entity. |
+| Change | beta | Deprecated the **name** and **acceptingJobs** properties on the [printer](/graph/api/resources/printer?view=graph-rest-beta) entity. |
+| Change | beta | Deprecated the **printerShares** property on the [print](/graph/api/resources/print?view=graph-rest-beta) entity.<br/> Soon, URL paths such as "/print/printerShares/\*" will stop working. Use "/print/shares/\*" instead. |
+| Change | beta | Deprecated the **registeredBy** property on the [printer](/graph/api/resources/printerShare?view=graph-rest-beta) entity. |
+| Addition | beta | Added the **shares** property on the [print](/graph/api/resources/print?view=graph-rest-beta) entity. |
+| Addition | beta | Added **displayName** and **isAcceptingJobs** properties to the [printer](/graph/api/resources/printer?view=graph-rest-beta) entity. |
+| Addition | beta | Added properties to the [printerShare](/graph/api/resources/printerShare?view=graph-rest-beta) entity: <br/> <ul><li>**manufacturer**</li><li>**model**</li><li>**isAcceptingJobs**</li><li>**defaults**</li><li>**capabilities**</li><li>**location**</li><li>**status**</li><li>**jobs**</li></ul> |
+
+
 ### Devices and apps | Corporate management (Intune)
 
 | **Change type** | **Version**   | **Description** |
