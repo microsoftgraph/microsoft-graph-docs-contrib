@@ -95,7 +95,7 @@ HTTP/1.1 204 No Content
 ```
 
 ### Example 2: Add multiple members to a group in a single request
-This example shows how to add multiple members to a group with odata bind support in a PATCH operation. Please note up to 20 members can be added in one single request and POST operation is not supported.
+This example shows how to add multiple members to a group with OData bind support in a PATCH operation. Note that up to 20 members can be added in a single request. The POST operation is not supported.
 #### Request
 The following is an example of the request.
 
