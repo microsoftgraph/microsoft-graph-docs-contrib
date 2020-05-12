@@ -406,7 +406,7 @@ to return specific properties.
   "name": "get_event_seriesMaster_expansion"
 }-->
 ```msgraph-interactive
-GET https://graph.microsoft.com/beta/me/events/AAMkADAGAADDdm4NAAA=/?$select=subject,start,end,occurrenceId,exceptionalOccurrences,cancelledOccurrences
+GET https://graph.microsoft.com/beta/me/events/AAMkADAGAADDdm4NAAA=/?$select=subject,start,end,occurrenceId,exceptionOccurrences,cancelledOccurrences
 ```
 ##### Response 4
 Here is an example of the response. The $select applies to series master event and all events in the exception occurrences. In case of cancelled occurrences, since the occurrence no longer exist, occurrenceId is returned in response
@@ -423,7 +423,7 @@ Content-type: application/json
 Content-length: 1992
 
 {
-  "@odata.context":"https://graph.microsoft.com/beta/$metadata#users('d1a2fae9-db66-4cc9-8133-2184c77af1b8')/events(subject,start,end,occurrenceId,exceptionalOccurrences,cancelledOccurrences)/$entity",
+  "@odata.context":"https://graph.microsoft.com/beta/$metadata#users('d1a2fae9-db66-4cc9-8133-2184c77af1b8')/events(subject,start,end,occurrenceId,exceptionOccurrences,cancelledOccurrences)/$entity",
   "@odata.etag":"W/\"y53lbKh6jkaxHzFwGhgyxgAAw5zhug==\"",
   "id":"AAMkADAGAADDdm4NAAA=",
   "subject": "Daily stand-up",
@@ -441,7 +441,7 @@ Content-length: 1992
         "dateTime": "2020-04-23T12:00:00.0000000",
         "timeZone": "UTC"
     },
-  "exceptionalOccurrences": [
+  "exceptionOccurrences": [
         {
             "id": "AAMkADM0ZGRhMjdjLTA==",
             "Subject": "SM update 24",
