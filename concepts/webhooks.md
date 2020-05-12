@@ -276,9 +276,9 @@ The following code samples are available on GitHub.
 
 ## Firewall configuration
 
-You optionnally can configure the firewall protecting your notification URL to allow inbound connections only from Microsoft Graph. This allows you to reduce your exposure further to rogue actors sending invalid notifications to your notification URL so they can trigger the custom logic you implemented. For a complete list of IP addresses used by Microsoft Graph to deliver change notifications please refer to [additional endpoints for Office 365](https://docs.microsoft.com/office365/enterprise/additional-office365-ip-addresses-and-urls) under the "Microsoft Graph Change Notifications" entry.
+You can optionally configure the firewall that protects your notification URL to allow inbound connections only from Microsoft Graph. This allows you to reduce further exposure to invalid notifications that are sent to your notification URL. These invalid notifications can be trying to trigger the custom logic that you implemented. For a complete list of IP addresses used by Microsoft Graph to deliver change notifications, see [additional endpoints for Office 365](https://docs.microsoft.com/office365/enterprise/additional-office365-ip-addresses-and-urls) under "Microsoft Graph Change Notifications".
 
-> **Note:** The IP addresses listed used to deliver change notifications can be updated at any time without notice.
+> **Note:** The listed IP addresses that are used to deliver change notifications can be updated at any time without notice.
 
 ## See also
 
