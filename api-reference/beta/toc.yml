@@ -8948,6 +8948,17 @@
           items:
           - name: List provisioning
             href: api/provisioningobjectsummary-list.md
+      - name: Authentication flows policy
+        items:
+        - name: Authentication flows policy
+          href: resources/authenticationflowspolicy.md
+          items:
+          - name: Get authentication flows policy
+            href: api/authenticationflowspolicy-get.md
+          - name: Update authentication flows policy
+            href: api/authenticationflowspolicy-update.md
+        - name: Self-service sign-up authentication flow configuration
+          href: resources/selfservicesignupauthenticationflowconfiguration.md
       - name: Authentication methods
         items: 
         - name: Overview
