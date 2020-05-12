@@ -1,17 +1,17 @@
 ---
-title: "Update organizationalbrandingproperties"
-description: "Update the properties of the organizationalbrandingproperties object."
+title: "Update organizationalBrandingProperties"
+description: "Update the properties of an organizationalBrandingProperties object."
 localization_priority: Normal
 author: "kexia"
 ms.prod: ""
 doc_type: "apiPageType"
 ---
 
-# Update organizationalbrandingproperties
+# Update organizationalBrandingProperties
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Update the properties of the organizationalbrandingproperties object.
+Update the properties of an [organizationalBrandingProperties](../resources/organizationalbrandingproperties.md) object.
 
 ## Permissions
 
@@ -36,7 +36,7 @@ PUT /organization/{id}/branding/{property name}
 
 | Name       | Description|
 |:-----------|:-----------|
-| Authorization | Bearer {token} |
+| Authorization | Bearer {token}. Required. |
 | Content-Type  | application/json. Required.  |
 
 ## Request body
@@ -52,7 +52,7 @@ In the request body, supply the values for relevant fields that should be update
 |squareLogo|Stream||
 |usernameHintText|String||
 
-The id property is ignored when passed in.
+The **id** property is ignored when passed in.
 
 ## Response
 
