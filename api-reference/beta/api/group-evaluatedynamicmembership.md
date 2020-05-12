@@ -1,7 +1,7 @@
 ---
 title: "group: evaluateDynamicMembership"
-description: "Evaluate if a user or device is a member of a dynamic group."
-author: "davidmu1"
+description: "Evaluate if a user or device is or would be a member of a dynamic group."
+author: "yyuank"
 localization_priority: Normal
 ms.prod: "groups"
 doc_type: apiPageType
@@ -9,11 +9,11 @@ doc_type: apiPageType
 
 # group: evaluateDynamicMembership
 
-
+Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Evaluate whether a user or device would be a member of a dynamic group. The membership rule is returned along with other details that were used to evaluate the user or device. You can complete this operation in the following ways: 
+Evaluate whether a user or device would be a member of a dynamic group. The membership rule is returned along with other details that were used in the evaluation. You can complete this operation in the following ways: 
 
 - Evaluate whether a user or device would be a member of the specified group.  
 - Evaluate whether a user or device would be a member of the specified group based on member ID and membership rule.
@@ -63,7 +63,7 @@ The following table lists the properties that are required when you evaluate gro
 | Parameter | Type | Description |
 | :-------- | :--- | :---------- |
 | memberId | String collection | memberId is the object Id of the user or device to be evaluated. |
-| membershipRule | String collection | The rule that is used for membership evaluation. For more details about properties and syntax to be used to create dynamic group memebrship rules, please see [Dynamic membership rules](https://docs.microsoft.com/azure/active-directory/users-groups-roles/groups-dynamic-membership).|
+| membershipRule | String collection | The rule that is used for membership evaluation. For more information, see [Dynamic membership rules for groups in Azure Active Directory](https://docs.microsoft.com/azure/active-directory/users-groups-roles/groups-dynamic-membership).|
 
 ## Response
 
