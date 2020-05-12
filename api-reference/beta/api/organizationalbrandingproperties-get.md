@@ -177,10 +177,11 @@ Content-Language:fr
 }
 ```
 
-### Use case: Get BannerLogo from the French localization
-Returns BannerLogo from the fr localization if it exists. If the localization does not exist, returns the default BannerLogo.
+### Example 4: Get the bannerLogo from the French localization
 
-### Request
+The following example returns the bannerLogo from the fr localization if it exists. If the localization does not exist, this request returns the default bannerLogo.
+
+#### Request
 
 The following is an example of the request.
 <!-- {
@@ -193,11 +194,9 @@ GET https://graph.microsoft.com/v1.0/organization/d69179bf-f4a4-41a9-a9de-249c0f
 Accept-Language: fr
 ```
 
-### Response
+#### Response
 
 The following is an example of the response.
-
-> **Note:** The response object shown here might be shortened for readability. All the properties will be returned from an actual call.
 
 <!-- {
   "blockType": "response",
@@ -210,8 +209,9 @@ HTTP/1.1 200
 <Image>
 ```
 
-### Use case: Get BannerLogo but no BannerLogo configured
-Requesting a property that exists neither on the default branding nor  the language specified in the Accept-Language header returns 204 No Content.
+### Example 5: Get bannerLogo when no bannerLogo is configured
+
+This example shows a request for a property that does not exist on the default branding or the language specified in the Accept-Language header.
 
 ### Request
 
@@ -229,8 +229,6 @@ Accept-Language: de
 ### Response
 
 The following is an example of the response.
-
-> **Note:** The response object shown here might be shortened for readability. All the properties will be returned from an actual call.
 
 <!-- {
   "blockType": "response",
