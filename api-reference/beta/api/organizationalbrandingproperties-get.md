@@ -1,6 +1,6 @@
 ---
 title: "Get organizationalBrandingProperties"
-description: "Retrieve the organizationalbrandingproperties object."
+description: "Retrieve the properties and relationships of an organizationalBrandingProperties object."
 localization_priority: Normal
 author: "kexia"
 ms.prod: ""
@@ -11,7 +11,7 @@ doc_type: "apiPageType"
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Retrieve the properties of the organizationalbrandingproperties object.
+Retrieve the properties and relationships of an [organizationalBrandingProperties](../resources/organizationalbrandingproperties.md) object.
 
 ## Permissions
 
@@ -39,8 +39,7 @@ This method supports some of the OData query parameters to help customize the re
 
 | Name      |Description|
 |:----------|:----------|
-| Authorization | Bearer {token} |
-| Content-Type  | application/json. Required.  |
+| Authorization | Bearer {token}. Required. |
 
 ## Request body
 
@@ -51,8 +50,10 @@ Do not supply a request body for this method.
 If successful, this method returns a `200 OK` response code and the requested [organizationalBrandingProperties](../resources/organizationalbrandingproperties.md) object in the response body.
 
 ## Examples
-### Use case: Get default branding
-### Request
+
+### Example 1: Get the default branding
+
+#### Request
 
 The following is an example of the request.
 <!-- {
@@ -64,7 +65,7 @@ The following is an example of the request.
 GET https://graph.microsoft.com/v1.0/organization/d69179bf-f4a4-41a9-a9de-249c0f2efb1d/branding
 ```
 
-### Response
+#### Response
 
 The following is an example of the response.
 
@@ -97,10 +98,11 @@ Content-type: application/json
 }
 ```
 
-Requests for /branding always return the mediaContentType, mediaReadLink, and mediaEditLink. If a localization has been applied, the mediaEditLink is the mediaEditLink for the localization (which is always non-null), and the mediaReadLink and mediaContentType are the mediaReadLink and mediaContentType of the localization if the mediaReadLink of the localization is non-null, otherwise the default mediaReadLink and mediaContentType.
+Requests for /branding always return the **mediaContentType**, **mediaReadLink**, and **mediaEditLink** properties. If localization has been applied, the **mediaEditLink** is the **mediaEditLink** for the localization (which is always non-null), and the **mediaReadLink** and **mediaContentType** are the **mediaReadLink** and **mediaContentType** of the localization if the **mediaReadLink** of the localization is non-null; otherwise, the default **mediaReadLink** and **mediaContentType**.
 
-### Use case: Get organizational branding but no branding configured
-### Request
+### Example 2: Get organizational branding but no branding configured
+
+#### Request
 
 The following is an example of the request.
 <!-- {
@@ -112,11 +114,9 @@ The following is an example of the request.
 GET https://graph.microsoft.com/v1.0/organization/d69179bf-f4a4-41a9-a9de-249c0f2efb1d/branding
 ```
 
-### Response
+#### Response
 
 The following is an example of the response.
-
-> **Note:** The response object shown here might be shortened for readability. All the properties will be returned from an actual call.
 
 <!-- {
   "blockType": "response",
@@ -128,9 +128,10 @@ The following is an example of the response.
 HTTP/1.1 404 NOT FOUND
 ```
 
-### Use case: Get organizational branding for the French localization
-The Accept-Langauge header is used to apply a particular localization to the branding. Properties that are null in the specified localization are returned from the default branding. If Accept-Language Header is specified in the request, then the response will include the Content-Language header, unless it is und.
-### Request
+### Example 3: Get organizational branding for the French localization
+The Accept-Langauge header is used to apply a particular localization to the branding. Properties that are null in the specified localization are returned from the default branding. If the Accept-Language header is specified in the request, the response will include the Content-Language header, unless it is `und`.
+
+#### Request
 
 The following is an example of the request.
 <!-- {
@@ -143,7 +144,7 @@ GET https://graph.microsoft.com/v1.0/organization/d69179bf-f4a4-41a9-a9de-249c0f
 Accept-Language:fr
 ```
 
-### Response
+#### Response
 
 The following is an example of the response.
 
@@ -158,6 +159,7 @@ The following is an example of the response.
 ```http
 HTTP/1.1 200 OK
 Content-Language:fr
+
 {
     "backgroundColor":"#00000F",
     "backgroundImage@odata.mediaContentType":"image/*",
