@@ -11,8 +11,6 @@ doc_type: "resourcePageType"
 
 Namespace: microsoft.graph
 
-[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
-
 Represents a room in a tenant. 
 
 In Exchange Online, each room is associated with a room mailbox. Derived from [place](place.md).
