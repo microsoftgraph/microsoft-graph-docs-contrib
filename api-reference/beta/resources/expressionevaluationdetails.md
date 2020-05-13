@@ -1,6 +1,6 @@
 ---
 title: "expressionEvaluationDetails resource type"
-description: "PROVIDE DESCRIPTION HERE"
+description: "Represents the expression details, result, and property details."
 localization_priority: Normal
 author: "yyuank"
 ms.prod: "microsoft-identity-platform"
