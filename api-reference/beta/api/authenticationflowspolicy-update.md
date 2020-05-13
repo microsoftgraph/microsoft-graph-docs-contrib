@@ -72,7 +72,7 @@ Content-length: 242
 {
   "@odata.type": "#microsoft.graph.authenticationFlowsPolicy",
   "selfServiceSignUp": {
-    "@odata.type": "microsoft.graph.selfServiceSignUpAuthenticationFlowConfiguration"
+    "@odata.type": "#microsoft.graph.selfServiceSignUpAuthenticationFlowConfiguration"
   },
   "displayName": "String",
   "description": "String"
@@ -93,7 +93,7 @@ Content-Type: application/json
 {
   "@odata.type": "#microsoft.graph.authenticationFlowsPolicy",
   "selfServiceSignUp": {
-    "@odata.type": "microsoft.graph.selfServiceSignUpAuthenticationFlowConfiguration"
+    "@odata.type": "#microsoft.graph.selfServiceSignUpAuthenticationFlowConfiguration"
   },
   "id": "682b0e8a-0e8a-682b-8a0e-2b688a0e2b68",
   "displayName": "String",
