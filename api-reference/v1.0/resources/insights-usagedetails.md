@@ -11,8 +11,6 @@ doc_type: resourcePageType
 
 Namespace: microsoft.graph
 
-[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
-
 Complex type containing properties of [Used](insights-used.md) items. Information on when the resource was last accessed (viewed) or modified (edited) by the user.
 
 
