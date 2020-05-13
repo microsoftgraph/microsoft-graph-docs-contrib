@@ -100,7 +100,7 @@ The following example shows how to get all the [room](../resources/room.md) obje
 }-->
 
 ```msgraph-interactive
-GET https://graph.microsoft.com/v1/places/microsoft.graph.room
+GET https://graph.microsoft.com/v1.0/places/microsoft.graph.room
 ```
 
 #### Response
@@ -122,7 +122,7 @@ HTTP/1.1 200 OK
 Content-type: application/json
 
 {
-  "@odata.context": "https://graph.microsoft.com/v1/$metadata#places/microsoft.graph.room",
+  "@odata.context": "https://graph.microsoft.com/v1.0/$metadata#places/microsoft.graph.room",
   "value": [
     {
       "id": "3162F1E1-C4C0-604B-51D8-91DA78989EB1",
@@ -204,7 +204,7 @@ The following example shows how to get all the [roomList](../resources/roomlist.
 }-->
 
 ```msgraph-interactive
-GET https://graph.microsoft.com/v1/places/microsoft.graph.roomlist
+GET https://graph.microsoft.com/v1.0/places/microsoft.graph.roomlist
 ```
 
 #### Response
@@ -226,7 +226,7 @@ HTTP/1.1 200 OK
 Content-type: application/json
 
 {
-  "@odata.context": "https://graph.microsoft.com/v1/$metadata#places/microsoft.graph.roomList",
+  "@odata.context": "https://graph.microsoft.com/v1.0/$metadata#places/microsoft.graph.roomList",
   "value": [
     {
       "id": "DC404124-302A-92AA-F98D-7B4DEB0C1705",
@@ -273,7 +273,7 @@ The following example shows how to get a list of [room](../resources/room.md) ob
 }-->
 
 ```msgraph-interactive
-GET https://graph.microsoft.com/v1/places/bldg2@contoso.com/microsoft.graph.roomlist/rooms
+GET https://graph.microsoft.com/v1.0/places/bldg2@contoso.com/microsoft.graph.roomlist/rooms
 ```
 
 #### Response
@@ -295,7 +295,7 @@ HTTP/1.1 200 OK
 Content-type: application/json
 
 {
-  "@odata.context": "https://graph.microsoft.com/v1/$metadata#places('bldg2%40contoso.com')/microsoft.graph.roomList/rooms",
+  "@odata.context": "https://graph.microsoft.com/v1.0/$metadata#places('bldg2%40contoso.com')/microsoft.graph.roomList/rooms",
   "value": [
     {
       "id": "3162F1E1-C4C0-604B-51D8-91DA78970B97",
