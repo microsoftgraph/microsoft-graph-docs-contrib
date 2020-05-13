@@ -81,7 +81,7 @@ The following is an example of the request.
   "name": "update_room"
 }-->
 ```http
-PATCH https://graph.microsoft.com/v1/places/cf100@contoso.com
+PATCH https://graph.microsoft.com/v1.0/places/cf100@contoso.com
 Content-type: application/json
 Content-length: 285
 
@@ -113,7 +113,7 @@ HTTP/1.1 200 OK
 Content-type: application/json
 
 {
-    "@odata.context": "https://graph.microsoft.com/v1/$metadata#places/$entity",
+    "@odata.context": "https://graph.microsoft.com/v1.0/$metadata#places/$entity",
     "@odata.type": "#microsoft.graph.room",
     "id": "3162F1E1-C4C0-604B-51D8-91DA78989EB1",
     "emailAddress": "cf100@contoso.com",
@@ -162,7 +162,7 @@ The following is an example of the request.
   "name": "update_roomlist"
 }-->
 ```http
-PATCH https://graph.microsoft.com/v1/places/Building1RroomList@contoso.onmicrosoft.com
+PATCH https://graph.microsoft.com/v1.0/places/Building1RroomList@contoso.onmicrosoft.com
 Content-type: application/json
 
 {
@@ -205,7 +205,7 @@ HTTP/1.1 200 OK
 Content-type: application/json
 
 {
-  "@odata.context": "https://graph.microsoft.com/v1/$metadata#places/$entity",
+  "@odata.context": "https://graph.microsoft.com/v1.0/$metadata#places/$entity",
   "@odata.type": "#microsoft.graph.roomList",
   "id": "DC404124-302A-92AA-F98D-7B4DEB0C1705",
   "displayName": "Building 1",
