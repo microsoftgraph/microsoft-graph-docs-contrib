@@ -16,7 +16,7 @@ Namespace: microsoft.graph
 Evaluate whether a user or device is or would be a member of a dynamic group. The membership rule is returned along with other details that were used in the evaluation. You can complete this operation in the following ways: 
 
 - Evaluate whether a user or device is a member of a specified dynamic group.  
-- Evaluate whether a user or device would be a member of a dynamic group based on the Id of the user or device and a membership rule.
+- Evaluate whether a user or device would be a member of a dynamic group based on the ID of the user or device and a membership rule.
 
 ## Permissions
 
