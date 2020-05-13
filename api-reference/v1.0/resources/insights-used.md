@@ -11,8 +11,6 @@ doc_type: resourcePageType
 
 Namespace: microsoft.graph
 
-[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
-
 An insight representing documents used by a specific user. The insights returns the most relevant documents that a user viewed or modified. This includes documents in:
 
 - OneDrive for Business
