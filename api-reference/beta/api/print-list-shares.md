@@ -1,5 +1,5 @@
 ---
-title: Get printerShares
+title: Get shares
 description: Retrieve a list of printer shares.
 author: braedenp-msft
 localization_priority: Normal
@@ -7,7 +7,7 @@ ms.prod: universal-print
 doc_type: apiPageType
 ---
 
-# List printerShares
+# List shares
 
 Namespace: microsoft.graph
 
@@ -29,7 +29,7 @@ In addition to the following permissions, the user's tenant must have an active 
 ## HTTP request
 <!-- { "blockType": "ignored" } -->
 ```http
-GET /print/printerShares
+GET /print/shares
 ```
 
 ## Optional query parameters
@@ -54,10 +54,10 @@ The following is an example of the request.
 # [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
-  "name": "get_printershares"
+  "name": "get_shares"
 }-->
 ```msgraph-interactive
-GET https://graph.microsoft.com/beta/print/printerShares
+GET https://graph.microsoft.com/beta/print/shares
 ```
 # [C#](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/get-printershares-csharp-snippets.md)]
@@ -88,7 +88,7 @@ Content-type: application/json
 Content-length: 269
 
 {
-  "@odata.context": "https://graph.microsoft.com/beta/$metadata#print/printerShares",
+  "@odata.context": "https://graph.microsoft.com/beta/$metadata#print/shares",
   "value": [
     {
       "id": "016b5565-3bbf-4067-b9ff-4d68167eb1a6",
@@ -103,7 +103,7 @@ Content-length: 269
 2015-10-25 14:57:30 UTC -->
 <!-- {
   "type": "#page.annotation",
-  "description": "List printerShares",
+  "description": "List shares",
   "keywords": "",
   "section": "documentation",
   "tocPath": ""
