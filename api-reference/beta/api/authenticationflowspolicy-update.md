@@ -90,6 +90,7 @@ Content-length: 242
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
+
 {
   "@odata.type": "#microsoft.graph.authenticationFlowsPolicy",
   "selfServiceSignUp": {
