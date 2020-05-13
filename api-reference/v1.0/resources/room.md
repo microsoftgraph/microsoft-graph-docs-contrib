@@ -49,7 +49,7 @@ In Exchange Online, each room is associated with a room mailbox. Derived from [p
 
 | Value    | Description                                               |
 |:---------|:----------------------------------------------------------|
-| standard | The room can be reserved based on the other settings in this cmdlet. This is the default value. |
+| standard | The room is available and can be reserved. This is the default value. |
 | reserved | The room is available only on a first come, first served basis. It cannot be reserved.|
 
 ## Relationships
