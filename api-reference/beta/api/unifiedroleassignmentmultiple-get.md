@@ -108,7 +108,7 @@ Content-type: application/json
 }
 ```
 
-### Example 2: Get a roleAssignmentMultiple in Intune assigned to a groups
+### Example 2: Get a roleAssignmentMultiple in Intune assigned to a group
 
 #### Request
 
