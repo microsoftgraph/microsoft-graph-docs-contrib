@@ -11,8 +11,6 @@ doc_type: apiPageType
 
 Namespace: microsoft.graph
 
-[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
-
 Calculated insight that includes a list of documents the user has viewed or modified. 
 
 For the _signed-in user_:
@@ -60,17 +58,17 @@ This method supports the [OData Query Parameters](https://developer.microsoft.co
 
 - You can use the `$filter` query parameter to filter used items. For example, based on **type**:
 
-  `https://graph.microsoft.com/beta/me/insights/used?$filter=ResourceVisualization/Type eq 'PowerPoint'`
+  `https://graph.microsoft.com/v1.0/me/insights/used?$filter=ResourceVisualization/Type eq 'PowerPoint'`
 
 - Use `$filter` to filter used items based on  **containerType**:
 
-  `https://graph.microsoft.com/beta/me/insights/used?$filter=ResourceVisualization/containerType eq 'OneDriveBusiness'`
+  `https://graph.microsoft.com/v1.0/me/insights/used?$filter=ResourceVisualization/containerType eq 'OneDriveBusiness'`
 
   See the available container types and types you can filter by in [resourceVisualization](../resources/insights-resourcevisualization.md).
 
 - Use the `$orderBy` query parameter to sort documents last viewed or modified _by the signed-in user_, based on the **lastAccessedDateTime** property:
 
-  `https://graph.microsoft.com/beta/me/insights/used?$orderby=LastUsed/LastAccessedDateTime desc`
+  `https://graph.microsoft.com/v1.0/me/insights/used?$orderby=LastUsed/LastAccessedDateTime desc`
 
   >**Note**: Use this query option _only for the signed-in user_. You cannot use this API to get documents viewed or modified by another user. See [example 2](#example-2-return-the-most-recently-viewed-documents-that-the-signed-in-user-may-or-may-not-have-modified) below.
 
@@ -95,7 +93,7 @@ If successful, this method returns a `200 OK` response code and a list of [used]
 
 Here is an example of the request.
 ```http
-GET https://graph.microsoft.com/beta/me/insights/used
+GET https://graph.microsoft.com/v1.0/me/insights/used
 ```
 
 #### Response
@@ -181,7 +179,7 @@ Here is an example of the response. Note: The response object shown here may be 
 
 Here is an example of the request.
 ```http
-GET https://graph.microsoft.com/beta/me/insights/used?$orderby=LastUsed/LastAccessedDateTime desc
+GET https://graph.microsoft.com/v1.0/me/insights/used?$orderby=LastUsed/LastAccessedDateTime desc
 ```
 
 #### Response
