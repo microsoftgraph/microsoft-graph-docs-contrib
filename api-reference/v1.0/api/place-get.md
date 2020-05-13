@@ -71,7 +71,7 @@ The following example specifies the **id** of a **room** to get its properties.
 }-->
 
 ```msgraph-interactive
-GET https://graph.microsoft.com/v1/places/3162F1E1-C4C0-604B-51D8-91DA78989EB1
+GET https://graph.microsoft.com/v1.0/places/3162F1E1-C4C0-604B-51D8-91DA78989EB1
 ```
 
 #### Response
@@ -92,7 +92,7 @@ HTTP/1.1 200 OK
 Content-type: application/json
 
 {
-    "@odata.context": "https://graph.microsoft.com/v1/$metadata#places/$entity",
+    "@odata.context": "https://graph.microsoft.com/v1.0/$metadata#places/$entity",
     "@odata.type": "#microsoft.graph.room",
     "id": "3162F1E1-C4C0-604B-51D8-91DA78989EB1",
     "emailAddress": "cf100@contoso.com",
@@ -138,7 +138,7 @@ The following example specifies the **emailAddress** of a **roomList** to get it
 }-->
 
 ```msgraph-interactive
-GET https://graph.microsoft.com/v1/places/bldg1@contoso.com
+GET https://graph.microsoft.com/v1.0/places/bldg1@contoso.com
 ```
 
 
@@ -160,7 +160,7 @@ HTTP/1.1 200 OK
 Content-type: application/json
 
 {
-  "@odata.context": "https://graph.microsoft.com/v1/$metadata#places/$entity",
+  "@odata.context": "https://graph.microsoft.com/v1.0/$metadata#places/$entity",
   "@odata.type": "#microsoft.graph.roomList",
   "id": "DC404124-302A-92AA-F98D-7B4DEB0C1705",
   "displayName": "Building 1",
