@@ -54,6 +54,9 @@ The following is a JSON representation of the resource.
 {
   "id": "String (identifier)",
   "displayName": "String",
-  "description": "String"
+  "description": "String",
+  "selfServiceSignUp": {
+    "@odata.type": "#microsoft.graph.selfServiceSignUpAuthenticationFlowConfiguration"
+  },
 }
 ```
