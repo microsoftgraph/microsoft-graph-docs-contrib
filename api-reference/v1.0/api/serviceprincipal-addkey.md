@@ -13,7 +13,7 @@ Namespace: microsoft.graph
 
 Adds a key credential to a [servicePrincipal](../resources/serviceprincipal.md). This method along with [removeKey](serviceprincipal-removekey.md) can be used by a servicePrincipal to automate rolling its expiring keys.
 
-> [!Note]
+> [!NOTE]
 > [Create servicePrincipal](../api/serviceprincipal-post-serviceprincipals.md) and
 [Update servicePrincipal](../api/serviceprincipal-update.md) operations can continue to be used to add and update key credentials for any servicePrincipal with or without a user's context.
 
@@ -29,7 +29,7 @@ ServicePrincipals that don’t have any existing valid certificates (i.e.: no ce
 |Delegated (personal Microsoft account) | None.    |
 |Application | None. |
 
-> [!Note] A servicePrincipal does not need any specific permission to roll it's own keys.
+> [!NOTE] A servicePrincipal does not need any specific permission to roll it's own keys.
 
 ## HTTP request
 
