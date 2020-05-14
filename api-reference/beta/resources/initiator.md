@@ -2,12 +2,14 @@
 title: "initiator resource type"
 description: "Describes who or what initiated the provisioning event."
 localization_priority: Normal
-author: "davidmu1"
+author: "ArvindHarinder1"
 ms.prod: "microsoft-identity-platform"
 doc_type: "resourcePageType"
 ---
 
 # initiator resource type
+
+Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 

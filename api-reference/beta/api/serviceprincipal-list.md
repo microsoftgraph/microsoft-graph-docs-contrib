@@ -1,13 +1,15 @@
 ---
 title: "List servicePrincipals"
 description: "Retrieve a list of servicePrincipal objects."
-author: "davidmu1"
 localization_priority: Priority
-ms.prod: "microsoft-identity-platform"
 doc_type: apiPageType
+ms.prod: "microsoft-identity-platform"
+author: "davidmu1"
 ---
 
 # List servicePrincipals
+
+Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 

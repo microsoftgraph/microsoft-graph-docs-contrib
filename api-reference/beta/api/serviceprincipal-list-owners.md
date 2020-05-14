@@ -9,6 +9,8 @@ author: "davidmu1"
 
 # servicePrincipals: List owners
 
+Namespace: microsoft.graph
+
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 Retrieve a list of owners of the [servicePrincipal](../resources/serviceprincipal.md).

@@ -9,6 +9,8 @@ ms.prod: ""
 
 # Delete subscription
 
+Namespace: microsoft.graph
+
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 Delete a subscription.

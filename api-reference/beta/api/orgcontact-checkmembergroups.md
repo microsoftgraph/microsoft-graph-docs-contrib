@@ -2,12 +2,14 @@
 title: "orgContact: checkMemberGroups"
 description: "One of the following permissions is required to call this API. To learn more, including how to choose permissions, see Permissions."
 localization_priority: Normal
-author: "davidmu1"
+author: "dkershaw10"
 ms.prod: "microsoft-identity-platform"
 doc_type: apiPageType
 ---
 
 # orgContact: checkMemberGroups
+
+Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 

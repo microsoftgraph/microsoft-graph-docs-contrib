@@ -9,6 +9,8 @@ doc_type: apiPageType
 
 # Create Channel
 
+Namespace: microsoft.graph
+
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 Create a new [channel](../resources/channel.md) in a Microsoft Team, as specified in the request body.
@@ -95,7 +97,7 @@ The following example shows the response.
   "@odata.type": "microsoft.graph.channel"
 } -->
 ```http
-HTTP/1.1 200 OK
+HTTP/1.1 201 Created
 Content-type: application/json
 Content-length: 201
 
@@ -164,7 +166,7 @@ The following example shows the response.
 } -->
 
 ```http
-HTTP/1.1 200 OK
+HTTP/1.1 201 Created
 Content-type: application/json
 Content-length: 201
 

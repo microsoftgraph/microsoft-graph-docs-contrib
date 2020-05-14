@@ -9,6 +9,8 @@ doc_type: apiPageType
 
 # Get servicePrincipal
 
+Namespace: microsoft.graph
+
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 Retrieve the properties and relationships of a [servicePrincipal](../resources/serviceprincipal.md) object.

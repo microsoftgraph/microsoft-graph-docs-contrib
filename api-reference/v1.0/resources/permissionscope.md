@@ -4,7 +4,7 @@ description: "Represents the definition of a delegated permission, sometimes ref
 localization_priority: Normal
 doc_type: resourcePageType
 ms.prod: "microsoft-identity-platform"
-author: "davidmu1"
+author: "psignoret"
 ---
 
 # permissionScope resource type

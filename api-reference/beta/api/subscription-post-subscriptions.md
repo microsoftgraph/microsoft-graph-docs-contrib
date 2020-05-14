@@ -9,6 +9,8 @@ ms.prod: ""
 
 # Create subscription
 
+Namespace: microsoft.graph
+
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 Subscribes a listener application to receive notifications when the requested type of changes occur to the specified resource in Microsoft Graph.
@@ -131,7 +133,7 @@ The following are valid values for the resource property.
 |Groups|groups|
 |Conversations|groups('*{id}*')/conversations|
 |Drives|me/drive/root|
-|List|site/{site-id}/lists/{list-id}|
+|List|sites/{site-id}/lists/{list-id}|
 |Security alert|security/alerts?$filter=status eq ‘New’|
 |Call records|communications/callRecords|
 
