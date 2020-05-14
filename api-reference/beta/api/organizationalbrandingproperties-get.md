@@ -1,6 +1,6 @@
 ---
 title: "Get organizationalBrandingProperties"
-description: "Retrieve the organizationalbrandingproperties object."
+description: "Retrieve the properties and relationships of an organizationalBrandingProperties object."
 localization_priority: Normal
 author: "kexia"
 ms.prod: "microsoft-identity-platform"
@@ -11,7 +11,7 @@ doc_type: "apiPageType"
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Retrieve the properties of the [organizationalBrandingProperties](../resources/organizationalbrandingproperties.md) object.
+Retrieve the properties and relationships of an [organizationalBrandingProperties](../resources/organizationalbrandingproperties.md) object.
 
 ## Permissions
 
@@ -39,7 +39,7 @@ This method supports some of the OData query parameters to help customize the re
 
 | Name      |Description|
 |:----------|:----------|
-| Authorization | Bearer {token} |
+| Authorization | Bearer {token}. Required. |
 | Accept-Language  | Localization to get. Optional.  |
 
 ## Request body
@@ -51,7 +51,9 @@ Do not supply a request body for this method.
 If successful, this method returns a `200 OK` response code and the requested [organizationalBrandingProperties](../resources/organizationalbrandingproperties.md) object in the response body.
 
 ## Examples
-### Example 1: Get default branding
+
+### Example 1: Get the default branding
+
 #### Request
 
 The following is an example of the request.
@@ -97,9 +99,10 @@ Content-Type: application/json
 }
 ```
 
-Requests for /branding always return the mediaContentType, mediaReadLink, and mediaEditLink. If a locale has been applied, the mediaEditLink is the mediaEditLink for the locale (which is always non-null), and the mediaReadLink and mediaContentType are the mediaReadLink and mediaContentType of the locale if the mediaReadLink of the locale is non-null, otherwise the default mediaReadLink and mediaContentType.
+Requests for /branding always return the **mediaContentType**, **mediaReadLink**, and **mediaEditLink** properties. If a locale has been applied, the **mediaEditLink** is the **mediaEditLink** for the locale (which is always non-null), and the **mediaReadLink** and **mediaContentType** are the **mediaReadLink** and **mediaContentType** of the locale if the **mediaReadLink** of the locale is non-null; otherwise, the default **mediaReadLink** and **mediaContentType**.
 
 ### Example 2: Get organizational branding but no branding configured
+
 #### Request
 
 The following is an example of the request.
@@ -116,8 +119,6 @@ GET https://graph.microsoft.com/beta/organization/d69179bf-f4a4-41a9-a9de-249c0f
 
 The following is an example of the response.
 
-> **Note:** The response object shown here might be shortened for readability. All the properties will be returned from an actual call.
-
 <!-- {
   "blockType": "response",
   "truncated": true,
@@ -129,7 +130,7 @@ HTTP/1.1 404 NOT FOUND
 ```
 
 ### Example 3: Get organizational branding for the French locale
-The Accept-Langauge header is used to get branding for a particular locale. Properties that are null in the specified locale are returned from the default branding. If Accept-Language Header is specified in the request, the response will include the Content-Language header, unless it is und.
+The Accept-Langauge header is used to apply a particular localization to the branding. Properties that are null in the specified localization are returned from the default branding. If the Accept-Language header is specified in the request, the response will include the Content-Language header, unless it is `und`.
 #### Request
 
 The following is an example of the request.
@@ -197,8 +198,6 @@ Accept-Language: fr
 
 The following is an example of the response.
 
-> **Note:** The response object shown here might be shortened for readability. All the properties will be returned from an actual call.
-
 <!-- {
   "blockType": "response",
   "truncated": true,
@@ -210,8 +209,9 @@ HTTP/1.1 200
 <Image>
 ```
 
-### Example 5: Get **bannerLogo** but **bannerLogo** not configured
-Requesting a property that exists neither on the default branding nor  the language specified in the Accept-Language header returns 204 No Content.
+### Example 5: Get **bannerLogo** when no **bannerLogo** is configured
+
+This example shows a request for a property that does not exist on the default branding or the language specified in the Accept-Language header.
 
 #### Request
 
@@ -229,8 +229,6 @@ Accept-Language: de
 #### Response
 
 The following is an example of the response.
-
-> **Note:** The response object shown here might be shortened for readability. All the properties will be returned from an actual call.
 
 <!-- {
   "blockType": "response",

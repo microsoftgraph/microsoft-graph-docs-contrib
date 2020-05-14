@@ -1,17 +1,17 @@
 ---
-title: "Update organizationalbrandingproperties"
-description: "Update the properties of the organizationalbrandingproperties object."
+title: "Update organizationalBrandingProperties"
+description: "Update the properties of an organizationalBrandingProperties object."
 localization_priority: Normal
 author: "kexia"
 ms.prod: "microsoft-identity-platform"
 doc_type: "apiPageType"
 ---
 
-# Update organizationalbrandingproperties
+# Update organizationalBrandingProperties
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Update the properties of the [organizationalBrandingProperties](../resources/organizationalbrandingproperties.md) object.
+Update the properties of an [organizationalBrandingProperties](../resources/organizationalbrandingproperties.md) object.
 
 ## Permissions
 
@@ -36,7 +36,7 @@ PUT /organization/{id}/branding/{property name}
 
 | Name       | Description|
 |:-----------|:-----------|
-| Authorization | Bearer {token} |
+| Authorization | Bearer {token}. Required. |
 | Content-Type  | application/json. Required.  |
 | Content-Language  | Locale. Optional.  |
 
@@ -53,7 +53,7 @@ In the request body, supply the values for relevant fields that should be update
 |squareLogo|Stream|Square version of your company logo. This appears in Windows 10 out-of-box (OOBE) experiences and when Windows Autopilot is enabled for deployment. .png or .jpg no larger than 240x240px and no more than 10kb in size. We recommend using a transparent image with no padding around the logo.|
 |usernameHintText|String|String that shows as the hint in the username textbox on the sign in screen. This text must be Unicode, without links or code, and can't exceed 64 characters.|
 
-The id property is ignored when passed in.
+The **id** property is ignored when passed in.
 
 ## Response
 

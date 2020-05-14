@@ -36,7 +36,7 @@ PUT /organization/{id}/branding/localizations/{locale}/{property name}
 
 | Name       | Description|
 |:-----------|:-----------|
-| Authorization | Bearer {token} |
+| Authorization | Bearer {token}. Required. |
 | Content-Type  | application/json. Required.  |
 | Content-Language  | Locale. Optional.  |
 
