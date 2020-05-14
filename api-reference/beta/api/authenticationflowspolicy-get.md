@@ -65,7 +65,7 @@ GET https://graph.microsoft.com/beta/policies/authenticationFlowsPolicy
 <!-- {
   "blockType": "response",
   "truncated": true,
-  "@odata.type": "microsoft.cpim.api.dataModels.authenticationFlowsPolicy"
+  "@odata.type": "microsoft.graph.authenticationFlowsPolicy"
 }
 -->
 ```http

@@ -29,10 +29,6 @@ The following is a JSON representation of the resource.
   "@odata.type": "microsoft.graph.selfServiceSignUpAuthenticationFlowConfiguration"
 }
 -->
-<!--{
-  "@odata.type": "#microsoft.graph.selfServiceSignUpAuthenticationFlowConfiguration",
-  "isEnabled": "Boolean"
-}-->
 
 ``` json
 {

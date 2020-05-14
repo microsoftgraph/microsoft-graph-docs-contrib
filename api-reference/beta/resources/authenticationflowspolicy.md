@@ -39,17 +39,7 @@ The following is a JSON representation of the resource.
   "openType": false
 }
 -->
-<!--
-{
-  "@odata.type": "#microsoft.graph.authenticationFlowsPolicy",
-  "selfServiceSignUp": {
-    "@odata.type": "microsoft.graph.selfServiceSignUpAuthenticationFlowConfiguration"
-  },
-  "id": "String (identifier)",
-  "displayName": "String",
-  "description": "String"
-}
--->
+
 ``` json
 {
   "id": "String (identifier)",

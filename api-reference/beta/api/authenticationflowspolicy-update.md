@@ -85,6 +85,7 @@ Content-length: 242
 <!-- {
   "blockType": "response",
   "truncated": true
+  "@odata.type": "microsoft.graph.authenticationFlowsPolicy"
 }
 -->
 ``` http
