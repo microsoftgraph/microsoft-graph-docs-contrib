@@ -1,13 +1,15 @@
 ---
 title: "List win32LobApps"
 description: "List properties and relationships of the win32LobApp objects."
-author: "davidmu1"
+author: "dougeby"
 localization_priority: Normal
 ms.prod: "Intune"
 doc_type: apiPageType
 ---
 
 # List win32LobApps
+
+Namespace: microsoft.graph
 
 > **Important:** Microsoft Graph APIs under the /beta version are subject to change; production use is not supported.
 
@@ -160,7 +162,6 @@ Content-Length: 3442
   ]
 }
 ```
-
 
 
 
