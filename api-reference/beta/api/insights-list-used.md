@@ -34,13 +34,13 @@ One of the following permissions is required to call this API. To learn more, in
 ## HTTP request
 
 - Get a list of documents that the signed-in user has modified:
-
+  <!-- { "blockType": "ignored" } -->
   ```http
   GET /me/insights/used
   ```
 
 - Get a list of documents that the specified user has modified:
-
+  <!-- { "blockType": "ignored" } -->
   ```http
   GET /users/{id | userPrincipalName}/insights/used
   ```
@@ -48,7 +48,7 @@ One of the following permissions is required to call this API. To learn more, in
 
 
 - Expand the resource referenced by a **used** insight:
-
+  <!-- { "blockType": "ignored" } -->
   ```http
   GET /me/insights/used/{id}/resource
   GET /users/{id | userPrincipalName}/insights/used/{id}/resource
@@ -60,16 +60,17 @@ This method supports the [OData query parameters](/graph/query-parameters) to he
 
 - Use the `$filter` query parameter to filter used items. For example, based on **type**:
 
+  <!-- { "blockType": "ignored" } -->
   `https://graph.microsoft.com/beta/me/insights/used?$filter=ResourceVisualization/Type eq 'PowerPoint'`
 
 - Use `$filter` to filter used items based on  **containerType**:
-
+  <!-- { "blockType": "ignored" } -->
   `https://graph.microsoft.com/beta/me/insights/used?$filter=ResourceVisualization/containerType eq 'OneDriveBusiness'`
 
   See the available container types and types you can filter by in [resourceVisualization](../resources/insights-resourcevisualization.md).
 
 - Use the `$orderBy` query parameter to sort documents last viewed or modified _by the signed-in user_, based on the **lastAccessedDateTime** property:
-
+  <!-- { "blockType": "ignored" } -->
   `https://graph.microsoft.com/beta/me/insights/used?$orderby=LastUsed/LastAccessedDateTime desc`
 
   >**Note**: Use this query option _only for the signed-in user_. You cannot use this API to get documents viewed or modified by another user. See [example 2](#example-2-return-the-most-recently-viewed-documents-that-the-signed-in-user-might-or-might-not-have-modified).
@@ -92,6 +93,7 @@ If successful, this method returns a `200 OK` response code and a list of [used]
 ### Example 1: Return documents that user has modified
 
 #### Request
+<!-- { "blockType": "ignored" } -->
 
 ```http
 GET https://graph.microsoft.com/beta/me/insights/used
@@ -100,6 +102,10 @@ GET https://graph.microsoft.com/beta/me/insights/used
 #### Response
 
 >**Note:** The response object shown here might be shortened for readability. All the properties will be returned from an actual call. 
+<!-- {
+  "blockType": "request",
+  "name": "get_mymodifieddocuments"
+}-->
 ```http
 {
     "@odata.context": "https://graph.microsoft.com/v1.0/$metadata#users('c74dcd16-d8af-4df8-9621-d123b58de3e6')/insights/used",
@@ -177,12 +183,18 @@ GET https://graph.microsoft.com/beta/me/insights/used
 ### Example 2: Return the most recently viewed documents that the signed-in user might or might not have modified 
 
 #### Request
+<!-- { "blockType": "ignored" } -->
 
 ```http
 GET https://graph.microsoft.com/beta/me/insights/used?$orderby=LastUsed/LastAccessedDateTime desc
 ```
 
 #### Response
+<!-- {
+  "blockType": "request",
+  "name": "get_mymodifiedandvieweddocuments"
+}-->
+
 ```http
 {
     "@odata.context": "https://graph.microsoft.com/v1.0/$metadata#users('c74dcd16-d8af-4df8-9621-d123b58de3e6')/insights/used",
