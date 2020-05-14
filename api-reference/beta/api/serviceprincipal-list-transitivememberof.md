@@ -55,10 +55,10 @@ Here is an example of the request.
 # [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
-  "name": "get_serviceprincipal_transitivememberof"
+  "name": "get_serviceprincipal_memberof"
 }-->
 ```msgraph-interactive
-GET https://graph.microsoft.com/beta/servicePrincipals/{id}/transitiveMemberOf
+GET https://graph.microsoft.com/beta/servicePrincipals/{id}/memberOf
 ```
 # [C#](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/get-serviceprincipal-memberof-csharp-snippets.md)]
