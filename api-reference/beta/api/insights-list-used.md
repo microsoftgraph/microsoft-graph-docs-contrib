@@ -93,7 +93,10 @@ If successful, this method returns a `200 OK` response code and a list of [used]
 ### Example 1: Return documents that user has modified
 
 #### Request
-<!-- { "blockType": "ignored" } -->
+<!-- {
+  "blockType": "request",
+  "name": "get_mymodifieddocuments"
+}-->
 
 ```http
 GET https://graph.microsoft.com/beta/me/insights/used
@@ -103,9 +106,11 @@ GET https://graph.microsoft.com/beta/me/insights/used
 
 >**Note:** The response object shown here might be shortened for readability. All the properties will be returned from an actual call. 
 <!-- {
-  "blockType": "request",
-  "name": "get_mymodifieddocuments"
+  "blockType": "response",
+  "truncated": true,
+  "@odata.type": "microsoft.graph.usedInsight"
 }-->
+
 ```http
 {
     "@odata.context": "https://graph.microsoft.com/v1.0/$metadata#users('c74dcd16-d8af-4df8-9621-d123b58de3e6')/insights/used",
@@ -183,7 +188,10 @@ GET https://graph.microsoft.com/beta/me/insights/used
 ### Example 2: Return the most recently viewed documents that the signed-in user might or might not have modified 
 
 #### Request
-<!-- { "blockType": "ignored" } -->
+<!-- {
+  "blockType": "request",
+  "name": "get_mymodifiedandvieweddocuments"
+}-->
 
 ```http
 GET https://graph.microsoft.com/beta/me/insights/used?$orderby=LastUsed/LastAccessedDateTime desc
@@ -191,8 +199,9 @@ GET https://graph.microsoft.com/beta/me/insights/used?$orderby=LastUsed/LastAcce
 
 #### Response
 <!-- {
-  "blockType": "request",
-  "name": "get_mymodifiedandvieweddocuments"
+  "blockType": "response",
+  "truncated": true,
+  "@odata.type": "microsoft.graph.usedInsight"
 }-->
 
 ```http
