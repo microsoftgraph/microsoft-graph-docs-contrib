@@ -35,7 +35,7 @@ DELETE /organization/{id}/branding/localizations/{locale}
 
 | Name          | Description   |
 |:--------------|:--------------|
-| Authorization | Bearer {token} |
+| Authorization | Bearer {token}. Required. |
 
 ## Request body
 
