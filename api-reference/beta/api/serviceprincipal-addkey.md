@@ -31,7 +31,8 @@ ServicePrincipals that don’t have any existing valid certificates (i.e.: no ce
 |Delegated (personal Microsoft account) | None.    |
 |Application | None. |
 
-> [!Note] A servicePrincipal does not need any specific permission to roll its own keys.
+> [!NOTE]
+> A servicePrincipal does not need any specific permission to roll its own keys.
 
 ## HTTP request
 

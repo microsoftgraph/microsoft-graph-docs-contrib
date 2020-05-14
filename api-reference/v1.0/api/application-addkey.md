@@ -21,7 +21,14 @@ Applications that don’t have any existing valid certificates (no certificates 
 
 ## Permissions
 
-None. An application does not need any specific permission to roll its own keys.
+|Permission type      | Permissions (from least to most privileged)              |
+|:--------------------|:---------------------------------------------------------|
+|Delegated (work or school account) | None.  |
+|Delegated (personal Microsoft account) | None.    |
+|Application | None. |
+
+> [!NOTE] 
+> An application does not need any specific permission to roll its own keys.
 
 ## HTTP request
 

@@ -27,7 +27,8 @@ As part of the request validation for this method, a proof of possession of an e
 |Delegated (personal Microsoft account) | None.    |
 |Application | None. |
 
-> [!NOTE] An application does not need any specific permission to roll its own keys.
+> [!NOTE] 
+> An application does not need any specific permission to roll its own keys.
 
 ## HTTP request
 
