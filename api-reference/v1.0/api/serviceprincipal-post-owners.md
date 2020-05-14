@@ -9,6 +9,8 @@ author: "davidmu1"
 
 # servicePrincipal: Add owner
 
+Namespace: microsoft.graph
+
 Use this API to add an owner for the [servicePrincipal](../resources/serviceprincipal.md).
 
 ## Permissions

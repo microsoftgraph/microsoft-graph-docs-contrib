@@ -9,6 +9,8 @@ author: "davidmu1"
 
 # Update servicePrincipal
 
+Namespace: microsoft.graph
+
 Update the properties of [servicePrincipal](../resources/serviceprincipal.md) object.
 
 > [!IMPORTANT]

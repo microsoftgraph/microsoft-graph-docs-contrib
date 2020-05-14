@@ -9,6 +9,8 @@ author: "davidmu1"
 
 # List servicePrincipal memberOf
 
+Namespace: microsoft.graph
+
 Get the groups and directory roles that this [servicePrincipal](../resources/serviceprincipal.md) is a direct member of. This operation is not transitive.
 
 ## Permissions

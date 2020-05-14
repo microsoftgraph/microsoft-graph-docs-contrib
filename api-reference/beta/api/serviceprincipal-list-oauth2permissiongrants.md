@@ -7,9 +7,7 @@ ms.prod: "microsoft-identity-platform"
 author: "davidmu1"
 ---
 
-List oauth2PermissionGrants
-
-Namespace: microsoft.graph
+# List oauth2PermissionGrants
 
 Namespace: microsoft.graph
 

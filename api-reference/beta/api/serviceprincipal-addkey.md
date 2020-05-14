@@ -9,6 +9,8 @@ doc_type: "apiPageType"
 
 # servicePrincipal: addKey
 
+Namespace: microsoft.graph
+
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 Adds a key credential to a [servicePrincipal](../resources/serviceprincipal.md). This method along with [removeKey](serviceprincipal-removekey.md) can be used by a servicePrincipal to automate rolling its expiring keys.

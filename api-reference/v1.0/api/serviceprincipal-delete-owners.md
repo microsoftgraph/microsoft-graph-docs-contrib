@@ -9,6 +9,8 @@ doc_type: apiPageType
 
 # Remove owner
 
+Namespace: microsoft.graph
+
 Remove an owner from a [servicePrincipal](../resources/serviceprincipal.md) object.
 
 ## Permissions

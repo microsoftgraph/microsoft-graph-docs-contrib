@@ -9,6 +9,8 @@ author: "davidmu1"
 
 # servicePrincipals: List ownedObjects
 
+Namespace: microsoft.graph
+
 Retrieve a list of objects owned by the [servicePrincipal](../resources/serviceprincipal.md).  This could include applications or groups.
 
 ## Permissions

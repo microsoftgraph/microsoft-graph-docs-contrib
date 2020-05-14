@@ -9,6 +9,8 @@ doc_type: apiPageType
 
 # List servicePrincipals
 
+Namespace: microsoft.graph
+
 Retrieve a list of [servicePrincipal](../resources/serviceprincipal.md) objects.
 
 ## Permissions

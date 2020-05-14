@@ -9,6 +9,8 @@ doc_type: "apiPageType"
 
 # servicePrincipal: addPassword
 
+Namespace: microsoft.graph
+
 Add a strong password to a [servicePrincipal](../resources/serviceprincipal.md) object.
 
 ## Permissions

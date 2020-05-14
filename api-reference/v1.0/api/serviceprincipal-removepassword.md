@@ -9,6 +9,8 @@ doc_type: "apiPageType"
 
 # servicePrincipal: removePassword
 
+Namespace: microsoft.graph
+
 Remove a password from a [servicePrincipal](../resources/serviceprincipal.md) object.
 
 ## Permissions
