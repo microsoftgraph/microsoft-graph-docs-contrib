@@ -9,7 +9,7 @@ doc_type: "apiPageType"
 
 # application: removeKey
 
-Removes a key credential from an [application](../resources/application.md). This method along with [addKey](application-addkey.md) can be used by an application to automate rolling its expiring keys.
+Remove a key credential from an [application](../resources/application.md). This method along with [addKey](application-addkey.md) can be used by an application to automate rolling its expiring keys.
 
 > [!Note]
 > [Create servicePrincipal](../api/serviceprincipal-post-serviceprincipals.md) and
@@ -19,7 +19,13 @@ As part of the request validation for this method, a proof of possession of an e
 
 ## Permissions
 
-None. An application does not need any specific permission to roll it's own keys.
+|Permission type      | Permissions (from least to most privileged)              |
+|:--------------------|:---------------------------------------------------------|
+|Delegated (work or school account) | None.  |
+|Delegated (personal Microsoft account) | None.    |
+|Application | None. |
+
+> [!Note] An application does not need any specific permission to roll its own keys.
 
 ## HTTP request
 
