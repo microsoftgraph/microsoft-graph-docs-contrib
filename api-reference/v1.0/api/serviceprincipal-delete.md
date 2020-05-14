@@ -9,6 +9,8 @@ author: "davidmu1"
 
 # Delete servicePrincipal
 
+Namespace: microsoft.graph
+
 Delete a [servicePrincipal](../resources/serviceprincipal.md) object.
 
 ## Permissions

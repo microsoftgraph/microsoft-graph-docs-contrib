@@ -9,6 +9,8 @@ doc_type: apiPageType
 
 # Get servicePrincipal
 
+Namespace: microsoft.graph
+
 Retrieve the properties and relationships of a [servicePrincipal](../resources/serviceprincipal.md) object.
 
 ## Permissions

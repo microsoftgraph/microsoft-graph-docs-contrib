@@ -9,6 +9,8 @@ ms.prod: "microsoft-identity-platform"
 
 # Create servicePrincipal
 
+Namespace: microsoft.graph
+
 Create a new [servicePrincipal](../resources/serviceprincipal.md) object.
 
 > [!IMPORTANT]

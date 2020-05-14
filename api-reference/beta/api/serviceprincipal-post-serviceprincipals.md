@@ -9,6 +9,8 @@ ms.prod: "microsoft-identity-platform"
 
 # Create servicePrincipal
 
+Namespace: microsoft.graph
+
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 Create a new [servicePrincipal](../resources/serviceprincipal.md) object.

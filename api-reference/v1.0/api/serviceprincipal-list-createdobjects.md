@@ -9,6 +9,8 @@ author: "davidmu1"
 
 # servicePrincipal: List createdObjects
 
+Namespace: microsoft.graph
+
 Retrieve a list of directoryobject objects.
 
 ## Permissions

@@ -9,6 +9,8 @@ author: "davidmu1"
 
 # servicePrincipal resource type
 
+Namespace: microsoft.graph
+
 Represents an instance of an application in a directory. Inherits from [directoryObject](directoryobject.md).
 
 ## Methods
@@ -56,8 +58,7 @@ Represents an instance of an application in a directory. Inherits from [director
 |alternativeNames|String collection| Used to retrieve service principals by subscription, identify resource group and full resource ids for [managed identities](https://aka.ms/azuremanagedidentity).|
 |appDisplayName|String|The display name exposed by the associated application.|
 |appId|String|The unique identifier for the associated application (its **appId** property).|
-|applicationTemplateId|String|Unique identifier of the applicationTemplate that the servicePrincipal was created from.
-Read-only.|
+|applicationTemplateId|String|Unique identifier of the applicationTemplate that the servicePrincipal was created from. Read-only.|
 |appOwnerOrganizationId|String|Contains the tenant id where the application is registered. This is applicable only to service principals backed by applications.|
 |appRoleAssignmentRequired|Boolean|Specifies whether users or other service principals need to be granted an app role assignment for this service principal before users can sign in or apps can get tokens. The default value is **false**. Not nullable. |
 |appRoles|[appRole](approle.md) collection|The roles exposed by the application which this service principal represents. For more information see the **appRoles** property definition on the [application](application.md) entity. Not nullable. |

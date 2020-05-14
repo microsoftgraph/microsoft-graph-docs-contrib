@@ -9,6 +9,8 @@ doc_type: "apiPageType"
 
 # servicePrincipal: removeKey
 
+Namespace: microsoft.graph
+
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 Remove a key credential from a [servicePrincipal](../resources/serviceprincipal.md). This method along with [addKey](serviceprincipal-addkey.md) can be used by a servicePrincipal to automate rolling its expiring keys.
@@ -27,7 +29,7 @@ As part of the request validation for this method, a proof of possession of an e
 |Delegated (personal Microsoft account) | None.    |
 |Application | None. |
 
-> [!Note] A servicePrincipal does not need any specific permission to roll its own keys.
+> [!NOTE] A servicePrincipal does not need any specific permission to roll its own keys.
 
 ## HTTP request
 
