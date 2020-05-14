@@ -13,7 +13,7 @@ doc_type: "apiPageType"
 
 Remove a key credential from an [application](../resources/application.md). This method along with [addKey](application-addkey.md) can be used by an application to automate rolling its expiring keys.
 
-> [!Note]
+> [!NOTE]
 > [Create servicePrincipal](../api/serviceprincipal-post-serviceprincipals.md) and
 [Update servicePrincipal](../api/serviceprincipal-update.md) operations can continue to be used to add and update key credentials for any application with application or a user's context.
 

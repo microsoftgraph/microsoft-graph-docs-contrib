@@ -3,8 +3,8 @@ title: "Get endpoint"
 description: "Retrieve the properties and relationships of a specific endpoint object."
 localization_priority: Normal
 doc_type: apiPageType
-author: ""
-ms.prod: ""
+ms.prod: "microsoft-identity-platform"
+author: "davidmu1"
 ---
 
 # Get endpoint
