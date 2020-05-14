@@ -1,13 +1,15 @@
 ---
 title: "Update windowsPhone81AppX"
 description: "Update the properties of a windowsPhone81AppX object."
-author: "rolyon"
+author: "dougeby"
 localization_priority: Normal
 ms.prod: "Intune"
 doc_type: apiPageType
 ---
 
 # Update windowsPhone81AppX
+
+Namespace: microsoft.graph
 
 > **Important:** Microsoft Graph APIs under the /beta version are subject to change; production use is not supported.
 
@@ -197,8 +199,6 @@ Content-Length: 1685
   "identityVersion": "Identity Version value"
 }
 ```
-
-
 
 
 

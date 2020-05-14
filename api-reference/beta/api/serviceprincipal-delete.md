@@ -9,6 +9,8 @@ author: "davidmu1"
 
 # Delete servicePrincipal
 
+Namespace: microsoft.graph
+
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 Delete a [servicePrincipal](../resources/serviceprincipal.md) object.

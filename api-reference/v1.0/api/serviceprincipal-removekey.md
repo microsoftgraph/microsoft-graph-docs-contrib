@@ -9,9 +9,9 @@ doc_type: "apiPageType"
 
 # servicePrincipal: removeKey
 
-Removes a key credential from a [servicePrincipal](../resources/serviceprincipal.md). This method along with [addKey](serviceprincipal-addkey.md) can be used by a servicePrincipal to automate rolling its expiring keys.
+Remove a key credential from a [servicePrincipal](../resources/serviceprincipal.md). This method along with [addKey](serviceprincipal-addkey.md) can be used by a servicePrincipal to automate rolling its expiring keys.
 
-> [!Note]
+> [!NOTE]
 > [Create servicePrincipal](../api/serviceprincipal-post-serviceprincipals.md) and
 [Update servicePrincipal](../api/serviceprincipal-update.md) operations can continue to be used to add and update key credentials for any servicePrincipal with or without a user's context.
 
@@ -25,7 +25,7 @@ As part of the request validation for this method, a proof of possession of an e
 |Delegated (personal Microsoft account) | None.    |
 |Application | None. |
 
-> [!Note] A servicePrincipal does not need any specific permission to roll it's own keys.
+> [!Note] A servicePrincipal does not need any specific permission to roll its own keys.
 
 ## HTTP request
 

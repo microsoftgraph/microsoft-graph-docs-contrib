@@ -9,6 +9,8 @@ ms.prod: "microsoft-identity-platform"
 
 # Update servicePrincipal
 
+Namespace: microsoft.graph
+
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 Update the properties of [servicePrincipal](../resources/serviceprincipal.md) object.

@@ -9,6 +9,8 @@ author: "davidmu1"
 
 # servicePrincipal: Add owner
 
+Namespace: microsoft.graph
+
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 Add an owner for the [servicePrincipal](../resources/serviceprincipal.md).

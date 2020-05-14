@@ -9,6 +9,8 @@ author: "davidmu1"
 
 # servicePrincipal: delta
 
+Namespace: microsoft.graph
+
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 Get newly created, updated, or deleted service principals without having to perform a full read of the entire resource collection.

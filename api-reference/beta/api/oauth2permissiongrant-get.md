@@ -11,6 +11,8 @@ author: "davidmu1"
 
 Namespace: microsoft.graph
 
+Namespace: microsoft.graph
+
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 Retrieve the properties of a single [oAuth2PermissionGrant](../resources/oauth2permissiongrant.md).

@@ -9,6 +9,8 @@ author: "davidmu1"
 
 # servicePrincipal: checkMemberGroups
 
+Namespace: microsoft.graph
+
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 Check for membership in the specified list of groups. Returns from the list those groups of which the [servicePrincipal](../resources/serviceprincipal.md) has a direct or transitive membership.

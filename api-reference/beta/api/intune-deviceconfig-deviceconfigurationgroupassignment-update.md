@@ -1,13 +1,15 @@
 ---
 title: "Update deviceConfigurationGroupAssignment"
 description: "Update the properties of a deviceConfigurationGroupAssignment object."
-author: "rolyon"
+author: "dougeby"
 localization_priority: Normal
 ms.prod: "Intune"
 doc_type: apiPageType
 ---
 
 # Update deviceConfigurationGroupAssignment
+
+Namespace: microsoft.graph
 
 > **Important:** Microsoft Graph APIs under the /beta version are subject to change; production use is not supported.
 
@@ -94,8 +96,6 @@ Content-Length: 195
   "excludeGroup": true
 }
 ```
-
-
 
 
 

@@ -11,6 +11,8 @@ author: "davidmu1"
 
 Namespace: microsoft.graph
 
+Namespace: microsoft.graph
+
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 Assign an app role to a client service principal.

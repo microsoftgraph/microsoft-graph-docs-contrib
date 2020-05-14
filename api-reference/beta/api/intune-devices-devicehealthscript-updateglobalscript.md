@@ -1,13 +1,15 @@
 ---
 title: "updateGlobalScript action"
 description: "Update the Proprietary Device Health Script"
-author: "rolyon"
+author: "dougeby"
 localization_priority: Normal
 ms.prod: "Intune"
 doc_type: apiPageType
 ---
 
 # updateGlobalScript action
+
+Namespace: microsoft.graph
 
 > **Important:** Microsoft Graph APIs under the /beta version are subject to change; production use is not supported.
 
@@ -79,8 +81,6 @@ Content-Length: 45
   "value": "Update Global Script value"
 }
 ```
-
-
 
 
 

@@ -9,6 +9,8 @@ author: "davidmu1"
 
 # servicePrincipal: getMemberGroups
 
+Namespace: microsoft.graph
+
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 Get the list of groups that this [servicePrincipal](../resources/serviceprincipal.md) is a member of.  The check is transitive.

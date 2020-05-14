@@ -2,12 +2,14 @@
 title: "subscribedSku resource type"
 description: "Contains information about a service SKU that a company is subscribed to."
 localization_priority: Normal
-author: "davidmu1"
+author: "SumitParikh"
 ms.prod: "microsoft-identity-platform"
 doc_type: resourcePageType
 ---
 
 # subscribedSku resource type
+
+Namespace: microsoft.graph
 
 Contains information about a service SKU that a company is subscribed to.
 

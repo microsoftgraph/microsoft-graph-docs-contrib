@@ -1,13 +1,15 @@
 ---
 title: "group: getMemberGroups"
-description: "Return all the groups that the specified group is a member of. The check is transitive, unlike reading the memberOf navigation property, which returns only the groups that the group is a direct member of."
+description: "Return all the groups that the specified group is a member of."
 localization_priority: Priority
-author: "dkershaw10"
+author: "yyuank"
 ms.prod: "groups"
 doc_type: apiPageType
 ---
 
 # group: getMemberGroups
+
+Namespace: microsoft.graph
 
 Return all the groups that the specified group is a member of. The check is transitive, unlike reading the [memberOf](../api/group-list-memberof.md) navigation property, which returns only the groups that the group is a direct member of.
 

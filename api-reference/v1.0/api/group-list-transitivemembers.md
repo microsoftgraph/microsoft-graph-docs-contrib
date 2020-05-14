@@ -1,7 +1,7 @@
 ---
 title: "List group transitive members"
 description: "Get a list of the group's members. A group can have users, devices, organizational contacts, and other groups as members. This operation is transitive and returns a flat list of all nested members."
-author: "anchanda"
+author: "yyuank"
 localization_priority: Normal
 ms.prod: "groups"
 doc_type: apiPageType
@@ -9,7 +9,9 @@ doc_type: apiPageType
 
 # List group transitive members
 
-Get a list of the group's members. A group can have users, devices, organizational contacts, service principals, and other groups as members. This operation is transitive and returns a flat list of all nested members.
+Namespace: microsoft.graph
+
+Get a list of the group's members. A group can have users, devices, organizational contacts, and other groups as members. This operation is transitive and returns a flat list of all nested members.
 
 ## Permissions
 

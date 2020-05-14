@@ -1,13 +1,15 @@
 ---
 title: "servicePrincipals: List ownedObjects"
 description: "Retrieve a list of objects owned by the servicePrincipal.  This could include applications or groups."
-localization_priority: Priority
-doc_type: resourcePageType
+localization_priority: Normal
+doc_type: apiPageType
 ms.prod: "microsoft-identity-platform"
 author: "davidmu1"
 ---
 
 # servicePrincipals: List ownedObjects
+
+Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 

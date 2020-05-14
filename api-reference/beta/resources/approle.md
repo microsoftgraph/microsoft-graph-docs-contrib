@@ -1,6 +1,6 @@
 ---
 title: "appRole resource type"
-description: "Represents an application role that may be requested by a client application calling another application or that may be used to assign an application to users or groups in a specified application role."
+description: "Represents an application role."
 localization_priority: Normal
 doc_type: resourcePageType
 ms.prod: "microsoft-identity-platform"
