@@ -25,6 +25,7 @@ For a summary of the value of these API changes, as well as recent tools, compon
 | :-------------- | :---------- | :--------------------------------------- |
 | Addition | v1.0 | Added support for sending [channel messages](/graph/api/resources/chatmessage?view=graph-rest-1.0) and channel message replies.|
 | Addition | v1.0 | Added support for getting the filesFolder of a [channel](/graph/api/resources/channel?view=graph-rest-1.0).|
+| Addition | v1.0 | Added the azureADAppId property to [teamsAppDefinition](/graph/api/resources/teamsAppDefinition?view=graph-rest-beta).|
 | Addition | v1.0 | Introduced the Shifts APIs, including [shift](/graph/api/resources/shift?view=graph-rest-1.0), [workforceintegration]((/graph/api/resources/workforceintegration?view=graph-rest-1.0), and associated methods.|
 
 
