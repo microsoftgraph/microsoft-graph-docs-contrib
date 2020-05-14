@@ -9,6 +9,8 @@ author: "davidmu1"
 
 # List appRoleAssignments granted to a service principal
 
+Namespace: microsoft.graph
+
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 Retrieve the list of [appRoleAssignment](../resources/approleassignment.md) that have been granted to a service principal.
@@ -35,8 +37,6 @@ GET /servicePrincipals/{id}/appRoleAssignments
 ## Optional query parameters
 
 This method supports the [OData query parameters](/graph/query-parameters) to help customize the response.
-
-To learn how to search for and filter app role assignments, see [supported filter patterns](../resources/approleassignment.md#supported-filter-patterns).
 
 ## Request headers
 

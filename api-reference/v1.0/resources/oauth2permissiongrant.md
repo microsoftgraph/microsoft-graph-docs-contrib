@@ -9,6 +9,8 @@ author: "davidmu1"
 
 # oAuth2PermissionGrant resource type
 
+Namespace: microsoft.graph
+
 Represents the delegated permissions that have been granted to an application's service principal.
 
 Delegated permissions grants can be created as a result of a user consenting the an application's request to access an API, or created directly.

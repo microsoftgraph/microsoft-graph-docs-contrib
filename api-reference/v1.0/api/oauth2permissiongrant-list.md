@@ -7,7 +7,9 @@ ms.prod: "microsoft-identity-platform"
 author: "davidmu1"
 ---
 
-# List delegated permission grants (oauth2PermissionGrants)
+# List oauth2PermissionGrants
+
+Namespace: microsoft.graph
 
 Retrieve a list of [oAuth2PermissionGrant](../resources/oauth2permissiongrant.md) objects, representing delegated permissions which have been granted for client applications to access APIs on behalf of signed-in users.
 

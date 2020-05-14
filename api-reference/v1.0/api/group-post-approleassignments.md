@@ -9,6 +9,8 @@ author: "davidmu1"
 
 # Grant an appRoleAssignment to a group
 
+Namespace: microsoft.graph
+
 Use this API to assign an app role to a group. All direct members of the group will be considered assigned. To grant an app role assignment to a group, you need three identifiers:
 
 - `principalId`: The `id` of the group to which you are assigning the app role.

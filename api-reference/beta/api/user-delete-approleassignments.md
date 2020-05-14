@@ -9,6 +9,8 @@ author: "davidmu1"
 
 # Delete an appRoleAssignment granted to a user
 
+Namespace: microsoft.graph
+
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 Delete an [appRoleAssignment](../resources/approleassignment.md) that has been granted to a user.

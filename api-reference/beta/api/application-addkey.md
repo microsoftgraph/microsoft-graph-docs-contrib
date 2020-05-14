@@ -14,8 +14,7 @@ doc_type: "apiPageType"
 Add a key credential to an [application](../resources/application.md). This method, along with [removeKey](application-removekey.md), can be used by an application to automate rolling its expiring keys.
 
 > [!Note]
-> [Create application](../api/application-post-applications.md) and
-[Update application](../api/application-update.md) operations can continue to be used to add and update key credentials for any application with or without a user's context.
+> You can continue to use the [Create application](../api/application-post-applications.md) and [Update application](../api/application-update.md) application operations to add and update key credentials for any application with or without a user's context. 
 
 As part of the request validation for this method, a proof of possession of an existing key is verified before the action can be performed. 
 

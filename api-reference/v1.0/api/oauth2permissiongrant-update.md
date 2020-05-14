@@ -9,6 +9,8 @@ author: "davidmu1"
 
 # Update a delegated permission grant (oAuth2PermissionGrant)
 
+Namespace: microsoft.graph
+
 
 Update the properties of [oAuth2PermissionGrant](../resources/oauth2permissiongrant.md) object, representing a delegated permission grant.
 

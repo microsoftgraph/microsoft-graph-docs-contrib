@@ -1,5 +1,5 @@
 ---
-title: "user: List delegated permission grants (oauth2PermissionGrants)"
+Title: "List oauth2PermissionGrants"
 description: "Retrieve a list of oAuth2PermissionGrant objects, representing delegated permission grants."
 localization_priority: Priority
 doc_type: apiPageType
@@ -7,7 +7,9 @@ ms.prod: "microsoft-identity-platform"
 author: "davidmu1"
 ---
 
-# user: List delegated permission grants (oAuth2PermissionGrants)
+List oauth2PermissionGrants
+
+Namespace: microsoft.graph
 
 Retrieve a list of [oAuth2PermissionGrant](../resources/oAuth2PermissionGrant.md) entities, which represent delegated permissions granted to enable a client application to access an API on behalf of the user.
 

@@ -1,18 +1,18 @@
 ---
-title: "Guidance on generating proof of possession token to be used with addKey, removeKey methods."
-description: "As part of the request validation for addKey, removeKey methods, a proof of possession token is required. This document provides guidance for generating the proof of possession token."
+title: "Generating proof of possession tokens for rolling keys"
+description: "As part of the request validation for the addKey and removeKey methods, a proof of possession token is required. This document provides guidance for generating the proof of possession token."
 localization_priority: Priority
 ms.prod: "microsoft-identity-platform"
 author: "davidmu1"
 ---
 
-## Generating proof of possession tokens for rolling keys
+# Generating proof of possession tokens for rolling keys
 
-The addKey, removeKey methods defined on [application](/graph/resources/application?view=graph-rest-v1.0) and [servicePrincipal](/graph/resources/serviceprincipal?view=graph-rest-v1.0) resources can be used to roll expiring keys programmatically.
+You can use the **addKey** and **removeKey** methods defined on the [application](/graph/resources/application?view=graph-rest-v1.0) and [servicePrincipal](/graph/resources/serviceprincipal?view=graph-rest-v1.0) resources to roll expiring keys programmatically.
 
 As part of the request validation for these methods, a proof of possession of an existing key is verified before the methods can be invoked. The proof is represented by a self-signed JWT token. This JWT token must be signed using the private key of one of the application's existing valid certificates. The token lifespan should not exceed 10 minutes.
 
-> Note: Applications that don’t have any existing valid certificates (no certificates have been added yet, or all certificates have expired), won’t be able to use this service action. You can use the [Update application](../api/application-update.md) operation to perform an update instead.
+> **Note:** Applications that don’t have any existing valid certificates (no certificates have been added yet, or all certificates have expired), won’t be able to use this service action. You can use the [Update application](../api/application-update.md) operation to perform an update instead.
 
 The token should contain the following claims:
 
@@ -21,7 +21,7 @@ The token should contain the following claims:
 - `nbf` - Not before time.
 - `exp` - Expiration time should be "nbf" + 10 mins.
 
-Following code sample can be used to generate this proof of possession token.
+You can use the following code example to generate this proof of possession token.
 
 ```csharp
 using System;

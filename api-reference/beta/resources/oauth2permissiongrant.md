@@ -9,6 +9,8 @@ author: "davidmu1"
 
 # oAuth2PermissionGrant resource type
 
+Namespace: microsoft.graph
+
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 Represents the delegated permissions that have been granted to an application's service principal.

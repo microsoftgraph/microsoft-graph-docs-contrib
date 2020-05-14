@@ -9,6 +9,8 @@ author: "davidmu1"
 
 # permissionScope resource type
 
+Namespace: microsoft.graph
+
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 Represents the definition of a [delegated permission](https://docs.microsoft.com/azure/active-directory/develop/v2-permissions-and-consent#permission-types).

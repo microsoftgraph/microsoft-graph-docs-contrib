@@ -9,6 +9,8 @@ author: "davidmu1"
 
 # Create a delegated permission grant (oAuth2PermissionGrant)
 
+Namespace: microsoft.graph
+
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 Create a delegated permission grant. A delegated permission grant is represented by an [oAuth2PermissionGrant](../resources/oauth2permissiongrant.md) object.

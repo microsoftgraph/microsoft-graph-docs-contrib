@@ -9,6 +9,8 @@ author: "davidmu1"
 
 # List appRoleAssignments granted to a user
 
+Namespace: microsoft.graph
+
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 Retrieve the list of [appRoleAssignment](../resources/approleassignment.md) that a user has been granted. This operation also returns app roles assigned to groups that the user is a direct member of.
@@ -33,8 +35,6 @@ GET /users/{id | userPrincipalName}/appRoleAssignments
 ## Optional query parameters
 
 This method supports the [OData query parameters](/graph/query_parameters) to help customize the response.
-
-To learn how to search for and filter app role assignments, see [supported filter patterns](../resources/approleassignment.md#supported-filter-patterns).
 
 ## Request headers
 

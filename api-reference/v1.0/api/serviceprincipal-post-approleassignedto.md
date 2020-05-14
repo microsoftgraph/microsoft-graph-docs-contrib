@@ -9,6 +9,8 @@ author: "davidmu1"
 
 # Grant an appRoleAssignment for a service principal
 
+Namespace: microsoft.graph
+
 
 Assign an app role for a resource service principal, to a user, group, or client service principal.
 

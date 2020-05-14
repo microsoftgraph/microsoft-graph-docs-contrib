@@ -9,6 +9,8 @@ author: "davidmu1"
 
 # Grant an appRoleAssignment to a user
 
+Namespace: microsoft.graph
+
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 Use this API to assign an app role to a user. To grant an app role assignment to a user, you need three identifiers:
