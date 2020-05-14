@@ -141,7 +141,7 @@ The following is an example of the request.
 
 ```http
 GET https://graph.microsoft.com/beta/organization/d69179bf-f4a4-41a9-a9de-249c0f2efb1d/branding
-Accept-Language:fr
+Accept-Language: fr
 ```
 
 #### Response
@@ -159,7 +159,7 @@ The following is an example of the response.
 ```http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Language:fr
+Content-Language: fr
 
 {
     "backgroundColor":"#00000F",
