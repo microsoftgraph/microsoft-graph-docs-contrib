@@ -18,7 +18,7 @@ Exchange Online administrators can organize meeting rooms in a tenant into room 
 
 Places like [room](room.md) and [roomList](roomlist.md) contain the basic **id**, display name and email address. In addition, they contain navigational information like physical address and geographical coordinates, and in the case of rooms, other relevant information such as AV capabilities, floor number, and capacity.
 
-The [findRooms](../api/user-findrooms.md) and [findRoomLists](../api/user-findroomlists.md) functions support similar lookup for rooms and room lists in a tenant. The following is a comparison between the places API and these functions.
+The [findRooms](../api/user-findrooms.md) and [findRoomLists](../api/user-findroomlists.md) functions support similar lookup for rooms and room lists in a tenant. The following is a comparison between the places API and these functions. The places API is generally for production apps, customers should use that in favor of
 
 |Places API |findRooms and findRoomLists functions|
 |:------------------------------------|:-----------------------------|
