@@ -112,6 +112,9 @@ GET https://graph.microsoft.com/beta/me/insights/used
 }-->
 
 ```http
+HTTP/1.1 200 OK
+Content-type: application/json
+
 {
     "@odata.context": "https://graph.microsoft.com/v1.0/$metadata#users('c74dcd16-d8af-4df8-9621-d123b58de3e6')/insights/used",
     "value": [
