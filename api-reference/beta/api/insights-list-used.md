@@ -13,7 +13,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Calculate and list the documents the user has viewed or modified. 
+Calculate and list the documents that a user has viewed or modified. 
 
 For the signed-in user:
 - This method includes documents that the user has modified; see [example 1](#example-1-return-documents-that-user-has-modified). 
