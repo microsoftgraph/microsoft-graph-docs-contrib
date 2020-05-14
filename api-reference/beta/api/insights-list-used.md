@@ -17,7 +17,7 @@ Calculate and list the documents that a user has viewed or modified.
 
 For the signed-in user:
 - This method includes documents that the user has modified; see [example 1](#example-1-return-documents-that-user-has-modified). 
-- Using an `$orderby` query parameter on the **lastAccessedDateTime** property returns the most recently viewed documents that the user might or might not have modified; see [example 2](#example-2-return-the-most-recently-viewed-documents-that-the-signed-in-user-may-or-may-not-have-modified).
+- Using an `$orderby` query parameter on the **lastAccessedDateTime** property returns the most recently viewed documents that the user might or might not have modified; see [example 2](#example-2-return-the-most-recently-viewed-documents-that-the-signed-in-user-might-or-might-not-have-modified).
 
 For other users, this method includes only documents that the user has modified.
 
@@ -72,7 +72,7 @@ This method supports the [OData query parameters](/graph/query-parameters) to he
 
   `https://graph.microsoft.com/beta/me/insights/used?$orderby=LastUsed/LastAccessedDateTime desc`
 
-  >**Note**: Use this query option _only for the signed-in user_. You cannot use this API to get documents viewed or modified by another user. See [example 2](#example-2-return-the-most-recently-viewed-documents-that-the-signed-in-user-may-or-may-not-have-modified).
+  >**Note**: Use this query option _only for the signed-in user_. You cannot use this API to get documents viewed or modified by another user. See [example 2](#example-2-return-the-most-recently-viewed-documents-that-the-signed-in-user-might-or-might-not-have-modified).
 
 
 ## Request headers
