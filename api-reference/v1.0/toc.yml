@@ -770,8 +770,8 @@
             href: api/multivaluelegacyextendedproperty-post-multivalueextendedproperties.md
           - name: Get multi-value property
             href: api/multivaluelegacyextendedproperty-get.md
-     - name: Place
-        items:
+        - name: Place
+          items:
           - name: Place
             href: resources/place.md
           - name: Room type
