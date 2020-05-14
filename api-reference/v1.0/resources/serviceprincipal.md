@@ -54,7 +54,7 @@ Represents an instance of an application in a directory. Inherits from [director
 | Property     | Type |Description|
 |:---------------|:--------|:----------|
 |accountEnabled|Boolean| **true** if the service principal account is enabled; otherwise, **false**.|
-| addIns | [addIn](addin.md) | Defines custom behavior that a consuming service can use to call an app in specific contexts. For example, applications that can render file streams [may set the addIns property](https://docs.microsoft.com/onedrive/developer/file-handlers/?view=odsp-graph-online) for its "FileHandler" functionality. This will let services like Office 365 call the application in the context of a document the user is working on.|
+| addIns | [addIn](addin.md) collection | Defines custom behavior that a consuming service can use to call an app in specific contexts. For example, applications that can render file streams [may set the addIns property](https://docs.microsoft.com/onedrive/developer/file-handlers/?view=odsp-graph-online) for its "FileHandler" functionality. This will let services like Office 365 call the application in the context of a document the user is working on.|
 |alternativeNames|String collection| Used to retrieve service principals by subscription, identify resource group and full resource ids for [managed identities](https://aka.ms/azuremanagedidentity).|
 |appDisplayName|String|The display name exposed by the associated application.|
 |appId|String|The unique identifier for the associated application (its **appId** property).|
@@ -123,7 +123,7 @@ Here is a JSON representation of the resource
   "appRoleAssignmentRequired": true,
   "appRoles": [{"@odata.type": "microsoft.graph.appRole"}],
   "displayName": "string",
-  "endpoints": [{"@odata.type": "microsoft.graph.endPoint"}],
+  "endpoints": [{"@odata.type": "microsoft.graph.endpoint"}],
   "homepage": "string",
   "id": "string (identifier)",
   "info": {"@odata.type": "microsoft.graph.informationalUrl"},
