@@ -21,7 +21,7 @@ As part of the request validation for this method, a proof of possession of an e
 
 ## Permissions
 
-None. An application does not need any specific permission to roll it's own keys.
+None. An application does not need any specific permission to remove its own keys.
 
 ## HTTP request
 

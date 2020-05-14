@@ -22,7 +22,7 @@ Applications that don’t have any existing valid certificates (no certificates 
 
 ## Permissions
 
-None. An application does not need any specific permission to roll its own keys.
+None. An application does not need any specific permission to add its own keys.
 
 ## HTTP request
 

@@ -15,13 +15,13 @@ Remove a [tokenLifetimePolicy](../resources/tokenlifetimepolicy.md) from an [app
 
 ## Permissions
 
-One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
+One of the following sets of permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
 
 | Permission type                        | Permissions (from least to most privileged) |
 |:---------------------------------------|:--------------------------------------------|
-| Delegated (work or school account)     | Policy.Read.All and Application.ReadWrite.All |
+| Delegated (work or school account)     | Policy.Read.All and Application.ReadWrite.All, Policy.Read.All and Directory.ReadWrite.All, Directory.AccessAsUser.All |
 | Delegated (personal Microsoft account) | Not supported. |
-| Application                            | Policy.Read.All and Application.ReadWrite.OwnedBy, Policy.Read.All and Application.ReadWrite.All |
+| Application                            | Policy.Read.All and Application.ReadWrite.OwnedBy, Policy.Read.All and Application.ReadWrite.All, Policy.Read.All and Directory.ReadWrite.All |
 
 ## HTTP request
 
