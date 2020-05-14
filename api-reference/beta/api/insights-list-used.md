@@ -1,6 +1,6 @@
 ---
 title: "List used"
-description: "Calculated insight that includes a list of documents the user has viewed or modified."
+description: "Calculate and list the documents the user has viewed or modified."
 author: "simonhult"
 localization_priority: Normal
 ms.prod: "insights"
