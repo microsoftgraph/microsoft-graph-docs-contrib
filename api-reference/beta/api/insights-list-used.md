@@ -13,13 +13,13 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Calculated insight that includes a list of documents the user has viewed or modified. 
+List the documents the user has viewed or modified. 
 
-For the _signed-in user_:
-- This method includes documents that the user has modified; see [example 1](#example-1-return-documents-that-user-has-modified) below. 
-- Using an `$orderby` query parameter on the **lastAccessedDateTime** property returns the most recently viewed documents that the user may or may not have modified; see [example 2](#example-2-return-the-most-recently-viewed-documents-that-the-signed-in-user-may-or-may-not-have-modified).
+For the signed-in user:
+- This method includes documents that the user has modified; see [example 1](#example-1-return-documents-that-user-has-modified). 
+- Using an `$orderby` query parameter on the **lastAccessedDateTime** property returns the most recently viewed documents that the user might or might not have modified; see [example 2](#example-2-return-the-most-recently-viewed-documents-that-the-signed-in-user-may-or-may-not-have-modified).
 
-For _other users_, this method includes only documents that the user has modified.
+For other users, this method includes only documents that the user has modified.
 
 
 ## Permissions
@@ -56,9 +56,9 @@ One of the following permissions is required to call this API. To learn more, in
 
 
 ## Optional query parameters
-This method supports the [OData Query Parameters](https://developer.microsoft.com/graph/docs/concepts/query_parameters) to help customize the response:
+This method supports the [OData query parameters](/graph/query-parameters) to help customize the response:
 
-- You can use the `$filter` query parameter to filter used items. For example, based on **type**:
+- Use the `$filter` query parameter to filter used items. For example, based on **type**:
 
   `https://graph.microsoft.com/beta/me/insights/used?$filter=ResourceVisualization/Type eq 'PowerPoint'`
 
@@ -72,7 +72,7 @@ This method supports the [OData Query Parameters](https://developer.microsoft.co
 
   `https://graph.microsoft.com/beta/me/insights/used?$orderby=LastUsed/LastAccessedDateTime desc`
 
-  >**Note**: Use this query option _only for the signed-in user_. You cannot use this API to get documents viewed or modified by another user. See [example 2](#example-2-return-the-most-recently-viewed-documents-that-the-signed-in-user-may-or-may-not-have-modified) below.
+  >**Note**: Use this query option _only for the signed-in user_. You cannot use this API to get documents viewed or modified by another user. See [example 2](#example-2-return-the-most-recently-viewed-documents-that-the-signed-in-user-may-or-may-not-have-modified).
 
 
 ## Request headers
@@ -93,14 +93,13 @@ If successful, this method returns a `200 OK` response code and a list of [used]
 
 #### Request
 
-Here is an example of the request.
 ```http
 GET https://graph.microsoft.com/beta/me/insights/used
 ```
 
 #### Response
 
-Here is an example of the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call. 
+>**Note:** The response object shown here might be shortened for readability. All the properties will be returned from an actual call. 
 ```http
 {
     "@odata.context": "https://graph.microsoft.com/v1.0/$metadata#users('c74dcd16-d8af-4df8-9621-d123b58de3e6')/insights/used",
@@ -175,11 +174,10 @@ Here is an example of the response. Note: The response object shown here may be 
 }
 ```
 
-### Example 2: Return the most recently viewed documents that the signed-in user may or may not have modified 
+### Example 2: Return the most recently viewed documents that the signed-in user might or might not have modified 
 
 #### Request
 
-Here is an example of the request.
 ```http
 GET https://graph.microsoft.com/beta/me/insights/used?$orderby=LastUsed/LastAccessedDateTime desc
 ```
