@@ -1,6 +1,6 @@
 ---
 title: "selfServiceSignUpAuthenticationFlowConfiguration resource type"
-description: "The self-service sign up experience in regular Azure Active Directory (Azure AD) tenants (otherwsie known as ExtId/ExId/BYOI) enables  users to initiate a self-service sign up flow."
+description: "The self-service sign up experience in regular Azure Active Directory (Azure AD) tenants enables users to initiate a self-service sign up flow."
 author: "linkhp"
 localization_priority: Priority
 ms.prod: "microsoft-identity-platform"

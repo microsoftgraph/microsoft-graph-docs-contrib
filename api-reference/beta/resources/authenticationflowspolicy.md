@@ -12,11 +12,7 @@ doc_type: resourcePageType
 
 Namespace: microsoft.graph
 
-The self-service sign up experience in regular Azure Active Directory (Azure AD) tenants (otherwise known as ExtId/ExId/BYOI) [enables users to initiate a self-service sign up flow](../resources/selfservicesignupauthenticationflowconfiguration.md). The tenant admin or the workflow admin can approve or deny a user's request to sign up in their tenant. This can be compared with the current experience in a regular Azure AD tenant, where a user has to be invited or created manually by the tenant admin. 
-
-Currently, this API is to enable/disable the self-service sign up experience at a tenant level. The API is designed to be used for other similar settings for all authentication flows.
-
-The policy/api is named 'authentication flows' because the settings here will refer to the flow of user when they use identity. For example sign up is a flow, sign in is a flow, profile update, progressive profiling etc are the various authentication flows a user can go through.
+Represents the [policy configuration of self-service sign-up experience](../resources/selfservicesignupauthenticationflowconfiguration.md) at a tenant level that lets external users to request to sign up for approval. It contains information about the id, display name, description, and whether self-service sign-up is enabled for the policy.
 
 ## Properties
 |Property|Type|Description|Key|Required|ReadOnly|
@@ -24,7 +20,7 @@ The policy/api is named 'authentication flows' because the settings here will re
 |id|String| Inherited property. The ID of the authentication flows policy|Yes|No|Yes|
 |displayName|String| Inherited property.The human-readable name of the policy, "Authentication flows policy"|No|No|Yes|
 |description|String|Inherited property. A description of the policy|No|No|Yes|
-|selfServiceSignUp|[selfServiceSignUpAuthenticationFlowConfiguration](../resources/selfservicesignupauthenticationflowconfiguration.md)|Self-service sign-up configuration |No|No|No|
+|selfServiceSignUp|Contains [selfServiceSignUpAuthenticationFlowConfiguration](../resources/selfservicesignupauthenticationflowconfiguration.md) settings that convey whether self-service sign-up is enabled or disabled|Self-service sign-up configuration |No|No|No|
 
 ## Relationships
 None.

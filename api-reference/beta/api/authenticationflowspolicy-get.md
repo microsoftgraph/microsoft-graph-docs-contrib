@@ -18,9 +18,9 @@ One of the following permissions is required to call this API. To learn more, in
 
 |Permission type|Permissions (from most to least privileged)|
 |:---|:---|
-|Delegated (work or school account)|Policy.Read.All|
+|Delegated (work or school account)|Policy.Read.All, Policy.ReadWrite.AuthenticationFlows|
 |Delegated (personal Microsoft account)|Not Supported|
-|Application|Policy.Read.All|
+|Application|Policy.Read.All, Policy.ReadWrite.AuthenticationFlows|
 
 ## HTTP request
 
@@ -31,9 +31,6 @@ One of the following permissions is required to call this API. To learn more, in
 ``` http
 GET /policies/authenticationFlowsPolicy
 ```
-
-## Optional query parameters
-This method supports some of the OData query parameters to help customize the response. For general information, see [OData query parameters](/graph/query-parameters).
 
 ## Request headers
 |Name|Description|

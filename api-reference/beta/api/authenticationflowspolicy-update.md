@@ -46,17 +46,12 @@ The following table shows the properties that are required when you create the [
 |Property|Type|Description|
 |:---|:---|:---|
 |selfServiceSignUp|[selfServiceSignUpAuthenticationFlowConfiguration](../resources/selfservicesignupauthenticationflowconfiguration.md)|Self-service sign-up configuration|
-|id|String|Inherited property. The ID of the authentication flows policy|
-|displayName|String|Inherited property.The human-readable name of the policy, "Authentication flows policy"|
-|description|String|Inherited property. A description of the policy|
 
 ## Response
 
 If successful, this method returns a `200 OK` response code and an updated [authenticationFlowsPolicy](../resources/authenticationflowspolicy.md) object in the response body.
 
 ## Example
-
-No Content - 204 - 19746ms
 
 ### Request
 <!-- {
@@ -67,38 +62,19 @@ No Content - 204 - 19746ms
 ```http
 PATCH https://graph.microsoft.com/beta/policies/authenticationFlowsPolicy
 Content-Type: application/json
-Content-length: 242
 
 {
-  "@odata.type": "#microsoft.graph.authenticationFlowsPolicy",
   "selfServiceSignUp": {
-    "@odata.type": "#microsoft.graph.selfServiceSignUpAuthenticationFlowConfiguration"
-  },
-  "displayName": "String",
-  "description": "String"
+    "isEnabled" : {
+        true
+    }
+  }
 }
 ```
 
 
 ### Response
-**Note:** The response object shown here might be shortened for readability.
-<!-- {
-  "blockType": "response",
-  "truncated": true,
-  "@odata.type": "microsoft.graph.authenticationFlowsPolicy"
-}
--->
+A successful response returns the following with milliseconds elapsed.
 ``` http
-HTTP/1.1 200 OK
-Content-Type: application/json
-
-{
-  "@odata.type": "#microsoft.graph.authenticationFlowsPolicy",
-  "selfServiceSignUp": {
-    "@odata.type": "#microsoft.graph.selfServiceSignUpAuthenticationFlowConfiguration"
-  },
-  "id": "682b0e8a-0e8a-682b-8a0e-2b688a0e2b68",
-  "displayName": "String",
-  "description": "String"
-}
+No Content - 204
 ```
