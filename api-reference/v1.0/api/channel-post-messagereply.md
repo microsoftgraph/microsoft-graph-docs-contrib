@@ -46,10 +46,8 @@ In the request body, supply a JSON representation of a [message](../resources/ch
 If successful, this method returns `201 Created` response code with the [message](../resources/chatmessage.md) that was created.
 
 ## Example
-##### Request
-Here is an example of the request.
+### Request
 
-# [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "post_reply_message"
@@ -65,24 +63,8 @@ Content-type: application/json
   }
 }
 ```
-# [C#](#tab/csharp)
-[!INCLUDE [sample-code](../includes/snippets/csharp/post-reply-csharp-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+### Response
 
-# [JavaScript](#tab/javascript)
-[!INCLUDE [sample-code](../includes/snippets/javascript/post-reply-javascript-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [Objective-C](#tab/objc)
-[!INCLUDE [sample-code](../includes/snippets/objc/message-reply-objc-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
----
-
-
-##### Response
-
-Here is an example of the response.
 <!-- {
   "blockType": "response",
   "truncated": true,
