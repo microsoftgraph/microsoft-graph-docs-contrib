@@ -330,7 +330,7 @@ Content-length: 160
 #### Request
 The following is an example of the request.
 
-> Note: the file must already be in SharePoint. To find the file properties, GET the driveItem for the file. eg, /drives/<id>/items/<id>. Your attachment id is the guid in the driveItem's eTag, your attachment contentURL is the webUrl of the driveItem's folder plus the driveItem's name, and your attachment name is the driveItem's name.
+>**Note:** The file must already be in SharePoint. To find the file properties, GET the **driveItem** for the file. For example, /drives/{id}/items/{id}. Your attachment ID is the GUID in the **eTag** of the **driveItem**, your attachment **contentURL** is the **webUrl** of the **driveItem**'s folder plus the **driveItem**'s name, and your attachment name is the **driveItem**'s name.
 
 <!-- {
   "blockType": "request",
@@ -414,7 +414,7 @@ Content-type: application/json
 
 ## See also
 
-- [Cards Reference](/microsoftteams/platform/concepts/cards/cards-reference)
+- [Cards reference](/microsoftteams/platform/concepts/cards/cards-reference)
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2015-10-25 14:57:30 UTC -->
