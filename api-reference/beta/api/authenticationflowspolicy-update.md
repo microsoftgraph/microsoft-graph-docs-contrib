@@ -65,9 +65,7 @@ Content-Type: application/json
 
 {
   "selfServiceSignUp": {
-    "isEnabled" : {
-        true
-    }
+    "isEnabled": true
   }
 }
 ```
