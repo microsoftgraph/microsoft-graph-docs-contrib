@@ -53,7 +53,7 @@ If successful, this method returns `201 Created` response code with the [message
   "name": "post_reply_message"
 }-->
 ```http
-POST https://graph.microsoft.com/beta/teams/{id}/channels/{id}/messages/{id}/replies
+POST https://graph.microsoft.com/v1.0/teams/{id}/channels/{id}/messages/{id}/replies
 Content-type: application/json
 
 {
@@ -76,7 +76,7 @@ Content-type: application/json
 Content-length: 160
 
 {
-    "@odata.context": "https://graph.microsoft.com/beta/$metadata#teams('123456-1234-1234-1234-123456789123')/channels('19%123456789012345678901236%40thread.skype')/messages('id-value')/replies/$entity",
+    "@odata.context": "https://graph.microsoft.com/v1.0/$metadata#teams('123456-1234-1234-1234-123456789123')/channels('19%123456789012345678901236%40thread.skype')/messages('id-value')/replies/$entity",
     "id": "id-value",
     "replyToId": null,
     "etag": "id-value",
