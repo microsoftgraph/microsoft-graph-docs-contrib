@@ -11,30 +11,16 @@ ms.prod: "microsoft-teams"
 
 Namespace: microsoft.graph
 
-Represents an individual chat message within a [channel](./channel.md) or [chat](/graph/api/resources/chat?view=graph-rest-beta). The chat message can be a root chat message or part of a reply thread that is defined by the **replyToId** property in the chat message.
+Represents an individual chat message within a [channel](./channel.md) or (in beta) [chat](/graph/api/resources/chat?view=graph-rest-beta). The chat message can be a root chat message or part of a reply thread that is defined by the **replyToId** property in the chat message.
 
 ## Methods
 
 | Method       | Return Type  |Description|
 |:---------------|:--------|:----------|
 |**Channel messages**| | |
-|[List channel chatMessage](/graph/api/channel-list-messages?view=graph-rest-beta) | [chatMessage](#chatmessage-resource-type) collection |List of all root chat messages in a channel.  |
-|[Get chatMessages in a channel delta](/graph/api/chatmessage-delta?view=graph-rest-beta) | [chatMessage](#chatmessage-resource-type) |Retrieve  chat messages (without replies) in a channel.|
-|[Create subscription for new channel messages](../api/subscription-post-subscriptions.md)  | [subscription](./subscription.md)  |  Listen for new and edited channel messages and reactions. |
-|[Get channel chatMessage](/graph/api/channel-get-message?view=graph-rest-beta) | [chatMessage](#chatmessage-resource-type)  | Retrieve a single chat message (without replies) from a channel. |  
 |[Create chatMessage in a channel](../api/channel-post-messages.md) | [chatMessage](#chatmessage-resource-type)| Create a new top-level chat message in a channel.|
 |**Channel message replies**| | |
-|[List replies to a chatMessage](/graph/api/channel-list-messagereplies?view=graph-rest-beta)]| [chatMessage](#chatmessage-resource-type) collection | List all replies to a chat message in a channel. |
-|[Get a reply to a chatMessage](/graph/api/channel-get-messagereply?view=graph-rest-beta)| [chatMessage](#chatmessage-resource-type) |Retrieve a single reply to a chat message in a channel. |
 |[Reply to a chatMessage in a channel](../api/channel-post-messagereply.md) | [chatMessage](#chatmessage-resource-type)| Reply to an existing chat message in a channel.|
-|**1:1 and group chat messages**| | |
-|[Create chatMessage in a chat](/graph/api/chat-post-messages?view=graph-rest-beta) | [chatMessage](#chatmessage-resource-type) | Send a chat message in an existing 1:1 or group chat conversation. |
-|[List chatMessages in a chat](/graph/api/chatmessage-list?view=graph-rest-beta) |[chatMessage](#chatmessage-resource-type)|List chat messages in a 1:1 or group chat.|
-|[Create subscription for new chat messages](../api/subscription-post-subscriptions.md) |[subscription](./subscription.md)|Listen for new and edited chat messages and reactions.|
-|[Get chatMessage in chat](/graph/api/chatmessage-get?view=graph-rest-beta)  |[chatMessage](#chatmessage-resource-type) |Retrieve a single chat message in a chat.|
-|**Hosted content**| | |
-|[List all hosted content](/graph/api/chatmessage-list-chatmessagehostedcontents?view=graph-rest-beta) |[chatMessageHostedContent](/graph/api/resources/chatmessagehostedcontent?view=graph-rest-beta) collection |Retrieve all hosted content in a chat message. |
-|[Get hosted content](/graph/api/chatmessagehostedcontent-get?view=graph-rest-beta) | [chatMessageHostedContent](/graph/api/resources/chatmessagehostedcontent?view=graph-rest-beta) |Retrieve hosted content from a chat message.  |
 
 ## Properties
 
