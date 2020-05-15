@@ -76,7 +76,6 @@ Content-Type: application/json
   "blockType": "response",
   "truncated": true
 } -->
-A successful response returns the following with milliseconds elapsed.
 ``` http
 No Content - 204
 ```
