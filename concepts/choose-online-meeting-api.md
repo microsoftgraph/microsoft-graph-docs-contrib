@@ -7,39 +7,45 @@ localization_priority: Priority
 
 # Choose an API in Microsoft Graph to create and join online meetings
 
-You can choose from two API sets in Microsoft Graph API to arrange and join an online meeting:
+You can choose from two APIs in Microsoft Graph to arrange and join online meetings:
 
-- Through the calendar API: use the [event](/graph/api/resources/event) resource
-- Through the cloud communications API: use the [onlineMeeting](/graph/api/resources/onlineMeeting) resource
+- Calendar API: use the [event](/graph/api/resources/event) resource.
+- Cloud communications API: use the [onlineMeeting](/graph/api/resources/onlineMeeting) resource.
 
 Both approaches support online meetings on Microsoft Teams or Skype. 
 
 Choose the calendar API for a convenient, streamlined integration with Outlook calendar:
-- To directly create or update an event as an online meeting in the Outlook calendar.
-- To enable attendees to choose to meet online or in person.
-- To enjoy full parity in the attendee experience of a join-Teams-meeting blob in the Outlook calendar event, to join meeting over the Internet or by dialing in.
+- Programmatic support:
+  - Directly create or update an event as an online meeting in the Outlook calendar, inserting a join-Teams-meeting blob in the Outlook calendar event.
+  - Provide properties for joining meeting over the Internet or by dialing in.
+- The resultant event provides full parity attendee UI experience, as in any event created through the Outlook calendar UI:
+  - Attendees can choose to meet online or in person.
+  - Attendees can click in the join-Teams-meeting blob in the Outlook calendar event, to join meeting over the Internet or by dialing in.
+  - Attendees can assume rich features of Teams, including video conferencing and meeting lobby.
 
-Choose the cloud communications API if your scenario calls for one or more of the following capabilities:
+Choose the cloud communications API if your scenario calls for programmatic support of one or more of the following capabilities:
 - Integrating the online meeting information with line of business or other apps, in addition to Outlook calendar.
 - The flexibility to meet online instantly without scheduling on a calendar.
 - Locale-based join information (preview).
-- Associating with a Microsoft Teams chat.
-- Additional security features such as meeting lobby and automating attendee admission (preview).
+- Joining meeting over the Internet or by dialing in.
 - Video-conferencing.
+- Additional security features such as meeting lobby and automating attendee admission (preview).
+- Associating meeting with a Microsoft Teams chat.
 
 The following table details the differences at the API level. 
 
 
-| Online meeting feature | Calendar API               | Cloud communication API              |
-|:-----------------------|:---------------------------|:-------------------------------------
-| Integration with a calendar item | Automatic integration with Outlook calendar items: 
-Create a new Outlook event or enable an existing event as an online meeting.
-Use isOnlineMeeting and onlineMeetingProvider properties
+| Online meeting feature | Calendar API (event resource) | Cloud communication API (onlineMeeting resource)             |
+|:-----------------------|:------------------------------|:--------------------------------------------------------------
+| Integration with a calendar item | Use the **isOnlineMeeting** and **onlineMeetingProvider** properties of an Outlook calendar [event](/graph/api/resources/event). <br> Automatically integrates with an Outlook calendar **event** when [creating](/graph/api/user-post-events) the event or [updating](/graph/api/event-update) it as an online meeting.<br> | [Online meeting information](/graph/api/resources/onlinemeetinginfo) is accessible independent of a particular calendar type. <br> [Create](/graph/api/application-post-onlinemeetings) an online meeting, then explicitly copy and make the online meeting information available in an Outlook calendar event or other calendars. <br> Available in preview: [createOrGet](/graph/api/onlinemeeting-createorget?view=graph-rest-beta) an online meeting, and use the returned **externalId** property to streamline embedding the resultant meeting in a third-party calendar. |
+| Meeting ad hoc | Always schedules the online meeting for the specified **event** start and end times, but the [online meeting information](/graph/api/resources/onlinemeetinginfo) in **onlineMeeting** is valid for use outside of the scheduled meeting time.| Through the **onlineMeeting** property, access **joinWebUrl** to start an ad hoc meeting that starts instantly.<br> Flexible for meeting ad hoc without having to set **startDateTime** and **endDateTime** of **onlineMeeting**. |
+| Locale-based join information | No direct API integration. | Use the `Accept-Language` HTTP header (preview) when creating an online meeting. <br> See [example](/graph/api/application-post-onlinemeetings?view=graph-rest-beta#example-2-create-an-online-meeting-with-user-token). |
+| Joining over Internet (VoIP) | Through the **onlineMeeting** property, access **joinUrl**.  | Use the **joinWebUrl** property. |
+| Joining by dial-in | Through the **onlineMeeting** property, access: <br> **conferenceId**, **quickDial**, **phones**, **tollFreeNumbers**, **tollNumber**. | Through the **audioConferencing** property, access: <br> - **conferenceId**, **tollFreeNumber**, **tollNumber**.<br> - Use the **dialinUrl** property for an externally-accessible web page that contains dial-in info to facilitate integration with third-party apps. |
+| Joining by video conferencing (audio and video) | No direct API integration. | Use the **videoTeleconferenceId** property. |
+| Meeting lobby and automating attendee admission into online meeting | No direct API integration.<br> In the injected join-Teams-meeting blob of the event, attendee can click **Meeting options** link to access meeting lobby, if enabled by the administrator. |  Use the **autoAdmittedUsers** property (preview).<br> Differentiates users from the organizer’s company and federated companies, and other users including anonymous users.  |
+| Relating to a Teams chat | No direct API integration. | Use the **chatInfo** property. |
 
-|
-
-
-Use the event resource to directly schedule an online meeting on the Outlook calendar, and let attendees join on the web on the Teams app or by dialing in via phone number. Use the onlineMeeting resource to set up an online meeting or video conference independent of a specific calendar type, and use richer API integration for locale-specific join information and meeting lobby admittance.
 
 ## See also
 - [Use Outlook to organize or attend meetings online](outlook-calendar-online-meetings.md)
