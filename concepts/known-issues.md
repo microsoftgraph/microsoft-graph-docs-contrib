@@ -9,9 +9,9 @@ localization_priority: Priority
 
 This article describes known issues with Microsoft Graph. 
 
-To report a known issue, see the [support](https://developer.microsoft.com/graph/support) page.
+To report a known issue, see the [Microsoft Graph support](https://developer.microsoft.com/graph/support) page.
 
-For information about the latest updates, see the [Microsoft Graph changelog](changelog.md).
+For information about the latest updates to the Microsoft Graph API, see the [Microsoft Graph changelog](changelog.md).
 
 ## Bookings
 
