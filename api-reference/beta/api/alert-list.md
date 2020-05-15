@@ -48,6 +48,17 @@ This method supports the following [OData query parameters](/graph/query-paramet
 - `$skip`
 - `$top` will return the aggregated top results from each security API provider.
 
+| Vendor Name      |$filter Keyword|
+|:----------|:----------|
+| Azure Information Protection | AIP|
+| Azure Advanced Threat Protection | Azure Advanced Threat Protection | 
+| Azure Security Center | ASC |
+| Microsoft Cloud App Security | MCAS |
+| Azure Active Directory Identity Protection | IPC |
+| Azure Sentinel | Azure Sentinel |
+| Microsoft Defender Advanced Threat Protection | Microsoft Defender ATP |
+| Office 365 |  Support currently available |
+
 To return an alternative property set, use the OData `$select` query parameter to specify the set of **alert** properties that you want.  For example, to return the **assignedTo**, **category**, and **severity** properties, add the following to your query: `$select=assignedTo,category,severity`.
 
 > **Note:** The `$top` OData query parameter has a limit of 1000 alerts. We recommend that you include only `$top` and not `$skip` in your first GET query. You can use `@odata.nextLink` for pagination. If you need to use `$skip`, it has a limit of 500 alerts. For example, `/security/alerts?$top=10&$skip=500` will return a `200 OK` response code, but `/security/alerts?$top=10&$skip=501` will return a `400 Bad Request` response code. For more information, see [Microsoft Graph Security API error responses](../resources/security-error-codes.md).
