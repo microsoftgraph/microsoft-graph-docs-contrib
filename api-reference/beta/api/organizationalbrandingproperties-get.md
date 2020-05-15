@@ -205,8 +205,14 @@ The following is an example of the response.
 } -->
 
 ```http
-HTTP/1.1 200
-<Image>
+HTTP/1.1 200 OK
+Content-Type: application/json
+
+{
+    "bannerLogo@odata.mediaContentType":"image/*",
+    "bannerLogo@odata.mediaReadLink": "https://graph.microsoft.com/beta/organization/d69179bf-f4a4-41a9-a9de-249c0f2efb1d/branding/bannerLogo",
+    "bannerLogo@odata.mediaEditLink": "https://graph.microsoft.com/beta/organization/d69179bf-f4a4-41a9-a9de-249c0f2efb1d/branding/localizations/fr/bannerLogo",
+}
 ```
 
 ### Example 5: Get **bannerLogo** when no **bannerLogo** is configured
