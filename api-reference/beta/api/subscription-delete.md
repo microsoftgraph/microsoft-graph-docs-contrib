@@ -108,6 +108,13 @@ Here is an example of the response.
 HTTP/1.1 204 No Content
 ```
 
+## Error responses
+
+See [Error Responses][error-response] for more info about
+how errors are returned.
+
+[error-response]: /graph/errors
+
 <!--
 {
   "type": "#page.annotation",

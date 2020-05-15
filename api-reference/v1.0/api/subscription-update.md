@@ -127,6 +127,13 @@ Content-length: 252
 }
 ```
 
+## Error responses
+
+See [Error Responses][error-response] for more info about
+how errors are returned.
+
+[error-response]: /graph/errors
+
 <!-- {
   "type": "#page.annotation",
   "description": "Update subscription",
