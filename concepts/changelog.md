@@ -45,7 +45,7 @@ For a summary of the value of these API changes, as well as recent tools, compon
 |Addition|v1.0|Added the **managedBrowser** property to the [managedAppProtection](/graph/api/resources/intune-mam-managedappprotection?view=graph-rest-1.0) entity|
 
 
-### Identity and access (Azure AD)
+### Groups
 
 | **Change type** | **Version**   | **Description**                          |
 | :-------------- | :------------ | :--------------------------------------- |
