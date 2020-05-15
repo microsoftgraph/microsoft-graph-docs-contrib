@@ -42,11 +42,13 @@ GET /security/alerts?$filter={property} eq '{property-value}'&{property} eq '{pr
 This method supports the following [OData query parameters](/graph/query-parameters) to help customize the response:
 
 - `$count`
-- `$filter`
 - `$orderby`
 - `$select`
 - `$skip`
 - `$top` will return the aggregated top results from each security API provider.
+- `$filter`
+
+The following table has a list of $filter keyword by each vendor name.
 
 | Vendor Name      |$filter Keyword|
 |:----------|:----------|
@@ -57,7 +59,7 @@ This method supports the following [OData query parameters](/graph/query-paramet
 | Azure Active Directory Identity Protection | IPC |
 | Azure Sentinel | Azure Sentinel |
 | Microsoft Defender Advanced Threat Protection | Microsoft Defender ATP |
-| Office 365 |  Support currently available |
+| Office 365 |  $filter is currently not supported |
 
 To return an alternative property set, use the OData `$select` query parameter to specify the set of **alert** properties that you want.  For example, to return the **assignedTo**, **category**, and **severity** properties, add the following to your query: `$select=assignedTo,category,severity`.
 
