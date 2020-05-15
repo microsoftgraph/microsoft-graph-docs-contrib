@@ -1,13 +1,17 @@
 ---
 title: "Known issues with Microsoft Graph"
-description: "This article describes known issues with Microsoft Graph. For information about the latest updates, see the Microsoft Graph changelog."
+description: "This article describes known issues with Microsoft Graph."
 author: "MSGraphDocsVTeam"
 localization_priority: Priority
 ---
 
 # Known issues with Microsoft Graph
 
-This article describes known issues with Microsoft Graph. For information about the latest updates, see the [Microsoft Graph changelog](changelog.md).
+This article describes known issues with Microsoft Graph. 
+
+To report a known issue, see the [Microsoft Graph support](https://developer.microsoft.com/graph/support) page.
+
+For information about the latest updates to the Microsoft Graph API, see the [Microsoft Graph changelog](changelog.md).
 
 ## Bookings
 
@@ -72,6 +76,9 @@ Currently, there is partial support for a calendar based on an Internet Calendar
 * You can add an ICS-based calendar to a user mailbox through the user interface, but not through the Microsoft Graph API.
 * [Listing the user's calendars](/graph/api/user-list-calendars?view=graph-rest-1.0) lets you get the **name**, **color** and **id** properties of each [calendar](/graph/api/resources/calendar?view=graph-rest-1.0) in the user's default calendar group, or a specified calendar group, including any ICS-based calendars. You cannot store or access the ICS URL in the calendar resource.
 * You can also [list the events](/graph/api/calendar-list-events?view=graph-rest-1.0) of an ICS-based calendar.
+
+### Attaching large files to events
+An app with delegated permissions returns `HTTP 403 Forbidden` when attempting to [attach large files](outlook-large-attachments.md) to an Outlook message or event that is in a shared or delegated mailbox. With delegated permissions, [createUploadSession](/graph/api/attachment-createuploadsession?view=graph-rest-1.0) succeeds only if the message or event is in the signed-in user's mailbox.
 
 ### onlineMeetingUrl property support for Microsoft Teams
 
@@ -305,7 +312,7 @@ As JSON batching matures, these limitations will be removed.
 ## Mail (Outlook)
 
 ### Attaching large files to messages
-An app with delegated permissions returns `HTTP 403 Forbidden` when attempting to [attach large files](outlook-large-attachments.md) to an Outlook message that is in a shared or delegated mailbox. With delegated permissions, [createUploadSession](/graph/api/attachment-createuploadsession?view=graph-rest-beta) succeeds only if the message is in the signed-in user's mailbox.
+An app with delegated permissions returns `HTTP 403 Forbidden` when attempting to [attach large files](outlook-large-attachments.md) to an Outlook message or event that is in a shared or delegated mailbox. With delegated permissions, [createUploadSession](/graph/api/attachment-createuploadsession?view=graph-rest-1.0) succeeds only if the message or event is in the signed-in user's mailbox.
 
 ### The comment parameter for creating a draft
 
