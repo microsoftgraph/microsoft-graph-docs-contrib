@@ -11,9 +11,7 @@ author: "nkramer"
 
 Namespace: microsoft.graph
 
-Represents an attachment to a chat message entity.
-
-An entity of type `chatMessageAttachment` is returned as part of the [Get channel messages](/graph/api/channel-list-messages?view=graph-rest-beta) API, as a part of [chatMessage](./chatmessage.md) entity.
+Represents an attachment to a [chatMessage](./chatmessage.md) entity.
 
 ## Properties
 | Property  | Type | Description|
