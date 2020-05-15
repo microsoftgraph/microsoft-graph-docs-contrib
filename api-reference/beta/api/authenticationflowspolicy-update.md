@@ -77,5 +77,5 @@ Content-Type: application/json
   "truncated": true
 } -->
 ``` http
-No Content - 204
+HTTP/1.1 204 No Content
 ```
