@@ -174,8 +174,12 @@ items:
         href: dynamics-business-central-concept-overview.md
         displayname: Dynamics, Dynamics 365 Business Central
       - name: Identity and access
-        href: azuread-identity-access-management-concept-overview.md
-        displaName: Azure AD, Microsoft identity platform
+        displayName: Azure AD, Microsoft identity platform
+        items:
+          - name: Overview
+            href: azuread-identity-access-management-concept-overview.md
+          - name: Authentication methods
+            href: authenticationmethods-get-started.md
       - name: Mail
         displayName: Outlook, Outlook mail
         items:
