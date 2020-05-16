@@ -21,9 +21,9 @@ One of the following permissions is required to call this API. To learn more, in
 
 |Permission Type|Permissions (from least to most privileged)|
 |---------|-------------|
-|Delegated (work or school account)|For **user** or **chat** resource:<br/>Chat.Read, Chat.ReadWrite<br/><br/>For **channel** resource:<br/>Group.Read.All, Group.ReadWrite.All|
+|Delegated (work or school account)| Chat.ReadBasic, Chat.Read, For **user** or **chat** resource:<br/>Chat.Read, Chat.ReadWrite, Chat.ReadWrite<br/><br/>For **channel** resource:<br/>Group.Read.All, Group.ReadWrite.All |
 |Delegated (personal Microsoft account)|Not supported|
-|Application| For **user** or **chat** resource:<br/>Chat.Read.All, Chat.ReadWrite.All<br/><br/>For **channel** resource:<br/>Group.Read.All, Group.ReadWrite.All |
+|Application| Chat.ReadBasic.All, Chat.Read.All, For **user** or **chat** resource:<br/>Chat.Read.All, Chat.ReadWrite.All, Chat.ReadWrite.All<br/><br/>For **channel** resource:<br/>Group.Read.All, Group.ReadWrite.All |
 
 > [!NOTE]
 > Before calling this API with application permissions, you must request access. For details, see [Protected APIs in Microsoft Teams](/graph/teams-protected-apis).
