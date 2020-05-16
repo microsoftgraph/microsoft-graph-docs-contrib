@@ -4470,6 +4470,17 @@ items:
           href: api/channel-patch.md
         - name: Delete channel
           href: api/channel-delete.md
+        - name: Send message
+          href: api/channel-post-messages.md
+        - name: Reply to message
+          href: api/channel-post-messagereply.md
+      - name: Chat message
+        href: resources/chatmessage.md
+        items:
+        - name: Send message
+          href: api/channel-post-messages.md
+        - name: Reply to message
+          href: api/channel-post-messagereply.md
       - name: App Catalog
         href: resources/teamsapp.md
         items:
