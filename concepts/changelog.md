@@ -74,7 +74,15 @@ For a summary of the value of these API changes, as well as recent tools, compon
 | Addition | beta | Added the **riskEventType** property to the [riskDetection](/graph/api/resources/riskdetection?view=graph-rest-beta) and [riskyUserHistoryItem](/graph/api/resources/riskyuserhistoryitem?view=graph-rest-beta) resources. Use this property instead of the **riskType** property to retrieve the type of Identity Protection risk detections.
 | Change | beta | Updated the **clientAppTypes** property in [conditionalaccessconditionset](/graph/api/resources/conditionalaccessconditionset?view=graph-rest-beta) to replace `modern` with `mobileAppsAndDesktopClients`. Removed `easUnsupported` and added `exchangeActiveSync`, which includes Exchange ActiveSync supported and unsupported platforms. |
 
-### Teamwork | Shifts
+### Teamwork (Microsoft Teams)
+
+| **Change type** | **Version** | **Description**                          |
+| :-------------- | :---------- | :--------------------------------------- |
+| Addition | v1.0 | Added support for sending [channel messages](/graph/api/resources/chatmessage?view=graph-rest-1.0) and channel message replies.|
+| Addition | v1.0 | Added support for getting the **filesFolder** of a [channel](/graph/api/resources/channel?view=graph-rest-1.0).|
+| Addition | beta | Added the **azureADAppId** property to [teamsAppDefinition](/graph/api/resources/teamsAppDefinition?view=graph-rest-beta).|
+
+### Teamwork | Shifts (Microsoft Teams)
 
 | **Change type** | **Version** | **Description**                          |
 | :-------------- | :---------- | :--------------------------------------- |
@@ -194,14 +202,15 @@ For a summary of the value of these API changes, as well as recent tools, compon
 | Addition | Beta | Added the **Meeting Created** and **Meeting Interacted** properties to the [getEmailActivityUserCounts](/graph/api/reportroot-getemailactivityusercounts?view=graph-rest-beta) API CSV entity. |
 | Addition | Beta | Added the **Meeting Created** and **Meeting Interacted** properties to the [getEmailActivityuserDetail](/graph/api/reportroot-getemailactivityuserdetail?view=graph-rest-beta) API CSV entity. |
 
+
 ### Sites and lists
+
 | **Change type** | **Version**   | **Description**                          |
 | :-------------- | :------------ | :--------------------------------------- |
 | Addition        | beta        | Added the **followedSites** navigation property to the [user](/graph/api/resources/user?view=graph-rest-beta) entity to [list the sites followed by the signed-in user](/graph/api/sites-list-followed?view=graph-rest-beta). |
 | Addition        | v1.0        | Added the **followedSites** navigation property to the [user](/graph/api/resources/user?view=graph-rest-1.0) entity to [list the sites followed by the signed-in user](/graph/api/sites-list-followed?view=graph-rest-1.0). |
 | Addition        | v1.0        | Added the **dataLocatonCode** property on the [siteCollection](/graph/api/resources/sitecollection?view=graph-rest-1.0) resource. |
 | Addition        | v1.0        | Added the **tenantId** property on the [sharepointIds](/graph/api/resources/sharepointids?view=graph-rest-1.0) resource. |
-
 
 ## March 2020
 
@@ -287,7 +296,6 @@ For a summary of the value of these API changes, as well as recent tools, compon
 | Addition        | v1.0        | Added the [follow](/graph/api/driveitem-follow?view=graph-rest-v1.0) action on [driveItem](/graph/api/resources/driveitem?view=graph-rest-v1.0). |
 | Addition        | v1.0        | Added the [unfollow](/graph/api/driveitem-unfollow?view=graph-rest-v1.0) action on [driveItem](/graph/api/resources/driveitem?view=graph-rest-v1.0). |
 
-
 ### Identity and access (Azure AD)
 
 | **Change type** | **Version**   | **Description**                          |
@@ -321,7 +329,6 @@ For a summary of the value of these API changes, as well as recent tools, compon
 | Change      | beta    | The [externalFile](/graph/api/resources/externalfile?view=graph-rest-beta) resource has been deprecated.                                                  |
 | Change      | beta    | The [externalItem](/graph/api/resources/externalfile?view=graph-rest-beta) resource now supports updating the **content** and **properties** properties.      |
 | Change      | beta    | Operations on [externalItem](/graph/api/resources/externalfile?view=graph-rest-beta) resources now return a `Retry-After` header when they are throttled. |
-
 
 ### Sites (OneDrive and SharePoint)
 
@@ -1513,7 +1520,7 @@ Debut of the places API which provides rich details for locations in apps.
 
 | **Change type** | **Version** | **Description**                  |
 |:----------------|:------------|:-----------------------------------------|
-| Addition        | Beta        | Added **urgent** property to the [chatMessageImportance](/graph/api/resources/chatMessageImportance?view=graph-rest-beta) enum.|
+| Addition        | Beta        | Added **urgent** property to the **chatMessageImportance** enum.|
 | Addition        | Beta        | Added **hostedContents** navigation property to the [chatMessage](/graph/api/resources/chatmessage?view=graph-rest-beta) entity.|
 | Addition        | Beta        | Added **chatMessageHostedContent** entity to represent content hosted by Microsoft Teams associated with a [chatMessage](/graph/api/resources/chatmessage?view=graph-rest-beta). |
 
