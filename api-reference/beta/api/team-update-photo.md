@@ -26,7 +26,7 @@ One of the following permissions is required to call this API. To learn more, in
 |:--------------------|:---------------------------------------------------------|
 |Delegated (work or school account) | TeamSettings.ReadWrite.All, Group.ReadWrite.All, Directory.ReadWrite.All |
 |Delegated (personal Microsoft account) | Not supported.    |
-|Application | TeamSettings.Edit.Group, TeamSettings.ReadWrite.All, Group.ReadWrite.All, Directory.ReadWrite.All |
+|Application | TeamSettings.Edit.Group ([RSC](aka.ms/teams-rsc)), TeamSettings.ReadWrite.All, Group.ReadWrite.All, Directory.ReadWrite.All |
 
 ## HTTP request
 
