@@ -20,9 +20,9 @@ One of the following permissions is required to call this API. To learn more, in
 
 |Permission type      | Permissions (from least to most privileged)              |
 |:--------------------|:---------------------------------------------------------|
-|Delegated (work or school account) | Group.ReadWrite.All, Group.Read.All    |
+|Delegated (work or school account) | TeamsTab.Read.All, Group.Read.All, TeamsTab.ReadWrite.All, Group.ReadWrite.All |
 |Delegated (personal Microsoft account) | Not supported.    |
-| Application                            | TeamsTab.Read.Group, Group.Read.All, Group.ReadWrite.All         |
+| Application                            | TeamsTab.Read.Group, TeamsTab.Read.All, Group.Read.All, TeamsTab.ReadWrite.All, Group.ReadWrite.All |
 
 > **Note**: This API supports admin permissions. Global admins and Microsoft Teams service admins can access teams that they are not a member of.
 
