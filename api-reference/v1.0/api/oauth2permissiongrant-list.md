@@ -53,8 +53,6 @@ If successful, this method returns a `200 OK` response code and collection of [o
 
 ### Request
 
-# [HTTP](#tab/http)
-
 <!-- {
   "blockType": "request",
   "name": "list_oauth2permissiongrants"
