@@ -54,8 +54,6 @@ If successful, this method returns `204 No Content` response code. It does not r
 
 ### Request
 
-# [HTTP](#tab/http)
-
 <!-- {
   "blockType": "request",
   "name": "update_oAuth2PermissionGrant"
