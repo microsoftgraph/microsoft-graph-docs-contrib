@@ -46,13 +46,13 @@ Do not supply a request body for this method.
 
 ## Response
 
-If successful, this method returns a `200 OK` response code and collection of [appRoleAssignment](../resources/approleassignment.md) objects in the response body.
+If successful, this method returns a `200 OK` response code and a collection of [appRoleAssignment](../resources/approleassignment.md) objects in the response body.
 
 ## Example
 
 ### Request
 
-Here is an example of the request to retrieve the app roles which have been assigned to a group.
+The following example shows a request to retrieve the app roles that have been assigned to a group.
 
 <!-- {
   "blockType": "request",
