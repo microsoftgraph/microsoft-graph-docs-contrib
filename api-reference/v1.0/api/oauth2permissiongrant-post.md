@@ -52,8 +52,6 @@ If successful, this method returns a 200-series response code and a new [oAuth2P
 
 ### Request
 
-# [HTTP](#tab/http)
-
 <!-- {
   "blockType": "request",
   "name": "post_oAuth2PermissionGrant"
