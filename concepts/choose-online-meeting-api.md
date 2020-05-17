@@ -12,7 +12,7 @@ Microsoft Graph offers two API sets that can arrange and join online meetings on
 - [Calendar API](outlook-calendar-online-meetings.md): use the [event](/graph/api/resources/event) resource.
 - [Cloud communications API](cloud-communications-online-meetings.md): use the [onlineMeeting](/graph/api/resources/onlineMeeting) resource.
 
-The choice is between a convenient programmatic way to set up an online meeting in the Outlook calendar, letting attendees assume the Teams or Skype UI experience after joining, versus richer programmatic integration of Teams or Skype features for a custom app experience or scenario.
+The choice is between a convenient programmatic way to set up an online meeting in the Outlook calendar, where attendees join and assume the Teams or Skype UI experience, versus richer programmatic integration of Teams or Skype features for a more customized app experience or scenario.
 
 ## Considerations when choosing an API for your scenario
 
