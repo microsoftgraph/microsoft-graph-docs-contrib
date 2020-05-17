@@ -28,8 +28,13 @@ See new SDK guidance on the following:
 - [Customizing SDK service client through HTTP middleware components](/graph/sdks/customize-client).
 
 ### Teamwork
-- See new guidance on [how to choose](choose-online-meeting-api.md) between the [calendar API](outlook-calendar-online-meetings.md) and [cloud communications API](cloud-communications-online-meetings.md) to organize and join online meetings on Microsoft Teams or Skype.
-- GA of the [shifts API](/graph/api/resources/shift?view=graph-rest-1.0) in v1.0 - use this API in production apps to create, update, and manage schedules of firstline workers, to let them stay in touch and collaborate effectively.
+- If your scenario involves online meetings on Teams, see new guidance on [how to choose](choose-online-meeting-api.md) between the [calendar API](outlook-calendar-online-meetings.md) and [cloud communications API](cloud-communications-online-meetings.md) to create and join online meetings.
+- [Send](/graph/api/channel-post-messages?view=graph-rest-1.0) and [reply](/graph/api/channel-post-messagereply?view=graph-rest-1.0) to messages in a [channel](/graph/api/resources/channel?view=graph-rest-1.0).
+- Get the OneDrive for Business location of the files for a [channel](/graph/api/resources/channel?view=graph-rest-1.0), by using the **fileFolder** navigation property.
+
+### Teamwork | Shifts
+GA of the [shifts API](/graph/api/resources/shift?view=graph-rest-1.0) in v1.0 - use this API in production apps to create, update, and manage schedules of firstline workers, to let them stay in touch and collaborate effectively.
+
 
 ## May 2020: New in preview only
 
@@ -37,10 +42,22 @@ See new SDK guidance on the following:
 - The [printer](/graph/api/resources/printer?view=graph-rest-beta) and [printerShare](/graph/api/resources/printershare?view=graph-rest-beta) resources are now in parity and have the same properties as each other.
 - Some property and type name clean-up around printer shares:
   - Use the **shared** navigation property of [print](/graph/api/resources/print?view=graph-rest-beta) to get the list of printer shares registered in the tenant. 
-  - See details in the [May](changelog.md#may-2020).
+  - See details in the [May](changelog.md#may-2020) changelog.
 
 ### Devices and apps | Corporate management
 Intune [May](changelog.md#may-2020) updates in beta.
+
+### Groups
+- [Evaluate](/graph/api/group-evaluatedynamicmembership?view=graph-rest-beta) whether a user or device is or would be a member of a dynamic group, using the existing rule for the [group](/graph/api/resources/group?view=graph-rest-beta) or a specified rule. [Rule-based dynamic membership](/azure/active-directory/users-groups-roles/groups-dynamic-membership) reduces administrative overhead of adding and removing members.
+- When creating an Office 365 [group](/graph/api/resources/group?view=graph-rest-beta), configure the behaviors of the group by specifying them in the **resourceBehaviorOptions** property. For example, allowing members to post, subscribing new members to conversation, disabling welcome email, and hiding the group in Outlook experiences.
+- Also on group creation, specify the resources to provision in the **resourceProvisioningOptions** property, that are normally not part of the default [group](/graph/api/resources/group?view=graph-rest-beta) creation. Currently supported is provisioning a group as a [team](/graph/api/resources/team?view=graph-rest-beta) with Microsoft Teams capabilities.
+
+### Identity and access
+- As part of the [identity protection API](/graph/api/resources/identityprotection-root?view=graph-rest-beta), use the **riskEventType** property to [get the type of risk detected](/graph/api/riskdetection-get?view=graph-rest-beta), or [get the type of risk in a user's history](/graph/api/riskyuser-list-history?view=graph-rest-beta). Do not use the **riskType** property as it has been deprecated.
+- Specify client application types in the **clientAppTypes** property of the [condition set](/graph/api/resources/conditionalaccessconditionset?view=graph-rest-beta) for a [conditional access policy](/graph/api/resources/conditionalaccesspolicy?view=graph-rest-beta).
+
+### Teamwork
+Teams apps that [support single sign-on (SSO)](/microsoftteams/platform/tabs/how-to/authentication/auth-aad-sso) can specify the `WebApplicationInfo.id` from the Teams app manifest, in the **azureADAppId** property of the [teamsAppDefinition](/graph/api/resources/teamsappdefinition?view=graph-rest-beta).
 
 
 ## April 2020: New and generally available
@@ -57,6 +74,10 @@ Intune [May](changelog.md#may-2020) updates in beta.
 
 ### Files
 - [Check out](/graph/api/driveitem-checkout?view=graph-rest-1.0) or [check in](/graph/api/driveitem-checkin?view=graph-rest-1.0) a file to OneDrive to manage updating the file and making updates available to others when the updates are ready.
+- Apply optional password and expiration date/time as parameters of the [invite](/graph/api/driveitem-invite?view=graph-rest-1.0) and [create sharing link](/graph/api/driveitem-createlink?view=graph-rest-1.0) actions to share a [driveItem](/graph/api/resources/driveitem?view=graph-rest-1.0).
+- Get or set password and expiration date/time of a [permission](/graph/api/resources/permission?view=graph-rest-1.0), and track the [identitySet](/graph/api/resources/identityset?view=graph-rest-1.0) of users granted the permission to share a **driveItem**.
+- Get the [permission](/graph/api/resources/permission?view=graph-rest-1.0) of a [shared drive item](/graph/api/resources/shareddriveitem?view=graph-rest-1.0) by using the **permission** navigation property.
+- Limit users with a [sharing link](/graph/api/resources/sharinglink?view=graph-rest-1.0) to only view and may not download the contents of a shared**driveItem** on OneDrive for Business or SharePoint.
 
 ### Identity and access
 - To manage roles and assign access to resources in role-based access control (RBAC) providers such as Microsoft Intune, use [unifiedRoleAssignmentMultiple](/graph/api/resources/unifiedroleassignmentmultiple?view=graph-rest-1.0). The **unifiedRoleAssignmentMultiple** resource supports defining a single role over an array of scopes, and assigning the role to multiple principals (such as users).
@@ -66,7 +87,9 @@ Intune [May](changelog.md#may-2020) updates in beta.
 Add [file attachments up to 150MB](outlook-large-attachments.md) to a [message](/graph/api/resources/message?view=graph-rest-1.0).
 
 ### Sites and lists
-[List sites](/graph/api/sites-list-followed?view=graph-rest-1.0) that the signed-in user has followed.
+- [List sites](/graph/api/sites-list-followed?view=graph-rest-1.0) that the signed-in user has followed.
+- Identify the geographic region of a [site collection](/graph/api/resources/sitecollection?view=graph-rest-1.0) by using the **dataLocationCode** property.
+- Identify the tenant of a file, folder, or other item on SharePoint by accessing the **tenantId** property that is part of the **sharepointIds** of a [driveItem](/graph/api/resources/driveitem?view=graph-rest-1.0).
 
 ## April 2020: New in preview only
 
