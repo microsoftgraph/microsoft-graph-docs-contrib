@@ -21,9 +21,9 @@ One of the following permissions is required to call this API. To learn more, in
 
 |Permission type      | Permissions (from least to most privileged)              |
 |:--------------------|:---------------------------------------------------------|
-|Delegated (work or school account) | Files.Read, Files.Read.All, Sites.Read.All, Group.Read.All, Files.ReadWrite, Files.ReadWrite.All, Sites.ReadWrite.All, Files.ReadWrite.All </br>Group.Read.All, Group.ReadWrite.All, Group.ReadWrite.All </br>Sites.Read.All |
+|Delegated (work or school account) | Files.Read.All, Files.ReadWrite.All, Sites.Read.All, Sites.ReadWrite.All, Directory.Read.All, Directory.ReadWrite.All, Group.Read.All, Group.ReadWrite.All |
 |Delegated (personal Microsoft account) | Files.Read, Files.ReadWrite, Files.Read.All, Files.ReadWrite.All    |
-|Application | Files.Read.All, Sites.Read.All, Group.Read.All, Files.ReadWrite.All, Sites.ReadWrite.All, Files.ReadWrite.All </br>Group.Read.All, Group.ReadWrite.All, Group.ReadWrite.All </br>Sites.Read.All |
+|Application | Files.Read.All, Files.ReadWrite.All, Sites.Read.All, Sites.ReadWrite.All, File.Read.Group, Directory.Read.All, Directory.ReadWrite.All, Group.Read.All, Group.ReadWrite.All |
 
 > Note:
 > The `/teams` endpoint requires the use of Group.Read.All or Group.ReadWrite.All permissions.
