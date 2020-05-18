@@ -22,7 +22,7 @@ One of the following permissions is required to call this API. To learn more, in
 |Permission Type|Permissions (from least to most privileged)|
 |---------|-------------|
 |Delegated (work or school account)| Chat.ReadBasic, Chat.Read, Chat.ReadWrite |
-|Delegated (personal Microsoft account)|Not supported|
+|Delegated (personal Microsoft account)|Not supported.|
 |Application| Chat.ReadBasic.All, Chat.Read.All, Chat.ReadWrite.All |
 
 > [!NOTE]
