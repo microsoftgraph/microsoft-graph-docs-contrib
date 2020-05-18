@@ -9,6 +9,8 @@ doc_type: "apiPageType"
 
 # application: removeKey
 
+Namespace: microsoft.graph
+
 Remove a key credential from an [application](../resources/application.md). This method along with [addKey](application-addkey.md) can be used by an application to automate rolling its expiring keys.
 
 > [!NOTE]

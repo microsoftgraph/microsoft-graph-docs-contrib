@@ -86,7 +86,7 @@ This resource supports using [delta query](/graph/delta-query-overview) to track
 |appRoles|[appRole](approle.md) collection|The roles exposed by the application which this service principal represents. For more information see the **appRoles** property definition on the [application](application.md) entity. Not nullable. |
 | deletedDateTime | DateTimeOffset | The date and time the service principal was deleted. Read-only. |
 |displayName|String|The display name for the service principal.|
-|endpoints|[endPoint](endpoint.md) collection|Endpoints available for discovery. Services like Sharepoint populates this property with tenant specific endpoints that other services can discover and use. This is a contained entity type collection.|
+|endpoints|[endpoint](endpoint.md) collection|Endpoints available for discovery. Services like Sharepoint populates this property with tenant specific endpoints that other services can discover and use. This is a contained entity type collection.|
 |errorUrl|String|Deprecated. Don't use.|
 |homepage|String|Home page or landing page of the application.|
 | id | String | The unique identifier for the service principal. Inherited from [directoryObject](directoryobject.md). Key. Not nullable. Read-only. |

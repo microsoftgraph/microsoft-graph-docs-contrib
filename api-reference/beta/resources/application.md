@@ -112,7 +112,7 @@ The following is a JSON representation of the resource.
 
 ```json
 {
-  "addIns": {"@odata.type": "microsoft.graph.addIn"},
+  "addIns": [{"@odata.type": "microsoft.graph.addIn"}],
   "api": {"@odata.type": "microsoft.graph.apiApplication"},
   "appId": "String",
   "appRoles": [{"@odata.type": "microsoft.graph.appRole"}],

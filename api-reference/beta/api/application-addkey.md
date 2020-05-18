@@ -9,6 +9,8 @@ doc_type: "apiPageType"
 
 # application: addKey
 
+Namespace: microsoft.graph
+
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 Add a key credential to an [application](../resources/application.md). This method, along with [removeKey](application-removekey.md), can be used by an application to automate rolling its expiring keys.
