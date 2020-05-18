@@ -156,7 +156,6 @@ This resource supports using [delta query](/graph/delta-query-overview) to track
   "appRoleAssignmentRequired": true,
   "appRoles": [{"@odata.type": "microsoft.graph.appRole"}],
   "displayName": "string",
-  "endpoints": [{"@odata.type": "microsoft.graph.endpoint"}],
   "errorUrl": "string",
   "homepage": "string",
   "id": "string (identifier)",
