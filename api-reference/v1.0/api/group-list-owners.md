@@ -11,7 +11,7 @@ doc_type: apiPageType
 
 Namespace: microsoft.graph
 
-Retrieve a list of the group's owners. The owners are a set of non-admin users who are allowed to modify the group object. 
+Retrieve a list of the group's owners. The owners are a set of non-admin users or service principals who are allowed to modify the group object. Currently service principals are not listed as group owners due to staged roll-out of service principals on Graph V1.0 endpoint.
 
 ## Permissions
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
