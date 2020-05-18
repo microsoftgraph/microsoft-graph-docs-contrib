@@ -24,9 +24,9 @@ One of the following permissions is required to call this API. To learn more, in
 
 |Permission Type|Permissions (from least to most privileged)|
 |---------|-------------|
-|Delegated (work or school account)| For **user** or **chat** resource:<br/>Chat.Read, ChannelMember.ReadWrite.All, Chat.ReadWrite<br/><br/>For **channel** resource:<br/>Group.Read.All, Group.ReadWrite.All, Directory.ReadWrite.All |
+|Delegated (work or school account)| ChannelMember.ReadWrite.All, Directory.ReadWrite.All, Group.ReadWrite.All |
 |Delegated (personal Microsoft account)|Not supported|
-|Application| For **user** or **chat** resource:<br/>Chat.Read.All, ChannelMember.ReadWrite.All, Chat.ReadWrite.All<br/><br/>For **channel** resource:<br/>Group.Read.All, Group.ReadWrite.All, Directory.ReadWrite.All |
+|Application| Member.ReadWrite.Group ([RSC](https://aka.ms/teams-rsc)), ChannelMember.ReadWrite.All, Directory.ReadWrite.All, Group.ReadWrite.All |
 
 ## HTTP request
 <!-- { "blockType": "ignored"} -->
