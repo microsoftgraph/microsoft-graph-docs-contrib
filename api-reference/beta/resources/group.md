@@ -60,6 +60,7 @@ This resource supports:
 |[Get endpoint](../api/endpoint-get.md) | [endpoint](endpoint.md) | Read properties and relationships of an endpoint object. |
 |[validateProperties](../api/group-validateproperties.md)|JSON| Validate an Office 365 group's display name or mail nickname complies with naming policies. |
 |[assignLicense](../api/group-assignlicense.md) | [group](group.md) |Add or remove subscriptions for the group. You can also enable and disable specific plans associated with a subscription.|
+|[evaluateDynamicMembership](../api/group-evaluatedynamicmembership.md) | [evaluateDynamicMembershipResult](evaluatedynamicmembershipresult.md) | Evaluate whether a user or device is or would be a member of a dynamic group. |
 |**App role assignments**| | |
 |[List appRoleAssignments](../api/group-list-approleassignments.md) |[appRoleAssignment](approleassignment.md) collection| Get the apps and app roles which this group has been assigned.|
 |[Add appRoleAssignment](../api/group-post-approleassignments.md) |[appRoleAssignment](approleassignment.md)| Assign an app role to this group.|]

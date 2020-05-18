@@ -96,7 +96,7 @@ Content-type: application/json
 <!--
 {
   "type": "#page.annotation",
-  "description": "List servicePrincipal memberOf",
+  "description": "List servicePrincipal transitiveMemberOf",
   "keywords": "",
   "section": "documentation",
   "tocPath": "",

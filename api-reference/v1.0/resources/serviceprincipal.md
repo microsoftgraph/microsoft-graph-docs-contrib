@@ -123,7 +123,6 @@ Here is a JSON representation of the resource
   "appRoleAssignmentRequired": true,
   "appRoles": [{"@odata.type": "microsoft.graph.appRole"}],
   "displayName": "string",
-  "endpoints": [{"@odata.type": "microsoft.graph.endpoint"}],
   "homepage": "string",
   "id": "string (identifier)",
   "info": {"@odata.type": "microsoft.graph.informationalUrl"},

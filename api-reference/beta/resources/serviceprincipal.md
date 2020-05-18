@@ -148,7 +148,7 @@ This resource supports using [delta query](/graph/delta-query-overview) to track
 {
   "accountEnabled": true,
   "addIns": [{"@odata.type": "microsoft.graph.addIn"}],
-  "alternativeNames": ,
+  "alternativeNames": "string",
   "appDisplayName": "string",
   "appId": "string",
   "appOwnerOrganizationId": "guid",
