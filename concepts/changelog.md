@@ -59,7 +59,6 @@ For a summary of the value of these API changes, as well as recent tools, compon
 |Addition|v1.0|Added the **customBrowserProtocol** property to the [iosManagedAppProtection](/graph/api/resources/intune-mam-iosmanagedappprotection?view=graph-rest-1.0) entity|
 |Addition|v1.0|Added the **managedBrowser** property to the [managedAppProtection](/graph/api/resources/intune-mam-managedappprotection?view=graph-rest-1.0) entity|
 
-
 ### Groups
 
 | **Change type** | **Version**   | **Description**                          |
@@ -73,6 +72,7 @@ For a summary of the value of these API changes, as well as recent tools, compon
 | :-------------- | :------------ | :--------------------------------------- |
 | Addition | beta | Added the **riskEventType** property to the [riskDetection](/graph/api/resources/riskdetection?view=graph-rest-beta) and [riskyUserHistoryItem](/graph/api/resources/riskyuserhistoryitem?view=graph-rest-beta) resources. Use this property instead of the **riskType** property to retrieve the type of Identity Protection risk detections.
 | Change | beta | Updated the **clientAppTypes** property in [conditionalaccessconditionset](/graph/api/resources/conditionalaccessconditionset?view=graph-rest-beta) to replace `modern` with `mobileAppsAndDesktopClients`. Removed `easUnsupported` and added `exchangeActiveSync`, which includes Exchange ActiveSync supported and unsupported platforms. |
+| Addition | beta | Added Application.Read.All and Application.ReadWrite.All permissions to [application-list](/graph/api/application-list?view=graph-rest-beta)<br>Added support for `$count`, `$search`, and `$filter` query parameters to: <br><ul><li>[List applications](/graph/api/application-list?view=graph-rest-beta)</li><li>[List device groups](/graph/api/device-list-memberof?view=graph-rest-beta)</li><li>[List device transitive groups](/graph/api/device-list-transitivememberof?view=graph-rest-beta)</li><li>[List devices](/graph/api/device-list?view=graph-rest-beta)</li><li>[List group memberOf](/graph/api/group-list-memberof?view=graph-rest-beta)</li><li>[List group members](/graph/api/group-list-members?view=graph-rest-beta)</li><li>[List group transitive memberOf](/graph/api/group-list-transitivememberof?view=graph-rest-beta)</li><li>[List group transitive members](/graph/api/group-list-transitivemembers?view=graph-rest-beta)</li><li>[List groups](/graph/api/group-list?view=graph-rest-beta)</li><li>[List orgContacts](/graph/api/orgcontact-list?view=graph-rest-beta)</li><li>[List servicePrincipal memberOf](/graph/api/serviceprincipal-list-memberof?view=graph-rest-beta)</li><li>[List servicePrincipal transitive memberOf](/graph/api/serviceprincipal-list-transitivememberof?view=graph-rest-beta)</li><li>[List servicePrincipals](/graph/api/serviceprincipal-list?view=graph-rest-beta)</li><li>[List user memberOf](/graph/api/user-list-memberof?view=graph-rest-beta)</li><li>[List user transitive memberOf](/graph/api/user-list-transitivememberof?view=graph-rest-beta)</li><li>[List users](/graph/api/user-list?view=graph-rest-beta)</li></ul><br>Added examples for using OData cast to: <ul><li>[List group memberOf](/graph/api/group-list-memberof?view=graph-rest-beta)</li><li>[List group members](/graph/api/group-list-members?view=graph-rest-beta)</li><li>[List group transitive memberOf](/graph/api/group-list-transitivememberof?view=graph-rest-beta)</li><li>[List servicePrincipal memberOf](/graph/api/serviceprincipal-list-memberof?view=graph-rest-beta)</li><li>[List servicePrincipal transitive memberOf](/graph/api/serviceprincipal-list-transitivememberof?view=graph-rest-beta)</li><li>[List user memberOf](/graph/api/user-list-memberof?view=graph-rest-beta)</li><li>[List user transitive memberOf](/graph/api/user-list-transitivememberof?view=graph-rest-beta)</li></ul> |
 
 ### Teamwork (Microsoft Teams)
 
@@ -177,7 +177,6 @@ For a summary of the value of these API changes, as well as recent tools, compon
 | Addition | v1.0 | Added the [tokenIssuancePolicy](/graph/api/resources/tokenissuancepolicy?view=graph-rest-1.0) resource type, which controls the characteristics of SAML tokens issued by Azure AD. This allows you to set the signing algorithm, signing options, or SAML token version to be used to issue the SAML token.|
 | Addition | beta | Added the [authenticationMethod](/graph/api/resources/authenticationmethod?view=graph-rest-beta), [passwordAuthenticationMethod](/graph/api/resources/passwordauthenticationmethod?view=graph-rest-beta), and [phoneAuthenticationMethod](/graph/api/resources/phoneauthenticationmethod?view=graph-rest-beta) resources and associated methods.
 | Addition | beta | Added the **createdByAppId** property to the [group](/graph/api/resources/group?view=graph-rest-beta) entity.|
-
 
 ### Mail
 
@@ -298,12 +297,12 @@ For a summary of the value of these API changes, as well as recent tools, compon
 
 ### Identity and access (Azure AD)
 
-| **Change type** | **Version**   | **Description**                          |
+| **Change type** | **Version**   | **Description** |
 |:---|:---|:---|
 | Addition | beta and v1.0 | Added the **authenticationRequirement** property and the **riskEventTypes_v2** property to the [signin](/graph/api/resources/signin?view=graph-rest-1.0) entity. |
 | Addition | beta and v1.0 | Added support for [delta queries for orgContact](/graph/api/orgcontact-delta?view=graph-rest-1.0).|
 | Addition | v1.0 | Added new user permission [User.ManageIdentities.All](/graph/permissions-reference#user-permissions).|
-| Addition | beta | Added the PrivilegedAccess.Read.AzureResources application permission for [Privileged Identity Management - Azure resources](/graph/api/resources/privilegedidentitymanagement-resources?view=graph-rest-beta).|
+| Addition | beta | Added the PrivilegedAccess.Read.AzureResources application permission for [Privileged Identity Management - Azure resources](/graph/api/resources/privilegedidentitymanagement-resources?view=graph-rest-beta). |
 | Addition | beta | Added the [Auditlogs.Read.All](/graph/permissions-reference#user-permissions) permission for listing the sign-in activity of a user.|
 | Addition | beta | Added the [identitySecurityDefaultsEnforcementPolicy API](/graph/api/resources/identitysecuritydefaultsenforcementpolicy?view=graph-rest-beta), which represents Azure Active Directory security defaults policy.|
 | Addition | beta | Added support for the `$top` and `$skiptoken` filters to support pagination on the [List provisioningObjectSummary](/api-reference/beta/api/provisioningobjectsummary-list) method. |
