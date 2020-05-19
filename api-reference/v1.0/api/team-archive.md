@@ -62,7 +62,7 @@ If archiving is started successfully, this method returns a `202 Accepted` respo
 #### Request
 The following is an example of a request.
 <!-- {
-  "blockType": "ignored",
+  "blockType": "request",
   "name": "archive_team"
 }-->
 ```http
@@ -70,6 +70,11 @@ POST https://graph.microsoft.com/v1.0/teams/{id}/archive
 ```
 #### Response
 The following is an example of a response.
+
+<!-- {
+  "blockType": "response",
+  "name": "archive_team"
+}-->
 ```http
 HTTP/1.1 202 Accepted
 Location: /teams({id})/operations({opId})

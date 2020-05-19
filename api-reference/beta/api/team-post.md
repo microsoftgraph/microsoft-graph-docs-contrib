@@ -55,10 +55,14 @@ If successful, this API returns a `202 Accepted` response containing a link to t
 The following is an example of a minimal request. By omitting other properties, the client is implicitly taking defaults from the pre-defined template represented by `template`.
 
 #### Request
-
+<!-- {
+  "blockType": "request",
+  "name": "create_team_post"
+}-->
 ```http
 POST https://graph.microsoft.com/beta/teams
 Content-Type: application/json
+
 {
   "template@odata.bind": "https://graph.microsoft.com/beta/teamsTemplates('standard')",
   "displayName": "My Sample Team",
@@ -67,14 +71,17 @@ Content-Type: application/json
 ```
 
 ##### Response
-
+<!-- {
+  "blockType": "response",
+  "name": "create_team_post",
+  "@odata.type": "microsoft.graph.team"
+}-->
 ```http
 HTTP/1.1 202 Accepted
 Content-Type: application/json
 Location: /teams/{teamId}/operations/{operationId}
 Content-Location: /teams/{teamId}
-{
-}
+Content-Length: 0
 ```
 
 ### Example 2: Application permissions
@@ -82,10 +89,14 @@ Content-Location: /teams/{teamId}
 The following is an example of a minimal request using application permissions. By omitting other properties, the client is implicitly taking defaults from the predefined template represented by `template`. When issuing a request with application permissions, a [user](../resources/user.md) must be specified in the `owners` collection.
 
 #### Request
-
+<!-- {
+  "blockType": "request",
+  "name": "create_team_post_minimal"
+}-->
 ```http
 POST https://graph.microsoft.com/beta/teams
 Content-Type: application/json
+
 {
   "template@odata.bind": "https://graph.microsoft.com/beta/teamsTemplates('standard')",
   "displayName": "My Sample Team",
@@ -97,14 +108,17 @@ Content-Type: application/json
 ```
 
 #### Response
-
+<!-- {
+  "blockType": "response",
+  "name": "create_team_post_minimal",
+  "@odata.type": "microsoft.graph.team"
+}-->
 ```http
 HTTP/1.1 202 Accepted
 Content-Type: application/json
 Location: /teams/{teamId}/operations/{operationId}
 Content-Location: /teams/{teamId}
-{
-}
+Content-Length: 0
 ```
 
 ### Example 3: Create a team with multiple channels, installed apps, and pinned tabs using delegated permissions
@@ -112,10 +126,14 @@ Content-Location: /teams/{teamId}
 The following is a request with a full payload. The client can override values in the base template and add to array-valued items to the extent allowed by validation rules for the `specialization`.
 
 #### Request
-
+<!-- {
+  "blockType": "request",
+  "name": "create_team_post_full_payload"
+}-->
 ```http
 POST https://graph.microsoft.com/beta/teams
 Content-Type: application/json
+
 {
     "template@odata.bind": "https://graph.microsoft.com/beta/teamsTemplates('standard')",
     "visibility": "Private",
@@ -198,14 +216,17 @@ Content-Type: application/json
 ```
 
 #### Response
-
+<!-- {
+  "blockType": "response",
+  "name": "create_team_post_full_payload",
+  "@odata.type": "microsoft.graph.team"
+}-->
 ```http
 HTTP/1.1 202 Accepted
 Content-Type: application/json
 Location: /teams/{teamId}/operations/{operationId}
 Content-Location: /teams/{teamId}
-{
-}
+Content-Length: 0
 ```
 
 ### Example 4: Create a team from group
@@ -220,10 +241,14 @@ A few thing to note about this call:
 
 
 #### Request
-
+<!-- {
+  "blockType": "request",
+  "name": "create_team_from_group"
+}-->
 ```http
 POST https://graph.microsoft.com/beta/teams
 Content-Type: application/json
+
 {
   "template@odata.bind": "https://graph.microsoft.com/beta/teamsTemplates('standard')",
   "group@odata.bind": "https://graph.microsoft.com/v1.0/groups('groupId')"
@@ -231,14 +256,17 @@ Content-Type: application/json
 ```
 
 #### Response
-
+<!-- {
+  "blockType": "response",
+  "name": "create_team_from_group",
+  "@odata.type": "microsoft.graph.team"
+}-->
 ```http
 HTTP/1.1 202 Accepted
 Content-Type: application/json
 Location: /teams/{teamId}/operations/{operationId}
 Content-Location: /teams/{teamId}
-{
-}
+Content-Length: 0
 ```
 
 ### Example 5: Create a team from a group with multiple channels, installed apps, and pinned tabs
@@ -248,10 +276,14 @@ The following is a request that converts an existing group with extended propert
 To learn more about supported base template types and supported properties, see [Get started with Teams templates](/MicrosoftTeams/get-started-with-teams-templates).
 
 #### Request
-
+<!-- {
+  "blockType": "request",
+  "name": "convert_team_from_group"
+}-->
 ```http
 POST https://graph.microsoft.com/beta/teams
 Content-Type: application/json
+
 {
   "template@odata.bind": "https://graph.microsoft.com/beta/teamsTemplates('standard')",
   "group@odata.bind": "https://graph.microsoft.com/v1.0/groups('groupId')",
@@ -284,14 +316,17 @@ Content-Type: application/json
 ```
 
 #### Response
-
+<!-- {
+  "blockType": "response",
+  "name": "convert_team_from_group",
+  "@odata.type": "microsoft.graph.team"
+}-->
 ```http
 HTTP/1.1 202 Accepted
 Content-Type: application/json
 Location: /teams/{teamId}/operations/{operationId}
 Content-Location: /teams/{teamId}
-{
-}
+Content-Length: 0
 ```
 
 ### Example 6: Create a team with a non-standard base template type
@@ -303,10 +338,14 @@ To create a team from a non-standard base template, you’ll want to change the 
 To learn more about supported base template types, see [Get started with Teams templates](/MicrosoftTeams/get-started-with-teams-templates).
 
 #### Request
-
+<!-- {
+  "blockType": "request",
+  "name": "convert_team_from_non_standard"
+}-->
 ```http
 POST https://graph.microsoft.com/beta/teams
 Content-Type: application/json
+
 {
   "template@odata.bind": "https://graph.microsoft.com/beta/teamsTemplates('educationClass')",
   "displayName": "My Class Team",
@@ -315,14 +354,17 @@ Content-Type: application/json
 ```
 
 #### Response
-
+<!-- {
+  "blockType": "response",
+  "name": "convert_team_from_non_standard",
+  "@odata.type": "microsoft.graph.team"
+}-->
 ```http
 HTTP/1.1 202 Accepted
 Content-Type: application/json
 Location: /teams/{teamId}/operations/{operationId}
 Content-Location: /teams/{teamId}
-{
-}
+Content-Length: 0
 ```
 
 ### Example 7: Create a team with a non-standard base template type with extended properties
@@ -332,10 +374,14 @@ Base template types can be extended with additional properties, enabling you to 
 To learn more about supported base template types and supported properties, see [Get started with Teams templates](/MicrosoftTeams/get-started-with-teams-templates).
 
 #### Request
-
+<!-- {
+  "blockType": "request",
+  "name": "convert_team_from_non_standard2"
+}-->
 ```http
 POST https://graph.microsoft.com/beta/teams
 Content-Type: application/json
+
 {
   "template@odata.bind": "https://graph.microsoft.com/beta/teamsTemplates('educationClass')",
   "displayName": "My Class Team",
@@ -369,14 +415,17 @@ Content-Type: application/json
 ```
 
 #### Response
-
+<!-- {
+  "blockType": "response",
+  "name": "convert_team_from_non_standard2",
+  "@odata.type": "microsoft.graph.team"
+}-->
 ```http
 HTTP/1.1 202 Accepted
 Content-Type: application/json
 Location: /teams/{teamId}/operations/{operationId}
 Content-Location: /teams/{teamId}
-{
-}
+Content-Length: 0
 ```
 
 ## See also
