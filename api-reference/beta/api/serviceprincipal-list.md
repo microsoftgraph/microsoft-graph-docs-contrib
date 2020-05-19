@@ -19,11 +19,11 @@ Retrieve a list of [servicePrincipal](../resources/serviceprincipal.md) objects.
 
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
 
-|Permission type      | Permissions (from least to most privileged)              |
+| Permission type | Permissions (from least to most privileged) |
 |:--------------------|:---------------------------------------------------------|
-|Delegated (work or school account) | Application.Read.All, Application.ReadWrite.All, Directory.Read.All, Directory.ReadWrite.All, Directory.AccessAsUser.All    |
-|Delegated (personal Microsoft account) | Not supported.    |
-|Application | Application.Read.All, Application.ReadWrite.All, Directory.Read.All, Directory.ReadWrite.All |
+| Delegated (work or school account) | Directory.Read.All, Directory.ReadWrite.All, Directory.AccessAsUser.All |
+| Delegated (personal Microsoft account) | Not supported. |
+| Application | Application.ReadWrite.All, Directory.Read.All |
 
 ## HTTP request
 
@@ -31,14 +31,17 @@ One of the following permissions is required to call this API. To learn more, in
 ```http
 GET /servicePrincipals
 ```
+
 ## Optional query parameters
 
-This method supports the [OData Query Parameters](https://developer.microsoft.com/graph/docs/concepts/query_parameters) to help customize the response.
+This method supports the [OData query parameters](/graph/query_parameters) to help customize the response, including `$search`, `$count`, and `$filter`. You can use `$search` on the **displayName** property. When items are added or updated for this resource, they are specially indexed for use with the `$count` and `$search` query parameters. There can be a slight delay between when an item is added or updated and when it is available in the index.
 
 ## Request headers
-| Name           | Description                |
-|:---------------|:---------------------------|
-| Authorization  | Bearer {token}. Required.  |
+
+| Name | Description |
+|:---- |:----------- |
+| Authorization | Bearer {token}. Required. |
+| ConsistencyLevel | eventual. This header and `$count` are required when using `$search`, or when using `$filter` with the `$orderby` query parameter. It uses an index that may not be up-to-date with recent changes to the object. |
 
 ## Request body
 
@@ -49,8 +52,10 @@ Do not supply a request body for this method.
 If successful, this method returns a `200 OK` response code and collection of [servicePrincipal](../resources/serviceprincipal.md) objects in the response body.
 
 ## Examples
-### Request
-Here is an example of the request.
+
+### Example 1: Get a list of service principals
+
+#### Request
 
 <!-- {
   "blockType": "request",
@@ -61,10 +66,11 @@ Here is an example of the request.
 GET https://graph.microsoft.com/beta/serviceprincipals
 ```
 
-### Response
-Here is an example of the response. 
+#### Response
 
-> **Note:** The response object shown here might be shortened for readability. All the properties will be returned from an actual call.
+The following is an example of the response.
+>**Note:** The response object shown here might be shortened for readability. All the properties will be returned from an actual call.
+
 <!-- {
   "blockType": "response",
   "truncated": true,
@@ -77,52 +83,140 @@ HTTP/1.1 200 OK
 Content-type: application/json
 
 {
-    "value": [{
-        "id": "59e617e5-e447-4adc-8b88-00af644d7c92",
-        "deletedDateTime": null,
-        "accountEnabled": true,
-        "appDisplayName": "My App",
-        "appId": "65415bb1-9267-4313-bbf5-ae259732ee12",
-        "applicationTemplateId": null,
-        "appOwnerOrganizationId": "1bc1c026-2f7b-48a5-98da-afa2fd8bc7bc",
-        "appRoleAssignmentRequired": false,
-        "displayName": "foo",
-        "errorUrl": null,
-        "homepage": null,
-        "loginUrl": null,
-        "logoutUrl": null,
-        "notificationEmailAddresses": [],
-        "preferredSingleSignOnMode": null,
-        "preferredTokenSigningKeyEndDateTime": null,
-        "preferredTokenSigningKeyThumbprint": null,
-        "publisherName": "Contoso",
-        "replyUrls": [],
-        "samlMetadataUrl": null,
-        "samlSingleSignOnSettings": null,
-        "servicePrincipalNames": [
-            "f1bd758f-4a1a-4b71-aa20-a248a22a8928"
-        ],
-        "signInAudience": "AzureADandPersonalMicrosoftAccount",
-        "tags": [],
-        "addIns": [],
-        "api": {
-            "resourceSpecificApplicationPermissions": []
-        },
-        "appRoles": [],
-        "info": {
-            "termsOfServiceUrl": null,
-            "supportUrl": null,
-            "privacyStatementUrl": null,
-            "marketingUrl": null,
-            "logoUrl": null
-        },
-        "keyCredentials": [],
-        "publishedPermissionScopes": [],
-        "passwordCredentials": []
-    }]
+  "value": [
+    {
+      "accountEnabled":true,
+      "displayName":"amasf",
+      "publisherName":"Contoso",
+      "servicePrincipalType":"Application",
+      "signInAudience":"AzureADMyOrg"
+    }
+  ]
 }
 ```
 
+### Example 2: Get only a count of service principals
+
+#### Request
+
+The following is an example of the request.
+
+<!-- {
+  "blockType": "request",
+  "name": "get_count_only"
+}-->
+```msgraph-interactive
+GET https://graph.microsoft.com/beta/servicePrincipals/$count
+ConsistencyLevel: eventual
+```
+
+#### Response
+
+The following is an example of the response.
+
+<!-- {
+  "blockType": "response",
+  "truncated": true,
+  "@odata.type": "microsoft.graph.servicePrincipal",
+  "isCollection": true
+} -->
+```http
+HTTP/1.1 200 OK
+Content-type: text/plain
+```
+
+893
+
+
+### Example 3: Use $filter and $top to get one service principal with a display name that starts with 'a' including a count of returned objects
+
+#### Request
+
+The following is an example of the request.
+
+<!-- {
+  "blockType": "request",
+  "name": "get_a_count"
+}-->
+```msgraph-interactive
+GET https://graph.microsoft.com/beta/servicePrincipals?$filter=startswith(displayName, 'a')&$count=true&$top=1&$orderby=displayName
+ConsistencyLevel: eventual
+```
+
+#### Response
+
+The following is an example of the response.
+>**Note:** The response object shown here might be shortened for readability. All the properties will be returned from an actual call.
+
+<!-- {
+  "blockType": "response",
+  "truncated": true,
+  "@odata.type": "microsoft.graph.servicePrincipal",
+  "isCollection": true
+} -->
+```http
+HTTP/1.1 200 OK
+Content-type: application/json
+
+{
+  "@odata.context":"https://graph.microsoft.com/beta/$metadata#servicePrinciples",
+  "@odata.count":1,
+  "value":[
+    {
+      "accountEnabled":true,
+      "displayName":"a",
+      "publisherName":"Contoso",
+      "servicePrincipalType":"Application",
+      "signInAudience":"AzureADMyOrg"
+    }
+  ]
+}
+```
+
+### Example 4: Use $search to get service principals with display names that contain the letters 'Team' including a count of returned objects
+
+#### Request
+
+The following is an example of the request.
+
+<!-- {
+  "blockType": "request",
+  "name": "get_team_count"
+}-->
+```msgraph-interactive
+GET https://graph.microsoft.com/beta/servicePrincipals?$search="displayName:Team"&$count=true
+ConsistencyLevel: eventual
+```
+
+#### Response
+
+The following is an example of the response.
+>**Note:** The response object shown here might be shortened for readability. All the properties will be returned from an actual call.
+
+<!-- {
+  "blockType": "response",
+  "truncated": true,
+  "@odata.type": "microsoft.graph.servicePrincipal",
+  "isCollection": true
+} -->
+```http
+HTTP/1.1 200 OK
+Content-type: application/json
+
+{
+  "@odata.context":"https://graph.microsoft.com/beta/$metadata#servicePrincipals",
+  "@odata.count":1396,
+  "value":[
+    {
+      "accountEnabled":true,
+      "displayName":"myContosoTeam",
+      "publisherName":"Contoso",
+      "servicePrincipalType":"Application",
+      "signInAudience":"AzureADMyOrg"
+    }
+  ]
+}
+```
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2015-10-25 14:57:30 UTC -->
 <!--
