@@ -17,7 +17,7 @@ Organizations can customize their Azure AD sign-in pages which appear when users
 
 Companies can add different branding based on locale. Locale serves as a key in all requests.
 
-Note: Branding is exposed as a property under organization with a collection of locale-specific localizations.(../organization/{Id}/branding). OrganizationalBrandingProperties is an abstract class which defines properties for OrganizationalBranding.
+>**Note:** Branding is exposed as a property under organization with a collection of locale-specific localizations. **organizationalBrandingProperties** is an abstract class which defines properties for **organizationalBranding**.
 
 ## Methods
 
