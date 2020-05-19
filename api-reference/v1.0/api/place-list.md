@@ -197,7 +197,6 @@ Content-type: application/json
 
 The following example shows how to get all the [roomList](../resources/roomlist.md) objects in the tenant.
 
-# [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "get_all_roomlists"
@@ -266,7 +265,6 @@ Content-type: application/json
 
 The following example shows how to get a list of [room](../resources/room.md) objects contained in a **roomList**. 
 
-# [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "get_rooms_in_roomlist"
