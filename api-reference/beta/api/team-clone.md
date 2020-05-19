@@ -75,7 +75,7 @@ When the operation is complete, the operation resource will tell you the id of t
 The following is an example of the request.
 <!-- {
   "blockType": "request",
-  "name": "create_team"
+  "name": "clone_team"
 }-->
 ```http
 POST /teams/{id}/clone

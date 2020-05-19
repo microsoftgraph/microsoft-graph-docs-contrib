@@ -70,6 +70,11 @@ POST https://graph.microsoft.com/v1.0/teams/{id}/archive
 ```
 #### Response
 The following is an example of a response.
+
+<!-- {
+  "blockType": "response",
+  "name": "archive_team"
+}-->
 ```http
 HTTP/1.1 202 Accepted
 Location: /teams({id})/operations({opId})
