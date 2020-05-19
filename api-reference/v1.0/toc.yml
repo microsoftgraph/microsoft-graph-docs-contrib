@@ -821,7 +821,7 @@ items:
           items:
           - name: Play prompt
             href: api/call-playprompt.md
-          - name: Record
+          - name: Record response
             href: api/call-record.md
           - name: Subscribe to tone
             href: api/call-subscribetotone.md
