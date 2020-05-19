@@ -164,7 +164,6 @@ Content-Type: application/json
   "section": "documentation",
   "tocPath": "",
   "suppressions": [
-    Error: application_addkey:
-      Resource type was null or missing, so we assume there is no response to validate.
+    "Error: application_addkey:\r\n      Resource type was null or missing, so we assume there is no response to validate."
     ]
 }-->
