@@ -1661,7 +1661,7 @@ For more complex scenarios involving multiple permissions, see [Permission scena
 | _TeamMember.Read.All_ (private preview)| Read the members of all teams. | Read the members of all teams, without a signed-in user.	| Yes | No |
 | _TeamMember.ReadWrite.All_ (private preview)| Add and remove members from all teams. | Add and remove members from all teams, without a signed-in user. Also allows changing a team member's role, for example from owner to non-owner. | Yes | No |
 
-## Teams Resource-specific permissions
+## Teams resource-specific consent permissions
 
 | Permission | Display String | Description | Admin Consent Required | Microsoft Account supported |
 |:----------------|:------------------|:-------------|:-----------------------|:--------------|
