@@ -1378,29 +1378,6 @@ For more complex scenarios involving multiple permissions, see [Permission scena
 
 ---
 
-## Resource-specific consent
-
-#### Application permissions
-
-|   Permission    |  Display String   |  Description | Admin Consent Required | Microsoft Account supported |
-|:----------------|:------------------|:-------------|:-----------------------|:--------------|
-|TeamSettings.Read.Group | Get the settings for this team.|Allows the app to read this team's settings.| No | No|
-|TeamSettings.Edit.Group|Update the settings for this team.| Allows the app to edit this team's settings.| No | No|
-|ChannelSettings.Read.Group|Get the channel names, channel descriptions, and, channel settings for this team.|Allows the app to read this team's channel names, channel descriptions, and channel settings.| No | No|
-|ChannelSettings.Edit.Group|Update the channel names, channel descriptions, and channel settings for this team.|Allows the app to edit this team's channel names, channel descriptions, and channel settings. | No | No|
-|Channel.Create.Group|Create channels for this team.|Allows the app to create channels for this team. | No | No|
-|Channel.Delete.Group|Delete channels in this team.| Allows the app to delete this team's channels.| No | No|
-|ChannelMessage.Read.Group |Get this team's channel messages.| Allows the app to read this team's channel messages.| No | No|
-|TeamsApp.Read.Group|Get a list of this team's installed apps.| Allows the app to read this team's installed apps.| No | No|
-|TeamsTab.Read.Group|Get a list of this team's tabs.|Allows the app to read this team's installed tabs.| No | No|
-|TeamsTab.Create.Group|Create tabs in this team.| Allows the app to create tabs for this team. | No | No|
-|TeamsTab.Edit.Group|Update this team's tabs.|Allows the app to edit this team's tabs.| No | No|
-|TeamsTab.Delete.Group|Delete this team's tabs.|Allows the app to delete this team's tabs.| No | No|
-|Member.Read.Group|Get this team's members.| Allows the app to read this team's members. | No | No|
-|Owner.Read.Group|Get this team's owners.| Allows the app to read this team's owners.| No | No|
-
----
-
 ## Role management permissions
 
 #### Delegated permissions
