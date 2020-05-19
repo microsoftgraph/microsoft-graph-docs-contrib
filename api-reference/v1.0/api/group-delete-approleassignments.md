@@ -1,81 +1,77 @@
 ---
-title: "Delete appRoleAssignment"
-description: "Delete appRoleAssignment."
+title: "Delete an appRoleAssignment from a group"
+description: "Delete an appRoleAssignment that has been granted to a group."
 localization_priority: Normal
 doc_type: apiPageType
 ms.prod: "microsoft-identity-platform"
-author: "psignoret"
+author: "davidmu1"
 ---
 
-# Delete appRoleAssignment
+# Delete an appRoleAssignment granted to a group
 
 Namespace: microsoft.graph
 
-[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
+Deletes an [appRoleAssignment](../resources/approleassignment.md) which a group has been granted.
 
-Delete appRoleAssignment.
 ## Permissions
+
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
 
 |Permission type      | Permissions (from least to most privileged)              |
 |:--------------------|:---------------------------------------------------------|
-|Delegated (work or school account) | Directory.AccessAsUser.All    |
+|Delegated (work or school account) | AppRoleAssignment.ReadWrite.All, Directory.AccessAsUser.All    |
 |Delegated (personal Microsoft account) | Not supported.    |
-|Application | Not supported. |
+|Application | AppRoleAssignment.ReadWrite.All |
 
 ## HTTP request
-<!-- { "blockType": "ignored" } -->
-```http
-DELETE /users/{id | userPrincipalName}/appRoleAssignments/{id}
-DELETE /groups/{id}/appRoleAssignments/{id}
-DELETE /servicePrincipals/{id}/appRoleAssignments/{id}
-DELETE /servicePrincipals/{id}/appRoleAssignedTo/{id}
 
+<!-- { "blockType": "ignored" } -->
+
+```http
+DELETE /groups/{id}/appRoleAssignments/{id}
 ```
+
+> [!NOTE]
+> As a best practice, we recommend deleting app role assignments through the `appRoleAssignedTo` relationship of the _resource_ service principal, instead of the `appRoleAssignments` relationship of the assigned user, group, or service principal.
+
 ## Request headers
+
 | Name       | Type | Description|
 |:---------------|:--------|:----------|
 | Authorization  | string  | Bearer {token}. Required. |
 
 ## Request body
+
 Do not supply a request body for this method.
 
 ## Response
 
 If successful, this method returns `204 No Content` response code. It does not return anything in the response body.
 
-## Example
-##### Request
-Here is an example of the request.
+## Examples
 
-# [HTTP](#tab/http)
+### Request
+
+Here is an example of the request to delete an app role assignment.
+
 <!-- {
   "blockType": "request",
-  "name": "delete_approleassignment"
+  "name": "group_delete_approleassignment"
 }-->
+
 ```http
-DELETE https://graph.microsoft.com/beta/servicePrincipals/{id}/appRoleAssignedTo/{id}
+DELETE https://graph.microsoft.com/v1.0/groups/{id}/appRoleAssignments/{id}
 ```
-# [C#](#tab/csharp)
-[!INCLUDE [sample-code](../includes/snippets/csharp/delete-approleassignment-csharp-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# [JavaScript](#tab/javascript)
-[!INCLUDE [sample-code](../includes/snippets/javascript/delete-approleassignment-javascript-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+### Response
 
-# [Objective-C](#tab/objc)
-[!INCLUDE [sample-code](../includes/snippets/objc/delete-approleassignment-objc-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+The following is an example of the response.
 
----
-
-##### Response
-Here is an example of the response. 
 <!-- {
   "blockType": "response",
   "truncated": true
 } -->
+
 ```http
 HTTP/1.1 204 No Content
 ```
