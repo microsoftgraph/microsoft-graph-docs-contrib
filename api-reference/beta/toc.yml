@@ -884,7 +884,7 @@ items:
           items:
           - name: Play prompt
             href: api/call-playprompt.md
-          - name: Record
+          - name: Record response
             href: api/call-record.md
           - name: Cancel media processing
             href: api/call-cancelmediaprocessing.md
