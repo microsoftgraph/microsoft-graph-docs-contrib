@@ -219,6 +219,7 @@ None.
 |:-----------------------------|:-----------------------------------------|:-----------------|:-----------------|
 | _Application.Read.All_ | Read applications | Allows the app to read applications and service principals on behalf of the signed-in user. | Yes |
 | _Application.ReadWrite.All_ | Read and write all apps |  Allows the app to create, read, update and delete applications and service principals on behalf of the signed-in user. | Yes |
+| _AppRoleAssignment.ReadWrite.All_ | Manage app permission grants and app role assignments | Allows the app to manage permission grants for application permissions to any API (including Microsoft Graph) and application assignments for any app, on behalf of the signed-in user. | Yes |
 
 #### Application permissions
 
@@ -227,6 +228,7 @@ None.
 | _Application.Read.All_ | Read applications | Allows the app to read applications and service principals without a signed-in user. | Yes |
 | _Application.ReadWrite.All_ | Read and write all apps | Allows the calling app to create, and manage (read, update, update application secrets and delete) applications and service principals without a signed-in user.  Does not allow management of consent grants or application assignments to users or groups. | Yes |
 | _Application.ReadWrite.OwnedBy_ | Manage apps that this app creates or owns | Allows the calling app to create other applications and service principals, and fully manage those applications and service principals (read, update, update application secrets and delete), without a signed-in user.  It cannot update any applications that it is not an owner of. Does not allow management of consent grants or application assignments to users or groups. | Yes |
+| _AppRoleAssignment.ReadWrite.All_ | Manage app permission grants and app role assignments | Allows the app to manage permission grants for application permissions to any API (including Microsoft Graph) and application assignments for any app, without a signed-in user. | Yes |
 
 ### Remarks
 
@@ -1378,29 +1380,6 @@ For more complex scenarios involving multiple permissions, see [Permission scena
 
 ---
 
-## Resource-specific consent
-
-#### Application permissions
-
-|   Permission    |  Display String   |  Description | Admin Consent Required | Microsoft Account supported |
-|:----------------|:------------------|:-------------|:-----------------------|:--------------|
-|TeamSettings.Read.Group | Get the settings for this team.|Allows the app to read this team's settings.| No | No|
-|TeamSettings.Edit.Group|Update the settings for this team.| Allows the app to edit this team's settings.| No | No|
-|ChannelSettings.Read.Group|Get the channel names, channel descriptions, and, channel settings for this team.|Allows the app to read this team's channel names, channel descriptions, and channel settings.| No | No|
-|ChannelSettings.Edit.Group|Update the channel names, channel descriptions, and channel settings for this team.|Allows the app to edit this team's channel names, channel descriptions, and channel settings. | No | No|
-|Channel.Create.Group|Create channels for this team.|Allows the app to create channels for this team. | No | No|
-|Channel.Delete.Group|Delete channels in this team.| Allows the app to delete this team's channels.| No | No|
-|ChannelMessage.Read.Group |Get this team's channel messages.| Allows the app to read this team's channel messages.| No | No|
-|TeamsApp.Read.Group|Get a list of this team's installed apps.| Allows the app to read this team's installed apps.| No | No|
-|TeamsTab.Read.Group|Get a list of this team's tabs.|Allows the app to read this team's installed tabs.| No | No|
-|TeamsTab.Create.Group|Create tabs in this team.| Allows the app to create tabs for this team. | No | No|
-|TeamsTab.Edit.Group|Update this team's tabs.|Allows the app to edit this team's tabs.| No | No|
-|TeamsTab.Delete.Group|Delete this team's tabs.|Allows the app to delete this team's tabs.| No | No|
-|Member.Read.Group|Get this team's members.| Allows the app to read this team's members. | No | No|
-|Owner.Read.Group|Get this team's owners.| Allows the app to read this team's owners.| No | No|
-
----
-
 ## Role management permissions
 
 #### Delegated permissions
@@ -1660,6 +1639,24 @@ For more complex scenarios involving multiple permissions, see [Permission scena
 |:----------------|:------------------|:-------------|:-----------------------|:--------------|
 | _TeamMember.Read.All_ (private preview)| Read the members of all teams. | Read the members of all teams, without a signed-in user.	| Yes | No |
 | _TeamMember.ReadWrite.All_ (private preview)| Add and remove members from all teams. | Add and remove members from all teams, without a signed-in user. Also allows changing a team member's role, for example from owner to non-owner. | Yes | No |
+
+## Teams resource-specific consent permissions
+
+| Permission | Display String | Description | Admin Consent Required | Microsoft Account supported |
+|:----------------|:------------------|:-------------|:-----------------------|:--------------|
+| TeamSettings.Read.Group | Read this team's settings. | Read this team's settings, without a signed-in user. |No | No |
+| ChannelSettings.Read.Group | Read the names, descriptions, and settings of this team’s channels. | Read this group's channel names, channel descriptions, and channel settings, without a signed-in user. |No | No |
+| ChannelSettings.Edit.Group | Edit the names, descriptions, and settings of this team’s channels.| Edit this group's channel names, channel descriptions, and channel settings, without a signed-in user. |No | No |
+|Channel.Create.Group | Create channels in this team. | Create channels in this group, without a signed-in user. |No | No |
+|Channel.Delete.Group | Delete this team's channels. | Delete this group's channels, without a signed-in user. |No | No |
+|ChannelMessage.Read.Group | Read the team’s channel messages. | Allows an app to read this group's channel's messages, without a signed-in user. |No | No |
+|TeamsApp.Read.Group | See which apps are installed in this team. | See which apps are installed in this group, without a signed-in user. |No | No |
+|TeamsTab.Read.Group | Read this team's tabs. | Read this group's tabs, without a signed-in user. |No | No |
+|TeamsTab.Create.Group | Create tabs in this team. | Create tabs in this group, without a signed-in user. |No | No |
+|TeamsTab.Edit.Group | Edit this team's tabs. | Edit this group's tabs, without a signed-in user. |No | No |
+|TeamsTab.Delete.Group | Delete this team's tabs. | Delete this group's tabs, without a signed-in user. |No | No |
+|Member.Read.Group | Read this team's members.| Read this group's members, without a signed-in user. |No | No |
+|Owner.Read.Group| Read this team's owners.	| Read this group's owners, without a signed-in user. |No | No |
 
 ## Teams tab permissions ([private preview](#permissions-availability-status))
 
