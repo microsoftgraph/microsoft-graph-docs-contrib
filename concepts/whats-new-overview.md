@@ -20,6 +20,13 @@ GA of the [places API](/graph/api/resources/place) in v1.0 - use this API in pro
 ### Devices and apps | Corporate management
 Intune [May](changelog.md#may-2020) updates in v1.0.
 
+### Graph Explorer
+Use the many new features of [Graph Explorer](https://developer.microsoft.com/en-us/graph/graph-explorer) that enhance learning and prototyping in the sandbox. For example:
+- View code snippets that correspond to the REST API query you entered, in C#, Java, JavaScript, and Objective C.
+- Signed in with a tenant, view and copy an access token to your favorite REST client application.
+
+See [New Graph Explorer is now GA](https://developer.microsoft.com/graph/blogs/new-graph-explorer-is-now-ga/) for more details.
+
 ### Microsoft Graph SDKs
 See new SDK guidance on the following:
 - [Paging](/graph/sdks/paging)
