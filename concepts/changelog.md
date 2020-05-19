@@ -81,6 +81,7 @@ For a summary of the value of these API changes, as well as recent tools, compon
 | Addition | v1.0 | Added support for sending [channel messages](/graph/api/resources/chatmessage?view=graph-rest-1.0) and channel message replies.|
 | Addition | v1.0 | Added support for getting the **filesFolder** of a [channel](/graph/api/resources/channel?view=graph-rest-1.0).|
 | Addition | beta | Added the **azureADAppId** property to [teamsAppDefinition](/graph/api/resources/teamsAppDefinition?view=graph-rest-beta).|
+| Addition | beta | Added permissions for [resource-specific consent](/graph/permissions-reference?context=graph%2Fapi%2Fbeta&view=graph-rest-beta#terms-of-use-permissions).|
 
 ### Teamwork | Shifts (Microsoft Teams)
 
@@ -522,14 +523,6 @@ Added new APIs and resources for subscribing to and retrieving call records from
 | **Change type** | **Version**   | **Description**                          |
 | :-------------- | :------------ | :--------------------------------------- |
 | Addition | v1.0 | Added the **identities** property to the [user](/graph/api/resources/user?view=graph-rest-1.0) resource. This property represents the set of identities (like local accounts and social accounts) that this user can use to sign in with.|
-
-## January 2020
-
-### Microsoft Teams
-
-| **Change type** | **Version**   | **Description**                          |
-| :-------------- | :------------ | :--------------------------------------- |
-| Addition | beta | Added permissions for [resource-specific consent](/graph/permissions-reference?context=graph%2Fapi%2Fbeta&view=graph-rest-beta#terms-of-use-permissions).|
 
 ## December 2019
 
