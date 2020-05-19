@@ -95,7 +95,7 @@ HTTP/1.1 204 OK
 
 In this case, the values of the default /branding are updated but no values are changed on any localization.
 
-### Example 2: Update **bannerLogo** for default branding
+### Example 2: Update bannerLogo for default branding
 The following request updates the banner logo for the default branding.
 #### Request
 
