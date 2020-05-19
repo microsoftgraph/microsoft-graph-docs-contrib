@@ -44,13 +44,13 @@ If successful, this method returns a `200 OK` response code and password object 
 
 ## Example
 ##### Request
-Here is an example of the request.
+The following is an example of the request.
 
 ```http
 POST https://graph.microsoft.com/beta/applications/{id}/addPassword
 ```
 ##### Response
-Here is an example of the response.
+The following is an example of the response.
 
 ```http
 HTTP/1.1 200 OK
