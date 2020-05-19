@@ -800,6 +800,20 @@ items:
             href: api/multivaluelegacyextendedproperty-post-multivalueextendedproperties.md
           - name: Get multi-value property
             href: api/multivaluelegacyextendedproperty-get.md
+        - name: Place
+          items:
+          - name: Place
+            href: resources/place.md
+          - name: Room type
+            href: resources/room.md
+          - name: Room list type
+            href: resources/roomlist.md
+          - name: List places
+            href: api/place-list.md
+          - name: Get place
+            href: api/place-get.md
+          - name: Update place
+            href: api/place-update.md
     - name: Cloud communications
       displayName: Cloud communications
       items:
@@ -829,7 +843,7 @@ items:
           items:
           - name: Play prompt
             href: api/call-playprompt.md
-          - name: Record
+          - name: Record response
             href: api/call-record.md
           - name: Subscribe to tone
             href: api/call-subscribetotone.md
