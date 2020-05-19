@@ -64,7 +64,6 @@ If successful, this method returns a `200 OK` response code and the requested [p
 
 The following example specifies the **id** of a **room** to get its properties.
 
-# [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "get_room"
@@ -131,7 +130,6 @@ Content-type: application/json
 
 The following example specifies the **emailAddress** of a **roomList** to get its properties.
 
-# [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "get_roomlist"
