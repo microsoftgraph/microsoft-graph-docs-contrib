@@ -178,7 +178,7 @@ Content-Language: fr
 }
 ```
 
-### Example 4: Get **bannerLogo** for the French locale
+### Example 4: Get bannerLogo for the French locale
 Returns **bannerLogo** for the fr locale if it exists. If the localization does not exist, returns the default **bannerLogo**.
 
 #### Request
@@ -215,7 +215,7 @@ Content-Type: application/json
 }
 ```
 
-### Example 5: Get **bannerLogo** when no **bannerLogo** is configured
+### Example 5: Get bannerLogo when no bannerLogo is configured
 
 This example shows a request for a property that does not exist on the default branding or the language specified in the Accept-Language header.
 
