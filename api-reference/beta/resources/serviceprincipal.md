@@ -191,8 +191,7 @@ This resource supports using [delta query](/graph/delta-query-overview) to track
   "section": "documentation",
   "tocPath": "",
   "suppressions": [
-     Error: microsoft.graph.servicePrincipal/endpoints:
-      Referenced type microsoft.graph.endPoint is not defined in the doc set! Potential suggestion: microsoft.graph.callRecords.endpoint
+     "Error: microsoft.graph.servicePrincipal/endpoints:\r\n      Referenced type microsoft.graph.endPoint is not defined in the doc  set! Potential suggestion: microsoft.graph.callRecords.endpoint"
 ]
 }
 -->
