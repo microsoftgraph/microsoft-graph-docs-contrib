@@ -13,6 +13,11 @@ For a summary of the value of these API changes, as well as recent tools, compon
 
 ## May 2020
 
+### Calendar
+
+| **Change type** | **Version**   | **Description**                          |
+| :-------------- | :------------ | :--------------------------------------- |
+|Addition | v1.0 | Places API available in v1. Added the [place](/graph/api/resources/place?view=graph-rest-1.0), [room](/graph/api/resources/room?view=graph-rest-1.0), [roomList](/graph/api/resources/room?view=graph-rest-1.0) resources and their methods to provide rich details for locations in apps. |
 
 ### Devices and apps | Cloud printing
 
@@ -26,7 +31,6 @@ For a summary of the value of these API changes, as well as recent tools, compon
 | Addition | beta | Added the **shares** navigation property on the [print](/graph/api/resources/print?view=graph-rest-beta) entity. |
 | Addition | beta | Added **displayName** and **isAcceptingJobs** properties to the [printer](/graph/api/resources/printer?view=graph-rest-beta) entity. |
 | Addition | beta | Added properties to the [printerShare](/graph/api/resources/printerShare?view=graph-rest-beta) entity: <br/> <ul><li>**manufacturer**</li><li>**model**</li><li>**isAcceptingJobs**</li><li>**defaults**</li><li>**capabilities**</li><li>**location**</li><li>**status**</li><li>**jobs**</li></ul> |
-
 
 ### Devices and apps | Corporate management (Intune)
 
@@ -88,6 +92,7 @@ For a summary of the value of these API changes, as well as recent tools, compon
 | **Change type** | **Version** | **Description**                          |
 | :-------------- | :---------- | :--------------------------------------- |
 | Addition | v1.0 | Introduced the Shifts APIs, including [shift](/graph/api/resources/shift?view=graph-rest-1.0), [workforceintegration](/graph/api/resources/workforceintegration?view=graph-rest-1.0), and associated methods.|
+
 
 ## April 2020
 
