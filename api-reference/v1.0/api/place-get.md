@@ -39,9 +39,9 @@ GET /places/{id}
 ```
 
 ## Optional query parameters
-Use $select to get specific **place** properties.
+Use `$select` to get specific **place** properties.
 
-For more information on OData query options, see [OData query parameters](/graph/query-parameters).
+For more information, see [OData query parameters](/graph/query-parameters).
 
 ## Request headers
 
