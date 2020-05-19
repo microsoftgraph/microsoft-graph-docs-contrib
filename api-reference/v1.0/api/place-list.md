@@ -61,13 +61,13 @@ GET /places/{room-list-emailaddress}/microsoft.graph.roomlist/rooms
 
 ## Optional query parameters
 This method supports the following query parameters to help customize the response:
-- $filter
-- $select
-- $top
-- $skip
-- $count=true
+- `$filter`
+- `$select`
+- `$top`
+- `$skip`
+- `$count=true`
 
-Use $top to customize the page size. The default page size is 100.
+Use `$top` to customize the page size. The default page size is 100.
 
 For general information, see [OData query parameters](/graph/query-parameters).
 
