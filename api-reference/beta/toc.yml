@@ -9395,21 +9395,21 @@
       - name: Organizational branding
         href: resources/organizationalbrandingproperties.md
         items:
-        - name: Create organizational branding 
+        - name: Create
           href: api/organizationalbrandingproperties-create.md
-        - name: Get organizational branding 
+        - name: Get 
           href: api/organizationalbrandingproperties-get.md
-        - name: Update organizational branding
+        - name: Update
           href: api/organizationalbrandingproperties-update.md
-        - name: Delete organizational branding
+        - name: Delete
           href: api/organizationalbrandingproperties-delete.md
-        - name: Create localized organizational branding 
+        - name: Create localized 
           href: api/organizationalbrandingpropertieslocalization-create.md
-        - name: Get localized organizational branding 
+        - name: Get localized
           href: api/organizationalbrandingpropertieslocalization-get.md
-        - name: Update localized organizational branding
+        - name: Update localized
           href: api/organizationalbrandingpropertieslocalization-update.md
-        - name: Delete localized organizational branding
+        - name: Delete localized
           href: api/organizationalbrandingpropertieslocalization-delete.md 
       - name: Organizational contacts
         href: resources/orgcontact.md
