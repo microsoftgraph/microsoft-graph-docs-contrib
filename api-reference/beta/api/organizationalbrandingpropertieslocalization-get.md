@@ -163,7 +163,7 @@ Content-Type: application/json
 }
 ```
 
-### Example 3: Get the value of **signInPageText** for a specific locale
+### Example 3: Get the value of signInPageText for a specific locale
 Requesting a property of a localization returns that value, or 204 if the value is null.
 #### Request
 
