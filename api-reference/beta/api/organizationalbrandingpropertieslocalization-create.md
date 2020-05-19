@@ -64,7 +64,7 @@ If successful, this method returns a `201 CREATED` response code and the created
 
 ## Examples
 
-### Use case: Create a branding localization for fr
+The following example creates a branding localization for French (fr).
 
 ### Request
 
@@ -112,7 +112,7 @@ Content-Type: application/json
     "squareLogo@odata.mediaEditLink": "https://graph.microsoft.com/beta/organization/d69179bf-f4a4-41a9-a9de-249c0f2efb1d/branding/localizations/fr/squareLogo"
 }
 ```
-The mediaEditLink specifies where the localized media is written. The mediaReadLink is null since no media has been set for the localization.
+The **mediaEditLink** specifies where the localized media is written. The mediaReadLink is null because no media has been set for the localization.
 
 <!-- uuid: 16cd6b66-4b1a-43a1-adaf-3a886856ed98
 2019-02-04 14:57:30 UTC -->
