@@ -437,6 +437,8 @@ items:
           href: api/group-post-groups.md
         - name: Delete group
           href: api/group-delete.md
+        - name: Evaluate dynamic membership
+          href: api/group-evaluatedynamicmembership.md
         - name: Get deleted group
           href: api/directory-deleteditems-get.md
         - name: Get delta
@@ -1079,7 +1081,7 @@ items:
         - name: Print
           href: resources/print.md
           displayName: Universal Print
-        - name: Connectors
+        - name: Print connector
           href: resources/printconnector.md
           items:
           - name: List
@@ -1090,7 +1092,7 @@ items:
             href: api/printconnector-update.md
           - name: Delete
             href: api/printconnector-delete.md
-        - name: Print jobs
+        - name: Print job
           href: resources/printjob.md
           items:
           - name: Create
@@ -1101,7 +1103,7 @@ items:
             href: api/printjob-startprintjob.md
           - name: Cancel
             href: api/printjob-cancelprintjob.md
-        - name: Printers
+        - name: Printer
           href: resources/printer.md
           items:
           - name: List
@@ -1132,7 +1134,7 @@ items:
             href: api/printer-delete-alloweduser.md
           - name: Reset defaults
             href: api/printer-resetdefaults.md
-        - name: Printer shares
+        - name: Printer share
           href: resources/printershare.md
           items:
           - name: List
@@ -1181,7 +1183,7 @@ items:
               href: api/reportroot-list-dailyprintusagesummariesbyuser.md
             - name: List monthly reports by user
               href: api/reportroot-list-monthlyprintusagesummariesbyuser.md
-        - name: Services
+        - name: Print service
           href: resources/printservice.md
           items:
           - name: List
@@ -1195,7 +1197,7 @@ items:
               href: api/printserviceendpoint-get.md
             - name: List a service's endpoints
               href: api/printservice-list-endpoints.md
-        - name: Settings
+        - name: Print settings
           href: resources/printsettings.md
           items:
           - name: Get
@@ -11105,6 +11107,20 @@ items:
       - name: Chat message
         href: resources/chatmessage.md
         items:
+        - name: List channel messages
+          href: api/channel-list-messages.md
+        - name: Get channel messages delta
+          href: api/chatmessage-delta.md
+        - name: Get channel message
+          href: api/channel-get-message.md
+        - name: List message replies
+          href: api/channel-list-messagereplies.md
+        - name: Get message reply
+          href: api/channel-get-messagereply.md
+        - name: Send message
+          href: api/channel-post-messages.md
+        - name: Reply to message
+          href: api/channel-post-messagereply.md
         - name: List hosted content
           href: api/chatmessage-list-chatmessagehostedcontents.md
         - name: Get hosted content
