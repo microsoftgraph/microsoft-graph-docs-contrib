@@ -50,7 +50,7 @@ If unarchiving is started successfully, this method returns a `202 Accepted` res
 #### Request
 The following is an example of a request.
 <!-- {
-  "blockType": "ignored",
+  "blockType": "request",
   "name": "unarchive_team"
 }-->
 ```http
@@ -59,6 +59,10 @@ POST https://graph.microsoft.com/beta/teams/{id}/unarchive
 
 #### Response
 The following is an example of a response.
+<!-- {
+  "blockType": "response",
+  "name": "unarchive_team"
+}-->
 ```http
 HTTP/1.1 202 Accepted
 Location: /teams({id})/operations({opId})

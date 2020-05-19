@@ -55,7 +55,10 @@ If successful, this API returns a `202 Accepted` response containing a link to t
 The following is an example of a minimal request. By omitting other properties, the client is implicitly taking defaults from the pre-defined template represented by `template`.
 
 #### Request
-
+<!-- {
+  "blockType": "request",
+  "name": "create_team_post"
+}-->
 ```http
 POST https://graph.microsoft.com/beta/teams
 Content-Type: application/json
@@ -67,7 +70,10 @@ Content-Type: application/json
 ```
 
 ##### Response
-
+<!-- {
+  "blockType": "response",
+  "name": "create_team_post"
+}-->
 ```http
 HTTP/1.1 202 Accepted
 Content-Type: application/json
@@ -82,7 +88,10 @@ Content-Location: /teams/{teamId}
 The following is an example of a minimal request using application permissions. By omitting other properties, the client is implicitly taking defaults from the predefined template represented by `template`. When issuing a request with application permissions, a [user](../resources/user.md) must be specified in the `owners` collection.
 
 #### Request
-
+<!-- {
+  "blockType": "request",
+  "name": "create_team_post_minimal"
+}-->
 ```http
 POST https://graph.microsoft.com/beta/teams
 Content-Type: application/json
@@ -97,7 +106,10 @@ Content-Type: application/json
 ```
 
 #### Response
-
+<!-- {
+  "blockType": "response",
+  "name": "create_team_post_minimal"
+}-->
 ```http
 HTTP/1.1 202 Accepted
 Content-Type: application/json
@@ -112,7 +124,10 @@ Content-Location: /teams/{teamId}
 The following is a request with a full payload. The client can override values in the base template and add to array-valued items to the extent allowed by validation rules for the `specialization`.
 
 #### Request
-
+<!-- {
+  "blockType": "request",
+  "name": "create_team_post_full_payload"
+}-->
 ```http
 POST https://graph.microsoft.com/beta/teams
 Content-Type: application/json
@@ -198,7 +213,10 @@ Content-Type: application/json
 ```
 
 #### Response
-
+<!-- {
+  "blockType": "reponse",
+  "name": "create_team_post_full_payload"
+}-->
 ```http
 HTTP/1.1 202 Accepted
 Content-Type: application/json
@@ -220,7 +238,10 @@ A few thing to note about this call:
 
 
 #### Request
-
+<!-- {
+  "blockType": "request",
+  "name": "create_team_from_group"
+}-->
 ```http
 POST https://graph.microsoft.com/beta/teams
 Content-Type: application/json
@@ -231,7 +252,10 @@ Content-Type: application/json
 ```
 
 #### Response
-
+<!-- {
+  "blockType": "response",
+  "name": "create_team_from_group"
+}-->
 ```http
 HTTP/1.1 202 Accepted
 Content-Type: application/json
@@ -248,7 +272,10 @@ The following is a request that converts an existing group with extended propert
 To learn more about supported base template types and supported properties, see [Get started with Teams templates](/MicrosoftTeams/get-started-with-teams-templates).
 
 #### Request
-
+<!-- {
+  "blockType": "request",
+  "name": "convert_team_from_group"
+}-->
 ```http
 POST https://graph.microsoft.com/beta/teams
 Content-Type: application/json
@@ -284,7 +311,10 @@ Content-Type: application/json
 ```
 
 #### Response
-
+<!-- {
+  "blockType": "response",
+  "name": "convert_team_from_group"
+}-->
 ```http
 HTTP/1.1 202 Accepted
 Content-Type: application/json
@@ -303,7 +333,10 @@ To create a team from a non-standard base template, you’ll want to change the 
 To learn more about supported base template types, see [Get started with Teams templates](/MicrosoftTeams/get-started-with-teams-templates).
 
 #### Request
-
+<!-- {
+  "blockType": "request",
+  "name": "convert_team_from_non_standard"
+}-->
 ```http
 POST https://graph.microsoft.com/beta/teams
 Content-Type: application/json
@@ -315,7 +348,10 @@ Content-Type: application/json
 ```
 
 #### Response
-
+<!-- {
+  "blockType": "response",
+  "name": "convert_team_from_non_standard"
+}-->
 ```http
 HTTP/1.1 202 Accepted
 Content-Type: application/json
@@ -332,7 +368,10 @@ Base template types can be extended with additional properties, enabling you to 
 To learn more about supported base template types and supported properties, see [Get started with Teams templates](/MicrosoftTeams/get-started-with-teams-templates).
 
 #### Request
-
+<!-- {
+  "blockType": "request",
+  "name": "convert_team_from_non_standard2"
+}-->
 ```http
 POST https://graph.microsoft.com/beta/teams
 Content-Type: application/json
@@ -369,7 +408,10 @@ Content-Type: application/json
 ```
 
 #### Response
-
+<!-- {
+  "blockType": "request",
+  "name": "convert_team_from_non_standard2"
+}-->
 ```http
 HTTP/1.1 202 Accepted
 Content-Type: application/json

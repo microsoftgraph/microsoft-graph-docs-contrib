@@ -62,7 +62,7 @@ If archiving is started successfully, this method returns a `202 Accepted` respo
 #### Request
 The following is an example of a request.
 <!-- {
-  "blockType": "ignored",
+  "blockType": "request",
   "name": "archive_team"
 }-->
 ```http

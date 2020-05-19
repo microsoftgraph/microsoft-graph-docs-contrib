@@ -99,7 +99,7 @@ If successful, this method returns a `200 OK` response code, and the binary data
 Here is an example of the request to get the metadata of the team photo.
 
 <!-- {
-  "blockType": "ignored",
+  "blockType": "request",
   "name": "get_team_photo_metadata"
 }-->
 ```http
