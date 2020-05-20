@@ -52,13 +52,13 @@ includes the encoded parameters.
 This method supports OData query parameters to help customize the response.
 
 - You can use a `$select` query parameter similarly to any GET request to specify only the properties your need for best performance. The **id** property is always returned.
-  * The only supported `$filter` expression is for tracking changes for specific resources, by their ID:  `$filter=id+eq+{value}` or `$filter=id+eq+{value1}+or+id+eq+{value2}`. The number of IDs you can specify is limited by the maximum URL length.
+- The `$filter` query parameter can only be used to track changes on specific resources by using the resource ID. For example, `$filter=id+eq+{value}` or `$filter=id+eq+{value1}+or+id+eq+{value2}`.
 
 
 ## Request headers
 | Name       | Description|
 |:---------------|:----------|
-| Authorization  | Bearer &lt;token&gt;. Required.|
+| Authorization  | Bearer {token}. Required.|
 
 ## Request body
 Do not supply a request body for this method.
