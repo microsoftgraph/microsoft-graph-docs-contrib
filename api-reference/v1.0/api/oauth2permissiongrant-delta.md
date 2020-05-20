@@ -11,7 +11,7 @@ doc_type: apiPageType
 
 Namespace: microsoft.graph
 
-Get newly created, updated, or deleted **oauth2permissiongrant** objects without performing a full read of the entire resource collection. For details, see [Using delta query](/graph/delta-query-overview).
+Get newly created, updated, or deleted **[oauth2permissiongrant](../resources/oauth2permissiongrant.md)** objects without performing a full read of the entire resource collection. For details, see [Using delta query](/graph/delta-query-overview).
 
 ## Permissions
 
@@ -105,11 +105,9 @@ Content-type: application/json
     {
       "clientId": "22a3c970-8ad4-4120-8127-300837f87f2c",
       "consentType": "Principal",
-      "expiryTime": "2017-08-13T21:41:23.3929007Z",
       "principalId": "c2e8df37-c6a7-4d88-89b1-feb4f1fda7c5",
       "resourceId": "98dc9d95-49b6-405a-b3c0-834e969a708b",
       "scope": "User.Read Directory.AccessAsUser.All",
-      "startTime": "0001-01-01T00:00:00Z",
       "id": "cMmjItSKIEGBJzAIN_h_LJWd3Ji2SVpAs8CDTpaacIs33-jCp8aITYmx_rTx_afF"
     }
   ]
