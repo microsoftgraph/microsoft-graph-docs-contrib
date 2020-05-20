@@ -17,6 +17,8 @@ You can show additional properties from your Active Directory on profile cards b
 
 - Adding custom attributes
 
+The additional properties will display in the "Contact" section of the profile card in Microsoft 365.
+
 ## Make additional attributes visible
 
 You can make the following attributes from AD or AAD visible on users' profile cards:
@@ -39,7 +41,7 @@ You can add any of the above listed attributes to the profile card by configurin
 5. In **Request Body** enter:
 
         {
-                "experiencePersonalization": {
+                "value: {
                     "visibilities" : {
                         "[Attribute name, e.g. Alias]": "Visible"
                     }
@@ -55,7 +57,7 @@ You can add any of the above listed attributes to the profile card by configurin
 > It takes up to 24 hours for the changes to show on profile cards.
 
 ## Adding custom attributes 
-You can add any of the [15 custom attributes](https://docs.microsoft.com/exchange/recipients/mailbox-custom-attributes?view=exchserver-2019) from Exchange Server to users' profile cards by configuring your tenant settings in Microsoft Graph.<sup id="a1">[1](#f1)</sup> Here's how:
+You can add any of the [15 custom attributes](https://go.microsoft.com/fwlink/?linkid=2131208) from AD or AAD to users' profile cards by configuring your tenant settings in Microsoft Graph.<sup id="a1">[1](#f1)</sup> Here's how:
 1. Go to [https://developer.microsoft.com/en-us/graph/graph-explorer](https://developer.microsoft.com/en-us/graph/graph-explorer)
 2. Sign in with your Admin username and password
 3. Make sure the Preview toggle is set to **Off**
@@ -64,24 +66,27 @@ You can add any of the [15 custom attributes](https://docs.microsoft.com/exchang
 5. In **Request Body** enter the following:
 
         {
-            "experiencePersonalization": {
-                
-                "localizations": [
-                    {
-                        "propertyName": "customAttribute[X]", 
-                        "default": "[Property name, e.g. Cost center]", 
-                        "localizationValues": {
-                            "[Language code, e.g. de-de]": "Kostenstelle", 
-                            "[Language code, e.g. es-es]": "Centro de costos", 
-                    }
-                ],    
+           "value": [
+             {
+               "directoryPropertyName": "customAttribute[X]"
+               "annotations": [
+                  {
+                    "display name": "[Property name, e.g. Cost center]", "localizations": [
+                      {
+                        "languageTag": "[Language code, e.g. de-de]",
+                        "displayName": "[Localized property name, e.g. Cost center]"  
+                      }
+                   ]
+                  }
+                ]
             }
+         ]
         }      
 
 6. Click **Run Query**
 
 > [!NOTE]
-> Enter the language code in the form *ll-cc*, where *ll* is the language code, and cc the country code. For example, for German – Austria, enter the country code de-at. 
+> Enter the language code in the form *ll-cc*, where *ll* is the language code, and cc the country code. For example, for German – Austria, enter the country code de-at.
 If a language is not supported, the property name will be shown with the default value.  
 
 > [!IMPORTANT]
