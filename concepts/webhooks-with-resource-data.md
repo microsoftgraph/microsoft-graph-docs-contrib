@@ -18,7 +18,7 @@ Including resource data as part of change notifications requires you to implemen
 
 ## Resource data in notification payload
 
-In general, this type of change change notifications include the following resource data in the payload:
+In general, this type of change notifications include the following resource data in the payload:
 
 - ID and type of the changed resource instance, returned in the **resourceData** property.
 - All the property values of that resource instance, encrypted as specified in the subscription, returned in the **encryptedContent** property.
