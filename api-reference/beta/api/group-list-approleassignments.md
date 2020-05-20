@@ -56,14 +56,30 @@ If successful, this method returns a `200 OK` response code and collection of [a
 
 Here is an example of the request to retrieve the app roles which have been assigned to a group.
 
+
+# [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "group_get_approleassignments"
 }-->
 
-```http
+```msgraph-interactive
 GET https://graph.microsoft.com/beta/groups/{id}/appRoleAssignments
 ```
+# [C#](#tab/csharp)
+[!INCLUDE [sample-code](../includes/snippets/csharp/group-get-approleassignments-csharp-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [JavaScript](#tab/javascript)
+[!INCLUDE [sample-code](../includes/snippets/javascript/group-get-approleassignments-javascript-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Objective-C](#tab/objc)
+[!INCLUDE [sample-code](../includes/snippets/objc/group-get-approleassignments-objc-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+---
+
 
 ### Response
 

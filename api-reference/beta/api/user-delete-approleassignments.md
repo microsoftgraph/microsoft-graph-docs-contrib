@@ -56,6 +56,8 @@ If successful, this method returns a `204 No Content` response code. It does not
 
 Here is an example of the request to delete an app role assignment.
 
+
+# [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "user_delete_approleassignment"
@@ -64,6 +66,20 @@ Here is an example of the request to delete an app role assignment.
 ```http
 DELETE https://graph.microsoft.com/beta/users/{id}/appRoleAssignments/{id}
 ```
+# [C#](#tab/csharp)
+[!INCLUDE [sample-code](../includes/snippets/csharp/user-delete-approleassignment-csharp-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [JavaScript](#tab/javascript)
+[!INCLUDE [sample-code](../includes/snippets/javascript/user-delete-approleassignment-javascript-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Objective-C](#tab/objc)
+[!INCLUDE [sample-code](../includes/snippets/objc/user-delete-approleassignment-objc-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+---
+
 
 ### Response
 
