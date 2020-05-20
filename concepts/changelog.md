@@ -100,7 +100,7 @@ For a summary of the value of these API changes, as well as recent tools, compon
 
 | **Change type** | **Version** | **Description**                          |
 | :-------------- | :---------- | :--------------------------------------- |
-| Addition        | v1.0        | Added [delta query](delta-query-overview.md) capability for the following [servicePrincipal](/graph/api/serviceprincipal-delta) |
+| Addition        | v1.0        | Added [delta query](delta-query-overview.md) capability for [servicePrincipal](/graph/api/serviceprincipal-delta) |
 
 ## April 2020
 
