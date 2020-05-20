@@ -39,7 +39,7 @@ Tracking changes incurs a round of one or more **delta** function calls. If you 
 it in the initial **delta** request. Microsoft Graph automatically encodes any specified parameters 
 into the token portion of the `nextLink` or `deltaLink` URL provided in the response. 
 You only need to specify query parameters once. 
-In subsequent requests, copy and apply the `nextLink` or `deltaLink` URL from the previous response. That URL already 
+In subsequent requests, copy and apply the `nextLink` or `deltaLink` URL from the previous response. The URL 
 includes the encoded parameters.
 
 | Query parameter	   | Type	|Description|
