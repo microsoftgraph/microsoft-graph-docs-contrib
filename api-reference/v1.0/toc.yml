@@ -3726,6 +3726,8 @@ items:
           href: api/serviceprincipal-list-createdobjects.md
         - name: List owned objects
           href: api/serviceprincipal-list-ownedobjects.md
+        - name: delta
+          href: api/serviceprincipal-delta.md
         - name: App role assignments
           href: resources/approleassignment.md
           items:
