@@ -396,11 +396,8 @@ Content-length: 1992
 
 ##### Request 4
 
-The fourth example shows expanding a series master event of a recurring series with exceptions and cancelled occurences. The request specifies a `$select` query parameter 
-to return specific properties. 
+The fourth example shows expanding a series master event of a recurring series with exceptions and cancelled occurences. The request specifies a `$select` query parameter to return specific properties. 
 
-
-# [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "get_event_seriesMaster_expansion"
@@ -409,7 +406,7 @@ to return specific properties.
 GET https://graph.microsoft.com/beta/me/events/AAMkADAGAADDdm4NAAA=/?$select=subject,start,end,occurrenceId,exceptionOccurrences,cancelledOccurrences
 ```
 ##### Response 4
-Here is an example of the response. The $select applies to series master event and all events in the exception occurrences. In case of cancelled occurrences, since the occurrence no longer exist, occurrenceId is returned in response
+Here is an example of the response. The GET operation returns the selected properties for the series master event. Specifically, for events in the exceptionOccurrences collection, the id property, and the applicable, selected properties (subject, start, end, occurrenceId) are returned. As for events in the cancelledOccurrences collection, since the events no longer exist, only their occurrenceId property values are returned in the response.
 
 <!-- {
   "blockType": "response",
