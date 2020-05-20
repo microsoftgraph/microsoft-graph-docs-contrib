@@ -51,7 +51,7 @@ includes the encoded parameters.
 
 This method supports OData query parameters to help customize the response.
 
-- You can use a `$select` query parameter to specify only the properties your need for best performance. The **id** property is always returned.
+- You can use a `$select` query parameter to specify only the properties you need for best performance. The **id** property is always returned.
 - The `$filter` query parameter can only be used to track changes on specific resources by using the resource ID. For example, `$filter=id+eq+{value}` or `$filter=id+eq+{value1}+or+id+eq+{value2}`.
 
 
