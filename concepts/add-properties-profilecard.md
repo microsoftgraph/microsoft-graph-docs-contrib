@@ -71,10 +71,11 @@ You can add any of the [15 custom attributes](https://go.microsoft.com/fwlink/?l
                "directoryPropertyName": "customAttribute[X]"
                "annotations": [
                 {
-                    "display name": "[Property name, e.g. Cost center]", "localizations": [
+                    "display name": "[Property name, e.g. Cost center]",
+                    "localizations": [
                         {
                             "languageTag": "[Language code, e.g. de-de]",
-                            "displayName": "[Localized property name, e.g. Cost center"
+                            "displayName": "[Localized property name, e.g. Cost center"]
                         }
                       ]
                     }
