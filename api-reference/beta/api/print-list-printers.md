@@ -35,7 +35,7 @@ This method supports some of the OData query parameters to help customize the re
 
 ### Exceptions
 * The `$expand` and `select` operators are supported for the `share` navigation property, but not for `jobs`.
-* The `$count` operator is not supported.
+* Some operators are not supported: `$count`, `$search`.
 
 ## Request headers
 | Name      |Description|
@@ -97,7 +97,6 @@ Content-length: 1526
       "isShared": true,
       "registeredDateTime": "2020-02-04T00:00:00.0000000Z",
       "acceptingJobs": true,
-      "registeredBy": {},
       "status": {
         "processingState": "stopped",
         "processingStateReasons": ["disconnected"],
