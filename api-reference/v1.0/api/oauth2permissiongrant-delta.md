@@ -68,7 +68,7 @@ Do not supply a request body for this method.
 If successful, this method returns a `200 OK` response code and an [oauth2permissiongrant](../resources/oauth2permissiongrant.md) collection object in the response body. The response also includes a `nextLink` URL or a `deltaLink` URL.
 
 - If a `nextLink` URL is returned, additional pages of data can be retrieved in the session. The **oauth2permissiongrant** continues making requests using the `nextLink` URL until a `deltaLink` URL is included in the response.
-- If a `deltaLink` URL is returned, there is no more data about the existing state of the resource to be returned. Persist and use the `deltaLink` URL to learn about changes to the resource in the future.
+- If a `deltaLink` URL is returned, no more data about the resource is returned. Persist and use the `deltaLink` URL to learn about changes to the resource in the future.
 
 For details, see [Using delta query](/graph/delta-query-overview). For example requests, see [Get incremental changes for users](/graph/delta-query-users).
 
