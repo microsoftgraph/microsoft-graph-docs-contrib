@@ -38,7 +38,7 @@ Tracking changes incurs a round of one or more **delta** function calls. If you 
 (other than `$deltatoken` and `$skiptoken`), you must specify 
 it in the initial **delta** request. Microsoft Graph automatically encodes any specified parameters 
 into the token portion of the `nextLink` or `deltaLink` URL provided in the response. 
-You only need to specify any query parameters once up front. 
+You only need to specify query parameters once. 
 In subsequent requests, copy and apply the `nextLink` or `deltaLink` URL from the previous response. That URL already 
 includes the encoded parameters.
 
@@ -51,8 +51,7 @@ includes the encoded parameters.
 
 This method supports OData query parameters to help customize the response.
 
-- You can use a `$select` query parameter as in any GET request to specify only the properties your need for best performance. The **id** property is always returned.
-- There is limited support for `$filter`:
+- You can use a `$select` query parameter similarly to any GET request to specify only the properties your need for best performance. The **id** property is always returned.
   * The only supported `$filter` expression is for tracking changes for specific resources, by their ID:  `$filter=id+eq+{value}` or `$filter=id+eq+{value1}+or+id+eq+{value2}`. The number of IDs you can specify is limited by the maximum URL length.
 
 
