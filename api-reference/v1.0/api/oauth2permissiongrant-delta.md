@@ -26,7 +26,6 @@ One of the following permissions is required to call this API. To learn more, in
 
 ## HTTP request
 
-To begin tracking changes, you make a request including the delta function on the **oauth2permissiongrant** resource.
 
 <!-- { "blockType": "ignored" } -->
 ```http
