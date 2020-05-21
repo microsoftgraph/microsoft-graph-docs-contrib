@@ -1608,7 +1608,7 @@ For more complex scenarios involving multiple permissions, see [Permission scena
 | _TeamsActivity.Read.All_ (private preview) | Read all users' teamwork activity feed | Allows the app to read all users' teamwork activity feed, without a signed-in user. | Yes | No |
 | _TeamsActivity.Send_ (private preview)| Send a teamwork activity to any user | Allows the app to send new activities to any users' teamwork activity feed, without a signed-in user. | Yes | No |
 
-## Teams app permissions (Deprecated)
+## Teams app permissions (deprecated)
 
 >[!NOTE]
 >These permissions are deprecated and should not be used.
