@@ -39,6 +39,8 @@ items:
             href: /graph/tutorials/android
           - name: Angular
             href: /graph/tutorials/angular
+          - name: ASP.NET Core
+            href: /graph/tutorials/aspnet-core
           - name: ASP.NET
             href: /learn/modules/msgraph-build-aspnetmvc-apps
           - name: Microsoft Flow
