@@ -152,14 +152,12 @@ Content-length: 252
 }
 ```
 
+For details about how errors are returned, see [Error Responses][error-response] for more info about
+how errors are returned.
+
 ## Notification endpoint validation
 
 The subscription notification endpoint (specified in the `notificationUrl` property) must be capable of responding to a validation request as described in [Set up notifications for changes in user data](/graph/webhooks#notification-endpoint-validation). If validation fails, the request to create the subscription returns a 400 Bad Request error.
-
-## Error responses
-
-See [Error Responses][error-response] for more info about
-how errors are returned.
 
 [error-response]: /graph/errors
 
