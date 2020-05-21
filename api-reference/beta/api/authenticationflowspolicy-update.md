@@ -11,7 +11,7 @@ doc_type: apiPageType
 
 Namespace: microsoft.graph
 
-Update the properties of an [authenticationFlowsPolicy](../resources/authenticationflowspolicy.md) object.
+Update the boolean property of self-service sign-up of an [authenticationFlowsPolicy](../resources/authenticationflowspolicy.md) object. The properties id, type, and description cannot be modified.
 
 ## Permissions
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
@@ -49,7 +49,7 @@ The following table shows the properties that are required when you create the [
 
 ## Response
 
-If successful, this method returns a `200 OK` response code and an updated [authenticationFlowsPolicy](../resources/authenticationflowspolicy.md) object in the response body.
+If successful, this method returns a `204 No Content` response code and an empty response body.
 
 ## Example
 
