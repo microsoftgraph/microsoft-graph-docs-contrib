@@ -7,7 +7,7 @@ localization_priority: Priority
 
 # Choose an API in Microsoft Graph to create and join online meetings
 
-Microsoft Graph offers two API sets that can arrange and join online meetings on Microsoft Teams or Skype:
+Microsoft Graph offers two API sets that arrange and join online meetings on Microsoft Teams or Skype:
 
 - [Calendar API](outlook-calendar-online-meetings.md): use the [event](/graph/api/resources/event) resource.
 - [Cloud communications API](cloud-communications-online-meetings.md): use the [onlineMeeting](/graph/api/resources/onlineMeeting) resource.
