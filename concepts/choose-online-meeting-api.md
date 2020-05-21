@@ -14,7 +14,7 @@ Microsoft Graph offers two API sets that arrange and join online meetings on Mic
 
 The choice is between:
 - A convenient programmatic way to set up an online meeting in the Outlook calendar where attendees click to join the meeting, and continue their experience in Teams or Skype.
-- Versus a richer programmatic integration of Teams or Skype features in an app for a more customized experience.
+- And, a richer programmatic integration of Teams or Skype features in an app for a more customized experience.
 
 ## Considerations when choosing an API for your scenario
 
