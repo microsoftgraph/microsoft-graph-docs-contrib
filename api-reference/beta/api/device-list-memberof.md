@@ -162,7 +162,7 @@ Content-type: text/plain
 
 #### Request
 
-The following is an example of the request.
+The following is an example of the request. 
 
 
 # [HTTP](#tab/http)
