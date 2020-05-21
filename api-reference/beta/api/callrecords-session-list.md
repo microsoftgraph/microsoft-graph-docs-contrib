@@ -1,5 +1,5 @@
 ---
-title: "Get callRecord"
+title: "List callRecord sessions"
 description: "Retrieve the list of session objects for a callRecord."
 localization_priority: Normal
 author: "stephenjust"
@@ -7,7 +7,7 @@ ms.prod: "cloud-communications"
 doc_type: "apiPageType"
 ---
 
-# Get callRecord
+# List callRecord sessions
 
 Namespace: microsoft.graph.callRecords
 
