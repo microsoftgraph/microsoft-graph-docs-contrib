@@ -19,7 +19,6 @@ The organizationSettings resource contains settings which are applicable to the 
 |:-------------|:------------|:------------|
 | [Create profileCardProperty](../api/organizationsettings-post-profilecardproperties.md) | [profileCardProperty](profilecardproperty.md) | Create a new profileCardProperty by posting to the profileCardProperties collection. |
 | [List profileCardProperties](../api/organizationsettings-list-profilecardproperties.md) | [profileCardProperty](profilecardproperty.md) collection | Get a profileCardProperty object collection. |
-| [Delete](../api/organizationsettings-delete.md) | None | Delete organizationSettings object. |
 
 ## Properties
 
