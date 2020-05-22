@@ -1,6 +1,6 @@
 ---
 title: "selfServiceSignUpAuthenticationFlowConfiguration resource type"
-description: "Represents the configurations related to self-service sign up."
+description: "Represents the configurations related to self-service sign-up."
 author: "linkhp"
 localization_priority: Priority
 ms.prod: "microsoft-identity-platform"
@@ -12,10 +12,10 @@ doc_type: resourcePageType
 
 Namespace: microsoft.graph
 
-Represents the configurations related to self-service sign-up.
+Represents the configurations related to self-service sign up.
 
 ## Properties
-|Property|Type|Description|Key|Required|ReadOnly|
+|Property|Type|Description|Key|Required|Read only|
 |:-------|:---|:----------|:--|:-------|:-------|
 |isEnabled|Boolean|Indicates whether self-service sign up flow is enabled or disabled. The default value is `false`. |No|Yes|No|
 
