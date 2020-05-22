@@ -71,6 +71,8 @@ If successful, this method returns a `200 OK` response code and a new [keyCreden
 
 The following is an example of the request.
 
+
+# [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "serviceprincipal_addkey"
@@ -90,6 +92,12 @@ Content-type: application/json
     "proof":"eyJ0eXAiOiJ..."
 }
 ```
+# [JavaScript](#tab/javascript)
+[!INCLUDE [sample-code](../includes/snippets/javascript/serviceprincipal-addkey-javascript-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+---
+
 
 #### Response
 
