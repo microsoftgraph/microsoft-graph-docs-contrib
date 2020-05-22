@@ -9386,23 +9386,6 @@ items:
           href: api/identityprovider-update.md
         - name: Delete identity provider
           href: api/identityprovider-delete.md
-      - name: Information protection
-        items:
-        - name: Labels
-          href: resources/informationprotectionlabel.md
-          items:
-          - name: List labels
-            href: api/informationprotectionpolicy-list-labels.md
-          - name: Get label
-            href: api/informationprotectionlabel-get.md
-          - name: Evaluate application
-            href: api/informationprotectionlabel-evaluateapplication.md
-          - name: Evaluate classification result
-            href: api/informationprotectionlabel-evaluateclassificationresults.md
-          - name: Evaluate removal
-            href: api/informationprotectionlabel-evaluateremoval.md
-          - name: Extract label
-            href: api/informationprotectionlabel-extractlabel.md
         - name: Threat assessment
           items:
           - name: Overview
@@ -10897,6 +10880,23 @@ items:
           href: api/alert-update.md
         - name: Update multiple alerts
           href: api/alert-updatealerts.md
+      - name: Information protection
+        items:
+        - name: Labels
+          href: resources/informationprotectionlabel.md
+          items:
+          - name: List labels
+            href: api/informationprotectionpolicy-list-labels.md
+          - name: Get label
+            href: api/informationprotectionlabel-get.md
+          - name: Evaluate application
+            href: api/informationprotectionlabel-evaluateapplication.md
+          - name: Evaluate classification result
+            href: api/informationprotectionlabel-evaluateclassificationresults.md
+          - name: Evaluate removal
+            href: api/informationprotectionlabel-evaluateremoval.md
+          - name: Extract label
+            href: api/informationprotectionlabel-extractlabel.md
       - name: Secure scores
         href: resources/securescores.md
         items:

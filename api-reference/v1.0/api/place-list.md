@@ -16,12 +16,12 @@ Get a collection of the specified type of [place](../resources/place.md) objects
 
 A **place** object can be one of the following types:
 
-* A [room](../resources/room.md) which includes rich properties such as an email address for the room, and accessibility, capacity, and device support. 
-* A [room list](../resources/roomlist.md) which includes an email address for the room list, and a navigation property to get the collection of room instances in the room list. 
+* A [room](../resources/room.md) which includes rich properties such as an email address for the room, and accessibility, capacity, and device support.
+* A [room list](../resources/roomlist.md) which includes an email address for the room list, and a navigation property to get the collection of room instances in the room list.
 
 Both **room** and **roomList** are derived from the **place** object.
 
-By default, this operation returns 100 places per page. 
+By default, this operation returns 100 places per page.
 
 Compared with the [findRooms](https://docs.microsoft.com/graph/api/user-findrooms?view=graph-rest-beta&tabs=http) and [findRoomLists](https://docs.microsoft.com/graph/api/user-findroomlists?view=graph-rest-beta) functions, this operation returns a richer payload for rooms and room lists. See [details](../resources/place.md#using-the-places-api) for how they compare.
 
@@ -57,7 +57,7 @@ To get all the rooms in the specified room list:
 GET /places/{room-list-emailaddress}/microsoft.graph.roomlist/rooms
 ```
 
->**Note**: To get rooms in a room list, you must specify the room list by its **emailAddress** property, not by its **id**. 
+>**Note**: To get rooms in a room list, you must specify the room list by its **emailAddress** property, not by its **id**.
 
 ## Optional query parameters
 This method supports the following query parameters to help customize the response:
@@ -303,7 +303,7 @@ Content-type: application/json
 
 #### Request
 
-The following example shows how to get a list of [room](../resources/room.md) objects contained in a **roomList**. 
+The following example shows how to get a list of [room](../resources/room.md) objects contained in a **roomList**.
 
 
 # [HTTP](#tab/http)
