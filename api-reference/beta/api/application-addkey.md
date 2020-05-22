@@ -31,7 +31,7 @@ Applications that don’t have any existing valid certificates (no certificates 
 |Application | None. |
 
 > [!NOTE]
-> An application does not need any specific permission to roll its own keys.
+> An application does not need any specific permission to roll its own keys. 
 
 ## HTTP request
 
