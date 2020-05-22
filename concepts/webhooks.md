@@ -202,6 +202,8 @@ The change notification object has the following properties:
 
 | Property | Type | Description |
 |:---------|:-----|:------------|
+| id | string | Optional. Unique Id of the notification |
+| sequenceNumber | int | Optional. Can be used to make sure received notifications are in order |
 | subscriptionId | string | The ID of the subscription that generated the notification. |
 | subscriptionExpirationDateTime | [dateTime](https://tools.ietf.org/html/rfc3339) | The expiration time for the subscription. |
 | clientState | string | The `clientState` property specified in the subscription request (if any). |
@@ -229,6 +231,8 @@ When the user receives an email, Microsoft Graph sends a change notification lik
 {
   "value": [
     {
+      "id": "lsgTZMr9KwAAA",
+      "sequenceNumber": 10,
       "subscriptionId":"<subscription_guid>",
       "subscriptionExpirationDateTime":"2016-03-19T22:11:09.952Z",
       "clientState":"secretClientValue",
