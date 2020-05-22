@@ -64,7 +64,8 @@ Do not supply a request body for this method.
 ## Response
 
 If successful, this method returns a `204 No Content` response code.
-For details about how errors are returned, see [Error responses][error-response] for more info about how errors are returned.
+
+For details about how errors are returned, see [Error responses][error-response].
 
 ## Example
 
