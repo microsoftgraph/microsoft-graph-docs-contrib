@@ -78,6 +78,7 @@ POST /subscriptions
 ## Response
 
 If successful, this method returns a `201 Created` response code and a [subscription](../resources/subscription.md) object in the response body.
+For details about how errors are returned, see [Error responses][error-response] for more info about how errors are returned.
 
 ## Example
 
@@ -166,9 +167,6 @@ Content-length: 252
   "latestSupportedTlsVersion": "v1_2"
 }
 ```
-
-For details about how errors are returned, see [Error Responses][error-response] for more info about
-how errors are returned.
 
 ## Notification endpoint validation
 
