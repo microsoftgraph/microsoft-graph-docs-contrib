@@ -15,9 +15,9 @@ Namespace: microsoft.graph
 Represents the configurations related to self-service sign-up.
 
 ## Properties
-|Property|Type|Description|Key|Required|ReadOnly|
-|:-------|:---|:----------|:--|:-------|:-------|
-|isEnabled|Boolean|Is self service sign up flow enabled or disabled. The default value is false. |No|Yes|No|
+|Property|Type|Description|
+|:-------|:---|:----------|
+|isEnabled|Boolean|Is self service sign up flow enabled or disabled. The default value is false. This property is not a key, is required, and is not ReadOnly.|
 
 ## Relationships
 None.
