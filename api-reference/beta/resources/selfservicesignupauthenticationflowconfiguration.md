@@ -1,6 +1,6 @@
 ---
 title: "selfServiceSignUpAuthenticationFlowConfiguration resource type"
-description: "The self-service sign up experience in regular Azure Active Directory (Azure AD) tenants enables users to initiate a self-service sign up flow."
+description: "Represents the configurations related to self-service sign-up."
 author: "linkhp"
 localization_priority: Priority
 ms.prod: "microsoft-identity-platform"
@@ -12,7 +12,7 @@ doc_type: resourcePageType
 
 Namespace: microsoft.graph
 
-Represents the configurations related to self-service sign-up.
+Represents the configurations related to self-service sign up.
 
 ## Properties
 |Property|Type|Description|
