@@ -54,7 +54,7 @@ Content-type: application/json
 Content-length: 104
 
 {
-  "@odata.id": "https://graph.microsoft.com/beta/onPremisesPublishingProfiles/applicationProxy/connectorGroups/{id}/members/$ref"
+  "@odata.id": "https://graph.microsoft.com/beta/onPremisesPublishingProfiles/applicationProxy/connectors/{id}"
 }
 ```
 In the request body, supply a JSON representation of a link to a  [connector](../resources/connector.md) object.
