@@ -89,7 +89,7 @@ Content-Type: application/json
     "audio"
   ],
   "mediaConfig": {
-    "@odata.type": "#microsoft.graph.serviceHostedMediaConfig",
+    "@odata.type": "#microsoft.graph.serviceHostedMediaConfig"
   }
 }
 ```
@@ -127,6 +127,7 @@ Content-Type: application/json
   "state": "establishing",
   "direction": "outgoing",
   "callbackUri": "https://bot.contoso.com/callback",
+  "callChainId": "d8217646-3110-40b1-bae6-e9ac6c3a9f74",
   "callRoutes": [],
   "source": {
     "@odata.type": "#microsoft.graph.participantInfo",
@@ -354,6 +355,7 @@ Content-Type: application/json
   "state": "establishing",
   "direction": "outgoing",
   "callbackUri": "https://bot.contoso.com/callback",
+  "callChainId": "d8217646-3110-40b1-bae6-e9ac6c3a9f74",
   "callRoutes": [],
   "source": {
     "@odata.type": "#microsoft.graph.participantInfo",
@@ -614,6 +616,7 @@ Content-Type: application/json
   "state": "establishing",
   "direction": "outgoing",
   "callbackUri": "https://bot.contoso.com/callback",
+  "callChainId": "d8217646-3110-40b1-bae6-e9ac6c3a9f74",
   "callRoutes": [],
   "source": {
     "@odata.type": "#microsoft.graph.participantInfo",
