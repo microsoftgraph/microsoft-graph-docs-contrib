@@ -54,7 +54,7 @@ Content-type: application/json
 Content-length: 329
 
 {
-  "@odata.id": "https://graph.microsoft.com/beta/onPremisesPublishingProfiles/applicationProxy/connectorGroups/{id}/applications"
+  "@odata.id": "https://graph.microsoft.com/beta/applications/{id}"
 }
 ```
 In the request body, supply a JSON representation of [application](../resources/application.md) object.
