@@ -27,7 +27,7 @@ One of the following permissions is required to call this API. To learn more, in
 ## HTTP request
 <!-- { "blockType": "ignored" } -->
 ```http
-GET ~/onPremisesPublishingProfiles/applicationProxy/connectorGroups
+GET /onPremisesPublishingProfiles/applicationProxy/connectorGroups
 ```
 
 ## Optional query parameters
