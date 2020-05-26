@@ -1,5 +1,5 @@
 ---
-title: "Create application"
+title: "Add an application to a connectorGroup"
 description: "Use this API to assign an app to a connector group"
 localization_priority: Normal
 author: "japere"
