@@ -23,8 +23,8 @@ For a summary of the value of these API changes, as well as recent tools, compon
 
 | **Change type** | **Version** | **Description**                          |
 | :-------------- | :---------- | :--------------------------------------- |
-| Addition | v1.0 | Added Id and sequenceNumber to [change notification](/graph/api/concepts/webhooks) |
-| Addition | beta | Added Id and sequenceNumber to [change notification](/graph/api/concepts/webhooks) |
+| Addition | v1.0 | Added Id and sequenceNumber to [change notification](/graph/api/concepts/webhooks). |
+| Addition | beta | Added Id and sequenceNumber to [change notification](/graph/api/concepts/webhooks). |
 
 ### Devices and apps | Cloud printing
 
