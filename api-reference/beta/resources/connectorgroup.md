@@ -13,7 +13,9 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Each [Azure AD Application Proxy](https://aka.ms/whyappproxy) connector is always part of a connector group. All the connectors that belong to the same connector group act as a separate unit for high-availability and load balancing. If you don't create connector groups, then all your connectors will be part of the default group.
+Each [Azure AD Application Proxy](https://aka.ms/whyappproxy) connector is always part of a connector group. All the connectors that belong to the same connector group act as a separate unit for high-availability and load balancing. If you don't create connector groups, then all your connectors will be part of the default group. When configuring an application with Application Proxy you must also specify which connector group to assign the application to.
+
+Once a connector group is created you may add or move connectors to the connector group by using [Add connector](../api/connectorgroup-post-members.md). You can also use [Add application](../api/connectorgroup-post-applications.md) to assign an application to a connector group.
 
 ## Methods
 
