@@ -1,6 +1,6 @@
 ---
 title: "organizationalBrandingProperties resource type"
-description: "PROVIDE DESCRIPTION HERE"
+description: "Contains details of the organization's branding."
 localization_priority: Normal
 author: "kexia"
 ms.prod: ""
