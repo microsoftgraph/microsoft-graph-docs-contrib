@@ -159,6 +159,8 @@ Note the following:
 }
 ```
 
+> **Note:** for a full description of the data sent when change notifications are delivered, refer to [changeNotificationCollection](/graph/api/resources/change-notification-collection).
+
 ### Responding to an authorization challenge
 
 Take the following steps to process an authorization challenge lifecycle notification. The first two steps of acknowledging and validating the lifecycle notification is similar to [responding to a resource change notification](webhooks.md#processing-the-change-notification).
@@ -258,6 +260,9 @@ In the following example, the change notification contains two items for the sam
 	]
 }
 ```
+
+> **Note:** for a full description of the data sent when change notifications are delivered, refer to [changeNotificationCollection](/graph/api/resources/change-notification-collection).
+
 ### How to validate
 
 If you are new to token validation, refer to this [blog article](http://www.cloudidentity.com/blog/2014/03/03/principles-of-token-validation/) for a useful overview. Use an SDK, such as Microsoft's [System.IdentityModel.Tokens.Jwt](https://www.nuget.org/packages/System.IdentityModel.Tokens.Jwt/) library for .NET, or a third party library for a different platform.
@@ -550,6 +555,9 @@ The following is an example change notification that includes encrypted property
 	]
 }
 ```
+
+> **Note:** for a full description of the data sent when change notifications are delivered, refer to [changeNotificationCollection](/graph/api/resources/change-notification-collection).
+
 
 This section contains some useful code snippets that use C# and .NET for each stage of decryption.
 

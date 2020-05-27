@@ -198,7 +198,7 @@ The client starts receiving change notifications after creating the subscription
 
 ### Change notification example
 
-> **Note:** for a full description of the data sent when change notifications are delivered, refer to [changeNotificationCollection](/graph/api/resources/change-notification-collection)
+> **Note:** for a full description of the data sent when change notifications are delivered, refer to [changeNotificationCollection](/graph/api/resources/change-notification-collection).
 
 When the user receives an email, Microsoft Graph sends a change notification like the following:
 
