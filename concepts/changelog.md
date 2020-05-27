@@ -17,8 +17,8 @@ For a summary of the value of these API changes, as well as recent tools, compon
 
 | **Change type** | **Version**   | **Description**                          |
 |:---|:---|:---|
-| Change | beta | Added `frequency60GHz` and `unknownFutureValue` to `microsoft.graph.callRecords.wifiBand` enum.|
-| Addition | beta | Added new [List sessions](/graph/api/callrecords-session-list?view=graph-rest-beta) api |
+| Change | beta | Added `frequency60GHz` and `unknownFutureValue` to the **microsoft.graph.callRecords.wifiBand** enum.|
+| Addition | beta | Added the [List sessions](/graph/api/callrecords-session-list?view=graph-rest-beta) API. |
 
 ### Calendar
 
