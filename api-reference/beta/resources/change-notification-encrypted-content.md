@@ -15,7 +15,7 @@ Namespace: microsoft.graph
 
 A subscription with resource data allows a client app to receive change notifications with changes to data in Microsoft Graph. The change notification encrypted content represents the encrypted data attached with the notification.
 
-See [Set up change notifications that include resource data (preview)](../../../concepts/webhooks-with-resource-data.md) for more information.
+See [Set up change notifications that include resource data (preview)](/graph/webhooks-with-resource-data.md) for more information.
 
 ## Methods
 
