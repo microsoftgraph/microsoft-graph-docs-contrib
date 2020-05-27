@@ -14,7 +14,13 @@ Namespace: microsoft.graph.callRecords
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 Represents information about why a call or portion of a call failed.
-The failure can be of two types: Call setup failure or mid call drop. If one or more media streams have any of these failures, that failure is propagated at Segment level and if one or more segments have any of these failures, that failure is propagated at Session level.
+
+The failure can be of two types: 
+
+- Call setup failure
+- Mid-call drop
+
+If one or more media streams have any of these failures, that failure is propagated at the segment level. If one or more segments have any of these failures, that failure is propagated at the session level.
 
 ## Properties
 
