@@ -55,6 +55,47 @@ The following resources currently provide a `Retry-After` header:
 - [People and social](/graph/api/resources/social-overview?view=graph-rest-beta)
 - [Drive (OneDrive)](/graph/api/resources/drive?view=graph-rest-1.0)
 - [External item (Microsoft Search)](/graph/api/resources/externalitem?view=graph-rest-beta)
+- [Directory](/graph/api/resources/directory?view=graph-rest-1.0)
+- [Directory Object](/graph/api/resources/directory-object?view=graph-rest-1.0)
+- [Authorization Policy](/graph/api/resources/authorization-policy?view=graph-rest-1.0)
+- [Extension Property](/graph/api/resources/extension-property?view=graph-rest-1.0)
+- [Administrative Unit](/graph/api/resources/administrative-unit?view=graph-rest-1.0)
+- [Application](/graph/api/resources/application?view=graph-rest-1.0)
+- [Application Role Assignment](/graph/api/resources/app-role-assignment?view=graph-rest-1.0)
+- [Certificate Based AuthConfiguration](/graph/api/resources/certificate-based-auth-configuration?view=graph-rest-1.0)
+- [Organizational Contact](/graph/api/resources/org-contact?view=graph-rest-1.0)
+- [Device](/graph/api/resources/device?view=graph-rest-1.0)
+- [Directory Object Partner Reference](/graph/api/resources/directory-object-partner-reference?view=graph-rest-1.0)
+- [Directory Role](/graph/api/resources/directory-role?view=graph-rest-1.0)
+- [Directory Role Template](/graph/api/resources/directory-role-template?view=graph-rest-1.0)
+- [Domain](/graph/api/resources/domain?view=graph-rest-1.0)
+- [Domain Dns Record](/graph/api/resources/domain-dns-record?view=graph-rest-1.0)
+- [Domain Dns Cname Record](/graph/api/resources/domain-dns-cname-record?view=graph-rest-1.0)
+- [Domain Dns Mx Record](/graph/api/resources/domain-dns-mx-record?view=graph-rest-1.0)
+- [Domain Dns Srv Record](/graph/api/resources/domain-dns-srv-record?view=graph-rest-1.0)
+- [Domain Dns Txt Record](/graph/api/resources/domain-dns-txt-record?view=graph-rest-1.0)
+- [Domain Dns Unavailable Record](/graph/api/resources/domain-dns-unavailable-record?view=graph-rest-1.0)
+- [Endpoint](/graph/api/resources/endpoint?view=graph-rest-1.0)
+- [Extension Property](/graph/api/resources/extension-property?view=graph-rest-1.0)
+- [License Details](/graph/api/resources/license-details?view=graph-rest-1.0)
+- [Group](/graph/api/resources/group?view=graph-rest-1.0)
+- [Mip Label](/graph/api/resources/mip-label?view=graph-rest-1.0)
+- [Policy Root](/graph/api/resources/policy-root?view=graph-rest-1.0)
+- [Activity Based Timeout Policy](/graph/api/resources/activity-based-timeout-policy?view=graph-rest-1.0)
+- [Claims Mapping Policy](/graph/api/resources/claims-mapping-policy?view=graph-rest-1.0)
+- [Home Realm Discovery Policy](/graph/api/resources/home-realm-discovery-policy?view=graph-rest-1.0)
+- [Token Issuance Policy](/graph/api/resources/token-issuance-policy?view=graph-rest-1.0)
+- [Token Lifetime Policy](/graph/api/resources/token-lifetime-policy?view=graph-rest-1.0)
+- [Policy Base](/graph/api/resources/policy-base?view=graph-rest-1.0)
+- [Sts Policy](/graph/api/resources/sts-policy?view=graph-rest-1.0)
+- [Contract](/graph/api/resources/contract?view=graph-rest-1.0)
+- [Service Principal](/graph/api/resources/service-principal?view=graph-rest-1.0)
+- [Subscribed Sku](/graph/api/resources/subscribed-sku?view=graph-rest-1.0)
+- [O Auth2 Permission Grant](/graph/api/resources/o-auth2-permission-grant?view=graph-rest-1.0)
+- [Organization](/graph/api/resources/organization?view=graph-rest-1.0)
+- [User](/graph/api/resources/user?view=graph-rest-1.0)
+- [Group Setting](/graph/api/resources/group-setting?view=graph-rest-1.0)
+- [Group Setting Template](/graph/api/resources/group-setting-template?view=graph-rest-1.0)
 
 For a broader discussion of throttling on the Microsoft Cloud, see [Throttling Pattern](https://docs.microsoft.com/azure/architecture/patterns/throttling).
 
@@ -160,3 +201,128 @@ The following limits apply to any request on `/subscriptions`.
 |---------------------------|------------------------------|-----------------------------------|
 | POST, PUT, DELETE, PATCH  | 1000 requests per 20 seconds | 2000 requests per 20 seconds      |
 | All other HTTP methods    | 5000 requests per 20 seconds | 10000 requests per 20 seconds     |
+
+### Identity and access service limits
+
+#### Entities limits apply to
+
+- [Directory](/graph/api/resources/directory?view=graph-rest-1.0)
+- [Directory Object](/graph/api/resources/directory-object?view=graph-rest-1.0)
+- [Authorization Policy](/graph/api/resources/authorization-policy?view=graph-rest-1.0)
+- [Extension Property](/graph/api/resources/extension-property?view=graph-rest-1.0)
+- [Administrative Unit](/graph/api/resources/administrative-unit?view=graph-rest-1.0)
+- [Application](/graph/api/resources/application?view=graph-rest-1.0)
+- [Application Role Assignment](/graph/api/resources/app-role-assignment?view=graph-rest-1.0)
+- [Certificate Based AuthConfiguration](/graph/api/resources/certificate-based-auth-configuration?view=graph-rest-1.0)
+- [Organizational Contact](/graph/api/resources/org-contact?view=graph-rest-1.0)
+- [Device](/graph/api/resources/device?view=graph-rest-1.0)
+- [Directory Object Partner Reference](/graph/api/resources/directory-object-partner-reference?view=graph-rest-1.0)
+- [Directory Role](/graph/api/resources/directory-role?view=graph-rest-1.0)
+- [Directory Role Template](/graph/api/resources/directory-role-template?view=graph-rest-1.0)
+- [Domain](/graph/api/resources/domain?view=graph-rest-1.0)
+- [Domain Dns Record](/graph/api/resources/domain-dns-record?view=graph-rest-1.0)
+- [Domain Dns Cname Record](/graph/api/resources/domain-dns-cname-record?view=graph-rest-1.0)
+- [Domain Dns Mx Record](/graph/api/resources/domain-dns-mx-record?view=graph-rest-1.0)
+- [Domain Dns Srv Record](/graph/api/resources/domain-dns-srv-record?view=graph-rest-1.0)
+- [Domain Dns Txt Record](/graph/api/resources/domain-dns-txt-record?view=graph-rest-1.0)
+- [Domain Dns Unavailable Record](/graph/api/resources/domain-dns-unavailable-record?view=graph-rest-1.0)
+- [Endpoint](/graph/api/resources/endpoint?view=graph-rest-1.0)
+- [Extension Property](/graph/api/resources/extension-property?view=graph-rest-1.0)
+- [License Details](/graph/api/resources/license-details?view=graph-rest-1.0)
+- [Group](/graph/api/resources/group?view=graph-rest-1.0)
+- [Mip Label](/graph/api/resources/mip-label?view=graph-rest-1.0)
+- [Policy Root](/graph/api/resources/policy-root?view=graph-rest-1.0)
+- [Activity Based Timeout Policy](/graph/api/resources/activity-based-timeout-policy?view=graph-rest-1.0)
+- [Claims Mapping Policy](/graph/api/resources/claims-mapping-policy?view=graph-rest-1.0)
+- [Home Realm Discovery Policy](/graph/api/resources/home-realm-discovery-policy?view=graph-rest-1.0)
+- [Token Issuance Policy](/graph/api/resources/token-issuance-policy?view=graph-rest-1.0)
+- [Token Lifetime Policy](/graph/api/resources/token-lifetime-policy?view=graph-rest-1.0)
+- [Policy Base](/graph/api/resources/policy-base?view=graph-rest-1.0)
+- [Sts Policy](/graph/api/resources/sts-policy?view=graph-rest-1.0)
+- [Contract](/graph/api/resources/contract?view=graph-rest-1.0)
+- [Service Principal](/graph/api/resources/service-principal?view=graph-rest-1.0)
+- [Subscribed Sku](/graph/api/resources/subscribed-sku?view=graph-rest-1.0)
+- [O Auth2 Permission Grant](/graph/api/resources/o-auth2-permission-grant?view=graph-rest-1.0)
+- [Organization](/graph/api/resources/organization?view=graph-rest-1.0)
+- [User](/graph/api/resources/user?view=graph-rest-1.0)
+- [Group Setting](/graph/api/resources/group-setting?view=graph-rest-1.0)
+- [Group Setting Template](/graph/api/resources/group-setting-template?view=graph-rest-1.0)
+
+#### Pattern
+
+Throttling works by adding individual cost of requests. The sum of requests costs is then compaired against pre-determined limits. The following table documents  existing limits, reaching any of the limits will results in `429 Too Many Requests` responses. It is possible to receive `429 Too Many Requests` responses even when the following limits are not reached in situations when the services are under an important load or based on data volume for a specific tenant.
+
+| Limit type | Limit value |
+| ---------- | ----------- |
+| application+tenant pair | TODO |
+| application | TODO |
+
+The following table documents base requests costs, any other request not listed in the following table has a base cost of 1.
+
+| Operation | Request Path | Base Request Cost |
+| --------- | ---------- | ------------------ |
+| GET | `groups/{id}/members` | 3 |
+| GET | `groups/{id}/transitiveMembers` | 5 |
+| GET | `me/memberOf` | 2 |
+| GET | `me/transitiveMemberOf` | 2 |
+| GET | `me/ownedObjects` | 2 |
+| GET | `applications` | 2 |
+| GET | `contracts` | 3 |
+| GET | `domains/{id}/domainNameReferences` | 4 |
+| GET | `oauth2PermissionGrants` | 2 |
+| GET | `servicePrincipals/{id}/appRoleAssignments` | 2 |
+| GET | `subscribedSkus` | 3 |
+| GET | `users` | 2 |
+| GET | `me/licenseDetails` | 2 |
+| POST | `me/checkMemberGroups` | 4 |
+| POST | `me/checkMemberObjects` | 4 |
+| GET | `applications/{id}/extensionProperties` | 2 |
+| POST | `me/getMemberGroups` | 2 |
+| POST | `me/getMemberObjects` | 2 |
+| POST | `directoryObjects/getByIds` |  3 |
+| POST | `getObjectsById` | 3 |
+| POST | `isMemberOf` | 4 |
+| GET | `oauth2PermissionGrants/{id}` | 2 |
+
+Other factors that impact a request cost:
+
+- Using $select decreases cost by 1
+- Using $expand increases cost by 1
+- Using $top with a value of less than 20 decreases cost by 1
+
+> [!NOTE]
+> A request cost can never be lower than 1.
+> [!NOTE]
+> Any request cost that applies to a request path starting with `me/` also applies to equivalent requests starting with `users/{id | userPrincipalName}/`.
+
+#### Additional headers
+
+##### Request headers
+
+- **x-ms-throttle-priority**. If the header doesn't exist or set to any other value, it indicates a normal request. We advice limiting interactive requests. Set the priority to interactive to only the requests where the user initiated and waiting for a response. The values of this header can be the following:
+    1. Low: Indicates the request is low priority, that throttling this request doesn't cause user visible failures.
+    1. Normal: default if no value is provided. Indicates the request is default priority.
+    1. Interactive: Indicates the request is interactive or high priority, that throttling this request cause user visible failures.
+
+> [!NOTE]
+> Low priority requests will be throttled when 100% of the limit is reached, Normal at 110% and Interactive at 170%. Applications using too many Interactive requests will get throttled more aggressively.
+
+##### Regular responses requests
+
+- **x-aad-resource-unit**: Indicates the resource unit used for this request.
+- **x-aad-app-warning-limit-exceeded**: Returned only when the application consumed more than 80% of its limit. The value indicates how much the application exceeds the 80% limit. This can be used by the callers to set up an alert and take action.
+
+##### Throttled responses requests
+
+- **x-ms-throttle-scope**: Indicates the scope of throttling and can have the following value:
+    1. Tenant_Application_All: All requests for a particular tenant for the current application.
+    1. Tenant_Application_Write: Requests that involve create, update or delete operations for a particular tenant for the current application.
+    1. Partition_Application_All: All requests for all the partition that the current tenant is in for the current application.
+    1. Partition_Application_Write: Requests that involve create, update or delete operations for the partition that the current tenant is in for the current application.
+    1. Tenant_All: All requests for the current tenant, regardless of the application.
+    1. Tenant_Write: Requests that involve create, update or delete operations for the current tenant, regardless of the application.
+    1. Application_All: All requests for the current application.
+- **x-ms-throttle-reason**: Indicates the reason for throttling and can have the following values:
+    1. CPULimitExceeded: Throttling is because the limit for cpu allocation is exceeded.
+    1. WriteLimitExceeded: Throttling is because the write limit is exceeded.
+    1. RULimitExceeded: Throttling is because the limit for the allocated resource unit is exceeded.
