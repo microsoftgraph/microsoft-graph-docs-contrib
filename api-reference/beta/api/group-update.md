@@ -70,8 +70,9 @@ Because the **group** resource supports [extensions](/graph/extensibility-overvi
 
 If successful, this method returns a `204 No Content` response code.
 
-## Example
+## Examples
 
+### Example 1: Update display name and description of a group
 #### Request
 
 The following is an example of the request.
@@ -90,12 +91,58 @@ Content-length: 211
 {
   "description": "description-value",
   "displayName": "displayName-value",
-  "groupTypes": [
-    "groupTypes-value"
-  ],
-  "mail": "mail-value",
-  "mailEnabled": true,
-  "mailNickname": "mailNickname-value"
+}
+```
+# [C#](#tab/csharp)
+[!INCLUDE [sample-code](../includes/snippets/csharp/update-group-csharp-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [JavaScript](#tab/javascript)
+[!INCLUDE [sample-code](../includes/snippets/javascript/update-group-javascript-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Objective-C](#tab/objc)
+[!INCLUDE [sample-code](../includes/snippets/objc/update-group-objc-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+---
+
+
+#### Response
+
+The following is an example of the response.
+<!-- {
+  "blockType": "response",
+  "truncated": true,
+  "@odata.type": "microsoft.graph.group"
+} -->
+
+```http
+HTTP/1.1 204 No Content
+```
+### Example 2: Apply sensitivity label to an Office 365 group
+#### Request
+
+You can obtain the ID of the label you want to apply to an Office 365 group with [List label API](https://docs.microsoft.com/graph/api/informationprotectionpolicy-list-labels?view=graph-rest-beta&tabs=http). Then you can update the [assignedLabels](https://docs.microsoft.com/graph/api/resources/assignedlabel?view=graph-rest-beta) property of the group with the Label ID. 
+
+# [HTTP](#tab/http)
+<!-- {
+  "blockType": "request",
+  "name": "update_group"
+}-->
+
+```http
+PATCH https://graph.microsoft.com/beta/groups/{id}
+Content-type: application/json
+Content-length: 211
+
+{
+  "assignedLabels": 
+  [
+    {
+        "labelId" : "45cd0c48-c540-4358-ad79-a3658cdc5b88"
+    }
+  ]
 }
 ```
 # [C#](#tab/csharp)
