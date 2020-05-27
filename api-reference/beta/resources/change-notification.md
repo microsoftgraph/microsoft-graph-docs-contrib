@@ -30,12 +30,23 @@ None.
 | encryptedContent | [microsoft.graph.changeNotificationEncryptedContent](change-notification-encrypted-content.md) | (Preview) Encrypted content attached with the change notification. Only provided if **encryptionCertificate** and **includeResourceData** were defined during the subscription request and if the resource supports it. Optional |
 | lifecycleEvent | string | (Preview) The type of lifecycle notification if the current notification is a lifecycle notification. Optional. Supported values are `missed`, `removed`, `reauthorizationRequired`. |
 | id | string | Unique Id for notification. Optional. |
-| resource | string | Specifies the resource that emitted the change notification. Required. |
-| resourceData | object | Complex type containing information about the resource like the Odata type and the id. Varies from resource to resource. Required. |
+| resource | string | The URI of the resource that emitted the change notification relative to `https://graph.microsoft.com`. Required. |
+| resourceData | object | The content of this property depends on the type of resource being subscribed to. Required. |
 | sequenceNumber | int | Can be used to make sure received notifications are in order. Optional. |
-| subscriptionExpirationDateTime | DateTimeOffset | Specifies the date and time (UTC) when the subscription expires. Required. |
+| subscriptionExpirationDateTime | [dateTime](https://tools.ietf.org/html/rfc3339) | The expiration time for the subscription. Required. |
 | subscriptionId | string | The unique identifier of the subscription that generated the notification. |
 | tenantId | guid | The unique identified of the tenant from which the change notification originated. |
+
+For example, for Outlook resources, `resourceData` contains the following fields:
+
+| Property | Type | Description |
+|:---------|:-----|:------------|
+| @odata.type | string | The OData entity type in Microsoft Graph that describes the represented object. |
+| @odata.id | string | The OData identifier of the object. |
+| @odata.etag | string | The HTTP entity tag that represents the version of the object. |
+| id | string | The identifier of the object. |
+
+> **Note:** The `id` value provided in `resourceData` is valid at the time the change notification was generated. Some actions, such as moving a message to another folder, may result in the `id` no longer being valid when the change notification is processed.
 
 ## Relationships
 
