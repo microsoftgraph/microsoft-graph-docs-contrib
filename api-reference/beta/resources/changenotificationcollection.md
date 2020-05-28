@@ -4,7 +4,7 @@ description: "Represents a collection of subscription notifications sent to the 
 localization_priority: Normal
 author: "baywet"
 doc_type: resourcePageType
-ms.prod: "change-notifications"
+ms.prod: "non-product-specific"
 ---
 
 # changeNotificationCollection resource type
