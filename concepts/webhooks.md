@@ -198,7 +198,7 @@ The client starts receiving change notifications after creating the subscription
 
 ### Change notification example
 
-> **Note:** for a full description of the data sent when change notifications are delivered, refer to [changeNotificationCollection](/graph/api/resources/change-notification-collection).
+> **Note:** for a full description of the data sent when change notifications are delivered, see [changeNotificationCollection](/graph/api/resources/changenotificationcollection).
 
 When the user receives an email, Microsoft Graph sends a change notification like the following:
 
@@ -226,7 +226,7 @@ When the user receives an email, Microsoft Graph sends a change notification lik
 }
 ```
 
-> **Note:** the `value` field is an array of objects. When there are many queued change notifications, Microsoft Graph may send multiple items in a single request. Change notifications from different subscriptions can be included in the same request.
+> **Note:** the `value` field is an array of objects. When many change notifications are queued, Microsoft Graph might send multiple items in a single request. Change notifications from different subscriptions can be included in the same request.
 
 ### Processing the change notification
 
