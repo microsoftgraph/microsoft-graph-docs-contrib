@@ -31,23 +31,11 @@ None.
 | lifecycleEvent | string | The type of lifecycle notification if the current notification is a lifecycle notification. Optional. Supported values are `missed`, `removed`, `reauthorizationRequired`. |
 | id | string | Unique ID for the notification. Optional. |
 | resource | string | The URI of the resource that emitted the change notification relative to `https://graph.microsoft.com`. Required. |
-| resourceData | object | The content of this property depends on the type of resource being subscribed to. Required. |
+| resourceData | [microsoft.graph.resourceData](resourcedata.md) | The content of this property depends on the type of resource being subscribed to. Required. |
 | sequenceNumber | int | Can be used to make sure received notifications are in order. Optional. |
 | subscriptionExpirationDateTime | [dateTime](https://tools.ietf.org/html/rfc3339) | The expiration time for the subscription. Required. |
 | subscriptionId | string | The unique identifier of the subscription that generated the notification. |
 | tenantId | guid | The unique identified of the tenant from which the change notification originated. |
-
-### resourceData property
-For Outlook resources, **resourceData** contains the following fields:
-
-| Property | Type | Description |
-|:---------|:-----|:------------|
-| @odata.type | string | The OData entity type in Microsoft Graph that describes the represented object. |
-| @odata.id | string | The OData identifier of the object. |
-| @odata.etag | string | The HTTP entity tag that represents the version of the object. |
-| id | string | The identifier of the object. |
-
-> **Note:** The `id` value provided in **resourceData** is valid at the time the change notification was generated. Some actions, such as moving a message to another folder, might result in the `id` no longer being valid when the change notification is processed.
 
 ## Relationships
 
