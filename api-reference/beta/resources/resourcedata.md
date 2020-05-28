@@ -1,5 +1,5 @@
 ---
-title: "changeNotification resource type"
+title: "resourceData resource type"
 description: "Represents the resouce data attached to the change notification sent to the subscriber."
 localization_priority: Normal
 author: "baywet"
@@ -47,7 +47,7 @@ The following is a JSON representation of the resource.
   "optionalProperties": [
 
   ],
-  "@odata.type": "microsoft.graph.changeNotification"
+  "@odata.type": "microsoft.graph.resourseData"
 }-->
 
 ```json
