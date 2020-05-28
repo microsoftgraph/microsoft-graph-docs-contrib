@@ -1,10 +1,10 @@
 ---
-title: "change notification resource type"
-description: "A subscription allows a client app to receive change notifications from changes to data in Microsoft Graph. The change notification represents the notification sent to the subscriber."
+title: "changeNotification resource type"
+description: "Represents the change notification sent to the subscriber."
 localization_priority: Normal
 author: "baywet"
 doc_type: resourcePageType
-ms.prod: ""
+ms.prod: "non-product-specific"
 ---
 
 # change notification resource type
@@ -13,9 +13,9 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-A subscription allows a client app to receive change notifications from changes to data in Microsoft Graph. The change notification represents the notification sent to the subscriber.
+Represents the notification sent to the subscriber.
 
-See [Use the Microsoft Graph API to get change notifications](webhooks.md) for more information.
+For details, see [Use the Microsoft Graph API to get change notifications](webhooks.md).
 
 ## Methods
 
@@ -28,8 +28,8 @@ None.
 | changeType | string | Indicates the type of change that will raised the change notification. The supported values are: `created`, `updated`, `deleted`. Required. |
 | clientState | string | Value of the **clientState** property sent specified in the subscription request (if any). The maximum length is 255 characters. The client can check that the change notification came from the service by comparing the value of the **clientState** property sent with the subscription with the value of the **clientState** property received with each change notification. Optional. |
 | encryptedContent | [microsoft.graph.changeNotificationEncryptedContent](change-notification-encrypted-content.md) | (Preview) Encrypted content attached with the change notification. Only provided if **encryptionCertificate** and **includeResourceData** were defined during the subscription request and if the resource supports it. Optional |
-| lifecycleEvent | string | (Preview) The type of lifecycle notification if the current notification is a lifecycle notification. Optional. Supported values are `missed`, `removed`, `reauthorizationRequired`. |
-| id | string | Unique Id for notification. Optional. |
+| lifecycleEvent | string | The type of lifecycle notification if the current notification is a lifecycle notification. Optional. Supported values are `missed`, `removed`, `reauthorizationRequired`. |
+| id | string | Unique ID for the notification. Optional. |
 | resource | string | The URI of the resource that emitted the change notification relative to `https://graph.microsoft.com`. Required. |
 | resourceData | object | The content of this property depends on the type of resource being subscribed to. Required. |
 | sequenceNumber | int | Can be used to make sure received notifications are in order. Optional. |
@@ -37,7 +37,8 @@ None.
 | subscriptionId | string | The unique identifier of the subscription that generated the notification. |
 | tenantId | guid | The unique identified of the tenant from which the change notification originated. |
 
-For example, for Outlook resources, `resourceData` contains the following fields:
+### resourceData property
+For Outlook resources, **resourceData** contains the following fields:
 
 | Property | Type | Description |
 |:---------|:-----|:------------|
@@ -46,7 +47,7 @@ For example, for Outlook resources, `resourceData` contains the following fields
 | @odata.etag | string | The HTTP entity tag that represents the version of the object. |
 | id | string | The identifier of the object. |
 
-> **Note:** The `id` value provided in `resourceData` is valid at the time the change notification was generated. Some actions, such as moving a message to another folder, may result in the `id` no longer being valid when the change notification is processed.
+> **Note:** The `id` value provided in **resourceData** is valid at the time the change notification was generated. Some actions, such as moving a message to another folder, might result in the `id` no longer being valid when the change notification is processed.
 
 ## Relationships
 
@@ -54,7 +55,7 @@ None.
 
 ## JSON representation
 
-Here is a JSON representation of the resource.
+The following is a JSON representation of the resource.
 
 <!-- {
   "blockType": "resource",
