@@ -23,7 +23,7 @@ For a summary of the value of these API changes, as well as recent tools, compon
 
 | **Change type** | **Version** | **Description**                          |
 | :-------------- | :---------- | :--------------------------------------- |
-| Addition | beta | Added [changeNotification](/graph/api/resources/change-notification), [changeNotificationCollection](/graph/api/resources/change-notification-collection) and [changeNotificationEncryptedContent](/graph/api/resources/change-notification-encrypted-content) for [change notification](/graph/api/concepts/webhooks). |
+| Addition | beta | Added the [changeNotification](/graph/api/resources/change-notification), [changeNotificationCollection](/graph/api/resources/change-notification-collection), and [changeNotificationEncryptedContent](/graph/api/resources/change-notification-encrypted-content) resources for the [change notification](/graph/api/concepts/webhooks) API. |
 
 ### Devices and apps | Cloud printing
 
