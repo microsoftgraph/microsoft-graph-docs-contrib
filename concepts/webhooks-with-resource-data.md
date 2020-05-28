@@ -556,7 +556,7 @@ The following is an example change notification that includes encrypted property
 }
 ```
 
-> **Note:** for a full description of the data sent when change notifications are delivered, refer to [changeNotificationCollection](/graph/api/resources/change-notification-collection).
+> **Note:** for a full description of the data sent when change notifications are delivered, see [changeNotificationCollection](/graph/api/resources/changenotificationcollection).
 
 
 This section contains some useful code snippets that use C# and .NET for each stage of decryption.
