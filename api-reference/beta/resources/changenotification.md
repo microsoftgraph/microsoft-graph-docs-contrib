@@ -7,7 +7,7 @@ doc_type: resourcePageType
 ms.prod: "non-product-specific"
 ---
 
-# change notification resource type
+# changeNotification resource type
 
 Namespace: microsoft.graph
 
