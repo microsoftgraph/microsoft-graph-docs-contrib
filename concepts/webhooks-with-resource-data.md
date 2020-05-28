@@ -159,7 +159,7 @@ Note the following:
 }
 ```
 
-> **Note:** for a full description of the data sent when change notifications are delivered, refer to [changeNotificationCollection](/graph/api/resources/change-notification-collection).
+> **Note:** for a full description of the data sent when change notifications are delivered, see [changeNotificationCollection](/graph/api/resources/changenotificationcollection).
 
 ### Responding to an authorization challenge
 
@@ -261,11 +261,11 @@ In the following example, the change notification contains two items for the sam
 }
 ```
 
-> **Note:** for a full description of the data sent when change notifications are delivered, refer to [changeNotificationCollection](/graph/api/resources/change-notification-collection).
+> **Note:** for a full description of the data sent when change notifications are delivered, see [changeNotificationCollection](/graph/api/resources/changenotificationcollection).
 
 ### How to validate
 
-If you are new to token validation, refer to this [blog article](http://www.cloudidentity.com/blog/2014/03/03/principles-of-token-validation/) for a useful overview. Use an SDK, such as Microsoft's [System.IdentityModel.Tokens.Jwt](https://www.nuget.org/packages/System.IdentityModel.Tokens.Jwt/) library for .NET, or a third party library for a different platform.
+If you're new to token validation, see [Principles of Token Validation](http://www.cloudidentity.com/blog/2014/03/03/principles-of-token-validation/) for an overview. Use an SDK, such as the [System.IdentityModel.Tokens.Jwt](https://www.nuget.org/packages/System.IdentityModel.Tokens.Jwt/) library for .NET, or a third-party library for a different platform.
 
 Be mindful of the following: 
 
@@ -301,7 +301,7 @@ Use the following steps to validate tokens and apps that generate tokens:
 
 ### Example JWT token
 
-Here is an example of the properties included in the JWT token that are needed for validation:
+The following is an example of the properties included in the JWT token that are needed for validation.
 
 ```json
 {
