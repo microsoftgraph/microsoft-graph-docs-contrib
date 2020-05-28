@@ -13,6 +13,13 @@ For a summary of the value of these API changes, as well as recent tools, compon
 
 ## May 2020
 
+### Cloud communications | Call records
+
+| **Change type** | **Version**   | **Description**                          |
+|:---|:---|:---|
+| Change | beta | Added `frequency60GHz` and `unknownFutureValue` to the **microsoft.graph.callRecords.wifiBand** enum.|
+| Addition | beta | Added the [List sessions](/graph/api/callrecords-session-list?view=graph-rest-beta) API. |
+
 ### Calendar
 
 | **Change type** | **Version**   | **Description**                          |
