@@ -107,6 +107,7 @@ Namespace: microsoft.graph.callRecords
 | skypeTranslator
 | skypeForBusinessAttendant
 | responseGroupService
+| voicemail
 | unknownFutureValue
 
 ### userFeedbackRating values

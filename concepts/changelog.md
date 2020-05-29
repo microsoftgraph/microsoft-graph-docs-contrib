@@ -24,11 +24,12 @@ Added new APIs and resources for subscribing to and retrieving call records from
 | Addition | v1.0 | Added new complex types:<br /><li>[endpoint](/graph/api/resources/callrecords-endpoint?view=graph-rest-1.0)</li> <li>[participantEndpoint](/graph/api/resources/callrecords-participantendpoint?view=graph-rest-1.0)</li> <li>[serviceEndpoint](/graph/api/resources/callrecords-serviceendpoint?view=graph-rest-1.0)</li> <li>[userAgent](/graph/api/resources/callrecords-useragent?view=graph-rest-1.0)</li> <li>[serviceUserAgent](/graph/api/resources/callrecords-serviceuseragent?view=graph-rest-1.0)</li> <li>[clientUserAgent](/graph/api/resources/callrecords-clientuseragent?view=graph-rest-1.0)</li> <li>[userfeedback](/graph/api/resources/callrecords-userfeedback?view=graph-rest-1.0)</li> <li>[feedbackTokenSet](/graph/api/resources/callrecords-feedbacktokenset?view=graph-rest-1.0)</li> <li>[media](/graph/api/resources/callrecords-media?view=graph-rest-1.0)</li> <li>[mediaStream](/graph/api/resources/callrecords-mediastream?view=graph-rest-1.0)</li> <li>[networkInfo](/graph/api/resources/callrecords-networkinfo?view=graph-rest-1.0)</li> <li>[deviceInfo](/graph/api/resources/callrecords-deviceinfo?view=graph-rest-1.0)</li> <li>[failureInfo](/graph/api/resources/callrecords-failureinfo?view=graph-rest-1.0)</li> |
 | Addition | v1.0 | Added support for [webhook](webhooks.md) subscriptions to call records.|
 
-Added a new List Sessions API and additional Wi-Fi band enum values in beta.
+Added a new List Sessions API, additional Wi-Fi band enum values, and an additional service role enum value in beta.
 
 | **Change type** | **Version**   | **Description**                          |
 |:---|:---|:---|
 | Change | beta | Added `frequency60GHz` and `unknownFutureValue` to the **microsoft.graph.callRecords.wifiBand** enum.|
+| Change | beta | Added `voicemail` to the **microsoft.graph.callRecords.serviceRole** enum.|
 | Addition | beta | Added the [List sessions](/graph/api/callrecords-session-list?view=graph-rest-beta) API. |
 
 ### Calendar
