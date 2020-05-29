@@ -80,7 +80,6 @@ For a summary of the value of these API changes, as well as recent tools, compon
 | Addition | v1.0 | Added new entity type: [servicePrincipal](/graph/resources/serviceprincipal?view=graph-rest-v1.0).|
 | Addition | v1.0 | Added new entity type: [appRoleAssignment](/graph/resources/approleassignment?view=graph-rest-v1.0).|
 | Addition | beta, v1.0 | Added app-only and delegated permissions [AppRoleAssignment.ReadWrite.All](permissions-reference.md#group-permissions). |
-| Addition | v1.0 | Added the **externalUserState** and **externalUserStateChangeDateTime** properties to the [user](https://docs.microsoft.com/graph/api/resources/user?view=graph-rest-1.0) object. |
 | Addition | beta | Added delegated permission [EntitlementManagement.Read.All](permissions-reference.md#entitlement-management-permissions). |
 
 ### Teamwork (Microsoft Teams)
@@ -98,6 +97,11 @@ For a summary of the value of these API changes, as well as recent tools, compon
 | :-------------- | :---------- | :--------------------------------------- |
 | Addition | v1.0 | Introduced the Shifts APIs, including [shift](/graph/api/resources/shift?view=graph-rest-1.0), [workforceintegration](/graph/api/resources/workforceintegration?view=graph-rest-1.0), and associated methods.|
 
+### Users
+
+| **Change type** | **Version** | **Description**                          |
+| :-------------- | :---------- | :--------------------------------------- |
+| Addition | v1.0 | Added the **externalUserState** and **externalUserStateChangeDateTime** properties to the [user](https://docs.microsoft.com/graph/api/resources/user?view=graph-rest-1.0) object. |
 
 ## April 2020
 
