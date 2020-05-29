@@ -47,7 +47,7 @@ The following is a JSON representation of the resource.
   "stored_fields": ["String"],
   "contentSources": ["String"],
   "entityTypes": ["String"],
-  "query": {"@odata.type": "microsoft_graph_searchQuery"},
+  "query": {"@odata.type": "searchQuery"},
   "from": 1024,
   "size": 1024,
   "enableTopResults": true

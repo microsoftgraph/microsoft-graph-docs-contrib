@@ -38,7 +38,7 @@ Content-Type: application/json
   "requests": [
     {
       "entityTypes": [
-        "microsoft_graph_message"
+        "message"
       ],
       "query": {
         "query_string": {
@@ -129,7 +129,7 @@ Content-Type: application/json
   "requests": [
     {
       "entityTypes": [
-        "microsoft_graph_message"
+        "message"
       ],
       "query": {
         "query_string": {
