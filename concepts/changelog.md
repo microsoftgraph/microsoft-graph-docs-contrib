@@ -39,7 +39,7 @@ For a summary of the value of these API changes, as well as recent tools, compon
 | Addition | beta | Added **displayName** and **isAcceptingJobs** properties to the [printer](/graph/api/resources/printer?view=graph-rest-beta) entity. |
 | Addition | beta | Added properties to the [printerShare](/graph/api/resources/printerShare?view=graph-rest-beta) entity: <br/> <ul><li>**manufacturer**</li><li>**model**</li><li>**isAcceptingJobs**</li><li>**defaults**</li><li>**capabilities**</li><li>**location**</li><li>**status**</li><li>**jobs**</li></ul> |
 
-### Devices and apps | Corporate management (Intune)
+### Devices and apps | Corporate management
 
 | **Change type** | **Version**   | **Description** |
 |:---|:---|:---|
@@ -77,7 +77,7 @@ For a summary of the value of these API changes, as well as recent tools, compon
 |Addition|beta|Added the [evaluateDynamicMembership](/graph/api/group-evaluatedynamicmembership?view=graph-rest-beta) action on [group](/graph/api/resources/group?view=graph-rest-beta). Also added these supporting resource types:<ul><li>[evaluateDynamicMembershipResult](/graph/api/resources/evaluatedynamicmembershipresult?view=graph-rest-beta)</li><li>[expressionEvaluationDetails](/graph/api/resources/expressionevaluationdetails?view=graph-rest-beta)</li><li>[propertyToEvaluate](/graph/api/resources/propertytoevaluate?view=graph-rest-beta)</li></ul>|
 | Addition | beta | Added the **resourceBehaviorOptions** and **resourceProvisioningOptions** properties to the [group](/graph/api/resources/group?view=graph-rest-beta) entity.|
 
-### Identity and access (Azure AD)
+### Identity and access
 
 | **Change type** | **Version**   | **Description**                          |
 | :-------------- | :------------ | :--------------------------------------- |
@@ -89,7 +89,7 @@ For a summary of the value of these API changes, as well as recent tools, compon
 | Addition | beta, v1.0 | Added app-only and delegated permissions [AppRoleAssignment.ReadWrite.All](permissions-reference.md#application-resource-permissions). |
 | Addition | beta | Added delegated permission [EntitlementManagement.Read.All](permissions-reference.md#entitlement-management-permissions). |
 
-### Teamwork (Microsoft Teams)
+### Teamwork
 
 | **Change type** | **Version** | **Description**                          |
 | :-------------- | :---------- | :--------------------------------------- |
@@ -98,7 +98,7 @@ For a summary of the value of these API changes, as well as recent tools, compon
 | Addition | beta | Added the **azureADAppId** property to [teamsAppDefinition](/graph/api/resources/teamsAppDefinition?view=graph-rest-beta).|
 | Addition | beta | Added permissions for [resource-specific consent](/graph/permissions-reference#teams-resource-specific-consent-permissions).|
 
-### Teamwork | Shifts (Microsoft Teams)
+### Teamwork | Shifts
 
 | **Change type** | **Version** | **Description**                          |
 | :-------------- | :---------- | :--------------------------------------- |
@@ -129,7 +129,7 @@ For a summary of the value of these API changes, as well as recent tools, compon
 | Addition | beta | Added **allowedGroups** and **allowedUsers** properties to the [printerShare](/graph/api/resources/printershare?view=graph-rest-beta) entity.|
 | Addition | beta | Added the [printIdentity](/graph/api/resources/printidentity?view=graph-rest-beta) and [printUserIdentity](/graph/api/resources/printuseridentity?view=graph-rest-beta) resource types. |
 
-### Devices and apps | Corporate management (Intune)
+### Devices and apps | Corporate management
 
 | **Change type** | **Version** | **Description** |
 |:---|:---|:---|
@@ -175,7 +175,7 @@ For a summary of the value of these API changes, as well as recent tools, compon
 | Addition        | v1.0        | Added the **expirationDateTime**, **hasPassword**, and **grantedToIdentities** properties on the [permission](/graph/api/resources/permission?view=graph-rest-1.0) resource. |
 | Addition        | v1.0        | Added the **expirationDateTime**, and **password** properties on the [invite](/graph/api/driveitem-invite?view=graph-rest-1.0) action on a [driveItem](/graph/api/resources/driveitem?view=graph-rest-1.0) resource. |
 
-### Identity and access (Azure AD)
+### Identity and access
 
 | **Change type** | **Version**   | **Description** |
 |:---|:---|:---|
@@ -540,7 +540,7 @@ Added new APIs and resources for subscribing to and retrieving call records from
 
 ## December 2019
 
-### Change notifications (webhooks)
+### Change notifications
 
 | **Change type** | **Version**   | **Description**                          |
 | :-------------- | :------------ | :--------------------------------------- |
