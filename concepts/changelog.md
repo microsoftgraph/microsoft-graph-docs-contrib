@@ -101,7 +101,7 @@ For a summary of the value of these API changes, as well as recent tools, compon
 
 | **Change type** | **Version** | **Description**                          |
 | :-------------- | :---------- | :--------------------------------------- |
-| Addition | v1.0 | Added the **externalUserState** and **externalUserStateChangeDateTime** properties to the [user](https://docs.microsoft.com/graph/api/resources/user?view=graph-rest-1.0) object. |
+| Addition | v1.0 | Added the **externalUserState** and **externalUserStateChangeDateTime** properties to the [user](/graph/api/resources/user?view=graph-rest-1.0) resource. |
 
 ## April 2020
 
