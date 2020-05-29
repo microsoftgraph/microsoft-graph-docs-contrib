@@ -69,7 +69,7 @@ The following Microsoft Graph features are generally available on the `/v1.0` en
 | SharePoint| ✔ | ✔ | ✔ |
 | Planner|✔ |✔ |✔ |
 | Reports  |➖| ✔ |➖|
-| Change notifications (webhooks)  | ➖|✔* |✔* |
+| Change notifications (webhooks)  | ✔* |✔* |✔* |
 | Delta query | ➖ | ✔ | ➖ |
 | Directory schema extensions |➖|➖|➖|
 | Open type extensions|➖|➖|➖|
@@ -79,7 +79,6 @@ The following additional Microsoft Graph features are available in preview (on t
 * Organizational Contacts
 * Applications
 * Service Principals
-* Change notifications (webhooks)
 
 (*) Limited support for Exchange and OneDrive services only. Azure AD services are not supported. 
 
