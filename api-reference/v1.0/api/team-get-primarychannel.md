@@ -7,7 +7,7 @@ ms.prod: "microsoft-teams"
 doc_type: apiPageType
 ---
 
-# primaryChannel
+# Get primaryChannel
 
 Namespace: microsoft.graph
 
