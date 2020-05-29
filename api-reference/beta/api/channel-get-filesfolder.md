@@ -1,6 +1,6 @@
 ---
 title: "Get filesFolder"
-description: "Retrieve the filesFolder of a channel."
+description: "Retrieve the filesFolder navigation path of a channel."
 author: "nkramer"
 localization_priority: Priority
 ms.prod: "microsoft-teams"
