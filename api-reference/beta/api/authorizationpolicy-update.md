@@ -48,17 +48,19 @@ In the request body, supply the values for relevant fields that should be update
 |:-------------|:------------|:------------|  
 |`displayName`|`String`| Display name for this policy. |  
 |`description`|`String`| Description of this policy. |  
-|`guestUserRoleId`|`Guid`| Represents role templateId for the role that should be granted to guest user. Use https://graph.microsoft.com/beta/roleManagement/directory/roleDefinitions to find the list of available role templates. Only supported roles today are User (a0b1b346-4d3e-4e8b-98f8-753987be4970), Guest User (10dae51f-b6af-4016-8d66-8c2a99b929b3) and Restricted Guest User (2af84b1e-32c8-42b7-82bc-daa82404023b). | 
+|`guestUserRoleId`|`Guid`| Represents role templateId for the role that should be granted to guest user. Refer to [List unifiedRoleDefinitions](https://docs.microsoft.com/graph/api/rbacapplication-list-roledefinitions?view=graph-rest-beta&tabs=http) to find the list of available role templates. Only supported roles today are User (a0b1b346-4d3e-4e8b-98f8-753987be4970), Guest User (10dae51f-b6af-4016-8d66-8c2a99b929b3) and Restricted Guest User (2af84b1e-32c8-42b7-82bc-daa82404023b). | 
 |`enabledPreviewFeatures`|`Collection(string)`| List of features enabled for private preview on the tenant. | 
-|`blockMsolPowerShell`|`Boolean`| To disable the use of MSOL PowerShell set this property to true. Setting to true will also disable user-based access to the legacy service endpoint used by MSOL PowerShell. This does not affect Azure AD Connect, Azure AD Graph or Microsoft Graph. | 
+|`blockMsolPowerShell`|`Boolean`| To disable the use of MSOL PowerShell set this property to true. Setting to true will also disable user-based access to the legacy service endpoint used by MSOL PowerShell. This does not affect Azure AD Connect or Microsoft Graph. | 
 
 ## Response
 
 If successful, this method returns a `204 No Content` response code. It does not return anything in the response body.
 
-## Example 1: Update/set Guest user access level for the tenant
+## Examples
 
-### Request
+### Example 1: Update or set Guest user access level for the tenant
+
+#### Request
 
 The following is an example of the request. In this example, guest access level is modified to Restricted Guest User.
 
@@ -69,7 +71,7 @@ PATCH https://graph.microsoft.com/beta/policies/authorizationPolicy/authorizatio
 }
 
 ```
-### Response
+#### Response
 
 The following is an example of the response.
 
@@ -84,9 +86,9 @@ HTTP/1.1 204 No Content
 
 ```
 
-## Example 2: Enable new feature for preview on tenant
+### Example 2: Enable new feature for preview on tenant
 
-### Request
+#### Request
 
 The following is an example of the request.
 
@@ -97,7 +99,7 @@ PATCH https://graph.microsoft.com/beta/policies/authorizationPolicy/authorizatio
 }
 
 ```
-### Response
+#### Response
 
 The following is an example of the response.
 
@@ -112,9 +114,9 @@ HTTP/1.1 204 No Content
 ```
 
 
-## Example 3: Block MSOL PowerShell in tenant
+### Example 3: Block MSOL PowerShell in tenant
 
-### Request
+#### Request
 
 The following is an example of the request.
 
@@ -125,7 +127,7 @@ PATCH https://graph.microsoft.com/beta/policies/authorizationPolicy/authorizatio
 }
 
 ```
-### Response
+#### Response
 
 The following is an example of the response.
 
