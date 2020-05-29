@@ -299,30 +299,30 @@ Other factors that impact a request cost:
 
 ##### Request headers
 
-- **x-ms-throttle-priority**. If the header doesn't exist or set to any other value, it indicates a normal request. We advice limiting interactive requests. Set the priority to interactive to only the requests where the user initiated and waiting for a response. The values of this header can be the following:
-    1. Low: Indicates the request is low priority, that throttling this request doesn't cause user visible failures.
-    1. Normal: default if no value is provided. Indicates the request is default priority.
-    1. Interactive: Indicates the request is interactive or high priority, that throttling this request cause user visible failures.
+- **x-ms-throttle-priority**. If the header doesn't exist or set to any other value, it indicates a normal request. We recommend limiting interactive requests. Set the priority to interactive to only the requests where the user initiated and waiting for a response. The values of this header can be the following:
+    1. Low - Indicates the request is low priority. Throttling this request doesn't cause user-visible failures.
+    1. Normal - Default if no value is provided. Indicates that the request is default priority.
+    1. Interactive - Indicates that the request is interactive or high priority. Throttling this request causes user-visible failures.
 
 > [!NOTE]
-> Low priority requests will be throttled when 100% of the limit is reached, Normal at 110% and Interactive at 170%. Applications using too many Interactive requests will get throttled more aggressively.
+> Low requests will be throttled when 100% of the limit is reached, Normal at 110%, and Interactive at 170%. Applications using too many Interactive requests will get throttled more aggressively.
 
 ##### Regular responses requests
 
-- **x-aad-resource-unit**: Indicates the resource unit used for this request.
-- **x-aad-app-warning-limit-exceeded**: Returned only when the application consumed more than 80% of its limit. The value indicates how much the application exceeds the 80% limit. This can be used by the callers to set up an alert and take action.
+- **x-aad-resource-unit** - Indicates the resource unit used for this request.
+- **x-aad-app-warning-limit-exceeded** - Returned only when the application consumed more than 80% of its limit. The value indicates how much the application exceeds the 80% limit. This can be used by the callers to set up an alert and take action.
 
 ##### Throttled responses requests
 
-- **x-ms-throttle-scope**: Indicates the scope of throttling and can have the following value:
-    1. Tenant_Application_All: All requests for a particular tenant for the current application.
-    1. Tenant_Application_Write: Requests that involve create, update or delete operations for a particular tenant for the current application.
-    1. Partition_Application_All: All requests for all the partition that the current tenant is in for the current application.
-    1. Partition_Application_Write: Requests that involve create, update or delete operations for the partition that the current tenant is in for the current application.
-    1. Tenant_All: All requests for the current tenant, regardless of the application.
-    1. Tenant_Write: Requests that involve create, update or delete operations for the current tenant, regardless of the application.
-    1. Application_All: All requests for the current application.
-- **x-ms-throttle-reason**: Indicates the reason for throttling and can have the following values:
-    1. CPULimitExceeded: Throttling is because the limit for cpu allocation is exceeded.
-    1. WriteLimitExceeded: Throttling is because the write limit is exceeded.
-    1. RULimitExceeded: Throttling is because the limit for the allocated resource unit is exceeded.
+- **x-ms-throttle-scope** - Indicates the scope of throttling and can have the following value:
+    1. Tenant_Application_All - All requests for a particular tenant for the current application.
+    1. Tenant_Application_Write - Requests that involve create, update, or delete operations for a particular tenant for the current application.
+    1. Partition_Application_All - All requests for all the partition that the current tenant is in for the current application.
+    1. Partition_Application_Write - Requests that involve create, update, or delete operations for the partition that the current tenant is in for the current application.
+    1. Tenant_All - All requests for the current tenant, regardless of the application.
+    1. Tenant_Write - Requests that involve create, update, or delete operations for the current tenant, regardless of the application.
+    1. Application_All - All requests for the current application.
+- **x-ms-throttle-reason** - Indicates the reason for throttling and can have the following values:
+    1. CPULimitExceeded - Throttling is because the limit for cpu allocation is exceeded.
+    1. WriteLimitExceeded - Throttling is because the write limit is exceeded.
+    1. RULimitExceeded - Throttling is because the limit for the allocated resource unit is exceeded.
