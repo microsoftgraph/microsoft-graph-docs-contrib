@@ -1,6 +1,6 @@
 ---
 title: "Get authorizationPolicy"
-description: "Retrieve the properties and relationships of [authorizationPolicy](../resources/authorizationpolicy.md) object."
+description: "Retrieve the properties and relationships of authorizationPolicy object."
 localization_priority: Normal
 author: "abhijeetsinha"
 ms.prod: "microsoft-identity-platform"
