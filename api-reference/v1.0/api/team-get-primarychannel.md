@@ -1,6 +1,6 @@
 ---
-title: "primaryChannel"
-description: "It is a navigation property of a team."
+title: "Get primaryChannel"
+description: "Retrieve the navigation property of a team that allows access to its default General channel."
 author: "nkramer"
 localization_priority: Priority
 ms.prod: "microsoft-teams"
@@ -11,7 +11,7 @@ doc_type: apiPageType
 
 Namespace: microsoft.graph
 
-A navigation property of a [team](../resources/team.md) that allows access to its default [channel](../resources/channel.md), **General**.
+Retrieve the navigation property of a [team](../resources/team.md) that allows access to its default General [channel](../resources/channel.md).
 
 ## Permissions
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
@@ -22,7 +22,7 @@ One of the following permissions is required to call this API. To learn more, in
 |Delegated (personal Microsoft account) | Not supported.    |
 |Application | Group.Read.All, Group.ReadWrite.All    |
 
-**Note**: This API supports admin permissions. Global admins and Microsoft Teams service admins can access teams that they are not a member of.
+> **Note**: This API supports admin permissions. Global admins and Microsoft Teams service admins can access teams that they are not a member of.
 
 ## HTTP request
 <!-- { "blockType": "ignored" } -->
@@ -33,7 +33,7 @@ GET /teams/{id}/channels/{id}/primaryChannel
 
 ## Optional query parameters
 
-This method supports the $filter, $select, and $expand [OData query parameters](/graph/query-parameters) to help customize the response.
+This method supports the `$filter`, `$select`, and `$expand` [OData query parameters](/graph/query-parameters) to help customize the response.
 
 ## Request headers
 | Header       | Value |
