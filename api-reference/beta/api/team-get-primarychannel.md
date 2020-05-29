@@ -1,6 +1,6 @@
 ---
-title: "primaryChannel"
-description: "A navigation property of a team that allows access to its default General channel."
+title: "Get primaryChannel"
+description: "Retrieve the navigation property of a team that allows access to its default General channel."
 author: "nkramer"
 localization_priority: Priority
 ms.prod: "microsoft-teams"
@@ -14,7 +14,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-A navigation property of a [team](../resources/team.md) that allows access to the default General [channel](../resources/channel.md).
+Retrieve the navigation property of a [team](../resources/team.md) that allows access to the default General [channel](../resources/channel.md).
 
 ## Permissions
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
