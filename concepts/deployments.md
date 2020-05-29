@@ -69,7 +69,7 @@ The following Microsoft Graph features are generally available on the `/v1.0` en
 | SharePoint| ✔ | ✔ | ✔ |
 | Planner|✔ |✔ |✔ |
 | Reports  |➖| ✔ |➖|
-| Change notifications (webhooks)  | ✔* |✔* |✔* |
+| Change notifications (webhooks)  | ✔ |✔ |✔* |
 | Delta query | ➖ | ✔ | ➖ |
 | Directory schema extensions |➖|➖|➖|
 | Open type extensions|➖|➖|➖|
