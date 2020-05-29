@@ -11,7 +11,7 @@ doc_type: apiPageType
 
 Namespace: microsoft.graph
 
-Retrieve the filesFolder navigation path of a [channel](../resources/channel.md). It is the metadata for the location where the channel files are stored.
+Retrieve the filesFolder navigation path, which is the metadata for the location where the channel files are stored, for a [channel](../resources/channel.md). 
 
 ## Permissions
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
@@ -32,7 +32,7 @@ GET /teams/{id}/channels/{id}/filesFolder
 
 ## Optional query parameters
 
-The [OData Query Parameters](https://developer.microsoft.com/graph/docs/concepts/query_parameters) are not currently supported.
+This method does not support the [OData query parameters](/graph/query-parameters) to customize the response.
 
 ## Request headers
 | Header       | Value |
@@ -44,7 +44,7 @@ Do not supply a request body for this method.
 
 ## Response
 
-If successful, this method returns a `200 OK` response code and  [driveItem](../resources/driveitem.md) object in the response body.
+If successful, this method returns a `200 OK` response code and a [driveItem](../resources/driveitem.md) object in the response body.
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2015-10-25 14:57:30 UTC -->
