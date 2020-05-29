@@ -213,7 +213,7 @@ The age group and minor consent properties are optional properties used by Azure
 | Value    | #  |Description|
 |:---------------|:--------|:----------|
 |null|0|Default value, no `ageGroup` has been set for the user.|
-|minor|1|The user is consider a minor.|
+|minor|1|The user is considered a minor.|
 |notAdult|2|The user is from a country that has statutory regulations  United States, United Kingdom, European Union or South Korea) and user’s age is more than the upper limit of kid age (as per country) and less than lower limit of adult age (as stipulated based on country or region). So basically, teenagers are considered as `notAdult` in regulated countries.|
 |adult|3|The user should be a treated as an adult.|
 
