@@ -1,8 +1,8 @@
 ---
 title: "appScope resource type"
-description: "The scope of a role assignment determines the set of resources for which the principal has been granted access. An app scope is a scope defined and understood by a specific application. The other type of scope is directory scope. Directory scopes are shared scopes stored in the directory that are understood by multiple applications. "
+description: "An app scope is a scope defined and understood by a specific application."
 localization_priority: Normal
-author: "davidmu1"
+author: "sureshja"
 ms.prod: "microsoft-identity-platform"
 doc_type: "resourcePageType"
 ---

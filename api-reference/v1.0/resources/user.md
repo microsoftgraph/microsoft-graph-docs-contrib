@@ -29,10 +29,14 @@ This resource supports:
 | [Update user](../api/user-update.md) | [user](user.md) | Update user object. |
 | [Delete user](../api/user-delete.md) | None | Delete user object. |
 | [Get delta](../api/user-delta.md) | [user](user.md) collection | Get incremental changes for users. |
-| **Calendar** |||
-| [Create calendar](../api/user-post-calendars.md) | [calendar](calendar.md) | Create a new Calendar by posting to the calendars collection. |
-| [Create calendarGroup](../api/user-post-calendargroups.md) | [calendarGroup](calendargroup.md) | Create a new CalendarGroup by posting to the calendarGroups collection. |
-| [Create event](../api/user-post-events.md) | [event](event.md)| Create a new Event by posting to the events collection. |
+| **App role assignments** | | |
+|[List appRoleAssignments](../api/user-list-approleassignments.md) |[appRoleAssignment](approleassignment.md) collection| Get the apps and app roles which this user has been assigned.|
+|[Add appRoleAssignment](../api/user-post-approleassignments.md) |[appRoleAssignment](approleassignment.md)| Assign an app role to this user.|]
+|[Remove appRoleAssignment](../api/user-delete-approleassignments.md) | None | Remove an app role assignment from this user.|
+| **Calendar** ||| 
+| [Create calendar](../api/user-post-calendars.md) | [Calendar](calendar.md) | Create a new Calendar by posting to the calendars collection.|
+| [Create calendarGroup](../api/user-post-calendargroups.md) | [CalendarGroup](calendargroup.md) | Create a new CalendarGroup by posting to the calendarGroups collection. |
+| [Create event](../api/user-post-events.md) | [event](event.md) | Create a new event by posting to the events collection. |
 | [findMeetingTimes](../api/user-findmeetingtimes.md) | [meetingTimeSuggestionsResult](meetingtimesuggestionsresult.md) | Find time and locations to meet based on attendee availability, location, or time constraints. |
 | [getSchedule](../api/calendar-getschedule.md) | [scheduleInformation](scheduleinformation.md) | Get the free/busy availability information for a collection of users, distributions lists, or resources (rooms or equipment) for a specified time period. |
 | [List calendars](../api/user-list-calendars.md) | [calendar](calendar.md) collection | Get a Calendar object collection. |
@@ -207,7 +211,7 @@ The age group and minor consent properties are optional properties used by Azure
 | Value    | #  |Description|
 |:---------------|:--------|:----------|
 |null|0|Default value, no `ageGroup` has been set for the user.|
-|minor|1|The user is consider a minor.|
+|minor|1|The user is considered a minor.|
 |notAdult|2|The user is from a country that has statutory regulations  United States, United Kingdom, European Union or South Korea) and user’s age is more than the upper limit of kid age (as per country) and less than lower limit of adult age (as stipulated based on country or region). So basically, teenagers are considered as `notAdult` in regulated countries.|
 |adult|3|The user should be a treated as an adult.|
 
