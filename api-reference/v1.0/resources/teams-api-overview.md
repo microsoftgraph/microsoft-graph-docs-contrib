@@ -23,13 +23,13 @@ Microsoft Teams is a chat-based workspace in Office 365 that provides built-in a
 |[teamsTab](../resources/teamstab.md) |[List](../api/teamstab-list.md), [create](../api/teamstab-add.md), [read](../api/teamstab-get.md), [update](../api/teamstab-update.md), [delete](../api/teamstab-delete.md) |
 |[teamsApp](../resources/teamsapp.md)|[List](../api/teamsapp-list.md), [publish](../api/teamsapp-publish.md), [update](../api/teamsapp-update.md), [remove](../api/teamsapp-delete.md)|
 |[teamsAppInstallation](../resources/teamsappinstallation.md)| [List](../api/teamsappinstallation-list.md), [install](../api/teamsappinstallation-add.md), [upgrade](../api/teamsappinstallation-delete.md), [remove](../api/teamsappinstallation-delete.md) |
-|[chatMessage](../api/resources/chatmessage)| [send](../api/channel-post-messages) |
-|[call](../api/resources/call)| [Answer](../api/call-answer), [reject](../api/call-reject), [redirect](../api/call-redirect), [mute](../api/call-mute), [unmute](../api/call-unmute), [update metadata](../api/call-updatemetadata), [change screen sharing role](../api/call-changescreensharingrole), [list participants](../api/call-list-participants), [invite participants](../api/participant-invite), [mute all participants](../api/participant-muteall) |
-|[schedule](../api/resources/schedule)| [Create or replace](../api/team-put-schedule), [get](../api/schedule-get), [share](../api/schedule-share) |
-|[schedulingGroup](../api/resources/schedulinggroup)| [Create](../api/schedule-post-schedulinggroups), [List](../api/schedule-list-schedulinggroups), [Get](../api/schedulinggroup-get), [Replace](../api/schedulinggroup-put), [Delete](../api/schedulinggroup-delete) |
-|[shift](../api/resources/shift)| [Create](../api/schedule-post-shifts), [List](../api/schedule-list-shifts), [Get](../api/shift-get), [Replace](../api/shift-put), [Delete](../api/shift-delete) |
-|[timeOff](../api/resources/timeoff)| [Create](../api/schedule-post-timesoff), [List](../api/schedule-list-timesoff), [Get](../api/timeoff-get), [Replace](../api/timeoff-put), [Delete](../api/timeoff-delete) |
-|[timeOffReason](../api/resources/timeoffreason)| [Create](../api/schedule-post-timeoffreasons), [List](../api/schedule-list-timeoffreasons), [Get](../api/timeoffreason-get), [Replace](../api/timeoffreason-put), [Delete](../api/timeoffreason-delete) |
+|[chatMessage](../api/resources/chatmessage.md)| [send](../api/channel-post-messages.md) |
+|[call](../api/resources/call.md)| [Answer](../api/call-answer.md), [reject](../api/call-reject.md), [redirect](../api/call-redirect.md), [mute](../api/call-mute.md), [unmute](../api/call-unmute.md), [update metadata](../api/call-updatemetadata.md), [change screen sharing role](../api/call-changescreensharingrole.md), [list participants](../api/call-list-participants.md), [invite participants](../api/participant-invite.md), [mute all participants](../api/participant-muteall.md) |
+|[schedule](../api/resources/schedule.md)| [Create or replace](../api/team-put-schedule.md), [get](../api/schedule-get.md), [share](../api/schedule-share.md) |
+|[schedulingGroup](../api/resources/schedulinggroup.md)| [Create](../api/schedule-post-schedulinggroups.md), [List](../api/schedule-list-schedulinggroups.md), [Get](../api/schedulinggroup-get.md), [Replace](../api/schedulinggroup-put.md), [Delete](../api/schedulinggroup-delete.md) |
+|[shift](../api/resources/shift.md)| [Create](../api/schedule-post-shifts.md), [List](../api/schedule-list-shifts.md), [Get](../api/shift-get.md), [Replace](../api/shift-put.md), [Delete](../api/shift-delete.md) |
+|[timeOff](../api/resources/timeoff.md)| [Create](../api/schedule-post-timesoff.md), [List](../api/schedule-list-timesoff.md), [Get](../api/timeoff-get.md), [Replace](../api/timeoff-put.md), [Delete](../api/timeoff-delete.md) |
+|[timeOffReason](../api/resources/timeoffreason.md)| [Create](../api/schedule-post-timeoffreasons.md), [List](../api/schedule-list-timeoffreasons.md), [Get](../api/timeoffreason-get.md), [Replace](../api/timeoffreason-put.md), [Delete](../api/timeoffreason-delete.md) |
 
 ## Microsoft Teams limits
 
