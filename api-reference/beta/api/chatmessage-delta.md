@@ -28,7 +28,7 @@ A GET request with the delta function returns either:
 
 State tokens are completely opaque to the client. To proceed with a round of change tracking, simply copy and apply the `nextLink` or `deltaLink` URL returned from the last GET request to the next delta function call for that same calendar view. A `deltaLink` returned in a response signifies that the current round of change tracking is complete. You can save and use the `deltaLink` URL when you begin the next round.
 
-For more information, see the [delta query](/graph/delta-query-overview.md) documentation.
+For more information, see the [delta query](/graph/delta-query-overview) documentation.
 
 ## Permissions
 
