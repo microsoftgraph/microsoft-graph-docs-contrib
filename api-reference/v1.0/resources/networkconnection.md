@@ -17,6 +17,7 @@ Contains stateful information about the network connection related to the alert.
 |:---------------|:--------|:----------|
 |applicationName|String|Name of the application managing the network connection (for example, Facebook, SMTP, etc.).|
 |destinationAddress|String|Destination IP address (of the network connection).|
+|destinationLocation|String|Location (by IP address mapping) associated with the destination of a network connection. (**new**)|
 |destinationDomain|String|Destination domain portion of the destination URL. (for example 'www.contoso.com').|
 |destinationPort|String|Destination port (of the network connection).|
 |destinationUrl|String|Network connection URL/URI string - excluding parameters. (for example 'www.contoso.com/products/default.html')|
@@ -30,6 +31,7 @@ Contains stateful information about the network connection related to the alert.
 |protocol|[securityNetworkProtocol](securitynetworkprotocol.md)|Network protocol. Possible values are: `unknown`, `ip`, `icmp`, `igmp`, `ggp`, `ipv4`, `tcp`, `pup`, `udp`, `idp`, `ipv6`, `ipv6RoutingHeader`, `ipv6FragmentHeader`, `ipSecEncapsulatingSecurityPayload`, `ipSecAuthenticationHeader`, `icmpV6`, `ipv6NoNextHeader`, `ipv6DestinationOptions`, `nd`, `raw`, `ipx`, `spx`, `spxII`.|
 |riskScore|String|Provider generated/calculated risk score of the network connection. Recommended value range of 0-1, which equates to a percentage.|
 |sourceAddress|String|Source (i.e. origin) IP address (of the network connection).|
+|sourceLocation|String|Location (by IP address mapping) associated with the source of a network connection. (**new**)|
 |sourcePort|String|Source (i.e. origin) IP port (of the network connection).|
 |status|connectionStatus|Network connection status. Possible values are: `unknown`, `attempted`, `succeeded`, `blocked`, `failed`.|
 |urlParameters|String|Parameters (suffix) of the destination URL.|
@@ -50,6 +52,7 @@ The following is a JSON representation of the resource.
 {
   "applicationName": "String",
   "destinationAddress": "String",
+  "destinationLocation": "String",
   "destinationDomain": "String",
   "destinationPort": "String",
   "destinationUrl": "String",
@@ -63,6 +66,7 @@ The following is a JSON representation of the resource.
   "protocol": "@odata.type: microsoft.graph.securityNetworkProtocol",
   "riskScore": "String",
   "sourceAddress": "String",
+  "sourceLocation": "String",
   "sourcePort": "String",
   "status": "@odata.type: microsoft.graph.connectionStatus",
   "urlParameters": "String"
