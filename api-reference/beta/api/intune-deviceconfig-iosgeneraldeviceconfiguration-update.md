@@ -1,13 +1,15 @@
 ---
 title: "Update iosGeneralDeviceConfiguration"
 description: "Update the properties of a iosGeneralDeviceConfiguration object."
-author: "rolyon"
+author: "dougeby"
 localization_priority: Normal
 ms.prod: "Intune"
 doc_type: apiPageType
 ---
 
 # Update iosGeneralDeviceConfiguration
+
+Namespace: microsoft.graph
 
 > **Important:** Microsoft Graph APIs under the /beta version are subject to change; production use is not supported.
 
@@ -102,7 +104,7 @@ The following table shows the properties that are required when you create the [
 |documentsBlockUnmanagedDocumentsInManagedApps|Boolean|Indicates whether or not to block the user from viewing unmanaged documents in managed apps.|
 |emailInDomainSuffixes|String collection|An email address lacking a suffix that matches any of these strings will be considered out-of-domain.|
 |enterpriseAppBlockTrust|Boolean|Indicates whether or not to block the user from trusting an enterprise app.|
-|enterpriseAppBlockTrustModification|Boolean|Indicates whether or not to block the user from modifying the enterprise app trust settings.|
+|enterpriseAppBlockTrustModification|Boolean|\[Deprecated\] Configuring this setting and setting the value to 'true' has no effect on the device.|
 |esimBlockModification|Boolean|Indicates whether or not to allow the addition or removal of cellular plans on the eSIM of a supervised device.|
 |faceTimeBlocked|Boolean|Indicates whether or not to block the user from using FaceTime. Requires a supervised device for iOS 13 and later.|
 |findMyFriendsBlocked|Boolean|Indicates whether or not to block changes to Find My Friends when the device is in supervised mode.|
@@ -216,6 +218,9 @@ The following table shows the properties that are required when you create the [
 |airPrintBlockCredentialsStorage|Boolean|Indicates whether or not keychain storage of username and password for Airprint is blocked (iOS 11.0 and later).|
 |airPrintForceTrustedTLS|Boolean|Indicates if trusted certificates are required for TLS printing communication (iOS 11.0 and later).|
 |airPrintBlockiBeaconDiscovery|Boolean|Indicates whether or not iBeacon discovery of AirPrint printers is blocked. This prevents spurious AirPrint Bluetooth beacons from phishing for network traffic (iOS 11.0 and later).|
+|filesNetworkDriveAccessBlocked|Boolean|Indicates if devices can access files or other resources on a network server using the Server Message Block (SMB) protocol. Available for devices running iOS and iPadOS, versions 13.0 and later.|
+|filesUsbDriveAccessBlocked|Boolean|Indicates if sevices with access can connect to and open files on a USB drive. Available for devices running iOS and iPadOS, versions 13.0 and later.|
+|wifiPowerOnForced|Boolean|Indicates whether or not Wi-Fi remains on, even when device is in airplane mode. Available for devices running iOS and iPadOS, versions 13.0 and later.|
 |blockSystemAppRemoval|Boolean|Indicates whether or not the removal of system apps from the device is blocked on a supervised device (iOS 11.0 and later).|
 |vpnBlockCreation|Boolean|Indicates whether or not the creation of VPN configurations is blocked (iOS 11.0 and later).|
 |appRemovalBlocked|Boolean|Indicates if the removal of apps is allowed.|
@@ -227,12 +232,11 @@ The following table shows the properties that are required when you create the [
 |contactsAllowManagedToUnmanagedWrite|Boolean|Indicates whether or not managed apps can write contacts to unmanaged contacts accounts (iOS 12.0 and later).|
 |contactsAllowUnmanagedToManagedRead|Boolean|Indicates whether or not unmanaged apps can read from managed contacts accounts (iOS 12.0 or later).|
 |cellularBlockPersonalHotspotModification|Boolean|Indicates whether or not to block the user from modifying the personal hotspot setting (iOS 12.2 or later).|
-|siriDisableServerLogging|Boolean|Indicates whether or not server-side Siri logging is disabled (iOS 12.2 or later).|
 |continuousPathKeyboardBlocked|Boolean|Indicates whether or not to block the continuous path keyboard when the device is supervised (iOS 13 or later).|
 |findMyDeviceInFindMyAppBlocked|Boolean|Indicates whether or not to block Find My Device when the device is supervised (iOS 13 or later).|
 |findMyFriendsInFindMyAppBlocked|Boolean|Indicates whether or not to block Find My Friends when the device is supervised (iOS 13 or later).|
-|wiFiBlockPowerModification|Boolean|Indicates whether or not to block WiFi power modification when the device is supervised (iOS 13 or later).|
 |iTunesBlocked|Boolean|Indicates whether or not to block the iTunes app. Requires a supervised device for iOS 13 and later.|
+|kioskModeAppType|[iosKioskModeAppType](../resources/intune-deviceconfig-ioskioskmodeapptype.md)|Type of app to run in kiosk mode. Possible values are: `notConfigured`, `appStoreApp`, `managedApp`, `builtInApp`.|
 
 
 
@@ -246,7 +250,7 @@ Here is an example of the request.
 ``` http
 PATCH https://graph.microsoft.com/beta/deviceManagement/deviceConfigurations/{deviceConfigurationId}
 Content-type: application/json
-Content-length: 10444
+Content-length: 10518
 
 {
   "@odata.type": "#microsoft.graph.iosGeneralDeviceConfiguration",
@@ -516,6 +520,9 @@ Content-length: 10444
   "airPrintBlockCredentialsStorage": true,
   "airPrintForceTrustedTLS": true,
   "airPrintBlockiBeaconDiscovery": true,
+  "filesNetworkDriveAccessBlocked": true,
+  "filesUsbDriveAccessBlocked": true,
+  "wifiPowerOnForced": true,
   "blockSystemAppRemoval": true,
   "vpnBlockCreation": true,
   "appRemovalBlocked": true,
@@ -527,12 +534,11 @@ Content-length: 10444
   "contactsAllowManagedToUnmanagedWrite": true,
   "contactsAllowUnmanagedToManagedRead": true,
   "cellularBlockPersonalHotspotModification": true,
-  "siriDisableServerLogging": true,
   "continuousPathKeyboardBlocked": true,
   "findMyDeviceInFindMyAppBlocked": true,
   "findMyFriendsInFindMyAppBlocked": true,
-  "wiFiBlockPowerModification": true,
-  "iTunesBlocked": true
+  "iTunesBlocked": true,
+  "kioskModeAppType": "appStoreApp"
 }
 ```
 
@@ -541,7 +547,7 @@ Here is an example of the response. Note: The response object shown here may be 
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 10616
+Content-Length: 10690
 
 {
   "@odata.type": "#microsoft.graph.iosGeneralDeviceConfiguration",
@@ -814,6 +820,9 @@ Content-Length: 10616
   "airPrintBlockCredentialsStorage": true,
   "airPrintForceTrustedTLS": true,
   "airPrintBlockiBeaconDiscovery": true,
+  "filesNetworkDriveAccessBlocked": true,
+  "filesUsbDriveAccessBlocked": true,
+  "wifiPowerOnForced": true,
   "blockSystemAppRemoval": true,
   "vpnBlockCreation": true,
   "appRemovalBlocked": true,
@@ -825,15 +834,13 @@ Content-Length: 10616
   "contactsAllowManagedToUnmanagedWrite": true,
   "contactsAllowUnmanagedToManagedRead": true,
   "cellularBlockPersonalHotspotModification": true,
-  "siriDisableServerLogging": true,
   "continuousPathKeyboardBlocked": true,
   "findMyDeviceInFindMyAppBlocked": true,
   "findMyFriendsInFindMyAppBlocked": true,
-  "wiFiBlockPowerModification": true,
-  "iTunesBlocked": true
+  "iTunesBlocked": true,
+  "kioskModeAppType": "appStoreApp"
 }
 ```
-
 
 
 

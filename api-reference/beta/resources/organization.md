@@ -2,12 +2,14 @@
 title: "organization resource type"
 description: "Represents an Azure Active Directory tenant. "
 localization_priority: Normal
-author: "davidmu1"
+author: "adimitui"
 ms.prod: "microsoft-identity-platform"
 doc_type: resourcePageType
 ---
 
 # organization resource type
+
+Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
@@ -19,7 +21,7 @@ This resource lets you add your own data to custom properties using [extensions]
 
 | Method       | Return Type  |Description|
 |:---------------|:--------|:----------|
-|[Get organization](../api/organization-get.md) | [organization](organization.md) |Read properties and relationships of organization object.|
+|[Get organization](../api/organization-get.md) | [organization](organization.md) collection|Read properties and relationships of organization object.|
 |[Update organization](../api/organization-update.md) | [organization](organization.md)  |Update organization object. The only properties that can be updated are: **marketingNotificationMails**, **technicalNotificationMails**, **securityComplianceNotificationMails**, **securityComplianceNotificationPhones** and **privacyProfile**. |
 |**Open extensions**| | |
 |[Create open extension](../api/opentypeextension-post-opentypeextension.md) |[openTypeExtension](opentypeextension.md)| Create an open extension and add custom properties to a new or existing resource.|

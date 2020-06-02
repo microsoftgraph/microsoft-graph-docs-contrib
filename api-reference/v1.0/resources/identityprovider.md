@@ -2,11 +2,13 @@
 title: "identityProvider resource type"
 description: "Represents an Azure Active Directory (Azure AD) identity provider."
 localization_priority: Priority
-author: "valnav"
+author: "Nickgmicrosoft"
 ms.prod: "microsoft-identity-platform"
 doc_type: resourcePageType
 ---
 # identityProvider resource type
+
+Namespace: microsoft.graph
 
 Represents an Azure Active Directory (Azure AD) identity provider. The identity provider can be Microsoft, Google, Facebook, Amazon,  LinkedIn, or Twitter. The following Identity Providers are in Preview: Weibo, QQ, WeChat, GitHub and any OpenID Connect supported providers. 
 
@@ -35,7 +37,7 @@ Configuring an identity provider in your Azure AD tenant enables future B2B gues
 |clientSecret|String|Yes|No|The client secret for the application. This is the client secret obtained when registering the application with the identity provider. This is write-only. A read operation will return "\*\*\*\*".|
 |id|String|No|No|The ID of the identity provider.|
 |name|String|No|No|The display name of the identity provider.|
-|type|String|Yes|No|The identity provider type. It must be one of the following values for B2C scenarios: <ul><li/>Microsoft<li/>Google<li/>Amazon<li/>LinkedIn<li/>Facebook<li/>GitHub<li/>Twitter<li/>Weibo<li/>QQ<li/>WeChat</ul>For B2B scenarios, the value must be Google.|
+|type|String|Yes|No|The identity provider type. It must be one of the following values for B2C scenarios: <ul><li/>Microsoft<li/>Google<li/>Amazon<li/>LinkedIn<li/>Facebook<li/>GitHub<li/>Twitter<li/>Weibo<li/>QQ<li/>WeChat</ul>For B2B scenarios, the value must be Google or Facebook.|
 
 ### Where to get the client ID and secret
 

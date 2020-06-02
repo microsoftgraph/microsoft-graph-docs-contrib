@@ -1,13 +1,15 @@
 ---
 title: "Create androidWorkProfileGeneralDeviceConfiguration"
 description: "Create a new androidWorkProfileGeneralDeviceConfiguration object."
-author: "rolyon"
+author: "dougeby"
 localization_priority: Normal
 ms.prod: "Intune"
 doc_type: apiPageType
 ---
 
 # Create androidWorkProfileGeneralDeviceConfiguration
+
+Namespace: microsoft.graph
 
 > **Important:** Microsoft Graph APIs under the /beta version are subject to change; production use is not supported.
 
@@ -95,6 +97,7 @@ The following table shows the properties that are required when you create the a
 |vpnAlwaysOnPackageIdentifier|String|Enable lockdown mode for always-on VPN.|
 |vpnEnableAlwaysOnLockdownMode|Boolean|Enable lockdown mode for always-on VPN.|
 |workProfileAllowWidgets|Boolean|Allow widgets from work profile apps.|
+|workProfileBlockPersonalAppInstallsFromUnknownSources|Boolean|Prevent app installations from unknown sources in the personal profile.|
 
 
 
@@ -108,7 +111,7 @@ Here is an example of the request.
 ``` http
 POST https://graph.microsoft.com/beta/deviceManagement/deviceConfigurations
 Content-type: application/json
-Content-length: 2851
+Content-length: 2917
 
 {
   "@odata.type": "#microsoft.graph.androidWorkProfileGeneralDeviceConfiguration",
@@ -176,7 +179,8 @@ Content-length: 2851
   "securityRequireVerifyApps": true,
   "vpnAlwaysOnPackageIdentifier": "Vpn Always On Package Identifier value",
   "vpnEnableAlwaysOnLockdownMode": true,
-  "workProfileAllowWidgets": true
+  "workProfileAllowWidgets": true,
+  "workProfileBlockPersonalAppInstallsFromUnknownSources": true
 }
 ```
 
@@ -185,7 +189,7 @@ Here is an example of the response. Note: The response object shown here may be 
 ``` http
 HTTP/1.1 201 Created
 Content-Type: application/json
-Content-Length: 3023
+Content-Length: 3089
 
 {
   "@odata.type": "#microsoft.graph.androidWorkProfileGeneralDeviceConfiguration",
@@ -256,10 +260,10 @@ Content-Length: 3023
   "securityRequireVerifyApps": true,
   "vpnAlwaysOnPackageIdentifier": "Vpn Always On Package Identifier value",
   "vpnEnableAlwaysOnLockdownMode": true,
-  "workProfileAllowWidgets": true
+  "workProfileAllowWidgets": true,
+  "workProfileBlockPersonalAppInstallsFromUnknownSources": true
 }
 ```
-
 
 
 

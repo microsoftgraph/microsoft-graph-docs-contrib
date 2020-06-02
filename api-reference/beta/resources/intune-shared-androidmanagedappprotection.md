@@ -1,13 +1,15 @@
 ---
 title: "androidManagedAppProtection resource type"
 description: "Policy used to configure detailed management settings targeted to specific security groups and for a specified set of apps on an Android device"
-author: "rolyon"
+author: "dougeby"
 localization_priority: Normal
 ms.prod: "Intune"
 doc_type: resourcePageType
 ---
 
 # androidManagedAppProtection resource type
+
+Namespace: microsoft.graph
 
 > **Important:** Microsoft Graph APIs under the /beta version are subject to change; production use is not supported.
 
@@ -90,6 +92,9 @@ Inherits from [targetedManagedAppProtection](../resources/intune-mam-targetedman
 |appActionIfAndroidSafetyNetAppsVerificationFailed|[managedAppRemediationAction](../resources/intune-mam-managedappremediationaction.md)|Defines a managed app behavior, either warn or block, if the specified Android App Verification requirment fails. Possible values are: `block`, `wipe`, `warn`.|
 |customBrowserPackageId|String|Unique identifier of a custom browser to open weblink on Android.|
 |customBrowserDisplayName|String|Friendly name of the preferred custom browser to open weblink on Android.|
+|minimumRequiredCompanyPortalVersion|String|Minimum version of the Company portal that must be installed on the device or app access will be blocked|
+|minimumWarningCompanyPortalVersion|String|Minimum version of the Company portal that must be installed on the device or the user will receive a warning|
+|minimumWipeCompanyPortalVersion|String|Minimum version of the Company portal that must be installed on the device or the company data on the app will be wiped|
 
 ## Relationships
 |Relationship|Type|Description|
@@ -177,7 +182,10 @@ Here is a JSON representation of the resource.
   "requiredAndroidSafetyNetAppsVerificationType": "String",
   "appActionIfAndroidSafetyNetAppsVerificationFailed": "String",
   "customBrowserPackageId": "String",
-  "customBrowserDisplayName": "String"
+  "customBrowserDisplayName": "String",
+  "minimumRequiredCompanyPortalVersion": "String",
+  "minimumWarningCompanyPortalVersion": "String",
+  "minimumWipeCompanyPortalVersion": "String"
 }
 ```
 

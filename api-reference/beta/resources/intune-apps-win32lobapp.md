@@ -1,13 +1,15 @@
 ---
 title: "win32LobApp resource type"
 description: "Contains properties and inherited properties for Win32 apps."
-author: "rolyon"
+author: "dougeby"
 localization_priority: Normal
 ms.prod: "Intune"
 doc_type: resourcePageType
 ---
 
 # win32LobApp resource type
+
+Namespace: microsoft.graph
 
 > **Important:** Microsoft Graph APIs under the /beta version are subject to change; production use is not supported.
 
@@ -65,6 +67,7 @@ Inherits from [mobileLobApp](../resources/intune-apps-mobilelobapp.md)
 |returnCodes|[win32LobAppReturnCode](../resources/intune-apps-win32lobappreturncode.md) collection|The return codes for post installation behavior.|
 |msiInformation|[win32LobAppMsiInformation](../resources/intune-apps-win32lobappmsiinformation.md)|The MSI details if this Win32 app is an MSI app.|
 |setupFilePath|String|The relative path of the setup file in the encrypted Win32LobApp package.|
+|installLanguage|String|Not yet documented|
 
 ## Relationships
 |Relationship|Type|Description|
@@ -158,7 +161,8 @@ Here is a JSON representation of the resource.
   ],
   "installExperience": {
     "@odata.type": "microsoft.graph.win32LobAppInstallExperience",
-    "runAsAccount": "String"
+    "runAsAccount": "String",
+    "deviceRestartBehavior": "String"
   },
   "returnCodes": [
     {
@@ -177,7 +181,8 @@ Here is a JSON representation of the resource.
     "productName": "String",
     "publisher": "String"
   },
-  "setupFilePath": "String"
+  "setupFilePath": "String",
+  "installLanguage": "String"
 }
 ```
 

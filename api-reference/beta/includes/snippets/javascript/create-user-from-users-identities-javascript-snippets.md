@@ -14,9 +14,14 @@ const user = {
   displayName: "John Smith",
   identities: [
     {
-      signInType: "signInName",
+      signInType: "userName",
       issuer: "contoso.onmicrosoft.com",
       issuerAssignedId: "johnsmith"
+    },
+    {
+      signInType: "emailAddress",
+      issuer: "contoso.onmicrosoft.com",
+      issuerAssignedId: "jsmith@yahoo.com"
     },
     {
       signInType: "federated",
@@ -25,9 +30,9 @@ const user = {
     }
   ],
   "passwordProfile" : {
-    forceChangePasswordNextSignIn: true,
     password: "password-value"
-  }
+  },
+  passwordPolicies: "DisablePasswordExpiration"
 };
 
 let res = await client.api('/users')

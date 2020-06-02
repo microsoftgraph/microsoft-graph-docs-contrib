@@ -18,7 +18,7 @@ toRecipients.emailAddress = emailAddress;
 toRecipientsList.add(toRecipients);
 
 graphClient.me().messages("{id}")
-	.forward(toRecipientsList,comment)
+	.forward(toRecipientsList,null,comment)
 	.buildRequest()
 	.post();
 

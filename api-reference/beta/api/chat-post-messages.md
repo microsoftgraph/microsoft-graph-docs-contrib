@@ -9,6 +9,8 @@ doc_type: "apiPageType"
 
 # Create chatMessage
 
+Namespace: microsoft.graph
+
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 Create a new [message](../resources/chatmessage.md) in the specified [chat](../resources/chat.md). This API cannot create an new chat, you must use the [list chats](chat-list.md) method to retreive the Id of an existing chat before creating a chat message.
@@ -19,7 +21,7 @@ One of the following permissions is required to call this API. To learn more, in
 
 | Permission type                        | Permissions (from least to most privileged) |
 |:---------------------------------------|:--------------------------------------------|
-| Delegated (work or school account)     | Chat.ReadWrite |
+| Delegated (work or school account)     | ChatMessage.Send, Chat.ReadWrite |
 | Delegated (personal Microsoft account) | Not supported. |
 | Application                            | Not supported. |
 

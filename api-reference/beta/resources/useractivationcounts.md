@@ -1,13 +1,15 @@
 ---
 title: "userActivationCounts resource type"
 description: "The following is a JSON representation of the resource."
-author: "dkershaw10"
+author: "krbain"
 localization_priority: Normal
 ms.prod: "microsoft-identity-platform"
 doc_type: resourcePageType
 ---
 
 # userActivationCounts resource type
+
+Namespace: microsoft.graph
 
 ## Properties
 

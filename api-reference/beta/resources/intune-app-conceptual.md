@@ -1,12 +1,14 @@
 ---
 title: "How to protect your company app data with Microsoft Intune - Microsoft Graph API"
 description: "Lists Microsoft Graph API for Intune endpoints (REST) that manage apps and their policies for a tenant organization."
-author: "rolyon"
+author: "dougeby"
 localization_priority: Normal
 ms.prod: "intune"
 ---
 
 # How to protect your company app data with Microsoft Intune
+
+Namespace: microsoft.graph
 
 > **Important:** APIs under the /beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported.
 
@@ -40,10 +42,12 @@ The following Graph resources are available to manage app protection polices in 
 - [Android managed store app configuration schema](intune-androidforwork-androidmanagedstoreappconfigurationschema.md)
 - [Android managed store app configuration schema item](intune-androidforwork-androidmanagedstoreappconfigurationschemaitem.md)
 - [Android managed store app configuration schema item data type](intune-androidforwork-androidmanagedstoreappconfigurationschemaitemdatatype.md)
+- [Android managed store app track](intune-apps-androidmanagedstoreapptrack.md)
 - [Android managed store web app](intune-apps-androidmanagedstorewebapp.md)
 - [Android minimum operating system](intune-apps-androidminimumoperatingsystem.md)
 - [Android permission action](intune-apps-androidpermissionaction.md)
 - [Android permission action type](intune-apps-androidpermissionactiontype.md)
+- [Android profile applicability](intune-apps-androidprofileapplicability.md)
 - [Android store app](intune-apps-androidstoreapp.md)
 - [App configuration setting item](intune-apps-appconfigurationsettingitem.md)
 - [Certificate status](intune-apps-certificatestatus.md)
@@ -68,6 +72,8 @@ The following Graph resources are available to manage app protection polices in 
 - [iOS VPP e-book assignment](intune-books-iosvppebookassignment.md)
 - [macOS LOB app](intune-apps-macoslobapp.md)
 - [macOS LOB child app](intune-apps-macoslobchildapp.md)
+- [macOS mdatp app](intune-apps-macosmdatpapp.md)
+- [macOS microsoft edge app](intune-apps-macosmicrosoftedgeapp.md)
 - [macOS minimum operating system](intune-apps-macosminimumoperatingsystem.md)
 - [macOS office suite app](intune-apps-macosofficesuiteapp.md)
 - [macOS VPP app](intune-apps-macosvppapp.md)
@@ -90,6 +96,7 @@ The following Graph resources are available to manage app protection polices in 
 - [Managed iOS store app](intune-apps-managediosstoreapp.md)
 - [Managed mobile LOB app](intune-apps-managedmobilelobapp.md)
 - [MDM app config key type](intune-apps-mdmappconfigkeytype.md)
+- [Microsoft edge channel](intune-apps-microsoftedgechannel.md)
 - [Microsoft store for business app](intune-apps-microsoftstoreforbusinessapp.md)
 - [Microsoft store for business contained app](intune-apps-microsoftstoreforbusinesscontainedapp.md)
 - [Microsoft store for business license type](intune-apps-microsoftstoreforbusinesslicensetype.md)
@@ -142,11 +149,13 @@ The following Graph resources are available to manage app protection polices in 
 - [Win32 LOB app registry detection type](intune-apps-win32lobappregistrydetectiontype.md)
 - [Win32 LOB app registry requirement](intune-apps-win32lobappregistryrequirement.md)
 - [Win32 LOB app requirement](intune-apps-win32lobapprequirement.md)
+- [Win32 LOB app restart behavior](intune-apps-win32lobapprestartbehavior.md)
 - [Win32 LOB app return code](intune-apps-win32lobappreturncode.md)
 - [Win32 LOB app return code type](intune-apps-win32lobappreturncodetype.md)
 - [Windows AppX](intune-apps-windowsappx.md)
 - [Windows architecture](intune-apps-windowsarchitecture.md)
 - [Windows device type](intune-apps-windowsdevicetype.md)
+- [Windows microsoft edge app](intune-apps-windowsmicrosoftedgeapp.md)
 - [Windows minimum operating system](intune-apps-windowsminimumoperatingsystem.md)
 - [Windows mobile MSI](intune-apps-windowsmobilemsi.md)
 - [Windows office client configuration](intune-cirrus-windowsofficeclientconfiguration.md)
@@ -159,5 +168,3 @@ The following Graph resources are available to manage app protection polices in 
 - [Windows store app](intune-apps-windowsstoreapp.md)
 - [Windows universal AppX](intune-apps-windowsuniversalappx.md)
 - [Windows universal AppX contained app](intune-apps-windowsuniversalappxcontainedapp.md)
-
-

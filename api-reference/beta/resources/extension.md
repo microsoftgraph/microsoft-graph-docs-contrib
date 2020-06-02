@@ -3,11 +3,13 @@ title: "extension resource type"
 description: "An abstract type to support the OData v4 open type openTypeExtension."
 localization_priority: Normal
 doc_type: resourcePageType
-ms.prod: ""
-author: ""
+ms.prod: "microsoft-identity-platform"
+author: "keylimesoda"
 ---
 
 # extension resource type
+
+Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 

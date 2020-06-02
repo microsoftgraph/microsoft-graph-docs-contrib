@@ -9,6 +9,8 @@ ms.prod: "microsoft-teams"
 
 # Update conversationMember
 
+Namespace: microsoft.graph
+
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 Update the role of a [conversationMember](../resources/conversationmember.md) in a [channel](../resources/channel.md).
@@ -22,9 +24,9 @@ One of the following permissions is required to call this API. To learn more, in
 
 |Permission Type|Permissions (from least to most privileged)|
 |---------|-------------|
-|Delegated (work or school account)|Group.ReadWrite.All|
+|Delegated (work or school account)| ChannelMember.ReadWrite.All, Group.ReadWrite.All, Directory.ReadWrite.All |
 |Delegated (personal Microsoft account)|Not supported|
-|Application|Group.ReadWrite.All|
+|Application| Member.ReadWrite.Group ([RSC](https://aka.ms/teams-rsc)), ChannelMember.ReadWrite.All, Group.ReadWrite.All, Directory.ReadWrite.All |
 
 ## HTTP request
 <!-- { "blockType": "ignored"} -->
