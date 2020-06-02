@@ -13,11 +13,11 @@ For a summary of the value of these API changes, as well as recent tools, compon
 
 ## June 2020
 
-### Cloud Communications
+### Cloud communications
 
 | **Change type** | **Version**   | **Description**                          |
 | :-------------- | :------------ | :--------------------------------------- |
-|Addition | beta | Added an additional path to the [GET Presence](/graph/api/presence-get?view=graph-rest-beta) API.|
+|Addition | beta | Added an additional path to the [Get presence](/graph/api/presence-get?view=graph-rest-beta) API.|
 
 ## May 2020
 
