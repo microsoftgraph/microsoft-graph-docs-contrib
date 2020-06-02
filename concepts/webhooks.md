@@ -43,7 +43,7 @@ You can create a subscription to a specific Outlook folder such as the Inbox:
 `me/mailFolders('inbox')/messages`
 
 Or to a top-level resource:
-`me/messages`, `me/contacts`, `me/events`, `users`, or `groups`
+`/me/messages`, `/me/contacts`, `/me/events`, `users`, `groups`, or `/communications/callRecords`
 
 Or to a specific resource instance:
 `users/{id}`, `groups/{id}`, `groups/{id}/conversations`
