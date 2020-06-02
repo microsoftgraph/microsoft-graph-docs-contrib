@@ -63,6 +63,16 @@ This format can also be used inside of attributes:
 
 > **Note:** You can also expand objects such as `{{event}}` and they will render as JSON strings. This can be useful when you're developing the templates.
 
+### Change binding syntax
+
+By default, to expand an expression, double curly brackets ( `{{expression}}` ) are used. However, you can change this syntax for environments where the double curly bracket syntax is already used. For example, below is an example of using double square brackets ( `[[expression]]` ):
+
+```ts
+import { TemplateHelper } from '@microsoft/mgt';
+
+TemplateHelper.setBindingSyntax('[[', ']]');
+```
+
 ## Data context helper properties
 
 The following properties can also be used with the data context object in your templates.
