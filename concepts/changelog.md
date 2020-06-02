@@ -132,7 +132,7 @@ Added new APIs and resources for subscribing to and retrieving call records from
 
 | **Change type** | **Version**   | **Description**                          |
 | :-------------- | :------------ | :--------------------------------------- |
-| Addition | beta | Added the [authorizationPolicy](api-reference/beta/resources/authorizationpolicy.md) resource type which controls authorization settings in Azure AD. |
+| Addition | beta | Added the [authorizationPolicy](api-reference/beta/resources/authorizationpolicy?view=graph-rest-beta) resource type which controls authorization settings in Azure AD. |
 
 ## April 2020
 
