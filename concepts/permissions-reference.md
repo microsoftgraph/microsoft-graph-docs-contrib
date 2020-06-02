@@ -1580,7 +1580,7 @@ For more complex scenarios involving multiple permissions, see [Permission scena
 
 ---
 
-## Team permissions ([private preview](#permissions-availability-status))
+## Team permissions
 
 
 #### Delegated permissions
