@@ -986,7 +986,7 @@ items:
           href: api/presence-get.md
         - name: Get presence for multiple users
           href: api/cloudcommunications-getpresencesbyuserid.md
-      - name: Call records (preview)
+      - name: Call records
         items:
         - name: Overview
           href: resources/callrecords-api-overview.md
@@ -9581,6 +9581,13 @@ items:
             href: api/activitybasedtimeoutpolicy-update.md
           - name: Delete
             href: api/activitybasedtimeoutpolicy-delete.md
+        - name: Authorization policy
+          href: resources/authorizationpolicy.md
+          items:
+          - name: Get
+            href: api/authorizationpolicy-get.md
+          - name: Update
+            href: api/authorizationpolicy-update.md
         - name: Claims mapping policy
           href: resources/claimsmappingpolicy.md
           items:
