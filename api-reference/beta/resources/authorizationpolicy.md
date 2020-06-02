@@ -56,7 +56,7 @@ The following is a JSON representation of the resource.
   "description": "String",
   "displayName": "String",
   "enabledPreviewFeatures": "[String]",
-  "guestUserRoleId": Guid,
+  "guestUserRoleId": "Guid",
   "blockMsolPowerShell": true 
 }
 ```
