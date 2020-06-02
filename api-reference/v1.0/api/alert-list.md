@@ -46,7 +46,7 @@ This method supports the following [OData query parameters](/graph/query-paramet
 - `$top` will return the aggregated top results from each security API provider.  
 - `$filter`
 
-The following table has a list of `$filter` keyword by each vendor name.
+The following table has a list of `$filter` keywords by each vendor name.
 
 | Vendor Name      |$filter Keyword|
 |:----------|:----------|
