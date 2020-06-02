@@ -36,7 +36,7 @@ Using the Microsoft Graph API, an app can subscribe to changes on the following 
 - Content within the hierarchy of _any folder_ [driveItem][] on a user's personal OneDrive
 - Content within the hierarchy of the _root folder_ [driveItem][] on OneDrive for Business
 - Security [alert][]
-- Teams [callRecord][] (preview)
+- Teams [callRecord][]
 - Teams [chatMessage][] (preview)
 
 You can create a subscription to a specific Outlook folder such as the Inbox:
@@ -275,5 +275,5 @@ You can optionally configure the firewall that protects your notification URL to
 [message]: /graph/api/resources/message?view=graph-rest-1.0
 [user]: /graph/api/resources/user?view=graph-rest-1.0
 [alert]: /graph/api/resources/alert?view=graph-rest-1.0
-[callRecord]: /graph/api/resources/callrecords-callrecord
+[callRecord]: /graph/api/resources/callrecords-callrecord?view=graph-rest-1.0
 [chatMessage]: /graph/api/resources/chatmessage
