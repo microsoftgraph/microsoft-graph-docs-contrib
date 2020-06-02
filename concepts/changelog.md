@@ -12,11 +12,12 @@ This changelog covers specific API-level changes in Microsoft Graph v1.0 and bet
 For a summary of the value of these API changes, as well as recent tools, components, guidance, and tutorial additions, see [What's new in Microsoft Graph](whats-new-overview.md).
 
 ## June 2020
+
 ### Cloud Communications
 
 | **Change type** | **Version**   | **Description**                          |
 | :-------------- | :------------ | :--------------------------------------- |
-|Addition | beta | Added an additional path to the [GET Presence](/graph/api/presence-get?view=graph-rest-beta) API. |
+|Addition | beta | Added an additional path to the [GET Presence](/graph/api/presence-get?view=graph-rest-beta) API.|
 
 ## May 2020
 
