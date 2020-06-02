@@ -174,6 +174,7 @@ GET https://graph.microsoft.com/beta/communications/presences/dc74d9bb-6afe-433d
 
 ```http
 HTTP/1.1 200 OK
+
 {
     "value": [
         {
