@@ -24,6 +24,8 @@ For a summary of the value of these API changes, as well as recent tools, compon
 | **Change type** | **Version** | **Description**                          |
 | :-------------- | :---------- | :--------------------------------------- |
 | Addition | beta | Added the [changeNotification](/graph/api/resources/change-notification?view=graph-rest-beta), [changeNotificationCollection](/graph/api/resources/changenotificationcollection?view=graph-rest-beta), and [changeNotificationEncryptedContent](/graph/api/resources/changenotificationencryptedcontent?view=graph-rest-beta) resources for the [change notification](/graph/api/concepts/webhooks) API. |
+| Addition | v1.0 | Added support for [subscription](/graph/api/resources/subscription) in [Microsoft Cloud for US Government](deployments.md). |
+| Addition | v1.0 | Added support for [subscription](/graph/api/resources/subscription) to Azure Active Directory objects (Users, Groups) in [Microsoft Cloud China operated by 21Vianet](deployments.md). |
 
 ### Cloud communications | Call records
 
@@ -122,6 +124,14 @@ Added new APIs and resources for subscribing to and retrieving call records from
 | **Change type** | **Version** | **Description**                          |
 | :-------------- | :---------- | :--------------------------------------- |
 | Addition | v1.0 | Added the **externalUserState** and **externalUserStateChangeDateTime** properties to the [user](/graph/api/resources/user?view=graph-rest-1.0) resource. |
+
+## May 2020
+
+### Identity and access (Azure AD)
+
+| **Change type** | **Version**   | **Description**                          |
+| :-------------- | :------------ | :--------------------------------------- |
+| Addition | beta | Added the [authorizationPolicy](api-reference/beta/resources/authorizationpolicy.md) resource type which controls authorization settings in Azure AD. |
 
 ## April 2020
 
