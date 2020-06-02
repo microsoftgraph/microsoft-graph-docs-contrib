@@ -120,12 +120,6 @@ For a summary of the value of these API changes, as well as recent tools, compon
 
 ## April 2020
 
-### Microsoft Graph Security API
-
-| **Change type** | **Version**   | **Description**                          |
-| :-------------- | :------------ | :--------------------------------------- |
-|Addition | v1.0<br>beta | Added properties to the [alert](https://docs.microsoft.com/graph/api/resources/alert?view=graph-rest-1.0) entity.<br>1. **incidentIds** <br>2. **securityResources**<ul><li>**resource**</li><li>**resourceType**</li></ul>3. **[networkConnection](https://docs.microsoft.com/graph/api/resources/networkconnection?view=graph-rest-1.0)** <ul><li>**sourceLocation**</li><li>**destinationLocation**</li></ul>|
-
 ### Calendar
 
 | **Change type** | **Version**   | **Description**                          |
@@ -219,6 +213,12 @@ For a summary of the value of these API changes, as well as recent tools, compon
 | Addition        | V1.0          | The [attachmentItem](/graph/api/resources/attachmentitem?view=graph-rest-1.0) complex type, [createUploadSession](/graph/api/attachment-createuploadsession?view=graph-rest-1.0) action for the [attachment](/graph/api/resources/attachment?view=graph-rest-1.0) entity, and the **attachmentType** enumeration. |
 | Changed         | V1.0          | Extended the existing [uploadSession](/graph/api/resources/uploadsession?view=graph-rest-1.0) entity that has been used by [driveItem](/graph/api/resources/driveitem?view=graph-rest-1.0) to apply to **attachment** as well. |
 
+### Microsoft Graph Security API
+
+| **Change type** | **Version**   | **Description**                          |
+| :-------------- | :------------ | :--------------------------------------- |
+|Addition | v1.0<br>beta | Added properties to the [alert](https://docs.microsoft.com/graph/api/resources/alert?view=graph-rest-1.0) entity.<br>1. **incidentIds** <br>2. **securityResources**:<ul><li>**resource**</li><li>**resourceType**</li></ul>3. **[networkConnection](https://docs.microsoft.com/graph/api/resources/networkconnection?view=graph-rest-1.0)** :<ul><li>**sourceLocation**</li><li>**destinationLocation**</li></ul>|
+|||
 
 ### Reports | Identity and access reports
 
