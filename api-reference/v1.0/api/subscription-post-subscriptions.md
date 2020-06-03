@@ -21,6 +21,7 @@ Subscribes a listener application to receive change notifications when the reque
 
 | Supported resource | Delegated (work or school account) | Delegated (personal Microsoft account) | Application |
 |:-----|:-----|:-----|:-----|
+|[callRecord](../resources/callrecords-callrecord.md) (/communications/callRecords) | Not supported | Not supported | CallRecords.Read.All  |
 |[contact](../resources/contact.md) | Contacts.Read | Contacts.Read | Contacts.Read |
 |[driveItem](../resources/driveitem.md) (user's personal OneDrive) | Not supported | Files.ReadWrite | Not supported |
 |[driveItem](../resources/driveitem.md) (OneDrive for Business) | Files.ReadWrite.All | Not supported | Files.ReadWrite.All |
@@ -124,6 +125,7 @@ The following are valid values for the resource property of the subscription:
 |Drives|me/drive/root|
 |List|sites/{site-id}/lists/{list-id}|
 |Security alert|security/alerts?$filter=status eq 'New'|
+|Call records|communications/callRecords|
 
 ##### Response
 
