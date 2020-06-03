@@ -417,8 +417,8 @@ The _CallRecords.Read.All_ permission grants an application privileged access to
 
 #### Application
 
-* _CallRecords.Read.All_: Retrieve a call record (`GET /beta/communications/callRecords/{id}`).
-* _CallRecords.Read.All_: Subscribe to new call records (`POST /beta/subscriptions`).
+* _CallRecords.Read.All_: Retrieve a call record (`GET /v1.0/communications/callRecords/{id}`).
+* _CallRecords.Read.All_: Subscribe to new call records (`POST /v1.0/subscriptions`).
 
 For more complex scenarios involving multiple permissions, see [Permission scenarios](#permission-scenarios).
 
