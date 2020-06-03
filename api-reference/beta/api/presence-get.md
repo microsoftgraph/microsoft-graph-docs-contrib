@@ -167,7 +167,7 @@ GET https://graph.microsoft.com/beta/communications/presences/dc74d9bb-6afe-433d
 
 <!-- {
   "blockType": "response",
-  "name": "get-user-presence",
+  "name": "get-user-presences",
   "@odata.type": "microsoft.graph.presence",
   "truncated":"true"
 }-->
