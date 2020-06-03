@@ -79,7 +79,7 @@ Content-type: application/json
   "requests": [
     {
       "entityTypes": [
-        "externalItem"
+        "microsoft.graph.externalItem"
       ],
       "contentSources": [
         "/external/connections/connectionfriendlyname"

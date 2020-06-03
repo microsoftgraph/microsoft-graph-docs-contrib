@@ -34,7 +34,7 @@ Content-Type: application/json
   "requests": [
     {
       "entityTypes": [
-        "externalItem"
+        "microsoft.graph.externalItem"
       ],
       "contentSources": [
         "/external/connections/servicenow-connector-contoso"

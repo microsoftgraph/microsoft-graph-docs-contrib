@@ -44,10 +44,11 @@ Namespace: microsoft.graph
 
 |Member|
 |:---|
-|event|
-|message|
-|driveItem|
-|externalItem|
+|microsoft.graph.event|
+|microsoft.graph.message|
+|microsoft.graph.driveItem|
+|microsoft.graph.externalFile|
+|microsoft.graph.externalItem|
 
 ### contactRelationship values
 

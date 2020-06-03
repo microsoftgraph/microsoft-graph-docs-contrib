@@ -38,7 +38,7 @@ Content-Type: application/json
   "requests": [
     {
       "entityTypes": [
-        "message"
+        "microsoft.graph.message"
       ],
       "query": {
         "query_string": {
@@ -123,14 +123,13 @@ The following example uses the search query shown in Example 1, and sorts the re
 POST https://graph.microsoft.com/beta/search/query
 Content-Type: application/json
 ```
-<!-- without suffix -->
 
 ```json
 {
   "requests": [
     {
       "entityTypes": [
-        "message"
+        "microsoft.graph.message"
       ],
       "query": {
         "query_string": {
