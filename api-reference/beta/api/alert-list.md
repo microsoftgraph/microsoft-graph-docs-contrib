@@ -52,7 +52,6 @@ The following table has a list of `$filter` keywords by each vendor name.
 
 | Vendor Name      |$filter Keyword|
 |:----------|:----------|
-| Azure Information Protection | AIP|
 | Azure Advanced Threat Protection | Azure Advanced Threat Protection | 
 | Azure Security Center | ASC |
 | Microsoft Cloud App Security | MCAS |
