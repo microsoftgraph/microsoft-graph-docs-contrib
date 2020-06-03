@@ -140,7 +140,7 @@ Added new APIs and resources for subscribing to and retrieving call records from
 
 | **Change type** | **Version**   | **Description**                          |
 | :-------------- | :------------ | :--------------------------------------- |
-| Addition | beta | Added the [authorizationPolicy](api-reference/beta/resources/authorizationpolicy?view=graph-rest-beta) resource type which controls authorization settings in Azure AD. |
+| Addition | beta | Added the [authorizationPolicy](/graph/api/resources/authorizationpolicy?view=graph-rest-beta) resource type which controls authorization settings in Azure AD. |
 
 #### Identity and access (Azure AD)
 | **Change type** | **Version**   | **Description**                          |
