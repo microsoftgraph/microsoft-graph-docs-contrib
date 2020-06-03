@@ -19,9 +19,9 @@ Connectors are lightweight agents that sit on-premises and facilitate the outbou
 
 | Method       | Return Type | Description |
 |:-------------|:------------|:------------|
+| [List connectors](../api/connector-list.md) | [connector](connector.md) collection | Retrieve a list of connector objects. | 
 | [Get connector](../api/connector-get.md) | [connector](connector.md) | Read properties and relationships of connector object. |
 | [List memberOf](../api/connector-list-memberof.md) | [connectorGroup](connectorgroup.md) collection | List the connectorGroup object collection the connector is a member of. |
-| [List connectors](../api/connector-list.md) | [connector](connector.md) collection | Retrieve a list of connector objects. | 
 | [Add connector to connectorGroup](../api/connector-post-memberof.md)| [connectorGroup](connectorgroup.md) | Add a connector to a connectorGroup. |
 
 
@@ -40,7 +40,7 @@ Connectors are lightweight agents that sit on-premises and facilitate the outbou
 
 ## JSON representation
 
-Here is a JSON representation of the resource.
+The following is a JSON representation of the resource.
 
 <!-- {
   "blockType": "resource",
