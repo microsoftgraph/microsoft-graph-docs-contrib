@@ -96,6 +96,8 @@ A few things to note about this type of notification:
 - The lifecycle notification does not contain any information about a specific resource, because it is not related to a resource change, but to the subscription state change.
 - Similar to change notifications, lifecycle notifications can be batched together (in the **value** array), each with a possibly different **lifecycleEvent** value. Process each lifecycle notification in the batch accordingly.
 
+> **Note:** for a full description of the data sent when change notifications are delivered, see [changeNotificationCollection](/graph/api/resources/changenotificationcollection).
+
 ### Actions to take
 
 1. [Acknowledge](webhooks.md#change-notifications) the receipt of the lifecycle notification, by responding to the POST call with `202 - Accepted`.
@@ -133,6 +135,8 @@ A few things to note about this type of notification:
 - The `"lifecycleEvent": "missed"` field designates this as a signal about missed change notifications. Other types of lifecycle notifications are also possible, and new ones will be introduced in the future.
 - The lifecycle notification does not contain any information about a specific resource, because it is not related to a resource change, but to the subscription state change.
 - Similar to change notifications, lifecycle notifications might be batched together (in the **value** array), each with a possibly different **lifecycleEvent** value. Process each lifecycle notification in the batch accordingly.
+
+> **Note:** for a full description of the data sent when change notifications are delivered, see [changeNotificationCollection](/graph/api/resources/changenotificationcollection).
 
 ### Actions to take
 
