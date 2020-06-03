@@ -91,6 +91,7 @@ Added new APIs and resources for subscribing to and retrieving call records from
 | :-------------- | :------------ | :--------------------------------------- |
 |Addition|beta|Added the [evaluateDynamicMembership](/graph/api/group-evaluatedynamicmembership?view=graph-rest-beta) action on [group](/graph/api/resources/group?view=graph-rest-beta). Also added these supporting resource types:<ul><li>[evaluateDynamicMembershipResult](/graph/api/resources/evaluatedynamicmembershipresult?view=graph-rest-beta)</li><li>[expressionEvaluationDetails](/graph/api/resources/expressionevaluationdetails?view=graph-rest-beta)</li><li>[propertyToEvaluate](/graph/api/resources/propertytoevaluate?view=graph-rest-beta)</li></ul>|
 | Addition | beta | Added the **resourceBehaviorOptions** and **resourceProvisioningOptions** properties to the [group](/graph/api/resources/group?view=graph-rest-beta) entity.|
+| Addition | v1.0 | Added the **onPremisesDomainName**, **onPremisesNetBiosName** and **onPremisesSamAccountName** properties to the [group](/graph/api/resources/group?view=graph-rest-1.0) entity.|
 
 ### Identity and access
 
@@ -131,7 +132,7 @@ Added new APIs and resources for subscribing to and retrieving call records from
 
 | **Change type** | **Version**   | **Description**                          |
 | :-------------- | :------------ | :--------------------------------------- |
-| Addition | beta | Added the [authorizationPolicy](api-reference/beta/resources/authorizationpolicy.md) resource type which controls authorization settings in Azure AD. |
+| Addition | beta | Added the [authorizationPolicy](api-reference/beta/resources/authorizationpolicy?view=graph-rest-beta) resource type which controls authorization settings in Azure AD. |
 
 ## April 2020
 

@@ -10,8 +10,8 @@ const options = {
 
 const client = Client.init(options);
 
-let res = await client.api('/communications/callRecords/{id}')
-	.version('beta')
+let res = await client.api('/communications/callRecords/{id}/sessions')
+	.expand('segments')
 	.get();
 
 ```
