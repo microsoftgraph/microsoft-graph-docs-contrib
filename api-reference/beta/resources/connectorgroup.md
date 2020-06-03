@@ -13,22 +13,22 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Each [Azure AD Application Proxy](https://aka.ms/whyappproxy) connector is always part of a connector group. All the connectors that belong to the same connector group act as a separate unit for high-availability and load balancing. If you don't create connector groups, then all your connectors will be part of the default group. When configuring an application with Application Proxy you must also specify which connector group to assign the application to.
+Each [Azure AD Application Proxy](https://aka.ms/whyappproxy) connector is always part of a connector group. All the connectors that belong to the same connector group act as a separate unit for high-availability and load balancing. If you don't create connector groups, all your connectors will be part of the default group. When configuring an application with Application Proxy, you must also specify which connector group to assign the application to.
 
-Once a connector group is created you may add or move connectors to the connector group by using [Add connector](../api/connectorgroup-post-members.md). You can also use [Add application](../api/connectorgroup-post-applications.md) to assign an application to a connector group.
+After a connector group is created, you can add or move connectors to the connector group by using [Add connector](../api/connectorgroup-post-members.md). You can also use [Add application](../api/connectorgroup-post-applications.md) to assign an application to a connector group.
 
 ## Methods
 
 | Method		   | Return Type	|Description|
 |:---------------|:--------|:----------|
-|[Get connectorGroup](../api/connectorgroup-get.md) | [connectorGroup](connectorgroup.md) | Read properties and relationships of connectorGroup object. |
 |[List connectorGroup](../api/connectorgroup-list.md) |[connectorGroup](connectorgroup.md) collection | Retrieve a list of connectorGroup objects. |
+|[Get connectorGroup](../api/connectorgroup-get.md) | [connectorGroup](connectorgroup.md) | Read properties and relationships of a connectorGroup object. |
+|[Update connectorGroup](../api/connectorgroup-update.md) | [connectorGroup](connectorgroup.md)| Update a connectorGroup object. |
+|[Delete connectorGroup](../api/connectorgroup-delete.md) | None | Delete a connectorGroup object. All connectors must be removed from the connectorGroup before a connectorGroup can be deleted. |
 |[List members](../api/connectorgroup-list-members.md) |[connector](connector.md) collection| Get a connector object collection. |
 |[List applications](../api/connectorgroup-list-applications.md) |[application](application.md) collection| Get the application object collection associated with the connectorGroup. |
 |[Add application](../api/connectorgroup-post-applications.md) |[application](application.md)| Associate an application with the connectorGroup by posting to the applications collection. |
 |[Add connector](../api/connectorgroup-post-members.md) |[connector](connector.md)| Add a connector to the connectorGroup by posting to the connectorGroup collection. |
-|[Update connectorGroup](../api/connectorgroup-update.md) | [connectorGroup](connectorgroup.md)| Update connectorGroup object. |
-|[Delete connectorGroup](../api/connectorgroup-delete.md) | None | Delete connectorGroup object. All connectors must be removed from the connectorGroup before a connectorGroup can be deleted. |
 
 ## Properties
 | Property	   | Type	|Description|
@@ -47,7 +47,7 @@ Once a connector group is created you may add or move connectors to the connecto
 
 ## JSON representation
 
-Here is a JSON representation of the resource.
+The following is a JSON representation of the resource.
 
 <!-- {
   "blockType": "resource",
