@@ -41,7 +41,7 @@ PATCH https://graph.microsoft.com/beta/policies/authenticationFlowsPolicy
 ## Request body
 In the request body, you can supply a JSON representation of the [authenticationFlowsPolicy](../resources/authenticationflowspolicy.md) object (but is not required.)
 
-The following table shows the properties that are required when you create the [authenticationFlowsPolicy](../resources/authenticationflowspolicy.md).
+The following table shows the properties that are required when you update the [authenticationFlowsPolicy](../resources/authenticationflowspolicy.md).
 
 |Property|Type|Description|
 |:---|:---|:---|
