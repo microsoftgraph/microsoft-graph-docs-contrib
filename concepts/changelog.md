@@ -13,10 +13,11 @@ For a summary of the value of these API changes, as well as recent tools, compon
 
 ## June 2020
 
-### Cloud communications
-
+### Cloud Communications
 | **Change type** | **Version**   | **Description**                          |
 | :-------------- | :------------ | :--------------------------------------- |
+| Addition | v1.0 | Added the [onlineMeeting: createOrGet](/graph/api/onlinemeeting-createorget) method.|
+| Addition | v1.0 | Added an optional **externalId** property. |
 |Addition | beta | Added an additional path to the [Get presence](/graph/api/presence-get?view=graph-rest-beta) API.|
 |Addition | v1.0 | Added an optional `Accept-Language` header for [online meetings](/graph/api/resources/onlinemeeting).|
 
@@ -4658,7 +4659,7 @@ Added support for dynamic group membership through the public preview API, inclu
 | Addition        | Beta        | Added _wellKnownName_ and _userConfigurations_ properties to the **mailFolder** entity. |
 | Addition        | Beta        | Added _singleValueExtendedProperties_ and _multiValueExtendedProperties_ properties to the **mailFolder** entity. |
 | Addition        | v1.0          | Added _mobilePhone_ property to the **message** entity.            |
-| Addition        | v1.0 and beta | Added _internetMessageId_ property to the **message** entity. The message ID in the format specified by [RFC2822](https://www.ietf.org/rfc/rfc2822.txt). |
+| Addition        | v1.0 and beta | Added _internetMessageId_ property to the **message** entity. The message ID in the format specified by [RFC2822](https://www.ietf.org/rfc/rfc2822.txt). |F>>
 | Change          | Beta          | Renamed _mobilePhone1_ property to _mobilePhone_ in the **message** entity. |
 | Change          | Beta          | _createReply_ and _createReplyAll_ of the **message** entity take new parameter _Message_ and _comment_. |
 | Change          | Beta          | _createForward_ of the **message** entity takes new parameters _Message_, _ToRecipients_ and _comment_. |
@@ -4778,3 +4779,4 @@ Added support for dynamic group membership through the public preview API, inclu
 | Fix             | v1.0 and beta | Fixed being able to select certain user properties on other users, when referencing the user by user principal name (UPN). For example: https://graph.microsoft.com/v1.0/users/anotherUser@contoso.com?$select=aboutMe |
 | Fix             | v1.0 and beta | Fixed calling the _microsoft.graph.reminderView_ user bound function, which was failing with the following error: Could not find a property named businessPhones on type  Microsoft.OutlookServices.Reminder. |
 | Fix             | v1.0 and beta | Fixed user creation and update (POST/PATCH /v1.0/users), which was failing with a 400 error. |
+
