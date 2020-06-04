@@ -18,7 +18,7 @@ Represents the resources related to an alert
 | Property   | Type|Description|
 |:---------------|:--------|:----------|
 |resource|String|Name of the resource that is related to current alert. (**new**) **Required**.|
-|resourceType|[securityResourceType](#securityresourcetype)|Represents type of security resources related to an alert. Possible values are: `attacked`, `related`, `unknownFutureValue`. (**new**)|
+|resourceType|[securityResourceType](#securityresourcetype)|Represents type of security resources related to an alert. Possible values are: `attacked`, `related`. (**new**)|
 
 ### securityResourceType
 
@@ -30,7 +30,6 @@ Represents type of security resources related to an alert.
 |-|-|-|
 |`attacked`|`0`|The resource was attacked in the alert.|
 |`related`|`1`|The resource is related to the alert, though not directly attacked|
-|`unknownFutureValue`||Future resource type| 
 
 ## JSON representation
 
