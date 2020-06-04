@@ -1,6 +1,6 @@
 ---
 title: "onlineMeeting: createOrGet"
-description: "Create an online meeting with a custom specified external ID. If the external ID already exists, this API will return the [onlineMeeting](../resources/onlinemeeting.md) object with that external ID."
+description: "Create an online meeting with a custom specified external ID. If the external ID already exists, this API will return the **onlineMeeting** object with that external ID."
 author: "ananmishr"
 localization_priority: Normal
 ms.prod: "cloud-communications"
@@ -50,11 +50,11 @@ In the request body, provide a JSON object with the following parameters.
 | startDateTime    | DateTime                                 | The meeting start time in UTC. |
 | subject          | String                                   | The subject of the online meeting. |
 
->**Note:** If the 'startDateTime' and 'endDateTime' are not provided, the 'startDateTime' will default to the current datetime value and 'endDateTime' value with equal the startDateTime + 1 hour. 
+>**Note:** If the `startDateTime` and `endDateTime` are not provided, the `startDateTime` will default to the current dateTime value and `endDateTime` value will equal the startDateTime + 1 hour. 
 
->If the 'startDateTime' is provided, but 'endDateTime' is not, the 'endDateTime' value will equal the 'startDateTime' + 1 hour. 
+>If the `startDateTime` is provided, but `endDateTime` is not, the `endDateTime` value will equal the `startDateTime` + 1 hour. 
 
->An error will be thrown if the 'endDateTime' is provided without the 'startDateTime' or if the 'endDateTime' is earlier than the 'startDateTime'.
+>An error will be thrown if the `endDateTime` is provided without the `startDateTime` or if the `endDateTime` is earlier than the `startDateTime`.
 
 ## Response
 If successful, this method returns a `201 Created` response code if a new meeting is created, or a `200 OK` response code if an existing meeting is retrieved. In both cases, an [onlineMeeting](../resources/onlinemeeting.md) object is returned in the response body.
