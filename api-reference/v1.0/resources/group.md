@@ -56,6 +56,10 @@ This resource supports:
 |[Delete setting](../api/groupsetting-delete.md) | None | Delete a setting object. |
 |[validateProperties](../api/group-validateproperties.md)|JSON| Validate that an Office 365 group's display name or mail nickname complies with naming policies. |
 |[assignLicense](../api/group-assignlicense.md)|[group](group.md)| Add or remove subscriptions for the group. You can also enable and disable specific plans associated with a subscription. |
+|**App role assignments**| | |
+|[List appRoleAssignments](../api/group-list-approleassignments.md) |[appRoleAssignment](approleassignment.md) collection| Get the apps and app roles which this group has been assigned.|
+|[Add appRoleAssignment](../api/group-post-approleassignments.md) |[appRoleAssignment](approleassignment.md)| Assign an app role to this group.|]
+|[Remove appRoleAssignment](../api/group-delete-approleassignments.md) | None. | Remove an app role assignment from this group.|
 |**Calendar**| | |
 |[Create event](../api/group-post-events.md) |[event](event.md)| Create a new event by posting to the events collection.|
 |[Get event](../api/group-get-event.md) |[event](event.md)|Read properties of an event object.|
@@ -123,8 +127,11 @@ This resource supports:
 |mail|String|The SMTP address for the group, for example, "serviceadmins@contoso.onmicrosoft.com". <br><br>Returned by default. Read-only. Supports $filter.|
 |mailEnabled|Boolean|Specifies whether the group is mail-enabled. <br><br>Returned by default.|
 |mailNickname|String|The mail alias for the group, unique in the organization. This property must be specified when a group is created. <br><br>Returned by default. Supports $filter.|
+|onPremisesDomainName|String|Contains the on-premises **domain FQDN**, also called **dnsDomainName** synchronized from the on-premises directory. The property is only populated for customers who are synchronizing their on-premises directory to Azure Active Directory via Azure AD Connect.<br><br>Returned by default. Read-only. |
 |onPremisesLastSyncDateTime|DateTimeOffset|Indicates the last time at which the group was synced with the on-premises directory.The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 would look like this: `'2014-01-01T00:00:00Z'`. <br><br>Returned by default. Read-only. Supports $filter.|
+|onPremisesNetBiosName|String|Contains the on-premises **netBios name** synchronized from the on-premises directory. The property is only populated for customers who are synchronizing their on-premises directory to Azure Active Directory via Azure AD Connect.<br><br>Returned by default. Read-only. |
 |onPremisesProvisioningErrors|[onPremisesProvisioningError](onpremisesprovisioningerror.md) collection| Errors when using Microsoft synchronization product during provisioning. <br><br>Returned by default.|
+|onPremisesSamAccountName|String|Contains the on-premises **SAM account name** synchronized from the on-premises directory. The property is only populated for customers who are synchronizing their on-premises directory to Azure Active Directory via Azure AD Connect.<br><br>Returned by default. Read-only. |
 |onPremisesSecurityIdentifier|String|Contains the on-premises security identifier (SID) for the group that was synchronized from on-premises to the cloud. <br><br>Returned by default. Read-only. |
 |onPremisesSyncEnabled|Boolean|**true** if this group is synced from an on-premises directory; **false** if this group was originally synced from an on-premises directory but is no longer synced; **null** if this object has never been synced from an on-premises directory (default). <br><br>Returned by default. Read-only. Supports $filter.|
 |preferredDataLocation|String|The preferred data location for the group. For more information, see  [OneDrive Online Multi-Geo](https://docs.microsoft.com/sharepoint/dev/solution-guidance/multigeo-introduction). <br><br>Returned by default.|
