@@ -17,7 +17,7 @@ Represents the configurations related to self-service sign up.
 ## Properties
 |Property|Type|Description|
 |:-------|:---|:----------|
-|isEnabled|Boolean|Is self service sign up flow enabled or disabled. The default value is false. This property is not a key, is required, and is not ReadOnly.|
+|isEnabled|Boolean|Indicates whether self-service sign-up flow is enabled or disabled. The default value is `false`. This property is not a key. Required. |
 
 ## Relationships
 None.
