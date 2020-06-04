@@ -9172,6 +9172,21 @@ items:
         items:
         - name: Get data policy operation
           href: api/datapolicyoperation-get.md
+      - name: Delegated permission grants
+        href: resources/oauth2permissiongrant.md
+        items:
+        - name: List delegated permission grants
+          href: api/oauth2permissiongrant-list.md
+        - name: Get delegated permission grants
+          href: api/oauth2permissiongrant-get.md
+        - name: Create delegated permission grant
+          href: api/oauth2permissiongrant-post.md
+        - name: Update delegated permission grant
+          href: api/oauth2permissiongrant-update.md
+        - name: Delete delegated permission grant
+          href: api/oauth2permissiongrant-delete.md
+        - name: Get delta
+          href: api/oauth2permissiongrant-delta.md
       - name: Deleted items
         href: resources/directory.md
         items:
@@ -9474,21 +9489,6 @@ items:
         items:
         - name: Create invitation
           href: api/invitation-post.md
-      - name: Delegated permission grants
-        href: resources/oauth2permissiongrant.md
-        items:
-        - name: List delegated permission grants
-          href: api/oauth2permissiongrant-list.md
-        - name: Get delegated permission grants
-          href: api/oauth2permissiongrant-get.md
-        - name: Create delegated permission grant
-          href: api/oauth2permissiongrant-post.md
-        - name: Update delegated permission grant
-          href: api/oauth2permissiongrant-update.md
-        - name: Delete delegated permission grant
-          href: api/oauth2permissiongrant-delete.md
-        - name: Get delta
-          href: api/oauth2permissiongrant-delta.md
       - name: On-premises publishing
         href: resources/onpremisespublishingprofile-root.md
         items:
