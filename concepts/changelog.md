@@ -13,7 +13,6 @@ For a summary of the value of these API changes, as well as recent tools, compon
 
 ## June 2020
 
-<<<<<<< HEAD
 ### Microsoft Graph Security API
 
 | **Change type** | **Version**   | **Description**                          |
@@ -24,9 +23,6 @@ For a summary of the value of these API changes, as well as recent tools, compon
 
 ### Cloud communications
 
-=======
-### Cloud Communications
->>>>>>> 5753c3aa506280b5a9e4e5fb28b468b5b3d0d94c
 | **Change type** | **Version**   | **Description**                          |
 | :-------------- | :------------ | :--------------------------------------- |
 | Addition | v1.0 | Added the [onlineMeeting: createOrGet](/graph/api/onlinemeeting-createorget) method.|
