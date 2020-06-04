@@ -9,6 +9,8 @@ doc_type: apiPageType
 
 # Create team
 
+Namespace: microsoft.graph
+
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 Create a new [team](../resources/team.md).
@@ -19,9 +21,9 @@ One of the following permissions is required to call this API. To learn more, in
 
 | Permission type                        | Permissions (from least to most privileged) |
 | :------------------------------------- | :------------------------------------------ |
-| Delegated (work or school account)     | Group.ReadWrite.All                         |
+| Delegated (work or school account)     | Group.ReadWrite.All, Directory.ReadWrite.All |
 | Delegated (personal Microsoft account) | Not supported.                              |
-| Application                            | Group.ReadWrite.All                         |
+| Application                            | Group.ReadWrite.All, Directory.ReadWrite.All |
 
 ## HTTP request
 
@@ -54,25 +56,48 @@ The following is an example of a minimal request. By omitting other properties, 
 
 #### Request
 
+# [HTTP](#tab/http)
+<!-- {
+  "blockType": "request",
+  "name": "create_team_post"
+}-->
 ```http
 POST https://graph.microsoft.com/beta/teams
 Content-Type: application/json
+
 {
   "template@odata.bind": "https://graph.microsoft.com/beta/teamsTemplates('standard')",
   "displayName": "My Sample Team",
   "description": "My Sample Team’s Description"
 }
 ```
+# [C#](#tab/csharp)
+[!INCLUDE [sample-code](../includes/snippets/csharp/create-team-post-csharp-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [JavaScript](#tab/javascript)
+[!INCLUDE [sample-code](../includes/snippets/javascript/create-team-post-javascript-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Objective-C](#tab/objc)
+[!INCLUDE [sample-code](../includes/snippets/objc/create-team-post-objc-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+---
+
 
 ##### Response
-
+<!-- {
+  "blockType": "response",
+  "name": "create_team_post",
+  "@odata.type": "microsoft.graph.team"
+}-->
 ```http
 HTTP/1.1 202 Accepted
 Content-Type: application/json
 Location: /teams/{teamId}/operations/{operationId}
 Content-Location: /teams/{teamId}
-{
-}
+Content-Length: 0
 ```
 
 ### Example 2: Application permissions
@@ -81,9 +106,15 @@ The following is an example of a minimal request using application permissions. 
 
 #### Request
 
+# [HTTP](#tab/http)
+<!-- {
+  "blockType": "request",
+  "name": "create_team_post_minimal"
+}-->
 ```http
 POST https://graph.microsoft.com/beta/teams
 Content-Type: application/json
+
 {
   "template@odata.bind": "https://graph.microsoft.com/beta/teamsTemplates('standard')",
   "displayName": "My Sample Team",
@@ -93,27 +124,50 @@ Content-Type: application/json
   ]
 }
 ```
+# [C#](#tab/csharp)
+[!INCLUDE [sample-code](../includes/snippets/csharp/create-team-post-csharp-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [JavaScript](#tab/javascript)
+[!INCLUDE [sample-code](../includes/snippets/javascript/create-team-post-minimal-javascript-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Objective-C](#tab/objc)
+[!INCLUDE [sample-code](../includes/snippets/objc/create-team-post-minimal-objc-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+---
+
 
 #### Response
-
+<!-- {
+  "blockType": "response",
+  "name": "create_team_post_minimal",
+  "@odata.type": "microsoft.graph.team"
+}-->
 ```http
 HTTP/1.1 202 Accepted
 Content-Type: application/json
 Location: /teams/{teamId}/operations/{operationId}
 Content-Location: /teams/{teamId}
-{
-}
+Content-Length: 0
 ```
 
 ### Example 3: Create a team with multiple channels, installed apps, and pinned tabs using delegated permissions
 
-The following is a request with a full payload. The client can override values in the base template and add to array-valued items to the extent allowed by validation rules for the `specialization`. 
+The following is a request with a full payload. The client can override values in the base template and add to array-valued items to the extent allowed by validation rules for the `specialization`.
 
 #### Request
 
+# [HTTP](#tab/http)
+<!-- {
+  "blockType": "request",
+  "name": "create_team_post_full_payload"
+}-->
 ```http
 POST https://graph.microsoft.com/beta/teams
 Content-Type: application/json
+
 {
     "template@odata.bind": "https://graph.microsoft.com/beta/teamsTemplates('standard')",
     "visibility": "Private",
@@ -134,7 +188,7 @@ Content-Type: application/json
                     "teamsApp@odata.bind": "https://graph.microsoft.com/v1.0/appCatalogs/teamsApps('com.microsoft.teamspace.tab.web')",
                     "name": "A Pinned Website",
                     "configuration": {
-                        "contentUrl": "https://docs.microsoft.com/en-us/microsoftteams/microsoft-teams"
+                        "contentUrl": "https://docs.microsoft.com/microsoftteams/microsoft-teams"
                     }
                 },
                 {
@@ -194,16 +248,33 @@ Content-Type: application/json
     ]
 }
 ```
+# [C#](#tab/csharp)
+[!INCLUDE [sample-code](../includes/snippets/csharp/create-team-post-full-payload-csharp-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [JavaScript](#tab/javascript)
+[!INCLUDE [sample-code](../includes/snippets/javascript/create-team-post-full-payload-javascript-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Objective-C](#tab/objc)
+[!INCLUDE [sample-code](../includes/snippets/objc/create-team-post-full-payload-objc-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+---
+
 
 #### Response
-
+<!-- {
+  "blockType": "response",
+  "name": "create_team_post_full_payload",
+  "@odata.type": "microsoft.graph.team"
+}-->
 ```http
 HTTP/1.1 202 Accepted
 Content-Type: application/json
 Location: /teams/{teamId}/operations/{operationId}
 Content-Location: /teams/{teamId}
-{
-}
+Content-Length: 0
 ```
 
 ### Example 4: Create a team from group
@@ -212,44 +283,73 @@ The following example shows how you can create a new [team](../resources/team.md
 
 A few thing to note about this call:
 
-* In order to create a team, the group you're creating it from must have a least one owner. 
+* In order to create a team, the group you're creating it from must have a least one owner.
 * The team that's created will always inherit from the group's display name, visibility, specialization, and owners. Therefore, when making this call with the **group@odata.bind** property, the inclusion of team **displayName**, **visibility**, **specialization**, or **owners@odata.bind** properties will return an error.
 * If the group was created less than 15 minutes ago, it's possible for the Create team call to fail with a 404 error code due to replication delays. We recommend that you retry the Create team call three times, with a 10 second delay between calls.
 
 
 #### Request
 
+# [HTTP](#tab/http)
+<!-- {
+  "blockType": "request",
+  "name": "create_team_from_group"
+}-->
 ```http
 POST https://graph.microsoft.com/beta/teams
 Content-Type: application/json
+
 {
   "template@odata.bind": "https://graph.microsoft.com/beta/teamsTemplates('standard')",
   "group@odata.bind": "https://graph.microsoft.com/v1.0/groups('groupId')"
 }
 ```
+# [C#](#tab/csharp)
+[!INCLUDE [sample-code](../includes/snippets/csharp/create-team-from-group-csharp-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [JavaScript](#tab/javascript)
+[!INCLUDE [sample-code](../includes/snippets/javascript/create-team-from-group-javascript-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Objective-C](#tab/objc)
+[!INCLUDE [sample-code](../includes/snippets/objc/create-team-from-group-objc-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+---
+
 
 #### Response
-
+<!-- {
+  "blockType": "response",
+  "name": "create_team_from_group",
+  "@odata.type": "microsoft.graph.team"
+}-->
 ```http
 HTTP/1.1 202 Accepted
 Content-Type: application/json
 Location: /teams/{teamId}/operations/{operationId}
 Content-Location: /teams/{teamId}
-{
-}
+Content-Length: 0
 ```
 
 ### Example 5: Create a team from a group with multiple channels, installed apps, and pinned tabs
 
 The following is a request that converts an existing group with extended properties which will create the team with multiple channels, installed apps, and pinned tabs.
 
-To learn more about supported base template types and supported properties, see [Get started with Teams templates](https://docs.microsoft.com/en-us/MicrosoftTeams/get-started-with-teams-templates).
+To learn more about supported base template types and supported properties, see [Get started with Teams templates](/MicrosoftTeams/get-started-with-teams-templates).
 
 #### Request
 
+# [HTTP](#tab/http)
+<!-- {
+  "blockType": "request",
+  "name": "convert_team_from_group"
+}-->
 ```http
 POST https://graph.microsoft.com/beta/teams
 Content-Type: application/json
+
 {
   "template@odata.bind": "https://graph.microsoft.com/beta/teamsTemplates('standard')",
   "group@odata.bind": "https://graph.microsoft.com/v1.0/groups('groupId')",
@@ -280,16 +380,33 @@ Content-Type: application/json
     ]
 }
 ```
+# [C#](#tab/csharp)
+[!INCLUDE [sample-code](../includes/snippets/csharp/convert-team-from-group-csharp-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [JavaScript](#tab/javascript)
+[!INCLUDE [sample-code](../includes/snippets/javascript/convert-team-from-group-javascript-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Objective-C](#tab/objc)
+[!INCLUDE [sample-code](../includes/snippets/objc/convert-team-from-group-objc-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+---
+
 
 #### Response
-
+<!-- {
+  "blockType": "response",
+  "name": "convert_team_from_group",
+  "@odata.type": "microsoft.graph.team"
+}-->
 ```http
 HTTP/1.1 202 Accepted
 Content-Type: application/json
 Location: /teams/{teamId}/operations/{operationId}
 Content-Location: /teams/{teamId}
-{
-}
+Content-Length: 0
 ```
 
 ### Example 6: Create a team with a non-standard base template type
@@ -298,42 +415,71 @@ Base template types are special templates that Microsoft created for specific in
 
 To create a team from a non-standard base template, you’ll want to change the `template@odata.bind` property in the request body from `standard` to point to the specific base template you’d like to create.
 
-To learn more about supported base template types, see [Get started with Teams templates](https://docs.microsoft.com/en-us/MicrosoftTeams/get-started-with-teams-templates).
+To learn more about supported base template types, see [Get started with Teams templates](/MicrosoftTeams/get-started-with-teams-templates).
 
 #### Request
 
+# [HTTP](#tab/http)
+<!-- {
+  "blockType": "request",
+  "name": "convert_team_from_non_standard"
+}-->
 ```http
 POST https://graph.microsoft.com/beta/teams
 Content-Type: application/json
+
 {
   "template@odata.bind": "https://graph.microsoft.com/beta/teamsTemplates('educationClass')",
   "displayName": "My Class Team",
   "description": "My Class Team’s Description"
 }
 ```
+# [C#](#tab/csharp)
+[!INCLUDE [sample-code](../includes/snippets/csharp/convert-team-from-non-standard-csharp-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [JavaScript](#tab/javascript)
+[!INCLUDE [sample-code](../includes/snippets/javascript/convert-team-from-non-standard-javascript-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Objective-C](#tab/objc)
+[!INCLUDE [sample-code](../includes/snippets/objc/convert-team-from-non-standard-objc-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+---
+
 
 #### Response
-
+<!-- {
+  "blockType": "response",
+  "name": "convert_team_from_non_standard",
+  "@odata.type": "microsoft.graph.team"
+}-->
 ```http
 HTTP/1.1 202 Accepted
 Content-Type: application/json
 Location: /teams/{teamId}/operations/{operationId}
 Content-Location: /teams/{teamId}
-{
-}
+Content-Length: 0
 ```
 
 ### Example 7: Create a team with a non-standard base template type with extended properties
 
 Base template types can be extended with additional properties, enabling you to build on an existing base template with additional team settings, channels, apps, or tabs.
 
-To learn more about supported base template types and supported properties, see [Get started with Teams templates](https://docs.microsoft.com/en-us/MicrosoftTeams/get-started-with-teams-templates).
+To learn more about supported base template types and supported properties, see [Get started with Teams templates](/MicrosoftTeams/get-started-with-teams-templates).
 
 #### Request
 
+# [HTTP](#tab/http)
+<!-- {
+  "blockType": "request",
+  "name": "convert_team_from_non_standard2"
+}-->
 ```http
 POST https://graph.microsoft.com/beta/teams
 Content-Type: application/json
+
 {
   "template@odata.bind": "https://graph.microsoft.com/beta/teamsTemplates('educationClass')",
   "displayName": "My Class Team",
@@ -365,21 +511,38 @@ Content-Type: application/json
     ]
 }
 ```
+# [C#](#tab/csharp)
+[!INCLUDE [sample-code](../includes/snippets/csharp/convert-team-from-non-standard2-csharp-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [JavaScript](#tab/javascript)
+[!INCLUDE [sample-code](../includes/snippets/javascript/convert-team-from-non-standard2-javascript-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Objective-C](#tab/objc)
+[!INCLUDE [sample-code](../includes/snippets/objc/convert-team-from-non-standard2-objc-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+---
+
 
 #### Response
-
+<!-- {
+  "blockType": "response",
+  "name": "convert_team_from_non_standard2",
+  "@odata.type": "microsoft.graph.team"
+}-->
 ```http
 HTTP/1.1 202 Accepted
 Content-Type: application/json
 Location: /teams/{teamId}/operations/{operationId}
 Content-Location: /teams/{teamId}
-{
-}
+Content-Length: 0
 ```
 
 ## See also
 
-- [Available templates](https://docs.microsoft.com/en-us/MicrosoftTeams/get-started-with-teams-templates)
+- [Available templates](/MicrosoftTeams/get-started-with-teams-templates)
 - [Getting started with Retail Teams templates](https://docs.microsoft.com/MicrosoftTeams/get-started-with-retail-teams-templates)
 - [Getting started with Healthcare Teams templates](https://docs.microsoft.com/MicrosoftTeams/healthcare/healthcare-templates)
 - [Creating a group with a team](/graph/teams-create-group-and-team)

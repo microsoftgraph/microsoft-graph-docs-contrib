@@ -1,13 +1,15 @@
 ---
 title: "targetResource resource complex type - Microsoft Graph API"
 description: "Defines the targetResource entity resource complex type of the Microsoft Graph API which supports audit log reporting organization (tenant) activity."
-author: "davidmu1"
+author: "cloudhandler"
 localization_priority: Normal
 doc_type: resourcePageType
-ms.prod: "azure-ad"
+ms.prod: "microsoft-identity-platform"
 ---
 
 # targetResource resource type
+
+Namespace: microsoft.graph
 
 Represents target resource types associated with audit activity. 
 

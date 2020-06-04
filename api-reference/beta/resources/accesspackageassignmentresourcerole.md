@@ -9,6 +9,8 @@ doc_type: "resourcePageType"
 
 # accessPackageAssignmentResourceRole resource type
 
+Namespace: microsoft.graph
+
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 In [Azure AD entitlement management](entitlementmanagement-root.md), an access package assignment resource role indicates the resource-specific role which a subject has been assigned through an access package assignment.
@@ -17,6 +19,7 @@ In [Azure AD entitlement management](entitlementmanagement-root.md), an access p
 
 | Method       | Return Type | Description |
 |:-------------|:------------|:------------|
+| [Get accessPackageAssignmentResourceRole](../api/accesspackageassignmentresourcerole-get.md) | [accessPackageAssignmentResourceRole](accesspackageassignmentresourcerole.md)  | Retrieve an accessPackageAssignmentResourceRole object. |
 | [List accessPackageAssignmentResourceRoles](../api/accesspackageassignmentresourcerole-list.md) | [accessPackageAssignmentResourceRole](accesspackageassignmentresourcerole.md) collection | Retrieve a list of accessPackageAssignmentResourceRole objects. |
 
 ## Properties
@@ -25,7 +28,7 @@ In [Azure AD entitlement management](entitlementmanagement-root.md), an access p
 |:-------------|:------------|:------------|
 |id|String| Read-only.|
 |originId|String|A unique identifier relative to the origin system. |
-|originSystem|String|The system where the role assignment is to be created for an access package assignment.|
+|originSystem|String|The system where the role assignment is to be created or has been created for an access package assignment, such as `SharePointOnline`.|
 |status|String|The value is `Fulfilled` when the access package assignment has been delivered to the origin system.|
 
 ## Relationships

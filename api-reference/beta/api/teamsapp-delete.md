@@ -9,6 +9,8 @@ doc_type: apiPageType
 
 # Remove an app from your organization's app catalog
 
+Namespace: microsoft.graph
+
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 Remove the [app](../resources/teamsapp.md) from your organization's app catalog (the tenant app catalog). 
@@ -22,9 +24,9 @@ One of the following permissions is required to call this API. To learn more, in
 
 | Permission Type                        | Permissions (from least to most privileged)|
 |:----------------------------------     |:-------------|
-| Delegated (work or school account)     | AppCatalog.ReadWrite.All |
+| Delegated (work or school account)     | AppCatalog.ReadWrite.All, Directory.ReadWrite.All |
 | Delegated (personal Microsoft account) | Not supported|
-| Application                            | Not supported|
+| Application                            | Not supported. |
 
 ## HTTP request
 <!-- { "blockType": "ignored" } -->

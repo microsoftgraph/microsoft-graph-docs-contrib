@@ -9,6 +9,8 @@ doc_type: resourcePageType
 
 # educationSynchronizationProfile resource type
 
+Namespace: microsoft.graph
+
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 Represents a set of configurations used to synchronize education entities and roster information from a source directory to Azure Active Directory (Azure AD). This resource provides a programmatic representation used in [School Data Sync](https://sds.microsoft.com).
@@ -72,3 +74,16 @@ The following is a JSON representation of the **educationSynchronizationProfile*
     "handleSpecialCharacterConstraint": "Boolean"
 }
 ```
+
+<!-- uuid: 16cd6b66-4b1a-43a1-adaf-3a886856ed98
+2020-05-06 14:57:30 UTC -->
+<!-- {
+  "type": "#page.annotation",
+  "description": "educationSynchronizationProfile resource",
+  "keywords": "",
+  "section": "documentation",
+  "tocPath": "",
+  "suppressions": [
+      "Error: microsoft.graph.educationSynchronizationProfile/dataProvider:\r\n      Referenced type microsoft.graph.educationSynchronizationDataProvider is not defined in the doc set! Potential suggestion: UNKNOWN"
+  ]
+}-->

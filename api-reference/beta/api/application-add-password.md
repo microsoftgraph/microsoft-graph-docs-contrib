@@ -1,13 +1,15 @@
 ---
 title: "Add application password"
 description: "Adds a strong password to an application."
-author: "davidmu1"
+author: "sureshja"
 localization_priority: Normal
 ms.prod: "microsoft-identity-platform"
 doc_type: apiPageType
 ---
 
 # Add application password
+
+Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
@@ -18,9 +20,9 @@ One of the following permissions is required to call this API. To learn more, in
 
 |Permission type      | Permissions (from least to most privileged)              |
 |:--------------------|:---------------------------------------------------------|
-|Delegated (work or school account) | Directory.Read.All, Directory.ReadWrite.All, Directory.AccessAsUser.All    |
+|Delegated (work or school account) | Application.ReadWrite.All, Directory.ReadWrite.All, Directory.AccessAsUser.All    |
 |Delegated (personal Microsoft account) | Not supported.    |
-|Application | Application.ReadWrite.OwnedBy, Application.ReadWrite.All, Directory.Read.All |
+|Application | Application.ReadWrite.OwnedBy, Application.ReadWrite.All, Directory.ReadWrite.All |
 
 ## HTTP request
 <!-- { "blockType": "ignored" } -->
@@ -42,13 +44,13 @@ If successful, this method returns a `200 OK` response code and password object 
 
 ## Example
 ##### Request
-Here is an example of the request.
+The following is an example of the request.
 
 ```http
 POST https://graph.microsoft.com/beta/applications/{id}/addPassword
 ```
 ##### Response
-Here is an example of the response.
+The following is an example of the response.
 
 ```http
 HTTP/1.1 200 OK

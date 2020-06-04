@@ -1,6 +1,6 @@
 ---
 title: "Update itememail"
-description: "Update the properties of an itememail object in a user's profile."
+description: "Update the properties of an itemEmail object in a user's profile."
 localization_priority: Normal
 author: "kevinbellinger"
 ms.prod: "people"
@@ -8,6 +8,8 @@ doc_type: "apiPageType"
 ---
 
 # Update itememail
+
+Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
@@ -28,7 +30,7 @@ One of the following permissions is required to call this API. To learn more, in
 <!-- { "blockType": "ignored" } -->
 
 ```http
-PATCH /me/profile/emails/{id} 
+PATCH /me/profile/emails/{id}
 ```
 
 ## Request headers
@@ -44,7 +46,7 @@ In the request body, supply the values for relevant fields that should be update
 
 | Property     | Type        | Description                                                              |
 |:-------------|:------------|:-------------------------------------------------------------------------|
-|address       |String       | The email address itself.                                                | 
+|address       |String       | The email address itself.                                                |
 |displayName   |String       | The name or label a user has associated with a particular email address. |
 |type          |string       | Possible values are: `unknown`, `work`, `personal`, `main`, `other`.     |
 
@@ -57,6 +59,8 @@ If successful, this method returns a `200 OK` response code and an updated [item
 ### Request
 
 The following is an example of the request.
+
+# [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "update_itememail"
@@ -72,6 +76,20 @@ Content-type: application/json
   "type": "type-value"
 }
 ```
+
+# [C#](#tab/csharp)
+[!INCLUDE [sample-code](../includes/snippets/csharp/update-itememail-csharp-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [JavaScript](#tab/javascript)
+[!INCLUDE [sample-code](../includes/snippets/javascript/update-itememail-javascript-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Objective-C](#tab/objc)
+[!INCLUDE [sample-code](../includes/snippets/objc/update-itememail-objc-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+---
 
 ### Response
 

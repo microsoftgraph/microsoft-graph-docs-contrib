@@ -97,7 +97,7 @@ Microsoft Teams APIs can enhance apps inside and outside of Teams:
 |Websites| Surface enhanced content in your web pages.|
 |Services|Enhance your client applications with Microsoft Graph data via your web service.|
 | [Activity feed](https://docs.microsoft.com/microsoftteams/platform/concepts/activity-feed)|Engage users via feed notifications.|
-| [Calling and online meetings (Preview)](/graph/api/resources/calls-api-overview?view=graph-rest-beta) |Create Microsoft Teams apps with bots that can initiate and participate in audio/video calls, route/transfer calls based on interactive voice response (IVR) flows, and participate in online meetings.|
+| [Calling and online meetings (preview)](https://docs.microsoft.com/graph/api/resources/communications-api-overview) |Create Microsoft Teams apps with bots that can initiate and participate in audio/video calls, route/transfer calls based on interactive voice response (IVR) flows, and participate in online meetings.|
 
 ## API reference
 
@@ -112,5 +112,5 @@ See the [Teams API in Microsoft Graph](/graph/api/resources/teams-api-overview?v
 - Drill down on the methods, properties, and relationships of the [team](/graph/api/resources/team?view=graph-rest-1.0), [channel](/graph/api/resources/channel?view=graph-rest-1.0), and [group](/graph/api/resources/group?view=graph-rest-1.0) resources.
 - Try the API in the [Graph Explorer](https://developer.microsoft.com/graph/graph-explorer).
 - Read more about the [Microsoft Teams programming model](https://docs.microsoft.com/microsoftteams/platform/concepts/concepts-overview).
-- Explore the [calling and online meeting APIs](/graph/api/resources/calls-api-overview?view=graph-rest-beta).
+- Explore the [cloud communications APIs](/graph/api/resources/communications-api-overview?view=graph-rest-beta).
 - Get a jump-start with sample code: [Contoso Airlines](https://github.com/microsoftgraph/contoso-airlines-teams-sample), [C# mini-samples](https://github.com/microsoftgraph/csharp-teams-sample-graph)

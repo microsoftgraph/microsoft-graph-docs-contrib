@@ -1,13 +1,15 @@
 ---
 title: "Get androidDeviceOwnerGeneralDeviceConfiguration"
 description: "Read properties and relationships of the androidDeviceOwnerGeneralDeviceConfiguration object."
-author: "rolyon"
+author: "dougeby"
 localization_priority: Normal
 ms.prod: "Intune"
 doc_type: apiPageType
 ---
 
 # Get androidDeviceOwnerGeneralDeviceConfiguration
+
+Namespace: microsoft.graph
 
 > **Important:** Microsoft Graph APIs under the /beta version are subject to change; production use is not supported.
 
@@ -36,7 +38,7 @@ GET /deviceManagement/deviceConfigurations/{deviceConfigurationId}/microsoft.gra
 ```
 
 ## Optional query parameters
-This method supports the [OData Query Parameters](https://docs.microsoft.com/en-us/graph/query-parameters) to help customize the response.
+This method supports the [OData Query Parameters](/graph/query-parameters) to help customize the response.
 
 ## Request headers
 |Header|Value|
@@ -63,7 +65,7 @@ Here is an example of the response. Note: The response object shown here may be 
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 4706
+Content-Length: 4896
 
 {
   "value": {
@@ -108,6 +110,9 @@ Content-Length: 4706
     "bluetoothBlockContactSharing": true,
     "cameraBlocked": true,
     "cellularBlockWiFiTethering": true,
+    "certificateCredentialConfigurationDisabled": true,
+    "microsoftLauncherConfigurationEnabled": true,
+    "enrollmentProfile": "dedicatedDevice",
     "dataRoamingBlocked": true,
     "dateTimeConfigurationBlocked": true,
     "factoryResetDeviceAdministratorEmails": [
@@ -118,6 +123,7 @@ Content-Length: 4706
       "@odata.type": "microsoft.graph.androidDeviceOwnerGlobalProxyAutoConfig",
       "proxyAutoConfigURL": "Proxy Auto Config URL value"
     },
+    "googleAccountsBlocked": true,
     "kioskModeScreenSaverConfigurationEnabled": true,
     "kioskModeScreenSaverImageUrl": "https://example.com/kioskModeScreenSaverImageUrl/",
     "kioskModeScreenSaverDisplayTimeInSeconds": 8,
@@ -178,16 +184,13 @@ Content-Length: 4706
     "usersBlockAdd": true,
     "usersBlockRemove": true,
     "volumeBlockAdjustment": true,
-    "vpnAlwaysOnPackageIdentifier": "Vpn Always On Package Identifier value",
     "vpnAlwaysOnLockdownMode": true,
+    "vpnAlwaysOnPackageIdentifier": "Vpn Always On Package Identifier value",
     "wifiBlockEditConfigurations": true,
     "wifiBlockEditPolicyDefinedConfigurations": true
   }
 }
 ```
-
-
-
 
 
 

@@ -9,6 +9,8 @@ doc_type: apiPageType
 
 # NamedItem: Range
 
+Namespace: microsoft.graph
+
 Returns the range object that is associated with the name. Throws an exception if the named item's type is not a range.
 ## Permissions
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
@@ -22,7 +24,7 @@ One of the following permissions is required to call this API. To learn more, in
 ## HTTP request
 <!-- { "blockType": "ignored" } -->
 ```http
-POST /workbook/names/{name}/range
+GET /workbook/names/{name}/range
 
 ```
 ## Request headers
@@ -49,7 +51,7 @@ Here is an example of the request.
   "name": "nameditem_range"
 }-->
 ```http
-POST https://graph.microsoft.com/v1.0/me/drive/items/{id}/workbook/names/{name}/range
+GET https://graph.microsoft.com/v1.0/me/drive/items/{id}/workbook/names/{name}/range
 ```
 # [C#](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/nameditem-range-csharp-snippets.md)]

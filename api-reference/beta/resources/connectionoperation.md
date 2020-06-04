@@ -9,9 +9,13 @@ doc_type: "resourcePageType"
 
 # connectionOperation resource type
 
+Namespace: microsoft.graph
+
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 Describes status of an asynchronous request to create a Microsoft Search connection [schema](schema.md).
+
+[!INCLUDE [search-api-preview](../../includes/search-api-preview-signup.md)]
 
 ## Methods
 

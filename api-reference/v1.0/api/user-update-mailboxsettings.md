@@ -2,27 +2,30 @@
 title: "Update user mailbox settings"
 description: "Update one or more settings for the user's mailbox. This includes settings for automatic replies (notify people automatically upon receipt of their email), locale (language and country/region), time zone, and working hours."
 localization_priority: Normal
-author: "angelgolfer-ms"
+author: "svpsiva"
 ms.prod: "outlook"
 doc_type: apiPageType
 ---
 
 # Update user mailbox settings
 
+Namespace: microsoft.graph
+
 Enable, configure, or disable one or more of the following settings as part of a user's [mailboxSettings](../resources/mailboxsettings.md):
 
 - [automatic replies](../resources/automaticrepliessetting.md) (notify people automatically upon receipt of their email)
 - dateFormat
+- delegateMeetingMessageDeliveryOptions
 - [locale](../resources/localeinfo.md) (language and country/region)
 - timeFormat
 - time zone
 - [working hours](../resources/workinghours.md)
 
-When updating the preferred date or time format for a user, specify it in respectively, the [short date](https://docs.microsoft.com/en-us/dotnet/standard/base-types/standard-date-and-time-format-strings#ShortDate) or [short time](https://docs.microsoft.com/en-us/dotnet/standard/base-types/standard-date-and-time-format-strings#ShortTime) format. 
+When updating the preferred date or time format for a user, specify it in respectively, the [short date](/dotnet/standard/base-types/standard-date-and-time-format-strings#ShortDate) or [short time](/dotnet/standard/base-types/standard-date-and-time-format-strings#ShortTime) format.
 
 When updating the preferred time zone for a user, specify it in the Windows or [Internet Assigned Numbers Authority (IANA) time zone](https://www.iana.org/time-zones) (also known as Olson time zone) format. You can also further customize the time zone as shown in [example 2](#example-2) below.
 
-> [!TIP] 
+> [!TIP]
 > You cannot create or delete any mailbox settings.
 
 ## Permissions
@@ -48,14 +51,15 @@ This method supports the [OData Query Parameters](https://developer.microsoft.co
 | Authorization  | string  | Bearer {token}. Required. |
 
 ## Request body
-In the request body, supply the values for the relevant properties that should be updated. Existing properties that are not included in the 
-request body will maintain their previous values or be recalculated based on changes to other property values. For best performance you 
+In the request body, supply the values for the relevant properties that should be updated. Existing properties that are not included in the
+request body will maintain their previous values or be recalculated based on changes to other property values. For best performance you
 shouldn't include existing values that haven't changed. The following are the writable/updatable properties:
 
 | Property	   | Type	|Description|
 |:---------------|:--------|:----------|
 |automaticRepliesSetting|[automaticRepliesSetting](../resources/automaticrepliessetting.md)|Configuration settings to automatically notify the sender of an incoming email with a message from the signed-in user. You can set such notifications for only a future date range.|
 |dateFormat|string|The date format for the user's mailbox.|
+|delegateMeetingMessageDeliveryOptions|delegateMeetingMessageDeliveryOptions| If the user has a calendar delegate, this specifies whether the delegate, mailbox owner, or both receive meeting messages and meeting responses. Possible values are: `sendToDelegateAndInformationToPrincipal`, `sendToDelegateAndPrincipal`, `sendToDelegateOnly`.|
 |language|[localeInfo](../resources/localeinfo.md)|The locale information for the user, including the preferred language and country/region.|
 |timeFormat|string|The time format for the user's mailbox.|
 |timeZone|string|The default time zone for the user's mailbox.|
@@ -79,7 +83,7 @@ Setting working hours with inappropriate values may return the following errors.
 
 ## Examples
 ### Example 1
-#### Request 
+#### Request
 The first example enables automatic replies for a date range, by setting the following properties of the **automaticRepliesSetting** property:
 **status**, **scheduledStartDateTime** and **scheduledEndDateTime**.
 
@@ -160,7 +164,7 @@ Content-type: application/json
 
 ### Example 2
 #### Request
-The second example customizes the time zone for the working hours of the signed-in user, by setting the **timeZone** property 
+The second example customizes the time zone for the working hours of the signed-in user, by setting the **timeZone** property
 to a [custom time zone](../resources/customtimezone.md).
 
 <!-- {

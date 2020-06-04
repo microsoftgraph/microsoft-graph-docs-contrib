@@ -2,12 +2,14 @@
 title: "Get attachment"
 description: "Read the properties and relationships of an attachment, attached to an event, "
 localization_priority: Priority
-author: "angelgolfer-ms"
+author: "svpsiva"
 ms.prod: "outlook"
 doc_type: apiPageType
 ---
 
 # Get attachment
+
+Namespace: microsoft.graph
 
 Read the properties, relationships, or raw contents of an attachment, attached to a user [event](../resources/event.md), 
 [message](../resources/message.md), or [post](../resources/post.md). 
@@ -342,6 +344,7 @@ Content-type: application/json
     "subject":"Reminder - please bring laptop",
     "importance":"normal",
     "conversationId":"AAQkADA1MzMyOGI4LTlkZDctNDkzYy05M2RiLTdiN2E1NDE3MTRkOQAQAMG_NSCMBqdKrLa2EmR-lO0=",
+    "conversationIndex":"AQHTAbcSwb41IIwGp0qstrYSZH+U7Q==",
     "isDeliveryReceiptRequested":false,
     "isReadReceiptRequested":false,
     "isRead":false,
