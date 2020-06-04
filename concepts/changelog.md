@@ -19,6 +19,7 @@ For a summary of the value of these API changes, as well as recent tools, compon
 | Addition | v1.0 | Added the [onlineMeeting: createOrGet](/graph/api/onlinemeeting-createorget) method.|
 | Addition | v1.0 | Added an optional **externalId** property. |
 |Addition | beta | Added an additional path to the [Get presence](/graph/api/presence-get?view=graph-rest-beta) API.|
+|Addition | v1.0 | Added an optional `Accept-Language` header for [online meetings](/graph/api/resources/onlinemeeting).|
 
 ### Identity and access
 | **Change type** | **Version**   | **Description**                          |
