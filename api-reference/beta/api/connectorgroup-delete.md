@@ -2,9 +2,9 @@
 title: "Delete connectorGroup"
 description: "Delete a connectorGroup."
 localization_priority: Normal
-doc_type: apiPageType
-ms.prod: ""
-author: ""
+author: "japere"
+ms.prod: "microsoft-identity-platform"
+doc_type: "apiPageType"
 ---
 
 # Delete connectorGroup
@@ -13,7 +13,8 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Delete a connectorGroup.
+Delete a [connectorGroup](../resources/connectorgroup.md). All [connectors](../resources/connector.md) and applications must be removed from the connector group before a connector group can be deleted.
+
 ## Permissions
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
 
@@ -24,12 +25,10 @@ One of the following permissions is required to call this API. To learn more, in
 |Delegated (personal Microsoft account) | Not supported.    |
 |Application | Directory.ReadWrite.All |
 
-> **Note:** The connector group must not have any connectors associated with it.
-
 ## HTTP request
 <!-- { "blockType": "ignored" } -->
 ```http
-DELETE /connectorGroups/{id}
+DELETE /onPremisesPublishingProfiles/applicationProxy/connectorGroups/{id}
 ```
 ## Request headers
 | Name       | Description|
@@ -45,16 +44,16 @@ If successful, this method returns `204 No Content` response code. It does not r
 
 ## Example
 ##### Request
-Here is an example of the request.
+The following is an example of the request.
 <!-- {
   "blockType": "request",
   "name": "delete_connectorgroup"
 }-->
 ```http
-DELETE https://graph.microsoft.com/{ver}/connectorGroups/{id}
+DELETE https://graph.microsoft.com/beta/onPremisesPublishingProfiles/applicationProxy/connectorGroups/{id}
 ```
 ##### Response
-Here is an example of the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.
+The following is an example of the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.
 <!-- {
   "blockType": "response",
   "truncated": true

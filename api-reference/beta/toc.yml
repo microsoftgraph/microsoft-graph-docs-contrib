@@ -9529,6 +9529,36 @@ items:
                 href: api/publishedresource-post-agentgroups.md
               - name: Remove from agent group
                 href: api/publishedresource-delete-agentgroups.md
+          - name: connector
+            href: resources/connector.md
+            items:
+              - name: List
+                href: api/connector-list.md
+              - name: Get
+                href: api/connector-get.md
+              - name: List memberOf
+                href: api/connector-list-memberof.md 
+              - name: Add connector to connectorGroup
+                href: api/connector-post-memberof.md
+          - name: connector group
+            href: resources/connectorgroup.md
+            items:
+              - name: List                 
+                href: api/connectorgroup-list.md
+              - name: Get
+                href: api/connectorgroup-get.md 
+              - name: Update
+                href: api/connectorgroup-update.md
+              - name: Delete
+                href: api/connectorgroup-delete.md
+              - name: List applications
+                href: api/connectorgroup-list-applications.md
+              - name: List members
+                href: api/connectorgroup-list-members.md
+              - name: Add connector
+                href: api/connectorgroup-post-members.md
+              - name: Add application
+                href: api/connectorgroup-post-applications.md
       - name: Organization
         href: resources/organization.md
         items:
