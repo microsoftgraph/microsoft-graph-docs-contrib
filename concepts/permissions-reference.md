@@ -1651,20 +1651,24 @@ For more complex scenarios involving multiple permissions, see [Permission scena
 | _TeamMember.Read.All_ | Read the members of all teams. | Read the members of all teams, without a signed-in user.	| Yes | No |
 | _TeamMember.ReadWrite.All_ | Add and remove members from all teams. | Add and remove members from all teams, without a signed-in user. Also allows changing a team member's role, for example from owner to non-owner. | Yes | No |
 
-## Teams settings permissions  ([preview](#permissions-availability-status))
+## Teams settings permissions
 
 ### Delegated permissions
+
 | Permission | Display String | Description | Admin Consent Required | Microsoft Account supported |
 |:----------------|:------------------|:-------------|:-----------------------|:--------------|
-| Team.ReadBasic.All (private preview) | Read the names and descriptions of teams| Read the names and  descriptions of teams, on behalf of the signed-in user.|Yes| No |
-| TeamSettings.Read.All (private preview) | Read teams' settings| Read all teams' settings, on behalf of the signed-in user.|Yes| No |
-| TeamSettings.ReadWrite.All (private preview) | Read and change teams' settings.| Read and change all teams' settings, on behalf of the signed-in user.|Yes| No |
+| Team.ReadBasic.All | Read the names and descriptions of teams| Read the names and  descriptions of teams, on behalf of the signed-in user.|Yes| No |
+| TeamSettings.Read.All | Read teams' settings| Read all teams' settings, on behalf of the signed-in user.|Yes| No |
+| TeamSettings.ReadWrite.All | Read and change teams' settings.| Read and change all teams' settings, on behalf of the signed-in user.|Yes| No |
+
 ### Application permissions
+
 | Permission | Display String | Description | Admin Consent Required | Microsoft Account supported |
 |:----------------|:------------------|:-------------|:-----------------------|:--------------|
-| Team.ReadBasic.All (private preview) | Get a list of all teams.| Get a list of all teams, without a signed-in user.|Yes| No |
-| TeamSettings.Read.All (private preview) | Read all teams' settings| Read this team's settings, without a signed-in user.|Yes| No |
-| TeamSettings.ReadWrite.All (private preview) | Read and change all teams' settings| Read and change all teams' settings, without a signed-in user.|No | No |
+| Team.ReadBasic.All | Get a list of all teams.| Get a list of all teams, without a signed-in user.|Yes| No |
+| TeamSettings.Read.All | Read all teams' settings| Read this team's settings, without a signed-in user.|Yes| No |
+| TeamSettings.ReadWrite.All | Read and change all teams' settings| Read and change all teams' settings, without a signed-in user.|No | No |
+
 ## Teams resource-specific consent permissions
 
 | Permission | Display String | Description | Admin Consent Required | Microsoft Account supported |
