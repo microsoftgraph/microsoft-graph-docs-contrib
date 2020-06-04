@@ -74,8 +74,25 @@ The `mgt-people-picker` component defines the following CSS custom properties.
 
 ```css
 mgt-people-picker {
-  --people-list-background-color: blue; /* Background-color for people under search */
-  --accent-color: green; /* Color for separator of search input box and people */
+    --input-border: 2px rgba(255, 255, 255, 0.5) solid; /* sets all input area border */
+
+      /* OR individual input border sides */
+    --input-border-bottom: 2px rgba(255, 255, 255, 0.5) solid;
+    --input-border-right: 2px rgba(255, 255, 255, 0.5) solid;
+    --input-border-left: 2px rgba(255, 255, 255, 0.5) solid;
+    --input-border-top: 2px rgba(255, 255, 255, 0.5) solid;
+
+    --input-background-color: #1f1f1f; /* input area background color */
+    --input-hover-color: #008394; /* input area border hover color */
+    --input-focus-color: #0f78d4; /* input area border focus color */
+
+    --dropdown-background-color: #1f1f1f; /* channel background color */
+    --dropdown-item-hover-background: #333d47; /* channel or team hover background */
+    --dropdown-item-selected-background: #0F78D4; /* selected channel background color */
+
+    --font-color: white; /* input area border focus color */
+    --placeholder-default-color: #f1f1f1; /* placeholder text color default*/
+    --placeholder-focus-color: rgba(255, 255, 255, 0.8); /* placeholder text focus color */
 }
 ```
 
