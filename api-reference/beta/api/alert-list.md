@@ -45,12 +45,12 @@ This method supports the following [OData query parameters](/graph/query-paramet
 - `$orderby`
 - `$select`
 - `$skip`
-- `$top` will return the aggregated top results from each security API provider.
+- `$top` - Returns the aggregated top results from each security API provider.
 - `$filter`
 
-The following table has a list of `$filter` keywords by each vendor name.
+The following table lists the `$filter` keywords by each vendor name.
 
-| Vendor Name      |$filter Keyword|
+| Vendor name      |$filter keyword|
 |:----------|:----------|
 | Azure Advanced Threat Protection | Azure Advanced Threat Protection | 
 | Azure Security Center | ASC |
@@ -58,7 +58,7 @@ The following table has a list of `$filter` keywords by each vendor name.
 | Azure Active Directory Identity Protection | IPC |
 | Azure Sentinel | Azure Sentinel |
 | Microsoft Defender Advanced Threat Protection | Microsoft Defender ATP |
-| Office 365 |  $filter is currently not supported |
+| Office 365 |  Not currently supported. |
 
 To return an alternative property set, use the OData `$select` query parameter to specify the set of **alert** properties that you want.  For example, to return the **assignedTo**, **category**, and **severity** properties, add the following to your query: `$select=assignedTo,category,severity`.
 
