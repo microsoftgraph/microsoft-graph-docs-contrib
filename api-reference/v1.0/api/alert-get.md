@@ -211,10 +211,6 @@ Content-type: application/json
     {
       "resource": "String",
       "resourceType": "@odata.type: microsoft.graph.securityResourceType"
-    },
-    {
-      "resource": "String",
-      "resourceType": "@odata.type: microsoft.graph.securityResourceType"
     }
    ],
   "severity": "@odata.type: microsoft.graph.alertSeverity",
