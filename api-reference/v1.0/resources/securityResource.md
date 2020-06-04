@@ -30,7 +30,6 @@ Represents type of security resources related to an alert.
 |-|-|-|
 |`attacked`|`0`|The resource was attacked in the alert.|
 |`related`|`1`|The resource is related to the alert, though not directly attacked|
-|`unknownFutureValue`||Future resource type| 
 
 ## JSON representation
 
