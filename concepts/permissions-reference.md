@@ -188,7 +188,7 @@ None.
 
 |   Permission    |  Display String   |  Description | Admin Consent Required | Microsoft Account Required |
 |:-----------------------------|:-----------------------------------------|:-----------------|:-----------------| :----------|
-| _AppCatalog.Read.All_ (private preview) | Read all app catalogs | Allows the app to read the apps in the app catalogs.| No | No |
+| _AppCatalog.Read.All_ | Read all app catalogs | Allows the app to read the apps in the app catalogs.| No | No |
 | _AppCatalog.ReadWrite.All_ | Read and write to all app catalogs  | Allows the app to create, read, update, and delete apps in the app catalogs. | Yes | No |
 
 #### Application permissions
