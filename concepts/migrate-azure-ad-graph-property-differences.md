@@ -59,7 +59,6 @@ Because user and group are so frequently used, these resources appear first.  Ot
 |Azure AD Graph <br>(v1.6) property |Microsoft Graph<br> property|Comments|
 |---|---|---|
 | **acceptMappedClaims**  | beta &nbsp;-&nbsp;**api/acceptMappedClaims** <br> v1.0 &nbsp;-&nbsp; **api/acceptMappedClaims** | acceptMappedClaims is now part of the new api resource. |
-| **applicationTemplateId** | beta  &nbsp;-&nbsp; _Not yet available_ <br> v1.0  &nbsp;-&nbsp; _Not yet available_ | |
 | **availableToOtherTenants** | beta &nbsp;-&nbsp; **signInAudience** <br> v1.0 &nbsp;-&nbsp; **signInAudience** | |
 | **errorUrl**| beta &nbsp;-&nbsp;_not available_ <br> v1.0 &nbsp;-&nbsp;  _not available_ | This property is deprecated.|
 | **homepage**| beta &nbsp;-&nbsp;**web/homePageUrl** <br> v1.0 &nbsp;-&nbsp; **web/homePageUrl** | homepage is now part of the new web resource.|
@@ -167,18 +166,11 @@ The Azure AD Graph ServiceEndpoint resource is renamed to endpoint in Microsoft 
 
 |Azure AD Graph <br>(v1.6) property |Microsoft Graph<br> property|Comments|
 |---|---|---|
-| **applicationTemplateId** | beta  &nbsp;-&nbsp;**applicationTemplateId** <br> v1.0  &nbsp;-&nbsp; **applicationTemplateId** | |
 | **appOwnerTenantId** | beta&nbsp;-&nbsp;**appOwnerOrganizationId** <br> v1.0 &nbsp;-&nbsp;**appOwnerOrganizationId** | Renamed. |
 | **informationalUrls**| beta &nbsp;-&nbsp;**info** <br> v1.0 &nbsp;-&nbsp; **info** | |
-| **notificationEmailAddresses** | beta&nbsp;-&nbsp;**notificationEmailAddresses** <br> v1.0 &nbsp;- **notificationEmailAddresses** | |
 | **oauth2Permissions** | beta  &nbsp;-&nbsp;**publishedPermissionScopes** <br> v1.0  &nbsp;-&nbsp;**oauth2PermissionScopes** | Renamed. |
-| **preferredSingleSignOnMode** | beta&nbsp;-&nbsp;**preferredSingleSignOnMode** <br> v1.0 &nbsp;- **preferredSingleSignOnMode** | |
 | **preferredTokenSigningKeyEndDateTime** | beta&nbsp;-&nbsp;_Not yet available_ <br> v1.0 &nbsp;- _Not yet available_ | |
-| **preferredTokenSigningKeyThumbprint** | beta&nbsp;-&nbsp;**preferredTokenSigningKeyThumbprint** <br> v1.0 &nbsp;- **preferredTokenSigningKeyThumbprint** | |
-| **samlSingleSignOnSettings** | beta&nbsp;-&nbsp;**samlSingleSignOnSettings** <br> v1.0 &nbsp;- **samlSingleSignOnSettings** | |
-| **servicePrincipalType** | beta&nbsp;-&nbsp;**servicePrincipalType** <br> v1.0 &nbsp;- **servicePrincipalType** | |
 | **signInAudience** | beta&nbsp;-&nbsp;_Not yet available_ <br> v1.0 &nbsp;- _Not yet available_ | |
-| **tokenEncryptionKeyId** | beta&nbsp;-&nbsp;**tokenEncryptionKeyId** <br> v1.0 &nbsp;- **tokenEncryptionKeyId** | |
 | **serviceEndpoints** | beta&nbsp;-&nbsp;**endpoint** <br> v1.0 &nbsp;-&nbsp;**endpoint** | Renamed. |
 
 ## TenantDetails property differences
