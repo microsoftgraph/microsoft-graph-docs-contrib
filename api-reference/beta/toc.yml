@@ -9000,8 +9000,6 @@ items:
             href: api/authenticationflowspolicy-get.md
           - name: Update
             href: api/authenticationflowspolicy-update.md
-        - name: Self-service sign-up authentication flow configuration
-          href: resources/selfservicesignupauthenticationflowconfiguration.md
       - name: Authentication methods
         items:
         - name: Overview
