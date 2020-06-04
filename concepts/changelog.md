@@ -18,6 +18,7 @@ For a summary of the value of these API changes, as well as recent tools, compon
 | **Change type** | **Version**   | **Description**                          |
 | :-------------- | :------------ | :--------------------------------------- |
 |Addition | beta | Added an additional path to the [Get presence](/graph/api/presence-get?view=graph-rest-beta) API.|
+|Addition | v1.0 | Added an optional `Accept-Language` header for [online meetings](/graph/api/resources/onlinemeeting).|
 
 ### Identity and access
 | **Change type** | **Version**   | **Description**                          |
@@ -35,10 +36,6 @@ For a summary of the value of these API changes, as well as recent tools, compon
 | Addition | beta | Added the **OnPremisesPublishing** property to [Update Application](/graph/api/application-update?view=graph-rest-beta). |
 
 ## May 2020
-### Cloud Communications
-| **Change type** | **Version**   | **Description**                          |
-| :-------------- | :------------ | :--------------------------------------- |
-|Addition|v1.0|Added an optional `Accept-Language` header for [online meetings](/graph/api/resources/onlinemeeting).
 
 ### Calendar
 
