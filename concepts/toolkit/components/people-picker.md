@@ -25,8 +25,8 @@ By default, the `mgt-people-picker` component fetches people from the `/me/peopl
 | -------- | --------- | -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
 | show-max | showMax   | A number value to indicate the maximum number of people to show. the default value is 6.                                                                                             |
 | group    | group     | A string value that belongs to a Microsoft Graph defined group for further filtering of the search results.                                                                            |
-| type     | type      | The type of entities to search for. Available options are: `Person`, `Group`, `Any`. Default value is `Person`. This attribute has no effect if `group` property is set.                                                                            |
-| group-type     | groupType      | The group type to search for. Available options are: `Unified`, `Security`, `MailEnabledSecurity`, `Distribution`, `Any`. Default value is `Any`. This attribute has no effect if the `type` property is set to `Person`.                                                                           |
+| type     | type      | The type of entities to search for. Available options are: `person`, `group`, `any`. Default value is `person`. This attribute has no effect if `group` property is set.                                                                            |
+| group-type     | groupType      | The group type to search for. Available options are: `unified`, `security`, `mailenabledsecurity`, `distribution`, `any`. Default value is `any`. This attribute has no effect if the `type` property is set to `person`.                                                                           |
 |  selected-people  | selectedPeople     | An array of selected people. Set this value to select people programmatically.|
 | people   | people    | An array of people found and rendered in the search result |
 
