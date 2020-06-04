@@ -35,7 +35,7 @@ Content-Type: application/json
   "requests": [
     {
       "entityTypes": [
-        "microsoft.graph.driveItem"
+        "driveItem"
       ],
       "query": {
         "query_string": {
