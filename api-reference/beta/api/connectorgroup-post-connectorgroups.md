@@ -2,9 +2,9 @@
 title: "Create connectorGroup"
 description: "Use this API to create a new connectorGroup."
 localization_priority: Normal
-doc_type: apiPageType
-ms.prod: ""
-author: ""
+author: "japere"
+ms.prod: "microsoft-identity-platform"
+doc_type: "apiPageType"
 ---
 
 # Create connectorGroup
@@ -13,7 +13,8 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Use this API to create a new connectorGroup.
+Create a new [connectorGroup](../resources/connectorgroup.md).
+
 ## Permissions
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
 
@@ -26,7 +27,7 @@ One of the following permissions is required to call this API. To learn more, in
 ## HTTP request
 <!-- { "blockType": "ignored" } -->
 ```http
-POST /connectorGroups
+POST /onPremisesPublishingProfiles/applicationProxy/connectorGroups
 
 ```
 ## Request headers
@@ -49,13 +50,12 @@ Here is an example of the request.
   "name": "create_connectorgroup_from_connectorgroups"
 }-->
 ```http
-POST https://graph.microsoft.com/{ver}/connectorGroups
+POST https://graph.microsoft.com/beta/onPremisesPublishingProfiles/applicationProxy/connectorGroups
 Content-type: application/json
 Content-length: 99
 
 {
   "name": "name-value",
-  "connectorGroupType": "connectorGroupType-value",
   "isDefault": false
 }
 ```
@@ -76,7 +76,8 @@ Content-length: 119
   "id": "id-value",
   "name": "name-value",
   "connectorGroupType": "connectorGroupType-value",
-  "isDefault": false
+  "isDefault": false,
+  "region": "region-value"
 }
 ```
 
