@@ -1,7 +1,6 @@
 ---
 author: JeremyKelley
 ms.author: JeremyKelley
-ms.date: 06/05/2020
 title: Get a SharePoint list
 localization_priority: Priority
 ms.prod: "sharepoint"
