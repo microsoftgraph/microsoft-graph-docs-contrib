@@ -23,7 +23,7 @@ Specifies an OAuth 2.0 permission scope or an app role that an application requi
 
 ## JSON representation
 
-Here is a JSON representation of the resource
+The following is a JSON representation of the resource.
 
 <!-- {
   "blockType": "resource",
