@@ -2,18 +2,18 @@
 title: "Add Connector to connectorGroup"
 description: "Use this API to add a connector to a new connectorGroup."
 localization_priority: Normal
-doc_type: apiPageType
-ms.prod: ""
-author: ""
+author: "japere"
+ms.prod: "microsoft-identity-platform"
+doc_type: "apiPageType"
 ---
 
-# Add Connector to connectorGroup
+# Add connector to connectorGroup
 
 Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Use this API to add a connector to a new connectorGroup.
+Add a [connector](../resources/connector.md)  to a [connectorGroup](../resources/connectorgroup.md).
 ## Permissions
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
 
@@ -26,7 +26,7 @@ One of the following permissions is required to call this API. To learn more, in
 ## HTTP request
 <!-- { "blockType": "ignored" } -->
 ```http
-POST /connectors/{id}/memberOf
+POST /onPremisesPublishingProfiles/applicationProxy/connectors/{id}/memberOf/$ref
 
 ```
 ## Request headers
@@ -49,12 +49,13 @@ Here is an example of the request.
   "name": "create_connectorgroup_from_connector"
 }-->
 ```http
-POST https://graph.microsoft.com/{ver}/connectors/{id}/memberOf
+POST https://graph.microsoft.com/beta/onPremisesPublishingProfiles/applicationProxy/connectors/{id}/memberOf/$ref
+
 Content-type: application/json
 Content-length: 99
 
 {
-  "@odata.id": "https://graph.microsoft.com/{ver}/connectorGroups/{id}"
+  "@odata.id": "https://graph.microsoft.com/beta/onPremisesPublishingProfiles/applicationProxy/connectorGroups/{id}"
 }
 ```
 In the request body, supply a JSON representation of [connectorGroup](../resources/connectorgroup.md) object.
@@ -74,7 +75,8 @@ Content-length: 119
   "id": "id-value",
   "name": "name-value",
   "connectorGroupType": "connectorGroupType-value",
-  "isDefault": false
+  "isDefault": false,
+  "region": "region-value"
 }
 ```
 
