@@ -33,7 +33,7 @@ Represents the printer's default settings. Check the printer's [capabilities](..
 |quality|printQuality|The default quality to use when printing the document. Valid values are described in the following table.|
 |duplexMode|printDuplexMode|The default duplex (double-sided) configuration to use when printing a document. Valid values are described in the following table.|
 |dpi|Int32|The default resolution in DPI to use when printing the job.|
-|scaling|printScaling|Specifies how the Printer scales the document data to fit the requested media.|
+|scaling|printScaling|Specifies how the printer scales the document data to fit the requested media. Valid values are described in the following table.|
 
 ### printMultipageLayout values
 
