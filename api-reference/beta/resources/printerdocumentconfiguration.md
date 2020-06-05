@@ -37,18 +37,20 @@ A group of settings that a printer should use to print a document.
 
 ### printQuality values
 
-|Member|Description|
+|Member|Value|Description|
 |:---|:---|
-|low|The printer will print the job using low (commonly known as "draft") quality.|
-|medium|The printer will print the job using medim (commonly known as "normal") quality.|
-|high|The printer will print the job using high (commonly known as "best" or "fine") quality.|
+|low|0|The printer will print the job using low (commonly known as "draft") quality.|
+|medium|1|The printer will print the job using medim (commonly known as "normal") quality.|
+|high|2|The printer will print the job using high (commonly known as "best" or "fine") quality.|
+|unknownFutureValue|3|Evolvable enumeration sentinel value. Do not use.|
 
 ## printerFeedDirection values
 
-|Member|Description|
+|Member|Value|Description|
 |:---|:---|
-|longEdgeFirst|The printer will consume sheets from the active tray in "landscape" orientation, with the long edge of the sheet first.|
-|shortEdgeFirst|The printer will consume sheets from the active tray in "portrait" orientation, with the short edge of the sheet first.|
+|longEdgeFirst|0|The printer will consume sheets from the active tray in "landscape" orientation, with the long edge of the sheet first.|
+|shortEdgeFirst|1|The printer will consume sheets from the active tray in "portrait" orientation, with the short edge of the sheet first.|
+|unknownFutureValue|2|Evolvable enumeration sentinel value. Do not use.|
 
 ## printOrientation values
 
