@@ -43,7 +43,7 @@ This resource supports:
 |[Add member](../api/group-post-members.md) |None| Add a user or group to this group by posting to the **members** navigation property (supported for security groups and mail-enabled security groups only).|
 |[List members](../api/group-list-members.md) |[directoryObject](directoryobject.md) collection| Get the users and groups that are direct members of this group from the **members** navigation property.|
 |[List transitive members](../api/group-list-transitivemembers.md) |[directoryObject](directoryobject.md) collection| Get the users, groups and devices that are members, including nested members of this group.|
-|[List transitive memberOf](../api/group-list-transitivememberof.md) |[directoryObject](directoryobject.md) collection| List the groups that this user is a member of. This operation is transitive and includes the groups that this group is a nested member of. |
+|[List transitive memberOf](../api/group-list-transitivememberof.md) |[directoryObject](directoryobject.md) collection| List the groups that this group is a member of. This operation is transitive and includes the groups that this group is a nested member of. |
 |[Remove member](../api/group-delete-members.md) | None |Remove a member from an Office 365 group, a security group or a mail-enabled security group through the **members** navigation property. You can remove users or other groups. |
 |[checkMemberGroups](../api/group-checkmembergroups.md)|String collection|Check this group for membership in a list of groups. The function is transitive.|
 |[checkMemberObjects](../api/group-checkmemberobjects.md)|String collection|Check for membership in a list of group, directory role, or administrative unit objects. The function is transitive.|
