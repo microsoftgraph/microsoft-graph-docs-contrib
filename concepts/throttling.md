@@ -253,28 +253,28 @@ The following table documents base requests costs, any other request not listed 
 
 | Operation | Request Path | Base Request Cost |
 | --------- | ---------- | ------------------ |
+| GET | `applications` | 2 |
+| GET | `applications/{id}/extensionProperties` | 2 |
+| GET | `contracts` | 3 |
+| POST | `directoryObjects/getByIds` |  3 |
+| GET | `domains/{id}/domainNameReferences` | 4 |
+| POST | `getObjectsById` | 3 |
 | GET | `groups/{id}/members` | 3 |
 | GET | `groups/{id}/transitiveMembers` | 5 |
+| POST | `isMemberOf` | 4 |
+| POST | `me/checkMemberGroups` | 4 |
+| POST | `me/checkMemberObjects` | 4 |
+| POST | `me/getMemberGroups` | 2 |
+| POST | `me/getMemberObjects` | 2 |
+| GET | `me/licenseDetails` | 2 |
 | GET | `me/memberOf` | 2 |
-| GET | `me/transitiveMemberOf` | 2 |
 | GET | `me/ownedObjects` | 2 |
-| GET | `applications` | 2 |
-| GET | `contracts` | 3 |
-| GET | `domains/{id}/domainNameReferences` | 4 |
+| GET | `me/transitiveMemberOf` | 2 |
 | GET | `oauth2PermissionGrants` | 2 |
+| GET | `oauth2PermissionGrants/{id}` | 2 |
 | GET | `servicePrincipals/{id}/appRoleAssignments` | 2 |
 | GET | `subscribedSkus` | 3 |
 | GET | `users` | 2 |
-| GET | `me/licenseDetails` | 2 |
-| POST | `me/checkMemberGroups` | 4 |
-| POST | `me/checkMemberObjects` | 4 |
-| GET | `applications/{id}/extensionProperties` | 2 |
-| POST | `me/getMemberGroups` | 2 |
-| POST | `me/getMemberObjects` | 2 |
-| POST | `directoryObjects/getByIds` |  3 |
-| POST | `getObjectsById` | 3 |
-| POST | `isMemberOf` | 4 |
-| GET | `oauth2PermissionGrants/{id}` | 2 |
 
 Other factors that impact a request cost:
 
