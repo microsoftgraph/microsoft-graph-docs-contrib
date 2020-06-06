@@ -127,11 +127,11 @@ There will be cases where the data context object contains loop and you will nee
 </template>
 ```
 
-## Template Context
+## Template context
 
-In scenarios where you need to convert data in your bindings, bind to events, or just use external data  in your templates bindings, the templates support binding to external data context. There are two ways to add additional template context:
+In scenarios where you need to convert data in your bindings, bind to events, or just use external data in your templates bindings, the templates support binding to external data context. You can add additional template context in two ways:
 
-1. **Directly on the component**
+1. Directly on the component.
 
     Each component defines the `templateContext` property, which you can use to pass additional data to any template in the component. 
 
@@ -147,7 +147,7 @@ In scenarios where you need to convert data in your bindings, bind to events, or
 
     The properties in the `templateContext` object will now be available to be used in the binding expressions in the template.
 
-2. **Globally for all components**
+2. Globally for all components.
 
     The `TemplateHelper` class exposes the `globalContext` object to add data or functions that should be globally available for all components.
 
