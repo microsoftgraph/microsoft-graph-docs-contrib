@@ -41,12 +41,8 @@ You can add any of the above listed attributes to the profile card by configurin
 5. In **Request Body** enter:
 
         {
-                "value: {
-                    "visibilities" : {
-                        "[Attribute name, e.g. Alias]": "Visible"
-                    }
-            }    
-        }  
+        "directoryPropertyName": "[Attribute name, e.g. Alias]"
+        }
 
 6. Click **Run Query**
 
