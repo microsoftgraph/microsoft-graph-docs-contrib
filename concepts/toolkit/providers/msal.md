@@ -33,7 +33,7 @@ Initializing the MSAL provider in HTML is the simplest way to create a new provi
 | login-type  | Enumeration between `redirect` and `popup` - default value is `redirect`. Optional. |
 | scopes  | Comma separated strings for scopes the user must consent to on sign in. Optional.|
 | authority  | Authority string - default is the common authority. For single-tenant apps, use your tenant ID or tenant name. For example, `https://login.microsoftonline.com/[your-tenant-name].onmicrosoft.com` or `https://login.microsoftonline.com/[your-tenant-id]`. Optional.|
-| redirect-uri  | Redirect Uri string - by default the current window uri is used. Optional.|
+| redirect-uri  | Redirect URI string - by default the current window URI is used. Optional.|
 | depends-on | Element selector string of another higher priority provider component. Optional. |
 
 ### Initialize in JavaScript
