@@ -3,7 +3,7 @@ title: "securityResource resource type"
 description: "Represents the resources related to an alert."
 localization_priority: Normal
 author: "preetikr"
-ms.prod: ""
+ms.prod: "security"
 doc_type: resourcePageType
 ---
 
@@ -20,16 +20,12 @@ Represents the resources related to an alert
 |resource|String|Name of the resource that is related to current alert. **Required**.|
 |resourceType|[securityResourceType](#securityresourcetype)|Represents type of security resources related to an alert. Possible values are: `attacked`, `related`.|
 
-### securityResourceType
-
-Represents type of security resources related to an alert.
-
-#### securityResourceType values
+### resourceType property
 
 |Property|Value|Description|
 |-|-|-|
-|`attacked`|`0`|The resource was attacked in the alert.|
-|`related`|`1`|The resource is related to the alert, though not directly attacked|
+|attacked|0|The resource was attacked in the alert.|
+|related|1|The resource is related to the alert, though not directly attacked.|
 
 ## JSON representation
 
