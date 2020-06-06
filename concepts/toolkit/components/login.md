@@ -83,10 +83,10 @@ The `mgt-login` component supports several [templates](../templates.md) that all
 
 | Data type | Data context | Description |
 | --- | --- | --- |
-| `signed-in-button-content` | `personDetails`: person object, `personImage`: person image string | The template used to render the content in the button when the user is signed in. |
-| `signed-out-button-content` | null | The template used to render the content in the button when the user is not signed in. |
-| `flyout-commands` | `handleSignOut`: sign out function | The template used to render the commands in the flyout |
-| `flyout-person-details` | `personDetails`: person object, `personImage`: person image string | The template used to render the person details in the flyout. |
+| signed-in-button-content | personDetails: person object, `personImage`: person image string | The template used to render the content in the button when the user is signed in. |
+| signed-out-button-content | null | The template used to render the content in the button when the user is not signed in. |
+| flyout-commands | handleSignOut: sign out function | The template used to render the commands in the flyout |
+| flyout-person-details | personDetails: person object, personImage: person image string | The template used to render the person details in the flyout. |
 
 ## Microsoft Graph permissions
 
