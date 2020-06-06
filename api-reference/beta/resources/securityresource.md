@@ -11,7 +11,7 @@ doc_type: resourcePageType
 
 Namespace: microsoft.graph
 
-Represents the resources related to an alert
+Represents the resources related to an alert.
 
 ## Properties
 
