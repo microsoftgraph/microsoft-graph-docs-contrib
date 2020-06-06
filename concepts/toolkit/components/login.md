@@ -79,7 +79,7 @@ The following events are fired from the control.
 
 ## Templates
 
-The `mgt-login` component supports several [templates](../templates.md) that allow you to replace certain parts of the component. To specify a template, include a `<template>` element inside of a component and set the `data-type` value to one of the following:
+The `mgt-login` component supports several [templates](../templates.md) that allow you to replace certain parts of the component. To specify a template, include a `<template>` element inside of a component and set the `data-type` value to one of the values listed in the following table. 
 
 | Data type | Data context | Description |
 | --- | --- | --- |
