@@ -22,7 +22,7 @@ Contains stateful information about the network connection related to the alert.
 |applicationName|String|Name of the application managing the network connection (for example, Facebook, SMTP, etc.).|
 |destinationAddress|String|Destination IP address (of the network connection).|
 |destinationDomain|String|Destination domain portion of the destination URL. (for example 'www.contoso.com').|
-|destinationLocation|String|Location (by IP address mapping) associated with the destination of a network connection. (**new**)|
+|destinationLocation|String|Location (by IP address mapping) associated with the destination of a network connection.|
 |destinationPort|String|Destination port (of the network connection).|
 |destinationUrl|String|Network connection URL/URI string - excluding parameters. (for example 'www.contoso.com/products/default.html')|
 |direction|connectionDirection|Network connection direction. Possible values are: `unknown`, `inbound`, `outbound`.|
@@ -35,7 +35,7 @@ Contains stateful information about the network connection related to the alert.
 |protocol|securityNetworkProtocol|Network protocol. Possible values are: `unknown`, `ip`, `icmp`, `igmp`, `ggp`, `ipv4`, `tcp`, `pup`, `udp`, `idp`, `ipv6`, `ipv6RoutingHeader`, `ipv6FragmentHeader`, `ipSecEncapsulatingSecurityPayload`, `ipSecAuthenticationHeader`, `icmpV6`, `ipv6NoNextHeader`, `ipv6DestinationOptions`, `nd`, `raw`, `ipx`, `spx`, `spxII`.|
 |riskScore|String|Provider generated/calculated risk score of the network connection. Recommended value range of 0-1, which equates to a percentage.|
 |sourceAddress|String|Source (i.e. origin) IP address (of the network connection).|
-|sourceLocation|String|Location (by IP address mapping) associated with the source of a network connection. (**new**)|
+|sourceLocation|String|Location (by IP address mapping) associated with the source of a network connection.|
 |sourcePort|String|Source (i.e. origin) IP port (of the network connection).|
 |status|connectionStatus|Network connection status. Possible values are: `unknown`, `attempted`, `succeeded`, `blocked`, `failed`.|
 |urlParameters|String|Parameters (suffix) of the destination URL.|
