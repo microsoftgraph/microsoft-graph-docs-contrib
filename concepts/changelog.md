@@ -13,11 +13,11 @@ For a summary of the value of these API changes, as well as recent tools, compon
 
 ## June 2020
 
-### Microsoft Graph Security API
+### Security
 
 | **Change type** | **Version**   | **Description**                          |
 | :-------------- | :------------ | :--------------------------------------- |
-|Addition | v1.0<br>beta | These following properties are added to enrich Microsoft Graph Security API [alert](https://docs.microsoft.com/graph/api/resources/alert?view=graph-rest-1.0) entity.<br>1. **incidentIds** <br>2. **[securityResources](https://docs.microsoft.com/graph/api/resources/securityResource?view=graph-rest-1.0)** :<ul><li>**resource**</li><li>**resourceType**</li></ul>3. **[networkConnection](https://docs.microsoft.com/graph/api/resources/networkconnection?view=graph-rest-1.0)** :<ul><li>**sourceLocation**</li><li>**destinationLocation**</li></ul>|
+|Addition | beta and v1.0 | Added the following properties to the [alert](/graph/api/resources/alert?view=graph-rest-1.0) entity:  **incidentIds**, [securityResources](/graph/api/resources/securityResource?view=graph-rest-1.0) - **resource**, **resourceType**,[networkConnection](/graph/api/resources/networkconnection?view=graph-rest-1.0) - **sourceLocation**, **destinationLocation**.|
 
 ## May 2020
 
