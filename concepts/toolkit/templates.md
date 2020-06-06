@@ -53,7 +53,7 @@ Many templates allow binding of data that is passed to the template as data cont
 </template>
 ```
 
-This format can also be used inside of attributes:
+This format can also be used inside attributes:
 
 ```html
 <template data-type="event">
@@ -65,7 +65,7 @@ This format can also be used inside of attributes:
 
 ### Change binding syntax
 
-By default, to expand an expression, double curly brackets ( `{{expression}}` ) are used. However, you can change this syntax for environments where the double curly bracket syntax is already used. For example, below is an example of using double square brackets ( `[[expression]]` ):
+By default, to expand an expression, you use double curly brackets ( `{{expression}}` ). However, you can change this syntax for environments where the double curly bracket syntax is already used. For example, the following example uses double square brackets ( `[[expression]]` ).
 
 ```ts
 import { TemplateHelper } from '@microsoft/mgt';
