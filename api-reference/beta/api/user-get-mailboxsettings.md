@@ -25,7 +25,7 @@ receipt of their email)
 - time format
 - time zone
 - [working hours](../resources/workinghours.md)
-- user purpose
+- [user purpose](../resources/userpurpose.md)
 
 Users can set their preferred date and time formats using Outlook on the web. Users can choose one of the supported [short date](https://docs.microsoft.com/dotnet/standard/base-types/standard-date-and-time-format-strings#ShortDate) or [short time](https://docs.microsoft.com/dotnet/standard/base-types/standard-date-and-time-format-strings#ShortTime) formats. This `GET` operation returns the format the user has chosen.
 
@@ -99,7 +99,7 @@ If successful, this method returns a `200 OK` response code and one of the follo
 - string (for **timeFormat**)
 - string (for **timeZone**)
 - [workingHours](../resources/workinghours.md)
-- string (for **userPurpose**)
+- [userPurpose](../resources/userpurpose.md)
 
 ## Examples
 
@@ -313,16 +313,7 @@ The fourth example gets specifically the user purpose settings of the signed-in 
 GET https://graph.microsoft.com/beta/me/mailboxSettings/userPurpose
 ```
 #### Response
-The response includes only the user purpose settings. It can have the following potential values and their associated enumerations:
-| Value	   | #	|Description|
-|:---------------|:--------|:----------|
-|unknown|0|No information found about the mailbox|
-|user|1|A user account with a mailbox in the local forest|
-|linked|2|A mailbox linked to a user account in another forest|
-|shared|3|A mailbox shared by two or more user accounts|
-|room|4|A mailbox representing a conference room|
-|equipment|5|A mailbox representing a piece of equipment|
-|others|6|Mailbox found but user purpose is different from ones specified above|
+The response includes only the user purpose settings.
 
 <!-- {
   "blockType": "response",
