@@ -27,6 +27,8 @@ When updating the preferred date or time format for a user, specify it in respec
 
 When updating the preferred time zone for a user, specify it in the Windows or [Internet Assigned Numbers Authority (IANA) time zone](https://www.iana.org/time-zones) (also known as Olson time zone) format. You can also further customize the time zone as shown in [example 2](#example-2) below.
 
+Note that the **user purpose** setting of a user's [mailboxSettings](../resources/mailboxsettings.md) cannot be updated using this method.
+
 > [!TIP] 
 > You cannot create or delete any mailbox settings.
 
