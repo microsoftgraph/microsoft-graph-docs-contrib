@@ -11,8 +11,6 @@ doc_type: apiPageType
 
 Namespace: microsoft.graph
 
-[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
-
 Create an [onlineMeeting](../resources/onlinemeeting.md) object with a custom specified external ID. If the external ID already exists, this API will return the [onlineMeeting](../resources/onlinemeeting.md) object with that external ID. 
 
 > **Note**: The meeting does not show on the user's calendar.
@@ -23,8 +21,8 @@ One of the following permissions is required to call this API. To learn more, in
 | Permission type                        | Permissions (from least to most privileged) |
 |:---------------------------------------|:--------------------------------------------|
 | Delegated (work or school account)     | OnlineMeetings.ReadWrite                    |
-| Delegated (personal Microsoft account) | Not Supported                               |
-| Application                            | Not Supported                |
+| Delegated (personal Microsoft account) | Not supported.                               |
+| Application                            | Not supported.                |
 
 ## HTTP request
 <!-- { "blockType": "ignored" } -->
@@ -50,7 +48,7 @@ In the request body, provide a JSON object with the following parameters.
 | startDateTime    | DateTime                                 | The meeting start time in UTC. |
 | subject          | String                                   | The subject of the online meeting. |
 
->**Note:** If the `startDateTime` and `endDateTime` are not provided, the `startDateTime` will default to the current dateTime value and `endDateTime` value will equal the startDateTime + 1 hour. 
+>**Note:** If the `startDateTime` and `endDateTime` are not provided, the `startDateTime` will default to the current dateTime value and `endDateTime` value will equal the `startDateTime` + 1 hour. 
 
 >If the `startDateTime` is provided, but `endDateTime` is not, the `endDateTime` value will equal the `startDateTime` + 1 hour. 
 
@@ -65,14 +63,13 @@ The following example shows how to create or get an online meeting with an exter
 
 ### Request
 
-# [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "create-or-get-onlinemeeting"
 }-->
 
 ```http
-POST https://graph.microsoft.com/beta/me/onlineMeetings/createOrGet
+POST https://graph.microsoft.com/v1.0/me/onlineMeetings/createOrGet
 Content-Type: application/json
 
 {
@@ -107,20 +104,6 @@ Content-Type: application/json
   "subject":"Create a meeting with customId provided"
 }
 ```
-# [C#](#tab/csharp)
-[!INCLUDE [sample-code](../includes/snippets/csharp/create-or-get-onlinemeeting-csharp-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [JavaScript](#tab/javascript)
-[!INCLUDE [sample-code](../includes/snippets/javascript/create-or-get-onlinemeeting-javascript-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [Objective-C](#tab/objc)
-[!INCLUDE [sample-code](../includes/snippets/objc/create-or-get-onlinemeeting-objc-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
----
-
 
 ### Response
 
@@ -153,7 +136,7 @@ Content-Type: application/json
           "@odata.type": "#microsoft.graph.identity",
           "id": "d4a060b5-a8fc-450c-837b-750b2c280000",
           "tenantId": "72f988bf-86f1-41af-91ab-2d7cd0110000",
-          "displayName": "Tyler Stein",
+          "displayName": "Heidi Steen",
           "identityProvider": "AAD"
         }
       },
@@ -167,7 +150,7 @@ Content-Type: application/json
           "user": {
             "@odata.type": "#microsoft.graph.identity",
             "id": "1f35f2e6-9cab-44ad-8d5a-b74c14720000",
-            "displayName": "Jasmine Miller",
+            "displayName": "Joe Doe",
             "identityProvider": "MSA"
           }
         },
@@ -183,7 +166,7 @@ Content-Type: application/json
   "audioConferencing": {
     "@odata.type": "#microsoft.graph.audioConferencing",
     "conferenceId": "804980000",
-    "tollNumber": "555-749-0000",
+    "tollNumber": "+1 647-749-0000",
     "dialinUrl": "https://dialin.teams.microsoft.com/8bf6e654-57eb-4b85-aeaf-36c84429b2fe?id=804980000"
   },
   "chatInfo": {
@@ -191,7 +174,7 @@ Content-Type: application/json
     "threadId": "19:meeting_MWE2Y2U2NGYtMjk4Ni00NjYyLWEyMjItYjk3MGU4YzFh0000@thread.v2",
     "messageId": "0"
   },
-  "videoTeleconferenceId": "5556440000",
+  "videoTeleconferenceId": "7166440000",
   "externalId": "7eb8263f-d0e0-4149-bb1c-1f0476083c56",
   "id": "d4a060b5-a8fc-450c-837b-750b2c2869b5_19:meeting_MWE2Y2U2NGYtMjk4Ni00NjYyLWEyMjItYjk3MGU4YzFh0000@thread.v2",
   "@odata.context": "http://localhost/$metadata#onlineMeetings/$entity",
