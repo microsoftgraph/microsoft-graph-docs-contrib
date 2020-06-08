@@ -15,6 +15,16 @@ Namespace: microsoft.graph
 
 In [Azure AD entitlement management](entitlementmanagement-root.md), a a connected organization is a reference to a directory or domain of another organization whose users can request access.
 
+## Methods
+
+| Method       | Return Type | Description |
+|:-------------|:------------|:------------|
+| [List connectedOrganizations](../api/connectedorganization-list.md) | [connectedOrganization](connectedorganization.md) collection | Retrieve a list of connectedorganization objects. |
+| [Create connectedOrganization](../api/connectedorganization-post.md) | [connectedOrganization](connectedorganization.md) | Create a new connectedOrganization object. |
+| [Get connectedOrganization](../api/connectedorganization-get.md) | [connectedOrganization](connectedorganization.md) | Read properties and relationships of a connectedOrganization object. |
+| [Delete connectedOrganization](../api/connectedorganization-delete.md) | | Delete a connectedOrganization. |
+| [Update connectedOrganization](../api/connectedorganization-update.md) | | Update a connectedOrganization. |
+
 ## Properties
 
 | Property     | Type        | Description |
@@ -32,6 +42,8 @@ In [Azure AD entitlement management](entitlementmanagement-root.md), a a connect
 | Relationship | Type        | Description |
 |:-------------|:------------|:------------|
 |identitySources|[identitySource](identitySource.md) collection| The identity sources in this connected organization, one of [azureActiveDirectoryTenant](azureactivedirectorytenant.md), [domainIdentitySource](domainidentitysource.md) or [externalDomainFederation](externaldomainfederation.md). Read-only. Nullable.|
+|internalSponsors| [directoryObject](directoryobject.md) collection| Nullable.|
+|externalSponsors| [directoryObject](directoryobject.md) collection| Nullable.|
 
 ## JSON representation
 
