@@ -9378,6 +9378,13 @@ items:
             href: api/accesspackage-list-accesspackageresourcerolescopes.md
           - name: Create
             href: api/accesspackage-post-accesspackageresourcerolescopes.md
+        - name: Connected organization
+          href: resources/connectedorganization.md
+          items:
+          - name: List
+            href: api/connectedorganization-list.md
+          - name: Get
+            href: api/connectedorganization-get.md
       - name: Feature rollout policy
         href: resources/featurerolloutpolicy.md
         items:
