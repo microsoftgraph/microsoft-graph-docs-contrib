@@ -9385,6 +9385,10 @@ items:
             href: api/connectedorganization-list.md
           - name: Get
             href: api/connectedorganization-get.md
+          - name: Update
+            href: api/connectedorganization-update.md
+          - name: Delete
+            href: api/connectedorganization-delete.md
       - name: Feature rollout policy
         href: resources/featurerolloutpolicy.md
         items:
