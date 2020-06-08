@@ -29,7 +29,7 @@ You can [get](../api/user-get-mailboxsettings.md) or [update](../api/user-update
 |timeFormat|string|The time format for the user's mailbox.|
 |timeZone|string|The default time zone for the user's mailbox.|
 |workingHours|[workingHours](workinghours.md)|The days of the week and hours in a specific time zone that the user works.|
-|userPurpose|[userPurpose](workinghours.md)|TBD|
+|userPurpose|userPurpose|The user's recipient or mailbox type in Exchange Online|
 
 ## JSON representation
 
@@ -53,7 +53,7 @@ Here is a JSON representation of the resource.
   "timeFormat": "string",
   "timeZone": "string",
   "workingHours": {"@odata.type": "microsoft.graph.workingHours"},
-  "userPurpose": "TBD"
+  "userPurpose": {"@odata.type": "microsoft.graph.userPurpose"}
 }
 ```
 
