@@ -291,7 +291,7 @@ Other factors that impact a request cost:
 
 ##### Request headers
 
-- **x-ms-throttle-priority**. If the header doesn't exist or set to any other value, it indicates a normal request. We recommend limiting interactive requests. Set the priority to interactive to only the requests where the user initiated and waiting for a response. The values of this header can be the following:
+- **x-ms-throttle-priority** - If the header doesn't exist or set to any other value, it indicates a normal request. We recommend limiting interactive requests. Set the priority to interactive to only the requests where the user initiated and waiting for a response. The values of this header can be the following:
     1. Low - Indicates the request is low priority. Throttling this request doesn't cause user-visible failures.
     1. Normal - Default if no value is provided. Indicates that the request is default priority.
     1. Interactive - Indicates that the request is interactive or high priority. Throttling this request causes user-visible failures.
