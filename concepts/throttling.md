@@ -242,7 +242,7 @@ The following limits apply to any request on `/subscriptions`.
 
 #### Pattern
 
-Throttling is based on a token bucket algorithm which works by adding individual cost of requests. The sum of requests costs is then compared against pre-determined limits. Only the requests exceeding the limits will be throttled. The following table documents existing limits, exceeding any of the limits will results in `429 Too Many Requests` responses. It is possible to receive `429 Too Many Requests` responses even when the following limits are not reached in situations when the services are under an important load or based on data volume for a specific tenant.
+Throttling is based on a token bucket algorithm which works by adding individual cost of requests. The sum of requests costs is then compared against pre-determined limits. Only the requests exceeding the limits will be throttled. If any of the limits are exceeded, the response will be `429 Too Many Requests`. It is possible to receive `429 Too Many Requests` responses even when the following limits are not reached in situations when the services are under an important load or based on data volume for a specific tenant. The following table documents existing limits: 
 
 | Limit type | Limit value |
 | ---------- | ----------- |
