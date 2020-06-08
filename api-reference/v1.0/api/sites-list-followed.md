@@ -36,7 +36,7 @@ Get a list of the sites followed by a target user, based on its ID.
 ```http
 GET /users/{user-id}/followedSites
 ```
-**Note:** To access another targeted user, you need permission type Application.
+**Note:** To access another targeted user's list of followed sites, you need permission type Application.
 
 ## Optional query parameters
 This method supports the [OData query parameters](/graph/query_parameters) to help customize the response.
