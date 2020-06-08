@@ -895,6 +895,8 @@ items:
           href: api/onlinemeeting-get.md
         - name: Delete
           href: api/onlinemeeting-delete.md
+        - name: Create or get
+          href: api/onlinemeeting-createorget.md
       - name: Call records
         items:
         - name: Overview
@@ -3507,6 +3509,21 @@ items:
         items:
         - name: Get data policy operation
           href: api/datapolicyoperation-get.md
+      - name: Delegated permission grants
+        href: resources/oauth2permissiongrant.md
+        items:
+        - name: List
+          href: api/oauth2permissiongrant-list.md
+        - name: Create
+          href: api/oauth2permissiongrant-post.md
+        - name: Get
+          href: api/oauth2permissiongrant-get.md
+        - name: Update
+          href: api/oauth2permissiongrant-update.md
+        - name: Delete
+          href: api/oauth2permissiongrant-delete.md
+        - name: Get delta
+          href: api/oauth2permissiongrant-delta.md
       - name: Deleted items
         href: resources/directory.md
         items:
@@ -3661,21 +3678,6 @@ items:
         items:
         - name: Create invitation
           href: api/invitation-post.md
-      - name: Delegated permission grants
-        href: resources/oauth2permissiongrant.md
-        items:
-        - name: List
-          href: api/oauth2permissiongrant-list.md
-        - name: Create
-          href: api/oauth2permissiongrant-post.md
-        - name: Get
-          href: api/oauth2permissiongrant-get.md
-        - name: Update
-          href: api/oauth2permissiongrant-update.md
-        - name: Delete
-          href: api/oauth2permissiongrant-delete.md
-        - name: Get delta
-          href: api/oauth2permissiongrant-delta.md
       - name: Organization
         href: resources/organization.md
         items:
