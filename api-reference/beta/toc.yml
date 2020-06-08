@@ -9047,6 +9047,15 @@ items:
           items:
           - name: List provisioning
             href: api/provisioningobjectsummary-list.md
+      - name: Authentication flows policy
+        items:
+        - name: Authentication flows policy
+          href: resources/authenticationflowspolicy.md
+          items:
+          - name: Get
+            href: api/authenticationflowspolicy-get.md
+          - name: Update
+            href: api/authenticationflowspolicy-update.md
       - name: Authentication methods
         items:
         - name: Overview
@@ -9165,6 +9174,21 @@ items:
         items:
         - name: Get data policy operation
           href: api/datapolicyoperation-get.md
+      - name: Delegated permission grants
+        href: resources/oauth2permissiongrant.md
+        items:
+        - name: List delegated permission grants
+          href: api/oauth2permissiongrant-list.md
+        - name: Get delegated permission grants
+          href: api/oauth2permissiongrant-get.md
+        - name: Create delegated permission grant
+          href: api/oauth2permissiongrant-post.md
+        - name: Update delegated permission grant
+          href: api/oauth2permissiongrant-update.md
+        - name: Delete delegated permission grant
+          href: api/oauth2permissiongrant-delete.md
+        - name: Get delta
+          href: api/oauth2permissiongrant-delta.md
       - name: Deleted items
         href: resources/directory.md
         items:
@@ -9440,6 +9464,8 @@ items:
           href: api/identityprovider-update.md
         - name: Delete identity provider
           href: api/identityprovider-delete.md
+      - name: Information protection
+        items:    
         - name: Threat assessment
           items:
           - name: Overview
@@ -9465,21 +9491,6 @@ items:
         items:
         - name: Create invitation
           href: api/invitation-post.md
-      - name: Delegated permission grants
-        href: resources/oauth2permissiongrant.md
-        items:
-        - name: List delegated permission grants
-          href: api/oauth2permissiongrant-list.md
-        - name: Get delegated permission grants
-          href: api/oauth2permissiongrant-get.md
-        - name: Create delegated permission grant
-          href: api/oauth2permissiongrant-post.md
-        - name: Update delegated permission grant
-          href: api/oauth2permissiongrant-update.md
-        - name: Delete delegated permission grant
-          href: api/oauth2permissiongrant-delete.md
-        - name: Get delta
-          href: api/oauth2permissiongrant-delta.md
       - name: On-premises publishing
         href: resources/onpremisespublishingprofile-root.md
         items:
@@ -9531,6 +9542,36 @@ items:
                 href: api/publishedresource-post-agentgroups.md
               - name: Remove from agent group
                 href: api/publishedresource-delete-agentgroups.md
+          - name: connector
+            href: resources/connector.md
+            items:
+              - name: List
+                href: api/connector-list.md
+              - name: Get
+                href: api/connector-get.md
+              - name: List memberOf
+                href: api/connector-list-memberof.md 
+              - name: Add connector to connectorGroup
+                href: api/connector-post-memberof.md
+          - name: connector group
+            href: resources/connectorgroup.md
+            items:
+              - name: List                 
+                href: api/connectorgroup-list.md
+              - name: Get
+                href: api/connectorgroup-get.md 
+              - name: Update
+                href: api/connectorgroup-update.md
+              - name: Delete
+                href: api/connectorgroup-delete.md
+              - name: List applications
+                href: api/connectorgroup-list-applications.md
+              - name: List members
+                href: api/connectorgroup-list-members.md
+              - name: Add connector
+                href: api/connectorgroup-post-members.md
+              - name: Add application
+                href: api/connectorgroup-post-applications.md
       - name: Organization
         href: resources/organization.md
         items:
