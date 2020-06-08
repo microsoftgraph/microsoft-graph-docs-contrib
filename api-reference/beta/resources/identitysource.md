@@ -13,7 +13,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-The sub-types of this type are used in the identity sources of a connected organization.
+The sub-types of this type, [azureActiveDirectoryTenant](azureactivedirectorytenant.md), [domainIdentitySource](domainidentitysource.md) and [externalDomainFederation](externaldomainfederation.md), are used in the identity sources of a [connectedOrganization](connectedOrganization.md).
 
 ## Properties
 
@@ -29,7 +29,7 @@ The following is a JSON representation of the type.
 
   ],
   "@odata.type": "microsoft.graph.identitySource",
-  "baseType": "microsoft.graph.identitySource"
+  "baseType": ""
 }-->
 
 ```json
