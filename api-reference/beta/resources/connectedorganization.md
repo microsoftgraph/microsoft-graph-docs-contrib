@@ -49,7 +49,6 @@ The following is a JSON representation of the resource.
 
 ```json
 {
-  "displayName": "Administrator",
   "id": "cd3709c6-be6a-4725-bd07-50f90ccca93f",
   "displayName": "Wingtip Toys",
   "description": "Wingtip Toys",

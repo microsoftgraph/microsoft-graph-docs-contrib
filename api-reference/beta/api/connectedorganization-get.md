@@ -85,7 +85,6 @@ HTTP/1.1 200 OK
 Content-type: application/json
 
 {
-  "displayName": "Administrator",
   "id": "cd3709c6-be6a-4725-bd07-50f90ccca93f",
   "displayName": "Wingtip Toys",
   "description": "Wingtip Toys",
