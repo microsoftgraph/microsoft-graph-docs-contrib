@@ -18,14 +18,14 @@ Represents the resources related to an alert.
 | Property   | Type|Description|
 |:---------------|:--------|:----------|
 |resource|String|Name of the resource that is related to current alert. **Required**.|
-|resourceType|[securityResourceType](#securityresourcetype)|Represents type of security resources related to an alert. Possible values are: `attacked`, `related`.|
+|resourceType|[securityResourceType](#securityresourcetype-values)|Represents type of security resources related to an alert. Possible values are: `attacked`, `related`.|
 
-### resourceType property
+### securityResourceType values
 
-|Property|Value|Description|
+|Member|Value|Description|
 |-|-|-|
-|`attacked`|`0`|The resource was attacked in the alert.|
-|`related`|`1`|The resource is related to the alert, though not directly attacked.|
+|attacked|1|The resource was attacked in the alert.|
+|related|2|The resource is related to the alert, though not directly attacked.|
 
 ## JSON representation
 
