@@ -242,7 +242,7 @@ The following limits apply to any request on `/subscriptions`.
 
 #### Pattern
 
-Throttling works by adding individual cost of requests. The sum of requests costs is then compaired against pre-determined limits. The following table documents  existing limits, reaching any of the limits will results in `429 Too Many Requests` responses. It is possible to receive `429 Too Many Requests` responses even when the following limits are not reached in situations when the services are under an important load or based on data volume for a specific tenant.
+Throttling is based on a token bucket algorithm which works by adding individual cost of requests. The sum of requests costs is then compared against pre-determined limits. Only the requests exceeding the limits will be throttled. The following table documents existing limits, exceeding any of the limits will results in `429 Too Many Requests` responses. It is possible to receive `429 Too Many Requests` responses even when the following limits are not reached in situations when the services are under an important load or based on data volume for a specific tenant.
 
 | Limit type | Limit value |
 | ---------- | ----------- |
@@ -282,9 +282,9 @@ Other factors that impact a request cost:
 - Using $expand increases cost by 1
 - Using $top with a value of less than 20 decreases cost by 1
 
-> [!NOTE]
+> **Note:** 
 > A request cost can never be lower than 1.
-> [!NOTE]
+> **Note:** 
 > Any request cost that applies to a request path starting with `me/` also applies to equivalent requests starting with `users/{id | userPrincipalName}/`.
 
 #### Additional headers
