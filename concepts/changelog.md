@@ -13,7 +13,16 @@ For a summary of the value of these API changes, as well as recent tools, compon
 
 ## June 2020
 
-### Cloud Communications
+### Security
+
+| **Change type** | **Version**   | **Description**                          |
+| :-------------- | :------------ | :--------------------------------------- |
+|Addition | beta and v1.0 | Added the following properties to the [alert](/graph/api/resources/alert?view=graph-rest-1.0) entity:  **incidentIds**, [securityResources](/graph/api/resources/securityResource?view=graph-rest-1.0) - **resource**, **resourceType**,[networkConnection](/graph/api/resources/networkconnection?view=graph-rest-1.0) - **sourceLocation**, **destinationLocation**.|
+
+## May 2020
+
+### Cloud communications
+
 | **Change type** | **Version**   | **Description**                          |
 | :-------------- | :------------ | :--------------------------------------- |
 | Addition | v1.0 | Added the [onlineMeeting: createOrGet](/graph/api/onlinemeeting-createorget) method.|
@@ -248,7 +257,6 @@ Added new APIs and resources for subscribing to and retrieving call records from
 | Addition        | V1.0          | [Adding file attachments up to 150MB](outlook-large-attachments.md) to a [message](/graph/api/resources/message?view=graph-rest-1.0) instance. |
 | Addition        | V1.0          | The [attachmentItem](/graph/api/resources/attachmentitem?view=graph-rest-1.0) complex type, [createUploadSession](/graph/api/attachment-createuploadsession?view=graph-rest-1.0) action for the [attachment](/graph/api/resources/attachment?view=graph-rest-1.0) entity, and the **attachmentType** enumeration. |
 | Changed         | V1.0          | Extended the existing [uploadSession](/graph/api/resources/uploadsession?view=graph-rest-1.0) entity that has been used by [driveItem](/graph/api/resources/driveitem?view=graph-rest-1.0) to apply to **attachment** as well. |
-
 
 ### Reports | Identity and access reports
 
