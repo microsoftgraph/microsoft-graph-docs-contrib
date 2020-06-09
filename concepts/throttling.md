@@ -92,6 +92,7 @@ The following resources currently provide a `Retry-After` header:
 - [Organization](/graph/api/resources/organization)
 - [Group setting](/graph/api/resources/groupsetting)
 - [Group setting template](/graph/api/resources/groupsettingtemplate)
+- [Subscription](/graph/api/resources/subscription)
 
 For a broader discussion of throttling on the Microsoft Cloud, see [Throttling Pattern](https://docs.microsoft.com/azure/architecture/patterns/throttling).
 
