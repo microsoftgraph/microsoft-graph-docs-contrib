@@ -332,7 +332,7 @@ To get a list of teams, see [list all teams](teams-list-all-teams.md) and
 [list your teams](/graph/api/user-list-joinedteams?view=graph-rest-1.0).
 
 ### POST /teams is only available in beta
-To creat teams in v1.0, see [create team](/graph/api/team-put-teams?view=graph-rest-1.0).
+To create teams in v1.0, see [create team](/graph/api/team-put-teams?view=graph-rest-1.0).
 
 ### Missing teams in list all teams
 
@@ -355,12 +355,12 @@ Reading and updating a user's profile photo is only possible if the user has a m
 Failure to read or update a photo, in this case, would result in the following error:
 
 ```javascript
-	{
-	  "error": {
-	    "code": "ErrorNonExistentMailbox",
-	    "message": "The SMTP address has no mailbox associated with it."
-	  }
-	}
+{
+  "error": {
+    "code": "ErrorNonExistentMailbox",
+    "message": "The SMTP address has no mailbox associated with it."
+  }
+}
 ```
 
 ### Using delta query
