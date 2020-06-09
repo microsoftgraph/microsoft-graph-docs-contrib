@@ -77,7 +77,7 @@ You can add any of the [15 custom attributes](https://go.microsoft.com/fwlink/?l
 
                      "languageTag": "[Language code, e.g. de-de]",
 
-                     "displayName": "[Localized property name, e.g. Cost center"
+                     "displayName": "[Localized property name, e.g. Cost center]"
 
                  }
 
