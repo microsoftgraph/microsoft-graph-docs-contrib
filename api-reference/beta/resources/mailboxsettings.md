@@ -53,7 +53,7 @@ Here is a JSON representation of the resource.
   "timeFormat": "string",
   "timeZone": "string",
   "workingHours": {"@odata.type": "microsoft.graph.workingHours"},
-  "userPurpose": "enum"
+  "userPurpose": "string"
 }
 ```
 
