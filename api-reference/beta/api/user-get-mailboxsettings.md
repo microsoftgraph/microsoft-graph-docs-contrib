@@ -179,8 +179,8 @@ Content-type: application/json
         }
     },
     "userPurpose": {
-        "value": "User"
-    }
+        "value": "user"
+    },
     "dateFormat": "MM/dd/yyyy",
     "timeFormat": "hh:mm tt",
     "delegateMeetingMessageDeliveryOptions": "sendToDelegateOnly"
@@ -326,7 +326,8 @@ HTTP/1.1 200 OK
 Content-type: application/json
 
 {
-    "value": "User"
+    "@odata.context": "https://graph.microsoft.com/beta/$metadata#users('622eaaff-0683-4862-9de4-f2ec83c2bd98')/mailboxSettings/userPurpose",
+    "value": "user"
 }
 ```
 
