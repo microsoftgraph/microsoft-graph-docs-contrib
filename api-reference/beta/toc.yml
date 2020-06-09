@@ -10953,6 +10953,28 @@ items:
             href: api/externalitem-update.md
           - name: Delete external item
             href: api/externalitem-delete.md
+    - name: Compliance
+      displayName: Compliance API, Microsoft Graph Compliance API
+      items:
+      - name: Overview
+        href: resources/compliance-api-overview.md
+      - name: eDiscovery
+        items:
+        - name: Overview
+          href: resources/eDiscovery-api-overview.md
+        - name: eDiscovery Case
+          href: resources/ediscoverycase.md
+          items:
+          - name: List eDiscovery cases
+            href: api/eDiscoverycase-list.md
+          - name: Create eDiscovery case
+            href: api/ediscoverycase-create.md
+          - name: Delete eDiscovery case
+            href: api/ediscoverycase-delete
+          - name: Get eDiscovery case
+            href: api/ediscoverycase-get.md
+          - name: Update eDiscovery case
+            href: api/ediscoverycase-update
     - name: Security
       displayname: Security API, Microsoft Graph Security API
       items:
