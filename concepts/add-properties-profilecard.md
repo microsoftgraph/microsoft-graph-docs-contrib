@@ -75,7 +75,7 @@ You can add any of the [15 custom attributes](https://go.microsoft.com/fwlink/?l
 
                  {
 
-                     "languageTag": "[Language code, e.g. de-de]",
+                     "languageTag": "[Language code, e.g. de-at]",
 
                      "displayName": "[Localized property name, e.g. Cost center]"
 
@@ -103,10 +103,7 @@ If a language is not supported, the property name will be shown with the default
 
 ### Related articles
 
-[Find your Office 365 tenant ID](https://docs.microsoft.com/onedrive/find-your-office-365-tenant-id)
+[Find your Microsoft 365 tenant ID](https://docs.microsoft.com/onedrive/find-your-office-365-tenant-id)
 #### Footnote
 
 <b id="f1">1.</b> The Microsoft Graph is in Beta. [↩](#a1)
-
-
-
