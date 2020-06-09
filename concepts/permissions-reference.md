@@ -1632,7 +1632,7 @@ For more complex scenarios involving multiple permissions, see [Permission scena
 ## Teams app permissions (deprecated)
 
 >[!NOTE]
->These permissions are deprecated and should not be used.
+>These permissions are deprecated. Use the equivalent TeamsAppInstallation.\*.All permissions instead.
 
 #### Delegated permissions
 
