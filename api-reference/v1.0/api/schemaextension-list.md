@@ -3,7 +3,7 @@ title: "List schemaExtensions"
 description: "Get a list of schemaExtension objects created by any apps you own in the current tenant (that can be "
 localization_priority: Normal
 author: "dkershaw10"
-ms.prod: ""
+ms.prod: "microsoft-identity-platform"
 doc_type: apiPageType
 ---
 
@@ -20,9 +20,9 @@ One of the following permissions is required to call this API. To learn more, in
 
 |Permission type      | Permissions (from least to most privileged)              |
 |:--------------------|:---------------------------------------------------------|
-|Delegated (work or school account) | Directory.AccessAsUser.All    |
+|Delegated (work or school account) | Application.Read.All, Application.ReadWrite.All, Directory.AccessAsUser.All    |
 |Delegated (personal Microsoft account) | Not supported.    |
-|Application | Not supported. |
+|Application | Application.Read.All |
 
 ## HTTP request
 <!-- { "blockType": "ignored" } -->

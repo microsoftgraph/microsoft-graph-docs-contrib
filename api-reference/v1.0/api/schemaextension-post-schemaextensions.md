@@ -3,7 +3,7 @@ title: "Create schemaExtension"
 description: "Create a new schemaExtension definition to extend a supporting resource type."
 localization_priority: Priority
 author: "dkershaw10"
-ms.prod: ""
+ms.prod: "microsoft-identity-platform"
 doc_type: apiPageType
 ---
 
@@ -26,9 +26,12 @@ One of the following permissions is required to call this API. To learn more, in
 
 |Permission type      | Permissions (from least to most privileged)              |
 |:--------------------|:---------------------------------------------------------|
-|Delegated (work or school account) | Directory.AccessAsUser.All    |
+|Delegated (work or school account) | Application.ReadWrite.All, Directory.AccessAsUser.All    |
 |Delegated (personal Microsoft account) | Not supported.    |
 |Application | Not supported. |
+
+> [!NOTE]
+> Additionally for the delegated flow, the signed-in user must be the owner of calling application OR the owner of the (application with the) `appId` used to set the **owner** property.
 
 ## HTTP request
 <!-- { "blockType": "ignored" } -->
@@ -51,7 +54,7 @@ The following table shows the properties that are required when you create a sch
 |:---------------|:--------|:----------|
 |description|String|Description for the schema extension.|
 |id|String|The unique identifier for the schema extension definition. <br>You can assign a value in one of two ways: <ul><li>Concatenate the name of one of your verified domains with a name for the schema extension to form a unique string in this format, \{_&#65279;domainName_\}\_\{_&#65279;schemaName_\}. As an example, `contoso_mySchema`. NOTE: Only verified domains under the following top-level domains are supported: `.com`,`.net`, `.gov`, `.edu` or `.org`. </li><li>Provide a schema name, and let Microsoft Graph use that schema name to complete the **id** assignment in this format: ext\{_&#65279;8-random-alphanumeric-chars_\}\_\{_&#65279;schema-name_\}. An example would be `extkvbmkofy_mySchema`.</li></ul>This property cannot be changed after creation. |
-|owner|String|(Optional) The `appId` of the application that is the owner of the schema extension. This property can be supplied on creation, to set the owner.  If not supplied, then the calling application's `appId` will be set as the owner. So, for example, if creating a new schema extension definition using Graph Explorer, you **must** supply the owner property. Once set, this property is read-only and cannot be changed.|
+|owner|String|(Optional) The `appId` of the application that is the owner of the schema extension. By default, the calling application's `appId` will be set as the owner. However, the property may be supplied on creation, to set the owner appId to something different from the calling app. In all cases, in the delegated flow, the signed-in user **must** be the owner of the application being set as the schema extension's owner. So, for example, if creating a new schema extension definition using Graph Explorer, you **must** supply the owner property, for an appId you own. Once set, this property is read-only and cannot be changed.|
 |properties|[extensionSchemaProperty](../resources/extensionschemaproperty.md) collection|The collection of property names and types that make up the schema extension definition.|
 |targetTypes|String collection|Set of Microsoft Graph resource types (that support schema extensions) that this schema extension definition can be applied to.|
 
