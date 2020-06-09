@@ -138,6 +138,7 @@ Added new APIs and resources for subscribing to and retrieving call records from
 | Addition | v1.0 | Added new entity type: [appRoleAssignment](/graph/api/resources/approleassignment?view=graph-rest-1.0).|
 | Addition | beta, v1.0 | Added app-only and delegated permissions [AppRoleAssignment.ReadWrite.All](permissions-reference.md#application-resource-permissions). |
 | Addition | beta | Added delegated permission [EntitlementManagement.Read.All](permissions-reference.md#entitlement-management-permissions). |
+| Addition | beta | Added the [authorizationPolicy](/graph/api/resources/authorizationpolicy?view=graph-rest-beta) resource type which controls authorization settings in Azure AD. |
 
 ### Teamwork
 
@@ -159,14 +160,6 @@ Added new APIs and resources for subscribing to and retrieving call records from
 | **Change type** | **Version** | **Description**                          |
 | :-------------- | :---------- | :--------------------------------------- |
 | Addition | v1.0 | Added the **externalUserState** and **externalUserStateChangeDateTime** properties to the [user](/graph/api/resources/user?view=graph-rest-1.0) resource. |
-
-## May 2020
-
-### Identity and access
-
-| **Change type** | **Version**   | **Description**                          |
-| :-------------- | :------------ | :--------------------------------------- |
-| Addition | beta | Added the [authorizationPolicy](/graph/api/resources/authorizationpolicy?view=graph-rest-beta) resource type which controls authorization settings in Azure AD. |
 
 ## April 2020
 
