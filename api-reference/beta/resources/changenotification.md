@@ -32,7 +32,7 @@ None.
 | id | string | Unique ID for the notification. Optional. |
 | resource | string | The URI of the resource that emitted the change notification relative to `https://graph.microsoft.com`. Required. |
 | resourceData | [microsoft.graph.resourceData](resourcedata.md) | The content of this property depends on the type of resource being subscribed to. Required. |
-| sequenceNumber | int | Can be used to make sure received notifications are in order. Optional. |
+| sequenceNumber | int | A number in sequence for a notification, to help the client app identify if notifications are in sequence or if a notification is missing. Optional. |
 | subscriptionExpirationDateTime | [dateTime](https://tools.ietf.org/html/rfc3339) | The expiration time for the subscription. Required. |
 | subscriptionId | string | The unique identifier of the subscription that generated the notification. |
 | tenantId | guid | The unique identified of the tenant from which the change notification originated. |

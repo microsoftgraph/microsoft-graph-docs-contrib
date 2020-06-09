@@ -28,11 +28,15 @@ See highlights of what's new in Microsoft Graph, and how you can [share your ide
 ### Calendar | Place
 GA of the [places API](/graph/api/resources/place) in v1.0 - use this API in production apps to get, update, or delete a [room](/graph/api/resources/room) or [room list](/graph/api/resources/roomlist) in a tenant. [Find out more](outlook-calendar-concept-overview.md#build-apps-with-location-awareness-and-provide-intelligent-context) about the places API.
 
+### Change notifications
+- Subscribe to change notifications in Microsoft Cloud for US Government.
+
 ### Cloud communications | Call records
 - GA of the [call records API](/graph/api/resources/callrecords-api-overview?view=graph-rest-1.0) - use the [callRecord](/graph/api/resources/callrecord?view=graph-rest-1.0) resource to get the metadata of calls and online meetings on Microsoft Teams and Skype.
 - Subscribe to [change notifications](/graph/webhooks) for changes to all **callRecord** resources in an organization.
 - [List sessions](/graph/api/callrecords-session-list?view=graph-rest-1.0) in a **callRecord**, and optionally [expand each session to list segments](/graph/api/callrecords-session-list?view=graph-rest-1.0#example-2-get-session-list-with-segments) in the call record.
 - Support for 60-GHz (`frequency60GHz`) and `unknownFutureValue` WiFi band values of a media endpoint in a segment.
+- Support for voice mail as a possible type of service-side end point in a communication [segment](graph/api/resources/callrecords-segment).
 
 ### Devices and apps | Corporate management
 Intune [May](changelog.md#may-2020) updates in v1.0.
@@ -43,6 +47,9 @@ Use the many new features of [Graph Explorer](https://developer.microsoft.com/en
 - Signed in with a tenant, view and copy an access token to your favorite REST client application.
 
 See [New Graph Explorer is now GA](https://developer.microsoft.com/graph/blogs/new-graph-explorer-is-now-ga/) for more details.
+
+### Groups
+- Subscribe to change notifications for [group](graph/api/resources/group) resources in Microsoft Cloud China operated by 21Vianet.
 
 ### Identity and access
 - GA of the service principals API in v1.0 - use the [servicePrincipal](/graph/api/resources/serviceprincipal?view=graph-rest-1.0) resource in production apps to programmatically manage instances of applications and control what an application can do within your tenant. You can control who can use an application, what resources the application has access to, such as adding password credentials, rolling expiring certificates, and managing delegated permission grants and application role assignments.
@@ -62,6 +69,10 @@ See new SDK guidance on the following:
 - [Send](/graph/api/channel-post-messages?view=graph-rest-1.0) and [reply](/graph/api/channel-post-messagereply?view=graph-rest-1.0) to messages in a [channel](/graph/api/resources/channel?view=graph-rest-1.0).
 - Get the OneDrive for Business location of the files for a [channel](/graph/api/resources/channel?view=graph-rest-1.0), by using the **fileFolder** navigation property.
 
+### Users
+- Subscribe to change notifications for [user](graph/api/resources/user) resources in Microsoft Cloud China operated by 21Vianet.
+
+
 ### Teamwork | Shifts
 GA of the [shifts API](/graph/api/resources/shift?view=graph-rest-1.0) in v1.0 - use this API in production apps to create, update, and manage schedules of firstline workers, to let them stay in touch and collaborate effectively.
 
@@ -70,6 +81,7 @@ GA of the [shifts API](/graph/api/resources/shift?view=graph-rest-1.0) in v1.0 -
 
 ### Change notifications
 - Use formally schematized types [changeNotification](/graph/api/resources/changenotification?view=graph-rest-beta) and [changeNotificationCollection](/graph/api/resources/changenotificationcollection?view=graph-rest-beta) to process resource change notifications. 
+- Track if notifications are in sequence or if a notification is missing by using the **sequenceNumber** property on the **changeNotification** resource.
 
 ### Devices and apps | Cloud printing
 - The [printer](/graph/api/resources/printer?view=graph-rest-beta) and [printerShare](/graph/api/resources/printershare?view=graph-rest-beta) resources are now in parity and have the same properties as each other.
