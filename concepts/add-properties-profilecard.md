@@ -61,9 +61,7 @@ You can add any of the [15 custom attributes](https://go.microsoft.com/fwlink/?l
     <div style="display: inline">https://microsoft.com/beta/organization/[TenantID]/settings</div>
 5. In **Request Body** enter the following:
 
-        {
-           "value": [
-             {
+              {
                "directoryPropertyName": "customAttribute[X]"
                "annotations": [
                 {
@@ -76,9 +74,7 @@ You can add any of the [15 custom attributes](https://go.microsoft.com/fwlink/?l
                       ]
                     }
                   ]
-               }
-            ] 
-        }      
+               }     
 
 6. Click **Run Query**
 
@@ -91,7 +87,6 @@ If a language is not supported, the property name will be shown with the default
 
 > [!NOTE]
 > Custom properties are not searchable and can't be used to search for people across Microsoft apps and services.
-
 
 ### Related articles
 
