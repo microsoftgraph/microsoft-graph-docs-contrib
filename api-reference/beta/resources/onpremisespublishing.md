@@ -17,7 +17,7 @@ An on-premises application published via [Azure AD Application Proxy](https://ak
 
 An **onPremisesPublishing** object represents the set of properties for configuring Application Proxy for an on-premises [application](application.md). 
 
-After [creating an application](../api/application-post-applications.md), the Application Proxy settings for the application can be configured by [updating the application's](../api/application-update.md) onPremisesPublishing properties.
+After [instantiating a custom application](../api/applicationtemplate-instantiate.md) or [creating an application](../api/application-post-applications.md), the Application Proxy settings for the application can be configured by [updating the application's](../api/application-update.md) onPremisesPublishing properties.
 
 ## Properties
 
