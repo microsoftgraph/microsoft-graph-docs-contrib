@@ -15,12 +15,14 @@ See highlights of what's new in Microsoft Graph, and how you can [share your ide
 
 ## June 2020: New and generally available
 
-
+### Cloud communications | Online meeting
+- Use the `Accept-Language` HTTP header when [creating an online meeting](/graph/api/application-post-onlinemeetings?view=graph-rest-1.0) to provide locale-based join information.
+- Use [createOrGet](/graph/api/onlinemeeting-createorget?view=graph-rest-1.0) to return an online meeting that has a specified **externalId** value, or create one if none already exists, to streamline embedding the resultant meeting in a third-party calendar.
 
 
 ## June 2020: New in preview only
-
-
+### Cloud communications | Presence
+[Get the presence status](/graph/api/presence-get?view=graph-rest-beta) of all the users in an organization, or a specific user in the organization.
 
 
 ## May 2020: New and generally available
