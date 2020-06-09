@@ -304,7 +304,7 @@ Content-type: application/json
 
 ### Example 4
 #### Request
-The fourth example gets specifically the user purpose settings of the signed-in user's mailbox.
+The fourth example gets specifically the [user purpose](../resources/userpurpose.md) settings of the signed-in user's mailbox.
 <!-- {
   "blockType": "request",
   "name": "get_mailboxsettings_4"
@@ -313,7 +313,7 @@ The fourth example gets specifically the user purpose settings of the signed-in 
 GET https://graph.microsoft.com/beta/me/mailboxSettings/userPurpose
 ```
 #### Response
-The response includes only the user purpose settings.
+The response includes only the [user purpose](../resources/userpurpose.md) settings.
 
 <!-- {
   "blockType": "response",
