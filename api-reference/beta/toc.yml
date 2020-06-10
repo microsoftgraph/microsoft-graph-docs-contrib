@@ -11341,9 +11341,10 @@ items:
           href: api/chatmessage-list-chatmessagehostedcontents.md
         - name: Get hosted content
           href: api/chatmessagehostedcontent-get.md
-      - name: App Catalog
-        href: resources/teamsapp.md
+      - name: App catalog
         items:
+        - name: App in catalog
+          href: resources/teamsapp.md
         - name: Publish apps to catalog
           href: api/teamsapp-publish.md
         - name: List apps in catalog
