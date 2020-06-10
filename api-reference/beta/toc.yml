@@ -9542,7 +9542,7 @@ items:
                 href: api/publishedresource-post-agentgroups.md
               - name: Remove from agent group
                 href: api/publishedresource-delete-agentgroups.md
-          - name: connector
+          - name: Connector
             href: resources/connector.md
             items:
               - name: List
@@ -9553,13 +9553,15 @@ items:
                 href: api/connector-list-memberof.md 
               - name: Add connector to connectorGroup
                 href: api/connector-post-memberof.md
-          - name: connector group
+          - name: Connector group
             href: resources/connectorgroup.md
             items:
               - name: List                 
                 href: api/connectorgroup-list.md
               - name: Get
                 href: api/connectorgroup-get.md 
+              - name: Create
+                href: api/connectorgroup-create.md
               - name: Update
                 href: api/connectorgroup-update.md
               - name: Delete
