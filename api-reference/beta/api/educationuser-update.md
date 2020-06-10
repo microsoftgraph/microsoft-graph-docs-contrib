@@ -53,8 +53,7 @@ In the request body, supply the values for relevant fields that should be update
 | surname          | String             | Surname of user                                                                                                                                 |
 | mail             | String             | email address                                                                                                                                   |
 | mobilePhone      | String             | Mobile number of user                                                                                                                           |
-| externalSource   | string             | Possible values are: `sis`, `manual`, `enum_sentinel`.                                                                                          |
-| externalSource   | string             | Where this user was created from. Possible values are: `sis`, `manual`, `enum_sentinel`.                                                        |
+| externalSource   | string             | Where this user was created from. Possible values are: `sis`, `manual`, or `lms`.                                                               |
 | mailingAddress   | [physicalAddress]  | Mail address of user. Note: `type` and `postOfficeBox` are not supported for `educationUser` resources.                                         |
 | residenceAddress | [physicalAddress]  | Address where user lives. Note: `type` and `postOfficeBox` are not supported for `educationUser` resources.                                     |
 | primaryRole      | string             | Default Role for a user. The user's role might be different in an individual class. Possible values are: `student`, `teacher`, `enum_sentinel`. |

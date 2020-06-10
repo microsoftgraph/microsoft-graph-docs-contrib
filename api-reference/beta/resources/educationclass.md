@@ -48,8 +48,8 @@ Represents a class within a school. The **educationClass** resource corresponds 
 | displayName    | String                                | Name of the class.                                                                      |
 | externalId     | String                                | ID of the class from the syncing system.                                                |
 | externalName   | String                                | Name of the class in the syncing system.                                                |
-| externalSource | string                                | How this class was created. Possible values are: `sis`, `manual`, `unknownFutureValue`. |
-| grade          | string                                | Grade level of the class.                                                               |
+| externalSource | String                                | How this class was created. Possible values are: `sis`, `manual`, `lms`. |
+| grade          | String                                | Grade level of the class.                                                               |
 | mailNickname   | String                                | Mail name for sending email to all members, if this is enabled.                         |
 | term           | [educationTerm]                       | Term for the class.                                                                     |
 
@@ -100,7 +100,7 @@ The following is a JSON representation of the resource.
   "keywords": "",
   "section": "documentation",
   "tocPath": "",
-  "suppressions": [ 
+  "suppressions": [
     "Error: Resource educationClass has documented navigation properties, but we thought it was a complex type!",
     "Resource educationClass has documented navigation properties, but we thought it was a complex type!"
   ]

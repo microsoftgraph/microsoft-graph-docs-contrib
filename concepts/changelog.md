@@ -19,7 +19,7 @@ For a summary of the value of these API changes, as well as recent tools, compon
 | :-------------- | :---------- | :------------------------------------------------------------------------------------------------------------------------------ |
 | Change          | Beta        | The [educationTeacher](/api/resources/educationteacher) `externalId` property is now returned when using delegated permissions. |
 | Change          | Beta        | The [educationStudent](/api/resources/educationstudent) `externalId` property is now returned when using delegated permissions. |
-| Change          | Beta        | Changed `birthDate` property type from Date to String in [educationStudent](/api/resources/educationstudent) resource.          |
+| Change          | Beta        | Added `lms` to the list of possible values for `educationExternalSource`.                                                       |
 
 ### Cloud communications
 | **Change type** | **Version**   | **Description**                          |

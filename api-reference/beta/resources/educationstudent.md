@@ -22,7 +22,7 @@ Additional information added to an [educationUser](educationuser.md) that is pre
 
 | Property       | Type            | Description                                     |
 | :------------- | :-------------- | :---------------------------------------------- |
-| birthDate      | String          | Birth date of the student.                      |
+| birthDate      | Date            | Birth date of the student.                      |
 | externalId     | String          | ID of the student in the source system.         |
 | gender         | educationGender | Possible values are: `female`, `male`, `other`. |
 | grade          | String          | Current grade level of the student.             |
@@ -43,7 +43,7 @@ The following is a JSON representation of the resource.
 
 ```json
 {
-  "birthDate": "String",
+  "birthDate": "String (timestamp)",
   "externalId": "String",
   "gender": "educationGender",
   "grade": "String",
