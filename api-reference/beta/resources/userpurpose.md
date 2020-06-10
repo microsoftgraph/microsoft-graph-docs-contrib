@@ -13,13 +13,13 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Represents the user's recipient or mailbox type in Exchange Online.
+The purpose of the user's mailbox. Used to differentiate user mailboxes from shared, equipment mailboxes in Exchange Online.
 
 
 ## Properties
 |Property|Type|Description|
 |:---------------|:--------|:----------|
-|value|mailboxRecipientType|Possible values are: `unknown`, `user`, `linked`, `shared`, `room`, `equipment`, and `others`. Refer below for further description.|
+|value|mailboxRecipientType|Represents the user's recipient or mailbox type in Exchange Online. Possible values are: `unknown`, `user`, `linked`, `shared`, `room`, `equipment`, and `others`. Refer below for further description.|
 
 ### Description
 |Possible Values|Description|
