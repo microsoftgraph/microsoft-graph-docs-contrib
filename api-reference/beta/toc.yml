@@ -9317,6 +9317,8 @@ items:
             href: api/accesspackage-post.md
           - name: Get
             href: api/accesspackage-get.md
+          - name: Update
+            href: api/accesspackage-update.md
           - name: Delete
             href: api/accesspackage-delete.md
         - name: Access package assignment
@@ -9360,6 +9362,8 @@ items:
             href: api/accesspackagecatalog-post.md
           - name: Get
             href: api/accesspackagecatalog-get.md
+          - name: Update
+            href: api/accesspackagecatalog-update.md
           - name: Delete
             href: api/accesspackagecatalog-delete.md
           - name: List resources
