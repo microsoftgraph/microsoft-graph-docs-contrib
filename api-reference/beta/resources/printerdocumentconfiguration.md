@@ -18,7 +18,7 @@ A group of settings that a printer should use to print a document.
 ## Properties
 | Property     | Type        | Description |
 |:-------------|:------------|:------------|
-|pageRanges|[integerrange](integerrange.md) collection|The page ranges to print. Read-only.|
+|pageRanges|[integerRange](integerrange.md) collection|The page ranges to print. Read-only.|
 |quality|printQuality|The print quality to use when printing the job. Valid values are described in the table below. Read-only.|
 |dpi|Int32|The resolution to use when printing the job, expressed in dots per inch (DPI). Read-only.|
 |feedDirection|printerFeedDirection|The direction to use when feeding media into the printer. Valid values are described in the following table. Read-only.|
@@ -29,7 +29,7 @@ A group of settings that a printer should use to print a document.
 |inputBin|String|The input bin (tray) to use when printing. See the printer's [capabilities](../api/printer-getcapabilities.md) for a list of supported input bins.|
 |outputBin|String|The output bin to place completed prints into. See the printer's [capabilities](../api/printer-getcapabilities.md) for a list of supported output bins.|
 |mediaSize|String|The media sizeto use when printing. Supports standard size names for ISO and ANSI media sizes, along with any custom sizes supported by the associated printer.|
-|margin|[printmargin](printmargin.md)|The margin settings to use when printing.|
+|margin|[printMargin](printmargin.md)|The margin settings to use when printing.|
 |mediaType|String|The default media (such as paper) type to print the document on. Valid values are described in the following table.|
 |finishings|printFinishing collection|Finishing processes to use when printing.|
 |pagesPerSheet|Int32|The number of document pages to print on each sheet.
@@ -142,7 +142,7 @@ The following is a JSON representation of the resource.
 
 ```json
 {
-  "pageRanges": [{"@odata.type": "microsoft.graph.printPageRange"}],
+  "pageRanges": [{"@odata.type": "microsoft.graph.integerRange"}],
   "quality": {"@odata.type": "microsoft.graph.printQuality"},
   "dpi": 12345,
   "feedDirection": {"@odata.type": "microsoft.graph.printerFeedDirection"},
@@ -153,7 +153,7 @@ The following is a JSON representation of the resource.
   "inputBin": "",
   "outputBin": "",
   "mediaSize": "",
-  "margin": {"@odata.type": "microsoft.graph.printmargin"},
+  "margin": {"@odata.type": "microsoft.graph.printMargin"},
   "mediaType": "",
   "finishings": [{"@odata.type": "microsoft.graph.printFinishing"}],
   "pagesPerSheet": 12345,
