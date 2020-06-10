@@ -1,18 +1,18 @@
 ---
-title: "Add an application to a connectorGroup"
-description: "Use this API to assign an app to a connector group"
+title: "Assign a connectorGroup to an application"
+description: "Use this API to assign a connectorGroup to an application"
 localization_priority: Normal
 author: "japere"
 ms.prod: "microsoft-identity-platform"
 doc_type: "apiPageType"
 ---
-# Add an application to a connectorGroup
+# Assign a connectorGroup to an application
 
 Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Add an [application](../resources/application.md) to a [connectorGroup](../resources/connectorgroup.md).
+Assign a [connectorGroup](../resources/connectorgroup.md) to an [application](../resources/application.md).
 
 ## Permissions
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
@@ -26,7 +26,7 @@ One of the following permissions is required to call this API. To learn more, in
 ## HTTP request
 <!-- { "blockType": "ignored" } -->
 ```http
-POST /onPremisesPublishingProfiles/applicationProxy/connectorGroups/{id}/applications
+POST /onPremisesPublishingProfiles/applicationProxy/applications/{id}/connectorGroup/$ref
 
 ```
 ## Request headers
@@ -35,7 +35,7 @@ POST /onPremisesPublishingProfiles/applicationProxy/connectorGroups/{id}/applica
 | Authorization  | Bearer. Required|
 
 ## Request body
-In the request body, supply a JSON representation of [application](../resources/application.md) object.
+In the request body, supply a JSON representation of [connectorGroup](../resources/connectorgroup.md) object.
 
 ## Response
 
@@ -49,12 +49,13 @@ Here is an example of the request.
   "name": "create_application_from_connectorgroup"
 }-->
 ```http
-POST https://graph.microsoft.com/beta/onPremisesPublishingProfiles/applicationProxy/connectorGroups/{id}/applications
+POST https://graph.microsoft.com/beta/applications/{id}/connectorGroup/$ref
+
 Content-type: application/json
-Content-length: 329
+Content-length: 30
 
 {
-  "@odata.id": "https://graph.microsoft.com/beta/applications/{id}"
+  "@odata.id": "https://graph.microsoft.com/onPremisesPublishingProfiles/applicationproxy/connectorGroups/{id}"
 }
 ```
 In the request body, supply a JSON representation of [application](../resources/application.md) object.
@@ -66,21 +67,7 @@ Here is an example of the response. Note: The response object shown here may be 
   "@odata.type": "microsoft.graph.application"
 } -->
 ```http
-HTTP/1.1 201 Created
-Content-type: application/json
-Content-length: 355
-
-{
-  "appId": "appId-value",
-  "onPremisesPublishing": {
-    "externalUrl": "externalUrl-value",
-    "internalUrl": "internalUrl-value",
-    "externalAuthenticationType": "externalAuthenticationType-value",
-    "customDomainCertificate": "customDomainCertificate-value",
-    "isTranslateHostHeaderEnabled": true,
-    "isOnPremPublishingEnabled": true
-  }
-}
+HTTP/1.1 204 No content
 ```
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
@@ -88,7 +75,7 @@ Content-length: 355
 <!--
 {
   "type": "#page.annotation",
-  "description": "Create application",
+  "description": "Assign a connectorGroup to an application",
   "keywords": "",
   "section": "documentation",
   "tocPath": "",
