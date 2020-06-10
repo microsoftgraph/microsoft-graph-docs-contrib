@@ -1,17 +1,17 @@
 ---
-title: "Use the Microsoft Graph Security API"
+title: "Use the Microsoft Graph Compliance API"
 description: " > **Important:** APIs under the /beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported."
 localization_priority: Priority
-author: "preetikr"
-ms.prod: "security"
+author: ""
+ms.prod: "compliance"
 doc_type: resourcePageType
 ---
 
-# Use the Microsoft Graph Security API
+# Use the Microsoft Graph Compliance API
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-The Microsoft Graph Compliance API provides a unified interface and schema to integrate with compliance solutions from Microsoft and ecosystem partners. This empowers customers to streamline security operations and better comply with legal or regulatory standards.  For more information about microsoft compliance see [Microsoft 365 compliance documentation](https://docs.microsoft.com/microsoft-365/compliance). Use the Microsoft Graph Compliance API to build applications that:
+The Microsoft Graph Compliance API provides a unified interface and schema to integrate with compliance solutions from Microsoft and ecosystem partners. This empowers customers to streamline compliance operations and better comply with legal or regulatory standards.  For more information about microsoft compliance see [Microsoft 365 compliance documentation](https://docs.microsoft.com/microsoft-365/compliance). Use the Microsoft Graph Compliance API to build applications that:
 
 - ???
 - Automate common tasks in eDiscovery
@@ -20,17 +20,26 @@ The Microsoft Graph Compliance API includes the following key entities.
 
 ## eDiscovery
 
+eDiscovery in Microsoft 365 provides an end-to-end workflow to preserve, collect, review, analyze, and export data that's responsive to your organization's internal and external investigations. Learn more about [Microsoft 365 Advanced eDiscovery](https://docs.microsoft.com/microsoft-365/compliance/overview-ediscovery-20).
+
+Learn more about [Microsoft 365 eDiscovery Graph APIs](ediscovery-api-overview.md)
+
+<!--
 ## Labels
 
-Labels should be moved from security to here.  They are currently under a node called Information protection.
+??? Labels should be moved from security to here.  They are currently under a node called Information protection.
+-->
 
 ## What's new
 
 Find out about the [latest new features and updates](/graph/whats-new-overview) for these API sets.
 
+<!--
+
 ## Next steps
 
-The Microsoft Graph Security API can open up new ways for you to engage with different security solutions from Microsoft and partners. Follow these steps to get started:
+The Microsoft Compliance Security API can open up new ways for you to engage with different security solutions from Microsoft and partners. Follow these steps to get started:
+
 
 - Drill down into [alerts](alert.md), [tiIndicator](tiindicator.md) (preview), [securityAction](securityaction.md) (preview), [secureScore](securescores.md), and [secureScoreControlProfiles](securescorecontrolprofiles.md).
 - Try the API in the [Graph Explorer](https://developer.microsoft.com/graph/graph-explorer). Under **Sample Queries**, choose **show more samples** and set the Security category to **on**.
@@ -40,7 +49,9 @@ Need more ideas? See [how some of our partners are using Microsoft Graph](https:
 
 ## See also
 
-[Code and contribute](https://github.com/microsoftgraph/security-api-solutions/blob/master/CONTRIBUTING.md) to these Microsoft Graph Security API samples:
+[Code and contribute](https://github.com/microsoftgraph/security-api-solutions/blob/master/CONTRIBUTING.md) to these 
+
+Microsoft Graph Security API samples:
 
 - [ASP.NET (C#) sample](https://github.com/microsoftgraph/aspnet-security-api-sample)
 - [Python sample](https://github.com/microsoftgraph/python-security-rest-sample)
@@ -58,3 +69,4 @@ Engage with the community:
 
 - [Join the tech community](https://aka.ms/graphsecuritycommunity)
 - [Discuss on StackOverflow](https://stackoverflow.com/questions/tagged/microsoft-graph-security)
+-->
