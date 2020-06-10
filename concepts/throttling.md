@@ -302,8 +302,8 @@ Other factors that impact a request cost:
 
 ##### Regular responses requests
 
-- **x-aad-resource-unit** - Indicates the resource unit used for this request.
-- **x-aad-app-warning-limit-exceeded** - Returned only when the application consumed more than 80% of its limit. The value indicates how much the application exceeds the 80% limit. This can be used by the callers to set up an alert and take action.
+- **x-ms-resource-unit** - Indicates the resource unit used for this request.
+- **x-ms-throttle-limit-usage** - Returned only when the application consumed more than 80% of its limit. The value ranges from 80 to 180 and is a percentage of the use of the limit. This can be used by the callers to set up an alert and take action.
 
 ##### Throttled responses requests
 
