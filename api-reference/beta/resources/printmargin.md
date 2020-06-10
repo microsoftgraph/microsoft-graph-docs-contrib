@@ -32,7 +32,7 @@ The following is a JSON representation of the resource.
   "optionalProperties": [
 
   ],
-  "@odata.type": "microsoft.graph.printPageRange"
+  "@odata.type": "microsoft.graph.printMargin"
 }-->
 
 ```json
