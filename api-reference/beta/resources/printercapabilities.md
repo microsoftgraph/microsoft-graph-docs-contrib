@@ -66,8 +66,8 @@ Represents the capabilities reported by a printer.
 
 |Member|Value|Description|
 |:---|:---|:---|
-|twoSidedLongEdge|0|The printer will print double-sided, and will flip documents along the long edge.|
-|twoSidedShortEdge|1|The printer will print double-sided, and will flip documents along the short edge.|
+|flipOnLongEdge|0|The printer will print double-sided, and will flip documents along the long edge.|
+|flipOnShortEdge|1|The printer will print double-sided, and will flip documents along the short edge.|
 |oneSided|2|The printer will print single-sided.|
 
 ### printFinishing values
@@ -108,12 +108,12 @@ Represents the capabilities reported by a printer.
 |Member|Value|Description|
 |:---|:---|:---|
 |clockwiseFromTopLeft|0|Arrange the pages in a clockwise grid starting in the top left.|
-|counterClockwiseFromTopLeft|1|Arrange the pages in a counterclockwise grid starting in the top left.|
-|counterClockwiseFromTopRight|2|Arrange the pages in a counterclockwise grid starting in the top right.|
+|counterclockwiseFromTopLeft|1|Arrange the pages in a counterclockwise grid starting in the top left.|
+|counterclockwiseFromTopRight|2|Arrange the pages in a counterclockwise grid starting in the top right.|
 |clockwiseFromTopRight|3|Arrange the pages in a clockwise grid starting in the top right.|
-|counterClockwiseFromBottomLeft|4|Arrange the pages in a counterclockwise grid starting in the bottom left.|
+|counterclockwiseFromBottomLeft|4|Arrange the pages in a counterclockwise grid starting in the bottom left.|
 |clockwiseFromBottomLeft|5|Arrange the pages in a clockwise grid starting in the bottom left.|
-|counterClockwiseFromBottomRight|6|Arrange the pages in a counterclockwise grid starting in the bottom right.|
+|counterclockwiseFromBottomRight|6|Arrange the pages in a counterclockwise grid starting in the bottom right.|
 |clockwiseFromBottomRight|7|Arrange the pages in a clockwise grid starting in the bottom right.|
 
 ### printColorMode values

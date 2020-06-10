@@ -52,8 +52,8 @@ Represents the printer's default settings. Check the printer's [capabilities](..
 
 |Member|Value|Description|
 |:---|:---|:---|
-|twoSidedLongEdge|0|The printer will print double-sided, and will flip documents along the long edge.|
-|twoSidedShortEdge|1|The printer will print double-sided, and will flip documents along the short edge.|
+|flipOnLongEdge|0|The printer will print double-sided, and will flip documents along the long edge.|
+|flipOnShortEdge|1|The printer will print double-sided, and will flip documents along the short edge.|
 |oneSided|2|The printer will print single-sided.|
 
 ### printFinishing values
