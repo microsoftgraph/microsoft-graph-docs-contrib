@@ -66,16 +66,7 @@ Here is an example of the response. Note: The response object shown here may be 
   "@odata.type": "microsoft.graph.connector"
 } -->
 ```http
-HTTP/1.1 201 Created
-Content-type: application/json
-Content-length: 124
-
-{
-  "id": "id-value",
-  "machineName": "machineName-value",
-  "externalIp": "externalIp-value",
-  "status": "status-value"
-}
+HTTP/1.1 204 No Content
 ```
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
@@ -83,7 +74,7 @@ Content-length: 124
 <!--
 {
   "type": "#page.annotation",
-  "description": "Create connector",
+  "description": "Add connector to connectorGroup",
   "keywords": "",
   "section": "documentation",
   "tocPath": "",
