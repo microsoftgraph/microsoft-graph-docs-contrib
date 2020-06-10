@@ -885,16 +885,18 @@ items:
       - name: Subscription
         href: resources/subscription.md
         items:
-        - name: List subscription
+        - name: List
           href: api/subscription-list.md
-        - name: Get subscription
-          href: api/subscription-get.md
-        - name: Create subscription
+        - name: Create
           href: api/subscription-post-subscriptions.md
-        - name: Update subscription
+        - name: Get
+          href: api/subscription-get.md
+        - name: Update
           href: api/subscription-update.md
-        - name: Delete subscription
+        - name: Delete
           href: api/subscription-delete.md
+      - name: Change notification collection
+        href: resources/changenotificationcollection.md
     - name: Cloud communications
       displayName: Cloud communications
       items:
