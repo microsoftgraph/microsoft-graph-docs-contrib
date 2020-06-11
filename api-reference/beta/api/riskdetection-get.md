@@ -30,6 +30,7 @@ One of the following permissions is required to call this API. To learn more, in
 <!-- { "blockType": "ignored" } -->
 ```http
 GET /riskDetections/{id}
+GET /identityProtection/riskDetections/{id}
 ```
 
 ## Request headers

@@ -29,6 +29,7 @@ One of the following permissions is required to call this API. To learn more, in
 <!-- { "blockType": "ignored" } -->
 ```http
 GET /riskyUsers
+GET /identityProtection/riskyUsers
 ```
 ## Optional query parameters
 This method supports `$filter` to customize the query response. See the example later in this topic. 
