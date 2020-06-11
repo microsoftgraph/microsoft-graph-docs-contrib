@@ -17,8 +17,8 @@ PROVIDE DESCRIPTION HERE
 
 | Method       | Return Type | Description |
 |:-------------|:------------|:------------|
-| [Get](../api/ediscovery-reviewset-query-get.md) | [reviewSetQuery](ediscovery-reviewset-query.md) | Read properties and relationships of reviewSetQuery object. |
 | [List](../api/ediscovery-reviewset-query-list.md) | [reviewSetQuery](ediscovery-reviewset-query.md) collection | List the review set queries in a review set. |
+| [Get](../api/ediscovery-reviewset-query-get.md) | [reviewSetQuery](ediscovery-reviewset-query.md) | Read properties and relationships of reviewSetQuery object. |
 | [Create](../api/ediscovery-reviewset-query-create.md) | [reviewSetQuery](ediscovery-reviewset-query.md) | Create a new review set query. |
 | [Update](../api/ediscovery-reviewset-query-update.md) | [reviewSetQuery](ediscovery-reviewset-query.md) | Update a review set query. |
 | [Delete](../api/ediscovery-reviewset-query-delete.md) | None | Delete review set query. |

@@ -17,9 +17,9 @@ eDiscovery review sets are static set of electronically stored information colle
 
 | Method       | Return Type | Description |
 |:-------------|:------------|:------------|
+| [List](../api/ediscovery-reviewset-list.md) | [reviewSet](reviewset.md) collection | Get a collection of review sets. |
 | [Get](../api/ediscovery-reviewset-get.md) | [reviewSet](reviewset.md) | Read properties and relationships of reviewSet object. |
 | [Create](../api/ediscovery-reviewset-create.md) | [reviewSet](reviewset.md) | Create a new review set. |
-| [List](../api/ediscovery-reviewset-list.md) | [reviewSet](reviewset.md) collection | Get a collection of review sets. |
 
 
 ## Properties
