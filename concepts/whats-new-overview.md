@@ -26,14 +26,7 @@ See highlights of what's new in Microsoft Graph, and how you can [share your ide
   - Specify the source and destination locations of a [network connection](/graph/api/resources/networkconnection?view=graph-rest-1.0) related to the alert.
 
 ### Teamwork
-- Use the following delegated permissions:
-  - [AppCatalog.Read.All](/graph/permissions-reference#appcatalog-resource-permissions) to list [apps](/graph/api/resources/teamsapp?view=graph-rest-1.0) from the Microsoft Teams app catalog.
-  - [ChatMessage.Send](/graph/permissions-reference#chatmessage-permissions) to send 1:1 and group chat messages in Teams, on behalf of the signed-in user.
-- Use the following delegated and application permissions that have been promoted from private preview to generally available:
-  - [Teams.Create](/graph/permissions-reference#teams-permissions)
-  - [TeamsAppInstallation.ReadForUser](/graph/permissions-reference#Teams-app-installation-permissions)
-  - [TeamsAppInstallation.ReadWriteForUser](/graph/permissions-reference#Teams-app-installation-permissions)
-  - [TeamsAppInstallation.ReadWriteSelfForUser](/graph/permissions-reference#Teams-app-installation-permissions)
+Use the delegated permission [AppCatalog.Read.All](/graph/permissions-reference#appcatalog-resource-permissions) to list [apps](/graph/api/resources/teamsapp?view=graph-rest-1.0) from the Microsoft Teams app catalog.
 
 
 ## June 2020: New in preview only
