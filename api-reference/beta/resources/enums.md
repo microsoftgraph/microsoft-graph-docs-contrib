@@ -1187,15 +1187,3 @@ Possible values for user account types (group membership), per Windows definitio
 | investigationsThreatIntelligence
 | generic
 | unknownFutureValue
-
-### mailboxRecipientType values
-
-| Member    | Value | Description                                                            |
-|:----------|:------|:-----------------------------------------------------------------------|
-| unknown   | 0     | No information found about the mailbox.                                |
-| user      | 1     | A user account with a mailbox in the local forest.                     |
-| linked    | 2     | A mailbox linked to a user account in another forest.                  |
-| shared    | 3     | A mailbox shared by two or more user accounts.                         |
-| room      | 4     | A mailbox representing a conference room.                              |
-| equipment | 5     | A mailbox representing a piece of equipment.                           |
-| others    | 6     | Mailbox found but user purpose is different from ones specified above. |
