@@ -22,4 +22,3 @@ doc_type: "resourcePageType"
 |closing|3|
 |closed|4|
 |closedWithError|5|
-

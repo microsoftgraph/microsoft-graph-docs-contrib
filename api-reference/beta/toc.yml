@@ -10963,18 +10963,42 @@ items:
         - name: Overview
           href: resources/eDiscovery-api-overview.md
         - name: eDiscovery Case
-          href: resources/ediscoverycase.md
+          href: resources/ediscovery-case.md
           items:
           - name: List eDiscovery cases
-            href: api/eDiscoverycase-list.md
+            href: api/eDiscovery-case-list.md
           - name: Create eDiscovery case
-            href: api/ediscoverycase-create.md
+            href: api/ediscovery-case-create.md
           - name: Delete eDiscovery case
-            href: api/ediscoverycase-delete
+            href: api/ediscovery-case-delete
           - name: Get eDiscovery case
-            href: api/ediscoverycase-get.md
+            href: api/ediscovery-case-get.md
           - name: Update eDiscovery case
-            href: api/ediscoverycase-update
+            href: api/ediscovery-case-update
+        - name: eDiscovery review set
+          href: resources/ediscovery-reviewset.md
+          items:
+          - name: List eDiscovery case review sets
+            href: ediscovery-reviewset-list.md
+          - name: Create eDiscovery review set
+            href: ediscovery-reviewset-create.md
+          - name: Get eDiscovery case review set
+            href: ediscovery-reviewset-get.md
+        - name: eDiscovery review set query
+          href: resources/ediscovery-reviewset-query.md
+          items:
+          - name: List eDiscovery review set queries
+            href: ediscovery-reviewset-query-list.md
+          - name: Get eDiscovery review set query
+            href: ediscovery-reviewset-query-get.md
+          - name: Create eDiscovery review set query
+            href: ediscovery-reviewset-query-create.md
+          - name: Update eDiscovery review set query
+            href: ediscovery-reviewset-query-update.md
+          - name: Delete eDiscovery review set query
+            href: ediscovery-reviewset-query-delete.md
+        - name: eDiscovery Case
+          href: resources/ediscovery-casestatus-enum.md
     - name: Security
       displayname: Security API, Microsoft Graph Security API
       items:
