@@ -32,19 +32,14 @@ You can make the following attributes from AD or AAD visible on users' profile c
 
 You can add any of the above listed attributes to the profile card by configuring your tenant settings in Microsoft Graph.<sup id="a1">[1](#f1) </sup>Here's how:
 
-1. Go to [https://developer.microsoft.com/en-us/graph/graph-explorer](https://developer.microsoft.com/en-us/graph/graph-explorer)
-2. Sign in with your Admin username and password
-3. Make sure the Preview toggle is set to **Off**
-4. In the Query URL, select **PATCH** and enter:
-    <div style="display: inline">https://microsoft.com/beta/organization/[TenantID]/settings</div>
-
-5. In **Request Body** enter:
-
+```http
+        PATCH https://microsoft.com/beta/organization/[TenantID]/settings
+        Content-Type: application/json
+        
         {
         "directoryPropertyName": "[Attribute name, e.g. Alias]"
         }
-
-6. Click **Run Query**
+```
 
 > [!NOTE]
 > When you make additional attributes visible, you must use the English property names. You don't have to add localized values. The additional properties will automatically be shown in the language settings that the user has specified for Office 365.
@@ -54,12 +49,9 @@ You can add any of the above listed attributes to the profile card by configurin
 
 ## Adding custom attributes 
 You can add any of the [15 custom attributes](https://go.microsoft.com/fwlink/?linkid=2131208) from AD or AAD to users' profile cards by configuring your tenant settings in Microsoft Graph.<sup id="a1">[1](#f1)</sup> Here's how:
-1. Go to [https://developer.microsoft.com/en-us/graph/graph-explorer](https://developer.microsoft.com/en-us/graph/graph-explorer)
-2. Sign in with your Admin username and password
-3. Make sure the Preview toggle is set to **Off**
-4. In the Query URL, select **PATCH** and enter:
-    <div style="display: inline">https://microsoft.com/beta/organization/[TenantID]/settings</div>
-5. In **Request Body** enter the following:
+```http
+        PATCH https://microsoft.com/beta/organization/[TenantID]/settings
+        Content-Type: application/json
 
         {
          "directoryPropertyName": "customAttribute[X]",
@@ -75,8 +67,7 @@ You can add any of the [15 custom attributes](https://go.microsoft.com/fwlink/?l
               }
             ]
           }
-
-6. Click **Run Query**
+```
 
 > [!NOTE]
 > Enter the language code in the form *ll-cc*, where *ll* is the language code, and cc the country code. For example, for German – Austria, enter the country code de-at.
