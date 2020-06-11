@@ -178,7 +178,7 @@ Limits are expressed as requests per second (rps).
 | PATCH team, channel, tab, installedApps, appCatalogs |  30 rps                         | 300 rps  |
 | DELETE channel, tab, installedApps, appCatalogs      |  15 rps                         | 150 rps  |
 | GET /teams/```{team-id}```, joinedTeams              |  30 rps                         | 300 rps  |
-| POST /teams/```{team-id}```, PUT /groups/```{team-id}```/team, clone | 6 rps | 150 rps  | 
+| POST /teams/```{team-id}```, PUT /groups/```{team-id}```/team, clone | 6 rps | 150 rps  |
 | GET channel message  | 5 rps | 100 rps |
 | GET 1:1/group chat message  | 3 rps | 30 rps |
 | POST channel message | 2 rps | 20 rps |
@@ -243,7 +243,7 @@ The following limits apply to any request on `/subscriptions`.
 
 #### Pattern
 
-Throttling is based on a token bucket algorithm which works by adding individual cost of requests. The sum of requests costs is then compared against pre-determined limits. Only the requests exceeding the limits will be throttled. If any of the limits are exceeded, the response will be `429 Too Many Requests`. It is possible to receive `429 Too Many Requests` responses even when the following limits are not reached in situations when the services are under an important load or based on data volume for a specific tenant. The following table documents existing limits: 
+Throttling is based on a token bucket algorithm which works by adding individual cost of requests. The sum of requests costs is then compared against pre-determined limits. Only the requests exceeding the limits will be throttled. If any of the limits are exceeded, the response will be `429 Too Many Requests`. It is possible to receive `429 Too Many Requests` responses even when the following limits are not reached in situations when the services are under an important load or based on data volume for a specific tenant. The following table documents existing limits:
 
 | Limit type | Limit value |
 | ---------- | ----------- |
@@ -283,22 +283,19 @@ Other factors that impact a request cost:
 - Using $expand increases cost by 1
 - Using $top with a value of less than 20 decreases cost by 1
 
-> **Note:** 
-> A request cost can never be lower than 1.
-> **Note:** 
-> Any request cost that applies to a request path starting with `me/` also applies to equivalent requests starting with `users/{id | userPrincipalName}/`.
+> **Note:** A request cost can never be lower than 1.
+> **Note:** Any request cost that applies to a request path starting with `me/` also applies to equivalent requests starting with `users/{id | userPrincipalName}/`.
 
 #### Additional headers
 
 ##### Request headers
 
 - **x-ms-throttle-priority** - If the header doesn't exist or set to any other value, it indicates a normal request. We recommend limiting interactive requests. Set the priority to interactive to only the requests where the user initiated and waiting for a response. The values of this header can be the following:
-    - Low - Indicates the request is low priority. Throttling this request doesn't cause user-visible failures.
-    - Normal - Default if no value is provided. Indicates that the request is default priority.
-    - Interactive - Indicates that the request is interactive or high priority. Throttling this request causes user-visible failures.
+  - Low - Indicates the request is low priority. Throttling this request doesn't cause user-visible failures.
+  - Normal - Default if no value is provided. Indicates that the request is default priority.
+  - Interactive - Indicates that the request is interactive or high priority. Throttling this request causes user-visible failures.
 
-> **Note:** 
-> Low requests will be throttled when 100% of the limit is reached, Normal at 110%, and Interactive at 170%. Applications using too many Interactive requests will get throttled more aggressively.
+> **Note:** Low requests will be throttled when 100% of the limit is reached, Normal at 110%, and Interactive at 170%. Applications using too many Interactive requests will get throttled more aggressively.
 
 ##### Regular responses requests
 
@@ -308,14 +305,14 @@ Other factors that impact a request cost:
 ##### Throttled responses requests
 
 - **x-ms-throttle-scope** - Indicates the scope of throttling and can have the following value:
-    - Tenant_Application_All - All requests for a particular tenant for the current application.
-    - Tenant_Application_Write - Requests that involve create, update, or delete operations for a particular tenant for the current application.
-    - Partition_Application_All - All requests for all the partition that the current tenant is in for the current application.
-    - Partition_Application_Write - Requests that involve create, update, or delete operations for the partition that the current tenant is in for the current application.
-    - Tenant_All - All requests for the current tenant, regardless of the application.
-    - Tenant_Write - Requests that involve create, update, or delete operations for the current tenant, regardless of the application.
-    - Application_All - All requests for the current application.
+  - Tenant_Application_All - All requests for a particular tenant for the current application.
+  - Tenant_Application_Write - Requests that involve create, update, or delete operations for a particular tenant for the current application.
+  - Partition_Application_All - All requests for all the partition that the current tenant is in for the current application.
+  - Partition_Application_Write - Requests that involve create, update, or delete operations for the partition that the current tenant is in for the current application.
+  - Tenant_All - All requests for the current tenant, regardless of the application.
+  - Tenant_Write - Requests that involve create, update, or delete operations for the current tenant, regardless of the application.
+  - Application_All - All requests for the current application.
 - **x-ms-throttle-reason** - Indicates the reason for throttling and can have the following values:
-    - CPULimitExceeded - Throttling is because the limit for cpu allocation is exceeded.
-    - WriteLimitExceeded - Throttling is because the write limit is exceeded.
-    - RULimitExceeded - Throttling is because the limit for the allocated resource unit is exceeded.
+  - CPULimitExceeded - Throttling is because the limit for cpu allocation is exceeded.
+  - WriteLimitExceeded - Throttling is because the write limit is exceeded.
+  - RULimitExceeded - Throttling is because the limit for the allocated resource unit is exceeded.
