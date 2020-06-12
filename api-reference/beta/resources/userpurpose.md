@@ -41,7 +41,7 @@ Here is a JSON representation of the resource.
   "optionalProperties": [
 
   ],
-  "@odata.type": "microsoft.graph.userPurpose"
+  "@odata.type": "microsoft.graph.mailboxRecipientType"
 }-->
 
 ```json
