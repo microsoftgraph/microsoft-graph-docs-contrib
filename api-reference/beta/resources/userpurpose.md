@@ -46,7 +46,7 @@ Here is a JSON representation of the resource.
 
 ```json
 {
-    "value": {"@odata.type": "microsoft.graph.mailboxRecipientType"}
+    "value": "string"
 }
 
 ```
