@@ -11,8 +11,6 @@ doc_type: apiPageType
 
 Namespace: microsoft.graph
 
-[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
-
 Create a new [namedLocation](../resources/namedlocation.md) object.
 
 ## Permissions
@@ -56,14 +54,13 @@ If successful, this method returns a `201 Created`response code and a new [ipNam
 
 The following is an example of the request.
 
-# [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "create_namedlocation_from_conditionalaccessroot"
 }-->
 
 ```http
-POST https://graph.microsoft.com/beta/identity/conditionalAccess/namedLocations
+POST https://graph.microsoft.com/v1.0/identity/conditionalAccess/namedLocations
 Content-type: application/json
 
 {
@@ -82,20 +79,6 @@ Content-type: application/json
     ]
 }
 ```
-# [JavaScript](#tab/javascript)
-[!INCLUDE [sample-code](../includes/snippets/javascript/create-namedlocation-from-conditionalaccessroot-javascript-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [Objective-C](#tab/objc)
-[!INCLUDE [sample-code](../includes/snippets/objc/create-namedlocation-from-conditionalaccessroot-objc-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [C#](#tab/csharp)
-[!INCLUDE [sample-code](../includes/snippets/csharp/create-namedlocation-from-conditionalaccessroot-csharp-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
----
-
 
 #### Response
 
@@ -114,7 +97,7 @@ HTTP/1.1 201 Created
 Content-type: application/json
 
 {
-    "@odata.context": "https://graph.microsoft.com/beta/$metadata#namedLocations/$entity",
+    "@odata.context": "https://graph.microsoft.com/v1.0/$metadata#namedLocations/$entity",
     "@odata.type": "#microsoft.graph.ipNamedLocation",
     "id": "0854951d-5fc0-4eb1-b392-9b2c9d7949c2",
     "displayName": "Untrusted IP named location",
@@ -144,7 +127,7 @@ The following is an example of the request.
 }-->
 
 ```http
-POST https://graph.microsoft.com/beta/identity/conditionalAccess/namedLocations
+POST https://graph.microsoft.com/v1.0/identity/conditionalAccess/namedLocations
 Content-type: application/json
 
 {
@@ -175,7 +158,7 @@ HTTP/1.1 201 Created
 Content-type: application/json
 
 {
-    "@odata.context": "https://graph.microsoft.com/beta/$metadata#namedLocations/$entity",
+    "@odata.context": "https://graph.microsoft.com/v1.0/$metadata#namedLocations/$entity",
     "@odata.type": "#microsoft.graph.countryNamedLocation",
     "id": "1c4427fd-0885-4a3d-8b23-09a899ffa959",
     "displayName": "Named location with unknown countries and regions",
