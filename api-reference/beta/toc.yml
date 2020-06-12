@@ -10979,24 +10979,24 @@ items:
           href: resources/ediscovery-reviewset.md
           items:
           - name: List eDiscovery case review sets
-            href: ediscovery-reviewset-list.md
+            href: api/ediscovery-reviewset-list.md
           - name: Get eDiscovery case review set
-            href: ediscovery-reviewset-get.md
+            href: api/ediscovery-reviewset-get.md
           - name: Create eDiscovery review set
-            href: ediscovery-reviewset-create.md
+            href: api/ediscovery-reviewset-create.md
         - name: eDiscovery review set query
           href: resources/ediscovery-reviewset-query.md
           items:
           - name: List eDiscovery review set queries
-            href: ediscovery-reviewset-query-list.md
+            href: api/ediscovery-reviewset-query-list.md
           - name: Get eDiscovery review set query
-            href: ediscovery-reviewset-query-get.md
+            href: api/ediscovery-reviewset-query-get.md
           - name: Create eDiscovery review set query
-            href: ediscovery-reviewset-query-create.md
+            href: api/ediscovery-reviewset-query-create.md
           - name: Update eDiscovery review set query
-            href: ediscovery-reviewset-query-update.md
+            href: api/ediscovery-reviewset-query-update.md
           - name: Delete eDiscovery review set query
-            href: ediscovery-reviewset-query-delete.md
+            href: api/ediscovery-reviewset-query-delete.md
         - name: eDiscovery Case Status
           href: resources/ediscovery-casestatus-enum.md
     - name: Security
