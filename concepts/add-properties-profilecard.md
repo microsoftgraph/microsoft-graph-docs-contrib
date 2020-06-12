@@ -17,7 +17,7 @@ You can show additional properties from your Active Directory on profile cards b
 
 - Adding custom attributes
 
-The additional properties will display in the "Contact" section of the profile card in Microsoft 365.
+The additional properties will display in the **Contact** section of the profile card in Microsoft 365.
 
 ## Make additional attributes visible
 
