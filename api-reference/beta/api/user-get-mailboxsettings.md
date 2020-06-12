@@ -319,6 +319,7 @@ The response includes only the [user purpose](../resources/userpurpose.md) setti
   "blockType": "response",
   "name": "get_mailboxsettings_4",
   "truncated": true,
+  "@odata.type": "microsoft.graph.userPurpose"
 } -->
 
 ```http
