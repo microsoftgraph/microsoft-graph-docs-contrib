@@ -19,6 +19,7 @@ The settings control the behavior of [Azure AD entitlement management](entitleme
 
 | Method       | Return Type | Description |
 |:-------------|:------------|:------------|
+| [Get](../api/entitlementmanagementsettings-get.md) | [entitlementManagementSettings](entitlementmanagementsettings.md) | Read properties of an **entitlementManagementSettings** object. |
 
 ## Properties
 
@@ -42,7 +43,7 @@ The following is a JSON representation of the resource.
   ],
   "@odata.type": "microsoft.graph.entitlementManagementSettings",
   "baseType": "",
-  "keyProperty": "id"
+  "keyProperty": ""
 }-->
 
 ```json
