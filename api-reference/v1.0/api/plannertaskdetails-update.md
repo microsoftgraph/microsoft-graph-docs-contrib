@@ -82,7 +82,7 @@ If-Match: W/"JzEtVGFzayAgQEBAQEBAQEBAQEBAQEBAWCc="
     "95e27074-6c4a-447a-aa24-9d718a0b86fa":{
       "@odata.type": "microsoft.graph.plannerChecklistItem",
       "title": "Update task details",
-      "ischecked": true
+      "isChecked": true
     },
     "d280ed1a-9f6b-4f9c-a962-fb4d00dc50ff":{
       "@odata.type": "microsoft.graph.plannerChecklistItem",
@@ -94,6 +94,10 @@ If-Match: W/"JzEtVGFzayAgQEBAQEBAQEBAQEBAQEBAWCc="
 ```
 # [JavaScript](#tab/javascript)
 [!INCLUDE [sample-code](../includes/snippets/javascript/update-plannertaskdetails-javascript-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [C#](#tab/csharp)
+[!INCLUDE [sample-code](../includes/snippets/csharp/update-plannertaskdetails-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

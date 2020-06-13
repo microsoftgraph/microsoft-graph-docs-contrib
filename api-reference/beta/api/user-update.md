@@ -1,9 +1,9 @@
 ---
 title: "Update user"
 description: "Update the properties of a user object."
-author: "dkershaw10"
+author: "krbain"
 localization_priority: Normal
-ms.prod: "microsoft-identity-platform"
+ms.prod: "users"
 doc_type: apiPageType
 ---
 
@@ -20,9 +20,9 @@ One of the following permissions is required to call this API. To learn more, in
 
 |Permission type      | Permissions (from least to most privileged)              |
 |:--------------------|:---------------------------------------------------------|
-|Delegated (work or school account) | User.ReadWrite, User.ReadWrite.All, Directory.ReadWrite.All    |
+|Delegated (work or school account) | User.ReadWrite, User.ReadWrite.All, User.ManageIdentities.All, Directory.ReadWrite.All    |
 |Delegated (personal Microsoft account) | User.ReadWrite    |
-|Application | User.ReadWrite.All, Directory.ReadWrite.All |
+|Application | User.ReadWrite.All, User.ManageIdentities.All, Directory.ReadWrite.All |
 
 >[!NOTE]
 > - When updating the **passwordProfile** property, the following permission is required: Directory.AccessAsUser.All.
@@ -86,6 +86,9 @@ In the request body, supply the values for relevant fields that should be update
 
 Because the **user** resource supports [extensions](/graph/extensibility-overview), you can use the `PATCH` operation to 
 add, update, or delete your own app-specific data in custom properties of an extension in an existing **user** instance.
+
+> [!NOTE] 
+> The follow properties cannot be updated using an application-only context: **aboutMe**, **birthday**, **hireDate**, **interests**, **mySite**, **pastProjects**, **preferredName**, **responsibilities**, **schools**, and **skills**.
 
 ## Response
 
