@@ -9579,6 +9579,8 @@ items:
           href: api/organization-get.md
         - name: Update org details
           href: api/organization-update.md
+        - name: Get org settings
+          href: api/organizationSettings-get.md  
       - name: Organizational contacts
         href: resources/orgcontact.md
         items:
