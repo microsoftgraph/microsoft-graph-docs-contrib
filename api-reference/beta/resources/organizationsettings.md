@@ -11,7 +11,7 @@ doc_type: "resourcePageType"
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-The organizationSettings resource contains settings which are applicable to the [organization](organization.md) or which should be applied to [user](user.md) objects within the organization.
+The organizationSettings resource contains settings which are applicable to the [organization](organization.md) or which should be applied to [user](user.md) objects within a given organization.
 
 ## Methods
 
