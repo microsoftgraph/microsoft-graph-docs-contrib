@@ -1187,15 +1187,3 @@ Possible values for user account types (group membership), per Windows definitio
 | investigationsThreatIntelligence
 | generic
 | unknownFutureValue
-
-### mailboxRecipientType values
-
-| Member    | Value |
-|:----------|:------|
-| unknown   | 0     |
-| user      | 1     |
-| linked    | 2     |
-| shared    | 3     |
-| room      | 4     |
-| equipment | 5     |
-| others    | 6     |
