@@ -4,7 +4,7 @@ description: "Update an open extension (openTypeExtension object) with the prope
 localization_priority: Normal
 author: "dkershaw10"
 doc_type: apiPageType
-ms.prod: ""
+ms.prod: "microsoft-identity-platform"
 ---
 
 # Update open extension
