@@ -22,7 +22,7 @@ The purpose of the mailbox. Used to differentiate a mailbox for a single user fr
 |value|[mailboxRecipientType](#mailboxrecipienttype-values)|Represents the user's recipient or mailbox type in Exchange Online. Possible values are: `unknown`, `user`, `linked`, `shared`, `room`, `equipment`, and `others`. See the next section for more information.|
 
 ### mailboxRecipientType values
-|Values|Description|
+|Member|Description|
 |:---------------|:--------|
 |unknown|No information found about the mailbox.|
 |user|A user account with a mailbox in the local forest.|
