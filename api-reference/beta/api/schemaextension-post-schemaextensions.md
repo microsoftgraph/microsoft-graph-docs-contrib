@@ -272,7 +272,7 @@ Content-type: application/json
     "targetTypes": [
         "Group"
     ],
-    "owner": "50897f70-a455-4adf-87bc-4cf17091d5ac"
+    "owner": "50897f70-a455-4adf-87bc-4cf17091d5ac",
     "properties": [
         {
             "name": "courseId",
