@@ -319,7 +319,7 @@ Content-length: 420
         "Group"
     ],
     "status": "InDevelopment",
-    "owner": "50897f70-a455-4adf-87bc-4cf17091d5ac"
+    "owner": "50897f70-a455-4adf-87bc-4cf17091d5ac",
     "properties": [
         {
             "name": "courseId",
