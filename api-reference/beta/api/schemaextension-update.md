@@ -4,7 +4,7 @@ description: "Update properties in the definition of the specified schemaExtensi
 localization_priority: Normal
 author: "dkershaw10"
 doc_type: apiPageType
-ms.prod: "microsoft-identity-platform"
+ms.prod: "extensions"
 ---
 
 # Update schemaExtension

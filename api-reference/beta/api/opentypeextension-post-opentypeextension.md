@@ -4,7 +4,7 @@ description: "Create an open extension (openTypeExtension object) and add custom
 localization_priority: Normal
 author: "dkershaw10"
 doc_type: apiPageType
-ms.prod: "microsoft-identity-platform"
+ms.prod: "extensions"
 ---
 
 # Create open extension

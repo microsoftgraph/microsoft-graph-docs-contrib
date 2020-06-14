@@ -4,7 +4,7 @@ description: "Delete an open extension (openTypeExtension object) from the speci
 localization_priority: Normal
 author: "dkershaw10"
 doc_type: apiPageType
-ms.prod: "microsoft-identity-platform"
+ms.prod: "extensions"
 ---
 
 # Delete open extension

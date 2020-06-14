@@ -3,7 +3,7 @@ title: "Get schemaExtension"
 description: "Get the properties of the specified schemaExtension definition."
 localization_priority: Normal
 author: "dkershaw10"
-ms.prod: "microsoft-identity-platform"
+ms.prod: "extensions"
 doc_type: apiPageType
 ---
 

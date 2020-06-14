@@ -4,7 +4,7 @@ description: "Create a new schemaExtension definition to extend a supporting res
 localization_priority: Normal
 author: "dkershaw10"
 doc_type: apiPageType
-ms.prod: "microsoft-identity-platform"
+ms.prod: "extensions"
 ---
 
 # Create schemaExtension

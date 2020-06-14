@@ -4,7 +4,7 @@ description: "Get an open extension (openTypeExtension object) identified by nam
 localization_priority: Normal
 author: "dkershaw10"
 doc_type: apiPageType
-ms.prod: "microsoft-identity-platform"
+ms.prod: "extensions"
 ---
 
 # Get open extension

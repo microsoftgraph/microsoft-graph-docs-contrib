@@ -3,7 +3,7 @@ title: "Create schemaExtension"
 description: "Create a new schemaExtension definition to extend a supporting resource type."
 localization_priority: Priority
 author: "dkershaw10"
-ms.prod: "microsoft-identity-platform"
+ms.prod: "extensions"
 doc_type: apiPageType
 ---
 

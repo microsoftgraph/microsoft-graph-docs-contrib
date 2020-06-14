@@ -3,7 +3,7 @@ title: "Update open extension"
 description: "Update an open extension (openTypeExtension object) with the properties in the request body:"
 localization_priority: Normal
 author: "dkershaw10"
-ms.prod: "microsoft-identity-platform"
+ms.prod: "extensions"
 doc_type: apiPageType
 ---
 

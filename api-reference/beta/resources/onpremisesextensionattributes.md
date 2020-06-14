@@ -1,10 +1,10 @@
 ---
 title: "onPremisesExtensionAttributes resource type"
-description: "The **onPremisesExtensionAttributes** property of the user entity contains fifteen custom extension attribute properties. For an **onPremisesSyncEnabled** user, this set of properties is mastered in on-premises Active Directory and synchronized to Azure AD, and is read-only. For a cloud-only user (where **onPremisesSyncEnabled** is false), these properties may be set during creation or update."
+description: "The **onPremisesExtensionAttributes** property of the user entity contains fifteen custom extension attribute properties."
 localization_priority: Normal
 doc_type: resourcePageType
-ms.prod: "microsoft-identity-platform"
-author: "japere"
+ms.prod: "users"
+author: "krbain"
 ---
 
 # onPremisesExtensionAttributes resource type
@@ -14,6 +14,8 @@ Namespace: microsoft.graph
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 The **onPremisesExtensionAttributes** property of the [user](user.md) entity contains fifteen custom extension attribute properties. For an **onPremisesSyncEnabled** user, this set of properties is mastered in on-premises Active Directory and synchronized to Azure AD, and is read-only. For a cloud-only user (where **onPremisesSyncEnabled** is false), these properties may be set during creation or update.
+
+> **Note:** These extension attributes are also known as Exchange custom attributes 1-15.
 
 
 ## Properties
