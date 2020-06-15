@@ -56,6 +56,7 @@ Here is an example of the request.
 }-->
 ```http
 POST https://graph.microsoft.com/beta/riskyUsers/dismiss
+POST https://graph.microsoft.com/beta/identityProtection/riskyUsers/dismiss
 Content-Type: application/json
 
 {
