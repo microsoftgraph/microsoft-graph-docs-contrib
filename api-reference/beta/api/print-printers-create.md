@@ -59,7 +59,7 @@ The following is an example of the request. For help with creating the required 
 # [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
-  "name": "update_printer"
+  "name": "create_printer"
 }-->
 ```http
 POST https://graph.microsoft.com/beta/print/printers/create
