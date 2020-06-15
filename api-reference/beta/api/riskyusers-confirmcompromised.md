@@ -56,6 +56,7 @@ Here is an example of the request.
 }-->
 ```http
 POST https://graph.microsoft.com/beta/riskyUsers/confirmCompromised
+POST https://graph.microsoft.com/beta/identityProtection/riskyUsers/confirmCompromised
 Content-type: application/json
 
 {
