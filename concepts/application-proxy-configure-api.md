@@ -140,9 +140,9 @@ Use the response from the previous call to retrieve and save the application obj
 
 ## Step 2: Configure Application Proxy properties
 
-### Set the onPremisesPublishing configuration, redirectUri, identifierUri, and homepageUrl
+### Set the onPremisesPublishing configuration
 
-Use the applicationId from the previous step to configure Application Proxy for the app, update the onPremisesPublishing property to the desired configuration. In this example we are using an app with the internal url: `https://contosoiwaapp.com` and using the default domain for the external url: `https://contosoiwaapp-contoso.msappproxy.net`. In addition, configure the redirectUri, identifierUri, and homepageUrl to the external url.
+Use the applicationId from the previous step to configure Application Proxy for the app, update the onPremisesPublishing property to the desired configuration. In this example we are using an app with the internal url: `https://contosoiwaapp.com` and using the default domain for the external url: `https://contosoiwaapp-contoso.msappproxy.net`. 
 
 #### Request
 
@@ -161,16 +161,41 @@ Content-type: appplication/json
         "internalUrl": "https://contosoiwaapp.com",
         "externalUrl": "https://contosoiwaapp-contoso.msappproxy.net"
     }
-    
-    "identifierUris": ["https://contosoiwaapp-contoso.msappproxy.net"],
-    "web": {
-        "redirectUris": ["https://contosoiwaapp-contoso.msappproxy.net"],
-        "homePageUrl": "https://contosoiwaapp-contoso.msappproxy.net"
-        }
-    }
 }
 ```
 
+#### Response
+
+<!-- {
+  "blockType": "response",
+  "truncated": true,
+} -->
+
+```http
+HTTP/1.1 204 No content
+```
+### Set the redirectUri, identifierUri, and homepageUrl properties
+Update the application's redirectUri, identifierUri, and homepageUrl to the **external url**.
+
+#### Request
+
+<!-- {
+  "blockType": "request",
+  "name": "update_application"
+}-->
+
+```msgraph-interactive
+PATCH https://graph.microsoft.com/beta/applications/bf21f7e9-9d25-4da2-82ab-7fdd85049f83
+Content-type: appplication/json
+
+{   
+   "identifierUris": ["https://contosoiwaapp-contoso.msappproxy.net"],
+   "web": {
+      "redirectUris": ["https://contosoiwaapp-contoso.msappproxy.net"],
+      "homePageUrl": "https://contosoiwaapp-contoso.msappproxy.net"
+   }
+}
+```
 #### Response
 
 <!-- {
