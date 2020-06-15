@@ -318,6 +318,16 @@ Content-type: application/json
 "@odata.id":"https://graph.microsoft.com/onPremisesPublishingProfiles/applicationproxy/connectorGroups/3e6f4c35-a04b-4d03-b98a-66fff89b72e6"
 }
 ```
+#### Response
+
+<!-- {
+  "blockType": "response",
+  "truncated": true,
+} -->
+
+```http
+HTTP/1.1 204 No content
+```
 
 ## Step 4: Configure single sign-on
 This application uses Integrated Windows Authentication (IWA). To configure IWA set the single sign-on properties in the [singleSignOnSettings](https://docs.microsoft.com/graph/api/resources/onpremisespublishingsinglesignon?view=graph-rest-beta) resource type.
