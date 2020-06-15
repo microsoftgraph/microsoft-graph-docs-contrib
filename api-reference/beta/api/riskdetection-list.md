@@ -69,6 +69,7 @@ Here is an example of the request.
 
 ```msgraph-interactive
 GET https://graph.microsoft.com/beta/riskDetections
+GET https://graph.microsoft.com/beta/identityProtection/riskDetections
 ```
 # [C#](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/list-riskdetection-csharp-snippets.md)]
