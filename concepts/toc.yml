@@ -80,6 +80,12 @@ items:
         href: azuread-users-concept-overview.md
       - name: Groups
         href: office365-groups-concept-overview.md
+      - name: Applications
+        items:    
+          - name: Application Proxy
+            href: https://docs.microsoft.com/en-us/azure/active-directory/manage-apps/what-is-application-proxy?context=/graph/context
+          - name: Configure Application Proxy - Graph Explorer
+            href: application-proxy-configure-api.md
       - name: Calendar
         displayName: Outlook
         items:
