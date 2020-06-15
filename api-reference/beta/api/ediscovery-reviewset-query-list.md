@@ -47,7 +47,7 @@ Do not supply a request body for this method.
 
 ## Response
 
-If successful, this method returns a `200 OK` response code and a collection of [reviewSetQuery](../resources/reviewsetquery.md) objects in the response body.
+If successful, this method returns a `200 OK` response code and a collection of [reviewSetQuery](../resources/ediscovery-reviewset-query.md) objects in the response body.
 
 ## Examples
 

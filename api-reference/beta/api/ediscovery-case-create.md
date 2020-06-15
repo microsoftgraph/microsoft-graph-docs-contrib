@@ -39,7 +39,7 @@ POST /compliance/ediscovery/cases
 
 ## Request body
 
-In the request body, supply a JSON representation of [ediscoveryCase](../resources/ediscoverycase.md) object. The following table lists the required properties.
+In the request body, supply a JSON representation of [ediscoveryCase](../resources/ediscovery-case.md) object. The following table lists the required properties.
 
 | Property     | Type        | Description |
 |:-------------|:------------|:------------|
@@ -47,7 +47,7 @@ In the request body, supply a JSON representation of [ediscoveryCase](../resourc
 
 ## Response
 
-If successful, this method returns `201, Created` response code and a new [ediscoveryCase](../resources/ediscoverycase.md) object in the response body.
+If successful, this method returns `201, Created` response code and a new [ediscoveryCase](../resources/ediscovery-case.md) object in the response body.
 
 ## Examples
 

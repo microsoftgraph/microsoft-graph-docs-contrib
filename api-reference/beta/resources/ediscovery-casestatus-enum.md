@@ -7,8 +7,7 @@ ms.prod: ""
 doc_type: "resourcePageType"
 ---
 
-
-# ediscovery case status resource type
+# eDiscovery case status resource type
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 

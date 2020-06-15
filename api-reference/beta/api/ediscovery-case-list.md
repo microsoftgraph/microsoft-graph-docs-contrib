@@ -47,7 +47,7 @@ Do not supply a request body for this method.
 
 ## Response
 
-If successful, this method returns a `200 OK` response code and a collection of [ediscoveryCase](../resources/ediscoverycase.md) objects in the response body.
+If successful, this method returns a `200 OK` response code and a collection of [ediscoveryCase](../resources/ediscovery-case.md) objects in the response body.
 
 ## Examples
 
