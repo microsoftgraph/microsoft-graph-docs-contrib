@@ -74,7 +74,7 @@ Content-length: 1289
     {
         "id": "016b5565-3bbf-4067-b9ff-4d68167eb1a6",
         "status": {
-            "state": "running"
+            "state": "running",
             "description": "The printer is currently being registered."
         },
         "createdDateTime": "2020-06-15T19:54:14.853Z"

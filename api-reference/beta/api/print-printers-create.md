@@ -72,9 +72,9 @@ Content-length: 319
   "model": "Test Printer Model",
   "physicalDeviceId": null,
   "hasPhysicalDevice": false,
-  "certificateSigningRequest":{ 
+  "certificateSigningRequest": { 
     "content": "{content}",
-    "transportKey": "{sampleTransportKey}"},
+    "transportKey": "{sampleTransportKey}",
     "connectorId": null
   }
 }

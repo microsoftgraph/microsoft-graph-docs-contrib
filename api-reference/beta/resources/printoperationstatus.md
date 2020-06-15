@@ -46,7 +46,7 @@ The following is a JSON representation of the resource.
 ```json
 {
     "state": "String",
-    "state": "String"
+    "description": "String"
 }
 ```
 
