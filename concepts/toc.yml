@@ -82,9 +82,13 @@ items:
         href: office365-groups-concept-overview.md
       - name: Applications
         items:    
-          - name: Application Proxy
-            href: https://docs.microsoft.com/en-us/azure/active-directory/manage-apps/what-is-application-proxy?context=/graph/context
-          - name: Configure Application Proxy - Graph Explorer
+          - name: Application provisioning
+            href: https://docs.microsoft.com/azure/active-directory/app-provisioning/user-provisioning?context=/graph/context
+          - name: Configure provisioning - Graph Explorer
+            href: https://docs.microsoft.com/azure/active-directory/app-provisioning/application-provisioning-configure-api?context=/graph/context
+          - name: Application proxy
+            href: https://docs.microsoft.com/azure/active-directory/manage-apps/what-is-application-proxy?context=/graph/context
+          - name: Configure application proxy - Graph Explorer
             href: application-proxy-configure-api.md
       - name: Calendar
         displayName: Outlook
