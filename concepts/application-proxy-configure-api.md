@@ -476,6 +476,6 @@ For more information, see [appRoleAssignment](https://docs.microsoft.com/graph/a
 
 
 ## Next steps
-- [PowerShell samples for Application Proxy](application-proxy-powershell-samples.md)
-- [Automate SAML-based SSO app configuration with Microsoft Graph API](application-saml-sso-configure-api.md)
-- [Use Microsoft Graph APIs to configure user provisioning](../app-provisioning/application-provisioning-configure-api.md)
+- [PowerShell samples for Application Proxy](https://docs.microsoft.com/azure/active-directory/manage-apps/application-proxy-powershell-samples.md)
+- [Automate SAML-based SSO app configuration with Microsoft Graph API](https://docs.microsoft.com/azure/active-directory/manage-apps/application-saml-sso-configure-api.md)
+- [Use Microsoft Graph APIs to configure user provisioning](https://docs.microsoft.com/azure/active-directory/app-provisioning/application-provisioning-configure-api)
