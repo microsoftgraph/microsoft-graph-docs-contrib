@@ -38,7 +38,7 @@ MSGraphEmailAddress *emailAddress = [[MSGraphEmailAddress alloc] init];
 [attendeesList addObject: attendees];
 [event setAttendees:attendeesList];
 [event setIsOnlineMeeting: true];
-[event setOnlineMeetingProvider:@"teamsForBusiness"];
+[event setOnlineMeetingProvider: [MSGraphOnlineMeetingProviderType teamsForBusiness]];
 
 NSError *error;
 NSData *eventData = [event getSerializedDataWithError:&error];
