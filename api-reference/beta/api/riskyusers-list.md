@@ -58,6 +58,7 @@ Here is an example of the request.
 }-->
 ```msgraph-interactive
 GET https://graph.microsoft.com/beta/riskyUsers
+GET https://graph.microsoft.com/beta/identityProtection/riskyUsers
 ```
 # [C#](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/list-riskyusers-csharp-snippets.md)]
