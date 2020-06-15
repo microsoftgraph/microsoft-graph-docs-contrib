@@ -140,9 +140,9 @@ Use the response from the previous call to retrieve and save the application obj
 
 ## Step 2: Configure Application Proxy properties
 
-### Set the onPremisesPublishing configuration
+### Set the onPremisesPublishing configuration, redirectUri, identifierUri, and homepageUrl
 
-Use the applicationId from the previous step to configure Application Proxy for the app, update the onPremisesPublishing property to the desired configuration. In this example we are using an app with the internal url: `https://contosoiwaapp.com` and using the default domain for the external url: `https://contosoiwaapp-contoso.msappproxy.net`. 
+Use the applicationId from the previous step to configure Application Proxy for the app, update the onPremisesPublishing property to the desired configuration. In this example we are using an app with the internal url: `https://contosoiwaapp.com` and using the default domain for the external url: `https://contosoiwaapp-contoso.msappproxy.net`. In addition, configure the redirectUri, identifierUri, and homepageUrl to the external url.
 
 #### Request
 
@@ -160,6 +160,13 @@ Content-type: appplication/json
         "externalAuthenticationType": "aadPreAuthentication",
         "internalUrl": "https://contosoiwaapp.com",
         "externalUrl": "https://contosoiwaapp-contoso.msappproxy.net"
+    }
+    
+    "identifierUris": ["https://contosoiwaapp-contoso.msappproxy.net"],
+    "web": {
+        "redirectUris": ["https://contosoiwaapp-contoso.msappproxy.net"],
+        "homePageUrl": "https://contosoiwaapp-contoso.msappproxy.net"
+        }
     }
 }
 ```
