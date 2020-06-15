@@ -1,7 +1,7 @@
 ---
-title: Use Microsoft Graph APIs to configure Application Proxy
+title: Configure Application Proxy using Microsoft Graph APIs
 titleSuffix: Azure Active Directory
-description: Learn how to save time by using the Microsoft Graph APIs to automate the configuration of Application Proxy for providing remote access and single sign-on to on-premises applications.
+description: Automatically configure Application Proxy using the Microsoft Graph APIs to provide remote access and single sign-on to on-premises applications.
 services: active-directory
 author: davidmu
 manager: CelesteDG
@@ -14,9 +14,11 @@ ms.author: davidmu
 ms.reviewer: japere
 ---
 
-# Automate Application Proxy app configuration with Microsoft Graph API
+# Automate the configuration of Application Proxy using the Microsoft Graph API
 
-In this article, you'll learn how to create and configure [Azure AD Application Proxy](https://aka.ms/whyappproxy) for an application. Application Proxy provides secure remote access and single sign-on to on-premises web applications. After configuring Application Proxy for an application users can their on-premises applications through an external URL, the My Apps portal, or other internal application portal.
+In this article, you'll learn how to create and configure Azure Active Directory (Azure AD) [Application Proxy](https://aka.ms/whyappproxy) for an application. Application Proxy provides secure remote access and single sign-on to on-premises web applications. After configuring Application Proxy for an application, users can access their on-premises applications through an external URL, the My Apps portal, or other internal application portals.
+
+This article assumes you have already installed a connector and completed the [prerequisites](https://docs.microsoft.com/azure/active-directory/manage-apps/application-proxy-add-on-premises-application#before-you-begin) for Application Proxy so that connectors can communicate with Azure AD services.
 
 **List of all APIs used in the documentation**
 
@@ -31,7 +33,7 @@ Make sure you have the corresponding permissions to call the following APIs.
 |[servicePrincipals](https://docs.microsoft.com/graph/api/resources/serviceprincipal?view=graph-rest-1.0)|[Update servicePrincipal](https://docs.microsoft.com/graph/api/serviceprincipal-update?view=graph-rest-1.0&tabs=http) <br> [Create appRoleAssignments](https://docs.microsoft.com/graph/api/serviceprincipal-post-approleassignments?view=graph-rest-beta)|
 
 >[!NOTE]
->The response objects shown in this article may be shortened for readability. All the properties will be returned from an actual call.
+> The requests shown in this article uses sample values, you will need update these. The response objects shown may also be shortened for readability. All the properties will be returned from an actual call.
 
 ## Step 1: Create a custom application
 
@@ -129,10 +131,10 @@ Content-type: application/json
 Use the response from the previous call to retrieve and save the application object ID and service principal object ID.
 ```
 "application": {
-        "objectId": "bf21f7e9-9d25-4da2-82ab-7fdd85049f83"
+	"objectId": "bf21f7e9-9d25-4da2-82ab-7fdd85049f83"
     }
 "servicePrincipal": {
-		"objectId": "b00c693f-9658-4c06-bd1b-c402c4653dea"
+	"objectId": "b00c693f-9658-4c06-bd1b-c402c4653dea"
     }
 ```
 
@@ -170,16 +172,14 @@ Content-type: appplication/json
 } -->
 
 ```http
-HTTP/1.1 204
+HTTP/1.1 204 No content
 ```
 
 ## Step 3: Assign the connector group to the application
 
 ### Get connectors
 
-This step assumes you have already installed a connector and completed the [prerequisites](https://docs.microsoft.com/azure/active-directory/manage-apps/application-proxy-add-on-premises-application#before-you-begin) for Application Proxy so that the connector can communicate with Azure AD services.
-
-List the connectors and use the response to retrieve and save the connector object ID that will be assigned to a connector group that will be used for the application.
+List the connectors and use the response to retrieve and save the connector object ID. The connector object ID will be used to assign the connector to a connector group.
 
 #### Request
 
@@ -232,7 +232,7 @@ Content-type: application/json
 ```
 
 ### Create a connectorGroup
-For this example, a new connectorGroup will be created called, "IWA Demo Connector Group" to use for the application. You may also skip this step if your connector is already assigned to the appropriate connectorGroup. Retrieve and save the connectorGroup object ID to use in the next step.
+For this example, a new connectorGroup is created named "IWA Demo Connector Group" that is used for the application. You may also skip this step if your connector is already assigned to the appropriate connectorGroup. Retrieve and save the connectorGroup object ID to use in the next step.
 
 #### Request
 
@@ -246,8 +246,8 @@ POST https://graph.microsoft.com/beta/onPremisesPublishingProfiles/applicationPr
 
 Content-type: application/json
 {
-	"name": "IWA Demo Connector Group"
-    "region": "nam"
+   "name": "IWA Demo Connector Group"
+   "region": "nam"
 }
 ```
 
@@ -298,7 +298,7 @@ Content-type: application/json
 } -->
 
 ```http
-HTTP/1.1 204
+HTTP/1.1 204 No content
 ```
 
 ### Assign the application to the connectorGroup
@@ -315,8 +315,7 @@ PUT https://graph.microsoft.com/beta/applications/bf21f7e9-9d25-4da2-82ab-7fdd85
 Content-type: application/json
 
 {
-"@odata.id":
-	"https://graph.microsoft.com/onPremisesPublishingProfiles/applicationproxy/connectorGroups/3e6f4c35-a04b-4d03-b98a-66fff89b72e6"
+"@odata.id":"https://graph.microsoft.com/onPremisesPublishingProfiles/applicationproxy/connectorGroups/3e6f4c35-a04b-4d03-b98a-66fff89b72e6"
 }
 ```
 
@@ -336,15 +335,15 @@ PATCH https://graph.microsoft.com/beta/applications/bf21f7e9-9d25-4da2-82ab-7fdd
 Content-type: appplication/json
 
 {
-    "onPremisesPublishing": {
-    	"singleSignOnSettings": {
-            "kerberosSignOnSettings": {
-                  "kerberosServicePrincipalName": "HTTP/iwademo.contoso.com",
-                  "kerberosSignOnMappingAttributeType": "userPrincipalName"
-             },
-            "singleSignOnMode": "onPremisesKerberos"
-        }
-    }
+   "onPremisesPublishing": {
+      "singleSignOnSettings": {
+         "kerberosSignOnSettings": {
+            "kerberosServicePrincipalName": "HTTP/iwademo.contoso.com",
+   	    "kerberosSignOnMappingAttributeType": "userPrincipalName"
+         },
+         "singleSignOnMode": "onPremisesKerberos"
+      }
+   }
 }
 ```
 
@@ -356,7 +355,7 @@ Content-type: appplication/json
 } -->
 
 ```http
-HTTP/1.1 204
+HTTP/1.1 204 No content
 ```
 
 ## Step 5: Assign users
@@ -416,19 +415,19 @@ Use the response from the previous call to retrieve and save the appRole ID to u
             "description": "User",
             "displayName": "User",
             "id": "18d14569-c3bd-439b-9a66-3a2aee01d14f"
-        },
+        }
 ```
 
 ### Assign users and groups to the application
 
-Assign the following user to the service principal and assign the default role from the application. 
+Use the following properties to assign a user to the application.
 
-| Name  | ID  |
-|---------|---------|
-| User ID (principalId) | 2fe96d23-5dc6-4f35-8222-0426a8c115c8 |
-| Type (principalType) | User |
-| App role ID (appRoleId) | 18d14569-c3bd-439b-9a66-3a2aee01d14f |
-| servicePrincipalID (resourceId) | b00c693f-9658-4c06-bd1b-c402c4653dea |
+| Property  | Description |ID  |
+|---------|---------|---------|
+| principalId | User ID of the user that will be assigned to the app | 2fe96d23-5dc6-4f35-8222-0426a8c115c8 |
+| principalType | Type of user | User |
+| appRoleId |  The App role ID of the default app role of the app | 18d14569-c3bd-439b-9a66-3a2aee01d14f |
+| resourceId | The servicePrincipal ID of the app | b00c693f-9658-4c06-bd1b-c402c4653dea |
 
 #### Request
 
@@ -475,7 +474,6 @@ For more information, see [appRoleAssignment](https://docs.microsoft.com/graph/a
 
 
 
-## Next steps
-- [PowerShell samples for Application Proxy](https://docs.microsoft.com/azure/active-directory/manage-apps/application-proxy-powershell-samples.md)
+## Additional steps
+- [Automate configuration using PowerShell samples for Application Proxy](https://docs.microsoft.com/azure/active-directory/manage-apps/application-proxy-powershell-samples.md)
 - [Automate SAML-based SSO app configuration with Microsoft Graph API](https://docs.microsoft.com/azure/active-directory/manage-apps/application-saml-sso-configure-api.md)
-- [Use Microsoft Graph APIs to configure user provisioning](https://docs.microsoft.com/azure/active-directory/app-provisioning/application-provisioning-configure-api)
