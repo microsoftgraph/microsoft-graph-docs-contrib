@@ -66,20 +66,46 @@ The following is an example of the response.
 ```http
 HTTP/1.1 200 OK
 Content-type: application/json
-Content-length: 1289
+Content-length: 1475
 
 {
-  "@odata.context": "https://graph.microsoft.com/beta/$metadata#print/operations",
-  "value": [
-    {
-        "id": "016b5565-3bbf-4067-b9ff-4d68167eb1a6",
-        "status": {
-            "state": "running",
-            "description": "The printer is currently being registered."
-        },
-        "createdDateTime": "2020-06-15T19:54:14.853Z"
-    }
-  ]
+    "@odata.context": "https://graph.microsoft.com/beta/$metadata#print/operations",
+    "value": [
+        {
+            "@odata.type": "#microsoft.graph.printerCreateOperation",
+            "id": "81f4cca3-b3b7-47ea-9f88-7ddbf7208ef4",
+            "createdDateTime": "2020-06-15T22:27:03.031849Z",
+            "certificate": "{ceritificate}",
+            "status": {
+                "state": "succeeded",
+                "description": "The operation has completed successfully."
+            },
+            "printer": {
+                "registeredDateTime": "2020-06-15T22:27:12.0920077Z",
+                "acceptingJobs": null,
+                "isShared": false,
+                "id": "e56f9cdd-acec-486f-a05e-b622ff0bcc7d",
+                "name": "Test Printer",
+                "manufacturer": "Test Printer Manufacturer",
+                "model": "Test Printer Model",
+                "isAcceptingJobs": null,
+                "capabilities": null,
+                "status": {
+                    "processingState": "unknown",
+                    "processingStateReasons": [],
+                    "processingStateDescription": ""
+                },
+                "location": {
+                    "latitude": null,
+                    "longitude": null
+                },
+                "defaults": {
+                    "copiesPerJob": 1,
+                    "finishings": []
+                }
+            }
+        }
+    ]
 }
 ```
 
@@ -87,7 +113,7 @@ Content-length: 1289
 2015-10-25 14:57:30 UTC -->
 <!-- {
   "type": "#page.annotation",
-  "description": "List operations",
+  "description": "List connectors",
   "keywords": "",
   "section": "documentation",
   "tocPath": ""

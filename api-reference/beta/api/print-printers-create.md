@@ -80,75 +80,37 @@ Content-length: 319
 }
 ```
 
+## Response
+If successful, this method returns `202 Accepted` response code. It does not return anything in the response body.
+
+## Example
+##### Request
+The following is an example of the request.
+<!-- {
+  "blockType": "request",
+  "name": "create_printer"
+}-->
+```http
+DELETE https://graph.microsoft.com/beta/print/printers/{id}/allowedGroup/{id}/$ref
+```
 ##### Response
 The following is an example of the response.
 >**Note:** The response object shown here might be shortened for readability. All the properties will be returned from an actual call.
 <!-- {
   "blockType": "response",
-  "truncated": true,
-  "@odata.type": "microsoft.graph.printer"
+  "truncated": true
 } -->
 ```http
-HTTP/1.1 200 OK
-Content-type: application/json
-Content-length: 1313
-
-{
-  "@odata.context": "https://graph.microsoft.com/beta/$metadata#print/printers/$entity",
-  "id": "016b5565-3bbf-4067-b9ff-4d68167eb1a6",
-  "name": "PrinterName",
-  "manufacturer": "PrinterManufacturer",
-  "model": "PrinterModel",
-  "isShared": true,
-  "registeredDateTime": "2020-02-04T00:00:00.0000000Z",
-  "acceptingJobs": true,
-  "status": {
-    "processingState": "idle",
-    "processingStateReasons": [],
-    "processingStateDescription": ""
-  },
-  "defaults": {
-    "copiesPerJob":1,
-    "documentMimeType": "application/oxps",
-    "finishings": ["none"],
-    "mediaType": "stationery"
-  },
-  "location": {
-    "latitude": 1.1,
-    "longitude": 2.2,
-    "altitudeInMeters": 3,
-    "streetAddress": "One Microsoft Way",
-    "subUnit": [
-        "Main Plaza",
-        "Unit 400"
-    ],
-    "city": "Redmond",
-    "postalCode": "98052",
-    "countryOrRegion": "USA",
-    "site": "Puget Sound",
-    "building": "Studio E",
-    "floorNumber": 1,
-    "floorDescription": "First Floor",
-    "roomNumber": 1234,
-    "roomDescription": "First floor copy room",
-    "organization": [
-        "C+AI",
-        "Microsoft Graph"
-    ],
-    "subdivision": [
-        "King County",
-        "Red West"
-    ],
-    "stateOrProvince": "Washington"
-  }
-}
+HTTP/1.1 202 Accepted
+Operation-Location: https://graph.microsoft.com/beta/print/operations/f221760a-52e8-4c11-b8c5-5dfaef3a49db
+Retry-After: 5
 ```
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2015-10-25 14:57:30 UTC -->
 <!-- {
   "type": "#page.annotation",
-  "description": "Update printer",
+  "description": "printers: create",
   "keywords": "",
   "section": "documentation",
   "tocPath": ""
