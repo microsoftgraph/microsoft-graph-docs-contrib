@@ -9518,6 +9518,11 @@ items:
             href: api/accesspackage-list-accesspackageresourcerolescopes.md
           - name: Create
             href: api/accesspackage-post-accesspackageresourcerolescopes.md
+        - name: Entitlement management settings
+          href: resources/entitlementmanagementsettings.md
+          items:
+          - name: Get
+            href: api/entitlementmanagementsettings-get.md
       - name: Feature rollout policy
         href: resources/featurerolloutpolicy.md
         items:
