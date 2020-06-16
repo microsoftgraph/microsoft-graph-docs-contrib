@@ -229,10 +229,11 @@ Examples of group features that support delegated and app-only permissions:
 * Getting and updating group properties pertaining to group administration or management
 * Group [directory settings](/graph/api/resources/directoryobject?view=graph-rest-1.0), type, and synchronization
 * Group owners and membership
+* Getting group conversations and threads
 
 Examples of group features that support only delegated permissions:
 
-* Group conversations, events, photo
+* Group events, photo
 * External senders, accepted or rejected senders, group subscription
 * User favorites and unseen count
 
