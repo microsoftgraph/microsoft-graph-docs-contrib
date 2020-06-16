@@ -33,25 +33,26 @@ POST /onPremisesPublishingProfiles/applicationProxy/connectorGroups
 ## Optional request headers
 | Name       | Description|
 |:-----------|:-----------|
-| Authorization  | Bearer. Required|
+| Authorization  | Bearer. Required.|
+| Content-type | application/json. Required. |
 
 ## Request body
 In the request body, supply a JSON representation of a [connectorGroup](../resources/connectorgroup.md) object.
-The following table lists the properties that are required when you create a connectorGroup. The request body must contain name, which is a required property.
+The following table lists the properties that are required when you create a **connectorGroup**. The request body must contain **name**, which is a required property.
 
 | Property	   | Type	|Description|
 |:---------------|:--------|:----------|
-|connectorGroupType|string| Indicates the type of hybrid agent. This pre-set by the system. |
-|id|string| Unique identifier for this connectorGroup. Read-only. |
-|isDefault|boolean| Indicates if the connectorGroup is the default connectorGroup. Only a single connector group can be the default connectorGroup and this is pre-set by the system. |
-|name|string| The name associated with the connectorGroup. |
-|region|string| The region the connectorGroup is assigned to and will optimize traffic for. This region can only be set if **no** connectors or applications are assigned to the connectorGroup. The regions available include: North America, Europe, Australia, Asia, and India. Possible values are: `nam`, `eur`, `aus`, `asia`, `ind`.|
+|connectorGroupType|string| Indicates the type of hybrid agent. This preset by the system. |
+|id|string| Unique identifier for this **connectorGroup**. Read-only. |
+|isDefault|boolean| Indicates whether the **connectorGroup** is the default. Only a single connector group can be the default **connectorGroup** and this is preset by the system. |
+|name|string| The name associated with the **connectorGroup**. |
+|region|string| The region the **connectorGroup** is assigned to and will optimize traffic for. This region can only be set if **no** connectors or applications are assigned to the **connectorGroup**. The regions available include: North America, Europe, Australia, Asia, and India. Possible values are: `nam`, `eur`, `aus`, `asia`, `ind`.|
 
 ## Response
 
 If successful, this method returns a `201 Created` response code and a [connectorGroup](../resources/connectorgroup.md) object in the response body.
 ## Example
-##### Request
+### Request
 The following is an example of the request.
 <!-- {
   "blockType": "request",
@@ -67,8 +68,10 @@ Content-length: 99
 
 }
 ```
-##### Response
-The following is an example of the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.
+### Response
+The following is an example of the response. 
+
+>**Note:** The response object shown here might be shortened for readability. All the properties will be returned from an actual call.
 <!-- {
   "blockType": "response",
   "truncated": true,
