@@ -29,6 +29,7 @@ Using the Microsoft Graph API, an app can subscribe to changes on the following 
 | Security [alert][] | Changes to a specific alert:<br>`/security/alerts/{id}` <br>Changes to filtered alerts:<br> `/security/alerts/?$filter`| No |
 | Teams [callRecord][] | Changes to _all_ call records: `/communications/callRecords` | No |
 | Teams [chatmessage](/graph/api/resources/subscription?view=graph-rest-v1.0) | Changes to chat messages in all channels in all teams:<br>`/teams/allMessages` <br>Changes to chat messages in a specific channel:<br>`/teams/{id}/channels/{id}/messages`<br>Changes to chat messages in all chats:<br>`/chats/allMessages` <br>Changes to chat messages in a specific chat:<br>`/chats/{id}/messages` | Yes |
+| Teams [presence][] (Preview) | Changes to user presences: `/communications/presences/` | No |
 
 > **Note**: Any resource path that begins with `/users/{id}` can also accept `/me` to reference the signed-in user.
 
@@ -38,7 +39,7 @@ In general, subscription operations require read permission to the resource. For
 
 | Permission type                        | Supported resource types                                                      |
 | :------------------------------------- | :------------------------------------------------------------------------------------ |
-| Delegated - work or school account     | [alert][], [contact][], [conversation][], [driveItem][], [list][], [event][], [group][], [message][], [user][]|
+| Delegated - work or school account     | [alert][], [contact][], [conversation][], [driveItem][], [list][], [event][], [group][], [message][], [user][], [presence][]|
 | Delegated - personal Microsoft account | [contact][], [driveItem][], [list][], [event][], [message][]                                        |
 | Application                            | [alert][], [contact][], [list][], [driveItem][], [event][], [group][], [message][], [user][], [callRecord][]|
 
@@ -62,4 +63,5 @@ In general, subscription operations require read permission to the resource. For
 [message]: ./message.md
 [user]: ./user.md
 [callRecord]: ./callrecords-callrecord.md
+[presence]: ./presence.md
 [alert]: ./alert.md
