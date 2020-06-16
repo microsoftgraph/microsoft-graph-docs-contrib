@@ -6,7 +6,7 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 GraphServiceClient graphClient = new GraphServiceClient( authProvider );
 
-var followedSites = await graphClient.Me.FollowedSites
+var regionalAndLanguageSettings = await graphClient.Me.Settings.RegionalAndLanguageSettings
 	.Request()
 	.GetAsync();
 
