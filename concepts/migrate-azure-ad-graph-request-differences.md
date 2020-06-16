@@ -18,7 +18,7 @@ Use the [Graph Explorer](https://aka.ms/ge) to try these request patterns agains
 
 The following table highlights the main request differences between the two APIs:
 
-|| Azure AD Graph | Microsoft Graph |
+|Request details| Azure AD Graph | Microsoft Graph |
 |---|---|---|
 |Request syntax| `https://graph.windows.net/{tenant_id}/` <br> `{resource}?{version}&query-parameters` | `https://graph.microsoft.com/`<br>`{version}/{resource}?query-parameters`|
 |Service&nbsp;endpoints:||

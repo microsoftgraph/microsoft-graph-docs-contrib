@@ -57,7 +57,7 @@ Azure AD Graph calls these differential queries.  In Microsoft Graph, they're [d
 
 The following table highlights key similarities and differences:
 
-||Azure AD Graph | Microsoft Graph |
+|Delta request |Azure AD Graph | Microsoft Graph |
 |----|----|----|
 | _Initial data request_ | Uses a query parameter:<br>`GET /groups?deltaLink=` | Uses a function: <br> `GET /groups/delta` |
 | _Get new changes_ | `GET /groups?deltaLink={deltaToken}` | `GET /groups/delta?$deltaToken={deltaToken}` |

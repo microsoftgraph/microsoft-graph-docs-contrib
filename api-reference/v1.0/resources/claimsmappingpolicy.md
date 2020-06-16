@@ -1,6 +1,6 @@
 ---
 title: "claimsMappingPolicy resource type"
-description: "Represents a policy that can control the lifetime of an access token issued by Azure Active Directory (Azure AD)."
+description: "Represents the claim-mapping policies for WS-Fed, SAML, OAuth 2.0, and OpenID Connect protocols, for tokens issued to a specific application."
 localization_priority: Normal
 author: "paulgarn"
 ms.prod: "microsoft-identity-platform"
