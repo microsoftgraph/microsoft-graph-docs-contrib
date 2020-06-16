@@ -302,14 +302,6 @@ items:
             href: api/insights-list-trending.md
           - name: List used
             href: api/insights-list-used.md
-        - name: Content discovery settings
-          items:
-          - name: User settings
-            href: resources/usersettings.md
-          - name: Get settings
-            href: api/usersettings-get.md
-          - name: Update settings
-            href: api/usersettings-update.md
       - name: Mail
         href: resources/message.md
         items:
@@ -409,6 +401,13 @@ items:
           href: api/planneruser-list-tasks.md
         - name: Update settings
           href: api/planneruser-update.md
+      - name: Preferred languages and regional formats
+        href: resources/regionalandlanguagesettings.md
+        items:
+        - name: Get
+          href: api/regionalandlanguagesettings-get.md
+        - name: Update
+          href: api/regionalandlanguagesettings-update.md   
       - name: Profile (preview)
         items:
         - name: Profile
@@ -416,7 +415,7 @@ items:
         - name: Get user's profile
           href: api/profile-get.md
         - name: Delete user's profile
-          href: api/profile-delete.md
+          href: api/profile-delete.md      
       - name: Teamwork
         items:
         - name: Installed app
@@ -429,6 +428,14 @@ items:
           href: api/user-upgrade-teamsappinstallation.md
         - name: Uninstall app
           href: api/user-delete-teamsappinstallation.md
+      - name: User settings
+        items:
+        - name: User settings
+          href: resources/usersettings.md
+        - name: Get settings
+          href: api/usersettings-get.md
+        - name: Update settings
+          href: api/usersettings-update.md
     - name: Groups
       items:
       - name: Overview
