@@ -30,29 +30,44 @@ You can make the following attributes from Active Directory or Azure Active Dire
 - StateOrProvince
 - Alias
 
-You can add any of these attributes to the profile card by configuring your tenant settings in Microsoft Graph. Here's how:
+> [!NOTE]
+> The attribute strings are fixed and you must use the values listed in the Attribute string column.
+
+|Attribute string|Microsoft Graph user entity property|
+|:---------------|:----------|
+|UserPrincipalName| userPrincipalName |
+|Fax|faxNumber|
+|StreetAddress|streetAddress|
+|PostalCode|postalCode|
+|StateOrProvince|state
+|Alias|mailNickname
+
+You can add any of these attributes to the profile card by configuring your tenant settings in Microsoft Graph. An example is to display "Alias" on the profile card:
 
 ```http
         PATCH https://microsoft.com/beta/organization/{tenantid}/settings
         Content-Type: application/json
-        
+
         {
         "directoryPropertyName": "[Alias]"
         }
 ```
+
 When you make additional attributes visible, you must use the English property names. You don't have to add localized values. The additional properties will automatically be shown in the language settings that the user has specified for Microsoft 365.
 
 > [!IMPORTANT]
 > It takes up to 24 hours for the changes to show on profile cards.
 
-## Adding custom attributes 
-You can add any of the [15 custom attributes](../api-reference/beta/resources/onpremisesextensionattributes.md) from Active Directory or Azure Active Directory (Azure AD) to users' profile cards by configuring your tenant settings in Microsoft Graph. Here's how:
+## Adding custom attributes
+
+You can add any of the [15 custom attributes](../api-reference/beta/resources/onpremisesextensionattributes.md) from Active Directory or Azure Active Directory (Azure AD) to users' profile cards by configuring your tenant settings in Microsoft Graph.
+
 ```http
         PATCH https://microsoft.com/beta/organization/{tenantid}/settings
         Content-Type: application/json
 
         {
-         "directoryPropertyName": "customAttribute{X}",
+         "directoryPropertyName": "customAttribute1",
          "annotations": [
           {
               "displayName": "[Cost center]",
@@ -66,6 +81,7 @@ You can add any of the [15 custom attributes](../api-reference/beta/resources/on
             ]
           }
 ```
+
 Enter the language code in the form *ll-cc*, where *ll* is the language code, and cc the country code. For example, for German – Austria, enter the country code de-at.
 If a language is not supported, the property name will be shown with the default value.  
 
@@ -76,9 +92,10 @@ It takes up to 24 hours for the changes to show on profile cards.
 
 ## See also
 
-
 [Find your Microsoft 365 tenant ID](https://docs.microsoft.com/onedrive/find-your-office-365-tenant-id)
 
 [onPremisesExtensionAttributes resource type](../api-reference/beta/resources/onpremisesextensionattributes.md)
+
+[User resource type](../api-reference/beta/resources/user.md)
 
 [Graph Explorer](https://developer.microsoft.com/graph/graph-explorer)
