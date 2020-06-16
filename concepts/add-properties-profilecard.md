@@ -31,7 +31,7 @@ You can make the following attributes from Active Directory or Azure Active Dire
 - Alias
 
 > [!NOTE]
-> The attribute strings are fixed and you must use the values listed in the Attribute string column.
+> The attribute strings are fixed and you must use the values listed in the **Attribute string** column.
 
 |Attribute string|Microsoft Graph user entity property|
 |:---------------|:----------|
