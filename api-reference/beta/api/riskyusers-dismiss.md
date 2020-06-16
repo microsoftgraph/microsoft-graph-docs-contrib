@@ -45,7 +45,7 @@ Specify the userIds to dismiss in the request body.
 ## Response
 
 If successful, this method returns a `204 No Content` response code. It does not return anything in the response body.
-## Example
+## Example 1
 ##### Request
 Here is an example of the request.
 
@@ -56,6 +56,49 @@ Here is an example of the request.
 }-->
 ```http
 POST https://graph.microsoft.com/beta/riskyUsers/dismiss
+Content-Type: application/json
+
+{
+  "userIds": [
+    "04487ee0-f4f6-4e7f-8999-facc5a30e232",
+    "13387ee0-f4f6-4e7f-8999-facc5120e345"
+  ]
+}
+```
+# [C#](#tab/csharp)
+[!INCLUDE [sample-code](../includes/snippets/csharp/dismiss-riskyuser-csharp-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [JavaScript](#tab/javascript)
+[!INCLUDE [sample-code](../includes/snippets/javascript/dismiss-riskyuser-javascript-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Objective-C](#tab/objc)
+[!INCLUDE [sample-code](../includes/snippets/objc/dismiss-riskyuser-objc-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+---
+
+##### Response
+Here is an example of the response.
+<!-- {
+  "blockType": "response",
+  "truncated": true
+} -->
+```http
+HTTP/1.1 204 No Content
+```
+
+## Example 2
+##### Request
+Here is an example of the request.
+
+# [HTTP](#tab/http)
+<!-- {
+  "blockType": "request",
+  "name": "dismiss_riskyuser"
+}-->
+```http
 POST https://graph.microsoft.com/beta/identityProtection/riskyUsers/dismiss
 Content-Type: application/json
 
