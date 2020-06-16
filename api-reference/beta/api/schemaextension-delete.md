@@ -30,6 +30,9 @@ One of the following permissions is required to call this API. To learn more, in
 |Delegated (personal Microsoft account) | Not supported.    |
 |Application | Not supported. |
 
+> [!NOTE]
+> Additionally for the delegated flow, the signed-in user can only delete schemaExtensions they own (where the **owner** property of the schemaExtension is the `appId` of an application the signed-in user owns).
+
 ## HTTP request
 <!-- { "blockType": "ignored" } -->
 ```http

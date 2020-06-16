@@ -67,7 +67,7 @@ If successful, this method returns `201 Created` response code and [schemaExtens
 
 #### Request
 
-The first example shows using a verified domain name, `graphlearn`, and a schema name, `courses`, to form a unique string for the **id** property of the 
+This example shows using a verified domain name, `graphlearn`, and a schema name, `courses`, to form a unique string for the **id** property of the 
 schema extension definition. The unique string is based on this format, \{_&#65279;domainName_\}\_\{_&#65279;schemaName_\}.
 
 In the request body, supply a JSON representation of the [schemaExtension](../resources/schemaextension.md) object.
@@ -160,7 +160,7 @@ Content-length: 420
 
 #### Request
 
-The second example shows specifying just a schema name, `courses`, in the **id** property in the request, together with the JSON representation of the rest of the 
+This example shows specifying just a schema name, `courses`, in the **id** property in the request, together with the JSON representation of the rest of the 
 properties in the [schemaExtension](../resources/schemaextension.md) object. Microsoft Graph will assign and return a unique string value in the response.
 
 
@@ -254,7 +254,7 @@ Content-length: 420
 
 #### Request
 
-The third example shows how to create a schema extension setting the **owner**.  In this scenario, the user using the application might not be the owner of the application (for example if you are using Microsoft Graph Explorer).  In this case you should set the **owner** property to the **appId** of an application you own, otherwise you won't be authorized to create a schema extension. Set the **owner** property in the request, together with the JSON representation of the rest of the 
+This example shows how to create a schema extension setting the **owner**.  In this scenario, the user of the application might not be the owner of the application (for example if you are using Microsoft Graph Explorer).  In this case you should set the **owner** property to the **appId** of an application you own, otherwise you won't be authorized to create a schema extension. Set the **owner** property in the request, together with the JSON representation of the rest of the 
 properties in the [schemaExtension](../resources/schemaextension.md) object.
 
 <!-- {
