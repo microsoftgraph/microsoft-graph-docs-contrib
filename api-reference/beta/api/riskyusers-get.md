@@ -45,7 +45,7 @@ Do not supply a request body for this method.
 ## Response
 
 If successful, this method returns a `200 OK` response code and a [riskyUser](../resources/riskyuser.md) object in the response body.
-## Example
+## Example 1
 ##### Request
 Here is an example of the request.
 
@@ -57,6 +57,56 @@ Here is an example of the request.
 }-->
 ```msgraph-interactive
 GET https://graph.microsoft.com/beta/riskyUsers/c2b6c2b9-dddc-acd0-2b39-d519d803dbc3
+```
+# [C#](#tab/csharp)
+[!INCLUDE [sample-code](../includes/snippets/csharp/get-riskyuser-csharp-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [JavaScript](#tab/javascript)
+[!INCLUDE [sample-code](../includes/snippets/javascript/get-riskyuser-javascript-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Objective-C](#tab/objc)
+[!INCLUDE [sample-code](../includes/snippets/objc/get-riskyuser-objc-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+---
+
+##### Response
+Here is an example of the response.
+<!-- {
+  "blockType": "response",
+  "truncated": true,
+  "@odata.type": "microsoft.graph.riskyUser"
+} -->
+```http
+HTTP/1.1 200 OK
+Content-type: application/json
+
+{
+  "id": "c2b6c2b9-dddc-acd0-2b39-d519d803dbc3",
+  "riskLastUpdatedDateTime": "2016-01-29T20:03:57.7872426Z",
+  "isGuest": true,
+  "isProcessing": true,
+  "isDeleted": true,
+  "riskDetail": "adminConfirmedSigninCompromised",
+  "riskLevel": "high",
+  "riskState": "atRisk",
+  "userDisplayName": "Alex Wilbur",
+  "userPrincipalName": "alexw@contoso.com"
+}
+```
+## Example 2
+##### Request
+Here is an example of the request.
+
+# [HTTP](#tab/http)
+<!-- {
+  "blockType": "request",
+  "name": "get_riskyuser",
+  "sampleKeys": ["c2b6c2b9-dddc-acd0-2b39-d519d803dbc3"]
+}-->
+```msgraph-interactive
 GET https://graph.microsoft.com/beta/identityProtection/riskyUsers/c2b6c2b9-dddc-acd0-2b39-d519d803dbc3
 ```
 # [C#](#tab/csharp)
@@ -97,7 +147,6 @@ Content-type: application/json
   "userPrincipalName": "alexw@contoso.com"
 }
 ```
-
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2015-10-25 14:57:30 UTC -->
 <!-- {
