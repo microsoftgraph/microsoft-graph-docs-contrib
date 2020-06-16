@@ -38,15 +38,15 @@ POST /onPremisesPublishingProfiles/applicationProxy/connectorGroups
 
 ## Request body
 In the request body, supply a JSON representation of a [connectorGroup](../resources/connectorgroup.md) object.
-The following table lists the properties that are required when you create a **connectorGroup**. The request body must contain **name**, which is a required property.
+The following table lists the properties available for a **connectorGroup**. The **name** property is a required property.
 
 | Property	   | Type	|Description|
 |:---------------|:--------|:----------|
-|connectorGroupType|string| Indicates the type of hybrid agent. This preset by the system. |
-|id|string| Unique identifier for this **connectorGroup**. Read-only. |
-|isDefault|boolean| Indicates whether the **connectorGroup** is the default. Only a single connector group can be the default **connectorGroup** and this is preset by the system. |
-|name|string| The name associated with the **connectorGroup**. |
-|region|string| The region the **connectorGroup** is assigned to and will optimize traffic for. This region can only be set if **no** connectors or applications are assigned to the **connectorGroup**. The regions available include: North America, Europe, Australia, Asia, and India. Possible values are: `nam`, `eur`, `aus`, `asia`, `ind`.|
+|connectorGroupType|string| Indicates the type of hybrid agent. This property is preset by the system.|
+|id|string| Unique identifier for this connectorGroup. Read-only. |
+|isDefault|boolean| Indicates whether the connectorGroup is the default. Only a single connector group can be the default connectorGroup and this is preset by the system. |
+|name|string| The name associated with the connectorGroup. |
+|region|string| The region the connectorGroup is assigned to and will optimize traffic for. This region can only be set if **no** connectors or applications are assigned to the connectorGroup. The regions available include: North America, Europe, Australia, Asia, and India. Possible values are: `nam`, `eur`, `aus`, `asia`, `ind`.|
 
 ## Response
 
@@ -64,7 +64,7 @@ Content-type: application/json
 Content-length: 99
 
 {
-  "name": "name-value"
+  "name": "Connector Group Demo"
 
 }
 ```
@@ -83,11 +83,11 @@ Content-type: application/json
 Content-length: 119
 
 {
-  "id": "id-value",
-  "name": "name-value",
-  "connectorGroupType": "connectorGroupType-value",
+  "id": "3e6f4c35-a04b-4d03-b98a-66fff89b72e6",
+  "name": "Connector Group Demo",
+  "connectorGroupType": "applicationProxy",
   "isDefault": true,
-  "region": "region-value"
+  "region": "nam"
 }
 ```
 
