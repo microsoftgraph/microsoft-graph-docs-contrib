@@ -31,7 +31,7 @@ One of the following permissions is required to call this API. To learn more, in
 |Application | Not supported. |
 
 > [!NOTE]
-> Additionally for the delegated flow, the signed-in user must be the owner of calling application OR the owner of the (application with the) `appId` used to set the **owner** property.
+> Additionally for the delegated flow, the signed-in user must be the owner of the calling application OR the owner of the (application with the) `appId` used to set the **owner** property.
 
 ## HTTP request
 <!-- { "blockType": "ignored" } -->
