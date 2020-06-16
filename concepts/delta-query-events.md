@@ -9,10 +9,9 @@ ms.custom: graphiamtop20
 # Get incremental changes to events in a calendar view 
 
 A calendar view is a collection of events in a date/time range from the default calendar (../me/calendarview) 
-or some other calendar of the user's. By using delta query, you can get 
+or some other specified calendar of a user, or from a group calendar. By using delta query, you can get 
 new, updated, or deleted events in a calendar view. 
-The returned events may include occurrences and exceptions of a recurring series, 
-and single instances. The delta data enables you to maintain 
+The returned events may include single instances, or occurrences and exceptions of a recurring series. The delta data enables you to maintain 
 and synchronize a local store of a user's events, 
 without having to fetch the entire set of the user's events from the server every time.
 
@@ -29,7 +28,7 @@ you need to track each calendar individually.
 Tracking event changes in a calendar view typically is a round of one or more GET requests with 
 the [delta](/graph/api/event-delta?view=graph-rest-1.0) function. The initial GET 
 request is very much like the way you [list a calendarView](/graph/api/calendar-list-calendarview?view=graph-rest-1.0), 
-except that you include the **delta** function:
+except that you include the **delta** function. The following is the initial GET delta request of a calendar view in the signed-in user's default calendar:
 
 ```
 GET /me/calendarView/delta?startDateTime={start_datetime}&endDateTime={end_datetime}
@@ -83,7 +82,7 @@ See also what you'll do in the [next round](#the-next-round-sample-first-respons
 
 ### Step 1: sample initial request
 
-In this example, the specified calendar view is being synchronized for the first time, so the initial sync request does not include any state token. 
+In this example, the specified calendar view in the signed-in user's default calendar is being synchronized for the first time, so the initial sync request does not include any state token. 
 This round will return all the events in that calendar view.
 
 The first request specifies the following:

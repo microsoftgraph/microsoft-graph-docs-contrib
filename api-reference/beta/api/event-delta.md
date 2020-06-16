@@ -13,15 +13,24 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Get a set of events that have been added, deleted, or updated in a **calendarView** (a range of events)
-of the user's primary calendar.
+Get a set of events that have been added, deleted, or updated in all the calendars of a mailbox, a specific calendar, or within a defined **calendarView** 
+(range of events defined by start and end dates) in a calendar.
 
-A **delta** function call for events is similar to a `GET /calendarview` request for
-a range of dates in the user's primary calendar, except that by appropriately
-applying [state tokens](/graph/delta-query-overview) in one or more of these calls,
-you can query for incremental changes in that calender view. This allows you to maintain and synchronize
-a local store of a user's events in the primary calendar, without having to fetch all the events of that calendar
+The calendar can be the default calendar or some other specified calendar of the user's, or, it can be a group calendar.
+
+A **delta** function call for events is similar to a `GET /events` or `GET /calendarview` request for
+in the specified calendar, except that by appropriately applying [state tokens](/graph/delta-query-overview) in one or more of these calls,
+you can query for incremental changes in that calender or specified date range. This allows you to maintain and synchronize
+a local store of events in the specified calendar, without having to fetch all the events of that calendar
 from the server every time.
+
+The following table lists the differences between the **delta** function on events and the **delta** function on a **calendarView** in a calendar.
+
+| Delta function on events  | Delta function on calendarView  |
+|:--------------------------|:---------------------------------------------------------|
+| Gets incremental changes of all the events in a calendar, or optionally, of the events starting from a specified date/time. | Gets incremental changes of events within the start and end date/time of the calendarView. |
+| Returns only a limited set of properties for performance, client to use `GET /events/{id}` to expand any events. | Server-side expansion returns fuller set of event properties. |
+| Response includes single instances and series master. | Response includes single instances, and occurrences and exceptions of recurring series. | 
 
 ## Permissions
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
@@ -34,11 +43,89 @@ One of the following permissions is required to call this API. To learn more, in
 |Application | Calendars.Read, Calendars.ReadWrite |
 
 ## HTTP request
+
+### Delta function on events in a user calendar
+To get incremental changes of all the events, or of events starting from the specified date/time in the user's mailbox:
+<!-- { "blockType": "ignored" } -->
+```http
+GET /me/events/delta 
+GET /users/{id | userPrincipalName}/events/delta 
+
+GET /me/events/delta?startDateTime={start_datetime}
+GET /users/{id | userPrincipalName}/events/delta?startDateTime={start_datetime}
+```
+
+To get incremental changes of all the events, or of events starting from the specified date/time in the user's default calendar:
+<!-- { "blockType": "ignored" } -->
+```http
+GET /me/calendar/events/delta 
+GET /users/{id | userPrincipalName}/calendar/events/delta 
+
+GET /me/calendar/events/delta?startDateTime={start_datetime} 
+GET /users/{id | userPrincipalName}/calendar/events/delta?startDateTime={start_datetime}
+```
+
+To get incremental changes of all the events, or of events starting from the specified date/time in the specified user calendar:
+<!-- { "blockType": "ignored" } -->
+```http
+GET /me/calendars/{id}/events/delta 
+GET /users/{id | userPrincipalName}/calendars/{id}/events/delta 
+
+GET /me/calendars/{id}/events/delta?startDateTime={start_datetime} 
+GET /users/{id | userPrincipalName}/calendars/{id}/events/delta?startDateTime={start_datetime}
+```
+
+To get incremental changes of all the events, or of events starting from the specified date/time in the specified calendar of the default calendar group:
+<!-- { "blockType": "ignored" } -->
+```http
+GET /me/calendargroup/calendars/{id}/events/delta 
+GET /users/{id | userPrincipalName}/calendargroup/calendars/{id}/events/delta 
+
+GET /me/calendargroup/calendars/{id}/events/delta?startDateTime={start_datetime} 
+GET /users/{id | userPrincipalName}/calendargroup/calendars/{id}/events/delta?startDateTime={start_datetime}
+```
+
+To get incremental changes all the events, or of events starting from the specified date/time in the specified calendar group and calendar:
+<!-- { "blockType": "ignored" } -->
+```http
+GET /me/calendargroups/{id}/calendars/{id}/events/delta 
+GET /users/{id | userPrincipalName}/calendargroups/{id}/calendars/{id}/events/delta 
+
+GET /me/calendargroups/{id}/calendars/{id}/events/delta?startDateTime={start_datetime} 
+GET /users/{id | userPrincipalName}/calendargroups/{id}/calendars/{id}/events/delta?startDateTime={start_datetime}
+```
+
+### Delta function on events in a group calendar
+To get incremental changes of all the events, or of events starting from the specified date/time in a group calendar:
+<!-- { "blockType": "ignored" } -->
+```http
+GET /groups/{id}/events/delta
+GET /groups/{id}/calendar/events/delta
+
+GET /groups/{id}/events/delta?startDateTime={start_datetime}
+GET /groups/{id}/calendar/events/delta?startDateTime={start_datetime}
+```
+
+### Delta function on a calendarView in a user calendar
+To get incremental changes in a calendar view of the user's default calendar:
 <!-- { "blockType": "ignored" } -->
 ```http
 GET /me/calendarView/delta?startDateTime={start_datetime}&endDateTime={end_datetime}
 GET /users/{id}/calendarView/delta?startDateTime={start_datetime}&endDateTime={end_datetime}
+```
 
+To get incremental changes in a calendar view of the specified user calendar:
+<!-- { "blockType": "ignored" } -->
+```http
+GET /me/calendars/{id}/calendarView/delta?startDateTime={start_datetime}&endDateTime={end_datetime}
+GET /users/{id}/calendars/{id}/calendarView/delta?startDateTime={start_datetime}&endDateTime={end_datetime}
+```
+
+### Delta function on a calendarView in a group calendar
+To get incremental changes in a calendar view of a group's calendar:
+<!-- { "blockType": "ignored" } -->
+```http
+GET /groups/{id}/calendarView?startDateTime={start_datetime}&endDateTime={end_datetime}
 ```
 
 ## Query parameters
