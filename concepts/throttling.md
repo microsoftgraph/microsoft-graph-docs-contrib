@@ -245,10 +245,11 @@ The following limits apply to any request on `/subscriptions`.
 
 Throttling is based on a token bucket algorithm which works by adding individual cost of requests. The sum of requests costs is then compared against pre-determined limits. Only the requests exceeding the limits will be throttled. If any of the limits are exceeded, the response will be `429 Too Many Requests`. It is possible to receive `429 Too Many Requests` responses even when the following limits are not reached in situations when the services are under an important load or based on data volume for a specific tenant. The following table documents existing limits:
 
-| Limit type | Limit value |
+| Limit type | Read limit value | ReadWrite Limit Value |
 | ---------- | ----------- |
-| application+tenant pair | TODO |
-| application | TODO |
+| application+tenant pair | TODO | TODO |
+| application | TODO | TODO |
+| tenant | TODO | TODO |
 
 The following table documents base requests costs, any other request not listed in the following table has a base cost of 1.
 
