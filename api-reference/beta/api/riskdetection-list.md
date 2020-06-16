@@ -55,6 +55,7 @@ If successful, this method returns a `200 OK` response code and a collection of 
 
 ## Examples
 
+
 ### Example 1: List risk detections
 
 #### Request
@@ -69,6 +70,82 @@ Here is an example of the request.
 
 ```msgraph-interactive
 GET https://graph.microsoft.com/beta/riskDetections
+```
+# [C#](#tab/csharp)
+[!INCLUDE [sample-code](../includes/snippets/csharp/list-riskdetection-csharp-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [JavaScript](#tab/javascript)
+[!INCLUDE [sample-code](../includes/snippets/javascript/list-riskdetection-javascript-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Objective-C](#tab/objc)
+[!INCLUDE [sample-code](../includes/snippets/objc/list-riskdetection-objc-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+---
+
+
+#### Response
+
+Here is an example of the response.
+<!-- {
+  "blockType": "response",
+  "truncated": true,
+  "isCollection": true,
+  "@odata.type": "microsoft.graph.riskDetection"
+} -->
+
+```http
+HTTP/1.1 200 OK
+Content-type: application/json
+
+{
+    "value":[
+    {
+    "id": "6a5874ca-abcd-9d82-5ad39bd71600",
+    "requestId": "6a5874ca-abcd-9d82-5ad39bd71600",
+    "correlationId": "abcd74ca-9823-4b1c-9d82-5ad39bd71600",
+    "riskEventType": "unfamiliarFeatures",
+    "riskState": "remediated",
+    "riskLevel": "medium",
+    "riskDetail": "userPerformedSecuredPasswordReset",
+    "source": "activeDirectory",
+    "detectionTimingType": "realtime",
+    "activity": "signin",
+    "tokenIssuerType": "Azure Active Directory",
+    "ipAddress": "123.456.7.89",
+    "location": {
+        "city": "Seattle",
+        "state": "Washington",
+        "countryOrRegion": "US",
+        "geoCoordinates": null
+    },
+    "activityDateTime": "2018-09-05T00:09:18.7822851Z",
+    "detectedDateTime": "2018-09-05T00:11:27.773602Z",
+    "lastUpdatedDateTime": "2018-09-05T00:11:27.773602Z",
+    "userId": "abcdefab-af90-4edf-ac4c-742ff06735d0",
+    "userDisplayName": "User ",
+    "userPrincipalName": "user@abcde.com",
+    "additionalInfo": "[{\"Key\":\"userAgent\",\"Value\":\"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/68.0.3440.106 Safari/537.36\"}]"
+    }
+    ]
+}
+```
+
+### Example 2: List risk detections
+
+#### Request
+
+Here is an example of the request.
+
+# [HTTP](#tab/http)
+<!-- {
+  "blockType": "request",
+  "name": "list_riskDetection"
+}-->
+
+```msgraph-interactive
 GET https://graph.microsoft.com/beta/identityProtection/riskDetections
 ```
 # [C#](#tab/csharp)
@@ -133,7 +210,7 @@ Content-type: application/json
 }
 ```
 
-### Example 2: List risk detections and filter the results
+### Example 3: List risk detections and filter the results
 
 #### Request
 
@@ -147,7 +224,7 @@ The following example shows how to use `$filter` to get the collection of risk d
 } -->
 
 ```msgraph-interactive
-GET https://graph.microsoft.com/beta/riskDetections?$filter=riskEventType eq 'unfamiliarFeatures' or riskLevel eq 'medium'
+GET https://graph.microsoft.com/beta/identityProtection/riskDetections?$filter=riskEventType eq 'unfamiliarFeatures' or riskLevel eq 'medium'
 ```
 # [C#](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/list-filter-riskdetections-csharp-snippets.md)]
