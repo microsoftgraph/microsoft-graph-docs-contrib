@@ -32,18 +32,19 @@ POST /applications/{id}/connectorGroup/$ref
 ## Request headers
 | Name       | Description|
 |:---------------|:----------|
-| Authorization  | Bearer. Required|
+| Authorization  | Bearer. Required.|
+| Content-type | application/json. Required.|
 
 ## Request body
-In the request body, supply a JSON representation of [connectorGroup](../resources/connectorgroup.md) object.
+In the request body, supply a JSON representation of a [connectorGroup](../resources/connectorgroup.md) object.
 
 ## Response
 
-If successful, this method returns `201 Created` response code and [application](../resources/application.md) object in the response body.
+If successful, this method returns `201 Created` response code and an [application](../resources/application.md) object in the response body.
 
 ## Example
-##### Request
-Here is an example of the request.
+### Request
+The following is an example of the request.
 <!-- {
   "blockType": "request",
   "name": "create_application_from_connectorgroup"
@@ -58,9 +59,10 @@ Content-length: 30
   "@odata.id": "https://graph.microsoft.com/onPremisesPublishingProfiles/applicationproxy/connectorGroups/{id}"
 }
 ```
-In the request body, supply a JSON representation of [application](../resources/application.md) object.
-##### Response
-Here is an example of the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.
+
+### Response
+The following is an example of the response. 
+
 <!-- {
   "blockType": "response",
   "truncated": true,
