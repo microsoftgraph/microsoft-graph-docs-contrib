@@ -26,7 +26,7 @@ One of the following permissions is required to call this API. To learn more, in
 ## HTTP request
 <!-- { "blockType": "ignored" } -->
 ```http
-POST /applications/{id}/connectorGroup/$ref
+PUT /applications/{id}/connectorGroup/$ref
 
 ```
 ## Request headers
@@ -50,7 +50,7 @@ The following is an example of the request.
   "name": "create_application_from_connectorgroup"
 }-->
 ```http
-POST https://graph.microsoft.com/beta/applications/{id}/connectorGroup/$ref
+PUT https://graph.microsoft.com/beta/applications/{id}/connectorGroup/$ref
 
 Content-type: application/json
 Content-length: 30
