@@ -51,16 +51,17 @@ Do not supply a request body for this method.
 If successful, this method returns a `200 OK` response code and a [channel](../resources/channel.md) object in the response body.
 
 ## Example
-#### Request
+### Request
 The following is an example of the request.
 <!-- {
   "blockType": "request",
   "name": "get_primaryChannel"
 }-->
-```msgraph-interactive
+
+```http
 GET https://graph.microsoft.com/beta/teams/{id}/primaryChannel
 ```
-#### Response
+### Response
 The following is an example of the response. 
 
 >**Note:** The response object shown here might be shortened for readability. All the properties will be returned from an actual call.
@@ -73,6 +74,7 @@ The following is an example of the response.
 HTTP/1.1 200 OK
 Content-type: application/json
 Content-length: 401
+
 {
     "@odata.context": "https://graph.microsoft.com/beta/$metadata#teams('32e3b156-66b2-4135-9aeb-73295a35a55b')/primaryChannel/$entity",
     "id": "19:skypespaces_dd1e128ffa85453ab1f3015468e979d5@thread.skype",
