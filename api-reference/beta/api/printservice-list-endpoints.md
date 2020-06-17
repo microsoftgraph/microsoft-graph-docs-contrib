@@ -16,7 +16,7 @@ Namespace: microsoft.graph
 Retrieve a list of endpoints exposed by a print service.
 
 ## Permissions
-No permissions are needed to call this API, but the user's tenant must have an active Universal Print subscription.
+No permissions are needed to call this API, but to use the Universal Print service, the user or app's tenant must have an active Universal Print subscription.
 
 |Permission type | Permissions (from least to most privileged) |
 |:---------------|:--------------------------------------------|
