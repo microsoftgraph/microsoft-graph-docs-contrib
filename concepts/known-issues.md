@@ -1,13 +1,17 @@
 ---
 title: "Known issues with Microsoft Graph"
-description: "This article describes known issues with Microsoft Graph. For information about the latest updates, see the Microsoft Graph changelog."
+description: "This article describes known issues with Microsoft Graph."
 author: "MSGraphDocsVTeam"
 localization_priority: Priority
 ---
 
 # Known issues with Microsoft Graph
 
-This article describes known issues with Microsoft Graph. For information about the latest updates, see the [Microsoft Graph changelog](changelog.md).
+This article describes known issues with Microsoft Graph. 
+
+To report a known issue, see the [Microsoft Graph support](https://developer.microsoft.com/graph/support) page.
+
+For information about the latest updates to the Microsoft Graph API, see the [Microsoft Graph changelog](changelog.md).
 
 ## Bookings
 
@@ -225,10 +229,11 @@ Examples of group features that support delegated and app-only permissions:
 * Getting and updating group properties pertaining to group administration or management
 * Group [directory settings](/graph/api/resources/directoryobject?view=graph-rest-1.0), type, and synchronization
 * Group owners and membership
+* Getting group conversations and threads
 
 Examples of group features that support only delegated permissions:
 
-* Group conversations, events, photo
+* Group events, photo
 * External senders, accepted or rejected senders, group subscription
 * User favorites and unseen count
 
@@ -328,7 +333,7 @@ To get a list of teams, see [list all teams](teams-list-all-teams.md) and
 [list your teams](/graph/api/user-list-joinedteams?view=graph-rest-1.0).
 
 ### POST /teams is only available in beta
-To creat teams in v1.0, see [create team](/graph/api/team-put-teams?view=graph-rest-1.0).
+To create teams in v1.0, see [create team](/graph/api/team-put-teams?view=graph-rest-1.0).
 
 ### Missing teams in list all teams
 
@@ -351,12 +356,12 @@ Reading and updating a user's profile photo is only possible if the user has a m
 Failure to read or update a photo, in this case, would result in the following error:
 
 ```javascript
-	{
-	  "error": {
-	    "code": "ErrorNonExistentMailbox",
-	    "message": "The SMTP address has no mailbox associated with it."
-	  }
-	}
+{
+  "error": {
+    "code": "ErrorNonExistentMailbox",
+    "message": "The SMTP address has no mailbox associated with it."
+  }
+}
 ```
 
 ### Using delta query
