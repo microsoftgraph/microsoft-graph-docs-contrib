@@ -45,8 +45,10 @@ Do not supply a request body for this method.
 ## Response
 
 If successful, this method returns a `200 OK` response code and a [riskDetection](../resources/riskdetection.md) object in the response body.
-## Example 1
-##### Request
+
+## Examples
+### Example 1: Get risk detections
+#### Request
 Here is an example of the request.
 
 # [HTTP](#tab/http)
@@ -56,7 +58,7 @@ Here is an example of the request.
   "sampleKeys": ["c2b6c2b9-dddc-acd0-2b39-d519d803dbc3"]
 }-->
 ```msgraph-interactive
-GET https://graph.microsoft.com/beta/riskDetections/c2b6c2b9-dddc-acd0-2b39-d519d803dbc3
+GET https://graph.microsoft.com/beta/riskDetections
 ```
 # [C#](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/get-riskdetection-csharp-snippets.md)]
@@ -72,7 +74,7 @@ GET https://graph.microsoft.com/beta/riskDetections/c2b6c2b9-dddc-acd0-2b39-d519
 
 ---
 
-##### Response
+#### Response
 Here is an example of the response.
 <!-- {
   "blockType": "response",
@@ -111,8 +113,8 @@ Content-type: application/json
     "additionalInfo": "[{\"Key\":\"userAgent\",\"Value\":\"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/68.0.3440.106 Safari/537.36\"}]"
 }
 ```
-## Example 2
-##### Request
+### Example 2: Get risk detections for specific user
+#### Request
 Here is an example of the request.
 
 # [HTTP](#tab/http)
@@ -138,7 +140,7 @@ GET https://graph.microsoft.com/beta/identityProtection/riskDetections/c2b6c2b9-
 
 ---
 
-##### Response
+#### Response
 Here is an example of the response.
 <!-- {
   "blockType": "response",
