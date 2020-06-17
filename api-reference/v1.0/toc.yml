@@ -814,6 +814,24 @@ items:
             href: api/place-get.md
           - name: Update place
             href: api/place-update.md
+    - name: Change notifications
+      displayName: Webhooks, Outlook mail, Outlook calendar, Outlook contacts, Outlook contact, People, Microsoft Teams, Teams, OneDrive, OneDrive for Business, OneDrive business, OneDrive personal, SharePoint, Security, Users, Groups
+      items:
+      - name: Overview
+        href: resources/webhooks.md
+      - name: Subscription
+        href: resources/subscription.md
+        items:
+        - name: List subscription
+          href: api/subscription-list.md
+        - name: Get subscription
+          href: api/subscription-get.md
+        - name: Create subscription
+          href: api/subscription-post-subscriptions.md
+        - name: Update subscription
+          href: api/subscription-update.md
+        - name: Delete subscription
+          href: api/subscription-delete.md
     - name: Cloud communications
       displayName: Cloud communications
       items:
@@ -877,6 +895,24 @@ items:
           href: api/onlinemeeting-get.md
         - name: Delete
           href: api/onlinemeeting-delete.md
+        - name: Create or get
+          href: api/onlinemeeting-createorget.md
+      - name: Call records
+        items:
+        - name: Overview
+          href: resources/callrecords-api-overview.md
+        - name: Call record
+          items:
+          - name: Call record
+            href: resources/callrecords-callrecord.md
+          - name: Get call record
+            href: api/callrecords-callrecord-get.md
+        - name: Session
+          items:
+          - name: Session
+            href: resources/callrecords-session.md
+          - name: List sessions
+            href: api/callrecords-session-list.md
     - name: Cross-device experiences
       displayName: Project Rome
       items:
@@ -3265,6 +3301,34 @@ items:
           href: api/educationuser-get.md
         - name: Delete user
           href: api/educationuser-delete.md
+    - name: Extensions
+      items:
+      - name: Open extensions
+        href: resources/opentypeextension.md
+        displayname: Outlook calendar, Groups, Outlook mail, Outlook contacts, Outlook contact, People, Users
+        items:
+        - name: Create open extension
+          href: api/opentypeextension-post-opentypeextension.md
+        - name: Get open extension
+          href: api/opentypeextension-get.md
+        - name: Update open extension
+          href: api/opentypeextension-update.md
+        - name: Delete open extension
+          href: api/opentypeextension-delete.md
+      - name: Schema extensions
+        href: resources/schemaextension.md
+        displayname: Outlook calendar, Groups, Outlook mail, Outlook contacts, Outlook contact, People, Users
+        items:
+        - name: List schema extensions
+          href: api/schemaextension-list.md
+        - name: Create schema extension
+          href: api/schemaextension-post-schemaextensions.md
+        - name: Get schema extension
+          href: api/schemaextension-get.md
+        - name: Update schema extension
+          href: api/schemaextension-update.md
+        - name: Delete schema extension
+          href: api/schemaextension-delete.md 
     - name: Files
       displayName: OneDrive, OneDrive for Business, OneDrive business, OneDrive personal, SharePoint
       items:
@@ -3445,6 +3509,19 @@ items:
         items:
         - name: Get data policy operation
           href: api/datapolicyoperation-get.md
+      - name: Delegated permission grants
+        href: resources/oauth2permissiongrant.md
+        items:
+        - name: List
+          href: api/oauth2permissiongrant-list.md
+        - name: Create
+          href: api/oauth2permissiongrant-post.md
+        - name: Get
+          href: api/oauth2permissiongrant-get.md
+        - name: Update
+          href: api/oauth2permissiongrant-update.md
+        - name: Delete
+          href: api/oauth2permissiongrant-delete.md
       - name: Deleted items
         href: resources/directory.md
         items:
@@ -3599,19 +3676,6 @@ items:
         items:
         - name: Create invitation
           href: api/invitation-post.md
-      - name: Delegated permission grants
-        href: resources/oauth2permissiongrant.md
-        items:
-        - name: List
-          href: api/oauth2permissiongrant-list.md
-        - name: Create
-          href: api/oauth2permissiongrant-post.md
-        - name: Get
-          href: api/oauth2permissiongrant-get.md
-        - name: Update
-          href: api/oauth2permissiongrant-update.md
-        - name: Delete
-          href: api/oauth2permissiongrant-delete.md
       - name: Organization
         href: resources/organization.md
         items:
@@ -4596,9 +4660,10 @@ items:
           href: api/channel-post-messages.md
         - name: Reply to message
           href: api/channel-post-messagereply.md
-      - name: App Catalog
-        href: resources/teamsapp.md
+      - name: App catalog
         items:
+        - name: App in catalog
+          href: resources/teamsapp.md
         - name: Publish apps to catalog
           href: api/teamsapp-publish.md
         - name: List apps in catalog
@@ -4957,50 +5022,3 @@ items:
           href: api/nameditem-add.md
         - name: List range
           href: api/nameditem-range.md
-    - name: Tools
-      expanded: true
-      items:
-      - name: Open extensions
-        href: resources/opentypeextension.md
-        displayname: Outlook calendar, Groups, Outlook mail, Outlook contacts, Outlook contact, People, Users
-        items:
-        - name: Create open extension
-          href: api/opentypeextension-post-opentypeextension.md
-        - name: Get open extension
-          href: api/opentypeextension-get.md
-        - name: Update open extension
-          href: api/opentypeextension-update.md
-        - name: Delete open extension
-          href: api/opentypeextension-delete.md
-      - name: Schema extensions
-        href: resources/schemaextension.md
-        displayname: Outlook calendar, Groups, Outlook mail, Outlook contacts, Outlook contact, People, Users
-        items:
-        - name: List schema extensions
-          href: api/schemaextension-list.md
-        - name: Create schema extension
-          href: api/schemaextension-post-schemaextensions.md
-        - name: Get schema extension
-          href: api/schemaextension-get.md
-        - name: Update schema extension
-          href: api/schemaextension-update.md
-        - name: Delete schema extension
-          href: api/schemaextension-delete.md
-      - name: Change notifications
-        displayName: Webhooks, Outlook mail, Outlook calendar, Outlook contacts, Outlook contact, People, Microsoft Teams, Teams, OneDrive, OneDrive for Business, OneDrive business, OneDrive personal, SharePoint, Security, Users, Groups
-        items:
-        - name: Overview
-          href: resources/webhooks.md
-        - name: Subscription
-          href: resources/subscription.md
-          items:
-          - name: List subscription
-            href: api/subscription-list.md
-          - name: Get subscription
-            href: api/subscription-get.md
-          - name: Create subscription
-            href: api/subscription-post-subscriptions.md
-          - name: Update subscription
-            href: api/subscription-update.md
-          - name: Delete subscription
-            href: api/subscription-delete.md
