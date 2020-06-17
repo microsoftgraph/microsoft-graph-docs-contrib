@@ -54,6 +54,8 @@ If successful, this method returns a `200 OK` response code and [regionalAndLang
 #### Request
 
 # [HTTP](#tab/http)
+
+# [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "get_regionalAndLanguageSettings"
@@ -61,6 +63,20 @@ If successful, this method returns a `200 OK` response code and [regionalAndLang
 ```msgraph-interactive
 GET https://graph.microsoft.com/beta/me/settings/regionalAndLanguageSettings
 ```
+# [C#](#tab/csharp)
+[!INCLUDE [sample-code](../includes/snippets/csharp/get-regionalandlanguagesettings-csharp-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [JavaScript](#tab/javascript)
+[!INCLUDE [sample-code](../includes/snippets/javascript/get-regionalandlanguagesettings-javascript-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Objective-C](#tab/objc)
+[!INCLUDE [sample-code](../includes/snippets/objc/get-regionalandlanguagesettings-objc-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+---
+
 
 ##### Response
 Here is an example of the response. Note: The response object shown here may be truncated for brevity. 
