@@ -50,8 +50,6 @@ In the request body, provide a JSON object with the following properties.
 |certificateSigningRequest|String|[printCertificateSigningRequest](../resources/printcertificatesigningrequest.md)|The X.509 Certificate Signing Request (CSR) for the certificate created and used by the printer to identify itself.|Yes|
 |connectorId|String|Id of Connector acting as proxy to the printer.|No|
 
-## Response
-If successful, this method returns a `202 Accepted` response code and a link to the associated [printOperation](../resources/printoperation.md).
 ## Example
 ##### Request
 The following is an example of the request. For help with creating the required Certificate Signing Request (CSR) see this [code sample](https://docs.microsoft.com/en-us/universal-print/hardware/universal-print-oem-certificate-signing-request).
@@ -81,18 +79,8 @@ Content-length: 319
 ```
 
 ## Response
-If successful, this method returns `202 Accepted` response code. It does not return anything in the response body.
+If successful, this method returns a `202 Accepted` response code and a link to the associated [printOperation](../resources/printoperation.md).
 
-## Example
-##### Request
-The following is an example of the request.
-<!-- {
-  "blockType": "request",
-  "name": "create_printer"
-}-->
-```http
-DELETE https://graph.microsoft.com/beta/print/printers/{id}/allowedGroup/{id}/$ref
-```
 ##### Response
 The following is an example of the response.
 >**Note:** The response object shown here might be shortened for readability. All the properties will be returned from an actual call.
