@@ -36,14 +36,14 @@ Using the Microsoft Graph API, an app can subscribe to changes on the following 
 - Content within the hierarchy of _any folder_ [driveItem][] on a user's personal OneDrive
 - Content within the hierarchy of the _root folder_ [driveItem][] on OneDrive for Business
 - Security [alert][]
-- Teams [callRecord][] (preview)
+- Teams [callRecord][]
 - Teams [chatMessage][] (preview)
 
 You can create a subscription to a specific Outlook folder such as the Inbox:
 `me/mailFolders('inbox')/messages`
 
 Or to a top-level resource:
-`me/messages`, `me/contacts`, `me/events`, `users`, or `groups`
+`/me/messages`, `/me/contacts`, `/me/events`, `users`, `groups`, or `/communications/callRecords`
 
 Or to a specific resource instance:
 `users/{id}`, `groups/{id}`, `groups/{id}/conversations`
@@ -192,66 +192,44 @@ If successful, Microsoft Graph returns a `204 No Content` code.
 
 ## Change notifications
 
-The client starts receiving change notifications after creating the subscription. Microsoft Graph sends a POST request to the notification URL when the resource changes. Change notifications are sent only for the changes of the type specified in the subscription, for example, `created`.
+With a client subscribing to changes to a resource, Microsoft Graph sends a `POST` request to the notification URL whenever the resource changes. It sends notifications only for changes of the type that's specified in the subscription, for example, `created`.
 
-> **Note:** When using multiple subscriptions that monitor the same resource type and use the same notification URL, a POST can be sent that will contain multiple change notifications with different subscription IDs. There is no guarantee that all change notifications in the POST will belong to a single subscription.
-
-### Notification properties
-
-The change notification object has the following properties:
-
-| Property | Type | Description |
-|:---------|:-----|:------------|
-| subscriptionId | string | The ID of the subscription that generated the notification. |
-| subscriptionExpirationDateTime | [dateTime](https://tools.ietf.org/html/rfc3339) | The expiration time for the subscription. |
-| clientState | string | The `clientState` property specified in the subscription request (if any). |
-| changeType | string | The event type that caused the change notification. For example, `created` on mail receive, or `updated` on marking a message read. |
-| resource | string | The URI of the resource relative to `https://graph.microsoft.com`. |
-| resourceData | object | The content of this property depends on the type of resource being subscribed to. |
-| tenantId | string | The ID of the tenant the change notification originated from. |
-
-For example, for Outlook resources, `resourceData` contains the following fields:
-
-| Property | Type | Description |
-|:---------|:-----|:------------|
-| @odata.type | string | The OData entity type in Microsoft Graph that describes the represented object. |
-| @odata.id | string | The OData identifier of the object. |
-| @odata.etag | string | The HTTP entity tag that represents the version of the object. |
-| id | string | The identifier of the object. |
-
-> **Note:** The `id` value provided in `resourceData` is valid at the time the change notification was generated. Some actions, such as moving a message to another folder, may result in the `id` no longer being valid when the change notification is processed.
+> **Note:** If a client has multiple subscriptions that monitor the same resource and use the same notification URL, Microsoft Graph can send multiple change notifications that correspond to different subscriptions, each showing the corresponding subscription ID. There is no guarantee that all change notifications in the `POST` request belong to a single subscription.
 
 ### Change notification example
 
-When the user receives an email, Microsoft Graph sends a change notification like the following:
+This section shows an example of a notification for a message creation. When the user receives an email, Microsoft Graph sends a change notification as shown in the following example.
+Note that the notification is in a collection represented in the `value` field. See [changeNotificationCollection](/graph/api/resources/changenotificationcollection) for details of the notification payload. 
+
+When many changes occur, Microsoft Graph may send multiple notifications that correspond to different subscriptions in the same `POST` request.
 
 ```json
 {
   "value": [
     {
-      "subscriptionId":"<subscription_guid>",
+      "id": "lsgTZMr9KwAAA",
+      "sequenceNumber": 10,
+      "subscriptionId":"{subscription_guid}",
       "subscriptionExpirationDateTime":"2016-03-19T22:11:09.952Z",
       "clientState":"secretClientValue",
       "changeType":"created",
-      "resource":"users/{user_guid}@<tenant_guid>/messages/{long_id_string}",
+      "resource":"users/{user_guid}@{tenant_guid}/messages/{long_id_string}",
       "tenantId": "84bd8158-6d4d-4958-8b9f-9d6445542f95",
       "resourceData":
       {
         "@odata.type":"#Microsoft.Graph.Message",
-        "@odata.id":"Users/{user_guid}@<tenant_guid>/Messages/{long_id_string}",
+        "@odata.id":"Users/{user_guid}@{tenant_guid}/Messages/{long_id_string}",
         "@odata.etag":"W/\"CQAAABYAAADkrWGo7bouTKlsgTZMr9KwAAAUWRHf\"",
-        "id":"<long_id_string>"
+        "id":"{long_id_string}"
       }
     }
   ]
 }
 ```
 
-Note the `value` field is an array of objects. When there are many queued change notifications, Microsoft Graph may send multiple items in a single request. Change notifications from different subscriptions can be included in the same request.
-
 ### Processing the change notification
 
-Each change notification received by your app should be processed. The following are the minimum tasks that your app must perform to process a change notification:
+Your process should process every change notification it receives. The following are the minimum tasks that your app must perform to process a change notification:
 
 1. Send a `202 - Accepted` status code in your response to Microsoft Graph. If Microsoft Graph doesn't receive a 2xx class code, it will try to publishing the change notification a number of times, for a period of about 4 hours; after that, the change notification will be dropped and won't be delivered.
 
@@ -285,6 +263,8 @@ You can optionally configure the firewall that protects your notification URL to
 - [Subscription resource type](/graph/api/resources/subscription?view=graph-rest-1.0)
 - [Get subscription](/graph/api/subscription-get?view=graph-rest-1.0)
 - [Create subscription](/graph/api/subscription-post-subscriptions?view=graph-rest-1.0)
+- [changeNotification](/graph/api/resources/changenotification?view=graph-rest-beta) resource type
+- [changeNotificationCollection](/graph/api/resources/changenotificationcollection?view=graph-rest-beta) resource type
 - [Change notifications tutorial](/graph/tutorials/change-notifications)
 - [Lifecycle notifications (preview)](/graph/concepts/webhooks-outlook-authz.md)
 
@@ -296,5 +276,5 @@ You can optionally configure the firewall that protects your notification URL to
 [message]: /graph/api/resources/message?view=graph-rest-1.0
 [user]: /graph/api/resources/user?view=graph-rest-1.0
 [alert]: /graph/api/resources/alert?view=graph-rest-1.0
-[callRecord]: /graph/api/resources/callrecords-callrecord
+[callRecord]: /graph/api/resources/callrecords-callrecord?view=graph-rest-1.0
 [chatMessage]: /graph/api/resources/chatmessage
