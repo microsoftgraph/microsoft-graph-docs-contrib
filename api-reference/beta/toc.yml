@@ -11183,7 +11183,7 @@ items:
           href: api/channel-patch.md
         - name: Delete channel
           href: api/channel-delete.md
-        - name: Get filesfolder
+        - name: Get files folder
           href: api/channel-get-filesfolder.md
         - name: List channel messages
           href: api/channel-list-messages.md
