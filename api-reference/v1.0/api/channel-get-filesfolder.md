@@ -47,17 +47,17 @@ Do not supply a request body for this method.
 If successful, this method returns a `200 OK` response code and a [driveItem](../resources/driveitem.md) object in the response body.
 
 ## Example
-#### Request
+### Request
 
 The following is an example of the request.
 <!-- {
   "blockType": "request",
   "name": "get_filesFolder"
 }-->
-```msgraph-interactive
+```http
 GET https://graph.microsoft.com/v1.0/teams/{id}/channels/{id}/filesFolder
 ```
-#### Response
+### Response
 
 The following is an example of the response. 
 
@@ -71,6 +71,7 @@ The following is an example of the response.
 HTTP/1.1 200 OK
 Content-type: application/json
 Content-length: 401
+
 {
     "@odata.context": "https://graph.microsoft.com/v1.0/$metadata#teams('32e3b156-66b2-4135-9aeb-73295a35a55b')/channels('19%3Af253e46c035b42308e9a4a22a87037af%40thread.skype')/filesFolder/$entity",
     "id": "01H7CFEKENJSSIUHGADZBKODARINQC5JMD",
