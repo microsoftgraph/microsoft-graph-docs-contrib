@@ -47,7 +47,7 @@ In the request body, provide a JSON object with the following properties.
 |model|String|The model of the printer.|Yes|
 |physicalDeviceId|String|The physical device UUID of the printer. If the `hasPhysicalDevice` property is true or ommitted, this property is required.|No|
 |hasPhysicalDevice|Boolean|True if the printer has a physical output device; false otherwise.|No|
-|certificateSigningRequest|String|[printCertificateSigningRequest](../resources/printcertificatesigningrequest.md)|The X.509 Certificate Signing Request (CSR) for the certificate created and used by the printer to identify itself.|Yes|
+|certificateSigningRequest|[printCertificateSigningRequest](../resources/printcertificatesigningrequest.md)|The X.509 Certificate Signing Request (CSR) for the certificate created and used by the printer to identify itself.|Yes|
 |connectorId|String|Id of Connector acting as proxy to the printer.|No|
 
 ## Example
