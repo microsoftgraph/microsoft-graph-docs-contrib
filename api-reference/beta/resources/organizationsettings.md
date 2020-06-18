@@ -30,6 +30,24 @@ None
 |:-------------|:------------|:------------|
 |profileCardProperties|[profileCardProperty](profilecardproperty.md) collection| Read-only. Nullable.|
 
+## JSON representation
+
+Here is a JSON representation of the resource
+
+<!-- {
+  "blockType": "resource",
+  "optionalProperties": [
+    "profileCardProperties"
+  ],
+  "keyProperty": "id",
+  "@odata.type": "microsoft.graph.organizationSettings"
+}-->
+
+```json
+{
+
+}
+```
 <!-- uuid: 16cd6b66-4b1a-43a1-adaf-3a886856ed98
 2019-02-04 14:57:30 UTC -->
 <!-- {
