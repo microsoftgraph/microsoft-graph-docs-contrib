@@ -45,8 +45,9 @@ Do not supply a request body for this method.
 ## Response
 
 If successful, this method returns a `200 OK` response code and a [riskyUser](../resources/riskyuser.md) object in the response body.
-## Example 1
-##### Request
+## Examples
+### Example 1: Get a risky user
+#### Request
 Here is an example of the request.
 
 # [HTTP](#tab/http)
@@ -72,7 +73,7 @@ GET https://graph.microsoft.com/beta/riskyUsers/c2b6c2b9-dddc-acd0-2b39-d519d803
 
 ---
 
-##### Response
+#### Response
 Here is an example of the response.
 <!-- {
   "blockType": "response",
@@ -96,8 +97,8 @@ Content-type: application/json
   "userPrincipalName": "alexw@contoso.com"
 }
 ```
-## Example 2
-##### Request
+### Example 2: Get risky users
+#### Request
 Here is an example of the request.
 
 # [HTTP](#tab/http)
@@ -107,7 +108,7 @@ Here is an example of the request.
   "sampleKeys": ["c2b6c2b9-dddc-acd0-2b39-d519d803dbc3"]
 }-->
 ```msgraph-interactive
-GET https://graph.microsoft.com/beta/identityProtection/riskyUsers/c2b6c2b9-dddc-acd0-2b39-d519d803dbc3
+GET https://graph.microsoft.com/beta/identityProtection/riskyUsers
 ```
 # [C#](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/get-riskyuser-csharp-snippets.md)]
@@ -123,7 +124,7 @@ GET https://graph.microsoft.com/beta/identityProtection/riskyUsers/c2b6c2b9-dddc
 
 ---
 
-##### Response
+#### Response
 Here is an example of the response.
 <!-- {
   "blockType": "response",
