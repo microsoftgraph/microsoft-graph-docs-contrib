@@ -22,7 +22,7 @@ Represents the data provider to use as the synchronization source for a [educati
 | Data Provider                       | Description                                                                                        |
 | :---------------------------------- | :------------------------------------------------------------------------------------------------- |
 | [educationCsvDataProvider]          | CSV files uploaded to the Profile's [SAS URL](../api/educationsynchronizationprofile-uploadurl.md) |
-| [educationOneRosterApiDataProvider] | OneRoster v1.1 API                                                                                 |
+| [educationOneRosterApiDataProvider](educationonerosterapidataprovider.md) | OneRoster v1.1 API                                                                                 |
 | [educationPowerSchoolDataProvider]  | PowerSchool API                                                                                    |
 
 ## Properties
