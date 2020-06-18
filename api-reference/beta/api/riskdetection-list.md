@@ -133,7 +133,7 @@ Content-type: application/json
 }
 ```
 
-### Example 2: List risk detections
+### Example 2: List risk detections for a specific user
 
 #### Request
 
@@ -146,7 +146,7 @@ Here is an example of the request.
 }-->
 
 ```msgraph-interactive
-GET https://graph.microsoft.com/beta/identityProtection/riskDetections
+GET https://graph.microsoft.com/beta/identityProtection/riskDetections/c2b6c2b9-dddc-acd0-2b39-d519d803dbc3
 ```
 # [C#](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/list-riskdetection-csharp-snippets.md)]
