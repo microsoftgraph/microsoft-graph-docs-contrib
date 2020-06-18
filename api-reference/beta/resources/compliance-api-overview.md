@@ -13,7 +13,10 @@ doc_type: resourcePageType
 
 The Microsoft Graph Compliance API provides a unified interface and schema to integrate with compliance solutions from Microsoft and ecosystem partners. This empowers customers to streamline compliance operations and better comply with legal or regulatory standards.  For more information about microsoft compliance see [Microsoft 365 compliance documentation](https://docs.microsoft.com/microsoft-365/compliance). Use the Microsoft Graph Compliance API to build applications that:
 
-- ???
+The Microsoft Graph Compliance API provides a unified interface and schema to integrate with compliance solutions from Microsoft and ecosystem partners. This can help customers streamline their compliance operations to better manage and monitor their data, protect information, minimize insider risk, perform legal and internal investigations, and comply with legal or regulatory standards. For more information about Microsoft compliance, see [Microsoft 365 compliance documentation](https://docs.microsoft.com/microsoft-365/compliance).
+
+Use the Microsoft Graph Compliance API to build applications that:
+
 - Automate common tasks in eDiscovery
 
 The Microsoft Graph Compliance API includes the following key entities.
