@@ -8,7 +8,7 @@ ms.custom: graphiamtop20
 
 # Get incremental changes to events in a calendar view 
 
-A calendar view is a collection of events in a date/time range from the default calendar (../me/calendarview) 
+A calendar view is a collection of events in a date/time range (../me/calendarview) from the default calendar 
 or some other specified calendar of a user, or from a group calendar. By using delta query, you can get 
 new, updated, or deleted events in a calendar view. 
 The returned events may include single instances, or occurrences and exceptions of a recurring series. The delta data enables you to maintain 

@@ -13,13 +13,13 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Get a set of events that have been added, deleted, or updated in one or more calendars. 
+Get a set of [event](../resources/event.md) resources that have been added, deleted, or updated in one or more calendars. 
 
-You can get specific types of incremental changes in all the calendars of a mailbox, in a specific calendar, or in a **calendarView** (range of events defined by start and end dates) of a calendar. The calendar can be the default calendar or some other specified calendar of the user's, or, it can be a group calendar.
+You can get specific types of these incremental changes in the events in all the calendars of a mailbox or in a specific calendar, or in an event collection of a **calendarView** (range of events defined by start and end dates) of a calendar. The calendar can be the default calendar or some other specified calendar of the user's, or, it can be a group calendar.
 
-A **delta** function call for events is similar to a `GET /events` or `GET /calendarview` request for
+A **delta** function call is similar to a `GET /events` or `GET /calendarview` request for
 the specified calendar, except that by appropriately applying [state tokens](/graph/delta-query-overview) in one or more of these calls,
-you can query for incremental changes in that calender. This allows you to maintain and synchronize
+you can query for incremental changes of events in that calender. This allows you to maintain and synchronize
 a local store of events in the specified calendar, without having to fetch all the events of that calendar
 from the server every time.
 
@@ -27,9 +27,9 @@ The following table lists the differences between the **delta** function on even
 
 | Delta function on events  | Delta function on calendarView  |
 |:--------------------------|:---------------------------------------------------------|
-| Gets incremental changes of all the events in a calendar, or optionally, of the events starting on or after a specified date/time. | Gets incremental changes of events within the start and end date/time of the calendarView. |
-| Returns only a limited set of properties for performance, client to subsequently use `GET /events/{id}` to expand any events. | Server-side expansion returns fuller set of event properties. |
-| Response includes single instances and series master. | Response includes single instances, and occurrences and exceptions of recurring series. | 
+| Gets incremental changes of all the events in a calendar, or optionally, of the events starting on or after a specified date/time. | Gets incremental changes of events within the start and end date/time of the **calendarView**. |
+| Returns only a limited set of **event** properties for performance reasons. Client to subsequently use `GET /events/{id}` to expand any events. | Server-side expansion returns a fuller set of **event** properties. |
+| Response includes single instances and recurring series master. | Response includes single instances, and occurrences and exceptions of recurring series. | 
 
 ## Permissions
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
@@ -41,6 +41,8 @@ One of the following permissions is required to call this API. To learn more, in
 |Application | Calendars.Read, Calendars.ReadWrite |
 
 ## HTTP request
+
+This section shows the HTTP request syntax for the initial **delta** function call to start a full synchronization that retrieves all the events in the specified calendar or calendar view. Use the query URL returned in a `nextLink` or `deltaLink` of a previous successful response for the next **delta** function call.
 
 ### Delta function on events in a user calendar
 Apply the **delta** function on all the events or events starting on or after a specific date/time, in the specified user calendar(s):
@@ -132,7 +134,7 @@ Apply the **delta** function on a range of events delimited by start and end dat
 
 ## Query parameters
 
-Tracking changes in events incurs a round of one or more **delta** function calls. If you use any query parameter
+Tracking changes incurs a round of one or more **delta** function calls. If you use any query parameter
 (other than `$deltatoken` and `$skiptoken`), you must specify
 it in the initial **delta** request. Microsoft Graph automatically encodes any specified parameters
 into the token portion of the `nextLink` or `deltaLink` URL provided in the response. You only need to specify any desired query parameters once upfront.
@@ -141,14 +143,12 @@ includes the encoded, desired parameters.
 
 | Query parameter	   | Type	|Description|
 |:---------------|:--------|:----------|
-|startDateTime|String|The start date and time of the time range, represented in ISO 8601 format. For example, "2019-11-08T19:00:00-08:00". Optional for **delta** on events in a calendar, required for **delta** on **calendarView**. |
-|endDateTime|String|The end date and time of the time range, represented in ISO 8601 format. For example, "2019-11-08T20:00:00-08:00". Not supported by **delta** on events in a calendar, required for **delta** on **calendarView**.|
+|startDateTime|String|The start date and time of the time range, represented in ISO 8601 format. For example, "2019-11-08T19:00:00-08:00". <br>The timezone is specified in the timezone offset portion of the parameter value, and is not impacted by the `Prefer: outlook.timezone` header if present. If no timezone offset is included in the value, it is interpreted as UTC.<br>Optional for **delta** on events in a calendar. <br>Required for **delta** on **calendarView**. |
+|endDateTime|String|The end date and time of the time range, represented in ISO 8601 format. For example, "2019-11-08T20:00:00-08:00". <br>The timezone is specified in the timezone offset portion of the parameter value, and is not impacted by the `Prefer: outlook.timezone` header if present. If no timezone offset is included in the value, it is interpreted as UTC.<br>_Not supported_ by **delta** on events in a calendar. <br>Required for **delta** on **calendarView**.|
 | $deltatoken | string | A [state token](/graph/delta-query-overview) returned in the `deltaLink` URL of the previous **delta** function call for the same calendar view, indicating the completion of that round of change tracking. Save and apply the entire `deltaLink` URL including this token in the first request of the next round of change tracking for that calendar view.|
 | $skiptoken | string | A [state token](/graph/delta-query-overview) returned in the `nextLink` URL of the previous **delta** function call, indicating there are further changes to be tracked in the same calendar view. |
 
-The values of `startDateTime` and `endDateTime` are interpreted using the timezone offset specified in the value and are not impacted by the `Prefer: outlook.timezone` header if present. If no timezone offset is included in the value, it is interpreted as UTC.
-
-`$expand`, `$filter`, `$orderby`, `$select`, and `$search` are not supported.
+Does not support `$expand`, `$filter`, `$orderby`, `$select`, and `$search`.
 
 
 ## Request headers
@@ -163,7 +163,7 @@ The values of `startDateTime` and `endDateTime` are interpreted using the timezo
 
 ### Delta function on events 
 If successful, this method returns a `200 OK` response code and an [event](../resources/event.md) collection in the response body. Each **event** in the response contains only 
-the **id**, **type**, **start** and **end** properties for performance. Use `GET /events/{id}` subsequently to expand any events from the response.  
+the **id**, **type**, **start** and **end** properties for performance reasons. Use `GET /events/{id}` subsequently to expand any events from the response.  
 
 ### Delta function on calendarView
 If successful, this method returns a `200 OK` response code and an [event](../resources/event.md) collection in the response body.
@@ -174,7 +174,7 @@ Expect to get all the properties you'd normally get from a `GET /calendarview` r
 
 ### Example 1: Delta function on events in a calendar
 #### Request
-The following example shows the initial sync request to get events in the signed-in user's default calendar, that occur on or after the specified `startDateTime`. The initial request does not include any state token. 
+The following example shows the initial sync request to get events in the signed-in user's default calendar, that occur on or after the specified `startDateTime` parameter. The initial request does not include any state token. 
 
 The request uses the `Prefer: odata.maxpagesize` header to limit the maximum number of events in each response to 1. 
 Continue calling the `delta` function by using the query returned in `@odata.nextLink` until you get a `@odata.deltaLink` in the response.
@@ -191,14 +191,13 @@ Prefer: odata.maxpagesize=1
 
 #### Response
 
-If the request is successful, the response would include a state token, which is either a _skipToken_
-(in an _@odata.nextLink_ response header) or a _deltaToken_ (in an _@odata.deltaLink_ response header).
+If the request is successful, the response includes a state token, which is either a _skipToken_
+(in an _\@odata.nextLink_ response header) or a _deltaToken_ (in an _\@odata.deltaLink_ response header).
 Respectively, they indicate whether you should continue with the round or you have completed
 getting all the changes for that round.
 
-The response below shows a _skipToken_ in an _@odata.nextLink_ response header.
+The response below shows a _skipToken_ in an _\@odata.nextLink_ response header.
 
-Note: The response object shown here may be truncated for brevity. 
 <!-- {
   "blockType": "response",
   "name": "event_delta_events",
@@ -263,12 +262,12 @@ Prefer: odata.maxpagesize=2
 
 #### Response
 
-If the request is successful, the response would include a state token, which is either a _skipToken_
-(in an _@odata.nextLink_ response header) or a _deltaToken_ (in an _@odata.deltaLink_ response header).
+If the request is successful, the response includes a state token, which is either a _skipToken_
+(in an _\@odata.nextLink_ response header) or a _deltaToken_ (in an _\@odata.deltaLink_ response header).
 Respectively, they indicate whether you should continue with the round or you have completed
 getting all the changes for that round.
 
-The response below shows a _skipToken_ in an _@odata.nextLink_ response header.
+The response below shows a _skipToken_ in an _\@odata.nextLink_ response header.
 
 Note: The response object shown here may be truncated for brevity. 
 <!-- {
