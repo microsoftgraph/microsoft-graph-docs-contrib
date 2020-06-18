@@ -37,15 +37,16 @@ Here is a JSON representation of the resource
 <!-- {
   "blockType": "resource",
   "optionalProperties": [
-    "profileCardProperties"
+
   ],
-  "keyProperty": "id",
-  "@odata.type": "microsoft.graph.organizationSettings"
+  "@odata.type": "microsoft.graph.organizationSettings",
+  "baseType": "",
+  "keyProperty": "id"
 }-->
 
 ```json
 {
-
+  "id": "String (identifier)"
 }
 ```
 <!-- uuid: 16cd6b66-4b1a-43a1-adaf-3a886856ed98
