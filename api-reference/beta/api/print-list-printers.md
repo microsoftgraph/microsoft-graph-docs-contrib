@@ -18,7 +18,7 @@ Retrieve the list of **printers** that are registered in the tenant.
 ## Permissions
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
 
-To use the Universal Print service, the user or app's tenant must have an active Universal Print subscription in addition to the permissions listed above.
+To use the Universal Print service, the user or app's tenant must have an active Universal Print subscription, in addition to the permissions listed listed in the following table.
 
 |Permission type | Permissions (from least to most privileged) |
 |:---------------|:--------------------------------------------|

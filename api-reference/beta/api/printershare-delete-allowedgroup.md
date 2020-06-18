@@ -18,7 +18,7 @@ Revoke the specified group's access to submit print jobs to the associated [prin
 ## Permissions
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
 
-To use the Universal Print service, the user or app's tenant must have an active Universal Print subscription in addition to the permissions listed above.
+To use the Universal Print service, the user or app's tenant must have an active Universal Print subscription, in addition to the permissions listed listed in the following table.
 
 |Permission type | Permissions (from least to most privileged) |
 |:---------------|:--------------------------------------------|
