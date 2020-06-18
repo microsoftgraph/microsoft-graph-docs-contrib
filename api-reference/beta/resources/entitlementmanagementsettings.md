@@ -20,6 +20,7 @@ The settings control the behavior of [Azure AD entitlement management](entitleme
 | Method       | Return Type | Description |
 |:-------------|:------------|:------------|
 | [Get](../api/entitlementmanagementsettings-get.md) | [entitlementManagementSettings](entitlementmanagementsettings.md) | Read properties of an **entitlementManagementSettings** object. |
+| [Update](../api/entitlementmanagementsettings-update.md) | [entitlementManagementSettings](entitlementmanagementsettings.md) | Update properties of an **entitlementManagementSettings** object. |
 
 ## Properties
 
