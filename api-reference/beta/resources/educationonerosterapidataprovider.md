@@ -24,12 +24,12 @@ Derived from [educationSynchronizationDataProvider](educationsynchronizationdata
 | connectionUrl      | String                                       | The connection URL to the OneRoster instance.                                                         |
 | providerName       | String                                       | The OneRoster Service Provider name as defined by the [OneRoster specification][oneroster].           |
 | schoolsIds         | String collection                            | The list of [School/Org][orgs] `sourcedId` to sync.                                                   |
-| termIds            | String collection                            | The list of [Academic Sessions][terms] to sync.                                                       |
+| termIds            | String collection                            | The list of [academic sessions][terms] to sync.                                                       |
 | connectionSettings | [educationSynchronizationConnectionSettings] | The [OAuth 1.0][onerosteroauth1] or [OAuth 2.0][onerosteroauth2] settings for the OneRoster instance. |
 | customizations     | [educationSynchronizationCustomizations])    | Optional customization to be applied to the synchronization profile.                                  |
 
 > [!IMPORTANT]
-> OneRoster uses Academic Sessions to segment their data rather than a single School Year. This segmentation is abstracted away within School Data Sync UI but not this API. Developers will need to call the OneRoster `/terms` endpoint to obtain the collection of Academic Session Ids in order to populate the `termIds` collection.
+> OneRoster uses academic sessions rather than a single school year to segment their data. This segmentation is abstracted away within School Data Sync UI but not this API. You will need to call the OneRoster `/terms` endpoint to get the collection of academic session IDs in order to populate the `termIds` collection.
 
 [educationsynchronizationconnectionsettings]: educationsynchronizationconnectionsettings.md
 [educationsynchronizationcustomizations]: educationsynchronizationcustomizations.md
