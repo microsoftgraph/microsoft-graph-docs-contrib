@@ -45,8 +45,9 @@ Specify the userIds to dismiss in the request body.
 ## Response
 
 If successful, this method returns a `204 No Content` response code. It does not return anything in the response body.
-## Example 1
-##### Request
+## Examples
+### Example 1: Dismiss risky users
+#### Request
 Here is an example of the request.
 
 # [HTTP](#tab/http)
@@ -79,7 +80,7 @@ Content-Type: application/json
 
 ---
 
-##### Response
+#### Response
 Here is an example of the response.
 <!-- {
   "blockType": "response",
@@ -89,8 +90,8 @@ Here is an example of the response.
 HTTP/1.1 204 No Content
 ```
 
-## Example 2
-##### Request
+### Example 2: Dismiss a risky user
+#### Request
 Here is an example of the request.
 
 # [HTTP](#tab/http)
@@ -104,8 +105,7 @@ Content-Type: application/json
 
 {
   "userIds": [
-    "04487ee0-f4f6-4e7f-8999-facc5a30e232",
-    "13387ee0-f4f6-4e7f-8999-facc5120e345"
+    "04487ee0-f4f6-4e7f-8999-facc5a30e232"
   ]
 }
 ```
@@ -123,7 +123,7 @@ Content-Type: application/json
 
 ---
 
-##### Response
+#### Response
 Here is an example of the response.
 <!-- {
   "blockType": "response",
