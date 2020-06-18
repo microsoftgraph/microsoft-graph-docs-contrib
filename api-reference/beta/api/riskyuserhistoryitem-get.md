@@ -46,8 +46,8 @@ Do not supply a request body for this method.
 
 If successful, this method returns a `200 OK` response code and a [riskyUserHistoryItem](../resources/riskyuserhistoryitem.md) object in the response body.
 
-## Example 1
-##### Request
+## Example 1: Get history of a risky user
+#### Request
 Here is an example of the request.
 
 # [HTTP](#tab/http)
@@ -73,7 +73,7 @@ GET https://graph.microsoft.com/beta/riskyUsers/41a31b00-3b3b-42d9-8f1c-6d4f14e7
 
 ---
 
-##### Response
+#### Response
 Here is an example of the response.
 <!-- {
   "blockType": "response",
@@ -104,8 +104,8 @@ Content-type: application/json
 }
 ```
 
-## Example 2
-##### Request
+## Example 2: Get history of a risky user
+#### Request
 Here is an example of the request.
 
 # [HTTP](#tab/http)
@@ -131,7 +131,7 @@ GET https://graph.microsoft.com/beta/identityProtection/riskyUsers/41a31b00-3b3b
 
 ---
 
-##### Response
+#### Response
 Here is an example of the response.
 <!-- {
   "blockType": "response",
