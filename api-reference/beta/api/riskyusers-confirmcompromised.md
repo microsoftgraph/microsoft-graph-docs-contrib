@@ -45,7 +45,8 @@ Specify the risky user IDs to dismiss in the request body.
 ## Response
 
 If successful, this method returns a `204 No Content` response code. It does not return anything in the response body.
-## Example 1: Confirm users as compromised
+## Examples
+### Example 1: Confirm users as compromised
 #### Request
 Here is an example of the request.
 
@@ -88,7 +89,7 @@ Here is an example of the response.
 ```http
 HTTP/1.1 204 No Content
 ```
-## Example 2: Confirm a user as compromised
+### Example 2: Confirm a user as compromised
 #### Request
 Here is an example of the request.
 
