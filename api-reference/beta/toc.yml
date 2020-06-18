@@ -9523,6 +9523,8 @@ items:
           items:
           - name: Get
             href: api/entitlementmanagementsettings-get.md
+          - name: Update
+            href: api/entitlementmanagementsettings-update.md
       - name: Feature rollout policy
         href: resources/featurerolloutpolicy.md
         items:
