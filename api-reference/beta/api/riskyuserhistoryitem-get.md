@@ -46,7 +46,8 @@ Do not supply a request body for this method.
 
 If successful, this method returns a `200 OK` response code and a [riskyUserHistoryItem](../resources/riskyuserhistoryitem.md) object in the response body.
 
-## Example 1: Get history of a risky user
+## Examples
+### Example 1: Get history of a risky user
 #### Request
 Here is an example of the request.
 
@@ -104,7 +105,7 @@ Content-type: application/json
 }
 ```
 
-## Example 2: Get history of a risky user
+### Example 2: Get history of a risky user
 #### Request
 Here is an example of the request.
 
