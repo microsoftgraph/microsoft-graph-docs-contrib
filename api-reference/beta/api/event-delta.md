@@ -18,7 +18,7 @@ Get a set of [event](../resources/event.md) resources that have been added, dele
 You can get specific types of these incremental changes in the events in all the calendars of a mailbox or in a specific calendar, or in an event collection of a **calendarView** (range of events defined by start and end dates) of a calendar. The calendar can be the default calendar or some other specified calendar of the user's, or, it can be a group calendar.
 
 A **delta** function call is similar to a `GET /events` or `GET /calendarview` request for
-the specified calendar, except that by appropriately applying [state tokens](/graph/delta-query-overview) in one or more of these calls,
+the specified calendar, except that by appropriately applying [state tokens](/graph/delta-query-overview#state-tokens) in one or more of these calls,
 you can query for incremental changes of events in that calender. This allows you to maintain and synchronize
 a local store of events in the specified calendar, without having to fetch all the events of that calendar
 from the server every time.
@@ -43,7 +43,9 @@ One of the following permissions is required to call this API. To learn more, in
 
 ## HTTP request
 
-This section shows the HTTP request syntax for the initial **delta** function call to start a full synchronization that retrieves all the events in the specified calendar or calendar view. Use the query URL returned in a `nextLink` or `deltaLink` of a previous successful response for the next **delta** function call.
+This section shows the HTTP request syntax for the initial **delta** function call to start a full synchronization that retrieves all the events in the specified calendar or calendar view. This syntax does not contain any [state tokens](/graph/delta-query-overview#state-tokens). 
+
+The query URL returned in a `nextLink` or `deltaLink` of a successful response includes a state token. For any subsequent **delta** function call, use the query URL in a `nextLink` or `deltaLink` preceding it.
 
 ### Delta function on events in a user calendar (preview)
 Apply the **delta** function on all the events or events starting on or after a specific date/time, in the specified user calendar(s):
