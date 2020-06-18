@@ -211,7 +211,7 @@ HTTP/1.1 200 OK
 Content-type: application/json
 
 {
-  "@odata.nextLink":"https://graph.microsoft.com/beta/me/calendar/events/delta?$skiptoken={R0usmcdvmMu7jxWP8}",
+  "@odata.nextLink":"https://graph.microsoft.com/beta/me/calendar/events/delta?$skiptoken=R0usmcdvmMu7jxWP8",
   "value": [
     { 
       "id": " AAMkADllMWMwNDkzLWJlY2EtNDIyOS1iZjAA=", 
@@ -227,6 +227,7 @@ Content-type: application/json
         } 
   ]
 }
+```
 
 
 ### Example 2: Delta function on calendarView
