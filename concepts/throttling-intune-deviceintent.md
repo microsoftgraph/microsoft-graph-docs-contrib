@@ -1,3 +1,4 @@
+<!-- markdownlint-disable MD041-->
 ### Microsoft.Intune.DeviceIntent_WorkloadConfig.config
 | Request type | Limit per tenant | Limit per app per tenant |
 | POST, PUT, DELETE, PATCH | 200 per 00:00:20 | 100 per 00:00:20 |
