@@ -22,7 +22,7 @@ Represents the printer's default settings. Check the printer's [capabilities](..
 |contentType|String|The default content (MIME) type to use when processing documents.|
 |finishings|printFinishing collection|The default set of finishings to apply to print jobs. Valid values are described in the following table.|
 |mediaColor|String|The default media (such as paper) color to print the document on.
-|mediaType|printMediaType|The default media (such as paper) type to print the document on. Valid values are described in the following table.|
+|mediaType|String|The default media (such as paper) type to print the document on. Valid values are described in the following table.|
 |mediaSize|String|The default media size to use. Supports standard size names for ISO and ANSI media sizes, along with any custom sizes supported by the associated printer.
 |pagesPerSheet|Int32|The default number of document pages to print on each sheet.
 |orientation|printOrientation|The default orientation to use when printing the document. Valid values are described in the following table.|
