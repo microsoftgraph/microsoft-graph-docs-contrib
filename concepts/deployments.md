@@ -1,7 +1,7 @@
 ---
 title: "National cloud deployments"
 description: "In addition to our global network of datacenters, Microsoft cloud services are available in three separate national clouds."
-author: "ardhanap"
+author: "arpitha-dhanapathi"
 ---
 
 # National cloud deployments
