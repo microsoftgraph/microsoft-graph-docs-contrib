@@ -96,7 +96,7 @@ It takes up to 24 hours for the changes to show on profile cards.
 
 [Find your Microsoft 365 tenant ID](https://docs.microsoft.com/onedrive/find-your-office-365-tenant-id)
 
-[onPremisesExtensionAttributes resource type](/graph/api/resources/onpremisesextenionattributes?view=graph-rest-beta)
+[onPremisesExtensionAttributes resource type](graph/api/resources/onpremisesextensionattributes?view=graph-rest-beta)
 
 [User resource type](/graph/api/resources/user?view=graph-rest-beta)
 
