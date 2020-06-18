@@ -7,7 +7,7 @@ ms.prod: "eDiscovery"
 doc_type: resourcePageType
 ---
 
-# Use the Microsoft Graph Compliance API
+# Use the Microsoft Graph eDiscovery API
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
@@ -15,6 +15,10 @@ The Microsoft 365 eDiscovery APIs provide functionality for organizations to aut
 
 > [!IMPORTANT]
 > The eDiscovery APIs are intended for the use of eDiscovery operations for Litigation, Investigation and regulatory requests. These APIs should not be used as a substitute for journaling data out of the Microsoft 365 system or any other mass download.
+
+> [!NOTE]
+> Currently, the eDiscovery Graph APIs only work with Advanced eDiscovery cases.
+
 
 The Microsoft 365 eDiscovery Graph API includes the following key entities.
 
