@@ -27,7 +27,7 @@ The following table lists the differences between the **delta** function on even
 
 | Delta function on events  | Delta function on calendarView  |
 |:--------------------------|:---------------------------------------------------------|
-| Gets incremental changes of all the events in a calendar not bounded to a start and end date range, or alternatively, of the events starting on or after a specified date/time. | Gets incremental changes of events within the start and end date/time of the **calendarView**. |
+| Gets incremental changes of all the events in a calendar not bounded by a start and end date range. Alternatively, you can get incremental changes of the events in a calendar bounded by a start time, starting on or after that date/time. | Gets incremental changes of events within the start and end date/time of the **calendarView**. |
 | Returns only a limited set of **event** properties for performance reasons. Client to subsequently use `GET /events/{id}` to expand any events. | Server-side expansion returns a fuller set of **event** properties. |
 | Response includes single instances and recurring series master. | Response includes single instances, and occurrences and exceptions of recurring series. |
 | Currently available only in the beta version. | Available in the v1.0 and beta versions. |
