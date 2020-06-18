@@ -60,7 +60,9 @@ When you make additional attributes visible, you must use the English property n
 
 ## Adding custom attributes
 
-You can add any of the [15 custom attributes](../api-reference/beta/resources/onpremisesextensionattributes.md) from Active Directory or Azure Active Directory (Azure AD) to users' profile cards by configuring your tenant settings in Microsoft Graph.
+You can add any of the [15 custom attributes](/graph/api/resources/onpremisesextenionattributes?view=graph-rest-beta) from Active Directory or Azure Active Directory (Azure AD) to users' profile cards by configuring your tenant settings in Microsoft Graph.
+An example is to add custom attribute 1 to the profile card, using display name Cost center for a tenant using language code de-at (German - Austria).
+
 
 ```http
         PATCH https://microsoft.com/beta/organization/{tenantid}/settings
@@ -94,8 +96,8 @@ It takes up to 24 hours for the changes to show on profile cards.
 
 [Find your Microsoft 365 tenant ID](https://docs.microsoft.com/onedrive/find-your-office-365-tenant-id)
 
-[onPremisesExtensionAttributes resource type](../api-reference/beta/resources/onpremisesextensionattributes.md)
+[onPremisesExtensionAttributes resource type](/graph/api/resources/onpremisesextenionattributes?view=graph-rest-beta)
 
-[User resource type](../api-reference/beta/resources/user.md)
+[User resource type](/graph/api/resources/user?view=graph-rest-beta)
 
 [Graph Explorer](https://developer.microsoft.com/graph/graph-explorer)
