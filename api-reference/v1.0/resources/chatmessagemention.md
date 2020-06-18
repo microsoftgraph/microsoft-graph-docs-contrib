@@ -1,6 +1,6 @@
 ---
 title: "chatMessageMention resource type"
-description: "Represents a mention in a chatMessage entity. The mention can be to a user, team, bot or channel. "
+description: "Represents a mention in a chatMessage complex type. The mention can be to a user, team, bot or channel. "
 localization_priority: Normal
 author: nkramer
 ms.prod: "microsoft-teams"
@@ -11,7 +11,7 @@ doc_type: resourcePageType
 
 Namespace: microsoft.graph
 
-Represents a mention in a [chatMessage](./chatmessage.md) entity. The mention can be to a [user](user.md), [team](team.md), bot, or [channel](channel.md). 
+Represents a mention in a [chatMessage](./chatmessage.md) complex type. The mention can be to a [user](user.md), [team](team.md), bot, or [channel](channel.md). 
 
 In a **chatMessage** object that contains one or more mentions, the message body **content** property represents the chat message in HTML. It encloses the **mentionText** of each mention in an HTML `at` element, with an `id` attribute that corresponds to the **id** property of the mention.
 
@@ -45,7 +45,6 @@ The following is a JSON representation of the resource.
 
 <!-- {
   "blockType": "resource",
-  "baseType": "microsoft.graph.entity",
   "@odata.type": "microsoft.graph.chatMessageMention"
 }-->
 
