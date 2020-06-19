@@ -4608,6 +4608,8 @@ items:
           href: api/user-list-joinedteams.md
         - name: List all teams
           href: /graph/teams-list-all-teams?context=graph/api/1.0
+        - name: Get primary channel
+          href: api/team-get-primarychannel.md
       - name: Group (team)
         href: resources/group.md
         items:
@@ -4664,6 +4666,8 @@ items:
           href: api/channel-patch.md
         - name: Delete channel
           href: api/channel-delete.md
+        - name: Get files folder
+          href: api/channel-get-filesfolder.md
         - name: Send message
           href: api/channel-post-messages.md
         - name: Reply to message
