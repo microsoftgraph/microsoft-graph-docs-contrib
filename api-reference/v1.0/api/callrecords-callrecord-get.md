@@ -15,7 +15,7 @@ Retrieve the properties and relationships of a [callRecord](../resources/callrec
 
 There are two options to retrive the **id** value required for reading a **callRecord**:
 
-* Create a [webhook subscription](/graph/api/resources/webhooks?view=graph-rest-v1.0) to the **communications/callRecords** resource
+* Create a [webhook subscription](/graph/api/resources/webhooks?view=graph-rest-1.0) to the **communications/callRecords** resource
 * Read the **callChainId** property of a [call](../resources/call.md) (note that the record will not be available until the associated call is complete)
 
 ## Permissions
