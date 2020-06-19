@@ -1,3 +1,9 @@
+---
+author: "baywet"
+localization_priority: Priority
+ms.prod: "msgraph"
+ms.topic: include
+---
 <!-- markdownlint-disable MD041 -->
 <!-- this file is auto-generated don't edit it manually! -->
 ### resourceOperation, roleAssignment, roleDefinition resources service limits

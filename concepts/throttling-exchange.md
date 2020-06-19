@@ -1,3 +1,9 @@
+---
+author: "baywet"
+localization_priority: Priority
+ms.prod: "msgraph"
+ms.topic: include
+---
 <!-- markdownlint-disable MD041 -->
 <!-- this file is auto-generated don't edit it manually! -->
 ### attachment, calendar, calendarGroup, calendarPermission, calendarSharingMessage, contact, contactFolder, conversation, conversationThread, event, eventMessage, eventMessageRequest, eventMessageResponse, extension, fileAttachment, inferenceClassification, inferenceClassificationOverride, itemAttachment, mailFolder, mailSearchFolder, message, messageRule, multiValueLegacyExtendedProperty, openTypeExtension, outlookCategory, outlookItem, outlookUser, person, post, profilePhoto, referenceAttachment, singleValueLegacyExtendedProperty resources service limits

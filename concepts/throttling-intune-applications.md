@@ -1,3 +1,9 @@
+---
+author: "baywet"
+localization_priority: Priority
+ms.prod: "msgraph"
+ms.topic: include
+---
 <!-- markdownlint-disable MD041 -->
 <!-- this file is auto-generated don't edit it manually! -->
 ### iosMobileAppConfiguration, managedDeviceMobileAppConfiguration, managedDeviceMobileAppConfigurationAssignment, managedDeviceMobileAppConfigurationDeviceStatus, managedDeviceMobileAppConfigurationDeviceSummary, managedDeviceMobileAppConfigurationUserStatus, managedDeviceMobileAppConfigurationUserSummary, mobileApp, mobileAppAssignment, mobileAppCategory, mobileAppContent, mobileAppContentFile resources service limits

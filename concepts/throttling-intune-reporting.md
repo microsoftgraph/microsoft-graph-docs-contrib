@@ -1,6 +1,12 @@
+---
+author: "baywet"
+localization_priority: Priority
+ms.prod: "msgraph"
+ms.topic: include
+---
 <!-- markdownlint-disable MD041 -->
 <!-- this file is auto-generated don't edit it manually! -->
-### Microsoft.Intune.Reporting_WorkloadConfig.config resources service limits
+### auditLogRoot, directoryAudit, restrictedSignIn, signIn resources service limits
 
 | Request type | Limit per tenant | Limit per app per tenant |
 | POST, PUT, DELETE, PATCH | 200 per 20 seconds | 100 per 20 seconds |

@@ -1,3 +1,9 @@
+---
+author: "baywet"
+localization_priority: Priority
+ms.prod: "msgraph"
+ms.topic: include
+---
 <!-- markdownlint-disable MD041 -->
 <!-- this file is auto-generated don't edit it manually! -->
 ### deviceComplianceActionItem, deviceComplianceDeviceOverview, deviceComplianceDeviceStatus, deviceCompliancePolicy, deviceCompliancePolicyAssignment, deviceCompliancePolicyDeviceStateSummary, deviceCompliancePolicySettingStateSummary, deviceCompliancePolicyState, deviceComplianceScheduledActionForRule, deviceComplianceSettingState, deviceComplianceUserOverview, deviceComplianceUserStatus, deviceConfiguration, deviceConfigurationAssignment, deviceConfigurationDeviceOverview, deviceConfigurationDeviceStateSummary, deviceConfigurationDeviceStatus, deviceConfigurationState, deviceConfigurationUserOverview, deviceConfigurationUserStatus, deviceManagement, iosUpdateDeviceStatus, settingStateDeviceSummary, softwareUpdateStatusSummary resources service limits
