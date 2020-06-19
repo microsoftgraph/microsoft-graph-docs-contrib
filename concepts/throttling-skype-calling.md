@@ -1,4 +1,6 @@
-<!-- markdownlint-disable MD041 h1-missing h1-not-first-->
-### Microsoft.Skype.Calling_WorkloadConfig.config
+<!-- markdownlint-disable MD041 -->
+<!-- this file is auto-generated don't edit it manually! -->
+### call, cloudCommunications, commsOperation, inviteParticipantsOperation, muteParticipantOperation, onlineMeeting, participant, playPromptOperation, recordOperation, subscribeToToneOperation, unmuteParticipantOperation, updateRecordingStatusOperation resources service limits
+
 | Request type | Limit per app accross all tenants |
-| Any | 5000 per 00:00:10 |
+| Any | 5000 per 10 seconds |

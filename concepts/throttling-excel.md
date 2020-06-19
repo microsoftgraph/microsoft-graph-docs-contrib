@@ -1,4 +1,6 @@
-<!-- markdownlint-disable MD041 h1-missing h1-not-first-->
-### Microsoft.Excel_WorkloadConfig.config
+<!-- markdownlint-disable MD041 -->
+<!-- this file is auto-generated don't edit it manually! -->
+### workbook, workbookApplication, workbookChart, workbookChartAreaFormat, workbookChartAxes, workbookChartAxis, workbookChartAxisFormat, workbookChartAxisTitle, workbookChartAxisTitleFormat, workbookChartDataLabelFormat, workbookChartDataLabels, workbookChartFill, workbookChartFont, workbookChartGridlines, workbookChartGridlinesFormat, workbookChartLegend, workbookChartLegendFormat, workbookChartLineFormat, workbookChartPoint, workbookChartPointFormat, workbookChartSeries, workbookChartSeriesFormat, workbookChartTitle, workbookChartTitleFormat, workbookComment, workbookCommentReply, workbookFilter, workbookFormatProtection, workbookFunctionResult, workbookFunctions, workbookNamedItem, workbookPivotTable, workbookRange, workbookRangeBorder, workbookRangeFill, workbookRangeFont, workbookRangeFormat, workbookRangeSort, workbookRangeView, workbookTable, workbookTableColumn, workbookTableRow, workbookTableSort, workbookWorksheet, workbookWorksheetProtection resources service limits
+
 | Request type | Limit per app accross all tenants | Limit per app per tenant |
-| Any | 5000 per 00:00:10 | 1500 per 00:00:10 |
+| Any | 5000 per 10 seconds | 1500 per 10 seconds |

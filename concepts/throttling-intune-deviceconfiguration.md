@@ -1,5 +1,7 @@
-<!-- markdownlint-disable MD041 h1-missing h1-not-first-->
-### Microsoft.Intune.DeviceConfiguration_WorkloadConfig.config
+<!-- markdownlint-disable MD041 -->
+<!-- this file is auto-generated don't edit it manually! -->
+### deviceComplianceActionItem, deviceComplianceDeviceOverview, deviceComplianceDeviceStatus, deviceCompliancePolicy, deviceCompliancePolicyAssignment, deviceCompliancePolicyDeviceStateSummary, deviceCompliancePolicySettingStateSummary, deviceCompliancePolicyState, deviceComplianceScheduledActionForRule, deviceComplianceSettingState, deviceComplianceUserOverview, deviceComplianceUserStatus, deviceConfiguration, deviceConfigurationAssignment, deviceConfigurationDeviceOverview, deviceConfigurationDeviceStateSummary, deviceConfigurationDeviceStatus, deviceConfigurationState, deviceConfigurationUserOverview, deviceConfigurationUserStatus, deviceManagement, iosUpdateDeviceStatus, settingStateDeviceSummary, softwareUpdateStatusSummary resources service limits
+
 | Request type | Limit per tenant | Limit per app per tenant |
-| POST, PUT, DELETE, PATCH | 200 per 00:00:20 | 100 per 00:00:20 |
-| Any | 2000 per 00:00:20 | 1000 per 00:00:20 |
+| POST, PUT, DELETE, PATCH | 200 per 20 seconds | 100 per 20 seconds |
+| Any | 2000 per 20 seconds | 1000 per 20 seconds |

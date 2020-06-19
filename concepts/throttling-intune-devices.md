@@ -1,5 +1,7 @@
-<!-- markdownlint-disable MD041 h1-missing h1-not-first-->
-### Microsoft.Intune.Devices_WorkloadConfig.config
+<!-- markdownlint-disable MD041 -->
+<!-- this file is auto-generated don't edit it manually! -->
+### applePushNotificationCertificate, detectedApp, managedDevice, managedDeviceOverview resources service limits
+
 | Request type | Limit per tenant | Limit per app per tenant |
-| POST, PUT, DELETE, PATCH | 400 per 00:00:20 | 200 per 00:00:20 |
-| Any | 4000 per 00:00:20 | 2000 per 00:00:20 |
+| POST, PUT, DELETE, PATCH | 400 per 20 seconds | 200 per 20 seconds |
+| Any | 4000 per 20 seconds | 2000 per 20 seconds |
