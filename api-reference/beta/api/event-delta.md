@@ -15,7 +15,7 @@ Namespace: microsoft.graph
 
 Get a set of [event](../resources/event.md) resources that have been added, deleted, or updated in one or more calendars. 
 
-You can get specific types of these incremental changes in the events in all the calendars of a mailbox or in a specific calendar, or in an event collection of a **calendarView** (range of events defined by start and end dates) of a calendar. The calendar can be the default calendar or some other specified calendar of the user's, or, it can be a group calendar.
+You can get specific types of these incremental changes in the events in all the calendars of a mailbox or in a specific calendar, or in an event collection of a **calendarView** (range of events defined by start and end dates) of a calendar. The calendar can be the default calendar or some other specified calendar of the user's. In the case of getting incremental changes on **calendarView**, the calendar can be a group calendar as well.
 
 A **delta** function call is similar to a `GET /events` or `GET /calendarview` request for
 the specified calendar, except that by appropriately applying [state tokens](/graph/delta-query-overview#state-tokens) in one or more of these calls,
@@ -30,6 +30,7 @@ The following table lists the differences between the **delta** function on even
 | Gets incremental changes of all the events in a calendar not bounded by a start and end date range. Alternatively, you can get incremental changes of the events in a calendar bounded by a start time, starting on or after that date/time. | Gets incremental changes of events within the start and end date/time of the **calendarView**. |
 | Returns only a limited set of **event** properties for performance reasons. Client to subsequently use `GET /events/{id}` to expand any events. | Server-side expansion returns a fuller set of **event** properties. |
 | Response includes single instances and recurring series master. | Response includes single instances, and occurrences and exceptions of recurring series. |
+| Applies to events in user calendars but not group calendars. | Applies to events in user and group calendars. |
 | Currently available only in the beta version. | Available in the v1.0 and beta versions. |
 
 ## Permissions
@@ -100,9 +101,11 @@ Apply the **delta** function on all the events or events starting on or after a 
   GET /users/{id | userPrincipalName}/calendargroups/{id}/calendars/{id}/events/delta?startDateTime={start_datetime}
   ```
 
+<!-- Add back and fix html when group calendars are supported
+
 ### Delta function on events in a group calendar (preview)
 * To get incremental changes of all the events, or of events starting on or after the specified date/time _in a group calendar_:
-  <!-- { "blockType": "ignored" } -->
+  !-- { "blockType": "ignored" } --
   ```http
   GET /groups/{id}/events/delta
   GET /groups/{id}/calendar/events/delta
@@ -110,6 +113,8 @@ Apply the **delta** function on all the events or events starting on or after a 
   GET /groups/{id}/events/delta?startDateTime={start_datetime}
   GET /groups/{id}/calendar/events/delta?startDateTime={start_datetime}
   ```
+
+  -->
 
 ### Delta function on calendarView in a user calendar
 Apply the **delta** function on a range of events delimited by start and end date/times, in the specified user calendar:
