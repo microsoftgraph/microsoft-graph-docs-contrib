@@ -39,14 +39,13 @@ PATCH /identityGovernance/entitlementManagement/settings
 In the request body, supply a JSON representation of the parameters of an [entitlementManagementSettings](../resources/entitlementmanagementsettings.md) object.
 
 ## Response
-If successful, this method returns a `204, Accepted` response code and an [entitlementManagementSettings](../resources/entitlementmanagementsettings.md) object in the response body.
+If successful, this method returns a `204, No Content` response code.
 
 ## Example
 
 
 ##### Request
 In the request body, supply a JSON representation of the new properties of the [entitlementManagementSettings](../resources/entitlementmanagementsettings.md) object.
-
 
 # [HTTP](#tab/http)
 <!-- {
@@ -70,13 +69,10 @@ Content-type: application/json
   "@odata.type": "microsoft.graph.entitlementManagementSettings"
 } -->
 ```http
-HTTP/1.1 204 Accepted
+HTTP/1.1 204 No Content
 Content-type: application/json
 
-{
-  "externalUserLifecycleAction": "None",
-  "daysUntilExternalUserDeletedAfterBlocked": 1
-}
+
 ```
 
 <!--
