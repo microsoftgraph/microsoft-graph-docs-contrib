@@ -153,15 +153,6 @@ A maximum of 3000 messages per app per day can be sent to a given channel.
 See also [Microsoft Teams limits](/graph/api/resources/teams-api-overview#microsoft-teams-limits) 
 and [polling requirements](/graph/api/resources/teams-api-overview#polling-requirements).
 
-### Microsoft Graph change notifications subscription operations
-
-The following limits apply to any request on `/subscriptions`.
-
-| Operation                 | Limit per app per tenant     | Limit per app accross all tenants |
-|---------------------------|------------------------------|-----------------------------------|
-| POST, PUT, DELETE, PATCH  | 1000 requests per 20 seconds | 2000 requests per 20 seconds      |
-| All other HTTP methods    | 5000 requests per 20 seconds | 10000 requests per 20 seconds     |
-
 <!-- { "blockType": "throttlinggenstart" } -->
 [!INCLUDE [throttling-cpim throttling documentation](../includes/throttling-cpim.md)]
 [!INCLUDE [throttling-educationrosteringapis throttling documentation](../includes/throttling-educationrosteringapis.md)]
