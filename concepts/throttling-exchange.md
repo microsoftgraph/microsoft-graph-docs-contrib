@@ -9,4 +9,4 @@ ms.topic: include
 ### attachment, calendar, calendarGroup, calendarPermission, calendarSharingMessage, contact, contactFolder, conversation, conversationThread, event, eventMessage, eventMessageRequest, eventMessageResponse, extension, fileAttachment, inferenceClassification, inferenceClassificationOverride, itemAttachment, mailFolder, mailSearchFolder, message, messageRule, multiValueLegacyExtendedProperty, openTypeExtension, outlookCategory, outlookItem, outlookUser, person, post, profilePhoto, referenceAttachment, singleValueLegacyExtendedProperty resources service limits
 
 | Request type | Limit per app accross all tenants |
-| /delta | 3000 per 10 seconds |
+| /delta | 3000 requests per 10 seconds |

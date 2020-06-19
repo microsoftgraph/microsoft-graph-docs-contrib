@@ -9,4 +9,4 @@ ms.topic: include
 ### identityContainer, identityProvider resources service limits
 
 | Request type | Limit per tenant | Limit per app per tenant |
-| Any | 300 per 1 minute | 200 per 1 minute |
+| Any | 300 requests per 1 minute | 200 requests per 1 minute |

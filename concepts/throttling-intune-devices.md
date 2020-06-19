@@ -9,5 +9,5 @@ ms.topic: include
 ### applePushNotificationCertificate, detectedApp, managedDevice, managedDeviceOverview resources service limits
 
 | Request type | Limit per tenant | Limit per app per tenant |
-| POST, PUT, DELETE, PATCH | 400 per 20 seconds | 200 per 20 seconds |
-| Any | 4000 per 20 seconds | 2000 per 20 seconds |
+| POST, PUT, DELETE, PATCH | 400 requests per 20 seconds | 200 requests per 20 seconds |
+| Any | 4000 requests per 20 seconds | 2000 requests per 20 seconds |
