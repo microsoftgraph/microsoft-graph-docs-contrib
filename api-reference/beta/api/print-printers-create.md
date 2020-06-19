@@ -22,7 +22,7 @@ In addition to the following permissions, the user's tenant must have an active 
 
 |Permission type | Permissions (from least to most privileged) |
 |:---------------|:--------------------------------------------|
-|Delegated (work or school account)| Printer.Create, Printer.FullControl.All |
+|Delegated (work or school account)| Users.Read |
 |Delegated (personal Microsoft account)|Not Supported.|
 |Application|Not Supported.|
 
@@ -40,13 +40,17 @@ POST /print/printers/create
 ## Request body
 In the request body, provide a JSON object with the following properties.
 
+
+
+hasPhysicalDevice: 
+
 | Parameter      | Type    |Description| Required? |
 |:---------------|:--------|:----------|:----------|
 |displayName|String|The display name to assign to the printer.|Yes|
 |manufacturer|String|The manufacturer of the printer.|Yes|
 |model|String|The model of the printer.|Yes|
-|physicalDeviceId|String|The physical device UUID of the printer. If the `hasPhysicalDevice` property is true or ommitted, this property is required.|No|
-|hasPhysicalDevice|Boolean|True if the printer has a physical output device; false otherwise.|No|
+|physicalDeviceId|String|The physical device UUID of the printer. Required if the `hasPhysicalDevice` property is true.|No|
+|hasPhysicalDevice|Boolean|True if the printer has physical output device, false otherwise. If omitted, the default value is true.|No|
 |certificateSigningRequest|[printCertificateSigningRequest](../resources/printcertificatesigningrequest.md)|The X.509 Certificate Signing Request (CSR) for the certificate created and used by the printer to identify itself.|Yes|
 |connectorId|String|Id of Connector acting as proxy to the printer.|No|
 
