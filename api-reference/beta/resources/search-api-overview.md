@@ -77,11 +77,13 @@ When searching the **message** entity, specifying **enableTopResults** as `true`
 
 ### Get selected properties
 
-When searching each kind of entity type, such as `list`, `site`, `listItem`, `message`, `event`, `driveItem`, `externalItem`. Use the **stored_fields** property to specify the fields to be returned in the response.
+When searching each kind of entity type, such as `list`, `site`, `listItem`, `message`, `event`, `drive`, `driveItem`, `externalItem`. Use the **stored_fields** property to specify the fields to be returned in the response.
 
 The fields specified in **stored_fields** should be retrievable managed properties that have been configured for the connection via the Microsoft Search tenant administration.
 
-**Note**: When searching the **listItem** and the **externalItem** entities, if the specific fields in the **stored_fields** property don't exist in the published fields but exist in the non-published fields, they will be returned in the **fields property bag** in the response. 
+**Note**: When searching the **listItem** entity, if the **stored_fields** don't exist in the published fields but exist in the non-published fields, they will be returned in the **fields** in the response. 
+
+When searching the **externalItem** entity, what you are searching in the **stored_fields** will be returned in the **properties** in the response. 
 
 ### Keyword Query Language (KQL) support
 
