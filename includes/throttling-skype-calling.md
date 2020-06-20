@@ -9,4 +9,5 @@ ms.topic: include
 ### call, cloudCommunications, commsOperation, inviteParticipantsOperation, muteParticipantOperation, onlineMeeting, participant, playPromptOperation, recordOperation, subscribeToToneOperation, unmuteParticipantOperation, updateRecordingStatusOperation resources service limits
 
 | Request type | Limit per app accross all tenants |
+| ------------ | ------- |
 | Any | 5000 requests per 10 seconds |

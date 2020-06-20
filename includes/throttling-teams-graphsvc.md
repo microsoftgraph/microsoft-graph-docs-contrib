@@ -9,6 +9,7 @@ ms.topic: include
 ### channel, chatMessage, chatMessageHostedContent, team, teamsApp, teamsAppDefinition, teamsAppInstallation, teamsAsyncOperation, teamsTab, teamwork resources service limits
 
 | Request type | Limit per app per tenant | Limit per app accross all tenants |
+| ------------ | ------- | ------- |
 | GET, teams/{teamId}/channels/{channelId}/messages/{messageId} | 50 requests per 10 seconds | 1000 requests per 10 seconds |
 | POST, teams/{teamId}/channels | 20 requests per 10 seconds | 200 requests per 10 seconds |
 | GET, me/chats or chats/ | 30 requests per 10 seconds | 300 requests per 10 seconds |
