@@ -278,10 +278,10 @@ The following table documents base requests costs, any other request not listed 
 | GET | `subscribedSkus` | 3 | Read |
 | GET | `users` | 2 | Read |
 | GET | Any identity path not listed in the table | 1 | Read |
-| POST | Any identity path not listed in the table | 1 | Write |
-| PATCH | Any identity path not listed in the table | 1 | Write |
-| PUT | Any identity path not listed in the table | 1 | Write |
-| DELETE | Any identity path not listed in the table | 1 | Write |
+| POST | Any identity path not listed in the table | 1 | ReadWrite |
+| PATCH | Any identity path not listed in the table | 1 | ReadWrite |
+| PUT | Any identity path not listed in the table | 1 | ReadWrite |
+| DELETE | Any identity path not listed in the table | 1 | ReadWrite |
 
 Other factors that impact a request cost:
 
