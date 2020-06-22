@@ -160,7 +160,6 @@ and [polling requirements](/graph/api/resources/teams-api-overview#polling-requi
 [!INCLUDE [throttling-intune-deviceenrollment throttling documentation](../includes/throttling-intune-deviceenrollment.md)]
 [!INCLUDE [throttling-intune-applications throttling documentation](../includes/throttling-intune-applications.md)]
 [!INCLUDE [throttling-intune-enrollment throttling documentation](../includes/throttling-intune-enrollment.md)]
-[!INCLUDE [throttling-teams-graphsvc throttling documentation](../includes/throttling-teams-graphsvc.md)]
 [!INCLUDE [throttling-intune-wip throttling documentation](../includes/throttling-intune-wip.md)]
 [!INCLUDE [throttling-intune-deviceconfiguration throttling documentation](../includes/throttling-intune-deviceconfiguration.md)]
 [!INCLUDE [throttling-intune-devices throttling documentation](../includes/throttling-intune-devices.md)]
