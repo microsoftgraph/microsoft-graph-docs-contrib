@@ -6,7 +6,8 @@ ms.topic: include
 ---
 <!-- markdownlint-disable MD041 -->
 <!-- this file is auto-generated don't edit it manually! -->
-### deviceInstallState, eBookInstallSummary, iosVppEBook, iosVppEBookAssignment, managedEBook, managedEBookAssignment, userInstallStateSummary resources service limits
+### deviceInstallState, eBookInstallSummary, iosVppEBook, iosVppEBookAssignment resources service limits
+
 
 | Request type | Limit per tenant | Limit per app per tenant |
 | ------------ | ------- | ------- |

@@ -6,7 +6,8 @@ ms.topic: include
 ---
 <!-- markdownlint-disable MD041 -->
 <!-- this file is auto-generated don't edit it manually! -->
-### complianceManagementPartner, deviceAppManagement, deviceCategory, deviceEnrollmentConfiguration, deviceEnrollmentLimitConfiguration, deviceEnrollmentPlatformRestrictionsConfiguration, deviceEnrollmentWindowsHelloForBusinessConfiguration, deviceManagementExchangeConnector, deviceManagementPartner, enrollmentConfigurationAssignment, mobileThreatDefenseConnector, onPremisesConditionalAccessSettings, vppToken resources service limits
+### complianceManagementPartner, deviceAppManagement, deviceCategory, deviceEnrollmentConfiguration resources service limits
+
 
 | Request type | Limit per tenant | Limit per app per tenant |
 | ------------ | ------- | ------- |

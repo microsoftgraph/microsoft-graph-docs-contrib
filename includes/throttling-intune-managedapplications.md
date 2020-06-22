@@ -6,7 +6,8 @@ ms.topic: include
 ---
 <!-- markdownlint-disable MD041 -->
 <!-- this file is auto-generated don't edit it manually! -->
-### managedAppOperation, managedAppPolicy, managedAppPolicyDeploymentSummary, managedAppRegistration, managedAppStatus, managedMobileApp, targetedManagedAppPolicyAssignment, windowsInformationProtectionAppLockerFile resources service limits
+### managedAppOperation, managedAppPolicy, managedAppPolicyDeploymentSummary, managedAppRegistration resources service limits
+
 
 | Request type | Limit per tenant | Limit per app per tenant |
 | ------------ | ------- | ------- |

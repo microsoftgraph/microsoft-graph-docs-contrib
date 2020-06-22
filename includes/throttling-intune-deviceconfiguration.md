@@ -6,7 +6,8 @@ ms.topic: include
 ---
 <!-- markdownlint-disable MD041 -->
 <!-- this file is auto-generated don't edit it manually! -->
-### deviceComplianceActionItem, deviceComplianceDeviceOverview, deviceComplianceDeviceStatus, deviceCompliancePolicy, deviceCompliancePolicyAssignment, deviceCompliancePolicyDeviceStateSummary, deviceCompliancePolicySettingStateSummary, deviceCompliancePolicyState, deviceComplianceScheduledActionForRule, deviceComplianceSettingState, deviceComplianceUserOverview, deviceComplianceUserStatus, deviceConfiguration, deviceConfigurationAssignment, deviceConfigurationDeviceOverview, deviceConfigurationDeviceStateSummary, deviceConfigurationDeviceStatus, deviceConfigurationState, deviceConfigurationUserOverview, deviceConfigurationUserStatus, deviceManagement, iosUpdateDeviceStatus, settingStateDeviceSummary, softwareUpdateStatusSummary resources service limits
+### deviceComplianceActionItem, deviceComplianceDeviceOverview, deviceComplianceDeviceStatus, deviceCompliancePolicy resources service limits
+
 
 | Request type | Limit per tenant | Limit per app per tenant |
 | ------------ | ------- | ------- |
