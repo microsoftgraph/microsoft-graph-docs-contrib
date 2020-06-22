@@ -17,7 +17,7 @@ After Microsoft Graph accepts the subscription request, it pushes change notific
 > [!VIDEO https://www.youtube-nocookie.com/embed/rC1bunenaq4]
  
 > [!div class="nextstepaction"]
-> [Build a webhook app with .NET Core](/graph/tutorials/change-notifications)
+> [Tutorial: Use Change Notifications and Track Changes with Microsoft Graph](/learn/modules/msgraph-changenotifications-trackchanges)
 
 By default, change notifications do not contain resource data, other than the `id`. If the app requires resource data, it can make calls to Microsoft Graph APIs to get the full resource. This article uses the **user** resource as an example for working with change notifications.
 
