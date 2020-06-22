@@ -13,6 +13,12 @@ For a summary of the value of these API changes, as well as recent tools, compon
 
 ## June 2020
 
+### Change notifications
+
+| **Change type** | **Version** | **Description**                          |
+| :-------------- | :---------- | :--------------------------------------- |
+| Addition | v1.0 | Added the [changeNotification](/graph/api/resources/changenotification), and [changeNotificationCollection](/graph/api/resources/changenotificationcollection) resources for the [change notification](/graph/api/concepts/webhooks) API. |
+
 ### Cloud communications
 | **Change type** | **Version**   | **Description**                          |
 | :-------------- | :------------ | :--------------------------------------- |
