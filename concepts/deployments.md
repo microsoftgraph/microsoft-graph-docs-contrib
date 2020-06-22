@@ -48,10 +48,11 @@ The following table shows the service root endpoints for Microsoft Graph and [Gr
 | Microsoft Graph China operated by 21Vianet | https://microsoftgraph.chinacloudapi.cn | https://developer.microsoft.com/zh-cn/graph/graph-explorer-china |
 
 > [!IMPORTANT]
-> For an app in US Government, 
-    If you are working in Office 365 GCC environment, continue using the worldwide endpoints: 'https://graph.microsoft.com' and 'https://portal.azure.com'
-    If you are working in Office 365 GCC High environment, please use: 'https://portal.azure.us' and 'https://graph.microsoft.us'
-    If you are working in Office 365 DoD environment, please use 'https://portal.azure.us' and 'https://dod-graph.microsoft.us'
+For an app in US Government,
+•	If you are working in Office 365 GCC environment, continue using the worldwide endpoints: 'https://graph.microsoft.com' and 'https://portal.azure.com'
+•	If you are working in Office 365 GCC High environment, please use: 'https://portal.azure.us' and 'https://graph.microsoft.us'
+•	If you are working in Office 365 DoD environment, please use 'https://portal.azure.us' and 'https://dod-graph.microsoft.us'
+
 > Access to US Government data using worldwide endpoint is currently functional but will be disabled in near future.
 
 > [!NOTE]
