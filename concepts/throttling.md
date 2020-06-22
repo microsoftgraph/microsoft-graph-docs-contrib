@@ -291,29 +291,32 @@ Other factors that impact a request cost:
 
 ##### Request headers
 
-- **x-ms-throttle-priority** - If the header doesn't exist or set to any other value, it indicates a normal request. We recommend limiting interactive requests. Set the priority to interactive to only the requests where the user initiated and waiting for a response. The values of this header can be the following:
+- **x-ms-throttle-priority** - If the header doesn't exist or set to any other value, it indicates a normal request. We recommend setting priority to `high` only for the requests initiated by the user. The values of this header can be the following:
   - Low - Indicates the request is low priority. Throttling this request doesn't cause user-visible failures.
   - Normal - Default if no value is provided. Indicates that the request is default priority.
-  - Interactive - Indicates that the request is interactive or high priority. Throttling this request causes user-visible failures.
+  - High - Indicates that the request is high priority. Throttling this request causes user-visible failures.
 
-> **Note:** Low requests will be throttled when 100% of the limit is reached, Normal at 110%, and Interactive at 170%. Applications using too many Interactive requests will get throttled more aggressively.
+> **Note:** Should requests be throttled, low priority requests will be throttled first, normal priority requests second, and high priority requests last. Using the priority request header does not change the limits.
 
 ##### Regular responses requests
 
-- **x-ms-resource-unit** - Indicates the resource unit used for this request.
-- **x-ms-throttle-limit-usage** - Returned only when the application consumed more than 80% of its limit. The value ranges from 80 to 180 and is a percentage of the use of the limit. This can be used by the callers to set up an alert and take action.
+- **x-ms-resource-unit** - Indicates the resource unit used for this request. Values are positive integers.
+- **x-ms-throttle-limit-percentage** - Returned only when the application consumed more than 0.8 of its limit. The value ranges from 0.8 to 1.8 and is a percentage of the use of the limit. The value can be used by the callers to set up an alert and take action.
 
 ##### Throttled responses requests
 
-- **x-ms-throttle-scope** - Indicates the scope of throttling and can have the following value:
-  - Tenant_Application_All - All requests for a particular tenant for the current application.
-  - Tenant_Application_Write - Requests that involve create, update, or delete operations for a particular tenant for the current application.
-  - Partition_Application_All - All requests for all the partition that the current tenant is in for the current application.
-  - Partition_Application_Write - Requests that involve create, update, or delete operations for the partition that the current tenant is in for the current application.
-  - Tenant_All - All requests for the current tenant, regardless of the application.
-  - Tenant_Write - Requests that involve create, update, or delete operations for the current tenant, regardless of the application.
-  - Application_All - All requests for the current application.
-- **x-ms-throttle-reason** - Indicates the reason for throttling and can have the following values:
+- **x-ms-throttle-scope** - eg. `Tenant_Application/ReadWrite/9a3d526c-b3c1-4479-ba74-197b5c5751ae/0785ef7c-2d7a-4542-b048-95bcab406e0b`. Indicates the scope of throttling with the following format `<Scope>/<Limit>/<ApplicationId>/<TenantId|UserId|ResourceId>`:
+  - Scope: (string, required)
+    - Tenant_Application - All requests for a particular tenant for the current application.
+    - Tenant - All requests for the current tenant, regardless of the application.
+    - Application - All requests for the current application.
+  - Limit: (string, requied)
+    - Read: Read requests for the scope (GET)
+    - Write: Write requests for the scope (POST, PATCH, PUT, DELETE...)
+    - ReadWrite: All Requests for the scope (any)
+  - ApplicationId (Guid, required)
+  - TenantId|UserId|ResourceId: (Guid, required)
+- **x-ms-throttle-information** - Indicates the reason for throttling and can have any value (string). The value is provided for diagnostics and troubleshooting purposes, some examples include:
   - CPULimitExceeded - Throttling is because the limit for cpu allocation is exceeded.
   - WriteLimitExceeded - Throttling is because the write limit is exceeded.
-  - RULimitExceeded - Throttling is because the limit for the allocated resource unit is exceeded.
+  - ResourceUnitLimitExceeded - Throttling is because the limit for the allocated resource unit is exceeded.
