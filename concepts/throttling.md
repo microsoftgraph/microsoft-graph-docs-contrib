@@ -154,7 +154,6 @@ See also [Microsoft Teams limits](/graph/api/resources/teams-api-overview#micros
 and [polling requirements](/graph/api/resources/teams-api-overview#polling-requirements).
 
 <!-- { "blockType": "throttlinggenstart" } -->
-[!INCLUDE [throttling-exchange throttling documentation](../includes/throttling-exchange.md)]
 [!INCLUDE [throttling-intune-tem throttling documentation](../includes/throttling-intune-tem.md)]
 [!INCLUDE [throttling-intune-companyterms throttling documentation](../includes/throttling-intune-companyterms.md)]
 [!INCLUDE [throttling-intune-deviceenrollment throttling documentation](../includes/throttling-intune-deviceenrollment.md)]
