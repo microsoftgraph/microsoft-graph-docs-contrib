@@ -10,6 +10,8 @@ ms.custom: graphiamtop20
 
 Delta query enables applications to discover newly created, updated, or deleted entities without performing a full read of the target resource with every request. Microsoft Graph applications can use delta query to efficiently synchronize changes with a local data store.
 
+> [Tutorial: Use Change Notifications and Track Changes with Microsoft Graph](/learn/modules/msgraph-changenotifications-trackchanges)
+
 ## Use delta query to track changes in a resource collection
 
 The typical call pattern is as follows:
