@@ -50,9 +50,9 @@ The following table shows the service root endpoints for Microsoft Graph and [Gr
 > [!IMPORTANT]
 For an app in US Government,
 
-- If you are working in Office 365 GCC environment, continue using the worldwide endpoints: 'https://graph.microsoft.com' and 'https://portal.azure.com'
-- If you are working in Office 365 GCC High environment, use: 'https://portal.azure.us' and 'https://graph.microsoft.us'
-- If you are working in Office 365 DoD environment, use 'https://portal.azure.us' and 'https://dod-graph.microsoft.us'
+- If you are working in an Office 365 GCC environment, continue using the worldwide endpoints: 'https://graph.microsoft.com' and 'https://portal.azure.com'
+- If you are working in an Office 365 GCC High environment, use: 'https://portal.azure.us' and 'https://graph.microsoft.us'
+- If you are working in an Office 365 DoD environment, use 'https://portal.azure.us' and 'https://dod-graph.microsoft.us'
 
 > Access to US Government data using worldwide endpoint is currently functional but will be disabled in near future.
 
