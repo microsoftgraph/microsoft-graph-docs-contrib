@@ -51,7 +51,7 @@ To switch to the newer Microsoft Graph schema extension model, you'll need to:
 
 ## Differential queries
 
-Azure AD Graph and Microsoft Graph let you track changes using queries.  The high-level approach is similar between the two APIs, but the syntax is different.  
+Azure AD Graph and Microsoft Graph let you track changes using queries.  The high-level approach is similar between the two APIs, but the syntax is different.
 
 Azure AD Graph calls these differential queries.  In Microsoft Graph, they're [delta queries](/graph/delta-query-overview).
 
