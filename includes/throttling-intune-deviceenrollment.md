@@ -8,6 +8,7 @@ ms.topic: include
 <!-- this file is auto-generated don't edit it manually! -->
 ### complianceManagementPartner, deviceAppManagement, deviceCategory, deviceEnrollmentConfiguration resources service limits
 
+> **Note:** the limits described below also apply to the following resources: deviceEnrollmentLimitConfiguration, deviceEnrollmentPlatformRestrictionsConfiguration, deviceEnrollmentWindowsHelloForBusinessConfiguration, deviceManagementExchangeConnector, deviceManagementPartner, enrollmentConfigurationAssignment, mobileThreatDefenseConnector, onPremisesConditionalAccessSettings, vppToken
 
 | Request type | Limit per tenant | Limit per app per tenant |
 | ------------ | ------- | ------- |

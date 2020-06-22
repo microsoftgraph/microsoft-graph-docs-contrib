@@ -8,6 +8,7 @@ ms.topic: include
 <!-- this file is auto-generated don't edit it manually! -->
 ### educationClass, educationOrganization, educationRoot, educationSchool resources service limits
 
+> **Note:** the limits described below also apply to the following resources: educationStudent, educationTeacher, educationTerm, educationUser
 
 | Request type | Limit per app accross all tenants | Limit per app per tenant |
 | ------------ | ------- | ------- |

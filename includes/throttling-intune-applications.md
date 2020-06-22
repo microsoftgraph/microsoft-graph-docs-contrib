@@ -8,6 +8,7 @@ ms.topic: include
 <!-- this file is auto-generated don't edit it manually! -->
 ### iosMobileAppConfiguration, managedDeviceMobileAppConfiguration, managedDeviceMobileAppConfigurationAssignment, managedDeviceMobileAppConfigurationDeviceStatus resources service limits
 
+> **Note:** the limits described below also apply to the following resources: managedDeviceMobileAppConfigurationDeviceSummary, managedDeviceMobileAppConfigurationUserStatus, managedDeviceMobileAppConfigurationUserSummary, mobileApp, mobileAppAssignment, mobileAppCategory, mobileAppContent, mobileAppContentFile
 
 | Request type | Limit per tenant | Limit per app per tenant |
 | ------------ | ------- | ------- |

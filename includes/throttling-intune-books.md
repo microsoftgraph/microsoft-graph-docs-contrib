@@ -8,6 +8,7 @@ ms.topic: include
 <!-- this file is auto-generated don't edit it manually! -->
 ### deviceInstallState, eBookInstallSummary, iosVppEBook, iosVppEBookAssignment resources service limits
 
+> **Note:** the limits described below also apply to the following resources: managedEBook, managedEBookAssignment, userInstallStateSummary
 
 | Request type | Limit per tenant | Limit per app per tenant |
 | ------------ | ------- | ------- |

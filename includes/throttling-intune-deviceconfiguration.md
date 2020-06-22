@@ -8,6 +8,7 @@ ms.topic: include
 <!-- this file is auto-generated don't edit it manually! -->
 ### deviceComplianceActionItem, deviceComplianceDeviceOverview, deviceComplianceDeviceStatus, deviceCompliancePolicy resources service limits
 
+> **Note:** the limits described below also apply to the following resources: deviceCompliancePolicyAssignment, deviceCompliancePolicyDeviceStateSummary, deviceCompliancePolicySettingStateSummary, deviceCompliancePolicyState, deviceComplianceScheduledActionForRule, deviceComplianceSettingState, deviceComplianceUserOverview, deviceComplianceUserStatus, deviceConfiguration, deviceConfigurationAssignment, deviceConfigurationDeviceOverview, deviceConfigurationDeviceStateSummary, deviceConfigurationDeviceStatus, deviceConfigurationState, deviceConfigurationUserOverview, deviceConfigurationUserStatus, deviceManagement, iosUpdateDeviceStatus, settingStateDeviceSummary, softwareUpdateStatusSummary
 
 | Request type | Limit per tenant | Limit per app per tenant |
 | ------------ | ------- | ------- |

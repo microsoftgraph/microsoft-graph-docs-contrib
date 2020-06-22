@@ -8,6 +8,7 @@ ms.topic: include
 <!-- this file is auto-generated don't edit it manually! -->
 ### managedAppOperation, managedAppPolicy, managedAppPolicyDeploymentSummary, managedAppRegistration resources service limits
 
+> **Note:** the limits described below also apply to the following resources: managedAppStatus, managedMobileApp, targetedManagedAppPolicyAssignment, windowsInformationProtectionAppLockerFile
 
 | Request type | Limit per tenant | Limit per app per tenant |
 | ------------ | ------- | ------- |
