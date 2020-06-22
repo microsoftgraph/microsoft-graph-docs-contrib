@@ -253,30 +253,35 @@ Throttling is based on a token bucket algorithm which works by adding individual
 
 The following table documents base requests costs, any other request not listed in the following table has a base cost of 1.
 
-| Operation | Request Path | Base Request Cost |
-| --------- | ---------- | ------------------ |
-| GET | `applications` | 2 |
-| GET | `applications/{id}/extensionProperties` | 2 |
-| GET | `contracts` | 3 |
-| POST | `directoryObjects/getByIds` |  3 |
-| GET | `domains/{id}/domainNameReferences` | 4 |
-| POST | `getObjectsById` | 3 |
-| GET | `groups/{id}/members` | 3 |
-| GET | `groups/{id}/transitiveMembers` | 5 |
-| POST | `isMemberOf` | 4 |
-| POST | `me/checkMemberGroups` | 4 |
-| POST | `me/checkMemberObjects` | 4 |
-| POST | `me/getMemberGroups` | 2 |
-| POST | `me/getMemberObjects` | 2 |
-| GET | `me/licenseDetails` | 2 |
-| GET | `me/memberOf` | 2 |
-| GET | `me/ownedObjects` | 2 |
-| GET | `me/transitiveMemberOf` | 2 |
-| GET | `oauth2PermissionGrants` | 2 |
-| GET | `oauth2PermissionGrants/{id}` | 2 |
-| GET | `servicePrincipals/{id}/appRoleAssignments` | 2 |
-| GET | `subscribedSkus` | 3 |
-| GET | `users` | 2 |
+| Operation | Request Path | Base Request Cost | Affecting limit(s) |
+| --------- | ------------ | ----------------- | ------------------ |
+| GET | `applications` | 2 | Read |
+| GET | `applications/{id}/extensionProperties` | 2 | Read|
+| GET | `contracts` | 3 | Read |
+| POST | `directoryObjects/getByIds` |  3 | Read |
+| GET | `domains/{id}/domainNameReferences` | 4 | Read |
+| POST | `getObjectsById` | 3 | Read |
+| GET | `groups/{id}/members` | 3 | Read |
+| GET | `groups/{id}/transitiveMembers` | 5 | Read |
+| POST | `isMemberOf` | 4 | Read |
+| POST | `me/checkMemberGroups` | 4 | Read |
+| POST | `me/checkMemberObjects` | 4 | Read |
+| POST | `me/getMemberGroups` | 2 | Read |
+| POST | `me/getMemberObjects` | 2 | Read |
+| GET | `me/licenseDetails` | 2 | Read |
+| GET | `me/memberOf` | 2 | Read |
+| GET | `me/ownedObjects` | 2 | Read |
+| GET | `me/transitiveMemberOf` | 2 | Read |
+| GET | `oauth2PermissionGrants` | 2 | Read |
+| GET | `oauth2PermissionGrants/{id}` | 2 | Read |
+| GET | `servicePrincipals/{id}/appRoleAssignments` | 2 | Read |
+| GET | `subscribedSkus` | 3 | Read |
+| GET | `users` | 2 | Read |
+| GET | Any identity path not listed in the table | 1 | Read |
+| POST | Any identity path not listed in the table | 1 | Write |
+| PATCH | Any identity path not listed in the table | 1 | Write |
+| PUT | Any identity path not listed in the table | 1 | Write |
+| DELETE | Any identity path not listed in the table | 1 | Write |
 
 Other factors that impact a request cost:
 
