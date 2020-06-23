@@ -1,6 +1,6 @@
 ---
 title: "officeGraphInsights resource type"
-description: "Insights are relationships calculated using advanced analytics and machine learning techniques. You can, for example, identify OneDrive for Business documents trending around users."
+description: "Represents the base type for [itemInsights](itemInsights.md). officeGraphInsights is for backward compatibility from earlier versions of the insights API. Use only itemInsights when accessing the insights API."
 author: "simonhult"
 localization_priority: Priority
 ms.prod: "insights"
@@ -8,6 +8,7 @@ doc_type: resourcePageType
 ---
 
 # officeGraphInsights resource type
+Represents the base type for [itemInsights](itemInsights.md). officeGraphInsights is for backward compatibility from earlier versions of the insights API. Use only itemInsights when accessing the insights API.
 
 Namespace: microsoft.graph
 
@@ -27,30 +28,8 @@ Each insight is returned with a **resourceVisualization** and **resourceReferenc
 
 | Relationship      | Type          | Description  |
 | ------------- |---------------| -------------|
-| trending    	| [trending](insights-trending.md) collection		| Calculated relationship identifying documents trending around a user. Trending documents are calculated based on activity of the user's closest network of people and include files stored in OneDrive for Business and SharePoint. Trending insights help the user to discover potentially useful content that the user has access to, but has never viewed before.|
-| used    	| [usedInsight](insights-used.md) collection		| Calculated relationship identifying the latest documents viewed or modified by a user, including OneDrive for Business and SharePoint documents, ranked by recency of use.|
-| shared    	| [sharedInsight](insights-shared.md) collection		| Calculated relationship identifying documents shared with or by the user. This includes URLs, file attachments, and reference attachments to OneDrive for Business and SharePoint files found in Outlook messages and meetings. This also includes URLs and reference attachments to Teams conversations. Ordered by recency of share.|
+| trending    	| [trending](insights-trending.md) collection		| Access this property from the derived type [itemInsights](iteminsights.md)|
+| used    	| [usedInsight](insights-used.md) collection		| Access this property from the derived type [itemInsights](iteminsights.md)|
+| shared    	| [sharedInsight](insights-shared.md) collection		| Access this property from the derived type [itemInsights](iteminsights.md)|
 
-## JSON representation
 
-Here is a JSON representation of the resource
-<!-- {
-  "blockType": "resource",
-  "keyProperty":"id",
-  "baseType":"microsoft.graph.entity",
-  "optionalProperties": [
-    "trending",
-    "used",
-    "shared"
-  ],
-  "@odata.type": "microsoft.graph.officeGraphInsights"
-}-->
-
-```json
-{
-  "id": "string",
-  "trending": [ { "@odata.type": "microsoft.graph.trending" } ],
-  "used": [ { "@odata.type": "microsoft.graph.used" } ],
-  "shared": [ { "@odata.type": "microsoft.graph.shared" } ]
-}
-```
