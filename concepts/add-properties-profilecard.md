@@ -124,7 +124,7 @@ Content-Type: application/json
             }
   ```
 
-Enter the language code in the form *ll-cc*, where *ll* is the language code, and cc the country code. For example, for German–Austria, enter the country code de-at.
+Enter the language code in the form *ll-cc*, where *ll* is the language code, and *cc* the country code. For example, for German–Austria, enter the country code de-at.
 If a language is not supported, the property name will be shown with the default value.  
 
 If successful, the response returns a 200 OK response code and a collection of profileCardProperty objects in the response body. In this example you can assume that the profile card displays **Kostenstelle** for all users that have set their language settings to German-Austria on the profile card. For all other users, **Cost center** will be displayed on the profile card.
