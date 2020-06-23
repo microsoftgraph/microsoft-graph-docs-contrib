@@ -1,22 +1,19 @@
 ---
-synchronizationJob"
-description: "Provision a user on demand"
-localization_priority: Normal
-doc_type: apiPageType
+title: "synchronizationJob: provisionOnDemand"
+description: "Select a user and provision them on-demand."
 author: "ArvindHarinder1"
-ms.prod: "microsoft-identity-platform"
+localization_priority: Normal
+ms.prod: "**TODO: Add MS prod. See [topic-level metadata reference](https://msgo.azurewebsites.net/add/document/guidelines/metadata.html#topic-level-metadata)**"
+doc_type: apiPageType
 ---
 
-# ProvisionOnDemand synchronizationJob
-
+# provisionOnDemand
 Namespace: microsoft.graph
 
-[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
-
-Select a user and provision them on-demand. 
+Select a user and provision them on-demand.
 
 ## Permissions
-One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
+One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/concepts/permissions-reference.md).
 
 |Permission type                        | Permissions (from least to most privileged)              |
 |:--------------------------------------|:---------------------------------------------------------|
@@ -24,87 +21,72 @@ One of the following permissions is required to call this API. To learn more, in
 |Delegated (personal Microsoft account) |Not supported. |
 |Application                            |Not supported. | 
 
-## HTTP Request
-<!-- { "blockType": "ignored" } -->
-```http
-POST /servicePrincipals/{id}/synchronization/jobs/{jobId}/provisionOnDemand
+## HTTP request
+
+<!-- {
+  "blockType": "ignored"
+}
+-->
+``` http
+POST /servicePrincipals/{servicePrincipalsId}/synchronization/jobs/{synchronizationJobId}/provisionOnDemand
 ```
 
 ## Request headers
-
-| Name           | Type    | Description|
-|:---------------|:--------|:-----------|
-| Authorization  | string  | Bearer {token}. Required. |
+|Name|Description|
+|:---|:---|
+|Authorization|Bearer {token}. Required.|
+|Content-Type|application/json. Required.|
 
 ## Request body
+In the request body, supply JSON representation of the parameters.
 
-{
-  "subjects": [
-    {
-      "objectId": "00000000-0000-0000-0000-000000000000",
-      "objectType": "User"
-  }],
-  "ruleId": "00000000-0000-0000-0000-000000000000"
-}
+The following table shows the parameters that can be used with this action.
 
-
+|Parameter|Type|Description|
+|:---|:---|:---|
+|parameters|[synchronizationJobApplicationParameters](../resources/synchronization-synchronizationjobapplicationparameters.md) collection|Represents the objects that will be provisioned and the synchronization rules executed. The resource is primarily used for on-demand provisioning. |
 
 
 
 ## Response
 
-If successful, returns a `204 No Content` response. It does not return anything in the response body.
+If successful, this action returns a `202 ACCEPTED` response code and a location header.
 
-## Example 1: Select a user and provision on-demand 
+## Examples
 
-##### Request
-The following is an example of a request.
-
-# [HTTP](#tab/http)
+### Request
 <!-- {
   "blockType": "request",
-  "name": "synchronizationjob_start"
-}-->
-```http
-POST https://graph.microsoft.com/beta/servicePrincipals/{id}/synchronization/jobs/{jobId}/start
+  "name": "synchronizationjob_provisionondemand"
+}
+-->
+``` http
+POST https://graph.microsoft.com/beta/servicePrincipals/{servicePrincipalsId}/synchronization/jobs/{synchronizationJobId}/provisionOnDemand
+
+Content-Type: application/json
+Content-length: 122
+
+{
+    "parameters" [{
+      "subjects": [{
+          "objectId": "9bb0f679-a883-4a6f-8260-35b491b8b8c8",
+          "objectType": "User"
+      }],
+      "ruleId": "ea807875-5618-4f0a-9125-0b46a05298ca"
+    }]
+  }
 ```
-# [C#](#tab/csharp)
-[!INCLUDE [sample-code](../includes/snippets/csharp/synchronizationjob-start-csharp-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [JavaScript](#tab/javascript)
-[!INCLUDE [sample-code](../includes/snippets/javascript/synchronizationjob-start-javascript-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [Objective-C](#tab/objc)
-[!INCLUDE [sample-code](../includes/snippets/objc/synchronizationjob-start-objc-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
----
 
 
-##### Response
-The following is an example of a response.
+### Response
+**Note:** The response object shown here might be shortened for readability.
 <!-- {
   "blockType": "response",
   "truncated": true,
-  "@odata.type": "microsoft.graph.None"
-} -->
-```http
-HTTP/1.1 204 No Content
-```
-## Example 2: Poll for the outcome of a provision on demand request
-
-<!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
-2015-10-25 14:57:30 UTC -->
-<!--
-{
-  "type": "#page.annotation",
-  "description": "synchronizationJob: start",
-  "keywords": "",
-  "section": "documentation",
-  "tocPath": "",
-  "suppressions": [
-  ]
+  "@odata.type": "microsoft.graph.stringkeystringvaluepair"
 }
 -->
+``` http
+HTTP/1.1 202 Accepted
+Location: "https://graph.microsoft.com/beta/servicePrincipals/8783a342-f7a2-46fb-8243-3658cee556ce/jobs/apply.BoxOutDelta.6a2de5866d0e4e39a06f39c6893e0873.397e75f3-f252-4c80-9027-a812665090d68"
+```
