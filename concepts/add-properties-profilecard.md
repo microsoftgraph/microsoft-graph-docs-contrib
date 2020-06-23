@@ -57,8 +57,7 @@ An example is to display **Alias** on the profile card:
         }
 ```
 
-**Response**
-If successful, the response returns a 200 OK response code and profileCardProperty objects in the response body. In this example you can assume that **Alias** displays in the **Contact** section of the profile card.  
+If successful, the response returns a 200 OK response code and profileCardProperty objects in the response body. In this example you can assume that **Alias** displays on the profile card.  
 
 ```http
 HTTP/1.1 200 OK
@@ -128,9 +127,7 @@ Content-Type: application/json
 Enter the language code in the form *ll-cc*, where *ll* is the language code, and cc the country code. For example, for German – Austria, enter the country code de-at.
 If a language is not supported, the property name will be shown with the default value.  
 
-**Response**
-
-If successful, the response returns a 200 OK response code and a collection of profileCardProperty objects in the response body. In this example you can assume that the profile card displays **Kostenstelle** in the **Contact** section of the profile card:
+If successful, the response returns a 200 OK response code and a collection of profileCardProperty objects in the response body. In this example you can assume that the profile card displays **Kostenstelle** on the profile card:
 
 ```http
 HTTP/1.1 200 OK
