@@ -9,6 +9,8 @@ doc_type: resourcePageType
 
 # teamsAppDefinition resource type
 
+Namespace: microsoft.graph
+
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 The details of one version of a [teamsApp](teamsapp.md).
@@ -19,6 +21,7 @@ The details of one version of a [teamsApp](teamsapp.md).
 |:------------------- |:-------- |:----------- |
 | id                  | string   | A unique id (not the teams appid). |
 | teamsAppId          | string   | The id from the Teams App manifest. |
+| azureADAppId        | string   | The WebApplicationInfo.id from the Teams App manifest. |
 | displayName         | string   | The name of the app provided by the app developer. |
 | version             | string   | The version number of the application. |
 
@@ -39,7 +42,7 @@ The details of one version of a [teamsApp](teamsapp.md).
 }
 ```
 
-# See also
+## See also
 
 - [teamsApp](teamsapp.md)
 - [teamsAppInstallation](teamsappinstallation.md)

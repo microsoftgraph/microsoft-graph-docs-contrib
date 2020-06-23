@@ -8,6 +8,8 @@ ms.prod: "microsoft-identity-platform"
 ---
 # Get riskyUser
 
+Namespace: microsoft.graph
+
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 Retrieve the properties and relationships of a **riskyUser** object.
@@ -83,7 +85,6 @@ Content-type: application/json
 {
   "id": "c2b6c2b9-dddc-acd0-2b39-d519d803dbc3",
   "riskLastUpdatedDateTime": "2016-01-29T20:03:57.7872426Z",
-  "isGuest": true,
   "isProcessing": true,
   "isDeleted": true,
   "riskDetail": "adminConfirmedSigninCompromised",

@@ -9,6 +9,8 @@ doc_type: apiPageType
 
 # Get team photo
 
+Namespace: microsoft.graph
+
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 Get the photo (picture) for a team, or metadata for the photo. In general, it is a best practice to first attempt to retrieve the metadata for the size of the photo you'd like to get to ensure that size is available. Once you have retrieved the metadata, use the `/$value` path to get the binary data for the photo.
@@ -28,9 +30,13 @@ One of the following permissions is required to call this API. To learn more, in
 
 |Permission type      | Permissions (from least to most privileged)              |
 |:--------------------|:---------------------------------------------------------|
-|Delegated (work or school account) | Group.Read.All, Group.ReadWrite.All    |
+|Delegated (work or school account) | Team.ReadBasic.All, TeamSettings.Read.All, TeamSettings.ReadWrite.All, Group.Read.All, Group.ReadWrite.All, Directory.Read.All, Directory.ReadWrite.All |
 |Delegated (personal Microsoft account) | Not supported.    |
-|Application | Group.Read.All, Group.ReadWrite.All |
+|Application | TeamSettings.Read.Group*, TeamSettings.Edit.Group*, Team.ReadBasic.All, TeamSettings.Read.All, TeamSettings.ReadWrite.All, Group.Read.All, Group.ReadWrite.All, Directory.Read.All, Directory.ReadWrite.All |
+
+> **Note**: Permissions marked with * use [resource-specific consent](https://aka.ms/teams-rsc).
+
+> **Note**: This API supports admin permissions. Global admins and Microsoft Teams service admins can access teams that they are not a member of.
 
 ## HTTP request
 
@@ -43,8 +49,8 @@ This endpoint will return the metadata of the photo. If no size is specified, th
 }-->
 
 ```http
-GET /beta/teams/{id}/photo
-GET /beta/teams/{id}/photo/{size}
+GET /teams/{id}/photo
+GET /teams/{id}/photo/{size}
 ```
 
 ### Get the photo

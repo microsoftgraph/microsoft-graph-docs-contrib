@@ -8,6 +8,8 @@ doc_type: apiPageType
 ---
 # List history of riskyUser
 
+Namespace: microsoft.graph
+
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 Get the risk history of a [riskyUser](../resources/riskyuser.md) resource.
@@ -87,7 +89,6 @@ Content-type: application/json
         {
             "id": "41a31b00-3b3b-42d9-8f1c-6d4f14e74c69",
             "isDeleted": false,
-            "isGuest": false,
             "isProcessing": false,
             "riskLevel": "none",
             "riskState": "remediated",
@@ -105,7 +106,6 @@ Content-type: application/json
         {
             "id": "41a31b00-3b3b-42d9-8f1c-6d4f14e74c69636901009342322587",
             "isDeleted": false,
-            "isGuest": false,
             "isProcessing": false,
             "riskLevel": "high",
             "riskState": "atRisk",
@@ -125,7 +125,6 @@ Content-type: application/json
         {
             "id": "41a31b00-3b3b-42d9-8f1c-6d4f14e74c69636901020140973557",
             "isDeleted": false,
-            "isGuest": false,
             "isProcessing": false,
             "riskLevel": "none",
             "riskState": "remediated",

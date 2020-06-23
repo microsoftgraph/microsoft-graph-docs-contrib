@@ -1,13 +1,15 @@
 ---
 title: "Update depIOSEnrollmentProfile"
 description: "Update the properties of a depIOSEnrollmentProfile object."
-author: "rolyon"
+author: "dougeby"
 localization_priority: Normal
 ms.prod: "Intune"
 doc_type: apiPageType
 ---
 
 # Update depIOSEnrollmentProfile
+
+Namespace: microsoft.graph
 
 > **Important:** Microsoft Graph APIs under the /beta version are subject to change; production use is not supported.
 
@@ -229,8 +231,6 @@ Content-Length: 2073
   "welcomeScreenDisabled": true
 }
 ```
-
-
 
 
 

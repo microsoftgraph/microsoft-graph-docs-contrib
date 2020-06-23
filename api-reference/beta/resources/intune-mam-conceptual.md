@@ -1,12 +1,14 @@
 ---
 title: "Manage mobile apps with Microsoft Intune - Microsoft Graph API"
 description: "Lists the Microsoft Graph API for Intune endpoints (REST) related to mobile app management (MAM) for a tenant organization."
-author: "rolyon"
+author: "dougeby"
 localization_priority: Normal
 ms.prod: "intune"
 ---
 
 # How to protect your company app data with Microsoft Intune
+
+Namespace: microsoft.graph
 
 > **Important:** APIs under the /beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported.
 
@@ -33,6 +35,7 @@ The following Graph resources are available to manage app protection polices in 
 - [Managed app clipboard sharing level](intune-mam-managedappclipboardsharinglevel.md)
 - [Managed app configuration](intune-mam-managedappconfiguration.md)
 - [Managed app data encryption type](intune-mam-managedappdataencryptiontype.md)
+- [Managed app data ingestion location](intune-mam-managedappdataingestionlocation.md)
 - [Managed app data storage location](intune-mam-managedappdatastoragelocation.md)
 - [Managed app data transfer level](intune-mam-managedappdatatransferlevel.md)
 - [Managed app device threat level](intune-mam-managedappdevicethreatlevel.md)
@@ -40,6 +43,7 @@ The following Graph resources are available to manage app protection polices in 
 - [Managed app flagged reason](intune-mam-managedappflaggedreason.md)
 - [Managed app notification restriction](intune-mam-managedappnotificationrestriction.md)
 - [Managed app operation](intune-mam-managedappoperation.md)
+- [Managed app phone number redirect level](intune-mam-managedappphonenumberredirectlevel.md)
 - [Managed app PIN character set](intune-mam-managedapppincharacterset.md)
 - [Managed app policy](intune-mam-managedapppolicy.md)
 - [Managed app policy deployment summary](intune-mam-managedapppolicydeploymentsummary.md)
@@ -70,5 +74,3 @@ The following Graph resources are available to manage app protection polices in 
 - [Windows information protection resource collection](intune-mam-windowsinformationprotectionresourcecollection.md)
 - [Windows information protection store app](intune-mam-windowsinformationprotectionstoreapp.md)
 - [Windows information protection wipe action](intune-mam-windowsinformationprotectionwipeaction.md)
-
-

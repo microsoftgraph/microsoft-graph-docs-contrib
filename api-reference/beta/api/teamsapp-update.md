@@ -9,6 +9,8 @@ doc_type: apiPageType
 
 # Update apps published to your organization's app catalog
 
+Namespace: microsoft.graph
+
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 Update an [app](../resources/teamsapp.md) previously published to the Microsoft Teams app catalog.
@@ -23,9 +25,9 @@ One of the following permissions is required to call this API. To learn more, in
 
 | Permission Type                        | Permissions (from least to most privileged)|
 |:----------------------------------     |:-------------|
-| Delegated (work or school account)     | AppCatalog.ReadWrite.All |
+| Delegated (work or school account)     | AppCatalog.ReadWrite.All, Directory.ReadWrite.All |
 | Delegated (personal Microsoft account) | Not supported|
-| Application                            | Not supported|
+| Application                            | Not supported. |
 
 ## HTTP request
 <!-- { "blockType": "ignored" } -->

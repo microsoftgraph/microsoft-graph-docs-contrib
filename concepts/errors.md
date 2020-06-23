@@ -126,6 +126,7 @@ prepared to handle any one of these errors.
 | **resourceModified**      | The resource being updated has changed since the caller last read it, usually an eTag mismatch.
 | **resyncRequired**        | The delta token is no longer valid, and the app must reset the sync state.
 | **serviceNotAvailable**   | The service is not available. Try the request again after a delay. There may be a Retry-After header. 
+| **syncStateNotFound**     | The sync state generation is not found. The delta token is expired and data must be synchronized again. 
 | **quotaLimitReached**     | The user has reached their quota limit.
 | **unauthenticated**       | The caller is not authenticated.
 
@@ -214,10 +215,6 @@ time, so it is important that all apps be able to handle the [basic error codes]
 | **virusSuspicious**                | This document is suspicious and may have a virus.
 | **zeroOrFewerResultsRequested**    | Zero or fewer results requested.
 
-<!-- ##Additional Resources##
-
-- [Microsoft Graph API release notes and known issues](microsoft-graph-api-release-notes-known-issues.md )
-- [Hands on lab: Deep dive into the Microsoft Graph API](https://dev.office.com/hands-on-labs/4585) -->
 
 <!-- {
   "type": "#page.annotation",

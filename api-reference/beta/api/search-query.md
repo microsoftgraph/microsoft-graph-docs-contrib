@@ -9,6 +9,8 @@ doc_type: "apiPageType"
 
 # search: query
 
+Namespace: microsoft.graph
+
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 Runs the query specified in the request body. Search results are provided in the response.
@@ -77,7 +79,7 @@ Content-type: application/json
   "requests": [
     {
       "entityTypes": [
-        "microsoft.graph.externalItem"
+        "externalItem"
       ],
       "contentSources": [
         "/external/connections/connectionfriendlyname"

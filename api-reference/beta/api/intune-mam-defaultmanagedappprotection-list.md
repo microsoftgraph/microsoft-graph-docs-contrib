@@ -1,13 +1,15 @@
 ---
 title: "List defaultManagedAppProtections"
 description: "List properties and relationships of the defaultManagedAppProtection objects."
-author: "rolyon"
+author: "dougeby"
 localization_priority: Normal
 ms.prod: "Intune"
 doc_type: apiPageType
 ---
 
 # List defaultManagedAppProtections
+
+Namespace: microsoft.graph
 
 > **Important:** Microsoft Graph APIs under the /beta version are subject to change; production use is not supported.
 
@@ -58,7 +60,7 @@ Here is an example of the response. Note: The response object shown here may be 
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 5106
+Content-Length: 5428
 
 {
   "value": [
@@ -116,6 +118,8 @@ Content-Length: 5106
       "allowedDataIngestionLocations": [
         "sharePoint"
       ],
+      "appActionIfUnableToAuthenticateUser": "wipe",
+      "dialerRestrictionLevel": "managedApps",
       "appDataEncryptionType": "afterDeviceRestart",
       "screenCaptureBlocked": true,
       "encryptAppData": true,
@@ -169,13 +173,14 @@ Content-Length: 5106
       "allowedAndroidDeviceModels": [
         "Allowed Android Device Models value"
       ],
-      "appActionIfAndroidDeviceModelNotAllowed": "wipe"
+      "appActionIfAndroidDeviceModelNotAllowed": "wipe",
+      "customDialerAppProtocol": "Custom Dialer App Protocol value",
+      "customDialerAppPackageId": "Custom Dialer App Package Id value",
+      "customDialerAppDisplayName": "Custom Dialer App Display Name value"
     }
   ]
 }
 ```
-
-
 
 
 

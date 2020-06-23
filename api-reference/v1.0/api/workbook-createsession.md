@@ -9,6 +9,8 @@ doc_type: apiPageType
 
 # Create Session
 
+Namespace: microsoft.graph
+
 Use this API to create a new workbook session. 
 
 Excel APIs can be called in one of two modes: 
@@ -37,7 +39,6 @@ One of the following permissions is required to call this API. To learn more, in
 <!-- { "blockType": "ignored" } -->
 ```http
 POST /workbook/createSession
-
 ```
 ## Request headers
 | Name       | Description|

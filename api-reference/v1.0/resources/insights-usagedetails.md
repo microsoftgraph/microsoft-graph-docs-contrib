@@ -1,6 +1,6 @@
 ---
 title: "usageDetails resource type"
-description: "Complex type containing properties of Used items. Information on when the resource was last accessed (viewed) and modified (edited) by the user."
+description: "Complex type containing properties of Used items. Information on when the resource was last accessed (viewed) or modified (edited) by the user."
 author: "simonhult"
 localization_priority: Normal
 ms.prod: "insights"
@@ -9,7 +9,10 @@ doc_type: resourcePageType
 
 # usageDetails resource type
 
-Complex type containing properties of [used](insights-used.md) items. Information on when the resource was last accessed (viewed) and modified (edited) by the user.
+Namespace: microsoft.graph
+
+Complex type containing properties of [Used](insights-used.md) items. Information on when the resource was last accessed (viewed) or modified (edited) by the user.
+
 
 ## JSON representation
 
