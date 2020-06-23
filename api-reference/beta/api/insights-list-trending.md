@@ -67,6 +67,21 @@ Do not supply a request body for this method.
 
 If successful, this method returns a `200 OK` response code and a list of [trending](../resources/insights-trending.md) items in the response body. Each item contains visualization properties for displaying the item in your experience.
 
+If item insights of targeted user have been disabled, this method returns `403 Forbidden` and a JSON code
+<!-- { "blockType": "ignored" } -->
+```
+{
+  "error": {
+    "code": "ItemInsightsDisabled",
+    "message": " The access to the requested resource is denied because item insights are disabled.",
+    "innerError": {
+      "requestId": "request-id",
+      "date": "date-time"
+    }
+  }
+}
+```
+
 ## Example
 #### Request
 Here is an example of the request.
