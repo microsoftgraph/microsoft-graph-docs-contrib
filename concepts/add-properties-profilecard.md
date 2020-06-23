@@ -166,5 +166,3 @@ It takes up to 24 hours for the changes to show on profile cards.
 [Graph Explorer](https://developer.microsoft.com/graph/graph-explorer)
 
 [Get profileCardProperty](/graph/api/profilecardproperty-get?view=graph-rest-beta)
-
-[organizationSettings resource type](/graph/api/resources/organizationsettings?view=graph-rest-beta)
