@@ -32,20 +32,19 @@ POST /onPremisesPublishingProfiles/applicationProxy/connectorGroups/{id}/members
 ## Request headers
 | Name       | Description|
 |:---------------|:----------|
-| Authorization  | Bearer. Required|
+| Authorization  | Bearer. Required.|
+| Content-type | application/json. Required. |
 
 ## Request body
-In the request body, supply a JSON representation of a link to a   [connector](../resources/connector.md) object.
+In the request body, supply a JSON representation of a link to a [connector](../resources/connector.md) object.
 
 ## Response
 
-If successful, this method returns `201 Created` response code and [connector](../resources/connector.md) object in the response body.
+If successful, this method returns a `201 Created` response code and a [connector](../resources/connector.md) object in the response body.
 
 ## Example
-##### Request
-Here is an example of the request.
-
-# [HTTP](#tab/http)
+### Request
+The following is an example of the request.
 <!-- {
   "blockType": "request",
   "name": "create_connector_from_connectorgroup"
@@ -59,39 +58,16 @@ Content-length: 104
   "@odata.id": "https://graph.microsoft.com/beta/onPremisesPublishingProfiles/applicationProxy/connectors/{id}"
 }
 ```
-# [C#](#tab/csharp)
-[!INCLUDE [sample-code](../includes/snippets/csharp/create-connector-from-connectorgroup-csharp-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+### Response
+The following is an example of the response. 
 
-# [JavaScript](#tab/javascript)
-[!INCLUDE [sample-code](../includes/snippets/javascript/create-connector-from-connectorgroup-javascript-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [Objective-C](#tab/objc)
-[!INCLUDE [sample-code](../includes/snippets/objc/create-connector-from-connectorgroup-objc-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
----
-
-In the request body, supply a JSON representation of a link to a  [connector](../resources/connector.md) object.
-##### Response
-Here is an example of the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.
 <!-- {
   "blockType": "response",
   "truncated": true,
   "@odata.type": "microsoft.graph.connector"
 } -->
 ```http
-HTTP/1.1 201 Created
-Content-type: application/json
-Content-length: 124
-
-{
-  "id": "id-value",
-  "machineName": "machineName-value",
-  "externalIp": "externalIp-value",
-  "status": "status-value"
-}
+HTTP/1.1 204 No Content
 ```
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
@@ -99,7 +75,7 @@ Content-length: 124
 <!--
 {
   "type": "#page.annotation",
-  "description": "Create connector",
+  "description": "Add connector to connectorGroup",
   "keywords": "",
   "section": "documentation",
   "tocPath": "",
