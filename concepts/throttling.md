@@ -289,7 +289,7 @@ Other factors that impact a request cost:
 - Using $expand increases cost by 1
 - Using $top with a value of less than 20 decreases cost by 1
 
-> **Note:** A request cost can never be lower than 1.
+> **Note:** A request cost can never be lower than 1.  
 > **Note:** Any request cost that applies to a request path starting with `me/` also applies to equivalent requests starting with `users/{id | userPrincipalName}/`.
 
 #### Additional headers
