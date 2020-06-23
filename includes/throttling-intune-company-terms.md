@@ -6,9 +6,11 @@ ms.topic: include
 ---
 <!-- markdownlint-disable MD041 -->
 <!-- this file is auto-generated don't edit it manually! -->
-### managedAppOperation, managedAppPolicy, managedAppPolicyDeploymentSummary, managedAppRegistration resources service limits
+#### Intune Company Terms service limits
 
-> **Note:** the limits described below also apply to the following resources: managedAppStatus, managedMobileApp, targetedManagedAppPolicyAssignment, windowsInformationProtectionAppLockerFile
+> **Note:** the limits described below apply to the following resources: termsAndConditions, termsAndConditionsAcceptanceStatus, termsAndConditionsAssignment
+
+The next table describes the throttling limits.
 
 | Request type | Limit per tenant | Limit per app per tenant |
 | ------------ | ------- | ------- |

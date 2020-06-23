@@ -6,7 +6,10 @@ ms.topic: include
 ---
 <!-- markdownlint-disable MD041 -->
 <!-- this file is auto-generated don't edit it manually! -->
-### identityContainer, identityProvider resources service limits
+
+> **Note:** the limits described below apply to the following resources: identityContainer, identityProvider
+
+The next table describes the throttling limits.
 
 | Request type | Limit per tenant | Limit per app per tenant |
 | ------------ | ------- | ------- |

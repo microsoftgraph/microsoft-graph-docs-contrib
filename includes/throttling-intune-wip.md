@@ -6,7 +6,11 @@ ms.topic: include
 ---
 <!-- markdownlint-disable MD041 -->
 <!-- this file is auto-generated don't edit it manually! -->
-### windowsInformationProtectionAppLearningSummary, windowsInformationProtectionNetworkLearningSummary resources service limits
+#### Intune Wip service limits
+
+> **Note:** the limits described below apply to the following resources: windowsInformationProtectionAppLearningSummary, windowsInformationProtectionNetworkLearningSummary
+
+The next table describes the throttling limits.
 
 | Request type | Limit per tenant | Limit per app per tenant |
 | ------------ | ------- | ------- |

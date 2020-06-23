@@ -6,9 +6,10 @@ ms.topic: include
 ---
 <!-- markdownlint-disable MD041 -->
 <!-- this file is auto-generated don't edit it manually! -->
-### educationClass, educationOrganization, educationRoot, educationSchool resources service limits
 
-> **Note:** the limits described below also apply to the following resources: educationStudent, educationTeacher, educationTerm, educationUser
+> **Note:** the limits described below apply to the following resources: educationClass, educationOrganization, educationRoot, educationSchool, educationStudent, educationTeacher, educationTerm, educationUser
+
+The next table describes the throttling limits.
 
 | Request type | Limit per app accross all tenants | Limit per app per tenant |
 | ------------ | ------- | ------- |

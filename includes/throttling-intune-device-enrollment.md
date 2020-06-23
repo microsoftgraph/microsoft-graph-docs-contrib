@@ -6,7 +6,7 @@ ms.topic: include
 ---
 <!-- markdownlint-disable MD041 -->
 <!-- this file is auto-generated don't edit it manually! -->
-#### Intune Enrollment service limits
+#### Intune Device Enrollment service limits
 
 > **Note:** the limits described below apply to the following resources: complianceManagementPartner, deviceAppManagement, deviceCategory, deviceEnrollmentConfiguration, deviceEnrollmentLimitConfiguration, deviceEnrollmentPlatformRestrictionsConfiguration, deviceEnrollmentWindowsHelloForBusinessConfiguration, deviceManagementExchangeConnector, deviceManagementPartner, enrollmentConfigurationAssignment, mobileThreatDefenseConnector, onPremisesConditionalAccessSettings, vppToken
 

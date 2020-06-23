@@ -6,9 +6,10 @@ ms.topic: include
 ---
 <!-- markdownlint-disable MD041 -->
 <!-- this file is auto-generated don't edit it manually! -->
-### call, cloudCommunications, commsOperation, inviteParticipantsOperation resources service limits
 
-> **Note:** the limits described below also apply to the following resources: muteParticipantOperation, onlineMeeting, participant, playPromptOperation, recordOperation, subscribeToToneOperation, unmuteParticipantOperation, updateRecordingStatusOperation
+> **Note:** the limits described below apply to the following resources: call, cloudCommunications, commsOperation, inviteParticipantsOperation, muteParticipantOperation, onlineMeeting, participant, playPromptOperation, recordOperation, subscribeToToneOperation, unmuteParticipantOperation, updateRecordingStatusOperation
+
+The next table describes the throttling limits.
 
 | Request type | Limit per app accross all tenants |
 | ------------ | ------- |

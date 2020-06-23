@@ -154,24 +154,42 @@ See also [Microsoft Teams limits](/graph/api/resources/teams-api-overview#micros
 and [polling requirements](/graph/api/resources/teams-api-overview#polling-requirements).
 
 <!-- { "blockType": "throttlinggenstart" } -->
-[!INCLUDE [throttling-intune-tem throttling documentation](../includes/throttling-intune-tem.md)]
-[!INCLUDE [throttling-intune-companyterms throttling documentation](../includes/throttling-intune-companyterms.md)]
-[!INCLUDE [throttling-intune-deviceenrollment throttling documentation](../includes/throttling-intune-deviceenrollment.md)]
-[!INCLUDE [throttling-intune-applications throttling documentation](../includes/throttling-intune-applications.md)]
-[!INCLUDE [throttling-intune-enrollment throttling documentation](../includes/throttling-intune-enrollment.md)]
-[!INCLUDE [throttling-intune-wip throttling documentation](../includes/throttling-intune-wip.md)]
-[!INCLUDE [throttling-intune-deviceconfiguration throttling documentation](../includes/throttling-intune-deviceconfiguration.md)]
-[!INCLUDE [throttling-intune-devices throttling documentation](../includes/throttling-intune-devices.md)]
-[!INCLUDE [throttling-intune-reporting throttling documentation](../includes/throttling-intune-reporting.md)]
-[!INCLUDE [throttling-excel throttling documentation](../includes/throttling-excel.md)]
-[!INCLUDE [throttling-intune-troubleshooting throttling documentation](../includes/throttling-intune-troubleshooting.md)]
-[!INCLUDE [throttling-educationrosteringapis throttling documentation](../includes/throttling-educationrosteringapis.md)]
-[!INCLUDE [throttling-intune-rbac throttling documentation](../includes/throttling-intune-rbac.md)]
-[!INCLUDE [throttling-intune-notifications throttling documentation](../includes/throttling-intune-notifications.md)]
-[!INCLUDE [throttling-cpim throttling documentation](../includes/throttling-cpim.md)]
-[!INCLUDE [throttling-subscriptionservices throttling documentation](../includes/throttling-subscriptionservices.md)]
-[!INCLUDE [throttling-skype-calling throttling documentation](../includes/throttling-skype-calling.md)]
-[!INCLUDE [throttling-intune-managedapplications throttling documentation](../includes/throttling-intune-managedapplications.md)]
-[!INCLUDE [throttling-intune-books throttling documentation](../includes/throttling-intune-books.md)]
-[!INCLUDE [throttling-intune-remoteassistance throttling documentation](../includes/throttling-intune-remoteassistance.md)]
+### Identity Providers service limits
+
+[!INCLUDE [Cpim throttling documentation](../includes/throttling-cpim.md)]
+
+### Education service limits
+
+[!INCLUDE [Education Rostering APIS throttling documentation](../includes/throttling-education-rostering-apis.md)]
+
+### Excel service limits
+
+[!INCLUDE [Excel throttling documentation](../includes/throttling-excel.md)]
+
+### Intune service limits
+
+[!INCLUDE [Intune Applications throttling documentation](../includes/throttling-intune-applications.md)]
+[!INCLUDE [Intune Books throttling documentation](../includes/throttling-intune-books.md)]
+[!INCLUDE [Intune Company Terms throttling documentation](../includes/throttling-intune-company-terms.md)]
+[!INCLUDE [Intune Device Configuration throttling documentation](../includes/throttling-intune-device-configuration.md)]
+[!INCLUDE [Intune Device Enrollment throttling documentation](../includes/throttling-intune-device-enrollment.md)]
+[!INCLUDE [Intune Devices throttling documentation](../includes/throttling-intune-devices.md)]
+[!INCLUDE [Intune Enrollment throttling documentation](../includes/throttling-intune-enrollment.md)]
+[!INCLUDE [Intune Managed Applications throttling documentation](../includes/throttling-intune-managed-applications.md)]
+[!INCLUDE [Intune Notifications throttling documentation](../includes/throttling-intune-notifications.md)]
+[!INCLUDE [Intune Rbac throttling documentation](../includes/throttling-intune-rbac.md)]
+[!INCLUDE [Intune Remote Assistance throttling documentation](../includes/throttling-intune-remote-assistance.md)]
+[!INCLUDE [Intune Reporting throttling documentation](../includes/throttling-intune-reporting.md)]
+[!INCLUDE [Intune TEM throttling documentation](../includes/throttling-intune-tem.md)]
+[!INCLUDE [Intune Troubleshooting throttling documentation](../includes/throttling-intune-troubleshooting.md)]
+[!INCLUDE [Intune Wip throttling documentation](../includes/throttling-intune-wip.md)]
+
+### Skype service limits
+
+[!INCLUDE [Skype Calling throttling documentation](../includes/throttling-skype-calling.md)]
+
+### Subscription service limits
+
+[!INCLUDE [Subscription Services throttling documentation](../includes/throttling-subscription-services.md)]
+
 <!-- { "blockType": "throttlinggenend" } -->

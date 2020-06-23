@@ -6,9 +6,11 @@ ms.topic: include
 ---
 <!-- markdownlint-disable MD041 -->
 <!-- this file is auto-generated don't edit it manually! -->
-### iosMobileAppConfiguration, managedDeviceMobileAppConfiguration, managedDeviceMobileAppConfigurationAssignment, managedDeviceMobileAppConfigurationDeviceStatus resources service limits
+#### Intune Applications service limits
 
-> **Note:** the limits described below also apply to the following resources: managedDeviceMobileAppConfigurationDeviceSummary, managedDeviceMobileAppConfigurationUserStatus, managedDeviceMobileAppConfigurationUserSummary, mobileApp, mobileAppAssignment, mobileAppCategory, mobileAppContent, mobileAppContentFile
+> **Note:** the limits described below apply to the following resources: iosMobileAppConfiguration, managedDeviceMobileAppConfiguration, managedDeviceMobileAppConfigurationAssignment, managedDeviceMobileAppConfigurationDeviceStatus, managedDeviceMobileAppConfigurationDeviceSummary, managedDeviceMobileAppConfigurationUserStatus, managedDeviceMobileAppConfigurationUserSummary, mobileApp, mobileAppAssignment, mobileAppCategory, mobileAppContent, mobileAppContentFile
+
+The next table describes the throttling limits.
 
 | Request type | Limit per tenant | Limit per app per tenant |
 | ------------ | ------- | ------- |
