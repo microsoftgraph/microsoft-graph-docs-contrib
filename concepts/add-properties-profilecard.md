@@ -45,6 +45,7 @@ You can make the following attributes from Active Directory or Azure Active Dire
 You can add any of these attributes to the profile card by configuring your tenant settings in Microsoft Graph. When you make additional attributes visible, you must use the English property names. You don't have to add localized values. The additional properties will automatically be shown in the language settings that the user has specified for Microsoft 365.
 
 ## Example
+
 An example is to display **Alias** on the profile card:
 
 ```http
@@ -55,8 +56,8 @@ An example is to display **Alias** on the profile card:
         "directoryPropertyName": "Alias"
         }
 ```
-**Response**
 
+**Response**
 If successful, the response returns a 200 OK response code and profileCardProperty objects in the response body. In this example you can assume that **Alias** displays in the **Contact** section of the profile card.  
 
 ```http
