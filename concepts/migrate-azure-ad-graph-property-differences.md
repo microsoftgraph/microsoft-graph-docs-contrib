@@ -46,10 +46,7 @@ Because user and group are so frequently used, these resources appear first.  Ot
 |---|---|---|
 | **dirSyncEnabled** | beta &nbsp;-&nbsp;**onPremisesSyncEnabled** <br> v1.0 &nbsp;-&nbsp; **onPremisesSyncEnabled** | |
 | **immutableId** | beta &nbsp;-&nbsp;**onPremisesImmutableId** <br> v1.0 &nbsp;-&nbsp; **onPremisesImmutableId** | |
-| **lastDirSyncDateTime** | beta&nbsp;-&nbsp;**onPremisesLastSyncDateTime**<br>v1.0 &nbsp;-&nbsp; **onPremisesLastSyncDateTime** | |
-| **onPremisesDomainName** | beta &nbsp;-&nbsp; onPremisesDomainName <br> v1.0 &nbsp;-&nbsp; onPremisesDomainName | |
-| **onPremisesNetBiosName** | beta &nbsp;-&nbsp; onPremisesNetBiosName <br> v1.0 &nbsp;-&nbsp; onPremisesNetBiosName | |
-| **onPremisesSamAccountName** | beta &nbsp;-&nbsp; onPremisesSamAccountName <br> v1.0 &nbsp;-&nbsp; onPremisesSamAccountName |  |
+| **lastDirSyncDateTime** | beta&nbsp;-&nbsp;**onPremisesLastSyncDateTime**<br>v1.0&nbsp;-&nbsp;**onPremisesLastSyncDateTime** | |
 | **provisioningErrors** | beta &nbsp;-&nbsp; _Not available_ <br> v1.0 &nbsp;-&nbsp; _Not available_ | This property and its information is deprecated.  However, a new property describing any AD Connect related provisioning errors can be found in **onPremisesProvisioningErrors** |
 
 ## Application property differences
@@ -79,8 +76,8 @@ Because user and group are so frequently used, these resources appear first.  Ot
 
 |Azure AD Graph <br>(v1.6) property |Microsoft Graph<br> property|Comments|
 |---|---|---|
-| **creationTimestamp** | beta &nbsp;-&nbsp;**creationTimestamp** <br> v1.0 &nbsp;-&nbsp; _Not yet available_ | This will be renamed to createdDateTime.|
-| **id** | beta &nbsp;-&nbsp;**appRoleId** <br> v1.0 &nbsp;-&nbsp; _Not yet available_ | |
+| **creationTimestamp** | beta &nbsp;-&nbsp;**creationTimestamp** <br> v1.0 &nbsp;-&nbsp;**createdDateTime** | |
+| **id** | beta &nbsp;-&nbsp;**appRoleId** <br> v1.0 &nbsp;-&nbsp;**appRoleId** | |
 
 ## Contact property differences
 
@@ -146,7 +143,7 @@ The Azure AD Graph directoryObjectReference resource has been renamed to directo
 
 ## Policy property differences
 
-In Microsoft Graph there are named policy types (such as tokenIssuancePolicy or tokenLifetimePolicy), rather than a generic policy resource type. More details are available in the [policy overview](/graph/api/resources/policy-overview?view=graph-rest-beta). Policies are not yet available in v1.0.
+In Microsoft Graph there are named policy types (such as tokenIssuancePolicy or tokenLifetimePolicy), rather than a generic policy resource type. More details are available in the [policy overview](/graph/api/resources/policy-overview?view=graph-rest-1.0).
 
 ## ServiceEndpoint property differences
 
@@ -154,11 +151,9 @@ The Azure AD Graph ServiceEndpoint resource is renamed to endpoint in Microsoft 
 
 |Azure AD Graph <br>(v1.6) property |Microsoft Graph<br> property|Comments|
 |---|---|---|
-| **capability** | beta&nbsp;-&nbsp;**capability**<br> v1.0 &nbsp;-&nbsp; _Not yet available_ | |
-| **serviceId** | beta&nbsp;-&nbsp;**providerId**<br> v1.0 &nbsp;-&nbsp; _Not yet available_ | |
-| **serviceName** | beta&nbsp;-&nbsp;**providerName**<br> v1.0 &nbsp;-&nbsp; _Not yet available_ | |
-| **resourceId** | beta&nbsp;-&nbsp;**providerResourceId**<br> v1.0 &nbsp;-&nbsp; _Not yet available_ | |
-| **uri** | beta&nbsp;-&nbsp;**uri**<br> v1.0 &nbsp;-&nbsp; _Not yet available_ | |
+| **serviceId** | beta&nbsp;-&nbsp;**providerId**<br> v1.0 &nbsp;-&nbsp;**providerId** | |
+| **serviceName** | beta&nbsp;-&nbsp;**providerName**<br> v1.0 &nbsp;-&nbsp;**providerName** | |
+| **resourceId** | beta&nbsp;-&nbsp;**providerResourceId**<br> v1.0 &nbsp;-&nbsp;**providerResourceId** | |
 
 ## ServicePrincipal property differences
 
