@@ -10072,11 +10072,9 @@ items:
             href: api/serviceprincipal-delete-owners.md
         - name: Policies
           items:
-          - name: List assigned policies
-            href: api/policy-list-assigned.md
           - name: Assign claimsMappingPolicy
             href: api/serviceprincipal-post-claimsmappingpolicies.md
-          - name: List claimsMappingPolicies]
+          - name: List claimsMappingPolicies
             href: api/serviceprincipal-list-claimsmappingpolicies.md
           - name: Remove claimsMappingPolicy
             href: api/serviceprincipal-delete-claimsmappingpolicies.md
