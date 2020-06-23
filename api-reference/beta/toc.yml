@@ -293,8 +293,8 @@ items:
           href: api/user-list-transitivememberof.md
       - name: Insights
         items:
-        - name: Office Graph insights
-          href: resources/officegraphinsights.md
+        - name: Item insights
+          href: resources/iteminsights.md
           items:
           - name: List shared
             href: api/insights-list-shared.md
@@ -302,6 +302,14 @@ items:
             href: api/insights-list-trending.md
           - name: List used
             href: api/insights-list-used.md
+          - name: Control access to item insights
+            items:
+            - name: Organization settings
+              href: resources/organizationsettings.md
+            - name: Get org settings
+              href: api/organizationsettings-get.md
+            - name: Update org settings
+              href: api/organizationsettings-update.md
       - name: Mail
         href: resources/message.md
         items:
@@ -10677,7 +10685,7 @@ items:
           - name: Delete
             href: api/personwebsite-delete.md
       - name: Insights
-        href: resources/officegraphinsights.md
+        href: resources/iteminsight.md
         items:
         - name: Trending
           href: resources/insights-trending.md
