@@ -13,8 +13,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-
-Retrieve the filesFolder navigation path, which is the metadata for the location where the channel files are stored, for a [channel](../resources/channel.md).
+Get the metadata for the location where the files of a [channel](../resources/channel.md) are stored. 
 
 ## Permissions
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
