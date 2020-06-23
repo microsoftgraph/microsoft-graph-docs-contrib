@@ -41,6 +41,8 @@ Use the insights API to identify the most relevant documents for a user:
 - List documents [trending around](../api/insights-list-trending.md) a user
 - List documents [used by](../api/insights-list-used.md) a user
 - List documents [shared with or shared by](../api/insights-list-shared.md) a user
+- Explore different options [of customizations item insights in Microsoft Graph](/concepts/customize-item-insights-privacy.md)
+
 
 ## Manage @-Mentions
 
