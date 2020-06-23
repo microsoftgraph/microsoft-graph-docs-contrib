@@ -154,6 +154,18 @@ See also [Microsoft Teams limits](/graph/api/resources/teams-api-overview#micros
 and [polling requirements](/graph/api/resources/teams-api-overview#polling-requirements).
 
 <!-- { "blockType": "throttlinggenstart" } -->
+### CPIM service limits
+
+[!INCLUDE [CPIM throttling documentation](../includes/throttling-cpim.md)]
+
+### Education service limits
+
+[!INCLUDE [Education Rostering APIS throttling documentation](../includes/throttling-education-rostering-apis.md)]
+
+### Excel service limits
+
+[!INCLUDE [Excel throttling documentation](../includes/throttling-excel.md)]
+
 ### Intune service limits
 
 [!INCLUDE [Intune TEM throttling documentation](../includes/throttling-intune-tem.md)]
@@ -172,24 +184,12 @@ and [polling requirements](/graph/api/resources/teams-api-overview#polling-requi
 [!INCLUDE [Intune Books throttling documentation](../includes/throttling-intune-books.md)]
 [!INCLUDE [Intune Remote Assistance throttling documentation](../includes/throttling-intune-remote-assistance.md)]
 
-### Excel service limits
+### Skype service limits
 
-[!INCLUDE [Excel throttling documentation](../includes/throttling-excel.md)]
-
-### Education service limits
-
-[!INCLUDE [Education Rostering APIS throttling documentation](../includes/throttling-education-rostering-apis.md)]
-
-### CPIM service limits
-
-[!INCLUDE [CPIM throttling documentation](../includes/throttling-cpim.md)]
+[!INCLUDE [Skype Calling throttling documentation](../includes/throttling-skype-calling.md)]
 
 ### Subscription service limits
 
 [!INCLUDE [Subscription Services throttling documentation](../includes/throttling-subscription-services.md)]
-
-### Skype service limits
-
-[!INCLUDE [Skype Calling throttling documentation](../includes/throttling-skype-calling.md)]
 
 <!-- { "blockType": "throttlinggenend" } -->
