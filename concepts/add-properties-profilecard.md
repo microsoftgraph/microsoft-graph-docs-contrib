@@ -33,7 +33,7 @@ You can make the following attributes from Active Directory or Azure Active Dire
 > [!NOTE]
 > The attribute strings are fixed and you must use the values listed in the **Attribute string** column. The attribute strings are not case sensitive.
 
-|Attribute string|Microsoft Graph user entity property|
+|Attribute string|Microsoft Graph property|
 |:---------------|:----------|
 |UserPrincipalName|userPrincipalName |
 |Fax|faxNumber|
@@ -49,7 +49,7 @@ You can add any of these attributes to the profile card by configuring your tena
 An example is to display **Alias** on the profile card:
 
 ```http
-        POST https://microsoft.com/beta/organization/{tenantid}/settings/ProfilecardProperties
+        POST https://graph.microsoft.com/beta/organization/{tenantid}/settings/ProfilecardProperties
         Content-Type: application/json
 
         {
@@ -82,7 +82,7 @@ You can add any of the [15 custom attributes](/graph/api/resources/onpremisesext
 > [!NOTE]
 > The attribute strings are fixed and you must use the values listed in the **Attribute string** column. The attribute strings are not case sensitive.
 
-|Attribute string|Microsoft Graph custom extension attribute property|
+|Attribute string|Microsoft Graph property|
 |:---------------|:----------|
 |customAttribute1| extensionAttribute1 |
 |customAttribute2| extensionAttribute2 |
@@ -102,10 +102,10 @@ You can add any of the [15 custom attributes](/graph/api/resources/onpremisesext
 
 ## Example
 
-The following example adds the first customizable extension attribute to the profile card, using display name **Cost center**. The tenant uses German-Austria language-country code. The translated term is "Kostenstelle".
+The following example adds the first customizable extension attribute to the profile card, using display name **Cost center**. For users that have set their language settings to German-Austria, the display name will be **Kostenstelle**.
 
 ```http
-POST https://microsoft.com/beta/organization/{tenantid}/settings/profileCardProperties
+POST https://graph.microsoft.com/beta/organization/{tenantid}/settings/profileCardProperties
 Content-Type: application/json
 
         {
@@ -127,7 +127,7 @@ Content-Type: application/json
 Enter the language code in the form *ll-cc*, where *ll* is the language code, and cc the country code. For example, for German – Austria, enter the country code de-at.
 If a language is not supported, the property name will be shown with the default value.  
 
-If successful, the response returns a 200 OK response code and a collection of profileCardProperty objects in the response body. In this example you can assume that the profile card displays **Kostenstelle** on the profile card:
+If successful, the response returns a 200 OK response code and a collection of profileCardProperty objects in the response body. In this example you can assume that the profile card displays **Kostenstelle** for all users that have set their language settings to German-Austria on the profile card. For all other users, **Cost center** will be displayed on the profile card.
 
 ```http
 HTTP/1.1 200 OK
@@ -165,4 +165,6 @@ It takes up to 24 hours for the changes to show on profile cards.
 
 [Graph Explorer](https://developer.microsoft.com/graph/graph-explorer)
 
-profileCardProperties
+Get profileCardProperty
+
+organizationSettings resource type
