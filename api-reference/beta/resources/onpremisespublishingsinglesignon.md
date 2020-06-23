@@ -23,7 +23,7 @@ If you are configuring password-based single-sign this must be set using [create
 
 | Property     | Type        | Description |
 |:-------------|:------------|:------------|
-|kerberosSignOnSettings| [kerberosSignOnSettings](kerberossignonsettings.md)| The Kerberos Constrained Delegation settings for the application. |
+|kerberosSignOnSettings| [kerberosSignOnSettings](kerberossignonsettings.md)| The Kerberos Constrained Delegation settings for applications that use Integrated Window Authentication. |
 |singleSignOnMode|String| The preferred single-sign on mode for the application. Possible values are: `none`, `onPremisesKerberos`, `headerBased`.|
 
 ## JSON representation
@@ -41,8 +41,8 @@ The following is a JSON representation of the resource.
 
 ```json
 {
-  "KerberosSignOnSettings": {"@odata.type": "microsoft.graph.kerberosSignOnSettings"},
-  "SingleSignOnMode": "String"
+  "kerberosSignOnSettings": {"@odata.type": "microsoft.graph.kerberosSignOnSettings"},
+  "singleSignOnMode": "String"
 }
 ```
 
