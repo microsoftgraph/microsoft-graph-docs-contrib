@@ -9,7 +9,7 @@ ms.custom: scenarios:getting-started
 
 # Add additional properties to the profile card using the profile API in Microsoft Graph (preview)
 
-On the [profile card](https://support.office.com/article/profile-cards-in-office-365-e80f931f-5fc4-4a59-ba6e-c1e35a85b501) in Microsoft 365, you can find information about users that is stored and maintained by your organization, for example **Job title** or **Office location**.  
+On the [profile card](https://support.office.com/article/profile-cards-in-office-365-e80f931f-5fc4-4a59-ba6e-c1e35a85b501) in Microsoft 365, you can find information about users that is stored and maintained by your organization, for example **Job title** or **Office location**.
 
 The profileCardProperties action lets you show additional properties from your Active Directory on profile cards by:
 
