@@ -1,5 +1,5 @@
 ---
-title: printMargin complex type
+title: printMargin resource type
 description: Specifies the margin widths to use when printing.
 author: braedenp-msft
 localization_priority: Normal
