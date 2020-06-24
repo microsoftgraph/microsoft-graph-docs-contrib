@@ -74,7 +74,7 @@ GET https://graph.microsoft.com/v1.0/identityProtection/riskDetections/c2b6c2b9-
 HTTP/1.1 200 OK
 Content-Type: application/json
 {
-  "value": 
+  "value": [
   {
     "@odata.type": "#microsoft.graph.riskDetection",
     "id": "6a5874ca-abcd-9d82-5ad39bd71600",
@@ -102,7 +102,8 @@ Content-Type: application/json
     "userDisplayName": "Olivia Lack",
     "userPrincipalName": "olack@adatum.com",
     "additionalInfo": "[{\"Key\":\"userAgent\",\"Value\":\"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/68.0.3440.106 Safari/537.36\"}]"
-  }
+    }
+  ]
 }
 ```
 
