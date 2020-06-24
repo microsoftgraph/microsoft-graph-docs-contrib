@@ -13,6 +13,12 @@ For a summary of the value of these API changes, as well as recent tools, compon
 
 ## June 2020
 
+### Education
+
+| **Change type** | **Version** | **Description**                                                                                                                                                     |
+| :-------------- | :---------- | :------------------------------------------------------------------------------------------------------------------------------------------------------------------ |
+| Addition        | beta        | Added new `expirationDate` property to the [`educationSynchronizationProfile`](/graph/api/resources/educationsynchronizationprofile?view=graph-rest-beta) resource. |
+
 ### Calendar
 | **Change type** | **Version**   | **Description**                          |
 | :-------------- | :------------ | :--------------------------------------- |
