@@ -73,6 +73,7 @@ GET https://graph.microsoft.com/v1.0/identityProtection/riskDetections/c2b6c2b9-
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
+
 {
   "value": [
   {
