@@ -3,7 +3,7 @@ title: "pendingOperations"
 description: "The pendingOperations resource indicates that one or more operations that might affect the state of the driveItem are pending completion."
 localization_priority: Normal
 author: "learafa"
-ms.prod: ""
+ms.prod: "files"
 doc_type: "resourcePageType"
 ---
 
@@ -12,6 +12,12 @@ doc_type: "resourcePageType"
 Namespace: microsoft.graph
 
 Indicates that one or more operations that might affect the state of the **driveItem** are pending completion.
+
+## Properties
+
+| Property                | Type        | Description |
+|:------------------------|:------------|:------------|
+|**pendingContentUpdate** |[pendingContentUpdate](pendingcontentupdate.md)|A property that indicates that an operation that might update the binary content of a file is pending completion.|
 
 ## JSON representation
 
@@ -31,12 +37,6 @@ The following is a JSON representation of the resource.
   "pendingContentUpdate": {"@odata.type": "microsoft.graph.pendingContentUpdate"}
 }
 ```
-
-## Properties
-
-| Property                | Type        | Description |
-|:------------------------|:------------|:------------|
-|**pendingContentUpdate** |[pendingContentUpdate](pendingcontentupdate.md)|A property that indicates that an operation that might update the binary content of a file is pending completion.|
 
 <!-- uuid: 16cd6b66-4b1a-43a1-adaf-3a886856ed98
 2019-02-04 14:57:30 UTC -->
