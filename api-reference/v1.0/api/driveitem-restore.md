@@ -35,7 +35,7 @@ POST /me/drive/items/{item-id}/restore
 
 | Name          | Description   |
 |:--------------|:--------------|
-| Authorization | Bearer {token} |
+| Authorization | Bearer {token}. Required. |
 
 ## Request body
 
@@ -48,7 +48,7 @@ In the request body, provide a JSON object with the following parameters.
 
 ## Response
 
-If successful, this method returns `200 OK` response code and the restored [driveItem](../resources/driveitem.md) object in the response body.
+If successful, this method returns a `200 OK` response code and the restored [driveItem](../resources/driveitem.md) object in the response body.
 
 ## Examples
 
