@@ -10,21 +10,17 @@ ms.prod: ""
 
 Namespace: microsoft.graph
 
-The **geolocationColumn** on a [columnDefinition](columndefinition.md) resource indicates that the column holds a geolocation.
+Indicates that the column on a [columnDefinition](columndefinition.md) resource holds a geolocation.
 
 ## JSON representation
 
-Here is a JSON representation of a **geolocationColumn** resource.
+The following is a JSON representation the resource.
 <!-- { "blockType": "resource", "@odata.type": "microsoft.graph.geolocationColumn" } -->
 
 ```json
 {
 }
 ```
-
-## Properties
-
-The **geolocationColumn** resource contains no properties.
 
 <!--
 {
