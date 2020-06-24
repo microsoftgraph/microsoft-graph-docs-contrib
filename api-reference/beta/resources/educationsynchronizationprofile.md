@@ -35,7 +35,7 @@ Represents a set of configurations used to synchronize education entities and ro
 
 | Property                             | Type                                                   | Description                                                                                                                       |
 | :----------------------------------- | :----------------------------------------------------- | :-------------------------------------------------------------------------------------------------------------------------------- |
-| id                                   | String                                                 | Unique identifier for a Profile (read-only)                                                                                       |
+| id                                   | String                                                 | The unique identifier for the resource. (read-only)                                                                               |
 | displayName                          | String                                                 | Name of the configuration profile for syncing identities.                                                                         |
 | dataProvider                         | [educationSynchronizationDataProvider]                 | The data provider used for the profile.                                                                                           |
 | expirationDate                       | Date                                                   | The date the profile should be considered expired and cease syncing. When `null`. the profile will never expire. (optional)       |
@@ -101,7 +101,8 @@ The following is a JSON representation of the **educationSynchronizationProfile*
       "@odata.type": "microsoft.graph.educationSynchronizationLicenseAssignment"
     }
   ],
-  "handleSpecialCharacterConstraint": "Boolean"
+  "handleSpecialCharacterConstraint": "Boolean",
+  "expirationDate": "Date"
 }
 ```
 
