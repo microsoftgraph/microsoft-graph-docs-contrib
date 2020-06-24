@@ -15,7 +15,7 @@ Groups are collections of [users](user.md) and other principals who share access
 
 | Type              | Use case | groupType | mail-enabled | security-enabled | Can be created and managed via API? |
 |-------------------|----------|-----------|--------------|------------------|--------------------------------|
-| [Microsoft 365 groups](#office-365-groups) | Facilitating user collaboration with shared Microsoft online resources. | `["Unified"]` | `true` | `false` | Yes |
+| [Microsoft 365 groups](#microsoft-365-groups) | Facilitating user collaboration with shared Microsoft online resources. | `["Unified"]` | `true` | `false` | Yes |
 | [Security groups](#security-groups-and-mail-enabled-security-groups) | Controlling user access to in-app resources. | `[]` | `false` | `true` | Yes |
 | [Mail-enabled security groups](#security-groups-and-mail-enabled-security-groups) | Controlling user access to in-app resources, with a shared group mailbox. | `[]` | `true` | `true` | No |
 | Distribution groups | Distributing mail to the members of the group. It is recommended to use Microsoft 365 groups due to the richer set of resources it provides. | `[]` | `true` | `false` | No |
