@@ -60,7 +60,7 @@ The following example shows how to call this API.
 The following is an example of the request.
 
 > [!NOTE] 
-> You can use applicationTemplate API to instantiate [Non-Gallery apps](https://docs.microsoft.com/en-us/azure/active-directory/manage-apps/add-non-gallery-app). Use applicationTemplateId `8adf8e6e-67b2-4cf2-a259-e3dc5476c621`.
+> You can use applicationTemplate API to instantiate [Non-Gallery apps](https://docs.microsoft.com/azure/active-directory/manage-apps/add-non-gallery-app). Use applicationTemplateId `8adf8e6e-67b2-4cf2-a259-e3dc5476c621`.
 
 # [HTTP](#tab/http)
 <!-- {
