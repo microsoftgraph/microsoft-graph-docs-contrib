@@ -11,7 +11,7 @@ doc_type: "resourcePageType"
 
 Namespace: microsoft.graph
 
-The **driveItemUploadableProperties** resource represents an item being uploaded when [creating an upload session](../api/driveitem-createuploadsession.md).
+Represents an item being uploaded when [creating an upload session](../api/driveitem-createuploadsession.md).
 
 ## JSON representation
 
