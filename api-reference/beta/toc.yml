@@ -39,7 +39,7 @@ items:
       - name: Overview
         href: /graph/webhooks?context=graph/api/beta
       - name: Tutorial
-        href: /graph/tutorials/change-notifications
+        href: /learn/modules/msgraph-changenotifications-trackchanges
       - name: Missing Outlook notifications (preview)
         href: /graph/webhooks-outlook-authz?context=graph/api/beta
       - name: Notifications with resource data (preview)
@@ -9680,7 +9680,7 @@ items:
                 href: api/publishedresource-post-agentgroups.md
               - name: Remove from agent group
                 href: api/publishedresource-delete-agentgroups.md
-          - name: connector
+          - name: Connector
             href: resources/connector.md
             items:
               - name: List
@@ -9691,11 +9691,13 @@ items:
                 href: api/connector-list-memberof.md 
               - name: Add connector to connectorGroup
                 href: api/connector-post-memberof.md
-          - name: connector group
+          - name: Connector group
             href: resources/connectorgroup.md
             items:
               - name: List                 
                 href: api/connectorgroup-list.md
+              - name: Create
+                href: api/connectorgroup-post.md               
               - name: Get
                 href: api/connectorgroup-get.md 
               - name: Update
