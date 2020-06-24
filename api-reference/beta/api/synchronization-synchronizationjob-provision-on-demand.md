@@ -3,7 +3,7 @@ title: "synchronizationJob: provisionOnDemand"
 description: "Select a user and provision them on-demand."
 author: "ArvindHarinder1"
 localization_priority: Normal
-ms.prod: "**TODO: Add MS prod. See [topic-level metadata reference](https://msgo.azurewebsites.net/add/document/guidelines/metadata.html#topic-level-metadata)**"
+ms.prod: "microsoft-identity-platform"
 doc_type: apiPageType
 ---
 
@@ -86,7 +86,7 @@ Content-length: 122
   "@odata.type": "microsoft.graph.stringkeystringvaluepair"
 }
 -->
-``` http
+``` 
 HTTP/1.1 202 Accepted
 Location: "https://graph.microsoft.com/beta/servicePrincipals/8783a342-f7a2-46fb-8243-3658cee556ce/jobs/apply.BoxOutDelta.6a2de5866d0e4e39a06f39c6893e0873.397e75f3-f252-4c80-9027-a812665090d68"
 ```
