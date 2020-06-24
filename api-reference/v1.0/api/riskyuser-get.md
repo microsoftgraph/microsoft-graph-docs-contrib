@@ -73,19 +73,20 @@ GET https://graph.microsoft.com/v1.0/identityProtection/riskyUsers/c2b6c2b9-dddc
 HTTP/1.1 200 OK
 Content-Type: application/json
 {
-  "value": 
-  {
-    "@odata.type": "#microsoft.graph.riskyUser",
-    "id": "c2b6c2b9-dddc-acd0-2b39-d519d803dbc3",
-    "riskLastUpdatedDateTime": "2016-01-29T20:03:57.7872426Z",
-    "isProcessing": true,
-    "isDeleted": true,
-    "riskDetail": "adminConfirmedSigninCompromised",
-    "riskLevel": "high",
-    "riskState": "atRisk",
-    "userDisplayName": "Alex Wilbur",
-    "userPrincipalName": "alexw@contoso.com"
-  }
+  "value": [
+    {
+      "@odata.type": "#microsoft.graph.riskyUser",
+      "id": "d1d4a5d4-a5d4-d1d4-d4a5-d4d1d4a5d4d1",
+      "isDeleted": "Boolean",
+      "isProcessing": "Boolean",
+      "riskLastUpdatedDateTime": "String (timestamp)",
+      "riskLevel": "String",
+      "riskState": "String",
+      "riskDetail": "String",
+      "userDisplayName": "String",
+      "userPrincipalName": "String"
+    }
+  ]
 }
 ```
 
