@@ -15,7 +15,7 @@ Read the properties and relationships of a [riskyUser](../resources/riskyuser.md
 >**Note:** Using the riskyUsers API requires an Azure AD Premium P2 license.
 
 ## Permissions
-One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/concepts/permissions-reference.md).
+One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions_reference).
 
 |Permission type      | Permissions (from least to most privileged)              |
 |:--------------------|:---------------------------------------------------------|
@@ -73,7 +73,8 @@ GET https://graph.microsoft.com/v1.0/identityProtection/riskyUsers/c2b6c2b9-dddc
 HTTP/1.1 200 OK
 Content-Type: application/json
 {
-  "value": {
+  "value": 
+  {
     "@odata.type": "#microsoft.graph.riskyUser",
     "id": "c2b6c2b9-dddc-acd0-2b39-d519d803dbc3",
     "riskLastUpdatedDateTime": "2016-01-29T20:03:57.7872426Z",
