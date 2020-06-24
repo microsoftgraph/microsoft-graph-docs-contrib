@@ -4,7 +4,7 @@ description: "The geolocationColumn on a columnDefinition resource indicates tha
 title: GeolocationColumn
 localization_priority: Normal
 doc_type: resourcePageType
-ms.prod: ""
+ms.prod: "sites"
 ---
 # geolocationColumn resource type
 
