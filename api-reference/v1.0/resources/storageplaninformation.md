@@ -4,15 +4,21 @@ description: "The storagePlanInformation resource provides information about the
 title: StoragePlanInformation
 localization_priority: Normal
 doc_type: resourcePageType
-ms.prod: ""
+ms.prod: "files"
 ---
 # storagePlanInformation resource type
 
 Namespace: microsoft.graph
 
-The **storagePlanInformation** resource provides information about the drive's storage quota plans.
+Provides information about the drive's storage quota plans.
 
-### JSON representation
+## Properties
+
+| Property name     | Type      | Description                                                             |
+|:------------------|:----------|:----------------------------------------------------------------------- |
+| **upgradeAvailable**  | Boolean   | Indicates whether there are higher storage quota plans available. Read-only. |
+
+## JSON representation
 
 <!-- {
   "blockType": "resource",
@@ -26,12 +32,6 @@ The **storagePlanInformation** resource provides information about the drive's s
 }
 
 ```
-## Properties
-
-| Property name     | Type      | Description                                                             |
-|:------------------|:----------|:----------------------------------------------------------------------- |
-| **upgradeAvailable**  | Boolean   | Indicates if there are higher storage quota plans available. Read-only. |
-
 
 <!--
 {
