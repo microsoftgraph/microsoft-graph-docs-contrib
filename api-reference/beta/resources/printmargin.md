@@ -1,25 +1,27 @@
 ---
-title: integerRange resource type
-description: Represents an inclusive range of integers described by two Int64 boundaries.
+title: printMargin resource type
+description: Specifies the margin widths to use when printing.
 author: braedenp-msft
 localization_priority: Normal
 ms.prod: universal-print
 doc_type: resourcePageType
 ---
 
-# integerRange resource type
+# printMargin complex type
 
 Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Represents an inclusive range of integers described by two Int64 boundaries.
+Specifies the margin widths to use when printing.
 
 ## Properties
 | Property     | Type        | Description |
 |:-------------|:------------|:------------|
-|start|Int64|The inclusive lower bound of the integer range.|
-|end|Int64|The inclusive upper bound of the integer range.|
+|top|Int32|The margin in microns from the top edge.|
+|bottom|Int32|The margin in microns from the bottom edge.|
+|right|Int32|The margin in microns from the right edge.|
+|left|Int32|The margin in microns from the left edge.|
 
 ## JSON representation
 
@@ -30,13 +32,15 @@ The following is a JSON representation of the resource.
   "optionalProperties": [
 
   ],
-  "@odata.type": "microsoft.graph.integerRange"
+  "@odata.type": "microsoft.graph.printMargin"
 }-->
 
 ```json
 {
-    "start": 12345,
-    "end": 12345
+  "top": 123456,
+  "bottom": 123456,
+  "right": 123456,
+  "left": 123456
 }
 ```
 
@@ -44,7 +48,7 @@ The following is a JSON representation of the resource.
 2015-10-25 14:57:30 UTC -->
 <!-- {
   "type": "#page.annotation",
-  "description": "integerRange resource",
+  "description": "printMargin resource",
   "keywords": "",
   "section": "documentation",
   "tocPath": ""
