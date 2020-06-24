@@ -3637,7 +3637,7 @@ items:
         - name: Get group setting template
           href: api/groupsettingtemplate-get.md
       - name: Identity protection
-        href: resources/identityprotection-root.md
+        href: resources/identityprotectionroot.md
         items:
         - name: Risk detection
           href: resources/riskdetection.md
@@ -3650,17 +3650,17 @@ items:
           href: resources/riskyuser.md
           items:
           - name: List risky users
-            href: api/riskyusers-list.md
+            href: api/riskyuser-list.md
           - name: Get risky user
-            href: api/riskyusers-get.md
+            href: api/riskyuser-get.md
           - name: List history
             href: api/riskyuser-list-history.md
           - name: Get history
             href: api/riskyuser-get-riskyuserhistoryitem.md
           - name: Confirm compromised
-            href: api/riskyusers-confirmcompromised.md
+            href: api/riskyuser-confirmcompromised.md
           - name: Dismiss
-            href: api/riskyusers-dismiss.md
+            href: api/riskyuser-dismiss.md
       - name: Identity provider
         href: resources/identityprovider.md
         items:
