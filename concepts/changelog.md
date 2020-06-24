@@ -18,7 +18,6 @@ For a summary of the value of these API changes, as well as recent tools, compon
 | :-------------- | :------------ | :--------------------------------------- |
 | Addition | beta | The [delta](/graph/api/event-delta?view=graph-rest-beta) function supports an additional scenario to get incremental changes (new, updated, or removed) of events in a user calendar without necessarily being bounded by a date range. |
 
-
 ### Cloud communications
 | **Change type** | **Version**   | **Description**                          |
 | :-------------- | :------------ | :--------------------------------------- |
@@ -26,6 +25,22 @@ For a summary of the value of these API changes, as well as recent tools, compon
 | Addition | v1.0 | Added an optional **externalId** property. |
 |Addition | beta | Added an additional path to the [Get presence](/graph/api/presence-get?view=graph-rest-beta) API.|
 |Addition | v1.0 | Added an optional `Accept-Language` header for [online meetings](/graph/api/resources/onlinemeeting).|
+
+### Devices and apps | Cloud printing
+| **Change type** | **Version**   | **Description**                          |
+| :-------------- | :------------ | :--------------------------------------- |
+| Addition | beta | Added the [printMargin](/graph/api/resources/printmargin?view=graph-rest-beta) complex type.|
+| Change | beta | Renamed enum types: <br/><ul><li>printPresentationDirection  -> printMultipageLayout</li><li>printDuplexConfiguration -> printDuplexMode</li><li>printColorConfiguration  -> printColorMode</li><li>documentConfiguration -> configuration</li></ul>|
+| Change | beta | Renamed **printFinishing** enum values: <br/><ul><li>edgeStitch -> stitchEdge</li><li>edgeStitchLeft -> stitchLeftEdge</li><li>edgeStitchTop -> stitchTopEdge</li><li>stitchRightEdge -> stitchBottomEdge</li><li>edgeStitchBottom -> stitchBottomEdge</li></ul>|
+| Change | beta | Renamed properties on the [integerRange](/graph/api/resources/integerrange?view=graph-rest-beta) complex type: <br/><ul><li>minimum -> start</li><li>maximum -> end</li></ul>|
+| Change | beta | Renamed properties on the [printDocument](/graph/api/resources/printdocument?view=graph-rest-beta) entity type: <br/><ul><li>name -> displayName</li><li>mimeType -> contentType</li><li>sizeInBytes -> size</li><li>documentConfiguration -> configuration</li></ul>|
+| Change | beta | Renamed properties on the [printerCapabilities](/graph/api/resources/printercapabilities?view=graph-rest-beta) complex type: <br/><ul><li>supportedDocumentMimeTypes -> contentTypes</li><li>supportedPrintQualities -> qualities</li><li>supportedDuplexConfigurations -> duplexModes</li><li>supportedCopiesPerJob -> copiesPerJob</li><li>supportedFinishings -> finishings</li><li>supportedMediaColors -> mediaColors</li><li>supportedMediaTypes -> mediaTypes</li><li>supportedMediaSizes -> mediaSizes</li><li>supportedPagesPerSheet -> pagesPerSheet</li><li>supportedOrientations -> orientations</li><li>supportedOutputBins -> outputBins</li><li>supportedPresentationDirections -> multipageLayouts</li><li>supportedColorConfigurations -> colorModes</li></ul>|
+| Addition | beta | Added properties to the [printerCapabilities](/graph/api/resources/printercapabilities?view=graph-rest-beta) complex type: <br/><ul><li>feedDirections</li><li>isPageRangeSupported</li><li>dpis</li><li>queueBufferSizeInBytes</li><li>inputBins</li><li>topMargins</li><li>bottomMargins</li><li>rightMargins</li><li>leftMargins</li><li>collation</li><li>scalings</li></ul>|
+| Change | beta | Renamed properties on the [printerDefaults](/graph/api/resources/printerdefaults?view=graph-rest-beta) complex type: <br/><ul><li>documentMimeType -> contentType</li><li>pdfFitToPage -> fitPdfToPage</li><li>presentationDirection -> multipageLayout</li><li>printColorConfiguration -> colorMode</li><li>printQuality -> quality</li><li>duplexConfiguration -> duplexMode</li></ul>|
+| Addition | beta | Added properties to the [printerDefaults](/graph/api/resources/printerdefaults?view=graph-rest-beta) complex type: <br/><ul><li>dpi</li><li>scaling</li></ul>|
+| Change | beta | Changed the type of the **pageRanges** property on the [printerDocumentConfiguration](/graph/api/resources/printerdocumentconfiguration?view=graph-rest-beta) complex type from **printPageRange** to [integerRange](/graph/api/resources/integerrange?view=graph-rest-beta)|
+| Change | beta | Renamed properties on the [printerDocumentConfiguration](/graph/api/resources/printerdocumentconfiguration?view=graph-rest-beta) complex type: <br/><ul><li>printQuality -> quality</li><li>printResolutionInDpi -> dpi</li><li>duplexConfiguration -> duplexMode</li><li>colorConfiguration -> colorMode</li></ul>|
+| Addition | beta | Added properties to the [printerDocumentConfiguration](/graph/api/resources/printerdocumentconfiguration?view=graph-rest-beta) complex type: <br/><ul><li>inputBin</li><li>outputBin</li><li>mediaSize</li><li>margin</li><li>mediaType</li><li>finishings</li><li>pagesPerSheet</li><li>multipageLayout</li><li>collate</li><li>scaling</li></ul>|
 
 ### Devices and apps | Corporate management
 
@@ -68,6 +83,21 @@ For a summary of the value of these API changes, as well as recent tools, compon
 |Addition|beta|Added new complex types:<br/>[complianceManagementPartnerAssignment](/graph/api/resources/intune-onboarding-compliancemanagementpartner?view=graph-rest-1.0)<br/>|
 |Addition|beta|Added the **complianceManagementPartners** navigation property to the [deviceManagement](/graph/api/resources/intune-shared-devicemanagement?view=graph-rest-1.0) entity|
 
+### Files
+
+| **Change type** | **Version**   | **Description**                          |
+| :-------------- | :------------ | :--------------------------------------- |
+| Addition | v1.0 | Added the [pendingOperations](/graph/api/resources/pendingOperations?view=graph-rest-v1.0) and [pendingContentUpdate](/graph/api/resources/pendingContentUpdate?view=graph-rest-v1.0) resources. The **pendingOperations** resource applies to the [driveItem](/graph/api/resources/driveItem?view=graph-rest-v1.0) resource. |
+| Addition | v1.0 | Added the [restore](/graph/api/driveitem-restore?view=graph-rest-v1.0) action to the [driveItem](/graph/api/resources/driveItem?view=graph-rest-v1.0) resource. |
+| Addition | v1.0 | Added the **orientation** property to the [photo](/graph/api/resources/photo?view=graph-rest-v1.0) resource. |
+| Addition | v1.0 | Added the **sha256Hash** property to the [hashes](/graph/api/resources/hashes?view=graph-rest-v1.0) resource. |
+| Addition | v1.0 | Added the **viewer**, **chromeless**, **allowEdit** parameters to the [preview](/graph/api/driveitem-preview?view=graph-rest-v1.0) action. |
+| Addition | v1.0 | Added the **deferCommit** parameter to the [createUploadSession](/graph/api/driveitem-createuploadsession?view=graph-rest-v1.0) action. |
+| Addition | v1.0 | Added the [storagePlanInformation](/graph/api/resources/storagePlanInformation?view=graph-rest-v1.0) resource. The **storagePlanInformation** resource applies to the [quota](/graph/api/resources/quota?view=graph-rest-v1.0) resource. |
+| Addition | v1.0 | Added the **fileSize** property to the [driveItemUploadableProperties](/graph/api/resources/driveItemUploadableProperties?view=graph-rest-v1.0) resource. |
+| Addition | v1.0 | Added the **name** property to the [contentTypeInfo](/graph/api/resources/contentTypeInfo?view=graph-rest-v1.0) resource. |
+| Addition | v1.0 | Added the [geolocation](/graph/api/resources/geolocation?view=graph-rest-v1.0) resource. The **geolocation** resource applies to the [columnDefinition](/graph/api/resources/columnDefinition?view=graph-rest-v1.0) resource. |
+
 ### Identity and access
 | **Change type** | **Version**   | **Description**                          |
 | :-------------- | :------------ | :--------------------------------------- |
@@ -78,7 +108,7 @@ For a summary of the value of these API changes, as well as recent tools, compon
 | Addition | beta | Added the **resourceBehaviorOptions** and **resourceProvisioningOptions** properties to the [group](/graph/api/resources/group?view=graph-rest-beta) entity.|
 |Deletion| beta | Removed the **isGuest** property from the [riskyUser](/graph/api/resources/riskyuser?view=graph-rest-beta) resource. |
 | Addition | beta | Added the [connector](/graph/api/resources/connector?view=graph-rest-beta) entity and the following actions: <br/> [Get connector](/graph/api/connector-get?view=graph-rest-beta) <br/> [List memberOf](/graph/api/connector-list-memberof?view=graph-rest-beta) <br/> [List connectors](/graph/api/connector-list?view=graph-rest-beta) <br/> [Add connector to connectorGroup](/graph/api/connector-post-memberof?view=graph-rest-beta) |
-| Addition | beta | Added the [connectorGroup](/graph/api/resources/connectorgroup?view=graph-rest-beta) entity and the following actions: <br/> [Get connectorGroup](/graph/api/connectorgroup-get?view=graph-rest-beta) <br/> [Assign an application](/graph/api/connectorgroup-post-applications?view=graph-rest-beta) <br/> [List applications](/graph/api/connectorgroup-list-applications?view=graph-rest-beta)  <br/> [List connectorGroups](/graph/api/connectorgroup-list?view=graph-rest-beta) <br/> [Add connector](/graph/api/connectorgroup-post-members?view=graph-rest-beta) <br/> [List connectors](/graph/api/connectorgroup-list-members?view=graph-rest-beta) <br/> [Update connectorGroup](/graph/api/connectorgroup-update?view=graph-rest-beta) <br/> [Delete connectorGroup](/graph/api/connectorgroup-delete?view=graph-rest-beta) |
+| Addition | beta | Added the [connectorGroup](/graph/api/resources/connectorgroup?view=graph-rest-beta) entity and the following actions: <br/> [Get connectorGroup](/graph/api/connectorgroup-get?view=graph-rest-beta) <br/> [Assign an application](/graph/api/connectorgroup-post-applications?view=graph-rest-beta) <br/> [List applications](/graph/api/connectorgroup-list-applications?view=graph-rest-beta)  <br/> [List connectorGroups](/graph/api/connectorgroup-list?view=graph-rest-beta) <br/> [Add connector](/graph/api/connectorgroup-post-members?view=graph-rest-beta) <br/> [List connectors](/graph/api/connectorgroup-list-members?view=graph-rest-beta) <br/> [Create connectorGroup](/graph/api/connectorgroup-post?view=graph-rest-beta) <br/>[Update connectorGroup](/graph/api/connectorgroup-update?view=graph-rest-beta) <br/> [Delete connectorGroup](/graph/api/connectorgroup-delete?view=graph-rest-beta) |
 | Addition | beta | Added the [onPremisesPublishing](/graph/api/resources/onpremisespublishing?view=graph-rest-beta) entity. |
 | Addition | beta | Added the [onPremisesPublishingSingleSignOn](/graph/api/resources/onpremisespublishingsinglesignon?view=graph-rest-beta) entity. |
 | Addition | beta | Added [verifiedCustomDomainCertificatesMetadata](/graph/api/resources/verifiedcustomdomaincertificatesmetadata?view=graph-rest-beta) entity.|

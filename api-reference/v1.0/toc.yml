@@ -39,7 +39,7 @@ items:
       - name: Overview
         href: /graph/webhooks?context=graph/api/1.0
       - name: Tutorial
-        href: /graph/tutorials/change-notifications
+        href: /learn/modules/msgraph-changenotifications-trackchanges
       - name: Missing Outlook notifications (preview)
         href: /graph/webhooks-outlook-authz?context=graph/api/1.0
     - name: Change tracking
@@ -3370,6 +3370,8 @@ items:
           href: api/driveitem-update.md
         - name: Delete item
           href: api/driveitem-delete.md
+        - name: Restore item
+          href: api/driveitem-restore.md
         - name: Move item
           href: api/driveitem-move.md
         - name: Copy item
