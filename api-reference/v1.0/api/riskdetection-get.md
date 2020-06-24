@@ -16,7 +16,7 @@ Read the properties and relationships of a [riskDetection](../resources/riskdete
 >You must have an Azure AD Premium P1 or P2 license to use the risk detection API.
 
 ## Permissions
-One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/concepts/permissions-reference.md).
+One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions_reference).
 
 |Permission type      | Permissions (from least to most privileged)              |
 |:--------------------|:---------------------------------------------------------|
@@ -74,7 +74,8 @@ GET https://graph.microsoft.com/v1.0/identityProtection/riskDetections/c2b6c2b9-
 HTTP/1.1 200 OK
 Content-Type: application/json
 {
-  "value": {
+  "value": 
+  {
     "@odata.type": "#microsoft.graph.riskDetection",
     "id": "6a5874ca-abcd-9d82-5ad39bd71600",
     "requestId": "6a5874ca-abcd-9d82-5ad39bd71600",
