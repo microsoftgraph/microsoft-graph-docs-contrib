@@ -12,7 +12,7 @@ Namespace: microsoft.graph
 
 ### activityType values 
 
-|Members|
+|Member|
 |:---|
 |signin|
 |user|
@@ -20,7 +20,7 @@ Namespace: microsoft.graph
 
 ### riskDetectionTimingType values 
 
-|Members|
+|Member|
 |:---|
 |notDefined|
 |realtime|
@@ -30,7 +30,7 @@ Namespace: microsoft.graph
 
 ### tokenIssuerType values 
 
-|Members|
+|Member|
 |:---|
 |AzureAD|
 |ADFederationServices|
