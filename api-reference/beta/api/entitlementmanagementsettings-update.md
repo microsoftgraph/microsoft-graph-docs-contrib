@@ -1,6 +1,6 @@
 ---
 title: "Update entitlementManagementSettings"
-description: "Update theg entitlementManagementSettings object to change one or more of its properties."
+description: "Update a entitlementManagementSettings object to change one or more of its properties."
 localization_priority: Normal
 author: "markwahl-msft"
 ms.prod: "microsoft-identity-platform"
@@ -13,7 +13,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Update the existing [entitlementManagementSettings](../resources/entitlementmanagementsettings.md) object to change one or more of its properties.
+Update an existing [entitlementManagementSettings](../resources/entitlementmanagementsettings.md) object to change one or more of its properties.
 
 
 ## Permissions
@@ -31,21 +31,20 @@ One of the following permissions is required to call this API. To learn more, in
 PATCH /identityGovernance/entitlementManagement/settings
 ```
 ## Request headers
-| Name         | Type        | Description |
-|:-------------|:------------|:------------|
-| Authorization | string | Bearer \{token\}. Required. |
+| Name         | Description |
+|:-------------|:------------|
+| Authorization | Bearer \{token\}. Required. |
 
 ## Request body
 In the request body, supply a JSON representation of the parameters of an [entitlementManagementSettings](../resources/entitlementmanagementsettings.md) object.
 
 ## Response
-If successful, this method returns a `204, No Content` response code.
+If successful, this method returns a `204 No Content` response code.
 
 ## Example
 
 
-##### Request
-In the request body, supply a JSON representation of the new properties of the [entitlementManagementSettings](../resources/entitlementmanagementsettings.md) object.
+### Request
 
 # [HTTP](#tab/http)
 <!-- {
@@ -61,8 +60,8 @@ Content-type: application/json
 }
 ````
 
-##### Response
->**Note:** The response object shown here might be shortened for readability. All the properties will be returned from an actual call.
+### Response
+
 <!-- {
   "blockType": "response",
   "truncated": true,
