@@ -17,9 +17,9 @@ One of the following permissions is required to call this API. To learn more, in
 
 |Permission type|Permissions (from most to least privileged)|
 |:---|:---|
-|Delegated (work or school account)|**TODO: Provide applicable permissions.**|
-|Delegated (personal Microsoft account)|**TODO: Provide applicable permissions.**|
-|Application|**TODO: Provide applicable permissions.**|
+|Delegated (work or school account) | IdentityRiskyUser.Read.All    |
+|Delegated (personal Microsoft account) | Not supported.    |
+|Application | IdentityRiskyUser.Read.All |
 
 ## HTTP request
 
