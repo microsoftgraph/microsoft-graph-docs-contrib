@@ -21,8 +21,8 @@ Inherits from [entity](../resources/entity.md).
 |:---|:---|:---|
 |[List riskyUsers](../api/riskyuser-list.md)|[riskyUser](../resources/riskyuser.md) collection|Get a list of the [riskyUser](../resources/riskyuser.md) objects and their properties.|
 |[Get riskyUser](../api/riskyuser-get.md)|[riskyUser](../resources/riskyuser.md)|Read the properties and relationships of a [riskyUser](../resources/riskyuser.md) object.|
-|[dismiss a riskyUser](../api/riskyuser-dismiss.md)|None|**TODO: Add Description**|
-|[Confirm a riskyUser as Compromised](../api/riskyuser-confirmcompromised.md)|None|**TODO: Add Description**|
+|[Dismiss a riskyUser](../api/riskyuser-dismiss.md)|None|**TODO: Add Description**|
+|[Confirm a riskyUser as compromised](../api/riskyuser-confirmcompromised.md)|None|**TODO: Add Description**|
 |[List history](../api/riskyuser-list-history.md)|[riskyUserHistoryItem](../resources/riskyuserhistoryitem.md) collection|Get the riskyUserHistoryItems from the history navigation property.|
 |[Get history](../api/riskyuser-get-riskyuserhistoryitem.md)|[riskyUserHistoryItem](../resources/riskyuserhistoryitem.md)|Read the properties and relationships of a [riskyUserHistoryItem](../resources/riskyuserhistoryitem.md) object.|
 
@@ -30,15 +30,15 @@ Inherits from [entity](../resources/entity.md).
 ## Properties
 |Property|Type|Description|
 |:---|:---|:---|
-|id|String|Unique id of the user at risk|
+|id|String|Unique ID of the user at risk.|
 |isDeleted|Boolean|Indicates whether the user is deleted. Possible values are: `true`, `false`|
 |isProcessing|Boolean|Indicates wehther a user's risky state is being processed by the backend|
-|riskDetail|riskDetail|Details of the detected risk.. Possible values are: `none`, `adminGeneratedTemporaryPassword`, `userPerformedSecuredPasswordChange`, `userPerformedSecuredPasswordReset`, `adminConfirmedSigninSafe`, `aiConfirmedSigninSafe`, `userPassedMFADrivenByRiskBasedPolicy`, `adminDismissedAllRiskForUser`, `adminConfirmedSigninCompromised`, `hidden`, `adminConfirmedUserCompromised`, `unknownFutureValue`.|
-|riskLastUpdatedDateTime|DateTimeOffset|The date and time that the risky user was last updated|
+|riskDetail|riskDetail|Details of the detected risk. Possible values are: `none`, `adminGeneratedTemporaryPassword`, `userPerformedSecuredPasswordChange`, `userPerformedSecuredPasswordReset`, `adminConfirmedSigninSafe`, `aiConfirmedSigninSafe`, `userPassedMFADrivenByRiskBasedPolicy`, `adminDismissedAllRiskForUser`, `adminConfirmedSigninCompromised`, `hidden`, `adminConfirmedUserCompromised`, `unknownFutureValue`.|
+|riskLastUpdatedDateTime|DateTimeOffset|The date and time that the risky user was last updated.|
 |riskLevel|riskLevel|Level of the detected risky user. Possible values are: `low`, `medium`, `high`, `hidden`, `none`, `unknownFutureValue`.|
 |riskState|riskState|State of the user's risk. Possible values are: `none`, `confirmedSafe`, `remediated`, `dismissed`, `atRisk`, `confirmedCompromised`, `unknownFutureValue`.|
-|userDisplayName|String|Risky user display name|
-|userPrincipalName|String|Risky user principal name|
+|userDisplayName|String|Risky user display name.|
+|userPrincipalName|String|Risky user principal name.|
 
 ## Relationships
 |Relationship|Type|Description|
