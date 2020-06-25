@@ -11,7 +11,7 @@ doc_type: apiPageType
 
 Namespace: microsoft.graph
 
-Retrieve a list of events in a calendar.  The calendar can be one for a [user](../resources/user.md), or the default calendar of an Office 365 [group](../resources/group.md). The list of events contains single instance meetings and series masters.
+Retrieve a list of events in a calendar.  The calendar can be one for a [user](../resources/user.md), or the default calendar of a Microsoft 365 [group](../resources/group.md). The list of events contains single instance meetings and series masters.
 
 To get expanded event instances, you can [get the calendar view](calendar-list-calendarview.md), or 
 [get the instances of an event](event-list-instances.md).

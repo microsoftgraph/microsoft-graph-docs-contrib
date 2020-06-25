@@ -1,6 +1,6 @@
 ---
 title: "List groups"
-description: "List all the groups available in an organization, including but not limited to Office 365 Groups."
+description: "List all the groups available in an organization, including but not limited to Microsoft 365 groups."
 localization_priority: Priority
 author: "yyuank"
 ms.prod: "groups"
@@ -13,7 +13,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-List all the groups in an organization, including but not limited to Office 365 Groups. 
+List all the groups in an organization, including but not limited to Microsoft 365 groups. 
 
 This operation returns by default only a subset of the more commonly used properties for each group. These _default_ properties are noted in the [Properties](../resources/group.md#properties) section. To get properties that are _not_ returned by default, do a [GET operation](group-get.md) for the group and specify the properties in a `$select` OData query option. The **hasMembersWithLicenseErrors** property is an exception and is not returned in the `$select` query.
 
@@ -36,7 +36,7 @@ GET /groups
 
 ## Optional query parameters
 
-To list only Office 365 Groups (aka unified groups), apply a filter on **groupTypes**:
+To list only Microsoft 365 groups (aka unified groups), apply a filter on **groupTypes**:
 <!-- { "blockType": "ignored" } -->
 ```
 GET https://graph.microsoft.com/beta/groups?$filter=groupTypes/any(c:c+eq+'Unified')
