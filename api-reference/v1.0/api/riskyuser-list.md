@@ -64,7 +64,7 @@ GET https://graph.microsoft.com/v1.0/identityProtection/riskyUsers
 <!-- {
   "blockType": "response",
   "truncated": true,
-  "@odata.type": "collection(microsoft.graph.riskyuser)"
+  "@odata.type": "collection(microsoft.graph.riskyUser)"
 }
 -->
 ``` http
