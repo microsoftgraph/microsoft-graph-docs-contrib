@@ -279,7 +279,6 @@ POST https://graph.microsoft.com/beta/onPremisesPublishingProfiles/applicationPr
 Content-type: application/json
 {
    "name": "IWA Demo Connector Group"
-   "region": "nam"
 }
 ```
 
@@ -298,7 +297,6 @@ Content-type: connectorGroup/json
     "@odata.context": "https://graph.microsoft.com/beta/$metadata#connectorGroups/$entity",
     "id": "3e6f4c35-a04b-4d03-b98a-66fff89b72e6",
     "name": "IWA Demo Connector Group",
-    "region": "nam",
     "connectorGroupType": "applicationProxy",
     "isDefault": false
 }
