@@ -70,6 +70,7 @@ GET https://graph.microsoft.com/v1.0/identityProtection/riskyUsers
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
+
 {
   "value": [
     {
