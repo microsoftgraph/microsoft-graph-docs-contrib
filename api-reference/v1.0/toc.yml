@@ -39,7 +39,7 @@ items:
       - name: Overview
         href: /graph/webhooks?context=graph/api/1.0
       - name: Tutorial
-        href: /graph/tutorials/change-notifications
+        href: /learn/modules/msgraph-changenotifications-trackchanges
       - name: Missing Outlook notifications (preview)
         href: /graph/webhooks-outlook-authz?context=graph/api/1.0
     - name: Change tracking
@@ -3370,6 +3370,8 @@ items:
           href: api/driveitem-update.md
         - name: Delete item
           href: api/driveitem-delete.md
+        - name: Restore item
+          href: api/driveitem-restore.md
         - name: Move item
           href: api/driveitem-move.md
         - name: Copy item
@@ -3743,6 +3745,21 @@ items:
             href: api/homerealmdiscoverypolicy-delete.md
           - name: List applied to applications
             href: api/homerealmdiscoverypolicy-list-appliesto.md
+        - name: Claims mapping policy
+          href: resources/claimsmappingpolicy.md
+          items:
+          - name: Create
+            href: api/claimsmappingpolicy-post-claimsmappingpolicies.md
+          - name: List
+            href: api/claimsmappingpolicy-list.md
+          - name: Get
+            href: api/claimsmappingpolicy-get.md
+          - name: Update
+            href: api/claimsmappingpolicy-update.md
+          - name: Delete
+            href: api/claimsmappingpolicy-delete.md
+          - name: List applied to applications
+            href: api/claimsmappingpolicy-list-appliesto.md
         - name: Token issuance policy
           href: resources/tokenissuancepolicy.md
           items:
@@ -3841,6 +3858,32 @@ items:
             href: api/serviceprincipal-post-owners.md
           - name: Remove
             href: api/serviceprincipal-delete-owners.md
+        - name: Policies
+          items:
+          - name: Assign claimsMappingPolicy
+            href: api/serviceprincipal-post-claimsmappingpolicies.md
+          - name: List claimsMappingPolicies
+            href: api/serviceprincipal-list-claimsmappingpolicies.md
+          - name: Remove claimsMappingPolicy
+            href: api/serviceprincipal-delete-claimsmappingpolicies.md
+          - name: Assign homeRealmDiscoveryPolicy
+            href: api/serviceprincipal-post-homerealmdiscoverypolicies.md
+          - name: List homeRealmDiscoveryPolicies
+            href: api/serviceprincipal-list-homerealmdiscoverypolicies.md
+          - name: Remove homeRealmDiscoveryPolicy
+            href: api/serviceprincipal-delete-homerealmdiscoverypolicies.md
+          - name: Assign tokenIssuancePolicy
+            href: api/application-post-tokenissuancepolicies.md
+          - name: List tokenIssuancePolicies
+            href: api/application-list-tokenissuancepolicies.md
+          - name: Remove tokenIssuancePolicy
+            href: api/application-delete-tokenissuancepolicies.md
+          - name: Assign tokenLifetimePolicy
+            href: api/application-post-tokenlifetimepolicies.md
+          - name: List tokenLifetimePolicies
+            href: api/application-list-tokenlifetimepolicies.md
+          - name: Remove tokenLifetimePolicy
+            href: api/application-delete-tokenlifetimepolicies.md
       - name: Subscribed SKU
         href: resources/subscribedsku.md
         items:
@@ -4263,7 +4306,7 @@ items:
           href: api/reportroot-getmailboxusagequotastatusmailboxcounts.md
         - name: Get  storage
           href: api/reportroot-getmailboxusagestorage.md
-      - name: Office 365 activations
+      - name: Microsoft 365 activations
         href: resources/office-365-activations-reports.md
         items:
         - name: Get user detail
@@ -4272,7 +4315,7 @@ items:
           href: api/reportroot-getoffice365activationcounts.md
         - name: Get user counts
           href: api/reportroot-getoffice365activationsusercounts.md
-      - name: Office 365 active users
+      - name: Microsoft 365 active users
         href: resources/office-365-active-users-reports.md
         items:
         - name: Get user detail
@@ -4281,7 +4324,7 @@ items:
           href: api/reportroot-getoffice365activeusercounts.md
         - name: Get services user counts
           href: api/reportroot-getoffice365servicesusercounts.md
-      - name: Office 365 groups activity
+      - name: Microsoft 365 groups activity
         href: resources/office-365-groups-activity-reports.md
         items:
         - name: Get group detail
