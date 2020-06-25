@@ -278,7 +278,7 @@ items:
         items:
           - name: Overview
             href: reportroot-concept-overview.md
-          - name: Authorization for Office 365 usage reports
+          - name: Authorization for Microsoft 365 usage reports
             href: reportroot-authorization.md
       - name: Search (preview)
         items:
@@ -396,7 +396,7 @@ items:
               - name: Overview
                 href: webhooks.md
               - name: Tutorial
-                href: /graph/tutorials/change-notifications
+                href: /learn/modules/msgraph-changenotifications-trackchanges
               - name: Missing Outlook notifications (preview)
                 href: webhooks-outlook-authz.md
               - name: Notifications with resource data (preview)

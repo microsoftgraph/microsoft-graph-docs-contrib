@@ -140,7 +140,7 @@ The response includes two messages and a `@odata.nextLink` response header with 
   "@odata.type": "microsoft.graph.chatMessage",
   "isCollection": true
 } -->
-```
+```http
 HTTP/1.1 200 OK
 Content-type: application/json
 
@@ -237,7 +237,7 @@ The second response returns the next 2 messages and a `@odata.nextLink` response
   "@odata.type": "microsoft.graph.chatMessage",
   "isCollection": true
 } -->
-```
+```http
 HTTP/1.1 200 OK
 Content-type: application/json
 
@@ -334,7 +334,7 @@ The third response returns the only remaining messages in the channel and a `@od
   "@odata.type": "microsoft.graph.chatMessage",
   "isCollection": true
 } -->
-```
+```http
 HTTP/1.1 200 OK
 Content-type: application/json
 
@@ -408,7 +408,7 @@ GET /teams/{id}/channels/{id}/messages/delta?$deltatoken=c3RhcnRUaW1lPTE1NTEyODc
   "@odata.type": "microsoft.graph.chatMessage",
   "isCollection": true
 } -->
-```
+```http
 HTTP/1.1 200 OK
 Content-type: application/json
 

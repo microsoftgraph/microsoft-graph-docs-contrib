@@ -62,7 +62,7 @@ If no sites were found, an empty collection is returned.
 
 
 # [HTTP](#tab/http)
-<!-- { "blockType": "request", "name": "get-analytics" } -->
+<!-- { "blockType": "request", "name": "sites-list-followed", "scopes": "sites.readwrite.all" } -->
 
 ```msgraph-interactive
 GET /me/followedSites
