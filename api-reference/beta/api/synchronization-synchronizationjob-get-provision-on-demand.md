@@ -28,9 +28,8 @@ One of the following permissions is required to call this API. To learn more, in
 }
 -->
 ``` http
-POST /servicePrincipals/{servicePrincipalsId}/synchronization/jobs/{synchronizationJobId}/provisionOnDemand
+GET /servicePrincipals/{servicePrincipalsId}/synchronization/jobs/apply.{synchronizationJobId}
 ```
-
 ## Request headers
 |Name|Description|
 |:---|:---|
@@ -45,8 +44,6 @@ The following table shows the parameters that can be used with this action.
 |Parameter|Type|Description|
 |:---|:---|:---|
 |parameters|[synchronizationJobApplicationParameters](../resources/synchronization-synchronizationjobapplicationparameters.md) collection|Represents the objects that will be provisioned and the synchronization rules executed. The resource is primarily used for on-demand provisioning. |
-
-
 
 ## Response
 
