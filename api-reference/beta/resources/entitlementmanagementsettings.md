@@ -50,7 +50,7 @@ The following is a JSON representation of the resource.
 ```json
 {
   "externalUserLifecycleAction": "String",
-  "daysUntilExternalUserDeletedAfterBlocked": number
+  "daysUntilExternalUserDeletedAfterBlocked": 1
 }
 ```
 
