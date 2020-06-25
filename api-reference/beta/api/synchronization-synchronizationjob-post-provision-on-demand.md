@@ -1,6 +1,6 @@
 ---
 title: "synchronizationJob: provisionOnDemand"
-description: "Select a user and provision them on-demand."
+description: "Select a user and provision the account on-demand."
 author: "ArvindHarinder1"
 localization_priority: Normal
 ms.prod: "microsoft-identity-platform"
@@ -10,7 +10,7 @@ doc_type: apiPageType
 # provisionOnDemand
 Namespace: microsoft.graph
 
-Select a user and provision them on-demand.
+Select a user and provision the account on-demand.
 
 ## Permissions
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/concepts/permissions-reference.md).
