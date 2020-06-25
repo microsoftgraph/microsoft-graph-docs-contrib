@@ -1,17 +1,17 @@
 ---
-title: "Update profilecardproperty"
-description: "Update the properties of profilecardproperty object."
+title: "Update profileCardProperty"
+description: "Update the properties of a profileCardProperty object."
 localization_priority: Normal
 author: "kevinbellinger"
 ms.prod: "people"
 doc_type: "apiPageType"
 ---
 
-# Update profilecardproperty
+# Update profileCardProperty
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Update the properties of profilecardproperty object.
+Update the properties of a [profileCardProperty](../resources/profilecardproperty.md) object.
 
 ## Permissions
 
@@ -23,7 +23,7 @@ One of the following permissions is required to call this API. To learn more, in
 | Delegated (personal Microsoft account) | Not supported.                              |
 | Application                            | Not supported.                              |
 
-_Note: The profileCardProperties object requires the signed-in user to have a Tenant Administrator or Global Administrator role to successfully execute.
+>**Note:** The **profileCardProperties** object requires the signed-in user to have a tenant administrator or Global administrator role to run successfully.
 
 ## HTTP request
 
@@ -37,7 +37,7 @@ PATCH https://graph.microsoft.com/beta/organization/settings/profileCardProperti
 
 | Name       | Description|
 |:-----------|:-----------|
-| Authorization | Bearer {token} |
+| Authorization | Bearer {token}. Required. |
 | Content-Type  | application/json. Required. |
 
 ## Request body
