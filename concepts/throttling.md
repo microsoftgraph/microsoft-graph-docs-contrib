@@ -56,6 +56,10 @@ The following resources currently provide a `Retry-After` header:
 - [Drive (OneDrive)](/graph/api/resources/drive?view=graph-rest-1.0)
 - [External item (Microsoft Search)](/graph/api/resources/externalitem?view=graph-rest-beta)
 - [Subscription](/graph/api/resources/subscription)
+- [Trending](/graph/api/resources/insights-trending)
+- [Used insight](/graph/api/resources/insights-used)
+- [Shared insight](/graph/api/resources/insights-shared)
+- [User settings](/graph/api/resources/usersettings)
 
 For a broader discussion of throttling on the Microsoft Cloud, see [Throttling Pattern](https://docs.microsoft.com/azure/architecture/patterns/throttling).
 
@@ -161,3 +165,12 @@ The following limits apply to any request on `/subscriptions`.
 |---------------------------|------------------------------|-----------------------------------|
 | POST, PUT, DELETE, PATCH  | 1000 requests per 20 seconds | 2000 requests per 20 seconds      |
 | All other HTTP methods    | 5000 requests per 20 seconds | 10000 requests per 20 seconds     |
+
+### Insights service limits
+
+The following limits apply to any request on `me/insights` or `users/{id}/insights`.
+
+| Limit                                                      | Applies to      |
+|------------------------------------------------------------|-----------------|
+| 10,000 API requests in a 10 minute period                  | v1.0 and beta endpoints |
+| 4 concurrent requests                                      | v1.0 and beta endpoints   |
