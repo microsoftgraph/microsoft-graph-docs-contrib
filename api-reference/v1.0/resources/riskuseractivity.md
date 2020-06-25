@@ -11,7 +11,7 @@ doc_type: resourcePageType
 
 Namespace: microsoft.graph
 
-**TODO: Add Description**
+Represents the risk activites of an Azure AD user as determined by Azure AD Identity Protection.
 
 ## Properties
 |Property|Type|Description|
