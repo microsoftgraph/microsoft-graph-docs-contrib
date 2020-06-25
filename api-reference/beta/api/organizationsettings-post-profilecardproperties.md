@@ -11,7 +11,7 @@ doc_type: "apiPageType"
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Use this API to create a new profileCardProperty.
+Create a new [profileCardProperty](../resources/profilecardproperty.md) object.
 
 ## Permissions
 
@@ -23,7 +23,7 @@ One of the following permissions is required to call this API. To learn more, in
 | Delegated (personal Microsoft account) | Not supported.                              |
 | Application                            | Not supported.                              |
 
-_Note: The profileCardProperties object requires the signed-in user to have a Tenant Administrator or Global Administrator role to successfully execute.
+>**Note:** The **profileCardProperties** object requires the signed-in user to have a tenant administrator or Global administrator role to run successfully.
 
 ## HTTP request
 
@@ -37,16 +37,16 @@ POST https://graph.microsoft.com/beta/organization/settings/profileCardPropertie
 
 | Name          |Description                  |
 |:--------------|:----------------------------|
-| Authorization | Bearer {token}              |
+| Authorization | Bearer {token}. Required.   |
 | Content-Type  | application/json. Required. |
 
 ## Request body
 
-In the request body, supply a JSON representation of [profileCardProperty](../resources/profilecardproperty.md) object.
+In the request body, supply a JSON representation of a [profileCardProperty](../resources/profilecardproperty.md) object.
 
 ## Response
 
-If successful, this method returns `201, Created` response code and a new [profileCardProperty](../resources/profilecardproperty.md) object in the response body.
+If successful, this method returns `201 Created` response code and a new [profileCardProperty](../resources/profilecardproperty.md) object in the response body.
 
 ## Examples
 
