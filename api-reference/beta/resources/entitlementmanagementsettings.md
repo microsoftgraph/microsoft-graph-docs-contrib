@@ -49,8 +49,8 @@ The following is a JSON representation of the resource.
 
 ```json
 {
-  "externalUserLifecycleAction": "None",
-  "daysUntilExternalUserDeletedAfterBlocked": 1
+  "externalUserLifecycleAction": "String",
+  "daysUntilExternalUserDeletedAfterBlocked": number
 }
 ```
 
