@@ -26,6 +26,7 @@ In addition to the following permissions, the user's tenant must have an active 
 |Delegated (personal Microsoft account)|Not Supported.|
 |Application|Printer.ReadWrite.All|
 
+Only the app that registered the printer is allowed to update printer using application permissions
 ## HTTP request
 <!-- { "blockType": "ignored" } -->
 ```http
