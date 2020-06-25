@@ -1,5 +1,5 @@
 ---
-title: "Dismiss riskyUser"
+title: "riskyUser: dismiss"
 description: "Dismiss a risky user"
 author: "cloudhandler"
 localization_priority: Normal
@@ -7,9 +7,8 @@ ms.prod: "microsoft-identity-platform"
 doc_type: apiPageType
 ---
 
-# dismiss
+# riskyUser: dismiss
 Namespace: microsoft.graph
-
 
 >**Note:** Using the riskyUsers API requires an Azure AD Premium P2 license.
 
