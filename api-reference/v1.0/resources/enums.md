@@ -35,6 +35,7 @@ Namespace: microsoft.graph
 |AzureAD|
 |ADFederationServices|
 |UnknownFutureValue|
+
 ### attachmentType values
 
 | Member
