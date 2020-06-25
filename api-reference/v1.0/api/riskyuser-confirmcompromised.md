@@ -1,5 +1,5 @@
 ---
-title: "Confirm riskyUser compromised"
+title: "riskyUser: confirmCompromised"
 description: "Confirm a user as compromised"
 author: "cloudhandler"
 localization_priority: Normal
@@ -7,7 +7,7 @@ ms.prod: "microsoft-identity-platform"
 doc_type: apiPageType
 ---
 
-# confirmCompromised
+# riskyUser: confirmCompromised
 Namespace: microsoft.graph
 
 >**Note:** The riskyUsers API requires an Azure AD Premium P2 license.
