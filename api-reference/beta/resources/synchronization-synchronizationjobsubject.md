@@ -16,8 +16,8 @@ Represents the objects that will be provisioned during on-demand provisioning.
 ## Properties
 |Property|Type|Description|
 |:---|:---|:---|
-|objectId|String|The identifier of an object to which a synchronizationJob  is to be applied|
-|objectTypeName|String|The type of the object to which a synchronizationJob  is to be applied|
+|objectId|String|The identifier of an object to which a synchronizationJob  is to be applied.|
+|objectTypeName|String|The type of the object to which a synchronizationJob  is to be applied.|
 
 ## Relationships
 None.
