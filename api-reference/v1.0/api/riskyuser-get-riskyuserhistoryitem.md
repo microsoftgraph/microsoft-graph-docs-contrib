@@ -73,6 +73,7 @@ GET https://graph.microsoft.com/v1.0/identityProtection/riskyUsers/41a31b00-3b3b
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
+
 {
   "value": 
   {
