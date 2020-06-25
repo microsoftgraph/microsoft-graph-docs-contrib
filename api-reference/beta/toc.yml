@@ -39,7 +39,7 @@ items:
       - name: Overview
         href: /graph/webhooks?context=graph/api/beta
       - name: Tutorial
-        href: /graph/tutorials/change-notifications
+        href: /learn/modules/msgraph-changenotifications-trackchanges
       - name: Missing Outlook notifications (preview)
         href: /graph/webhooks-outlook-authz?context=graph/api/beta
       - name: Notifications with resource data (preview)
@@ -401,7 +401,7 @@ items:
           href: api/planneruser-list-tasks.md
         - name: Update settings
           href: api/planneruser-update.md
-      - name: Preferred languages and regional formats
+      - name: Preferred languages and regional formats (preview)
         href: resources/regionalandlanguagesettings.md
         items:
         - name: Get
@@ -9687,7 +9687,7 @@ items:
                 href: api/publishedresource-post-agentgroups.md
               - name: Remove from agent group
                 href: api/publishedresource-delete-agentgroups.md
-          - name: connector
+          - name: Connector
             href: resources/connector.md
             items:
               - name: List
@@ -9698,11 +9698,13 @@ items:
                 href: api/connector-list-memberof.md 
               - name: Add connector to connectorGroup
                 href: api/connector-post-memberof.md
-          - name: connector group
+          - name: Connector group
             href: resources/connectorgroup.md
             items:
               - name: List                 
                 href: api/connectorgroup-list.md
+              - name: Create
+                href: api/connectorgroup-post.md               
               - name: Get
                 href: api/connectorgroup-get.md 
               - name: Update
@@ -10079,11 +10081,9 @@ items:
             href: api/serviceprincipal-delete-owners.md
         - name: Policies
           items:
-          - name: List assigned policies
-            href: api/policy-list-assigned.md
           - name: Assign claimsMappingPolicy
             href: api/serviceprincipal-post-claimsmappingpolicies.md
-          - name: List claimsMappingPolicies]
+          - name: List claimsMappingPolicies
             href: api/serviceprincipal-list-claimsmappingpolicies.md
           - name: Remove claimsMappingPolicy
             href: api/serviceprincipal-delete-claimsmappingpolicies.md
@@ -10849,7 +10849,7 @@ items:
             items:
             - name: Get usage summary
               href: api/reportroot-getcredentialusagesummary.md
-      - name: Office 365 usage reports
+      - name: Microsoft 365 usage reports
         items:
         - name: Overview
           href: resources/report.md
@@ -10902,7 +10902,7 @@ items:
             href: api/reportroot-getmailboxusagequotastatusmailboxcounts.md
           - name: Get  storage
             href: api/reportroot-getmailboxusagestorage.md
-        - name: Office 365 activations
+        - name: Microsoft 365 activations
           href: resources/office-365-activations-reports.md
           items:
           - name: Get user detail
@@ -10911,7 +10911,7 @@ items:
             href: api/reportroot-getoffice365activationcounts.md
           - name: Get user counts
             href: api/reportroot-getoffice365activationsusercounts.md
-        - name: Office 365 active users
+        - name: Microsoft 365 active users
           href: resources/office-365-active-users-reports.md
           items:
           - name: Get user detail
@@ -10920,7 +10920,7 @@ items:
             href: api/reportroot-getoffice365activeusercounts.md
           - name: Get services user counts
             href: api/reportroot-getoffice365servicesusercounts.md
-        - name: Office 365 groups activity
+        - name: Microsoft 365 groups activity
           href: resources/office-365-groups-activity-reports.md
           items:
           - name: Get group detail

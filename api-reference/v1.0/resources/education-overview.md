@@ -1,6 +1,6 @@
 ---
 title: "Working with education APIs in Microsoft Graph"
-description: "The education APIs in Microsoft Graph enhance Office 365 resources and data with information that is relevant for education scenarios, including schools, students, teachers, classes, and enrollments. This makes it easy for you to build solutions that integrate with educational resources."
+description: "The education APIs in Microsoft Graph enhance Microsoft 365 resources and data with information that is relevant for education scenarios, including schools, students, teachers, classes, and enrollments. This makes it easy for you to build solutions that integrate with educational resources."
 localization_priority: Priority
 author: "mmast-msft"
 ms.prod: "education"
@@ -9,7 +9,7 @@ doc_type: conceptualPageType
 
 # Working with education APIs in Microsoft Graph
 
-The education APIs in Microsoft Graph enhance Office 365 resources and data with information that is relevant for education scenarios, including schools, students, teachers, classes, and enrollments. This makes it easy for you to build solutions that integrate with educational resources.
+The education APIs in Microsoft Graph enhance Microsoft 365 resources and data with information that is relevant for education scenarios, including schools, students, teachers, classes, and enrollments. This makes it easy for you to build solutions that integrate with educational resources.
 
 The education APIs include rostering resources and assignments resources that you can use to interact with the rostering services in Microsoft Teams. You can use these resources to manage a school roster.
 
@@ -37,7 +37,7 @@ client_id={clientId}&state=12345&redirect_uri={redirectUrl}
 
 ## Rostering
 
-The rostering APIs enable you to extract data from a school's Office 365 tenant provisioned with [Microsoft School Data Sync](https://sds.microsoft.com/). These APIs provide access to information about schools, sections, teachers, students, and rosters. The APIs support both app-only (sync) scenarios, and app + user (interactive) scenarios. The APIs that support interactive scenarios enforce region-appropriate RBAC policies based on the user role calling the API. This provides a consistent API and minimal policy surface, regardless of the administrative configuration within tenants. In addition, the APIs also provide education-specific permissions to ensure that the right user has access to the data.
+The rostering APIs enable you to extract data from a school's Microsoft 365 tenant provisioned with [Microsoft School Data Sync](https://sds.microsoft.com/). These APIs provide access to information about schools, sections, teachers, students, and rosters. The APIs support both app-only (sync) scenarios, and app + user (interactive) scenarios. The APIs that support interactive scenarios enforce region-appropriate RBAC policies based on the user role calling the API. This provides a consistent API and minimal policy surface, regardless of the administrative configuration within tenants. In addition, the APIs also provide education-specific permissions to ensure that the right user has access to the data.
 
 You can use the rostering APIs to enable an app user to know:
 
@@ -50,8 +50,8 @@ The rostering APIs provide the following key resources:
 - [educationSchool](educationschool.md) - Represents the school.
 - [educationClass](educationclass.md) - Represents a class within a school.
 - [educationTerm](educationterm.md) - Represents a designated portion of the academic year.
-- [educationTeacher](educationteacher.md) - Represents a users with the primary role of 'Teacher'.
-- [educationStudent](educationstudent.md) - Represents a users with the primary role of 'student'.
+- [educationTeacher](educationteacher.md) - Represents a user with the primary role of 'Teacher'.
+- [educationStudent](educationstudent.md) - Represents a user with the primary role of 'student'.
 
 The rostering APIs support the following scenarios:
 

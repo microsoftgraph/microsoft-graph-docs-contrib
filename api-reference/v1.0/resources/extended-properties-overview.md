@@ -22,7 +22,7 @@ You can use extended properties REST API to store or get such custom data in the
 - [contact](../resources/contact.md)
 - [contactFolder](../resources/contactfolder.md)
 
-Or, in the following Office 365 group resources:
+Or, in the following Microsoft 365 group resources:
 
 - group [event](../resources/event.md)
 - group [calendar](../resources/calendar.md)

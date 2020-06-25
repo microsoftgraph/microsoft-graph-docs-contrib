@@ -14,7 +14,7 @@ In an organization that supports online meeting providers, administrators can se
 
 An organization that supports any of the following online meeting providers can set up Outlook calendars and enable organizing meetings online:
 
-- Microsoft Teams, acquired as part of an Office 365 business or enterprise suite
+- Microsoft Teams, acquired as part of a Microsoft 365 business or enterprise suite
 - Skype
 - Skype for Business
 
@@ -467,7 +467,7 @@ Content-type: application/json
 
 
 ## See also
-- For information on Microsoft Teams interoperability with Office 365, see:
+- For information on Microsoft Teams interoperability with Microsoft 365, see:
   - [How Exchange and Microsoft Teams interact](/microsoftteams/exchange-teams-interact)
   - [Setting your coexistence and upgrade settings](/microsoftteams/setting-your-coexistence-and-upgrade-settings)
 - [Choose an API in Microsoft Graph to create and join online meetings](choose-online-meeting-api.md)
