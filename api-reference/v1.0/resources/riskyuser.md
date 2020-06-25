@@ -44,7 +44,7 @@ For more information about risk events, see [Azure Active Directory Identity Pro
 ## Relationships
 |Relationship|Type|Description|
 |:---|:---|:---|
-|history|[riskyUserHistoryItem](../resources/riskyuserhistoryitem.md) collection|**TODO: Add Description**|
+|history|[riskyUserHistoryItem](../resources/riskyuserhistoryitem.md) collection|	The activity related to user risk level change|
 
 ## JSON representation
 The following is a JSON representation of the resource.
