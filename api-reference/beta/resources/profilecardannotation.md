@@ -1,6 +1,6 @@
 ---
 title: "profileCardAnnotation resource type"
-description: "The profileCardAnnotion resource allows an administrator to customize the appearance of selected fields in the Microsoft 365 Profile Card."
+description: "Allows an administrator to customize the appearance of selected fields in the Microsoft 365 profile card."
 localization_priority: Normal
 author: "kevinbellinger"
 ms.prod: "people"
@@ -11,14 +11,14 @@ doc_type: "resourcePageType"
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-The profileCardAnnotation type is used to set a custom displayName for fields which surface in a shared Microsoft 365 people experieence. An administrator can define a default displayName string and a set of alternative translations for the languages that they wish to have support for within their organization.
+Used to set a custom display name for fields that surface in a shared Microsoft 365 people experieence. An administrator can define a default display name string and a set of alternative translations for the languages that they support in their organization.
 
 ## Properties
 
 | Property     | Type                                                            | Description                                                                                                                       |
 |:-------------|:----------------------------------------------------------------|:----------------------------------------------------------------------------------------------------------------------------------|
-|displayName   |String                                                           | If present the value of this field is used by the profile card as the default property label in the experience. (ie: Cost Center) |
-|localizations |[displayNameLocalization](displaynamelocalization.md) collection | If present the the localized value for a given language will be used as the default property label in the experience. (ie: a user with no-NB client will receive "Kostnads Senter" as their label, rather than "Cost Center")|
+|displayName   |String                                                           | If present, the value of this field is used by the profile card as the default property label in the experience (for example, Cost Center). |
+|localizations |[displayNameLocalization](displaynamelocalization.md) collection | If present, the localized value for a given language will be used as the default property label in the experience (for example, a user with a no-NB client will receive "Kostnads Senter" as their label, rather than "Cost Center".)|
 
 ## JSON representation
 
