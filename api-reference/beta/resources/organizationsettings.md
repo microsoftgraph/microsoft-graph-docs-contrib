@@ -1,6 +1,6 @@
 ---
 title: "organizationSettings resource type"
-description: "The organizationSettings resource contains settings which are applicable to the organization or the user objects within it."
+description: "Contains settings that are applicable to the organization or the user objects within it."
 localization_priority: Normal
 author: "kevinbellinger"
 ms.prod: "people"
@@ -11,7 +11,7 @@ doc_type: "resourcePageType"
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-The organizationSettings resource contains settings which are applicable to the [organization](organization.md) or which should be applied to [user](user.md) objects within a given organization.
+Contains settings that are applicable to the [organization](organization.md) or that should be applied to [user](user.md) objects within an organization.
 
 ## Methods
 
@@ -22,7 +22,7 @@ The organizationSettings resource contains settings which are applicable to the 
 
 ## Properties
 
-None
+None.
 
 ## Relationships
 
@@ -32,7 +32,7 @@ None
 
 ## JSON representation
 
-Here is a JSON representation of the resource
+The following is a JSON representation of the resource.
 
 <!-- {
   "blockType": "resource",
