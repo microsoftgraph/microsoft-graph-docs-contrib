@@ -55,6 +55,7 @@ The following resources currently provide a `Retry-After` header:
 - [People and social](/graph/api/resources/social-overview?view=graph-rest-beta)
 - [Drive (OneDrive)](/graph/api/resources/drive?view=graph-rest-1.0)
 - [External item (Microsoft Search)](/graph/api/resources/externalitem?view=graph-rest-beta)
+- [Reports](#microsoft-graph-reports)
 - [Subscription](/graph/api/resources/subscription)
 
 For a broader discussion of throttling on the Microsoft Cloud, see [Throttling Pattern](https://docs.microsoft.com/azure/architecture/patterns/throttling).
@@ -161,3 +162,12 @@ The following limits apply to any request on `/subscriptions`.
 |---------------------------|------------------------------|-----------------------------------|
 | POST, PUT, DELETE, PATCH  | 1000 requests per 20 seconds | 2000 requests per 20 seconds      |
 | All other HTTP methods    | 5000 requests per 20 seconds | 10000 requests per 20 seconds     |
+
+### Microsoft Graph reports
+
+The following limits apply to any request on `/reports`.
+
+| Operation                 | Limit per app per tenant     | Limit per tenant           |
+|---------------------------|------------------------------|----------------------------|
+| Any request (CSV)         | 14 requests per 10 minutes   | 40 requests per 10 minutes |
+| Any request (JSON, beta)  | 100 requests per 10 minutes  | n/a                        |
