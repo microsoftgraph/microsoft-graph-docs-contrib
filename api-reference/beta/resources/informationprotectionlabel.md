@@ -37,7 +37,7 @@ Describes the information protection label that details how to properly apply a 
 | name        | String  | The plaintext name of the label.                                                                |
 | sensitivity | Int32   | The sensitivity value of the label, where lower is less sensitive.                              |
 | tooltip     | String  | The tooltip that should be displayed for the label in a UI.                                     |
-| parent      | Label   | The parent label associated with a child label.
+| parent      | Label   | The parent label associated with a child label. Null if label has no parent.
 
 ## Relationships
 
@@ -67,12 +67,12 @@ The following is a JSON representation of the resource.
   "sensitivity": 1024,
   "tooltip": "String",
   "parent": {
-    "id": "4b18e8bb-b4a5-4695-85d0-8ae23ef27892",
-    "name": "Highly Confidential",
-    "description": "Consult Contoso data labeling policy for more details.",
+    "id": "String (identifier)",
+    "name": "String",
+    "description": "String",
     "color": "",
-    "sensitivity": 3,
-    "tooltip": "Data classified as Contoso Highly Confidential.",
+    "sensitivity": 1024,
+    "tooltip": "String",
     "isActive": true,
     "parent": null
   }
