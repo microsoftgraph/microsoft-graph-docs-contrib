@@ -1,6 +1,6 @@
 ---
 title: "entitlementManagementSettings resource type"
-description: "Tenant-wide settings for Azure AD entitlement management."
+description: "Represents tenant-wide settings for Azure AD entitlement management."
 localization_priority: Normal
 author: "markwahl-msft"
 ms.prod: "microsoft-identity-platform"
@@ -13,14 +13,14 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-The settings control the behavior of [Azure AD entitlement management](entitlementmanagement-root.md).
+Represents settings that control the behavior of [Azure AD entitlement management](entitlementmanagement-root.md).
 
 ## Methods
 
 | Method       | Return Type | Description |
 |:-------------|:------------|:------------|
-| [Get](../api/entitlementmanagementsettings-get.md) | [entitlementManagementSettings](entitlementmanagementsettings.md) | Read properties of an **entitlementManagementSettings** object. |
-| [Update](../api/entitlementmanagementsettings-update.md) | [entitlementManagementSettings](entitlementmanagementsettings.md) | Update properties of an **entitlementManagementSettings** object. |
+| [Get](../api/entitlementmanagementsettings-get.md) | [entitlementManagementSettings](entitlementmanagementsettings.md) | Read the properties of an **entitlementManagementSettings** object. |
+| [Update](../api/entitlementmanagementsettings-update.md) | [entitlementManagementSettings](entitlementmanagementsettings.md) | Update the properties of an **entitlementManagementSettings** object. |
 
 ## Properties
 
