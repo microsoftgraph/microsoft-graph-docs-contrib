@@ -72,6 +72,7 @@ Content-type: application/json
 
 {  
   "memberSettings": {
+    "allowCreatePrivateChannels": true,
     "allowCreateUpdateChannels": true
   },
   "messagingSettings": {
