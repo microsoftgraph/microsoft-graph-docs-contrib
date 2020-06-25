@@ -1,6 +1,6 @@
 ---
 title: "Delete profileCardProperty"
-description: "Delete profileCardProperty."
+description: "Delete a profileCardProperty object and remove all customizations from the profile card."
 localization_priority: Normal
 author: "kevinbellinger"
 ms.prod: "people"
@@ -11,7 +11,7 @@ doc_type: "apiPageType"
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Delete profileCardProperty and remove all customizations from the profile card within your Microsoft 365 Tenant.
+Delete a [profileCardProperty](../resources/profilecardproperty.md) object and remove all customizations from the profile card within your Microsoft 365 tenant.
 
 ## Permissions
 
@@ -37,7 +37,7 @@ DELETE https://graph.microsoft.com/beta/organization/settings/profileCardPropert
 
 | Name          | Description    |
 |:--------------|:---------------|
-| Authorization | Bearer {token} |
+| Authorization | Bearer {token}. Required. |
 
 ## Request body
 
@@ -45,7 +45,7 @@ Do not supply a request body for this method.
 
 ## Response
 
-If successful, this method returns `204, No Content` response code. It does not return anything in the response body.
+If successful, this method returns a `204 No Content` response code. It does not return anything in the response body.
 
 ## Examples
 
