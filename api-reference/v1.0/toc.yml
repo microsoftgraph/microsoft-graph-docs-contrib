@@ -3644,9 +3644,9 @@ items:
         - name: Risk detection
           href: resources/riskdetection.md
           items:
-            - name: List risk detections
+            - name: List
               href: api/riskdetection-list.md
-            - name: Get risk detection
+            - name: Get
               href: api/riskdetection-get.md
         - name: Risky user
           href: resources/riskyuser.md
