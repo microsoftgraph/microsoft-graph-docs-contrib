@@ -67,7 +67,7 @@ GET https://graph.microsoft.com/v1.0/identityProtection/riskDetections
 <!-- {
   "blockType": "response",
   "truncated": true,
-  "@odata.type": "collection(microsoft.graph.riskdetection)"
+  "@odata.type": "collection(microsoft.graph.riskDetection)"
 }
 -->
 ``` http
