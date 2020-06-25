@@ -56,6 +56,7 @@ The following resources currently provide a `Retry-After` header:
 - [Drive (OneDrive)](/graph/api/resources/drive?view=graph-rest-1.0)
 - [External item (Microsoft Search)](/graph/api/resources/externalitem?view=graph-rest-beta)
 - [Subscription](/graph/api/resources/subscription)
+- [Invitation](/graph/api/resources/invitation)
 
 For a broader discussion of throttling on the Microsoft Cloud, see [Throttling Pattern](https://docs.microsoft.com/azure/architecture/patterns/throttling).
 
@@ -161,3 +162,11 @@ The following limits apply to any request on `/subscriptions`.
 |---------------------------|------------------------------|-----------------------------------|
 | POST, PUT, DELETE, PATCH  | 1000 requests per 20 seconds | 2000 requests per 20 seconds      |
 | All other HTTP methods    | 5000 requests per 20 seconds | 10000 requests per 20 seconds     |
+
+### Invitation manager service limits
+
+The following limits apply to any request on `/invitations`.
+
+| Operation                 | Limit per tenant             |
+|---------------------------|------------------------------|
+| Any operation             | 150 requests per 5 seconds   |
