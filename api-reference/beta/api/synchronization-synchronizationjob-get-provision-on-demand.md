@@ -41,7 +41,7 @@ Do not supply a request body for this method.
 
 ## Response
 
-If successful, this action returns a `200 OK` response code and a location header.
+If successful, returns a `200 OK` response with a [synchronizationJob](../resources/synchronization-synchronizationjob.md) in the response body.
 
 ## Examples
 
@@ -61,7 +61,7 @@ GET https://graph.microsoft.com/beta/servicePrincipals/8783a342-f7a2-46fb-8243-3
 <!-- {
   "blockType": "response",
   "truncated": true,
-  "@odata.type": "microsoft.graph.None"
+  "@odata.type": "microsoft.graph.synchronizationJob"
 }
 -->
 ``` 
