@@ -83,7 +83,7 @@ Content-length: 122
 <!-- {
   "blockType": "response",
   "truncated": true,
-  "@odata.type": "microsoft.graph.stringkeystringvaluepair"
+  "@odata.type": "microsoft.graph.None"
 }
 -->
 ``` 
