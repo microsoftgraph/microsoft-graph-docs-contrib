@@ -61,7 +61,7 @@ GET https://graph.microsoft.com/beta/servicePrincipals/8783a342-f7a2-46fb-8243-3
 <!-- {
   "blockType": "response",
   "truncated": true,
-  "@odata.type": "microsoft.graph.stringkeystringvaluepair"
+  "@odata.type": "microsoft.graph.None"
 }
 -->
 ``` 
