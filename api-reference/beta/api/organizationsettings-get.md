@@ -11,7 +11,7 @@ doc_type: "apiPageType"
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Retrieve the properties and relationships of organizationsettings object when signed in as a Tenant Administrator.
+Retrieve the properties and relationships of an [organizationSettings](../resources/organizationsettings.md) object when signed in as a tenant administrator.
 
 ## Permissions
 
@@ -23,7 +23,7 @@ One of the following permissions is required to call this API. To learn more, in
 | Delegated (personal Microsoft account) | Not supported.                              |
 | Application                            | Not supported.                              |
 
-_Note: The organizationSettings object requires the signed-in user to have a Tenant Administrator or Global Administrator role to successfully execute.
+>**Note:** The **organizationSettings** object requires the signed-in user to have a tenant administrator or Global administrator role to run successfully.
 
 ## HTTP request
 
