@@ -11,7 +11,7 @@ doc_type: resourcePageType
 
 Namespace: microsoft.graph
 
-**TODO: Add Description**
+Represents the risk history of an Azure AD user as determined by Azure AD Identity Protection.
 
 
 Inherits from [riskyUser](../resources/riskyuser.md).
@@ -41,7 +41,7 @@ Inherits from [riskyUser](../resources/riskyuser.md).
 ## Relationships
 |Relationship|Type|Description|
 |:---|:---|:---|
-|history|[riskyUserHistoryItem](../resources/riskyuserhistoryitem.md) collection|**TODO: Add Description** Inherited from [riskyUser](../resources/riskyuser.md)|
+|history|[riskyUserHistoryItem](../resources/riskyuserhistoryitem.md) collection| Inherited from [riskyUser](../resources/riskyuser.md)|
 
 ## JSON representation
 The following is a JSON representation of the resource.
