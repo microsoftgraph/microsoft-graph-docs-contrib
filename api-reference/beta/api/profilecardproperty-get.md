@@ -1,6 +1,6 @@
 ---
 title: "Get profileCardProperty"
-description: "Retrieve the properties and relationships of profilecardproperty object."
+description: "Retrieve the properties and relationships of a profilecardproperty object."
 localization_priority: Normal
 author: "kevinbellinger"
 ms.prod: "people"
@@ -11,7 +11,7 @@ doc_type: "apiPageType"
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Retrieve the properties and relationships of profilecardproperty collection which contains the profile card customizations present in your Microsoft 365 organization.
+Retrieve the properties and relationships of a [profileCardProperty](../resources/profilecardproperty.md) collection, which contains the profile card customizations that exist in your Microsoft 365 organization.
 
 ## Permissions
 
@@ -23,7 +23,7 @@ One of the following permissions is required to call this API. To learn more, in
 | Delegated (personal Microsoft account) | Not supported.                              |
 | Application                            | Not supported.                              |
 
-_Note: The profileCardProperties object requires the signed-in user to have a Tenant Administrator or Global Administrator role to successfully execute.
+>**Note:** The **profileCardProperties** object requires the signed-in user to have a tenant administrator or Global administrator role to run successfully.
 
 ## HTTP request
 
@@ -41,7 +41,7 @@ This method supports some of the OData query parameters to help customize the re
 
 | Name      |Description|
 |:----------|:----------|
-| Authorization | Bearer {token} |
+| Authorization | Bearer {token}. Required. |
 
 ## Request body
 
