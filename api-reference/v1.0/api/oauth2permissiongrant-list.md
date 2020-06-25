@@ -4,7 +4,7 @@ description: "Retrieve a list of oauth2PermissionGrant objects, representing del
 localization_priority: Normal
 doc_type: apiPageType
 ms.prod: "microsoft-identity-platform"
-author: "davidmu1"
+author: "psignoret"
 ---
 
 # List oauth2PermissionGrants
@@ -37,9 +37,9 @@ This method supports the [OData query parameters](/graph/query_parameters) to he
 
 ## Request headers
 
-| Name | Description |
-|:----------|:----------|
-| Authorization  | string  | Bearer {token}. Required. |
+| Name          | Description               |
+|:--------------|:--------------------------|
+| Authorization | Bearer {token}. Required. |
 
 ## Request body
 
