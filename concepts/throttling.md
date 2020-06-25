@@ -80,13 +80,13 @@ Microsoft Graph allows you to access data in [multiple services](overview-major-
 
 ### Outlook service limits
 
-Outlook service limits are evaluated for each app ID and mailbox combination. In other words, the limits described apply to a specific app accessing a specific mailbox (user or group). If an application exceeds the limit in one mailbox, it does not affect the ability to access another mailbox.
+Outlook service limits are evaluated for each app ID and mailbox combination. In other words, the limits described apply to a specific app accessing a specific mailbox (user or group). If an application exceeds the limit in one mailbox, it does not affect the ability to access another mailbox. The following limits apply to the public cloud as well as [national cloud deployments](/graph/deployments).
 
 | Limit                                                      | Applies to      |
 |------------------------------------------------------------|-----------------|
 | 10,000 API requests in a 10 minute period                  | v1.0 and beta endpoints |
-| 4 concurrent requests                                      | Beta endpoint   |
-| 15 megabit upload (PATCH, POST, PUT) in a 30 second period | Beta endpoint   |
+| 4 concurrent requests                                      | v1.0 and beta endpoints   |
+| 15 megabit upload (PATCH, POST, PUT) in a 30 second period | v1.0 and beta endpoints   |
 
 #### Outlook service resources
 

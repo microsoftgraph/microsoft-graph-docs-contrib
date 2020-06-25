@@ -39,7 +39,7 @@ items:
       - name: Overview
         href: /graph/webhooks?context=graph/api/1.0
       - name: Tutorial
-        href: /graph/tutorials/change-notifications
+        href: /learn/modules/msgraph-changenotifications-trackchanges
       - name: Missing Outlook notifications (preview)
         href: /graph/webhooks-outlook-authz?context=graph/api/1.0
     - name: Change tracking
@@ -3370,6 +3370,8 @@ items:
           href: api/driveitem-update.md
         - name: Delete item
           href: api/driveitem-delete.md
+        - name: Restore item
+          href: api/driveitem-restore.md
         - name: Move item
           href: api/driveitem-move.md
         - name: Copy item
@@ -4304,7 +4306,7 @@ items:
           href: api/reportroot-getmailboxusagequotastatusmailboxcounts.md
         - name: Get  storage
           href: api/reportroot-getmailboxusagestorage.md
-      - name: Office 365 activations
+      - name: Microsoft 365 activations
         href: resources/office-365-activations-reports.md
         items:
         - name: Get user detail
@@ -4313,7 +4315,7 @@ items:
           href: api/reportroot-getoffice365activationcounts.md
         - name: Get user counts
           href: api/reportroot-getoffice365activationsusercounts.md
-      - name: Office 365 active users
+      - name: Microsoft 365 active users
         href: resources/office-365-active-users-reports.md
         items:
         - name: Get user detail
@@ -4322,7 +4324,7 @@ items:
           href: api/reportroot-getoffice365activeusercounts.md
         - name: Get services user counts
           href: api/reportroot-getoffice365servicesusercounts.md
-      - name: Office 365 groups activity
+      - name: Microsoft 365 groups activity
         href: resources/office-365-groups-activity-reports.md
         items:
         - name: Get group detail
