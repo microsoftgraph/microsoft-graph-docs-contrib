@@ -56,6 +56,12 @@ The following resources currently provide a `Retry-After` header:
 - [Drive (OneDrive)](/graph/api/resources/drive?view=graph-rest-1.0)
 - [External item (Microsoft Search)](/graph/api/resources/externalitem?view=graph-rest-beta)
 - [Subscription](/graph/api/resources/subscription)
+- [Threat Assessment Request](/graph/api/resources/threatassessmentrequest)
+- [Mail Assessment Request](/graph/api/resources/mailassessmentrequest)
+- [Email File Assessment Request](/graph/api/resources/emailfileassessmentrequest)
+- [File Assessment Request](/graph/api/resources/fileassessmentrequest)
+- [Url Assessment Request](/graph/api/resources/urlassessmentrequest)
+- [Threat Assessment Result](/graph/api/resources/threatassessmentresult)
 
 For a broader discussion of throttling on the Microsoft Cloud, see [Throttling Pattern](https://docs.microsoft.com/azure/architecture/patterns/throttling).
 
