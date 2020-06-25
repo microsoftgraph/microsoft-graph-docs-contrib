@@ -10,6 +10,31 @@ doc_type: enumPageType
 
 Namespace: microsoft.graph
 
+### activityType values 
+
+|Members|
+|:---|
+|signin|
+|user|
+|unknownFutureValue|
+
+### riskDetectionTimingType values 
+
+|Members|
+|:---|
+|notDefined|
+|realtime|
+|nearRealtime|
+|offline|
+|unknownFutureValue|
+
+### tokenIssuerType values 
+
+|Members|
+|:---|
+|AzureAD|
+|ADFederationServices|
+|UnknownFutureValue|
 ### attachmentType values
 
 | Member
