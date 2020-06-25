@@ -11,7 +11,7 @@ doc_type: "apiPageType"
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Retrieve a list of profilecardproperty objects.
+Retrieve a list of [profileCardProperty](../resources/profilecardproperty.md) objects.
 
 ## Permissions
 
@@ -41,7 +41,7 @@ This method supports some of the OData query parameters to help customize the re
 
 | Name          |Description                  |
 |:--------------|:----------------------------|
-| Authorization | Bearer {token}              |
+| Authorization | Bearer {token}. Required.   |
 | Content-Type  | application/json. Required. |
 
 ## Request body
