@@ -7,7 +7,8 @@ ms.prod: "microsoft-identity-platform"
 doc_type: apiPageType
 ---
 
-# provisionOnDemand
+# synchronizationJob: provisionOnDemand
+
 Namespace: microsoft.graph
 
 Select a user and provision the account on-demand.
