@@ -55,7 +55,7 @@ The following resources currently provide a `Retry-After` header:
 - [People and social](/graph/api/resources/social-overview?view=graph-rest-beta)
 - [Drive (OneDrive)](/graph/api/resources/drive?view=graph-rest-1.0)
 - [External item (Microsoft Search)](/graph/api/resources/externalitem?view=graph-rest-beta)
-- [Reports](#microsoft-graph-reports)
+- [Report](/graph/api/resources/report)
 - [Subscription](/graph/api/resources/subscription)
 
 For a broader discussion of throttling on the Microsoft Cloud, see [Throttling Pattern](https://docs.microsoft.com/azure/architecture/patterns/throttling).
