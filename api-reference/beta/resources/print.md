@@ -24,6 +24,10 @@ When accompanied by a Universal Print subscription, the Print feature enables ma
 | [List services](../api/print-list-services.md) | [printService](printservice.md) collection | Get a list of services. |
 | [Create printerShare](../api/print-post-shares.md) | [printerShare](printershare.md) | Create a new printer share by posting to the **shares** collection. |
 | [Update settings](../api/print-update-settings.md) |  [printSettings](printsettings.md) | Updates tenant-wide settings for the Universal Print service. |
+| [List taskDefinitions](../api/print-list-taskDefinitions.md) | [printTaskDefinition](printtaskdefinition.md) collection | Get a complete list of printTaskDefinitions created within Universal Print. |
+| [Create taskDefinition](../api/print-post-taskDefinitions.md) | [printTaskDefinition](printtaskdefinition.md) | Create a new printTaskDefinition. |
+| [Update taskDefinition](../api/print-update-taskDefinitions.md) | [printTaskDefinition](printtaskdefinition.md) | Update a printTaskDefinition. |
+| [Delete taskDefinition](../api/print-delete-taskDefinitions.md) | None | Delete a printTaskDefinition. |
 
 ## Properties
 | Property     | Type        | Description |

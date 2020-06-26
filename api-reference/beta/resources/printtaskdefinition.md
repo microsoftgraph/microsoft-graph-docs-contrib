@@ -19,6 +19,10 @@ Represents a task that can be triggered when various events occur within Univers
 
 | Method       | Return Type | Description |
 |:-------------|:------------|:------------|
+| [List](../api/print-list-taskDefinitions.md) | [printTaskDefinition](printtaskdefinition.md) collection | Get a complete list of printTaskDefinitions created within Universal Print. |
+| [Create](../api/print-post-taskDefinitions.md) | [printTaskDefinition](printtaskdefinition.md) | Create a new printTaskDefinition. |
+| [Update](../api/print-update-taskDefinitions.md) | [printTaskDefinition](printtaskdefinition.md) | Update a printTaskDefinition. |
+| [Delete](../api/print-delete-taskDefinitions.md) | None | Delete a printTaskDefinition. |
 | [List tasks](../api/printtaskdefinition-list-tasks.md) | [printTask](printtask.md) | Get a list of tasks that have been created based on this definition. The list includes currently running tasks and recently completed tasks. |
 
 ## Properties
