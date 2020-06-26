@@ -83,7 +83,9 @@ Content-length: 319
 ```
 
 ## Response
-If successful, this method returns a `202 Accepted` response code and a link to the associated [printOperation](../resources/printoperation.md).
+If successful, this method returns a `202 Accepted` response code and a link to the associated [printerCreateOperation](../resources/printercreateoperation.md) in the `Operation-Location` header.
+
+Making a GET request to the linked URL can be used to get the status of an ongoing printer registration. Once printer registration has completed successfully, a GET request to the linked URL will contain the created printer object and registered certificate.
 
 ##### Response
 The following is an example of the response.
