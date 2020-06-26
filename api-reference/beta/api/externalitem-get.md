@@ -1,19 +1,21 @@
 ---
-title: "Delete externalItem"
-description: "Delete an externalItem."
+title: "Get externalItem"
+description: "Get an externalItem."
 localization_priority: Normal
 author: "snlraju-msft"
 ms.prod: "search"
 doc_type: "apiPageType"
 ---
 
-# Delete externalItem
+# Get externalItem
 
 Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Delete an [externalitem](../resources/externalitem.md).
+GET an [externalitem](../resources/externalitem.md).
+
+This API is provided for diagnostic purposes only. It is not intended to be used for any other purpose. Repeated requests to this API may result in `429` HTTP errors.
 
 [!INCLUDE [search-api-preview](../../includes/search-api-preview-signup.md)]
 
@@ -32,7 +34,7 @@ One of the following permissions is required to call this API. To learn more, in
 <!-- { "blockType": "ignored" } -->
 
 ```http
-DELETE /external/connections/{connection-id}/items/{item-id}
+GET /external/connections/{connection-id}/items/{item-id}
 ```
 
 ## Path parameters
@@ -41,6 +43,10 @@ DELETE /external/connections/{connection-id}/items/{item-id}
 |:--------------|:-------|:----------------------------------------------------|
 | connection-id | string | The `id` property of the containing [externalConnection](../resources/externalconnection.md) |
 | item-id       | string | The developer-provided `id` property of the [externalItem](../resources/externalitem.md). |
+
+## Optional query parameters
+
+This method does not support optional query parameters to customize the response.
 
 ## Request headers
 
@@ -54,29 +60,17 @@ Do not supply a request body for this method.
 
 ## Response
 
-If successful, this method returns `204 No Content` response code. It does not return anything in the response body.
+If successful, this method returns a `200 OK` response code and an [externalItem](../resources/externalitem.md) object in the response body.
 
-## Examples
+## Example
 
 ### Request
 
 The following is an example of the request.
 
-# [HTTP](#tab/http)
-<!-- {
-  "blockType": "request",
-  "name": "delete_externalitem"
-}-->
-
 ```http
-DELETE https://graph.microsoft.com/beta/connections/contosohr/items/TSP228082938
+GET https://graph.microsoft.com/beta/connections/contosohr/items/TSP228082938
 ```
-# [Objective-C](#tab/objc)
-[!INCLUDE [sample-code](../includes/snippets/objc/delete-externalitem-objc-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
----
-
 
 <!-- markdownlint-disable MD024 -->
 ### Response
@@ -90,14 +84,36 @@ The following is an example of the response.
 } -->
 
 ```http
-HTTP/1.1 204 No Content
+HTTP/1.1 200 OK
+Content-type: application/json
+
+{
+  "@odata.type": "microsoft.graph.externalItem",
+  "acl": [
+    {
+      "type": "user",
+      "value": "49103559-feac-4575-8b94-254814dfca72",
+      "accessType": "deny",
+      "identitySource": "Azure Active Directory"
+    }
+  ],
+  "properties": {
+    "title": "Error in the payment gateway",
+    "priority": 1,
+    "assignee": "john@contoso.com"
+  },
+  "content": {
+    "value": "<h1>Error in payment gateway</h1><p>Error details...</p>",
+    "type": "html"
+  }
+}
 ```
 
 <!-- uuid: 16cd6b66-4b1a-43a1-adaf-3a886856ed98
 2019-02-04 14:57:30 UTC -->
 <!-- {
   "type": "#page.annotation",
-  "description": "Delete externalItem",
+  "description": "Get externalItem",
   "keywords": "",
   "section": "documentation",
   "tocPath": ""
