@@ -13,7 +13,7 @@ Namespace: microsoft.graph
 Select a user and provision the account on-demand.
 
 ## Permissions
-One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/concepts/permissions-reference.md).
+One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
 
 |Permission type                        | Permissions (from least to most privileged)              |
 |:--------------------------------------|:---------------------------------------------------------|
@@ -50,7 +50,7 @@ The following table shows the parameters that can be used with this action.
 
 ## Response
 
-If successful, this action returns a `202 ACCEPTED` response code and a location header.
+If successful, this method returns a `200 OK` response code and a [synchronization](../resources/synchronization-synchronization.md) object in the response body.
 
 ## Examples
 
@@ -83,10 +83,21 @@ Content-length: 122
 <!-- {
   "blockType": "response",
   "truncated": true,
-  "@odata.type": "microsoft.graph.None"
+  "@odata.type": "microsoft.graph.synchronizationSecretKeyStringValuePair"
 }
 -->
 ``` 
-HTTP/1.1 202 Accepted
-Location: "https://graph.microsoft.com/beta/servicePrincipals/8783a342-f7a2-46fb-8243-3658cee556ce/jobs/apply.BoxOutDelta.6a2de5866d0e4e39a06f39c6893e0873.397e75f3-f252-4c80-9027-a812665090d68"
+HTTP/1.1 200 OK
+Content-Type: application/json
+{
+  "value": {
+    "@odata.type": "#microsoft.graph.synchronization",
+    "id": "f0f810e1-10e1-f0f8-e110-f8f0e110f8f0",
+    "secrets": [
+      {
+        "@odata.type": "microsoft.graph.synchronizationSecretKeyStringValuePair"
+      }
+    ]
+  }
+}
 ```
