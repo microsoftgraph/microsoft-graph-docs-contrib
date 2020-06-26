@@ -65,7 +65,7 @@ Here is an example of the response. Note: The response object shown here may be 
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 4799
+Content-Length: 5491
 
 {
   "value": {
@@ -111,6 +111,17 @@ Content-Length: 4799
     "cameraBlocked": true,
     "cellularBlockWiFiTethering": true,
     "certificateCredentialConfigurationDisabled": true,
+    "microsoftLauncherConfigurationEnabled": true,
+    "microsoftLauncherCustomWallpaperEnabled": true,
+    "microsoftLauncherCustomWallpaperImageUrl": "https://example.com/microsoftLauncherCustomWallpaperImageUrl/",
+    "microsoftLauncherCustomWallpaperAllowUserModification": true,
+    "microsoftLauncherFeedEnabled": true,
+    "microsoftLauncherFeedAllowUserModification": true,
+    "microsoftLauncherDockPresenceConfiguration": "show",
+    "microsoftLauncherDockPresenceAllowUserModification": true,
+    "microsoftLauncherSearchBarPlacementConfiguration": "top",
+    "microsoftLauncherSearchBarPlacementAllowUserModification": true,
+    "enrollmentProfile": "dedicatedDevice",
     "dataRoamingBlocked": true,
     "dateTimeConfigurationBlocked": true,
     "factoryResetDeviceAdministratorEmails": [
