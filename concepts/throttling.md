@@ -56,6 +56,13 @@ The following resources currently provide a `Retry-After` header:
 - [Drive (OneDrive)](/graph/api/resources/drive?view=graph-rest-1.0)
 - [External item (Microsoft Search)](/graph/api/resources/externalitem?view=graph-rest-beta)
 - [Subscription](/graph/api/resources/subscription)
+- [Risk detection](/graph/api/resources/riskDetection)
+- [Risky user](/graph/api/resources/riskyUser)
+- [Risky user history item](/graph/api/resources/riskyUserHistoryItem)
+- [Named location](/graph/api/resources/namedLocation)
+- [Country named location](/graph/api/resources/countryNamedLocation)
+- [IP named location](/graph/api/resources/ipNamedLocation)
+- [Conditional access policy](/graph/api/resources/conditionalAccessPolicy)
 
 For a broader discussion of throttling on the Microsoft Cloud, see [Throttling Pattern](https://docs.microsoft.com/azure/architecture/patterns/throttling).
 
@@ -152,6 +159,15 @@ A maximum of 3000 messages per app per day can be sent to a given channel.
 
 See also [Microsoft Teams limits](/graph/api/resources/teams-api-overview#microsoft-teams-limits) 
 and [polling requirements](/graph/api/resources/teams-api-overview#polling-requirements).
+
+### Identity protection and conditional access service limits
+
+| Request type | Limit per app per tenant |
+| ------------ | ------- |
+| Any | 1 request per second |
+
+The preceding limits apply to the following resources:  
+riskDetection, riskyUser, riskyUserHistoryItem, namedLocation, countryNamedLocation, ipNamedLocation, conditionalAccessPolicy.
 
 <!-- { "blockType": "throttlinggenstart" } -->
 ### CPIM service limits
