@@ -1,6 +1,6 @@
 ---
 title: "educationClass resource type"
-description: "Represents a class within a school. The **educationClass** resource corresponds to the Office 365 group and shares the same ID."
+description: "Represents a class within a school. The **educationClass** resource corresponds to the Microsoft 365 group and shares the same ID."
 localization_priority: Normal
 author: "mmast-msft"
 ms.prod: "education"
@@ -13,7 +13,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Represents a class within a school. The **educationClass** resource corresponds to the Office 365 group and shares the same ID. Students are regular members of the class, and teachers are owners and have appropriate rights. For Office 365 experiences to work correctly, teachers must be members of both the teachers and members collections.
+Represents a class within a school. The **educationClass** resource corresponds to the Microsoft 365 group and shares the same ID. Students are regular members of the class, and teachers are owners and have appropriate rights. For Microsoft 365 experiences to work correctly, teachers must be members of both the teachers and members collections.
 
 ## Methods
 
@@ -29,7 +29,7 @@ Represents a class within a school. The **educationClass** resource corresponds 
 | [Remove teacher](../api/educationclass-delete-teachers.md)              | [educationUser]                                | Remove an **educationUser** from the class through the teachers navigation property.      |
 | [Create educationAssignment](../api/educationclass-post-assignments.md) | [educationAssignment]                          | Create a new **educationAssignment** by posting to the assignments collection.            |
 | [List assignments](../api/educationclass-list-assignments.md)           | [educationAssignment]collection                | Get an **educationAssignment** object collection.                                         |
-| [Get group](../api/educationclass-get-group.md)                         | [group]                                        | Get the Office 365 **group** that corresponds to this **educationClass**.                 |
+| [Get group](../api/educationclass-get-group.md)                         | [group]                                        | Get the Microsoft 365 **group** that corresponds to this **educationClass**.                 |
 | [Create educationCategory](../api/educationclass-post-category.md)      | [educationCategory]                            | Create a new **educationCategory** for this class.                                        |
 | [List categories](../api/educationclass-list-categories.md)             | [educationCategory] collection                 | Get a list of **educationCategory** objects belonging to this class.                      |
 | [Update](../api/educationclass-update.md)                               | [educationClass]                               | Update **educationClass** object.                                                         |
