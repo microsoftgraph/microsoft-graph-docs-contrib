@@ -3638,6 +3638,31 @@ items:
           href: api/groupsettingtemplate-list.md
         - name: Get group setting template
           href: api/groupsettingtemplate-get.md
+      - name: Identity protection
+        href: resources/identityprotectionroot.md
+        items:
+        - name: Risk detection
+          href: resources/riskdetection.md
+          items:
+            - name: List
+              href: api/riskdetection-list.md
+            - name: Get
+              href: api/riskdetection-get.md
+        - name: Risky user
+          href: resources/riskyuser.md
+          items:
+          - name: List risky users
+            href: api/riskyuser-list.md
+          - name: Get risky user
+            href: api/riskyuser-get.md
+          - name: List history
+            href: api/riskyuser-list-history.md
+          - name: Get history
+            href: api/riskyuser-get-riskyuserhistoryitem.md
+          - name: Confirm compromised
+            href: api/riskyuser-confirmcompromised.md
+          - name: Dismiss
+            href: api/riskyuser-dismiss.md
       - name: Identity provider
         href: resources/identityprovider.md
         items:
@@ -4306,7 +4331,7 @@ items:
           href: api/reportroot-getmailboxusagequotastatusmailboxcounts.md
         - name: Get  storage
           href: api/reportroot-getmailboxusagestorage.md
-      - name: Office 365 activations
+      - name: Microsoft 365 activations
         href: resources/office-365-activations-reports.md
         items:
         - name: Get user detail
@@ -4315,7 +4340,7 @@ items:
           href: api/reportroot-getoffice365activationcounts.md
         - name: Get user counts
           href: api/reportroot-getoffice365activationsusercounts.md
-      - name: Office 365 active users
+      - name: Microsoft 365 active users
         href: resources/office-365-active-users-reports.md
         items:
         - name: Get user detail
@@ -4324,7 +4349,7 @@ items:
           href: api/reportroot-getoffice365activeusercounts.md
         - name: Get services user counts
           href: api/reportroot-getoffice365servicesusercounts.md
-      - name: Office 365 groups activity
+      - name: Microsoft 365 groups activity
         href: resources/office-365-groups-activity-reports.md
         items:
         - name: Get group detail
