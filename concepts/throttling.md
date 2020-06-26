@@ -154,7 +154,7 @@ A maximum of 3000 messages per app per day can be sent to a given channel.
 See also [Microsoft Teams limits](/graph/api/resources/teams-api-overview#microsoft-teams-limits) 
 and [polling requirements](/graph/api/resources/teams-api-overview#polling-requirements).
 
-### Microsoft Graph reports
+### Microsoft Graph reports service limits
 
 The following limits apply to any request on `/reports`.
 
