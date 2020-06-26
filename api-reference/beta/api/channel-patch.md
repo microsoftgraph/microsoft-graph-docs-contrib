@@ -79,14 +79,7 @@ Here is an example of the response. Note: The response object shown here may be 
   "@odata.type": "microsoft.graph.channel"
 } -->
 ```http
-HTTP/1.1 200 OK
-Content-type: application/json
-Content-length: 201
-
-{
-    "description": "description-value",
-    "displayName": "display-name-value",
-}
+HTTP/1.1 204 No Content
 ```
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
