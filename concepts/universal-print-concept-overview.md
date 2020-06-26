@@ -57,6 +57,10 @@ Sharing a printer creates a [printerShare](/graph/api/resources/printershare?vie
 
 To use this in your application, use [Update printerShare](/graph/api/printershare-update?view=graph-rest-beta) to update the printerShare's `printer` reference.
 
+### Extending Universal Print to support Pull Printing
+
+TBD
+
 ## API reference
 Looking for the API reference for this service?
 
