@@ -13,6 +13,14 @@ For a summary of the value of these API changes, as well as recent tools, compon
 
 ## June 2020
 
+### Education
+
+| **Change type** | **Version** | **Description**                                                                                                                 |
+| :-------------- | :---------- | :------------------------------------------------------------------------------------------------------------------------------ |
+| Change          | Beta        | The [educationTeacher](/api/resources/educationteacher) `externalId` property is now returned when using delegated permissions. |
+| Change          | Beta        | The [educationStudent](/api/resources/educationstudent) `externalId` property is now returned when using delegated permissions. |
+| Change          | Beta        | Added `lms` to the list of possible values for `educationExternalSource`.                                                       |
+
 ### Calendar
 | **Change type** | **Version**   | **Description**                          |
 | :-------------- | :------------ | :--------------------------------------- |
