@@ -11353,6 +11353,14 @@ items:
           href: api/team-update.md
         - name: Delete team
           href: api/group-delete.md
+        - name: List members
+          href: api/team-list-members.md
+        - name: Add members
+          href: api/team-post-members.md
+        - name: Remove members
+          href: api/team-delete-members.md
+        - name: Update member
+          href: api/conversationmember-update.md
         - name: Archive team
           href: api/team-archive.md
         - name: Unarchive team

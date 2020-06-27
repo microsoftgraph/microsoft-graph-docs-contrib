@@ -1,6 +1,6 @@
 ---
-title: "Delete members"
-description: "Delete a conversationMember object."
+title: "Remove members from team"
+description: "Remove a conversationMember from a team."
 author: "nkramer"
 localization_priority: Priority
 ms.prod: "microsoft-teams"
@@ -10,7 +10,7 @@ doc_type: apiPageType
 # Delete members
 Namespace: microsoft.graph
 
-Delete a [conversationMember](../resources/conversationmember.md) object.
+Remove a new [conversationMember](../resources/conversationmember.md) from a [team](../resources/team.md).
 
 ## Permissions
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/concepts/permissions-reference.md).

@@ -1,5 +1,5 @@
 ---
-title: "Add members"
+title: "Add members to team"
 description: "Add a new member to a team."
 author: "nkramer"
 localization_priority: Priority
