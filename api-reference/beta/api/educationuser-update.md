@@ -58,7 +58,7 @@ In the request body, supply the values for relevant fields that should be update
 | residenceAddress | [physicalAddress]  | Address where user lives. Note: `type` and `postOfficeBox` are not supported for `educationUser` resources.                                     |
 | primaryRole      | string             | Default Role for a user. The user's role might be different in an individual class. Possible values are: `student`, `teacher`, `enum_sentinel`. |
 | student          | [educationStudent] | If the primary role is student, this block will contain student specific data.                                                                  |
-| teacher          | [educationTeacher] | If the primary role is teacher, this block will contain teacher specific data.                                                                  |
+| teacher          | [educationTeacher](../resources/educationteacher.md) | If the primary role is teacher, this block will contain teacher specific data.                                                                  |
 
 ## Response
 
