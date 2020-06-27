@@ -172,14 +172,6 @@ The preceding limits apply to the following resources:
 threatAssessmentRequest, threatAssessmentResult, mailAssessmentRequest, emailFileAssessmentRequest, fileAssessmentRequest, urlAssessmentRequest.
 
 <!-- { "blockType": "throttlinggenstart" } -->
-### CPIM service limits
-
-[!INCLUDE [CPIM throttling documentation](../includes/throttling-cpim.md)]
-
-| Operation                 | Limit per app per tenant     | Limit per app accross all tenants |
-|---------------------------|------------------------------|-----------------------------------|
-| POST, PUT, DELETE, PATCH  | 1000 requests per 20 seconds | 2000 requests per 20 seconds      |
-| All other HTTP methods    | 5000 requests per 20 seconds | 10000 requests per 20 seconds     |
 
 ### Education service limits
 
@@ -188,6 +180,14 @@ threatAssessmentRequest, threatAssessmentResult, mailAssessmentRequest, emailFil
 ### Excel service limits
 
 [!INCLUDE [Excel throttling documentation](../includes/throttling-excel.md)]
+
+### Identity and access audit logs service limits
+
+[!INCLUDE [Identity and access audit logs throttling documentation](../includes/throttling-Identity-and-access-audit-logs.md)]
+
+### Identity providers service limits
+
+[!INCLUDE [CPIM throttling documentation](../includes/throttling-cpim.md)]
 
 ### Intune service limits
 
