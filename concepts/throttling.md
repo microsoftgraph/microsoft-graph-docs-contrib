@@ -163,14 +163,6 @@ The following limits apply to any request on `/invitations`.
 | Any operation             | 150 requests per 5 seconds   |
 
 <!-- { "blockType": "throttlinggenstart" } -->
-### CPIM service limits
-
-[!INCLUDE [CPIM throttling documentation](../includes/throttling-cpim.md)]
-
-| Operation                 | Limit per app per tenant     | Limit per app accross all tenants |
-|---------------------------|------------------------------|-----------------------------------|
-| POST, PUT, DELETE, PATCH  | 1000 requests per 20 seconds | 2000 requests per 20 seconds      |
-| All other HTTP methods    | 5000 requests per 20 seconds | 10000 requests per 20 seconds     |
 
 ### Education service limits
 
@@ -179,6 +171,14 @@ The following limits apply to any request on `/invitations`.
 ### Excel service limits
 
 [!INCLUDE [Excel throttling documentation](../includes/throttling-excel.md)]
+
+### Identity and access audit logs service limits
+
+[!INCLUDE [Identity and access audit logs throttling documentation](../includes/throttling-Identity-and-access-audit-logs.md)]
+
+### Identity providers service limits
+
+[!INCLUDE [CPIM throttling documentation](../includes/throttling-cpim.md)]
 
 ### Intune service limits
 
