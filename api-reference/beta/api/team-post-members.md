@@ -13,7 +13,7 @@ Namespace: microsoft.graph
 Add a new [conversationMember](../resources/conversationmember.md) to a [team](../resources/team.md).
 
 ## Permissions
-One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/concepts/permissions-reference.md).
+One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
 
 |Permission type|Permissions (from most to least privileged)|
 |:---|:---|
@@ -55,9 +55,13 @@ If successful, this method returns a `201 Created` response code and a [conversa
 ``` http
 POST https://graph.microsoft.com/beta/teams/{id}/members
 {
-  "@odata.type": "#microsoft.graph.aadUserConversationMember",
-  "user@odata.bind": "https://graph.microsoft.com/v1.0/users('7051f984-682e-4a08-a6b2-df82fe7d9fe1')",
-  "roles": [],
+    "@odata.type": "#microsoft.graph.aadUserConversationMember",
+    "roles": [
+        "owner"
+    ],
+    "userId": "50dffbae-ad0f-428e-a86f-f53b0acfc641",
+    "displayName": "Cameron White",
+    "email": "CameronW@M365x987948.OnMicrosoft.com"
 }
 ```
 
@@ -76,9 +80,11 @@ HTTP/1.1 201 Created
 {
     "@odata.type": "#microsoft.graph.aadUserConversationMember",
     "id": "3c02af05-9312-4966-bc84-c1a0818791c4",
-    "roles": [],
-    "userId": "7051f984-682e-4a08-a6b2-df82fe7d9fe1",
-    "displayName": "George Washington",
-    "email": "geowa@example.com"
+    "roles": [
+        "owner"
+    ],
+    "userId": "50dffbae-ad0f-428e-a86f-f53b0acfc641",
+    "displayName": "Cameron White",
+    "email": "CameronW@M365x987948.OnMicrosoft.com"
 }
 ```

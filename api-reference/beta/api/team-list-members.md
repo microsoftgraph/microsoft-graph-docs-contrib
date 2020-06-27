@@ -15,7 +15,7 @@ Get the [conversationMember](../resources/conversationmember.md) of a [team](../
 >Note: This API currently does not support pagination, so if there's too many members to fit into one request, you won't get all the members.
 
 ## Permissions
-One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/concepts/permissions-reference.md).
+One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
 
 |Permission type|Permissions (from most to least privileged)|
 |:---|:---|
