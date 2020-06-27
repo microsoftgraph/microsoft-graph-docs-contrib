@@ -34,10 +34,10 @@ Every team is associated with a [group](../resources/group.md). The group has th
 |[Get team photo](../api/team-get-photo.md) | Binary data | Get the photo (picture) for a team. |
 |[Update team photo](../api/team-update-photo.md) | None | Update the photo (picture) for a team. |
 |[List members](../api/team-list-members.md)|[conversationMember](../resources/conversationmember.md) collection|Get the conversationMembers from the members navigation property.|
-|[Add members](../api/team-post-members.md)|[conversationMember](../resources/conversationmember.md)|Add a new member.|
 |[Get members](../api/team-get-conversationmember.md)|[conversationMember](../resources/conversationmember.md)|Read the properties and relationships of a [conversationMember](../resources/conversationmember.md) object.|
-|[Update members](../api/team-update-members.md)|[conversationMember](../resources/conversationmember.md)|Update the properties of a members object.|
+|[Add members](../api/team-post-members.md)|[conversationMember](../resources/conversationmember.md)|Add a new member.|
 |[Delete members](../api/team-delete-members.md)|None|Delete a [conversationMember](../resources/conversationmember.md) object.|
+|[Change member's role](../api/conversationmember-update.md)|[conversationMember](../resources/conversationmember.md)|Change a member to an owner or back to a regular member.|
 
 ## Properties
 
@@ -64,10 +64,10 @@ Every team is associated with a [group](../resources/group.md). The group has th
 |:---------------|:--------|:----------|
 |channels|[channel](channel.md) collection|The collection of channels & messages associated with the team.|
 |installedApps|[teamsAppInstallation](teamsappinstallation.md) collection|The apps installed in this team.|
-|members|[conversationMember](../resources/conversationmember.md) collection|**TODO: Add Description**|
+|members|[conversationMember](../resources/conversationmember.md) collection|Members and owners of the team.|
 |owners|[user](user.md)| The list of this team's owners. Currently, when creating a team using application permissions, exactly one owner must be specified. When using user delegated permissions, no owner can be specified (the current user is the owner). Owner must be specified as an object ID (GUID), not a UPN. |
 |operations|[teamsAsyncOperation](teamsasyncoperation.md) collection| The async operations that ran or are running on this team. | 
-|photo|[profilePhoto](../resources/profilephoto.md)|**TODO: Add Description**|
+|photo|[profilePhoto](../resources/profilephoto.md)|The team photo.|
 |[primaryChannel](../api/team-get-primarychannel.md)|[channel](channel.md)| The general channel for the team. | 
 |schedule|[schedule](schedule.md)| The schedule of shifts for this team.|
 |template|[teamsTemplate](teamstemplate.md)| The template this team was created from. See [available templates](https://docs.microsoft.com/MicrosoftTeams/get-started-with-teams-templates). |
