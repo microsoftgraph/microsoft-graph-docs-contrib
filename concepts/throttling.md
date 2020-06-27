@@ -154,10 +154,6 @@ See also [Microsoft Teams limits](/graph/api/resources/teams-api-overview#micros
 and [polling requirements](/graph/api/resources/teams-api-overview#polling-requirements).
 
 <!-- { "blockType": "throttlinggenstart" } -->
-### CPIM service limits
-
-[!INCLUDE [CPIM throttling documentation](../includes/throttling-cpim.md)]
-
 ### Education service limits
 
 [!INCLUDE [Education rostering APIS throttling documentation](../includes/throttling-education-rostering-apis.md)]
@@ -165,6 +161,14 @@ and [polling requirements](/graph/api/resources/teams-api-overview#polling-requi
 ### Excel service limits
 
 [!INCLUDE [Excel throttling documentation](../includes/throttling-excel.md)]
+
+### Identity and access audit logs service limits
+
+[!INCLUDE [Identity and access audit logs throttling documentation](../includes/throttling-Identity-and-access-audit-logs.md)]
+
+### Identity providers service limits
+
+[!INCLUDE [CPIM throttling documentation](../includes/throttling-cpim.md)]
 
 ### Intune service limits
 
