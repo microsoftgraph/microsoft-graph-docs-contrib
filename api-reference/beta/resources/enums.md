@@ -248,9 +248,9 @@ Namespace: microsoft.graph
 | Member
 |:-------------------------
 | sis
+| lms
 | manual
 | unknownFutureValue
-
 
 ### educationGender values
 
