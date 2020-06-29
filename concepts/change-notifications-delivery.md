@@ -22,11 +22,52 @@ Using Azure Event Hubs to receive change notifications differs in a few ways inc
 - You'll need to provision an Azure Event Hub
 - You'll need to provision an Azure Key Vault
 
-### Setup a Subscription using Event Hubs
+### Setup the Azure KeyVault and Azure Event Hubs
 
-This section will walk you through the setup of a subscription using Azure Event Hubs to deliver the notifications.
+This section will walk you through the setup of required Azure Services.
 
-#### Configuring the Azure Event Hub
+#### Option 1: Using the Azure CLI
+
+The [Azure CLI](/cli/azure/what-is-azure-cli?view=azure-cli-latest) allows you to script and automate adminstrative tasks in Azure. The CLI can be [installed on your local machine](/cli/azure/install-azure-cli?view=azure-cli-latest) or run directly from the [Azure Cloud Shell](/azure/cloud-shell/quickstart).
+
+```shell
+# --------------
+# TODO: update the following values
+#sets the name of the resource group
+resourcegroup=rg-graphevents-dev
+#sets the location of the resources
+location='uk south'
+#sets the name of the Azure Event Hubs namespace
+evhamespacename=evh-graphevents-dev
+#sets the name of the hub under the namespace
+evhhubname=graphevents
+#sets the name of the access policy to the hub
+evhpolicyname=grapheventspolicy
+#sets the name of the Azure KeyVault
+keyvaultname=kv-graphevents
+#sets the name of the secret in Azure KeyVault that will contain the connection string to the hub
+keyvaultsecretname=grapheventsconnectionstring
+# --------------
+az group create --location $location --name $resourcegroup
+az eventhubs namespace create --name $evhamespacename --resource-group $resourcegroup --sku Basic --location $location
+az eventhubs eventhub create --name $evhhubname --namespace-name $evhamespacename --resource-group $resourcegroup --partition-count 2 --message-retention 1
+az eventhubs eventhub authorization-rule create --name $evhpolicyname --eventhub-name $evhhubname --namespace-name $evhamespacename --resource-group $resourcegroup --rights Send
+evhprimaryconnectionstring=`az eventhubs eventhub authorization-rule keys list --name $evhpolicyname --eventhub-name $evhhubname --namespace-name $evhamespacename --resource-group $resourcegroup --query "primaryConnectionString" --output tsv`
+az keyvault create --name $keyvaultname --resource-group $resourcegroup --location $location --enable-soft-delete true --sku standard --retention-days 90
+az keyvault secret set --name $keyvaultsecretname --value $evhprimaryconnectionstring --vault-name $keyvaultname --output none
+graphspn=`az ad sp list --display-name 'Microsoft Graph Change Tracking' --query "[].appId" --output tsv`
+az keyvault set-policy --name $keyvaultname --resource-group $resourcegroup --secret-permissions get --spn $graphspn --output none
+keyvaulturi=`az keyvault show --name $keyvaultname --resource-group $resourcegroup --query "properties.vaultUri" --output tsv`
+domainname=`az ad signed-in-user show --query 'userPrincipalName' | cut -d '@' -f 2 | sed 's/\"//'`
+notificationUrl="EventHub:${keyvaulturi}secrets/${keyvaultsecretname}?tenantId=${domainname}"
+echo "Notification Url:\n${notificationUrl}"
+```
+
+> **Note:** the script provided above is compatible with Linux based shells, Windows WSL, and Azure Cloud Shell. It will require some updated to run in Windows shells.
+
+#### Option 2: Using the Azure Portal
+
+##### Configuring the Azure Event Hub
 
 In this section you will:
 
@@ -57,7 +98,7 @@ Steps:
 1. Once the policy has been created, click on it's name to open the details panel, then copy the "Connection string-primary key" value. Write it down, you'll need it as the next step.  
     ![policy string](images/change-notifications/policycs.png)
 
-#### Configuring the Azure Key Vault
+##### Configuring the Azure Key Vault
 
 In order to access the Event Hub securely and to allow for key rotations, the Microsoft Graph gets the connection string to the Event Hub through Azure Key Vault.  
 In this section you will:
@@ -88,6 +129,10 @@ Steps:
     ![access policies list](images/change-notifications/accesspolicieslist.png)
 1. For "Secret permissions" select "Get" and for "Select Principal" select "Microsoft Graph Change Tracking". Click "Add".  
     ![add policy](images/change-notifications/accesspolicyadd.png)
+
+### Creating the subscription and receiving notifications
+
+Once you have created the required Azure KeyVault and Azure Event Hubs services, you will be able to create your subscription and start receiving change notifications via Azure Event Hubs.
 
 #### Creating the Subcription
 
