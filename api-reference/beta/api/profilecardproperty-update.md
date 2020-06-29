@@ -66,7 +66,7 @@ The following is an example of the request.
 }-->
 
 ```http
-PATCH https://graph.microsoft.com/beta/organization/settings/profileCardProperties/{id}
+PATCH https://graph.microsoft.com/beta/organization/settings/profileCardProperties/{directoryPropertyName-Value}
 Content-type: application/json
 
 {

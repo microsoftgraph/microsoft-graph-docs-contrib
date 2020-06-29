@@ -13,7 +13,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Create a new [profileCardProperty](../resources/profilecardproperty.md) object.
+Create a new [profileCardProperty](../resources/profilecardproperty.md) for an organization.
 
 ## Permissions
 

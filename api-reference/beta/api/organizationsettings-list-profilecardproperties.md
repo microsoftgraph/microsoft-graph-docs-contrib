@@ -25,7 +25,7 @@ One of the following permissions is required to call this API. To learn more, in
 | Delegated (personal Microsoft account) | Not supported.                              |
 | Application                            | Not supported.                              |
 
-_Note: The profileCardProperties object requires the signed-in user to have a Tenant Administrator or Global Administrator role to successfully execute.
+> [!Note] The profileCardProperties object requires the signed-in user to have a Tenant Administrator or Global Administrator role to successfully execute.
 
 ## HTTP request
 

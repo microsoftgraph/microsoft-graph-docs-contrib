@@ -32,7 +32,7 @@ _Note: The profileCardProperties object requires the signed-in user to have a Te
 <!-- { "blockType": "ignored" } -->
 
 ```http
-DELETE https://graph.microsoft.com/beta/organization/settings/profileCardProperties/{id}
+DELETE https://graph.microsoft.com/beta/organization/settings/profileCardProperties/{directoryPropertyName-Value}
 ```
 
 ## Request headers
