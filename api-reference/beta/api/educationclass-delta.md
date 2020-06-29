@@ -48,6 +48,9 @@ Do not supply a request body for this method.
 
 If successful, this method returns a `200 OK` response code and an [educationClass](../resources/educationclass.md) collection object in the response body.
 
+> [!IMPORTANT]
+> educationClass deltas do not include deleted classes.
+
 ## Example
 
 The following example shows how to call this API.
@@ -67,9 +70,9 @@ POST https://graph.microsoft.com/v1.0/education/classes/{id}/delta
 
 ##### Response
 
-The following is an example of the response. 
+The following is an example of the response.
 
->**Note:** The response object shown here might be shortened for readability. All the properties will be returned from an actual call.
+> **Note:** The response object shown here might be shortened for readability. All the properties will be returned from an actual call.
 
 <!-- {
   "blockType": "response",
