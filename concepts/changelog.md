@@ -130,6 +130,14 @@ For a summary of the value of these API changes, as well as recent tools, compon
 | Addition | beta, v1.0 | Added support for application permissions to the [List conversations](/graph/api/group-list-conversations), [Get conversation](/graph/api/group-get-conversation), [List conversation threads](/graph/api/conversation-list-threads), [Get conversation thread](/graph/api/group-get-thread), and [List threads](/graph/api/group-list-threads) APIs. |
 |Addition |v1.0| Promoted the [riskyUsers API](/graph/api/resources/riskyuser?view=graph-rest-v1.0) and the [riskDetection API](/graph/api/resources/riskdetection?view=graph-rest-v1.0) to the v1.0 endpoint. |
 
+### Search
+
+| **Change type** | **Version** | **Description**                                                                                                                                 |
+|:----------------|:------------|:------------------------------------------------------------------------------------------------------------------------------------------------|
+| Addition        | beta        | Added the **aliases**, **isRefinable**, and **labels** properties to the [property](/graph/api/resources/property?view=graph-rest-beta) entity. |
+| Changed         | beta        | The maximum number of properties on a [schema](/graph/api/resources/schema?view=graph-rest-beta) entity has been increased to 128.              |
+| Addition        | beta        | Added the [get externalItem](/graph/api/externalitem-get?view=graph-rest-beta) operation.                                                       |
+
 ### Security
 
 | **Change type** | **Version**   | **Description**                          |
