@@ -77,8 +77,9 @@ Content-Type: application/json
 }
 -->
 ``` http
-
 HTTP/1.1 201 Created
+Content-type: application/json
+
 {
     "@odata.type": "#microsoft.graph.aadUserConversationMember",
     "id": "3c02af05-9312-4966-bc84-c1a0818791c4",
