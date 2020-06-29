@@ -49,16 +49,16 @@ The following is a JSON representation of the resource.
 {
   "annotations": [
     {
-      "displayName": "Cost Center",
+      "displayName": "String",
       "localizations": [
         {
-          "languageTag": "ru-RU",
-          "displayName": "центр затрат"
+          "languageTag": "String",
+          "displayName": "String"
         }
       ]
     }
   ],
-  "directoryPropertyName": "CustomAttribute1"
+  "directoryPropertyName": "String"
 }
 ```
 

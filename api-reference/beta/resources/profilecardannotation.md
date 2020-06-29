@@ -35,11 +35,11 @@ The following is a JSON representation of the resource.
 
 ```json
 {
-  "displayName": "Cost Center",
+  "displayName": "String",
   "localizations": [
     {
-      "displayName": "ru-RU",
-      "languageTag": "центр затрат"
+      "displayName": "String",
+      "languageTag": "String"
     }
   ]
 }

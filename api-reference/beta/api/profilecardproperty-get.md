@@ -9,9 +9,11 @@ doc_type: "apiPageType"
 
 # Get profileCardProperty
 
+Namespace: microsoft.graph
+
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Retrieve the properties and relationships of a [profileCardProperty](../resources/profilecardproperty.md) collection, which contains the profile card customizations that exist in your Microsoft 365 organization.
+Retrieve the properties and relationships of a [profileCardProperty](../resources/profilecardproperty.md) entity, which contains the profile card customizations that exist in your Microsoft 365 organization for a given field.
 
 ## Permissions
 
@@ -30,7 +32,7 @@ One of the following permissions is required to call this API. To learn more, in
 <!-- { "blockType": "ignored" } -->
 
 ```http
-GET https://graph.microsoft.com/beta/organization/settings/profileCardProperties
+GET https://graph.microsoft.com/beta/organization/settings/profileCardProperties/{id}
 ```
 
 ## Optional query parameters
@@ -62,7 +64,7 @@ The following is an example of the request.
 }-->
 
 ```http
-GET https://graph.microsoft.com/beta/organization/settings/profileCardProperties
+GET https://graph.microsoft.com/beta/organization/settings/profileCardProperties/{id}
 ```
 
 ### Response
@@ -82,14 +84,14 @@ HTTP/1.1 200 OK
 Content-type: application/json
 
 {
-  "directoryPropertyName": "CustomAttribute1",
+  "directoryPropertyName": "String",
   "annotations": [
     {
-      "displayName": "Cost Center",
+      "displayName": "String",
       "localizations": [
         {
-          "languageTag": "ru-RU",
-          "displayName": "центр затрат"
+          "languageTag": "String",
+          "displayName": "String"
         }
       ]
     }

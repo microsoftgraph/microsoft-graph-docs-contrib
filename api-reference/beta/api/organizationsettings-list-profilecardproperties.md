@@ -9,9 +9,11 @@ doc_type: "apiPageType"
 
 # List profileCardProperties
 
+Namespace: microsoft.graph
+
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Retrieve a list of [profileCardProperty](../resources/profilecardproperty.md) objects.
+Get a list of [profileCardProperty](../resources/profilecardproperty.md) resources of an organization.
 
 ## Permissions
 
@@ -86,14 +88,14 @@ Content-type: application/json
 {
   "value": [
     {
-      "directoryPropertyName": "CustomAttribute1",
+      "directoryPropertyName": "String",
       "annotations": [
         {
-          "displayName": "Cost Center",
+          "displayName": "String",
           "localizations": [
             {
-              "languageTag": "ru-RU",
-              "displayName": "центр затрат"
+              "languageTag": "String",
+              "displayName": "String"
             }
           ]
         }

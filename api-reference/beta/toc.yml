@@ -9605,7 +9605,13 @@ items:
         href: resources/organizationSettings.md
         items:
         - name: Get org settings
-          href: api/organizationSettings-get.md  
+          href: api/organizationSettings-get.md
+        - name: Profile Card Property
+          items:
+          - name: Get profile card properties
+            href: api/organizationsettings-list-profilecardproperties.md
+          - name: Create profile card properties
+            href: api/organizationsettings-post-profilecardproperties.md          
         - name: Org hierarchy
           href: resources/directoryobject.md
           items:

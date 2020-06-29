@@ -9,6 +9,8 @@ doc_type: "apiPageType"
 
 # Get organizationSettings
 
+Namespace: microsoft.graph
+
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 Retrieve the properties and relationships of an [organizationSettings](../resources/organizationsettings.md) object when signed in as a tenant administrator.

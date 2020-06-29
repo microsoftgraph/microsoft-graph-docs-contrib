@@ -9,6 +9,8 @@ doc_type: "apiPageType"
 
 # Update profileCardProperty
 
+Namespace: microsoft.graph
+
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 Update the properties of a [profileCardProperty](../resources/profilecardproperty.md) object.
@@ -30,7 +32,7 @@ One of the following permissions is required to call this API. To learn more, in
 <!-- { "blockType": "ignored" } -->
 
 ```http
-PATCH https://graph.microsoft.com/beta/organization/settings/profileCardProperties
+PATCH https://graph.microsoft.com/beta/organization/settings/profileCardProperties/{id}
 ```
 
 ## Request headers
@@ -46,8 +48,8 @@ In the request body, supply the values for relevant fields that should be update
 
 | Property     | Type        | Description |
 |:-------------|:------------|:------------|
-|annotations|profileCardAnnotation collection||
-|directoryPropertyName|String||
+|annotations|profileCardAnnotation collection| Contains any alternative or localized labels an administrator has chosen to specify.|
+|directoryPropertyName|String|Contains the name of the directory property which is intended to surface on the profile card. |
 
 ## Response
 
@@ -64,18 +66,18 @@ The following is an example of the request.
 }-->
 
 ```http
-PATCH https://graph.microsoft.com/beta/organization/settings/profileCardProperties
+PATCH https://graph.microsoft.com/beta/organization/settings/profileCardProperties/{id}
 Content-type: application/json
 
 {
-  "directoryPropertyName": "CustomAttribute1",
+  "directoryPropertyName": "String",
   "annotations": [
     {
-      "displayName": "Cost Center",
+      "displayName": "String",
       "localizations": [
         {
-          "languageTag": "ru-RU",
-          "displayName": "центр затрат"
+          "languageTag": "String",
+          "displayName": "String"
         }
       ]
     }
@@ -100,14 +102,14 @@ HTTP/1.1 200 OK
 Content-type: application/json
 
 {
-  "directoryPropertyName": "CustomAttribute1",
+  "directoryPropertyName": "String",
   "annotations": [
     {
-      "displayName": "Cost Center",
+      "displayName": "String",
       "localizations": [
         {
-          "languageTag": "ru-RU",
-          "displayName": "центр затрат"
+          "languageTag": "String",
+          "displayName": "String"
         }
       ]
     }

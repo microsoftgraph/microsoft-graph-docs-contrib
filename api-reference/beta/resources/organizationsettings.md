@@ -28,7 +28,7 @@ None.
 
 | Relationship | Type        | Description |
 |:-------------|:------------|:------------|
-|profileCardProperties|[profileCardProperty](profilecardproperty.md) collection| Read-only. Nullable.|
+|profileCardProperties|[profileCardProperty](profilecardproperty.md) collection| Contains a collection of the properties an administrator has defined as visible on the M365 Profile Card. |
 
 ## JSON representation
 

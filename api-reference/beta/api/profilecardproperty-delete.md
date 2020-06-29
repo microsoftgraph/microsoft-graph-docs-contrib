@@ -9,6 +9,8 @@ doc_type: "apiPageType"
 
 # Delete profileCardProperty
 
+Namespace: microsoft.graph
+
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 Delete a [profileCardProperty](../resources/profilecardproperty.md) object and remove all customizations from the profile card within your Microsoft 365 tenant.
@@ -30,7 +32,7 @@ _Note: The profileCardProperties object requires the signed-in user to have a Te
 <!-- { "blockType": "ignored" } -->
 
 ```http
-DELETE https://graph.microsoft.com/beta/organization/settings/profileCardProperties
+DELETE https://graph.microsoft.com/beta/organization/settings/profileCardProperties/{id}
 ```
 
 ## Request headers
@@ -58,7 +60,7 @@ The following is an example of the request.
 }-->
 
 ```http
-DELETE https://graph.microsoft.com/beta/organization/settings/profileCardProperties
+DELETE https://graph.microsoft.com/beta/organization/settings/profileCardProperties/{id}
 ```
 
 ### Response
