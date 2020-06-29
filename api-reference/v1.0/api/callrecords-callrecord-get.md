@@ -13,10 +13,10 @@ Namespace: microsoft.graph.callRecords
 
 Retrieve the properties and relationships of a [callRecord](../resources/callrecords-callrecord.md) object.
 
-There are two options to retrive the **id** value required for reading a **callRecord**:
+There are two ways to get the **id** of a **callRecord**:
 
-* Create a [webhook subscription](/graph/api/resources/webhooks?view=graph-rest-1.0) to the **communications/callRecords** resource
-* Read the **callChainId** property of a [call](../resources/call.md) (note that the record will not be available until the associated call is complete)
+* Subscribe to [change notifications](/graph/api/resources/webhooks?view=graph-rest-beta) to the `/communications/callRecords` endpoint.
+* Use the **callChainId** property of a [call](../resources/call.md). The call record is available only after the associated call is completed.
 
 ## Permissions
 
