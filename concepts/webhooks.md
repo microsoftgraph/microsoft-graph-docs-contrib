@@ -67,11 +67,11 @@ Certain limits apply to Azure AD based resources (users, groups) and will genera
 
 - Maximum subscription quotas:
 
-  - Per app: 50,000 total subscriptions
-  - Per tenant: 1000 total subscriptions across all apps
+  - Per app (for all tenants combined): 50,000 total subscriptions
+  - Per tenant (for all applications combined): 1000 total subscriptions across all apps
   - Per app and tenant combination: 100 total subscriptions
 
-When the limits are exceeded, attempts to create a subscription will result in an [error response](errors.md) - `403 Forbidden`. The `message` property will explain which limit has been exceeded.
+When any limit is exceeded, attempts to create a subscription will result in an [error response](errors.md) - `403 Forbidden`. The `message` property will explain which limit has been exceeded.
 
 - Azure AD B2C tenants are not supported.
 
