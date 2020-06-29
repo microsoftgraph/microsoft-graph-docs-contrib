@@ -21,8 +21,8 @@ An item indexed via a Microsoft Search [connection](externalconnection.md).
 
 | Method                                                        | Return Type                     | Description |
 |:--------------------------------------------------------------|:--------------------------------|:--|
-| [Get externalItem](../api/externalitem-get.md)                | [externalItem](externalitem.md) | Get an externalItem.    |
 | [Create externalItem](../api/externalconnection-put-items.md) | [externalItem](externalitem.md) | Create an externalItem. |
+| [Get externalItem](../api/externalitem-get.md)                | [externalItem](externalitem.md) | Get an externalItem.    |
 | [Update externalItem](../api/externalitem-update.md)          | [externalItem](externalitem.md) | Update an externalItem. |
 | [Delete externalItem](../api/externalitem-delete.md)          | None                            | Delete an externalItem. |
 
@@ -37,7 +37,7 @@ An item indexed via a Microsoft Search [connection](externalconnection.md).
 
 ## Relationships
 
-None
+None.
 
 ## JSON representation
 
