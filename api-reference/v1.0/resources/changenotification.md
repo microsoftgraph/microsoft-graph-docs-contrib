@@ -23,15 +23,15 @@ None.
 
 | Property | Type | Description |
 |:---------|:-----|:------------|
-| changeType | string | Indicates the type of change that will raised the change notification. The supported values are: `created`, `updated`, `deleted`. Required. |
-| clientState | string | Value of the **clientState** property sent specified in the subscription request (if any). The maximum length is 255 characters. The client can check that the change notification came from the service by comparing the value of the **clientState** property sent with the subscription with the value of the **clientState** property received with each change notification. Optional. |
+| changeType | string | Indicates the type of change that will raise the change notification. The supported values are: `created`, `updated`, `deleted`. Required. |
+| clientState | string | Value of the **clientState** property sent in the subscription request (if any). The maximum length is 255 characters. The client can check whether the change notification came from the service by comparing the values of the **clientState** property. The value of the **clientState** property sent with the subscription is compared with the value of the **clientState** property received with each change notification. Optional. |
 | id | string | Unique ID for the notification. Optional. |
 | resource | string | The URI of the resource that emitted the change notification relative to `https://graph.microsoft.com`. Required. |
 | resourceData | [microsoft.graph.resourceData](resourcedata.md) | The content of this property depends on the type of resource being subscribed to. Required. |
 | sequenceNumber | int | A number in sequence for a notification, to help the client app identify if notifications are in sequence or if a notification is missing. Optional. |
 | subscriptionExpirationDateTime | [dateTime](https://tools.ietf.org/html/rfc3339) | The expiration time for the subscription. Required. |
 | subscriptionId | string | The unique identifier of the subscription that generated the notification. |
-| tenantId | guid | The unique identified of the tenant from which the change notification originated. |
+| tenantId | guid | The unique identifier of the tenant from which the change notification originated. |
 
 ## Relationships
 
