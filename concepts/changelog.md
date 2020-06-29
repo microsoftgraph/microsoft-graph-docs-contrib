@@ -21,6 +21,11 @@ For a summary of the value of these API changes, as well as recent tools, compon
 | Change          | Beta        | The [educationStudent](/api/resources/educationstudent) `externalId` property is now returned when using delegated permissions. |
 | Change          | Beta        | Added `lms` to the list of possible values for `educationExternalSource`.                                                       |
 
+### Change tracking
+| **Change type** | **Version**   | **Description**                          |
+| :-------------- | :------------ | :--------------------------------------- |
+| Addition | v1.0 | Change tracking through [delta queries](/graph/api/event-delta) is available for Microsoft Graph for US Government. |
+
 ### Calendar
 | **Change type** | **Version**   | **Description**                          |
 | :-------------- | :------------ | :--------------------------------------- |
