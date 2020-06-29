@@ -13,9 +13,9 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-GET an [externalitem](../resources/externalitem.md).
+Get the properties and relationships of an [externalitem](../resources/externalitem.md) object.
 
-This API is provided for diagnostic purposes only. It is not intended to be used for any other purpose. Repeated requests to this API may result in `429` HTTP errors.
+This API is provided for diagnostic purposes only. It is not intended to be used for any other purpose. Repeated requests to this API might result in `429` HTTP errors.
 
 [!INCLUDE [search-api-preview](../../includes/search-api-preview-signup.md)]
 
