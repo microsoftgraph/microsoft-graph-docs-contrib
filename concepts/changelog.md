@@ -13,18 +13,16 @@ For a summary of the value of these API changes, as well as recent tools, compon
 
 ## June 2020
 
-### Education
-
-| **Change type** | **Version** | **Description**                                                                                                                 |
-| :-------------- | :---------- | :------------------------------------------------------------------------------------------------------------------------------ |
-| Change          | Beta        | The [educationTeacher](/api/resources/educationteacher) `externalId` property is now returned when using delegated permissions. |
-| Change          | Beta        | The [educationStudent](/api/resources/educationstudent) `externalId` property is now returned when using delegated permissions. |
-| Change          | Beta        | Added `lms` to the list of possible values for `educationExternalSource`.                                                       |
-
 ### Calendar
 | **Change type** | **Version**   | **Description**                          |
 | :-------------- | :------------ | :--------------------------------------- |
 | Addition | beta | The [delta](/graph/api/event-delta?view=graph-rest-beta) function supports an additional scenario to get incremental changes (new, updated, or removed) of events in a user calendar without necessarily being bounded by a date range. |
+
+### Change notifications
+
+| **Change type** | **Version** | **Description**                          |
+| :-------------- | :---------- | :--------------------------------------- |
+| Addition | v1.0 | Added the [changeNotification](/graph/api/resources/changenotification), [changeNotificationCollection](/graph/api/resources/changenotificationcollection), and [resourceData](/graph/api/resources/resourcedata) resources to the [change notification](/graph/api/concepts/webhooks) API. |
 
 ### Cloud communications
 | **Change type** | **Version**   | **Description**                          |
@@ -90,6 +88,14 @@ For a summary of the value of these API changes, as well as recent tools, compon
 |Addition|beta|Added new entities:<br/>[complianceManagementPartner](/graph/api/resources/intune-onboarding-compliancemanagementpartner?view=graph-rest-1.0)<br/>|
 |Addition|beta|Added new complex types:<br/>[complianceManagementPartnerAssignment](/graph/api/resources/intune-onboarding-compliancemanagementpartner?view=graph-rest-1.0)<br/>|
 |Addition|beta|Added the **complianceManagementPartners** navigation property to the [deviceManagement](/graph/api/resources/intune-shared-devicemanagement?view=graph-rest-1.0) entity|
+
+### Education
+
+| **Change type** | **Version** | **Description**                                                                                                                 |
+| :-------------- | :---------- | :------------------------------------------------------------------------------------------------------------------------------ |
+| Change          | Beta        | The [educationTeacher](/api/resources/educationteacher) `externalId` property is now returned when using delegated permissions. |
+| Change          | Beta        | The [educationStudent](/api/resources/educationstudent) `externalId` property is now returned when using delegated permissions. |
+| Change          | Beta        | Added `lms` to the list of possible values for `educationExternalSource`.                                                       |
 
 ### Files
 
