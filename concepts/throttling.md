@@ -63,6 +63,7 @@ The following resources currently provide a `Retry-After` header:
 - [Country named location](/graph/api/resources/countryNamedLocation)
 - [IP named location](/graph/api/resources/ipNamedLocation)
 - [Conditional access policy](/graph/api/resources/conditionalAccessPolicy)
+- [Invitation](/graph/api/resources/invitation)
 
 For a broader discussion of throttling on the Microsoft Cloud, see [Throttling Pattern](https://docs.microsoft.com/azure/architecture/patterns/throttling).
 
@@ -169,10 +170,15 @@ and [polling requirements](/graph/api/resources/teams-api-overview#polling-requi
 The preceding limits apply to the following resources:  
 riskDetection, riskyUser, riskyUserHistoryItem, namedLocation, countryNamedLocation, ipNamedLocation, conditionalAccessPolicy.
 
-<!-- { "blockType": "throttlinggenstart" } -->
-### CPIM service limits
+### Invitation manager service limits
 
-[!INCLUDE [CPIM throttling documentation](../includes/throttling-cpim.md)]
+The following limits apply to any request on `/invitations`.
+
+| Operation                 | Limit per tenant             |
+|---------------------------|------------------------------|
+| Any operation             | 150 requests per 5 seconds   |
+
+<!-- { "blockType": "throttlinggenstart" } -->
 
 ### Education service limits
 
@@ -181,6 +187,14 @@ riskDetection, riskyUser, riskyUserHistoryItem, namedLocation, countryNamedLocat
 ### Excel service limits
 
 [!INCLUDE [Excel throttling documentation](../includes/throttling-excel.md)]
+
+### Identity and access audit logs service limits
+
+[!INCLUDE [Identity and access audit logs throttling documentation](../includes/throttling-Identity-and-access-audit-logs.md)]
+
+### Identity providers service limits
+
+[!INCLUDE [CPIM throttling documentation](../includes/throttling-cpim.md)]
 
 ### Intune service limits
 

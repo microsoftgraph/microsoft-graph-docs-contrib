@@ -7,9 +7,10 @@ ms.topic: include
 <!-- markdownlint-disable MD041 -->
 <!-- this file is auto-generated don't edit it manually! -->
 
-| Request type | Limit per tenant for all apps | Limit per app per tenant |
-| ------------ | ------- | ------- |
-| Any | 300 requests per 1 minute | 200 requests per 1 minute |
+| Request type | Limit per app per tenant |
+| ------------ | ------- |
+| /auditLogs/directoryAudits | 25 requests per 10 seconds |
+| Any | 100 requests per 10 seconds |
 
 The preceding limits apply to the following resources:  
-identityContainer, identityProvider.
+auditLogRoot, directoryAudit, restrictedSignIn, signIn.
