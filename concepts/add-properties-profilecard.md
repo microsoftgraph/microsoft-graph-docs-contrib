@@ -23,7 +23,7 @@ Operations on the **profileCardProperty** resource that use delegated permission
 
 ## Make additional attributes visible
 
-You can make the following attributes from Azure Active Directory (Azure AD) visible on users' profile cards; these attributes are not case sensitive:
+You can make the following attributes from Azure Active Directory (Azure AD) visible on users' profile cards. These attributes are *not case-sensitive*:
 
 - `UserPrincipalName`
 - `Fax`
@@ -81,7 +81,7 @@ It takes up to 24 hours for the changes to show on profile cards.
 
 Custom properties are not searchable and can't be used to search for people across Microsoft apps and services.
 
-The following table shows how the Azure AD custom attribute names correspond to the supported values for the **directoryPropertyName** property of the [profileCardProperty] (/graph/api/resources/profilecardproperty?view=graph-rest-beta) entity; these Azure AD custom attribute names are not case sensitive.
+The following table shows how the Azure AD custom attribute names correspond to the supported values for the **directoryPropertyName** property of the [profileCardProperty] (/graph/api/resources/profilecardproperty?view=graph-rest-beta) entity. These Azure AD custom attribute names are *not case-sensitive*:
 
 |Attribute string|profileCardProperty value|
 |:---------------|:----------|
@@ -109,20 +109,20 @@ The following example adds the first Azure AD custom attribute to the profile ca
 POST https://graph.microsoft.com/beta/organization/{tenantid}/settings/profileCardProperties
 Content-Type: application/json
 
-        {
+      {
         "directoryPropertyName": "customAttribute1",
         "annotations": [
           {
-                "displayName": "Cost center",
-                "localizations": [
-                    {
-                        "languageTag": "de-at",
-                        "displayName": "Kostenstelle"
-                    }
-                  ]
-                }
-              ]
-            }
+            "displayName": "Cost center",
+            "localizations": [
+              {
+                "languageTag": "de-at",
+                "displayName": "Kostenstelle"
+              }
+            ]
+          }
+        ]
+      }
   ```
 
 Enter the language code in the form *ll-cc*, where *ll* is the language code, and *cc* the country code. For example, for German–Austria, enter the country code de-at.
