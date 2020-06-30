@@ -1160,6 +1160,13 @@ items:
             href: api/printjob-startprintjob.md
           - name: Cancel
             href: api/printjob-cancelprintjob.md
+        - name: Print operation
+          href: resources/printoperation.md
+          items:
+            - name: Get
+              href: api/printoperation-get.md
+            - name: Create printer
+              href: api/print-printers-create.md
         - name: Printer
           href: resources/printer.md
           items:
