@@ -35,8 +35,8 @@ The following is a JSON representation of the resource.
 
 ```json
 {
-  "displayName": "ru-RU",
-  "languageTag": "центр затрат"
+  "displayName": "string",
+  "languageTag": "string"
 }
 ```
 

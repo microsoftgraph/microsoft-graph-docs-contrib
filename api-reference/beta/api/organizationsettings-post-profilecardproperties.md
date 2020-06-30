@@ -65,14 +65,14 @@ POST https://graph.microsoft.com/beta/organization/settings/profileCardPropertie
 Content-type: application/json
 
 {
-  "directoryPropertyName": "directoryPropertyName-value",
+  "directoryPropertyName": "CustomAttribute1",
   "annotations": [
     {
-      "displayName": "displayName-value",
+      "displayName": "Cost Center",
       "localizations": [
         {
-          "languageTag": "languageTag-value",
-          "displayName": "displayName-value"
+          "languageTag": "ru-RU",
+          "displayName": "центр затрат"
         }
       ]
     }

@@ -13,7 +13,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Update the properties of a [profileCardProperty](../resources/profilecardproperty.md) object.
+Update the properties of a [profileCardProperty](../resources/profilecardproperty.md) object, identified by its **directoryPropertyName** property.
 
 ## Permissions
 
@@ -25,7 +25,7 @@ One of the following permissions is required to call this API. To learn more, in
 | Delegated (personal Microsoft account) | Not supported.                              |
 | Application                            | Not supported.                              |
 
->**Note:** The **profileCardProperties** object requires the signed-in user to have a tenant administrator or Global administrator role to run successfully.
+>**Note:** The **profileCardProperties** object requires the signed-in user to have a Tenant administrator or Global administrator role to run successfully.
 
 ## HTTP request
 

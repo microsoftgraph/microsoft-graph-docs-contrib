@@ -13,7 +13,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Delete a [profileCardProperty](../resources/profilecardproperty.md) object and remove all customizations from the profile card within your Microsoft 365 tenant.
+Delete the [profileCardProperty](../resources/profilecardproperty.md) object specified by its `directoryPropertyName` from the organization's profile card, and remove any localized customizations for that property.
 
 ## Permissions
 
@@ -25,7 +25,7 @@ One of the following permissions is required to call this API. To learn more, in
 | Delegated (personal Microsoft account) | Not supported.                              |
 | Application                            | Not supported.                              |
 
-_Note: The profileCardProperties object requires the signed-in user to have a Tenant Administrator or Global Administrator role to successfully execute.
+>**Note:** The **profileCardProperties** object requires the signed-in user to have a Tenant administrator or Global administrator role to run successfully.
 
 ## HTTP request
 
@@ -53,14 +53,14 @@ If successful, this method returns a `204 No Content` response code. It does not
 
 ### Request
 
-The following is an example of the request.
+The following example shows how to delete the attribute named "Fax" from the profile card for the organization.
 <!-- {
   "blockType": "request",
   "name": "delete_profilecardproperty"
 }-->
 
 ```http
-DELETE https://graph.microsoft.com/beta/organization/settings/profileCardProperties/{id}
+DELETE https://graph.microsoft.com/beta/organization/settings/profileCardProperties/fax
 ```
 
 ### Response

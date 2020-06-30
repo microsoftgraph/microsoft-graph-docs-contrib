@@ -17,8 +17,8 @@ Used to set a custom display name for fields that surface in a shared Microsoft 
 
 | Property     | Type                                                            | Description                                                                                                                       |
 |:-------------|:----------------------------------------------------------------|:----------------------------------------------------------------------------------------------------------------------------------|
-|displayName   |String                                                           | If present, the value of this field is used by the profile card as the default property label in the experience (for example, Cost Center). |
-|localizations |[displayNameLocalization](displaynamelocalization.md) collection | If present, the localized value for a given language will be used as the default property label in the experience (for example, a user with a no-NB client will receive "Kostnads Senter" as their label, rather than "Cost Center".)|
+|displayName   |String                                                           | If present, the value of this field is used by the profile card as the default property label in the experience (for example, "Cost Center"). |
+|localizations |[displayNameLocalization](displaynamelocalization.md) collection | Each resource in this collection represents the localized value of the attribute name for a given language, used as the default label for that locale. For example, a user with a `no-NB` client gets "Kostnads Senter" as the attribute label, rather than "Cost Center."|
 
 ## JSON representation
 
