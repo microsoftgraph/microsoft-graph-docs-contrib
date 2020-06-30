@@ -11087,11 +11087,13 @@ items:
           items:
           - name: External item
             href: resources/externalitem.md
-          - name: Create external item
+          - name: Create
             href: api/externalconnection-put-items.md
-          - name: Update external item
+          - name: Get
+            href: api/externalitem-get.md
+          - name: Update
             href: api/externalitem-update.md
-          - name: Delete external item
+          - name: Delete
             href: api/externalitem-delete.md
     - name: Security
       displayname: Security API, Microsoft Graph Security API

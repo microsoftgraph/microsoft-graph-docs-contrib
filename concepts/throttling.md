@@ -60,6 +60,7 @@ The following resources currently provide a `Retry-After` header:
 - [Used insight](/graph/api/resources/insights-used)
 - [Shared insight](/graph/api/resources/insights-shared)
 - [User settings](/graph/api/resources/usersettings)
+- [Invitation](/graph/api/resources/invitation)
 
 For a broader discussion of throttling on the Microsoft Cloud, see [Throttling Pattern](https://docs.microsoft.com/azure/architecture/patterns/throttling).
 
@@ -165,6 +166,14 @@ The following limits apply to any request on `me/insights` or `users/{id}/insigh
 |------------------------------------------------------------|-----------------|
 | 10,000 API requests in a 10 minute period                  | v1.0 and beta endpoints |
 | 4 concurrent requests                                      | v1.0 and beta endpoints   |
+
+### Invitation manager service limits
+
+The following limits apply to any request on `/invitations`.
+
+| Operation                 | Limit per tenant             |
+|---------------------------|------------------------------|
+| Any operation             | 150 requests per 5 seconds   |
 
 <!-- { "blockType": "throttlinggenstart" } -->
 
