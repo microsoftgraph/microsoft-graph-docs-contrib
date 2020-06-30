@@ -93,6 +93,7 @@ The following resources currently provide a `Retry-After` header:
 - [Group setting](/graph/api/resources/groupsetting)
 - [Group setting template](/graph/api/resources/groupsettingtemplate)
 - [Subscription](/graph/api/resources/subscription)
+- [Invitation](/graph/api/resources/invitation)
 
 For a broader discussion of throttling on the Microsoft Cloud, see [Throttling Pattern](https://docs.microsoft.com/azure/architecture/patterns/throttling).
 
@@ -317,7 +318,16 @@ Other factors that impact a request cost:
   - WriteLimitExceeded - Throttling is because the write limit is exceeded.
   - ResourceUnitLimitExceeded - Throttling is because the limit for the allocated resource unit is exceeded.
 
+### Invitation manager service limits
+
+The following limits apply to any request on `/invitations`.
+
+| Operation                 | Limit per tenant             |
+|---------------------------|------------------------------|
+| Any operation             | 150 requests per 5 seconds   |
+
 <!-- { "blockType": "throttlinggenstart" } -->
+
 ### Education service limits
 
 [!INCLUDE [Education rostering APIS throttling documentation](../includes/throttling-education-rostering-apis.md)]
