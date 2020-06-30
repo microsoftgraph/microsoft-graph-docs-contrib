@@ -66,18 +66,18 @@ The following is an example of the request.
 }-->
 
 ```http
-PATCH https://graph.microsoft.com/beta/organization/settings/profileCardProperties/{directoryPropertyName-Value}
+PATCH https://graph.microsoft.com/beta/organization/settings/profileCardProperties/CustomAttribute1
 Content-type: application/json
 
 {
-  "directoryPropertyName": "String",
+  "directoryPropertyName": "CustomAttribute1",
   "annotations": [
     {
-      "displayName": "String",
+      "displayName": "Cost Center",
       "localizations": [
         {
-          "languageTag": "String",
-          "displayName": "String"
+          "languageTag": "ru-RU",
+          "displayName": "центр затрат"
         }
       ]
     }
@@ -102,14 +102,14 @@ HTTP/1.1 200 OK
 Content-type: application/json
 
 {
-  "directoryPropertyName": "String",
+  "directoryPropertyName": "CustomAttribute1",
   "annotations": [
     {
-      "displayName": "String",
+      "displayName": "Cost Center",
       "localizations": [
         {
-          "languageTag": "String",
-          "displayName": "String"
+          "languageTag": "ru-RU",
+          "displayName": "центр затрат"
         }
       ]
     }

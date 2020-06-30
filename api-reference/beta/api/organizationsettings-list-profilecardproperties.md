@@ -13,7 +13,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Get a list of [profileCardProperty](../resources/profilecardproperty.md) resources of an organization.
+Get a collection of [profileCardProperty](../resources/profilecardproperty.md) resources of an organization. Each resource is identified by its **directoryPropertyName** property.
 
 ## Permissions
 
@@ -86,18 +86,14 @@ HTTP/1.1 200 OK
 Content-type: application/json
 
 {
-  "value": [
+  "directoryPropertyName": "CustomAttribute1",
+  "annotations": [
     {
-      "directoryPropertyName": "String",
-      "annotations": [
+      "displayName": "Cost Center",
+      "localizations": [
         {
-          "displayName": "String",
-          "localizations": [
-            {
-              "languageTag": "String",
-              "displayName": "String"
-            }
-          ]
+          "languageTag": "ru-RU",
+          "displayName": "центр затрат"
         }
       ]
     }

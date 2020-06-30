@@ -13,7 +13,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Retrieve the properties and relationships of a [profileCardProperty](../resources/profilecardproperty.md) entity, which contains the profile card customizations that exist in your Microsoft 365 organization for a given field.
+Retrieve the properties and relationships of a [profileCardProperty](../resources/profilecardproperty.md) entity, which contains the profile card customizations that exist in your Microsoft 365 organization for a given field. The profileCardProperty is identified by its **directoryPropertyName** property.
 
 ## Permissions
 
@@ -84,14 +84,14 @@ HTTP/1.1 200 OK
 Content-type: application/json
 
 {
-  "directoryPropertyName": "String",
+  "directoryPropertyName": "CustomAttribute1",
   "annotations": [
     {
-      "displayName": "String",
+      "displayName": "Cost Center",
       "localizations": [
         {
-          "languageTag": "String",
-          "displayName": "String"
+          "languageTag": "ru-RU",
+          "displayName": "центр затрат"
         }
       ]
     }

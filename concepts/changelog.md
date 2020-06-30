@@ -37,8 +37,8 @@ For a summary of the value of these API changes, as well as recent tools, compon
 | Addition | beta | Added the **OnPremisesPublishing** property to [Update Application](/graph/api/application-update?view=graph-rest-beta). |
 | Addition | beta | Added new resources [authenticationFlowsPolicy](/graph/api/resources/authenticationflowspolicy?view=graph-rest-beta) and [selfServiceSignUpAuthenticationFlowConfiguration](/graph/api/resources/selfservicesignupauthenticationflowconfiguration?view=graph-rest-beta) and [get](/graph/api/authenticationflowspolicy-get?view=graph-rest-beta) and [update](/graph/api/authenticationflowspolicy-update?view=graph-rest-beta) operations.|
 | Addition | beta | Added the **settings** navigation property to [organization](../graph/api/resources/organization?view=graph-rest-beta entity. |
-| Addition | beta | Added the **profileCardProperties** navigation property to [organization settings](../graph/api/resources/organizationsettings?view=graph-rest-beta entity. |
-| Addition | beta | Added the **profileCardProperty** entity and following actions: <br/> [Get profileCardProperty](../api/profilecardproperty-get.md?view=graph-rest-beta) entity. <br/> [Update profileCardProperty](../api/profilecardproperty-update.md?view=graph-rest-beta) entity.|
+| Addition | beta | Added the **profileCardProperties** navigation property to [organizationSettings](../graph/api/resources/organizationsettings?view=graph-rest-beta) entity. |
+| Addition | beta | Added the **profileCardProperty** entity and following operations: <br/> [Get profileCardProperty](../api/profilecardproperty-get.md?view=graph-rest-beta) entity. <br/> [Update profileCardProperty](../api/profilecardproperty-update.md?view=graph-rest-beta) entity.|
 
 ### Security
 
