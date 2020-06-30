@@ -67,24 +67,21 @@ If successful, the response returns a `200 OK` response code and a **profileCard
 HTTP/1.1 200 OK
 Content-type: application/json
 
-        "value": [
             {
               "directoryPropertyName": "Alias",
               "annotations": []
             }
-          ]
-        }
 ```
 
 ## Adding custom attributes
 
-You can add any of the [15 custom attributes](/graph/api/resources/onpremisesextensionattributes?view=graph-rest-beta) Azure AD to users' profile cards by configuring your tenant settings in Microsoft Graph. You can add one custom property attribute at a time. The Azure AD custom attribute names are not case sensitive.
+You can add any of the [15 custom attributes](/graph/api/resources/onpremisesextensionattributes?view=graph-rest-beta) Azure AD to users' profile cards by configuring your tenant settings in Microsoft Graph. You can add one **profileCardProperty** resource at a time.
 
 It takes up to 24 hours for the changes to show on profile cards.
 
 Custom properties are not searchable and can't be used to search for people across Microsoft apps and services.
 
-The following table shows how the Azure AD custom attribute names correspond to the supported values for the **directoryPropertyName** property of the [profileCardProperty] (/graph/api/resources/profilecardproperty?view=graph-rest-beta) entity.
+The following table shows how the Azure AD custom attribute names correspond to the supported values for the **directoryPropertyName** property of the [profileCardProperty] (/graph/api/resources/profilecardproperty?view=graph-rest-beta) entity; these Azure AD custom attribute names are not case sensitive.
 
 |Attribute string|profileCardProperty value|
 |:---------------|:----------|
@@ -137,8 +134,6 @@ If successful, the response returns a `200 OK` response code and a **profileCard
 HTTP/1.1 200 OK
 Content-type: application/json
 
-        {
-        "value": [
             {
               "directoryPropertyName": "customAttribute1",
               "annotations": [
@@ -153,7 +148,6 @@ Content-type: application/json
                   }
                 ]
               }
-            }
 ```
 
 It takes up to 24 hours for the changes to show on profile cards.
