@@ -1,6 +1,6 @@
 ---
 title: "printers: create"
-description: Creates (registers) a printer with Universal Print
+description: Creates (registers) a printer with the Universal Print service.
 author: braedenp-msft
 localization_priority: Normal
 ms.prod: universal-print
@@ -13,7 +13,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Creates (registers) a printer with Universal Print. This is a long-running operation and as such, it returns a [printOperation](../resources/printoperation.md) that can be used to track and verify the registration of the printer.
+Creates (registers) a printer with the Universal Print service. This is a long-running operation and as such, it returns a [printOperation](../resources/printoperation.md) that can be used to track and verify the registration of the printer.
 
 ## Permissions
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
@@ -50,11 +50,15 @@ In the request body, provide a JSON object with the following properties.
 |certificateSigningRequest|[printCertificateSigningRequest](../resources/printcertificatesigningrequest.md)|The X.509 Certificate Signing Request (CSR) for the certificate created and used by the printer to identify itself.|Yes|
 |connectorId|String|Id of Connector acting as proxy to the printer.|No|
 
-## Example
-##### Request
-The following is an example of the request. For help with creating the required Certificate Signing Request (CSR) see this [code sample](https://docs.microsoft.com/en-us/universal-print/hardware/universal-print-oem-certificate-signing-request).
+## Response
+If successful, this method returns a `202 Accepted` response code and a link to the associated [printerCreateOperation](../resources/printercreateoperation.md) in the `Operation-Location` header.
 
-# [HTTP](#tab/http)
+Making a GET request to the linked URL can be used to get the status of an ongoing printer registration. Once printer registration has completed successfully, a GET request to the linked URL will contain the created printer object and registered certificate.
+
+## Example
+### Request
+The following is an example of the request. For help creating the required Certificate Signing Request (CSR), see the [CSR generation code sample](https://docs.microsoft.com/universal-print/hardware/universal-print-oem-certificate-signing-request).
+
 <!-- {
   "blockType": "request",
   "name": "create_printer"
@@ -78,14 +82,9 @@ Content-length: 319
 }
 ```
 
-## Response
-If successful, this method returns a `202 Accepted` response code and a link to the associated [printerCreateOperation](../resources/printercreateoperation.md) in the `Operation-Location` header.
-
-Making a GET request to the linked URL can be used to get the status of an ongoing printer registration. Once printer registration has completed successfully, a GET request to the linked URL will contain the created printer object and registered certificate.
-
-##### Response
+### Response
 The following is an example of the response.
->**Note:** The response object shown here might be shortened for readability. All the properties will be returned from an actual call.
+
 <!-- {
   "blockType": "response",
   "truncated": true

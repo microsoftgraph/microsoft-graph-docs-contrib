@@ -13,7 +13,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Retrieve a printOperation.
+Retrieve the properties and relationships of a [printOperation](../resources/printoperation.md) object.
 
 ## Permissions
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
@@ -38,23 +38,20 @@ GET /print/operations/{id}
 ## Request body
 Do not supply a request body for this method.
 ## Response
-If successful, this method returns a `200 OK` response code and [printOperation](../resources/printOperation.md) object (or a derivative of **printOperation**) in the response body.
+If successful, this method returns a `200 OK` response code and a [printOperation](../resources/printOperation.md) object (or a derivative of **printOperation**) in the response body.
 ## Example
-##### Request
+### Request
 The following is an example of the request.
 
-# [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "get_printoperation"
 }-->
-```msgraph-interactive
+```http
 GET https://graph.microsoft.com/beta/print/operations/{id}
 ```
 
----
-
-##### Response
+### Response
 The following is an example of the response.
 >**Note:** The response object shown here might be shortened for readability. All the properties will be returned from an actual call.
 <!-- {
