@@ -61,10 +61,10 @@ The following example displays the `Alias` attribute on the profile card:
         }
 ```
 
-If successful, the response returns a `200 OK` response code and a **profileCardProperty** object in the response body. The value for the `Alias` attribute  would be displayed on a user's profile card.  
+If successful, the response returns a `201 OK` response code and a **profileCardProperty** object in the response body. The value for the `Alias` attribute  would be displayed on a user's profile card.  
 
 ```http
-HTTP/1.1 200 OK
+HTTP/1.1 201 OK
 Content-type: application/json
 
             {
@@ -75,7 +75,7 @@ Content-type: application/json
 
 ## Adding custom attributes
 
-You can add any of the [15 custom attributes](/graph/api/resources/onpremisesextensionattributes?view=graph-rest-beta) Azure AD to users' profile cards by configuring your tenant settings in Microsoft Graph. You can add one **profileCardProperty** resource at a time.
+You can add any of the [15 custom attributes](/graph/api/resources/onpremisesextensionattributes?view=graph-rest-beta) from Azure AD to users' profile cards by configuring your tenant settings in Microsoft Graph. You can add one **profileCardProperty** resource at a time.
 
 It takes up to 24 hours for the changes to show on profile cards.
 
@@ -128,10 +128,10 @@ Content-Type: application/json
 Enter the language code in the form *ll-cc*, where *ll* is the language code, and *cc* the country code. For example, for German–Austria, enter the country code de-at.
 If a language is not supported, the property name will be shown with the default value.  
 
-If successful, the response returns a `200 OK` response code and a **profileCardProperty** object in the response body. In this example you can assume that the profile card displays **Kostenstelle** for all users that have set their language settings to German-Austria on the profile card. For all other users, **Cost center** will be displayed on the profile card.
+If successful, the response returns a `201 OK` response code and a **profileCardProperty** object in the response body. In this example you can assume that the profile card displays **Kostenstelle** for all users that have set their language settings to German-Austria on the profile card. For all other users, **Cost center** will be displayed on the profile card.
 
 ```http
-HTTP/1.1 200 OK
+HTTP/1.1 201 OK
 Content-type: application/json
 
             {
