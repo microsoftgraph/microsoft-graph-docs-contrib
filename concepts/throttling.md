@@ -62,6 +62,7 @@ The following resources currently provide a `Retry-After` header:
 - [File Assessment Request](/graph/api/resources/fileassessmentrequest)
 - [Url Assessment Request](/graph/api/resources/urlassessmentrequest)
 - [Threat Assessment Result](/graph/api/resources/threatassessmentresult)
+- [Invitation](/graph/api/resources/invitation)
 
 For a broader discussion of throttling on the Microsoft Cloud, see [Throttling Pattern](https://docs.microsoft.com/azure/architecture/patterns/throttling).
 
@@ -170,6 +171,14 @@ The following limits apply to any request on `/informationProtection`.
 
 The preceding limits apply to the following resources:  
 threatAssessmentRequest, threatAssessmentResult, mailAssessmentRequest, emailFileAssessmentRequest, fileAssessmentRequest, urlAssessmentRequest.
+
+### Invitation manager service limits
+
+The following limits apply to any request on `/invitations`.
+
+| Operation                 | Limit per tenant             |
+|---------------------------|------------------------------|
+| Any operation             | 150 requests per 5 seconds   |
 
 <!-- { "blockType": "throttlinggenstart" } -->
 
