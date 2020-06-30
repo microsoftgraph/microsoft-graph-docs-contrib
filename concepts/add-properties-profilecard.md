@@ -61,7 +61,7 @@ An example is to display **Alias** on the profile card:
         }
 ```
 
-If successful, the response returns a `200 OK` response code and a **profileCardProperty** object in the response body. The value for the `Alias" attribute  would be displayed on a user's profile card.  
+If successful, the response returns a `200 OK` response code and a **profileCardProperty** object in the response body. The value for the `Alias` attribute  would be displayed on a user's profile card.  
 
 ```http
 HTTP/1.1 200 OK
