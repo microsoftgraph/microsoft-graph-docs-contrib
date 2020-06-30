@@ -1,5 +1,5 @@
 ---
-title: "printers: create"
+title: "printer: create"
 description: Creates (registers) a printer with the Universal Print service.
 author: braedenp-msft
 localization_priority: Normal
@@ -7,7 +7,7 @@ ms.prod: universal-print
 doc_type: apiPageType
 ---
 
-# printers: create
+# printer: create
 
 Namespace: microsoft.graph
 
