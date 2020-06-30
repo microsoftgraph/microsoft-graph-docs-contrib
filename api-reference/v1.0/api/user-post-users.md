@@ -152,8 +152,6 @@ Create a new user, with a local account identity with a sign-in name, an email a
 
 #### Request
 
-
-# [HTTP](#tab/http)
 <!-- {	
   "blockType": "request",	
   "name": "create_user_from_users_identities"	
