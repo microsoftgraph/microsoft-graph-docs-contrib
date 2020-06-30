@@ -49,7 +49,8 @@ The following is a JSON representation of the resource.
     "id": "String (identifier)",
     "status": {"@odata.type": "microsoft.graph.printOperationStatus"},
     "createdDateTime": "2020-06-15T19:54:14.853Z",
-    "certificate": ""
+    "certificate": "",
+    "printer": {"@odata.type": "microsoft.graph.printer"}
 }
 
 ```

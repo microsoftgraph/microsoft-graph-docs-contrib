@@ -13,7 +13,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Creates (registers) a printer with the Universal Print service. This is a long-running operation and as such, it returns a [printOperation](../resources/printoperation.md) that can be used to track and verify the registration of the printer.
+Creates (registers) a printer with the Universal Print service. This is a long-running operation and as such, it returns a [printerCreateOperation](../resources/printercreateoperation.md) that can be used to track and verify the registration of the printer.
 
 ## Permissions
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
@@ -22,7 +22,7 @@ In addition to the following permissions, the user's tenant must have an active 
 
 |Permission type | Permissions (from least to most privileged) |
 |:---------------|:--------------------------------------------|
-|Delegated (work or school account)| Users.Read |
+|Delegated (work or school account)| User.Read.All |
 |Delegated (personal Microsoft account)|Not Supported.|
 |Application|Not Supported.|
 
@@ -76,9 +76,9 @@ Content-length: 319
   "hasPhysicalDevice": false,
   "certificateSigningRequest": { 
     "content": "{content}",
-    "transportKey": "{sampleTransportKey}",
-    "connectorId": null
-  }
+    "transportKey": "{sampleTransportKey}"
+  },
+  "connectorId": null
 }
 ```
 
