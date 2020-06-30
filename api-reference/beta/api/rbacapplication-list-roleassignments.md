@@ -168,6 +168,8 @@ Content-type: application/json
                 "givenName": null,
                 "imAddresses": [],
                 "userType": "Guest",
+	
+            }
         },
         {
             "id": "lAPpYvVpN0KRkAEhdxReEMgc_BA2rIZBuZsM-BSqLdU-1",
@@ -195,6 +197,8 @@ Content-type: application/json
                 "givenName": null,
                 "imAddresses": [],
                 "userType": "Guest",
+		
+            }
         }
 	]
 }
