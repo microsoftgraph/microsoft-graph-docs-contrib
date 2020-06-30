@@ -30,10 +30,7 @@ One of the following permissions is required to call this API. To learn more, in
 <!-- { "blockType": "ignored" } -->
 
 ```http
-POST /education/schools/{id}/delta
-POST /education/me/schools/{id}/delta
-POST /education/users/{id}/schools/{id}/delta
-
+GET /education/schools/delta
 ```
 
 ## Request headers
@@ -67,14 +64,15 @@ The following is an example of the request.
 }-->
 
 ```http
-POST https://graph.microsoft.com/v1.0/education/schools/{id}/delta
+GET https://graph.microsoft.com/beta/education/schools/delta
 ```
 
 ##### Response
 
 The following is an example of the response.
 
-> **Note:** The response object shown here might be shortened for readability. All the properties will be returned from an actual call.
+> [!NOTE]
+> The response object shown here might be shortened for readability. All the properties will be returned from an actual call.
 
 <!-- {
   "blockType": "response",
@@ -91,12 +89,20 @@ Content-length: 313
 {
   "value": [
     {
-      "principalEmail": "principalEmail-value",
-      "principalName": "principalName-value",
-      "externalPrincipalId": "externalPrincipalId-value",
-      "lowestGrade": "lowestGrade-value",
-      "highestGrade": "highestGrade-value",
-      "schoolNumber": "schoolNumber-value"
+      "address": { "@odata.type": "microsoft.graph.physicalAddress" },
+      "createdBy": { "@odata.type": "microsoft.graph.identitySet" },
+      "description": "String",
+      "displayName": "String",
+      "externalId": "String",
+      "externalPrincipalId": "String",
+      "externalSource": "string",
+      "highestGrade": "String",
+      "id": "String (identifier)",
+      "lowestGrade": "String",
+      "phone": "String",
+      "principalEmail": "String",
+      "principalName": "String",
+      "schoolNumber": "String"
     }
   ]
 }
