@@ -18,7 +18,7 @@ Update the properties of a [printer](../resources/printer.md) object.
 ## Permissions
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
 
-In addition to the following permissions, the user's tenant must have an active Universal Print subscription.
+In addition to the following permissions, the user's tenant must have an active Universal Print subscription. 
 
 Only the app that registered the printer is allowed to update the printer using application permissions.
 
@@ -65,7 +65,7 @@ If successful, this method returns a `200 OK` response code and an updated [prin
 
 ### Example 2: Application permissions and IPP payload
 
-If successful, this method returns a `204 No Content` response code and an updated [printer](../resources/printer.md) object in the response body.
+If successful, this method returns `204 No content` response code. It does not return anything in the response body.
 
 ## Example
 
