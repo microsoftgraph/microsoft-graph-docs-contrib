@@ -47,9 +47,12 @@ Some operators are not supported: `$count`, `$search`, `$filter`.
 Do not supply a request body for this method.
 ## Response
 If successful, this method returns a `200 OK` response code and collection of [printJob](../resources/printjob.md) objects in the response body.
-## Example
+## Examples
+
+### Example 1: Get basic job list
+
 ##### Request
-The following is an example of the request.
+The following is an example of a request to list print jobs with their basic metadata.
 
 # [HTTP](#tab/http)
 <!-- {
@@ -98,6 +101,65 @@ Content-length: 461
         "processingState": "completed",
         "processingStateDescription": "The print job has completed successfully and no further processing will take place."
       }
+    }
+  ]
+}
+```
+
+### Example 2: Get job list with document details
+
+##### Request
+The following is an example of a request to list print jobs and the document data associated with them.
+
+# [HTTP](#tab/http)
+<!-- {
+  "blockType": "request",
+  "name": "get_jobs"
+}-->
+```msgraph-interactive
+GET https://graph.microsoft.com/beta/print/printers/{id}/jobs?$expand=documents
+```
+# [C#](#tab/csharp)
+[!INCLUDE [sample-code](../includes/snippets/csharp/get-jobs-csharp-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [JavaScript](#tab/javascript)
+[!INCLUDE [sample-code](../includes/snippets/javascript/get-jobs-javascript-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Objective-C](#tab/objc)
+[!INCLUDE [sample-code](../includes/snippets/objc/get-jobs-objc-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+---
+
+##### Response
+The following is an example of the response.
+>**Note:** The response object shown here might be shortened for readability. All the properties will be returned from an actual call.
+<!-- {
+  "blockType": "response",
+  "truncated": true,
+  "@odata.type": "microsoft.graph.printJob",
+  "isCollection": true
+} -->
+```http
+HTTP/1.1 200 OK
+Content-type: application/json
+Content-length: 643
+
+{
+  "@odata.context": "https://graph.microsoft.com/beta/$metadata#print/printers('c05f3726-0d4b-4aa1-8fe9-2eb981bb26fb')/jobs",
+  "value": [
+    {
+      "id": "5182",
+      "createdDateTime": "2020-02-04T00:00:00.0000000Z",
+      "createdBy": {},
+      "status": {
+        "processingState": "completed",
+        "processingStateDescription": "The print job has completed successfully and no further processing will take place."
+      },
+      "documents@odata.context": "https://graph.microsoft.com/beta/$metadata#print/printers('c05f3726-0d4b-4aa1-8fe9-2eb981bb26fb')/jobs('5182')/documents",
+      "documents": []
     }
   ]
 }
