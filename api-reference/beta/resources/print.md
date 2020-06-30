@@ -37,6 +37,7 @@ When accompanied by a Universal Print subscription, the Print feature enables ma
 |services|[printService](printservice.md) collection|The list of available Universal Print service endpoints.|
 |printers|[printer](printer.md) collection|The list of printers registered in the tenant.|
 |shares|[printerShare](printershare.md) collection|The list of printer shares registered in the tenant.|
+|connectors|[printConnector](printconnector.md) collection|The list of available print connectors.|
 
 ## JSON representation
 

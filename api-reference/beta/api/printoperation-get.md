@@ -20,9 +20,9 @@ One of the following permissions is required to call this API. To learn more, in
 
 |Permission type | Permissions (from least to most privileged) |
 |:---------------|:--------------------------------------------|
-|Delegated (work or school account)| Printer.Read.All, Printer.ReadWrite.All, Printer.FullControl.All |
+|Delegated (work or school account)| User.Read.All |
 |Delegated (personal Microsoft account)|Not Supported.|
-|Application|Printer.Read.All, Printer.ReadWrite.All|
+|Application|Not supported.|
 
 ## HTTP request
 <!-- { "blockType": "ignored" } -->
@@ -68,7 +68,7 @@ Content-type: application/json
 Content-length: 1199
 
 {
-    "@odata.context": "https://graph.microsoft-ppe.com/testppebeta-print/$metadata#print/operations/$entity",
+    "@odata.context": "https://graph.microsoft-ppe.com/beta/$metadata#print/operations/$entity",
     "@odata.type": "#microsoft.graph.printerCreateOperation",
     "id": "81f4cca3-b3b7-47ea-9f88-7ddbf7208ef4",
     "createdDateTime": "2020-06-15T22:27:03.031849Z",

@@ -28,6 +28,7 @@ Represents a long-running printer registration operation. Derived from [printOpe
 |status|[printOperationStatus](printoperationstatus.md)|The status of the registration operation. Contains the operation's progress and whether it completed successfully. Read-only.|
 |createdDateTime|DateTimeOffset|The DateTimeOffset when the operation was created. Read-only.|
 |certificate|String|The signed certificate created during the registration process. Read-only.|
+|printer|[printer](printer.md)|The created printer entity. Read-only.|
 
 ## JSON representation
 

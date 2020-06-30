@@ -40,10 +40,6 @@ POST /print/printers/create
 ## Request body
 In the request body, provide a JSON object with the following properties.
 
-
-
-hasPhysicalDevice: 
-
 | Parameter      | Type    |Description| Required? |
 |:---------------|:--------|:----------|:----------|
 |displayName|String|The display name to assign to the printer.|Yes|
