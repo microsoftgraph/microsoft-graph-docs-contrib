@@ -57,6 +57,7 @@ The following resources currently provide a `Retry-After` header:
 - [External item (Microsoft Search)](/graph/api/resources/externalitem?view=graph-rest-beta)
 - [Report](/graph/api/resources/report)
 - [Subscription](/graph/api/resources/subscription)
+- [Invitation](/graph/api/resources/invitation)
 
 For a broader discussion of throttling on the Microsoft Cloud, see [Throttling Pattern](https://docs.microsoft.com/azure/architecture/patterns/throttling).
 
@@ -164,6 +165,14 @@ The following limits apply to any request on `/reports`.
 | Any request (JSON, beta)  | 100 requests per 10 minutes  | n/a                        |
 
 The preceding limits apply individually to each report API. For example a request to Microsoft Teams user activity report API and a request to Outlook user activity report API within 10 minutes will count as 1 request out of 14 for each API, not 2 requests out of 14 for both.
+
+### Invitation manager service limits
+
+The following limits apply to any request on `/invitations`.
+
+| Operation                 | Limit per tenant             |
+|---------------------------|------------------------------|
+| Any operation             | 150 requests per 5 seconds   |
 
 <!-- { "blockType": "throttlinggenstart" } -->
 
