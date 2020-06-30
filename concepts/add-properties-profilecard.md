@@ -34,7 +34,7 @@ You can make the following attributes from Azure Active Directory (Azure AD) vis
 
 The following table shows how the Azure AD attributes correspond with properties of the Microsoft Graph [user](/graph/api/resources/user?view=graph-rest-beta) entity.
 
-|Attribute string|Microsoft Graph property|
+|Attribute string|User entity property|
 |:---------------|:----------|
 |UserPrincipalName|userPrincipalName |
 |Fax|faxNumber|
@@ -50,7 +50,7 @@ You can add any of these attributes to the profile card by configuring your tena
 
 ## Example
 
-An example is to display **Alias** on the profile card:
+The following example displays the `Alias` attribute on the profile card:
 
 ```http
         POST https://graph.microsoft.com/beta/organization/{tenantid}/settings/profileCardProperties
