@@ -10,7 +10,8 @@ const options = {
 
 const client = Client.init(options);
 
-let res = await client.api('/drives/{drive-id}/items/{item-id}/analytics')
-	.get();
+let res = await client.api('/connections/contosohr/items/TSP228082938')
+	.version('beta')
+	.delete();
 
 ```
