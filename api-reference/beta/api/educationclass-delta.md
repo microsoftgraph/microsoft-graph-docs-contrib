@@ -30,8 +30,7 @@ One of the following permissions is required to call this API. To learn more, in
 <!-- { "blockType": "ignored" } -->
 
 ```http
-POST /education/classes/{id}/delta
-POST /education/me/classes/{id}/delta
+GET /education/classes/delta
 ```
 
 ## Request headers
@@ -48,11 +47,14 @@ Do not supply a request body for this method.
 
 If successful, this method returns a `200 OK` response code and an [educationClass](../resources/educationclass.md) collection object in the response body.
 
+> [!IMPORTANT]
+> educationClass deltas do not include deleted classes.
+
 ## Example
 
 The following example shows how to call this API.
 
-##### Request
+### Request
 
 The following is an example of the request.
 
@@ -62,14 +64,14 @@ The following is an example of the request.
 }-->
 
 ```http
-POST https://graph.microsoft.com/v1.0/education/classes/{id}/delta
+GET https://graph.microsoft.com/beta/education/classes/delta
 ```
 
-##### Response
+### Response
 
-The following is an example of the response. 
+The following is an example of the response.
 
->**Note:** The response object shown here might be shortened for readability. All the properties will be returned from an actual call.
+> **Note:** The response object shown here might be shortened for readability. All the properties will be returned from an actual call.
 
 <!-- {
   "blockType": "response",
@@ -86,25 +88,18 @@ Content-length: 585
 {
   "value": [
     {
-      "displayName": "displayName-value",
-      "mailNickname": "mailNickname-value",
-      "description": "description-value",
-      "createdBy": {
-        "application": {
-          "displayName": "displayName-value",
-          "id": "id-value"
-        },
-        "device": {
-          "displayName": "displayName-value",
-          "id": "id-value"
-        },
-        "user": {
-          "displayName": "displayName-value",
-          "id": "id-value"
-        }
-      },
-      "classCode": "classCode-value",
-      "externalName": "externalName-value"
+      "classCode": "String",
+      "course": { "@odata.type": "microsoft.graph.educationCourse" },
+      "createdBy": { "@odata.type": "microsoft.graph.identitySet" },
+      "description": "String",
+      "displayName": "String",
+      "externalId": "String",
+      "externalName": "String",
+      "externalSource": "string",
+      "grade": "string",
+      "id": "String (identifier)",
+      "mailNickname": "String",
+      "term": { "@odata.type": "microsoft.graph.educationTerm" }
     }
   ]
 }

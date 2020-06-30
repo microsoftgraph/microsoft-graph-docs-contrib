@@ -7,7 +7,7 @@ author: vogtn
 
 # People-Picker component in the Microsoft Graph Toolkit
 
-You can use the `mgt-people-picker` web component to search for people and/or groups. By default, the component will search for all people and users in the organization, but you can change the behavior to also search for Groups, or only Groups. You can also filter the search to a specific group.
+You can use the `mgt-people-picker` web component to search for people and/or groups. By default, the component will search for all people and users in the organization, but you can change the behavior to also search for groups, or only groups. You can also filter the search to a specific group.
 
 ## Example
 
@@ -19,7 +19,7 @@ The following example shows the `mgt-people-picker` component. Start searching f
 
 ## Properties
 
-By default, the `mgt-people-picker` component fetches people from the `/me/people` and `/users` endpoint. Use the following attributes to change this behavior.
+By default, the `mgt-people-picker` component fetches people from the `/me/people` and `/users` endpoints. Use the following attributes to change this behavior.
 
 | Attribute | Property | Description                                                                                                                                                                            |
 | -------- | --------- | -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
@@ -88,7 +88,9 @@ mgt-people-picker {
 
     --dropdown-background-color: #1f1f1f; /* selection area background color */
     --dropdown-item-hover-background: #333d47; /* person background color on hover */
-
+    
+    --selected-person-background-color: #f1f1f1; /* person item background color */
+    
     --font-color: white; /* input area border focus color */
     --placeholder-default-color: #f1f1f1; /* placeholder text color default*/
     --placeholder-focus-color: rgba(255, 255, 255, 0.8); /* placeholder text focus color */
