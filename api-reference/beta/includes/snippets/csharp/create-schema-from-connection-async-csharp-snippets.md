@@ -13,17 +13,23 @@ var schema = new Schema
 	{
 		new Property
 		{
-			Name = "title",
+			Name = "ticketTitle",
 			Type = PropertyType.String,
 			IsSearchable = true,
-			IsRetrievable = true
+			IsRetrievable = true,
+			Labels = new List<Label>()
+			{
+				Label.Title
+			}
 		},
 		new Property
 		{
 			Name = "priority",
 			Type = PropertyType.String,
 			IsQueryable = true,
-			IsRetrievable = true
+			IsRetrievable = true,
+			IsRefinable = true,
+			IsSearchable = false
 		},
 		new Property
 		{
