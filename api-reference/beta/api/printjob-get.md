@@ -48,7 +48,7 @@ If successful, this method returns a `200 OK` response code and a [printJob](../
 
 ### Example 1: Get a print job
 
-##### Request
+#### Request
 The following is an example of a request to get a print job.
 
 # [HTTP](#tab/http)
@@ -73,7 +73,7 @@ GET https://graph.microsoft.com/beta/print/printers/{id}/jobs/{id}
 
 ---
 
-##### Response
+#### Response
 The following is an example of the response.
 >**Note:** The response object shown here might be shortened for readability. All the properties will be returned from an actual call.
 <!-- {
@@ -100,7 +100,7 @@ Content-length: 408
 
 ### Example 2: Get a print job and its associated document data
 
-##### Request
+#### Request
 The following is an example of a request to get a print job and its associated document data.
 
 # [HTTP](#tab/http)
@@ -114,7 +114,7 @@ GET https://graph.microsoft.com/beta/print/printers/86b6d420-7e6b-4797-a05c-af4e
 
 ---
 
-##### Response
+#### Response
 The following is an example of the response.
 >**Note:** The response object shown here might be shortened for readability. All the properties will be returned from an actual call.
 <!-- {
