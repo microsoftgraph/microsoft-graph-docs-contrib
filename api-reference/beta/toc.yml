@@ -10165,6 +10165,8 @@ items:
             href: api/synchronization-synchronizationjob-restart.md
           - name: Delete job
             href: api/synchronization-synchronizationjob-delete.md
+          - name: Provision on demand
+            href: api/synchronization-synchronizationjob-provision-on-demand.md
         - name: Schema
           href: resources/synchronization-synchronizationschema.md
           items:
