@@ -145,21 +145,55 @@ The following is an example of the response.
 ```http
 HTTP/1.1 200 OK
 Content-type: application/json
-Content-length: 643
+Content-length: 1688
 
 {
-  "@odata.context": "https://graph.microsoft.com/beta/$metadata#print/printers('c05f3726-0d4b-4aa1-8fe9-2eb981bb26fb')/jobs",
+  "@odata.context": "https://graph.microsoft.com/beta/$metadata#print/printers('86b6d420-7e6b-4797-a05c-af4e56cd81bd')/jobs(documents())",
   "value": [
     {
-      "id": "5182",
-      "createdDateTime": "2020-02-04T00:00:00.0000000Z",
-      "createdBy": {},
-      "status": {
-        "processingState": "completed",
-        "processingStateDescription": "The print job has completed successfully and no further processing will take place."
+      "id": "31216",
+      "createdDateTime": "2020-06-26T04:20:06.5715544Z",
+      "createdBy": {
+        "id": "",
+        "displayName": "",
+        "ipAddress": null,
+        "userPrincipalName": "",
+        "oDataType": null
       },
-      "documents@odata.context": "https://graph.microsoft.com/beta/$metadata#print/printers('c05f3726-0d4b-4aa1-8fe9-2eb981bb26fb')/jobs('5182')/documents",
-      "documents": []
+      "status": {
+        "processingState": "aborted",
+        "processingStateDescription": "The print job has been aborted by a user or the printer and no further processing will take place."
+      },
+      "documents@odata.context": "https://graph.microsoft.com/beta/$metadata#print/printers('86b6d420-7e6b-4797-a05c-af4e56cd81bd')/jobs('31216')/documents",
+      "documents": [
+        {
+          "id": "ca96c367-c3ad-478a-bbce-fbd1cd856e73",
+          "displayName": "",
+          "contentType": "application/oxps",
+          "size": 276604,
+          "configuration": {
+            "quality": "medium",
+            "dpi": 300,
+            "feedDirection": null,
+            "orientation": "landscape",
+            "duplexMode": "oneSided",
+            "copies": 2,
+            "colorMode": "color",
+            "inputBin": null,
+            "outputBin": null,
+            "mediaSize": null,
+            "mediaType": null,
+            "finishings": [],
+            "pagesPerSheet": null,
+            "multipageLayout": "clockwiseFromTopLeft",
+            "collate": true,
+            "scaling": null,
+            "fitPdfToPage": null,
+            "margin": null,
+            "pageRanges": []
+          }
+        }
+      ]
     }
   ]
 }
