@@ -7,4 +7,4 @@ nuget.exe
 apidoc.exe
 *.dll
 .vs/
-graph/api/resources/onpremisesextensionattributes?view=graph-rest-1.0
+.DS_Store
