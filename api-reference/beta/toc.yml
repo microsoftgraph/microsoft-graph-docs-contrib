@@ -39,7 +39,7 @@ items:
       - name: Overview
         href: /graph/webhooks?context=graph/api/beta
       - name: Tutorial
-        href: /graph/tutorials/change-notifications
+        href: /learn/modules/msgraph-changenotifications-trackchanges
       - name: Missing Outlook notifications (preview)
         href: /graph/webhooks-outlook-authz?context=graph/api/beta
       - name: Notifications with resource data (preview)
@@ -401,7 +401,7 @@ items:
           href: api/planneruser-list-tasks.md
         - name: Update settings
           href: api/planneruser-update.md
-      - name: Preferred languages and regional formats
+      - name: Preferred languages and regional formats (preview)
         href: resources/regionalandlanguagesettings.md
         items:
         - name: Get
@@ -1160,11 +1160,18 @@ items:
             href: api/printjob-startprintjob.md
           - name: Cancel
             href: api/printjob-cancelprintjob.md
+        - name: Print operation
+          href: resources/printoperation.md
+          items:
+            - name: Get
+              href: api/printoperation-get.md
         - name: Printer
           href: resources/printer.md
           items:
           - name: List
             href: api/print-list-printers.md
+          - name: Create
+            href: api/printer-create.md
           - name: Get
             href: api/printer-get.md
           - name: Delete
@@ -9680,7 +9687,7 @@ items:
                 href: api/publishedresource-post-agentgroups.md
               - name: Remove from agent group
                 href: api/publishedresource-delete-agentgroups.md
-          - name: connector
+          - name: Connector
             href: resources/connector.md
             items:
               - name: List
@@ -9691,11 +9698,13 @@ items:
                 href: api/connector-list-memberof.md 
               - name: Add connector to connectorGroup
                 href: api/connector-post-memberof.md
-          - name: connector group
+          - name: Connector group
             href: resources/connectorgroup.md
             items:
               - name: List                 
                 href: api/connectorgroup-list.md
+              - name: Create
+                href: api/connectorgroup-post.md               
               - name: Get
                 href: api/connectorgroup-get.md 
               - name: Update
@@ -10072,26 +10081,33 @@ items:
             href: api/serviceprincipal-delete-owners.md
         - name: Policies
           items:
-          - name: List assigned policies
-            href: api/policy-list-assigned.md
-          - name: Assign claimsMappingPolicy
-            href: api/serviceprincipal-post-claimsmappingpolicies.md
-          - name: List claimsMappingPolicies]
-            href: api/serviceprincipal-list-claimsmappingpolicies.md
-          - name: Remove claimsMappingPolicy
-            href: api/serviceprincipal-delete-claimsmappingpolicies.md
-          - name: Assign homeRealmDiscoveryPolicy
-            href: api/serviceprincipal-post-homerealmdiscoverypolicies.md
-          - name: List homeRealmDiscoveryPolicies
-            href: api/serviceprincipal-list-homerealmdiscoverypolicies.md
-          - name: Remove homeRealmDiscoveryPolicy
-            href: api/serviceprincipal-delete-homerealmdiscoverypolicies.md
-          - name: Assign tokenLifetimePolicy
-            href: api/application-post-tokenlifetimepolicies.md
-          - name: List tokenLifetimePolicies
-            href: api/application-list-tokenlifetimepolicies.md
-          - name: Remove tokenLifetimePolicy
-            href: api/application-delete-tokenlifetimepolicies.md
+          - name: Claims mapping policy
+            href: resources/claimsmappingpolicy.md
+            items:
+            - name: Assign claims mapping policies
+              href: api/serviceprincipal-post-claimsmappingpolicies.md
+            - name: List claims mapping policies
+              href: api/serviceprincipal-list-claimsmappingpolicies.md
+            - name: Remove claims mapping policies
+              href: api/serviceprincipal-delete-claimsmappingpolicies.md
+          - name: Home realm discovery policy
+            href: resources/homerealmdiscoverypolicy.md
+            items:
+            - name: Assign home realm discovery policies
+              href: api/serviceprincipal-post-homerealmdiscoverypolicies.md
+            - name: List home realm discovery policies
+              href: api/serviceprincipal-list-homerealmdiscoverypolicies.md
+            - name: Remove home realm discovery policies
+              href: api/serviceprincipal-delete-homerealmdiscoverypolicies.md
+          - name: Token lifetime policy
+            href: resources/tokenlifetimepolicy.md
+            items:
+            - name: Assign token lifetime policies
+              href: api/application-post-tokenlifetimepolicies.md
+            - name: List token lifetime policies
+              href: api/application-list-tokenlifetimepolicies.md
+            - name: Remove token lifetime policies
+              href: api/application-delete-tokenlifetimepolicies.md
         - name: Single sign on
           items:
           - name: Create password single sign on credentials
@@ -10842,7 +10858,7 @@ items:
             items:
             - name: Get usage summary
               href: api/reportroot-getcredentialusagesummary.md
-      - name: Office 365 usage reports
+      - name: Microsoft 365 usage reports
         items:
         - name: Overview
           href: resources/report.md
@@ -10895,7 +10911,7 @@ items:
             href: api/reportroot-getmailboxusagequotastatusmailboxcounts.md
           - name: Get  storage
             href: api/reportroot-getmailboxusagestorage.md
-        - name: Office 365 activations
+        - name: Microsoft 365 activations
           href: resources/office-365-activations-reports.md
           items:
           - name: Get user detail
@@ -10904,7 +10920,7 @@ items:
             href: api/reportroot-getoffice365activationcounts.md
           - name: Get user counts
             href: api/reportroot-getoffice365activationsusercounts.md
-        - name: Office 365 active users
+        - name: Microsoft 365 active users
           href: resources/office-365-active-users-reports.md
           items:
           - name: Get user detail
@@ -10913,7 +10929,7 @@ items:
             href: api/reportroot-getoffice365activeusercounts.md
           - name: Get services user counts
             href: api/reportroot-getoffice365servicesusercounts.md
-        - name: Office 365 groups activity
+        - name: Microsoft 365 groups activity
           href: resources/office-365-groups-activity-reports.md
           items:
           - name: Get group detail
@@ -11087,11 +11103,13 @@ items:
           items:
           - name: External item
             href: resources/externalitem.md
-          - name: Create external item
+          - name: Create
             href: api/externalconnection-put-items.md
-          - name: Update external item
+          - name: Get
+            href: api/externalitem-get.md
+          - name: Update
             href: api/externalitem-update.md
-          - name: Delete external item
+          - name: Delete
             href: api/externalitem-delete.md
     - name: Security
       displayname: Security API, Microsoft Graph Security API

@@ -22,6 +22,7 @@ After a connector group is created, you can add or move connectors to the connec
 | Method		   | Return Type	|Description|
 |:---------------|:--------|:----------|
 |[List connectorGroup](../api/connectorgroup-list.md) |[connectorGroup](connectorgroup.md) collection | Retrieve a list of connectorGroup objects. |
+|[Create connectorGroup](../api/connectorgroup-post.md) |[connectorGroup](connectorgroup.md) collection | Create a connectorGroup object. |
 |[Get connectorGroup](../api/connectorgroup-get.md) | [connectorGroup](connectorgroup.md) | Read properties and relationships of a connectorGroup object. |
 |[Update connectorGroup](../api/connectorgroup-update.md) | [connectorGroup](connectorgroup.md)| Update a connectorGroup object. |
 |[Delete connectorGroup](../api/connectorgroup-delete.md) | None | Delete a connectorGroup object. All connectors must be removed from the connectorGroup before a connectorGroup can be deleted. |
