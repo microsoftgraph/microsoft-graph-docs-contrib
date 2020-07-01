@@ -10081,24 +10081,33 @@ items:
             href: api/serviceprincipal-delete-owners.md
         - name: Policies
           items:
-          - name: Assign claimsMappingPolicy
-            href: api/serviceprincipal-post-claimsmappingpolicies.md
-          - name: List claimsMappingPolicies
-            href: api/serviceprincipal-list-claimsmappingpolicies.md
-          - name: Remove claimsMappingPolicy
-            href: api/serviceprincipal-delete-claimsmappingpolicies.md
-          - name: Assign homeRealmDiscoveryPolicy
-            href: api/serviceprincipal-post-homerealmdiscoverypolicies.md
-          - name: List homeRealmDiscoveryPolicies
-            href: api/serviceprincipal-list-homerealmdiscoverypolicies.md
-          - name: Remove homeRealmDiscoveryPolicy
-            href: api/serviceprincipal-delete-homerealmdiscoverypolicies.md
-          - name: Assign tokenLifetimePolicy
-            href: api/application-post-tokenlifetimepolicies.md
-          - name: List tokenLifetimePolicies
-            href: api/application-list-tokenlifetimepolicies.md
-          - name: Remove tokenLifetimePolicy
-            href: api/application-delete-tokenlifetimepolicies.md
+          - name: Claims mapping policy
+            href: resources/claimsmappingpolicy.md
+            items:
+            - name: Assign claims mapping policies
+              href: api/serviceprincipal-post-claimsmappingpolicies.md
+            - name: List claims mapping policies
+              href: api/serviceprincipal-list-claimsmappingpolicies.md
+            - name: Remove claims mapping policies
+              href: api/serviceprincipal-delete-claimsmappingpolicies.md
+          - name: Home realm discovery policy
+            href: resources/homerealmdiscoverypolicy.md
+            items:
+            - name: Assign home realm discovery policies
+              href: api/serviceprincipal-post-homerealmdiscoverypolicies.md
+            - name: List home realm discovery policies
+              href: api/serviceprincipal-list-homerealmdiscoverypolicies.md
+            - name: Remove home realm discovery policies
+              href: api/serviceprincipal-delete-homerealmdiscoverypolicies.md
+          - name: Token lifetime policy
+            href: resources/tokenlifetimepolicy.md
+            items:
+            - name: Assign token lifetime policies
+              href: api/application-post-tokenlifetimepolicies.md
+            - name: List token lifetime policies
+              href: api/application-list-tokenlifetimepolicies.md
+            - name: Remove token lifetime policies
+              href: api/application-delete-tokenlifetimepolicies.md
         - name: Single sign on
           items:
           - name: Create password single sign on credentials
