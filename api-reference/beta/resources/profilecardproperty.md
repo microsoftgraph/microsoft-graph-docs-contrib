@@ -15,10 +15,14 @@ Represents an attribute of a user on the Microsoft 365 profile card for an organ
 
 This is an Azure Active Directory (Azure AD) attribute, such as `Alias` or `UserPrincipalName`, or a custom attribute. For a custom attribute, an administrator can define an `en-us` default display name string and a set of alternative translations for the languages that they support in their organization.
 
+For more information on adding properties to the profile card for an organization, see customize the profile card.
+
 ## Methods
 
 | Method       | Return Type | Description |
 |:-------------------------------------------------------------|:----------------------------------------------|:-----------------------------------------------------------------|
+| [List](../api/profilecardproperty-list.md) | [profileCardProperty](profilecardproperty.md) | Read the properties and relationships of a **profileCardProperty** object. |
+| [Create](../api/profilecardproperty-post.md) | [profileCardProperty](profilecardproperty.md) | Read the properties and relationships of a **profileCardProperty** object. |
 | [Get](../api/profilecardproperty-get.md) | [profileCardProperty](profilecardproperty.md) | Read the properties and relationships of a **profileCardProperty** object. |
 | [Update](../api/profilecardproperty-update.md)               | [profileCardProperty](profilecardproperty.md) | Update a **profileCardProperty** object.                               |
 | [Delete](../api/profilecardproperty-delete.md)               | None                                          | Delete a **profileCardProperty** object.                               |

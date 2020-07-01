@@ -48,7 +48,8 @@ The following is a JSON representation of the resource.
 
 ```json
 {
-  "id": "String (identifier)"
+  "id": "String (identifier)",
+  "profileCardProperties": [{"@odata.type": "microsoft.graph.profileCardProperty"}]
 }
 ```
 

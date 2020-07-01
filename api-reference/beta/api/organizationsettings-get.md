@@ -13,7 +13,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Retrieve the properties and relationships of an [organizationSettings](../resources/organizationsettings.md) object when signed in as a tenant administrator.
+Retrieve the properties and relationships of an [organizationSettings](../resources/organizationsettings.md) object.
 
 ## Permissions
 
@@ -85,7 +85,23 @@ HTTP/1.1 200 OK
 Content-type: application/json
 
 {
-  "id": "string"
+  "id": "345233-676277-644334-445677-334556",
+  "profileCardProperties": [
+    {
+      "directoryPropertyName": "CustomAttribute1",
+      "annotations": [
+        {
+          "displayName": "Cost Center",
+          "localizations": [
+            {
+              "languageTag": "ru-RU",
+              "displayName": "центр затрат"
+            }
+          ]
+        }
+      ]
+    }
+  ]
 }
 ```
 

@@ -9753,12 +9753,18 @@ items:
         items:
         - name: Get org settings
           href: api/organizationSettings-get.md
-        - name: Profile Card Property
+        - name: Profile card property
           items:
-          - name: Get profile card properties
+          - name: List 
             href: api/organizationsettings-list-profilecardproperties.md
-          - name: Create profile card properties
-            href: api/organizationsettings-post-profilecardproperties.md          
+          - name: Create
+            href: api/organizationsettings-post-profilecardproperties.md  
+          - name: Get
+            href: api/organizationsettings-get-profilecardproperties.md    
+          - name: Update
+            href: api/organizationsettings-update-profilecardproperties.md  
+          - name: Delete
+            href: api/organizationsettings-delete-profilecardproperties.md        
         - name: Org hierarchy
           href: resources/directoryobject.md
           items:

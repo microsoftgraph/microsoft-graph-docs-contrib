@@ -15,6 +15,8 @@ Namespace: microsoft.graph
 
 Create a new [profileCardProperty](../resources/profilecardproperty.md) for an organization. The new property is identified by its **directoryPropertyName** property.
 
+For more information on adding properties to the profile card for an organization, see customize the profile card.
+
 ## Permissions
 
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
@@ -25,7 +27,7 @@ One of the following permissions is required to call this API. To learn more, in
 | Delegated (personal Microsoft account) | Not supported.                              |
 | Application                            | Not supported.                              |
 
->**Note:** The **profileCardProperties** object requires the signed-in user to have a Tenant administrator or Global administrator role to run successfully.
+>**Note:** Using delegated permissions for this operation requires the signed-in user to have a tenant administrator or global administrator role.
 
 ## HTTP request
 
