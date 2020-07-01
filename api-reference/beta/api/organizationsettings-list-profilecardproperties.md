@@ -86,14 +86,18 @@ HTTP/1.1 200 OK
 Content-type: application/json
 
 {
-  "directoryPropertyName": "CustomAttribute1",
-  "annotations": [
+  "value": [
     {
-      "displayName": "Cost Center",
-      "localizations": [
+      "directoryPropertyName": "CustomAttribute1",
+      "annotations": [
         {
-          "languageTag": "ru-RU",
-          "displayName": "центр затрат"
+          "displayName": "Cost Center",
+          "localizations": [
+            {
+              "languageTag": "ru-RU",
+              "displayName": "центр затрат"
+            }
+          ]
         }
       ]
     }
