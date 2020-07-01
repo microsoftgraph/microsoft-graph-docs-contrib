@@ -36,7 +36,7 @@ GET /print/printers/{id}/jobs
 This method supports some of the OData query parameters to help customize the response. For general information, see [OData query parameters](/graph/query-parameters).
 
 ### Exceptions
-Some operators are not supported: `$count`, `$search`, `$filter`.
+Some operators are not supported: `$count`, `$orderby`, `$search`, `$filter`.
 
 ## Request headers
 | Name      |Description|
@@ -47,12 +47,9 @@ Some operators are not supported: `$count`, `$search`, `$filter`.
 Do not supply a request body for this method.
 ## Response
 If successful, this method returns a `200 OK` response code and collection of [printJob](../resources/printjob.md) objects in the response body.
-## Examples
-
-### Example 1: Get basic job list
-
+## Example
 ##### Request
-The following is an example of a request to list print jobs with their basic metadata.
+The following is an example of the request.
 
 # [HTTP](#tab/http)
 <!-- {
@@ -101,99 +98,6 @@ Content-length: 461
         "processingState": "completed",
         "processingStateDescription": "The print job has completed successfully and no further processing will take place."
       }
-    }
-  ]
-}
-```
-
-### Example 2: Get job list with document details
-
-##### Request
-The following is an example of a request to list print jobs and the document data associated with them.
-
-# [HTTP](#tab/http)
-<!-- {
-  "blockType": "request",
-  "name": "get_jobs"
-}-->
-```msgraph-interactive
-GET https://graph.microsoft.com/beta/print/printers/{id}/jobs?$expand=documents
-```
-# [C#](#tab/csharp)
-[!INCLUDE [sample-code](../includes/snippets/csharp/get-jobs-csharp-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [JavaScript](#tab/javascript)
-[!INCLUDE [sample-code](../includes/snippets/javascript/get-jobs-javascript-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [Objective-C](#tab/objc)
-[!INCLUDE [sample-code](../includes/snippets/objc/get-jobs-objc-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
----
-
-##### Response
-The following is an example of the response.
->**Note:** The response object shown here might be shortened for readability. All the properties will be returned from an actual call.
-<!-- {
-  "blockType": "response",
-  "truncated": true,
-  "@odata.type": "microsoft.graph.printJob",
-  "isCollection": true
-} -->
-```http
-HTTP/1.1 200 OK
-Content-type: application/json
-Content-length: 1688
-
-{
-  "@odata.context": "https://graph.microsoft.com/beta/$metadata#print/printers('86b6d420-7e6b-4797-a05c-af4e56cd81bd')/jobs(documents())",
-  "value": [
-    {
-      "id": "31216",
-      "createdDateTime": "2020-06-26T04:20:06.5715544Z",
-      "createdBy": {
-        "id": "",
-        "displayName": "",
-        "ipAddress": null,
-        "userPrincipalName": "",
-        "oDataType": null
-      },
-      "status": {
-        "processingState": "aborted",
-        "processingStateDescription": "The print job has been aborted by a user or the printer and no further processing will take place."
-      },
-      "documents@odata.context": "https://graph.microsoft.com/beta/$metadata#print/printers('86b6d420-7e6b-4797-a05c-af4e56cd81bd')/jobs('31216')/documents",
-      "documents": [
-        {
-          "id": "ca96c367-c3ad-478a-bbce-fbd1cd856e73",
-          "displayName": "",
-          "contentType": "application/oxps",
-          "size": 276604,
-          "configuration": {
-            "quality": "medium",
-            "dpi": 300,
-            "feedDirection": null,
-            "orientation": "landscape",
-            "duplexMode": "oneSided",
-            "copies": 2,
-            "colorMode": "color",
-            "inputBin": null,
-            "outputBin": null,
-            "mediaSize": null,
-            "mediaType": null,
-            "finishings": [],
-            "pagesPerSheet": null,
-            "multipageLayout": "clockwiseFromTopLeft",
-            "collate": true,
-            "scaling": null,
-            "fitPdfToPage": null,
-            "margin": null,
-            "pageRanges": []
-          }
-        }
-      ]
     }
   ]
 }
