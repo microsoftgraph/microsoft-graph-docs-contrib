@@ -81,16 +81,21 @@ Prefer: respond-async
   "baseType": "microsoft.graph.externalItem",
   "properties": [
     {
-      "name": "title",
+      "name": "ticketTitle",
       "type": "String",
       "isSearchable": "true",
-      "isRetrievable": "true"
+      "isRetrievable": "true",
+      "labels": [
+        "title"
+      ]
     },
     {
       "name": "priority",
       "type": "String",
       "isQueryable": "true",
-      "isRetrievable": "true"
+      "isRetrievable": "true",
+      "isRefinable": "true",
+      "isSearchable": "false"
     },
     {
       "name": "assignee",

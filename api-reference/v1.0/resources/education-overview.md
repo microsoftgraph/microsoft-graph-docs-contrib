@@ -15,25 +15,24 @@ The education APIs include rostering resources and assignments resources that yo
 
 ## Authorization
 
-To call the education APIs in Microsoft Graph, your app will need to acquire an access token. For details about access tokens, see [Get access tokens to call Microsoft Graph](https://developer.microsoft.com/graph/docs/concepts/auth_overview). Your app will also need the appropriate permissions. For more information, see [Education permissions](/graph/permissions-reference#education-permissions). 
+To call the education APIs in Microsoft Graph, your app will need to acquire an access token. For details about access tokens, see [Get access tokens to call Microsoft Graph](https://developer.microsoft.com/graph/docs/concepts/auth_overview). Your app will also need the appropriate permissions. For more information, see [Education permissions](/graph/permissions-reference#education-permissions).
 
-### App permissions to enable school IT admins to consent 
+### App permissions to enable school IT admins to consent
 
 To deploy apps that are integrated with the Education APIs in Microsoft Graph, school IT admins must first grant consent to the permissions requested by the app. This consent has to be granted only once, unless the permissions change. After the admin consents, the app is provisioned for all users in the tenant.
 
 To show a consent dialog box, use the following REST call.
 
-```
+``` http
 GET https://login.microsoftonline.com/{tenant}/adminconsent?
 client_id={clientId}&state=12345&redirect_uri={redirectUrl}
 ```
 
-|Parameter|Description|
-|:--------|:----------|
-|Tenant|Tenant ID of the school. Use the full ID, which includes onmicrosoft.com.|
-|clientId|Client ID of the app.|
-|redirectUrl|App redirect URL.|
-
+| Parameter   | Description                                                               |
+| :---------- | :------------------------------------------------------------------------ |
+| Tenant      | Tenant ID of the school. Use the full ID, which includes onmicrosoft.com. |
+| clientId    | Client ID of the app.                                                     |
+| redirectUrl | App redirect URL.                                                         |
 
 ## Rostering
 
@@ -55,7 +54,7 @@ The rostering APIs provide the following key resources:
 
 The rostering APIs support the following scenarios:
 
-- [List all schools](../api/educationroot-list-schools.md) 
+- [List all schools](../api/educationroot-list-schools.md)
 - [List schools in which a class is taught](../api/educationclass-list-schools.md)
 - [List schools for a user](../api/educationuser-list-schools.md)
 - [Get all classes](../api/educationroot-list-classes.md)
@@ -63,18 +62,19 @@ The rostering APIs support the following scenarios:
 - [List classes for a user](../api/educationuser-list-classes.md)
 - [Add classes to a school](../api/educationschool-post-classes.md)
 - [Get students and teachers for a class](../api/educationclass-list-members.md)
-- [Add members to a class](../api/educationclass-post-members.md) 
+- [Add members to a class](../api/educationclass-post-members.md)
 - [List teachers for a class](../api/educationclass-list-teachers.md)
 - [Get users in a school](../api/educationschool-list-users.md)
 
 <!-- Should you list delete scenarios here as well? -->
 
 ## What's new
+
 Find out about the [latest new features and updates](/graph/whats-new-overview) for this API set.
 
 ## Next steps
+
 Use the Microsoft Graph education APIs to build education solutions that access school rosters. To learn more:
 
 - Explore the resources and methods that are most helpful to your scenario.
 - Try the API in the [Graph Explorer](https://developer.microsoft.com/graph/graph-explorer).
-
