@@ -19,7 +19,8 @@ Use the [profileCardProperty] (/graph/api/resources/profilecardproperty?view=gra
 
 Additional properties will display in the **Contact** section of the profile card in Microsoft 365.
 
-Operations on the **profileCardProperty** resource that use delegated permissions requires the signed-in user to have a tenant administrator or global administrator role.
+> [!NOTE]
+>Operations on the **profileCardProperty** resource that use delegated permissions requires the signed-in user to have a tenant administrator or global administrator role.
 
 ## Make additional attributes visible
 
@@ -53,12 +54,12 @@ You can add any of these attributes to the profile card by configuring your tena
 The following example displays the `Alias` attribute on the profile card:
 
 ```http
-        POST https://graph.microsoft.com/beta/organization/{tenantid}/settings/profileCardProperties
-        Content-Type: application/json
+POST https://graph.microsoft.com/beta/organization/{tenantid}/settings/profileCardProperties
+Content-Type: application/json
 
-        {
-        "directoryPropertyName": "Alias"
-        }
+{
+  "directoryPropertyName": "Alias"
+}
 ```
 
 If successful, the response returns a `201 OK` response code and a **profileCardProperty** object in the response body. The value for the `Alias` attribute  would be displayed on a user's profile card.  
@@ -67,10 +68,10 @@ If successful, the response returns a `201 OK` response code and a **profileCard
 HTTP/1.1 201 OK
 Content-type: application/json
 
-            {
-              "directoryPropertyName": "Alias",
-              "annotations": []
-            }
+{
+  "directoryPropertyName": "Alias",
+  "annotations": []
+}
 ```
 
 ## Adding custom attributes
@@ -109,21 +110,21 @@ The following example adds the first Azure AD custom attribute to the profile ca
 POST https://graph.microsoft.com/beta/organization/{tenantid}/settings/profileCardProperties
 Content-Type: application/json
 
-      {
-        "directoryPropertyName": "customAttribute1",
-        "annotations": [
-          {
-            "displayName": "Cost center",
-            "localizations": [
-              {
-                "languageTag": "de-at",
-                "displayName": "Kostenstelle"
-              }
-            ]
-          }
-        ]
-      }
-  ```
+{
+  "directoryPropertyName": "customAttribute1",
+  "annotations": [
+    {
+      "displayName": "Cost center",
+      "localizations": [
+        {
+          "languageTag": "de-at",
+          "displayName": "Kostenstelle"
+        }
+      ]
+    }
+  ]
+}
+```
 
 Enter the language code in the form *ll-cc*, where *ll* is the language code, and *cc* the country code. For example, for German–Austria, enter the country code de-at.
 If a language is not supported, the property name will be shown with the default value.  
@@ -134,20 +135,20 @@ If successful, the response returns a `201 OK` response code and a **profileCard
 HTTP/1.1 201 OK
 Content-type: application/json
 
-            {
-              "directoryPropertyName": "customAttribute1",
-              "annotations": [
-                {
-                  "displayName": "Cost center",
-                  "localizations": [
-                      {
-                          "languageTag": "de-at",
-                          "displayName": "Kostenstelle"
-                      }
-                    ]
-                  }
-                ]
-              }
+{
+  "directoryPropertyName": "customAttribute1",
+  "annotations": [
+    {
+      "displayName": "Cost center",
+      "localizations": [
+        {
+          "languageTag": "de-at",
+          "displayName": "Kostenstelle"
+        }
+      ]
+    }
+  ]
+}
 ```
 
 ## See also
