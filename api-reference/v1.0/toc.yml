@@ -39,7 +39,7 @@ items:
       - name: Overview
         href: /graph/webhooks?context=graph/api/1.0
       - name: Tutorial
-        href: /graph/tutorials/change-notifications
+        href: /learn/modules/msgraph-changenotifications-trackchanges
       - name: Missing Outlook notifications (preview)
         href: /graph/webhooks-outlook-authz?context=graph/api/1.0
     - name: Change tracking
@@ -814,6 +814,24 @@ items:
             href: api/place-get.md
           - name: Update place
             href: api/place-update.md
+    - name: Change notifications
+      displayName: Webhooks, Outlook mail, Outlook calendar, Outlook contacts, Outlook contact, People, Microsoft Teams, Teams, OneDrive, OneDrive for Business, OneDrive business, OneDrive personal, SharePoint, Security, Users, Groups
+      items:
+      - name: Overview
+        href: resources/webhooks.md
+      - name: Subscription
+        href: resources/subscription.md
+        items:
+        - name: List subscription
+          href: api/subscription-list.md
+        - name: Get subscription
+          href: api/subscription-get.md
+        - name: Create subscription
+          href: api/subscription-post-subscriptions.md
+        - name: Update subscription
+          href: api/subscription-update.md
+        - name: Delete subscription
+          href: api/subscription-delete.md
     - name: Cloud communications
       displayName: Cloud communications
       items:
@@ -877,6 +895,24 @@ items:
           href: api/onlinemeeting-get.md
         - name: Delete
           href: api/onlinemeeting-delete.md
+        - name: Create or get
+          href: api/onlinemeeting-createorget.md
+      - name: Call records
+        items:
+        - name: Overview
+          href: resources/callrecords-api-overview.md
+        - name: Call record
+          items:
+          - name: Call record
+            href: resources/callrecords-callrecord.md
+          - name: Get call record
+            href: api/callrecords-callrecord-get.md
+        - name: Session
+          items:
+          - name: Session
+            href: resources/callrecords-session.md
+          - name: List sessions
+            href: api/callrecords-session-list.md
     - name: Cross-device experiences
       displayName: Project Rome
       items:
@@ -3265,6 +3301,34 @@ items:
           href: api/educationuser-get.md
         - name: Delete user
           href: api/educationuser-delete.md
+    - name: Extensions
+      items:
+      - name: Open extensions
+        href: resources/opentypeextension.md
+        displayname: Outlook calendar, Groups, Outlook mail, Outlook contacts, Outlook contact, People, Users
+        items:
+        - name: Create open extension
+          href: api/opentypeextension-post-opentypeextension.md
+        - name: Get open extension
+          href: api/opentypeextension-get.md
+        - name: Update open extension
+          href: api/opentypeextension-update.md
+        - name: Delete open extension
+          href: api/opentypeextension-delete.md
+      - name: Schema extensions
+        href: resources/schemaextension.md
+        displayname: Outlook calendar, Groups, Outlook mail, Outlook contacts, Outlook contact, People, Users
+        items:
+        - name: List schema extensions
+          href: api/schemaextension-list.md
+        - name: Create schema extension
+          href: api/schemaextension-post-schemaextensions.md
+        - name: Get schema extension
+          href: api/schemaextension-get.md
+        - name: Update schema extension
+          href: api/schemaextension-update.md
+        - name: Delete schema extension
+          href: api/schemaextension-delete.md 
     - name: Files
       displayName: OneDrive, OneDrive for Business, OneDrive business, OneDrive personal, SharePoint
       items:
@@ -3306,6 +3370,8 @@ items:
           href: api/driveitem-update.md
         - name: Delete item
           href: api/driveitem-delete.md
+        - name: Restore item
+          href: api/driveitem-restore.md
         - name: Move item
           href: api/driveitem-move.md
         - name: Copy item
@@ -3445,6 +3511,19 @@ items:
         items:
         - name: Get data policy operation
           href: api/datapolicyoperation-get.md
+      - name: Delegated permission grants
+        href: resources/oauth2permissiongrant.md
+        items:
+        - name: List
+          href: api/oauth2permissiongrant-list.md
+        - name: Create
+          href: api/oauth2permissiongrant-post.md
+        - name: Get
+          href: api/oauth2permissiongrant-get.md
+        - name: Update
+          href: api/oauth2permissiongrant-update.md
+        - name: Delete
+          href: api/oauth2permissiongrant-delete.md
       - name: Deleted items
         href: resources/directory.md
         items:
@@ -3559,6 +3638,31 @@ items:
           href: api/groupsettingtemplate-list.md
         - name: Get group setting template
           href: api/groupsettingtemplate-get.md
+      - name: Identity protection
+        href: resources/identityprotectionroot.md
+        items:
+        - name: Risk detection
+          href: resources/riskdetection.md
+          items:
+            - name: List
+              href: api/riskdetection-list.md
+            - name: Get
+              href: api/riskdetection-get.md
+        - name: Risky user
+          href: resources/riskyuser.md
+          items:
+          - name: List risky users
+            href: api/riskyuser-list.md
+          - name: Get risky user
+            href: api/riskyuser-get.md
+          - name: List history
+            href: api/riskyuser-list-history.md
+          - name: Get history
+            href: api/riskyuser-get-riskyuserhistoryitem.md
+          - name: Confirm compromised
+            href: api/riskyuser-confirmcompromised.md
+          - name: Dismiss
+            href: api/riskyuser-dismiss.md
       - name: Identity provider
         href: resources/identityprovider.md
         items:
@@ -3599,19 +3703,6 @@ items:
         items:
         - name: Create invitation
           href: api/invitation-post.md
-      - name: Delegated permission grants
-        href: resources/oauth2permissiongrant.md
-        items:
-        - name: List
-          href: api/oauth2permissiongrant-list.md
-        - name: Create
-          href: api/oauth2permissiongrant-post.md
-        - name: Get
-          href: api/oauth2permissiongrant-get.md
-        - name: Update
-          href: api/oauth2permissiongrant-update.md
-        - name: Delete
-          href: api/oauth2permissiongrant-delete.md
       - name: Organization
         href: resources/organization.md
         items:
@@ -3679,6 +3770,21 @@ items:
             href: api/homerealmdiscoverypolicy-delete.md
           - name: List applied to applications
             href: api/homerealmdiscoverypolicy-list-appliesto.md
+        - name: Claims mapping policy
+          href: resources/claimsmappingpolicy.md
+          items:
+          - name: Create
+            href: api/claimsmappingpolicy-post-claimsmappingpolicies.md
+          - name: List
+            href: api/claimsmappingpolicy-list.md
+          - name: Get
+            href: api/claimsmappingpolicy-get.md
+          - name: Update
+            href: api/claimsmappingpolicy-update.md
+          - name: Delete
+            href: api/claimsmappingpolicy-delete.md
+          - name: List applied to applications
+            href: api/claimsmappingpolicy-list-appliesto.md
         - name: Token issuance policy
           href: resources/tokenissuancepolicy.md
           items:
@@ -3777,6 +3883,32 @@ items:
             href: api/serviceprincipal-post-owners.md
           - name: Remove
             href: api/serviceprincipal-delete-owners.md
+        - name: Policies
+          items:
+          - name: Assign claimsMappingPolicy
+            href: api/serviceprincipal-post-claimsmappingpolicies.md
+          - name: List claimsMappingPolicies
+            href: api/serviceprincipal-list-claimsmappingpolicies.md
+          - name: Remove claimsMappingPolicy
+            href: api/serviceprincipal-delete-claimsmappingpolicies.md
+          - name: Assign homeRealmDiscoveryPolicy
+            href: api/serviceprincipal-post-homerealmdiscoverypolicies.md
+          - name: List homeRealmDiscoveryPolicies
+            href: api/serviceprincipal-list-homerealmdiscoverypolicies.md
+          - name: Remove homeRealmDiscoveryPolicy
+            href: api/serviceprincipal-delete-homerealmdiscoverypolicies.md
+          - name: Assign tokenIssuancePolicy
+            href: api/application-post-tokenissuancepolicies.md
+          - name: List tokenIssuancePolicies
+            href: api/application-list-tokenissuancepolicies.md
+          - name: Remove tokenIssuancePolicy
+            href: api/application-delete-tokenissuancepolicies.md
+          - name: Assign tokenLifetimePolicy
+            href: api/application-post-tokenlifetimepolicies.md
+          - name: List tokenLifetimePolicies
+            href: api/application-list-tokenlifetimepolicies.md
+          - name: Remove tokenLifetimePolicy
+            href: api/application-delete-tokenlifetimepolicies.md
       - name: Subscribed SKU
         href: resources/subscribedsku.md
         items:
@@ -4199,7 +4331,7 @@ items:
           href: api/reportroot-getmailboxusagequotastatusmailboxcounts.md
         - name: Get  storage
           href: api/reportroot-getmailboxusagestorage.md
-      - name: Office 365 activations
+      - name: Microsoft 365 activations
         href: resources/office-365-activations-reports.md
         items:
         - name: Get user detail
@@ -4208,7 +4340,7 @@ items:
           href: api/reportroot-getoffice365activationcounts.md
         - name: Get user counts
           href: api/reportroot-getoffice365activationsusercounts.md
-      - name: Office 365 active users
+      - name: Microsoft 365 active users
         href: resources/office-365-active-users-reports.md
         items:
         - name: Get user detail
@@ -4217,7 +4349,7 @@ items:
           href: api/reportroot-getoffice365activeusercounts.md
         - name: Get services user counts
           href: api/reportroot-getoffice365servicesusercounts.md
-      - name: Office 365 groups activity
+      - name: Microsoft 365 groups activity
         href: resources/office-365-groups-activity-reports.md
         items:
         - name: Get group detail
@@ -4529,6 +4661,8 @@ items:
           href: api/user-list-joinedteams.md
         - name: List all teams
           href: /graph/teams-list-all-teams?context=graph/api/1.0
+        - name: Get primary channel
+          href: api/team-get-primarychannel.md
       - name: Group (team)
         href: resources/group.md
         items:
@@ -4585,6 +4719,8 @@ items:
           href: api/channel-patch.md
         - name: Delete channel
           href: api/channel-delete.md
+        - name: Get files folder
+          href: api/channel-get-filesfolder.md
         - name: Send message
           href: api/channel-post-messages.md
         - name: Reply to message
@@ -4596,9 +4732,10 @@ items:
           href: api/channel-post-messages.md
         - name: Reply to message
           href: api/channel-post-messagereply.md
-      - name: App Catalog
-        href: resources/teamsapp.md
+      - name: App catalog
         items:
+        - name: App in catalog
+          href: resources/teamsapp.md
         - name: Publish apps to catalog
           href: api/teamsapp-publish.md
         - name: List apps in catalog
@@ -4957,50 +5094,3 @@ items:
           href: api/nameditem-add.md
         - name: List range
           href: api/nameditem-range.md
-    - name: Tools
-      expanded: true
-      items:
-      - name: Open extensions
-        href: resources/opentypeextension.md
-        displayname: Outlook calendar, Groups, Outlook mail, Outlook contacts, Outlook contact, People, Users
-        items:
-        - name: Create open extension
-          href: api/opentypeextension-post-opentypeextension.md
-        - name: Get open extension
-          href: api/opentypeextension-get.md
-        - name: Update open extension
-          href: api/opentypeextension-update.md
-        - name: Delete open extension
-          href: api/opentypeextension-delete.md
-      - name: Schema extensions
-        href: resources/schemaextension.md
-        displayname: Outlook calendar, Groups, Outlook mail, Outlook contacts, Outlook contact, People, Users
-        items:
-        - name: List schema extensions
-          href: api/schemaextension-list.md
-        - name: Create schema extension
-          href: api/schemaextension-post-schemaextensions.md
-        - name: Get schema extension
-          href: api/schemaextension-get.md
-        - name: Update schema extension
-          href: api/schemaextension-update.md
-        - name: Delete schema extension
-          href: api/schemaextension-delete.md
-      - name: Change notifications
-        displayName: Webhooks, Outlook mail, Outlook calendar, Outlook contacts, Outlook contact, People, Microsoft Teams, Teams, OneDrive, OneDrive for Business, OneDrive business, OneDrive personal, SharePoint, Security, Users, Groups
-        items:
-        - name: Overview
-          href: resources/webhooks.md
-        - name: Subscription
-          href: resources/subscription.md
-          items:
-          - name: List subscription
-            href: api/subscription-list.md
-          - name: Get subscription
-            href: api/subscription-get.md
-          - name: Create subscription
-            href: api/subscription-post-subscriptions.md
-          - name: Update subscription
-            href: api/subscription-update.md
-          - name: Delete subscription
-            href: api/subscription-delete.md

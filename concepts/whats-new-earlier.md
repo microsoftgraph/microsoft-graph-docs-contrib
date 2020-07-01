@@ -7,6 +7,61 @@ localization_priority: Priority
 
 # Highlights of earlier releases
 
+## April 2020: New and generally available
+
+### Calendar
+- [Share or delegate calendars](outlook-share-or-delegate-calendar.md) programmatically, in closer parity with the Outlook user experience. In addition to tracking the current user's permissions and sharing status for a calendar:
+  - For each [calendar](/graph/api/resources/calendar?view=graph-rest-1.0), you can now manage the [permissions](/graph/api/resources/calendarpermission?view=graph-rest-1.0) of each user with whom the calendar is shared. 
+  - For each [mailbox](/graph/api/resources/mailboxsettings?view=graph-rest-1.0), you can now specify whether a delegate, mailbox owner, or both receive meeting messages and meeting responses. 
+- [Create or update an event as an online meeting](outlook-calendar-online-meetings.md):
+  - For each **calendar**, specify the allowed and the default online meeting providers.
+  - Create or update an [event](/graph/api/resources/event?view=graph-rest-1.0) to be available online, and provide details for attendees to join the meeting online. 
+  - In particular, use the new **onlineMeetingProvider** and **onlineMeeting** properties of **event** to set or identify Microsoft Teams as an online meeting provider, a workaround for a [known issue](known-issues.md#onlinemeetingurl-property-support-for-microsoft-teams) with the **onlineMeetingUrl** property.
+- Add [file attachments up to 150MB](outlook-large-attachments.md) to an [event](/graph/api/resources/event?view=graph-rest-1.0).
+
+### Files
+- [Check out](/graph/api/driveitem-checkout?view=graph-rest-1.0) or [check in](/graph/api/driveitem-checkin?view=graph-rest-1.0) a file to OneDrive to manage updating the file and making updates available to others when the updates are ready.
+- Apply optional password and expiration date/time as parameters of the [invite](/graph/api/driveitem-invite?view=graph-rest-1.0) and [create sharing link](/graph/api/driveitem-createlink?view=graph-rest-1.0) actions to share a [driveItem](/graph/api/resources/driveitem?view=graph-rest-1.0).
+- Get or set password and expiration date/time of a [permission](/graph/api/resources/permission?view=graph-rest-1.0), and track the [identitySet](/graph/api/resources/identityset?view=graph-rest-1.0) of users granted the permission to share a **driveItem**.
+- Get the [permission](/graph/api/resources/permission?view=graph-rest-1.0) of a [shared drive item](/graph/api/resources/shareddriveitem?view=graph-rest-1.0) by using the **permission** navigation property.
+- Limit users with a [sharing link](/graph/api/resources/sharinglink?view=graph-rest-1.0) to only view and may not download the contents of a shared**driveItem** on OneDrive for Business or SharePoint.
+
+### Identity and access
+- To manage roles and assign access to resources in role-based access control (RBAC) providers such as Microsoft Intune, use [unifiedRoleAssignmentMultiple](/graph/api/resources/unifiedroleassignmentmultiple?view=graph-rest-1.0). The **unifiedRoleAssignmentMultiple** resource supports defining a single role over an array of scopes, and assigning the role to multiple principals (such as users).
+- Access specific types of [policies for an organization](/graph/api/resources/policy-overview?view=graph-rest-1.0) using the `/policies` URL segment and specifying the policy type. For example, an organization can enforce a policy to automatically sign a user out from a web session after a period of inactivity; see CRUD operations for instances of [activityBasedTimeoutPolicy](/graph/api/resources/activitybasedtimeoutpolicy?view=graph-rest-1.0). This is a [breaking change](https://developer.microsoft.com/identity/blogs/breaking-changes-policy-api-microsoft-graph-1.0/) to make it easier to discover all policies, by grouping all typed policies under the `/policies` segment. Access other typed policies in a similar approach: [claimsMappingPolicy](/graph/api/resources/claimsmappingpolicy?view=graph-rest-1.0), [homeRealmDiscoveryPolicy](/graph/api/resources/homerealmdiscoverypolicy?view=graph-rest-1.0), [tokenLifetimePolicy](/graph/api/resources/tokenlifetimepolicy?view=graph-rest-1.0), and [tokenIssuancePolicy](/graph/api/resources/tokenissuancetimepolicy?view=graph-rest-1.0). 
+
+### Mail
+Add [file attachments up to 150MB](outlook-large-attachments.md) to a [message](/graph/api/resources/message?view=graph-rest-1.0).
+
+### Sites and lists
+- [List sites](/graph/api/sites-list-followed?view=graph-rest-1.0) that the signed-in user has followed.
+- Identify the geographic region of a [site collection](/graph/api/resources/sitecollection?view=graph-rest-1.0) by using the **dataLocationCode** property.
+- Identify the tenant of a file, folder, or other item on SharePoint by accessing the **tenantId** property that is part of the **sharepointIds** of a [driveItem](/graph/api/resources/driveitem?view=graph-rest-1.0).
+
+## April 2020: New in preview only
+
+### Devices and apps | Cloud printing
+
+Designate allowed users and groups to use specific [printer shares](/graph/api/resources/printershare?view=graph-rest-beta) on Universal Print, the Microsoft 365 cloud-based print infrastructure. To experience robust and centralized print management capabilities, and offer a simple yet rich and secure print experience for print users, see the [Universal Print announcement](https://techcommunity.microsoft.com/t5/windows-it-pro-blog/announcing-universal-print-a-cloud-based-print-solution/ba-p/1204775) and join their preview program.
+
+### Devices and apps | Corporate management
+Intune [April](changelog.md#april-2020) updates.
+
+### Groups
+Identify the app that created a [group](/graph/api/resources/group?view=graph-rest-beta) by its app ID.
+
+### Identity and access
+- [Track changes](/graph/api/administrativeunit-delta?view=graph-rest-beta) for [administrative units](/graph/api/resources/administrativeunit?view=graph-rest-beta).
+- [Track changes](/graph/api/oauth2permissiongrant-delta?view=graph-rest-beta) for [oAuth2PermissionGrant](/graph/api/resources/oauth2permissiongrant?view=graph-rest-beta).
+- [Manage](/graph/api/resources/authenticationmethods-overview?view=graph-rest-beta) a user's [authentication methods](/graph/api/resources/authenticationmethod?view=graph-rest-beta) which include [password](/graph/api/resources/passwordauthenticationmethod?view=graph-rest-beta) or [phone](/graph/api/resources/phoneauthenticationmethod?view=graph-rest-beta). For example, [reset a user password](/graph/api/passwordauthenticationmethod-resetpassword?view=graph-rest-beta) and [get the reset status](/graph/api/authenticationoperation-get?view=graph-rest-beta), or [add a phone number](/graph/api/authentication-post-phonemethods?view=graph-rest-beta) for a user for SMS or voice call authentication, if the policy is enabled for the user.
+
+### Reports | Identity and access reports
+[List](/graph/api/relyingpartydetailedsummary-list?view=graph-rest-beta) [relying parties](https://docs.microsoft.com/windows-server/identity/ad-fs/technical-reference/understanding-key-ad-fs-concepts) configured in Active Directory Federation Services.
+
+### Reports | Microsoft 365 usage reports
+View **Meeting Created** and **Meeting Interacted** data in CSV reports for [email activity counts](/graph/api/reportroot-getemailactivitycounts?view=graph-rest-beta), [email activity user counts](/graph/api/reportroot-getemailactivityusercounts?view=graph-rest-beta), and [email activity user detail](/graph/api/reportroot-getemailactivityuserdetail?view=graph-rest-beta).
+
+
 ## March 2020: New and generally available
 
 ### Cloud communications
@@ -28,7 +83,7 @@ localization_priority: Priority
 - Use the `User.ManageIdentities.All` delegated permission to allow an app to read, update, or delete identities that are associated with a user's account, that the signed-in user has access to. Use that permission at the application-level without a signed-in user present. This allows the app to [manage](/graph/api/user-update?view=graph-rest-1.0) which identities a user can sign-in with.
 
 ### Reports
-Use Teams Service Administrator and Teams Communications Administrator as accepted user roles to allow apps to read Office 365 service usage reports on behalf of a user, as [forms of user-delegated authorization](reportroot-authorization.md). 
+Use Teams Service Administrator and Teams Communications Administrator as accepted user roles to allow apps to read Microsoft 365 service usage reports on behalf of a user, as [forms of user-delegated authorization](reportroot-authorization.md). 
 
 ### Sites
 - Let users [follow](/graph/api/site-follow?view=graph-rest-1.0) or [unfollow](/graph/api/site-unfollow?view=graph-rest-1.0) SharePoint sites.
@@ -97,7 +152,7 @@ See [tasks supported by preview APIs that manage calendar sharing and delegation
 Intune [February](changelog.md#february-2020) updates.
 
 ### Groups
-Use the [assignLicense](/graph/api/group-assignlicense?view=graph-rest-beta) method to assign licences for products, such as Office 365 or Enterprise Mobility + Security, to a group. Since Azure AD ensures licences are assigned to members of the group, members joining or leaving a group no longer requires licence management at the individual level.
+Use the [assignLicense](/graph/api/group-assignlicense?view=graph-rest-beta) method to assign licences for products, such as Microsoft 365 or Enterprise Mobility + Security, to a group. Since Azure AD ensures licences are assigned to members of the group, members joining or leaving a group no longer requires licence management at the individual level.
 
 ### Identity and access
 - Set requestor, approval, and review settings when creating an [access package assignment policy](/graph/api/resources/accesspackageassignmentpolicy?view=graph-rest-beta).
@@ -144,7 +199,7 @@ The insights API has GA'd. Use the API in production apps to identify the most r
 - [Shared with or shared by](/graph/api/insights-list-shared?view=graph-rest-1.0) a user
 
 ### Reports
-To get Office 365 usage reports using permissions delegated by a user, administrators must have assigned the user an Azure AD limited administrator role. This can be one of the following roles: company administrator, Exchange administrator, SharePoint administrator, Lync administrator, global reader, or reports reader. See [Authorization for APIs to read Office 365 usage reports](reportroot-authorization.md) for details.
+To get Microsoft 365 usage reports using permissions delegated by a user, administrators must have assigned the user an Azure AD limited administrator role. This can be one of the following roles: company administrator, Exchange administrator, SharePoint administrator, Lync administrator, global reader, or reports reader. See [Authorization for APIs to read Microsoft 365 usage reports](reportroot-authorization.md) for details.
 
 ### Toolkit
 Microsoft Graph Toolkit v1.1 has released. For a list of enhancements and bug fixes, see the [December 2019 section](changelog.md#december-2019) of the changelog.
@@ -365,9 +420,9 @@ Use the **General** channel of a [team](/graph/api/resources/team?view=graph-res
 
 ### Reports
 - Get additional [mailbox usage data](/graph/api/reportroot-getmailboxusagedetail?view=graph-rest-1.0) about deleted item count and size.
-- Track Office 365 group IDs when [getting group activity details](/graph/api/reportroot-getoffice365groupsactivitydetail?view=graph-rest-1.0).
+- Track Microsoft 365 group IDs when [getting group activity details](/graph/api/reportroot-getoffice365groupsactivitydetail?view=graph-rest-1.0).
 - Track the owner principal name when getting [OneDrive usage account detail](/graph/api/reportroot-getonedriveusageaccountdetail?view=graph-rest-1.0) and [SharePoint site usaged detail](/graph/api/reportroot-getsharepointsiteusagedetail?view=graph-rest-1.0).
-- Get the number of active and inactive users on Office 365, when [getting a report on user counts per Office 365 service](/graph/api/reportroot-getoffice365servicesusercounts?view=graph-rest-1.0).
+- Get the number of active and inactive users on Microsoft 365, when [getting a report on user counts per Microsoft 365 service](/graph/api/reportroot-getoffice365servicesusercounts?view=graph-rest-1.0).
 
 ### Security
 - Use the new [Microsoft Graph security API add-on for Splunk](https://aka.ms/graphsecuritysplunkaddon) to stream security alerts and insights from many partner products into Splunk, enabling easier real-time correlation of their security data. See the [announcement](https://techcommunity.microsoft.com/t5/Security-Privacy-and-Compliance/Introducing-the-new-Microsoft-Graph-Security-API-add-on-for/ba-p/815972) for more information. 
@@ -394,7 +449,7 @@ Up till this point, you have been able to [follow](/graph/api/driveitem-follow?v
 - Administrators can [list access reviews](/graph/api/accessreview-list?view=graph-rest-beta) to efficiently facilitate reviewing group memberships, access to enterprise applications, and role assignments. Regular access reviews make sure only the appropriate people have continued access to resources in specific ways.
 
 ### Social and workplace intelligence
-End users have been able to use the Office 365 [MyAnalytics](social-intel-concept-overview.md#why-integrate-with-document-based-insights) app to get insights on managing time, collaboration at work, and work-life balance. Now, you can use the [analytics API](/graph/api/resources/social-overview?view=graph-rest-beta#help-users-gain-insights-into-their-work-patterns) to integrate data on time spent on work activities such as calls, chats, and email, to help improve a user's productivity and wellbeing. 
+End users have been able to use the Microsoft 365 [MyAnalytics](social-intel-concept-overview.md#why-integrate-with-document-based-insights) app to get insights on managing time, collaboration at work, and work-life balance. Now, you can use the [analytics API](/graph/api/resources/social-overview?view=graph-rest-beta#help-users-gain-insights-into-their-work-patterns) to integrate data on time spent on work activities such as calls, chats, and email, to help improve a user's productivity and wellbeing. 
 
 
 ## July 2019: New and generally available 
@@ -403,7 +458,7 @@ End users have been able to use the Office 365 [MyAnalytics](social-intel-concep
 There are now Objective-C code snippets in all API topics in the v1.0 and beta references. See the Objective-C example for [getting an event](/graph/api/event-get?view=graph-rest-1.0&tabs=objective-c#example).
 
 ### Group
-- Use the [validateProperties](/graph/api/group-validateproperties?view=graph-rest-1.0) function to make sure the display name or mail nickname of an existing Office 365 group complies with naming policies.
+- Use the [validateProperties](/graph/api/group-validateproperties?view=graph-rest-1.0) function to make sure the display name or mail nickname of an existing Microsoft 365 group complies with naming policies.
 - Alternatively, before creating the group, you can use the [validateProperties](/graph/api/directoryobject-validateproperties?view=graph-rest-1.0) function for a [directoryObject](/graph/api/resources/directoryobject?view=graph-rest-1.0) to validate the names first.
 
 ### Identity and access
@@ -478,7 +533,7 @@ Administrators or users can [revoke](/graph/api/user-revokesigninsessions?view=g
 - Delta query and property additions for [educationClass](/graph/api/resources/educationclass?view=graph-rest-beta) and [educationUser](/graph/api/resources/educationuser?view=graph-rest-beta).
 
 ### Group
-Get [sensitivity labels](/graph/api/resources/assignedlabel?view=graph-rest-beta) to help protect sensitive data of an Office 365 group and meet compliance policies. These labels are [assignedLabel](/graph/api/resources/assignedlabel?view=graph-rest-beta) objects, published by administrators in Microsoft 365 Security & Compliance Center, as part of Microsoft Information Protection capabilities. 
+Get [sensitivity labels](/graph/api/resources/assignedlabel?view=graph-rest-beta) to help protect sensitive data of a Microsoft 365 group and meet compliance policies. These labels are [assignedLabel](/graph/api/resources/assignedlabel?view=graph-rest-beta) objects, published by administrators in Microsoft 365 Security & Compliance Center, as part of Microsoft Information Protection capabilities. 
 
 ### Identity and access
 - Get an instance of an [application](/graph/api/resources/applicationtemplate?view=graph-rest-beta), or add an instance from the Azure AD application gallery into your directory as a template.

@@ -209,7 +209,7 @@ Content-type: text/plain
 
 893
 
-### Example 4: Use $searchand OData cast to get user membership in groups with display names that contain the letters 'Pr' including a count of returned objects
+### Example 4: Use $search and OData cast to get user membership in groups with display names that contain the letters 'Pr' including a count of returned objects
 
 #### Request
 
