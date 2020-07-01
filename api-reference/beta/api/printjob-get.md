@@ -106,7 +106,7 @@ The following is an example of a request to get a print job and its associated d
 # [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
-  "name": "get_jobs"
+  "name": "get_printjob_withdocumentdata"
 }-->
 ```msgraph-interactive
 GET https://graph.microsoft.com/beta/print/printers/86b6d420-7e6b-4797-a05c-af4e56cd81bd/jobs/31216?$expand=documents
