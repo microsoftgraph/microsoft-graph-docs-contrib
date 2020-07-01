@@ -6,8 +6,8 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 GraphServiceClient graphClient = new GraphServiceClient( authProvider );
 
-var itemAnalytics = await graphClient.Drives["{drive-id}"].Items["{item-id}"].Analytics
+await graphClient.Connections["contosohr"].Items["TSP228082938"]
 	.Request()
-	.GetAsync();
+	.DeleteAsync();
 
 ```
