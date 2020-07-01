@@ -44,9 +44,12 @@ This method supports some of the OData query parameters to help customize the re
 Do not supply a request body for this method.
 ## Response
 If successful, this method returns a `200 OK` response code and a [printJob](../resources/printjob.md) object in the response body.
-## Example
+## Examples
+
+### Example 1: Get print job
+
 ##### Request
-The following is an example of the request.
+The following is an example of a request to get metadata for a print job.
 
 # [HTTP](#tab/http)
 <!-- {
@@ -54,7 +57,7 @@ The following is an example of the request.
   "name": "get_printjob"
 }-->
 ```msgraph-interactive
-GET https://graph.microsoft.com/beta/print/printers/{id}/jobs/{id}
+GET https://graph.microsoft.com/beta/print/printers/c05f3726-0d4b-4aa1-8fe9-2eb981bb26fb/jobs/5182
 ```
 # [C#](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/get-printjob-csharp-snippets.md)]
@@ -92,6 +95,61 @@ Content-length: 408
     "processingState": "completed",
     "processingStateDescription": "The print job has completed successfully and no further processing will take place."
   }
+}
+```
+
+### Example 2: Get print job with task list
+
+##### Request
+The following is a request to get a print job and any [tasks](../resources/printtask.md) that are executing, or have executed, against it.
+
+# [HTTP](#tab/http)
+<!-- {
+  "blockType": "request",
+  "name": "get_printjob_withtasks"
+}-->
+```msgraph-interactive
+GET https://graph.microsoft.com/beta/print/printers/c05f3726-0d4b-4aa1-8fe9-2eb981bb26fb/jobs/5182?$expand=tasks
+```
+
+---
+
+##### Response
+The following is an example of the response.
+>**Note:** The response object shown here might be shortened for readability. All the properties will be returned from an actual call.
+<!-- {
+  "blockType": "response",
+  "truncated": true,
+  "@odata.type": "microsoft.graph.printJob"
+} -->
+```http
+HTTP/1.1 200 OK
+Content-type: application/json
+Content-length: 774
+
+{
+  "@odata.context": "https://graph.microsoft.com/beta/$metadata#print/printers('c05f3726-0d4b-4aa1-8fe9-2eb981bb26fb')/jobs(tasks())/$entity",
+  "id": "5182",
+  "createdDateTime": "2020-06-30T17:18:52.3930472Z",
+  "createdBy": {
+    "id": "",
+    "displayName": "",
+    "userPrincipalName": ""
+  },
+  "status": {
+    "processingState": "pendingHeld",
+    "processingStateDescription": "The job is not a candidate for processing yet."
+  },
+  "tasks": [
+    {
+      "id": "d036638b-1272-4bba-9227-732463823ed3",
+      "parentUrl": "https://graph.microsoft.com/beta/print/printers/c05f3726-0d4b-4aa1-8fe9-2eb981bb26fb/jobs/5182",
+      "status": {
+        "state": "processing",
+        "description": "The task is being processed."
+      }
+    }
+  ]
 }
 ```
 
