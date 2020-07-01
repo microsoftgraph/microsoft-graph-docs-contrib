@@ -1,17 +1,10 @@
 ---
 title: Configure Application Proxy using Microsoft Graph APIs
-titleSuffix: Azure Active Directory
 description: Automatically configure Application Proxy using the Microsoft Graph APIs to provide remote access and single sign-on to on-premises applications.
-services: active-directory
-author: davidmu
-manager: CelesteDG
-
-ms.service: active-directory
-ms.subservice: app-mgmt
+author: davidmu1
 ms.topic: conceptual
-ms.date: 06/05/2020
-ms.author: davidmu
-ms.reviewer: japere
+localization_priority: Normal
+ms.prod: microsoft-identity-platform
 ---
 
 # Automate the configuration of Application Proxy using the Microsoft Graph API
@@ -19,8 +12,6 @@ ms.reviewer: japere
 In this article, you'll learn how to create and configure Azure Active Directory (Azure AD) [Application Proxy](https://aka.ms/whyappproxy) for an application. Application Proxy provides secure remote access and single sign-on to on-premises web applications. After configuring Application Proxy for an application, users can access their on-premises applications through an external URL, the My Apps portal, or other internal application portals.
 
 This article assumes you have already installed a connector and completed the [prerequisites](https://docs.microsoft.com/azure/active-directory/manage-apps/application-proxy-add-on-premises-application#before-you-begin) for Application Proxy so that connectors can communicate with Azure AD services.
-
-**List of all APIs used in the documentation**
 
 Make sure you have the corresponding permissions to call the following APIs.
 
@@ -33,20 +24,20 @@ Make sure you have the corresponding permissions to call the following APIs.
 |[servicePrincipals](https://docs.microsoft.com/graph/api/resources/serviceprincipal?view=graph-rest-1.0)|[Update servicePrincipal](https://docs.microsoft.com/graph/api/serviceprincipal-update?view=graph-rest-1.0&tabs=http) <br> [Create appRoleAssignments](https://docs.microsoft.com/graph/api/serviceprincipal-post-approleassignments?view=graph-rest-beta)|
 
 >[!NOTE]
-> The requests shown in this article uses sample values, you will need update these. The response objects shown may also be shortened for readability. All the properties will be returned from an actual call.
+> The requests shown in this article uses sample values. You will need update these. The response objects shown may also be shortened for readability. All the properties will be returned from an actual call.
 
 ## Step 1: Create a custom application
 
 ### Sign in to Microsoft Graph Explorer (recommended), Postman, or any other API client you use
 
-1. Start [Microsoft Graph Explorer](https://developer.microsoft.com/graph/graph-explorer)
+1. Start [Microsoft Graph Explorer](https://developer.microsoft.com/graph/graph-explorer).
 2. Select **Sign-In with Microsoft** and sign in using an Azure AD global administrator or App Admin credentials.
-3. Upon successful sign-in, you'll see the user account details in the left-hand pane.
+3. Upon successful sign-in, you'll see the user account details in the left pane.
 
 ### Create a custom application
 
-To configure Application Proxy for an app using the API, you must first create a custom application, then update the application's onPremisesPublishing property for the app to configure the App Proxy settings.
-Use [instantiate applicationTemplate](https://docs.microsoft.com/graph/api/resources/applicationtemplate?view=graph-rest-beta), to create an instance of a custom application and service principal in your tenant for management. The template Id for a custom application is: `8adf8e6e-67b2-4cf2-a259-e3dc5476c621`.
+To configure Application Proxy for an app using the API, you must first create a custom application, then update the application's **onPremisesPublishing** property for the app to configure the App Proxy settings.
+Use [instantiate applicationTemplate](https://docs.microsoft.com/graph/api/resources/applicationtemplate?view=graph-rest-beta) to create an instance of a custom application and service principal in your tenant for management. The template ID for a custom application is: `8adf8e6e-67b2-4cf2-a259-e3dc5476c621`.
 
 #### Request
 
@@ -142,7 +133,7 @@ Use the response from the previous call to retrieve and save the application obj
 
 ### Set the onPremisesPublishing configuration
 
-Use the applicationId from the previous step to configure Application Proxy for the app, update the onPremisesPublishing property to the desired configuration. In this example we are using an app with the internal url: `https://contosoiwaapp.com` and using the default domain for the external url: `https://contosoiwaapp-contoso.msappproxy.net`. 
+Use the applicationId from the previous step to configure Application Proxy for the app and update the **onPremisesPublishing** property to the desired configuration. In this example, you're using an app with the internal url: `https://contosoiwaapp.com` and using the default domain for the external url: `https://contosoiwaapp-contoso.msappproxy.net`. 
 
 #### Request
 
@@ -175,7 +166,7 @@ Content-type: appplication/json
 HTTP/1.1 204 No content
 ```
 ### Set the redirectUri, identifierUri, and homepageUrl properties
-Update the application's redirectUri, identifierUri, and homepageUrl to the **external url**.
+Update the application's **redirectUri**, **identifierUri**, and **homepageUrl** propertes to the external URL.
 
 #### Request
 
@@ -264,7 +255,7 @@ Content-type: application/json
 ```
 
 ### Create a connectorGroup
-For this example, a new connectorGroup is created named "IWA Demo Connector Group" that is used for the application. You may also skip this step if your connector is already assigned to the appropriate connectorGroup. Retrieve and save the connectorGroup object ID to use in the next step.
+For this example, a new connectorGroup is created named "IWA Demo Connector Group" that is used for the application. You can also skip this step if your connector is already assigned to the appropriate connectorGroup. Retrieve and save the connectorGroup object ID to use in the next step.
 
 #### Request
 
@@ -360,7 +351,7 @@ HTTP/1.1 204 No content
 ```
 
 ## Step 4: Configure single sign-on
-This application uses Integrated Windows Authentication (IWA). To configure IWA set the single sign-on properties in the [singleSignOnSettings](https://docs.microsoft.com/graph/api/resources/onpremisespublishingsinglesignon?view=graph-rest-beta) resource type.
+This application uses Integrated Windows Authentication (IWA). To configure IWA, set the single sign-on properties in the [singleSignOnSettings](https://docs.microsoft.com/graph/api/resources/onpremisespublishingsinglesignon?view=graph-rest-beta) resource type.
 
 
 #### Request
