@@ -25,10 +25,10 @@ When accompanied by a Universal Print subscription, the Print feature enables ma
 | [Create printerShare](../api/print-post-shares.md) | [printerShare](printershare.md) | Create a new printer share by posting to the **shares** collection. |
 | [Create printer](../api/printer-create.md) | [printerCreateOperation](printerCreateOperation.md) | Create (register) a new printer with Universal Print. |
 | [Update settings](../api/print-update-settings.md) |  [printSettings](printsettings.md) | Updates tenant-wide settings for the Universal Print service. |
-| [List taskDefinitions](../api/print-list-taskDefinitions.md) | [printTaskDefinition](printtaskdefinition.md) collection | Get a complete list of printTaskDefinitions created within Universal Print. |
-| [Create taskDefinition](../api/print-post-taskDefinitions.md) | [printTaskDefinition](printtaskdefinition.md) | Create a new printTaskDefinition. |
-| [Update taskDefinition](../api/print-update-taskDefinitions.md) | [printTaskDefinition](printtaskdefinition.md) | Update a printTaskDefinition. |
-| [Delete taskDefinition](../api/print-delete-taskDefinitions.md) | None | Delete a printTaskDefinition. |
+| [List taskDefinitions](../api/print-list-taskdefinitions.md) | [printTaskDefinition](printtaskdefinition.md) collection | Get a complete list of printTaskDefinitions created within Universal Print. |
+| [Create taskDefinition](../api/print-post-taskdefinitions.md) | [printTaskDefinition](printtaskdefinition.md) | Create a new printTaskDefinition. |
+| [Update taskDefinition](../api/print-update-taskdefinitions.md) | [printTaskDefinition](printtaskdefinition.md) | Update a printTaskDefinition. |
+| [Delete taskDefinition](../api/print-delete-taskdefinitions.md) | None | Delete a printTaskDefinition. |
 
 ## Properties
 | Property     | Type        | Description |
