@@ -9626,7 +9626,7 @@ items:
         - name: Conditional access
           items:
           - name: Policies
-          items:
+            items:
             - name: Conditional access policy
               href: resources/conditionalaccesspolicy.md
             - name: List
