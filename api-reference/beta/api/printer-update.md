@@ -43,7 +43,7 @@ PATCH /print/printers/{id}
 
 ### Delegated permissions and JSON payload
 
-In the request body, supply the values for the relevant [printer](../resources/printer.md) fields that should be updated. Existing properties that are not included in the request body will maintain their previous values or be recalculated based on changes to other property values. For best performance, don't include existing values that haven't changed.
+If using delegated permissions, in the request body, supply the values for the relevant [printer](../resources/printer.md) fields that should be updated. Existing properties that are not included in the request body will maintain their previous values or be recalculated based on changes to other property values. For best performance, don't include existing values that haven't changed.
 
 | Property     | Type        | Description |
 |:-------------|:------------|:------------|
@@ -52,7 +52,7 @@ In the request body, supply the values for the relevant [printer](../resources/p
 
 ### Application permissions and IPP payload
 
-Contains a binary stream representing the Printer Attributes group in [IPP encoding](https://tools.ietf.org/html/rfc8010).
+If using application permissions, the request body contains a binary stream representing the Printer Attributes group in [IPP encoding](https://tools.ietf.org/html/rfc8010).
 
 The client MUST supply a set of Printer attributes with one or more values (including explicitly allowed out-of-band values) as defined in [RFC8011 section 4.2](https://tools.ietf.org/html/rfc8011#section-4.2) Job Template Attributes ("xxx-default", "xxx-supported", and "xxx-ready" attributes), [Section 4.4](https://tools.ietf.org/html/rfc8011#section-4.4) Printer Description Attributes, and any attribute extensions supported by the Printer. The value(s) of each Printer attribute
 supplied replaces the value(s) of the corresponding Printer attribute on the target Printer object. For attributes that can have multiple values (1setOf), all values supplied by the client replace all values of the corresponding Printer object attribute.
@@ -61,11 +61,11 @@ supplied replaces the value(s) of the corresponding Printer attribute on the tar
 
 ### Delegated permissions and JSON payload
 
-If successful, this method returns a `200 OK` response code and an updated [printer](../resources/printer.md) object in the response body.
+If using delegated permissions, if successful, this method returns a `200 OK` response code and an updated [printer](../resources/printer.md) object in the response body.
 
 ### Application permissions and IPP payload
 
-If successful, this method returns `204 No content` response code. It does not return anything in the response body.
+If using application permissions, if successful, this method returns `204 No content` response code. It does not return anything in the response body.
 
 ## Example
 
