@@ -41,7 +41,7 @@ PATCH /print/printers/{id}
 
 ## Request body
 
-### Example 1: Delegated permissions and JSON payload
+### Delegated permissions and JSON payload
 
 In the request body, supply the values for the relevant [printer](../resources/printer.md) fields that should be updated. Existing properties that are not included in the request body will maintain their previous values or be recalculated based on changes to other property values. For best performance, don't include existing values that haven't changed.
 
@@ -50,26 +50,26 @@ In the request body, supply the values for the relevant [printer](../resources/p
 |location|[printerLocation](../resources/printerlocation.md)|The physical and/or organizational location of the printer.|
 |name|String|The name of the printer.|
 
-### Example 2: Application permissions and IPP payload
+### Application permissions and IPP payload
 
-Contains a binary stream representing "Printer Attributes" group in [IPP encoding](https://tools.ietf.org/html/rfc8010).
+Contains a binary stream representing the Printer Attributes group in [IPP encoding](https://tools.ietf.org/html/rfc8010).
 
 The client MUST supply a set of Printer attributes with one or more values (including explicitly allowed out-of-band values) as defined in [RFC8011 section 4.2](https://tools.ietf.org/html/rfc8011#section-4.2) Job Template Attributes ("xxx-default", "xxx-supported", and "xxx-ready" attributes), [Section 4.4](https://tools.ietf.org/html/rfc8011#section-4.4) Printer Description Attributes, and any attribute extensions supported by the Printer. The value(s) of each Printer attribute
 supplied replaces the value(s) of the corresponding Printer attribute on the target Printer object. For attributes that can have multiple values (1setOf), all values supplied by the client replace all values of the corresponding Printer object attribute.
 
 ## Response
 
-### Example 1: Delegated permissions and JSON payload
+### Delegated permissions and JSON payload
 
 If successful, this method returns a `200 OK` response code and an updated [printer](../resources/printer.md) object in the response body.
 
-### Example 2: Application permissions and IPP payload
+### Application permissions and IPP payload
 
 If successful, this method returns `204 No content` response code. It does not return anything in the response body.
 
 ## Example
 
-##### Request
+### Request
 The following is an example of the request.
 
 # [HTTP](#tab/http)
@@ -105,7 +105,7 @@ Content-length: 124
 
 ---
 
-##### Response
+### Response
 The following is an example of the response.
 >**Note:** The response object shown here might be shortened for readability. All the properties will be returned from an actual call.
 <!-- {
