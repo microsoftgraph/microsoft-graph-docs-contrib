@@ -109,7 +109,6 @@ GA of the [shifts API](/graph/api/resources/shift?view=graph-rest-1.0) in v1.0 -
 
 ### Change notifications
 - Use formally schematized types [changeNotification](/graph/api/resources/changenotification?view=graph-rest-beta) and [changeNotificationCollection](/graph/api/resources/changenotificationcollection?view=graph-rest-beta) to process resource change notifications. 
-- Track if notifications are in sequence or if a notification is missing by using the **sequenceNumber** property on the **changeNotification** resource.
 
 ### Devices and apps | Cloud printing
 - The [printer](/graph/api/resources/printer?view=graph-rest-beta) and [printerShare](/graph/api/resources/printershare?view=graph-rest-beta) resources are now in parity and have the same properties as each other.
