@@ -3609,130 +3609,130 @@ items:
             href: api/directory-deleteditems-restore.md
           - name: List deleted items owned by user
             href: api/directory-deleteditems-user-owned.md
-      - name: Device
-        href: resources/device.md
-        items:
-        - name: List devices
-          href: api/device-list.md
-        - name: Create device
-          href: api/device-post-devices.md
-        - name: Get device
-          href: api/device-get.md
-        - name: Update device
-          href: api/device-update.md
-        - name: Delete device
-          href: api/device-delete.md
-        - name: Check member objects
-          href: api/device-checkmemberobjects.md
-        - name: Create registered owner
-          href: api/device-post-registeredowners.md
-        - name: Create registered user
-          href: api/device-post-registeredusers.md
-        - name: List device groups
-          href: api/device-list-memberof.md
-        - name: List device transitive groups
-          href: api/device-list-transitivememberof.md
-        - name: List registered owners
-          href: api/device-list-registeredowners.md
-        - name: List registered users
-          href: api/device-list-registeredusers.md
-      - name: Directory object
-        href: resources/directoryobject.md
-        items:
-        - name: Get directory object
-          href: api/directoryobject-get.md
-        - name: Delete directory object
-          href: api/directoryobject-delete.md
-        - name: Get member objects
-          href: api/directoryobject-getmemberobjects.md
-        - name: Get member groups
-          href: api/directoryobject-getmembergroups.md
-        - name: Check member groups
-          href: api/directoryobject-checkmembergroups.md
-        - name: Get objects by IDs
-          href: api/directoryobject-getbyids.md
-        - name: Validate properties
-          href: api/directoryobject-validateproperties.md
-      - name: Directory role
-        href: resources/directoryrole.md
-        items:
-        - name: List directory roles
-          href: api/directoryrole-list.md
-        - name: Activate directory role
-          href: api/directoryrole-post-directoryroles.md
-        - name: Get directory role
-          href: api/directoryrole-get.md
-        - name: List members
-          href: api/directoryrole-list-members.md
-        - name: Add member
-          href: api/directoryrole-post-members.md
-        - name: Remove member
-          href: api/directoryrole-delete-member.md
-      - name: Directory role template
-        href: resources/directoryroletemplate.md
-        items:
-        - name: List directoryRoleTemplates
-          href: api/directoryroletemplate-list.md
-        - name: Get directoryRoleTemplate
-          href: api/directoryroletemplate-get.md
-      - name: Domains
-        href: resources/domain.md
-        items:
-        - name: List domains
-          href: api/domain-list.md
-        - name: Create domain
-          href: api/domain-post-domains.md
-        - name: Delete domain
-          href: api/domain-delete.md
-        - name: Get domain
-          href: api/domain-get.md
-        - name: Update domain
-          href: api/domain-update.md
-        - name: Verify domain
-          href: api/domain-verify.md
-      - name: Organization
-        href: resources/organization.md
-        items:
-        - name: Get org details
-          href: api/organization-get.md
-        - name: Update org details
-          href: api/organization-update.md
-      - name: Organizational contacts
-        href: resources/orgcontact.md
-        items:
-        - name: List org contacts
-          href: api/orgcontact-list.md
-        - name: Get org contact
-          href: api/orgcontact-get.md
-        - name: Get org contact delta
-          href: api/orgcontact-delta.md
-        - name: Groups
-          href: resources/group.md
+        - name: Device
+          href: resources/device.md
           items:
-          - name: List memberOf
-            href: api/orgcontact-list-memberof.md
-          - name: Get member groups
-            href: api/orgcontact-getmembergroups.md
-          - name: Check member groups
-            href: api/orgcontact-checkmembergroups.md
-        - name: Org hierarchy
+          - name: List devices
+            href: api/device-list.md
+          - name: Create device
+            href: api/device-post-devices.md
+          - name: Get device
+            href: api/device-get.md
+          - name: Update device
+            href: api/device-update.md
+          - name: Delete device
+            href: api/device-delete.md
+          - name: Check member objects
+            href: api/device-checkmemberobjects.md
+          - name: Create registered owner
+            href: api/device-post-registeredowners.md
+          - name: Create registered user
+            href: api/device-post-registeredusers.md
+          - name: List device groups
+            href: api/device-list-memberof.md
+          - name: List device transitive groups
+            href: api/device-list-transitivememberof.md
+          - name: List registered owners
+            href: api/device-list-registeredowners.md
+          - name: List registered users
+            href: api/device-list-registeredusers.md
+        - name: Directory object
           href: resources/directoryobject.md
           items:
-          - name: List direct reports
-            href: api/orgcontact-list-directreports.md
-          - name: List memberOf
-            href: api/orgcontact-list-memberof.md
-          - name: Get manager
-            href: api/orgcontact-get-manager.md
+          - name: Get directory object
+            href: api/directoryobject-get.md
+          - name: Delete directory object
+            href: api/directoryobject-delete.md
           - name: Get member objects
-            href: api/orgcontact-getmemberobjects.md
-        - name: Subscribed SKU
-          href: resources/subscribedsku.md
+            href: api/directoryobject-getmemberobjects.md
+          - name: Get member groups
+            href: api/directoryobject-getmembergroups.md
+          - name: Check member groups
+            href: api/directoryobject-checkmembergroups.md
+          - name: Get objects by IDs
+            href: api/directoryobject-getbyids.md
+          - name: Validate properties
+            href: api/directoryobject-validateproperties.md
+        - name: Directory role
+          href: resources/directoryrole.md
           items:
-          - name: List subscribedSkus
-            href: api/subscribedsku-list.md
-          - name: Get subscribedSku
-            href: api/subscribedsku-get.md
+          - name: List directory roles
+            href: api/directoryrole-list.md
+          - name: Activate directory role
+            href: api/directoryrole-post-directoryroles.md
+          - name: Get directory role
+            href: api/directoryrole-get.md
+          - name: List members
+            href: api/directoryrole-list-members.md
+          - name: Add member
+            href: api/directoryrole-post-members.md
+          - name: Remove member
+            href: api/directoryrole-delete-member.md
+        - name: Directory role template
+          href: resources/directoryroletemplate.md
+          items:
+          - name: List directoryRoleTemplates
+            href: api/directoryroletemplate-list.md
+          - name: Get directoryRoleTemplate
+            href: api/directoryroletemplate-get.md
+        - name: Domains
+          href: resources/domain.md
+          items:
+          - name: List domains
+            href: api/domain-list.md
+          - name: Create domain
+            href: api/domain-post-domains.md
+          - name: Delete domain
+            href: api/domain-delete.md
+          - name: Get domain
+            href: api/domain-get.md
+          - name: Update domain
+            href: api/domain-update.md
+          - name: Verify domain
+            href: api/domain-verify.md
+        - name: Organization
+          href: resources/organization.md
+          items:
+          - name: Get org details
+            href: api/organization-get.md
+          - name: Update org details
+            href: api/organization-update.md
+        - name: Organizational contacts
+          href: resources/orgcontact.md
+          items:
+          - name: List org contacts
+            href: api/orgcontact-list.md
+          - name: Get org contact
+            href: api/orgcontact-get.md
+          - name: Get org contact delta
+            href: api/orgcontact-delta.md
+          - name: Groups
+            href: resources/group.md
+            items:
+            - name: List memberOf
+              href: api/orgcontact-list-memberof.md
+            - name: Get member groups
+              href: api/orgcontact-getmembergroups.md
+            - name: Check member groups
+              href: api/orgcontact-checkmembergroups.md
+          - name: Org hierarchy
+            href: resources/directoryobject.md
+            items:
+            - name: List direct reports
+              href: api/orgcontact-list-directreports.md
+            - name: List memberOf
+              href: api/orgcontact-list-memberof.md
+            - name: Get manager
+              href: api/orgcontact-get-manager.md
+            - name: Get member objects
+              href: api/orgcontact-getmemberobjects.md
+          - name: Subscribed SKU
+            href: resources/subscribedsku.md
+            items:
+            - name: List subscribedSkus
+              href: api/subscribedsku-list.md
+            - name: Get subscribedSku
+              href: api/subscribedsku-get.md
       - name: Identity and sign-in
         items:
         - name: Audit logs
