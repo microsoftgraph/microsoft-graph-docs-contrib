@@ -70,14 +70,12 @@ PATCH https://graph.microsoft.com/beta/organization/settings/profileCardProperti
 Content-type: application/json
 
 {
-  "directoryPropertyName": "CustomAttribute1",
   "annotations": [
     {
-      "displayName": "Cost Center",
       "localizations": [
         {
-          "languageTag": "ru-RU",
-          "displayName": "центр затрат"
+          "languageTag": "no-NB",
+          "displayName": "Kostnads Senter"
         }
       ]
     }
@@ -110,6 +108,10 @@ Content-type: application/json
         {
           "languageTag": "ru-RU",
           "displayName": "центр затрат"
+        },
+        {
+          "languageTag": "no-NB",
+          "displayName": "Kostnads Senter"
         }
       ]
     }

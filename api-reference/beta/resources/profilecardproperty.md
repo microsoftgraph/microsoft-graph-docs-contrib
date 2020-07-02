@@ -21,8 +21,8 @@ For more information on adding properties to the profile card for an organizatio
 
 | Method       | Return Type | Description |
 |:-------------------------------------------------------------|:----------------------------------------------|:-----------------------------------------------------------------|
-| [List](../api/profilecardproperty-list.md) | [profileCardProperty](profilecardproperty.md) | Read the properties and relationships of a **profileCardProperty** object. |
-| [Create](../api/profilecardproperty-post.md) | [profileCardProperty](profilecardproperty.md) | Read the properties and relationships of a **profileCardProperty** object. |
+| [List](../api/organizationsettings-list-profilecardproperties.md) | [profileCardProperty](profilecardproperty.md) | Read the properties and relationships of a **profileCardProperty** object. |
+| [Create](../api/organizationsettings-post-profilecardproperties.md) | [profileCardProperty](profilecardproperty.md) | Read the properties and relationships of a **profileCardProperty** object. |
 | [Get](../api/profilecardproperty-get.md) | [profileCardProperty](profilecardproperty.md) | Read the properties and relationships of a **profileCardProperty** object. |
 | [Update](../api/profilecardproperty-update.md)               | [profileCardProperty](profilecardproperty.md) | Update a **profileCardProperty** object.                               |
 | [Delete](../api/profilecardproperty-delete.md)               | None                                          | Delete a **profileCardProperty** object.                               |
