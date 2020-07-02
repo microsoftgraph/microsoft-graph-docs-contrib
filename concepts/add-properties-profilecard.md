@@ -35,7 +35,7 @@ You can make the following attributes from Azure Active Directory (Azure AD) vis
 
 The following table shows how the Azure AD attributes correspond with properties of the Microsoft Graph [user](/graph/api/resources/user?view=graph-rest-beta) entity.
 
-|Attribute string|User entity property|
+|Azure AD attribute |User entity property|
 |:---------------|:----------|
 |UserPrincipalName|userPrincipalName |
 |Fax|faxNumber|
@@ -44,7 +44,7 @@ The following table shows how the Azure AD attributes correspond with properties
 |StateOrProvince|state
 |Alias|mailNickname
 
-You can add any of these attributes to the profile card by configuring your tenant settings in Microsoft Graph. When you make additional attributes visible, you must use the property names for `en-us`. You don't have to add localized values. The additional properties will automatically be shown in the language settings that the user has specified for Microsoft 365.
+You can add any of these attributes to the profile card by configuring your [organization settings] (/graph/api/resources/organizationsettings?view=graph-rest-beta) and adding the attribute as the *directoryPropertyName** property of a **profileCardProperty** in Microsoft Graph. When you make additional attributes visible, you must use the property names for `en-us`. You don't have to add localized values. The additional properties will automatically be shown in the language settings that the user has specified for Microsoft 365.
 
 > [!IMPORTANT]
 > When adding an attribute to profile card, it takes up to 24 hours for the addition to be displayed.
@@ -76,35 +76,35 @@ Content-type: application/json
 
 ## Adding custom attributes
 
-You can add any of the [15 custom attributes](/graph/api/resources/onpremisesextensionattributes?view=graph-rest-beta) from Azure AD to users' profile cards by configuring your tenant settings in Microsoft Graph. You can add one **profileCardProperty** resource at a time.
+You can add any of the 15 Azure AD [custom extension attributes](/graph/api/resources/onpremisesextensionattributes?view=graph-rest-beta) to users' profile cards by configuring your organization settings and [adding the corresponding value as a profileCardProperty] (/graph/api/organizationsettings-post-profilecardproperties?view=graph-rest-beta) in Microsoft Graph. You can add one **profileCardProperty** resource at a time.
 
 It takes up to 24 hours for the changes to show on profile cards.
 
 Custom properties are not searchable and can't be used to search for people across Microsoft apps and services.
 
-The following table shows how the Azure AD custom attribute names correspond to the supported values for the **directoryPropertyName** property of the [profileCardProperty] (/graph/api/resources/profilecardproperty?view=graph-rest-beta) entity. These Azure AD custom attribute names are *not case-sensitive*:
+The following table shows how the Azure AD custom extension attribute names correspond to the supported values for the **directoryPropertyName** property of the [profileCardProperty] (/graph/api/resources/profilecardproperty?view=graph-rest-beta) resource. These Azure AD custom extension attribute names are *not case-sensitive*:
 
-|Attribute string|profileCardProperty value|
-|:---------------|:----------|
-|customAttribute1| extensionAttribute1 |
-|customAttribute2| extensionAttribute2 |
-|customAttribute3| extensionAttribute3 |
-|customAttribute4| extensionAttribute4 |
-|customAttribute5| extensionAttribute5 |
-|customAttribute6| extensionAttribute6 |
-|customAttribute7| extensionAttribute7 |
-|customAttribute8| extensionAttribute8 |
-|customAttribute9| extensionAttribute9 |
-|customAttribute10| extensionAttribute10 |
-|customAttribute11| extensionAttribute11 |
-|customAttribute12| extensionAttribute12 |
-|customAttribute13| extensionAttribute13 |
-|customAttribute14| extensionAttribute14 |
-|customAttribute15| extensionAttribute15 |
+|Azure AD custom extension attribute | Value to specify as directoryPropertyName |
+|:--------------------|:-----------------|
+| extensionAttribute1 | customAttribute1 |
+| extensionAttribute2 | customAttribute2 |
+| extensionAttribute3 | customAttribute3 |
+| extensionAttribute4 | customAttribute4 |
+| extensionAttribute5 | customAttribute5 |
+| extensionAttribute6 | customAttribute6 |
+| extensionAttribute7 | customAttribute7 |
+| extensionAttribute8 | customAttribute8 |
+| extensionAttribute9 | customAttribute9 |
+| extensionAttribute10 | customAttribute10 |
+| extensionAttribute11 | customAttribute11 |
+| extensionAttribute12 | customAttribute12 |
+| extensionAttribute13 | customAttribute13 |
+| extensionAttribute14 | customAttribute14 |
+| extensionAttribute15 | customAttribute15 |
 
 ## Example
 
-The following example adds the first Azure AD custom attribute to the profile card, using the display name **Cost center**. For users that have set their language settings to German-Austria, the display name will be **Kostenstelle**.
+The following example adds the first Azure AD custom extension attribute to the profile card, using the display name **Cost center**. For users that have set their language settings to German-Austria, the display name will be **Kostenstelle**.
 
 ```http
 POST https://graph.microsoft.com/beta/organization/{tenantid}/settings/profileCardProperties
