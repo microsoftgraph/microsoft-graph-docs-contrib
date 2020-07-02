@@ -11,6 +11,17 @@ This changelog covers specific API-level changes in Microsoft Graph v1.0 and bet
 
 For a summary of the value of these API changes, as well as recent tools, components, guidance, and tutorial additions, see [What's new in Microsoft Graph](whats-new-overview.md).
 
+## July 2020
+
+### Identity and access
+| **Change type** | **Version**   | **Description**                          |
+| :-------------- | :------------ | :--------------------------------------- |
+| Addition | beta | Added the **settings** navigation property to [organization](../graph/api/resources/organization?view=graph-rest-beta entity.) |
+| Addition | beta | Added the **organizationSettings** entity  |
+| Addition | beta | Added the **profileCardProperties** navigation property to [organizationSettings](../graph/api/resources/organizationsettings?view=graph-rest-beta) entity. |
+| Addition | beta | Added the **profileCardProperty** entity and following operations: <br/> [List](../api/organizationsettings-list-profilecardproperties.md) <br/> [Create](../api/organizationsettings-post-profilecardproperties.md) <br/> [Get profileCardProperty](../api/profilecardproperty-get.md?view=graph-rest-beta) entity. <br/> [Update profileCardProperty](../api/profilecardproperty-update.md?view=graph-rest-beta) <br/> [Delete](../api/profilecardproperty-delete.md) |
+
+
 ## June 2020
 
 ### Calendar
@@ -142,9 +153,6 @@ For a summary of the value of these API changes, as well as recent tools, compon
 |Addition|beta|Added the [synchronizationJobApplicationParameters](/graph/api/resources/synchronization-synchronizationJobApplicationParameters?view=graph-rest-beta) resource type|
 |Addition|beta|Added the [synchronizationJobSubject](/graph/api/resources/synchronization-synchronizationJobSubject?view=graph-rest-beta) resource type|
 |Addition|beta|Added the [provisionOnDemand](/graph/api/synchronization-synchronizationJob-provisionOnDemand?view=graph-rest-beta) method to the [synchronizationJob](/graph/api/resources/synchronization-synchronizationJob?view=graph-rest-beta) resource|
-| Addition | beta | Added the **settings** navigation property to [organization](../graph/api/resources/organization?view=graph-rest-beta entity. |
-| Addition | beta | Added the **profileCardProperties** navigation property to [organizationSettings](../graph/api/resources/organizationsettings?view=graph-rest-beta) entity. |
-| Addition | beta | Added the **profileCardProperty** entity and following operations: <br/> [Get profileCardProperty](../api/profilecardproperty-get.md?view=graph-rest-beta) entity. <br/> [Update profileCardProperty](../api/profilecardproperty-update.md?view=graph-rest-beta) entity.|
 
 ### Search
 
