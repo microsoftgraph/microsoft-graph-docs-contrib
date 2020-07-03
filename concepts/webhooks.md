@@ -208,7 +208,6 @@ When many changes occur, Microsoft Graph may send multiple notifications that co
   "value": [
     {
       "id": "lsgTZMr9KwAAA",
-      "sequenceNumber": 10,
       "subscriptionId":"{subscription_guid}",
       "subscriptionExpirationDateTime":"2016-03-19T22:11:09.952Z",
       "clientState":"secretClientValue",
