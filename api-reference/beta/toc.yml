@@ -9760,11 +9760,11 @@ items:
           - name: Create
             href: api/organizationsettings-post-profilecardproperties.md  
           - name: Get
-            href: api/organizationsettings-get-profilecardproperties.md    
+            href: api/profilecardproperty-get.md    
           - name: Update
-            href: api/organizationsettings-update-profilecardproperties.md  
+            href: api/profilecardproperty-update.md  
           - name: Delete
-            href: api/organizationsettings-delete-profilecardproperties.md        
+            href: api/profilecardproperty-delete.md        
         - name: Org hierarchy
           href: resources/directoryobject.md
           items:
