@@ -41,7 +41,7 @@ items:
       - name: Tutorial
         href: /learn/modules/msgraph-changenotifications-trackchanges
       - name: Missing Outlook notifications (preview)
-        href: /graph/webhooks-outlook-authz?context=graph/api/1.0
+        href: /graph/webhooks-lifecycle?context=graph/api/1.0
     - name: Change tracking
       displayname: Delta query, track changes, Outlook calendar, Groups, Outlook mail, Users
       items:

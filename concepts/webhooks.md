@@ -265,7 +265,7 @@ You can optionally configure the firewall that protects your notification URL to
 - [changeNotification](/graph/api/resources/changenotification?view=graph-rest-beta) resource type
 - [changeNotificationCollection](/graph/api/resources/changenotificationcollection?view=graph-rest-beta) resource type
 - [Change notifications and change tracking tutorial](/learn/modules/msgraph-changenotifications-trackchanges)
-- [Lifecycle notifications (preview)](/graph/concepts/webhooks-outlook-authz.md)
+- [Lifecycle notifications (preview)](/graph/concepts/webhooks-lifecycle.md)
 
 [contact]: /graph/api/resources/contact?view=graph-rest-1.0
 [conversation]: /graph/api/resources/conversation?view=graph-rest-1.0

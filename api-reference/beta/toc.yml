@@ -41,7 +41,7 @@ items:
       - name: Tutorial
         href: /learn/modules/msgraph-changenotifications-trackchanges
       - name: Missing Outlook notifications (preview)
-        href: /graph/webhooks-outlook-authz?context=graph/api/beta
+        href: /graph/webhooks-lifecycle?context=graph/api/beta
       - name: Notifications with resource data (preview)
         href: /graph/webhooks-with-resource-data?context=graph/api/beta
     - name: Change tracking
