@@ -19,7 +19,8 @@ Represents a physical printer device that has been registered with the Universal
 
 | Method       | Return Type | Description |
 |:-------------|:------------|:------------|
-| [Get printer](../api/printer-get.md) | [printer](printer.md) | Read the properties and relationships of the printer object. |
+| [Create](../api/printer-create.md) | [printerCreateOperation](printerCreateOperation.md) | Create (register) a new printer with Universal Print. |
+| [Get](../api/printer-get.md) | [printer](printer.md) | Read the properties and relationships of the printer object. |
 | [Update](../api/printer-update.md) | [printer](printer.md) | Update the printer object. |
 | [Delete](../api/printer-delete.md) | None | Unregister the physical printerfrom the Universal Print service. |
 | [getCapabilities](../api/printer-getcapabilities.md) | [printerCapabilities](printercapabilities.md) | Get a list of capabilities for the printer. |
