@@ -73,7 +73,7 @@ Content-Type: application/json
 <!-- {
   "blockType": "response",
   "truncated": true,
-  "@odata.type": "microsoft.graph.conversationmember"
+  "@odata.type": "microsoft.graph.conversationMember"
 }
 -->
 ``` http
