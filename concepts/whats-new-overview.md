@@ -12,6 +12,10 @@ See highlights of what's new in Microsoft Graph, and how you can [share your ide
 > [!IMPORTANT]
 > Features, including APIs and tools, in _preview_ status may change without notice, and some may never be promoted to generally available (GA) status. Do not use preview features in production apps.
 
+## July 2020: New and generally available
+
+### Change notifications
+Removed the erronously introduced **sequenceNumber** property from the [changeNotification](/graph/api/resources/changenotification) resource.
 
 ## July 2020: New in preview only
 
@@ -74,7 +78,7 @@ In addition to tracking incremental changes on events in a **calendarView** (col
   - margins
   - collation
   - document scaling
-- Support for print resolution (DPI) and document scaling as part of [default printer settings](/graph/api/resources/printerdefaults?view=graph-rest-beta)
+- Support for print resolution (DPI) and document scaling as part of [default printer settings](/graph/api/resources/printerdefaults?view=graph-rest-beta).
 - Support for the following [document configuration](/graph/api/resources/printerdocumentconfiguration?view=graph-rest-beta) settings:
   - input bins
   - output bins
@@ -86,7 +90,7 @@ In addition to tracking incremental changes on events in a **calendarView** (col
   - multi-page layout specifying the direction to lay out pages per sheet
   - collation
   - scaling
-- Expand documents when [listing pring jobs](/graph/api/printer-list-jobs?view=graph-rest-beta)
+- Expand documents when [listing pring jobs](/graph/api/printer-list-jobs?view=graph-rest-beta).
 - [Register a printer]() and use the [printerCreateOperation](/graph/api/resources/printercreateoperation?view=graph-rest-beta) resource to track and verify the registration of the printer.
 - [Get long-running printer registration operation](/graph/api/printoperation-get?view=graph-rest-beta) within current user or app's tenant.
 - A few renaming of properties and enum types - see details in the [June](changelog.md#june-2020) changelog updates for cloud printing.
@@ -96,7 +100,7 @@ Intune [June](changelog.md#june-2020) updates in beta.
 
 ### Education
 - Can use delegated permissions `EduRoster.ReadBasic` to [get](/graph/api/educationuser-get?view=graph-rest-beta) the ID of a [teacher](/graph/api/resources/educationteacher?view=graph-rest-beta) or [student](/graph/api/resources/educationstudent?view=graph-rest-beta) in an external source program, as the **externalId** property.
-- Use the **externalSource** property to track the value `lms` if an education [organization]/graph/api/resources/educationorganization?view=graph-rest-beta) or [class](/graph/api/resources/educationclass?view=graph-rest-beta) is created from a learning management system (LMS).
+- Use the **externalSource** property to track the value `lms` if an education [organization](/graph/api/resources/educationorganization?view=graph-rest-beta) or [class](/graph/api/resources/educationclass?view=graph-rest-beta) is created from a learning management system (LMS).
 
 ### Identity and access
 - IT professionals can use [connector](/graph/api/resources/connector?view=graph-rest-beta) resources that are lightweight agents to connect to [Azure AD Application Proxy](/azure/active-directory/manage-apps/what-is-application-proxy), and [publish on-premises web applications apps externally](/graph/api/resources/onpremisespublishing?view=graph-rest-beta), so that remote users of their organizations can access these apps in a secure manner.
