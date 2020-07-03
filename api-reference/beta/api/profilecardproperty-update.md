@@ -59,7 +59,7 @@ If successful, this method returns a `200 OK` response code and an updated [prof
 
 ### Request
 
-The following is an example of the request.
+The following example adds a localized label "Kostnads Senter" for the locale "no-NB".
 <!-- {
   "blockType": "request",
   "name": "update_profilecardproperty"
