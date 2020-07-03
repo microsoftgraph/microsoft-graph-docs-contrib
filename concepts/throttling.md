@@ -92,6 +92,7 @@ The following resources currently provide a `Retry-After` header:
 - [Organization](/graph/api/resources/organization)
 - [Group setting](/graph/api/resources/groupsetting)
 - [Group setting template](/graph/api/resources/groupsettingtemplate)
+- [Report](/graph/api/resources/report)
 - [Subscription](/graph/api/resources/subscription)
 - [Invitation](/graph/api/resources/invitation)
 
@@ -124,7 +125,7 @@ Outlook service limits are evaluated for each app ID and mailbox combination. In
 |------------------------------------------------------------|-----------------|
 | 10,000 API requests in a 10 minute period                  | v1.0 and beta endpoints |
 | 4 concurrent requests                                      | v1.0 and beta endpoints   |
-| 15 megabit upload (PATCH, POST, PUT) in a 30 second period | v1.0 and beta endpoints   |
+| 15 megabytes (MB) upload (PATCH, POST, PUT) in a 30 second period | v1.0 and beta endpoints   |
 
 #### Outlook service resources
 
@@ -317,6 +318,17 @@ Other factors that impact a request cost:
   - CPULimitExceeded - Throttling is because the limit for cpu allocation is exceeded.
   - WriteLimitExceeded - Throttling is because the write limit is exceeded.
   - ResourceUnitLimitExceeded - Throttling is because the limit for the allocated resource unit is exceeded.
+
+### Microsoft Graph reports service limits
+
+The following limits apply to any request on `/reports`.
+
+| Operation                 | Limit per app per tenant     | Limit per tenant           |
+|---------------------------|------------------------------|----------------------------|
+| Any request (CSV)         | 14 requests per 10 minutes   | 40 requests per 10 minutes |
+| Any request (JSON, beta)  | 100 requests per 10 minutes  | n/a                        |
+
+The preceding limits apply individually to each report API. For example a request to Microsoft Teams user activity report API and a request to Outlook user activity report API within 10 minutes will count as 1 request out of 14 for each API, not 2 requests out of 14 for both.
 
 ### Invitation manager service limits
 
