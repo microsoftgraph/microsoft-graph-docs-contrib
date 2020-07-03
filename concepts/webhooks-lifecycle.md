@@ -29,7 +29,7 @@ To receive lifecycle notifications, you can use the existing **notificationUrl**
 
 ## Creating a subscription
 
-When creating a subscription, you can specify a separate endpoint using the **lifecycleNotificationUrl** property. If you specify the endpoint, all current and future types of lifecycle notifications will be delivered there. This endpoint can be the same as the **notificationUrl**.
+When creating a subscription, you must specify a separate notification endpoint using the **lifecycleNotificationUrl** property. If you specify the endpoint, all current and future types of lifecycle notifications will be delivered there. Otherwise, `subscriptionRemoved` and `missed` lifecycle notifications will not be delivered. This endpoint can be the same as the **notificationUrl**.
 
 ### Subscription request example
 
@@ -51,7 +51,7 @@ Content-Type: application/json
 > **Note:** You need to validate both endpoints as described in [Managing subscriptions](webhooks.md#managing-subscriptions).
 If you choose to use the same URL for both endpoints you will receive and respond to two validation requests.
 
-> **Note:** You cannot update (`PATCH`) the existing subscriptions to add the **lifecycleNotificationUrl** property. You should remove such existing subscriptions, and create new subscriptions and specify the **lifecycleNotificationUrl** property. 
+> **Note:** You cannot update (`PATCH`) the existing subscriptions to add the **lifecycleNotificationUrl** property. You should remove such existing subscriptions, and create new subscriptions and specify the **lifecycleNotificationUrl** property. Existing subscriptions without **lifecycleNotificationUrl** property will not receive the `subscriptionRemoved` and `missed`.
 
 ## Responding to subscriptionRemoved notifications
 
