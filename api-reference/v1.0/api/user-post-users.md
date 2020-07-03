@@ -152,8 +152,6 @@ Create a new user, with a local account identity with a sign-in name, an email a
 
 #### Request
 
-
-# [HTTP](#tab/http)
 <!-- {	
   "blockType": "request",	
   "name": "create_user_from_users_identities"	
@@ -183,31 +181,12 @@ Content-type: application/json
     }
   ],
   "passwordProfile" : {
-    "password": "password-value"
+    "password": "password-value",
+    "forceChangePasswordNextSignIn": false
   },
   "passwordPolicies": "DisablePasswordExpiration"
 }
 ```
-# [C#](#tab/csharp)
-[!INCLUDE [sample-code](../includes/snippets/csharp/create-user-from-users-identities-csharp-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [JavaScript](#tab/javascript)
-[!INCLUDE [sample-code](../includes/snippets/javascript/create-user-from-users-identities-javascript-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [Objective-C](#tab/objc)
-[!INCLUDE [sample-code](../includes/snippets/objc/create-user-from-users-identities-objc-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [Java](#tab/java)
-[!INCLUDE [sample-code](../includes/snippets/java/create-user-from-users-identities-java-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
----
-
-
----
 
 #### Response
 
