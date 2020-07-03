@@ -1487,6 +1487,8 @@ items:
             href: api/printer-create.md
           - name: Get
             href: api/printer-get.md
+          - name: Update
+            href: api/printer-update.md
           - name: Delete
             href: api/printer-delete.md
           - name: Get capabilities
