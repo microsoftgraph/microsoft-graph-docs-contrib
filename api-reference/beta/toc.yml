@@ -9754,6 +9754,7 @@ items:
         - name: Get org settings
           href: api/organizationSettings-get.md
         - name: Profile card property
+          href: resources/profilecardproperty.md
           items:
           - name: List 
             href: api/organizationsettings-list-profilecardproperties.md
