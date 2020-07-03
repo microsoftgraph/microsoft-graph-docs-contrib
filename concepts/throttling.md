@@ -55,7 +55,9 @@ The following resources currently provide a `Retry-After` header:
 - [People and social](/graph/api/resources/social-overview?view=graph-rest-beta)
 - [Drive (OneDrive)](/graph/api/resources/drive?view=graph-rest-1.0)
 - [External item (Microsoft Search)](/graph/api/resources/externalitem?view=graph-rest-beta)
+- [Report](/graph/api/resources/report)
 - [Subscription](/graph/api/resources/subscription)
+- [Invitation](/graph/api/resources/invitation)
 
 For a broader discussion of throttling on the Microsoft Cloud, see [Throttling Pattern](https://docs.microsoft.com/azure/architecture/patterns/throttling).
 
@@ -86,7 +88,7 @@ Outlook service limits are evaluated for each app ID and mailbox combination. In
 |------------------------------------------------------------|-----------------|
 | 10,000 API requests in a 10 minute period                  | v1.0 and beta endpoints |
 | 4 concurrent requests                                      | v1.0 and beta endpoints   |
-| 15 megabit upload (PATCH, POST, PUT) in a 30 second period | v1.0 and beta endpoints   |
+| 15 megabytes (MB) upload (PATCH, POST, PUT) in a 30 second period | v1.0 and beta endpoints   |
 
 #### Outlook service resources
 
@@ -153,11 +155,67 @@ A maximum of 3000 messages per app per day can be sent to a given channel.
 See also [Microsoft Teams limits](/graph/api/resources/teams-api-overview#microsoft-teams-limits) 
 and [polling requirements](/graph/api/resources/teams-api-overview#polling-requirements).
 
-### Microsoft Graph change notifications subscription operations
+### Microsoft Graph reports service limits
 
-The following limits apply to any request on `/subscriptions`.
+The following limits apply to any request on `/reports`.
 
-| Operation                 | Limit per app per tenant     | Limit per app accross all tenants |
-|---------------------------|------------------------------|-----------------------------------|
-| POST, PUT, DELETE, PATCH  | 1000 requests per 20 seconds | 2000 requests per 20 seconds      |
-| All other HTTP methods    | 5000 requests per 20 seconds | 10000 requests per 20 seconds     |
+| Operation                 | Limit per app per tenant     | Limit per tenant           |
+|---------------------------|------------------------------|----------------------------|
+| Any request (CSV)         | 14 requests per 10 minutes   | 40 requests per 10 minutes |
+| Any request (JSON, beta)  | 100 requests per 10 minutes  | n/a                        |
+
+The preceding limits apply individually to each report API. For example a request to Microsoft Teams user activity report API and a request to Outlook user activity report API within 10 minutes will count as 1 request out of 14 for each API, not 2 requests out of 14 for both.
+
+### Invitation manager service limits
+
+The following limits apply to any request on `/invitations`.
+
+| Operation                 | Limit per tenant             |
+|---------------------------|------------------------------|
+| Any operation             | 150 requests per 5 seconds   |
+
+<!-- { "blockType": "throttlinggenstart" } -->
+
+### Education service limits
+
+[!INCLUDE [Education rostering APIS throttling documentation](../includes/throttling-education-rostering-apis.md)]
+
+### Excel service limits
+
+[!INCLUDE [Excel throttling documentation](../includes/throttling-excel.md)]
+
+### Identity and access audit logs service limits
+
+[!INCLUDE [Identity and access audit logs throttling documentation](../includes/throttling-Identity-and-access-audit-logs.md)]
+
+### Identity providers service limits
+
+[!INCLUDE [CPIM throttling documentation](../includes/throttling-cpim.md)]
+
+### Intune service limits
+
+[!INCLUDE [Intune applications throttling documentation](../includes/throttling-intune-applications.md)]
+[!INCLUDE [Intune books throttling documentation](../includes/throttling-intune-books.md)]
+[!INCLUDE [Intune company terms throttling documentation](../includes/throttling-intune-company-terms.md)]
+[!INCLUDE [Intune device configuration throttling documentation](../includes/throttling-intune-device-configuration.md)]
+[!INCLUDE [Intune device enrollment throttling documentation](../includes/throttling-intune-device-enrollment.md)]
+[!INCLUDE [Intune devices throttling documentation](../includes/throttling-intune-devices.md)]
+[!INCLUDE [Intune enrollment throttling documentation](../includes/throttling-intune-enrollment.md)]
+[!INCLUDE [Intune managed applications throttling documentation](../includes/throttling-intune-managed-applications.md)]
+[!INCLUDE [Intune notifications throttling documentation](../includes/throttling-intune-notifications.md)]
+[!INCLUDE [Intune rbac throttling documentation](../includes/throttling-intune-rbac.md)]
+[!INCLUDE [Intune remote assistance throttling documentation](../includes/throttling-intune-remote-assistance.md)]
+[!INCLUDE [Intune reporting throttling documentation](../includes/throttling-intune-reporting.md)]
+[!INCLUDE [Intune TEM throttling documentation](../includes/throttling-intune-tem.md)]
+[!INCLUDE [Intune troubleshooting throttling documentation](../includes/throttling-intune-troubleshooting.md)]
+[!INCLUDE [Intune wip throttling documentation](../includes/throttling-intune-wip.md)]
+
+### Skype service limits
+
+[!INCLUDE [Skype calling throttling documentation](../includes/throttling-skype-calling.md)]
+
+### Subscription service limits
+
+[!INCLUDE [Subscription services throttling documentation](../includes/throttling-subscription-services.md)]
+
+<!-- { "blockType": "throttlinggenend" } -->
