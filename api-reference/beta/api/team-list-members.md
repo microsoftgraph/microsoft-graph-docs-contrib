@@ -73,6 +73,7 @@ GET https://graph.microsoft.com/beta/teams/{teamsId}/members
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
+
 {
     "@odata.context": "https://graph.microsoft.com/beta/$metadata#teams('ee0f5ae2-8bc6-4ae5-8466-7daeebbfa062')/members",
     "@odata.count": 2,
