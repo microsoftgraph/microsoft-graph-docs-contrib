@@ -66,6 +66,7 @@ GET https://graph.microsoft.com/beta/teams/{teamsId}/members
 <!-- {
   "blockType": "response",
   "truncated": true,
+  "name": "get_conversationmember",
   "@odata.type": "collection(microsoft.graph.conversationmember)"
 }
 -->
@@ -96,4 +97,3 @@ Content-Type: application/json
         }
     ]
 }```
-
