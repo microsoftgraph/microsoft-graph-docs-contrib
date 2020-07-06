@@ -9755,19 +9755,6 @@ items:
         items:
         - name: Get org settings
           href: api/organizationSettings-get.md
-        - name: Profile card property
-          href: resources/profilecardproperty.md
-          items:
-          - name: List 
-            href: api/organizationsettings-list-profilecardproperties.md
-          - name: Create
-            href: api/organizationsettings-post-profilecardproperties.md  
-          - name: Get
-            href: api/profilecardproperty-get.md    
-          - name: Update
-            href: api/profilecardproperty-update.md  
-          - name: Delete
-            href: api/profilecardproperty-delete.md        
         - name: Org hierarchy
           href: resources/directoryobject.md
           items:
@@ -10710,6 +10697,19 @@ items:
             href: api/personwebsite-update.md
           - name: Delete
             href: api/personwebsite-delete.md
+      - name: Profile card customization (preview)
+          href: resources/profilecardproperty.md
+          items:
+          - name: List 
+            href: api/organizationsettings-list-profilecardproperties.md
+          - name: Create
+            href: api/organizationsettings-post-profilecardproperties.md  
+          - name: Get
+            href: api/profilecardproperty-get.md    
+          - name: Update
+            href: api/profilecardproperty-update.md  
+          - name: Delete
+            href: api/profilecardproperty-delete.md        
       - name: Insights
         href: resources/officegraphinsights.md
         items:
