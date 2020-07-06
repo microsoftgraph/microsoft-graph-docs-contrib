@@ -93,7 +93,11 @@ The analytics API enables you to synchronize or integrate user analytics data wi
 
 ## Why integrate with the profile API (preview)?
 
-The [profile](/graph/api/resources/profile?view=graph-rest-beta) API represents the next generation in modeling and representing people in Microsoft 365 services. Profile data can be used together with people data to build customized experiences based on Microsoft Graph. 
+The [profile](/graph/api/resources/profile?view=graph-rest-beta) API represents the next generation in modeling and representing people in Microsoft 365 services. Profile data can be used together with people data to build customized experiences based on Microsoft Graph.
+
+## Why configure profileCardProperties in your organization (preview)?
+
+The [profileCardProperties](/graph/api/resources/profileCardProperties?view=graph-rest-beta) API allows administrators to customize how information about their organization surfaces within Microsoft 365 people experiences.  
 
 ## API reference
 
