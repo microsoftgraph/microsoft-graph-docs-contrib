@@ -142,7 +142,7 @@ The main difference during subscription creation will be the **notificationUrl**
 
 - azure key vault name: the name you gave to the key vault when you created it. Can be found in the DNS name.
 - secret name: the name you gave to the secret when you created it. Can be found on the Azure Key Vault "Secrets" page.
-- domain name: name of your tenant e.g. consto.onmicrosoft.com or contoso.com.
+- domain name: name of your tenant e.g. consto.onmicrosoft.com or contoso.com. This domain will be used to access the Azure Key Vault so it is important that it matches the domain used by the Azure subscription which holds the Azure Key Vault. To get this information, you can navigate to the overview page of the Azure Key Vault you created, click on the subscription and the domain name will be displayed under the **Directory** field.
 
 #### Receiving notifications
 
