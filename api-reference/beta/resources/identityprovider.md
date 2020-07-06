@@ -1,10 +1,10 @@
 ---
 title: "identityProvider resource type"
-description: "Represents an Azure Active Directory (Azure AD) identity provider. The identity provider can be Microsoft, Google, Facebook, Amazon, or LinkedIn."
+description: "Represents an Azure Active Directory (Azure AD) identity provider."
 localization_priority: Normal
 doc_type: resourcePageType
 ms.prod: "microsoft-identity-platform"
-author: "Nickgmicrosoft"
+author: "namkedia"
 ---
 
 # identityProvider resource type
@@ -19,11 +19,11 @@ In a B2C tenant the identity provider can be Microsoft, Google, Facebook, Amazon
 
 Configuring an identity provider in your Azure AD B2C tenant enables users to:
 
-* Sign up and sign in using a social account or a custom OpenID Connect supported provider in a consumer application. For example, an application can use Azure AD B2C to allow users to sign up for the service using a Facebook account.
+* Sign up and sign in using a social account or a custom OpenID Connect supported provider in a consumer application. For example, an application can use Azure AD B2C to allow users to sign up for the service using a Facebook account or their own custom identity provider that complies with OIDC protocol.
 * Link an existing local account to a social account in a consumer application. For example, a user has created a username and password (local account) in the application. The user later decides to link the existing local account to their Facebook account so they can sign in using Facebook.
 
 Configuring an identity provider in your Azure AD tenant enables new B2B guest scenarios. For example, an organization has resources in Microsoft 365 that need to be shared with a Gmail user. The Gmail user will use their Google account credentials to authenticate and access the documents.
-Represents an Azure Active Directory (Azure AD) identity provider. The identity provider can be Microsoft, Google, Facebook, Amazon, or LinkedIn.
+
 ## Methods
 
 | Method       | Return Type  |Description|
@@ -32,7 +32,8 @@ Represents an Azure Active Directory (Azure AD) identity provider. The identity 
 |[Create identityProvider](../api/identityprovider-post-identityproviders.md)|identityProvider|Create a new identityProvider.|
 |[Update identityProvider](../api/identityprovider-update.md)|None|Update an existing identityProvider.|
 |[Delete identityProvider](../api/identityprovider-delete.md)|None|Delete an existing identityProvider.|
-|[List identityProviders](../api/identityprovider-list.md)|identityProvider collection|List all identityProviders configured in a tenant.|
+|[List configured identityProviders](../api/identityprovider-list.md)|identityProvider collection|List all identityProviders configured in a tenant.|
+|[List available identityProviders](../api/identityprovider-list.md)|identityProvider collection|List all identityProviders available in a tenant.|
 
 ## Properties
 

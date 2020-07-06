@@ -25,7 +25,9 @@ One of the following permissions is required to call this API. To learn more, in
 |Delegated (personal Microsoft account)| Not supported.|
 |Application| IdentityProvider.ReadWrite.All|
 
-The work or school account must be a global administrator of the tenant.
+The work or school account needs to belong to one of the following two roles:
+* Global administrator
+* External Identity Provider administrator
 
 ## HTTP request
 

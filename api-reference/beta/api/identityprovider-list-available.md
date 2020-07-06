@@ -1,19 +1,19 @@
 ---
-title: "List configured identityProviders"
-description: "Retrieve all configured identityProviders in the directory."
+title: "List available identityProviders"
+description: "Retrieve all available identityProviders in the directory."
 localization_priority: Normal
 doc_type: apiPageType
 author: "namkedia"
 ms.prod: "microsoft-identity-platform"
 ---
 
-# List identityProviders
+# List availableProvidersTypes
 
 Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Retrieve all configured [identityProviders](../resources/identityprovider.md) in the directory.
+Retrieves all identity provider types available in a directory.
 
 ## Permissions
 
@@ -33,7 +33,7 @@ The work or school account needs to belong to one of the following two roles:
 
 <!-- { "blockType": "ignored" } -->
 ```http
-GET /identityProviders
+GET /identityProviders/availableProviderTypes
 ```
 
 ## Request headers
@@ -48,11 +48,10 @@ Do not supply a request body for this method.
 
 ## Response
 
-If successful, this method returns `200 OK` response code and a collection of [identityProviders](../resources/identityprovider.md) in JSON representation in the response body.
-
+If successful, this method returns `200 OK` response code and a collection of available identity providers in JSON representation in the response body.
 ## Example
 
-The following example retrieves all configured **identityProvider**.
+The following example retrieves all **identityProvider**.
 
 ##### Request
 
@@ -60,10 +59,10 @@ The following example retrieves all configured **identityProvider**.
 # [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
-  "name": "get_identityproviders"
+  "name": "get_availableProviderTypes"
 }-->
 ```msgraph-interactive
-GET https://graph.microsoft.com/beta/identityProviders
+GET https://graph.microsoft.com/beta/identityProviders/availableProviderTypes
 ```
 # [C#](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/get-identityproviders-csharp-snippets.md)]
@@ -82,6 +81,7 @@ GET https://graph.microsoft.com/beta/identityProviders
 
 ##### Response
 
+
 <!-- {
   "blockType": "response",
   "truncated": true,
@@ -94,13 +94,17 @@ Content-type: application/json
 
 {
     "value": [
-      {
-        "id": "Amazon-OAUTH",
-        "name": "Login with Amazon",
-        "type": "Amazon",
-        "clientId": "56433757-cadd-4135-8431-2c9e3fd68ae8",
-        "clientSecret": "*****"
-      }
+      "Amazon",
+      "OpenIDConnect",
+      "Facebook",
+      "GitHub",
+      "Google",
+      "LinkedIn",
+      "Microsoft",
+      "QQ",
+      "Twitter",
+      "WeChat",
+      "Weibo"
     ]
 }
 ```
@@ -110,7 +114,7 @@ Content-type: application/json
 <!--
 {
   "type": "#page.annotation",
-  "description": "List identityProviders",
+  "description": "List configured identityProviders",
   "keywords": "",
   "section": "documentation",
   "tocPath": "",
