@@ -1,19 +1,19 @@
 ---
-title: List taskTriggers
-description: Retrieve a list of task triggers associated with the printer.
+title: Get taskTrigger
+description: Get a task trigger from a printer.
 author: braedenp-msft
 localization_priority: Normal
 ms.prod: universal-print
 doc_type: apiPageType
 ---
 
-# List taskTriggers
+# Get taskTrigger
 
 Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Retrieve a list of [task triggers](../resources/printtasktrigger.md) associated with the [printer](../resources/printer.md). The list of task triggers defines which tasks will be triggered as a result of events that occur during printing.
+Get a [task trigger](../resources/printtasktrigger.md) from a [printer](../resources/printer.md).
 
 See the [Pull Print Overview](/graph/universal-print-concept-overview.md#extending-universal-print-to-support-pull-printing) to understand how you can use this API to add Pull Print support to Universal Print.
 
@@ -26,19 +26,13 @@ In addition to the following permissions, the user's tenant must have an active 
 |:---------------|:--------------------------------------------|
 |Delegated (work or school account)| Printer.Read.All, Printer.ReadWrite.All, Printer.FullControl.All |
 |Delegated (personal Microsoft account)|Not Supported.|
-|Application| Not supported. |
+|Application|Not Supported.|
 
 ## HTTP request
 <!-- { "blockType": "ignored" } -->
 ```http
-GET /print/printers/{id}/taskTriggers
+GET /print/printers/{id}/taskTriggers/{id}
 ```
-
-## Optional query parameters
-This method supports some of the OData query parameters to help customize the response. For general information, see [OData query parameters](/graph/query-parameters).
-
-### Exceptions
-Some operators are not supported: `$count`, `$format`, `$search`, `$select`, `$skip`, `$top`.
 
 ## Request headers
 | Name      |Description|
@@ -48,7 +42,7 @@ Some operators are not supported: `$count`, `$format`, `$search`, `$select`, `$s
 ## Request body
 Do not supply a request body for this method.
 ## Response
-If successful, this method returns a `200 OK` response code and collection of [printTaskTrigger](../resources/printtasktrigger.md) objects in the response body.
+If successful, this method returns a `200 OK` response code and [printTaskTrigger](../resources/printtasktrigger.md) object in the response body.
 ## Example
 ##### Request
 The following is an example of the request.
@@ -56,10 +50,10 @@ The following is an example of the request.
 # [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
-  "name": "get_printer_tasktriggers"
+  "name": "get_printer_tasktrigger"
 }-->
 ```msgraph-interactive
-GET https://graph.microsoft.com/beta/print/printers/{id}/taskTriggers
+GET /print/printers/{printerId}/taskTriggers/{taskTriggerId}
 ```
 
 ---
@@ -70,22 +64,17 @@ The following is an example of the response.
 <!-- {
   "blockType": "response",
   "truncated": true,
-  "@odata.type": "microsoft.graph.printTaskTrigger",
-  "isCollection": true
+  "@odata.type": "microsoft.graph.printTaskTrigger"
 } -->
 ```http
 HTTP/1.1 200 OK
 Content-type: application/json
-Content-length: 254
+Content-length: 181
 
 {
-  "@odata.context": "https://graph.microsoft.com/beta/$metadata#print/printers('fcc7fe6a-5ba7-4059-8017-702f3a41c8a4')/taskTriggers",
-  "value": [
-    {
-      "id": "b6a843ca-e60e-4e20-a222-a58d85eead6d",
-      "event": "jobStarted"
-    }
-  ]
+  "@odata.context": "https://graph.microsoft.com/beta/$metadata#print/printers/taskTriggers/$entity",
+  "id": "b6a843ca-e60e-4e20-a222-a58d85eead6d",
+  "event": "jobStarted"
 }
 ```
 
@@ -93,7 +82,7 @@ Content-length: 254
 2015-10-25 14:57:30 UTC -->
 <!-- {
   "type": "#page.annotation",
-  "description": "List taskTriggers",
+  "description": "Get taskTrigger",
   "keywords": "",
   "section": "documentation",
   "tocPath": ""
