@@ -39,10 +39,10 @@ POST /print/printers/{id}/taskTriggers
 | Content-type  | application/json. Required.|
 
 ## Request body
-In the request body, supply a JSON representation of a [printTaskTrigger](../resources/printtasktrigger.md) object.
+In the request body, supply a JSON representation of a [printTaskTrigger](../resources/printtasktrigger.md) object. Supply a reference to a [printTaskDefinition](../resources/printtaskdefinition.md) by using the `@odata.bind` format, as shown in the following example.
 
 ## Response
-If successful, this method returns a `201 Created` response code and a [printJob](../resources/printjob.md) object and associated [printTaskTrigger](../resources/printtasktrigger.md) in the response body. Supply a reference to a [printTaskDefinition](../resources/printtaskdefinition.md) by using the `@odata.bind` format, as shown in the following example.
+If successful, this method returns a `201 Created` response code and a [printTaskTrigger](../resources/printtasktrigger.md) in the response body.
 
 ## Example
 ##### Request

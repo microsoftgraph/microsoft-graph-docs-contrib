@@ -35,6 +35,8 @@ Represents a physical printer device that has been registered with the Universal
 | [Add allowedGroup](../api/printer-post-allowedgroups.md) | None | Grant the specified group access to submit print jobs to the associated printer. |
 | [Remove allowedGroup](../api/printer-delete-allowedgroup.md) | None | Revoke printer access from the specified group. |
 | [List taskTriggers](../api/printer-list-tasktriggers.md) | None | List [printTaskTriggers](printtasktrigger.md) associated with this printer. |
+| [Create taskTrigger](../api/printer-post-tasktriggers.md) | [printTaskTrigger](printtasktrigger.md) | Create a [printTaskTrigger](printtasktrigger.md) that runs when print events occur. |
+| [Delete taskTrigger](../api/printer-delete-tasktrigger.md) | None | Delete a [printTaskTrigger](printtasktrigger.md) that is associated with the printer. |
 
 ## Properties
 | Property     | Type        | Description |
