@@ -21,15 +21,14 @@ eDiscovery review sets are static set of electronically stored information colle
 | [Get](../api/ediscovery-reviewset-get.md) | [reviewSet](ediscovery-reviewset.md) | Read properties and relationships of reviewSet object. |
 | [Create](../api/ediscovery-reviewset-create.md) | [reviewSet](ediscovery-reviewset.md) | Create a new review set. |
 
-
 ## Properties
 
 | Property     | Type        | Description |
 |:-------------|:------------|:------------|
-|createdBy| [identitySet](https://docs.microsoft.com/graph/api/resources/identityset) | The user who created the review set. |
-|createdDateTime|DateTimeOffset| The datetime when the review set was created. The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 would look like this: `'2014-01-01T00:00:00Z'`|
+|createdBy| [identitySet](https://docs.microsoft.com/graph/api/resources/identityset) | The user who created the review set. Read-only. |
+|createdDateTime|DateTimeOffset| The datetime when the review set was created. The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 would look like this: `'2014-01-01T00:00:00Z'`. Read-only. |
 |displayName|String| The review set name. Name is unique with a maximum limit of 64 characters. |
-|id|String| The review set unique identifier. Read-only.|
+|id|String| The review set unique identifier. Read-only. |
 
 ## Relationships
 

@@ -39,11 +39,13 @@ POST /compliance/ediscovery/cases
 
 ## Request body
 
-In the request body, supply a JSON representation of [ediscoveryCase](../resources/ediscovery-case.md) object. The following table lists the required properties.
+In the request body, supply a JSON representation of [ediscoveryCase](../resources/ediscovery-case.md) object. The following table lists properties that can be submitted with the call.  Required properties are referenced in the description column.
 
 | Property     | Type        | Description |
 |:-------------|:------------|:------------|
-| displayName  | string      | The name of the eDiscovery case |
+| displayName  | string      | The name of the eDiscovery case (Required) |
+| description  | string      | The case description. |
+| externalId   | string      | The external case number for customer reference. |
 
 ## Response
 
