@@ -34,11 +34,11 @@ The [profile](../resources/profile.md) resource is a rich source of information 
 
 ## Personalize people experiences within your organization
 
-Feature: Profile Card Customization (preview)
+Feature: Profile card customization (preview)
 
-Provides the ability for an administrator to customize the information shown on the Profile Card used across Microsoft 365 within their organization.
+Provides the ability for an administrator to customize the information shown on the profile card used across Microsoft 365 within their organization.
 
-The [profileCardProperty](../resources/profileCardProperty.md) resource represents an attribute of a user on the Microsoft 365 profile card for an organization to surface in a shared people experience.
+The [profileCardProperty](../resources/profileCardProperty.md) resource represents an attribute of a user on the Microsoft 365 profile card for an organization to surface in a shared, people experience.
 
 ## Help users get the most relevant documents for their work
 

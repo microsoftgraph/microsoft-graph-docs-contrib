@@ -10706,8 +10706,9 @@ items:
           - name: Delete
             href: api/personwebsite-delete.md
       - name: Profile card customization (preview)
-        href: resources/profilecardproperty.md
         items:
+        - name: Profile card property
+          href: resources/profilecardproperty.md
         - name: List 
           href: api/organizationsettings-list-profilecardproperties.md
         - name: Create

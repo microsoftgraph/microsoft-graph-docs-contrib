@@ -1,6 +1,6 @@
 ---
 title: "profileCardProperty resource type"
-description: "Used to designate either a new property to surface in a shared people experience or one that will have a custom display name or annotation applied to it. An administrator can define a default display name string and a set of alternative translations for the languages that they support in their organization."
+description: "Used to designate either a new property to surface in a shared, people experience or one that will have a custom display name or annotation applied to it. An administrator can define a default display name string and a set of alternative translations for the languages that they support in their organization."
 localization_priority: Normal
 author: "kevinbellinger"
 ms.prod: "people"
@@ -11,9 +11,9 @@ doc_type: "resourcePageType"
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Represents an attribute of a user on the Microsoft 365 profile card for an organization to surface in a shared people experience.
+Represents an attribute of a user on the Microsoft 365 profile card for an organization to surface in a shared, people experience.
 
-This is an Azure Active Directory (Azure AD) attribute, such as `Alias` or `UserPrincipalName`, or a custom attribute. For a custom attribute, an administrator can define an `en-us` default display name string and a set of alternative translations for the languages that they support in their organization.
+The attribute can be an Azure Active Directory (Azure AD) built-in attribute, such as `Alias` or `UserPrincipalName`, or it can be a custom attribute. For a custom attribute, an administrator can define an `en-us` default display name string and a set of alternative translations for the languages that they support in their organization.
 
 For more information on adding properties to the profile card for an organization, see customize the profile card.
 
