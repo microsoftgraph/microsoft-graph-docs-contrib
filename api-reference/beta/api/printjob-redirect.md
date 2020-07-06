@@ -15,6 +15,8 @@ Namespace: microsoft.graph
 
 Redirect a [print job](../resources/printjob.md) to a different [printer](../resources/printer.md).
 
+See the [Pull Print Overview](/graph/universal-print-concept-overview.md#extending-universal-print-to-support-pull-printing) to understand how you can use this API to add Pull Print support to Universal Print.
+
 ## Permissions
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
 
@@ -37,14 +39,14 @@ POST /print/printers/{id}/jobs/{id}/redirect
 | Authorization | Bearer {token}. Required. |
 
 ## Request body
-In the request body, supply the ID of the printer that the print job should be moved to.
+In the request body, supply the ID of the printer that the print job should be redirected to.
 
 | Property     | Type        | Description |
 |:-------------|:------------|:------------|
-|destinationPrinterId|String|The ID of the printer the print job should be moved to.|
+|destinationPrinterId|String|The ID of the printer the print job should be redirected to.|
 
 ## Response
-If successful, this method returns a `200 OK` response code and a [printJob](../resources/printjob.md) object in the response body.
+If successful, this method returns a `200 OK` response code and a [printJob](../resources/printjob.md) object queued for the destination printer.
 
 ## Example
 The following example shows how to call this API.

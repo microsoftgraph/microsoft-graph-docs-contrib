@@ -1,19 +1,19 @@
 ---
-title: Update taskDefinition
-description: Update a task definition.
+title: Delete taskDefinition
+description: Delete a task definition.
 author: braedenp-msft
 localization_priority: Normal
 ms.prod: universal-print
 doc_type: apiPageType
 ---
 
-# Update taskDefinition
+# Delete taskDefinition
 
 Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Update a task definition.
+Delete a **taskDefinition**.
 
 See the [Pull Print Overview](/graph/universal-print-concept-overview.md#extending-universal-print-to-support-pull-printing) to understand how you can use this API to add Pull Print support to Universal Print.
 
@@ -31,24 +31,19 @@ In addition to the following permissions, the user's tenant must have an active 
 ## HTTP request
 <!-- { "blockType": "ignored" } -->
 ```http
-PATCH /print/taskDefinitions/{id}
+DELETE /print/taskDefinitions/{id}
 ```
-
 ## Request headers
-| Name      |Description|
-|:----------|:----------|
+| Name          | Description   |
+|:--------------|:--------------|
 | Authorization | Bearer {token}. Required. |
 
 ## Request body
-In the request body, supply the values for the relevant [printTaskDefinition](../resources/printtaskdefinition.md) fields that should be updated. Existing properties that are not included in the request body will maintain their previous values or be recalculated based on changes to other property values. For best performance, don't include existing values that haven't changed.
-
-| Property     | Type        | Description |
-|:-------------|:------------|:------------|
-|displayName|String|The name of the printTaskDefinition.|
-|createdBy|String|Information about the app that created the task definition. Only the `createdBy.displayName` property can be updated.|
+Do not supply a request body for this method.
 
 ## Response
-If successful, this method returns a `204 No Content` response code and a [printTaskDefinition](../resources/printtaskdefinition.md) object in the response body.
+If successful, this method returns a `204 No Content` response code. It does not return anything in the response body.
+
 ## Example
 ##### Request
 The following is an example of the request.
@@ -56,27 +51,31 @@ The following is an example of the request.
 # [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
-  "name": "print_update_taskdefinition"
+  "name": "delete_taskdefinition"
 }-->
-```msgraph-interactive
-PATCH https://graph.microsoft.com/beta/print/taskDefinitions/fab143fd-ee61-4358-8558-2c7dee953982
-Content-type: application/json
-Content-length: 122
-
-{
-  "displayName": "Test TaskDefinitionName",
-  "createdBy": {
-    "displayName": "Requesting App Display Name"
-  }
-}
+```http
+DELETE /print/taskDefinitions/4c6a0f26-8e5d-4bf6-91e6-4a5731adec19
 ```
+# [C#](#tab/csharp)
+[!INCLUDE [sample-code](../includes/snippets/csharp/delete-connector-csharp-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [JavaScript](#tab/javascript)
+[!INCLUDE [sample-code](../includes/snippets/javascript/delete-connector-javascript-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Objective-C](#tab/objc)
+[!INCLUDE [sample-code](../includes/snippets/objc/delete-connector-objc-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
 
 ##### Response
 The following is an example of the response.
+>**Note:** The response object shown here might be shortened for readability. All the properties will be returned from an actual call.
 <!-- {
-  "blockType": "response"
+  "blockType": "response",
+  "truncated": true
 } -->
 ```http
 HTTP/1.1 204 No Content
@@ -86,7 +85,7 @@ HTTP/1.1 204 No Content
 2015-10-25 14:57:30 UTC -->
 <!-- {
   "type": "#page.annotation",
-  "description": "Update taskDefinition",
+  "description": "Delete taskDefinition",
   "keywords": "",
   "section": "documentation",
   "tocPath": ""

@@ -1,19 +1,19 @@
 ---
-title: Update taskDefinition
-description: Update a task definition.
+title: Update task
+description: Update a print task.
 author: braedenp-msft
 localization_priority: Normal
 ms.prod: universal-print
 doc_type: apiPageType
 ---
 
-# Update taskDefinition
+# Update task
 
 Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Update a task definition.
+Update a print task.
 
 See the [Pull Print Overview](/graph/universal-print-concept-overview.md#extending-universal-print-to-support-pull-printing) to understand how you can use this API to add Pull Print support to Universal Print.
 
@@ -24,14 +24,14 @@ In addition to the following permissions, the user's tenant must have an active 
 
 |Permission type | Permissions (from least to most privileged) |
 |:---------------|:--------------------------------------------|
-|Delegated (work or school account)| Not supported. |
+|Delegated (work or school account)| Users.Read.All |
 |Delegated (personal Microsoft account)|Not Supported.|
-|Application| PrintTaskDefinition.ReadWrite.All |
+|Application| Not supported. |
 
 ## HTTP request
 <!-- { "blockType": "ignored" } -->
 ```http
-PATCH /print/taskDefinitions/{id}
+PATCH /print/taskDefinitions/{id}/tasks/{id}
 ```
 
 ## Request headers
@@ -40,15 +40,9 @@ PATCH /print/taskDefinitions/{id}
 | Authorization | Bearer {token}. Required. |
 
 ## Request body
-In the request body, supply the values for the relevant [printTaskDefinition](../resources/printtaskdefinition.md) fields that should be updated. Existing properties that are not included in the request body will maintain their previous values or be recalculated based on changes to other property values. For best performance, don't include existing values that haven't changed.
-
-| Property     | Type        | Description |
-|:-------------|:------------|:------------|
-|displayName|String|The name of the printTaskDefinition.|
-|createdBy|String|Information about the app that created the task definition. Only the `createdBy.displayName` property can be updated.|
-
+Do not supply a request body for this method.
 ## Response
-If successful, this method returns a `204 No Content` response code and a [printTaskDefinition](../resources/printtaskdefinition.md) object in the response body.
+If successful, this method returns a `204 No Content` response code. It does not return anything in the response body.
 ## Example
 ##### Request
 The following is an example of the request.
@@ -56,27 +50,19 @@ The following is an example of the request.
 # [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
-  "name": "print_update_taskdefinition"
+  "name": "update_task"
 }-->
 ```msgraph-interactive
-PATCH https://graph.microsoft.com/beta/print/taskDefinitions/fab143fd-ee61-4358-8558-2c7dee953982
-Content-type: application/json
-Content-length: 122
-
-{
-  "displayName": "Test TaskDefinitionName",
-  "createdBy": {
-    "displayName": "Requesting App Display Name"
-  }
-}
+PATCH https://graph.microsoft.com/beta/print/taskDefinitions/3203656e-6069-4e10-8147-d25290b00a3c/tasks/d036638b-1272-4bba-9227-732463823ed3
 ```
 
 ---
 
 ##### Response
 The following is an example of the response.
+>**Note:** The response object shown here might be shortened for readability. All the properties will be returned from an actual call.
 <!-- {
-  "blockType": "response"
+  "blockType": "response",
 } -->
 ```http
 HTTP/1.1 204 No Content
@@ -86,7 +72,7 @@ HTTP/1.1 204 No Content
 2015-10-25 14:57:30 UTC -->
 <!-- {
   "type": "#page.annotation",
-  "description": "Update taskDefinition",
+  "description": "Update task",
   "keywords": "",
   "section": "documentation",
   "tocPath": ""

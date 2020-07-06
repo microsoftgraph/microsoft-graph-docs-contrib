@@ -23,7 +23,6 @@ Represents a print job that has been queued for a printer.
 | [Create](../api/printer-post-jobs.md) | [printJob](printjob.md) | Create a new print job object. |
 | [Start](../api/printjob-startprintjob.md)|None|Start the print job.|
 | [Cancel](../api/printjob-cancelprintjob.md)|None|Cancel the print job.|
-| [List tasks](../api/printjob-list-tasks.md)|[printTask](printtask.md) collection|Retrieve a list of [printTasks](printtask.md) triggered by this print job.|
 
 ## Properties
 | Property     | Type        | Description |

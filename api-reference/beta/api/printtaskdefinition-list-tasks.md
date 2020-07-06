@@ -1,19 +1,19 @@
 ---
-title: Get taskDefinition
-description: Get details about a task definition.
+title: List tasks
+description: Retrieve a list of task associated with a task definition.
 author: braedenp-msft
 localization_priority: Normal
 ms.prod: universal-print
 doc_type: apiPageType
 ---
 
-# Get taskDefinition
+# List tasks
 
 Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Get details about a task definition.
+Retrieve a list of [tasks](../resources/printtask.md) associated with a [task definition](../resources/printtaskdefinition.md).
 
 See the [Pull Print Overview](/graph/universal-print-concept-overview.md#extending-universal-print-to-support-pull-printing) to understand how you can use this API to add Pull Print support to Universal Print.
 
@@ -24,15 +24,21 @@ In addition to the following permissions, the user's tenant must have an active 
 
 |Permission type | Permissions (from least to most privileged) |
 |:---------------|:--------------------------------------------|
-|Delegated (work or school account)| Not supported. |
+|Delegated (work or school account)| Users.Read.All |
 |Delegated (personal Microsoft account)|Not Supported.|
-|Application| PrintTaskDefinition.ReadWrite.All |
+|Application| Not supported. |
 
 ## HTTP request
 <!-- { "blockType": "ignored" } -->
 ```http
-GET /print/taskDefinitions/{id}
+GET /print/taskDefinitions/{id}/tasks
 ```
+
+## Optional query parameters
+This method supports some of the OData query parameters to help customize the response. For general information, see [OData query parameters](/graph/query-parameters).
+
+### Exceptions
+Some operators are not supported: `$count`, `$format`, `$search`, `$select`, `$skip`, `$top`.
 
 ## Request headers
 | Name      |Description|
@@ -42,7 +48,7 @@ GET /print/taskDefinitions/{id}
 ## Request body
 Do not supply a request body for this method.
 ## Response
-If successful, this method returns a `200 OK` response code and a [printTaskDefinition](../resources/printtaskdefinition.md) object in the response body.
+If successful, this method returns a `200 OK` response code and collection of [printTask](../resources/printtask.md) objects in the response body.
 ## Example
 ##### Request
 The following is an example of the request.
@@ -50,10 +56,10 @@ The following is an example of the request.
 # [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
-  "name": "get_taskdefinition"
+  "name": "get_printtaskdefinition_tasks"
 }-->
 ```msgraph-interactive
-GET https://graph.microsoft.com/beta/print/taskDefinitions/fab143fd-ee61-4358-8558-2c7dee953982
+GET https://graph.microsoft.com/beta/print/taskDefinitions/92d72a3d-cad7-4809-8924-43833282b079/tasks
 ```
 
 ---
@@ -64,21 +70,26 @@ The following is an example of the response.
 <!-- {
   "blockType": "response",
   "truncated": true,
-  "@odata.type": "microsoft.graph.printTaskDefinition"
+  "@odata.type": "microsoft.graph.printTask",
+  "isCollection": true
 } -->
 ```http
 HTTP/1.1 200 OK
 Content-type: application/json
-Content-length: 380
+Content-length: 454
 
 {
-  "@odata.context": "https://graph.microsoft.com/beta/$metadata#print/taskDefinitions/$entity",
-  "@odata.type": "#microsoft.graph.printTaskDefinition",
-  "id": "fab143fd-ee61-4358-8558-2c7dee953982",
-  "displayName": "Test TaskDefinitionName",
-  "createdBy": {
-    "appId": "815f204f-c791-4ee6-9098-614ecdb003f6",
-    "displayName": "Requesting App Display Name"
+  "@odata.context": "https://graph.microsoft.com/beta/$metadata#Collection(microsoft.graph.printTask)",
+    "value": [
+      {
+        "id": "d036638b-1272-4bba-9227-732463823ed3",
+        "parentUrl": "https://graph.microsoft.com/beta/print/printers/d5ef6ec4-07ca-4212-baf9-d45be126bfbb/jobs/44353",
+        "status": {
+          "state": "processing",
+          "description": "The task is being processed."
+        }
+      }
+    ]
   }
 }
 ```
@@ -87,7 +98,7 @@ Content-length: 380
 2015-10-25 14:57:30 UTC -->
 <!-- {
   "type": "#page.annotation",
-  "description": "Get taskDefinition",
+  "description": "List tasks",
   "keywords": "",
   "section": "documentation",
   "tocPath": ""

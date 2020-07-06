@@ -13,7 +13,9 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Determines the conditions under which a new [printTask](printtask.md) will be executed based on the associated [printTaskDefinition](printtaskdefinition.md).
+Determines the condition under which a new [printTask](printtask.md) will be executed based on the associated [printTaskDefinition](printtaskdefinition.md).
+
+See the [Pull Print Overview](/graph/universal-print-concept-overview.md#extending-universal-print-to-support-pull-printing) to understand how you can use this resource to add Pull Print support to Universal Print.
 
 ## Methods
 
@@ -26,12 +28,19 @@ Determines the conditions under which a new [printTask](printtask.md) will be ex
 | Property     | Type        | Description |
 |:-------------|:------------|:------------|
 |id|String|The printTaskTrigger's identifier. Read-only.|
-|event|[printEvent](printevent.md)|The Universal Print event that will cause a new [printTask](printtask.md) to be executed.|
+|event|[printEvent](printevent.md)|The Universal Print event that will cause a new [printTask](printtask.md) to be executed. Valid values are described in the following table.|
 
 ## Relationships
 | Relationship | Type        | Description |
 |:-------------|:------------|:------------|
-|definition|[printTaskDefinition](printtaskdefinition.md)|The [printTaskDefinition](printtaskdefinition.md) that defines how a new [printTask](printTask.md) will be executed. Read-only.|
+|definition|[printTaskDefinition](printtaskdefinition.md)|An abstract definition that will be used to create a [printTask](printtask.md) when triggered by a print event. Read-only.|
+
+### printEvent values
+
+|Member|Value|Description|
+|:---|:---|:---|
+|jobStarted|0|Represents an event that occurs when a new print job is started.|
+|unknownFutureValue|1|Evolvable enumeration sentinel value. Do not use.|
 
 ## JSON representation
 

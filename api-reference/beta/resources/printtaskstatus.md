@@ -15,11 +15,23 @@ Namespace: microsoft.graph
 
 Represents the current execution status of a [printTask](printtask.md). **The calling application is responsible for updating this status when processing is finished.** Failure to report completion will result in the related print job being blocked from printing and eventually deleted.
 
+See the [Pull Print Overview](/graph/universal-print-concept-overview.md#extending-universal-print-to-support-pull-printing) to understand how you can use this resource to add Pull Print support to Universal Print.
+
 ## Properties
 | Property     | Type        | Description |
 |:-------------|:------------|:------------|
-|state|[printTaskProcessingState](printtaskprocessingstate.md)|The current processing state of the [printTask](printtask.md).|
+|state|[printTaskProcessingState](printtaskprocessingstate.md)|The current processing state of the [printTask](printtask.md). Valid values are described in the following table.|
 |description|String|A human-readable description of the current processing state of the [printTask](printtask.md).|
+
+### printTaskProcessingState values
+
+|Member|Value|Description|
+|:---|:---|:---|
+|pending|0|Task execution is pending.|
+|processing|1|Task execution is in progress.|
+|completed|2|Task execution has completed.|
+|aborted|3|Task execution was aborted.|
+|unknownFutureValue|4|Evolvable enumeration sentinel value. Do not use.|
 
 ## JSON representation
 

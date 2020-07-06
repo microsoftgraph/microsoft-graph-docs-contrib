@@ -1,6 +1,6 @@
 ---
 title: List taskDefinitions
-description: Retrieve a list of task definitions defined for the user or app's tenant.
+description: Retrieve a list of task definitions that the requesting app defined in the tenant.
 author: braedenp-msft
 localization_priority: Normal
 ms.prod: universal-print
@@ -13,7 +13,9 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Retrieve a list of **taskDefinitions** defined for the user or app's tenant.
+Retrieve a list of [task definitions](../resources/printtaskdefinition.md) that the requesting app defined in the tenant.
+
+See the [Pull Print Overview](/graph/universal-print-concept-overview.md#extending-universal-print-to-support-pull-printing) to understand how you can use this API to add Pull Print support to Universal Print.
 
 ## Permissions
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
