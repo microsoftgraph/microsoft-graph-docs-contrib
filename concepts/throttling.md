@@ -94,6 +94,10 @@ The following resources currently provide a `Retry-After` header:
 - [Group setting template](/graph/api/resources/groupsettingtemplate)
 - [Report](/graph/api/resources/report)
 - [Subscription](/graph/api/resources/subscription)
+- [Trending](/graph/api/resources/insights-trending)
+- [Used insight](/graph/api/resources/insights-used)
+- [Shared insight](/graph/api/resources/insights-shared)
+- [User settings](/graph/api/resources/usersettings)
 - [Invitation](/graph/api/resources/invitation)
 
 For a broader discussion of throttling on the Microsoft Cloud, see [Throttling Pattern](https://docs.microsoft.com/azure/architecture/patterns/throttling).
@@ -318,6 +322,15 @@ Other factors that impact a request cost:
   - CPULimitExceeded - Throttling is because the limit for cpu allocation is exceeded.
   - WriteLimitExceeded - Throttling is because the write limit is exceeded.
   - ResourceUnitLimitExceeded - Throttling is because the limit for the allocated resource unit is exceeded.
+
+### Insights service limits
+
+The following limits apply to any request on `me/insights` or `users/{id}/insights`.
+
+| Limit                                                      | Applies to      |
+|------------------------------------------------------------|-----------------|
+| 10,000 API requests in a 10 minute period                  | v1.0 and beta endpoints |
+| 4 concurrent requests                                      | v1.0 and beta endpoints   |
 
 ### Microsoft Graph reports service limits
 
