@@ -52,7 +52,8 @@ If successful, this method returns a `200 OK` response code and a collection of 
 
 ### Request
 <!-- {
-  "blockType": "ignored"
+  "blockType": "request",
+  "name": "get_conversationmember"
 }
 -->
 ``` http
@@ -63,7 +64,10 @@ GET https://graph.microsoft.com/beta/teams/{teamsId}/members
 ### Response
 **Note:** The response object shown here might be shortened for readability.
 <!-- {
-  "blockType": "ignored"
+  "blockType": "response",
+  "truncated": true,
+  "name": "get_conversationmember",
+  "@odata.type": "collection(microsoft.graph.aadUserConversationMember)"
 }
 -->
 ``` http
