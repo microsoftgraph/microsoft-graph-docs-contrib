@@ -147,3 +147,20 @@ The main difference during subscription creation will be the **notificationUrl**
 #### Receiving notifications
 
 Events will be now delivered to your application by Event Hubs, please refer to [receiving events](https://docs.microsoft.com/azure/event-hubs/get-started-dotnet-standard-send-v2#receive-events) from the Event Hubs documentation.
+
+### Frequent questions
+
+#### Microsoft Graph Change Tracking application missing
+
+It is possible the **Microsoft Graph Change Tracking** service principal is missing from your tenant depending on when the tenant was created and administrative operations. To resolve this issue, run [the following query](https://developer.microsoft.com/en-us/graph/graph-explorer?request=servicePrincipals&method=POST&version=v1.0&GraphUrl=https://graph.microsoft.com&requestBody=eyJhcHBJZCI6IjBiZjMwZjNiLTRhNTItNDhkZi05YTgyLTIzNDkxMGM0YTA4NiJ9) in [Microsoft Graph Explorer](https://developer.microsoft.com/en-us/graph/graph-explorer).
+
+Query details:
+
+```http
+POST https://graph.microsoft.com/v1.0/servicePrincipals
+{
+    "appId": "0bf30f3b-4a52-48df-9a82-234910c4a086"
+}
+```
+
+> **Note:**  it is possible you get an access denied running this query. In this case select **Modify Permissions**, then select **Consent** for the **Application.ReadWrite.All** row. After consenting to this new permission, run the request again.
