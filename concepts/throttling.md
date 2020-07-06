@@ -57,6 +57,10 @@ The following resources currently provide a `Retry-After` header:
 - [External item (Microsoft Search)](/graph/api/resources/externalitem?view=graph-rest-beta)
 - [Report](/graph/api/resources/report)
 - [Subscription](/graph/api/resources/subscription)
+- [Trending](/graph/api/resources/insights-trending)
+- [Used insight](/graph/api/resources/insights-used)
+- [Shared insight](/graph/api/resources/insights-shared)
+- [User settings](/graph/api/resources/usersettings)
 - [Invitation](/graph/api/resources/invitation)
 
 For a broader discussion of throttling on the Microsoft Cloud, see [Throttling Pattern](https://docs.microsoft.com/azure/architecture/patterns/throttling).
@@ -157,6 +161,15 @@ A maximum of 3000 messages per app per day can be sent to a given channel.
 
 See also [Microsoft Teams limits](/graph/api/resources/teams-api-overview#microsoft-teams-limits) 
 and [polling requirements](/graph/api/resources/teams-api-overview#polling-requirements).
+
+### Insights service limits
+
+The following limits apply to any request on `me/insights` or `users/{id}/insights`.
+
+| Limit                                                      | Applies to      |
+|------------------------------------------------------------|-----------------|
+| 10,000 API requests in a 10 minute period                  | v1.0 and beta endpoints |
+| 4 concurrent requests                                      | v1.0 and beta endpoints   |
 
 ### Microsoft Graph reports service limits
 
