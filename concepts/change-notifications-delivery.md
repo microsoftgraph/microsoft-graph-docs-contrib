@@ -63,7 +63,7 @@ notificationUrl="EventHub:${keyvaulturi}secrets/${keyvaultsecretname}?tenantId=$
 echo "Notification Url:\n${notificationUrl}"
 ```
 
-> **Note:** the script provided above is compatible with Linux based shells, Windows WSL, and Azure Cloud Shell. It will require some updated to run in Windows shells.
+> **Note:** the script provided above is compatible with Linux based shells, Windows WSL, and Azure Cloud Shell. It will require some updates to run in Windows shells.
 
 #### Option 2: Using the Azure Portal
 
