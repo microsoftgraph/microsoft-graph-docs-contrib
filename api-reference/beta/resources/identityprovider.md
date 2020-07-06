@@ -13,15 +13,17 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
+Represents identity providers in an Azure Active Directory (Azure AD) tenant and B2C tenant. 
+In an Azure Active Directory (Azure AD) tenant B2B scenarios the identity providers can be Google or Facebook.
+In a B2C tenant the identity provider can be Microsoft, Google, Facebook, Amazon, LinkedIn, Twitter or any OpenID Connect supported providers. The following Identity Providers are in Preview: Weibo, QQ, WeChat and GitHub.
+
+Configuring an identity provider in your Azure AD B2C tenant enables users to:
+
+* Sign up and sign in using a social account or a custom OpenID Connect supported provider in a consumer application. For example, an application can use Azure AD B2C to allow users to sign up for the service using a Facebook account.
+* Link an existing local account to a social account in a consumer application. For example, a user has created a username and password (local account) in the application. The user later decides to link the existing local account to their Facebook account so they can sign in using Facebook.
+
+Configuring an identity provider in your Azure AD tenant enables new B2B guest scenarios. For example, an organization has resources in Microsoft 365 that need to be shared with a Gmail user. The Gmail user will use their Google account credentials to authenticate and access the documents.
 Represents an Azure Active Directory (Azure AD) identity provider. The identity provider can be Microsoft, Google, Facebook, Amazon, or LinkedIn.
-
-Configuring an identity provider in your Azure AD B2C tenant enables:
-
-* Users to sign up and sign in using a social account in a consumer application. For example, an application can use Azure AD B2C to allow users to sign up for the service using a Facebook account.
-* Users to link an existing local account to a social account in a consumer application. For example, a user has created a username and password (local account) in the application. The user later decides to link the existing local account to their Facebook account so they can sign in using Facebook.
-
-Configuring an identity provider in your Azure AD tenant enables future B2B guest scenarios. For example, an organization has resources in Microsoft 365 that need to be shared with a Gmail user. The Gmail user will use their Google account credentials to authenticate and access the documents.
-
 ## Methods
 
 | Method       | Return Type  |Description|
