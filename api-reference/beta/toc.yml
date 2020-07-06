@@ -9502,6 +9502,11 @@ items:
             href: api/organization-get.md
           - name: Update org details
             href: api/organization-update.md
+        - name: Organization settings
+          href: resources/organizationSettings.md
+          items:
+          - name: Get org settings
+            href: api/organizationSettings-get.md
         - name: Organizational contacts
           href: resources/orgcontact.md
           items:
@@ -10700,6 +10705,20 @@ items:
             href: api/personwebsite-update.md
           - name: Delete
             href: api/personwebsite-delete.md
+      - name: Profile card customization (preview)
+        items:
+        - name: Profile card property
+          href: resources/profilecardproperty.md
+        - name: List 
+          href: api/organizationsettings-list-profilecardproperties.md
+        - name: Create
+          href: api/organizationsettings-post-profilecardproperties.md  
+        - name: Get
+          href: api/profilecardproperty-get.md    
+        - name: Update
+          href: api/profilecardproperty-update.md  
+        - name: Delete
+          href: api/profilecardproperty-delete.md    
       - name: Insights
         href: resources/officegraphinsights.md
         items:
@@ -11383,6 +11402,14 @@ items:
           href: api/team-update.md
         - name: Delete team
           href: api/group-delete.md
+        - name: List members
+          href: api/team-list-members.md
+        - name: Add members
+          href: api/team-post-members.md
+        - name: Remove members
+          href: api/team-delete-members.md
+        - name: Update member
+          href: api/conversationmember-update.md
         - name: Archive team
           href: api/team-archive.md
         - name: Unarchive team
