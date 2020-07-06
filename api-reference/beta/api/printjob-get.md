@@ -24,7 +24,7 @@ In addition to the following permissions, the user's tenant must have an active 
 |:---------------|:--------------------------------------------|
 |Delegated (work or school account)| Users.Read.All |
 |Delegated (personal Microsoft account)|Not Supported.|
-|Application|Not Supported.|
+|Application| PrintJob.ReadBasic.All, PrintJob.Read.All, PrintJob.ReadWriteBasic.All, PrintJob.ReadWrite.All |
 
 ## HTTP request
 <!-- { "blockType": "ignored" } -->

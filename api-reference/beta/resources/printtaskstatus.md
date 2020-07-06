@@ -13,7 +13,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Represents the current execution status of a [printTask](printtask.md). **The calling application is responsible for updating this status when processing is finished.** Failure to report completion will result in the related print job being blocked from printing and eventually deleted.
+Represents the current execution status of a [printTask](printtask.md). **Applications that register task triggers are responsible for updating task statuses when processing is finished, unless the related printJob has been redirected to another printer.**
 
 See the [Pull Print Overview](/graph/universal-print-concept-overview.md#extending-universal-print-to-support-pull-printing) to understand how you can use this resource to add Pull Print support to Universal Print.
 

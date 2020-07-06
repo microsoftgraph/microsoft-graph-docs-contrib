@@ -48,7 +48,7 @@ In the request body, supply the values for the relevant [printTaskDefinition](..
 |createdBy|String|Information about the app that created the task definition. Only the `createdBy.displayName` property can be updated.|
 
 ## Response
-If successful, this method returns a `204 No Content` response code and a [printTaskDefinition](../resources/printtaskdefinition.md) object in the response body.
+If successful, this method returns a `204 No Content` response code. It does not return anything in the response body.
 ## Example
 ##### Request
 The following is an example of the request.

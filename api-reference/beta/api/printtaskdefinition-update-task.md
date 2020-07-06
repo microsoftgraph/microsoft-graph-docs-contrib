@@ -24,9 +24,9 @@ In addition to the following permissions, the user's tenant must have an active 
 
 |Permission type | Permissions (from least to most privileged) |
 |:---------------|:--------------------------------------------|
-|Delegated (work or school account)| Users.Read.All |
+|Delegated (work or school account)| Not supported. |
 |Delegated (personal Microsoft account)|Not Supported.|
-|Application| Not supported. |
+|Application| PrintTaskDefinition.ReadWrite.All |
 
 ## HTTP request
 <!-- { "blockType": "ignored" } -->
@@ -54,6 +54,13 @@ The following is an example of the request.
 }-->
 ```msgraph-interactive
 PATCH https://graph.microsoft.com/beta/print/taskDefinitions/3203656e-6069-4e10-8147-d25290b00a3c/tasks/d036638b-1272-4bba-9227-732463823ed3
+
+{
+  "status": {
+    "state": "completed",
+    "description": "completed"
+  }
+}
 ```
 
 ---
