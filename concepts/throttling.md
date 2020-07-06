@@ -81,7 +81,7 @@ Microsoft Graph allows you to access data in [multiple services](overview-major-
 > The specific limits described here are subject to change.
 
 > [!NOTE]
-> In the current section the term "tenant" refers to the Microsoft 365 organization where the application is installed. This tenant can be the same as the the one where the application was created in the case of a single tenant application, or it can be different in the case of a [multi-tenant application](/azure/active-directory/develop/setup-multi-tenant-app).
+> In this section the term "tenant" refers to the Microsoft 365 organization where the application is installed. This tenant can be the same as the the one where the application was created in the case of a single tenant application, or it can be different in the case of a [multi-tenant application](/azure/active-directory/develop/setup-multi-tenant-app).
 
 ### Outlook service limits
 
