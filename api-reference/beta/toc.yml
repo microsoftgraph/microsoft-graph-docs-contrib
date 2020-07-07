@@ -1493,6 +1493,8 @@ items:
             href: api/printer-delete.md
           - name: Get capabilities
             href: api/printer-getcapabilities.md
+          - name: Get task trigger
+            href: api/printer-get-tasktrigger.md
           - name: List connectors
             href: api/printer-list-connectors.md
           - name: List print jobs
