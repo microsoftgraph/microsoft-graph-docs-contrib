@@ -10,6 +10,9 @@ ms.custom: graphiamtop20
 
 Delta query enables applications to discover newly created, updated, or deleted entities without performing a full read of the target resource with every request. Microsoft Graph applications can use delta query to efficiently synchronize changes with a local data store.
 
+> [!div class="nextstepaction"]
+> [Tutorial: Use Change Notifications and Track Changes with Microsoft Graph](/learn/modules/msgraph-changenotifications-trackchanges)
+
 ## Use delta query to track changes in a resource collection
 
 The typical call pattern is as follows:
@@ -182,7 +185,7 @@ Delta queries are available for customers hosted on the public cloud and Microso
 
 ### Token duration
 
-Delta tokens are only valid for a specific period before the client application needs to run a full synchronization again. For directory objects (**application**, **administrativeUnit**, **directoryObject**, **directoryRole**, **group**, **orgContact**, **oauth2permissiongrant**, **servicePrincipal**, and **user**), the limit is 30 days. For education objects (**educationSchool**, **educationUser**, and **educationClass**), the limit is 30 days.
+Delta tokens are only valid for a specific period before the client application needs to run a full synchronization again. For directory objects (**application**, **administrativeUnit**, **directoryObject**, **directoryRole**, **group**, **orgContact**, **oauth2permissiongrant**, **servicePrincipal**, and **user**), the limit is 7 days. For education objects (**educationSchool**, **educationUser**, and **educationClass**), the limit is 7 days.
 
 ## Prerequisites
 

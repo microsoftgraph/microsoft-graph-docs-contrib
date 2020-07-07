@@ -12,7 +12,7 @@ Current national clouds include:
 
 - Microsoft Cloud for US Government
 - Microsoft Cloud Germany
-- Azure and Office 365 operated by 21Vianet in China
+- Azure and Microsoft 365 operated by 21Vianet in China
 
 Each national cloud environment is unique and different than the Microsoft global environment. It is important to be aware of some of these key differences when you develop applications for national cloud environments; for example, registering applications, acquiring tokens, and calling the Microsoft Graph API can be different.
 
@@ -51,9 +51,9 @@ The following table shows the service root endpoints for Microsoft Graph and [Gr
 > [!IMPORTANT]
 > For an app in US Government:
 >
-> - If you're working in an Office 365 GCC environment, continue using the worldwide endpoints: `https://graph.microsoft.com` and `https://portal.azure.com`.
-> - If you're working in an Office 365 GCC High environment, use: `https://portal.azure.us` and `https://graph.microsoft.us`.
-> - If you're working in an Office 365 DoD environment, use `https://portal.azure.us` and `https://dod-graph.microsoft.us`.
+> - If you're working in a Microsoft 365 GCC environment, continue using the worldwide endpoints: `https://graph.microsoft.com` and `https://portal.azure.com`.
+> - If you're working in a Microsoft 365 GCC High environment, use: `https://portal.azure.us` and `https://graph.microsoft.us`.
+> - If you're working in a Microsoft 365 DoD environment, use `https://portal.azure.us` and `https://dod-graph.microsoft.us`.
 >
 > Access to US Government data using the worldwide endpoint will be disabled in the near future.
 
@@ -97,8 +97,8 @@ The following additional Microsoft Graph features are available in preview (on t
 
 To learn more about National clouds, see the following topics:
 - [Microsoft National Clouds](https://www.microsoft.com/TrustCenter/CloudServices/NationalCloud)
-- [Office 365 for US Government](https://docs.microsoft.com/office365/servicedescriptions/office-365-platform-service-description/office-365-us-government/office-365-us-government)
-- [Office 365 operated by 21Vianet](https://docs.microsoft.com/office365/servicedescriptions/office-365-platform-service-description/office-365-operated-by-21vianet)
+- [Microsoft 365 for US Government](https://docs.microsoft.com/office365/servicedescriptions/office-365-platform-service-description/office-365-us-government/office-365-us-government)
+- [Microsoft 365 operated by 21Vianet](https://docs.microsoft.com/office365/servicedescriptions/office-365-platform-service-description/office-365-operated-by-21vianet)
 - [Office 365 Germany](https://docs.microsoft.com/office365/servicedescriptions/office-365-platform-service-description/office-365-germany)
 - [Azure Government](https://azure.microsoft.com/global-infrastructure/government/)
 - [Azure China 21Vianet](https://docs.microsoft.com/azure/china/)
