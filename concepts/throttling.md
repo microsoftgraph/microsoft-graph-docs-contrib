@@ -137,6 +137,14 @@ The following resources are provided by the Outlook service.
 - [outlookCategory](/graph/api/resources/outlookcategory)
 - [attachment](/graph/api/resources/attachment)
 
+### Cloud communication service limits
+
+| Resource      | Limits per app per tenant    |
+| -------------- | ------------ |
+| [Calls](/graph/api/resources/call) | 10,000 calls/month and 100 concurrent calls   |
+| [Meeting information](/graph/api/resources/meetinginfo)   | 2000 meetings/user each month |
+| [Presence](/graph/api/resources/presence) (preview)   | 2 rps |
+
 ### Microsoft Teams service limits
 
 Limits are expressed as requests per second (rps).
