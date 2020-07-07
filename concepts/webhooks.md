@@ -90,6 +90,12 @@ Use:
 
 `/users/{guid-user-id}/messages`
 
+### Teams resource limitation (preview)
+
+A single active subscription per channel or chat per application is allowed.
+
+A maximum of 10000 active subscriptions per organization on chats and channels for all applications is allowed.
+
 ## Subscription lifetime
 
 Subscriptions have a limited lifetime. Apps need to renew their subscriptions before the expiration time. Otherwise, they need to create a new subscription. For a list of maximum expiration times, see [Maximum length of subscription per resource type](/graph/api/resources/subscription?view=graph-rest-1.0#maximum-length-of-subscription-per-resource-type).
