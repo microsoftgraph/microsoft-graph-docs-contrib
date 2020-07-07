@@ -29,7 +29,6 @@ Here is a JSON representation of the resource
     "attachments",
     "event",
     "extensions",
-    "mentions",
     "previousLocation",
     "previousStartDateTime",
     "previousEndDateTime"
@@ -64,7 +63,6 @@ Here is a JSON representation of the resource
   "lastModifiedDateTime": "String (timestamp)",
   "location": {"@odata.type": "microsoft.graph.location"},
   "meetingMessageType": "microsoft.graph.meetingMessageType",
-  "mentionsPreview": {"@odata.type": "microsoft.graph.mentionsPreview"},
   "parentFolderId": "string",
   "previousEndDateTime": {"@odata.type": "microsoft.graph.dateTimeTimeZone"},
   "previousLocation": {"@odata.type": "microsoft.graph.location"},
@@ -112,7 +110,6 @@ Here is a JSON representation of the resource
 |lastModifiedDateTime|DateTimeOffset|The date and time the message was last changed.|
 |location|[Location](location.md)|The location of the requested meeting.|
 |meetingMessageType|String| The type of event message: `none`, `meetingRequest`, `meetingCancelled`, `meetingAccepted`, `meetingTentativelyAccepted`, `meetingDeclined`.|
-|mentionsPreview|[mentionsPreview](mentionspreview.md)|Information about mentions in the message. When processing a `GET` /messages request, the server sets this property and includes it in the response by default. The server returns null if there are no mentions in the message. Optional. |
 |parentFolderId|String|The unique identifier for the message's parent mailFolder.|
 |previousEndDateTime|[DateTimeTimeZone](datetimetimezone.md)| If the meeting update changes the meeting end time, this property specifies the previous meeting end time.|
 |previousLocation|[Location](location.md)| If the meeting update changes the meeting location, this property specifies the previous meeting location.|
@@ -136,7 +133,6 @@ Here is a JSON representation of the resource
 |attachments|[attachment](attachment.md) collection|The collection of [fileAttachment](fileattachment.md), [itemAttachment](itemattachment.md), and [referenceAttachment](referenceattachment.md) attachments for the message. Read-only. Nullable.|
 |event|[event](event.md)| The event associated with the event message. The assumption for attendees or room resources is that the Calendar Attendant is set to automatically update the calendar with an event when meeting request event messages arrive. Navigation property.  Read-only.|
 |extensions|[extension](extension.md) collection| The collection of open extensions defined for the eventMessage. Read-only. Nullable.|
-|mentions|[mention](mention.md) collection | A collection of mentions in the message, ordered by the **createdDateTime** from the newest to the oldest. By default, a `GET` /messages does not return this property unless you apply `$expand` on the property.|
 |multiValueExtendedProperties|[multiValueLegacyExtendedProperty](multivaluelegacyextendedproperty.md) collection| The collection of multi-value extended properties defined for the eventMessage. Read-only. Nullable.|
 |singleValueExtendedProperties|[singleValueLegacyExtendedProperty](singlevaluelegacyextendedproperty.md) collection| The collection of single-value extended properties defined for the eventMessage. Read-only. Nullable.|
 
@@ -157,7 +153,6 @@ Here is a JSON representation of the resource
 |[reply](../api/message-reply.md)|None|Reply to the sender of a message. The message is then saved in the Sent Items folder.|
 |[replyAll](../api/message-replyall.md)|None|Reply to all recipients of a message. The message is then saved in the Sent Items folder.|
 |[send](../api/message-send.md)|None|Sends a previously created message draft. The message is then saved in the Sent Items folder.|
-|[unsubscribe](../api/message-unsubscribe.md)|None|Send a message using the data and address specified in the first mailto command in the List-Unsubscribe header.|
 |**Attachments**| | |
 |[List attachments](../api/eventmessage-list-attachments.md) |[attachment](attachment.md) collection| Get all attachments on an eventMessage.|
 |[Add attachment](../api/eventmessage-post-attachments.md) |[attachment](attachment.md)| Add a new attachment to an eventMessage by posting to the attachments collection.|

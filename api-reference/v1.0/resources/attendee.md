@@ -22,7 +22,6 @@ Derived from [attendeeBase](attendeebase.md).
 |proposedNewTime|[timeSlot](timeslot.md)|An alternate date/time proposed by the attendee for a meeting request to start and end. If the attendee hasn't proposed another time, then this property is not included in a response of a GET event.|
 |status|[ResponseStatus](responsestatus.md)|The attendee's response (none, accepted, declined, etc.) for the event and date-time that the response was sent.|
 |type|String|The attendee type: `required`, `optional`, `resource`.|
-|emailAddress|[emailAddress](emailaddress.md)|Includes the name and SMTP address of the attendee.|
 
 ## JSON representation
 
