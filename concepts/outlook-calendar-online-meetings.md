@@ -31,7 +31,7 @@ Look for the **allowedOnlineMeetingProviders** and **defaultOnlineMeetingProvide
 }-->
 
 ```msgraph-interactive
-GET https://graph.microsoft.com/beta/me/calendar
+GET https://graph.microsoft.com/v1.0/me/calendar
 ```
 # [C#](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/get-calendar-support-for-online-meeting-providers-csharp-snippets.md)]
@@ -60,7 +60,7 @@ HTTP/1.1 200 Ok
 Content-type: application/json
 
 {
-    "@odata.context": "https://graph.microsoft.com/beta/$metadata#users('64339082-ed84-4b0b-b4ab-004ae54f3747')/calendar/$entity",
+    "@odata.context": "https://graph.microsoft.com/v1.0/$metadata#users('64339082-ed84-4b0b-b4ab-004ae54f3747')/calendar/$entity",
     "id": "AQMkADAwAGVAAAJfygAAAA==",
     "name": "Calendar",
     "color": "auto",
@@ -104,7 +104,7 @@ You can create a meeting and allow attendees to join the meeting online, by sett
 }-->
 
 ```http
-POST https://graph.microsoft.com/beta/me/events
+POST https://graph.microsoft.com/v1.0/me/events
 Prefer: outlook.timezone="Pacific Standard Time"
 Content-type: application/json
 
@@ -166,7 +166,7 @@ HTTP/1.1 201 Created
 Content-type: application/json
 
 {
-    "@odata.context": "https://graph.microsoft.com/beta/$metadata#users('64339082-ed84-4b0b-b4ab-004ae54f3747')/events/$entity",
+    "@odata.context": "https://graph.microsoft.com/v1.0/$metadata#users('64339082-ed84-4b0b-b4ab-004ae54f3747')/events/$entity",
     "@odata.etag": "W/\"NEXywgsVrkeNsFsyVyRrtAAASBUEsA==\"",
     "id": "AAMkADAAABIGYDZAAA=",
     "createdDateTime": "2019-11-15T01:55:54.8022848Z",
@@ -271,7 +271,7 @@ Attendees and organizers can use the **isOnlineMeeting** property to verify if a
 }-->
 
 ```msgraph-interactive
-GET https://graph.microsoft.com/beta/me/events/AAMkADAGu0AABIGYDZAAA=?$select=isOnlineMeeting,onlineMeetingProvider,onlineMeeting
+GET https://graph.microsoft.com/v1.0/me/events/AAMkADAGu0AABIGYDZAAA=?$select=isOnlineMeeting,onlineMeetingProvider,onlineMeeting
 ```
 # [C#](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/get-event-online-meeting-info-csharp-snippets.md)]
@@ -300,7 +300,7 @@ HTTP/1.1 200 Ok
 Content-type: application/json
 
 {
-    "@odata.context": "https://graph.microsoft.com/beta/$metadata#users('64339082-ed84-4b0b-b4ab-004ae54f3747')/events(isOnlineMeeting,onlineMeetingProvider,onlineMeeting)/$entity",
+    "@odata.context": "https://graph.microsoft.com/v1.0/$metadata#users('64339082-ed84-4b0b-b4ab-004ae54f3747')/events(isOnlineMeeting,onlineMeetingProvider,onlineMeeting)/$entity",
     "@odata.etag": "W/\"NEXywgsVrkeNsFsyVyRrtAAASBUExA==\"",
     "id": "AAMkADAGu0AABIGYDZAAA=",
     "isOnlineMeeting": true,
@@ -331,7 +331,7 @@ You can change an existing **event** to make it available as an online meeting, 
 }-->
 
 ```http
-PATCH https://graph.microsoft.com/beta/me/events/AAMkADAGu0AABIGYDaAAA=
+PATCH https://graph.microsoft.com/v1.0/me/events/AAMkADAGu0AABIGYDaAAA=
 
 {
   "isOnlineMeeting": true,
@@ -365,7 +365,7 @@ HTTP/1.1 200 Ok
 Content-type: application/json
 
 {
-    "@odata.context": "https://graph.microsoft.com/beta/$metadata#users('64339082-ed84-4b0b-b4ab-004ae54f3747')/events/$entity",
+    "@odata.context": "https://graph.microsoft.com/v1.0/$metadata#users('64339082-ed84-4b0b-b4ab-004ae54f3747')/events/$entity",
     "@odata.etag": "W/\"NEXywgsVrkeNsFsyVyRrtAAASBUFEA==\"",
     "id": "AAMkADAGu0AABIGYDaAAA=",
     "createdDateTime": "2019-11-15T02:13:38.5558455Z",
