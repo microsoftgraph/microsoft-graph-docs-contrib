@@ -59,7 +59,25 @@ To use this in your application, use [Update printerShare](/graph/api/printersha
 
 ### Extending Universal Print to support Pull Printing
 
-TBD
+The Microsoft Graph Universal Print API enables your application to support Pull Printing (also known as Follow-Me or Find-Me print)! To set up Pull Printing, you will register triggers that notify your application (via service-to-service communication) when certain print events happen, such as a print job being started.
+
+These triggers enable your application to interrupt the print workflow to do things such as redirecting jobs to different printers and modifying the document payload.
+
+Follow these steps to enable Pull Printing:
+
+1. [Create a printTaskDefinition](/graph/api/print-post-taskdefinitions?view=graph-rest-beta) using application permissions. This abstract task definition will be used to create task instances that your service can use to tell Universal Print when you're done processing print jobs.
+
+2. [Register one or more virtual printers](/graph/api/printer-create?view=graph-rest-beta) using an administrator authentication token and a `null` deviceId. A "virtual printer" is just a printer object in Universal Print without a physical device attached. Usually, users will print to virtual printers and later pick up their print jobs at a physical print device. See step 6.
+
+3. [Update the attributes of your printer](/graph/api/printer-update?view=graph-rest-beta) by using application permissions and an `application/ipp` media type (see examples).
+
+4. [Create a task trigger for your virtual printer](/graph/api/printer-post-tasktriggers?view=graph-rest-beta) that will generate a notification for your application when events occur.
+
+5. When a print job is submitted to the virtual printer, it will be paused due to the [printTaskTrigger](/graph/api/resources/printtasktrigger?view=graph-rest-beta). A [printTask](/graph/api/resources/printtask?view=graph-rest-beta) will be created based on the associated [printTaskDefinition](/graph/api/resources/printtaskdefinition?view=graph-rest-beta).
+
+6. When the user swipes a badge at a physical printer device, the printer will notify your application. At that time, your application can [fetch the jobs of the associated virtual printer](/graph/api/printer-list-jobs?view=graph-rest-beta) and filter the list to jobs created by the current user.
+
+7. When the user selects one or more jobs to print, your application can [redirect the print job(s)](/graph/api/printjob-redirect?view=graph-rest-beta) to the physical printer and the job will start printing! The redirect call will only succeed if there is a [printTask](/graph/api/resources/printtask?view=graph-rest-beta) in `processing` state on the associated printer started by a trigger that this app created in Step 4. The task will automatically be set to `completed` state after redirecting it.
 
 ## API reference
 Looking for the API reference for this service?
