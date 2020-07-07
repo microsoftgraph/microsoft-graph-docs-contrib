@@ -60,6 +60,8 @@ If successful, this method returns a `200 OK` response code and an updated [prof
 ### Request
 
 The following example adds a localized label "Kostnads Senter" for the locale "no-NB".
+
+# [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "update_profilecardproperty"
@@ -82,6 +84,12 @@ Content-type: application/json
   ]
 }
 ```
+# [JavaScript](#tab/javascript)
+[!INCLUDE [sample-code](../includes/snippets/javascript/update-profilecardproperty-javascript-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+---
+
 
 ### Response
 

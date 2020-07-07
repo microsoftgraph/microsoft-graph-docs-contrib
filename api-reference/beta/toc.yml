@@ -734,14 +734,24 @@ items:
             href: api/application-delete-owners.md
         - name: Policies
           items:
-          - name: List assigned policies
-            href: api/policy-list-assigned.md
-          - name: Assign tokenLifetimePolicy
-            href: api/application-post-tokenlifetimepolicies.md
-          - name: List tokenLifetimePolicies
-            href: api/application-list-tokenlifetimepolicies.md
-          - name: Remove tokenLifetimePolicy
-            href: api/application-delete-tokenlifetimepolicies.md
+          - name: Token issuance policy
+            href: resources/tokenissuancepolicy.md
+            items:
+            - name: Assign
+              href: api/application-post-tokenissuancepolicies.md
+            - name: List
+              href: api/application-list-tokenissuancepolicies.md
+            - name: Remove
+              href: api/application-delete-tokenissuancepolicies.md
+          - name: Token lifetime policy
+            href: resources/tokenlifetimepolicy.md
+            items:
+            - name: Assign
+              href: api/application-post-tokenlifetimepolicies.md
+            - name: List
+              href: api/application-list-tokenlifetimepolicies.md
+            - name: Remove
+              href: api/application-delete-tokenlifetimepolicies.md
         - name: Application template
           href: resources/applicationtemplate.md
           items:
@@ -909,29 +919,38 @@ items:
           - name: Claims mapping policy
             href: resources/claimsmappingpolicy.md
             items:
-            - name: Assign claims mapping policies
+            - name: Assign
               href: api/serviceprincipal-post-claimsmappingpolicies.md
-            - name: List claims mapping policies
+            - name: List
               href: api/serviceprincipal-list-claimsmappingpolicies.md
-            - name: Remove claims mapping policies
+            - name: Remove
               href: api/serviceprincipal-delete-claimsmappingpolicies.md
           - name: Home realm discovery policy
             href: resources/homerealmdiscoverypolicy.md
             items:
-            - name: Assign home realm discovery policies
+            - name: Assign
               href: api/serviceprincipal-post-homerealmdiscoverypolicies.md
-            - name: List home realm discovery policies
+            - name: List
               href: api/serviceprincipal-list-homerealmdiscoverypolicies.md
-            - name: Remove home realm discovery policies
+            - name: Remove
               href: api/serviceprincipal-delete-homerealmdiscoverypolicies.md
+          - name: Token issuance policy
+            href: resources/tokenissuancepolicy.md
+            items:
+            - name: Assign
+              href: api/application-post-tokenissuancepolicies.md
+            - name: List
+              href: api/application-list-tokenissuancepolicies.md
+            - name: Remove
+              href: api/application-delete-tokenissuancepolicies.md
           - name: Token lifetime policy
             href: resources/tokenlifetimepolicy.md
             items:
-            - name: Assign token lifetime policies
+            - name: Assign
               href: api/application-post-tokenlifetimepolicies.md
-            - name: List token lifetime policies
+            - name: List
               href: api/application-list-tokenlifetimepolicies.md
-            - name: Remove token lifetime policies
+            - name: Remove
               href: api/application-delete-tokenlifetimepolicies.md
         - name: Single sign on
           items:
