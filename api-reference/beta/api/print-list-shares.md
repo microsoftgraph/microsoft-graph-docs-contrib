@@ -15,6 +15,8 @@ Namespace: microsoft.graph
 
 Retrieve a list of **printerShares**.
 
+To see a list of each printer share's capabilities, include the optional `$select=capabilities` query parameter.
+
 ## Permissions
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
 
