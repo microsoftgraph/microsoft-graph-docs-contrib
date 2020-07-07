@@ -36,7 +36,7 @@ If it is a custom OpenIDConnect identity provider then it is represented using [
 |[Update identityProvider](../api/identityprovider-update.md)|None|Update an existing identityProvider.|
 |[Delete identityProvider](../api/identityprovider-delete.md)|None|Delete an existing identityProvider.|
 |[List configured identityProviders](../api/identityprovider-list.md)|identityProvider collection|List all identityProviders configured in a tenant.|
-|[List available identityProviders](../api/identityprovider-list-available.md)||List all identityProviders available in a tenant.|
+|[List available identityProvider types](../api/identityprovider-list-availableTypes.md)||List all identityProviders available in a tenant.|
 
 ## Properties
 
