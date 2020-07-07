@@ -13,7 +13,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Delete an existing [identityProvider](../resources/identityprovider.md).
+Delete an existing [identityProvider](../resources/identityprovider.md) or [openIdConnectProvider](../api/resources/openIdConnectProvider.md).
 
 ## Permissions
 

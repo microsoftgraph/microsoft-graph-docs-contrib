@@ -1,9 +1,9 @@
 ---
 title: "Get identityProvider"
 description: "Retrieve the properties of an existing identityProvider."
-localization_priority: Normal
+localization_priority: Priority
 doc_type: apiPageType
-author: "Nickgmicrosoft"
+author: "namkedia"
 ms.prod: "microsoft-identity-platform"
 ---
 
@@ -13,7 +13,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Retrieve the properties of an existing [identityProvider](../resources/identityprovider.md).
+Retrieve the properties of an existing [identityProvider](../resources/identityprovider.md) or [openIdConnectProvider](../api/resources/openIdConnectProvider.md).
 
 ## Permissions
 
@@ -25,7 +25,9 @@ One of the following permissions is required to call this API. To learn more, in
 |Delegated (personal Microsoft account)| Not supported.|
 |Application|IdentityProvider.Read.All, IdentityProvider.ReadWrite.All|
 
-The work or school account must be a global administrator of the tenant.
+The work or school account needs to belong to one of the following two roles:
+* Global administrator
+* External Identity Provider administrator
 
 ## HTTP request
 
@@ -46,7 +48,7 @@ Do not supply a request body for this method.
 
 ## Response
 
-If successful, this method returns `200 OK` response code and a JSON representation of the [identityProvider](../resources/identityprovider.md) in the response body.
+If successful, this method returns `200 OK` response code and a JSON representation of the [identityProvider](../resources/identityprovider.md) or [openIdConnectProvider](../api/resources/openIdConnectProvider.md) in the response body.
 
 ## Example
 
