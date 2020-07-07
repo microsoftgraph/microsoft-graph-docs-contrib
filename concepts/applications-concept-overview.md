@@ -1,0 +1,84 @@
+---
+title: "Applications API overview"
+description: "Register your application with Azure AD to create an identity configuration for it that allows it to integrate with Azure AD."
+author: "davidmu1"
+localization_priority: Priority
+ms.prod: "microsoft-identity-platform"
+ms.custom: scenarios:getting-started
+---
+
+# Applications API overview
+
+In order to delegate Identity and Access Management functions to Azure AD, an application must be registered with an Azure AD tenant. When you register your application with Azure AD, you are creating an identity configuration for your application that allows it to integrate with Azure AD.
+
+## Why use applications and associated resources?
+
+The Microsoft Graph APIs enable you to manage these resources and actions related to applications in Azure Active Directory:
+- **Application management** - Azure AD must be configured to integrate with an application. In other words, it needs to know what applications are using it as an identity system. The process of keeping Azure AD aware of these applications, and how it should handle them, is known as application management.
+- **On-premises publishing** - On-premises agents (or connectors for Application Proxy) installed by a tenant administrator can be configured to route requests to a particular published resource.
+- **Service principal management** - The local representation, or application instance, of a global application object in a single tenant or directory. A service principal is a concrete instance created from the application object and inherits certain properties from that application object.
+- **Synchronization** - Azure Active Directory (Azure AD) identity synchronization (also called "provisioning") allows you to automate the creation, maintenance, and removal of identities in cloud.
+
+## Application management
+
+Application registration involves telling Azure AD about your application, including the URL where it's located, the URL to send replies after authentication, the URI to identify your application, and more. You can use the [application APIs](https://docs.microsoft.com/graph/api/resources/application?view=graph-rest-1.0) in Microsoft Graph to manage applications programmatically.
+
+> [!VIDEO https://www.youtube-nocookie.com/embed/93j0MmRruFo]
+
+For more information about applications, see the following articles:
+- [Application model](https://docs.microsoft.com/azure/active-directory/develop/application-model)
+- [Application and service principal objects in Azure Active Directory](https://docs.microsoft.com/azure/active-directory/develop/app-objects-and-service-principals)
+- [Application types for Microsoft identity platform](https://docs.microsoft.com/azure/active-directory/develop/v2-app-types)
+
+For more information about application management, see the following articles:
+- [What is application management?](https://docs.microsoft.com/azure/active-directory/manage-apps/what-is-application-management)
+- [Authentication flows and application scenarios](https://docs.microsoft.com/azure/active-directory/develop/authentication-flows-app-scenarios)
+
+## On-premises publishing
+
+Create and manage on-premises publishing profiles, which includes the creation of on-premises agents and agent groups. You can use the [on-premises publishing APIs](https://docs.microsoft.com/graph/api/resources/onpremisespublishingprofile-root?view=graph-rest-beta) in Microsoft Graph to manage on-premises publishing profiles programmatically.
+
+For more information about on-premises publishing, see the following articles:
+- [Remote access to on-premises applications through Azure Active Directory's Application Proxy](https://docs.microsoft.com/azure/active-directory/manage-apps/application-proxy)
+- [Using Azure AD Application Proxy to publish on-premises apps for remote users](https://docs.microsoft.com/azure/active-directory/manage-apps/what-is-application-proxy)
+
+To learn about using the on-premises publishing APIs, see the following tutorial and its associated APIs:
+- [Automate the configuration of Application Proxy using the Microsoft Graph API](https://docs.microsoft.com/graph/application-proxy-configure-api)
+    - [applicationTemplate](https://docs.microsoft.com/graph/api/resources/applicationtemplate?view=graph-rest-1.0)
+    - [application](https://docs.microsoft.com/graph/api/resources/application?view=graph-rest-1.0)
+    - [onPremisesPublishing](https://docs.microsoft.com/graph/api/resources/onpremisespublishingprofile-root?view=graph-rest-beta)
+    - [connector](https://docs.microsoft.com/graph/api/resources/connector?view=graph-rest-beta)
+    - [connectorGroup](https://docs.microsoft.com/graph/api/resources/connectorgroup?view=graph-rest-beta)
+    - [servicePrincipal](https://docs.microsoft.com/graph/api/resources/serviceprincipal?view=graph-rest-1.0)
+
+## Service principal management
+
+To access resources that are secured by an Azure AD tenant, the entity that requires access must be represented by a security principal. You can use the [service principal APIs](https://docs.microsoft.com/graph/api/resources/serviceprincipal?view=graph-rest-1.0) in Microsoft Graph to manage service principals programmatically.
+
+For more information about service principals, see [Application and service principal objects in Azure Active Directory](https://docs.microsoft.com/azure/active-directory/develop/app-objects-and-service-principals).
+
+## Synchronization
+
+You can use the [synchronization APIs](https://docs.microsoft.com/graph/api/resources/synchronization-overview?view=graph-rest-beta) in Microsoft Graph to manage identity synchronization programmatically, including:
+- Create, start, and stop synchronization jobs
+- Make changes to the synchronization schema for jobs
+- Verify the current synchronization status
+
+For more information about synchronization, see the following articles:
+- [Automate user provisioning and deprovisioning to applications with Azure AD](https://docs.microsoft.com/azure/active-directory/app-provisioning/user-provisioning)
+- [How provisioning works](https://docs.microsoft.com/azure/active-directory/app-provisioning/how-provisioning-works)
+
+To learn about using the synchronization APIs, see the following tutorials and their associated APIs:
+- [Configure provisioning using Microsoft Graph APIs](https://docs.microsoft.com/azure/active-directory/app-provisioning/application-provisioning-configure-api)
+    - [applicationTemplate](https://docs.microsoft.com/graph/api/resources/applicationtemplate?view=graph-rest-1.0)
+    - [synchronizationTemplate](https://docs.microsoft.com/graph/api/resources/synchronization-synchronizationtemplate?view=graph-rest-beta)
+    - [synchronizationJob](https://docs.microsoft.com/graph/api/resources/synchronization-synchronizationjob?view=graph-rest-beta)
+- [Automate SAML-based SSO app configuration with Microsoft Graph API](https://docs.microsoft.com/azure/active-directory/manage-apps/application-saml-sso-configure-api)
+    - [applicationTemplate](https://docs.microsoft.com/graph/api/resources/applicationtemplate?view=graph-rest-1.0)
+    - [application](https://docs.microsoft.com/graph/api/resources/application?view=graph-rest-1.0)
+    - [claimsMappingPolicy](https://docs.microsoft.com/graph/api/resources/claimsmappingpolicy?view=graph-rest-beta)
+    - [servicePrincipal](https://docs.microsoft.com/graph/api/resources/serviceprincipal?view=graph-rest-1.0)
+
+## Next steps
+- Try the Microsoft Graph API in the [Graph Explorer](https://developer.microsoft.com/graph/graph-explorer).
+- Learn about how to add authentication and authorization to your web applications and web APIs using [these samples](https://docs.microsoft.com/azure/active-directory/develop/sample-v2-code).
