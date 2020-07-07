@@ -154,6 +154,9 @@ Limits are expressed as requests per second (rps).
 | GET 1:1/group chat message  | 3 rps | 30 rps |
 | POST channel message | 2 rps | 20 rps |
 | POST 1:1/group chat message | 2 rps | 20 rps |
+| GET /teams/```{team-id}```/schedule and all APIs under this path | 60 rps | 600 rps |
+| POST, PATCH, PUT /teams/```{team-id}```/schedule and all APIs under this path | 30 rps | 300 rps |
+| DELETE /teams/```{team-id}```/schedule and all APIs under this path | 15 rps | 150 rps |
 
 A maximum of 4 requests per second per app can be issued on a given team or channel.
 A maximum of 3000 messages per app per day can be sent to a given channel.
