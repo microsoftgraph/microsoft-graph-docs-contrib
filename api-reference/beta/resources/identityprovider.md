@@ -22,11 +22,10 @@ In a B2C tenant the identity provider can be Microsoft, Google, Facebook, Amazon
 Configuring an identity provider in your Azure AD B2C tenant enables users to:
 
 * Sign up and sign in using a social account or a custom OpenID Connect supported provider in a consumer application. For example, an application can use Azure AD B2C to allow users to sign up for the service using a Facebook account or their own custom identity provider that complies with OIDC protocol.
-* Link an existing local account to a social account in a consumer application. For example, a user has created a username and password (local account) in the application. The user later decides to link the existing local account to their Facebook account so they can sign in using Facebook.
 
 Configuring an identity provider in your Azure AD tenant enables new B2B guest scenarios. For example, an organization has resources in Microsoft 365 that need to be shared with a Gmail user. The Gmail user will use their Google account credentials to authenticate and access the documents.
 
-If it is a custom OpenIDConnect identity provider then it is represented using [openIdConnectProvider](../api/resource/openIdConnectProvider.md) resource type, which will inherit from identityProvider resource type. 
+If it is a custom OpenIDConnect identity provider then it is represented using [openIdConnectProvider](../api/resources/openIdConnectProvider.md) resource type, which will inherit from identityProvider resource type. 
 
 ## Methods
 

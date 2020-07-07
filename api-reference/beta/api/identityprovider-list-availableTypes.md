@@ -1,6 +1,6 @@
 ---
-title: "List available identityProviders"
-description: "Retrieve all available identityProviders in the directory."
+title: "List available identity provider types"
+description: "Retrieve all available identity provider types in the directory."
 localization_priority: Normal
 doc_type: apiPageType
 author: "namkedia"
@@ -14,6 +14,11 @@ Namespace: microsoft.graph
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 Retrieves all identity provider types available in a directory.
+
+In an Azure Active Directory (Azure AD) tenant B2B scenarios the identity providers types can be `Google` and `Facebook`.
+
+In a B2C tenant the identity provider types can be `Microsoft`, `Google`, `Facebook`, `Amazon`, `LinkedIn`, `Twitter`, `OpenIDConnect`, `Weibo`, `QQ`, `WeChat` and `GitHub`.
+
 
 ## Permissions
 
@@ -48,7 +53,7 @@ Do not supply a request body for this method.
 
 ## Response
 
-If successful, this method returns `200 OK` response code and a collection of available identity providers in JSON representation in the response body.
+If successful, this method returns `200 OK` response code and a string collection of available identity provider types in JSON representation in the response body.
 ## Example
 
 The following example retrieves all **identityProvider**.
@@ -65,15 +70,15 @@ The following example retrieves all **identityProvider**.
 GET https://graph.microsoft.com/beta/identityProviders/availableProviderTypes
 ```
 # [C#](#tab/csharp)
-[!INCLUDE [sample-code](../includes/snippets/csharp/get-identityproviders-csharp-snippets.md)]
+[!INCLUDE [sample-code](../includes/snippets/csharp/get-identityproviderstypes-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [JavaScript](#tab/javascript)
-[!INCLUDE [sample-code](../includes/snippets/javascript/get-identityproviders-javascript-snippets.md)]
+[!INCLUDE [sample-code](../includes/snippets/javascript/get-identityproviderstypes-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Objective-C](#tab/objc)
-[!INCLUDE [sample-code](../includes/snippets/objc/get-identityproviders-objc-snippets.md)]
+[!INCLUDE [sample-code](../includes/snippets/objc/get-identityproviderstypes-objc-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
@@ -114,7 +119,7 @@ Content-type: application/json
 <!--
 {
   "type": "#page.annotation",
-  "description": "List configured identityProviders",
+  "description": "List configuredidentityProviders",
   "keywords": "",
   "section": "documentation",
   "tocPath": "",
