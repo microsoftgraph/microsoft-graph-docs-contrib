@@ -38,7 +38,7 @@ const schema = {
   ]
 };
 
-let res = await client.api('/connections/contosohr/schema')
+let res = await client.api('/external/connections/contosohr/schema')
 	.version('beta')
 	.post(schema);
 
