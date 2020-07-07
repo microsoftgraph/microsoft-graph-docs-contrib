@@ -25,7 +25,7 @@ Configuring an identity provider in your Azure AD B2C tenant enables users to:
 
 Configuring an identity provider in your Azure AD tenant enables new B2B guest scenarios. For example, an organization has resources in Microsoft 365 that need to be shared with a Gmail user. The Gmail user will use their Google account credentials to authenticate and access the documents.
 
-If it is a custom OpenIDConnect identity provider with OpenIDConnect as `type` then it is represented using [openIdConnectProvider](../api/resources/openIdConnectProvider.md) resource type, which will inherit from identityProvider resource type. 
+If it is a custom OpenIDConnect identity provider with OpenIDConnect as `type` then it is represented using [openIdConnectProvider](../resources/openIdConnectProvider.md) resource type, which will inherit from identityProvider resource type. 
 
 ## Methods
 

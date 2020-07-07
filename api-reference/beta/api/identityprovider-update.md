@@ -13,7 +13,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Update properties in an existing [identityProvider](../resources/identityprovider.md) or [openIdConnectProvider](../api/resources/openIdConnectProvider.md).
+Update properties in an existing [identityProvider](../resources/identityprovider.md) or [openIdConnectProvider](../resources/openIdConnectProvider.md).
 
 ## Permissions
 
@@ -45,7 +45,7 @@ PATCH /identityProviders/{id}
 
 ## Request body
 
-In the request body, provide a JSON object with one or more properties that need to be updated for an existing [identityProvider](../resources/identityprovider.md) or [openIdConnectProvider](../api/resources/openIdConnectProvider.md).
+In the request body, provide a JSON object with one or more properties that need to be updated for an existing [identityProvider](../resources/identityprovider.md) or [openIdConnectProvider](../resources/openIdConnectProvider.md).
 
 
 ### identityProvider object

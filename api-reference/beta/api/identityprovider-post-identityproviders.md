@@ -13,7 +13,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Create a new [identityProvider](../resources/identityprovider.md) or [openIdConnectProvider](../api/resources/openIdConnectProvider.md) by specifying properties of the resource type. 
+Create a new [identityProvider](../resources/identityprovider.md) or [openIdConnectProvider](../resources/openIdConnectProvider.md) by specifying properties of the resource type. 
 
 ## Permissions
 
@@ -45,7 +45,7 @@ POST /identityProviders
 
 ## Request body
 
-In the request body, provide a JSON representation of [identityProvider](../resources/identityprovider.md) or [openIdConnectProvider](../api/resources/openIdConnectProvider.md) object. All the properties listed in the following table are required.
+In the request body, provide a JSON representation of [identityProvider](../resources/identityprovider.md) or [openIdConnectProvider](../resources/openIdConnectProvider.md) object. All the properties listed in the following table are required.
 
 ### identityProvider object
 
@@ -74,7 +74,7 @@ In the request body, provide a JSON representation of [identityProvider](../reso
 
 ## Response
 
-If successful, this method returns `201 Created` response code and [identityProvider](../resources/identityprovider.md) or [openIdConnectProvider](../api/resources/openIdConnectProvider.md) object in the response body. If unsuccessful, a `4xx` error will be returned with specific details.
+If successful, this method returns `201 Created` response code and [identityProvider](../resources/identityprovider.md) or [openIdConnectProvider](../resources/openIdConnectProvider.md) object in the response body. If unsuccessful, a `4xx` error will be returned with specific details.
 
 ## Example
 
