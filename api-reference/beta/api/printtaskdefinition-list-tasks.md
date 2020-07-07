@@ -76,21 +76,20 @@ The following is an example of the response.
 ```http
 HTTP/1.1 200 OK
 Content-type: application/json
-Content-length: 454
+Content-length: 429
 
 {
   "@odata.context": "https://graph.microsoft.com/beta/$metadata#Collection(microsoft.graph.printTask)",
-    "value": [
-      {
-        "id": "d036638b-1272-4bba-9227-732463823ed3",
-        "parentUrl": "https://graph.microsoft.com/beta/print/printers/d5ef6ec4-07ca-4212-baf9-d45be126bfbb/jobs/44353",
-        "status": {
-          "state": "processing",
-          "description": "The task is being processed."
-        }
+  "value": [
+    {
+      "id": "d036638b-1272-4bba-9227-732463823ed3",
+      "parentUrl": "https://graph.microsoft.com/beta/print/printers/d5ef6ec4-07ca-4212-baf9-d45be126bfbb/jobs/44353",
+      "status": {
+        "state": "processing",
+        "description": "The task is being processed."
       }
-    ]
-  }
+    }
+  ]
 }
 ```
 
