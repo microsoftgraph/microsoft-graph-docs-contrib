@@ -116,4 +116,5 @@ Looking for the API reference for these services?
 ## Next steps
 
 * Use the [Graph Explorer](https://developer.microsoft.com/graph/graph-explorer) to try out the people, insights, and analytics APIs with your own files. Sign in, and choose **Show more samples** in the column on the left. Use the menu to turn on **People**, **Insights**, and **Analytics**.
-* Find more about the [people API](people-example.md)
+* Find more about the [people API](people-example.md).
+* See how to [customize the profile card](add-properties-profilecard.md).

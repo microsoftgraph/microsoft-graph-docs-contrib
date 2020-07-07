@@ -15,7 +15,7 @@ Namespace: microsoft.graph
 
 Create a new [profileCardProperty](../resources/profilecardproperty.md) for an organization. The new property is identified by its **directoryPropertyName** property.
 
-For more information on adding properties to the profile card for an organization, see customize the profile card.
+For more information on adding properties to the profile card for an organization, see [customize the profile card](/graph/add-properties-profilecard).
 
 ## Permissions
 
