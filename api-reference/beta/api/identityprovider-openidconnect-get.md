@@ -1,24 +1,19 @@
 ---
-title: "List available identity provider types"
-description: "Retrieve all available identity provider types in the directory."
+title: "Get identityProvider"
+description: "Retrieve the properties of an existing identityProvider."
 localization_priority: Normal
 doc_type: apiPageType
-author: "namkedia"
+author: "Nickgmicrosoft"
 ms.prod: "microsoft-identity-platform"
 ---
 
-# List availableProvidersTypes
+# Get identityProvider
 
 Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Retrieves all identity provider types available in a directory.
-
-In an Azure Active Directory (Azure AD) tenant B2B scenarios the identity providers types can be `Google` and `Facebook`.
-
-In a B2C tenant the identity provider types can be `Microsoft`, `Google`, `Facebook`, `Amazon`, `LinkedIn`, `Twitter`, `OpenIDConnect`, `Weibo`, `QQ`, `WeChat` and `GitHub`.
-
+Retrieve the properties of an existing [openIdConnectProvider](../resources/openIdConnectProvider.md).
 
 ## Permissions
 
@@ -38,7 +33,7 @@ The work or school account needs to belong to one of the following two roles:
 
 <!-- { "blockType": "ignored" } -->
 ```http
-GET /identityProviders/availableProviderTypes
+GET /identityProviders/{id}
 ```
 
 ## Request headers
@@ -53,10 +48,11 @@ Do not supply a request body for this method.
 
 ## Response
 
-If successful, this method returns `200 OK` response code and a string collection of available identity provider types in JSON representation in the response body.
+If successful, this method returns `200 OK` response code and a JSON representation of the [identityProvider](../resources/identityprovider.md) in the response body.
+
 ## Example
 
-The following example retrieves all **identityProvider types**.
+The following example retrieves a specific **identityProvider**.
 
 ##### Request
 
@@ -64,21 +60,21 @@ The following example retrieves all **identityProvider types**.
 # [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
-  "name": "get_availableProviderTypes"
+  "name": "get_identityprovider"
 }-->
 ```msgraph-interactive
-GET https://graph.microsoft.com/beta/identityProviders/availableProviderTypes
+GET https://graph.microsoft.com/beta/identityProviders/Amazon-OAuth
 ```
 # [C#](#tab/csharp)
-[!INCLUDE [sample-code](../includes/snippets/csharp/get-identityproviderstypes-csharp-snippets.md)]
+[!INCLUDE [sample-code](../includes/snippets/csharp/get-identityprovider-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [JavaScript](#tab/javascript)
-[!INCLUDE [sample-code](../includes/snippets/javascript/get-identityproviderstypes-javascript-snippets.md)]
+[!INCLUDE [sample-code](../includes/snippets/javascript/get-identityprovider-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Objective-C](#tab/objc)
-[!INCLUDE [sample-code](../includes/snippets/objc/get-identityproviderstypes-objc-snippets.md)]
+[!INCLUDE [sample-code](../includes/snippets/objc/get-identityprovider-objc-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
@@ -86,31 +82,21 @@ GET https://graph.microsoft.com/beta/identityProviders/availableProviderTypes
 
 ##### Response
 
-
 <!-- {
   "blockType": "response",
   "truncated": true,
-  "@odata.type": "microsoft.graph.IdentityProvider",
-  "isCollection": true
+  "@odata.type": "microsoft.graph.IdentityProvider"
 } -->
 ```http
 HTTP/1.1 200 OK
 Content-type: application/json
 
 {
-    "value": [
-      "Amazon",
-      "OpenIDConnect",
-      "Facebook",
-      "GitHub",
-      "Google",
-      "LinkedIn",
-      "Microsoft",
-      "QQ",
-      "Twitter",
-      "WeChat",
-      "Weibo"
-    ]
+    "id": "Amazon-OAUTH",
+    "type": "Amazon",
+    "name": "Login with Amazon",
+    "clientId": "56433757-cadd-4135-8431-2c9e3fd68ae8",
+    "clientSecret": "*****"
 }
 ```
 
@@ -119,7 +105,7 @@ Content-type: application/json
 <!--
 {
   "type": "#page.annotation",
-  "description": "List configuredidentityProviders",
+  "description": "Get identityProvider",
   "keywords": "",
   "section": "documentation",
   "tocPath": "",

@@ -1187,3 +1187,19 @@ Possible values for user account types (group membership), per Windows definitio
 | investigationsThreatIntelligence
 | generic
 | unknownFutureValue
+
+### openIdConnectResponseMode
+| Member                | Value | Description                         |
+|:----------------------|:------|:------------------------------------|
+| none                  | 0     | Not yet know.                       |
+| form_post             | 1     | This response mode is recommended for best security. The response is transmitted via the HTTP POST method, with the code or token being encoded in the body using the application/x-www-form-urlencoded format.|
+| query                 | 2     | The code or token is returned as a query parameter.|
+|unknownFutureValue     | 3     |A sentinel member.|
+
+### openIdConnectResponseTypes
+| Member                | Value | Description                         |
+|:----------------------|:------|:------------------------------------|
+| none                  | 0     | Not yet know.                       |
+| code                  | 1     | As per the authorization code flow, a code will be returned back to Azure AD B2C. Azure AD B2C proceeds to call the token_endpoint to exchange the code for the token.|
+| id_token              | 2     | An ID token is returned back to Azure AD B2C from the custom identity provider.|
+|token                  | 4     |An access token is returned back to Azure AD B2C from the custom identity provider. (This value is not supported by Azure AD B2C at the moment)|
