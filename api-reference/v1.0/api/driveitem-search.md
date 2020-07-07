@@ -51,7 +51,7 @@ This method supports the `$expand`, `$select`, `$skipToken`, `$top`, and `$order
 
 ### Request
 
-The following example searches for a match for “Project Contoso” across several fields in the signed-in user’s drive items.
+The following example searches for a match for “Contoso Project” across several fields in the signed-in user’s drive items.
 
 
 # [HTTP](#tab/http)
