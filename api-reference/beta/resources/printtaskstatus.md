@@ -20,7 +20,7 @@ See the [Pull Print Overview](/graph/universal-print-concept-overview.md#extendi
 ## Properties
 | Property     | Type        | Description |
 |:-------------|:------------|:------------|
-|state|[printTaskProcessingState](printtaskprocessingstate.md)|The current processing state of the [printTask](printtask.md). Valid values are described in the following table.|
+|state|printTaskProcessingState|The current processing state of the [printTask](printtask.md). Valid values are described in the following table.|
 |description|String|A human-readable description of the current processing state of the [printTask](printtask.md).|
 
 ### printTaskProcessingState values

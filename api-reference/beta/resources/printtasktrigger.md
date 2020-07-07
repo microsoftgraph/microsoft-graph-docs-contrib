@@ -28,7 +28,7 @@ See the [Pull Print Overview](/graph/universal-print-concept-overview.md#extendi
 | Property     | Type        | Description |
 |:-------------|:------------|:------------|
 |id|String|The printTaskTrigger's identifier. Read-only.|
-|event|[printEvent](printevent.md)|The Universal Print event that will cause a new [printTask](printtask.md) to be triggered. Valid values are described in the following table.|
+|event|printEvent|The Universal Print event that will cause a new [printTask](printtask.md) to be triggered. Valid values are described in the following table.|
 
 ## Relationships
 | Relationship | Type        | Description |

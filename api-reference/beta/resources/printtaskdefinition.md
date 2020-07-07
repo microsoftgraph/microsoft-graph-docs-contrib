@@ -21,10 +21,10 @@ See the [Pull Print Overview](/graph/universal-print-concept-overview.md#extendi
 
 | Method       | Return Type | Description |
 |:-------------|:------------|:------------|
-| [List](../api/print-list-taskDefinitions.md) | [printTaskDefinition](printtaskdefinition.md) collection | Get a complete list of printTaskDefinitions created within Universal Print. |
-| [Create](../api/print-post-taskDefinitions.md) | [printTaskDefinition](printtaskdefinition.md) | Create a new printTaskDefinition. |
-| [Update](../api/print-update-taskDefinitions.md) | [printTaskDefinition](printtaskdefinition.md) | Update a printTaskDefinition. |
-| [Delete](../api/print-delete-taskDefinitions.md) | None | Delete a printTaskDefinition. |
+| [List](../api/print-list-taskdefinitions.md) | [printTaskDefinition](printtaskdefinition.md) collection | Get a complete list of printTaskDefinitions created within Universal Print. |
+| [Create](../api/print-post-taskdefinitions.md) | [printTaskDefinition](printtaskdefinition.md) | Create a new printTaskDefinition. |
+| [Update](../api/print-update-taskdefinition.md) | [printTaskDefinition](printtaskdefinition.md) | Update a printTaskDefinition. |
+| [Delete](../api/print-delete-taskdefinition.md) | None | Delete a printTaskDefinition. |
 | [List tasks](../api/printtaskdefinition-list-tasks.md) | [printTask](printtask.md) | Get a list of tasks that have been created based on this definition. The list includes currently running tasks and recently completed tasks. |
 | [Get task](../api/printtask-get.md) | [printTask](printtask.md) | Gets a task that has been created based on this definition. |
 | [Update task](../api/printtaskdefinition-update-task.md) | None | Update a task that has been created based on this definition. **Applications that register task triggers are responsible for updating task status when processing is finished.** Failure to report completion will result in the related print job being blocked from printing and eventually deleted. |
