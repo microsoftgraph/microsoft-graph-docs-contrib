@@ -21,10 +21,7 @@ Inherits from [itemFacet](../resources/itemfacet.md).
 |Method|Return type|Description|
 |:---|:---|:---|
 |[List names](../api/profile-list-names.md)|[personName](../resources/personname.md) collection|Get the personNames from the names navigation property.|
-|[Create names](../api/profile-post-names.md)|[personName](../resources/personname.md)|Create a new names object.|
-|[Get names](../api/profile-get-personname.md)|[personName](../resources/personname.md)|Read the properties and relationships of a [personName](../resources/personname.md) object.|
-|[List personNames](../api/personname-list.md)|[personName](../resources/personname.md) collection|Get a list of the [personName](../resources/personname.md) objects and their properties.|
-|[Create personName](../api/personname-create.md)|[personName](../resources/personname.md)|Create a new [personName](../resources/personname.md) object.|
+|[Create names](../api/profile-post-names.md)|[personName](../resources/personname.md)|Create a new [personName](../resources/personname.md) object from the names navigation property.|
 |[Get personName](../api/personname-get.md)|[personName](../resources/personname.md)|Read the properties and relationships of a [personName](../resources/personname.md) object.|
 |[Update personName](../api/personname-update.md)|[personName](../resources/personname.md)|Update the properties of a [personName](../resources/personname.md) object.|
 |[Delete personName](../api/personname-delete.md)|None|Deletes a [personName](../resources/personname.md) object.|
