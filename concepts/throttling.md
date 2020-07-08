@@ -57,13 +57,6 @@ The following resources currently provide a `Retry-After` header:
 - [External item (Microsoft Search)](/graph/api/resources/externalitem?view=graph-rest-beta)
 - [Report](/graph/api/resources/report)
 - [Subscription](/graph/api/resources/subscription)
-- [Risk detection](/graph/api/resources/riskDetection)
-- [Risky user](/graph/api/resources/riskyUser)
-- [Risky user history item](/graph/api/resources/riskyUserHistoryItem)
-- [Named location](/graph/api/resources/namedLocation)
-- [Country named location](/graph/api/resources/countryNamedLocation)
-- [IP named location](/graph/api/resources/ipNamedLocation)
-- [Conditional access policy](/graph/api/resources/conditionalAccessPolicy)
 - [Trending](/graph/api/resources/insights-trending)
 - [Used insight](/graph/api/resources/insights-used)
 - [Shared insight](/graph/api/resources/insights-shared)
@@ -181,13 +174,14 @@ and [polling requirements](/graph/api/resources/teams-api-overview#polling-requi
 
 ### Identity protection and conditional access service limits
 
-| Request type | Limit per app per tenant |
+| Request type | Limit per tenant |
 | ------------ | ------- |
 | Any | 1 request per second |
 
 The preceding limits apply to the following resources:  
 riskDetection, riskyUser, riskyUserHistoryItem, namedLocation, countryNamedLocation, ipNamedLocation, conditionalAccessPolicy.
 
+> **Note:** at the moment the resources listed above do not return a `Retry-After` header on `429 Too Many Requests` responses.
 ### Insights service limits
 
 The following limits apply to any request on `me/insights` or `users/{id}/insights`.
