@@ -75,7 +75,6 @@ The following is an example of the request.
 
 ```msgraph-interactive
 GET https://graph.microsoft.com/beta/me/profile/names/{id}
-GET https://graph.microsoft.com/beta/me/profile/names/users/{id | userPrincipalName}/profile/names/{id}
 ```
 # [C#](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/get-personname-csharp-snippets.md)]

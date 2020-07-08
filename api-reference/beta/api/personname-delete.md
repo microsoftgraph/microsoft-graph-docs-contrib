@@ -63,7 +63,6 @@ The following is an example of the request.
 
 ```http
 DELETE https://graph.microsoft.com/beta/me/profile/names/{id}
-DELETE https://graph.microsoft.com/beta/me/profile/names/users/{id | userPrincipalName}/profile/names/{id}
 ```
 # [C#](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/delete-personname-csharp-snippets.md)]

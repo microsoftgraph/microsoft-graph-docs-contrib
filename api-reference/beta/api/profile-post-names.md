@@ -63,7 +63,6 @@ The following is an example of the request.
 
 ```http
 POST https://graph.microsoft.com/beta/me/profile/names
-POST https://graph.microsoft.com/beta/me/profile/names/users/{id | userPrincipalName}/profile/names
 Content-type: application/json
 
 {

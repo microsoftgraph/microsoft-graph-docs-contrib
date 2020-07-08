@@ -85,7 +85,6 @@ The following is an example of the request.
 
 ```http
 PATCH https://graph.microsoft.com/beta/me/profile/names/{id}
-PATCH https://graph.microsoft.com/beta/me/profile/names/users/{id | userPrincipalName}/profile/names/{id}
 Content-type: application/json
 
 {
