@@ -51,7 +51,7 @@ The following is an example of the request.
   "name": "delete_printer_tasktrigger"
 }-->
 ```http
-DELETE /print/printers/1a5f91a7-9bd1-4d5f-bb86-f43554cac51c/taskTriggers/25be207e-1154-491f-aa68-a9f7007d4bec
+DELETE https://graph.microsoft.com/beta/print/printers/1a5f91a7-9bd1-4d5f-bb86-f43554cac51c/taskTriggers/25be207e-1154-491f-aa68-a9f7007d4bec
 ```
 
 ---
