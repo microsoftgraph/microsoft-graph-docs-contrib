@@ -46,7 +46,7 @@ Here is a JSON representation of the resource
     "used",
     "shared"
   ],
-  "@odata.type": "microsoft.graph.officeGraphInsights"
+  "@odata.type": "microsoft.graph.itemInsights"
 }-->
 
 ```json
