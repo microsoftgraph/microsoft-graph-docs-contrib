@@ -2,7 +2,7 @@
 title: "itemInsightsSettings resource type"
 description: "Represents privacy settings for itemInsights."
 localization_priority: Normal
-author: "elmakhmu"
+author: "simonhult"
 ms.prod: "insights"
 doc_type: resourcePageType
 ---
@@ -11,8 +11,7 @@ doc_type: resourcePageType
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Represents privacy settings for [itemInsights](iteminsights.md).
-Rep to configure the visibility of Graph-derived insights, between users and other items in the Graph (such as documents or sites) across apps and services in Microsoft 365.
+Represents privacy settings for [itemInsights](iteminsights.md), which configure the visibility of Graph-derived insights, between users and other items in the Graph (such as documents or sites) across apps and services in Microsoft 365.
 
 ## Methods
 
@@ -25,17 +24,21 @@ Rep to configure the visibility of Graph-derived insights, between users and oth
 ## Properties
 | Property   | Type|Description|
 |:---------------|:--------|:----------|
-|isEnabledInOrganization|Boolean| **true**(default) if organization item insights are enabled; **false** if organization item insights are disabled for all users without exceptions. Not required.|
-|disabledForGroup|String|(default empty) an Id of security AAD group, whose members' item insights are disabled. Not required.|
+|isEnabledInOrganization|Boolean| **true** (default) if organization item insights are enabled; **false** if organization item insights are disabled for all users without exceptions. Optional.|
+|disabledForGroup|String|(default empty) an Id of Azure Active Directory group, whose members' item insights are disabled. Optional.|
 
 ## JSON representation
 
 Here is a JSON representation of the resource
-<!-- { "blockType": "ignored" } -->
+<!-- {
+  "blockType": "resource",
+  "optionalProperties": [],
+  "@odata.type": "microsoft.graph.itemInsightsSettings"
+}-->
 
 ```json
 {
-  "isEnabledInOrganization": "boolean",
-  "disabledForGroup": "strings"
+  "isEnabledInOrganization": "Boolean",
+  "disabledForGroup": "String"
 }
 ```
