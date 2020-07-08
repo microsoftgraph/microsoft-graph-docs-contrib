@@ -305,11 +305,11 @@ items:
           - name: Control access to item insights
             items:
             - name: Organization settings
-              href: resources/organizationsettings.md
-            - name: Get org settings
-              href: api/organizationsettings-get.md
-            - name: Update org settings
-              href: api/organizationsettings-update.md
+              href: resources/iteminsightssettings.md
+            - name: Get itemInsights
+              href: api/organizationsettings-get-iteminsights.md
+            - name: Update itemInsights
+              href: api/organizationsettings-update-iteminsights.md
       - name: Mail
         href: resources/message.md
         items:
@@ -10728,7 +10728,7 @@ items:
         - name: Delete
           href: api/profilecardproperty-delete.md    
       - name: Insights
-        href: resources/iteminsight.md
+        href: resources/iteminsights.md
         items:
         - name: Trending
           href: resources/insights-trending.md
