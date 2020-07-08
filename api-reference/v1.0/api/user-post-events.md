@@ -709,7 +709,6 @@ Content-type: application/json
       "type": "required"
     }
   ],
-  "allowNewTimeProposals": true,
   "isOnlineMeeting": true,
   "onlineMeetingProvider": "teamsForBusiness"
 }
@@ -777,7 +776,6 @@ Content-type: application/json
     "onlineMeetingUrl":null,
     "isOnlineMeeting": true,
     "onlineMeetingProvider": "teamsForBusiness",
-    "allowNewTimeProposals": true,
     "responseStatus":{
         "response":"organizer",
         "time":"0001-01-01T00:00:00Z"
