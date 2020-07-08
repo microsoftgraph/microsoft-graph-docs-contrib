@@ -28,7 +28,7 @@ One of the following permissions is required to call this API. To learn more, in
 }
 -->
 ``` http
-DELETE /teams/{teamsId}/members
+DELETE /teams/{team-id}/members/{member-id}
 ```
 
 ## Request headers
