@@ -57,6 +57,10 @@ The following resources currently provide a `Retry-After` header:
 - [External item (Microsoft Search)](/graph/api/resources/externalitem?view=graph-rest-beta)
 - [Report](/graph/api/resources/report)
 - [Subscription](/graph/api/resources/subscription)
+- [Trending](/graph/api/resources/insights-trending)
+- [Used insight](/graph/api/resources/insights-used)
+- [Shared insight](/graph/api/resources/insights-shared)
+- [User settings](/graph/api/resources/usersettings)
 - [Invitation](/graph/api/resources/invitation)
 
 For a broader discussion of throttling on the Microsoft Cloud, see [Throttling Pattern](https://docs.microsoft.com/azure/architecture/patterns/throttling).
@@ -79,6 +83,8 @@ Microsoft Graph allows you to access data in [multiple services](overview-major-
 
 > [!NOTE]
 > The specific limits described here are subject to change.
+
+> **Note:** In this section, the term *tenant* refers to the Microsoft 365 organization where the application is installed. This tenant can be the same as the the one where the application was created, in the case of a single tenant application, or it can be different, in the case of a [multi-tenant application](/azure/active-directory/develop/setup-multi-tenant-app).
 
 ### Outlook service limits
 
@@ -131,6 +137,14 @@ The following resources are provided by the Outlook service.
 - [outlookCategory](/graph/api/resources/outlookcategory)
 - [attachment](/graph/api/resources/attachment)
 
+### Cloud communication service limits
+
+| Resource      | Limits per app per tenant    |
+| -------------- | ------------ |
+| [Calls](/graph/api/resources/call) | 10,000 calls/month and 100 concurrent calls   |
+| [Meeting information](/graph/api/resources/meetinginfo)   | 2000 meetings/user each month |
+| [Presence](/graph/api/resources/presence) (preview)   | 2 rps |
+
 ### Microsoft Teams service limits
 
 Limits are expressed as requests per second (rps).
@@ -148,12 +162,24 @@ Limits are expressed as requests per second (rps).
 | GET 1:1/group chat message  | 3 rps | 30 rps |
 | POST channel message | 2 rps | 20 rps |
 | POST 1:1/group chat message | 2 rps | 20 rps |
+| GET /teams/```{team-id}```/schedule and all APIs under this path | 60 rps | 600 rps |
+| POST, PATCH, PUT /teams/```{team-id}```/schedule and all APIs under this path | 30 rps | 300 rps |
+| DELETE /teams/```{team-id}```/schedule and all APIs under this path | 15 rps | 150 rps |
 
 A maximum of 4 requests per second per app can be issued on a given team or channel.
 A maximum of 3000 messages per app per day can be sent to a given channel.
 
 See also [Microsoft Teams limits](/graph/api/resources/teams-api-overview#microsoft-teams-limits) 
 and [polling requirements](/graph/api/resources/teams-api-overview#polling-requirements).
+
+### Insights service limits
+
+The following limits apply to any request on `me/insights` or `users/{id}/insights`.
+
+| Limit                                                      | Applies to      |
+|------------------------------------------------------------|-----------------|
+| 10,000 API requests in a 10 minute period                  | v1.0 and beta endpoints |
+| 4 concurrent requests                                      | v1.0 and beta endpoints   |
 
 ### Microsoft Graph reports service limits
 
