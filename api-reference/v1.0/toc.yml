@@ -689,6 +689,26 @@ items:
             href: api/application-post-owners.md
           - name: Remove
             href: api/application-delete-owners.md
+        - name: Policies
+          items:
+          - name: Token issuance policy
+            href: resources/tokenissuancepolicy.md
+            items:
+            - name: Assign
+              href: api/application-post-tokenissuancepolicies.md
+            - name: List
+              href: api/application-list-tokenissuancepolicies.md
+            - name: Remove
+              href: api/application-delete-tokenissuancepolicies.md
+          - name: Token lifetime policy
+            href: resources/tokenlifetimepolicy.md
+            items:
+            - name: Assign
+              href: api/application-post-tokenlifetimepolicies.md
+            - name: List
+              href: api/application-list-tokenlifetimepolicies.md
+            - name: Remove
+              href: api/application-delete-tokenlifetimepolicies.md
       - name: Service principal
         href: resources/serviceprincipal.md
         items:
@@ -759,30 +779,42 @@ items:
             href: api/serviceprincipal-delete-owners.md
         - name: Policies
           items:
-          - name: Assign claimsMappingPolicy
-            href: api/serviceprincipal-post-claimsmappingpolicies.md
-          - name: List claimsMappingPolicies
-            href: api/serviceprincipal-list-claimsmappingpolicies.md
-          - name: Remove claimsMappingPolicy
-            href: api/serviceprincipal-delete-claimsmappingpolicies.md
-          - name: Assign homeRealmDiscoveryPolicy
-            href: api/serviceprincipal-post-homerealmdiscoverypolicies.md
-          - name: List homeRealmDiscoveryPolicies
-            href: api/serviceprincipal-list-homerealmdiscoverypolicies.md
-          - name: Remove homeRealmDiscoveryPolicy
-            href: api/serviceprincipal-delete-homerealmdiscoverypolicies.md
-          - name: Assign tokenIssuancePolicy
-            href: api/application-post-tokenissuancepolicies.md
-          - name: List tokenIssuancePolicies
-            href: api/application-list-tokenissuancepolicies.md
-          - name: Remove tokenIssuancePolicy
-            href: api/application-delete-tokenissuancepolicies.md
-          - name: Assign tokenLifetimePolicy
-            href: api/application-post-tokenlifetimepolicies.md
-          - name: List tokenLifetimePolicies
-            href: api/application-list-tokenlifetimepolicies.md
-          - name: Remove tokenLifetimePolicy
-            href: api/application-delete-tokenlifetimepolicies.md
+          - name: Claims mapping policy
+            href: resources/claimsmappingpolicy.md
+            items:
+            - name: Assign
+              href: api/serviceprincipal-post-claimsmappingpolicies.md
+            - name: List
+              href: api/serviceprincipal-list-claimsmappingpolicies.md
+            - name: Remove
+              href: api/serviceprincipal-delete-claimsmappingpolicies.md
+          - name: Home realm discovery policy
+            href: resources/homerealmdiscoverypolicy.md
+            items:
+            - name: Assign
+              href: api/serviceprincipal-post-homerealmdiscoverypolicies.md
+            - name: List
+              href: api/serviceprincipal-list-homerealmdiscoverypolicies.md
+            - name: Remove
+              href: api/serviceprincipal-delete-homerealmdiscoverypolicies.md
+          - name: Token issuance policy
+            href: resources/tokenissuancepolicy.md
+            items:
+            - name: Assign
+              href: api/application-post-tokenissuancepolicies.md
+            - name: List
+              href: api/application-list-tokenissuancepolicies.md
+            - name: Remove
+              href: api/application-delete-tokenissuancepolicies.md
+          - name: Token lifetime policy
+            href: resources/tokenlifetimepolicy.md
+            items:
+            - name: Assign
+              href: api/application-post-tokenlifetimepolicies.md
+            - name: List
+              href: api/application-list-tokenlifetimepolicies.md
+            - name: Remove
+              href: api/application-delete-tokenlifetimepolicies.md
     - name: Calendar
       displayname: Outlook calendar
       items:
