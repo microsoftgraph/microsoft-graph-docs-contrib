@@ -22,9 +22,7 @@ Inherits from [itemFacet](../resources/itemfacet.md).
 |:---|:---|:---|
 |[List names](../api/profile-list-names.md)|[personName](../resources/personname.md) collection|Get the personNames from the names navigation property.|
 |[Create names](../api/profile-post-names.md)|[personName](../resources/personname.md)|Create a new names object.|
-|[Update names](../api/profile-update-names.md)|[personName](../resources/personname.md)|Update the properties of a names object.|
 |[Get names](../api/profile-get-personname.md)|[personName](../resources/personname.md)|Read the properties and relationships of a [personName](../resources/personname.md) object.|
-|[Delete names](../api/profile-delete-names.md)|None|Delete a [personName](../resources/personname.md) object.|
 |[List personNames](../api/personname-list.md)|[personName](../resources/personname.md) collection|Get a list of the [personName](../resources/personname.md) objects and their properties.|
 |[Create personName](../api/personname-create.md)|[personName](../resources/personname.md)|Create a new [personName](../resources/personname.md) object.|
 |[Get personName](../api/personname-get.md)|[personName](../resources/personname.md)|Read the properties and relationships of a [personName](../resources/personname.md) object.|
@@ -34,7 +32,7 @@ Inherits from [itemFacet](../resources/itemfacet.md).
 ## Properties
 |Property|Type|Description|
 |:---|:---|:---|
-|allowedAudiences|allowedAudiences|The audiences that are able to see the values contained within the entity. Inherited from [itemFacet](../resources/itemfacet.md). Possible values are: `me`, `family`, `contacts`, `groupMembers`, `organization`, `federatedOrganizations`, `everyone`, `unknownFutureValue`.|
+|allowedAudiences|String|The audiences that are able to see the values contained within the entity. Inherited from [itemFacet](../resources/itemfacet.md). Possible values are: `me`, `family`, `contacts`, `groupMembers`, `organization`, `federatedOrganizations`, `everyone`, `unknownFutureValue`.|
 |createdBy|[identitySet](../resources/identityset.md)|Provides the identifier of the user and/or application that created the entity. Inherited from [itemFacet](../resources/itemfacet.md)|
 |createdDateTime|DateTimeOffset|Provides the dateTimeOffset for when the entity was created. Inherited from [itemFacet](../resources/itemfacet.md)|
 |displayName|String|Provides an ordered rendering of firstName and lastName depending on the locale of the user or their device.|

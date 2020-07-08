@@ -10,6 +10,19 @@ author: "MSGraphDocsvTeam"
 
 Namespace: microsoft.graph
 
+### allowedAudiences values 
+
+|Members|
+|:---|
+|me|
+|family|
+|contacts|
+|groupMembers|
+|organization|
+|federatedOrganizations|
+|everyone|
+|unknownFutureValue|
+
 ### attachmentType values
 
 | Member
