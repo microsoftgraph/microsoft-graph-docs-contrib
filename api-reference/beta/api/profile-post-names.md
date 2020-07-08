@@ -31,6 +31,7 @@ One of the following permissions is required to call this API. To learn more, in
 
 ```http
 POST /me/profile/names
+POST /users/{id | userPrincipalName}/profile/names
 ```
 
 ## Request headers
@@ -62,15 +63,16 @@ The following is an example of the request.
 
 ```http
 POST https://graph.microsoft.com/beta/me/profile/names
+POST https://graph.microsoft.com/beta/me/profile/names/users/{id | userPrincipalName}/profile/names
 Content-type: application/json
 
 {
-  "displayName": "displayName-value",
-  "first": "first-value",
-  "initials": "initials-value",
-  "last": "last-value",
-  "languageTag": "languageTag-value",
-  "maiden": "maiden-value"
+  "displayName": "Innocenty Popov",
+  "first": "Innocenty",
+  "initials": "IP",
+  "last": "Popov",
+  "languageTag": "en-US",
+  "maiden": null
 }
 ```
 # [C#](#tab/csharp)
@@ -105,12 +107,12 @@ HTTP/1.1 201 Created
 Content-type: application/json
 
 {
-  "displayName": "displayName-value",
-  "first": "first-value",
-  "initials": "initials-value",
-  "last": "last-value",
-  "languageTag": "languageTag-value",
-  "maiden": "maiden-value"
+  "displayName": "Innocenty Popov",
+  "first": "Innocenty",
+  "initials": "IP",
+  "last": "Popov",
+  "languageTag": "en-US",
+  "maiden": null
 }
 ```
 

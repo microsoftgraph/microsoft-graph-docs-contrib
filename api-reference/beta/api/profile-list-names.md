@@ -31,6 +31,7 @@ One of the following permissions is required to call this API. To learn more, in
 
 ```http
 GET /me/profile/names
+GET /users/{id | userPrincipalName}/profile/names
 ```
 
 ## Optional query parameters
@@ -66,6 +67,7 @@ The following is an example of the request.
 
 ```msgraph-interactive
 GET https://graph.microsoft.com/beta/me/profile/names
+GET https://graph.microsoft.com/beta/me/profile/names/users/{id | userPrincipalName}/profile/names
 ```
 # [C#](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/get-names-csharp-snippets.md)]
@@ -80,7 +82,6 @@ GET https://graph.microsoft.com/beta/me/profile/names
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
-
 
 ### Response
 
@@ -102,12 +103,36 @@ Content-type: application/json
 {
   "value": [
     {
-      "displayName": "displayName-value",
-      "first": "first-value",
-      "initials": "initials-value",
-      "last": "last-value",
-      "languageTag": "languageTag-value",
-      "maiden": "maiden-value"
+      "@odata.type": "#microsoft.graph.personName",
+      "id": "e13f7a4d-303c-464f-a6af-80ea18eb74f3",
+      "allowedAudiences": "organization",
+      "inference": {
+        "@odata.type": "microsoft.graph.inferenceData"
+      },
+      "createdDateTime": "2020-07-06T06:34:12.2294868Z",
+      "createdBy": {
+        "@odata.type": "microsoft.graph.identitySet"
+      },
+      "lastModifiedDateTime": "2020-07-06T06:34:12.2294868Z",
+      "lastModifiedBy": {
+        "@odata.type": "microsoft.graph.identitySet"
+      },
+      "source": {
+        "@odata.type": "microsoft.graph.personDataSource"
+      },
+      "displayName": "Innocenty Popov",
+      "first": "Innocenty",
+      "initials": "IP",
+      "last": "Popov",
+      "languageTag": "en-US",
+      "maiden": null,
+      "middle": null,
+      "nickname": "Kesha",
+      "suffix": null,
+      "title": null,
+      "pronunciation": {
+        "@odata.type": "microsoft.graph.yomiPersonName"
+      }
     }
   ]
 }

@@ -31,6 +31,7 @@ One of the following permissions is required to call this API. To learn more, in
 
 ```http
 GET /me/profile/names/{id}
+GET /users/{id | userPrincipalName}/profile/names/{id}
 ```
 
 ## Optional query parameters
@@ -74,6 +75,7 @@ The following is an example of the request.
 
 ```msgraph-interactive
 GET https://graph.microsoft.com/beta/me/profile/names/{id}
+GET https://graph.microsoft.com/beta/me/profile/names/users/{id | userPrincipalName}/profile/names/{id}
 ```
 # [C#](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/get-personname-csharp-snippets.md)]
@@ -106,12 +108,36 @@ HTTP/1.1 200 OK
 Content-type: application/json
 
 {
-  "displayName": "displayName-value",
-  "first": "first-value",
-  "initials": "initials-value",
-  "last": "last-value",
-  "languageTag": "languageTag-value",
-  "maiden": "maiden-value"
+  "@odata.type": "#microsoft.graph.personName",
+  "id": "e13f7a4d-303c-464f-a6af-80ea18eb74f3",
+  "allowedAudiences": "organization",
+  "inference": {
+    "@odata.type": "microsoft.graph.inferenceData"
+  },
+  "createdDateTime": "2020-07-06T06:34:12.2294868Z",
+  "createdBy": {
+    "@odata.type": "microsoft.graph.identitySet"
+  },
+  "lastModifiedDateTime": "2020-07-06T06:34:12.2294868Z",
+  "lastModifiedBy": {
+    "@odata.type": "microsoft.graph.identitySet"
+  },
+  "source": {
+    "@odata.type": "microsoft.graph.personDataSource"
+  },
+  "displayName": "Innocenty Popov",
+  "first": "Innocenty",
+  "initials": "IP",
+  "last": "Popov",
+  "languageTag": "en-US",
+  "maiden": null,
+  "middle": null,
+  "nickname": "Kesha",
+  "suffix": null,
+  "title": null,
+  "pronunciation": {
+    "@odata.type": "microsoft.graph.yomiPersonName"
+  }
 }
 ```
 

@@ -31,6 +31,7 @@ One of the following permissions is required to call this API. To learn more, in
 
 ```http
 DELETE /me/profile/names/{id}
+DELETE /users/{id | userPrincipalName}/profile/names/{id}
 ```
 
 ## Request headers
@@ -62,6 +63,7 @@ The following is an example of the request.
 
 ```http
 DELETE https://graph.microsoft.com/beta/me/profile/names/{id}
+DELETE https://graph.microsoft.com/beta/me/profile/names/users/{id | userPrincipalName}/profile/names/{id}
 ```
 # [C#](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/delete-personname-csharp-snippets.md)]
