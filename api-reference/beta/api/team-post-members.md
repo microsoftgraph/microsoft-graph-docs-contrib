@@ -55,14 +55,14 @@ If successful, this method returns a `201 Created` response code and a [conversa
 }
 -->
 ``` http
-POST https://graph.microsoft.com/beta/teams/{id}/members/
+POST https://graph.microsoft.com/beta/teams/{id}/members
 content-type: application/json
 content-length: 26
-{
 
-"@odata.type": "#microsoft.graph.aadUserConversationMember",
-"roles": ["owner"],
-"user@odata.bind": "https://graph.microsoft.com/beta/users/8b081ef6-4792-4def-b2c9-c363a1bf41d5"
+{
+    "@odata.type": "#microsoft.graph.aadUserConversationMember",
+    "roles": ["owner"],
+    "user@odata.bind": "https://graph.microsoft.com/beta/users/8b081ef6-4792-4def-b2c9-c363a1bf41d5"
 }
 ```
 # [C#](#tab/csharp)
