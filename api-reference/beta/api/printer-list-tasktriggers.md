@@ -15,7 +15,7 @@ Namespace: microsoft.graph
 
 Retrieve a list of [task triggers](../resources/printtasktrigger.md) associated with the [printer](../resources/printer.md). The list of task triggers defines which tasks will be triggered as a result of events that occur during printing.
 
-See the [Pull Print Overview](/graph/universal-print-concept-overview.md#extending-universal-print-to-support-pull-printing) to understand how you can use this API to add Pull Print support to Universal Print.
+See the [pull print overview](/graph/universal-print-concept-overview.md#extending-universal-print-to-support-pull-printing) to understand how you can use this API to add pull print support to Universal Print.
 
 ## Permissions
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
@@ -50,7 +50,7 @@ Do not supply a request body for this method.
 ## Response
 If successful, this method returns a `200 OK` response code and collection of [printTaskTrigger](../resources/printtasktrigger.md) objects in the response body.
 ## Example
-##### Request
+### Request
 The following is an example of the request.
 
 # [HTTP](#tab/http)
@@ -64,7 +64,7 @@ GET https://graph.microsoft.com/beta/print/printers/{id}/taskTriggers
 
 ---
 
-##### Response
+### Response
 The following is an example of the response.
 >**Note:** The response object shown here might be shortened for readability. All the properties will be returned from an actual call.
 <!-- {

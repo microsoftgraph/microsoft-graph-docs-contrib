@@ -15,7 +15,7 @@ Namespace: microsoft.graph
 
 Delete a **taskDefinition**.
 
-See the [Pull Print Overview](/graph/universal-print-concept-overview.md#extending-universal-print-to-support-pull-printing) to understand how you can use this API to add Pull Print support to Universal Print.
+See the [pull print overview](/graph/universal-print-concept-overview.md#extending-universal-print-to-support-pull-printing) to understand how you can use this API to add pull print support to Universal Print.
 
 ## Permissions
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
@@ -45,7 +45,7 @@ Do not supply a request body for this method.
 If successful, this method returns a `204 No Content` response code. It does not return anything in the response body.
 
 ## Example
-##### Request
+### Request
 The following is an example of the request.
 
 # [HTTP](#tab/http)
@@ -59,7 +59,7 @@ DELETE /print/taskDefinitions/4c6a0f26-8e5d-4bf6-91e6-4a5731adec19
 
 ---
 
-##### Response
+### Response
 The following is an example of the response.
 >**Note:** The response object shown here might be shortened for readability. All the properties will be returned from an actual call.
 <!-- {

@@ -57,13 +57,13 @@ Sharing a printer creates a [printerShare](/graph/api/resources/printershare?vie
 
 To use this in your application, use [Update printerShare](/graph/api/printershare-update?view=graph-rest-beta) to update the printerShare's `printer` reference.
 
-### Extending Universal Print to support Pull Printing
+### Extending Universal Print to support pull printing
 
-The Microsoft Graph Universal Print API enables your application to support Pull Printing. To set up Pull Printing, you will register triggers that notify your application (via service-to-service communication) when certain print events happen, such as a print job being started.
+The Microsoft Graph Universal Print API enables your application to support pull printing. To set up pull printing, you will register triggers that notify your application (via service-to-service communication) when certain print events happen, such as a print job being started.
 
 These triggers enable your application to interrupt the print workflow to do things such as redirecting jobs to different printers and modifying the document payload.
 
-Follow these steps to enable Pull Printing:
+Follow these steps to enable pull printing:
 
 1. [Create a printTaskDefinition](/graph/api/print-post-taskdefinitions?view=graph-rest-beta) using application permissions. This abstract task definition will be used to create task that will hold the job for your application. You need to define at least one task definition per tenant which can be associated with any number of printers in the tenant using task triggers (see Step 4).
 

@@ -15,7 +15,7 @@ Namespace: microsoft.graph
 
 Redirect a [print job](../resources/printjob.md) to a different [printer](../resources/printer.md).
 
-See the [Pull Print Overview](/graph/universal-print-concept-overview.md#extending-universal-print-to-support-pull-printing) to understand how you can use this API to add Pull Print support to Universal Print.
+See the [pull print overview](/graph/universal-print-concept-overview.md#extending-universal-print-to-support-pull-printing) to understand how you can use this API to add pull print support to Universal Print.
 
 ## Permissions
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
@@ -50,7 +50,7 @@ If successful, this method returns a `200 OK` response code and a [printJob](../
 
 ## Example
 The following example shows how to call this API.
-##### Request
+### Request
 The following is an example of the request.
 
 # [HTTP](#tab/http)
@@ -68,7 +68,7 @@ POST https://graph.microsoft.com/beta/print/printers/d5ef6ec4-07ca-4212-baf9-d45
 
 ---
 
-##### Response
+### Response
 The following is an example of the response. 
 <!-- {
   "blockType": "response",

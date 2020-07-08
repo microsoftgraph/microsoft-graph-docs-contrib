@@ -15,7 +15,7 @@ Namespace: microsoft.graph
 
 Determines the condition under which a new [printTask](printtask.md) will be triggered based on the associated [printTaskDefinition](printtaskdefinition.md).
 
-See the [Pull Print Overview](/graph/universal-print-concept-overview.md#extending-universal-print-to-support-pull-printing) to understand how you can use this resource to add Pull Print support to Universal Print.
+See the [pull print overview](/graph/universal-print-concept-overview.md#extending-universal-print-to-support-pull-printing) to understand how you can use this resource to add pull print support to Universal Print.
 
 ## Methods
 
