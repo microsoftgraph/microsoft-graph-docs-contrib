@@ -13,11 +13,11 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Retrieves all identity provider types available in a directory.
+Get all identity provider types available in a directory.
 
-In an Azure Active Directory (Azure AD) tenant B2B scenarios the identity providers types can be `Google` and `Facebook`.
+In an Azure Active Directory (Azure AD) tenant B2B scenarios, the identity providers types can be `Google` and `Facebook`.
 
-In a B2C tenant the identity provider types can be `Microsoft`, `Google`, `Facebook`, `Amazon`, `LinkedIn`, `Twitter`, `OpenIDConnect`, `Weibo`, `QQ`, `WeChat` and `GitHub`.
+In a B2C tenant, the identity provider types can be `Microsoft`, `Google`, `Facebook`, `Amazon`, `LinkedIn`, `Twitter`, `OpenIDConnect`, `Weibo`, `QQ`, `WeChat`, and `GitHub`.
 
 
 ## Permissions
@@ -53,12 +53,12 @@ Do not supply a request body for this method.
 
 ## Response
 
-If successful, this method returns `200 OK` response code and a string collection of available identity provider types in JSON representation in the response body.
+If successful, this method returns an `200 OK` response code and a string collection of available identity provider types in JSON representation in the response body.
 ## Example
 
 The following example retrieves all **identityProvider types**.
 
-##### Request
+### Request
 
 
 # [HTTP](#tab/http)
@@ -84,7 +84,7 @@ GET https://graph.microsoft.com/beta/identityProviders/availableProviderTypes
 ---
 
 
-##### Response
+### Response
 
 
 <!-- {
