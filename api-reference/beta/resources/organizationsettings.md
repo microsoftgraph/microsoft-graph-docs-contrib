@@ -20,8 +20,8 @@ Contains settings that are applicable to the [organization](organization.md) or 
 | [Get organization settings](../api/organizationsettings-get.md) | [organizationSettings](organizationsettings.md) | Read the organization settings object. |
 | [Create profileCardProperty](../api/organizationsettings-post-profilecardproperties.md) | [profileCardProperty](profilecardproperty.md) | Create a new profileCardProperty by posting to the profileCardProperties collection. |
 | [List profileCardProperties](../api/organizationsettings-list-profilecardproperties.md) | [profileCardProperty](profilecardproperty.md) collection | Get a profileCardProperty object collection. |
-| [Get itemInsights](../api/organizationsettings-get-iteminsights.md) | [itemInsightsSettings](iteminsightssettings.md) | Get itemInsightsSettings object. |
-| [Update itemInsights](../api/organizationsettings-update-iteminsights.md) | [itemInsightsSettings](iteminsightssettings.md) | Update itemInsightsSettings object. |
+| [Get itemInsights](../api/organizationsettings-get-iteminsights.md) | [itemInsightsSettings](iteminsightssettings.md) | Read the itemInsightsSettings object. |
+| [Update itemInsights](../api/organizationsettings-update-iteminsights.md) | [itemInsightsSettings](iteminsightssettings.md) | Update the itemInsightsSettings object. |
 
 ## Properties
 
