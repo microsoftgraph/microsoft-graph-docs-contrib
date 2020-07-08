@@ -56,7 +56,7 @@ Do not supply a request body for this method.
 If successful, this method returns an `200 OK` response code and a string collection of available identity provider types in JSON representation in the response body.
 ## Example
 
-The following example retrieves all **identityProvider types**.
+The following example retrieves all **identityProvider** types.
 
 ### Request
 
@@ -90,7 +90,7 @@ GET https://graph.microsoft.com/beta/identityProviders/availableProviderTypes
 <!-- {
   "blockType": "response",
   "truncated": true,
-  "@odata.type": "microsoft.graph.IdentityProvider",
+  "@odata.type": "microsoft.graph.identityProvider",
   "isCollection": true
 } -->
 ```http
