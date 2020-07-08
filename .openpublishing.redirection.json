@@ -11172,42 +11172,42 @@
         },
         {
             "source_path": "api-reference\\beta\\api\\policy_assign.md",
-            "redirect_url": "/graph/api/policy-assign?view=graph-rest-beta",
+            "redirect_url": "/graph/api/resources/policy-overview?view=graph-rest-beta",
             "redirect_document_id": true
         },
         {
             "source_path": "api-reference\\beta\\api\\policy_delete.md",
-            "redirect_url": "/graph/api/policy-delete?view=graph-rest-beta",
+            "redirect_url": "/graph/api/resources/policy-overview?view=graph-rest-beta",
             "redirect_document_id": true
         },
         {
             "source_path": "api-reference\\beta\\api\\policy_get.md",
-            "redirect_url": "/graph/api/policy-get?view=graph-rest-beta",
+            "redirect_url": "/graph/api/resources/policy-overview?view=graph-rest-beta",
             "redirect_document_id": true
         },
         {
             "source_path": "api-reference\\beta\\api\\policy_list.md",
-            "redirect_url": "/graph/api/policy-list?view=graph-rest-beta",
+            "redirect_url": "/graph/api/resources/policy-overview?view=graph-rest-beta",
             "redirect_document_id": true
         },
         {
             "source_path": "api-reference\\beta\\api\\policy_list_appliesto.md",
-            "redirect_url": "/graph/api/policy-list-appliesto?view=graph-rest-beta",
+            "redirect_url": "/graph/api/resources/policy-overview?view=graph-rest-beta",
             "redirect_document_id": true
         },
         {
             "source_path": "api-reference\\beta\\api\\policy_list_assigned.md",
-            "redirect_url": "/graph/api/policy-list-assigned?view=graph-rest-beta",
+            "redirect_url": "/graph/api/resources/policy-overview?view=graph-rest-beta",
             "redirect_document_id": true
         },
         {
             "source_path": "api-reference\\beta\\api\\policy_post.md",
-            "redirect_url": "/graph/api/policy-post?view=graph-rest-beta",
+            "redirect_url": "/graph/api/resources/policy-overview?view=graph-rest-beta",
             "redirect_document_id": true
         },
         {
             "source_path": "api-reference\\beta\\api\\policy_update.md",
-            "redirect_url": "/graph/api/policy-update?view=graph-rest-beta",
+            "redirect_url": "/graph/api/resources/policy-overview?view=graph-rest-beta",
             "redirect_document_id": true
         },
         {
@@ -17413,6 +17413,11 @@
         {
             "source_path": "api-reference\\beta\\resources\\planner_order_hint_format.md",
             "redirect_url": "/graph/api/resources/planner-order-hint-format?view=graph-rest-beta",
+            "redirect_document_id": true
+        },
+        {
+            "source_path": "api-reference\\beta\\resources\\policy.md",
+            "redirect_url": "/graph/api/resources/policy-overview?view=graph-rest-beta",
             "redirect_document_id": true
         },
         {
