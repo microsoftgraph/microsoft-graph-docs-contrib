@@ -52,7 +52,7 @@ Do not supply a request body for this method.
 
 If successful, this method returns a `200 OK` response code and [itemInsightsSettings](../resources/iteminsightssettings.md) object in the response body.
 
->**Note:** This endpoint does not check existence of an Azure Active Directory Group. This means, if you configured a Azure AD group that did not exist or was deleted after, then this method will show previously predefined value of 'disabledForGroup' property but item insights of these group members might be enabled. 
+>**Note:** This endpoint verifies validity of a property value but does not check existence of an Azure Active Directory Group. This means, if you configured a Azure AD group that did not exist or was deleted after, then this method will show previously predefined value of 'disabledForGroup' property but item insights of these group members might be enabled. 
 
 ## Example
 
@@ -75,7 +75,6 @@ Here is an example of the response.
   "blockType": "response",
   "truncated": true,
   "@odata.type": "microsoft.graph.itemInsightsSettings",
-  "isCollection": no,
   "name": "get_iteminsightssettings"
 } -->
 
