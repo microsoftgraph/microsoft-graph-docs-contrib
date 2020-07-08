@@ -15,7 +15,7 @@ Namespace: microsoft.graph
 
 Create a new [profileCardProperty](../resources/profilecardproperty.md) for an organization. The new property is identified by its **directoryPropertyName** property.
 
-For more information on adding properties to the profile card for an organization, see customize the profile card.
+For more information on adding properties to the profile card for an organization, see [customize the profile card](/graph/add-properties-profilecard).
 
 ## Permissions
 
@@ -57,6 +57,8 @@ If successful, this method returns `201 Created` response code and a new [profil
 ### Request
 
 The following is an example of the request.
+
+# [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "create_profilecardproperty_from_organizationsettings"
@@ -81,6 +83,12 @@ Content-type: application/json
   ]
 }
 ```
+# [JavaScript](#tab/javascript)
+[!INCLUDE [sample-code](../includes/snippets/javascript/create-profilecardproperty-from-organizationsettings-javascript-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+---
+
 
 ### Response
 
