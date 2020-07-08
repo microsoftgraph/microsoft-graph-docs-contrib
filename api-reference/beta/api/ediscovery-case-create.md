@@ -85,6 +85,7 @@ The following is an example of the response.
 ```http
 HTTP/1.1 201 Created
 Content-type: application/json
+
 {
     "@odata.context": "https://graph.microsoft.com/beta/compliance/ediscovery/$metadata#cases/$entity",
     "id": "061b9a92-8926-4bd9-b41d-abf35edc7583",
