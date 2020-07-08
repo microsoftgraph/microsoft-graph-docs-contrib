@@ -90,7 +90,7 @@ Use:
 
 `/users/{guid-user-id}/messages`
 
-### Teams resource limitation (preview)
+### Teams resource limitations (preview)
 
 A single active subscription per channel or chat per application is allowed.
 
