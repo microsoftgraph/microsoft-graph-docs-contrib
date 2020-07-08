@@ -41,7 +41,6 @@ The following is a JSON representation of the resource.
 ``` json
 
 {
-  "@odata.type": "#microsoft.graph.yomiPersonName",
   "displayName": "In-no ken-te ",
   "first": "In-no ken-te Pop-ov",
   "maiden": null,
