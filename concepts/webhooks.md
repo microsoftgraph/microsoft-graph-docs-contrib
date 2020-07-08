@@ -38,12 +38,13 @@ Using the Microsoft Graph API, an app can subscribe to changes on the following 
 - Security [alert][]
 - Teams [callRecord][]
 - Teams [chatMessage][] (preview)
+- Teams [presence][] (preview)
 
 You can create a subscription to a specific Outlook folder such as the Inbox:
 `me/mailFolders('inbox')/messages`
 
 Or to a top-level resource:
-`/me/messages`, `/me/contacts`, `/me/events`, `users`, `groups`, or `/communications/callRecords`
+`/me/messages`, `/me/contacts`, `/me/events`, `users`, `groups`, `/communications/callRecords`, or `/communications/presences`
 
 Or to a specific resource instance:
 `users/{id}`, `groups/{id}`, `groups/{id}/conversations`
@@ -208,7 +209,6 @@ When many changes occur, Microsoft Graph may send multiple notifications that co
   "value": [
     {
       "id": "lsgTZMr9KwAAA",
-      "sequenceNumber": 10,
       "subscriptionId":"{subscription_guid}",
       "subscriptionExpirationDateTime":"2016-03-19T22:11:09.952Z",
       "clientState":"secretClientValue",
@@ -277,4 +277,5 @@ You can optionally configure the firewall that protects your notification URL to
 [user]: /graph/api/resources/user?view=graph-rest-1.0
 [alert]: /graph/api/resources/alert?view=graph-rest-1.0
 [callRecord]: /graph/api/resources/callrecords-callrecord?view=graph-rest-1.0
+[presence]: /graph/api/resources/presence
 [chatMessage]: /graph/api/resources/chatmessage
