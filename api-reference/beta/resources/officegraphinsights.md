@@ -1,6 +1,6 @@
 ---
 title: "officeGraphInsights resource type"
-description: "Represents the base type for [itemInsights](itemInsights.md). officeGraphInsights is for backward compatibility from earlier versions of the insights API. Use only itemInsights when accessing the insights API."
+description: "Represents the base type for [itemInsights](iteminsights.md). officeGraphInsights is for backward compatibility from earlier versions of the insights API. Use only itemInsights when accessing the insights API."
 author: "simonhult"
 localization_priority: Priority
 ms.prod: "insights"
@@ -8,7 +8,7 @@ doc_type: resourcePageType
 ---
 
 # officeGraphInsights resource type
-Represents the base type for [itemInsights](itemInsights.md). officeGraphInsights is for backward compatibility from earlier versions of the insights API. Use only itemInsights when accessing the insights API.
+Represents the base type for [itemInsights](iteminsights.md). officeGraphInsights is for backward compatibility from earlier versions of the insights API. Use only itemInsights when accessing the insights API.
 
 Namespace: microsoft.graph
 
@@ -32,4 +32,28 @@ Each insight is returned with a **resourceVisualization** and **resourceReferenc
 | used    	| [usedInsight](insights-used.md) collection		| Access this property from the derived type [itemInsights](iteminsights.md)|
 | shared    	| [sharedInsight](insights-shared.md) collection		| Access this property from the derived type [itemInsights](iteminsights.md)|
 
+
+## JSON representation
+
+Here is a JSON representation of the resource
+<!-- {
+  "blockType": "resource",
+  "keyProperty":"id",
+  "baseType":"microsoft.graph.entity",
+  "optionalProperties": [
+    "trending",
+    "used",
+    "shared"
+  ],
+  "@odata.type": "microsoft.graph.officeGraphInsights"
+}-->
+
+```json
+{
+  "id": "string",
+  "trending": [ { "@odata.type": "microsoft.graph.trending" } ],
+  "used": [ { "@odata.type": "microsoft.graph.used" } ],
+  "shared": [ { "@odata.type": "microsoft.graph.shared" } ]
+}
+```
 
