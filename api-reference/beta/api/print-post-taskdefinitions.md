@@ -38,6 +38,7 @@ POST /print/taskDefinitions
 | Name      |Description|
 |:----------|:----------|
 | Authorization | Bearer {token}. Required. |
+| Content-type  | application/json. Required.|
 
 ## Request body
 In the request body, supply a JSON representation of [printTaskDefinition](../resources/printtaskdefinition.md) object.
