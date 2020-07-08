@@ -15,7 +15,7 @@ Namespace: microsoft.graph
 
 Represents a task that is executing or has been executed as a result of an a Universal Print event.
 
-See the [pull print overview](/graph/universal-print-concept-overview.md#extending-universal-print-to-support-pull-printing) to understand how you can use this resource to add pull print support to Universal Print.
+For details about how to use this resource to add pull printing support to Universal Print, see [Extending Universal Print to support pull printing](/graph/universal-print-concept-overview.md#extending-universal-print-to-support-pull-printing).
 
 ## Methods
 

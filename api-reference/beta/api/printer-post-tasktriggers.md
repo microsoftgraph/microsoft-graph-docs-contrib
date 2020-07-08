@@ -48,13 +48,12 @@ If successful, this method returns a `201 Created` response code and a [printTas
 ##### Request
 The following is an example of the request.
 
-# [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "create_printer_tasktrigger"
 }-->
 ```http
-POST /print/printers/ae63f617-4856-4b45-8ea9-69dfbeea230e/taskTriggers
+POST https://graph.microsoft.com/beta/print/printers/ae63f617-4856-4b45-8ea9-69dfbeea230e/taskTriggers
 
 {
   "event": "jobStarted",

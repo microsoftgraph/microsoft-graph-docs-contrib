@@ -15,7 +15,7 @@ Namespace: microsoft.graph
 
 Represents an abstract definition for a task that can be triggered when various events occur within Universal Print.
 
-See the [pull print overview](/graph/universal-print-concept-overview.md#extending-universal-print-to-support-pull-printing) to understand how you can use this resource to add pull print support to Universal Print.
+For details about how to use this resource to add pull printing support to Universal Print, see [Extending Universal Print to support pull printing](/graph/universal-print-concept-overview.md#extending-universal-print-to-support-pull-printing).
 
 ## Methods
 
