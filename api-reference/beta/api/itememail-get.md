@@ -82,6 +82,7 @@ GET https://graph.microsoft.com/beta/user/{userId}/profile/emails/{itemEmailId}
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
+
 {
   "value": {
     "id": "e13f7a4d-303c-464f-a6af-80ea18eb74f3",

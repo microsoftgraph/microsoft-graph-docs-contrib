@@ -71,6 +71,7 @@ If successful, this method returns a `201 Created` response code and an [itemEma
 POST https://graph.microsoft.com/beta/me/profile/emails
 Content-Type: application/json
 Content-length: 383
+
 {
   "address": "innocenty.popov@adventureworks.com",
   "displayName": "Innocenty Popov",
