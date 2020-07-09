@@ -10,9 +10,9 @@ author: "MSGraphDocsvTeam"
 
 Namespace: microsoft.graph
 
-### allowedAudiences values 
+### allowedAudiences values
 
-|Members|
+|Member|
 |:---|
 |me|
 |family|
@@ -25,7 +25,7 @@ Namespace: microsoft.graph
 
 ### emailType values
 
-|Members|
+|Member|
 |:---|
 |unknown|
 |work|

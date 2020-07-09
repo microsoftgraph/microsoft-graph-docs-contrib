@@ -101,7 +101,8 @@ HTTP/1.1 200 OK
 Content-Type: application/json
 
 {
-   "id": "e13f7a4d-303c-464f-a6af-80ea18eb74f3",
+  "@odata.type": "#microsoft.graph.itemPhone",
+  "id": "e13f7a4d-303c-464f-a6af-80ea18eb74f3",
   "allowedAudiences": "organization",
   "inference": null,
   "createdDateTime": "2020-07-06T06:34:12.2294868Z",
