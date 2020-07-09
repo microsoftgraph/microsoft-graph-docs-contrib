@@ -30,8 +30,8 @@ One of the following permissions is required to call this API. To learn more, in
 <!-- { "blockType": "ignored" } -->
 
 ```http
-PATCH /me/profile/names/{id}
-PATCH /users/{id | userPrincipalName}/profile/names/{id}
+PATCH /me/profile/names/{personNameId}
+PATCH /users/{id | userPrincipalName}/profile/names/{personNameId}
 ```
 
 ## Request headers
@@ -79,7 +79,7 @@ The following is an example of the request.
 }-->
 
 ```http
-PATCH https://graph.microsoft.com/beta/me/profile/names/{id}
+PATCH https://graph.microsoft.com/beta/me/profile/names/{personNameId}
 Content-type: application/json
 
 {
