@@ -64,22 +64,25 @@ The following is a JSON representation of the resource.
 -->
 ``` json
 {
-  "@odata.type": "#microsoft.graph.personName",
   "id": "e13f7a4d-303c-464f-a6af-80ea18eb74f3",
   "allowedAudiences": "organization",
-  "inference": {
-    "@odata.type": "microsoft.graph.inferenceData"
-  },
+  "inference": null,
   "createdDateTime": "2020-07-06T06:34:12.2294868Z",
   "createdBy": {
-    "@odata.type": "microsoft.graph.identitySet"
+    "user": {
+        "id": "efee1b77-fb3b-4f65-99d6-274c11914d12",
+        "displayName": "Innocenty Popov"
+    }
   },
-  "lastModifiedDateTime": "2020-07-06T06:34:12.2294868Z",
+  "lastModifiedDateTime": "2020-07-08T06:34:12.2294868Z",
   "lastModifiedBy": {
-    "@odata.type": "microsoft.graph.identitySet"
+    "user": {
+        "id": "efee1b77-fb3b-4f65-99d6-274c11914d12",
+        "displayName": "Innocenty Popov"
+    }
   },
   "source": {
-    "@odata.type": "microsoft.graph.personDataSource"
+    "type": "User"
   },
   "displayName": "Innocenty Popov",
   "first": "Innocenty",
@@ -92,7 +95,11 @@ The following is a JSON representation of the resource.
   "suffix": null,
   "title": null,
   "pronunciation": {
-    "@odata.type": "microsoft.graph.yomiPersonName"
+    "displayName": "In-no ken-te ",
+    "first": "In-no ken-te Pop-ov",
+    "maiden": null,
+    "middle": null,
+    "last": "Pop-ov"
   }
 }
 ```
