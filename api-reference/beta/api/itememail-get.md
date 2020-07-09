@@ -84,27 +84,25 @@ HTTP/1.1 200 OK
 Content-Type: application/json
 
 {
-  "value": {
-    "@odata.type": "#microsoft.graph.itemEmail",
-    "id": "0f30bf5d-bf5d-0f30-5dbf-300f5dbf300f",
-    "allowedAudiences": "String",
-    "inference": {
-      "@odata.type": "microsoft.graph.inferenceData"
-    },
-    "createdDateTime": "String (timestamp)",
-    "createdBy": {
-      "@odata.type": "microsoft.graph.identitySet"
-    },
-    "lastModifiedDateTime": "String (timestamp)",
-    "lastModifiedBy": {
-      "@odata.type": "microsoft.graph.identitySet"
-    },
-    "source": {
-      "@odata.type": "microsoft.graph.personDataSource"
-    },
-    "address": "String",
-    "displayName": "String",
-    "type": "String"
-  }
+  "@odata.type": "#microsoft.graph.itemEmail",
+  "id": "0f30bf5d-bf5d-0f30-5dbf-300f5dbf300f",
+  "allowedAudiences": "String",
+  "inference": {
+    "@odata.type": "microsoft.graph.inferenceData"
+  },
+  "createdDateTime": "String (timestamp)",
+  "createdBy": {
+    "@odata.type": "microsoft.graph.identitySet"
+  },
+  "lastModifiedDateTime": "String (timestamp)",
+  "lastModifiedBy": {
+    "@odata.type": "microsoft.graph.identitySet"
+  },
+  "source": {
+    "@odata.type": "microsoft.graph.personDataSource"
+  },
+  "address": "String",
+  "displayName": "String",
+  "type": "String"
 }
 ```
