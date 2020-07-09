@@ -47,14 +47,30 @@ The following is a JSON representation of the resource.
 
 ```json
 {
-  "allowedAudiences": "string",
-  "createdBy": {"@odata.type": "microsoft.graph.identitySet"},
-  "createdDateTime": "String (timestamp)",
-  "id": "String (identifier)",
-  "inference": {"@odata.type": "microsoft.graph.inferenceData"},
-  "lastModifiedBy": {"@odata.type": "microsoft.graph.identitySet"},
-  "lastModifiedDateTime": "String (timestamp)"
-}
+      "id": "e13f7a4d-303c-464f-a6af-80ea18eb74f3",
+      "allowedAudiences": "organization",
+      "inference": {
+        "confidenceScore": "0.4474473",
+        "userHasVerifiedAccuracy": "false"
+      },
+      "createdDateTime": "2020-07-06T06:34:12.2294868Z",
+      "createdBy": {
+        "user": {
+            "id": "efee1b77-fb3b-4f65-99d6-274c11914d12",
+            "displayName": "Innocenty Popov"
+        }
+      },
+      "lastModifiedDateTime": "2020-07-08T06:34:12.2294868Z",
+      "lastModifiedBy": {
+        "user": {
+            "id": "efee1b77-fb3b-4f65-99d6-274c11914d12",
+            "displayName": "Innocenty Popov"
+        }
+      },
+      "source": {
+        "type": "User"
+      },
+    }
 ```
 
 <!-- uuid: 16cd6b66-4b1a-43a1-adaf-3a886856ed98
