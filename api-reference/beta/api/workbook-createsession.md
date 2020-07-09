@@ -22,6 +22,12 @@ To represent the session in the API, use the `workbook-session-id: {session-id}`
 
 >**Note:** The session header is not required for an Excel API to work. However, we recommend that you use the session header to improve performance. If you don't use a session header, changes made during the API call _are_ persisted to the file.  
 
+In some cases, creating a new session requires indeterminate time to complete, Excel Graph also provides a long running operations pattern for it. This pattern provides a way to poll for creation status updates, without waiting for the creation to complete. Here are the steps:
+
+1. Adds a header of  `Prefer: respond-async` in the request to indicate it as a long running operation when creating a session.
+2. Response returns a header of `Location` to specify the URL for polling the creation operation status. You can retrieves the operation status by accessing the specified URL. Status includes `notStarted`, `running`, `succeeded` or `failed`.
+3. After operation completes, you can request the status again and response will show whether the creation is `succeeded` or `failed`.
+
 ## Error Handling
 
 This request might occasionally receive a 504 HTTP error. The appropriate response to this error is to repeat the request.
@@ -50,9 +56,10 @@ In the request body, supply a JSON representation of [WorkbookSessionInfo](../re
 
 ## Response
 
-If successful, this method returns `201 Created` response code and [WorkbookSessionInfo](../resources/workbooksessioninfo.md) object in the response body.
+If successful, this method returns `201 Created` response code and [WorkbookSessionInfo](../resources/workbooksessioninfo.md) object in the response body. For long running operation pattern, it returns  `202 Accepted ` response code and a `Location` header with empty body in response.
 
-## Example
+
+## Example 1: Basic session creation
 ##### Request
 Here is an example of the request.
 
@@ -101,6 +108,33 @@ Content-length: 52
 {
   "id": "id-value",
   "persistChanges": true
+}
+```
+## Example 2: Session creation with long running operation pattern
+##### Request
+Here is an example of long running operation on CreateSession
+```http
+POST https://graph.microsoft.com/beta/me/drive/items/{drive-item-id}/workbook/worksheets({id})/createSession
+Prefer: respond-async
+Content-type: application/json
+{
+    "persistChanges": true
+}
+```
+
+
+##### Response
+Here is an example of the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.
+<!-- {
+  "blockType": "response",
+  "truncated": true,
+  "@odata.type": "microsoft.graph.workbookSessionInfo"
+} -->
+```http
+HTTP/1.1 202 Accepted
+Location: https://graph.microsoft.com/v1.0/me/drive/items/{drive-item-id}/workbook/operations/{operation-id}
+Content-type: application/json
+{
 }
 ```
 
