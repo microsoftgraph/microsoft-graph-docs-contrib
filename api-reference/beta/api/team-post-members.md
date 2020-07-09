@@ -56,8 +56,8 @@ If successful, this method returns a `201 Created` response code and a [conversa
 -->
 ``` http
 POST https://graph.microsoft.com/beta/teams/{id}/members
-content-type: application/json
-content-length: 26
+Content-type: application/json
+Content-length: 26
 
 {
     "@odata.type": "#microsoft.graph.aadUserConversationMember",
