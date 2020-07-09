@@ -336,6 +336,17 @@ Other factors that impact a request cost:
   - WriteLimitExceeded - Throttling is because the write limit is exceeded.
   - ResourceUnitLimitExceeded - Throttling is because the limit for the allocated resource unit is exceeded.
 
+### Identity protection and conditional access service limits
+
+| Request type | Limit per tenant |
+| ------------ | ------- |
+| Any | 1 request per second |
+
+The preceding limits apply to the following resources:  
+riskDetection, riskyUser, riskyUserHistoryItem, namedLocation, countryNamedLocation, ipNamedLocation, conditionalAccessPolicy.
+
+> **Note:** at the moment the resources listed above do not return a `Retry-After` header on `429 Too Many Requests` responses.
+
 ### Insights service limits
 
 The following limits apply to any request on `me/insights` or `users/{id}/insights`.
