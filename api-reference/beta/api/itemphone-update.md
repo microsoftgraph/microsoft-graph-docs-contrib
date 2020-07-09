@@ -27,28 +27,42 @@ One of the following permissions is required to call this API. To learn more, in
 
 ## HTTP request
 
-<!-- { "blockType": "ignored" } -->
-
-```http
-PATCH /me/profile/phones/{id}
+<!-- {
+  "blockType": "ignored"
+}
+-->
+``` http
+PATCH /me/profile/phones/{itemPhoneId}
+PATCH /user/{userId}/profile/phones/{itemPhoneId}
 ```
 
 ## Request headers
 
-| Name           |Description                  |
-|:---------------|:----------------------------|
-| Authorization  | Bearer {token}. Required.   |
-| Content-Type   | application/json. Required. |
+|Name|Description|
+|:---|:---|
+|Authorization|Bearer {token}. Required.|
+|Content-Type|application/json. Required.|
 
 ## Request body
 
-In the request body, supply the values for relevant fields that should be updated. Existing properties that are not included in the request body will maintain their previous values or be recalculated based on changes to other property values. For best performance, don't include existing values that haven't changed.
+In the request body, supply a JSON representation of the [itemPhone](../resources/itemphone.md) object.
 
-| Property     | Type        | Description                                                                                                                     |
-|:-------------|:------------|:--------------------------------------------------------------------------------------------------------------------------------|
-|displayName   |String       | Contains a friendly name for the phone number.                                                                                  |
-|number        |String       | Contains the phone number.                                                                                                      |
-|type          |string       | Possible values are: `home`, `business`, `mobile`, `other`, `assistant`, `homeFax`, `businessFax`, `otherFax`, `pager`, `radio`.|
+The following table shows the properties that are possible to set when you update the [itemPhone](../resources/itemphone.md) object.
+
+|Property|Type|Description|
+|:---|:---|:---|
+|id|String|**TODO: Add Description** Inherited from [entity](../resources/entity.md)|
+|allowedAudiences|allowedAudiences|**TODO: Add Description** Inherited from [itemFacet](../resources/itemfacet.md). Possible values are: `me`, `family`, `contacts`, `groupMembers`, `organization`, `federatedOrganizations`, `everyone`, `unknownFutureValue`.|
+|inference|[inferenceData](../resources/inferencedata.md)|**TODO: Add Description** Inherited from [itemFacet](../resources/itemfacet.md)|
+|createdDateTime|DateTimeOffset|**TODO: Add Description** Inherited from [itemFacet](../resources/itemfacet.md)|
+|createdBy|[identitySet](../resources/identityset.md)|**TODO: Add Description** Inherited from [itemFacet](../resources/itemfacet.md)|
+|lastModifiedDateTime|DateTimeOffset|**TODO: Add Description** Inherited from [itemFacet](../resources/itemfacet.md)|
+|lastModifiedBy|[identitySet](../resources/identityset.md)|**TODO: Add Description** Inherited from [itemFacet](../resources/itemfacet.md)|
+|source|[personDataSource](../resources/persondatasource.md)|**TODO: Add Description** Inherited from [itemFacet](../resources/itemfacet.md)|
+|displayName|String|**TODO: Add Description**|
+|type|phoneType|**TODO: Add Description**. Possible values are: `home`, `business`, `mobile`, `other`, `assistant`, `homeFax`, `businessFax`, `otherFax`, `pager`, `radio`.|
+|number|String|**TODO: Add Description**|
+
 
 ## Response
 
@@ -57,68 +71,57 @@ If successful, this method returns a `200 OK` response code and an updated [item
 ## Examples
 
 ### Request
-
-The following is an example of the request.
-
-# [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "update_itemphone"
-}-->
-
-```http
-PATCH https://graph.microsoft.com/beta/me/profile/phones/{id}
-Content-type: application/json
+}
+-->
+``` http
+PATCH https://graph.microsoft.com/beta/user/{userId}/profile/phones/{itemPhoneId}
+Content-Type: application/json
+Content-length: 382
 
 {
-  "displayName": "displayName-value",
-  "type": "type-value",
-  "number": "number-value"
+  "allowedAudiences": "organization",
+  "type": "other",
 }
 ```
-# [C#](#tab/csharp)
-[!INCLUDE [sample-code](../includes/snippets/csharp/update-itemphone-csharp-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [JavaScript](#tab/javascript)
-[!INCLUDE [sample-code](../includes/snippets/javascript/update-itemphone-javascript-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [Objective-C](#tab/objc)
-[!INCLUDE [sample-code](../includes/snippets/objc/update-itemphone-objc-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
----
 
 ### Response
 
-The following is an example of the response.
-
-> **Note:** The response object shown here might be shortened for readability. All the properties will be returned from an actual call.
-
+**Note:** The response object shown here might be shortened for readability.
 <!-- {
   "blockType": "response",
-  "truncated": true,
-  "@odata.type": "microsoft.graph.itemPhone"
-} -->
+  "truncated": true
+}
+-->
 
-```http
+``` http
 HTTP/1.1 200 OK
-Content-type: application/json
-
+Content-Type: application/json
 {
-  "displayName": "displayName-value",
-  "type": "type-value",
-  "number": "number-value"
+   "id": "e13f7a4d-303c-464f-a6af-80ea18eb74f3",
+  "allowedAudiences": "organization",
+  "inference": null,
+  "createdDateTime": "2020-07-06T06:34:12.2294868Z",
+  "createdBy": {
+    "user": {
+        "id": "efee1b77-fb3b-4f65-99d6-274c11914d12",
+        "displayName": "Innocenty Popov"
+    }
+  },
+  "lastModifiedDateTime": "2020-07-08T06:34:12.2294868Z",
+  "lastModifiedBy": {
+    "user": {
+        "id": "efee1b77-fb3b-4f65-99d6-274c11914d12",
+        "displayName": "Innocenty Popov"
+    }
+  },
+  "source": {
+    "type": "User"
+  },
+  "displayName": "Car Phone",
+  "type": "other",
+  "number": "+7 499 234 56 78"
 }
 ```
-
-<!-- uuid: 16cd6b66-4b1a-43a1-adaf-3a886856ed98
-2019-02-04 14:57:30 UTC -->
-<!-- {
-  "type": "#page.annotation",
-  "description": "Update itemphone",
-  "keywords": "",
-  "section": "documentation",
-  "tocPath": ""
-}-->

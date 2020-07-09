@@ -30,7 +30,8 @@ One of the following permissions is required to call this API. To learn more, in
 <!-- { "blockType": "ignored" } -->
 
 ```http
-GET /me/profile/phones/{id}
+GET /me/profile/phones/{itemPhoneId}
+GET /user/{userId}/profile/phones/{itemPhoneId}
 ```
 
 ## Optional query parameters
@@ -46,77 +47,66 @@ This method supports the following OData query parameters to help customize the 
 |$top            |int      |Number of results to be returned.                                                                                                                                           |
 
 ## Request headers
-
-| Name           |Description                  |
-|:---------------|:----------------------------|
-| Authorization  | Bearer {token}. Required.   |
+|Name|Description|
+|:---|:---|
+|Authorization|Bearer {token}. Required.|
 
 ## Request body
-
 Do not supply a request body for this method.
 
 ## Response
 
-If successful, this method returns a `200 OK` response code and the requested [itemPhone](../resources/itemphone.md) object in the response body.
+If successful, this method returns a `200 OK` response code and an [itemPhone](../resources/itemphone.md) object in the response body.
 
 ## Examples
 
 ### Request
-
-The following is an example of the request.
-
-# [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "get_itemphone"
-}-->
-
-```msgraph-interactive
-GET https://graph.microsoft.com/beta/me/profile/phones/{id}
+}
+-->
+``` http
+GET https://graph.microsoft.com/beta/user/{userId}/profile/phones/{itemPhoneId}
 ```
-# [C#](#tab/csharp)
-[!INCLUDE [sample-code](../includes/snippets/csharp/get-itemphone-csharp-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# [JavaScript](#tab/javascript)
-[!INCLUDE [sample-code](../includes/snippets/javascript/get-itemphone-javascript-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [Objective-C](#tab/objc)
-[!INCLUDE [sample-code](../includes/snippets/objc/get-itemphone-objc-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
----
 
 ### Response
-
-The following is an example of the response.
-
-> **Note:** The response object shown here might be shortened for readability. All the properties will be returned from an actual call.
-
+**Note:** The response object shown here might be shortened for readability.
 <!-- {
   "blockType": "response",
   "truncated": true,
   "@odata.type": "microsoft.graph.itemPhone"
-} -->
-
-```http
+}
+-->
+``` http
 HTTP/1.1 200 OK
-Content-type: application/json
-
+Content-Type: application/json
 {
-  "displayName": "displayName-value",
-  "type": "type-value",
-  "number": "number-value"
+  "value": {
+    "id": "e13f7a4d-303c-464f-a6af-80ea18eb74f3",
+    "allowedAudiences": "organization",
+    "inference": null,
+    "createdDateTime": "2020-07-06T06:34:12.2294868Z",
+    "createdBy": {
+      "user": {
+          "id": "efee1b77-fb3b-4f65-99d6-274c11914d12",
+          "displayName": "Innocenty Popov"
+      }
+    },
+    "lastModifiedDateTime": "2020-07-08T06:34:12.2294868Z",
+    "lastModifiedBy": {
+      "user": {
+          "id": "efee1b77-fb3b-4f65-99d6-274c11914d12",
+          "displayName": "Innocenty Popov"
+      }
+    },
+    "source": {
+      "type": "User"
+    },
+    "displayName": "Car Phone",
+    "type": "other",
+    "number": "+7 499 234 56 78"
+  }
 }
 ```
-
-<!-- uuid: 16cd6b66-4b1a-43a1-adaf-3a886856ed98
-2019-02-04 14:57:30 UTC -->
-<!-- {
-  "type": "#page.annotation",
-  "description": "Get itemPhone",
-  "keywords": "",
-  "section": "documentation",
-  "tocPath": ""
-}-->

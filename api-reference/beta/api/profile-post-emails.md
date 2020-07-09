@@ -31,7 +31,7 @@ One of the following permissions is required to call this API. To learn more, in
 
 ```http
 POST /me/profile/emails
-POST /users/{id | userPrincipalName}/profile/emails/{id}
+POST /users/{id | userPrincipalName}/profile/emails
 ```
 
 ## Request headers
