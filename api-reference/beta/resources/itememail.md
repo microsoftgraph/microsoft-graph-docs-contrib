@@ -22,11 +22,6 @@ Inherits from [itemFacet](../resources/itemfacet.md).
 |:---|:---|:---|
 |[List emails](../api/profile-list-emails.md)|[itemEmail](../resources/itememail.md) collection|Get the itemEmails from the emails navigation property.|
 |[Create emails](../api/profile-post-emails.md)|[itemEmail](../resources/itememail.md)|Create a new emails object.|
-|[Update emails](../api/profile-update-emails.md)|[itemEmail](../resources/itememail.md)|Update the properties of an emails object.|
-|[Get emails](../api/profile-get-itememail.md)|[itemEmail](../resources/itememail.md)|Read the properties and relationships of an [itemEmail](../resources/itememail.md) object.|
-|[Delete emails](../api/profile-delete-emails.md)|None|Delete an [itemEmail](../resources/itememail.md) object.|
-|[List itemEmails](../api/itememail-list.md)|[itemEmail](../resources/itememail.md) collection|Get a list of the [itemEmail](../resources/itememail.md) objects and their properties.|
-|[Create itemEmail](../api/itememail-create.md)|[itemEmail](../resources/itememail.md)|Create a new [itemEmail](../resources/itememail.md) object.|
 |[Get itemEmail](../api/itememail-get.md)|[itemEmail](../resources/itememail.md)|Read the properties and relationships of an [itemEmail](../resources/itememail.md) object.|
 |[Update itemEmail](../api/itememail-update.md)|[itemEmail](../resources/itememail.md)|Update the properties of an [itemEmail](../resources/itememail.md) object.|
 |[Delete itemEmail](../api/itememail-delete.md)|None|Deletes an [itemEmail](../resources/itememail.md) object.|
