@@ -125,6 +125,7 @@ Content-length: 632
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
+
 {
   "@odata.type": "#microsoft.graph.personName",
   "id": "f532a30d-a30d-f532-0da3-32f50da332f5",
