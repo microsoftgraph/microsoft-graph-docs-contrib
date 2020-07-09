@@ -23,6 +23,16 @@ Namespace: microsoft.graph
 |everyone|
 |unknownFutureValue|
 
+### emailType values
+
+|Members|
+|:---|
+|unknown|
+|work|
+|personal|
+|main|
+|other|
+
 ### attachmentType values
 
 | Member

@@ -72,7 +72,6 @@ If successful, this method returns a `201 Created` response code and an [itemPho
 POST https://graph.microsoft.com/beta/me/profile/phones
 Content-Type: application/json
 Content-length: 382
-
 {
   "displayName": "Car Phone",
   "type": "other",
