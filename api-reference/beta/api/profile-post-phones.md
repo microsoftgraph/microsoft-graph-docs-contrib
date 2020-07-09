@@ -102,7 +102,7 @@ Content-length: 382
 <!-- {
   "blockType": "response",
   "truncated": true,
-  "@odata.type": "microsoft.graph.itemphone"
+  "@odata.type": "microsoft.graph.itemPhone"
 }
 -->
 ``` http

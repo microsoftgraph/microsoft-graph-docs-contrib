@@ -80,7 +80,7 @@ GET https://graph.microsoft.com/beta/me/profile/phones
 <!-- {
   "blockType": "response",
   "truncated": true,
-  "@odata.type": "collection(microsoft.graph.itemphone)"
+  "@odata.type": "collection(microsoft.graph.itemPhone)"
 }
 -->
 ``` http
