@@ -16,69 +16,49 @@ Namespace: microsoft.graph
 Represents the abstract base type that all resource types in the [profile](profile.md) entityset inherit from.
 
 ## Properties
-
-| Property             | Type                            | Description                                                                                                                                                                                    |
-|:---------------------|:--------------------------------|:-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-|allowedAudiences      |string                           | Possible values are: `me`, `family`, `contacts`, `groupMembers`, `organization`, `federatedOrganizations`, `everyone`, `unknownFutureValue`.                                                   |
-|createdBy             |[identitySet](identityset.md)    | When the entity was originally created.                                                                                                                                                        |
-|createdDateTime       |DateTimeOffset                   |The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 would look like this: `'2014-01-01T00:00:00Z'`|
-|id                    |String                           | Read-only.                                                                                                                                                                                     |
-|inference             |[inferenceData](inferencedata.md)| Contains inference detail if the entity is inferred.                                                                                                                                           |
-|lastModifiedBy        |[identitySet](identityset.md)    | Identifier of the partner or user who last modified the entity.                                                                                                                                |
-|lastModifiedDateTime  |DateTimeOffset                   |The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 would look like this: `'2014-01-01T00:00:00Z'`|
+|Property|Type|Description|
+|:---|:---|:---|
+|allowedAudiences|allowedAudiences|**TODO: Add Description**. Possible values are: `me`, `family`, `contacts`, `groupMembers`, `organization`, `federatedOrganizations`, `everyone`, `unknownFutureValue`.|
+|createdBy|[identitySet](../resources/identityset.md)|**TODO: Add Description**|
+|createdDateTime|DateTimeOffset|**TODO: Add Description**|
+|id|String|**TODO: Add Description** Inherited from [entity](../resources/entity.md)|
+|inference|[inferenceData](../resources/inferencedata.md)|**TODO: Add Description**|
+|lastModifiedBy|[identitySet](../resources/identityset.md)|**TODO: Add Description**|
+|lastModifiedDateTime|DateTimeOffset|**TODO: Add Description**|
+|source|[personDataSource](../resources/persondatasource.md)|**TODO: Add Description**|
 
 ## Relationships
-
-None
+None.
 
 ## JSON representation
-
 The following is a JSON representation of the resource.
-
 <!-- {
   "blockType": "resource",
-  "optionalProperties": [
-
-  ],
+  "keyProperty": "id",
   "@odata.type": "microsoft.graph.itemFacet",
-  "baseType": "",
-  "keyProperty": "id"
-}-->
-
-```json
+  "baseType": "microsoft.graph.entity",
+  "openType": false
+}
+-->
+``` json
 {
-      "id": "e13f7a4d-303c-464f-a6af-80ea18eb74f3",
-      "allowedAudiences": "organization",
-      "inference": {
-        "confidenceScore": "0.4474473",
-        "userHasVerifiedAccuracy": "false"
-      },
-      "createdDateTime": "2020-07-06T06:34:12.2294868Z",
-      "createdBy": {
-        "user": {
-            "id": "efee1b77-fb3b-4f65-99d6-274c11914d12",
-            "displayName": "Innocenty Popov"
-        }
-      },
-      "lastModifiedDateTime": "2020-07-08T06:34:12.2294868Z",
-      "lastModifiedBy": {
-        "user": {
-            "id": "efee1b77-fb3b-4f65-99d6-274c11914d12",
-            "displayName": "Innocenty Popov"
-        }
-      },
-      "source": {
-        "type": "User"
-      },
-    }
+  "@odata.type": "#microsoft.graph.itemFacet",
+  "id": "String (identifier)",
+  "allowedAudiences": "String",
+  "inference": {
+    "@odata.type": "microsoft.graph.inferenceData"
+  },
+  "createdDateTime": "String (timestamp)",
+  "createdBy": {
+    "@odata.type": "microsoft.graph.identitySet"
+  },
+  "lastModifiedDateTime": "String (timestamp)",
+  "lastModifiedBy": {
+    "@odata.type": "microsoft.graph.identitySet"
+  },
+  "source": {
+    "@odata.type": "microsoft.graph.personDataSource"
+  }
+}
 ```
 
-<!-- uuid: 16cd6b66-4b1a-43a1-adaf-3a886856ed98
-2019-02-04 14:57:30 UTC -->
-<!-- {
-  "type": "#page.annotation",
-  "description": "itemFacet resource",
-  "keywords": "",
-  "section": "documentation",
-  "tocPath": ""
-}-->
