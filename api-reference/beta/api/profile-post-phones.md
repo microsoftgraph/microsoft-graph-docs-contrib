@@ -33,7 +33,6 @@ One of the following permissions is required to call this API. To learn more, in
 -->
 ``` http
 POST /me/profile/phones
-POST /user/{userId}/profile/phones
 ```
 
 ## Request headers
@@ -45,15 +44,23 @@ POST /user/{userId}/profile/phones
 ## Request body
 In the request body, supply a JSON representation of the [itemPhone](../resources/itemphone.md) object.
 
-The following table shows the properties that are possible to set when you create the [itemPhone](../resources/itemphone.md) object.
+The following table shows the properties that are required when you create the [itemPhone](../resources/itemphone.md).
 
 |Property|Type|Description|
 |:---|:---|:---|
-|allowedAudiences|String|The audiences that are able to see the values contained within the entity. Inherited from [itemFacet](../resources/itemfacet.md). Possible values are: `me`, `family`, `contacts`, `groupMembers`, `organization`, `federatedOrganizations`, `everyone`, `unknownFutureValue`.|
-|displayName|String|Friendly name the user has assigned this phone number. |
-|inference|[inferenceData](../resources/inferencedata.md)|Contains inference detail if the entity is inferred by the creating or modifying application. Inherited from [itemFacet](../resources/itemfacet.md)|
-|number|String|Phone number provided by the user.|
-|type|phoneType|The type of phone number within the object. Possible values are: `home`, `business`, `mobile`, `other`, `assistant`, `homeFax`, `businessFax`, `otherFax`, `pager`, `radio`.|
+|id|String|**TODO: Add Description** Inherited from [entity](../resources/entity.md)|
+|allowedAudiences|allowedAudiences|**TODO: Add Description** Inherited from [itemFacet](../resources/itemfacet.md). Possible values are: `me`, `family`, `contacts`, `groupMembers`, `organization`, `federatedOrganizations`, `everyone`, `unknownFutureValue`.|
+|inference|[inferenceData](../resources/inferencedata.md)|**TODO: Add Description** Inherited from [itemFacet](../resources/itemfacet.md)|
+|createdDateTime|DateTimeOffset|**TODO: Add Description** Inherited from [itemFacet](../resources/itemfacet.md)|
+|createdBy|[identitySet](../resources/identityset.md)|**TODO: Add Description** Inherited from [itemFacet](../resources/itemfacet.md)|
+|lastModifiedDateTime|DateTimeOffset|**TODO: Add Description** Inherited from [itemFacet](../resources/itemfacet.md)|
+|lastModifiedBy|[identitySet](../resources/identityset.md)|**TODO: Add Description** Inherited from [itemFacet](../resources/itemfacet.md)|
+|source|[personDataSource](../resources/persondatasource.md)|**TODO: Add Description** Inherited from [itemFacet](../resources/itemfacet.md)|
+|displayName|String|**TODO: Add Description**|
+|type|phoneType|**TODO: Add Description**. Possible values are: `home`, `business`, `mobile`, `other`, `assistant`, `homeFax`, `businessFax`, `otherFax`, `pager`, `radio`.|
+|number|String|**TODO: Add Description**|
+
+
 
 ## Response
 
@@ -62,7 +69,6 @@ If successful, this method returns a `201 Created` response code and an [itemPho
 ## Examples
 
 ### Request
-
 <!-- {
   "blockType": "request",
   "name": "create_itemphone_from_"
@@ -74,14 +80,25 @@ Content-Type: application/json
 Content-length: 382
 
 {
-  "displayName": "Car Phone",
-  "type": "other",
-  "number": "+7 499 234 56 78"
+  "@odata.type": "#microsoft.graph.itemPhone",
+  "allowedAudiences": "String",
+  "inference": {
+    "@odata.type": "microsoft.graph.inferenceData"
+  },
+  "createdBy": {
+    "@odata.type": "microsoft.graph.identitySet"
+  },
+  "source": {
+    "@odata.type": "microsoft.graph.personDataSource"
+  },
+  "displayName": "String",
+  "type": "String",
+  "number": "String"
 }
 ```
 
-### Response
 
+### Response
 **Note:** The response object shown here might be shortened for readability.
 <!-- {
   "blockType": "response",
@@ -92,10 +109,26 @@ Content-length: 382
 ``` http
 HTTP/1.1 201 Created
 Content-Type: application/json
-
 {
-  "displayName": "Car Phone",
-  "type": "other",
-  "number": "+7 499 234 56 78"
+  "@odata.type": "#microsoft.graph.itemPhone",
+  "id": "0fb4c1e3-c1e3-0fb4-e3c1-b40fe3c1b40f",
+  "allowedAudiences": "String",
+  "inference": {
+    "@odata.type": "microsoft.graph.inferenceData"
+  },
+  "createdDateTime": "String (timestamp)",
+  "createdBy": {
+    "@odata.type": "microsoft.graph.identitySet"
+  },
+  "lastModifiedDateTime": "String (timestamp)",
+  "lastModifiedBy": {
+    "@odata.type": "microsoft.graph.identitySet"
+  },
+  "source": {
+    "@odata.type": "microsoft.graph.personDataSource"
+  },
+  "displayName": "String",
+  "type": "String",
+  "number": "String"
 }
 ```
