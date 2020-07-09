@@ -1,6 +1,6 @@
 ---
 title: printTask resource type
-description: Represents a task that is executing or has been executed as a result of an a Universal Print event.
+description: Represents a task that is executing or has been executed as a result of a Universal Print event.
 author: braedenp-msft
 localization_priority: Normal
 ms.prod: universal-print
@@ -13,7 +13,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Represents a task that is executing or has been executed as a result of an a Universal Print event.
+Represents a task that is executing or has been executed as a result of a Universal Print event.
 
 For details about how to use this resource to add pull printing support to Universal Print, see [Extending Universal Print to support pull printing](/graph/universal-print-concept-overview#extending-universal-print-to-support-pull-printing).
 
@@ -28,7 +28,7 @@ For details about how to use this resource to add pull printing support to Unive
 |:-------------|:------------|:------------|
 |id|String|The printTask's identifier. Read-only.|
 |status|[printTaskStatus](printtaskstatus.md)|The current execution status of this printTask. **The calling application is responsible for updating this status when processing is finished, unless the related printJob has been redirected to another printer.** Failure to report completion will result in the related print job being blocked from printing and eventually deleted. |
-|parentUrl|String|The URL for the print entity that triggered this task. e.g., `https://graph.microsoft.com/beta/print/printers/{printerId}/jobs/{jobId}`. Read-only.|
+|parentUrl|String|The URL for the print entity that triggered this task. For example, `https://graph.microsoft.com/beta/print/printers/{printerId}/jobs/{jobId}`. Read-only.|
 
 ## Relationships
 | Relationship | Type        | Description |

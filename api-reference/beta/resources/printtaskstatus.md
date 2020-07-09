@@ -7,13 +7,15 @@ ms.prod: universal-print
 doc_type: resourcePageType
 ---
 
-# printTaskStatus complex type
+# printTaskStatus resource type
 
 Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Represents the current execution status of a [printTask](printtask.md). **Applications that register task triggers are responsible for updating task statuses when processing is finished, unless the related printJob has been redirected to another printer.**
+Represents the current execution status of a [printTask](printtask.md). 
+
+>**Note:** Applications that register task triggers are responsible for updating task statuses when processing is finished, unless the related print job has been redirected to another printer.
 
 For details about how to use this resource to add pull printing support to Universal Print, see [Extending Universal Print to support pull printing](/graph/universal-print-concept-overview#extending-universal-print-to-support-pull-printing).
 

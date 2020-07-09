@@ -65,7 +65,7 @@ These triggers enable your application to interrupt the print workflow to do thi
 
 Follow these steps to enable pull printing:
 
-1. [Create a printTaskDefinition](/graph/api/print-post-taskdefinitions?view=graph-rest-beta) using application permissions. This abstract task definition will be used to create task that will hold the job for your application. You need to define at least one task definition per tenant which can be associated with any number of printers in the tenant using task triggers (see Step 4).
+1. [Create a printTaskDefinition](/graph/api/print-post-taskdefinitions?view=graph-rest-beta) using application permissions. This abstract task definition will be used to create task that will hold the job for your application. You need to define at least one task definition per tenant, which can be associated with any number of printers in the tenant using task triggers (see step 4).
 
 2. [Register one or more virtual printers](/graph/api/printer-create?view=graph-rest-beta) using an administrator authentication token and a `null` **physicalDeviceId**. A "virtual printer" is just a printer object in Universal Print without a physical device attached. Usually, users will print to virtual printers and later pick up their print jobs at a physical print device. See step 6.
 
@@ -77,7 +77,7 @@ Follow these steps to enable pull printing:
 
 6. When the user swipes a badge at a physical printer device, the printer will notify your application. At that time, your application can [fetch the jobs of the associated virtual printer](/graph/api/printer-list-jobs?view=graph-rest-beta) and filter the list to jobs created by the current user.
 
-7. When the user selects one or more jobs to print, your application can [redirect the print job(s)](/graph/api/printjob-redirect?view=graph-rest-beta) to the physical printer and the job will start printing! The redirect call will only succeed if there is a [printTask](/graph/api/resources/printtask?view=graph-rest-beta) in `processing` state on the associated printer started by a trigger that this app created in Step 4. The task will automatically be set to `completed` state after redirecting it.
+7. When the user selects one or more jobs to print, your application can [redirect the print job(s)](/graph/api/printjob-redirect?view=graph-rest-beta) to the physical printer and the job will start printing! The redirect call will only succeed if there is a [printTask](/graph/api/resources/printtask?view=graph-rest-beta) in `processing` state on the associated printer started by a trigger that this app created in step 4. The task will automatically be set to `completed` state after redirecting it.
 
 ## API reference
 Looking for the API reference for this service?

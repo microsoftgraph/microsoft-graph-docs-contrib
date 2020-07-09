@@ -45,7 +45,7 @@ In the request body, supply a JSON representation of a [printTaskTrigger](../res
 If successful, this method returns a `201 Created` response code and a [printTaskTrigger](../resources/printtasktrigger.md) in the response body.
 
 ## Example
-##### Request
+### Request
 The following is an example of the request.
 
 <!-- {
@@ -63,7 +63,7 @@ POST https://graph.microsoft.com/beta/print/printers/ae63f617-4856-4b45-8ea9-69d
 
 ---
 
-##### Response
+### Response
 The following is an example of the response.
 >**Note:** The response object shown here might be shortened for readability. All the properties will be returned from an actual call.
 

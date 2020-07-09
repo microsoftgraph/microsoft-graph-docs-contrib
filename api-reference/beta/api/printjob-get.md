@@ -103,7 +103,6 @@ Content-length: 408
 #### Request
 The following is a request to get a print job and any [tasks](../resources/printtask.md) that are executing, or have executed, against it.
 
-# [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "get_printjob_withtasks"
@@ -111,8 +110,6 @@ The following is a request to get a print job and any [tasks](../resources/print
 ```msgraph-interactive
 GET https://graph.microsoft.com/beta/print/printers/c05f3726-0d4b-4aa1-8fe9-2eb981bb26fb/jobs/5182?$expand=tasks
 ```
-
----
 
 #### Response
 The following is an example of the response.
@@ -158,7 +155,6 @@ Content-length: 774
 #### Request
 The following is an example of a request to get a print job and its associated document data.
 
-# [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "get_printjob_withdocumentdata"
