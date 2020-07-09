@@ -120,7 +120,6 @@ Content-length: 632
 <!-- {
   "blockType": "response",
   "truncated": true,
-  "@odata.type": "microsoft.graph.personName"
 }
 -->
 ``` http

@@ -87,45 +87,44 @@ HTTP/1.1 200 OK
 Content-type: application/json
 
 {
-  "value": {
-    "@odata.type": "#microsoft.graph.personName",
-    "id": "e13f7a4d-303c-464f-a6af-80ea18eb74f3",
-    "allowedAudiences": "organization",
-    "inference": null,
-    "createdDateTime": "2020-07-06T06:34:12.2294868Z",
-    "createdBy": {
-      "user": {
-          "id": "efee1b77-fb3b-4f65-99d6-274c11914d12",
-          "displayName": "Innocenty Popov"
-      }
-    },
-    "lastModifiedDateTime": "2020-07-08T06:34:12.2294868Z",
-    "lastModifiedBy": {
-      "user": {
-          "id": "efee1b77-fb3b-4f65-99d6-274c11914d12",
-          "displayName": "Innocenty Popov"
-      }
-    },
-    "source": {
-      "type": "User"
-    },
-    "displayName": "Innocenty Popov",
-    "first": "Innocenty",
-    "initials": "IP",
-    "last": "Popov",
-    "languageTag": "en-US",
+  "@odata.type": "#microsoft.graph.personName",
+  "id": "e13f7a4d-303c-464f-a6af-80ea18eb74f3",
+  "allowedAudiences": "organization",
+  "inference": null,
+  "createdDateTime": "2020-07-06T06:34:12.2294868Z",
+  "createdBy": {
+    "user": {
+        "id": "efee1b77-fb3b-4f65-99d6-274c11914d12",
+        "displayName": "Innocenty Popov"
+    }
+  },
+  "lastModifiedDateTime": "2020-07-08T06:34:12.2294868Z",
+  "lastModifiedBy": {
+    "user": {
+        "id": "efee1b77-fb3b-4f65-99d6-274c11914d12",
+        "displayName": "Innocenty Popov"
+    }
+  },
+  "source": {
+    "type": "User"
+  },
+  "displayName": "Innocenty Popov",
+  "first": "Innocenty",
+  "initials": "IP",
+  "last": "Popov",
+  "languageTag": "en-US",
+  "maiden": null,
+  "middle": null,
+  "nickname": "Kesha",
+  "suffix": null,
+  "title": null,
+  "pronunciation": {
+    "displayName": "In-no ken-te ",
+    "first": "In-no ken-te Pop-ov",
     "maiden": null,
     "middle": null,
-    "nickname": "Kesha",
-    "suffix": null,
-    "title": null,
-    "pronunciation": {
-      "displayName": "In-no ken-te ",
-      "first": "In-no ken-te Pop-ov",
-      "maiden": null,
-      "middle": null,
-      "last": "Pop-ov"
-    }
+    "last": "Pop-ov"
   }
 }
+
 ```
