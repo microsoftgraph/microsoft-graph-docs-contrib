@@ -78,7 +78,8 @@ GET https://graph.microsoft.com/beta/me/profile/emails
 <!-- {
   "blockType": "response",
   "truncated": true,
-  "@odata.type": "collection(microsoft.graph.itememail)"
+  "@odata.type": "collection(microsoft.graph.itememail)",
+  "isCollection": true
 }
 -->
 
