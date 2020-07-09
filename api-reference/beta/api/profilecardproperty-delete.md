@@ -32,7 +32,7 @@ One of the following permissions is required to call this API. To learn more, in
 <!-- { "blockType": "ignored" } -->
 
 ```http
-DELETE https://graph.microsoft.com/beta/organization/settings/profileCardProperties/{directoryPropertyName-Value}
+DELETE https://graph.microsoft.com/beta/organization/{organizationId}/settings/profileCardProperties/{directoryPropertyName-Value}
 ```
 
 ## Request headers
@@ -62,7 +62,7 @@ The following example shows how to delete the attribute named "Fax" from the pro
 }-->
 
 ```http
-DELETE https://graph.microsoft.com/beta/organization/settings/profileCardProperties/fax
+DELETE https://graph.microsoft.com/beta/organization/{organizationId}/settings/profileCardProperties/fax
 ```
 # [C#](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/delete-profilecardproperty-csharp-snippets.md)]
