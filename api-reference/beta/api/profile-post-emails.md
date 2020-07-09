@@ -109,6 +109,7 @@ Content-length: 383
 ``` http
 HTTP/1.1 201 Created
 Content-Type: application/json
+
 {
   "@odata.type": "#microsoft.graph.itemEmail",
   "id": "0f30bf5d-bf5d-0f30-5dbf-300f5dbf300f",
