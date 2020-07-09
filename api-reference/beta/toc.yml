@@ -1551,10 +1551,10 @@ items:
           items:
           - name: List
             href: api/print-list-taskdefinitions.md
-          - name: Get
-            href: api/printtaskdefinition-get.md
           - name: Create
             href: api/print-post-taskdefinitions.md
+          - name: Get
+            href: api/printtaskdefinition-get.md
           - name: Delete
             href: api/print-delete-taskdefinition.md
           - name: List tasks
