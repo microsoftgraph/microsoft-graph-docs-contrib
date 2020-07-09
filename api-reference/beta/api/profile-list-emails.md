@@ -85,6 +85,7 @@ GET https://graph.microsoft.com/beta/me/profile/emails
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
+
 {
   "value": [
     {

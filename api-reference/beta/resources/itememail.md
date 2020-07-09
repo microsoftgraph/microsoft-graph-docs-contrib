@@ -18,11 +18,15 @@ Represents detailed information about email addresses associated with the user.
 Inherits from [itemFacet](../resources/itemfacet.md).
 
 ## Methods
-
 |Method|Return type|Description|
 |:---|:---|:---|
 |[List emails](../api/profile-list-emails.md)|[itemEmail](../resources/itememail.md) collection|Get the itemEmails from the emails navigation property.|
 |[Create emails](../api/profile-post-emails.md)|[itemEmail](../resources/itememail.md)|Create a new emails object.|
+|[Update emails](../api/profile-update-emails.md)|[itemEmail](../resources/itememail.md)|Update the properties of an emails object.|
+|[Get emails](../api/profile-get-itememail.md)|[itemEmail](../resources/itememail.md)|Read the properties and relationships of an [itemEmail](../resources/itememail.md) object.|
+|[Delete emails](../api/profile-delete-emails.md)|None|Delete an [itemEmail](../resources/itememail.md) object.|
+|[List itemEmails](../api/itememail-list.md)|[itemEmail](../resources/itememail.md) collection|Get a list of the [itemEmail](../resources/itememail.md) objects and their properties.|
+|[Create itemEmail](../api/itememail-create.md)|[itemEmail](../resources/itememail.md)|Create a new [itemEmail](../resources/itememail.md) object.|
 |[Get itemEmail](../api/itememail-get.md)|[itemEmail](../resources/itememail.md)|Read the properties and relationships of an [itemEmail](../resources/itememail.md) object.|
 |[Update itemEmail](../api/itememail-update.md)|[itemEmail](../resources/itememail.md)|Update the properties of an [itemEmail](../resources/itememail.md) object.|
 |[Delete itemEmail](../api/itememail-delete.md)|None|Deletes an [itemEmail](../resources/itememail.md) object.|
@@ -30,24 +34,22 @@ Inherits from [itemFacet](../resources/itemfacet.md).
 ## Properties
 |Property|Type|Description|
 |:---|:---|:---|
-|address|String|The email address itself.|
-|allowedAudiences|String|The audiences that are able to see the values contained within the entity. Inherited from [itemFacet](../resources/itemfacet.md). Possible values are: `me`, `family`, `contacts`, `groupMembers`, `organization`, `federatedOrganizations`, `everyone`, `unknownFutureValue`.|
-|createdBy|[identitySet](../resources/identityset.md)|Provides the identifier of the user and/or application that created the entity. Inherited from [itemFacet](../resources/itemfacet.md)|
-|createdDateTime|DateTimeOffset|Provides the dateTimeOffset for when the entity was created. Inherited from [itemFacet](../resources/itemfacet.md)|
-|displayName|String|The name or label a user has associated with a particular email address.|
-|id|String|Identifier used for individually addressing the entity. Inherited from [entity](../resources/entity.md)|
-|inference|[inferenceData](../resources/inferencedata.md)|Contains inference detail if the entity is inferred by the creating or modifying application. Inherited from [itemFacet](../resources/itemfacet.md)|
-|lastModifiedBy|[identitySet](../resources/identityset.md)|Provides the identifier of the user and/or application that last modified the entity. Inherited from [itemFacet](../resources/itemfacet.md)|
-|lastModifiedDateTime|DateTimeOffset|Provides the dateTimeOffset for when the entity was created. Inherited from [itemFacet](../resources/itemfacet.md)|
-|source|[personDataSource](../resources/persondatasource.md)|Where the values originated if synced from another service. Inherited from [itemFacet](../resources/itemfacet.md)|
-|type|emailType|The type of email address represented by the entity. Possible values are: `unknown`, `work`, `personal`, `main`, `other`.|
+|address|String|**TODO: Add Description**|
+|allowedAudiences|allowedAudiences|**TODO: Add Description** Inherited from [itemFacet](../resources/itemfacet.md). Possible values are: `me`, `family`, `contacts`, `groupMembers`, `organization`, `federatedOrganizations`, `everyone`, `unknownFutureValue`.|
+|createdBy|[identitySet](../resources/identityset.md)|**TODO: Add Description** Inherited from [itemFacet](../resources/itemfacet.md)|
+|createdDateTime|DateTimeOffset|**TODO: Add Description** Inherited from [itemFacet](../resources/itemfacet.md)|
+|displayName|String|**TODO: Add Description**|
+|id|String|**TODO: Add Description** Inherited from [entity](../resources/entity.md)|
+|inference|[inferenceData](../resources/inferencedata.md)|**TODO: Add Description** Inherited from [itemFacet](../resources/itemfacet.md)|
+|lastModifiedBy|[identitySet](../resources/identityset.md)|**TODO: Add Description** Inherited from [itemFacet](../resources/itemfacet.md)|
+|lastModifiedDateTime|DateTimeOffset|**TODO: Add Description** Inherited from [itemFacet](../resources/itemfacet.md)|
+|source|[personDataSource](../resources/persondatasource.md)|**TODO: Add Description** Inherited from [itemFacet](../resources/itemfacet.md)|
+|type|emailType|**TODO: Add Description**. Possible values are: `unknown`, `work`, `personal`, `main`, `other`.|
 
 ## Relationships
-
 None.
 
 ## JSON representation
-
 The following is a JSON representation of the resource.
 <!-- {
   "blockType": "resource",
@@ -57,31 +59,29 @@ The following is a JSON representation of the resource.
   "openType": false
 }
 -->
-
 ``` json
 {
-  "id": "e13f7a4d-303c-464f-a6af-80ea18eb74f3",
-  "allowedAudiences": "organization",
-  "inference": null,
-  "createdDateTime": "2020-07-06T06:34:12.2294868Z",
-  "createdBy": {
-    "user": {
-        "id": "efee1b77-fb3b-4f65-99d6-274c11914d12",
-        "displayName": "Innocenty Popov"
-    }
+  "@odata.type": "#microsoft.graph.itemEmail",
+  "id": "String (identifier)",
+  "allowedAudiences": "String",
+  "inference": {
+    "@odata.type": "microsoft.graph.inferenceData"
   },
-  "lastModifiedDateTime": "2020-07-08T06:34:12.2294868Z",
+  "createdDateTime": "String (timestamp)",
+  "createdBy": {
+    "@odata.type": "microsoft.graph.identitySet"
+  },
+  "lastModifiedDateTime": "String (timestamp)",
   "lastModifiedBy": {
-    "user": {
-        "id": "efee1b77-fb3b-4f65-99d6-274c11914d12",
-        "displayName": "Innocenty Popov"
-    }
+    "@odata.type": "microsoft.graph.identitySet"
   },
   "source": {
-    "type": "User"
+    "@odata.type": "microsoft.graph.personDataSource"
   },
-  "address": "innocenty.popov@adventureworks.com",
-  "displayName": "Innocenty Popov",
-  "type": "work"
+  "address": "String",
+  "displayName": "String",
+  "type": "String"
 }
 ```
+
+
