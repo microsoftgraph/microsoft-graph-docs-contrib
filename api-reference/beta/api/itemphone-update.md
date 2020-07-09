@@ -32,22 +32,19 @@ One of the following permissions is required to call this API. To learn more, in
 }
 -->
 ``` http
-PATCH /me/profile/phones/{itemPhoneId}
 PATCH /user/{userId}/profile/phones/{itemPhoneId}
 ```
 
 ## Request headers
-
 |Name|Description|
 |:---|:---|
 |Authorization|Bearer {token}. Required.|
 |Content-Type|application/json. Required.|
 
 ## Request body
-
 In the request body, supply a JSON representation of the [itemPhone](../resources/itemphone.md) object.
 
-The following table shows the properties that are possible to set when you update the [itemPhone](../resources/itemphone.md) object.
+The following table shows the properties that are required when you create the [itemPhone](../resources/itemphone.md).
 
 |Property|Type|Description|
 |:---|:---|:---|
@@ -62,6 +59,7 @@ The following table shows the properties that are possible to set when you updat
 |displayName|String|**TODO: Add Description**|
 |type|phoneType|**TODO: Add Description**. Possible values are: `home`, `business`, `mobile`, `other`, `assistant`, `homeFax`, `businessFax`, `otherFax`, `pager`, `radio`.|
 |number|String|**TODO: Add Description**|
+
 
 
 ## Response
@@ -82,48 +80,55 @@ Content-Type: application/json
 Content-length: 382
 
 {
-  "allowedAudiences": "organization",
-  "type": "other",
+  "@odata.type": "#microsoft.graph.itemPhone",
+  "allowedAudiences": "String",
+  "inference": {
+    "@odata.type": "microsoft.graph.inferenceData"
+  },
+  "createdBy": {
+    "@odata.type": "microsoft.graph.identitySet"
+  },
+  "source": {
+    "@odata.type": "microsoft.graph.personDataSource"
+  },
+  "displayName": "String",
+  "type": "String",
+  "number": "String"
 }
 ```
 
-### Response
 
+### Response
 **Note:** The response object shown here might be shortened for readability.
 <!-- {
   "blockType": "response",
-  "truncated": true,
-  "@odata.type": "microsoft.graph.itemPhone"
+  "truncated": true
 }
 -->
-
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
-
 {
-  "id": "e13f7a4d-303c-464f-a6af-80ea18eb74f3",
-  "allowedAudiences": "organization",
-  "inference": null,
-  "createdDateTime": "2020-07-06T06:34:12.2294868Z",
-  "createdBy": {
-    "user": {
-        "id": "efee1b77-fb3b-4f65-99d6-274c11914d12",
-        "displayName": "Innocenty Popov"
-    }
+  "@odata.type": "#microsoft.graph.itemPhone",
+  "id": "0fb4c1e3-c1e3-0fb4-e3c1-b40fe3c1b40f",
+  "allowedAudiences": "String",
+  "inference": {
+    "@odata.type": "microsoft.graph.inferenceData"
   },
-  "lastModifiedDateTime": "2020-07-08T06:34:12.2294868Z",
+  "createdDateTime": "String (timestamp)",
+  "createdBy": {
+    "@odata.type": "microsoft.graph.identitySet"
+  },
+  "lastModifiedDateTime": "String (timestamp)",
   "lastModifiedBy": {
-    "user": {
-        "id": "efee1b77-fb3b-4f65-99d6-274c11914d12",
-        "displayName": "Innocenty Popov"
-    }
+    "@odata.type": "microsoft.graph.identitySet"
   },
   "source": {
-    "type": "User"
+    "@odata.type": "microsoft.graph.personDataSource"
   },
-  "displayName": "Car Phone",
-  "type": "other",
-  "number": "+7 499 234 56 78"
+  "displayName": "String",
+  "type": "String",
+  "number": "String"
 }
 ```
+

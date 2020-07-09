@@ -45,15 +45,23 @@ PATCH /user/{userId}/profile/emails/{itemEmailId}
 ## Request body
 In the request body, supply a JSON representation of the [itemEmail](../resources/itememail.md) object.
 
-The following table shows the properties that are possible to set when you update the [itemEmail](../resources/itememail.md) object.
+The following table shows the properties that are required when you create the [itemEmail](../resources/itememail.md).
 
 |Property|Type|Description|
 |:---|:---|:---|
-|address|String|The email address itself.|
-|allowedAudiences|String|The audiences that are able to see the values contained within the entity. Inherited from [itemFacet](../resources/itemfacet.md). Possible values are: `me`, `family`, `contacts`, `groupMembers`, `organization`, `federatedOrganizations`, `everyone`, `unknownFutureValue`.|
-|displayName|String|The name or label a user has associated with a particular email address.|
-|inference|[inferenceData](../resources/inferencedata.md)|Contains inference detail if the entity is inferred by the creating or modifying application. Inherited from [itemFacet](../resources/itemfacet.md)|
-|type|emailType|The type of email address represented by the entity. Possible values are: `unknown`, `work`, `personal`, `main`, `other`.|
+|id|String|**TODO: Add Description** Inherited from [entity](../resources/entity.md)|
+|allowedAudiences|allowedAudiences|**TODO: Add Description** Inherited from [itemFacet](../resources/itemfacet.md). Possible values are: `me`, `family`, `contacts`, `groupMembers`, `organization`, `federatedOrganizations`, `everyone`, `unknownFutureValue`.|
+|inference|[inferenceData](../resources/inferencedata.md)|**TODO: Add Description** Inherited from [itemFacet](../resources/itemfacet.md)|
+|createdDateTime|DateTimeOffset|**TODO: Add Description** Inherited from [itemFacet](../resources/itemfacet.md)|
+|createdBy|[identitySet](../resources/identityset.md)|**TODO: Add Description** Inherited from [itemFacet](../resources/itemfacet.md)|
+|lastModifiedDateTime|DateTimeOffset|**TODO: Add Description** Inherited from [itemFacet](../resources/itemfacet.md)|
+|lastModifiedBy|[identitySet](../resources/identityset.md)|**TODO: Add Description** Inherited from [itemFacet](../resources/itemfacet.md)|
+|source|[personDataSource](../resources/persondatasource.md)|**TODO: Add Description** Inherited from [itemFacet](../resources/itemfacet.md)|
+|address|String|**TODO: Add Description**|
+|displayName|String|**TODO: Add Description**|
+|type|emailType|**TODO: Add Description**. Possible values are: `unknown`, `work`, `personal`, `main`, `other`.|
+
+
 
 ## Response
 
@@ -73,8 +81,20 @@ Content-Type: application/json
 Content-length: 383
 
 {
-  "displayName": "Innocenty Popov",
-  "type": "work"
+  "@odata.type": "#microsoft.graph.itemEmail",
+  "allowedAudiences": "String",
+  "inference": {
+    "@odata.type": "microsoft.graph.inferenceData"
+  },
+  "createdBy": {
+    "@odata.type": "microsoft.graph.identitySet"
+  },
+  "source": {
+    "@odata.type": "microsoft.graph.personDataSource"
+  },
+  "address": "String",
+  "displayName": "String",
+  "type": "String"
 }
 ```
 
@@ -83,8 +103,7 @@ Content-length: 383
 **Note:** The response object shown here might be shortened for readability.
 <!-- {
   "blockType": "response",
-  "truncated": true,
-  "@odata.type": "microsoft.graph.itemEmail"
+  "truncated": true
 }
 -->
 ``` http
@@ -93,28 +112,26 @@ Content-Type: application/json
 
 {
   "@odata.type": "#microsoft.graph.itemEmail",
-  "id": "e13f7a4d-303c-464f-a6af-80ea18eb74f3",
-  "allowedAudiences": "organization",
-  "inference": null,
-  "createdDateTime": "2020-07-06T06:34:12.2294868Z",
-  "createdBy": {
-    "user": {
-        "id": "efee1b77-fb3b-4f65-99d6-274c11914d12",
-        "displayName": "Innocenty Popov"
-    }
+  "id": "0f30bf5d-bf5d-0f30-5dbf-300f5dbf300f",
+  "allowedAudiences": "String",
+  "inference": {
+    "@odata.type": "microsoft.graph.inferenceData"
   },
-  "lastModifiedDateTime": "2020-07-08T06:34:12.2294868Z",
+  "createdDateTime": "String (timestamp)",
+  "createdBy": {
+    "@odata.type": "microsoft.graph.identitySet"
+  },
+  "lastModifiedDateTime": "String (timestamp)",
   "lastModifiedBy": {
-    "user": {
-        "id": "efee1b77-fb3b-4f65-99d6-274c11914d12",
-        "displayName": "Innocenty Popov"
-    }
+    "@odata.type": "microsoft.graph.identitySet"
   },
   "source": {
-    "type": "User"
+    "@odata.type": "microsoft.graph.personDataSource"
   },
-  "address": "innocenty.popov@adventureworks.com",
-  "displayName": "Innocenty Popov",
-  "type": "work"
+  "address": "String",
+  "displayName": "String",
+  "type": "String"
 }
 ```
+
+
