@@ -15,7 +15,7 @@ Namespace: microsoft.graph
 
 Get a [task trigger](../resources/printtasktrigger.md) from a [printer](../resources/printer.md).
 
-For details about how to use this API to add pull printing support to Universal Print, see [Extending Universal Print to support pull printing](/graph/universal-print-concept-overview.md#extending-universal-print-to-support-pull-printing).
+For details about how to use this API to add pull printing support to Universal Print, see [Extending Universal Print to support pull printing](/graph/universal-print-concept-overview#extending-universal-print-to-support-pull-printing).
 
 ## Permissions
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).

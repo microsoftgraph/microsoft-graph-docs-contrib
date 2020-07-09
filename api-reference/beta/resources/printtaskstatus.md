@@ -15,7 +15,7 @@ Namespace: microsoft.graph
 
 Represents the current execution status of a [printTask](printtask.md). **Applications that register task triggers are responsible for updating task statuses when processing is finished, unless the related printJob has been redirected to another printer.**
 
-For details about how to use this resource to add pull printing support to Universal Print, see [Extending Universal Print to support pull printing](/graph/universal-print-concept-overview.md#extending-universal-print-to-support-pull-printing).
+For details about how to use this resource to add pull printing support to Universal Print, see [Extending Universal Print to support pull printing](/graph/universal-print-concept-overview#extending-universal-print-to-support-pull-printing).
 
 ## Properties
 | Property     | Type        | Description |
