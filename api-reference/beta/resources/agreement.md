@@ -39,7 +39,7 @@ Represents a tenant's customizable terms of use agreement that is created and ma
 ## Relationships
 | Relationship | Type        | Description |
 |:-------------|:------------|:------------|
-|files|[agreementFile](agreementfile.md) collection|Read-only. PDFs linked to this agreement.|
+|files|[agreementFile](agreementfile.md) collection|Read-only. PDFs linked to this agreement|
 
 ## JSON representation
 
