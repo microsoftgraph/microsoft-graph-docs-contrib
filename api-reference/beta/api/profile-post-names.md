@@ -42,8 +42,26 @@ POST /users/{id | userPrincipalName}/profile/names
 | Content-Type   | application/json. Required. |
 
 ## Request body
+In the request body, supply a JSON representation of the [personName](../resources/personname.md) object.
 
-In the request body, supply a JSON representation of [personName](../resources/personname.md) object.
+The following table shows the properties that are possible to set when you create a [personName](../resources/personname.md) object.
+
+|Property|Type|Description|
+|:---|:---|:---|
+|allowedAudiences|String|The audiences that are able to see the values contained within the entity. Inherited from [itemFacet](../resources/itemfacet.md). Possible values are: `me`, `family`, `contacts`, `groupMembers`, `organization`, `federatedOrganizations`, `everyone`, `unknownFutureValue`.|
+|displayName|String|Provides an ordered rendering of firstName and lastName depending on the locale of the user or their device.|
+|first|String|First name of the user.|
+|id|String|Identifier used for individually addressing the entity. Inherited from [entity](../resources/entity.md)|
+|inference|[inferenceData](../resources/inferencedata.md)|Contains inference detail if the entity is inferred by the creating or modifying application. Inherited from [itemFacet](../resources/itemfacet.md)|
+|initials|String|Initials of the user.|
+|languageTag|String|Contains the name for the language (en-US, no-NB, en-AU) following IETF BCP47 format.   |
+|last|String|Last name of the user.|
+|maiden|String|Maiden name of the user. |
+|middle|String|Middle name of the user.|
+|nickname|String|Nickname of the user.|
+|pronunciation|[yomiPersonName](../resources/yomipersonname.md)|Guidance on how to pronounce the users name.|
+|suffix|String|Designators used after the users name (eg: PhD.)  |
+|title|String|Honorifics used to prefix a users name (eg: Dr, Sir, Madam, Mrs.)|
 
 ## Response
 
@@ -56,6 +74,7 @@ If successful, this method returns `201, Created` response code and a new [perso
 The following is an example of the request.
 
 # [HTTP](#tab/http)
+
 <!-- {
   "blockType": "request",
   "name": "create_personname_from_profilev2"
