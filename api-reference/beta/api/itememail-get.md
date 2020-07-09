@@ -82,6 +82,7 @@ GET https://graph.microsoft.com/beta/user/{userId}/profile/emails/{itemEmailId}
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
+
 {
   "value": {
     "@odata.type": "#microsoft.graph.itemEmail",
