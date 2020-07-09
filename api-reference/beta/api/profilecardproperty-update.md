@@ -32,7 +32,7 @@ One of the following permissions is required to call this API. To learn more, in
 <!-- { "blockType": "ignored" } -->
 
 ```http
-PATCH https://graph.microsoft.com/beta/organization/settings/profileCardProperties/{id}
+PATCH https://graph.microsoft.com/beta/organization/{organizationId}/settings/profileCardProperties/{id}
 ```
 
 ## Request headers
@@ -68,7 +68,7 @@ The following example adds a localized label "Kostnads Senter" for the locale "n
 }-->
 
 ```http
-PATCH https://graph.microsoft.com/beta/organization/settings/profileCardProperties/CustomAttribute1
+PATCH https://graph.microsoft.com/beta/organization/{organizationId}/settings/profileCardProperties/CustomAttribute1
 Content-type: application/json
 
 {
