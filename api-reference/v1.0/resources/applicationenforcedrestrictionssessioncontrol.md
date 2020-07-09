@@ -9,6 +9,8 @@ doc_type: "resourcePageType"
 
 # applicationEnforcedRestrictionsSessionControl resource type
 
+Namespace: microsoft.graph
+
 Session control to enforce application restrictions. Inherits from [Conditional Access Session Control](conditionalaccesssessioncontrol.md).
 
 ## Properties

@@ -9,6 +9,8 @@ doc_type: "resourcePageType"
 
 # conditionalAccessLocations resource type
 
+Namespace: microsoft.graph
+
 Represents locations included in and excluded from the policy scope.
 
 ## Properties

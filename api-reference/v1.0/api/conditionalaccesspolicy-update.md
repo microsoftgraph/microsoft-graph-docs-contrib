@@ -9,6 +9,8 @@ doc_type: "apiPageType"
 
 # Update conditionalaccesspolicy
 
+Namespace: microsoft.graph
+
 Update the properties of a [conditionalAccessPolicy](../resources/conditionalaccesspolicy.md) object.
 
 ## Permissions
@@ -49,7 +51,7 @@ For the list of properties, see [conditionalAccessPolicy](../resources/condition
 
 If successful, this method returns a `204 No Content` response code. It does not return anything in the response body.
 
-## Examples
+## Example
 
 ### Request
 
@@ -76,9 +78,7 @@ Content-type: application/json
 }
 ```
 
-
 ---
-
 
 ### Response
 

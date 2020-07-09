@@ -9,13 +9,16 @@ doc_type: "resourcePageType"
 
 # cloudAppSecuritySessionControl resource type
 
+Namespace: microsoft.graph
+
 Session control used to enforce cloud app security checks. Inehrits from [Conditional Access Session Control](conditionalaccesssessioncontrol.md).
+
 ## Properties
 
 | Property     | Type        | Description |
 |:-------------|:------------|:------------|
 |isEnabled     |Boolean      | Specifies whether the session control is enabled. |
-|cloudAppSecurityType|String| Possible values are: `mcasConfigured`, `monitorOnly`, `blockDownloads`, `unknownFutureValue`. Learn more about these values here: https://docs.microsoft.com/cloud-app-security/proxy-deployment-aad#step-1-create-an-azure-ad-conditional-access-test-policy- |
+|cloudAppSecurityType|String| Possible values are: `mcasConfigured`, `monitorOnly`, `blockDownloads`, `unknownFutureValue`. For more information, see [Deploy Conditional Access App Control for featured apps](https://docs.microsoft.com/cloud-app-security/proxy-deployment-aad). |
 
 ## Relationships
 

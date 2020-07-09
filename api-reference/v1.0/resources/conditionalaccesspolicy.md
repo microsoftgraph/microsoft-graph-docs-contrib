@@ -9,6 +9,8 @@ doc_type: "resourcePageType"
 
 # conditionalAccessPolicy resource type
 
+Namespace: microsoft.graph
+
 Represents an Azure Active Directory conditional access policy. Conditional access policies are custom rules that define an access scenario. For more information, see the [Conditional access documentation](https://docs.microsoft.com/azure/active-directory/conditional-access/).
 
 ## Methods
@@ -27,7 +29,6 @@ Represents an Azure Active Directory conditional access policy. Conditional acce
 |:-------------|:------------|:------------|
 |conditions|[conditionalAccessConditionSet](conditionalaccessconditionset.md)| Specifies the rules that must be met for the policy to apply. Required. |
 |createdDateTime|DateTimeOffset| The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 would look like this: `'2014-01-01T00:00:00Z'`. Readonly. |
-|description|String| Not used. |
 |displayName|String| Specifies a display name for the conditionalAccessPolicy object. |
 |grantControls|[conditionalAccessGrantControls](conditionalaccessgrantcontrols.md)| Specifies the grant controls that must be fulfilled to pass the policy. |
 |id|String| Specifies the identifier of a conditionalAccessPolicy object. Read-only.|
@@ -47,7 +48,6 @@ The following is a JSON representation of the resource.
   "blockType": "resource",
   "optionalProperties": [
     "displayName",
-    "description",
     "sessionControls",
     "grantControls"
   ],
@@ -60,7 +60,6 @@ The following is a JSON representation of the resource.
 {
   "conditions": {"@odata.type": "microsoft.graph.conditionalAccessConditionSet"},
   "createdDateTime": "String (timestamp)",
-  "description": "String",
   "displayName": "String",
   "grantControls": {"@odata.type": "microsoft.graph.conditionalAccessGrantControls"},
   "id": "String (identifier)",

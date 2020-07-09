@@ -9,6 +9,8 @@ doc_type: "apiPageType"
 
 # Get conditionalAccessPolicy
 
+Namespace: microsoft.graph
+
 Retrieve the properties and relationships of a [conditionalAccessPolicy](../resources/conditionalaccesspolicy.md) object.
 
 ## Permissions
@@ -47,11 +49,12 @@ Do not supply a request body for this method.
 
 If successful, this method returns a `200 OK` response code and the requested [conditionalAccessPolicy](../resources/conditionalaccesspolicy.md) object in the response body.
 
-## Examples
+## Example
 
 ### Request
 
 The following is an example of the request.
+
 # [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
@@ -63,7 +66,6 @@ GET https://graph.microsoft.com/v1.0/identity/conditionalAccess/policies/{id}
 ```
 
 ---
-
 
 ### Response
 
@@ -148,14 +150,6 @@ Content-type: application/json
             "excludeLocations": [
                 "00000000-0000-0000-0000-000000000000",
                 "d2136c9c-b049-47ae-b9cf-316e04ef7198"
-            ]
-        },
-        "devices": {
-            "includeDeviceStates": [
-                "All"
-            ],
-            "excludeDeviceStates": [
-                "Compliant"
             ]
         }
     },

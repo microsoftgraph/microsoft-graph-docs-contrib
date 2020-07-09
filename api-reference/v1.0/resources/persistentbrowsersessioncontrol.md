@@ -9,6 +9,8 @@ doc_type: "resourcePageType"
 
 # persistentBrowserSessionControl resource type
 
+Namespace: microsoft.graph
+
 Session control to define whether to persist cookies or not. Inherits from [Conditional Access Session Control](conditionalaccesssessioncontrol.md).
 
 ## Properties

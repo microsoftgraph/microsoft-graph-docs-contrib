@@ -9,6 +9,8 @@ doc_type: "apiPageType"
 
 # Delete conditionalAccessPolicy
 
+Namespace: microsoft.graph
+
 Delete a [conditionalAccessPolicy](../resources/conditionalaccesspolicy.md) object.
 
 ## Permissions
@@ -41,9 +43,9 @@ Do not supply a request body for this method.
 
 ## Response
 
-If successful, this method returns `204, No Content` response code. It does not return anything in the response body.
+If successful, this method returns a `204, No Content` response code. It does not return anything in the response body.
 
-## Examples
+## Example
 
 ### Request
 
@@ -60,7 +62,6 @@ DELETE https://graph.microsoft.com/v1.0/identity/conditionalAccess/policies/{id}
 ```
 
 ---
-
 
 ### Response
 

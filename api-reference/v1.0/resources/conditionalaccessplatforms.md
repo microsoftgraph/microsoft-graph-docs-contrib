@@ -9,6 +9,8 @@ doc_type: "resourcePageType"
 
 # conditionalAccessPlatforms resource type
 
+Namespace: microsoft.graph
+
 Platforms included in and excluded from the policy scope.
 
 ## Properties

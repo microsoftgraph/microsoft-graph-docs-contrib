@@ -9,6 +9,8 @@ doc_type: "resourcePageType"
 
 # conditionalAccessSessionControl resource type
 
+Namespace: microsoft.graph
+
 Session control base type.
 
 ## Properties

@@ -9,6 +9,8 @@ doc_type: "apiPageType"
 
 # List policies
 
+Namespace: microsoft.graph
+
 Retrieve a list of [conditionalAccessPolicy](../resources/conditionalaccesspolicy.md) objects.
 
 ## Permissions
@@ -47,7 +49,7 @@ Do not supply a request body for this method.
 
 If successful, this method returns a `200 OK` response code and a collection of [conditionalAccessPolicy](../resources/conditionalaccesspolicy.md) objects in the response body.
 
-## Examples
+## Example
 
 ### Request
 
@@ -63,9 +65,7 @@ The following is an example of the request.
 GET https://graph.microsoft.com/v1.0/identity/conditionalAccess/policies
 ```
 
-
 ---
-
 
 ### Response
 
@@ -84,7 +84,6 @@ The following is an example of the response.
 HTTP/1.1 200 OK
 Content-type: application/json
 
-
 {
     "@odata.context": "https://graph.microsoft.com/v1.0/$metadata#conditionalAccess/policies",
     "value": [
@@ -102,7 +101,6 @@ Content-type: application/json
                 ],
                 "platforms": null,
                 "locations": null,
-                "devices": null,
                 "applications": {
                     "includeApplications": [
                         "None"
@@ -144,7 +142,6 @@ Content-type: application/json
                 ],
                 "platforms": null,
                 "locations": null,
-                "devices": null,
                 "applications": {
                     "includeApplications": [
                         "None"

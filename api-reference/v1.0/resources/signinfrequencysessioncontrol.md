@@ -9,6 +9,8 @@ doc_type: "resourcePageType"
 
 # signInFrequencySessionControl resource type
 
+Namespace: microsoft.graph
+
 Session control to enforce sign-in frequency. Inehrits from [Conditional Access Session Control](conditionalaccesssessioncontrol.md).
 
 ## Properties

@@ -9,6 +9,8 @@ doc_type: "apiPageType"
 
 # Create conditionalAccessPolicy
 
+Namespace: microsoft.graph
+
 Create a new [conditionalAccessPolicy](../resources/conditionalaccesspolicy.md).
 
 ## Permissions
@@ -40,7 +42,11 @@ POST /identity/conditionalAccess/policies
 
 In the request body, supply a JSON representation of a [conditionalAccessPolicy](../resources/conditionalaccesspolicy.md) object.
 
-A valid policy should contain at least one [application](../resources/conditionalaccessapplications.md) rule - for example, `'includeApplications': 'none'`, one [user](../resources/conditionalaccessusers.md) rule - for example, `'includeUsers': 'none'`, and at least one [grant](../resources/conditionalaccessgrantcontrols.md)/[session](../resources/conditionalaccesssessioncontrols.md) control.
+A valid policy should contain at least one of the following:
+
+* [application](../resources/conditionalaccessapplications.md) rule. For example, `'includeApplications': 'none'`.
+* [user](../resources/conditionalaccessusers.md) rule. For example, `'includeUsers': 'none'`.
+* [grant](../resources/conditionalaccessgrantcontrols.md)/[session](../resources/conditionalaccesssessioncontrols.md) control.
 
 ## Response
 
@@ -54,7 +60,6 @@ If successful, this method returns a `201 Created` response code and a new [cond
 The following example shows a common request to require multi-factor authentication for access to Exchange Online from modern authentication clients outside of trusted locations for a particular group.
 
 >**Note:** You must set up your trusted locations before using this operation.
-
 
 # [HTTP](#tab/http)
 <!-- {
@@ -102,7 +107,6 @@ Content-type: application/json
 
 ---
 
-
 #### Response
 
 The following is an example of the response.
@@ -132,7 +136,6 @@ Content-type: application/json
             "browser"
         ],
         "platforms": null,
-        "devices": null,
         "applications": {
             "includeApplications": [
                 "00000002-0000-0ff1-ce00-000000000000"
@@ -243,7 +246,6 @@ Content-type: application/json
             "all"
         ],
         "platforms": null,
-        "devices": null,
         "applications": {
             "includeApplications": [
                 "00000002-0000-0ff1-ce00-000000000000"
@@ -279,10 +281,10 @@ Content-type: application/json
 }
 ```
 
-### Example 3: Use all conditions/controls
+### Example 3: Use all conditions and controls
 
 #### Request
-The following is an example of the request to use all the conditions/controls.
+The following is an example of the request to use all the conditions and controls.
 <!-- {
   "blockType": "request",
   "name": "create_conditionalaccesspolicy_from_conditionalaccessroot"
@@ -355,14 +357,6 @@ Content-type: application/json
             "excludeLocations": [
                 "00000000-0000-0000-0000-000000000000",
                 "d2136c9c-b049-47ae-b9cf-316e04ef7198"
-            ]
-        },
-        "devices": {
-            "includeStates": [
-                "All"
-            ],
-            "excludeStates": [
-                "Compliant"
             ]
         }
     },
@@ -479,14 +473,6 @@ Content-type: application/json
                 "00000000-0000-0000-0000-000000000000",
                 "d2136c9c-b049-47ae-b9cf-316e04ef7198"
             ]
-        },
-        "devices": {
-            "includeStates": [
-                "All"
-            ],
-            "excludeStates": [
-                "Compliant"
-            ]
         }
     },
     "grantControls": {
@@ -520,10 +506,10 @@ Content-type: application/json
 }
 ```
 
-### Example 4: Require MFA to Exchange Online from non-complaint devices
+### Example 4: Require MFA to Exchange Online from non-compliant devices
 
 #### Request
-The following example shows a request to require MFA to Exchange Online from non-complaint devices.
+The following example shows a request to require MFA to Exchange Online from non-compliant devices.
 
 <!-- {
   "blockType": "request",
@@ -535,7 +521,7 @@ POST https://graph.microsoft.com/v1.0/identity/conditionalAccess/policies
 Content-type: application/json
 
 {
-    "displayName": "Require MFA to EXO from non-complaint devices.",
+    "displayName": "Require MFA to EXO from non-compliant devices.",
     "state": "enabled",
     "conditions": {
         "applications": {
@@ -545,14 +531,6 @@ Content-type: application/json
         },
         "users": {
             "includeGroups": ["ba8e7ded-8b0f-4836-ba06-8ff1ecc5c8ba"],
-        },
-        "devices": {
-            "includeDeviceStates": [
-                "All"
-            ],
-            "excludeDeviceStates": [
-                "Compliant"
-            ]
         }
     },
     "grantControls": {
@@ -581,7 +559,7 @@ Content-type: application/json
 {
     "@odata.context": "https://graph.microsoft.com/v1.0/$metadata#conditionalAccess/policies/$entity",
      "id": "b3f1298e-8e93-49af-bdbf-94cf7d453ca3",
-    "displayName": "Require MFA to EXO from non-complaint devices.",
+    "displayName": "Require MFA to EXO from non-compliant devices.",
     "createdDateTime": "2020-04-01T00:55:12.9571747Z",
     "modifiedDateTime": null,
     "state": "enabled",
@@ -612,14 +590,6 @@ Content-type: application/json
             "excludeGroups": [],
             "includeRoles": [],
             "excludeRoles": []
-        },
-        "devices": {
-            "includeDeviceStates": [
-                "All"
-            ],
-            "excludeDeviceStates": [
-                "Compliant"
-            ]
         }
     },
     "grantControls": {
