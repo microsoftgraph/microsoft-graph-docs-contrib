@@ -71,7 +71,7 @@ If successful, this method returns a `201 Created` response code and an [itemEma
 ### Request
 <!-- {
   "blockType": "request",
-  "name": "create_itememail_from_profilev2"
+  "name": "create_itememail_from_profile"
 }
 -->
 ``` http
@@ -103,7 +103,7 @@ Content-length: 383
 <!-- {
   "blockType": "response",
   "truncated": true,
-  "@odata.type": "microsoft.graph.itememail"
+  "@odata.type": "microsoft.graph.itemEmail"
 }
 -->
 ``` http
