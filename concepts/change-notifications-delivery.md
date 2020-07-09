@@ -163,4 +163,4 @@ POST https://graph.microsoft.com/v1.0/servicePrincipals
 }
 ```
 
-> **Note:**  it is possible you get an access denied running this query. In this case select **Modify Permissions**, then select **Consent** for the **Application.ReadWrite.All** row. After consenting to this new permission, run the request again.
+> **Note:** you could get an access denied running this query. In this case select the gear icon next to your account name in the top left corner. Then select **Select Permissions** and search for **Application.ReadWrite.All**. Check the permission and select **Consent**. After consenting to this new permission, run the request again.
