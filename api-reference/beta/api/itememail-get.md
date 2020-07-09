@@ -82,30 +82,28 @@ GET https://graph.microsoft.com/beta/user/{userId}/profile/emails/{itemEmailId}
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
-
 {
-  "id": "e13f7a4d-303c-464f-a6af-80ea18eb74f3",
-  "allowedAudiences": "organization",
-  "inference": null,
-  "createdDateTime": "2020-07-06T06:34:12.2294868Z",
-  "createdBy": {
-    "user": {
-        "id": "efee1b77-fb3b-4f65-99d6-274c11914d12",
-        "displayName": "Innocenty Popov"
-    }
-  },
-  "lastModifiedDateTime": "2020-07-08T06:34:12.2294868Z",
-  "lastModifiedBy": {
-    "user": {
-        "id": "efee1b77-fb3b-4f65-99d6-274c11914d12",
-        "displayName": "Innocenty Popov"
-    }
-  },
-  "source": {
-    "type": "User"
-  },
-  "address": "innocenty.popov@adventureworks.com",
-  "displayName": "Innocenty Popov",
-  "type": "work"
+  "value": {
+    "@odata.type": "#microsoft.graph.itemEmail",
+    "id": "0f30bf5d-bf5d-0f30-5dbf-300f5dbf300f",
+    "allowedAudiences": "String",
+    "inference": {
+      "@odata.type": "microsoft.graph.inferenceData"
+    },
+    "createdDateTime": "String (timestamp)",
+    "createdBy": {
+      "@odata.type": "microsoft.graph.identitySet"
+    },
+    "lastModifiedDateTime": "String (timestamp)",
+    "lastModifiedBy": {
+      "@odata.type": "microsoft.graph.identitySet"
+    },
+    "source": {
+      "@odata.type": "microsoft.graph.personDataSource"
+    },
+    "address": "String",
+    "displayName": "String",
+    "type": "String"
+  }
 }
 ```

@@ -85,7 +85,6 @@ GET https://graph.microsoft.com/beta/user/{userId}/profile/names/{personNameId}
 ```http
 HTTP/1.1 200 OK
 Content-type: application/json
-
 {
   "id": "e13f7a4d-303c-464f-a6af-80ea18eb74f3",
   "allowedAudiences": "organization",
