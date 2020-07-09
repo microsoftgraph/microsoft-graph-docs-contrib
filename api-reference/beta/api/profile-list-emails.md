@@ -31,7 +31,7 @@ One of the following permissions is required to call this API. To learn more, in
 
 ```http
 GET /me/profile/emails
-GET /users/{id | userPrincipalName}/profile/emails/{id}
+GET /users/{id | userPrincipalName}/profile/emails
 ```
 
 ## Optional query parameters
@@ -65,7 +65,7 @@ If successful, this method returns a `200 OK` response code and a collection of 
 ### Request
 <!-- {
   "blockType": "request",
-  "name": "get_itememail"
+  "name": "get_emails"
 }
 -->
 ``` http
