@@ -35,7 +35,7 @@ GET /identityGovernance/entitlementManagement/settings
 
 ## Optional query parameters
 
-None.
+This method does not support the OData query parameters to customize the response.
 
 ## Request headers
 
@@ -57,7 +57,6 @@ If successful, this method returns a `200 OK` response code and the requested [e
 
 The following is an example of the request.
 
-# [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "get_entitlementManagementSettings"

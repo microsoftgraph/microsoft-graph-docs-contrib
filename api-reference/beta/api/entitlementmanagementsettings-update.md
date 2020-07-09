@@ -34,6 +34,7 @@ PATCH /identityGovernance/entitlementManagement/settings
 | Name         | Description |
 |:-------------|:------------|
 | Authorization | Bearer \{token\}. Required. |
+| Content-Type  | application/json. Required. |
 
 ## Request body
 In the request body, supply a JSON representation of the parameters of an [entitlementManagementSettings](../resources/entitlementmanagementsettings.md) object.
@@ -43,10 +44,8 @@ If successful, this method returns a `204 No Content` response code.
 
 ## Example
 
-
 ### Request
 
-# [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "update_entitlementManagementSettings"
@@ -58,7 +57,7 @@ Content-type: application/json
 {
   "externalUserLifecycleAction": "None"
 }
-````
+```
 
 ### Response
 
