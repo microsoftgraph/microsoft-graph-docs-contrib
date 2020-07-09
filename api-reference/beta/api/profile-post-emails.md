@@ -71,7 +71,7 @@ If successful, this method returns a `201 Created` response code and an [itemEma
 ### Request
 <!-- {
   "blockType": "request",
-  "name": "create_itememail_from_"
+  "name": "create_itememail_from_profile"
 }
 -->
 ``` http
