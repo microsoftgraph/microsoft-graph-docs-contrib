@@ -12,6 +12,7 @@ const client = Client.init(options);
 
 let res = await client.api('/me/calendarView/delta')
 	.header('Prefer','odata.maxpagesize=2')
+	.deltatoken('R0usmcMDNGg0J1E')
 	.get();
 
 ```

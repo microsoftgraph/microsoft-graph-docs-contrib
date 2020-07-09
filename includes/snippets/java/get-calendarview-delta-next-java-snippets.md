@@ -8,6 +8,7 @@ IGraphServiceClient graphClient = GraphServiceClient.builder().authenticationPro
 
 LinkedList<Option> requestOptions = new LinkedList<Option>();
 requestOptions.add(new HeaderOption("Prefer", "odata.maxpagesize=2"));
+requestOptions.add(new QueryOption("$deltatoken", "R0usmcMDNGg0J1E"));
 
 IEventDeltaCollectionPage delta = graphClient.me().calendarView()
 	.delta()
