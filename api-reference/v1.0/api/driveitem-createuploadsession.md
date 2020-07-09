@@ -88,7 +88,7 @@ The following example controls the behavior if the filename is already taken, an
 | Parameter            | Type                          | Description
 |:---------------------|:------------------------------|:---------------------------------
 | item                 | [driveItemUploadableProperties](../resources/driveItemUploadableProperties.md) | Data about the file being uploaded
-| deferCommit          | Boolean                       | If set to true, final creation of the file in the destination will require an explicit request. Only on OneDrive for Business.
+| deferCommit          | Boolean                       | Optional. If set to true, final creation of the file in the destination will require an explicit request. Only on OneDrive for Business.
 
 ### Request
 
