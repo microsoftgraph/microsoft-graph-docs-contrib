@@ -92,7 +92,8 @@ Content-length: 382
 **Note:** The response object shown here might be shortened for readability.
 <!-- {
   "blockType": "response",
-  "truncated": true
+  "truncated": true,
+  "@odata.type": "microsoft.graph.itemPhone"
 }
 -->
 
@@ -101,7 +102,6 @@ HTTP/1.1 200 OK
 Content-Type: application/json
 
 {
-  "@odata.type": "#microsoft.graph.itemPhone",
   "id": "e13f7a4d-303c-464f-a6af-80ea18eb74f3",
   "allowedAudiences": "organization",
   "inference": null,
