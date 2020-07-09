@@ -13,7 +13,7 @@ var queryOptions = new List<QueryOption>()
 
 var delta = await graphClient.Me.CalendarView
 	.Delta()
-	.Request(queryOptions)
+	.Request()
 	.Header("Prefer","odata.maxpagesize=2")
 	.GetAsync();
 
