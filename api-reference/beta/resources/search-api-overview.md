@@ -77,13 +77,15 @@ When searching the **message** entity, specifying **enableTopResults** as `true`
 
 ### Get selected properties
 
-When searching each kind of entity type, such as `list`, `site`, `listItem`, `message`, `event`, `drive`, `driveItem`, `externalItem`. Use the **stored_fields** property to specify the fields to be returned in the response.
+When searching each kind of entity type, such as `list`, `site`, `listItem`, `message`, `event`, `drive`, `driveItem`, `externalItem`, you can specify the **stored_fields** property to specify the fields to be returned in the response. This is equivalent to the [select parameter](/graph/query-parameters#select-parameter) in the REST calls. For search does not support any of those parameters since the behavior is expressed in the POST Body.
 
-The fields specified in **stored_fields** should be retrievable managed properties that have been configured for the connection via the Microsoft Search tenant administration.
+For all these entity types, this will enable to trim down the fields returned in the response (typically to optimize the over the wire payload).
 
-**Note**: When searching the **listItem** entity, if the **stored_fields** don't exist in the published fields but exist in the non-published fields, they will be returned in the **fields** in the response. 
+For **externalItem** and **listItem** entity, they are the only entities which enable you to retrieve extended fields configured in the schema. For example, if you created a field for **externalItem** in the search schema, or if you have a custom column on a **listItem**, you will be able to retrieve these properties from search. You will not be able to retrieve the extended properties from all other entities. If you need to retrieve an extended property on a file, then you will have to specify the listItem type in the request to do so.
 
-When searching the **externalItem** entity, what you are searching in the **stored_fields** will be returned in the **properties** in the response. 
+if the **stored_fields** don't exist, they will be returned as empty in the **fields** in the response.
+
+TODO : Add a sample for specifying fields in the learn section.
 
 ### Keyword Query Language (KQL) support
 
