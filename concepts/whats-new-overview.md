@@ -14,8 +14,11 @@ See highlights of what's new in Microsoft Graph, and how you can [share your ide
 
 ## July 2020: New and generally available
 
+### Schema Extensions
+[Schema Extensions](/graph/api/resources/schemaextension) feature is now generally available in [Microsoft Cloud for US Government](/graph/deployments)
+        
 ### Change notifications
-Removed the erronously introduced **sequenceNumber** property from the [changeNotification](/graph/api/resources/changenotification) resource.
+Removed the erroneously introduced **sequenceNumber** property from the [changeNotification](/graph/api/resources/changenotification) resource.
 
 ## July 2020: New in preview only
 
