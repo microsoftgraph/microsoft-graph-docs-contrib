@@ -7,7 +7,7 @@ author: "ArvindHarinder1"
 ms.prod: "microsoft-identity-platform"
 ---
 
-# Azure AD synchronization API overvie
+# Azure AD synchronization API overview
 
 Namespace: microsoft.graph
 
