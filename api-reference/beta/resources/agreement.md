@@ -44,7 +44,7 @@ Represents a tenant's customizable terms of use agreement that is created and ma
 | Relationship | Type        | Description |
 |:-------------|:------------|:------------|
 |acceptances|[agreementAcceptance](agreementacceptance.md) collection|Read-only. Information about acceptances of this agreement.|
-|files (to be deprecated)|[agreementFileLocalization](agreementfilelocalization.md) collection| PDFs linked to this agreement. NOTE: This property is in the process of being deprecated. Please use 'file' described below.|
+|files|[agreementFileLocalization](agreementfilelocalization.md) collection| PDFs linked to this agreement. NOTE: This property is in the process of being deprecated. Please use 'file' described below.|
 |file|[agreementFile](agreementfile.md) | PDFs linked to this agreement.|
 
 ## JSON representation
@@ -69,6 +69,7 @@ The following is a JSON representation of the resource.
   "termsExpiration": {
     "startDateTime": "2018-10-01T00:00:00.0000000Z",
     "frequency": "PT1M"
+  }
 }
 
 ```
