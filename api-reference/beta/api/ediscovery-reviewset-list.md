@@ -52,7 +52,7 @@ If successful, this method returns a `200 OK` response code and the requested [r
 The following is an example of the request.
 <!-- {
   "blockType": "request",
-  "name": "delete_reviewset"
+  "name": "list_reviewset"
 }-->
 
 ```http

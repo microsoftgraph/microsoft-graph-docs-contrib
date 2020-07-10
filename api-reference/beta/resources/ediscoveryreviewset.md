@@ -17,9 +17,9 @@ eDiscovery review sets are static set of electronically stored information colle
 
 | Method       | Return Type | Description |
 |:-------------|:------------|:------------|
-| [List](../api/ediscovery-reviewset-list.md) | [reviewSet](ediscovery-reviewset.md) collection | Get a collection of review sets. |
-| [Get](../api/ediscovery-reviewset-get.md) | [reviewSet](ediscovery-reviewset.md) | Read properties and relationships of reviewSet object. |
-| [Create](../api/ediscovery-reviewset-create.md) | [reviewSet](ediscovery-reviewset.md) | Create a new review set. |
+| [List](../api/ediscovery-reviewset-list.md) | [reviewSet](ediscoveryreviewset.md) collection | Get a collection of review sets. |
+| [Get](../api/ediscovery-reviewset-get.md) | [reviewSet](ediscoveryreviewset.md) | Read properties and relationships of reviewSet object. |
+| [Create](../api/ediscovery-reviewset-create.md) | [reviewSet](ediscoveryreviewset.md) | Create a new review set. |
 
 ## Properties
 
@@ -34,7 +34,7 @@ eDiscovery review sets are static set of electronically stored information colle
 
 | Relationship | Type        | Description |
 |:-------------|:------------|:------------|
-| Review set query |[reviewSetQuery](ediscovery-reviewset-query.md) collection| Read-only. Nullable.|
+| Review set query |[reviewSetQuery](ediscoveryreviewsetquery.md) collection| Read-only. Nullable.|
 
 ## JSON representation
 

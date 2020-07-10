@@ -24,9 +24,9 @@ The Microsoft 365 eDiscovery Graph API includes the following key entities.
 
 | Name | Type       | Use case |
 |:-|:-|:-|
-| eDiscovery case | [ediscoveryCase](ediscovery-case.md) | eDiscovery cases are the container for all eDiscovery objects including custodians, holds, searches, review set and exports. |
-| eDiscovery review set| [reviewSet](ediscovery-reviewset.md) | eDiscovery review sets are static set of electronically stored information collected for use in a litigation, investigation or regulatory request. |
-| eDiscovery review set query | [reviewSetQuery](ediscovery-reviewset-query.md) | eDiscovery review set queries are used to discover, cull, review and tag [ESI](https://en.wikipedia.org/wiki/Electronically_stored_information_(Federal_Rules_of_Civil_Procedure)) with the ultimate goal of production to the requestor or opposing counsel.
+| eDiscovery case | [ediscoveryCase](ediscoverycase.md) | eDiscovery cases are the container for all eDiscovery objects including custodians, holds, searches, review set and exports. |
+| eDiscovery review set| [reviewSet](ediscoveryreviewset.md) | eDiscovery review sets are static set of electronically stored information collected for use in a litigation, investigation or regulatory request. |
+| eDiscovery review set query | [reviewSetQuery](ediscoveryreviewsetquery.md) | eDiscovery review set queries are used to discover, cull, review and tag [ESI](https://en.wikipedia.org/wiki/Electronically_stored_information_(Federal_Rules_of_Civil_Procedure)) with the ultimate goal of production to the requestor or opposing counsel.
 
 ## What's new
 
