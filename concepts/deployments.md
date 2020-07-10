@@ -80,7 +80,7 @@ The following Microsoft Graph features are generally available on the `/v1.0` en
 | Reports  |➖| ✔ |➖|
 | Organizational Contacts  |✔| ➖ |➖|
 | Applications  |✔| ➖ |➖|
-| Service Principles  |✔| ➖ |➖|
+| Service Principals  |✔| ➖ |➖|
 | Change notifications (webhooks)  | ✔ |✔ |✔* |
 | Delta query | ➖ | ✔ | ➖ |
 | Directory schema extensions |✔|➖|➖|
