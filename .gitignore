@@ -8,4 +8,3 @@ apidoc.exe
 *.dll
 .vs/
 .DS_Store
-api-reference/beta/resources/workbookoperation.md
