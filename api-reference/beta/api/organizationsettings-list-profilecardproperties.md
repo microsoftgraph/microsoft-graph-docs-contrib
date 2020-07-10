@@ -32,7 +32,7 @@ One of the following permissions is required to call this API. To learn more, in
 <!-- { "blockType": "ignored" } -->
 
 ```http
-GET https://graph.microsoft.com/beta/organization/settings/profileCardProperties
+GET https://graph.microsoft.com/beta/organization/{organizationId}/settings/profileCardProperties
 ```
 
 ## Optional query parameters
@@ -67,7 +67,7 @@ The following is an example of the request.
 }-->
 
 ```msgraph-interactive
-GET https://graph.microsoft.com/beta/organization/settings/profileCardProperties
+GET https://graph.microsoft.com/beta/organization/{organizationId}/settings/profileCardProperties
 ```
 # [C#](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/get-profilecardproperties-csharp-snippets.md)]
