@@ -13,6 +13,11 @@ For a summary of the value of these API changes, as well as recent tools, compon
 
 ## July 2020
 
+### Taxonomy TermStore
+| **Change type** | **Version**   | **Description**                          |
+| :-------------- | :------------ | :--------------------------------------- |
+| Addition | beta | Added different resources and APIs to access the [termStore.store](../api-reference/beta/resources/termstore-store.md) |
+
 ### Change notifications
 | **Change type** | **Version**   | **Description**                          |
 | :-------------- | :------------ | :--------------------------------------- |
