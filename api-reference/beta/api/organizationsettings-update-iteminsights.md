@@ -17,7 +17,7 @@ Update [itemInsightsSettings](../resources/iteminsightssettings.md) object.
 
 To learn how to get the properties of the [itemInsightsSettings](../resources/iteminsightssettings.md) object, see [get-iteminsights](organizationsettings-get-iteminsights.md).
 
-To learn how to customize item insights privacy for your organization, see [customize insights privacy](/concepts/customize-item-insights-privacy.md). 
+To learn how to customize item insights privacy for your organization, see [customize insights privacy](/graph/customize-item-insights-privacy.md). 
 
 ## Permissions
 
@@ -25,9 +25,9 @@ One of the following permissions is required to call this API. To learn more, in
 
 |Permission type      | Permissions (from least to most privileged)              |
 |:--------------------|:---------------------------------------------------------|
-|Delegated (work or school account) | Organization.ReadWrite.All |
+|Delegated (work or school account) | User.ReadWrite |
 |Delegated (personal Microsoft account) | Not supported.    |
-|Application | Organization.ReadWrite.All |
+|Application | User.ReadWrite |
 
 >**Note:** Using delegated permissions for this operation requires the signed-in user to have a global administrator role.
 
@@ -35,7 +35,7 @@ One of the following permissions is required to call this API. To learn more, in
 <!-- { "blockType": "ignored" } -->
 
 ```http
-PATCH /organization/settings/itemInsights
+PATCH /organization/{organizationId}/settings/itemInsights
 ```
 
 ## Request headers
@@ -71,7 +71,7 @@ Here is an example request on how admin updates 'disabledForGroup' privacy setti
 }-->
 
 ```http
-PATCH https://graph.microsoft.com/beta/organization/settings/itemInsights
+PATCH https://graph.microsoft.com/beta/organization/{organizationId}/settings/itemInsights
 Content-type: application/json
 
 {
