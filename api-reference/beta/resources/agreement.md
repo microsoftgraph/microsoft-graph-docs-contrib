@@ -45,9 +45,8 @@ Represents a tenant's customizable terms of use agreement that is created and ma
 |:-------------|:------------|:------------|
 |acceptances|[agreementAcceptance](agreementacceptance.md) collection|Read-only. Information about acceptances of this agreement.|
 |files|[agreementFileLocalization](agreementfilelocalization.md) collection| PDFs linked to this agreement. NOTE: This property is in the process of being deprecated. Please use 'file' described below.|
+|file|[agreementFile](agreementfile.md) | PDFs linked to this agreement.|
 
-<!--|file|[agreementFile](agreementfile.md) | PDFs linked to this agreement.|
-}-->
 
 ## JSON representation
 
