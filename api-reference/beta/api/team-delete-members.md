@@ -10,6 +10,8 @@ doc_type: apiPageType
 # Delete members
 Namespace: microsoft.graph
 
+[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
+
 Remove a new [conversationMember](../resources/conversationmember.md) from a [team](../resources/team.md).
 
 ## Permissions
