@@ -944,20 +944,6 @@ For more complex scenarios involving multiple permissions, see [Permission scena
 |:-----------------------------|:-----------------------------------------|:-----------------|:-----------------|
 | _InformationProtectionPolicy.Read.All_ |   Read all published labels and label policies for an organization | Allows an app to read published sensitivity labels and label policy settings for the entire organization or a specific user, without a signed in user. | Yes |
 
-### Example usage
-
-#### Delegated
-
-* _InformationProtectionPolicy.Read_: Read labels available to the signed-in user (`GET /me/informationprotection/policy/labels`)
-* _InformationProtectionPolicy.Read_: Read labels available to the signed-in user (`GET /users/{id | user-principal-name}/informationprotection/policy/labels`)
-
-#### Application
-
-* _InformationProtectionPolicy.Read.All_: Read labels available to a specific user (`GET /users/{id | user-principal-name}/informationprotection/policy/labels`)
-* _InformationProtectionPolicy.Read.All_: To get labels available to the organization (`GET /informationprotection/policy/labels`)
-
-For more complex scenarios involving multiple permissions, see [Permission scenarios](#permission-scenarios).
-
 ---
 
 
