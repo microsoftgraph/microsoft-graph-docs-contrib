@@ -45,7 +45,7 @@ The following table shows the parameters that can be used with this action.
 
 |Parameter|Type|Description|
 |:---|:---|:---|
-|credentials|[synchronizationSecretKeyStringValuePair](../resources/api-reference/beta/api/synchronization-synchronization-acquireaccesstoken.md) collection|Represents a single secret value.|
+|credentials|[synchronizationSecretKeyStringValuePair](../resources/api-reference/beta/api/synchronization-secretkeystringvaluepair.md) collection|Represents a single secret value.|
 
 
 
