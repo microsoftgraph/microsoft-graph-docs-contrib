@@ -742,14 +742,24 @@ items:
             href: api/application-delete-owners.md
         - name: Policies
           items:
-          - name: List assigned policies
-            href: api/policy-list-assigned.md
-          - name: Assign tokenLifetimePolicy
-            href: api/application-post-tokenlifetimepolicies.md
-          - name: List tokenLifetimePolicies
-            href: api/application-list-tokenlifetimepolicies.md
-          - name: Remove tokenLifetimePolicy
-            href: api/application-delete-tokenlifetimepolicies.md
+          - name: Token issuance policy
+            href: resources/tokenissuancepolicy.md
+            items:
+            - name: Assign
+              href: api/application-post-tokenissuancepolicies.md
+            - name: List
+              href: api/application-list-tokenissuancepolicies.md
+            - name: Remove
+              href: api/application-delete-tokenissuancepolicies.md
+          - name: Token lifetime policy
+            href: resources/tokenlifetimepolicy.md
+            items:
+            - name: Assign
+              href: api/application-post-tokenlifetimepolicies.md
+            - name: List
+              href: api/application-list-tokenlifetimepolicies.md
+            - name: Remove
+              href: api/application-delete-tokenlifetimepolicies.md
         - name: Application template
           href: resources/applicationtemplate.md
           items:
@@ -917,29 +927,38 @@ items:
           - name: Claims mapping policy
             href: resources/claimsmappingpolicy.md
             items:
-            - name: Assign claims mapping policies
+            - name: Assign
               href: api/serviceprincipal-post-claimsmappingpolicies.md
-            - name: List claims mapping policies
+            - name: List
               href: api/serviceprincipal-list-claimsmappingpolicies.md
-            - name: Remove claims mapping policies
+            - name: Remove
               href: api/serviceprincipal-delete-claimsmappingpolicies.md
           - name: Home realm discovery policy
             href: resources/homerealmdiscoverypolicy.md
             items:
-            - name: Assign home realm discovery policies
+            - name: Assign
               href: api/serviceprincipal-post-homerealmdiscoverypolicies.md
-            - name: List home realm discovery policies
+            - name: List
               href: api/serviceprincipal-list-homerealmdiscoverypolicies.md
-            - name: Remove home realm discovery policies
+            - name: Remove
               href: api/serviceprincipal-delete-homerealmdiscoverypolicies.md
+          - name: Token issuance policy
+            href: resources/tokenissuancepolicy.md
+            items:
+            - name: Assign
+              href: api/application-post-tokenissuancepolicies.md
+            - name: List
+              href: api/application-list-tokenissuancepolicies.md
+            - name: Remove
+              href: api/application-delete-tokenissuancepolicies.md
           - name: Token lifetime policy
             href: resources/tokenlifetimepolicy.md
             items:
-            - name: Assign token lifetime policies
+            - name: Assign
               href: api/application-post-tokenlifetimepolicies.md
-            - name: List token lifetime policies
+            - name: List
               href: api/application-list-tokenlifetimepolicies.md
-            - name: Remove token lifetime policies
+            - name: Remove
               href: api/application-delete-tokenlifetimepolicies.md
         - name: Single sign on
           items:
@@ -1501,6 +1520,8 @@ items:
             href: api/printer-delete.md
           - name: Get capabilities
             href: api/printer-getcapabilities.md
+          - name: Get task trigger
+            href: api/printtasktrigger-get.md
           - name: List connectors
             href: api/printer-list-connectors.md
           - name: List print jobs
@@ -1509,16 +1530,22 @@ items:
             href: api/printer-post-jobs.md
           - name: List allowed users
             href: api/printer-list-allowedusers.md
-          - name: List allowedGroups
+          - name: List allowed groups
             href: api/printer-list-allowedgroups.md
+          - name: List task triggers
+            href: api/printer-list-tasktriggers.md
           - name: Create allowed group
             href: api/printer-post-allowedgroups.md
           - name: Create allowed user
             href: api/printer-post-allowedusers.md
+          - name: Create task trigger
+            href: api/printer-post-tasktriggers.md
           - name: Delete allowed group
             href: api/printer-delete-allowedgroup.md
           - name: Delete allowed user
             href: api/printer-delete-alloweduser.md
+          - name: Delete task trigger
+            href: api/printer-delete-tasktrigger.md
           - name: Reset defaults
             href: api/printer-resetdefaults.md
         - name: Printer share
@@ -1546,6 +1573,23 @@ items:
             href: api/printershare-post-allowedgroups.md
           - name: Delete allowed group
             href: api/printershare-delete-allowedgroup.md
+        - name: Print task definition
+          href: resources/printtaskdefinition.md
+          items:
+          - name: List
+            href: api/print-list-taskdefinitions.md
+          - name: Create
+            href: api/print-post-taskdefinitions.md
+          - name: Get
+            href: api/printtaskdefinition-get.md
+          - name: Delete
+            href: api/print-delete-taskdefinition.md
+          - name: List tasks
+            href: api/printtaskdefinition-list-tasks.md
+          - name: Get task
+            href: api/printtask-get.md
+          - name: Update task
+            href: api/printtaskdefinition-update-task.md
         - name: Reports
           items:
           - name: Organized by printer
