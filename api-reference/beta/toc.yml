@@ -10957,13 +10957,13 @@ items:
       displayName: Compliance API, Microsoft Graph Compliance API
       items:
       - name: Overview
-        href: resources/compliance-api-overview.md
+        href: resources/complianceapioverview.md
       - name: eDiscovery
         items:
         - name: Overview
-          href: resources/eDiscovery-api-overview.md
+          href: resources/eDiscoveryapioverview.md
         - name: eDiscovery Case
-          href: resources/ediscovery-case.md
+          href: resources/ediscoverycase.md
           items:
           - name: List eDiscovery cases
             href: api/eDiscovery-case-list.md
@@ -10976,7 +10976,7 @@ items:
           - name: Delete eDiscovery case
             href: api/ediscovery-case-delete.md
         - name: eDiscovery review set
-          href: resources/ediscovery-reviewset.md
+          href: resources/ediscoveryreviewset.md
           items:
           - name: List eDiscovery case review sets
             href: api/ediscovery-reviewset-list.md
@@ -10985,7 +10985,7 @@ items:
           - name: Create eDiscovery review set
             href: api/ediscovery-reviewset-create.md
         - name: eDiscovery review set query
-          href: resources/ediscovery-reviewset-query.md
+          href: resources/ediscoveryreviewsetquery.md
           items:
           - name: List eDiscovery review set queries
             href: api/ediscovery-reviewset-query-list.md
@@ -10998,7 +10998,7 @@ items:
           - name: Delete eDiscovery review set query
             href: api/ediscovery-reviewset-query-delete.md
         - name: eDiscovery Case Status
-          href: resources/ediscovery-casestatus-enum.md
+          href: resources/ediscoverycasestatusenum.md
     - name: Security
       displayname: Security API, Microsoft Graph Security API
       items:
