@@ -85,28 +85,24 @@ Content-Type: application/json
 
 {
   "@odata.type": "#microsoft.graph.itemPhone",
-  "id": "e13f7a4d-303c-464f-a6af-80ea18eb74f3",
-  "allowedAudiences": "organization",
-  "inference": null,
-  "createdDateTime": "2020-07-06T06:34:12.2294868Z",
-  "createdBy": {
-    "user": {
-        "id": "efee1b77-fb3b-4f65-99d6-274c11914d12",
-        "displayName": "Innocenty Popov"
-    }
+  "id": "0fb4c1e3-c1e3-0fb4-e3c1-b40fe3c1b40f",
+  "allowedAudiences": "String",
+  "inference": {
+    "@odata.type": "microsoft.graph.inferenceData"
   },
-  "lastModifiedDateTime": "2020-07-08T06:34:12.2294868Z",
+  "createdDateTime": "String (timestamp)",
+  "createdBy": {
+    "@odata.type": "microsoft.graph.identitySet"
+  },
+  "lastModifiedDateTime": "String (timestamp)",
   "lastModifiedBy": {
-    "user": {
-        "id": "efee1b77-fb3b-4f65-99d6-274c11914d12",
-        "displayName": "Innocenty Popov"
-    }
+    "@odata.type": "microsoft.graph.identitySet"
   },
   "source": {
-    "type": "User"
+    "@odata.type": "microsoft.graph.personDataSource"
   },
-  "displayName": "Car Phone",
-  "type": "other",
-  "number": "+7 499 234 56 78"
+  "displayName": "String",
+  "type": "String",
+  "number": "String"
 }
 ```
