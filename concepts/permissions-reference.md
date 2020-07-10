@@ -1870,6 +1870,28 @@ Threat assessment permissions are valid only on work or school accounts.
 
 ---
 
+## TermStore permissions
+
+#### Delegated permissions
+
+|   Permission    |  Display String   |  Description | Admin Consent Required | Microsoft Account supported |
+|:----------------|:------------------|:-------------|:-----------------------|:--------------|
+| _TermStore.Read.All_        | Read items in the termStire | Allows app to read various terms,sets and groups in the termStore | yes  | No |
+| _TermStore.ReadWrite.All_   | Read and write items in the termStore | Allows the app to edit or delete terms,sets or groups in the termStore | Yes  | No |
+
+
+### Remarks
+
+TermStore permissions are valid only on work or school accounts.
+
+### Example usage
+
+#### Delegated
+
+* _TermStore.Read.All_: Read the termstore for the tenant (`GET /v1.0/termStore`)
+* _TermStore.ReadWrite.All_: Create new terms in the termStore (`POST /v1.0/termStore/sets/123/children`)
+
+
 ## User permissions
 
 #### Delegated permissions
