@@ -44,7 +44,7 @@ The following is a JSON representation of the resource.
   "optionalProperties": [
 
   ],
-  "@odata.type": "microsoft.graph.agreementFile"
+  "@odata.type": "microsoft.graph.agreementFileLocalization"
 }-->
 
 ```json
@@ -63,7 +63,7 @@ The following is a JSON representation of the resource.
 <!--
 {
   "type": "#page.annotation",
-  "description": "agreementFile resource",
+  "description": "agreementFileLocalization resource",
   "keywords": "",
   "section": "documentation",
   "tocPath": "",

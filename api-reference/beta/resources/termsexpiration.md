@@ -38,7 +38,7 @@ The following is a JSON representation of termsExpiration.
 
 ```json
 {
-   "startDateTime": "",
+   "startDateTime": "2018-10-01T00:00:00.0000000Z",
    "frequency": ""
 }
 ```

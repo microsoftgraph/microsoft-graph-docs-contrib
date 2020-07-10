@@ -36,7 +36,7 @@ Represents a tenant's customizable terms of use agreement that is created and ma
 |id|String| Read-only.|
 |isPerDeviceAcceptanceRequired|Boolean|This setting enables you to require end users to accept this agreement on every device that they are accessing from. The end user will be required to register their device in Azure AD, if not already done so.|
 |isViewingBeforeAcceptanceRequired|Boolean|Indicates whether the user has to expand the agreement before accepting.|
-|termsExpiration|[termsExpiration](termsExpiration)| Expiration schedule and frequency of agreement for all users. See type definition below.|
+|termsExpiration|[termsExpiration](termsexpiration.md)| Expiration schedule and frequency of agreement for all users. See type definition below.|
 |userReacceptRequiredFrequency|Duration|The duration representing the duration after which the user must re-accept the terms of use. The value is represented in ISO 8601 format for durations.|
 
 
