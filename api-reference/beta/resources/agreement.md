@@ -36,7 +36,7 @@ Represents a tenant's customizable terms of use agreement that is created and ma
 |id|String| Read-only.|
 |isPerDeviceAcceptanceRequired|Boolean|This setting enables you to require end users to accept this agreement on every device that they are accessing from. The end user will be required to register their device in Azure AD, if not already done so.|
 |isViewingBeforeAcceptanceRequired|Boolean|Indicates whether the user has to expand the agreement before accepting.|
-|termsExpiration|termsExpiration| Expiration schedule and frequency of agreement for all users. See type definition below.|
+|termsExpiration|[termsExpiration](termsExpiration)| Expiration schedule and frequency of agreement for all users. See type definition below.|
 |userReacceptRequiredFrequency|Duration|The duration representing the duration after which the user must re-accept the terms of use. The value is represented in ISO 8601 format for durations.|
 
 
@@ -85,12 +85,3 @@ The following is a JSON representation of the resource.
   "suppressions": []
 }
 -->
-
-## termsExpiration resource type
-
-The **termsExpiration** resource type provides additional settings when setting the scheduled expiration of the agreement. This type has the following properties. 
-
-| Property                     | Type                      | Description |
-| :--------------------------- | :------------------------ | :---------- |
-| `startDateTime`|`DateTimeOffset`                | The DateTime when the agreement is set to expire for all users. The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 would look like this: '2014-01-01T00:00:00Z'.|
-| `frequency`|`Duration`       | This represents the frequency at which the terms will expire, after its first expiration as set in 'startDateTime'. The value is represented in ISO 8601 format for durations.|
