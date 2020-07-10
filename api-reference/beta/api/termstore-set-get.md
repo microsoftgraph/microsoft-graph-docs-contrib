@@ -1,7 +1,7 @@
 ---
 title: "Get set"
 description: "Read the properties and relationships of a set object."
-author: mpathak123
+author: mohitpcad
 ms.author: mopathak
 localization_priority: Normal
 ms.prod: "sharepoint-taxonomy"
