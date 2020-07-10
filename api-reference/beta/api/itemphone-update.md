@@ -32,8 +32,8 @@ One of the following permissions is required to call this API. To learn more, in
 }
 -->
 ``` http
-PATCH /me/profile/phones/{itemPhoneId}
-PATCH /user/{userId}/profile/phones/{itemPhoneId}
+PATCH /me/profile/phones/{id}
+PATCH /user/{userId}/profile/phones/{id}
 ```
 
 ## Request headers
@@ -73,7 +73,7 @@ If successful, this method returns a `200 OK` response code and an updated [item
 }
 -->
 ``` http
-PATCH https://graph.microsoft.com/beta/user/{userId}/profile/phones/{itemPhoneId}
+PATCH https://graph.microsoft.com/beta/user/{userId}/profile/phones/{id}
 Content-Type: application/json
 Content-length: 382
 
@@ -94,7 +94,6 @@ Content-length: 382
   "number": "String"
 }
 ```
-
 
 ### Response
 **Note:** The response object shown here might be shortened for readability.
