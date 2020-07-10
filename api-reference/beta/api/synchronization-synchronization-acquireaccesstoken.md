@@ -45,7 +45,7 @@ The following table shows the parameters that can be used with this action.
 
 |Parameter|Type|Description|
 |:---|:---|:---|
-|credentials|[synchronizationSecretKeyStringValuePair](../resources/synchronization-synchronizationsecretkeystringvaluepair.md) collection|Represents a single secret value.|
+|credentials|[synchronizationSecretKeyStringValuePair](../resources/api-reference/beta/api/synchronization-synchronization-acquireaccesstoken.md) collection|Represents a single secret value.|
 
 
 
@@ -65,6 +65,7 @@ If successful, this action returns a `204 No Content` response code.
 POST https://graph.microsoft.com/beta/applications/{applicationsId}/synchronization/acquireAccessToken
 Content-Type: application/json
 Content-length: 123
+
 {
   "credentials": [
     {
