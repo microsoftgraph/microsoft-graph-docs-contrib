@@ -1,19 +1,21 @@
 ---
-title: Get shares
-description: Retrieve a list of printer shares.
+title: List taskTriggers
+description: Retrieve a list of task triggers associated with the printer.
 author: braedenp-msft
 localization_priority: Normal
 ms.prod: universal-print
 doc_type: apiPageType
 ---
 
-# List shares
+# List taskTriggers
 
 Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Retrieve a list of **printerShares**.
+Retrieve a list of [task triggers](../resources/printtasktrigger.md) associated with the [printer](../resources/printer.md). The list of task triggers defines which tasks will be triggered as a result of events that occur during printing.
+
+For details about how to use this API to add pull printing support to Universal Print, see [Extending Universal Print to support pull printing](/graph/universal-print-concept-overview#extending-universal-print-to-support-pull-printing).
 
 ## Permissions
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
@@ -22,23 +24,21 @@ In addition to the following permissions, the user's tenant must have an active 
 
 |Permission type | Permissions (from least to most privileged) |
 |:---------------|:--------------------------------------------|
-|Delegated (work or school account)| Users.Read.All |
+|Delegated (work or school account)| Printer.Read.All, Printer.ReadWrite.All, Printer.FullControl.All |
 |Delegated (personal Microsoft account)|Not Supported.|
-|Application|Not Supported.|
+|Application| Not supported. |
 
 ## HTTP request
 <!-- { "blockType": "ignored" } -->
 ```http
-GET /print/shares
+GET /print/printers/{id}/taskTriggers
 ```
 
 ## Optional query parameters
 This method supports some of the OData query parameters to help customize the response. For general information, see [OData query parameters](/graph/query-parameters).
 
-To see a list of each printer share's capabilities, include the optional `$select=capabilities` query parameter.
-
 ### Exceptions
-Some operators are not supported: `$count`, `$orderby`, `$search`.
+Some operators are not supported: `$count`, `$format`, `$search`, `$select`, `$skip`, `$top`.
 
 ## Request headers
 | Name      |Description|
@@ -48,54 +48,41 @@ Some operators are not supported: `$count`, `$orderby`, `$search`.
 ## Request body
 Do not supply a request body for this method.
 ## Response
-If successful, this method returns a `200 OK` response code and a collection of [printerShare](../resources/printershare.md) objects in the response body.
+If successful, this method returns a `200 OK` response code and collection of [printTaskTrigger](../resources/printtasktrigger.md) objects in the response body.
 ## Example
-##### Request
+### Request
 The following is an example of the request.
 
-# [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
-  "name": "get_shares"
+  "name": "get_printer_tasktriggers"
 }-->
 ```msgraph-interactive
-GET https://graph.microsoft.com/beta/print/shares
+GET https://graph.microsoft.com/beta/print/printers/{id}/taskTriggers
 ```
-# [C#](#tab/csharp)
-[!INCLUDE [sample-code](../includes/snippets/csharp/get-shares-csharp-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [JavaScript](#tab/javascript)
-[!INCLUDE [sample-code](../includes/snippets/javascript/get-shares-javascript-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [Objective-C](#tab/objc)
-[!INCLUDE [sample-code](../includes/snippets/objc/get-shares-objc-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
 
-##### Response
+### Response
 The following is an example of the response.
 >**Note:** The response object shown here might be shortened for readability. All the properties will be returned from an actual call.
 <!-- {
   "blockType": "response",
   "truncated": true,
-  "@odata.type": "microsoft.graph.printerShare",
+  "@odata.type": "microsoft.graph.printTaskTrigger",
   "isCollection": true
 } -->
 ```http
 HTTP/1.1 200 OK
 Content-type: application/json
-Content-length: 269
+Content-length: 254
 
 {
-  "@odata.context": "https://graph.microsoft.com/beta/$metadata#print/shares",
+  "@odata.context": "https://graph.microsoft.com/beta/$metadata#print/printers('fcc7fe6a-5ba7-4059-8017-702f3a41c8a4')/taskTriggers",
   "value": [
     {
-      "id": "016b5565-3bbf-4067-b9ff-4d68167eb1a6",
-      "name": "PrinterShareName",
-      "createdDateTime": "2020-02-04T00:00:00.0000000Z"
+      "id": "b6a843ca-e60e-4e20-a222-a58d85eead6d",
+      "event": "jobStarted"
     }
   ]
 }
@@ -105,7 +92,7 @@ Content-length: 269
 2015-10-25 14:57:30 UTC -->
 <!-- {
   "type": "#page.annotation",
-  "description": "List shares",
+  "description": "List taskTriggers",
   "keywords": "",
   "section": "documentation",
   "tocPath": ""
