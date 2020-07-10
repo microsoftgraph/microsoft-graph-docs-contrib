@@ -11,7 +11,7 @@ doc_type: resourcePageType
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Relationships between a user and items such as OneDrive for Business documents, calculated using advanced analytics and machine learning techniques. You can, for example, identify OneDrive for Business documents trending around users.
+Relationships between a user and items such as OneDrive for Business documents, calculated using advanced analytics and machine learning techniques. You can, for example, identify OneDrive for Business documents trending around users. Derived from [officeGraphInsights](officegraphinsights.md).
 
 Insights are returned by the following APIs:
 
@@ -23,7 +23,7 @@ Each insight is returned with a `resourceVisualization` and `resourceReference` 
 
 ### Item insights limitations
 
-Some item insights can be disabled for members of a specific security AAD group or for entire organization by [updating](../api/organizationsettings-update.md) the [organizationsettings](organizationsettings.md) resource. For more details, see [customization of item insights](/concepts/customize-item-insights-privacy.md). 
+Some item insights can be disabled for members of a specific Azure Active Directory group or for entire organization by [updating](../api/organizationsettings-update-iteminsights.md) the [itemInsightsSettings](iteminsightssettings.md) resource. For more details, see [customize insights privacy](/concepts/customize-item-insights-privacy.md). 
 
 ## Relationships
 
@@ -40,7 +40,7 @@ Here is a JSON representation of the resource
 <!-- {
   "blockType": "resource",
   "keyProperty":"id",
-  "baseType":"microsoft.graph.entity",
+  "baseType":"microsoft.graph.officeGraphInsights",
   "optionalProperties": [
     "trending",
     "used",
