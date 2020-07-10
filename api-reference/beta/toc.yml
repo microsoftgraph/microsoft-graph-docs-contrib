@@ -993,6 +993,8 @@ items:
             href: api/synchronization-synchronizationjob-delete.md
           - name: Provision on demand
             href: api/synchronization-synchronizationjob-provision-on-demand.md
+          - name: Validate credentials
+            href: api/synchronization-synchronizationjob-validatecredentials.md
         - name: Schema
           href: resources/synchronization-synchronizationschema.md
           items:
