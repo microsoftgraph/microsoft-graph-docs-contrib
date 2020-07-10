@@ -67,7 +67,7 @@ If successful, this method returns a `200 OK` response code and an [itemPhone](.
 }
 -->
 ``` http
-GET https://graph.microsoft.com/beta/user/{userId}/profile/phones/{id}
+GET https://graph.microsoft.com/beta/me/profile/phones/{id}
 ```
 
 
@@ -84,6 +84,7 @@ HTTP/1.1 200 OK
 Content-Type: application/json
 
 {
+  "@odata.type": "#microsoft.graph.itemPhone",
   "id": "e13f7a4d-303c-464f-a6af-80ea18eb74f3",
   "allowedAudiences": "organization",
   "inference": null,
