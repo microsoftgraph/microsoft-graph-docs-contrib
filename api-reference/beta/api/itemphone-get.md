@@ -84,30 +84,28 @@ HTTP/1.1 200 OK
 Content-Type: application/json
 
 {
-  "value": {
-    "id": "e13f7a4d-303c-464f-a6af-80ea18eb74f3",
-    "allowedAudiences": "organization",
-    "inference": null,
-    "createdDateTime": "2020-07-06T06:34:12.2294868Z",
-    "createdBy": {
-      "user": {
-          "id": "efee1b77-fb3b-4f65-99d6-274c11914d12",
-          "displayName": "Innocenty Popov"
-      }
-    },
-    "lastModifiedDateTime": "2020-07-08T06:34:12.2294868Z",
-    "lastModifiedBy": {
-      "user": {
-          "id": "efee1b77-fb3b-4f65-99d6-274c11914d12",
-          "displayName": "Innocenty Popov"
-      }
-    },
-    "source": {
-      "type": "User"
-    },
-    "displayName": "Car Phone",
-    "type": "other",
-    "number": "+7 499 234 56 78"
-  }
+  "id": "e13f7a4d-303c-464f-a6af-80ea18eb74f3",
+  "allowedAudiences": "organization",
+  "inference": null,
+  "createdDateTime": "2020-07-06T06:34:12.2294868Z",
+  "createdBy": {
+    "user": {
+        "id": "efee1b77-fb3b-4f65-99d6-274c11914d12",
+        "displayName": "Innocenty Popov"
+    }
+  },
+  "lastModifiedDateTime": "2020-07-08T06:34:12.2294868Z",
+  "lastModifiedBy": {
+    "user": {
+        "id": "efee1b77-fb3b-4f65-99d6-274c11914d12",
+        "displayName": "Innocenty Popov"
+    }
+  },
+  "source": {
+    "type": "User"
+  },
+  "displayName": "Car Phone",
+  "type": "other",
+  "number": "+7 499 234 56 78"
 }
 ```
