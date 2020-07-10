@@ -13,7 +13,7 @@ Namespace: microsoft.graph
 Acquire an OAuth Access token to authorize the Azure AD provisioning service to provision users into an application
 
 ## Permissions
-One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/concepts/permissions-reference.md).
+One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
 
 |Permission type|Permissions (from most to least privileged)|
 |:---|:---|
