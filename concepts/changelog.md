@@ -37,6 +37,7 @@ For a summary of the value of these API changes, as well as recent tools, compon
 | Addition | beta | Added the [organizationSettings](/graph/api/resources/organizationsettings?view=graph-rest-beta) entity.  |
 | Addition | beta | Added the **profileCardProperties** navigation property to the **organizationSettings** entity. |
 | Addition | beta | Added the **profileCardProperty** entity and the following operations: <br/> [List](/graph/api/organizationsettings-list-profilecardproperties) <br/> [Create](/graph/api/organizationsettings-post-profilecardproperties) <br/> [Get profileCardProperty](/graph/api/profilecardproperty-get?view=graph-rest-beta) entity. <br/> [Update profileCardProperty](/graph/api/profilecardproperty-update?view=graph-rest-beta) <br/> [Delete](/graph/api/profilecardproperty-delete) |
+| Addition | beta | Added the **id** property to the [synchronizationSchema](/graph/api/resources/synchronization-synchronizationschema?view=graph-rest-beta) entity. |
 
 ### Identity and access (Azure AD) | Conditional access
 
