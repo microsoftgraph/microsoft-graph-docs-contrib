@@ -172,6 +172,16 @@ A maximum of 3000 messages per app per day can be sent to a given channel.
 See also [Microsoft Teams limits](/graph/api/resources/teams-api-overview#microsoft-teams-limits) 
 and [polling requirements](/graph/api/resources/teams-api-overview#polling-requirements).
 
+### Identity protection and conditional access service limits
+
+| Request type | Limit per tenant |
+| ------------ | ------- |
+| Any | 1 request per second |
+
+The preceding limits apply to the following resources:  
+riskDetection, riskyUser, riskyUserHistoryItem, namedLocation, countryNamedLocation, ipNamedLocation, conditionalAccessPolicy.
+
+> **Note:** at the moment the resources listed above do not return a `Retry-After` header on `429 Too Many Requests` responses.
 ### Insights service limits
 
 The following limits apply to any request on `me/insights` or `users/{id}/insights`.
@@ -201,7 +211,6 @@ The following limits apply to any request on `/invitations`.
 | Any operation             | 150 requests per 5 seconds   |
 
 <!-- { "blockType": "throttlinggenstart" } -->
-
 ### Education service limits
 
 [!INCLUDE [Education rostering APIS throttling documentation](../includes/throttling-education-rostering-apis.md)]
