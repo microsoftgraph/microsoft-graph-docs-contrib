@@ -92,7 +92,15 @@ Content-Type: application/json
   },
   "createdDateTime": "String (timestamp)",
   "createdBy": {
-    "@odata.type": "microsoft.graph.identitySet"
+    "application": {
+      "@odata.type": "microsoft.graph.identity"
+    },
+    "device": {
+      "@odata.type": "microsoft.graph.identity"
+    },
+    "user": {
+      "@odata.type": "microsoft.graph.identity"
+    }
   },
   "lastModifiedDateTime": "String (timestamp)",
   "lastModifiedBy": {
