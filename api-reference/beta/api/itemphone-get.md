@@ -90,7 +90,7 @@ Content-Type: application/json
   "inference": {
     "@odata.type": "microsoft.graph.inferenceData"
   },
-  "createdDateTime": "String (timestamp)",
+  "createdDateTime": "2020-07-06T06:34:12.2294868Z",
   "createdBy": {
     "application": {
       "@odata.type": "microsoft.graph.identity"
@@ -102,12 +102,17 @@ Content-Type: application/json
       "@odata.type": "microsoft.graph.identity"
     }
   },
-  "lastModifiedDateTime": "String (timestamp)",
+  "lastModifiedDateTime": "2020-07-06T06:34:12.2294868Z",
   "lastModifiedBy": {
-    "@odata.type": "microsoft.graph.identitySet"
-  },
-  "source": {
-    "@odata.type": "microsoft.graph.personDataSource"
+    "application": {
+      "@odata.type": "microsoft.graph.identity"
+    },
+    "device": {
+      "@odata.type": "microsoft.graph.identity"
+    },
+    "user": {
+      "@odata.type": "microsoft.graph.identity"
+    }
   },
   "displayName": "Car Phone",
   "type": "other",
