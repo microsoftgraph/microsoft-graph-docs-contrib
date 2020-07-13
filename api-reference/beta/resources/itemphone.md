@@ -78,8 +78,8 @@ The following is a JSON representation of the resource.
   "source": {
     "@odata.type": "microsoft.graph.personDataSource"
   },
-  "displayName": "String",
-  "type": "String",
-  "number": "String"
+  "displayName": "Car Phone",
+  "type": "other",
+  "number": "+7 499 342 22 13"
 }
 ```
