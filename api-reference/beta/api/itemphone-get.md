@@ -87,9 +87,7 @@ Content-Type: application/json
   "@odata.type": "#microsoft.graph.itemPhone",
   "id": "0fb4c1e3-c1e3-0fb4-e3c1-b40fe3c1b40f",
   "allowedAudiences": "organization",
-  "inference": {
-    "@odata.type": "microsoft.graph.inferenceData"
-  },
+  "inference": null,
   "createdDateTime": "2020-07-06T06:34:12.2294868Z",
   "createdBy": {
     "application": {
@@ -99,7 +97,9 @@ Content-Type: application/json
       "@odata.type": "microsoft.graph.identity"
     },
     "user": {
-      "@odata.type": "microsoft.graph.identity"
+      "@odata.type": "#microsoft.graph.identity",
+      "displayName": "String",
+      "id": "String (identifier)"
     }
   },
   "lastModifiedDateTime": "2020-07-06T06:34:12.2294868Z",
@@ -111,7 +111,9 @@ Content-Type: application/json
       "@odata.type": "microsoft.graph.identity"
     },
     "user": {
-      "@odata.type": "microsoft.graph.identity"
+      "@odata.type": "#microsoft.graph.identity",
+      "displayName": "String",
+      "id": "String (identifier)"
     }
   },
   "displayName": "Car Phone",
