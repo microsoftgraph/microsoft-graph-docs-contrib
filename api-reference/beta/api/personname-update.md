@@ -45,20 +45,17 @@ PATCH /users/{id | userPrincipalName}/profile/names/{id}
 
 In the request body, supply the values for relevant fields that should be updated. Existing properties that are not included in the request body will maintain their previous values or be recalculated based on changes to other property values. For best performance, don't include existing values that haven't changed.
 
+The following table shows the properties that are possible to update within an existing [personName](../resources/personname.md) object in a user's [profile](../resources/profile.md).
+
 |Property|Type|Description|
 |:---|:---|:---|
 |allowedAudiences|String|The audiences that are able to see the values contained within the entity. Inherited from [itemFacet](../resources/itemfacet.md). Possible values are: `me`, `family`, `contacts`, `groupMembers`, `organization`, `federatedOrganizations`, `everyone`, `unknownFutureValue`.|
-|createdBy|[identitySet](../resources/identityset.md)|Provides the identifier of the user and/or application that created the entity. Inherited from [itemFacet](../resources/itemfacet.md)|
-|createdDateTime|DateTimeOffset|Provides the dateTimeOffset for when the entity was created. Inherited from [itemFacet](../resources/itemfacet.md)|
 |displayName|String|Provides an ordered rendering of firstName and lastName depending on the locale of the user or their device.|
 |first|String|First name of the user.|
-|id|String|Identifier used for individually addressing the entity. Inherited from [entity](../resources/entity.md)|
 |inference|[inferenceData](../resources/inferencedata.md)|Contains inference detail if the entity is inferred by the creating or modifying application. Inherited from [itemFacet](../resources/itemfacet.md)|
 |initials|String|Initials of the user.|
 |languageTag|String|Contains the name for the language (en-US, no-NB, en-AU) following IETF BCP47 format.   |
 |last|String|Last name of the user.|
-|lastModifiedBy|[identitySet](../resources/identityset.md)|Provides the identifier of the user and/or application that last modified the entity. Inherited from [itemFacet](../resources/itemfacet.md)|
-|lastModifiedDateTime|DateTimeOffset|Provides the dateTimeOffset for when the entity was created. Inherited from [itemFacet](../resources/itemfacet.md)|
 |maiden|String|Maiden name of the user. |
 |middle|String|Middle name of the user.|
 |nickname|String|Nickname of the user.|
@@ -123,25 +120,26 @@ HTTP/1.1 200 OK
 Content-type: application/json
 
 {
-  "id": "e13f7a4d-303c-464f-a6af-80ea18eb74f3",
+  "id": "0fb4c1e3-c1e3-0fb4-e3c1-b40fe3c1b40f",
   "allowedAudiences": "organization",
   "inference": null,
   "createdDateTime": "2020-07-06T06:34:12.2294868Z",
   "createdBy": {
+    "application": null,
+    "device": null,
     "user": {
-        "id": "efee1b77-fb3b-4f65-99d6-274c11914d12",
-        "displayName": "Innocenty Popov"
+      "displayName": "Innocenty Popov",
+      "id": "db789417-4ccb-41d1-a0a9-47b01a09ea49"
     }
   },
-  "lastModifiedDateTime": "2020-07-08T06:34:12.2294868Z",
+  "lastModifiedDateTime": "2020-07-06T06:34:12.2294868Z",
   "lastModifiedBy": {
+    "application": null,
+    "device": null,
     "user": {
-        "id": "efee1b77-fb3b-4f65-99d6-274c11914d12",
-        "displayName": "Innocenty Popov"
+      "displayName": "Innocenty Popov",
+      "id": "db789417-4ccb-41d1-a0a9-47b01a09ea49"
     }
-  },
-  "source": {
-    "type": "User"
   },
   "displayName": "Innocenty Popov",
   "first": "Innocenty",
@@ -162,13 +160,3 @@ Content-type: application/json
   }
 }
 ```
-
-<!-- uuid: 16cd6b66-4b1a-43a1-adaf-3a886856ed98
-2019-02-04 14:57:30 UTC -->
-<!-- {
-  "type": "#page.annotation",
-  "description": "Update personname",
-  "keywords": "",
-  "section": "documentation",
-  "tocPath": ""
-}-->

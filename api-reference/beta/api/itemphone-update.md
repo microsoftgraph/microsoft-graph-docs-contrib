@@ -43,7 +43,8 @@ PATCH /user/{userId}/profile/phones/{id}
 |Content-Type|application/json. Required.|
 
 ## Request body
-In the request body, supply a JSON representation of the [itemPhone](../resources/itemphone.md) object.
+
+In the request body, supply the values for relevant fields that should be updated. Existing properties that are not included in the request body will maintain their previous values or be recalculated based on changes to other property values. For best performance, don't include existing values that haven't changed.
 
 The following table shows the properties that are possible to set when you update an [itemPhone](../resources/itemphone.md) object in a users profile.
 

@@ -102,25 +102,26 @@ Content-type: application/json
 {
   "value": [
     {
-      "id": "e13f7a4d-303c-464f-a6af-80ea18eb74f3",
+      "id": "0fb4c1e3-c1e3-0fb4-e3c1-b40fe3c1b40f",
       "allowedAudiences": "organization",
       "inference": null,
       "createdDateTime": "2020-07-06T06:34:12.2294868Z",
       "createdBy": {
+        "application": null,
+        "device": null,
         "user": {
-            "id": "efee1b77-fb3b-4f65-99d6-274c11914d12",
-            "displayName": "Innocenty Popov"
+          "displayName": "Innocenty Popov",
+          "id": "db789417-4ccb-41d1-a0a9-47b01a09ea49"
         }
       },
-      "lastModifiedDateTime": "2020-07-08T06:34:12.2294868Z",
+      "lastModifiedDateTime": "2020-07-06T06:34:12.2294868Z",
       "lastModifiedBy": {
+        "application": null,
+        "device": null,
         "user": {
-            "id": "efee1b77-fb3b-4f65-99d6-274c11914d12",
-            "displayName": "Innocenty Popov"
+          "displayName": "Innocenty Popov",
+          "id": "db789417-4ccb-41d1-a0a9-47b01a09ea49"
         }
-      },
-      "source": {
-        "type": "User"
       },
       "displayName": "Innocenty Popov",
       "first": "Innocenty",
@@ -143,13 +144,3 @@ Content-type: application/json
   ]
 }
 ```
-
-<!-- uuid: 16cd6b66-4b1a-43a1-adaf-3a886856ed98
-2019-02-04 14:57:30 UTC -->
-<!-- {
-  "type": "#page.annotation",
-  "description": "List names",
-  "keywords": "",
-  "section": "documentation",
-  "tocPath": ""
-}-->
