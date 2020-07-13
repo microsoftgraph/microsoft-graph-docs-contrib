@@ -33,6 +33,14 @@ Namespace: microsoft.graph
 |main|
 |other|
 
+### anniversaryType values 
+
+|Member|
+|:---|
+|birthday|
+|wedding|
+|unknownFutureValue|
+
 ### attachmentType values
 
 | Member

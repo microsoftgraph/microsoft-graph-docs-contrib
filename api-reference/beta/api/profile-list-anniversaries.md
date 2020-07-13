@@ -125,7 +125,7 @@ Content-Type: application/json
         }
       },
       "type": "birthday",
-      "date": "1980-01-08"
+      "date": "80-01-08"
     }
   ]
 }
