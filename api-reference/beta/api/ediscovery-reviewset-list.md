@@ -69,35 +69,36 @@ The following is an example of the response.
 } -->
 
 ```http
-GET https://graph.microsoft.com/beta/compliance/ediscovery/cases('6f65a8e4-c6a0-4cff-8a81-c9ab5df7290d')/reviewSets
-
 HTTP/1.1 200 OK
-[
-  "@odata.context": "https://graph.microsoft.com/beta/compliance/ediscovery/$metadata#cases('6f65a8e4-c6a0-4cff-8a81-c9ab5df7290d')/reviewSets",
-  "@odata.nextLink": https://graph.microsoft.com/beta/compliance/ediscovery/cases('6f65a8e4-c6a0-4cff-8a81-c9ab5df7290d')/reviewSets?$skipToken=<encodedPageToken>,
-  {
-      "id": "f6a91542-4ce7-4712-b275-c29545dd8507",
-      "displayName": "My Reviewset 1",
-      "createdBy": {
-          "user": {
-              "id": "efee1b77-fb3b-4f65-99d6-274c11914d12",
-              "displayName": "eDiscovery admin"
-          }
-      },
-      "createdDateTime": "2020-01-16T11:58:27.1408174Z"
-  },
-  {
-      "id": "0d78ec4a-aa91-41ea-8da8-d68b030c168f",
-      "displayName": "My Reviewset 2",
-      "createdBy": {
-          "user": {
-              "id": "efee1b77-fb3b-4f65-99d6-274c11914d12",
-              "displayName": "eDiscovery admin"
-          }
-      },
-      "createdDateTime": "2020-01-16T12:03:32.2038960Z"
-  }
-]
+
+{
+    "@odata.context": "https://graph.microsoft.com/beta/$metadata#cases",
+    "@odata.nextLink": "https://graph.microsoft.com/beta/compliance/ediscovery/cases?$skiptoken=<encodedPageToken>",
+    "value": [
+        {
+            "id": "f6a91542-4ce7-4712-b275-c29545dd8507",
+            "displayName": "My Reviewset 1",
+            "createdBy": {
+                "user": {
+                    "id": "efee1b77-fb3b-4f65-99d6-274c11914d12",
+                    "displayName": "eDiscovery admin"
+                }
+            },
+            "createdDateTime": "2020-01-16T11:58:27.1408174Z"
+        },
+        {
+            "id": "0d78ec4a-aa91-41ea-8da8-d68b030c168f",
+            "displayName": "My Reviewset 2",
+            "createdBy": {
+                "user": {
+                    "id": "efee1b77-fb3b-4f65-99d6-274c11914d12",
+                    "displayName": "eDiscovery admin"
+                }
+            },
+            "createdDateTime": "2020-01-16T12:03:32.2038960Z"
+        }
+    ]
+}
 ```
 
 <!-- uuid: 16cd6b66-4b1a-43a1-adaf-3a886856ed98

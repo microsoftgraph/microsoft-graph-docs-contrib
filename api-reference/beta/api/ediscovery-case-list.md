@@ -80,56 +80,58 @@ The following is an example of the response.
 HTTP/1.1 200 OK
 Content-type: application/json
 
-"@odata.context": "https://graph.microsoft.com/beta/compliance/ediscovery/$metadata#cases",
-"value": [
-    {
-        "id": "061b9a92-8926-4bd9-b41d-abf35edc7583",
-        "displayName": "My Case 1",
-        "description": "",
-        "createdBy": {
-            "user": {
-                "id": "efee1b77-fb3b-4f65-99d6-274c11914d12",
-                "displayName": "eDiscovery admin"
-            }
+{
+    "@odata.context": "https://graph.microsoft.com/beta/$metadata#cases",
+    "odata.nextLink":"https://graph.microsoft.com/beta/compliance/ediscovery/cases?$skipToken=<encodedPageToken>"
+    "value": [
+        {
+            "id": "061b9a92-8926-4bd9-b41d-abf35edc7583",
+            "displayName": "My Case 1",
+            "description": "",
+            "createdBy": {
+                "user": {
+                    "id": "efee1b77-fb3b-4f65-99d6-274c11914d12",
+                    "displayName": "eDiscovery admin"
+                }
+            },
+            "createdDateTime": "2020-02-20T22:42:28.5505500Z",
+            "lastModifiedBy": {
+                "user": {
+                    "id": "efee1b77-fb3b-4f65-99d6-274c11914d12",
+                    "displayName": "eDiscovery admin"
+                }
+            },
+            "lastModifiedDateTime": "2020-02-20T22:42:28.5505500Z",
+            "status": "active",
+            "closedBy": null,
+            "closedDateTime": null,
+            "externalId": ""
         },
-        "createdDateTime": "2020-02-20T22:42:28.5505500Z",
-        "lastModifiedBy": {
-            "user": {
-                "id": "efee1b77-fb3b-4f65-99d6-274c11914d12",
-                "displayName": "eDiscovery admin"
-            }
-        },
-        "lastModifiedDateTime": "2020-02-20T22:42:28.5505500Z",
-        "status": "active",
-        "closedBy": null,
-        "closedDateTime": null,
-        "externalId": ""
-    },
-    {
-        "id": "b956a1b5-6b74-47db-af83-97d1fdad4ddc",
-        "displayName": "My Case 2",
-        "description": "",
-        "createdBy": {
-            "user": {
-                "id": "efee1b77-fb3b-4f65-99d6-274c11914d12",
-                "displayName": "eDiscovery admin"
-            }
-        },
-        "createdDateTime": "2020-02-18T22:42:28.5505500Z",
-        "lastModifiedBy": {
-            "user": {
-                "id": "efee1b77-fb3b-4f65-99d6-274c11914d12",
-                "displayName": "eDiscovery admin"
-            }
-        },
-        "lastModifiedDateTime": "2020-02-18T22:42:28.5505500Z",
-        "status": "active",
-        "closedBy": null,
-        "closedDateTime": null,
-        "externalId": ""
-    }
-]
-"odata.nextLink":"https://graph.microsoft.com/beta/compliance/ediscovery/cases?$skipToken=<encodedPageToken>"
+        {
+            "id": "b956a1b5-6b74-47db-af83-97d1fdad4ddc",
+            "displayName": "My Case 2",
+            "description": "",
+            "createdBy": {
+                "user": {
+                    "id": "efee1b77-fb3b-4f65-99d6-274c11914d12",
+                    "displayName": "eDiscovery admin"
+                }
+            },
+            "createdDateTime": "2020-02-18T22:42:28.5505500Z",
+            "lastModifiedBy": {
+                "user": {
+                    "id": "efee1b77-fb3b-4f65-99d6-274c11914d12",
+                    "displayName": "eDiscovery admin"
+                }
+            },
+            "lastModifiedDateTime": "2020-02-18T22:42:28.5505500Z",
+            "status": "active",
+            "closedBy": null,
+            "closedDateTime": null,
+            "externalId": ""
+        }
+    ]
+}
 ```
 
 <!-- uuid: 16cd6b66-4b1a-43a1-adaf-3a886856ed98
