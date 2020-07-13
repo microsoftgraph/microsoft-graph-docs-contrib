@@ -57,7 +57,7 @@ The following is a JSON representation of the resource.
 ``` json
 {
   "@odata.type": "#microsoft.graph.itemEmail",
-  "id": "String (identifier)",
+  "id": "0f30bf5d-bf5d-0f30-5dbf-300f5dbf300f",
   "allowedAudiences": "String",
   "inference": {
     "@odata.type": "microsoft.graph.inferenceData"
@@ -73,10 +73,8 @@ The following is a JSON representation of the resource.
   "source": {
     "@odata.type": "microsoft.graph.personDataSource"
   },
-  "address": "String",
-  "displayName": "String",
-  "type": "String"
+  "address": "Innocenty.Popov@adventureworks.com",
+  "displayName": "Business Email",
+  "type": "work"
 }
 ```
-
-

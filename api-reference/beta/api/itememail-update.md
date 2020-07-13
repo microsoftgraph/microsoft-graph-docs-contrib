@@ -92,9 +92,9 @@ Content-length: 383
   "source": {
     "@odata.type": "microsoft.graph.personDataSource"
   },
-  "address": "String",
-  "displayName": "String",
-  "type": "String"
+  "address": "Innocenty.Popov@adventureworks.com",
+  "displayName": "Business Email",
+  "type": "work"
 }
 ```
 
@@ -129,10 +129,8 @@ Content-Type: application/json
   "source": {
     "@odata.type": "microsoft.graph.personDataSource"
   },
-  "address": "String",
-  "displayName": "String",
-  "type": "String"
+  "address": "Innocenty.Popov@adventureworks.com",
+  "displayName": "Business Email",
+  "type": "work"
 }
 ```
-
-
