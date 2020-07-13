@@ -86,7 +86,7 @@ Content-Type: application/json
 {
   "@odata.type": "#microsoft.graph.itemPhone",
   "id": "0fb4c1e3-c1e3-0fb4-e3c1-b40fe3c1b40f",
-  "allowedAudiences": "String",
+  "allowedAudiences": "organization",
   "inference": {
     "@odata.type": "microsoft.graph.inferenceData"
   },
@@ -101,8 +101,8 @@ Content-Type: application/json
   "source": {
     "@odata.type": "microsoft.graph.personDataSource"
   },
-  "displayName": "String",
-  "type": "String",
-  "number": "String"
+  "displayName": "Car Phone",
+  "type": "other",
+  "number": "+7 499 342 22 13"
 }
 ```

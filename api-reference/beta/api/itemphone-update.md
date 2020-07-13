@@ -78,20 +78,7 @@ Content-Type: application/json
 Content-length: 382
 
 {
-  "@odata.type": "#microsoft.graph.itemPhone",
-  "allowedAudiences": "String",
-  "inference": {
-    "@odata.type": "microsoft.graph.inferenceData"
-  },
-  "createdBy": {
-    "@odata.type": "microsoft.graph.identitySet"
-  },
-  "source": {
-    "@odata.type": "microsoft.graph.personDataSource"
-  },
-  "displayName": "String",
-  "type": "String",
-  "number": "String"
+  "displayName": "Car Phone"
 }
 ```
 
@@ -125,8 +112,8 @@ Content-Type: application/json
   "source": {
     "@odata.type": "microsoft.graph.personDataSource"
   },
-  "displayName": "String",
-  "type": "String",
-  "number": "String"
+  "displayName": "Car Phone",
+  "type": "other",
+  "number": "+7 499 342 22 13"
 }
 ```
