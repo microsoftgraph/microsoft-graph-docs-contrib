@@ -165,6 +165,8 @@ POST https://graph.microsoft.com/v1.0/servicePrincipals
 
 > **Note:** you could get an access denied running this query. In this case select the gear icon next to your account name in the top left corner. Then select **Select Permissions** and search for **Application.ReadWrite.All**. Check the permission and select **Consent**. After consenting to this new permission, run the request again.
 
+> **Note:** the API describe above only works with a school or work account, not with a personnal account, make sure you are signed-in with an account on your domain.
+
 Alternatively, you can use this [Azure Active Directory PowerShell](https://docs.microsoft.com/powershell/azure/active-directory/install-adv2?view=azureadps-2.0) Script to add the missing service principal.
 
 ```PowerShell
