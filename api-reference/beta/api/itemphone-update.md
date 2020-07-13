@@ -95,22 +95,26 @@ HTTP/1.1 200 OK
 Content-Type: application/json
 
 {
-  "@odata.type": "#microsoft.graph.itemPhone",
   "id": "0fb4c1e3-c1e3-0fb4-e3c1-b40fe3c1b40f",
   "allowedAudiences": "organization",
-  "inference": {
-    "@odata.type": "microsoft.graph.inferenceData"
-  },
-  "createdDateTime": "String (timestamp)",
+  "inference": null,
+  "createdDateTime": "2020-07-06T06:34:12.2294868Z",
   "createdBy": {
-    "@odata.type": "microsoft.graph.identitySet"
+    "application": null,
+    "device": null,
+    "user": {
+      "displayName": "Innocenty Popov",
+      "id": "db789417-4ccb-41d1-a0a9-47b01a09ea49"
+    }
   },
-  "lastModifiedDateTime": "String (timestamp)",
+  "lastModifiedDateTime": "2020-07-06T06:34:12.2294868Z",
   "lastModifiedBy": {
-    "@odata.type": "microsoft.graph.identitySet"
-  },
-  "source": {
-    "@odata.type": "microsoft.graph.personDataSource"
+    "application": null,
+    "device": null,
+    "user": {
+      "displayName": "Innocenty Popov",
+      "id": "db789417-4ccb-41d1-a0a9-47b01a09ea49"
+    }
   },
   "displayName": "Car Phone",
   "type": "other",
