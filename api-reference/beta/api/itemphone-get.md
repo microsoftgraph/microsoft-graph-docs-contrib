@@ -84,36 +84,25 @@ HTTP/1.1 200 OK
 Content-Type: application/json
 
 {
-  "@odata.type": "#microsoft.graph.itemPhone",
   "id": "0fb4c1e3-c1e3-0fb4-e3c1-b40fe3c1b40f",
   "allowedAudiences": "organization",
   "inference": null,
   "createdDateTime": "2020-07-06T06:34:12.2294868Z",
   "createdBy": {
-    "application": {
-      "@odata.type": "microsoft.graph.identity"
-    },
-    "device": {
-      "@odata.type": "microsoft.graph.identity"
-    },
+    "application": null,
+    "device": null,
     "user": {
-      "@odata.type": "#microsoft.graph.identity",
-      "displayName": "String",
-      "id": "String (identifier)"
+      "displayName": "Innocenty Popov",
+      "id": "db789417-4ccb-41d1-a0a9-47b01a09ea49"
     }
   },
   "lastModifiedDateTime": "2020-07-06T06:34:12.2294868Z",
   "lastModifiedBy": {
-    "application": {
-      "@odata.type": "microsoft.graph.identity"
-    },
-    "device": {
-      "@odata.type": "microsoft.graph.identity"
-    },
+    "application": null,
+    "device": null,
     "user": {
-      "@odata.type": "#microsoft.graph.identity",
-      "displayName": "String",
-      "id": "String (identifier)"
+      "displayName": "Innocenty Popov",
+      "id": "db789417-4ccb-41d1-a0a9-47b01a09ea49"
     }
   },
   "displayName": "Car Phone",
