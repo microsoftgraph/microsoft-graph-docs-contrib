@@ -47,7 +47,7 @@ Do not supply a request body for this method.
 
 ## Response
 
-If successful, this method returns a `200 OK` response code and the requested [ediscoveryCase](../resources/ediscovery-case.md) object in the response body.
+If successful, this method returns a `200 OK` response code and the requested [ediscoveryCase](../resources/ediscoverycase.md) object in the response body.
 
 ## Examples
 
@@ -56,7 +56,7 @@ If successful, this method returns a `200 OK` response code and the requested [e
 The following is an example of the request.
 <!-- {
   "blockType": "request",
-  "name": "get_ediscoverycase"
+  "name": "ediscovery-case-get"
 }-->
 
 ```http
