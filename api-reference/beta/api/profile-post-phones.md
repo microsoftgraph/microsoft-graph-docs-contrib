@@ -33,6 +33,7 @@ One of the following permissions is required to call this API. To learn more, in
 -->
 ``` http
 POST /me/profile/phones
+POST /users/{userId}/profile/phones
 ```
 
 ## Request headers
@@ -44,23 +45,16 @@ POST /me/profile/phones
 ## Request body
 In the request body, supply a JSON representation of the [itemPhone](../resources/itemphone.md) object.
 
-The following table shows the properties that are required when you create the [itemPhone](../resources/itemphone.md).
+The following table shows the properties that are possible to set when you create a new [itemPhone](../resources/itemphone.md) object in a users profile.
 
 |Property|Type|Description|
 |:---|:---|:---|
-|id|String|**TODO: Add Description** Inherited from [entity](../resources/entity.md)|
-|allowedAudiences|allowedAudiences|**TODO: Add Description** Inherited from [itemFacet](../resources/itemfacet.md). Possible values are: `me`, `family`, `contacts`, `groupMembers`, `organization`, `federatedOrganizations`, `everyone`, `unknownFutureValue`.|
-|inference|[inferenceData](../resources/inferencedata.md)|**TODO: Add Description** Inherited from [itemFacet](../resources/itemfacet.md)|
-|createdDateTime|DateTimeOffset|**TODO: Add Description** Inherited from [itemFacet](../resources/itemfacet.md)|
-|createdBy|[identitySet](../resources/identityset.md)|**TODO: Add Description** Inherited from [itemFacet](../resources/itemfacet.md)|
-|lastModifiedDateTime|DateTimeOffset|**TODO: Add Description** Inherited from [itemFacet](../resources/itemfacet.md)|
-|lastModifiedBy|[identitySet](../resources/identityset.md)|**TODO: Add Description** Inherited from [itemFacet](../resources/itemfacet.md)|
-|source|[personDataSource](../resources/persondatasource.md)|**TODO: Add Description** Inherited from [itemFacet](../resources/itemfacet.md)|
-|displayName|String|**TODO: Add Description**|
-|type|phoneType|**TODO: Add Description**. Possible values are: `home`, `business`, `mobile`, `other`, `assistant`, `homeFax`, `businessFax`, `otherFax`, `pager`, `radio`.|
-|number|String|**TODO: Add Description**|
-
-
+|allowedAudiences|String|The audiences that are able to see the values contained within the entity. Inherited from [itemFacet](../resources/itemfacet.md). Possible values are: `me`, `family`, `contacts`, `groupMembers`, `organization`, `federatedOrganizations`, `everyone`, `unknownFutureValue`.|
+|displayName|String|Friendly name the user has assigned this phone number. |
+|inference|[inferenceData](../resources/inferencedata.md)|Contains inference detail if the entity is inferred by the creating or modifying application. Inherited from [itemFacet](../resources/itemfacet.md)|
+|number|String|Phone number provided by the user.|
+|source|[personDataSource](../resources/persondatasource.md)|Where the values originated if synced from another service. Inherited from [itemFacet](../resources/itemfacet.md)|
+|type|phoneType|The type of phone number within the object. Possible values are: `home`, `business`, `mobile`, `other`, `assistant`, `homeFax`, `businessFax`, `otherFax`, `pager`, `radio`.|
 
 ## Response
 
@@ -121,7 +115,7 @@ Content-Type: application/json
     }
   },
   "displayName": "Car Phone",
-  "type": "other",
+  "type": null,
   "number": "+7 499 342 22 13"
 }
 ```
