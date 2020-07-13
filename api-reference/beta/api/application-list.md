@@ -15,6 +15,9 @@ Namespace: microsoft.graph
 
 Get the list of [applications](../resources/application.md) in this organization.
 
+> NOTE
+> This API would return owned apps if the incoming token is tied to a personal Microsoft account.
+
 ## Permissions
 
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
@@ -22,7 +25,7 @@ One of the following permissions is required to call this API. To learn more, in
 | Permission type | Permissions (from least to most privileged) |
 |:--------------- |:------------------------------------------- |
 | Delegated (work or school account) | Application.Read.All, Application.ReadWrite.All, Directory.Read.All, Directory.ReadWrite.All, Directory.AccessAsUser.All    |
-| Delegated (personal Microsoft account) | Not supported. |
+| Delegated (personal Microsoft account) | User.Read.All and Application.Read.All, User.Read.All and Application.ReadWrite.All |
 | Application | Application.Read.All, Application.ReadWrite.All, Directory.Read.All |
 
 ## HTTP request
