@@ -61,26 +61,22 @@ The following is a JSON representation of the resource.
 
 ``` json
 {
-  "id": "0fb4c1e3-c1e3-0fb4-e3c1-b40fe3c1b40f",
-  "allowedAudiences": "organization",
-  "inference": null,
-  "createdDateTime": "2020-07-06T06:34:12.2294868Z",
-  "createdBy": {
-    "application": null,
-    "device": null,
-    "user": {
-      "displayName": "Innocenty Popov",
-      "id": "db789417-4ccb-41d1-a0a9-47b01a09ea49"
-    }
+  "@odata.type": "#microsoft.graph.itemPhone",
+  "id": "String (identifier)",
+  "allowedAudiences": "String",
+  "inference": {
+    "@odata.type": "microsoft.graph.inferenceData"
   },
-  "lastModifiedDateTime": "2020-07-06T06:34:12.2294868Z",
+  "createdDateTime": "String (timestamp)",
+  "createdBy": {
+    "@odata.type": "microsoft.graph.identitySet"
+  },
+  "lastModifiedDateTime": "String (timestamp)",
   "lastModifiedBy": {
-    "application": null,
-    "device": null,
-    "user": {
-      "displayName": "Innocenty Popov",
-      "id": "db789417-4ccb-41d1-a0a9-47b01a09ea49"
-    }
+    "@odata.type": "microsoft.graph.identitySet"
+  },
+  "source": {
+    "@odata.type": "microsoft.graph.personDataSource"
   },
   "displayName": "Car Phone",
   "type": "other",
