@@ -49,6 +49,15 @@ eDiscovery cases are containers that contain custodians, holds, collections, rev
 
 The following is a JSON representation of the resource.
 
+<!-- {
+  "blockType": "resource",
+  "keyProperty":"id",
+  "optionalProperties": [
+ 
+  ],
+  "@odata.type": "microsoft.graph.ediscoveryCase"
+}-->
+
 ```json
 {
   "closedBy": {"@odata.type": "microsoft.graph.identitySet"},
