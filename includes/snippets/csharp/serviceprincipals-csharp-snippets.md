@@ -6,8 +6,11 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 GraphServiceClient graphClient = new GraphServiceClient( authProvider );
 
-var printJob = await graphClient.Print.Printers["c05f3726-0d4b-4aa1-8fe9-2eb981bb26fb"].Jobs["5182"]
+var servicePrincipals = await graphClient.ServicePrincipals["b00c693f-9658-4c06-bd1b-c402c4653dea"]
 	.Request()
+	.Select("AppRoles")
 	.GetAsync();
+
+var appRoles = servicePrincipals.AppRoles;
 
 ```
