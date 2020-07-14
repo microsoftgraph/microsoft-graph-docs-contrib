@@ -78,7 +78,8 @@ GET https://graph.microsoft.com/beta/me/profile/responsibilities
 <!-- {
   "blockType": "response",
   "truncated": true,
-  "@odata.type": "collection(microsoft.graph.personResponsibility)"
+  "@odata.type": "collection(microsoft.graph.personResponsibility)",
+  "isCollection": true
 }
 -->
 ``` http
@@ -118,4 +119,3 @@ Content-Type: application/json
   }
 }
 ```
-
