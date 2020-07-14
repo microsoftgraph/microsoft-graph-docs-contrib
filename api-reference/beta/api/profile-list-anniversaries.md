@@ -100,6 +100,7 @@ GET https://graph.microsoft.com/beta/me/profile/anniversaries
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
+
 {
   "value": [
     {
@@ -125,7 +126,7 @@ Content-Type: application/json
         }
       },
       "type": "birthday",
-      "date": "2020-02-04T00:00:00.0000000Z"
+      "date": "Date"
     }
   ]
 }
