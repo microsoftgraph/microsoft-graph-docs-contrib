@@ -63,11 +63,11 @@ If successful, this method returns a `201 Created` response code and a [personRe
 # [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
-  "name": "create_personresponsibility_from_"
+  "name": "create_personresponsibility_from_profile"
 }
 -->
 ``` http
-POST https://graph.microsoft.com/beta/me/profile/responsibility
+POST https://graph.microsoft.com/beta/me/profile/responsibilities
 Content-Type: application/json
 Content-length: 413
 
