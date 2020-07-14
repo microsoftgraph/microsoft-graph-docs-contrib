@@ -30,7 +30,8 @@ One of the following permissions is required to call this API. To learn more, in
 <!-- { "blockType": "ignored" } -->
 
 ```http
-GET /me/profile/account
+GET /me/profile/accounts
+GET /users/{id | userPrincipalName}/profile/accounts
 ```
 
 ## Optional query parameters
@@ -73,7 +74,7 @@ The following is an example of the request.
 }-->
 
 ```msgraph-interactive
-GET https://graph.microsoft.com/beta/me/profile/account
+GET https://graph.microsoft.com/beta/me/profile/accounts
 ```
 # [C#](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/get-account-csharp-snippets.md)]
@@ -110,24 +111,33 @@ Content-type: application/json
 {
   "value": [
     {
-      "ageGroup": "ageGroup-value",
-      "countryCode": "countryCode-value",
-      "preferredLanguageTag": {
-        "locale": "locale-value",
-        "displayName": "displayName-value"
+      "id": "0fb4c1e3-c1e3-0fb4-e3c1-b40fe3c1b40f",
+      "allowedAudiences": "organization",
+      "inference": null,
+      "createdDateTime": "2020-07-06T06:34:12.2294868Z",
+      "createdBy": {
+        "application": null,
+        "device": null,
+        "user": {
+          "displayName": "Innocenty Popov",
+          "id": "db789417-4ccb-41d1-a0a9-47b01a09ea49"
+        }
       },
-      "userPrincipalName": "userPrincipalName-value"
+      "lastModifiedDateTime": "2020-07-06T06:34:12.2294868Z",
+      "lastModifiedBy": {
+        "application": null,
+        "device": null,
+        "user": {
+          "displayName": "Innocenty Popov",
+          "id": "db789417-4ccb-41d1-a0a9-47b01a09ea49"
+        }
+      },
+      "source": null,
+      "ageGroup": "adult",
+      "countryCode": "NO",
+      "preferredLanguageTag": null,
+      "userPrincipalName": "innocenty.popov@adventureworks.com"
     }
   ]
 }
 ```
-
-<!-- uuid: 16cd6b66-4b1a-43a1-adaf-3a886856ed98
-2019-02-04 14:57:30 UTC -->
-<!-- {
-  "type": "#page.annotation",
-  "description": "List account",
-  "keywords": "",
-  "section": "documentation",
-  "tocPath": ""
-}-->

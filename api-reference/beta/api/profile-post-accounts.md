@@ -1,19 +1,16 @@
 ---
-title: "Update userAccountInformation"
-description: "Update the properties of userAccountInformation object."
+title: "Create account"
+description: "Create a new account object."
+author: "**TODO: Provide Github Name. See [topic-level metadata reference](https://msgo.azurewebsites.net/add/document/guidelines/metadata.html#topic-level-metadata)**"
 localization_priority: Normal
-author: "kevinbellinger"
-ms.prod: "people"
-doc_type: "apiPageType"
+ms.prod: "**TODO: Add MS prod. See [topic-level metadata reference](https://msgo.azurewebsites.net/add/document/guidelines/metadata.html#topic-level-metadata)**"
+doc_type: apiPageType
 ---
 
-# Update useraccountinformation
-
+# Create account
 Namespace: microsoft.graph
 
-[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
-
-Update the properties of a [userAccountInformation](../resources/useraccountinformation.md) object in a user's [profile](../resources/profile.md).
+Create a new [userAccountInformation](../resources/useraccountinformation.md) object in a user's [profile](../resources/profile.md).
 
 ## Permissions
 
@@ -27,23 +24,25 @@ One of the following permissions is required to call this API. To learn more, in
 
 ## HTTP request
 
-<!-- { "blockType": "ignored" } -->
-
-```http
-PATCH /me/profile/accounts/{id}
-PATCH /users/{id | userPrincipalName}/profile/accounts/{id}
+<!-- {
+  "blockType": "ignored"
+}
+-->
+``` http
+POST /me/profile/accounts
+POST /users/{id | userPrincipalName}/profile/accounts
 ```
 
 ## Request headers
-
-| Name           |Description                 |
-|:---------------|:---------------------------|
-| Authorization  | Bearer {token}. Required.  |
-| Content-Type   | application/json. Required |
+|Name|Description|
+|:---|:---|
+|Authorization|Bearer {token}. Required.|
+|Content-Type|application/json. Required.|
 
 ## Request body
+In the request body, supply a JSON representation of the [userAccountInformation](../resources/useraccountinformation.md) object.
 
-In the request body, supply the values for relevant fields that should be updated. Existing properties that are not included in the request body will maintain their previous values or be recalculated based on changes to other property values. For best performance, don't include existing values that haven't changed.
+The following table shows the properties that are required when you create a new [userAccountInformation](../resources/useraccountinformation.md) object.
 
 |Property|Type|Description|
 |:---|:---|:---|
@@ -55,26 +54,24 @@ In the request body, supply the values for relevant fields that should be update
 
 ## Response
 
-If successful, this method returns a `200 OK` response code and an updated [userAccountInformation](../resources/useraccountinformation.md) object in the response body.
+If successful, this method returns a `201 Created` response code and a [userAccountInformation](../resources/useraccountinformation.md) object in the response body.
 
 ## Examples
-
-### Request
-
-The following is an example of the request.
 
 # [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
-  "name": "update_useraccountinformation"
-}-->
-
-```http
-PATCH https://graph.microsoft.com/beta/me/profile/account/{id}
-Content-type: application/json
+  "name": "create_useraccountinformation_from_profile"
+}
+-->
+``` http
+POST https://graph.microsoft.com/beta/me/profile/accounts
+Content-Type: application/json
+Content-length: 494
 
 {
-  "countryCode": "NO"
+  "allowedAudiences": "organization",
+  "countryCode": "NO",
 }
 ```
 # [C#](#tab/csharp)
@@ -91,22 +88,17 @@ Content-type: application/json
 
 ---
 
-
 ### Response
-
-The following is an example of the response.
-
-> **Note:** The response object shown here might be shortened for readability. All the properties will be returned from an actual call.
-
+**Note:** The response object shown here might be shortened for readability.
 <!-- {
   "blockType": "response",
   "truncated": true,
   "@odata.type": "microsoft.graph.userAccountInformation"
-} -->
-
-```http
-HTTP/1.1 200 OK
-Content-type: application/json
+}
+-->
+``` http
+HTTP/1.1 201 Created
+Content-Type: application/json
 
 {
   "id": "0fb4c1e3-c1e3-0fb4-e3c1-b40fe3c1b40f",
