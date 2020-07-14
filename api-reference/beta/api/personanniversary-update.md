@@ -30,7 +30,8 @@ One of the following permissions is required to call this API. To learn more, in
 <!-- { "blockType": "ignored" } -->
 
 ```http
-PATCH /me/profile/anniversaries/{id} 
+PATCH /me/profile/anniversaries/{id}
+PATCH /users/{id | userPrincipalName}/profile/anniversaries/{id}
 ```
 
 ## Request headers
