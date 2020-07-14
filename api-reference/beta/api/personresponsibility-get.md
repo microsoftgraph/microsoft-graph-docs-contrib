@@ -1,9 +1,9 @@
 ---
 title: "Get personResponsibility"
 description: "Read the properties and relationships of a personResponsibility object."
-author: "**TODO: Provide Github Name. See [topic-level metadata reference](https://msgo.azurewebsites.net/add/document/guidelines/metadata.html#topic-level-metadata)**"
+author: "kevinbellinger"
 localization_priority: Normal
-ms.prod: "**TODO: Add MS prod. See [topic-level metadata reference](https://msgo.azurewebsites.net/add/document/guidelines/metadata.html#topic-level-metadata)**"
+ms.prod: "people"
 doc_type: apiPageType
 ---
 
@@ -50,7 +50,7 @@ If successful, this method returns a `200 OK` response code and a [personRespons
 
 ## Examples
 
-### Request
+# [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "get_personresponsibility"
@@ -59,7 +59,19 @@ If successful, this method returns a `200 OK` response code and a [personRespons
 ``` http
 GET https://graph.microsoft.com/beta/personResponsibility
 ```
+# [C#](#tab/csharp)
+[!INCLUDE [sample-code](../includes/snippets/csharp/get-interests-csharp-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
+# [JavaScript](#tab/javascript)
+[!INCLUDE [sample-code](../includes/snippets/javascript/get-interests-javascript-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Objective-C](#tab/objc)
+[!INCLUDE [sample-code](../includes/snippets/objc/get-interests-objc-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+---
 
 ### Response
 **Note:** The response object shown here might be shortened for readability.
@@ -74,31 +86,33 @@ HTTP/1.1 200 OK
 Content-Type: application/json
 
 {
-  "value": {
-    "@odata.type": "#microsoft.graph.personResponsibility",
-    "id": "ec60f38b-f38b-ec60-8bf3-60ec8bf360ec",
-    "allowedAudiences": "String",
-    "inference": {
-      "@odata.type": "microsoft.graph.inferenceData"
-    },
-    "createdDateTime": "String (timestamp)",
-    "createdBy": {
-      "@odata.type": "microsoft.graph.identitySet"
-    },
-    "lastModifiedDateTime": "String (timestamp)",
-    "lastModifiedBy": {
-      "@odata.type": "microsoft.graph.identitySet"
-    },
-    "source": {
-      "@odata.type": "microsoft.graph.personDataSource"
-    },
-    "description": "String",
-    "displayName": "String",
-    "webUrl": "String",
-    "collaborationTags": [
-      "String"
-    ]
-  }
+  "id": "0fb4c1e3-c1e3-0fb4-e3c1-b40fe3c1b40f",
+  "allowedAudiences": "organization",
+  "inference": null,
+  "createdDateTime": "2020-07-06T06:34:12.2294868Z",
+  "createdBy": {
+    "application": null,
+    "device": null,
+    "user": {
+      "displayName": "Innocenty Popov",
+      "id": "db789417-4ccb-41d1-a0a9-47b01a09ea49"
+    }
+  },
+  "lastModifiedDateTime": "2020-07-06T06:34:12.2294868Z",
+  "lastModifiedBy": {
+    "application": null,
+    "device": null,
+    "user": {
+      "displayName": "Innocenty Popov",
+      "id": "db789417-4ccb-41d1-a0a9-47b01a09ea49"
+    }
+  },
+  "source": null,
+  "description": "Member of the Microsoft API Council",
+  "displayName": "API Council",
+  "webUrl": null,
+  "collaborationTags": [
+    "askMeAbout"
+  ]
 }
 ```
-

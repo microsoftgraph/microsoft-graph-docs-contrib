@@ -1,9 +1,9 @@
 ---
 title: "Update personResponsibility"
 description: "Update the properties of a personResponsibility object."
-author: "**TODO: Provide Github Name. See [topic-level metadata reference](https://msgo.azurewebsites.net/add/document/guidelines/metadata.html#topic-level-metadata)**"
+author: "kevinbellinger"
 localization_priority: Normal
-ms.prod: "**TODO: Add MS prod. See [topic-level metadata reference](https://msgo.azurewebsites.net/add/document/guidelines/metadata.html#topic-level-metadata)**"
+ms.prod: "people"
 doc_type: apiPageType
 ---
 
@@ -29,7 +29,8 @@ One of the following permissions is required to call this API. To learn more, in
 }
 -->
 ``` http
-PATCH /personResponsibility
+PATCH /me/profile/responsibilities/{id}
+PATCH /users/{id | userPrincipalName}/profile/responsibilities/{id}
 ```
 
 ## Request headers
@@ -45,18 +46,13 @@ The following table shows the properties that are required when you create the [
 
 |Property|Type|Description|
 |:---|:---|:---|
-|id|String|**TODO: Add Description** Inherited from [entity](../resources/entity.md)|
-|allowedAudiences|allowedAudiences|**TODO: Add Description** Inherited from [itemFacet](../resources/itemfacet.md). Possible values are: `me`, `family`, `contacts`, `groupMembers`, `organization`, `federatedOrganizations`, `everyone`, `unknownFutureValue`.|
-|inference|[inferenceData](../resources/inferencedata.md)|**TODO: Add Description** Inherited from [itemFacet](../resources/itemfacet.md)|
-|createdDateTime|DateTimeOffset|**TODO: Add Description** Inherited from [itemFacet](../resources/itemfacet.md)|
-|createdBy|[identitySet](../resources/identityset.md)|**TODO: Add Description** Inherited from [itemFacet](../resources/itemfacet.md)|
-|lastModifiedDateTime|DateTimeOffset|**TODO: Add Description** Inherited from [itemFacet](../resources/itemfacet.md)|
-|lastModifiedBy|[identitySet](../resources/identityset.md)|**TODO: Add Description** Inherited from [itemFacet](../resources/itemfacet.md)|
-|source|[personDataSource](../resources/persondatasource.md)|**TODO: Add Description** Inherited from [itemFacet](../resources/itemfacet.md)|
-|description|String|**TODO: Add Description**|
-|displayName|String|**TODO: Add Description**|
-|webUrl|String|**TODO: Add Description**|
-|collaborationTags|String collection|**TODO: Add Description**|
+|allowedAudiences|String|The audiences that are able to see the values contained within the entity. Inherited from [itemFacet](../resources/itemfacet.md). Possible values are: `me`, `family`, `contacts`, `groupMembers`, `organization`, `federatedOrganizations`, `everyone`, `unknownFutureValue`.|
+|collaborationTags|String collection|Contains experience scenario tags a user has associated with the interest. Allowed values in the collection are: `askMeAbout`, `ableToMentor`, `wantsToLearn`, `wantsToImprove`.|
+|description|String|Description of the responsibility.|
+|displayName|String|Contains a friendly name for the responsibility. |
+|inference|[inferenceData](../resources/inferencedata.md)|Contains inference detail if the entity is inferred by the creating or modifying application. Inherited from [itemFacet](../resources/itemfacet.md)|
+|source|[personDataSource](../resources/persondatasource.md)|Where the values originated if synced from another service. Inherited from [itemFacet](../resources/itemfacet.md)|
+|webUrl|String|Contains a link to a web page or resource about the responsibility.|
 
 
 
@@ -66,7 +62,7 @@ If successful, this method returns a `200 OK` response code and an updated [pers
 
 ## Examples
 
-### Request
+# [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "update_personresponsibility"
@@ -78,26 +74,24 @@ Content-Type: application/json
 Content-length: 446
 
 {
-  "@odata.type": "#microsoft.graph.personResponsibility",
-  "allowedAudiences": "String",
-  "inference": {
-    "@odata.type": "microsoft.graph.inferenceData"
-  },
-  "createdBy": {
-    "@odata.type": "microsoft.graph.identitySet"
-  },
-  "source": {
-    "@odata.type": "microsoft.graph.personDataSource"
-  },
-  "description": "String",
-  "displayName": "String",
-  "webUrl": "String",
   "collaborationTags": [
-    "String"
+    "askMeAbout"
   ]
 }
 ```
+# [C#](#tab/csharp)
+[!INCLUDE [sample-code](../includes/snippets/csharp/get-interests-csharp-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
+# [JavaScript](#tab/javascript)
+[!INCLUDE [sample-code](../includes/snippets/javascript/get-interests-javascript-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Objective-C](#tab/objc)
+[!INCLUDE [sample-code](../includes/snippets/objc/get-interests-objc-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+---
 
 ### Response
 **Note:** The response object shown here might be shortened for readability.
@@ -112,29 +106,33 @@ HTTP/1.1 200 OK
 Content-Type: application/json
 
 {
-  "@odata.type": "#microsoft.graph.personResponsibility",
-  "id": "ec60f38b-f38b-ec60-8bf3-60ec8bf360ec",
-  "allowedAudiences": "String",
-  "inference": {
-    "@odata.type": "microsoft.graph.inferenceData"
-  },
-  "createdDateTime": "String (timestamp)",
+  "id": "0fb4c1e3-c1e3-0fb4-e3c1-b40fe3c1b40f",
+  "allowedAudiences": "organization",
+  "inference": null,
+  "createdDateTime": "2020-07-06T06:34:12.2294868Z",
   "createdBy": {
-    "@odata.type": "microsoft.graph.identitySet"
+    "application": null,
+    "device": null,
+    "user": {
+      "displayName": "Innocenty Popov",
+      "id": "db789417-4ccb-41d1-a0a9-47b01a09ea49"
+    }
   },
-  "lastModifiedDateTime": "String (timestamp)",
+  "lastModifiedDateTime": "2020-07-06T06:34:12.2294868Z",
   "lastModifiedBy": {
-    "@odata.type": "microsoft.graph.identitySet"
+    "application": null,
+    "device": null,
+    "user": {
+      "displayName": "Innocenty Popov",
+      "id": "db789417-4ccb-41d1-a0a9-47b01a09ea49"
+    }
   },
-  "source": {
-    "@odata.type": "microsoft.graph.personDataSource"
-  },
-  "description": "String",
-  "displayName": "String",
-  "webUrl": "String",
+  "source": null,
+  "description": "Member of the Microsoft API Council",
+  "displayName": "API Council",
+  "webUrl": null,
   "collaborationTags": [
-    "String"
+    "askMeAbout"
   ]
 }
 ```
-

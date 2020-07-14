@@ -1,9 +1,9 @@
 ---
 title: "Delete personResponsibility"
 description: "Deletes a personResponsibility object."
-author: "**TODO: Provide Github Name. See [topic-level metadata reference](https://msgo.azurewebsites.net/add/document/guidelines/metadata.html#topic-level-metadata)**"
+author: "kevinbellinger"
 localization_priority: Normal
-ms.prod: "**TODO: Add MS prod. See [topic-level metadata reference](https://msgo.azurewebsites.net/add/document/guidelines/metadata.html#topic-level-metadata)**"
+ms.prod: "people"
 doc_type: apiPageType
 ---
 
@@ -29,7 +29,8 @@ One of the following permissions is required to call this API. To learn more, in
 }
 -->
 ``` http
-DELETE /personResponsibility
+DELETE /me/profile/responsibilities/{id}
+DELETE /users/{id | userPrincipalName}/profile/responsibilities/{id}
 ```
 
 ## Request headers
@@ -67,4 +68,3 @@ DELETE https://graph.microsoft.com/beta/personResponsibility
 ``` http
 HTTP/1.1 204 No Content
 ```
-

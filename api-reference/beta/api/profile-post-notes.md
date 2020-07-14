@@ -128,7 +128,7 @@ Content-Type: application/json
   },
   "detail": {
     "contentType": "text",
-    "content": "I am originally from Australia, but grew up in Moscow."
+    "content": "I am originally from Australia, but grew up in Moscow, Russia."
   },
   "displayName": "About Me"
 }
