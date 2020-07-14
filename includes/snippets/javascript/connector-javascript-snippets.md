@@ -10,8 +10,8 @@ const options = {
 
 const client = Client.init(options);
 
-let res = await client.api('/organization/{organizationId}/settings/profileCardProperties/fax')
+let res = await client.api('/onPremisesPublishingProfiles/applicationProxy/connectors')
 	.version('beta')
-	.delete();
+	.get();
 
 ```
