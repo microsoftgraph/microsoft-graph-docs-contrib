@@ -94,7 +94,7 @@ Content-type: application/json
     "jobTitle": "Senior Product Branding Manager II",
     "role": "consulting",
   },
-  "isCurrent": "true"
+  "isCurrent": true
 }
 ```
 

@@ -79,7 +79,7 @@ PATCH https://graph.microsoft.com/beta/me/profile/positions/{id}
 Content-type: application/json
 
 {
-  "isCurrent": "true"
+  "isCurrent": true
 }
 ```
 # [C#](#tab/csharp)
@@ -163,7 +163,7 @@ Content-type: application/json
   },
   "manager": null,
   "colleagues": null,
-  "isCurrent": "true"
+  "isCurrent": true
 }
 ```
 

@@ -159,7 +159,7 @@ Content-type: application/json
       },
       "manager": null,
       "colleagues": null,
-      "isCurrent": "true"
+      "isCurrent": true
     }
   ]
 }
