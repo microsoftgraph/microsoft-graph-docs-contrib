@@ -73,7 +73,7 @@ DELETE https://graph.microsoft.com/beta/teams/{teamsId}/members
 
 
 ### Response
-**Note:** The response object shown here might be shortened for readability.
+The following is an example of the response.
 <!-- {
   "blockType": "response",
   "truncated": true
