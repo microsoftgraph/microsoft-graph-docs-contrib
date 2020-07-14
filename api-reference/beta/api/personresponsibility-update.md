@@ -109,6 +109,7 @@ Content-length: 446
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
+
 {
   "@odata.type": "#microsoft.graph.personResponsibility",
   "id": "ec60f38b-f38b-ec60-8bf3-60ec8bf360ec",
