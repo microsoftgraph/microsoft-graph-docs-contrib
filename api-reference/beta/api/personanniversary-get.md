@@ -71,7 +71,6 @@ The following is an example of the request.
   "blockType": "request",
   "name": "get_personanniversary"
 }-->
-
 ```msgraph-interactive
 GET https://graph.microsoft.com/beta/me/profile/anniversaries/{id}
 ```
