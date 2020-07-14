@@ -159,8 +159,8 @@ Content-type: application/json
     }
   },
   "source": null,
-  "completionMonthYear": "datetime-value",
-  "endMonthYear": "datetime-value",
+  "completionMonthYear": "Date",
+  "endMonthYear": "Date",
   "institution": {
     "description": null,
     "displayName": "Colorado State University",
@@ -186,6 +186,6 @@ Content-type: application/json
     "notes": null,
     "webUrl": "https://biz.colostate.edu"
   },
-  "startMonthYear": "datetime-value"
+  "startMonthYear": "Date"
 }
 ```
