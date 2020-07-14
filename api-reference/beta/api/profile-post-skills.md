@@ -31,6 +31,7 @@ One of the following permissions is required to call this API. To learn more, in
 
 ```http
 POST /me/profile/skills
+POST GET /users/{id | userPrincipalName}/profile/skills
 ```
 
 ## Request headers
@@ -65,12 +66,8 @@ POST https://graph.microsoft.com/beta/me/profile/skills
 Content-type: application/json
 
 {
-  "categories": [
-    "categories-value"
-  ],
-  "displayName": "displayName-value",
-  "proficiency": "proficiency-value",
-  "webUrl": "webUrl-value"
+  "displayName": "API Design",
+  "proficiency": "advancedProfessional"
 }
 ```
 # [C#](#tab/csharp)
