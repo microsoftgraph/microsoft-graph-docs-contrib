@@ -1,9 +1,9 @@
 ---
 title: "personAnnotation resource type"
-description: "**TODO: Add Description**"
-author: "**TODO: Provide Github Name. See [topic-level metadata reference](https://msgo.azurewebsites.net/add/document/guidelines/metadata.html#topic-level-metadata)**"
+description: "personAnnotation resource type"
+author: "kevinbellinger"
 localization_priority: Normal
-ms.prod: "**TODO: Add MS prod. See [topic-level metadata reference](https://msgo.azurewebsites.net/add/document/guidelines/metadata.html#topic-level-metadata)**"
+ms.prod: "people"
 doc_type: resourcePageType
 ---
 
@@ -11,8 +11,7 @@ doc_type: resourcePageType
 
 Namespace: microsoft.graph
 
-**TODO: Add Description**
-
+Provides information within notes that the user has associated with themselves in various services and shared with others.
 
 Inherits from [itemFacet](../resources/itemfacet.md).
 
@@ -31,8 +30,8 @@ Inherits from [itemFacet](../resources/itemfacet.md).
 |allowedAudiences|String|The audiences that are able to see the values contained within the entity. Inherited from [itemFacet](../resources/itemfacet.md). Possible values are: `me`, `family`, `contacts`, `groupMembers`, `organization`, `federatedOrganizations`, `everyone`, `unknownFutureValue`.|
 |createdBy|[identitySet](../resources/identityset.md)|Provides the identifier of the user and/or application that created the entity. Inherited from [itemFacet](../resources/itemfacet.md)|
 |createdDateTime|DateTimeOffset|Provides the dateTimeOffset for when the entity was created. Inherited from [itemFacet](../resources/itemfacet.md)|
-|detail|[itemBody](../resources/itembody.md)|**TODO: Add Description**|
-|displayName|String|**TODO: Add Description**|
+|detail|[itemBody](../resources/itembody.md)|Contains the detail of the note itself.|
+|displayName|String|Contains a friendly name for the note.|
 |id|String|Identifier used for individually addressing the entity. Inherited from [entity](../resources/entity.md)|
 |inference|[inferenceData](../resources/inferencedata.md)|Contains inference detail if the entity is inferred by the creating or modifying application. Inherited from [itemFacet](../resources/itemfacet.md)|
 |lastModifiedBy|[identitySet](../resources/identityset.md)|Provides the identifier of the user and/or application that last modified the entity. Inherited from [itemFacet](../resources/itemfacet.md)|
@@ -77,4 +76,3 @@ The following is a JSON representation of the resource.
   "displayName": "String"
 }
 ```
-

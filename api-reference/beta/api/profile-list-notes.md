@@ -1,9 +1,9 @@
 ---
 title: "List notes"
 description: "Get the personAnnotations from the notes navigation property."
-author: "**TODO: Provide Github Name. See [topic-level metadata reference](https://msgo.azurewebsites.net/add/document/guidelines/metadata.html#topic-level-metadata)**"
+author: "kevinbellinger"
 localization_priority: Normal
-ms.prod: "**TODO: Add MS prod. See [topic-level metadata reference](https://msgo.azurewebsites.net/add/document/guidelines/metadata.html#topic-level-metadata)**"
+ms.prod: "people"
 doc_type: apiPageType
 ---
 
@@ -88,27 +88,32 @@ Content-Type: application/json
 {
   "value": [
     {
-      "@odata.type": "#microsoft.graph.personAnnotation",
-      "id": "eeafb64a-b64a-eeaf-4ab6-afee4ab6afee",
-      "allowedAudiences": "String",
-      "inference": {
-        "@odata.type": "microsoft.graph.inferenceData"
-      },
-      "createdDateTime": "String (timestamp)",
+      "id": "0fb4c1e3-c1e3-0fb4-e3c1-b40fe3c1b40f",
+      "allowedAudiences": "organization",
+      "inference": null,
+      "createdDateTime": "2020-07-06T06:34:12.2294868Z",
       "createdBy": {
-        "@odata.type": "microsoft.graph.identitySet"
+        "application": null,
+        "device": null,
+        "user": {
+          "displayName": "Innocenty Popov",
+          "id": "db789417-4ccb-41d1-a0a9-47b01a09ea49"
+        }
       },
-      "lastModifiedDateTime": "String (timestamp)",
+      "lastModifiedDateTime": "2020-07-06T06:34:12.2294868Z",
       "lastModifiedBy": {
-        "@odata.type": "microsoft.graph.identitySet"
-      },
-      "source": {
-        "@odata.type": "microsoft.graph.personDataSource"
+        "application": null,
+        "device": null,
+        "user": {
+          "displayName": "Innocenty Popov",
+          "id": "db789417-4ccb-41d1-a0a9-47b01a09ea49"
+        }
       },
       "detail": {
-        "@odata.type": "microsoft.graph.itemBody"
+        "contentType": "text",
+        "content": "I am originally from Australia, but grew up in Moscow."
       },
-      "displayName": "String"
+      "displayName": "About Me"
     }
   ]
 }

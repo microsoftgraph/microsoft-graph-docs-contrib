@@ -1,9 +1,9 @@
 ---
 title: "Get personAnnotation"
 description: "Read the properties and relationships of a personAnnotation object."
-author: "**TODO: Provide Github Name. See [topic-level metadata reference](https://msgo.azurewebsites.net/add/document/guidelines/metadata.html#topic-level-metadata)**"
+author: "kevinbellinger"
 localization_priority: Normal
-ms.prod: "**TODO: Add MS prod. See [topic-level metadata reference](https://msgo.azurewebsites.net/add/document/guidelines/metadata.html#topic-level-metadata)**"
+ms.prod: "people"
 doc_type: apiPageType
 ---
 
@@ -29,7 +29,8 @@ One of the following permissions is required to call this API. To learn more, in
 }
 -->
 ``` http
-GET /user/{userId}/profile/notes/{id}
+GET /me/profile/notes/{id}
+GET /users/{id | userPrincipalName}/profile/notes/{id}
 ```
 
 ## Optional query parameters
@@ -49,7 +50,7 @@ If successful, this method returns a `200 OK` response code and a [personAnnotat
 
 ## Examples
 
-### Request
+# [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "get_personannotation"
@@ -58,7 +59,19 @@ If successful, this method returns a `200 OK` response code and a [personAnnotat
 ``` http
 GET https://graph.microsoft.com/beta/me/profile/notes/{id}
 ```
+# [C#](#tab/csharp)
+[!INCLUDE [sample-code](../includes/snippets/csharp/get-interests-csharp-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
+# [JavaScript](#tab/javascript)
+[!INCLUDE [sample-code](../includes/snippets/javascript/get-interests-javascript-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Objective-C](#tab/objc)
+[!INCLUDE [sample-code](../includes/snippets/objc/get-interests-objc-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+---
 
 ### Response
 **Note:** The response object shown here might be shortened for readability.
@@ -73,26 +86,31 @@ HTTP/1.1 200 OK
 Content-Type: application/json
 
 {
-  "id": "eeafb64a-b64a-eeaf-4ab6-afee4ab6afee",
-  "allowedAudiences": "String",
-  "inference": {
-    "@odata.type": "microsoft.graph.inferenceData"
-  },
-  "createdDateTime": "String (timestamp)",
+  "id": "0fb4c1e3-c1e3-0fb4-e3c1-b40fe3c1b40f",
+  "allowedAudiences": "organization",
+  "inference": null,
+  "createdDateTime": "2020-07-06T06:34:12.2294868Z",
   "createdBy": {
-    "@odata.type": "microsoft.graph.identitySet"
+    "application": null,
+    "device": null,
+    "user": {
+      "displayName": "Innocenty Popov",
+      "id": "db789417-4ccb-41d1-a0a9-47b01a09ea49"
+    }
   },
-  "lastModifiedDateTime": "String (timestamp)",
+  "lastModifiedDateTime": "2020-07-06T06:34:12.2294868Z",
   "lastModifiedBy": {
-    "@odata.type": "microsoft.graph.identitySet"
-  },
-  "source": {
-    "@odata.type": "microsoft.graph.personDataSource"
+    "application": null,
+    "device": null,
+    "user": {
+      "displayName": "Innocenty Popov",
+      "id": "db789417-4ccb-41d1-a0a9-47b01a09ea49"
+    }
   },
   "detail": {
-    "@odata.type": "microsoft.graph.itemBody"
+    "contentType": "text",
+    "content": "I am originally from Australia, but grew up in Moscow."
   },
-  "displayName": "String"
+  "displayName": "About Me"
 }
 ```
-

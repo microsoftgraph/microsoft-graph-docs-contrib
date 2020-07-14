@@ -1,9 +1,9 @@
 ---
 title: "Delete personAnnotation"
 description: "Deletes a personAnnotation object."
-author: "**TODO: Provide Github Name. See [topic-level metadata reference](https://msgo.azurewebsites.net/add/document/guidelines/metadata.html#topic-level-metadata)**"
+author: "kevinbellinger"
 localization_priority: Normal
-ms.prod: "**TODO: Add MS prod. See [topic-level metadata reference](https://msgo.azurewebsites.net/add/document/guidelines/metadata.html#topic-level-metadata)**"
+ms.prod: "people"
 doc_type: apiPageType
 ---
 
@@ -29,7 +29,8 @@ One of the following permissions is required to call this API. To learn more, in
 }
 -->
 ``` http
-DELETE /user/{userId}/profile/notes/{id}
+DELETE /me/profile/notes/{id}
+DELETE /users/{id | userPrincipalName}/profile/notes/{id}
 ```
 
 ## Request headers
@@ -46,7 +47,7 @@ If successful, this method returns a `204 No Content` response code.
 
 ## Examples
 
-### Request
+# [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "delete_personannotation"
@@ -55,7 +56,19 @@ If successful, this method returns a `204 No Content` response code.
 ``` http
 DELETE https://graph.microsoft.com/beta/user/{userId}/profile/notes/{id}
 ```
+# [C#](#tab/csharp)
+[!INCLUDE [sample-code](../includes/snippets/csharp/get-interests-csharp-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
+# [JavaScript](#tab/javascript)
+[!INCLUDE [sample-code](../includes/snippets/javascript/get-interests-javascript-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Objective-C](#tab/objc)
+[!INCLUDE [sample-code](../includes/snippets/objc/get-interests-objc-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+---
 
 ### Response
 **Note:** The response object shown here might be shortened for readability.
@@ -67,4 +80,3 @@ DELETE https://graph.microsoft.com/beta/user/{userId}/profile/notes/{id}
 ``` http
 HTTP/1.1 204 No Content
 ```
-
