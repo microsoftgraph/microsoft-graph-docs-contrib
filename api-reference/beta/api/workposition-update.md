@@ -46,10 +46,17 @@ PATCH /users/{id | userPrincipalName}/profile/positions/{id}
 
 In the request body, supply the values for relevant fields that should be updated. Existing properties that are not included in the request body will maintain their previous values or be recalculated based on changes to other property values. For best performance, don't include existing values that haven't changed.
 
-| Property     | Type                                        | Description                                                                                                 |
-|:-------------|:--------------------------------------------|:------------------------------------------------------------------------------------------------------------|
-|categories|String collection                                | Contains categories a user has associated with the position. (eg: digital transformation, ms graph, people) |
-|detail    |[positionDetail](../resources/positiondetail.md) | Contains detail about a users work position.                                                                |
+## Properties
+|Property|Type|Description|
+|:---|:---|:---|
+|allowedAudiences|String|The audiences that are able to see the values contained within the entity. Inherited from [itemFacet](../resources/itemfacet.md). Possible values are: `me`, `family`, `contacts`, `groupMembers`, `organization`, `federatedOrganizations`, `everyone`, `unknownFutureValue`.|
+|categories|String collection|Categories that the user has associated with this position.|
+|colleagues|[relatedPerson](../resources/relatedperson.md) collection|Colleagues that are associated with this position.|
+|detail|[positionDetail](../resources/positiondetail.md)|Contains detailed information about the position. |
+|inference|[inferenceData](../resources/inferencedata.md)|Contains inference detail if the entity is inferred by the creating or modifying application. Inherited from [itemFacet](../resources/itemfacet.md)|
+|isCurrent|Boolean|Denotes whether or not the position is current.|
+|manager|[relatedPerson](../resources/relatedperson.md)|Contains detail of the user's manager in this position.|
+|source|[personDataSource](../resources/persondatasource.md)|Where the values originated if synced from another service. Inherited from [itemFacet](../resources/itemfacet.md)|
 
 ## Response
 
