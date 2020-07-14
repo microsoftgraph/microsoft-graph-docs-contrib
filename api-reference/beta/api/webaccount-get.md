@@ -31,6 +31,7 @@ One of the following permissions is required to call this API. To learn more, in
 
 ```http
 GET /me/profile/webAccounts/{id}
+GET /users/{id | userPrincipalName}/profile/webAccounts/{id}
 ```
 
 ## Optional query parameters
@@ -106,23 +107,35 @@ HTTP/1.1 200 OK
 Content-type: application/json
 
 {
-  "description": "description-value",
-  "userId": "userId-value",
-  "service": {
-    "name": "name-value",
-    "webUrl": "webUrl-value"
+  "id": "0fb4c1e3-c1e3-0fb4-e3c1-b40fe3c1b40f",
+  "allowedAudiences": "organization",
+  "inference": null,
+  "createdDateTime": "2020-07-06T06:34:12.2294868Z",
+  "createdBy": {
+    "application": null,
+    "device": null,
+    "user": {
+      "displayName": "Innocenty Popov",
+      "id": "db789417-4ccb-41d1-a0a9-47b01a09ea49"
+    }
   },
-  "statusMessage": "statusMessage-value",
-  "webUrl": "webUrl-value"
+  "lastModifiedDateTime": "2020-07-06T06:34:12.2294868Z",
+  "lastModifiedBy": {
+    "application": null,
+    "device": null,
+    "user": {
+      "displayName": "Innocenty Popov",
+      "id": "db789417-4ccb-41d1-a0a9-47b01a09ea49"
+    }
+  },
+  "source": null,
+  "description": "My Github contributions!",
+  "userId": "innocenty.popov",
+  "service": {
+    "name": "GitHub",
+    "webUrl": "https://github.com"
+  },
+  "statusMessage": null,
+  "webUrl": "https://github.com/innocenty.popov"
 }
 ```
-
-<!-- uuid: 16cd6b66-4b1a-43a1-adaf-3a886856ed98
-2019-02-04 14:57:30 UTC -->
-<!-- {
-  "type": "#page.annotation",
-  "description": "Get webAccount",
-  "keywords": "",
-  "section": "documentation",
-  "tocPath": ""
-}-->
