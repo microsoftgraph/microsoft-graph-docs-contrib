@@ -31,7 +31,7 @@ One of the following permissions is required to call this API. To learn more, in
 
 ```http
 POST /me/profile/skills
-POST GET /users/{id | userPrincipalName}/profile/skills
+POST /users/{id | userPrincipalName}/profile/skills
 ```
 
 ## Request headers
@@ -44,6 +44,19 @@ POST GET /users/{id | userPrincipalName}/profile/skills
 ## Request body
 
 In the request body, supply a JSON representation of [skillProficiency](../resources/skillproficiency.md) object.
+
+The following table shows the properties that are possible to set when you create a new [skillProficiency](../resources/skillproficiency.md) object in a user's [profile](../resources/profile.md).
+
+|Property|Type|Description|
+|:---|:---|:---|
+|allowedAudiences|String|The audiences that are able to see the values contained within the entity. Inherited from [itemFacet](../resources/itemfacet.md). Possible values are: `me`, `family`, `contacts`, `groupMembers`, `organization`, `federatedOrganizations`, `everyone`, `unknownFutureValue`.|
+|categories|String collection|Contains categories a user has associated with the skill (for example, personal, professional, hobby). |
+|collaborationTags|String collection|Contains experience scenario tags a user has associated with the interest. Allowed values in the collection are: `askMeAbout`, `ableToMentor`, `wantsToLearn`, `wantsToImprove`.|
+|displayName|String|Contains a friendly name for the skill. |
+|inference|[inferenceData](../resources/inferencedata.md)|Contains inference detail if the entity is inferred by the creating or modifying application. Inherited from [itemFacet](../resources/itemfacet.md)|
+|proficiency|skillProficiencyLevel|Detail of the users proficiency with this skill. Possible values are: `elementary`, `limitedWorking`, `generalProfessional`, `advancedProfessional`, `expert`, `unknownFutureValue`.|
+|source|[personDataSource](../resources/persondatasource.md)|Where the values originated if synced from another service. Inherited from [itemFacet](../resources/itemfacet.md)|
+|webUrl|String|Contains a link to an information source about the skill. |
 
 ## Response
 
@@ -66,8 +79,26 @@ POST https://graph.microsoft.com/beta/me/profile/skills
 Content-type: application/json
 
 {
-  "displayName": "API Design",
-  "proficiency": "advancedProfessional"
+  "@odata.type": "#microsoft.graph.skillProficiency",
+  "allowedAudiences": "String",
+  "inference": {
+    "@odata.type": "microsoft.graph.inferenceData"
+  },
+  "createdBy": {
+    "@odata.type": "microsoft.graph.identitySet"
+  },
+  "source": {
+    "@odata.type": "microsoft.graph.personDataSource"
+  },
+  "categories": [
+    "String"
+  ],
+  "displayName": "String",
+  "proficiency": "String",
+  "webUrl": "String",
+  "collaborationTags": [
+    "String"
+  ]
 }
 ```
 # [C#](#tab/csharp)
@@ -84,39 +115,44 @@ Content-type: application/json
 
 ---
 
-
 ### Response
-
-The following is an example of the response.
-
-> **Note:** The response object shown here might be shortened for readability. All the properties will be returned from an actual call.
-
+**Note:** The response object shown here might be shortened for readability.
 <!-- {
   "blockType": "response",
   "truncated": true,
   "@odata.type": "microsoft.graph.skillProficiency"
-} -->
-
-```http
+}
+-->
+``` http
 HTTP/1.1 201 Created
-Content-type: application/json
+Content-Type: application/json
 
 {
+  "@odata.type": "#microsoft.graph.skillProficiency",
+  "id": "013adcb4-dcb4-013a-b4dc-3a01b4dc3a01",
+  "allowedAudiences": "String",
+  "inference": {
+    "@odata.type": "microsoft.graph.inferenceData"
+  },
+  "createdDateTime": "String (timestamp)",
+  "createdBy": {
+    "@odata.type": "microsoft.graph.identitySet"
+  },
+  "lastModifiedDateTime": "String (timestamp)",
+  "lastModifiedBy": {
+    "@odata.type": "microsoft.graph.identitySet"
+  },
+  "source": {
+    "@odata.type": "microsoft.graph.personDataSource"
+  },
   "categories": [
-    "categories-value"
+    "String"
   ],
-  "displayName": "displayName-value",
-  "proficiency": "proficiency-value",
-  "webUrl": "webUrl-value"
+  "displayName": "String",
+  "proficiency": "String",
+  "webUrl": "String",
+  "collaborationTags": [
+    "String"
+  ]
 }
 ```
-
-<!-- uuid: 16cd6b66-4b1a-43a1-adaf-3a886856ed98
-2019-02-04 14:57:30 UTC -->
-<!-- {
-  "type": "#page.annotation",
-  "description": "Create skillProficiency",
-  "keywords": "",
-  "section": "documentation",
-  "tocPath": ""
-}-->
