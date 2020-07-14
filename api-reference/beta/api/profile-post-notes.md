@@ -106,6 +106,7 @@ Content-length: 413
 ``` http
 HTTP/1.1 201 Created
 Content-Type: application/json
+
 {
   "@odata.type": "#microsoft.graph.personAnnotation",
   "id": "eeafb64a-b64a-eeaf-4ab6-afee4ab6afee",
