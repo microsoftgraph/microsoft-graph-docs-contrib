@@ -128,6 +128,6 @@ Content-type: application/json
     }
   },
   "type": "birthday",
-  "date": "1980-01-08T00:00:00.0000000Z"
+  "date": "2020-02-04T00:00:00.0000000Z"
 }
 ```
