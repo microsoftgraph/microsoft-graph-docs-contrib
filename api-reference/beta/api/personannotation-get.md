@@ -73,29 +73,26 @@ HTTP/1.1 200 OK
 Content-Type: application/json
 
 {
-  "value": {
-    "@odata.type": "#microsoft.graph.personAnnotation",
-    "id": "eeafb64a-b64a-eeaf-4ab6-afee4ab6afee",
-    "allowedAudiences": "String",
-    "inference": {
-      "@odata.type": "microsoft.graph.inferenceData"
-    },
-    "createdDateTime": "String (timestamp)",
-    "createdBy": {
-      "@odata.type": "microsoft.graph.identitySet"
-    },
-    "lastModifiedDateTime": "String (timestamp)",
-    "lastModifiedBy": {
-      "@odata.type": "microsoft.graph.identitySet"
-    },
-    "source": {
-      "@odata.type": "microsoft.graph.personDataSource"
-    },
-    "detail": {
-      "@odata.type": "microsoft.graph.itemBody"
-    },
-    "displayName": "String"
-  }
+  "id": "eeafb64a-b64a-eeaf-4ab6-afee4ab6afee",
+  "allowedAudiences": "String",
+  "inference": {
+    "@odata.type": "microsoft.graph.inferenceData"
+  },
+  "createdDateTime": "String (timestamp)",
+  "createdBy": {
+    "@odata.type": "microsoft.graph.identitySet"
+  },
+  "lastModifiedDateTime": "String (timestamp)",
+  "lastModifiedBy": {
+    "@odata.type": "microsoft.graph.identitySet"
+  },
+  "source": {
+    "@odata.type": "microsoft.graph.personDataSource"
+  },
+  "detail": {
+    "@odata.type": "microsoft.graph.itemBody"
+  },
+  "displayName": "String"
 }
 ```
 

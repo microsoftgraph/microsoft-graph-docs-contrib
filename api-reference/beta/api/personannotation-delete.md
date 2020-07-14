@@ -29,7 +29,7 @@ One of the following permissions is required to call this API. To learn more, in
 }
 -->
 ``` http
-DELETE /user/{userId}/profile/notes/{personAnnotationId}
+DELETE /user/{userId}/profile/notes/{id}
 ```
 
 ## Request headers
@@ -53,7 +53,7 @@ If successful, this method returns a `204 No Content` response code.
 }
 -->
 ``` http
-DELETE https://graph.microsoft.com/beta/user/{userId}/profile/notes/{personAnnotationId}
+DELETE https://graph.microsoft.com/beta/user/{userId}/profile/notes/{id}
 ```
 
 

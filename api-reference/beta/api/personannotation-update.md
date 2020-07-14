@@ -29,7 +29,7 @@ One of the following permissions is required to call this API. To learn more, in
 }
 -->
 ``` http
-PATCH /user/{userId}/profile/notes/{personAnnotationId}
+PATCH /user/{userId}/profile/notes/{id}
 ```
 
 ## Request headers
@@ -71,7 +71,7 @@ If successful, this method returns a `200 OK` response code and an updated [pers
 }
 -->
 ``` http
-PATCH https://graph.microsoft.com/beta/user/{userId}/profile/notes/{personAnnotationId}
+PATCH https://graph.microsoft.com/beta/user/{userId}/profile/notes/{id}
 Content-Type: application/json
 Content-length: 413
 

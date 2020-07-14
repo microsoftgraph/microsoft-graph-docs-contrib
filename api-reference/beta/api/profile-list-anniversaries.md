@@ -94,7 +94,7 @@ GET https://graph.microsoft.com/beta/me/profile/anniversaries
 <!-- {
   "blockType": "response",
   "truncated": true,
-  "@odata.type": "collection(microsoft.graph.personanniversary)"
+  "@odata.type": "collection(microsoft.graph.personAnniversary)"
 }
 -->
 ``` http
