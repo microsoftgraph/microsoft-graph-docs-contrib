@@ -46,12 +46,15 @@ PATCH /users/{id | userPrincipalName}/profile/skills/{id}
 
 In the request body, supply the values for relevant fields that should be updated. Existing properties that are not included in the request body will maintain their previous values or be recalculated based on changes to other property values. For best performance, don't include existing values that haven't changed.
 
-| Property     | Type            | Description                                                                                                                        |
-|:-------------|:----------------|:-----------------------------------------------------------------------------------------------------------------------------------|
-|categories    |String collection| Contains categories a user has associated with the skill (eg: personal, professional, hobby)                                       |
-|displayName   |String           | Contains a friendly name for the skill.                                                                                            |
-|proficiency   |string           | Possible values are: `elementary`, `limitedWorking`, `generalProfessional`, `advancedProfessional`, `expert`, `unknownFutureValue`.|
-|webUrl        |String           | Contains a link to an information source about the skill.                                                                          |
+|Property|Type|Description|
+|:---|:---|:---|
+|allowedAudiences|String|The audiences that are able to see the values contained within the entity. Inherited from [itemFacet](../resources/itemfacet.md). Possible values are: `me`, `family`, `contacts`, `groupMembers`, `organization`, `federatedOrganizations`, `everyone`, `unknownFutureValue`.|
+|categories|String collection|Contains categories a user has associated with the skill (for example, personal, professional, hobby). |
+|collaborationTags|String collection|Contains experience scenario tags a user has associated with the interest. Allowed values in the collection are: `askMeAbout`, `ableToMentor`, `wantsToLearn`, `wantsToImprove`.|
+|displayName|String|Contains a friendly name for the skill. |
+|inference|[inferenceData](../resources/inferencedata.md)|Contains inference detail if the entity is inferred by the creating or modifying application. Inherited from [itemFacet](../resources/itemfacet.md)|
+|proficiency|skillProficiencyLevel|Detail of the users proficiency with this skill. Possible values are: `elementary`, `limitedWorking`, `generalProfessional`, `advancedProfessional`, `expert`, `unknownFutureValue`.|
+|source|[personDataSource](../resources/persondatasource.md)|Where the values originated if synced from another service. Inherited from [itemFacet](../resources/itemfacet.md)|
 
 ## Response
 
@@ -75,11 +78,9 @@ Content-type: application/json
 
 {
   "categories": [
-    "categories-value"
+    "Professional"
   ],
-  "displayName": "displayName-value",
-  "proficiency": "proficiency-value",
-  "webUrl": "webUrl-value"
+  "proficiency": "advancedProfessional"
 }
 ```
 # [C#](#tab/csharp)
@@ -137,13 +138,13 @@ Content-type: application/json
   },
   "source": null,
   "categories": [
-    "String"
+    "Professional"
   ],
-  "displayName": "String",
-  "proficiency": "String",
-  "webUrl": "String",
+  "displayName": "API Design",
+  "proficiency": "advancedProfessional",
+  "webUrl": null,
   "collaborationTags": [
-    "String"
+    "ableToMentor"
   ]
 }
 ```

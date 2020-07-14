@@ -79,25 +79,11 @@ POST https://graph.microsoft.com/beta/me/profile/skills
 Content-type: application/json
 
 {
-  "@odata.type": "#microsoft.graph.skillProficiency",
-  "allowedAudiences": "String",
-  "inference": {
-    "@odata.type": "microsoft.graph.inferenceData"
-  },
-  "createdBy": {
-    "@odata.type": "microsoft.graph.identitySet"
-  },
-  "source": {
-    "@odata.type": "microsoft.graph.personDataSource"
-  },
-  "categories": [
-    "String"
-  ],
-  "displayName": "String",
-  "proficiency": "String",
-  "webUrl": "String",
+  "allowedAudiences": "organization",
+  "displayName": "API Design",
+  "proficiency": "generalProfessional",
   "collaborationTags": [
-    "String"
+    "ableToMentor"
   ]
 }
 ```
@@ -128,31 +114,36 @@ HTTP/1.1 201 Created
 Content-Type: application/json
 
 {
-  "@odata.type": "#microsoft.graph.skillProficiency",
-  "id": "013adcb4-dcb4-013a-b4dc-3a01b4dc3a01",
-  "allowedAudiences": "String",
-  "inference": {
-    "@odata.type": "microsoft.graph.inferenceData"
-  },
-  "createdDateTime": "String (timestamp)",
+  "id": "0fb4c1e3-c1e3-0fb4-e3c1-b40fe3c1b40f",
+  "allowedAudiences": "organization",
+  "inference": null,
+  "createdDateTime": "2020-07-06T06:34:12.2294868Z",
   "createdBy": {
-    "@odata.type": "microsoft.graph.identitySet"
+    "application": null,
+    "device": null,
+    "user": {
+      "displayName": "Innocenty Popov",
+      "id": "db789417-4ccb-41d1-a0a9-47b01a09ea49"
+    }
   },
-  "lastModifiedDateTime": "String (timestamp)",
+  "lastModifiedDateTime": "2020-07-06T06:34:12.2294868Z",
   "lastModifiedBy": {
-    "@odata.type": "microsoft.graph.identitySet"
+    "application": null,
+    "device": null,
+    "user": {
+      "displayName": "Innocenty Popov",
+      "id": "db789417-4ccb-41d1-a0a9-47b01a09ea49"
+    }
   },
-  "source": {
-    "@odata.type": "microsoft.graph.personDataSource"
-  },
+  "source": null,
   "categories": [
-    "String"
+    "Professional"
   ],
-  "displayName": "String",
-  "proficiency": "String",
-  "webUrl": "String",
+  "displayName": "API Design",
+  "proficiency": "advancedProfessional",
+  "webUrl": null,
   "collaborationTags": [
-    "String"
+    "ableToMentor"
   ]
 }
 ```

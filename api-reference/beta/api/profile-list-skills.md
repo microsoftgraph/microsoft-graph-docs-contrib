@@ -134,13 +134,13 @@ Content-type: application/json
       },
       "source": null,
       "categories": [
-        "String"
+        "Professional"
       ],
-      "displayName": "String",
-      "proficiency": "String",
-      "webUrl": "String",
+      "displayName": "API Design",
+      "proficiency": "advancedProfessional",
+      "webUrl": null,
       "collaborationTags": [
-        "String"
+        "ableToMentor"
       ]
     }
   ]
