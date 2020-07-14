@@ -53,7 +53,7 @@ If successful, this method returns a `200 OK` response code and a collection of 
 # [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
-  "name": "get_responsibilities"
+  "name": "get_responsibilities_from_profile"
 }
 -->
 ```msgraph-interactive
@@ -87,35 +87,37 @@ HTTP/1.1 200 OK
 Content-Type: application/json
 
 {
-  "value": {
-    "id": "0fb4c1e3-c1e3-0fb4-e3c1-b40fe3c1b40f",
-    "allowedAudiences": "organization",
-    "inference": null,
-    "createdDateTime": "2020-07-06T06:34:12.2294868Z",
-    "createdBy": {
-      "application": null,
-      "device": null,
-      "user": {
-        "displayName": "Innocenty Popov",
-        "id": "db789417-4ccb-41d1-a0a9-47b01a09ea49"
-      }
-    },
-    "lastModifiedDateTime": "2020-07-06T06:34:12.2294868Z",
-    "lastModifiedBy": {
-      "application": null,
-      "device": null,
-      "user": {
-        "displayName": "Innocenty Popov",
-        "id": "db789417-4ccb-41d1-a0a9-47b01a09ea49"
-      }
-    },
-    "source": null,
-    "description": "Member of the Microsoft API Council",
-    "displayName": "API Council",
-    "webUrl": null,
-    "collaborationTags": [
-      "askMeAbout"
-    ]
-  }
+  "value": [
+    {
+      "id": "0fb4c1e3-c1e3-0fb4-e3c1-b40fe3c1b40f",
+      "allowedAudiences": "organization",
+      "inference": null,
+      "createdDateTime": "2020-07-06T06:34:12.2294868Z",
+      "createdBy": {
+        "application": null,
+        "device": null,
+        "user": {
+          "displayName": "Innocenty Popov",
+          "id": "db789417-4ccb-41d1-a0a9-47b01a09ea49"
+        }
+      },
+      "lastModifiedDateTime": "2020-07-06T06:34:12.2294868Z",
+      "lastModifiedBy": {
+        "application": null,
+        "device": null,
+        "user": {
+          "displayName": "Innocenty Popov",
+          "id": "db789417-4ccb-41d1-a0a9-47b01a09ea49"
+        }
+      },
+      "source": null,
+      "description": "Member of the Microsoft API Council",
+      "displayName": "API Council",
+      "webUrl": null,
+      "collaborationTags": [
+        "askMeAbout"
+      ]
+    }
+  ]
 }
 ```
