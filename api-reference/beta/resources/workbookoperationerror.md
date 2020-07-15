@@ -1,6 +1,6 @@
 ---
 title: "workbookOperationError resource type"
-description: "Provide the error types for workbookOperation"
+description: "Represents an error from a failed workbook operation."
 localization_priority: Normal
 author: "grangeryy"
 ms.prod: "excel"
@@ -9,7 +9,7 @@ doc_type: "resourcePageType"
 
 # workbookOperationError resource type
 
-An error from a failed workbook operation.
+Represents an error from a failed workbook operation.
 
 ## Properties
 
@@ -35,7 +35,7 @@ The following is a JSON representation of the resource.
 ```json
 {
   "code": "String",
-  "message": "String"
+  "message": "String",
   "innererror": { "@odata.type": "odata.error" }
 }
 ```

@@ -1,6 +1,6 @@
 ---
 title: "workbookOperation resource type"
-description: "The status of certain long-running workbook operations."
+description: "Represents the status of a long-running workbook operations."
 localization_priority: Normal
 author: "grangeryy"
 ms.prod: "excel"
@@ -9,8 +9,13 @@ doc_type: "resourcePageType"
 
 # workbookOperation resource type
 
-The status of certain long-running workbook operation.
+Represents the status of a long-running workbook operation.
 
+## Methods
+
+| Method       | Return Type | Description |
+|:-------------|:------------|:------------|
+| [Get workbookOperation](../api/workbookoperation-get.md) | [workbookOperation](workbookoperation.md) | Retrieve the status of a **workbookOperation** object. |
 
 ## Properties
 
@@ -21,17 +26,9 @@ The status of certain long-running workbook operation.
 |error|[workbookOperationError](workbookoperationerror.md)| The error returned by the operation.|
 |resourceLocation|String| The resource URI for the result.|
 
-
-## Methods
-
-| Method       | Return Type | Description |
-|:-------------|:------------|:------------|
-| [Get workbookOperation](../api/workbookoperation-get.md) | [workbookOperation](workbookoperation.md) | Get the operation with `{operation-id}`. |
-
-
 ## Relationships
 
-None
+None.
 
 ## JSON representation
 

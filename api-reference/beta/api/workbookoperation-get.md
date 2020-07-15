@@ -1,6 +1,6 @@
 ---
 title: "Get workbookOperation"
-description: "Retrieve the properties and relationships of workbookOperation object."
+description: "Retrieve the properties and relationships of a workbookOperation object."
 localization_priority: Normal
 author: "grangeryy"
 ms.prod: "excel"
@@ -9,7 +9,7 @@ doc_type: "apiPageType"
 
 # Get workbookOperation
 
-Retrieve the status of workbookOperation object.
+Retrieve the status of a [workbookOperation](../resources/workbookoperation.md) object.
 
 ## Permissions
 
@@ -45,11 +45,9 @@ If successful, this method returns a `200 OK` response code and the requested [w
 
 ## Examples
 
-Here is the case of long running operation for creating a session.
-
 ### Request
 
-The following is an example of the request.
+The following is an example of a long-running operation request.
 <!-- {
   "blockType": "request",
   "name": "get_workbookoperation"
@@ -61,7 +59,7 @@ GET https://graph.microsoft.com/beta/me/drive/items/{drive-item-id}/workbook/ope
 
 ### Response
 
-Here is the example of the response with the status of "running".
+The following is the response with the status of "running".
 
 
 <!-- {
@@ -80,7 +78,7 @@ Content-type: application/json
 }
 ```
 
-Here is the example fo response with the status of "succeeded".
+The following is the response with the status of "succeeded".
 
 ```http
 HTTP/1.1 200 OK
@@ -93,7 +91,7 @@ Content-type: application/json
 }
 ```
 
-Here is the example of response with the status of "failed".
+The following is the response with the status of "failed".
 
 ```http
 HTTP/1.1 200 OK
