@@ -69,7 +69,7 @@ If successful, this method returns a `200 OK` response code and an updated [acce
 }
 -->
 ``` http
-PUT https://graph.microsoft.com/beta/identityGovernance/entitlementManagement/accessPackageAssignmentPolicies/{accessPackageAssignmentPolicyId}
+PUT https://graph.microsoft.com/beta/identityGovernance/entitlementManagement/accessPackageAssignmentPolicies/b2eba9a1-b357-42ee-83a8-336522ed6cbf
 Content-Type: application/json
 Content-length: 1000
 
@@ -108,6 +108,7 @@ Content-length: 1000
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
+
 {
   "id": "b2eba9a1-b357-42ee-83a8-336522ed6cbf",
   "accessPackageId": "1b153a13-76da-4d07-9afa-c6c2b1f2e824",
