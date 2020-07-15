@@ -60,6 +60,10 @@ DELETE https://graph.microsoft.com/v1.0/devices/{id}/registeredOwners/{id}/$ref
 
 ##### Response
 Here is an example of the response.
+<!-- {
+  "blockType": "response",
+  "truncated": true
+} -->
 ```http
 HTTP/1.1 204 No Content
 ```

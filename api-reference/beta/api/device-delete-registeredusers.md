@@ -56,11 +56,16 @@ Here is an example of the request.
 }-->
 ```msgraph-interactive
 DELETE https://graph.microsoft.com/beta/devices/{id}/registeredUsers/{id}/$ref
+```
 
 ---
 
 ##### Response
 Here is an example of the response.
+<!-- {
+  "blockType": "response",
+  "truncated": true
+} -->
 ```http
 HTTP/1.1 204 No Content
 ```
