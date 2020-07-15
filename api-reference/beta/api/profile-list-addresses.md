@@ -53,7 +53,7 @@ If successful, this method returns a `200 OK` response code and a collection of 
 # [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
-  "name": "get_itemaddress"
+  "name": "get_itemaddresses_from_profile"
 }
 -->
 ``` http
@@ -84,6 +84,7 @@ GET https://graph.microsoft.com/beta/me/profile/addresses
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
+
 {
   "value": [
     {
