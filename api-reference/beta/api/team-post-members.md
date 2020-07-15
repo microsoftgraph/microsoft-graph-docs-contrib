@@ -10,6 +10,8 @@ doc_type: apiPageType
 # Create members
 Namespace: microsoft.graph
 
+[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
+
 Add a new [conversationMember](../resources/conversationmember.md) to a [team](../resources/team.md).
 
 ## Permissions
@@ -56,16 +58,13 @@ If successful, this method returns a `201 Created` response code and a [conversa
 -->
 ``` http
 POST https://graph.microsoft.com/beta/teams/{id}/members
-Content-Type: application/json
+Content-type: application/json
+Content-length: 26
 
 {
     "@odata.type": "#microsoft.graph.aadUserConversationMember",
-    "roles": [
-        "owner"
-    ],
-    "userId": "50dffbae-ad0f-428e-a86f-f53b0acfc641",
-    "displayName": "Cameron White",
-    "email": "CameronW@M365x987948.OnMicrosoft.com"
+    "roles": ["owner"],
+    "user@odata.bind": "https://graph.microsoft.com/beta/users/8b081ef6-4792-4def-b2c9-c363a1bf41d5"
 }
 ```
 # [C#](#tab/csharp)
