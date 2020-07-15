@@ -185,7 +185,6 @@ The following limits apply to any request on `/informationProtection`.
 | Operation                 | Limit per tenant                                            | Limit per resource (email, URL, file)                |
 |---------------------------|-------------------------------------------------------------|------------------------------------------------------|
 | POST                      | 150 requests per 15 minutes and 10000 requests per 24 hours | 1 request per 15 minutes and 3 requests per 24 hours |
-| All other HTTP methods    | TODO: Default from MS Graph                                 | TODO: Default from MS Graph  |
 
 The preceding limits apply to the following resources:  
 threatAssessmentRequest, threatAssessmentResult, mailAssessmentRequest, emailFileAssessmentRequest, fileAssessmentRequest, urlAssessmentRequest.
