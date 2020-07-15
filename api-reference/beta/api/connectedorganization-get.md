@@ -1,10 +1,10 @@
 ---
 title: "Get connectedOrganization"
 description: "Retrieve the properties and relationships of a connectedorganization object."
-localization_priority: Normal
 author: "markwahl-msft"
 ms.prod: "microsoft-identity-platform"
-doc_type: "apiPageType"
+localization_priority: Normal
+doc_type: apiPageType
 ---
 
 # Get connectedOrganization
@@ -19,18 +19,20 @@ Retrieve the properties and relationships of a [connectedOrganization](../resour
 
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
 
-| Permission type                        | Permissions (from least to most privileged) |
-|:---------------------------------------|:--------------------------------------------|
+|Permission type|Permissions (from most to least privileged)|
+|:---|:---|
 | Delegated (work or school account)     | EntitlementManagement.Read.All, EntitlementManagement.ReadWrite.All |
 | Delegated (personal Microsoft account) | Not supported. |
 | Application                            | Not supported. |
 
 ## HTTP request
 
-<!-- { "blockType": "ignored" } -->
-
-```http
-GET /identityGovernance/entitlementManagement/connectedOrganizations/{id}
+<!-- {
+  "blockType": "ignored"
+}
+-->
+``` http
+GET /identityGovernance/entitlementManagement/connectedOrganizations/{connectedOrganizationId}
 ```
 
 ## Optional query parameters
@@ -39,9 +41,9 @@ This method supports some of the OData query parameters to help customize the re
 
 ## Request headers
 
-| Name      |Description|
-|:----------|:----------|
-| Authorization | Bearer \{token\}. Required. |
+|Name|Description|
+|:---|:---|
+|Authorization|Bearer {token}. Required.|
 
 ## Request body
 
@@ -49,40 +51,32 @@ Do not supply a request body for this method.
 
 ## Response
 
-If successful, this method returns a `200 OK` response code and the requested [connectedOrganization](../resources/connectedorganization.md) object in the response body.
+If successful, this method returns a `200 OK` response code and a [connectedOrganization](../resources/connectedorganization.md) object in the response body.
 
 ## Examples
 
 ### Request
-
-The following is an example of the request.
-
-# [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "get_connectedorganization"
-}-->
-
-```get
-GET https://graph.microsoft.com/beta/identityGovernance/entitlementManagement/connectedOrganizations/{id}
----
-
+}
+-->
+``` http
+GET https://graph.microsoft.com/beta/identityGovernance/entitlementManagement/connectedOrganizations/{connectedOrganizationId}
+```
 
 ### Response
 
-The following is an example of the response.
-
-> **Note:** The response object shown here might be shortened for readability. All the properties will be returned from an actual call.
-
+**Note:** The response object shown here might be shortened for readability.
 <!-- {
   "blockType": "response",
   "truncated": true,
   "@odata.type": "microsoft.graph.connectedOrganization"
-} -->
-
-```http
+}
+-->
+``` http
 HTTP/1.1 200 OK
-Content-type: application/json
+Content-Type: application/json
 
 {
   "id": "cd3709c6-be6a-4725-bd07-50f90ccca93f",
