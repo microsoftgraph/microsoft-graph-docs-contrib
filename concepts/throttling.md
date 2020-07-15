@@ -210,6 +210,15 @@ The following limits apply to any request on `/invitations`.
 |---------------------------|------------------------------|
 | Any operation             | 150 requests per 5 seconds   |
 
+### Security detections and incidents service limits
+
+The following limits apply to any request on `/security`.
+
+| Operation                  | Limit per app per tenant     |
+|----------------------------|------------------------------|
+| Any operation on `/alerts` | 150 requests per minute      |
+| Any operation on `/tiIndicators` | 1000 requests per minute |
+
 <!-- { "blockType": "throttlinggenstart" } -->
 ### Education service limits
 
