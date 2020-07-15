@@ -304,7 +304,7 @@ items:
             href: api/insights-list-used.md
           - name: Control access to item insights
             items:
-            - name: Organization settings
+            - name: Item insights settings
               href: resources/iteminsightssettings.md
             - name: Get itemInsights
               href: api/organizationsettings-get-iteminsights.md
