@@ -1,6 +1,6 @@
 ---
 title: "workbookOperationError resource type"
-description: "workbookOperationError resource type"
+description: "Represents an error from a failed workbook operation."
 localization_priority: Normal
 author: "grangeryy"
 ms.prod: "excel"
@@ -9,7 +9,7 @@ doc_type: "resourcePageType"
 
 # workbookOperationError resource type
 
-An error from a failed workbook operation.
+Represents an error from a failed workbook operation.
 
 ## Properties
 
