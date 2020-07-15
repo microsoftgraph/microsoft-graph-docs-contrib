@@ -122,7 +122,7 @@ The **driveItem** resource is derived from [**baseItem**][baseItem] and inherits
 | lastModifiedBy       | [identitySet][]    | Identity of the user, device, and application which last modified the item. Read-only.
 | lastModifiedDateTime | DateTimeOffset     | Date and time the item was last modified. Read-only.
 | location             | [geoCoordinates][] | Location metadata, if the item has location data. Read-only.
-| media                | [media](media.md)          | Information about the media (audio or video) item. Read-write. Only on OneDrive for Business and SharePoint.
+| media                | [media][]          | Information about the media (audio or video) item. Read-write. Only on OneDrive for Business and SharePoint.
 | name                 | String             | The name of the item (filename and extension). Read-write.
 | package              | [package][]        | If present, indicates that this item is a package instead of a folder or file. Packages are treated like files in some contexts and folders in others. Read-only.
 | parentReference      | [itemReference][]  | Parent information, if the item has a parent. Read-write.
@@ -136,7 +136,7 @@ The **driveItem** resource is derived from [**baseItem**][baseItem] and inherits
 | sharepointIds        | [sharepointIds][]  | Returns identifiers useful for SharePoint REST compatibility. Read-only.
 | size                 | Int64              | Size of the item in bytes. Read-only.
 | specialFolder        | [specialFolder][]  | If the current item is also available as a special folder, this facet is returned. Read-only.
-| source               | [driveItemSource](driveItemSource.md)| Information about the drive item source. Read-only. Only on OneDrive for Business and SharePoint.
+| source               | [driveItemSource][]| Information about the drive item source. Read-only. Only on OneDrive for Business and SharePoint.
 | video                | [video][]          | Video metadata, if the item is a video. Read-only.
 | webDavUrl            | String             | WebDAV compatible URL for the item.
 | webUrl               | String             | URL that displays the resource in the browser. Read-only.

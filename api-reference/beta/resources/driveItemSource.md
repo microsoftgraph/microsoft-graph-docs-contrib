@@ -37,7 +37,7 @@ It is available on the source property of [driveItem][item-resource] resources.
 | Property                 | Type                       | Description                                                                                      |
 | :----------------------- | :------------------------  | :----------------------------------------------------------------------------------------------- |
 | **application**          | driveItemSourceApplication | Enumeration value that indicates the source application where the file was created.              |
-| **externalId**           | string                     | The external identifier for the media item from the source.                                      |
+| **externalId**           | string                     | The external identifier for the drive item from the source.                                      |
 
 ### driveItemSourceApplication enumeration
 
