@@ -56,12 +56,12 @@ In the request body, supply a JSON representation of [WorkbookSessionInfo](../re
 
 ## Response
 
-If successful, this method returns `201 Created` response code and [WorkbookSessionInfo](../resources/workbooksessioninfo.md) object in the response body. For long running operation pattern, it returns  `202 Accepted ` response code and a `Location` header with empty body in response.
+If successful, this method returns a `201 Created` response code and a [workbookSessionInfo](../resources/workbooksessioninfo.md) object in the response body. For a long-running operation, it returns a `202 Accepted ` response code and a `Location` header with an empty body in the response.
 
+## Examples
 
-## Example 1: Basic session creation
-##### Request
-Here is an example of the request.
+### Example 1: Basic session creation
+#### Request
 
 # [HTTP](#tab/http)
 <!-- {
@@ -91,10 +91,9 @@ Content-length: 52
 
 ---
 
-In the request body, supply a JSON representation of [WorkbookSessionInfo](../resources/workbooksessioninfo.md) object.
+#### Response
 
-##### Response
-Here is an example of the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.
+>**Note:** The response object shown here might be shortened for readability. 
 <!-- {
   "blockType": "response",
   "truncated": true,
@@ -110,9 +109,10 @@ Content-length: 52
   "persistChanges": true
 }
 ```
-## Example 2: Session creation with long running operation pattern
-##### Request
-Here is an example of long running operation on CreateSession
+### Example 2: Session creation with long-running operation pattern
+
+#### Request
+
 ```http
 POST https://graph.microsoft.com/beta/me/drive/items/{drive-item-id}/workbook/worksheets({id})/createSession
 Prefer: respond-async
@@ -122,9 +122,8 @@ Content-type: application/json
 }
 ```
 
-
-##### Response
-Here is an example of the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.
+#### Response
+>**Note:** The response object shown here might be shortened for readability. 
 <!-- {
   "blockType": "response",
   "truncated": true,
