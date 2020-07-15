@@ -1,5 +1,5 @@
 ---
-title: "azureActiveDirectoryTenant complex type"
+title: "azureActiveDirectoryTenant resource type"
 description: "The azureActiveDirectoryTenant type identifies another Azure Active Directory tenant as an identity source for a connected organization."
 localization_priority: Normal
 author: "markwahl-msft"
@@ -7,7 +7,7 @@ ms.prod: "microsoft-identity-platform"
 doc_type: "resourcePageType"
 ---
 
-# azureActiveDirectoryTenant complex type
+# azureActiveDirectoryTenant resource type
 
 Namespace: microsoft.graph
 
@@ -17,14 +17,14 @@ Used in the identity sources of an [connectedOrganization](connectedOrganization
 
 ## Properties
 
-This type has the following properties:
-
 | Property                     | Type                      | Description |
 | :--------------------------- | :------------------------ | :---------- |
 | displayName |String | The name of the Azure Active Directory tenant. Read only. |
 | tenantId |String | The ID of the Azure Active Directory tenant. Read only. |
 
+## Relationships
 
+None.
 
 ## JSON representation
 
@@ -41,8 +41,8 @@ The following is a JSON representation of the type.
 
 ```json
 {
-  "tenantId": "string (identifier)",
-  "displayName": "string"
+  "tenantId": "String (identifier)",
+  "displayName": "String"
 }
 ```
 
@@ -50,7 +50,7 @@ The following is a JSON representation of the type.
 2019-02-04 14:57:30 UTC -->
 <!-- {
   "type": "#page.annotation",
-  "description": "azureActiveDirectoryTenant complex type",
+  "description": "azureActiveDirectoryTenant resource type",
   "keywords": "",
   "section": "documentation",
   "tocPath": ""

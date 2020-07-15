@@ -1,10 +1,10 @@
 ---
 title: "connectedOrganization resource type"
 description: "In Azure AD entitlement management, a connected organization is a reference to a directory or domain of another organization whose users can request access."
-localization_priority: Normal
 author: "markwahl-msft"
+localization_priority: Normal
 ms.prod: "microsoft-identity-platform"
-doc_type: "resourcePageType"
+doc_type: resourcePageType
 ---
 
 # connectedOrganization resource type
@@ -17,18 +17,18 @@ In [Azure AD entitlement management](entitlementmanagement-root.md), a a connect
 
 ## Methods
 
-| Method       | Return Type | Description |
-|:-------------|:------------|:------------|
-| [List connectedOrganizations](../api/connectedorganization-list.md) | [connectedOrganization](connectedorganization.md) collection | Retrieve a list of connectedorganization objects. |
-| [Create connectedOrganization](../api/connectedorganization-post.md) | [connectedOrganization](connectedorganization.md) | Create a new connectedOrganization object. |
-| [Get connectedOrganization](../api/connectedorganization-get.md) | [connectedOrganization](connectedorganization.md) | Read properties and relationships of a connectedOrganization object. |
-| [Delete connectedOrganization](../api/connectedorganization-delete.md) | | Delete a connectedOrganization. |
-| [Update connectedOrganization](../api/connectedorganization-update.md) | | Update a connectedOrganization. |
+|Method|Return type|Description|
+|:---|:---|:---|
+|[List connectedOrganizations](../api/connectedorganization-list.md) | [connectedOrganization](connectedorganization.md) collection | Retrieve a list of connectedOrganization objects. |
+|[Create connectedOrganization](../api/connectedorganization-post.md) | [connectedOrganization](connectedorganization.md) | Create a new connectedOrganization object. |
+|[Get connectedOrganization](../api/connectedorganization-get.md) | [connectedOrganization](connectedorganization.md) | Read properties and relationships of a connectedOrganization object. |
+|[Update connectedOrganization](../api/connectedorganization-update.md) | | Update a connectedOrganization. |
+|[Delete connectedOrganization](../api/connectedorganization-delete.md) |None | Delete a connectedOrganization. |
 
 ## Properties
 
-| Property     | Type        | Description |
-|:-------------|:------------|:------------|
+|Property|Type|Description|
+|:---|:---|:---|
 |createdBy|String|UPN of the user who created this resource. Read-only.|
 |createdDateTime|DateTimeOffset|The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 would look like this: `'2014-01-01T00:00:00Z'`. Read-only.|
 |description|String|The description of the connected organization.|
@@ -39,8 +39,8 @@ In [Azure AD entitlement management](entitlementmanagement-root.md), a a connect
 
 ## Relationships
 
-| Relationship | Type        | Description |
-|:-------------|:------------|:------------|
+|Relationship|Type|Description|
+|:---|:---|:---|
 |identitySources|[identitySource](identitySource.md) collection| The identity sources in this connected organization, one of [azureActiveDirectoryTenant](azureactivedirectorytenant.md), [domainIdentitySource](domainidentitysource.md) or [externalDomainFederation](externaldomainfederation.md). Read-only. Nullable.|
 |internalSponsors| [directoryObject](directoryobject.md) collection| Nullable.|
 |externalSponsors| [directoryObject](directoryobject.md) collection| Nullable.|
@@ -51,28 +51,27 @@ The following is a JSON representation of the resource.
 
 <!-- {
   "blockType": "resource",
-  "optionalProperties": [
-
-  ],
+  "keyProperty": "id",
   "@odata.type": "microsoft.graph.connectedOrganization",
-  "baseType": "",
-  "keyProperty": "id"
-}-->
+  "baseType": "microsoft.graph.entity",
+  "openType": false
+}
+-->
 
 ```json
 {
-  "id": "string (identifier)",
-  "displayName": "string",
-  "description": "string",
-  "createdBy": "string",
-  "createdDateTime": "string",
-  "modifiedBy": "string",
-  "modifiedDateTime": "string",
+  "id": "String (identifier)",
+  "displayName": "String",
+  "description": "String",
+  "createdBy": "String",
+  "createdDateTime": "String (timestamp)",
+  "modifiedBy": "String",
+  "modifiedDateTime": "String (timestamp)",
   "identitySources": [
     {
-      "@odata.type": "#microsoft.graph.azureActiveDirectoryTenant",
-      "tenantId": "string (identifier)",
-      "displayName": "string"
+      "@odata.type": "microsoft.graph.azureActiveDirectoryTenant",
+      "tenantId": "String (identifier)",
+      "displayName": "String"
     }
   ]
 }

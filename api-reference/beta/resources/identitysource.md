@@ -1,5 +1,5 @@
 ---
-title: "identitySource complex type"
+title: "identitySource resource type"
 description: "The identitySource type is the abstract base type for an identity source for a connected organization."
 localization_priority: Normal
 author: "markwahl-msft"
@@ -7,7 +7,7 @@ ms.prod: "microsoft-identity-platform"
 doc_type: "resourcePageType"
 ---
 
-# identitySource complex type
+# identitySource resource type
 
 Namespace: microsoft.graph
 
@@ -19,21 +19,21 @@ The sub-types of this type, [azureActiveDirectoryTenant](azureactivedirectoryten
 
 None.
 
+## Relationships
+
+None.
+
 ## JSON representation
 
-The following is a JSON representation of the type.
-
+The following is a JSON representation of the resource.
 <!-- {
   "blockType": "resource",
-  "optionalProperties": [
-
-  ],
-  "@odata.type": "microsoft.graph.identitySource",
-  "baseType": ""
-}-->
-
-```json
+  "@odata.type": "microsoft.graph.identitySource"
+}
+-->
+``` json
 {
+
 }
 ```
 
@@ -41,7 +41,7 @@ The following is a JSON representation of the type.
 2019-02-04 14:57:30 UTC -->
 <!-- {
   "type": "#page.annotation",
-  "description": "identitySource complex type",
+  "description": "identitySource resource type",
   "keywords": "",
   "section": "documentation",
   "tocPath": ""
