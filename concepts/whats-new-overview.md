@@ -13,12 +13,12 @@ See highlights of what's new in Microsoft Graph, and how you can [share your ide
 > Features, including APIs and tools, in _preview_ status may change without notice, and some may never be promoted to generally available (GA) status. Do not use preview features in production apps.
 
 ## July 2020: New and generally available
-
-### Schema Extensions
-[Schema Extensions](/graph/api/resources/schemaextension) feature is now generally available in [Microsoft Cloud for US Government](/graph/deployments)
-        
+      
 ### Change notifications
 Removed the erroneously introduced **sequenceNumber** property from the [changeNotification](/graph/api/resources/changenotification) resource.
+
+### Schema extensions
+[Schema extensions](/graph/api/resources/schemaextension) feature is now generally available in [Microsoft Cloud for US Government](/graph/deployments)
 
 ## July 2020: New in preview only
 
