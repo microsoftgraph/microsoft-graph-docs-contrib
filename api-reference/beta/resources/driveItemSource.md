@@ -1,5 +1,6 @@
 ---
 author: MarcMroz
+description: "The driveItemSource contains metadata about the source application that the drive item was created in."
 ms.author: brcrowne
 ms.date: 07/15/2020
 title: DriveItemSource

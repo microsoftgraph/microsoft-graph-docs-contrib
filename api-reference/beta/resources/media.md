@@ -1,5 +1,6 @@
 ---
 author: MarcMroz
+description: "The media resource contains metadata about the media (audio or video) drive item."
 ms.author: brcrowne
 ms.date: 07/15/2020
 title: Media
@@ -9,7 +10,7 @@ ms.prod: "sharepoint"
 ---
 # Media resouce type
 
-The **Media** resource contains metadata about the media file.
+The **Media** resource contains metadata about the media (audio or video) drive item.
 
 It is available on the media property of [driveItem][item-resource] resources.
 

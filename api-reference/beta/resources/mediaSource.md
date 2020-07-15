@@ -1,5 +1,6 @@
 ---
 author: MarcMroz
+description: "The mediaSource resource contains metadata about source of the media (audio or video) drive item."
 ms.author: brcrowne
 ms.date: 07/15/2020
 title: MediaSource
@@ -9,7 +10,7 @@ doc_type: "resourcePageType"
 ---
 # MediaSource facet
 
-The **MediaSource** resource contains metadata about the source of the drive item.
+The **MediaSource** resource contains metadata about the source of media (audio or video) drive item.
 
 It is available on the media property of [driveItem][item-resource] resources.
 
