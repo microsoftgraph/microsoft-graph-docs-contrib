@@ -1,6 +1,6 @@
 ---
 title: "workbookOperationError resource type"
-description: "workbookOperationError resource type"
+description: "Provide the error types for workbookOperation"
 localization_priority: Normal
 author: "grangeryy"
 ms.prod: "excel"
