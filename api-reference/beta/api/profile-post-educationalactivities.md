@@ -45,6 +45,19 @@ POST /users/{id | userPrincipalName}/profile/educationalActivities
 
 In the request body, supply a JSON representation of an [educationalActivity](../resources/educationalactivity.md) object.
 
+The following table shows the properties that are possible to set when creating a new [educationalActivity](../resources/educationalactivity.md) object in a user's [profile](../resources/profile.md).
+
+|Property|Type|Description|
+|:---|:---|:---|
+|allowedAudiences|String|The audiences that are able to see the values contained within the entity. Inherited from [itemFacet](../resources/itemfacet.md). Possible values are: `me`, `family`, `contacts`, `groupMembers`, `organization`, `federatedOrganizations`, `everyone`, `unknownFutureValue`.|
+|completionMonthYear|Date|The month and year the user graduated or completed the activity. |
+|endMonthYear|Date|The month and year the user completed the educational activity referenced.|
+|inference|[inferenceData](../resources/inferencedata.md)|Contains inference detail if the entity is inferred by the creating or modifying application. Inherited from [itemFacet](../resources/itemfacet.md)|
+|institution|[institutionData](../resources/institutiondata.md)|Contains details of the institution studied at. |
+|program|[educationalActivityDetail](../resources/educationalactivitydetail.md)|Contains extended information about the program or course.|
+|source|[personDataSource](../resources/persondatasource.md)|Where the values originated if synced from another service. Inherited from [itemFacet](../resources/itemfacet.md)|
+|startMonthYear|Date|The month and year the user commenced the activity referenced.|
+
 ## Response
 
 If successful, this method returns a `201 Created` response code and a new [educationalActivity](../resources/educationalactivity.md) object in the response body.

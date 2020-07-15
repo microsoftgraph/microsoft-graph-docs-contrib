@@ -45,13 +45,16 @@ PATCH /users/{id | userPrincipalName}/profile/educationalActivities/{id}
 
 In the request body, supply the values for relevant fields that should be updated. Existing properties that are not included in the request body will maintain their previous values or be recalculated based on changes to other property values. For best performance, don't include existing values that haven't changed.
 
-| Property           | Type                                                                  | Description                                                                |
-|:-------------------|:----------------------------------------------------------------------|:---------------------------------------------------------------------------|
-|completionMonthYear |Date                                                                   | The month and year the user graduated or completed the activity.           |
-|endMonthYear        |Date                                                                   | The month and year the user completed the educational activity referenced. |
-|institution         |[institutionData](../resources/institutiondata.md)                     | Contains details of the institution studied at.                            |
-|program             |[educationalActivityDetail](../resources/educationalactivitydetail.md) | Contains extended information about the program or course.                 |
-|startMonthYear      |Date                                                                   | The month and year the user commenced the activity referenced.             |
+|Property|Type|Description|
+|:---|:---|:---|
+|allowedAudiences|String|The audiences that are able to see the values contained within the entity. Inherited from [itemFacet](../resources/itemfacet.md). Possible values are: `me`, `family`, `contacts`, `groupMembers`, `organization`, `federatedOrganizations`, `everyone`, `unknownFutureValue`.|
+|completionMonthYear|Date|The month and year the user graduated or completed the activity. |
+|endMonthYear|Date|The month and year the user completed the educational activity referenced.|
+|inference|[inferenceData](../resources/inferencedata.md)|Contains inference detail if the entity is inferred by the creating or modifying application. Inherited from [itemFacet](../resources/itemfacet.md)|
+|institution|[institutionData](../resources/institutiondata.md)|Contains details of the institution studied at. |
+|program|[educationalActivityDetail](../resources/educationalactivitydetail.md)|Contains extended information about the program or course.|
+|source|[personDataSource](../resources/persondatasource.md)|Where the values originated if synced from another service. Inherited from [itemFacet](../resources/itemfacet.md)|
+|startMonthYear|Date|The month and year the user commenced the activity referenced.|
 
 ## Response
 
