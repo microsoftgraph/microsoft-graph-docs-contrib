@@ -30,6 +30,7 @@ Using the Microsoft Graph API, an app can subscribe to changes on the following 
 - Outlook [message][]
 - Outlook [event][]
 - Outlook personal [contact][]
+- [list][]
 - [user][]
 - [group][]
 - Microsoft 365 group [conversation][]
@@ -47,7 +48,7 @@ Or to a top-level resource:
 `/me/messages`, `/me/contacts`, `/me/events`, `users`, `groups`, `/communications/callRecords`, or `/communications/presences`
 
 Or to a specific resource instance:
-`users/{id}`, `groups/{id}`, `groups/{id}/conversations`
+`users/{id}`, `groups/{id}`, `groups/{id}/conversations`, `sites/{site-id}/lists/{list-id}`
 
 Or to any folder in a user's personal OneDrive:
 `/drives/{id}/root`
@@ -285,3 +286,4 @@ You can optionally configure the firewall that protects your notification URL to
 [callRecord]: /graph/api/resources/callrecords-callrecord?view=graph-rest-1.0
 [presence]: /graph/api/resources/presence
 [chatMessage]: /graph/api/resources/chatmessage
+[list]: /graph/api/resources/list
