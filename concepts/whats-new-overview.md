@@ -18,7 +18,7 @@ See highlights of what's new in Microsoft Graph, and how you can [share your ide
 Removed the erroneously introduced **sequenceNumber** property from the [changeNotification](/graph/api/resources/changenotification) resource.
 
 ### Schema extensions
-[Schema extensions](/graph/api/resources/schemaextension) feature is now generally available in [Microsoft Cloud for US Government](/graph/deployments)
+The [schema extensions](/graph/api/resources/schemaextension) feature is now generally available in [Microsoft Cloud for US Government](/graph/deployments).
 
 ## July 2020: New in preview only
 
