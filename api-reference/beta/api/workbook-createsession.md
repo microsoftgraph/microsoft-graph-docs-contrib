@@ -1,17 +1,17 @@
 ---
-title: "Create Session"
-description: "Use this API to create a new workbook session. "
+title: "Create session"
+description: "Create a new workbook session. "
 author: "lumine2008"
 localization_priority: Normal
 ms.prod: "excel"
 doc_type: apiPageType
 ---
 
-# Create Session
+# Create session
 
 Namespace: microsoft.graph
 
-Use this API to create a new workbook session. 
+Create a new workbook session. 
 
 Excel APIs can be called in one of two modes: 
 
@@ -22,13 +22,13 @@ To represent the session in the API, use the `workbook-session-id: {session-id}`
 
 >**Note:** The session header is not required for an Excel API to work. However, we recommend that you use the session header to improve performance. If you don't use a session header, changes made during the API call _are_ persisted to the file.  
 
-In some cases, creating a new session requires indeterminate time to complete, Excel Graph also provides a long running operations pattern for it. This pattern provides a way to poll for creation status updates, without waiting for the creation to complete. Here are the steps:
+In some cases, creating a new session requires an indeterminate time to complete. Microsoft Graph also provides a long running operations pattern. This pattern provides a way to poll for creation status updates, without waiting for the creation to complete. The following are the steps:
 
-1. Adds a header of  `Prefer: respond-async` in the request to indicate it as a long running operation when creating a session.
-2. Response returns a header of `Location` to specify the URL for polling the creation operation status. You can retrieves the operation status by accessing the specified URL. Status includes `notStarted`, `running`, `succeeded` or `failed`.
-3. After operation completes, you can request the status again and response will show whether the creation is `succeeded` or `failed`.
+1. A `Prefer: respond-async` header is added to the request to indicate that it is a long-running operation.
+2. The response returns a `Location` header to specify the URL for polling the creation operation status. You can get the operation status by accessing the specified URL. The status will be one of the following: `notStarted`, `running`, `succeeded`, or `failed`.
+3. After the operation completes, you can request the status again and the response will show either `succeeded` or `failed`.
 
-## Error Handling
+### Error handling
 
 This request might occasionally receive a 504 HTTP error. The appropriate response to this error is to repeat the request.
 
