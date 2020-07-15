@@ -81,6 +81,12 @@ Programming patterns like continuously polling a resource to check for updates a
 
 Microsoft Graph allows you to access data in [multiple services](overview-major-services.md), such as Outlook or Azure Active Directory. These services impose their own throttling limits that affect applications that use Microsoft Graph to access them.
 
+Any request can be evaluated against multiple limits depending on the scope of the limit (per app across all tenants, per tenant for all apps, per app per tenant, etc.), the request type (GET, POST, PATCH, etc.) and other factors. The first limit to be reached triggers throttling behavior. In addition to the service specific limits described in the section, the following global limits apply:
+
+| Request type | Per app across all tenants  |
+| ------------ | ------------------------ |
+| Any          | 2000 requests per second |
+
 > [!NOTE]
 > The specific limits described here are subject to change.
 
@@ -174,7 +180,7 @@ and [polling requirements](/graph/api/resources/teams-api-overview#polling-requi
 
 ### Identity protection and conditional access service limits
 
-| Request type | Limit per tenant |
+| Request type | Limit per tenant for all apps |
 | ------------ | ------- |
 | Any | 1 request per second |
 
@@ -195,7 +201,7 @@ The following limits apply to any request on `me/insights` or `users/{id}/insigh
 
 The following limits apply to any request on `/reports`.
 
-| Operation                 | Limit per app per tenant     | Limit per tenant           |
+| Operation                 | Limit per app per tenant     | Limit per tenant for all apps |
 |---------------------------|------------------------------|----------------------------|
 | Any request (CSV)         | 14 requests per 10 minutes   | 40 requests per 10 minutes |
 | Any request (JSON, beta)  | 100 requests per 10 minutes  | n/a                        |
@@ -206,7 +212,7 @@ The preceding limits apply individually to each report API. For example a reques
 
 The following limits apply to any request on `/invitations`.
 
-| Operation                 | Limit per tenant             |
+| Operation                 | Limit per tenant for all apps |
 |---------------------------|------------------------------|
 | Any operation             | 150 requests per 5 seconds   |
 
