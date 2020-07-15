@@ -1346,15 +1346,15 @@ items:
         - name: PSTN usage log
           items:
           - name: PSTN usage
-            href: resources/callrecords-pstnusage.md
+            href: resources/callrecords-pstncalllogrow.md
           - name: Get PSTN usage log
-            href: api/callrecords-pstnusage-list.md
+            href: api/callrecords-callrecord-getpstncalls.md
         - name: Direct Routing log
           items:
           - name: Direct Routing
-            href: resources/callrecords-directrouting.md
+            href: resources/callrecords-directroutinglogrow.md
           - name: Get Direct Routing log
-            href: api/callrecords-directrouting-list.md
+            href: api/callrecords-callrecord-getdirectroutingcallst.md
     - name: Cross-device experiences
       displayName: Project Rome
       items:
