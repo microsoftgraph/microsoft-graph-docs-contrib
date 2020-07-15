@@ -1,25 +1,30 @@
 ---
-title: "callRecord: getDirectRoutingCalls"
-description: "**TODO: Add Description**"
-author: "**TODO: Provide Github Name. See [topic-level metadata reference](https://msgo.azurewebsites.net/add/document/guidelines/metadata.html#topic-level-metadata)**"
+title: "callRecord: Description"
+description: "Retrieve the Direct Routing call report"
+author: "SanderSade"
 localization_priority: Normal
-ms.prod: "**TODO: Add MS prod. See [topic-level metadata reference](https://msgo.azurewebsites.net/add/document/guidelines/metadata.html#topic-level-metadata)**"
-doc_type: apiPageType
+ms.prod: "cloud-communications"
+doc_type: "apiPageType"
 ---
 
-# callRecord: getDirectRoutingCalls
+
+# Retrieve the Direct Routing call report
+
 Namespace: microsoft.graph.callRecords
 
-**TODO: Add Description**
+[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
+
+Get log for the Direct Routing calls as a collection of [directRoutingLogRow](../resources/callrecords-directroutinglogrow.md) entries.
 
 ## Permissions
+
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
 
 |Permission type|Permissions (from most to least privileged)|
-|:---|:---|
-|Delegated (work or school account)|**TODO: Provide applicable permissions.**|
-|Delegated (personal Microsoft account)|**TODO: Provide applicable permissions.**|
-|Application|**TODO: Provide applicable permissions.**|
+|:---------------------------------------|:--------------------------------------------|
+| Delegated (work or school account)     | Not supported. |
+| Delegated (personal Microsoft account) | Not supported. |
+| Application| CallRecords.Read.PstnCalls|
 
 ## HTTP request
 
@@ -27,44 +32,47 @@ One of the following permissions is required to call this API. To learn more, in
   "blockType": "ignored"
 }
 -->
+
 ``` http
 GET /communications/callRecords/getDirectRoutingCalls
 ```
 
 ## Request headers
+
 |Name|Description|
 |:---|:---|
 |Authorization|Bearer {token}. Required.|
 
 ## Function parameters
+
 In the request URL, provide the following query parameters with values.
 The following table shows the parameters that can be used with this function.
 
 |Parameter|Type|Description|
 |:---|:---|:---|
-|fromDateTime|DateTimeOffset|**TODO: Add Description**|
-|toDateTime|DateTimeOffset|**TODO: Add Description**|
+|fromDateTime|DateTimeOffset|Start of time range to query. UTC, inclusive.<br/>Time range is based on the call start time|
+|toDateTime|DateTimeOffset|End of time range to query. UTC, inclusive|
 
+## Function response
 
-
-## Response
-
-If successful, this function returns a `200 OK` response code and a [directRoutingLogRow](../resources/callrecords-directroutinglogrow.md) collection in the response body.
+If successful, this function returns a `200 OK` response code and a collection of [directRoutingLogRow](../resources/callrecords-directroutinglogrow.md) entries in the response body. If there are more than 1000 entries in the range, the body will also include [`@odata.NextLink` entity with URL](https://docs.microsoft.com/graph/paging) to query the next page of call entries. The last page in the range will not include the nextLink.
 
 ## Examples
 
 ### Request
+
 <!-- {
   "blockType": "request",
   "name": "callrecord_getdirectroutingcalls"
 }
 -->
+
 ``` http
-GET https://graph.microsoft.com/beta/communications/callRecords/getDirectRoutingCalls(fromDateTime=String (timestamp),toDateTime=String (timestamp))
+GET https://graph.microsoft.com/beta/communications/callRecords/getDirectRoutingCalls(fromDateTime=2019-11-01,toDateTime=2019-12-01)
 ```
 
-
 ### Response
+
 **Note:** The response object shown here might be shortened for readability.
 <!-- {
   "blockType": "response",
@@ -72,15 +80,42 @@ GET https://graph.microsoft.com/beta/communications/callRecords/getDirectRouting
   "@odata.type": "Collection(microsoft.graph.callRecords.directRoutingLogRow)"
 }
 -->
+
 ``` http
 HTTP/1.1 200 OK
-
-Content-Type: application/json
 {
-  "value": [
-    {
-      "@odata.type": "microsoft.graph.callRecords.directRoutingLogRow"
-    }
-  ]
+    "@odata.context": https://graph.microsoft.com/beta/$metadata#Collection(microsoft.graph.callRecords.directRoutingLogRow)",
+    "@odata.count": 1000,
+    "value": [{
+            "id": "9e8bba57-dc14-533a-a7dd-f0da6575eed1",
+            "correlationId": "c98e1515-a937-4b81-b8a8-3992afde64e0",
+            "userId": "db03c14b-06eb-4189-939b-7cbf3a20ba27",
+            "userPrincipalName": "richard.malk@contoso.com,
+            "userDisplayName": "Richard Malk",
+            "startDateTime": "2019-11-01T00:00:25.105Z",
+            "inviteDateTime": "2019-11-01T00:00:21.949Z",
+            "failureDateTime": "0001-01-01T00:00:00Z",
+            "endDateTime": "2019-11-01T00:00:30.105Z",
+            "duration": 5,
+            "callType": "ByotIn",
+            "successfulCall": true,
+            "callerNumber": "+37220001***",
+            "calleeNumber": "+37220001***",
+            "mediaPathLocation": "USWE",
+            "signalingLocation": "EUNO",
+            "finalSipCode": 0,
+            "callEndSubReason": 540000,
+            "finalSipCodePhrase": "BYE",
+            "trunkFullyQualifiedDomainName": "tll-audiocodes01.adatum.biz",
+            "mediaBypassEnabled": false
+        },
+        .....
+        ],
+    "@odata.nextLink": "https://graph.microsoft.com/beta/communications/callRecords/getDirectRoutingCalls(fromDateTime=2019-11-01,toDateTime=2019-12-01)?$skip=1000"
 }
 ```
+
+## See also
+
+* [Microsoft Teams Direct Routing usage report](https://docs.microsoft.com/microsoftteams/teams-analytics-and-reports/pstn-usage-report#direct-routing)  in the Microsoft Teams admin center
+* [PSTN call report in Microsoft Graph](callrecords-callrecord-getpstncalls.md)

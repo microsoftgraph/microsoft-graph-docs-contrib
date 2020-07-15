@@ -1354,7 +1354,7 @@ items:
           - name: Direct Routing
             href: resources/callrecords-directroutinglogrow.md
           - name: Get Direct Routing log
-            href: api/callrecords-callrecord-getdirectroutingcallst.md
+            href: api/callrecords-callrecord-getdirectroutingcalls.md
     - name: Cross-device experiences
       displayName: Project Rome
       items:

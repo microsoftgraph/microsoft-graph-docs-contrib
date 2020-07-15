@@ -1,52 +1,59 @@
 ---
 title: "directRoutingLogRow resource type"
-description: "**TODO: Add Description**"
-author: "**TODO: Provide Github Name. See [topic-level metadata reference](https://msgo.azurewebsites.net/add/document/guidelines/metadata.html#topic-level-metadata)**"
+description: "The directRoutingLogRow type"
+author: "SanderSade"
 localization_priority: Normal
-ms.prod: "**TODO: Add MS prod. See [topic-level metadata reference](https://msgo.azurewebsites.net/add/document/guidelines/metadata.html#topic-level-metadata)**"
-doc_type: resourcePageType
+ms.prod: "cloud-communications"
+doc_type: "resourcePageType"
 ---
+
 
 # directRoutingLogRow resource type
 
 Namespace: microsoft.graph.callRecords
+[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-**TODO: Add Description**
+Represents a row of data in the Direct Routing call log. Each row maps to one call.
 
 ## Properties
+
 |Property|Type|Description|
 |:---|:---|:---|
-|calleeNumber|String|**TODO: Add Description**|
-|callEndSubReason|Int32|**TODO: Add Description**|
-|callerNumber|String|**TODO: Add Description**|
-|callType|String|**TODO: Add Description**|
-|correlationId|String|**TODO: Add Description**|
-|duration|Int32|**TODO: Add Description**|
-|failureDateTime|DateTimeOffset|**TODO: Add Description**|
-|finalSipCode|Int32|**TODO: Add Description**|
-|finalSipCodePhrase|String|**TODO: Add Description**|
-|id|String|**TODO: Add Description**|
-|inviteDateTime|DateTimeOffset|**TODO: Add Description**|
-|mediaBypassEnabled|Boolean|**TODO: Add Description**|
-|mediaPathLocation|String|**TODO: Add Description**|
-|signalingLocation|String|**TODO: Add Description**|
-|startDateTime|DateTimeOffset|**TODO: Add Description**|
-|successfulCall|Boolean|**TODO: Add Description**|
-|trunkFullyQualifiedDomainName|String|**TODO: Add Description**|
-|userDisplayName|String|**TODO: Add Description**|
-|userId|String|**TODO: Add Description**|
-|userPrincipalName|String|**TODO: Add Description**|
+|id|String|Unique call identifier. Guid.|
+|correlationId|String|Identifier for the call that you can use when calling Microsoft Support. Guid.|
+|userId|String|Calling user's ID in Graph. This and other user info will be null/empty for bot call types. Guid.|
+|userPrincipalName|String|UserPrincipalName (sign-in name) in Azure Active Directory. This is usually the same as user's SIP Address, and can be same as user's e-mail address|
+|userDisplayName|String|Display name of the user|
+|startDateTime|DateTimeOffset|Call start time.<br/>For failed and unanswered calls, this can be equal to invite or failure time|
+|inviteDateTime|DateTimeOffset| When the initial invite was sent send|
+|failureDateTime|DateTimeOffset| Only exists for failed (not fully established) calls|
+|endDateTime|DateTimeOffset| Only exists for successful (fully established) calls. Time when call ended |
+|duration|Int32| Duration of the call in seconds |
+|callType|String| Call type and direction |
+|successfulCall|Boolean| Success or attempt |
+|callerNumber|String| Number of the user or bot who made the call. [E.164](https://en.wikipedia.org/wiki/E.164) format  |
+|calleeNumber|String| Number of the user or bot who received the call.  [E.164](https://en.wikipedia.org/wiki/E.164) format |
+|mediaPathLocation|String| The datacenter used for media path in non-bypass call |
+|signalingLocation|String| The datacenter used for signaling for both bypass and non-bypass calls |
+|finalSipCode|Int32| The code with which the call ended, [RFC 3261](https://tools.ietf.org/html/rfc3261) |
+|callEndSubReason|Int32| In addition to the SIP codes, Microsoft has own subcodes that indicate the specific issue |
+|finalSipCodePhrase|String| Description of the SIP code and Microsoft subcode |
+|trunkFullyQualifiedDomainName|String| Fully qualified domain name of the session border controller |
+|mediaBypassEnabled|Boolean| Indicates if the trunk was enabled for media bypass or not |
 
 ## Relationships
+
 None.
 
 ## JSON representation
+
 The following is a JSON representation of the resource.
 <!-- {
   "blockType": "resource",
   "@odata.type": "microsoft.graph.callRecords.directRoutingLogRow"
 }
 -->
+
 ``` json
 {
   "@odata.type": "#microsoft.graph.callRecords.directRoutingLogRow",

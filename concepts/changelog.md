@@ -15,8 +15,8 @@ For a summary of the value of these API changes, as well as recent tools, compon
 ### Cloud communications
 | **Change type** | **Version**   | **Description**                          |
 | :-------------- | :------------ | :--------------------------------------- |
-|Addition| beta |Added the [PSTN call report](/graph/api/callRecord-getPstnCalls?view=graph-rest-beta) and [Direct Routing report](/graph/api/callRecord-getDirectRoutingCalls?view=graph-rest-beta) APIs
-|Addition| beta |Added new entities:<br /><li>[pstnCallLogRow](/graph/api/resources/pstnCallLogRow?view=graph-rest-beta)</li> <li>[directRoutingLogRow](/graph/api/resources/directRoutingLogRow?view=graph-rest-beta)</li>|
+|Addition| beta |Added the [PSTN call report](/graph/api/callrecords-callrecord-getpstncalls?view=graph-rest-beta) and [Direct Routing report](/graph/api/callrecords-callrecord-getdirectroutingcalls?view=graph-rest-beta) APIs
+|Addition| beta |Added new entities:<br /><li>[pstnCallLogRow](/graph/api/resources/callrecords-pstncalllogrow?view=graph-rest-beta)</li> <li>[directRoutingLogRow](/graph/api/resources/callrecords-directroutinglogrow?view=graph-rest-beta)</li>|
 
 ### Change notifications
 | **Change type** | **Version**   | **Description**                          |

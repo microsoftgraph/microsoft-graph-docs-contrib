@@ -410,7 +410,7 @@ None.
 
 The _CallRecords.Read.All_ permission grants an application privileged access to [callRecords](/graph/api/resources/callrecords-callrecord) for every call and online meeting within your organization, including calls to and from external phone numbers. This includes potentially sensitive details about who participated in the call, as well as technical information pertaining to these calls and meetings that can be used for network troubleshooting, such as IP addresses, device details, and other network information.
 
-The _CallRecords.Read.PstnCalls_ permission grants an application access to [PSTN (Calling Plans)](/graph/api/callrecords-pstnusage-list?view=graph-rest-beta) and [Direct Routing](/graph/api/callrecords-directrouting-list?view=graph-rest-beta) call logs. This includes potentially sensitive information about users as well as calls to and from external phone numbers.
+The _CallRecords.Read.PstnCalls_ permission grants an application access to [PSTN (Calling Plans)](/graph/api/callrecords-callrecord-getpstncalls?view=graph-rest-beta) and [Direct Routing](/graph/api/callrecords-callrecord-getdirectroutingcalls?view=graph-rest-beta) call logs. This includes potentially sensitive information about users as well as calls to and from external phone numbers.
 
 > **Important:** Discretion should be used when granting these permissions to applications. Call records can provide insights into the operation of your business, and so can be a target for malicious actors. Only grant these permissions to applications you trust to meet your data protection requirements.
 
