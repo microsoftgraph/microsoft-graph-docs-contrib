@@ -62,6 +62,12 @@ For a summary of the value of these API changes, as well as recent tools, compon
 |Addition|beta|Added the **azureAD** member to the [vpnAuthenticationMethod](/graph/api/resources/intune-deviceconfig-vpnauthenticationmethod?view=graph-rest-beta) enum type|
 |Addition|beta|Added the **derivedCredential** member to the [windows10VpnAuthenticationMethod](/graph/api/resources/intune-deviceconfig-windows10vpnauthenticationmethod?view=graph-rest-beta) enum type|
 
+### Files
+| **Change type** | **Version**   | **Description**                          |
+| :-------------- | :------------ | :--------------------------------------- |
+| Addition | beta | Added the [media](/graph/api/resources/media?view=graph-rest-beta) and [source](/graph/api/resources/driveItemSource?view=graph-rest-beta) properties to the [driveItem](/graph/api/resources/driveItem?view=graph-rest-beta) resource|
+| Addition | beta | Added the **Recordings** special folder to the [Get special folder](/graph/api/drive-get-specialfolder?view=graph-rest-beta) method |
+
 ### Identity and access
 | **Change type** | **Version**   | **Description**                          |
 | :-------------- | :------------ | :--------------------------------------- |

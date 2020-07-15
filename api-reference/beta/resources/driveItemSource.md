@@ -1,0 +1,65 @@
+---
+author: MarcMroz
+ms.author: brcrowne
+ms.date: 07/15/2020
+title: DriveItemSource
+localization_priority: Normal
+doc_type: resourcePageType
+ms.prod: "sharepoint"
+---
+# DriveItemSource facet
+
+The **DriveItemSource** resource contains metadata about the source of the drive item.
+
+It is available on the source property of [driveItem][item-resource] resources.
+
+## JSON representation
+
+<!-- {
+  "blockType": "resource",
+  "optionalProperties": [
+    "application",
+    "externalId",
+  ],
+  "@odata.type": "microsoft.graph.driveItemSource"
+}-->
+
+```json
+{
+  "application": "string",
+  "externalId" : "string"
+}
+```
+
+## Properties
+
+| Property                 | Type                       | Description                                                                                      |
+| :----------------------- | :------------------------  | :----------------------------------------------------------------------------------------------- |
+| **application**          | driveItemSourceApplication | Enumeration value that indicates the source application where the file was created.              |
+| **externalId**           | string                     | The external identifier for the media item from the source.                                      |
+
+### driveItemSourceApplication enumeration
+
+| Value               | Description                                       |
+|:--------------------|:--------------------------------------------------|
+| teams               | The application is Teams.                         |
+| yammer              | The application is Yammer.                        |
+| sharePoint          | The application is SharePoint.                    |
+| oneDrive            | The application is OneDrive.                      |
+| stream              | The application is Stream.                        |
+| powerPoint          | The application is PowerPoint                     |
+| unknownFutureValue  | Marker value for future compatibility.            |
+
+## Remarks
+
+For more information about the facets on a DriveItem, see [DriveItem](driveitem.md).
+
+[item-resource]: ../resources/driveitem.md
+
+<!-- {
+  "type": "#page.annotation",
+  "description": "The driveItemSource facet provides information about drive item source.",
+  "keywords": "driveItemSoruce,client,media info,onedrive",
+  "section": "documentation",
+  "tocPath": "Facets/driveItemSource"
+} -->
