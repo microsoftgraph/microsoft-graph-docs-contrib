@@ -38,7 +38,7 @@ For a summary of the value of these API changes, as well as recent tools, compon
 | Addition | beta | Added the **profileCardProperties** navigation property to the **organizationSettings** entity. |
 | Addition | beta | Added the **profileCardProperty** entity and the following operations: <br/> [List](/graph/api/organizationsettings-list-profilecardproperties) <br/> [Create](/graph/api/organizationsettings-post-profilecardproperties) <br/> [Get profileCardProperty](/graph/api/profilecardproperty-get?view=graph-rest-beta) entity. <br/> [Update profileCardProperty](/graph/api/profilecardproperty-update?view=graph-rest-beta) <br/> [Delete](/graph/api/profilecardproperty-delete) |
 | Addition | beta | Added the **itemInsights** navigation property to the **organizationSettings** entity. |
-| Addition | beta | Added the **itemInsightsSettings** entity and the following operations: <br/> [Get itemInsights](/graph/api/iteminsights-get?view=graph-rest-beta) entity. <br/> [Update itemInsights](/graph/api/iteminsights-update?view=graph-rest-beta) |
+| Addition | beta | Added the **itemInsightsSettings** entity and the following operations: <br/> [Get itemInsightSettings](/graph/api/iteminsightssettings-get?view=graph-rest-beta) entity. <br/> [Update itemInsightSettings](/graph/api/iteminsightssettings-update?view=graph-rest-beta) |
 
 ### Identity and access (Azure AD) | Conditional access
 
