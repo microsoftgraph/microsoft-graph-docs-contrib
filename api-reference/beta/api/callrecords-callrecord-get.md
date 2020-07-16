@@ -69,7 +69,7 @@ The following is an example of the request to get the basic details from a [call
   "name": "get_callrecord"
 }-->
 
-```http
+```msgraph-interactive
 GET https://graph.microsoft.com/beta/communications/callRecords/{id}
 ```
 
@@ -85,7 +85,7 @@ The following is an example of the response.
   "@odata.type": "microsoft.graph.callRecords.callRecord"
 } -->
 
-```msgraph-interactive
+```http
 HTTP/1.1 200 OK
 Content-type: application/json
 
