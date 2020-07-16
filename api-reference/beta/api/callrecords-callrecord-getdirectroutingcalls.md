@@ -85,7 +85,7 @@ GET https://graph.microsoft.com/beta/communications/callRecords/getDirectRouting
 HTTP/1.1 200 OK
 
 {
-    "@odata.context": https://graph.microsoft.com/beta/$metadata#Collection(microsoft.graph.callRecords.directRoutingLogRow)",
+    "@odata.context": "https://graph.microsoft.com/beta/$metadata#Collection(microsoft.graph.callRecords.directRoutingLogRow)",
     "@odata.count": 1000,
     "value": [{
             "id": "9e8bba57-dc14-533a-a7dd-f0da6575eed1",
