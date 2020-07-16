@@ -11,6 +11,8 @@ doc_type: apiPageType
 # Create set
 Namespace: microsoft.graph.termStore
 
+[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
+
 Create a new [set](../resources/termstore-set.md) object.
 
 ## Permissions
