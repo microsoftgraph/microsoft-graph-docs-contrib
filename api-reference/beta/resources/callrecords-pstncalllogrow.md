@@ -27,13 +27,13 @@ Represents a row of data in the PSTN call log. Each row maps to one call.
 |startDateTime|DateTimeOffset|Call start time|
 |endDateTime|DateTimeOffset|Call end time|
 |duration|Int32|How long the call was connected, in seconds|
-|charge|Decimal|Amount of money or cost of the call that is charged to your account|
+|charge|Double|Amount of money or cost of the call that is charged to your account|
 |callType|String|Whether the call was a PSTN outbound or inbound call and the type of call such as a call placed by a user or an audio conference|
 |currency|String|Type of currency used to calculate the cost of the call ([ISO 4217](https://en.wikipedia.org/wiki/ISO_4217))|
 |calleeNumber|String|Number dialed in [E.164](https://en.wikipedia.org/wiki/E.164) format |
 |usageCountryCode|String|Country code of the user, [ISO 3166-1 alpha-2](https://en.wikipedia.org/wiki/ISO_3166-1_alpha-2)|
 |tenantCountryCode|String|Country code of the tenant, [ISO 3166-1 alpha-2](https://en.wikipedia.org/wiki/ISO_3166-1_alpha-2)|
-|connectionCharge|Decimal|Connection fee price|
+|connectionCharge|Double|Connection fee price|
 |callerNumber|String|Number that received the call for inbound calls or the number dialed for outbound calls. E.164 format|
 |destinationContext|String|Whether the call was domestic (within a country or region) or international (outside a country or region) based on the user's location|
 |destinationName|String|Country or region dialed|

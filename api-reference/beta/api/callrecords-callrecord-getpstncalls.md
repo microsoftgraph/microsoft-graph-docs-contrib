@@ -90,7 +90,7 @@ HTTP/1.1 200 OK
             "id": "9c4984c7-6c3c-427d-a30c-bd0b2eacee90",
             "callId": "1835317186_112562680@61.221.3.176",
             "userId": "db03c14b-06eb-4189-939b-7cbf3a20ba27",
-            "userPrincipalName": "richard.malk@contoso.com,
+            "userPrincipalName": "richard.malk@contoso.com",
             "userDisplayName": "Richard Malk",
             "startDateTime": "2019-11-01T00:00:08.2589935Z",
             "endDateTime": "2019-11-01T00:03:47.2589935Z",
@@ -108,10 +108,7 @@ HTTP/1.1 200 OK
             "conferenceId": null,
             "licenseCapability": "MCOPSTNU",
             "inventoryType": "Subscriber"
-        },
-        {
-        ...
-        ],
+        }],
     "@odata.nextLink": "https://graph.microsoft.com/beta/communications/callRecords/getPstnCalls(from=2019-11-01,to=2019-12-01)?$skip=1000"
 }
 ```

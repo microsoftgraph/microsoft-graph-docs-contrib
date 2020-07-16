@@ -91,7 +91,7 @@ HTTP/1.1 200 OK
             "id": "9e8bba57-dc14-533a-a7dd-f0da6575eed1",
             "correlationId": "c98e1515-a937-4b81-b8a8-3992afde64e0",
             "userId": "db03c14b-06eb-4189-939b-7cbf3a20ba27",
-            "userPrincipalName": "richard.malk@contoso.com,
+            "userPrincipalName": "richard.malk@contoso.com",
             "userDisplayName": "Richard Malk",
             "startDateTime": "2019-11-01T00:00:25.105Z",
             "inviteDateTime": "2019-11-01T00:00:21.949Z",
@@ -109,9 +109,7 @@ HTTP/1.1 200 OK
             "finalSipCodePhrase": "BYE",
             "trunkFullyQualifiedDomainName": "tll-audiocodes01.adatum.biz",
             "mediaBypassEnabled": false
-        },
-        .....
-        ],
+        }],
     "@odata.nextLink": "https://graph.microsoft.com/beta/communications/callRecords/getDirectRoutingCalls(fromDateTime=2019-11-01,toDateTime=2019-12-01)?$skip=1000"
 }
 ```
