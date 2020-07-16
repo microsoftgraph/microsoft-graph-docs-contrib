@@ -11,6 +11,8 @@ doc_type: apiPageType
 # Get term
 Namespace: microsoft.graph.termStore
 
+[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
+
 Read the properties and relationships of a [term](../resources/termstore-term.md) object.
 
 ## Permissions
