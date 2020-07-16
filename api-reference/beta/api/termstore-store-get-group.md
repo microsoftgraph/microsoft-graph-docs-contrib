@@ -11,6 +11,8 @@ doc_type: apiPageType
 # Get group
 Namespace: microsoft.graph.termStore
 
+[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
+
 Read the properties and relationships of a [group](../resources/termstore-group.md) object.
 
 ## Permissions
