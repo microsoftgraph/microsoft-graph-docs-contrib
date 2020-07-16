@@ -7,15 +7,13 @@ ms.prod: "insights"
 doc_type: "apiPageType"
 ---
 
-# Update itemInsights
+# Update itemInsightsSettings
 
 Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Update [itemInsightsSettings](../resources/iteminsightssettings.md) object.
-
-To learn how to get the properties of the [itemInsightsSettings](../resources/iteminsightssettings.md) object, see [get-iteminsights](organizationsettings-get-iteminsights.md).
+Update properties of the specified [itemInsightsSettings](../resources/iteminsightssettings.md) resource.
 
 To learn how to customize item insights privacy for your organization, see [customize insights privacy](/graph/customize-item-insights-privacy.md). 
 
@@ -51,20 +49,20 @@ In the request body, supply the values for relevant fields that should be update
 
 | Property	   | Type	|Description|
 |:---------------|:--------|:----------|
-|isEnabledInOrganization|Boolean|(default true) When set to 'true', all users' item insights are enabled, except for members of one Azure Active Directory group, if it specified by the 'disabledForGroup' property. When set to 'false', all users' item insights are disabled without any exceptions.|
-|disabledForGroup|String|(default empty) an ID of Azure AD group, whose members' item insight are disabled|
+|isEnabledInOrganization|Boolean| **true** (default) if organization item insights are enabled; **false** if organization item insights are disabled for all users without exceptions. Optional.|
+|disabledForGroup|String|(default empty) an Id of Azure Active Directory group, whose members' item insights are disabled. Optional.|
 
 ## Response
 
 If successful, this method returns a `200 OK` response code and [itemInsightsSettings](../resources/iteminsightssettings.md) object in the response body.
 
->**Note:** This endpoint verifies validity of a property value but does not check existence of an Azure Active Directory Group. This means, if you configured a Azure AD group that did not exist or was deleted after, then this method will show previously predefined value of 'disabledForGroup' property but item insights of these group members might be enabled. 
+>**Note:** This endpoint verifies the validity of a property value but does not check the existence of an Azure AD Group. This means, if you configured an Azure AD group that did not exist or was deleted afterwards, then this method will show previously defined value of '**disabledForGroup**' property but item insights of these group members might be enabled. 
 
 ## Example 
 
-##### Request
+### Request
 
-Here is an example request on how admin updates 'disabledForGroup' privacy setting in order to prohibit displaying users' item insights of an particular Azure AD group.
+Here is an example request on how admin updates "**disabledForGroup**" privacy setting in order to prohibit displaying users' item insights of a particular Azure AD group.
 <!-- {
   "blockType": "request",
   "name": "update_iteminsightssettings"
