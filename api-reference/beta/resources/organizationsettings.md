@@ -20,8 +20,8 @@ Contains settings that are applicable to the [organization](organization.md) or 
 | [Get organization settings](../api/organizationsettings-get.md) | [organizationSettings](organizationsettings.md) | Read the organization settings object. |
 | [Create profileCardProperty](../api/organizationsettings-post-profilecardproperties.md) | [profileCardProperty](profilecardproperty.md) | Create a new profileCardProperty by posting to the profileCardProperties collection. |
 | [List profileCardProperties](../api/organizationsettings-list-profilecardproperties.md) | [profileCardProperty](profilecardproperty.md) collection | Get a profileCardProperty object collection. |
-| [Get itemInsights](../api/organizationsettings-get-iteminsights.md) | [itemInsightsSettings](iteminsightssettings.md) | Read the itemInsightsSettings object. |
-| [Update itemInsights](../api/organizationsettings-update-iteminsights.md) | [itemInsightsSettings](iteminsightssettings.md) | Update the itemInsightsSettings object. |
+| [Get itemInsightsSettings](../api/iteminsightssettings-get.md) | [itemInsightsSettings](iteminsightssettings.md) | Get the properties of itemInsightsSettings object. |
+| [Update itemInsightsSettings](../api/iteminsightssettings-update.md) | [itemInsightsSettings](iteminsightssettings.md) | Update properties of the specified itemInsightsSettings resource. |
 
 ## Properties
 
@@ -33,7 +33,7 @@ None.
 |:-------------|:------------|:------------|
 |id |String| Id of the settings object for the organization. |
 |profileCardProperties|[profileCardProperty](profilecardproperty.md) collection| Contains a collection of the properties an administrator has defined as visible on the M365 Profile Card. |
-|itemInsights|[itemInsightsSettings](iteminsightssettings.md)| Contains properties that are configured by an administrator for visibility of Graph-derived insights, between user and other items in the Graph such as documents or sites. |
+|itemInsights|[itemInsightsSettings](iteminsightssettings.md)| Contains the properties that are configured by an administrator for the visibility of Microsoft Graph-derived insights, between a user and other items in Microsoft 365, such as documents or sites. |
 
 ## JSON representation
 
