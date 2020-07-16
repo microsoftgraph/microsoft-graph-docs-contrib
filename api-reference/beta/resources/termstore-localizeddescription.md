@@ -12,6 +12,8 @@ doc_type: resourcePageType
 
 Namespace: microsoft.graph.termStore
 
+[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
+
 The **microsoft.graph.termStore.localizedDescription** resource represents the localized description used to describe a term in the [microsoft.graph.termStore.store]. For more info see [microsoft.graph.termStore.term].
 
 
