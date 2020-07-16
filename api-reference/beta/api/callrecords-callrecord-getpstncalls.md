@@ -82,6 +82,7 @@ GET https://graph.microsoft.com/beta/communications/callRecords/getPstnCalls(fro
 
 ``` http
 HTTP/1.1 200 OK
+
 {
     "@odata.context": "https://graph.microsoft.com/beta/$metadata#Collection(microsoft.graph.callRecords.pstnCallLogRow)",
     "@odata.count": 1000,
