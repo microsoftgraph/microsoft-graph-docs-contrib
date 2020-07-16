@@ -21,7 +21,7 @@ Insights are returned by the following APIs:
 
 Each insight is returned with a `resourceVisualization` and `resourceReference` complex value type (CVT). The resourceVisualization CVT contains properties such as `title` and `previewImageUrl`. Microsoft uses the visualization properties to render the files in experiences like Office Delve.
 
-### Item insights limitations
+### Limiting item insights
 
 Some item insights can be disabled for members of a specific Azure Active Directory group or for entire organization by [updating](../api/organizationsettings-update-iteminsights.md) the [itemInsightsSettings](iteminsightssettings.md) resource. For more details, see [customize insights privacy](/graph/customize-item-insights-privacy.md). 
 
