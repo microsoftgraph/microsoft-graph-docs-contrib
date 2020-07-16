@@ -11,6 +11,8 @@ doc_type: apiPageType
 # Create relation
 Namespace: microsoft.graph.termStore
 
+[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
+
 Create a new [relation](../resources/termstore-relation.md) object. These are used to create pinned and resued relations between terms. When creating a pinned/reused term between term and termSet then fromTerm in the post body must be null.
 
 ## Permissions
