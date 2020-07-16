@@ -55,7 +55,7 @@ If successful, this method returns a `200 OK` response code and a collection of 
 ### Request
 <!-- {
   "blockType": "request",
-  "name": "get_connectedorganization"
+  "name": "get_connectedorganizations"
 }
 -->
 ``` http
@@ -67,7 +67,7 @@ GET https://graph.microsoft.com/beta/identityGovernance/entitlementManagement/co
 <!-- {
   "blockType": "response",
   "truncated": true,
-  "@odata.type": "collection(microsoft.graph.connectedorganization)"
+  "@odata.type": "collection(microsoft.graph.connectedOrganization)"
 }
 -->
 ```http
