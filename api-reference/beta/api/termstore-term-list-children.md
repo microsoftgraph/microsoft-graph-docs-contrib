@@ -11,6 +11,8 @@ doc_type: apiPageType
 # List children
 Namespace: microsoft.graph.termStore
 
+[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
+
 Get the terms from the children navigation property.
 
 ## Permissions
