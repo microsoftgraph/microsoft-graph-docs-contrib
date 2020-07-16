@@ -12031,3 +12031,7 @@ items:
           href: api/nameditem-add.md
         - name: List range
           href: api/nameditem-range.md
+      - name: Taxonomy
+        items:
+        - name: termStore
+          href: resources/termstore-store.md
