@@ -22,6 +22,7 @@ For a summary of the value of these API changes, as well as recent tools, compon
 ### Cloud communications
 
 Adding PSTN and Direct Routing call reports to Microsoft Graph (beta)
+
 | **Change type** | **Version**   | **Description**                          |
 | :-------------- | :------------ | :--------------------------------------- |
 |Addition| beta |Added the [PSTN call report](/graph/api/callrecords-callrecord-getpstncalls?view=graph-rest-beta) and [Direct Routing report](/graph/api/callrecords-callrecord-getdirectroutingcalls?view=graph-rest-beta) APIs
