@@ -53,7 +53,7 @@ The following sections describe the high-level components of the synchronization
 ## Relationships
 |Relationship|Type|Description|
 |:---|:---|:---|
-|directories|[directoryDefinition](../resources/synchronization-directorydefinition.md) collection|Represents directory and its objects.|
+|directories|[directoryDefinition](../resources/synchronization-directorydefinition.md) collection|Contains the collection of directories and all of their objects.|
 
 ## JSON representation
 The following is a JSON representation of the resource.
