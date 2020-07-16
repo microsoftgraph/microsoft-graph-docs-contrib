@@ -11,6 +11,8 @@ doc_type: apiPageType
 # List sets
 Namespace: microsoft.graph.termStore
 
+[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
+
 Get a list of the [set](../resources/termstore-set.md) objects and their properties.
 
 ## Permissions
