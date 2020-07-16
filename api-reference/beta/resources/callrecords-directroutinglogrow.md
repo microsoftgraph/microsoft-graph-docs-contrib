@@ -11,6 +11,7 @@ doc_type: "resourcePageType"
 # directRoutingLogRow resource type
 
 Namespace: microsoft.graph.callRecords
+
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 Represents a row of data in the Direct Routing call log. Each row maps to one call.
@@ -25,14 +26,14 @@ Represents a row of data in the Direct Routing call log. Each row maps to one ca
 |userPrincipalName|String|UserPrincipalName (sign-in name) in Azure Active Directory. This is usually the same as user's SIP Address, and can be same as user's e-mail address|
 |userDisplayName|String|Display name of the user|
 |startDateTime|DateTimeOffset|Call start time.<br/>For failed and unanswered calls, this can be equal to invite or failure time|
-|inviteDateTime|DateTimeOffset| When the initial invite was sent send|
+|inviteDateTime|DateTimeOffset| When the initial invite was sent|
 |failureDateTime|DateTimeOffset| Only exists for failed (not fully established) calls|
 |endDateTime|DateTimeOffset| Only exists for successful (fully established) calls. Time when call ended |
 |duration|Int32| Duration of the call in seconds |
 |callType|String| Call type and direction |
 |successfulCall|Boolean| Success or attempt |
-|callerNumber|String| Number of the user or bot who made the call. [E.164](https://en.wikipedia.org/wiki/E.164) format  |
-|calleeNumber|String| Number of the user or bot who received the call.  [E.164](https://en.wikipedia.org/wiki/E.164) format |
+|callerNumber|String| Number of the user or bot who made the call. [E.164](https://en.wikipedia.org/wiki/E.164) format, but may include additional data  |
+|calleeNumber|String| Number of the user or bot who received the call. [E.164](https://en.wikipedia.org/wiki/E.164) format, but may include additional data |
 |mediaPathLocation|String| The datacenter used for media path in non-bypass call |
 |signalingLocation|String| The datacenter used for signaling for both bypass and non-bypass calls |
 |finalSipCode|Int32| The code with which the call ended, [RFC 3261](https://tools.ietf.org/html/rfc3261) |

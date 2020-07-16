@@ -14,7 +14,7 @@ Namespace: microsoft.graph.callRecords
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Get log for the Direct Routing calls as a collection of [directRoutingLogRow](../resources/callrecords-directroutinglogrow.md) entries.
+Get log of the Direct Routing calls as a collection of [directRoutingLogRow](../resources/callrecords-directroutinglogrow.md) entries.
 
 ## Permissions
 
@@ -55,7 +55,7 @@ The following table shows the parameters that can be used with this function.
 
 ## Function response
 
-If successful, this function returns a `200 OK` response code and a collection of [directRoutingLogRow](../resources/callrecords-directroutinglogrow.md) entries in the response body. If there are more than 1000 entries in the range, the body will also include [`@odata.NextLink` entity with URL](https://docs.microsoft.com/graph/paging) to query the next page of call entries. The last page in the range will not include the nextLink.
+If successful, this function returns a `200 OK` response code and a collection of [directRoutingLogRow](../resources/callrecords-directroutinglogrow.md) entries in the response body. If there are more than 1000 entries in the date range, the body will also include [`@odata.NextLink` entity with URL](https://docs.microsoft.com/graph/paging) to query the next page of call entries. The last page in the range will not have the `@odata.NextLink` object.
 
 ## Examples
 
@@ -117,5 +117,6 @@ HTTP/1.1 200 OK
 
 ## See also
 
-* [Microsoft Teams Direct Routing usage report](https://docs.microsoft.com/microsoftteams/teams-analytics-and-reports/pstn-usage-report#direct-routing)  in the Microsoft Teams admin center
+* [Microsoft Teams Direct Routing usage report](https://docs.microsoft.com/microsoftteams/teams-analytics-and-reports/pstn-usage-report#direct-routing) in the Microsoft Teams admin center
+* [Health Dashboard for Direct Routing](https://docs.microsoft.com/MicrosoftTeams/direct-routing-health-dashboard) in the Microsoft Teams admin center
 * [PSTN call report in Microsoft Graph](callrecords-callrecord-getpstncalls.md)

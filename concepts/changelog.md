@@ -12,17 +12,22 @@ This changelog covers specific API-level changes in Microsoft Graph v1.0 and bet
 For a summary of the value of these API changes, as well as recent tools, components, guidance, and tutorial additions, see [What's new in Microsoft Graph](whats-new-overview.md).
 
 ## July 2020
-### Cloud communications
-| **Change type** | **Version**   | **Description**                          |
-| :-------------- | :------------ | :--------------------------------------- |
-|Addition| beta |Added the [PSTN call report](/graph/api/callrecords-callrecord-getpstncalls?view=graph-rest-beta) and [Direct Routing report](/graph/api/callrecords-callrecord-getdirectroutingcalls?view=graph-rest-beta) APIs
-|Addition| beta |Added new entities:<br /><li>[pstnCallLogRow](/graph/api/resources/callrecords-pstncalllogrow?view=graph-rest-beta)</li> <li>[directRoutingLogRow](/graph/api/resources/callrecords-directroutinglogrow?view=graph-rest-beta)</li>|
 
 ### Change notifications
 | **Change type** | **Version**   | **Description**                          |
 | :-------------- | :------------ | :--------------------------------------- |
 | Removal | beta and v1.0 | Removed the erronously introduced **sequenceNumber** property from the [changeNotification](/graph/api/resources/changenotification) type.|
 | Addition | Beta | Adds [presence](/api/resources/presence) (preview) to resources supported for [change notifications](/graph/webhooks). |
+
+### Cloud communications
+
+Adding PSTN and Direct Routing call reports to Microsoft Graph (beta)
+| **Change type** | **Version**   | **Description**                          |
+| :-------------- | :------------ | :--------------------------------------- |
+|Addition| beta |Added the [PSTN call report](/graph/api/callrecords-callrecord-getpstncalls?view=graph-rest-beta) and [Direct Routing report](/graph/api/callrecords-callrecord-getdirectroutingcalls?view=graph-rest-beta) APIs
+|Addition| beta |Added new entities:<br /><li>[pstnCallLogRow](/graph/api/resources/callrecords-pstncalllogrow?view=graph-rest-beta)</li> <li>[directRoutingLogRow](/graph/api/resources/callrecords-directroutinglogrow?view=graph-rest-beta)</li>|
+
+
 
 ### Devices and apps | Cloud printing
 
