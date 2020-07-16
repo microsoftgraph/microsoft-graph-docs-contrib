@@ -7,15 +7,13 @@ ms.prod: "insights"
 doc_type: "apiPageType"
 ---
 
-# Get itemInsights
+# Get itemInsightsSettings
 
 Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Read [itemInsightsSettings](../resources/iteminsightssettings.md) object.
-
-To learn how to update the properties of the [itemInsightsSettings](../resources/iteminsightssettings.md) object, see [update-iteminsights](organizationsettings-update-iteminsights.md).
+Get the properties of [itemInsightsSettings](../resources/iteminsightssettings.md) object.
 
 To learn how to customize item insights privacy for your organization, see [customize insights privacy](/graph/customize-item-insights-privacy.md). 
 
@@ -52,7 +50,7 @@ Do not supply a request body for this method.
 
 If successful, this method returns a `200 OK` response code and [itemInsightsSettings](../resources/iteminsightssettings.md) object in the response body.
 
->**Note:** This endpoint verifies validity of a property value but does not check existence of an Azure Active Directory Group. This means, if you configured a Azure AD group that did not exist or was deleted after, then this method will show previously predefined value of 'disabledForGroup' property but item insights of these group members might be enabled. 
+>**Note:** This endpoint verifies the validity of a property value but does not check the existence of an Azure AD Group. This means, if you configured an Azure AD group that did not exist or was deleted afterwards, then this method will show previously defined value of '**disabledForGroup**' property but item insights of these group members might be enabled. 
 
 ## Example
 
