@@ -11,6 +11,8 @@ doc_type: apiPageType
 # Update set
 Namespace: microsoft.graph.termStore
 
+[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
+
 Update the properties of a [set](../resources/termstore-set.md) object.
 
 ## Permissions
