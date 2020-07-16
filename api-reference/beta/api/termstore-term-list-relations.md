@@ -11,6 +11,8 @@ doc_type: apiPageType
 # List relations
 Namespace: microsoft.graph.termStore
 
+[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
+
 Get the relations from the relations navigation property.
 
 ## Permissions
