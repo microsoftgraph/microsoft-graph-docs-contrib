@@ -10,6 +10,7 @@ doc_type: apiPageType
 
 # Get set
 Namespace: microsoft.graph.termStore
+[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 Read the properties and relationships of a [set](../resources/termstore-set.md) object.
 
