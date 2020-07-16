@@ -11,6 +11,8 @@ doc_type: apiPageType
 # Delete groups
 Namespace: microsoft.graph.termStore
 
+[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
+
 Delete a [group](../resources/termstore-group.md) object.
 
 ## Permissions
