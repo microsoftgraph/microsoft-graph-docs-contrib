@@ -118,6 +118,6 @@ Looking for the API reference for these services?
 * Use the [Graph Explorer](https://developer.microsoft.com/graph/graph-explorer) to try out the people, insights, and analytics APIs with your own files. Sign in, and choose **Show more samples** in the column on the left. Use the menu to turn on **People**, **Insights**, and **Analytics**.
 * Find more about the [people API](people-example.md).
 * See how to [customize the profile card](add-properties-profilecard.md).
-* Find out more about [customizing user privacy](customize-item-insights-privacy.md), and the [itemInsights API](/api-reference/beta/resources/iteminsights.md).
+* Find out more about [customizing user privacy](customize-item-insights-privacy.md), and the [insights API](/api-reference/beta/resources/iteminsights.md).
 * Find more about the [analytics API](/graph/api/resources/social-overview?view=graph-rest-beta#help-users-balance-work-and-life).
 * Find more about the [profile API](/graph/api/resources/profile?view=graph-rest-beta).
