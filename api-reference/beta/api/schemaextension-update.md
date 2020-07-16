@@ -89,7 +89,7 @@ Content-length: 201
       "name":"additional-name-value",
       "type":"additional-type-value"
     }
-  ],
+  ]
 }
 ```
 # [C#](#tab/csharp)
