@@ -302,14 +302,14 @@ items:
             href: api/insights-list-trending.md
           - name: List used
             href: api/insights-list-used.md
-          - name: Control access to item insights
-            items:
-            - name: Item insights settings
-              href: resources/iteminsightssettings.md
-            - name: Get itemInsights
-              href: api/organizationsettings-get-iteminsights.md
-            - name: Update itemInsights
-              href: api/organizationsettings-update-iteminsights.md
+        - name: Control access to item insights
+          items:
+          - name: Item insights settings
+            href: resources/iteminsightssettings.md
+          - name: Get
+            href: api/iteminsightssettings-get.md
+          - name: Update
+            href: api/iteminsightssettings-update.md
       - name: Mail
         href: resources/message.md
         items:
