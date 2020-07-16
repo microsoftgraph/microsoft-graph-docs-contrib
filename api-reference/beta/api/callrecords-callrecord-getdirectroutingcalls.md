@@ -1,12 +1,11 @@
 ---
-title: "callRecord: Description"
+title: "callRecord: getDirectRoutingCalls"
 description: "Retrieve the Direct Routing call report"
 author: "SanderSade"
 localization_priority: Normal
 ms.prod: "cloud-communications"
 doc_type: "apiPageType"
 ---
-
 
 # Retrieve the Direct Routing call report
 
@@ -79,7 +78,7 @@ GET https://graph.microsoft.com/beta/communications/callRecords/getDirectRouting
   "truncated": true,
   "@odata.type": "microsoft.graph.callRecords.directRoutingLogRow",
   "isCollection": true
-}
+} 
 -->
 
 ``` http

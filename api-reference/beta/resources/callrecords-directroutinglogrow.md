@@ -7,7 +7,6 @@ ms.prod: "cloud-communications"
 doc_type: "resourcePageType"
 ---
 
-
 # directRoutingLogRow resource type
 
 Namespace: microsoft.graph.callRecords
@@ -51,7 +50,9 @@ None.
 The following is a JSON representation of the resource.
 <!-- {
   "blockType": "resource",
-  "@odata.type": "microsoft.graph.callRecords.directRoutingLogRow"
+  "@odata.type": "microsoft.graph.callRecords.directRoutingLogRow",
+  "baseType": "",
+  "keyProperty": "id"
 }
 -->
 
