@@ -226,7 +226,6 @@ The following limits apply to any request on `/invitations`.
 | Any operation             | 150 requests per 5 seconds   |
 
 <!-- { "blockType": "throttlinggenstart" } -->
-
 ### Education service limits
 
 [!INCLUDE [Education rostering APIS throttling documentation](../includes/throttling-education-rostering-apis.md)]
