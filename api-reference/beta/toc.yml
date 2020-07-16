@@ -10121,6 +10121,8 @@ items:
               href: api/accesspackage-post.md
             - name: Get
               href: api/accesspackage-get.md
+            - name: Update
+              href: api/accesspackage-update.md
             - name: Delete
               href: api/accesspackage-delete.md
           - name: Access package assignment
@@ -10137,6 +10139,8 @@ items:
               href: api/accesspackageassignmentpolicy-post.md
             - name: Get
               href: api/accesspackageassignmentpolicy-get.md
+            - name: Update
+              href: api/accesspackageassignmentpolicy-update.md
             - name: Delete
               href: api/accesspackageassignmentpolicy-delete.md
           - name: Access package assignment request
@@ -10164,6 +10168,8 @@ items:
               href: api/accesspackagecatalog-post.md
             - name: Get
               href: api/accesspackagecatalog-get.md
+            - name: Update
+              href: api/accesspackage-update.md
             - name: Delete
               href: api/accesspackagecatalog-delete.md
             - name: List resources
