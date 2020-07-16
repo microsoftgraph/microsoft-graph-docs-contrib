@@ -1,6 +1,6 @@
 ---
 title: "set resource type"
-description:  "Describes the termSet in the termStore"
+description: "Describes the termSet in the termStore"
 author: mohitpcad
 ms.author: mopathak
 localization_priority: Normal
