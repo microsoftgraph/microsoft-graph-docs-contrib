@@ -80,3 +80,4 @@ The following is a JSON representation of the resource.
   "trunkFullyQualifiedDomainName": "String",
   "mediaBypassEnabled": "Boolean"
 }
+```
