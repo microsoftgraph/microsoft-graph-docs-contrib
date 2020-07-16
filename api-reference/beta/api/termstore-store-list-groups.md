@@ -11,6 +11,8 @@ doc_type: apiPageType
 # List groups
 Namespace: microsoft.graph.termStore
 
+[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
+
 Get the groups from the groups navigation property.
 
 ## Permissions
