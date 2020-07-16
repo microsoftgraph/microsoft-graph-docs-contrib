@@ -17,8 +17,8 @@ Represents privacy settings for [itemInsights](iteminsights.md), which configure
 
 | Method       | Return Type | Description |
 |:-------------------------------------------------------------|:----------------------------------------------|:-----------------------------------------------------------------|
-| [Get](../api/organizationsettings-get-iteminsights.md)| [itemInsightsSettings](iteminsightssettings.md) | Read the properties of a **itemInsightsSettings** object. |
-| [Update](../api/organizationsettings-update-iteminsights.md)| [itemInsightsSettings](iteminsightssettings.md) | Update a **itemInsightsSettings** object.|
+| [Get](../api/organizationsettings-get-iteminsights.md)| [itemInsightsSettings](iteminsightssettings.md) | Read the properties of an **itemInsightsSettings** object. |
+| [Update](../api/organizationsettings-update-iteminsights.md)| [itemInsightsSettings](iteminsightssettings.md) | Update an **itemInsightsSettings** object.|
 
 
 ## Properties
