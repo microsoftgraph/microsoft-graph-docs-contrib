@@ -49,8 +49,8 @@ In the request body, supply the values for relevant fields that should be update
 
 | Property	   | Type	|Description|
 |:---------------|:--------|:----------|
-|isEnabledInOrganization|Boolean| **true** (default) if organization item insights are enabled; **false** if organization item insights are disabled for all users without exceptions. Optional.|
-|disabledForGroup|String|(default empty) an Id of Azure Active Directory group, whose members' item insights are disabled. Optional.|
+|isEnabledInOrganization|Boolean| `true` if organization item insights are enabled; `false` if organization item insights are disabled for all users without exceptions. Default is `true`. Optional.|
+|disabledForGroup|String| an ID of an Azure AD group, of which the members' item insights are disabled. Default is `empty`. Optional.|
 
 ## Response
 
