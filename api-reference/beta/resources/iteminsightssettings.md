@@ -11,21 +11,21 @@ doc_type: resourcePageType
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Represents privacy settings for [itemInsights](iteminsights.md), which configure the visibility of Graph-derived insights, between users and other items in the Graph (such as documents or sites) across apps and services in Microsoft 365.
+Represents privacy settings for [itemInsights](iteminsights.md), which configure the visibility of insights derived from Microsoft Graph, between users and other items (such as documents or sites) in Microsoft 365.
 
 ## Methods
 
 | Method       | Return Type | Description |
 |:-------------------------------------------------------------|:----------------------------------------------|:-----------------------------------------------------------------|
-| [Get](../api/organizationsettings-get-iteminsights.md)| [itemInsightsSettings](iteminsightssettings.md) | Read the properties of an **itemInsightsSettings** object. |
-| [Update](../api/organizationsettings-update-iteminsights.md)| [itemInsightsSettings](iteminsightssettings.md) | Update an **itemInsightsSettings** object.|
+| [Get](../api/iteminsightssettings-get.md)| [itemInsightsSettings](iteminsightssettings.md) | Read the properties of an **itemInsightsSettings** object. |
+| [Update](../api/iteminsightssettings-update.md)| [itemInsightsSettings](iteminsightssettings.md) | Update an **itemInsightsSettings** object.|
 
 
 ## Properties
 | Property   | Type|Description|
 |:---------------|:--------|:----------|
-|isEnabledInOrganization|Boolean| **true** (default) if organization item insights are enabled; **false** if organization item insights are disabled for all users without exceptions. Optional.|
-|disabledForGroup|String|(default empty) an Id of Azure Active Directory group, whose members' item insights are disabled. Optional.|
+|isEnabledInOrganization|Boolean| `true` if organization item insights are enabled; `false` if organization item insights are disabled for all users without exceptions. Default is `true`. Optional.|
+|disabledForGroup|String| an ID of an Azure AD group, of which the members' item insights are disabled. Default is `empty`. Optional.|
 
 ## JSON representation
 
