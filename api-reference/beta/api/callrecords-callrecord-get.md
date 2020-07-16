@@ -85,7 +85,7 @@ The following is an example of the response.
   "@odata.type": "microsoft.graph.callRecords.callRecord"
 } -->
 
-```http
+```msgraph-interactive
 HTTP/1.1 200 OK
 Content-type: application/json
 
