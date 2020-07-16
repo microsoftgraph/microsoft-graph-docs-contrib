@@ -12035,8 +12035,22 @@ items:
         items:
         - name: termStore-store
           href: resources/termstore-store.md
-        - name: termstore-group
+          items:
+          - name: Get store
+            href: api/termstore-store-get.md
+          - name: Update store
+            href: api/termstore-store-update.md
+          - name: Get groups
+            href: api/termstore-store-list-groups.md
+        - name: termstore-group        
           href: resources/termstore-group.md
+          items:
+          - name: Get group
+            href: api/termstore-store-get-group.md
+          - name: Create group
+            href: api/termstore-store-post-group.md
+          - name: Delete group
+            href: api/termstore-store-delete-group.md
         - name: termstore-set
           href: resources/termstore-set.md
         - name: termstore-term
