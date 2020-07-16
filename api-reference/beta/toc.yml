@@ -10184,6 +10184,19 @@ items:
               href: api/accesspackage-list-accesspackageresourcerolescopes.md
             - name: Create
               href: api/accesspackage-post-accesspackageresourcerolescopes.md
+          - name: Connected organization
+            href: resources/connectedorganization.md
+            items:
+            - name: List
+              href: api/connectedorganization-list.md
+            - name: Create
+              href: api/connectedorganization-post.md
+            - name: Get
+              href: api/connectedorganization-get.md
+            - name: Update
+              href: api/connectedorganization-update.md
+            - name: Delete
+              href: api/connectedorganization-delete.md
         - name: Privileged Identity Management
           items:
           - name: Privileged Identity Management
