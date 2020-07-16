@@ -133,6 +133,6 @@ Content-type: application/json
     }
   },
   "type": "birthday",
-  "date": "Date"
+  "date": "1980-01-08"
 }
 ```
