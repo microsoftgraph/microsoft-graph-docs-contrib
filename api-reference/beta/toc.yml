@@ -12033,5 +12033,13 @@ items:
           href: api/nameditem-range.md
       - name: Taxonomy
         items:
-        - name: termStore
+        - name: termStore-store
           href: resources/termstore-store.md
+        - name: termstore-group
+          href: resources/termstore-group.md
+        - name: termstore-set
+          href: resources/termstore-set.md
+        - name: termstore-term
+          href: resources/termstore-term.md
+        - name: termstore-relation
+          href: resources/termstore-relation.md
