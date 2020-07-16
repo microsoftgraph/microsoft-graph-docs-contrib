@@ -71,7 +71,7 @@ Any user that disabled item insights will have their activity removed from organ
 
 
 ### Transition period
-We understand that some of tenants might need time to tune new setting and that is why after the feature launching, the countdown of 6 months period begins, during this time we will respect both Delve settings and brand-new item insights settings. During that period the settings are applied in the following order: new item insights configuration is applied if it’s not set to default state (`isEnabledInOrganization` == true, `disabledForGroup` == empty), otherwise pre-existed Delve settings will be respected.   
+We understand that some of tenants might need time to tune new setting and that is why after the feature launching, till the end of 2020, during this time we will respect both Delve settings and brand-new item insights settings. During that period the settings are applied in the following order: new item insights configuration is applied if it’s not set to default state (`isEnabledInOrganization` == true, `disabledForGroup` == empty), otherwise pre-existed Delve settings will be respected.   
 
 After transition period ends pre-existed Delve settings will control only Delve experience and new settings will affect Graph item insights only. Make sure to configure the item insights according to your organization´s requirements.
 
