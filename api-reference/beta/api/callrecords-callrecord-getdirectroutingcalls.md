@@ -77,7 +77,8 @@ GET https://graph.microsoft.com/beta/communications/callRecords/getDirectRouting
 <!-- {
   "blockType": "response",
   "truncated": true,
-  "@odata.type": "Collection(microsoft.graph.callRecords.directRoutingLogRow)"
+  "@odata.type": "microsoft.graph.callRecords.directRoutingLogRow",
+  "isCollection": true
 }
 -->
 
