@@ -8,7 +8,7 @@ localization_priority: Priority
 
 # Set up change notifications that include resource data (preview)
 
-Microsoft Graph allows apps to subscribe to change notifications for resources via [webhooks](webhooks.md). You can now set up subscriptions to include the changed resource data (such as the content of a Microsoft Teams chat message or Microsoft Teams presence information) in change notifications. Your app can then run its business logic without having to make a separate API call to fetch the changed resource. As a result, the app performs better by making fewer API calls, which is beneficial in large scale scenarios.
+Microsoft Graph allows apps to subscribe to change notifications for resources via [webhooks](webhooks.md). You can set up subscriptions to include the changed resource data (such as the content of a Microsoft Teams chat message or Microsoft Teams presence information) in change notifications. Your app can then run its business logic without having to make a separate API call to fetch the changed resource. As a result, the app performs better by making fewer API calls, which is beneficial in large scale scenarios.
 
 Including resource data as part of change notifications requires you to implement the following additional logic to satisfy data access and security requirements: 
 
