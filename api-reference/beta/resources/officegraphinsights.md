@@ -28,9 +28,9 @@ Each insight is returned with a **resourceVisualization** and **resourceReferenc
 
 | Relationship      | Type          | Description  |
 | ------------- |---------------| -------------|
-| trending    	| [trending](insights-trending.md) collection		| Access this property from the derived type [itemInsights](iteminsights.md)|
-| used    	| [usedInsight](insights-used.md) collection		| Access this property from the derived type [itemInsights](iteminsights.md)|
-| shared    	| [sharedInsight](insights-shared.md) collection		| Access this property from the derived type [itemInsights](iteminsights.md)|
+| trending    	| [trending](insights-trending.md) collection		| Access this property from the derived type [itemInsights](iteminsights.md).|
+| used    	| [usedInsight](insights-used.md) collection		| Access this property from the derived type [itemInsights](iteminsights.md).|
+| shared    	| [sharedInsight](insights-shared.md) collection		| Access this property from the derived type [itemInsights](iteminsights.md).|
 
 
 ## JSON representation
