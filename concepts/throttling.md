@@ -155,9 +155,9 @@ The following resources are provided by the Outlook service.
 The preceding limits apply to the following resources:  
 onenote, notebook, sectionGroup, onenoteSection, onenotePage, onenoteResource, onenoteOperation
 
-You can find additional information about best practices to avoid throttling with OneNote APIs [in the following blog post](https://developer.microsoft.com/en-us/office/blogs/onenote-api-throttling-and-how-to-avoid-it/).  
+You can find additional information about best practices in [OneNote API throttling and how to avoid it](https://developer.microsoft.com/en-us/office/blogs/onenote-api-throttling-and-how-to-avoid-it/).  
 
-> **Note:** at the moment the resources listed above do not return a `Retry-After` header on `429 Too Many Requests` responses.
+> **Note:** The resources listed above do not return a `Retry-After` header on `429 Too Many Requests` responses.
 
 ### Microsoft Teams service limits
 
@@ -195,7 +195,7 @@ and [polling requirements](/graph/api/resources/teams-api-overview#polling-requi
 The preceding limits apply to the following resources:  
 riskDetection, riskyUser, riskyUserHistoryItem, namedLocation, countryNamedLocation, ipNamedLocation, conditionalAccessPolicy.
 
-> **Note:** at the moment the resources listed above do not return a `Retry-After` header on `429 Too Many Requests` responses.
+> **Note:** The resources listed above do not return a `Retry-After` header on `429 Too Many Requests` responses.
 
 ### Insights service limits
 
