@@ -11,6 +11,8 @@ doc_type: apiPageType
 # Create groups
 Namespace: microsoft.graph.termStore
 
+[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
+
 Create a new groups object.
 
 ## Permissions
