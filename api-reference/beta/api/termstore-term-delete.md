@@ -11,6 +11,8 @@ doc_type: apiPageType
 # Delete term
 Namespace: microsoft.graph.termStore
 
+[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
+
 Deletes a [term](../resources/termstore-term.md) object.
 
 ## Permissions
