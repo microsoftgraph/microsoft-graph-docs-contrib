@@ -47,7 +47,7 @@ In the request body, supply a JSON representation of an [ediscoveryCase](../reso
 
 ## Response
 
-If successful, this method returns `201, Created` response code and a new [ediscoveryCase](../resources/ediscoverycase.md) object in the response body.
+If successful, this method returns a `201 Created` response code and a new [ediscoveryCase](../resources/ediscoverycase.md) object in the response body.
 
 ## Examples
 
