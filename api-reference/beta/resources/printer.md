@@ -34,6 +34,9 @@ Represents a physical printer device that has been registered with the Universal
 | [List allowedGroups](../api/printer-list-allowedgroups.md) | [printIdentity](printidentity.md) collection | Retrieve a list of groups which have been granted access to submit print jobs to the associated printer. |
 | [Add allowedGroup](../api/printer-post-allowedgroups.md) | None | Grant the specified group access to submit print jobs to the associated printer. |
 | [Remove allowedGroup](../api/printer-delete-allowedgroup.md) | None | Revoke printer access from the specified group. |
+| [List taskTriggers](../api/printer-list-tasktriggers.md) | None | List [printTaskTriggers](printtasktrigger.md) associated with this printer. |
+| [Create taskTrigger](../api/printer-post-tasktriggers.md) | [printTaskTrigger](printtasktrigger.md) | Create a [printTaskTrigger](printtasktrigger.md) that runs when print events occur. |
+| [Delete taskTrigger](../api/printer-delete-tasktrigger.md) | None | Delete a [printTaskTrigger](printtasktrigger.md) that is associated with the printer. |
 
 ## Properties
 | Property     | Type        | Description |
@@ -57,6 +60,7 @@ Represents a physical printer device that has been registered with the Universal
 |connectors|[printConnector](printconnector.md)|The connectors that are associated with the printer.|
 |allowedUsers|[printUserIdentity](printuseridentity.md) collection|The users who have access to print using the printer.|
 |allowedGroups|[printIdentity](printidentity.md)|The groups whose users have access to print using the printer.|
+|taskTriggers|[printTaskTrigger](printtasktrigger.md) collection|A list of task triggers that are associated with the printer.|
 
 ## JSON representation
 
