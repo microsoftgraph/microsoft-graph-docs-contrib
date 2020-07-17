@@ -159,7 +159,7 @@ Microsoft Graph validates the notification endpoint provided in the `notificatio
 
 1. The client must properly decode the `validationToken` provided in the preceding step but treat the token value as opaque, as the token format can generally change without notice. 
 
-1. The client must provide a response with the following characteristics within 10 seconds:
+1. The client must provide a response with the following characteristics within 10 seconds of step 1:
 
     - A status code of `HTTP 200 OK`.
     - A content type of `text/plain`.
