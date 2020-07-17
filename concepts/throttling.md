@@ -168,6 +168,7 @@ You can find additional information about best practices in [OneNote API throttl
 ### Project Rome service limits
 
 | Request type | Limit per user for all apps |
+| ------------ | --------------------------- |
 | GET          | 400 requests per 5 minutes and 12000 requests per 1 day |
 | POST, PUT, PATCH, DELETE | 100 requests per 5 minutes and 8000 requests per 1 day |
 
@@ -250,6 +251,17 @@ The following limits apply to any request on `/invitations`.
 | Operation                 | Limit per tenant             |
 |---------------------------|------------------------------|
 | Any operation             | 150 requests per 5 seconds   |
+
+### Security detections and incidents service limits
+
+The following limits apply to any request on `/security`.
+
+| Operation                  | Limit per app per tenant     |
+|----------------------------|------------------------------|
+| Any operation on `alert`, `securityActions`,  `secureScore` | 150 requests per minute      |
+| Any operation on `tiIndicator` | 1000 requests per minute |
+| Any operation on `secureScore` or `secureScorecontrolProfile` | 10,000 API requests in a 10 minute period |
+| Any operation on `secureScore` or `secureScorecontrolProfile` | 4 concurrent requests |
 
 ### Open and schema extensions service limits
 
