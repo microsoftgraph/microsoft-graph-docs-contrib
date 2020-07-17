@@ -237,6 +237,15 @@ The following limits apply to any request on `/invitations`.
 |---------------------------|------------------------------|
 | Any operation             | 150 requests per 5 seconds   |
 
+### Open and schema extensions service limits
+
+| Request type | Limit per app per tenant |
+| ------------ | ------------------------ |
+| Any          | 455 requests per 10 seconds |
+
+The preceding limits apply to the following resources: 
+openTypeExtension, schemaExtension, administrativeUnit, contact, device, event, group, message, organization, post, and user.
+
 <!-- { "blockType": "throttlinggenstart" } -->
 ### Education service limits
 
