@@ -28,7 +28,7 @@ The error object includes the following properties:
 
 The `message` property contains an error message intended for the developer to read. Error messages are not localized and shouldn't be displayed directly to the user. When handling errors, your code should not key off of `message` values because they may change at any time, and they often contain dynamic information specific to the failed request. The `innerError` object might recursively contain more `innerError` objects with additional, more specific error codes.
 
-## Error code and message
+## Error code
 
 Below we listed current error codes and messages. The service might add new error codes at any time.
 
