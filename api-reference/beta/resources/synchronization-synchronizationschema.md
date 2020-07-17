@@ -23,7 +23,7 @@ The following sections describe the high-level components of the synchronization
 
 ## Synchronization rules
 
-[Synchronization rules](synchronization-synchronizationrule.md) are the core of the synchronization setup. They define for the synchronization engine how the synchronization should be performed, including what objects should be synchronized, how objects from the source directory should be matched with objects in the target directory, and how attributes should be transformed when they're synchronized from the source to the target directory. 
+[Synchronization rules](synchronization-synchronizationrule.md) are the core of the synchronization setup. They define for the synchronization engine how the synchronization should be performed, including what objects should be synchronized, how objects from the source directory should be matched with objects in the target directory, and how attributes should be transformed when they're synchronized from the source to the target directory.
 
 ## Object mappings
 
@@ -31,14 +31,14 @@ The following sections describe the high-level components of the synchronization
 
 ## Methods
 
-| Method        | Return Type               | Description                  |
-|:--------------|:--------------------------|:-----------------------------|
-|[Get schema](../api/synchronization-synchronizationschema-get.md)    |[synchronizationSchema](synchronization-synchronizationschema.md)   |Read properties and relationships of the **synchronizationSchema** object.|
-|[Update schema](../api/synchronization-synchronizationschema-update.md)    |None   |Update the synchronization schema. |
-|[Delete schema](../api/synchronization-synchronizationschema-delete.md)    |None   |Delete the customized schema, resetting the schema to the default configuration. |
-|[List filter operators](../api/synchronization-synchronizationschema-filteroperators.md)    |[filterOperatorSchema](../resources/synchronization-filteroperatorschema.md) colection   |List all operators supported in the scoping filters. |
-|[List attribute mapping functions](../api/synchronization-synchronizationschema-functions.md)    |[attributeMappingFunctionSchema](../resources/synchronization-attributemappingfunctionschema.md) collection   |List all functions supported in the attribute mapping expressions. |
-|[Parse attribute mapping expression](../api/synchronization-synchronizationschema-parseexpression.md)|[parseExpressionResponse](synchronization-parseexpressionresponse.md)|Parse a string expression into an [attributeMappingSource|(../resources/synchronization_attributemappingsource.md) object.|
+| Method                                                                                                | Return Type                                                                                                 | Description                                                                                                                |
+|:------------------------------------------------------------------------------------------------------|:------------------------------------------------------------------------------------------------------------|:---------------------------------------------------------------------------------------------------------------------------|
+| [Get schema](../api/synchronization-synchronizationschema-get.md)                                     | [synchronizationSchema](synchronization-synchronizationschema.md)                                           | Read properties and relationships of the **synchronizationSchema** object.                                                 |
+| [Update schema](../api/synchronization-synchronizationschema-update.md)                               | None                                                                                                        | Update the synchronization schema.                                                                                         |
+| [Delete schema](../api/synchronization-synchronizationschema-delete.md)                               | None                                                                                                        | Delete the customized schema, resetting the schema to the default configuration.                                           |
+| [List filter operators](../api/synchronization-synchronizationschema-filteroperators.md)              | [filterOperatorSchema](../resources/synchronization-filteroperatorschema.md) collection                      | List all operators supported in the scoping filters.                                                                       |
+| [List attribute mapping functions](../api/synchronization-synchronizationschema-functions.md)         | [attributeMappingFunctionSchema](../resources/synchronization-attributemappingfunctionschema.md) collection | List all functions supported in the attribute mapping expressions.                                                         |
+| [Parse attribute mapping expression](../api/synchronization-synchronizationschema-parseexpression.md) | [parseExpressionResponse](synchronization-parseexpressionresponse.md)                                       | Parse a string expression into an [attributeMappingSource](../resources/synchronization-attributemappingsource.md) object. |
 
 
 ## Properties

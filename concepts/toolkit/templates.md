@@ -77,10 +77,10 @@ TemplateHelper.setBindingSyntax('[[', ']]');
 
 The following properties can also be used with the data context object in your templates.
 
-| Property |  Description |
-| --- | --- | --- |
-| $index | Numerical index of item being rendered while being looped with `data-for`. |
-| $parent | If a template is rendered inside another template, this property allows you to access the parent data context. |
+| Property | Description                                                                                                    |
+|----------|----------------------------------------------------------------------------------------------------------------|
+| $index   | Numerical index of item being rendered while being looped with `data-for`.                                     |
+| $parent  | If a template is rendered inside another template, this property allows you to access the parent data context. |
 
 The following example shows how to use the `$index` property in a data-for loop.
 
@@ -133,7 +133,7 @@ In scenarios where you need to convert data in your bindings, bind to events, or
 
 1. Directly on the component.
 
-    Each component defines the `templateContext` property, which you can use to pass additional data to any template in the component. 
+    Each component defines the `templateContext` property, which you can use to pass additional data to any template in the component.
 
     ```ts
     document.querySelector('mgt-agenda').templateContext = {
@@ -190,7 +190,7 @@ To use the converter in your template, use it as if you would use a function in 
 
 ### Event or property binding
 
-The `data-props` attribute allows you to add an event listener or set a property value directly in your templates. 
+The `data-props` attribute allows you to add an event listener or set a property value directly in your templates.
 
 ```html
 <template>
@@ -198,7 +198,7 @@ The `data-props` attribute allows you to add an event listener or set a property
 </template>
 ```
 
-The data-props accepts a comma delimited string for each property or event handler you might want to set. 
+The data-props accepts a comma delimited string for each property or event handler you might want to set.
 
 To add an event handler, prefix the name of the event with `@`. The event handler will need to be available in the `templateContext` of the element.
 
@@ -233,7 +233,7 @@ agenda.addEventListener('templateRendered', (e) => { });
 The event details will contain a reference to the element that is being rendered, the data context object, and the type of the template.
 
 ```ts
-agenda.addEventListener('templateRendered', (e) => { 
+agenda.addEventListener('templateRendered', (e) => {
   let templateType = e.detail.templateType;
   let dataContext = e.detail.context;
   let element = e.detail.element;

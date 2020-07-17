@@ -17,11 +17,11 @@ After Microsoft Graph accepts the subscription request, it pushes change notific
 > [!VIDEO https://www.youtube-nocookie.com/embed/rC1bunenaq4]
  
 > [!div class="nextstepaction"]
-> [Build a webhook app with .NET Core](/graph/tutorials/change-notifications)
+> [Tutorial: Use Change Notifications and Track Changes with Microsoft Graph](/learn/modules/msgraph-changenotifications-trackchanges)
 
 By default, change notifications do not contain resource data, other than the `id`. If the app requires resource data, it can make calls to Microsoft Graph APIs to get the full resource. This article uses the **user** resource as an example for working with change notifications.
 
-An app can also subscribe to change notifications that include resource data, to avoid having to make additonal API calls to access the data. Such apps will need to implement extra code to handle the requirements of such notifications, specifically: responding to subscription lifecycle notifications, validating the authenticity of notifications, and decrypting the resource data. More resource types will support this type of notifications in the future. For details about how to work with these notificatios, see [Set up change notifications that include resource data (preview)](webhooks-with-resource-data.md).
+An app can also subscribe to change notifications that include resource data, to avoid having to make additional API calls to access the data. Such apps will need to implement extra code to handle the requirements of such notifications, specifically: responding to subscription lifecycle notifications, validating the authenticity of notifications, and decrypting the resource data. More resource types will support this type of notifications in the future. For details about how to work with these notifications, see [Set up change notifications that include resource data (preview)](webhooks-with-resource-data.md).
 
 ## Supported resources
 
@@ -32,18 +32,19 @@ Using the Microsoft Graph API, an app can subscribe to changes on the following 
 - Outlook personal [contact][]
 - [user][]
 - [group][]
-- Office 365 group [conversation][]
+- Microsoft 365 group [conversation][]
 - Content within the hierarchy of _any folder_ [driveItem][] on a user's personal OneDrive
 - Content within the hierarchy of the _root folder_ [driveItem][] on OneDrive for Business
 - Security [alert][]
 - Teams [callRecord][]
 - Teams [chatMessage][] (preview)
+- Teams [presence][] (preview)
 
 You can create a subscription to a specific Outlook folder such as the Inbox:
 `me/mailFolders('inbox')/messages`
 
 Or to a top-level resource:
-`/me/messages`, `/me/contacts`, `/me/events`, `users`, `groups`, or `/communications/callRecords`
+`/me/messages`, `/me/contacts`, `/me/events`, `users`, `groups`, `/communications/callRecords`, or `/communications/presences`
 
 Or to a specific resource instance:
 `users/{id}`, `groups/{id}`, `groups/{id}/conversations`
@@ -67,15 +68,15 @@ Certain limits apply to Azure AD based resources (users, groups) and will genera
 
 - Maximum subscription quotas:
 
-  - Per app: 50,000 total subscriptions
-  - Per tenant: 1000 total subscriptions across all apps
+  - Per app (for all tenants combined): 50,000 total subscriptions
+  - Per tenant (for all applications combined): 1000 total subscriptions across all apps
   - Per app and tenant combination: 100 total subscriptions
 
-When the limits are exceeded, attempts to create a subscription will result in an [error response](errors.md) - `403 Forbidden`. The `message` property will explain which limit has been exceeded.
+When any limit is exceeded, attempts to create a subscription will result in an [error response](errors.md) - `403 Forbidden`. The `message` property will explain which limit has been exceeded.
 
 - Azure AD B2C tenants are not supported.
 
-- Changfe notification for user entities are not supported for personal Microsoft accounts.
+- Change notification for user entities are not supported for personal Microsoft accounts.
 
 - A [known issue](known-issues.md#change-notifications) exists with user and group subscriptions.
 
@@ -88,6 +89,12 @@ When subscribing to Outlook resources such as **messages**, **events** or **cont
 Use: 
 
 `/users/{guid-user-id}/messages`
+
+### Teams resource limitations (preview)
+
+A single active subscription per channel or chat per application is allowed.
+
+A maximum of 10000 active subscriptions per organization on chats and channels for all applications is allowed.
 
 ## Subscription lifetime
 
@@ -208,7 +215,6 @@ When many changes occur, Microsoft Graph may send multiple notifications that co
   "value": [
     {
       "id": "lsgTZMr9KwAAA",
-      "sequenceNumber": 10,
       "subscriptionId":"{subscription_guid}",
       "subscriptionExpirationDateTime":"2016-03-19T22:11:09.952Z",
       "clientState":"secretClientValue",
@@ -233,7 +239,7 @@ Your process should process every change notification it receives. The following
 
 1. Send a `202 - Accepted` status code in your response to Microsoft Graph. If Microsoft Graph doesn't receive a 2xx class code, it will try to publishing the change notification a number of times, for a period of about 4 hours; after that, the change notification will be dropped and won't be delivered.
 
-    > **Note:** Send a `202 - Accepted` status code as soon as you receive the change notification, even before validating its authenticity. You are simply acknowledging the receipt of the change notification and preventing unnecessary retries. The current timeout is 30 seconds, but it might be reduced in the future to optimize service performance.
+    > **Note:** Send a `202 - Accepted` status code as soon as you receive the change notification, even before validating its authenticity. You are simply acknowledging the receipt of the change notification and preventing unnecessary retries. The current timeout is 30 seconds, but it might be reduced in the future to optimize service performance. If the notification URL doesn't reply within 30 seconds for more than 10% of the requests from Microsoft Graph over a 10 minute period, all following notifications will be delayed and retried for a period of 4 hours. If a notification URL doesn't reply within 30 seconds for more than 20% of the requests from Microsoft Graph over a 10 minute period, all following notifications will be dropped.
 
 1. Validate the `clientState` property. It must match the value originally submitted with the subscription creation request.
 
@@ -254,7 +260,7 @@ The following code samples are available on GitHub.
 
 ## Firewall configuration
 
-You can optionally configure the firewall that protects your notification URL to allow inbound connections only from Microsoft Graph. This allows you to reduce further exposure to invalid change notifications that are sent to your notification URL. These invalid change notifications can be trying to trigger the custom logic that you implemented. For a complete list of IP addresses used by Microsoft Graph to deliver change notifications, see [additional endpoints for Office 365](https://docs.microsoft.com/office365/enterprise/additional-office365-ip-addresses-and-urls).
+You can optionally configure the firewall that protects your notification URL to allow inbound connections only from Microsoft Graph. This allows you to reduce further exposure to invalid change notifications that are sent to your notification URL. These invalid change notifications can be trying to trigger the custom logic that you implemented. For a complete list of IP addresses used by Microsoft Graph to deliver change notifications, see [additional endpoints for Microsoft 365](https://docs.microsoft.com/office365/enterprise/additional-office365-ip-addresses-and-urls).
 
 > **Note:** The listed IP addresses that are used to deliver change notifications can be updated at any time without notice.
 
@@ -265,7 +271,7 @@ You can optionally configure the firewall that protects your notification URL to
 - [Create subscription](/graph/api/subscription-post-subscriptions?view=graph-rest-1.0)
 - [changeNotification](/graph/api/resources/changenotification?view=graph-rest-beta) resource type
 - [changeNotificationCollection](/graph/api/resources/changenotificationcollection?view=graph-rest-beta) resource type
-- [Change notifications tutorial](/graph/tutorials/change-notifications)
+- [Change notifications and change tracking tutorial](/learn/modules/msgraph-changenotifications-trackchanges)
 - [Lifecycle notifications (preview)](/graph/concepts/webhooks-outlook-authz.md)
 
 [contact]: /graph/api/resources/contact?view=graph-rest-1.0
@@ -277,4 +283,5 @@ You can optionally configure the firewall that protects your notification URL to
 [user]: /graph/api/resources/user?view=graph-rest-1.0
 [alert]: /graph/api/resources/alert?view=graph-rest-1.0
 [callRecord]: /graph/api/resources/callrecords-callrecord?view=graph-rest-1.0
+[presence]: /graph/api/resources/presence
 [chatMessage]: /graph/api/resources/chatmessage

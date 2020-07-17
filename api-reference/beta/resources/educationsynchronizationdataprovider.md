@@ -19,11 +19,11 @@ Represents the data provider to use as the synchronization source for a [educati
 
 ## Providers
 
-| Data Provider                       | Description                                                                                        |
-| :---------------------------------- | :------------------------------------------------------------------------------------------------- |
-| [educationCsvDataProvider]          | CSV files uploaded to the Profile's [SAS URL](../api/educationsynchronizationprofile-uploadurl.md) |
+| Data Provider                                                             | Description                                                                                        |
+|:--------------------------------------------------------------------------|:---------------------------------------------------------------------------------------------------|
+| [educationCsvDataProvider]                                                | CSV files uploaded to the Profile's [SAS URL](../api/educationsynchronizationprofile-uploadurl.md) |
 | [educationOneRosterApiDataProvider](educationonerosterapidataprovider.md) | OneRoster v1.1 API                                                                                 |
-| [educationPowerSchoolDataProvider]  | PowerSchool API                                                                                    |
+| [educationPowerSchoolDataProvider]                                        | PowerSchool API                                                                                    |
 
 ## Properties
 
