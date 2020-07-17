@@ -19,7 +19,7 @@ eDiscovery cases are containers that contain custodians, holds, collections, rev
 |:-------------|:------------|:------------|
 | [List](../api/ediscovery-case-list.md) | [ediscoveryCase](ediscoverycase.md) collection | Get a list of eDiscovery cases|
 | [Get](../api/ediscovery-case-get.md) | [ediscoveryCase](ediscoverycase.md) | Read eDiscovery case properties. |
-| [Create](../api/ediscovery-case-create.md) | [ediscoveryCase](ediscoverycase.md) | Create a new ediscoveryCase by posting to the cases collection. |
+| [Create](../api/ediscovery-case-post.md) | [ediscoveryCase](ediscoverycase.md) | Create a new ediscoveryCase by posting to the cases collection. |
 | [Update](../api/ediscovery-case-update.md) | [ediscoveryCase](ediscoverycase.md) | Update eDiscovery case. |
 | [Delete](../api/ediscovery-case-delete.md) | None | Delete eDiscovery case. |
 
