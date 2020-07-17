@@ -43,13 +43,13 @@ In the request body, supply a JSON representation of [ediscoveryCase](../resourc
 
 | Property     | Type        | Description |
 |:-------------|:------------|:------------|
-| displayName  | string      | The name of the eDiscovery case (Required) |
+| displayName  | string      | The name of the eDiscovery case. Required. |
 | description  | string      | The case description. |
 | externalId   | string      | The external case number for customer reference. |
 
 ## Response
 
-If successful, this method returns `201, Created` response code and a new [ediscoveryCase](../resources/ediscoverycase.md) object in the response body.
+If successful, this method returns a `201 Created` response code and a new [ediscoveryCase](../resources/ediscoverycase.md) object in the response body.
 
 ## Examples
 
