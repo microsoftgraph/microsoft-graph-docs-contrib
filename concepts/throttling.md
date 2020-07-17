@@ -212,11 +212,7 @@ threatAssessmentRequest, threatAssessmentResult, mailAssessmentRequest, emailFil
 The preceding limits apply to the following resources:  
 riskDetection, riskyUser, riskyUserHistoryItem, namedLocation, countryNamedLocation, ipNamedLocation, conditionalAccessPolicy.
 
-
 > **Note:** The resources listed above do not return a `Retry-After` header on `429 Too Many Requests` responses.
-
-
-
 
 ### Insights service limits
 
