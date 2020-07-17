@@ -404,7 +404,7 @@ None.
 |Permission    |Display String   |Description |Admin Consent Required |
 |:-----------------------------|:-----------------------------------------|:-----------------|:-----------------|
 |_CallRecords.Read.All_|Read all call records|Allows the app to read call records for all calls and online meetings without a signed-in user.|Yes|
-|_CallRecords.Read.PstnCalls_|Access PSTN and Direct Routing call log data. (_preview_)|Access all PSTN and Direct Routing call log data without a signed-in user.|Yes|
+|_CallRecords.Read.PstnCalls_|Read PSTN and Direct Routing call log data. (_beta_)|Allows the app to read all PSTN and Direct Routing call log data without a signed-in user.|Yes|
 
 ### Remarks
 
