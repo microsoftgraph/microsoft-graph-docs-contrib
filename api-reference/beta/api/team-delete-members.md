@@ -10,6 +10,8 @@ doc_type: apiPageType
 # Delete members
 Namespace: microsoft.graph
 
+[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
+
 Remove a new [conversationMember](../resources/conversationmember.md) from a [team](../resources/team.md).
 
 ## Permissions
@@ -28,7 +30,7 @@ One of the following permissions is required to call this API. To learn more, in
 }
 -->
 ``` http
-DELETE /teams/{teamsId}/members
+DELETE /teams/{team-id}/members/{member-id}
 ```
 
 ## Request headers
@@ -73,7 +75,7 @@ DELETE https://graph.microsoft.com/beta/teams/{teamsId}/members
 
 
 ### Response
-**Note:** The response object shown here might be shortened for readability.
+The following is an example of the response.
 <!-- {
   "blockType": "response",
   "truncated": true
