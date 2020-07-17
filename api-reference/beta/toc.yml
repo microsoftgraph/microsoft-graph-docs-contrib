@@ -1512,6 +1512,8 @@ items:
             href: api/printer-delete.md
           - name: Get capabilities
             href: api/printer-getcapabilities.md
+          - name: Get task trigger
+            href: api/printtasktrigger-get.md
           - name: List connectors
             href: api/printer-list-connectors.md
           - name: List print jobs
@@ -1520,16 +1522,22 @@ items:
             href: api/printer-post-jobs.md
           - name: List allowed users
             href: api/printer-list-allowedusers.md
-          - name: List allowedGroups
+          - name: List allowed groups
             href: api/printer-list-allowedgroups.md
+          - name: List task triggers
+            href: api/printer-list-tasktriggers.md
           - name: Create allowed group
             href: api/printer-post-allowedgroups.md
           - name: Create allowed user
             href: api/printer-post-allowedusers.md
+          - name: Create task trigger
+            href: api/printer-post-tasktriggers.md
           - name: Delete allowed group
             href: api/printer-delete-allowedgroup.md
           - name: Delete allowed user
             href: api/printer-delete-alloweduser.md
+          - name: Delete task trigger
+            href: api/printer-delete-tasktrigger.md
           - name: Reset defaults
             href: api/printer-resetdefaults.md
         - name: Printer share
@@ -1557,6 +1565,23 @@ items:
             href: api/printershare-post-allowedgroups.md
           - name: Delete allowed group
             href: api/printershare-delete-allowedgroup.md
+        - name: Print task definition
+          href: resources/printtaskdefinition.md
+          items:
+          - name: List
+            href: api/print-list-taskdefinitions.md
+          - name: Create
+            href: api/print-post-taskdefinitions.md
+          - name: Get
+            href: api/printtaskdefinition-get.md
+          - name: Delete
+            href: api/print-delete-taskdefinition.md
+          - name: List tasks
+            href: api/printtaskdefinition-list-tasks.md
+          - name: Get task
+            href: api/printtask-get.md
+          - name: Update task
+            href: api/printtaskdefinition-update-task.md
         - name: Reports
           items:
           - name: Organized by printer
@@ -1609,6 +1634,8 @@ items:
         - name: App management
           href: resources/intune-app-conceptual.md
           items:
+          - name: Android device owner enrollment mode
+            href: resources/intune-androidforwork-androiddeviceownerenrollmentmode.md
           - name: Android device owner enrollment profile
             href: resources/intune-androidforwork-androiddeviceownerenrollmentprofile.md
             items:
@@ -3270,6 +3297,12 @@ items:
               href: api/intune-deviceconfig-androiddeviceownerimportedpfxcertificateprofile-delete.md
             - name: Update
               href: api/intune-deviceconfig-androiddeviceownerimportedpfxcertificateprofile-update.md
+          - name: Android device owner kiosk mode folder icon
+            href: resources/intune-deviceconfig-androiddeviceownerkioskmodefoldericon.md
+          - name: Android device owner kiosk mode icon size
+            href: resources/intune-deviceconfig-androiddeviceownerkioskmodeiconsize.md
+          - name: Android device owner kiosk mode screen orientation
+            href: resources/intune-deviceconfig-androiddeviceownerkioskmodescreenorientation.md
           - name: Android device owner PKCS certificate profile
             href: resources/intune-deviceconfig-androiddeviceownerpkcscertificateprofile.md
             items:
@@ -4328,13 +4361,6 @@ items:
             href: resources/intune-deviceconfig-encryptionstate.md
           - name: Extended key usage
             href: resources/intune-deviceconfig-extendedkeyusage.md
-          - name: Feature flighted configuration
-            href: resources/intune-deviceconfig-featureflightedconfiguration.md
-            items:
-            - name: List
-              href: api/intune-deviceconfig-featureflightedconfiguration-list.md
-            - name: Get
-              href: api/intune-deviceconfig-featureflightedconfiguration-get.md
           - name: File vault state
             href: resources/intune-deviceconfig-filevaultstate.md
           - name: Firewall certificate revocation list check method type
@@ -6623,6 +6649,19 @@ items:
             href: resources/intune-devices-devicehealthscriptstringparameter.md
           - name: Device health script time schedule
             href: resources/intune-devices-devicehealthscripttimeschedule.md
+          - name: Device log collection request
+            href: resources/intune-devices-devicelogcollectionrequest.md
+          - name: Device log collection response
+            href: resources/intune-devices-devicelogcollectionresponse.md
+            items:
+            - name: List
+              href: api/intune-devices-devicelogcollectionresponse-list.md
+            - name: Get
+              href: api/intune-devices-devicelogcollectionresponse-get.md
+            - name: createDownloadUrl action
+              href: api/intune-devices-devicelogcollectionresponse-createdownloadurl.md
+          - name: Device log collection template type
+            href: resources/intune-devices-devicelogcollectiontemplatetype.md
           - name: Device management abstract complex setting definition
             href: resources/intune-deviceintent-devicemanagementabstractcomplexsettingdefinition.md
             items:
@@ -7199,6 +7238,8 @@ items:
               href: api/intune-devices-manageddevice-setdevicename.md
             - name: rotateFileVaultKey action
               href: api/intune-devices-manageddevice-rotatefilevaultkey.md
+            - name: createDeviceLogCollectionRequest action
+              href: api/intune-devices-manageddevice-createdevicelogcollectionrequest.md
             - name: retire action
               href: api/intune-devices-manageddevice-retire.md
             - name: wipe action
@@ -8497,6 +8538,8 @@ items:
               href: api/intune-shared-devicemanagementderivedcredentialsettings-update.md
             - name: List
               href: api/intune-shared-devicemanagementderivedcredentialsettings-list.md
+            - name: deviceManagementDerivedCredentialSettings](../resources/intune-shared-devicemanagementderivedcredentialsettings.md)|Create
+              href: api/intune-shared-devicemanagementderivedcredentialsettings.md
             - name: Delete
               href: api/intune-shared-devicemanagementderivedcredentialsettings-delete.md
           - name: Device management script
@@ -9415,6 +9458,10 @@ items:
             href: api/device-post-registeredowners.md
           - name: Create registered user
             href: api/device-post-registeredusers.md
+          - name: Remove registered owner
+            href: api/device-delete-registeredowners.md
+          - name: Remove registered user
+            href: api/device-delete-registeredusers.md
           - name: List device groups
             href: api/device-list-memberof.md
           - name: List device transitive groups
