@@ -1,19 +1,19 @@
 ---
-title: "Patch onlineMeeting"
-description: "Update an online meeting."
+title: "Update onlineMeeting"
+description: "Update the properties of an online meeting."
 author: "jsandoval-msft"
 localization_priority: Normal
 ms.prod: "cloud-communications"
 doc_type: apiPageType
 ---
 
-# Patch online meeting
+# Update onlineMeeting
 
 Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Update the startDateTime, endDateTime, participants, and subject properties of the specified [onlineMeeting](../resources/onlinemeeting.md).
+Update the **startDateTime**, **endDateTime**, **participants**, and **subject** properties of the specified [onlineMeeting](../resources/onlinemeeting.md).
 
 ## Permissions
 
@@ -34,8 +34,16 @@ PATCH https://graph.microsoft.com/beta/me/onlineMeetings/{id}
 | Name          | Description               |
 |:--------------|:--------------------------|
 | Authorization | Bearer {token}. Required. |
+| Content-type  | application/json. Required.|
 
 ## Request body
+
+## Response
+If successful, this method returns a `200 OK` response code and an [onlineMeeting](../resources/onlinemeeting.md) object in the response body.
+
+## Examples
+
+### Request
 <!-- {
   "blockType": "request",
   "name": "patch_onlinemeeting_request"
@@ -54,8 +62,8 @@ Content-Type: application/json
 ```
 
 ### Response
-If successful, this method returns a `200 OK` response code and an [onlineMeeting](../resources/onlinemeeting.md) object in the response body.
->**Note:** The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.
+
+>**Note:** The response object shown here might be shortened for readability.
 
 <!-- {
   "blockType": "response",
