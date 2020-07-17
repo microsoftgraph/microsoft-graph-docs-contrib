@@ -94,13 +94,19 @@ The following resources currently provide a `Retry-After` header:
 - [Group setting template](/graph/api/resources/groupsettingtemplate)
 - [Report](/graph/api/resources/report)
 - [Subscription](/graph/api/resources/subscription)
+- [Threat assessment request](/graph/api/resources/threatassessmentrequest)
+- [Mail assessment request](/graph/api/resources/mailassessmentrequest)
+- [Email file assessment request](/graph/api/resources/emailfileassessmentrequest)
+- [File assessment request](/graph/api/resources/fileassessmentrequest)
+- [URL assessment request](/graph/api/resources/urlassessmentrequest)
+- [Threat assessment result](/graph/api/resources/threatassessmentresult)
 - [Trending](/graph/api/resources/insights-trending)
 - [Used insight](/graph/api/resources/insights-used)
 - [Shared insight](/graph/api/resources/insights-shared)
 - [User settings](/graph/api/resources/usersettings)
 - [Invitation](/graph/api/resources/invitation)
 
-For a broader discussion of throttling on the Microsoft Cloud, see [Throttling Pattern](https://docs.microsoft.com/azure/architecture/patterns/throttling).
+For a broader discussion of throttling in the Microsoft Cloud, see [Throttling pattern](https://docs.microsoft.com/azure/architecture/patterns/throttling).
 
 > [!NOTE]
 > If no `Retry-After` header is provided by the response, we recommend implementing an exponential backoff retry policy. You can also implement [more advanced patterns](https://docs.microsoft.com/azure/architecture/patterns/category/resiliency) when building large-scale applications.
@@ -181,6 +187,15 @@ The following resources are provided by the Outlook service.
 | [Calls](/graph/api/resources/call) | 10,000 calls/month and 100 concurrent calls   |
 | [Meeting information](/graph/api/resources/meetinginfo)   | 2000 meetings/user each month |
 | [Presence](/graph/api/resources/presence) (preview)   | 2 rps |
+
+### Project Rome service limits
+
+| Request type | Limit per user for all apps |
+| GET          | 400 requests per 5 minutes and 12000 requests per 1 day |
+| POST, PUT, PATCH, DELETE | 100 requests per 5 minutes and 8000 requests per 1 day |
+
+The preceding limits apply to the following resources:  
+activityHistoryItem, userActivity
 
 ### Microsoft Teams service limits
 
@@ -336,6 +351,17 @@ Other factors that impact a request cost:
   - WriteLimitExceeded - Throttling is because the write limit is exceeded.
   - ResourceUnitLimitExceeded - Throttling is because the limit for the allocated resource unit is exceeded.
 
+### Information protection
+
+The following limits apply to any request on `/informationProtection`.
+
+| Operation                 | Limit per tenant                                            | Limit per resource (email, URL, file)                |
+|---------------------------|-------------------------------------------------------------|------------------------------------------------------|
+| POST                      | 150 requests per 15 minutes and 10000 requests per 24 hours | 1 request per 15 minutes and 3 requests per 24 hours |
+
+The preceding limits apply to the following resources:  
+threatAssessmentRequest, threatAssessmentResult, mailAssessmentRequest, emailFileAssessmentRequest, fileAssessmentRequest, urlAssessmentRequest.
+
 ### Identity protection and conditional access service limits
 
 | Request type | Limit per tenant |
@@ -375,8 +401,16 @@ The following limits apply to any request on `/invitations`.
 |---------------------------|------------------------------|
 | Any operation             | 150 requests per 5 seconds   |
 
-<!-- { "blockType": "throttlinggenstart" } -->
+### Open and schema extensions service limits
 
+| Request type | Limit per app per tenant |
+| ------------ | ------------------------ |
+| Any          | 455 requests per 10 seconds |
+
+The preceding limits apply to the following resources: 
+openTypeExtension, schemaExtension, administrativeUnit, contact, device, event, group, message, organization, post, and user.
+
+<!-- { "blockType": "throttlinggenstart" } -->
 ### Education service limits
 
 [!INCLUDE [Education rostering APIS throttling documentation](../includes/throttling-education-rostering-apis.md)]
