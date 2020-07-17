@@ -14,7 +14,7 @@ For a summary of the value of these API changes, as well as recent tools, compon
 ## July 2020
 
 ### Cloud Communications
-### Change notifications
+
 | **Change type** | **Version**   | **Description**                          |
 | :-------------- | :------------ | :--------------------------------------- |
 | Addition | beta | Added the [PATCH online meeting](/graph/api/resources/onlinemeeting-patch) API for meeting updates.|
