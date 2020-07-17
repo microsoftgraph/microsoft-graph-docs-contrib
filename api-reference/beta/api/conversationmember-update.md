@@ -71,6 +71,7 @@ content-type: application/json
 content-length: 26
 
 {
+  "@odata.type":"#microsoft.graph.aadUserConversationMember",
   "roles": ["owner"]
 }
 ```
