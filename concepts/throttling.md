@@ -151,6 +151,15 @@ The following resources are provided by the Outlook service.
 | [Meeting information](/graph/api/resources/meetinginfo)   | 2000 meetings/user each month |
 | [Presence](/graph/api/resources/presence) (preview)   | 2 rps |
 
+### Project Rome service limits
+
+| Request type | Limit per user for all apps |
+| GET          | 400 requests per 5 minutes and 12000 requests per 1 day |
+| POST, PUT, PATCH, DELETE | 100 requests per 5 minutes and 8000 requests per 1 day |
+
+The preceding limits apply to the following resources:  
+activityHistoryItem, userActivity
+
 ### Microsoft Teams service limits
 
 Limits are expressed as requests per second (rps).
