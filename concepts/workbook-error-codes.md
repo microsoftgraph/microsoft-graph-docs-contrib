@@ -85,6 +85,7 @@ The following are some additional errors that your app might encounter within th
 | **requestAborted**         | The request was aborted during run time.
 | **unsupportedOperation**         | The operation being attempted is not supported.
 | **nonBlankCellOffSheet**         | Can't insert new cells because it would push non-empty cells off the end of the worksheet. These cells might appear empty but have blank values, some formatting, or a formula. Delete enough rows or columns to make room for what you want to insert and then try again.
+| **rangeExceedsLimit**         | The cell count in range has exceeded the maximum supported number.
 
 <!-- {
   "type": "#page.annotation",
