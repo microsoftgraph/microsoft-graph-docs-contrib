@@ -68,7 +68,6 @@ If successful, this method returns a `200 OK` response code and an [onlineMeetin
 HTTP/1.1 200 OK
 Content-Type: application/json
 
-rmatted JSON Data
 {
    "id":"{id}",
    "creationDateTime":"2020-07-03T00:23:39.444642Z",
