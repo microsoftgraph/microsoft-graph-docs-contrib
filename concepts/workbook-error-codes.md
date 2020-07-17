@@ -6,7 +6,7 @@ localization_priority: Normal
 ms.prod: "excel"
 ---
 
-# Error codes for Excel APIs in Microsoft Graph
+# Error object for Excel APIs in Microsoft Graph
 
 This article describes error codes that are returned by the Excel APIs in Microsoft Graph when a request sent through the API fails.
 
@@ -28,9 +28,9 @@ The error object includes the following properties:
 
 The `message` property contains an error message intended for the developer to read. Error messages are not localized and shouldn't be displayed directly to the user. When handling errors, your code should not key off of `message` values because they may change at any time, and they often contain dynamic information specific to the failed request. The `innerError` object might recursively contain more `innerError` objects with additional, more specific error codes.
 
-## Top-level error code and message
+## Error code and message
 
-Below we listed current top-level error codes and messages. The service might add new error codes at any time.
+Below we listed current error codes and messages. The service might add new error codes at any time.
 
 | Code                      | Message
 |:--------------------------|:--------------
@@ -47,7 +47,7 @@ Below we listed current top-level error codes and messages. The service might ad
 | **serviceUnavailable**      | The service is not available. Please try your request again.
 | **gatewayTimeout**        | The server, while acting as a proxy, did not receive a timely response from the upstream server in order to complete the request.
 
-## Detailed error codes
+## Detailed error code
 The following are some additional errors that your app might encounter within the first level of nested `innerError` objects. The service might add new error codes at any time.
 
 | Code                               | Message
