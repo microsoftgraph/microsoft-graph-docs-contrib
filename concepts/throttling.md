@@ -165,6 +165,15 @@ You can find additional information about best practices in [OneNote API throttl
 
 > **Note:** The resources listed above do not return a `Retry-After` header on `429 Too Many Requests` responses.
 
+### Project Rome service limits
+
+| Request type | Limit per user for all apps |
+| GET          | 400 requests per 5 minutes and 12000 requests per 1 day |
+| POST, PUT, PATCH, DELETE | 100 requests per 5 minutes and 8000 requests per 1 day |
+
+The preceding limits apply to the following resources:  
+activityHistoryItem, userActivity
+
 ### Microsoft Teams service limits
 
 Limits are expressed as requests per second (rps).
@@ -241,6 +250,15 @@ The following limits apply to any request on `/invitations`.
 | Operation                 | Limit per tenant             |
 |---------------------------|------------------------------|
 | Any operation             | 150 requests per 5 seconds   |
+
+### Open and schema extensions service limits
+
+| Request type | Limit per app per tenant |
+| ------------ | ------------------------ |
+| Any          | 455 requests per 10 seconds |
+
+The preceding limits apply to the following resources: 
+openTypeExtension, schemaExtension, administrativeUnit, contact, device, event, group, message, organization, post, and user.
 
 <!-- { "blockType": "throttlinggenstart" } -->
 ### Education service limits
