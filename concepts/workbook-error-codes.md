@@ -34,11 +34,11 @@ Error resource includes the following properties:
 | **message**    | string                 | A developer ready message about the error that occurred. |
 | **innerError** | error object           | Optional. Additional error objects that may be more specific than the top level error.|
 
-The `innerError` object might recursively contain more `innerError` objects with additional, more specific error codes.
+The `message` property contains an error message intended for the developer to read. Error messages are not localized and shouldn't be displayed directly to the user. When handling errors, your code should not key off of `message` values because they may change at any time, and they often contain dynamic information specific to the failed request. The `innerError` object might recursively contain more `innerError` objects with additional, more specific error codes.
 
 ## Top-level error code and message
 
-Below we listed current top-level error codes and messages. The `message` property contains an error message intended for the developer to read. Error messages are not localized and shouldn't be displayed directly to the user. When handling errors, your code should not key off of `message` values because they may change at any time, and they often contain dynamic information specific to the failed request. The service might add new error codes at any time.
+Below we listed current top-level error codes and messages. The service might add new error codes at any time.
 
 | Code                      | Message
 |:--------------------------|:--------------
