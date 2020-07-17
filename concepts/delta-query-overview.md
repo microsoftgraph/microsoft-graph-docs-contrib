@@ -182,7 +182,7 @@ Delta queries are available for customers hosted on the public cloud and Microso
 
 ### Token duration
 
-Delta tokens are only valid for a specific period before the client application needs to run a full synchronization again. For directory objects (**application**, **administrativeUnit**, **directoryObject**, **directoryRole**, **group**, **orgContact**, **oauth2permissiongrant**, **servicePrincipal**, and **user**), the limit is 30 days. For education objects (**educationSchool**, **educationUser**, and **educationClass**), the limit is 30 days.
+Delta tokens are only valid for a specific period before the client application needs to run a full synchronization again. For directory objects (**application**, **administrativeUnit**, **directoryObject**, **directoryRole**, **group**, **orgContact**, **oauth2permissiongrant**, **servicePrincipal**, and **user**), the limit is 30 days. For education objects (**educationSchool**, **educationUser**, and **educationClass**), the limit is 30 days. For exchange entities (**message**, **mailFolder**, **event**, **contact**, **contactFolder**), the upper limit is not fixed. Rather it's dependent on the size of the internal delta token cache. While new delta tokens are continiously added in the cache, once the cache capacity is exceeded, the older delta tokens are deleted.
 
 ## Prerequisites
 
