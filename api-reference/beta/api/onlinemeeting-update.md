@@ -37,6 +37,7 @@ PATCH https://graph.microsoft.com/beta/me/onlineMeetings/{id}
 | Content-type  | application/json. Required.|
 
 ## Request body
+In the request body, supply a JSON representation of the [onlineMeeting](../resources/onlinemeeting.md) object. Only the startDateTime, endDateTime, participants, and subject properties can be modified. The startDateTime and endDateTime must appear in pairs.
 
 ## Response
 If successful, this method returns a `200 OK` response code and an [onlineMeeting](../resources/onlinemeeting.md) object in the response body.
