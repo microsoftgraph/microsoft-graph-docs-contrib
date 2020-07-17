@@ -151,6 +151,20 @@ The following resources are provided by the Outlook service.
 | [Meeting information](/graph/api/resources/meetinginfo)   | 2000 meetings/user each month |
 | [Presence](/graph/api/resources/presence) (preview)   | 2 rps |
 
+### OneNote service limits
+
+| Limit type | Limit per app per user (delegated context) | Limit per app (app-only context) |
+| ------------ | ------- | ------- |
+| Requests rate | 120 requests per 1 minute and 400 per 1 hour | 240 requests per 1 minute and 800 per 1 hour |
+| Concurrent requests | 5 concurrent requests | 20 concurrent requests |
+
+The preceding limits apply to the following resources:  
+onenote, notebook, sectionGroup, onenoteSection, onenotePage, onenoteResource, onenoteOperation
+
+You can find additional information about best practices in [OneNote API throttling and how to avoid it](https://developer.microsoft.com/en-us/office/blogs/onenote-api-throttling-and-how-to-avoid-it/).  
+
+> **Note:** The resources listed above do not return a `Retry-After` header on `429 Too Many Requests` responses.
+
 ### Project Rome service limits
 
 | Request type | Limit per user for all apps |
@@ -207,7 +221,7 @@ threatAssessmentRequest, threatAssessmentResult, mailAssessmentRequest, emailFil
 The preceding limits apply to the following resources:  
 riskDetection, riskyUser, riskyUserHistoryItem, namedLocation, countryNamedLocation, ipNamedLocation, conditionalAccessPolicy.
 
-> **Note:** at the moment the resources listed above do not return a `Retry-After` header on `429 Too Many Requests` responses.
+> **Note:** The resources listed above do not return a `Retry-After` header on `429 Too Many Requests` responses.
 
 ### Insights service limits
 
