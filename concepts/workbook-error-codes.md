@@ -44,12 +44,11 @@ Below we listed current top-level error codes and messages. The service might ad
 | **tooManyRequests**     | The app or user has been throttled.
 | **internalServerError**            | An internal server error occurred while processing the request.
 | **notImplemented**          | The requested feature isn’t implemented.
-| **serviceUnavailable**      | The service is not available. Please try your request again. 
+| **serviceUnavailable**      | The service is not available. Please try your request again.
 | **gatewayTimeout**        | The server, while acting as a proxy, did not receive a timely response from the upstream server in order to complete the request.
 
 ## Detailed error codes
-The following are some additional errors that your app might encounter within the first level of nested
-`innerError` objects. The service might add new error codes at any time.
+The following are some additional errors that your app might encounter within the first level of nested `innerError` objects. The service might add new error codes at any time.
 
 | Code                               | Message
 |:-----------------------------------|:----------------------------------------------------------
@@ -75,6 +74,17 @@ The following are some additional errors that your app might encounter within th
 | **serviceUnavailableUncategorized**      | The service is temporarily unavailable or is overloaded. Please try your request again.
 | **transientFailure**           | The request failed due to a transient error. Please try your request again.
 | **gatewayTimeoutUncategorized**         | The service wasn’t able to complete the request within the time limit.
+| **accessDenied**         | You cannot perform the requested operation.
+| **generalException**         | There was an internal error while processing the request.
+| **insertDeleteConflict**         | The insert or delete operation attempted resulted in a conflict.
+| **invalidArgument**         | The argument is invalid or missing or has an incorrect format.
+| **generalException**         | There was an internal error while processing the request.
+| **itemNotFound**         | The requested resource doesn't exist.
+| **invalidReference**         | This reference is not valid for the current operation.
+| **itemAlreadyExists**         | The resource being created already exists.
+| **requestAborted**         | The request was aborted during run time.
+| **unsupportedOperation**         | The operation being attempted is not supported.
+| **nonBlankCellOffSheet**         | Can't insert new cells because it would push non-empty cells off the end of the worksheet. These cells might appear empty but have blank values, some formatting, or a formula. Delete enough rows or columns to make room for what you want to insert and then try again.
 
 <!-- {
   "type": "#page.annotation",
