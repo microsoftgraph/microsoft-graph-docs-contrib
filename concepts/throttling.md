@@ -154,6 +154,7 @@ The following resources are provided by the Outlook service.
 ### Project Rome service limits
 
 | Request type | Limit per user for all apps |
+| ------------ | --------------------------- |
 | GET          | 400 requests per 5 minutes and 12000 requests per 1 day |
 | POST, PUT, PATCH, DELETE | 100 requests per 5 minutes and 8000 requests per 1 day |
 
