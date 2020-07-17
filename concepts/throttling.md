@@ -246,6 +246,18 @@ The following limits apply to any request on `/invitations`.
 The preceding limits apply to the following resources: 
 openTypeExtension, schemaExtension, administrativeUnit, contact, device, event, group, message, organization, post, and user.
 
+### Identity and access data policy operation service limits
+
+| Request type | Limit per tenant |
+| ------------ | ---------------- |
+| POST on `exportPersonalData` | 1000 requests per day for any subject and 100 per subject per day |
+| Any other request | 10000 requests per hour |
+
+The preceding limits apply to the following resources: 
+dataPolicyOperation.
+
+> **Note:** The resources listed above do not return a `Retry-After` header on `429 Too Many Requests` responses.
+
 <!-- { "blockType": "throttlinggenstart" } -->
 ### Education service limits
 
