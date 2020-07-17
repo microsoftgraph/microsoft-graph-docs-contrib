@@ -10,15 +10,7 @@ ms.prod: "excel"
 
 This article describes error codes that are returned by the Excel APIs in Microsoft Graph when a request sent through the API fails.
 
-The error response is a single JSON object that contains a single property named **error**. This object includes all the details of the error. The error resource is composed of these resources:
-
-```json
-{
-  "error": { "@odata.type": "odata.error" }  
-}
-```
-
-Error resource includes the following properties:
+The error object includes the following properties:
 
 ```json
 {
