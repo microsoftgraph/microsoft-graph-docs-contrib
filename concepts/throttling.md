@@ -87,7 +87,7 @@ Programming patterns like continuously polling a resource to check for updates a
 
 Microsoft Graph allows you to access data in [multiple services](overview-major-services.md), such as Outlook or Azure Active Directory. These services impose their own throttling limits that affect applications that use Microsoft Graph to access them.
 
-Any request can be evaluated against multiple limits depending on the scope of the limit (per app across all tenants, per tenant for all apps, per app per tenant, etc.), the request type (GET, POST, PATCH, etc.) and other factors. The first limit to be reached triggers throttling behavior. In addition to the service specific limits described in the section, the following global limits apply:
+Any request can be evaluated against multiple limits, depending on the scope of the limit (per app across all tenants, per tenant for all apps, per app per tenant, and so on), the request type (GET, POST, PATCH, and so on), and other factors. The first limit to be reached triggers throttling behavior. In addition to the service specific-limits described in the section, the following global limits apply:
 
 | Request type | Per app across all tenants  |
 | ------------ | ------------------------ |
