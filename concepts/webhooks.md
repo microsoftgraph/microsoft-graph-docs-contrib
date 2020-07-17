@@ -157,7 +157,11 @@ Microsoft Graph validates the notification endpoint provided in the `notificatio
     POST https://{notificationUrl}?validationToken={opaqueTokenCreatedByMicrosoftGraph}
     ```
 
-1. The client must properly decode the `validationToken` provided in the preceding step but treat the token value as opaque, as the token format can generally change without notice. 
+1. The client must properly decode the `validationToken` provided in the preceding step, and escape any HTML/JavaScript.
+
+   Escaping is a good practice because malicious actors can use the notification endpoint for cross-site scripting type of attacks.
+
+   In general, treat the validation token value as opaque, as the token format can generally change without notice. Microsoft Graph never sends any value containing HTML or JavaScript code.
 
 1. The client must provide a response with the following characteristics within 10 seconds of step 1:
 
