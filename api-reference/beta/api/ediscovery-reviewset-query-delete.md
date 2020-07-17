@@ -2,8 +2,8 @@
 title: "Delete reviewSetQuery"
 description: "Delete reviewSetQuery."
 localization_priority: Normal
-author: ""
-ms.prod: ""
+author: "mahage-msft"
+ms.prod: "compliance"
 doc_type: "apiPageType"
 ---
 
@@ -11,7 +11,7 @@ doc_type: "apiPageType"
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Delete reviewSetQuery.
+Delete [reviewSetQuery](../resources/ediscoveryreviewsetquery.md) object.
 
 ## Permissions
 

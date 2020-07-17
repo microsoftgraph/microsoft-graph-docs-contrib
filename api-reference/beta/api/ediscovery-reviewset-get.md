@@ -2,8 +2,8 @@
 title: "Get reviewSet"
 description: "Retrieve the properties and relationships of reviewSet object."
 localization_priority: Normal
-author: ""
-ms.prod: ""
+author: "mahage-msft"
+ms.prod: "compliance"
 doc_type: "apiPageType"
 ---
 
@@ -11,7 +11,7 @@ doc_type: "apiPageType"
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Retrieve the properties and relationships of reviewSet object.
+Retrieve the properties and relationships of a [reviewSet](../resources/ediscoveryreviewset.md) object.
 
 ## Permissions
 

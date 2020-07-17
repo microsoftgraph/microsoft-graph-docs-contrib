@@ -2,8 +2,8 @@
 title: "List ediscoverCases"
 description: "Retrieve a list of eDiscovery cases."
 localization_priority: Normal
-author: ""
-ms.prod: ""
+author: "mahage-msft"
+ms.prod: "compliance"
 doc_type: "apiPageType"
 ---
 
@@ -11,7 +11,7 @@ doc_type: "apiPageType"
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Retrieve a list of eDiscovery cases.
+Retrieve a list of [ediscoveryCase](../resources/ediscoverycase.md) objects.
 
 ## Permissions
 

@@ -2,8 +2,8 @@
 title: "Use the Microsoft Graph eDiscovery API"
 description: " > **Important:** APIs under the /beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported."
 localization_priority: Priority
-author: ""
-ms.prod: "eDiscovery"
+author: "mahage-msft"
+ms.prod: "compliance"
 doc_type: resourcePageType
 ---
 

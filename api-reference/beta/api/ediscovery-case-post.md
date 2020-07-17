@@ -2,8 +2,8 @@
 title: "Create ediscoveryCase"
 description: "Use this API to create a new ediscoveryCase."
 localization_priority: Normal
-author: ""
-ms.prod: ""
+author: "mahage-msft"
+ms.prod: "compliance"
 doc_type: "apiPageType"
 ---
 
@@ -11,7 +11,7 @@ doc_type: "apiPageType"
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Use this API to create a new ediscoveryCase.
+Create a new [ediscoveryCase](../resources/ediscoverycase.md) object.
 
 ## Permissions
 
@@ -39,13 +39,11 @@ POST /compliance/ediscovery/cases
 
 ## Request body
 
-In the request body, supply a JSON representation of [ediscoveryCase](../resources/ediscoverycase.md) object. The following table lists properties that can be submitted with the call.  Required properties are referenced in the description column.
+In the request body, supply a JSON representation of an [ediscoveryCase](../resources/ediscoverycase.md) object. The following table lists properties that can be submitted with the call.
 
 | Property     | Type        | Description |
 |:-------------|:------------|:------------|
-| displayName  | string      | The name of the eDiscovery case (Required) |
-| description  | string      | The case description. |
-| externalId   | string      | The external case number for customer reference. |
+| displayName  | string      | The name of the eDiscovery case |
 
 ## Response
 

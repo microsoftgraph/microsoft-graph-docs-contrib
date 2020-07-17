@@ -2,8 +2,8 @@
 title: "List queries"
 description: "Retrieve a list of reviewsetquery objects."
 localization_priority: Normal
-author: ""
-ms.prod: ""
+author: "mahage-msft"
+ms.prod: "compliance"
 doc_type: "apiPageType"
 ---
 
@@ -11,7 +11,7 @@ doc_type: "apiPageType"
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Retrieve a list of eDiscovery review set queries.
+Retrieve a list of eDiscovery [reviewSetQuery](../resources/ediscoveryreviewsetquery.md) objects.
 
 ## Permissions
 

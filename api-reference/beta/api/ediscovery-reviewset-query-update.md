@@ -2,8 +2,8 @@
 title: "Update reviewsetquery"
 description: "Update the properties of reviewsetquery object."
 localization_priority: Normal
-author: ""
-ms.prod: ""
+author: "mahage-msft"
+ms.prod: "compliance"
 doc_type: "apiPageType"
 ---
 
@@ -11,7 +11,7 @@ doc_type: "apiPageType"
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Update the properties of and eDiscovery review set query.
+Update the properties of an eDiscovery [reviewSetQuery](../resources/ediscoveryreviewsetquery.md).
 
 ## Permissions
 

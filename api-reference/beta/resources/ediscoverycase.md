@@ -2,8 +2,8 @@
 title: "ediscoveryCase resource type"
 description: "eDiscovery Case resource type"
 localization_priority: Normal
-author: ""
-ms.prod: ""
+author: "mahage-msft"
+ms.prod: "compliance"
 doc_type: "resourcePageType"
 ---
 

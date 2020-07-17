@@ -2,8 +2,8 @@
 title: "List review sets"
 description: "List review sets."
 localization_priority: Normal
-author: ""
-ms.prod: ""
+author: "mahage-msft"
+ms.prod: "compliance"
 doc_type: "apiPageType"
 ---
 
@@ -11,7 +11,7 @@ doc_type: "apiPageType"
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-List review sets in an eDiscovery case.
+List [reviewSet](../resources/ediscoveryreviewset.md) objects in an [ediscoveryCase](../resources/ediscoverycase.md) object.
 
 ## Permissions
 

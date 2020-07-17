@@ -2,8 +2,8 @@
 title: "Update ediscoverycase"
 description: "Update the properties of ediscoverycase object."
 localization_priority: Normal
-author: ""
-ms.prod: ""
+author: "mahage-msft"
+ms.prod: "compliance"
 doc_type: "apiPageType"
 ---
 
@@ -11,7 +11,7 @@ doc_type: "apiPageType"
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Update the properties of ediscoverycase object.
+Update the properties of an [ediscoveryCase](../resources/ediscoverycase.md) object.
 
 ## Permissions
 

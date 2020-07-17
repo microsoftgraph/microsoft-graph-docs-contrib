@@ -2,8 +2,8 @@
 title: "reviewSet resource type"
 description: "PROVIDE DESCRIPTION HERE"
 localization_priority: Normal
-author: ""
-ms.prod: ""
+author: "mahage-msft"
+ms.prod: "compliance"
 doc_type: "resourcePageType"
 ---
 

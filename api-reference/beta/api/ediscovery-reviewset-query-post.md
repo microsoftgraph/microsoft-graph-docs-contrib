@@ -2,8 +2,8 @@
 title: "Create reviewSetQuery"
 description: "Use this API to create a new reviewSetQuery."
 localization_priority: Normal
-author: ""
-ms.prod: ""
+author: "mahage-msft"
+ms.prod: "compliance"
 doc_type: "apiPageType"
 ---
 
@@ -11,7 +11,7 @@ doc_type: "apiPageType"
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Use this API to create a new reviewSetQuery.
+Use this API to create a new [reviewSetQuery](../resources/ediscoveryreviewsetquery.md) object.
 
 ## Permissions
 
