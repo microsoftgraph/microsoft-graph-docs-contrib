@@ -137,6 +137,7 @@ When using the default template and default `renderAttendees` template, addition
 
 | Resource | Permission |
 | - | - |
+| [/users](user-list) | Users.ReadBasic.All |
 | [/me/calendarview](/graph/api/user-list-people?view=graph-rest-1.0) | People.Read |
 | [/me/calendarview](/graph/api/user-list-contacts?view=graph-rest-1.0) | Contacts.Read |
 
