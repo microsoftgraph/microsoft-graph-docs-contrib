@@ -21,7 +21,7 @@ After Microsoft Graph accepts the subscription request, it pushes change notific
 
 By default, change notifications do not contain resource data, other than the `id`. If the app requires resource data, it can make calls to Microsoft Graph APIs to get the full resource. This article uses the **user** resource as an example for working with change notifications.
 
-An app can also subscribe to change notifications that include resource data, to avoid having to make additonal API calls to access the data. Such apps will need to implement extra code to handle the requirements of such notifications, specifically: responding to subscription lifecycle notifications, validating the authenticity of notifications, and decrypting the resource data. More resource types will support this type of notifications in the future. For details about how to work with these notificatios, see [Set up change notifications that include resource data (preview)](webhooks-with-resource-data.md).
+An app can also subscribe to change notifications that include resource data, to avoid having to make additional API calls to access the data. Such apps will need to implement extra code to handle the requirements of such notifications, specifically: responding to subscription lifecycle notifications, validating the authenticity of notifications, and decrypting the resource data. More resource types will support this type of notifications in the future. For details about how to work with these notifications, see [Set up change notifications that include resource data (preview)](webhooks-with-resource-data.md).
 
 ## Supported resources
 
@@ -76,7 +76,7 @@ When any limit is exceeded, attempts to create a subscription will result in an 
 
 - Azure AD B2C tenants are not supported.
 
-- Changfe notification for user entities are not supported for personal Microsoft accounts.
+- Change notification for user entities are not supported for personal Microsoft accounts.
 
 - A [known issue](known-issues.md#change-notifications) exists with user and group subscriptions.
 
@@ -89,6 +89,12 @@ When subscribing to Outlook resources such as **messages**, **events** or **cont
 Use: 
 
 `/users/{guid-user-id}/messages`
+
+### Teams resource limitations (preview)
+
+A single active subscription per channel or chat per application is allowed.
+
+A maximum of 10000 active subscriptions per organization on chats and channels for all applications is allowed.
 
 ## Subscription lifetime
 
