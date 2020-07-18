@@ -69,7 +69,7 @@ The following is an example of the request to get the basic details from a [call
   "name": "get_callrecord"
 }-->
 
-```msgraph-interactive
+```http
 GET https://graph.microsoft.com/beta/communications/callRecords/{id}
 ```
 
