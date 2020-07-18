@@ -1316,6 +1316,8 @@ items:
           href: api/application-post-onlinemeetings.md
         - name: Get
           href: api/onlinemeeting-get.md
+        - name: Update
+          href: api/onlinemeeting-patch.md          
         - name: Delete
           href: api/onlinemeeting-delete.md
         - name: Create or get
