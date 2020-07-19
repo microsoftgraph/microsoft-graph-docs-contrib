@@ -15,13 +15,9 @@ See highlights of what's new in Microsoft Graph, and how you can [share your ide
 ## July 2020: New and generally available
       
 ### Change notifications
-- Subscribe to change notifications on the [presence](/graph/api/resources/presence?view=graph-rest-beta) resource which represents the availability of a user on Microsoft Teams.
-- Removed the erroneously introduced **sequenceNumber** property from the [changeNotification](/graph/api/resources/changenotification) resource.
+Removed the erroneously introduced **sequenceNumber** property from the [changeNotification](/graph/api/resources/changenotification) resource.
 
-### Cloud communications
-- Subscribe to change notifications on the [presence](/graph/api/resources/presence?view=graph-rest-beta) resource which currently represents the availability of a user on Microsoft Teams.
-
-### Group
+### Groups
 GA of the following properties for the [group](/graph/api/resources/group?view=graph-rest-v1.0) entity: **assignedLabels**, **expirationDateTime**, **membershipRule**, **membershipRuleProcessingState**, **preferredLanguage**, and **theme**.
 
 ### Identity and access
@@ -32,17 +28,20 @@ The [schema extensions](/graph/api/resources/schemaextension) feature is now gen
 
 ## July 2020: New in preview only
 
+### Cloud communications
+Subscribe to notifications on changes to the availability of a user on Microsoft Teams, as represented by the [presence](/graph/api/resources/presence?view=graph-rest-beta) resource.
+
 ### Devices and apps | Cloud printing
 - Use the application permission `Printer.ReadWrite.All` and [Internet Printing Protocol (IPP) encoding](https://tools.ietf.org/html/rfc8010) to [update a printer](/graph/api/printer-update?view=graph-rest-beta).
 - Use one of the application permissions, `PrintJob.ReadBasic.All`, `PrintJob.Read.All`, `PrintJob.ReadWriteBasic.All`, or `PrintJob.ReadWrite.All`, to [get a print job](/graph/api/printjob-get?view=graph-rest-beta) or [list print jobs for a printer](/graph/api/printer-list-jobs?view=graph-rest-beta).
-- Use `$expand` when [getting a print job](/graph/api/printjob-get?view=graph-rest-beta) to get [print tasks](/graph/api/resources/printtask?view=graph-rest-beta) that are executing or have executed against the job. Print tasks, [task definitions](/graph/api/resources/printtaskdefinition?view=graph-rest-beta), and [task triggers](/graph/api/resources/printtasktrigger?view=graph-rest-beta) are useful especially in [pull printing](universal-print-concept-overview.md#extending-universal-print-to-support-pull-printing).
+- When [getting a print job](/graph/api/printjob-get?view=graph-rest-beta), use `$expand` to get [print tasks](/graph/api/resources/printtask?view=graph-rest-beta) that are executing or have executed against the job. Print tasks, [task definitions](/graph/api/resources/printtaskdefinition?view=graph-rest-beta), and [task triggers](/graph/api/resources/printtasktrigger?view=graph-rest-beta) are used in [pull printing](universal-print-concept-overview.md#extending-universal-print-to-support-pull-printing).
 - [Redirect a print job](/graph/api/printjob-redirect?view=graph-rest-beta) to a different printer, as part of pull printing.
 
 ### Devices and apps | Corporate management
 Intune [July](changelog.md#july-2020) updates in beta.
 
 ### Identity and access
-- Take user risk levels (`low`, `medium`, `high`, `none`) into account in a [conditional access policy](/graph/api/resources/conditionalaccesspolicy?view=graph-rest-beta).
+- Include user risk levels (`low`, `medium`, `high`, `none`) as a consideration for applying a [conditional access policy](/graph/api/resources/conditionalaccesspolicy?view=graph-rest-beta).
 - [Use password change as a grant control](/graph/api/resources/conditionalaccessgrantcontrols?view=graph-rest-beta#special-considerations-when-using-passwordchange-as-a-control) in order to pass a conditional access policy.
 
 ### People and workplace intelligence | Profile card customization
