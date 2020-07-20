@@ -2357,6 +2357,24 @@
       "CreatedDateTime": "2019-01-01T00:00:00",
       "WorkloadArea": "Identity and access",
       "SubArea": ""
+    },
+    {
+      "ChangeList": [
+        {
+          "Id": "93bbc5d7-9934-41b6-acc8-f6b75cc6d75e",
+          "ApiChange": "Method",
+          "ChangedApiName": "getAvailableExtensionProperties",
+          "ChangeType": "Addition",
+          "Description": "Added the [getAvailableExtensionProperties](https://docs.microsoft.com/graph/api/directoryObject-getAvailableExtensionProperties?view=graph-rest-1.0) method to the [directoryObject](/graph/api/resources/directoryObject?view=graph-rest-1.0) resource.",
+          "Target": "application"
+        }
+      ],
+      "Id": "93bbc5d7-9934-41b6-acc8-f6b75cc6d75e",
+      "Cloud": "prd",
+      "Version": "v1.0",
+      "CreatedDateTime": "2020-07-17T00:00:00",
+      "WorkloadArea": "Applications",
+      "SubArea": ""
     }
   ]
 }
