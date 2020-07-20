@@ -35,7 +35,7 @@ POST /compliance/ediscovery/cases
 
 | Name          | Description   |
 |:--------------|:--------------|
-| Authorization | Bearer {token} |
+| Authorization | Bearer {token}. Required. |
 
 ## Request body
 
@@ -43,7 +43,7 @@ In the request body, supply a JSON representation of an [ediscoveryCase](../reso
 
 | Property     | Type        | Description |
 |:-------------|:------------|:------------|
-| displayName  | string      | The name of the eDiscovery case |
+| displayName  | string      | The name of the eDiscovery case. |
 
 ## Response
 
