@@ -6,10 +6,11 @@ localization_priority: Normal
 ms.prod: "excel"
 ---
 
+#Error codes for Excel APIs in Microsoft Graph
 
 This article describes error codes that are returned by the Excel APIs in Microsoft Graph when a request sent through the API fails. See [Errors](/graph/errors.md)for more details about error responses and resource types in Microsoft Graph.
 
-# Error code
+## Error code
 
 Below we listed current error codes and messages. The service might add new error codes at any time.
 
@@ -28,7 +29,7 @@ Below we listed current error codes and messages. The service might add new erro
 | **tooManyRequests**     | The app or user has been throttled.
 | **unauthenticated**  | The caller is not authenticated.
 
-# Detailed error code
+## Detailed error code
 The following are some additional errors that your app might encounter within the first level of nested `innerError` objects. The service might add new error codes at any time.
 
 | Code                               | Message
