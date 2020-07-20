@@ -1,6 +1,6 @@
 ---
 title: "Update ediscoverycase"
-description: "Update the properties of ediscoverycase object."
+description: "Update the properties of an ediscoveryCase object."
 localization_priority: Normal
 author: "mahage-msft"
 ms.prod: "compliance"
