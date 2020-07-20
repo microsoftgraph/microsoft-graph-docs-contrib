@@ -39,6 +39,18 @@ eDiscovery cases are containers that contain custodians, holds, collections, rev
 |lastModifiedDateTime|DateTimeOffset| The latest date and time when the case was modified. The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 would look like this: `'2014-01-01T00:00:00Z'`|
 |status|[caseStatus](ediscoverycasestatusenum.md)| The case status.|
 
+### eDiscovery case status options
+
+Here's what each **status** property value means:
+|Value|Description|
+|:----|-----------|
+| unknown | Case status is unknown. |
+| active | Case is active. |
+| pendingDelete | Case was deleted, but the delete has not been fully transacted. |
+| closing | Case was closed, but the operation has not been fully transacted. |
+| closed | The case is closed. |
+| closedWithError | The case is closed, but there were errors releasing holds in the case. |
+
 ## Relationships
 
 | Relationship | Type        | Description |
