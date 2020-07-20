@@ -68,6 +68,7 @@ The following are some additional errors that your app might encounter within th
 | **unsupportedOperation**         | The operation being attempted is not supported.
 | **unsupportedWorkbook**         | The request failed. The workbook contains unsupported features or exceeds the size limit.
 
+>**Note:** The innerError object might recursively contain more deeper innErerror objects with additional, more specific error codes. These deeper inneError codes are intented for the developer to read.
 <!-- {
   "type": "#page.annotation",
   "description": "Workbook error code and message",
