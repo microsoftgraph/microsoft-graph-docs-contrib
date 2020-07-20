@@ -8,7 +8,7 @@ ms.prod: "excel"
 
 #Error codes for Excel APIs in Microsoft Graph
 
-This article describes error codes that are returned by the Excel APIs in Microsoft Graph when a request sent through the API fails. See [Errors](/graph/errors.md)for more details about error responses and resource types in Microsoft Graph.
+This article describes error codes that are returned by the Excel APIs in Microsoft Graph when a request sent through the API fails. See [Errors](/graph/errors.md) for more details about error responses and resource types in Microsoft Graph.
 
 ## Error code
 
