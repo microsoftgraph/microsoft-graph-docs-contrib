@@ -105,6 +105,13 @@ For a summary of the value of these API changes, as well as recent tools, compon
 |Addition|beta|Added the [workbookOperation](/graph/api/resources/workbookoperation?view=graph-rest-beta) relationship to the [Workbook](/graph/api/resources/workbook?view=graph-rest-beta) entity. |
 |Addition|beta|Added the  [Get workbookOperation](/graph/api/resources/workbookoperation-get?view=graph-rest-beta) method to the [workbookOperation](/graph/api/resources/workbookoperation?view=graph-rest-beta) entity. |
 
+### Reports | Microsoft 365 usage reports
+| **Change type** | **Version**   | **Description**                          |
+| :-------------- | :------------ | :--------------------------------------- |
+| Addition | beta | Added the [getM365AppUserCounts](/graph/api/reportroot-getM365AppUserCounts?view=graph-rest-beta) operation. |
+| Addition | beta | Added the [getM365AppPlatformUserCounts](/graph/api/reportroot-getM365AppPlatformUserCounts?view=graph-rest-beta) operation. |
+| Addition | beta | Added the [getM365AppUserDetail](/graph/api/reportroot-getM365AppUserDetail?view=graph-rest-beta) operation. |
+
 
 ## June 2020
 
