@@ -25,5 +25,4 @@ jobs:
       id: check
       with:
         dirtyLabel: "conflicting"
-        removeOnDirtyLabel: "ready to merge"
         repoToken: "${{ secrets.LABELING_TOKEN }}"
