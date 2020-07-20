@@ -1,17 +1,17 @@
 ---
-title: "Create ediscoveryCase"
-description: "Use this API to create a new ediscoveryCase."
+title: "Create reviewSet"
+description: "Create and eDiscovery review set."
 localization_priority: Normal
 author: "mahage-msft"
 ms.prod: "compliance"
 doc_type: "apiPageType"
 ---
 
-# Create ediscoveryCase
+# Create reviewSet
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Create a new [ediscoveryCase](../resources/ediscoverycase.md) object.
+Create a new [reviewSet](../resources/ediscoveryreviewset.md) object. The request body contains the display name of the review set, which is the only writable property.
 
 ## Permissions
 
@@ -19,7 +19,7 @@ One of the following permissions is required to call this API. To learn more, in
 
 | Permission type                        | Permissions (from least to most privileged) |
 |:---------------------------------------|:--------------------------------------------|
-| Delegated (work or school account)     | User.Read      |
+| Delegated (work or school account)     | User.Read |
 | Delegated (personal Microsoft account) | Not supported. |
 | Application                            | Not supported. |
 
@@ -28,26 +28,26 @@ One of the following permissions is required to call this API. To learn more, in
 <!-- { "blockType": "ignored" } -->
 
 ```http
-POST /compliance/ediscovery/cases
+POST /compliance/ediscovery/cases/{id}/reviewSets/{id}
 ```
 
 ## Request headers
 
-| Name          | Description   |
-|:--------------|:--------------|
+| Name       | Description|
+|:-----------|:-----------|
 | Authorization | Bearer {token}. Required. |
 
 ## Request body
 
-In the request body, supply a JSON representation of an [ediscoveryCase](../resources/ediscoverycase.md) object. The following table lists properties that can be submitted with the call.
+In the request body, supply JSON representation of the [reviewSet](../resources/ediscoveryreviewset.md).  The following table lists the required properties.
 
 | Property     | Type        | Description |
 |:-------------|:------------|:------------|
-| displayName  | string      | The name of the eDiscovery case. |
+| displayName  | string      | The name of the review set. |
 
 ## Response
 
-If successful, this method returns a `201 Created` response code and a new [ediscoveryCase](../resources/ediscoverycase.md) object in the response body.
+If successful, this method returns a `201 Created` response code and a [reviewSet](../resources/ediscoveryreviewset.md) object in the response body.
 
 ## Examples
 
@@ -56,15 +56,15 @@ If successful, this method returns a `201 Created` response code and a new [edis
 The following is an example of the request.
 <!-- {
   "blockType": "request",
-  "name": "ediscovery-case-create"
+  "name": "post_reviewset"
 }-->
 
 ```http
-POST https://graph.microsoft.com/beta/compliance/ediscovery/cases
+POST https://graph.microsoft.com/beta/compliance/ediscovery/cases('6f65a8e4-c6a0-4cff-8a81-c9ab5df7290d')/reviewSets
 Content-type: application/json
 
 {
-    "displayName": "My Case 1",
+  "displayName": "My Reviewset 3",
 }
 ```
 
@@ -77,7 +77,7 @@ The following is an example of the response.
 <!-- {
   "blockType": "response",
   "truncated": true,
-  "@odata.type": "microsoft.graph.ediscoveryCase"
+  "@odata.type": "microsoft.graph.reviewSet"
 } -->
 
 ```http
@@ -85,28 +85,16 @@ HTTP/1.1 201 Created
 Content-type: application/json
 
 {
-    "@odata.context": "https://graph.microsoft.com/beta/compliance/ediscovery/$metadata#cases/$entity",
-    "id": "061b9a92-8926-4bd9-b41d-abf35edc7583",
-    "displayName": "My Case 1",
-    "description": "",
+    "@odata.context": "https://graph.microsoft.com/beta/compliance/ediscovery/$metadata#cases('6f65a8e4-c6a0-4cff-8a81-c9ab5df7290d')/reviewSets/$entity",
+    "id": "0157910c-57ce-4e48-bd4b-90f3c88ca32e",
+    "displayName": "My Reviewset 3",
     "createdBy": {
         "user": {
             "id": "efee1b77-fb3b-4f65-99d6-274c11914d12",
             "displayName": "eDiscovery admin"
         }
     },
-    "createdDateTime": "2020-02-20T22:42:28.5505500Z",
-    "lastModifiedBy": {
-        "user": {
-            "id": "efee1b77-fb3b-4f65-99d6-274c11914d12",
-            "displayName": "eDiscovery admin"
-        }
-    },
-    "lastModifiedDateTime": "2020-02-20T22:42:28.5505500Z",
-    "status": "active",
-    "closedBy": null,
-    "closedDateTime": null,
-    "externalId": ""
+    "createdDateTime": "2020-03-11T08:40:14.9486058Z"
 }
 ```
 
@@ -114,7 +102,7 @@ Content-type: application/json
 2019-02-04 14:57:30 UTC -->
 <!-- {
   "type": "#page.annotation",
-  "description": "Create ediscoveryCase",
+  "description": "Update reviewset",
   "keywords": "",
   "section": "documentation",
   "tocPath": ""

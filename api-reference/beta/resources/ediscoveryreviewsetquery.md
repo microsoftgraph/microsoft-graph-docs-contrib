@@ -17,11 +17,11 @@ PROVIDE DESCRIPTION HERE
 
 | Method       | Return Type | Description |
 |:-------------|:------------|:------------|
-| [List](../api/ediscovery-reviewset-query-list.md) | [reviewSetQuery](ediscoveryreviewsetquery.md) collection | List the review set queries in a review set. |
-| [Get](../api/ediscovery-reviewset-query-get.md) | [reviewSetQuery](ediscoveryreviewsetquery.md) | Read properties and relationships of reviewSetQuery object. |
-| [Create](../api/ediscovery-reviewset-query-post.md) | [reviewSetQuery](ediscoveryreviewsetquery.md) | Create a new review set query. |
-| [Update](../api/ediscovery-reviewset-query-update.md) | None | Update a review set query. |
-| [Delete](../api/ediscovery-reviewset-query-delete.md) | None | Delete review set query. |
+| [List](../api/reviewsetquery-list.md) | [reviewSetQuery](ediscoveryreviewsetquery.md) collection | List the review set queries in a review set. |
+| [Get](../api/reviewsetquery-get.md) | [reviewSetQuery](ediscoveryreviewsetquery.md) | Read properties and relationships of reviewSetQuery object. |
+| [Create](../api/reviewsetquery-post.md) | [reviewSetQuery](ediscoveryreviewsetquery.md) | Create a new review set query. |
+| [Update](../api/reviewsetquery-update.md) | None | Update a review set query. |
+| [Delete](../api/reviewsetquery-delete.md) | None | Delete review set query. |
 
 ## Properties
 

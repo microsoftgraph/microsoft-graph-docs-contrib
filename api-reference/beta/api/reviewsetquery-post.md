@@ -56,7 +56,7 @@ If successful, this method returns `201, Created` response code and a new [revie
 The following is an example of the request.
 <!-- {
   "blockType": "request",
-  "name": "create_reviewsetquery_from_reviewset"
+  "name": "post_reviewsetquery"
 }-->
 
 ```http

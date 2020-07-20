@@ -1,17 +1,17 @@
 ---
-title: "Get reviewSet"
-description: "Retrieve the properties and relationships of a reviewSet object."
+title: "Get ediscoveryCase"
+description: "Retrieve the properties and relationships of ediscoverycase object."
 localization_priority: Normal
 author: "mahage-msft"
 ms.prod: "compliance"
 doc_type: "apiPageType"
 ---
 
-# Get reviewSet
+# Get ediscoveryCase
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Retrieve the properties and relationships of a [reviewSet](../resources/ediscoveryreviewset.md) object.
+Retrieve the properties and relationships of an [ediscoveryCase](../resources/ediscoverycase.md) object.
 
 ## Permissions
 
@@ -19,7 +19,7 @@ One of the following permissions is required to call this API. To learn more, in
 
 | Permission type                        | Permissions (from least to most privileged) |
 |:---------------------------------------|:--------------------------------------------|
-| Delegated (work or school account)     | User.Read |
+| Delegated (work or school account)     | User.Read      |
 | Delegated (personal Microsoft account) | Not supported. |
 | Application                            | Not supported. |
 
@@ -28,25 +28,18 @@ One of the following permissions is required to call this API. To learn more, in
 <!-- { "blockType": "ignored" } -->
 
 ```http
-GET /compliance/ediscovery/cases/{id}/reviewSets/{id}
+GET /compliance/ediscovery/cases/{id}
 ```
 
 ## Optional query parameters
 
 This method supports some of the OData query parameters to help customize the response. For general information, see [OData query parameters](/graph/query-parameters).
 
-By default, all review set fields are returned; however, you can specify certain fields to return using the OData `$select` query parameter.  For example, to only return the **displayName** and ID, add the following to your query: `$select=displayName,Id`.
-
-Because a request can return many cases, you can filter them by using **displayName**.  To filter by **displayName**, add the following to your query: `$filter=displayName eq 'rs1'`, where the review set name is rs1.
-
-For more information about filtering and specifying fields, see [Using Filter Expressions in OData URIs
-](https://docs.microsoft.com/dynamics-nav/using-filter-expressions-in-odata-uris).
-
 ## Request headers
 
 | Name      |Description|
 |:----------|:----------|
-| Authorization | Bearer {token}. Required. |
+| Authorization | Bearer {token} |
 
 ## Request body
 
@@ -54,7 +47,7 @@ Do not supply a request body for this method.
 
 ## Response
 
-If successful, this method returns a `200 OK` response code and the requested [reviewSet](../resources/ediscoveryreviewset.md) object in the response body.
+If successful, this method returns a `200 OK` response code and the requested [ediscoveryCase](../resources/ediscoverycase.md) object in the response body.
 
 ## Examples
 
@@ -63,11 +56,11 @@ If successful, this method returns a `200 OK` response code and the requested [r
 The following is an example of the request.
 <!-- {
   "blockType": "request",
-  "name": "ediscovery-reviewset-get"
+  "name": "get_ediscoverycase"
 }-->
 
 ```http
-GET https://graph.microsoft.com/beta/compliance/ediscovery/cases('6f65a8e4-c6a0-4cff-8a81-c9ab5df7290d')/reviewSets('0157910c-57ce-4e48-bd4b-90f3c88ca32e')
+GET https://graph.microsoft.com/beta/cases/061b9a92-8926-4bd9-b41d-abf35edc7583
 ```
 
 ### Response
@@ -79,7 +72,7 @@ The following is an example of the response.
 <!-- {
   "blockType": "response",
   "truncated": true,
-  "@odata.type": "microsoft.graph.reviewSet"
+  "@odata.type": "microsoft.graph.ediscoveryCase"
 } -->
 
 ```http
@@ -87,16 +80,27 @@ HTTP/1.1 200 OK
 Content-type: application/json
 
 {
-    "@odata.context": "https://graph.microsoft.com/beta/compliance/ediscovery/$metadata#cases('6f65a8e4-c6a0-4cff-8a81-c9ab5df7290d')/reviewSets/$entity",
-    "id": "0157910c-57ce-4e48-bd4b-90f3c88ca32e",
-    "displayName": "My Reviewset 3",
+    "id": "061b9a92-8926-4bd9-b41d-abf35edc7583",
+    "displayName": "My Case 1",
+    "description": "",
     "createdBy": {
         "user": {
             "id": "efee1b77-fb3b-4f65-99d6-274c11914d12",
             "displayName": "eDiscovery admin"
         }
     },
-    "createdDateTime": "2020-03-11T08:40:14.9486058Z"
+    "createdDateTime": "2020-02-20T22:42:28.5505500Z",
+    "lastModifiedBy": {
+        "user": {
+            "id": "efee1b77-fb3b-4f65-99d6-274c11914d12",
+            "displayName": "eDiscovery admin"
+        }
+    },
+    "lastModifiedDateTime": "2020-02-20T22:42:28.5505500Z",
+    "status": "active",
+    "closedBy": null,
+    "closedDateTime": null,
+    "externalId": ""
 }
 ```
 
@@ -104,7 +108,7 @@ Content-type: application/json
 2019-02-04 14:57:30 UTC -->
 <!-- {
   "type": "#page.annotation",
-  "description": "Get reviewSet",
+  "description": "Get ediscoveryCase",
   "keywords": "",
   "section": "documentation",
   "tocPath": ""

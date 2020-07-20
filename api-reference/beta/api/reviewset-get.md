@@ -1,17 +1,17 @@
 ---
-title: "Get reviewSetQuery"
-description: "Retrieve the properties and relationships of reviewsetquery object."
+title: "Get reviewSet"
+description: "Retrieve the properties and relationships of a reviewSet object."
 localization_priority: Normal
 author: "mahage-msft"
 ms.prod: "compliance"
 doc_type: "apiPageType"
 ---
 
-# Get reviewSetQuery
+# Get reviewSet
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Retrieve the properties and relationships of an eDiscovery [reviewSetQuery](../resources/ediscoveryreviewsetquery.md) object.
+Retrieve the properties and relationships of a [reviewSet](../resources/ediscoveryreviewset.md) object.
 
 ## Permissions
 
@@ -28,18 +28,25 @@ One of the following permissions is required to call this API. To learn more, in
 <!-- { "blockType": "ignored" } -->
 
 ```http
-GET /compliance/ediscovery/cases/{id}/reviewSets/{id}/queries/{id}
+GET /compliance/ediscovery/cases/{id}/reviewSets/{id}
 ```
 
 ## Optional query parameters
 
 This method supports some of the OData query parameters to help customize the response. For general information, see [OData query parameters](/graph/query-parameters).
 
+By default, all review set fields are returned; however, you can specify certain fields to return using the OData `$select` query parameter.  For example, to only return the **displayName** and ID, add the following to your query: `$select=displayName,Id`.
+
+Because a request can return many cases, you can filter them by using **displayName**.  To filter by **displayName**, add the following to your query: `$filter=displayName eq 'rs1'`, where the review set name is rs1.
+
+For more information about filtering and specifying fields, see [Using Filter Expressions in OData URIs
+](https://docs.microsoft.com/dynamics-nav/using-filter-expressions-in-odata-uris).
+
 ## Request headers
 
 | Name      |Description|
 |:----------|:----------|
-| Authorization | Bearer {token} |
+| Authorization | Bearer {token}. Required. |
 
 ## Request body
 
@@ -47,7 +54,7 @@ Do not supply a request body for this method.
 
 ## Response
 
-If successful, this method returns a `200 OK` response code and the requested [reviewSetQuery](../resources/ediscoveryreviewsetquery.md) object in the response body.
+If successful, this method returns a `200 OK` response code and the requested [reviewSet](../resources/ediscoveryreviewset.md) object in the response body.
 
 ## Examples
 
@@ -56,11 +63,11 @@ If successful, this method returns a `200 OK` response code and the requested [r
 The following is an example of the request.
 <!-- {
   "blockType": "request",
-  "name": "ediscovery-review-set-query-get"
+  "name": "get_reviewset"
 }-->
 
 ```http
-GET https://graph.microsoft.com/beta/compliance/ediscovery/cases('2eef613a-ca2d-42f4-89fe-84d5198ddedf')/reviewSets('b26888b3-e1f5-47c5-bdf2-33d1b90cb2e8')/queries('6b5358b0-2ce2-4369-b9cf-65392fe56807')
+GET https://graph.microsoft.com/beta/compliance/ediscovery/cases('6f65a8e4-c6a0-4cff-8a81-c9ab5df7290d')/reviewSets('0157910c-57ce-4e48-bd4b-90f3c88ca32e')
 ```
 
 ### Response
@@ -72,7 +79,7 @@ The following is an example of the response.
 <!-- {
   "blockType": "response",
   "truncated": true,
-  "@odata.type": "microsoft.graph.reviewSetQuery"
+  "@odata.type": "microsoft.graph.reviewSet"
 } -->
 
 ```http
@@ -80,24 +87,16 @@ HTTP/1.1 200 OK
 Content-type: application/json
 
 {
-    "@odata.context": "https://graph.microsoft.com/beta/compliance/ediscovery/$metadata#cases('2eef613a-ca2d-42f4-89fe-84d5198ddedf')/reviewSets('b26888b3-e1f5-47c5-bdf2-33d1b90cb2e8')/queries/$entity",
-    "id": "6b5358b0-2ce2-4369-b9cf-65392fe56807",
-    "displayName": "My Query 1",
+    "@odata.context": "https://graph.microsoft.com/beta/compliance/ediscovery/$metadata#cases('6f65a8e4-c6a0-4cff-8a81-c9ab5df7290d')/reviewSets/$entity",
+    "id": "0157910c-57ce-4e48-bd4b-90f3c88ca32e",
+    "displayName": "My Reviewset 3",
     "createdBy": {
         "user": {
             "id": "efee1b77-fb3b-4f65-99d6-274c11914d12",
             "displayName": "eDiscovery admin"
         }
     },
-    "createdDateTime": "2020-03-09T09:05:12.3756813Z",
-    "lastModifiedBy": {
-        "user": {
-            "id": "efee1b77-fb3b-4f65-99d6-274c11914d12",
-            "displayName": "eDiscovery admin"
-        }
-    },
-    "lastModifiedDateTime": "2020-03-09T09:05:12.3756813Z",
-    "query": "subject:\"Quarterly Financials\""
+    "createdDateTime": "2020-03-11T08:40:14.9486058Z"
 }
 ```
 
@@ -105,7 +104,7 @@ Content-type: application/json
 2019-02-04 14:57:30 UTC -->
 <!-- {
   "type": "#page.annotation",
-  "description": "Get reviewSetQuery",
+  "description": "Get reviewSet",
   "keywords": "",
   "section": "documentation",
   "tocPath": ""

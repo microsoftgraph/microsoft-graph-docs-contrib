@@ -17,11 +17,11 @@ eDiscovery cases are containers that contain custodians, holds, collections, rev
 
 | Method       | Return Type | Description |
 |:-------------|:------------|:------------|
-| [List](../api/ediscovery-case-list.md) | [ediscoveryCase](ediscoverycase.md) collection | Get a list of eDiscovery cases|
-| [Get](../api/ediscovery-case-get.md) | [ediscoveryCase](ediscoverycase.md) | Read eDiscovery case properties. |
-| [Create](../api/ediscovery-case-post.md) | [ediscoveryCase](ediscoverycase.md) | Create a new ediscoveryCase by posting to the cases collection. |
-| [Update](../api/ediscovery-case-update.md) | [ediscoveryCase](ediscoverycase.md) | Update eDiscovery case. |
-| [Delete](../api/ediscovery-case-delete.md) | None | Delete eDiscovery case. |
+| [List](../api/ediscoverycase-list.md) | [ediscoveryCase](ediscoverycase.md) collection | Get a list of eDiscovery cases|
+| [Get](../api/ediscoverycase-get.md) | [ediscoveryCase](ediscoverycase.md) | Read eDiscovery case properties. |
+| [Create](../api/ediscoverycase-post.md) | [ediscoveryCase](ediscoverycase.md) | Create a new ediscoveryCase by posting to the cases collection. |
+| [Update](../api/ediscoverycase-update.md) | [ediscoveryCase](ediscoverycase.md) | Update eDiscovery case. |
+| [Delete](../api/ediscoverycase-delete.md) | None | Delete eDiscovery case. |
 
 ## Properties
 

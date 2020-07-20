@@ -10966,37 +10966,37 @@ items:
           href: resources/ediscoverycase.md
           items:
           - name: List eDiscovery cases
-            href: api/eDiscovery-case-list.md
+            href: api/ediscoverycase-list.md
           - name: Get eDiscovery case
-            href: api/ediscovery-case-get.md
+            href: api/ediscoverycase-get.md
           - name: Create eDiscovery case
             href: api/ediscovery-case-create.md
           - name: Update eDiscovery case
-            href: api/ediscovery-case-update.md
+            href: api/ediscoverycase-update.md
           - name: Delete eDiscovery case
-            href: api/ediscovery-case-delete.md
+            href: api/ediscoverycase-delete.md
         - name: eDiscovery review set
           href: resources/ediscoveryreviewset.md
           items:
           - name: List eDiscovery case review sets
-            href: api/ediscovery-reviewset-list.md
+            href: api/reviewset-list.md
           - name: Get eDiscovery case review set
-            href: api/ediscovery-reviewset-get.md
+            href: api/reviewset-get.md
           - name: Create eDiscovery review set
             href: api/ediscovery-reviewset-create.md
         - name: eDiscovery review set query
           href: resources/ediscoveryreviewsetquery.md
           items:
           - name: List eDiscovery review set queries
-            href: api/ediscovery-reviewset-query-list.md
+            href: api/reviewsetquery-list.md
           - name: Get eDiscovery review set query
-            href: api/ediscovery-reviewset-query-get.md
+            href: api/reviewsetquery-get.md
           - name: Create eDiscovery review set query
             href: api/ediscovery-reviewset-query-create.md
           - name: Update eDiscovery review set query
-            href: api/ediscovery-reviewset-query-update.md
+            href: api/reviewsetquery-update.md
           - name: Delete eDiscovery review set query
-            href: api/ediscovery-reviewset-query-delete.md
+            href: api/reviewsetquery-delete.md
         - name: eDiscovery Case Status
           href: resources/ediscoverycasestatusenum.md
     - name: Security
