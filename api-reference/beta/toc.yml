@@ -993,6 +993,8 @@ items:
             href: api/synchronization-synchronizationjob-delete.md
           - name: Provision on demand
             href: api/synchronization-synchronizationjob-provision-on-demand.md
+          - name: Validate credentials
+            href: api/synchronization-synchronizationjob-validatecredentials.md
         - name: Schema
           href: resources/synchronization-synchronizationschema.md
           items:
@@ -1316,6 +1318,8 @@ items:
           href: api/application-post-onlinemeetings.md
         - name: Get
           href: api/onlinemeeting-get.md
+        - name: Update
+          href: api/onlinemeeting-patch.md          
         - name: Delete
           href: api/onlinemeeting-delete.md
         - name: Create or get
