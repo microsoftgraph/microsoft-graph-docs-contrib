@@ -13,7 +13,7 @@ In Outlook, a meeting organizer can allow invitees to propose alternative meetin
 ## Example: attendee responds tentative and suggests a different date/time
 The following is an example where Alex invites Adele to lunch, Adele tentatively accepts and proposes an alternative date and time, and Alex accepts the proposal by adjusting the meeting accordingly:
 
-1. As the organizer, Alex sends a meeting request to Adele. He sets the **allowNewTimeProposals** property of the [event](/graph/api/resources/event?view=graph-rest-v1.0) to `true` to let Adele suggest another time if she needs to.
+1. As the organizer, Alex sends a meeting request to Adele. He sets the **allowNewTimeProposals** property of the [event](/graph/api/resources/event?view=graph-rest-1.0) to `true` to let Adele suggest another time if she needs to.
 
     <!-- {
       "blockType": "request",
@@ -146,7 +146,7 @@ The following is an example where Alex invites Adele to lunch, Adele tentatively
     }
     ```
 
-2. Adele receives the invitation in her Inbox as an [eventMessageRequest](/graph/api/resources/eventmessagerequest?view=graph-rest-v1.0). She notices the **allowNewTimeProposals** property is set. [Using the **event** associated](/graph/api/eventmessage-get#example-2?view=graph-rest-v1.0) with this **eventMessageRequest**, she makes a tentative reply and proposes the next day at the same time, in the **proposedNewTime** body parameter. She also sets the **sendResponse** parameter to true.
+2. Adele receives the invitation in her Inbox as an [eventMessageRequest](/graph/api/resources/eventmessagerequest?view=graph-rest-1.0). She notices the **allowNewTimeProposals** property is set. [Using the **event** associated](/graph/api/eventmessage-get#example-2?view=graph-rest-v1.0) with this **eventMessageRequest**, she makes a tentative reply and proposes the next day at the same time, in the **proposedNewTime** body parameter. She also sets the **sendResponse** parameter to true.
 
     <!-- {
       "blockType": "request",
@@ -249,7 +249,6 @@ The following is an example where Alex invites Adele to lunch, Adele tentatively
             "isAllDay": false,
             "isDelegated": false,
             "responseType": "tentativelyAccepted",
-            "mentionsPreview": null,
             "recurrence": null,
             "body": {
                 "contentType": "html",
@@ -309,7 +308,7 @@ The following is an example where Alex invites Adele to lunch, Adele tentatively
     }
     ```
 
-4. Alex also notices the **event** for the lunch now includes a **proposedNewTime** property that indicates Adele's proposal. This property is only present as part of an [attendee](/graph/api/resources/attendee?view=graph-rest-v1.0) instance if the corresponding attendee has suggested an alternative meeting time. 
+4. Alex also notices the **event** for the lunch now includes a **proposedNewTime** property that indicates Adele's proposal. This property is only present as part of an [attendee](/graph/api/resources/attendee?view=graph-rest-1.0) instance if the corresponding attendee has suggested an alternative meeting time. 
 
     <!-- {
       "blockType": "request",
