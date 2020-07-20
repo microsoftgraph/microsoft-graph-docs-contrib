@@ -10970,7 +10970,7 @@ items:
           - name: Get eDiscovery case
             href: api/ediscoverycase-get.md
           - name: Create eDiscovery case
-            href: api/ediscoverycase-create.md
+            href: api/ediscoverycase-post.md
           - name: Update eDiscovery case
             href: api/ediscoverycase-update.md
           - name: Delete eDiscovery case
@@ -10983,7 +10983,7 @@ items:
           - name: Get eDiscovery case review set
             href: api/reviewset-get.md
           - name: Create eDiscovery review set
-            href: api/reviewset-create.md
+            href: api/reviewset-post.md
         - name: eDiscovery review set query
           href: resources/ediscoveryreviewsetquery.md
           items:
@@ -10992,7 +10992,7 @@ items:
           - name: Get eDiscovery review set query
             href: api/reviewsetquery-get.md
           - name: Create eDiscovery review set query
-            href: api/reviewsetquery-create.md
+            href: api/reviewsetquery-post.md
           - name: Update eDiscovery review set query
             href: api/reviewsetquery-update.md
           - name: Delete eDiscovery review set query
