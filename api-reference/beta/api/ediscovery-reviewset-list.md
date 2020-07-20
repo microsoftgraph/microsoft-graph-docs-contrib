@@ -1,17 +1,17 @@
 ---
-title: "List review sets"
-description: "List review sets."
+title: "List reviewSets"
+description: "Retrieve the list of reviewSet objects in an ediscoveryCase object."
 localization_priority: Normal
 author: "mahage-msft"
 ms.prod: "compliance"
 doc_type: "apiPageType"
 ---
 
-# List eDiscovery review sets
+# List reviewSets
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-List [reviewSet](../resources/ediscoveryreviewset.md) objects in an [ediscoveryCase](../resources/ediscoverycase.md) object.
+Retrieve the list of [reviewSet](../resources/ediscoveryreviewset.md) objects in an [ediscoveryCase](../resources/ediscoverycase.md) object.
 
 ## Permissions
 
@@ -35,7 +35,7 @@ GET /compliance/ediscovery/cases({id})/reviewSets
 
 | Name          | Description   |
 |:--------------|:--------------|
-| Authorization | Bearer {token} |
+| Authorization | Bearer {token}. Required. |
 
 ## Request body
 
