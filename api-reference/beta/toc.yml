@@ -10513,9 +10513,28 @@ items:
           href: resources/useraccountinformation.md
           items:
           - name: List
-            href: api/profile-list-account.md
+            href: api/profile-list-accounts.md
+          - name: Create
+            href: api/profile-post-accounts.md  
           - name: Get
             href: api/useraccountinformation-get.md
+          - name: Update
+            href: api/useraccountinformation-update.md
+          - name: Delete
+            href: api/useraccountinformation-delete.md  
+        - name: Addresses
+          href: resources/itemaddress.md
+          items:
+          - name: List
+            href: api/profile-list-addresses.md
+          - name: Create
+            href: api/profile-post-addresses.md
+          - name: Get
+            href: api/itemaddress-get.md
+          - name: Update
+            href: api/itemaddress-update.md
+          - name: Delete
+            href: api/itemaddress-delete.md
         - name: Anniversary
           href: resources/personanniversary.md
           items:
@@ -10529,6 +10548,32 @@ items:
             href: api/personanniversary-update.md
           - name: Delete
             href: api/personanniversary-delete.md
+        - name: Awards
+          href: resources/personaward.md
+          items:
+          - name: List
+            href: api/profile-list-awards.md
+          - name: Create
+            href: api/profile-post-awards.md
+          - name: Get
+            href: api/personaward-get.md
+          - name: Update
+            href: api/personaward-update.md
+          - name: Delete
+            href: api/personaward-delete.md
+        - name: Certifications
+          href: resources/personcertification.md
+          items:
+          - name: List
+            href: api/profile-list-certifications.md
+          - name: Create
+            href: api/profile-post-certifications.md
+          - name: Get
+            href: api/personcertification-get.md
+          - name: Update
+            href: api/personcertification-update.md
+          - name: Delete
+            href: api/personcertification-delete.md
         - name: Educational activity
           href: resources/educationalactivity.md
           items:
@@ -10594,6 +10639,32 @@ items:
             href: api/personname-update.md
           - name: Delete
             href: api/personname-delete.md
+        - name: Notes
+          href: resources/personannotation.md
+          items:
+          - name: List
+            href: api/profile-list-notes.md
+          - name: Create
+            href: api/profile-post-notes.md
+          - name: Get
+            href: api/personannotation-get.md
+          - name: Update
+            href: api/personannotation-update.md
+          - name: Delete
+            href: api/personannotation-delete.md
+        - name: Patents
+          href: resources/itempatent.md
+          items:
+          - name: List
+            href: api/profile-list-patents.md
+          - name: Create
+            href: api/profile-post-patents.md
+          - name: Get
+            href: api/itempatent-get.md
+          - name: Update
+            href: api/itempatent-update.md
+          - name: Delete
+            href: api/itempatent-delete.md
         - name: Phones
           href: resources/itemphone.md
           items:
@@ -10633,6 +10704,32 @@ items:
             href: api/projectparticipation-update.md
           - name: Delete
             href: api/projectparticipation-delete.md
+        - name: Publications
+          href: resources/itempublication.md
+          items:
+          - name: List
+            href: api/profile-list-publications.md
+          - name: Create
+            href: api/profile-post-publications.md
+          - name: Get
+            href: api/itempublication-get.md
+          - name: Update
+            href: api/itempublication-update.md
+          - name: Delete
+            href: api/itempublication-delete.md
+        - name: Responsibilities
+          href: resources/personresponsibility.md
+          items:
+          - name: List
+            href: api/profile-list-responsibilities.md
+          - name: Create
+            href: api/profile-post-responsibilities.md
+          - name: Get
+            href: api/personresponsibility-get.md
+          - name: Update
+            href: api/personresponsibility-update.md
+          - name: Delete
+            href: api/personresponsibility-delete.md
         - name: Skills
           href: resources/skillproficiency.md
           items:
