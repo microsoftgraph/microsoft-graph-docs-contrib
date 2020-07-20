@@ -1,6 +1,6 @@
 ---
 title: "Get reviewSet"
-description: "Retrieve the properties and relationships of reviewSet object."
+description: "Retrieve the properties and relationships of a reviewSet object."
 localization_priority: Normal
 author: "mahage-msft"
 ms.prod: "compliance"
@@ -35,18 +35,18 @@ GET /compliance/ediscovery/cases/{id}/reviewSets/{id}
 
 This method supports some of the OData query parameters to help customize the response. For general information, see [OData query parameters](/graph/query-parameters).
 
-By default, all review set fields are returned, however, you can specify certain fields to return using the OData `$select` query parameter.  For example, to only return the **displayName** & Id, add the following to your query `$select=displayName,Id`.
+By default, all review set fields are returned; however, you can specify certain fields to return using the OData `$select` query parameter.  For example, to only return the **displayName** and ID, add the following to your query: `$select=displayName,Id`.
 
-Since a request may return many cases which are not of interest, they can be filtered with **displayName**.  To filter by **displayName**, add the following to your query `$filter=displayName eq 'rs1'` where the review set name is rs1.
+Because a request can return many cases, you can filter them by using **displayName**.  To filter by **displayName**, add the following to your query: `$filter=displayName eq 'rs1'`, where the review set name is rs1.
 
 For more information about filtering and specifying fields, see [Using Filter Expressions in OData URIs
-](https://docs.microsoft.com/dynamics-nav/using-filter-expressions-in-odata-uris)
+](https://docs.microsoft.com/dynamics-nav/using-filter-expressions-in-odata-uris).
 
 ## Request headers
 
 | Name      |Description|
 |:----------|:----------|
-| Authorization | Bearer {token} |
+| Authorization | Bearer {token}. Required. |
 
 ## Request body
 
