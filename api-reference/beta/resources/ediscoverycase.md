@@ -37,7 +37,7 @@ eDiscovery cases are containers that contain custodians, holds, collections, rev
 |id|String| The Id for the eDiscovery case. Read-only. |
 |lastModifiedBy|[identitySet](https://docs.microsoft.com/graph/api/resources/identityset)|The last user who modified the entity.|
 |lastModifiedDateTime|DateTimeOffset| The latest date and time when the case was modified. The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 would look like this: `'2014-01-01T00:00:00Z'`|
-|status|[caseStatus](ediscoverycasestatusenum.md)| The case status.|
+|status|[caseStatus](ediscoverycase.md)| The case status.|
 
 ### eDiscovery case status options
 
