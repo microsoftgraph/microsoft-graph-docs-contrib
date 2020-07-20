@@ -1,5 +1,5 @@
 ---
-title: "Create review set"
+title: "Create reviewSet"
 description: "Create and eDiscovery review set."
 localization_priority: Normal
 author: "mahage-msft"
@@ -11,7 +11,7 @@ doc_type: "apiPageType"
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Create a new [reviewSet](../resources/ediscoveryreviewset.md) object. The request body contains the display name of the review set which is the only writable property.
+Create a new [reviewSet](../resources/ediscoveryreviewset.md) object. The request body contains the display name of the review set, which is the only writable property.
 
 ## Permissions
 
@@ -35,7 +35,7 @@ POST /compliance/ediscovery/cases/{id}/reviewSets/{id}
 
 | Name       | Description|
 |:-----------|:-----------|
-| Authorization | Bearer {token} |
+| Authorization | Bearer {token}. Required. |
 
 ## Request body
 
@@ -43,7 +43,7 @@ In the request body, supply JSON representation of the [reviewSet](../resources/
 
 | Property     | Type        | Description |
 |:-------------|:------------|:------------|
-| displayName  | string      | The name of the review set |
+| displayName  | string      | The name of the review set. |
 
 ## Response
 
