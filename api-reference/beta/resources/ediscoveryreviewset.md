@@ -1,6 +1,6 @@
 ---
 title: "reviewSet resource type"
-description: "PROVIDE DESCRIPTION HERE"
+description: "Represents static set of electronically stored information collected for use in a litigation, investigation, or regulatory request."
 localization_priority: Normal
 author: "mahage-msft"
 ms.prod: "compliance"
@@ -11,14 +11,14 @@ doc_type: "resourcePageType"
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-eDiscovery review sets are static set of electronically stored information collected for use in a litigation, investigation or regulatory request.
+Represents static set of electronically stored information collected for use in a litigation, investigation, or regulatory request.
 
 ## Methods
 
 | Method       | Return Type | Description |
 |:-------------|:------------|:------------|
 | [List](../api/reviewset-list.md) | [reviewSet](ediscoveryreviewset.md) collection | Get a collection of review sets. |
-| [Get](../api/reviewset-get.md) | [reviewSet](ediscoveryreviewset.md) | Read properties and relationships of reviewSet object. |
+| [Get](../api/reviewset-get.md) | [reviewSet](ediscoveryreviewset.md) | Read the properties and relationships of a **reviewSet** object. |
 | [Create](../api/reviewset-post.md) | [reviewSet](ediscoveryreviewset.md) | Create a new review set. |
 
 ## Properties
