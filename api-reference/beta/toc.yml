@@ -10997,8 +10997,6 @@ items:
             href: api/reviewsetquery-update.md
           - name: Delete eDiscovery review set query
             href: api/reviewsetquery-delete.md
-        - name: eDiscovery Case Status
-          href: resources/ediscoverycasestatusenum.md
     - name: Security
       displayname: Security API, Microsoft Graph Security API
       items:
