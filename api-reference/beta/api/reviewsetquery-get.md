@@ -1,6 +1,6 @@
 ---
 title: "Get reviewSetQuery"
-description: "Retrieve the properties and relationships of reviewsetquery object."
+description: "Retrieve the properties and relationships of an eDiscovery reviewsetquery object."
 localization_priority: Normal
 author: "mahage-msft"
 ms.prod: "compliance"
@@ -39,7 +39,7 @@ This method supports some of the OData query parameters to help customize the re
 
 | Name      |Description|
 |:----------|:----------|
-| Authorization | Bearer {token} |
+| Authorization | Bearer {token}. Required. |
 
 ## Request body
 
