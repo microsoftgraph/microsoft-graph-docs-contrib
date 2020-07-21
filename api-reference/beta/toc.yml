@@ -969,11 +969,13 @@ items:
           href: resources/synchronization-configure-with-custom-target-attributes.md
         - name: Synchronize directory extension attributes
           href: resources/synchronization-configure-with-directory-extension-attributes.md
+        - name: Acquire access token
+          href: api/synchronization-synchronization-acquireaccesstoken.md 
         - name: Directory definition
           href: resources/synchronization-directorydefinition.md
           items:
           - name: Discover
-            href: api/directorydefinition-discover.md
+            href: api/directorydefinition-discover.md  
         - name: Job
           href: resources/synchronization-synchronizationjob.md
           items:
@@ -993,6 +995,8 @@ items:
             href: api/synchronization-synchronizationjob-delete.md
           - name: Provision on demand
             href: api/synchronization-synchronizationjob-provision-on-demand.md
+          - name: Validate credentials
+            href: api/synchronization-synchronizationjob-validatecredentials.md
         - name: Schema
           href: resources/synchronization-synchronizationschema.md
           items:
