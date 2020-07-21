@@ -34,15 +34,14 @@ eDiscovery cases are containers that contain custodians, holds, collections, rev
 |description|String|The case description.|
 |displayName|String|The case name.|
 |externalId|String|The external case number for customer reference.|
-|id|String| The Id for the eDiscovery case. Read-only. |
+|id|String| The ID for the eDiscovery case. Read-only. |
 |lastModifiedBy|[identitySet](https://docs.microsoft.com/graph/api/resources/identityset)|The last user who modified the entity.|
 |lastModifiedDateTime|DateTimeOffset| The latest date and time when the case was modified. The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 would look like this: `'2014-01-01T00:00:00Z'`|
-|status|[caseStatus](ediscoverycase.md)| The case status.|
+|status|String| The case status. Possible values are `unknown`, `active`, `pendingDelete`, `closing`, `closed`, and `closedWithError`. For details see the following table.|
 
-### eDiscovery case status options
+### caseStatus values
 
-Here's what each **status** property value means:
-|Value|Description|
+|Member|Description|
 |:----|-----------|
 | unknown | Case status is unknown. |
 | active | Case is active. |
