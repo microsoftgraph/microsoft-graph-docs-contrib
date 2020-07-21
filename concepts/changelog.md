@@ -106,6 +106,14 @@ For a summary of the value of these API changes, as well as recent tools, compon
 |Addition|beta|Added the  [Get workbookOperation](/graph/api/resources/workbookoperation-get?view=graph-rest-beta) method to the [workbookOperation](/graph/api/resources/workbookoperation?view=graph-rest-beta) entity. |
 
 
+### Teamwork
+
+| **Change type** | **Version** | **Description**                          |
+| :-------------- | :---------- | :--------------------------------------- |
+| Addition | beta, v1.0 | Added new permissions [TeamsAppInstallation.ReadForTeam](/graph/permissions-reference#Teams-app-installation-permissions), 
+[TeamsAppInstallation.ReadWriteForTeam](/graph/permissions-reference#Teams-app-installation-permissions), [TeamsAppInstallation.ReadForTeam.All](/graph/permissions-reference#Teams-app-installation-permissions), 
+[TeamsAppInstallation.ReadWriteForTeam.All](/graph/permissions-reference#Teams-app-installation-permissions). |
+
 ## June 2020
 
 ### Calendar
