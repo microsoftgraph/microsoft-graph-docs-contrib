@@ -87,7 +87,7 @@ Content-type: application/json
 {
   "id": "operation-id",
   "status": "succeeded",
-  "resourceLocation":"https://graph.microsoft.com/beta/me/drive/items/{drive-item-id}/workbook/sessionInfoResource(key='{key}')"
+  "resourceLocation":"https://graph.microsoft.com/v1.0/me/drive/items/{drive-item-id}/workbook/sessionInfoResource(key='{key}')"
 }
 ```
 
