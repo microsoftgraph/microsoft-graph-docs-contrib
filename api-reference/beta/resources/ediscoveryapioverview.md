@@ -20,7 +20,7 @@ The Microsoft 365 eDiscovery APIs provide functionality for organizations to aut
 > During the preview, usage of these APIs may require subscriptions to specific Microsoft offerings and is subject to the [Microsoft APIs Terms of Use](https://docs.microsoft.com/legal/microsoft-apis/terms-of-use?context=graph/context).  Upon general availability, Microsoft may require you or your customer to pay additional fees.
 
 > [!NOTE]
-> Currently, the eDiscovery Graph APIs only work with Advanced eDiscovery cases.
+> Currently, the eDiscovery APIs in Microsoft Graph only work with Advanced eDiscovery cases.
 
 The Microsoft 365 eDiscovery API includes the following key entities.
 
