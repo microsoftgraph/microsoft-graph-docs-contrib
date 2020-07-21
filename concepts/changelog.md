@@ -90,12 +90,14 @@ For a summary of the value of these API changes, as well as recent tools, compon
 | Addition | beta | Added the **userRiskLevels** property to the [conditionalAccessConditionSet](/graph/api/resources/conditionalaccessconditionset?view=graph-rest-beta) entity. |
 | Addition | beta | Added the **passwordChange** grant control to the [conditionalAccessGrantControls](/graph/api/resources/conditionalaccessgrantcontrols?view=graph-rest-beta) entity. |
 | Addition | beta | Added the **id** property to the [synchronizationSchema](/graph/api/resources/synchronization-synchronizationschema?view=graph-rest-beta) entity. |
+| Addition | beta | Added the [acquireAccessToken](/graph/api/synchronization-synchronization-acquireAccessToken?view=graph-rest-beta) method to the [synchronization](/graph/api/resources/synchronization-synchronization?view=graph-rest-beta) resource|
 
 ### People and workplace intelligence | Profile card customization
 | **Change type** | **Version**   | **Description**                          |
 | :-------------- | :------------ | :--------------------------------------- |
 | Addition | beta | Added the **profileCardProperties** navigation property to the [organizationSettings](/graph/api/resources/organizationsettings?view=graph-rest-beta) entity. |
 | Addition | beta | Added the **profileCardProperty** entity and the following operations: <br/> [List](/graph/api/organizationsettings-list-profilecardproperties) <br/> [Create](/graph/api/organizationsettings-post-profilecardproperties) <br/> [Get](/graph/api/profilecardproperty-get?view=graph-rest-beta) <br/> [Update](/graph/api/profilecardproperty-update?view=graph-rest-beta) <br/> [Delete](/graph/api/profilecardproperty-delete) |
+
 
 ### Workbooks and charts
 | **Change type** | **Version** | **Description**                          |
