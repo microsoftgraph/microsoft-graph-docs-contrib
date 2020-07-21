@@ -1,18 +1,18 @@
 ---
-title: "Error codes for Excel APIs in Microsoft Graph"
-description: "Error codes and messages for Excel APIs in Microsoft Graph"
+title: "Error codes for Workbooks and charts APIs in Microsoft Graph"
+description: "Lists and describes the error codes and messages for Workbooks and charts APIs in Microsoft Graph."
 author: "grangeryy"
 localization_priority: Normal
 ms.prod: "excel"
 ---
 
-# Error codes for Excel APIs in Microsoft Graph
+# Error codes for Workbooks and charts APIs in Microsoft Graph
 
-This article describes error codes that are returned by the Excel APIs in Microsoft Graph when a request sent through the API fails. See [Errors](/graph/errors.md) for more details about error responses and resource types in Microsoft Graph.
+This article describes error codes that are returned by the Workbooks and charts APIs in Microsoft Graph when a request sent through the API fails. For more details about error responses and resource types in Microsoft Graph, see [Errors](/graph/errors.md).
 
 ## Error code
 
-Below we listed current error codes and messages. The service might add new error codes at any time.
+The following table lists the current error codes and messages. The service might add new error codes at any time.
 
 | Code                      | Message
 |:--------------------------|:--------------
@@ -51,7 +51,7 @@ The following are some additional errors that your app might encounter within th
 | **invalidSessionReCreatable**             | The session specified in the request does not exist or is invalid due to a transient error.
 | **invalidSessionRestricted**          | The session specified in the request is invalid due to service configurations or restrictions.
 | **invalidSessionUnexpected**                | The session specified in the request is invalid due to an unexpected issue.
-| **invalidSessionUnsupportedWorkbook**              | The session specified in the request is invalid because the workbook contains  unsupported features or exceeds the size limit.
+| **invalidSessionUnsupportedWorkbook**              | The session specified in the request is invalid because the workbook contains unsupported features or exceeds the size limit.
 | **itemAlreadyExists**         | The resource being created already exists.
 | **itemNotFound**         | The requested resource doesn't exist.
 | **methodNotAllowedUncategorized**              | The HTTP method specified in the request is not allowed on the resource.
@@ -68,7 +68,7 @@ The following are some additional errors that your app might encounter within th
 | **unsupportedOperation**         | The operation being attempted is not supported.
 | **unsupportedWorkbook**         | The request failed. The workbook contains unsupported features or exceeds the size limit.
 
->**Note:** The innerError object might recursively contain more deeper innErerror objects with additional, more specific error codes. These deeper inneError codes are intented for the developer to read.
+>**Note:** The **innerError** object might recursively contain more deeper **innerError** objects with additional, more specific error codes. These deeper **innerError** codes are intented for the developer to read.
 <!-- {
   "type": "#page.annotation",
   "description": "Workbook error code and message",
