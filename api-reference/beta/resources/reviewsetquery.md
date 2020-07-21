@@ -1,6 +1,6 @@
 ---
 title: "reviewSetQuery resource type"
-description: "PROVIDE DESCRIPTION HERE"
+description: "Review set queries are used to query and cull data stored in an eDiscovery reviewSet"
 localization_priority: Normal
 author: "mahage-msft"
 ms.prod: "compliance"
@@ -11,7 +11,7 @@ doc_type: "resourcePageType"
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-PROVIDE DESCRIPTION HERE
+Review set queries are used to query and cull data stored in an eDiscovery [reviewSet](reviewset.md).
 
 ## Methods
 
