@@ -1,13 +1,13 @@
 ---
-title: "List queries"
-description: "Retrieve a list of reviewsetquery objects."
+title: "List reviewSetQueries
+description: "Retrieve a list of reviewSetQuery objects."
 localization_priority: Normal
 author: "mahage-msft"
 ms.prod: "compliance"
 doc_type: "apiPageType"
 ---
 
-# List queries
+# List reviewSetQueries
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
@@ -39,7 +39,7 @@ This method supports some of the OData query parameters to help customize the re
 
 | Name      |Description|
 |:----------|:----------|
-| Authorization | Bearer {token} |
+| Authorization | Bearer {token}. Required. |
 
 ## Request body
 
