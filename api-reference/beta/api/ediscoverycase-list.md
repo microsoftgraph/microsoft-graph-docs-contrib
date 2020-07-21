@@ -82,7 +82,7 @@ Content-type: application/json
 
 {
     "@odata.context": "https://graph.microsoft.com/beta/$metadata#cases",
-    "odata.nextLink":"https://graph.microsoft.com/beta/compliance/ediscovery/cases?$skipToken=159dc1d7-f84f-439e-9d57-4a4d3af0abe5"
+    "odata.nextLink":"https://graph.microsoft.com/beta/compliance/ediscovery/cases?$skipToken=159dc1d7-f84f-439e-9d57-4a4d3af0abe5",
     "value": [
         {
             "id": "061b9a92-8926-4bd9-b41d-abf35edc7583",
