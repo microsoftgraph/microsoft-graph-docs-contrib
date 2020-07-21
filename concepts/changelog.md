@@ -108,10 +108,9 @@ For a summary of the value of these API changes, as well as recent tools, compon
 ### Reports | Microsoft 365 usage reports
 | **Change type** | **Version**   | **Description**                          |
 | :-------------- | :------------ | :--------------------------------------- |
-| Addition | beta | Added the [getM365AppUserCounts](/graph/api/reportroot-getM365AppUserCounts?view=graph-rest-beta) operation. |
-| Addition | beta | Added the [getM365AppPlatformUserCounts](/graph/api/reportroot-getM365AppPlatformUserCounts?view=graph-rest-beta) operation. |
-| Addition | beta | Added the [getM365AppUserDetail](/graph/api/reportroot-getM365AppUserDetail?view=graph-rest-beta) operation. |
-
+| Addition | beta | Added the [getM365AppUserDetail](/graph/api/reportRoot-getM365AppUserDetail?view=graph-rest-beta) method. |
+| Addition | beta | Added the [getM365AppUserCounts](/graph/api/reportRoot-getM365AppUserCounts?view=graph-rest-beta) method. |
+| Addition | beta | Added the [getM365AppPlatformUserCounts](/graph/api/reportRoot-getM365AppPlatformUserCounts?view=graph-rest-beta) method. |
 
 ### Teamwork
 
