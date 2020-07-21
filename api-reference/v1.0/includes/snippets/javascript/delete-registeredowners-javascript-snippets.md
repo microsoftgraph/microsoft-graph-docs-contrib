@@ -10,8 +10,7 @@ const options = {
 
 const client = Client.init(options);
 
-let res = await client.api('/teams/{teamsId}/members/{membership-id}')
-	.version('beta')
+let res = await client.api('/devices/{id}/registeredOwners/{id}/$ref')
 	.delete();
 
 ```
