@@ -1,6 +1,6 @@
 ---
 title: "ediscoveryCase resource type"
-description: "eDiscovery Case resource type"
+description: "eDiscovery cases are containers that contain custodians, holds, collections, review sets, and exports."
 localization_priority: Normal
 author: "mahage-msft"
 ms.prod: "compliance"
@@ -17,11 +17,11 @@ eDiscovery cases are containers that contain custodians, holds, collections, rev
 
 | Method       | Return Type | Description |
 |:-------------|:------------|:------------|
-| [List](../api/ediscoverycase-list.md) | [ediscoveryCase](ediscoverycase.md) collection | Get a list of eDiscovery cases|
+| [List](../api/ediscoverycase-list.md) | [ediscoveryCase](ediscoverycase.md) collection | Get a list of eDiscovery cases.|
 | [Get](../api/ediscoverycase-get.md) | [ediscoveryCase](ediscoverycase.md) | Read eDiscovery case properties. |
-| [Create](../api/ediscoverycase-post.md) | [ediscoveryCase](ediscoverycase.md) | Create a new ediscoveryCase by posting to the cases collection. |
-| [Update](../api/ediscoverycase-update.md) | [ediscoveryCase](ediscoverycase.md) | Update eDiscovery case. |
-| [Delete](../api/ediscoverycase-delete.md) | None | Delete eDiscovery case. |
+| [Create](../api/ediscoverycase-post.md) | [ediscoveryCase](ediscoverycase.md) | Create a new **ediscoveryCase** by posting to the cases collection. |
+| [Update](../api/ediscoverycase-update.md) | [ediscoveryCase](ediscoverycase.md) | Update an eDiscovery case. |
+| [Delete](../api/ediscoverycase-delete.md) | None | Delete an eDiscovery case. |
 
 ## Properties
 
