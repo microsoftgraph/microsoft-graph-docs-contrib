@@ -1,17 +1,17 @@
 ---
 title: "Use the Microsoft Graph eDiscovery API"
-description: " > **Important:** APIs under the /beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported."
+description: "The Microsoft 365 eDiscovery APIs provide functionality for organizations to automate repetitive tasks and integrate with their existing eDiscovery tools to build a repeatable workflows that might be required based on industry regulations. You can use the eDiscovery APIs to help with your legal needs."
 localization_priority: Priority
 author: "mahage-msft"
 ms.prod: "compliance"
-doc_type: resourcePageType
+doc_type: conceptualPageType
 ---
 
 # Use the Microsoft Graph eDiscovery API
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-The Microsoft 365 eDiscovery APIs provide functionality for organizations to automate repetitive tasks, integrate with their existing eDiscovery tools to build a repeatable workflows that may be required based on industry regulations.  The eDiscovery APIs should be used to aid your legal needs.
+The Microsoft 365 eDiscovery APIs provide functionality for organizations to automate repetitive tasks and integrate with their existing eDiscovery tools to build a repeatable workflows that might be required based on industry regulations. You can use the eDiscovery APIs to help with your legal needs.
 
 > [!IMPORTANT]
 > The eDiscovery APIs are intended for the use of eDiscovery operations for Litigation, Investigation and regulatory requests. These APIs should not be used as a substitute for journaling data out of the Microsoft 365 system or any other mass download.
@@ -22,7 +22,7 @@ The Microsoft 365 eDiscovery APIs provide functionality for organizations to aut
 > [!NOTE]
 > Currently, the eDiscovery Graph APIs only work with Advanced eDiscovery cases.
 
-The Microsoft 365 eDiscovery Graph API includes the following key entities.
+The Microsoft 365 eDiscovery API includes the following key entities.
 
 | Name | Type       | Use case |
 |:-|:-|:-|
