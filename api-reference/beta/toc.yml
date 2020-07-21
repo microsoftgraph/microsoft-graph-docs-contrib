@@ -969,11 +969,13 @@ items:
           href: resources/synchronization-configure-with-custom-target-attributes.md
         - name: Synchronize directory extension attributes
           href: resources/synchronization-configure-with-directory-extension-attributes.md
+        - name: Acquire access token
+          href: api/synchronization-synchronization-acquireaccesstoken.md 
         - name: Directory definition
           href: resources/synchronization-directorydefinition.md
           items:
           - name: Discover
-            href: api/directorydefinition-discover.md
+            href: api/directorydefinition-discover.md  
         - name: Job
           href: resources/synchronization-synchronizationjob.md
           items:
@@ -993,6 +995,8 @@ items:
             href: api/synchronization-synchronizationjob-delete.md
           - name: Provision on demand
             href: api/synchronization-synchronizationjob-provision-on-demand.md
+          - name: Validate credentials
+            href: api/synchronization-synchronizationjob-validatecredentials.md
         - name: Schema
           href: resources/synchronization-synchronizationschema.md
           items:
@@ -1316,6 +1320,8 @@ items:
           href: api/application-post-onlinemeetings.md
         - name: Get
           href: api/onlinemeeting-get.md
+        - name: Update
+          href: api/onlinemeeting-patch.md          
         - name: Delete
           href: api/onlinemeeting-delete.md
         - name: Create or get
@@ -1634,6 +1640,8 @@ items:
         - name: App management
           href: resources/intune-app-conceptual.md
           items:
+          - name: Android device owner enrollment mode
+            href: resources/intune-androidforwork-androiddeviceownerenrollmentmode.md
           - name: Android device owner enrollment profile
             href: resources/intune-androidforwork-androiddeviceownerenrollmentprofile.md
             items:
@@ -3295,6 +3303,12 @@ items:
               href: api/intune-deviceconfig-androiddeviceownerimportedpfxcertificateprofile-delete.md
             - name: Update
               href: api/intune-deviceconfig-androiddeviceownerimportedpfxcertificateprofile-update.md
+          - name: Android device owner kiosk mode folder icon
+            href: resources/intune-deviceconfig-androiddeviceownerkioskmodefoldericon.md
+          - name: Android device owner kiosk mode icon size
+            href: resources/intune-deviceconfig-androiddeviceownerkioskmodeiconsize.md
+          - name: Android device owner kiosk mode screen orientation
+            href: resources/intune-deviceconfig-androiddeviceownerkioskmodescreenorientation.md
           - name: Android device owner PKCS certificate profile
             href: resources/intune-deviceconfig-androiddeviceownerpkcscertificateprofile.md
             items:
@@ -4353,13 +4367,6 @@ items:
             href: resources/intune-deviceconfig-encryptionstate.md
           - name: Extended key usage
             href: resources/intune-deviceconfig-extendedkeyusage.md
-          - name: Feature flighted configuration
-            href: resources/intune-deviceconfig-featureflightedconfiguration.md
-            items:
-            - name: List
-              href: api/intune-deviceconfig-featureflightedconfiguration-list.md
-            - name: Get
-              href: api/intune-deviceconfig-featureflightedconfiguration-get.md
           - name: File vault state
             href: resources/intune-deviceconfig-filevaultstate.md
           - name: Firewall certificate revocation list check method type
@@ -6648,6 +6655,19 @@ items:
             href: resources/intune-devices-devicehealthscriptstringparameter.md
           - name: Device health script time schedule
             href: resources/intune-devices-devicehealthscripttimeschedule.md
+          - name: Device log collection request
+            href: resources/intune-devices-devicelogcollectionrequest.md
+          - name: Device log collection response
+            href: resources/intune-devices-devicelogcollectionresponse.md
+            items:
+            - name: List
+              href: api/intune-devices-devicelogcollectionresponse-list.md
+            - name: Get
+              href: api/intune-devices-devicelogcollectionresponse-get.md
+            - name: createDownloadUrl action
+              href: api/intune-devices-devicelogcollectionresponse-createdownloadurl.md
+          - name: Device log collection template type
+            href: resources/intune-devices-devicelogcollectiontemplatetype.md
           - name: Device management abstract complex setting definition
             href: resources/intune-deviceintent-devicemanagementabstractcomplexsettingdefinition.md
             items:
@@ -7224,6 +7244,8 @@ items:
               href: api/intune-devices-manageddevice-setdevicename.md
             - name: rotateFileVaultKey action
               href: api/intune-devices-manageddevice-rotatefilevaultkey.md
+            - name: createDeviceLogCollectionRequest action
+              href: api/intune-devices-manageddevice-createdevicelogcollectionrequest.md
             - name: retire action
               href: api/intune-devices-manageddevice-retire.md
             - name: wipe action
@@ -8522,6 +8544,8 @@ items:
               href: api/intune-shared-devicemanagementderivedcredentialsettings-update.md
             - name: List
               href: api/intune-shared-devicemanagementderivedcredentialsettings-list.md
+            - name: deviceManagementDerivedCredentialSettings](../resources/intune-shared-devicemanagementderivedcredentialsettings.md)|Create
+              href: api/intune-shared-devicemanagementderivedcredentialsettings.md
             - name: Delete
               href: api/intune-shared-devicemanagementderivedcredentialsettings-delete.md
           - name: Device management script
@@ -9440,6 +9464,10 @@ items:
             href: api/device-post-registeredowners.md
           - name: Create registered user
             href: api/device-post-registeredusers.md
+          - name: Remove registered owner
+            href: api/device-delete-registeredowners.md
+          - name: Remove registered user
+            href: api/device-delete-registeredusers.md
           - name: List device groups
             href: api/device-list-memberof.md
           - name: List device transitive groups
