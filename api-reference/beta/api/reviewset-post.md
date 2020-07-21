@@ -1,6 +1,6 @@
 ---
 title: "Create reviewSet"
-description: "Create and eDiscovery review set."
+description: "Create an eDiscovery review set."
 localization_priority: Normal
 author: "mahage-msft"
 ms.prod: "compliance"
