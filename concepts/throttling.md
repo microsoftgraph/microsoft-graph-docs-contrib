@@ -292,6 +292,18 @@ Service limits for Planner are not available.
 The preceding information applies to the following resources:  
 planner, plannerAssignedToTaskBoardTaskFormat, plannerBucket, plannerBucketTaskBoardTaskFormat, plannerGroup, plannerPlan, plannerPlanDetails, plannerProgressTaskBoardTaskFormat, plannerTask, plannerTaskDetails, and plannerUser.
 
+### Identity and access data policy operation service limits
+
+| Request type | Limit per tenant |
+| ------------ | ---------------- |
+| POST on `exportPersonalData` | 1000 requests per day for any subject and 100 per subject per day |
+| Any other request | 10000 requests per hour |
+
+The preceding limits apply to the following resources: 
+dataPolicyOperation.
+
+> **Note:** The resources listed above do not return a `Retry-After` header on `429 Too Many Requests` responses.
+
 <!-- { "blockType": "throttlinggenstart" } -->
 ### Education service limits
 
