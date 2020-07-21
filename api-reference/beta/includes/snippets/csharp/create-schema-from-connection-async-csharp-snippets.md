@@ -40,7 +40,7 @@ var schema = new Schema
 	}
 };
 
-await graphClient.Connections["contosohr"].Schema
+await graphClient.External.Connections["contosohr"].Schema
 	.Request()
 	.Header("Prefer","respond-async")
 	.AddAsync(schema);
