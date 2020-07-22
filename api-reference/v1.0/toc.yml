@@ -4016,6 +4016,13 @@ items:
               href: api/tokenlifetimepolicy-delete.md
             - name: List applied to applications
               href: api/tokenlifetimepolicy-list-appliesto.md
+          - name: Security defaults policy
+            href: resources/identitysecuritydefaultsenforcementpolicy.md
+            items:
+            - name: Get
+              href: api/identitysecuritydefaultsenforcementpolicy-get.md
+            - name: Update
+              href: api/identitysecuritydefaultsenforcementpolicy-update.md
     - name: Mail
       displayName: Outlook, Outlook mail
       items:
