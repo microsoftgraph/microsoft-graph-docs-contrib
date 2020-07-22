@@ -1319,9 +1319,7 @@ items:
         - name: Create
           href: api/application-post-onlinemeetings.md
         - name: Get
-          href: api/onlinemeeting-get.md
-        - name: Update
-          href: api/onlinemeeting-patch.md          
+          href: api/onlinemeeting-get.md         
         - name: Delete
           href: api/onlinemeeting-delete.md
         - name: Create or get
@@ -8544,8 +8542,6 @@ items:
               href: api/intune-shared-devicemanagementderivedcredentialsettings-update.md
             - name: List
               href: api/intune-shared-devicemanagementderivedcredentialsettings-list.md
-            - name: deviceManagementDerivedCredentialSettings](../resources/intune-shared-devicemanagementderivedcredentialsettings.md)|Create
-              href: api/intune-shared-devicemanagementderivedcredentialsettings.md
             - name: Delete
               href: api/intune-shared-devicemanagementderivedcredentialsettings-delete.md
           - name: Device management script

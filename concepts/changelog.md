@@ -79,6 +79,7 @@ For a summary of the value of these API changes, as well as recent tools, compon
 ### Identity and access
 | **Change type** | **Version**   | **Description**                          |
 | :-------------- | :------------ | :--------------------------------------- |
+|Addition|v1.0|Added the [getAvailableExtensionProperties](/graph/api/directoryObject-getAvailableExtensionProperties?view=graph-rest-1.0) method to the [directoryObject](/graph/api/resources/directoryObject?view=graph-rest-1.0) resource.|
 | Addition | beta | Added the **settings** navigation property to the [organization](/graph/api/resources/organization?view=graph-rest-beta) entity. |
 | Addition | beta | Added the [organizationSettings](/graph/api/resources/organizationsettings?view=graph-rest-beta) entity.  |
 | Addition | beta | Added the **profileCardProperties** navigation property to the **organizationSettings** entity. |
