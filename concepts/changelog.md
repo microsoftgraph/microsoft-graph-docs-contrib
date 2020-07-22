@@ -79,6 +79,7 @@ For a summary of the value of these API changes, as well as recent tools, compon
 ### Identity and access
 | **Change type** | **Version**   | **Description**                          |
 | :-------------- | :------------ | :--------------------------------------- |
+|Addition|v1.0|Added the [getAvailableExtensionProperties](/graph/api/directoryObject-getAvailableExtensionProperties?view=graph-rest-1.0) method to the [directoryObject](/graph/api/resources/directoryObject?view=graph-rest-1.0) resource.|
 | Addition | beta | Added the **settings** navigation property to the [organization](/graph/api/resources/organization?view=graph-rest-beta) entity. |
 | Addition | beta | Added the [organizationSettings](/graph/api/resources/organizationsettings?view=graph-rest-beta) entity.  |
 | Addition | beta | Added the **profileCardProperties** navigation property to the **organizationSettings** entity. |
@@ -91,6 +92,7 @@ For a summary of the value of these API changes, as well as recent tools, compon
 | Addition | beta | Added the **passwordChange** grant control to the [conditionalAccessGrantControls](/graph/api/resources/conditionalaccessgrantcontrols?view=graph-rest-beta) entity. |
 | Addition | beta | Added the **id** property to the [synchronizationSchema](/graph/api/resources/synchronization-synchronizationschema?view=graph-rest-beta) entity. |
 | Addition | beta | Added the [acquireAccessToken](/graph/api/synchronization-synchronization-acquireAccessToken?view=graph-rest-beta) method to the [synchronization](/graph/api/resources/synchronization-synchronization?view=graph-rest-beta) resource|
+| Addition | beta | Added the [entitlementManagementSettings](/graph/api/resources/entitlementmanagementsettings?view=graph-rest-beta) entity. |
 
 ### Identity and access | Conditional access
 | **Change type** | **Version** | **Description**                  |
