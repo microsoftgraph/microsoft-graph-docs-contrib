@@ -11,7 +11,7 @@ doc_type: "apiPageType"
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Delete a [reviewSetQuery](../resources/ediscoveryreviewsetquery.md) object.
+Delete a [reviewSetQuery](../resources/reviewsetquery.md) object.
 
 ## Permissions
 

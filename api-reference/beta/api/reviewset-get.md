@@ -11,7 +11,7 @@ doc_type: "apiPageType"
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Retrieve the properties and relationships of a [reviewSet](../resources/ediscoveryreviewset.md) object.
+Retrieve the properties and relationships of a [reviewSet](../resources/reviewset.md) object.
 
 ## Permissions
 
@@ -54,7 +54,7 @@ Do not supply a request body for this method.
 
 ## Response
 
-If successful, this method returns a `200 OK` response code and the requested [reviewSet](../resources/ediscoveryreviewset.md) object in the response body.
+If successful, this method returns a `200 OK` response code and the requested [reviewSet](../resources/reviewset.md) object in the response body.
 
 ## Examples
 

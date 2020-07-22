@@ -10985,7 +10985,7 @@ items:
           - name: Get
             href: api/reviewset-get.md
         - name: Review set query
-          href: resources/ediscoveryreviewsetquery.md
+          href: resources/reviewsetquery.md
           items:
           - name: List
             href: api/reviewsetquery-list.md

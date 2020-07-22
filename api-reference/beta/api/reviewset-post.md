@@ -11,7 +11,7 @@ doc_type: "apiPageType"
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Create a new [reviewSet](../resources/ediscoveryreviewset.md) object. The request body contains the display name of the review set, which is the only writable property.
+Create a new [reviewSet](../resources/reviewset.md) object. The request body contains the display name of the review set, which is the only writable property.
 
 ## Permissions
 
@@ -39,7 +39,7 @@ POST /compliance/ediscovery/cases/{id}/reviewSets/{id}
 
 ## Request body
 
-In the request body, supply JSON representation of the [reviewSet](../resources/ediscoveryreviewset.md).  The following table lists the required properties.
+In the request body, supply JSON representation of the [reviewSet](../resources/reviewset.md).  The following table lists the required properties.
 
 | Property     | Type        | Description |
 |:-------------|:------------|:------------|
@@ -47,7 +47,7 @@ In the request body, supply JSON representation of the [reviewSet](../resources/
 
 ## Response
 
-If successful, this method returns a `201 Created` response code and a [reviewSet](../resources/ediscoveryreviewset.md) object in the response body.
+If successful, this method returns a `201 Created` response code and a [reviewSet](../resources/reviewset.md) object in the response body.
 
 ## Examples
 

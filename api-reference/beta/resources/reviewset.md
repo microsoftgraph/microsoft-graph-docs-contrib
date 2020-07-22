@@ -34,7 +34,7 @@ Represents static set of electronically stored information collected for use in 
 
 | Relationship | Type        | Description |
 |:-------------|:------------|:------------|
-| Review set query |[reviewSetQuery](ediscoveryreviewsetquery.md) collection| Read-only. Nullable.|
+| Review set query |[reviewSetQuery](reviewsetquery.md) collection| Read-only. Nullable.|
 
 ## JSON representation
 

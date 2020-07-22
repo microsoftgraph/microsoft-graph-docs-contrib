@@ -11,7 +11,7 @@ doc_type: "apiPageType"
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Update the properties of an eDiscovery [reviewSetQuery](../resources/ediscoveryreviewsetquery.md).
+Update the properties of an eDiscovery [reviewSetQuery](../resources/reviewsetquery.md).
 
 ## Permissions
 

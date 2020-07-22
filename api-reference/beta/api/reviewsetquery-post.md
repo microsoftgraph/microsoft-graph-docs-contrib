@@ -11,7 +11,7 @@ doc_type: "apiPageType"
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Create a new [reviewSetQuery](../resources/ediscoveryreviewsetquery.md) object.
+Create a new [reviewSetQuery](../resources/reviewsetquery.md) object.
 
 ## Permissions
 
@@ -39,7 +39,7 @@ POST /compliance/ediscovery/cases/{id}/reviewSets/{id}/queries
 
 ## Request body
 
-In the request body, supply a JSON representation of [reviewSetQuery](../resources/ediscoveryreviewsetquery.md) object. The following table lists the required properties.
+In the request body, supply a JSON representation of [reviewSetQuery](../resources/reviewsetquery.md) object. The following table lists the required properties.
 
 | Property     | Type        | Description |
 |:-------------|:------------|:------------|
@@ -47,7 +47,7 @@ In the request body, supply a JSON representation of [reviewSetQuery](../resourc
 
 ## Response
 
-If successful, this method returns a `201 Created` response code and a new [reviewSetQuery](../resources/ediscoveryreviewsetquery.md) object in the response body.
+If successful, this method returns a `201 Created` response code and a new [reviewSetQuery](../resources/reviewsetquery.md) object in the response body.
 
 ## Examples
 
