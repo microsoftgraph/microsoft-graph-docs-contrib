@@ -117,7 +117,11 @@ Content-type: application/json
         }
       ]
     }
-  ]
+  ],
+  "itemInsights": {
+      "isEnabledInOrganization": true,
+      "disabledForGroup": "edbfe4fb-ec70-4300-928f-dbb2ae86c981"
+  }
 }
 ```
 

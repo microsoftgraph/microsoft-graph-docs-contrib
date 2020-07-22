@@ -25,7 +25,7 @@ Represents privacy settings for [itemInsights](iteminsights.md), which configure
 | Property   | Type|Description|
 |:---------------|:--------|:----------|
 |isEnabledInOrganization|Boolean| `true` if organization item insights are enabled; `false` if organization item insights are disabled for all users without exceptions. Default is `true`. Optional.|
-|disabledForGroup|String| an ID of an Azure AD group, of which the members' item insights are disabled. Default is `empty`. Optional.|
+|disabledForGroup|String| The ID of an Azure AD group, of which the members' item insights are disabled. Default is `empty`. Optional.|
 
 ## JSON representation
 

@@ -18,10 +18,10 @@ Contains settings that are applicable to the [organization](organization.md) or 
 | Method       | Return Type | Description |
 |:-------------|:------------|:------------|
 | [Get organization settings](../api/organizationsettings-get.md) | [organizationSettings](organizationsettings.md) | Read the organization settings object. |
-| [Create profileCardProperty](../api/organizationsettings-post-profilecardproperties.md) | [profileCardProperty](profilecardproperty.md) | Create a new profileCardProperty by posting to the profileCardProperties collection. |
-| [List profileCardProperties](../api/organizationsettings-list-profilecardproperties.md) | [profileCardProperty](profilecardproperty.md) collection | Get a profileCardProperty object collection. |
-| [Get itemInsightsSettings](../api/iteminsightssettings-get.md) | [itemInsightsSettings](iteminsightssettings.md) | Get the properties of itemInsightsSettings object. |
-| [Update itemInsightsSettings](../api/iteminsightssettings-update.md) | [itemInsightsSettings](iteminsightssettings.md) | Update properties of the specified itemInsightsSettings resource. |
+| [Create profileCardProperty](../api/organizationsettings-post-profilecardproperties.md) | [profileCardProperty](profilecardproperty.md) | Create a new **profileCardProperty** by posting to the **profileCardProperty** object collection. |
+| [List profileCardProperties](../api/organizationsettings-list-profilecardproperties.md) | [profileCardProperty](profilecardproperty.md) collection | Get a **profileCardProperty** object collection. |
+| [Get itemInsightsSettings](../api/iteminsightssettings-get.md) | [itemInsightsSettings](iteminsightssettings.md) | Get the properties of an **itemInsightsSettings** object. |
+| [Update itemInsightsSettings](../api/iteminsightssettings-update.md) | [itemInsightsSettings](iteminsightssettings.md) | Update the properties of the specified **itemInsightsSettings** resource. |
 
 ## Properties
 

@@ -1,6 +1,6 @@
 ---
 title: "officeGraphInsights resource type"
-description: "Represents the base type for [itemInsights](iteminsights.md). officeGraphInsights is for backward compatibility from earlier versions of the insights API. Use only itemInsights when accessing the insights API."
+description: "Represents the base type for itemInsights. officeGraphInsights is for backward compatibility from earlier versions of the insights API. Use only itemInsights when accessing the insights API."
 author: "simonhult"
 localization_priority: Priority
 ms.prod: "insights"
@@ -8,11 +8,14 @@ doc_type: resourcePageType
 ---
 
 # officeGraphInsights resource type
-Represents the base type for [itemInsights](iteminsights.md). officeGraphInsights is for backward compatibility from earlier versions of the insights API. Use only itemInsights when accessing the insights API.
 
 Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
+
+Use [itemInsights](iteminsights.md) in place of **officeGraphInsights** to access the insights API.
+
+**officeGraphInsights** is for backward compatibility from earlier versions of the insights API. It is the base type for [itemInsights](iteminsights.md).
 
 Insights are relationships calculated using advanced analytics and machine learning techniques. You can, for example, identify OneDrive for Business documents trending around users.
 

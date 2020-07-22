@@ -15,7 +15,7 @@ Namespace: microsoft.graph
 
 Update properties of the specified [itemInsightsSettings](../resources/iteminsightssettings.md) resource.
 
-To learn how to customize item insights privacy for your organization, see [customize insights privacy](/graph/customize-item-insights-privacy.md). 
+To learn how to customize item insights privacy for your organization, see [customize insights privacy](/graph/insights-customize-item-insights-privacy.md). 
 
 ## Permissions
 
@@ -50,13 +50,13 @@ In the request body, supply the values for relevant fields that should be update
 | Property	   | Type	|Description|
 |:---------------|:--------|:----------|
 |isEnabledInOrganization|Boolean| `true` if organization item insights are enabled; `false` if organization item insights are disabled for all users without exceptions. Default is `true`. Optional.|
-|disabledForGroup|String| an ID of an Azure AD group, of which the members' item insights are disabled. Default is `empty`. Optional.|
+|disabledForGroup|String| The ID of an Azure AD group, of which the members' item insights are disabled. Default is `empty`. Optional.|
 
 ## Response
 
 If successful, this method returns a `200 OK` response code and [itemInsightsSettings](../resources/iteminsightssettings.md) object in the response body.
 
->**Note:** This endpoint verifies the validity of a property value but does not check the existence of an Azure AD Group. This means, if you configured an Azure AD group that did not exist or was deleted afterwards, then this method will show previously defined value of '**disabledForGroup**' property but item insights of these group members might be enabled. 
+>**Note:** This operation verifies the validity of property values of the specified **itemInsightsSettings** resource. If the **disabledForGroup** property is set, this operation does not check the existence of the corresponding Azure AD Group. This means, if you set **disabledForGroup** to an Azure AD group that did not exist or was deleted afterwards, this operation will show the previously defined value of **disabledForGroup** property but item insights of these group members may actually be enabled. 
 
 ## Example 
 

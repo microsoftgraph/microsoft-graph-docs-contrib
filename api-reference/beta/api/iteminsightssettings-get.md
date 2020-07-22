@@ -15,7 +15,7 @@ Namespace: microsoft.graph
 
 Get the properties of [itemInsightsSettings](../resources/iteminsightssettings.md) object.
 
-To learn how to customize item insights privacy for your organization, see [customize insights privacy](/graph/customize-item-insights-privacy.md). 
+To learn how to customize item insights privacy for your organization, see [customize insights privacy](/graph/insights-customize-item-insights-privacy.md). 
 
 ## Permissions
 
@@ -50,7 +50,7 @@ Do not supply a request body for this method.
 
 If successful, this method returns a `200 OK` response code and [itemInsightsSettings](../resources/iteminsightssettings.md) object in the response body.
 
->**Note:** This endpoint verifies the validity of a property value but does not check the existence of an Azure AD Group. This means, if you configured an Azure AD group that did not exist or was deleted afterwards, then this method will show previously defined value of '**disabledForGroup**' property but item insights of these group members might be enabled. 
+>**Note:** This operation verifies the validity of property values of the specified **itemInsightsSettings** resource. If the **disabledForGroup** property is set, this operation does not check the existence of the corresponding Azure AD Group. This means, if you set **disabledForGroup** to an Azure AD group that did not exist or was deleted afterwards, this operation will show the previously defined value of **disabledForGroup** property but item insights of these group members may actually be enabled. 
 
 ## Example
 
