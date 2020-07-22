@@ -3801,6 +3801,22 @@ items:
             href: api/certificatebasedauthconfiguration-get.md
           - name: Delete
             href: api/certificatebasedauthconfiguration-delete.md
+        - name: Conditional access
+          items:
+          - name: Policies
+            items:
+            - name: Conditional access policy
+              href: resources/conditionalaccesspolicy.md
+            - name: List
+              href: api/conditionalaccessroot-list-policies.md
+            - name: Create
+              href: api/conditionalaccessroot-post-policies.md
+            - name: Get
+              href: api/conditionalaccesspolicy-get.md
+            - name: Update
+              href: api/conditionalaccesspolicy-update.md
+            - name: Delete
+              href: api/conditionalaccesspolicy-delete.md
         - name: Data policy operation
           href: resources/datapolicyoperation.md
           items:
