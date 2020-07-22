@@ -1,13 +1,13 @@
 ---
-title: "Create session"
-description: "Create a new workbook session. "
+title: "workbook: createSession"
+description: "Create a new workbook session."
 author: "lumine2008"
 localization_priority: Normal
 ms.prod: "excel"
 doc_type: apiPageType
 ---
 
-# Create session
+# workbook: createSession
 
 Namespace: microsoft.graph
 
