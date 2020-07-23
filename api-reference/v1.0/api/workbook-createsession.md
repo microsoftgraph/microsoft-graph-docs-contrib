@@ -52,7 +52,7 @@ POST /workbook/createSession
 | Authorization  | Bearer {token}. Required. |
 
 ## Request body
-In the request body, supply a JSON representation of [WorkbookSessionInfo](../resources/workbooksessioninfo.md) object.
+In the request body, supply a JSON representation of [workbookSessionInfo](../resources/workbooksessioninfo.md) object.
 
 ## Response
 
