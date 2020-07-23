@@ -81,7 +81,7 @@ The following is an example of the response, which contains one message that mat
                 "receivedDateTime": "2019-10-07T10:00:09Z",
                 "sentDateTime": "2019-10-07T09:59:52Z",
                 "hasAttachments": false,
-                "subject": "Weekly digest: Office 365 changes",
+                "subject": "Weekly digest: Microsoft 365 changes",
                 "bodyPreview": "Here is a summary of your messages from last week -   New Feature: Live captions in English-US a",
                 "importance": "normal",
                 "replyTo": [

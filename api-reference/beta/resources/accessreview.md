@@ -59,7 +59,7 @@ Represents an Azure AD [access review](accessreviews-root.md).
 
 | Relationship | Type	|Description|
 |:---------------|:--------|:----------|
-| `reviewers`               |[userIdentity](useridentity.md) collection                     | The collection of reviewers for an access review, if access review reviewerType is of type `delegate`. |
+| `reviewers`               |[userIdentity](useridentity.md) collection                     | The collection of reviewers for an access review, if access review reviewerType is of type `delegated`. |
 | `decisions`               |[accessReviewDecision](accessreviewdecision.md) collection | The collection of decisions for this access review. |
 | `myDecisions`             |[accessReviewDecision](accessreviewdecision.md) collection | The collection of decisions for the caller, if the caller is a reviewer. |
 | `instances`               |[accessReview](accessreview.md) collection         | The collection of access reviews instances past, present and future, if this object is a recurring access review. |
