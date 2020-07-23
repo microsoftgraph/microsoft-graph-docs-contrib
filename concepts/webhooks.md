@@ -278,7 +278,7 @@ The following table documents the latency to expect between an event happening i
 | Resource | Average latency | Maximum latency |
 |:-----|:-----|:-----|
 |[callRecord][] | below 15 minutes | 60 minutes |
-|[chatMessage][] (preview) | Unknown | Unknown |
+|[chatMessage][] (preview) | below 10 seconds | 1 minute |
 |[contact][] | Unknown | Unknown |
 |[driveItem][] | below 1 minute | 5 minutes |
 |[event][] | Unknown | Unknown |
