@@ -722,6 +722,8 @@ items:
           href: api/serviceprincipal-update.md
         - name: Delete
           href: api/serviceprincipal-delete.md
+        - name: Get delta
+          href: api/serviceprincipal-delta.md
         - name: List created objects
           href: api/serviceprincipal-list-createdobjects.md
         - name: List owned objects
