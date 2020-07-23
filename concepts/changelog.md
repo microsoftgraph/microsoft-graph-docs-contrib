@@ -96,7 +96,7 @@ For a summary of the value of these API changes, as well as recent tools, compon
 ### Workbooks and charts
 | **Change type** | **Version** | **Description**                          |
 | :-------------- | :---------- | :--------------------------------------- |
-|Addition|beta and v1.0 |Added the [workbookOperation](/graph/api/resources/workbookoperation) relationship to the [Workbook](/graph/api/resources/workbook?view=graph-rest-beta) entity. |
+|Addition|beta and v1.0 |Added the [workbookOperation](/graph/api/resources/workbookoperation) relationship to the [workbook](/graph/api/resources/workbook?view=graph-rest-beta) entity. |
 |Addition|beta and v1.0 |Added the  [Get workbookOperation](/graph/api/resources/workbookoperation-get) method to the [workbookOperation](/graph/api/resources/workbookoperation?view=graph-rest-beta) entity. |
 
 
