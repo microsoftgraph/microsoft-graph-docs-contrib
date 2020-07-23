@@ -9,18 +9,12 @@ ms.custom: scenarios:getting-started
 
 # Overview of customizing item insights privacy in Microsoft Graph (preview)
 
-## Looking back
-
-Microsoft 365 is getting smarter all the time, providing intelligent business solutions by analysing user activities and relationships to help users achieve more via Microsoft 365. Insights based on documents, emails, calendars, and users help save time and boost productivity. One of the first such applications was Office Delve, launched in 2014, powered by Office Graph. It mapped relationships between people and content from Exchange, SharePoint sites and other applications, respecting the permissions and security policies for displayed content and never storing documents anywhere else but the partition of Office 365.
-
-Along with the joint shipping of Office Graph and Delve, we also delivered a shared set of privacy settings, which control both Office Graph insights and the Delve user experience. It was possible to opt out of Delve at both the tenant level and the user level. After opting out, users lost access to the rich functionality of Delve and, additionally, of various other services that surface insights from Office Graph. 
-
-As Office Graph continued to evolve, it has become a more independent, mature, and powerful service. It has become a part of every Microsoft 365 experience, and part of Microsoft Graph. To offer a coherent Microsoft Graph schema, we introduced an [itemInsights](/graph/api/resources/itemInsights?view=graph-rest-beta) entity which inherits all the properties of the pre-existing [officeGraphInsights](/graph/api/resources/officegraphinsights?view=graph-rest-beta) resource, and have kept **officeGraphInsights** around for backward compatibility. Given this Office Graph evolution, we’ve also disjoined the privacy story for two independent pieces, providing the flexibility to fine-tune item insights in Office Graph and Delve. 
-
-
 ## Item insights privacy settings
 
 ### Overview
+
+At the time of first release in 2014 the Office Graph was known as a backend service for Delve with shared set of privacy controls, which control both the Office Graph insights and the Delve user experience. As Office Graph continued to evolve, it has become a more independent, mature, and powerful service. It has become a part of every Microsoft 365 experience, and part of Microsoft Graph. To offer a coherent Microsoft Graph schema, Microsoft introduced an [itemInsights](/graph/api/resources/itemInsights?view=graph-rest-beta) entity which inherits all the properties of the pre-existing [officeGraphInsights](/graph/api/resources/officegraphinsights?view=graph-rest-beta) resource, and have kept **officeGraphInsights** around for backward compatibility. Given this Office Graph evolution, we’ve also disjoined the privacy story for two independent pieces, providing the flexibility to fine-tune item insights in Office Graph and Delve. 
+
 Item insights privacy settings provide the ability to configure the visibility of insights derived from Microsoft Graph, between users and other items (such as documents or sites) in Microsoft 365. You can disable the Delve app via the pre-existing controls, but allow other insights-based experiences to continue to provide assistance.
 
 ### How to configure?
