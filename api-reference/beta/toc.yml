@@ -9755,23 +9755,23 @@ items:
               href: api/riskyusers-confirmcompromised.md
             - name: Dismiss
               href: api/riskyusers-dismiss.md
-        - name: Identity provider
+        - name: Identity provider 
           href: resources/identityprovider.md
           items:
-          - name: OpenIDConnect Identity provider
-            href: resources/openIdConnectprovider.md
-          - name: List identity providers
+          - name: OpenID Connect identity provider
+            href: resources/openidconnectprovider.md
+          - name: List
             href: api/identityprovider-list.md
-          - name: List all identity provider types
-            href: api/identityprovider-list-availableTypes.md
-          - name: Create identity provider
+          - name: Create
             href: api/identityprovider-post-identityproviders.md
-          - name: Get identity provider
+          - name: Get
             href: api/identityprovider-get.md
-          - name: Update identity provider
+          - name: Update
             href: api/identityprovider-update.md
-          - name: Delete identity provider
+          - name: Remove
             href: api/identityprovider-delete.md
+          - name: Available identity provider types
+            href: api/identityprovider-availableprovidertypes.md
         - name: Information protection
           items:    
           - name: Threat assessment

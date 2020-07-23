@@ -1,6 +1,6 @@
 ---
 title: "identityProvider resource type"
-description: "Represents identity providers in an Azure Active Directory (Azure AD) tenant and B2C tenant."
+description: "Represents identity providers in an Azure Active Directory (Azure AD) tenant and an Azure AD B2C tenant."
 localization_priority: Priority
 doc_type: resourcePageType
 ms.prod: "microsoft-identity-platform"
@@ -13,7 +13,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Represents identity providers in an Azure Active Directory (Azure AD) tenant and B2C tenant. 
+Represents identity providers in an Azure Active Directory (Azure AD) tenant and an Azure AD B2C tenant.
 
 In an Azure Active Directory (Azure AD) tenant B2B scenarios the identity providers can be Google or Facebook.
 
@@ -21,11 +21,11 @@ In a B2C tenant the identity provider can be Microsoft, Google, Facebook, Amazon
 
 Configuring an identity provider in your Azure AD B2C tenant enables users to:
 
-* Sign up and sign in using a social account or a custom OpenID Connect supported provider in a consumer application. For example, an application can use Azure AD B2C to allow users to sign up for the service using a Facebook account or their own custom identity provider that complies with OIDC protocol.
+* Sign up and sign in using a social account or a custom OpenID Connect supported provider in an application. For example, an application can use Azure AD B2C to allow users to sign up for the service using a Facebook account or their own custom identity provider that complies with OIDC protocol.
 
 Configuring an identity provider in your Azure AD tenant enables new B2B guest scenarios. For example, an organization has resources in Microsoft 365 that need to be shared with a Gmail user. The Gmail user will use their Google account credentials to authenticate and access the documents.
 
-If it is a custom OpenIDConnect identity provider with OpenIDConnect as `type` then it is represented using [openIdConnectProvider](../resources/openIdConnectProvider.md) resource type, which will inherit from identityProvider resource type. 
+If it is a custom OpenID Connect identity provider with `OpenIDConnect` as `type` then it is represented using [openIdConnectProvider](../resources/openidconnectprovider.md) resource type, which will inherit from identityProvider resource type. 
 
 ## Methods
 

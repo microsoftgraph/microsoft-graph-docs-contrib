@@ -1,7 +1,7 @@
 ---
 title: "openIdConnectProvider resource type"
 description: "Represents OpenIDConnect identity providers in an Azure Active Directory (Azure AD) B2C tenant."
-localization_priority: Priority
+localization_priority: Normal
 doc_type: resourcePageType
 ms.prod: "microsoft-identity-platform"
 author: "namkedia"
@@ -15,25 +15,26 @@ Namespace: microsoft.graph
 
 Represents openIdConnectProvider identity providers in an Azure Active Directory (Azure AD) B2C tenant. 
 
-Configuring an OpenIDConnect provider in B2C tenant enables users to sign up and sign in using their custom identity provider in a consumer application.
+Configuring an OpenIDConnect provider in B2C tenant enables users to sign up and sign in using their custom identity provider in an application.
 
 ## Methods
 
 | Method       | Return Type  |Description|
 |:---------------|:--------|:----------|
-|[Get identityProvider](../api/identityprovider-get.md) |identityProvider|Read properties of an existing identityProvider.|
+|[List available identityProvider types](../api/identityprovider-list-availableTypes.md)||List all identityProviders available in a tenant.|
+|[List configured identityProviders](../api/identityprovider-list.md)|identityProvider collection|List all identityProviders configured in a tenant.|
 |[Create identityProvider](../api/identityprovider-post-identityproviders.md)|identityProvider|Create a new identityProvider.|
+|[Get identityProvider](../api/identityprovider-get.md) |identityProvider|Read properties of an existing identityProvider.|
 |[Update identityProvider](../api/identityprovider-update.md)|None|Update an existing identityProvider.|
 |[Delete identityProvider](../api/identityprovider-delete.md)|None|Delete an existing identityProvider.|
-|[List configured identityProviders](../api/identityprovider-list.md)|identityProvider collection|List all identityProviders configured in a tenant.|
-|[List available identityProvider types](../api/identityprovider-list-availableTypes.md)||List all identityProviders available in a tenant.|
+
 
 ## Properties
 
 |Property|Type|Required|Read only|Description|
 |:---------------|:--------|:--------|:--------|:----------|
-|clientId|String|Yes(in some cases; see description)|No|The client ID for the application. This is the client ID obtained when registering the application with the identity provider.|
-|clientSecret|String|Yes||The client secret for the application. This is the client secret obtained when registering the application with the identity provider. The clientSecret has a dependency on responseType. In the case of responseType = code, a secret is required for the auth code exchange, but in the case of responseType = id_token it is not required because there is no code exchange, the id_token is returned directly from the authorization response.This is write-only. A read operation will return "\*\*\*\*".|
+|clientId|String|Yes(in some cases; see description)|No|The client ID for the application obtained when registering the application with the identity provider. Inherited from [identityProvider](../resources/identityprovider.md)|
+|clientSecret|String|Yes||The client secret for the application obtained when registering the application with the identity provider. The clientSecret has a dependency on responseType. In the case of responseType = code, a secret is required for the auth code exchange, but in the case of responseType = id_token it is not required because there is no code exchange, the id_token is returned directly from the authorization response.This is write-only. A read operation will return "\*\*\*\*". Inherited from [identityProvider](../resources/identityprovider.md)|
 |id|String|Yes|Yes (after creation)|The ID of the identity provider.|
 |name|String|Yes|Yes (after creation)|The display name of the identity provider.|
 |type|String|Yes|Yes (after creation)|The identity provider type. It must be `OpenIDConnect`

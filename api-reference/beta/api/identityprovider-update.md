@@ -3,7 +3,7 @@ title: "Update identityProvider"
 description: "Update properties in an existing identityProvider."
 localization_priority: Normal
 doc_type: apiPageType
-author: "Nickgmicrosoft"
+author: "namkedia"
 ms.prod: "microsoft-identity-platform"
 ---
 
@@ -13,7 +13,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Update properties in an existing [identityProvider](../resources/identityprovider.md) or [openIdConnectProvider](../resources/openIdConnectProvider.md).
+Update the properties of an[identityProvider](../resources/identityprovider.md) or [openIdConnectProvider](../resources/openidconnectprovider.md) object.
 
 ## Permissions
 
@@ -64,7 +64,7 @@ In the request body, provide a JSON object with one or more properties that need
 |clientId|String|The client ID for the application. This is the client ID obtained when registering the application with the identity provider.|
 |clientSecret|String|The client secret for the application. This is the client secret obtained when registering the application with the identity provider.|
 |name|String|The display name of the identity provider.|
-|type|String|The identity provider type. It must be the value OpenIdConnect.|
+|type|String|The identity provider type. The value must be `OpenIdConnect`.|
 |claimsMapping|[claimsMapping](../resources/claimsmapping.md)|After the OIDC provider sends an ID token back to Azure AD, Azure AD needs to be able to map the claims from the received token to the claims that Azure AD recognizes and uses. This complex type captures that mapping.|
 |domainHint|String|The domain hint can be used to skip directly to the sign in page of the specified identity provider, instead of having the user make a selection among the list of available identity providers.|
 |metadataUrl|String|The URL for the metadata document of the Open Id Connect identity provider.|
@@ -76,45 +76,26 @@ In the request body, provide a JSON object with one or more properties that need
 
 ## Response
 
-If successful, this method returns `204 No Content` response code. If unsuccessful, a `4xx` error will be returned with specific details.
+If successful, this method returns a `204 No Content` response code. If unsuccessful, a `4xx` error will be returned with specific details.
 
 ## Example
 
-The following example updates the definition of the token lifetime **identityProvider** and sets it as the organization default.
-
-##### Request
-
-
-# [HTTP](#tab/http)
+### Request
 <!-- {
   "blockType": "request",
   "name": "update_identityprovider"
-}-->
-```http
+}
+-->
+``` http
 PATCH https://graph.microsoft.com/beta/identityProviders/Amazon-OAuth
-Content-type: application/json
+Content-Type: application/json
 Content-length: 41
-
 {
-    "clientSecret": "1111111111111"
+  "clientSecret": "1111111111111"
 }
 ```
-# [C#](#tab/csharp)
-[!INCLUDE [sample-code](../includes/snippets/csharp/update-identityprovider-csharp-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# [JavaScript](#tab/javascript)
-[!INCLUDE [sample-code](../includes/snippets/javascript/update-identityprovider-javascript-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [Objective-C](#tab/objc)
-[!INCLUDE [sample-code](../includes/snippets/objc/update-identityprovider-objc-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
----
-
-
-##### Response
+### Response
 
 <!-- {
   "blockType": "response",
@@ -123,17 +104,3 @@ Content-length: 41
 ```http
 HTTP/1.1 204 No Content
 ```
-
-<!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
-2015-10-25 14:57:30 UTC -->
-<!--
-{
-  "type": "#page.annotation",
-  "description": "Update identityProvider",
-  "keywords": "",
-  "section": "documentation",
-  "tocPath": "",
-  "suppressions": [
-  ]
-}
--->

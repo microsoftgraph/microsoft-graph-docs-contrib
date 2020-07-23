@@ -1,6 +1,6 @@
 ---
 title: "Create identityProvider"
-description: "Create a new identityProvider by specifying display name, identityProvider type, client ID, and client secret."
+description: "Create a new identityProvider object."
 localization_priority: Normal
 doc_type: apiPageType
 author: "Nickgmicrosoft"
@@ -13,7 +13,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Create a new [identityProvider](../resources/identityprovider.md) or [openIdConnectProvider](../resources/openIdConnectProvider.md) by specifying properties of the resource type. 
+Create a new [identityProvider](../resources/identityprovider.md) or [openIdConnectProvider](../resources/openidconnectprovider.md) object.
 
 ## Permissions
 
@@ -63,59 +63,40 @@ In the request body, provide a JSON representation of [identityProvider](../reso
 |clientId|String|The client ID for the application. This is the client ID obtained when registering the application with the identity provider.|
 |clientSecret|String|The client secret for the application. This is the client secret obtained when registering the application with the identity provider.|
 |name|String|The display name of the identity provider.|
-|type|String|The identity provider type. It must be the value OpenIdConnect.|
-|claimsMapping|[claimsMapping](../resources/claimsmapping.md)|In the claimsMapping resource type `userId` and `displayname` are the two required fields.|
+|type|String|The identity provider type. The value must be `OpenIdConnect`.|
+|claimsMapping|[claimsMapping](../resources/claimsmapping.md)|The `userId` and `displayname` properties are required in the claimsMapping object.|
 |metadataUrl|String|The URL for the metadata document of the Open Id Connect identity provider.|
 |responseMode|openIdConnectResponseMode enum|Defines the method that should be used to send the data back from the custom identity provider to Azure AD B2C. The following response modes can be used: <ul><li/>`form_post` : This response mode is recommended for best security. The response is transmitted via the HTTP POST method, with the code or token being encoded in the body using the application/x-www-form-urlencoded format.<li/>`query` : The code or token is returned as a query parameter.</ul>|
 |responseType|openIdConnectResponseTypes enum|Describes what kind of information is sent back in the initial call to the authorization_endpoint of the custom identity provider. The following response types can be used:<ul><li/> `code` : As per the authorization code flow, a code will be returned back to Azure AD B2C. Azure AD B2C proceeds to call the token_endpoint to exchange the code for the token.<li/> `id_token` : An ID token is returned back to Azure AD B2C from the custom identity provider. <li/>`token` : An access token is returned back to Azure AD B2C from the custom identity provider. (This value is not supported by Azure AD B2C at the moment)</ul>|
 |scope|String|Scope defines the information and permissions you are looking to gather from your custom identity provider.|
 
-
-
 ## Response
 
-If successful, this method returns `201 Created` response code and [identityProvider](../resources/identityprovider.md) or [openIdConnectProvider](../resources/openIdConnectProvider.md) object in the response body. If unsuccessful, a `4xx` error will be returned with specific details.
+If successful, this method returns a `201 Created` response code and [identityProvider](../resources/identityprovider.md) or [openIdConnectProvider](../resources/openIdConnectProvider.md) object in the response body. If unsuccessful, a `4xx` error will be returned with specific details.
 
 ## Example
 
-The following example creates an **identityProvider**.
-
-##### Request
-
-
-# [HTTP](#tab/http)
+### Request
 <!-- {
   "blockType": "request",
   "name": "create_identityprovider_from_identityproviders"
-}-->
-```http
+}
+-->
+``` http
 POST https://graph.microsoft.com/beta/identityProviders
-Content-type: application/json
-
+Content-Type: application/json
+Content-length: 154
 {
-    "name": "Login with Amazon",
-    "type": "Amazon",
-    "clientId": "56433757-cadd-4135-8431-2c9e3fd68ae8",
-    "clientSecret": "000000000000"
+  "@odata.type": "#microsoft.graph.identityProvider",
+  "name": "Login with Amazon",
+  "type": "Amazon",
+  "clientId": "56433757-cadd-4135-8431-2c9e3fd68ae8",
+  "clientSecret": "000000000000"
 }
 ```
-# [C#](#tab/csharp)
-[!INCLUDE [sample-code](../includes/snippets/csharp/create-identityprovider-from-identityproviders-csharp-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# [JavaScript](#tab/javascript)
-[!INCLUDE [sample-code](../includes/snippets/javascript/create-identityprovider-from-identityproviders-javascript-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [Objective-C](#tab/objc)
-[!INCLUDE [sample-code](../includes/snippets/objc/create-identityprovider-from-identityproviders-objc-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
----
-
-
-##### Response
-
+### Response
+**Note:** The response object shown here might be shortened for readability.
 <!-- {
   "blockType": "response",
   "truncated": true,
@@ -126,6 +107,7 @@ HTTP/1.1 201 Created
 Content-type: application/json
 
 {
+   "@odata.type": "#microsoft.graph.identityProvider",
     "id": "Amazon-OAUTH",
     "name": "Login with Amazon",
     "type": "Amazon",
@@ -133,16 +115,3 @@ Content-type: application/json
     "clientSecret": "*****"
 }
 ```
-<!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
-2015-10-25 14:57:30 UTC -->
-<!--
-{
-  "type": "#page.annotation",
-  "description": "Create identityProvider",
-  "keywords": "",
-  "section": "documentation",
-  "tocPath": "",
-  "suppressions": [
-  ]
-}
--->

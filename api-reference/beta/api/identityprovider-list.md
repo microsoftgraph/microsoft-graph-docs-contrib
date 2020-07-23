@@ -1,6 +1,6 @@
 ---
-title: "List configured identityProviders"
-description: "Retrieve all configured identityProviders in the directory."
+title: "List identityProviders"
+description: "Get a list of the identityProvider objects and their properties."
 localization_priority: Normal
 doc_type: apiPageType
 author: "namkedia"
@@ -13,7 +13,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Retrieve all configured [identityProviders](../resources/identityprovider.md) and [openIdConnectProvider](../resources/openIdConnectProvider.md) in the directory.
+Get a list of the [identityProviders](../resources/identityprovider.md) and [openIdConnectProvider](../resources/openidconnectprovider.md) objects and their properties.
 
 ## Permissions
 
@@ -36,6 +36,9 @@ The work or school account needs to belong to one of the following two roles:
 GET /identityProviders
 ```
 
+## Optional query parameters
+This method supports some of the OData query parameters to help customize the response. For general information, see [OData query parameters](/graph/query-parameters).
+
 ## Request headers
 
 |Name|Description|
@@ -48,40 +51,22 @@ Do not supply a request body for this method.
 
 ## Response
 
-If successful, this method returns `200 OK` response code and a polymorphic collection of [identityProviders](../resources/identityprovider.md) and [openIdConnectProvider](../resources/openIdConnectProvider.md) in JSON representation in the response body.
+If successful, this method returns a `200 OK` response code and a collection of [identityProvider](../resources/identityprovider.md) and [openIdConnectProvider](../resources/openIdConnectProvider.md) objects in the response body.
 
 ## Example
 
-The following example retrieves all configured **identityProvider**.
-
-##### Request
-
-
-# [HTTP](#tab/http)
+### Request
 <!-- {
   "blockType": "request",
-  "name": "get_identityproviders"
-}-->
-```msgraph-interactive
+  "name": "get_identityprovider"
+}
+-->
+``` http
 GET https://graph.microsoft.com/beta/identityProviders
 ```
-# [C#](#tab/csharp)
-[!INCLUDE [sample-code](../includes/snippets/csharp/get-identityproviders-csharp-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# [JavaScript](#tab/javascript)
-[!INCLUDE [sample-code](../includes/snippets/javascript/get-identityproviders-javascript-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [Objective-C](#tab/objc)
-[!INCLUDE [sample-code](../includes/snippets/objc/get-identityproviders-objc-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
----
-
-
-##### Response
-
+### Response
+**Note:** The response object shown here might be shortened for readability.
 <!-- {
   "blockType": "response",
   "truncated": true,
@@ -124,17 +109,3 @@ Content-type: application/json
     }
 }
 ```
-
-<!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
-2015-10-25 14:57:30 UTC -->
-<!--
-{
-  "type": "#page.annotation",
-  "description": "List identityProviders",
-  "keywords": "",
-  "section": "documentation",
-  "tocPath": "",
-  "suppressions": [
-  ]
-}
--->

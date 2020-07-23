@@ -1,7 +1,7 @@
 ---
 title: "Get identityProvider"
-description: "Retrieve the properties of an existing identityProvider."
-localization_priority: Priority
+description: "Read the properties and relationships of an identityProvider object."
+localization_priority: Normal
 doc_type: apiPageType
 author: "namkedia"
 ms.prod: "microsoft-identity-platform"
@@ -13,7 +13,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Retrieve the properties of an existing [identityProvider](../resources/identityprovider.md) or [openIdConnectProvider](../resources/openIdConnectProvider.md).
+RRead the properties and relationships of an [identityProvider](../resources/identityprovider.md) or [openIdConnectProvider](../resources/openidconnectprovider.md).
 
 ## Permissions
 
@@ -35,6 +35,8 @@ The work or school account needs to belong to one of the following two roles:
 ```http
 GET /identityProviders/{id}
 ```
+## Optional query parameters
+This method supports some of the OData query parameters to help customize the response. For general information, see [OData query parameters](/graph/query-parameters).
 
 ## Request headers
 
@@ -48,39 +50,23 @@ Do not supply a request body for this method.
 
 ## Response
 
-If successful, this method returns `200 OK` response code and a JSON representation of the [identityProvider](../resources/identityprovider.md) or [openIdConnectProvider](../resources/openIdConnectProvider.md) in the response body.
+If successful, this method returns a `200 OK` response code and a JSON representation of the [identityProvider](../resources/identityprovider.md) or [openIdConnectProvider](../resources/openIdConnectProvider.md) in the response body.
 
 ## Example
 
 The following example retrieves a specific **identityProvider**.
 
-##### Request
-
-
-# [HTTP](#tab/http)
+### Request
 <!-- {
   "blockType": "request",
   "name": "get_identityprovider"
-}-->
-```msgraph-interactive
-GET https://graph.microsoft.com/beta/identityProviders/Amazon-OAuth
+}
+-->
+``` http
+GET https://graph.microsoft.com/beta/identityProviders/{identityProvidersId}
 ```
-# [C#](#tab/csharp)
-[!INCLUDE [sample-code](../includes/snippets/csharp/get-identityprovider-csharp-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# [JavaScript](#tab/javascript)
-[!INCLUDE [sample-code](../includes/snippets/javascript/get-identityprovider-javascript-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [Objective-C](#tab/objc)
-[!INCLUDE [sample-code](../includes/snippets/objc/get-identityprovider-objc-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
----
-
-
-##### Response
+### Response
 
 <!-- {
   "blockType": "response",
