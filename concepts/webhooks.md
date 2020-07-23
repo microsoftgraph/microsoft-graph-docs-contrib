@@ -271,6 +271,24 @@ You can optionally configure the firewall that protects your notification URL to
 
 > **Note:** The listed IP addresses that are used to deliver change notifications can be updated at any time without notice.
 
+## Latency
+
+The following table documents the average latency between an event happening in the service and the delivery of the change notification.
+
+| Resource | Average latency | Maximum latency |
+|:-----|:-----|:-----|
+|[callRecord](../resources/callrecords-callrecord.md) | 15 minutes | 60 minutes |
+|[chatMessage](../resources/chatmessage.md) (preview) | Unknown | Unknown |
+|[contact](../resources/contact.md) | Unknown | Unknown |
+|[driveItem](../resources/driveitem.md) | Unknown | Unknown |
+|[event](../resources/event.md) | Unknown | Unknown |
+|[group](../resources/group.md) | Unknown | Unknown |
+|[group conversation](../resources/conversation.md) | Unknown | Unknown |
+|[list](../resources/list.md) | Unknown | Unknown |
+|[message](../resources/message.md) | Unknown | Unknown |
+|[security alert](../resources/alert.md) | Unknown | Unknown |
+|[user](../resources/user.md) | Unknown | Unknown |
+
 ## See also
 
 - [Subscription resource type](/graph/api/resources/subscription?view=graph-rest-1.0)
