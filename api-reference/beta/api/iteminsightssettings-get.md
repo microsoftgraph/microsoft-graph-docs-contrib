@@ -23,9 +23,9 @@ One of the following permissions is required to call this API. To learn more, in
 
 |Permission type      | Permissions (from least to most privileged)              |
 |:--------------------|:---------------------------------------------------------|
-|Delegated (work or school account) | User.ReadWrite |
+|Delegated (work or school account) | User.Read, User.ReadWrite |
 |Delegated (personal Microsoft account) | Not supported.    |
-|Application | User.ReadWrite |
+|Application | User.Read, User.ReadWrite  |
 
 >**Note:** Using delegated permissions for this operation requires the signed-in user to have a global administrator role.
 
