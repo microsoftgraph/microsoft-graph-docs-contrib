@@ -32,8 +32,8 @@ None.
 | Relationship | Type        | Description |
 |:-------------|:------------|:------------|
 |id |String| Id of the settings object for the organization. |
-|profileCardProperties|[profileCardProperty](profilecardproperty.md) collection| Contains a collection of the properties an administrator has defined as visible on the M365 Profile Card. |
-|itemInsights|[itemInsightsSettings](iteminsightssettings.md)| Contains the properties that are configured by an administrator for the visibility of Microsoft Graph-derived insights, between a user and other items in Microsoft 365, such as documents or sites. |
+|profileCardProperties|[profileCardProperty](profilecardproperty.md) collection| Contains a collection of the properties an administrator has defined as visible on the Microsoft 365 profile card. [Get organization settings](../api/organizationsettings-get.md) returns the properties configured for profile cards for the organization.|
+|itemInsights|[itemInsightsSettings](iteminsightssettings.md)| Contains the properties that are configured by an administrator for the visibility of Microsoft Graph-derived insights, between a user and other items in Microsoft 365, such as documents or sites. [Get itemInsightsSettings](../api/iteminsightssettings-get.md) through this navigation property.|
 
 ## JSON representation
 
