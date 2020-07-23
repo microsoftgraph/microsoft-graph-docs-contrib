@@ -3,7 +3,7 @@ title: "Create identityProvider"
 description: "Create a new identityProvider object."
 localization_priority: Normal
 doc_type: apiPageType
-author: "Nickgmicrosoft"
+author: "namkedia"
 ms.prod: "microsoft-identity-platform"
 ---
 
@@ -76,7 +76,9 @@ If successful, this method returns a `201 Created` response code and [identityPr
 
 ## Example
 
-### Request
+### Example 1: The following example creates a specific **identityProvider**
+
+#### Request
 <!-- {
   "blockType": "request",
   "name": "create_identityprovider_from_identityproviders"
@@ -95,7 +97,7 @@ Content-length: 154
 }
 ```
 
-### Response
+#### Response
 **Note:** The response object shown here might be shortened for readability.
 <!-- {
   "blockType": "response",
@@ -113,5 +115,70 @@ Content-type: application/json
     "type": "Amazon",
     "clientId": "56433757-cadd-4135-8431-2c9e3fd68ae8",
     "clientSecret": "*****"
+}
+```
+### Example 2: The following example creates a specific **openIDConnectProvider**
+
+#### Request
+<!-- {
+  "blockType": "request",
+  "name": "create_openidconnectprovider_from_identityproviders"
+}
+-->
+``` http
+POST https://graph.microsoft.com/beta/identityProviders
+Content-Type: application/json
+{
+    "@odata.type": "microsoft.graph.openIdConnectProvider"
+    "name": "Login with the Contoso identity provider",
+    "type": "OpenIDConnect",
+    "clientId": "56433757-cadd-4135-8431-2c9e3fd68ae8",
+    "clientSecret": "12345",
+    "claimsMapping": {
+        "userId": "myUserId",
+        "givenName": "myGivenName",
+        "surname": "mySurname",
+        "email": "myEmail",
+        "displayName": "myDisplayName"
+    },
+    "domainHint": "mycustomoidc"
+    "metadataUrl": "https://mycustomoidc.com/.well-known/openid-configuration",
+    "responseMode": "form_post",
+    "responseType": "code",
+    "scope": "openid"
+}
+
+```
+
+#### Response
+**Note:** The response object shown here might be shortened for readability.
+<!-- {
+  "blockType": "response",
+  "truncated": true,
+  "@odata.type": "microsoft.graph.openIdConnectProvider"
+} -->
+```http
+HTTP/1.1 201 Created
+Content-type: application/json
+
+{
+  "@odata.type": "microsoft.graph.openIdConnectProvider"
+  "id": "OIDC-V1-MyTest-085a8a0c-58cb-4b6d-8e07-1328ea404e1a",
+  "name": "Login with the Contoso identity provider",
+  "type": "OpenIDConnect",
+  "clientId": "56433757-cadd-4135-8431-2c9e3fd68ae8",
+  "clientSecret": "12345",
+  "claimsMapping": {
+      "userId": "myUserId",
+      "givenName": "myGivenName",
+      "surname": "mySurname",
+      "email": "myEmail",
+      "displayName": "myDisplayName"
+  },
+  "domainHint": "mycustomoidc"
+  "metadataUrl": "https://mycustomoidc.com/.well-known/openid-configuration",
+  "responseMode": "form_post",
+  "responseType": "code",
+  "scope": "openid"
 }
 ```

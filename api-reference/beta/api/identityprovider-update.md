@@ -80,7 +80,9 @@ If successful, this method returns a `204 No Content` response code. If unsucces
 
 ## Example
 
-### Request
+### Example 2: The following example updates a specific **openIDConnectProvider**
+
+#### Request
 <!-- {
   "blockType": "request",
   "name": "update_identityprovider"
@@ -95,8 +97,33 @@ Content-length: 41
 }
 ```
 
-### Response
+#### Response
 
+<!-- {
+  "blockType": "response",
+  "truncated": true
+} -->
+```http
+HTTP/1.1 204 No Content
+```
+### Example 2: The following example updates a specific **openIDConnectProvider**
+
+#### Request
+<!-- {
+  "blockType": "request",
+  "name": "update_openidconnectprovider"
+}
+-->
+``` http
+PATCH https://graph.microsoft.com/beta/identityProviders/OIDC-V1-MyTest-085a8a0c-58cb-4b6d-8e07-1328ea404e1a
+Content-Type: application/json
+Content-length: 41
+{
+  "responseType": "id_token"
+}
+```
+
+#### Response
 <!-- {
   "blockType": "response",
   "truncated": true

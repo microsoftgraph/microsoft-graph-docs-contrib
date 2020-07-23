@@ -54,9 +54,9 @@ If successful, this method returns a `200 OK` response code and a JSON represent
 
 ## Example
 
-The following example retrieves a specific **identityProvider**.
+### Example 1: The following example retrieves a specific **identityProvider**
 
-### Request
+#### Request
 <!-- {
   "blockType": "request",
   "name": "get_identityprovider"
@@ -66,7 +66,7 @@ The following example retrieves a specific **identityProvider**.
 GET https://graph.microsoft.com/beta/identityProviders/{identityProvidersId}
 ```
 
-### Response
+#### Response
 
 <!-- {
   "blockType": "response",
@@ -85,17 +85,47 @@ Content-type: application/json
     "clientSecret": "*****"
 }
 ```
+### Example 2: The following example retrieves a specific **openIDConnectProvider**
 
-<!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
-2015-10-25 14:57:30 UTC -->
-<!--
-{
-  "type": "#page.annotation",
-  "description": "Get identityProvider",
-  "keywords": "",
-  "section": "documentation",
-  "tocPath": "",
-  "suppressions": [
-  ]
+#### Request
+<!-- {
+  "blockType": "request",
+  "name": "get_identityprovider"
 }
 -->
+``` http
+GET https://graph.microsoft.com/beta/identityProviders/{identityProvidersId}
+```
+
+#### Response
+
+<!-- {
+  "blockType": "response",
+  "truncated": true,
+  "@odata.type": "microsoft.graph.openIdConnectProvider"
+} -->
+```http
+HTTP/1.1 200 OK
+Content-type: application/json
+
+{
+    "@odata.type": "microsoft.graph.openIdConnectProvider"
+    "id": "OIDC-V1-MyTest-085a8a0c-58cb-4b6d-8e07-1328ea404e1a",
+    "name": "Login with the Contoso identity provider",
+    "type": "OpenIDConnect",
+    "clientId": "56433757-cadd-4135-8431-2c9e3fd68ae8",
+    "clientSecret": "12345",
+    "claimsMapping": {
+        "userId": "myUserId",
+        "givenName": "myGivenName",
+        "surname": "mySurname",
+        "email": "myEmail",
+        "displayName": "myDisplayName"
+    },
+    "domainHint": "mycustomoidc"
+    "metadataUrl": "https://mycustomoidc.com/.well-known/openid-configuration",
+    "responseMode": "form_post",
+    "responseType": "code",
+    "scope": "openid"
+}
+```
