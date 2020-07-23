@@ -157,7 +157,7 @@ See the following Azure Event Hubs quick starts:
 
 Events will be now delivered to your application by Event Hubs, please refer to [receiving events](https://docs.microsoft.com/azure/event-hubs/get-started-dotnet-standard-send-v2#receive-events) from the Event Hubs documentation.
 
-Before you can receive the notifications in your application, you'll need to create another shared access policy with a "Listen" permission and obtain the connection string similar to the steps followed in [Configuring the Azure Event Hub](#-configuring-the-azure-event-hub).
+Before you can receive the notifications in your application, you'll need to create another shared access policy with a "Listen" permission and obtain the connection string similar to the steps followed in [Configuring the Azure Event Hub](#configuring-the-azure-event-hub).
 
 > **Note:** you should always create a separate policy for the application which listens to Event Hubs messages instead of reusing the same connection string you set in Azure KeyVault. This ensure each component of the solution has only the permissions it needs and follows the least permissions security principle.
 
