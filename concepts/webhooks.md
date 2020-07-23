@@ -273,11 +273,11 @@ You can optionally configure the firewall that protects your notification URL to
 
 ## Latency
 
-The following table documents the average latency between an event happening in the service and the delivery of the change notification.
+The following table documents the latency to expect between an event happening in the service and the delivery of the change notification.
 
 | Resource | Average latency | Maximum latency |
 |:-----|:-----|:-----|
-|[callRecord][] | 15 minutes | 60 minutes |
+|[callRecord][] | below 15 minutes | 60 minutes |
 |[chatMessage][] (preview) | Unknown | Unknown |
 |[contact][] | Unknown | Unknown |
 |[driveItem][] | Unknown | Unknown |
