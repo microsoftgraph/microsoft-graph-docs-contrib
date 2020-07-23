@@ -280,11 +280,11 @@ The following table documents the latency to expect between an event happening i
 |[callRecord][] | below 15 minutes | 60 minutes |
 |[chatMessage][] (preview) | Unknown | Unknown |
 |[contact][] | Unknown | Unknown |
-|[driveItem][] | Unknown | Unknown |
+|[driveItem][] | below 1 minute | 5 minutes |
 |[event][] | Unknown | Unknown |
 |[group][] | Unknown | Unknown |
 |[conversation][] | Unknown | Unknown |
-|[list][] | Unknown | Unknown |
+|[list][] | below 1 minute | 5 minutes |
 |[message][] | Unknown | Unknown |
 |[alert][] | Unknown | Unknown |
 |[user][] | Unknown | Unknown |
