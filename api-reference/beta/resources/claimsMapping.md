@@ -1,6 +1,6 @@
 ---
 title: "claimsMapping resource type"
-description: "B2C needs to be able to map the claims from the received token to the claims that Azure AD B2C recognizes and uses."
+description: "Azure AD B2C needs to be able to map the claims from the received token to the claims that Azure AD B2C recognizes and uses."
 author: "namkedia"
 localization_priority: Priority
 ms.prod: "microsoft-identity-platform"
@@ -20,13 +20,13 @@ After the custom identity provider sends an ID token back to Azure AD B2C, Azure
 * Email: Enter the claim that provides the email address of the user.
 
 ## Properties
-|Property|Type|Description|Required|ReadOnly|
-|:-------|:---|:----------|:-------|:------|
-|userId|String|The claim that provides the unique identifier for the signed-in user.|Yes|No|
-|displayName|String|The claim that provides the display name or full name for the user.|Yes|No|
-|givenName|String|The claim that provides the first name of the user.|No|No|
-|surname|String|The claim that provides the last name of the user.|No|No|
-|email|String|The claim that provides the email address of the user.|No|No|
+|Property|Type|Description|
+|:-------|:---|:----------|
+|userId|String|The claim that provides the unique identifier for the signed-in user. It is a required propoerty.|
+|displayName|String|The claim that provides the display name or full name for the user. It is a required propoerty.|
+|givenName|String|The claim that provides the first name of the user.|
+|surname|String|The claim that provides the last name of the user.|
+|email|String|The claim that provides the email address of the user.|
 
 ## Relationships
 None.
