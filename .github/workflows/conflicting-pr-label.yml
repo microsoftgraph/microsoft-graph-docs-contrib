@@ -26,3 +26,4 @@ jobs:
       with:
         dirtyLabel: "conflicting"
         repoToken: "${{ secrets.LABELING_TOKEN }}"
+        continueOnMissingPermissions: true
