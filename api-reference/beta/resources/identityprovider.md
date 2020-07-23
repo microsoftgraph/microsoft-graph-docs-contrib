@@ -36,7 +36,7 @@ If it is a custom OpenID Connect identity provider with `OpenIDConnect` as `type
 |[Update identityProvider](../api/identityprovider-update.md)|None|Update an existing identityProvider.|
 |[Delete identityProvider](../api/identityprovider-delete.md)|None|Delete an existing identityProvider.|
 |[List configured identityProviders](../api/identityprovider-list.md)|identityProvider collection|List all identityProviders configured in a tenant.|
-|[List available identityProvider types](../api/identityprovider-list-availableTypes.md)||List all identityProviders available in a tenant.|
+|[List available identityProvider types](../api/identityprovider-availableprovidertypes.md)||List all identityProviders available in a tenant.|
 
 ## Properties
 
