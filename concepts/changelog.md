@@ -13,6 +13,34 @@ For a summary of the value of these API changes, as well as recent tools, compon
 
 ## July 2020
 
+### Compliance | eDiscovery
+
+| **Change type** | **Version**   | **Description**                          |
+| :-------------- | :------------ | :--------------------------------------- |
+| Addition | beta | Added [Compliance overview](/graph/api/resources/complianceapioverview?view=graph-rest-beta) |
+| Addition | beta | Added [eDiscovery overview](/graph/api/resources/ediscoveryapioverview?view=graph-rest-beta) |
+| Addition | beta | Added [eDiscovery case](/graph/api/resources/ediscoverycase?view=graph-rest-beta) and associated |
+
+
+| Addition | beta | Added [Review set](/graph/api/resources/reviewset?view=graph-rest-beta) |
+| Addition | beta | Added [Review set query](/graph/api/resources/reviewsetquery?view=graph-rest-beta) |
+
+| Addition | beta | Added [List eDiscovery cases](/graph/api/ediscoverycase-list?view=graph-rest-beta) |
+| Addition | beta | Added [Create eDiscovery case](/graph/api/ediscoverycase-post?view=graph-rest-beta) |
+| Addition | beta | Added [Get eDiscovery case](/graph/api/ediscoverycase-get?view=graph-rest-beta) |
+| Addition | beta | Added [Update eDiscovery case](/graph/api/ediscoverycase-update?view=graph-rest-beta) |
+| Addition | beta | Added [Delete eDiscovery case](/graph/api/ediscoverycase-delete?view=graph-rest-beta) |
+
+| Addition | beta | Added [List review sets](/graph/api/reviewset-list?view=graph-rest-beta) |
+| Addition | beta | Added [Get review set](/graph/api/reviewset-get?view=graph-rest-beta) |
+| Addition | beta | Added [Create review set](/graph/api/reviewset-post?view=graph-rest-beta) |
+
+| Addition | beta | Added [List review set queries](/graph/api/reviewsetquery-list?view=graph-rest-beta) |
+| Addition | beta | Added [Create review set query](/graph/api/reviewsetquery-post?view=graph-rest-beta) |
+| Addition | beta | Added [Get review set query](/graph/api/reviewsetquery-get?view=graph-rest-beta) |
+| Addition | beta | Added [Update review set query](/graph/api/reviewsetquery-update?view=graph-rest-beta) |
+| Addition | beta | Added [Delete review set query](/graph/api/reviewsetquery-delete?view=graph-rest-beta) |
+
 ### Cloud communications
 
 | **Change type** | **Version**   | **Description**                          |
