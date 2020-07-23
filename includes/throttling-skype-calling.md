@@ -7,7 +7,7 @@ ms.topic: include
 <!-- markdownlint-disable MD041 -->
 <!-- this file is auto-generated don't edit it manually! -->
 
-| Request type | Limit per app accross all tenants |
+| Request type | Limit per app for all tenants |
 | ------------ | ------- |
 | Any | 5000 requests per 10 seconds |
 
