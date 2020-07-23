@@ -1,6 +1,6 @@
 ---
 title: "Get workbookOperation"
-description: "Retrieve the properties and relationships of workbookOperation object."
+description: "Retrieve the status of a workbookOperation object."
 localization_priority: Normal
 author: "grangeryy"
 ms.prod: "excel"
