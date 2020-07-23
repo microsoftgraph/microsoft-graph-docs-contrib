@@ -10976,7 +10976,7 @@ items:
           - name: Delete
             href: api/ediscoverycase-delete.md
         - name: eDiscovery Review set
-          href: resources/ediscoveryreviewset.md
+          href: resources/reviewset.md
           items:
           - name: List
             href: api/reviewset-list.md

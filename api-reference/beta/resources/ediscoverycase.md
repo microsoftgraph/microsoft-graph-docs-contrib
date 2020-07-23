@@ -54,7 +54,7 @@ eDiscovery cases are containers that contain custodians, holds, collections, rev
 
 | Relationship | Type        | Description |
 |:-------------|:------------|:------------|
-|Review sets|[reviewSet](ediscoveryreviewset.md) collection| Collection of review sets in the case. Read-only. Nullable. |
+|Review sets|[reviewSet](reviewset.md) collection| Collection of review sets in the case. Read-only. Nullable. |
 
 ## JSON representation
 

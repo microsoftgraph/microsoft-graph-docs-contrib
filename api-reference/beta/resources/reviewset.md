@@ -17,9 +17,9 @@ Represents static set of electronically stored information collected for use in 
 
 | Method       | Return Type | Description |
 |:-------------|:------------|:------------|
-| [List](../api/reviewset-list.md) | [reviewSet](ediscoveryreviewset.md) collection | Get a collection of review sets. |
-| [Get](../api/reviewset-get.md) | [reviewSet](ediscoveryreviewset.md) | Read the properties and relationships of a **reviewSet** object. |
-| [Create](../api/reviewset-post.md) | [reviewSet](ediscoveryreviewset.md) | Create a new review set. |
+| [List](../api/reviewset-list.md) | [reviewSet](reviewset.md) collection | Get a collection of review sets. |
+| [Get](../api/reviewset-get.md) | [reviewSet](reviewset.md) | Read the properties and relationships of a **reviewSet** object. |
+| [Create](../api/reviewset-post.md) | [reviewSet](reviewset.md) | Create a new review set. |
 
 ## Properties
 

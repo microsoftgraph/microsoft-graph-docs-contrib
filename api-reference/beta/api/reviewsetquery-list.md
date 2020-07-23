@@ -1,5 +1,5 @@
 ---
-title: "List reviewSetQueries
+title: "List reviewSetQueries"
 description: "Retrieve a list of reviewSetQuery objects."
 localization_priority: Normal
 author: "mahage-msft"
