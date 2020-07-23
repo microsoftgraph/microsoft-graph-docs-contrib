@@ -277,17 +277,17 @@ The following table documents the average latency between an event happening in 
 
 | Resource | Average latency | Maximum latency |
 |:-----|:-----|:-----|
-|[callRecord](../resources/callrecords-callrecord.md) | 15 minutes | 60 minutes |
-|[chatMessage](../resources/chatmessage.md) (preview) | Unknown | Unknown |
-|[contact](../resources/contact.md) | Unknown | Unknown |
-|[driveItem](../resources/driveitem.md) | Unknown | Unknown |
-|[event](../resources/event.md) | Unknown | Unknown |
-|[group](../resources/group.md) | Unknown | Unknown |
-|[group conversation](../resources/conversation.md) | Unknown | Unknown |
-|[list](../resources/list.md) | Unknown | Unknown |
-|[message](../resources/message.md) | Unknown | Unknown |
-|[security alert](../resources/alert.md) | Unknown | Unknown |
-|[user](../resources/user.md) | Unknown | Unknown |
+|[callRecord](../api-reference/v1.0/resources/callrecords-callrecord.md) | 15 minutes | 60 minutes |
+|[chatMessage](../api-reference/beta/resources/chatmessage.md) (preview) | Unknown | Unknown |
+|[contact](../api-reference/v1.0/resources/contact.md) | Unknown | Unknown |
+|[driveItem](../api-reference/v1.0/resources/driveitem.md) | Unknown | Unknown |
+|[event](../api-reference/v1.0/resources/event.md) | Unknown | Unknown |
+|[group](../api-reference/v1.0/resources/group.md) | Unknown | Unknown |
+|[group conversation](../api-reference/v1.0/resources/conversation.md) | Unknown | Unknown |
+|[list](../api-reference/v1.0/resources/list.md) | Unknown | Unknown |
+|[message](../api-reference/v1.0/resources/message.md) | Unknown | Unknown |
+|[security alert](../api-reference/v1.0/resources/alert.md) | Unknown | Unknown |
+|[user](../api-reference/v1.0/resources/user.md) | Unknown | Unknown |
 
 ## See also
 
