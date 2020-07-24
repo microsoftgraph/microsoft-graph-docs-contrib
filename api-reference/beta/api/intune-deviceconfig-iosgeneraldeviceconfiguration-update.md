@@ -1,7 +1,7 @@
 ---
 title: "Update iosGeneralDeviceConfiguration"
 description: "Update the properties of a iosGeneralDeviceConfiguration object."
-author: "rolyon"
+author: "dougeby"
 localization_priority: Normal
 ms.prod: "Intune"
 doc_type: apiPageType
@@ -104,7 +104,7 @@ The following table shows the properties that are required when you create the [
 |documentsBlockUnmanagedDocumentsInManagedApps|Boolean|Indicates whether or not to block the user from viewing unmanaged documents in managed apps.|
 |emailInDomainSuffixes|String collection|An email address lacking a suffix that matches any of these strings will be considered out-of-domain.|
 |enterpriseAppBlockTrust|Boolean|Indicates whether or not to block the user from trusting an enterprise app.|
-|enterpriseAppBlockTrustModification|Boolean|Indicates whether or not to block the user from modifying the enterprise app trust settings.|
+|enterpriseAppBlockTrustModification|Boolean|\[Deprecated\] Configuring this setting and setting the value to 'true' has no effect on the device.|
 |esimBlockModification|Boolean|Indicates whether or not to allow the addition or removal of cellular plans on the eSIM of a supervised device.|
 |faceTimeBlocked|Boolean|Indicates whether or not to block the user from using FaceTime. Requires a supervised device for iOS 13 and later.|
 |findMyFriendsBlocked|Boolean|Indicates whether or not to block changes to Find My Friends when the device is in supervised mode.|
@@ -236,6 +236,7 @@ The following table shows the properties that are required when you create the [
 |findMyDeviceInFindMyAppBlocked|Boolean|Indicates whether or not to block Find My Device when the device is supervised (iOS 13 or later).|
 |findMyFriendsInFindMyAppBlocked|Boolean|Indicates whether or not to block Find My Friends when the device is supervised (iOS 13 or later).|
 |iTunesBlocked|Boolean|Indicates whether or not to block the iTunes app. Requires a supervised device for iOS 13 and later.|
+|sharedDeviceBlockTemporarySessions|Boolean|Indicates whether or not to block temporary sessions on Shared iPads (iOS 13.4 or later).|
 |kioskModeAppType|[iosKioskModeAppType](../resources/intune-deviceconfig-ioskioskmodeapptype.md)|Type of app to run in kiosk mode. Possible values are: `notConfigured`, `appStoreApp`, `managedApp`, `builtInApp`.|
 
 
@@ -250,7 +251,7 @@ Here is an example of the request.
 ``` http
 PATCH https://graph.microsoft.com/beta/deviceManagement/deviceConfigurations/{deviceConfigurationId}
 Content-type: application/json
-Content-length: 10518
+Content-length: 10565
 
 {
   "@odata.type": "#microsoft.graph.iosGeneralDeviceConfiguration",
@@ -538,6 +539,7 @@ Content-length: 10518
   "findMyDeviceInFindMyAppBlocked": true,
   "findMyFriendsInFindMyAppBlocked": true,
   "iTunesBlocked": true,
+  "sharedDeviceBlockTemporarySessions": true,
   "kioskModeAppType": "appStoreApp"
 }
 ```
@@ -547,7 +549,7 @@ Here is an example of the response. Note: The response object shown here may be 
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 10690
+Content-Length: 10737
 
 {
   "@odata.type": "#microsoft.graph.iosGeneralDeviceConfiguration",
@@ -838,11 +840,10 @@ Content-Length: 10690
   "findMyDeviceInFindMyAppBlocked": true,
   "findMyFriendsInFindMyAppBlocked": true,
   "iTunesBlocked": true,
+  "sharedDeviceBlockTemporarySessions": true,
   "kioskModeAppType": "appStoreApp"
 }
 ```
-
-
 
 
 

@@ -1,7 +1,7 @@
 ---
 title: "List windows10CompliancePolicies"
 description: "List properties and relationships of the windows10CompliancePolicy objects."
-author: "rolyon"
+author: "dougeby"
 localization_priority: Normal
 ms.prod: "Intune"
 doc_type: apiPageType
@@ -60,7 +60,7 @@ Here is an example of the response. Note: The response object shown here may be 
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 2087
+Content-Length: 2328
 
 {
   "value": [
@@ -112,13 +112,16 @@ Content-Length: 2087
       "deviceThreatProtectionEnabled": true,
       "deviceThreatProtectionRequiredSecurityLevel": "secured",
       "configurationManagerComplianceRequired": true,
-      "tpmRequired": true
+      "tpmRequired": true,
+      "deviceCompliancePolicyScript": {
+        "@odata.type": "microsoft.graph.deviceCompliancePolicyScript",
+        "deviceComplianceScriptId": "Device Compliance Script Id value",
+        "rulesContent": "cnVsZXNDb250ZW50"
+      }
     }
   ]
 }
 ```
-
-
 
 
 

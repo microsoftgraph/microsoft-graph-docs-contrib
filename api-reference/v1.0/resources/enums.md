@@ -2,10 +2,47 @@
 title: "Enum values"
 description: "Microsoft Graph enumeration values."
 localization_priority: Normal
-author: ""
-ms.prod: ""
+ms.prod: "non-product-specific"
+author: "MSGraphDocsvTeam"
 doc_type: enumPageType
 ---
+
+
+Namespace: microsoft.graph
+
+### activityType values 
+
+|Member|
+|:---|
+|signin|
+|user|
+|unknownFutureValue|
+
+### riskDetectionTimingType values 
+
+|Member|
+|:---|
+|notDefined|
+|realtime|
+|nearRealtime|
+|offline|
+|unknownFutureValue|
+
+### tokenIssuerType values 
+
+|Member|
+|:---|
+|AzureAD|
+|ADFederationServices|
+|UnknownFutureValue|
+
+### attachmentType values
+
+| Member
+|:--------------
+| file
+| item
+| reference
 
 ### contactRelationship values
 
@@ -19,6 +56,52 @@ doc_type: enumPageType
 |child|5| The user's child.|
 |other|6| An unspecified relationship to the user.|
 |unknownFutureValue|7| Marker value for future compatibility.|
+
+### scheduleEntityTheme values
+
+| Member
+|:-------------------------
+| white
+| blue
+| green
+| purple
+| pink
+| yellow
+| gray
+| darkBlue
+| darkGreen
+| darkPurple
+| darkPink
+| darkYellow
+| unknownFutureValue
+
+
+### timeOffReasonIconType values
+
+|Member|
+|:---|
+|none|
+|car|
+|calendar|
+|running|
+|plane|
+|firstAid|
+|doctor|
+|notWorking|
+|clock|
+|juryDuty|
+|globe|
+|cup|
+|phone|
+|weather|
+|umbrella|
+|piggyBank|
+|dog|
+|cake|
+|trafficCone|
+|pin|
+|sunny|
+|unknownFutureValue|
 
 ### timeZoneStandard values
 
@@ -627,6 +710,26 @@ Possible values for user account types (group membership), per Windows definitio
 | generic
 | unknownFutureValue
 
+### riskEventType values
+
+|Member|
+|:---|
+|unlikelyTravel|
+|anonymizedIPAddress|
+|maliciousIPAddress|
+|unfamiliarFeatures|
+|malwareInfectedIPAddress|
+|suspiciousIPAddress|
+|leakedCredentials|
+|investigationsThreatIntelligence|
+|generic|
+|adminConfirmedUserCompromised|
+|mcasImpossibleTravel|
+|mcasSuspiciousInboxManipulationRules|
+|investigationsThreatIntelligenceSigninLinked|
+|maliciousIPAddressValidCredentialsBlockedIP|
+|unknownFutureValue|
+
 ### riskLevel values
 
 | Member
@@ -659,6 +762,36 @@ Possible values for user account types (group membership), per Windows definitio
 |immutableEntryId|
 |restId|
 |restImmutableEntryId|
+
+### onlineMeetingProviderType values
+
+|Member|
+|:---|
+|unknown|
+|skypeForBusiness|
+|skypeForConsumer|
+|teamsForBusiness|
+
+### delegateMeetingMessageDeliveryOptions values
+
+|Member|
+|:---|
+|sendToDelegateAndInformationToPrincipal|
+|sendToDelegateAndPrincipal|
+|sendToDelegateOnly|
+
+### calendarRoleType values
+
+|Member|
+|:---|
+|none|
+|freeBusyRead|
+|limitedRead|
+|read|
+|write|
+|delegateWithoutPrivateEventAccess|
+|delegateWithPrivateEventAccess|
+|custom|
 
 ### threatAssessmentContentType values
 
@@ -727,3 +860,4 @@ Possible values for user account types (group membership), per Windows definitio
 | notJunk               | 13    | Allow due to not junk.              |
 | junk                  | 14    | Blocked due to junk.                |
 | unknownFutureValue    | 15    | A sentinel member.                  |
+

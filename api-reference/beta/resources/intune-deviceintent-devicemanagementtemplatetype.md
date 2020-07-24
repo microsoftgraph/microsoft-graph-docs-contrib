@@ -1,7 +1,7 @@
 ---
 title: "deviceManagementTemplateType enum type"
 description: "Template type"
-author: "rolyon"
+author: "dougeby"
 localization_priority: Normal
 ms.prod: "Intune"
 doc_type: enumPageType
@@ -29,6 +29,7 @@ Template type
 |microsoftEdgeSecurityBaseline|6|Microsoft Edge security baseline template|
 |microsoftOffice365ProPlusSecurityBaseline|7|Microsoft Office 365 ProPlus security baseline template|
 |deviceCompliance|8|Device compliance template|
+|deviceConfigurationForOffice365|9|Device Configuration for Microsoft Office 365 settings|
 
 
 

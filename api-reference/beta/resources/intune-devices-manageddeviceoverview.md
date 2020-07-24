@@ -1,7 +1,7 @@
 ---
 title: "managedDeviceOverview resource type"
 description: "Summary data for managed devices"
-author: "rolyon"
+author: "dougeby"
 localization_priority: Normal
 ms.prod: "Intune"
 doc_type: resourcePageType
@@ -65,6 +65,7 @@ Here is a JSON representation of the resource.
     "androidDeviceAdminCount": 1024,
     "androidFullyManagedCount": 1024,
     "androidWorkProfileCount": 1024,
+    "androidCorporateWorkProfileCount": 1024,
     "configMgrDeviceCount": 1024
   },
   "deviceExchangeAccessStateSummary": {

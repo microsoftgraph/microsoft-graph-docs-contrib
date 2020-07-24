@@ -1,7 +1,7 @@
 ---
 title: "Get deviceManagementCachedReportConfiguration"
 description: "Read properties and relationships of the deviceManagementCachedReportConfiguration object."
-author: "rolyon"
+author: "dougeby"
 localization_priority: Normal
 ms.prod: "Intune"
 doc_type: apiPageType
@@ -63,7 +63,7 @@ Here is an example of the response. Note: The response object shown here may be 
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 479
+Content-Length: 514
 
 {
   "value": {
@@ -77,14 +77,13 @@ Content-Length: 479
     "orderBy": [
       "Order By value"
     ],
+    "metadata": "Metadata value",
     "status": "notStarted",
     "lastRefreshDateTime": "2016-12-31T23:58:49.97047-08:00",
     "expirationDateTime": "2016-12-31T23:57:57.2481234-08:00"
   }
 }
 ```
-
-
 
 
 

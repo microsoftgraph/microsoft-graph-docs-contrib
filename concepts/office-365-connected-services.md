@@ -1,12 +1,12 @@
 ---
-title: "Call Office 365 services in Visual Studio 2017 with the Microsoft Graph API"
+title: "Call Microsoft 365 services in Visual Studio 2017 with the Microsoft Graph API"
 description: "You can use the Connected Services in Visual Studio to configure your app to call the Microsoft Graph API. This article describes how to get a signed in user's profile photo, upload it to OneDrive, and send an email with a sharing link to the photo."
 localization_priority: Priority
 ms.prod: "reports"
 author: "pranoychaudhuri"
 ---
 
-# Call Office 365 services in Visual Studio 2017 with the Microsoft Graph API
+# Call Microsoft 365 services in Visual Studio 2017 with the Microsoft Graph API
 
 You can use the Connected Services in Visual Studio to configure your app to call the Microsoft Graph API. This article describes how to get a signed in user's profile photo, upload it to OneDrive, and send an email with a sharing link to the photo.
 
@@ -16,7 +16,7 @@ To use the Office 365 Connected Services with Microsoft Graph, you'll need to do
 
 - Download the [Visual Studio 2017 Preview](https://www.visualstudio.com/vs/preview/), if you haven't already. If you're using an earlier version of Visual Studio, you can use Visual Studio 2017 Preview side by side with your current version.
 
-- Get an Office 365 subscription. To get a free trial, join the [Office 365 Developer program](https://dev.office.com/devprogram).
+- Get a Microsoft 365 subscription. To get a free trial, join the [Microsoft 365 Developer program](https://developer.microsoft.com/microsoft-365/dev-program).
 
 ## Get the starter project
 
@@ -28,7 +28,7 @@ You're now ready to add the Microsoft Graph service to your Visual Studio projec
 
 1. In Solution Explorer, choose **Connected Services** to open the Connected Services tab. 
 
-2. Choose the **Access Office 365 Services with Microsoft Graph** provider. Follow the wizard. Select the following permissions (you can change the permissions later):
+2. Choose the **Access Microsoft 365 services with Microsoft Graph** provider. Follow the wizard. Select the following permissions (you can change the permissions later):
 
     - For the **File** APIs, set permissions to **Have full access to your files**.
     - For the **Mail** APIs, set permissions to **Send mail as you**.

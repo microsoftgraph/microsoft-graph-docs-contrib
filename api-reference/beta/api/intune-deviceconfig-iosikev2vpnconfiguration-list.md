@@ -1,7 +1,7 @@
 ---
 title: "List iosikEv2VpnConfigurations"
 description: "List properties and relationships of the iosikEv2VpnConfiguration objects."
-author: "rolyon"
+author: "dougeby"
 localization_priority: Normal
 ms.prod: "Intune"
 doc_type: apiPageType
@@ -61,7 +61,7 @@ Here is an example of the response. Note: The response object shown here may be 
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 5777
+Content-Length: 6070
 
 {
   "value": [
@@ -162,6 +162,15 @@ Content-Length: 5777
       "excludeList": [
         "Exclude List value"
       ],
+      "targetedMobileApps": [
+        {
+          "@odata.type": "microsoft.graph.appListItem",
+          "name": "Name value",
+          "publisher": "Publisher value",
+          "appStoreUrl": "https://example.com/appStoreUrl/",
+          "appId": "App Id value"
+        }
+      ],
       "childSecurityAssociationParameters": {
         "@odata.type": "microsoft.graph.iosVpnSecurityAssociationParameters",
         "securityEncryptionAlgorithm": "des",
@@ -217,8 +226,6 @@ Content-Length: 5777
   ]
 }
 ```
-
-
 
 
 

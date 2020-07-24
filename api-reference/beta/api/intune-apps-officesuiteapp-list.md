@@ -1,7 +1,7 @@
 ---
 title: "List officeSuiteApps"
 description: "List properties and relationships of the officeSuiteApp objects."
-author: "rolyon"
+author: "dougeby"
 localization_priority: Normal
 ms.prod: "Intune"
 doc_type: apiPageType
@@ -60,7 +60,7 @@ Here is an example of the response. Note: The response object shown here may be 
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 2032
+Content-Length: 2055
 
 {
   "value": [
@@ -97,6 +97,7 @@ Content-Length: 2032
       "excludedApps": {
         "@odata.type": "microsoft.graph.excludedApps",
         "access": true,
+        "bing": true,
         "excel": true,
         "groove": true,
         "infoPath": true,
@@ -126,8 +127,6 @@ Content-Length: 2032
   ]
 }
 ```
-
-
 
 
 

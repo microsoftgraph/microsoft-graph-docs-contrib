@@ -7,7 +7,6 @@ ms.prod: "non-product-specific"
 author: "MSGraphDocsvTeam"
 ---
 
-# Enum values
 
 Namespace: microsoft.graph
 
@@ -45,11 +44,10 @@ Namespace: microsoft.graph
 
 |Member|
 |:---|
-|microsoft.graph.event|
-|microsoft.graph.message|
-|microsoft.graph.driveItem|
-|microsoft.graph.externalFile|
-|microsoft.graph.externalItem|
+|event|
+|message|
+|driveItem|
+|externalItem|
 
 ### contactRelationship values
 
@@ -250,9 +248,9 @@ Namespace: microsoft.graph
 | Member
 |:-------------------------
 | sis
+| lms
 | manual
 | unknownFutureValue
-
 
 ### educationGender values
 
@@ -1174,3 +1172,18 @@ Possible values for user account types (group membership), per Windows definitio
 |:-----------------------------|:------|:-----------------------------------------------------------------------|
 | threatCategory               | 1     | Aggregate threat assessment request by `threatCategory`.               |
 | mailDestinationRoutingReason | 2     | Aggregate threat assessment request by `mailDestinationRoutingReason`. |
+
+### riskEventTypes values
+
+| Member
+|:-------------------------
+| unlikelyTravel
+| anonymizedIPAddress
+| maliciousIPAddress
+| unfamiliarFeatures
+| malwareInfectedIPAddress
+| suspiciousIPAddress
+| leakedCredentials
+| investigationsThreatIntelligence
+| generic
+| unknownFutureValue

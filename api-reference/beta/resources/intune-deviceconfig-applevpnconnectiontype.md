@@ -1,7 +1,7 @@
 ---
 title: "appleVpnConnectionType enum type"
 description: "Apple VPN connection type."
-author: "rolyon"
+author: "dougeby"
 localization_priority: Normal
 ms.prod: "Intune"
 doc_type: enumPageType
@@ -36,6 +36,7 @@ Apple VPN connection type.
 |paloAltoGlobalProtectV2|13|Palo Alto Networks GlobalProtect V2.|
 |ikEv2|14|IKEv2.|
 |alwaysOn|15|AlwaysOn.|
+|microsoftTunnel|16|Microsoft Tunnel.|
 
 
 

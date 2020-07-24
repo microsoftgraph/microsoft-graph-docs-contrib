@@ -1,7 +1,7 @@
 ---
 title: "Get iosGeneralDeviceConfiguration"
 description: "Read properties and relationships of the iosGeneralDeviceConfiguration object."
-author: "rolyon"
+author: "dougeby"
 localization_priority: Normal
 ms.prod: "Intune"
 doc_type: apiPageType
@@ -65,7 +65,7 @@ Here is an example of the response. Note: The response object shown here may be 
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 11287
+Content-Length: 11336
 
 {
   "value": {
@@ -357,12 +357,11 @@ Content-Length: 11287
     "findMyDeviceInFindMyAppBlocked": true,
     "findMyFriendsInFindMyAppBlocked": true,
     "iTunesBlocked": true,
+    "sharedDeviceBlockTemporarySessions": true,
     "kioskModeAppType": "appStoreApp"
   }
 }
 ```
-
-
 
 
 
