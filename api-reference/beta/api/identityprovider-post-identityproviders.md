@@ -93,6 +93,7 @@ The following is an example of the request.
 POST https://graph.microsoft.com/beta/identityProviders
 Content-type: application/json
 Content-length: 154
+
 {
   "@odata.type": "microsoft.graph.identityProvider",
   "name": "Login with Amazon",
@@ -142,6 +143,7 @@ The following is an example of the request.
 ``` http
 POST https://graph.microsoft.com/beta/identityProviders
 Content-type: application/json
+
 {
   "@odata.type": "microsoft.graph.openIdConnectProvider",
     "name": "Login with the Contoso identity provider",
