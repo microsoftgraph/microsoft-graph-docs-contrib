@@ -34,7 +34,7 @@ If it is a custom OpenID Connect identity provider with `OpenIDConnect` as `type
 |[Get](../api/identityprovider-get.md) |identityProvider|Retrieve properties of an identity provider.|
 |[Update](../api/identityprovider-update.md)|None|Update an identity provider.|
 |[Delete](../api/identityprovider-delete.md)|None|Delete an identity provider.|
-|[List available provider types](../api/identityprovider-list-availableprovidertypes.md)|Retrieve all available identity provider types.|
+|[List available provider types](../api/identityprovider-list-availableprovidertypes.md)|String collection|Retrieve all available identity provider types.|
 
 ## Properties
 
