@@ -61,7 +61,7 @@ If successful, this function returns a `200 OK` response code and a collection o
 ### Request
 
 <!-- {
-  "blockType": "request",
+  "blockType": "ignored",
   "name": "callrecord_getdirectroutingcalls"
 }
 -->
