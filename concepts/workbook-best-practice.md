@@ -110,7 +110,7 @@ The successful response looks similar as following.
 HTTP/1.1 204 No Content
 ```
 
-For more details, see [Create session](microsoft-graph-docs/api-reference/v1.0/api/workbook-createsession.md) and [Close session](microsoft-graph-docs/api-reference/v1.0/api/workbook-closesession.md).
+For more details, see [Create session](/graph/api/workbook-createsession?view=graph-rest-1.0) and [Close session](/graph/api/workbook-closesession?view=graph-rest-1.0).
 
 
 ## Working with APIs that may take a long time to complete
@@ -198,4 +198,4 @@ Content-type: application/json
 }
 ```
 
-For more details of session creation with long running operation pattern, see [Create session](microsoft-graph-docs/api-reference/v1.0/api/workbook-createsession.md).
+For more details of session creation with long running operation pattern, see [Create session](/graph/api/workbook-createsession?view=graph-rest-1.0).
