@@ -1,7 +1,7 @@
 ---
 title: "callRecord: getDirectRoutingCalls"
 description: "Retrieve the Direct Routing call report"
-author: "SanderSade"
+author: "stephenjust"
 localization_priority: Normal
 ms.prod: "cloud-communications"
 doc_type: "apiPageType"
