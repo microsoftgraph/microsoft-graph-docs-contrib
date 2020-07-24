@@ -2,9 +2,8 @@
 title: "Update term"
 description: "Update the properties of a term object."
 author: mohitpcad
-ms.author: mopathak
 localization_priority: Normal
-ms.prod: "sharepoint-taxonomy"
+ms.prod: "Sharepoint"
 doc_type: apiPageType
 ---
 
