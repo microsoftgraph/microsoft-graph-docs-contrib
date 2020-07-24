@@ -88,7 +88,7 @@ Content-type: application/json
     "@odata.context": "https://graph.microsoft.com/beta/$metadata#identityProviders",
     "value": [
       {
-          "@odata.type": "microsoft.graph.identityProvider"
+          "@odata.type": "microsoft.graph.identityProvider",
           "id": "Amazon-OAUTH",
           "name": "Login with Amazon",
           "type": "Amazon",
@@ -96,7 +96,7 @@ Content-type: application/json
           "clientSecret": "*****"
       },
       {
-          "@odata.type": "#microsoft.graph.openIdConnectProvider",
+          "@odata.type": "microsoft.graph.openIdConnectProvider",
           "id": "OIDC-V1-MyTest-085a8a0c-58cb-4b6d-8e07-1328ea404e1a",
           "name": "Login with the Contoso identity provider",
           "type": "OpenIDConnect",
@@ -109,7 +109,7 @@ Content-type: application/json
               "email": "myEmail",
               "displayName": "myDisplayName"
           },
-          "domainHint": "contoso"
+          "domainHint": "contoso",
           "metadataUrl": "https://mycustomoidc.com/.well-known/openid-configuration",
           "responseMode": "form_post",
           "responseType": "code",
