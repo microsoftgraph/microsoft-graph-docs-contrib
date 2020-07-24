@@ -1,6 +1,6 @@
 ---
 title: "List identityProviders"
-description: "Retrieve a list of identityProvider and openIdConnectProvider objects.."
+description: "Retrieve a list of identityProvider objects."
 localization_priority: Normal
 doc_type: apiPageType
 author: "namkedia"
@@ -13,7 +13,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Retrieve a list of [identityProviders](../resources/identityprovider.md) and [openIdConnectProvider](../resources/openidconnectprovider.md) objects.
+Retrieve a list of [identityProviders](../resources/identityprovider.md) objects.
 
 ## Permissions
 
@@ -48,7 +48,7 @@ Do not supply a request body for this method.
 
 ## Response
 
-If successful, this method returns a `200 OK` response code and a collection of [identityProvider](../resources/identityprovider.md) and [openIdConnectProvider](../resources/openIdConnectProvider.md) objects in the response body.
+If successful, this method returns a `200 OK` response code and a collection of [identityProvider](../resources/identityprovider.md) and [openIdConnectProvider](../resources/openIdConnectProvider.md) (only for Azure AD B2C) objects in the response body.
 
 ## Example
 
@@ -67,6 +67,7 @@ GET https://graph.microsoft.com/beta/identityProviders
 ### Response
 
 The following is an example of the response.
+
 **Note:** The response object shown here might be shortened for readability.
 <!-- {
   "blockType": "response",

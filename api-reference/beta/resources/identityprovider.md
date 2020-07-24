@@ -15,13 +15,11 @@ Namespace: microsoft.graph
 
 Represents identity providers in an Azure Active Directory tenant and an Azure AD B2C tenant.
 
-For Azure AD B2B scenarios in an Azure AD tenant, the identity providers can be Google or Facebook.
+For Azure AD B2B scenarios in an Azure AD tenant, the identity provider type can be Google or Facebook.
 
-In an Azure AD B2C tenant, the identity provider can be Microsoft, Google, Facebook, Amazon, LinkedIn, Twitter or any [openIdConnectProvider](../resources/openidconnectprovider.md). The following identity providers are in preview: Weibo, QQ, WeChat, and GitHub.
+In an Azure AD B2C tenant, the identity provider type can be Microsoft, Google, Facebook, Amazon, LinkedIn, Twitter or any [openIdConnectProvider](../resources/openidconnectprovider.md). The following identity providers are in preview: Weibo, QQ, WeChat, and GitHub.
 
-Configuring an identity provider in your Azure AD B2C tenant enables users to:
-
-* Sign up and sign in using a social account or a custom OpenID Connect supported provider in an application. For example, an application can use Azure AD B2C to allow users to sign up for the service using a Facebook account or their own custom identity provider that complies with OIDC protocol.
+Configuring an identity provider in your Azure AD B2C tenant enables users to sign up and sign in using a social account or a custom OpenID Connect supported provider in an application. For example, an application can use Azure AD B2C to allow users to sign up for the service using a Facebook account or their own custom identity provider that complies with OIDC protocol.
 
 Configuring an identity provider in your Azure AD tenant enables new Azure AD B2B guest scenarios. For example, an organization has resources in Microsoft 365 that need to be shared with a Gmail user. The Gmail user will use their Google account credentials to authenticate and access the documents.
 
@@ -46,7 +44,7 @@ If it is a custom OpenID Connect identity provider with `OpenIDConnect` as `type
 |clientSecret|String|The client secret for the application obtained when registering the application with the identity provider. This is write-only. A read operation will return "\*\*\*\*". This is a required field.|
 |id|String|The ID of the identity provider.|
 |name|String|The display name of the identity provider.|
-|type|String|The identity provider type. It must be one of the following values: <ul><li/>Microsoft<li/>Google<li/>Amazon<li/>LinkedIn<li/>Facebook<li/>GitHub<li/>Twitter<li/>Weibo<li/>QQ<li/>WeChat</ul>For B2B scenarios, the value must be Google or Facebook. This is a required field.|
+|type|String|The identity provider type is a required field. For B2B scenario: <ul><li/>Google<li/>Facebook</ul>For B2C scenario: <ul><li/>Microsoft<li/>Google<li/>Amazon<li/>LinkedIn<li/>Facebook<li/>GitHub<li/>Twitter<li/>Weibo<li/>QQ<li/>WeChat<li/>OpenIDConnect</ul>|
 
 ### Where to get the client ID and secret
 

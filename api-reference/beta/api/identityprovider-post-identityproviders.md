@@ -13,7 +13,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Create a new [identityProvider](../resources/identityprovider.md) or [openIdConnectProvider](../resources/openidconnectprovider.md) object.
+Create a new [identityProvider](../resources/identityprovider.md) object.
 
 ## Permissions
 
@@ -45,7 +45,7 @@ POST /identityProviders
 
 ## Request body
 
-In the request body, provide a JSON representation of [identityProvider](../resources/identityprovider.md) or [openIdConnectProvider](../resources/openIdConnectProvider.md) object. All the properties listed in the following table are required.
+In the request body, provide a JSON representation of [identityProvider](../resources/identityprovider.md) or [openIdConnectProvider](../resources/openIdConnectProvider.md) (only for Azure AD B2C) object. All the properties listed in the following table are required.
 
 ### identityProvider object
 
@@ -54,7 +54,7 @@ In the request body, provide a JSON representation of [identityProvider](../reso
 |clientId|String|The client ID for the application. This is the client ID obtained when registering the application with the identity provider.|
 |clientSecret|String|The client secret for the application. This is the client secret obtained when registering the application with the identity provider.|
 |name|String|The display name of the identity provider.|
-|type|String|The identity provider type. It must be one of the following values: <ul><li/>Microsoft<li/>Google<li/>Amazon<li/>LinkedIn<li/>Facebook<li/>GitHub<li/>Twitter<li/>Weibo<li/>QQ<li/>WeChat</ul>
+|type|String|The identity provider type. For B2B scenario: <ul><li/>Google<li/>Facebook</ul>For B2C scenario: <ul><li/>Microsoft<li/>Google<li/>Amazon<li/>LinkedIn<li/>Facebook<li/>GitHub<li/>Twitter<li/>Weibo<li/>QQ<li/>WeChat<li/>OpenIDConnect</ul>|
 
 ### openIdConnectProvider object
 
@@ -102,6 +102,7 @@ Content-length: 154
 #### Response
 
 The following is an example of the response.
+
 **Note:** The response object shown here might be shortened for readability.
 <!-- {
   "blockType": "response",
@@ -121,7 +122,7 @@ Content-type: application/json
     "clientSecret": "*****"
 }
 ```
-### Example 2: Create a specific **openIDConnectProvider**
+### Example 2: Create a specific **openIDConnectProvider** (only for Azure AD B2C)
 
 #### Request
 
@@ -159,6 +160,7 @@ Content-type: application/json
 #### Response
 
 The following is an example of the response.
+
 **Note:** The response object shown here might be shortened for readability.
 <!-- {
   "blockType": "response",

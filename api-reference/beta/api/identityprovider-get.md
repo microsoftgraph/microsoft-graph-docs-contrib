@@ -13,7 +13,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Retrieve the properties and relationships of an [identityProvider](../resources/identityprovider.md) or [openIdConnectProvider](../resources/openidconnectprovider.md).
+Retrieve the properties and relationships of an [identityProvider](../resources/identityprovider.md).
 
 ## Permissions
 
@@ -47,7 +47,7 @@ Do not supply a request body for this method.
 
 ## Response
 
-If successful, this method returns a `200 OK` response code and a JSON representation of the [identityProvider](../resources/identityprovider.md) or [openIdConnectProvider](../resources/openIdConnectProvider.md) in the response body.
+If successful, this method returns a `200 OK` response code and a JSON representation of the [identityProvider](../resources/identityprovider.md) in the response body.
 
 ## Examples
 
@@ -85,7 +85,7 @@ Content-type: application/json
     "clientSecret": "*****"
 }
 ```
-### Example 2: Retrieves a specific **openIDConnectProvider**
+### Example 2: Retrieves a specific **openIDConnectProvider** (only for Azure AD B2C)
 
 #### Request
 
