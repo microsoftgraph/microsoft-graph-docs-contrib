@@ -123,7 +123,7 @@ Delta query is currently supported for the following resources.
 | Personal contacts in a folder                                  | [delta](/graph/api/contact-delta?view=graph-rest-1.0) function of the [contact](/graph/api/resources/contact?view=graph-rest-1.0) resource                                                       |
 | Planner items\*\* (preview)                                    | [delta](/graph/api/planneruser-list-delta) function of the all segment of [plannerUser](/graph/api/resources/planneruser) resource (preview)                                                     |
 | Schools (preview)                                              | [delta](/graph/api/educationschool-delta) function of the [educationSchool](/graph/api/resources/educationschool) resource (preview)                                                             |
-| Service principals (preview)                                   | [delta](/graph/api/serviceprincipal-delta) function of the [servicePrincipal](/graph/api/resources/serviceprincipal) resource (preview)                                                          |
+| Service principals                                   | [delta](/graph/api/serviceprincipal-delta) function of the [servicePrincipal](/graph/api/resources/serviceprincipal) resource                                                          |
 | Users                                                          | [delta](/graph/api/user-delta?view=graph-rest-1.0) function of the [user](/graph/api/resources/user?view=graph-rest-1.0) resource                                                                |
 
 
@@ -185,7 +185,7 @@ Delta queries are available for customers hosted on the public cloud and Microso
 
 ### Token duration
 
-Delta tokens are only valid for a specific period before the client application needs to run a full synchronization again. For directory objects (**application**, **administrativeUnit**, **directoryObject**, **directoryRole**, **group**, **orgContact**, **oauth2permissiongrant**, **servicePrincipal**, and **user**), the limit is 7 days. For education objects (**educationSchool**, **educationUser**, and **educationClass**), the limit is 7 days.
+Delta tokens are only valid for a specific period before the client application needs to run a full synchronization again. For directory objects (**application**, **administrativeUnit**, **directoryObject**, **directoryRole**, **group**, **orgContact**, **oauth2permissiongrant**, **servicePrincipal**, and **user**), the limit is 7 days. For education objects (**educationSchool**, **educationUser**, and **educationClass**), the limit is 7 days. For Outlook entities (**message**, **mailFolder**, **event**, **contact**, **contactFolder**), the upper limit is not fixed; it's dependent on the size of the internal delta token cache. While new delta tokens are continuously added in the cache, after the cache capacity is exceeded, the older delta tokens are deleted.
 
 ## Prerequisites
 
