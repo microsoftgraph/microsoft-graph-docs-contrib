@@ -60,8 +60,8 @@ The following is a JSON representation of the resource.
   },
   "domainHint": "String",
   "metadataUrl": "String",
-  "responseMode": "@odata.type: microsoft.graph.openIdConnectResponseMode",
-  "responseType": "@odata.type: microsoft.graph.openIdConnectResponseTypes",
+  "responseMode": "String",
+  "responseType": "String",
   "scope": "String"
 }
 ```
