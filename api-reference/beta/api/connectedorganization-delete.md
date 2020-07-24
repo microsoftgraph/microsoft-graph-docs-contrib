@@ -13,7 +13,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Deletes a [connectedOrganization](../resources/connectedorganization.md) object.
+Delete a [connectedOrganization](../resources/connectedorganization.md) object.
 
 ## Permissions
 
@@ -32,7 +32,7 @@ One of the following permissions is required to call this API. To learn more, in
 }
 -->
 ```http
-DELETE /identityGovernance/entitlementManagement/connectedOrganizations/{connectedOrganizationId}
+DELETE /identityGovernance/entitlementManagement/connectedOrganizations/{id}
 ```
 
 ## Request headers
@@ -56,7 +56,7 @@ If successful, this method returns a `204 No Content` response code.
 }
 -->
 ``` http
-DELETE https://graph.microsoft.com/beta/identityGovernance/entitlementManagement/connectedOrganizations/{connectedOrganizationId}
+DELETE https://graph.microsoft.com/beta/identityGovernance/entitlementManagement/connectedOrganizations/{id}
 ```
 
 

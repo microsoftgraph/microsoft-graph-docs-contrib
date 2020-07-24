@@ -1,6 +1,6 @@
 ---
-title: "Update connectedOrganization"
-description: "In the Azure AD access reviews feature, update an existing connectedOrganization object to change one or more of its properties."
+title: "Update a connectedOrganization object"
+description: "Update a connectedOrganization object."
 author: "markwahl-msft"
 localization_priority: Normal
 ms.prod: "microsoft-identity-platform"
@@ -13,7 +13,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Update an existing [connectedOrganization](../resources/connectedorganization.md) object to change one or more of its properties.
+Update a [connectedOrganization](../resources/connectedorganization.md) object to change one or more of its properties.
 
 ## Permissions
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
@@ -31,7 +31,7 @@ One of the following permissions is required to call this API. To learn more, in
 }
 -->
 ``` http
-PATCH /identityGovernance/entitlementManagement/connectedOrganizations/{connectedOrganizationId}
+PATCH /identityGovernance/entitlementManagement/connectedOrganizations/{id}
 ```
 
 ## Request headers
@@ -47,8 +47,8 @@ The following table shows the properties that are required when you update the [
 
 |Property|Type|Description|
 |:---|:---|:---|
-| `displayName`             |`String`                                                        | The connected organization name.  |
-| `description`             |`String`                                                        | The connected organization description. |
+| `displayName`  |`String` | The connected organization name.  |
+| `description`  |`String` | The connected organization description. |
 
 ## Response
 
@@ -63,7 +63,7 @@ If successful, this method returns a `204 Accepted` response code and a [connect
 }
 -->
 ``` http
-PATCH https://graph.microsoft.com/beta/identityGovernance/entitlementManagement/connectedOrganizations/{connectedOrganizationId}
+PATCH https://graph.microsoft.com/beta/identityGovernance/entitlementManagement/connectedOrganizations/{id}
 Content-Type: application/json
 Content-length: 100
 
