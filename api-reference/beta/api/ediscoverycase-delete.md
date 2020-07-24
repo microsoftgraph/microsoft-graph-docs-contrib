@@ -1,6 +1,6 @@
 ---
 title: "Delete ediscoveryCase"
-description: "Delete ediscoveryCase."
+description: "Delete an ediscoveryCase object."
 localization_priority: Normal
 author: "mahage-msft"
 ms.prod: "compliance"
