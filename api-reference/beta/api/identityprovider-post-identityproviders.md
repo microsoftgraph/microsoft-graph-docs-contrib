@@ -32,6 +32,7 @@ The work or school account needs to belong to one of the following roles:
 ## HTTP request
 
 <!-- { "blockType": "ignored" } -->
+
 ```http
 POST /identityProviders
 ```
@@ -81,11 +82,13 @@ If successful, this method returns a `201 Created` response code and [identityPr
 #### Request
 
 The following is an example of the request.
+
 <!-- {
   "blockType": "request",
   "name": "create_identityprovider_from_identityproviders"
 }
 -->
+
 ``` http
 POST https://graph.microsoft.com/beta/identityProviders
 Content-type: application/json
@@ -104,11 +107,13 @@ Content-length: 154
 The following is an example of the response.
 
 **Note:** The response object shown here might be shortened for readability.
+
 <!-- {
   "blockType": "response",
   "truncated": true,
   "@odata.type": "microsoft.graph.IdentityProvider"
 } -->
+
 ```http
 HTTP/1.1 201 Created
 Content-type: application/json
@@ -127,16 +132,18 @@ Content-type: application/json
 #### Request
 
 The following is an example of the request.
+
 <!-- {
   "blockType": "request",
   "name": "create_openidconnectprovider_from_identityproviders"
 }
 -->
+
 ``` http
 POST https://graph.microsoft.com/beta/identityProviders
 Content-type: application/json
 {
-    "@odata.type": "microsoft.graph.openIdConnectProvider"
+  "@odata.type": "#microsoft.graph.openIdConnectProvider",
     "name": "Login with the Contoso identity provider",
     "type": "OpenIDConnect",
     "clientId": "56433757-cadd-4135-8431-2c9e3fd68ae8",
@@ -162,17 +169,19 @@ Content-type: application/json
 The following is an example of the response.
 
 **Note:** The response object shown here might be shortened for readability.
+
 <!-- {
   "blockType": "response",
   "truncated": true,
   "@odata.type": "microsoft.graph.openIdConnectProvider"
 } -->
+
 ```http
 HTTP/1.1 201 Created
 Content-type: application/json
 
 {
-  "@odata.type": "microsoft.graph.openIdConnectProvider"
+  "@odata.type": "#microsoft.graph.openIdConnectProvider",
   "id": "OIDC-V1-MyTest-085a8a0c-58cb-4b6d-8e07-1328ea404e1a",
   "name": "Login with the Contoso identity provider",
   "type": "OpenIDConnect",

@@ -32,6 +32,7 @@ The work or school account needs to belong to one of the following roles:
 ## HTTP request
 
 <!-- { "blockType": "ignored" } -->
+
 ```http
 PATCH /identityProviders/{id}
 ```
@@ -90,6 +91,7 @@ The following is an example of the request.
   "name": "update_identityprovider"
 }
 -->
+
 ``` http
 PATCH https://graph.microsoft.com/beta/identityProviders/Amazon-OAuth
 Content-type: application/json
@@ -102,10 +104,12 @@ Content-length: 41
 #### Response
 
 The following is an example of the response.
+
 <!-- {
   "blockType": "response",
   "truncated": true
 } -->
+
 ```http
 HTTP/1.1 204 No Content
 ```
@@ -114,15 +118,18 @@ HTTP/1.1 204 No Content
 #### Request
 
 The following is an example of the request.
+
 <!-- {
   "blockType": "request",
   "name": "update_openidconnectprovider"
 }
 -->
+
 ``` http
 PATCH https://graph.microsoft.com/beta/identityProviders/OIDC-V1-MyTest-085a8a0c-58cb-4b6d-8e07-1328ea404e1a
 Content-type: application/json
 Content-length: 41
+
 {
   "responseType": "id_token"
 }
@@ -131,10 +138,12 @@ Content-length: 41
 #### Response
 
 The following is an example of the response.
+
 <!-- {
   "blockType": "response",
   "truncated": true
 } -->
+
 ```http
 HTTP/1.1 204 No Content
 ```

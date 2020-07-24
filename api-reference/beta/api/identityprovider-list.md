@@ -32,6 +32,7 @@ The work or school account needs to belong to one of the following roles:
 ## HTTP request
 
 <!-- { "blockType": "ignored" } -->
+
 ```http
 GET /identityProviders
 ```
@@ -55,11 +56,13 @@ If successful, this method returns a `200 OK` response code and a collection of 
 ### Request
 
 The following is an example of the request.
+
 <!-- {
   "blockType": "request",
   "name": "get_identityprovider"
 }
 -->
+
 ``` http
 GET https://graph.microsoft.com/beta/identityProviders
 ```
@@ -69,12 +72,14 @@ GET https://graph.microsoft.com/beta/identityProviders
 The following is an example of the response.
 
 **Note:** The response object shown here might be shortened for readability.
+
 <!-- {
   "blockType": "response",
   "truncated": true,
   "@odata.type": "microsoft.graph.IdentityProvider",
   "isCollection": true
 } -->
+
 ```http
 HTTP/1.1 200 OK
 Content-type: application/json
@@ -91,7 +96,7 @@ Content-type: application/json
           "clientSecret": "*****"
       },
       {
-          "@odata.type": "microsoft.graph.openIdConnectProvider"
+          "@odata.type": "#microsoft.graph.openIdConnectProvider",
           "id": "OIDC-V1-MyTest-085a8a0c-58cb-4b6d-8e07-1328ea404e1a",
           "name": "Login with the Contoso identity provider",
           "type": "OpenIDConnect",

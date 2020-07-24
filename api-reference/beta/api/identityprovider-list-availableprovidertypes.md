@@ -32,6 +32,7 @@ The work or school account needs to belong to one of the following roles:
 ## HTTP request
 
 <!-- { "blockType": "ignored" } -->
+
 ```http
 GET /identityProviders/availableProviderTypes
 ```
@@ -53,11 +54,13 @@ If successful, this function returns a `200 OK` response code and a String colle
 
 ### Request
 The following is an example of the request.
+
 <!-- {
   "blockType": "request",
   "name": "identityprovider_availableprovidertypes"
 }
 -->
+
 ``` http
 GET https://graph.microsoft.com/beta/identityProviders/availableProviderTypes
 ```
@@ -65,13 +68,16 @@ GET https://graph.microsoft.com/beta/identityProviders/availableProviderTypes
 ### Response
 
 The following is an example of the response.
+
 **Note:** The response object shown here might be shortened for readability.
+
 <!-- {
   "blockType": "response",
   "truncated": true,
   "@odata.type": "Collection(Edm.String)"
 }
 -->
+
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
