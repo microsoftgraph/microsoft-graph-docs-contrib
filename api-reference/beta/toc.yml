@@ -11303,6 +11303,61 @@ items:
           href: api/sitepage-delete.md
         - name: Publish page
           href: api/sitepage-publish.md
+       - name: Taxonomy
+        items:
+        - name: termStore-store
+          href: resources/termstore-store.md
+          items:
+          - name: Get termStore-store
+            href: api/termstore-store-get.md
+          - name: Update termStore-store
+            href: api/termstore-store-update.md
+          - name: Get termStore-groups
+            href: api/termstore-store-list-groups.md
+        - name: termstore-group        
+          href: resources/termstore-group.md
+          items:
+          - name: Get termStore-group
+            href: api/termstore-store-get-group.md
+          - name: Create termStore-group
+            href: api/termstore-store-post-group.md
+          - name: Delete termStore-group
+            href: api/termstore-store-delete-group.md
+          - name: Get termStore-sets
+            href: api/termstore-group-set-list.md
+        - name: termstore-set
+          href: resources/termstore-set.md
+          items:
+          - name: Get termStore-set
+            href: api/termstore-set-get.md
+          - name: Update termStore-set
+            href: api/termstore-set-update.md
+          - name: Delete termStore-set
+            href: api/termstore-set-delete.md
+          - name: Create termStore-set
+            href: api/termstore-set-create.md
+          - name: List termStore-set children
+            href: api/termstore-term-list-children.md
+        - name: termstore-term
+          href: resources/termstore-term.md
+          items:
+          - name: Get termStore-term
+            href: api/termstore-term-get.md
+          - name: Update termStore-term
+            href: api/termstore-term-update.md
+          - name: Delete termStore-term
+            href: api/termstore-term-delete.md
+          - name: Create termStore-term
+            href: api/termstore-term-create.md
+          - name: List termStore-term children  
+            href: api/termstore-term-list-children.md
+          - name: List termStore-term relations
+            href: api/termStore-term-list-relations.md            
+        - name: termstore-relation
+          href: resources/termstore-relation.md
+          items:
+          - name: Create termStore-relation
+            href: api/termStore-relation-create.md
     - name: Tasks and plans
       displayName: Planner
       items:
@@ -12030,59 +12085,4 @@ items:
         - name: Add named item
           href: api/nameditem-add.md
         - name: List range
-          href: api/nameditem-range.md
-      - name: Taxonomy
-        items:
-        - name: termStore-store
-          href: resources/termstore-store.md
-          items:
-          - name: Get termStore-store
-            href: api/termstore-store-get.md
-          - name: Update termStore-store
-            href: api/termstore-store-update.md
-          - name: Get termStore-groups
-            href: api/termstore-store-list-groups.md
-        - name: termstore-group        
-          href: resources/termstore-group.md
-          items:
-          - name: Get termStore-group
-            href: api/termstore-store-get-group.md
-          - name: Create termStore-group
-            href: api/termstore-store-post-group.md
-          - name: Delete termStore-group
-            href: api/termstore-store-delete-group.md
-          - name: Get termStore-sets
-            href: api/termstore-group-set-list.md
-        - name: termstore-set
-          href: resources/termstore-set.md
-          items:
-          - name: Get termStore-set
-            href: api/termstore-set-get.md
-          - name: Update termStore-set
-            href: api/termstore-set-update.md
-          - name: Delete termStore-set
-            href: api/termstore-set-delete.md
-          - name: Create termStore-set
-            href: api/termstore-set-create.md
-          - name: List termStore-set children
-            href: api/termstore-term-list-children.md
-        - name: termstore-term
-          href: resources/termstore-term.md
-          items:
-          - name: Get termStore-term
-            href: api/termstore-term-get.md
-          - name: Update termStore-term
-            href: api/termstore-term-update.md
-          - name: Delete termStore-term
-            href: api/termstore-term-delete.md
-          - name: Create termStore-term
-            href: api/termstore-term-create.md
-          - name: List termStore-term children  
-            href: api/termstore-term-list-children.md
-          - name: List termStore-term relations
-            href: api/termStore-term-list-relations.md            
-        - name: termstore-relation
-          href: resources/termstore-relation.md
-          items:
-          - name: Create termStore-relation
-            href: api/termStore-relation-create.md
+          href: api/nameditem-range.md      
