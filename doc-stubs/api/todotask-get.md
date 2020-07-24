@@ -17,9 +17,9 @@ One of the following permissions is required to call this API. To learn more, in
 
 |Permission type|Permissions (from most to least privileged)|
 |:---|:---|
-|Delegated (work or school account)|**TODO: Provide applicable permissions.**|
-|Delegated (personal Microsoft account)|**TODO: Provide applicable permissions.**|
-|Application|**TODO: Provide applicable permissions.**|
+|Delegated (work or school account)|Tasks.Read|
+|Delegated (personal Microsoft account)|Tasks.Read|
+|Application|Not supported|
 
 ## HTTP request
 
@@ -28,7 +28,7 @@ One of the following permissions is required to call this API. To learn more, in
 }
 -->
 ``` http
-GET /tasks/{tasksId}
+GET /users/me/todo/lists/{todoTaskListId}/tasks/{taskId}
 ```
 
 ## Optional query parameters
@@ -55,7 +55,7 @@ If successful, this method returns a `200 OK` response code and a [todoTask](../
 }
 -->
 ``` http
-GET https://graph.microsoft.com/beta/tasks/{tasksId}
+GET https://graph.microsoft.com/beta/users/me/todo/lists/AAMkADA1MTHgwAAA=/tasks/721a35e2-35e2-721a-e235-1a72e2351a72
 ```
 
 
@@ -71,32 +71,23 @@ GET https://graph.microsoft.com/beta/tasks/{tasksId}
 HTTP/1.1 200 OK
 Content-Type: application/json
 {
-  "value": {
-    "@odata.type": "#microsoft.graph.todoTask",
+    "@odata.context": "https://graph.microsoft.com/beta/$metadata#tasks/$entity",
+    "@odata.etag": "W/\"s8/ERWT3WEeFpBGD0bDgAA+TWq9g==\"",
+    "importance": "low",
+    "isReminderOn": false,
+    "status": "notStarted",
+    "title": "Shop for dinner",
+    "createdDateTime": "2020-07-22T10:39:03.7937971Z",
+    "lastModifiedDateTime": "2020-07-22T12:02:10.8835421Z",
     "id": "721a35e2-35e2-721a-e235-1a72e2351a72",
     "body": {
-      "@odata.type": "microsoft.graph.itemBody"
-    },
-    "completedDateTime": {
-      "@odata.type": "microsoft.graph.dateTimeTimeZone"
+        "content": "",
+        "contentType": "text"
     },
     "dueDateTime": {
-      "@odata.type": "microsoft.graph.dateTimeTimeZone"
-    },
-    "importance": "String",
-    "isReminderOn": "Boolean",
-    "recurrence": {
-      "@odata.type": "microsoft.graph.patternedRecurrence"
-    },
-    "reminderDateTime": {
-      "@odata.type": "microsoft.graph.dateTimeTimeZone"
-    },
-    "status": "String",
-    "title": "String",
-    "createdDateTime": "String (timestamp)",
-    "lastModifiedDateTime": "String (timestamp)",
-    "bodyLastModifiedDateTime": "String (timestamp)"
-  }
+        "dateTime": "2020-08-25T04:00:00.0000000",
+        "timeZone": "UTC"
+    }
 }
 ```
 

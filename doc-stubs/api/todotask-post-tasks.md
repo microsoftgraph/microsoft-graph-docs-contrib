@@ -17,9 +17,9 @@ One of the following permissions is required to call this API. To learn more, in
 
 |Permission type|Permissions (from most to least privileged)|
 |:---|:---|
-|Delegated (work or school account)|**TODO: Provide applicable permissions.**|
-|Delegated (personal Microsoft account)|**TODO: Provide applicable permissions.**|
-|Application|**TODO: Provide applicable permissions.**|
+|Delegated (work or school account)|Tasks.ReadWrite|
+|Delegated (personal Microsoft account)|Tasks.ReadWrite|
+|Application|Not supported|
 
 ## HTTP request
 
@@ -28,7 +28,7 @@ One of the following permissions is required to call this API. To learn more, in
 }
 -->
 ``` http
-POST /tasks
+POST /users/me/todo/lists/{todoTaskListId}/tasks
 ```
 
 ## Request headers
@@ -44,19 +44,19 @@ The following table shows the properties that are required when you create the [
 
 |Property|Type|Description|
 |:---|:---|:---|
-|id|String|**TODO: Add Description** Inherited from [entity](../resources/entity.md)|
-|body|[itemBody](../resources/itembody.md)|**TODO: Add Description**|
-|completedDateTime|[dateTimeTimeZone](../resources/datetimetimezone.md)|**TODO: Add Description**|
-|dueDateTime|[dateTimeTimeZone](../resources/datetimetimezone.md)|**TODO: Add Description**|
-|importance|importance|**TODO: Add Description**. Possible values are: `low`, `normal`, `high`.|
-|isReminderOn|Boolean|**TODO: Add Description**|
-|recurrence|[patternedRecurrence](../resources/patternedrecurrence.md)|**TODO: Add Description**|
-|reminderDateTime|[dateTimeTimeZone](../resources/datetimetimezone.md)|**TODO: Add Description**|
-|status|taskStatus|**TODO: Add Description**. Possible values are: `notStarted`, `inProgress`, `completed`, `waitingOnOthers`, `deferred`.|
-|title|String|**TODO: Add Description**|
-|createdDateTime|DateTimeOffset|**TODO: Add Description**|
-|lastModifiedDateTime|DateTimeOffset|**TODO: Add Description**|
-|bodyLastModifiedDateTime|DateTimeOffset|**TODO: Add Description**|
+|id|String|The unique identifier of the task. Inherited from [entity](../resources/entity.md)|
+|body|[itemBody](../resources/itembody.md)|The task body that typically contains information about the task. Note that only HTML type is supported.|
+|completedDateTime|[dateTimeTimeZone](../resources/datetimetimezone.md)|The date in the specified time zone that the task was finished.|
+|dueDateTime|[dateTimeTimeZone](../resources/datetimetimezone.md)|The date in the specified time zone that the task is to be finished.|
+|importance|importance|The importance of the event. Possible values are: `low`, `normal`, `high`.|
+|isReminderOn|Boolean|Set to true if an alert is set to remind the user of the task.|
+|recurrence|[patternedRecurrence](../resources/patternedrecurrence.md)|The recurrence pattern for the task.|
+|reminderDateTime|[dateTimeTimeZone](../resources/datetimetimezone.md)|The date and time for a reminder alert of the task to occur.|
+|status|taskStatus|Indicates state or progress of the task. Possible values are: `notStarted`, `inProgress`, `completed`, `waitingOnOthers`, `deferred`.|
+|title|String|A brief description of the task.|
+|createdDateTime|DateTimeOffset|The date and time when the task was created. By default, it is in UTC. You can provide a custom time zone in the request header.|
+|lastModifiedDateTime|DateTimeOffset|The date and time when the task was last modified. By default, it is in UTC. You can provide a custom time zone in the request header.|
+|bodyLastModifiedDateTime|DateTimeOffset|The date and time when the task body was last modified. By default, it is in UTC. You can provide a custom time zone in the request header.|
 
 
 
@@ -73,32 +73,17 @@ If successful, this method returns a `201 Created` response code and a [todoTask
 }
 -->
 ``` http
-POST https://graph.microsoft.com/beta/tasks
+POST https://graph.microsoft.com/beta/users/me/todo/lists/AAMkADA1MTHgwAAA=/tasks
 Content-Type: application/json
 Content-length: 608
 
 {
-  "@odata.type": "#microsoft.graph.todoTask",
-  "body": {
-    "@odata.type": "microsoft.graph.itemBody"
-  },
-  "completedDateTime": {
-    "@odata.type": "microsoft.graph.dateTimeTimeZone"
-  },
-  "dueDateTime": {
-    "@odata.type": "microsoft.graph.dateTimeTimeZone"
-  },
-  "importance": "String",
-  "isReminderOn": "Boolean",
-  "recurrence": {
-    "@odata.type": "microsoft.graph.patternedRecurrence"
-  },
-  "reminderDateTime": {
-    "@odata.type": "microsoft.graph.dateTimeTimeZone"
-  },
-  "status": "String",
-  "title": "String",
-  "bodyLastModifiedDateTime": "String (timestamp)"
+    "title":"Shop for dinner",
+    "dueDateTime":
+    {
+        "dateTime":"2020-07-25T16:00:00",
+        "timeZone":"Eastern Standard Time"
+    }
 }
 ```
 
@@ -115,30 +100,23 @@ Content-length: 608
 HTTP/1.1 201 Created
 Content-Type: application/json
 {
-  "@odata.type": "#microsoft.graph.todoTask",
-  "id": "721a35e2-35e2-721a-e235-1a72e2351a72",
-  "body": {
-    "@odata.type": "microsoft.graph.itemBody"
-  },
-  "completedDateTime": {
-    "@odata.type": "microsoft.graph.dateTimeTimeZone"
-  },
-  "dueDateTime": {
-    "@odata.type": "microsoft.graph.dateTimeTimeZone"
-  },
-  "importance": "String",
-  "isReminderOn": "Boolean",
-  "recurrence": {
-    "@odata.type": "microsoft.graph.patternedRecurrence"
-  },
-  "reminderDateTime": {
-    "@odata.type": "microsoft.graph.dateTimeTimeZone"
-  },
-  "status": "String",
-  "title": "String",
-  "createdDateTime": "String (timestamp)",
-  "lastModifiedDateTime": "String (timestamp)",
-  "bodyLastModifiedDateTime": "String (timestamp)"
+    "@odata.context": "https://graph.microsoft.com/beta/$metadata#tasks/$entity",
+    "@odata.etag": "W/\"s8/ERWT3WEeFpBGD0bDgAA+TWlzA==\"",
+    "importance": "low",
+    "isReminderOn": false,
+    "status": "notStarted",
+    "title": "Shop for dinner",
+    "createdDateTime": "2020-07-22T10:39:03.7937971Z",
+    "lastModifiedDateTime": "2020-07-22T10:39:03.9337172Z",
+    "id": "721a35e2-35e2-721a-e235-1a72e2351a72",
+    "body": {
+        "content": "",
+        "contentType": "text"
+    },
+    "dueDateTime": {
+        "dateTime": "2020-07-25T04:00:00.0000000",
+        "timeZone": "UTC"
+    }
 }
 ```
 
