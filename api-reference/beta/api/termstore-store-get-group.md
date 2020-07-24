@@ -2,9 +2,8 @@
 title: "Get groups"
 description: "Read the properties and relationships of a group object."
 author: mohitpcad
-ms.author: mopathak
 localization_priority: Normal
-ms.prod: "sharepoint-taxonomy"
+ms.prod: "Sharepoint"
 doc_type: apiPageType
 ---
 
