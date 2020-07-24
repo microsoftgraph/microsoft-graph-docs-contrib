@@ -45,7 +45,7 @@ POST /identityProviders
 
 ## Request body
 
-In the request body, provide a JSON representation of [identityProvider](../resources/identityprovider.md) or [openIdConnectProvider](../resources/openIdConnectProvider.md) (only for Azure AD B2C) object. All the properties listed in the following table are required.
+In the request body, provide a JSON representation of [identityProvider](../resources/identityprovider.md) or [openIdConnectProvider](../resources/openidconnectprovider.md) (only for Azure AD B2C) object. All the properties listed in the following table are required.
 
 ### identityProvider object
 
@@ -72,7 +72,7 @@ In the request body, provide a JSON representation of [identityProvider](../reso
 
 ## Response
 
-If successful, this method returns a `201 Created` response code and [identityProvider](../resources/identityprovider.md) or [openIdConnectProvider](../resources/openIdConnectProvider.md) object in the response body. If unsuccessful, a `4xx` error will be returned with specific details.
+If successful, this method returns a `201 Created` response code and [identityProvider](../resources/identityprovider.md) or [openIdConnectProvider](../resources/openidconnectprovider.md) (only for Azure AD B2C) object in the response body. If unsuccessful, a `4xx` error will be returned with specific details.
 
 ## Examples
 

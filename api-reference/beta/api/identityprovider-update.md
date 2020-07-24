@@ -45,7 +45,7 @@ PATCH /identityProviders/{id}
 
 ## Request body
 
-In the request body, provide a JSON object with one or more properties that need to be updated for an [identityProvider](../resources/identityprovider.md) or [openIdConnectProvider](../resources/openIdConnectProvider.md) (only for Azure AD B2C) object.
+In the request body, provide a JSON object with one or more properties that need to be updated for an [identityProvider](../resources/identityprovider.md) or [openIdConnectProvider](../resources/openidconnectprovider.md) (only for Azure AD B2C) object.
 
 ### identityProvider object
 
