@@ -29,12 +29,12 @@ If it is a custom OpenID Connect identity provider with `OpenIDConnect` as `type
 
 | Method       | Return Type  |Description|
 |:---------------|:--------|:----------|
-|[Get identityProvider](../api/identityprovider-get.md) |identityProvider|Read properties of an existing identityProvider.|
-|[Create identityProvider](../api/identityprovider-post-identityproviders.md)|identityProvider|Create a new identityProvider.|
-|[Update identityProvider](../api/identityprovider-update.md)|None|Update an existing identityProvider.|
-|[Delete identityProvider](../api/identityprovider-delete.md)|None|Delete an existing identityProvider.|
-|[List configured identityProviders](../api/identityprovider-list.md)|identityProvider collection|List all identityProviders configured in a tenant.|
-|[List available identityProvider types](../api/identityprovider-list-availableprovidertypes.md)|List all identityProviders available in a tenant.|
+|[List](../api/identityprovider-list.md)|identityProvider collection|Retrieve all identity providers configured in a tenant.|
+|[Create](../api/identityprovider-post-identityproviders.md)|identityProvider|Create a new identity provider.|
+|[Get](../api/identityprovider-get.md) |identityProvider|Retrieve properties of an identity provider.|
+|[Update](../api/identityprovider-update.md)|None|Update an identity provider.|
+|[Delete](../api/identityprovider-delete.md)|None|Delete an identity provider.|
+|[List available provider types](../api/identityprovider-list-availableprovidertypes.md)|Retrieve all available identity provider types.|
 
 ## Properties
 
@@ -44,7 +44,7 @@ If it is a custom OpenID Connect identity provider with `OpenIDConnect` as `type
 |clientSecret|String|The client secret for the application obtained when registering the application with the identity provider. This is write-only. A read operation will return "\*\*\*\*". This is a required field.|
 |id|String|The ID of the identity provider.|
 |name|String|The display name of the identity provider.|
-|type|String|The identity provider type is a required field. For B2B scenario: <ul><li/>Google<li/>Facebook</ul>For B2C scenario: <ul><li/>Microsoft<li/>Google<li/>Amazon<li/>LinkedIn<li/>Facebook<li/>GitHub<li/>Twitter<li/>Weibo<li/>QQ<li/>WeChat<li/>OpenIDConnect</ul>|
+|type|String|The identity provider type is a required field.<ul>For B2B scenario:<li/>Google<li/>Facebook</ul><ul>For B2C scenario:<li/>Microsoft<li/>Google<li/>Amazon<li/>LinkedIn<li/>Facebook<li/>GitHub<li/>Twitter<li/>Weibo<li/>QQ<li/>WeChat<li/>OpenIDConnect</ul>|
 
 ### Where to get the client ID and secret
 
