@@ -94,7 +94,7 @@ POST https://graph.microsoft.com/beta/identityProviders
 Content-type: application/json
 Content-length: 154
 {
-  "@odata.type": "#microsoft.graph.identityProvider",
+  "@odata.type": "microsoft.graph.identityProvider",
   "name": "Login with Amazon",
   "type": "Amazon",
   "clientId": "56433757-cadd-4135-8431-2c9e3fd68ae8",
@@ -119,7 +119,7 @@ HTTP/1.1 201 Created
 Content-type: application/json
 
 {
-   "@odata.type": "#microsoft.graph.identityProvider",
+   "@odata.type": "microsoft.graph.identityProvider",
     "id": "Amazon-OAUTH",
     "name": "Login with Amazon",
     "type": "Amazon",
@@ -143,7 +143,7 @@ The following is an example of the request.
 POST https://graph.microsoft.com/beta/identityProviders
 Content-type: application/json
 {
-  "@odata.type": "#microsoft.graph.openIdConnectProvider",
+  "@odata.type": "microsoft.graph.openIdConnectProvider",
     "name": "Login with the Contoso identity provider",
     "type": "OpenIDConnect",
     "clientId": "56433757-cadd-4135-8431-2c9e3fd68ae8",
@@ -155,7 +155,7 @@ Content-type: application/json
         "email": "myEmail",
         "displayName": "myDisplayName"
     },
-    "domainHint": "mycustomoidc"
+    "domainHint": "mycustomoidc",
     "metadataUrl": "https://mycustomoidc.com/.well-known/openid-configuration",
     "responseMode": "form_post",
     "responseType": "code",
@@ -181,7 +181,7 @@ HTTP/1.1 201 Created
 Content-type: application/json
 
 {
-  "@odata.type": "#microsoft.graph.openIdConnectProvider",
+  "@odata.type": "microsoft.graph.openIdConnectProvider",
   "id": "OIDC-V1-MyTest-085a8a0c-58cb-4b6d-8e07-1328ea404e1a",
   "name": "Login with the Contoso identity provider",
   "type": "OpenIDConnect",
@@ -194,7 +194,7 @@ Content-type: application/json
       "email": "myEmail",
       "displayName": "myDisplayName"
   },
-  "domainHint": "mycustomoidc"
+  "domainHint": "mycustomoidc",
   "metadataUrl": "https://mycustomoidc.com/.well-known/openid-configuration",
   "responseMode": "form_post",
   "responseType": "code",
