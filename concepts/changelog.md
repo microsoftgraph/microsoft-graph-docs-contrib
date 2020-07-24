@@ -29,11 +29,6 @@ For a summary of the value of these API changes, as well as recent tools, compon
 | Removal | beta and v1.0 | Removed the erronously introduced **sequenceNumber** property from the [changeNotification](/graph/api/resources/changenotification) type.|
 | Addition | Beta | Adds [presence](/graph/api/resources/presence) to the resources supported for [change notifications](/graph/webhooks). |
 
-### Change tracking
-| **Change type** | **Version** | **Description**                          |
-| :-------------- | :---------- | :--------------------------------------- |
-| Addition        | v1.0        | Added [delta query](delta-query-overview.md) capability to [servicePrincipal](/graph/api/serviceprincipal-delta). |
-
 ### Cloud communications
 
 | **Change type** | **Version**   | **Description**                          |
@@ -100,15 +95,14 @@ For a summary of the value of these API changes, as well as recent tools, compon
 | Addition | beta and v1.0 | Added the following operations to [devices](/graph/api/resources/device): <br/> [Delete registered owner](/graph/api/device-delete-registeredowners) <br/> [Delete registered user](/graph/api/delete-registeredusers)|
 | Addition | v1.0 | Added the **assignedLabels**, **expirationDateTime**, **membershipRule**, **membershipRuleProcessingState**, **preferredLanguage**, and **theme** properties to the [group](/graph/api/resources/group?view=graph-rest-v1.0) entity. |
 | Addition | beta | Added the **infoCatalogs** property to the [group](/graph/api/resources/group?view=graph-rest-beta) entity and the [user](/graph/api/resources/user?view=graph-rest-beta) entity. |
-| Addition | beta | Added the **userRiskLevels** property to the [conditionalAccessConditionSet](/graph/api/resources/conditionalaccessconditionset?view=graph-rest-beta) entity. |
-| Addition | beta | Added the **passwordChange** grant control to the [conditionalAccessGrantControls](/graph/api/resources/conditionalaccessgrantcontrols?view=graph-rest-beta) entity. |
 | Addition | beta | Added the **id** property to the [synchronizationSchema](/graph/api/resources/synchronization-synchronizationschema?view=graph-rest-beta) entity. |
 | Addition | beta | Added the [acquireAccessToken](/graph/api/synchronization-synchronization-acquireAccessToken?view=graph-rest-beta) method to the [synchronization](/graph/api/resources/synchronization-synchronization?view=graph-rest-beta) resource|
 | Addition | beta | Added the [entitlementManagementSettings](/graph/api/resources/entitlementmanagementsettings?view=graph-rest-beta) entity. |
 | Addition | v1.0 | Added the [identitySecurityDefaultsEnforcementPolicy API](/graph/api/resources/identitysecuritydefaultsenforcementpolicy?view=graph-rest-v1.0), which represents Azure Active Directory security defaults policy.|
 | Addition        | v1.0        | Added [delta query](delta-query-overview.md) capability to [servicePrincipal](/graph/api/serviceprincipal-delta). |
+| Addition        | v1.0        | Added [delta query](delta-query-overview.md) capability for [oauth2PermissionGrant](/graph/api/oauth2Permissiongrant-delta). |
 
-### Identity and access | Conditional access
+### Identity and access | Identity and sign-in
 | **Change type** | **Version** | **Description**                  |
 |:----------------|:------------|:-----------------------------------------|
 | Addition | beta | Added the **userRiskLevels** property to the [conditionalaccessconditionset](/graph/api/resources/conditionalaccessconditionset?view=graph-rest-beta) entity. |
@@ -124,11 +118,11 @@ For a summary of the value of these API changes, as well as recent tools, compon
 | Addition | beta | Added the **itemInsightsSettings** entity and the following operations: <br/> [Get itemInsightSettings](/graph/api/iteminsightssettings-get?view=graph-rest-beta) entity. <br/> [Update itemInsightSettings](/graph/api/iteminsightssettings-update?view=graph-rest-beta) |
 
 
-### People and workplace intelligence | Profile card customization
+### People and workplace intelligence | Profile
 | **Change type** | **Version**   | **Description**                          |
 | :-------------- | :------------ | :--------------------------------------- |
 | Addition | beta | Added the **profileCardProperties** navigation property to the [organizationSettings](/graph/api/resources/organizationsettings?view=graph-rest-beta) entity. |
-| Addition | beta | Added the **profileCardProperty** entity and the following operations: <br/> [List](/graph/api/organizationsettings-list-profilecardproperties) <br/> [Create](/graph/api/organizationsettings-post-profilecardproperties) <br/> [Get](/graph/api/profilecardproperty-get?view=graph-rest-beta) <br/> [Update](/graph/api/profilecardproperty-update?view=graph-rest-beta) <br/> [Delete](/graph/api/profilecardproperty-delete) |
+| Addition | beta | Added the **profileCardProperty** entity and the following operations: <br/> [List](/graph/api/organizationsettings-list-profilecardproperties) <br/> [Create](/graph/api/organizationsettings-post-profilecardproperties) <br/> [Get](/graph/api/profilecardproperty-get?view=graph-rest-beta) <br/> [Update](/graph/api/profilecardproperty-update?view=graph-rest-beta) <br/> [Delete](/graph/api/profilecardproperty-delete). |
 
 ### Teamwork
 | **Change type** | **Version** | **Description**                          |
@@ -141,7 +135,6 @@ For a summary of the value of these API changes, as well as recent tools, compon
 | :-------------- | :---------- | :--------------------------------------- |
 |Addition|beta|Added the [workbookOperation](/graph/api/resources/workbookoperation?view=graph-rest-beta) relationship to the [Workbook](/graph/api/resources/workbook?view=graph-rest-beta) entity. |
 |Addition|beta|Added the  [Get workbookOperation](/graph/api/resources/workbookoperation-get?view=graph-rest-beta) method to the [workbookOperation](/graph/api/resources/workbookoperation?view=graph-rest-beta) entity. |
-
 
 ## June 2020
 
@@ -5058,4 +5051,3 @@ Added support for dynamic group membership through the public preview API, inclu
 | Fix             | v1.0 and beta | Fixed being able to select certain user properties on other users, when referencing the user by user principal name (UPN). For example: https://graph.microsoft.com/v1.0/users/anotherUser@contoso.com?$select=aboutMe |
 | Fix             | v1.0 and beta | Fixed calling the _microsoft.graph.reminderView_ user bound function, which was failing with the following error: Could not find a property named businessPhones on type  Microsoft.OutlookServices.Reminder. |
 | Fix             | v1.0 and beta | Fixed user creation and update (POST/PATCH /v1.0/users), which was failing with a 400 error. |
-
