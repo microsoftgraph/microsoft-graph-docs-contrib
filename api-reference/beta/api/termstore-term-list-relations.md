@@ -2,9 +2,8 @@
 title: "List relations"
 description: "Get the relations from the relations navigation property."
 author: mohitpcad
-ms.author: mopathak
 localization_priority: Normal
-ms.prod: "sharepoint-taxonomy"
+ms.prod: "Sharepoint"
 doc_type: apiPageType
 ---
 
