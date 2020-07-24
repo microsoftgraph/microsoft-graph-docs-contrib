@@ -99,7 +99,7 @@ items:
             href: findmeetingtimes-example.md
           - name: Get free/busy schedule
             href: outlook-get-free-busy-schedule.md
-          - name: Propose new meeting times (preview)
+          - name: Propose new meeting times
             href: outlook-calendar-meeting-proposals.md
           - name: Organize or attend online meetings
             href: outlook-calendar-online-meetings.md
