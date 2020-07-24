@@ -1,6 +1,6 @@
 ---
 title: "identityProvider resource type"
-description: "Represents identity providers in an Azure Active Directory (Azure AD) tenant and an Azure AD B2C tenant."
+description: "Represents identity providers in an Azure Active Directory tenant and an Azure AD B2C tenant."
 localization_priority: Priority
 doc_type: resourcePageType
 ms.prod: "microsoft-identity-platform"
@@ -13,11 +13,11 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Represents identity providers in an Azure Active Directory (Azure AD) tenant and an Azure AD B2C tenant.
+Represents identity providers in an Azure Active Directory tenant and an Azure AD B2C tenant.
 
 For Azure AD B2B scenarios in an Azure AD tenant, the identity providers can be Google or Facebook.
 
-In an Azure AD B2C tenant, the identity provider can be Microsoft, Google, Facebook, Amazon, LinkedIn, Twitter or any OpenID Connect supported providers. The following identity providers are in preview: Weibo, QQ, WeChat, and GitHub.
+In an Azure AD B2C tenant, the identity provider can be Microsoft, Google, Facebook, Amazon, LinkedIn, Twitter or any [openIdConnectProvider](../resources/openidconnectprovider.md). The following identity providers are in preview: Weibo, QQ, WeChat, and GitHub.
 
 Configuring an identity provider in your Azure AD B2C tenant enables users to:
 
@@ -36,17 +36,17 @@ If it is a custom OpenID Connect identity provider with `OpenIDConnect` as `type
 |[Update identityProvider](../api/identityprovider-update.md)|None|Update an existing identityProvider.|
 |[Delete identityProvider](../api/identityprovider-delete.md)|None|Delete an existing identityProvider.|
 |[List configured identityProviders](../api/identityprovider-list.md)|identityProvider collection|List all identityProviders configured in a tenant.|
-|[List available identityProvider types](../api/identityprovider-availableprovidertypes.md)||List all identityProviders available in a tenant.|
+|[List available identityProvider types](../api/identityprovider-list-availableprovidertypes.md)|List all identityProviders available in a tenant.|
 
 ## Properties
 
-|Property|Type|Required|Nullable|Description|
-|:---------------|:--------|:--------|:--------|:----------|
-|clientId|String|Yes|No|The client ID for the application. This is the client ID obtained when registering the application with the identity provider.|
-|clientSecret|String|Yes|No|The client secret for the application. This is the client secret obtained when registering the application with the identity provider. This is write-only. A read operation will return "\*\*\*\*".|
-|id|String|No|No|The ID of the identity provider.|
-|name|String|No|No|The display name of the identity provider.|
-|type|String|Yes|No|The identity provider type. It must be one of the following values: <ul><li/>Microsoft<li/>Google<li/>Amazon<li/>LinkedIn<li/>Facebook<li/>GitHub<li/>Twitter<li/>Weibo<li/>QQ<li/>WeChat</ul>For B2B scenarios, the value must be Google or Facebook.|
+|Property|Type|Description|
+|:---------------|:--------|:----------|
+|clientId|String|The client ID for the application obtained when registering the application with the identity provider. This is a required field.|
+|clientSecret|String|The client secret for the application obtained when registering the application with the identity provider. This is write-only. A read operation will return "\*\*\*\*". This is a required field.|
+|id|String|The ID of the identity provider.|
+|name|String|The display name of the identity provider.|
+|type|String|The identity provider type. It must be one of the following values: <ul><li/>Microsoft<li/>Google<li/>Amazon<li/>LinkedIn<li/>Facebook<li/>GitHub<li/>Twitter<li/>Weibo<li/>QQ<li/>WeChat</ul>For B2B scenarios, the value must be Google or Facebook. This is a required field.|
 
 ### Where to get the client ID and secret
 

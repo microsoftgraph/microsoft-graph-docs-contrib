@@ -1,5 +1,5 @@
 ---
-title: "identityProvider: availableProviderTypes"
+title: "List availableProviderTypes"
 description: "Retrieve all available identity provider types in the directory."
 localization_priority: Normal
 doc_type: apiPageType
@@ -7,18 +7,13 @@ author: "namkedia"
 ms.prod: "microsoft-identity-platform"
 ---
 
-# identityProvider: availableProviderTypes
+# List availableProviderTypes
 
 Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 Retrieves all identity provider types available in a directory.
-
-In Azure Active Directory (Azure AD) B2B scenarios involving an Azure AD tenant, the identity provider types can be `Google` and `Facebook`.
-
-In an Azure AD B2C tenant the identity provider types can be `Microsoft`, `Google`, `Facebook`, `Amazon`, `LinkedIn`, `Twitter`, `OpenIDConnect`, `Weibo`, `QQ`, `WeChat` and `GitHub`.
-
 
 ## Permissions
 
@@ -30,7 +25,7 @@ One of the following permissions is required to call this API. To learn more, in
 |Delegated (personal Microsoft account)| Not supported.|
 |Application|IdentityProvider.Read.All, IdentityProvider.ReadWrite.All|
 
-The work or school account needs to belong to one of the following two roles:
+The work or school account needs to belong to one of the following roles:
 * Global administrator
 * External Identity Provider administrator
 
@@ -57,6 +52,7 @@ If successful, this function returns a `200 OK` response code and a String colle
 ## Example
 
 ### Request
+The following is an example of the request.
 <!-- {
   "blockType": "request",
   "name": "identityprovider_availableprovidertypes"
@@ -67,6 +63,8 @@ GET https://graph.microsoft.com/beta/identityProviders/availableProviderTypes
 ```
 
 ### Response
+
+The following is an example of the response.
 **Note:** The response object shown here might be shortened for readability.
 <!-- {
   "blockType": "response",

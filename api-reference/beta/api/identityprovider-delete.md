@@ -1,6 +1,6 @@
 ---
 title: "Delete identityProvider"
-description: "Delete an existing identityProvider."
+description: "Delete an identityProvider."
 localization_priority: Normal
 doc_type: apiPageType
 author: "namkedia"
@@ -13,7 +13,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Delete an existing [identityProvider](../resources/identityprovider.md) or [openIdConnectProvider](../resources/openidconnectprovider.md).
+Delete an [identityProvider](../resources/identityprovider.md) or [openIdConnectProvider](../resources/openidconnectprovider.md.
 
 ## Permissions
 
@@ -25,7 +25,7 @@ One of the following permissions is required to call this API. To learn more, in
 |Delegated (personal Microsoft account)| Not supported.|
 |Application|IdentityProvider.ReadWrite.All|
 
-The work or school account needs to belong to one of the following two roles:
+The work or school account needs to belong to one of the following roles:
 * Global administrator
 * External Identity Provider administrator
 
@@ -53,17 +53,23 @@ If successful, this method returns `204 No Content` response code.
 ## Example
 
 ### Request
+
+The following is an example of the request.
+
 <!-- {
   "blockType": "request",
   "name": "delete_identityprovider"
 }
 -->
 ``` http
-DELETE https://graph.microsoft.com/beta/identityProviders/{identityProvidersId}
+DELETE https://graph.microsoft.com/beta/identityProviders/{id}
 ```
 
 
 ### Response
+
+The following is an example of the response.
+
 **Note:** The response object shown here might be shortened for readability.
 <!-- {
   "blockType": "response",

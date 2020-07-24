@@ -1,6 +1,6 @@
 ---
 title: "List identityProviders"
-description: "Get a list of the identityProvider objects and their properties."
+description: "Retrieve a list of identityProvider and openIdConnectProvider objects.."
 localization_priority: Normal
 doc_type: apiPageType
 author: "namkedia"
@@ -13,7 +13,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Get a list of the [identityProviders](../resources/identityprovider.md) and [openIdConnectProvider](../resources/openidconnectprovider.md) objects and their properties.
+Retrieve a list of [identityProviders](../resources/identityprovider.md) and [openIdConnectProvider](../resources/openidconnectprovider.md) objects.
 
 ## Permissions
 
@@ -25,7 +25,7 @@ One of the following permissions is required to call this API. To learn more, in
 |Delegated (personal Microsoft account)| Not supported.|
 |Application|IdentityProvider.Read.All, IdentityProvider.ReadWrite.All|
 
-The work or school account needs to belong to one of the following two roles:
+The work or school account needs to belong to one of the following roles:
 * Global administrator
 * External Identity Provider administrator
 
@@ -35,9 +35,6 @@ The work or school account needs to belong to one of the following two roles:
 ```http
 GET /identityProviders
 ```
-
-## Optional query parameters
-This method supports some of the OData query parameters to help customize the response. For general information, see [OData query parameters](/graph/query-parameters).
 
 ## Request headers
 
@@ -56,6 +53,8 @@ If successful, this method returns a `200 OK` response code and a collection of 
 ## Example
 
 ### Request
+
+The following is an example of the request.
 <!-- {
   "blockType": "request",
   "name": "get_identityprovider"
@@ -66,6 +65,8 @@ GET https://graph.microsoft.com/beta/identityProviders
 ```
 
 ### Response
+
+The following is an example of the response.
 **Note:** The response object shown here might be shortened for readability.
 <!-- {
   "blockType": "response",

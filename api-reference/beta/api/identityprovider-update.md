@@ -1,6 +1,6 @@
 ---
 title: "Update identityProvider"
-description: "Update properties in an existing identityProvider."
+description: "Update properties of an identityProvider or openIdConnectProvider."
 localization_priority: Normal
 doc_type: apiPageType
 author: "namkedia"
@@ -13,7 +13,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Update the properties of an[identityProvider](../resources/identityprovider.md) or [openIdConnectProvider](../resources/openidconnectprovider.md) object.
+Update the properties of an [identityProvider](../resources/identityprovider.md) or [openIdConnectProvider](../resources/openidconnectprovider.md) object.
 
 ## Permissions
 
@@ -25,7 +25,7 @@ One of the following permissions is required to call this API. To learn more, in
 |Delegated (personal Microsoft account)| Not supported.|
 |Application| IdentityProvider.ReadWrite.All|
 
-The work or school account needs to belong to one of the following two roles:
+The work or school account needs to belong to one of the following roles:
 * Global administrator
 * External Identity Provider administrator
 
@@ -45,8 +45,7 @@ PATCH /identityProviders/{id}
 
 ## Request body
 
-In the request body, provide a JSON object with one or more properties that need to be updated for an existing [identityProvider](../resources/identityprovider.md) or [openIdConnectProvider](../resources/openIdConnectProvider.md).
-
+In the request body, provide a JSON object with one or more properties that need to be updated for an [identityProvider](../resources/identityprovider.md) or [openIdConnectProvider](../resources/openIdConnectProvider.md) object.
 
 ### identityProvider object
 
@@ -78,11 +77,14 @@ In the request body, provide a JSON object with one or more properties that need
 
 If successful, this method returns a `204 No Content` response code. If unsuccessful, a `4xx` error will be returned with specific details.
 
-## Example
+## Examples
 
-### Example 2: The following example updates a specific **openIDConnectProvider**
+### Example 1: Update a specific **identityProvider**
 
 #### Request
+
+The following is an example of the request.
+
 <!-- {
   "blockType": "request",
   "name": "update_identityprovider"
@@ -90,7 +92,7 @@ If successful, this method returns a `204 No Content` response code. If unsucces
 -->
 ``` http
 PATCH https://graph.microsoft.com/beta/identityProviders/Amazon-OAuth
-Content-Type: application/json
+Content-type: application/json
 Content-length: 41
 {
   "clientSecret": "1111111111111"
@@ -99,6 +101,7 @@ Content-length: 41
 
 #### Response
 
+The following is an example of the response.
 <!-- {
   "blockType": "response",
   "truncated": true
@@ -106,9 +109,11 @@ Content-length: 41
 ```http
 HTTP/1.1 204 No Content
 ```
-### Example 2: The following example updates a specific **openIDConnectProvider**
+### Example 2: Update a specific **openIDConnectProvider**
 
 #### Request
+
+The following is an example of the request.
 <!-- {
   "blockType": "request",
   "name": "update_openidconnectprovider"
@@ -116,7 +121,7 @@ HTTP/1.1 204 No Content
 -->
 ``` http
 PATCH https://graph.microsoft.com/beta/identityProviders/OIDC-V1-MyTest-085a8a0c-58cb-4b6d-8e07-1328ea404e1a
-Content-Type: application/json
+Content-type: application/json
 Content-length: 41
 {
   "responseType": "id_token"
@@ -124,6 +129,8 @@ Content-length: 41
 ```
 
 #### Response
+
+The following is an example of the response.
 <!-- {
   "blockType": "response",
   "truncated": true

@@ -25,7 +25,7 @@ One of the following permissions is required to call this API. To learn more, in
 |Delegated (personal Microsoft account)| Not supported.|
 |Application|IdentityProvider.ReadWrite.All|
 
-The work or school account needs to belong to one of the following two roles:
+The work or school account needs to belong to one of the following roles:
 * Global administrator
 * External Identity Provider administrator
 
@@ -74,11 +74,13 @@ In the request body, provide a JSON representation of [identityProvider](../reso
 
 If successful, this method returns a `201 Created` response code and [identityProvider](../resources/identityprovider.md) or [openIdConnectProvider](../resources/openIdConnectProvider.md) object in the response body. If unsuccessful, a `4xx` error will be returned with specific details.
 
-## Example
+## Examples
 
-### Example 1: The following example creates a specific **identityProvider**
+### Example 1: Create a specific **identityProvider**
 
 #### Request
+
+The following is an example of the request.
 <!-- {
   "blockType": "request",
   "name": "create_identityprovider_from_identityproviders"
@@ -86,7 +88,7 @@ If successful, this method returns a `201 Created` response code and [identityPr
 -->
 ``` http
 POST https://graph.microsoft.com/beta/identityProviders
-Content-Type: application/json
+Content-type: application/json
 Content-length: 154
 {
   "@odata.type": "#microsoft.graph.identityProvider",
@@ -98,6 +100,8 @@ Content-length: 154
 ```
 
 #### Response
+
+The following is an example of the response.
 **Note:** The response object shown here might be shortened for readability.
 <!-- {
   "blockType": "response",
@@ -117,9 +121,11 @@ Content-type: application/json
     "clientSecret": "*****"
 }
 ```
-### Example 2: The following example creates a specific **openIDConnectProvider**
+### Example 2: Create a specific **openIDConnectProvider**
 
 #### Request
+
+The following is an example of the request.
 <!-- {
   "blockType": "request",
   "name": "create_openidconnectprovider_from_identityproviders"
@@ -127,7 +133,7 @@ Content-type: application/json
 -->
 ``` http
 POST https://graph.microsoft.com/beta/identityProviders
-Content-Type: application/json
+Content-type: application/json
 {
     "@odata.type": "microsoft.graph.openIdConnectProvider"
     "name": "Login with the Contoso identity provider",
@@ -151,6 +157,8 @@ Content-Type: application/json
 ```
 
 #### Response
+
+The following is an example of the response.
 **Note:** The response object shown here might be shortened for readability.
 <!-- {
   "blockType": "response",

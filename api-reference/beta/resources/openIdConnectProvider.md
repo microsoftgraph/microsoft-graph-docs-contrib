@@ -1,6 +1,6 @@
 ---
 title: "openIdConnectProvider resource type"
-description: "Represents OpenIDConnect identity providers in an Azure Active Directory (Azure AD) B2C tenant."
+description: "Represents OpenIDConnect identity providers in an Azure Active Directory B2C tenant."
 localization_priority: Normal
 doc_type: resourcePageType
 ms.prod: "microsoft-identity-platform"
@@ -13,23 +13,11 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Represents OpenID Connect identity providers in an Azure Active Directory (Azure AD) B2C tenant. 
+Represents OpenID Connect identity providers in an Azure Active Directory B2C tenant. 
 
 Configuring an OpenID Connect provider in B2C tenant enables users to sign up and sign in using their custom identity provider in an application.
 
 Inherits from [identityProvider](../resources/identityprovider.md).
-
-## Methods
-
-| Method       | Return Type  |Description|
-|:---------------|:--------|:----------|
-|[List available identityProvider types](../api/identityprovider-availableprovidertypes.md)||List all identityProviders available in a tenant.|
-|[List configured identityProviders](../api/identityprovider-list.md)|identityProvider collection|List all identityProviders configured in a tenant.|
-|[Create identityProvider](../api/identityprovider-post-identityproviders.md)|identityProvider|Create a new identityProvider.|
-|[Get identityProvider](../api/identityprovider-get.md) |identityProvider|Read properties of an existing identityProvider.|
-|[Update identityProvider](../api/identityprovider-update.md)|None|Update an existing identityProvider.|
-|[Delete identityProvider](../api/identityprovider-delete.md)|None|Delete an existing identityProvider.|
-
 
 ## Properties
 
