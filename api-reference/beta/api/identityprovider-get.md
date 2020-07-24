@@ -120,7 +120,7 @@ HTTP/1.1 200 OK
 Content-type: application/json
 
 {
-  "@odata.type": "#microsoft.graph.openIdConnectProvider",
+  "@odata.type": "microsoft.graph.openIdConnectProvider",
   "id": "OIDC-V1-MyTest-085a8a0c-58cb-4b6d-8e07-1328ea404e1a",
   "name": "Login with the Contoso identity provider",
   "type": "OpenIDConnect",
@@ -133,7 +133,7 @@ Content-type: application/json
       "email": "myEmail",
       "displayName": "myDisplayName"
   },
-  "domainHint": "mycustomoidc"
+  "domainHint": "mycustomoidc",
   "metadataUrl": "https://mycustomoidc.com/.well-known/openid-configuration",
   "responseMode": "form_post",
   "responseType": "code",
