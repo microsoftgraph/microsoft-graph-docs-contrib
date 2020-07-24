@@ -2,9 +2,8 @@
 title: "List groups"
 description: "Get the groups from the groups navigation property."
 author: mohitpcad
-ms.author: mopathak
 localization_priority: Normal
-ms.prod: "sharepoint-taxonomy"
+ms.prod: "Sharepoint"
 doc_type: apiPageType
 ---
 
