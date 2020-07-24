@@ -1,9 +1,8 @@
 ---
 title: "List children"
 description: "Get the terms from the children navigation property."
-author: mpathak123
-ms.author: mopathak
-ms.prod: "sharepoint-taxonomy"
+author: mohitpcad
+ms.prod: "Sharepoint"
 localization_priority: Normal
 doc_type: apiPageType
 ---
