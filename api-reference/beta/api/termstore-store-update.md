@@ -2,9 +2,8 @@
 title: "Update store"
 description: "Update the properties of a store object."
 author: mohitpcad
-ms.author: mopathak
 localization_priority: Normal
-ms.prod: "sharepoint-taxonomy"
+ms.prod: "Sharepoint"
 doc_type: apiPageType
 ---
 
