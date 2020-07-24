@@ -2,9 +2,8 @@
 title: "term resource type"
 description: "Defines a term entity in the termStore"
 author: mohitpcad
-ms.author: mopathak
 localization_priority: Normal
-ms.prod: "sharepoint-taxonomy"
+ms.prod: "Sharepoint"
 doc_type: resourcePageType
 ---
 
