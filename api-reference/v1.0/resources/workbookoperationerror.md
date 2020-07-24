@@ -35,7 +35,7 @@ The following is a JSON representation of the resource.
 ```json
 {
   "code": "String",
-  "message": "String"
+  "message": "String",
   "innererror": { "@odata.type": "odata.error" }
 }
 ```
