@@ -18,6 +18,27 @@ The **store** resource represents the term-store for taxonomy.
 
 Inherits from [entity](../resources/entity.md).
 
+## Methods
+|Method|Return type|Description
+|:---|:---|:---
+|[Get store](../api/termstore-store-get.md) | [store](../resources/termstore-store.md) | Read the properties and relationships of a [store](../resources/termstore-store.md) object.
+|[Update store](../api/termstore-store-update.md) | [store](../resources/termstore-store.md) | Update the properties of a [store](../resources/termstore-store.md) object.
+|[List groups](../api/termstore-store-list-groups.md)|[group](../resources/termstore-group.md) collection|Get the groups from the groups navigation property.|
+
+## Properties
+|Property|Type|Description
+|:---|:---|:---
+|defaultLanguageTag | String | Default language of the termStore
+|id|String | Unique identifier of termStore. Read-Only
+|languageTags | String collection | List of languages of termStore
+
+## Relationships
+|Relationship|Type|Description
+|:---|:---|:---
+|groups |[group](../resources/termstore-group.md) collection | Collection of all groups available in the termStore
+|sets | [set](../resources/termstore-set.md) collection | Collection of all sets available in the termStore
+
+
 ## JSON representation
 The following is a JSON representation of the resource.
 <!-- {
@@ -41,27 +62,6 @@ The following is a JSON representation of the resource.
   "sets" : [{"oData.type" : "microsoft.graph.termStore.set"}]
 }
 ```
-
-## Methods
-|Method|Return type|Description
-|:---|:---|:---
-|[Get store](../api/termstore-store-get.md) | [store](../resources/termstore-store.md) | Read the properties and relationships of a [store](../resources/termstore-store.md) object.
-|[Update store](../api/termstore-store-update.md) | [store](../resources/termstore-store.md) | Update the properties of a [store](../resources/termstore-store.md) object.
-|[List groups](../api/termstore-store-list-groups.md)|[group](../resources/termstore-group.md) collection|Get the groups from the groups navigation property.|
-
-## Properties
-|Property|Type|Description
-|:---|:---|:---
-|defaultLanguageTag | String | Default language of the termStore
-|id|String | Unique identifier of termStore. Read-Only
-|languageTags | String collection | List of languages of termStore
-
-## Relationships
-|Relationship|Type|Description
-|:---|:---|:---
-|groups |[group](../resources/termstore-group.md) collection | Collection of all groups available in the termStore
-|sets | [set](../resources/termstore-set.md) collection | Collection of all sets available in the termStore
-
 
 <!--
 {
