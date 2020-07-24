@@ -1,6 +1,6 @@
 ---
 title: "Delete set"
-description: "Deletes a set object."
+description: "Delete a set object."
 author: mohitpcad
 localization_priority: Normal
 ms.prod: "Sharepoint"
@@ -12,7 +12,7 @@ Namespace: microsoft.graph.termStore
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Deletes a [set](../resources/termstore-set.md) object.
+Delete a [set](../resources/termstore-set.md) object.
 
 ## Permissions
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
@@ -21,7 +21,7 @@ One of the following permissions is required to call this API. To learn more, in
 |:---|:---|
 |Delegated (work or school account) |Sites.Read.All and TermStore.ReadWrite.All |
 |Delegated (personal Microsoft account) | Not supported.    |
-|Application | Not supported |
+|Application | Not supported. |
 
 
 ## HTTP request
@@ -60,7 +60,7 @@ DELETE https://graph.microsoft.com/beta/termStore/sets/{setId}
 
 
 ### Response
-**Note:** The response object shown here might be shortened for readability.
+
 <!-- {
   "blockType": "response",
   "truncated": true
