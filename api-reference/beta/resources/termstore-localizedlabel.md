@@ -2,9 +2,8 @@
 title: "localizedLabel resource type"
 description: "Describes the facet for labels of terms in the termStore"
 author: mohitpcad
-ms.author: mopathak
 localization_priority: Normal
-ms.prod: "sharepoint-taxonomy"
+ms.prod: "Sharepoint"
 doc_type: resourcePageType
 ---
 
