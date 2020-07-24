@@ -23,8 +23,8 @@ Inherits from [identityProvider](../resources/identityprovider.md).
 
 |Property|Type|Required|Read only|Description|
 |:---------------|:--------|:--------|:--------|:----------|
-|clientId|String|Yes(in some cases; see description)|No|The client ID for the application obtained when registering the application with the identity provider. Inherited from [identityProvider](../resources/identityprovider.md)|
-|clientSecret|String|Yes||The client secret for the application obtained when registering the application with the identity provider. The clientSecret has a dependency on responseType. In the case of responseType = code, a secret is required for the auth code exchange, but in the case of responseType = id_token it is not required because there is no code exchange, the id_token is returned directly from the authorization response.This is write-only. A read operation will return "\*\*\*\*". Inherited from [identityProvider](../resources/identityprovider.md)|
+|clientId|String|Yes|No|The client ID for the application obtained when registering the application with the identity provider. Inherited from [identityProvider](../resources/identityprovider.md)|
+|clientSecret|String|Yes(in some cases; see description)|No|The client secret for the application obtained when registering the application with the identity provider. The clientSecret has a dependency on responseType. In the case of responseType = code, a secret is required for the auth code exchange, but in the case of responseType = id_token it is not required because there is no code exchange, the id_token is returned directly from the authorization response.This is write-only. A read operation will return "\*\*\*\*". Inherited from [identityProvider](../resources/identityprovider.md)|
 |id|String|Yes|Yes (after creation)|The ID of the identity provider.|
 |name|String|Yes|Yes (after creation)|The display name of the identity provider.|
 |type|String|Yes|Yes (after creation)|The identity provider type. It must be `OpenIDConnect`
