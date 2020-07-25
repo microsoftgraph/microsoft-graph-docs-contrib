@@ -14,14 +14,13 @@ Namespace: microsoft.graph.termStore
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-The **microsoft.graph.termStore.localizedName** resource represents the localized name used in the termStore. For more info see [microsoft.graph.termStore.localizedLabel].
-It identifies a name in the localized language.
+Represents the localized name used in the term store, which identifies the name in the localized language. For more information, see [localizedLabel].
 
 ## Properties
 |Property|Type|Description|
 |:---|:---|:---|
-|languageTag|String|Language tag for the label|
-|name|String|Name in localized language|
+|languageTag|String|The language tag for the label.|
+|name|String|The name in the localized language.|
 
 ## Relationships
 None.
