@@ -1,6 +1,6 @@
 ---
 title: "set resource type"
-description: "Describes the termSet in the termStore"
+description: "Represents a set in a term store."
 author: mohitpcad
 localization_priority: Normal
 ms.prod: "Sharepoint"
@@ -13,8 +13,7 @@ Namespace: microsoft.graph.termStore
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-The **set** resource represents the set used in the [microsoft.graph.termStore.store].
-
+Represents the set used in a term [store].
 
 Inherits from [entity](../resources/entity.md).
 
@@ -33,18 +32,18 @@ Inherits from [entity](../resources/entity.md).
 |Property|Type|Description|
 |:---|:---|:---|
 |createdDateTime|DateTimeOffset|Date and time of set creation. Read-only.|
-|description|String|Description giving details on the term usage|
-|id|String|Unique identifier of set. Read-only.|
-|localizedNames|[localizedName](../resources/termstore-localizedname.md) collection|Name of set for each languageTag|
-|properties|[keyValue](../resources/keyvalue.md) collection|Custom properties for set|
+|description|String|Description giving details on the term usage.|
+|id|String|Unique identifier. Read-only.|
+|localizedNames|[localizedName](../resources/termstore-localizedname.md) collection|Name of the set for each languageTag.|
+|properties|[keyValue](../resources/keyvalue.md) collection|Custom properties for the set.|
 
 ## Relationships
 |Relationship|Type|Description|
 |:---|:---|:---|
-|children|[term](../resources/termstore-term.md) collection|Children terms of termSet|
-|parentGroup|[group](../resources/termstore-group.md)|Group containing the particular set|
-|relations|[relation](../resources/termstore-relation.md) collection|To indicate which terms have been pinned or reused directly under the termSet|
-|terms|[term](../resources/termstore-term.md) collection|All the terms under the set|
+|children|[term](../resources/termstore-term.md) collection|Children terms of term set.|
+|parentGroup|[group](../resources/termstore-group.md)|The parent group that contains the set.|
+|relations|[relation](../resources/termstore-relation.md) collection|Indicates which terms have been pinned or reused directly under the term set.|
+|terms|[term](../resources/termstore-term.md) collection|All the terms under the set.|
 
 ## JSON representation
 The following is a JSON representation of the resource.
