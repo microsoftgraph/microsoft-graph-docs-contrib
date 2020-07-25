@@ -1,6 +1,6 @@
 ---
 title: "term resource type"
-description: "Defines a term entity in the termStore"
+description: "Defines a term entity in a term store."
 author: mohitpcad
 localization_priority: Normal
 ms.prod: "Sharepoint"
@@ -13,8 +13,7 @@ Namespace: microsoft.graph.termStore
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-The **term** resource represents the term used in the [store](../resources/termstore-store.md).
-
+Represents a term used in a term [store](../resources/termstore-store.md).
 
 Inherits from [entity](../resources/entity.md).
 
@@ -25,9 +24,9 @@ Inherits from [entity](../resources/entity.md).
 |[Create term](../api/termstore-term-create.md)|[term](../resources/termstore-term.md)|Create a new [term](../resources/termstore-term.md) object.|
 |[Get term](../api/termstore-term-get.md)|[term](../resources/termstore-term.md)|Read the properties and relationships of a [term](../resources/termstore-term.md) object.|
 |[Update term](../api/termstore-term-update.md)|[term](../resources/termstore-term.md)|Update the properties of a [term](../resources/termstore-term.md) object.|
-|[Delete term](../api/termstore-term-delete.md)|None|Deletes a [term](../resources/termstore-term.md) object.|
+|[Delete term](../api/termstore-term-delete.md)|None|Delete a [term](../resources/termstore-term.md) object.|
 |[List relations](../api/termstore-term-list-relations.md)|[relation](../resources/termstore-relation.md) collection|Get the relations from the relations navigation property.|
-|[Create relations](../api/termstore-relation-create.md)|[relation](../resources/termstore-relation.md)|Create a new relations object.|
+|[Create relation](../api/termstore-relation-create.md)|[relation](../resources/termstore-relation.md)|Create a new relations object.|
 
 ## Properties
 |Property|Type|Description|
@@ -35,7 +34,7 @@ Inherits from [entity](../resources/entity.md).
 |createdDateTime|DateTimeOffset|Date and time of term creation. Read-only|
 |descriptions|[localizedDescription](../resources/termstore-localizeddescription.md) collection|Description about term that is dependent on the languageTag|
 |id|String|Unique identifier of term. Read-Only|
-|labels|[localizedLabel](../resources/termstore-localizedlabel.md) collection||Label meta-data for a term|
+|labels|[localizedLabel](../resources/termstore-localizedlabel.md) collection||Label metadata for a term|
 |lastModifiedDateTime|DateTimeOffset|Last date and time of term modification. Read-only|
 |properties|[keyValue](../resources/keyvalue.md) collection|Collection of properties on the term|
 
