@@ -13,7 +13,7 @@ Namespace: microsoft.graph.termStore
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-The **store** resource represents the term-store for taxonomy.
+Represents a taxonomy term store.
 
 
 Inherits from [entity](../resources/entity.md).
@@ -28,15 +28,15 @@ Inherits from [entity](../resources/entity.md).
 ## Properties
 |Property|Type|Description
 |:---|:---|:---
-|defaultLanguageTag | String | Default language of the termStore
-|id|String | Unique identifier of termStore. Read-Only
-|languageTags | String collection | List of languages of termStore
+|defaultLanguageTag | String | Default language of the term store.
+|id|String | Unique identifier of the term store. Read-only.
+|languageTags | String collection | List of languages for the term store.
 
 ## Relationships
 |Relationship|Type|Description
 |:---|:---|:---
-|groups |[group](../resources/termstore-group.md) collection | Collection of all groups available in the termStore
-|sets | [set](../resources/termstore-set.md) collection | Collection of all sets available in the termStore
+|groups |[group](../resources/termstore-group.md) collection | Collection of all groups available in the term store.
+|sets | [set](../resources/termstore-set.md) collection | Collection of all sets available in the term store.
 
 
 ## JSON representation
