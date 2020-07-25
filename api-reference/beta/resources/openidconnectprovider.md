@@ -52,6 +52,7 @@ The following is a JSON representation of the resource.
   "clientId": "String",
   "clientSecret": "String",
   "claimsMapping": {
+      "@odata.type": "#microsoft.graph.claimsMapping"
       "userId": "String",
       "givenName": "String",
       "surname": "String",
