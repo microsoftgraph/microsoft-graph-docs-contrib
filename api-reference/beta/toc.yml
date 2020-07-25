@@ -9660,14 +9660,14 @@ items:
           items:
           - name: Overview
             href: resources/authenticationmethods-overview.md
-            - name: Authentication method
+          - name: Authentication method
             href: resources/authenticationmethod.md
             items:
             - name: List
               href: api/authentication-list-methods.md
             - name: Get
               href: api/authenticationmethod-get.md
-            - name: Password
+          - name: Password
             href: resources/passwordauthenticationmethod.md
             items:
             - name: List
