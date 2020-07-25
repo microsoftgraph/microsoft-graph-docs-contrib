@@ -3877,6 +3877,8 @@ items:
             href: api/oauth2permissiongrant-update.md
           - name: Delete
             href: api/oauth2permissiongrant-delete.md
+          - name: Get delta
+            href: api/oauth2permissiongrant-delta.md
         - name: Identity protection
           href: resources/identityprotectionroot.md
           items:
