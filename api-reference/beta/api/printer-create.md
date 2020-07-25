@@ -59,6 +59,8 @@ Making a GET request to the linked URL can be used to get the status of an ongoi
 ### Request
 The following is an example of the request. For help creating the required Certificate Signing Request (CSR), see the [CSR generation code sample](https://docs.microsoft.com/universal-print/hardware/universal-print-oem-certificate-signing-request).
 
+
+# [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "create_printer"
@@ -81,6 +83,12 @@ Content-length: 319
   "connectorId": null
 }
 ```
+# [JavaScript](#tab/javascript)
+[!INCLUDE [sample-code](../includes/snippets/javascript/create-printer-javascript-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+---
+
 
 ### Response
 The following is an example of the response.
