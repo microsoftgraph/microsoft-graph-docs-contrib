@@ -1,6 +1,6 @@
 ---
 title: "localizedLabel resource type"
-description: "Describes the facet for labels of terms in the termStore"
+description: "Describes the facet for labels of terms in the term store."
 author: mohitpcad
 localization_priority: Normal
 ms.prod: "Sharepoint"
@@ -13,16 +13,16 @@ Namespace: microsoft.graph.termStore
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-The **microsoft.graph.termStore.localizedLabel** resource represents the term-label of a [microsoft.graph.termStore.term] used in the [microsoft.graph.termStore.store].
+Represents the label for a [term] in the term [store].
 
-Identifies the labels associated with a given term. Inherits from [microsoft.graph.termStore.localizedName].
+Identifies the labels associated with a given term. Inherits from [localizedName].
 
 ## Properties
 |Property|Type|Description|
 |:---|:---|:---|
-|isDefault|Boolean|Whether label is default label or not|
-|languageTag|String|Language tag for the label|
-|name|String|Name of the label|
+|isDefault|Boolean|Indicates whether the label is the default label.|
+|languageTag|String|The anguage tag for the label.|
+|name|String|The name of the label.|
 
 ## Relationships
 None.
