@@ -22,7 +22,7 @@ GA of the following properties for the [group](/graph/api/resources/group?view=g
 
 ### Identity and access
 - Remove a user as a registered owner or user of a [device](/graph/api/resources/device).
-- Track changes to newly created, updated, or deleted local representation of applications (represented by [servicePrincipals](/graph/api/resources/serviceprincipal) resources) and delegated permissions grants (represented by [oauth2permissiongrant](/graph/api/resources/oauth2permissiongrant) resources) without performing a full read of the entire resource collection.
+- Track changes to newly created, updated, or deleted local representation of applications (represented by [servicePrincipals](/graph/api/resources/serviceprincipal) resources) and delegated permissions grants (represented by [oAuth2PermissionGrant](/graph/api/resources/oauth2permissiongrant) resources) without performing a full read of the entire resource collection.
 - GA of the [policy to enforce security defaults](/graph/api/resources/identitysecuritydefaultsenforcementpolicy) that protect organizations against common attacks.
 
 ### Identity and access | Identity and sign-in
