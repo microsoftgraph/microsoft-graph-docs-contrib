@@ -59,11 +59,11 @@ The current version of Microsoft Graph is v1.0. Exposed under `https://graph.mic
 ## Preview status
 A feature or API is labelled as "(preview)" to indicate its behavior is _unique_ in the beta endpoint. 
 
-The behavior of most features and APIs in the v1.0 version is in parity with the beta version. "preview" qualifies a minority of features and APIs that are in one of the following two cases: 
+The behavior of most features and APIs in the v1.0 version is in parity with the beta version. "preview" qualifies a minority of features and APIs in one of the following two cases: 
 - Available in only beta
 - Available in beta differently than in v1
 
-Like any API in the beta endpoint, APIs marked in the documentation as "(preview)" may experience breaking changes without notice. Do not access APIs from the beta endpoint in production apps.
+Like any other API in the beta endpoint, APIs marked in the documentation as "(preview)" may experience breaking changes without notice. Do not access APIs from the beta endpoint in production apps.
 
 
 ### Deprecated and unsupported versions
