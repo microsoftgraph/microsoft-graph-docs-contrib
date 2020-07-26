@@ -32,12 +32,12 @@ One of the following permissions is required to call this API. To learn more, in
 }
 -->
 ``` http
-GET /identityGovernance/entitlementManagement/connectedOrganizations/{connectedOrganizationId}
+GET /identityGovernance/entitlementManagement/connectedOrganizations/{id}
 ```
 
 ## Optional query parameters
 
-This method supports some of the OData query parameters to help customize the response. For general information, see [OData query parameters](/graph/query-parameters).
+This method supports some of the OData query parameters to help customize the response. For example, to retrieve only the identity sources, add `$select=identitySources`. For general information, see [OData query parameters](/graph/query-parameters).
 
 ## Request headers
 
@@ -62,7 +62,7 @@ If successful, this method returns a `200 OK` response code and a [connectedOrga
 }
 -->
 ``` http
-GET https://graph.microsoft.com/beta/identityGovernance/entitlementManagement/connectedOrganizations/{connectedOrganizationId}
+GET https://graph.microsoft.com/beta/identityGovernance/entitlementManagement/connectedOrganizations/{id}
 ```
 
 ### Response
