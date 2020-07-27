@@ -48,9 +48,9 @@ The following table shows the properties that can be edited for the [set](../res
 
 |Property|Type|Description|
 |:---|:---|:---|
-|localizedNames|[localizedName](../resources/termstore-localizedname.md) collection|Name of the set|
+|localizedNames|[microsoft.graph.termstore.localizedName](../resources/termstore-localizedname.md) collection|Name of the set|
 |description|String|Description of the set|
-|properties|[keyValue](../resources/keyvalue.md) collection|properties of a set|
+|properties|[microsoft.graph.keyValue](../resources/keyvalue.md) collection|properties of a set|
 
 
 
