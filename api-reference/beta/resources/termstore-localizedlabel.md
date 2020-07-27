@@ -13,7 +13,7 @@ Namespace: microsoft.graph.termStore
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Represents the label for a [microsoft.graph.termstore.term] in the term [microsoft.graph.termstore.store].
+Represents the label for a [microsoft.graph.termstore.term] in the termstore [microsoft.graph.termstore.store].
 
 Identifies the labels associated with a given term.
 
