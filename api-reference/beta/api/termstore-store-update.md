@@ -12,7 +12,7 @@ Namespace: microsoft.graph.termStore
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Update the properties of a [store](../resources/termstore-store.md) object.
+Update the properties of a [microsoft.graph.termstore.store](../resources/termstore-store.md) object.
 
 ## Permissions
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
@@ -21,7 +21,7 @@ One of the following permissions is required to call this API. To learn more, in
 |:---|:---|
 |Delegated (work or school account) | Sites.Read.All and TermStore.Read.All, Sites.Read.All and TermStore.ReadWrite.All |
 |Delegated (personal Microsoft account) | Not supported.    |
-|Application | Not supported |
+|Application | Not supported. |
 
 ## HTTP request
 
@@ -40,20 +40,20 @@ PATCH /termStore
 |Content-Type|application/json. Required.|
 
 ## Request body
-In the request body, supply a JSON representation of the [store](../resources/termstore-store.md) object.
+In the request body, supply a JSON representation of the [microsoft.graph.termstore.store](../resources/termstore-store.md) object.
 
-The following table shows the properties that can be edited for the [store](../resources/termstore-store.md).
+The following table shows the properties that can be edited for the [microsoft.graph.termstore.store](../resources/termstore-store.md).
 
 |Property|Type|Description|
 |:---|:---|:---|
-|defaultLanguageTag|String|Default language of the [store](../resources/termstore-store.md)|
-|languageTags|String collection|Available languages in the [store](../resources/termstore-store.md)|
+|defaultLanguageTag|String|Default language of the [microsoft.graph.termstore.store](../resources/termstore-store.md)|
+|languageTags|String collection|Available languages in the [microsoft.graph.termstore.store](../resources/termstore-store.md)|
 
 
 
 ## Response
 
-If successful, this method returns a `200 OK` response code and an updated [store](../resources/termstore-store.md) object in the response body.
+If successful, this method returns a `200 OK` response code and an updated [microsoft.graph.termstore.store](../resources/termstore-store.md) object in the response body.
 
 ## Examples
 
