@@ -12,7 +12,7 @@ Namespace: microsoft.graph.termStore
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Create a new [relation](../resources/termstore-relation.md) object. These are used to create pinned and resued relations between terms. When creating a pinned/reused term between term and termSet then fromTerm in the post body must be null.
+Create a new [microsoft.graph.termstore.relation](../resources/termstore-relation.md) object. These are used to create pinned and resued relations between terms. When creating a pinned/reused term between term and termSet then fromTerm in the post body must be null.
 
 ## Permissions
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
@@ -21,7 +21,7 @@ One of the following permissions is required to call this API. To learn more, in
 |:---|:---|
 |Delegated (work or school account) |Sites.Read.All and TermStore.ReadWrite.All |
 |Delegated (personal Microsoft account) | Not supported.    |
-|Application | Not supported |
+|Application | Not supported. |
 
 
 ## HTTP request
@@ -41,21 +41,21 @@ POST /termStore/sets/{setId}/terms/{termId}/relations
 |Content-Type|application/json. Required.|
 
 ## Request body
-In the request body, supply a JSON representation of the [relation](../resources/termstore-relation.md) object.
+In the request body, supply a JSON representation of the [mcirosoft.graph.termstore.relation](../resources/termstore-relation.md) object.
 
-The following table shows the properties that are required when you create the [relation](../resources/termstore-relation.md).
+The following table shows the properties that are required when you create the [microsoft.graph.termstore.relation](../resources/termstore-relation.md).
 
 |Property|Type|Description|
 |:---|:---|:---|
 |relationship|relationType|Type of relation to be created. Possible values are: `pin`, `reuse`.|
-|set| termstore-set| The set where the relationship needs to be created.
-|fromTerm| termstore-term | The term with which the relationship needs to be created.
+|set| [microsoft.graph.termstore.set](../resources/termstore-set.md)| The set where the relationship needs to be created.
+|fromTerm| [microsoft.graph.termstore.term](../resources/termstore-term.md) | The term with which the relationship needs to be created.
 
 
 
 ## Response
 
-If successful, this method returns a `201 Created` response code and a [relation](../resources/termstore-relation.md) object in the response body.
+If successful, this method returns a `201 Created` response code and a [microsoft.graph.termstore.relation](../resources/termstore-relation.md) object in the response body.
 
 ## Examples
 
