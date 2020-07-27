@@ -26,7 +26,7 @@ Inherits from [entity](../resources/entity.md).
 |[Update term](../api/termstore-term-update.md)|[term](../resources/termstore-term.md)|Update the properties of a [term](../resources/termstore-term.md) object.|
 |[Delete term](../api/termstore-term-delete.md)|None|Delete a [term](../resources/termstore-term.md) object.|
 |[List relations](../api/termstore-term-list-relations.md)|[relation](../resources/termstore-relation.md) collection|Get the relations from the relations navigation property.|
-|[Create relation](../api/termstore-relation-create.md)|[relation](../resources/termstore-relation.md)|Create a new relations object.|
+|[Create relation](../api/termstore-relation-post.md)|[relation](../resources/termstore-relation.md)|Create a new relations object.|
 
 ## Properties
 |Property|Type|Description|
