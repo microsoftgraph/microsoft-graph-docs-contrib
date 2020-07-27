@@ -12,7 +12,7 @@ Namespace: microsoft.graph.termStore
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Get the relations from the relations navigation property.
+Get the different [microsoft.graph.termstore.relation] of a [microsoft.graph.termstore.term] or [microsoft.graph.termstore.set] from the relations navigation property.
 
 ## Permissions
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
@@ -21,7 +21,7 @@ One of the following permissions is required to call this API. To learn more, in
 |:---|:---|
 |Delegated (work or school account) | Sites.Read.All and TermStore.Read.All, Sites.Read.All and TermStore.ReadWrite.All |
 |Delegated (personal Microsoft account) | Not supported.    |
-|Application | Not supported |
+|Application | Not supported. |
 
 
 ## HTTP request
@@ -48,7 +48,7 @@ Do not supply a request body for this method.
 
 ## Response
 
-If successful, this method returns a `200 OK` response code and a collection of [relation](../resources/termstore-relation.md) objects in the response body.
+If successful, this method returns a `200 OK` response code and a collection of [microsoft.graph.termstore.relation](../resources/termstore-relation.md) objects in the response body.
 
 ## Examples
 
