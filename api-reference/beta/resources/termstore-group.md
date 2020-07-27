@@ -33,9 +33,9 @@ Inherits from [entity](../resources/entity.md).
 |:---------------------|:-------------------|:------------------------------------
 | createdDateTime      | DateTimeOffset     | Date and time of group creation. Read-only.
 | description          | string             | Description giving details on the term usage.
-| id                   | string             | Unique identifier of group. Read-Only
-| displayName          | string             | Name of group
-| scope                | enum               | Returns type of group. 
+| id                   | string             | Unique identifier of group. Read-Only.
+| displayName          | string             | Name of group.
+| scope                | string              | Returns type of group. Possible values are 'global', 'system' and 'siteCollection'.
 
 ## Relationships
 | Relationship       | Type                        | Description
