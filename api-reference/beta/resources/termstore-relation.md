@@ -13,7 +13,7 @@ Namespace: microsoft.graph.termStore
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Represents the relationship between [terms] in a term store. Currently two types of relationships are supported: pin and reuse. 
+Represents the relationship between [terms](../resources/termstore-term.md) in a term store. Currently two types of relationships are supported: pin and reuse. 
 
 In a pin relationship, a term can be pinned under a different term in a different term set. In a pinned relationship, new children to the term can only be added in the term set in which the term was created. Any change in the hierarchy under the term is reflected across the term sets in which the term was pinned. 
 
@@ -32,7 +32,7 @@ Inherits from [entity](../resources/entity.md).
 |Property|Type|Description|
 |:---|:---|:---|
 |id|String|The ID of the relation.|
-|relationship|relationType|The type of relation. Possible values are: `pin`, `reuse`.|
+|relationship|enum|The type of relation. Possible values are: `pin`, `reuse`.|
 
 ## Relationships
 |Relationship|Type|Description|
