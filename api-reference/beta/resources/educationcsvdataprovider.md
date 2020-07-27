@@ -24,6 +24,7 @@ Derived from [educationSynchronizationDataProvider].
 | customizations | [educationSynchronizationCustomizations] | Optional customizations to be applied to the synchronization profile. |
 
 [educationsynchronizationdataprovider]: educationsynchronizationdataprovider.md
+[educationsynchronizationcustomizations]: educationsynchronizationcustomizations.md
 
 ## JSON representation
 
