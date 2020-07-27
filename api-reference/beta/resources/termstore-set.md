@@ -26,7 +26,7 @@ Inherits from [entity](../resources/entity.md).
 |[Delete set](../api/termstore-set-delete.md)|None|Deletes a [microsoft.graph.termstore.set](../resources/termstore-set.md) object.|
 |[Create term](../api/termstore-term-create.md)|[microsoft.graph.termstore.term](../resources/termstore-term.md)|Create a new [microsoft.graph.termstore.term] object.|
 |[Get term](../api/termstore-term-get.md)|[microsoft.graph.termstore.term](../resources/termstore-term.md)|Read the properties and relationships of a [microsoft.graph.termstore.term](../resources/termstore-term.md) object.|
-|[List sets](../api/termstore-group-list-sets.md])|collection [microsoft.graph.termstore.set] | Returns list of sets contained within a [microsoft.graph.termstore.group]
+|[List sets](../api/termstore-group-list-sets.md])|collection [microsoft.graph.termstore.set] | Returns list of sets contained within a [microsoft.graph.termstore.group] |
 
 ## Properties
 |Property|Type|Description|
@@ -40,10 +40,10 @@ Inherits from [entity](../resources/entity.md).
 ## Relationships
 |Relationship|Type|Description|
 |:---|:---|:---|
-|children|[term](../resources/termstore-term.md) collection|Children terms of term set.|
-|parentGroup|[group](../resources/termstore-group.md)|The parent group that contains the set.|
-|relations|[relation](../resources/termstore-relation.md) collection|Indicates which terms have been pinned or reused directly under the term set.|
-|terms|[term](../resources/termstore-term.md) collection|All the terms under the set.|
+|children|[microsoft.graph.termstore.term](../resources/termstore-term.md) collection|Children terms of term set.|
+|parentGroup|[microsoft.graph.termstore.group](../resources/termstore-group.md)|The parent group that contains the set.|
+|relations|[microsoft.graph.termstore.relation](../resources/termstore-relation.md) collection|Indicates which terms have been pinned or reused directly under the term set.|
+|terms|[microsoft.graph.termstore.term](../resources/termstore-term.md) collection|All the terms under the set.|
 
 ## JSON representation
 The following is a JSON representation of the resource.
