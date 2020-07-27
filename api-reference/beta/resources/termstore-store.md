@@ -21,9 +21,9 @@ Inherits from [entity](../resources/entity.md).
 ## Methods
 |Method|Return type|Description
 |:---|:---|:---
-|[Get store](../api/termstore-store-get.md) | [store](../resources/termstore-store.md) | Read the properties and relationships of a [store](../resources/termstore-store.md) object.
-|[Update store](../api/termstore-store-update.md) | [store](../resources/termstore-store.md) | Update the properties of a [store](../resources/termstore-store.md) object.
-|[List groups](../api/termstore-store-list-groups.md)|[group](../resources/termstore-group.md) collection|Get the groups from the groups navigation property.|
+|[Get store](../api/termstore-store-get.md) | [microsoft.graph.termstore.store](../resources/termstore-store.md) | Read the properties and relationships of a [store](../resources/termstore-store.md) object.
+|[Update store](../api/termstore-store-update.md) | [microsoft.graph.termstore.store](../resources/termstore-store.md) | Update the properties of a [store](../resources/termstore-store.md) object.
+|[List groups](../api/termstore-store-list-groups.md)|[microsoft.graph.termstore.group](../resources/termstore-group.md) collection|Get the groups from the groups navigation property.|
 
 ## Properties
 |Property|Type|Description
@@ -35,8 +35,8 @@ Inherits from [entity](../resources/entity.md).
 ## Relationships
 |Relationship|Type|Description
 |:---|:---|:---
-|groups |[group](../resources/termstore-group.md) collection | Collection of all groups available in the term store.
-|sets | [set](../resources/termstore-set.md) collection | Collection of all sets available in the term store.
+|groups |[microsoft.graph.termstore.group](../resources/termstore-group.md) collection | Collection of all groups available in the term store.
+|sets | [microsoft.graph.termstore.set](../resources/termstore-set.md) collection | Collection of all sets available in the term store.
 
 
 ## JSON representation
