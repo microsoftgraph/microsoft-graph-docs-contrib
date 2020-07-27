@@ -26,7 +26,7 @@ Inherits from [entity](../resources/entity.md).
 |[Delete set](../api/termstore-set-delete.md)|None|Deletes a [microsoft.graph.termstore.set](../resources/termstore-set.md) object.|
 |[Create term](../api/termstore-term-create.md)|[microsoft.graph.termstore.term](../resources/termstore-term.md)|Create a new [microsoft.graph.termstore.term] object.|
 |[Get term](../api/termstore-term-get.md)|[microsoft.graph.termstore.term](../resources/termstore-term.md)|Read the properties and relationships of a [microsoft.graph.termstore.term](../resources/termstore-term.md) object.|
-|[List sets](../api/termstore-group-list-sets.md])|collection [microsoft.graph.termstore.set] | Returns list of sets contained within a [microsoft.graph.termstore.group] |
+|[List sets](../api/termstore-group-list-sets.md)|collection [microsoft.graph.termstore.set] | Returns list of sets contained within a [microsoft.graph.termstore.group] |
 
 ## Properties
 |Property|Type|Description|
