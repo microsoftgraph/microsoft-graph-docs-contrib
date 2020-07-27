@@ -1,5 +1,5 @@
 ---
-title: "Delete groups"
+title: "Delete group"
 description: "Delete a group object."
 author: mohitpcad
 localization_priority: Normal
