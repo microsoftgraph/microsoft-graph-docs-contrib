@@ -23,7 +23,7 @@ Inherits from [entity](../resources/entity.md).
 |:---|:---|:---
 |[Get store](../api/termstore-store-get.md) | [microsoft.graph.termstore.store](../resources/termstore-store.md) | Read the properties and relationships of a [store](../resources/termstore-store.md) object.
 |[Update store](../api/termstore-store-update.md) | [microsoft.graph.termstore.store](../resources/termstore-store.md) | Update the properties of a [store](../resources/termstore-store.md) object.
-|[List groups](../api/termstore-store-list-groups.md)|[microsoft.graph.termstore.group](../resources/termstore-group.md) collection|Get the groups from the groups navigation property.|
+|[List groups](../api/termstore-list-groups.md)|[microsoft.graph.termstore.group](../resources/termstore-group.md) collection|Get the groups from the groups navigation property.|
 
 ## Properties
 |Property|Type|Description
