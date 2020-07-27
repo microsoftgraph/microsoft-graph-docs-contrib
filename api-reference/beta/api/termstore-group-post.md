@@ -1,5 +1,5 @@
 ---
-title: "Create groups"
+title: "Create group"
 description: "Create a new groups object."
 author: mohitpcad
 localization_priority: Normal
