@@ -1359,13 +1359,13 @@ items:
           items:
           - name: PSTN log row
             href: resources/callrecords-pstncalllogrow.md
-          - name: List
+          - name: List PSTN calls
             href: api/callrecords-callrecord-getpstncalls.md
         - name: Direct routing calls
           items:
           - name: Direct routing log row
             href: resources/callrecords-directroutinglogrow.md
-          - name: List
+          - name: List direct routing calls
             href: api/callrecords-callrecord-getdirectroutingcalls.md
     - name: Cross-device experiences
       displayName: Project Rome

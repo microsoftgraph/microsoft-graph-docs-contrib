@@ -1,19 +1,19 @@
 ---
 title: "callRecord: getDirectRoutingCalls"
-description: "Retrieve the Direct Routing call report"
+description: "Retrieve the direct routing call report"
 author: "stephenjust"
 localization_priority: Normal
 ms.prod: "cloud-communications"
 doc_type: "apiPageType"
 ---
 
-# Retrieve the Direct Routing call report
+# callRecord: getDirectRoutingCalls
 
 Namespace: microsoft.graph.callRecords
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Get log of the Direct Routing calls as a collection of [directRoutingLogRow](../resources/callrecords-directroutinglogrow.md) entries.
+Get a log of direct routing calls as a collection of [directRoutingLogRow](../resources/callrecords-directroutinglogrow.md) entries.
 
 ## Permissions
 
@@ -49,12 +49,14 @@ The following table shows the parameters that can be used with this function.
 
 |Parameter|Type|Description|
 |:---|:---|:---|
-|fromDateTime|DateTimeOffset|Start of time range to query. UTC, inclusive.<br/>Time range is based on the call start time|
-|toDateTime|DateTimeOffset|End of time range to query. UTC, inclusive|
+|fromDateTime|DateTimeOffset|Start of time range to query. UTC, inclusive.<br/>Time range is based on the call start time.|
+|toDateTime|DateTimeOffset|End of time range to query. UTC, inclusive.|
 
-## Function response
+## Response
 
-If successful, this function returns a `200 OK` response code and a collection of [directRoutingLogRow](../resources/callrecords-directroutinglogrow.md) entries in the response body. If there are more than 1000 entries in the date range, the body will also include [`@odata.NextLink` entity with URL](https://docs.microsoft.com/graph/paging) to query the next page of call entries. The last page in the range will not have the `@odata.NextLink` object.
+If successful, this function returns a `200 OK` response code and a collection of [directRoutingLogRow](../resources/callrecords-directroutinglogrow.md) entries in the response body.
+  
+If there are more than 1000 entries in the date range, the body also includes an `@odata.NextLink` with a URL to query the next page of call entries. The last page in the date range does not have `@odata.NextLink`. For more information, see [paging Microsoft Graph data in your app](/graph/paging).
 
 ## Examples
 
@@ -74,7 +76,7 @@ GET https://graph.microsoft.com/beta/communications/callRecords/getDirectRouting
 
 **Note:** The response object shown here might be shortened for readability.
 <!-- {
-  "blockType": "response",
+  "blockType": "ignored",
   "truncated": true,
   "@odata.type": "microsoft.graph.callRecords.directRoutingLogRow",
   "isCollection": true
@@ -100,8 +102,8 @@ HTTP/1.1 200 OK
             "duration": 5,
             "callType": "ByotIn",
             "successfulCall": true,
-            "callerNumber": "+37220001***",
-            "calleeNumber": "+37220001***",
+            "callerNumber": "+12345678***",
+            "calleeNumber": "+01234567***",
             "mediaPathLocation": "USWE",
             "signalingLocation": "EUNO",
             "finalSipCode": 0,
@@ -116,6 +118,6 @@ HTTP/1.1 200 OK
 
 ## See also
 
-* [Microsoft Teams Direct Routing usage report](https://docs.microsoft.com/microsoftteams/teams-analytics-and-reports/pstn-usage-report#direct-routing) in the Microsoft Teams admin center
-* [Health Dashboard for Direct Routing](https://docs.microsoft.com/MicrosoftTeams/direct-routing-health-dashboard) in the Microsoft Teams admin center
+* [Microsoft Teams direct routing usage report](https://docs.microsoft.com/microsoftteams/teams-analytics-and-reports/pstn-usage-report#direct-routing) in the Microsoft Teams admin center
+* [Health Dashboard for direct routing](https://docs.microsoft.com/MicrosoftTeams/direct-routing-health-dashboard) in the Microsoft Teams admin center
 * [PSTN call report in Microsoft Graph](callrecords-callrecord-getpstncalls.md)

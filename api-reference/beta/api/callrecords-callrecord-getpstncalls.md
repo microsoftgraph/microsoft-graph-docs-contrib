@@ -1,19 +1,19 @@
 ---
 title: "callRecord: getPstnCalls"
 description: "Retrieve the PSTN call report"
-author: "SanderSade"
+author: "stephenjust"
 localization_priority: Normal
 ms.prod: "cloud-communications"
 doc_type: "apiPageType"
 ---
 
-# Retrieve the PSTN call report
+# callRecord: getPstnCalls
 
 Namespace: microsoft.graph.callRecords
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Get log of the PSTN calls as a collection of [pstnCallLogRow](../resources/callrecords-pstncalllogrow.md) entries.
+Get log of PSTN calls as a collection of [pstnCallLogRow](../resources/callrecords-pstncalllogrow.md) entries.
 
 ## Permissions
 
@@ -49,19 +49,21 @@ The following table shows the parameters that can be used with this function.
 
 |Parameter|Type|Description|
 |:---|:---|:---|
-|fromDateTime|DateTimeOffset|Start of time range to query. UTC, inclusive.<br/>Time range is based on the call start time|
-|toDateTime|DateTimeOffset|End of time range to query. UTC, inclusive|
+|fromDateTime|DateTimeOffset|Start of time range to query. UTC, inclusive.<br/>Time range is based on the call start time.|
+|toDateTime|DateTimeOffset|End of time range to query. UTC, inclusive.|
 
-## Function response
+## Response
 
-If successful, this function returns a `200 OK` response code and a collection of [pstnCallLogRow](../resources/callrecords-pstncalllogrow.md) entries in the response body. If there are more than 1000 entries in the date range, the body will also include [`@odata.NextLink` entity with URL](https://docs.microsoft.com/graph/paging) to query the next page of call entries. The last page in the date range will not have the `@odata.NextLink` object.
+If successful, this function returns a `200 OK` response code and a collection of [pstnCallLogRow](../resources/callrecords-pstncalllogrow.md) entries in the response body.
+  
+If there are more than 1000 entries in the date range, the body also includes an `@odata.NextLink` with a URL to query the next page of call entries. The last page in the date range does not have `@odata.NextLink`. For more information, see [paging Microsoft Graph data in your app](/graph/paging).
 
 ## Examples
 
 ### Request
 
 <!-- {
-  "blockType": "request",
+  "blockType": "ignored",
   "name": "callrecord_getpstncalls"
 }
 -->
@@ -74,7 +76,7 @@ GET https://graph.microsoft.com/beta/communications/callRecords/getPstnCalls(fro
 
 **Note:** The response object shown here might be shortened for readability.
 <!-- {
-  "blockType": "response",
+  "blockType": "ignored",
   "truncated": true,
   "@odata.type": "Collection(microsoft.graph.callRecords.pstnCallLogRow)"
 }
@@ -98,11 +100,11 @@ HTTP/1.1 200 OK
             "charge": 0.00,
             "callType": "user_in",
             "currency": "USD",
-            "calleeNumber": "+1122334455",
+            "calleeNumber": "+1234567890",
             "usageCountryCode": "US",
             "tenantCountryCode": "US",
             "connectionCharge": 0.00,
-            "callerNumber": "+5544332211",
+            "callerNumber": "+0123456789",
             "destinationContext": null,
             "destinationName": "United States",
             "conferenceId": null,
@@ -116,4 +118,4 @@ HTTP/1.1 200 OK
 ## See also
 
 * [Microsoft Teams PSTN usage report](https://docs.microsoft.com/microsoftteams/teams-analytics-and-reports/pstn-usage-report)  in the Microsoft Teams admin center
-* [Direct Routing report in Microsoft Graph](callrecords-callrecord-getdirectroutingcalls.md)
+* [Direct routing report in Microsoft Graph](callrecords-callrecord-getdirectroutingcalls.md)
