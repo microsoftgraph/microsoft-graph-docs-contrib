@@ -13,7 +13,7 @@ Namespace: microsoft.graph.termStore
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Represents the localized description used to describe a term in a term [store]. For more details, see [term].
+Represents the localized description used to describe a [microsoft.graph.termstore.term] in a term [microsoft.graph.termstore.store]. For more details, see [microsoft.graph.termstore.term].
 
 
 ## Properties
