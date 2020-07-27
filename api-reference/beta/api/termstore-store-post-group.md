@@ -41,9 +41,9 @@ POST /termStore/groups
 |Content-Type|application/json. Required.|
 
 ## Request body
-In the request body, supply a JSON representation of the [group](../resources/termstore-group.md) object.
+In the request body, supply a JSON representation of the [microsoft.graph.termstore.group](../resources/termstore-group.md) object.
 
-The following table shows the properties that are required when you create the [group](../resources/termstore-group.md).
+The following table shows the properties that are required when you create the [microsoft.graph.termstore.group](../resources/termstore-group.md).
 
 |Property|Type|Description|
 |:---|:---|:---|
