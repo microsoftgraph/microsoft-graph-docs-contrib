@@ -57,12 +57,6 @@ DELETE https://graph.microsoft.com/beta/termStore/groups/{groupId}
 
 
 ### Response
-**Note:** The response object shown here might be shortened for readability.
-<!-- {
-  "blockType": "response",
-  "truncated": true
-}
--->
 ``` http
 HTTP/1.1 204 No Content
 ```
