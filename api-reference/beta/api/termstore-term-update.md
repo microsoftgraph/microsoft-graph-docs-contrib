@@ -21,7 +21,7 @@ One of the following permissions is required to call this API. To learn more, in
 |:---|:---|
 |Delegated (work or school account) | Sites.Read.All and TermStore.ReadWrite.All |
 |Delegated (personal Microsoft account) | Not supported.    |
-|Application | Not supported |
+|Application | Not supported. |
 
 
 ## HTTP request
@@ -47,9 +47,9 @@ The following table shows the properties that can be updated for a [term](../res
 
 |Property|Type|Description|
 |:---|:---|:---|
-|labels|[localizedLabel](../resources/termstore-localizedlabel.md) collection|labels of a term|
-|descriptions|[localizedDescription](../resources/termstore-localizeddescription.md) collection|description about the term|
-|properties|[keyValue](../resources/keyvalue.md) collection|properties associated with the term|
+|labels|[microsoft.graph.termstore.localizedLabel](../resources/termstore-localizedlabel.md) collection|labels of a term|
+|descriptions|[microsoft.graph.termstore.localizedDescription](../resources/termstore-localizeddescription.md) collection|description about the term|
+|properties|[microsoft.graph.keyValue](../resources/keyvalue.md) collection|properties associated with the term|
 
 
 
