@@ -34,8 +34,8 @@ Inherits from [entity](../resources/entity.md).
 |createdDateTime|DateTimeOffset|Date and time of set creation. Read-only.|
 |description|String|Description giving details on the term usage.|
 |id|String|Unique identifier. Read-only.|
-|localizedNames|[localizedName](../resources/termstore-localizedname.md) collection|Name of the set for each languageTag.|
-|properties|[keyValue](../resources/keyvalue.md) collection|Custom properties for the set.|
+|localizedNames|[microsoft.graph.termstore.localizedName](../resources/termstore-localizedname.md) collection|Name of the set for each languageTag.|
+|properties|[microsoft.graph.keyValue](../resources/keyvalue.md) collection|Custom properties for the set.|
 
 ## Relationships
 |Relationship|Type|Description|
