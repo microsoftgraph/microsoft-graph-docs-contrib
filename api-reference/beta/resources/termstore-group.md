@@ -14,7 +14,7 @@ Namespace: microsoft.graph.termStore
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 
-The **group** resource represents the group used in [termstore](../resources/termstore-store.md).
+The **group** resource represents the group used in [termStore](../resources/termstore-store.md).
 
 Inherits from [entity](../resources/entity.md).
 
@@ -23,9 +23,9 @@ Inherits from [entity](../resources/entity.md).
 
 | Method                                                   | Return type       |    Description
 |:---------------------------------------------------------|:------------------|:---------------------
-| [Create termGroup](../api/termstore-group-post.md)                     | [microsoft.graph.termStore.group] | Create a termGroup in termStore.
-| [Delete termGroup](../api/termstore-group-delete.md)                     | None |  Delete termGroup.
-| [Get termGroup](../api/termstore-store-get-group.md)                           | [microsoft.graph.termStore.group] | Retrieve data of a termGroup in termStore.
+| [Create termGroup](../api/termstore-group-post.md)                     | [microsoft.graph.termStore.group] | Create a group in termStore.
+| [Get termGroup](../api/termstore-store-get-group.md)                           | [microsoft.graph.termStore.group] | Retrieve data of a group in termStore.
+| [Delete termGroup](../api/termstore-group-delete.md)                     | None |  Delete group in termStore.
 
 ## Properties
 
@@ -40,7 +40,7 @@ Inherits from [entity](../resources/entity.md).
 ## Relationships
 | Relationship       | Type                        | Description
 |:-------------------|:----------------------------|:--------------------------
-| sets           | [microsoft.graph.termStore.set][] collection | All termSets under the termGroup
+| sets           | [microsoft.graph.termStore.set][] collection | All sets under the group in a termStore.
 
 ## JSON representation
 
