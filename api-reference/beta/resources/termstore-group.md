@@ -1,6 +1,6 @@
 ---
 author: mohitpcad
-title: TermGroup
+title: Group resource type
 doc_type: "resourcePageType"
 description: "Describes the termGroup entity in the termStore"
 localization_priority: Normal
