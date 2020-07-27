@@ -13,7 +13,7 @@ Namespace: microsoft.graph.termStore
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Represents the relationship between [terms](../resources/termstore-term.md) in a term store. Currently two types of relationships are supported: pin and reuse. 
+Represents the relationship between [terms](../resources/termstore-term.md) in a [termstore]. Currently two types of relationships are supported: pin and reuse. 
 
 In a pin relationship, a term can be pinned under a different term in a different term set. In a pinned relationship, new children to the term can only be added in the term set in which the term was created. Any change in the hierarchy under the term is reflected across the term sets in which the term was pinned. 
 
@@ -24,22 +24,22 @@ Inherits from [entity](../resources/entity.md).
 ## Methods
 |Method|Return type|Description|
 |:---|:---|:---|
-|[List relations](../api/termstore-term-list-relations.md)|[relation](../resources/termstore-relation.md) collection|Retrieve a list of **relation** objects.|
-|[Create relation](../api/termstore-relation-create.md)|[relation](../resources/termstore-relation.md)|Create a new **relation** object.|
+|[List relations](../api/termstore-term-list-relations.md)|[microsoft.graph.termstore.relation](../resources/termstore-relation.md) collection|Retrieve a list of **relation** objects.|
+|[Create relation](../api/termstore-relation-create.md)|[microsoft.graph.termstore.relation](../resources/termstore-relation.md)|Create a new **relation** object.|
 
 
 ## Properties
 |Property|Type|Description|
 |:---|:---|:---|
 |id|String|The ID of the relation.|
-|relationship|enum|The type of relation. Possible values are: `pin`, `reuse`.|
+|relationship|String|The type of relation. Possible values are: `pin`, `reuse`.|
 
 ## Relationships
 |Relationship|Type|Description|
 |:---|:---|:---|
-|fromTerm|[microsoft.graph.termStore.term](../resources/termstore-term.md)|The from term of the relation. A null value would indicate the relation is directly within the term set. |
-|set|[microsoft.graph.termStore.set](../resources/termstore-set.md)|The set in which the relation is relevant. A null value would mean the relation exists between the two terms in every set.|
-|toTerm|[microsoft.graph.termStore.term](../resources/termstore-term.md)|The to term of the relation. Cannot be a null value.|
+|fromTerm|[microsoft.graph.termStore.term](../resources/termstore-term.md)|The from [term] of the relation. The term from which the relationship is defined. A null value would indicate the relation is directly with the [set]. |
+|set|[microsoft.graph.termStore.set](../resources/termstore-set.md)|The [set] in which the relation is relevant.|
+|toTerm|[microsoft.graph.termStore.term](../resources/termstore-term.md)|The to [term] of the relation. The term to which the realtionship is defined.|
 
 ## JSON representation
 The following is a JSON representation of the resource.
@@ -55,12 +55,7 @@ The following is a JSON representation of the resource.
 {
   "@odata.type": "#microsoft.graph.termStore.relation",
   "id": "String (identifier)",
-  "relationship": "String",
-  
-  /*  relationships */
-  "fromTerm" : { "@odata.type" : "microsoft.graph.termStore.term"},
-  "toTerm" : { "@odata.type" : "microsoft.graph.termStore.term"},
-  "set" : { "@odata.type" : "microsoft.graph.termStore.set"}
+  "relationship": "String"
 }
 ```
 
@@ -68,6 +63,9 @@ The following is a JSON representation of the resource.
 [microsoft.graph.termStore.set]: termstore-set.md
 [microsoft.graph.termStore.relations]: termstore-relation.md
 [microsoft.graph.termStore.relation]: termstore-relation.md
+[termstore]: ../resources/termstore-store.md
+[term]: ../resources/termstore-term.md
+[set]: ../resources/termstore-set.md
 
 <!--
 {
