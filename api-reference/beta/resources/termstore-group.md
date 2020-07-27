@@ -14,7 +14,7 @@ Namespace: microsoft.graph.termStore
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 
-The **group** resource represents the group used in the [microsoft.graph.termStore.store].
+The **group** resource represents the group used in [termstore](../resources/termstore-store.md).
 
 Inherits from [entity](../resources/entity.md).
 
