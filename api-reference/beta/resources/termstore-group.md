@@ -62,9 +62,6 @@ The following is a JSON representation of a **group** resource.
   "scope" : "microsoft.graph.termStore.groupScope",
   "displayName": "string",  
 
-  /*  relationships  */
-  "sets" : [{"@odata.type" : "microsoft.graph.termStore.set"}]
-
 }
 ```
 
