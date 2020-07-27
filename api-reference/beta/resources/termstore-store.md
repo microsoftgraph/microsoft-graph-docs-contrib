@@ -28,9 +28,9 @@ Inherits from [entity](../resources/entity.md).
 ## Properties
 |Property|Type|Description
 |:---|:---|:---
-|defaultLanguageTag | String | Default language of the [termstore](../resources/termstore-store.md) .
-|id|String | Unique identifier of the [termstore](../resources/termstore-store.md) . Read-only.
-|languageTags | String collection | List of languages for the [termstore](../resources/termstore-store.md) .
+|defaultLanguageTag | String | Default language of the [termstore](../resources/termstore-store.md).
+|id|String | Unique identifier of the [termstore](../resources/termstore-store.md). Read-only.
+|languageTags | String collection | List of languages for the [termstore](../resources/termstore-store.md).
 
 ## Relationships
 |Relationship|Type|Description
