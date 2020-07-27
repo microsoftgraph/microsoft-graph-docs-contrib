@@ -7,7 +7,7 @@ ms.prod: "Sharepoint"
 doc_type: apiPageType
 ---
 
-# Create groups
+# Create group
 Namespace: microsoft.graph.termStore
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
