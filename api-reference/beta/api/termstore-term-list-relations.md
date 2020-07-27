@@ -84,8 +84,6 @@ Content-Type: application/json
   ]
 }
 ```
-
-**Note:** Response objects are truncated for clarity.
 All default properties will be returned from the actual call.
 
 [microsoft.graph.termStore.set]: ../resources/termstore-set.md
