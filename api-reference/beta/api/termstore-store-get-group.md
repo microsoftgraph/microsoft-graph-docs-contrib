@@ -1,5 +1,5 @@
 ---
-title: "Get groups"
+title: "Get group"
 description: "Read the properties and relationships of a group object."
 author: mohitpcad
 localization_priority: Normal
