@@ -35,8 +35,8 @@ Inherits from [entity](../resources/entity.md).
 ## Relationships
 |Relationship|Type|Description
 |:---|:---|:---
-|groups |[microsoft.graph.termstore.group](../resources/termstore-group.md) collection | Collection of all groups available in the term store.
-|sets | [microsoft.graph.termstore.set](../resources/termstore-set.md) collection | Collection of all sets available in the term store.
+|groups |[microsoft.graph.termstore.group](../resources/termstore-group.md) collection | Collection of all groups available in the [termstore].
+|sets | [microsoft.graph.termstore.set](../resources/termstore-set.md) collection | Collection of all sets available in the [termstore].
 
 
 ## JSON representation
@@ -59,6 +59,8 @@ The following is a JSON representation of the resource.
   ]  
 }
 ```
+
+[termstore]: ../resources/termstore-store.md
 
 <!--
 {
