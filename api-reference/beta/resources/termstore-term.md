@@ -32,11 +32,11 @@ Inherits from [entity](../resources/entity.md).
 |Property|Type|Description|
 |:---|:---|:---|
 |createdDateTime|DateTimeOffset|Date and time of term creation. Read-only|
-|descriptions|[localizedDescription](../resources/termstore-localizeddescription.md) collection|Description about term that is dependent on the languageTag|
+|descriptions|[microsoft.graph.termstore.localizedDescription](../resources/termstore-localizeddescription.md) collection|Description about term that is dependent on the languageTag|
 |id|String|Unique identifier of term. Read-Only|
-|labels|[localizedLabel](../resources/termstore-localizedlabel.md) collection||Label metadata for a term|
+|labels|[microsoft.graph.termstore.localizedLabel](../resources/termstore-localizedlabel.md) collection||Label metadata for a term|
 |lastModifiedDateTime|DateTimeOffset|Last date and time of term modification. Read-only|
-|properties|[keyValue](../resources/keyvalue.md) collection|Collection of properties on the term|
+|properties|[microsoft.graph.keyValue](../resources/keyvalue.md) collection|Collection of properties on the term|
 
 ## Relationships
 |Relationship|Type|Description|
