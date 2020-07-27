@@ -23,9 +23,9 @@ Inherits from [entity](../resources/entity.md).
 
 | Method                                                   | Return type       |    Description
 |:---------------------------------------------------------|:------------------|:---------------------
-| [Create termGroup](../api/termstore-group-post.md)                     | [microsoft.graph.termStore.group] | Create a [group] in [termstore].
-| [Get termGroup](../api/termstore-store-get-group.md)                           | [microsoft.graph.termStore.group] | Retrieve data of a [group] in [termstore].
-| [Delete termGroup](../api/termstore-group-delete.md)                     | None |  Delete [group] in [termstore].
+| [Create termGroup](../api/termstore-group-post.md)                     | [microsoft.graph.termStore.group] | Create a group in [termstore].
+| [Get termGroup](../api/termstore-store-get-group.md)                           | [microsoft.graph.termStore.group] | Retrieve data of a group in [termstore].
+| [Delete termGroup](../api/termstore-group-delete.md)                     | None |  Delete group in [termstore].
 
 ## Properties
 
@@ -40,7 +40,7 @@ Inherits from [entity](../resources/entity.md).
 ## Relationships
 | Relationship       | Type                        | Description
 |:-------------------|:----------------------------|:--------------------------
-| sets           | [microsoft.graph.termStore.set][] collection | All sets under the [group] in a [termstore].
+| sets           | [microsoft.graph.termStore.set][] collection | All sets under the group in a [termstore].
 
 ## JSON representation
 
