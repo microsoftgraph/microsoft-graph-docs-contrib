@@ -55,7 +55,7 @@ If successful, this method returns a `204 No Content` response code.
 }
 -->
 ``` http
-DELETE https://graph.microsoft.com/beta/termStore/groups/{groupId}/sets/{setId}/terms/{termId}
+DELETE https://graph.microsoft.com/beta/termStore/sets/{setId}/terms/{termId}
 ```
 
 
