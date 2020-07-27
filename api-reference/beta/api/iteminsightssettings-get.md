@@ -15,7 +15,7 @@ Namespace: microsoft.graph
 
 Get the properties of [itemInsightsSettings](../resources/iteminsightssettings.md) object.
 
-To learn how to customize item insights privacy for your organization, see [customize insights privacy](/graph/insights-customize-item-insights-privacy.md). 
+To learn how to customize item insights privacy for your organization, see [customize insights privacy](/graph/insights-customize-item-insights-privacy?view=graph-rest-1.0). 
 
 ## Permissions
 
