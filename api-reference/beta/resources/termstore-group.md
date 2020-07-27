@@ -61,7 +61,6 @@ The following is a JSON representation of a **group** resource.
   "description": "string",
   "scope" : "microsoft.graph.termStore.groupScope",
   "displayName": "string",  
-
 }
 ```
 
