@@ -12,7 +12,7 @@ Namespace: microsoft.graph.termStore
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Read the properties and relationships of a [group](../resources/termstore-group.md) object.
+Read the properties and relationships of a [microsoft.graph.termstore.group](../resources/termstore-group.md) object.
 
 ## Permissions
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
@@ -21,7 +21,7 @@ One of the following permissions is required to call this API. To learn more, in
 |:---|:---|
 |Delegated (work or school account) | Sites.Read.All and TermStore.Read.All, Sites.Read.All and TermStore.ReadWrite.All |
 |Delegated (personal Microsoft account) | Not supported.    |
-|Application | Not supported |
+|Application | Not supported. |
 
 
 ## HTTP request
@@ -32,7 +32,7 @@ One of the following permissions is required to call this API. To learn more, in
 -->
 
 ``` http
-GET /termStore/groups/{groupsId}
+GET /termStore/groups/{groupId}
 ```
 
 ## Request headers
@@ -45,7 +45,7 @@ Do not supply a request body for this method.
 
 ## Response
 
-If successful, this method returns a `200 OK` response code and a [group](../resources/termstore-group.md) object in the response body.
+If successful, this method returns a `200 OK` response code and a [microsoft.graph.termstore.group](../resources/termstore-group.md) object in the response body.
 
 ## Examples
 
@@ -57,7 +57,7 @@ If successful, this method returns a `200 OK` response code and a [group](../res
 -->
 
 ``` http
-GET https://graph.microsoft.com/beta/termStore/groups/{groupsId}
+GET https://graph.microsoft.com/beta/termStore/groups/{groupId}
 ```
 
 
