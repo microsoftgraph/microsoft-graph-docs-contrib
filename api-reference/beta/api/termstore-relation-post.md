@@ -62,7 +62,7 @@ If successful, this method returns a `201 Created` response code and a [microsof
 ### Request
 
 ``` http
-POST https://graph.microsoft.com/beta/termStore/sets/{setId}/terms/{termsId}/relations
+POST https://graph.microsoft.com/beta/termStore/sets/{setId}/terms/{termId}/relations
 Content-Type: application/json
 Content-length: 89
 
