@@ -24,7 +24,7 @@ Inherits from [entity](../resources/entity.md).
 | Method                                                   | Return type       |    Description
 |:---------------------------------------------------------|:------------------|:---------------------
 | [Create termGroup](../api/termstore-store-post-group.md)                     | [microsoft.graph.termStore.group] | Create a termGroup in termStore.
-| [Delete termGroup](../api/termstore-store-delete-group.md)                     | None |  Delete termGroup.
+| [Delete termGroup](../api/termstore-group-delete.md)                     | None |  Delete termGroup.
 | [Get termGroup](../api/termstore-store-get-group.md)                           | [microsoft.graph.termStore.group] | Retrieve data of a termGroup in termStore.
 
 ## Properties
