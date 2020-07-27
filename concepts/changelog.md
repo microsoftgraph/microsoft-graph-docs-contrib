@@ -11,7 +11,7 @@ This changelog covers specific API-level changes in Microsoft Graph v1.0 and bet
 
 For a summary of the value of these API changes, as well as recent tools, components, guidance, and tutorial additions, see [What's new in Microsoft Graph](whats-new-overview.md).
 
-### July 2020
+## July 2020
 
 ### Calendar
 
@@ -27,14 +27,14 @@ For a summary of the value of these API changes, as well as recent tools, compon
 | **Change type** | **Version**   | **Description**                          |
 | :-------------- | :------------ | :--------------------------------------- |
 | Removal | beta and v1.0 | Removed the erronously introduced **sequenceNumber** property from the [changeNotification](/graph/api/resources/changenotification) type.|
-| Addition | Beta | Adds [presence](/graph/api/resources/presence) to the resources supported for [change notifications](/graph/webhooks). |
+| Addition | beta | Adds [presence](/graph/api/resources/presence) to the resources supported for [change notifications](/graph/webhooks). |
 
 ### Cloud communications
 
 | **Change type** | **Version**   | **Description**                          |
 | :-------------- | :------------ | :--------------------------------------- |
 | Addition | beta | Added the [Update onlineMeeting](/graph/api/onlinemeeting-update?view=graph-rest-beta) operation for meeting updates.|
-| Addition | Beta | The [presence](/graph/api/resources/presence) resource now supports [change notifications](/graph/webhooks). |
+| Addition | beta | The [presence](/graph/api/resources/presence) resource now supports [change notifications](/graph/webhooks). |
 
 ### Devices and apps | Cloud printing
 
@@ -92,13 +92,12 @@ For a summary of the value of these API changes, as well as recent tools, compon
 | Addition | beta | Added the **settings** navigation property to the [organization](/graph/api/resources/organization?view=graph-rest-beta) entity. |
 | Addition | beta | Added the [organizationSettings](/graph/api/resources/organizationsettings?view=graph-rest-beta) entity.  |
 | Addition | beta and v1.0 | Added the following operations to [devices](/graph/api/resources/device): <br/> [Delete registered owner](/graph/api/delete-registeredowners) <br/> [Delete registered user](/graph/api/delete-registeredusers)|
-| Addition | beta and v1.0 | Added the following operations to [devices](/graph/api/resources/device): <br/> [Delete registered owner](/graph/api/device-delete-registeredowners) <br/> [Delete registered user](/graph/api/delete-registeredusers)|
 | Addition | v1.0 | Added the **assignedLabels**, **expirationDateTime**, **membershipRule**, **membershipRuleProcessingState**, **preferredLanguage**, and **theme** properties to the [group](/graph/api/resources/group?view=graph-rest-v1.0) entity. |
 | Addition | beta | Added the **infoCatalogs** property to the [group](/graph/api/resources/group?view=graph-rest-beta) entity and the [user](/graph/api/resources/user?view=graph-rest-beta) entity. |
 | Addition | beta | Added the **id** property to the [synchronizationSchema](/graph/api/resources/synchronization-synchronizationschema?view=graph-rest-beta) entity. |
 | Addition | beta | Added the [acquireAccessToken](/graph/api/synchronization-synchronization-acquireAccessToken?view=graph-rest-beta) method to the [synchronization](/graph/api/resources/synchronization-synchronization?view=graph-rest-beta) resource|
 | Addition | beta | Added the [entitlementManagementSettings](/graph/api/resources/entitlementmanagementsettings?view=graph-rest-beta) entity. |
-| Addition | v1.0 | Added the [identitySecurityDefaultsEnforcementPolicy API](/graph/api/resources/identitysecuritydefaultsenforcementpolicy?view=graph-rest-v1.0), which represents Azure Active Directory security defaults policy.|
+| Addition | v1.0 | Added the [identitySecurityDefaultsEnforcementPolicy API](/graph/api/resources/identitysecuritydefaultsenforcementpolicy?view=graph-rest-1.0), which represents Azure Active Directory security defaults policy.|
 | Addition        | v1.0        | Added [delta query](delta-query-overview.md) capability to [servicePrincipal](/graph/api/serviceprincipal-delta). |
 | Addition | beta | Added the [connectedOrganization](/graph/api/resources/connectedorganization?view=graph-rest-beta) to entitlement management.  |
 | Addition        | v1.0        | Added [delta query](delta-query-overview.md) capability for [oauth2PermissionGrant](/graph/api/oauth2Permissiongrant-delta). |
@@ -110,13 +109,13 @@ For a summary of the value of these API changes, as well as recent tools, compon
 | Addition | beta | Added the **passwordChange** grant control to the [conditionalaccessgrantcontrols](/graph/api/resources/conditionalaccessgrantcontrols?view=graph-rest-beta) entity. |
 | Addition | v1.0 | Added new entity types:<br/>[conditionalAccessPolicy](/graph/api/resources/conditionalAccessPolicy)<br/>
 | Addition | v1.0 | Added new complex types:<br/>[conditionalAccessSessionControl](/graph/api/resources/conditionalAccessSessionControl)<br/>[applicationEnforcedRestrictionsSessionControl](/graph/api/resources/applicationEnforcedRestrictionsSessionControl)<br/>[cloudAppSecuritySessionControl](/graph/api/resources/cloudAppSecuritySessionControl)<br/>[signInFrequencySessionControl](/graph/api/resources/signInFrequencySessionControl)<br/>[persistentBrowserSessionControl](/graph/api/resources/persistentBrowserSessionControl)<br/>[conditionalAccessSessionControls](/graph/api/resources/conditionalAccessSessionControls)<br/>[conditionalAccessApplications](/graph/api/resources/conditionalAccessApplications)<br/>[conditionalAccessUsers](/graph/api/resources/conditionalAccessUsers)<br/>[conditionalAccessPlatforms](/graph/api/resources/conditionalAccessPlatforms)<br/>[conditionalAccessLocations](/graph/api/resources/conditionalAccessLocations)<br/>[conditionalAccessConditionSet](/graph/api/resources/conditionalAccessConditionSet)<br/>[conditionalAccessGrantControls](/graph/api/resources/conditionalAccessGrantControls)<br/>|
-| Addition | v1.0 | Added the [namedLocation API](/graph/api/resources/namedLocation?view=graph-rest-v1.0), which represents named locations in Azure AD conditional access. |
+| Addition | v1.0 | Added the [namedLocation API](/graph/api/resources/namedLocation?view=graph-rest-1.0), which represents named locations in Azure AD conditional access. |
 
 ### People and workplace intelligence | Insights
 | **Change type** | **Version** | **Description**                  |
 |:----------------|:------------|:-----------------------------------------|
 | Addition | beta | Added the **itemInsights** navigation property to the **organizationSettings** entity. |
-| Addition | beta | Added the **itemInsightsSettings** entity and the following operations: <br/> [Get itemInsightSettings](/graph/api/iteminsightssettings-get?view=graph-rest-beta) entity. <br/> [Update itemInsightSettings](/graph/api/iteminsightssettings-update?view=graph-rest-beta) |
+| Addition | beta | Added the **itemInsightsSettings** entity and the following operations: <br/> [Get itemInsightSettings](/graph/api/iteminsightssettings-get?view=graph-rest-beta) <br/> [Update itemInsightSettings](/graph/api/iteminsightssettings-update?view=graph-rest-beta) |
 
 
 ### People and workplace intelligence | Profile
