@@ -47,7 +47,7 @@ The following table shows the properties that are required when you create the [
 
 |Property|Type|Description|
 |:---|:---|:---|
-|displayName|String|Name of the group to be created|
+|displayName|String|Name of the group to be created.|
 
 
 
