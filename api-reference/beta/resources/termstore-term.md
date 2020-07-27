@@ -13,20 +13,20 @@ Namespace: microsoft.graph.termStore
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Represents a term used in a term [store](../resources/termstore-store.md).
+Represents a term used in a [termstore].
 
 Inherits from [entity](../resources/entity.md).
 
 ## Methods
 |Method|Return type|Description|
 |:---|:---|:---|
-|[List children](../api/termstore-term-list-children.md)|[term](../resources/termstore-term.md) collection|Get the terms from the children navigation property.|
-|[Create term](../api/termstore-term-post.md)|[term](../resources/termstore-term.md)|Create a new [term](../resources/termstore-term.md) object.|
-|[Get term](../api/termstore-term-get.md)|[term](../resources/termstore-term.md)|Read the properties and relationships of a [term](../resources/termstore-term.md) object.|
-|[Update term](../api/termstore-term-update.md)|[term](../resources/termstore-term.md)|Update the properties of a [term](../resources/termstore-term.md) object.|
-|[Delete term](../api/termstore-term-delete.md)|None|Delete a [term](../resources/termstore-term.md) object.|
-|[List relations](../api/termstore-term-list-relations.md)|[relation](../resources/termstore-relation.md) collection|Get the relations from the relations navigation property.|
-|[Create relation](../api/termstore-relation-post.md)|[relation](../resources/termstore-relation.md)|Create a new relations object.|
+|[List children](../api/termstore-term-list-children.md)|[microsoft.graph.termstore.term](../resources/termstore-term.md) collection|Get the first level children of a term in a [termstore].|
+|[List relations](../api/termstore-term-list-relations.md)|[microsoft.graph.termstore.relation](../resources/termstore-relation.md) collection|Get the relations of a term in a [termstore].|
+|[Create relation](../api/termstore-relation-post.md)|[microsoft.graph.termstore.relation](../resources/termstore-relation.md)|Create a new relation for a term or a [set] in a [termstore].|
+|[Create term](../api/termstore-term-post.md)|[microsoft.graph.termstore.term](../resources/termstore-term.md)|Create a new term object in a [termstore].|
+|[Get term](../api/termstore-term-get.md)|[microsoft.graph.termstore.term](../resources/termstore-term.md)|Read the properties and relationships of a term (../resources/termstore-term.md) object in a [termstore].|
+|[Update term](../api/termstore-term-update.md)|[mcirosoft.graph.termstore.term](../resources/termstore-term.md)|Update the properties of a term object in a [termstore].|
+|[Delete term](../api/termstore-term-delete.md)|None|Delete a term object in a [termstore].|
 
 ## Properties
 |Property|Type|Description|
@@ -41,9 +41,9 @@ Inherits from [entity](../resources/entity.md).
 ## Relationships
 |Relationship|Type|Description|
 |:---|:---|:---|
-|children|[term](../resources/termstore-term.md) collection|Children of current term|
-|relations|[relation](../resources/termstore-relation.md) collection|To indicate which terms are related to the current term as either pinned or reused|
-|set|[set](../resources/termstore-set.md)|The set in which the term is created|
+|children|[mcirosoft.graph.termstore.term](../resources/termstore-term.md) collection|Children of current term|
+|relations|[microsoft.graph.termstore.relation](../resources/termstore-relation.md) collection|To indicate which terms are related to the current term as either pinned or reused|
+|set|[microsoft.graph.termstore.set](../resources/termstore-set.md)|The [set] in which the term is created|
 
 ## JSON representation
 The following is a JSON representation of the resource.
@@ -75,15 +75,14 @@ The following is a JSON representation of the resource.
     {
       "@odata.type": "microsoft.graph.keyValue"
     }
-  ],
-  
-  /*  relationships  */
-  "children" : [{"@odata.type" : "microsoft.graph.termStore.term"}],
-  "set" : {"@odata.type" : "microsoft.graph.termStore.set"}, 
-  "relations" : [{"@odata.type" : "microsoft.graph.termStore.relation"}]
+  ]
 }
 ```
 
+[termstore]: ../resources/termstore-store.md
+[set]: ../resources/termstore-set.md
+[term]: ../resources/termstore-term.md
+[group]: ../resources/termstore-group.md
 
 <!--
 {
