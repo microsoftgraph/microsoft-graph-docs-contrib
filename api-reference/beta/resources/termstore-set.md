@@ -13,20 +13,20 @@ Namespace: microsoft.graph.termStore
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Represents the set used in a term [store].
+Represents the set used in a term [microsoft.graph.termstore.store].
 
 Inherits from [entity](../resources/entity.md).
 
 ## Methods
 |Method|Return type|Description|
 |:---|:---|:---|
-|[Create set](../api/termstore-set-create.md)|[set](../resources/termstore-set.md)|Create a new [set](../resources/termstore-set.md) object.|
-|[Get set](../api/termstore-set-get.md)|[set](../resources/termstore-set.md)|Read the properties and relationships of a [set](../resources/termstore-set.md) object.|
-|[Update set](../api/termstore-set-update.md)|[set](../resources/termstore-set.md)|Update the properties of a [set](../resources/termstore-set.md) object.|
-|[Delete set](../api/termstore-set-delete.md)|None|Deletes a [set](../resources/termstore-set.md) object.|
-|[Create term](../api/termstore-term-create.md)|[term](../resources/termstore-term.md)|Create a new term object.|
-|[Get term](../api/termstore-term-get.md)|[term](../resources/termstore-term.md)|Read the properties and relationships of a [term](../resources/termstore-term.md) object.|
-
+|[Create set](../api/termstore-set-create.md)|[microsoft.graph.termstore.set](../resources/termstore-set.md)|Create a new [microsoft.graph.termstore.set](../resources/termstore-set.md) object.|
+|[Get set](../api/termstore-set-get.md)|[microsoft.graph.termstore.set](../resources/termstore-set.md)|Read the properties and relationships of a [microsoft.graph.termstore.set](../resources/termstore-set.md) object.|
+|[Update set](../api/termstore-set-update.md)|[microsoft.graph.termstore.set](../resources/termstore-set.md)|Update the properties of a [microsoft.graph.termstore.set](../resources/termstore-set.md) object.|
+|[Delete set](../api/termstore-set-delete.md)|None|Deletes a [microsoft.graph.termstore.set](../resources/termstore-set.md) object.|
+|[Create term](../api/termstore-term-create.md)|[microsoft.graph.termstore.term](../resources/termstore-term.md)|Create a new [microsoft.graph.termstore.term] object.|
+|[Get term](../api/termstore-term-get.md)|[microsoft.graph.termstore.term](../resources/termstore-term.md)|Read the properties and relationships of a [microsoft.graph.termstore.term](../resources/termstore-term.md) object.|
+|[List sets](../api/termstore-group-list-sets.md])|collection [microsoft.graph.termstore.set] | Returns list of sets contained within a [microsoft.graph.termstore.group]
 
 ## Properties
 |Property|Type|Description|
