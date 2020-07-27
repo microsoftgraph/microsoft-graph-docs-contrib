@@ -2,7 +2,7 @@
 author: mohitpcad
 title: Group resource type
 doc_type: "resourcePageType"
-description: "Describes the termGroup entity in the termStore"
+description: "Describes the group entity in the termStore"
 localization_priority: Normal
 ms.prod: "Sharepoint"
 ---
