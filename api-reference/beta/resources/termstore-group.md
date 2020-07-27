@@ -44,7 +44,7 @@ Inherits from [entity](../resources/entity.md).
 
 ## JSON representation
 
-Here is a JSON representation of a **group** resource.
+The following is a JSON representation of a **group** resource.
 <!-- {
   "blockType": "resource",
   "keyProperty": "id",
