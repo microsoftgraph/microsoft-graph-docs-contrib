@@ -101,7 +101,7 @@ POST https://graph.microsoft.com/beta/subscriptions
 Content-type: application/json
 
 {
-   "changeType": "updated",
+   "changeType": "created",
    "notificationUrl": "https://webhook.azurewebsites.net/api/send/myNotifyClient",
    "resource": "me/mailFolders('Inbox')/messages",
    "expirationDateTime":"2016-11-20T18:23:45.9356913Z",
@@ -138,6 +138,7 @@ The following are valid values for the resource property.
 |List|sites/{site-id}/lists/{list-id}|
 |Security alert|security/alerts?$filter=status eq ‘New’|
 |Call records|communications/callRecords|
+|[Chat message](../resources/chatmessage.md) | chats/{id}/messages, chats/allMessages, teams/{id}/channels/{id}/messages, teams/allMessages |
 
 ### Response
 
@@ -160,7 +161,7 @@ Content-length: 252
   "id": "7f105c7d-2dc5-4530-97cd-4e7ae6534c07",
   "resource": "me/mailFolders('Inbox')/messages",
   "applicationId": "24d3b144-21ae-4080-943f-7067b395b913",
-  "changeType": "updated",
+  "changeType": "created",
   "clientState": "secretClientValue",
   "notificationUrl": "https://webhook.azurewebsites.net/api/send/myNotifyClient",
   "expirationDateTime": "2016-11-20T18:23:45.9356913Z",
