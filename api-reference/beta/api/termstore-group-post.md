@@ -1,6 +1,6 @@
 ---
 title: "Create group"
-description: "Create a new groups object."
+description: "Create a new group object."
 author: mohitpcad
 localization_priority: Normal
 ms.prod: "Sharepoint"
