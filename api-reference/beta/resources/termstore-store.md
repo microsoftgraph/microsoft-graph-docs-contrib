@@ -22,21 +22,21 @@ Inherits from [entity](../resources/entity.md).
 |Method|Return type|Description
 |:---|:---|:---
 |[List groups](../api/termstore-list-groups.md)|[microsoft.graph.termstore.group](../resources/termstore-group.md) collection| Get the groups from available in the [termstore](../resources/termstore-store.md) object.|
-|[Get store](../api/termstore-store-get.md) | [microsoft.graph.termstore.store](../resources/termstore-store.md) | Read the properties and relationships of a [termstore](../resources/termstore-store.md) object.
-|[Update store](../api/termstore-store-update.md) | [microsoft.graph.termstore.store](../resources/termstore-store.md) | Update the properties of a [termstore](../resources/termstore-store.md) object.|
+|[Get store](../api/termstore-store-get.md) | [microsoft.graph.termstore.store](../resources/termstore-store.md) | Read the properties and relationships of a termstore object.
+|[Update store](../api/termstore-store-update.md) | [microsoft.graph.termstore.store](../resources/termstore-store.md) | Update the properties of a termstore object.|
 
 ## Properties
 |Property|Type|Description
 |:---|:---|:---
-|defaultLanguageTag | String | Default language of the [termstore](../resources/termstore-store.md).
-|id|String | Unique identifier of the [termstore](../resources/termstore-store.md). Read-only.
-|languageTags | String collection | List of languages for the [termstore](../resources/termstore-store.md).
+|defaultLanguageTag | String | Default language of the termstore].
+|id|String | Unique identifier of the termstore. Read-only.
+|languageTags | String collection | List of languages for the termstore.
 
 ## Relationships
 |Relationship|Type|Description
 |:---|:---|:---
-|groups |[microsoft.graph.termstore.group](../resources/termstore-group.md) collection | Collection of all groups available in the [termstore].
-|sets | [microsoft.graph.termstore.set](../resources/termstore-set.md) collection | Collection of all sets available in the [termstore].
+|groups |[microsoft.graph.termstore.group](../resources/termstore-group.md) collection | Collection of all groups available in the termstore.
+|sets | [microsoft.graph.termstore.set](../resources/termstore-set.md) collection | Collection of all sets available in the termstore.
 
 
 ## JSON representation
