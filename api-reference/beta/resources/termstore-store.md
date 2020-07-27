@@ -21,16 +21,16 @@ Inherits from [entity](../resources/entity.md).
 ## Methods
 |Method|Return type|Description
 |:---|:---|:---
-|[Get store](../api/termstore-store-get.md) | [microsoft.graph.termstore.store](../resources/termstore-store.md) | Read the properties and relationships of a [store](../resources/termstore-store.md) object.
-|[Update store](../api/termstore-store-update.md) | [microsoft.graph.termstore.store](../resources/termstore-store.md) | Update the properties of a [store](../resources/termstore-store.md) object.
-|[List groups](../api/termstore-list-groups.md)|[microsoft.graph.termstore.group](../resources/termstore-group.md) collection| Get the groups from available in the [store](../resources/termstore-store.md) object.|
+|[Get store](../api/termstore-store-get.md) | [microsoft.graph.termstore.store](../resources/termstore-store.md) | Read the properties and relationships of a [termstore](../resources/termstore-store.md) object.
+|[Update store](../api/termstore-store-update.md) | [microsoft.graph.termstore.store](../resources/termstore-store.md) | Update the properties of a [termstore](../resources/termstore-store.md) object.
+|[List groups](../api/termstore-list-groups.md)|[microsoft.graph.termstore.group](../resources/termstore-group.md) collection| Get the groups from available in the [termstore](../resources/termstore-store.md) object.|
 
 ## Properties
 |Property|Type|Description
 |:---|:---|:---
-|defaultLanguageTag | String | Default language of the term store.
-|id|String | Unique identifier of the term store. Read-only.
-|languageTags | String collection | List of languages for the term store.
+|defaultLanguageTag | String | Default language of the [termstore](../resources/termstore-store.md) .
+|id|String | Unique identifier of the [termstore](../resources/termstore-store.md) . Read-only.
+|languageTags | String collection | List of languages for the [termstore](../resources/termstore-store.md) .
 
 ## Relationships
 |Relationship|Type|Description
