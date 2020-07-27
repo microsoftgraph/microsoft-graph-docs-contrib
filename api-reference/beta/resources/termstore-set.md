@@ -21,8 +21,8 @@ Inherits from [entity](../resources/entity.md).
 |Method|Return type|Description|
 |:---|:---|:---|
 |[List sets](../api/termstore-group-list-sets.md)|collection [microsoft.graph.termstore.set] | Returns list of sets contained within a [group] of a [termstore] |
-|[Create set](../api/termstore-set-create.md)|[microsoft.graph.termstore.set](../resources/termstore-set.md)|Create a new set object in a [termstore].|
-|[Create term](../api/termstore-term-create.md)|[microsoft.graph.termstore.term](../resources/termstore-term.md)|Create a new [term] object in a [termstore].|
+|[Create set](../api/termstore-set-post.md)|[microsoft.graph.termstore.set](../resources/termstore-set.md)|Create a new set object in a [termstore].|
+|[Create term](../api/termstore-term-post.md)|[microsoft.graph.termstore.term](../resources/termstore-term.md)|Create a new [term] object in a [termstore].|
 |[Get set](../api/termstore-set-get.md)|[microsoft.graph.termstore.set](../resources/termstore-set.md)| Get a set object in a [termstore].|
 |[Get term](../api/termstore-term-get.md)|[microsoft.graph.termstore.term](../resources/termstore-term.md)| Get a [term] object in a [termstore].|
 |[Update set](../api/termstore-set-update.md)|[microsoft.graph.termstore.set](../resources/termstore-set.md)|Update the properties of a set object in a [termstore].|
