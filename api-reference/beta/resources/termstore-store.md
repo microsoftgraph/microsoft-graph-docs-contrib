@@ -21,9 +21,9 @@ Inherits from [entity](../resources/entity.md).
 ## Methods
 |Method|Return type|Description
 |:---|:---|:---
-|[Get store](../api/termstore-store-get.md) | [microsoft.graph.termstore.store](../resources/termstore-store.md) | Read the properties and relationships of a [termstore](../resources/termstore-store.md) object.
-|[Update store](../api/termstore-store-update.md) | [microsoft.graph.termstore.store](../resources/termstore-store.md) | Update the properties of a [termstore](../resources/termstore-store.md) object.
 |[List groups](../api/termstore-list-groups.md)|[microsoft.graph.termstore.group](../resources/termstore-group.md) collection| Get the groups from available in the [termstore](../resources/termstore-store.md) object.|
+|[Get store](../api/termstore-store-get.md) | [microsoft.graph.termstore.store](../resources/termstore-store.md) | Read the properties and relationships of a [termstore](../resources/termstore-store.md) object.
+|[Update store](../api/termstore-store-update.md) | [microsoft.graph.termstore.store](../resources/termstore-store.md) | Update the properties of a [termstore](../resources/termstore-store.md) object.|
 
 ## Properties
 |Property|Type|Description
