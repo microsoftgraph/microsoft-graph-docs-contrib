@@ -90,6 +90,12 @@ Adding PSTN and direct routing call reports to Microsoft Graph (beta).
 |Addition|beta|Added the **azureAD** member to the [vpnAuthenticationMethod](/graph/api/resources/intune-deviceconfig-vpnauthenticationmethod?view=graph-rest-beta) enum type|
 |Addition|beta|Added the **derivedCredential** member to the [windows10VpnAuthenticationMethod](/graph/api/resources/intune-deviceconfig-windows10vpnauthenticationmethod?view=graph-rest-beta) enum type|
 
+### Education
+
+| **Change type** | **Version** | **Description**                                                                                                                                                     |
+| :-------------- | :---------- | :------------------------------------------------------------------------------------------------------------------------------------------------------------------ |
+| Addition        | beta        | Added new `expirationDate` property to the [`educationSynchronizationProfile`](/graph/api/resources/educationsynchronizationprofile?view=graph-rest-beta) resource. |
+
 ### Extensions | Schema extensions
 
 | **Change type** | **Version**   | **Description**                          |
