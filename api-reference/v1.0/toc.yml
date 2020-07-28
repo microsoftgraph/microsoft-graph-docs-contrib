@@ -4582,27 +4582,27 @@ items:
         - name: Update alert
           href: api/alert-update.md
       - name: Information protection
+        items:
+        - name: Threat assessment
           items:
-          - name: Threat assessment
-            items:
-            - name: Overview
-              href: resources/threatassessment-api-overview.md
-            - name: Threat assessment request
-              href: resources/threatassessmentrequest.md
-            - name: Mail assessment request
-              href: resources/mailassessmentrequest.md
-            - name: Email file assessment request
-              href: resources/emailfileassessmentrequest.md
-            - name: File assessment request
-              href: resources/fileAssessmentRequest.md
-            - name: URL assessment request
-              href: resources/urlassessmentrequest.md
-            - name: List
-              href: api/informationprotection-list-threatassessmentrequests.md
-            - name: Create
-              href: api/informationprotection-post-threatassessmentrequests.md
-            - name: Get
-              href: api/threatassessmentrequest-get.md
+          - name: Overview
+            href: resources/threatassessment-api-overview.md
+          - name: Threat assessment request
+            href: resources/threatassessmentrequest.md
+          - name: Mail assessment request
+            href: resources/mailassessmentrequest.md
+          - name: Email file assessment request
+            href: resources/emailfileassessmentrequest.md
+          - name: File assessment request
+            href: resources/fileAssessmentRequest.md
+          - name: URL assessment request
+            href: resources/urlassessmentrequest.md
+          - name: List
+            href: api/informationprotection-list-threatassessmentrequests.md
+          - name: Create
+            href: api/informationprotection-post-threatassessmentrequests.md
+          - name: Get
+            href: api/threatassessmentrequest-get.md
       - name: Secure scores
         href: resources/securescore.md
         items:
