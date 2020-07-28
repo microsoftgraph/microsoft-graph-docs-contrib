@@ -7,6 +7,7 @@ ms.prod: "non-product-specific"
 author: "MSGraphDocsvTeam"
 ---
 
+# Enum values
 
 Namespace: microsoft.graph
 
