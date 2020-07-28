@@ -48,9 +48,9 @@ Alerts from the following providers are available via the Microsoft Graph Securi
 
 ## Information protection
 
-**Labels** - Describes the information protection label that details how to properly apply a sensitivity label to information. The information protection label describes the configuration of sensitivity labels that apply to a user or tenant.
+**Labels** - Information protection labels provide details about how to properly apply a sensitivity label to information. The information protection label API describes the configuration of sensitivity labels that apply to a user or tenant.
 
-**Threat assessment** - The Microsoft Graph threat assessment API helps organizations to assess the threat received by any user in a tenant. This empowers customers to report spam emails, phishing URLs or malware attachments they receive to Microsoft. The policy check result and rescan result can help tenant administrators understand the threat scanning verdict and adjust their organizational policy.
+**Threat assessment** - The Microsoft Graph threat assessment API helps organizations to assess the threat received by any user in a tenant. This empowers customers to report spam emails, phishing URLs, or malware attachments they receive to Microsoft. The policy check result and rescan result can help tenant administrators understand the threat scanning verdict and adjust their organizational policy.
 
 ## Threat indicators (preview)
 
