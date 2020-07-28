@@ -22,9 +22,9 @@ Organizations and partners often have their own tooling for generating reports a
 
 Applications can retrieve a [call record](/graph/api/resources/callrecords-callrecord?view=graph-rest-1.0) by its ID. This ID can be determined from a webhook notification or retrieved from administrative tools.
 
-## Reporting scenarios
+## Get call record reports
 
-Organizations that use Microsoft Teams to connect to the public switched telephone network (PSTN) usually want to track this usage as there may be financial costs associated with it. For this, Microsoft Graph provides the [getPstnCalls](/graph/api/callrecords-callrecord-getpstncalls?view=graph-rest-beta) and [getDirectRoutingCalls](/graph/api/callrecords-callrecord-getdirectroutingcalls?view=graph-rest-beta) functions, which return a projection of [call record](/graph/api/resources/callrecords-callrecord?view=graph-rest-beta) data in a tabular format.
+Organizations that use Microsoft Teams to connect to the public switched telephone network (PSTN) usually want to track this usage to understand the associated costs. The [getPstnCalls](/graph/api/callrecords-callrecord-getpstncalls?view=graph-rest-beta) and [getDirectRoutingCalls](/graph/api/callrecords-callrecord-getdirectroutingcalls?view=graph-rest-beta) functions return a projection of [call record](/graph/api/resources/callrecords-callrecord?view=graph-rest-beta) data in a tabular format.
 
 ## See also
 
