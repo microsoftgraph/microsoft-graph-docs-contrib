@@ -22,7 +22,7 @@ jobs:
     steps:
     - name: check if prs are dirty
       uses: eps1lon/actions-label-merge-conflict@releases/1.x
-      if: "${{ secrets.LABELING_TOKEN != '' && secrets.LABELING_TOKEN != null }}"
+      if: "${{ secrets.LABELING_TOKEN }} != '' && ${{ secrets.LABELING_TOKEN }} != null"
       id: check
       with:
         dirtyLabel: "conflicting"
