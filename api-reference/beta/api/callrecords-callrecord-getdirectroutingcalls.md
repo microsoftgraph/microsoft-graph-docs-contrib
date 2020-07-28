@@ -1,6 +1,6 @@
 ---
 title: "callRecord: getDirectRoutingCalls"
-description: "Retrieve the direct routing call report"
+description: "Get a log of direct routing calls."
 author: "stephenjust"
 localization_priority: Normal
 ms.prod: "cloud-communications"
