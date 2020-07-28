@@ -26,8 +26,8 @@ One of the following permissions is required to call this API. To learn more, in
 | Delegated (personal Microsoft account) | Not supported.                               |
 | Application                            | Not supported.\* |
 
-\*> [!IMPORTANT]
-> Support for creating an online meeting with an application token will be available in the near future. We will provide additional application policies that are complementary to the application-based permission scope. Currently, you must use the /me path with a user token.
+> [!IMPORTANT]
+> \* Support for creating an online meeting with an application token will be available in the near future. We will provide additional application policies that are complementary to the application-based permission scope. Currently, you must use the /me path with a user token.
 
 ## HTTP request
 <!-- { "blockType": "ignored" } -->
