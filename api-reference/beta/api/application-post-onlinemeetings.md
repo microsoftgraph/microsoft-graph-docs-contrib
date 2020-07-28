@@ -23,11 +23,11 @@ One of the following permissions is required to call this API. To learn more, in
 | Permission type                        | Permissions (from least to most privileged) |
 |:---------------------------------------|:--------------------------------------------|
 | Delegated (work or school account)     | OnlineMeetings.ReadWrite                    |
-| Delegated (personal Microsoft account) | Not Supported                               |
-| Application                            | See notes below  |
+| Delegated (personal Microsoft account) | Not supported.                               |
+| Application                            | Not supported.\* |
 
-> [!IMPORTANT]
-> Creating an online meeting with an application token will be supported in the near future. We will provide additional application policies that will be complementary to the application based permission scope. As of now, we encourage you to use the /me path with a user token
+\*> [!IMPORTANT]
+> Support for creating an online meeting with an application token will be available in the near future. We will provide additional application policies that are complementary to the application-based permission scope. Currently, you must use the /me path with a user token.
 
 ## HTTP request
 <!-- { "blockType": "ignored" } -->
@@ -143,7 +143,7 @@ Content-Type: application/json
 ```
 
 
-### Example 2: Create an online meeting in a Microsoft Teams Channel with a user token
+### Example 2: Create an online meeting in a Microsoft Teams channel with a user token
 
 #### Request
 >**Note:** The Object ID of the user token passed should be a member of the channel represented by threadid in the payload.
