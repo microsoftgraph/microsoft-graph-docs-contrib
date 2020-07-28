@@ -13,7 +13,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-A school. The `educationSchool` resource currently corresponds to an [administrativeUnit](administrativeunit.md) resource and shares the same ID.
+A school. The **educationSchool** resource currently corresponds to an [administrativeUnit](administrativeunit.md) resource and shares the same ID.
 
 This resource is a subtype of [educationOrganization](educationorganization.md).
 

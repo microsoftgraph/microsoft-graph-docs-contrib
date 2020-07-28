@@ -13,7 +13,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Represents a class within a school. The `educationClass` resource currently corresponds to a Microsoft 365 [group] and shares the same ID.
+Represents a class within a school. The **educationClass** resource currently corresponds to a Microsoft 365 [group] and shares the same ID.
 Students are regular members of the class, and Teachers are owners and have appropriate rights.
 
 > [!IMPORTANT]

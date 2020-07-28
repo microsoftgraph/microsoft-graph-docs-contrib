@@ -86,9 +86,6 @@ For a summary of the value of these API changes, as well as recent tools, compon
 | Addition        | beta        | Added new `expirationDate` property to the [`educationSynchronizationProfile`](/graph/api/resources/educationsynchronizationprofile?view=graph-rest-beta) resource. |
 | Add             | beta        | Added new **externalSourceDetail** property to [educationSchool](/graph/api/resources/educationSchool?view=graph-rest-beta), [educationClass](/graph/api/resources/educationClass?view=graph-rest-beta), [educationUser](/graph/api/resources/educationUser?view=graph-rest-beta) resources |
 
-
-
-
 ### Extensions | Schema extensions
 
 | **Change type** | **Version**   | **Description**                          |
