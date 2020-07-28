@@ -1347,14 +1347,26 @@ items:
           items:
           - name: Call record
             href: resources/callrecords-callrecord.md
-          - name: Get call record
+          - name: Get
             href: api/callrecords-callrecord-get.md
         - name: Session
           items:
           - name: Session
             href: resources/callrecords-session.md
-          - name: List sessions
+          - name: List
             href: api/callrecords-session-list.md
+        - name: PSTN calls
+          items:
+          - name: PSTN log row
+            href: resources/callrecords-pstncalllogrow.md
+          - name: List PSTN calls
+            href: api/callrecords-callrecord-getpstncalls.md
+        - name: Direct routing calls
+          items:
+          - name: Direct routing log row
+            href: resources/callrecords-directroutinglogrow.md
+          - name: List direct routing calls
+            href: api/callrecords-callrecord-getdirectroutingcalls.md
     - name: Cross-device experiences
       displayName: Project Rome
       items:
