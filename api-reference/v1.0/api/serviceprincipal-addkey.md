@@ -74,7 +74,7 @@ The following is an example of the request.
 # [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
-  "name": "serviceprincipal_addkey"
+  "name": "servicePrincipal_addkey"
 }-->
 
 ```http
@@ -137,7 +137,7 @@ The following is an example of the request.
 
 <!-- {
   "blockType": "request",
-  "name": "serviceprincipal_addkey"
+  "name": "servicePrincipal_addkey"
 }-->
 
 ```http
@@ -184,6 +184,6 @@ Content-Type: application/json
   "section": "documentation",
   "tocPath": "",
   "suppressions": [
-    "Error: serviceprincipal_addkey:\r\n      Resource type was null or missing, so we assume there is no response to validate."
+    "Error: servicePrincipal_addkey:\r\n      Resource type was null or missing, so we assume there is no response to validate."
     ]
 }-->
