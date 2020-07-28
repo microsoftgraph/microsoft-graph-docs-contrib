@@ -28,9 +28,7 @@ Azure AD provides three types of activity reports:
 The directory audit report provides you with access to the history of every task performed in your tenant. The directory audit report provides you with records of system activities for compliance. Amongst others, the provided data enables you to address common scenarios such as:
 
 - Who granted admin group access to a directory user?
-
 - Which users are signing in to a recently acquired app?
-
 - How many passwords resets were made within the directory?
 
 ### Sign-ins

@@ -10897,8 +10897,9 @@ items:
     - name: Reports
       items:
       - name: Azure AD activity reports
-        href: resources/azure-ad-auditlog-overview.md
         items:
+        - name: Overview
+          href: resources/azure-ad-auditlog-overview.md
         - name: Directory audit
           href: resources/directoryaudit.md
           items:
