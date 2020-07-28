@@ -9690,7 +9690,7 @@ items:
               href: api/passwordauthenticationmethod-resetpassword.md
             - name: Get operation status
               href: api/authenticationoperation-get.md
-          - name: Phone
+            - name: Phone
             href: resources/phoneauthenticationmethod.md
             items:
             - name: List
@@ -9847,7 +9847,22 @@ items:
             - name: Confirm compromised
               href: api/riskyusers-confirmcompromised.md
             - name: Dismiss
-              href: api/riskyusers-dismiss.md
+              href: api/riskyusers-dismiss.md      
+        - name: Identity provider
+          href: resources/identityprovider.md
+          items:
+          - name: List
+            href: api/identityprovider-list.md
+          - name: Create
+            href: api/identityprovider-post-identityproviders.md
+          - name: Get
+            href: api/identityprovider-get.md
+          - name: Update
+            href: api/identityprovider-update.md
+          - name: Delete
+            href: api/identityprovider-delete.md
+          - name: List available provider types
+            href: api/identityprovider-list-availableprovidertypes.md
         - name: Information protection
           items:    
           - name: Threat assessment
@@ -9870,19 +9885,6 @@ items:
               href: api/informationprotection-post-threatassessmentrequests.md
             - name: Get
               href: api/threatassessmentrequest-get.md
-        - name: Identity provider
-          href: resources/identityprovider.md
-          items:
-          - name: List identity providers
-            href: api/identityprovider-list.md
-          - name: Create identity provider
-            href: api/identityprovider-post-identityproviders.md
-          - name: Get identity provider
-            href: api/identityprovider-get.md
-          - name: Update identity provider
-            href: api/identityprovider-update.md
-          - name: Delete identity provider
-            href: api/identityprovider-delete.md
         - name: Invitation manager
           href: resources/invitation.md
           items:
