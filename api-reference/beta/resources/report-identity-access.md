@@ -11,7 +11,7 @@ doc_type: conceptualPageType
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-With Microsoft Graph, you can access identity and access reports to get the information about how people in your business are using applications in your Azure Active Directory (Azure AD) tenant.
+With Microsoft Graph, you can use access identity and access reports to get information about how people in your business are using applications in your Azure Active Directory (Azure AD) tenant.
 
 ## Authorization
 
@@ -19,7 +19,7 @@ Microsoft Graph controls access to resources using permissions. You must specify
 
 ## What are identity and access reports?
 
-These reports are available for understanding application activity in your tenant:
+The following identity and access reports are available to help you understand application activity in your tenant:
 
 - AD FS application activity
 - Application sign-in
@@ -27,18 +27,15 @@ These reports are available for understanding application activity in your tenan
 
 ### AD FS application activity
 
-Provides information about how a relying party is configured with Active Directory Federation Services (AD FS), its aggregated usage, and whether the relying party configuration can be migrated to Azure Active Directory. For more information, see the [relyingPartyDetailedSummary](/graph/api/resources/applicationsigninsummary?view=graph-rest-beta) resource.
+The AD FS application activity report provides information about how a relying party is configured with Active Directory Federation Services (AD FS), its aggregated usage, and whether the relying party configuration can be migrated to Azure Active Directory. For more information, see the [relyingPartyDetailedSummary](/graph/api/resources/applicationsigninsummary?view=graph-rest-beta) resource.
 
-### Sign-ins
+### Application sign-in
 
-Evaluate the usage of applications sign-ins in your tenant using either a summary report or a report that provides details of sign-ins, such as the number of sign-ins and whether any errors occured during sign-in. For more information, see the [applicationSignInSummary](/graph/api/resources/applicationsigninsummary?view=graph-rest-beta) resource.
+Evaluate the usage of application sign-ins in your tenant using either a summary report or a report that provides details of sign-ins, such as the number of sign-ins and whether any errors occured during sign-in. For more information, see the [applicationSignInSummary](/graph/api/resources/applicationsigninsummary?view=graph-rest-beta) resource.
 
 ### Registration and usage
 
-Obtain a better understanding of how users in your organization use Azure AD capabilities, such as self-service password rest and multi-factor authentication (MFA). You can determine which authentication methods are more successful for your organization, what types of errors end users are running into, and what campaign you need to run to help your end users adopt the use of self-service password rest and MFA. For more information, see the [authentication methods usage report API](/graph/api/resources/applicationsigninsummary?view=graph-rest-beta).
-
-## What's new
-Find out about the [latest new features and updates](/graph/whats-new-overview) for this API set.
+Get a better understanding of how users in your organization use Azure AD capabilities, such as self-service password rest and multi-factor authentication (MFA). You can determine which authentication methods are more successful for your organization, what types of errors end users are running into, and what campaign you need to run to help your end users adopt the use of self-service password rest and MFA. For more information, see the [authentication methods usage report API](/graph/api/resources/applicationsigninsummary?view=graph-rest-beta).
 
 ## Next steps
 
