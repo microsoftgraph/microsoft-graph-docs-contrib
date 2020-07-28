@@ -36,12 +36,6 @@ One of the following permissions is required to call this API. To learn more, in
 GET /communications/callRecords/getPstnCalls
 ```
 
-## Request headers
-
-|Name|Description|
-|:---|:---|
-|Authorization|Bearer {token}. Required.|
-
 ## Function parameters
 
 In the request URL, provide the following query parameters with values.
@@ -51,6 +45,12 @@ The following table shows the parameters that can be used with this function.
 |:---|:---|:---|
 |fromDateTime|DateTimeOffset|Start of time range to query. UTC, inclusive.<br/>Time range is based on the call start time.|
 |toDateTime|DateTimeOffset|End of time range to query. UTC, inclusive.|
+
+## Request headers
+
+|Name|Description|
+|:---|:---|
+|Authorization|Bearer {token}. Required.|
 
 ## Response
 
@@ -117,5 +117,5 @@ HTTP/1.1 200 OK
 
 ## See also
 
-* [Microsoft Teams PSTN usage report](https://docs.microsoft.com/microsoftteams/teams-analytics-and-reports/pstn-usage-report)  in the Microsoft Teams admin center
+* [Microsoft Teams PSTN usage report](https://docs.microsoft.com/microsoftteams/teams-analytics-and-reports/pstn-usage-report)
 * [Direct routing report in Microsoft Graph](callrecords-callrecord-getdirectroutingcalls.md)
