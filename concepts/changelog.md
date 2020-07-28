@@ -94,7 +94,8 @@ Adding PSTN and direct routing call reports to Microsoft Graph (beta).
 
 | **Change type** | **Version** | **Description**                                                                                                                                                     |
 | :-------------- | :---------- | :------------------------------------------------------------------------------------------------------------------------------------------------------------------ |
-| Addition        | beta        | Added new `expirationDate` property to the [`educationSynchronizationProfile`](/graph/api/resources/educationsynchronizationprofile?view=graph-rest-beta) resource. |
+| Addition        | beta        | Added new **expirationDate** property to the [`educationSynchronizationProfile`](/graph/api/resources/educationsynchronizationprofile?view=graph-rest-beta) resource. |
+| Add             | beta        | Added new **externalSourceDetail** property to [educationSchool](/graph/api/resources/educationSchool?view=graph-rest-beta), [educationClass](/graph/api/resources/educationClass?view=graph-rest-beta), [educationUser](/graph/api/resources/educationUser?view=graph-rest-beta) resources |
 
 ### Extensions | Schema extensions
 
@@ -153,9 +154,7 @@ Adding PSTN and direct routing call reports to Microsoft Graph (beta).
 | **Change type** | **Version** | **Description**                          |
 | :-------------- | :---------- | :--------------------------------------- |
 |Addition|beta and v1.0 |Added the [workbookOperation](/graph/api/resources/workbookoperation) relationship to the [workbook](/graph/api/resources/workbook?view=graph-rest-beta) entity. |
-|Addition|beta and v1.0 |Added the  [Get workbookOperation](/graph/api/workbookoperation-get) method to the [workbookOperation](/graph/api/resources/workbookoperation?view=graph-rest-beta) entity. |
-
-## June 2020
+|Addition|beta and v1.0 |Added the  [Get workbookOperation](/graph/api/workbookoperation-get) method to the [workbookOperation](/graph/api/resources/workbookoperation?view=graph-rest-beta) entit## June 2020
 
 ### Calendar
 | **Change type** | **Version**   | **Description**                          |
