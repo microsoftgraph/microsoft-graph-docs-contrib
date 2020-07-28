@@ -13,33 +13,11 @@ For a summary of the value of these API changes, as well as recent tools, compon
 
 ## July 2020
 
-### Compliance | eDiscovery
-
+### Change notifications
 | **Change type** | **Version**   | **Description**                          |
 | :-------------- | :------------ | :--------------------------------------- |
-| Addition | beta | Added [Compliance overview](/graph/api/resources/complianceapioverview?view=graph-rest-beta) |
-| Addition | beta | Added [eDiscovery overview](/graph/api/resources/ediscoveryapioverview?view=graph-rest-beta) |
-| Addition | beta | Added [eDiscovery case](/graph/api/resources/ediscoverycase?view=graph-rest-beta) and associated |
-
-
-| Addition | beta | Added [Review set](/graph/api/resources/reviewset?view=graph-rest-beta) |
-| Addition | beta | Added [Review set query](/graph/api/resources/reviewsetquery?view=graph-rest-beta) |
-
-| Addition | beta | Added [List eDiscovery cases](/graph/api/ediscoverycase-list?view=graph-rest-beta) |
-| Addition | beta | Added [Create eDiscovery case](/graph/api/ediscoverycase-post?view=graph-rest-beta) |
-| Addition | beta | Added [Get eDiscovery case](/graph/api/ediscoverycase-get?view=graph-rest-beta) |
-| Addition | beta | Added [Update eDiscovery case](/graph/api/ediscoverycase-update?view=graph-rest-beta) |
-| Addition | beta | Added [Delete eDiscovery case](/graph/api/ediscoverycase-delete?view=graph-rest-beta) |
-
-| Addition | beta | Added [List review sets](/graph/api/reviewset-list?view=graph-rest-beta) |
-| Addition | beta | Added [Get review set](/graph/api/reviewset-get?view=graph-rest-beta) |
-| Addition | beta | Added [Create review set](/graph/api/reviewset-post?view=graph-rest-beta) |
-
-| Addition | beta | Added [List review set queries](/graph/api/reviewsetquery-list?view=graph-rest-beta) |
-| Addition | beta | Added [Create review set query](/graph/api/reviewsetquery-post?view=graph-rest-beta) |
-| Addition | beta | Added [Get review set query](/graph/api/reviewsetquery-get?view=graph-rest-beta) |
-| Addition | beta | Added [Update review set query](/graph/api/reviewsetquery-update?view=graph-rest-beta) |
-| Addition | beta | Added [Delete review set query](/graph/api/reviewsetquery-delete?view=graph-rest-beta) |
+| Removal | beta and v1.0 | Removed the erronously introduced **sequenceNumber** property from the [changeNotification](/graph/api/resources/changenotification) type.|
+| Addition | Beta | Adds [presence](/graph/api/resources/presence) to the resources supported for [change notifications](/graph/webhooks). |
 
 ### Cloud communications
 
@@ -48,12 +26,11 @@ For a summary of the value of these API changes, as well as recent tools, compon
 | Addition | beta | Added the [Update onlineMeeting](/graph/api/onlinemeeting-update?view=graph-rest-beta) operation for meeting updates.|
 | Addition | Beta | The [presence](/graph/api/resources/presence) resource now supports [change notifications](/graph/webhooks). |
 
+### Compliance | eDiscovery
 
-### Change notifications
 | **Change type** | **Version**   | **Description**                          |
 | :-------------- | :------------ | :--------------------------------------- |
-| Removal | beta and v1.0 | Removed the erronously introduced **sequenceNumber** property from the [changeNotification](/graph/api/resources/changenotification) type.|
-| Addition | Beta | Adds [presence](/graph/api/resources/presence) to the resources supported for [change notifications](/graph/webhooks). |
+| Addition | beta | Introduced the compliance eDiscovery API, including the [ediscoveryCase](/graph/api/resources/ediscoverycase?view=graph-rest-beta), [reviewSet](/graph/api/resources/reviewset?view=graph-rest-beta), and [reviewSetQuery](/graph/api/resources/reviewsetquery?view=graph-rest-beta), and operations. |
 
 ### Devices and apps | Cloud printing
 
@@ -123,6 +100,7 @@ For a summary of the value of these API changes, as well as recent tools, compon
 | Addition | beta | Added the [acquireAccessToken](/graph/api/synchronization-synchronization-acquireAccessToken?view=graph-rest-beta) method to the [synchronization](/graph/api/resources/synchronization-synchronization?view=graph-rest-beta) resource|
 | Addition | beta | Added the [entitlementManagementSettings](/graph/api/resources/entitlementmanagementsettings?view=graph-rest-beta) entity. |
 | Addition | v1.0 | Added the [identitySecurityDefaultsEnforcementPolicy API](/graph/api/resources/identitysecuritydefaultsenforcementpolicy?view=graph-rest-v1.0), which represents Azure Active Directory security defaults policy.|
+| Addition | v1.0 | Added [delta query](delta-query-overview.md) capability to [servicePrincipal](/graph/api/serviceprincipal-delta). |
 
 ### Identity and access | Conditional access
 | **Change type** | **Version** | **Description**                  |
@@ -139,14 +117,6 @@ For a summary of the value of these API changes, as well as recent tools, compon
 | Addition | beta | Added the **profileCardProperties** navigation property to the [organizationSettings](/graph/api/resources/organizationsettings?view=graph-rest-beta) entity. |
 | Addition | beta | Added the **profileCardProperty** entity and the following operations: <br/> [List](/graph/api/organizationsettings-list-profilecardproperties) <br/> [Create](/graph/api/organizationsettings-post-profilecardproperties) <br/> [Get](/graph/api/profilecardproperty-get?view=graph-rest-beta) <br/> [Update](/graph/api/profilecardproperty-update?view=graph-rest-beta) <br/> [Delete](/graph/api/profilecardproperty-delete) |
 
-
-### Workbooks and charts
-| **Change type** | **Version** | **Description**                          |
-| :-------------- | :---------- | :--------------------------------------- |
-|Addition|beta|Added the [workbookOperation](/graph/api/resources/workbookoperation?view=graph-rest-beta) relationship to the [Workbook](/graph/api/resources/workbook?view=graph-rest-beta) entity. |
-|Addition|beta|Added the  [Get workbookOperation](/graph/api/resources/workbookoperation-get?view=graph-rest-beta) method to the [workbookOperation](/graph/api/resources/workbookoperation?view=graph-rest-beta) entity. |
-
-
 ### Teamwork
 
 | **Change type** | **Version** | **Description**                          |
@@ -155,11 +125,12 @@ For a summary of the value of these API changes, as well as recent tools, compon
 [TeamsAppInstallation.ReadWriteForTeam](/graph/permissions-reference#Teams-app-installation-permissions), [TeamsAppInstallation.ReadForTeam.All](/graph/permissions-reference#Teams-app-installation-permissions), 
 [TeamsAppInstallation.ReadWriteForTeam.All](/graph/permissions-reference#Teams-app-installation-permissions). |
 
-### Track changes
 
+### Workbooks and charts
 | **Change type** | **Version** | **Description**                          |
 | :-------------- | :---------- | :--------------------------------------- |
-| Addition        | v1.0        | Added [delta query](delta-query-overview.md) capability to [servicePrincipal](/graph/api/serviceprincipal-delta). |
+|Addition|beta|Added the [workbookOperation](/graph/api/resources/workbookoperation?view=graph-rest-beta) relationship to the [Workbook](/graph/api/resources/workbook?view=graph-rest-beta) entity. |
+|Addition|beta|Added the  [Get workbookOperation](/graph/api/resources/workbookoperation-get?view=graph-rest-beta) method to the [workbookOperation](/graph/api/resources/workbookoperation?view=graph-rest-beta) entity. |
 
 ## June 2020
 
