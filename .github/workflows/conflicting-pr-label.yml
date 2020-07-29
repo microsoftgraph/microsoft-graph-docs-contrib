@@ -29,6 +29,5 @@ jobs:
         repoToken: "${{ secrets.GITHUB_TOKEN }}"
         continueOnMissingPermissions: true
         commentOnDirty: 'This pull request has conflicting changes, the author must resolve the conflicts before this pull request can be merged.'
-        commentOnClean: 'Conflicts have been resolved. A maintainer will review the pull request shortly.'
       env:
         LABELING_TOKEN: ${{secrets.GITHUB_TOKEN}}
