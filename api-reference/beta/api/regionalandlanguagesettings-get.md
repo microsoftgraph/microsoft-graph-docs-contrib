@@ -49,11 +49,9 @@ If successful, this method returns a `200 OK` response code and [regionalAndLang
 
 ## Example
 
-### Example 1: Get the properties of the signed-in user
+The following example gets the properties of the signed-in user.
 
-#### Request
-
-# [HTTP](#tab/http)
+### Request
 
 # [HTTP](#tab/http)
 <!-- {
@@ -78,8 +76,9 @@ GET https://graph.microsoft.com/beta/me/settings/regionalAndLanguageSettings
 ---
 
 
-##### Response
-Here is an example of the response. Note: The response object shown here may be truncated for brevity. 
+### Response
+
+>**Note:** The response object shown here might be shortened for readability.
 
 <!-- {
   "blockType": "response",

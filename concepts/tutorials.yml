@@ -62,7 +62,7 @@ landingContent:
     linkLists:
       - linkListType: tutorial
         links:
-          - text: Change notifications and delta query
+          - text: Change notifications and change tracking
             url: /learn/modules/msgraph-changenotifications-trackchanges
           - text: Optimize data usage with query parameters
             url: /learn/modules/optimize-data-usage

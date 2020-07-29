@@ -1,6 +1,6 @@
 ---
 title: "Create group"
-description: "Create a new Office 365 group or security group."
+description: "Create a new Microsoft 365 group or security group."
 author: "yyuank"
 localization_priority: Priority
 ms.prod: "groups"
@@ -15,7 +15,7 @@ Namespace: microsoft.graph
 
 Create a new [group](../resources/group.md) as specified in the request body. You can create one of the following groups:
 
-* Office 365 group (unified group)
+* Microsoft 365 group (unified group)
 * Security group
 
 This operation returns by default only a subset of the properties for each group. These default properties are noted in the [Properties](../resources/group.md#properties) section. To get properties that are _not_ returned by default, do a [GET operation](group-get.md) and specify the properties in a `$select` OData query option.
@@ -54,10 +54,10 @@ The following table shows the properties of the [group](../resources/group.md) r
 | description | string | A description for the group. Optional. |
 | mailEnabled | boolean | Set to **true** for mail-enabled groups. Required. |
 | mailNickname | string | The mail alias for the group. Required. |
-| securityEnabled | boolean | Set to **true** for security-enabled groups, including Office 365 groups. Required. |
+| securityEnabled | boolean | Set to **true** for security-enabled groups, including Microsoft 365 groups. Required. |
 | owners | [directoryObject](../resources/directoryobject.md) collection | This property represents the owners for the group at creation time. Optional. |
 | members | [directoryObject](../resources/directoryobject.md) collection | This property represents the members for the group at creation time. Optional. |
-|visibility|String|Specifies the visibility of an Office 365 group. Possible values are: `Private`, `Public`, `HiddenMembership`, or empty (which is interpreted as `Public`).|
+|visibility|String|Specifies the visibility of a Microsoft 365 group. Possible values are: `Private`, `Public`, `HiddenMembership`, or empty (which is interpreted as `Public`).|
 
 > **Note:** Groups created using the Microsoft Azure portal always have **securityEnabled** initially set to `true`.
 
@@ -65,7 +65,7 @@ Because the **group** resource supports [extensions](/graph/extensibility-overvi
 
 >**Note:** Creating a group using the Group.Create application permission without specifying owners will create the group anonymously and the group will not be modifiable. You can use the `POST` operation and add owners to the group while creating it to specify owners who can modify the group.
 
-> Creating an Office 365 group programmatically with an app-only context and without specifying owners will create the group anonymously. Doing so can result in the associated SharePoint Online site not being created automatically until further manual action is taken.  
+> Creating a Microsoft 365 group programmatically with an app-only context and without specifying owners will create the group anonymously. Doing so can result in the associated SharePoint Online site not being created automatically until further manual action is taken.  
 
 Specify other writable properties as necessary for your group. For more information, see the properties of the [group](../resources/group.md) resource.
 
@@ -75,7 +75,7 @@ Use the **groupTypes** property to control the type of group and its membership,
 
 | Type of group | Assigned membership | Dynamic membership |
 |:--------------|:------------------------|:---------------|
-| Office 365 (aka unified group)| `["Unified"]` | `["Unified","DynamicMembership"]`
+| Microsoft 365 (aka unified group)| `["Unified"]` | `["Unified","DynamicMembership"]`
 | Dynamic | `[]` (_null_) | `["DynamicMembership"]`|
 
 ## Response
@@ -84,9 +84,9 @@ If successful, this method returns a `201 Created` response code and a [group](.
 
 ## Examples
 
-### Example 1: Create an Office 365 group
+### Example 1: Create a Microsoft 365 group
 
-The following example creates an Office 365 group.
+The following example creates a Microsoft 365 group.
 
 #### Request
 
@@ -177,9 +177,9 @@ Content-type: application/json
 }
 ```
 
-### Example 2: Create an Office 365 group with an owner and members
+### Example 2: Create a Microsoft 365 group with an owner and members
 
-The following example creates an Office 365 group with an owner and members specified. Note that a maximum of 20 relationships, such as owners and members, can be added as part of group creation. You can subsequently add more members by using the [add member](https://docs.microsoft.com/graph/api/group-post-members?view=graph-rest-beta&tabs=http) API or JSON batching.
+The following example creates a Microsoft 365 group with an owner and members specified. Note that a maximum of 20 relationships, such as owners and members, can be added as part of group creation. You can subsequently add more members by using the [add member](https://docs.microsoft.com/graph/api/group-post-members?view=graph-rest-beta&tabs=http) API or JSON batching.
 
 #### Request
 
