@@ -1,6 +1,6 @@
 ---
 title: "Best practices for Excel APIs in Microsoft Graph"
-description: "Best practices for Excel APIs in Microsoft Graph"
+description: "List best practices and examples for Excel APIs in Microsoft Graph"
 author: "grangeryy"
 localization_priority: Normal
 ms.prod: "excel"
@@ -8,7 +8,7 @@ ms.prod: "excel"
 
 # Best practices for working with the Excel API in Microsoft Graph
 
-This article provides recommendations for working with the Excel APIs in Microsoft Graph. These recommendations are based on most frequently raised questions from our customers.
+This article provides recommendations for working with the Excel APIs in Microsoft Graph.
 
 ## Manage sessions in the most efficient way
 
@@ -16,7 +16,7 @@ If you have more than one calls to make within a certain period of time, we stro
 
 Here is an example on a typical scenario you should choose this mode: “I want to add a new number to the table and then find one record in my workbook.”
 
-First step is to create a session. You make a request similar to the following.
+Step 1: create a session.
 
 ```http
 POST https://graph.microsoft.com/v1.0/me/drive/items/{id}/workbook/createSession
@@ -41,7 +41,7 @@ Content-length: 52
 }
 ```
 
-Second step is to add a new row to the table with request similar as following.
+Step 2: add a new row to the table.
 
 ```http
 POST https://graph.microsoft.com/v1.0/me/drive/items/{id}/workbook/tables/Table1/rows/add
@@ -66,7 +66,7 @@ Content-length: “42”
 }
 ```
 
-The third step is to look up a value in the updated table, with request similar as following.
+Step 3: look up a value in the updated table.
 
 ```http
 POST https://graph.microsoft.com/v1.0/me/drive/items/{id}/workbook/functions/vlookup
@@ -92,7 +92,7 @@ content-type: application/json
 }
 ```
 
-The last step, please do not forget to close the session once all of the requests are completed.
+Step 4: close the session once all of the requests are completed.
 
 ```http
 POST https://graph.microsoft.com/v1.0/me/drive/items/{id}/workbook/closeSession
@@ -112,7 +112,6 @@ HTTP/1.1 204 No Content
 
 For more details, see [Create session](/graph/api/workbook-createsession?view=graph-rest-1.0) and [Close session](/graph/api/workbook-closesession?view=graph-rest-1.0).
 
-
 ## Working with APIs that may take a long time to complete
 
 You may notice some API responses require indeterminate time to complete, for example, open a workbook with large size. To resolve this issue, we provide the long running operation pattern. By using this pattern, you do not need to wait until the action is complete before returning a response or worry about the timeout for the request.
@@ -125,6 +124,8 @@ Currently, Excel Graph has enabled long running operation pattern for session cr
 4. After operation completes, you can get the session creation result through the specified URL in succeeded response.
 
 Following is an example of create session with long running operation pattern.
+
+### Initial request to create session
 
 ```http
 POST https://graph.microsoft.com/v1.0/me/drive/items/{drive-item-id}/workbook/worksheets({id})/createSession
@@ -146,7 +147,7 @@ Content-type: application/json
 }
 ```
 
-In some cases, if the creation succeeds directly in seconds, it might return normal pattern with a `201 Created` response like following.
+In some cases, if the creation succeeds directly in seconds, it won't enter long running operation pattern, instead it returns a `201 Created` response like following.
 
 ```http
 HTTP/1.1 201 Created
@@ -159,7 +160,9 @@ Content-length: 52
 }
 ```
 
-In long running operation pattern, You can get creation status with specified location with request similar as following.
+### Poll status of the long running create session
+
+In long running operation pattern, you can get creation status with specified location with request similar as following.
 
 ```http
 GET https://graph.microsoft.com/v1.0/me/drive/items/{drive-item-id}/workbook/operations/{operation-id}
@@ -167,7 +170,20 @@ GET https://graph.microsoft.com/v1.0/me/drive/items/{drive-item-id}/workbook/ope
 }
 ```
 
-The response with succeeded status looks like:
+Here are the examples of response with status `running`, `succeeded`, and `failed`.
+
+Case of `running`: the operation is still in execution.
+
+```http
+HTTP/1.1 200 OK
+Content-type: application/json
+{
+    "id": {operation-id},
+    "status": "running"
+}
+```
+
+Case of `succeeded`: the operation is successful.
 
 ```http
 HTTP/1.1 200 OK
@@ -179,7 +195,32 @@ Content-type: application/json
 }
 ```
 
-You can get the session creation result through `resourceLocation` with request similar as following.
+Case of `failed`: the operation fails.
+
+```http
+HTTP/1.1 200 OK
+Content-type: application/json
+{
+  "id": {operation-id},
+  "status": "failed",
+  "error":{
+    "code": "internalServerError",
+    "message": "An internal server error occurred while processing the request.",
+    "innerError": {
+      "code": ""internalServerErrorUncategorized",
+      "message": "An unspecified error has occurred.",
+      "innerError": {
+        "code": "GenericFileOpenError",
+        "message": "The workbook cannot be opened."
+      }
+    }
+  }
+}
+```
+
+### Acquire session information
+
+With status of `succeeded`, you can get the created session information through `resourceLocation` with request similar as following.
 
 ```http
 GET https://graph.microsoft.com/v1.0/me/drive/items/{drive-item-id}/workbook/sessionInfoResource(key='{key}')
@@ -187,15 +228,13 @@ GET https://graph.microsoft.com/v1.0/me/drive/items/{drive-item-id}/workbook/ses
 }
 ```
 
-Corresponding response looks like:
+Corresponding response looks like below.
 
 ```http
 HTTP/1.1 200 OK
 Content-type: application/json
 {
     "id": "id-value",
-    "persistChanges": true 
+    "persistChanges": true
 }
 ```
-
-For more details of session creation with long running operation pattern, see [Create session](/graph/api/workbook-createsession?view=graph-rest-1.0).
