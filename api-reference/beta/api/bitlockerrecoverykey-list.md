@@ -1,16 +1,18 @@
 ---
-title: "Get bitlockerRecoveryKey"
-description: "Read the properties and relationships of a bitlockerRecoveryKey object."
+title: "List bitlockerRecoveryKeys"
+description: "Get a list of the bitlockerRecoveryKey objects and their properties."
 author: "hafowler"
 localization_priority: Normal
 ms.prod: "microsoft-identity-platform"
 doc_type: apiPageType
 ---
 
-# Get bitlockerRecoveryKey
+# List bitlockerRecoveryKeys
 Namespace: microsoft.graph
 
-Read the properties and relationships of a [bitlockerRecoveryKey](../resources/bitlockerrecoverykey.md) object.
+[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
+
+Get a list of the [bitlockerRecoveryKey](../resources/bitlockerrecoverykey.md) objects and their properties.
 
 ## Permissions
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
@@ -28,7 +30,7 @@ One of the following permissions is required to call this API. To learn more, in
 }
 -->
 ``` http
-GET /bitlocker/recoveryKeys/{bitlockerRecoveryKeyId}
+GET /bitlocker/recoveryKeys
 ```
 
 ## Optional query parameters
@@ -38,15 +40,15 @@ This method supports some of the OData query parameters to help customize the re
 |Name|Description|
 |:---|:---|
 |Authorization|Bearer {token}. Required.|
-|ocp-client-name|Name of the client performing the API call. Required.|
-|ocp-client-version|Version of the client performing the API call. Required.|
+|ocp-client-name|Application client name. Required.|
+|ocp-client-version|Application client version. Required.|
 
 ## Request body
 Do not supply a request body for this method.
 
 ## Response
 
-If successful, this method returns a `200 OK` response code and a [bitlockerRecoveryKey](../resources/bitlockerrecoverykey.md) object in the response body.
+If successful, this method returns a `200 OK` response code and a collection of [bitlockerRecoveryKey](../resources/bitlockerrecoverykey.md) objects in the response body.
 
 ## Examples
 
@@ -57,7 +59,7 @@ If successful, this method returns a `200 OK` response code and a [bitlockerReco
 }
 -->
 ``` http
-GET https://graph.microsoft.com/beta/bitlocker/recoveryKeys/{bitlockerRecoveryKeyId}
+GET https://graph.microsoft.com/beta/bitlocker/recoveryKeys
 ```
 
 
@@ -66,7 +68,7 @@ GET https://graph.microsoft.com/beta/bitlocker/recoveryKeys/{bitlockerRecoveryKe
 <!-- {
   "blockType": "response",
   "truncated": true,
-  "@odata.type": "microsoft.graph.bitlockerRecoveryKey"
+  "@odata.type": "Collection(microsoft.graph.bitlockerRecoveryKey)"
 }
 -->
 ``` http
@@ -74,14 +76,16 @@ HTTP/1.1 200 OK
 
 Content-Type: application/json
 {
-  "value": {
-    "@odata.type": "#microsoft.graph.bitlockerRecoveryKey",
-    "id": "b465e4e8-e4e8-b465-e8e4-65b4e8e465b4",
-    "createdDateTime": "String (timestamp)",
-    "volumeType": "String",
-    "deviceId": "String",
-    "key": "String"
-  }
+  "value": [
+    {
+      "@odata.type": "#microsoft.graph.bitlockerRecoveryKey",
+      "id": "b465e4e8-e4e8-b465-e8e4-65b4e8e465b4",
+      "createdDateTime": "String (timestamp)",
+      "volumeType": "String",
+      "deviceId": "String",
+      "key": "String"
+    }
+  ]
 }
 ```
 
