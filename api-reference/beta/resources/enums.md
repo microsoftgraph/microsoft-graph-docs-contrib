@@ -48,6 +48,18 @@ Namespace: microsoft.graph
 |message|
 |driveItem|
 |externalItem|
+|site|
+|list|
+|listItem|
+|drive|
+
+### bucketAggregationSortProperty values
+
+|Member|
+|:---|
+|count|
+|keyAsString|
+|keyAsNumber|
 
 ### contactRelationship values
 

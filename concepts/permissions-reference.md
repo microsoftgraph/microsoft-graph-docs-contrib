@@ -1456,7 +1456,7 @@ For more complex scenarios involving multiple permissions, see [Permission scena
 
 |   Permission    |  Display String   |  Description | Admin Consent Required | Microsoft Account supported |
 |:----------------|:------------------|:-------------|:-----------------------|:-----------------------|
-| _ExternalItem.Read.All_ | Read external data | Allows an app to read external data ingested via the Microsoft Search indexing API| Yes | No |
+| _ExternalItem.ReadWrite.All_ | Read or write external data | Allows an app to ingest  via the Microsoft Graph Connectors indexing API, or query data ingested via the Microsoft Graph Connectors| Yes | No |
 
 ### Remarks
 Search permissions are only valid for work or school accounts.
@@ -1469,7 +1469,7 @@ Access to data via search requires the corresponding permission. Ex : _Files.Rea
 
 #### Application
 
-* _ExternalItem.Read.All__:  Access external data from the [search API](/graph/api/resources/search-api-overview) (`POST /search/query`).
+* _ExternalItem.ReadWrite.All_ :  Access external data from the [search API](/graph/api/resources/search-api-overview) (`POST /search/query`).
 
 ---
 
