@@ -28,7 +28,7 @@ One of the following permissions is required to call this API. To learn more, in
 <!-- { "blockType": "ignored" } -->
 
 ```http
-GET /compliance/ediscovery/cases({id})/reviewSets
+GET /compliance/ediscovery/cases/{id}/reviewSets
 ```
 
 ## Request headers
@@ -57,7 +57,7 @@ The following is an example of the request.
 }-->
 
 ```http
-GET https://graph.microsoft.com/beta/compliance/ediscovery/cases(6f65a8e4-c6a0-4cff-8a81-c9ab5df7290d)reviewSets
+GET https://graph.microsoft.com/beta/compliance/ediscovery/cases/6f65a8e4-c6a0-4cff-8a81-c9ab5df7290d/reviewSets
 ```
 
 ### Response
