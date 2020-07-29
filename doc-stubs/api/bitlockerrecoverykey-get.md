@@ -1,9 +1,9 @@
 ---
 title: "Get bitlockerRecoveryKey"
 description: "Read the properties and relationships of a bitlockerRecoveryKey object."
-author: "**TODO: Provide Github Name. See [topic-level metadata reference](https://msgo.azurewebsites.net/add/document/guidelines/metadata.html#topic-level-metadata)**"
+author: "hafowler"
 localization_priority: Normal
-ms.prod: "**TODO: Add MS prod. See [topic-level metadata reference](https://msgo.azurewebsites.net/add/document/guidelines/metadata.html#topic-level-metadata)**"
+ms.prod: "microsoft-identity-platform"
 doc_type: apiPageType
 ---
 
@@ -17,9 +17,9 @@ One of the following permissions is required to call this API. To learn more, in
 
 |Permission type|Permissions (from most to least privileged)|
 |:---|:---|
-|Delegated (work or school account)|**TODO: Provide applicable permissions.**|
-|Delegated (personal Microsoft account)|**TODO: Provide applicable permissions.**|
-|Application|**TODO: Provide applicable permissions.**|
+|Delegated (work or school account)|BitLocker.ReadBasic.All, BitLocker.Read.All|
+|Delegated (personal Microsoft account)|Not supported|
+|Application|BitLocker.ReadBasic.All, BitLocker.Read.All|
 
 ## HTTP request
 
@@ -38,6 +38,8 @@ This method supports some of the OData query parameters to help customize the re
 |Name|Description|
 |:---|:---|
 |Authorization|Bearer {token}. Required.|
+|ocp-client-name|Name of the client performing the API call. Required.|
+|ocp-client-version|Version of the client performing the API call. Required.|
 
 ## Request body
 Do not supply a request body for this method.
@@ -55,7 +57,7 @@ If successful, this method returns a `200 OK` response code and a [bitlockerReco
 }
 -->
 ``` http
-GET https://graph.microsoft.com/v1.0/bitlocker/recoveryKeys/{bitlockerRecoveryKeyId}
+GET https://graph.microsoft.com/beta/bitlocker/recoveryKeys/{bitlockerRecoveryKeyId}
 ```
 
 

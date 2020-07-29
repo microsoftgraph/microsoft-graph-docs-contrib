@@ -1,15 +1,15 @@
 ---
 title: "Enum values"
 description: "Microsoft Graph enumeration values"
-author: "**TODO: Provide Github Name. See [topic-level metadata reference](https://msgo.azurewebsites.net/add/document/guidelines/metadata.html#topic-level-metadata)**"
+author: "hafowler"
 localization_priority: Normal
-ms.prod: "**TODO: Add MS prod. See [topic-level metadata reference](https://msgo.azurewebsites.net/add/document/guidelines/metadata.html#topic-level-metadata)**"
+ms.prod: "microsoft-identity-platform"
 doc_type: enumTypes
 ---
 
 ### volumeType values 
 
-**TODO: Add Description**
+Indicates the type of volume the BitLocker key is associated with
 
 |Members|
 |:---|
