@@ -7,13 +7,15 @@ description: "Automatically generated file. DO NOT MODIFY"
 MSHTTPClient *httpClient = [MSClientFactory createHTTPClientWithAuthenticationProvider:authenticationProvider];
 
 NSString *MSGraphBaseURL = @"https://graph.microsoft.com/beta/";
-NSMutableURLRequest *urlRequest = [NSMutableURLRequest requestWithURL:[NSURL URLWithString:[MSGraphBaseURL stringByAppendingString:@"/riskDetections/c2b6c2b9-dddc-acd0-2b39-d519d803dbc3"]]];
+NSMutableURLRequest *urlRequest = [NSMutableURLRequest requestWithURL:[NSURL URLWithString:[MSGraphBaseURL stringByAppendingString:@"/riskDetections"]]];
 [urlRequest setHTTPMethod:@"GET"];
 
 MSURLSessionDataTask *meDataTask = [httpClient dataTaskWithRequest:urlRequest 
 	completionHandler: ^(NSData *data, NSURLResponse *response, NSError *nserror) {
 
-		MSGraphRiskDetection *riskDetection = [[MSGraphRiskDetection alloc] initWithData:data error:&nserror];
+		NSError *jsonError = nil;
+		MSCollection *collection = [[MSCollection alloc] initWithData:data error:&jsonError];
+		MSGraphRiskDetection *riskDetection = [[MSGraphRiskDetection alloc] initWithDictionary:[[collection value] objectAtIndex: 0] error:&nserror];
 
 }];
 

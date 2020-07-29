@@ -305,13 +305,29 @@ Content-type: application/json
 ### Example 4
 #### Request
 The fourth example gets specifically the [user purpose](../resources/userpurpose.md) settings of the signed-in user's mailbox.
+
+# [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "get_mailboxsettings_4"
 }-->
-```http
+```msgraph-interactive
 GET https://graph.microsoft.com/beta/me/mailboxSettings/userPurpose
 ```
+# [C#](#tab/csharp)
+[!INCLUDE [sample-code](../includes/snippets/csharp/get-mailboxsettings-4-csharp-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [JavaScript](#tab/javascript)
+[!INCLUDE [sample-code](../includes/snippets/javascript/get-mailboxsettings-4-javascript-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Objective-C](#tab/objc)
+[!INCLUDE [sample-code](../includes/snippets/objc/get-mailboxsettings-4-objc-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+---
+
 #### Response
 The response includes only the [user purpose](../resources/userpurpose.md) settings.
 
