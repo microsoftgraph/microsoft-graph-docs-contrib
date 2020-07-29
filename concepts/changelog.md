@@ -159,7 +159,10 @@ Adding PSTN and direct routing call reports to Microsoft Graph (beta).
 | **Change type** | **Version** | **Description**                          |
 | :-------------- | :---------- | :--------------------------------------- |
 |Addition|beta and v1.0 |Added the [workbookOperation](/graph/api/resources/workbookoperation) relationship to the [workbook](/graph/api/resources/workbook?view=graph-rest-beta) entity. |
-|Addition|beta and v1.0 |Added the  [Get workbookOperation](/graph/api/workbookoperation-get) method to the [workbookOperation](/graph/api/resources/workbookoperation?view=graph-rest-beta) entit## June 2020
+|Addition|beta and v1.0 |Added the  [Get workbookOperation](/graph/api/workbookoperation-get) method to the [workbookOperation](/graph/api/resources/workbookoperation?view=graph-rest-beta) entity
+
+
+## June 2020
 
 ### Calendar
 | **Change type** | **Version**   | **Description**                          |
