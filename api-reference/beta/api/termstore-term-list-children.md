@@ -12,14 +12,14 @@ Namespace: microsoft.graph.termStore
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Get the first level children [microsoft.graph.termstore.term] of a [microsoft.graph.termstore.set] or [microsoft.graph.termstore.term] resource using the children navigation property.
+Get the first level children of a [set] or [term] resource using the children navigation property.
 
 ## Permissions
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
 
 |Permission type|Permissions (from most to least privileged)|
 |:---|:---|
-|Delegated (work or school account) | Sites.Read.All and TermStore.Read.All, Sites.Read.All and TermStore.ReadWrite.All |
+|Delegated (work or school account) | TermStore.Read.All, TermStore.ReadWrite.All |
 |Delegated (personal Microsoft account) | Not supported.    |
 |Application | Not supported. |
 
@@ -91,8 +91,8 @@ Content-Type: application/json
 }
 ```
 
-[microsoft.graph.termStore.term]: ../resources/termstore-term.md
-[microsoft.graph.termStore.set]: ../resources/termstore-set.md
+[term]: ../resources/termstore-term.md
+[set]: ../resources/termstore-set.md
 
 <!--
 {
