@@ -1,6 +1,6 @@
 ---
 title: "reportRoot: getM365AppUserCounts"
-description: "Enables you to understand the trend in the number of active users for each app – Outlook, Word, Excel, PowerPoint, OneNote, and Teams in your organization."
+description: "Get a report that provides the trend in the number of active users for each app – Outlook, Word, Excel, PowerPoint, OneNote, and Teams - in your organization."
 localization_priority: Normal
 ms.prod: "reports"
 author: "pranoychaudhuri"
@@ -13,7 +13,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Enables you to understand the trend in the number of active users for each app – Outlook, Word, Excel, PowerPoint, OneNote, and Teams - in your organization.
+Get a report that provides the trend in the number of active users for each app – Outlook, Word, Excel, PowerPoint, OneNote, and Teams - in your organization.
 
 > **Note:** For details about different report views and names, see [Microsoft 365 reports - Microsoft 365 Apps usage](https://docs.microsoft.com/microsoft-365/admin/activity-reports/microsoft365-apps-usage).
 
