@@ -146,6 +146,8 @@ Although `clientState` is not required, you must include it to comply with our r
 
 If successful, Microsoft Graph returns a `201 Created` code and a [subscription](/graph/api/resources/subscription?view=graph-rest-1.0) object in the body.
 
+> **Note:** any query string parameter included in the `notificationUrl` property will be included in the HTTP POST request when notifications are being delivered.
+
 #### Notification endpoint validation
 
 Microsoft Graph validates the notification endpoint provided in the `notificationUrl` property of the subscription request before creating the subscription. The validation process occurs as follows:
