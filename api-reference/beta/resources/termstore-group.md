@@ -2,7 +2,7 @@
 author: mohitpcad
 title: Group resource type
 doc_type: "resourcePageType"
-description: "Describes the group entity in the termStore"
+description: "Represents a group used in a term store."
 localization_priority: Normal
 ms.prod: "Sharepoint"
 ---
@@ -14,7 +14,7 @@ Namespace: microsoft.graph.termStore
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 
-The **group** resource represents the group used in [termstore](../resources/termstore-store.md).
+Represents a group used in a [termstore](../resources/termstore-store.md).
 
 Inherits from [entity](../resources/entity.md).
 
@@ -23,9 +23,9 @@ Inherits from [entity](../resources/entity.md).
 
 | Method                                                   | Return type       |    Description
 |:---------------------------------------------------------|:------------------|:---------------------
-| [Create termGroup](../api/termstore-group-post.md)                     | [microsoft.graph.termStore.group] | Create a group in [termstore].
-| [Get termGroup](../api/termstore-store-get-group.md)                           | [microsoft.graph.termStore.group] | Retrieve data of a group in [termstore].
-| [Delete termGroup](../api/termstore-group-delete.md)                     | None |  Delete group in [termstore].
+| [Create termGroup](../api/termstore-group-post.md)                     | [microsoft.graph.termStore.group] | Create a group in a [termstore].
+| [Get termGroup](../api/termstore-store-get-group.md)                           | [microsoft.graph.termStore.group] | Retrieve the data of a group in a [termstore].
+| [Delete termGroup](../api/termstore-group-delete.md)                     | None |  Delete a group in a [termstore].
 
 ## Properties
 
