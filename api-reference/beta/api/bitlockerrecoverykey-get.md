@@ -52,7 +52,9 @@ If successful, this method returns a `200 OK` response code and a [bitlockerReco
 
 ## Examples
 
-### Request
+### Example 1: Get metadata without secret recovery key by specifying key id
+
+#### Request
 <!-- {
   "blockType": "request",
   "name": "get_bitlockerrecoverykey"
@@ -63,7 +65,7 @@ GET https://graph.microsoft.com/beta/bitlocker/recoveryKeys/{bitlockerRecoveryKe
 ```
 
 
-### Response
+#### Response
 **Note:** The response object shown here might be shortened for readability.
 <!-- {
   "blockType": "response",
@@ -73,8 +75,44 @@ GET https://graph.microsoft.com/beta/bitlocker/recoveryKeys/{bitlockerRecoveryKe
 -->
 ``` http
 HTTP/1.1 200 OK
+Content-type: application/json
 
-Content-Type: application/json
+{
+  "value": {
+    "@odata.type": "#microsoft.graph.bitlockerRecoveryKey",
+    "id": "b465e4e8-e4e8-b465-e8e4-65b4e8e465b4",
+    "createdDateTime": "String (timestamp)",
+    "volumeType": "String",
+    "deviceId": "String"
+  }
+}
+```
+
+### Example 2: Get metadata with secret recovery key by specifying key id
+
+#### Request
+<!-- {
+  "blockType": "request",
+  "name": "get_bitlockerrecoverykey"
+}
+-->
+``` http
+GET https://graph.microsoft.com/beta/bitlocker/recoveryKeys/{bitlockerRecoveryKeyId}?$select=key
+```
+
+
+#### Response
+**Note:** The response object shown here might be shortened for readability.
+<!-- {
+  "blockType": "response",
+  "truncated": true,
+  "@odata.type": "microsoft.graph.bitlockerRecoveryKey"
+}
+-->
+``` http
+HTTP/1.1 200 OK
+Content-type: application/json
+
 {
   "value": {
     "@odata.type": "#microsoft.graph.bitlockerRecoveryKey",
@@ -86,4 +124,3 @@ Content-Type: application/json
   }
 }
 ```
-
