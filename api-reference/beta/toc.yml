@@ -9637,28 +9637,6 @@ items:
               href: api/subscribedsku-get.md
       - name: Identity and sign-in
         items:
-        - name: Audit logs
-          href: resources/azure-ad-auditlog-overview.md
-          items:
-          - name: Directory audit
-            href: resources/directoryaudit.md
-            items:
-            - name: List directory audits
-              href: api/directoryaudit-list.md
-            - name: Get directory audit
-              href: api/directoryaudit-get.md
-          - name: Sign-in
-            href: resources/signin.md
-            items:
-            - name: List sign-ins
-              href: api/signin-list.md
-            - name: Get sign-in
-              href: api/signin-get.md
-          - name: Provisioning logs
-            href: resources/provisioningobjectsummary.md
-            items:
-            - name: List provisioning
-              href: api/provisioningobjectsummary-list.md
         - name: Authentication flows policy
           items:
           - name: Authentication flows policy
@@ -9847,7 +9825,7 @@ items:
             - name: Confirm compromised
               href: api/riskyusers-confirmcompromised.md
             - name: Dismiss
-              href: api/riskyusers-dismiss.md      
+              href: api/riskyusers-dismiss.md
         - name: Identity provider
           href: resources/identityprovider.md
           items:
@@ -9863,28 +9841,6 @@ items:
             href: api/identityprovider-delete.md
           - name: List available provider types
             href: api/identityprovider-list-availableprovidertypes.md
-        - name: Information protection
-          items:    
-          - name: Threat assessment
-            items:
-            - name: Overview
-              href: resources/threatassessment-api-overview.md
-            - name: Threat assessment request
-              href: resources/threatassessmentrequest.md
-            - name: Mail assessment request
-              href: resources/mailassessmentrequest.md
-            - name: Email file assessment request
-              href: resources/emailfileassessmentrequest.md
-            - name: File assessment request
-              href: resources/fileAssessmentRequest.md
-            - name: Url assessment request
-              href: resources/urlassessmentrequest.md
-            - name: List
-              href: api/informationprotection-list-threatassessmentrequests.md
-            - name: Create
-              href: api/informationprotection-post-threatassessmentrequests.md
-            - name: Get
-              href: api/threatassessmentrequest-get.md
         - name: Invitation manager
           href: resources/invitation.md
           items:
@@ -10965,8 +10921,33 @@ items:
             href: api/multivaluelegacyextendedproperty-get.md
     - name: Reports
       items:
+      - name: Azure AD activity reports
+        items:
+        - name: Overview
+          href: resources/azure-ad-auditlog-overview.md
+        - name: Directory audit
+          href: resources/directoryaudit.md
+          items:
+          - name: List directory audits
+            href: api/directoryaudit-list.md
+          - name: Get directory audit
+            href: api/directoryaudit-get.md
+        - name: Sign-in
+          href: resources/signin.md
+          items:
+          - name: List sign-ins
+            href: api/signin-list.md
+          - name: Get sign-in
+            href: api/signin-get.md
+        - name: Provisioning
+          href: resources/provisioningobjectsummary.md
+          items:
+          - name: List provisioning
+            href: api/provisioningobjectsummary-list.md
       - name: Identity and access reports
         items:
+        - name: Overview
+          href: resources/report-identity-access.md
         - name: AD FS application activity
           items:
           - name: Relying party detailed summary
@@ -11351,6 +11332,26 @@ items:
             href: api/informationprotectionlabel-evaluateremoval.md
           - name: Extract label
             href: api/informationprotectionlabel-extractlabel.md
+        - name: Threat assessment
+          items:
+          - name: Overview
+            href: resources/threatassessment-api-overview.md
+          - name: Threat assessment request
+            href: resources/threatassessmentrequest.md
+          - name: Mail assessment request
+            href: resources/mailassessmentrequest.md
+          - name: Email file assessment request
+            href: resources/emailfileassessmentrequest.md
+          - name: File assessment request
+            href: resources/fileAssessmentRequest.md
+          - name: Url assessment request
+            href: resources/urlassessmentrequest.md
+          - name: List
+            href: api/informationprotection-list-threatassessmentrequests.md
+          - name: Create
+            href: api/informationprotection-post-threatassessmentrequests.md
+          - name: Get
+            href: api/threatassessmentrequest-get.md
       - name: Secure scores
         href: resources/securescores.md
         items:
