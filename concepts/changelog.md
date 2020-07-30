@@ -29,6 +29,12 @@ For a summary of the value of these API changes, as well as recent tools, compon
 | Removal | beta and v1.0 | Removed the erronously introduced **sequenceNumber** property from the [changeNotification](/graph/api/resources/changenotification) type.|
 | Addition | beta | Adds [presence](/graph/api/resources/presence) to the resources supported for [change notifications](/graph/webhooks). |
 
+### Change tracking
+
+| **Change type** | **Version**   | **Description**                          |
+| :-------------- | :------------ | :--------------------------------------- |
+| Addition | v1.0 | Change tracking through [delta queries](/graph/api/event-delta) is available for Microsoft Graph for US Government. |
+
 ### Cloud communications
 
 | **Change type** | **Version**   | **Description**                          |
@@ -162,11 +168,6 @@ Adding PSTN and direct routing call reports to Microsoft Graph (beta).
 |Addition|beta and v1.0 |Added the  [Get workbookOperation](/graph/api/workbookoperation-get) method to the [workbookOperation](/graph/api/resources/workbookoperation?view=graph-rest-beta) entity
 
 ## June 2020
-
-### Change tracking
-| **Change type** | **Version**   | **Description**                          |
-| :-------------- | :------------ | :--------------------------------------- |
-| Addition | v1.0 | Change tracking through [delta queries](/graph/api/event-delta) is available for Microsoft Graph for US Government. |
 
 ### Calendar
 | **Change type** | **Version**   | **Description**                          |
