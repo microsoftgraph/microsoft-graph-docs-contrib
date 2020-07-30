@@ -36,16 +36,18 @@ Search requests run on behalf of the user. Search results are scoped to enforce 
 ### Scope search based on entity types
 
 Define the scope of the search request using the **entityTypes** property in the **query** request payload.
-The following are the supported entity types:
+The following table describes the types available to query and any of the permission required to access the data .
 
-- [event](event.md)
-- [message](message.md)
-- [drive](drive.md)
-- [driveItem](driveitem.md)
-- [list](list.md)
-- [listItem](listitem.md)
-- [site](site.md)
-- [externalItem](externalitem.md)
+| EntityType | Any of the scope required to access the items|
+|:------------------|:---------|
+|[message](message.md)|Mail.Read, Mail.ReadWrite|
+|[event](event.md) |Calendars.Read, Calendars.ReadWrite|
+|[driveItem](driveitem.md)|Files.Read.All, Files.ReadWrite.All, Sites.Read.All, Sites.ReadWrite.All|
+|[drive](drive.md)|Files.Read.All, Files.ReadWrite.All, Sites.Read.All, Sites.ReadWrite.All|
+|[list](list.md)|Sites.Read.All, Sites.ReadWrite.All|
+|[listItem](listitem.md)|Sites.Read.All, Sites.ReadWrite.All|
+|[site](site.md)|Sites.Read.All, Sites.ReadWrite.All|
+|[externalItem](externalitem.md)|ExternalItem.Read.All|
 
 ### Page search results
 
