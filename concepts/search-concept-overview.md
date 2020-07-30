@@ -41,19 +41,19 @@ In addition, you can index and search external content via the [externalItem](/g
 
 Looking for the API reference for this service?
 
-- [Use the Microsoft Search API to query data](/graph/api/resources/search-api-overview?view=graph-rest-beta)
+- [Use the Microsoft Search API to query data](/graph/api/resources/search-api-overview?view=graph-rest-beta) TODOSEARCHAPI Fix link
 - [Use the Microsoft Search API to index data](/graph/api/resources/indexing-api-overview?view=graph-rest-beta)
 
 ## Next steps
 
 - Learn more about [Microsoft Search](/microsoftsearch/).
 - Learn more about a few key use cases:
-  - [Search Outlook messages](search-concept-messages.md)
-  - [Search calendar events](search-concept-events.md)
   - [Manage connections to index external content](search-index-manage-connections.md)
   - [Index external content](search-index-manage-items.md)
+  - [Search Outlook messages](search-concept-messages.md)
+  - [Search calendar events](search-concept-events.md)
   - [Search custom types (externalItem)](search-concept-custom-types.md)
-  - [Search files (including externalFile)](search-concept-files.md)
+  - [Search files](search-concept-files.md)
 - Explore the search APIs in the [Graph Explorer](https://developer.microsoft.com/graph/graph-explorer).
 - Download the [sample search connector](https://github.com/microsoftgraph/msgraph-search-connector-sample) from GitHub.
 
