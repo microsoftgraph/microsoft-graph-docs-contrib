@@ -13,7 +13,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Enables you to understand the trend of active users across all apps for each platform – Windows, Mac, Web, and Mobile in your organization.
+Enables you to understand the trend of active users across all apps for each platform – Windows, Mac, web, and mobile - in your organization.
 
 > **Note:** For details about different report views and names, see [Microsoft 365 reports - Microsoft 365 Apps usage](https://docs.microsoft.com/microsoft-365/admin/activity-reports/microsoft365-apps-usage).
 
@@ -27,7 +27,7 @@ One of the following permissions is required to call this API. To learn more, in
 | Delegated (personal Microsoft account) | Not supported.                              |
 | Application                            | Reports.Read.All                            |
 
-**Note**: For delegated permissions to allow apps to read service usage reports on behalf of a user, the tenant administrator must have assigned the user the appropriate Azure AD limited administrator role. For more details, see [Authorization for APIs to read Microsoft 365 usage reports](/graph/reportroot-authorization).
+>**Note**: For delegated permissions to allow apps to read service usage reports on behalf of a user, the tenant administrator must have assigned the user the appropriate Azure AD limited administrator role. For details, see [Authorization for APIs to read Microsoft 365 usage reports](/graph/reportroot-authorization).
 
 ## HTTP request
 
@@ -43,7 +43,9 @@ In the request URL, provide the following parameter with a valid value.
 
 | Parameter | Type   | Description                                                                                                                                                                                                                                                       |
 | :-------- | :----- | :---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| period    | string | Specifies the length of time over which the report is aggregated. The supported values for {period_value} are: D7, D30, D90, and D180. These values follow the format D*n* where *n* represents the number of days over which the report is aggregated. Required. |
+| period    | string | Specifies the length of time over which the report is aggregated. The supported values for {period_value} are: `D7`, `D30`, `D90`, and `D180`. These values follow the format D*n* where *n* represents the number of days over which the report is aggregated. Required. |
+
+## Optional query parameters
 
 This method supports the `$format` [OData query parameter](/graph/query-parameters) to customize the response. The default output type is text/csv. However, if you want to specify the output type, you can use the OData `$format` query parameter set to text/csv or application/json.
 
@@ -55,15 +57,15 @@ This method supports the `$format` [OData query parameter](/graph/query-paramete
 
 ## Response
 
-If successful, this method returns a `200 OK` response code and an **[report](../resources/intune-shared-report.md)** object in the response body. Report data is contained in the `content` property of **[report](../resources/intune-shared-report.md)** object.
+If successful, this method returns a `200 OK` response code and an [report](../resources/intune-shared-report.md) object in the response body. Report data is contained in the **content** property of a **report** object.
 
 ### CSV
 
-If successful, requesting the `content` property returns a `302 Found` response that redirects to a preauthenticated download URL for the report. That URL can be found in the `Location` header in the response.
+If successful, requesting the **content** property returns a `302 Found` response that redirects to a preauthenticated download URL for the report. That URL can be found in the `Location` header in the response.
 
 Preauthenticated download URLs are only valid for a short period of time (a few minutes) and do not require an `Authorization` header.
 
-The CSV file has the following headers for columns.
+The CSV file has the following headers for columns:
 
 - Report Refresh Date
 - Report Period
@@ -77,17 +79,17 @@ The CSV file has the following headers for columns.
 
 ### JSON
 
-If successful, requesting the `content` property returns a `200 OK` response code and a JSON object in response body.
+If successful, requesting the **content** property returns a `200 OK` response code and a JSON object in response body.
 
-## Example
+## Examples
 
-### CSV
+### Example 1: CSV output
 
 The following is an example that outputs CSV.
 
 #### Request
 
-The following is an example of the request to get `content` property.
+The following is an example of the request to get the **content** property.
 
 
 <!-- {
@@ -127,13 +129,13 @@ Content-Type: application/octet-stream
 Report Refresh Date,Report Period,Report Date,Windows,Mac,Mobile,Web
 ```
 
-### JSON
+### Example 2: JSON output
 
 The following is an example that returns JSON.
 
 #### Request
 
-The following is an example of the request to get `content` property.
+The following is an example of the request to get the **content** property.
 
 
 <!-- {
