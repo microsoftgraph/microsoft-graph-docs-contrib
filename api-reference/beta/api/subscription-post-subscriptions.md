@@ -45,7 +45,7 @@ Creating a subscription requires read permission to the resource. For example, t
 
 > **Note:** `/teams/allMessages` and `/chats/allMessages` are currently in preview. 
 During the preview, you may use this API without fees, subject to the [Microsoft APIs Terms of Use](https://docs.microsoft.com/legal/microsoft-apis/terms-of-use?context=graph/context). 
-Upon general availability, it will only be available to users and tenants that are licensed for [Communication Data Loss Prevention for Teams](https://docs.microsoft.com/en-us/office365/servicedescriptions/microsoft-365-service-descriptions/microsoft-365-tenantlevel-services-licensing-guidance/microsoft-365-security-compliance-licensing-guidance#communication-data-loss-prevention-for-teams). 
+Upon general availability, it will only be available to users and tenants that have the [required licenses](/graph/teams-licenses). 
 Since `/teams/allMessages` and `/chats/allMessages` deliver notifications for all users in the tenant, all users in the tenant must be licensed. 
 Upon general availability, Microsoft may require you to pay additional fees based on the number of messages accessed through the API.
 
