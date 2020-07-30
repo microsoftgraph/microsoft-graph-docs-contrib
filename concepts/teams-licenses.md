@@ -8,7 +8,7 @@ ms.prod: "microsoft-teams"
 
 # Licenses for subscribing to chat messages
 
-Creating chat message subscriptions with application permissions for /teams/allMessages` and `/chats/allMessages` will soon require one of the following licenses:
+Creating chat message subscriptions with application permissions for `/teams/allMessages` and `/chats/allMessages` will soon require one of the following licenses:
 
 * Office 365 E5
 * Office 365 A5
