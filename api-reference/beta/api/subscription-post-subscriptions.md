@@ -41,7 +41,7 @@ Creating a subscription requires read permission to the resource. For example, t
 
 ### chatMessage (Microsoft Teams)
 
-**chatMessage** subscriptions with delegated permissions do not support resource data (includeResourceData must be false), 
+**chatMessage** subscriptions with delegated permissions do not support resource data (**includeResourceData** must be `false`), 
 and do not require [encryption](/graph/webhooks-with-resource-data).
 
 **chatMessage** subscriptions with application permissions include resource data, and require [encryption](/graph/webhooks-with-resource-data). Subscription creation will fail if [encryptionCertificate](../resources/subscription.md) is not specified. Before creating a **chatMessage** subscription, you must request access. For details, see [Protected APIs in Microsoft Teams](/graph/teams-protected-apis).
