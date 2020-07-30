@@ -1347,14 +1347,26 @@ items:
           items:
           - name: Call record
             href: resources/callrecords-callrecord.md
-          - name: Get call record
+          - name: Get
             href: api/callrecords-callrecord-get.md
         - name: Session
           items:
           - name: Session
             href: resources/callrecords-session.md
-          - name: List sessions
+          - name: List
             href: api/callrecords-session-list.md
+        - name: PSTN calls
+          items:
+          - name: PSTN log row
+            href: resources/callrecords-pstncalllogrow.md
+          - name: List PSTN calls
+            href: api/callrecords-callrecord-getpstncalls.md
+        - name: Direct routing calls
+          items:
+          - name: Direct routing log row
+            href: resources/callrecords-directroutinglogrow.md
+          - name: List direct routing calls
+            href: api/callrecords-callrecord-getdirectroutingcalls.md
     - name: Cross-device experiences
       displayName: Project Rome
       items:
@@ -10152,6 +10164,19 @@ items:
               href: api/accesspackage-list-accesspackageresourcerolescopes.md
             - name: Create
               href: api/accesspackage-post-accesspackageresourcerolescopes.md
+          - name: Connected organization
+            href: resources/connectedorganization.md
+            items:
+            - name: List
+              href: api/connectedorganization-list.md
+            - name: Create
+              href: api/connectedorganization-post.md
+            - name: Get
+              href: api/connectedorganization-get.md
+            - name: Update
+              href: api/connectedorganization-update.md
+            - name: Delete
+              href: api/connectedorganization-delete.md
           - name: Entitlement management settings
             href: resources/entitlementmanagementsettings.md
             items:
@@ -11219,6 +11244,50 @@ items:
             href: api/externalitem-update.md
           - name: Delete
             href: api/externalitem-delete.md
+    - name: Compliance
+      displayName: Compliance API, Microsoft Graph Compliance API
+      items:
+      - name: Overview
+        href: resources/complianceapioverview.md
+      - name: eDiscovery
+        items:
+        - name: Overview
+          href: resources/eDiscoveryapioverview.md
+        - name: eDiscovery case
+          href: resources/ediscoverycase.md
+          items:
+          - name: List
+            href: api/ediscoverycase-list.md
+          - name: Create
+            href: api/ediscoverycase-post.md
+          - name: Get
+            href: api/ediscoverycase-get.md
+          - name: Update
+            href: api/ediscoverycase-update.md
+          - name: Delete
+            href: api/ediscoverycase-delete.md
+        - name: eDiscovery Review set
+          href: resources/reviewset.md
+          items:
+          - name: List
+            href: api/reviewset-list.md
+          - name: Create
+            href: api/reviewset-post.md
+          - name: Get
+            href: api/reviewset-get.md
+        - name: Review set query
+          href: resources/reviewsetquery.md
+          items:
+          - name: List
+            href: api/reviewsetquery-list.md
+          - name: Create
+            href: api/reviewsetquery-post.md
+          - name: Get
+            href: api/reviewsetquery-get.md
+          - name: Update
+            href: api/reviewsetquery-update.md
+          - name: Delete
+            href: api/reviewsetquery-delete.md
     - name: Security
       displayname: Security API, Microsoft Graph Security API
       items:
