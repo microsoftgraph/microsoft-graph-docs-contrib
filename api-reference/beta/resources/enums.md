@@ -15,12 +15,12 @@ Namespace: microsoft.graph
 
 Indicates the type of volume the BitLocker key is associated with
 
-|Members|
-|:---|
-|operatingSystemVolume|
-|fixedDataVolume|
-|removableDataVolume|
-|unknownFutureValue|
+| Member
+|:--------------
+| operatingSystemVolume
+| fixedDataVolume
+| removableDataVolume
+| unknownFutureValue
 
 ### attachmentType values
 
