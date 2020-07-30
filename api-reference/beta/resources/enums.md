@@ -13,8 +13,6 @@ Namespace: microsoft.graph
 
 ### volumeType values 
 
-Indicates the type of volume the BitLocker key is associated with
-
 | Member
 |:--------------
 | operatingSystemVolume
