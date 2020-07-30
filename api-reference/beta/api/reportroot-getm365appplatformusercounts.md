@@ -47,7 +47,7 @@ In the request URL, provide the following parameter with a valid value.
 
 ## Optional query parameters
 
-This method supports the `$format` [OData query parameter](/graph/query-parameters) to customize the response. The default output type is text/csv. However, if you want to specify the output type, you can use the OData `$format` query parameter set to text/csv or application/json.
+This method supports the `$format` [OData query parameter](/graph/query-parameters) to customize the response. The default output type is text/csv. However, if you want to specify the output type, you can use the OData `$format` query parameter to set the default output to text/csv or application/json.
 
 ## Request headers
 
