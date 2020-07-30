@@ -57,6 +57,10 @@ This method supports the `$format`, `$top`, and `$skipToken` [OData query parame
 | :------------ | :------------------------ |
 | Authorization | Bearer {token}. Required. |
 
+## Request body
+
+Do not supply a request body with this method.
+
 ## Response
 
 If successful, this method returns a `200 OK` response code and an **[report](../resources/intune-shared-report.md)** object in the response body. Report data is contained in the `content` property of **[report](../resources/intune-shared-report.md)** object.
