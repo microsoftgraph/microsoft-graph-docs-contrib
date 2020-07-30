@@ -27,7 +27,7 @@ One of the following permissions is required to call this API. To learn more, in
 | Delegated (personal Microsoft account) | Not supported.                              |
 | Application                            | Reports.Read.All                            |
 
->**Note:** For delegated permissions to allow apps to read service usage reports on behalf of a user, the tenant administrator must have assigned the user the appropriate Azure AD limited administrator role. For details, see [Authorization for APIs to read Microsoft 365 usage reports](/graph/reportroot-authorization).
+> **Note:** For delegated permissions to allow apps to read service usage reports on behalf of a user, the tenant administrator must have assigned the user the appropriate Azure AD limited administrator role. For details, see [Authorization for APIs to read Microsoft 365 usage reports](/graph/reportroot-authorization).
 
 ## HTTP request
 
@@ -61,7 +61,7 @@ Do not supply a request body with this method.
 
 ## Response
 
-If successful, this method returns a `200 OK` response code and an [report](../resources/intune-shared-report.md) object in the response body. Report data is contained in the **content** property of a **report** object.
+If successful, this method returns a `200 OK` response code and a [report](../resources/intune-shared-report.md) object in the response body. Report data is contained in the **content** property of the **report** object.
 
 ### CSV
 
