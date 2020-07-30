@@ -101,7 +101,7 @@ items:
             href: outlook-get-free-busy-schedule.md
           - name: Propose new meeting times
             href: outlook-calendar-meeting-proposals.md
-          - name: Organize online meetings
+          - name: Set event as online meeting
             href: outlook-calendar-online-meetings.md
           - name: Choose an online meeting API
             href: choose-online-meeting-api.md
