@@ -11,6 +11,17 @@ author: "MSGraphDocsvTeam"
 
 Namespace: microsoft.graph
 
+### volumeType values 
+
+Indicates the type of volume the BitLocker key is associated with
+
+|Members|
+|:---|
+|operatingSystemVolume|
+|fixedDataVolume|
+|removableDataVolume|
+|unknownFutureValue|
+
 ### attachmentType values
 
 | Member
