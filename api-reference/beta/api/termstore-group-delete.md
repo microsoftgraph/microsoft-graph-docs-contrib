@@ -12,7 +12,7 @@ Namespace: microsoft.graph.termStore
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Delete a [group](../resources/termstore-group.md) object in the [termstore].
+Delete a [group](../resources/termstore-group.md) object in the term [store].
 
 ## Permissions
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
@@ -72,7 +72,7 @@ HTTP/1.1 204 No Content
 [microsoft.graph.termStore.group]: ../resources/termstore-group.md
 [microsoft.graph.termStore.store]: ../resources/termstore-store.md
 [microsoft.graph.termStore.set]: ../resources/termstore-set.md
-[termstore]: ../resources/termstore-store.md
+[store]: ../resources/termstore-store.md
 
 <!--
 {
