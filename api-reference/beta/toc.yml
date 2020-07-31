@@ -11450,62 +11450,62 @@ items:
           href: api/sitepage-delete.md
         - name: Publish page
           href: api/sitepage-publish.md
-    - name: Taxonomy   
-      displayname: Taxonomy API
-      items:
-      - name: Store
-        href: resources/termstore-store.md
+      - name: Taxonomy   
+        displayname: Taxonomy API
         items:
-        - name: Get
-          href: api/termstore-store-get.md        
-        - name: Update
-          href: api/termstore-store-update.md
-      - name: Group        
-        href: resources/termstore-group.md
-        items:        
-        - name: Create
-          href: api/termstore-group-post.md
-        - name: Get 
-          href: api/termstore-store-get-group.md          
-        - name: Delete
-          href: api/termstore-group-delete.md   
-        - name: List  
-          href: api/termstore-list-groups.md
-      - name: Set
-        href: resources/termstore-set.md
-        items:
-        - name: List 
-          href: api/termstore-group-list-sets.md
-        - name: List children
-          href: api/termstore-term-list-children.md
-        - name: Create 
-          href: api/termstore-set-post.md  
-        - name: Get 
-          href: api/termstore-set-get.md
-        - name: Update 
-          href: api/termstore-set-update.md
-        - name: Delete 
-          href: api/termstore-set-delete.md                  
-      - name: Term
-        href: resources/termstore-term.md
-        items:
-        - name: List children
-          href: api/termstore-term-list-children.md  
-        - name: Create 
-          href: api/termstore-term-post.md      
-        - name: Get 
-          href: api/termstore-term-get.md
-        - name: Update
-          href: api/termstore-term-update.md
-        - name: Delete 
-          href: api/termstore-term-delete.md                     
-      - name: Relation
-        href: resources/termstore-relation.md
-        items:
-        - name: List
-          href: api/termStore-term-list-relations.md
-        - name: Create
-          href: api/termStore-relation-post.md
+        - name: Store
+          href: resources/termstore-store.md
+          items:
+          - name: Get
+            href: api/termstore-store-get.md        
+          - name: Update
+            href: api/termstore-store-update.md
+        - name: Group        
+          href: resources/termstore-group.md
+          items:        
+          - name: Create
+            href: api/termstore-group-post.md
+          - name: Get 
+            href: api/termstore-store-get-group.md          
+          - name: Delete
+            href: api/termstore-group-delete.md   
+          - name: List  
+            href: api/termstore-list-groups.md
+        - name: Set
+          href: resources/termstore-set.md
+          items:
+          - name: List 
+            href: api/termstore-group-list-sets.md
+          - name: List children
+            href: api/termstore-term-list-children.md
+          - name: Create 
+            href: api/termstore-set-post.md  
+          - name: Get 
+            href: api/termstore-set-get.md
+          - name: Update 
+            href: api/termstore-set-update.md
+          - name: Delete 
+            href: api/termstore-set-delete.md                  
+        - name: Term
+          href: resources/termstore-term.md
+          items:
+          - name: List children
+            href: api/termstore-term-list-children.md  
+          - name: Create 
+            href: api/termstore-term-post.md      
+          - name: Get 
+            href: api/termstore-term-get.md
+          - name: Update
+            href: api/termstore-term-update.md
+          - name: Delete 
+            href: api/termstore-term-delete.md                     
+        - name: Relation
+          href: resources/termstore-relation.md
+          items:
+          - name: List
+            href: api/termStore-term-list-relations.md
+          - name: Create
+            href: api/termStore-relation-post.md
     - name: Tasks and plans
       displayName: Planner
       items:
