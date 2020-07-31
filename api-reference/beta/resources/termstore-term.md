@@ -25,7 +25,7 @@ Inherits from [entity](../resources/entity.md).
 |[Create relation](../api/termstore-relation-post.md)|[microsoft.graph.termStore.relation](../resources/termstore-relation.md)|Create a new relation for a term or a [set] in a [termstore].|
 |[Create term](../api/termstore-term-post.md)|[microsoft.graph.termStore.term](../resources/termstore-term.md)|Create a new term object in a [termstore].|
 |[Get term](../api/termstore-term-get.md)|[microsoft.graph.termStore.term](../resources/termstore-term.md)|Read the properties and relationships of a term object in a [termstore].|
-|[Update term](../api/termstore-term-update.md)|[mcirosoft.graph.termStore.term](../resources/termstore-term.md)|Update the properties of a term object in a [termstore].|
+|[Update term](../api/termstore-term-update.md)|[microsoft.graph.termStore.term](../resources/termstore-term.md)|Update the properties of a term object in a [termstore].|
 |[Delete term](../api/termstore-term-delete.md)|None|Delete a term object in a [termstore].|
 
 ## Properties
