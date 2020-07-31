@@ -48,7 +48,7 @@ The following table shows the properties that are required when you create the [
 
 |Property|Type|Description|
 |:---|:---|:---|
-|labels|[microsoft.graph.termstore.localizedLabel](../resources/termstore-localizedlabel.md) collection|Label for the term to be created|
+|labels|[microsoft.graph.termStore.localizedLabel](../resources/termstore-localizedlabel.md) collection|Label for the term to be created|
 
 
 
