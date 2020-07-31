@@ -1367,6 +1367,50 @@ items:
             href: resources/callrecords-directroutinglogrow.md
           - name: List direct routing calls
             href: api/callrecords-callrecord-getdirectroutingcalls.md
+    - name: Compliance (preview)
+      displayName: Compliance API, Microsoft Graph Compliance API
+      items:
+      - name: Overview
+        href: resources/complianceapioverview.md
+      - name: eDiscovery
+        items:
+        - name: Overview
+          href: resources/eDiscoveryapioverview.md
+        - name: eDiscovery case
+          href: resources/ediscoverycase.md
+          items:
+          - name: List
+            href: api/ediscoverycase-list.md
+          - name: Create
+            href: api/ediscoverycase-post.md
+          - name: Get
+            href: api/ediscoverycase-get.md
+          - name: Update
+            href: api/ediscoverycase-update.md
+          - name: Delete
+            href: api/ediscoverycase-delete.md
+        - name: eDiscovery Review set
+          href: resources/reviewset.md
+          items:
+          - name: List
+            href: api/reviewset-list.md
+          - name: Create
+            href: api/reviewset-post.md
+          - name: Get
+            href: api/reviewset-get.md
+        - name: Review set query
+          href: resources/reviewsetquery.md
+          items:
+          - name: List
+            href: api/reviewsetquery-list.md
+          - name: Create
+            href: api/reviewsetquery-post.md
+          - name: Get
+            href: api/reviewsetquery-get.md
+          - name: Update
+            href: api/reviewsetquery-update.md
+          - name: Delete
+            href: api/reviewsetquery-delete.md
     - name: Cross-device experiences
       displayName: Project Rome
       items:
@@ -11244,50 +11288,6 @@ items:
             href: api/externalitem-update.md
           - name: Delete
             href: api/externalitem-delete.md
-    - name: Compliance
-      displayName: Compliance API, Microsoft Graph Compliance API
-      items:
-      - name: Overview
-        href: resources/complianceapioverview.md
-      - name: eDiscovery
-        items:
-        - name: Overview
-          href: resources/eDiscoveryapioverview.md
-        - name: eDiscovery case
-          href: resources/ediscoverycase.md
-          items:
-          - name: List
-            href: api/ediscoverycase-list.md
-          - name: Create
-            href: api/ediscoverycase-post.md
-          - name: Get
-            href: api/ediscoverycase-get.md
-          - name: Update
-            href: api/ediscoverycase-update.md
-          - name: Delete
-            href: api/ediscoverycase-delete.md
-        - name: eDiscovery Review set
-          href: resources/reviewset.md
-          items:
-          - name: List
-            href: api/reviewset-list.md
-          - name: Create
-            href: api/reviewset-post.md
-          - name: Get
-            href: api/reviewset-get.md
-        - name: Review set query
-          href: resources/reviewsetquery.md
-          items:
-          - name: List
-            href: api/reviewsetquery-list.md
-          - name: Create
-            href: api/reviewsetquery-post.md
-          - name: Get
-            href: api/reviewsetquery-get.md
-          - name: Update
-            href: api/reviewsetquery-update.md
-          - name: Delete
-            href: api/reviewsetquery-delete.md
     - name: Security
       displayname: Security API, Microsoft Graph Security API
       items:
