@@ -13,7 +13,7 @@ Namespace: microsoft.graph.termStore
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Represents the label for a [term] in the [termstore].
+Represents the label for a [term] in the term [store].
 
 Identifies the labels associated with a given term.
 
@@ -48,7 +48,7 @@ The following is a JSON representation of the resource.
 [microsoft.graph.termStore.localizedName]: termstore-localizedname.md
 [microsoft.graph.termStore.store]: termstore-store.md
 [term]: ../resources/termstore-term.md
-[termstore]: ../resources/termstore-store.md
+[store]: ../resources/termstore-store.md
 
 
 <!--
