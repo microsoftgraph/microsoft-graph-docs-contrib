@@ -88,9 +88,6 @@ Content-Type: application/json
 }
 ```
 
-**Note:** Response objects are truncated for clarity.
-All default properties will be returned from the actual call.
-
 [microsoft.graph.termStore.group]: ../resources/termstore-group.md
 [microsoft.graph.termStore.set]: ../resources/termstore-set.md
 [microsoft.graph.termStore.store]: ../resources/termstore-store.md
