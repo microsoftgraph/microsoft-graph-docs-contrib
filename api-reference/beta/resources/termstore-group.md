@@ -14,7 +14,7 @@ Namespace: microsoft.graph.termStore
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 
-Represents a group used in a [termstore](../resources/termstore-store.md).
+Represents a group used in a term [store](../resources/termstore-store.md).
 
 Inherits from [entity](../resources/entity.md).
 
@@ -23,9 +23,9 @@ Inherits from [entity](../resources/entity.md).
 
 | Method                                                   | Return type       |    Description
 |:---------------------------------------------------------|:------------------|:---------------------
-| [Create group](../api/termstore-group-post.md)                     | [microsoft.graph.termStore.group] | Create a group in a [termstore].
-| [Get group](../api/termstore-store-get-group.md)                           | [microsoft.graph.termStore.group] | Retrieve the data of a group in a [termstore].
-| [Delete group](../api/termstore-group-delete.md)                     | None |  Delete a group in a [termstore].
+| [Create group](../api/termstore-group-post.md)                     | [microsoft.graph.termStore.group] | Create a group in a term [store].
+| [Get group](../api/termstore-store-get-group.md)                           | [microsoft.graph.termStore.group] | Retrieve the data of a group in a term [store].
+| [Delete group](../api/termstore-group-delete.md)                     | None |  Delete a group in a term [store].
 
 ## Properties
 
@@ -40,7 +40,7 @@ Inherits from [entity](../resources/entity.md).
 ## Relationships
 | Relationship       | Type                        | Description
 |:-------------------|:----------------------------|:--------------------------
-| sets           | [microsoft.graph.termStore.set][] collection | All sets under the group in a [termstore].
+| sets           | [microsoft.graph.termStore.set][] collection | All sets under the group in a term [store].
 
 ## JSON representation
 
@@ -70,7 +70,7 @@ The following is a JSON representation of a **group** resource.
 [microsoft.graph.termStore.set]: termstore-set.md
 [microsoft.graph.termStore.group]: termstore-group.md
 [microsoft.graph.termStore.store]: termstore-store.md
-[termstore]: ../resources/termstore-store.md
+[store]: ../resources/termstore-store.md
 [group]: ../resources/termstore-group.md
 [set]: ../resources/termstore-set.md
 <!--
