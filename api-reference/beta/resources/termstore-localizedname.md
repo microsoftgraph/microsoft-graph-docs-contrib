@@ -1,6 +1,6 @@
 ---
 title: "localizedName resource type"
-description: "Facet for localized names in the termStore"
+description: "Represents the localized name used in the term store, which identifies the name in the localized language."
 author: mohitpcad
 ms.author: mopathak
 localization_priority: Normal
@@ -14,7 +14,7 @@ Namespace: microsoft.graph.termStore
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Represents the localized name used in the [termstore], which identifies the name in the localized language. For more information, see [localizedLabel].
+Represents the localized name used in the [term store], which identifies the name in the localized language. For more information, see [localizedLabel].
 
 ## Properties
 |Property|Type|Description|
