@@ -19,8 +19,12 @@ var @event = new Event
 	ICalUId = "iCalUId-value",
 	ReminderMinutesBeforeStart = 99,
 	IsOnlineMeeting = true,
-	OnlineMeetingProvider = "teamsForBusiness",
-	IsReminderOn = true
+	OnlineMeetingProvider = OnlineMeetingProviderType.TeamsForBusiness,
+	IsReminderOn = true,
+	Categories = new List<String>()
+	{
+		"Red category"
+	}
 };
 
 await graphClient.Me.Events["{id}"]

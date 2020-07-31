@@ -29,7 +29,9 @@ By default, the `mgt-people` component fetches events from the `/me/people` endp
 | people | people | An array of people to get or set the list of people rendered by the component. Use this property to access the people loaded by the component. Set this value to load your own people. |
 | group-id | groupId | Retrieves people from a specific Microsoft Graph from the respective ID. |
 | user-ids | userIds | Given an array of Microsoft Graph user `ids`, the component will render these users.  |
+| people-queries | peopleQueries | Given an array of person queries (names, upns, emails), the component will render these users. |
 | person-card | personCard | An enumeration to determine user action necessary to activate flyout panel - `hover` or `click`. Default value is `none`. |
+| show-presence | showPresence | A boolean to determine whether to show person presence badge on person image. |
 
 
 The following example sets the maximum number of people to show.
@@ -85,6 +87,13 @@ This component uses the following Microsoft Graph APIs and permissions:
 | Resource | Permission |
 | - | - |
 | [/me/people](/graph/api/user-list-people?view=graph-rest-1.0) | `People.Read` |
+
+When using the default templates, additional APIs and permissions are required. The default template for this component uses a [mgt-person](person.md) component, which requires the following.
+
+| Resource | Permission |
+| - | - |
+| [/users](/graph/api/user-list?view=graph-rest-1.0) | Users.ReadBasic.All |
+| [/me/calendarview](/graph/api/user-list-contacts?view=graph-rest-1.0) | Contacts.Read |
 
 ## Authentication
 

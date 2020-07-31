@@ -41,7 +41,7 @@ var @event = new Event
 		}
 	},
 	IsOnlineMeeting = true,
-	OnlineMeetingProvider = "teamsForBusiness"
+	OnlineMeetingProvider = OnlineMeetingProviderType.TeamsForBusiness
 };
 
 await graphClient.Me.Calendars["AAMkAGViNDU9zAAAAAGtlAAA="].Events

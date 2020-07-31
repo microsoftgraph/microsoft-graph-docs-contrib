@@ -2,7 +2,7 @@
 title: "Create tokenIssuancePolicy"
 description: "Create a new tokenIssuancePolicy."
 localization_priority: Normal
-author: "dkershaw10"
+author: "luleonpla"
 ms.prod: "microsoft-identity-platform"
 doc_type: "apiPageType"
 ---

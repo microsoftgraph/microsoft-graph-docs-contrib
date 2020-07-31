@@ -33,6 +33,7 @@ One of the following permissions is required to call this API. To learn more, in
 -->
 ``` http
 GET /deviceManagement/deviceHealthScripts/{deviceHealthScriptId}/assignments
+GET /deviceManagement/deviceComplianceScripts/{deviceComplianceScriptId}/assignments
 ```
 
 ## Request headers
@@ -60,7 +61,7 @@ Here is an example of the response. Note: The response object shown here may be 
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 395
+Content-Length: 664
 
 {
   "value": [
@@ -68,11 +69,16 @@ Content-Length: 395
       "@odata.type": "#microsoft.graph.deviceHealthScriptAssignment",
       "id": "c08c4eb1-4eb1-c08c-b14e-8cc0b14e8cc0",
       "target": {
-        "@odata.type": "microsoft.graph.deviceAndAppManagementAssignmentTarget"
+        "@odata.type": "microsoft.graph.allDevicesAssignmentTarget",
+        "deviceAndAppManagementAssignmentFilterId": "Device And App Management Assignment Filter Id value",
+        "deviceAndAppManagementAssignmentFilterType": "include"
       },
       "runRemediationScript": true,
       "runSchedule": {
-        "@odata.type": "microsoft.graph.runSchedule"
+        "@odata.type": "microsoft.graph.deviceHealthScriptDailySchedule",
+        "interval": 8,
+        "useUtc": true,
+        "time": "11:58:36.2550000"
       }
     }
   ]
