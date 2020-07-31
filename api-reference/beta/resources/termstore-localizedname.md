@@ -14,7 +14,7 @@ Namespace: microsoft.graph.termStore
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Represents the localized name used in the [termstore], which identifies the name in the localized language. For more information, see [localizedLabel].
+Represents the localized name used in the term [store], which identifies the name in the localized language. For more information, see [localizedLabel].
 
 ## Properties
 |Property|Type|Description|
@@ -42,7 +42,7 @@ The following is a JSON representation of the resource.
 
 [microsoft.graph.termStore.localizedLabel]: termstore-localizedlabel.md
 [microsoft.graph.termstore.store]: termstore-store.md
-[termstore]: ../resources/termstore-store.md
+[store]: ../resources/termstore-store.md
 [localizedLabel]: ../resources/termstore-localizedlabel.md
 
 <!--
