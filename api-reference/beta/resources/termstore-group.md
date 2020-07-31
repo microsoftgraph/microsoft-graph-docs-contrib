@@ -14,7 +14,7 @@ Namespace: microsoft.graph.termStore
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 
-Represents a group used in a term [store](../resources/termstore-store.md).
+Represents a group used in a term [store](../resources/termstore-store.md). A group is a logical hierarchy can contains a collection of sets under it. 
 
 Inherits from [entity](../resources/entity.md).
 
