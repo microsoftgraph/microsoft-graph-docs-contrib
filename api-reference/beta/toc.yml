@@ -11450,7 +11450,9 @@ items:
           href: api/sitepage-delete.md
         - name: Publish page
           href: api/sitepage-publish.md
-      - name: Taxonomy   
+    - name: Taxonomy   
+      displayname: Taxonomy API
+      items:
         - name: store
           href: resources/termstore-store.md
           items:
