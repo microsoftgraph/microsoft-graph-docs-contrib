@@ -12,7 +12,7 @@ Namespace: microsoft.graph.termStore
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Create a new [microsoft.graph.termstore.group](../resources/termstore-group.md) object.
+Create a new [group](../resources/termstore-group.md) object.
 
 ## Permissions
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
@@ -41,9 +41,9 @@ POST /termStore/groups
 |Content-Type|application/json. Required.|
 
 ## Request body
-In the request body, supply a JSON representation of the [microsoft.graph.termstore.group](../resources/termstore-group.md) object.
+In the request body, supply a JSON representation of the [group](../resources/termstore-group.md) object.
 
-The following table shows the properties that are required when you create the [microsoft.graph.termstore.group](../resources/termstore-group.md).
+The following table shows the properties that are required when you create the [group](../resources/termstore-group.md).
 
 |Property|Type|Description|
 |:---|:---|:---|
@@ -53,7 +53,7 @@ The following table shows the properties that are required when you create the [
 
 ## Response
 
-If successful, this method returns a `201 Created` response code and a [microsoft.graph.termstore.group](../resources/termstore-group.md) object in the response body.
+If successful, this method returns a `201 Created` response code and a [group](../resources/termstore-group.md) object in the response body.
 
 ## Examples
 
@@ -94,8 +94,6 @@ Content-Type: application/json
   "displayName": "myGroup"  
 }
 ```
-
-All default properties will be returned from the actual call.
 
 <!--
 {
