@@ -84,7 +84,7 @@ Content-Type: application/json
   ]
 }
 ```
-All default properties will be returned from the actual call.
+
 
 [set]: ../resources/termstore-set.md
 [term]: ../resources/termstore-term.md
