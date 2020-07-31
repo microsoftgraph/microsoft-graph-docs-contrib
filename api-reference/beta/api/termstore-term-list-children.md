@@ -101,7 +101,6 @@ Content-Type: application/json
   "keywords": "term,termStore",
   "section": "documentation",
   "tocPath": "termStore/Get termchildren",
-  "suppressions": [
-  ]
+  "suppressions": []
 }
 
