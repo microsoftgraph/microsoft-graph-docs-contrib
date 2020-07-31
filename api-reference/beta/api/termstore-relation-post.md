@@ -41,9 +41,9 @@ POST /termStore/sets/{setId}/terms/{termId}/relations
 |Content-Type|application/json. Required.|
 
 ## Request body
-In the request body, supply a JSON representation of the [mcirosoft.graph.termstore.relation](../resources/termstore-relation.md) object.
+In the request body, supply a JSON representation of the [relation](../resources/termstore-relation.md) object.
 
-The following table shows the properties that are required when you create the [microsoft.graph.termstore.relation](../resources/termstore-relation.md).
+The following table shows the properties that are required when you create the [relation](../resources/termstore-relation.md).
 
 |Property|Type|Description|
 |:---|:---|:---|
@@ -55,7 +55,7 @@ The following table shows the properties that are required when you create the [
 
 ## Response
 
-If successful, this method returns a `201 Created` response code and a [microsoft.graph.termstore.relation](../resources/termstore-relation.md) object in the response body.
+If successful, this method returns a `201 Created` response code and a [relation](../resources/termstore-relation.md) object in the response body.
 
 ## Examples
 
@@ -105,9 +105,6 @@ Content-Type: application/json
   }
 }
 ```
-
-**Note:** Response objects are truncated for clarity.
-All default properties will be returned from the actual call.
 
 [microsoft.graph.termStore.set]: ../resources/termstore-set.md
 [microsoft.graph.termStore.term]: ../resources/termstore-term.md
