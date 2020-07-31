@@ -59,8 +59,6 @@ The following is a JSON representation of the resource.
 }
 ```
 
-[termstore]: ../resources/termstore-store.md
-
 <!--
 {
   "type": "#page.annotation",
