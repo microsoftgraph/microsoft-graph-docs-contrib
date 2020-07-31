@@ -11453,14 +11453,14 @@ items:
     - name: Taxonomy   
       displayname: Taxonomy API
       items:
-      - name: store
+      - name: Store
         href: resources/termstore-store.md
         items:
         - name: Get
           href: api/termstore-store-get.md        
         - name: Update
           href: api/termstore-store-update.md
-      - name: group        
+      - name: Group        
         href: resources/termstore-group.md
         items:        
         - name: Create
@@ -11471,7 +11471,7 @@ items:
           href: api/termstore-group-delete.md   
         - name: List  
           href: api/termstore-list-groups.md
-      - name: set
+      - name: Set
         href: resources/termstore-set.md
         items:
         - name: List 
@@ -11486,7 +11486,7 @@ items:
           href: api/termstore-set-update.md
         - name: Delete 
           href: api/termstore-set-delete.md                  
-      - name: term
+      - name: Term
         href: resources/termstore-term.md
         items:
         - name: List children
@@ -11499,7 +11499,7 @@ items:
           href: api/termstore-term-update.md
         - name: Delete 
           href: api/termstore-term-delete.md                     
-      - name: relation
+      - name: Relation
         href: resources/termstore-relation.md
         items:
         - name: List
