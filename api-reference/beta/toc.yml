@@ -11464,13 +11464,13 @@ items:
         href: resources/termstore-group.md
         items:        
         - name: Create
-          href: api/termstore-store-post-group.md
+          href: api/termstore-group-post.md
         - name: Get 
           href: api/termstore-store-get-group.md          
         - name: Delete
-          href: api/termstore-store-delete-group.md   
+          href: api/termstore-group-delete.md   
         - name: List  
-          href: api/termstore-store-list-groups.md
+          href: api/termstore-list-groups.md
       - name: set
         href: resources/termstore-set.md
         items:
