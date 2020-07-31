@@ -1,6 +1,6 @@
 ---
 title: "localizedDescription resource type"
-description: "Describes the facet for localized description in the termStore"
+description: "Represents the localized description used to describe a term in the term store."
 author: mohitpcad
 localization_priority: Normal
 ms.prod: "Sharepoint"
@@ -13,7 +13,7 @@ Namespace: microsoft.graph.termStore
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Represents the localized description used to describe a [term] in the[termstore].
+Represents the localized description used to describe a [term] in the [term store].
 
 
 ## Properties
