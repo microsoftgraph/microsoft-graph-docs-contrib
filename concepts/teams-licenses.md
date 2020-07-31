@@ -19,6 +19,6 @@ Creating chat message subscriptions with application permissions for `/teams/all
 
 Since `/teams/allMessages` and `/chats/allMessages` deliver notifications for all users in the tenant, all users in the tenant must be licensed. 
 
-Those licenses are not required when creating subscriptions With delegated permissions, 
+Those licenses are not required when creating subscriptions with delegated permissions, 
 or with the resource specific consent permissions, 
 or with application permissions for specific channels and chat threads.
