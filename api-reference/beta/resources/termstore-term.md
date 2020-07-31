@@ -13,20 +13,20 @@ Namespace: microsoft.graph.termStore
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Represents a term used in a [termstore].
+Represents a term used in a term [store].
 
 Inherits from [entity](../resources/entity.md).
 
 ## Methods
 |Method|Return type|Description|
 |:---|:---|:---|
-|[List children](../api/termstore-term-list-children.md)|[microsoft.graph.termStore.term](../resources/termstore-term.md) collection|Get the first level children of a term in a [termstore].|
-|[List relations](../api/termstore-term-list-relations.md)|[microsoft.graph.termStore.relation](../resources/termstore-relation.md) collection|Get the relations of a term in a [termstore].|
-|[Create relation](../api/termstore-relation-post.md)|[microsoft.graph.termStore.relation](../resources/termstore-relation.md)|Create a new relation for a term or a [set] in a [termstore].|
-|[Create term](../api/termstore-term-post.md)|[microsoft.graph.termStore.term](../resources/termstore-term.md)|Create a new term object in a [termstore].|
-|[Get term](../api/termstore-term-get.md)|[microsoft.graph.termStore.term](../resources/termstore-term.md)|Read the properties and relationships of a term object in a [termstore].|
-|[Update term](../api/termstore-term-update.md)|[microsoft.graph.termStore.term](../resources/termstore-term.md)|Update the properties of a term object in a [termstore].|
-|[Delete term](../api/termstore-term-delete.md)|None|Delete a term object in a [termstore].|
+|[List children](../api/termstore-term-list-children.md)|[microsoft.graph.termStore.term](../resources/termstore-term.md) collection|Get the first level children of a term in a term [store].|
+|[List relations](../api/termstore-term-list-relations.md)|[microsoft.graph.termStore.relation](../resources/termstore-relation.md) collection|Get the relations of a term in a term [store].|
+|[Create relation](../api/termstore-relation-post.md)|[microsoft.graph.termStore.relation](../resources/termstore-relation.md)|Create a new relation for a term or a [set] in a term [store].|
+|[Create term](../api/termstore-term-post.md)|[microsoft.graph.termStore.term](../resources/termstore-term.md)|Create a new term object in a term [store].|
+|[Get term](../api/termstore-term-get.md)|[microsoft.graph.termStore.term](../resources/termstore-term.md)|Read the properties and relationships of a term object in a term  [store].|
+|[Update term](../api/termstore-term-update.md)|[microsoft.graph.termStore.term](../resources/termstore-term.md)|Update the properties of a term object in a term [store].|
+|[Delete term](../api/termstore-term-delete.md)|None|Delete a term object in a term [store].|
 
 ## Properties
 |Property|Type|Description|
@@ -79,7 +79,7 @@ The following is a JSON representation of the resource.
 }
 ```
 
-[termstore]: ../resources/termstore-store.md
+[store]: ../resources/termstore-store.md
 [set]: ../resources/termstore-set.md
 [term]: ../resources/termstore-term.md
 [group]: ../resources/termstore-group.md
