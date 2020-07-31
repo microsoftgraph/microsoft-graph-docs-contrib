@@ -47,8 +47,8 @@ The following table shows the properties that can be updated for a [term](../res
 
 |Property|Type|Description|
 |:---|:---|:---|
-|labels|[microsoft.graph.termstore.localizedLabel](../resources/termstore-localizedlabel.md) collection|labels of a term|
-|descriptions|[microsoft.graph.termstore.localizedDescription](../resources/termstore-localizeddescription.md) collection|description about the term|
+|labels|[microsoft.graph.termStore.localizedLabel](../resources/termstore-localizedlabel.md) collection|labels of a term|
+|descriptions|[microsoft.graph.termStore.localizedDescription](../resources/termstore-localizeddescription.md) collection|description about the term|
 |properties|[microsoft.graph.keyValue](../resources/keyvalue.md) collection|properties associated with the term|
 
 
