@@ -51,7 +51,7 @@ If successful, this method returns a `204 No Content` response code.
 ### Request
 <!-- {
   "blockType": "request",
-  "name": "delete_groups_from_store"
+  "name": "delete_group_from_store"
 }
 -->
 ``` http
