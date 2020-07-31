@@ -41,7 +41,7 @@ Inherits from [entity](../resources/entity.md).
 ## Relationships
 |Relationship|Type|Description|
 |:---|:---|:---|
-|children|[mcirosoft.graph.termStore.term](../resources/termstore-term.md) collection|Children of current term|
+|children|[microsoft.graph.termStore.term](../resources/termstore-term.md) collection|Children of current term|
 |relations|[microsoft.graph.termStore.relation](../resources/termstore-relation.md) collection|To indicate which terms are related to the current term as either pinned or reused|
 |set|[microsoft.graph.termStore.set](../resources/termstore-set.md)|The [set] in which the term is created|
 
