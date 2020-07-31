@@ -13,7 +13,7 @@ Namespace: microsoft.graph.termStore
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Represents the set used in a term [store].
+Represents the set used in a term [store]. The set represents a unit which contains a collection of hierarchical terms. A [group] can contain multiple sets.
 
 Inherits from [entity](../resources/entity.md).
 
