@@ -51,9 +51,8 @@ The following table shows the properties of the [group](../resources/group.md) r
 | Property | Type | Description|
 |:---------------|:--------|:----------|
 | displayName | string | The name to display in the address book for the group. Required. |
-| isAssignableToRole | Boolean | Set to **true** to enable the group to be assigned to an Azure AD role. Only Privileged Role Administrator and Global Administrator can set the value of this property. Optional. |
-| displayName | string | The name to display in the address book for the group. Maximum length: 256 characters. Required. |
 | description | string | A description for the group. Optional. |
+| isAssignableToRole | Boolean | Set to **true** to enable the group to be assigned to an Azure AD role. Only Privileged Role Administrator and Global Administrator can set the value of this property. Optional. |
 | mailEnabled | boolean | Set to **true** for mail-enabled groups. Required. |
 | mailNickname | string | The mail alias for the group. Required. |
 | securityEnabled | boolean | Set to **true** for security-enabled groups, including Microsoft 365 groups. Required. |
