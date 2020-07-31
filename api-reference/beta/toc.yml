@@ -11475,7 +11475,7 @@ items:
           href: resources/termstore-set.md
           items:
             - name: List 
-            href: api/termstore-group-list-sets.md
+              href: api/termstore-group-list-sets.md
             - name: List children
               href: api/termstore-term-list-children.md
             - name: Create 
