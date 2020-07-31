@@ -13,20 +13,20 @@ Namespace: microsoft.graph.termStore
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Represents the set used in a [termstore].
+Represents the set used in a term [store].
 
 Inherits from [entity](../resources/entity.md).
 
 ## Methods
 |Method|Return type|Description|
 |:---|:---|:---|
-|[List sets](../api/termstore-group-list-sets.md)|collection [microsoft.graph.termStore.set] | Returns list of sets contained within a [group] of a [termstore] |
-|[Create set](../api/termstore-set-post.md)|[microsoft.graph.termStore.set](../resources/termstore-set.md)|Create a new set object in a [termstore].|
-|[Create term](../api/termstore-term-post.md)|[microsoft.graph.termStore.term](../resources/termstore-term.md)|Create a new [term] object in a [termstore].|
-|[Get set](../api/termstore-set-get.md)|[microsoft.graph.termStore.set](../resources/termstore-set.md)| Get a set object in a [termstore].|
-|[Get term](../api/termstore-term-get.md)|[microsoft.graph.termStore.term](../resources/termstore-term.md)| Get a [term] object in a [termstore].|
-|[Update set](../api/termstore-set-update.md)|[microsoft.graph.termStore.set](../resources/termstore-set.md)|Update the properties of a set object in a [termstore].|
-|[Delete set](../api/termstore-set-delete.md)|None|Deletes a set object in a [termstore].|
+|[List sets](../api/termstore-group-list-sets.md)|collection [microsoft.graph.termStore.set] | Returns list of sets contained within a [group] of a term [store] |
+|[Create set](../api/termstore-set-post.md)|[microsoft.graph.termStore.set](../resources/termstore-set.md)|Create a new set object in a term [store].|
+|[Create term](../api/termstore-term-post.md)|[microsoft.graph.termStore.term](../resources/termstore-term.md)|Create a new [term] object in a term [store].|
+|[Get set](../api/termstore-set-get.md)|[microsoft.graph.termStore.set](../resources/termstore-set.md)| Get a set object in a term [store].|
+|[Get term](../api/termstore-term-get.md)|[microsoft.graph.termStore.term](../resources/termstore-term.md)| Get a [term] object in a term [store].|
+|[Update set](../api/termstore-set-update.md)|[microsoft.graph.termStore.set](../resources/termstore-set.md)|Update the properties of a set object in a term [store].|
+|[Delete set](../api/termstore-set-delete.md)|None|Deletes a set object in a term [store].|
 
 ## Properties
 |Property|Type|Description|
@@ -40,7 +40,7 @@ Inherits from [entity](../resources/entity.md).
 ## Relationships
 |Relationship|Type|Description|
 |:---|:---|:---|
-|children|[microsoft.graph.termStore.term](../resources/termstore-term.md) collection|Children terms of set in [termstore].|
+|children|[microsoft.graph.termStore.term](../resources/termstore-term.md) collection|Children terms of set in term [store].|
 |parentGroup|[microsoft.graph.termStore.group](../resources/termstore-group.md)|The parent [group] that contains the set.|
 |relations|[microsoft.graph.termStore.relation](../resources/termstore-relation.md) collection|Indicates which terms have been pinned or reused directly under the set.|
 |terms|[microsoft.graph.termStore.term](../resources/termstore-term.md) collection|All the terms under the set.|
@@ -80,7 +80,7 @@ The following is a JSON representation of the resource.
 [microsoft.graph.termStore.relation]: termstore-relation.md
 [microsoft.graph.termStore.store]: termstore-store.md
 [microsoft.graph.termStore.localizedName]: termstore-localizedname.md
-[termstore]: ../resources/termstore-store.md
+[store]: ../resources/termstore-store.md
 [group]: ../resources/termstore-group.md
 [set]: ../resources/termstore-set.md
 [term]: ../resources/termstore-term.md
