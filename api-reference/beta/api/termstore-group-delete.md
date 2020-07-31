@@ -39,6 +39,9 @@ DELETE /termStore/groups/{groupId}
 |:---|:---|
 |Authorization|Bearer {token}. Required.|
 
+## Request body
+Do not supply a request body for this method.
+
 ## Response
 
 If successful, this method returns a `204 No Content` response code.
@@ -57,6 +60,11 @@ DELETE https://graph.microsoft.com/beta/termStore/groups/{groupId}
 
 
 ### Response
+<!-- {
+  "blockType": "response",
+  "truncated": true
+}
+-->
 ``` http
 HTTP/1.1 204 No Content
 ```
