@@ -1,6 +1,6 @@
 ---
 title: "store resource type"
-description:  "Describes the top-level store in the termStore"
+description:  "Represents a taxonomy term store."
 author: mohitpcad
 localization_priority: Normal
 ms.prod: "Sharepoint"
@@ -15,28 +15,27 @@ Namespace: microsoft.graph.termStore
 
 Represents a taxonomy term store.
 
-
 Inherits from [entity](../resources/entity.md).
 
 ## Methods
 |Method|Return type|Description
 |:---|:---|:---
-|[List groups](../api/termstore-list-groups.md)|[microsoft.graph.termstore.group](../resources/termstore-group.md) collection| Get the groups from available in the [termstore](../resources/termstore-store.md) object.|
-|[Get store](../api/termstore-store-get.md) | [microsoft.graph.termstore.store](../resources/termstore-store.md) | Read the properties and relationships of a termstore object.
-|[Update store](../api/termstore-store-update.md) | [microsoft.graph.termstore.store](../resources/termstore-store.md) | Update the properties of a termstore object.|
+|[List groups](../api/termstore-list-groups.md)|[microsoft.graph.termstore.group](../resources/termstore-group.md) collection| Get the groups from available in the [term store](../resources/termstore-store.md) object.|
+|[Get store](../api/termstore-store-get.md) | [microsoft.graph.termstore.store](../resources/termstore-store.md) | Read the properties and relationships of a term store object.
+|[Update store](../api/termstore-store-update.md) | [microsoft.graph.termstore.store](../resources/termstore-store.md) | Update the properties of a term store object.|
 
 ## Properties
 |Property|Type|Description
 |:---|:---|:---
-|defaultLanguageTag | String | Default language of the termstore].
-|id|String | Unique identifier of the termstore. Read-only.
-|languageTags | String collection | List of languages for the termstore.
+|defaultLanguageTag | String | Default language of the termstore.
+|id|String | Unique identifier of the term store. Read-only.
+|languageTags | String collection | List of languages for the term store.
 
 ## Relationships
 |Relationship|Type|Description
 |:---|:---|:---
-|groups |[microsoft.graph.termstore.group](../resources/termstore-group.md) collection | Collection of all groups available in the termstore.
-|sets | [microsoft.graph.termstore.set](../resources/termstore-set.md) collection | Collection of all sets available in the termstore.
+|groups |[microsoft.graph.termstore.group](../resources/termstore-group.md) collection | Collection of all groups available in the term store.
+|sets | [microsoft.graph.termstore.set](../resources/termstore-set.md) collection | Collection of all sets available in the term store.
 
 
 ## JSON representation
