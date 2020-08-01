@@ -47,7 +47,7 @@ If successful, this method returns `201 Created` response code with the [message
 
 ## Example
 
-For a more comprehensive list of examples please refer to [Create chatMessage in a channel or a chat](chatmessage-post).
+For a more comprehensive list of examples please refer to [Create chatMessage in a channel or a chat](chatmessage-post.md).
 
 ### Request
 Here is an example of the request.

@@ -78,7 +78,7 @@ If successful, this method returns a `201 Created` response code and a new [chat
 
 ## Examples
 
-In the following examples, the url can be changed to the patterns described [above](#http-request) to [send message to a chat](chat-post-message), [send message to a channel](channel-post-message) or [send reply to a channel](channel-post-messagereply).
+In the following examples, the url can be changed to the patterns described [above](#http-request) to [send message to a chat](chat-post-message.md), [send message to a channel](channel-post-message.md) or [send reply to a channel](channel-post-messagereply.md).
 
 ### Example 1: Hello World
 
