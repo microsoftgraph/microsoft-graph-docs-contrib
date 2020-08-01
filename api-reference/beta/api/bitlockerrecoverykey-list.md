@@ -12,7 +12,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Get a list of the [bitlockerRecoveryKey](../resources/bitlockerrecoverykey.md) objects and their properties.
+Get a list of the [bitlockerRecoveryKey](../resources/bitlockerrecoverykey.md) objects and their properties. Does not return 'key' property. See [Get bitlockerRecoveryKey](../api/bitlockerrecoverykey-get.md) to retrieve 'key' property.
 
 ## Permissions
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
@@ -21,7 +21,7 @@ One of the following permissions is required to call this API. To learn more, in
 |:---|:---|
 |Delegated (work or school account)|BitLocker.ReadBasic.All, BitLocker.Read.All|
 |Delegated (personal Microsoft account)|Not supported|
-|Application|BitLocker.ReadBasic.All, BitLocker.Read.All|
+|Application|Not supported|
 
 ## HTTP request
 
@@ -34,14 +34,26 @@ GET /bitlocker/recoveryKeys
 ```
 
 ## Optional query parameters
-This method supports some of the OData query parameters to help customize the response. For general information, see [OData query parameters](/graph/query-parameters).
+This method supports the following OData query parameters to help customize the response. For general information, see [OData query parameters](/graph/query-parameters).
+
+The response may also contain an `odata.nextLink`, which you can use to page through the result set. See [Paging Microsoft Graph data](/graph/paging) for more information.
+
+### OData query parameters
+|Parameter|Description|Example|
+|:---|:---|:---|
+|[$filter](/graph/query-parameters#filter-parameter)|Filters results by device|`/recoverykeys?$filter=deviceId eq {deviceId}`|
+
+#### Attributes supported by $filter parameter
+|Attribute|Supported operators|
+|:---|:---|
+|deviceId|eq|
 
 ## Request headers
 |Name|Description|
 |:---|:---|
 |Authorization|Bearer {token}. Required.|
-|ocp-client-name|Application client name. Required.|
-|ocp-client-version|Application client version. Required.|
+|ocp-client-name|Name of the client application performing the API call. Required.|
+|ocp-client-version|Version of the client application performing the API call. Required.|
 
 ## Request body
 Do not supply a request body for this method.
@@ -52,7 +64,7 @@ If successful, this method returns a `200 OK` response code and a collection of 
 
 ## Examples
 
-### Example 1: List all BitLocker keys in the tenant without secret recovery key
+### Example 1: List all BitLocker keys in the tenant
 
 #### Request
 <!-- {
@@ -96,7 +108,7 @@ Content-Type: application/json
   ]
 }
 ```
-### Example 2: List all BitLocker keys without secret recovery key for a device
+### Example 2: List all BitLocker keys for a device
 
 #### Request
 <!-- {

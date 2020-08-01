@@ -12,7 +12,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Read the properties and relationships of a [bitlockerRecoveryKey](../resources/bitlockerrecoverykey.md) object.
+Read the properties and relationships of a [bitlockerRecoveryKey](../resources/bitlockerrecoverykey.md) object. Does not return the key property by default.
 
 ## Permissions
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
@@ -21,7 +21,7 @@ One of the following permissions is required to call this API. To learn more, in
 |:---|:---|
 |Delegated (work or school account)|BitLocker.ReadBasic.All, BitLocker.Read.All|
 |Delegated (personal Microsoft account)|Not supported|
-|Application|BitLocker.ReadBasic.All, BitLocker.Read.All|
+|Application|Not supported|
 
 ## HTTP request
 
@@ -34,14 +34,20 @@ GET /bitlocker/recoveryKeys/{bitlockerRecoveryKeyId}
 ```
 
 ## Optional query parameters
-This method supports some of the OData query parameters to help customize the response. For general information, see [OData query parameters](/graph/query-parameters).
+This method supports the follwoing OData query parameters to help customize the response. For general information, see [OData query parameters](/graph/query-parameters).
+
+### OData query parameters
+|Parameter|Description|Example|
+|:---|:---|:---|
+|[$select](/graph/query-parameters#select-parameter)|Use to return the 'key' property|`/recoverykeys/{bitlockerRecoveryKeyId}?$select=key`|
+
 
 ## Request headers
 |Name|Description|
 |:---|:---|
 |Authorization|Bearer {token}. Required.|
-|ocp-client-name|Name of the client performing the API call. Required.|
-|ocp-client-version|Version of the client performing the API call. Required.|
+|ocp-client-name|Name of the client application performing the API call. Required.|
+|ocp-client-version|Version of the client application performing the API call. Required.|
 
 ## Request body
 Do not supply a request body for this method.
@@ -52,7 +58,7 @@ If successful, this method returns a `200 OK` response code and a [bitlockerReco
 
 ## Examples
 
-### Example 1: Get metadata without secret recovery key by specifying key id
+### Example 1: Get BitLocker key without 'key' property by specifying key id
 
 #### Request
 <!-- {
@@ -88,7 +94,7 @@ Content-type: application/json
 }
 ```
 
-### Example 2: Get metadata with secret recovery key by specifying key id
+### Example 2: Get BitLocker key with 'key' property by specifying key id
 
 #### Request
 <!-- {

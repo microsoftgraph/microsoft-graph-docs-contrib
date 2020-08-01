@@ -13,24 +13,21 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Collectively represents a stored BitLocker recovery key and contains the actual key
-
-
-Inherits from [entity](../resources/entity.md).
+Collectively represents a stored BitLocker recovery key and contains the actual key. Inherits from [entity](../resources/entity.md).
 
 ## Methods
 |Method|Return type|Description|
 |:---|:---|:---|
 |[List bitlockerRecoveryKeys](../api/bitlockerrecoverykey-list.md)|[bitlockerRecoveryKey](../resources/bitlockerrecoverykey.md) collection|Get a list of the [bitlockerRecoveryKey](../resources/bitlockerrecoverykey.md) objects and their properties.|
-|[Get bitlockerRecoveryKey](../api/bitlockerrecoverykey-get.md)|[bitlockerRecoveryKey](../resources/bitlockerrecoverykey.md)|Read the properties and relationships of a [bitlockerRecoveryKey](../resources/bitlockerrecoverykey.md) object.|
+|[Get bitlockerRecoveryKey](../api/bitlockerrecoverykey-get.md)|[bitlockerRecoveryKey](../resources/bitlockerrecoverykey.md)|Read the properties and relationships of a [bitlockerRecoveryKey](../resources/bitlockerrecoverykey.md) object. Note: The key property is not returned by default.|
 
 ## Properties
 |Property|Type|Description|
 |:---|:---|:---|
-|createdDateTime|DateTimeOffset|The date and time when the key was created|
-|deviceId|String|Id of the device the BitLocker key is associated to|
-|id|String|The unique identifier for the BitLocker key. Inherited from [entity](../resources/entity.md)|
-|key|String|The BitLocker recovery key|
+|createdDateTime|DateTimeOffset|The date and time when the key was originally backed up to Azure Active Directory.|
+|deviceId|String|Id of the device the BitLocker key is originally backed up from.|
+|id|String|The unique identifier for the BitLocker key.|
+|key|String|The BitLocker recovery key.|
 |volumeType|volumeType|Indicates the type of volume the BitLocker key is associated with. Possible values are: `operatingSystemVolume`, `fixedDataVolume`, `removableDataVolume`, `unknownFutureValue`.|
 
 ## Relationships
