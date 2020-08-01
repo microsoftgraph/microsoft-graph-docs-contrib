@@ -11,6 +11,16 @@ This changelog covers specific API-level changes in Microsoft Graph v1.0 and bet
 
 For a summary of the value of these API changes, as well as recent tools, components, guidance, and tutorial additions, see [What's new in Microsoft Graph](whats-new-overview.md).
 
+## August 2020
+
+### Teamwork (Microsoft Teams)
+
+| **Change type** | **Version** | **Description** |
+|:---|:---|:---|
+|Addition|beta|Added the **contentBytes** property to [chatMessageHostedContent](/graph/api/resources/chatMessageHostedContent?view=graph-rest-beta) resource|
+|Addition|beta|Added the **contentType** property to [chatMessageHostedContent](/graph/api/resources/chatMessageHostedContent?view=graph-rest-beta) resource|
+|Addition|beta|Added support for sending inline images in [chatMessage](/graph/api/resources/chatMessage?view=graph-rest-beta) resource|
+
 ## July 2020
 
 ### Calendar
