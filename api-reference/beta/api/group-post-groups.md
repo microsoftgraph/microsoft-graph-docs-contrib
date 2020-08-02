@@ -312,7 +312,7 @@ Content-Type: application/json
 }
 ```
 
-> **Note:** The **visibility** and **groupTypes** properties are not required for creation, but are auto-populated with these values. A group with **isAssignableToRole** property set to `true` cannot be of dynamic membership type and cannot have an owner. For more information, see [Using a group to manage Azure AD role assignments](https://go.microsoft.com/fwlink/?linkid=2103037).
+> **Note:** The **visibility** and **groupTypes** properties are not required for creation, but are auto-populated with these values. A group with **isAssignableToRole** property set to `true` cannot be of dynamic membership type. For more information, see [Using a group to manage Azure AD role assignments](https://go.microsoft.com/fwlink/?linkid=2103037).
 
 #### Response
 
