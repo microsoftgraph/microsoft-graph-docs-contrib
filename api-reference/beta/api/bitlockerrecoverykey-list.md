@@ -14,6 +14,16 @@ Namespace: microsoft.graph
 
 Get a list of the [bitlockerRecoveryKey](../resources/bitlockerrecoverykey.md) objects and their properties. Does not return 'key' property. See [Get bitlockerRecoveryKey](../api/bitlockerrecoverykey-get.md) to retrieve 'key' property.
 
+One of the following roles must be assigned to call this API: <br>
+* Global administrator
+* Cloud device administrator
+* Helpdesk administrator
+* Intune service administrator
+* Security administrator
+* Security reader
+* Global reader
+* Registered owner of the device that the BitLocker recovery key was originally backed up from
+
 ## Permissions
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
 
@@ -41,7 +51,7 @@ The response may also contain an `odata.nextLink`, which you can use to page thr
 ### OData query parameters
 |Parameter|Description|Example|
 |:---|:---|:---|
-|[$filter](/graph/query-parameters#filter-parameter)|Filters results by device|`/recoverykeys?$filter=deviceId eq {deviceId}`|
+|[$filter](/graph/query-parameters#filter-parameter)|Filters results by device|`/recoveryKeys?$filter=deviceId eq {deviceId}`|
 
 #### Attributes supported by $filter parameter
 |Attribute|Supported operators|

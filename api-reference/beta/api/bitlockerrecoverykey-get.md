@@ -14,6 +14,17 @@ Namespace: microsoft.graph
 
 Read the properties and relationships of a [bitlockerRecoveryKey](../resources/bitlockerrecoverykey.md) object. Does not return the key property by default.
 
+One of the following roles must be assigned to call this API: <br>
+* Global administrator
+* Cloud device administrator
+* Helpdesk administrator
+* Intune service administrator
+* Security administrator
+* Security reader
+* Global reader
+* Registered owner of the device that the BitLocker recovery key was originally backed up from
+
+
 ## Permissions
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
 
@@ -39,7 +50,8 @@ This method supports the follwoing OData query parameters to help customize the 
 ### OData query parameters
 |Parameter|Description|Example|
 |:---|:---|:---|
-|[$select](/graph/query-parameters#select-parameter)|Use to return the 'key' property|`/recoverykeys/{bitlockerRecoveryKeyId}?$select=key`|
+|[$select](/graph/query-parameters#select-parameter)|Use to return the 'key' property. Requires BitLocker.Read.All permission.|`/recoveryKeys/{bitlockerRecoveryKeyId}?$select=key`|
+> NOTE: When the $select query parameter is included in the API call, the call is audited, and an audit log is generated. You can find this log in Azure Active Directory audit logs under the KeyManagement category.
 
 
 ## Request headers
