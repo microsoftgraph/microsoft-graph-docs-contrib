@@ -31,7 +31,7 @@ One of the following permissions is required to call this API. To learn more, in
 
 ## HTTP request
 
-<!-- { "blockType": "ignored" } --> 
+<!-- { "blockType": "request" } --> 
 
 ```http
 GET /reports/getM365AppPlatformUserCounts(period='{period_value}')
@@ -97,7 +97,7 @@ The following is an example of the request to get the **content** property.
 
 
 <!-- {
-  "blockType": "ignored",
+  "blockType": "request",
   "name": "reportroot_getM365AppPlatformUserCounts_csv"
 }-->
 
@@ -110,7 +110,7 @@ GET https://graph.microsoft.com/beta/reports/getM365AppPlatformUserCounts(period
 
 The following is an example of the response.
 
-<!-- { "blockType": "ignored" } --> 
+<!-- { "blockType": "response" } --> 
 
 ```http
 HTTP/1.1 302 Found
@@ -143,7 +143,7 @@ The following is an example of the request to get the **content** property.
 
 
 <!-- {
-  "blockType": "ignored",
+  "blockType": "request",
   "name": "reportroot_getM365AppPlatformUserCounts_json"
 }-->
 
