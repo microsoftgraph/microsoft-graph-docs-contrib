@@ -257,9 +257,9 @@ HTTP/1.1 204
 ```
 ### Add app roles (Optional)
 
-If the application requires the role information in the token, add the definition of the roles in the application object. For AWS, you can [enable user provisioning](../app-provisioning/application-provisioning-configure-api.md) to fetch all the roles from that AWS account. 
+If the application requires the role information in the token, add the definition of the roles in the application object. For AWS, you can [enable user provisioning](https://docs.microsoft.com/azure/active-directory/app-provisioning/application-provisioning-configure-api) to fetch all the roles from that AWS account. 
 
-For more information, read [Configure the role claim issued in the SAML token](../develop/active-directory-enterprise-app-role-management.md)
+For more information, read [Configure the role claim issued in the SAML token](https://docs.microsoft.com/azure/active-directory/develop/active-directory-enterprise-app-role-management)
 
 > [!NOTE] 
 > When adding app roles, don't modify the default app roles msiam_access. 
@@ -737,5 +737,5 @@ Use the following URL to get the Azure AD SAML metadata for the specific configu
 https://login.microsoftonline.com/{tenant-id}/federationmetadata/2007-06/federationmetadata.xml?appid={app-id}
 
 ## Next steps
-- [Use Microsoft Graph APIs to configure user provisioning](../app-provisioning/application-provisioning-configure-api.md)
-- [Use the AD FS application activity report to migrate applications to Azure AD](migrate-adfs-application-activity.md)
+- [Use Microsoft Graph APIs to configure user provisioning](https://docs.microsoft.com/azure/active-directory/app-provisioning/application-provisioning-configure-api)
+- [Use the AD FS application activity report to migrate applications to Azure AD](https://docs.microsoft.com/azure/active-directory/manage-apps/migrate-adfs-application-activity)
