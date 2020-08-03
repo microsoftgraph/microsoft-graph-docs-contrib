@@ -10221,6 +10221,10 @@ items:
               href: api/connectedorganization-update.md
             - name: Delete
               href: api/connectedorganization-delete.md
+            - name: List externalSponsors
+              href: api/connectedorganization-list-externalsponsors.md
+            - name: List internalSponsors
+              href: api/connectedorganization-list-internalsponsors.md
           - name: Entitlement management settings
             href: resources/entitlementmanagementsettings.md
             items:
