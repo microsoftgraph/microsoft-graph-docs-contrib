@@ -58,7 +58,7 @@ The successful response looks like:
 ```http
 HTTP/1.1 200 OK
 Content-type: application/json
-Content-length: “42”
+Content-length: 42
 
 {
   "index": 6,
@@ -114,12 +114,12 @@ For more details, see [Create session](/graph/api/workbook-createsession?view=gr
 
 ## Working with APIs that may take a long time to complete
 
-You may notice some API responses require indeterminate time to complete, for example, open a workbook with large size. To resolve this issue, we provide the long running operation pattern. By using this pattern, you do not need to wait until the action is complete before returning a response or worry about the timeout for the request.
+You may notice some API responses require indeterminate time to complete, for example, open a workbook with large size. However, it is easy to hit timeout while waiting for the response to such kind of request. To resolve this issue, we provide the long running operation pattern and by using this pattern, you do not need to  worry about the timeout for the request.
 
 Currently, Excel Graph has enabled long running operation pattern for session creation API. Here are the steps:
 
 1. Adds a header of `Prefer: respond-async` in the request to indicate it as a long running operation when creating a session.
-2. In long running operation pattern, it will return a `202 Accepted` response along with a Location header to retrieve operation status. Otherwise, if session creation succeeds in several seconds, it will return a `201 Created` response directly instead of going to long running operation pattern.
+2. In long running operation pattern, it will return a `202 Accepted` response along with a Location header to retrieve operation status. Otherwise, if session creation completes in several seconds, it will return as regular create session instead of going to long running operation pattern.
 3. With the `202 Accepted` response, you can retrieve the operation status through specified location. Operation status includes `notStarted`, `running`, `succeeded`, and `failed`.
 4. After operation completes, you can get the session creation result through the specified URL in succeeded response.
 
@@ -147,7 +147,7 @@ Content-type: application/json
 }
 ```
 
-In some cases, if the creation succeeds directly in seconds, it won't enter long running operation pattern, instead it returns a `201 Created` response like following.
+In some cases, if the creation succeeds directly in seconds, it won't enter long running operation pattern, instead it returns as a regular create session and the successful request will return a `201 Created` response like following.
 
 ```http
 HTTP/1.1 201 Created
@@ -160,9 +160,31 @@ Content-length: 52
 }
 ```
 
+The failed request of regular create session will look as following.
+>**Note:** The response object shown here might be shortened for readability.
+
+```http
+HTTP/1.1 500 Internal Server Error
+Content-type: application/json
+{
+  "error":{
+    "code": "internalServerError",
+    "message": "An internal server error occurred while processing the request.",
+    "innerError": {
+      "code": ""internalServerErrorUncategorized",
+      "message": "An unspecified error has occurred.",
+      "innerError": {
+        "code": "GenericFileOpenError",
+        "message": "The workbook cannot be opened."
+      }
+    }
+  }
+}
+
+
 ### Poll status of the long running create session
 
-In long running operation pattern, you can get creation status with specified location with request similar as following.
+In long running operation pattern, you can get creation status with specified location with request similar as following. The suggested interval to poll status is around 30 seconds and the maximum internal should be no more than 4 minutes.
 
 ```http
 GET https://graph.microsoft.com/v1.0/me/drive/items/{drive-item-id}/workbook/operations/{operation-id}
@@ -218,6 +240,8 @@ Content-type: application/json
 }
 ```
 
+For more details on error codes, see [Error codes](/concepts/workbook-error-codes.md)
+
 ### Acquire session information
 
 With status of `succeeded`, you can get the created session information through `resourceLocation` with request similar as following.
@@ -238,3 +262,5 @@ Content-type: application/json
     "persistChanges": true
 }
 ```
+
+>**Note:** Acquire session information depends on the initial request, and there is no need to acquire the result if the initial request doesn't return a response body.
