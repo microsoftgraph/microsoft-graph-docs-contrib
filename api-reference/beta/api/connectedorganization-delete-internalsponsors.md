@@ -1,19 +1,19 @@
 ---
-title: "Add connected organization external sponsor"
-description: "Add a user or group to the connected organization's external sponsors."
+title: "Remove connected organization internal sponsor"
+description: "Remove a user or group from the connected organization's internal sponsors."
 localization_priority: Normal
 author: "markwahl-msft"
 ms.prod: "microsoft-identity-platform"
 doc_type: apiPageType
 ---
 
-# Add connected organization external sponsor
+# Remove connected organization internal sponsor
 
 Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Add a user or a group to the connected organization's external sponsors. The external sponsors are a set of users who can approve requests on behalf of other users from that connected organization.
+Remove a user or a group from the connected organization's internal sponsors. The internal sponsors are a set of users who can approve requests on behalf of other users from that connected organization.
 
 ## Permissions
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
@@ -27,16 +27,15 @@ One of the following permissions is required to call this API. To learn more, in
 ## HTTP request
 <!-- { "blockType": "ignored" } -->
 ```http
-POST /identityGovernance/entitlementManagement/connectedOrganizations/{id}/externalSponsors/$ref
+DELETE /identityGovernance/entitlementManagement/connectedOrganizations/{connectedOrganizationId}/internalSponsors/{id}/$ref
 ```
 ## Request headers
 | Name       | Description|
 |:---------------|:----------|
 | Authorization  | Bearer {token}. Required. |
-| Content-type | application/json. Required. |
 
 ## Request body
-In the request body, supply a JSON representation of the reference to the [user](../resources/user.md) or [group](../resources/group.md) object to be added, as an `@odata.id` property with the full URI of the user or group.
+Do not supply a request body for this method.
 
 ## Response
 If successful, this method returns a `204 No Content` response code. It does not return anything in the response body.
@@ -46,17 +45,11 @@ If successful, this method returns a `204 No Content` response code. It does not
 ### Request
 <!-- {
   "blockType": "request",
-  "name": "create_externalsponsor_from_connectedorganization"
+  "name": "delete_internalsponsor_from_connectedorganization"
 }
 -->
 ``` http
-POST https://graph.microsoft.com/beta/identityGovernance/entitlementManagement/connectedOrganizations/{id}/externalSponsors/$ref
-Content-type: application/json
-Content-length: 30
-
-{
-  "@odata.id": "https://graph.microsoft.com/beta/users/{id}"
-}
+DELETE https://graph.microsoft.com/beta/identityGovernance/entitlementManagement/connectedOrganizations/{connectedOrganizationId}/internalSponsors/{id}/$ref
 ```
 
 ### Response
@@ -74,7 +67,7 @@ HTTP/1.1 204 No Content
 <!--
 {
   "type": "#page.annotation",
-  "description": "Create connected organization external sponsor",
+  "description": "Delete connected organization internal sponsor",
   "keywords": "",
   "section": "documentation",
   "tocPath": "",

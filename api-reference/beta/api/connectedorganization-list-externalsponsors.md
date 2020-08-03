@@ -13,7 +13,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Retrieve a list of a [connectedOrganization](../resources/connectedorganization.md)'s external sponsors.
+Retrieve a list of a [connectedOrganization](../resources/connectedorganization.md)'s external sponsors.  The external sponsors are a set of users who can approve requests on behalf of other users from that connected organization.
 
 ## Permissions
 

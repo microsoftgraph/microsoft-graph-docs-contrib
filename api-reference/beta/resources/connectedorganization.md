@@ -26,8 +26,10 @@ In [Azure AD entitlement management](entitlementmanagement-root.md), a connected
 |[Delete connectedOrganization](../api/connectedorganization-delete.md) |None | Delete a connectedOrganization. |
 |[List internalSponsors](../api/connectedorganization-list-internalsponsors.md) | [directoryObject](directoryobject.md) collection | Retrieve a list of a connectedOrganization's internal sponsors. |
 |[List externalSponsors](../api/connectedorganization-list-externalsponsors.md) | [directoryObject](directoryobject.md) collection | Retrieve a list of a connectedOrganization's external sponsors. |
-|[Add internalSponsors](../api/connectedorganization-post-internalsponsors.md) | None | Add to a connectedOrganization's internal sponsors. |
-|[Add externalSponsors](../api/connectedorganization-post-externalsponsors.md) | None | Add to a connectedOrganization's external sponsors. |
+|[Add internalSponsors](../api/connectedorganization-post-internalsponsors.md) | None | Add a user or group to a connectedOrganization's internal sponsors. |
+|[Add externalSponsors](../api/connectedorganization-post-externalsponsors.md) | None | Add a user or group to a connectedOrganization's external sponsors. |
+|[Remove internalSponsors](../api/connectedorganization-delete-internalsponsors.md) | None | Remove a user or group from a connectedOrganization's internal sponsors. |
+|[Remove externalSponsors](../api/connectedorganization-delete-externalsponsors.md) | None | Remove a user or group from a connectedOrganization's external sponsors. |
 
 ## Properties
 
