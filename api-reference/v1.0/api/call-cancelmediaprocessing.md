@@ -66,7 +66,7 @@ The following example shows the request.
 }-->
 
 ```http
-POST https://graph.microsoft.com/beta/communications/calls/{id}/cancelMediaProcessing
+POST https://graph.microsoft.com/v1.0/communications/calls/{id}/cancelMediaProcessing
 Content-Type: application/json
 Content-Length: 62
 
@@ -101,7 +101,7 @@ Content-Length: 62
 
 ```http
 HTTP/1.1 200 OK
-Location: https://graph.microsoft.com/beta/communications/calls/57dab8b1-894c-409a-b240-bd8beae78896/operations/17e3b46c-f61d-4f4d-9635-c626ef18e6ad
+Location: https://graph.microsoft.com/v1.0/communications/calls/57dab8b1-894c-409a-b240-bd8beae78896/operations/17e3b46c-f61d-4f4d-9635-c626ef18e6ad
 Content-Type: application/json
 Content-Length: 259
 
