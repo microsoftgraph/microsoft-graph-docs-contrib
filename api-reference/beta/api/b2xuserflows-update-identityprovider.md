@@ -13,7 +13,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Update the identity providers in a [b2xUserFlow](../resources/b2xuserflow.md) object.
+Update the identity providers in a [b2xUserFlow](../resources/b2xuserflows.md) object.
 
 ## Permissions
 
@@ -47,7 +47,7 @@ PATCH /b2xUserFlows/{id}/identityProviders/$ref
 
 ## Request body
 
-In the request body, provide a JSON representation of the `id` of the [identityProvider](../api/resources/identityproviders.md) you want to add.
+In the request body, provide a JSON representation of the `id` of the [identityProvider](../api/resources/identityprovider.md) you want to add.
 
 ## Response
 

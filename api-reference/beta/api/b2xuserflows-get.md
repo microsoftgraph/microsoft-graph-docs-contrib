@@ -7,7 +7,7 @@ author: "jkdouglas"
 ms.prod: "microsoft-identity-platform"
 ---
 
-# Get identityProvider
+# Get b2xUserFlow
 
 Namespace: microsoft.graph
 

@@ -24,7 +24,7 @@ User flows are used to enable a sign up experience for guest users on an applica
 |[List user flows](../api/b2xuserflows-list.md)|b2xUserFlow collection|Retrieve all user flows.|
 |[Get user flow](../api/b2xuserflows-get.md) |b2xUserFlow|Retrieve properties of a user flow.|
 |[Delete user flow](../api/b2xuserflows-delete.md)|None|Delete a user flow.|
-|[List identity providers](../api/b2xuserflows-list-identityprovider.md)|[identityProvider](../resources/identityProvider.md) collection|Retrieve all identity providers in a user flow.|
+|[List identity providers](../api/b2xuserflows-list-identityproviders.md)|[identityProvider](../resources/identityProvider.md) collection|Retrieve all identity providers in a user flow.|
 |[Add identity provider](../api/b2xuserflows-update-identityprovider.md)|None|Adds an identity provider to a user flow.|
 |[Delete identity provider](../api/b2xuserflows-delete-identityprovider.md)|None|Deletes an identity provider from a user flow.|
 
@@ -40,7 +40,7 @@ User flows are used to enable a sign up experience for guest users on an applica
 
 | Relationship       | Type  |Description|
 |:---------------|:--------|:----------|
-|identityProviders|[identityProvider](../resources/identityproviders.md) collection|The identity providers included in the user flow.|
+|identityProviders|[identityProvider](../resources/identityprovider.md) collection|The identity providers included in the user flow.|
 
 ## JSON representation
 

@@ -13,7 +13,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Get the identity providers in a [b2xUserFlow](../resources/userflowattributes.md) object.
+Get the identity providers in a [b2xUserFlow](../resources/b2xuserflows.md) object.
 
 ## Permissions
 
@@ -50,7 +50,7 @@ Do not supply a request body for this method.
 
 ## Response
 
-If successful, this method returns a `200 OK` response code and a JSON representation of the [identityProviders](../resources/identityProviders.md) in the response body.
+If successful, this method returns a `200 OK` response code and a JSON representation of the [identityProviders](../resources/identityprovider.md) in the response body.
 
 ## Examples
 

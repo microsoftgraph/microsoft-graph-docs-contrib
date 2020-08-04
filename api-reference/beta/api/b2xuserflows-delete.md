@@ -7,13 +7,13 @@ author: "jkdouglas"
 ms.prod: "microsoft-identity-platform"
 ---
 
-# Delete identityProvider
+# Delete b2xUserFlow
 
 Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Delete an [userFlowAttribute](../resources/userflowattributes.md).
+Delete an [b2xUserFlow](../resources/b2xuserflows.md).
 
 ## Permissions
 

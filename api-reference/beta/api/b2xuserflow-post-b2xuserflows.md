@@ -47,7 +47,7 @@ POST /identity/b2xUserFlow
 
 ## Request body
 
-In the request body, provide a JSON representation of a [b2xUserFlow](../resources/userflowattributes.md). All the properties listed in the following table are required.
+In the request body, provide a JSON representation of a [b2xUserFlow](../resources/b2xuserflows.md). All the properties listed in the following table are required.
 
 |Property|Type|Description|
 |:---------------|:--------|:----------|
@@ -57,7 +57,7 @@ In the request body, provide a JSON representation of a [b2xUserFlow](../resourc
 
 ## Response
 
-If successful, this method returns a `201 Created` response code and [b2xUserFlow](../resources/userflowattributes.md) object in the response body. If unsuccessful, a `4xx` error will be returned with specific details.
+If successful, this method returns a `201 Created` response code and [b2xUserFlow](../resources/b2xuserflows.md) object in the response body. If unsuccessful, a `4xx` error will be returned with specific details.
 
 ## Examples
 
