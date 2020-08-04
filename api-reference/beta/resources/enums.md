@@ -1188,24 +1188,6 @@ Possible values for user account types (group membership), per Windows definitio
 | generic
 | unknownFutureValue
 
-### openIdConnectResponseMode
-
-| Member
-|:----------------------
-| none
-| form_post
-| query
-| unknownFutureValue
-
-### openIdConnectResponseTypes
-
-| Member
-|:----------------------
-| none
-| code
-| id_token
-| token
-
 ### userFlowType
 
 |Member
