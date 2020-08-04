@@ -245,7 +245,7 @@ Content-Type: application/json
     "allowConversationWithoutHost": true
   },
   "transcription": {
-    "@odata.type": "#microsoft.graph.transcriptionInfo",
+    "@odata.type": "#microsoft.graph.callTranscriptionInfo",
     "state": "inactive",
     "lastModifiedDateTime": "2020-05-28T00:10:54.104318Z"
   },
