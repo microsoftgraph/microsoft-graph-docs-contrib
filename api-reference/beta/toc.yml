@@ -1367,6 +1367,50 @@ items:
             href: resources/callrecords-directroutinglogrow.md
           - name: List direct routing calls
             href: api/callrecords-callrecord-getdirectroutingcalls.md
+    - name: Compliance (preview)
+      displayName: Compliance API, Microsoft Graph Compliance API
+      items:
+      - name: Overview
+        href: resources/complianceapioverview.md
+      - name: eDiscovery
+        items:
+        - name: Overview
+          href: resources/eDiscoveryapioverview.md
+        - name: eDiscovery case
+          href: resources/ediscoverycase.md
+          items:
+          - name: List
+            href: api/ediscoverycase-list.md
+          - name: Create
+            href: api/ediscoverycase-post.md
+          - name: Get
+            href: api/ediscoverycase-get.md
+          - name: Update
+            href: api/ediscoverycase-update.md
+          - name: Delete
+            href: api/ediscoverycase-delete.md
+        - name: eDiscovery Review set
+          href: resources/reviewset.md
+          items:
+          - name: List
+            href: api/reviewset-list.md
+          - name: Create
+            href: api/reviewset-post.md
+          - name: Get
+            href: api/reviewset-get.md
+        - name: Review set query
+          href: resources/reviewsetquery.md
+          items:
+          - name: List
+            href: api/reviewsetquery-list.md
+          - name: Create
+            href: api/reviewsetquery-post.md
+          - name: Get
+            href: api/reviewsetquery-get.md
+          - name: Update
+            href: api/reviewsetquery-update.md
+          - name: Delete
+            href: api/reviewsetquery-delete.md
     - name: Cross-device experiences
       displayName: Project Rome
       items:
@@ -11244,50 +11288,6 @@ items:
             href: api/externalitem-update.md
           - name: Delete
             href: api/externalitem-delete.md
-    - name: Compliance
-      displayName: Compliance API, Microsoft Graph Compliance API
-      items:
-      - name: Overview
-        href: resources/complianceapioverview.md
-      - name: eDiscovery
-        items:
-        - name: Overview
-          href: resources/eDiscoveryapioverview.md
-        - name: eDiscovery case
-          href: resources/ediscoverycase.md
-          items:
-          - name: List
-            href: api/ediscoverycase-list.md
-          - name: Create
-            href: api/ediscoverycase-post.md
-          - name: Get
-            href: api/ediscoverycase-get.md
-          - name: Update
-            href: api/ediscoverycase-update.md
-          - name: Delete
-            href: api/ediscoverycase-delete.md
-        - name: eDiscovery Review set
-          href: resources/reviewset.md
-          items:
-          - name: List
-            href: api/reviewset-list.md
-          - name: Create
-            href: api/reviewset-post.md
-          - name: Get
-            href: api/reviewset-get.md
-        - name: Review set query
-          href: resources/reviewsetquery.md
-          items:
-          - name: List
-            href: api/reviewsetquery-list.md
-          - name: Create
-            href: api/reviewsetquery-post.md
-          - name: Get
-            href: api/reviewsetquery-get.md
-          - name: Update
-            href: api/reviewsetquery-update.md
-          - name: Delete
-            href: api/reviewsetquery-delete.md
     - name: Security
       displayname: Security API, Microsoft Graph Security API
       items:
@@ -11450,6 +11450,62 @@ items:
           href: api/sitepage-delete.md
         - name: Publish page
           href: api/sitepage-publish.md
+      - name: Taxonomy   
+        displayname: Taxonomy API
+        items:
+        - name: Store
+          href: resources/termstore-store.md
+          items:
+          - name: Get
+            href: api/termstore-store-get.md        
+          - name: Update
+            href: api/termstore-store-update.md
+        - name: Group        
+          href: resources/termstore-group.md
+          items:        
+          - name: Create
+            href: api/termstore-group-post.md
+          - name: Get 
+            href: api/termstore-store-get-group.md          
+          - name: Delete
+            href: api/termstore-group-delete.md   
+          - name: List  
+            href: api/termstore-list-groups.md
+        - name: Set
+          href: resources/termstore-set.md
+          items:
+          - name: List 
+            href: api/termstore-group-list-sets.md
+          - name: List children
+            href: api/termstore-term-list-children.md
+          - name: Create 
+            href: api/termstore-set-post.md  
+          - name: Get 
+            href: api/termstore-set-get.md
+          - name: Update 
+            href: api/termstore-set-update.md
+          - name: Delete 
+            href: api/termstore-set-delete.md                  
+        - name: Term
+          href: resources/termstore-term.md
+          items:
+          - name: List children
+            href: api/termstore-term-list-children.md  
+          - name: Create 
+            href: api/termstore-term-post.md      
+          - name: Get 
+            href: api/termstore-term-get.md
+          - name: Update
+            href: api/termstore-term-update.md
+          - name: Delete 
+            href: api/termstore-term-delete.md                     
+        - name: Relation
+          href: resources/termstore-relation.md
+          items:
+          - name: List
+            href: api/termStore-term-list-relations.md
+          - name: Create
+            href: api/termStore-relation-post.md
     - name: Tasks and plans
       displayName: Planner
       items:
@@ -12177,4 +12233,4 @@ items:
         - name: Add named item
           href: api/nameditem-add.md
         - name: List range
-          href: api/nameditem-range.md
+          href: api/nameditem-range.md      
