@@ -1,5 +1,5 @@
 ---
-title: "transcriptionInfo resource type"
+title: "callTranscriptionInfo resource type"
 description: "A single DTMF event."
 author: "rzhang"
 localization_priority: Normal
@@ -7,7 +7,7 @@ ms.prod: "cloud-communications"
 doc_type: resourcePageType
 ---
 
-# transcriptionInfo resource type
+# callTranscriptionInfo resource type
 
 Namespace: microsoft.graph
 
@@ -29,7 +29,7 @@ The following is a JSON representation of the resource.
   "optionalProperties": [
 
   ],
-  "@odata.type": "microsoft.graph.transcriptionInfo"
+  "@odata.type": "microsoft.graph.callTranscriptionInfo"
 }-->
 ```json
 {
