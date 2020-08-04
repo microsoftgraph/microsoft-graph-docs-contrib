@@ -7,6 +7,7 @@ ms.prod: "non-product-specific"
 author: "MSGraphDocsvTeam"
 ---
 
+# Enum values
 
 Namespace: microsoft.graph
 
@@ -1199,3 +1200,20 @@ Possible values for user account types (group membership), per Windows definitio
 | profileUpdate
 | resourceOwnerPasswordCredentialSignIn
 | unknownFutureValue
+
+### openIdConnectResponseMode
+| Member                
+|:----------------------
+| none
+| form_post
+| query 
+| unknownFutureValue 
+
+### openIdConnectResponseTypes
+| Member                
+|:----------------------
+| none
+| code
+| id_token
+| token
+

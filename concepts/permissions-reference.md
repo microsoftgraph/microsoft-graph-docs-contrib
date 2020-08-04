@@ -404,12 +404,15 @@ None.
 |Permission    |Display String   |Description |Admin Consent Required |
 |:-----------------------------|:-----------------------------------------|:-----------------|:-----------------|
 |_CallRecords.Read.All_|Read all call records|Allows the app to read call records for all calls and online meetings without a signed-in user.|Yes|
+|_CallRecords.Read.PstnCalls_|Read PSTN and direct routing call log data (preview)|Allows the app to read all PSTN and direct routing call log data without a signed-in user.|Yes|
 
 ### Remarks
 
 The _CallRecords.Read.All_ permission grants an application privileged access to [callRecords](/graph/api/resources/callrecords-callrecord) for every call and online meeting within your organization, including calls to and from external phone numbers. This includes potentially sensitive details about who participated in the call, as well as technical information pertaining to these calls and meetings that can be used for network troubleshooting, such as IP addresses, device details, and other network information.
 
-> **Important:** Discretion should be used when granting this permission to applications. Call records can provide insights into the operation of your business, and so can be a target for malicious actors. Only grant this permission to applications you trust to meet your data protection requirements.
+The _CallRecords.Read.PstnCalls_ permission grants an application access to [PSTN (calling plans)](/graph/api/callrecords-callrecord-getpstncalls?view=graph-rest-beta) and [direct routing](/graph/api/callrecords-callrecord-getdirectroutingcalls?view=graph-rest-beta) call logs. This includes potentially sensitive information about users as well as calls to and from external phone numbers.
+
+> **Important:** Discretion should be used when granting these permissions to applications. Call records can provide insights into the operation of your business, and so can be a target for malicious actors. Only grant these permissions to applications you trust to meet your data protection requirements.
 
 > **Important:** Make sure that you are compliant with the laws and regulations in your area regarding data protection and confidentiality of communications. Please see the [Terms of Use](https://docs.microsoft.com/legal/microsoft-apis/terms-of-use) and consult with your legal counsel for more information.
 
@@ -421,6 +424,7 @@ The _CallRecords.Read.All_ permission grants an application privileged access to
 
 * _CallRecords.Read.All_: Retrieve a call record (`GET /v1.0/communications/callRecords/{id}`).
 * _CallRecords.Read.All_: Subscribe to new call records (`POST /v1.0/subscriptions`).
+* _CallRecords.Read.PstnCalls_: Retrieve direct routing call records within the specified time range (`GET /v1.0/communications/callRecords/microsoft.graph.callRecords.getDirectRoutingCalls(fromDateTime={start date and time),toDateTime={end date and time))`)
 
 For more complex scenarios involving multiple permissions, see [Permission scenarios](#permission-scenarios).
 
@@ -929,6 +933,23 @@ The following usages are valid for both delegated and application permissions:
 For more complex scenarios involving multiple permissions, see [Permission scenarios](#permission-scenarios).
 
 ---
+
+## Information protection policy permissions
+
+#### Delegated permissions
+
+|   Permission    |  Display String   |  Description | Admin Consent Required | Microsoft Account supported |
+|:----------------|:------------------|:-------------|:-----------------------|:--------------|
+| _InformationProtectionPolicy.Read_ |   Read user sensitivity labels and label policies | Allows an app to read information protection sensitivity labels and label policy settings, on behalf of the signed-in user. | Yes | No |
+
+#### Application permissions
+
+|   Permission    |  Display String   |  Description | Admin Consent Required |
+|:-----------------------------|:-----------------------------------------|:-----------------|:-----------------|
+| _InformationProtectionPolicy.Read.All_ |   Read all published labels and label policies for an organization | Allows an app to read published sensitivity labels and label policy settings for the entire organization or a specific user, without a signed in user. | Yes |
+
+---
+
 
 ## Intune device management permissions
 
@@ -1869,6 +1890,28 @@ Threat assessment permissions are valid only on work or school accounts.
 * _ThreatAssessment.Read.All_: Read threat assessment requests (`GET /informationProtection/threatAssessmentRequests`)
 
 ---
+
+## Taxonomy permissions
+
+#### Delegated permissions
+
+|   Permission    |  Display String   |  Description | Admin Consent Required | Microsoft Account supported |
+|:----------------|:------------------|:-------------|:-----------------------|:--------------|
+| _TermStore.Read.All_        | Read term store data | Allows app to read various terms, sets, and groups in the term store | yes  | No |
+| _TermStore.ReadWrite.All_   | Read and write all term store data | Allows the app to edit or delete terms, sets, and groups in the term store | Yes  | No |
+
+
+### Remarks
+
+Taxonomy permissions are valid only on work or school accounts.
+
+### Example usage
+
+#### Delegated
+
+* _TermStore.Read.All_: Read the termstore for the tenant (`GET /termStore`)
+* _TermStore.ReadWrite.All_: Create new terms in the termStore (`POST /termStore/sets/123/children`)
+
 
 ## User permissions
 
