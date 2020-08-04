@@ -1,5 +1,5 @@
 ---
-title: "Permissions"
+title: "Remove an app from your organization's app catalog"
 description: "Remove the app from your organization's app catalog (the tenant app catalog). "
 localization_priority: Normal
 author: "nkramer"
@@ -10,8 +10,6 @@ doc_type: apiPageType
 # Remove an app from your organization's app catalog
 
 Namespace: microsoft.graph
-
-
 
 Remove the [app](../resources/teamsapp.md) from your organization's app catalog (the tenant app catalog). 
 To remove your app from your organization's app catalog, specify `organization` as the **distributionMethod** in the [teamsCatalogApp](../resources/teamsapp.md) resource.
@@ -34,6 +32,12 @@ One of the following permissions is required to call this API. To learn more, in
 DELETE /appCatalogs/teamsApps/{id}
 ```
 
+### Delete an application that is currently in review
+
+```http
+ DELETE appCatalogs/teamsApps/{appId}/appDefinitions/{appDefinitionId}
+```
+
 ## Request headers
 
 | Header        | Value           |
@@ -48,9 +52,9 @@ None.
 
 ## Response
 
-```
+``
 HTTP/1.1 204 No Content
-```
+``
 
 ## Example
 
@@ -59,6 +63,7 @@ HTTP/1.1 204 No Content
 ```http
 DELETE https://graph.microsoft.com/v1.0/appCatalogs/teamsApps/06805b9e-77e3-4b93-ac81-525eb87513b8
 ```
+<!-- markdownlint-disable MD024 -->
 
 ### Response
 
