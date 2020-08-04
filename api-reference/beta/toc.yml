@@ -10035,16 +10035,35 @@ items:
           - name: Delete
             href: api/trustframeworkpolicy-delete.md
         - name: User flows
-          href: resources/identityuserflow-tempchange.md
           items:
-          - name: List
-            href: api/identityuserflow-list.md
-          - name: Create
-            href: api/identityuserflow-post-userflows.md
-          - name: Get
-            href: api/identityuserflow-get.md
-          - name: Delete
-            href: api/identityuserflow-delete.md
+          - name: User flow
+            href: resources/identityuserflow.md
+            items:
+            - name: List
+              href: api/identityuserflow-list.md
+            - name: Create
+              href: api/identityuserflow-post-userflows.md
+            - name: Get
+              href: api/identityuserflow-get.md
+            - name: Delete
+              href: api/identityuserflow-delete.md
+          - name: B2X user flows
+            href: resources/b2xuserflows.md
+            items:
+             - name: List
+               href: api/b2xuserflows-list.md
+             - name: Create
+               href: api/b2xuserflow-post-b2xuserflows.md
+             - name: Get
+               href: api/b2xuserflows-get.md
+             - name: Delete
+               href: api/b2xuserflows-delete.md
+             - name: List identity providers
+               href: api/b2xuserflows-list-identityproviders.md
+             - name: Update identity provider
+               href: api/b2xuserflows-update-identityprovider.md
+             - name: Delete identity provider
+               href: api/b2xuserflows-delete-identityprovider.md
       - name: Governance
         items: 
         - name: Access reviews
