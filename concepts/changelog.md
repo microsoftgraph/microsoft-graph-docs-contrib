@@ -14,8 +14,8 @@ For a summary of the value of these API changes, as well as recent tools, compon
 ### Identity and access
 | **Change type** | **Version**   | **Description**                          |
 | :-------------- | :------------ | :--------------------------------------- |
-| Addition | beta | Added the following properties to [Terms of Use agreement](agreeement.md):<ul><li>isPerDeviceAcceptanceRequired</li><li>termsExpiration</li><li>userReacceptRequiredFrequency</li></ul>|
-| Addition | beta | Added a new resource type to [Terms of Use agreement](agreeement.md):</br>[agreementFile](agreementfile.md)|
+| Addition | beta | Added the following properties to [Terms of Use agreement](/graph/api/resources/agreement.md):<ul><li>isPerDeviceAcceptanceRequired</li><li>termsExpiration</li><li>userReacceptRequiredFrequency</li></ul>|
+| Addition | beta | Added a new resource type to [Terms of Use agreement](/graph/api/resources/agreement.md):</br>[agreementFile](/graph/api/resources/agreementfile.md)|
 
 ## July 2020
 
