@@ -7,6 +7,7 @@ ms.prod: "non-product-specific"
 author: "MSGraphDocsvTeam"
 ---
 
+# Enum values
 
 Namespace: microsoft.graph
 
@@ -44,11 +45,10 @@ Namespace: microsoft.graph
 
 |Member|
 |:---|
-|microsoft.graph.event|
-|microsoft.graph.message|
-|microsoft.graph.driveItem|
-|microsoft.graph.externalFile|
-|microsoft.graph.externalItem|
+|event|
+|message|
+|driveItem|
+|externalItem|
 
 ### contactRelationship values
 
@@ -249,9 +249,9 @@ Namespace: microsoft.graph
 | Member
 |:-------------------------
 | sis
+| lms
 | manual
 | unknownFutureValue
-
 
 ### educationGender values
 
@@ -1188,3 +1188,19 @@ Possible values for user account types (group membership), per Windows definitio
 | investigationsThreatIntelligence
 | generic
 | unknownFutureValue
+
+### openIdConnectResponseMode
+| Member                
+|:----------------------
+| none
+| form_post
+| query 
+| unknownFutureValue 
+
+### openIdConnectResponseTypes
+| Member                
+|:----------------------
+| none
+| code
+| id_token
+| token
