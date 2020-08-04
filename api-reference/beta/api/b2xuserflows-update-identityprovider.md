@@ -47,7 +47,7 @@ PATCH /b2xUserFlows/{id}/identityProviders/$ref
 
 ## Request body
 
-In the request body, provide a JSON representation of the `id` of the [identityProvider](../api/resources/identityprovider.md) you want to add.
+In the request body, provide a JSON representation of the `id` of the [identityProvider](../resources/identityprovider.md) you want to add.
 
 ## Response
 
