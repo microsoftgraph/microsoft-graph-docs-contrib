@@ -68,7 +68,7 @@ https://teams.microsoft.com/l/meetup-join/19:meeting_NTg0NmQ3NTctZDVkZC00YzRhLTh
 | mediaConfig         | [appHostedMediaConfig](apphostedmediaconfig.md) or [serviceHostedMediaConfig](servicehostedmediaconfig.md) | The media configuration. Required.                                                                        |
 | mediaState          | [callMediaState](callmediastate.md)                                                                    | Read-only. The call media state. |
 | meetingInfo         | [organizerMeetingInfo](organizermeetinginfo.md) or [tokenMeetingInfo](tokenmeetinginfo.md)             | The meeting information that's required for joining a meeting.                                                                                                            |
-transcription     | [transcriptionInfo](transcriptioninfo.md)                                                                  | The transcription information of the call. Read-only.    |
+transcription     | [callTranscriptionInfo](calltranscriptioninfo.md)                                                          | The transcription information of the call. Read-only.    |
 | myParticipantId     | String                                                                                                 | Read-only.                                                                                                                                                                        |
 | requestedModalities | String collection                                                                                      | The list of requested modalities. Possible values are: `unknown`, `audio`, `video`, `videoBasedScreenSharing`, `data`.                                                                            |
 | resultInfo          | [resultInfo](resultinfo.md)                                                                            | The result information. For example can hold termination reason. Read-only.                                                                                                        |
@@ -123,7 +123,7 @@ The following is a JSON representation of the resource.
   "mediaConfig": {"@odata.type": "#microsoft.graph.mediaConfig"},
   "mediaState": {"@odata.type": "#microsoft.graph.callMediaState"},
   "meetingInfo": {"@odata.type": "#microsoft.graph.meetingInfo"},  
-  "transcription": {"@odata.type": "#microsoft.graph.transcriptionInfo"},
+  "transcription": {"@odata.type": "#microsoft.graph.callTranscriptionInfo"},
   "myParticipantId": "String",
   "replacesContext": "String",
   "requestedModalities": ["unknown | audio | video | videoBasedScreenSharing | data"],
