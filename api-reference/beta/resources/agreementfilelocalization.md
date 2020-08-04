@@ -4,7 +4,7 @@ description: "Represents a localized policy files of terms of use agreement in A
 localization_priority: Normal
 doc_type: resourcePageType
 ms.prod: ""
-author: ""
+author: raprakasMSFT
 ---
 
 # agreementFileLocalization resource type

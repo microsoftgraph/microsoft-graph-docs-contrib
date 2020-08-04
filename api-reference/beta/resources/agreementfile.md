@@ -4,7 +4,7 @@ description: "Represents a customizable terms of use agreement file that a tenan
 localization_priority: Normal
 doc_type: resourcePageType
 ms.prod: ""
-author: ""
+author: raprakasMSFT
 ---
 
 # agreementFile resource type
