@@ -3,7 +3,7 @@ title: "List b2xUserFlows"
 description: "Retrieve a list of b2xUserFlow objects."
 localization_priority: Normal
 doc_type: apiPageType
-author: "jodougla"
+author: "jkdouglas"
 ms.prod: "microsoft-identity-platform"
 ---
 

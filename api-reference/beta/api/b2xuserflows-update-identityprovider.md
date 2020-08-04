@@ -3,7 +3,7 @@ title: "Update b2xUserFlow identityProviders"
 description: "Update the identityProviders in a b2xUserFlow."
 localization_priority: Normal
 doc_type: apiPageType
-author: "jodougla"
+author: "jkdouglas"
 ms.prod: "microsoft-identity-platform"
 ---
 

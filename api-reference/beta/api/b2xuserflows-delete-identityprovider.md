@@ -3,7 +3,7 @@ title: "Delete b2xUserFlow identityProvider"
 description: "Delete an identityProvider from a b2xUserFlow."
 localization_priority: Normal
 doc_type: apiPageType
-author: "jodougla"
+author: "jkdouglas"
 ms.prod: "microsoft-identity-platform"
 ---
 

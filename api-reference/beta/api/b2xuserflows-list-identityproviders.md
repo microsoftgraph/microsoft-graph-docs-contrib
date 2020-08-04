@@ -3,7 +3,7 @@ title: "List b2xUserFlow identityProviders"
 description: "List all identityProviders in a b2xUserFlow."
 localization_priority: Normal
 doc_type: apiPageType
-author: "jodougla"
+author: "jkdouglas"
 ms.prod: "microsoft-identity-platform"
 ---
 

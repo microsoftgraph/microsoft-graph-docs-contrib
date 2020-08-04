@@ -3,7 +3,7 @@ title: "Get b2xUserFlows"
 description: "Retrieve the properties and relationships a b2xUserFlow."
 localization_priority: Normal
 doc_type: apiPageType
-author: "jodougla"
+author: "jkdouglas"
 ms.prod: "microsoft-identity-platform"
 ---
 

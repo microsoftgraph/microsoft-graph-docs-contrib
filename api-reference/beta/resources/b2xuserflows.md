@@ -4,7 +4,7 @@ description: "Represents a user flow within an Azure Active Directory tenant."
 localization_priority: Priority
 doc_type: resourcePageType
 ms.prod: "microsoft-identity-platform"
-author: "jodougla"
+author: "jkdouglas"
 ---
 
 # b2xUserFlows resource type

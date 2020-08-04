@@ -3,7 +3,7 @@ title: "Create b2xUserFlow"
 description: "Create a new b2xUserFlow object."
 localization_priority: Normal
 doc_type: apiPageType
-author: "jodougla"
+author: "jkdouglas"
 ms.prod: "microsoft-identity-platform"
 ---
 
