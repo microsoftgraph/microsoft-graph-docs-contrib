@@ -85,7 +85,7 @@ items:
           - name: Overview
             href: applications-concept-overview.md
           - name: Automate SAML-based SSO configuration
-            href: https://docs.microsoft.com/azure/active-directory/manage-apps/application-saml-sso-configure-api?context=/graph/context
+            href: application-saml-sso-configure-api.md
           - name: Configure application proxy
             href: application-proxy-configure-api.md
           - name: Configure provisioning
@@ -101,7 +101,7 @@ items:
             href: outlook-get-free-busy-schedule.md
           - name: Propose new meeting times
             href: outlook-calendar-meeting-proposals.md
-          - name: Organize or attend online meetings
+          - name: Set event as online meeting
             href: outlook-calendar-online-meetings.md
           - name: Choose an online meeting API
             href: choose-online-meeting-api.md
