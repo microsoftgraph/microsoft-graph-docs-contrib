@@ -24,7 +24,7 @@ In addition to the following permissions, the user or app's tenant must have an 
 |:---------------|:--------------------------------------------|
 |Delegated (work or school account)| PrintJob.ReadWriteBasic, PrintJob.ReadWrite, PrintJob.ReadWriteBasic.All, PrintJob.ReadWrite.All |
 |Delegated (personal Microsoft account)|Not Supported.|
-|Application| PrintJob.ReadWriteBasic.All, PrintJob.ReadWrite.All |
+|Application| Not Supported. |
 
 ## HTTP request
 ```http
