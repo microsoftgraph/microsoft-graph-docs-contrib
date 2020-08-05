@@ -23,6 +23,7 @@ One of the following permissions is required to call this API. To learn more, in
 | Permission Type                        | Permissions (from least to most privileged)|
 |:----------------------------------     |:-------------|
 | Delegated (work or school account)     | AppCatalog.ReadWrite.All, Directory.ReadWrite.All |
+| Delegated (work or school account) | App.Catalog.Submit </br>Allows an app to submit apps to the organization's app catalog as well as cancel past submissions that have not been published.</br> &#119821;&#119822;&#119827;&#119812;: non-admin users can submit apps for review by including the  `requiresReview=true` query parameter during submissions. |
 | Delegated (personal Microsoft account) | Not supported|
 | Application                            | Not supported. |
 
