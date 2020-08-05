@@ -35,7 +35,7 @@ One of the following permissions is required to call this API. To learn more, in
 
 ```http
 GET /reports/getM365AppUserDetail(period='{period_value}')
-GET /reports/getM365AppUserDetail(date='{date_value}')
+GET /reports/getM365AppUserDetail(date={date_value})
 ```
 
 ## Function parameters
