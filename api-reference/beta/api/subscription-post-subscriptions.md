@@ -130,6 +130,11 @@ Content-type: application/json
 
 ---
 
+In the request body, supply a JSON representation of the [subscription](../resources/subscription.md) object.
+The `clientState` and `latestSupportedTlsVersion` fields are optional.
+
+##### Resources examples
+
 The following are valid values for the resource property.
 
 | Resource type | Examples |

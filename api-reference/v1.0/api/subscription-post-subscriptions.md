@@ -131,16 +131,19 @@ The following are valid values for the resource property of the subscription:
 
 | Resource type | Examples |
 |:------ |:----- |
-|Mail|me/mailfolders('inbox')/messages<br />me/messages|
-|Contacts|me/contacts|
-|Calendars|me/events|
-|Users|users|
-|Groups|groups|
-|Conversations|groups('*{id}*')/conversations|
-|Drives|me/drive/root|
-|List|sites/{site-id}/lists/{list-id}|
-|Security alert|security/alerts?$filter=status eq 'New'|
-|Call records|communications/callRecords|
+|[Call records](../resources/callrecords-callrecord.md)|`communications/callRecords`|
+|[Chat message](../resources/chatmessage.md) | `chats/{id}/messages`, `chats/allMessages`, `teams/{id}/channels/{id}/messages`, `teams/allMessages` |
+|[Contacts](../resources/contact.md)|`me/contacts`|
+|[Conversations](../resources/conversation.md)|`groups('{id}')/conversations`|
+|[Drives](../resources/driveitem.md)|`me/drive/root`|
+|[Events](../resources/event.md)|`me/events`|
+|[Groups](../resources/group.md)|`groups`|
+|[List](../resources/list.md)|`sites/{site-id}/lists/{list-id}`|
+|[Mail](../resources/message.md)|`me/mailfolders('inbox')/messages`, `me/messages`|
+|[Users](../resources/user.md)|`users`|
+|[Security alert](../resources/alert.md)|`security/alerts?$filter=status eq 'New'`|
+
+> **Note:** Any path starting with `me` can also be used with `users/{id}` instead of `me` to target a specific user instead of the current user.
 
 ##### Response
 
