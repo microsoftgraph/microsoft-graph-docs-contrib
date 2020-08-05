@@ -141,7 +141,10 @@ Content-length: 252
   "notificationUrl":"https://webhook.azurewebsites.net/api/send/myNotifyClient",
   "expirationDateTime":"2016-11-22T18:23:45.9356913Z",
   "creatorId": "8ee44408-0679-472c-bc2a-692812af3437",
-  "latestSupportedTlsVersion": "v1_2"
+  "latestSupportedTlsVersion": "v1_2",
+  "encryptionCertificate": "",
+  "encryptionCertificateId": "",
+  "includeResourceData": false
 }
 ```
 
