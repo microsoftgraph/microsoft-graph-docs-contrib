@@ -91,11 +91,16 @@ Use:
 
 `/users/{guid-user-id}/messages`
 
-### Teams resource limitations (preview)
+### Teams resource limitations
 
-A single active subscription per channel or chat per application is allowed.
+Each Teams resource has different subscription quotas.
 
-A maximum of 10000 active subscriptions per organization on chats and channels for all applications is allowed.
+- For subscriptions to **callRecords**:
+  - Per organization: 100 total subscriptions
+
+- For subscriptions to **chatMessages** (channels or chats) (preview):
+  - Per app and channel or chat combination: 1 subscription
+  - Per organization: 10,000 total subscriptions
 
 ## Subscription lifetime
 
