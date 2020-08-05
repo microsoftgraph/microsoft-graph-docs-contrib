@@ -51,9 +51,11 @@ Do not supply a request body for this method.
 
 If successful, this method returns a `200 OK` response code and the requested [unifiedRoleDefinition](../resources/unifiedroledefinition.md) object in the response body.
 
-## Example
+## Examples
 
-### Request
+### Example 1: Get definition of a custom role
+
+#### Request
 
 The following is an example of the request.
 
@@ -82,7 +84,7 @@ GET https://graph.microsoft.com/beta/roleManagement/directory/roleDefinitions/f1
 ---
 
 
-### Response
+#### Response
 
 The following is an example of the response.
 
@@ -101,12 +103,12 @@ Content-type: application/json
 
 {
     "@odata.context": "https://graph.microsoft.com/beta/$metadata#roleManagement/directory/roleDefinitions/$entity",
-    "id": "f189965f-f560-4c59-9101-933d4c87a91a",
+    "id": "429c3819-053d-4250-9926-4c7dcb18ae17",
     "description": "Allows reading Application Registrations",
     "displayName": "Application Registration Reader",
     "isBuiltIn": false,
     "isEnabled": true,
-    "templateId": "429c3819-053d-4250-9926-4c7dcb18ae17",
+    "templateId": "f189965f-f560-4c59-9101-933d4c87a91a",
     "version": null,
     "rolePermissions": [
         {
@@ -114,6 +116,102 @@ Content-type: application/json
                 "microsoft.directory/applications/allProperties/read"
             ],
             "condition": null
+        }
+    ]
+    "inheritsPermissionsFrom@odata.context": "https://graph.microsoft-ppe.com/beta/$metadata#roleManagement/directory/roleDefinitions('f189965f-f560-4c59-9101-933d4c87a91a')/inheritsPermissionsFrom",
+    "inheritsPermissionsFrom": []
+}
+```
+
+### Example 2: Get definition of a built-in role
+
+#### Request
+
+The following is an example of the request.
+
+
+# [HTTP](#tab/http)
+<!-- {
+  "blockType": "request",
+  "name": "get_unifiedroledefinition"
+}-->
+
+```msgraph-interactive
+GET https://graph.microsoft.com/beta/roleManagement/directory/roleDefinitions/fdd7a751-b60b-444a-984c-02652fe8fa1c
+```
+# [C#](#tab/csharp)
+[!INCLUDE [sample-code](../includes/snippets/csharp/get-unifiedroledefinition-csharp-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [JavaScript](#tab/javascript)
+[!INCLUDE [sample-code](../includes/snippets/javascript/get-unifiedroledefinition-javascript-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Objective-C](#tab/objc)
+[!INCLUDE [sample-code](../includes/snippets/objc/get-unifiedroledefinition-objc-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+---
+
+
+#### Response
+
+The following is an example of the response.
+
+> **Note:** The response object shown here might be shortened for readability. All the properties will be returned from an actual call.
+
+<!-- {
+  "blockType": "response",
+  "truncated": true,
+  "@odata.type": "microsoft.graph.unifiedRoleDefinition"
+} -->
+
+```http
+HTTP/1.1 200 OK
+Content-type: application/json
+
+{
+    "@odata.context": "https://graph.microsoft.com/beta/$metadata#roleManagement/directory/roleDefinitions/$entity",
+    "id": "fdd7a751-b60b-444a-984c-02652fe8fa1c",
+    "description": "Members of this role can create/manage groups, create/manage groups settings like naming and expiration policies, and view groups activity and audit reports.",
+    "displayName": "Groups Administrator",
+    "isBuiltIn": true,
+    "isEnabled": true,
+    "resourceScopes": [
+        "/"
+    ],
+    "templateId": "fdd7a751-b60b-444a-984c-02652fe8fa1c",
+    "version": "1",
+    "rolePermissions": [
+        {
+            "allowedResourceActions": [
+                "microsoft.directory/groups/assignLicense",
+                "microsoft.directory/groups/create",
+                "microsoft.directory/groups/delete",
+                "microsoft.directory/groups/hiddenMembers/read",
+                "microsoft.directory/groups/reprocessLicenseAssignment",
+                "microsoft.directory/groups/restore",
+                "microsoft.directory/groups/basic/update",
+                "microsoft.directory/groups/classification/update",
+                "microsoft.directory/groups/dynamicMembershipRule/update",
+                "microsoft.directory/groups/groupType/update",
+                "microsoft.directory/groups/members/update",
+                "microsoft.directory/groups/owners/update",
+                "microsoft.directory/groups/settings/update",
+                "microsoft.directory/groups/visibility/update",
+                "microsoft.azure.serviceHealth/allEntities/allTasks",
+                "microsoft.azure.supportTickets/allEntities/allTasks",
+                "microsoft.office365.serviceHealth/allEntities/allTasks",
+                "microsoft.office365.supportTickets/allEntities/allTasks",
+                "microsoft.office365.webPortal/allEntities/standard/read"
+            ],
+            "condition": null
+        }
+    ],
+    "inheritsPermissionsFrom@odata.context": "https://graph.microsoft-ppe.com/beta/$metadata#roleManagement/directory/roleDefinitions('fdd7a751-b60b-444a-984c-02652fe8fa1c')/inheritsPermissionsFrom",
+    "inheritsPermissionsFrom": [
+        {
+            "id": "88d8e3e3-8f55-4a1e-953a-9b9898b8876b"
         }
     ]
 }
