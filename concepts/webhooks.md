@@ -284,13 +284,13 @@ The following table documents the latency to expect between an event happening i
 |[contact][] | Unknown | Unknown |
 |[driveItem][] | below 1 minute | 5 minutes |
 |[event][] | Unknown | Unknown |
-|[group][] | Unknown | Unknown |
+|[group][] | below 2 minutes | 15 minutes |
 |[conversation][] | Unknown | Unknown |
 |[list][] | below 1 minute | 5 minutes |
 |[message][] | Unknown | Unknown |
 |[alert][] | Unknown | Unknown |
 |[presence][] (preview) | below 10 seconds | 1 minute |
-|[user][] | Unknown | Unknown |
+|[user][] | below 2 minutes | 15 minutes |
 
 ## See also
 
