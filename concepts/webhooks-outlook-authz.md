@@ -148,30 +148,30 @@ A few things to note about this type of notification:
 
 ## Responding to reauthorizationRequired notifications
 
-The `reauthorizationRequired`, you must re-authorize the subscription to maintain the data flow.
+The `reauthorizationRequired`, you must reauthorize the subscription to maintain the data flow.
 
-You can create a long-lived subscription (3 days), and change notifications will start flowing to the **notificationUrl**. However, at any point in time, Microsoft Graph may require that you re-authorize the subscription to prove that you still have access to resource data, in case the conditions of access have changed since the subscription was created. The following are examples of changes that affect your access to data:
+You can create a long-lived subscription (3 days), which enables change notifications to flow to the **notificationUrl**. If the conditions of access have changed since the subscription was created, Microsoft Graph may require that you reauthorize the subscription to prove that you still have access to resource data. The following are examples of changes that affect your access to data:
 
 - A tenant administrator may revoke your app's permissions to read a resource.
-- In an interactive scenario, the user who provides the authentication token to your app may be subject to dynamic policies based on various factors, such as their location, device state, or risk assesment. For example, if the user changes their physical location, the user may no longer be allowed to access the data, and your app will not be able to re-authorize the subscription. For more information on dynamic policies that control access, see [Azure AD conditional access policies](https://docs.microsoft.com/azure/active-directory/conditional-access/overview). 
+- In an interactive scenario, the user who provides the authentication token to your app may be subject to dynamic policies based on various factors, such as their location, device state, or risk assesment. For example, if the user changes their physical location, the user may no longer be allowed to access the data, and your app will not be able to reauthorize the subscription. For more information about dynamic policies that control access, see [Azure AD conditional access policies](https://docs.microsoft.com/azure/active-directory/conditional-access/overview). 
 
-The flow of an authorization challenge for an active, non-expired subscription looks as follows:
+The following steps represent the flow of an authorization challenge for an active subscription:
 
-1. Microsoft Graph requires a subscription to be re-authorized
+1. Microsoft Graph requires a subscription to be reauthorized.
     
-    The reasons for this may vary from resource to resource, and may change over time. Regardless of the cause of the re-authorization event, you will need to respond to it.
+    The reasons for this may vary from resource to resource, and may change over time. You must respond to a reauthorization event no matter what caused it.
 
-2. Microsoft Graph sends an authorization challenge notification to the **lifecycleNotificationUrl**
+2. Microsoft Graph sends an authorization challenge notification to the **lifecycleNotificationUrl**.
 
-    Note that the flow of change notifications may continue for a while, giving you extra time to respond. However, eventually change notification delivery will pause, until you take the required action.
+    Note that the flow of change notifications may continue for a while, giving you extra time to respond. However, eventually change notification delivery pauses, until you take the required action.
 
 3. Respond to this lifecycle notification in one of two ways:
-    1. Re-authorize the subscription. This does not extend the expiry date of the subscription.
-    2. Renew the subscription. This both re-authorizes and extends the expiry date.
+    - Reauthorize the subscription. This does not extend the expiry date of the subscription.
+    - Renew the subscription. This both reauthorizes and extends the expiry date.
 
     Note: Both actions require you to present a valid authentication token, similar to [creating a new subscription](webhooks.md#creating-a-subscription) or [renewing a subscription before its expiry](webhooks.md#renewing-a-subscription).
 
-4. If you successfully re-authorize or renew the subscription, change notifications continue. Otherwise, change notifications remain paused.
+4. If you successfully reauthorize or renew the subscription, change notifications continue. Otherwise, change notifications remain paused.
 
 ### reauthorizationRequired notification example
 
@@ -206,12 +206,12 @@ A few things to note about this type of notification:
 
 4. Call either of the following two APIs. If the API call succeeds, the change notification flow resumes.
 
-    - Call the `/reauthorize` action to re-authorize the subscription without extending its expiration date:
+    - Call the `/reauthorize` action to reauthorize the subscription without extending its expiration date:
         ```http
         POST  https://graph.microsoft.com/beta/subscriptions/{id}/reauthorize
         Content-type: application/json
         ```
-    - Perform a regular renew action to re-authorize and renew the subscription at the same time:
+    - Perform a regular renew action to reauthorize and renew the subscription at the same time:
         ```http
         PATCH https://graph.microsoft.com/beta/subscriptions/{id}
         Content-Type: application/json
@@ -221,21 +221,21 @@ A few things to note about this type of notification:
         }
         ```
 
-      Renewing may fail, because the authorization checks performed by the system may deny the app or the user access to the resource. It may be necessary for the app to obtain a new access token from the user to successfully re-authorize a subscription. 
+      Renewing may fail, because the authorization checks performed by the system may deny the app or the user access to the resource. It may be necessary for the app to obtain a new access token from the user to successfully reauthorize a subscription. 
       
-      You may retry these actions later, at any time, and succeed if the conditions of access change. Any notifications about resource changes that happen between the time the lifecycle notification was sent, and the time when the app eventually re-creates the subscription successfully, would be lost. In such cases, the app should separately fetch those changes.
+      You may retry these actions later, at any time, and succeed if the conditions of access change. Any notifications about resource changes that happen between the time the lifecycle notification was sent and the time when the app successfully creates the subscription again, would be lost. In such cases, the app should separately fetch those changes.
 
 ### Additional information
 
-Keep the following in mind:
+The following information can help you understand authorization challenges:
 
-1. Authorization challenges do not replace the need to renew a resource change subscription before it expires. 
+- Authorization challenges do not replace the need to renew a resource change subscription before it expires. 
 
-    While you can choose to renew a subscription when you receive an authorization challenge, Microsoft Graph may not challenge all of your subscriptions. For example, a subscription that does not have any activity and has no change notifications pending delivery may not signal any re-authorization challenges to your app. Make sure to [renew subscriptions](webhooks.md#renewing-a-subscription) before they expire.
+    While you can choose to renew a subscription when you receive an authorization challenge, Microsoft Graph may not challenge all of your subscriptions. For example, a subscription that does not have any activity and has no change notifications pending delivery may not signal any reauthorization challenges to your app. Make sure to [renew subscriptions](webhooks.md#renewing-a-subscription) before they expire.
 
-2. The frequency of authorization challenges is subject to change.
+- The frequency of authorization challenges is subject to change.
 
-    Do not make assumptions about the frequency of authorization challenges. These lifecycle notifications tell you when to take actions, saving you from having to track which subscriptions require re-authorization. Be ready to handle authorization challenges anywhere from once a few minutes for every subscription, to rarely for only some of your subscriptions.
+    Do not make assumptions about the frequency of authorization challenges. These lifecycle notifications tell you when to take actions, saving you from having to track which subscriptions require reauthorization. Be ready to handle authorization challenges from once every few minutes for every subscription to rarely for only some of your subscriptions.
 
 ## Future-proof the code handling lifecycle notifications
 
