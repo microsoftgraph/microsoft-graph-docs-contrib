@@ -38,7 +38,7 @@ Using the Microsoft Graph API, an app can subscribe to changes on the following 
 - Content within the hierarchy of the _root folder_ [driveItem][] on OneDrive for Business
 - Security [alert][]
 - Teams [callRecord][]
-- Teams [chatMessage][] (preview)
+- Teams [chatMessage][]
 - Teams [presence][] (preview)
 
 You can create a subscription to a specific Outlook folder such as the Inbox:
@@ -91,7 +91,7 @@ Use:
 
 `/users/{guid-user-id}/messages`
 
-### Teams resource limitations (preview)
+### Teams resource limitations
 
 A single active subscription per channel or chat per application is allowed.
 

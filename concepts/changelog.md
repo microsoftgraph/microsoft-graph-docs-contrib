@@ -11,6 +11,14 @@ This changelog covers specific API-level changes in Microsoft Graph v1.0 and bet
 
 For a summary of the value of these API changes, as well as recent tools, components, guidance, and tutorial additions, see [What's new in Microsoft Graph](whats-new-overview.md).
 
+## Augut 2020
+
+### Change notifications
+
+| **Change type** | **Version**   | **Description**                          |
+| :-------------- | :------------ | :--------------------------------------- |
+| Addition | v1.0 | Adds [chatMessage](/graph/api/resources/presence) to the resources supported for [change notifications](/graph/webhooks). |
+
 ## July 2020
 
 ### Calendar
