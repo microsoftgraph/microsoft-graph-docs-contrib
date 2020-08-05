@@ -20,7 +20,7 @@ An organization that supports any of the following online meeting providers can 
 
 - Microsoft Teams, acquired as part of a Microsoft 365 business or enterprise suite
 - Skype
-- Skype for Business (which is being [superceded by Microsoft Teams](https://www.microsoft.com/microsoft-365/previous-versions/skype-for-business-online?OCID=AID2100233_SEM_XM02XAAAAIUvHAuF:20200730151407:s&msclkid=19b7c6af2c5c1bcea7d9998c06585710&ef_id=XM02XAAAAIUvHAuF:20200730151407:s))
+- Skype for Business (which is being [superceded by Microsoft Teams](https://www.microsoft.com/microsoft-365/previous-versions/skype-for-business-online))
 
 Look for the **allowedOnlineMeetingProviders** and **defaultOnlineMeetingProvider** properties to verify if an Outlook [calendar](/graph/api/resources/calendar) supports any online meeting providers. The following example shows the signed-in user's default calendar supports two providers, Microsoft Teams and Skype for Business, and uses Microsoft Teams as the default online meeting provider. 
 
