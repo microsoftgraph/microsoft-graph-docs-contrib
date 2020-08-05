@@ -289,6 +289,7 @@ The following table documents the latency to expect between an event happening i
 |[list][] | below 1 minute | 5 minutes |
 |[message][] | Unknown | Unknown |
 |[alert][] | Unknown | Unknown |
+|[presence][] (preview) | below 10 seconds | 1 minute |
 |[user][] | Unknown | Unknown |
 
 ## See also
