@@ -1949,6 +1949,26 @@ Threat assessment permissions are valid only on work or school accounts.
 
 ---
 
+## Taxonomy permissions
+
+#### Delegated permissions
+
+| _TermStore.Read.All_        | Read term store data | Allows app to read various terms, sets, and groups in the term store | yes  | No |
+| _TermStore.ReadWrite.All_   | Read and write all term store data | Allows the app to edit or delete terms, sets, and groups in the term store | Yes  | No |
+
+### Remarks
+
+Taxonomy permissions are valid only on work or school accounts.
+
+### Example usage
+
+#### Delegated
+
+* _TermStore.Read.All_: Read the termstore for the tenant (`GET /termStore`)
+* _TermStore.ReadWrite.All_: Create new terms in the termStore (`POST /termStore/sets/123/children`)
+
+---
+
 ## User permissions
 
 #### Delegated permissions
