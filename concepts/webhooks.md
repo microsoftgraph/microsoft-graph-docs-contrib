@@ -288,10 +288,11 @@ The following table lists the latency to expect between an event happening in th
 |[conversation][] | Unknown | Unknown |
 |[list][] | below 1 minute | 5 minutes |
 |[message][] | Unknown | Unknown |
-|[alert][] | Unknown | Unknown |
+|[alert][] | below 3 minutes | 5 minutes |
 |[presence][] (preview) | below 10 seconds | 1 minute |
 |[user][] | below 2 minutes | 15 minutes |
 
+>**Note:** the latency provided for the **alert** resource is only applicable once the alert itself has been created. It does not include the time it takes for a rule takes to create an alert from the data.
 ## See also
 
 - [Subscription resource type](/graph/api/resources/subscription?view=graph-rest-1.0)
