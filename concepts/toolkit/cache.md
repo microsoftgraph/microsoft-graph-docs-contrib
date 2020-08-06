@@ -20,6 +20,7 @@ The cache options can be found in the static class `CacheService`, in the `confi
 ```TypeScript
 let config = {
   defaultInvalidationPeriod: number,
+  isEnabled: boolean,
   people: {
     invalidiationPeriod: number,
     isEnabled: boolean
@@ -40,16 +41,9 @@ Cache invalidation period is represented in milliseconds, and has a default valu
 | People | 60min |
 | Photos | 60min |
 
-To globally enable or disable all MGT caching, use the following functions:
-
-```JavaScript
-CacheService.enableCacheGlobal();
-CacheService.disableCacheGlobal();
-```
-
 ### Examples
 
-To individual disable a store simply set the value of `isEnabled` in the config properties to false:
+To individual disable a store simply set the value of `isEnabled` in that store's config properties to false:
 ```JavaScript
 CacheService.config.users.isEnabled = false;
 ```
