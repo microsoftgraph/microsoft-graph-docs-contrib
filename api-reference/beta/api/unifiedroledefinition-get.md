@@ -216,7 +216,7 @@ Content-type: application/json
     ]
 }
 ```
-### Example 3: Get definition of a role and $expand on the role it inherits from
+### Example 3: Get definition of an Azure AD built-in role and $expand on the role it inherits from
 
 #### Request
 
