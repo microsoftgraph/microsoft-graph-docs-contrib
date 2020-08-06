@@ -292,7 +292,7 @@ The following table lists the latency to expect between an event happening in th
 |[presence][] (preview) | below 10 seconds | 1 minute |
 |[user][] | below 2 minutes | 15 minutes |
 
->**Note:** the latency provided for the **alert** resource is only applicable once the alert itself has been created. It does not include the time it takes for a rule takes to create an alert from the data.
+>**Note:** the latency provided for the **alert** resource is only applicable once the alert itself has been created. It does not include the time it takes for a rule to create an alert from the data.
 ## See also
 
 - [Subscription resource type](/graph/api/resources/subscription?view=graph-rest-1.0)
