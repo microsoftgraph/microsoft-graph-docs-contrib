@@ -100,7 +100,7 @@ For both long running operation pattern and regular pattern, we suggest you to a
 
 ### 3. Parse top-level error code
 
-If you can't find corresponding second-level error codes or messages in detailed errors listed in [Error codes](/concepts/workbook-error-codes.md), we suggest you to act according the instructions provided for top-level error then. Details on the top-level error codes and messages can be found in [Error codes](/concepts/workbook-error-codes.md)
+If you can't find corresponding second-level error codes or messages listed in in detailed errors in [Error codes](/concepts/workbook-error-codes.md), we suggest you to act according the instructions provided for top-level error then. Details on the top-level error codes and messages can be found in [Error codes](/concepts/workbook-error-codes.md)
 
 ### 4. Parse status code
 
