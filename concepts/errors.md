@@ -115,6 +115,7 @@ prepared to handle any one of these errors.
 |:--------------------------|:--------------
 | **accessDenied**          | The caller doesn't have permission to perform the action. 
 | **activityLimitReached**  | The app or user has been throttled.
+| **extensionError**        | The mailbox is located on premises and the Exchange server does not support fedarated Microsoft Graph request or an [application policy](graph/auth-limit-mailbox-access) prevents the application from accessing the mailbox.
 | **generalException**      | An unspecified error has occurred.
 | **invalidRange**          | The specified byte range is invalid or unavailable.
 | **invalidRequest**        | The request is malformed or incorrect.
