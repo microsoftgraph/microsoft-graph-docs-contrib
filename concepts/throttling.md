@@ -43,7 +43,7 @@ When you implement error handling, use the HTTP error code 429 to detect throttl
 2. Retry the request.
 3. If the request fails again with a 429 error code, you are still being throttled. Continue to use the recommended `Retry-After` delay and retry the request until it succeeds.
 
-All the resources and APIs described in the [Service-specific limits](#service-specific-limits) section provide a `Retry-After` header except when denoted.
+All the resources and APIs described in the [Service-specific limits](#service-specific-limits) section provide a `Retry-After` header except when noted.
 
 For a broader discussion of throttling in the Microsoft Cloud, see [Throttling pattern](https://docs.microsoft.com/azure/architecture/patterns/throttling).
 
