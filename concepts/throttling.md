@@ -238,10 +238,9 @@ The following limits apply to any request on `/reports`.
 | Any request (CSV)         | 14 requests per 10 minutes   | 40 requests per 10 minutes |
 | Any request (JSON, beta)  | 100 requests per 10 minutes  | n/a                        |
 
-The preceding limits apply individually to each report API. For example a request to Microsoft Teams user activity report API and a request to Outlook user activity report API within 10 minutes will count as 1 request out of 14 for each API, not 2 requests out of 14 for both.
+The preceding limits apply individually to each report API. For example, a request to the Microsoft Teams user activity report API and a request to the Outlook user activity report API within 10 minutes will count as 1 request out of 14 for each API, not 2 requests out of 14 for both.
 
-The preceding limits apply to the following resources:  
-report.
+The preceding limits apply to the **report** resource.  
 
 ### Invitation manager service limits
 
