@@ -26,11 +26,8 @@ One of the following permissions is required to call this API. To learn more, in
 ## HTTP request
 <!-- { "blockType": "ignored" } -->
 ```http
-POST /app/calls/{id}/cancelMediaProcessing
 POST /communications/calls/{id}/cancelMediaProcessing
 ```
-
-> **Note:** The `/app` path is deprecated. Going forward, use the `/communications` path.
 
 ## Request headers
 
