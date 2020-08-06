@@ -291,7 +291,7 @@ and [polling requirements](/graph/api/resources/teams-api-overview#polling-requi
 
 Throttling is based on a token bucket algorithm which works by adding individual cost of requests. The sum of requests costs is then compared against pre-determined limits. Only the requests exceeding the limits will be throttled. If any of the limits are exceeded, the response will be `429 Too Many Requests`. It is possible to receive `429 Too Many Requests` responses even when the following limits are not reached in situations when the services are under an important load or based on data volume for a specific tenant. The following table documents existing limits:
 
-| Limit type | Resource unit quotat | Write quotat |
+| Limit type | Resource unit quota | Write quota |
 | ---------- | ----------- | -------------- |
 | application+tenant pair | S: 3500, M:5000, L:8000 per 10 seconds | 3000 per 2 minutes and 30 seconds |
 | application | 150,000 per 20 seconds  | 70,000 per 5 minutes |
