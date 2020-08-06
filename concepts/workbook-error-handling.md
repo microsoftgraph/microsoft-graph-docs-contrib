@@ -12,7 +12,7 @@ This article describes general instructions and suggestions to handle errors tha
 
 ## Error response and error object
 
-There are two kinds of error responses in Excel Graph. One kind is the common error response, which looks like the following example.
+There are two kinds of error responses in Excel Graph. One kind is the regular error response, which looks like the following example.
 >**Note:** The response object shown here might be shortened for readability.
 
 ```http
@@ -37,7 +37,7 @@ Content-type: application/json
 }
 ```
 
-For above two kinds of error responses, the error object has the following structure:
+For above two error responses, the error object has the following structure:
 
 ```json
 {
@@ -47,7 +47,7 @@ For above two kinds of error responses, the error object has the following struc
 }
 ```
 
-The `innerError` object might recursively contain more `innerError` objects with additional, more specific error codes. For example, error object may contain more detailed error information in the second-level error code and second-level  error message below.
+The `innerError` object might recursively contain more `innerError` objects with additional, more specific error codes. For example, error object may contain more detailed error information in the second-level error code and message below.
 
 ```json
 {
@@ -63,7 +63,7 @@ The `innerError` object might recursively contain more `innerError` objects with
 
 ## Steps to handle error response
 
-To better handle errors occurs in Excel graph, here is the general steps we suggest to follow.
+To better handle errors occurs in Excel graph, here are the general steps we suggest to follow.
 
 ### 1. Determine whether it is a long running operation error
 
@@ -104,7 +104,7 @@ If you can't find corresponding second-level error codes or messages in detailed
 
 ### 4. Parse status code
 
-If the error code you encounter are not in either of the second-level list or top-level list. We suggest to act according to HTTP status code.
+If the error code you encounter is not in either of the second-level list or top-level list. We suggest to act according to HTTP status code.
 
 <!-- {
   "type": "#page.annotation",
