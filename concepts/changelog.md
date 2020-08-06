@@ -11,6 +11,14 @@ This changelog covers specific API-level changes in Microsoft Graph v1.0 and bet
 
 For a summary of the value of these API changes, as well as recent tools, components, guidance, and tutorial additions, see [What's new in Microsoft Graph](whats-new-overview.md).
 
+## August 2020
+
+### Subscriptions
+
+| **Change type** | **Version** | **Description**                          |
+|:----------------|:------------|:-----------------------------------------|
+| Addition | Beta | Added the ability to get [change notifications delivered via Event Hub](/graph/api/concepts/change-notifications-delivery?view=graph-rest-beta). |
+
 ## July 2020
 
 ### Calendar
@@ -586,12 +594,6 @@ Added new APIs and resources for subscribing to and retrieving call records from
 
 
 ## March 2020
-
-### Subscriptions
-
-| **Change type** | **Version** | **Description**                          |
-|:----------------|:------------|:-----------------------------------------|
-| Addition | Beta | Added the ability to get [change notifications delivered via Event Hub](/graph/api/concepts/change-notifications-delivery?view=graph-rest-beta). |
 
 ### Calendar
 
