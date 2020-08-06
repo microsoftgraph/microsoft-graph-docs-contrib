@@ -291,43 +291,45 @@ and [polling requirements](/graph/api/resources/teams-api-overview#polling-requi
 
 Throttling is based on a token bucket algorithm which works by adding individual cost of requests. The sum of requests costs is then compared against pre-determined limits. Only the requests exceeding the limits will be throttled. If any of the limits are exceeded, the response will be `429 Too Many Requests`. It is possible to receive `429 Too Many Requests` responses even when the following limits are not reached in situations when the services are under an important load or based on data volume for a specific tenant. The following table documents existing limits:
 
-| Limit type | Read limit value | ReadWrite Limit Value |
+| Limit type | Resource unit quotat | Write quotat |
 | ---------- | ----------- | -------------- |
-| application+tenant pair | TODO | TODO |
-| application | TODO | TODO |
-| tenant | TODO | TODO |
+| application+tenant pair | S: 3500, M:5000, L:8000 per 10 seconds | 3000 per 2 minutes and 30 seconds |
+| application | 150,000 per 20 seconds  | 70,000 per 5 minutes |
+| tenant | Not Applicable | 9000 per 5 minutes |
+
+> **Note**: the application+tenant pair limit varies based on the number of users in the tenant requests are executed against. The tenant sizes are defined as following: S: under 50 users, M: between 50 and 500 users, and L: above 500 users.
 
 The following table documents base requests costs, any other request not listed in the following table has a base cost of 1.
 
-| Operation | Request Path | Base Request Cost | Affecting limit(s) |
+| Operation | Request Path | Base Resource Unit Cost | Write Cost |
 | --------- | ------------ | ----------------- | ------------------ |
-| GET | `applications` | 2 | Read |
-| GET | `applications/{id}/extensionProperties` | 2 | Read|
-| GET | `contracts` | 3 | Read |
-| POST | `directoryObjects/getByIds` |  3 | Read |
-| GET | `domains/{id}/domainNameReferences` | 4 | Read |
-| POST | `getObjectsById` | 3 | Read |
-| GET | `groups/{id}/members` | 3 | Read |
-| GET | `groups/{id}/transitiveMembers` | 5 | Read |
-| POST | `isMemberOf` | 4 | Read |
-| POST | `me/checkMemberGroups` | 4 | Read |
-| POST | `me/checkMemberObjects` | 4 | Read |
-| POST | `me/getMemberGroups` | 2 | Read |
-| POST | `me/getMemberObjects` | 2 | Read |
-| GET | `me/licenseDetails` | 2 | Read |
-| GET | `me/memberOf` | 2 | Read |
-| GET | `me/ownedObjects` | 2 | Read |
-| GET | `me/transitiveMemberOf` | 2 | Read |
-| GET | `oauth2PermissionGrants` | 2 | Read |
-| GET | `oauth2PermissionGrants/{id}` | 2 | Read |
-| GET | `servicePrincipals/{id}/appRoleAssignments` | 2 | Read |
-| GET | `subscribedSkus` | 3 | Read |
-| GET | `users` | 2 | Read |
-| GET | Any identity path not listed in the table | 1 | Read |
-| POST | Any identity path not listed in the table | 1 | ReadWrite |
-| PATCH | Any identity path not listed in the table | 1 | ReadWrite |
-| PUT | Any identity path not listed in the table | 1 | ReadWrite |
-| DELETE | Any identity path not listed in the table | 1 | ReadWrite |
+| GET | `applications` | 2 | 0 |
+| GET | `applications/{id}/extensionProperties` | 2 | 0 |
+| GET | `contracts` | 3 | 0 |
+| POST | `directoryObjects/getByIds` |  3 | 0 |
+| GET | `domains/{id}/domainNameReferences` | 4 | 0 |
+| POST | `getObjectsById` | 3 | 0 |
+| GET | `groups/{id}/members` | 3 | 0 |
+| GET | `groups/{id}/transitiveMembers` | 5 | 0 |
+| POST | `isMemberOf` | 4 | 0 |
+| POST | `me/checkMemberGroups` | 4 | 0 |
+| POST | `me/checkMemberObjects` | 4 | 0 |
+| POST | `me/getMemberGroups` | 2 | 0 |
+| POST | `me/getMemberObjects` | 2 | 0 |
+| GET | `me/licenseDetails` | 2 | 0 |
+| GET | `me/memberOf` | 2 | 0 |
+| GET | `me/ownedObjects` | 2 | 0 |
+| GET | `me/transitiveMemberOf` | 2 | 0 |
+| GET | `oauth2PermissionGrants` | 2 | 0 |
+| GET | `oauth2PermissionGrants/{id}` | 2 | 0 |
+| GET | `servicePrincipals/{id}/appRoleAssignments` | 2 | 0 |
+| GET | `subscribedSkus` | 3 | 0 |
+| GET | `users` | 2 | 0 |
+| GET | Any identity path not listed in the table | 1 | 0 |
+| POST | Any identity path not listed in the table | 1 | 1 |
+| PATCH | Any identity path not listed in the table | 1 | 1 |
+| PUT | Any identity path not listed in the table | 1 | 1 |
+| DELETE | Any identity path not listed in the table | 1 | 1 |
 
 Other factors that impact a request cost:
 
