@@ -50,12 +50,11 @@ POST /appCatalogs/teamsApps?requiresReview:{boolean}
 | Header        | Value           |
 |:--------------|:--------------  |
 | Authorization | Bearer {token}. Required.  |
-| Content-Type  | application/zip |
+| Content-Type  | application/zip. Required. |
 
 ## Request body
 
-Teams Zip Manifest Payload.
-For Teams application zip file [see Create an app package](/microsoftteams/platform/concepts/apps/apps-package).
+In the request body, include a Teams zip manifest payload. For details, see [Create an app package](/microsoftteams/platform/concepts/apps/apps-package).
 You can't create an app for an organization that has the same manifest ID as another app in that organization.
 
 ## Response
@@ -75,8 +74,6 @@ Content-length: 244
 
 [Zip file containing a Teams app package]
 ```
-
-For information about how to create a Microsoft Teams application zip file, see [Create an app package](/microsoftteams/platform/concepts/apps/apps-package).
 
 <!-- markdownlint-disable MD024 -->
 
