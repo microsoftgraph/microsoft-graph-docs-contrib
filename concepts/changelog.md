@@ -591,7 +591,7 @@ Added new APIs and resources for subscribing to and retrieving call records from
 
 | **Change type** | **Version** | **Description**                          |
 |:----------------|:------------|:-----------------------------------------|
-| Deletion | Beta | Removed the **includeProperties** property to the [subscription](/graph/api/resources/subscription?view=graph-rest-beta) entity. (replaced by includeResourceData) |
+| Deletion | Beta | Removed the **includeProperties** property from the [subscription](/graph/api/resources/subscription?view=graph-rest-beta) entity. This property is replaced by the **includeResourceData** property. |
 
 ### Calendar
 
