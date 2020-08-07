@@ -275,6 +275,27 @@ You can optionally configure the firewall that protects your notification URL to
 
 > **Note:** The listed IP addresses that are used to deliver change notifications can be updated at any time without notice.
 
+## Latency
+
+The following table lists the latency to expect between an event happening in the service and the delivery of the change notification.
+
+| Resource | Average latency | Maximum latency |
+|:-----|:-----|:-----|
+|[callRecord][] | Less than 15 minutes | 60 minutes |
+|[chatMessage][] (preview) | Less than 10 seconds | 1 minute |
+|[contact][] | Unknown | Unknown |
+|[driveItem][] | Less than 1 minute | 5 minutes |
+|[event][] | Unknown | Unknown |
+|[group][] | Less than 2 minutes | 15 minutes |
+|[conversation][] | Unknown | Unknown |
+|[list][] | Less than 1 minute | 5 minutes |
+|[message][] | Unknown | Unknown |
+|[alert][] | Less than 3 minutes | 5 minutes |
+|[presence][] (preview) | Less than 10 seconds | 1 minute |
+|[user][] | Less than 2 minutes | 15 minutes |
+
+>**Note:** The latency provided for the **alert** resource is only applicable after the alert itself has been created. It does not include the time it takes for a rule to create an alert from the data.
+
 ## See also
 
 - [Subscription resource type](/graph/api/resources/subscription?view=graph-rest-1.0)
