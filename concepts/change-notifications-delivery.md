@@ -144,15 +144,6 @@ The main difference during subscription creation will be the **notificationUrl**
 - secret name: the name you gave to the secret when you created it. Can be found on the Azure Key Vault "Secrets" page.
 - domain name: name of your tenant e.g. consto.onmicrosoft.com or contoso.com. This domain will be used to access the Azure Key Vault so it is important that it matches the domain used by the Azure subscription which holds the Azure Key Vault. To get this information, you can navigate to the overview page of the Azure Key Vault you created, click on the subscription and the domain name will be displayed under the **Directory** field.
 
-## Next steps
-
-See the following Azure Event Hubs quick starts:
-
-- [.NET Core](/azure/event-hubs/get-started-dotnet-standard-send-v2)
-- [Java](/azure/event-hubs/event-hubs-java-get-started-send)
-- [Python](/azure/event-hubs/get-started-python-send-v2)
-- [JavaScript](/azure/event-hubs/get-started-node-send-v2)
-
 #### Receiving notifications
 
 Events will be now delivered to your application by Event Hubs, please refer to [receiving events](https://docs.microsoft.com/azure/event-hubs/get-started-dotnet-standard-send-v2#receive-events) from the Event Hubs documentation.
@@ -161,9 +152,7 @@ Before you can receive the notifications in your application, you'll need to cre
 
 > **Note:** you should always create a separate policy for the application which listens to Event Hubs messages instead of reusing the same connection string you set in Azure KeyVault. This ensure each component of the solution has only the permissions it needs and follows the least permissions security principle.
 
-### Frequent questions
-
-#### Microsoft Graph Change Tracking application missing
+### What happens if the Microsoft Graph change tracking application is missing?
 
 It is possible the **Microsoft Graph Change Tracking** service principal is missing from your tenant depending on when the tenant was created and administrative operations. To resolve this issue, run [the following query](https://developer.microsoft.com/en-us/graph/graph-explorer?request=servicePrincipals&method=POST&version=v1.0&GraphUrl=https://graph.microsoft.com&requestBody=eyJhcHBJZCI6IjBiZjMwZjNiLTRhNTItNDhkZi05YTgyLTIzNDkxMGM0YTA4NiJ9) in [Microsoft Graph Explorer](https://developer.microsoft.com/en-us/graph/graph-explorer).
 
@@ -187,3 +176,12 @@ Connect-AzureAD -TenantId <tenant-id>
 # replace tenant-id by the id of your tenant.
 New-AzureADServicePrincipal -AppId 0bf30f3b-4a52-48df-9a82-234910c4a086
 ```
+
+## Next steps
+
+See the following Azure Event Hubs quick starts:
+
+- [.NET Core](/azure/event-hubs/get-started-dotnet-standard-send-v2)
+- [Java](/azure/event-hubs/event-hubs-java-get-started-send)
+- [Python](/azure/event-hubs/get-started-python-send-v2)
+- [JavaScript](/azure/event-hubs/get-started-node-send-v2)
