@@ -1,6 +1,6 @@
 ---
 title: "reportRoot: getM365AppUserDetail"
-description: "Get a report that provides the details about which apps and flatforms users have used."
+description: "Get a report that provides the details about which apps and platforms users have used."
 localization_priority: Normal
 ms.prod: "reports"
 author: "pranoychaudhuri"
@@ -13,7 +13,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Get a report that provides the details about which apps and flatforms users have used.
+Get a report that provides the details about which apps and platforms users have used.
 
 > **Note:** For details about different report views and names, see [Microsoft 365 reports - Microsoft 365 Apps usage](https://docs.microsoft.com/microsoft-365/admin/activity-reports/microsoft365-apps-usage).
 
