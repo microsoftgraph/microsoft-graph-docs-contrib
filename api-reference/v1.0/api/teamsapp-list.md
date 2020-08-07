@@ -1,13 +1,13 @@
 ---
-title: "List Teams apps published in the tenant app catalog"
-description: "List apps from the Microsoft Teams app catalog. "
+title: "List teamsApp"
+description: "List Teams apps published in the tenant app catalog"
 author: "nkramer"
 localization_priority: Normal
 ms.prod: "microsoft-teams"
 doc_type: apiPageType
 ---
 
-# List teamsApps 
+# List teamsApp
 
 Namespace: microsoft.graph
 
@@ -61,6 +61,11 @@ The following example lists all applications that are specific to your tenant.
 
 #### Request
 
+<!-- {
+  "blockType": "request",
+  "name": "list_teamsapp"
+}-->
+
 ```http
 GET https://graph.microsoft.com/v1.0/appCatalogs/teamsApps?$filter=distributionMethod eq 'organization'
 ```
@@ -68,6 +73,12 @@ GET https://graph.microsoft.com/v1.0/appCatalogs/teamsApps?$filter=distributionM
 <!-- markdownlint-disable MD024 -->
 
 #### Response
+
+<!-- {
+  "blockType": "response",
+  "name": "list_teamsapp",
+  "truncated": true
+} -->
 
 ```http
 HTTP/1.1 200 OK
@@ -92,11 +103,22 @@ The following example lists applications with a given ID.
 
 #### Request
 
+<!-- {
+  "blockType": "request",
+  "name": "list_teamsapp"
+}-->
+
 ```http
 GET https://graph.microsoft.com/v1.0/appCatalogs/teamsApps?$filter=id%20eq%20'b1c5353a-7aca-41b3-830f-27d5218fe0e5'
 ```
 
 #### Response
+
+<!-- {
+  "blockType": "response",
+  "name": "list_teamsapp",
+  "truncated": true
+} -->
 
 ```http
 HTTP/1.1 200 OK
@@ -115,20 +137,31 @@ Content-Type: application/json
 }
 ```
 
-### Example 3: List applications with the associated app definitions and progress in the review approval pipeline
+### Example 3: List applications and their progress in the review approval pipeline
 
 #### Request
 
+<!-- {
+  "blockType": "request",
+  "name": "list_teamsapp"
+}-->
+
 ```http
-GET https://graph.microsoft.com/beta/appCatalogs/teamsApps?$expand=appDefinitions
+GET https://graph.microsoft.com/v1.0/appCatalogs/teamsApps?$expand=appDefinitions
 ```
 
 #### Response
 
+<!-- {
+  "blockType": "response",
+  "name": "list_teamsapp",
+  "truncated": true
+} -->
+
 ```http
 HTTP/1.1 200 OK
 {
-    "@odata.context": "https://graph.microsoft.com/beta/$metadata#appCatalogs/teamsApps(appDefinitions())",
+    "@odata.context": "https://graph.microsoft.com/v1.0/$metadata#appCatalogs/teamsApps(appDefinitions())",
     "@odata.count": 2,
     "value": [
         {

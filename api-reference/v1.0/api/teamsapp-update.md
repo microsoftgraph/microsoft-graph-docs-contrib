@@ -1,5 +1,5 @@
 ---
-title: "Update Teams app published in your organization's app catalog"
+title: "Update teamsApp"
 description: "Update an app previously published to a tenant app catalog. "
 author: "nkramer"
 localization_priority: Normal
@@ -7,7 +7,7 @@ ms.prod: "microsoft-teams"
 doc_type: apiPageType
 ---
 
-# Update Teams app published in your organization's app catalog
+# Update teamsApp
 
 Namespace: microsoft.graph
 
@@ -60,6 +60,11 @@ HTTP/1.1 204 No Content
 ### Request
 
 <!-- markdownlint-disable MD034 -->
+<!-- {
+  "blockType": "request",
+  "name": "update_teamsapp"
+}-->
+
 `
 PUT https://graph.microsoft.com/v1.0/appCatalogs/teamsApps/06805b9e-77e3-4b93-ac81-525eb87513b8
 Content-type: application/zip
@@ -70,13 +75,25 @@ Content-length: 244
 
 ### Response
 
+<!-- {
+  "blockType": "response",
+  "name": "update_teamsapp",
+  "truncated": true
+} -->
+
 ``
 HTTP/1.1 204 No Content
 ``
 
-### Example 2: Upload a new version of an application published to the Microsoft Teams app catalog following review
+### Example 2: Update a previously reviewed and published application to the Teams app catalog
 
 ### Request
+
+<!-- markdownlint-disable MD034 -->
+<!-- {
+  "blockType": "request",
+  "name": "update_teamsapp"
+}-->
 
 ```http
 POST https://graph.microsoft.com/beta/appCatalogs/teamsApps/e3e29acb-8c79-412b-b746-e6c39ff4cd22/appDefinitions?requiresReview=true
@@ -85,6 +102,12 @@ Content-length: 244
 ```
 
 ### Response
+
+<!-- {
+  "blockType": "response",
+  "name": "update_teamsapp",
+  "truncated": true
+} -->
 
 ```http
 HTTP/1.1 201 Created

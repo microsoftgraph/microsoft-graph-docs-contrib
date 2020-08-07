@@ -1,5 +1,5 @@
 ---
-title: "Publish a teamsApp to your tenant app catalog"
+title: "Create teamsApp"
 description: "Publish an application to Teams app catalog. "
 author: "nkramer"
 localization_priority: Normal
@@ -23,7 +23,7 @@ One of the following permissions is required to call this API. To learn more, in
 | Permission Type                        | Permissions (from least to most privileged)|
 |:----------------------------------     |:-------------|
 | Delegated (work or school account)     | AppCatalog.ReadWrite.All, Directory.ReadWrite.All |
-| Delegated (work or school account) | App.Catalog.Submit|
+| Delegated (work or school account) | AppCatalog.Submit|
 | Delegated (personal Microsoft account) | Not supported|
 | Application                            | Not supported. |
 
@@ -70,6 +70,13 @@ If successful, this method returns a `200 OK` response code and a [teamsCatalogA
 
 #### Request
 
+```html
+<!-- {
+  "blockType": "request",
+  "name": "create_teamsapp"
+}-->
+```
+
 ```http
 POST https://graph.microsoft.com/v1.0/appCatalogs/teamsApps
 Content-type: application/zip
@@ -81,6 +88,12 @@ Content-length: 244
 <!-- markdownlint-disable MD024 -->
 
 #### Response
+
+<!-- {
+  "blockType": "response",
+  "name": "create_teamsapp",
+  "truncated": true
+} -->
 
 ```http
 
@@ -100,6 +113,11 @@ Content-Type: application/json
 
 #### Request
 
+<!-- {
+  "blockType": "request",
+  "name": "create_teamsapp"
+}-->
+
 ```http
 POST https://graph.microsoft.com/beta/appCatalogs/teamsApps?requiresReview=true
 Content-type: application/zip
@@ -107,6 +125,12 @@ Content-length: 244
 ```
 
 #### Response
+
+<!-- {
+  "blockType": "response",
+  "name": "create_teamsapp",
+  "truncated": true
+} -->
 
 ```http
 HTTP/1.1 201 Created
