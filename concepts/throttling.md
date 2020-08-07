@@ -43,68 +43,7 @@ When you implement error handling, use the HTTP error code 429 to detect throttl
 2. Retry the request.
 3. If the request fails again with a 429 error code, you are still being throttled. Continue to use the recommended `Retry-After` delay and retry the request until it succeeds.
 
-The following resources currently provide a `Retry-After` header:
-
-- [User](/graph/api/resources/user)
-- [Photo](/graph/api/resources/profilephoto)
-- [Mail](/graph/api/resources/message)
-- [Calendar (users and groups)](/graph/api/resources/event)
-- [Contact](/graph/api/resources/contact)
-- [Attachment](/graph/api/resources/attachment)
-- [Group conversations](/graph/api/resources/conversation)
-- [People and social](/graph/api/resources/social-overview?view=graph-rest-beta)
-- [Drive (OneDrive)](/graph/api/resources/drive)
-- [External item (Microsoft Search)](/graph/api/resources/externalitem?view=graph-rest-beta)
-- [Directory](/graph/api/resources/directory)
-- [Directory object](/graph/api/resources/directoryobject)
-- [Extension property](/graph/api/resources/extensionproperty)
-- [Administrative unit](/graph/api/resources/administrativeunit)
-- [Application](/graph/api/resources/application)
-- [Application role assignment](/graph/api/resources/approleassignment)
-- [Certificate based auth configuration](/graph/api/resources/certificatebasedauthconfiguration)
-- [Organizational contact](/graph/api/resources/orgcontact)
-- [Device](/graph/api/resources/device)
-- [Directory object partner reference](/graph/api/resources/directoryobjectpartnerreference)
-- [Directory role](/graph/api/resources/directoryrole)
-- [Directory role template](/graph/api/resources/directoryroletemplate)
-- [Domain](/graph/api/resources/domain)
-- [Domain dns record](/graph/api/resources/domaindnsrecord)
-- [Domain dns cname record](/graph/api/resources/domaindnscnamerecord)
-- [Domain dns mx record](/graph/api/resources/domaindnsmxrecord)
-- [Domain dns srv record](/graph/api/resources/domaindnssrvrecord)
-- [Domain dns txt record](/graph/api/resources/domaindnstxtrecord)
-- [Domain dns unavailable record](/graph/api/resources/domaindnsunavailablerecord)
-- [Endpoint](/graph/api/resources/endpoint)
-- [Extension property](/graph/api/resources/extensionproperty)
-- [License details](/graph/api/resources/licensedetails)
-- [Group](/graph/api/resources/group)
-- [Activity based timeout policy](/graph/api/resources/activitybasedtimeoutpolicy)
-- [Claims mapping policy](/graph/api/resources/claimsmappingpolicy)
-- [Home realm discovery policy](/graph/api/resources/homerealmdiscoverypolicy)
-- [Token issuance policy](/graph/api/resources/tokenissuancepolicy)
-- [Token lifetime policy](/graph/api/resources/tokenlifetimepolicy)
-- [Policy base](/graph/api/resources/policybase)
-- [Sts policy](/graph/api/resources/stspolicy)
-- [Contract](/graph/api/resources/contract)
-- [Service principal](/graph/api/resources/serviceprincipal)
-- [Subscribed sku](/graph/api/resources/subscribedsku)
-- [OAuth2 permission grant](/graph/api/resources/oauth2permissiongrant)
-- [Organization](/graph/api/resources/organization)
-- [Group setting](/graph/api/resources/groupsetting)
-- [Group setting template](/graph/api/resources/groupsettingtemplate)
-- [Report](/graph/api/resources/report)
-- [Subscription](/graph/api/resources/subscription)
-- [Threat assessment request](/graph/api/resources/threatassessmentrequest)
-- [Mail assessment request](/graph/api/resources/mailassessmentrequest)
-- [Email file assessment request](/graph/api/resources/emailfileassessmentrequest)
-- [File assessment request](/graph/api/resources/fileassessmentrequest)
-- [URL assessment request](/graph/api/resources/urlassessmentrequest)
-- [Threat assessment result](/graph/api/resources/threatassessmentresult)
-- [Trending](/graph/api/resources/insights-trending)
-- [Used insight](/graph/api/resources/insights-used)
-- [Shared insight](/graph/api/resources/insights-shared)
-- [User settings](/graph/api/resources/usersettings)
-- [Invitation](/graph/api/resources/invitation)
+All the resources and APIs described in the [Service-specific limits](#service-specific-limits) section provide a `Retry-After` header except when noted.
 
 For a broader discussion of throttling in the Microsoft Cloud, see [Throttling pattern](https://docs.microsoft.com/azure/architecture/patterns/throttling).
 
@@ -148,6 +87,14 @@ Outlook service limits are evaluated for each app ID and mailbox combination. In
 #### Outlook service resources
 
 The following resources are provided by the Outlook service.
+
+##### Search API resources (preview)
+
+- [External item (Microsoft Search)](/graph/api/resources/externalitem?view=graph-rest-beta)
+
+##### Profile API resources
+
+- [Photo](/graph/api/resources/profilephoto?view=graph-rest-1.0)
 
 ##### Calendar API resources
 
@@ -244,6 +191,9 @@ A maximum of 3000 messages per app per day can be sent to a given channel.
 
 See also [Microsoft Teams limits](/graph/api/resources/teams-api-overview#microsoft-teams-limits) 
 and [polling requirements](/graph/api/resources/teams-api-overview#polling-requirements).
+
+The preceding limits apply to the following resources:  
+aadUserConversationMember, appCatalogs, changeTrackedEntity, channel, chatMessage, chatMessageHostedContent, conversationMember, offerShiftRequest, openShift, openShiftChangeRequest, schedule, scheduleChangeRequest, schedulingGroup, shift, shiftPreferences, swapShiftsChangeRequest, team, teamsApp, teamsAppDefinition, teamsAppInstallation, teamsAsyncOperation, teamsTab, teamsTemplate, teamwork, timeOff, timeOffReason, timeOffRequest, userSettings, workforceIntegration.
 
 ### Identity and access service limits
 
@@ -405,6 +355,9 @@ The following limits apply to any request on `me/insights` or `users/{id}/insigh
 | 10,000 API requests in a 10 minute period                  | v1.0 and beta endpoints |
 | 4 concurrent requests                                      | v1.0 and beta endpoints   |
 
+The preceding limits apply to the following resources:  
+people, trending, usedinsight, sharedInsight.
+
 ### Microsoft Graph reports service limits
 
 The following limits apply to any request on `/reports`.
@@ -414,7 +367,9 @@ The following limits apply to any request on `/reports`.
 | Any request (CSV)         | 14 requests per 10 minutes   | 40 requests per 10 minutes |
 | Any request (JSON, beta)  | 100 requests per 10 minutes  | n/a                        |
 
-The preceding limits apply individually to each report API. For example a request to Microsoft Teams user activity report API and a request to Outlook user activity report API within 10 minutes will count as 1 request out of 14 for each API, not 2 requests out of 14 for both.
+The preceding limits apply individually to each report API. For example, a request to the Microsoft Teams user activity report API and a request to the Outlook user activity report API within 10 minutes will count as 1 request out of 14 for each API, not 2 requests out of 14 for both.
+
+The preceding limits apply to the **report** resource.  
 
 ### Invitation manager service limits
 
