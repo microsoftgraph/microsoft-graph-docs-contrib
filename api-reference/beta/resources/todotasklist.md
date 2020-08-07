@@ -29,8 +29,8 @@ This resource supports
 |[Get taskList](../api/taskList-get.md)|[taskList](../resources/taskList.md)|Read the properties and relationships of the specified [taskList](../resources/taskList.md).|
 |[Update taskList](../api/taskList-update.md)|[taskList](../resources/taskList.md)| Update the writable properties of the specified [taskList](../resources/taskList.md).|
 |[Delete taskList](../api/taskList-delete.md)|None| Delete the specified [taskList](../resources/taskList.md) .|
-|[List tasks](../api/taskList-list-tasks.md)|[task](../resources/task.md) collection|Get all the To Do tasks in the specified list.|
-|[Create task](../api/taskList-post-tasks.md)|[task](../resources/task.md)| Create an Outlook To Do in the specified task list|
+|[List tasks](../api/taskList-list-tasks.md)|[todoTask](../resources/todotask.md) collection|Get all the To Do tasks in the specified list.|
+|[Create task](../api/taskList-post-tasks.md)|[todoTask](../resources/todotask.md)| Create an Outlook To Do in the specified task list|
 
 ## Properties
 |Property|Type|Description|
@@ -44,7 +44,7 @@ This resource supports
 ## Relationships
 |Relationship|Type|Description|
 |:---|:---|:---|
-|tasks|[task](../resources/task.md) collection|The tasks in this task list. Read-only. Nullable.|
+|tasks|[todoTask](../resources/todotask.md) collection|The tasks in this task list. Read-only. Nullable.|
 
 ## JSON representation
 The following is a JSON representation of the resource.
