@@ -18,8 +18,8 @@ One of the following permissions is required to call this API. To learn more, in
 
 |Permission type|Permissions (from most to least privileged)|
 |:---|:---|
-|Delegated (work or school account)|Tasks.Read|
-|Delegated (personal Microsoft account)|Tasks.Read|
+|Delegated (work or school account)|Tasks.ReadWrite|
+|Delegated (personal Microsoft account)|Tasks.ReadWrite|
 |Application|Not supported|
 
 ## HTTP request
