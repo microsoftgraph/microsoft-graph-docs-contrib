@@ -43,21 +43,9 @@ When you implement error handling, use the HTTP error code 429 to detect throttl
 2. Retry the request.
 3. If the request fails again with a 429 error code, you are still being throttled. Continue to use the recommended `Retry-After` delay and retry the request until it succeeds.
 
-The following resources currently provide a `Retry-After` header:
+All the resources and APIs described in the [Service-specific limits](#service-specific-limits) section provide a `Retry-After` header except when noted.
 
-- [User](/graph/api/resources/user?view=graph-rest-1.0)
-- [Photo](/graph/api/resources/profilephoto?view=graph-rest-1.0)
-- [Mail](/graph/api/resources/message?view=graph-rest-1.0)
-- [Calendar (users and groups)](/graph/api/resources/event?view=graph-rest-1.0)
-- [Contact](/graph/api/resources/contact?view=graph-rest-1.0)
-- [Attachment](/graph/api/resources/attachment?view=graph-rest-1.0)
-- [Group conversations](/graph/api/resources/conversation?view=graph-rest-1.0)
-- [People and social](/graph/api/resources/social-overview?view=graph-rest-beta)
-- [Drive (OneDrive)](/graph/api/resources/drive?view=graph-rest-1.0)
-- [External item (Microsoft Search)](/graph/api/resources/externalitem?view=graph-rest-beta)
-- [Subscription](/graph/api/resources/subscription)
-
-For a broader discussion of throttling on the Microsoft Cloud, see [Throttling Pattern](https://docs.microsoft.com/azure/architecture/patterns/throttling).
+For a broader discussion of throttling in the Microsoft Cloud, see [Throttling pattern](https://docs.microsoft.com/azure/architecture/patterns/throttling).
 
 > [!NOTE]
 > If no `Retry-After` header is provided by the response, we recommend implementing an exponential backoff retry policy. You can also implement [more advanced patterns](https://docs.microsoft.com/azure/architecture/patterns/category/resiliency) when building large-scale applications.
@@ -75,8 +63,16 @@ Programming patterns like continuously polling a resource to check for updates a
 
 Microsoft Graph allows you to access data in [multiple services](overview-major-services.md), such as Outlook or Azure Active Directory. These services impose their own throttling limits that affect applications that use Microsoft Graph to access them.
 
+Any request can be evaluated against multiple limits, depending on the scope of the limit (per app across all tenants, per tenant for all apps, per app per tenant, and so on), the request type (GET, POST, PATCH, and so on), and other factors. The first limit to be reached triggers throttling behavior. In addition to the service specific-limits described in the section, the following global limits apply:
+
+| Request type | Per app across all tenants  |
+| ------------ | ------------------------ |
+| Any          | 2000 requests per second |
+
 > [!NOTE]
 > The specific limits described here are subject to change.
+
+> **Note:** In this section, the term *tenant* refers to the Microsoft 365 organization where the application is installed. This tenant can be the same as the the one where the application was created, in the case of a single tenant application, or it can be different, in the case of a [multi-tenant application](/azure/active-directory/develop/setup-multi-tenant-app).
 
 ### Outlook service limits
 
@@ -86,11 +82,19 @@ Outlook service limits are evaluated for each app ID and mailbox combination. In
 |------------------------------------------------------------|-----------------|
 | 10,000 API requests in a 10 minute period                  | v1.0 and beta endpoints |
 | 4 concurrent requests                                      | v1.0 and beta endpoints   |
-| 15 megabit upload (PATCH, POST, PUT) in a 30 second period | v1.0 and beta endpoints   |
+| 15 megabytes (MB) upload (PATCH, POST, PUT) in a 30 second period | v1.0 and beta endpoints   |
 
 #### Outlook service resources
 
 The following resources are provided by the Outlook service.
+
+##### Search API resources (preview)
+
+- [External item (Microsoft Search)](/graph/api/resources/externalitem?view=graph-rest-beta)
+
+##### Profile API resources
+
+- [Photo](/graph/api/resources/profilephoto?view=graph-rest-1.0)
 
 ##### Calendar API resources
 
@@ -129,6 +133,38 @@ The following resources are provided by the Outlook service.
 - [outlookCategory](/graph/api/resources/outlookcategory)
 - [attachment](/graph/api/resources/attachment)
 
+### Cloud communication service limits
+
+| Resource      | Limits per app per tenant    |
+| -------------- | ------------ |
+| [Calls](/graph/api/resources/call) | 10,000 calls/month and 100 concurrent calls   |
+| [Meeting information](/graph/api/resources/meetinginfo)   | 2000 meetings/user each month |
+| [Presence](/graph/api/resources/presence) (preview)   | 2 rps |
+
+### OneNote service limits
+
+| Limit type | Limit per app per user (delegated context) | Limit per app (app-only context) |
+| ------------ | ------- | ------- |
+| Requests rate | 120 requests per 1 minute and 400 per 1 hour | 240 requests per 1 minute and 800 per 1 hour |
+| Concurrent requests | 5 concurrent requests | 20 concurrent requests |
+
+The preceding limits apply to the following resources:  
+onenote, notebook, sectionGroup, onenoteSection, onenotePage, onenoteResource, onenoteOperation
+
+You can find additional information about best practices in [OneNote API throttling and how to avoid it](https://developer.microsoft.com/en-us/office/blogs/onenote-api-throttling-and-how-to-avoid-it/).  
+
+> **Note:** The resources listed above do not return a `Retry-After` header on `429 Too Many Requests` responses.
+
+### Project Rome service limits
+
+| Request type | Limit per user for all apps |
+| ------------ | --------------------------- |
+| GET          | 400 requests per 5 minutes and 12000 requests per 1 day |
+| POST, PUT, PATCH, DELETE | 100 requests per 5 minutes and 8000 requests per 1 day |
+
+The preceding limits apply to the following resources:  
+activityHistoryItem, userActivity
+
 ### Microsoft Teams service limits
 
 Limits are expressed as requests per second (rps).
@@ -146,12 +182,119 @@ Limits are expressed as requests per second (rps).
 | GET 1:1/group chat message  | 3 rps | 30 rps |
 | POST channel message | 2 rps | 20 rps |
 | POST 1:1/group chat message | 2 rps | 20 rps |
+| GET /teams/```{team-id}```/schedule and all APIs under this path | 60 rps | 600 rps |
+| POST, PATCH, PUT /teams/```{team-id}```/schedule and all APIs under this path | 30 rps | 300 rps |
+| DELETE /teams/```{team-id}```/schedule and all APIs under this path | 15 rps | 150 rps |
 
 A maximum of 4 requests per second per app can be issued on a given team or channel.
 A maximum of 3000 messages per app per day can be sent to a given channel.
 
 See also [Microsoft Teams limits](/graph/api/resources/teams-api-overview#microsoft-teams-limits) 
 and [polling requirements](/graph/api/resources/teams-api-overview#polling-requirements).
+
+The preceding limits apply to the following resources:  
+aadUserConversationMember, appCatalogs, changeTrackedEntity, channel, chatMessage, chatMessageHostedContent, conversationMember, offerShiftRequest, openShift, openShiftChangeRequest, schedule, scheduleChangeRequest, schedulingGroup, shift, shiftPreferences, swapShiftsChangeRequest, team, teamsApp, teamsAppDefinition, teamsAppInstallation, teamsAsyncOperation, teamsTab, teamsTemplate, teamwork, timeOff, timeOffReason, timeOffRequest, userSettings, workforceIntegration.
+
+### Information protection
+
+The following limits apply to any request on `/informationProtection`.
+
+| Operation                 | Limit per tenant                                            | Limit per resource (email, URL, file)                |
+|---------------------------|-------------------------------------------------------------|------------------------------------------------------|
+| POST                      | 150 requests per 15 minutes and 10000 requests per 24 hours | 1 request per 15 minutes and 3 requests per 24 hours |
+
+The preceding limits apply to the following resources:  
+threatAssessmentRequest, threatAssessmentResult, mailAssessmentRequest, emailFileAssessmentRequest, fileAssessmentRequest, urlAssessmentRequest.
+
+### Identity protection and conditional access service limits
+
+| Request type | Limit per tenant for all apps |
+| ------------ | ------- |
+| Any | 1 request per second |
+
+The preceding limits apply to the following resources:  
+riskDetection, riskyUser, riskyUserHistoryItem, namedLocation, countryNamedLocation, ipNamedLocation, conditionalAccessPolicy.
+
+> **Note:** The resources listed above do not return a `Retry-After` header on `429 Too Many Requests` responses.
+
+### Insights service limits
+
+The following limits apply to any request on `me/insights` or `users/{id}/insights`.
+
+| Limit                                                      | Applies to      |
+|------------------------------------------------------------|-----------------|
+| 10,000 API requests in a 10 minute period                  | v1.0 and beta endpoints |
+| 4 concurrent requests                                      | v1.0 and beta endpoints   |
+
+The preceding limits apply to the following resources:  
+people, trending, usedinsight, sharedInsight.
+
+### Microsoft Graph reports service limits
+
+The following limits apply to any request on `/reports`.
+
+| Operation                 | Limit per app per tenant     | Limit per tenant for all apps |
+|---------------------------|------------------------------|----------------------------|
+| Any request (CSV)         | 14 requests per 10 minutes   | 40 requests per 10 minutes |
+| Any request (JSON, beta)  | 100 requests per 10 minutes  | n/a                        |
+
+The preceding limits apply individually to each report API. For example, a request to the Microsoft Teams user activity report API and a request to the Outlook user activity report API within 10 minutes will count as 1 request out of 14 for each API, not 2 requests out of 14 for both.
+
+The preceding limits apply to the **report** resource.  
+
+### Invitation manager service limits
+
+The following limits apply to any request on `/invitations`.
+
+| Operation                 | Limit per tenant for all apps |
+|---------------------------|------------------------------|
+| Any operation             | 150 requests per 5 seconds   |
+
+### Security detections and incidents service limits
+
+The following limits apply to any request on `/security`.
+
+| Operation                  | Limit per app per tenant     |
+|----------------------------|------------------------------|
+| Any operation on `alert`, `securityActions`,  `secureScore` | 150 requests per minute      |
+| Any operation on `tiIndicator` | 1000 requests per minute |
+| Any operation on `secureScore` or `secureScorecontrolProfile` | 10,000 API requests in a 10 minute period |
+| Any operation on `secureScore` or `secureScorecontrolProfile` | 4 concurrent requests |
+
+### Open and schema extensions service limits
+
+| Request type | Limit per app per tenant |
+| ------------ | ------------------------ |
+| Any          | 455 requests per 10 seconds |
+
+The preceding limits apply to the following resources: 
+openTypeExtension, schemaExtension, administrativeUnit, contact, device, event, group, message, organization, post, and user.
+
+### Files and lists service limits
+
+Service limits for OneDrive, OneDrive for Business, and SharePoint Online are not available. For more information, see [why can't you just tell me the exact throttling limits?](/sharepoint/dev/general-development/how-to-avoid-getting-throttled-or-blocked-in-sharepoint-online#why-cant-you-just-tell-me-the-exact-throttling-limits).
+
+The preceding information applies to the following resources:  
+baseItem, baseItemVersion, columnDefinition, columnLink, contentType, drive, driveItem, driveItemVersion, fieldValueSet, itemActivity, itemActivityStat, itemAnalytics, list, listItem, listItemVersion, permission, sharedDriveItem, site, and thumbnailSet.
+
+### Tasks and plans service limits
+
+Service limits for Planner are not available.
+
+The preceding information applies to the following resources:  
+planner, plannerAssignedToTaskBoardTaskFormat, plannerBucket, plannerBucketTaskBoardTaskFormat, plannerGroup, plannerPlan, plannerPlanDetails, plannerProgressTaskBoardTaskFormat, plannerTask, plannerTaskDetails, and plannerUser.
+
+### Identity and access data policy operation service limits
+
+| Request type | Limit per tenant |
+| ------------ | ---------------- |
+| POST on `exportPersonalData` | 1000 requests per day for any subject and 100 per subject per day |
+| Any other request | 10000 requests per hour |
+
+The preceding limits apply to the following resources: 
+dataPolicyOperation.
+
+> **Note:** The resources listed above do not return a `Retry-After` header on `429 Too Many Requests` responses.
 
 <!-- { "blockType": "throttlinggenstart" } -->
 ### Education service limits

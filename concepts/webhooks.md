@@ -21,7 +21,7 @@ After Microsoft Graph accepts the subscription request, it pushes change notific
 
 By default, change notifications do not contain resource data, other than the `id`. If the app requires resource data, it can make calls to Microsoft Graph APIs to get the full resource. This article uses the **user** resource as an example for working with change notifications.
 
-An app can also subscribe to change notifications that include resource data, to avoid having to make additonal API calls to access the data. Such apps will need to implement extra code to handle the requirements of such notifications, specifically: responding to subscription lifecycle notifications, validating the authenticity of notifications, and decrypting the resource data. More resource types will support this type of notifications in the future. For details about how to work with these notificatios, see [Set up change notifications that include resource data (preview)](webhooks-with-resource-data.md).
+An app can also subscribe to change notifications that include resource data, to avoid having to make additional API calls to access the data. Such apps will need to implement extra code to handle the requirements of such notifications, specifically: responding to subscription lifecycle notifications, validating the authenticity of notifications, and decrypting the resource data. More resource types will support this type of notifications in the future. For details about how to work with these notifications, see [Set up change notifications that include resource data (preview)](webhooks-with-resource-data.md).
 
 ## Supported resources
 
@@ -30,6 +30,7 @@ Using the Microsoft Graph API, an app can subscribe to changes on the following 
 - Outlook [message][]
 - Outlook [event][]
 - Outlook personal [contact][]
+- [list][]
 - [user][]
 - [group][]
 - Microsoft 365 group [conversation][]
@@ -38,15 +39,16 @@ Using the Microsoft Graph API, an app can subscribe to changes on the following 
 - Security [alert][]
 - Teams [callRecord][]
 - Teams [chatMessage][] (preview)
+- Teams [presence][] (preview)
 
 You can create a subscription to a specific Outlook folder such as the Inbox:
 `me/mailFolders('inbox')/messages`
 
 Or to a top-level resource:
-`/me/messages`, `/me/contacts`, `/me/events`, `users`, `groups`, or `/communications/callRecords`
+`/me/messages`, `/me/contacts`, `/me/events`, `users`, `groups`, `/communications/callRecords`
 
 Or to a specific resource instance:
-`users/{id}`, `groups/{id}`, `groups/{id}/conversations`
+`users/{id}`, `groups/{id}`, `groups/{id}/conversations`, `sites/{site-id}/lists/{list-id}`, `/communications/presences/{id}`
 
 Or to any folder in a user's personal OneDrive:
 `/drives/{id}/root`
@@ -67,15 +69,15 @@ Certain limits apply to Azure AD based resources (users, groups) and will genera
 
 - Maximum subscription quotas:
 
-  - Per app: 50,000 total subscriptions
-  - Per tenant: 1000 total subscriptions across all apps
+  - Per app (for all tenants combined): 50,000 total subscriptions
+  - Per tenant (for all applications combined): 1000 total subscriptions across all apps
   - Per app and tenant combination: 100 total subscriptions
 
-When the limits are exceeded, attempts to create a subscription will result in an [error response](errors.md) - `403 Forbidden`. The `message` property will explain which limit has been exceeded.
+When any limit is exceeded, attempts to create a subscription will result in an [error response](errors.md) - `403 Forbidden`. The `message` property will explain which limit has been exceeded.
 
 - Azure AD B2C tenants are not supported.
 
-- Changfe notification for user entities are not supported for personal Microsoft accounts.
+- Change notification for user entities are not supported for personal Microsoft accounts.
 
 - A [known issue](known-issues.md#change-notifications) exists with user and group subscriptions.
 
@@ -88,6 +90,17 @@ When subscribing to Outlook resources such as **messages**, **events** or **cont
 Use: 
 
 `/users/{guid-user-id}/messages`
+
+### Teams resource limitations
+
+Each Teams resource has different subscription quotas.
+
+- For subscriptions to **callRecords**:
+  - Per organization: 100 total subscriptions
+
+- For subscriptions to **chatMessages** (channels or chats) (preview):
+  - Per app and channel or chat combination: 1 subscription
+  - Per organization: 10,000 total subscriptions
 
 ## Subscription lifetime
 
@@ -138,26 +151,34 @@ Although `clientState` is not required, you must include it to comply with our r
 
 If successful, Microsoft Graph returns a `201 Created` code and a [subscription](/graph/api/resources/subscription?view=graph-rest-1.0) object in the body.
 
+> **Note:** any query string parameter included in the `notificationUrl` property will be included in the HTTP POST request when notifications are being delivered.
+
 #### Notification endpoint validation
 
 Microsoft Graph validates the notification endpoint provided in the `notificationUrl` property of the subscription request before creating the subscription. The validation process occurs as follows:
 
-1. Microsoft Graph sends a POST request to the notification URL:
+1. Microsoft Graph encodes a validation token and includes it in a POST request to the notification URL:
 
     ``` http
     Content-Type: text/plain; charset=utf-8
     POST https://{notificationUrl}?validationToken={opaqueTokenCreatedByMicrosoftGraph}
     ```
 
-    > **Important:** Since the `validationToken` is a query parameter it must be properly decoded by the client, as per HTTP coding practices. If the client does not decode the token, and instead uses the encoded value in the next step (response), validation will fail. Also, the client should treat the token value as opaque since the token format may change in the future, without notice.
+1. The client must properly decode the `validationToken` provided in the preceding step, and escape any HTML/JavaScript.
 
-1. The client must provide a response with the following characteristics within 10 seconds:
+   Escaping is a good practice because malicious actors can use the notification endpoint for cross-site scripting type of attacks.
 
-    - A 200 (OK) status code.
-    - The content type must be `text/plain`.
-    - The body must include the validation token provided by Microsoft Graph.
+   In general, treat the validation token value as opaque, as the token format can generally change without notice. Microsoft Graph never sends any value containing HTML or JavaScript code.
 
-The client should discard the validation token after providing it in the response.
+1. The client must provide a response with the following characteristics within 10 seconds of step 1:
+
+    - A status code of `HTTP 200 OK`.
+    - A content type of `text/plain`.
+    - A body that includes the _decoded_ validation token.
+
+    The client should discard the validation token after providing it in the response.
+
+    > **Important:** If the client returns an encoded validation token, the validation will fail.
 
 Additionally, you can use the [Microsoft Graph Postman collection](use-postman.md) to confirm that your endpoint properly implements the validation request. The **Subscription Validation** request in the **Misc** folder provides unit tests that validate the response provided by your endpoint.  
 
@@ -208,7 +229,6 @@ When many changes occur, Microsoft Graph may send multiple notifications that co
   "value": [
     {
       "id": "lsgTZMr9KwAAA",
-      "sequenceNumber": 10,
       "subscriptionId":"{subscription_guid}",
       "subscriptionExpirationDateTime":"2016-03-19T22:11:09.952Z",
       "clientState":"secretClientValue",
@@ -258,6 +278,27 @@ You can optionally configure the firewall that protects your notification URL to
 
 > **Note:** The listed IP addresses that are used to deliver change notifications can be updated at any time without notice.
 
+## Latency
+
+The following table lists the latency to expect between an event happening in the service and the delivery of the change notification.
+
+| Resource | Average latency | Maximum latency |
+|:-----|:-----|:-----|
+|[callRecord][] | Less than 15 minutes | 60 minutes |
+|[chatMessage][] (preview) | Less than 10 seconds | 1 minute |
+|[contact][] | Unknown | Unknown |
+|[driveItem][] | Less than 1 minute | 5 minutes |
+|[event][] | Unknown | Unknown |
+|[group][] | Less than 2 minutes | 15 minutes |
+|[conversation][] | Unknown | Unknown |
+|[list][] | Less than 1 minute | 5 minutes |
+|[message][] | Unknown | Unknown |
+|[alert][] | Less than 3 minutes | 5 minutes |
+|[presence][] (preview) | Less than 10 seconds | 1 minute |
+|[user][] | Less than 2 minutes | 15 minutes |
+
+>**Note:** The latency provided for the **alert** resource is only applicable after the alert itself has been created. It does not include the time it takes for a rule to create an alert from the data.
+
 ## See also
 
 - [Subscription resource type](/graph/api/resources/subscription?view=graph-rest-1.0)
@@ -277,4 +318,6 @@ You can optionally configure the firewall that protects your notification URL to
 [user]: /graph/api/resources/user?view=graph-rest-1.0
 [alert]: /graph/api/resources/alert?view=graph-rest-1.0
 [callRecord]: /graph/api/resources/callrecords-callrecord?view=graph-rest-1.0
+[presence]: /graph/api/resources/presence
 [chatMessage]: /graph/api/resources/chatmessage
+[list]: /graph/api/resources/list
