@@ -1,9 +1,9 @@
 ---
 title: "Azure AD synchronization API overview"
-description: "Automate the creation, maintenance, and removal of identities from AD to AAD, HR apps (Workday) to AAD and from AAD to cloud applications."
+description: "Automate the creation, maintenance, and removal of identities from HR systems, AD, AAD to cloud applications."
 localization_priority: Normal
 doc_type: conceptualPageType
-author: "ArvindHarinder1; dhanyahk"
+author: "ArvindHarinder1;"
 ms.prod: "microsoft-identity-platform"
 ---
 
