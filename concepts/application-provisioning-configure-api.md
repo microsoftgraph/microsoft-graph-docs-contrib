@@ -193,7 +193,7 @@ HTTP/1.1 200 OK
 ```
 
 ### Create the provisioning job
-To enable provisioning, you'll first need to [create a job](https://docs.microsoft.com/graph/api/synchronization-synchronizationjob-post?view=graph-rest-beta&tabs=http). Use the following request below to create a provisioning job. Use the templateId from the previous step when specifying the template to be used for the job.
+To enable provisioning, you'll first need to [create a job](https://docs.microsoft.com/graph/api/synchronization-synchronizationjob-post?view=graph-rest-beta&tabs=http). Use the following request to create a provisioning job. Use the templateId from the previous step when specifying the template to be used for the job.
 
 #### Request
 <!-- {
