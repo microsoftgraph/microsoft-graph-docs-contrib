@@ -91,6 +91,8 @@ Use:
 
 `/users/{guid-user-id}/messages`
 
+A maximum of 1000 active subscriptions per mailbox for all applications is allowed.
+
 ### Teams resource limitations (preview)
 
 A single active subscription per channel or chat per application is allowed.
