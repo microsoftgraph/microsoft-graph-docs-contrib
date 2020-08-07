@@ -1,13 +1,13 @@
 ---
-title: "Remove an app from your organization's app catalog"
-description: "Remove the app from your organization's app catalog (the tenant app catalog). "
+title: "Delete teamsApp"
+description: "Delete a T app from your organization's app catalog (the tenant app catalog). "
 localization_priority: Normal
 author: "nkramer"
 ms.prod: "microsoft-teams"
 doc_type: apiPageType
 ---
 
-# Remove an app from your organization's app catalog
+# Delete a Teams app from your organization's app catalog
 
 Namespace: microsoft.graph
 
@@ -16,14 +16,14 @@ To remove your app from your organization's app catalog, specify `organization` 
 
 ## Permissions
 
-One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](https://developer.microsoft.com/graph/docs/concepts/permissions_reference).
+One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
 
->**Note:** Only global administrators can call this API. 
+>**Note:** Only global administrators can call this API.
 
 | Permission Type                        | Permissions (from least to most privileged)|
 |:----------------------------------     |:-------------|
 | Delegated (work or school account)     | AppCatalog.ReadWrite.All, Directory.ReadWrite.All |
-| Delegated (work or school account) | App.Catalog.Submit </br>Allows an app to submit apps to the organization's app catalog as well as cancel past submissions that have not been published.</br> &#119821;&#119822;&#119827;&#119812;: non-admin users can submit apps for review by including the  `requiresReview=true` query parameter during submissions. |
+| Delegated (work or school account) | AppCatalog.Submit |
 | Delegated (personal Microsoft account) | Not supported|
 | Application                            | Not supported. |
 
@@ -33,7 +33,9 @@ One of the following permissions is required to call this API. To learn more, in
 DELETE /appCatalogs/teamsApps/{id}
 ```
 
-### Delete an application that is currently in review
+### Delete an application that is currently in submitted status
+
+Apps in a `submitted` state are under review and can be either published or rejected by the IT admin.
 
 ```http
  DELETE appCatalogs/teamsApps/{appId}/appDefinitions/{appDefinitionId}
@@ -53,9 +55,13 @@ None.
 
 ## Response
 
-``
+If successful, this method returns a `204 No Content` response code. It does not return anything in the response body.
+
+The following is an example of the response.
+
+```http
 HTTP/1.1 204 No Content
-``
+```
 
 ## Example
 

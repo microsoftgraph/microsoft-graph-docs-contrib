@@ -1,13 +1,13 @@
 ---
-title: "Update a previously published application"
-description: "Update an app previously published to the Microsoft Teams app catalog. "
+title: "Update Teams app published in your organization's app catalog"
+description: "Update an app previously published to a tenant app catalog. "
 author: "nkramer"
 localization_priority: Normal
 ms.prod: "microsoft-teams"
 doc_type: apiPageType
 ---
 
-# Update application published to your organization's app catalog
+# Update Teams app published in your organization's app catalog
 
 Namespace: microsoft.graph
 
@@ -17,14 +17,14 @@ To publish to your organization's app catalog, specify `organization` as the **d
 
 ## Permissions
 
-One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](https://developer.microsoft.com/graph/docs/concepts/permissions_reference).
+One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
 
 >**Note:** Only global administrators can call this API.
 
 | Permission Type                        | Permissions (from least to most privileged)|
 |:----------------------------------     |:-------------|
 | Delegated (work or school account)     | AppCatalog.ReadWrite.All, Directory.ReadWrite.All |
-| Delegated (work or school account) | App.Catalog.Submit </br>Allows an app to submit apps to the organization's app catalog as well as cancel past submissions that have not been published.</br> &#119821;&#119822;&#119827;&#119812;: non-admin users can submit apps for review by including the  `requiresReview=true` query parameter during submissions. |
+| Delegated (work or school account) | AppCatalog.Submit|
 | Delegated (personal Microsoft account) | Not supported|
 | Application                            | Not supported. |
 
@@ -77,7 +77,7 @@ For Teams application zip file [see Create app package](/microsoftteams/platform
 HTTP/1.1 204 No Content
 ``
 
-### Example 2: Upload a new version of an application previously published to the Microsoft Teams app catalog for review
+### Example 2: Upload a new version of an application published to the Microsoft Teams app catalog following review
 
 ### Request
 

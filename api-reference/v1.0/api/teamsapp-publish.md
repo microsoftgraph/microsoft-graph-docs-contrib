@@ -1,5 +1,5 @@
 ---
-title: "Publish an application to Teams app catalog"
+title: "Publish a teamsApp to your tenant app catalog"
 description: "Publish an application to Teams app catalog. "
 author: "nkramer"
 localization_priority: Normal
@@ -7,22 +7,23 @@ ms.prod: "microsoft-teams"
 doc_type: apiPageType
 ---
 
-# Publish apps to your organization's app catalog
+# Create teamsApp
 
 Namespace: microsoft.graph
 
-Publish an [app](../resources/teamsapp.md) to the Microsoft Teams apps catalog.
-Specifically, this API publishes the app to your organization's catalog (the tenant app catalog). 
+Publish an [app](../resources/teamsapp.md) to the Microsoft Teams apps catalog.Specifically, this API publishes the app to your organization's catalog (the tenant app catalog).
 The created resource will have the **distributionMethod** property value set to `organization`.
+
+The  _**appCatalogs/teamsApps?requiresReview:boolean**_ API consumes a zip file as the request body and uploads a new Teams App to the Teams App catalog. The optional `requiresReview`  is used to trigger the app review process. If the `requiresReview` query parameter is set to true, then the new app version is uploaded in a 'submitted' state. A user must explicitly call out if the app they are submitting requires review to trigger the review process. Whether a user can submit an app without triggering the review process is determined by a role check.
 
 ## Permissions
 
-One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](https://developer.microsoft.com/graph/docs/concepts/permissions_reference).
+One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
 
 | Permission Type                        | Permissions (from least to most privileged)|
 |:----------------------------------     |:-------------|
 | Delegated (work or school account)     | AppCatalog.ReadWrite.All, Directory.ReadWrite.All |
-| Delegated (work or school account) | App.Catalog.Submit </br>Allows an app to submit apps to the organization's app catalog as well as cancel past submissions that have not been published.</br> &#119821;&#119822;&#119827;&#119812;: non-admin users can submit apps for review by including the  `requiresReview=true` query parameter during submissions. |
+| Delegated (work or school account) | App.Catalog.Submit|
 | Delegated (personal Microsoft account) | Not supported|
 | Application                            | Not supported. |
 
@@ -32,6 +33,8 @@ One of the following permissions is required to call this API. To learn more, in
 POST /appCatalogs/teamsApps
 ```
 
+Use the following syntax to add an app that requires a review:
+
 ```http
 POST /appCatalogs/teamsApps?requiresReview:{boolean}
 ```
@@ -39,11 +42,11 @@ POST /appCatalogs/teamsApps?requiresReview:{boolean}
 > [!NOTE]
 > This API consumes a Teams app package zip file as the request body and uploads a new Teams app to the organization's app catalog.
 
-## Optional query parameter
+## Query parameters
 
 |Property|Type|Description|
 |----|----|----|
-|requiresReview| boolean | This optional query parameter triggers the app review process.  Whether a user can submit an app without triggering the review process is determined by role. If a user with admin privileges does not set `requiresReview` or it is set to `false`, the app will be considered approved and will instantly publish.|
+|requiresReview| Boolean | This optional query parameter triggers the app review process. Users with admin privileges can submit apps without triggering a review. If users want to request a review before publishing, they must set  `requiresReview` to `true` . A user *with* admin privileges can opt not to set `requiresReview` or set the value to `false`  and the app will be considered approved and will publish instantly.|
 
 ## Request headers
 
@@ -54,8 +57,8 @@ POST /appCatalogs/teamsApps?requiresReview:{boolean}
 
 ## Request body
 
-In the request body, include a Teams zip manifest payload. For details, see [Create an app package](/microsoftteams/platform/concepts/apps/apps-package).
-You can't create an app for an organization that has the same manifest ID as another app in that organization.
+In the request body, include a Teams zip manifest payload. For details, see [Create an app package](/microsoftteams/platform/concepts/apps/apps-package).  
+&#119821;&#119822;&#119827;&#119812;: Each app in the app catalog must have a unique manifest `id`.
 
 ## Response
 
