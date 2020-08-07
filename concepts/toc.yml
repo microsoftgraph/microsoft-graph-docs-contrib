@@ -89,7 +89,7 @@ items:
           - name: Configure application proxy
             href: application-proxy-configure-api.md
           - name: Configure provisioning
-            href: https://docs.microsoft.com/azure/active-directory/app-provisioning/application-provisioning-configure-api?context=/graph/context
+            href: application-provisioning-configure-api.md
       - name: Calendar
         displayName: Outlook
         items:
