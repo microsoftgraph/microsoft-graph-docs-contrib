@@ -197,7 +197,7 @@ aadUserConversationMember, appCatalogs, changeTrackedEntity, channel, chatMessag
 
 ### Identity and access service limits
 
-#### Entities limits apply to
+These service limits apply to the following entities:
 
 - [Directory object](/graph/api/resources/directoryobject)
 - [Extension property](/graph/api/resources/extensionproperty)
@@ -239,7 +239,7 @@ aadUserConversationMember, appCatalogs, changeTrackedEntity, channel, chatMessag
 
 #### Pattern
 
-Throttling is based on a token bucket algorithm which works by adding individual cost of requests. The sum of requests costs is then compared against pre-determined limits. Only the requests exceeding the limits will be throttled. If any of the limits are exceeded, the response will be `429 Too Many Requests`. It is possible to receive `429 Too Many Requests` responses even when the following limits are not reached in situations when the services are under an important load or based on data volume for a specific tenant. The following table documents existing limits:
+Throttling is based on a token bucket algorithm, which works by adding individual costs of requests. The sum of request costs is then compared against pre-determined limits. Only the requests exceeding the limits will be throttled. If any of the limits are exceeded, the response will be `429 Too Many Requests`. It is possible to receive `429 Too Many Requests` responses even when the following limits are not reached, in situations when the services are under an important load or based on data volume for a specific tenant. The following table lists existing limits.
 
 | Limit type | Resource unit quota | Write quota |
 | ---------- | ----------- | -------------- |
@@ -247,9 +247,9 @@ Throttling is based on a token bucket algorithm which works by adding individual
 | application | 150,000 per 20 seconds  | 70,000 per 5 minutes |
 | tenant | Not Applicable | 9000 per 5 minutes |
 
-> **Note**: the application+tenant pair limit varies based on the number of users in the tenant requests are executed against. The tenant sizes are defined as following: S: under 50 users, M: between 50 and 500 users, and L: above 500 users.
+> **Note**: The application + tenant pair limit varies based on the number of users in the tenant requests are run against. The tenant sizes are defined as follows: S - under 50 users, M - between 50 and 500 users, and L - above 500 users.
 
-The following table documents base requests costs, any other request not listed in the following table has a base cost of 1.
+The following table lists base request costs. Any requests not listed have a base cost of 1.
 
 | Operation | Request Path | Base Resource Unit Cost | Write Cost |
 | --------- | ------------ | ----------------- | ------------------ |
@@ -281,20 +281,19 @@ The following table documents base requests costs, any other request not listed 
 | PUT | Any identity path not listed in the table | 1 | 1 |
 | DELETE | Any identity path not listed in the table | 1 | 1 |
 
-Other factors that impact a request cost:
+Other factors that affect a request cost:
 
-- Using $select decreases cost by 1
-- Using $expand increases cost by 1
-- Using $top with a value of less than 20 decreases cost by 1
+- Using `$select` decreases cost by 1
+- Using `$expand` increases cost by 1
+- Using `$top` with a value of less than 20 decreases cost by 1
 
-> **Note:** A request cost can never be lower than 1.  
-> **Note:** Any request cost that applies to a request path starting with `me/` also applies to equivalent requests starting with `users/{id | userPrincipalName}/`.
+> **Note:** A request cost can never be lower than 1. Any request cost that applies to a request path starting with `me/` also applies to equivalent requests starting with `users/{id | userPrincipalName}/`.
 
 #### Additional headers
 
 ##### Request headers
 
-- **x-ms-throttle-priority** - If the header doesn't exist or set to any other value, it indicates a normal request. We recommend setting priority to `high` only for the requests initiated by the user. The values of this header can be the following:
+- **x-ms-throttle-priority** - If the header doesn't exist or is set to any other value, it indicates a normal request. We recommend setting priority to `high` only for the requests initiated by the user. The values of this header can be the following:
   - Low - Indicates the request is low priority. Throttling this request doesn't cause user-visible failures.
   - Normal - Default if no value is provided. Indicates that the request is default priority.
   - High - Indicates that the request is high priority. Throttling this request causes user-visible failures.
