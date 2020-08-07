@@ -1321,24 +1321,6 @@ items:
             href: api/audioroutinggroup-delete.md
         - name: Log teleconference device quality data
           href: api/call-logteleconferencedevicequality.md
-      - name: Online meeting
-        href: resources/onlinemeeting.md
-        items:
-        - name: Create
-          href: api/application-post-onlinemeetings.md
-        - name: Get
-          href: api/onlinemeeting-get.md         
-        - name: Delete
-          href: api/onlinemeeting-delete.md
-        - name: Create or get
-          href: api/onlinemeeting-createorget.md
-      - name: Presence
-        href: resources/presence.md
-        items:
-        - name: Get presence
-          href: api/presence-get.md
-        - name: Get presence for multiple users
-          href: api/cloudcommunications-getpresencesbyuserid.md
       - name: Call records
         items:
         - name: Overview
@@ -1367,6 +1349,26 @@ items:
             href: resources/callrecords-directroutinglogrow.md
           - name: List direct routing calls
             href: api/callrecords-callrecord-getdirectroutingcalls.md
+      - name: Online meeting
+        href: resources/onlinemeeting.md
+        items:
+        - name: Create
+          href: api/application-post-onlinemeetings.md
+        - name: Get
+          href: api/onlinemeeting-get.md
+        - name: Create or get
+          href: api/onlinemeeting-createorget.md
+        - name: Update
+          href: api/onlinemeeting-update.md
+        - name: Delete
+          href: api/onlinemeeting-delete.md
+      - name: Presence (preview)
+        href: resources/presence.md
+        items:
+        - name: Get presence
+          href: api/presence-get.md
+        - name: Get presence for multiple users
+          href: api/cloudcommunications-getpresencesbyuserid.md
     - name: Compliance (preview)
       displayName: Compliance API, Microsoft Graph Compliance API
       items:
@@ -11459,7 +11461,7 @@ items:
           href: api/sitepage-delete.md
         - name: Publish page
           href: api/sitepage-publish.md
-      - name: Taxonomy   
+      - name: Taxonomy (preview)
         displayname: Taxonomy API
         items:
         - name: Store
