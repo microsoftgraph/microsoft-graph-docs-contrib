@@ -81,22 +81,14 @@ Steps:
 1. Select **Create a resource**.
 1. Type **Event Hubs** in the search bar.
 1. Select the **Event Hubs** suggestion. The Event Hubs creation page will load.  
-    ![event hubs creation page](images/change-notifications/eventhubs.png)
 1. On the Event Hubs creation page, click **Create**.
 1. Fill in the Event Hubs namespace creation details, and then click **Create**.  
-    ![event hubs creation](images/change-notifications/eventhubscreation.png)
 1. When the Event Hub namespace is provisioned, go to the page for the namespace.  
-    ![event hubs created](images/change-notifications/eventhubscreated.png)
 1. Click **Event Hubs** and **+ Event Hub**.  
-    ![event hubs addition](images/change-notifications/eventhubsaddition.png)
 1. Give a name to the new Event Hub, and click **Create**.  
-    ![event hub addition panel](images/change-notifications/eventhubadditionpanel.png)
 1. After the Event Hub has been created, click the name of the Event Hub, and then click **Shared access policies** and **+ Add** to add a new policy.  
-    ![policy panel](images/change-notifications/policypanel.png)
 1. Give a name to the policy, check **Send**, and click **Create**.  
-    ![policy creation](images/change-notifications/policyaddition.png)
 1. After the policy has been created, click the name of the policy to open the details panel, and then copy the **Connection string-primary key** value. Write it down; you'll need it for the next step.  
-    ![policy string](images/change-notifications/policycs.png)
 
 ##### Configuring the Azure Key Vault
 
@@ -114,21 +106,13 @@ Steps:
 1. Type **Key Vault** in the search bar.
 1. Select the **Key Vault** suggestion. The Key Vault creation page will load.
 1. On the Key Vault creation page, click **Create**.  
-    ![key vault creation page](images/change-notifications/keyvault.png)
 1. Fill in the Key Vault creation details, and then click **Review + Create** and **Create**.  
-    ![key vault creation](images/change-notifications/keyvaultcreation.png)
 1. Go to the newly crated key vault using the **Go to resource** from the notification.  
-    ![key vault created](images/change-notifications/keyvaultcreated.png)
 1. Copy the **DNS name**; you will need it for the next step.  
-    ![key vault dns name](images/change-notifications/dnsname.png)
 1. Go to **Secrets** and click **+ Generate/Import**.  
-    ![secrets page](images/change-notifications/secretslistpage.png)
 1. Give a name to the secret, and keep the name for later; you will need it for the next step. For the value, paste in the connection string you generated at the Event Hubs step. Click **Create**.  
-    ![secrets creation](images/change-notifications/secretscreation.png)
 1. Click **Access Policies** and **+ Add Access Policy**.  
-    ![access policies list](images/change-notifications/accesspolicieslist.png)
 1. For **Secret permissions**, select **Get**, and for **Select Principal**, select **Microsoft Graph Change Tracking**. Click **Add**.  
-    ![add policy](images/change-notifications/accesspolicyadd.png)
 
 ### Creating the subscription and receiving notifications
 
