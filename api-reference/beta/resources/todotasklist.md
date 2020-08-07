@@ -1,6 +1,6 @@
 ---
 title: "todoTaskList resource type"
-description: "A list that contains To Do tasks (collection of todoTasks objects)."
+description: "A todoTaskList resource is a collection of todoTasks resource."
 author: "avijityadav"
 localization_priority: Normal
 ms.prod: "Microsoft To Do"
@@ -13,9 +13,9 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-A list that contains To Do tasks (collection of [todoTasks](./todotask.md) objects). 
+A **todoTaskList** resource is a collection of [todoTasks](./todotask.md) resource. 
 
-In To Do, There are some default Task lists like Flagged emails and Tasks.  You cannot rename or delete these task lists but you can create additional task lists.
+In To Do, there are built-in task lists such as **Flagged emails** and **Tasks** which cannot be renamed or deleted.  You can, however, create additional task lists.
 
 This resource supports
 * Adding your data to custom properties as [open extensions](/graph/extensibility-overview)

@@ -1,7 +1,7 @@
 ---
 title: "List linkedResources"
 description: "Get the linkedResources from the linkedResources navigation property."
-author: "**TODO: Provide Github Name. See [topic-level metadata reference](https://msgo.azurewebsites.net/add/document/guidelines/metadata.html#topic-level-metadata)**"
+author: "avijityadav"
 localization_priority: Normal
 ms.prod: "Microsoft To Do"
 doc_type: apiPageType

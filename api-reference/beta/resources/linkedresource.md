@@ -1,7 +1,7 @@
 ---
 title: "linkedResource resource type"
-description: "**TODO: Add Description**"
-author: "**TODO: Provide Github Name. See [topic-level metadata reference](https://msgo.azurewebsites.net/add/document/guidelines/metadata.html#topic-level-metadata)**"
+description: "Represents the source of the todoTask"
+author: "avijityadav"
 localization_priority: Normal
 ms.prod: "Microsoft To Do"
 doc_type: resourcePageType
@@ -13,7 +13,8 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-You can add links related to a task using the [linkedResource](./linkedresource.md) entity.
+Represents the source of the [todoTask](./todotask.md) such as an application or a webURL.
+
 
 ## Methods
 |Method|Return type|Description|
