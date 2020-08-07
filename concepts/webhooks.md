@@ -98,7 +98,7 @@ Each Teams resource has different subscription quotas.
 - For subscriptions to **callRecords**:
   - Per organization: 100 total subscriptions
 
-- For subscriptions to **chatMessages** (channels or chats) (preview):
+- For subscriptions to **chatMessages** (channels or chats):
   - Per app and channel or chat combination: 1 subscription
   - Per organization: 10,000 total subscriptions
 
@@ -285,7 +285,7 @@ The following table lists the latency to expect between an event happening in th
 | Resource | Average latency | Maximum latency |
 |:-----|:-----|:-----|
 |[callRecord][] | Less than 15 minutes | 60 minutes |
-|[chatMessage][] (preview) | Less than 10 seconds | 1 minute |
+|[chatMessage][] | Less than 10 seconds | 1 minute |
 |[contact][] | Unknown | Unknown |
 |[driveItem][] | Less than 1 minute | 5 minutes |
 |[event][] | Unknown | Unknown |
