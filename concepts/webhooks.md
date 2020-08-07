@@ -93,9 +93,14 @@ Use:
 
 ### Teams resource limitations
 
-A single active subscription per channel or chat per application is allowed.
+Each Teams resource has different subscription quotas.
 
-A maximum of 10000 active subscriptions per organization on chats and channels for all applications is allowed.
+- For subscriptions to **callRecords**:
+  - Per organization: 100 total subscriptions
+
+- For subscriptions to **chatMessages** (channels or chats) (preview):
+  - Per app and channel or chat combination: 1 subscription
+  - Per organization: 10,000 total subscriptions
 
 ## Subscription lifetime
 
@@ -272,6 +277,27 @@ The following code samples are available on GitHub.
 You can optionally configure the firewall that protects your notification URL to allow inbound connections only from Microsoft Graph. This allows you to reduce further exposure to invalid change notifications that are sent to your notification URL. These invalid change notifications can be trying to trigger the custom logic that you implemented. For a complete list of IP addresses used by Microsoft Graph to deliver change notifications, see [additional endpoints for Microsoft 365](https://docs.microsoft.com/office365/enterprise/additional-office365-ip-addresses-and-urls).
 
 > **Note:** The listed IP addresses that are used to deliver change notifications can be updated at any time without notice.
+
+## Latency
+
+The following table lists the latency to expect between an event happening in the service and the delivery of the change notification.
+
+| Resource | Average latency | Maximum latency |
+|:-----|:-----|:-----|
+|[callRecord][] | Less than 15 minutes | 60 minutes |
+|[chatMessage][] (preview) | Less than 10 seconds | 1 minute |
+|[contact][] | Unknown | Unknown |
+|[driveItem][] | Less than 1 minute | 5 minutes |
+|[event][] | Unknown | Unknown |
+|[group][] | Less than 2 minutes | 15 minutes |
+|[conversation][] | Unknown | Unknown |
+|[list][] | Less than 1 minute | 5 minutes |
+|[message][] | Unknown | Unknown |
+|[alert][] | Less than 3 minutes | 5 minutes |
+|[presence][] (preview) | Less than 10 seconds | 1 minute |
+|[user][] | Less than 2 minutes | 15 minutes |
+
+>**Note:** The latency provided for the **alert** resource is only applicable after the alert itself has been created. It does not include the time it takes for a rule to create an alert from the data.
 
 ## See also
 
