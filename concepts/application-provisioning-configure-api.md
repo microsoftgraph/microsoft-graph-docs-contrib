@@ -1,21 +1,15 @@
 ---
-title: Use Microsoft Graph APIs to configure provisioning - Azure Active Directory | Microsoft Docs
-description: Need to set up provisioning for multiple instances of an application? Learn how to save time by using the Microsoft Graph APIs to automate the configuration of automatic provisioning.
-services: active-directory
+title: Use Microsoft Graph APIs to configure provisioning
+description: Learn how to save time by using the Microsoft Graph APIs to automate the configuration of automatic provisioning.
 author: kenwith
-manager: celestedg
-ms.service: active-directory
-ms.subservice: app-provisioning
-ms.workload: identity
-ms.topic: how-to
-ms.date: 11/15/2019
-ms.author: kenwith
-ms.reviewer: arvinh
+ms.topic: conceptual
+localization_priority: Normal
+ms.prod: microsoft-identity-platform
 ---
 
 # Configure provisioning using Microsoft Graph APIs
 
-The Azure portal is a convenient way to configure provisioning for individual apps one at a time. But if you're creating several—or even hundreds—of instances of an application, it can be easier to automate app creation and configuration with the Microsoft Graph APIs. This article outlines how to automate provisioning configuration through APIs. This method is commonly used for applications like [Amazon Web Services](../saas-apps/amazon-web-service-tutorial.md#configure-azure-ad-sso).
+The Azure portal is a convenient way to configure provisioning for individual apps one at a time. But if you're creating several—or even hundreds—of instances of an application, it can be easier to automate app creation and configuration with the Microsoft Graph APIs. This article outlines how to automate provisioning configuration through APIs. This method is commonly used for applications like [Amazon Web Services](https://docs.microsoft.com/azure/active-directory/saas-apps/amazon-web-service-tutorial#configure-azure-ad-sso).
 
 **Overview of steps for using Microsoft Graph APIs to automate provisioning configuration**
 
@@ -38,7 +32,7 @@ The Azure portal is a convenient way to configure provisioning for individual ap
 1. Start [Microsoft Graph Explorer](https://developer.microsoft.com/graph/graph-explorer)
 1. Select the "Sign-In with Microsoft" button and sign in using Azure AD global administrator or App Admin credentials.
 
-    ![Graph Sign-in](./media/application-provisioning-configure-api/wd_export_02.png)
+    ![Graph Sign-in](./images/application-provisioning-configure-api/wd_export_02.png)
 
 1. Upon successful sign-in, you'll see the user account details in the left-hand pane.
 
@@ -522,4 +516,4 @@ Content-type: application/json
 ## Related articles
 
 - [Review the synchronization Microsoft Graph documentation](https://docs.microsoft.com/graph/api/resources/synchronization-overview?view=graph-rest-beta)
-- [Integrating a custom SCIM app with Azure AD](use-scim-to-provision-users-and-groups.md)
+- [Integrating a custom SCIM app with Azure AD](https://docs.microsoft.com/azure/active-directory/app-provisioning/use-scim-to-provision-users-and-groups)
