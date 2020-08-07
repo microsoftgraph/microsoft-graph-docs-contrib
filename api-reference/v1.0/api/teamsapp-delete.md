@@ -1,6 +1,6 @@
 ---
 title: "Delete teamsApp"
-description: "Delete a T app from your organization's app catalog (the tenant app catalog). "
+description: "Delete a Teams app from your organization's app catalog (the tenant app catalog). "
 localization_priority: Normal
 author: "nkramer"
 ms.prod: "microsoft-teams"
