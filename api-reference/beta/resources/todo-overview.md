@@ -1,7 +1,7 @@
 ---
 title: "Use the To Do Graph API"
-description: "You can use the To Do API in Microsoft Graph to create tasklists, create tasks, update task properties like importance, status etc"
-author: "TODO"
+description: "You can use Microsoft Graph to create an app that connects with tasks across Microsoft To Do"
+author: "avijityadav"
 localization_priority: Priority
 ms.prod: "Microsoft To Do"
 doc_type: conceptualPageType
@@ -11,28 +11,28 @@ doc_type: conceptualPageType
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
- You can use  To Do on Graph to connect tasks within your app to Microsoft To Do. Tasks are organized in task lists. Tasks exposes properties like dueDateTime, importance, status etc that corresponds to feature in UI, allowing user to integrate with built in To Do experience.
+You can use Microsoft Graph to create an app that connects with tasks across Microsoft To Do. With Microsoft Graph, you can build a variety of experiences with tasks, from simply syncing tasks from your app to complex task completion scenarios.
  
-Microsoft Graph exposes three resource types for working with To Do.
+Microsoft Graph exposes three resource types for working with To Do. 
 
 ## todoTaskList
 
-[todoTaskList](./todotasklist.md) is the container of [todoTask](./todotask.md). To [retrieve all your taskLists](../api/todotasklist-get.md), make the following HTTP request.
+[todoTaskList](./todotasklist.md) represents a logical container of [todoTask](./todotask.md). To [get all your taskLists](../api/todotasklist-get.md), make the following HTTP request.
 
 ``` http
 GET /todo/lists/
 ```
 
-## Tasks
+## todoTasks
 
-[todoTask](./todotask.md) is an object within [todoTaskList](./todotasklist.md) which is used to track a work item.  To retrieve the tasks from a tasklist, make the following HTTP request.
+[todoTask](./todotask.md) represents an item within a **todoTaskList** which track a work item. To get the **todoTasks** from a **todoTaskList**, make the following HTTP request.
 ``` http
 GET /todo/lists/{list-id}/tasks
 ```
 
 ## LinkedResource
 
-[LinkedResource](linkedresource.md) is a new property of To Do task that can capture link associated with any tasks. You can use the object to add a link which will help in task completion. To retrieve a linkedResource from a task, make the following HTTP request.
+[LinkedResource](linkedresource.md) represent the source of a **todoTask** and help user complete their tasks. To get a **linkedResource** from a task, make the following HTTP request.
 ``` http
 GET /todo/lists/{list-id}/{task-id}/linkedresources/{linkedresource-id}
 ```
