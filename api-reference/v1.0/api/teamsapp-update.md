@@ -39,14 +39,13 @@ PUT /appCatalogs/teamsApps/{id}
 | Header        | Value           |
 |:--------------|:--------------  |
 | Authorization | Bearer {token}. Required.  |
-| Content-Type  | application/zip |
+| Content-Type  | application/zip. Required. |
 
 ## Request body
 
-Teams Zip Manifest Payload: For Teams application zip file [see Create an app package](/microsoftteams/platform/concepts/apps/apps-package)
+In the request body, include a Teams zip manifest payload. For details, see [Create an app package](/microsoftteams/platform/concepts/apps/apps-package)
 
->**Note:** Use the ID returned from the [List published apps](./teamsapp-list.md) call for to reference the app you'd like to update.
-Do not use the ID from the manifest of the zip app package.
+>**Note:** Use the ID returned from the [List published apps](./teamsapp-list.md) call to reference the app you'd like to update. Do not use the ID from the manifest of the zip app package.
 
 ## Response
 
@@ -66,8 +65,6 @@ PUT https://graph.microsoft.com/v1.0/appCatalogs/teamsApps/06805b9e-77e3-4b93-ac
 Content-type: application/zip
 Content-length: 244
 ``
-
-For Teams application zip file [see Create app package](/microsoftteams/platform/concepts/apps/apps-package)
 
 <!-- markdownlint-disable MD024 -->
 
