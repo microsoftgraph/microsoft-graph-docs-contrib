@@ -18,7 +18,7 @@ This includes apps from the Microsoft Teams store, as well as apps from your org
 
 ## Permissions
 
-One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](../../../concepts/permissions-reference.md).
+One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions_reference).
 
 | Permission Type                        | Permissions (from least to most privileged) |
 |:---------------------------------------|:------------------------------------|
@@ -117,7 +117,6 @@ GET https://graph.microsoft.com/beta/appCatalogs/teamsApps?$filter=id%20eq%20'b1
 
 <!-- {
   "blockType": "response",
-  "name": "list_teamsapp",
   "truncated": true
 } -->
 
