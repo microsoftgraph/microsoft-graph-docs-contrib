@@ -31,7 +31,9 @@ One of the following permissions is required to call this API. To learn more, in
 | Application                            | Not supported. |
 
 ## HTTP request
+
 <!-- { "blockType": "ignored" } -->
+
 ```http
 PUT /appCatalogs/teamsApps/{id}
 ```
@@ -48,6 +50,7 @@ PUT /appCatalogs/teamsApps/{id}
 In the request body, include a Teams zip manifest payload. For details, see [Create an app package](/microsoftteams/platform/concepts/apps/apps-package)
 
 >**Note:** Use the ID returned from the [List published apps](./teamsapp-list.md) call for to reference the app you'd like to update.
+
 Do not use the ID from the manifest of the zip app package.
 
 ## Response

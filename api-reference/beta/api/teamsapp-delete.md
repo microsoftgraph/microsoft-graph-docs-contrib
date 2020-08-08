@@ -30,7 +30,9 @@ One of the following permissions is required to call this API. To learn more, in
 | Application                            | Not supported. |
 
 ## HTTP request
+
 <!-- { "blockType": "ignored" } -->
+
 ```http
 DELETE /appCatalogs/teamsApps/{id}
 ```
@@ -74,6 +76,7 @@ DELETE https://graph.microsoft.com/beta/appCatalogs/teamsApps/06805b9e-77e3-4b93
 ```
 
 <!-- markdownlint-disable MD024 -->
+
 ### Response
 
 ```http

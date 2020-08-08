@@ -29,7 +29,9 @@ One of the following permissions is required to call this API. To learn more, in
 | Application                            | Not supported. |
 
 ## HTTP request
+
 <!-- { "blockType": "ignored" } -->
+
 ```http
 PUT /appCatalogs/teamsApps/{id}
 ```
@@ -67,11 +69,11 @@ HTTP/1.1 204 No Content
   "name": "update_teamsapp"
 }-->
 
-`
+```http
 PUT https://graph.microsoft.com/v1.0/appCatalogs/teamsApps/06805b9e-77e3-4b93-ac81-525eb87513b8
 Content-type: application/zip
 Content-length: 244
-``
+```
 
 <!-- markdownlint-disable MD024 -->
 
