@@ -91,6 +91,7 @@ Content-Type: application/json
       "externalId": "f31b1263-ba99-435a-a679-911d24850d7c",
       "name": "Test App",
       "version": "1.0.1",
+      "resourceType": "Application",
       "distributionMethod": "Organization"
     }
   ]
@@ -130,6 +131,7 @@ Content-Type: application/json
       "externalId": "f31b1263-ba99-435a-a679-911d24850d7c",
       "name": "Test App",
       "version": "1.0.1",
+      "resourceType": "Application",
       "distributionMethod": "Organization"
     }
   ]
