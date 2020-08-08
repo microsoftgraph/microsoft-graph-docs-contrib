@@ -139,4 +139,4 @@ Location: https://graph.microsoft.com/beta/appCatalogs/teamsApps/e3e29acb-8c79-4
   "version": "1.0.0",
   "distributionMethod": "organization"
 }
-`
+```
