@@ -1,6 +1,6 @@
 ---
 title: "Update teamsApp"
-description: "Update an app previously published to a tenant app catalog. "
+description: "Update an app previously published to a Teams app catalog. "
 author: "nkramer"
 localization_priority: Normal
 ms.prod: "microsoft-teams"
@@ -49,6 +49,8 @@ In the request body, include a Teams zip manifest payload. For details, see [Cre
 
 ## Response
 
+If successful, this method returns a `204, No Content` response code.
+
 ``
 HTTP/1.1 204 No Content
 ``
@@ -75,6 +77,8 @@ Content-length: 244
 
 ### Response
 
+If successful, this method returns a `204, No Content` response code.
+
 <!-- {
   "blockType": "response",
   "name": "update_teamsapp",
@@ -96,7 +100,7 @@ HTTP/1.1 204 No Content
 }-->
 
 ```http
-POST https://graph.microsoft.com/beta/appCatalogs/teamsApps/e3e29acb-8c79-412b-b746-e6c39ff4cd22/appDefinitions?requiresReview=true
+POST https://graph.microsoft.com/v1.0/appCatalogs/teamsApps/e3e29acb-8c79-412b-b746-e6c39ff4cd22/appDefinitions?requiresReview=true
 Content-type: application/zip
 Content-length: 244
 ```
@@ -111,10 +115,10 @@ Content-length: 244
 
 ```http
 HTTP/1.1 201 Created
-Location: https://graph.microsoft.com/beta/appCatalogs/teamsApps/e3e29acb-8c79-412b-b746-e6c39ff4cd22/appDefinitions/MGQ4MjBlY2QtZGVmMi00Mjk3LWFkYWQtNzgwNTZjZGU3Yzc4IyMxLjAuMA==
+Location: https://graph.microsoft.com/v1.0/appCatalogs/teamsApps/e3e29acb-8c79-412b-b746-e6c39ff4cd22/appDefinitions/MGQ4MjBlY2QtZGVmMi00Mjk3LWFkYWQtNzgwNTZjZGU3Yzc4IyMxLjAuMA==
 
 {
-    "@odata.context": "https://graph.microsoft.com/beta/$metadata#appDefinition",
+    "@odata.context": "https://graph.microsoft.com/v1/$metadata#appDefinition",
     "@odata.etag": "158749010",
     "id": "MGQ4MjBlY2QtZGVmMi00Mjk3LWFkYWQtNzgwNTZjZGU3Yzc4IyMxLjAuMA==",
     "teamsAppId": "e3e29acb-8c79-412b-b746-e6c39ff4cd22",

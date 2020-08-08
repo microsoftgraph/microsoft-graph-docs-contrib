@@ -36,7 +36,7 @@ POST /appCatalogs/teamsApps
 Use the following syntax to add an app that requires a review:
 
 ```http
-POST /appCatalogs/teamsApps?requiresReview:{boolean}
+POST /appCatalogs/teamsApps?requiresReview:{Boolean}
 ```
 
 > [!NOTE]
@@ -70,12 +70,10 @@ If successful, this method returns a `200 OK` response code and a [teamsCatalogA
 
 #### Request
 
-```html
 <!-- {
   "blockType": "request",
   "name": "create_teamsapp"
 }-->
-```
 
 ```http
 POST https://graph.microsoft.com/v1.0/appCatalogs/teamsApps
