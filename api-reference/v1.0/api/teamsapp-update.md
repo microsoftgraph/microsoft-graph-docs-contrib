@@ -85,9 +85,9 @@ If successful, this method returns a `204, No Content` response code.
   "truncated": true
 } -->
 
-``
+```http
 HTTP/1.1 204 No Content
-``
+```
 
 ### Example 2: Update a previously reviewed and published application to the Teams app catalog
 

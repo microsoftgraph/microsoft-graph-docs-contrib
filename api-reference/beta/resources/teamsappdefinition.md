@@ -60,4 +60,3 @@ The details of one version of a [teamsApp](teamsapp.md).
   "suppressions": []
 }
 -->
-
