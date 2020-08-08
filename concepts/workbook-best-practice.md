@@ -100,7 +100,7 @@ content-type: application/json
 ```
 
 ### Step 4: Close the session after all the requests are completed
-h
+
 #### Request
 
 ```http
