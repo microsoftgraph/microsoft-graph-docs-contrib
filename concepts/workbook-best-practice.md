@@ -12,11 +12,13 @@ This article provides recommendations for working with the Excel APIs in Microso
 
 ## Manage sessions in the most efficient way
 
-If you have more than one calls to make within a certain period of time, we strongly suggest you create a session and pass the session ID with each request. To represent the session in the API, use the `workbook-session-id: {session-id}` header. By doing so you can use the Excel APIs in the most efficient way.
+If you have more than one call to make within a certain period of time, we recommend that you create a session and pass the session ID with each request. To represent the session in the API, use the `workbook-session-id: {session-id}` header. By doing so, you can use the Excel APIs in the most efficient way.
 
-Here is an example on a typical scenario you should choose this mode: “I want to add a new number to the table and then find one record in my workbook.”
+The following example shows you how to add a new number to a table and then find one record in a workbook using this approach.
 
-Step 1: create a session.
+### Step 1: Create a session
+
+#### Request
 
 ```http
 POST https://graph.microsoft.com/v1.0/me/drive/items/{id}/workbook/createSession
@@ -27,8 +29,9 @@ Content-length: 52
   "persistChanges": true
 }
 ```
+#### Response
 
-You receive a response once the request is successful.
+The following is a successful response.
 
 ```http
 HTTP/1.1 201 Created
@@ -41,7 +44,9 @@ Content-length: 52
 }
 ```
 
-Step 2: add a new row to the table.
+### Step 2: Add a new row to the table
+
+#### Request
 
 ```http
 POST https://graph.microsoft.com/v1.0/me/drive/items/{id}/workbook/tables/Table1/rows/add
@@ -53,7 +58,7 @@ workbook-session-id: {session-id}
 }
 ```
 
-The successful response looks like:
+#### Response
 
 ```http
 HTTP/1.1 200 OK
@@ -66,7 +71,9 @@ Content-length: 42
 }
 ```
 
-Step 3: look up a value in the updated table.
+### Step 3: Look up a value in the updated table
+
+#### Request
 
 ```http
 POST https://graph.microsoft.com/v1.0/me/drive/items/{id}/workbook/functions/vlookup
@@ -81,7 +88,7 @@ workbook-session-id: {session-id}
 }
 ```
 
-The successful response looks like:
+#### Response
 
 ```http
 HTTP code: 200 OK
@@ -92,7 +99,9 @@ content-type: application/json
 }
 ```
 
-Step 4: close the session once all of the requests are completed.
+### Step 4: Close the session after all the requests are completed
+h
+#### Request
 
 ```http
 POST https://graph.microsoft.com/v1.0/me/drive/items/{id}/workbook/closeSession
@@ -104,7 +113,7 @@ Content-length: 0
 }
 ```
 
-The successful response looks similar as following.
+#### Response
 
 ```http
 HTTP/1.1 204 No Content
@@ -112,18 +121,18 @@ HTTP/1.1 204 No Content
 
 For more details, see [Create session](/graph/api/workbook-createsession?view=graph-rest-1.0) and [Close session](/graph/api/workbook-closesession?view=graph-rest-1.0).
 
-## Working with APIs that may take a long time to complete
+## Working with APIs that take a long time to complete
 
-You may notice some API responses require indeterminate time to complete, for example, open a workbook with large size. However, it is easy to hit timeout while waiting for the response to such kind of request. To resolve this issue, we provide the long running operation pattern and by using this pattern, you do not need to  worry about the timeout for the request.
+You might notice that some operations take an indeterminate amount time to complete; for example, opening a large workbook. It is easy to hit timeout while waiting for the response to these requests. To resolve this issue, we provide the long-running operation pattern. When you use this pattern, you don't need to worry about the timeout for the request.
 
-Currently, Excel Graph has enabled long running operation pattern for session creation API. Here are the steps:
+Currently, the session creation Excel API in Microsoft Graph has the long-running operation pattern enabled. This pattern involves the following steps:
 
-1. Adds a header of `Prefer: respond-async` in the request to indicate it as a long running operation when creating a session.
-2. In long running operation pattern, it will return a `202 Accepted` response along with a Location header to retrieve operation status. Otherwise, if session creation completes in several seconds, it will return as regular create session instead of going to long running operation pattern.
-3. With the `202 Accepted` response, you can retrieve the operation status through specified location. Operation status includes `notStarted`, `running`, `succeeded`, and `failed`.
-4. After operation completes, you can get the session creation result through the specified URL in succeeded response.
+1. Add a `Prefer: respond-async` header to the request to indicate that it is a long-running operation when you crate a session.
+2. A long-running operation will return a `202 Accepted` response along with a Location header to retrieve the operation status. If the session creation completes in several seconds, it will return a regular create session response instead of using the long-running operation pattern.
+3. With the `202 Accepted` response, you can retrieve the operation status at the specified location. Operation status values include `notStarted`, `running`, `succeeded`, and `failed`.
+4. After the operation completes, you can get the session creation result through the specified URL in the succeeded response.
 
-Following is an example of create session with long running operation pattern.
+The following example creates a session using the long-running operation pattern.
 
 ### Initial request to create session
 
@@ -136,7 +145,9 @@ Content-type: application/json
 }
 ```
 
-Long running operation pattern will return a `202 Accepted` response similar as following.
+### Response
+
+The long-running operation pattern will return a `202 Accepted` response similar to the following.
 
 ```http
 HTTP/1.1 202 Accepted
@@ -147,7 +158,7 @@ Content-type: application/json
 }
 ```
 
-In some cases, if the creation succeeds directly in seconds, it won't enter long running operation pattern, instead it returns as a regular create session and the successful request will return a `201 Created` response like following.
+In some cases, if the creation succeeds within seconds, it won't enter the long-running operation pattern; instead, it returns as a regular create session and the successful request will return a `201 Created` response.
 
 ```http
 HTTP/1.1 201 Created
@@ -160,7 +171,8 @@ Content-length: 52
 }
 ```
 
-The failed request of regular create session will look as following.
+The following example shows the response when the request fails.
+
 >**Note:** The response object shown here might be shortened for readability.
 
 ```http
@@ -182,9 +194,9 @@ Content-type: application/json
 }
 
 
-### Poll status of the long running create session
+### Poll status of the long-running create session
 
-In long running operation pattern, you can get creation status with specified location with request similar as following. The suggested interval to poll status is around 30 seconds and the maximum internal should be no more than 4 minutes.
+With the long-running operation pattern, you can get the creation status at specified location by using the following request. The suggested interval to poll status is around 30 seconds. The maximum interval should be no more than 4 minutes.
 
 ```http
 GET https://graph.microsoft.com/v1.0/me/drive/items/{drive-item-id}/workbook/operations/{operation-id}
@@ -192,9 +204,7 @@ GET https://graph.microsoft.com/v1.0/me/drive/items/{drive-item-id}/workbook/ope
 }
 ```
 
-Here are the examples of response with status `running`, `succeeded`, and `failed`.
-
-Case of `running`: the operation is still in execution.
+The following is the response when the operation has a status of `running`.
 
 ```http
 HTTP/1.1 200 OK
@@ -205,7 +215,7 @@ Content-type: application/json
 }
 ```
 
-Case of `succeeded`: the operation is successful.
+The following is the response when the operation status is `succeeded`.
 
 ```http
 HTTP/1.1 200 OK
@@ -217,7 +227,7 @@ Content-type: application/json
 }
 ```
 
-Case of `failed`: the operation fails.
+The following is the response when the operation status is `failed`.
 
 ```http
 HTTP/1.1 200 OK
@@ -240,11 +250,11 @@ Content-type: application/json
 }
 ```
 
-For more details on error codes, see [Error codes](/concepts/workbook-error-codes.md)
+For more details about errors, see [Error codes](/concepts/workbook-error-codes.md)
 
 ### Acquire session information
 
-With status of `succeeded`, you can get the created session information through `resourceLocation` with request similar as following.
+With a status of `succeeded`, you can get the created session information through `resourceLocation` with a request similar to the following.
 
 ```http
 GET https://graph.microsoft.com/v1.0/me/drive/items/{drive-item-id}/workbook/sessionInfoResource(key='{key}')
@@ -252,7 +262,7 @@ GET https://graph.microsoft.com/v1.0/me/drive/items/{drive-item-id}/workbook/ses
 }
 ```
 
-Corresponding response looks like below.
+The following is the response.
 
 ```http
 HTTP/1.1 200 OK
@@ -263,4 +273,4 @@ Content-type: application/json
 }
 ```
 
->**Note:** Acquire session information depends on the initial request, and there is no need to acquire the result if the initial request doesn't return a response body.
+>**Note:** Acquire session information depends on the initial request. You don't need to acquire the result if the initial request doesn't return a response body.
