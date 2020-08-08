@@ -64,7 +64,7 @@ The following example lists all applications that are specific to your tenant.
 
 <!-- {
   "blockType": "request",
-  "name": "list_teamsapp"
+  "name": "teamsapp-list"
 }-->
 
 ```http
@@ -77,7 +77,6 @@ GET https://graph.microsoft.com/beta/appCatalogs/teamsApps?$filter=distributionM
 
 <!-- {
   "blockType": "response",
-  "name": "list_teamsapp",
   "truncated": true
 } -->
 
@@ -106,7 +105,7 @@ The following example lists applications with a given ID.
 
 <!-- {
   "blockType": "request",
-  "name": "list_teamsapp"
+  "name": "teamsapp-list"
 }-->
 
 ```http
