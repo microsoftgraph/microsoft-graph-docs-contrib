@@ -203,5 +203,27 @@ HTTP/1.1 200 OK
                     "lastModifiedDateTime": "2020-02-10 22:48:33.841",
                 }
             ]
-        }
+        },
+        {
+            "id": "00001016-de05-492e-9106-4828fc8a8687",
+            "externalId": null,
+            "displayName": "Membership Automate",
+            "distributionMethod": "store",
+            "appDefinitions": [
+                {
+                    "@odata.etag": "W/"3243543634",
+                    "id": "MDAwMDEwMTYtZGUwNS00OTJlLTkxMDYtNDgyOGZjOGE4Njg3IyMxLjAuMQ==",
+                    "teamsAppId": "00001016-de05-492e-9106-4828fc8a8687",
+                    "displayName": "Membership Automate",
+                    "version": "1.0.1",
+                    "azureADAppId": "1154c53d-ba47-48b9-b7da-3bfedd263d64",
+                    "requiredResourceSpecificApplicationPermissions":[
+                        "Member.ReadWrite.Group"
+                    ]
+                },
+            "publishingState": "published"
+            ]
+        },
+    ]
+}
 ```
