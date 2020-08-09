@@ -67,7 +67,7 @@ The following example lists all applications that are specific to your tenant.
 }-->
 
 ```http
-GET https://graph.microsoft.com/v1.0/appCatalogs/teamsApps?$filter=distributionMethod eq 'organization'
+GET https://graph.microsoft.com/v1.0/appCatalogs/teamsApp?$filter=distributionMethod eq 'organization'
 ```
 
 <!-- markdownlint-disable MD024 -->
@@ -78,6 +78,7 @@ GET https://graph.microsoft.com/v1.0/appCatalogs/teamsApps?$filter=distributionM
   "blockType": "response",
   "@odata.type": "microsoft.graph.teamsApp",
   "truncated": true
+  "isCollection": true
 } -->
 
 ```http
@@ -118,6 +119,7 @@ GET https://graph.microsoft.com/v1.0/appCatalogs/teamsApps?$filter=id%20eq%20'b1
   "blockType": "response",
   "@odata.type": "microsoft.graph.teamsApp",
   "truncated": true
+  "isCollection": true
 } -->
 
 ```http
@@ -156,6 +158,7 @@ GET https://graph.microsoft.com/v1.0/appCatalogs/teamsApps?$expand=appDefinition
   "blockType": "response",
   "@odata.type": "microsoft.graph.teamsApp",
   "truncated": true
+  "isCollection": true
 } -->
 
 ```http
