@@ -172,6 +172,7 @@ HTTP/1.1 200 OK
             "externalId": "55cbeb0e-e7be-4ab3-b9bf-ef919406a846",
             "displayName": "Q&A Tracker",
             "distributionMethod": "organization",
+            "resourceType": "Application",
             "appDefinitions": [
                 {
                     "@odata.etag": "W/"08D1694BD49A0F11",
