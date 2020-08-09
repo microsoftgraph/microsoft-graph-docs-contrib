@@ -162,6 +162,7 @@ GET https://graph.microsoft.com/v1.0/appCatalogs/teamsApps?$expand=appDefinition
 
 ```http
 HTTP/1.1 200 OK
+
 {
     "@odata.context": "https://graph.microsoft.com/v1.0/$metadata#appCatalogs/teamsApps(appDefinitions())",
     "@odata.count": 2,
