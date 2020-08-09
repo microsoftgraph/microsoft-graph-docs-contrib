@@ -11,8 +11,6 @@ doc_type: apiPageType
 
 Namespace: microsoft.graph
 
-
-
 Publish an [app](../resources/teamsapp.md) to the Microsoft Teams apps catalog.
 Specifically, this API publishes the app to your organization's catalog (the tenant app catalog);
 the created resource will have `distributionMethod` = `organization`.
