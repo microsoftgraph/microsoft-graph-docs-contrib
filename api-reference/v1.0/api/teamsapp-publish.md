@@ -1,5 +1,5 @@
 ---
-title: "Permissions"
+title: "Publish teamsapp"
 description: "Publish an app to the Microsoft Teams apps catalog. "
 author: "nkramer"
 localization_priority: Normal
@@ -7,7 +7,7 @@ ms.prod: "microsoft-teams"
 doc_type: apiPageType
 ---
 
-# Publish apps to your organization's app catalog
+# Publish teamsapp
 
 Namespace: microsoft.graph
 
