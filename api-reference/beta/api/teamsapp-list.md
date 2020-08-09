@@ -1,13 +1,13 @@
 ---
-title: "List teamsApp"
+title: "List the published apps from the Microsoft Teams app catalog"
 description: "List apps from the Microsoft Teams app catalog. "
 author: "nkramer"
 localization_priority: Normal
 ms.prod: "microsoft-teams"
-doc_type: apiPageType  
---- 
+doc_type: apiPageType
+---
 
-# List teamsApp
+# List the published apps from the Microsoft Teams app catalog
 
 Namespace: microsoft.graph
 
@@ -46,7 +46,7 @@ This method supports the $filter, $select, and $expand [OData query parameters](
 
 ## Request body
 
-Do not supply a request body for this method.
+None.
 
 > **Note:** You can filter on any of the fields of the [teamsCatalogApp](../resources/teamsapp.md) object to shorten the list of results. You can use any of the following filter operations: Equal, not-equal, and, or, and not.
 
@@ -62,11 +62,6 @@ The following example lists all applications that are specific to your tenant.
 
 #### Request
 
-<!-- {
-  "blockType": "request",
-  "name": "teamsapp-list"
-}-->
-
 ```http
 GET https://graph.microsoft.com/beta/appCatalogs/teamsApps?$filter=distributionMethod eq 'organization'
 ```
@@ -74,12 +69,6 @@ GET https://graph.microsoft.com/beta/appCatalogs/teamsApps?$filter=distributionM
 <!-- markdownlint-disable MD024 -->
 
 #### Response
-
-<!-- {
-  "blockType": "response",
-  "@odata.type": "microsoft.graph.teamsAppInstallation",
-  "truncated": true
-} -->
 
 ```http
 HTTP/1.1 200 OK
@@ -104,22 +93,11 @@ The following example lists applications with a given ID.
 
 #### Request
 
-<!-- {
-  "blockType": "request",
-  "name": "list_teamsapp"
-}-->
-
 ```http
 GET https://graph.microsoft.com/beta/appCatalogs/teamsApps?$filter=id%20eq%20'b1c5353a-7aca-41b3-830f-27d5218fe0e5'
 ```
 
 #### Response
-
-<!-- {
-  "blockType": "response",
-  "@odata.type": "microsoft.graph.teamsAppInstallation",
-  "truncated": true
-} -->
 
 ```http
 HTTP/1.1 200 OK
@@ -132,88 +110,8 @@ Content-Type: application/json
       "externalId": "f31b1263-ba99-435a-a679-911d24850d7c",
       "name": "Test App",
       "version": "1.0.1",
-      "resourceType": "Application",
       "distributionMethod": "Organization"
     }
   ]
 }
 ```
-
-### Example 3: List applications and their progress in the review approval pipeline
-
-#### Request
-
-<!-- {
-  "blockType": "request",
-  "name": "list_teamsapp"
-}-->
-
-```http
-GET https://graph.microsoft.com/beta/appCatalogs/teamsApps?$expand=appDefinitions
-```
-
-#### Response
-
-<!-- {
-  "blockType": "response",
-  "@odata.type": "microsoft.graph.teamsAppInstallation",
-  "name": "list_teamsapp",
-  "truncated": true
-} -->
-
-```http
-HTTP/1.1 200 OK
-{
-    "@odata.context": "https://graph.microsoft.com/beta/$metadata#appCatalogs/teamsApps(appDefinitions())",
-    "@odata.count": 2,
-    "value": [
-        {
-            "id": "2fa70d49-4f85-47e0-b873-b1afddcee9e0",
-            "externalId": "55cbeb0e-e7be-4ab3-b9bf-ef919406a846",
-            "displayName": "Q&A Tracker",
-            "distributionMethod": "organization",
-            "resourceType": "Application",
-            "appDefinitions": [
-                {
-                    "@odata.etag": "W/"08D1694BD49A0F11",
-                    "id": "MmZhNzBkNDktNGY4NS00N2UwLWI4NzMtYjFhZmRkY2VlOWUwIyMxLjAuMTA=",
-                    "teamsAppId": "2fa70d49-4f85-47e0-b873-b1afddcee9e0",
-                    "displayName": "Q&A Tracker",
-                    "version": "1.0.10",
-                    "azureADAppId": "a651cc7d-ec54-4fb2-9d0e-2c58dc830b0b",
-                    "requiredResourceSpecificApplicationPermissions":[
-                        "ChannelMessage.Read.Group",
-                        "Channel.Create.Group",
-                        "Tab.ReadWrite.Group"
-                    ],
-                    "publishingState": "published",
-                },
-                {
-                    "@odata.etag": "W/"1234235436"
-                    "id": "MGQ4MjBlY2QtZGVmMi00Mjk3LWFkYWQtNzgwNTZjZGU3Yzc4IyMxLjAuMA==",
-                    "teamsAppId": "2fa70d49-4f85-47e0-b873-b1afddcee9e0",
-                    "displayName": "Q&A Tracker",
-                    "version": "1.0.11",
-                    "azureADAppId": "a651cc7d-ec54-4fb2-9d0e-2c58dc830b0b",
-                    "requiredResourceSpecificApplicationPermissions":[
-                        "ChannelMessage.Read.Group",
-                        "Channel.Create.Group",
-                        "Tab.ReadWrite.Group",
-                        "Member.Read.Group"
-                    ],
-                    "publishingState": "submitted",
-                    "lastModifiedDateTime": "2020-02-10 22:48:33.841",
-                }
-            ]
-        }
-```
-
-<!-- uuid: 16cd6b66-4b1a-43a1-adaf-3a886856ed98
-2020-08-08 14:57:30 UTC -->
-<!-- {
-  "type": "#page.annotation",
-  "description": "",
-  "keywords": "",
-  "section": "documentation",
-  "tocPath": ""
-}-->
