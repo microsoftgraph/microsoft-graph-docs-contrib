@@ -1,5 +1,5 @@
 ---
-title: "Permissions"
+title: "Publish teamsapp"
 description: "Create teamsApp "
 author: "nkramer"
 localization_priority: Normal
@@ -7,7 +7,7 @@ ms.prod: "microsoft-teams"
 doc_type: apiPageType
 ---
 
-# Create teamsApp
+# Publish teamsApp
 
 Namespace: microsoft.graph
 
