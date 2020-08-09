@@ -10658,7 +10658,7 @@ items:
           href: api/profile-delete.md
         - name: Account information
           items:
-          - name: userAccountInformation
+          - name: User account information
             href: resources/useraccountinformation.md
           - name: List
             href: api/profile-list-accounts.md
@@ -10672,7 +10672,7 @@ items:
             href: api/useraccountinformation-delete.md  
         - name: Addresses
           items:
-          - name: itemAddress
+          - name: Item address
             href: resources/itemaddress.md
           - name: List
             href: api/profile-list-addresses.md
@@ -10686,7 +10686,7 @@ items:
             href: api/itemaddress-delete.md
         - name: Anniversary
           items:
-          - name: personAnniversary
+          - name: Person anniversary
             href: resources/personanniversary.md
           - name: List
             href: api/profile-list-anniversaries.md
@@ -10700,7 +10700,7 @@ items:
             href: api/personanniversary-delete.md
         - name: Awards
           items:
-          - name: personAward
+          - name: Person award
             href: resources/personaward.md
           - name: List
             href: api/profile-list-awards.md
@@ -10714,7 +10714,7 @@ items:
             href: api/personaward-delete.md
         - name: Certifications
           items:
-          - name: personCertification
+          - name: Person certification
             href: resources/personcertification.md
           - name: List
             href: api/profile-list-certifications.md
@@ -10728,7 +10728,7 @@ items:
             href: api/personcertification-delete.md
         - name: Educational activity
           items:
-          - name: educationalActivity
+          - name: Educational activity
             href: resources/educationalactivity.md
           - name: List
             href: api/profile-list-educationalactivities.md
@@ -10742,7 +10742,7 @@ items:
             href: api/educationalactivity-delete.md
         - name: Email address
           items:
-          - name: itemEmail
+          - name: Item email
             href: resources/itememail.md
           - name: List
             href: api/profile-list-emails.md
@@ -10756,7 +10756,7 @@ items:
             href: api/itememail-delete.md
         - name: Interests
           items:
-          - name: personInterest
+          - name: Person interest
             href: resources/personinterest.md
           - name: List
             href: api/profile-list-interests.md
@@ -10770,7 +10770,7 @@ items:
             href: api/personinterest-delete.md
         - name: Languages
           items:
-          - name: languageProficiency
+          - name: Language proficiency
             href: resources/languageproficiency.md
           - name: List
             href: api/profile-list-languages.md
@@ -10784,7 +10784,7 @@ items:
             href: api/languageproficiency-delete.md
         - name: Names
           items:
-          - name: personName
+          - name: Person name
             href: resources/personname.md
           - name: List
             href: api/profile-list-names.md
@@ -10798,7 +10798,7 @@ items:
             href: api/personname-delete.md
         - name: Notes
           items:
-          - name: personAnnotation
+          - name: Person annotation
             href: resources/personannotation.md
           - name: List
             href: api/profile-list-notes.md
@@ -10812,7 +10812,7 @@ items:
             href: api/personannotation-delete.md
         - name: Patents
           items:
-          - name: itemPatent
+          - name: Item patent
             href: resources/itempatent.md
           - name: List
             href: api/profile-list-patents.md
@@ -10826,7 +10826,7 @@ items:
             href: api/itempatent-delete.md
         - name: Phones
           items:
-          - name: itemPhone
+          - name: Item phone
             href: resources/itemphone.md
           - name: List
             href: api/profile-list-phones.md
@@ -10840,7 +10840,7 @@ items:
             href: api/itemphone-delete.md
         - name: Positions
           items:
-          - name: workPosition
+          - name: Work position
             href: resources/workposition.md
           - name: List
             href: api/profile-list-positions.md
@@ -10854,7 +10854,7 @@ items:
             href: api/workposition-delete.md
         - name: Projects
           items:
-          - name: projectParticipation
+          - name: Project participation
             href: resources/projectparticipation.md
           - name: List
             href: api/profile-list-projects.md
@@ -10868,7 +10868,7 @@ items:
             href: api/projectparticipation-delete.md
         - name: Publications
           items:
-          - name: itemPublication
+          - name: Item publication
             href: resources/itempublication.md
           - name: List
             href: api/profile-list-publications.md
@@ -10882,7 +10882,7 @@ items:
             href: api/itempublication-delete.md
         - name: Responsibilities
           items:
-          - name: personResponsibility
+          - name: Person responsibility
             href: resources/personresponsibility.md
           - name: List
             href: api/profile-list-responsibilities.md
@@ -10896,7 +10896,7 @@ items:
             href: api/personresponsibility-delete.md
         - name: Skills
           items:
-          - name: skillProficiency
+          - name: Skill proficiency
             href: resources/skillproficiency.md
           - name: List
             href: api/profile-list-skills.md
@@ -10910,7 +10910,7 @@ items:
             href: api/skillproficiency-delete.md
         - name: Web accounts
           items:
-          - name: webAccount
+          - name: Web account
             href: resources/webaccount.md
           - name: List
             href: api/profile-list-webaccounts.md
@@ -10924,7 +10924,7 @@ items:
             href: api/webaccount-delete.md
         - name: Websites
           items:
-          - name: personWebsite
+          - name: Person website
             href: resources/personwebsite.md
           - name: List
             href: api/profile-list-websites.md
