@@ -77,7 +77,7 @@ GET https://graph.microsoft.com/v1.0/appCatalogs/teamsApp?$filter=distributionMe
 <!-- {
   "blockType": "response",
   "@odata.type": "microsoft.graph.teamsApp",
-  "truncated": true
+  "truncated": true,
   "isCollection": true
 } -->
 
@@ -118,7 +118,7 @@ GET https://graph.microsoft.com/v1.0/appCatalogs/teamsApps?$filter=id%20eq%20'b1
 <!-- {
   "blockType": "response",
   "@odata.type": "microsoft.graph.teamsApp",
-  "truncated": true
+  "truncated": true,
   "isCollection": true
 } -->
 
@@ -157,7 +157,7 @@ GET https://graph.microsoft.com/v1.0/appCatalogs/teamsApps?$expand=appDefinition
 <!-- {
   "blockType": "response",
   "@odata.type": "microsoft.graph.teamsApp",
-  "truncated": true
+  "truncated": true,
   "isCollection": true
 } -->
 
