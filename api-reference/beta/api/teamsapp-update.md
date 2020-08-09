@@ -67,11 +67,7 @@ HTTP/1.1 204 No Content
 
 ### Request
 
-<!-- markdownlint-disable MD034 -->
-<!-- {
-  "blockType": "request",
-  "name": "update_teamsapp"
-}-->
+<!-- { "blockType": "ignored" } -->
 
 ```http
 PUT https://graph.microsoft.com/beta/appCatalogs/teamsApps/06805b9e-77e3-4b93-ac81-525eb87513b8
@@ -86,7 +82,7 @@ For Teams application zip file [see Create app package](/microsoftteams/platform
 
 ### Response
 
-If successful, this method returns a `204, No Content` response code. 
+If successful, this method returns a `204, No Content` response code.
 
 ```http
 HTTP/1.1 204 No Content
@@ -137,5 +133,4 @@ Location: https://graph.microsoft.com/beta/appCatalogs/teamsApps/e3e29acb-8c79-4
     "publishingState": "submitted",
     "lastModifiedDateTime": "2020-02-10 22:48:33.841",
 }
-
 ```
