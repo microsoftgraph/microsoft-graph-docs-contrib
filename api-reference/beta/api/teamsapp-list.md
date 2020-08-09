@@ -1,149 +1,202 @@
 ---
-title: "List teamsApp"
-description: "List apps from the Microsoft Teams app catalog. "
-author: "nkramer"
+title: "List apps in team"
+description: "Retrieve the list of apps installed in the specified team."
+author: "clearab"
 localization_priority: Normal
 ms.prod: "microsoft-teams"
-doc_type: apiPageType 
+doc_type: apiPageType
 ---
 
-# List teamsApp
+# List apps in team
 
 Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-List [apps](../resources/teamsapp.md) from the Microsoft Teams app catalog.
-This includes apps from the Microsoft Teams store, as well as apps from your organization's app catalog (the tenant app catalog). To get apps from your organization's app catalog only, specify `Organization` as the **distributionMethod** in the [teamsCatalogApp](../resources/teamsapp.md) resource.
+Retrieve the list of [apps installed](../resources/teamsappinstallation.md) in the specified [team](../resources/team.md).
 
 ## Permissions
 
-One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions_reference).
+One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
 
-| Permission Type                        | Permissions (from least to most privileged) |
-|:---------------------------------------|:------------------------------------|
-| Delegated (work or school account)     | AppCatalog.Read.All, AppCatalog.ReadWrite.All, Directory.Read.All, Directory.ReadWrite.All |
-| Delegated (personal Microsoft account) | Not supported                       |
-| Application                            | Not supported. |
+|Permission type      | Permissions (from least to most privileged)              |
+|:--------------------|:---------------------------------------------------------|
+|Delegated (work or school account) | TeamsAppInstallation.ReadForTeam, TeamsAppInstallation.ReadWriteForTeam, Group.Read.All, Group.ReadWrite.All, Directory.Read.All, Directory.ReadWrite.All |
+|Delegated (personal Microsoft account) | Not supported.    |
+|Application | TeamsAppInstallation.ReadForTeam.All, TeamsAppInstallation.ReadWriteForTeam.All, Group.Read.All, Group.ReadWrite.All, Directory.Read.All, Directory.ReadWrite.All |
 
 ## HTTP request
 
 <!-- { "blockType": "ignored" } -->
 
 ```http
-GET /appCatalogs/teamsApps
+GET /teams/{id}/installedApps
 ```
 
 ## Optional query parameters
 
-This method supports the $filter, $select, and $expand [OData query parameters](/graph/query-parameters) to help customize the response.
+This method supports the $filter, $select, and $expand [OData Query Parameters](/graph/query-parameters) to help customize the response.
 
 ## Request headers
 
-| Header        | Value                     |
-|:--------------|:--------------------------|
-| Authorization | Bearer {token}. Required. |
+| Header       | Value |
+|:---------------|:--------|
+| Authorization  | Bearer {token}. Required.  |
 
 ## Request body
 
 Do not supply a request body for this method.
 
-> **Note:** You can filter on any of the fields of the [teamsCatalogApp](../resources/teamsapp.md) object to shorten the list of results. You can use any of the following filter operations: Equal, not-equal, and, or, and not.
-
 ## Response
 
-If successful, this method returns a `200 OK` response code and a list of [teamsCatalogApp](../resources/teamsapp.md) objects in the response body.
+If successful, this method returns a `200 OK` response code and collection of [teamsAppInstallation](../resources/teamsappinstallation.md) objects in the response body.
 
 ## Examples
 
-### Example 1: List all applications
-
-The following example lists all applications that are specific to your tenant.
+### Example 1: List installed apps
 
 #### Request
 
+The following is an example of the request.
+
+# [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
-  "name": "teamsapp-list"
+  "name": "get_installed_teams_apps"
 }-->
-
-```http
-GET https://graph.microsoft.com/beta/appCatalogs/teamsApps?$filter=distributionMethod eq 'organization'
+```msgraph-interactive
+GET https://graph.microsoft.com/beta/teams/{id}/installedApps
 ```
 
-<!-- markdownlint-disable MD024 -->
+# [C#](#tab/csharp)
+[!INCLUDE [sample-code](../includes/snippets/csharp/get-installed-teams-apps-csharp-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [JavaScript](#tab/javascript)
+[!INCLUDE [sample-code](../includes/snippets/javascript/get-installed-teams-apps-javascript-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Objective-C](#tab/objc)
+[!INCLUDE [sample-code](../includes/snippets/objc/get-installed-teams-apps-objc-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+---
 
 #### Response
 
+The following is an example of the response.
+>**Note:** The response object shown here might be shortened for readability. All the properties will be returned from an actual call.
 <!-- {
   "blockType": "response",
-  "truncated": true
+  "name": "get_installed_teams_apps",
+  "truncated": true,
+  "@odata.type": "microsoft.graph.teamsAppInstallation",
+  "isCollection": true
 } -->
 
 ```http
 HTTP/1.1 200 OK
-Content-Type: application/json
+Content-type: application/json
 
 {
   "value": [
     {
-      "id": "b1c5353a-7aca-41b3-830f-27d5218fe0e5",
-      "externalId": "f31b1263-ba99-435a-a679-911d24850d7c",
-      "name": "Test App",
-      "version": "1.0.1",
-      "resourceType": "Application",
-      "distributionMethod": "Organization"
+      "id": "id-value"
     }
   ]
 }
 ```
 
-### Example 2: List applications with a given ID
-
-The following example lists applications with a given ID.
+### Example 2: Get the names and other details of installed apps
 
 #### Request
 
+The following is an example of the request.
+
+# [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
-  "name": "teamsapp-list"
+  "name": "get_installed_teams_apps_expand"
 }-->
 
-```http
-GET https://graph.microsoft.com/beta/appCatalogs/teamsApps?$filter=id%20eq%20'b1c5353a-7aca-41b3-830f-27d5218fe0e5'
+```msgraph-interactive
+GET https://graph.microsoft.com/beta/teams/{id}/installedApps?$expand=teamsAppDefinition
 ```
+# [C#](#tab/csharp)
+[!INCLUDE [sample-code](../includes/snippets/csharp/get-installed-teams-apps-expand-csharp-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [JavaScript](#tab/javascript)
+[!INCLUDE [sample-code](../includes/snippets/javascript/get-installed-teams-apps-expand-javascript-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Objective-C](#tab/objc)
+[!INCLUDE [sample-code](../includes/snippets/objc/get-installed-teams-apps-expand-objc-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+---
+
 
 #### Response
 
+The following is an example of the response.
+
+>**Note:** The response object shown here might be shortened for readability. All the properties will be returned from an actual call.
 <!-- {
   "blockType": "response",
-  "truncated": true
+  "name": "get_installed_teams_apps_expand",
+  "truncated": true,
+  "@odata.type": "microsoft.graph.teamsAppInstallation",
+  "isCollection": true
 } -->
 
 ```http
 HTTP/1.1 200 OK
-Content-Type: application/json
+Content-type: application/json
 
 {
-  "value": [
-    {
-      "id": "b1c5353a-7aca-41b3-830f-27d5218fe0e5",
-      "externalId": "f31b1263-ba99-435a-a679-911d24850d7c",
-      "name": "Test App",
-      "version": "1.0.1",
-      "resourceType": "Application",
-      "distributionMethod": "Organization"
-    }
+    "value": [
+        {
+            "id": "NjRiOWM3NDYtYjE1NS00MDQyLThkNDctOTQxYmQzODE2ODFiIyMwZDgyMGVjZC1kZWYyLTQyOTctYWRhZC03ODA1NmNkZTdjNzg=",
+            "teamsAppDefinition": {
+                "id": "MGQ4MjBlY2QtZGVmMi00Mjk3LWFkYWQtNzgwNTZjZGU3Yzc4IyMxLjAuMA==",
+                "teamsAppId": "0d820ecd-def2-4297-adad-78056cde7c78",
+                "displayName": "OneNote",
+                "version": "1.0.0"
+            }
+        },
+        {
+            "id": "NjRiOWM3NDYtYjE1NS00MDQyLThkNDctOTQxYmQzODE2ODFiIyMwZmQ5MjVhMC0zNTdmLTRkMjUtODQ1Ni1iMzAyMmFhYTQxYTk=",
+            "teamsAppDefinition": {
+                "id": "MGZkOTI1YTAtMzU3Zi00ZDI1LTg0NTYtYjMwMjJhYWE0MWE5IyMxLjc=",
+                "teamsAppId": "0fd925a0-357f-4d25-8456-b3022aaa41a9",
+                "displayName": "SurveyMonkey",
+                "version": "1.7"
+            }
+        },
+        {
+            "id": "NjRiOWM3NDYtYjE1NS00MDQyLThkNDctOTQxYmQzODE2ODFiIyMyYTUyNzcwMy0xZjZmLTQ1NTktYTMzMi1kOGE3ZDI4OGNkODg=",
+            "teamsAppDefinition": {
+                "id": "MmE1Mjc3MDMtMWY2Zi00NTU5LWEzMzItZDhhN2QyODhjZDg4IyMxLjA=",
+                "teamsAppId": "2a527703-1f6f-4559-a332-d8a7d288cd88",
+                "displayName": "SharePoint",
+                "version": "1.0"
+            }
+        }
   ]
 }
 ```
 
-<!-- uuid: 16cd6b66-4b1a-43a1-adaf-3a886856ed98
-2019-02-04 14:57:30 UTC -->
-<!-- {
+<!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
+2015-10-25 14:57:30 UTC -->
+<!--
+{
   "type": "#page.annotation",
-  "description": "",
+  "description": "List owners",
   "keywords": "",
   "section": "documentation",
-  "tocPath": ""
-}-->
+  "tocPath": "",
+  "suppressions": [
+  ]
+}
+-->
