@@ -77,14 +77,9 @@ GET https://graph.microsoft.com/beta/appCatalogs/teamsApps?$filter=distributionM
 
 <!-- {
   "blockType": "response",
-<<<<<<< HEAD
-  "name": "list_teamsapp",
-  "truncated": true
-=======
   "@odata.type": "microsoft.graph.teamsApp",
   "truncated": true,
   "isCollection": true
->>>>>>> la-resolve-app-staging
 } -->
 
 ```http
