@@ -17,12 +17,13 @@ the created resource will have `distributionMethod` = `organization`.
 
 ## Permissions
 
-One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
+One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](https://developer.microsoft.com/graph/docs/concepts/permissions_reference).
+
+>**Note:** Only global administrators can call this API.
 
 | Permission Type                        | Permissions (from least to most privileged)|
 |:----------------------------------     |:-------------|
 | Delegated (work or school account)     | AppCatalog.ReadWrite.All, Directory.ReadWrite.All |
-| Delegated (work or school account) | AppCatalog.Submit|
 | Delegated (personal Microsoft account) | Not supported|
 | Application                            | Not supported. |
 
@@ -32,47 +33,26 @@ One of the following permissions is required to call this API. To learn more, in
 POST /appCatalogs/teamsApps
 ```
 
-Use the following syntax to add an app that requires a review:
-
-```http
-POST /appCatalogs/teamsApps?requiresReview:{Boolean}
-```
-
-> [!NOTE]
-> This API consumes a Teams app package zip file as the request body and uploads a new Teams app to the organization's app catalog.
-
-## Query parameters
-
-|Property|Type|Description|
-|----|----|----|
-|requiresReview| Boolean | This optional query parameter triggers the app review process. Users with admin privileges can submit apps without triggering a review. If users want to request a review before publishing, they must set  `requiresReview` to `true` . A user *with* admin privileges can opt not to set `requiresReview` or set the value to `false`  and the app will be considered approved and will publish instantly.|
-
 ## Request headers
 
 | Header        | Value           |
 |:--------------|:--------------  |
 | Authorization | Bearer {token}. Required.  |
-| Content-Type  | application/zip. Required. |
+| Content-Type  | application/zip |
 
 ## Request body
 
-In the request body, include a Teams zip manifest payload. For details, see [Create an app package](/microsoftteams/platform/concepts/apps/apps-package).  
-&#119821;&#119822;&#119827;&#119812;: Each app in the app catalog must have a unique manifest `id`.
+Teams Zip Manifest Payload.
+For Teams application zip file [see Create an app package](/microsoftteams/platform/concepts/apps/apps-package).
+You can't create an app for an organization that has the same manifest ID as another app in that organization.
 
 ## Response
 
 If successful, this method returns a `200 OK` response code and a [teamsCatalogApp](../resources/teamsapp.md) object.
 
-## Examples
+## Example
 
-### Example 1: Publish an app to an organization's app catalog 
-
-#### Request
-
-<!-- {
-  "blockType": "request",
-  "name": "create_teamsapp"
-}-->
+### Request
 
 ```http
 POST https://graph.microsoft.com/v1.0/appCatalogs/teamsApps
@@ -82,9 +62,9 @@ Content-length: 244
 [Zip file containing a Teams app package]
 ```
 
-<!-- markdownlint-disable MD024 -->
+For information about how to create a Microsoft Teams application zip file, see [Create an app package](/microsoftteams/platform/concepts/apps/apps-package).
 
-#### Response
+### Response
 
 <!-- {
   "blockType": "response",
@@ -93,48 +73,10 @@ Content-length: 244
 } -->
 
 ```http
-
 HTTP/1.1 201 Created
 Content-Type: application/json
 
 {
-  "id": "e3e29acb-8c79-412b-b746-e6c39ff4cd22",
-  "externalId": "b5561ec9-8cab-4aa3-8aa2-d8d7172e4311",
-  "name": "Test App",
-  "version": "1.0.0",
-  "distributionMethod": "organization"
-}
-```
-
-### Example 2: Upload a new application for review to an organization's app catalog
-
-#### Request
-
-<!-- {
-  "blockType": "request",
-  "name": "create_teamsapp"
-}-->
-
-```http
-POST https://graph.microsoft.com/beta/appCatalogs/teamsApps?requiresReview=true
-Content-type: application/zip
-Content-length: 244
-```
-
-#### Response
-
-<!-- {
-  "blockType": "response",
-  "@odata.type": "microsoft.graph.teamsApp",
-  "truncated": true
-} -->
-
-```http
-HTTP/1.1 201 Created
-Location: https://graph.microsoft.com/beta/appCatalogs/teamsApps/e3e29acb-8c79-412b-b746-e6c39ff4cd22
-
-{
-  "@odata.context": "https://graph.microsoft.com/beta/$metadata#appCatalogs/teamsApps/$entity",
   "id": "e3e29acb-8c79-412b-b746-e6c39ff4cd22",
   "externalId": "b5561ec9-8cab-4aa3-8aa2-d8d7172e4311",
   "name": "Test App",
