@@ -36,7 +36,7 @@ GET /appCatalogs/teamsApps
 
 ## Optional query parameters
 
-This method supports the $filter, $select, and $expand [OData query parameters](/graph/query-parameters) to help customize the response.
+This method supports the `$filter`, `$select`, and `$expand` [OData query parameters](/graph/query-parameters) to help customize the response.
 
 ## Request headers
 
@@ -62,6 +62,11 @@ The following example lists all applications that are specific to your tenant.
 
 #### Request
 
+<!-- {
+  "blockType": "request",
+  "name": "list_teamsapp"
+}-->
+
 ```http
 GET https://graph.microsoft.com/beta/appCatalogs/teamsApps?$filter=distributionMethod eq 'organization'
 ```
@@ -69,6 +74,13 @@ GET https://graph.microsoft.com/beta/appCatalogs/teamsApps?$filter=distributionM
 <!-- markdownlint-disable MD024 -->
 
 #### Response
+
+<!-- {
+  "blockType": "response",
+  "@odata.type": "microsoft.graph.teamsApp",
+  "truncated": true,
+  "isCollection": true
+} -->
 
 ```http
 HTTP/1.1 200 OK
@@ -93,11 +105,23 @@ The following example lists applications with a given ID.
 
 #### Request
 
+<!-- {
+  "blockType": "request",
+  "name": "list_teamsapp"
+}-->
+
 ```http
 GET https://graph.microsoft.com/beta/appCatalogs/teamsApps?$filter=id%20eq%20'b1c5353a-7aca-41b3-830f-27d5218fe0e5'
 ```
 
 #### Response
+
+<!-- {
+  "blockType": "response",
+  "@odata.type": "microsoft.graph.teamsApp",
+  "truncated": true,
+  "isCollection": true
+} -->
 
 ```http
 HTTP/1.1 200 OK
