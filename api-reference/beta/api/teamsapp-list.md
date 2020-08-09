@@ -4,7 +4,7 @@ description: "List apps from the Microsoft Teams app catalog. "
 author: "nkramer"
 localization_priority: Normal
 ms.prod: "microsoft-teams"
-doc_type: apiPageType
+doc_type: apiPageType 
 ---
 
 # List teamsApp
