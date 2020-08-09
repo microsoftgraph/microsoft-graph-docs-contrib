@@ -50,6 +50,7 @@ If successful, this method returns a `200 OK` response code and an [personCertif
 
 ## Examples
 
+### Request
 # [HTTP](#tab/http)
 <!-- {
   "blockType": "request",

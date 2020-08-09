@@ -59,7 +59,7 @@ The following is an example of the request.
 }-->
 
 ```http
-DELETE https://graph.microsoft.com/beta/user/profile/accounts/{id}
+DELETE https://graph.microsoft.com/beta/me/profile/accounts/{id}
 ```
 
 ### Response

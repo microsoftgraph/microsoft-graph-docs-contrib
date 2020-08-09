@@ -25,8 +25,7 @@ One of the following permissions is required to call this API. To learn more, in
 | Delegated (personal Microsoft account) | User.ReadWrite, User.ReadWrite.All          |
 | Application                            | User.ReadWrite.All                          |
 
-# [HTTP](#tab/http)
-
+## HTTP request
 <!-- {
   "blockType": "ignored"
 }
@@ -35,19 +34,6 @@ One of the following permissions is required to call this API. To learn more, in
 DELETE /me/profile/phones/{itemPhoneId}
 DELETE /user/{userId}/profile/phones/{itemPhoneId}
 ```
-# [C#](#tab/csharp)
-[!INCLUDE [sample-code](../includes/snippets/csharp/update-personname-csharp-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [JavaScript](#tab/javascript)
-[!INCLUDE [sample-code](../includes/snippets/javascript/update-personname-javascript-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [Objective-C](#tab/objc)
-[!INCLUDE [sample-code](../includes/snippets/objc/update-personname-objc-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
----
 
 ## Request headers
 
@@ -79,7 +65,6 @@ DELETE https://graph.microsoft.com/beta/user/{userId}/profile/phones/{itemPhoneI
 
 ### Response
 
-**Note:** The response object shown here might be shortened for readability.
 <!-- {
   "blockType": "response",
   "truncated": true

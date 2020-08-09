@@ -50,9 +50,9 @@ In the request body, supply the values for relevant fields that should be update
 |:---|:---|:---|
 |allowedAudiences|String|The audiences that are able to see the values contained within the entity. Inherited from [itemFacet](../resources/itemfacet.md). Possible values are: `me`, `family`, `contacts`, `groupMembers`, `organization`, `federatedOrganizations`, `everyone`, `unknownFutureValue`.|
 |description|String|Contains the description the user has provided for the account on the service being referenced.|
-|inference|[inferenceData](../resources/inferencedata.md)|Contains inference detail if the entity is inferred by the creating or modifying application. Inherited from [itemFacet](../resources/itemfacet.md)|
+|inference|[inferenceData](../resources/inferencedata.md)|Contains inference detail if the entity is inferred by the creating or modifying application. Inherited from [itemFacet](../resources/itemfacet.md).|
 |service|[serviceInformation](../resources/serviceinformation.md)| Contains basic detail about the service that is being associated. |
-|source|[personDataSource](../resources/persondatasource.md)|Where the values originated if synced from another service. Inherited from [itemFacet](../resources/itemfacet.md)|
+|source|[personDataSource](../resources/persondatasource.md)|Where the values originated if synced from another service. Inherited from [itemFacet](../resources/itemfacet.md).|
 |statusMessage|String|Contains a status message from the cloud service if provided or synchronized. |
 |userId|String|The user name  displayed for the webaccount.  |
 |webUrl|String|Contains a link to the user's profile on the cloud service if one exists.|

@@ -62,6 +62,7 @@ If successful, this method returns a `200 OK` response code and the requested [p
 
 ## Examples
 
+### Request
 # [HTTP](#tab/http)
 
 The following is an example of the request.
@@ -71,7 +72,7 @@ The following is an example of the request.
 }-->
 
 ```http
-GET https://graph.microsoft.com/beta/user/profile/interests/{id}
+GET https://graph.microsoft.com/beta/me/profile/interests/{id}
 ```
 # [C#](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/update-personname-csharp-snippets.md)]

@@ -29,7 +29,7 @@ One of the following permissions is required to call this API. To learn more, in
 }
 -->
 ``` http
-PATCH /me/profile/interests/{id}
+PATCH /me/profile/notes/{id}
 PATCH /users/{id | userPrincipalName}/profile/notes/{id}
 ```
 
@@ -50,8 +50,8 @@ The following table shows the properties that are possible to update within an e
 |allowedAudiences|String|The audiences that are able to see the values contained within the entity. Inherited from [itemFacet](../resources/itemfacet.md). Possible values are: `me`, `family`, `contacts`, `groupMembers`, `organization`, `federatedOrganizations`, `everyone`, `unknownFutureValue`.|
 |detail|[itemBody](../resources/itembody.md)|Contains the detail of the note itself.|
 |displayName|String|Contains a friendly name for the note.|
-|inference|[inferenceData](../resources/inferencedata.md)|Contains inference detail if the entity is inferred by the creating or modifying application. Inherited from [itemFacet](../resources/itemfacet.md)|
-|source|[personDataSource](../resources/persondatasource.md)|Where the values originated if synced from another service. Inherited from [itemFacet](../resources/itemfacet.md)|
+|inference|[inferenceData](../resources/inferencedata.md)|Contains inference detail if the entity is inferred by the creating or modifying application. Inherited from [itemFacet](../resources/itemfacet.md).|
+|source|[personDataSource](../resources/persondatasource.md)|Where the values originated if synced from another service. Inherited from [itemFacet](../resources/itemfacet.md).|
 
 ## Response
 
@@ -59,6 +59,7 @@ If successful, this method returns a `200 OK` response code and an updated [pers
 
 ## Examples
 
+### Request
 # [HTTP](#tab/http)
 <!-- {
   "blockType": "request",

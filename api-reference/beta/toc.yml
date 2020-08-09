@@ -10655,8 +10655,9 @@ items:
         - name: Delete user's profile
           href: api/profile-delete.md
         - name: Account information
-          href: resources/useraccountinformation.md
           items:
+          - name: userAccountInformation
+            href: resources/useraccountinformation.md
           - name: List
             href: api/profile-list-accounts.md
           - name: Create
@@ -10668,8 +10669,9 @@ items:
           - name: Delete
             href: api/useraccountinformation-delete.md  
         - name: Addresses
-          href: resources/itemaddress.md
           items:
+          - name: itemAddress
+            href: resources/itemaddress.md
           - name: List
             href: api/profile-list-addresses.md
           - name: Create
@@ -10681,8 +10683,9 @@ items:
           - name: Delete
             href: api/itemaddress-delete.md
         - name: Anniversary
-          href: resources/personanniversary.md
           items:
+          - name: personAnniversary
+            href: resources/personanniversary.md
           - name: List
             href: api/profile-list-anniversaries.md
           - name: Create
@@ -10694,8 +10697,9 @@ items:
           - name: Delete
             href: api/personanniversary-delete.md
         - name: Awards
-          href: resources/personaward.md
           items:
+          - name: personAward
+            href: resources/personaward.md
           - name: List
             href: api/profile-list-awards.md
           - name: Create
@@ -10707,8 +10711,9 @@ items:
           - name: Delete
             href: api/personaward-delete.md
         - name: Certifications
-          href: resources/personcertification.md
           items:
+          - name: personCertification
+            href: resources/personcertification.md
           - name: List
             href: api/profile-list-certifications.md
           - name: Create
@@ -10720,8 +10725,9 @@ items:
           - name: Delete
             href: api/personcertification-delete.md
         - name: Educational activity
-          href: resources/educationalactivity.md
           items:
+          - name: educationalActivity
+            href: resources/educationalactivity.md
           - name: List
             href: api/profile-list-educationalactivities.md
           - name: Create
@@ -10733,8 +10739,9 @@ items:
           - name: Delete
             href: api/educationalactivity-delete.md
         - name: Email address
-          href: resources/itememail.md
           items:
+          - name: itemEmail
+            href: resources/itememail.md
           - name: List
             href: api/profile-list-emails.md
           - name: Create
@@ -10746,8 +10753,9 @@ items:
           - name: Delete
             href: api/itememail-delete.md
         - name: Interests
-          href: resources/personinterest.md
           items:
+          - name: personInterest
+            href: resources/personinterest.md
           - name: List
             href: api/profile-list-interests.md
           - name: Create
@@ -10759,8 +10767,9 @@ items:
           - name: Delete
             href: api/personinterest-delete.md
         - name: Languages
-          href: resources/languageproficiency.md
           items:
+          - name: languageProficiency
+            href: resources/languageproficiency.md
           - name: List
             href: api/profile-list-languages.md
           - name: Create
@@ -10772,8 +10781,9 @@ items:
           - name: Delete
             href: api/languageproficiency-delete.md
         - name: Names
-          href: resources/personname.md
           items:
+          - name: personName
+            href: resources/personname.md
           - name: List
             href: api/profile-list-names.md
           - name: Create
@@ -10785,8 +10795,9 @@ items:
           - name: Delete
             href: api/personname-delete.md
         - name: Notes
-          href: resources/personannotation.md
           items:
+          - name: personAnnotation
+            href: resources/personannotation.md
           - name: List
             href: api/profile-list-notes.md
           - name: Create
@@ -10798,8 +10809,9 @@ items:
           - name: Delete
             href: api/personannotation-delete.md
         - name: Patents
-          href: resources/itempatent.md
           items:
+          - name: itemPatent
+            href: resources/itempatent.md
           - name: List
             href: api/profile-list-patents.md
           - name: Create
@@ -10811,8 +10823,9 @@ items:
           - name: Delete
             href: api/itempatent-delete.md
         - name: Phones
-          href: resources/itemphone.md
           items:
+          - name: itemPhone
+            href: resources/itemphone.md
           - name: List
             href: api/profile-list-phones.md
           - name: Create
@@ -10824,8 +10837,9 @@ items:
           - name: Delete
             href: api/itemphone-delete.md
         - name: Positions
-          href: resources/workposition.md
           items:
+          - name: workPosition
+            href: resources/workposition.md
           - name: List
             href: api/profile-list-positions.md
           - name: Create
@@ -10837,8 +10851,9 @@ items:
           - name: Delete
             href: api/workposition-delete.md
         - name: Projects
-          href: resources/projectparticipation.md
           items:
+          - name: projectParticipation
+            href: resources/projectparticipation.md
           - name: List
             href: api/profile-list-projects.md
           - name: Create
@@ -10850,8 +10865,9 @@ items:
           - name: Delete
             href: api/projectparticipation-delete.md
         - name: Publications
-          href: resources/itempublication.md
           items:
+          - name: itemPublication
+            href: resources/itempublication.md
           - name: List
             href: api/profile-list-publications.md
           - name: Create
@@ -10863,8 +10879,9 @@ items:
           - name: Delete
             href: api/itempublication-delete.md
         - name: Responsibilities
-          href: resources/personresponsibility.md
           items:
+          - name: personResponsibility
+            href: resources/personresponsibility.md
           - name: List
             href: api/profile-list-responsibilities.md
           - name: Create
@@ -10876,8 +10893,9 @@ items:
           - name: Delete
             href: api/personresponsibility-delete.md
         - name: Skills
-          href: resources/skillproficiency.md
           items:
+          - name: skillProficiency
+            href: resources/skillproficiency.md
           - name: List
             href: api/profile-list-skills.md
           - name: Create
@@ -10889,8 +10907,9 @@ items:
           - name: Delete
             href: api/skillproficiency-delete.md
         - name: Web accounts
-          href: resources/webaccount.md
           items:
+          - name: webAccount
+            href: resources/webaccount.md
           - name: List
             href: api/profile-list-webaccounts.md
           - name: Create
@@ -10902,8 +10921,9 @@ items:
           - name: Delete
             href: api/webaccount-delete.md
         - name: Websites
-          href: resources/personwebsite.md
           items:
+          - name: personWebsite
+            href: resources/personwebsite.md
           - name: List
             href: api/profile-list-websites.md
           - name: Create

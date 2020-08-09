@@ -49,8 +49,8 @@ In the request body, supply the values for relevant fields that should be update
 |detail|[physicalAddress](../resources/physicaladdress.md)|Details about the address itself.|
 |displayName|String|Friendly name the user has assigned to this address. |
 |geoCoordinates|[geoCoordinates](../resources/geocoordinates.md)|The geocoordinates of the address.|
-|inference|[inferenceData](../resources/inferencedata.md)|Contains inference detail if the entity is inferred by the creating or modifying application. Inherited from [itemFacet](../resources/itemfacet.md)|
-|source|[personDataSource](../resources/persondatasource.md)|Where the values originated if synced from another service. Inherited from [itemFacet](../resources/itemfacet.md)|
+|inference|[inferenceData](../resources/inferencedata.md)|Contains inference detail if the entity is inferred by the creating or modifying application. Inherited from [itemFacet](../resources/itemfacet.md).|
+|source|[personDataSource](../resources/persondatasource.md)|Where the values originated if synced from another service. Inherited from [itemFacet](../resources/itemfacet.md).|
 
 ## Response
 
@@ -58,6 +58,7 @@ If successful, this method returns a `200 OK` response code and an updated [item
 
 ## Examples
 
+### Request
 # [HTTP](#tab/http)
 <!-- {
   "blockType": "request",

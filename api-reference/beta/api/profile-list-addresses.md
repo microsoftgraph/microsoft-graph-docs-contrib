@@ -10,7 +10,7 @@ doc_type: apiPageType
 # List addresses
 Namespace: microsoft.graph
 
-Get the itemAddresses from the addresses navigation property.
+Get the [itemAddress](../resources/itemaddress.md) resources from the **addresses** navigation property.
 
 ## Permissions
 

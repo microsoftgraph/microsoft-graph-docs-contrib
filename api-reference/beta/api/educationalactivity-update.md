@@ -50,10 +50,10 @@ In the request body, supply the values for relevant fields that should be update
 |allowedAudiences|String|The audiences that are able to see the values contained within the entity. Inherited from [itemFacet](../resources/itemfacet.md). Possible values are: `me`, `family`, `contacts`, `groupMembers`, `organization`, `federatedOrganizations`, `everyone`, `unknownFutureValue`.|
 |completionMonthYear|Date|The month and year the user graduated or completed the activity. |
 |endMonthYear|Date|The month and year the user completed the educational activity referenced.|
-|inference|[inferenceData](../resources/inferencedata.md)|Contains inference detail if the entity is inferred by the creating or modifying application. Inherited from [itemFacet](../resources/itemfacet.md)|
+|inference|[inferenceData](../resources/inferencedata.md)|Contains inference detail if the entity is inferred by the creating or modifying application. Inherited from [itemFacet](../resources/itemfacet.md).|
 |institution|[institutionData](../resources/institutiondata.md)|Contains details of the institution studied at. |
 |program|[educationalActivityDetail](../resources/educationalactivitydetail.md)|Contains extended information about the program or course.|
-|source|[personDataSource](../resources/persondatasource.md)|Where the values originated if synced from another service. Inherited from [itemFacet](../resources/itemfacet.md)|
+|source|[personDataSource](../resources/persondatasource.md)|Where the values originated if synced from another service. Inherited from [itemFacet](../resources/itemfacet.md).|
 |startMonthYear|Date|The month and year the user commenced the activity referenced.|
 
 ## Response

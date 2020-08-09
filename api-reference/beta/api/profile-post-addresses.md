@@ -10,7 +10,7 @@ doc_type: apiPageType
 # Create addresses
 Namespace: microsoft.graph
 
-Create a new addresses object.
+Create a new [itemAddress](../resources/itemaddress.md) object.
 
 ## Permissions
 
@@ -49,8 +49,8 @@ The following table shows the properties that are possible to set when creating 
 |detail|[physicalAddress](../resources/physicaladdress.md)|Details about the address itself.|
 |displayName|String|Friendly name the user has assigned to this address. |
 |geoCoordinates|[geoCoordinates](../resources/geocoordinates.md)|The geocoordinates of the address.|
-|inference|[inferenceData](../resources/inferencedata.md)|Contains inference detail if the entity is inferred by the creating or modifying application. Inherited from [itemFacet](../resources/itemfacet.md)|
-|source|[personDataSource](../resources/persondatasource.md)|Where the values originated if synced from another service. Inherited from [itemFacet](../resources/itemfacet.md)|
+|inference|[inferenceData](../resources/inferencedata.md)|Contains inference detail if the entity is inferred by the creating or modifying application. Inherited from [itemFacet](../resources/itemfacet.md).|
+|source|[personDataSource](../resources/persondatasource.md)|Where the values originated if synced from another service. Inherited from [itemFacet](../resources/itemfacet.md).|
 ## Response
 
 If successful, this method returns a `201 Created` response code and an [itemAddress](../resources/itemaddress.md) object in the response body.

@@ -7,7 +7,7 @@ ms.prod: "people"
 doc_type: apiPageType
 ---
 
-# Create certifications
+# Create personCertification
 Namespace: microsoft.graph
 
 Create a new [personCertification](../resources/personcertification.md) object in a user's [profile](../resources/profile.md).
@@ -50,14 +50,14 @@ The following table shows the properties that are possible to set when creating 
 |description      |String      |Description of the certification.                   |
 |displayName      |String      |Title of the certification.                         |
 |endDate          |Date        |The date that the certification expires.            |
-|inference|[inferenceData](../resources/inferencedata.md)|Contains inference detail if the entity is inferred by the creating or modifying application. Inherited from [itemFacet](../resources/itemfacet.md)|
+|inference|[inferenceData](../resources/inferencedata.md)|Contains inference detail if the entity is inferred by the creating or modifying application. Inherited from [itemFacet](../resources/itemfacet.md).|
 |issuedDate       |Date        |The date that the certification was issued.         |
 |issuingAuthority |String      |Authority which granted the certification.          |
 |issuingCompany   |String      |Authority which granted the certification.          |
-|source|[personDataSource](../resources/persondatasource.md)|Where the values originated if synced from another service. Inherited from [itemFacet](../resources/itemfacet.md)|
+|source|[personDataSource](../resources/persondatasource.md)|Where the values originated if synced from another service. Inherited from [itemFacet](../resources/itemfacet.md).|
 |startDate        |Date        |The date that the certification became valid.       |
-|thumbnailUrl     |String      |Url referencing a thumbnail of the certification.   |
-|webUrl           |String      |Url referencing the certification.                  |
+|thumbnailUrl     |String      |URL referencing a thumbnail of the certification.   |
+|webUrl           |String      |URL referencing the certification.                  |
 
 ## Response
 

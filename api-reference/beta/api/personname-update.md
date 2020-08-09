@@ -52,7 +52,7 @@ The following table shows the properties that are possible to update within an e
 |allowedAudiences|String|The audiences that are able to see the values contained within the entity. Inherited from [itemFacet](../resources/itemfacet.md). Possible values are: `me`, `family`, `contacts`, `groupMembers`, `organization`, `federatedOrganizations`, `everyone`, `unknownFutureValue`.|
 |displayName|String|Provides an ordered rendering of firstName and lastName depending on the locale of the user or their device.|
 |first|String|First name of the user.|
-|inference|[inferenceData](../resources/inferencedata.md)|Contains inference detail if the entity is inferred by the creating or modifying application. Inherited from [itemFacet](../resources/itemfacet.md)|
+|inference|[inferenceData](../resources/inferencedata.md)|Contains inference detail if the entity is inferred by the creating or modifying application. Inherited from [itemFacet](../resources/itemfacet.md).|
 |initials|String|Initials of the user.|
 |languageTag|String|Contains the name for the language (en-US, no-NB, en-AU) following IETF BCP47 format.   |
 |last|String|Last name of the user.|
@@ -60,7 +60,7 @@ The following table shows the properties that are possible to update within an e
 |middle|String|Middle name of the user.|
 |nickname|String|Nickname of the user.|
 |pronunciation|[yomiPersonName](../resources/yomipersonname.md)|Guidance on how to pronounce the users name.|
-|source|[personDataSource](../resources/persondatasource.md)|Where the values originated if synced from another service. Inherited from [itemFacet](../resources/itemfacet.md)|
+|source|[personDataSource](../resources/persondatasource.md)|Where the values originated if synced from another service. Inherited from [itemFacet](../resources/itemfacet.md).|
 |suffix|String|Designators used after the users name (eg: PhD.)  |
 |title|String|Honorifics used to prefix a users name (eg: Dr, Sir, Madam, Mrs.)|
 

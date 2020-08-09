@@ -50,14 +50,16 @@ If successful, this method returns a `200 OK` response code and a [personRespons
 
 ## Examples
 
+### Request
 # [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
+  "sampleKeys": ["0fb4c1e3-c1e3-0fb4-e3c1-b40fe3c1b40f"],
   "name": "get_personresponsibility"
 }
 -->
 ``` http
-GET https://graph.microsoft.com/beta/personResponsibility
+GET https://graph.microsoft.com/beta/me/profile/responsibilities/0fb4c1e3-c1e3-0fb4-e3c1-b40fe3c1b40f
 ```
 # [C#](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/get-interests-csharp-snippets.md)]
@@ -86,28 +88,33 @@ HTTP/1.1 200 OK
 Content-Type: application/json
 
 {
-  "@odata.type": "#microsoft.graph.personResponsibility",
-  "id": "String (identifier)",
-  "allowedAudiences": "String",
-  "inference": {
-    "@odata.type": "microsoft.graph.inferenceData"
-  },
-  "createdDateTime": "String (timestamp)",
+  "id": "0fb4c1e3-c1e3-0fb4-e3c1-b40fe3c1b40f",
+  "allowedAudiences": "organization",
+  "inference": null,
+  "createdDateTime": "2020-07-06T06:34:12.2294868Z",
   "createdBy": {
-    "@odata.type": "microsoft.graph.identitySet"
+    "application": null,
+    "device": null,
+    "user": {
+      "displayName": "Innocenty Popov",
+      "id": "db789417-4ccb-41d1-a0a9-47b01a09ea49"
+    }
   },
-  "lastModifiedDateTime": "String (timestamp)",
+  "lastModifiedDateTime": "2020-07-06T06:34:12.2294868Z",
   "lastModifiedBy": {
-    "@odata.type": "microsoft.graph.identitySet"
+    "application": null,
+    "device": null,
+    "user": {
+      "displayName": "Innocenty Popov",
+      "id": "db789417-4ccb-41d1-a0a9-47b01a09ea49"
+    }
   },
-  "source": {
-    "@odata.type": "microsoft.graph.personDataSource"
-  },
-  "description": "String",
-  "displayName": "String",
-  "webUrl": "String",
+  "source": null,
+  "description": "Member of the Microsoft API Council",
+  "displayName": "API Council",
+  "webUrl": null,
   "collaborationTags": [
-    "String"
+    "askMeAbout"
   ]
 }
 ```

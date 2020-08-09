@@ -52,7 +52,7 @@ The following table shows the properties that are possible to set when you creat
 |displayName|String|Provides an ordered rendering of firstName and lastName depending on the locale of the user or their device.|
 |first|String|First name of the user.|
 |id|String|Identifier used for individually addressing the entity. Inherited from [entity](../resources/entity.md)|
-|inference|[inferenceData](../resources/inferencedata.md)|Contains inference detail if the entity is inferred by the creating or modifying application. Inherited from [itemFacet](../resources/itemfacet.md)|
+|inference|[inferenceData](../resources/inferencedata.md)|Contains inference detail if the entity is inferred by the creating or modifying application. Inherited from [itemFacet](../resources/itemfacet.md).|
 |initials|String|Initials of the user.|
 |languageTag|String|Contains the name for the language (en-US, no-NB, en-AU) following IETF BCP47 format.   |
 |last|String|Last name of the user.|

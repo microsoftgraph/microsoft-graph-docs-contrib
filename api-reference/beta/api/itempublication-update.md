@@ -49,12 +49,12 @@ In the request body, supply the values for relevant fields that should be update
 |allowedAudiences|String|The audiences that are able to see the values contained within the entity. Inherited from [itemFacet](../resources/itemfacet.md). Possible values are: `me`, `family`, `contacts`, `groupMembers`, `organization`, `federatedOrganizations`, `everyone`, `unknownFutureValue`.|
 |description    |String      |Description of the publication.                   |
 |displayName    |String      |Title of the publication.                         |
-|inference|[inferenceData](../resources/inferencedata.md)|Contains inference detail if the entity is inferred by the creating or modifying application. Inherited from [itemFacet](../resources/itemfacet.md)|
+|inference|[inferenceData](../resources/inferencedata.md)|Contains inference detail if the entity is inferred by the creating or modifying application. Inherited from [itemFacet](../resources/itemfacet.md).|
 |publishedDate  |Date        |The date that the publication was published.      |
 |publisher      |String      |Publication or Publisher for the publication.     |
-|source|[personDataSource](../resources/persondatasource.md)|Where the values originated if synced from another service. Inherited from [itemFacet](../resources/itemfacet.md)|
-|thumbnailUrl   |String      |Url referencing a thumbnail of the publication.   |
-|webUrl         |String      |Url referencing the publication.                  |
+|source|[personDataSource](../resources/persondatasource.md)|Where the values originated if synced from another service. Inherited from [itemFacet](../resources/itemfacet.md).|
+|thumbnailUrl   |String      |URL referencing a thumbnail of the publication.   |
+|webUrl         |String      |URL referencing the publication.                  |
 
 ## Response
 
@@ -62,6 +62,7 @@ If successful, this method returns a `200 OK` response code and an updated [item
 
 ## Examples
 
+### Request
 # [HTTP](#tab/http)
 <!-- {
   "blockType": "request",

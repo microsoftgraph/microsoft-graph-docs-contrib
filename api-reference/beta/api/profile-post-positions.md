@@ -53,10 +53,10 @@ The following table shows the properties that are possible to set when you creat
 |categories|String collection|Categories that the user has associated with this position.|
 |colleagues|[relatedPerson](../resources/relatedperson.md) collection|Colleagues that are associated with this position.|
 |detail|[positionDetail](../resources/positiondetail.md)|Contains detailed information about the position. |
-|inference|[inferenceData](../resources/inferencedata.md)|Contains inference detail if the entity is inferred by the creating or modifying application. Inherited from [itemFacet](../resources/itemfacet.md)|
+|inference|[inferenceData](../resources/inferencedata.md)|Contains inference detail if the entity is inferred by the creating or modifying application. Inherited from [itemFacet](../resources/itemfacet.md).|
 |isCurrent|Boolean|Denotes whether or not the position is current.|
 |manager|[relatedPerson](../resources/relatedperson.md)|Contains detail of the user's manager in this position.|
-|source|[personDataSource](../resources/persondatasource.md)|Where the values originated if synced from another service. Inherited from [itemFacet](../resources/itemfacet.md)|
+|source|[personDataSource](../resources/persondatasource.md)|Where the values originated if synced from another service. Inherited from [itemFacet](../resources/itemfacet.md).|
 
 ## Response
 
@@ -73,7 +73,7 @@ The following is an example of the request.
 }-->
 
 ```http
-POST https://graph.microsoft.com/Beta/me/profile/positions
+POST https://graph.microsoft.com/beta/me/profile/positions
 Content-type: application/json
 
 {

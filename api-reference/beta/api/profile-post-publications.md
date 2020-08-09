@@ -7,7 +7,7 @@ ms.prod: "people"
 doc_type: apiPageType
 ---
 
-# Create publications
+# Create itemPublication
 Namespace: microsoft.graph
 
 Create a new [itemPublication](../resources/itempublication.md) object in a user's [profile](../resources/profile.md).
@@ -46,19 +46,19 @@ The following table shows the properties that are possible to set when creating 
 |Property|Type|Description|
 |:---|:---|:---|
 |allowedAudiences|String|The audiences that are able to see the values contained within the entity. Inherited from [itemFacet](../resources/itemfacet.md). Possible values are: `me`, `family`, `contacts`, `groupMembers`, `organization`, `federatedOrganizations`, `everyone`, `unknownFutureValue`.|
-|createdBy|[identitySet](../resources/identityset.md)|Provides the identifier of the user and/or application that created the entity. Inherited from [itemFacet](../resources/itemfacet.md)|
-|createdDateTime|DateTimeOffset|Provides the dateTimeOffset for when the entity was created. Inherited from [itemFacet](../resources/itemfacet.md)|
+|createdBy|[identitySet](../resources/identityset.md)|Provides the identifier of the user and/or application that created the entity. Inherited from [itemFacet](../resources/itemfacet.md).|
+|createdDateTime|DateTimeOffset|Provides the dateTimeOffset for when the entity was created. Inherited from [itemFacet](../resources/itemfacet.md).|
 |description    |String      |Description of the publication.                   |
 |displayName    |String      |Title of the publication.                         |
 |id|String|Identifier used for individually addressing the entity. Inherited from [entity](../resources/entity.md)|
-|inference|[inferenceData](../resources/inferencedata.md)|Contains inference detail if the entity is inferred by the creating or modifying application. Inherited from [itemFacet](../resources/itemfacet.md)|
-|lastModifiedBy|[identitySet](../resources/identityset.md)|Provides the identifier of the user and/or application that last modified the entity. Inherited from [itemFacet](../resources/itemfacet.md)|
-|lastModifiedDateTime|DateTimeOffset|Provides the dateTimeOffset for when the entity was created. Inherited from [itemFacet](../resources/itemfacet.md)|
+|inference|[inferenceData](../resources/inferencedata.md)|Contains inference detail if the entity is inferred by the creating or modifying application. Inherited from [itemFacet](../resources/itemfacet.md).|
+|lastModifiedBy|[identitySet](../resources/identityset.md)|Provides the identifier of the user and/or application that last modified the entity. Inherited from [itemFacet](../resources/itemfacet.md).|
+|lastModifiedDateTime|DateTimeOffset|Provides the dateTimeOffset for when the entity was created. Inherited from [itemFacet](../resources/itemfacet.md).|
 |publishedDate  |Date        |The date that the publication was published.      |
 |publisher      |String      |Publication or Publisher for the publication.     |
-|source|[personDataSource](../resources/persondatasource.md)|Where the values originated if synced from another service. Inherited from [itemFacet](../resources/itemfacet.md)|
-|thumbnailUrl   |String      |Url referencing a thumbnail of the publication.   |
-|webUrl         |String      |Url referencing the publication.                  |
+|source|[personDataSource](../resources/persondatasource.md)|Where the values originated if synced from another service. Inherited from [itemFacet](../resources/itemfacet.md).|
+|thumbnailUrl   |String      |URL referencing a thumbnail of the publication.   |
+|webUrl         |String      |URL referencing the publication.                  |
 
 ## Response
 

@@ -54,8 +54,8 @@ The following table shows the properties that are possible to set within a new [
 |collaborationTags|String collection|Contains experience scenario tags a user has associated with the interest. Allowed values in the collection are: `askMeAbout`, `ableToMentor`, `wantsToLearn`, `wantsToImprove`.|
 |description|String|Contains a description of the interest.|
 |displayName|String|Contains a friendly name for the interest.  |
-|inference|[inferenceData](../resources/inferencedata.md)|Contains inference detail if the entity is inferred by the creating or modifying application. Inherited from [itemFacet](../resources/itemfacet.md)|
-|source|[personDataSource](../resources/persondatasource.md)|Where the values originated if synced from another service. Inherited from [itemFacet](../resources/itemfacet.md)|
+|inference|[inferenceData](../resources/inferencedata.md)|Contains inference detail if the entity is inferred by the creating or modifying application. Inherited from [itemFacet](../resources/itemfacet.md).|
+|source|[personDataSource](../resources/persondatasource.md)|Where the values originated if synced from another service. Inherited from [itemFacet](../resources/itemfacet.md).|
 |webUrl|String|Contains a link to a web page or resource about the interest. |
 
 ## Response
@@ -79,6 +79,9 @@ POST https://graph.microsoft.com/beta/me/profile/interests
 Content-type: application/json
 
 {
+  "categories": [
+    "Sports"
+  ],
   "description": "World's greatest football club",
   "displayName": "Chelsea FC",
   "webUrl": "https://www.chelseafc.com"

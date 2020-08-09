@@ -48,6 +48,7 @@ If successful, this method returns a `204 No Content` response code.
 
 ## Examples
 
+### Request
 # [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
@@ -72,7 +73,7 @@ DELETE https://graph.microsoft.com/beta/user/{userId}/profile/awards/{personAwar
 ---
 
 ### Response
-**Note:** The response object shown here might be shortened for readability.
+
 <!-- {
   "blockType": "response",
   "truncated": true

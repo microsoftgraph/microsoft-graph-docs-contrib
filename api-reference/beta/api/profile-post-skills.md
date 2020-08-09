@@ -53,9 +53,9 @@ The following table shows the properties that are possible to set when you creat
 |categories|String collection|Contains categories a user has associated with the skill (for example, personal, professional, hobby). |
 |collaborationTags|String collection|Contains experience scenario tags a user has associated with the interest. Allowed values in the collection are: `askMeAbout`, `ableToMentor`, `wantsToLearn`, `wantsToImprove`.|
 |displayName|String|Contains a friendly name for the skill. |
-|inference|[inferenceData](../resources/inferencedata.md)|Contains inference detail if the entity is inferred by the creating or modifying application. Inherited from [itemFacet](../resources/itemfacet.md)|
+|inference|[inferenceData](../resources/inferencedata.md)|Contains inference detail if the entity is inferred by the creating or modifying application. Inherited from [itemFacet](../resources/itemfacet.md).|
 |proficiency|skillProficiencyLevel|Detail of the users proficiency with this skill. Possible values are: `elementary`, `limitedWorking`, `generalProfessional`, `advancedProfessional`, `expert`, `unknownFutureValue`.|
-|source|[personDataSource](../resources/persondatasource.md)|Where the values originated if synced from another service. Inherited from [itemFacet](../resources/itemfacet.md)|
+|source|[personDataSource](../resources/persondatasource.md)|Where the values originated if synced from another service. Inherited from [itemFacet](../resources/itemfacet.md).|
 |webUrl|String|Contains a link to an information source about the skill. |
 
 ## Response
@@ -79,6 +79,9 @@ POST https://graph.microsoft.com/beta/me/profile/skills
 Content-type: application/json
 
 {
+  "categories": [
+    "Professional"
+  ],
   "allowedAudiences": "organization",
   "displayName": "API Design",
   "proficiency": "generalProfessional",

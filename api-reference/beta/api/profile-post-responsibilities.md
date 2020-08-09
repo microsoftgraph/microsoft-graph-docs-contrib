@@ -7,10 +7,10 @@ ms.prod: "people"
 doc_type: apiPageType
 ---
 
-# Create notes
+# Create personResponsibility
 Namespace: microsoft.graph
 
-Create a new responsibility object.
+Create a new [personResponsibility](../resources/personresponsibility.md) object.
 
 ## Permissions
 
@@ -50,8 +50,8 @@ The following table shows the properties that are possible to set within a new [
 |collaborationTags|String collection|Contains experience scenario tags a user has associated with the interest. Allowed values in the collection are: `askMeAbout`, `ableToMentor`, `wantsToLearn`, `wantsToImprove`.|
 |description|String|Description of the responsibility.|
 |displayName|String|Contains a friendly name for the responsibility. |
-|inference|[inferenceData](../resources/inferencedata.md)|Contains inference detail if the entity is inferred by the creating or modifying application. Inherited from [itemFacet](../resources/itemfacet.md)|
-|source|[personDataSource](../resources/persondatasource.md)|Where the values originated if synced from another service. Inherited from [itemFacet](../resources/itemfacet.md)|
+|inference|[inferenceData](../resources/inferencedata.md)|Contains inference detail if the entity is inferred by the creating or modifying application. Inherited from [itemFacet](../resources/itemfacet.md).|
+|source|[personDataSource](../resources/persondatasource.md)|Where the values originated if synced from another service. Inherited from [itemFacet](../resources/itemfacet.md).|
 |webUrl|String|Contains a link to a web page or resource about the responsibility.|
 
 ## Response

@@ -41,10 +41,10 @@ The following is a JSON representation of the resource.
 ``` json
 
 {
-  "displayName": "In-no ken-te ",
-  "first": "In-no ken-te Pop-ov",
-  "maiden": null,
-  "middle": null,
-  "last": "Pop-ov"
+  "displayName": "String",
+  "first": "String",
+  "maiden": "String",
+  "middle": "String",
+  "last": "String"
 }
 ```

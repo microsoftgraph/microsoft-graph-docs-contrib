@@ -51,6 +51,7 @@ If successful, this method returns a `200 OK` response code and an [personAward]
 
 ## Examples
 
+### Request
 # [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
