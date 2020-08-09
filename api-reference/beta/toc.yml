@@ -44,6 +44,8 @@ items:
         href: /graph/webhooks-outlook-authz?context=graph/api/beta
       - name: Notifications with resource data (preview)
         href: /graph/webhooks-with-resource-data?context=graph/api/beta
+      - name: Get notifications delivered different ways (preview)
+        href: /graph/change-notifications-delivery?context=graph/api/beta
     - name: Change tracking
       displayname: Delta query, track changes, Outlook calendar, Groups, Outlook mail, Users, Planner, Azure AD
       items:
