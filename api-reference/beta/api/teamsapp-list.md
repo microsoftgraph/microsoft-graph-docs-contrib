@@ -46,7 +46,7 @@ This method supports the $filter, $select, and $expand [OData query parameters](
 
 ## Request body
 
-None.
+Do not supply a request body for this method.
 
 > **Note:** You can filter on any of the fields of the [teamsCatalogApp](../resources/teamsapp.md) object to shorten the list of results. You can use any of the following filter operations: Equal, not-equal, and, or, and not.
 
@@ -142,7 +142,7 @@ Content-Type: application/json
 2019-02-04 14:57:30 UTC -->
 <!-- {
   "type": "#page.annotation",
-  "description": "Get accessPackageAssignmentRequest",
+  "description": "",
   "keywords": "",
   "section": "documentation",
   "tocPath": ""
