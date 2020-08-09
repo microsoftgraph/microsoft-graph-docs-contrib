@@ -88,7 +88,7 @@ Content-length: 244
 
 <!-- {
   "blockType": "response",
-  "name": "create_teamsapp",
+  "@odata.type": "microsoft.graph.teamsApp",
   "truncated": true
 } -->
 
@@ -125,7 +125,7 @@ Content-length: 244
 
 <!-- {
   "blockType": "response",
-  "name": "create_teamsapp",
+  "@odata.type": "microsoft.graph.teamsApp",
   "truncated": true
 } -->
 

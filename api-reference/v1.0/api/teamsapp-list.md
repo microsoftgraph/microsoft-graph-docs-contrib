@@ -156,7 +156,7 @@ GET https://graph.microsoft.com/v1.0/appCatalogs/teamsApps?$expand=appDefinition
 
 <!-- {
   "blockType": "response",
-  "name": "list_teamsapp",
+  "@odata.type": "microsoft.graph.teamsApp",
   "truncated": true
 } -->
 

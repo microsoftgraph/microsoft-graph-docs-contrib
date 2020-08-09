@@ -86,7 +86,7 @@ DELETE https://graph.microsoft.com/beta/appCatalogs/teamsApps/06805b9e-77e3-4b93
 
 <!-- {
   "blockType": "response",
-  "name": "delete_teamsapp",
+  "@odata.type": "microsoft.graph.teamsApp",
   "truncated": true
 } -->
 
