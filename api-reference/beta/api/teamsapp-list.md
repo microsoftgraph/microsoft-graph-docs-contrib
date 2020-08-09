@@ -46,7 +46,7 @@ This method supports the $filter, $select, and $expand [OData query parameters](
 
 ## Request body
 
-None.
+Do not supply a request body for this method.
 
 > **Note:** You can filter on any of the fields of the [teamsCatalogApp](../resources/teamsapp.md) object to shorten the list of results. You can use any of the following filter operations: Equal, not-equal, and, or, and not.
 
@@ -64,7 +64,7 @@ The following example lists all applications that are specific to your tenant.
 
 <!-- {
   "blockType": "request",
-  "name": "list_teamsapp"
+  "name": "teamsapp-list"
 }-->
 
 ```http
@@ -77,7 +77,6 @@ GET https://graph.microsoft.com/beta/appCatalogs/teamsApps?$filter=distributionM
 
 <!-- {
   "blockType": "response",
-  "name": "list_teamsapp",
   "@odata.type": "microsoft.graph.teamsAppInstallation",
   "truncated": true
 } -->
@@ -118,7 +117,6 @@ GET https://graph.microsoft.com/beta/appCatalogs/teamsApps?$filter=id%20eq%20'b1
 
 <!-- {
   "blockType": "response",
-  "name": "list_teamsapp",
   "@odata.type": "microsoft.graph.teamsAppInstallation",
   "truncated": true
 } -->
@@ -134,6 +132,7 @@ Content-Type: application/json
       "externalId": "f31b1263-ba99-435a-a679-911d24850d7c",
       "name": "Test App",
       "version": "1.0.1",
+      "resourceType": "Application",
       "distributionMethod": "Organization"
     }
   ]
@@ -207,6 +206,7 @@ HTTP/1.1 200 OK
             ]
         }
 ```
+
 <!-- uuid: 16cd6b66-4b1a-43a1-adaf-3a886856ed98
 2020-08-08 14:57:30 UTC -->
 <!-- {
