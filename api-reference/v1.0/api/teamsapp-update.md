@@ -83,7 +83,7 @@ If successful, this method returns a `204, No Content` response code.
 
 <!-- {
   "blockType": "response",
-  "name": "update_teamsapp",
+  "@odata.type": "microsoft.graph.teamsApp",
   "truncated": true
 } -->
 
@@ -111,7 +111,7 @@ Content-length: 244
 
 <!-- {
   "blockType": "response",
-  "name": "update_teamsapp",
+  "@odata.type": "microsoft.graph.teamsApp",
   "truncated": true
 } -->
 
@@ -137,3 +137,16 @@ Location: https://graph.microsoft.com/v1.0/appCatalogs/teamsApps/e3e29acb-8c79-4
     "lastModifiedDateTime": "2020-02-10 22:48:33.841",
 }
 ```
+
+<!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
+2020-08-08 14:57:30 UTC -->
+<!--
+{
+  "type": "#page.annotation",
+  "description": "teamsApp resource",
+  "keywords": "",
+  "section": "documentation",
+  "tocPath": "",
+  "suppressions": []
+}
+-->

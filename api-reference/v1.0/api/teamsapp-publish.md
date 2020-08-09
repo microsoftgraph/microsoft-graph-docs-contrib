@@ -1,20 +1,19 @@
 ---
-title: "Create teamsApp"
-description: "Publish an application to Teams app catalog. "
+title: "Publish teamsapp"
+description: "Publish an app to the Microsoft Teams apps catalog. "
 author: "nkramer"
 localization_priority: Normal
 ms.prod: "microsoft-teams"
 doc_type: apiPageType
 ---
 
-# Create teamsApp
+# Publish teamsapp
 
 Namespace: microsoft.graph
 
-Publish an [app](../resources/teamsapp.md) to the Microsoft Teams apps catalog.Specifically, this API publishes the app to your organization's catalog (the tenant app catalog).
-The created resource will have the **distributionMethod** property value set to `organization`.
-
-The  _**appCatalogs/teamsApps?requiresReview:boolean**_ API consumes a zip file as the request body and uploads a new Teams App to the Teams App catalog. The optional `requiresReview`  is used to trigger the app review process. If the `requiresReview` query parameter is set to true, then the new app version is uploaded in a 'submitted' state. A user must explicitly call out if the app they are submitting requires review to trigger the review process. Whether a user can submit an app without triggering the review process is determined by a role check.
+Publish an [app](../resources/teamsapp.md) to the Microsoft Teams apps catalog.
+Specifically, this API publishes the app to your organization's catalog (the tenant app catalog);
+the created resource will have `distributionMethod` = `organization`.
 
 ## Permissions
 

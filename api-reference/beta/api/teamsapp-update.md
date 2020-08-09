@@ -67,11 +67,15 @@ HTTP/1.1 204 No Content
 
 ### Request
 
+<<<<<<< HEAD
 <!-- markdownlint-disable MD034 -->
 <!-- {
   "blockType": "request",
   "name": "update_teamsapp"
 }-->
+=======
+<!-- { "blockType": "ignored" } -->
+>>>>>>> la-resolve-app-staging
 
 ```http
 PUT https://graph.microsoft.com/beta/appCatalogs/teamsApps/06805b9e-77e3-4b93-ac81-525eb87513b8
@@ -86,7 +90,11 @@ For Teams application zip file [see Create app package](/microsoftteams/platform
 
 ### Response
 
+<<<<<<< HEAD
 If successful, this method returns a `204, No Content` response code. 
+=======
+If successful, this method returns a `204, No Content` response code.
+>>>>>>> la-resolve-app-staging
 
 ```http
 HTTP/1.1 204 No Content
@@ -112,13 +120,15 @@ Content-length: 244
 
 <!-- {
   "blockType": "response",
-  "name": "update_teamsapp",
+  "@odata.type": "microsoft.graph.teamsApp",
   "truncated": true
 } -->
 
 ```http
 HTTP/1.1 201 Created
 Location: https://graph.microsoft.com/beta/appCatalogs/teamsApps/e3e29acb-8c79-412b-b746-e6c39ff4cd22/appDefinitions/MGQ4MjBlY2QtZGVmMi00Mjk3LWFkYWQtNzgwNTZjZGU3Yzc4IyMxLjAuMA==
+Content-Type: application/json
+
 {
     "@odata.context": "https://graph.microsoft.com/beta/$metadata#appDefinition",
     "@odata.etag": "158749010",
@@ -136,5 +146,4 @@ Location: https://graph.microsoft.com/beta/appCatalogs/teamsApps/e3e29acb-8c79-4
     "publishingState": "submitted",
     "lastModifiedDateTime": "2020-02-10 22:48:33.841",
 }
-
 ```

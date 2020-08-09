@@ -89,7 +89,7 @@ For information about how to create a Microsoft Teams application zip file, see 
 
 <!-- {
   "blockType": "response",
-  "name": "create_teamsapp",
+  "@odata.type": "microsoft.graph.teamsApp",
   "truncated": true
 } -->
 
@@ -126,13 +126,17 @@ Content-length: 244
 
 <!-- {
   "blockType": "response",
-  "name": "create_teamsapp",
+  "@odata.type": "microsoft.graph.teamsApp",
   "truncated": true
 } -->
 
 ```http
 HTTP/1.1 201 Created
 Location: https://graph.microsoft.com/beta/appCatalogs/teamsApps/e3e29acb-8c79-412b-b746-e6c39ff4cd22
+<<<<<<< HEAD
+=======
+
+>>>>>>> la-resolve-app-staging
 {
   "@odata.context": "https://graph.microsoft.com/beta/$metadata#appCatalogs/teamsApps/$entity",
   "id": "e3e29acb-8c79-412b-b746-e6c39ff4cd22",

@@ -71,6 +71,11 @@ HTTP/1.1 204 No Content
 
 ### Request
 
+<!-- {
+  "blockType": "request",
+  "name": "delete_teamsapp"
+}-->
+
 ```http
 DELETE https://graph.microsoft.com/beta/appCatalogs/teamsApps/06805b9e-77e3-4b93-ac81-525eb87513b8
 ```
@@ -78,6 +83,12 @@ DELETE https://graph.microsoft.com/beta/appCatalogs/teamsApps/06805b9e-77e3-4b93
 <!-- markdownlint-disable MD024 -->
 
 ### Response
+
+<!-- {
+  "blockType": "response",
+  "name": "delete_teamsapp",
+  "truncated": true
+} -->
 
 ```http
 HTTP/1.1 204 No Content
