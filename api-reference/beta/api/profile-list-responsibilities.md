@@ -7,7 +7,7 @@ ms.prod: "people"
 doc_type: apiPageType
 ---
 
-# List notes
+# List responsibilities
 Namespace: microsoft.graph
 
 Retrieve a list of [personResponsibility](../resources/personresponsibility.md) objects from a user's [profile](../resources/profile.md).
