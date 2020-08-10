@@ -1,6 +1,6 @@
 ---
 title: "Delete teamsApp"
-description: "Delete a Teams app from your organization's app catalog (the tenant app catalog). "
+description: "Remove a Teams app from an organization's app catalog (the tenant app catalog). "
 localization_priority: Normal
 author: "nkramer"
 ms.prod: "microsoft-teams"
@@ -13,7 +13,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Remove the [app](../resources/teamsapp.md) from your organization's app catalog (the tenant app catalog).
+Remove an [app](../resources/teamsapp.md) from an organization's app catalog (the tenant app catalog).
 To remove your app from your organization's app catalog, specify `organization` as the **distributionMethod** in the [teamsCatalogApp](../resources/teamsapp.md) resource.
 
 ## Permissions
