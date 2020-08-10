@@ -1,6 +1,6 @@
 ---
 title: "callTranscriptionInfo resource type"
-description: "A single DTMF event."
+description: "Represents a single DTMF event."
 author: "rzhang"
 localization_priority: Normal
 ms.prod: "cloud-communications"
@@ -11,7 +11,7 @@ doc_type: resourcePageType
 
 Namespace: microsoft.graph
 
-A single DTMF event.
+Represents a single DTMF event.
 
 ## Properties
 
