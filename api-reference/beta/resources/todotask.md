@@ -1,7 +1,7 @@
 ---
 title: "todoTask resource type"
-description: "**TODO: Add Description**"
-author: "**TODO: Provide Github Name. See [topic-level metadata reference](https://msgo.azurewebsites.net/add/document/guidelines/metadata.html#topic-level-metadata)**"
+description: "A todoTask resource tracks a work item."
+author: "avijityadav"
 localization_priority: Normal
 ms.prod: "Microsoft To Do"
 doc_type: resourcePageType
@@ -13,10 +13,10 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-A todoTask resource is used to track a work item. A todoTask is always contained in a todoTaskList amd defaults to Tasks list. A todoTask object also have [linkedResource](./linkedResource.md) object which can contain the source of task.
+A **todoTask** resource tracks a work item. It is always contained in a [todoTaskList](todotasklist.md). It includes a relationship to a [linkedResource](./linkedResource.md) resource which represents the source of the task.
 
 This resource supports
-* Adding your data to custom properties as [open extensions](/graph/extensibility-overview)
+* Adding your data to custom properties as [open extensions](/graph/extensibility-overview).
 * Using [delta query](/graph/delta-query-overview) to track incremental additions, deletions and updates.
 
 ## Methods
