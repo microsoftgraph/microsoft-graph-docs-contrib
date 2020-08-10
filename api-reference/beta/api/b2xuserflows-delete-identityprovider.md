@@ -13,7 +13,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Delete an identity provider from a [b2xUserFlow](../resources/b2xuserflows.md) object.
+Delete an identity provider from a [b2xUserFlow](../resources/b2xuserflows.md) object. For self-service sign up user flows, the values can be `Google-OAUTH` or `Facebook-OAUTH`.
 
 ## Permissions
 
@@ -35,7 +35,7 @@ The work or school account needs to belong to one of the following roles:
 <!-- { "blockType": "ignored" } -->
 
 ```http
-DELETE /b2xUserFlows/{id}/identityProviders/Facebook-OAuth/$ref
+DELETE /b2xUserFlows/{id}/identityProviders/{id}/$ref
 ```
 
 ## Request headers
@@ -65,7 +65,7 @@ The following is an example of the request.
 -->
 
 ``` http
-DELETE https://graph.microsoft.com/beta/identity/b2xUserFlows/{id}/identityProviders/Facebook-OAuth/$ref
+DELETE https://graph.microsoft.com/beta/identity/b2xUserFlows/{id}/identityProviders/Facebook-OAUTH/$ref
 ```
 
 ### Response

@@ -51,7 +51,7 @@ In the request body, provide a JSON representation of a [b2xUserFlow](../resourc
 
 |Property|Type|Description|
 |:---------------|:--------|:----------|
-|id|String|The ID of the user flow.|
+|id|String|The name of the user flow.|
 |userFlowType|String|The type of user flow you are creating. This value will always be `signUpOrSignIn`.|
 |userFlowTypeVersion|Float|The version of the user flow. This value will always be 1.|
 

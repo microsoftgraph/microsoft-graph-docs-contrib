@@ -15,7 +15,7 @@ Namespace: microsoft.graph
 
 Represents a user flow within an Azure Active Directory tenant.
 
-User flows are used to enable a sign up experience for guest users on an application. User flows define the experience the end user sees while signing up, including which identity providers they can use to authenticate, along with which attributes are collected as part of the sign up process.
+User flows are used to enable a [self-service sign up](https://docs.microsoft.com/azure/active-directory/external-identities/self-service-sign-up-overview) experience for guest users on an application. User flows define the experience the end user sees while signing up, including which [identity providers](https://docs.microsoft.com/azure/active-directory/external-identities/identity-providers) they can use to authenticate, along with which attributes are collected as part of the sign up process.
 
 ## Methods
 
@@ -32,9 +32,9 @@ User flows are used to enable a sign up experience for guest users on an applica
 
 |Property|Type|Description|
 |:---------------|:--------|:----------|
-|id|String|The ID of the user flow. This is a required value and is immutable once created. The ID will be pre-pended with the value of `B2X_1_` after creation.|
-|userFlowType|String|The type of user flow. For B2X user flows, the value can only be `signUpOrSignIn` and cannot be modified after creation.|
-|userFlowVersion|float|The version of the user flow. For B2X user flows, the version is always `1`.
+|id|String|The name of the user flow. This is a required value and is immutable once created. The name will be pre-pended with the value of `B2X_1_` after creation.|
+|userFlowType|String|The type of user flow. For self-service sign up user flows, the value can only be `signUpOrSignIn` and cannot be modified after creation.|
+|userFlowVersion|float|The version of the user flow. For B2X user flows, the version is always `1`.|
 
 ## Relationships
 

@@ -47,7 +47,7 @@ PATCH /b2xUserFlows/{id}/identityProviders/$ref
 
 ## Request body
 
-In the request body, provide a JSON representation of the `id` of the [identityProvider](../resources/identityprovider.md) you want to add.
+In the request body, provide a JSON representation of the `id` of the [identityProvider](../resources/identityprovider.md) you want to add. For self-service sign up user flows, the values can be `Google-OAUTH` or `Facebook-OAUTH`.
 
 ## Response
 
@@ -71,7 +71,7 @@ Content-type: application/json
 Content-length: 30
 
 {
-  "@odata.id": "https://graph.microsoft.com/beta/identityProviders/Facebook-OAuth"
+  "@odata.id": "https://graph.microsoft.com/beta/identityProviders/{id}"
 }
 ```
 
