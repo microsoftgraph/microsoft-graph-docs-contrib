@@ -64,7 +64,7 @@ The `innerError` object might recursively contain more `innerError` objects with
 
 ## Steps to handle error response
 
-To better handle errors occurs in Excel graph, here are the general steps that Graph clients are expected to follow.
+To better handle errors that occur in Excel graph, here are the general steps that Graph clients are expected to follow.
 
 ### 1. Determine whether it is a long running operation error
 
@@ -101,7 +101,7 @@ For both long running operation pattern and regular pattern, we suggest you to a
 
 ### 3. Parse top-level error code
 
-If you can't find the second-level error code listed in detailed errors in [Error codes](/concepts/workbook-error-codes.md), we suggest you to act according the instructions provided for top-level error then. Details on the top-level error codes and messages can be found in [Error codes](/concepts/workbook-error-codes.md)
+If you can't find the second-level error code listed in detailed errors in [Error codes](/concepts/workbook-error-codes.md), we suggest you to act according the instructions provided for top-level error, which is bound to status code. Details on the top-level error codes and messages can be found in [Error codes](/concepts/workbook-error-codes.md).
 
 ### 4. Parse status code
 
