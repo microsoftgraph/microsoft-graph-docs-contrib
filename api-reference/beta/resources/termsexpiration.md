@@ -1,5 +1,5 @@
 ---
-title: "termsExpiration complex type"
+title: "termsExpiration resource type"
 description: "Represents the settings for tenant's customizable terms of use agreement that is created and managed with Azure Active Directory (Azure AD)."
 localization_priority: Normal
 ms.prod: "microsoft-identity-platform"
@@ -8,7 +8,7 @@ doc_type: "resourcePageType"
 ---
 
 
-# termsExpiration complex type
+# termsExpiration resource type
 
 Namespace: microsoft.graph
 
