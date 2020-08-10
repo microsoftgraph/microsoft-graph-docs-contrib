@@ -367,6 +367,8 @@ items:
           - name: Resources
             expanded: true
             items:
+              - name: Best practices
+                href: workbook-best-practice.md
               - name: Error codes
                 href: workbook-error-codes.md
               - name: Error handling
