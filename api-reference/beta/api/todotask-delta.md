@@ -73,24 +73,23 @@ _id_ property is always returned.
 If successful, this method returns a `200 OK` response code and [todoTask](../resources/todotask.md) collection object in the response body.
 
 ## Example
-##### Request
+### Request
 The following example shows how to make a single **delta** function call, and limit the maximum number of **todoTask** 
 in the response body to 2.
 
-To track changes in the **todoTasks** in a folder, you would make one or more **delta** function calls to get the set
+To track changes in the **todoTasks** in a **todoTaskList**, you would make one or more **delta** function calls to get the set
 of incremental changes since the last delta query. 
  
 
-# HTTP request
+### HTTP Request
 <!-- { "blockType": "ignored" } -->
-```
+``` http
 GET https://graph.microsoft.com/beta/me/todo/lists/{id}/tasks/delta
-
 Prefer: odata.maxpagesize=2
 ```
 
 
-##### Response
+### Response
 If the request is successful, the response would include a state token, which is either a _skipToken_  
 (in an _@odata.nextLink_ response header) or a _deltaToken_ (in an _@odata.deltaLink_ response header). 
 Respectively, they indicate whether you should continue with the round or you have completed 
@@ -99,12 +98,7 @@ getting all the changes for that round.
 The response below shows a _skipToken_ in an _@odata.nextLink_ response header.
 
 Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.
-<!-- {
-  "blockType": "response",
-  "truncated": true,
-  "@odata.type": "microsoft.graph.message",
-  "isCollection": true
-} -->
+
 ```http
 HTTP/1.1 200 OK
 Content-type: application/json
@@ -128,20 +122,6 @@ Content-length: 337
 }
 ```
 
-### See also
+## See also
 
 - [Microsoft Graph delta query](/graph/delta-query-overview)
-
-<!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
-2015-10-25 14:57:30 UTC -->
-<!--
-{
-  "type": "#page.annotation",
-  "description": "message: delta",
-  "keywords": "",
-  "section": "documentation",
-  "tocPath": "",
-  "suppressions": [
-  ]
-}
--->

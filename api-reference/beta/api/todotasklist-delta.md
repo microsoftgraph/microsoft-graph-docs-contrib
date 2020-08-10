@@ -7,7 +7,7 @@ ms.prod: "Microsoft To Do"
 doc_type: apiPageType
 ---
 
-# mailFolder: delta
+# todoTaskList: delta
 
 Namespace: microsoft.graph
 
@@ -67,24 +67,21 @@ _id_ property is always returned.
 If successful, this method returns a `200 OK` response code and [todoTaskList](../resources/todotasklist.md) collection object in the response body.
 
 ## Example
-##### Request
-The following example shows how to make a single **delta** function call, and limit the maximum number of mail folders 
-in the response body to 2.
+### Request
+The following example shows how to make a single **delta** function call, and limit the maximum number of **todoTaskList** in the response body to 2.
 
-To track changes in the **todoTaskList**, you would make one or more **delta** function calls, with 
-appropriate state tokens, to get the set of incremental changes since the last delta query. 
+To track changes in the **todoTaskList**, you would make one or more **delta** function calls, with appropriate state tokens, to get the set of incremental changes since the last delta query. 
 
 The main differences between tracking **todoTaskList** and tracking **todoTasks** in a list are in the delta query request URLs, and the query responses 
 returning **todoTaskList** rather than **todoTask** collections.
 
-# HTTP Request
+### HTTP Request
 <!-- { "blockType": "ignored" } -->
-```msgraph-interactive
-GET https://graph.microsoft.com/beta/me/mailFolders/delta
-
+``` http
+GET https://graph.microsoft.com/beta/me/todo/lists/delta
 Prefer: odata.maxpagesize=2
 ```
-##### Response
+### Response
 
 If the request is successful, the response would include a state token, which is either a _skipToken_  
 (in an _@odata.nextLink_ response header) or a _deltaToken_ (in an _@odata.deltaLink_ response header). 
@@ -94,12 +91,7 @@ getting all the changes for that round.
 The response below shows a _skipToken_ in an _@odata.nextLink_ response header.
 
 Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.
-<!-- {
-  "blockType": "response",
-  "truncated": true,
-  "@odata.type": "microsoft.graph.mailFolder",
-  "isCollection": true
-} -->
+
 ```http
 HTTP/1.1 200 OK
 Content-type: application/json
@@ -120,21 +112,6 @@ Content-length: 254
 }
 ```
 
-### See also
+## See also
 
 - [Microsoft Graph delta query](/graph/delta-query-overview)
-- [Get incremental changes to messages in a folder](/graph/delta-query-messages)
-
-<!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
-2015-10-25 14:57:30 UTC -->
-<!--
-{
-  "type": "#page.annotation",
-  "description": "mailFolder: delta",
-  "keywords": "",
-  "section": "documentation",
-  "tocPath": "",
-  "suppressions": [
-  ]
-}
--->

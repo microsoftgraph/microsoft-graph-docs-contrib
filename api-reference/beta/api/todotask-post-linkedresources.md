@@ -29,7 +29,9 @@ One of the following permissions is required to call this API. To learn more, in
 }
 -->
 ``` http
-POST /linkedResources
+POST /users/{id|userPrincipalName}/todo/lists/{todoTaskListId}/tasks/{taskId}/linkedResources
+
+POST /users/me/todo/lists/{todoTaskListId}/tasks/{taskId}/linkedResources
 ```
 
 ## Request headers

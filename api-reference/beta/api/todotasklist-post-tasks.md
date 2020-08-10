@@ -18,9 +18,9 @@ One of the following permissions is required to call this API. To learn more, in
 
 |Permission type|Permissions (from most to least privileged)|
 |:---|:---|
-|Delegated (work or school account)|**TODO: Provide applicable permissions.**|
-|Delegated (personal Microsoft account)|**TODO: Provide applicable permissions.**|
-|Application|**TODO: Provide applicable permissions.**|
+|Delegated (work or school account)|Tasks.ReadWrite|
+|Delegated (personal Microsoft account)|Tasks.ReadWrite|
+|Application|Not supported.|
 
 ## HTTP request
 
@@ -29,7 +29,9 @@ One of the following permissions is required to call this API. To learn more, in
 }
 -->
 ``` http
-POST /tasks
+POST /users/{id|userPrincipalName}/todo/lists/{todoTaskListId}/tasks
+
+POST /users/me/todo/lists/{todoTaskListId}/tasks
 ```
 
 ## Request headers
