@@ -137,7 +137,7 @@ Content-Type: application/json
           "@odata.type": "#microsoft.graph.resultInfo",
           "code": 400,
           "subcode": 8508,
-          "message": "Action falied, the operation was cancelled."
+          "message": "Action failed, the operation was cancelled."
         },
 		"recordingLocation": "",
         "recordingAccessToken": "",
