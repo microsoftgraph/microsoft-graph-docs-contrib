@@ -13,10 +13,10 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Azure Active Directory (Azure AD) identity synchronization (also called "provisioning") allows you to automate the provision (creation, maintenance) and de-provisioning (removal) of identities from:
+Azure Active Directory (Azure AD) identity synchronization (also called "provisioning") allows you to automate the provision (creation, maintenance) and de-provisioning (removal) of identities from any of the following:
 - Active Directory to Azure Active Directory.
 - Workday to Azure Active Directory. 
-- Azure Active Directory to cloud (software as a service, or SaaS) applications such as Dropbox, Salesforce, ServiceNow, and more. 
+- Azure Active Directory to cloud applications such as Dropbox, Salesforce, ServiceNow, and more. 
 
 You can use the synchronization APIs in Microsoft Graph to manage identity synchronization programmatically, including:
 
