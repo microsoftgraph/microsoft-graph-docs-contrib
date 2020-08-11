@@ -30,20 +30,20 @@ One of the following permissions is required to call this API. To learn more, in
 |:----------------------------------     |:-------------|
 | Delegated (work or school account)     | AppCatalog.ReadWrite.All, Directory.ReadWrite.All |
 | Delegated (work or school account) | AppCatalog.Submit |
-| Delegated (personal Microsoft account) | Not supported|
+| Delegated (personal Microsoft account) | Not supported.|
 | Application                            | Not supported. |
 
 ## HTTP request
 
 <!-- { "blockType": "ignored" } -->
 
-Delete an app from the app catalog:
+To delete an app from the app catalog:
 
 ```http
 DELETE /appCatalogs/teamsApps/{id}
 ```
 
-Remove a submitted app that has not been approved:
+To remove a submitted app that has not been approved:
 
 ```http
 DELETE appCatalogs/teamsApps/{appId}/appDefinitions/{appDefinitionId}
