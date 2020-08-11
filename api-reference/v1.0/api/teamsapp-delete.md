@@ -1,6 +1,6 @@
 ---
 title: "Delete teamsApp"
-description: "Delete a Teams app from your organization's app catalog (the tenant app catalog). "
+description: "Delete a Teams app from an organization's app catalog (the tenant app catalog). "
 localization_priority: Normal
 author: "nkramer"
 ms.prod: "microsoft-teams"
@@ -14,14 +14,10 @@ Namespace: microsoft.graph
 <!-- markdownlint-disable MD001 -->
 ### Delete an app from your organization's app catalog
 
-Delete the [app](../resources/teamsapp.md) from your organization's app catalog (the tenant app catalog). 
+Delete an [app](../resources/teamsapp.md) from an organization's app catalog (the tenant app catalog). 
 To remove your app from your organization's app catalog, specify `organization` as the **distributionMethod** in the [teamsCatalogApp](../resources/teamsapp.md) resource.
 
-### Delete a submitted app from the review process
-
-**DELETE** _**/appCatalogs/teamsApps/{id}/appDefinitions/{id}**_
-
-Cancels the [app](../resources/teamsapp.md) submission and deletes the submitted app.  This API is available to the user who submitted the app.
+You can also use this API to remove a submitted app from the review process.
 
 ## Permissions
 
@@ -37,14 +33,15 @@ One of the following permissions is required to call this API. To learn more, in
 | Application                            | Not supported. |
 
 ## HTTP request
+
+To delete an app from the app catalog:
+
 <!-- { "blockType": "ignored" } -->
 ```http
 DELETE /appCatalogs/teamsApps/{id}
 ```
 
-### Delete an application that is currently in submitted status
-
-Apps in a `submitted` state are under review and can be either published or rejected by the IT admin.
+To remove a submitted app that has not been approved:
 
 ```http
  DELETE appCatalogs/teamsApps/{appId}/appDefinitions/{appDefinitionId}
@@ -58,19 +55,13 @@ Apps in a `submitted` state are under review and can be either published or reje
 
 ## Request body
 
-None.
+Do not supply a request body for this method.
 
->**Note:** Use the ID returned from the [List published apps](./teamsapp-list.md) call for to reference the app you'd like to update. Do not use the ID from the manifest of the zip app package.
+>**Note:** Use the ID returned from the [List published apps](./teamsapp-list.md) call to reference the app you'd like to update. Do not use the ID from the manifest of the zip app package.
 
 ## Response
 
 If successful, this method returns a `204 No Content` response code. It does not return anything in the response body.
-
-The following is an example of the response.
-
-```http
-HTTP/1.1 204 No Content
-```
 
 ## Example
 
