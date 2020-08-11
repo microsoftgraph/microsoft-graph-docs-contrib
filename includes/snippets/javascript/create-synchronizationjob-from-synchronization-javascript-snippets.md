@@ -10,8 +10,12 @@ const options = {
 
 const client = Client.init(options);
 
-let res = await client.api('/users/{id}/chats/{id}')
+const synchronizationJob = {
+    templateId: "aws"
+};
+
+let res = await client.api('/servicePrincipals/{id}/synchronization/jobs')
 	.version('beta')
-	.get();
+	.post(synchronizationJob);
 
 ```
