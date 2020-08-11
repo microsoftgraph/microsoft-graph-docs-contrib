@@ -1,6 +1,6 @@
 ---
 title: "Publish teamsapp"
-description: "Create teamsApp "
+description: "Publish an app to the Microsoft Teams app catalog."
 author: "nkramer"
 localization_priority: Normal
 ms.prod: "microsoft-teams"
@@ -13,9 +13,9 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Publish an [app](../resources/teamsapp.md) to the Microsoft Teams apps catalog.
+Publish an [app](../resources/teamsapp.md) to the Microsoft Teams app catalog.
 Specifically, this API publishes the app to your organization's catalog (the tenant app catalog);
-the created resource will have `distributionMethod` = `organization`.
+the created resource will a **distributionMethod** property value of `organization`.
 
 ## Permissions
 
@@ -38,7 +38,7 @@ One of the following permissions is required to call this API. To learn more, in
 POST /appCatalogs/teamsApps
 ```
 
-Use the following syntax to add an app that requires a review:
+To publish an app that requires a review:
 
 ```http
 POST /appCatalogs/teamsApps?requiresReview:{Boolean}
@@ -48,14 +48,14 @@ POST /appCatalogs/teamsApps?requiresReview:{Boolean}
 
 |Property|Type|Description|
 |----|----|----|
-|requiresReview| Boolean | This optional query parameter triggers the app review process. Users with admin privileges can submit apps without triggering a review. If users want to request a review before publishing, they must set  `requiresReview` to `true` . A user *with* admin privileges can opt not to set `requiresReview` or set the value to `false`  and the app will be considered approved and will publish instantly.|
+|requiresReview| Boolean | This optional query parameter triggers the app review process. Users with admin privileges can submit apps without triggering a review. If users want to request a review before publishing, they must set  `requiresReview` to `true`. A user who has admin privileges can opt not to set `requiresReview` or set the value to `false`  and the app will be considered approved and will publish instantly.|
 
 ## Request headers
 
 | Header        | Value           |
 |:--------------|:--------------  |
 | Authorization | Bearer {token}. Required.  |
-| Content-Type  | application/zip |
+| Content-Type  | application/zip. Required. |
 
 ## Request body
 
