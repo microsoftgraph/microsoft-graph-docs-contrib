@@ -44,23 +44,23 @@ The rest of the articles in this section help you move your app from Azure AD Gr
 
 ## Frequently asked questions (FAQ)
 
-__Q: Is Azure AD Graph (AAD Graph) being deprecated?__  
-A: Yes. Starting June 30th, 2020, we will no longer add new features to AAD Graph. We'll continue adding critical security fixes through June 30th, 2022.  The APIs will may no longer function correctly after June 30th, 2022.
+### Is Azure AD Graph (AAD Graph) deprecated?  
+Yes. Starting June 30th, 2020, we will no longer add new features to AAD Graph. We'll continue adding critical security fixes through June 30th, 2022.  The APIs will no longer function correctly after June 30th, 2022.
 
-__Q: How do I know which of my apps are using AAD Graph?__  
-A: Applications must be registered to use AAD Graph.  You can look your App Registration page on your Azure Tenant Portal and see if a given application is registered to use AAD Graph.
+### How do I know which of my apps are using AAD Graph?  
+Applications must be registered to use AAD Graph.  You can look at the App Registration page on your Azure Tenant Portal to see if a given application is registered to use AAD Graph.
 
-__Q:  How do I know which APIs my applications are calling?__
-If you have the source code for the application, you can reference the above migration guides to help determine which APIs the app uses and how to migrate it to Microsoft Graph. If you do not have access to your application's source code, you can [open a support request](developer-support-help-options.md#open-a-support-request) to obtain a list of the APIs each application is calling.
+### How do I know which APIs my applications are calling?
+If you have the source code for the application, you can reference the migration guides in this section to help determine which APIs the app uses and how to migrate it to Microsoft Graph. If you do not have access to your application's source code, you can [open a support request](developer-support-help-options.md#open-a-support-request) to get a list of the APIs each application is calling.
 
-__Q: Will my existing AAD Graph apps continue to work?__  
-A: Your existing apps will continue to work without modification until June 30th, 2022.  AAD Graph API function and behavior after that time is not guaranteed.
+### Will my existing AAD Graph apps continue to work? 
+Your existing apps will continue to work without modification until June 30th, 2022.  AAD Graph API function and behavior after that time is not guaranteed.
 
-__Q: Why should I invest in moving to Microsoft Graph?__  
-A: Microsoft Graph is the gateway to data and intelligence in Microsoft 365. It provides a unified programmability model that you can use to access the tremendous amount of datasets and features in Microsoft 365, Azure, Windows 10, and Enterprise Mobility + Security. You can use the wealth of data in Microsoft Graph to build and manage apps for organizations of any scale.
+### Why should I invest in moving to Microsoft Graph?  
+Microsoft Graph is the gateway to data and intelligence in Microsoft 365. It provides a unified programmability model that you can use to access the tremendous amount of datasets and features in Microsoft 365, Azure, Windows 10, and Enterprise Mobility + Security. You can use the wealth of data in Microsoft Graph to build and manage apps for organizations of any scale.
 
-__Q: Will you release a tool that helps me move my apps from AAD Graph to Microsoft Graph?__  
-A:  While we do not have any tools to announce at this time, we are always working on improving our developers' platform experience.  This includes providing tooling and data to facilitate keeping your applications current with API changes.
+### Will you release a tool that helps me move my apps from AAD Graph to Microsoft Graph?  
+While we do not have any tools to announce at this time, we are always working on improving our developers' platform experience.  This includes providing tooling and data to facilitate keeping your applications current with API changes.
 
-__Q: How do I get help migrating my application?__  
-A: See the [Migration guidance](## Next Steps) section of this article. If after reading you have additional questions, you can post on Stack Overflow with the tag `[aadgraph-deprecation]` or open an issue in the API's [GitHub repository](https://github.com/microsoftgraph).
+### How do I get help migrating my application?  
+See the [Migration guidance](## Next Steps) section of this article. If after reading you have additional questions, you can post on Stack Overflow with the tag `[aadgraph-deprecation]` or open an issue in the API's [GitHub repository](https://github.com/microsoftgraph).
