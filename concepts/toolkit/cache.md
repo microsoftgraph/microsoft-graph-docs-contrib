@@ -1,32 +1,32 @@
 ---
 title: "Graph Call Caching"
-description: "You can use the mgt-people-picker web component to search for a specified number of people and render the list of results via Microsoft Graph."
+description: "Explaining how the Cache works and how to configure the options provided to developers"
 localization_priority: Normal
 author: adchau
 ---
 
 # Graph Call Caching
 
-The Microsoft Graph Toolkit supports caching of some Graph API calls. Currently, the calls of the users, person, contact, and photo API are being cached by default in three IndexedDB stores.
+The Microsoft Graph Toolkit supports caching of select Graph API calls. Currently, the calls of the users, person, contact, and photo endpoints are being cached by default in three IndexedDB stores.
 
-Cache can be viewed through the developer panel under the "Application" tab, then naviagting on the "IndexedDB" tab under the "Storage" pane.
+You can view the cache through the developer panel under the "Application" tab, then naviagting on the "IndexedDB" tab under the "Storage" pane.
 
 ![devtools indexedDB](images/indexedDBpanel.png)
 
 ## Cache configuration
 
-The cache options can be found in the static class `CacheService`, in the `config` property. It is formatted as such:
+You can find the cache options in the static class `CacheService`, in the `config` property. It is formatted as such:
 
 ```TypeScript
 let config = {
   defaultInvalidationPeriod: number,
   isEnabled: boolean,
   people: {
-    invalidiationPeriod: number,
+    invalidationPeriod: number,
     isEnabled: boolean
   },
   photos: {
-    invalidiationPeriod: number,
+    invalidationPeriod: number,
     isEnabled: boolean
   },
   ...
@@ -48,20 +48,32 @@ To individual disable a store simply set the value of `isEnabled` in that store'
 CacheService.config.users.isEnabled = false;
 ```
 
-Changing the invalditation period is similarily simple:
+Changing the invalditation period is similar:
 
 ```JavaScript
 CacheService.config.users.invalidationPeriod = 1800000;
 ```
 
-## Create your own
+## Clearing the Cache
 
-Cache stores are created using the public CacheService class. You can create your own with 
+The cache is automatically cleared upon user logout, but can be done manually in two different ways:
+
+### Clearing all stores:
+
+The clear all the stores in the cache, the `clearCacheStores()` method of the CacheService class will clear every store maintained by the CacheService.
+
+### Clearing individual stores:
+
+If you want to instead clear an individual store, the CacheStore class provides a `clearCache()` method that will only clear that store.
+
+## Creating your own cache stores
+
+Cache stores are created using the CacheService static class. You can create your own with 
 ```JavaScript
 CacheService.getCache(Schema: CacheSchema, Store: String);
 ```
 
-CacheSchema object is a dictionary with key/value pairs:
+CacheSchema object is a dictionary with the key/value pairs:
 ```TypeScript
 const cacheSchema: CacheSchema = {
   name: string,
@@ -73,8 +85,6 @@ const cacheSchema: CacheSchema = {
   version: number
 };
 ```
- > Note: The store you reference in the call to getCache() must match one of the stores listed in your CacheSchema object
-
 
 ### Example
 
@@ -88,5 +98,24 @@ const cacheSchema = {
   },
   version: 1
 };
-const cache = CacheService.getCache(cacheSchema, 'dogs');
+
+// Each CacheStore object must store a sub-interface of CacheItem, which by default provides
+// a timeCached property
+interface DogCacheItem extends CacheItem {
+  age: number;
+  breed: string;
+  color: string;
+  owner: string;
+}
+
+// instantiate the desired cache store
+const cache = CacheService.getCache<DogCacheItem>(cacheSchema, 'dogs');
+
+// insert an item
+cache.putValue('dog1', {age: 6, breed: 'German Shepard', color: 'brown', owner: 'Beth Pan'});
+
+// retrieve an item from the cache
+const bethsDog = cache.getValue('dog1');
+
 ```
+ > Note: The store you reference in the call to getCache() must match one of the stores listed in your CacheSchema object
