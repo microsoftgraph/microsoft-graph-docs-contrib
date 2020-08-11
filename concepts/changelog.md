@@ -24,7 +24,7 @@ For a summary of the value of these API changes, as well as recent tools, compon
 ### Identity and access | Identity and sign-in
 | **Change type** | **Version** | **Description**                  |
 |:----------------|:------------|:-----------------------------------------|
-| Addition | Beta | Added [passwordSingleSignOnSettings](/graph/api/resources/passwordsinglesignonsettings?view=graph-rest-beta) property to [servicePrincipal](graph/api/resources/serviceprincipal?view=graph-rest-beta) resource
+| Addition | Beta | Added the [passwordSingleSignOnSettings](/graph/api/resources/passwordsinglesignonsettings?view=graph-rest-beta) property to the [servicePrincipal](graph/api/resources/serviceprincipal?view=graph-rest-beta) resource.
 
 ### Reports | Microsoft 365 usage reports
 
