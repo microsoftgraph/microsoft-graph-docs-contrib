@@ -71,7 +71,7 @@ Content-length: 244
 [Zip file containing a Teams app package]
 ```
 
-For Teams application zip file [see Create app package](/microsoftteams/platform/concepts/apps/apps-package)
+For details about the Teams application zip file, see [Create app package](/microsoftteams/platform/concepts/apps/apps-package).
 <!-- markdownlint-disable MD024 -->
 
 ### Response
