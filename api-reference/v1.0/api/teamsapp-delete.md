@@ -11,8 +11,17 @@ doc_type: apiPageType
 
 Namespace: microsoft.graph
 
-Remove the [app](../resources/teamsapp.md) from your organization's app catalog (the tenant app catalog). 
+<!-- markdownlint-disable MD001 -->
+### Delete an app from your organization's app catalog
+
+Delete the [app](../resources/teamsapp.md) from your organization's app catalog (the tenant app catalog). 
 To remove your app from your organization's app catalog, specify `organization` as the **distributionMethod** in the [teamsCatalogApp](../resources/teamsapp.md) resource.
+
+### Delete a submitted app from the review process
+
+**DELETE** _**/appCatalogs/teamsApps/{id}/appDefinitions/{id}**_
+
+Cancels the [app](../resources/teamsapp.md) submission and deletes the submitted app.  This API is available to the user who submitted the app.
 
 ## Permissions
 
