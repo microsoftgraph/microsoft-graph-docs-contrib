@@ -14,7 +14,7 @@ Namespace: microsoft.graph
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 Represents Teams content hosted in a chat message, such as images or code snippets.
-[File attachments](chatmessageattachment.md) are not hosted content,
+[File attachments](chatmessageattachment.md) are not hosted content;
 they are stored in SharePoint or OneDrive.
 
 ## Methods
@@ -29,17 +29,17 @@ they are stored in SharePoint or OneDrive.
 | Property     | Type        | Description |
 |:-------------|:------------|:------------|
 |id            |String       | Read-only. Represents the chat message hosted content identifier.|
-|contentBytes  |Edm.Binary   | Write-only. When posting a new chatmessage hosted content, represents the bytes of the payload. These are represented as a base64Encoded string.|
-|contentType   |String       | Write-only. When posting a new chatmessage hosted content, represents the type of content. E.g. image/png.|
+|contentBytes  |Edm.Binary   | Write-only. When posting new chat message hosted content, represents the bytes of the payload. These are represented as a base64Encoded string.|
+|contentType   |String       | Write-only. When posting new chat message hosted content, represents the type of content, such as image/png.|
 
-## Instance Attributes
+### Instance attributes
 
 Instance attributes are properties with special behaviors.
-These properties are temporary and either a) define behavior the service should perform or b) provide short-term property values, like a download URL for an item that expires.
+These properties are temporary and either define behavior the service should perform or provide short-term property values, like a download URL for an item that expires.
 
 | Property name                     | Type   | Description
 |:----------------------------------|:-------|:--------------------------------
-| @microsoft.graph.temporaryId      | string | Write-only. Represents the temporaryId for the hosted content while posting a message to refer to the hosted content in chatmessage resource being sent.|
+| @microsoft.graph.temporaryId      | string | Write-only. Represents the temporaryId for the hosted content while posting a message to refer to the hosted content in **chatMessage** resource being sent.|
 
 ## Relationships
 
