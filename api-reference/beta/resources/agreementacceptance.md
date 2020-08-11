@@ -61,7 +61,7 @@ The following is a JSON representation of the resource.
 
 ```json
 {
-      "id": "String",
+      "id": "String (identifier)",
       "agreementId": "String",
       "userId": "String",
       "deviceId": "String",
@@ -72,7 +72,7 @@ The following is a JSON representation of the resource.
       "userDisplayName": "String",
       "userPrincipalName": "String",
       "userEmail": "String",
-      "recordedDateTime": "String",
+      "recordedDateTime": "String (timestamp)",
       "expirationDateTime": "String",
       "state": "String"
 }
