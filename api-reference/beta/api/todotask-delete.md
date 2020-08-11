@@ -53,7 +53,7 @@ If successful, this method returns a `204 No Content` response code.
 }
 -->
 ``` http
-DELETE https://graph.microsoft.com/beta//users/me/todo/lists/{todoTaskListId}/tasks/{taskId}
+DELETE https://graph.microsoft.com/beta/users/me/todo/lists/{todoTaskListId}/tasks/{taskId}
 ```
 
 

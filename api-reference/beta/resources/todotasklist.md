@@ -1,6 +1,6 @@
 ---
 title: "todoTaskList resource type"
-description: "A todoTaskList resource is a collection of todoTasks resource."
+description: "A list in Microsoft To Do that contains one or more todoTask resources."
 author: "avijityadav"
 localization_priority: Normal
 ms.prod: "Microsoft To Do"
@@ -13,7 +13,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-A **todoTaskList** resource is a collection of [todoTasks](./todotask.md) resource. 
+A list in Microsoft To Do that contains one or more [todoTasks](./todotask.md) resource. 
 
 In To Do, there are built-in task lists such as **Flagged emails** and **Tasks** which cannot be renamed or deleted.  You can, however, create additional task lists.
 
